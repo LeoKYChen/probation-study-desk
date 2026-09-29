@@ -1,0 +1,767 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102a43">
+  <meta name="description" content="觀護人108至115年考古題練習臺：官方逐字題目、考點拆分、作答方向與本機系統初評。">
+  <title>觀護人考古題練習臺</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23102a43'/%3E%3Cpath d='M17 18h30v7H17zm0 12h30v7H17zm0 12h19v7H17z' fill='%2365d6d0'/%3E%3Ccircle cx='46' cy='46' r='8' fill='%23f6c85f'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --ink: #102a43;
+      --ink-soft: #486581;
+      --paper: #f4f7f9;
+      --surface: #ffffff;
+      --line: #d9e2ec;
+      --navy: #102a43;
+      --navy-2: #243b53;
+      --teal: #0e8f87;
+      --teal-soft: #d9f3f0;
+      --amber: #e9a11b;
+      --amber-soft: #fff3d3;
+      --danger: #b5443c;
+      --shadow: 0 14px 38px rgba(16, 42, 67, .09);
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; }
+    html { color-scheme: light; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+    button, select, textarea, input { font: inherit; }
+    button, select { min-height: 44px; }
+    button { cursor: pointer; }
+    :focus-visible { outline: 3px solid rgba(14, 143, 135, .28); outline-offset: 2px; }
+    .app-shell { min-height: 100vh; }
+    .topbar {
+      min-height: 76px;
+      padding: 14px clamp(18px, 3vw, 42px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      color: #fff;
+      background: var(--navy);
+      border-bottom: 4px solid #65d6d0;
+    }
+    .brand { display: flex; align-items: center; gap: 13px; }
+    .brand-mark {
+      width: 44px; height: 44px; border-radius: 12px;
+      display: grid; place-items: center;
+      color: var(--navy); background: #65d6d0;
+      font-weight: 900; letter-spacing: -.08em;
+    }
+    .brand h1 { margin: 0; font-size: 1.1rem; letter-spacing: .04em; }
+    .brand p { margin: 0; color: #bcccdc; font-size: .82rem; }
+    .today { text-align: right; color: #d9e2ec; font-size: .88rem; }
+    .today strong { display: block; color: #fff; font-size: .98rem; }
+    main { padding: 24px clamp(16px, 3vw, 42px) 44px; max-width: 1680px; margin: auto; }
+    .overview {
+      display: grid;
+      grid-template-columns: minmax(250px, 1.25fr) repeat(3, minmax(130px, .52fr));
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .focus-card, .stat-card {
+      min-height: 104px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: 0 5px 18px rgba(16, 42, 67, .04);
+    }
+    .focus-card { padding: 18px 20px; background: linear-gradient(130deg, #e7f7f5, #fff); }
+    .eyebrow { margin: 0 0 4px; color: var(--teal); font-size: .78rem; font-weight: 800; letter-spacing: .12em; }
+    .focus-card h2 { margin: 0; font-size: 1.14rem; }
+    .focus-card p { margin: 5px 0 0; color: var(--ink-soft); font-size: .9rem; }
+    .stat-card { padding: 16px 18px; display: flex; flex-direction: column; justify-content: center; }
+    .stat-card span { color: var(--ink-soft); font-size: .82rem; }
+    .stat-card strong { margin-top: 2px; font-size: 1.65rem; line-height: 1.1; }
+    .workspace { display: grid; grid-template-columns: 260px minmax(420px, 1.1fr) minmax(330px, .86fr); gap: 16px; align-items: start; }
+    .panel { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); overflow: hidden; }
+    .panel-head { padding: 18px 19px 14px; border-bottom: 1px solid var(--line); }
+    .panel-head h2 { margin: 0; font-size: 1rem; }
+    .panel-head p { margin: 3px 0 0; color: var(--ink-soft); font-size: .8rem; }
+    .field-label { display: block; margin-bottom: 6px; color: var(--ink-soft); font-size: .78rem; font-weight: 800; letter-spacing: .05em; }
+    .subject-wrap { padding: 14px 16px; border-bottom: 1px solid var(--line); }
+    .select-grid { display: grid; grid-template-columns: .72fr 1.28fr; gap: 8px; }
+    select {
+      width: 100%;
+      border: 1px solid #bcccdc;
+      border-radius: 10px;
+      padding: 8px 34px 8px 11px;
+      background: #fff;
+      color: var(--ink);
+    }
+    .filters { display: flex; gap: 7px; padding: 12px 16px 6px; overflow-x: auto; }
+    .chip {
+      min-height: 34px; padding: 5px 10px;
+      border: 1px solid var(--line); border-radius: 999px;
+      background: #fff; color: var(--ink-soft); font-size: .78rem; white-space: nowrap;
+    }
+    .chip.active { color: var(--teal); border-color: var(--teal); background: var(--teal-soft); font-weight: 800; }
+    .question-list { padding: 8px; max-height: 590px; overflow-y: auto; }
+    .question-item {
+      width: 100%; min-height: auto; padding: 12px;
+      border: 1px solid transparent; border-radius: 11px;
+      background: transparent; color: inherit; text-align: left;
+      display: grid; grid-template-columns: 38px 1fr; gap: 10px;
+    }
+    .question-item:hover { background: #f4f7f9; }
+    .question-item.active { border-color: #81d8d2; background: #eaf8f7; }
+    .q-number { width: 36px; height: 36px; border-radius: 9px; display: grid; place-items: center; background: #e9eff4; font-weight: 900; }
+    .question-item.active .q-number { color: #fff; background: var(--teal); }
+    .q-list-title { display: -webkit-box; overflow: hidden; -webkit-line-clamp: 2; -webkit-box-orient: vertical; font-size: .87rem; line-height: 1.45; }
+    .q-meta { margin-top: 5px; display: flex; align-items: center; gap: 7px; color: var(--ink-soft); font-size: .72rem; }
+    .status-dot { width: 7px; height: 7px; border-radius: 50%; background: #bcccdc; }
+    .status-dot.done { background: var(--teal); }
+    .status-dot.review { background: var(--amber); }
+    .question-paper { min-height: 700px; }
+    .paper-toolbar { padding: 15px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--line); background: #f9fbfc; }
+    .paper-meta { display: flex; flex-wrap: wrap; gap: 7px; }
+    .tag { padding: 4px 9px; border-radius: 7px; background: #e9eff4; color: var(--ink-soft); font-size: .76rem; font-weight: 700; }
+    .tag.official { color: #106b65; background: var(--teal-soft); }
+    .icon-btn {
+      min-width: 42px; border: 1px solid var(--line); border-radius: 10px; background: #fff; color: var(--ink-soft); font-size: 1.12rem;
+    }
+    .icon-btn.flagged { color: #8a5600; border-color: #efc875; background: var(--amber-soft); }
+    .question-content { padding: 27px clamp(20px, 3vw, 36px) 24px; }
+    .question-content h2 { margin: 0 0 16px; font-family: ui-serif, "Noto Serif TC", serif; font-size: clamp(1.28rem, 2vw, 1.62rem); line-height: 1.48; }
+    .question-body { padding: 19px 21px; border-left: 4px solid var(--teal); background: #f7fafc; color: #243b53; font-family: ui-serif, "Noto Serif TC", serif; line-height: 1.9; }
+    .source-note { margin: 11px 0 0; color: var(--ink-soft); font-size: .78rem; }
+    .source-note a { color: var(--teal); font-weight: 700; }
+    .point-box, .direction-box { margin-top: 21px; padding: 17px 18px; border-radius: 12px; }
+    .point-box { border: 1px solid #b9e1de; background: #effaf8; }
+    .direction-box { border: 1px solid #efcc7e; background: #fff9ea; }
+    .point-box h3, .direction-box h3 { margin: 0 0 9px; font-size: .96rem; }
+    .point-box ol, .direction-box ol { margin: 0; padding-left: 1.35rem; }
+    .point-box li, .direction-box li { margin: 6px 0; color: #334e68; }
+    .direction-note { margin: 11px 0 0; color: #7c5c18; font-size: .76rem; }
+    [hidden] { display: none !important; }
+    .answer-area { margin-top: 26px; }
+    .answer-title { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+    .answer-title strong { font-size: .96rem; }
+    .answer-title span { color: var(--ink-soft); font-size: .76rem; }
+    textarea {
+      width: 100%; min-height: 235px; resize: vertical;
+      padding: 16px; border: 1px solid #bcccdc; border-radius: 12px;
+      background: #fff; color: var(--ink); line-height: 1.75;
+    }
+    textarea::placeholder { color: #829ab1; }
+    .save-status { min-height: 24px; margin-top: 6px; color: var(--teal); font-size: .76rem; text-align: right; }
+    .paper-actions { padding: 15px 20px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 10px; }
+    .btn { min-height: 44px; padding: 9px 16px; border: 1px solid var(--line); border-radius: 10px; background: #fff; color: var(--ink); font-weight: 800; }
+    .btn:hover { border-color: #9fb3c8; }
+    .btn.primary { color: #fff; border-color: var(--teal); background: var(--teal); }
+    .btn.primary:hover { background: #0a7771; }
+    .score-panel { position: sticky; top: 18px; }
+    .score-body { padding: 16px 19px 20px; }
+    .score-intro { margin: 0 0 14px; color: var(--ink-soft); font-size: .84rem; }
+    .score-mode { display: inline-flex; align-items: center; gap: 6px; margin-bottom: 12px; padding: 5px 9px; border-radius: 999px; color: #106b65; background: var(--teal-soft); font-size: .74rem; font-weight: 800; }
+    .score-row { padding: 14px 0; border-top: 1px solid #e7edf2; }
+    .score-row:first-of-type { border-top: 0; }
+    .score-label { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+    .score-label strong { font-size: .9rem; }
+    .score-label span { color: var(--teal); font-weight: 900; }
+    .score-hint { display: block; margin: 2px 0 8px; color: var(--ink-soft); font-size: .74rem; }
+    .score-track { height: 7px; overflow: hidden; border-radius: 999px; background: #e7edf2; }
+    .score-fill { height: 100%; width: 0; border-radius: inherit; background: linear-gradient(90deg, #0e8f87, #65d6d0); transition: width .35s ease; }
+    input[type="range"] { width: 100%; accent-color: var(--teal); }
+    .score-total { margin: 13px 0 14px; padding: 18px; border-radius: 13px; background: var(--navy); color: #fff; display: flex; justify-content: space-between; align-items: center; }
+    .score-total small { display: block; color: #bcccdc; }
+    .score-total strong { font-size: 2rem; line-height: 1; }
+    .score-total strong span { color: #bcccdc; font-size: .86rem; }
+    .score-message { margin: 0 0 12px; min-height: 27px; color: var(--ink-soft); font-size: .84rem; }
+    .confidence-row { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 14px; padding: 9px 11px; border: 1px solid var(--line); border-radius: 9px; color: var(--ink-soft); font-size: .78rem; }
+    .confidence-row strong { color: var(--ink); }
+    .feedback-section { margin: 15px 0; padding-top: 13px; border-top: 1px solid #e7edf2; }
+    .feedback-section h3 { margin: 0 0 6px; font-size: .86rem; }
+    .feedback-section ul { margin: 0; padding-left: 1.2rem; color: #334e68; font-size: .78rem; }
+    .feedback-section li { margin: 5px 0; }
+    .manual-review { margin-top: 10px; border-top: 1px solid #e7edf2; padding-top: 10px; }
+    .manual-review summary { cursor: pointer; color: var(--ink-soft); font-size: .78rem; font-weight: 800; }
+    .manual-review[open] summary { margin-bottom: 10px; }
+    .adjust-row { margin: 10px 0; }
+    .adjust-note { color: var(--ink-soft); font-size: .72rem; }
+    .button-stack { display: grid; gap: 8px; }
+    .btn.wide { width: 100%; }
+    .legend { padding: 13px 16px 16px; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: .76rem; }
+    .legend p { margin: 0 0 6px; }
+    .mobile-score { display: none; }
+    .toast {
+      position: fixed; right: 22px; bottom: 22px; z-index: 20;
+      padding: 11px 15px; border-radius: 10px; background: var(--navy); color: #fff;
+      box-shadow: var(--shadow); font-size: .86rem;
+      opacity: 0; transform: translateY(12px); pointer-events: none; transition: .2s ease;
+    }
+    .toast.show { opacity: 1; transform: translateY(0); }
+    @media (max-width: 1120px) {
+      .workspace { grid-template-columns: 230px 1fr; }
+      .score-panel { grid-column: 2; position: static; }
+    }
+    @media (max-width: 760px) {
+      .topbar { min-height: 70px; padding: 12px 16px; }
+      .brand p, .today span { display: none; }
+      main { padding: 16px 12px 90px; }
+      .overview { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+      .focus-card { grid-column: 1 / -1; min-height: auto; }
+      .stat-card { min-height: 82px; padding: 12px; }
+      .stat-card strong { font-size: 1.32rem; }
+      .workspace { display: block; }
+      .sidebar { margin-bottom: 12px; }
+      .question-list { display: flex; max-height: none; overflow-x: auto; padding: 9px; }
+      .question-item { min-width: 230px; }
+      .question-paper { min-height: auto; }
+      .score-panel { margin-top: 12px; }
+      .paper-actions { position: sticky; bottom: 0; z-index: 5; background: rgba(255,255,255,.95); backdrop-filter: blur(10px); }
+      .question-content { padding: 22px 18px 18px; }
+    }
+    @media (max-width: 430px) {
+      .overview { grid-template-columns: 1fr 1fr; }
+      .stat-card:last-child { grid-column: 1 / -1; }
+      .paper-toolbar { align-items: flex-start; }
+      .paper-actions .btn { flex: 1; padding-inline: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">觀</div>
+        <div>
+          <h1>觀護人考古題練習臺</h1>
+          <p>司法特考三等 · 爭點導向複習</p>
+        </div>
+      </div>
+      <div class="today"><strong id="todayText"></strong><span>116 年應考計畫</span></div>
+    </header>
+
+    <main>
+      <section class="overview" aria-label="學習概況">
+        <article class="focus-card">
+          <p class="eyebrow">本週主軸</p>
+          <h2>先抓爭點，再補法條與涵攝</h2>
+          <p>平日完成 1 題，控制在 25 分鐘內；待複習題隔日再看一次。</p>
+        </article>
+        <article class="stat-card"><span>已完成</span><strong id="doneCount">0</strong></article>
+        <article class="stat-card"><span>平均系統分</span><strong id="averageScore">—</strong></article>
+        <article class="stat-card"><span>待複習</span><strong id="reviewCount">0</strong></article>
+      </section>
+
+      <section class="workspace" aria-label="考古題練習工作區">
+        <aside class="panel sidebar">
+          <div class="panel-head"><h2>考古題</h2><p>依科目與作答狀態切換</p></div>
+          <div class="subject-wrap select-grid">
+            <div>
+              <label class="field-label" for="yearSelect">年度</label>
+              <select id="yearSelect"></select>
+            </div>
+            <div>
+              <label class="field-label" for="subjectSelect">選擇科目</label>
+              <select id="subjectSelect"></select>
+            </div>
+          </div>
+          <div class="filters" role="group" aria-label="題目篩選">
+            <button class="chip active" data-filter="all">全部</button>
+            <button class="chip" data-filter="open">未完成</button>
+            <button class="chip" data-filter="review">待複習</button>
+          </div>
+          <div class="question-list" id="questionList"></div>
+          <div class="legend">
+            <p><span class="status-dot done"></span> 已完成　<span class="status-dot review"></span> 待複習</p>
+            收錄 108–115 年官方試題，共 <span id="bankCount">0</span> 題。
+          </div>
+        </aside>
+
+        <article class="panel question-paper">
+          <div class="paper-toolbar">
+            <div class="paper-meta">
+              <span class="tag" id="yearTag"></span>
+              <span class="tag" id="subjectTag"></span>
+              <span class="tag official">官方逐字題目</span>
+            </div>
+            <button class="icon-btn" id="flagButton" type="button" aria-label="標記待複習" title="標記待複習">☆</button>
+          </div>
+          <div class="question-content">
+            <h2 id="questionTitle"></h2>
+            <div class="question-body" id="questionBody"></div>
+            <p class="source-note">題目來源：<a id="sourceLink" href="#" target="_blank" rel="noreferrer">考選部考畢試題 PDF</a>。考點與答題方向屬練習用整理；呈現流程參考<a href="https://www.shuati.tw/" target="_blank" rel="noreferrer">刷題王</a>的逐題解析與申論批改概念。</p>
+            <section class="point-box" aria-labelledby="pointTitle">
+              <h3 id="pointTitle">考點拆分</h3>
+              <ol id="pointList"></ol>
+            </section>
+            <div class="answer-area">
+              <div class="answer-title"><strong>我的爭點整理</strong><span id="wordCount">0 字</span></div>
+              <textarea id="issueInput" placeholder="建議依序寫：&#10;一、核心爭點&#10;二、法規範／理論基礎&#10;三、涵攝與正反論證&#10;四、結論"></textarea>
+              <div class="save-status" id="saveStatus" aria-live="polite"></div>
+            </div>
+            <section class="direction-box" id="directionPanel" aria-labelledby="directionTitle" hidden>
+              <h3 id="directionTitle">建議答題方向</h3>
+              <ol id="directionList"></ol>
+              <p class="direction-note" id="directionNote"></p>
+            </section>
+          </div>
+          <div class="paper-actions">
+            <button class="btn" id="prevButton" type="button">上一題</button>
+            <button class="btn primary" id="completeButton" type="button">完成並查看方向</button>
+            <button class="btn" id="nextButton" type="button">下一題</button>
+          </div>
+        </article>
+
+        <aside class="panel score-panel">
+          <div class="panel-head"><h2>系統初評</h2><p>四項量表 · 共 100 分</p></div>
+          <div class="score-body">
+            <span class="score-mode">本機規則判定</span>
+            <p class="score-intro">系統依科目、篇幅、規範／理論語句、涵攝與答案結構判定；答案不會離開此裝置。</p>
+            <div id="scoreRows"></div>
+            <div class="score-total"><div><small>本題預估分數</small><span id="scoreLevel">尚未判定</span></div><strong><span id="totalScore">0</span><span> / 100</span></strong></div>
+            <p class="score-message" id="scoreMessage">完成作答後，系統會自動產生初評。</p>
+            <div class="confidence-row"><span>判定信心</span><strong id="scoreConfidence">尚未判定</strong></div>
+            <section class="feedback-section" aria-labelledby="strengthTitle"><h3 id="strengthTitle">判定依據</h3><ul id="scoreStrengths"><li>尚未進行系統判定。</li></ul></section>
+            <section class="feedback-section" aria-labelledby="improvementTitle"><h3 id="improvementTitle">優先補強</h3><ul id="scoreImprovements"><li>先寫下你的爭點與作答骨架。</li></ul></section>
+            <div class="button-stack"><button class="btn primary wide" id="gradeButton" type="button">系統判定本題</button><button class="btn wide" id="clearScore" type="button">重設本題評分</button></div>
+            <details class="manual-review" id="manualReview"><summary>我要覆核或調整分數</summary><div id="adjustRows"></div><p class="adjust-note">人工調整後會標示為「已覆核」，不再代表純系統分數。</p><button class="btn wide" id="confirmScores" type="button">儲存覆核分數</button></details>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="questions.js"></script>
+  <script>
+    const subjects = [
+      '少年事件處理法', '刑法', '刑事訴訟法與保安處分執行法', '犯罪學', '心理學', '諮商與輔導'
+    ];
+
+    const questionBank = window.QUESTION_BANK || [];
+
+    const scoreDefs = [
+      ['issue', '爭點掌握', '題目要求、行為人與子爭點', 30],
+      ['rule', '規範／理論', '法條、要件或理論依據', 25],
+      ['analysis', '涵攝論證', '事實連結、推論與反面意見', 25],
+      ['structure', '結構表達', '段落層次、結論與完整度', 20]
+    ];
+    const years = [...new Set(questionBank.map(q => q.year))].sort((a,b) => b-a);
+    const storageKey = 'probation-study-desk-v3';
+    const legacyKey = 'probation-study-desk-v2';
+    let saved = JSON.parse(localStorage.getItem(storageKey) || localStorage.getItem(legacyKey) || '{}');
+    if (!localStorage.getItem(storageKey) && localStorage.getItem(legacyKey)) {
+      Object.values(saved).forEach(state => {
+        const old = state.scores || {};
+        if (Math.max(...Object.values(old).map(Number), 0) <= 5) {
+          state.scores = {
+            issue:Math.round(Number(old.issue || 0) * 6),
+            rule:Math.round(Number(old.rule || 0) * 5),
+            analysis:Math.round(Number(old.analysis || 0) * 5),
+            structure:Math.round(Number(old.structure || 0) * 4)
+          };
+          state.scoreSource = 'adjusted';
+          state.assessment = null;
+        }
+      });
+      localStorage.setItem(storageKey, JSON.stringify(saved));
+    }
+    let currentYear = years[0] || 115;
+    let currentSubject = subjects[0];
+    let currentId = questionBank.find(q => q.year === currentYear && q.subject === currentSubject)?.id;
+    let currentFilter = 'all';
+    let saveTimer;
+
+    const $ = id => document.getElementById(id);
+    const yearSelect = $('yearSelect');
+    const subjectSelect = $('subjectSelect');
+    const questionList = $('questionList');
+    const issueInput = $('issueInput');
+    const scoreRows = $('scoreRows');
+    const adjustRows = $('adjustRows');
+
+    function entry(id = currentId) {
+      return saved[id] || { issue:'', scores:{ issue:0, rule:0, analysis:0, structure:0 }, done:false, review:false, assessment:null, scoreSource:null };
+    }
+    function updateEntry(patch) {
+      saved[currentId] = { ...entry(), ...patch };
+      localStorage.setItem(storageKey, JSON.stringify(saved));
+      updateStats();
+    }
+    function currentQuestion() { return questionBank.find(q => q.id === currentId); }
+    function subjectQuestions() { return questionBank.filter(q => q.year === currentYear && q.subject === currentSubject); }
+
+    function init() {
+      const date = new Intl.DateTimeFormat('zh-TW', { timeZone:'Asia/Taipei', month:'long', day:'numeric', weekday:'short' }).format(new Date());
+      $('todayText').textContent = date;
+      $('bankCount').textContent = questionBank.length;
+      years.forEach(year => {
+        const option = document.createElement('option');
+        option.value = String(year); option.textContent = `${year} 年`;
+        yearSelect.appendChild(option);
+      });
+      subjects.forEach(subject => {
+        const option = document.createElement('option');
+        option.value = subject; option.textContent = subject;
+        subjectSelect.appendChild(option);
+      });
+      scoreDefs.forEach(([key, label, hint, max]) => {
+        const row = document.createElement('div');
+        row.className = 'score-row';
+        row.innerHTML = `<div class="score-label"><strong>${label}</strong><span id="value-${key}">0 / ${max}</span></div><small class="score-hint">${hint}</small><div class="score-track" role="progressbar" aria-label="${label}" aria-valuemin="0" aria-valuemax="${max}" aria-valuenow="0"><div class="score-fill" id="fill-${key}"></div></div>`;
+        scoreRows.appendChild(row);
+        const adjust = document.createElement('div');
+        adjust.className = 'adjust-row';
+        adjust.innerHTML = `<label class="score-label" for="adjust-${key}"><strong>${label}</strong><span id="adjust-value-${key}">0 / ${max}</span></label><input id="adjust-${key}" data-adjust="${key}" type="range" min="0" max="${max}" step="1" value="0">`;
+        adjustRows.appendChild(adjust);
+      });
+      bindEvents(); render();
+    }
+
+    function bindEvents() {
+      yearSelect.addEventListener('change', () => {
+        currentYear = Number(yearSelect.value);
+        currentId = subjectQuestions()[0]?.id;
+        render();
+      });
+      subjectSelect.addEventListener('change', () => {
+        currentSubject = subjectSelect.value;
+        currentId = subjectQuestions()[0]?.id;
+        render();
+      });
+      document.querySelectorAll('.chip').forEach(btn => btn.addEventListener('click', () => {
+        currentFilter = btn.dataset.filter;
+        document.querySelectorAll('.chip').forEach(x => x.classList.toggle('active', x === btn));
+        renderList();
+      }));
+      issueInput.addEventListener('input', () => {
+        updateEntry({ issue: issueInput.value, scores:{ issue:0, rule:0, analysis:0, structure:0 }, assessment:null, scoreSource:null, done:false });
+        renderScore(); renderList();
+        updateWordCount();
+        $('saveStatus').textContent = '儲存中…';
+        clearTimeout(saveTimer);
+        saveTimer = setTimeout(() => $('saveStatus').textContent = '已自動儲存在此裝置', 350);
+      });
+      adjustRows.addEventListener('input', event => {
+        const key = event.target.dataset.adjust;
+        if (!key) return;
+        const def = scoreDefs.find(([scoreKey]) => scoreKey === key);
+        $(`adjust-value-${key}`).textContent = `${event.target.value} / ${def[3]}`;
+      });
+      $('flagButton').addEventListener('click', () => {
+        updateEntry({ review: !entry().review });
+        renderList(); renderQuestion();
+        showToast(entry().review ? '已加入待複習' : '已取消待複習');
+      });
+      $('completeButton').addEventListener('click', () => {
+        if (!issueInput.value.trim()) { showToast('請先寫下至少一個爭點'); issueInput.focus(); return; }
+        runSystemGrade(true);
+      });
+      $('gradeButton').addEventListener('click', () => {
+        if (!issueInput.value.trim()) { showToast('請先寫下至少一個爭點'); issueInput.focus(); return; }
+        runSystemGrade(false);
+      });
+      $('prevButton').addEventListener('click', () => navigate(-1));
+      $('nextButton').addEventListener('click', () => navigate(1));
+      $('clearScore').addEventListener('click', () => {
+        updateEntry({ scores:{ issue:0, rule:0, analysis:0, structure:0 }, assessment:null, scoreSource:null, done:false });
+        renderScore(); renderList(); showToast('已重設本題評分');
+      });
+      $('confirmScores').addEventListener('click', () => {
+        const scores = {};
+        scoreDefs.forEach(([key]) => { scores[key] = Number($(`adjust-${key}`).value); });
+        const total = Object.values(scores).reduce((a,b) => a+b, 0);
+        updateEntry({ scores, scoreSource:'adjusted', done:true, review:total < 60 || entry().review });
+        $('manualReview').open = false;
+        renderScore(); renderList();
+        showToast('已儲存你的覆核分數');
+      });
+    }
+
+    function navigate(direction) {
+      const list = subjectQuestions();
+      const index = list.findIndex(q => q.id === currentId);
+      currentId = list[(index + direction + list.length) % list.length].id;
+      render(); window.scrollTo({ top: 0, behavior:'smooth' });
+    }
+
+    const termBank = {
+      '少年事件處理法': ['曝險少年','觸法少年','虞犯','少年法院','少年法庭','少年調查官','少年保護官','少輔會','責付','收容','同行','協尋','保護處分','保護管束','安置輔導','感化教育','轉介','行政輔導','程序監理人','輔佐人','修復式司法','最佳利益','程序保障','被害人','抗告','重新審理'],
+      '刑法': ['故意','過失','不作為','因果關係','客觀歸責','錯誤','未遂','不能犯','中止犯','正犯','共犯','教唆','幫助','身分犯','競合','罪數','違法性','有責性','阻卻違法','竊盜','詐欺','侵占','背信','強盜','殺人','傷害','毀損','偽造'],
+      '刑事訴訟法與保安處分執行法': ['強制處分','搜索','扣押','逮捕','拘提','羈押','訊問','自白','證據能力','傳聞法則','違法取證','辯護人','告知義務','不自證己罪','無罪推定','起訴','不起訴','再議','上訴','非常上訴','再審','保安處分','監護處分','強制治療','執行'],
+      '犯罪學': ['古典學派','實證學派','社會結構','社會過程','社會控制','緊張理論','差別接觸','社會學習','標籤理論','次文化','控制理論','一般化緊張','生活型態','日常活動','理性選擇','環境犯罪學','發展犯罪學','生命歷程','再犯','犯罪預防','矯治','復歸'],
+      '心理學': ['認知','情緒','動機','人格','學習','制約','記憶','知覺','發展','依附','壓力','創傷','偏誤','智力','測驗','信度','效度','心理衡鑑','精神疾患','憂鬱','焦慮','成癮','攻擊','團體','社會心理'],
+      '諮商與輔導': ['諮商關係','同理','傾聽','反映','摘要','面質','立即性','目標設定','倫理','保密','例外','轉介','危機處遇','自殺風險','團體諮商','家庭諮商','認知行為','焦點解決','敘事治療','現實治療','動機式晤談','多元文化','督導','結案']
+    };
+
+    function clampScore(value, max) { return Math.max(0, Math.min(max, Math.round(value))); }
+    function countMatches(text, expressions) { return expressions.reduce((sum, expression) => sum + (text.match(expression) || []).length, 0); }
+    function unique(items) { return [...new Set(items.filter(Boolean))]; }
+    function listHits(text, items) { return items.filter(item => text.includes(item)); }
+    function extractActors(text) {
+      const matches = text.match(/甲|乙|丙|丁|戊|己|庚|A|B|C|D|少年|法院|法官|檢察官|警察|被告|被害人|輔導人|少年調查官|少年保護官/g) || [];
+      return unique(matches).slice(0, 8);
+    }
+
+    function gradeAnswer(answer, question) {
+      const compact = answer.replace(/\s/g, '');
+      const characters = compact.length;
+      const actors = extractActors(question.body);
+      const actorHits = listHits(answer, actors);
+      const subjectTerms = termBank[question.subject] || [];
+      const answerTerms = listHits(answer, subjectTerms);
+      const terms = subjectTerms.filter(term => question.body.includes(term) || question.title.includes(term));
+      const termHits = listHits(answer, terms);
+      const paragraphs = answer.split(/\n+/).filter(line => line.trim()).length;
+      const headings = (answer.match(/(?:^|\n)\s*(?:[一二三四五六七八九十]+、|[（(][一二三四五六七八九十\d]+[）)]|\d+[.、])/g) || []).length;
+      const issueSignals = countMatches(answer, [/爭點/g, /是否/g, /應否/g, /成立/g, /適用/g, /涉及/g]);
+      const articleSignals = countMatches(answer, [/第\s*\d+(?:\s*之\s*\d+)?\s*條/g, /依(?:據|照)/g, /規定/g, /要件/g]);
+      const theorySignals = countMatches(answer, [/理論/g, /學派/g, /定義/g, /係指/g, /主張/g, /認為/g, /核心概念/g]);
+      const applicationSignals = countMatches(answer, [/本案/g, /題示/g, /就.{0,8}而言/g, /因為/g, /由於/g, /故/g, /因此/g, /然而/g, /惟/g, /若/g, /則/g]);
+      const conclusionSignals = countMatches(answer, [/綜上/g, /結論/g, /準此/g, /應認/g, /應成立/g, /不成立/g, /得以/g, /不得/g]);
+      const legalSubject = ['少年事件處理法','刑法','刑事訴訟法與保安處分執行法'].includes(question.subject);
+      const entityCoverage = actors.length ? actorHits.length / actors.length : 0;
+      const termCoverage = terms.length ? termHits.length / terms.length : 0;
+
+      const issueMaxForEntities = actors.length ? 8 : 4;
+      const issueMaxForTerms = actors.length ? 8 : 12;
+      const issueScore = clampScore(
+        Math.min(7, characters / 42) +
+        Math.min(7, issueSignals * 1.7) +
+        (actors.length ? entityCoverage * issueMaxForEntities : Math.min(4, issueSignals * 1.1)) +
+        (terms.length ? termCoverage * issueMaxForTerms : Math.min(issueMaxForTerms, (articleSignals + theorySignals) * 1.4)),
+        30
+      );
+
+      const specificRuleSignals = legalSubject ? articleSignals : theorySignals;
+      const supportingRuleSignals = legalSubject ? theorySignals : articleSignals;
+      const ruleScore = clampScore(
+        Math.min(10, specificRuleSignals * 2.2) +
+        Math.min(6, supportingRuleSignals * 1.2 + countMatches(answer, [/法益/g, /目的/g, /原則/g, /例外/g, /效果/g]) * 1.2) +
+        Math.min(6, answerTerms.length * 1.25) +
+        Math.min(3, characters / 130),
+        25
+      );
+
+      const analysisScore = clampScore(
+        Math.min(9, applicationSignals * 1.15) +
+        (actors.length ? entityCoverage * 7 : Math.min(7, answerTerms.length * 1.8)) +
+        Math.min(5, countMatches(answer, [/但是/g, /反之/g, /另說/g, /通說/g, /有認為/g, /本文認為/g, /另一方面/g]) * 1.7) +
+        Math.min(4, characters / 120),
+        25
+      );
+
+      const structureScore = clampScore(
+        Math.min(7, headings * 1.8) +
+        Math.min(4, Math.max(0, paragraphs - 1) * 1.1) +
+        Math.min(5, conclusionSignals * 1.8) +
+        Math.min(4, characters / 100),
+        20
+      );
+
+      const scores = { issue:issueScore, rule:ruleScore, analysis:analysisScore, structure:structureScore };
+      const total = Object.values(scores).reduce((sum, value) => sum + value, 0);
+      const evidenceCount = issueSignals + articleSignals + theorySignals + applicationSignals + conclusionSignals + headings;
+      const confidence = characters >= 300 && evidenceCount >= 10 ? '中高' : characters >= 140 && evidenceCount >= 5 ? '中等' : '偏低';
+      const strengths = [];
+      if (actorHits.length >= Math.min(2, actors.length)) strengths.push(`已回應題幹中的${actorHits.slice(0, 4).join('、')}等對象。`);
+      if (specificRuleSignals >= 2) strengths.push(legalSubject ? '已出現法條、規定或要件等規範依據。' : '已使用理論、定義或學派語句建立基礎。');
+      if (answerTerms.length >= 2) strengths.push(`已使用${answerTerms.slice(0, 3).join('、')}等本科關鍵概念。`);
+      if (applicationSignals >= 3) strengths.push('已有「規範／理論連結題目事實」的涵攝語句。');
+      if (headings >= 2 || paragraphs >= 4) strengths.push('答案已有可辨識的段落與層次。');
+      if (conclusionSignals >= 1) strengths.push('已提出明確結論，而非停留在知識羅列。');
+      if (!strengths.length) strengths.push('已開始作答；下一步先補出爭點、依據與結論三層骨架。');
+
+      const ratios = [
+        ['issue', issueScore / 30], ['rule', ruleScore / 25], ['analysis', analysisScore / 25], ['structure', structureScore / 20]
+      ].sort((a,b) => a[1] - b[1]);
+      const advice = {
+        issue: '先逐一列出題目要求與子爭點，使用「爭點在於……」作為小標題。',
+        rule: legalSubject ? '補上具體法條、構成要件、原則與例外，避免只寫結論。' : '補上理論名稱、定義、代表主張及主要概念。',
+        analysis: '增加「本案事實—判斷標準—因此」的連結，並處理可能的反面意見。',
+        structure: '用分段或編號整理答案，並在每個子題最後寫出明確結論。'
+      };
+      const improvements = unique(ratios.slice(0, 2).map(([key]) => advice[key]));
+      const missingActors = actors.filter(actor => !answer.includes(actor));
+      if (missingActors.length) improvements.push(`再確認是否需要逐一處理：${missingActors.slice(0, 4).join('、')}。`);
+      const missingTerms = terms.filter(term => !answer.includes(term));
+      if (missingTerms.length && improvements.length < 4) improvements.push(`核對題幹涉及的「${missingTerms.slice(0, 3).join('、')}」是否已回應。`);
+      if (characters < 120) improvements.push('目前篇幅較短，系統判定信心有限；至少補成完整的爭點、依據、涵攝與結論。');
+
+      return { scores, total, confidence, strengths:strengths.slice(0, 4), improvements:improvements.slice(0, 4), characters, method:'local-rubric-v1' };
+    }
+
+    function runSystemGrade(markDone) {
+      const assessment = gradeAnswer(issueInput.value, currentQuestion());
+      updateEntry({ scores:assessment.scores, assessment, scoreSource:'system', done:markDone || entry().done, review:assessment.total < 60 || entry().review });
+      renderScore(); renderList(); renderQuestion();
+      showToast(markDone ? (assessment.total < 60 ? '已完成初評；本題列入待複習' : '已完成初評並開啟答題方向') : '系統初評已更新');
+    }
+
+    function render() {
+      yearSelect.value = String(currentYear);
+      subjectSelect.value = currentSubject;
+      renderList(); renderQuestion(); renderScore(); updateStats();
+    }
+
+    function renderList() {
+      const visible = subjectQuestions().filter(q => {
+        const state = entry(q.id);
+        if (currentFilter === 'open') return !state.done;
+        if (currentFilter === 'review') return state.review;
+        return true;
+      });
+      questionList.innerHTML = '';
+      if (!visible.length) {
+        questionList.innerHTML = '<p style="padding:16px;color:var(--ink-soft);font-size:.84rem">這個篩選條件目前沒有題目。</p>';
+        return;
+      }
+      visible.forEach((q, index) => {
+        const state = entry(q.id);
+        const button = document.createElement('button');
+        button.className = 'question-item' + (q.id === currentId ? ' active' : '');
+        button.type = 'button';
+        button.setAttribute('aria-current', q.id === currentId ? 'true' : 'false');
+        const statusClass = state.review ? 'review' : state.done ? 'done' : '';
+        const statusText = state.review ? '待複習' : state.done ? '已完成' : '未完成';
+        button.innerHTML = `<span class="q-number">${q.questionNo}</span><span><span class="q-list-title">${q.title}</span><span class="q-meta"><span class="status-dot ${statusClass}"></span>${q.year} 年 · ${statusText}</span></span>`;
+        button.addEventListener('click', () => { currentId = q.id; render(); });
+        questionList.appendChild(button);
+      });
+    }
+
+    function renderQuestion() {
+      const q = currentQuestion(); const state = entry();
+      $('yearTag').textContent = `${q.year} 年`;
+      $('subjectTag').textContent = q.subject;
+      $('questionTitle').textContent = q.title;
+      $('questionBody').textContent = q.body;
+      $('sourceLink').href = q.sourceUrl;
+      $('pointList').innerHTML = '';
+      q.points.forEach(point => {
+        const li = document.createElement('li'); li.textContent = point; $('pointList').appendChild(li);
+      });
+      $('directionList').innerHTML = '';
+      q.direction.forEach(item => {
+        const li = document.createElement('li'); li.textContent = item; $('directionList').appendChild(li);
+      });
+      $('directionNote').textContent = q.guidanceNote;
+      $('directionPanel').hidden = !state.done;
+      issueInput.value = state.issue || '';
+      $('flagButton').classList.toggle('flagged', state.review);
+      $('flagButton').textContent = state.review ? '★' : '☆';
+      $('flagButton').setAttribute('aria-pressed', state.review ? 'true' : 'false');
+      $('completeButton').textContent = state.done ? '重新判定並查看方向' : '完成並系統判定';
+      updateWordCount();
+      $('saveStatus').textContent = state.issue ? '已儲存在此裝置' : '';
+    }
+
+    function renderScore() {
+      const state = entry();
+      const scores = state.scores || {};
+      scoreDefs.forEach(([key, , , max]) => {
+        const value = Number(scores[key] || 0);
+        $(`value-${key}`).textContent = `${value} / ${max}`;
+        $(`fill-${key}`).style.width = `${Math.min(100, value / max * 100)}%`;
+        $(`fill-${key}`).parentElement.setAttribute('aria-valuenow', String(value));
+        $(`adjust-${key}`).value = value;
+        $(`adjust-value-${key}`).textContent = `${value} / ${max}`;
+      });
+      const total = scoreDefs.reduce((sum, [key]) => sum + Number(scores[key] || 0), 0);
+      $('totalScore').textContent = total;
+      let level = '尚未判定', message = '完成作答後，系統會自動產生初評。';
+      if (total > 0 && total < 40) { level = '重新搭骨架'; message = '先補齊爭點、規範／理論與結論，再擴充細節。'; }
+      else if (total < 60 && total > 0) { level = '需要補強'; message = '已有部分得分內容；請優先補最低分的面向。'; }
+      else if (total < 80 && total > 0) { level = '基本穩定'; message = '已有得分骨架；再補具體涵攝、爭議與反面意見。'; }
+      else if (total >= 80) { level = '可進入限時練習'; message = '形式與得分要素較完整；請再核對實質內容是否正確。'; }
+      if (state.scoreSource === 'adjusted') level += ' · 已覆核';
+      $('scoreLevel').textContent = level;
+      $('scoreMessage').textContent = message;
+      $('scoreConfidence').textContent = state.assessment?.confidence || '尚未判定';
+      renderFeedback('scoreStrengths', state.assessment?.strengths || ['尚未進行系統判定。']);
+      renderFeedback('scoreImprovements', state.assessment?.improvements || ['先寫下你的爭點與作答骨架。']);
+      $('gradeButton').textContent = state.assessment ? '重新判定本題' : '系統判定本題';
+    }
+
+    function renderFeedback(id, items) {
+      const list = $(id); list.innerHTML = '';
+      items.forEach(item => { const li = document.createElement('li'); li.textContent = item; list.appendChild(li); });
+    }
+
+    function updateStats() {
+      const states = Object.values(saved);
+      const done = states.filter(x => x.done);
+      const review = states.filter(x => x.review).length;
+      const totals = done.map(x => Object.values(x.scores || {}).reduce((a,b) => a + Number(b || 0), 0));
+      $('doneCount').textContent = `${done.length} 題`;
+      $('reviewCount').textContent = `${review} 題`;
+      $('averageScore').textContent = totals.length ? `${(totals.reduce((a,b) => a+b, 0) / totals.length).toFixed(0)} 分` : '—';
+    }
+
+    function updateWordCount() { $('wordCount').textContent = `${issueInput.value.replace(/\s/g, '').length} 字`; }
+    function showToast(message) {
+      const toast = $('toast'); toast.textContent = message; toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 1800);
+    }
+
+    function registerModelTools() {
+      const context = document.modelContext;
+      if (!context?.registerTool) return;
+      const register = tool => {
+        try { Promise.resolve(context.registerTool(tool)).catch(() => {}); } catch (_) {}
+      };
+      register({
+        name: 'select_practice_question',
+        title: '選擇練習題',
+        description: '依題目 ID 切換觀護人考古題練習臺目前顯示的題目。',
+        inputSchema: {
+          type:'object', properties:{ questionId:{ type:'string', description:'題庫中的題目 ID' } },
+          required:['questionId'], additionalProperties:false
+        },
+        annotations:{ readOnlyHint:false, untrustedContentHint:false },
+        execute(input) {
+          const found = questionBank.find(q => q.id === input?.questionId);
+          if (!found) throw new Error('找不到指定題目');
+          currentYear = found.year; currentSubject = found.subject; currentId = found.id; render();
+          return { questionId:found.id, year:found.year, subject:found.subject, title:found.title };
+        }
+      });
+      register({
+        name: 'save_issue_notes',
+        title: '儲存爭點整理',
+        description: '將文字儲存為目前題目的爭點整理，並同步更新畫面。',
+        inputSchema: {
+          type:'object', properties:{ notes:{ type:'string', minLength:1, maxLength:12000 } },
+          required:['notes'], additionalProperties:false
+        },
+        annotations:{ readOnlyHint:false, untrustedContentHint:true },
+        execute(input) {
+          if (typeof input?.notes !== 'string' || !input.notes.trim()) throw new Error('爭點整理不可空白');
+          updateEntry({ issue:input.notes, scores:{ issue:0, rule:0, analysis:0, structure:0 }, assessment:null, scoreSource:null, done:false }); render();
+          return { questionId:currentId, saved:true, characters:input.notes.replace(/\s/g,'').length };
+        }
+      });
+      register({
+        name: 'grade_current_answer',
+        title: '判定目前答案',
+        description: '使用網站內建量表判定目前答案，儲存四項分數並標記完成；總分低於 60 分時列入待複習。',
+        inputSchema: { type:'object', properties:{}, additionalProperties:false },
+        annotations:{ readOnlyHint:false, untrustedContentHint:false },
+        execute() {
+          if (!entry().issue?.trim()) throw new Error('請先寫下作答內容');
+          const assessment = gradeAnswer(entry().issue, currentQuestion());
+          updateEntry({ scores:assessment.scores, assessment, scoreSource:'system', done:true, review:assessment.total < 60 || entry().review });
+          render();
+          return { questionId:currentId, total:assessment.total, confidence:assessment.confidence, completed:true, review:entry().review, improvements:assessment.improvements };
+        }
+      });
+    }
+
+    init();
+    registerModelTools();
+  </script>
+</body>
+</html>
