@@ -90,7 +90,7 @@
     .panel-head p { margin: 3px 0 0; color: var(--ink-soft); font-size: .8rem; }
     .field-label { display: block; margin-bottom: 6px; color: var(--ink-soft); font-size: .78rem; font-weight: 800; letter-spacing: .05em; }
     .subject-wrap { padding: 14px 16px; border-bottom: 1px solid var(--line); }
-    .select-grid { display: grid; grid-template-columns: .72fr 1.28fr; gap: 8px; }
+    .select-grid { display: grid; grid-template-columns: .62fr 1.18fr 1.2fr; gap: 8px; }
     select {
       width: 100%;
       border: 1px solid #bcccdc;
@@ -253,6 +253,8 @@
     @media (max-width: 430px) {
       .overview { grid-template-columns: 1fr 1fr; }
       .stat-card:last-child { grid-column: 1 / -1; }
+      .select-grid { grid-template-columns: 1fr 1fr; }
+      .exam-type-field { grid-column: 1 / -1; }
       .paper-toolbar { align-items: flex-start; }
       .paper-actions .btn { flex: 1; padding-inline: 10px; }
       .hint-external { align-items: stretch; flex-direction: column; }
@@ -299,6 +301,10 @@
               <label class="field-label" for="subjectSelect">選擇科目</label>
               <select id="subjectSelect"></select>
             </div>
+            <div class="exam-type-field">
+              <label class="field-label" for="examTypeSelect">題源類科</label>
+              <select id="examTypeSelect"></select>
+            </div>
           </div>
           <div class="filters" role="group" aria-label="題目篩選">
             <button class="chip active" data-filter="all">全部</button>
@@ -317,6 +323,7 @@
             <div class="paper-meta">
               <span class="tag" id="yearTag"></span>
               <span class="tag" id="subjectTag"></span>
+              <span class="tag" id="examTypeTag"></span>
               <span class="tag official">官方逐字題目</span>
             </div>
             <div class="toolbar-actions">
@@ -385,12 +392,27 @@
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <script src="questions.js"></script>
+  <script src="related-questions.js"></script>
   <script>
     const subjects = [
       '少年事件處理法', '刑法', '刑事訴訟法與保安處分執行法', '犯罪學', '心理學', '諮商與輔導'
     ];
 
-    const questionBank = window.QUESTION_BANK || [];
+    const sharedExamTypes = {
+      '115-諮商與輔導':['觀護人','家事調查官','心理測驗員','心理輔導員'],
+      '114-諮商與輔導':['觀護人','家事調查官','心理測驗員','心理輔導員'],
+      '113-諮商與輔導':['觀護人','家事調查官','心理測驗員','心理輔導員'],
+      '112-諮商與輔導':['觀護人','心理輔導員'],
+      '110-諮商與輔導':['觀護人','心理測驗員','心理輔導員'],
+      '109-諮商與輔導':['觀護人','心理測驗員'],
+      '108-諮商與輔導':['觀護人','心理測驗員','心理輔導員']
+    };
+    const baseQuestions = (window.QUESTION_BANK || []).map(question => ({
+      ...question,
+      examTypes: question.examTypes || sharedExamTypes[`${question.year}-${question.subject}`] || ['觀護人']
+    }));
+    const questionBank = [...baseQuestions, ...(window.RELATED_QUESTION_BANK || [])];
+    const examTypes = ['全部類科','觀護人','家事調查官','心理測驗員','心理輔導員'];
 
     const scoreDefs = [
       ['issue', '爭點掌握', '題目要求、行為人與子爭點', 30],
@@ -446,6 +468,7 @@
     }
     let currentYear = years[0] || 115;
     let currentSubject = subjects[0];
+    let currentExamType = examTypes[0];
     let currentId = questionBank.find(q => q.year === currentYear && q.subject === currentSubject)?.id;
     let currentFilter = 'all';
     let saveTimer;
@@ -453,6 +476,7 @@
     const $ = id => document.getElementById(id);
     const yearSelect = $('yearSelect');
     const subjectSelect = $('subjectSelect');
+    const examTypeSelect = $('examTypeSelect');
     const questionList = $('questionList');
     const issueInput = $('issueInput');
     const scoreRows = $('scoreRows');
@@ -467,7 +491,9 @@
       updateStats();
     }
     function currentQuestion() { return questionBank.find(q => q.id === currentId); }
-    function subjectQuestions() { return questionBank.filter(q => q.year === currentYear && q.subject === currentSubject); }
+    function subjectQuestions() {
+      return questionBank.filter(q => q.year === currentYear && q.subject === currentSubject && (currentExamType === '全部類科' || q.examTypes.includes(currentExamType)));
+    }
 
     function init() {
       const date = new Intl.DateTimeFormat('zh-TW', { timeZone:'Asia/Taipei', month:'long', day:'numeric', weekday:'short' }).format(new Date());
@@ -482,6 +508,11 @@
         const option = document.createElement('option');
         option.value = subject; option.textContent = subject;
         subjectSelect.appendChild(option);
+      });
+      examTypes.forEach(examType => {
+        const option = document.createElement('option');
+        option.value = examType; option.textContent = examType;
+        examTypeSelect.appendChild(option);
       });
       scoreDefs.forEach(([key, label, hint, max]) => {
         const row = document.createElement('div');
@@ -504,6 +535,11 @@
       });
       subjectSelect.addEventListener('change', () => {
         currentSubject = subjectSelect.value;
+        currentId = subjectQuestions()[0]?.id;
+        render();
+      });
+      examTypeSelect.addEventListener('change', () => {
+        currentExamType = examTypeSelect.value;
         currentId = subjectQuestions()[0]?.id;
         render();
       });
@@ -561,6 +597,7 @@
 
     function navigate(direction) {
       const list = subjectQuestions();
+      if (!list.length) return;
       const index = list.findIndex(q => q.id === currentId);
       currentId = list[(index + direction + list.length) % list.length].id;
       render(); window.scrollTo({ top: 0, behavior:'smooth' });
@@ -593,7 +630,7 @@
 
     function renderShuatiLinks(question) {
       const panel = $('shuatiGuide');
-      if (!subjects.includes(question.subject) || question.year < 108 || question.year > 115) {
+      if (!question.examTypes.includes('觀護人') || !subjects.includes(question.subject) || question.year < 108 || question.year > 115) {
         panel.hidden = true;
         return;
       }
@@ -725,6 +762,7 @@
     function render() {
       yearSelect.value = String(currentYear);
       subjectSelect.value = currentSubject;
+      examTypeSelect.value = currentExamType;
       renderList(); renderQuestion(); renderScore(); updateStats();
     }
 
@@ -748,7 +786,7 @@
         button.setAttribute('aria-current', q.id === currentId ? 'true' : 'false');
         const statusClass = state.review ? 'review' : state.done ? 'done' : '';
         const statusText = state.review ? '待複習' : state.done ? '已完成' : '未完成';
-        button.innerHTML = `<span class="q-number">${q.questionNo}</span><span><span class="q-list-title">${q.title}</span><span class="q-meta"><span class="status-dot ${statusClass}"></span>${q.year} 年 · ${statusText}</span></span>`;
+        button.innerHTML = `<span class="q-number">${q.questionNo}</span><span><span class="q-list-title">${q.title}</span><span class="q-meta"><span class="status-dot ${statusClass}"></span>${q.year} 年 · ${q.examTypes.join('／')} · ${statusText}</span></span>`;
         button.addEventListener('click', () => { currentId = q.id; render(); });
         questionList.appendChild(button);
       });
@@ -756,12 +794,41 @@
 
     function renderQuestion() {
       const q = currentQuestion(); const state = entry();
+      if (!q) {
+        setHintOpen(false);
+        $('yearTag').textContent = `${currentYear} 年`;
+        $('subjectTag').textContent = currentSubject;
+        $('examTypeTag').textContent = currentExamType;
+        $('questionTitle').textContent = '目前篩選條件沒有題目';
+        $('questionBody').textContent = '請切換年度、科目或題源類科；部分類科並非每年舉辦。';
+        $('sourceLink').hidden = true;
+        $('pointList').innerHTML = '';
+        $('directionList').innerHTML = '';
+        $('directionPanel').hidden = true;
+        issueInput.value = '';
+        issueInput.disabled = true;
+        $('completeButton').disabled = true;
+        $('prevButton').disabled = true;
+        $('nextButton').disabled = true;
+        $('flagButton').disabled = true;
+        $('hintButton').disabled = true;
+        updateWordCount();
+        return;
+      }
+      issueInput.disabled = false;
+      $('completeButton').disabled = false;
+      $('prevButton').disabled = false;
+      $('nextButton').disabled = false;
+      $('flagButton').disabled = false;
+      $('hintButton').disabled = false;
       setHintOpen(false);
       renderHints(q);
       $('yearTag').textContent = `${q.year} 年`;
       $('subjectTag').textContent = q.subject;
+      $('examTypeTag').textContent = q.examTypes.join('／');
       $('questionTitle').textContent = q.title;
       $('questionBody').textContent = q.body;
+      $('sourceLink').hidden = false;
       $('sourceLink').href = q.sourceUrl;
       $('pointList').innerHTML = '';
       q.points.forEach(point => {
@@ -848,8 +915,8 @@
         execute(input) {
           const found = questionBank.find(q => q.id === input?.questionId);
           if (!found) throw new Error('找不到指定題目');
-          currentYear = found.year; currentSubject = found.subject; currentId = found.id; render();
-          return { questionId:found.id, year:found.year, subject:found.subject, title:found.title };
+          currentYear = found.year; currentSubject = found.subject; currentExamType = '全部類科'; currentId = found.id; render();
+          return { questionId:found.id, year:found.year, subject:found.subject, examTypes:found.examTypes, title:found.title };
         }
       });
       register({
