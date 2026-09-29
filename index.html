@@ -125,12 +125,40 @@
     .question-paper { min-height: 700px; }
     .paper-toolbar { padding: 15px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--line); background: #f9fbfc; }
     .paper-meta { display: flex; flex-wrap: wrap; gap: 7px; }
+    .toolbar-actions { display: flex; align-items: center; gap: 7px; }
     .tag { padding: 4px 9px; border-radius: 7px; background: #e9eff4; color: var(--ink-soft); font-size: .76rem; font-weight: 700; }
     .tag.official { color: #106b65; background: var(--teal-soft); }
     .icon-btn {
       min-width: 42px; border: 1px solid var(--line); border-radius: 10px; background: #fff; color: var(--ink-soft); font-size: 1.12rem;
     }
+    .icon-btn.hint { color: #8a5600; border-color: #efc875; background: #fff9ea; font-weight: 900; }
+    .icon-btn.hint[aria-expanded="true"] { color: #fff; border-color: var(--amber); background: var(--amber); }
     .icon-btn.flagged { color: #8a5600; border-color: #efc875; background: var(--amber-soft); }
+    .hint-panel { padding: 18px 20px; border-bottom: 1px solid #efcc7e; background: #fff9ea; }
+    .hint-panel-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; margin-bottom: 10px; }
+    .hint-panel-head h3 { margin: 0; font-size: 1rem; }
+    .hint-panel-head p { margin: 2px 0 0; color: #7c5c18; font-size: .78rem; }
+    .hint-close { min-width: 36px; min-height: 36px; padding: 4px; border: 1px solid #efcc7e; border-radius: 8px; background: #fff; color: #7c5c18; font-weight: 900; }
+    .hint-step { margin-top: 8px; border: 1px solid #f0d58f; border-radius: 10px; background: rgba(255,255,255,.72); }
+    .hint-step summary { cursor: pointer; padding: 10px 12px; color: #634711; font-size: .86rem; font-weight: 900; }
+    .hint-step ul { margin: 0; padding: 0 30px 12px; color: #4f3d18; font-size: .82rem; }
+    .hint-step li { margin: 5px 0; }
+    .hint-caution { margin: 10px 0 0; color: #7c5c18; font-size: .74rem; }
+    .hint-external {
+      margin-top: 14px; padding: 13px;
+      border: 1px solid #e7bd62; border-radius: 11px;
+      background: #fff; display: flex; align-items: center; justify-content: space-between; gap: 14px;
+    }
+    .hint-external-copy { min-width: 0; }
+    .hint-external-copy strong { display: block; color: #51380b; font-size: .86rem; }
+    .hint-external-copy span { display: block; margin-top: 2px; color: #7c5c18; font-size: .72rem; }
+    .hint-external-actions { flex: 0 0 auto; display: flex; align-items: center; gap: 9px; }
+    .shuati-btn {
+      min-height: 40px; padding: 7px 12px;
+      border-color: #d99616; background: #fff4d6; color: #6c4500;
+      text-decoration: none; white-space: nowrap;
+    }
+    .shuati-fallback { color: #765718; font-size: .72rem; font-weight: 700; white-space: nowrap; }
     .question-content { padding: 27px clamp(20px, 3vw, 36px) 24px; }
     .question-content h2 { margin: 0 0 16px; font-family: ui-serif, "Noto Serif TC", serif; font-size: clamp(1.28rem, 2vw, 1.62rem); line-height: 1.48; }
     .question-body { padding: 19px 21px; border-left: 4px solid var(--teal); background: #f7fafc; color: #243b53; font-family: ui-serif, "Noto Serif TC", serif; line-height: 1.9; }
@@ -227,6 +255,10 @@
       .stat-card:last-child { grid-column: 1 / -1; }
       .paper-toolbar { align-items: flex-start; }
       .paper-actions .btn { flex: 1; padding-inline: 10px; }
+      .hint-external { align-items: stretch; flex-direction: column; }
+      .hint-external-actions { align-items: stretch; flex-direction: column; }
+      .shuati-btn { text-align: center; }
+      .shuati-fallback { text-align: center; }
     }
   </style>
 </head>
@@ -287,8 +319,25 @@
               <span class="tag" id="subjectTag"></span>
               <span class="tag official">官方逐字題目</span>
             </div>
-            <button class="icon-btn" id="flagButton" type="button" aria-label="標記待複習" title="標記待複習">☆</button>
+            <div class="toolbar-actions">
+              <button class="icon-btn hint" id="hintButton" type="button" aria-label="顯示作答提示" aria-controls="hintPanel" aria-expanded="false" title="作答提示">!</button>
+              <button class="icon-btn" id="flagButton" type="button" aria-label="標記待複習" title="標記待複習">☆</button>
+            </div>
           </div>
+          <section class="hint-panel" id="hintPanel" aria-labelledby="hintTitle" hidden>
+            <div class="hint-panel-head"><div><h3 id="hintTitle">作答提示</h3><p>卡住時依序展開，不必一次看完。</p></div><button class="hint-close" id="hintClose" type="button" aria-label="關閉作答提示">×</button></div>
+            <details class="hint-step" open><summary>提示一｜先確認題目在問什麼</summary><ul id="hintFocus"></ul></details>
+            <details class="hint-step"><summary>提示二｜先搭出答題骨架</summary><ul id="hintSkeleton"></ul></details>
+            <details class="hint-step"><summary>提示三｜不知道怎麼起筆時</summary><ul id="hintStarters"></ul></details>
+            <p class="hint-caution">提示只協助起步；完整建議方向仍會在完成作答後顯示。</p>
+            <div class="hint-external" id="shuatiGuide" hidden>
+              <div class="hint-external-copy"><strong>刷題王解題引導</strong><span>以新分頁開啟；可能需要登入或 VIP。本網站不會傳送你的答案或帳號資料。</span></div>
+              <div class="hint-external-actions">
+                <a class="btn shuati-btn" id="shuatiQuestionLink" href="#" target="_blank" rel="noopener noreferrer">查看本題引導</a>
+                <a class="shuati-fallback" id="shuatiPaperLink" href="#" target="_blank" rel="noopener noreferrer">同年度試卷</a>
+              </div>
+            </div>
+          </section>
           <div class="question-content">
             <h2 id="questionTitle"></h2>
             <div class="question-body" id="questionBody"></div>
@@ -349,6 +398,32 @@
       ['analysis', '涵攝論證', '事實連結、推論與反面意見', 25],
       ['structure', '結構表達', '段落層次、結論與完整度', 20]
     ];
+    const hintGuides = {
+      '少年事件處理法': {
+        skeleton:['一、制度目的與核心概念','二、適用對象、啟動要件與程序主體','三、少年權益保障、處遇或資源連結','四、程序效果、救濟與結論'],
+        starters:['本題首先應確認少年之身分、事件類型與程序階段。','依少年事件處理法之保護優先及最佳利益意旨……','就題示情形而言，應分別檢視程序要件與權益保障。','綜上，本案應採取之程序或處遇為……']
+      },
+      '刑法': {
+        skeleton:['一、依行為人與行為階段分段','二、構成要件：客觀面與主觀面','三、違法性、有責性及錯誤問題','四、正共犯、未遂、競合與逐人結論'],
+        starters:['本題爭點在於甲之行為是否成立……罪。','依刑法規定，該罪之客觀及主觀構成要件為……','本案甲之行為……，因此是否符合該要件，應視……而定。','綜上，甲應成立／不成立……']
+      },
+      '刑事訴訟法與保安處分執行法': {
+        skeleton:['一、先確認程序階段與處分性質','二、法定要件、權限主體與程序保障','三、違法效果、證據能力或救濟','四、保安處分之要件、期間與執行效果'],
+        starters:['本題應先確認系爭措施之法律性質與程序階段。','依刑事訴訟法規定，實施該措施須具備……','本案是否符合比例原則及正當程序，應分別檢視……','如認程序違法，其法律效果及救濟方式為……']
+      },
+      '犯罪學': {
+        skeleton:['一、理論名稱、背景與代表觀點','二、核心概念及因果機制','三、用理論解釋題目現象','四、政策意涵、優缺點與結論'],
+        starters:['本題所涉及之犯罪學理論為……','該理論的核心主張是犯罪發生源於……','套用於題示現象，可以解釋為……','依此理論，可採取之犯罪預防或處遇措施為……']
+      },
+      '心理學': {
+        skeleton:['一、概念或理論之定義','二、形成機制、構成要素或發展歷程','三、連結題目情境進行解釋','四、衡鑑、介入、限制與結論'],
+        starters:['心理學上所稱……，係指……','其形成或運作機制可分為……','就題示個案而言，可能表現為……','實務上可透過……進行評估或介入。']
+      },
+      '諮商與輔導': {
+        skeleton:['一、問題評估與諮商目標','二、採用理論及選擇理由','三、具體技巧、步驟與關係建立','四、倫理、風險、轉介與結案評估'],
+        starters:['面對本案，首先應評估當事人的需求、風險與資源。','本案可採用……取向，因其核心假設為……','諮商者可依序使用……技巧，以協助當事人……','過程中仍應注意保密、知情同意及必要轉介。']
+      }
+    };
     const years = [...new Set(questionBank.map(q => q.year))].sort((a,b) => b-a);
     const storageKey = 'probation-study-desk-v3';
     const legacyKey = 'probation-study-desk-v2';
@@ -456,6 +531,9 @@
         renderList(); renderQuestion();
         showToast(entry().review ? '已加入待複習' : '已取消待複習');
       });
+      $('hintButton').addEventListener('click', () => setHintOpen($('hintPanel').hidden));
+      $('hintClose').addEventListener('click', () => setHintOpen(false));
+      document.addEventListener('keydown', event => { if (event.key === 'Escape') setHintOpen(false); });
       $('completeButton').addEventListener('click', () => {
         if (!issueInput.value.trim()) { showToast('請先寫下至少一個爭點'); issueInput.focus(); return; }
         runSystemGrade(true);
@@ -486,6 +564,49 @@
       const index = list.findIndex(q => q.id === currentId);
       currentId = list[(index + direction + list.length) % list.length].id;
       render(); window.scrollTo({ top: 0, behavior:'smooth' });
+    }
+
+    function setHintOpen(open) {
+      $('hintPanel').hidden = !open;
+      $('hintButton').setAttribute('aria-expanded', open ? 'true' : 'false');
+      if (open) $('hintPanel').scrollIntoView({ block:'nearest', behavior:'smooth' });
+    }
+
+    function fillHintList(id, items) {
+      const list = $(id); list.innerHTML = '';
+      items.forEach(item => { const li = document.createElement('li'); li.textContent = item; list.appendChild(li); });
+    }
+
+    function renderHints(question) {
+      const guide = hintGuides[question.subject] || hintGuides['少年事件處理法'];
+      const focus = [
+        question.points?.[1] || '先圈出題目中的問句與作答動詞。',
+        question.points?.[0] || '找出核心制度、理論或法律關係。',
+        '先用一句話寫出「本題爭點在於……」，再依人物、子問或程序階段分段。'
+      ];
+      fillHintList('hintFocus', focus);
+      fillHintList('hintSkeleton', guide.skeleton);
+      fillHintList('hintStarters', guide.starters);
+      renderShuatiLinks(question);
+      document.querySelectorAll('.hint-step').forEach((step, index) => { step.open = index === 0; });
+    }
+
+    function renderShuatiLinks(question) {
+      const panel = $('shuatiGuide');
+      if (!subjects.includes(question.subject) || question.year < 108 || question.year > 115) {
+        panel.hidden = true;
+        return;
+      }
+      const numerals = { 1:'一', 2:'二', 3:'三', 4:'四' };
+      const questionKey = `${question.year}s1_jud_judicial_senior_觀護人_${question.subject}_${numerals[question.questionNo] || question.questionNo}`;
+      const paperSubject = question.subject === '少年事件處理法'
+        ? (question.year >= 112
+          ? '少年事件處理法(包括少年法院與相關機關處理少年事件聯繫辦法)'
+          : '少年事件處理法(包括少年及兒童保護事件執行辦法)')
+        : question.subject;
+      $('shuatiQuestionLink').href = `https://www.shuati.tw/q/${encodeURIComponent(questionKey)}/question`;
+      $('shuatiPaperLink').href = `https://www.shuati.tw/paper/${question.year}-judicial_judicial_senior_essay-${encodeURIComponent(paperSubject)}`;
+      panel.hidden = false;
     }
 
     const termBank = {
@@ -635,6 +756,8 @@
 
     function renderQuestion() {
       const q = currentQuestion(); const state = entry();
+      setHintOpen(false);
+      renderHints(q);
       $('yearTag').textContent = `${q.year} 年`;
       $('subjectTag').textContent = q.subject;
       $('questionTitle').textContent = q.title;
