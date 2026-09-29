@@ -395,7 +395,9 @@
   <script src="related-questions.js"></script>
   <script>
     const subjects = [
-      '少年事件處理法', '刑法', '刑事訴訟法與保安處分執行法', '犯罪學', '心理學', '諮商與輔導'
+      '少年事件處理法', '刑法', '刑法與少年事件處理法',
+      '刑事訴訟法與保安處分執行法', '犯罪學', '犯罪學與再犯預測',
+      '犯罪學概要', '心理學', '心理測驗', '諮商與輔導', '諮商與矯正輔導'
     ];
 
     const sharedExamTypes = {
@@ -409,10 +411,14 @@
     };
     const baseQuestions = (window.QUESTION_BANK || []).map(question => ({
       ...question,
-      examTypes: question.examTypes || sharedExamTypes[`${question.year}-${question.subject}`] || ['觀護人']
+      examTypes: question.examTypes || (
+        (question.examType || '觀護人') === '觀護人' && sharedExamTypes[`${question.year}-${question.subject}`]
+          ? sharedExamTypes[`${question.year}-${question.subject}`]
+          : [question.examType || '觀護人']
+      )
     }));
     const questionBank = [...baseQuestions, ...(window.RELATED_QUESTION_BANK || [])];
-    const examTypes = ['全部類科','觀護人','家事調查官','心理測驗員','心理輔導員'];
+    const examTypes = ['全部類科','觀護人','監獄官','監所管理員','薦任升等（矯正）','家事調查官','心理測驗員','心理輔導員'];
 
     const scoreDefs = [
       ['issue', '爭點掌握', '題目要求、行為人與子爭點', 30],
@@ -491,6 +497,43 @@
       updateStats();
     }
     function currentQuestion() { return questionBank.find(q => q.id === currentId); }
+    function availableYears(examType) {
+      return [...new Set(questionBank
+        .filter(q => examType === '全部類科' || q.examTypes.includes(examType))
+        .map(q => q.year))]
+        .sort((a,b) => b-a);
+    }
+    function refreshYearSelect() {
+      const available = availableYears(currentExamType);
+      if (!available.includes(currentYear)) currentYear = available[0];
+      yearSelect.innerHTML = '';
+      available.forEach(year => {
+        const option = document.createElement('option');
+        option.value = String(year); option.textContent = `${year} 年`;
+        yearSelect.appendChild(option);
+      });
+      yearSelect.value = String(currentYear || '');
+    }
+    function availableSubjects(examType, year) {
+      return [...new Set(questionBank
+        .filter(q => q.year === year && (examType === '全部類科' || q.examTypes.includes(examType)))
+        .map(q => q.subject))]
+        .sort((a,b) => {
+          const ai = subjects.indexOf(a), bi = subjects.indexOf(b);
+          return (ai < 0 ? 99 : ai) - (bi < 0 ? 99 : bi) || a.localeCompare(b, 'zh-Hant');
+        });
+    }
+    function refreshSubjectSelect() {
+      const available = availableSubjects(currentExamType, currentYear);
+      if (!available.includes(currentSubject)) currentSubject = available[0];
+      subjectSelect.innerHTML = '';
+      available.forEach(subject => {
+        const option = document.createElement('option');
+        option.value = subject; option.textContent = subject;
+        subjectSelect.appendChild(option);
+      });
+      subjectSelect.value = currentSubject || '';
+    }
     function subjectQuestions() {
       return questionBank.filter(q => q.year === currentYear && q.subject === currentSubject && (currentExamType === '全部類科' || q.examTypes.includes(currentExamType)));
     }
@@ -499,21 +542,13 @@
       const date = new Intl.DateTimeFormat('zh-TW', { timeZone:'Asia/Taipei', month:'long', day:'numeric', weekday:'short' }).format(new Date());
       $('todayText').textContent = date;
       $('bankCount').textContent = questionBank.length;
-      years.forEach(year => {
-        const option = document.createElement('option');
-        option.value = String(year); option.textContent = `${year} 年`;
-        yearSelect.appendChild(option);
-      });
-      subjects.forEach(subject => {
-        const option = document.createElement('option');
-        option.value = subject; option.textContent = subject;
-        subjectSelect.appendChild(option);
-      });
       examTypes.forEach(examType => {
         const option = document.createElement('option');
         option.value = examType; option.textContent = examType;
         examTypeSelect.appendChild(option);
       });
+      refreshYearSelect();
+      refreshSubjectSelect();
       scoreDefs.forEach(([key, label, hint, max]) => {
         const row = document.createElement('div');
         row.className = 'score-row';
@@ -530,6 +565,7 @@
     function bindEvents() {
       yearSelect.addEventListener('change', () => {
         currentYear = Number(yearSelect.value);
+        refreshSubjectSelect();
         currentId = subjectQuestions()[0]?.id;
         render();
       });
@@ -540,6 +576,8 @@
       });
       examTypeSelect.addEventListener('change', () => {
         currentExamType = examTypeSelect.value;
+        refreshYearSelect();
+        refreshSubjectSelect();
         currentId = subjectQuestions()[0]?.id;
         render();
       });
@@ -615,7 +653,7 @@
     }
 
     function renderHints(question) {
-      const guide = hintGuides[question.subject] || hintGuides['少年事件處理法'];
+      const guide = hintGuides[question.subjectGroup || question.subject] || hintGuides['少年事件處理法'];
       const focus = [
         question.points?.[1] || '先圈出題目中的問句與作答動詞。',
         question.points?.[0] || '找出核心制度、理論或法律關係。',
@@ -669,7 +707,8 @@
       const characters = compact.length;
       const actors = extractActors(question.body);
       const actorHits = listHits(answer, actors);
-      const subjectTerms = termBank[question.subject] || [];
+      const subjectGroup = question.subjectGroup || question.subject;
+      const subjectTerms = termBank[subjectGroup] || [];
       const answerTerms = listHits(answer, subjectTerms);
       const terms = subjectTerms.filter(term => question.body.includes(term) || question.title.includes(term));
       const termHits = listHits(answer, terms);
@@ -680,7 +719,7 @@
       const theorySignals = countMatches(answer, [/理論/g, /學派/g, /定義/g, /係指/g, /主張/g, /認為/g, /核心概念/g]);
       const applicationSignals = countMatches(answer, [/本案/g, /題示/g, /就.{0,8}而言/g, /因為/g, /由於/g, /故/g, /因此/g, /然而/g, /惟/g, /若/g, /則/g]);
       const conclusionSignals = countMatches(answer, [/綜上/g, /結論/g, /準此/g, /應認/g, /應成立/g, /不成立/g, /得以/g, /不得/g]);
-      const legalSubject = ['少年事件處理法','刑法','刑事訴訟法與保安處分執行法'].includes(question.subject);
+      const legalSubject = ['少年事件處理法','刑法','刑事訴訟法與保安處分執行法'].includes(subjectGroup);
       const entityCoverage = actors.length ? actorHits.length / actors.length : 0;
       const termCoverage = terms.length ? termHits.length / terms.length : 0;
 
@@ -915,7 +954,8 @@
         execute(input) {
           const found = questionBank.find(q => q.id === input?.questionId);
           if (!found) throw new Error('找不到指定題目');
-          currentYear = found.year; currentSubject = found.subject; currentExamType = '全部類科'; currentId = found.id; render();
+          currentYear = found.year; currentSubject = found.subject; currentExamType = '全部類科'; currentId = found.id;
+          refreshYearSelect(); refreshSubjectSelect(); render();
           return { questionId:found.id, year:found.year, subject:found.subject, examTypes:found.examTypes, title:found.title };
         }
       });
