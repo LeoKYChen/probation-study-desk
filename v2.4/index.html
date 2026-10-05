@@ -343,6 +343,10 @@
     .overview{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.overview .stat-card{min-height:72px}
     @media(max-width:900px){.study-entry-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
     @media(max-width:600px){.study-entry-grid{grid-template-columns:1fr}.study-entry-grid>*{padding:16px}.overview{grid-template-columns:repeat(3,minmax(0,1fr))}.overview .stat-card{padding:10px}.stat-card:last-child{grid-column:auto}}
+    #yamolGuide[hidden], #yamolPaperLink[hidden] { display:none; }
+    #yamolGuide .hint-external-actions, #yamolPartLinks { display:flex; flex-wrap:wrap; gap:10px; }
+    #yamolGuide .hint-external-copy { min-width:0; }
+    @media(max-width:600px) { #yamolGuide { flex-direction:column; align-items:stretch; } #yamolGuide .shuati-fallback { white-space:normal; } }
   </style>
   <link rel="stylesheet" href="study-map.css">
 </head>
@@ -474,6 +478,14 @@
                 <div id="shuatiPartLinks"></div>
               </div>
             </div>
+            <div class="hint-external" id="yamolGuide" hidden>
+              <div class="hint-external-copy"><strong>阿摩考題／討論</strong><span id="yamolLinkStatus"></span></div>
+              <div class="hint-external-actions">
+                <a class="btn shuati-btn" id="yamolQuestionLink" href="#" target="_blank" rel="noopener noreferrer">搜尋阿摩相關題目 ↗</a>
+                <a class="shuati-fallback" id="yamolPaperLink" href="#" target="_blank" rel="noopener noreferrer" hidden>同年度試卷 ↗</a>
+                <div id="yamolPartLinks"></div>
+              </div>
+            </div>
             <p class="source-note">題目來源：<a id="sourceLink" href="#" target="_blank" rel="noreferrer">考選部考畢試題 PDF</a>。考點與答題方向屬練習用整理；呈現流程參考<a href="https://www.shuati.tw/" target="_blank" rel="noreferrer">刷題王</a>的逐題解析與申論批改概念。</p>
             <section class="point-box" aria-labelledby="pointTitle">
               <h3 id="pointTitle">考點拆分</h3>
@@ -583,6 +595,8 @@
   <script src="answer-calibrations.js"></script>
   <script src="note-references.js"></script>
   <script src="shuati-links.js"></script>
+  <script src="yamol-links.js"></script>
+  <script src="yamol-ui.js"></script>
   <script src="pending-pilots.js"></script>
   <script>
     const subjects = [
@@ -947,6 +961,7 @@
       fillHintList('hintSkeleton', guide.skeleton);
       fillHintList('hintStarters', guide.starters);
       renderShuatiLinks(question);
+      window.renderYamolLinks(question);
       document.querySelectorAll('.hint-step').forEach((step, index) => { step.open = index === 0; });
     }
 
@@ -1194,6 +1209,7 @@
         $('examTypeTag').textContent = currentExamType;
         $('questionTitle').textContent = '目前篩選條件沒有題目';
         $('shuatiGuide').hidden = true;
+        $('yamolGuide').hidden = true;
         $('questionBody').textContent = '請切換年度、科目或題源類科；部分類科並非每年舉辦。';
         $('sourceLink').hidden = true;
         $('pointList').innerHTML = '';
@@ -1425,3 +1441,4 @@
   <script src="study-map.js"></script>
 </body>
 </html>
+
