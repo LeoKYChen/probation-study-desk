@@ -42,20 +42,5 @@
  $(daily?'export':'exportButton').addEventListener('click',e=>{e.stopImmediatePropagation();try{root.Practice25?.flush();const data=core.local();download(data,'probation-all-records-'+new Date().toISOString().replace(/[:.]/g,'-')+'.json');status('已匯出考古題與模擬題的完整備份；兩個練習頁皆可匯入。');}catch(error){status('匯出失敗：'+error.message+'；現有紀錄未修改。');}},true);
  input.addEventListener('change',async e=>{e.stopImmediatePropagation();try{const f=input.files[0];if(!f)return;if(f.size>20*1024*1024)throw Error('檔案超過20MB');const incoming=normalize(JSON.parse(await f.text()));const n=Object.keys(incoming.study).length+Object.keys(incoming.daily).length;if(!n){status('備份讀取成功，但沒有作答紀錄；現有紀錄未修改。');return;}if(!confirm('匯入考古題 '+Object.keys(incoming.study).length+' 筆、模擬題 '+Object.keys(incoming.daily).length+' 筆。以備份為主整批恢復；現有不同版本另存，備份未包含的題目保留。是否繼續？'))return;root.Practice25?.flush();const before=core.local();const merged=backupFirst(before,incoming);core.apply(merged.data);status('已匯入 '+n+' 筆。'+(merged.conflicts.length?'其中 '+merged.conflicts.length+' 筆有差異，已顯示備份答案，原有版本另存為替代稿。':'')+'匯入前紀錄也已暫存備份。');}catch(error){status('匯入失敗：'+error.message+'；請保留備份原檔。');}finally{input.value='';}},true);
 
- function renderDrafts(){
-  if(!root.Practice25)return;
-  let panel=$('savedDrafts25');if(!panel){panel=document.createElement('details');panel.id='savedDrafts25';panel.style.cssText='margin:18px;padding:18px;border:1px solid #ccd7ca;border-radius:12px;background:white';document.querySelector('.topbar').after(panel);}
-  panel.replaceChildren();const summary=document.createElement('summary');summary.textContent='查看已保存作答與匯入替代稿';panel.append(summary);
-  const bank=root.Practice25.getQuestions(),records=root.Practice25.getRecords();let count=0;
-  for(const [id,record] of Object.entries(records)){
-   const text=record.issue||record.assessment?.answer||'';const alternatives=(record.syncAlternatives||[]).filter(a=>a.record?.issue||a.record?.assessment?.answer);
-   if(!text&&!alternatives.length)continue;count++;const box=document.createElement('details');const label=document.createElement('summary');const q=bank.find(q=>q.id===id);label.textContent=(q?.title||id)+' · '+(text?text.length+' 字':'目前答案空白')+' · 替代稿 '+alternatives.length+' 份';box.append(label);
-   function show(value,choose){const pre=document.createElement('pre');pre.style.cssText='white-space:pre-wrap;overflow-wrap:anywhere;font:inherit';pre.textContent=value;box.append(pre);const b=document.createElement('button');b.type='button';b.textContent=choose?'恢復此稿為目前答案':'開啟這題與答案';b.onclick=()=>{try{if(choose){if(!confirm('恢復此稿？目前版本仍會保存為替代稿。'))return;const data=core.local(),old=data.study[id],target=choose.record||{...old,issue:value};const rest=(old.syncAlternatives||[]).filter(a=>a!==choose&&JSON.stringify(a.record)!==JSON.stringify(target));data.study[id]={...target,issue:value,syncAlternatives:[...rest,{record:{...old,syncAlternatives:undefined},savedAt:old.updatedAt||null}],updatedAt:new Date().toISOString()};core.apply(core.clone(data));}if(q){root.Practice25.select(id);$('issueInput')?.scrollIntoView({behavior:'smooth',block:'center'});status('已開啟 '+(q.title||id)+'；作答欄 '+(root.Practice25.getState().issue||'').length+' 字。');}else status('此稿已保留，但目前題庫無對應題目。');}catch(error){status('恢復失敗：'+error.message+'；原稿仍保留。');}};box.append(b);}
-   if(text)show(text,record.issue?null:{record:{...record,issue:text}});
-   for(const alt of alternatives)show(alt.record.issue||alt.record.assessment.answer,alt);
-   panel.append(box);
-  }
-  if(!count){const p=document.createElement('p');p.textContent='目前沒有已保存的作答內容。';panel.append(p);}
- }
- root.addEventListener('practice25:render',renderDrafts);root.addEventListener('practice25:changed',renderDrafts);root.addEventListener('backup25:applied',renderDrafts);renderDrafts();
+ document.getElementById('savedDrafts25')?.remove();
 })(typeof window==='undefined'?globalThis:window);
