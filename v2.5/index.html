@@ -364,6 +364,7 @@
         <div class="today"><strong id="todayText"></strong><span>考古題與重點整理</span></div>
         <button class="data-btn" id="exportButton" type="button">匯出備份</button>
         <button class="data-btn" id="importButton" type="button">匯入備份</button>
+        <button class="data-btn" id="clearAllRecords" type="button">清除全部練習紀錄</button>
         <input id="importFile" type="file" accept="application/json,.json" hidden>
       </div>
     </header>
@@ -1455,6 +1456,6 @@
 const requested=new URLSearchParams(location.search); const picked=requested.get('q');
 if(picked)window.Practice25.select(picked);
 if(requested.has('review')){const fold=[...document.querySelectorAll('details')].find(n=>n.querySelector('summary')?.textContent==='補強清單');if(fold){fold.open=true;fold.scrollIntoView();}}
-</script><script src="backup-io-direct.js"></script><script src="print-study.js"></script></body>
+</script><script src="backup-io-direct.js"></script><script src="print-study.js"></script><script src="clear-records.js"></script></body>
 </html>
 
