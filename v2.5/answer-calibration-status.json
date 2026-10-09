@@ -1,0 +1,2824 @@
+{
+  "version": "answer-outline-310-v1-20261004",
+  "date": "2026-10-04",
+  "referenceAnswers": 310,
+  "independentHumanReviewed": 0,
+  "fullAnswerCalibrated": 0,
+  "automaticallyScored": 0,
+  "withUnresolvedSpecialistSources": 191,
+  "withExplicitContentIssues": 9,
+  "allRequireReview": 310,
+  "byQuestion": {
+    "115-諮商與輔導-2": {
+      "contentHash": "4533669b967f9bad1ce9db2e9efa50cc26f84ee3e0e8c6e4290581eed388ae6b",
+      "unresolvedSourceAliases": [
+        "jung"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "115-諮商與輔導-3": {
+      "contentHash": "c22bbe7457c40b91f81f6332cfb5a5d16425ba8d7cbdc30eac3768d8c37ff493",
+      "unresolvedSourceAliases": [
+        "yalom"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "114-諮商與輔導-2": {
+      "contentHash": "d4503ebedebb9c98b42bd7230dd3cf9d0c7ecb4f4a35a8ad675f3d050117731f",
+      "unresolvedSourceAliases": [
+        "beck"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "114-諮商與輔導-3": {
+      "contentHash": "668f0c4d6efd4d198f421a6a44d82f98aa996fbdd59593fd149b4c5114c8e751",
+      "unresolvedSourceAliases": [
+        "digitalviolence"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "114-諮商與輔導-4": {
+      "contentHash": "6e9d68a6d63368ae8d5240a3566d0226ee1ee466e839c6864504ba0cedc3c940",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "113-諮商與輔導-1": {
+      "contentHash": "becee7afada2523c7e35d1a6a721909693189643407c92884fe9666c03d8b071",
+      "unresolvedSourceAliases": [
+        "dropout",
+        "career"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "113-諮商與輔導-2": {
+      "contentHash": "c7b62fcff821b1c16d01c32c5fe6125ab0e8c6ef988859e2951ccb8f01f3eea8",
+      "unresolvedSourceAliases": [
+        "ethics"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "113-諮商與輔導-4": {
+      "contentHash": "b64ab46686a7922bc1d164ef162df5d44bb2bec3087cb943850b165205c75f77",
+      "unresolvedSourceAliases": [
+        "adler"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "112-諮商與輔導-1": {
+      "contentHash": "22d86a284a76b2f773b6c278e29706213b22287e131ea6518bcd968dae180e57",
+      "unresolvedSourceAliases": [
+        "ethics",
+        "prison"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "112-諮商與輔導-2": {
+      "contentHash": "26790c4b48ba084256743f2fa8ac0b23d609e192a4d095ec93d76e8f7f4a350a",
+      "unresolvedSourceAliases": [
+        "genderedu",
+        "genderwork",
+        "harassment"
+      ],
+      "openIssues": [
+        "本題尚有3項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "112-諮商與輔導-3": {
+      "contentHash": "c7ce6bfe8b86683cf00f4bf70dd9eedd52d159b2511d6a59e585ea6728e75cf0",
+      "unresolvedSourceAliases": [
+        "bullying",
+        "ethics"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "112-諮商與輔導-4": {
+      "contentHash": "1850f1c9f67661b03a42430ff6861ea2390c5a37739eff8053f6255033e000d1",
+      "unresolvedSourceAliases": [
+        "group"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "111-諮商與輔導-2": {
+      "contentHash": "7113a608acecc2abe1099ed24e0a51fc66d40c3bc0c8ed0c9dcca614d3e4d2dc",
+      "unresolvedSourceAliases": [
+        "development",
+        "therapy"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "110-諮商與輔導-1": {
+      "contentHash": "cffd9d5d7eb3927f0e3951d5309c18ac23afbdb829a71f4d0988c5fac4b1fe93",
+      "unresolvedSourceAliases": [
+        "psychodynamic",
+        "existential"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "110-諮商與輔導-2": {
+      "contentHash": "bab90f1973c34ea749bb21a48fb9b960a76db9cc613f0aec457890d73a540034",
+      "unresolvedSourceAliases": [
+        "multicultural"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "110-諮商與輔導-3": {
+      "contentHash": "4f53c19c7f7b93185cef081b45bc843a35c3aef989576b2488c5ddd63ad5a74f",
+      "unresolvedSourceAliases": [
+        "genderedu",
+        "ethics"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "109-諮商與輔導-1": {
+      "contentHash": "a882a452715ba484676774c7e11d4c0bfc03b9f6a6e529182f1b8ffb40c0b2c8",
+      "unresolvedSourceAliases": [
+        "psychodynamic",
+        "existential"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "109-諮商與輔導-2": {
+      "contentHash": "14a46d111a3a74f4d2bb9ed680ef8a22fdaaf1ff89cad3cea18ecbd9a37457ed",
+      "unresolvedSourceAliases": [
+        "depression"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "109-諮商與輔導-3": {
+      "contentHash": "6603fd628b463a732a15c4e4920a911f4fe9238dc2f6b1809cabfca7c26f5c22",
+      "unresolvedSourceAliases": [
+        "narrative",
+        "psychodynamic"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "108-諮商與輔導-1": {
+      "contentHash": "1370672cf906ce4042d59e6f53b50f08f786014fd654f054ac7cfedcb54ad7d4",
+      "unresolvedSourceAliases": [
+        "strengths",
+        "glm"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "108-諮商與輔導-4": {
+      "contentHash": "e7bcc4921f38357a0fe69340f9c648dddd9ee6041c23340454742e57245a6a31",
+      "unresolvedSourceAliases": [
+        "trait",
+        "bdi"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-115-諮商與矯正輔導-1": {
+      "contentHash": "d32280157a165915845b3528582ead3892e7cd98b6a1f67f47ab4d48c5eb7957",
+      "unresolvedSourceAliases": [
+        "psychodynamic",
+        "group"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-115-諮商與矯正輔導-2": {
+      "contentHash": "f89c4cf8e8a4ba9a4a88a1a71e19289041ef447cadd8f633dc0844261acff26b",
+      "unresolvedSourceAliases": [
+        "adler"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-115-諮商與矯正輔導-3": {
+      "contentHash": "c8c68ca9ee952e0a13dfecadeda19b713e3026e6d2e70b3354c8ee20a40794b1",
+      "unresolvedSourceAliases": [
+        "expressive"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-115-諮商與矯正輔導-4": {
+      "contentHash": "e09acf592f97b43d64fad4196f4500380d8b6c7b26cbf0b8083952ab4c1a657a",
+      "unresolvedSourceAliases": [
+        "suicide",
+        "prison"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-114-諮商與矯正輔導-1": {
+      "contentHash": "d82e86635665500a2014e44882e50606c68468df5526614f46bf22aeb6dbda21",
+      "unresolvedSourceAliases": [
+        "adler"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-114-諮商與矯正輔導-3": {
+      "contentHash": "de77ab4d75e0726c8b7ba166848138d930291fd7f232634d68d102ac3eea5501",
+      "unresolvedSourceAliases": [
+        "group",
+        "narrative"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-114-諮商與矯正輔導-4": {
+      "contentHash": "1a29e80999f23975d696ce493193330697302a121b28f2ee8a0384ea31fa9334",
+      "unresolvedSourceAliases": [
+        "alcohol",
+        "prevention"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-112-諮商與矯正輔導-1": {
+      "contentHash": "298858db603560ecb37cebfc5b21816b3a51d7040233b02ca28fa44f137a1717",
+      "unresolvedSourceAliases": [
+        "strengths"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-112-諮商與矯正輔導-2": {
+      "contentHash": "31246fbf0ecc998d34be98bca915db9d2c2bed71f0d195709ee107ffd090a5de",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-111-諮商與矯正輔導-1": {
+      "contentHash": "8825e4aedd77d501f1e21e5e169f4cfde6a69e9e735b854464bc98342d1ef53e",
+      "unresolvedSourceAliases": [
+        "psychodynamic"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-111-諮商與矯正輔導-2": {
+      "contentHash": "772730739f87eb149003a4a7d742fe6747920f0ee0fb566ea03a23a15d713b70",
+      "unresolvedSourceAliases": [
+        "conduct"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-111-諮商與矯正輔導-3": {
+      "contentHash": "c6d9f728336cc96f5dc3c4120539834652e7be878c26ed00f557cd3525ec2bbe",
+      "unresolvedSourceAliases": [
+        "teyber"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-110-諮商與矯正輔導-1": {
+      "contentHash": "19a9bd8bcf69500a3677d8fab61494290a6929aa567c551897e25edba1529369",
+      "unresolvedSourceAliases": [
+        "beck",
+        "addiction"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-110-諮商與矯正輔導-2": {
+      "contentHash": "133866076000f68daabe19de9eea8c8c0b1b68c430e2726fce350caa79e200ac",
+      "unresolvedSourceAliases": [
+        "prevention"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-110-諮商與矯正輔導-3": {
+      "contentHash": "79e24c028fbc5045530d5094ce974f48528f7ca2cd195a8776793916db1e9f61",
+      "unresolvedSourceAliases": [
+        "sexualtreatment"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-110-諮商與矯正輔導-4": {
+      "contentHash": "47b78d3db76ae22fc83591117f04617680d80c0522f9e80f7cc4e51c8aa10192",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-109-諮商與矯正輔導-1": {
+      "contentHash": "eb87a8f8da7ae06ae058fc8546fe3b5744afe0b3fc12d5fb2687385b2e52e6a7",
+      "unresolvedSourceAliases": [
+        "stages"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-109-諮商與矯正輔導-2": {
+      "contentHash": "1d68c3e7ccad96930eec047c69d63f76d63d4bfd921b8cc570daccec668e6dfc",
+      "unresolvedSourceAliases": [
+        "sit"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-109-諮商與矯正輔導-4": {
+      "contentHash": "4d3df225e039c98481b95f01f4cad7d23e939753cada47c8d21ef7745d0225c3",
+      "unresolvedSourceAliases": [
+        "group"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-108-諮商與矯正輔導-2": {
+      "contentHash": "63d733e3c8d82adc8143e4bb3933f8977cfd763bedabeee3c1fdc2ad3b8619ec",
+      "unresolvedSourceAliases": [
+        "yalom",
+        "group"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-108-諮商與矯正輔導-3": {
+      "contentHash": "124be9ac2305deae59308f49fc3ad9f1e50f8a0f23d2a7c416fe961017155345",
+      "unresolvedSourceAliases": [
+        "alcohol"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-108-諮商與矯正輔導-4": {
+      "contentHash": "a17348ca54efe0005230f2fb5a979b4a8bdf0104f07d354c1863dfcd9498c20e",
+      "unresolvedSourceAliases": [
+        "conduct",
+        "personalitydisorder"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-114-諮商與輔導-1": {
+      "contentHash": "bb285c7320906263dcd35a0bb860ee0a83f09fb098d5dae77ad8f3cb74fd14c8",
+      "unresolvedSourceAliases": [
+        "existential"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-114-諮商與輔導-2": {
+      "contentHash": "e948ff1ede994ab2c6861678bb09bcb41f8a04234eabe0d2b76a4881257a417a",
+      "unresolvedSourceAliases": [
+        "se"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-114-諮商與輔導-3": {
+      "contentHash": "a01a754ed22ad75c8bbea5576a79e6ed1b8d65fbf7600b3d4245f75c7a67ff91",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-114-諮商與輔導-4": {
+      "contentHash": "3cf5fe34bb8838684b138c633522a9ea153b659f98ec68cc7081dc6666bc78d3",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-112-諮商與輔導-1": {
+      "contentHash": "dd9964bdbaa70d3438f79504a3b1fb91e48db7e26ae7557d03b21a0e8f31b7ae",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-112-諮商與輔導-2": {
+      "contentHash": "cadbe549669f1c6f92e0630f4f8c39643179de3fb709e6ae268e441925667a32",
+      "unresolvedSourceAliases": [
+        "mindfulness",
+        "sel"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-112-諮商與輔導-3": {
+      "contentHash": "25aba6afff71d270e0905c013f20f62aca1b6a4b1719582529b9b837656c2219",
+      "unresolvedSourceAliases": [
+        "suicidelaw",
+        "ethics"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-112-諮商與輔導-4": {
+      "contentHash": "127e10244437a7c0b6baa6654c00ba97542ec3385bb838919e744fdf76fc5b47",
+      "unresolvedSourceAliases": [
+        "helping"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-110-諮商與輔導-1": {
+      "contentHash": "8086298f40c463f1387b747c090eac2fe325ac4daed0fb9ea2426a91eea3296d",
+      "unresolvedSourceAliases": [
+        "group"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-110-諮商與輔導-2": {
+      "contentHash": "1a94e69b75e5dada986274d4cb81b9c0f11a91ec0351e40594fc6650dffb4c39",
+      "unresolvedSourceAliases": [
+        "beck"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-110-諮商與輔導-3": {
+      "contentHash": "973ff2fe5e65f69a3e57c748890ddf86c7e008f73ab38a8126e1ada48883f955",
+      "unresolvedSourceAliases": [
+        "ecological"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-110-諮商與輔導-4": {
+      "contentHash": "81af554598ec4cb9f14b3425add4d60757b50975586dc0b9a080fdc17586d618",
+      "unresolvedSourceAliases": [
+        "reentry",
+        "helping"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-108-諮商與輔導-1": {
+      "contentHash": "b796af937d0cdf8741c4e561580c5d8c8df5cf9e850d42fa048d3b43ee875a23",
+      "unresolvedSourceAliases": [
+        "relapse",
+        "glm"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-108-諮商與輔導-2": {
+      "contentHash": "5b8937747ec9764e48653f5fd2b413aaf7a710bd11a3b8bb04e364d3593659cc",
+      "unresolvedSourceAliases": [
+        "addiction"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-108-諮商與輔導-3": {
+      "contentHash": "c152e085bfedaf6c1a7480b23cb78b540fb8876f9195477f14246c9aab963984",
+      "unresolvedSourceAliases": [
+        "risk"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-108-諮商與輔導-4": {
+      "contentHash": "39f1b0dbb0b8a080f683e0cac7e7aa419a07c384e6ff1ca5354a9fd6f8eb663a",
+      "unresolvedSourceAliases": [
+        "ethics"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "115-犯罪學-1": {
+      "contentHash": "b6acfbb8adbfa1df6ffe6be8d677e4abceae832df24c204ea6baf94fc5d8ddf4",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "115-犯罪學-3": {
+      "contentHash": "91c7c5c4e7fa6886a892810aa6c7f2838946d8bc5c4e93ec2f7a4a778bbdab44",
+      "unresolvedSourceAliases": [
+        "risk"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "115-犯罪學-4": {
+      "contentHash": "f27d328f93f73182db11913fb63f6db8c94ee854cc4c5d059e4a777364e752c5",
+      "unresolvedSourceAliases": [
+        "664"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "113-犯罪學-1": {
+      "contentHash": "304c30cef87e29de5d4fedc12113466f80b619070c93dd9ba95de1c367dc0fb0",
+      "unresolvedSourceAliases": [
+        "bandura"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "113-犯罪學-2": {
+      "contentHash": "8b0fc70ff2a5fa70cb0556cdaccedf420d9c0b959a41264fb946761ce4d1dff7",
+      "unresolvedSourceAliases": [
+        "colvin"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "113-犯罪學-3": {
+      "contentHash": "3b692bb7eee0513a80a8e4ba66973b708ac60510518f83bdaf051474163b62c0",
+      "unresolvedSourceAliases": [
+        "pittsburgh",
+        "collective"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "113-犯罪學-4": {
+      "contentHash": "fbf4a32ff3cd6d27a6daaf81f6ae298e7aa31e7f0e40a825eb19c780acec189c",
+      "unresolvedSourceAliases": [
+        "schizophrenia"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "112-犯罪學-1": {
+      "contentHash": "70b606682f9bdcb877cff2c364a897389acef14f41a041dc350b20260868de28",
+      "unresolvedSourceAliases": [
+        "bentham"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "112-犯罪學-4": {
+      "contentHash": "c3e1e8fb6d99eb40c0a2863d189f7b57fd6b259b82cb515a1ea038a5120a8fb6",
+      "unresolvedSourceAliases": [
+        "schizophrenia",
+        "personalitydisorder"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "111-犯罪學-2": {
+      "contentHash": "e2fb729de0399281907812797ab9c4a83da2f34be9b25a75645b5838d560931f",
+      "unresolvedSourceAliases": [
+        "integration"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "111-犯罪學-3": {
+      "contentHash": "7c9c61764a9d375ebc3ecd82034d7217d361009061ebf4113881626704c58e93",
+      "unresolvedSourceAliases": [
+        "hirschi",
+        "agnew"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "111-犯罪學-4": {
+      "contentHash": "cfb960cb2c65d26647f2d27106d15809fca5fa92c301d894f207301e1eddcf8f",
+      "unresolvedSourceAliases": [
+        "subculture",
+        "neutralization"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "110-犯罪學-1": {
+      "contentHash": "27678222feda960b8a47469292ceb89461b23890ce27c93633eb9e9c98c10e5a",
+      "unresolvedSourceAliases": [
+        "quinney"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "110-犯罪學-2": {
+      "contentHash": "8d7191b70af023c8f4ff3651bb7e1a8d58aa25bd14235279109ce75b93d7e424",
+      "unresolvedSourceAliases": [
+        "collective"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "110-犯罪學-3": {
+      "contentHash": "05fb715ff770117faaf5e0b7c744c44f740345c67ec1a3d35e9bd5096d8e85ff",
+      "unresolvedSourceAliases": [
+        "cosa"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "110-犯罪學-4": {
+      "contentHash": "4f3820056dbcda66612af6dfb835bc8e818ae52e44db94c7da89ceeb054bbba3",
+      "unresolvedSourceAliases": [
+        "personalitydisorder",
+        "hare"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "109-犯罪學-1": {
+      "contentHash": "36ecf8096f7699641527c3758954a48b250017fd554da49d6660ecdf15ef8fd6",
+      "unresolvedSourceAliases": [
+        "sutherland"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "109-犯罪學-3": {
+      "contentHash": "c31853b21d55f78e485d3cddba5e33c2d1c4c8daab4b211490c522f2d1954aa0",
+      "unresolvedSourceAliases": [
+        "sampson"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "109-犯罪學-4": {
+      "contentHash": "42afe2340fb297b3c58408601c0819dae13590498d84e9cd21d4b6b94a2d3d28",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "108-犯罪學-2": {
+      "contentHash": "c28af5f9273b3f30e1ed9c9445d573b297efcf88e75133f4a0cbbb5cd91de491",
+      "unresolvedSourceAliases": [
+        "prevention"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "108-犯罪學-3": {
+      "contentHash": "dc2a095d69e38c3a10c66ec1bf199a073d0a3fc17e615a54dd87b4189151c1af",
+      "unresolvedSourceAliases": [
+        "bedau"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "108-犯罪學-4": {
+      "contentHash": "5aacd59c5f512e8a297fdbeeb15adb1259ebf0f036c0ab171ec9938db0b2d370",
+      "unresolvedSourceAliases": [
+        "criminology"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-115-犯罪學與再犯預測-1": {
+      "contentHash": "5e335f04a3d6057e6050cca6c96b021abe056ba5f30120c319af131f0697150c",
+      "unresolvedSourceAliases": [
+        "sampson",
+        "maruna"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-115-犯罪學與再犯預測-2": {
+      "contentHash": "ebb181d2446cf79fc15f6ae683c5d0f570740c24a8186d92bd437eae31655d97",
+      "unresolvedSourceAliases": [
+        "cornish"
+      ],
+      "openIssues": [
+        "具體分段應依Cornish案例版本核對。",
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-115-犯罪學與再犯預測-3": {
+      "contentHash": "cbf7a78169ee31572a3e7aa2e3843700cf9fed983ac48136d4f52b77a04f9967",
+      "unresolvedSourceAliases": [
+        "prediction"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-115-犯罪學與再犯預測-4": {
+      "contentHash": "7064d16cb9f24ebc794dd1a5afb214a2107644c1aabbccaea1a1d1d9d7a11994",
+      "unresolvedSourceAliases": [
+        "restorative"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-114-犯罪學與再犯預測-1": {
+      "contentHash": "6f7eaaa7b8d4f2c9e9ae1628ace62611452a14b702b6e22b34670c8a128431af",
+      "unresolvedSourceAliases": [
+        "cpted"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-114-犯罪學與再犯預測-3": {
+      "contentHash": "9bed3b4d845a4729d82cfeb1a8e7999dbdfa99e4197f8f5ae58d007e5d00fa41",
+      "unresolvedSourceAliases": [
+        "risk"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-113-犯罪學與再犯預測-2": {
+      "contentHash": "9e9fe02ea47264331a1073dc541d7ace93ae64b3d7add8e153f2de85988c7239",
+      "unresolvedSourceAliases": [
+        "victimization"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-112-犯罪學與再犯預測-1": {
+      "contentHash": "cfcc973a31cf5dac7975659a9ae117ca24ec45537aec5586cdf36173893cd157",
+      "unresolvedSourceAliases": [
+        "prediction"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-112-犯罪學與再犯預測-2": {
+      "contentHash": "5570251b878a7e3cdd530552235191444f5e9260fd8adf476c70e7d196f33330",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-112-犯罪學與再犯預測-3": {
+      "contentHash": "33cede459013f713e8127311e370f5f33fbe189e03ecf93bb7b76b241aeba2a7",
+      "unresolvedSourceAliases": [
+        "groth",
+        "static99"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-112-犯罪學與再犯預測-4": {
+      "contentHash": "2ec345f02dfa46435245020cef1d961597b2012996830778220d190c1df5b383",
+      "unresolvedSourceAliases": [
+        "predictionhistory"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-111-犯罪學與再犯預測-1": {
+      "contentHash": "ea706710539941ca650faf5772f4ddf0c98bfd863c86c4ee0143f25c0248f679",
+      "unresolvedSourceAliases": [
+        "thornberry"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-111-犯罪學與再犯預測-2": {
+      "contentHash": "ecf6e1d60a1190c942ef7c5c962376ad51e71cd3c94c8830dc05a0a669d6a668",
+      "unresolvedSourceAliases": [
+        "labeling",
+        "4d"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-111-犯罪學與再犯預測-3": {
+      "contentHash": "e5fd2998f08817c8222924a5683697595a7b87b176b967010190974dcaef8233",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-110-犯罪學與再犯預測-1": {
+      "contentHash": "0921205723a467495fdf40913af65fa3f3716a82433c3b4f1c9cbd33ebe6c65b",
+      "unresolvedSourceAliases": [
+        "sampson"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-110-犯罪學與再犯預測-2": {
+      "contentHash": "fd4a3c5913fbb486be3410fbfa6ff726686b380b78a342547f90b8bcbf3b02dc",
+      "unresolvedSourceAliases": [
+        "deviance",
+        "victimless"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-110-犯罪學與再犯預測-4": {
+      "contentHash": "984f99355b9b28cab42bcd7925c99ca7b00e6ed696757837df0235c1ac1138cd",
+      "unresolvedSourceAliases": [
+        "mnsost",
+        "sonar"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-109-犯罪學與再犯預測-2": {
+      "contentHash": "c2084941811b908bf9c60866b9dbc1e9a2823860d8fe3df933e7415f9404a6bc",
+      "unresolvedSourceAliases": [
+        "sonar"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-109-犯罪學與再犯預測-3": {
+      "contentHash": "df44797c52899578611ed64ab9783bff5b9aed87a4aa7756631c977ca8730d5c",
+      "unresolvedSourceAliases": [
+        "athens"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-109-犯罪學與再犯預測-4": {
+      "contentHash": "e4714abd905191423263f5c5e810fc5fb4c0fee741d9dbc3479cec027f5f938d",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-108-犯罪學與再犯預測-1": {
+      "contentHash": "5c256f00180d2d59772a6fe0962b8403f5153cff056e833df42b69405285dae0",
+      "unresolvedSourceAliases": [
+        "biological"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-108-犯罪學與再犯預測-2": {
+      "contentHash": "de78fe7f5548110ee68e02d4a0967fd0f88c264e3946414aa50ad1c273b32b79",
+      "unresolvedSourceAliases": [
+        "family"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監所管理員-115-犯罪學概要-1": {
+      "contentHash": "b54cb2d0cb31dcbfb3ca915e12dbbfd682efe705a351449bd627c73da7db8900",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監所管理員-115-犯罪學概要-2": {
+      "contentHash": "6b2b991547d3e32146f45d9913ec9689cc50c573dc1818b4d9db5cf58d1c4ba6",
+      "unresolvedSourceAliases": [
+        "selfcontrol"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監所管理員-115-犯罪學概要-3": {
+      "contentHash": "8ccd34bc2aa95452633d163df812a229440a09de7d9a3c6e6d0c110e18e38bb2",
+      "unresolvedSourceAliases": [
+        "fbi"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監所管理員-114-犯罪學概要-1": {
+      "contentHash": "3976da964b196875689e7c880104ed1dc3bef30774c4653f3b7654aecfa4c156",
+      "unresolvedSourceAliases": [
+        "agnew"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監所管理員-114-犯罪學概要-2": {
+      "contentHash": "3b866cac8fa651c7e53ff007670af5aca8d317732b2e90114b988fbcce063d9c",
+      "unresolvedSourceAliases": [
+        "routine"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監所管理員-113-犯罪學概要-2": {
+      "contentHash": "77ba24fa60938b02e4b164f8fdddfdaae287db7b586a2e320cf28cebc8aa39c2",
+      "unresolvedSourceAliases": [
+        "sellin"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監所管理員-112-犯罪學概要-1": {
+      "contentHash": "71ac01dbbb2ae17fddf7eb7ee412125da7acff3be4b349b209262506e20d2ed1",
+      "unresolvedSourceAliases": [
+        "criminology"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監所管理員-111-犯罪學概要-1": {
+      "contentHash": "a4b30320c0cac49ceeb46d48a6272f1a7787e89cc2a55ed1665fc85f8a2691ed",
+      "unresolvedSourceAliases": [
+        "miller"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監所管理員-110-犯罪學概要-1": {
+      "contentHash": "6c81db7cdba54c4957c2ea3862f3589b3a7fc33dd0137f08c10481bdc3d2bdd0",
+      "unresolvedSourceAliases": [
+        "braithwaite"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監所管理員-110-犯罪學概要-2": {
+      "contentHash": "15272474cfd1599458145e6922372a76bd72210fde85396912f6adb8ad4eb280",
+      "unresolvedSourceAliases": [
+        "cloward"
+      ],
+      "openIssues": [
+        "差別機會指出合法成功機會受限之外，非法機會也不平均。",
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監所管理員-110-犯罪學概要-3": {
+      "contentHash": "888f2b3019d54728d95c20fc36fe5095bf386b17427e742525bb3d7cf3f79a97",
+      "unresolvedSourceAliases": [
+        "pittsburgh"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監所管理員-109-犯罪學概要-3": {
+      "contentHash": "34c44798a2de77f4265b6315b373b4ccf2a98a53b9921fbe264a0b2c9a831447",
+      "unresolvedSourceAliases": [
+        "sexualtreatment",
+        "prevention"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監所管理員-108-犯罪學概要-1": {
+      "contentHash": "a0f49d4fb95f45bb03ea7833a5d13777ddd0db14d54b5683d894ea457db2cf89",
+      "unresolvedSourceAliases": [
+        "lombroso"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監所管理員-108-犯罪學概要-3": {
+      "contentHash": "dcd4cf6a06f8c20ba12038e33759308e6096a3e04e2c99ef7c04c4dcf0e15615",
+      "unresolvedSourceAliases": [
+        "victimless"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-114-犯罪學-1": {
+      "contentHash": "24bc86327796e23ac7389797c98244b38a80d48b896ab29b2b147d51bbef8e52",
+      "unresolvedSourceAliases": [
+        "sampson",
+        "selfcontrol"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-114-犯罪學-2": {
+      "contentHash": "e57445b38c289dbef719b1a27eb721dc92ef34c3404449f13addcc045e3fa6a3",
+      "unresolvedSourceAliases": [
+        "bandura"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-114-犯罪學-3": {
+      "contentHash": "618099fbff7c993e0ab79658c7d04e38e68ca041d5d5fff83a14219a9039fe13",
+      "unresolvedSourceAliases": [
+        "restorative"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-114-犯罪學-4": {
+      "contentHash": "353e2de192d62c5caed05b9955f4c862cc5dd81d80b0c59eaeb8a43983f59a7c",
+      "unresolvedSourceAliases": [
+        "prisonmodels"
+      ],
+      "openIssues": [
+        "實際需兼顧安全、權利與環境適配，本題歷史版本仍需教材核對。",
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-112-犯罪學-1": {
+      "contentHash": "0dd8d53eac9bdc7313f6686a6b068defb631585a627c54305a2605fad4db8ac9",
+      "unresolvedSourceAliases": [
+        "agecrime"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-112-犯罪學-2": {
+      "contentHash": "a748232c410bdb0ba9016b722258b6fd12cd57aac81cfa8f288df9f5ec43799a",
+      "unresolvedSourceAliases": [
+        "pattern"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-112-犯罪學-3": {
+      "contentHash": "62c2cbc252943a70a24cf0f50f1ea118dd6d6515b2e11535ab42cddc0e96dd94",
+      "unresolvedSourceAliases": [
+        "routine"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-112-犯罪學-4": {
+      "contentHash": "e4497af7437c76ca9703bdaa015f5de5b20b35cf778f443980da00547d0ad13f",
+      "unresolvedSourceAliases": [
+        "wolfgang"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-110-犯罪學-1": {
+      "contentHash": "53e9db00b1163daae0cb9d25c5d074e89ecc3c8695bd5baaaebce3b58441f91f",
+      "unresolvedSourceAliases": [
+        "selfcontrol",
+        "labeling"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-110-犯罪學-2": {
+      "contentHash": "63c4e16cc76618cda4f196fde419d9bf49d00e2597de004f4fceb443e1392e95",
+      "unresolvedSourceAliases": [
+        "anomie"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-110-犯罪學-3": {
+      "contentHash": "9e7066f8cae50827e83c71b268b386ed63301b921b0ae618e1792675eed6e7ab",
+      "unresolvedSourceAliases": [
+        "hirschi",
+        "agnew"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-110-犯罪學-4": {
+      "contentHash": "6172737bba78c24a57dc7ca2a61025c5d00ca18af67e28c2fdeb183cbe03cccf",
+      "unresolvedSourceAliases": [
+        "agnew",
+        "routine"
+      ],
+      "openIssues": [
+        "GST說明失業、財務、自由受限與健康壓力引起負向情緒，在資源不足時可能以暴力或詐騙因應。",
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-108-犯罪學-1": {
+      "contentHash": "69180772364e7f0d87ca9d0523024bbabffb314be77e52dd1cca24aa1878b80a",
+      "unresolvedSourceAliases": [
+        "risk"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-108-犯罪學-2": {
+      "contentHash": "1591418c12ecf5d30ff84a171efe2745e387f42882fa485391c0ea602f3e9303",
+      "unresolvedSourceAliases": [
+        "hare"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-108-犯罪學-3": {
+      "contentHash": "069028ecf587e7b4557671db55a9879814139654a543d70a015efcb30292b569",
+      "unresolvedSourceAliases": [
+        "thornberry",
+        "subculture"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-108-犯罪學-4": {
+      "contentHash": "390ec2d1a41f15b0537d6377efeb425921d628dc519e513c06cd3de6617cea97",
+      "unresolvedSourceAliases": [
+        "dv"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "114-少年事件處理法-1": {
+      "contentHash": "fc379033bd968a7c88dd998283725d2dde76d073513611dc2cc214a06b9e2409",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "114-少年事件處理法-3": {
+      "contentHash": "efdb93d73e00c3f1ea4f2203980760b00e28bf98eda192d5be3574c10372b537",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "114-少年事件處理法-4": {
+      "contentHash": "f4101b65dfebd0da43e4c75b646f1f16d6670b8a33ec1d496859f24a7f3e49c5",
+      "unresolvedSourceAliases": [
+        "drug"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "113-少年事件處理法-1": {
+      "contentHash": "d57da23708bd3e63981315086e5eaa4ecf3725e77c92932cbfab6d0126714dee",
+      "unresolvedSourceAliases": [
+        "crc"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "113-少年事件處理法-3": {
+      "contentHash": "57ccbb30f72063c2cce57b8309354d05ad5164d1a5eb48c0b3454e52f88714bf",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "本版查到之現行少事法仍為112修正，修正動向需具體草案日期與官方文字，未取得可靠最新草案者列待覆核，避免宣稱已經廢除。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "112-少年事件處理法-1": {
+      "contentHash": "92b504a3801125e634774d13ab292719b7e43b2e3299e04c94ab8b33a3c76b9f",
+      "unresolvedSourceAliases": [
+        "crc"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "112-少年事件處理法-2": {
+      "contentHash": "0432d1be40ee307562f3aefa50f412da5de2fb6027140e3ec08131368155b409",
+      "unresolvedSourceAliases": [
+        "drug"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "112-少年事件處理法-4": {
+      "contentHash": "22b3896efabf6e2fb29d58827fadc8bc7ec1bd7957415cd7459a62aaa4576fc7",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "111-少年事件處理法-1": {
+      "contentHash": "f2a2fffdfd1573978019e63f8de37645eb630e2312f545f52b4a4b9c304ff3a8",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "111-少年事件處理法-3": {
+      "contentHash": "244fcba1724d36e87e786e2db8f98d038b2d57fec859e25e7f0cd6bb53ccf59e",
+      "unresolvedSourceAliases": [
+        "restorative"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "111-少年事件處理法-4": {
+      "contentHash": "a5949bb85bcdb44ff2192ee6778187327c36a8edfa7378edb92df72b0dad62c0",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "110-少年事件處理法-1": {
+      "contentHash": "c4917fe0c315810549b08015cdf04c9e1184c7ee8cde4083628ee0b2bca318fe",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "110-少年事件處理法-2": {
+      "contentHash": "49c8bc9d69b27fa4de5d7254bf7b578eb7149c73905acd58366e11e138273168",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "110-少年事件處理法-3": {
+      "contentHash": "d3c637ff4026cfa776fdacc409b8a8c7bec8a3e19bdffe8b58c25198d7f64df6",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "109-少年事件處理法-1": {
+      "contentHash": "e3f3d741290289cee43a88a3766104c4bbac387ac5bc1a076ef6c9f862931557",
+      "unresolvedSourceAliases": [
+        "crc"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "109-少年事件處理法-2": {
+      "contentHash": "78f851d558d4c0eeb515d02a0cf5987bc35b5fd0f0d414fb6c1da6380ffbd3a9",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "109-少年事件處理法-3": {
+      "contentHash": "b5ffecf8f1a0641ef62e4bab99b7eea2910d4845ddacd74eb5f0a2ea81d0908f",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "108-少年事件處理法-1": {
+      "contentHash": "247d419e7e607ea94bda55188fda4a42c3d51884fb5e0b02d5ad707a6eed9fbe",
+      "unresolvedSourceAliases": [
+        "664"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "108-少年事件處理法-3": {
+      "contentHash": "d07217c62cf1b2935e0f88fd200a35017fb0f836630867b1408f49fa23cfc506",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "108-少年事件處理法-4": {
+      "contentHash": "cabc539d918841fc57f5ae1a76a616a2db7909b5c5531d10a37f3182f678b0c6",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "115-心理測驗員-心理輔導員-少年事件處理法-1": {
+      "contentHash": "b1632b37d3778a267d393ab2c52547f32e4e527533580fc2cd86b08cd495b7bb",
+      "unresolvedSourceAliases": [
+        "crc"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "115-心理測驗員-心理輔導員-少年事件處理法-2": {
+      "contentHash": "909aab8469d2d1ff9d608cab72e25553e6c9bf719f31488472de6b8ec0a722f4",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "115-心理測驗員-心理輔導員-少年事件處理法-3": {
+      "contentHash": "d1f818149e0b9f1cf1854209c8891eff7b3db2830785679f044c924b934c4480",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "115-心理測驗員-心理輔導員-少年事件處理法-4": {
+      "contentHash": "800c43ad307102200b4d132ca7a63dbdea79a432b9ce6881161a5d533880b740",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "114-心理測驗員-心理輔導員-少年事件處理法-1": {
+      "contentHash": "c7272dae9d2104084db1c913875aa711bb88abea3e1517db0959117f2fc466c3",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "114-心理測驗員-心理輔導員-少年事件處理法-2": {
+      "contentHash": "2035be28b893bf903abf4a3001902f9b1c656b8226501a27b17fbbaa1041b56c",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "114-心理測驗員-心理輔導員-少年事件處理法-3": {
+      "contentHash": "30e9bd04fbfe645fe0d2a2de3926fd82ff3cecd515f404de9498bab48bb3ada1",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "114-心理測驗員-心理輔導員-少年事件處理法-4": {
+      "contentHash": "e145029aa78798719acb62508c358c226883853e033bac2532513fa9d4e05b53",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "113-心理測驗員-心理輔導員-少年事件處理法-1": {
+      "contentHash": "44b1cc3c4bc9db23fe2510576a5b8d2e82724b03ed2ee3c5b77484ec164489d8",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "113-心理測驗員-心理輔導員-少年事件處理法-2": {
+      "contentHash": "768a996a77ed6961456f144b18119fbe828e8ad4362b7acd14f478aa0624bfdf",
+      "unresolvedSourceAliases": [
+        "victimrights"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "113-心理測驗員-心理輔導員-少年事件處理法-3": {
+      "contentHash": "fedc1d86ad72bfb670c203bb0807c75f791bfb4f446df0c8036a80b201904243",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "113-心理測驗員-心理輔導員-少年事件處理法-4": {
+      "contentHash": "963fbb74cb3113f500dd5da8dfbf97ffd8bf41128e3c9ebcac3e46939c66fc84",
+      "unresolvedSourceAliases": [
+        "weapon"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "112-心理輔導員-少年事件處理法-1": {
+      "contentHash": "326619334b6852b30928cdde549bdc8402d9c6d2448486815a72a5be9c977164",
+      "unresolvedSourceAliases": [
+        "664"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "112-心理輔導員-少年事件處理法-2": {
+      "contentHash": "05a33df454169c0bd9a8f817d0ec2d16e1cde0336840e5e025f3e30bd4a5f970",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "112-心理輔導員-少年事件處理法-3": {
+      "contentHash": "fe9f8e6eea4bea12292e4f982d7250f849a4a91f1698105742509f42db5929e1",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "112-心理輔導員-少年事件處理法-4": {
+      "contentHash": "9dcfcb93099ab020274897a1876b0e3018dc18febcc1e1d161769405957bd00c",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "110-心理測驗員-心理輔導員-少年事件處理法-1": {
+      "contentHash": "08444955f00a3ffd7a91947b26fd92c3af338212bd3fa5e65458b9a6a58db6da",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "110-心理測驗員-心理輔導員-少年事件處理法-2": {
+      "contentHash": "8f2d1b4e7581e604c8bb48bf9fe36c81b3aebc8b3790a6eb3caf1b942964e28a",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "110-心理測驗員-心理輔導員-少年事件處理法-3": {
+      "contentHash": "09afa658df6aa057038bd01eb9d4cdfe0a5dd8ec9eab2be663d1c66fc005abf5",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "110-心理測驗員-心理輔導員-少年事件處理法-4": {
+      "contentHash": "8e5daddcc7b239e477a41b55f8423176ed27e03801785a599fa7be1c16fb0bd0",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "109-心理測驗員-少年事件處理法-1": {
+      "contentHash": "0632ef7ef14f0bd314dffd2ee5905f9aae3e3ba7b34ffc701beb13d56890ae3c",
+      "unresolvedSourceAliases": [
+        "drug"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "109-心理測驗員-少年事件處理法-2": {
+      "contentHash": "a3b5630b6f6ec43398b603c89e21b128d88f91e6708e23dde319f080ee27d85f",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "109-心理測驗員-少年事件處理法-3": {
+      "contentHash": "8cb659029a9e870b7474841752e428c22be1c22a0a618320768881cbd7538ed6",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "109-心理測驗員-少年事件處理法-4": {
+      "contentHash": "7ffadc84fb9974195090296c3b6f4f8ea4549211b668e4523656e7e56daebd47",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "108-心理測驗員-心理輔導員-少年事件處理法-1": {
+      "contentHash": "47a5dcf0b4acd40b56760e5f55c876b61c1869bf7da07439f49ed961cd44583c",
+      "unresolvedSourceAliases": [
+        "664"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "108-心理測驗員-心理輔導員-少年事件處理法-2": {
+      "contentHash": "c74f86f97500809125dfb31e83104018d03d57ae18ce7d31224319a87ff3f677",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "108-心理測驗員-心理輔導員-少年事件處理法-3": {
+      "contentHash": "287ddc9e740a26d5cc2762b472a45295b5137e90f198a3020406d0f18bf890ed",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "108-心理測驗員-心理輔導員-少年事件處理法-4": {
+      "contentHash": "99333d0d4522623cab99819766c688b10901081aaf4cc97fa305d571668f983b",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "114-刑法-1": {
+      "contentHash": "b561c45f6716597b8f47d1b2d3b7fd5efaa0f809088a1487efbeeaa2a63ff6a8",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "114-刑法-2": {
+      "contentHash": "86b6c3c7ee2f4e347923f5256ffcc78a10bb0225f9b9a52e9037e7e49ba4478a",
+      "unresolvedSourceAliases": [
+        "aml",
+        "personaldata"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "114-刑法-3": {
+      "contentHash": "5e670f2bf9e7d1be1f2986a74aab997be23139e425c5b838af8f1ec30b486dc7",
+      "unresolvedSourceAliases": [
+        "corruption"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "114-刑法-4": {
+      "contentHash": "ab04de00de384200b0793ff59abf27c660563b46b9fef394d0ef8a32598f3039",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "113-刑法-1": {
+      "contentHash": "6e524d0b4816147542c3e0d4e3d07b82896c4baac297932433d18de414ec7c3e",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "113-刑法-2": {
+      "contentHash": "c5a8fc5f898a2535313e15f9ecf5b565a9d124ef7990a9d906790e4893f56de4",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "113-刑法-3": {
+      "contentHash": "870d0d47e9037b8bf65f83d1d830c3770dd2e1d58c50f28bd062059a62b3849a",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "113-刑法-4": {
+      "contentHash": "5010ab53be01c9e94f5bf4d17d2b4de3521078c07c78154533f5a9f343a8a5c3",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "112-刑法-1": {
+      "contentHash": "de11f4a2adbc6622bd3b3c483c41433199ce2f3bf4627e8f47ee1354a24c9a19",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "112-刑法-2": {
+      "contentHash": "ae4b740968f59716118cd9dc83ba252701a81523f1753edf16fa843125779e39",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "112-刑法-3": {
+      "contentHash": "28f5e6fd051cdeb76fdcc0e658f9886acd53fc0ac795c9a16e962aff8e959687",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "112-刑法-4": {
+      "contentHash": "064060857adc7421a0eed817d91140dc35c68af9b1e515870adf2b92ea54f671",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "111-刑法-2": {
+      "contentHash": "315eb2425540dd1e9d640f87cc4a7c74c1d56753cd46bf3a9cce2ae09443f8e1",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "111-刑法-3": {
+      "contentHash": "ca87cf487444be92cf9b00ef415b32f53d1f062666a8f6ab94d6bb7d23c5087a",
+      "unresolvedSourceAliases": [
+        "familyabduction"
+      ],
+      "openIssues": [
+        "原案例適用實務尚待裁判覆核，列肯否與事實門檻。",
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "111-刑法-4": {
+      "contentHash": "2ae9dd3921855e60c45cf7c597fccd471f3218c02af5fb5549ca43acef12e491",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "110-刑法-2": {
+      "contentHash": "a6863dd971156344741aade0989c699523410a04e01113b7459c34a360d1e148",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "110-刑法-3": {
+      "contentHash": "2bfd6aecaee340e47c3d40565a47579d91629908baffb0377e46f248e95adeda",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "110-刑法-4": {
+      "contentHash": "ec7f0e37588b1b327c5639ea221769b1f7e667aeee29a5e4e66475059a681ddf",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "109-刑法-2": {
+      "contentHash": "597ead19595ed7e9cea8c76cf153c6b44a87ce6c640f230fad99275186bd68c9",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "109-刑法-3": {
+      "contentHash": "1614a9e970777cc3a9dbc51a52f77a72b8a9bf93fef4a9475c5612bc109dc7a4",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "109-刑法-4": {
+      "contentHash": "9005a59342ff0ba5dab5dd9cf29c48ddac17155270d6933b182485ed7004435a",
+      "unresolvedSourceAliases": [
+        "corruption"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "108-刑法-2": {
+      "contentHash": "9c39b491c0f419b577382a6bf1edf8eea03802343d3563627f3dcccf74de5cd8",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "108-刑法-3": {
+      "contentHash": "f1102d0315f88306ebe1eb5fe6330e8d045d3f5707fa655cf88ec4db616b4bd6",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "108-刑法-4": {
+      "contentHash": "9f7ad6021a8eda41b1066f146c3c70db9be0e781937dcb6f73056b6063c714bf",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-115-刑法與少年事件處理法-1": {
+      "contentHash": "af5e4bd6ea729f97b221d3e27610baea48da36ff2170f56af584c7dc69f83db2",
+      "unresolvedSourceAliases": [
+        "publicordercase"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-115-刑法與少年事件處理法-2": {
+      "contentHash": "af46ce189f62b6d30d9bed2c77eb4c59d43b98a70b2e4c1baafc30e343cb2059",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-115-刑法與少年事件處理法-3": {
+      "contentHash": "9b902a06d0fef1df65a3d8ca4dbf00c705946036c95b590f7c75ba78298ede91",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-114-刑法與少年事件處理法-2": {
+      "contentHash": "d07c2dfa1cfe726f5faa1570cc1394b27ff2038156fd8b0a48d16126a3eb835b",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-114-刑法與少年事件處理法-3": {
+      "contentHash": "21c0128d2142363db2360ee59c813267558f35acaa401a74c058752f6eb4e74a",
+      "unresolvedSourceAliases": [
+        "crc"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-114-刑法與少年事件處理法-4": {
+      "contentHash": "a45c2898d9b3486eb5148ce6d08c61aecca65fd1fb5da8fff34d94078ebdd691",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-113-刑法與少年事件處理法-1": {
+      "contentHash": "d8329b0a19a6a164640e99aa79f089f8fcd75f95bb8e9bd012255bace830ee80",
+      "unresolvedSourceAliases": [
+        "crc"
+      ],
+      "openIssues": [
+        "題來源法律座談會確切結論與理由尚待原文核對，本版不強行以塗銷未到就唯一否定，也不虛構會次結論。",
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-113-刑法與少年事件處理法-2": {
+      "contentHash": "af9a0f6981a0551c8e84ba814821cef87c3f7a5a6e9cb733863485df6b9439a8",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-113-刑法與少年事件處理法-3": {
+      "contentHash": "e6752faecce36e7a9ef8d530e5123cf232533591aaab07b481ee5e64d14a7cd0",
+      "unresolvedSourceAliases": [
+        "victimrights"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-112-刑法與少年事件處理法-1": {
+      "contentHash": "b383d09ebc3c217119df64b3e0b1622e28c3f9bf888af79d80b226d61036efaa",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-112-刑法與少年事件處理法-2": {
+      "contentHash": "bf554e4ec75597dacd19aa556f1f9dd5904c548c16a137a7ec226e45efec45c6",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-112-刑法與少年事件處理法-4": {
+      "contentHash": "4e3f12ccb5d4cfdefa91e41b98e880fa17dd8324d7f2fd871cb383c351a71364",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-111-刑法與少年事件處理法-2": {
+      "contentHash": "13050e29f668d1bdc39ecacee285c431d405fd8b0c03b961b2c5db52a3ba004b",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-110-刑法與少年事件處理法-1": {
+      "contentHash": "2de97290540cf5539bc4ee630b18160dda0a117e911f5c5f3a281dc33d2e0610",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-110-刑法與少年事件處理法-2": {
+      "contentHash": "5dffcb7737a8f324ae31b381449175bce4ed91a860b499fe4f80c5cdaf38ce65",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-110-刑法與少年事件處理法-3": {
+      "contentHash": "74b8bbdaa79e1d545fc84ab17b72216cc309159a0166c90c20d23ea67e068042",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-110-刑法與少年事件處理法-4": {
+      "contentHash": "3a9c764a1f5c65ba930145342b76e4423b411208b5c5630075723eb3325908ef",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-109-刑法與少年事件處理法-1": {
+      "contentHash": "f5a3494622baeac83da7edac3ef5cf035f3ea54dd681acf1fe16f4c5fc9e0e36",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-109-刑法與少年事件處理法-2": {
+      "contentHash": "89c745b90b6bd5ca0680b5f798b70cdc38be17c29d1adba1703f2cc64d8899c9",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-109-刑法與少年事件處理法-4": {
+      "contentHash": "374f7a29f2113fb374190a1dfcf2e3cb18e22d6f8f63ecc6c0485548e9734357",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-108-刑法與少年事件處理法-1": {
+      "contentHash": "e03a6bd7f698665012e379eb2a40a70576e83f5ccb33163b6a25bdf290d20675",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "監獄官-108-刑法與少年事件處理法-2": {
+      "contentHash": "5b24139b3aa8f51664e0abb3f525de82a23f88c4e8e942c25d8335f429b6dc63",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-114-刑法-1": {
+      "contentHash": "0709ec7825943600948e575a60dc67ec61c922bb6a6227787cdf08b1a5d3e322",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-114-刑法-2": {
+      "contentHash": "24a7cd6b919380779b420a99dfe48573ae7f8bfba7c1d9b60e6678956e14cbbd",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-114-刑法-3": {
+      "contentHash": "1ea789ef29790c6d2fa3d667e23484f907a5de324490a329e881473f10ed1b64",
+      "unresolvedSourceAliases": [
+        "corruption"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-114-刑法-4": {
+      "contentHash": "ad3a73891886ac4831cb9ddf386a7de4586e5ab73e7cbc8b9d9ee656999eb63f",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-112-刑法-1": {
+      "contentHash": "ef5b7c1bda94c5f5d90ad30f97b40fd67ca55bb5712b2b92165ff2677c2c2405",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-112-刑法-2": {
+      "contentHash": "6cb45dcf29c7e4b16580abbe78ac614ecbd11e947d5962da85d5188651d810ed",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-112-刑法-3": {
+      "contentHash": "48922ad76492e152d0271bf2391efe7008543b3916aca122ba04126bedac28a8",
+      "unresolvedSourceAliases": [
+        "corruption"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-112-刑法-4": {
+      "contentHash": "a2be2f45a3d585ef3f16340fb018968d9149412b76c92bcce7351070449eddba",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-108-刑法-3": {
+      "contentHash": "2abebd571f40657f476402eca0ec5da8586b4125e98154513cc3b78e38283a94",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-108-刑法-4": {
+      "contentHash": "98abf3db8879be0f7f6dbdcb8f2147ed90d7744a9d6cb73fccfd2bfbf64c0927",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "114-刑事訴訟法與保安處分執行法-1": {
+      "contentHash": "f1fc817d8993a46774c5807a8d1ebb490bf8571d986bb45bb63cf74cf7707319",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "特定最高法院判決字號仍待核實。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "114-刑事訴訟法與保安處分執行法-2": {
+      "contentHash": "a84c7f08e405c2ce897ca89758fda56f5508ac479187813ec062030123d558b5",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "判決修法期限已過，現行特別程序仍列待覆核。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "114-刑事訴訟法與保安處分執行法-4": {
+      "contentHash": "4f9c318b7e3b95585da6dd462f4c2d0f60fccf53feac5ba1a8a9682aebb4afb2",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "後續立法版本未完成覆核，不把舊31條列舉當完整現行答案。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "113-刑事訴訟法與保安處分執行法-2": {
+      "contentHash": "abb10eb1d25a431b2d07296235617e2daa698045bbde3b814f2181aab5c584fa",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "二審首度命參與是否減損審級利益及個案相關實務應另論，特定判決論證列待覆核。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "113-刑事訴訟法與保安處分執行法-4": {
+      "contentHash": "dd90304854b3a99e28cc749f99dc02e522407007fc0b6e38661a7fc6d58eff1d",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "112-刑事訴訟法與保安處分執行法-1": {
+      "contentHash": "0a07160e93fbe4e9f7202738eebf8ed2878594606c40683a1b539da08184e224",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "網路犯罪結果地、被告『所在地』與移送例外的特定實務仍待覆核，兩地結論須交代採說。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "112-刑事訴訟法與保安處分執行法-2": {
+      "contentHash": "dba522c86ca32b5617310e2343140ca917906fe61244c9fa26b9d933a46b8ac4",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "112-刑事訴訟法與保安處分執行法-3": {
+      "contentHash": "0bdf3ce41441a62ab195d5ac2c3307349e6241e70dcae0a3127db2764b9bdf31",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "112-刑事訴訟法與保安處分執行法-4": {
+      "contentHash": "8c4c081177a65cdca53dcd790a497023243b72de0bea0ddfdeaade98ab3b1268",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "111-刑事訴訟法與保安處分執行法-1": {
+      "contentHash": "ae23979ce0f6ae7ef1be5138fd6031b749e598ea004f25ac0d24facacd1ee3f0",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "111-刑事訴訟法與保安處分執行法-3": {
+      "contentHash": "8b7ea51c1897edf38a882b45720f779be9a41c5634439fb13824f9395ecab803",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "111-刑事訴訟法與保安處分執行法-4": {
+      "contentHash": "de3f7fe43359230f6ee9f4a1c1c3fa853140aef5c6f2c2cff3904c45c47265f7",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "110-刑事訴訟法與保安處分執行法-1": {
+      "contentHash": "5c0d2f172cc493754afeb7c595c9aecb3a053b017e31a42d48f7445c16c040fc",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "110-刑事訴訟法與保安處分執行法-2": {
+      "contentHash": "01bd7a72b87b6926ef3bca788435862c3f9d0bb612aad054f9eeaed67a048f1a",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "兩次交付罪數與追加法條特定實務列待覆核。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "110-刑事訴訟法與保安處分執行法-3": {
+      "contentHash": "8ea9afbe852104f0bfc00031a66e373534686980705a707e6ee922bc4f1b1092",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "109-刑事訴訟法與保安處分執行法-1": {
+      "contentHash": "ed4116846dee078c1e0df72d60b82f839d0a759a98fd86a6ab119dec654d0dbd",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "109-刑事訴訟法與保安處分執行法-2": {
+      "contentHash": "a2f18994c085e2cc8870ae07acda9e954451da5937899135f311a2cbacc04be3",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "109-刑事訴訟法與保安處分執行法-3": {
+      "contentHash": "e24f81aa8e393caa97a75e96e8992f1162055575bb68913e9426294b1cdbc7f6",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "109-刑事訴訟法與保安處分執行法-4": {
+      "contentHash": "16c8914a2c6307ecc6a840b2ebf5420148121d9ebc8f4c51e681fb6f905693d3",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "108-刑事訴訟法與保安處分執行法-2": {
+      "contentHash": "6ca1f2ccd491647e1b612e0dc7396ae01249cddf94cc15a26de500bc090c2fe0",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "本題最高法院採說與準用範圍尚待逐案來源核實，暫不把有爭議類推定為唯一答案。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "108-刑事訴訟法與保安處分執行法-4": {
+      "contentHash": "b8f6a17a9871467fcb72ba784ed7c4f3ef1a63bde857d044572d82d17cb52199",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "可論舊實務把必要到場短暫限制納入66的見解，但要說明時間、最小侵害及救濟界線，具體裁判來源仍列待覆核。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "115-心理學-3": {
+      "contentHash": "272a22982e744af4f1783a4472ad19ca82198904748440ce6231fcd08413c6e5",
+      "unresolvedSourceAliases": [
+        "learning",
+        "therapy"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "115-心理學-4": {
+      "contentHash": "763271bff8e0f0a320bcadd6125ff83a1b89a754eca414dc7f9ee71f8d95ebc8",
+      "unresolvedSourceAliases": [
+        "learning",
+        "development"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "113-心理學-1": {
+      "contentHash": "46791adfdb5eec0a6881e47ead0a72cc38dbe4a4c0a5610380c0b30717b51c89",
+      "unresolvedSourceAliases": [
+        "memory"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "113-心理學-2": {
+      "contentHash": "3032b2bbd89fb7e9d895c2c25c1e20586983dffdf3645ee8c5f235122761f569",
+      "unresolvedSourceAliases": [
+        "thinking"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "113-心理學-3": {
+      "contentHash": "40a1758b9fb7fed0a29e4e767fa004df5d6fe5b31b8fa1cb3c4bc9710eb927bd",
+      "unresolvedSourceAliases": [
+        "intelligence"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "113-心理學-4": {
+      "contentHash": "0a555887d9cd81530275dfd64db86a4a2c6295717fb806e8d1d201e7621e92cc",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "112-心理學-1": {
+      "contentHash": "02292ab0347a3117acddafc5b0613cbee6e688fd7b6d144a1d34af1a1322d1f9",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "112-心理學-2": {
+      "contentHash": "1e5b6fb1adf2531c86e3fa8ce40d1aa53484d64d8606576b0d5bcf8d6e0bd945",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "112-心理學-3": {
+      "contentHash": "8e51af7ef02921478656f6794228ace86dfa94ed27a449d96cfb9a22d039a13a",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "112-心理學-4": {
+      "contentHash": "fcf207cfccf57fd244047a20761e3df7b7bd6031a8605c66ba1c1e260e8fe205",
+      "unresolvedSourceAliases": [
+        "tbi",
+        "testing"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "111-心理學-4": {
+      "contentHash": "f0479e82c9d81002c0cfee85dc72b8077ea8bb2b1ebbb10ee5bfb04756e16013",
+      "unresolvedSourceAliases": [
+        "intelligence",
+        "development"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "110-心理學-1": {
+      "contentHash": "e404247c3635b34a9d649665b89bb0c287c8ec00b300fd8561eb925d3e6c5c2b",
+      "unresolvedSourceAliases": [
+        "disorder",
+        "testing"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "110-心理學-2": {
+      "contentHash": "7f15a62359c04bce980a40609d1bd6eccfa5abfee7306d8d6c7370b1297154cc",
+      "unresolvedSourceAliases": [
+        "therapy",
+        "disorder"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "110-心理學-3": {
+      "contentHash": "d252b80ad538e87d5c296158b215c86e762b40818e12cc518de2c6e5f7ba8177",
+      "unresolvedSourceAliases": [
+        "emotion"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "110-心理學-4": {
+      "contentHash": "517afeebf90c7c665df6d7f322075d94f46dfc2f986033abad0c692ba6e61191",
+      "unresolvedSourceAliases": [
+        "development"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "109-心理學-1": {
+      "contentHash": "e7ea89d2c98743a63f9a61223cffdea71f0a48f4c2adc7c3861b82fba9c8e028",
+      "unresolvedSourceAliases": [
+        "intelligence"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "109-心理學-2": {
+      "contentHash": "d4a4018eb3072e05d38ea1baeb84f10a10c2547006456944412817fd16c2c7f2",
+      "unresolvedSourceAliases": [
+        "disorder",
+        "coping"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "109-心理學-3": {
+      "contentHash": "80995806fbbd55a25dd90e3da9b7867415c7588c76c2fd7505df90e927c5ed13",
+      "unresolvedSourceAliases": [
+        "addiction",
+        "coping"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "109-心理學-4": {
+      "contentHash": "a8d38f32fe9f7d00958198cc147e898a4f2452fca56c06335d2eaa896caa3bf9",
+      "unresolvedSourceAliases": [
+        "testing"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "108-心理學-2": {
+      "contentHash": "07f52cb09e111856d38997bb9db5e68682c3abcafdf5e775d573b765333c8940",
+      "unresolvedSourceAliases": [
+        "stress",
+        "typec"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "108-心理學-3": {
+      "contentHash": "1252b744519a46442c853dfb8819730f29d9b9ee2396f6c5c4a5664e39b181e8",
+      "unresolvedSourceAliases": [
+        "attraction"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "108-心理學-4": {
+      "contentHash": "cc69dfe9fe7755447faf3c3ddd428040f93e9a3c387edee0660744a5c58e0127",
+      "unresolvedSourceAliases": [
+        "testing"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-112-心理測驗-3": {
+      "contentHash": "996d59c348f50b32a07a42157a8633acc218f0415483e4906cbbcf7fd89795ce",
+      "unresolvedSourceAliases": [
+        "testing"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-110-心理測驗-1": {
+      "contentHash": "3a74e26c4b9dbbe10e3dc9fa63ce9abb99d53c48e9102bbc7d16acab27418a55",
+      "unresolvedSourceAliases": [
+        "testing"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-110-心理測驗-3": {
+      "contentHash": "b765a636a0ef13e31d252d9b0b187d581d55023efd2008093666921758f6ca9f",
+      "unresolvedSourceAliases": [
+        "testing"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-110-心理測驗-4": {
+      "contentHash": "229752dc8a077080c62fd79121e157214326834d31bfd86d70b237e070fc9bd3",
+      "unresolvedSourceAliases": [
+        "testing"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-108-心理測驗-3": {
+      "contentHash": "7320a6812518cda4f876e1a4141e6d5764f695aea2a4bf8583717a8138fab193",
+      "unresolvedSourceAliases": [
+        "testing"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "薦任升等（矯正）-108-心理測驗-4": {
+      "contentHash": "4ca442a3c35baf8eb9e74fe61e8c1efc021fb30fbc26a1a7d236dfccd2ec83ad",
+      "unresolvedSourceAliases": [
+        "testing"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "115-家事調查官-心理測驗員-心理學-1": {
+      "contentHash": "10d54695b5adffc03790e73c0821a4047a74763909e8add442f442380ec6d6cb",
+      "unresolvedSourceAliases": [
+        "trait",
+        "testing"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "115-家事調查官-心理測驗員-心理學-2": {
+      "contentHash": "d09b53e753d1785aebd1af719b9abc1710cc598e0cd09309e9dbde336ee50c70",
+      "unresolvedSourceAliases": [
+        "motivation",
+        "loss"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "115-家事調查官-心理測驗員-心理學-3": {
+      "contentHash": "deb789691079888bafa1b8572e5a8140398ba0560b3f2837e58e6c2fdddb6488",
+      "unresolvedSourceAliases": [
+        "attention"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "115-家事調查官-心理測驗員-心理學-4": {
+      "contentHash": "b34b1397a431ed198bf608325fd7e9097bca8de1d23668c4f2d821c0cf4d839d",
+      "unresolvedSourceAliases": [
+        "comparison"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "114-家事調查官-心理測驗員-心理學-1": {
+      "contentHash": "71abf45b6f65006f5e473872c5f9d9bb0b2e7582770098102417fe9c3acd2c50",
+      "unresolvedSourceAliases": [
+        "self"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "114-家事調查官-心理測驗員-心理學-2": {
+      "contentHash": "106197728ade2bb50055f2a6340dec0fe9637626f280b3a100be9990559a1a09",
+      "unresolvedSourceAliases": [
+        "testing"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "114-家事調查官-心理測驗員-心理學-3": {
+      "contentHash": "bb45770a68d807fc2fc2875dffbef76bb6eff3e4c4086525d6f6cb84393c799c",
+      "unresolvedSourceAliases": [
+        "attachment"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "114-家事調查官-心理測驗員-心理學-4": {
+      "contentHash": "8fc219f6a1d58831f2b848c4f02147e94b6b1f32269a899c12d688faf4815ba3",
+      "unresolvedSourceAliases": [
+        "attribution"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "113-家事調查官-心理測驗員-心理學-1": {
+      "contentHash": "f982e64547badcaf9a707c938cc58f392e1b6680acb8e5d4acf9361b208c79f3",
+      "unresolvedSourceAliases": [
+        "attachment"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "113-家事調查官-心理測驗員-心理學-2": {
+      "contentHash": "1671875a2b41a02fe4d085485cc94fa80c9032e1e788695b8dff23f8cd7000d2",
+      "unresolvedSourceAliases": [
+        "addiction"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "113-家事調查官-心理測驗員-心理學-3": {
+      "contentHash": "fa8fbecfe91ce23d44dc399f5254bc2360d2d498b357a1f4a982db0aa9fe00b8",
+      "unresolvedSourceAliases": [
+        "motivation"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "113-家事調查官-心理測驗員-心理學-4": {
+      "contentHash": "bc3d7780b5478a4c9aa5df0244516c81b0d96d5d6228d8ee6effe917e35c1e71",
+      "unresolvedSourceAliases": [
+        "development"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "110-心理測驗員-心理學-1": {
+      "contentHash": "72a5dae7fa0a84cbd951cb62c5b406d485f678929fa77ce56c60e4da206c69ef",
+      "unresolvedSourceAliases": [
+        "learning"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "110-心理測驗員-心理學-2": {
+      "contentHash": "9b58b7ba8217391143792da051adf8b6144252fe3c8d6ba93bd66ae3f3d8aa6d",
+      "unresolvedSourceAliases": [
+        "perception"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "110-心理測驗員-心理學-3": {
+      "contentHash": "d2f6de78d73c4a566cf8dd6536d5f6581e72e67ede0a399378c8983dd2d5e452",
+      "unresolvedSourceAliases": [
+        "learning",
+        "motivation"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "110-心理測驗員-心理學-4": {
+      "contentHash": "cbf38b374f435dc14ddc7e3312594a0638efe452e0c627ed70e5fb9b256f5c69",
+      "unresolvedSourceAliases": [
+        "group"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "109-心理測驗員-心理學-1": {
+      "contentHash": "daf7dc3bb206427e05463b09f52f9a70a4831e87b63c9e347d76f8ba4b5fa4a8",
+      "unresolvedSourceAliases": [
+        "motivation"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "109-心理測驗員-心理學-2": {
+      "contentHash": "b896f030d1a37bdeb6fe8514d9f8f3246b93ed236e1bd666a0b61977f3867bec",
+      "unresolvedSourceAliases": [
+        "learning",
+        "therapy"
+      ],
+      "openIssues": [
+        "本題尚有2項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "109-心理測驗員-心理學-3": {
+      "contentHash": "d893c0714f80de28eb8f258cf222c1f6ad72da9493e13cea92d50e27262c752e",
+      "unresolvedSourceAliases": [],
+      "openIssues": [
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "109-心理測驗員-心理學-4": {
+      "contentHash": "e78293aab216cfb5c9b92d2ee87d90b7fea6b3869a27755353c103ae29193380",
+      "unresolvedSourceAliases": [
+        "memory"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "108-心理測驗員-心理學-1": {
+      "contentHash": "965eb0cd1b4c191eb9ff888aba51ec514b7d871882c2e76e5ffff4081baa3263",
+      "unresolvedSourceAliases": [
+        "memory"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "108-心理測驗員-心理學-2": {
+      "contentHash": "be043502dac8bcdefc64033e23aa8ef4b7cfb5e5d8d60fe66d48eaa7317e0b08",
+      "unresolvedSourceAliases": [
+        "sleep"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "108-心理測驗員-心理學-3": {
+      "contentHash": "64786292a162bc7b82dc5a0ef6ebda441bc606a1f130c0d9133c54015392b039",
+      "unresolvedSourceAliases": [
+        "attachment"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    },
+    "108-心理測驗員-心理學-4": {
+      "contentHash": "5e74fbfa6bb80e69cd440cb9e3ebf6416433e6afbc8d4f2be9ad1d21cdcacc42",
+      "unresolvedSourceAliases": [
+        "freud"
+      ],
+      "openIssues": [
+        "本題尚有1項專論或教材來源未完成逐項核對；現有連結只支持其標示範圍。",
+        "尚未經獨立專業人工審閱；合理異說、完整涵攝及反例仍需覆核。"
+      ]
+    }
+  }
+}
