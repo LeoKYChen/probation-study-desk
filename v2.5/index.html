@@ -349,7 +349,7 @@
     @media(max-width:600px) { #yamolGuide { flex-direction:column; align-items:stretch; } #yamolGuide .shuati-fallback { white-space:normal; } }
   </style>
   <link rel="stylesheet" href="study-map.css">
-<link rel="stylesheet" href="extension25.css"></head>
+<link rel="stylesheet" href="extension25.css"><style>#savedDrafts25{display:none!important}</style></head>
 <body><a href="../" style="display:block;padding:12px 18px;color:#215649">← 回學習首頁</a>
   <div class="app-shell">
     <header class="topbar">
@@ -1455,6 +1455,6 @@
 const requested=new URLSearchParams(location.search); const picked=requested.get('q');
 if(picked)window.Practice25.select(picked);
 if(requested.has('review')){const fold=[...document.querySelectorAll('details')].find(n=>n.querySelector('summary')?.textContent==='補強清單');if(fold){fold.open=true;fold.scrollIntoView();}}
-</script><script src="backup-io.js"></script><script src="print-study.js"></script></body>
+</script><script src="backup-io-direct.js"></script><script src="print-study.js"></script></body>
 </html>
 
