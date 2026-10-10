@@ -332,11 +332,14 @@
     @media(max-width:600px) { .simulation-entry { padding:16px; gap:12px; } .simulation-link { width:100%; } }
 
     main>.focus-card{margin-bottom:14px;min-height:0}
-    .study-entry-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:14px;align-items:stretch}
+    .study-entry-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin-bottom:14px;align-items:stretch}
     .study-entry-grid>*{min-width:0;margin:0;padding:18px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
     .entry-card h2{font-size:1.05rem;margin:0 0 8px}.entry-card p{font-size:.85rem;color:var(--ink-soft);margin:6px 0 12px}
     .study-entry-grid .simulation-entry{display:flex;flex-direction:column;align-items:stretch;justify-content:space-between;background:#effaf8;gap:12px}
     .study-entry-grid .btn{white-space:normal;text-align:center;max-width:100%}
+    .study-entry-grid>.entry-card{display:flex;flex-direction:column}
+    .study-entry-grid>.entry-card>.btn{margin-top:auto}
+    .study-entry-grid>.related-entry #mapQuestionLinks{margin-top:auto}
     .study-entry-grid #mapQuestionLinks{display:flex;flex-direction:column;gap:6px;padding:0;margin:0;border:0}
     .study-entry-grid #mapQuestionLinks>strong{display:none}
     .study-entry-grid #mapReturnBar{padding:0;margin:0 0 8px;background:transparent}
@@ -377,6 +380,7 @@
           <p>平日完成 1 題，控制在 25 分鐘內；待複習題隔日再看一次。</p>
         </article>
       <section class="study-entry-grid" aria-label="練習與複習入口">
+        <article class="entry-card"><h2>各科主動回憶</h2><p>108–115 年觀護人六科、190 道原題。可選原題、考點拆分或補充基礎。</p><p>固定提示、自我核對與回想式小結；進度獨立保存。</p><a class="btn primary" href="../active-recall/">開始主動回憶</a></article>
       <section class="simulation-entry" aria-labelledby="simulationHeading">
         <div><h2 id="simulationHeading">每日模擬題</h2><p>從晚間摘要練習案例、爭點與四欄對照。開啟頁面會載入最新同步題庫。</p><p id="simulationAccessNote">作答紀錄保存在目前瀏覽器；與本頁考古題紀錄分開保存，可匯出／匯入備份。</p></div>
         <a class="btn primary simulation-link" href="../daily-simulation/" target="_blank" rel="noopener noreferrer" aria-describedby="simulationAccessNote">開啟每日模擬題 ↗</a>
@@ -470,7 +474,7 @@
             <p class="hint-caution">提示只協助起步；完整建議方向仍會在完成作答後顯示。</p>
           </section>
           <div class="question-content">
-            <h2 id="questionTitle"></h2>
+            <h2 id="questionTitle"></h2><p><a id="recallCurrentLink" class="btn" href="../active-recall/" hidden>先做本題主動回憶 →</a></p>
             <div class="question-body" id="questionBody"></div>
             <div class="hint-external" id="shuatiGuide" hidden>
               <div class="hint-external-copy"><strong>刷題王解題引導</strong><span id="shuatiLinkStatus">以新分頁開啟；可能需要登入或 VIP。</span></div>
@@ -1204,6 +1208,8 @@
 
     function renderQuestion() {
       const q = currentQuestion(); const state = entry();
+      $('recallCurrentLink').hidden = !q || q.examType !== '觀護人' || q.year < 108 || q.year > 115;
+      if (q) $('recallCurrentLink').href = '../active-recall/?q=' + encodeURIComponent(q.id);
       if (!q) {
         $('pilotRulePanel').hidden = true;
         $('scoreMode').textContent = '本機規則判定';
