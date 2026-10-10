@@ -354,7 +354,7 @@
   <link rel="stylesheet" href="study-map.css">
 <link rel="stylesheet" href="extension25.css"><style>#savedDrafts25{display:none!important}</style><link rel="stylesheet" href="../shared-ui.css">
 </head>
-<body class="study-practice"><header class="study-header"><div class="study-header-inner"><a class="study-brand" href="../"><span class="study-brand-mark" aria-hidden="true">觀</span>觀護人練習臺</a><span class="study-test-label">v2.5・統一介面</span><nav aria-label="主要導覽"><a href="../">首頁</a><a href="../v2.5/" aria-current="page">考古題練習</a><a href="../daily-simulation/">晚間學習室</a></nav></div></header>
+<body class="study-practice"><header class="study-header"><div class="study-header-inner"><a class="study-brand" href="../"><span class="study-brand-mark" aria-hidden="true">觀</span>觀護人練習臺</a><span class="study-test-label">v2.5・統一介面</span><nav aria-label="主要導覽"><a href="../">首頁</a><a href="../v2.5/" aria-current="page">考古題練習</a><a href="https://leokychen.github.io/probation-study-desk/daily-simulation/">晚間學習室</a></nav></div></header>
   <div class="app-shell">
     <header class="topbar">
       <div class="brand">
@@ -383,7 +383,7 @@
         <article class="entry-card"><h2>各科主動回憶</h2><p>108–115 年觀護人六科、190 道原題。可選原題、考點拆分或補充基礎。</p><p>固定提示、自我核對與回想式小結；進度獨立保存。</p><a class="btn primary" href="../active-recall/">開始主動回憶</a></article>
       <section class="simulation-entry" aria-labelledby="simulationHeading">
         <div><h2 id="simulationHeading">每日模擬題</h2><p>從晚間摘要練習案例、爭點與四欄對照。開啟頁面會載入最新同步題庫。</p><p id="simulationAccessNote">作答紀錄保存在目前瀏覽器；與本頁考古題紀錄分開保存，可匯出／匯入備份。</p></div>
-        <a class="btn primary simulation-link" href="../daily-simulation/" target="_blank" rel="noopener noreferrer" aria-describedby="simulationAccessNote">開啟每日模擬題 ↗</a>
+        <a class="btn primary simulation-link" href="https://leokychen.github.io/probation-study-desk/daily-simulation/" target="_blank" rel="noopener noreferrer" aria-describedby="simulationAccessNote">開啟每日模擬題 ↗</a>
       </section>
         <article class="entry-card"><h2>考科重點地圖</h2><p>查看108–115年各科考點、章節優先順序與完整整理。</p><button class="btn" type="button" id="mapEntryButton" aria-controls="studyMapPanel">開啟考科重點地圖</button></article>
         <article class="entry-card"><h2>依考點練習</h2><p>依科目與考點找到相近原題，每次練一題或指定部分。</p><button class="btn" type="button" id="topicEntryButton" aria-controls="topicHub">開啟依考點練習</button></article>
@@ -1463,6 +1463,6 @@
 const requested=new URLSearchParams(location.search); const picked=requested.get('q');
 if(picked)window.Practice25.select(picked);
 if(requested.has('review')){const fold=[...document.querySelectorAll('details')].find(n=>n.querySelector('summary')?.textContent==='補強清單');if(fold){fold.open=true;fold.scrollIntoView();}}
-</script><script src="backup-io-direct.js"></script><script src="print-study.js"></script><script src="clear-records.js"></script></body>
+</script><script src="backup-io-direct.js"></script><script src="print-study.js"></script><script src="clear-records.js"></script><script>document.addEventListener("click",function(event){const a=event.target.closest("a");if(!a)return;const href=a.getAttribute("href")||"";if(href.startsWith("reference-notes/"))a.href="https://leokychen.github.io/probation-study-desk/v2.5/"+href;});</script></body>
 </html>
 
