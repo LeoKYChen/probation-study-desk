@@ -108,3 +108,26 @@ body.study-home main,body.study-home>footer{max-width:1200px}
 @media(max-width:1180px){.study-reading .app-shell{grid-template-columns:220px minmax(0,1fr)}.study-reading .hero-art{opacity:.35}.study-reading .hero-copy{max-width:100%}.study-reading .page-inner{padding:24px}.study-reading .stats>div{padding:16px 12px}.study-reading .stats{grid-template-columns:1fr 1fr}}
 @media(max-width:760px){.study-header-inner{padding:14px 18px;gap:12px}.study-brand{font-size:18px}.study-header nav{width:100%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}.study-header nav a{font-size:13px;padding:8px 6px}.study-test-label{margin-left:auto}.study-practice .topbar{flex-direction:column;align-items:flex-start;padding:18px}.study-practice .topbar-tools{justify-content:flex-start}.study-practice .today{text-align:left}.study-practice main{padding:20px 16px 36px}.study-practice .brand p{font-size:12px}.study-practice .data-btn{font-size:12px}.study-reading .app-shell{display:block}.study-reading .sidebar{position:fixed;inset:0 auto 0 0;top:0;width:248px;transform:translateX(-100%);transition:transform .2s}.study-reading .sidebar.is-open{transform:translateX(0)}.study-reading .sidebar-scrim{display:block;position:fixed;inset:0;z-index:25;background:#243b3566}.study-reading .menu-button{display:inline-flex}.study-reading .main{margin:0}.study-reading .topbar{padding:0 16px;height:61px}.study-reading .page-inner{padding:20px 16px 0}.study-reading .hero{padding:24px;min-height:285px}.study-reading .hero h1{font-size:29px}.study-reading .hero p{font-size:14px;max-width:none}.study-reading .hero-art{opacity:.12}.study-reading .hero-actions{gap:14px;flex-wrap:wrap}.study-reading .hero-actions button,.study-reading .hero-actions a{font-size:13px}.study-reading .stats{grid-template-columns:1fr 1fr}.study-reading .stats div div>span{font-size:11px}.study-reading .stats strong.sync-time{font-size:11px}.study-reading .document-grid{grid-template-columns:1fr}.study-reading .page-footer{font-size:11px}.study-reading .private-badge{font-size:10px}.study-reading .sidebar-bottom p{font-size:12px}.study-home .actions{display:flex;flex-wrap:wrap;gap:10px}}
 @media print{.study-header{display:none}.study-reading .sidebar{display:none}.study-reading .app-shell{display:block}.study-reading .main{margin:0}}
+
+/* Keep the four homepage actions aligned instead of wrapping three plus one. */
+.study-home .hero > div {min-width:0}
+.study-home .actions {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+}
+.study-home .actions > .primary,
+.study-home .actions > .secondary {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-width:0;
+  min-height:56px;
+  padding:12px 14px;
+  text-align:center;
+  line-height:1.5;
+  overflow-wrap:anywhere;
+}
+@media(max-width:560px) {
+  .study-home .actions {grid-template-columns:minmax(0,1fr)}
+}
