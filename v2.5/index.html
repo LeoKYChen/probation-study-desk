@@ -354,6 +354,44 @@
   <link rel="stylesheet" href="study-map.css">
 <link rel="stylesheet" href="extension25.css"><style>#savedDrafts25{display:none!important}</style><link rel="stylesheet" href="../shared-ui.css">
 <script src="../juvenile-news/v25-entry.js" defer></script>
+
+<style>
+/* Mobile practice tools: date, paired actions, then record management. */
+@media (max-width:760px) {
+  .study-practice .topbar {gap:16px}
+  .study-practice .topbar-tools {
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    width:100%;
+    max-width:none;
+    gap:10px;
+  }
+  .study-practice .topbar-tools .today {
+    grid-column:1 / -1;
+    order:0;
+    padding-bottom:4px;
+    text-align:left;
+  }
+  .study-practice .topbar-tools .data-btn {
+    order:2;
+    width:100%;
+    min-width:0;
+    min-height:44px;
+    padding:10px 12px;
+    font-size:13px;
+    line-height:1.5;
+    white-space:normal;
+    overflow-wrap:anywhere;
+  }
+  .study-practice #exportButton,
+  .study-practice #importButton {order:1}
+  .study-practice #clearAllRecords {
+    order:3;
+    grid-column:1 / -1;
+    margin-top:4px;
+  }
+}
+</style>
 </head>
 <body class="study-practice"><header class="study-header"><div class="study-header-inner"><a class="study-brand" href="../"><span class="study-brand-mark" aria-hidden="true">觀</span>觀護人練習臺</a><span class="study-test-label">v2.5</span><nav aria-label="主要導覽"><a href="../">首頁</a><a href="../v2.5/" aria-current="page">考古題練習</a><a href="https://leokychen.github.io/probation-study-desk/daily-simulation/">晚間學習室</a></nav></div></header>
   <div class="app-shell">
