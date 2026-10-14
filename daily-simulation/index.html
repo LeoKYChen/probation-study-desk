@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="晚間學習室：完整新聞摘要閱讀、申論練習與參考架構。"><title>晚間學習室｜觀護人練習臺 v2.5</title><link rel="stylesheet" href="reading.css"><link rel="stylesheet" href="practice.css"><script src="model.js" defer></script><script src="news.js" defer></script><script src="app.js" defer></script><link rel="stylesheet" href="../shared-ui.css">
-</head>
+<link rel="manifest" href="../manifest.webmanifest"><meta name="theme-color" content="#102a43"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="../pwa/icon-180.png"><link rel="stylesheet" href="../offline.css"><script src="../offline.js" defer></script></head>
 <body class="study-reading">
 <header class="study-header"><div class="study-header-inner"><a class="study-brand" href="../"><span class="study-brand-mark" aria-hidden="true">觀</span>觀護人練習臺</a><span class="study-test-label">v2.5</span><nav aria-label="主要導覽"><a href="../">首頁</a><a href="../v2.5/">考古題練習</a><a href="../daily-simulation/" aria-current="page">晚間學習室</a></nav></div></header>
 <div class="app-shell">
@@ -40,3 +40,4 @@
 </dialog>
 <dialog id="newsReader" class="practice-dialog" aria-labelledby="newsTitle"><section class="reader"><header class="reader-toolbar"><span>▤ 完整原文閱讀</span><div><button id="newsBookmark" class="icon-button" aria-label="收藏文件">☆</button><a id="newsSource" target="_blank" rel="noopener noreferrer">文件連結 ↗</a><button id="newsClose" class="icon-button" aria-label="關閉閱讀">✕</button></div></header><div class="reader-scroll" id="newsScroll"><div id="newsMeta" class="reader-meta"></div><h1 id="newsTitle"></h1><div id="newsTags" class="reader-tag-list"></div><div class="reader-note">原文收錄。新聞、法規與考題資訊以原始來源為準；分類依文件標題與關鍵字推定。</div><div id="newsContent" class="markdown"></div><div class="reading-end"><span>每天讀一點，讓理解累積。</span><button id="newsRead">標記已讀</button></div><small id="newsModified" class="source-modified"></small></div></section></dialog>
 </body></html>
+

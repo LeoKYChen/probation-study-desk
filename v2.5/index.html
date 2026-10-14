@@ -392,7 +392,7 @@
   }
 }
 </style>
-</head>
+<link rel="manifest" href="../manifest.webmanifest"><meta name="theme-color" content="#102a43"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="../pwa/icon-180.png"><link rel="stylesheet" href="../offline.css"><script src="../offline.js" defer></script></head>
 <body class="study-practice"><header class="study-header"><div class="study-header-inner"><a class="study-brand" href="../"><span class="study-brand-mark" aria-hidden="true">觀</span>觀護人練習臺</a><span class="study-test-label">v2.5</span><nav aria-label="主要導覽"><a href="../">首頁</a><a href="../v2.5/" aria-current="page">考古題練習</a><a href="https://leokychen.github.io/probation-study-desk/daily-simulation/">晚間學習室</a></nav></div></header>
   <div class="app-shell">
     <header class="topbar">
@@ -1504,4 +1504,5 @@ if(picked)window.Practice25.select(picked);
 if(requested.has('review')){const fold=[...document.querySelectorAll('details')].find(n=>n.querySelector('summary')?.textContent==='補強清單');if(fold){fold.open=true;fold.scrollIntoView();}}
 </script><script src="backup-io-direct.js"></script><script src="print-study.js"></script><script src="clear-records.js"></script><script>document.addEventListener("click",function(event){const a=event.target.closest("a");if(!a)return;const href=a.getAttribute("href")||"";if(href.startsWith("reference-notes/"))a.href="https://leokychen.github.io/probation-study-desk/v2.5/"+href;});</script></body>
 </html>
+
 
