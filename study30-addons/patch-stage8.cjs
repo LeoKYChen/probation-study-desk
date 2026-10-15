@@ -12,8 +12,8 @@ replaceOnce('index.html',
  '<script src="./backup-import.js" defer></script>\n  <script src="./daily-essay-workbench.js" defer></script>');
 replaceOnce('index.html',
  '      <label class="answer-label" for="answer">我的練習紀錄 <span id="answerStatus" class="muted">輸入後自動保存於本機</span></label>\n      <textarea id="answer" rows="8" placeholder="不用寫完完整申論，先寫出自己的爭點、核心理論或法條以及分析。"></textarea>',
- `      <details class="daily-essay-panel" id="dailyEssayPanel">
-        <summary>我的練習紀錄｜展開申論作答與草稿</summary>
+ `      <section class="daily-essay-panel" id="dailyEssayPanel" aria-labelledby="dailyEssayHeading">
+        <h3 id="dailyEssayHeading">我的練習紀錄</h3>
         <p class="tiny muted">此處直接沿用下方「國考申論答題工作區」的四格草稿、完整答案及 Markdown 匯出。作答按題目獨立保存，切換自由練習科目不會覆蓋今日草稿。</p>
         <div id="dailyEssayWorkbenchSlot"></div>
         <div id="dailyEssayLocationHint" hidden><p class="tiny muted">申論編輯器目前正在下方自由練習其他科目。</p><button id="dailyEssayResume" type="button" class="secondary">切回今日題目作答</button></div>
@@ -21,14 +21,14 @@ replaceOnce('index.html',
           <label class="answer-label" for="answer">本步驟速記 <span id="answerStatus" class="muted">輸入後自動保存於本機</span></label>
           <textarea id="answer" rows="8" placeholder="不用寫完完整申論，先寫出自己的爭點、核心理論或法條以及分析。"></textarea>
         </details>
-      </details>`);
+      </section>`);
 replaceOnce('index.html',
  '      <details id="essayEditor" class="essay-editor">',
  '      <p id="essayWorkbenchLocationHint" class="tiny muted" hidden>「跟隨今日練習題」的申論草稿已移到上方「我的練習紀錄」。切換為其他科目，即可在此繼續自由練習。</p>\n      <div id="freeEssayWorkbenchSlot"></div>\n      <details id="essayEditor" class="essay-editor">');
 fs.appendFileSync(path.join(root,'style.css'),`
 /* Reuse existing essay editor in daily task (same DOM nodes, same storage). */
 .daily-essay-panel{border:1px solid #b5cfc2;border-radius:12px;background:#f8faf8;margin:18px 0;padding:14px}
-.daily-essay-panel>summary{font-weight:800;color:var(--green,#21463d);cursor:pointer;padding:6px 0;line-height:1.5}
+.daily-essay-panel>h3{font-weight:800;color:var(--green,#21463d);padding:6px 0;line-height:1.5;margin:0}
 .daily-essay-panel>#dailyEssayWorkbenchSlot>.essay-editor{margin-top:12px;background:#fff}
 .daily-quick-notes{border-top:1px solid var(--line,#dce4dc);margin-top:14px;padding-top:12px}
 .daily-quick-notes>summary{color:var(--green,#21463d);font-weight:700;cursor:pointer}
