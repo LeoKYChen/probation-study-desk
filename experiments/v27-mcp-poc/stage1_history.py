@@ -148,6 +148,49 @@ async def verify():
                         report["reason"] = "歷史版本無法逐字核對官方頁面：" + date
                         return report
 
+    # Supplementary legal-time safeguard: compare law-level amendment dates
+    # independently with official LawAll HTML. An amendment date is NOT an
+    # article-specific effective date; the latter remains a separate policy gate.
+    report["amendment_date_checks"] = []
+    laws_to_check = [("C0010011", "少年事件處理法"), ("I0030002", "保安處分執行法")]
+    async with stdio_client(StdioServerParameters(command=sys.executable, args=["-m", "mcp_server.server"])) as (rd, wr):
+        async with ClientSession(rd, wr) as second_session:
+            await asyncio.wait_for(second_session.initialize(), timeout=45)
+            async with httpx.AsyncClient(timeout=35.0, follow_redirects=True) as http:
+                for pcode, name in laws_to_check:
+                    payload = unpack(await asyncio.wait_for(second_session.call_tool(
+                        "query_regulation", {"pcode": pcode, "article_no": "1"}), timeout=80))
+                    if payload.get("success") is not True:
+                        report["reason"] = "無法檢索法規修正日：" + name
+                        return report
+                    recorded = str((payload.get("law") or {}).get("last_amended", "")).strip()
+                    live = await http.get(ROOT_URL + "LawAll.aspx", params={"pcode": pcode})
+                    live.raise_for_status()
+                    from bs4 import BeautifulSoup
+                    soup = BeautifulSoup(live.text, "lxml")
+                    cell = soup.select_one("#trLNNDate td")
+                    date_text = cell.get_text(" ", strip=True) if cell else soup.get_text(" ", strip=True)
+                    found = re.search(r"(\d{2,3})\s*年\s*(\d{1,2})\s*月\s*(\d{1,2})\s*日", date_text)
+                    if not found:
+                        report["reason"] = "無法從官方法規頁辨識修正日期：" + name
+                        return report
+                    y, mo, day = map(int, found.groups())
+                    expected = f"{y + 1911:04d}-{mo:02d}-{day:02d}"
+                    ok = recorded.replace("/", "-") == expected
+                    report["amendment_date_checks"].append({
+                        "name": name, "pcode": pcode, "mcp_last_amended": recorded,
+                        "official_amended_date": expected, "verified": ok,
+                        "official_url": str(live.url), "individual_article_effective_date_checked": False,
+                    })
+                    print(f'Amendment metadata {name}: {"verified" if ok else "needs_review"}', flush=True)
+                    if not ok:
+                        report["reason"] = "法規修正日資訊與官方原文不符：" + name
+                        return report
+
+    report["legal_time_limitation"] = (
+        "Law-level amendment dates checked. Do not infer article-specific "
+        "effective date or historical applicability without separate legal review."
+    )
     report["status"] = "passed"
     report["stage1_history_accepted"] = True
     report["reason"] = "所有回傳的變更版本均與對應官方歷史頁面或官方現行頁面核對"
