@@ -4,7 +4,7 @@ const dir=process.argv[2]||'deploy-dist';
 const read=p=>fs.readFileSync(path.join(dir,p));
 const html=read('index.html').toString(),sw=read('sw.js').toString(),client=read('offline-control.js').toString();
 let count=0;
-function check(name,run){run();count++;console.log('PASS',count,name);}
+function check(name,run){const p=run();if(p&&typeof p.then==='function'){p.then(()=>{count++;console.log('PASS',count,name);console.log('TOTAL',count,'tests PASS');},e=>{console.error('FAIL',name,e);process.exitCode=1;});}else{count++;console.log('PASS',count,name);}}
 check('original 426-question scripts still included',()=>{
   for(const name of ['source-main-questions.js','source-related-questions.js']){assert.ok(fs.statSync(path.join(dir,name)).size>10);}
 });
@@ -95,4 +95,4 @@ check('service worker offline fallback executes successfully',()=>{
     assert.equal(entries.size,assets.length);
   });
 });
-Promise.resolve().then(()=>console.log('TOTAL',count,'offline checks dispatched')).catch(e=>{console.error(e);process.exitCode=1});
+
