@@ -32,7 +32,15 @@ jobs:
           cp study30-addons/essay-analytics.js deploy-dist/essay-analytics.js
           node study30-addons/patch-stage5.cjs deploy-dist
           cp study30-addons/weakness-priority.js deploy-dist/weakness-priority.js
-          for required in index.html style.css app.js review-core.js review-simulator.js essay.js essay-rubric-core.js essay-selfcheck.js essay-review.js essay-analytics.js weakness-priority.js; do
+          # Bundle verified snapshots from the ORIGINAL v2.5 production branch,
+          # rather than depend on cross-site scripts at browser runtime.
+          git fetch --depth=1 origin main
+          git show FETCH_HEAD:v2.5/questions.js > deploy-dist/source-main-questions.js
+          git show FETCH_HEAD:v2.5/related-questions.js > deploy-dist/source-related-questions.js
+          node study30-addons/patch-stage6.cjs deploy-dist
+          cp study30-addons/question-sources.js deploy-dist/question-sources.js
+          cp study30-addons/data-health.js deploy-dist/data-health.js
+          for required in index.html style.css app.js review-core.js review-simulator.js essay.js essay-rubric-core.js essay-selfcheck.js essay-review.js essay-analytics.js weakness-priority.js source-main-questions.js source-related-questions.js question-sources.js data-health.js; do
             test -s "deploy-dist/$required" || { echo "Missing: $required"; exit 1; }
           done
           for script in deploy-dist/*.js; do node --check "$script"; done
@@ -49,6 +57,11 @@ jobs:
           node --check study30-addons/test-integrity.cjs
           node study30-addons/test-stage3-regression.cjs deploy-dist
           node study30-addons/test-integrity.cjs deploy-dist
+          node --check study30-addons/patch-stage6.cjs
+          node --check study30-addons/test-stage6.cjs
+          node --check study30-addons/question-sources.js
+          node --check study30-addons/data-health.js
+          node study30-addons/test-stage6.cjs deploy-dist
 
       - name: Deploy to existing Cloudflare Pages project
         uses: cloudflare/wrangler-action@v4
