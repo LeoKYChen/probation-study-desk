@@ -1,0 +1,38 @@
+name: Deploy Study30 Test to Cloudflare Pages
+
+on:
+  push:
+    branches:
+      - feature/study30-v251
+    paths:
+      - study30-site.zip
+      - .github/workflows/deploy-study30-cloudflare.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the test branch
+        uses: actions/checkout@v6
+
+      - name: Unpack and validate website
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p deploy-dist
+          unzip -q study30-site.zip -d deploy-dist
+          for required in index.html style.css app.js review-core.js review-simulator.js essay.js essay-rubric-core.js essay-selfcheck.js; do
+            test -s "deploy-dist/$required" || { echo "Missing: $required"; exit 1; }
+          done
+          for script in deploy-dist/*.js; do node --check "$script"; done
+
+      - name: Deploy to existing Cloudflare Pages project
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy deploy-dist --project-name=probation-study30-test --branch=main
