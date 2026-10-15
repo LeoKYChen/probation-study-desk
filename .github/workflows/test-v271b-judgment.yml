@@ -1,4 +1,4 @@
-name: v2.7.1b - Judicial API contract safety tests
+name: v2.7.1b-c - Judicial API and recovery safety tests
 
 on:
   push:
@@ -28,8 +28,28 @@ jobs:
           node-version: '24'
       - name: Verify all judgment scripts have valid syntax
         run: |
-          for p in services/v2.7-judgment/*.cjs; do node --check "$p"; done
+          for p in services/v2.7-judgment/*.cjs services/v2.7-judgment/*.mjs; do node --check "$p"; done
       - name: Execute synthetic tests, no external calls
         env:
           JUDICIAL_API_LIVE_ENABLED: 'false'
         run: node --test services/v2.7-judgment/*.test.cjs
+      - name: Ensure private judgment code is not in public Pages assets
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          public=Path("development/v2.7")
+          assert public.is_dir()
+          restricted={".cjs",".mjs",".sql"}
+          bad=[p for p in public.rglob("*") if p.is_file() and
+              (p.suffix in restricted or p.name in {".env",".dev.vars","wrangler.toml","judgments.json"})]
+          if bad: raise SystemExit("Private artifacts in public Pages: "+str(bad))
+          for p in public.rglob("*"):
+              if not p.is_file() or p.stat().st_size>5_000_000: continue
+              if p.suffix not in {".js",".html",".json"}: continue
+              content=p.read_text(encoding="utf-8")
+              for secret in ("JUDICIAL_API_PASSWORD","JUDICIAL_API_USER",
+                             "TEST_JID_SYNTHETIC_", "PRIVATE_JUDGMENT_D1"):
+                  if secret in content:
+                      raise SystemExit("Private court identifier/credential name leaked into Pages: "+str(p))
+          print("Public Pages payload excludes judicial adapter code and synthetic court identifiers")
+          PY
