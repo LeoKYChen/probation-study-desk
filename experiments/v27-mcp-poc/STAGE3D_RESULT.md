@@ -10,7 +10,7 @@
 
 本輪新開發：
 - `stage3d-link-only.cjs`：無網路、無資料庫、無持久性快取的官方來源連結控制模型。
-- `stage3d-link-only.test.cjs`：32 項合成案件、官方來源信任、個別 JID 及撤除狀態測試。
+- `stage3d-link-only.test.cjs`：33 項合成案件、官方來源信任、個別 JID 及撤除狀態測試。
 - `STAGE3D.md`：資料範圍、產品限制、未來上線必要條件。
 - `test-v27-mcp-stage3d.yml`：於 Node.js 24 執行上述測試及既有私有裁判模擬回歸檢查；核對沒有改動 Cloudflare Pages 公開內容。
 
