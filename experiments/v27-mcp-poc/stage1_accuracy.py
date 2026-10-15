@@ -163,22 +163,30 @@ async def run_live():
                     verify_snapshot,
                 )
 
-            def verify_external(pcode, number, keyword):
+            # SHA-256 of full normalized official single-article text,
+            # independently recorded from law.moj.gov.tw on 2026-10-15.
+            # Exact comparison detects a missing paragraph or punctuation drift.
+            OFFICIAL_HASHES = {
+                ("C0000001", "320"): "065dc35700783e260c4b86edae5c14553d4484191337ab1a0b9913f21de5f76b",
+                ("C0010001", "95"): "6b101505e72d413be4e34c7de31639669a11c444d05828d07ddb088d562db8cd",
+            }
+            def verify_external(pcode, number):
                 def _inner(data):
+                    import hashlib
                     art, link = validate_article(data, pcode, number)
-                    if keyword not in normalized(art.get("content")):
-                        raise AssertionError("缺少法條識別關鍵字（仍需獨立官方原文核對）")
-                    return {"official_link": link, "comparison": "live_source_and_keyword_only",
-                            "status": "review"}
+                    digest = hashlib.sha256(normalized(art.get("content")).encode("utf-8")).hexdigest()
+                    if digest != OFFICIAL_HASHES[(pcode, number)]:
+                        raise AssertionError("Retrieved article does not match separately checked official full text")
+                    return {"official_link": link,
+                            "comparison": "complete_official_text_sha256", "reference_date": "2026-10-15"}
                 return _inner
 
-            await run_case("E13", "expanded_law", "中華民國刑法第320條（原站未收錄）",
+            await run_case("E13", "expanded_law", "中華民國刑法第320條完整條文核對",
                            "query_regulation", {"law_name": "中華民國刑法", "article_no": "320"},
-                           verify_external("C0000001", "320", "竊盜"))
-            await run_case("E14", "expanded_law", "刑事訴訟法第95條（原站未收錄）",
+                           verify_external("C0000001", "320"))
+            await run_case("E14", "expanded_law", "刑事訴訟法第95條完整條文核對",
                            "query_regulation", {"law_name": "刑事訴訟法", "article_no": "95"},
-                           verify_external("C0010001", "95", "告知"))
-
+                           verify_external("C0010001", "95"))
             def verify_pcode(expected):
                 def _inner(data):
                     if data.get("success") is not True or data.get("pcode") != expected:
