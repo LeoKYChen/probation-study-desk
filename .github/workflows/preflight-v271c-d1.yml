@@ -40,7 +40,7 @@ jobs:
           set -euo pipefail
           # Cloudflare tokens have no whitespace. Remove accidental copy/paste
           # CR/LF and surrounding spaces in runner memory; do not display value.
-          CLEAN_TOKEN="$(printf '%s' "$CLOUDFLARE_API_TOKEN" | tr -d '[:cntrl:]' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')"
+          CLEAN_TOKEN="$(printf '%s' "$CLOUDFLARE_API_TOKEN" | tr -d '[:space:]')"
           if [ -z "$CLEAN_TOKEN" ] || [[ "$CLEAN_TOKEN" =~ [[:space:]] ]]; then
             echo "::error::D1 token contains invalid whitespace. Please re-save its value in GitHub Secrets."
             exit 1
