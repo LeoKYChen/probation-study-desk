@@ -2,43 +2,13 @@
 <html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><title>v2.7 法律智慧檢索 alpha</title>
 <style>
 :root{font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif;color:#172938;background:#f3f6fa}*{box-sizing:border-box}body{margin:0}.shell{max-width:890px;margin:auto;padding:24px 16px 64px}header{margin-bottom:20px}h1{font-size:clamp(24px,5vw,34px);margin:5px 0}p{line-height:1.75}.sub,.muted{color:#526476}.label{font-weight:700}button,input,select{font:inherit}button{cursor:pointer}.seg{display:flex;gap:8px;margin:15px 0}.seg button{flex:1;border:1px solid #ccd6df;background:#fff;border-radius:12px;padding:12px}.seg button[aria-pressed=true]{background:#113d60;color:white;border-color:#113d60}.form{display:grid;gap:10px;grid-template-columns:1fr 230px}.form input,.form select{background:white;border:1px solid #bdcbd5;border-radius:10px;padding:13px;width:100%;color:#172938}.panel,.result{background:#fff;border:1px solid #dbe2e8;border-radius:15px;padding:18px;margin:15px 0}.result h2{font-size:18px;margin:0 0 8px}a{color:#125c97}.tag{display:inline-block;font-size:12px;color:#23465d;background:#e6f3fb;border-radius:8px;padding:4px 8px;margin:4px 5px 4px 0}.warning{border-left:4px solid #ad7a29;padding:11px 14px;background:#fff8e9}.law{white-space:pre-wrap;line-height:1.8}.meta{font-size:13px;color:#526476}#count{font-weight:700}.empty{padding:20px;color:#526476}footer{font-size:13px;color:#526476;margin-top:32px}@media(max-width:600px){.form{grid-template-columns:1fr}.shell{padding-top:12px}}@media(prefers-color-scheme:dark){:root{color:#e9edf1;background:#102330}.panel,.result,.seg button,.form input,.form select{background:#1c3442;color:#e9edf1;border-color:#406071}.seg button[aria-pressed=true]{background:#285b7b}.sub,.muted,.meta,footer,.empty{color:#c1ccd5}.warning{background:#443920}.tag{background:#24485f;color:#cde6f7}a{color:#90d0ff}}
-</style></head>
+button.more{display:block;margin:12px auto;padding:12px 18px;border:1px solid #9faeb9;border-radius:10px;background:#eaf1f6;color:#173a53} </style></head>
 <body><main class="shell">
 <header><div class="sub">觀護人練習臺｜v2.7.0-alpha · 靜態法規搜尋原型</div><h1>臺灣法律智慧檢索</h1><p class="sub">一套法源資料，兩種使用方式。這是可操作的最小原型，尚未連接AI或自動更新。</p></header>
-<div class="warning" role="note"><strong>資料範圍限制：</strong>目前僅收錄以下6條經本次資料快照逐條核對的示範法條，不是完整法規資料庫；不提供歷史法條檢索、函釋或裁判書。請以每筆附上的官方連結核對最新有效版本。</div>
+<div class="warning" role="note"><strong>資料範圍限制：</strong>本系統僅限兩部指定法律之現行法資料快照，不含歷史法、函釋與公開裁判；來源更新頻率並非即時，個別條文施行日仍須核對官方網站。</div>
 <nav class="seg" aria-label="使用模式"><button type="button" id="modeExam" aria-pressed="true">📚 國考學習模式</button><button type="button" id="modeResearch" aria-pressed="false">⚖️ 專業研究模式</button></nav>
 <section class="panel"><p id="modeDesc">查法條、抓考點；正式申論評分功能尚未接入。</p><div class="form"><label><span class="label">條號或關鍵字</span><input id="q" autocomplete="off" placeholder="例如 第3-1條、少年、保護管束"></label><label><span class="label">指定法規</span><select id="lawFilter"><option value="">全部示範法條</option><option value="C0010011">少年事件處理法</option><option value="I0030002">保安處分執行法</option></select></label></div><p class="meta">按條號、法規名、條文全文進行瀏覽器端搜尋；資料不會上傳。</p></section>
-<section><p id="count" role="status"></p><div id="results"></div></section>
-<footer>此站為研究與學習工具原型，不構成正式法律意見。專案程式碼請依原儲存庫授權使用。法條內容於2026-10-15對照全國法規資料庫人工核對；法規來源資料快照：2026-10-02；本站不自動同步最新修法。</footer>
+<section><p id="dataInfo" class="meta" role="status">正在載入法規資料…</p><p id="count" role="status"></p><div id="results"></div></section>
+<footer>資料來源：法務部全國法規資料庫開放資料；按月檢查更新，更新失敗時保留原資料。本站提供學習檢索，不構成法律意見，不提供歷史法規適用判斷。</footer>
 </main>
-<script>
-"use strict";
-const LAWS=[
- {id:"C0010011",law:"少年事件處理法",article:"第1條",body:"為保障少年健全之自我成長，調整其成長環境，並矯治其性格，特制定本法。",modified:"112年6月21日",topic:"立法目的"},
- {id:"C0010011",law:"少年事件處理法",article:"第2條",body:"本法稱少年者，謂十二歲以上十八歲未滿之人。",modified:"112年6月21日",topic:"少年定義"},
- {id:"C0010011",law:"少年事件處理法",article:"第3-1條",body:"詢問或訊問少年時，應通知其法定代理人、現在保護少年之人或其他適當之人陪同在場。但經合法通知，無正當理由不到場或有急迫情況者，不在此限。\n\n依法應於二十四小時內護送少年至少年法院之事件，等候前項陪同之人到場之時間不予計入，並應釋明其事由。但等候時間合計不得逾四小時。\n\n少年因精神或其他心智障礙無法為完全之陳述者，必要時，得請兒童及少年心理衛生或其他專業人士協助。\n少年不通曉詢問或訊問之人所使用之語言者，應由通譯傳譯之。其為聽覺、語言或多重障礙者，除由通譯傳譯外，並得以文字、手語或其他適當方式詢問或訊問，亦得許其以上開方式表達。",modified:"112年6月21日",topic:"詢問訊問程序保障"},
- {id:"I0030002",law:"保安處分執行法",article:"第1條",body:"執行保安處分，除法律別有規定外，依本法行之。",modified:"111年2月18日",topic:"適用範圍"},
- {"id":"C0010011","law":"少年事件處理法","article":"第3條","body":"下列事件，由少年法院依本法處理之：\n一、少年有觸犯刑罰法律之行為者。\n二、少年有下列情形之一，而認有保障其健全自我成長之必要者：\n（一）無正當理由經常攜帶危險器械。\n（二）有施用毒品或迷幻物品之行為而尚未觸犯刑罰法律。\n（三）有預備犯罪或犯罪未遂而為法所不罰之行為。\n前項第二款所指之保障必要，應依少年之性格及成長環境、經常往來對象、參與團體、出入場所、生活作息、家庭功能、就學或就業等一切情狀而為判斷。","modified":"112年6月21日","topic":"少年法院處理事件"},
- {"id":"I0030002","law":"保安處分執行法","article":"第2條","body":"保安處分執行處所如下：\n一、感化教育及強制工作處所。\n二、監護、禁戒及強制治療處所。\n前項保安處分執行處所，由法務部設置，必要時法務部得請行政院協調相關中央主管機關設置或委任、委託或委辦其他機關（構）設置或辦理。\n保安處分之實施，受法務部之指揮、監督。","modified":"111年2月18日","topic":"保安處分執行處所"}
-];
-let mode="exam";
-const $=id=>document.getElementById(id);
-const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const normal=s=>s.toLowerCase().replace(/[\s　]/g,"").replace(/第/g,"").replace(/條/g,"").replace(/之/g,"-");
-function render(){
- const search=normal($("q").value),filter=$("lawFilter").value;
- const matched=LAWS.filter(x=>(!filter||x.id===filter)&&(!search||normal(x.law+x.article+x.body+x.topic).includes(search)));
- $("count").textContent="符合範例資料："+matched.length+" 條（目前總收錄 "+LAWS.length+" 條）";
- $("results").innerHTML=matched.length?matched.map(x=>{
-  const url="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode="+encodeURIComponent(x.id);
-  const content=mode==="exam"?'<p><span class="tag">學習標籤（非正式考點判定）：'+esc(x.topic)+'</span></p><p class="meta">練習建議：先自行整理要件及可能例外，再回查官方法條。</p>':'<p class="meta">研究提醒：本原型只顯示現行法示範文字，未提供歷史有效期間、函釋或裁判支持。</p>';
-  return '<article class="result"><h2>'+esc(x.law)+' '+esc(x.article)+'</h2><div class="law">'+esc(x.body)+'</div>'+content+'<p class="meta">法規頁標示修正日期：民國'+esc(x.modified)+'｜資料快照：2026-10-02｜核對日：2026-10-15</p><a href="'+url+'" target="_blank" rel="noopener noreferrer">查看全國法規資料庫原文 ↗</a></article>';
- }).join(""):'<div class="panel empty">示範資料中沒有符合的法條。這不代表現行法沒有相關規定；請改用官方法規資料庫查詢。</div>';
-}
-function setMode(m){mode=m;$("modeExam").setAttribute("aria-pressed",String(m==="exam"));$("modeResearch").setAttribute("aria-pressed",String(m==="research"));$("modeDesc").textContent=m==="exam"?"國考學習：查看法條原文、主題標籤與自主練習提示。":"專業研究：查看法規名稱、條文原文及來源；歷史法與實務見解尚未實作。";render();}
-$("q").addEventListener("input",render);
-$("lawFilter").addEventListener("change",render);
-$("modeExam").addEventListener("click",()=>setMode("exam"));
-$("modeResearch").addEventListener("click",()=>setMode("research"));
-render();
-</script></body></html>
+<script defer src="./app.js"></script></body></html>
