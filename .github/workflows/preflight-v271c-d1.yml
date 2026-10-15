@@ -52,3 +52,5 @@ jobs:
           console.log('Reserved synthetic database names already present: '+hits.map(Boolean).join(', '));
           console.log('READ-ONLY CHECK; ZERO resources created or changed');
           JS
+
+# 2026-10-15: read-only recheck after dedicated D1 token was configured by repository owner.
