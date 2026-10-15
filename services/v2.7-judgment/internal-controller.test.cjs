@@ -2,14 +2,14 @@
 const assert=require("node:assert/strict");
 const {test}=require("node:test");
 const crypto=require("node:crypto");
-const {makeServiceAuthorizer,canonicalCommand,ISSUER,AUDIENCE}=require("./service-permissions.cjs");
+const {makeServiceAuthorizer,canonicalCommand,hashPayload,ISSUER,AUDIENCE}=require("./service-permissions.cjs");
 const {makeInternalController}=require("./internal-controller.cjs");
 const kp=crypto.generateKeyPairSync("ed25519");
 const now=Date.parse("2026-10-15T04:30:00Z");
 let nonceId=0;
-function sign(operation,role){
+function sign(operation,role,payload){
  const obj={version:1,issuer:ISSUER,audience:AUDIENCE,subject:"svc:metadata-controller",
- role,operation,nonce:"UNIQUE_NONCE_"+String(++nonceId).padStart(20,"0"),
+ role,operation,payloadHash:hashPayload(payload),nonce:"UNIQUE_NONCE_"+String(++nonceId).padStart(20,"0"),
  issuedAt:now-1000,expiresAt:now+10000};
  return {...obj,signature:crypto.sign(null,canonicalCommand(obj),kp.privateKey).toString("base64")};
 }
@@ -35,7 +35,7 @@ test("controller cannot be constructed in default disabled mode",()=>{
 });
 test("reader signed command can only call read, not write",async()=>{
  const {ctl,calls}=fixture();
- const read=sign("metadata:read","synthetic-reader");
+ const read=sign("metadata:read","synthetic-reader",{jid:"TEST_JID_SYNTHETIC_ONLY"});
  const val=await ctl.readMetadata(read,"TEST_JID_SYNTHETIC_ONLY");
  assert.equal(val.synthetic,true);
  await assert.rejects(ctl.writeSynthetic(read,{jid:"TEST_JID_SYNTHETIC_ONLY"}),/lacks requested/);
@@ -43,17 +43,17 @@ test("reader signed command can only call read, not write",async()=>{
 });
 test("operator signed command can write only synthetic JID",async()=>{
  const {ctl,calls}=fixture();
- const cmd=sign("metadata:write","synthetic-operator");
+ const cmd=sign("metadata:write","synthetic-operator",{jid:"REAL_JID"});
  await assert.rejects(ctl.writeSynthetic(cmd,{jid:"REAL_JID"}),/non-synthetic/);
  assert.deepEqual(calls,[]);
- const p=sign("metadata:write","synthetic-operator");
+ const p=sign("metadata:write","synthetic-operator",{jid:"TEST_JID_SYNTHETIC_SAMPLE"});
  await ctl.writeSynthetic(p,{jid:"TEST_JID_SYNTHETIC_SAMPLE"});
  assert.deepEqual(calls,["write"]);
 });
 test("normal operator denied recovery; recovery-admin accepted",async()=>{
  const {ctl,calls}=fixture();
- await assert.rejects(ctl.simulateRestore(sign("metadata:write","synthetic-operator")) ,/lacks requested/);
- const result=await ctl.simulateRestore(sign("restore:simulate","synthetic-recovery-admin"));
+ await assert.rejects(ctl.simulateRestore(sign("metadata:write","synthetic-operator",{action:"synthetic-restore"})) ,/lacks requested/);
+ const result=await ctl.simulateRestore(sign("restore:simulate","synthetic-recovery-admin",{action:"synthetic-restore"}));
  assert.equal(result.quarantine,true);
  assert.deepEqual(calls,["restore"]);
 });
