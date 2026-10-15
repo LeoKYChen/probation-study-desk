@@ -35,7 +35,7 @@
     show('正在準備離線檔案…','loading');
     try{
       await navigator.serviceWorker.register('./sw.js',{scope:'./',updateViaCache:'none'});
-      const registration=await navigator.serviceWorker.ready;
+      const registration=await Promise.race([navigator.serviceWorker.ready,new Promise((_,reject)=>setTimeout(()=>reject(new Error('離線安裝逾時')),30000))]);
       if(!registration.active)throw new Error('尚未啟動');
       const result=await check(registration.active);
       if(!result.ready)throw new Error('必要檔案不完整');
