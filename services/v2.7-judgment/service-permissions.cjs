@@ -16,16 +16,21 @@ const PERMISSIONS=Object.freeze({
   "metadata:write":Object.freeze(["synthetic-operator"]),
   "restore:simulate":Object.freeze(["synthetic-recovery-admin"])
 });
+function hashPayload(value){
+  if(value===undefined)throw Error("Signed service payload is required");
+  return crypto.createHash("sha256").update(JSON.stringify(value),"utf8").digest("hex");
+}
 function canonicalCommand(c){
  if(!c||c.version!==1||c.audience!==AUDIENCE||c.issuer!==ISSUER||
    typeof c.subject!=="string"||!/^svc:[a-z][a-z0-9-]{2,63}$/.test(c.subject)||
    !Object.hasOwn(PERMISSIONS,c.operation)||!PERMISSIONS[c.operation].includes(c.role)||
    typeof c.nonce!=="string"||!/^[a-zA-Z0-9_-]{16,100}$/.test(c.nonce)||
+   !/^[a-f0-9]{64}$/.test(c.payloadHash||"")||
    !Number.isSafeInteger(c.issuedAt)||!Number.isSafeInteger(c.expiresAt)||
    c.expiresAt<=c.issuedAt||c.expiresAt-c.issuedAt>30000)
    throw Error("Invalid synthetic service command envelope");
  return Buffer.from(JSON.stringify([c.version,c.audience,c.issuer,c.subject,c.role,
-   c.operation,c.nonce,c.issuedAt,c.expiresAt]),"utf8");
+   c.operation,c.nonce,c.payloadHash,c.issuedAt,c.expiresAt]),"utf8");
 }
 function makeServiceAuthorizer({publicKeySpki,nonceStore,clock=()=>Date.now()}={}){
  if(typeof nonceStore?.consumeOnce!=="function")
@@ -34,10 +39,11 @@ function makeServiceAuthorizer({publicKeySpki,nonceStore,clock=()=>Date.now()}={
  let key;
  try{key=crypto.createPublicKey(publicKeySpki)}catch{throw Error("Invalid signer public key")}
  if(key.asymmetricKeyType!=="ed25519")throw Error("Ed25519 signer required");
- return async function authorize(command,requestedOperation){
+ return async function authorize(command,requestedOperation,payload){
    if(!Object.hasOwn(PERMISSIONS,requestedOperation))throw Error("Operation not supported");
    const msg=canonicalCommand(command);
    if(command.operation!==requestedOperation)throw Error("Command lacks requested capability");
+   if(command.payloadHash!==hashPayload(payload))throw Error("Signed command payload mismatch");
    const now=clock();
    if(!Number.isSafeInteger(now)||command.issuedAt>now+2000||command.expiresAt<=now||
       command.issuedAt<now-32000)throw Error("Service command expired or from future");
@@ -56,4 +62,4 @@ function makeServiceAuthorizer({publicKeySpki,nonceStore,clock=()=>Date.now()}={
    });
  };
 }
-module.exports={AUDIENCE,ISSUER,PERMISSIONS,canonicalCommand,makeServiceAuthorizer};
+module.exports={AUDIENCE,ISSUER,PERMISSIONS,hashPayload,canonicalCommand,makeServiceAuthorizer};
