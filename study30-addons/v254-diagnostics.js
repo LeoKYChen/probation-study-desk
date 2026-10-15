@@ -43,8 +43,8 @@
       essay.push({day:row.day,id:String(row.id),subject:row.subject,score:row.score,
         issues:Array.isArray(row.issues)?row.issues.filter(x=>typeof x==='string'&&x.trim()).map(x=>x.trim()):[]});
     }
-    const due=(Array.isArray(reviewRows)?reviewRows:[]).filter(r=>r&&typeof r.id==='string'&&
-      typeof r.subject==='string'&&Number.isFinite(r.daysUntil)&&r.daysUntil<=0);
+    const due=[...new Map((Array.isArray(reviewRows)?reviewRows:[]).filter(r=>r&&typeof r.id==='string'&&
+      typeof r.subject==='string'&&Number.isFinite(r.daysUntil)&&r.daysUntil<=0).map(r=>[r.id,r])).values()];
     const latest=[...history.values()].map(h=>h[h.length-1]);
     const repeatWeak=[];
     for(const attempts of history.values()){
