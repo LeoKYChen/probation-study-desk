@@ -46,6 +46,7 @@ jobs:
           node --check development/v2.7/app.js
           node --check development/v2.7/interpretations-ui.js
           python3 development/v2.7/scripts/verify_interpretations.py
+          node --test services/v2.7-judgment/jdoc-model.test.cjs
           python3 - <<'PY'
           import json
           from pathlib import Path
