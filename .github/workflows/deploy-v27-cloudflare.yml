@@ -1,0 +1,70 @@
+name: v2.7 legal search - Cloudflare Pages
+
+on:
+  push:
+    branches:
+      - feature/v2.7-legal-search
+    paths:
+      - 'development/v2.7/**'
+      - '.github/workflows/deploy-v27-cloudflare.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: v27-cloudflare
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Deploy isolated v2.7 alpha
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check Cloudflare credentials
+        id: credentials
+        env:
+          CF_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          if [ -n "$CF_ACCOUNT" ] && [ -n "$CF_TOKEN" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice::Cloudflare deployment is paused. Add CLOUDFLARE_ACCOUNT_ID and CLOUDFLARE_API_TOKEN to repository Actions secrets."
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check required static entrypoint
+        if: steps.credentials.outputs.ready == 'true'
+        run: test -s development/v2.7/index.html
+
+      - name: Install Wrangler
+        if: steps.credentials.outputs.ready == 'true'
+        run: npm install --no-save wrangler@4
+
+      - name: Create isolated Pages project if necessary
+        if: steps.credentials.outputs.ready == 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if ! npx wrangler pages project list --json | node -e '
+            let s="";process.stdin.on("data",x=>s+=x);
+            process.stdin.on("end",()=> {
+              try {
+                const o=JSON.parse(s);
+                const arr=Array.isArray(o)?o:(o.result??[]);
+                process.exit(arr.some(x=>x.name==="probation-legal-ai-test")?0:1);
+              } catch(e) { process.exit(2) }
+            })'; then
+            npx wrangler pages project create probation-legal-ai-test --production-branch=feature/v2.7-legal-search
+          fi
+
+      - name: Deploy only v2.7 assets
+        if: steps.credentials.outputs.ready == 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx wrangler pages deploy development/v2.7 --project-name=probation-legal-ai-test --branch=feature/v2.7-legal-search
