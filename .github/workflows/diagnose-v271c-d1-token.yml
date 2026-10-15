@@ -1,0 +1,64 @@
+name: v2.7.1c - D1 token diagnostic (read-only)
+
+on:
+  push:
+    branches: [feature/v2.7-legal-search]
+    paths:
+      - '.github/workflows/diagnose-v271c-d1-token.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-token:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Validate dedicated D1 secret formatting without displaying it
+        env:
+          CF_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_D1_API_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [ -z "$CF_ACCOUNT" ] || [ -z "$CF_TOKEN" ]; then
+            echo "::error::Account ID or D1-specific token secret is missing"
+            exit 1
+          fi
+          CLEAN_TOKEN="$(printf '%s' "$CF_TOKEN" | tr -d '[:space:]')"
+          if [ "$CLEAN_TOKEN" != "$CF_TOKEN" ]; then
+            echo "::notice::Secret contains whitespace or line breaks (check copied token)"
+          fi
+          if [[ ! "$CLEAN_TOKEN" =~ ^[a-zA-Z0-9._-]+$ ]] || [ ${#CLEAN_TOKEN} -lt 20 ] || [ ${#CLEAN_TOKEN} -gt 256 ]; then
+            echo "::error::Secret format is not a raw Cloudflare API token (do not paste Bearer, curl, labels, or JSON)"
+            exit 1
+          fi
+          echo "Secret formatting looks plausible (content hidden)."
+          export CLOUDFLARE_DIAG_TOKEN="$CLEAN_TOKEN"
+          python3 - <<'PY'
+          import json, os, urllib.request, urllib.error
+          token = os.environ["CLOUDFLARE_DIAG_TOKEN"]
+          req = urllib.request.Request(
+            "https://api.cloudflare.com/client/v4/user/tokens/verify",
+            headers={"Authorization":f"Bearer {token}","Accept":"application/json"})
+          try:
+              with urllib.request.urlopen(req, timeout=20) as res:
+                  response = res.read(64000)
+                  http = res.status
+          except urllib.error.HTTPError as exc:
+              response = exc.read(64000)
+              http = exc.code
+          try:
+              obj=json.loads(response)
+          except Exception:
+              print(f"Cloudflare verification returned non-JSON HTTP {http}; no token values displayed")
+              raise SystemExit(1)
+          codes=[str(e.get("code","?")) for e in obj.get("errors",[]) if isinstance(e,dict)]
+          success=obj.get("success") is True
+          status=(obj.get("result") or {}).get("status")
+          print(f"Cloudflare token verification: success={success}; HTTP={http}; codes={','.join(codes) or 'none'}; status={status or 'unknown'}")
+          if not success or status not in (None,"active"):
+              print("STOP: no D1 databases created. Review token validity/activation or account permissions.")
+              raise SystemExit(1)
+          print("Token is valid. Next step: read-only D1 scope/database-count check.")
+          PY
