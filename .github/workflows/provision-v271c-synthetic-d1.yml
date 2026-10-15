@@ -1,0 +1,48 @@
+name: v2.7.1c - Synthetic remote D1 pilot (manual approval only)
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - feature/v2.7-legal-search
+    paths:
+      - 'services/v2.7-judgment/remote/START_REMOTE_SYNTHETIC.md'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: v271c-synthetic-d1-create
+  cancel-in-progress: false
+
+jobs:
+  provision:
+    if: github.ref == 'refs/heads/feature/v2.7-legal-search'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Validate explicit dedicated D1 authorization
+        env:
+          ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          D1_TOKEN: ${{ secrets.CLOUDFLARE_D1_API_TOKEN }}
+        run: |
+          if [ -z "$ACCOUNT" ] || [ -z "$D1_TOKEN" ]; then
+            echo "::error::Dedicated CLOUDFLARE_D1_API_TOKEN is not configured."
+            exit 1
+          fi
+          echo "D1 token is present. Existing Pages token is unchanged."
+      - name: Validate isolated D1 provisioning script
+        run: node --check services/v2.7-judgment/remote/provision-synthetic-d1.cjs
+      - name: Install Wrangler
+        run: npm install --no-save wrangler@4
+      - name: Provision only two uniquely named synthetic D1 databases
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_D1_API_TOKEN }}
+          V271C_CREATE_SYNTHETIC_D1_ONLY: YES_CREATE_2_SYNTHETIC_DB
+          JUDICIAL_API_LIVE_ENABLED: 'false'
+        run: node services/v2.7-judgment/remote/provision-synthetic-d1.cjs
