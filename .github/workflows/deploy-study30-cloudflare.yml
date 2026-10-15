@@ -1,9 +1,9 @@
-name: Deploy v2.5.4 Study30 Preview (isolated)
+name: Deploy Study30 v2.5.4 Offline Preview
 
 on:
   push:
     branches:
-      - feature/study30-v254-analytics
+      - feature/study30-v254-offline
     paths:
       - study30-site.zip
       - .github/workflows/deploy-study30-cloudflare.yml
@@ -78,10 +78,18 @@ jobs:
           node --check study30-addons/patch-v254.cjs
           node --check study30-addons/test-v254.cjs
           node study30-addons/test-v254.cjs deploy-dist
+          node --check study30-addons/install-offline.cjs
+          node --check study30-addons/offline-control.js
+          node --check study30-addons/service-worker.template.js
+          node study30-addons/install-offline.cjs deploy-dist
+          node --check deploy-dist/sw.js
+          node --check deploy-dist/offline-control.js
+          node --check study30-addons/test-offline.cjs
+          node study30-addons/test-offline.cjs deploy-dist
 
       - name: Deploy to existing Cloudflare Pages project
         uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy deploy-dist --project-name=probation-study30-test --branch=v254-preview
+          command: pages deploy deploy-dist --project-name=probation-study30-test --branch=v254-offline-preview
