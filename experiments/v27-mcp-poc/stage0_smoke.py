@@ -69,11 +69,14 @@ async def main(mode: str) -> dict:
             text_parts = [getattr(block, "text", "") for block in response.content]
             # MCP may return structuredContent or JSON embedded in text blocks.
             content = json.dumps(getattr(response, "structuredContent", None), ensure_ascii=False) + "\n" + "\n".join(text_parts)
-            report["official_query"] = "passed" if (not response.isError and "通譯" in content and "少年事件處理法" in content) else "failed"
+            # MCP SDK exposes the field as is_error on this runtime; some
+            # response formats use the wire alias isError. Handle both safely.
+            mcp_error = bool(getattr(response, "is_error", getattr(response, "isError", False)))
+            report["official_query"] = "passed" if (not mcp_error and "通譯" in content and "少年事件處理法" in content) else "failed"
             report["official_query_verified_terms"] = {
                 "law_name": "少年事件處理法" in content,
                 "article_keyword": "通譯" in content,
-                "mcp_error": bool(response.isError),
+                "mcp_error": mcp_error,
             }
             if report["official_query"] != "passed":
                 raise RuntimeError("法條查詢未回傳預期的官方條文要素；需人工核對查詢原文及失敗原因")
