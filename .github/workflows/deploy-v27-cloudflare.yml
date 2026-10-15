@@ -44,6 +44,8 @@ jobs:
         if: steps.credentials.outputs.ready == 'true'
         run: |
           node --check development/v2.7/app.js
+          node --check development/v2.7/interpretations-ui.js
+          python3 development/v2.7/scripts/verify_interpretations.py
           python3 - <<'PY'
           import json
           from pathlib import Path
