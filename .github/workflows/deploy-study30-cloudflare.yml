@@ -1,9 +1,9 @@
-name: Deploy v2.5.4 Study30 Preview (isolated)
+name: Deploy Study30 v2.5.4 Clean UI Preview
 
 on:
   push:
     branches:
-      - feature/study30-v254-analytics
+      - feature/study30-v254-clean-ui
     paths:
       - study30-site.zip
       - .github/workflows/deploy-study30-cloudflare.yml
@@ -46,7 +46,10 @@ jobs:
           cp study30-addons/daily-essay-workbench.js deploy-dist/daily-essay-workbench.js
           node study30-addons/patch-v254.cjs deploy-dist
           cp study30-addons/v254-diagnostics.js deploy-dist/v254-diagnostics.js
-          for required in index.html style.css app.js review-core.js review-simulator.js essay.js essay-rubric-core.js essay-selfcheck.js essay-review.js essay-analytics.js weakness-priority.js source-main-questions.js source-related-questions.js question-sources.js data-health.js backup-import.js daily-essay-workbench.js v254-diagnostics.js; do
+          node study30-addons/patch-clean-ui.cjs deploy-dist
+          cp study30-addons/clean-ui.js deploy-dist/clean-ui.js
+          cp study30-addons/clean-ui.css deploy-dist/clean-ui.css
+          for required in index.html style.css app.js review-core.js review-simulator.js essay.js essay-rubric-core.js essay-selfcheck.js essay-review.js essay-analytics.js weakness-priority.js source-main-questions.js source-related-questions.js question-sources.js data-health.js backup-import.js daily-essay-workbench.js v254-diagnostics.js clean-ui.js clean-ui.css; do
             test -s "deploy-dist/$required" || { echo "Missing: $required"; exit 1; }
           done
           for script in deploy-dist/*.js; do node --check "$script"; done
@@ -78,10 +81,13 @@ jobs:
           node --check study30-addons/patch-v254.cjs
           node --check study30-addons/test-v254.cjs
           node study30-addons/test-v254.cjs deploy-dist
+          node --check study30-addons/patch-clean-ui.cjs
+          node --check study30-addons/test-clean-ui.cjs
+          node study30-addons/test-clean-ui.cjs deploy-dist
 
       - name: Deploy to existing Cloudflare Pages project
         uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy deploy-dist --project-name=probation-study30-test --branch=v254-preview
+          command: pages deploy deploy-dist --project-name=probation-study30-test --branch=v254-clean-preview
