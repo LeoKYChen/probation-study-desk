@@ -42,7 +42,9 @@ jobs:
           cp study30-addons/data-health.js deploy-dist/data-health.js
           node study30-addons/patch-stage7.cjs deploy-dist
           cp study30-addons/backup-import.js deploy-dist/backup-import.js
-          for required in index.html style.css app.js review-core.js review-simulator.js essay.js essay-rubric-core.js essay-selfcheck.js essay-review.js essay-analytics.js weakness-priority.js source-main-questions.js source-related-questions.js question-sources.js data-health.js backup-import.js; do
+          node study30-addons/patch-stage8.cjs deploy-dist
+          cp study30-addons/daily-essay-workbench.js deploy-dist/daily-essay-workbench.js
+          for required in index.html style.css app.js review-core.js review-simulator.js essay.js essay-rubric-core.js essay-selfcheck.js essay-review.js essay-analytics.js weakness-priority.js source-main-questions.js source-related-questions.js question-sources.js data-health.js backup-import.js daily-essay-workbench.js; do
             test -s "deploy-dist/$required" || { echo "Missing: $required"; exit 1; }
           done
           for script in deploy-dist/*.js; do node --check "$script"; done
@@ -68,6 +70,9 @@ jobs:
           node --check study30-addons/test-stage7.cjs
           test "$(grep -c 'id="importBackupFile"' deploy-dist/index.html)" -eq 1
           node study30-addons/test-stage7.cjs deploy-dist
+          node --check study30-addons/patch-stage8.cjs
+          node --check study30-addons/test-stage8.cjs
+          node study30-addons/test-stage8.cjs deploy-dist
 
       - name: Deploy to existing Cloudflare Pages project
         uses: cloudflare/wrangler-action@v4
