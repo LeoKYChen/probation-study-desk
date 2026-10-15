@@ -1,0 +1,45 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
+const dir=process.argv[2]||'deploy-dist';
+const html=fs.readFileSync(path.join(dir,'index.html'),'utf8');
+const script=fs.readFileSync(path.join(dir,'daily-essay-workbench.js'),'utf8');
+let passed=0;function check(name,fn){fn();console.log('PASS',++passed,name);}
+check('daily practice record header',()=>assert.ok(html.includes('我的練習紀錄｜展開申論作答與草稿')));
+check('original only one essay editor',()=>assert.equal((html.match(/id="essayEditor"/g)||[]).length,1));
+check('original draft field 0 only once',()=>assert.equal((html.match(/id="essayField0"/g)||[]).length,1));
+check('original full-answer field only once',()=>assert.equal((html.match(/id="essayFullAnswer"/g)||[]).length,1));
+check('legacy step notes kept',()=>assert.equal((html.match(/id="answer"/g)||[]).length,1));
+check('legacy save status preserved',()=>assert.ok(html.includes('id="answerStatus"')));
+check('separate daily and free slots',()=>assert.ok(html.includes('id="dailyEssayWorkbenchSlot"')&&html.includes('id="freeEssayWorkbenchSlot"')));
+check('still allows free subject selection',()=>assert.ok(html.includes('id="essayPracticeSubject"')));
+check('still provides Markdown export',()=>assert.ok(html.includes('id="essayExport"')));
+check('still provides rubric scoring',()=>assert.ok(html.includes('id="rubricEditor"')));
+check('deferred frontend script installed',()=>assert.ok(html.includes('src="./daily-essay-workbench.js" defer')));
+check('no new data storage API',()=>assert.ok(!/(?:localStorage|sessionStorage)\s*[.\[]|fetch\s*\(/.test(script)));
+check('does not clone duplicate editor',()=>assert.ok(!script.includes('cloneNode')));
+check('no daily timer mutation',()=>assert.ok(!/(?:remaining|elapsed|questionId|rating)\s*=/.test(script)));
+const events=new Map();
+const mk=name=>({name,open:false,hidden:false,value:'',parentElement:null,handlers:{},children:[],
+ append(child){if(child.parentElement){child.parentElement.children=child.parentElement.children.filter(v=>v!==child);}this.children.push(child);child.parentElement=this;},
+ addEventListener(type,cb){(this.handlers[type]??=[]).push(cb);},dispatchEvent(evt){for(const cb of this.handlers[evt.type]||[])cb(evt);}});
+const nodes=Object.fromEntries(['essayEditor','dailyEssayWorkbenchSlot','freeEssayWorkbenchSlot','essayPracticeSubject','dailyEssayPanel','dailyEssayResume','essayWorkbenchLocationHint','dailyEssayLocationHint'].map(id=>[id,mk(id)]));
+nodes.essayPracticeSubject.value='today';nodes.freeEssayWorkbenchSlot.append(nodes.essayEditor);
+const win={addEventListener(type,callback){(events.get(type)||events.set(type,[]).get(type)).push(callback);},dispatchEvent(evt){for(const cb of events.get(evt.type)||[])cb(evt);}};
+const doc={readyState:'complete',getElementById:id=>nodes[id]||null};
+let changes=0;nodes.essayPracticeSubject.addEventListener('change',()=>{changes++;win.dispatchEvent({type:'study30:render'});});
+vm.runInNewContext(script,{window:win,document:doc,Event:function(type,opts){return {type,...opts}},console});
+check('today editor lives in daily section',()=>assert.equal(nodes.essayEditor.parentElement,nodes.dailyEssayWorkbenchSlot));
+check('today lower placeholder visible',()=>assert.equal(nodes.essayWorkbenchLocationHint.hidden,false));
+nodes.essayPracticeSubject.value='心理學';nodes.essayPracticeSubject.dispatchEvent({type:'change'});
+check('free subjects move SAME editor below',()=>assert.equal(nodes.essayEditor.parentElement,nodes.freeEssayWorkbenchSlot));
+check('free practice hides lower placeholder',()=>assert.equal(nodes.essayWorkbenchLocationHint.hidden,true));
+nodes.dailyEssayPanel.open=true;nodes.dailyEssayPanel.dispatchEvent({type:'toggle'});
+check('opening daily practice switches to today',()=>assert.equal(nodes.essayPracticeSubject.value,'today'));
+check('daily switch dispatches selection change',()=>assert.equal(changes,2));
+check('daily switch returns SAME editor above',()=>assert.equal(nodes.essayEditor.parentElement,nodes.dailyEssayWorkbenchSlot));
+nodes.essayPracticeSubject.value='刑法';nodes.essayPracticeSubject.dispatchEvent({type:'change'});
+check('changing to free practice closes daily detail',()=>assert.equal(nodes.dailyEssayPanel.open,false));
+nodes.dailyEssayResume.dispatchEvent({type:'click'});
+check('resume button returns to today',()=>assert.equal(nodes.essayPracticeSubject.value,'today'));
+check('resume button opens daily detail',()=>assert.equal(nodes.dailyEssayPanel.open,true));
+console.log('TOTAL',passed,'daily essay integration regressions: PASS');
