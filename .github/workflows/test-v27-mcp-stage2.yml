@@ -1,0 +1,54 @@
+name: v2.7 MCP stage 2 administrative interpretation audit
+
+on:
+  push:
+    branches:
+      - experiment/v27-mcp-stage2
+    paths:
+      - 'experiments/v27-mcp-poc/stage2_interpretations.py'
+      - 'experiments/v27-mcp-poc/STAGE2.md'
+      - '.github/workflows/test-v27-mcp-stage2.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  interpretations:
+    name: Audit 21 MOJ interpretation records and 5 search cases
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Configure isolated cache
+        run: echo "MCP_TAIWAN_LEGAL_DB_HOME=$RUNNER_TEMP/mcp-v27-stage2-cache" >> "$GITHUB_ENV"
+      - name: Download approved upstream commit
+        env:
+          UPSTREAM_SHA: ef677ad63c3206fc211a083fad8b1d9ef5015222
+        run: |
+          git init "$RUNNER_TEMP/mcp-taiwan-legal-db"
+          git -C "$RUNNER_TEMP/mcp-taiwan-legal-db" remote add origin https://github.com/lawchat-oss/mcp-taiwan-legal-db.git
+          git -C "$RUNNER_TEMP/mcp-taiwan-legal-db" fetch --depth 1 origin "$UPSTREAM_SHA"
+          git -C "$RUNNER_TEMP/mcp-taiwan-legal-db" checkout --detach FETCH_HEAD
+          test "$(git -C "$RUNNER_TEMP/mcp-taiwan-legal-db" rev-parse HEAD)" = "$UPSTREAM_SHA"
+      - name: Install MCP dependencies
+        run: python -m pip install "$RUNNER_TEMP/mcp-taiwan-legal-db"
+      - name: Verify test syntax and safety controls
+        run: |
+          python -m py_compile experiments/v27-mcp-poc/stage2_interpretations.py
+          python experiments/v27-mcp-poc/stage2_interpretations.py --mode selftest
+      - name: Audit 21 official documents and 5 lookup tests
+        run: timeout 900s python experiments/v27-mcp-poc/stage2_interpretations.py --mode live
+      - name: Save non-sensitive per-document verification report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v27-mcp-stage2-interpretation-audit
+          path: v27-mcp-stage2-report.json
+          if-no-files-found: warn
+          retention-days: 14
