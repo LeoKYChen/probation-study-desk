@@ -1,0 +1,53 @@
+name: v2.7 MCP stage 3b official judgment-page fallback
+
+on:
+  push:
+    branches:
+      - experiment/v27-mcp-stage3b
+    paths:
+      - 'experiments/v27-mcp-poc/stage3b_public_page_fallback.py'
+      - '.github/workflows/test-v27-mcp-stage3b-public-page.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  official-page:
+    name: Check two public court records via alternate official pages
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Isolate cache
+        run: echo "MCP_TAIWAN_LEGAL_DB_HOME=$RUNNER_TEMP/v27-mcp-stage3b-page" >> "$GITHUB_ENV"
+      - name: Fetch pinned upstream MCP
+        env:
+          UPSTREAM_SHA: ef677ad63c3206fc211a083fad8b1d9ef5015222
+        run: |
+          git init "$RUNNER_TEMP/legal-mcp"
+          git -C "$RUNNER_TEMP/legal-mcp" remote add origin https://github.com/lawchat-oss/mcp-taiwan-legal-db.git
+          git -C "$RUNNER_TEMP/legal-mcp" fetch --depth 1 origin "$UPSTREAM_SHA"
+          git -C "$RUNNER_TEMP/legal-mcp" checkout --detach FETCH_HEAD
+          test "$(git -C "$RUNNER_TEMP/legal-mcp" rev-parse HEAD)" = "$UPSTREAM_SHA"
+      - name: Install pinned MCP
+        run: python -m pip install "$RUNNER_TEMP/legal-mcp"
+      - name: Validate offline comparison safeguards
+        run: |
+          python -m py_compile experiments/v27-mcp-poc/stage3b_public_page_fallback.py
+          python experiments/v27-mcp-poc/stage3b_public_page_fallback.py --mode selftest
+      - name: Check alternative official public court pages
+        run: timeout 630s python experiments/v27-mcp-poc/stage3b_public_page_fallback.py --mode live
+      - name: Preserve metadata-only results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v27-stage3b-court-page-fallback
+          path: v27-mcp-stage3b-public-route.json
+          if-no-files-found: warn
+          retention-days: 14
