@@ -1,0 +1,58 @@
+name: v2.7 MCP stage 3d synthetic official-link safety
+
+on:
+  push:
+    branches:
+      - experiment/v27-mcp-stage3d
+    paths:
+      - 'experiments/v27-mcp-poc/stage3d-link-only.cjs'
+      - 'experiments/v27-mcp-poc/stage3d-link-only.test.cjs'
+      - '.github/workflows/test-v27-mcp-stage3d.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  safe-link:
+    name: No-fulltext official-link synthetic verification
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    env:
+      JUDICIAL_API_LIVE_ENABLED: 'false'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Verify syntax and absence of direct network calls
+        run: |
+          node --check experiments/v27-mcp-poc/stage3d-link-only.cjs
+          node --check experiments/v27-mcp-poc/stage3d-link-only.test.cjs
+          python3 - <<'PY'
+          from pathlib import Path
+          code=Path("experiments/v27-mcp-poc/stage3d-link-only.cjs").read_text()
+          for forbidden in ("fetch(", "http.get(", "axios(", "node:http", "node:https", "localStorage", "sessionStorage"):
+              assert forbidden not in code, "Stage3d module must remain network and storage free"
+          assert 'TEST_JID_SYNTHETIC_' in code
+          print("Stage3d has no direct network or storage primitives")
+          PY
+      - name: Run stage 3d link tests and prior synthetic private-court regression
+        run: |
+          node --test experiments/v27-mcp-poc/stage3d-link-only.test.cjs services/v2.7-judgment/*.test.cjs
+      - name: Ensure test remains outside the v2.7 public Pages assets
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          public=Path("development/v2.7")
+          assert public.is_dir()
+          restricted={".cjs",".mjs",".sql"}
+          violations=[str(p) for p in public.rglob("*") if p.is_file() and
+              (p.suffix in restricted or p.name in {".env",".dev.vars","judgments.json"})]
+          if violations: raise SystemExit("Unsafe Pages files: "+str(violations))
+          worker=Path("services/v2.7-judgment/private-worker.mjs").read_text()
+          assert "status:404" in worker and "Disabled:" in worker
+          print("No public court endpoint or private court module in Pages")
+          PY
