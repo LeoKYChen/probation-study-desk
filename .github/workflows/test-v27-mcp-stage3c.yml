@@ -1,0 +1,54 @@
+name: v2.7 MCP stage 3c synthetic judicial delta safety
+
+on:
+  push:
+    branches:
+      - experiment/v27-mcp-stage3c
+    paths:
+      - 'experiments/v27-mcp-poc/stage3c-synthetic-delta.cjs'
+      - 'experiments/v27-mcp-poc/stage3c-synthetic-delta.test.cjs'
+      - '.github/workflows/test-v27-mcp-stage3c.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  safety:
+    name: Mock JList/JDoc overwrite removal recovery safety
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    env:
+      JUDICIAL_API_LIVE_ENABLED: 'false'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Check JavaScript syntax for synthetic test and existing private service
+        run: |
+          node --check experiments/v27-mcp-poc/stage3c-synthetic-delta.cjs
+          node --check experiments/v27-mcp-poc/stage3c-synthetic-delta.test.cjs
+          for p in services/v2.7-judgment/*.cjs services/v2.7-judgment/*.mjs; do node --check "$p"; done
+      - name: Run only synthetic mutation and existing court safety regression tests
+        run: |
+          node --test experiments/v27-mcp-poc/stage3c-synthetic-delta.test.cjs services/v2.7-judgment/*.test.cjs
+      - name: Verify no private court source deployed into Pages and HTTP remains disabled
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          public=Path("development/v2.7")
+          assert public.is_dir()
+          bad=[p for p in public.rglob("*") if p.is_file() and
+               (p.suffix in {".cjs",".mjs",".sql"} or p.name in {".env",".dev.vars","judgments.json"})]
+          if bad:
+              raise SystemExit("Unexpected private files in Pages assets: "+str(bad))
+          worker=Path("services/v2.7-judgment/private-worker.mjs").read_text()
+          assert 'status:404' in worker
+          assert 'Disabled:' in worker
+          pilot=Path("experiments/v27-mcp-poc/stage3c-synthetic-delta.cjs").read_text()
+          assert "fixtureJid" in pilot and "public_search_enabled:false" in pilot
+          print("No public judgment endpoint and no private files in Cloudflare Pages")
+          PY
