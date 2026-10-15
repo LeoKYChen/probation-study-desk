@@ -38,6 +38,17 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_D1_API_TOKEN }}
         run: |
           set -euo pipefail
+          # Cloudflare tokens have no whitespace. Remove accidental copy/paste
+          # CR/LF and surrounding spaces in runner memory; do not display value.
+          CLEAN_TOKEN="$(printf '%s' "$CLOUDFLARE_API_TOKEN" | tr -d '\\r\\n' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')"
+          if [ -z "$CLEAN_TOKEN" ] || [[ "$CLEAN_TOKEN" =~ [[:space:]] ]]; then
+            echo "::error::D1 token contains invalid whitespace. Please re-save its value in GitHub Secrets."
+            exit 1
+          fi
+          if [ "$CLEAN_TOKEN" != "$CLOUDFLARE_API_TOKEN" ]; then
+            echo "::notice::Removed whitespace from D1 token in runner memory only. Consider re-saving GitHub Secret without whitespace."
+          fi
+          export CLOUDFLARE_API_TOKEN="$CLEAN_TOKEN"
           # Names and database identifiers are not written to workflow logs.
           npx wrangler d1 list --json >/tmp/v271c-d1-list.json
           node - <<'JS'
