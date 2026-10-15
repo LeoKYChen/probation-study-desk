@@ -24,7 +24,7 @@ check('all entries have question body',()=>a.ok(Q.all.every(q=>q.body?.length>0)
 check('every original ID retained',()=>a.ok(win.QUESTION_BANK.every(q=>Q.all.find(z=>z.id===q.id))));
 check('every related ID retained',()=>a.ok(win.RELATED_QUESTION_BANK.every(q=>Q.all.find(z=>z.id===q.id))));
 const app=fs.readFileSync(path.join(root,'app.js'),'utf8');
-check('app binds to merged bank',()=>a.ok(app.includes('window.Study30QuestionSources.all')));
+check('app binds to merged bank',()=>a.ok(app.includes('window.Study30QuestionSources?.all')));
 check('app no longer restricts pool to probation only',()=>a.ok(app.includes('const pool = target => BANK.filter(q=>candidateSubject(q,target));')));
 check('old storage key retained',()=>a.ok(app.includes("const KEY = 'probation-study30-v251:v1'")));
 check('data-health storage key matches',()=>a.equal(D.key,'probation-study30-v251:v1'));
