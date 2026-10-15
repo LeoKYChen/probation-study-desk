@@ -106,3 +106,5 @@ jobs:
           print(f"Collision with reserved synthetic names: {bool(collisions)}")
           print("No resources were created, altered or deleted.")
           PY
+
+# Recheck after owner added D1 Read and updated GitHub D1 secret, 2026-10-15.
