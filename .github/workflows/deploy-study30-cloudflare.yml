@@ -30,7 +30,9 @@ jobs:
           cp study30-addons/essay-review.js deploy-dist/essay-review.js
           node study30-addons/patch-stage4.cjs deploy-dist
           cp study30-addons/essay-analytics.js deploy-dist/essay-analytics.js
-          for required in index.html style.css app.js review-core.js review-simulator.js essay.js essay-rubric-core.js essay-selfcheck.js essay-review.js essay-analytics.js; do
+          node study30-addons/patch-stage5.cjs deploy-dist
+          cp study30-addons/weakness-priority.js deploy-dist/weakness-priority.js
+          for required in index.html style.css app.js review-core.js review-simulator.js essay.js essay-rubric-core.js essay-selfcheck.js essay-review.js essay-analytics.js weakness-priority.js; do
             test -s "deploy-dist/$required" || { echo "Missing: $required"; exit 1; }
           done
           for script in deploy-dist/*.js; do node --check "$script"; done
@@ -39,6 +41,10 @@ jobs:
           node --check study30-addons/test-stage4.cjs
           test "$(grep -c 'id="essayAnalyticsSummary"' deploy-dist/index.html)" -eq 1
           node study30-addons/test-stage4.cjs deploy-dist/essay-rubric-core.js
+          node --check study30-addons/patch-stage5.cjs
+          node --check study30-addons/test-stage5.cjs
+          test "$(grep -c 'id=\"weaknessPriorityList\"' deploy-dist/index.html)" -eq 1
+          node study30-addons/test-stage5.cjs
 
       - name: Deploy to existing Cloudflare Pages project
         uses: cloudflare/wrangler-action@v4
