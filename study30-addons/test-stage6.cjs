@@ -23,6 +23,14 @@ check('related juvenile law now included',()=>a.ok(Q.all.some(q=>q.sourceCategor
 check('all entries have question body',()=>a.ok(Q.all.every(q=>q.body?.length>0)));
 check('every original ID retained',()=>a.ok(win.QUESTION_BANK.every(q=>Q.all.find(z=>z.id===q.id))));
 check('every related ID retained',()=>a.ok(win.RELATED_QUESTION_BANK.every(q=>Q.all.find(z=>z.id===q.id))));
+
+const studyTargets=['心理學','諮商與輔導','犯罪學','少年事件處理法','刑法','刑事訴訟法','保安處分執行法'];
+const clean=s=>String(s||'').replace(/[（(].*?[）)]/g,'').trim();
+const isCandidate=(q,t)=>[clean(q.subject),clean(q.subjectGroup)].some(x=>x===t||(x==='刑事訴訟法與保安處分執行法'&&['刑事訴訟法','保安處分執行法'].includes(t)));
+check('every one of 426 maps to at least one subject',()=>a.ok(Q.all.every(q=>studyTargets.some(t=>isCandidate(q,t)))));
+check('seven subjects each have matching questions',()=>a.ok(studyTargets.every(t=>Q.all.some(q=>isCandidate(q,t)))));
+check('all 52 related questions are selectable',()=>a.equal(Q.all.filter(q=>q.sourceCategory==='相關類科考古題'&&studyTargets.some(t=>isCandidate(q,t))).length,52));
+
 const app=fs.readFileSync(path.join(root,'app.js'),'utf8');
 check('app binds to merged bank',()=>a.ok(app.includes('window.Study30QuestionSources?.all')));
 check('app no longer restricts pool to probation only',()=>a.ok(app.includes('const pool = target => BANK.filter(q=>candidateSubject(q,target));')));
