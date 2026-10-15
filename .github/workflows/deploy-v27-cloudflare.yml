@@ -40,6 +40,24 @@ jobs:
         if: steps.credentials.outputs.ready == 'true'
         run: test -s development/v2.7/index.html
 
+      - name: Validate frontend and dataset before publishing
+        if: steps.credentials.outputs.ready == 'true'
+        run: |
+          node --check development/v2.7/app.js
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path("development/v2.7/laws.json")
+          if p.exists():
+              j=json.loads(p.read_text(encoding="utf-8"))
+              a=j.get("articles",[])
+              assert len(a)>=80 and j.get("schemaVersion")==1
+              assert len({(x["id"],x["articleKey"]) for x in a})==len(a)
+              print(f"Verified static dataset: {len(a)} articles")
+          else:
+              print("No complete dataset yet. Site will show labeled sample fallback.")
+          PY
+
       - name: Install Wrangler
         if: steps.credentials.outputs.ready == 'true'
         run: npm install --no-save wrangler@4
