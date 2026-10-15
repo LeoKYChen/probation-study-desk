@@ -5,7 +5,7 @@ on:
     branches:
       - experiment/v27-mcp-stage1
     paths:
-      - 'experiments/v27-mcp-poc/**'
+      - 'experiments/v27-mcp-poc/stage1_accuracy.py'
       - '.github/workflows/test-v27-mcp-stage1.yml'
   workflow_dispatch:
 
