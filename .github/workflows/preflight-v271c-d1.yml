@@ -67,3 +67,5 @@ jobs:
 # 2026-10-15: read-only recheck after dedicated D1 token was configured by repository owner.
 
 # Recheck dedicated D1 token following owner update (2026-10-15).
+
+# Token re-issued and saved by owner; read-only recheck on 2026-10-15.
