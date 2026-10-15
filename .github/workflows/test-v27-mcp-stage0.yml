@@ -1,0 +1,54 @@
+name: v2.7 MCP stage 0 isolated smoke
+
+on:
+  push:
+    branches:
+      - experiment/v27-mcp-stage0
+    paths:
+      - 'experiments/v27-mcp-poc/**'
+      - '.github/workflows/test-v27-mcp-stage0.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    name: Inspect MCP tools and one official statute
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      MCP_TAIWAN_LEGAL_DB_HOME: ${{ runner.temp }}/mcp-v27-stage0-cache
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fetch audited upstream revision (no auto-updates)
+        env:
+          UPSTREAM_SHA: ef677ad63c3206fc211a083fad8b1d9ef5015222
+        run: |
+          git init "$RUNNER_TEMP/mcp-taiwan-legal-db"
+          git -C "$RUNNER_TEMP/mcp-taiwan-legal-db" remote add origin https://github.com/lawchat-oss/mcp-taiwan-legal-db.git
+          git -C "$RUNNER_TEMP/mcp-taiwan-legal-db" fetch --depth 1 origin "$UPSTREAM_SHA"
+          git -C "$RUNNER_TEMP/mcp-taiwan-legal-db" checkout --detach FETCH_HEAD
+          test "$(git -C "$RUNNER_TEMP/mcp-taiwan-legal-db" rev-parse HEAD)" = "$UPSTREAM_SHA"
+      - name: Install MCP in GitHub-hosted temporary Python environment
+        run: |
+          python -m pip install "$RUNNER_TEMP/mcp-taiwan-legal-db"
+          python -m pip show mcp-taiwan-legal-db
+      - name: Verify Python syntax
+        run: python -m py_compile experiments/v27-mcp-poc/stage0_smoke.py
+      - name: Verify registration and tool list
+        run: timeout 90s python experiments/v27-mcp-poc/stage0_smoke.py --mode inspect
+      - name: Query one official statute using stdio MCP
+        run: timeout 180s python experiments/v27-mcp-poc/stage0_smoke.py --mode live
+      - name: Save non-sensitive stage 0 report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v27-mcp-stage0-results
+          path: mcp-stage0-report.json
+          if-no-files-found: warn
+          retention-days: 7
