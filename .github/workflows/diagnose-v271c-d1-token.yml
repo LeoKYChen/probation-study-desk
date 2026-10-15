@@ -62,3 +62,47 @@ jobs:
               raise SystemExit(1)
           print("Token is valid. Next step: read-only D1 scope/database-count check.")
           PY
+
+      - name: Check D1 access on the exact configured account (read-only)
+        env:
+          CF_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_D1_API_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json,os,urllib.request,urllib.error,re
+          token="".join(os.environ["CF_TOKEN"].split())
+          account=os.environ["CF_ACCOUNT"].strip()
+          if not re.fullmatch(r"[A-Za-z0-9]{32}",account):
+              print("Account ID has unexpected format; this check is read-only.")
+              raise SystemExit(1)
+          req=urllib.request.Request(
+              f"https://api.cloudflare.com/client/v4/accounts/{account}/d1/database?per_page=100",
+              headers={"Authorization":f"Bearer {token}","Accept":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=25) as response:
+                  body=response.read(100000)
+                  http=response.status
+          except urllib.error.HTTPError as err:
+              body=err.read(100000)
+              http=err.code
+          try:
+              data=json.loads(body)
+          except Exception:
+              print(f"D1 direct access: HTTP {http}, non-JSON response")
+              raise SystemExit(1)
+          if data.get("success") is not True:
+              codes=[str(e.get("code","?")) for e in data.get("errors",[]) if isinstance(e,dict)]
+              print(f"D1 direct access denied: HTTP {http}; Cloudflare error codes: {','.join(codes)}")
+              print("Token itself is valid. Check D1 permission and specific-account resource selection.")
+              raise SystemExit(1)
+          databases=data.get("result")
+          if not isinstance(databases,list):raise SystemExit("Unexpected D1 response structure")
+          count=(data.get("result_info") or {}).get("total_count")
+          count=int(count) if count is not None else len(databases)
+          planned={"probation-v271c-metadata-synth-20261015","probation-v271c-ledger-synth-20261015"}
+          collisions=[db.get("name") for db in databases if db.get("name") in planned]
+          print("Read-only D1 access verified on configured Cloudflare account.")
+          print(f"Total databases: {count}; free-account headroom for two: {count<=8}")
+          print(f"Collision with reserved synthetic names: {bool(collisions)}")
+          print("No resources were created, altered or deleted.")
+          PY
