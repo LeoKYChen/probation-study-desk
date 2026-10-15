@@ -7,6 +7,7 @@ on:
     paths:
       - study30-site.zip
       - .github/workflows/deploy-study30-cloudflare.yml
+      - study30-addons/**
   workflow_dispatch:
 
 permissions:
@@ -25,7 +26,9 @@ jobs:
           set -euo pipefail
           mkdir -p deploy-dist
           unzip -q study30-site.zip -d deploy-dist
-          for required in index.html style.css app.js review-core.js review-simulator.js essay.js essay-rubric-core.js essay-selfcheck.js; do
+          node study30-addons/patch-stage3.cjs deploy-dist
+          cp study30-addons/essay-review.js deploy-dist/essay-review.js
+          for required in index.html style.css app.js review-core.js review-simulator.js essay.js essay-rubric-core.js essay-selfcheck.js essay-review.js; do
             test -s "deploy-dist/$required" || { echo "Missing: $required"; exit 1; }
           done
           for script in deploy-dist/*.js; do node --check "$script"; done
