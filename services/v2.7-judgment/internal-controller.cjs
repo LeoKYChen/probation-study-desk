@@ -13,13 +13,13 @@ function makeInternalController({
     throw Error("Missing signed authority or guarded storage dependencies");
   return Object.freeze({
     async readMetadata(command,jid){
-      const principal=await authorize(command,"metadata:read");
+      const principal=await authorize(command,"metadata:read",{jid});
       if(!principal?.authenticated||principal.publicReadAllowed!==false)
         throw Error("Unsafe service identity");
       return guardedService.getPrivateMetadata(jid);
     },
     async writeSynthetic(command,record){
-      const principal=await authorize(command,"metadata:write");
+      const principal=await authorize(command,"metadata:write",record);
       if(!principal?.authenticated||principal.liveJudicialApiAllowed!==false)
         throw Error("Unsafe service identity");
       if(!String(record?.jid??"").startsWith("TEST_JID_SYNTHETIC_"))
@@ -27,7 +27,7 @@ function makeInternalController({
       return guardedService.putPrivate(record);
     },
     async simulateRestore(command){
-      const principal=await authorize(command,"restore:simulate");
+      const principal=await authorize(command,"restore:simulate",{action:"synthetic-restore"});
       if(!principal?.authenticated||principal.publicReadAllowed!==false)
         throw Error("Unsafe recovery authority");
       return reconcile();
