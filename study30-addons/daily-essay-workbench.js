@@ -5,14 +5,13 @@
   const $ = id => document.getElementById(id);
   function relocate() {
     const editor=$('essayEditor'), today=$('dailyEssayWorkbenchSlot'), free=$('freeEssayWorkbenchSlot');
-    const picker=$('essayPracticeSubject'), panel=$('dailyEssayPanel');
-    if(!editor||!today||!free||!picker||!panel)return;
+    const picker=$('essayPracticeSubject');
+    if(!editor||!today||!free||!picker)return;
     const onToday=picker.value==='today';
     if(onToday){
       if(editor.parentElement!==today)today.append(editor);
     }else{
       if(editor.parentElement!==free)free.append(editor);
-      if(panel.open)panel.open=false;
     }
     $('essayWorkbenchLocationHint').hidden=!onToday;
     $('dailyEssayLocationHint').hidden=onToday;
@@ -26,9 +25,12 @@
     relocate();
   }
   function start(){
-    const panel=$('dailyEssayPanel');if(!panel)return;
-    panel.addEventListener('toggle',()=>{if(panel.open)switchToToday();});
-    $('dailyEssayResume').addEventListener('click',()=>{switchToToday();panel.open=true;});
+    if(!$('dailyEssayPanel'))return;
+    $('dailyEssayResume').addEventListener('click',()=>{
+      switchToToday();
+      $('essayEditor').open=true;
+      $('essayEditor').scrollIntoView({block:'start',behavior:'smooth'});
+    });
     $('essayPracticeSubject').addEventListener('change',relocate);
     window.addEventListener('study30:render',relocate);
     relocate();
