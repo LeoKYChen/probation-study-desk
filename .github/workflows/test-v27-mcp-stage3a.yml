@@ -1,0 +1,53 @@
+name: v2.7 MCP stage 3a public legal-source probe
+
+on:
+  push:
+    branches:
+      - experiment/v27-mcp-stage3
+    paths:
+      - 'experiments/v27-mcp-poc/stage3_probe.py'
+      - '.github/workflows/test-v27-mcp-stage3a.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    name: Probe public judgments, constitutional and legislative sources
+    runs-on: ubuntu-latest
+    timeout-minutes: 16
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Configure isolated cache
+        run: echo "MCP_TAIWAN_LEGAL_DB_HOME=$RUNNER_TEMP/mcp-v27-stage3-cache" >> "$GITHUB_ENV"
+      - name: Download previously approved upstream commit
+        env:
+          UPSTREAM_SHA: ef677ad63c3206fc211a083fad8b1d9ef5015222
+        run: |
+          git init "$RUNNER_TEMP/mcp-taiwan-legal-db"
+          git -C "$RUNNER_TEMP/mcp-taiwan-legal-db" remote add origin https://github.com/lawchat-oss/mcp-taiwan-legal-db.git
+          git -C "$RUNNER_TEMP/mcp-taiwan-legal-db" fetch --depth 1 origin "$UPSTREAM_SHA"
+          git -C "$RUNNER_TEMP/mcp-taiwan-legal-db" checkout --detach FETCH_HEAD
+          test "$(git -C "$RUNNER_TEMP/mcp-taiwan-legal-db" rev-parse HEAD)" = "$UPSTREAM_SHA"
+      - name: Install upstream MCP
+        run: python -m pip install "$RUNNER_TEMP/mcp-taiwan-legal-db"
+      - name: Run offline safety and syntax tests
+        run: |
+          python -m py_compile experiments/v27-mcp-poc/stage3_probe.py
+          python experiments/v27-mcp-poc/stage3_probe.py --mode selftest
+      - name: Probe 9 public legal-source cases
+        run: timeout 780s python experiments/v27-mcp-poc/stage3_probe.py --mode live
+      - name: Save metadata-only evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v27-mcp-stage3a-legal-source-probe
+          path: v27-mcp-stage3a-probe.json
+          if-no-files-found: warn
+          retention-days: 14
