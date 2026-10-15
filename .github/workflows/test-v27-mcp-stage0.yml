@@ -16,8 +16,6 @@ jobs:
     name: Inspect MCP tools and one official statute
     runs-on: ubuntu-latest
     timeout-minutes: 12
-    env:
-      MCP_TAIWAN_LEGAL_DB_HOME: ${{ runner.temp }}/mcp-v27-stage0-cache
     steps:
       - uses: actions/checkout@v4
         with:
@@ -25,6 +23,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Configure isolated cache directory
+        run: echo "MCP_TAIWAN_LEGAL_DB_HOME=$RUNNER_TEMP/mcp-v27-stage0-cache" >> "$GITHUB_ENV"
       - name: Fetch audited upstream revision (no auto-updates)
         env:
           UPSTREAM_SHA: ef677ad63c3206fc211a083fad8b1d9ef5015222
