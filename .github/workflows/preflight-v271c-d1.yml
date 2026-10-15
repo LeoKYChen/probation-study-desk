@@ -1,0 +1,54 @@
+name: v2.7.1c - D1 remote read-only permission check
+
+on:
+  push:
+    branches: [feature/v2.7-legal-search]
+    paths:
+      - '.github/workflows/preflight-v271c-d1.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  permissions:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check available Cloudflare secrets (without revealing them)
+        id: secrets
+        env:
+          CF_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          if [ -z "$CF_ACCOUNT" ] || [ -z "$CF_TOKEN" ]; then
+            echo "::error::Cloudflare account ID or token is missing"
+            exit 1
+          fi
+          echo "Secrets are set; never display their values."
+
+      - name: Install Wrangler
+        run: npm install --no-save wrangler@4
+
+      - name: Check D1 read permission, do not provision anything
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          set -euo pipefail
+          # Names and database identifiers are not written to workflow logs.
+          npx wrangler d1 list --json >/tmp/v271c-d1-list.json
+          node - <<'JS'
+          const fs=require('node:fs');
+          const v=JSON.parse(fs.readFileSync('/tmp/v271c-d1-list.json','utf8'));
+          const a=Array.isArray(v)?v:(v.result??[]);
+          if(!Array.isArray(a))throw Error('D1 API did not return a list');
+          const names=['probation-v271c-metadata-synthetic','probation-v271c-revocations-synthetic'];
+          const hits=names.map(n=>a.some(x=>x.name===n));
+          console.log('Cloudflare D1 listing permission: OK');
+          console.log('Current D1 database count: '+a.length);
+          console.log('Dedicated synthetic databases exist: '+hits.map(Boolean).join(', '));
+          console.log('READ-ONLY CHECK; ZERO resources created or changed');
+          JS
