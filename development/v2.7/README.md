@@ -18,3 +18,9 @@
 
 ## 測試
 開啟 `development/v2.7/index.html`；在國考及研究模式搜尋 `第3-1條`、`保護管束`；確認結果和官方法條、來源連結，切換模式不改變法源資料。此為離線靜態介面，尚無正式資料同步或大模型。
+
+## Cloudflare Pages 自動部署（2026-10-15）
+- GitHub Actions：`.github/workflows/deploy-v27-cloudflare.yml`，只監看 `feature/v2.7-legal-search` 分支，且只部署 `development/v2.7/`。
+- 需要在儲存庫 Actions secrets 中設定 `CLOUDFLARE_ACCOUNT_ID` 與 `CLOUDFLARE_API_TOKEN`（不寫入檔案）。
+- 目標新建專案：`probation-legal-ai-test`。若無憑證則跳過部署，應查看 Actions 執行紀錄。
+- main 以及舊有的 `probation-study30-test` 均不需變更。
