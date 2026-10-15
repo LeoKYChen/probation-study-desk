@@ -1,0 +1,35 @@
+name: v2.7.1b - Judicial API contract safety tests
+
+on:
+  push:
+    branches:
+      - feature/v2.7-legal-search
+    paths:
+      - 'services/v2.7-judgment/**'
+      - '.github/workflows/test-v271b-judgment.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: v271b-judgment-tests
+  cancel-in-progress: false
+
+jobs:
+  mock-contract:
+    name: Offline-only contract and removal tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Verify all judgment scripts have valid syntax
+        run: |
+          for p in services/v2.7-judgment/*.cjs; do node --check "$p"; done
+      - name: Execute synthetic tests, no external calls
+        env:
+          JUDICIAL_API_LIVE_ENABLED: 'false'
+        run: node --test services/v2.7-judgment/*.test.cjs
