@@ -45,6 +45,10 @@ jobs:
           node --check study30-addons/test-stage5.cjs
           test "$(grep -c 'id=\"weaknessPriorityList\"' deploy-dist/index.html)" -eq 1
           node study30-addons/test-stage5.cjs
+          node --check study30-addons/test-stage3-regression.cjs
+          node --check study30-addons/test-integrity.cjs
+          node study30-addons/test-stage3-regression.cjs deploy-dist
+          node study30-addons/test-integrity.cjs deploy-dist
 
       - name: Deploy to existing Cloudflare Pages project
         uses: cloudflare/wrangler-action@v4
