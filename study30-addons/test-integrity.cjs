@@ -7,8 +7,8 @@ const app=fs.readFileSync(path.join(root,'app.js'),'utf8');
 const scripts=[...html.matchAll(/<script[^>]*\bsrc=["']([^"']+)["'][^>]*>/gi)].map(x=>x[1]);
 const local=scripts.filter(x=>x.startsWith('./')).map(x=>x.slice(2));
 let n=0;function check(name,fn){fn();console.log('PASS',++n,name)}
-check('external question bank unchanged',()=>a.ok(scripts.includes('https://leokychen.github.io/probation-study-desk/v2.5/questions.js')));
-check('no remote JS added beyond source bank',()=>a.deepEqual(scripts.filter(x=>/^https?:/.test(x)),['https://leokychen.github.io/probation-study-desk/v2.5/questions.js']));
+check('bundled primary and related source present',()=>a.ok(local.includes('source-main-questions.js')&&local.includes('source-related-questions.js')));
+check('no remote JavaScript dependencies',()=>a.deepEqual(scripts.filter(x=>/^https?:/.test(x)),[]));
 check('all local scripts exist',()=>{for(const p of local)a.ok(fs.existsSync(path.join(root,p)),'missing '+p)});
 check('all local scripts non-empty',()=>{for(const p of local)a.ok(fs.statSync(path.join(root,p)).size>100,'empty '+p)});
 check('no duplicate script tags',()=>a.equal(new Set(local).size,local.length));
