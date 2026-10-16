@@ -1,0 +1,60 @@
+name: Staresto pinned full-resource inventory
+on:
+  push:
+    branches:
+      - data/staresto-full-catalog-20261016
+    paths:
+      - staresto-intake/collect.py
+      - staresto-intake/README.md
+      - .github/workflows/staresto-intake-catalog.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+          persist-credentials: true
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Inventory all source files and import permitted educational text
+        shell: bash
+        run: |
+          python -m py_compile staresto-intake/collect.py
+          python staresto-intake/collect.py
+      - name: Verify manifest and snapshot scope
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          root=pathlib.Path('staresto-intake/library')
+          m=json.loads((root/'manifest.json').read_text())
+          assert len(m['repos'])==10
+          assert len(m['files'])==2089, len(m['files'])
+          counts={}
+          for row in m['files']:
+            counts[row['coverage']]=counts.get(row['coverage'],0)+1
+            if 'local' in row:
+              assert (root/row['local']).exists(), row['local']
+          assert counts['full-json']>25
+          assert counts['safe-visible-text']>1000
+          assert counts['indexed-only']>100
+          print('PASSED complete 2089-file index:', counts)
+          PY
+      - name: Commit immutable catalog only to data branch
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- staresto-intake/library
+          if ! git diff --cached --quiet; then
+            git commit -m "data(staresto): snapshot all ten upstream projects' educational resources"
+            git push origin HEAD:refs/heads/data/staresto-full-catalog-20261016
+          fi
