@@ -22,10 +22,10 @@ def run():
  assert all(row["status"]!="暫緩納入" or row["blocks"] for row in rows)
  assert any(row["status"]=="暫緩納入" for row in rows)
  assert len(old["rows"])==668
- assert set(old["count"]).issubset({"EXACT","AMBIGUOUS","UNMATCHED"})
+ assert set(old["count"]).issubset({"EXACT","VERIFIED_SOURCE","VERIFIED_YEAR_OPTIONS","AMBIGUOUS","UNMATCHED"})
  assert sum(old["count"].values())==668
  assert len({q["legacyId"] for q in old["rows"]})==668
- assert all(q["newId"] is None if q["matchType"]!="EXACT" else isinstance(q["newId"],str) for q in old["rows"])
+ assert all((q["newId"] is None) if q["matchType"] in ("AMBIGUOUS","UNMATCHED") else isinstance(q["newId"],str) for q in old["rows"])
  assert dups["totalGroups"]==len(dups["groups"])
  # Source training & catalog files remain the exact originals on branch.
  assert (ROOT/"common-subjects/daily/engine.js").is_file()
