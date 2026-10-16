@@ -1,0 +1,58 @@
+name: Staresto v0.5 full source normalization and catalog QA
+on:
+  push:
+    branches:
+      - feature/staresto-v05-standardize-browser
+    paths:
+      - staresto-intake/normalize.py
+      - staresto-intake/test_normalize.py
+      - staresto-intake/browser/index.html
+      - staresto-intake/browser/app.js
+      - staresto-intake/browser/style.css
+      - staresto-intake/browser/test_browser.cjs
+      - .github/workflows/staresto-v05-browser.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+          persist-credentials: true
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Verify normalization and frontend syntax
+        shell: bash
+        run: |
+          python -m py_compile staresto-intake/normalize.py staresto-intake/test_normalize.py
+          node --check staresto-intake/browser/app.js
+          node --check staresto-intake/browser/test_browser.cjs
+      - name: Generate standardized searchable source indexes
+        shell: bash
+        run: |
+          python staresto-intake/normalize.py
+      - name: Validate provenance, answer keys and browser behavior
+        shell: bash
+        run: |
+          python staresto-intake/test_normalize.py
+          node staresto-intake/browser/test_browser.cjs
+      - name: Save verified results in preview branch only
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- staresto-intake/browser/data staresto-intake/browser/REPORT.md
+          if ! git diff --cached --quiet; then
+            git commit -m "data(staresto v0.5): standardize and validate source catalog"
+            git push origin HEAD:refs/heads/feature/staresto-v05-standardize-browser
+          fi
