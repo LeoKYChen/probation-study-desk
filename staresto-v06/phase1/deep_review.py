@@ -69,7 +69,7 @@ def main():
    missing.append(str(item.get("id")))
    continue
   links["linkedToOriginalPassage"]+=1
-  if any(isinstance(b,dict) and isinstance(b.get("text"),str) and len(b["text"])>50 for b in p.get("blocks",[])):
+  if any(isinstance(b,dict) and ((isinstance(b.get("text"),str) and len(b["text"])>50) or any(isinstance(part,dict) and len(str(part.get("x","")))>50 for part in b.get("parts",[]))) for b in p.get("blocks",[])):
    links["hasOriginalTextBlock"]+=1
   else:links["passageNeedsManualContent"]+=1
   by_session[str(p.get("examLabel") or p.get("sessionName") or "unlabeled")]+=1
