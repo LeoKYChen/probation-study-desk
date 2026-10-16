@@ -1,0 +1,38 @@
+/* Regression criteria matching approved PowerPoint revision. No user records accessed. */
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const dir=process.argv[2]||'deploy-dist',read=p=>fs.readFileSync(path.join(dir,p),'utf8');
+const h=read('index.html'),app=read('app.js'),src=read('question-sources.js'),sim=read('review-simulator.js'),ui=read('content-ui.js'),css=read('content-cleanup.css');
+let count=0;
+function check(title,fn){fn();console.log('PASS',++count,title);}
+check('slide2 no unrelated reminders',()=>assert.ok(!h.includes('不另外啟用英語')));
+check('slide2 short study motto',()=>assert.ok(h.includes('一科、一題、四個步驟。')));
+check('slide2 no phase/subject-switch header',()=>assert.ok(!/分科切換(?:測試)?版/.test(h)));
+check('slide2 original 426 source summary retained',()=>assert.ok(src.includes('原站 426 題（主要考古題 374＋相關類科 52）')));
+check('slide2 source warning still visible for incomplete bank',()=>assert.ok(src.includes('el.dataset.complete=String(complete)')&&src.includes('與已核對的原站 426 題版本不同')));
+check('slide3 quick notes renamed',()=>assert.ok(h.includes('<summary>步驟速記</summary>')));
+check('slide4 simulator retains independent data source selector',()=>assert.ok(h.includes('id="simSource"')&&h.includes('value="demo"')&&h.includes('value="mine"')));
+check('slide4 renamed source option',()=>assert.ok(h.includes('>範例資料</option>')));
+check('slide4 no old demo heading',()=>assert.ok(!h.includes('模擬間隔複習到期')));
+check('slide4 error/simulation core still available',()=>assert.ok(h.includes('id="simPreview"')&&h.includes('id="simCase"')&&h.includes('id="simRetry"')));
+check('slide4 no demo prefix in dynamic output',()=>assert.ok(!sim.includes('示範情境：')));
+check('slide4 no test footnote',()=>assert.ok(!h.includes('這是規則演算測試')));
+check('slide5 original essay analytics exists',()=>assert.ok(h.includes('id="essayAnalyticsHeading"')));
+check('slide6 original data health exists',()=>assert.ok(h.includes('id="dataHealthHeading"')));
+check('slide7 original backup restore exists',()=>assert.ok(h.includes('id="importBackupFile"')&&h.includes('id="importConfirm"')));
+check('slide7 dangerous restore confirms backup',()=>assert.ok(h.includes('id="importBackupConfirmed"')));
+check('slide5-7 panels are folded without deletion or cloning',()=>{assert.ok(ui.includes("fold('.essay-analytics-panel'")&&ui.includes("fold('.data-health-panel'")&&ui.includes("fold('.backup-import-panel'"));assert.ok(ui.includes('body.append(panel)'));assert.ok(!ui.includes('cloneNode'));});
+check('slide5-7 collapses default closed',()=>assert.ok(ui.includes("document.createElement('details')")&&!ui.includes('wrapper.open=true')));
+check('slide8 all week cells are actual buttons',()=>assert.ok(app.includes("cell=document.createElement('button')")));
+check('slide8 future days disabled',()=>assert.ok(app.includes('cell.disabled=d>today')));
+check('slide8 historical session is reused',()=>assert.ok(app.includes('if(!store.sessions[iso])')&&app.includes('session=store.sessions[iso]')));
+check('slide8 past day cannot be out of current week',()=>assert.ok(app.includes('index<start||index>dayIndex(today)')));
+check('slide8 avoids reload to today during past day practice',()=>assert.ok(app.includes('if(!selectedPracticeDate&&iso!==session.date)')&&app.includes('!selectedPracticeDate&&isoTaipei()!==session.date')));
+check('slide8 return today button exists',()=>assert.ok(h.includes('id="returnToday"')&&app.includes("selectWeekPractice(isoTaipei())")));
+check('slide8 destructive action protected during backfill',()=>assert.ok(app.includes("if(selectedPracticeDate){say('補練其他日期時不能清除紀錄")));
+check('slide8 same localStorage key and no new source lists',()=>assert.ok(app.includes("const KEY = 'probation-study30-v251:v1'")&&app.includes('selectedPracticeDate=null')));
+check('slide8 no irrelevant footer',()=>assert.ok(!h.includes('第二階段獨立測試模組')));
+check('UI preserves original green scheme',()=>assert.ok(!css.includes('--clean-blue')&&css.includes('var(--green')));
+check('required offline scripts still present',()=>assert.ok(h.includes('src="./offline-control.js"')&&h.includes('href="./manifest.webmanifest"')));
+check('new static UI assets included in service worker',()=>{const sw=read('sw.js');assert.ok(sw.includes('./content-ui.js')&&sw.includes('./content-cleanup.css'));});
+console.log('TOTAL',count,'approved-content checks: PASS');
