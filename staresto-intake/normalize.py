@@ -150,6 +150,7 @@ def main():
    stem=find_prompt(v)
    sourceid=source_id(v,key)
    answer=answer_info(v)
+   if category=="中譯英" and not answer:answer=text(v.get("en"))
    options=maybe_options(v)
    letter=answer_letter(answer,options)
    exam=text(v.get("exam")) or text(v.get("t")) or text(v.get("examType"))
@@ -158,11 +159,17 @@ def main():
    media=bool(v.get("figure") or v.get("image") or v.get("audio") or v.get("img"))
    passage=passage_lookup(passages,relative,v)
    passage_required=bool(v.get("passageId") or v.get("passage_id"))
+   is_article=("passages" in Path(part).stem.lower())
+   if passage_required and passage and passage["text"] and not stem:
+    stem="依據篇章填入第 "+(text(v.get("blankNum")) or text(v.get("no")) or sourceid)+" 題的正確選項"
+   if is_article and not stem:stem=text(v.get("title")) or "篇章素材："+sourceid
    kind="參考教材"
    if options or answer or stem:
     kind="試題候選"
    if category in ("英文作文","中譯英"):kind="非選擇題"
-   if media:status="需要媒體"
+   if is_article:kind="篇章素材"
+   if is_article:status="篇章素材"
+   elif media:status="需要媒體"
    elif not stem:status="需人工整理"
    elif passage_required and (not passage or not passage["text"]):status="缺少篇章"
    elif options and letter:status="選擇題可核對"
@@ -176,7 +183,7 @@ def main():
    if recid in seen:raise RuntimeError("Duplicate stable ID "+recid)
    seen.add(recid)
    detail={"id":recid,"type":category,"stem":stem,"options":options,
-           "answer":letter or answer,"explanation":text(v.get("explanation")) or text(v.get("note")) or text(v.get("col")),
+           "answer":letter or answer,"explanation":(text(v.get("explanation")) or (json.dumps(v.get("explanation"),ensure_ascii=False,indent=2) if isinstance(v.get("explanation"),(dict,list)) else "") or text(v.get("note")) or text(v.get("col"))),
            "translation":text(v.get("translation")) or text(v.get("sz")) or text(v.get("zhTranslation")),
            "passage":passage if passage_required else None,
            "sourceUrl":json_records[relative]["sourceUrl"],
