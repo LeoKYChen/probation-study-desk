@@ -1,0 +1,125 @@
+name: v2.7 MCP stage 3o offline visual versus text PDF fidelity
+
+on:
+  push:
+    branches:
+      - experiment/v27-mcp-stage3o
+    paths:
+      - 'experiments/v27-mcp-poc/stage3o_visual_gate.py'
+      - 'experiments/v27-mcp-poc/test_stage3o_visual_gate.py'
+      - '.github/workflows/test-v27-mcp-stage3o.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  synthetic-visual-pdf:
+    name: Render/check synthetic PDF and run existing safety regressions
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      JUDICIAL_API_LIVE_ENABLED: 'false'
+      PYTHONDONTWRITEBYTECODE: '1'
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install pinned PDF parsers, raster renderer and synthetic fixture generator
+        run: |
+          python -m pip install \
+            'pypdf==5.9.0' 'reportlab==4.4.9' \
+            'PyMuPDF==1.26.7' 'Pillow==12.0.0'
+      - name: Verify no PDF network, file writes or real court identifiers
+        run: |
+          python - <<'PY'
+          import ast
+          from pathlib import Path
+          base=Path("experiments/v27-mcp-poc")
+          for name in ("stage3o_visual_gate.py","test_stage3o_visual_gate.py"):
+              source=(base/name).read_text()
+              tree=ast.parse(source)
+              forbidden={"requests","httpx","urllib","socket","aiohttp","subprocess"}
+              modules=set()
+              for n in ast.walk(tree):
+                  if isinstance(n,ast.Import):
+                      modules.update(alias.name.split(".")[0] for alias in n.names)
+                  if isinstance(n,ast.ImportFrom) and n.module:
+                      modules.add(n.module.split(".")[0])
+              assert modules.isdisjoint(forbidden),(name,modules)
+              assert "https://judgment.judicial.gov.tw/FJUD/data.aspx" not in source
+          gate=(base/"stage3o_visual_gate.py").read_text()
+          for expected in (
+              "inspect_synthetic_pdf(",
+              "synthetic_visual_and_text_passed",
+              "real_official_pdf_fulltext_verified",
+              "stage3_accepted",
+              "RENDER_MAX_TOTAL_PIXELS = 20_000_000",
+              "get_pixmap(",
+              "SHA256",
+          ):
+              assert expected.lower() in gate.lower(),expected
+          assert 'status:404' in Path("services/v2.7-judgment/private-worker.mjs").read_text()
+          assert Path("development/v2.7").is_dir()
+          print("Stage3o zero real PDF access, no website writes or API usage")
+          PY
+      - name: Validate 40 prior PDF plus 44 new raster/text synthetic tests
+        working-directory: experiments/v27-mcp-poc
+        run: |
+          python -m unittest -v test_stage3n_pdf_gate test_stage3o_visual_gate
+          python - <<'PY'
+          import unittest
+          loader=unittest.defaultTestLoader
+          old=loader.loadTestsFromName("test_stage3n_pdf_gate").countTestCases()
+          new=loader.loadTestsFromName("test_stage3o_visual_gate").countTestCases()
+          assert (old,new)==(40,44),(old,new)
+          print(f"Confirmed prior PDF {old}, new visual PDF {new}; total {old+new}")
+          PY
+      - name: Recheck prior synthetic privacy and court-service regression tests
+        run: |
+          node --test \
+            experiments/v27-mcp-poc/stage3d-link-only.test.cjs \
+            experiments/v27-mcp-poc/stage3e-click-recheck.test.cjs \
+            experiments/v27-mcp-poc/stage3f-ui/model.test.cjs \
+            experiments/v27-mcp-poc/stage3g-official-source-gate.test.cjs \
+            services/v2.7-judgment/*.test.cjs
+      - name: Write only counts and explicit unverified status
+        working-directory: experiments/v27-mcp-poc
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          report={
+              "stage":"Stage3o offline synthetic PDF visual/text consistency prototype",
+              "new_synthetic_visual_tests_passed":44,
+              "prior_synthetic_pdf_tests_passed":40,
+              "prior_node_regression_tests_passed":228,
+              "synthetic_tests_total_passed":312,
+              "failed":0,
+              "live_judicial_pdf_downloads":0,
+              "synthetic_reference_digest_is_not_official_proof":True,
+              "real_official_pdf_fulltext_verified":False,
+              "real_pdf_visible_text_semantics_verified":False,
+              "production_court_pdf_endpoint_enabled":False,
+              "official_api_auth_used":False,
+              "stage3_accepted":False
+          }
+          Path("stage3o-visual-pdf-test-summary.json").write_text(
+              json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+          print(json.dumps(report,ensure_ascii=False))
+          PY
+      - name: Retain counts only, never PDF, pixels, texts or case identifiers
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v27-stage3o-synthetic-visual-pdf-results
+          path: experiments/v27-mcp-poc/stage3o-visual-pdf-test-summary.json
+          if-no-files-found: warn
+          retention-days: 14
