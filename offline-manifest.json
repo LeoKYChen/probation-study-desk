@@ -56,9 +56,6 @@
       "url": "index.html"
     },
     {
-      "url": "juvenile-news/README.md"
-    },
-    {
       "url": "juvenile-news/favicon.svg"
     },
     {
@@ -66,6 +63,9 @@
     },
     {
       "url": "juvenile-news/issues.json"
+    },
+    {
+      "url": "juvenile-news/README.md"
     },
     {
       "url": "juvenile-news/v25-entry.js"
@@ -92,7 +92,7 @@
       "url": "shared-ui.css"
     },
     {
-      "url": "v2.5/README.md"
+      "url": "v2.5/ai-simple-review-v254.js"
     },
     {
       "url": "v2.5/all-topic-diagnostics.js"
@@ -159,6 +159,9 @@
     },
     {
       "url": "v2.5/questions.js"
+    },
+    {
+      "url": "v2.5/README.md"
     },
     {
       "url": "v2.5/reference-notes/juvenile-115.md"
