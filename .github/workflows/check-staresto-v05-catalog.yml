@@ -1,0 +1,49 @@
+name: QA Staresto v0.5 read-only browser
+on:
+  push:
+    branches:
+      - feature/staresto-v05-catalog-preview
+    paths:
+      - common-subjects/catalog/**
+      - .github/workflows/check-staresto-v05-catalog.yml
+  pull_request:
+    branches:
+      - main
+    paths:
+      - common-subjects/catalog/**
+      - .github/workflows/check-staresto-v05-catalog.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Verify complete catalog data and UI
+        shell: bash
+        run: |
+          node --check common-subjects/catalog/app.js
+          node --check common-subjects/catalog/test_browser.cjs
+          node common-subjects/catalog/test_browser.cjs
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path("common-subjects/catalog/data")
+          report=json.loads((p/"report.json").read_text())
+          i=json.loads((p/"index.json").read_text())
+          resources=json.loads((p/"resources.json").read_text())
+          assert report["originalFiles"]==2089
+          assert report["jsonFiles"]==45
+          assert report["normalizedRecords"]==4733
+          assert i["meta"]["normalizedRecords"]==len(i["records"])
+          assert resources["total"]==len(resources["records"])==2089
+          assert (p.parent/"NOTICE.md").exists()
+          assert len(list((p/"shards").rglob("*.json")))==report["shards"]
+          print("PASS v0.5 browser QA:",len(i["records"]),"records and",len(resources["records"]),"sources")
+          PY
