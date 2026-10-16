@@ -45,8 +45,8 @@
   },
   "legacyMapping": {
     "EXACT": 435,
-    "UNMATCHED": 225,
-    "AMBIGUOUS": 8
+    "VERIFIED_YEAR_OPTIONS": 45,
+    "VERIFIED_SOURCE": 188
   },
   "warning": "All prequalified rows remain unpublished pending human quality and rights review. No daily plans or localStorage modified."
 }

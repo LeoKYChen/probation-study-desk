@@ -49,8 +49,10 @@
 | 對照狀態 | 題數 |
 |---|---:|
 | EXACT | 435 |
-| AMBIGUOUS | 8 |
-| UNMATCHED | 225 |
+| VERIFIED_SOURCE | 188 |
+| VERIFIED_YEAR_OPTIONS | 45 |
+| AMBIGUOUS | 0 |
+| UNMATCHED | 0 |
 
 原 v0.4 668 題全部保留在原資料檔；目前僅建立 ID 對照候選，未執行學習紀錄移轉。
 跨來源的完全相同題目群：0 組，額外候選紀錄 0 筆，仍須人工核對。
