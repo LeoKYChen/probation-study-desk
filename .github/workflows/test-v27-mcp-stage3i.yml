@@ -1,0 +1,71 @@
+name: v2.7 MCP stage 3i eight new public court source samples
+
+on:
+  push:
+    branches:
+      - experiment/v27-mcp-stage3i
+    paths:
+      - 'experiments/v27-mcp-poc/stage3i_eight_public_samples.py'
+      - '.github/workflows/test-v27-mcp-stage3i.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  public-courts:
+    name: Bounded search, independent public source and text-fidelity checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    env:
+      JUDICIAL_API_LIVE_ENABLED: 'false'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Keep third-party cached data outside the public repo
+        run: echo "MCP_TAIWAN_LEGAL_DB_HOME=$RUNNER_TEMP/v27-stage3i-cache" >> "$GITHUB_ENV"
+      - name: Fetch and check exact approved upstream revision
+        env:
+          UPSTREAM_SHA: ef677ad63c3206fc211a083fad8b1d9ef5015222
+        run: |
+          git init "$RUNNER_TEMP/legal-mcp"
+          git -C "$RUNNER_TEMP/legal-mcp" remote add origin https://github.com/lawchat-oss/mcp-taiwan-legal-db.git
+          git -C "$RUNNER_TEMP/legal-mcp" fetch --depth 1 origin "$UPSTREAM_SHA"
+          git -C "$RUNNER_TEMP/legal-mcp" checkout --detach FETCH_HEAD
+          test "$(git -C "$RUNNER_TEMP/legal-mcp" rev-parse HEAD)" = "$UPSTREAM_SHA"
+      - name: Install pinned research MCP, no authentication secrets
+        run: python -m pip install "$RUNNER_TEMP/legal-mcp"
+      - name: Validate syntax, cohort boundaries and discrepancy controls
+        run: |
+          python -m py_compile experiments/v27-mcp-poc/stage3i_eight_public_samples.py
+          python experiments/v27-mcp-poc/stage3i_eight_public_samples.py --mode selftest
+      - name: Search only four court/type cohorts, at most two samples each
+        run: timeout 990s python -u experiments/v27-mcp-poc/stage3i_eight_public_samples.py --mode live
+      - name: Verify research boundary and no website deployment
+        if: always()
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          source=Path("experiments/v27-mcp-poc/stage3i_eight_public_samples.py").read_text()
+          assert "MAX_SEARCHES=4" in source
+          assert "MAX_OFFICIAL_GET=20" in source
+          assert "TARGET_PER_COHORT=2" in source
+          assert "result[\"stage3_accepted\"]=False" in source
+          assert "KNOWN" in source and "SAMPLES" not in source[:3000]
+          public=Path("development/v2.7")
+          assert public.is_dir()
+          assert 'status:404' in Path("services/v2.7-judgment/private-worker.mjs").read_text()
+          print("Stage3i research-only: existing website and disabled Worker unchanged")
+          PY
+      - name: Save only public JIDs, result counts and source comparison booleans
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v27-mcp-stage3i-eight-public-sample-report
+          path: v27-mcp-stage3i-eight-samples.json
+          if-no-files-found: warn
+          retention-days: 14
