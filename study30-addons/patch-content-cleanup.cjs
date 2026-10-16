@@ -13,7 +13,7 @@ apply('index.html',s=>{
   s=swap(s,'模擬間隔複習到期（不更動學習紀錄）','間隔複習到期預覽','slide4 heading');
   s=swap(s,'測試資料來源','資料來源','slide4 label');
   s=swap(s,'獨立示範資料（建議先試）','範例資料','slide4 sample data');
-  s=swap(s,'示範間隔','複習間隔','slide4 interval');
+  s=swap(s,'<label id="simCaseLabel" for="simCase">示範間隔','<label id="simCaseLabel" for="simCase">複習間隔','slide4 interval label');
   s=swap(s,'選擇示範間隔及日期後，點選「查看到期與推薦結果」。','選擇複習間隔及日期後查看結果。','slide4 placeholder');
   s=swap(s,'假設在模擬日期再次作答，自評為','假設在所選日期再次作答，自評為','slide4 rating label');
   s=swap(s,'模擬重答後的下次複習日','預覽重答後的下次複習日','slide4 button');
