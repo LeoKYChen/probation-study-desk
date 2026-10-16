@@ -162,7 +162,7 @@ function listQuestions(){
  else english.forEach(function(q,i){if(f==='all'||f==='wrong'&&latestWrong(i)||f===q[0])questionSet.push(i)});
  if(questionSet.indexOf(selected)<0)selected=questionSet.length?questionSet[0]:-1;
  var select=$('questionPick');select.replaceChildren();
- questionSet.forEach(function(i){select.add(new Option('第'+(i+1)+'題｜'+({vocab:'單字',grammar:'文法',reading:'閱讀',cloze:'克漏字'}[english[i][0]]),String(i))});
+ questionSet.forEach(function(i){select.add(new Option('第'+(i+1)+'題｜'+({vocab:'單字',grammar:'文法',reading:'閱讀',cloze:'克漏字'}[english[i][0]]),String(i)))});
  renderQuestion();renderDaily();
 }
 function rotated(q,i){var shift=(i*3+1)%4;return {options:q[2].map(function(_,j){return q[2][(j-shift+4)%4]}),answer:shift}}
