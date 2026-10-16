@@ -1,0 +1,55 @@
+name: v2.7 MCP stage 3g two-court text comparison
+
+on:
+  push:
+    branches:
+      - experiment/v27-mcp-stage3g
+    paths:
+      - 'experiments/v27-mcp-poc/stage3g_text_compare.py'
+      - '.github/workflows/test-v27-mcp-stage3g-compare.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compare:
+    name: Compare only two previously known public adult-court records
+    runs-on: ubuntu-latest
+    timeout-minutes: 13
+    env:
+      JUDICIAL_API_LIVE_ENABLED: 'false'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Isolate all third-party MCP caches
+        run: echo "MCP_TAIWAN_LEGAL_DB_HOME=$RUNNER_TEMP/v27-stage3g-compare-cache" >> "$GITHUB_ENV"
+      - name: Fetch the previously approved exact MCP revision
+        env:
+          UPSTREAM_SHA: ef677ad63c3206fc211a083fad8b1d9ef5015222
+        run: |
+          git init "$RUNNER_TEMP/legal-mcp"
+          git -C "$RUNNER_TEMP/legal-mcp" remote add origin https://github.com/lawchat-oss/mcp-taiwan-legal-db.git
+          git -C "$RUNNER_TEMP/legal-mcp" fetch --depth 1 origin "$UPSTREAM_SHA"
+          git -C "$RUNNER_TEMP/legal-mcp" checkout --detach FETCH_HEAD
+          test "$(git -C "$RUNNER_TEMP/legal-mcp" rev-parse HEAD)" = "$UPSTREAM_SHA"
+      - name: Install pinned research MCP only
+        run: python -m pip install "$RUNNER_TEMP/legal-mcp"
+      - name: Run offline compare fixtures before network attempt
+        run: |
+          python -m py_compile experiments/v27-mcp-poc/stage3g_text_compare.py
+          python experiments/v27-mcp-poc/stage3g_text_compare.py --mode selftest
+      - name: Bounded two-sample public text comparison (not production authorisation)
+        run: timeout 540s python experiments/v27-mcp-poc/stage3g_text_compare.py --mode live
+      - name: Archive content-free verification status only
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v27-stage3g-two-sample-text-comparison
+          path: v27-mcp-stage3g-text-comparison.json
+          if-no-files-found: warn
+          retention-days: 14
