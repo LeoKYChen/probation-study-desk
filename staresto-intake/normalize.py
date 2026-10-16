@@ -126,7 +126,7 @@ def main():
  if OUTPUT.exists():shutil.rmtree(OUTPUT)
  OUTPUT.mkdir(parents=True)
  passages=collect_passages()
- records=[];resources=[];shardlist=[];seen=set()
+ records=[];resources=[];shardlist=[];seen=set();possible_dup={};dup_total=0
  issues=Counter();cats=Counter();statuses=Counter();sourceCounts={}
  json_records={x["repo"]+"/"+x["path"]:x for x in manifest["files"] if x["coverage"]=="full-json"}
  for orig in manifest["files"]:
@@ -196,6 +196,17 @@ def main():
        "sourcePath":relative,"shard":relative,"position":len(shard)-1,
        "preview":stem[:165],"sourceItemId":sourceid,
        "hasPassage":passage_required,"hasMedia":media}
+   if status in ("選擇題可核對","非選擇題可核對") and len(stem)>15:
+    signature=json.dumps([
+     re.sub(r"\\s+"," ",stem).casefold(),
+     sorted((k,re.sub(r"\\s+"," ",val).casefold()) for k,val in options.items()),
+     letter or answer,yr],ensure_ascii=False,sort_keys=True)
+    fingerprint=hashlib.sha256(signature.encode("utf-8")).hexdigest()
+    if fingerprint in possible_dup:
+     ix["possibleDuplicateOf"]=possible_dup[fingerprint]
+     dup_total+=1
+    else:
+     possible_dup[fingerprint]=recid
    records.append(ix);cats[category]+=1;statuses[status]+=1;kinds[status]+=1
   if shard:
    dest=OUTPUT/"shards"/relative
@@ -205,7 +216,7 @@ def main():
  # Pages without JSON question structure stay searchable from complete resource index.
  meta={"schema":"staresto-normalized-v05","originBranch":"data/staresto-full-catalog-20261016",
        "originalFiles":len(resources),"jsonFiles":len(json_records),"normalizedRecords":len(records),
-       "shards":len(shardlist),"statusCounts":dict(statuses),
+       "shards":len(shardlist),"possibleDuplicateRecords":dup_total,"statusCounts":dict(statuses),
        "categoryCounts":dict(cats),"rightsNotice":"All quoted Staresto translations and explanations are attributed, noncommercial, and not GPL sublicensed. Some official references need separate rights review.",
        "limitations":"Question candidates can overlap across datasets; not unique exam question counts. No practice scheduling changes.",
        "recordSources":sourceCounts}
@@ -218,7 +229,7 @@ def main():
  "本次僅對已收錄資料標準化、搜尋及來源分類，不修改正式每日英文668題、國文作文、任何舊學習紀錄。",
  "",
  "來源檔案 "+str(len(resources))+" 個；結構化 JSON "+str(len(json_records))+" 份；"
- " 索引紀錄 "+str(len(records))+" 筆（**不是去重後的正式題目數**）。",
+ " 索引紀錄 "+str(len(records))+" 筆（**不是去重後的正式題目數**）；疑似重複 "+str(dup_total)+" 筆。",
  "",
  "## 來源類型","",
  "| 類別 | 紀錄筆數 |","|---|---:|"]
