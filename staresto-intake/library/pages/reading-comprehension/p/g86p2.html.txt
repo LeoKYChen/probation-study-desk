@@ -1,0 +1,136 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/g86p2.html
+Author: staresto-create ZZSH
+Title: 86 學測閱讀測驗：Jack 的磁碟醫生服務｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 86 學測
+86 學測閱讀測驗：Jack 的磁碟醫生服務
+Jack's Disk Doctor Service
+學測 86年第 44–47 題4 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段What can you do if you ‘lose’ the data from your disks? To find an expert, who would recover the lost information for you, is probably the easiest solution. Jack Olson is one of these experts. Jack and a few of his friends set up a company called “Jack’s Disk Doctor Service” in 1984. They work from home and give all the money they earn to charity. The fees are always the same, no matter how precious the data on the disk is. Some people, however, are so grateful that they send extra money to Jack or to the charities his company supports. One oil company offered him $2000 for his help and an architect even sent him a blank check.
+第 2 段It would be difficult to put a value on the things rescued by the Disk Doctor. There have been disks containing medical research, television scripts, manuscripts of whole books, a lawyer’s papers for a court case, and even Margaret Thatcher’s travel plan for a visit to eastern Europe. For this last case, Jack had to go in person to Thatcher's office ‘for security reasons’!
+第 3 段Disks are usually sent to the Disk Doctor by post, but sometimes people are in such a hurry that they cannot wait for the mail to come. For example, some radio scripts had to be rushed by taxi to Jack’s house because they were needed for broadcasting the next day. When the material has been recovered, the disk is returned to the sender with a diagnosis and a prescription for avoiding the problem in the future. One grateful client, an author, put a “thank you” to Jack in the front of his book. “Jack saved me from a heart attack,” he wrote. “But,” says Jack, “most people don’t take any notice of the doctor’s advice!”
+題目
+44.What does the word rescued in the second paragraph mean?
+(A)recovered
+(B)prescribed
+(C)examined
+(D)discovered
+45.Why did the architect send Jack a blank check?
+(A)The architect did not have any money
+(B)The architect did it for security reasons
+(C)The architect always followed the doctor's advice
+(D)The architect thought Jack's service was priceless
+46.Which of the following statements is NOT true?
+(A)Jack’s Disk Doctor Service has only one standard fee.
+(B)Jack and his company have made a fortune from their service.
+(C)Margaret Thatcher is a very important person.
+(D)Jack’s clients are from all walks of life.
+47.From the statement “But … most people don’t take any notice of the doctor's advice!” we can infer that ______.
+(A)most people don’t take medicine regularly
+(B)many of Jack’s patients would probably get sick again
+(C)many of Jack’s clients have sought for his help more than once
+(D)most people don’t read the instruction when using a computer
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+44
+(A)
+—
+—
+45
+(D)
+—
+—
+46
+(B)
+—
+—
+47
+(C)
+—
+—
+答對率：該屆逐題數據未公開
+每一題的依據句
+第 44 題 詞義題 Vocabulary in context
+第 1 段who would recover the lost information for you
+第 2 段It would be difficult to put a value on the things rescued by the Disk Doctor.
+原文 → 正確選項
+recover → recovered
+第 1 段說找專家把遺失的資料救回來（recover the lost information），第 2 段的 the things rescued by the Disk Doctor 指的就是 Disk Doctor 救回來的資料，所以 rescued 和 recovered 意思相同，是 (A)。(B) prescribed 是開處方，第 3 段的處方是資料救回來以後附上的建議；(C) examined 是檢查，(D) discovered 是發現，都不是把遺失的資料救回來。
+怎麼從前後文推出字義 →
+第 45 題 推論題 Inference
+第 1 段Some people, however, are so grateful that they send extra money to Jack or to the charities his company supports.
+第 2 段It would be difficult to put a value on the things rescued by the Disk Doctor.
+空白支票讓收款人自己填金額。第 1 段說有些客戶感激到額外寄錢，第 2 段又說 Disk Doctor 救回來的東西價值很難估算（difficult to put a value on），建築師寄空白支票，是覺得 Jack 的服務無價，所以是 (D)。(B) 照抄第 2 段的 security reasons，基於安全理由親自跑一趟的，是處理柴契爾夫人行程那一次；(C) 照抄第 3 段的 doctor's advice，Jack 說大部分的人都不理會建議，原文也沒有說建築師照著做；(A) 建築師願意讓 Jack 自己填金額，不是沒有錢。
+第 46 題 細節題 Supporting details
+第 1 段They work from home and give all the money they earn to charity.
+第 1 段說 Jack 和朋友把賺來的錢全部捐給慈善團體（give all the money they earn to charity），他們沒有靠這項服務發財，所以和原文不符的是 (B)。其他三個選項都和原文相符：第 1 段說收費都一樣，是 (A)；處理柴契爾夫人的行程要基於安全理由親自到她的辦公室，可見她是重要人物，是 (C)；客戶有石油公司、建築師、律師、作家，還有電視、廣播節目，各行各業都有，是 (D)。
+第 47 題 推論題 Inference
+第 3 段the disk is returned to the sender with a diagnosis and a prescription for avoiding the problem in the future
+第 3 段most people don’t take any notice of the doctor’s advice
+第 3 段說磁碟寄還時，附上診斷和避免同樣問題的處方（a prescription for avoiding the problem in the future），Jack 卻說大部分的人都不理會這些建議。不照建議做，資料就可能再出問題，所以很多客戶不只一次找他幫忙，是 (C)。這裡的 doctor 是 Jack 的 Disk Doctor，處方是保護資料的建議，(A) 吃藥、(B) 病人再生病，都把比喻當成真的醫生；(D) 原文說的是不理會 Jack 的建議，不是不看電腦的使用說明。
+逐段中譯
+第 1 段如果磁碟裡的資料「不見了」，你該怎麼辦？找專家幫你救回遺失的資料，大概是最簡單的辦法。Jack Olson 就是這樣的專家。1984 年，Jack 和幾個朋友成立了一家公司，名叫「Jack’s Disk Doctor Service」。他們在家工作，把賺來的錢全部捐給慈善團體。不管磁碟裡的資料多珍貴，收費都一樣。不過，有些人感激到另外寄錢給 Jack，或寄給他的公司支持的慈善團體。有一家石油公司給了他 2,000 美元當謝禮，還有一位建築師甚至寄給他一張空白支票。
+第 2 段Disk Doctor 救回來的東西，價值很難估算。這些磁碟裡有醫學研究、電視劇本、整本書的手稿、律師打官司用的文件，甚至還有柴契爾夫人訪問東歐的行程。最後這一件，Jack 還得「基於安全理由」親自到柴契爾夫人的辦公室處理！
+第 3 段磁碟通常是用郵寄的方式送到 Disk Doctor 那裡，不過有時候客戶急得等不及郵件送到。例如，有些廣播稿第二天就要播出，只好用計程車火速送到 Jack 家。資料救回來以後，磁碟會寄還給寄件人，附上一份診斷和一張處方，告訴他們以後怎麼避免同樣的問題。有一位很感激的客戶是作家，他在自己的書前面寫了一段話感謝 Jack：「Jack 讓我免於心臟病發作。」但是 Jack 說：「大部分的人根本不理會醫生的建議！」
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。沒有列出的段落，就是沒有主旨句，請對照「這一篇的文章結構」裡的綱要，找出那一段的重點。這一篇沒有一句話直接點出全文中心思想，要讀完各段，自己歸納。
+第 2 段It would be difficult to put a value on the things rescued by the Disk Doctor.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體說明文 Expository
+組織方式列舉 Listing這一類怎麼辨識 →
+關鍵轉折詞howeverFor exampleBut
+綱要
+(Jack Olson is one of these experts) 資料遺失時，可以找專家幫忙救回，Jack Olson 就是一位；(set up a company called) 他和幾位朋友在 1984 年成立 Jack’s Disk Doctor Service，(They work from home and give all the money they earn to charity) 在家工作，收入全數捐給慈善團體。
+收費固定，不論資料多麼珍貴都一樣，(Some people, however) 但有些客戶十分感激，額外寄錢給 Jack 或他支持的慈善團體，石油公司付了 2,000 美元，建築師甚至寄來空白支票。
+(It would be difficult to put a value on the things rescued) Disk Doctor 拯救的資料價值無法衡量，包括醫療研究、劇本、重要文件等。
+磁碟通常郵寄，但緊急時會用計程車火速送到，(When the material has been recovered) 資料恢復後，磁碟會附診斷和預防建議返還。
+(One grateful client) 有位作家在書前向 Jack 致謝，(But … most people don’t take any notice of the doctor’s advice!) 不過 Jack 說，多數人並不理會「醫生」的建議。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 11 個、參考字彙 6 個、字詞搭配 11 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+information[ˌɪnfɚˈmeɪʃən]n.資料、資訊三級第 1 段詞彙題考過 1 次：88 聯考第 1 題（誘答）
+charity[ˈʧɛrɪti]n.慈善團體四級第 1 段詞彙題考過 2 次：97 學測第 7 題 charities（答案）、91 指考第 2 題（誘答）
+precious[ˈprɛʃəs]adj.珍貴的三級第 1 段詞彙題考過 2 次：95 學測第 8 題（誘答）、91 學測補考第 7 題（誘答）
+grateful[ˈgreɪtfəl]adj.感激的四級第 1 段詞彙題考過 2 次：98 指考第 2 題（誘答）、97 學測第 13 題 gratefully（誘答）
+rescue[ˈrɛskju]v.救回、挽救四級第 2 段詞彙題考過 1 次：104 學測第 12 題 rescued（誘答）
+security[sɪˈkjʊrəti]n.安全（for security reasons 基於安全理由）三級第 2 段詞彙題考過 4 次：105 學測第 6 題（誘答）、94 學測第 15 題（誘答）、92 學測補考第 4 題（答案）、88 聯考第 8 題（誘答）
+rush[rʌʃ]v.火速送去三級第 3 段詞彙題考過 1 次：113 學測第 2 題 rushing（誘答）
+diagnosis[ˌdaɪəgˈnoʊsəs]n.診斷五級第 3 段詞彙題考過 1 次：89 學測第 3 題（誘答）
+prescription[prɪˈskrɪpʃən]n.處方五級第 3 段詞彙題考過 1 次：96 指考第 9 題（誘答）
+client[ˈklaɪənt]n.客戶三級第 3 段詞彙題考過 1 次：99 學測第 14 題（誘答）
+fortune[ˈfɔrʧən]n.財富（make a fortune 發財）三級第 46 題詞彙題考過 3 次：100 學測第 9 題（誘答）、100 指考第 5 題 fortunes（誘答）、96 學測第 1 題（答案）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+architect[ˈɑrkəˌtɛkt]n.建築師五級第 1 段
+script[skrɪpt]n.劇本、腳本五級第 2 段
+manuscript[ˈmænjəˌskrɪpt]n.手稿、原稿六級第 2 段
+prescribe[prɪˈskraɪb]v.開（藥方）、建議五級第 44 題
+priceless[ˈpraɪsləs]adj.無價的、非常珍貴的六級第 45 題
+infer[ɪnˈfɝ]v.推論、推斷六級第 47 題
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+set up a company成立公司第 1 段原文：set up a company called
+give + N + to charity把……捐給慈善機構第 1 段原文：give all the money they earn to charity
+no matter how + adj.不管多麼……第 1 段原文：no matter how precious the data on the disk is
+a blank check空白支票第 1 段原文：even sent him a blank check
+put a value on + N替……估價第 2 段原文：It would be difficult to put a value on the things rescued
+in person親自第 2 段原文：Jack had to go in person to Thatcher's office
+for security reasons基於安全考量第 2 段原文：‘for security reasons’
+by post用郵寄第 3 段原文：Disks are usually sent to the Disk Doctor by post
+be in a hurry很趕第 3 段原文：people are in such a hurry
+save + sb + from + N讓某人免於……第 3 段原文：Jack saved me from a heart attack
+take notice of + N注意……第 3 段原文：most people don’t take any notice of the doctor’s advice
+← 上一篇篇目一覽下一篇 →
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

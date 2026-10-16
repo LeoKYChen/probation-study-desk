@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z93-19/index.html
+Author: staresto-create ZZSH
+Title: 93 年指考克漏字第19題詳解（代名詞／指示詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 93 年指考 ／ 第19題
+93 年指考 克漏字 第19題
+代名詞／指示詞線索：跨句答對率 53%
+答對率 53%：當年每 100 位考生，有 53 位答對。
+19 suggestion made by the experts is to dip newspaper sheets in vinegar and water, and use them to clean windows, mirrors, and tiles.
+(A)This
+(B)Another
+(C)That
+(D)Other
+答案：(B) Another
+題目編號：Z93_19（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+Another suggestion（另一個建議）承接前文已提過的第一個建議（把報紙變成木炭），引出第二個建議，符合列點論述的邏輯。This／That 是指示前文剛提過的同一件事，不是「另一個」，Other 不能直接修飾單數名詞 suggestion。
+深入解析
+你可能會這樣想
+四個選項都是指示或限定的字，中文都能說成「這個、那個、另一個」，你會憑語感挑一個。
+怎麼判斷
+這是指標勾環，線索一定要跨句才看得到。前面已經給過一項建議：把舊報紙做成木炭。空格這一句 ______ suggestion made by the experts is to dip newspaper sheets in vinegar and water（專家提出的______建議是把報紙浸在醋水裡）講的是第二項，與前面那一項並列。要說「除了前面那個之外，另一個」，用 Another。填進去讀成 Another suggestion made by the experts is to dip newspaper sheets in vinegar and water。還有一個形態上的印證：Another 本身就是 an 加 other，所以後面通常接單數可數名詞（another two years 這種帶數字的說法除外），而 suggestion 正是單數。
+誘答選項
+This 與 That 是回頭指前面已經提過的那一個，但這一句要講的是新的一項，不是同一項；Other 後面要接複數名詞（other suggestions）或不可數名詞，接不上單數的 suggestion，形態上就先排除——這個方法比慢慢想語意快。
+常考字詞與句型
+another + 單數可數名詞（另一個）、other + 複數名詞（其他的）、the other（兩者中的另一個）、others（其他人、其他東西）、an option other than（除……以外的選擇）、dip A in B（把 A 浸在 B 裡）。
+線索範圍說明：Another 指前面已提過的第一項建議
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：93學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+If old newspapers are stacking up in your house, there are options other than tossing them out or selling them to a recycler.
+Some environmental scientists suggest turning newspapers 16 charcoal. This can be done by soaking sheets of newspaper in water for two hours and then 17 them into small pieces. These pieces are then compressed into balls. After the water is 18, the ball-shaped pieces are put under the sun to dry before they can be used as a firewood or charcoal substitute.
+19 suggestion made by the experts is to dip newspaper sheets in vinegar and water, and use them to clean windows, mirrors, and tiles. Old papers can 20 be used to line rubbish bins and as packing material when mailing breakable goods.
+中譯：如果家裡堆積了許多舊報紙，除了丟棄或賣給回收商之外，還有其他選擇。有些環保科學家建議將舊報紙製成木炭：作法是先將報紙浸泡在水中兩小時，再把它們撕成小片，接著把這些碎片壓製成球狀。等水分被擠出後，將這些球狀物放在陽光下曬乾，就可以當作薪柴或木炭的替代品。專家提出的另一項建議，是將報紙沾上醋與水，用來擦拭窗戶、鏡子與磁磚。舊報紙也可以用來鋪墊垃圾桶內側，或作為郵寄易碎物品時的包裝材料。
+📋 內容大意
+Old newspapers need not be thrown away or sold for recycling.
+Soaked, torn, squeezed to balls and sun-dried, they can replace charcoal.
+Dipped in vinegar they clean glass and tiles; they line rubbish bins and pad fragile parcels.
+← 第18題回到93 年指考第20題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

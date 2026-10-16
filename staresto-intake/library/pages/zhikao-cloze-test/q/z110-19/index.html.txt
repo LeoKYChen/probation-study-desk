@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z110-19/index.html
+Author: staresto-create ZZSH
+Title: 110 年指考克漏字第19題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 110 年指考 ／ 第19題
+110 年指考 克漏字 第19題
+字彙選義線索：句內答對率 57%
+答對率 57%：當年每 100 位考生，有 57 位答對。
+If any meteor 19 its fiery journey through the atmosphere and lands on Earth, it is called a meteorite.
+(A)approaches
+(B)survives
+(C)confirms
+(D)targets
+答案：(B) survives
+題目編號：Z110_19（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+survives its fiery journey（挺過這趟熾熱的旅程）與後面的 lands on Earth 一起構成成為隕石的條件，也與前一句 Most meteors vaporize completely before they hit the ground 形成對比；approaches（接近）、confirms（證實）、targets（以……為目標）都與「存活下來」的語意不合。
+深入解析
+你可能會這樣想
+survive 你的印象大概是在災難中活下來，而且會下意識覺得它後面要接介系詞，寫成 survive from 之類。實際上 survive 有及物用法，後面直接接那個難關本身：survive the war（撐過戰爭）、survive the crash（在墜機中生還）。本句的 survives its fiery journey 就是這個用法——挺過那趟熾熱的旅程。
+怎麼判斷
+四個選項都有及物用法，文法上都接得了 its fiery journey，可見這一格考的是語意，線索要往前一句找。前一句寫著 Most meteors vaporize completely before they hit the ground.（大多數流星在撞擊地面之前就完全氣化了）——本句用 If any meteor ___ ... and lands on Earth 接下去，講的正是那少數的例外。既然多數都在半路氣化，能落到地面的就是撐過來的那些。空格與後面的 lands on Earth 由 and 並列，兩個一起構成成為隕石的條件。
+誘答選項
+approaches（接近）代進去變成接近它的熾熱旅程，旅程不是一個可以接近的地點，語意不通。confirms（證實）與 targets（以……為目標）都把流星寫成了有意識、會判斷的東西，與整篇科學說明的語氣完全不合。鑑別度 56。只看本句其實已經選得出來，再把前一句的 vaporize completely 讀進來當對照，更能確認答案。
+常考字詞與句型
+survive sth（撐過、在……中生還，及物，後面不加介系詞）、vaporize（氣化、蒸發）、hit the ground（落地、撞擊地面）、land on（降落在……上）、a streak of light（一道光跡）、fiery（熾熱的、火一般的）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：110學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Do you know the difference between the terms meteoroid, meteor, and meteorite in astronomy? Many people find these words confusing. However, the difference is all about their 16.
+Meteoroids are far up in the sky. They are chunks of rock or metal that speed through space. Some are very large and may be hundreds of feet wide. Others 17 the size of a small stone. Most meteoroids travel around the sun in space and stay away from the Earth. However, sometimes a meteoroid will enter the Earth's atmosphere. Friction with the atmosphere will cause it to 18 and burn while traveling at high speed.
+As a meteoroid begins to burn in the atmosphere, it leaves a streak of light. When this tail-like light is falling down toward the Earth, it is called a meteor, or a shooting star. Most meteors vaporize completely before they hit the ground.
+If any meteor 19 its fiery journey through the atmosphere and lands on Earth, it is called a meteorite. Large meteorites can cause great explosions and much destruction on the surface of the Earth. 20 , Barringer Crater in the American state of Arizona, measuring 1,200 m in diameter and some 170 m deep, was produced by a meteorite impact.
+中譯：你知道天文學中「流星體」（meteoroid）、「流星」（meteor）與「隕石」（meteorite）這幾個詞的差別嗎？許多人常把這些詞搞混。然而，它們的差別其實全在於所在的位置。流星體位於高空之中，是在太空中高速穿梭的岩石或金屬碎塊。有些流星體非常巨大，可能寬達數百英尺；其他則可能只有小石頭般大小。大多數流星體會繞著太陽在太空中運行，遠離地球。然而，有時候流星體會進入地球大氣層，與大氣層的摩擦會使它在高速前進的同時開始升溫並燃燒。當流星體在大氣層中開始燃燒時，會留下一道光跡；當這道拖著尾巴的光芒朝地球墜落時，就被稱為「流星」，或稱 shooting star。大多數流星在撞擊地面前就已完全氣化。如果有流星在穿越大氣層的熾熱旅程中存活下來、並最終落到地球上，就被稱為「隕石」。大型隕石可能在地表造成劇烈爆炸和嚴重破壞。舉例來說，位於美國亞利桑那州、直徑約 1200 公尺、深約 170 公尺的巴林傑隕石坑，就是一次隕石撞擊所形成的。
+📋 內容大意
+Meteoroid, meteor and meteorite name the same object at three different places.
+Meteoroids are rocks or metal, from pebble-sized to hundreds of feet, racing through space.
+One entering our atmosphere burns and leaves a streak of light, the meteor or shooting star.
+The few that survive and land are meteorites, and big ones blast craters like Arizona's.
+← 第18題回到110 年指考第20題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g110-21-2/index.html
+Author: staresto-create ZZSH
+Title: 110 年學測克漏字第21題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 110 年學測 ／ 第21題
+110 年學測 克漏字 第21題
+慣用語／片語線索：句內答對率 50%
+答對率 50%：當年每 100 位考生，有 50 位答對。
+Over the course of an 80-year life span, the odds of being hit by lightning are 1 in 3,000, 21 the probability of being struck seven different times.
+(A)if it isn't
+(B)as you can see
+(C)not to mention
+(D)with regard to
+答案：(C) not to mention
+題目編號：G110_21_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】not to mention 指「更不用說」，表示「機率是三千分之一，更不用說被擊中七次的機率」；if it isn't、as you can see（如你所見）、with regard to（關於）都不合。
+深入解析
+你可能會這樣想
+not to mention 拆開看是「不要提到」，很容易誤讀成「別說了」。它其實是一個固定片語，意思正好相反：更不用說、更別提，用來追加一件比前面更誇張的事，語氣是「前面那個已經夠驚人了，後面這個還更誇張」。
+怎麼判斷
+前半句給了一個數字：the odds of being hit by lightning are 1 in 3,000（被閃電擊中的機率是三千分之一）。空格後接 the probability of being struck seven different times（被擊中七次的機率）。一次就已經很罕見，七次當然更罕見——這正是 not to mention 的語氣。而且它後面接的是名詞片語（也可以接形容詞，劍橋辭典的例句是 not to mention handsome），本句 the probability of... 剛好是名詞片語，句構也吻合。
+誘答選項
+if it isn't 在此語意與句構都不成立；as you can see（如你所見）用來提醒對方注意眼前的事物，本句是在陳述數據，沒有東西可以「看」；with regard to（關於）只是帶出話題，讀起來變成「關於被擊中七次的機率」，接不上前面的數字，也失去了對比的力道。
+常考字詞與句型
+not to mention + 名詞（更不用說……）、let alone（更別提，多用於否定句之後）、the odds of（……的機率）、1 in 3,000（三千分之一）、the probability of（……的可能性）、with regard to（關於）。其中 with regard to 這一組考過 4 個年度，93 年第 20 題 →、95 年第 18 題 →、107 年第 30 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Being hit by lightning is a rare event. Over the course of an 80-year life span, the odds of being hit by lightning are 1 in 3,000, 21 the probability of being struck seven different times. Roy Sullivan, a park ranger in the United States, was struck by lightning more recorded times than any other human being. Over his 36-year career, Sullivan was struck by lightning seven times—and 22 each shock!
+Strikes one, two, and three were pure bad luck, he thought. But after strike four, Sullivan became 23 death and took precautions during lightning strikes. Strike five occurred in 1973 when Sullivan was on patrol. A storm cloud "chased" him until he was struck. The same thing happened again in 1976. Sullivan, while surveying a campground, felt that a cloud was 24 him, and tried all he could to run— but it got him anyway.
+Finally, on 25 June 1977, a seventh and final bolt struck Sullivan as he was fishing in a pond. "I don't believe God is after me," he theorized. "If he was, the first bolt 25 enough. Best I can figure is that I have some chemical, some mineral, in my body that draws lightning. I just wish I knew."
+中譯：被閃電擊中是相當罕見的事件。以 80 年的人生來計算，被閃電擊中一次的機率是三千分之一，而被擊中七次的機率更是微乎其微。美國公園管理員羅伊·蘇利文，是有紀錄以來被閃電擊中次數最多的人。在他 36 年的職涯中，蘇利文一共被閃電擊中七次——而且每次都活了下來！他認為前三次純粹是運氣不好。但在第四次被擊中之後，蘇利文開始對死亡感到恐懼，並在雷雨時採取預防措施。第五次擊中發生在 1973 年，當時蘇利文正在巡邏，一朵雷雨雲彷彿「追著」他跑，直到他被擊中為止。1976 年同樣的事情再次發生：蘇利文在勘查一處露營地時，感覺有一朵雲正在跟蹤他，他想盡辦法逃跑——但閃電還是擊中了他。最後，在 1977 年 6 月的某一天，第七次也是最後一次的雷擊，在他於池塘釣魚時擊中了他。「我不認為是上帝在跟我作對，」他這樣推測道，「如果真是這樣，第一次雷擊就足以解決我了。我猜想，大概是我體內含有某種化學物質或礦物質，特別容易吸引閃電。我真希望能知道原因。」
+📋 內容大意
+Being hit by lightning is rare. The odds are about one in 3,000 over eighty years, and far longer for seven separate hits.
+Roy Sullivan, an American park ranger, holds the record: seven strikes over a 36-year career, and he lived through every one.
+He called the first three bad luck. After the fourth he grew afraid. Clouds found him in 1973, 1976 and while fishing in 1977. He blamed a mineral in his body.
+← 第20題回到110 年學測第22題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

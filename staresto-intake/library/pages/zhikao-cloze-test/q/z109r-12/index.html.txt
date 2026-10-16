@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z109r-12/index.html
+Author: staresto-create ZZSH
+Title: 109 年指考補考克漏字第12題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 109 年指考補考 ／ 第12題
+109 年指考補考 克漏字 第12題
+字彙選義線索：跨句
+It is simply a result of the way our brain 12 those we love.
+(A)classifies
+(B)defends
+(C)predicts
+(D)translates
+答案：(A) classifies
+題目編號：Z109R_12（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+classifies those we love（將所愛之人分類）呼應後文提到大腦以「群組」方式儲存所愛的人的名字，表示這是大腦分類記憶所愛之人的方式所致；defends／predicts／translates 都不符合此處語意。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個都有及物用法，後面接 those we love（我們所愛的人）文法上都通；前一句剛提到 brain functioning，很容易憑「大腦會做什麼」的印象隨手挑一個。
+怎麼判斷
+這一句是整段的主旨句，真正的解釋寫在下一段，所以要往下讀。下一段連續三處都指向同一件事：another name in the same group（同一組裡的另一個名字）、the whole set of names in that group（那一組名字的全部）、the category {15} the person belongs（那個人所屬的類別）。group、set、category 三個字反覆出現，講的就是大腦把親近的人分門別類這件事，classify（分類、歸類）正是它，配合主詞 our brain 用第三人稱單數，寫成 classifies。這裡有一個很值得記的順序：主旨句填不出來時，往下讀作者怎麼解釋，解釋裡反覆出現的那個概念就是答案。
+誘答選項
+defends（保護、辯護）在文章裡找不到任何依據，大腦不是在保護誰的名字。predicts（預測）方向不對，下一段講的是「檢索」——從一組名字裡找出要的那一個，不是預先猜測。translates（翻譯）語意不合，名字之間沒有翻譯的問題；第三段最後一句還特別說 Names that sound alike do not usually trigger the mix-up（發音相近通常不會引發叫錯），連「換一種說法」這條路也堵住了。
+常考字詞與句型
+classify（分類、歸類）、a result of（……的結果）、the way + 子句（……的方式，the way 後面可直接接完整子句）、cognitive（認知的）、affect（影響）、predict（預測）。
+線索範圍說明：依據在下一段反覆出現的 group／set／category
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+"Anne! Jo! I mean, Max!" Mothers often mix up their children's names, but studies show that moms are not the only ones who make this mistake. 11 name phenomenon turns out to be very common. Almost everyone sometimes mixes up the names of their family and friends.
+The phenomenon is called a "cognitive glitch" by researchers in the field of cognitive science. It is not caused by a bad memory or by aging processes that affect brain functioning. It is simply a result of the way our brain 12 those we love.
+When our brain is attempting to retrieve a name so that we can say it, it is likely that another name in the same group will come to our lips 13 the one we meant to say. That is because in order to find the name we are looking for, we are essentially 14 the whole set of names in that group, which includes all our beloved family members. Scientists also report that the category 15 the person belongs (family, close friends, etc.) is far more influential in causing a mix-up than any phonetic similarity between names. Names that sound alike do not usually trigger the mix-up.
+Isn't it great to know that when you call others by the wrong name, it is evidence of your love for them all?
+中譯：「安！喬！我是說，麥克斯！」母親常常會叫錯孩子的名字，但研究顯示，會犯這種錯誤的並不只有媽媽們。這種「名字混淆」的現象其實相當普遍，幾乎每個人都曾經叫錯過家人或朋友的名字。
+認知科學領域的研究者將這種現象稱為「認知小失誤」（cognitive glitch）。這不是記憶力不好，也不是老化影響腦部功能所導致，而單純是我們大腦分類所愛之人的方式所造成的結果。
+當大腦試圖提取一個名字以便說出口時，同一個「群組」裡的另一個名字很可能會先脫口而出，取代原本想說的那個名字。這是因為，為了找出我們要找的那個名字，大腦實際上是在「翻找」該群組裡的整套名字，而這個群組正好包含了我們所有摯愛的家人。科學家也指出，某人所屬的「類別」（例如家人、密友等）遠比姓名發音是否相似，更容易造成叫錯名字的情況；發音相似的名字反而通常不太會引發混淆。
+這樣想來是不是很棒呢？當你叫錯別人的名字時，其實正證明了你有多愛他們。
+📋 內容大意
+Mothers often call one child by another's name, and studies show almost everyone muddles the names of loved ones.
+Scientists call it a cognitive glitch, caused not by poor memory or aging but by how the brain sorts people.
+Fetching one name means searching a whole group, so a neighboring name slips out first.
+The group a person sits in matters more than any likeness in sound, so the error signals affection.
+← 第11題回到109 年指考補考第13題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

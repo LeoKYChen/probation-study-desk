@@ -1,0 +1,42 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g110trial-18-2/index.html
+Author: staresto-create ZZSH
+Title: 110 年學測試辦考試克漏字第18題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 110 年學測試辦考試 ／ 第18題
+110 年學測試辦考試 克漏字 第18題
+慣用語／片語線索：跨句
+These days, however, goose bumps are 18 to human beings.
+(A)even more ridiculous
+(B)no longer useful
+(C)still quite convenient
+(D)more than important
+答案：(B) no longer useful
+題目編號：G110試辦考試_18_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「雞皮疙瘩對人類來說已經『不再有用』」，no longer useful 符合，呼應前文說這個反應是祖先體毛較多時期演化來的，現在人類體毛已經很少了；even more ridiculous（更荒謬）、still quite convenient（仍然很方便，語意相反）、more than important（不通順）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是「形容詞片語」形式的補語，如果沒讀出 however 帶出的轉折方向，很容易挑到正面的那兩個。
+怎麼判斷
+四個選項都是補語，可見這一格考的是語意，關鍵在 however。前一句是 Back in the days when our ancestors may have had a lot more body hair, this might have helped to keep them warm or scare an oncoming predator.（在我們的祖先體毛多得多的年代，這或許有助於保暖或嚇退逼近的掠食者。）——講的是過去有用。本句是 These days, however, goose bumps are ___ to human beings.（然而如今，雞皮疙瘩對人類來說……。）These days 與 Back in the days 對照、however 標示轉折，所以要說的是「現在沒用了」，填 no longer useful。再用常識驗算：現代人體毛稀少，豎起那點毛既保不了暖，也嚇不走任何東西。
+誘答選項
+still quite convenient（仍然相當方便）、more than important（不只是重要）：兩個都是正面的，與 however 的轉折方向相反。even more ridiculous（更加可笑）：帶著評價的口吻，而這一段是在客觀說明生理反應的演化，不是在嘲笑它。
+常考字詞與句型
+no longer（不再）、be useful to sb（對某人有用）、these days（如今）、back in the days（在過去那個年代）、an oncoming predator（逼近的掠食者）、keep sb warm（讓某人保暖）。
+線索範圍說明：however 把前一句祖先時代的用處（might have helped to keep them warm）轉到現在，帶出相反的情況
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Goose bumps are one of those fight-or-flight reactions of the sympathetic nervous system. When you experience cold or fear, a nerve reaction is sent to the muscles, which then contract involuntarily. This muscle contraction causes your body hair to stand erect. The skin with standing body hair 16 a goose's skin after its feathers have been plucked—hence the name goose bumps. But 17 is this helpful to us as a response to fear or cold?
+Back in the days when our ancestors may have had a lot more body hair, this might have helped to keep them warm or scare an oncoming predator. These days, however, goose bumps are 18 to human beings.
+Goose bumps, or the reflex that causes them, also occur in many other mammals. Many mammals fluff up their fur when 19 , to look bigger and thus more dangerous. For example, when a porcupine encounters a predator, its long sharp pointed hairs will stand up as a means of 20 . In animals with a thick hair coat, the rising of hair traps more air between the hairs, providing another layer of insulation to keep them warm.
+中譯：雞皮疙瘩是交感神經系統「戰或逃」反應的其中一種。當你感到寒冷或恐懼時，神經反應會傳送到肌肉，使肌肉不自主地收縮，這種肌肉收縮會讓你的體毛豎立起來。豎起體毛的皮膚，看起來很像鵝被拔完羽毛後的皮膚——這也是「雞皮疙瘩」（goose bumps，字面意思為鵝皮疙瘩）這個名稱的由來。但這對我們面對恐懼或寒冷時真的有幫助嗎？在我們祖先體毛可能還相當濃密的年代，這樣的反應或許能幫助他們保暖，或嚇跑逼近的掠食者。然而，如今雞皮疙瘩對人類來說幾乎已經沒有實際用處了。雞皮疙瘩，或是引發它的反射反應，也出現在許多其他哺乳類動物身上。許多哺乳動物在感到害怕時會把毛髮蓬起，讓自己看起來更龐大、更具威嚇性。舉例來說，當豪豬遇到掠食者時，牠身上又長又尖銳的刺毛會豎立起來，作為一種嚇阻掠食者的手段。對於毛皮濃密的動物來說，毛髮豎起能在毛髮之間留住更多空氣，形成額外一層隔熱保暖的效果。
+📋 內容大意
+Goose bumps are an evolutionary nervous reaction that provided warmth and defense for hairy ancestors and animals, though mostly useless to modern humans.
+← 第17題回到110 年學測試辦考試第19題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

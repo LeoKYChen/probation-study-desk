@@ -1,0 +1,167 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/g115p3.html
+Author: staresto-create ZZSH
+Title: 115 學測閱讀測驗：地圖方位的歷史演變｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 115 學測
+115 學測閱讀測驗：地圖方位的歷史演變
+The Historical Evolution of Map Orientation
+學測 115年第 43–46 題4 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段Have you ever wondered why north comes at the top of a map? Well, north may seem a natural choice for the top spot today, but that wasn’t always the case.
+第 2 段Documents from ancient times indicate that many maps in early ages were pointing to the east, where the sun rose. In ancient India, for example, maps were most likely oriented to the east. Though there is no physical evidence to support this, the word dakshina “south” in Indian languages also means “right,” suggesting that ancient Indians were oriented toward the east, and therefore south was on their right-hand side. Ample evidences from the Old Testament also suggest that east was at the top of maps in pre-Biblical and Biblical eras, a reason why east is still referred to as the “Orient” today.
+第 3 段In the oldest surviving maps, south is at the top, and north points down. Early Egyptian maps showed south on top, most likely because the Nile, vital to Egyptian livelihood, originated in the south. As rivers were believed to flow downward, “up” was therefore south. Map makers in Arabia also drew maps with south on top since the earliest Muslims lived north of Mecca, and a south-oriented map would show the followers looking up toward their holy city.
+第 4 段The preference for north arose during the European age of exploration. At the time, sailors relied on the North Star to find their way across the Mediterranean and later the Atlantic. By the 16th century, when Europe’s search for trading routes was at its peak, maps became Eurocentric, with north on top. The expansion of European imperialism in the following centuries further established the “north up” practice as the standard.
+第 5 段Today, map orientation is taking on a new perspective. In perhaps our most common interaction with maps—the use of GPS systems on our phones and in our cars, directions have ceased to be as important. The layouts are dynamic, oriented toward our travel path.
+第 6 段So, perhaps the north-on-top practice is less a rule and more a blip. After centuries of technological advancements, it seems we’ve ended up right where we began in ancient times: with ourselves in the middle, and our destinations at the top.
+題目
+43.What is the passage mainly about?
+(A)Why east is referred to as the “Orient.”
+(B)How maps differ from GPS in function.
+(C)How map orientation evolved over time.
+(D)Why maps were important during the age of exploration.
+44.What does “this” refer to in the second paragraph?
+(A)The word dakshina.
+(B)Physical evidence.
+(C)Ancient India.
+(D)East-orientation of maps.
+45.Which of the following is closest in meaning to “a blip” in the last paragraph?
+(A)A temporary state.
+(B)An urgent need.
+(C)A critical decision.
+(D)An advanced system.
+46.Which of the following statements is true?
+(A)Sailors took the North Star as their final destination.
+(B)The GPS system has a fixed direction for orientation.
+(C)South was placed at the top of maps in the pre-Biblical era.
+(D)Old Islamic maps put south at the top for religious purposes.
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+43
+(C)
+72%
+63
+44
+(D)
+72%
+48
+45
+(A)
+39%
+55
+46
+(D)
+43%
+55
+答對率與鑑別度出處：大考中心 115 學年度學科能力測驗統計圖表：英文科答對率及鑑別度表
+每一題的依據句
+第 43 題 主旨題 Main idea
+依據句：全文要讀完整篇才能判斷，不在某一句裡。
+第 1 段提問地圖為什麼北方朝上，第 2–5 段依時間寫東方朝上、南方朝上、北方朝上到 GPS 隨路線轉向，所以全文講方位怎麼隨時代演變。(A) 只講第 2 段最後一句，(B) 只講第 5 段的 GPS，(D) 只講第 4 段的時代背景，三個錯誤選項都過於狹隘。
+錯誤選項：(A) 過於狹隘（只講第 2 段）；(B) 過於狹隘（只講第 5 段）；(D) 過於狹隘（只講第 4 段）
+第 44 題 詞義題（指代詞） Vocabulary in context
+第 2 段In ancient India, for example, maps were most likely oriented to the east.
+第 2 段Though there is no physical evidence to support this
+原文 → 正確選項
+maps were most likely oriented to the east → East-orientation of maps
+沒有實物證據可以支持的是前一句的整件事：古印度地圖很可能以東方為上方。(B) Physical evidence 是同一個子句裡的字，(A)、(C) 也都照抄這一段的字詞，但都不是要「證明」的那件事。
+代名詞怎麼找出指的是誰 →
+第 45 題 詞義題 Vocabulary in context
+第 6 段So, perhaps the north-on-top practice is less a rule and more a blip.
+原文 → 正確選項
+a blip → A temporary state
+less A and more B 是「與其說是 A，不如說是 B」，blip 和 rule（長久的規則）相對；下一句又說我們回到了古代的起點，可見北方朝上只是一時的現象。(B) 急迫的需要、(C) 關鍵的決定都和 rule 構不成對比，也接不上「回到起點」；(D) 的 advanced 和下一句的 technological advancements 字形相近，但 blip 講的是北方朝上這個習慣維持不久，和技術先不先進無關。
+怎麼從前後文推出字義 →
+第 46 題 細節題（何者為是） Supporting details
+第 3 段Map makers in Arabia also drew maps with south on top since the earliest Muslims lived north of Mecca, and a south-oriented map would show the followers looking up toward their holy city.
+原文 → 正確選項
+Map makers in Arabia → Old Islamic maps
+drew maps with south on top → put south at the top
+looking up toward their holy city → for religious purposes
+讓信徒抬頭望向聖城麥加，就是出於宗教的理由。(C) 照抄第 2 段的 pre-Biblical，但那個時代是東方朝上；(A) 北極星是用來辨認方向，不是目的地；(B) 第 5 段說 GPS 畫面隨路線轉向，不是固定方向。
+逐段中譯
+第 1 段你有沒有想過，為什麼地圖的上方是北方？如今北方朝上看起來理所當然，但其實並不是一向如此。
+第 2 段古代文獻顯示，早期許多地圖都朝向東方，也就是太陽升起的方向。以古印度為例，當時的地圖很可能以東方為上方。雖然沒有實物證據可以證明這一點，不過印度語言裡表示「南」的 dakshina 這個字也有「右」的意思，可見古印度人面向東方，南方因此在他們的右手邊。舊約聖經裡也有大量證據顯示，在聖經成書之前和聖經時代，地圖上方是東方，這也是東方至今仍叫做 Orient 的原因之一。
+第 3 段現存最古老的地圖是南方朝上、北方朝下。早期埃及地圖把南方畫在上面，很可能是因為對埃及人生計至關重要的尼羅河發源於南方；古人認為河水往下流，所以「上」就是南方。阿拉伯的製圖者也把南方畫在上面，因為最早的穆斯林住在麥加北邊，南方朝上的地圖可以讓信徒抬頭望向他們的聖城。
+第 4 段北方朝上的習慣，是在歐洲的探險時代形成的。當時水手靠北極星辨認方向，航行地中海，後來又橫渡大西洋。到了十六世紀，歐洲尋找貿易航線的熱潮達到高峰，地圖變成以歐洲為中心、北方朝上。之後幾個世紀歐洲帝國主義擴張，更讓「北方朝上」成為標準做法。
+第 5 段如今地圖的方位又有了新的樣貌。我們最常接觸地圖的方式，大概就是用手機和車上的 GPS 系統；在這種情況下，東南西北已經不再那麼重要，畫面會隨時變動，跟著我們的行進路線轉向。
+第 6 段所以，北方朝上這個慣例與其說是規則，不如說只是一時的現象。經過幾百年的科技進步，我們似乎又回到了古代的起點：自己在中間，目的地在上方。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。
+第 1 段Well, north may seem a natural choice for the top spot today, but that wasn’t always the case.
+第 2 段Documents from ancient times indicate that many maps in early ages were pointing to the east, where the sun rose.
+第 3 段In the oldest surviving maps, south is at the top, and north points down.
+第 4 段The preference for north arose during the European age of exploration.
+第 5 段Today, map orientation is taking on a new perspective.
+第 6 段So, perhaps the north-on-top practice is less a rule and more a blip.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體說明文 Expository
+組織方式時序發展 Chronological這一類怎麼辨識 →
+關鍵轉折詞Wellbutfor exampleThoughthereforealsoAsBy the 16th centuryTodaySo
+綱要
+地圖為什麼北方朝上？(Well … but) 其實不是一直都這樣。
+古代地圖多以東方朝上，(for example) 古印度與舊約時代都是，(also) 所以東方至今叫 Orient。
+現存最古老的地圖南方朝上：埃及因尼羅河源自南方，(As) 河往下流，阿拉伯則因麥加在南方。
+歐洲航海時代水手靠北極星導航，(By the 16th century) 地圖以歐洲為中心、北方朝上，帝國主義擴張後成為標準。
+(Today) GPS 地圖隨行進方向轉動，(So) 北方朝上或許只是一時現象，我們又回到古人以自己為中心的方式。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 17 個、參考字彙 14 個、字詞搭配 11 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+document[ˈdɑkjəmənt]n.文獻、文件五級第 2 段詞彙題考過 2 次：98 指考第 9 題 documented（誘答）、96 學測第 13 題 documents（答案）
+physical[ˈfɪzɪkəl]adj.實物的（physical evidence 實物證據）四級第 2 段詞彙題考過 2 次：103 學測第 3 題 physically（誘答）、96 指考第 4 題 physically（誘答）
+evidence[ˈɛvədəns]n.證據四級第 2 段詞彙題考過 1 次：92 學測補考第 8 題（答案）
+vital[ˈvaɪtəl]adj.至關重要的四級第 3 段詞彙題考過 1 次：90 學測第 7 題（答案）
+follower[ˈfɑloʊɚ]n.信徒、追隨者三級第 3 段詞彙題考過 1 次：90 聯考第 4 題（誘答）
+preference[ˈprɛfərəns]n.偏好五級第 4 段詞彙題考過 2 次：107 指考第 7 題（誘答）、89 聯考第 7 題（答案）
+route[rut]n.路線、航線（trading routes 貿易航線）四級第 4 段詞彙題考過 1 次：111 學測第 9 題（誘答）
+expansion[ɪkˈspænʃən]n.擴張四級第 4 段詞彙題考過 1 次：86 聯考第 5 題（答案）
+orientation[ˌɔriɛnˈteɪʃən]n.方位、朝向四級第 5 段詞彙題考過 1 次：93 指考第 2 題（答案）
+interaction[ˌɪntɚˈækʃən]n.接觸、互動四級第 5 段詞彙題考過 3 次：110 學測第 7 題（答案）、94 指考第 9 題（誘答）、93 學測第 6 題（誘答）
+cease[sis]v.停止、不再（cease to be 不再是）四級第 5 段詞彙題考過 2 次：105 學測第 4 題 ceased（誘答）、100 學測第 11 題（誘答）
+dynamic[daɪˈnæmɪk]adj.不斷變化的、動態的四級第 5 段詞彙題考過 1 次：102 指考第 8 題（誘答）
+destination[ˌdɛstəˈneɪʃən]n.目的地五級第 6 段詞彙題考過 1 次：109 指考補考第 7 題（誘答）
+temporary[ˈtɛmpəˌrɛri]adj.暫時的三級第 45 題詞彙題考過 6 次：101 學測第 8 題 temporarily（誘答）、99 學測第 1 題（誘答）、97 學測第 10 題（誘答）、97 指考第 9 題 temporarily（誘答）、92 學測第 4 題（答案）、91 指考第 10 題 temporarily（答案）
+urgent[ˈɝʤənt]adj.緊急的、迫切的四級第 45 題詞彙題考過 4 次：104 學測第 8 題（誘答）、101 學測第 8 題 urgently（誘答）、96 指考第 10 題（誘答）、95 指考第 10 題（誘答）
+advanced[ədˈvænst]adj.先進的三級第 45 題詞彙題考過 1 次：111 學測第 1 題（誘答）
+religious[rɪˈlɪʤəs]adj.宗教的三級第 46 題詞彙題考過 1 次：97 學測第 5 題（誘答）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+oriented （詞彙表：orient）[ˈɔriˌɛntɪd]adj.朝向……的（oriented to／toward）六級第 2 段
+dakshinan.（印度語言）南方；右邊表外第 2 段
+ample[ˈæmpəl]adj.大量的、充足的五級第 2 段
+pre-Biblical[ˌpriˈbɪblɪkəl]adj.《聖經》時代以前的表外第 2 段
+livelihood[ˈlaɪvliˌhʊd]n.生計表外第 3 段
+originate[əˈrɪʤəˌneɪt]v.發源六級第 3 段
+downward[ˈdaʊnwɚd]adv.向下六級第 3 段
+south-oriented （詞彙表：orient）[ˈsaʊθˌɔriˌɛntɪd]adj.南方朝上的、以南方為上的六級第 3 段
+exploration[ˌɛkspləˈreɪʃən]n.探險、探索五級第 4 段
+imperialism[ɪmˈpɪriəˌlɪzəm]n.帝國主義表外第 4 段
+perspective[pɚˈspɛktɪv]n.觀點、角度（take on a new perspective 有了新的面貌）五級第 5 段
+layout[ˈleɪˌaʊt]n.版面、配置六級第 5 段
+blip[blɪp]n.短暫的偏離、一時的現象表外第 6 段
+evolve[ɪˈvɑlv]v.演變、逐漸發展五級第 43 題
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+be the case情況是如此第 1 段原文：that wasn’t always the case
+be oriented to／toward + N朝向……第 2 段原文：were most likely oriented to the east
+physical evidence實物證據第 2 段原文：no physical evidence to support this
+be referred to as + N稱為……第 2 段原文：is still referred to as the “Orient”
+originate in + 地方發源於……第 3 段原文：originated in the south
+find one's way找到路第 4 段原文：to find their way across the Mediterranean
+be at its peak正處於巔峰第 4 段原文：was at its peak
+take on + N呈現（新的面貌）第 5 段原文：is taking on a new perspective
+cease to + V不再……第 5 段原文：have ceased to be as important
+less A and more B與其說是 A，不如說是 B第 6 段原文：less a rule and more a blip
+end up + 地方最後落到……第 6 段原文：we’ve ended up right where we began
+← 上一篇篇目一覽
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

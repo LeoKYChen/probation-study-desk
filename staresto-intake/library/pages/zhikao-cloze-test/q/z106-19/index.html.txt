@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z106-19/index.html
+Author: staresto-create ZZSH
+Title: 106 年指考克漏字第19題詳解（連接詞／轉折詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 106 年指考 ／ 第19題
+106 年指考 克漏字 第19題
+連接詞／轉折詞線索：跨句答對率 79%
+答對率 79%：當年每 100 位考生，有 79 位答對。
+This is why enzymes are crucial in the sustenance of life on earth. Enzymes, 19 , do not always function perfectly.
+(A)hereafter
+(B)instead
+(C)likewise
+(D)however
+答案：(D) however
+題目編號：Z106_19（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【轉折詞】前句強調酵素對維持生命至關重要，後句卻指出酵素「不是每次都能完美運作」，語意轉折，故用 however（然而）。hereafter（此後）、instead（取而代之）、likewise（同樣地）都不符合此處對比語境。
+深入解析
+你可能會這樣想
+however 這個字，你的印象大概只有它出現在句首、後面接一個逗號（However, …）。本題它夾在主詞 Enzymes 與動詞 do not always function 之間，前後各一個逗號，位置一陌生就會覺得「這裡放不了 however」，轉而去挑看起來比較像插入語的字。
+怎麼判斷
+四個選項 hereafter、instead、likewise、however 都是副詞，文法上都插得進兩個逗號中間，可見這一格考的是前後兩句的邏輯方向。前一句 This is why enzymes are crucial in the sustenance of life on earth 說酵素對維繫地球生命至關重要，本句 Enzymes … do not always function perfectly 卻說它們不是每次都能完美運作，一正一反，要的是表相反的轉折詞，四個選項裡只有 however 站在反方向。至於位置，therefore、however 這一類詞歸在「連接副詞」（linking adjunct）底下，可以出現在副詞能出現的任何位置（劍橋 English Grammar Today），插在主詞與動詞之間、前後用逗號隔開是很常見的寫法。鑑別度 44，分的是有沒有真的把前後兩句的方向擺在一起比對，而不是只憑哪個字看起來像插入語。
+誘答選項
+likewise（同樣地）要求前後同向，但前句在說酵素多重要、本句在說它會出錯，方向相反。instead（取而代之）要求「不是 A 而是 B」的替換關係，前一句並沒有被推翻掉。hereafter（此後、今後）是時間副詞，多見於法律與公文，本題前後兩句之間沒有時間先後可分。
+常考字詞與句型
+not always（不是每次都，部分否定）、function perfectly（完美運作）、be crucial in／to（對…至關重要）、This is why …（這就是為什麼…）、however 插在主詞與動詞之間（前後各用一個逗號隔開）、the sustenance of life（生命的維繫）。
+線索範圍說明：however 轉折前一句對酵素的正面評價
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：106學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+One factor that separates a living thing from an inanimate object is the organism's ability to carry out chemical reactions that are crucial for its survival. Imagine the infinite amount of reactions that a large organism such as human carries out every single day. 16 of these reactions are possible without enzymes.
+Enzymes consist of various types of proteins that work to drive the chemical reactions 17 for certain types of nutrients to take effect. Enzymes can either launch a reaction or speed it up. In the absence of enzymes, reactants may take hundreds of years to convert into a usable product, if they are able to do so 18 . This is why enzymes are crucial in the sustenance of life on earth.
+Enzymes, 19 , do not always function perfectly. In 1902 Sir Archibald Garrod was the first to attribute a 20 to an enzyme defect, which he later referred to as an "inborn error of metabolism." Today, newborns are routinely screened for certain enzyme defects such as PKU (phenylketonuria) and galactosemia, an error in the handling of the sugar galactose.
+中譯：使生物體有別於無生命物體的其中一項因素，在於該生物體能夠進行維持其生存所必需的化學反應。試想像人類這樣的大型生物體，每天要進行的反應數量是多麼龐大。在沒有酵素的情況下，這些反應沒有一個能夠發生。酵素由多種蛋白質組成，其作用是推動某些營養素發揮效用所需的化學反應。酵素能夠啟動反應，也能加快反應速度。若缺乏酵素，反應物即使終究能夠轉化為可用的產物，也可能需要耗費數百年的時間。這正是酵素之所以對維持地球生命至關重要的原因。然而，酵素並不是每次都能完美運作。1902 年，阿奇博爾德．加羅德爵士首度將某種疾病歸因於酵素缺陷，他後來將此稱為「先天性代謝異常」。如今，新生兒會例行接受特定酵素缺陷的篩檢，例如苯酮尿症（PKU）以及一種在處理半乳糖這種糖分時出現異常的半乳糖血症。
+📋 內容大意
+Living things survive by carrying out countless chemical reactions, and enzymes make every one of them possible.
+These proteins start reactions or hurry them along, work that would otherwise take centuries.
+Enzymes can fail; such defects have been recognized since 1902, and babies are now screened for them.
+← 第18題回到106 年指考第20題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

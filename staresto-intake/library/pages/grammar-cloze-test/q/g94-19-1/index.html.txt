@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g94-19-1/index.html
+Author: staresto-create ZZSH
+Title: 94 年學測克漏字第19題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 94 年學測 ／ 第19題
+94 年學測 克漏字 第19題
+字彙選義線索：句內答對率 76%
+答對率 76%：當年每 100 位考生，有 76 位答對。
+His father, 19 always hoped that he would get a PhD and become a professor, 20 with a scoff: “What is all this nonsense?!”
+(A)who
+(B)while
+(C)that
+(D)when
+答案：(A) who
+題目編號：G94_19_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+關係代名詞 who 引導非限定關係子句，修飾先行詞 His father（他的父親一直希望他能拿到博士學位）；while（連接詞不是關係代名詞）、that（非限定關係子句通常不用 that）、when（不修飾人）都不合。
+深入解析
+你可能會這樣想
+被一對逗號夾住的那一段常常被跳過不讀，於是 His father 和第 20 格之間隔了一長串，等到要填第 20 格時已經忘了主詞是誰。這兩格其實是一組：先認出 who ... professor 只是插進來補充說明父親的，才看得出來第 20 格才是整句真正的主要動詞。
+怎麼判斷
+先看四個選項的共同點：who、while、that、when 都是用來把兩段話接起來的詞，沒有一個在考單字意思，可見這一格問的是「後面那個子句要用什麼接上來」。（同卷第 21 題也是四個 wh- 詞，但那一格是間接問句；兩者的分辨方法寫在第 21 題。）空格後面直接就是動詞 always hoped，前面缺一個主詞，所以空格要填的是能兼當主詞的關係代名詞，而先行詞 His father 是人，用 who。還原成兩句就一目了然：His father always hoped that he would get a PhD and become a professor. + His father {20} with a scoff.，把重複的 His father 換成 who，再用一對逗號把它嵌回去。這種用逗號夾住、只是補充說明的關係子句叫非限定關係子句。
+誘答選項
+that：非限定關係子句不用 that（劍橋 English Grammar Today 的 relative clauses 條目），看到逗號就可以先把 that 刷掉。while、when：兩個都是連接詞，後面要接一個主詞齊全的子句，但這裡動詞 hoped 前面正好缺主詞；而且 when 用來接時間，不能拿來指人。
+常考字詞與句型
+hope that 子句（希望……）、get a PhD（取得博士學位）、major in（主修）、go on tour（巡迴演出）、exhaust oneself（使自己筋疲力盡）、it turns out that …（結果是……）。其中 it turns out that … 這一組考過 4 個年度，83 年第 16 題 →、89 年第 26 題 →、105 年第 17 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Experts say that creativity by definition means going against the tradition and breaking the rules. To be creative, you must dare 16, and courageously express your own outlook and 17 what makes you unique. But does our society encourage children to break the rules? I'm afraid the answer is no.
+The famous film director Ang Lee recalls his father's disappointment with him when he was young. 18 a small child, he would pick up a broom and pretend to be playing guitar for the entertainment of family guests. Then, when he was studying film in college, he would exhaust himself just for a performance tour. His father, 19 always hoped that he would get a PhD and become a professor, 20 with a scoff: "What is all this nonsense?!"
+But it later turned out that it was exactly his courage to "rebel" and to express his own ideas that marks his films with distinct creativity.
+中譯：專家表示，創造力就其定義而言，意味著要違背傳統、打破常規。要有創造力，你必須敢於叛逆，並勇敢地表達自己獨特的觀點與特質。但我們的社會真的鼓勵孩子打破常規嗎？恐怕答案是否定的。知名導演李安曾回憶，年少時父親對他相當失望。當他還是個小孩子時，他會拿起掃把假裝彈吉他，只為了娛樂家中的賓客。後來，當他在大學主修電影時，他甚至會為了一場公演而累到筋疲力竭。他的父親一直希望他能拿到博士學位、成為一名教授，總是嗤之以鼻地說：「這些荒唐事到底是在做什麼？！」然而，事實證明，正是他敢於「叛逆」、勇於表達自己想法的勇氣，才成就了他電影中鮮明獨特的創造力。
+📋 內容大意
+Ang Lee's early rebellion against his father's traditional expectations allowed him to develop the unique creativity that defined his film career.（敘事文）
+← 第18題回到94 年學測第20題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

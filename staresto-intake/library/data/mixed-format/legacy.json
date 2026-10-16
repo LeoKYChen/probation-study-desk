@@ -1,0 +1,303 @@
+{
+  "meta": {
+    "title": "簡答題展示區（86–92 學年度）",
+    "purpose": "可作答，交卷後自評。不進學習歷程統計、不計入全站題數。",
+    "counts": { "sets": 10, "questions": 50, "pointsPerSet": 10 },
+    "answerSourceKey": {
+      "official": "有大考中心公布之參考答案佐證",
+      "derived": "本站依原文推得，站上標示「本站推得」"
+    },
+    "naming": "91 學年度起稱指考；83–90 學年度非指考者稱學測；83 學年度以前稱大學聯考。",
+    "missing": null,
+    "textPolicy": "選文與題目為原卷文字，未改寫。僅將原卷排版符號正規化：條列符號統一為 •，裝飾用星號列省略。引號一律用直式雙引號。"
+  },
+  "sets": [
+    {
+      "id": "LG86",
+      "examYear": 86,
+      "examLabel": "86 學年度學科能力測驗",
+      "sessionType": "正式",
+      "topic": "笑與健康",
+      "instruction": "根據以下短文簡答下列五個問題，並將答案寫在「答案卷」上。不必用完整的句子，大小寫不拘，但需標明題號。每題 2 分，共 10 分。",
+      "answerRule": "不必用完整句，大小寫不拘",
+      "passage": [
+        { "type": "p", "text": "Do you know that happy folks recover from illness much more readily than people who are depressed and always complaining?" },
+        { "type": "p", "text": "The old sages always used to say that laughter was the best medicine—indeed, better than medicine." },
+        { "type": "p", "text": "Someone else remarked that \"a merry heart does good, like medicine\"—and infectious laughter is often catching. Don't you find it so? I like the anonymous verse which sums it all up:" },
+        { "type": "verse", "lines": [
+          "When wholesome laughter fills the air,",
+          "Some ills will soon depart;",
+          "For laughter is good medicine",
+          "That helps to cheer the heart."
+        ] }
+      ],
+      "questions": [
+        { "n": 1, "q": "According to the passage, what type of people are more likely to get well sooner when they get sick?", "answers": ["happy folks", "happy people"], "answerNote": null },
+        { "n": 2, "q": "Which word in the passage means 'very wise men'?", "answers": ["sages"], "answerNote": null },
+        { "n": 3, "q": "Which word in the passage is closest in meaning to 'infectious'?", "answers": ["catching"], "answerNote": null },
+        { "n": 4, "q": "Who is the author of the poem?", "answers": ["anonymous", "unknown"], "answerNote": "選文以 anonymous verse 帶出，答案即在該詞。" },
+        { "n": 5, "q": "In the poem, which word rhymes with 'depart'?", "answers": ["heart"], "answerNote": null }
+      ],
+      "answerSource": "derived",
+      "bridge": "第 2、3 題是「用釋義換原文的字」，和現在混合題的 110 試辦第 49 格、112 學測第 50 格、114 學測第 50 格問法相同。",
+      "internalNote": "第 5 題問押韻，十場中僅此一題涉及詩律。答案卷未公布非選答案。"
+    },
+    {
+      "id": "LG87",
+      "examYear": 87,
+      "examLabel": "87 學年度學科能力測驗",
+      "sessionType": "正式",
+      "topic": "April Rain Song（詩）",
+      "instruction": "以下為一篇短詩，請於閱讀後，以單字或片語簡答詩後所附之問題。請先標明題號，再將答案寫在「答案卷」上。每題答對得 2 分。",
+      "answerRule": "以單字或片語作答",
+      "passage": [
+        { "type": "heading", "text": "April Rain Song" },
+        { "type": "byline", "text": "by Langston Hughes" },
+        { "type": "verse", "lines": [
+          "Let the rain kiss you.",
+          "Let the rain beat upon your head with silver liquid drops.",
+          "Let the rain sing you a lullaby.",
+          "The rain makes still pools on the sidewalk.",
+          "The rain makes running pools in the gutter.",
+          "The rain plays a little sleep-song on our roof at night—",
+          "And I love the rain."
+        ] }
+      ],
+      "questions": [
+        { "n": 1, "q": "Which season of the year serves as the setting of the poem?", "answers": ["spring"], "answerNote": "答案不在字面上，須由詩題 April 推得。" },
+        { "n": 2, "q": "Which word in the poem is closest in meaning to sleep-song?", "answers": ["lullaby"], "answerNote": null },
+        { "n": 3, "q": "What does the phrase silver liquid drops refer to?", "answers": ["the rain", "raindrops"], "answerNote": null },
+        { "n": 4, "q": "Which word in the poem is opposite in meaning to running?", "answers": ["still"], "answerNote": null },
+        { "n": 5, "q": "Which of the following words best describes the rain in this poem: boring, harsh, depressing, heavy, hopeful, or musical?", "answers": ["musical"], "answerNote": null }
+      ],
+      "answerSource": "derived",
+      "bridge": "第 2、4 題一個問同義、一個問反義，答案都要回詩裡找出那個字，和 111 學測第 48 格、115 參考試卷第 48 格是同一種問法。",
+      "internalNote": "著作權：Langston Hughes 卒於 1967 年，我國著作權法保護期間為著作人死亡後 50 年，2017 年底屆滿；本詩 1921 年首次發表，在美國亦屬公共領域。可全文收錄，勿再誤判。十場中唯一以詩為選文者——同樣的問法套在不同文體上，值得對學生點出。"
+    },
+    {
+      "id": "LG88",
+      "examYear": 88,
+      "examLabel": "88 學年度學科能力測驗",
+      "sessionType": "正式",
+      "topic": "四則徵才廣告",
+      "instruction": "根據下面的求職廣告內容，回答下列問題。注意答案要寫在「答案卷」上。寫答案時要標明題號，題 1 與題 5 的答案用各則廣告的英文字母代號。題 2、3、4 要寫 job 的名稱。每題 2 分，共 10 分。",
+      "answerRule": "題 1、5 寫廣告的英文字母代號；題 2、3、4 寫 job 的名稱",
+      "passage": [
+        { "type": "ad", "letter": "A", "heading": "MARKETING PROFESSIONALS", "blocks": [
+          { "type": "p", "text": "A major US corporation in the health and nutritional industry has announced the opening of its direct selling division in Taiwan." },
+          { "type": "p", "text": "The company offers the most lucrative compensation plan in the industry and has paid over $3.5 billion NTD in commissions in just 6 years in the US. We are a group of top earners." },
+          { "type": "p", "text": "Applicants should meet the requirements:" },
+          { "type": "list", "items": [
+            "(1) Taiwan citizen",
+            "(2) Have interest or experience in marketing",
+            "(3) Aggressive, energetic, and willing to learn"
+          ] },
+          { "type": "p", "text": "If you believe you have what it takes to develop this business, please call 2742-6996" }
+        ] },
+        { "type": "ad", "letter": "B", "heading": "Service Technician", "blocks": [
+          { "type": "lead", "text": "An international company requires a" },
+          { "type": "p", "text": "To service and maintain electronic medical equipment" },
+          { "type": "p", "text": "Applicants should possess degree in electronics. The selected candidate will undergo a training program to be conducted by our manufacturer's trained technical personnel." },
+          { "type": "p", "text": "Interested candidates please apply immediately with resume and mail to P.O. box 594. Or telephone Ms. Chang at 2945-0027 for an immediate interview." }
+        ] },
+        { "type": "ad", "letter": "C", "heading": "Wanted: Reporters & Editors", "blocks": [
+          { "type": "p", "text": "Qualifications:" },
+          { "type": "list", "items": [
+            "• Strong command of English language",
+            "• Chinese speaking and reading ability a must",
+            "• a university degree",
+            "• Journalism education and/or experience a plus"
+          ] },
+          { "type": "p", "text": "Flexible working hours (30 hours per week)" },
+          { "type": "p", "text": "Good work environment and great co-workers" },
+          { "type": "p", "text": "Medical insurance, etc." },
+          { "type": "p", "text": "Fax resume and work samples, if any, to The China Post at (03) 2595-7962." }
+        ] },
+        { "type": "ad", "letter": "D", "heading": "Southeastern Travel Services", "blocks": [
+          { "type": "lead", "text": "OPENINGS" },
+          { "type": "p", "text": "TOUR GUIDES" },
+          { "type": "p", "text": "Duties: To conduct escorted tours for foreign visitors; to assist with travel and transportation arrangements." },
+          { "type": "p", "text": "Qualifications: Good appearance. High school diploma. Good Knowledge of English. Outgoing personality." },
+          { "type": "p", "text": "Call 2703-2172 after 3:00 PM. Ask for Gary." }
+        ] }
+      ],
+      "questions": [
+        { "n": 1, "q": "Which advertisements are NOT placed by foreign companies? (Write down the letters representing such advertisements.)", "answers": ["C, D"], "pick": { "from": ["C", "D"], "n": 2 }, "answerNote": "A 自述 a major US corporation、B 自述 an international company，兩則明寫外商；C、D 未提，由對比推得。" },
+        { "n": 2, "q": "Which job has the best benefits in addition to the regular salary?", "answers": ["Reporters & Editors"], "answerNote": "四則之中只有 C 列出彈性工時、工作環境與醫療保險。" },
+        { "n": 3, "q": "Wendy is good at writing and she doesn't like to work according to a fixed schedule. Which of the four jobs might be more suitable for her?", "answers": ["Reporters & Editors"], "answerNote": null },
+        { "n": 4, "q": "Charles has a strong interest in technology. Which of the four jobs should he apply for?", "answers": ["Service Technician"], "answerNote": null },
+        { "n": 5, "q": "Which advertisement does not need direct contact by making telephone calls? (Write down the letter representing the advertisement.)", "answers": ["C"], "answerNote": "四則裡只有 C 沒有列電話，只給傳真。不過 B 寫「寄 P.O. box 594，或打電話安排面試」，也可以不打電話；題幹用單數 the letter，本題庫判斷答案是 C，這個疑點也一併寫在這裡。" }
+      ],
+      "answerSource": "derived",
+      "bridge": "四個標字母的區塊，讀完要回頭配對，和 112 學測第 49 格（八則發言）、114 學測第 49 格（十則發言）、115 學測第 49 格（六家店）是同一種設計；第 3、4 題先給一個人的條件再回廣告找工作，就是 115 學測第 49 格陳家人買紀念品那一格的作法。大考中心《學科能力測驗英文考科考試說明（111 學年度起適用）》把這四則廣告改寫成混合題的示範題，本題庫收在場次清單裡，標「考試說明示範題」。",
+      "internalNote": "本組與大考中心 108 年研究用試卷的版本為同一組廣告，版面與行文大致沿用，但條件與聯絡方式改過多處（A：Taiwan citizen → Hold R.O.C. citizenship，且 Have interest or experience in marketing → Have a university degree and experiences in marketing，電話補上 (02)；B：An international company → A local company，service → repair，possess degree → possess a university degree，2945-0027 → (07) 294-5078；C：great co-workers → great colleagues，Medical insurance, etc. → Health insurance and annual leave provided，Fax 至 The China Post → 電子郵件寄給 Ms. Alice Wu at The Asia Post；D：Good appearance. → Pleasant attitude.，Good Knowledge of English → Good proficiency in English，2703-2172 → (04) 2723-2172，Ask for Gary → Ask for Gary Hu）。其中 A 加上大學學歷要求，正是示範試題第 3 題（哪一則沒要求大學學歷）成立的關鍵；B 由外商改為本地公司，則使 88 年第 1 題（哪幾則非外商刊登）在新版失去依據。該版本為《學科能力測驗英文考科考試說明－111 學年度起適用》混合題型示範試題 [例 2]。另：同一組廣告亦為該年英文作文題目（兩段分述最想與最不想做的工作），十場中有兩場一篇選文同時支撐簡答題與作文，另一場為 92 學測補考。原卷 C 之條列符號為特殊字元，已正規化為 •；D 之裝飾星號列已省略。"
+    },
+    {
+      "id": "LG89",
+      "examYear": 89,
+      "examLabel": "89 學年度學科能力測驗",
+      "sessionType": "正式",
+      "topic": "兒童減重計畫新聞報導",
+      "instruction": "根據下面這則報導，回答下列問題。答案必須寫在「答案卷」上。作答時要標明題號，答案請簡明扼要。每題 2 分，共 10 分。",
+      "answerRule": "簡明扼要",
+      "passage": [
+        { "type": "p", "text": "The Tri Service General Hospital yesterday held a ceremony for 35 children who completed a hospital-sponsored weight-loss program during their summer vacation." },
+        { "type": "p", "text": "The students lost an average of 2.34 kilograms during the past two months, and the student who lost the most, the nine-year-old Howard Chang, shed more than six kilograms." },
+        { "type": "p", "text": "\"My weight dropped to 48.3 from 54.4 kilograms, and my classmates won't be able to call me 'porker' anymore,\" Chang said happily." },
+        { "type": "p", "text": "\"Howard calculated the calories of everything he ate during his participation in the program,\" his mother said." },
+        { "type": "p", "text": "\"He would deliberate before eating even a slice of pizza because it has 350 calories,\" the mother said." },
+        { "type": "p", "text": "When asked what he most wanted to do following the accomplishment, Chang replied, \"Eat at McDonald's.\"" }
+      ],
+      "questions": [
+        { "n": 1, "q": "What is the problem common to the children who participated in the program?", "answers": ["(they were) overweight"], "answerNote": null },
+        { "n": 2, "q": "What do you think the word \"shed\" means in this passage?", "answers": ["lost"], "answerNote": null },
+        { "n": 3, "q": "Why is Howard Chang specifically mentioned in the passage?", "answers": ["he lost the most weight"], "answerNote": null },
+        { "n": 4, "q": "Which word in the passage most likely means \"to think about something seriously and carefully, especially before making an important decision\"?", "answers": ["deliberate"], "answerNote": null },
+        { "n": 5, "q": "It can be inferred from the passage that Howard will probably gain his weight back again. What is the clue?", "answers": ["he wanted to eat at McDonald's", "eat at McDonald's", "McDonald's"], "answerNote": "這一場只規定「簡明扼要」，沒有字數上限，比較短的寫法也一起收。" }
+      ],
+      "answerSource": "derived",
+      "bridge": "第 4 題給一長串英英釋義、要學生回文章挑出那個字，和 110 試辦第 49 格、112 學測第 50 格、114 學測第 50 格的問法一模一樣。",
+      "internalNote": "第 5 題要學生指出推論的依據，不是問結論，十場中僅此一題。"
+    },
+    {
+      "id": "LG90",
+      "examYear": 90,
+      "examLabel": "90 學年度學科能力測驗",
+      "sessionType": "正式",
+      "topic": "猿與人的相似",
+      "instruction": "閱讀下面這篇文章，然後簡答下列問題。答案必須寫在「答案卷」上。請依序作答，並標明題號。答案應簡明扼要，不必用完整句，最多三個英文單詞（words）。每題 2 分，共 10 分。注意：請勿抄下整句或整行，否則不予計分。",
+      "answerRule": "最多三個英文單詞，不必用完整句；抄整句或整行不予計分",
+      "passage": [
+        { "type": "p", "text": "Every time we watch apes in their cages we are startled by their manlike behavior. The monkey house has a strange fascination. The visitors would be even more startled if they were fully aware of all the existing similarities between them and these animals. These include not only external behavior, but also all the organs, the whole skeleton, every single bone and tooth. The brain of a chimpanzee has the same internal structure and on its surface the same pattern of folds as the human brain, which, however, is three times as large. The way the mother chimpanzee nurses its young is not unlike that of the human mother. These and thousands of other features point to a blood relationship in the truest sense of the word. This can be clearly demonstrated by comparing the genes of chimpanzees and those of humans: the difference between them is just about 2 percent." }
+      ],
+      "questions": [
+        { "n": 1, "q": "Write down two physical similarities between humans and apes.", "answers": ["organs", "skeleton", "bones", "teeth", "brain structure"], "pick": { "from": ["organs", "skeleton", "bones", "teeth", "brain structure"], "n": 2 }, "answerNote": "任舉兩項。" },
+        { "n": 2, "q": "Where is the monkey house most probably located?", "answers": ["(in) a zoo"], "answerNote": "答案文中一字未提，須由 cages、visitors 推得。" },
+        { "n": 3, "q": "What is the main difference between a chimpanzee's brain and a human's?", "answers": ["size"], "answerNote": "本場限三個英文單詞，只能答差異之所在；寫成「人腦大三倍」雖正確但超出字數。" },
+        { "n": 4, "q": "What is the most precise way to prove a close blood relationship between humans and chimpanzees?", "answers": ["comparing genes"], "answerNote": "本場限三個英文單詞，補上 2% 差異的說明會超出字數。" },
+        { "n": 5, "q": "What activity shows that a mother chimpanzee and a human mother are very similar to each other?", "answers": ["nursing (its) young"], "answerNote": null }
+      ],
+      "answerSource": "derived",
+      "bridge": "第 1 題要從文章裡找出兩個並列項目填進去，和 111 參考試卷第 50(A)、50(B) 格那兩格表格填空的作法相同。",
+      "internalNote": "第 2 題屬「答案不在字面上」，八場混合題中反而少見。"
+    },
+    {
+      "id": "LG91",
+      "examYear": 91,
+      "examLabel": "91 學年度學科能力測驗",
+      "sessionType": "正式",
+      "topic": "亞馬遜雨林砍伐",
+      "instruction": "閱讀下面這篇文章，然後簡答下列問題。答案必須寫在「答案卷」上。請依序作答，並標明題號。答案應簡明扼要，只寫重要詞彙（key words），約二至三個英文單詞（words）。每題 2 分，共 10 分。注意：請勿抄下整句或整行，否則不予計分。",
+      "answerRule": "只寫重要詞彙，約二至三個英文單詞；抄整句或整行不予計分",
+      "passage": [
+        { "type": "p", "text": "South America is a place of striking beauty and wonder. The heart of this continent is the Amazon Rainforest, a vast paradise watered by one of the world's greatest rivers. Because of the tremendous amount of oxygen produced in this area, it has been called the \"lungs of the earth.\"" },
+        { "type": "p", "text": "A team of scientists, teachers, and students, the AmazonQuest team, recently explored some of the wonders of the Amazon Rainforest. They canoed down rivers, hiked along muddy trails, and climbed into the forest to explore and learn. The following is a report by one of the team members:" },
+        { "type": "p", "text": "\"I watched a small piece of the Amazon Rainforest disappear today. This morning, two men from the village of Roaboia led us into the forest. For 20 minutes, we walked along a path past tall weeds, banana trees, and low brush. Our destination was a 150-foot tall capirana tree, by far the biggest tree around. It would take 10 people holding hands to surround the base of its trunk." },
+        { "type": "p", "text": "The men took out an axe and an electric saw and started cutting into the tree's silky smooth skin. As beautiful as they are, people here chop down capirana trees for their wood. With a loud roar, the saw chewed into the 150-year old tree. Then, in about 30 minutes after the cutting began, the giant tree crashed down violently and shook the ground under our feet." },
+        { "type": "p", "text": "This, of course, is just one of the millions of trees that fall in the Amazon each year. Brazil's Environmental Ministry estimates that in 1970, 99 percent of the original Amazon Rainforest remained, but in 2000, only 85 percent. It is estimated that more than 33 million acres of Amazonian Rainforest disappear every year. That means that 64 acres of the rainforest is lost every minute.\"" }
+      ],
+      "questions": [
+        { "n": 1, "q": "Which place is called \"the lungs of the earth\"?", "answers": ["the Amazon Rainforest"], "answerNote": null },
+        { "n": 2, "q": "What kinds of people are on the AmazonQuest team?", "answers": ["scientists, teachers, (and) students"], "pick": { "from": ["scientists", "teachers", "students"], "n": 3 }, "answerNote": null },
+        { "n": 3, "q": "How long did it take the two men to cut down the giant capirana tree?", "answers": ["about 30 minutes"], "answerNote": null },
+        { "n": 4, "q": "Between 1970 and 2000, what percentage of the original Amazon Rainforest was cut down?", "answers": ["14 percent"], "answerNote": "須運算：99 − 85 = 14。" },
+        { "n": 5, "q": "According to this report, about how many acres of the Amazon Rainforest are lost every second?", "answers": ["about one acre", "about 1.07 acres"], "answerNote": "要計算：64 acres ÷ 60 秒 ≈ 1.07。題目問 about how many，出題者把每分鐘設為 64 acres，顯然是要學生得出「大約一英畝」；學生按計算機寫 1.07 也不能算錯，兩種都收。" }
+      ],
+      "answerSource": "derived",
+      "bridge": "第 1、2、3 題都是回文章定位一句話就能作答，和 112 學測第 47 格、113 學測第 50 格屬同一類；第 4、5 題要動筆算，這在八場混合題裡沒有對應。",
+      "internalNote": "十場中唯一需要換算的簡答題。"
+    },
+    {
+      "id": "LG91M",
+      "examYear": 91,
+      "examLabel": "91 學年度學科能力測驗（補考）",
+      "sessionType": "補考",
+      "topic": "男女用語差異",
+      "instruction": "閱讀下面這篇文章，然後簡答下列問題。答案必須寫在「答案卷」上。請依序作答，並標明題號。答案應簡明扼要，只寫重要詞彙（key words），約二至三個英文單詞（words）。每題 2 分，共 10 分。注意：請勿抄下整句或整行，否則不予計分。",
+      "answerRule": "只寫重要詞彙，約二至三個英文單詞；抄整句或整行不予計分",
+      "passage": [
+        { "type": "p", "text": "Do women really use language differently from men? Over the years, researchers have given different answers to this question. In the legends of some cultures, it is even claimed that men and women speak different languages. If this were true, how could boys communicate with their mothers? One research report shows men and women use much the same grammar and vocabulary in English, although each sex uses certain kinds of words and structures more frequently than the other. Most men use more swear words, while far more women use adjectives such as \"super\" and \"lovely,\" and exclamations such as \"Goodness me!\" and \"Oh dear!\" Women have been found to ask more questions, make more use of positive and encouraging \"noises,\" use a wider range of intonation patterns, and make greater use of the pronouns \"you\" and \"we.\" By contrast, men are much more likely to interrupt (about three times as often in some studies), to argue about what has been said, to ignore or respond poorly to what has been said, to introduce more new topics into the conversation, and to make more assertions." }
+      ],
+      "questions": [
+        { "n": 1, "q": "What stories in some cultures state that men and women speak differently?", "answers": ["legends"], "answerNote": null },
+        { "n": 2, "q": "According to one research report, which two parts of English are generally shared by men and women?", "answers": ["grammar and vocabulary"], "answerNote": null },
+        { "n": 3, "q": "What adjectives do women use more often than men?", "answers": ["\"super\" and \"lovely\""], "answerNote": null },
+        { "n": 4, "q": "What kind of words do men use more frequently than women?", "answers": ["swear words"], "answerNote": null },
+        { "n": 5, "q": "According to some studies, how often do men interrupt as compared with women?", "answers": ["three times as often"], "answerNote": null }
+      ],
+      "answerSource": "derived",
+      "bridge": "五題全是回文章定位、抓出關鍵詞就能作答，和 112 學測第 47 格、113 學測第 50 格的問法相同。",
+      "internalNote": "91學測補考答案卷（910430ans.doc 轉製，Type 3 自訂編碼，文字無法抽出）已於 2026-08-03 轉圖檔判讀：五科皆僅列選擇題題號與答案，英文考科無非選擇題答案。故本場答案為本站推得，此待辦已結案。"
+    },
+    {
+      "id": "LG92",
+      "examYear": 92,
+      "examLabel": "92 學年度學科能力測驗",
+      "sessionType": "正式",
+      "topic": "吉他的歷史",
+      "instruction": "閱讀下面這篇文章，然後簡答下列問題。答案必須寫在「答案卷」上。請依序作答，並標明題號。答案應簡明扼要，只寫重要詞彙（key words），請勿超過五個英文單詞（words）。每題 2 分，共 10 分。注意：請勿抄下整句或整行，否則不予計分。",
+      "answerRule": "只寫重要詞彙，不超過五個英文單詞；抄整句或整行不予計分",
+      "passage": [
+        { "type": "p", "text": "The guitar is one of the oldest instruments known to man. It probably originated in the vicinity of China. There were guitars in ancient Egypt and Greece as well, but the written history of the guitar starts in Spain in the 13th century. By 1500 the guitar was popular in Italy, France, and Spain. A French document of that time concludes that many people were playing the guitar. Stradivarius, the undeniable king of violin makers, could not resist creating a variety of guitars. Also, there was no lack of music written for the instrument. Haydn, Schubert, and others wrote guitar music. When the great Beethoven was asked to compose music for the guitar, he went into a rage and refused, but eventually even Beethoven could not ignore the challenge. Legend tells us he finally called the guitar a miniature orchestra. Indeed the guitar does sound like a little orchestra! Perhaps that is why in rural areas around the world the guitar has been a source of music for millions to enjoy." }
+      ],
+      "questions": [
+        { "n": 1, "q": "Where is the earliest written record of the guitar found?", "answers": ["(in) Spain"], "answerNote": "問的是最早的「文字記載」，不是最早的起源地；起源地為 China，是本題的干擾點。" },
+        { "n": 2, "q": "What musical instrument was Stradivarius most famous for making?", "answers": ["violins"], "answerNote": null },
+        { "n": 3, "q": "What was Beethoven's first reaction when he was asked to write music for the guitar?", "answers": ["he went into a rage", "(he) refused"], "answerNote": "主要答案是 went into a rage。refused 也算是一種反應，可以接受，不過它是那個情緒帶出來的動作；文章既然已經直接給了表示情緒的詞，只寫 refused 等於漏掉一半。題幹的 first 對照的是後文 eventually，不是區分這兩個動作的先後。" },
+        { "n": 4, "q": "What was the challenge that Beethoven could not ignore?", "answers": ["composing music for the guitar", "composing guitar music"], "answerNote": null },
+        { "n": 5, "q": "What does \"millions\" in the last line refer to?", "answers": ["millions of people", "people"], "answerNote": null }
+      ],
+      "answerSource": "derived",
+      "bridge": "第 5 題問文中某個詞指的是什麼，和 110 試辦第 48 格問「his unfriendly former ally」指誰是同一種問法。",
+      "internalNote": "第 1 題的干擾點值得對學生點出：起源地與最早文字記載是兩件事。"
+    },
+    {
+      "id": "LG92M",
+      "examYear": 92,
+      "examLabel": "92 學年度學科能力測驗（補考）",
+      "sessionType": "補考",
+      "topic": "微笑",
+      "instruction": "閱讀下面這篇文章，然後簡答下列問題。答案必須寫在「答案卷」上。請依序作答，並標明題號。答案應簡明扼要，只寫重要詞彙（key words），請勿超過五個英文單詞（words）。每題 2 分，共 10 分。注意：請勿抄下整句或整行，否則不予計分。",
+      "answerRule": "只寫重要詞彙，不超過五個英文單詞；抄整句或整行不予計分",
+      "passage": [
+        { "type": "p", "text": "It's easier for the human face to smile than frown. It takes twice as many muscles to frown as it does to smile. Moreover, we do not have to \"learn\" to do it. Although babies imitate the facial expressions they see, smiling isn't just learned by imitation. Children born blind never see anybody smile, but they show the same kinds of smiles under the same situations as sighted people." },
+        { "type": "p", "text": "Smiling is of great help to us. Some studies suggest that the act of shaping our mouths into a smile (creating a \"physical smile\") can help us see the brighter, funnier side of things. People wearing the physical smile tend to feel happier. In addition, smiles signal to others that we are people who might be nice to talk to and work with—and that can help us make friends." },
+        { "type": "p", "text": "Unfortunately, sometimes you may find it difficult to smile. Anything from getting a bad grade on a test to losing an important game can make you feel sad. In such hard times, there seems to be no reason to smile. But there is some good part to almost every bad thing. Turning something that seems all bad into something good is one way to help you smile. Hanging around people who are positive and in good moods is another way to help you find your smile again." }
+      ],
+      "questions": [
+        { "n": 1, "q": "Why is smiling physically easier than frowning?", "answers": ["it takes fewer muscles", "frowning takes twice as many muscles"], "answerNote": "原文是從 frown 的角度寫的，正面說、反面說都收，以「用的肌肉比較少」為主。" },
+        { "n": 2, "q": "What kind of feeling can a physical smile help to create?", "answers": ["happier", "happiness"], "answerNote": null },
+        { "n": 3, "q": "In what aspect can smiling help a person in his social life?", "answers": ["making friends"], "answerNote": null },
+        { "n": 4, "q": "Give one example of \"hard times\" mentioned in the passage.", "answers": ["getting a bad grade", "losing an important game"], "answerNote": "任舉一例。" },
+        { "n": 5, "q": "What particular group of people are cited in the passage to show that smiling is not learned?", "answers": ["children born blind"], "answerNote": null }
+      ],
+      "answerSource": "derived",
+      "bridge": "第 4 題要回文章舉出一個具體例子、第 5 題要指出文中舉證的那一群人，都是定位一句話就能作答，和 112 學測第 47 格、113 學測第 50 格同一類。",
+      "internalNote": "該年英文作文題明寫「除了簡答題選文中所提及的方法外」，作文與簡答題共用同一篇選文；88 年亦然，十場中共兩場如此。92學測補考答案卷已於 2026-08-03 確認：英文考科僅列第 1–55 題選擇題答案，無非選擇題答案。"
+    },
+    {
+      "id": "LG91Z",
+      "examYear": 91,
+      "examLabel": "91 學年度指定科目考試參考試卷",
+      "sessionType": "參考試卷",
+      "topic": "形象廣告",
+      "instruction": "閱讀下文，簡答下列問題。答案必須寫在「答案卷」上。請依序作答，並標明題號。答案應簡明扼要，不必用完整句，最多 5 個英文單詞（words）。每題 2 分，共 10 分。注意：請勿抄下整句或整行。",
+      "answerRule": "最多 5 個英文單詞，不必用完整句；抄整句或整行不予計分",
+      "passage": [
+        { "type": "p", "text": "The goal of most advertising is to create or maintain consumer loyalty to a particular brand of product. Advertisers do this by attaching some special value to the brand. The additional value may be something measurable like quality or special features, but more likely, it will be something immeasurable like charm and happiness." },
+        { "type": "p", "text": "Advertisers rely on the fact that people (particularly teenagers) are highly concerned with other people's opinions of them. Therefore, they use the brand to give consumers an image that will impress people. By choosing the right brand, consumers are told, they will be viewed in a positive way by others." },
+        { "type": "p", "text": "Products sold through image advertising are promoted not for what they are but for the lifestyle they promise. The ads may not show the products, but they suggest a lifestyle that consumers want. Image-linked products can demand a high price, even though what the consumer gets is minimal. A small bottle of chemicals and oils may demand US$30 when it is sold as \"maximum moisturizing skin toner\" at the cosmetics counter. How does a company convince someone to pay that much? By promising love, success, power, acceptance—things much more valuable than the product itself." }
+      ],
+      "questions": [
+        { "n": 1, "q": "Write down four abstract values suggested by image advertising.", "answers": ["charm, happiness, love, success, power, acceptance (any four of them)"], "pick": { "from": ["charm", "happiness", "love", "success", "power", "acceptance"], "n": 4 }, "answerNote": null },
+        { "n": 2, "q": "What age group is most likely affected by image advertising?", "answers": ["teenagers"], "answerNote": null },
+        { "n": 3, "q": "Why do consumers buy products of famous brands?", "answers": ["to impress people", "to be viewed positively"], "answerNote": null },
+        { "n": 4, "q": "What is the effect of some ads not showing the products they promote?", "answers": ["to suggest a lifestyle", "They suggest a lifestyle."], "answerNote": null },
+        { "n": 5, "q": "What does the author think of the prices of most image-linked products?", "answers": ["(They are) too high", "(too) expensive(.)"], "answerNote": null }
+      ],
+      "answerSource": "official",
+      "bridge": "第 1 題要從全文找出四個並列項目，和 111 參考試卷第 50(A)、50(B) 格的表格填空作法相同。",
+      "internalNote": "十場中唯一有官方參考答案者。官方以斜線並列可接受形式、以括號標示可省略部分，與現行混合題「可接受答案範圍」是同一套邏輯，建站時應優先呈現，並以此作為其餘八場答案寫法的體例依據。卷別：大學入學考試中心「認識指定科目考試」英文考科參考試卷，考試時間 80 分鐘，選擇題 55 題（該卷有倒扣），非選擇題為簡答題五題＋作文一題。此場證明簡答題不是學測獨有。"
+    }
+  ]
+}

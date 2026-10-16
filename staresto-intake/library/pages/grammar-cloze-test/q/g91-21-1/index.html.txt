@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g91-21-1/index.html
+Author: staresto-create ZZSH
+Title: 91 年學測克漏字第21題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 91 年學測 ／ 第21題
+91 年學測 克漏字 第21題
+字彙選義線索：跨句答對率 31%
+答對率 31%：當年每 100 位考生，有 31 位答對。
+It seems not 21 any afternoon in the village, but all of a sudden, people and animals lose consciousness. 22 they awake, all of the women of child-bearing age have become pregnant.
+(A)unlike
+(B)dislike
+(C)like
+(D)alike
+答案：(A) unlike
+題目編號：G91_21_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+not unlike 是雙重否定，意為「與…並無不同」——這個午後看起來與村裡任何一個下午沒兩樣，正好呼應前一句的 a usual sunny afternoon，也讓後面的 but（突然全村失去意識）有轉折的對象。like 會使語意變成「不像任何一個下午」，與前一句的 usual 牴觸；dislike 是動詞「討厭」；alike 只能置於動詞或名詞之後表「相像」，不能後接受詞。
+深入解析
+你可能會這樣想
+看到 not，你大概會想找一個正面的字來配，於是選 like，讀成「不像任何一個下午」。但這樣就與前一句的 a usual sunny afternoon（一個平常的晴朗午後）牴觸，後面的 but 也失去轉折的對象——前面已說反常，後面再說突然出事，兩句同向。
+怎麼判斷
+作答線索在前一句 It is a usual sunny afternoon in the village of Midwich, England.（這是英格蘭米德威奇村一個平常的晴朗午後），以及本句後半的轉折連接詞 but。前面既然寫「平常」，這一句就必須順著寫「和平常沒兩樣」，後面那個 but（突然全村人畜失去意識）才有東西可轉；若這一句就已經寫反常，前後同向，but 的句意連結不通。整句是 not 加上 unlike，兩個否定相疊回到肯定——與村裡任何一個下午並無不同。看到 not 後面接 un-、in-、im- 開頭的字，先把兩個否定消掉再讀一遍，語意方向立刻清楚：not uncommon（並不罕見，其實相當常見）、not unheard of（不是沒聽過）。這種說法比直接講 like 更含蓄，小說開場很常見。
+誘答選項
+dislike 是動詞，前面已有 seems；alike 只能放動詞或名詞之後（The twins look alike.），不能後接 any afternoon。
+常考字詞與句型
+not unlike（與…並無不同）、not uncommon（並不罕見）、not unusual（並不稀奇）、be alike（相像）、dislike（討厭）。
+線索範圍說明：判斷依據在前一句 It is a usual sunny afternoon in the village of Midwich, England.，以及本句後半的轉折連接詞 but——先寫平淡如常，才有「突然全村失去意識」可轉折
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+It is a usual sunny afternoon in the village of Midwich, England. It seems not 21 any afternoon in the village, but all of a sudden, people and animals lose consciousness. 22 they awake, all of the women of child-bearing age have become pregnant.
+This is an episode from a 1960 science fiction story. The women in the story 23 birth to children that have the same appearance. They all have blond hair and "strange eyes." 24 the children grow, they run around the village in a pack, wearing identical clothing and hairstyles, staring at everyone impolitely. 25 one child learns is also known by the others instantly. Villagers begin to 26 their belief that the children all have "one mind."
+In this story, the children are produced by some unexplained force from outer space. But this story written 40 years ago 27 predicted the arrival of a recent method of genetic engineering—cloning. Cloning is the genetic process of producing copies of an individual. Will the genetic copies of a human really have "one mind" as 28 in this story? This situation is so strange to us that we do not know what will 29 of it. Faced with this new situation, people have 30 to find out how to deal with it.
+中譯：在英格蘭的米德威奇村，這是個平常晴朗的午後。看起來就跟村裡任何一個尋常的下午沒有兩樣，但突然間，村裡的人和動物全都失去了意識。當他們醒來時，村裡所有育齡婦女竟然都懷孕了。這是 1960 年一部科幻小說中的情節。故事裡的婦女生下的孩子外貌全都一模一樣，全都有著金髮和「奇異的眼睛」。隨著孩子們逐漸長大，他們穿著相同的衣服和髮型，成群結隊在村裡四處奔跑，毫不客氣地盯著每個人看。只要其中一個孩子學會了什麼，其他孩子也會立刻知道。村民開始相信這些孩子擁有「同一個心智」。故事中，這些孩子是由某種來自外太空、無法解釋的力量所產生的。然而，這篇寫於 40 年前的故事，卻彷彿預言了近年才出現的一種基因工程技術——複製（克隆）。複製是一種透過基因技術複製出個體副本的過程。人類的基因複製體，真的會像故事中所描述的那樣，擁有「同一個心智」嗎？這種情況對我們來說如此陌生，以至於我們根本不知道未來會如何發展。面對這個嶄新的處境，人類必須設法找出因應之道。
+📋 內容大意
+A science fiction tale about identical children sharing one mind foreshadowed modern ethical questions about human cloning.（敘事文）
+回到91 年學測第22題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

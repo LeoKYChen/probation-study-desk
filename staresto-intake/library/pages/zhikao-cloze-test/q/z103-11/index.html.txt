@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z103-11/index.html
+Author: staresto-create ZZSH
+Title: 103 年指考克漏字第11題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 103 年指考 ／ 第11題
+103 年指考 克漏字 第11題
+字彙選義線索：句內答對率 52%
+答對率 52%：當年每 100 位考生，有 52 位答對。
+These germs come from the mouth and can 11 in toothbrushes over time.
+(A)accumulate
+(B)crumble
+(C)establish
+(D)radiate
+答案：(A) accumulate
+題目編號：Z103_11（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+accumulate in toothbrushes（在牙刷上累積）表示這些細菌會隨著時間在牙刷上累積；crumble（崩解）、establish（建立）、radiate（發散）都不符合此處語意。
+深入解析
+你可能會這樣想
+四個選項都是動詞，中文擺進去好像都能講通，於是憑語感挑一個。accumulate 這個字，你的印象大概停在「累積金錢、累積經驗」這種抽象的東西上，不太會想到細菌也會 accumulate。
+怎麼判斷
+答對率五成二，鑑別度高達 61，是同一年克漏字十題裡最高的，分的是有沒有把句尾的 over time 當成線索用。先看空格前後：主詞 These germs 回指前一句的 bacteria，後面是 in toothbrushes over time。over time（隨著時間過去）點明這是一個「量愈來愈多」的過程，四個選項裡只有 accumulate（累積、聚積）講得出這種隨時間變多的意思。填進去讀成 germs can accumulate in toothbrushes over time（細菌會隨時間在牙刷裡愈積愈多），也正好接得上前一句的 toothbrushes can harbor bacteria（牙刷會藏細菌）。
+誘答選項
+establish（建立）是及物動詞，後面一定要有受詞（establish a system），這裡 can ______ in toothbrushes 沒有受詞，形態上就接不起來；crumble（碎裂成小塊）的主詞通常是餅乾、牆壁這類本身會碎掉的東西，細菌不會碎；radiate（向外發散、輻射）講的是光、熱、情緒往外散，方向與「聚在牙刷裡」相反，而且它習慣配 from 而不是 in。crumble 與 radiate 放在 can 後面形態吻合，容易被順手選走。
+常考字詞與句型
+accumulate（累積、聚積）、over time（隨著時間過去）、harbor bacteria（藏有細菌）、crumble（碎裂成小塊）、radiate from（從……向外發散）、take care of（照顧、保養）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：103學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Brushing your teeth regularly will help you maintain a healthy smile. But that smile won't last long if you don't take proper care of your toothbrush and switch to a new one often. According to the American Dental Association (ADA), toothbrushes can harbor bacteria. These germs come from the mouth and can 11 in toothbrushes over time.
+Many Americans replace their toothbrushes only once or twice a year. The ADA, however, recommends 12 a new toothbrush every three to four months. Children's toothbrushes may need to be changed more 13 .
+During those three to four months of use, there are several ways to keep a toothbrush clean. 14 , rinse your toothbrush thoroughly with tap water after use, making sure to remove any toothpaste and debris. Store your toothbrush in an upright position, and let 15 air dry. Most importantly, do not share toothbrushes.
+中譯：定期刷牙有助於維持健康的笑容，但如果沒有妥善保養牙刷、經常更換新牙刷，這樣的笑容不會持久。根據美國牙醫協會（ADA）的說法，牙刷上可能藏有細菌，這些細菌來自口腔，並會隨著時間累積在牙刷上。
+許多美國人一年只更換一到兩次牙刷，但 ADA 建議每三到四個月就使用新牙刷。兒童的牙刷則可能需要更頻繁地更換。
+在這三、四個月的使用期間，有幾種方法可以保持牙刷清潔。例如，每次使用後應以自來水徹底沖洗牙刷，確保去除牙膏殘留和碎屑；將牙刷直立存放，讓它風乾。最重要的是，不要與他人共用牙刷。
+📋 內容大意
+A healthy smile needs a clean toothbrush, since germs from the mouth build up on one.
+Many Americans keep the same brush for a year, but dentists advise changing it every few months.
+Between changes, rinse it well after use, stand it upright to dry, and never share it.
+回到103 年指考第12題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

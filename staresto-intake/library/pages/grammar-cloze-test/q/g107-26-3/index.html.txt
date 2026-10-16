@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g107-26-3/index.html
+Author: staresto-create ZZSH
+Title: 107 年學測克漏字第26題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 107 年學測 ／ 第26題
+107 年學測 克漏字 第26題
+字彙選義線索：句內答對率 77%
+答對率 77%：當年每 100 位考生，有 77 位答對。
+The term “lucid” means clear; lucid dreamers know that they are dreaming and 26 they are dreaming of.
+(A)what
+(B)why
+(C)when
+(D)which
+答案：(A) what
+題目編號：G107_26_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+what 引導名詞子句作 dreaming of 的受詞，「知道自己在做夢，也知道自己夢到了『什麼』」；why（為什麼）、when（何時）、which（需要明確先行詞）都不合。
+深入解析
+你可能會這樣想
+這一格不算難，但錯的人多半是被 and 前面那個 that 帶著走，覺得後面也應該接 that。
+怎麼判斷
+先看 and 連接的是什麼：know 帶了兩個受詞，第一個是 that they are dreaming（他們正在做夢），and 之後接的第二個受詞就是空格帶出的名詞子句。再看子句的尾巴：they are dreaming of ______，of 是介系詞，後面缺一個受詞。所以要填的字必須同時做兩件事——把子句接上去，而且自己補上那個缺掉的受詞。能同時做到這兩件事的就是 what，因為 what 是複合關係代名詞 ＝ 先行詞 + 關係代名詞，等於 the thing(s) that（……的那個東西）。還原一次就很清楚：they know what they are dreaming of ＝ they know the thing that they are dreaming of（他們知道自己夢到的是什麼）。給你一個好用的判斷訣竅：句尾的介系詞後面缺受詞，就用 what，不用 that。
+誘答選項
+why（為什麼）、when（何時）代進去，dreaming of 後面依然缺受詞，句子補不完整。which 需要有明確的先行詞或限定的選擇範圍（例如 which one），這句兩者都沒有。
+常考字詞與句型
+what ＝ the thing(s) that（……的事物）、know what（知道……是什麼）、dream of／about（夢見……）、be immersed in（沉浸在……之中）、lucid dream（清醒夢）、daydream（白日夢；做白日夢）、waking thoughts（清醒時的思緒）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+You must have had this kind of experience: While in the middle of a normal dream, you suddenly realize that you are dreaming. This kind of dream is called a "lucid dream." The term "lucid" means clear; lucid dreamers know that they are dreaming and 26 they are dreaming of.
+It is different from daydreaming. When a person is having a lucid dream, the person's body is 27 ; when a person daydreams, his/her body is awake. Thus, daydreams are really just waking thoughts. In lucid dreams, however, we are completely immersed in the dream world.
+Yet, lucid dreaming is 28 just having a clear dream. It is your chance to play around with the extraordinary abilities buried in unused parts of your brain. 29 , it is a way for you to put the deepest areas of your brain to good use while you're sleeping. You can be an everyday Jane Doe or John Smith while awake but a superhero while sleeping, 30 who you are in real life. All the obstacles of reality can be set aside and you are able to accomplish tasks that you could never manage in waking reality.
+中譯：你一定有過這樣的經驗：在一場再普通不過的夢中，你突然意識到自己正在做夢。這種夢被稱為「清醒夢」。「清醒」（lucid）這個詞代表清楚明白；做清醒夢的人知道自己正在做夢，也清楚自己夢見的內容是什麼。這與「白日夢」不同：做清醒夢時，身體處於睡眠狀態；而做白日夢時，身體則是清醒的。因此，白日夢其實只是清醒時的思緒而已。然而，在清醒夢中，我們卻完全沉浸在夢境世界裡。不過，清醒夢的意義不只是擁有一場清晰的夢境而已，它更是一個讓你能盡情發揮大腦中未被開發區域裡潛藏的驚人能力的機會。換句話說，這是一種在睡眠期間，善用大腦最深層區域的方式。無論你在現實生活中是誰，清醒時你可能只是個平凡無奇的路人甲，但在夢中，你卻能成為超級英雄。現實中的種種阻礙都可以被拋在一旁，你能完成許多在清醒現實中永遠無法辦到的事。
+📋 內容大意
+A lucid dream is a dream in which the sleeper knows it is a dream. He can also recognize its contents.
+In daydreaming the body stays awake and the thoughts are waking thoughts. In lucid dreaming the body sleeps while the mind enters the dream world fully.
+Lucid dreaming lets you use parts of the brain you never normally reach. Whoever you are by day, at night you can do the impossible.
+← 第25題回到107 年學測第27題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g111-18-2/index.html
+Author: staresto-create ZZSH
+Title: 111 年學測克漏字第18題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 111 年學測 ／ 第18題
+111 年學測 克漏字 第18題
+字彙選義線索：句內答對率 32%
+答對率 32%：當年每 100 位考生，有 32 位答對。
+The problem is 18 when airplanes fly at higher altitudes, where the difference between the inside and outside pressure increases, causing added stress.
+(A)disguised
+(B)understood
+(C)confronted
+(D)intensified
+答案：(D) intensified
+題目編號：G111_18_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+intensify 是「加劇、增強」，本句指飛機飛得愈高、內外壓力差愈大，問題就愈嚴重；disguised（被掩飾）、understood（被理解）、confronted（面對，被動須用 be confronted with）語意都不合。
+深入解析
+你可能會這樣想
+你認得形容詞 intense（強烈的）與名詞 intensity（強度），卻很少把動詞 intensify（加劇、增強）記起來，這裡用的又是被動 is intensified，字形一變就不容易認出。
+怎麼判斷
+空格前為 is、後接 when 引導的副詞子句，可知此處為被動語態，主詞 the problem 是承受動作的一方。作答線索在同一句後半 where the difference between the inside and outside pressure increases, causing added stress（機艙內外的壓力差增大，因而產生額外的應力），increases 與 added stress 兩項訊息都指向程度升高，故空格應填表示「加劇、增強」的過去分詞，即 intensified。凡是被動語態且四個選項都是過去分詞的題目，判斷步驟相同：先確認主詞是動作的承受者，再從同句或鄰句的訊息判定語意的方向。
+誘答選項
+confronted 的方向與本句相反：be confronted with 的主詞須是面對問題的人，如 Engineers were confronted with the problem.（工程師面臨這個問題）；本句主詞是 the problem 本身，故不能選。disguised 是「被掩飾」、understood 是「被理解」，與後半句壓力差增大、應力增加的訊息不合。
+常考字詞與句型
+the problem is intensified（問題加劇）、intensify one's efforts（加緊努力）、intense competition（激烈的競爭）、intensity（強度）、intensive care（加護病房）、at high altitudes（在高空）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Airline passengers may have noticed that all plane windows have rounded edges, instead of the hard corners commonly found in our house. The round windows are indeed pleasant to the eye, but they actually were designed for reasons 16 aesthetics.
+In the early days of aviation, plane windows 17 square in shape. Then as commercial air travel became popular in the 1950s and airplanes began flying higher and faster, three planes mysteriously broke apart in midair. The cause? Square windows. Scientists found that sharp corners are natural weak spots where stress concentrates. The problem is 18 when airplanes fly at higher altitudes, where the difference between the inside and outside pressure increases, causing added stress. When subjected to repeated pressurization high in the sky, the four corners on a square window may 19 .
+Curved windows, on the other hand, distribute stress around more evenly, reducing the likelihood of cracks or breaks. Circular shapes are also stronger and resist deformation, and therefore can 20 extreme differences in pressure inside and outside of an aircraft. Thus, round windows are a major safety innovation that keeps planes from disintegrating mid-flight. They are also used on ships and spacecraft for their greater structural integrity.
+中譯：搭飛機的乘客可能都注意到，所有飛機窗戶的邊緣都是圓角的，不像我們家中常見的直角窗戶。圓形窗戶確實賞心悅目，但它們的設計其實是出於美觀以外的原因。在航空發展的早期，飛機窗戶原本是方形的。到了 1950 年代，隨著商業航空逐漸普及、飛機飛得越來越高、越來越快，卻接連發生三起飛機在空中神祕解體的事故。原因是什麼呢？正是方形窗戶。科學家發現，尖銳的角落天生就是應力容易集中的脆弱點。當飛機飛行在更高的高度時，機艙內外壓力差增大，帶來額外的應力，這個問題因此變得更加嚴重。在高空中反覆承受加壓過程時，方形窗戶的四個角落可能因此產生裂痕。相較之下，圓形窗戶能將應力更均勻地分散開來，大幅降低破裂或斷裂的風險。圓形結構同時也更堅固、更能抵抗形變，因此能承受機艙內外極端的壓力差異。因此，圓形窗戶可說是一項重大的安全創新，防止飛機在飛行途中解體。基於同樣更佳的結構完整性，圓形窗戶也被應用在船舶與太空船上。
+📋 內容大意
+Aircraft windows are rounded rather than square, and the shape serves safety, not only appearance.
+Early plane windows were square. In the 1950s, as flights climbed higher and faster, three aircraft broke apart in midair, and scientists blamed the sharp corners.
+Sharp corners are weak spots where stress builds, and high altitude makes it worse. Round windows spread the stress evenly, so ships and spacecraft use them too.
+← 第17題回到111 年學測第19題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

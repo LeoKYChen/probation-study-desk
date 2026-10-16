@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z105-15/index.html
+Author: staresto-create ZZSH
+Title: 105 年指考克漏字第15題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 105 年指考 ／ 第15題
+105 年指考 克漏字 第15題
+字彙選義線索：句內答對率 43%
+答對率 43%：當年每 100 位考生，有 43 位答對。
+Given the opportunity, they may 15 to a corner, putting distance between themselves and strangers.
+(A)retreat
+(B)explore
+(C)dispense
+(D)connect
+答案：(A) retreat
+題目編號：Z105_15（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+retreat to a corner（退到角落）表示有機會時，人們會退到角落以拉開自己與陌生人的距離；explore（探索）、dispense（分配／分發）、connect（連結）都不符合此處語意。
+深入解析
+你可能會這樣想
+retreat 這個字，你的印象大概只有軍事上的「撤退」，很難把它跟「人在擁擠的車廂裡往角落挪」連在一起，所以四個選項看起來好像都沾不上邊。答對率四成三，一半以上的人在這裡失手。
+怎麼判斷
+四個選項都是原形動詞、都接在 may 後面，文法上都放得進去，可見這一格考的是語意。定案的線索就在同一句的後半段：putting distance between themselves and strangers（拉開自己與陌生人之間的距離）。句尾這個逗號加 V-ing 是現在分詞片語，用來補充說明前面整句話所造成的結果（劍橋 English Grammar Today 的 -ing clause 表結果），還原成 and it puts distance between themselves and strangers 就看得出來：先做了空格那個動作，結果才拉開了距離。所以空格要的是一個往後退、離開人群的動作，retreat to a corner（退到角落）方向完全對得上。retreat 的「撤退」與「退到角落」其實是同一個意思：往後退、離開原來的位置。軍隊往後撤是它，一個人在車廂裡往角落挪也是它，差別只在規模。把軍事那個畫面縮小成一個人，這個字就用得出來了。
+誘答選項
+explore（探索）方向剛好相反，是往外去而不是往後退，而且 explore 通常直接接受詞（explore the city），不接 to。dispense 後面接的是被分發的東西，dispense to a corner 沒有意義；它最常見的組合是 dispense with sth（省去、不用）。connect（連結）與後半句的 putting distance 語意矛盾，一個要靠近、一個要拉開。
+常考字詞與句型
+retreat to（退到……）、put distance between A and B（拉開 A 與 B 之間的距離）、dispense with sth（省去、不需要）、coping strategy（因應策略）、given the opportunity（有機會的話）、deal with（處理、應付）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：105學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Have you been irritated by someone standing too close in line, talking too loud or making eye contact for too long? Or, they may have 11 you with the loud music from their earphones, or by taking up more than one seat on a crowded subway car. You feel unhappy because your personal space has been violated.
+According to scientists, personal space involves certain invisible forces imposed on you through all the 12. For example, people may feel their space is being invaded when they experience an unwelcome sound, smell, or stare.
+In certain situations such as in crowded subway cars or elevators, it is not always possible for people to keep their 13 distance from others. They learn coping strategies to deal with their discomfort. For instance, people often avoid eye contact with someone standing 14 them, or they pretend that these people are lifeless objects in their personal space. Given the opportunity, they may 15 to a corner, putting distance between themselves and strangers. Or, they may sit or stand equidistant from one another like birds on a wire.
+中譯：你是否曾因為排隊時有人站得太靠近、講話太大聲，或視線接觸過久而感到不悅？又或者，他們可能用耳機裡外洩的音樂聲，或在擁擠的地鐵車廂裡占用超過一個座位而讓你感到冒犯。你之所以感到不快，是因為你的個人空間被侵犯了。根據科學家的說法，個人空間牽涉到透過各種感官施加在你身上的無形力量。舉例來說，當人們經歷令人不快的聲音、氣味或凝視時，可能會感覺自己的空間正遭到入侵。在諸如擁擠的地鐵車廂或電梯等某些情境中，人們並不總是能與他人保持理想的距離。他們因此學會了應對不適的策略。舉例來說，人們常常避免與站得很近的人有眼神接觸，或假裝這些人是自己個人空間裡沒有生命的物體。若有機會，他們可能會退到角落，藉此拉開與陌生人之間的距離。又或者，他們可能像電線上的鳥兒一樣，彼此保持等距而坐或站立。
+📋 內容大意
+Standing too near, staring or leaking loud music annoys us by intruding on personal space.
+Scientists say sound, smell and gaze all carry invisible forces that mark out this space.
+In packed lifts or trains people cope by avoiding eyes, ignoring others, or spreading out evenly.
+← 第14題回到105 年指考第16題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

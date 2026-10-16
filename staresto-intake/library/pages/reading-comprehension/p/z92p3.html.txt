@@ -1,0 +1,225 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/z92p3.html
+Author: staresto-create ZZSH
+Title: 92 指考閱讀測驗：航空安全措施：行李比對爭議｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 92 指考
+92 指考閱讀測驗：航空安全措施：行李比對爭議
+Airline Security Measures: Bag-Matching Controversy
+指考 92年第 54–60 題7 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段Since the terrorist attack on America on September 11, hundreds of new security measures have been put in place to make Americans safer, or at least feel safer. Hotels and corporate offices now require guests to present a photo ID at check-ins and entrances. Airlines refuse to let passengers carry razor blades, scissors, or screwdrivers on flights.
+第 2 段At least one surefire way exists to improve security and protect personal privacy: positive passenger bag-matching. It would require that no checked bag be transported on a plane if its owner doesn't board the flight. Bag-matching became standard practice in Europe and Asia in the 1980s after suitcase bombs brought down Pan Am Flight 103 over Lockerbie, Air India Flight 182 en route to London, and UTA Flight 772 to Paris. In all three cases, the terrorists weren't on board.
+第 3 段Yet, in the U.S., where security is now top priority, authorities have chosen to ignore bag-matching. Instead, the Transportation Safety Administration (TSA) has embraced largely untested electronic-detection systems that screen bags for bombs and other explosives. Critics charge that the TSA has overlooked such an obvious, sensible security measure because U.S. airlines have opposed bag-matching for years. They fear it might delay flights and persuade short-haul travelers to take a train or drive instead.
+第 4 段After September 11, bag-matching was back on the agenda. Yet, struggling airlines complained that implementing it on all domestic flights would drive them into bankruptcy. Such claims have zero merit, says Arnold Barnett, a former chair of the Federal Aviation Administration's technical team. In 1996, the team was asked to investigate the feasibility of bag-matching. In a 1997 experiment, which tested 11 airlines, 50 pairs of cities, 8,000 flights, and 750,000 passengers, Barnett showed that domestic bag-matching would cause delays averaging seven minutes on only one in seven flights and would require no reduction in flight schedules.
+第 5 段Barnett argues that bag-matching would deter bombers far more than electronic-detection systems. It ensures that the terrorist will proceed to the gate to board his plane. If, while he's waiting, detection devices reveal a bomb, he could be quickly located and arrested. “The combination of bag-matching and explosives detection could be far more potent than either measure on its own,” Barnett wrote in a Dec. 17 letter to TSA chief. He received a thank-you note that contained no indication that the TSA is contemplating action.
+題目
+54.According to the passage, Pan Am Flight 103, Air India Flight 182, and UTA Flight 772 were similar in that ______.
+(A)they were brought down by terrorist attacks
+(B)they crashed because some terrorists were on board
+(C)they were the only international flights that crashed in 1980
+(D)they crashed because they didn’t follow airline security measures
+55.In which paragraph can the definition of bag-matching be found?
+(A)Paragraph 1
+(B)Paragraph 2
+(C)Paragraph 3
+(D)Paragraph 4
+56.Which of the following is one of the reasons that airlines were unwilling to implement bag-matching on their flights?
+(A)Electronic-detection systems cost less than bag-matching.
+(B)Electronic-detection systems worked better in preventing hijacking.
+(C)Bag-matching would delay flights and discourage people from taking airplanes.
+(D)Bag-matching would invade passengers’ privacy rather than ensure their security.
+57.What is one important finding of Barnett’s experiment on bag-matching and flight schedules?
+(A)Bag-matching on domestic flights resulted in seven-minute delays in only one-seventh of the flights.
+(B)Bag-matching forced airlines to reduce their schedules and to sacrifice the quality of their service.
+(C)Bag-matching, when tested on 11 airlines, proved to be ineffective and inconvenient for passengers.
+(D)Bag-matching caused domestic flights to change their schedules and to reduce their frequency of service.
+58.The pronoun he (he could be…) in the last paragraph most likely refers to ______.
+(A)Arnold Barnett
+(B)a potential terrorist
+(C)a security guard at the gate
+(D)an ordinary passenger boarding the plane
+59.What can we infer from the last sentence in the passage (He received a thank-you note that contained no indication that the TSA is contemplating action.)?
+(A)The TSA appreciated Barnett’s help and welcomed his suggestions.
+(B)The TSA took Barnett’s advice seriously and put it into practice.
+(C)The TSA invited Barnett to come to work with them.
+(D)The TSA did not plan to implement Barnett’s ideas.
+60.The passage was written mainly to ______.
+(A)point out the necessary trade-offs between privacy and security
+(B)highlight the TSA’s mission to improve airline security
+(C)argue for bag-matching as an effective security measure
+(D)advocate the use of electronic-detection systems
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+54
+(A)
+43%
+60
+55
+(B)
+44%
+48
+56
+(C)
+50%
+61
+57
+(A)
+35%
+57
+58
+(B)
+43%
+64
+59
+(D)
+26%
+46
+60
+(C)
+36%
+36
+答對率與鑑別度出處：大考中心 92 學年度指定科目考試統計圖表：英文科答對率及鑑別指數表
+每一題的依據句
+第 54 題 細節題 Supporting details
+第 2 段after suitcase bombs brought down Pan Am Flight 103 over Lockerbie
+第 2 段In all three cases, the terrorists weren't on board.
+原文 → 正確選項
+suitcase bombs → terrorist attacks
+這一題答對率只有 43%，判斷步驟：[1] 第 2 段說，行李炸彈（suitcase bombs）炸毀了這三個班機；[2] 同一段最後補一句，這三起事件，恐怖分子都不在飛機上，炸彈是藏在託運的行李裡；[3] 三架飛機都是恐怖攻擊炸毀的，所以是 (A)。(B) 照抄 on board，原文說的是恐怖分子不在飛機上（weren't on board），選項正好說反了；(C) 照抄 1980，原文說的是 1980 年代以後行李比對成了標準做法，沒有說三架飛機都在 1980 年墜毀，也沒有說只有這三個國際航班墜毀；(D) 照抄第 1 段的 security measures，原文沒有說這三個班機沒有遵守安全措施。
+第 55 題 細節題 Supporting details
+第 2 段It would require that no checked bag be transported on a plane if its owner doesn't board the flight.
+這一題答對率只有 44%，判斷步驟：[1] 第 2 段先用冒號帶出 positive passenger bag-matching 這個名稱；[2] 下一句就用 It would require that… 說明它的內容：行李的主人沒有登機，託運的行李就不能上飛機，這就是行李比對的定義；[3] 所以是 (B)。(C) 第 3 段說美國主管機關忽視行李比對，(D) 第 4 段說明 Barnett 的實驗，都是在第 2 段定義過以後，才談行李比對的爭議和效果；(A) 第 1 段還沒有提到行李比對。
+第 56 題 細節題 Supporting details
+第 3 段They fear it might delay flights and persuade short-haul travelers to take a train or drive instead.
+原文 → 正確選項
+delay flights → delay flights
+persuade short-haul travelers to take a train or drive instead → discourage people from taking airplanes
+這一題答對率只有 50%，判斷步驟：[1] 第 3 段說美國的航空公司多年來一直反對行李比對；[2] 下一句說原因：航空公司擔心行李比對會讓班機延誤，也會讓短程旅客改搭火車或開車；[3] 改搭火車或開車，就是不搭飛機，選項換成 discourage people from taking airplanes，所以是 (C)。(D) 照抄第 2 段的 privacy，原文說行李比對既能提升安全又能保護隱私，選項說成侵犯隱私，正好相反；(A)、(B) 都照抄 electronic-detection systems，電子偵測系統是 TSA 的選擇，原文沒有比較兩者的成本，也沒有說電子偵測系統比較能防止劫機。
+第 57 題 細節題 Supporting details
+第 4 段Barnett showed that domestic bag-matching would cause delays averaging seven minutes on only one in seven flights and would require no reduction in flight schedules.
+原文 → 正確選項
+one in seven flights → one-seventh of the flights
+這一題答對率只有 35%，兩個「七」要分清楚。判斷步驟：[1] 第 4 段說，國內航班實施行李比對，平均延誤七分鐘（averaging seven minutes）；[2] 而且只有七分之一的航班會延誤（on only one in seven flights）；[3] 選項把 one in seven 換成 one-seventh，所以是 (A)。(B)、(D) 都照抄 schedules，原文說的是完全不需要減少航班（no reduction in flight schedules），選項說成要減少航班、改變時刻表，正好相反；(C) 照抄 11 airlines，11 家航空公司是實驗測試的對象，實驗結果是延誤很少，不是沒有效果又不方便。
+第 58 題 詞義題（指代詞） Vocabulary in context
+第 5 段It ensures that the terrorist will proceed to the gate to board his plane. If, while he's waiting, detection devices reveal a bomb, he could be quickly located and arrested.
+原文 → 正確選項
+the terrorist → terrorist
+這一題答對率只有 43%，判斷步驟：[1] 前一句說行李比對能確保恐怖分子（the terrorist）到登機門準備登機；[2] 下一句說 he 在等候時，偵測儀器發現炸彈，警方就能很快找到 he、逮捕 he；[3] 會帶炸彈、警方要逮捕的，是前一句的恐怖分子，所以是 (B)。(A) 照抄 Barnett，Barnett 是提出主張的人，警方不會因為炸彈逮捕他；(C) 照抄 gate，登機門是恐怖分子要去的地方，原文沒有提到警衛；(D) 照抄 board，要登機的雖然是乘客，但警方要逮捕的是帶炸彈的那一個，不是一般乘客。
+代名詞怎麼找出指的是誰 →
+第 59 題 推論題 Inference
+第 5 段He received a thank-you note that contained no indication that the TSA is contemplating action.
+原文 → 正確選項
+no indication that the TSA is contemplating action → did not plan to implement
+這一題答對率只有 26%，判斷步驟：[1] Barnett 寫信給 TSA 局長，主張行李比對加上爆裂物偵測效果最好；[2] TSA 只回了一封感謝函（a thank-you note），信裡沒有任何跡象（no indication）顯示 TSA 正在考慮（contemplating）採取行動；[3] 感謝函只是禮貌上的回應，看不出要採取行動，可以推知 TSA 沒有打算採用 Barnett 的建議，所以是 (D)。(A) 只看到感謝函，就以為 TSA 歡迎他的建議，忽略了後半句的 no indication；(B) 付諸實行正好和原文相反；(C) 原文沒有提到邀請 Barnett 去工作。
+第 60 題 主旨題 Main idea
+依據句：全文要讀完整篇才能判斷，不在某一句裡。
+這一題答對率只有 36%，判斷步驟：[1] 第 1 段說九一一以後美國實施了很多安全措施，第 2 段接著提出一個保證有效的方法：行李比對；[2] 第 3、4 段反駁航空公司反對的理由，用 Barnett 的實驗證明延誤很少；[3] 第 5 段引述 Barnett，行李比對嚇阻炸彈客的效果比電子偵測系統好；全文在替行李比對辯護，所以是 (C)。(A) 偏離主題，原文說行李比對既能提升安全又能保護隱私，兩者不必取捨；(B) 偏離主題，文章批評 TSA 忽視行李比對，不是在強調 TSA 的使命；(D) 偏離主題，作者認為電子偵測系統大多未經測試，主張的是行李比對。
+錯誤選項：(A) 偏離主題；(B) 偏離主題；(D) 偏離主題
+逐段中譯
+第 1 段美國自從九一一恐怖攻擊以後，實施了數百項新的安全措施，讓美國人更安全，或至少感覺更安全。飯店和公司辦公室現在要求訪客在入住和進門時出示附照片的證件。航空公司不准乘客攜帶刮鬍刀片、剪刀或螺絲起子登機。
+第 2 段至少有一個保證有效的方法，既能提升安全，又能保護個人隱私，那就是「旅客行李比對」。這個方法規定，行李的主人如果沒有登機，他託運的行李就不能上飛機。1980 年代，行李炸彈炸毀了幾架飛機，包括在洛克比上空墜毀的泛美航空 103 號班機、飛往倫敦途中的印度航空 182 號班機，以及飛往巴黎的法國聯合航空 772 號班機，之後行李比對就成了歐洲和亞洲的標準做法。這三起事件，恐怖分子都不在飛機上。
+第 3 段然而，在把安全列為第一優先的美國，主管機關卻選擇忽視行李比對，反而採用大多未經測試的電子偵測系統，檢查行李裡有沒有炸彈和其他爆裂物。批評的人指責，運輸安全管理局（TSA）忽略這麼明顯又合理的安全措施，是因為美國的航空公司多年來一直反對行李比對。航空公司擔心行李比對會讓班機延誤，也會讓短程旅客改搭火車或自己開車。
+第 4 段九一一以後，行李比對再度提上議程。然而，經營困難的航空公司抱怨，所有國內航班都實施行李比對，會讓航空公司破產。前美國聯邦航空總署技術小組主席 Arnold Barnett 說，這種說法毫無根據。1996 年，這個小組奉命調查行李比對是否可行。在 1997 年的一項實驗中，他們測試了 11 家航空公司、50 組城市、8,000 個航班和 75 萬名旅客，Barnett 證明，國內航班實施行李比對，只有七分之一的航班會延誤，平均延誤七分鐘，而且完全不需要減少航班。
+第 5 段Barnett 主張，行李比對嚇阻炸彈客的效果，比電子偵測系統好得多。行李比對能確保恐怖分子會到登機門準備登機；如果他在等候的時候，偵測儀器發現了炸彈，就能很快找到他、逮捕他。Barnett 在 12 月 17 日寫給 TSA 局長的信裡說：「行李比對和爆裂物偵測一起用，效果可能比單獨使用任何一種都強得多。」他收到一封感謝函，信裡卻看不出 TSA 有任何採取行動的打算。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。沒有列出的段落，就是沒有主旨句，請對照「這一篇的文章結構」裡的綱要，找出那一段的重點。
+第 1 段Since the terrorist attack on America on September 11, hundreds of new security measures have been put in place to make Americans safer, or at least feel safer.
+第 2 段At least one surefire way exists to improve security and protect personal privacy: positive passenger bag-matching.
+第 3 段Yet, in the U.S., where security is now top priority, authorities have chosen to ignore bag-matching.
+第 5 段Barnett argues that bag-matching would deter bombers far more than electronic-detection systems.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體論說文 Argumentative
+組織方式問題解決 Problem-Solution這一類怎麼辨識 →
+關鍵轉折詞YetInsteadYet
+綱要
+911 事件後，美國實施數百項新的安全措施，讓美國人更安全，至少覺得更安全，例如飯店和公司要求出示附照片的證件、航空公司禁止旅客帶刀片、剪刀和螺絲起子上飛機。
+提出既能提升安全又能保護隱私的方法：行李比對，旅客沒登機，託運行李就不上飛機；1980 年代行李炸彈炸毀三架客機，恐怖分子都不在機上，之後歐洲和亞洲就把行李比對當成標準做法。
+(Yet) 美國卻忽視行李比對，(Instead) 改用大多未經測試的電子偵測系統；批評者認為，TSA 不採用這個方法，是因為航空公司多年來一直反對，擔心航班延誤、短程旅客改搭火車或開車。
+911 事件後，行李比對重新列入討論，(Yet) 經營困難的航空公司聲稱國內航班全面實施會讓它們破產；聯邦航空總署技術小組前主席 Barnett 認為這種說法毫無根據，他 1997 年的實驗顯示，只有七分之一的航班會延誤，平均七分鐘，也不必減少航班。
+Barnett 主張行李比對嚇阻炸彈客的效果遠勝電子偵測系統：恐怖分子一定會到登機門等候，偵測到炸彈就能很快找到他、逮捕他，兩者合併使用效果更強；他寫信給 TSA 首長，TSA 卻只回了一封感謝函，看不出有採取行動的打算。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 34 個、參考字彙 18 個、字詞搭配 14 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+security[sɪˈkjʊrəti]n.安全三級第 1 段詞彙題考過 4 次：105 學測第 6 題（誘答）、94 學測第 15 題（誘答）、92 學測補考第 4 題（答案）、88 聯考第 8 題（誘答）
+measures[ˈmɛʒɚz]n.措施（security measures 安全措施）四級第 1 段詞彙題考過 2 次：100 學測第 10 題（誘答）、96 學測第 6 題 measure（誘答）
+privacy[ˈpraɪvəsi]n.隱私四級第 2 段詞彙題考過 2 次：108 學測第 1 題（答案）、100 指考第 5 題（誘答）
+transport[trænˈspɔrt]v.載運三級第 2 段詞彙題考過 2 次：110 學測第 15 題 transported（誘答）、93 補救考試第 5 題 transporting（誘答）
+route[rut]n.路線（en route to 前往……途中）四級第 2 段詞彙題考過 1 次：111 學測第 9 題（誘答）
+priority[praɪˈɔrəti]n.優先（top priority 第一優先）四級第 3 段詞彙題考過 2 次：94 學測第 15 題（答案）、93 補救考試第 2 題（答案）
+authority[əˈθɔrəti]n.主管機關（authorities）四級第 3 段詞彙題考過 1 次：94 學測第 15 題（誘答）
+embrace[ɪmˈbreɪs]v.採用、欣然接受五級第 3 段詞彙題考過 1 次：109 指考補考第 2 題（誘答）
+explosive[ɪkˈsploʊsɪv]n.爆裂物四級第 3 段詞彙題考過 1 次：102 指考第 8 題（答案）
+overlook[ˌoʊvɚˈlʊk]v.忽略四級第 3 段詞彙題考過 2 次：109 學測第 11 題 overlooked（誘答）、96 指考第 5 題（誘答）
+sensible[ˈsɛnsəbəl]adj.合理的三級第 3 段詞彙題考過 2 次：108 學測第 8 題 sensibly（誘答）、98 學測第 10 題（答案）
+oppose[əˈpoʊz]v.反對四級第 3 段詞彙題考過 3 次：110 學測第 1 題（誘答）、102 學測第 1 題 opposed（誘答）、92 指考第 3 題 opposed（誘答）
+persuade[pɚˈsweɪd]v.讓……改做、說服三級第 3 段詞彙題考過 4 次：97 學測第 14 題 persuaded（誘答）、95 學測第 4 題 persuaded（誘答）、94 學測第 11 題（誘答）、92 學測補考第 3 題（誘答）
+merit[ˈmɛrət]n.根據、價值（have zero merit 毫無根據）四級第 4 段詞彙題考過 1 次：108 指考第 4 題（誘答）
+technical[ˈtɛknɪkəl]adj.技術的三級第 4 段詞彙題考過 3 次：104 學測第 3 題（誘答）、98 學測第 12 題 technically（答案）、97 學測第 9 題（誘答）
+experiment[ɪkˈspɛrəmənt]n.實驗三級第 4 段詞彙題考過 1 次：87 聯考第 7 題（誘答）
+reduction[rɪˈdʌkʃən]n.減少四級第 4 段詞彙題考過 1 次：84 聯考第 5 題（誘答）
+proceed[prəˈsid]v.前往（proceed to）四級第 5 段詞彙題考過 1 次：85 聯考第 7 題（誘答）
+reveal[rɪˈvil]v.查出、發現三級第 5 段詞彙題考過 2 次：110 指考第 2 題 revealed（答案）、88 聯考第 5 題 revealed（答案）
+locate[ˈloʊkeɪt]v.找到三級第 5 段詞彙題考過 1 次：108 指考第 3 題 located（誘答）
+arrest[əˈrɛst]v.逮捕三級第 5 段詞彙題考過 2 次：97 學測第 1 題（誘答）、94 學測第 10 題 arrested（答案）
+combination[ˌkɑmbəˈneɪʃən]n.結合、一起用四級第 5 段詞彙題考過 2 次：92 學測第 2 題（誘答）、85 推薦甄選第 7 題（答案）
+indication[ˌɪndəˈkeɪʃən]n.跡象四級第 5 段詞彙題考過 2 次：86 聯考第 8 題（誘答）、83 聯考第 2 題 indications（答案）
+contemplate[ˈkɑntəmˌpleɪt]v.考慮五級第 5 段詞彙題考過 1 次：109 指考第 9 題 contemplates（誘答）
+crash[kræʃ]v.墜毀三級第 54 題詞彙題考過 2 次：115 學測第 9 題（誘答）、91 學測補考第 6 題 crashed（誘答）
+definition[ˌdɛfəˈnɪʃən]n.定義三級第 55 題詞彙題考過 1 次：109 學測第 1 題（誘答）
+discourage[dɪˈskɝɪʤ]v.讓……不想（discourage A from B）四級第 56 題詞彙題考過 2 次：96 學測第 8 題 discouraged（誘答）、84 推薦甄選第 5 題 discouraged（答案）
+invade[ɪnˈveɪd]v.侵犯（invade privacy 侵犯隱私）四級第 56 題詞彙題考過 3 次：100 學測第 7 題（誘答）、97 學測第 3 題（誘答）、87 聯考第 3 題 invading（誘答）
+sacrifice[ˈsækrəˌfaɪs]v.犧牲四級第 57 題詞彙題考過 3 次：105 學測第 5 題（誘答）、101 指考第 4 題 sacrifices（誘答）、92 指考第 5 題（答案）
+frequency[ˈfrikwənsi]n.頻率、班次四級第 57 題詞彙題考過 1 次：89 聯考第 7 題（誘答）
+potential[pəˈtɛnʃəl]adj.可能的、潛在的四級第 58 題詞彙題考過 6 次：111 學測第 4 題 potentially（答案）、99 學測第 12 題（誘答）、97 指考第 2 題 potentially（誘答）、96 學測第 2 題（答案）、90 聯考第 15 題（誘答）、85 聯考第 9 題（誘答）
+suggestion[səgˈʤɛsʧən]n.建議四級第 59 題詞彙題考過 1 次：88 聯考第 6 題（誘答）
+highlight[ˈhaɪˌlaɪt]v.強調、凸顯五級第 60 題詞彙題考過 1 次：95 指考第 9 題（答案）
+mission[ˈmɪʃən]n.任務、使命三級第 60 題詞彙題考過 4 次：109 學測第 9 題（誘答）、108 學測第 11 題 missions（誘答）、99 學測第 10 題 missions（誘答）、98 學測第 7 題（誘答）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+corporate[ˈkɔrpərət]adj.公司的、企業的五級第 1 段
+screwdriver[ˈskruˌdraɪvɚ]n.螺絲起子六級第 1 段
+surefire[ˈʃʊrˌfaɪr]adj.保證有效的表外第 2 段
+suitcase[ˈsutˌkeɪs]n.行李箱六級第 2 段
+en[ɑn]adv.（en route）在途中、前往……的路上表外第 2 段
+electronic-detection[ɪˌlɛkˈtrɑnɪkdɪˌtɛkʃən]adj.電子偵測的表外第 3 段
+short-haul （詞彙表：haul）[ˈʃɔrtˌhɔl]adj.短程的五級第 3 段
+agenda[əˈʤɛndə]n.議程（back on the agenda 重新列入討論）五級第 4 段
+implement[ˈɪmpləmənt]v.實施、執行五級第 4 段
+bankruptcy[ˈbæŋkrəptsi]n.破產表外第 4 段
+feasibility[ˌfizəˈbɪləti]n.可行性表外第 4 段
+deter[dɪˈtɝ]v.嚇阻六級第 5 段
+detection[dɪˈtɛkʃən]n.偵測表外第 5 段
+potent[ˈpoʊtənt]adj.有效的、強而有力的六級第 5 段
+hijacking （詞彙表：hijack）[ˈhaɪˌʤækɪŋ]n.劫機六級第 56 題
+pronoun[ˈproʊnaʊn]n.代名詞表外第 58 題
+infer[ɪnˈfɝ]v.推論、推斷六級第 59 題
+advocate[ˈædvəˌkeɪt]v.提倡、主張五級第 60 題
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+put + sth + in place實施……第 1 段原文：have been put in place
+require + sb + to + V要求某人……第 1 段原文：require guests to present a photo ID
+require that + 主詞 + (should) + V要求……第 2 段原文：It would require that no checked bag be transported
+become standard practice成為標準做法第 2 段原文：Bag-matching became standard practice
+bring down + N讓（飛機）墜毀第 2 段原文：brought down Pan Am Flight 103
+en route to + N在前往……的途中第 2 段原文：Air India Flight 182 en route to London
+be top priority是第一優先第 3 段原文：security is now top priority
+screen + sth + for + N檢查……裡有沒有……第 3 段原文：screen bags for bombs
+persuade + sb + to + V讓某人決定……第 3 段原文：persuade short-haul travelers to take a train
+be back on the agenda重新排上議程第 4 段原文：was back on the agenda
+drive + sb + into bankruptcy讓……破產第 4 段原文：would drive them into bankruptcy
+have no merit毫無道理第 4 段原文：Such claims have zero merit
+on its own單獨第 5 段
+contemplate + N／V-ing考慮……第 5 段原文：is contemplating action
+← 上一篇篇目一覽
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

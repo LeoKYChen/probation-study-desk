@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g108-30-3/index.html
+Author: staresto-create ZZSH
+Title: 108 年學測克漏字第30題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 108 年學測 ／ 第30題
+108 年學測 克漏字 第30題
+字彙選義線索：句內答對率 36%
+答對率 36%：當年每 100 位考生，有 36 位答對。
+The device, for instance, can be set to 30 one's favorite flavor.
+(A)impress
+(B)release
+(C)bother
+(D)attract
+答案：(B) release
+題目編號：G108_30_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+release 在此是「釋放、散發」：這套裝置可以設定成釋放出使用者最喜歡的味道；impress（使印象深刻）、bother（困擾）、attract（吸引）的受詞都不會是 flavor。
+深入解析
+你可能會這樣想
+release 你大概只記得「發行」（release a new album 發行新專輯）與「釋放（人）」。用於氣體、能量、氣味時，它的意思是「散發、釋出」：Plants release oxygen.（植物釋出氧氣）。
+怎麼判斷
+四個選項都是及物動詞，填入 be set to 之後文法上都能成立，因此判斷的依據在受詞的性質。空格的受詞是 one's favorite flavor，需要一個能以氣味為受詞的動詞，release 正合此意。作答線索在後兩句 Recent experiments with this device showed that 80% of the participants were fooled by the smell. For example, some participants thought that they were eating a chocolate snack, but in fact they were not.（近期以這套裝置進行的實驗顯示，八成受試者被氣味騙過；例如有些受試者以為自己在吃巧克力零食，事實上並不是），可知這套裝置的作用是散發氣味。凡是四個選項都是及物動詞的題目，判斷步驟相同：先看受詞是人還是事物，再檢查各選項慣用的受詞是否與空格一致。
+誘答選項
+impress 與 bother 的受詞通常是人：impress the audience（使觀眾印象深刻）、bother sb（打擾某人）；attract 的受詞可以是人，也可以是 attention、interest 這類抽象名詞（attract attention 吸引注意），不過 attract 是「把……吸引過來」，這個裝置卻是把味道散發出去，方向相反。本句受詞為 flavor，三者都不成立，可一併排除。
+常考字詞與句型
+release a scent／gas（散發氣味／氣體）、release a film（電影上映）、be released from（自…獲釋）、be set to V（被設定成…）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Researchers from a university in Japan have developed "diet-glasses" that play tricks with one's perception of food, which could be helpful to people on a diet.
+A camera and a viewing system are built 26 these glasses. As the wearer brings the food toward their mouth, the camera captures an image of the food. It replays the image back through the glasses after processing it on an attached computer. The size of the food they are about to eat is magnified while 27 of their hand remains normal. Their brain is 28 tricked into thinking they are eating more than they really are. The study showed that participants who wore the glasses ate 9.3% less than those who did not wear them.
+The team has also developed a special device which uses scent bottles and visual trickery to make the wearers of these glasses think that the plain snack they are eating is 29 than it actually is. The device, for instance, can be set to 30 one's favorite flavor. Recent experiments with this device showed that 80% of the participants were fooled by the smell. For example, some participants thought that they were eating a chocolate snack, but in fact they were not.
+中譯：日本一所大學的研究人員開發出一種「減肥眼鏡」，能欺騙人對食物份量的感知，對正在節食的人可能有所幫助。這種眼鏡內建了攝影機和顯示系統。當配戴者把食物送到嘴邊時，攝影機會拍下食物的影像，並透過連接的電腦處理後，將影像重新投射回眼鏡中。他們即將吃下的食物看起來會被放大，而手的大小則維持正常比例。他們的大腦因此被騙，誤以為自己吃下的食物比實際上更多。研究顯示，配戴這種眼鏡的受試者，比沒有配戴的人少吃了 9.3%的食物。研究團隊還開發了一種特殊裝置，利用香氣瓶與視覺錯覺，讓配戴眼鏡的人誤以為自己吃的平淡零食比實際上更美味。舉例來說，這個裝置可以設定釋放使用者最喜歡的香味。近期的實驗顯示，有 80%的受試者被氣味所欺騙，例如有些受試者誤以為自己在吃巧克力零食，但其實不是。
+📋 內容大意
+Japanese researchers have built diet-glasses designed to fool the wearer's perception of food.
+A camera catches the food as it nears the mouth. A computer enlarges the picture but keeps the hand normal, so the brain sees more. Wearers ate 9.3% less.
+A second device uses scent bottles and visual tricks so a plain snack seems richer in flavor. 80% of the testers were fooled; some thought they had eaten chocolate.
+← 第29題回到108 年學測
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

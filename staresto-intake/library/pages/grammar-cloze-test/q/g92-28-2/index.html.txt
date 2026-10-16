@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g92-28-2/index.html
+Author: staresto-create ZZSH
+Title: 92 年學測克漏字第28題詳解（時態／語態）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 92 年學測 ／ 第28題
+92 年學測 克漏字 第28題
+時態／語態線索：句內答對率 49%
+答對率 49%：當年每 100 位考生，有 49 位答對。
+Since then Australia 28 from the rest of the world by vast oceans.
+(A)is isolated
+(B)had isolated
+(C)has isolated
+(D)has been isolated
+答案：(D) has been isolated
+題目編號：G92_28_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+現在完成式被動語態 has been isolated，「從那時起，澳洲就一直被廣闊的海洋孤立至今」（since then（自那時起） 表示從過去到現在持續的狀態）；is isolated（現在簡單式，不符合持續性）、had isolated（過去完成主動，方向與時態都不合）、has isolated（現在完成主動，方向不合，應該是「被隔離」不是「隔離別人」）都不合。
+深入解析
+你可能會這樣想
+看到 Since then，現在完成式幾乎是反射動作，你會很快在 has isolated 與 has been isolated 之間挑一個，而 has isolated 比較短、比較像背過的樣子。答對率不到五成、鑑別度只有 33，連高分群考生也大量失手：難的不是想到現在完成式，那一步大家都會；難的是還要再加一層被動，兩個條件得同時滿足。對「since 配現在完成式」這個公式越熟的人，越容易填完就走，不會回頭檢查動作的方向。
+怎麼判斷
+四個選項都是同一個動詞 isolate 的時態與語態組合，可見這一格考的是形態，那就把句子裡的訊號一個一個找出來。第一個訊號是句首的 Since then（從那時起）：時間從過去某一點一路延伸到現在，終點就是此刻，所以要用現在完成式，掛鉤用 I have lived here for five years.（我在這裡住了五年了。）。第二個訊號在空格後面：from the rest of the world by vast oceans——by 帶出的是動作的執行者（廣闊的海洋），by 後面接著執行者，就是被動的訊號（劍橋 English Grammar Today 的 Passive voice 條目）。兩個訊號一起要求現在完成式的被動，也就是 has been isolated。還有一個方法可以驗算：主動的 has isolated 後面一定要接受詞（isolate 是及物動詞，「把某物隔開」），但空格後面只有 from 與 by 兩個介系詞片語，沒有任何受詞可接——這是「被動之後不能再接原受詞」那條鐵律的反面用法，主動卻找不到受詞，一樣先刷掉。
+誘答選項
+has isolated：現在完成式主動，缺受詞，而且方向錯了，澳洲不是去把別人隔開。is isolated：被動沒錯，但現在簡單式只描述現在的狀態，接不上 Since then 那條從過去延伸到現在的時間線。had isolated：過去完成式需要另一個更晚的過去時間點當基準，本句沒有；主動與缺受詞的問題也一樣沒解決。
+常考字詞與句型
+be isolated from（與……隔絕）、since then（自那時起）、the rest of the world（世界其他地方）、be separated from（與……分開）、be cut off from（與……斷絕往來）、vast oceans（廣闊的海洋）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Up to about 250 million years ago the world had just one huge super-continent called Pangaea. Animals were able to move and intermix with 26. About 200 million years ago this super-continent broke up into two continents: Laurasia and Gondwana. About 60 million years ago Gondwana broke up into 27 later became South America, Africa, Antarctica, India and Australia.
+Since then Australia 28 from the rest of the world by vast oceans. The animals there no longer had 29 with animals from other parts of the world. They evolved separately. As a result, about 95 % of Australia's mammals and 94 % of its frogs are found 30 else in the world. Australia has lots of very unusual animals.
+中譯：大約 2 億 5 千萬年前，地球上曾經只有一塊巨大的超級大陸，稱為「盤古大陸」。當時的動物可以自由移動，彼此交流混居。大約 2 億年前，這塊超級大陸分裂成兩塊：勞亞大陸和岡瓦納大陸。大約 6 千萬年前，岡瓦納大陸又進一步分裂，後來形成了南美洲、非洲、南極洲、印度和澳洲。自此之後，澳洲便被廣闊的海洋與世界其他地區隔絕開來，當地的動物再也無法與世界其他地方的動物有所接觸，於是牠們各自獨立演化。結果，澳洲有大約 95%的哺乳類動物和 94%的蛙類，是世界上其他地方都找不到的獨有物種。澳洲擁有許多非常獨特罕見的動物。
+📋 內容大意
+Until about 250 million years ago, all the land was one super-continent, Pangaea. Animals could move and mix freely.
+It later split into Laurasia and Gondwana. Gondwana then broke into Africa, South America, Antarctica, India and Australia.
+Wide oceans then kept Australia apart. Its animals developed alone, so most of its mammals and frogs live only there.
+← 第27題回到92 年學測第29題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

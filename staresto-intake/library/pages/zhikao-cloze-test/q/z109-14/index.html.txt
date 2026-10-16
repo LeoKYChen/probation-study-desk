@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z109-14/index.html
+Author: staresto-create ZZSH
+Title: 109 年指考克漏字第14題詳解（句型結構）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 109 年指考 ／ 第14題
+109 年指考 克漏字 第14題
+句型結構線索：句內答對率 38%
+答對率 38%：當年每 100 位考生，有 38 位答對。
+These measures also ensure that all labels and advertisements 14 to regulations.
+(A)conform
+(B)conformed
+(C)conforming
+(D)to conform
+答案：(A) conform
+題目編號：Z109_14（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+ensure that 引導的子句中，all labels and advertisements 是主詞，須用現在式 conform（複數主詞不加 -s），構成 conform to（符合）；conformed、conforming、to conform 都不能擔任子句的動詞。
+深入解析
+你可能會這樣想
+看到 that 子句你想填一個有時態的動詞，但這裡有兩個關卡要一起處理。
+怎麼判斷
+ensure that 後面的子句需要一個限定動詞，conforming 是分詞、to conform 是不定詞，兩者都不能單獨當子句的動詞，先刪。剩下 conformed（過去式）與 conform（原形）。全文在介紹消保會現行的作為（has taken measures、collaborates），時態是現在，主詞 all labels and advertisements 是複數，所以用 conform；它在這裡是現在式，複數主詞不加 -s，形態與原形相同。第二個關卡是搭配：conform to ＝ 符合（規定、標準）：All products must conform to safety standards.（所有產品都必須符合安全標準）。空格後面已經印好 to，正好呼應；劍橋詞典也列出 conform with 的用法，兩者都通。「遇到動詞題，順手看一眼後面的介系詞，常常可以反過來確認動詞選對了沒有。」
+誘答選項
+conformed：過去式，全文描述的是消保會現行的作為（has taken、also ensure、collaborates），這個子句沒有理由改用過去式。conforming：現在分詞，前面沒有 be 動詞，不能單獨當 that 子句的動詞。to conform：不定詞，同樣不能單獨當子句的動詞；ensure that 後面接的是完整子句，不是 ensure + 受詞 + to V 的結構。
+常考字詞與句型
+conform to regulations／standards（符合規定／標準）、comply with（遵守）、ensure that + 子句（確保）、in accordance with（依照）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：109學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The Consumer Protection Act in Taiwan was enacted on January 11, 1994. The Act demonstrated the government's efforts to protect consumers' rights and interests. The Consumer Protection Commission, the current Consumer Protection Committee, 11 the supervisor and coordinator for the various consumer protection organizations that put this law into practice. In order to improve the well-being of consumers in Taiwan, the Committee advocates fair trade and 12 pricing for goods and services. The Committee also organizes educational programs to raise consumer awareness, and is active in assisting consumers involved in 13 with businesses or manufacturers.
+Since its establishment, the Consumer Protection Committee has taken measures that emphasize product safety and sanitation. These measures also ensure that all labels and advertisements 14 to regulations. In addition, the Committee collaborates with various international consumer protection organizations to respond to problems involving cross-border trade and business. 15 its regulatory power and administrative resources, the Committee plays a crucial role in protecting consumers in Taiwan.
+中譯：台灣的《消費者保護法》於 1994 年 1 月 11 日制定，展現出政府保障消費者權益的努力。消費者保護委員會（即現在的行政院消費者保護會）擔任各消費者保護組織的監督與協調者角色，負責推動這項法律的落實。為了提升台灣消費者的福祉，該委員會提倡公平交易與合理的商品及服務定價；委員會也舉辦教育宣導活動以提高消費者意識，並積極協助消費者處理與企業或製造商之間的糾紛。
+自成立以來，消保會採取了強調產品安全與衛生的各項措施，這些措施也確保所有標示與廣告都符合法規規定。此外，該委員會也與各國際消費者保護組織合作，共同因應跨國貿易與商業所涉及的問題。憑藉其管理權力與行政資源，消保會在保障台灣消費者權益上扮演著至關重要的角色。
+📋 內容大意
+Taiwan's 1994 Consumer Protection Act created a committee to oversee consumer bodies, promote fair trade and help aggrieved shoppers.
+It has since pushed product safety, checked labels and advertisements, and joined international partners on cross-border trade.
+← 第13題回到109 年指考第15題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z103-20/index.html
+Author: staresto-create ZZSH
+Title: 103 年指考克漏字第20題詳解（時態／語態）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 103 年指考 ／ 第20題
+103 年指考 克漏字 第20題
+時態／語態線索：句內答對率 61%
+答對率 61%：當年每 100 位考生，有 61 位答對。
+Through observing chimpanzees' learning process, researchers hope to gain insight into what the development of our earliest ancestors 20 like.
+(A)is to be
+(B)was to be
+(C)might have been
+(D)will have been
+答案：(C) might have been
+題目編號：Z103_20（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【時態／語態】might have been like 表示對過去（人類最早祖先）狀態的推測，語意為「可能曾經是……的樣子」。is to be／was to be 語意不合此處對久遠過去的臆測；will have been 多作未來完成式；用來推斷過去時表示說話者很有把握，不合此處只能臆測的語境。
+深入解析
+你可能會這樣想
+四個選項都是 be 動詞的不同形態排在一起，你會立刻認定這是時態題，開始比對前後其他動詞的時態。方向沒錯，但真正的線索不在別的動詞身上，在 our earliest ancestors 這幾個字上。
+怎麼判斷
+先把句型還原：what sth is like 是問「某樣東西是什麼樣子」，句尾那個 like 是介系詞，前面的 what 正是它的受詞——這也是為什麼句尾的 like 不能拿掉。接著決定時態：談的是 our earliest ancestors（人類最早的祖先）的發展，那是極久以前的事，沒有人親眼看過，只能推測，所以要用對過去的推測 might have been（可能曾經是）。填進去讀成 what the development of our earliest ancestors might have been like。鑑別度只有 32，但它本身不難：might have + 過去分詞是常見的組合，各種程度的人都答得出來，題目自然分不出高低。
+誘答選項
+is to be 指向未來，但祖先的發展是過去的事，方向相反；will have been 通常是未來完成式，它也能用來推斷已經發生的事（You will have heard about the plans.），但那是說話的人很有把握的推斷，本句講的是只能推測的事，用 might 才合；was to be 是「注定要、預定要」，站在過去往後看、講的是後來果然發生的事（He was to become a famous scientist.），這一句不是在講後來發生了什麼，而是在推測當時的樣子。三個都是 be 的形態，形態吻合，容易被順手選走。
+常考字詞與句型
+might have been（可能曾經是，對過去的推測）、What is he like?（他是什麼樣的人？）、gain insight into（深入了解、看出門道）、be to V（注定要、預定要）、through V-ing（藉由做某事）、observe（觀察）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：103學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Hiding herself among the trees near a chimpanzee habitat, Elizabeth Lonsdorf is using her camera to explore mysteries of learning. The chimpanzee she records picks up a thin flat piece of grass and then digs out tiny insects from a hole. Dinner is 16 ! But how did the chimp develop this ingenious skill with tools? Do the chimp babies copy their parents in using tools? Do the mothers most skilled with tools have offspring who are also good at using tools? Here in Africa, Lonsdorf is conducting one of the world's longest wildlife studies, trying to discover how learning is transferred 17 generations.
+Lonsdorf has always been interested in animal learning and tool use, 18 the way young animals grow up and learn their way in the world. Her chimpanzee study shows a clear link between humans and the rest of the animal kingdom. The chimps make and use tools and have mother-child relationships very 19 to those of humans. Through observing chimpanzees' learning process, researchers hope to gain insight into what the development of our earliest ancestors 20 like.
+Lonsdorf hopes that by understanding the complexity of animal behavior, we can better appreciate and protect the diversity of life on this planet.
+中譯：伊麗莎白．隆斯多夫（Elizabeth Lonsdorf）躲藏在黑猩猩棲地附近的樹叢中，用相機探索學習的奧秘。她所拍攝的黑猩猩會撿起一片細長扁平的草，再從洞裡挖出小昆蟲——晚餐上桌了！但黑猩猩究竟是如何發展出這種使用工具的巧妙技能的呢？小黑猩猩是否會模仿父母使用工具？工具運用能力較強的母猩猩，牠們的後代是否也比較擅長使用工具？在非洲，隆斯多夫正進行世界上為時最久的野生動物研究之一，試圖找出學習是如何代代相傳的。
+隆斯多夫一直對動物學習與工具使用深感興趣，尤其是幼小動物如何成長並學習在世界上生存的方式。她的黑猩猩研究顯示人類與其他動物界之間存在明顯關聯：黑猩猩會製造並使用工具，其母子關係也與人類的母子關係十分相似。透過觀察黑猩猩的學習歷程，研究人員希望能藉此了解人類最早的祖先可能是怎麼發展的。
+隆斯多夫希望，透過理解動物行為的複雜性，我們能更加珍惜並保護這個星球上生命的多樣性。
+📋 內容大意
+Elizabeth Lonsdorf films chimpanzees using grass stems to fish out insects, asking how such skills are learned and handed down.
+Her long African study links humans with other animals: chimps make tools and their mother-child bonds resemble ours.
+Understanding how chimps learn may illuminate our earliest ancestors and help us protect the diversity of life.
+← 第19題回到103 年指考
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

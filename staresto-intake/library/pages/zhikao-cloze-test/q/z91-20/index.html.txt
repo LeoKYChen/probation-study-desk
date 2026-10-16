@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z91-20/index.html
+Author: staresto-create ZZSH
+Title: 91 年指考克漏字第20題詳解（介系詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 91 年指考 ／ 第20題
+91 年指考 克漏字 第20題
+介系詞線索：句內答對率 36%
+答對率 36%：當年每 100 位考生，有 36 位答對。
+Fierce national competition 20 water resources has prompted fears that water issues contain the seeds of violent conflict.
+(A)for
+(B)with
+(C)to
+(D)at
+答案：(A) for
+題目編號：Z91_20（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+competition for 意為「對…的競逐」，for 帶出爭奪的標的：各國對水資源的激烈競逐引發衝突疑慮；with 用於競爭的對手（compete with sb），to、at 都不合。
+深入解析
+你可能會這樣想
+competition 你認得，但它後面該接哪個介系詞常被忽略。關鍵在於分清楚「跟誰爭」與「爭什麼」：competition 「with」 sb ＝ 與某人競爭（對手）；competition 「for」 sth ＝ 為了爭奪某物（標的）。本句空格後面是 water resources（水資源），那是被爭奪的東西，不是對手，所以用 for。
+怎麼判斷
+先看空格後面的名詞在句中扮演什麼角色：water resources 是各國爭奪的標的，不是對手，所以是 competition for。動詞形也一樣：compete with sb for sth ＝ 與某人爭奪某物：Several companies are competing for the contract.（好幾家公司在爭這紙合約）。「遇到介系詞題，先問空格後面那個名詞在句中扮演什麼角色。」文內線索也支持這個讀法：前一句說即使供水充足，水源也面臨污染威脅；本句說各國激烈競逐水資源、引發衝突疑慮；下一句說國際合作因此刻不容緩。三句層層推進，主題就是「水資源不夠、大家在搶」。
+誘答選項
+with：competition with sb 是「與某人競爭」，後面接的是對手，但 water resources 是爭奪的標的，不是對手。to：表示方向或對象（give it to me、a threat to water supplies），說不出「爭的是什麼」；competition 後面接 to 時只接不定詞（a competition to find a designer），不接名詞。at：表示地點或時間點（at the entrance、at noon），competition at 後面接的是舉辦的地點，不是爭奪的標的。
+常考字詞與句型
+competition for（對…的競逐）、competition with（與…競爭）、compete for a prize（爭奪獎項）、the demand for（對…的需求）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：91學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+More than 2.7 billion people will face severe shortages of fresh water by 2025. There is, 16, only a limited amount of water on the planet. Less than 3 percent of the world's water is fresh, and most of 17 is trapped in polar ice or buried underground in springs too deep to reach. Freshwater lakes, rivers and reservoirs may seem 18 but provide just a drop in the bucket.
+Even 19 supplies are sufficient or plentiful, they are increasingly at risk due to various forms of pollution.
+Fierce national competition 20 water resources has prompted fears that water issues contain the seeds of violent conflict. International cooperation is therefore by all means urgent.
+中譯：到 2025 年，將有超過 27 億人面臨嚴重的淡水短缺。然而，地球上的水量其實有限。世界上不到 3%的水是淡水，其中大部分被封存在極地冰層中，或深埋在難以取用的地下泉源裡。淡水湖泊、河流和水庫看似豐沛，實際上只是滄海一粟。即使供給充足或豐富的地方，也因各種污染而日益面臨風險。各國為爭奪水資源而激烈競爭，使人們擔心水資源問題恐將成為暴力衝突的導火線。因此，國際合作刻不容緩。
+📋 內容大意
+By 2025 more than 2.7 billion people will lack fresh water, and the planet's supply is limited.
+Nearly all of the tiny fresh share sits in polar ice or too deep underground to reach.
+Pollution and fierce national rivalry over water make international cooperation urgent.
+← 第19題回到91 年指考第21題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

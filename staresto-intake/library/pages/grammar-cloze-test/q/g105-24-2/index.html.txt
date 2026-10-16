@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g105-24-2/index.html
+Author: staresto-create ZZSH
+Title: 105 年學測克漏字第24題詳解（時態／語態）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 105 年學測 ／ 第24題
+105 年學測 克漏字 第24題
+時態／語態線索：句內答對率 26%
+答對率 26%：當年每 100 位考生，有 26 位答對。
+Once the questions are finished, the examiner analyzes the results to determine if the person tested 24 truthful.
+(A)was being
+(B)would be
+(C)was to be
+(D)would have been
+答案：(A) was being
+題目編號：G105_24_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+was being truthful 用 be 動詞的進行式，表示「當時（測謊進行時）是否說實話」這個一時的行為表現；would be（對未來或假設的推測）、was to be（命中注定、預定要）、would have been（與過去事實相反的假設）都與當下的實際表現無關。
+深入解析
+你可能會這樣想
+be being + 形容詞。你對 be 動詞的印象大概只有一種讀法：接形容詞，講一個人是什麼樣的人，所以 was being truthful 看起來像是錯的。這一格考的是時態：進行式把時間框在某一個時間點，講的是那個當下的表現。Ken is kind.（Ken 人很好，講的是他這個人。）／When Ken pulled the door for me, he was being kind.（Ken 幫我拉住門的那一刻，人真好。）同一個形容詞，加了進行式就只講那一刻。要注意的是，能這樣用的只有描述舉止的形容詞——kind、rude、silly、careful、truthful；講感受或狀態的不行，英文不說 He is being happy 或 He is being hungry。
+怎麼判斷
+本題要判定的是受測者在測謊那段時間有沒有說實話，不是評斷這個人一輩子誠不誠實，所以用 was being truthful。文內把時間點寫得很清楚：Once the questions are finished（等問題問完之後）、the examiner analyzes the results（測謊人員分析結果），分析在後，回頭看的正是測謊進行中那一段。這個用法你應該見過：Don't be silly.（別傻了）／You're being silly.（你現在很幼稚）。
+誘答選項
+would be 是對未來或假設的推測；was to be 表「預定要」（The ceremony was to be held at noon. 典禮預定中午舉行）；would have been 是與過去事實相反的假設。三個都跟「測謊當下的實際表現」無關。
+常考字詞與句型
+be being + 形容詞（那一刻的舉止）、tell the truth（說實話）、truthful（誠實的）、a lie detector（測謊器）、take a polygraph test（接受測謊）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+A polygraph machine, also known as a "lie detector," is a common part of criminal investigations. The instrument is used to measure 21 a person's body reacts to questions. The theory underlying it is that lying is stressful, and that this stress can be measured and recorded on a polygraph machine.
+When a person takes a polygraph test, four to six wires, called sensors, are 22 to different parts of his body. The sensors pick up signals from the person's blood pressure, pulse, and perspiration. 23 the process of questioning, all the signals are recorded on a single strip of moving paper. Once the questions are finished, the examiner analyzes the results to determine if the person tested 24 truthful.
+Well-trained examiners can usually detect lying with a high degree of 25 when they use a polygraph. However, because different people behave differently when lying, a polygraph test is by no means perfect.
+中譯：測謊機，又稱「謊言偵測器」，是刑事偵查中常見的工具。這項儀器用來測量一個人身體對問題的反應方式。其背後的理論是：說謊會造成壓力，而這種壓力可以透過測謊機測量並記錄下來。當受測者接受測謊時，會有四到六條稱為感應器的導線，連接到身體不同部位，這些感應器會擷取受測者血壓、脈搏和排汗的訊號。在整個問話過程中，所有訊號都會被記錄在一條移動中的紙帶上。問話結束後，測謊人員會分析結果，判斷受測者是否誠實。訓練有素的測謊人員在使用測謊機時，通常能相當準確地偵測出謊言。然而，由於每個人說謊時的反應不盡相同，測謊測試絕非完美無缺。
+📋 內容大意
+The polygraph, or lie detector, is a standard tool in criminal investigation and measures the body's reactions to questions.
+Four to six sensors are fixed to the body. They pick up blood pressure, pulse and sweat, and a moving strip of paper records every signal.
+The examiner then reads the record to judge truthfulness. Skilled examiners are usually reliable, but people behave differently when lying, so the test is far from perfect.
+← 第23題回到105 年學測第25題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

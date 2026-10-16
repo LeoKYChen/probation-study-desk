@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g96-24-2/index.html
+Author: staresto-create ZZSH
+Title: 96 年學測克漏字第24題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 96 年學測 ／ 第24題
+96 年學測 克漏字 第24題
+字彙選義線索：跨句答對率 35%
+答對率 35%：當年每 100 位考生，有 35 位答對。
+The Indian plate's 24 movement is not new.
+(A)wayward
+(B)downward
+(C)northward
+(D)outward
+答案：(C) northward
+題目編號：G96_24_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+文章前段已說明印度板塊是往北推擠喜馬拉雅山（pushes northward），故此處為 northward movement（向北移動）；wayward 是「任性的」不表方向，downward（向下）、outward（向外）都與文中所述方向不符。
+深入解析
+你可能會這樣想
+四個選項都以 -ward 結尾，你大概以為在比四個方向，於是回頭找文章裡的方向詞。真正的陷阱是 wayward 根本不表方向：它的意思是「任性的、難以駕馭的」。而且它不是 -ward 的例外——wayward 是 awayward 的縮寫，away + -ward，「轉開去、背過身去」，引申成「不照規矩走」。所以它照樣是「朝某方向」，只是那個方向是「離開」，不是東南西北。
+怎麼判斷
+本句自己沒有任何方向訊息，必須回到文章開頭：as it pushes northward against the Himalayas（印度正往北推擠喜馬拉雅山）。這是典型的跨句題——空格所在的那一句讀再多次也判不出來，答案在前段。看到 The Indian plate's ___ movement 這種舊資訊重提的寫法，就該往回找作者第一次講這件事的地方。
+誘答選項
+downward（向下）、outward（向外）本身都是正常的方向詞，只是與文中「向北」不符。-ward 家族兩兩成對，成對記比一個一個記快：northward ↔ southward、upward ↔ downward、inward ↔ outward、forward ↔ backward。一句記完：Prices move upward, then downward; the typhoon creeps northward; but a wayward gust tears the umbrella away.（價格起起落落；颱風緩緩向北推移；但一陣不聽話的強風把傘扯走了。）〔情境取材自 114 學測作文題：颱風停課〕
+常考字詞與句型
+move northward（向北移動）、an upward／downward trend（上升／下降趨勢）、a wayward child（叛逆難管的孩子）、inward／outward（向內／向外）。
+線索範圍說明：移動方向 northward 寫在前段 as it pushes northward against the Himalayas
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+India is shrinking. A new analysis of satellite-based data has given precisely the rate 21 which the country is losing size as it pushes northward against the Himalayas. According to the analysis, the 22 between India's southern and northern tips shrinks by 2 cm every year. As India's size decreases, the thickness of the Himalayas increases. 23 the shrinking continues, India will disappear in 200 million years. There would only be a vast mountain range along the southern coast of China.
+The Indian plate's 24 movement is not new. However, this cannot be treated as a trivial finding in science. A movement of 25 a few millimeters (mm) of the earth's crust is a sign of possible earthquakes. Such dangers are now obvious in India, where the movement of the plate continues.
+中譯：印度正在縮小。一項根據衛星資料的新分析，精確計算出印度在向北推擠喜馬拉雅山脈的過程中縮小的速度。根據這項分析，印度南北兩端之間的距離每年縮短 2 公分。隨著印度面積縮小，喜馬拉雅山的厚度則在增加。如果這種縮小持續下去，印度將在兩億年後消失，屆時只會剩下一片沿著中國南部海岸的廣大山脈。印度板塊的北移現象並不是新鮮事。然而，這在科學上不能被視為無關緊要的發現。地殼只要移動幾公釐，就可能是地震即將發生的徵兆。這樣的危險在印度已相當明顯，因為該板塊仍持續在移動。
+📋 內容大意
+Satellite data now shows precisely how quickly India is losing size as the plate pushes north into the Himalayas.
+The gap between the country's northern and southern tips closes by two centimeters a year, and the mountains grow thicker. India could vanish in 200 million years.
+The plate's motion is not new. But a shift of a few millimeters in the crust signals possible earthquakes, so the finding matters.
+← 第23題回到96 年學測第25題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

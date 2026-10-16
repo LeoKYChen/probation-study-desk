@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g115-11-1/index.html
+Author: staresto-create ZZSH
+Title: 115 年學測克漏字第11題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 115 年學測 ／ 第11題
+115 年學測 克漏字 第11題
+慣用語／片語線索：跨句答對率 29%
+答對率 29%：當年每 100 位考生，有 29 位答對。
+White rhinoceroses, 11 , do the same thing—only their choice of meeting place is a giant pile of poop.
+(A)what is more
+(B)it turns out
+(C)in other words
+(D)all in all
+答案：(B) it turns out
+題目編號：G115_11_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+it turns out 作插入語，意為「結果發現、原來」，用來帶出出乎意料的事實——白犀牛竟然也和人類一樣會聚集交流；what is more（更有甚者）、in other words（換句話說）、all in all（總而言之）都不帶「意外」的語氣。
+深入解析
+你可能會這樣想
+前後兩句講的是同一件事——人類聚在一起交換消息，白犀牛也聚在一起交換消息，所以很容易直接選 what is more（更有甚者），覺得這是「再加一項」。你抓到兩句同向，這個判斷沒錯，錯在漏看主詞換了人：前句主詞是 people，本句主詞是 White rhinoceroses。從人跳到動物，作者要傳的不是「再加一項」，是「沒想到吧」。
+怎麼判斷
+連貫標記這一類的題目，四個選項的中文各不相同，考的不是字義而是句與句之間的邏輯關係，所以要先問「這兩句是什麼關係」。這裡的關係是意外的發現，it turns out（結果發現、原來）正是專門帶出意外的插入語。驗算法是把插入語拆回完整句子：It turns out that white rhinoceroses do the same thing.（結果發現白犀牛也做同樣的事。）確認拆得回去，就知道它是插入語不是連接詞。破折號後面那句 only their choice of meeting place is a giant pile of poop（只是牠們選的聚會地點是一大堆糞便）更把落差寫死了，意外的語氣前後呼應。一句記完：It turns out that the quiet park near my school draws more visitors than the one with the new playground.（結果發現，學校旁邊那座安靜的公園，來的人比有新遊具的那座還多。）〔情境取材自 111 學測作文題：兩座公園的比較〕
+誘答選項
+what is more（更有甚者）用在同一個對象再加一項，不換主詞；in other words（換句話說）是把前句換個說法再講一次，但本句是新資訊不是改述；all in all（總而言之）是收尾用語，這裡才第二句，文章還沒展開。反義方向記一組：it turns out 帶出意料之外，as expected（不出所料）帶出意料之中。
+常考字詞與句型
+it turns out (that) + 子句（結果發現）、turn out to be（結果是）、as expected（不出所料）、what is more（更有甚者）、in other words（換句話說）、all in all（總而言之）、gather together（聚集）、share the latest news（分享最新消息）。其中 turn out to be 這一組考過 5 個年度，89 年第 26 題 →、103 年第 28 題 →、105 年第 17 題 →、108 年第 21 題 →都出現過；what is more 考過 3 個年度，92 年第 27 題 →、103 年第 19 題 →都出現過。
+線索範圍說明：do the same thing 指前一句人類聚集分享消息，才知道這是新發現而非換句話說
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+From the campfire to the café, people have always gathered together to share the latest news. White rhinoceroses, 11 , do the same thing—only their choice of meeting place is a giant pile of poop. A new study indicates that rhinos have a smelly way to 12 .
+Scientists studying white rhinos in South Africa have found that these animals leave messages in their poop. In particular, they leave their poop in the same place for all the other members in the group to smell—just like humans leaving messages on social media. Furthermore, different rhinos leave different chemicals in their poop, which provide important 13 about the age, sex, general health, and reproductive conditions of each specific rhino.
+This is of great significance for the peace and harmony in the group. When all members in a group know what's going on with each other, it is 14 that they will fight.
+The researchers have even made "fake poop" to see how different rhinos would react. They find that dominant males are particularly 15 the "fake poop" that carries chemicals from females ready to mate. The males sniff it for longer duration and come back to the same spot more frequently, a clear sign that they are gathering information about mating opportunities from the poop.
+中譯：從營火旁到咖啡館，人們總是喜歡聚在一起分享最新的消息。事實上，白犀牛也會做同樣的事——只不過牠們選擇的聚會地點，是一大堆的糞便。一項新研究顯示，犀牛有一種「臭氣沖天」的溝通方式。科學家在南非研究白犀牛時發現，這些動物會在糞便中留下訊息，特別是牠們會把糞便集中留在同一個地方，讓群體中的其他成員都能聞到——就像人類在社群媒體上留言一樣。此外，不同犀牛的糞便中所含的化學物質也不盡相同，這些化學物質能提供關於該犀牛年齡、性別、整體健康狀況及生育狀態的重要線索。這對維持群體間的和平與和諧具有重大意義——當群體中的每個成員都了解彼此的狀況時，牠們打架的機率就會降低。研究人員甚至製作了「假糞便」，來觀察不同犀牛的反應。他們發現，占優勢地位的公犀牛，對含有母犀牛發情化學物質的「假糞便」特別感興趣。這些公犀牛會嗅聞較長的時間，也會更頻繁地回到同一個地點，這清楚顯示牠們正透過糞便蒐集有關交配機會的資訊。
+📋 內容大意
+People gather at campfires and cafés to share news. A new study shows white rhinos do something similar at a giant pile of dung.
+Rhinos in South Africa drop dung in one shared spot for the group to smell. Its chemicals reveal each animal's age, sex, health and readiness to breed.
+Shared knowledge keeps the group peaceful and fighting rare. In tests with fake dung, dominant males sniffed longer and returned more often when females were ready to mate.
+回到115 年學測第12題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

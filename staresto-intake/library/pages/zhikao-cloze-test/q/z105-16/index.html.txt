@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z105-16/index.html
+Author: staresto-create ZZSH
+Title: 105 年指考克漏字第16題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 105 年指考 ／ 第16題
+105 年指考 克漏字 第16題
+字彙選義線索：句內答對率 33%
+答對率 33%：當年每 100 位考生，有 33 位答對。
+He was also the man who cracked the 16 uncrackable Enigma code used by Nazi Germany.
+(A)eventually
+(B)precisely
+(C)concernedly
+(D)supposedly
+答案：(D) supposedly
+題目編號：Z105_16（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+supposedly 意為「據稱、一般認為」，帶有「說話的人未必相信」的意味：他破解了那套「據稱無法破解」的恩尼格瑪密碼；eventually（最終）、precisely（精確地）、concernedly（關切地）語意都不合。
+深入解析
+你可能會這樣想
+supposedly 這個副詞你可能不常見到，而且它的作用很微妙——它不是在陳述事實，而是在標示「別人是這麼說的，但未必是真的」。
+怎麼判斷
+本句的趣味就在這裡：the supposedly uncrackable Enigma code ＝「那套據稱無法破解的密碼」。既然圖靈把它破解了，uncrackable（無法破解）顯然只是「大家以為」而已——supposedly 就是用來標記這個落差。少了它，句子會變成「他破解了無法破解的密碼」，自相矛盾。看到形容詞前面要填副詞、而那個形容詞又與句子的事實衝突時，就要想到這類「據稱」的字：supposedly、allegedly（據稱，多用於指控）、reportedly（據報導）、seemingly（看似）。
+誘答選項
+eventually：最終，是講時間先後的副詞，修飾動詞或整句（He eventually succeeded.），不用來修飾形容詞 uncrackable；就算硬放進去，「最終無法破解」也與 cracked 矛盾。precisely：精確地、正是，放在形容詞前面是加強語氣，the precisely uncrackable code 等於強調「真的無法破解」，與圖靈破解了它直接衝突。concernedly：擔憂地，形容人的神態或做事的方式，密碼「無法破解」這件事不會「擔憂地」發生。
+常考字詞與句型
+supposedly + 形容詞（據稱…的）、allegedly（據稱，多用於指控）、reportedly（據報導）、be supposed to（應該）、crack a code（破解密碼）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：105學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Alan Turing was one of the leading scientific geniuses of the 20th century. Many scholars consider him the father of modern computer science. He was also the man who cracked the 16 uncrackable Enigma code used by Nazi Germany. His code-breaking turned the tide of World War II and helped save two million lives. Nevertheless, 17 people have even heard his name. Turing displayed signs of high intelligence in math and science at a young age. By the time he was 23, he had already come up with the idea of what 18 the modern computer—the Turing machine. Today, Turing machines are still used in theoretical computation. He also proposed the now famous Turing test, used to determine whether a computer exhibits intelligent behavior equivalent to that of a human.
+The postwar era, however, was a disaster for Turing. He was gay, which was then a crime in Britain. 19 being hailed as one of the crucial figures in defeating the Nazis, Turing was convicted of "gross indecency." This 20 drove him to commit suicide in 1954, at the age of 41.
+Nearly 60 years after his death, Queen Elizabeth II granted Turing a formal pardon for his conviction, upon an online petition signed by prominent scientists and technology leaders around the world.
+中譯：艾倫．圖靈是二十世紀最頂尖的科學天才之一，許多學者將他視為現代電腦科學之父。他也是破解納粹德國所使用、據稱牢不可破的恩尼格瑪密碼的人。他的破密工作扭轉了第二次世界大戰的局勢，並拯救了兩百萬條人命。然而，卻鮮少有人聽過他的名字。圖靈從小就在數學與科學方面展現高度智慧。到了 23 歲，他便已構思出後來發展成現代電腦的概念——圖靈機。時至今日，圖靈機仍應用於理論計算領域。他也提出了如今著名的圖靈測試，用來判斷電腦是否展現出與人類相當的智慧行為。然而，戰後時期對圖靈而言卻是一場災難。他是同性戀者，而這在當時的英國是一項罪行。他非但沒有因擊敗納粹的重大貢獻而受到推崇，反而被判「嚴重猥褻罪」有罪。這樣的屈辱最終導致他於 1954 年、41 歲時自殺身亡。在他死後將近 60 年，伊莉莎白二世女王在全球知名科學家與科技領袖連署的網路請願下，正式赦免了他的罪名。
+📋 內容大意
+Alan Turing, called the father of computer science, broke the Enigma code and helped turn the Second World War.（敘事文）
+Gifted young, by twenty-three he had conceived the Turing machine, the idea behind modern computers.（敘事文）
+He also devised the Turing test, but postwar Britain convicted him for being gay.（敘事文）
+He took his own life in 1954, and a royal pardon came nearly sixty years later.（敘事文）
+← 第15題回到105 年指考第17題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

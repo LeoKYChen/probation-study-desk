@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z92-24/index.html
+Author: staresto-create ZZSH
+Title: 92 年指考克漏字第24題詳解（連接詞／轉折詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 92 年指考 ／ 第24題
+92 年指考 克漏字 第24題
+連接詞／轉折詞線索：跨句答對率 65%
+答對率 65%：當年每 100 位考生，有 65 位答對。
+These materials, 24 , were undreamed of in the 18th century.
+(A)finally
+(B)however
+(C)in addition
+(D)as a result
+答案：(B) however
+題目編號：Z92_24（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+插入語 however 表示語意上的轉折對比（這些材料在現代很普遍，然而在 18 世紀卻是想像不到的），符合「今昔對比」的語境；finally（最後）、in addition（此外）、as a result（因此）都不符合這種轉折對比的語氣。
+深入解析
+你可能會這樣想
+however 這個字，你的印象大概只有「出現在句首」那一種擺法，看到它夾在主詞與動詞中間、前後各一個逗號，反而不敢選。
+怎麼判斷
+鑑別度高達 61。這是邏輯勾環，線索一定要跨句才看得到。前一句說二十世紀有些椅子是用鋼和塑膠做的；空格這一句 These materials, ______, were undreamed of in the 18th century（這些材料在十八世紀是想都想不到的）把時間往回拉——現在有、過去連想都沒想過，兩句站在相反的位置，所以用 however。填進去讀成 These materials, however, were undreamed of in the 18th century。位置的部分：however 屬於連接副詞，可以出現在副詞能出現的任何位置，夾在主詞與動詞之間、前後各加一個逗號是常見的擺法。指考 97 年第 16 題 →也考同一個位置的 however，兩題可以擺在一起看。
+誘答選項
+finally（最後）要求前面有一個順序；in addition（此外）是往同一個方向加東西，但這裡是轉折；as a result（結果）要求前面是原因，但十八世紀想不到這些材料，並不是二十世紀用鋼和塑膠造成的。
+常考字詞與句型
+however（然而，連接副詞，位置靈活）、nevertheless（儘管如此）、be undreamed of（想都想不到）、as a result（結果、因此）、in addition（此外）、make sth possible（使某事成為可能）。
+線索範圍說明：however 與前一句二十世紀椅子的材料對比
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：92學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Science makes possible the use of new materials and new methods of producing objects. For example, some 20th-century chairs are made of steel and plastic. These materials, 24, were undreamed of in the 18th century. As new materials develop, one invention often 25 another.
+Steel, for instance, was developed by engineers in the 19th century. 26 its strength, steel soon became a useful building material. 27 steel construction, buildings could then have a great many stories. But no one could be expected to walk up 8, 10, or 30 flights of 28.
+Therefore, to make tall buildings more accessible to their users, the elevator 29. By providing much-needed space in a world 30 people, tall buildings have solved a great problem of the city and have completely changed our way of life.
+中譯：科學使人們得以運用新材料及新方法來製造物品。舉例來說，有些 20 世紀的椅子是用鋼鐵與塑膠製成的，然而這些材料在 18 世紀是想都想不到的。隨著新材料的發展，一項發明往往會帶動另一項發明的誕生。以鋼鐵為例，它是 19 世紀工程師研發出來的。由於鋼鐵強度高，很快便成為一種實用的建築材料。有了鋼骨結構，建築物便能蓋得非常高。但沒有人能指望爬上 8 層、10 層，甚至 30 層樓梯。因此，為了讓使用者更方便進出高樓，人們發明了電梯。透過為日益擁擠、人口眾多的世界提供急需的空間，高樓大廈解決了城市的一大難題，也徹底改變了我們的生活方式。
+📋 內容大意
+Science allows objects to be made from materials and by methods earlier centuries could not imagine.
+Steel, developed in the nineteenth century, proved strong enough for building and let structures rise many stories.
+The elevator then made such heights usable, and tall buildings reshaped city life by adding much-needed space.
+← 第23題回到92 年指考第25題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

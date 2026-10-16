@@ -1,0 +1,44 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g104-25-2/index.html
+Author: staresto-create ZZSH
+Title: 104 年學測克漏字第25題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 104 年學測 ／ 第25題
+104 年學測 克漏字 第25題
+字彙選義線索：句內答對率 76%
+答對率 76%：當年每 100 位考生，有 76 位答對。
+The feathers of peacocks are considered the most 25 part of the bird because the eye-shaped markings on them are associated with “evil eyes.”
+(A)unlucky
+(B)illogical
+(C)impossible
+(D)unnecessary
+答案：(A) unlucky
+題目編號：G104_25_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「孔雀的羽毛被認為是這種鳥身上最『不吉利』的部位」，unlucky（不吉利的）符合，呼應後文 associated with evil eyes（與邪眼有關）；illogical（不合邏輯的）、impossible（不可能的）、unnecessary（不必要的）都不合。
+深入解析
+你可能會這樣想
+四個選項都是否定字首開頭 —— un-、il-、im-、un-，形狀非常接近，讀快一點容易眼花，看到「都是否定的」就隨便挑一個。這種一整排同型選項的題目，反而要放慢速度，逐一確認「它們各自是用來修飾什麼東西的」。
+怎麼判斷
+先看被修飾的是什麼：the most {25} part of the bird（這種鳥身上最……的部位）。一個「部位」可以不吉利，卻不會「不合邏輯」或「不可能」，光是確認被修飾的名詞，就能先刷掉兩個；unnecessary（不必要的）雖然放得進去，但要靠下一步的原因子句來排除。再看空格後面緊接著的原因子句：because the eye-shaped markings on them are associated with “evil eyes.”（因為羽毛上眼睛狀的花紋讓人聯想到「邪眼」。）evil（邪惡的）就是答案的同義提示。最後一句再加強一次：To bring the evil eye into the home is thus believed to invite trouble and sorrow.（因此人們相信把邪眼帶進家門會招來麻煩與不幸。）整段的關鍵字是「不祥」，答案只能是 unlucky。另外值得注意的是全篇的結構：開頭 a very lucky sign、中間 not {22} seen as lucky、這裡 the most unlucky part —— 同一個字反覆出現時，空格通常就是它的同義詞或反義詞，讀克漏字時把重複出現的字圈起來，常常空格就自己浮出來了。
+誘答選項
+illogical（不合邏輯的）修飾的是想法或論證，例 an illogical argument（不合邏輯的論點）。impossible（不可能的）修飾的是事情或任務。unnecessary（不必要的）修飾的是行為或花費，例 unnecessary expenses（不必要的開銷）。
+常考字詞與句型
+unlucky（不吉利的、倒楣的）、a lucky sign（吉兆）、be associated with（與……有關聯、使人聯想到）、invite trouble（招惹麻煩）、eye-shaped（眼睛形狀的）、receive scorn（受到輕視）、bring sth into the home（把某物帶進家中）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Much like the dove and robin, the bluebird is considered a very lucky sign in most cultures, particularly when seen in the spring. 21 , a woodpecker, when seen near the home, is regarded as a good sign. In contrast, the peacock is not 22 seen as lucky. In places like India, the peacock is considered lucky because the great many "eyes" on its feathers are said to alert it to 23 evil. Peacocks are also highly valued in China and Japan, where they are kept as symbols by the ruling families to 24 their status and wealth.
+However, the peacock receives only scorn from the rest of the world. The feathers of peacocks are considered the most 25 part of the bird because the eye-shaped markings on them are associated with "evil eyes." To bring the evil eye into the home is thus believed to invite trouble and sorrow.
+中譯：就像鴿子和知更鳥一樣，藍鳥在大多數文化中都被視為十分吉利的象徵，尤其是在春天看到的時候。同樣地，若在家附近看到啄木鳥，也被視為一種吉兆。相較之下，孔雀就不一定被視為吉祥的象徵了。在印度等地，孔雀被認為是吉祥的，因為牠羽毛上眾多「眼睛」般的花紋，據說能提醒牠留意逼近的邪惡。孔雀在中國和日本也備受重視，統治家族會飼養孔雀作為地位與財富的象徵。然而，在世界其他地方，孔雀卻常常受到輕視——孔雀的羽毛被認為是牠身上最不吉利的部位，因為羽毛上眼睛狀的花紋，常被聯想成「邪眼」。因此，人們相信把「邪眼」帶進家中，會招致麻煩與不幸。
+📋 內容大意
+Unlike birds that symbolize good fortune, peacocks hold complex cultural meanings, revered in Asian nations as symbols of protection and wealth, but shunned elsewhere as signs of bad luck.
+← 第24題回到104 年學測第26題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

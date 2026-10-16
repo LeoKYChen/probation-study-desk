@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g94-23-2/index.html
+Author: staresto-create ZZSH
+Title: 94 年學測克漏字第23題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 94 年學測 ／ 第23題
+94 年學測 克漏字 第23題
+字彙選義線索：句內答對率 32%
+答對率 32%：當年每 100 位考生，有 32 位答對。
+It has been very successful and has led to a 44% 23 in smokers wanting to kick the habit.
+(A)increase
+(B)change
+(C)portion
+(D)drop
+答案：(A) increase
+題目編號：G94_23_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+an increase in 是「…的增加」，a 44% increase in smokers wanting to kick the habit 指想戒菸的人增加了四成四；change（改變）語意不明確，portion（部分）不與百分比這樣搭配，drop（下降）與前面的 very successful 矛盾。
+深入解析
+你可能會這樣想
+increase 你記得的大概是動詞「增加」（Prices increased.），較少把它當名詞用。名詞的 increase 有固定的字詞搭配：an increase 「in」 + 增加的項目、a 44% increase（增加了 44%），也可以寫 an increase of 44%——in 帶出增加的項目，of 帶出增加的幅度，兩個介系詞各管一件事。
+怎麼判斷
+作答線索在空格後面那一整組名詞，不是只有 smokers。原句是 a 44% ___ in smokers wanting to kick the habit（想戒菸的吸菸者…了 44%），wanting to kick the habit 是後位修飾，被計數的是「想戒菸的人」，不是吸菸人口。趕時間的人只讀到 in smokers 就選 drop——菸害警示奏效、吸菸人數下降，這個推論本身完全合理，錯在漏掉後面那一串。讀完整組再回頭看同一句前半的 It has been very successful（這個做法成效非常好），方向就對上了：成效好，想戒菸的人變多，填 increase。判斷方式：空格後的名詞若帶後位修飾（分詞、介系詞片語、關係子句），一定要讀到修飾語結束再判斷。名詞的 increase 接增加的項目時用 in，接增加的幅度時才用 of（劍橋詞典例句 an increase of six percent）。
+誘答選項
+change 雖然中性，但 a 44% change 語意含糊，讀者無法判斷是增是減，接不上同一句前半 It has been very successful 要講的成效；portion 是「部分、份量」，不與百分比構成 a 44% portion in 這種說法。
+常考字詞與句型
+an increase／a decrease／a drop in（…的增加／減少／下降）、on the increase（持續增加中）、lead to（導致）、kick the habit（改掉這個習慣，在此指吸菸）。其中 lead to 這一組考過 7 個年度，88 年第 28 題 →、90 年第 22 題 →、99 年第 26 題 →、108 年第 16 題 →、110 年第 19 題 →、學測參考試卷第 23 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+European politicians are trying to get the UK Government to make cigarette companies print photos on the packets. These photos will show 21 smoking damages your health. The shocking pictures include images of smoke-damaged lungs and teeth, with reminders in large print that smokers die younger.
+The picture 22 have been used in Canada for the last four years. It has been very successful and has led to a 44% 23 in smokers wanting to kick the habit. At the moment EU tobacco manufacturers only have to put written health warnings on cigarette packets 24 the dangers of smoking.
+The aim of the campaign is to remind people of the damage the deadly weed does to their body. It is believed that this would be to the best interest of all people, 25 teens who might be tempted to start smoking. These dreadful photos may change the impression among teenagers that smoking is cool and sexy.
+中譯：歐洲多國政治人物正試圖推動英國政府要求菸商在菸盒上印製警示照片，這些照片將展示吸菸如何危害健康。這些駭人的圖片包括因吸菸受損的肺部與牙齒影像，並以大字體標示提醒：吸菸者往往較早死亡。這種警示照片在加拿大已經使用了四年，成效相當顯著，讓想戒菸的吸菸者比例增加了 44%。目前歐盟只要求菸草製造商在菸盒上以文字警語提醒吸菸的危害。這項活動的目的，是要提醒人們吸菸這種致命惡習對身體造成的傷害，人們相信這將符合所有人的最大利益，尤其是那些可能受誘惑而開始吸菸的青少年。這些駭人的照片，或許能改變青少年心中「吸菸很酷、很性感」的既有印象。
+📋 內容大意
+European politicians want the UK Government to require cigarette companies to print photographs on packets showing the damage smoking does to health.
+The pictures show damaged lungs and teeth, with large print reminding smokers they die younger. Canada has used them for four years, and 44% more smokers want to quit.
+EU makers now print only written notices. The campaign hopes the photos will remind everyone, above all teenagers, that smoking is not cool.
+← 第22題回到94 年學測第24題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

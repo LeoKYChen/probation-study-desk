@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g85-32-2/index.html
+Author: staresto-create ZZSH
+Title: 85 年學測克漏字第32題詳解（比較級）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 85 年學測 ／ 第32題
+85 年學測 克漏字 第32題
+比較級線索：句內
+We have learned much about survival from 32 forms of animal life.
+(A)better
+(B)fewer
+(C)less
+(D)lower
+答案：(D) lower
+題目編號：G85_32_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】lower forms of animal life 是生物學固定用語「低等生物」；better（更好的）、fewer（修飾可數名詞數量）、less（修飾不可數名詞數量）都不符合這裡表達「等級較低」的語意。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都與「比較」有關，而 fewer 與 less 是你最熟的一組，很容易反射性地在它們之間挑。但這一句比的不是數量，是等級。
+怎麼判斷
+先看空格後面接什麼：forms of animal life（動物的生命形式）。再看整句：We have learned much about survival from ___ forms of animal life.（我們從……的動物身上學到很多關於生存的事。）人類會向哪一種動物學習生存？後面舉的例子是蜥蜴——生物學上稱為「低等生物」，英文的固定說法是 lower forms of life，相對的是 higher forms of life（高等生物）。所以填 lower，講的是生物在演化階序上的位置，不是數量多寡。
+誘答選項
+fewer（較少的）：修飾可數名詞的數量，但本句不是在比動物種類的多寡。less（較少的）：修飾不可數名詞的數量，同樣不是這一句的重點。better（更好的）：語意不通——「從更好的動物身上學習」既沒有依據，也與後面舉蜥蜴為例對不起來。
+常考字詞與句型
+lower forms of life（低等生物）、higher forms of life（高等生物）、learn about（了解、學到）、fewer + 可數名詞（較少的）、less + 不可數名詞（較少的）、animal life（動物界、動物的生命）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+All forms of life have an instinctive urge to survive. Nature provides 31 with the means of survival. We have learned much about survival from 32 forms of animal life.
+Lizards, 33 can change the color of their skin and 34 the trees and leaves around them. 35 , they cannot be detected by other animals that threaten them. Nature provides other forms of protection 36 environmental dangers.
+Human beings, too, 37 special devices to protect 38 . Their skin is very 39 to temperature changes. 40 warm weather, sweating helps humans regulate their body temperature.
+中譯：所有生物都有求生的本能。大自然賦予生物求生的方法。我們從低等動物身上學到很多關於生存的知識。例如蜥蜴，牠們能改變皮膚顏色，融入周遭的樹木和樹葉，因此不會被威脅牠們的其他動物發現。大自然也提供其他形式的保護，讓生物免受環境危害。人類也有特殊的機制來保護自己。人類的皮膚對溫度變化非常敏感，在溫暖的天氣裡，流汗能幫助人類調節體溫。
+📋 內容大意
+Every living thing wants to survive, and nature gives each species ways to stay alive.
+A lizard can change skin color to match nearby trees and leaves, so predators cannot see the lizard.
+Human skin also feels temperature changes, and sweating helps cool the body.
+← 第31題回到85 年學測第33題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g92-25-1/index.html
+Author: staresto-create ZZSH
+Title: 92 年學測克漏字第25題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 92 年學測 ／ 第25題
+92 年學測 克漏字 第25題
+字彙選義線索：句內答對率 44%
+答對率 44%：當年每 100 位考生，有 44 位答對。
+Once used, the bags are sealed and stored for the flight back to the earth, 25 they are disposed of.
+(A)where
+(B)what
+(C)which
+(D)whether
+答案：(A) where
+題目編號：G92_25_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+關係副詞 where 引導地方子句，表示「（帶回地球）在那裡被處理掉」；what（不能這樣引導子句表達地點）、which（關係代名詞，不能用來表達「在那裡」的地點語意）、whether（是否）都不合。
+深入解析
+你可能會這樣想
+空格前面是逗號、後面接一串看起來完整的話，你大概會在 which 與 where 之間猶豫，而 which 是你最熟的關係代名詞，很容易第一眼就選它。再加上句尾的 disposed of 讓 of 後面看起來「少了東西」，更會覺得需要一個受詞去補，which 就更誘人。答對率四成四，最容易選錯的就是 which。
+怎麼判斷
+四個選項都是 wh- 詞，先做分流，看空格前面接的是名詞還是動詞：前面是 the earth（名詞），所以這是回頭補充說明那個名詞的關係子句，不是間接問句。接著數子句成分：they are disposed of——主詞是 they，動詞是被動的 are disposed of。這裡是最關鍵的一步：disposed of 是被動語態，of 的受詞已經被提到主詞的位置變成 they 了，所以 of 後面本來就不該再有東西，它並沒有缺。成分不缺，which 與 what 這種一定要當主詞或受詞的字就都進不來。剩下的 where 是關係副詞，本身不占句子成分，只代替一個表地方的介系詞片語。還原一次就清楚了：the flight back to the earth, and they are disposed of on the earth（帶回地球，然後在地球上被處理掉），把 on the earth 換成 where 就是本句（同樣的判斷方式：98 年第 23 題 →）。
+誘答選項
+which：關係代名詞，進到子句裡一定要當主詞或受詞，本句的主詞與受詞都不缺。what：除了同樣得當主詞或受詞之外，它還有一個更快就能排除的理由——what 是複合關係代名詞 ＝ 先行詞 + 關係代名詞，先行詞已經包在自己裡面，前面已經有先行詞 the earth 時要用 which 或 that（劍橋 English Grammar Today），所以看到先行詞就能先刷掉它（同樣的判斷方式：93 年第 18 題 →、91 年第 25 題 →）。whether（是否）：帶出的是兩種可能性的選擇，這裡沒有任何不確定。
+常考字詞與句型
+dispose of（處理掉、丟棄）、be disposed of（被處理掉）、get rid of（擺脫、丟掉）、seal a bag（把袋子封起來）、store sth for（把某物存放起來以備……）、once used（一經使用）。其中 get rid of 這一組考過 3 個年度，89 年第 32 題 →、105 年第 18 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The first American space toilet was Alan Shepard's space suit. His flight was supposed to last only 15 minutes, so there was no provision made for him to relieve himself in the capsule. His flight, 21, was delayed for hours. It was then decided that Alan Shepard should relieve himself in his space suit, and continue with the mission as scheduled.
+22 problem urged NASA to develop the first space toilet, a modified diaper. Diapers are 23 used by astronauts when they are outside the space shuttle, wearing a spacesuit.
+As the flights grew longer, a new set of two collection bags was devised, 24 for liquid wastes and the other for solid wastes. Once used, the bags are sealed and stored for the flight back to the earth, 25 they are disposed of.
+中譯：第一個美製太空馬桶，其實是艾倫·雪帕德的太空衣。他原本的飛行任務預計只會持續 15 分鐘，因此艙內並未為他準備如廁的設施。然而，他的飛行任務卻延遲了好幾個小時。於是，任務單位決定讓雪帕德直接在太空衣裡如廁，並按原訂計畫繼續執行任務。這個問題促使 NASA 開發出第一款太空馬桶——一種改良版的尿布。太空人在太空艙外、穿著太空衣進行任務時，通常會使用這種尿布。隨著飛行任務時間越來越長，科學家設計出一套新的雙收集袋系統，一個用於收集液態廢物，另一個用於收集固態廢物。使用完畢後，這些袋子會被密封並存放，直到返回地球後才進行處理。
+📋 內容大意
+Delays during early space missions forced NASA to continuously develop and upgrade waste disposal systems for astronauts.（敘事文）
+← 第24題回到92 年學測第26題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g99-29-3/index.html
+Author: staresto-create ZZSH
+Title: 99 年學測克漏字第29題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 99 年學測 ／ 第29題
+99 年學測 克漏字 第29題
+字彙選義線索：跨句答對率 49%
+答對率 49%：當年每 100 位考生，有 49 位答對。
+Besides these 29 issues, bottled water has other disadvantages.
+(A)display
+(B)production
+(C)shipment
+(D)safety
+答案：(D) safety
+題目編號：G99_29_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「除了這些安全問題之外」，safety（安全）呼應前文討論的化學物質釋放、細菌滋生等健康安全疑慮；display（展示）、production（生產）、shipment（運送）都不如 safety 能概括前述問題。
+深入解析
+你可能會這樣想
+shipment 特別誘人，因為它就出現在前一句（the information on storage and shipment）——看到剛讀過的字，很容易直接抄過來。答對率只有四成九，這是典型的近距離誘答設計。
+怎麼判斷
+這一格要往回概括，不是往回抄字。Besides these ______ issues 的意思是「除了這些 ______ 的問題之外」，所以填進去的這個名詞必須能一次涵蓋前面談過的所有問題。回頭數一數前面講了什麼：塑膠釋出有害化學物質、被人體吸收造成胃痙攣和腹瀉、儲存不當會滋生細菌、消費者拿不到儲存與運送的資訊。這些全部指向同一件事——喝下去到底安不安全。文章自己也用過 Health risks（健康風險）這個說法。所以概括詞是 safety。再看後半句：bottled water has other disadvantages（瓶裝水還有其他缺點），接著談的是全球暖化這一類環境問題。other 表示「另外一類」，那前面那一類就必須是一個明確的類別名稱，safety issues 正好與後面的環境問題形成兩大類。這種「用一個抽象名詞概括前面整段」的題目，答案通常不會是前文出現過的具體名詞，而是比它們高一層的類別詞。看到選項裡有剛剛才讀過的字，反而要先提高警覺。
+誘答選項
+display：展示，前文完全沒有提到展示。production：生產，文章確實提到塑膠的加工，但那只是眾多問題的其中一個，涵蓋不了細菌與儲存。shipment：運送，同樣只是前一句提到的其中一個環節，概括不了化學物質與細菌的問題。
+常考字詞與句型
+safety issues（安全問題）、raise safety concerns（引發安全疑慮）、health risks（健康風險）、inappropriate storage（不當儲存）、be readily available（容易取得的）、a better alternative to（比…更好的替代選擇）。
+線索範圍說明：these safety issues 概括前面幾句談過的儲存與運送問題
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Many people like to drink bottled water because they feel that tap water may not be safe, but is bottled water really any better? Bottled water is mostly sold in plastic bottles and that's why it is potentially health 26 . Processing the plastic can lead to the release of harmful chemical substances into the water contained in the bottles. The chemicals can be absorbed into the body and 27 physical discomfort, such as stomach cramps and diarrhea. Health risks can also result from inappropriate storage of bottled water. Bacteria can multiply if the water is kept on the shelves for too long or if it is exposed to heat or direct sunlight. 28 the information on storage and shipment is not always readily available to consumers, bottled water may not be a better alternative to tap water.
+Besides these 29 issues, bottled water has other disadvantages. It contributes to global warming. An estimated 2.5 million tons of carbon dioxide were generated in 2006 by the production of plastic for bottled water. In addition, bottled water produces an incredible amount of solid 30 . According to one research, 90% of the bottles used are not recycled and lie for ages in landfills.
+中譯：許多人喜歡喝瓶裝水，因為他們覺得自來水可能不安全，但瓶裝水真的比較好嗎？瓶裝水大多裝在塑膠瓶中，這正是它可能危害健康的原因。塑膠加工過程可能釋放有害化學物質到瓶內的水中。這些化學物質一旦被人體吸收，可能會造成身體不適，例如胃痙攣和腹瀉。不當儲存瓶裝水也可能帶來健康風險——如果水被放置在架上過久，或暴露在高溫或陽光直射下，細菌就可能大量繁殖。由於消費者往往無法輕易得知瓶裝水的儲存與運送資訊，瓶裝水未必比自來水更好的選擇。除了這些安全疑慮之外，瓶裝水還有其他缺點：它會加劇全球暖化——據估計，2006 年生產瓶裝水所需的塑膠就產生了 250 萬噸二氧化碳。此外，瓶裝水也製造了驚人數量的固體廢棄物，根據一項研究，使用過的瓶子有 90%沒有被回收，長年堆積在垃圾掩埋場中。
+📋 內容大意
+Many people choose bottled water over tap water, believing it safer, but the plastic bottle itself creates health risks.
+Processing plastic can release harmful chemicals into the water, leading to stomach cramps and diarrhea, and bacteria multiply when bottles sit too long or stand in heat or sunlight.
+Storage and shipment information rarely reaches consumers, and bottled water also drives global warming and leaves an enormous quantity of unrecycled plastic, about 90% of which ends up in landfills.
+← 第28題回到99 年學測第30題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

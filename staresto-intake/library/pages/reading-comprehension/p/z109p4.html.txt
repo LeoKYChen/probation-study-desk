@@ -1,0 +1,162 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/z109p4.html
+Author: staresto-create ZZSH
+Title: 109 指考閱讀測驗：美國聯邦教育法案 ESSA 與評估改革｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 109 指考
+109 指考閱讀測驗：美國聯邦教育法案 ESSA 與評估改革
+US Federal Education Act ESSA and Assessment Reform
+指考 109年第 48–51 題4 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段In 2015, President Obama of the USA signed the Every Student Succeeds Act (ESSA), replacing the Bush-era No Child Left Behind (NCLB) that had been in effect since 2001. This new Act provides states with more decision-making power regarding curriculum, instruction, and assessment. Below are some big-picture ideas influencing many states as they approach the assessment task.
+第 2 段One important idea is flexibility. For years, states have used standardized K-12 assessments, similar to the SAT and ACT for college application, to measure student achievement. They are easy to use, but they fail to give a complete picture of how a student is progressing. Thus, states are rethinking one-size-fits-all standardized assessments and are instead considering personalized, student-centered assessments in schools. Obviously, the task is difficult and time-consuming. Fortunately, modern technology can help solve this dilemma. For instance, computer adaptive assessments can automatically adjust questions based on a student’s performances on the previous questions. This mechanism prevents the computer from giving questions that are obviously too easy or too difficult for the student. It thus allows teachers to quickly assess a student’s level of understanding and provide instant feedback to help in the learning process.
+第 3 段Another idea is multi-subject testing. Several states have started to incorporate subjects beyond the traditional math and reading items in their K-12 assessments. All 50 states include tests on science at least twice prior to senior high school, and some are now starting to include social studies, government, or economics. Some states are also moving toward assessing multiple subjects on one test, for example, reading and social studies.
+第 4 段A third idea is the emphasis on students’ learning process. In pursuit of a student-centered approach, many states are putting more emphasis on assessments throughout the learning process rather than on traditional end-of-year summative tests. Teachers are encouraged to accumulate data at different points in their students’ learning process. These data together present a more complete picture of a student’s learning.
+第 5 段The last idea regards the purpose of assessment. Assessment should be used to inform both teachers’ instruction and students’ learning. Teachers can modify their teaching based on students’ performance on tests; students can identify their own problems and make plans for improvement.
+題目
+48.Which of the following is the best title for this passage?
+(A)Computers and Assessments
+(B)The Four Components of ESSA
+(C)Student-Centered Curriculum and Instruction
+(D)From NCLB to ESSA, with a Focus on Assessment
+49.What does the word “dilemma” in paragraph 2 refer to?
+(A)The choice between SAT and ACT.
+(B)The choice between NCLB and ESSA.
+(C)Whether or not to use student-centered assessment.
+(D)Whether or not to replace computer-based assessment.
+50.Which of the following is an emerging new subject in the ESSA assessment?
+(A)Math.
+(B)Reading.
+(C)Science.
+(D)Economics.
+51.If the following sentences were to be included in the passage, which paragraph should they go to?One good example is that many teachers today are asking students to keep a learning portfolio, which is a purposeful collection of student works at different points of time in the semester. This portfolio exhibits students’ effort, progress, and achievements in one or more areas of the course.
+(A)Paragraph 2.
+(B)Paragraph 3.
+(C)Paragraph 4.
+(D)Paragraph 5.
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+48
+(D)
+30%
+9
+49
+(C)
+64%
+60
+50
+(D)
+50%
+48
+51
+(C)
+56%
+51
+答對率與鑑別度出處：大考中心 109 學年度指定科目考試統計圖表：英文科答對率及鑑別度表
+每一題的依據句
+第 48 題 主旨題 Main idea
+依據句：全文要讀完整篇才能判斷，不在某一句裡。
+第 1 段先說 ESSA 取代了 NCLB，讓各州在課程、教學、評量上有更多決定權，最後一句說 Below are some big-picture ideas influencing many states as they approach the assessment task，點出後面要談的是各州規劃評量（assessment）的方向；第 2 到 5 段依序談彈性、多科目測驗、重視學習過程、評量的目的，四段都在講評量。標題要同時涵蓋從 NCLB 換成 ESSA，以及談的重點是評量，所以是 (D)。最容易選錯的是 (B)：後面四段是影響各州的四個大方向（ideas influencing many states），不是 ESSA 這個法案的四個組成部分，偏離主題。(C) 照抄第 2 段的 student-centered，全文談的是評量，不是課程和教學，偏離主題；(A) 照抄第 2 段的 computer，電腦適性測驗只是第 2 段舉的例子，過於狹隘。
+錯誤選項：(A) 過於狹隘（只講第 2 段）；(B) 偏離主題；(C) 偏離主題
+第 49 題 詞義題（指代詞） Vocabulary in context
+第 2 段Thus, states are rethinking one-size-fits-all standardized assessments and are instead considering personalized, student-centered assessments in schools.
+第 2 段Obviously, the task is difficult and time-consuming.
+原文 → 正確選項
+student-centered assessments → student-centered assessment
+第 2 段先說標準化評量容易使用，卻無法完整呈現學生的進展，所以各州考慮改用以學生為中心的評量（student-centered assessments）；接著說這項工作既困難又費時。一邊是比較完整的評量，一邊是做起來很難，要不要採用以學生為中心的評量，就是這裡的 dilemma（難題），所以是 (C)。(A) 照抄 SAT and ACT，那是拿來比喻標準化評量的例子，不是要在兩者之間做選擇；(D) 照抄 computer，電腦適性測驗是解決難題的方法，不是難題本身；(B) 照抄第 1 段的 NCLB，2015 年 ESSA 就已經取代了 NCLB，這是已經決定的事。
+換個說法的名詞怎麼認 →
+第 50 題 細節題 Supporting details
+第 3 段some are now starting to include social studies, government, or economics.
+原文 → 正確選項
+economics → Economics
+題目問的是新興（emerging）的科目，要把第 3 段提到的科目分成舊的和新的。第 3 段說數學和閱讀是傳統（traditional）科目，(A)、(B) 都不是新的；自然科學是全部 50 個州都已經至少考兩次的科目，(C) 也不是新的；接著說有些州現在才開始（now starting to）加考社會、公民或經濟，所以新興的科目是 (D) Economics。(A) 照抄 math、(B) 照抄 reading、(C) 照抄 science，三個字都在第 3 段，但都是已經在考的科目。
+第 51 題 文章段落組織 Structure
+第 4 段Teachers are encouraged to accumulate data at different points in their students
+第 4 段These data together present a more complete picture of a student
+要插入的兩句說，現在很多老師要學生建立學習歷程檔案，蒐集學期中不同時間點（at different points of time）的作品，呈現學生的努力、進步和成就。第 4 段說各州重視學習過程，老師在學生學習過程的不同時間點（at different points）累積資料，這些資料合起來，能更完整地呈現學生的學習。學習歷程檔案正是第 4 段這個做法的例子，所以插入句開頭說 One good example，放在第 4 段，是 (C)。(A) 第 2 段講的是彈性和電腦適性測驗；(B) 第 3 段講的是多科目測驗；(D) 第 5 段講的是評量的目的，都和不同時間點蒐集作品接不上。
+把句子放回段落怎麼判斷 →
+逐段中譯
+第 1 段2015 年，美國總統歐巴馬簽署了《每個學生都成功法》（ESSA），取代小布希時代從 2001 年起實施的《有教無類法》（NCLB）。這項新法讓各州在課程、教學和評量上，有更多的決定權。以下是影響許多州規劃評量工作的幾個大方向。
+第 2 段一個重要的方向是彈性。多年來，各州都用從幼稚園到 12 年級（K-12）的標準化評量來測量學生的學習成就，就像申請大學用的 SAT 和 ACT 一樣。這些評量容易使用，卻無法完整呈現學生的學習進展。因此，各州正在重新思考這種一體適用的標準化評量，改為考慮在學校採用個人化、以學生為中心的評量。顯然，這項工作既困難又費時。幸好，現代科技可以幫忙解決這個難題。例如，電腦適性測驗可以依照學生前面幾題的表現，自動調整題目。這套機制能避免電腦出明顯太簡單或太難的題目給學生，讓老師很快就能評估學生理解的程度，立即給予回饋，幫助學生學習。
+第 3 段另一個方向是多科目測驗。有幾個州已經開始在 K-12 評量中，加入傳統的數學和閱讀以外的科目。全部 50 個州在高中以前，都至少考兩次自然科學，有些州現在也開始加考社會、公民或經濟。有些州還朝著在一份測驗裡同時評量多個科目發展，例如閱讀加上社會。
+第 4 段第三個方向是重視學生的學習過程。為了以學生為中心，許多州更重視學習過程中的評量，而不是傳統的學年末總結性測驗。這些州也鼓勵老師在學生學習過程的不同時間點累積資料。這些資料合在一起，可以更完整地呈現學生的學習情形。
+第 5 段最後一個方向和評量的目的有關。評量應該同時用來引導老師的教學和學生的學習。老師可以依照學生在測驗中的表現調整教學；學生可以找出自己的問題，擬定改進的計畫。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。這一篇沒有一句話直接點出全文中心思想，怎麼從各段歸納，請看第 48 題（主旨題）的解析。
+第 1 段In 2015, President Obama of the USA signed the Every Student Succeeds Act (ESSA), replacing the Bush-era No Child Left Behind (NCLB) that had been in effect since 2001.
+第 2 段Thus, states are rethinking one-size-fits-all standardized assessments and are instead considering personalized, student-centered assessments in schools.
+第 3 段Several states have started to incorporate subjects beyond the traditional math and reading items in their K-12 assessments.
+第 4 段In pursuit of a student-centered approach, many states are putting more emphasis on assessments throughout the learning process rather than on traditional end-of-year summative tests.
+第 5 段Assessment should be used to inform both teachers’ instruction and students’ learning.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體說明文 Expository
+組織方式列舉 Listing這一類怎麼辨識 →
+關鍵轉折詞One important ideaThusFortunatelyFor instanceAnother ideaA third ideaThe last idea
+綱要
+2015 年歐巴馬總統簽署《每個學生都成功法》(ESSA)，取代 2001 年起實施的《有教無類法》(NCLB)，讓各州在課程、教學和評量上有更多決定權，以下是許多州規劃評量時參考的大方向。
+(One important idea) 第一是彈性：標準化測驗無法完整呈現學習進展，(Thus) 所以各州改考慮以學生為中心的評量；(Fortunately) 幸好科技可以幫忙，(For instance) 例如電腦適性測驗會依學生前面的作答調整題目。
+(Another idea) 第二是多科目測驗：有些州在數學和閱讀之外加考自然、社會、公民或經濟，也有州在一份測驗裡同時評量多個科目。
+(A third idea) 第三是重視學習過程：為了以學生為中心，許多州更重視學習過程中的評量，不只看學年末的總結性測驗，也鼓勵老師在不同時間點蒐集資料，拼出學生學習的完整樣貌。
+(The last idea) 最後是評量的目的：評量應該同時引導老師的教學和學生的學習，老師依學生表現調整教學，學生找出自己的問題、擬定改進計畫。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 16 個、參考字彙 16 個、字詞搭配 11 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+replace[rɪˈpleɪs]v.取代三級第 1 段詞彙題考過 4 次：109 學測第 11 題 replaced（誘答）、102 學測第 2 題 replaced（答案）、98 指考參考試卷第 7 題 replaced（誘答）、94 學測第 11 題（答案）
+application[ˌæpləˈkeɪʃən]n.申請（college application 申請大學）四級第 2 段詞彙題考過 1 次：103 指考第 7 題（誘答）
+fortunately （詞彙表：fortunate）[ˈfɔrʧənətli]adv.幸好四級第 2 段詞彙題考過 3 次：96 指考第 7 題 fortunately（誘答）、91 學測第 7 題（誘答）、86 聯考第 1 題 fortunately（答案）
+automatically （詞彙表：automatic）[ˌɔtəˈmætɪkli]adv.自動地三級第 2 段詞彙題考過 3 次：105 學測第 9 題 automatically（誘答）、104 學測第 7 題（誘答）、98 學測第 3 題 automatically（答案）
+adjust[əˈʤʌst]v.調整四級第 2 段詞彙題考過 2 次：110 學測第 7 題 adjustment（誘答）、96 學測第 4 題（答案）
+performance[pɚˈfɔrməns]n.表現三級第 2 段詞彙題考過 2 次：98 指考參考試卷第 10 題（誘答）、83 推薦甄選第 4 題（誘答）
+previous[ˈpriviəs]adj.前面的、先前的三級第 2 段詞彙題考過 4 次：91 學測第 6 題 previously（誘答）、86 推薦甄選第 3 題 previously（答案）、85 推薦甄選第 8 題 previously（誘答）、84 聯考第 10 題 previously（誘答）
+process[ˈprɑsɛs]n.過程三級第 2 段詞彙題考過 4 次：100 學測第 8 題（答案）、96 指考第 2 題（誘答）、84 推薦甄選第 2 題（誘答）、81 聯考第 1 題（誘答）
+multiple[ˈmʌltəpəl]adj.多個的四級第 3 段詞彙題考過 1 次：114 學測第 7 題（誘答）
+emphasis[ˈɛmfəsəs]n.重視、強調四級第 4 段詞彙題考過 2 次：115 學測第 7 題（誘答）、103 指考第 7 題（誘答）
+inform[ɪnˈfɔrm]v.作為……的依據、引導三級第 5 段詞彙題考過 5 次：109 學測第 2 題 informed（誘答）、99 指考第 2 題（答案）、94 學測第 11 題（誘答）、93 指考第 4 題（誘答）、87 聯考第 6 題（誘答）
+modify[ˈmɑdəˌfaɪ]v.修改、調整五級第 5 段詞彙題考過 1 次：98 指考第 9 題 modified（答案）
+identify[aɪˈdɛntəˌfaɪ]v.找出四級第 5 段詞彙題考過 1 次：106 學測第 4 題（答案）
+emerging （詞彙表：emerge）[ɪˈmɝʤɪŋ]adj.新興的四級第 50 題詞彙題考過 2 次：113 學測第 2 題 emerging（答案）、93 補救考試第 4 題 emerged（誘答）
+collection[kəˈlɛkʃən]n.合集、收集三級第 51 題詞彙題考過 1 次：84 聯考第 5 題（答案）
+exhibit[ɪgˈzɪbɪt]v.展現、呈現四級第 51 題詞彙題考過 1 次：99 指考第 7 題 exhibits（誘答）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+curriculum[kəˈrɪkjələm]n.課程五級第 1 段
+assessment[əˈsɛsmənt]n.評量五級第 1 段
+flexibility[ˌflɛksəˈbɪləti]n.彈性五級第 2 段
+standardized[ˈstændɚˌdaɪzd]adj.標準化的（standardized test 標準化測驗）表外第 2 段
+personalized[ˈpɝsənəˌlaɪzd]adj.個人化的表外第 2 段
+dilemma[dɪˈlɛmə]n.兩難、困境五級第 2 段
+adaptive[əˈdæptɪv]adj.適性的、會依程度調整的表外第 2 段
+mechanism[ˈmɛkəˌnɪzəm]n.機制五級第 2 段
+assess[əˈsɛs]v.評量、評估五級第 2 段
+multi-subject[ˌmʌltiˈsʌbʤɪkt]adj.多科目的表外第 3 段
+incorporate[ɪnˈkɔrpəˌreɪt]v.納入、加入五級第 3 段
+prior[ˈpraɪɚ]adj.（prior to）在……之前五級第 3 段
+summative[ˈsʌmətɪv]adj.總結性的（summative test 總結性評量）表外第 4 段
+accumulate[əˈkjumjəˌleɪt]v.累積六級第 4 段
+portfolio[pɔrtˈfoʊliˌoʊ]n.學習歷程檔案、作品集五級第 51 題
+purposeful[ˈpɝpəsfəl]adj.有目的的表外第 51 題
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+be in effect正在實施、有效第 1 段原文：had been in effect since 2001
+provide + sb + with + N提供某人……第 1 段原文：provides states with more decision-making power
+fail to + V沒能……第 2 段原文：they fail to give a complete picture
+give a complete picture of + N完整呈現……第 2 段原文：give a complete picture of how a student is progressing
+prevent + sth + from + V-ing讓……不會……第 2 段原文：prevents the computer from giving questions
+provide feedback給予回饋第 2 段原文：provide instant feedback
+incorporate A in／into B把 A 納入 B第 3 段原文：incorporate subjects beyond the traditional math and reading items in their K-12 assessments
+move toward + N／V-ing逐漸走向……第 3 段原文：moving toward assessing multiple subjects
+in pursuit of + N為了追求……第 4 段原文：In pursuit of a student-centered approach
+put emphasis on + N重視……第 4 段原文：putting more emphasis on assessments
+make plans for + N為……訂計畫第 5 段原文：make plans for improvement
+← 上一篇篇目一覽
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

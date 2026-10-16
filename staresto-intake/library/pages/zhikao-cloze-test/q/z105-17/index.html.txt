@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z105-17/index.html
+Author: staresto-create ZZSH
+Title: 105 年指考克漏字第17題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 105 年指考 ／ 第17題
+105 年指考 克漏字 第17題
+字彙選義線索：跨句答對率 67%
+答對率 67%：當年每 100 位考生，有 67 位答對。
+His code-breaking turned the tide of World War II and helped save two million lives. Nevertheless, 17 people have even heard his name.
+(A)many
+(B)some
+(C)any
+(D)few
+答案：(D) few
+題目編號：Z105_17（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【字彙／轉折】前句盛讚其貢獻重大，後句以 Nevertheless（然而）轉折，說明「卻鮮少人聽過他的名字」，故用 few（很少）。many／some 語意相反；any 通常用於否定句或疑問句，不符此處肯定句語境。
+深入解析
+你可能會這樣想
+看到 people have even heard his name，很容易先讀成「有人聽過他的名字」，覺得 some 或 many 都說得通；even（甚至）看起來像在加強語氣，更會把你往肯定的方向推。
+怎麼判斷
+四個選項都是數量詞，除了 any 之外，其餘三個文法上都放得進去，可見這一格考的是「多還是少」，而方向由句首的 Nevertheless 決定——轉折詞是很好認的邏輯勾環，看到 Nevertheless、however、therefore、for example 這一類字，先回頭看前一句，方向就出來了。Nevertheless（然而、儘管如此）要求這一句與前一句相反：前一句剛說他的解碼扭轉了二戰局勢、幫忙救了兩百萬條性命，這一句就只能往下掉——這麼大的貢獻，卻幾乎沒有人聽過他的名字。few（幾乎沒有）本身帶著否定意味，正好配合這個轉折。另一個線索是 even：have even heard his name（連他的名字都聽過）講的是最低限度的一件事，配上 few 才讀得通，連最起碼的「聽過名字」都很少有人做到。順便把 few 與 a few 分清楚：few 是幾乎沒有，a few 是有一些；little 與 a little 同理，差一個冠詞就差很多。這一格的鑑別度高達 59，分開的正是「有沒有回頭讀前一句」——只讀空格所在的這一句，many、some、few 其實都塞得進去。另外一提：這一篇選文後來被 107 學年度起適用的指考參考試卷沿用，在那份卷子上編為第 17 題 →，兩邊是同一題，不是網站重複。
+誘答選項
+many（許多）與 some（一些）方向都偏肯定，若真的很多人聽過，前一句的貢獻與這一句就沒有落差，Nevertheless 也就沒有存在的理由。any 不能這樣用：它的位置在否定句、疑問句與條件句裡（I don't have any money.、Do you have any questions?），或表示「任何一個」的泛指（Any child can learn it.），單獨擺在一個陳述事實的肯定句裡當主詞的修飾語並不成立。
+常考字詞與句型
+few 加可數複數名詞（幾乎沒有）、a few 加可數複數名詞（有一些）、little 加不可數名詞（幾乎沒有）、a little 加不可數名詞（有一點）、nevertheless（然而、儘管如此）、even（連……也，用來加強最低限度的說法）。
+線索範圍說明：Nevertheless 轉折前一句「他的破譯拯救了兩百萬人」
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：105學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Alan Turing was one of the leading scientific geniuses of the 20th century. Many scholars consider him the father of modern computer science. He was also the man who cracked the 16 uncrackable Enigma code used by Nazi Germany. His code-breaking turned the tide of World War II and helped save two million lives. Nevertheless, 17 people have even heard his name. Turing displayed signs of high intelligence in math and science at a young age. By the time he was 23, he had already come up with the idea of what 18 the modern computer—the Turing machine. Today, Turing machines are still used in theoretical computation. He also proposed the now famous Turing test, used to determine whether a computer exhibits intelligent behavior equivalent to that of a human.
+The postwar era, however, was a disaster for Turing. He was gay, which was then a crime in Britain. 19 being hailed as one of the crucial figures in defeating the Nazis, Turing was convicted of "gross indecency." This 20 drove him to commit suicide in 1954, at the age of 41.
+Nearly 60 years after his death, Queen Elizabeth II granted Turing a formal pardon for his conviction, upon an online petition signed by prominent scientists and technology leaders around the world.
+中譯：艾倫．圖靈是二十世紀最頂尖的科學天才之一，許多學者將他視為現代電腦科學之父。他也是破解納粹德國所使用、據稱牢不可破的恩尼格瑪密碼的人。他的破密工作扭轉了第二次世界大戰的局勢，並拯救了兩百萬條人命。然而，卻鮮少有人聽過他的名字。圖靈從小就在數學與科學方面展現高度智慧。到了 23 歲，他便已構思出後來發展成現代電腦的概念——圖靈機。時至今日，圖靈機仍應用於理論計算領域。他也提出了如今著名的圖靈測試，用來判斷電腦是否展現出與人類相當的智慧行為。然而，戰後時期對圖靈而言卻是一場災難。他是同性戀者，而這在當時的英國是一項罪行。他非但沒有因擊敗納粹的重大貢獻而受到推崇，反而被判「嚴重猥褻罪」有罪。這樣的屈辱最終導致他於 1954 年、41 歲時自殺身亡。在他死後將近 60 年，伊莉莎白二世女王在全球知名科學家與科技領袖連署的網路請願下，正式赦免了他的罪名。
+📋 內容大意
+Alan Turing, called the father of computer science, broke the Enigma code and helped turn the Second World War.（敘事文）
+Gifted young, by twenty-three he had conceived the Turing machine, the idea behind modern computers.（敘事文）
+He also devised the Turing test, but postwar Britain convicted him for being gay.（敘事文）
+He took his own life in 1954, and a royal pardon came nearly sixty years later.（敘事文）
+← 第16題回到105 年指考第18題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

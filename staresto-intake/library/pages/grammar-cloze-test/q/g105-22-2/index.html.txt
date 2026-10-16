@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g105-22-2/index.html
+Author: staresto-create ZZSH
+Title: 105 年學測克漏字第22題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 105 年學測 ／ 第22題
+105 年學測 克漏字 第22題
+字彙選義線索：句內答對率 49%
+答對率 49%：當年每 100 位考生，有 49 位答對。
+When a person takes a polygraph test, four to six wires, called sensors, are 22 to different parts of his body.
+(A)adapted
+(B)attached
+(C)related
+(D)restricted
+答案：(B) attached
+題目編號：G105_22_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】be attached to 指「被連接/附著在」，表示電線被接到身體不同部位；adapted（適應）、related（相關）、restricted（限制）都不合。
+深入解析
+你可能會這樣想
+四個選項後面都能接 to：be adapted to、be attached to、be related to、be restricted to，所以「看到 to 就選」這個方法在這裡完全失效，非得看語意不可 — 答對率只有四成九。另外 related 也很容易被挑走，因為「電線跟身體有關」中文讀起來勉強說得通。
+怎麼判斷
+先看主詞是什麼：four to six wires, called sensors（四到六條稱為感應器的電線），是實體的東西；要做的事是把電線「接上」身體不同部位。attach 的核心意思正是「把某物實體地固定或連接到另一物上」，句型是 attach A to B。還原成主動句最快：The examiner attaches four to six wires to different parts of his body.（測謊人員把四到六條電線接到他身體的不同部位。）主動句一還原，動詞該填什麼一目了然。這個字你其實天天在用：電子郵件的「附件」就叫 attachment，attach a file to an email（把檔案附加在郵件上）跟本題是同一個字、同一個句型。下一句也回頭確認：The sensors pick up signals from the person's blood pressure, pulse, and perspiration.（感應器擷取受測者血壓、脈搏和排汗的訊號。）電線得真的貼在身上，才擷取得到訊號。
+誘答選項
+be adapted to（改造得適合……；改編成）講的是把東西改一改，好配合新的用途或環境，例 Many software companies have adapted popular programs to the new operating system.（許多軟體公司把熱門程式改成能在新作業系統上使用。）本句的電線並沒有改造過，只是接到身上。be related to（與……有關；與……有親屬關係）講的是抽象關聯，例 Smoking is related to lung cancer.（吸菸與肺癌有關。）電線和身體不是「有關聯」，是實際接上去。be restricted to（只限於）例 restricted to members only（會員專用），語意完全不合。
+常考字詞與句型
+attach A to B（把 A 附加或連接到 B）、be attached to（被連接到；依戀、捨不得）、an attachment（附件；依戀）、adapt to（適應）、be related to（與……有關）、be restricted to（只限於）、pick up signals（接收訊號）、blood pressure（血壓）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+A polygraph machine, also known as a "lie detector," is a common part of criminal investigations. The instrument is used to measure 21 a person's body reacts to questions. The theory underlying it is that lying is stressful, and that this stress can be measured and recorded on a polygraph machine.
+When a person takes a polygraph test, four to six wires, called sensors, are 22 to different parts of his body. The sensors pick up signals from the person's blood pressure, pulse, and perspiration. 23 the process of questioning, all the signals are recorded on a single strip of moving paper. Once the questions are finished, the examiner analyzes the results to determine if the person tested 24 truthful.
+Well-trained examiners can usually detect lying with a high degree of 25 when they use a polygraph. However, because different people behave differently when lying, a polygraph test is by no means perfect.
+中譯：測謊機，又稱「謊言偵測器」，是刑事偵查中常見的工具。這項儀器用來測量一個人身體對問題的反應方式。其背後的理論是：說謊會造成壓力，而這種壓力可以透過測謊機測量並記錄下來。當受測者接受測謊時，會有四到六條稱為感應器的導線，連接到身體不同部位，這些感應器會擷取受測者血壓、脈搏和排汗的訊號。在整個問話過程中，所有訊號都會被記錄在一條移動中的紙帶上。問話結束後，測謊人員會分析結果，判斷受測者是否誠實。訓練有素的測謊人員在使用測謊機時，通常能相當準確地偵測出謊言。然而，由於每個人說謊時的反應不盡相同，測謊測試絕非完美無缺。
+📋 內容大意
+The polygraph, or lie detector, is a standard tool in criminal investigation and measures the body's reactions to questions.
+Four to six sensors are fixed to the body. They pick up blood pressure, pulse and sweat, and a moving strip of paper records every signal.
+The examiner then reads the record to judge truthfulness. Skilled examiners are usually reliable, but people behave differently when lying, so the test is far from perfect.
+← 第21題回到105 年學測第23題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

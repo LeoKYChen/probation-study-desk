@@ -1,0 +1,575 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/structures.html
+Author: staresto-create ZZSH
+Title: 如何辨識文章的組織方式：九種組織方式與圖形組織｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 如何辨識文章的組織方式
+如何辨識文章的組織方式
+每一篇閱讀測驗交卷之後，「這一篇的文章結構」都會寫出它的組織方式。這一頁說明九種組織方式各在做什麼、讀的時候怎麼辨識、怎麼自己動手驗證，並用大考文章畫成圖形組織，最後列出大考怎麼考這一類文章。頁末另外說明新聞報導的倒金字塔寫法，以及它和組織方式的關係。組織方式是本題庫整理的分析，不是大考中心的分類。這一頁談整篇的各段怎麼安排；句子和句子之間靠哪些字接起來，另外整理在如何看出前後文怎麼接起來。
+時序發展（75）因果關係（49）列舉（48）問題解決（24）舉例說明（18）比較對比（17）分類（8）定義（6）描寫（1）新聞報導
+判斷組織方式的原則
+判斷一篇文章的組織方式，看的是全篇各段之間的關係，不是某一段用了什麼轉折詞。例如一篇照年代介紹某樣東西歷史的文章，即使其中一段用 because 解釋原因，整篇仍然是時序發展。一篇文章也常同時用到好幾種方式，本題庫標出的是最上層、把全篇串起來的那一種；前後兩半用不同方式的文章，這一頁會在相關的類別另外說明。
+每一類都附一張圖形組織，也就是把文章的重點畫成圖，讓段落之間的關係一眼看得出來。國內研究把這類圖統稱為「圖形組織」，也指出一篇說明文常混用多種結構（辜玉旻，2024）。讀完一篇文章，試著自己畫出這張圖：畫得出來，就表示抓到了文章的架構。
+各類的「考卷上怎麼考」都會指出錯誤選項錯在哪裡。大考閱讀測驗的錯誤選項，很多是一半對、一半錯：選項裡有一部分確實是文章寫的，錯在別的地方。常見的錯誤有四種：張冠李戴，把甲的事情安到乙身上；以偏概全，把文章只說到一部分或一時的情形，說成全部或一向如此；無中生有，接上文章根本沒說的事情；說法太過武斷，文章說得有保留，選項卻把話說死，例如文章說「可能」「有時」「之一」，選項改成 must、always、only。作答之前要把整個選項對回文章，看到文章裡出現過的字，不代表那個選項就對。
+辜玉旻（2024）。〈搭配圖形組織與做筆記策略提升國中生對於說明式文章結構的覺知與閱讀理解能力〉。《教科書研究》，17(3)。國家教育研究院
+時序發展Chronological
+依時間先後或步驟順序展開，例如歷史沿革、人物生平、製作流程。
+這種文章在做什麼
+時序發展的文章照時間先後往下寫，後一段發生的事情接在前一段後面。它是本題庫篇數最多的一類，寫的東西大致有三種：一樣東西或一個習俗的歷史，例如護照、餐叉、紅綠燈、白宮、茶在英國的流行；一個人的生平，例如畫家霍默、攝影家布列松、卡內基；一套步驟或流程，例如廢水處理、爆破拆除大樓。另外，照事情發生的先後講一個故事的記敘文，例如 91 指考〈索皮的入獄計畫〉、89 學測〈Nasreddin 的借鍋寓言〉，也歸在這一類。
+後一段的時間總是比前一段晚，所以讀的時候最重要的事情，就是抓住每一段的時間標記，知道現在講到哪一個時候。大考也常考事情的先後順序，時間點散在不同段落，要自己排出來。
+怎麼辨識
+年代和時期：in about 450 B.C.、in the 15th century、In the early 1900s、Around 1800、Throughout the Middle Ages（整個中世紀）、In Victorian times（維多利亞時期）。這類時間標記常放在句首，一眼就看得到。
+表示先後的字詞：Later、then、after、Before long（不久之後）、Until then（在那之前）、At approximately the same time（差不多在同一個時候）、not … until（直到…才）。例如 106 學測〈茶在英國的流行〉第 2 段 Until then, people did not usually eat or drink anything between lunch and dinner.（在那之前，人們在午餐和晚餐之間通常不吃也不喝任何東西。）、110 學測〈護照的歷史〉第 3 段 Nevertheless, passports were not generally required for international travel until the First World War.（不過，一直到第一次世界大戰，國際旅行才普遍需要護照。）
+最早、第一次：the earliest、the first、invent、originate（起源）。例如〈護照的歷史〉第 1 段 But the earliest mention of an object which we might recognize as a passport appeared in about 450 B.C.（不過，最早提到一樣我們會認為是護照的東西，大約在西元前 450 年。）歷史文常從起點寫起。
+步驟：The whole process starts with（整個流程從…開始）、In the second step、then、Finally。109 指考〈現代廢水處理流程〉第 2 段就靠這幾個字詞，把篩除、初級池、二級池、沙過濾、加氯殺菌一步一步串起來。
+現在和未來：Today、Now、nowadays、In the near future。歷史文的最後一段常寫到現在，有時再談未來，例如 114 學測〈紅綠燈的發明史〉最後一段說，自駕車出現以後，研究人員開始認為交通號誌已經沒有必要。
+段落安排：一段一個時期或一個步驟，第一段交代起點，最後一段寫現在或結果。記敘文則是開頭、經過、結局。
+怎麼驗證
+把每一段的時間標記圈起來，排到一條時間軸上：如果每一段的時間都比上一段晚，段落的順序不能對調，就是時序發展。這一點正好和列舉相反：列舉的各段可以對調，時序發展的段落一對調，時間就亂了。
+接著看寫的是哪一種時間，選對應的圖：照年代推進的歷史或生平，畫成時間軸，左邊寫時間，右邊寫那時候發生的事情；一步接一步的步驟或過程，畫成流程圖；會重複發生的過程，例如季節的變化、生物的生死，畫成循環圖，最後一格的箭頭指回第一格。
+和因果關係怎麼分：時序發展也常出現 because、thus。〈茶在英國的流行〉第一句就說茶能在英國流行起來，要歸功於（because of）一位外國公主；第 3 段也說茶在十九世紀變便宜，因此（Thus）成了英國人最喜愛的飲料。可是全篇照十七世紀、1800 年左右、十九世紀、現在一路往下走，第 53 題的答案就是 In the sequence of time。判斷看的是全篇各段之間的關係：在兩段之間只能加上 then，是時序；加得上 so 或 therefore，才是因果。
+和舉例說明怎麼分：98 指考〈頭髮的歷史與象徵意義〉從古埃及、凱爾特人、古希臘講到現代的龐克，看起來照年代排，可是每一個時代都是證明第一句的例子，所以歸在舉例說明。各段之間只是時間先後、沒有一句共同要證明的主張，才是時序發展。
+和分類怎麼分：106 指考〈國歌的歷史演變與文化影響〉第 5 段把國歌分出幾個小類，可是全篇從 16 世紀最古老的國歌、18 和 19 世紀民族主義在歐洲擴散，講到帝國主義把歐洲的音樂品味帶到殖民地，一路往下，所以本題庫歸在時序發展。
+和列舉怎麼分：列舉文的其中一段也可能照時間寫，例如 101 學測〈蘇格蘭裙〉第 2 段用 Then、Today 交代方格圖案怎麼演變；可是全篇是穿法和長度、方格圖案、配件三個面向並列，時間只在一段之內推進，所以歸在列舉。
+時間軸：用 110 學測〈護照的歷史〉畫成，五個時間點由上往下排，正好對應第 45 題的正確選項 In order of time。第 2 段同一個時期寫了兩個地方，所以放在同一格。英文取自原文，中文是本題庫加上的解釋。流程圖：用 109 指考〈現代廢水處理流程〉第 2 段畫成，箭頭旁是原文表示步驟先後的字詞。步驟的順序不能對調，這就是流程和列舉不一樣的地方。英文取自原文，中文是本題庫加上的解釋。循環圖：用 88 學測〈分解者在生態循環中的作用〉畫成，四格依順時針讀，最後一格的箭頭指回第一格，就是原文最後說的 the natural cycle of life and death（大自然的生死循環）。這一篇全篇在說明分解者為什麼不可或缺，本題庫歸在因果關係；這裡只借它的內容示範循環圖的畫法。英文取自原文，中文是本題庫加上的解釋。
+考卷上怎麼考
+大考會直接問全篇怎麼組織，正確選項是 In order of time、In the sequence of time；錯誤選項常是因果、重要性、比較對比這些其他的組織方式，文章裡如果有一兩個 because，就容易誤選因果。也常考事情的先後順序，或問主旨。問主旨的題目，正確選項要說出「演變」「歷史」這種涵蓋全部時期的字詞，只抓其中一個時期或一個人物，就是以偏概全。
+110 學測第 45 題（答對率 57%）
+How is the information in the passage organized?
+(A) In order of time.
+(B) By cause and effect.
+(C) In order of importance.
+(D) By definition and illustration.
+全文依時間往下走：西元前 450 年的尼希米、中世紀的伊斯蘭國家和歐洲、15 世紀的亨利五世、大約一百年後出現 passport 這個詞，到第一次世界大戰，所以是 (A)。(D) 對的一半是第 1 段第一句確實說明旅行文件是什麼，錯的一半是後面各段依年代往下講，不是舉例說明一個定義；(B) 無中生有：文章沒有分析護照出現的原因和結果；(C) 無中生有：各個時期只是依先後排列，文章沒有比較哪一個比較重要。
+到互動練習作答這一篇 → 看原文與解析
+106 學測第 53 題（答對率 47%）
+How is this passage organized?
+(A) By cause and effect.
+(B) In the order of importance.
+(C) In the sequence of time.
+(D) By comparison and contrast.
+in the seventeenth century、Around 1800、during the nineteenth century、Today 四個時間標記分別放在四段，串起整篇，所以是 (C)。(A) 對的一半是第 1 段確實用了 because of、第 3 段用了 Thus，錯的一半是這兩處只交代一段之內的原因，全篇各段之間是時間先後；(D) 無中生有：第 1、3 段雖然寫到貴族、中產階級和勞工家庭，那是茶一步一步普及的過程，文章沒有拿兩樣東西互相比較；(B) 無中生有：文章沒有排出哪一件事情比較重要。
+到互動練習作答這一篇 → 看原文與解析
+114 學測第 35 題（答對率 47%）
+What is this passage mainly about?
+(A) The evolution of traffic control systems.
+(B) The inventors of traffic lights in history.
+(C) The functions of different traffic signals.
+(D) The development of modern transportation.
+文章裡沒有一句話直接點出主旨，可是四段依時間往下排：第 1 段是 1860 年代 Knight 仿照鐵路號誌設計交通號誌，第 2 段是 1868 年裝在倫敦、一個月後瓦斯外洩爆炸停用，第 3 段是 1900 年代初期美國各大城跟進、1920 年 Potts 的三色號誌，第 4 段是自駕車出現以後號誌可能不再需要。四段合起來就是交通號誌系統怎麼演變，evolution 正好涵蓋全部時期，所以是 (A)。(B) 以偏概全：發明者只寫到 Knight 和 Potts 兩位，第 2、4 段沒有談發明者；(C) 以偏概全：各種號誌代表什麼意思只在第 1、3 段帶到；(D) 文章只講交通號誌，選項把主題放大成整個現代交通運輸。
+到互動練習作答這一篇 → 看原文與解析
+115 學測第 41 題（答對率 72%）
+According to the passage, which is a correct time sequence of the materials used in making spiral staircases?
+(A) stone → iron → steel → glass
+(B) stone → wood → iron → steel
+(C) iron → marble → wood → glass
+(D) marble → wood → stone → concrete
+時間點散在第 2、4 段，要自己排：第 2 段西元 113 年圖拉真柱的石頭（stone and marble），第 4 段維多利亞時期的鑄鐵（cast iron）、二十世紀下半的鋼（steel），最後是最近才有的玻璃（recently even glass），所以是 (A)。(B) 順序不對：木頭只出現在第 4 段今天的材料清單裡，不會排在鐵之前；(C) 順序不對：大理石和石頭同樣是西元 113 年的材料，不會排在維多利亞時期的鐵之後；(D) 順序不對：把同一個時期的大理石和石頭拆開，中間又插進今天才有的木頭。
+到互動練習作答這一篇 → 看原文與解析
+109 指考第 36 題（答對率 74%）
+What is the passage mainly about?
+(A) The elements of sewage.
+(B) The treatment of wastewater.
+(C) The history of draining systems.
+(D) The ways to control manufacturing waste.
+這一篇前後用了兩種時間：第 1 段照年代簡短交代排水系統的歷史，從早期文明、羅馬人、工業革命講到 19 世紀中期開始處理廢水；第 2 段才是重點，一步一步介紹現代的廢水處理流程，所以是 (B)。(C) 以偏概全：排水系統的歷史只在第 1 段，是引出主題的開場；(A) 以偏概全：汙水裡的有害成分只在第 2 段第一句下定義時提到；(D) 對的一半是第 1 段確實提到製造業的廢棄物，錯的一半是那只是需要更有效率處理汙水的原因，全文沒有談怎麼控制這些廢棄物。
+到互動練習作答這一篇 → 看原文與解析
+專練這一類本題庫有 75 篇歸在時序發展，也可以到篇目一覽瀏覽。
+因果關係Cause-Effect
+說明一個現象的原因、結果，或原因和結果一路連下去。
+這種文章在做什麼
+因果文回答兩種問題：「為什麼會這樣」和「這樣會怎麼樣」。作者可能從一個現象出發，追問它的原因；也可能從一件事情出發，說明它帶來哪些結果；還有一種是原因和結果一路連下去，前一個結果又變成下一個的原因。所以這一類的文章有三種形狀：多因一果、一因多果、因果鏈，下面各畫一張圖。讀因果文最容易出錯的地方有兩個：一是把原因和結果的方向弄反，二是分不清幾個原因彼此並列，還是一個接一個連下去。
+本題庫這一類的題材很廣，有馬雅城市的消失、西尼羅病毒在美國爆發、印度單一時區、斑馬魚的再生能力、久坐的危害、時差、腦中神曲、口紅效應、語言消失、甲蟲變小等；形式大多是說明文，也有論說文（除蟲炸彈沒有效果）和記敘文（伊朗巴姆古城的地震）。
+怎麼辨識
+提出「為什麼」：因果文常先把問題問出來，後面就是答案。98 指考參考試卷〈馬雅文明的興衰與城市消失原因〉第 2 段 One question that interests scholars is why these cities just disappeared.（學者感興趣的一個問題，是這些城市為什麼就這樣消失了。）；107 學測〈西尼羅病毒〉第 3 段 Why was the summer of 2012 so hospitable to the West Nile virus and the mosquitoes that carry it? Blame the weather.（為什麼 2012 年夏天特別適合西尼羅病毒和傳播病毒的蚊子？要怪天氣。）Blame（要怪）後面接的就是原因。
+帶出原因的字詞：because、because of、due to、since、thanks to（由於）、reason、factor（因素）。例如 107 指考〈氣候變暖讓大型甲蟲變小〉第 1 段 Some of the world’s largest beetles are getting smaller because their habitats are warming up …（世界上一些最大型的甲蟲正在變小，因為牠們的棲地正在變暖。）、94 學測〈伊朗巴姆古城的地震與重建〉第 2 段 One reason the earthquake caused such damage was that Bam’s buildings were made mostly from baked mud.（地震造成這麼嚴重的破壞，原因之一是巴姆的建築大多是用烤乾的泥土造的。）
+帶出結果的字詞：so、thus、therefore、as a result、lead to（導致）、result in（造成）、cause。例如 110 學測試辦考試〈印度單一時區的爭議〉第 2 段 This results in great loss of daylight hours and more consumption of electricity, and often reduced productivity.（結果造成大量日照時間浪費、用電量增加，生產力也常常因此降低。）
+看清楚方向：A leads to B、A results in B、A causes B，A 是原因、B 是結果；A results from B 正好相反，B 才是原因；be caused by 的 by 後面接的也是原因。例如 105 學測〈中東地區的失學兒童〉第 2 段 Both issues result from the tide of violence that has crossed the region in recent years.（這兩個問題都來自近年席捲這個地區的暴力浪潮。）暴力是原因，學校毀損和人口流離失所是結果。
+一環接一環：〈馬雅文明的興衰與城市消失原因〉第 4 段 This led to damage to the environment of the area, further resulting in a lack of water and then drought.（這破壞了當地的環境，進一步造成缺水，接著就是乾旱。）further（進一步）、and then 表示因果還在往下連。
+說得有保留的因果：may have played a role（可能也有影響）、is linked to（和…有關）、appear to be（似乎是）。〈西尼羅病毒〉第 3 段說經濟危機可能也有影響（may have also played a role）；〈氣候變暖讓大型甲蟲變小〉第 4 段說有些生態學家認為，還沒有證明暖化就是甲蟲變小的真正原因。文章只說「可能」「有關」，選項卻說成確定的原因，就是說法太過武斷。
+段落安排：多因一果先寫結果，再一段一個原因，最後常用一句話總結所有原因，例如〈馬雅文明的興衰與城市消失原因〉最後一句 Thus warfare, overpopulation, overuse of resources, and destruction of the environment appear to be active factors …；一因多果先寫原因，再一段一段寫結果；因果鏈常在一段之內就連好幾環。
+怎麼驗證
+先問每一段：這一段回答得出「為什麼」或「結果呢」嗎？大部分的段落都回答得出來，就是因果關係。接著找出全篇最主要的結果（現象）和原因，判斷是哪一種形狀：
+一個結果、幾個原因，是多因一果，畫成魚骨圖：魚頭寫結果，每一根骨頭寫一個原因。拿掉其中一個原因，其他原因照樣成立。
+一個原因、幾個結果，是一因多果：一個原因畫出幾支箭頭，分別指向各個結果。
+前一個結果是下一個的原因，是因果鏈，畫成流程圖。拿掉中間任何一環，後面就接不上。
+實際的文章常常混用。〈馬雅文明的興衰與城市消失原因〉整篇是多因一果，可是其中人口過多導致森林過度利用，森林沒了又破壞環境，這三個原因本身就連成一條因果鏈；〈印度單一時區的爭議〉整篇是一因多果，第 3 段的西部日落晚、孩子睡得少、受教育的年數減少，也是一條鏈。畫圖的時候先畫最上層的形狀，再把裡面的小鏈標出來。
+和時序發展怎麼分：因果鏈也是一步接一步，看起來像照時間排。試著在兩步之間加上 so 或 therefore：讀得通，就是因果；只能加 then，那只是時間先後。108 學測〈神仙魚的變性能力〉第 3 段先說黑斑神仙魚從雌性變成雄性不是隨機發生，而是有特定的原因（群體裡的雄魚死了，需要新的守衛），本題庫依這個重點歸在因果關係；同一段接著照時間寫變性的經過，第 44 題考的就是這個順序（Size → color → behavior → stripes）。這一篇前兩段又在介紹花紋和清潔其他魚的習性，混了好幾種方式，所以不拿來當示範。
+和列舉怎麼分：多因一果的幾個原因、一因多果的幾個結果，彼此並列，順序也可以對調，這一點和列舉很像。差別在各項都指向同一個結果，或來自同一個原因，作者回答的是「為什麼」或「會怎麼樣」；列舉的各項只是同一個主題的幾個面向。
+和問題解決怎麼分：問題解決文也會說問題的原因，可是全篇的重心在解決辦法；如果整篇都在解釋一個現象為什麼發生，沒有提出辦法，那才是因果關係。〈印度單一時區的爭議〉第 4 段只交代政府為什麼維持現制，沒有提出解決辦法，所以全篇歸在因果。
+和舉例說明怎麼分：110 學測試辦考試〈福斯特法則：島嶼效應〉第 38 題問最後一段怎麼收尾，答案是 With an illustration（用實例）；可是那只是收尾的方法。全篇在說明島上的哺乳類為什麼會變大或變小，第 3 段就是原因，所以全篇歸在因果關係。
+魚骨圖：用 98 指考參考試卷〈馬雅文明的興衰與城市消失原因〉畫成。魚頭是結果，每一根骨頭是一個原因，四個原因就是第 4 段最後一句總結的四項，順序可以對調。其中人口過多導致森林過度利用，森林沒了又破壞環境，這三根骨頭本身也連成一串，第 50 題就考這一段。英文取自原文，中文是本題庫加上的解釋。一因多果：用 110 學測試辦考試〈印度單一時區的爭議〉畫成。一個原因畫出幾支箭頭，分別指向各個結果；最下面是第 4 段政府維持現制的理由。第 3 段那一格本身是一條小鏈：日落晚，孩子睡得少，受教育的年數也跟著減少。英文取自原文，中文是本題庫加上的解釋。因果鏈：用 109 指考〈馬里亞納海溝的深海汙染〉第 4 段畫成。每一格都是前一格的結果、下一格的原因，拿掉任何一格，後面就接不上。第 5 段再從這裡推論：海溝離工業汙染源很遠，可見這些汙染物能遠距離移動。英文取自原文，中文是本題庫加上的解釋。
+考卷上怎麼考
+大考考因果文，常問某件事情的原因或結果，也常問主旨和標題。問原因、結果的題目，錯誤選項最常把因果倒過來（說反了），或接上另一個原因的內容（張冠李戴）；文章說「可能」「有關」，選項說成確定的原因，就是說法太過武斷。問主旨的題目，正確選項要同時說出結果和原因，只抓一個原因、或只抓背景介紹，就是以偏概全。
+98 指考參考試卷（95 課綱）第 50 題
+According to the passage, what was the consequence of overuse of the tropical forest?
+(A) Flood.
+(B) Overpopulation.
+(C) Continuous wars.
+(D) Shortage of food.
+這一題問的是因果鏈中間的一環。第 3 段最後一句 Overpopulation led to overuse of the tropical forest, the source of their food. 指出森林是他們糧食的來源；第 4 段又說森林幾乎沒有剩下。森林用光了，糧食就不夠，所以是 (D)。(B) 說反了：人口過多是森林過度利用的原因，選項把它說成結果，因果倒過來了；(C) 張冠李戴：戰爭是另一根骨頭，原文沒有說是森林過度利用造成的；(A) 說反了：第 4 段說森林沒了以後缺水、乾旱，選項卻是洪水。讀到 lead to、result in 這類字詞，先分清楚哪一邊是因、哪一邊是果。
+到互動練習作答這一篇 → 看原文與解析
+110 學測試辦考試第 45 題
+According to the passage, which of the following is a supporting argument for multiple time zones?
+(A) The number of traffic accidents can be reduced.
+(B) Children may have better-quality sleep and education.
+(C) India may have more energy resources to generate electricity.
+(D) The country may rid itself of the impact of British colonization.
+第 2、3 段列出單一時區造成的結果，每一個壞結果反過來都是改用多個時區的理由。第 3 段說西部日落晚，孩子睡得少，受教育的年數也減少；改成多個時區，孩子就可能睡得好、受更完整的教育，所以是 (B)。(A) 說反了：第 4 段說政府維持現制，理由之一正是鐵路和航班的安全，交通安全是支持單一時區那一方的理由；(C) 對的一半是第 2 段確實提到電，錯的一半是原文說現制讓用電量增加，選項卻說多個時區能帶來更多發電的能源（無中生有）；(D) 對的一半是第 1 段確實說單一時區是英國統治留下來的，錯的一半是文章裡沒有人拿擺脫殖民影響當作改制的理由，第 1 段反而說許多人把單一時區看作團結的象徵。
+到互動練習作答這一篇 → 看原文與解析
+109 指考第 40 題（答對率 72%）
+What is the passage mainly about?
+(A) The decrease of polluted creatures in the food chain.
+(B) Using remote control in research on marine pollution.
+(C) Pollution of the deep sea by persistent toxic chemicals.
+(D) Types of chemical pollution caused by industrial applications.
+全篇回答「地球最深的海溝為什麼也有汙染」：第 1、2 段是結果，海溝深處的生物體內毒素濃度極高；第 3 段說這些是不會分解的持久性有機汙染物；第 4 段說它們怎麼沿著食物鏈一路傳下去；第 5 段推論汙染物能遠距離移動。主旨要同時說出汙染的地方（深海）和汙染物的性質（persistent toxic chemicals），所以是 (C)。(B) 以偏概全：遙控載具只是第 2 段研究用的工具；(D) 以偏概全：化學物質的種類和用途只是第 3 段的內容；(A) 無中生有：原文說汙染物沿著食物鏈傳下去，沒有說受汙染的生物變少。
+到互動練習作答這一篇 → 看原文與解析
+107 指考第 44 題（答對率 41%）
+What is the best title for the passage?
+(A) Large Beetles Are Shrinking, Thanks to Climate Change
+(B) Beetles vs. Fish: Are They Becoming Smaller?
+(C) What We Know About Evolutionary Ecology
+(D) Animal Ecology: Past and Present
+第 1 段第一句 … are getting smaller because their habitats are warming up 就是全篇的因果：原因是棲地變暖，結果是大型甲蟲變小。第 2、3 段是實驗室研究和野外標本的證據，第 4 段是其他學者的看法。標題的 Thanks to 是「由於」，正好對應 because，所以是 (A)。Large 也很重要：第 3 段說比較小的甲蟲沒有變小，甚至稍微變大。(B) 以偏概全：魚類變小只是第 4 段 Baudron 的研究；(C)、(D) 把題目放大成整門學問：Animal Ecology 是刊登這項研究的期刊名稱，Evolutionary 出自 Tseng 的專業領域，文章談的只是一項研究發現。第 4 段提到有些生態學家認為還沒有證明暖化就是原因，作者把這種保留的看法放在最後，全篇的主軸仍然是第 1 段的因果。
+到互動練習作答這一篇 → 看原文與解析
+107 學測第 45 題（答對率 36%）
+What is this passage mainly about?
+(A) West Nile and methods to fight it.
+(B) West Nile and governmental efficiency.
+(C) West Nile and the conditions its virus thrives in.
+(D) West Nile and its relation to tropical diseases.
+這一篇是多因一果。第 1 段介紹病毒怎麼傳染、有什麼症狀，第 2 段說 2012 年達拉斯疫情嚴重，這是結果；第 3 段用 Why was the summer of 2012 so hospitable to the West Nile virus …? 提出問題，接著說天氣和經濟危機，第 4 段用 also 再加上政府不作為，這些都是原因。全文的重心在病毒在什麼條件下容易蔓延，所以是 (C)。(A) 以偏概全：空中噴藥、檢驗死鳥這些對抗的辦法，只在第 2、4 段帶到；(B) 以偏概全：政府的作為只是第 4 段的一個原因；(D) 無中生有：第 4 段雖然提到熱帶疾病，文章並沒有談西尼羅病毒和其他熱帶疾病的關係。這一題考後有人主張 (B) 也對，大考中心邀集專家討論後維持 (C)。
+到互動練習作答這一篇 → 看原文與解析
+專練這一類本題庫有 49 篇歸在因果關係，也可以到篇目一覽瀏覽。
+列舉Listing
+並列幾個特點、理由或面向，彼此沒有先後之分。
+這種文章在做什麼
+列舉文把一個主題拆成幾個面向、特點或理由，一段講一項。各項的地位相等，沒有誰先誰後，也沒有誰造成誰。例如介紹一種食物，先講營養還是先講吃法，都不影響讀者理解。介紹一樣東西、一個民族或一種職業的說明文，最常用這種方式；列出幾個理由、幾個建議的文章也是。本題庫這一類的題材有印尼天貝、馬賽人的文化、蘇格蘭裙、印度女性眉心的紅點（bindi）、引水人、搖籃曲的作用、冰雕、比特幣、斯巴達松超級馬拉松等；形式也不只說明文，還有訪談、書評和書信。
+怎麼辨識
+預告有幾項的句子：some、a few、several 接上 ideas、tips（建議）、aspects（面向）、reasons。例如 109 指考〈美國聯邦教育法案 ESSA 與評估改革〉第 1 段最後一句 Below are some big-picture ideas influencing many states as they approach the assessment task.（以下是影響許多州規劃評量工作的幾個大方向。）、86 學測〈人際關係的建立與維繫〉第 2 段 Here are a few tips to help us create enduring relationships.（下面有幾個建議，幫助我們建立持久的關係。）看到這種句子，就知道後面要一項一項列下去。
+一項接一項的字詞：First、Second、Third、Lastly；Another、Also、In addition、Moreover、Besides（此外）。〈美國聯邦教育法案 ESSA 與評估改革〉第 2 到 5 段的第一句依序是 One important idea is flexibility.、Another idea is multi-subject testing.、A third idea is …、The last idea regards …，四段四個方向，一看就清楚。
+特別標出最重要的一項：Best of all（最棒的是）、Above all（最重要的是）。例如 109 學測〈引水人的專業〉第 4 段 Above all, it is about risk management.（最重要的是，這份工作講究的是風險管理。）這種字詞只是替其中一項加重分量，各項之間還是並列。
+回顧上一項、帶出下一項：108 指考〈印尼天貝：從傳統食物到世界之寶〉第 4 段 In addition to its highly nutritional makeup, tempeh has diverse preparation possibilities.（天貝不但營養豐富，料理方式也很多元。）In addition to 後面接的是上一段的重點，主要子句才是這一段的新面向。
+每段的第一句：列舉文的各段，第一句通常就說出這一段講哪一項。只讀各段的第一句，就能列出全篇有哪幾個面向。
+段落安排：開場一段點出主題，有時預告有幾項；中間一段一項；最後一段常寫作者特別看重的一項，或對未來的展望。〈印尼天貝：從傳統食物到世界之寶〉第 5 段說天貝也有文化價值，很有機會像印尼蠟染一樣，列入聯合國教科文組織的「人類非物質文化遺產」。
+怎麼驗證
+任兩段對調照樣通：開場和結尾的段落不動，把中間各段換個順序，只要調整段首的轉折詞，文章照樣讀得通，就是列舉。以〈印尼天貝：從傳統食物到世界之寶〉為例，把第 3、4 段對調，先講料理、再講營養，只要拿掉第 4 段開頭回顧營養的那幾個字，意思一點也不受影響。換成別類就不行了：時序發展的段落一對調，時間就亂了；因果鏈一對調，前因後果就接不上；問題解決一對調，就變成還沒說問題，先說辦法。
+再把文章畫成下面的網狀圖：中間寫主題，四周一項一格。如果每一段都填得進其中一格，而且各格之間不必畫箭頭，就是列舉。
+列舉容易和好幾類混在一起，其他各類那一節也寫了和列舉怎麼分，判斷的關鍵整理如下。
+和分類怎麼分：分類的各項是依同一個標準分出來的類別，作者通常先說「分成幾類」；列舉的各項只是同一個主題的幾個面向或理由，沒有一個共同的分類標準。
+和定義怎麼分：介紹一樣新東西的文章，如果各段只是並列它的幾個面向，任兩段對調照樣通，本題庫歸在列舉；定義文的各段有先後順序，要先知道它是什麼，後面的原因、判斷方法才看得懂。
+和舉例說明怎麼分：看上面有沒有一個要證明的主張。列舉的各項是同一個主題的幾個面向，作者在介紹；舉例的各項都在替同一個主張作證。
+和比較對比怎麼分：100 學測〈肢體語言的迷思〉每一段都先說一般人的看法，再用 However 或 In fact 說出研究的發現，一段裡面前後相反；可是三段講的是三個各自獨立的迷思，任兩段對調照樣通，所以歸在列舉。只有兩項的列舉也要小心：104 指考〈土耳其哥樂美國家公園：自然與人文〉第 2 段講自然、第 3 段講人文，兩段並沒有一路對照，只是同一個地方的兩個面向。
+和描寫怎麼分：兩者都是一格一格並列。列舉的各格是同一個主題的不同面向，作者在說明；描寫的各格是同一個畫面的細節，作者要讓讀者看見。
+和時序發展怎麼分：列舉文的其中一段照時間寫，不影響全篇。101 學測〈蘇格蘭裙〉第 2 段用 Then、Today 交代方格圖案怎麼演變，可是全篇是穿法和長度、方格圖案、配件三個面向並列，所以歸在列舉。
+藏在別類文章裡的列舉：問題解決文常把辦法一條一條列，比較對比文也常一項一項列出好處和壞處。段落裡面是列舉，全篇不一定是列舉，判斷看的是最上層。
+網狀圖：用 108 指考〈印尼天貝：從傳統食物到世界之寶〉畫成，起源、營養、料理三格依序對應第 38 題正確選項 Origin → nutrition → cuisine，文化價值是第 5 段講的第四個面向。四格之間不畫箭頭，因為各項並列，順序可以對調。英文取自原文，中文是本題庫加上的解釋。
+考卷上怎麼考
+大考考列舉文，最常問主旨、標題和某一段的重點，偶爾直接問第幾段到第幾段依序談哪些面向。主旨和標題題的正確選項，要說出各項共同的主題，也就是網狀圖中間那一格；錯誤選項最常只抓其中一格（以偏概全），或把某一段的內容安到另一段（張冠李戴）。下面最後三題的答對率都不到四成：主旨要自己從各項歸納出來，或要同時兼顧好幾項，只看到其中一項就容易答錯。
+108 指考第 38 題（答對率 76%）
+What aspects of tempeh are discussed in paragraphs 2 to 4?
+(A) Origin → nutrition → cuisine.
+(B) Origin → cuisine → marketing.
+(C) Cuisine → nutrition → marketing.
+(D) Distribution → cuisine → nutrition.
+只讀各段的第一句就答得出來：第 2 段 originating from the island of Java 是起源，第 3 段 high in protein and low in fat 是營養，第 4 段 diverse preparation possibilities 是料理，所以是 (A)。第 4 段開頭 In addition to its highly nutritional makeup 先回顧營養、再帶出料理，也看得出這兩段的先後。(D) 對的一半是第 2 段最後說天貝在印尼各地發展出不同的風味，勉強可以說是分布，錯的一半是後兩項順序不對，第 3 段才是營養，第 4 段才是料理；(B) 對的一半是起源，錯的一半是把第 4 段的料理安到第 3 段（張冠李戴），最後的 marketing（行銷）更是無中生有；(C) 只有中間的營養對，把第 2 段說成料理是張冠李戴，marketing 也是無中生有。列舉文的段落順序本來可以換，可是這一題問的是這一篇實際怎麼排，還是要一段一段對。這一篇 111 學測參考試卷也用過，第 41 題就是這一題。
+到互動練習作答這一篇 → 看原文與解析
+108 指考第 36 題（答對率 54%）
+What is the passage mainly about?
+(A) The preparation of a health food.
+(B) A traditional delicacy from Java.
+(C) A gourmet guide for vegetarians.
+(D) The cultural heritage of Indonesia.
+主旨就是網狀圖中間那一格：一種來自爪哇的傳統美食，四個面向都是在介紹它，所以是 (B)。(A) 以偏概全：料理方式只是第 4 段，健康食品也只對應第 3 段的營養，兩格湊在一起仍然只是一部分；(C) 以偏概全：素食者只在第 3 段最後一句提到，文章也不是寫給素食者的美食指南；(D) 對的一半是第 5 段確實提到文化遺產，錯的一半是全文只介紹天貝一樣東西，選項把主題放大成印尼的文化遺產，而且第 5 段只說天貝很有機會列入，還不是文化遺產。
+到互動練習作答這一篇 → 看原文與解析
+100 學測第 44 題（答對率 38%）
+What is the main idea of the passage?
+(A) People have an instinct for interpreting non-verbal communication.
+(B) We should not judge the intention of a person by his body language.
+(C) A good knowledge of body language is essential for successful communication.
+(D) Common beliefs about verbal and non-verbal communication are not always correct.
+這一篇沒有開場段替讀者說出主題，三段直接各講一個迷思：第 1 段 There is a long-held belief（眼神接觸越多越好），第 2 段 Another widely accepted belief（有權勢的人會主動觸碰別人），第 3 段 … is also widespread（說話快就是在說謊），每一段都用 However 或 In fact 推翻那個說法。主旨要自己從三段歸納出共同點：一般人的看法不一定對。眼神和觸碰屬於非語言溝通，說話快慢屬於語言溝通，(D) 同時涵蓋兩者，所以是 (D)。(A) 說反了：三段都在說大家憑直覺相信的說法常常是錯的；(B) 無中生有：文章沒有叫人不要從肢體語言判斷別人，第 3 段反而指出說話慢、停頓多比較可能是在說謊；(C) 無中生有：文章只破除三個常見的說法，沒有談肢體語言對成功溝通有多重要。
+到互動練習作答這一篇 → 看原文與解析
+109 指考第 48 題（答對率 30%）
+Which of the following is the best title for this passage?
+(A) Computers and Assessments
+(B) The Four Components of ESSA
+(C) Student-Centered Curriculum and Instruction
+(D) From NCLB to ESSA, with a Focus on Assessment
+第 1 段先交代背景：ESSA 取代了 NCLB，讓各州在課程、教學和評量上有更多決定權；最後一句 Below are some big-picture ideas 預告後面要列出影響各州規劃評量的幾個方向。第 2 到 5 段用 One important idea、Another idea、A third idea、The last idea 列出四個方向，四段都在談評量。標題要同時涵蓋開場的背景和四項共同的主題，所以是 (D)。(B) 張冠李戴：四段列的是影響各州規劃評量的四個方向，選項卻說成 ESSA 這個法案的四個組成部分；(C) 對的一半是 student-centered 確實出現在第 2、4 段，錯的一半是它形容的是評量方式，全文沒有談課程和教學；(A) 以偏概全：電腦適性測驗只是第 2 段舉的例子。
+到互動練習作答這一篇 → 看原文與解析
+104 指考第 51 題（答對率 28%）
+Which of the following sentences best states the main idea of the passage?
+(A) Goreme is a wonder where nature meets man.
+(B) Goreme is a representation of ancient Turkish life.
+(C) Goreme is a living example of the power of nature.
+(D) Goreme is an attraction that mixes the new and the old.
+這一篇只列了兩項。第 1 段一句話就預告了兩個面向：soaring rock formations, uniquely-rippled landscapes（高聳的岩石、獨特的波紋地形）是自然，mysterious underground cities（神祕的地下城市）是人文。第 2 段講火山和風雨造出的仙女煙囪；第 3 段用 But the Goreme National Park has always been much more than its dramatic scenery. Humans, too, … 轉到人文，講拜占庭基督徒鑿出的教堂和地下村莊。主旨要兼顧兩項，所以是 (A)。(C) 以偏概全：只講第 2 段的自然；(B) 以偏概全：只講第 3 段的人文，而且 ancient 在原文形容的是火山（張冠李戴），住在這裡的是拜占庭的基督徒，文章沒說是古代土耳其人；(D) 對的一半是第 3 段最後說那些村莊至今還有人住，錯的一半是文章沒有拿新的和舊的東西對照，全篇講的是自然和人文兩個面向。
+到互動練習作答這一篇 → 看原文與解析
+專練這一類本題庫有 48 篇歸在列舉，也可以到篇目一覽瀏覽。
+問題解決Problem-Solution
+先提出問題，再說明解決或因應的辦法；先提疑問、再給答案的文章也算這一類。
+這種文章在做什麼
+問題解決文先說出一個問題，交代它有多嚴重、為什麼會發生，再說明怎麼解決或因應，最後常交代辦法的成效、限制，或還要克服的困難。作者有時只是介紹一個辦法，例如 109 學測〈用聲音驅趕鹿隻〉介紹日本在火車上裝喇叭，用狗吠聲和鹿的警告聲嚇走鐵軌上的鹿；有時則是主張某一個辦法，例如 92 指考那一篇力主用行李比對防範炸彈客。另外，先提出一個疑問、再報導研究怎麼找出答案的文章，本題庫也歸在這一類，例如 105 學測〈海蛇的飲水策略〉。本題庫這一類的題材還有太空垃圾、海水淡化、瘧疾、血鑽石、大象跌進茶園的排水溝、廢棄的仙人掌外皮變成能源等。
+怎麼辨識
+點出問題的字詞：problem、challenge（挑戰）、threat（威脅）、difficulty；常見的句型是 The problem is that …、The major problem with … is that …、pose a serious problem（造成嚴重的問題）。例如 107 學測〈海水淡化〉第 2 段 The problem is that the desalination of water requires a lot of energy.（問題在於海水淡化需要大量能源。）
+說明問題有多嚴重：常用數字和後果。103 指考〈以基因改造蚊子對抗瘧疾〉第 1 段說每年約 2.5 億人感染瘧疾、約一百萬人死亡，又還沒有有效的疫苗；〈用聲音驅趕鹿隻〉第 2 段說 2016 到 2017 年間，日本的火車因為撞上鹿和其他野生動物而停駛或延誤三十分鐘以上，有 613 次。
+引出辦法的字詞：solution、solve、deal with（處理）、In order to、To avoid this、in response to（為了因應）。例如 In order to stop blood diamond sales, countries in southern Africa … began a campaign …（為了阻止血鑽石的買賣，南部非洲國家發起一項運動）、It was in response to this situation that The Carpenters’ Shop was opened …（木匠店就是為了因應這個情況而開設的）。
+先交代行不通的辦法：In the past, flashing red lights and even lion faces have been unsuccessfully trialed in an attempt to keep deer off the tracks.（過去試過閃紅燈，甚至獅子臉，想讓鹿遠離鐵軌，都沒有成功。）舊辦法行不通，才引出文章要介紹的新辦法。
+成效、限制和後續：As a result、results、Despite this achievement（儘管有這項成果）、Another challenge、But unfortunately。〈用聲音驅趕鹿隻〉最後說夜間測試讓鹿出沒的次數減少了 45%；〈以基因改造蚊子對抗瘧疾〉則以還要克服的兩個挑戰收尾。
+先提疑問：〈海蛇的飲水策略〉第 1 段說海蛇的鹽腺應付不了海水，接著問 If seawater is not an option, how does this animal survive in the ocean?後面幾段就是研究團隊怎麼找出答案。疑問就是問題，研究的發現就是答案。
+段落安排：問題通常占前一兩段，接著用 But、However、To avoid this 這類轉折把文章分成前後兩半，後半說辦法，最後是成效、限制或作者的呼籲。
+怎麼驗證
+找出把全篇分成兩半的那一個轉折：前半回答「出了什麼問題、有多嚴重、為什麼會這樣」，後半回答「怎麼辦、效果如何」。分得出這兩半，就是問題解決。再把它畫成下面三格的流程圖：問題、解決辦法、結果。第三格要照文章寫，可能是成效（〈用聲音驅趕鹿隻〉鹿出沒減少 45%），也可能是限制或還要克服的困難（〈以基因改造蚊子對抗瘧疾〉）。
+和因果關係怎麼分：問題解決文也會說問題的原因，例如〈用聲音驅趕鹿隻〉第 3 段說，鹿跑上鐵軌是為了舔鐵屑補充鐵質。可是原因只是問題的一部分，全篇的重心在解決辦法；如果整篇都在解釋一個現象為什麼發生，沒有提出辦法，那才是因果關係。
+辦法常一條一條列：101 學測〈如何拍攝動物〉第 1 段說動物不聽指揮、很難拍，後面幾段列出幾個方法。辦法那一半裡面是列舉，全篇是問題解決。
+記敘文也可以是問題解決：105 學測〈小發明家的故事〉照時間寫 Jeanie 的故事，可是故事的骨架是問題（家裡的塑膠凳不穩又占空間）、辦法（做一張固定在浴室、不用時能收起來的凳子）和結果（得獎、上電視）。
+流程圖：用 103 指考〈以基因改造蚊子對抗瘧疾〉畫成，三格依序對應第 49 題的正確選項 Problem → Solution → Potential difficulties。第三格寫的是結果，這一篇的結果是還要克服的困難。英文取自原文，中文是本題庫加上的解釋。
+考卷上怎麼考
+大考會直接問全篇怎麼組織，正確選項把各部分排成 Problem → Solution → ……；也常問主旨、寫作目的和段落主旨。問主旨的題目，正確選項要同時涵蓋問題和辦法，文章最後談到困難，也要涵蓋困難；錯誤選項常只抓其中一段（以偏概全），或把還在試驗的辦法說成已經成功（說法太過武斷）。
+103 指考第 49 題（答對率 69%）
+Which of the following best shows the organization of this passage?
+(A) Introduction → Comparison → Contrast
+(B) Problem → Solution → Potential difficulties
+(C) Proposal → Arguments → Counter-arguments
+(D) Definition → Examples → Tentative conclusions
+第 1 段說瘧疾每年奪走約一百萬條人命，又沒有有效的疫苗，這是問題；第 2 段說科學家改造蚊子體內的細菌，殺死瘧疾寄生蟲，這是辦法；第 3 段用 Despite this achievement、第 4 段用 Another challenge 帶出兩個挑戰，這是可能遇到的困難，所以是 (B)。(C) 對的一半是第 4 段確實提到環保人士的疑慮，錯的一半是那只是辦法要克服的困難之一，文章沒有正反兩方的辯論；(D) 對的一半是第 1 段確實有 For example，錯的一半是那個例子用來說明科學家想用基因改造消滅疾病，第 1 段並沒有下定義；(A) 無中生有：全文沒有比較兩樣東西。
+到互動練習作答這一篇 → 看原文與解析
+103 指考第 48 題（答對率 41%）
+What is the main idea of this passage?
+(A) Researchers have found an effective way to halt the spread of insect-borne diseases around the world.
+(B) Many people are worried about the effects of genetically modified organisms on the environment.
+(C) It takes time to gain public support for the application of genetic modification to disease control.
+(D) Genetic engineering looks promising in reducing malaria, though there may be unknown consequences.
+主旨要同時說出這個辦法有希望，也還有隱憂：looks promising in reducing malaria 對應第 2 段的辦法，though there may be unknown consequences 對應第 3、4 段的困難，所以是 (D)。(A) 說法太過武斷：第 3、4 段說還有挑戰要克服，選項卻說已經找到有效的方法；而且原文只談瘧疾，選項擴大成全世界所有由蚊蟲傳播的疾病，又犯了以偏概全；(B)、(C) 以偏概全：環保人士的疑慮和爭取大眾認同，都只是第 4 段的內容。
+到互動練習作答這一篇 → 看原文與解析
+107 學測第 50 題（答對率 66%）
+What is the second paragraph mainly about?
+(A) The high cost of desalinating seawater.
+(B) The major chemical characteristics of seawater.
+(C) The urgent need to turn seawater into fresh water.
+(D) The amount of energy produced in the desalination of seawater.
+第 2 段用 The problem is that 帶出這一段的重點：淡化需要大量能源，所以成本很高，選項換成 high cost，所以是 (A)。抓到 The problem is that，就抓到這一段的主旨。(D) 說反了：原文說淡化要消耗能源，選項變成產生能源；(C) 張冠李戴：迫切需要淡水是第 1 段講的事情，不是第 2 段的重點；(B) 化學鍵只是用來解釋淡化為什麼這麼耗能，不是這一段的主旨。
+到互動練習作答這一篇 → 看原文與解析
+98 學測第 53 題（答對率 64%）
+What is the main purpose of this article?
+(A) To explain what causes children’s eating disorder.
+(B) To teach children about the meal preparation process.
+(C) To advocate the importance of vegetables and whole grains.
+(D) To inform parents how they can help their children like varied foods.
+第 1 段先說孩子通常不信任新的食物，這是問題，接著用 But 說讓孩子接觸各種食物是父母的責任（it’s the parents’ job）；後面提出兩個辦法：讓孩子參與準備餐點，以及不要在孩子面前節食。全文在告訴父母怎麼幫孩子喜歡多樣的食物，所以是 (D)。(B) 張冠李戴：準備餐點是父母可以用的辦法，文章是寫給父母看的，不是教孩子；(A) 以偏概全：飲食失調只在最後一句提到；(C) 以偏概全：蔬菜和全穀類只是其中一項研究的課程內容。
+到互動練習作答這一篇 → 看原文與解析
+92 指考第 60 題（答對率 36%）
+The passage was written mainly to ______.
+(A) point out the necessary trade-offs between privacy and security
+(B) highlight the TSA’s mission to improve airline security
+(C) argue for bag-matching as an effective security measure
+(D) advocate the use of electronic-detection systems
+第 1 段說 911 事件以後美國實施了許多安全措施，第 2 段提出作者認為萬無一失的辦法：行李比對；第 3、4 段批評當局忽視這個辦法，並用 Barnett 的實驗反駁航空公司反對的理由；第 5 段說行李比對嚇阻炸彈客的效果遠勝電子偵測系統。全文在替行李比對辯護，所以是 (C)。可見問題解決文也可以是論說文，作者主張某一個辦法。(D) 張冠李戴：作者主張的是行李比對，電子偵測系統是當局採用、作者說大多未經測試的辦法；(A) 說反了：第 2 段說行李比對既能提升安全、又能保護隱私，兩者不必取捨；(B) 說反了：文章批評 TSA 忽視行李比對，不是在強調 TSA 的使命。
+到互動練習作答這一篇 → 看原文與解析
+專練這一類本題庫有 24 篇歸在問題解決，也可以到篇目一覽瀏覽。
+舉例說明Example/Illustration
+先提出一個觀點，再用例子支持它。
+這種文章在做什麼
+舉例說明文先提出一個觀點或主張，再舉出具體的例子證明它：一個人的經歷、一件案子、一個品牌的做法、一組研究數字，都可以當例子。例子讓抽象的說法變得具體，讀者記得住，也比較願意相信。不過這一類文章的重點在作者要證明的那個主張，不在例子本身；例子寫得再生動，也只是證據。本題庫歸在這一類的文章，題材有過度醫療、日本的血型性格論、鑑識語言學、青少年文化對時尚的影響、兒童當志工、頭髮的象徵意義等。
+怎麼辨識
+引出例子的字詞：for example、for instance（例如）、such as、like（像是）。例如 Terrence Power, for example, complained that …，for example 插在句子中間，提醒讀者這一整段都是例子。
+宣告例子的句子，不一定有 for example：A famous example of its application is the case of Chris Coleman（一個著名的應用實例是 Chris Coleman 一案）、Perhaps one of the best examples is their use of hip-hop culture.（最好的例子之一，或許是他們對嘻哈文化的運用。）、Rap’s rise and sustained global popularity is a good illustration of how influential youth culture is …（饒舌音樂竄紅、在全球歷久不衰，正好說明青少年文化的影響力有多大）、Such is the case with an old leather shoe in a museum in Alaska.（阿拉斯加一家博物館裡的一隻舊皮鞋就是這樣。）、One such reward is the Carnegie Medal.（卡內基獎章就是這樣的一種獎勵。）這些句子裡的 example、illustration、Such is the case with、One such …，前面都有一句概括的說法，後面接的是例子。
+主張句的位置：大多放在例子前面，常是第 1 段，也常先引一般人的看法，再用 But 說出作者的主張，例如 104 學測〈過度醫療的問題〉第 1 段：many patients and doctors believe “more is better.” But … overtreatment … may pose harm. 也有文章先講一個例子引起興趣，主張到下一段才出現：102 指考〈非洲學校走向數位化〉先講 14 歲的 Grace 一分鐘就學會用平板，第 2 段才說數位裝置可能很快在非洲學校普及；98 指考〈兒童志願服務的意義與影響〉也是先講兩個孩子週末要去當志工。
+例子的分量：一篇文章可以舉好幾個例子，一段一個；也可以只舉一個，用好幾段把它講完。〈過度醫療的問題〉第 2、3 段都在講 Power 太太一個病人。
+段落安排：主張（一段或一句）→ 例子一 → 例子二 → ……，最後常有一句把例子收回主張，例如 83 學測〈卡內基獎章：表彰英雄事蹟〉最後說，得獎的英雄有一個共同點（All these heroes have one thing in common），就是把別人的安全放在自己之前。
+怎麼驗證
+先把主張和例子分開：找出全篇要證明的那一句，再問每一段「這是不是用來支持那一句的例子」。如果大部分的段落都是例子，而且拿掉這些例子，那一句主張仍然說得出全篇的重點，就是舉例說明。也可以換一個例子試試：把 Grace 換成另一個第一次用平板的學童，主張照樣成立，因為例子只是證據。
+畫成階層圖：最上面寫主張，下一層寫支持主張的幾個論點，最下層寫例子。畫完要看得出每一個例子掛在哪一個論點底下；掛不上去的段落，就是在講別的事情。
+和列舉怎麼分：幾個例子之間也常可以對調，看起來像列舉。差別在上面有沒有一個要證明的主張：列舉的各項是同一個主題的幾個面向，作者在介紹；舉例的各項都在替同一個主張作證。
+和時序發展怎麼分：98 指考〈頭髮的歷史與象徵意義〉第一句說 In all cultures and throughout history hair has had a special significance.（在各種文化和整個歷史上，頭髮都有特殊的意義。）後面依序是古埃及、西元前 8 世紀的凱爾特人、古希臘、現代的龐克，看起來照年代排，可是每一個時代都是證明第一句的例子，所以歸在舉例說明；要是拿掉第一句，各段又沒有共同要證明的事情，只剩一段頭髮的歷史，那才是時序發展。同樣地，〈過度醫療的問題〉裡 Power 太太的例子本身照時間寫（After several years、then、Now），可是這整件事情是用來證明第 1 段的主張。判斷全篇看的是最上層。
+階層圖：用 102 指考〈非洲學校走向數位化〉畫成。最上面是主張，下一層是支持主張的三個論點，最下層是例子；第 1 段先講 Grace 的例子，主張到第 2 段才出現。英文取自原文，中文是本題庫加上的解釋。
+考卷上怎麼考
+大考考舉例說明文，最常問兩件事：作者舉這個例子要說明什麼，以及全文的主旨或標題。問主旨、標題的題目，錯誤選項幾乎都用同一個手法：拿其中一個例子當全文的主旨（以偏概全）。例子裡的人名、品牌、數字具體又好記，所以特別容易選錯；作答前要先問自己，這些例子合起來在證明哪一句。
+102 指考第 45 題（答對率 49%）
+What is the author trying to convey in citing Grace Wambui’s case?
+(A) Grace is a genius in computer skills.
+(B) The tablet computer is very user-friendly.
+(C) The delivery system in Kenya is very poor.
+(D) Tablet computers are common in Kawangware.
+問例子的用意，就把例子對回它要支持的說法。第 1 段說 Grace 從沒摸過平板，接著用 But 說她一分鐘左右就學會怎麼用：一個從沒用過的孩子一分鐘就會，說明的是平板很容易上手，所以是 (B)。(A) 把例子的重點放錯了地方：作者要說的是平板好用，不是 Grace 有天分；(D) 說反了：Grace 從沒摸過平板，可見平板在 Kawangware 這個貧民區並不普遍；(C) 無中生有：原文沒有談到肯亞的運送系統。
+到互動練習作答這一篇 → 看原文與解析
+104 學測第 45 題（答對率 77%）
+What is the main idea of this passage?
+(A) Treatments do not always cause harmful side effects.
+(B) Patients tend to believe more testing is better treatment.
+(C) Too much medical care may not be beneficial to patients.
+(D) Doctors generally recommend office visits that are necessary.
+第 1 段先引一般人的看法 more is better，再用 But 提出主張：過度醫療可能有害。第 2、3 段整整兩段只講 Power 太太一個例子：檢查一再加做，她身心受苦，家裡也幾乎破產，換了醫師、停掉例行檢查之後，病情反而穩定。這個例子正好證明第 1 段的主張，所以是 (C)；正確選項用 may not be beneficial，也保留了原文 may pose harm 的語氣。(B) 錯在把作者要反駁的看法當成主旨：病人相信檢查越多越好，是 But 前面的說法；(A)、(D) 和文章的立場相反：文章說的是醫療過度反而有害，Power 太太的醫生也正是一再要她做沒有必要的回診和檢查。
+到互動練習作答這一篇 → 看原文與解析
+106 指考第 44 題（答對率 44%）
+What is the main idea of the passage?
+(A) Robert Leonard has provided linguistic evidence in court cases.
+(B) The FBI relies mainly on language experts to solve its crime cases.
+(C) Studying texts can provide critical evidence in criminal investigations.
+(D) Finding hidden meanings in language use is important for daily interactions.
+第 1 段先說鑑識語言學涵蓋語言和法律交會的領域，接著用 A famous example of its application 帶出兩個案子：Coleman 案（第 1 段）和大學炸彈客案（第 2、3 段）。兩個案子都在說明分析用字和句構能找出犯人，所以是 (C)。(A) 以偏概全：Robert Leonard 只是第一個例子裡的語言學家；(D) 以偏概全：日常的語言互動只是第 4 段拿來類比的說法；(B) 無中生有：原文只說 Fitzgerald 替 FBI 工作，沒有說 FBI 辦案主要靠語言專家。
+到互動練習作答這一篇 → 看原文與解析
+92 學測第 52 題（答對率 62%）
+What is the best title for this passage?
+(A) The Importance of Marketing
+(B) The Power of Youth Culture
+(C) The Popularity of Hip-hop Fashion
+(D) The Success of Tommy Hilfiger
+三段各有例子：第 1 段是嘻哈文化，第 2 段是饒舌音樂和瑪丹娜，第 3 段是設計師 Tommy Hilfiger。第 2 段的 is a good illustration of how influential youth culture is 和第 3 段的 the power of youth culture 都點出這些例子要證明的是青少年文化的影響力，所以是 (B)。(C)、(D) 以偏概全：嘻哈服飾、Tommy Hilfiger 都只是其中一個例子；(A) 對的一半是第 1 段確實提到行銷人員，錯的一半是行銷只是利用青少年文化的手段，三段要證明的是青少年文化本身的力量。
+到互動練習作答這一篇 → 看原文與解析
+110 學測試辦考試第 38 題
+How does the author conclude the last paragraph?
+(A) With a prediction.
+(B) With a summary.
+(C) With a suggestion.
+(D) With an illustration.
+illustration 就是舉例。第 4 段前面說化石研究發現，在食物有限、缺乏競爭者的小島上，大型哺乳類縮小得特別快；最後一句接著舉離法國海岸 15 英里的海峽群島上的紅鹿，在島嶼和歐陸隔開之後，只用了六千年就縮小到歐陸紅鹿的六分之一，所以是 (D)。這一篇本題庫歸在因果關係，可見舉例也常用在一段之內，替前面的說法提出證據。(A) 最後一句講的是已經發生的事情，不是預測；(B) 最後一句提出新的實例，不是把前面的重點再說一次；(C) 文章沒有提出任何建議。
+到互動練習作答這一篇 → 看原文與解析
+專練這一類本題庫有 18 篇歸在舉例說明，也可以到篇目一覽瀏覽。
+比較對比Compare/Contrast
+把兩種以上的事物放在一起，說明相同和不同的地方。
+這種文章在做什麼
+比較對比文把兩樣（或兩樣以上）東西放在一起，說明它們哪裡相同、哪裡不同；也有文章把一件事情的正反兩面對照著寫，例如一樣新事物的好處和壞處，或是支持者和批評者的看法。作者拿兩邊來比較，通常不只是要列出異同，而是要讀者看出一個重點：91 指考〈愛斯基摩冰屋與平原印第安人帳篷的比較〉一路對照兩種住處，最後要說的是兩者差在隔熱。本題庫這一類的文章，題材有冰屋和帳篷、綠變色蜥和變色龍、左腦和右腦、男孩和女孩、老大和弟弟妹妹、加拿大、法國、義大利三國的父母，也有恐怖片的好處和壞處、線上課程的支持者和批評者這類正反對照。
+怎麼辨識
+說相同的字詞：both（兩者都）、also（也）、similarly、likewise（同樣地）、have much in common（有很多共同點）。例如 The true chameleon and the green anole are actually different animals, but they do have much in common.（變色龍和綠變色蜥其實是不同的動物，但兩者有很多共同點。）這一句先說不同、再說相同，告訴讀者後面兩方面都會寫到。
+說不同的字詞：but、however、in contrast（相對地）、by contrast、on the other hand（另一方面）、conversely（反過來說）、whereas、while（而）、unlike（和…不同）、differ from。其中 whereas、while 在同一句裡對照兩邊，例如 While New York built skyscrapers because land was scarce, Dubai is doing it to get on the world map.（紐約蓋摩天大樓是因為土地不足，杜拜蓋摩天大樓則是為了讓這座城市聞名世界。）
+比較級：more … than、-er than。例如 the anole’s ability to do so is considerably more limited than the chameleon’s（綠變色蜥變色的能力比變色龍有限得多）。
+點出差別的句子：The difference between A and B is …、This difference …。例如〈愛斯基摩冰屋與平原印第安人帳篷的比較〉最後一句 The difference between the Eskimo igloo and the Indian tepee was insulation，前面所有的對照都歸結到這一句。
+正反對照的字詞：the benefits and risks（好處和風險）、pros and cons（優缺點）、advantages and disadvantages、supporters／critics（支持者／批評者）。例如 114 學測〈恐怖電影的利弊〉第 1 段最後一句 new studies have started to untangle the benefits and risks of horror movies，預告下面要談好處和風險；103 學測〈大規模線上開放課程〉的 While some say free online courses are a great way to increase the enrollment of minority students, others have said they will leave many students behind. 這一句就對照了兩方的看法。
+先寫讀者熟悉的一邊：作者常從讀者熟悉的一邊寫起，再帶出陌生或新的一邊。108 指考〈語言與嗅覺描述的文化差異〉先說英語很難直接談氣味，第 2 段再用 But the difficulty with talking about smell is not universal. 帶出泰國南部的 Maniq 語至少有十五個專門描述氣味的字詞；91 學測補考〈名人簽名的商業化〉先用 It used to be that 寫從前名人免費簽名，再用 But nowadays 轉到現在簽名成了大生意。讀到 It used to be、In the past 這類開頭，接下來多半會轉到另一邊。
+段落安排有兩種。一種是先把一邊寫完，再寫另一邊，英文寫作教材把這種排法叫做 block method：〈愛斯基摩冰屋與平原印第安人帳篷的比較〉先寫冰屋的建材、入口、煙囪和屋裡的溫度，再用 on the other hand 轉到帳篷；〈恐怖電影的利弊〉也是第 2 段講好處、第 3 段講壞處。另一種是一個面向接一個面向，兩邊輪流對照，叫做 point-by-point method：98 指考參考試卷〈綠變色蜥與變色龍的比較及研究價值〉依序對照變色、分布的地方和產卵的數目。不論哪一種排法，兩邊比的面向都對得起來，讀的時候要找出這些成對的面向。
+怎麼驗證
+拿一張 T 圖來驗證：中間畫一條直線，左右兩欄各寫一邊，再把各段的內容一項一項填進去。如果兩欄都填得滿，而且同一列的左右兩格講的是同一個面向，例如冰屋和帳篷的建材、入口、密不密封，這一篇就是比較對比。要是只有一邊寫得多，另一邊只帶過一句，那麼比較只是文章裡的一小段，不是全篇的組織方式。
+圖要依文章的重點來選：兩樣東西著重差別，用 T 圖；相同的地方也是重點，用文氏圖，兩個圓圈重疊的部分寫共同點；要比的東西有三樣以上，或是面向很多，例如 102 學測參考試卷那一篇比較加拿大、法國、義大利三國的父母，就用比較表，一欄寫一個國家、一列寫一個面向；正反意見也用 T 圖，左欄寫好處或支持的一方，右欄寫壞處或反對的一方。下面三張圖依序是 T 圖、文氏圖和正反兩欄的 T 圖。
+和列舉怎麼分：100 學測〈肢體語言的迷思〉每一段都先說一般人的看法，再用 However 或 In fact 說出研究的發現，一段裡面確實前後相反；可是三段講的是三個各自獨立的迷思（眼神接觸、主動觸碰、說話快慢），任兩段對調照樣通，所以本題庫歸在列舉。比較對比的兩邊從頭到尾對照著寫，抽掉其中一邊，文章就不成立。
+正反對照裡面的列舉：〈恐怖電影的利弊〉第 2 段用 One benefit、Secondly、In addition 列出三個好處，第 3 段用 However 轉到壞處，再用 Furthermore、Finally 一項一項列下去。每一段裡面是列舉，兩段之間是正反對照；判斷全篇看的是最上層，所以這一篇歸在比較對比，第 42 題的答案也是這樣（見下方「考卷上怎麼考」）。
+和分類怎麼分：分類文也會比較同一類裡的兩項，可是全篇是在一類一類介紹；比較對比從頭到尾都在對照兩邊（或幾邊）的異同。
+T 圖：用 91 指考〈愛斯基摩冰屋與平原印第安人帳篷的比較〉畫成（原文只有一段）。上方寫兩邊的共同點，同一列的左右兩格是同一個面向；「煙囪」那一列帳篷那一格是空的，因為文章只說冰屋有煙囪。英文取自原文，中文是本題庫加上的解釋。文氏圖：用 98 指考參考試卷〈綠變色蜥與變色龍的比較及研究價值〉畫成（原文只有一段）。中間重疊的部分是共同點，左右兩邊是各自的特點。英文取自原文，中文是本題庫加上的解釋。正反兩欄的 T 圖：用 114 學測〈恐怖電影的利弊〉畫成。左欄的三個好處和右欄的四個壞處不必一一對應；文章也沒有下結論說哪一邊比較多。英文取自原文，中文是本題庫加上的解釋。
+考卷上怎麼考
+大考會直接問全篇怎麼組織、寫作目的是什麼，答案是比較，或是對照正反兩方的看法。比較對比文的細節題還有一個固定的陷阱：把甲的特點安到乙身上（張冠李戴），或把共同點說成差別。所以讀的時候要在腦中畫一張 T 圖，每看到一個特點，就記下它屬於哪一邊；作答時，再把選項對回那一欄。
+114 學測第 42 題（答對率 39%）
+How does the author develop the ideas in this passage?
+(A) By defining and illustrating a concept.
+(B) By showing opposing views of an issue.
+(C) By presenting cause and effect of a problem.
+(D) By providing steps for settling a disagreement.
+第 1 段最後一句預告要談 the benefits and risks，第 2 段講好處，第 3 段用 However 轉到壞處，兩段立場相反，所以是 (B)。正確選項把「好處和風險」換成了 opposing views，原文沒有這兩個字。(A) 以偏概全：第 2 段確實介紹了 safe fear 這個概念，可是那只是第一個好處，不是全篇的寫法；(C) 對的一半是文章確實談看恐怖片對人的影響，錯的一半是作者沒有把看恐怖片當成一個問題，去分析它的成因和後果；(D) 無中生有：第 1 段說每個人的喜好不同，可是文章沒有提出任何化解爭議的步驟。
+到互動練習作答這一篇 → 看原文與解析
+91 指考第 53 題（答對率 50%）
+This passage is written mainly to ______.
+(A) compare
+(B) tell a sad story
+(C) amuse the readers
+(D) report a scientific discovery
+第一句 Both … but with very different consequences 就宣告要比較，接著用 on the other hand、In contrast to 一路對照冰屋和帳篷，最後一句點出差別，所以是 (A)。(C) 以偏概全：印第安人抖到毯子晃動的描寫確實有趣，可是那只是對照當中的一個細節；(B) 也看錯了那個細節的用意：印第安人整夜發抖，是用來說明帳篷不保暖，不是一個悲傷的故事；(D) 無中生有：文章沒有報導任何新的研究發現。
+到互動練習作答這一篇 → 看原文與解析
+91 指考第 52 題（答對率 31%）
+From the passage, it can be inferred that ______.
+(A) to enter an Eskimo house, one had to go through a long tunnel
+(B) the Eskimo igloo had better insulation than the Indian tepee
+(C) the Plains Indians enjoyed living in their shelters in winter days
+(D) there was a small chimney in every Indian tepee to release the smoke from the fire
+最後一句說兩者的差別在隔熱：冰屋的牆密不透風，帳篷卻讓大量空氣進來；再加上冰屋裡熱到要喝冰水，帳篷裡的人卻整夜發抖，可以推知冰屋的隔熱比較好，所以是 (B)。(D) 張冠李戴：屋子中央有小煙囪的是冰屋，選項把煙囪安到帳篷上，上面 T 圖裡「煙囪」那一列帳篷那一格是空的；(A) 無中生有：原文說入口小小的、像隧道（a small tunnel-like entrance），選項卻說要穿過一條長隧道；(C) 說反了：印第安人冬天在帳篷裡冷得整夜發抖。
+到互動練習作答這一篇 → 看原文與解析
+98 指考參考試卷（95 課綱）第 42 題
+What makes the chameleons and anoles different animals?
+(A) The food they eat.
+(B) Their ability to change color.
+(C) Their popularity as pets.
+(D) The number of eggs they lay.
+題目問的是兩者不同的地方。文章前半先寫共同點（they do have much in common），後半才用 whereas 和分號對照差別：分布的地方不同，一次產的卵數也不同，變色龍一次產 2 到 40 個，綠變色蜥只產一個，所以是 (D)。另外三個選項都把共同點說成差別：(A) 兩者都主要吃昆蟲；(C) 兩者都是熱門的寵物；(B) 兩者變色的能力確實有強弱之分，可是原文用 Both can change color 把變色寫成共同點，而且正是這個共同點讓兩者都成了熱門寵物。上面的文氏圖裡，這三項都在中間重疊的部分。
+到互動練習作答這一篇 → 看原文與解析
+95 學測第 56 題（答對率 44%）
+According to the passage, which of the following is TRUE for bilingual people?
+(A) Those who spoke different languages used the same part of Wernicke’s area.
+(B) Those who spoke different languages always used the same part of Broca’s area.
+(C) Those who spoke the same language never used Broca’s area and Wernicke’s area.
+(D) Those who spoke different languages always used different parts of Wernicke’s area.
+這一篇比較從小學第二語言和長大才學的兩組雙語者，看他們大腦的兩個語言區。第 2 段說兩組人不論說哪一種語言，用的都是 Wernicke 區的同一個部位，可是 Broca 區的用法不同（But how they used Broca’s area was different），所以是 (A)。(D) 張冠李戴：用法不同的是 Broca 區，選項把 different 安到 Wernicke 區；(B) 以偏概全：只有小時候學第二語言的人，兩種語言用的是 Broca 區的同一個部位，選項用 always 說成所有雙語者都是這樣；(C) 說反了：兩組人都用到這兩個語言區。
+到互動練習作答這一篇 → 看原文與解析
+專練這一類本題庫有 17 篇歸在比較對比，也可以到篇目一覽瀏覽。
+分類Classification
+依某個標準把主題分成幾類，再逐類說明。
+這種文章在做什麼
+分類文依一個標準，把一個主題分成幾類，再一類一類說明。關鍵在分類標準：同一個主題，標準不同，分出來的類別也就不同。例如 108 學測〈北美原住民的圖騰柱〉依擺放的位置和立柱的場合，把圖騰柱分成迎賓柱、屋柱、紀念柱、墓葬柱和羞辱柱。本題庫 8 篇的題材還有醫學的三個分支、幽默的三種類型、壓力的三個來源、車輛撞擊測試的種類等。
+怎麼辨識
+宣告要分類的句子：can be grouped into（可以分成）、classified into（歸為）、divided into（分為）、There are three kinds of …（有三種…），後面常接 categories、types、kinds、branches 這類字詞。例如 The totem pole can be grouped into specific categories, depending on its location and the occasion for which it was carved.——depending on（依照）後面就是分類標準。
+逐類介紹的標記：One is …、A second kind、The third kind，或直接拿各類的名稱當段落開頭，例如 Welcome poles …、Memorial poles …。醫學那一篇開頭就是 There are three branches of medicine. One is called “doctor medicine” …
+同一類裡的兩項也會比較異同：Mortuary poles were also raised to honor the dead, but they differed from memorial poles …（墓葬柱也是為了紀念死者而立，但和紀念柱不同的是……），also 說相同的地方，but、differ from 說不同的地方。
+段落安排：第 1 段介紹主題，接著宣告分成幾類、依什麼標準分類；中間一段講一類（或一段講兩類），最後一段收尾。
+怎麼驗證
+先找出分類標準，再畫成下面的樹狀圖：最上面寫主題，下一層寫分類標準，再下一層是各個類別。如果每一類都是依同一個標準分出來，類別之間不重疊，就是分類。
+和列舉怎麼分：兩者都是一項一項並列。分類的各項是依同一個標準分出來的類別，作者通常先說「分成幾類」；列舉的各項只是同一個主題的幾個面向或理由，沒有一個共同的分類標準。
+和比較對比怎麼分：分類文也會比較同一類裡的兩項，例如紀念柱和墓葬柱，可是全篇的目的是介紹各類，不是從頭到尾對照兩樣東西。
+一篇文章用了兩種方式：95 學測〈茶的歷史與分類〉第 1 段照時間寫茶從中國傳到日本、歐洲、印度的經過，第 2、3 段才分類，而且用了兩個標準：第 2 段依製作方式分成紅茶、綠茶、烏龍茶，第 3 段依品種分成中國種、阿薩姆種、柬埔寨種。全篇大部分在講分類，本題庫歸在分類；讀的時候要分清楚每一段用的是哪一個標準。
+樹狀圖：用 108 學測〈北美原住民的圖騰柱〉畫成。第 5 段收尾，說雕刻圖騰柱的技藝流傳至今。英文取自原文，中文是本題庫加上的解釋。
+考卷上怎麼考
+大考直接問「這幾段怎麼組織」，答案就是分類；也會先把類別列出來，要你替每一段找出它屬於哪一類。分類文的主旨題，答案常是「介紹某個主題的幾種類型」。
+108 學測第 46 題（答對率 49%）
+How is the information about totem poles organized in Paragraphs 2 to 4?
+(A) In order of importance.
+(B) In order of time.
+(C) By cause and effect.
+(D) By classification.
+第 2 段一開頭就說圖騰柱可以分成幾類（can be grouped into specific categories），接著第 2 到 4 段一類一類介紹，所以是 (D)。(C) 對的一半是文章確實說了各種柱子為什麼而立，例如迎接訪客、紀念死者；錯的一半是這些是各類的用途，作者並沒有拿一件事當原因、推出另一件事。(A) 無中生有：文章沒有比較哪一種比較重要。
+到互動練習作答這一篇 → 看原文與解析
+94 指考第 54 題（答對率 49%）
+The most appropriate category for the above paragraph is ______.
+(A) religious factors
+(B) economic issues
+(C) geographical factors
+(D) political/legal issues
+這一篇第 1 段先列出六類問題（文化、經濟、地理、政治／法律、宗教、科技），要讀者替後面每一段歸類，第 54 到 56 題分別放在第 2 到 4 段後面。第 2 段說印度要可口可樂公開祕密配方，否則就得離開，可口可樂重返印度之後，政治運動人士（political activists）又不斷騷擾、干預，一件是法律、一件是政治，合起來是 (D)。(B) 張冠李戴：經濟問題是下一段的內容。
+第 55 題（答對率 55%）答案是 economic issues，關鍵字是 economic development、buying power；誘答選項 technological issues 對的一半是第 3 段確實提到基礎建設（infrastructure），錯的一半是基礎建設在這裡是衡量經濟發展的指標。第 56 題（答對率 62%）答案是 cultural factors，關鍵在 the French are more bound by family ties；誘答選項 geographical factors 對的一半是第 4 段確實說同一個國家裡也有差異，錯的一半是兩種觀眾差在語言和價值觀，不在地理位置。
+到互動練習作答這一篇 → 看原文與解析
+92 學測第 51 題（答對率 51%）
+The author’s primary purpose in this passage is to ______.
+(A) describe different types of medicine
+(B) argue for the importance of medicine in health care
+(C) show the crucial role religion plays in medical treatments
+(D) compare the educational background of three different types of patients
+第一句 There are three branches of medicine 就宣告了分類，後面依序介紹醫生醫學、民俗醫學和信仰治療，所以是 (A)。(C) 以偏概全：宗教只出現在第三類信仰治療，不是全文的目的；(D) 張冠李戴：文章提到教育程度不高的是民俗療法的施行者，不是病人。
+到互動練習作答這一篇 → 看原文與解析
+專練這一類本題庫有 8 篇歸在分類，也可以到篇目一覽瀏覽。
+定義Definition
+說明一個名詞或概念是什麼、有哪些特徵。
+這種文章在做什麼
+定義文整篇圍繞一個名詞或概念：先說它是什麼、屬於哪一類，再依序交代它從哪裡來、有什麼特徵、怎麼判斷、能怎麼用。本題庫 6 篇定義文當中，有一半介紹的是讀者不熟悉的新名詞，例如注意力不足過動症（AD/HD）、六標準差（Six Sigma）、光照上網（Li-Fi），其他三篇談的是哲學、民間故事和催眠。
+怎麼辨識
+下定義的句型：X is a/an … 加上 that、which 子句，前半說它屬於哪一類，後半說它和同類的東西哪裡不同。例如 AD/HD is a neurological disorder which stems not from the home environment, but from biological and genetic causes.（注意力不足過動症是一種神經系統疾病，起因不是家庭環境，而是生理和遺傳。）
+引出解釋的字詞：means（意思是）、refers to（指的是）、is called（叫做）、in other words（換句話說），還有破折號。例如民間故事那一篇寫 tall tales—stories of unbelievable events told with perfect seriousness，接著又說 A tall tale, in other words, is a story in which the truth has been exaggerated.，破折號後面和 in other words 後面，都在解釋前面的名詞。
+先說它不是什麼：not A but B、is often misunderstood as … But …。例如 Philosophy is not a subject but an activity.（哲學不是一門學科，而是一種活動。）催眠那一篇也是先說一般人把催眠誤解成像睡著一樣，再用 But 說出它其實是高度專注的狀態。
+全名和簡稱：AD/HD (Attention Deficit/Hyperactivity Disorder)、Li-Fi, or Light Fidelity，括號或逗號加 or，都在交代這個名詞的全名。Li-Fi 那一篇用 This is the idea behind Li-Fi 把前一句的構想和名詞接起來，107 指考第 41 題就問這個 This 指的是什麼。
+段落安排：開頭先下定義，或先講一件事情引起興趣，下一段再下定義；後面各段依序回答「為什麼會這樣、有什麼特徵、怎麼判斷、能怎麼用」。
+怎麼驗證
+依序拿四個問題問這篇文章：它是什麼？為什麼會這樣（原因或由來）？有什麼特徵或證據？可以怎麼做、怎麼用？如果各段大致一段回答一個問題，而且都圍繞同一個名詞，就是定義。
+和列舉怎麼分：介紹一樣新東西的文章，如果各段只是並列它的幾個面向，例如一種食物的來源、營養和吃法，任兩段對調照樣通，本題庫歸在列舉。定義文的各段有先後順序：要先知道它是什麼，後面的原因、判斷方法才看得懂。
+一篇文章混用兩種方式：104 指考〈六標準差管理〉第 1、2 段說明六標準差是什麼、關鍵在哪裡，第 3、4 段改照時間寫它的發展：1986 年、A few years later、1995 年、By 2000。全篇圍繞「六標準差是什麼」，本題庫歸在定義；可是第 42 題只問最後兩段，答案就是照時間順序（見下方「考卷上怎麼考」）。也就是說，判斷全篇時看最上層的組織方式，作答時要看題目問的是哪幾段。
+概念圖：用 96 指考〈注意力不足過動症〉畫成，開場在最上方，下面各格由左到右、由上到下照段落先後排列。英文取自原文，中文是本題庫加上的解釋。
+考卷上怎麼考
+定義文最直接的問法是「X 是什麼」。另外，定義句前後常有 not A but B 這類先排除、再肯定的寫法，後半各段又有先後之分，這兩處都是錯誤選項下手的地方。
+104 指考第 40 題（答對率 65%）
+According to the passage, what is “Six Sigma”?
+(A) A digital device to speed up production processes.
+(B) A near-perfect process in business communication.
+(C) A statistical term that measures a company’s budgets and profits.
+(D) A quality measure that detects problems to improve products and services.
+答案把第 1 段的定義換了說法：原文說六標準差幫助公司提供近乎完美的產品和服務，做法是找出瑕疵、消除問題。(C) 張冠李戴：原文說 sigma 這個字是統計名詞，衡量流程離完美還差多遠，選項卻把它安到整套方法上，又改成衡量預算和利潤；(B) 張冠李戴：近乎完美的是產品和服務，不是商業溝通。
+到互動練習作答這一篇 → 看原文與解析
+108 指考第 40 題（答對率 64%）
+How does the author begin the passage?
+(A) By giving a definition.
+(B) By mentioning an incident.
+(C) By providing statistics.
+(D) By comparing people’s responses.
+定義文不一定一開頭就下定義。這一篇先講 Spiegel 醫師 1972 年動完手術，沒有用止痛藥，而是替自己催眠，所以是 (B)。(A) 對的一半是這篇確實有下定義，錯的一半是定義在第 2 段，不在開頭。
+到互動練習作答這一篇 → 看原文與解析
+96 指考第 50 題（答對率 63%）
+What is the cause of AD/HD?
+(A) Gene problem.
+(B) Academic pressure.
+(C) Illness in childhood.
+(D) Inappropriate home environment.
+答案來自定義句 stems not from the home environment, but from biological and genetic causes。(D) 照抄 home environment，可是 not … but … 已經把家庭環境排除，選項說反了；(C) 照抄 childhood，原文說症狀通常在幼年出現，說的是出現的時間，不是原因。
+到互動練習作答這一篇 → 看原文與解析
+96 指考第 52 題（答對率 43%）
+What is the first thing to do if your child is suspected of AD/HD?
+(A) Report it to the school.
+(B) Consult a professional.
+(C) Wait until the child grows up.
+(D) Send the child to a special school.
+題目問的是「懷疑」的時候第一件事做什麼。第 3 段說懷疑孩子有 AD/HD，一定要請專業人員評估，所以是 (B)。(A) 照抄第 4 段的 school，可是那是確診以後（Once your child is diagnosed）的事情，順序不對。
+到互動練習作答這一篇 → 看原文與解析
+104 指考第 42 題（答對率 52%）
+How are the author’s ideas developed in the last two paragraphs?
+(A) By definition.
+(B) By comparison.
+(C) In time order.
+(D) In space order.
+題目只問最後兩段，第 3、4 段依序是 1986 年、A few years later、1995 年、By 2000，所以是 (C)。(A) 對的一半是這篇確實在下定義，錯的一半是下定義的是第 1 段，不是最後兩段。
+到互動練習作答這一篇 → 看原文與解析
+專練這一類本題庫有 6 篇歸在定義，也可以到篇目一覽瀏覽。
+描寫Descriptive
+描繪一個景物或對象的樣貌與細節。
+這種文章在做什麼
+描寫文像用文字畫一幅畫：作者把看到、聽到、感覺到的細節一一寫出來，讓讀者在腦中看見那個景物。文章不是在講道理，也不是在交代一件事情怎麼發生，重點是「那個景象是什麼樣子」。本題庫只有一篇歸在這一類，是 89 學測〈詩歌：水仙花〉（Daffodils）。這首詩是英國浪漫主義詩人華茲華斯（William Wordsworth）的 I Wandered Lonely as a Cloud，寫的是他在英格蘭湖區的湖岸看見一大片水仙花，是英詩名篇，也是英文系學生必讀的詩。全詩四節，考題只取前兩節；英文詩每一節（stanza）在本題庫算一段。
+怎麼辨識
+表示位置的介系詞，帶著讀者的視線在景物裡移動：beside（在…旁邊）、beneath（在…下面）、along（沿著）、above（在…上方）。描寫常照空間順序安排，例如由遠到近、由上到下、由外到內。
+描寫感官的字詞，寫出顏色、形狀、聲音、動作：golden（金黃色的）、twinkle（閃爍）、flutter（隨風飄動）。
+比喻：as、like 把眼前的東西比成另一樣東西，例如 Continuous as the stars that shine（像閃爍的星星一樣連綿不斷）。把花寫成會跳舞、會搖頭，是擬人的寫法。
+段落安排：沒有一組轉折詞把文章分成幾個論點，每一段都在替同一個畫面補上細節。
+怎麼驗證
+把文章裡的細節填進下面的網狀圖：中間寫描寫的對象，四周寫「在哪裡、有多少、什麼樣子、怎麼動、像什麼」。要是大部分的句子都填得進去，這一篇就是描寫。
+和時序發展怎麼分：〈詩歌：水仙花〉第 1 段有表示時間的 When all at once（忽然間），可是它只交代詩人看見花的那一刻，後面的句子都在寫那一片花的樣子，時間一直停在那一刻。如果各段照時間寫出一件又一件事情，那就是時序發展。
+和列舉怎麼分：列舉文也是一格一格並列，可是各格是同一個主題的不同面向，例如一種食物的來源、營養和吃法，作者是在說明；描寫的各格都是同一個畫面的細節，作者是要讓讀者看見。
+網狀圖：用 89 學測〈詩歌：水仙花〉畫成。英文取自原詩，中文是本題庫加上的解釋。
+考卷上怎麼考
+大考沒有直接問描寫文怎麼組織的題目。〈詩歌：水仙花〉的兩題考的是讀懂畫面。這兩題的錯誤選項都是一半對、一半錯：用到的字確實出現在詩裡，大多是比喻和擬人的字，錯在接上去的意思。
+89 學測第 48 題
+Where was the poet?
+(A) In a garden.
+(B) In a dance hall.
+(C) In the countryside.
+(D) In a space ship.
+答案要從 vales and hills、beside the lake、along the margin of a bay 這些表示位置的字，看出詩人在野外。(B) 張冠李戴：詩裡確實有跳舞（dancing），可是跳舞的是隨風搖動的水仙花，詩人不在舞廳；(D) 把比喻當真：詩裡確實有銀河（the Milky Way），可是銀河只用來比喻花連綿不斷，詩人不在太空。
+到互動練習作答這一篇 → 看原文與解析
+89 學測第 49 題
+Which of the following is most likely true about the poet?
+(A) He was a great dancer.
+(B) He liked to be close to Nature.
+(C) He enjoyed the company of people.
+(D) He was a very lonely person.
+(D) 以偏概全：詩人那時確實獨自一人（lonely as a cloud），可是一時的情形不能說成「他是個很孤單的人」；(C) 張冠李戴：詩裡確實有一大群（a crowd），可是那一大群是水仙花，不是人。考題沒有收的後兩節，寫詩人日後獨處時想起這片水仙，心裡就充滿喜悅，更看得出他親近自然、也不以獨處為苦。
+到互動練習作答這一篇 → 看原文與解析
+讀描寫文要先分清楚哪些字寫的是實際的景物、哪些是比喻：比喻的字不能照字面當真。
+專練這一類本題庫有 1 篇歸在描寫，也可以到篇目一覽瀏覽。
+新聞報導News Report
+新聞報導有一套固定的寫法，叫做倒金字塔：最重要的事情寫在第一段，越往後越次要。這套寫法和組織方式是兩回事，一篇新聞照樣歸在前面九類的其中一類。
+這種文章在做什麼
+大考有不少文章取材自英文報紙或新聞網站，報導一件剛發生的事情或一項新發現。新聞的寫法叫「倒金字塔」：第一段叫「導言」（英文是 lead，也寫成 lede），用一兩句話交代最重要的事實，也就是誰、做了什麼事情、什麼時候、在哪裡，有時再加上為什麼、怎麼做，英文合稱 5W1H。導言之後，各段照重要性一路往下排，先補上細節和當事人的說法，再交代背景，最後一段是最次要的資訊。
+這種寫法和電報有關：早期用電報傳稿，訊號隨時可能中斷，記者就把最重要的事情放在最前面；報紙版面不夠時，編輯也只要從最後一段往上刪，留下來的部分還是一則完整的新聞（普渡大學線上寫作中心 Purdue OWL）。所以讀新聞，第一段最重要：導言讀懂了，就知道整篇在報導什麼。
+倒金字塔排的是重要性的先後，不是段落之間的關係，所以本題庫沒有把新聞另外列成一類組織方式。一篇新聞的導言之後，各段怎麼安排，還是照前面九類來判斷。換句話說，「這一篇是不是新聞」和「這一篇是哪一種組織方式」，是兩個不同的問題。
+怎麼辨識
+導言裡最近的時間：Last week、on Wednesday、On December 26, 2003。新聞報導的是剛發生的事情，所以第一段常寫出確切的日子，例如 96 學測〈時尚界的「無皮草」運動〉第一句 Last week Jay McCarroll and The HSUS (The Humane Society of the United States) made a bold fur-free statement on the runway（上週，Jay McCarroll 和美國人道協會在伸展台上發表了大膽的「不用皮草」聲明），一句話就交代了誰、什麼時候、在哪裡、做了什麼事情。
+消息從哪裡來：said、told、reported、announced、according to。記者要交代消息的來源，例如 105 指考〈大型貓科動物起源的新發現〉第一句的 paleontologists reported on Wednesday（古生物學家星期三發表）、98 學測參考試卷〈人類動物園計畫〉的 A zoo in America has announced（美國一家動物園宣布）。
+直接引述：加上引號，原原本本寫出當事人說的話。記者通常不在報導裡直接寫自己的意見，看法多半透過受訪者的話說出來，例如〈時尚界的「無皮草」運動〉第 3 段整段都是美國人道協會副會長說的話。
+段落短：一段常只有一兩句。92 指考〈麥可·傑克森的育兒爭議〉六段裡，有四段只有一句。
+段落安排：第一段是導言，最後一段是最次要的細節，常是附帶的說明或後續消息。
+怎麼驗證
+從最後一段開始，一段一段往上蓋住，每蓋一段就問：剩下的部分還是一則完整的新聞嗎？〈大型貓科動物起源的新發現〉蓋掉第 7 段新物種的命名、第 6 段起源與擴散的推論，甚至只留下第 1 段，讀者還是知道發生了什麼事情：古生物學家發表新發現，大型貓科動物起源於中亞，不是一般認為的非洲。這就是倒金字塔。
+其他組織方式就不一樣了。時序發展的故事少了最後一段，就沒有結局；問題解決的文章少了後半，就只剩問題、沒有辦法。倒金字塔的新聞少了最後幾段，少掉的只是細節。
+和組織方式怎麼分：新聞是寫法，組織方式看的是導言之後各段之間的關係，兩者要分開判斷。〈大型貓科動物起源的新發現〉導言之後，各段分別交代化石的年代、過去的爭議、學者的說法、發現的經過、推論和命名，一段一個面向，本題庫歸在列舉；〈時尚界的「無皮草」運動〉第 2 段說 McCarroll 拒絕皮草有充分的理由（McCarroll has good reasons for rejecting fur.），本題庫歸在因果關係；94 學測〈伊朗巴姆古城的地震與重建〉第 2 段說明為什麼災情這麼嚴重（One reason the earthquake caused such damage was that），本題庫也歸在因果關係。這幾篇讀的時候先抓導言，再照前面各類的方法判斷組織方式。
+倒金字塔：用 105 指考〈大型貓科動物起源的新發現〉畫成，上面寬、下面窄，表示越上面越重要。第 1 段導言就交代了誰發表了什麼新發現，越往下越次要；版面不夠時，從最下面往上刪，整則新聞仍然完整。英文取自原文，中文是本題庫加上的解釋。
+考卷上怎麼考
+大考很少直接問新聞怎麼組織，常問的是「這篇文章最可能出自哪裡」「作者寫這篇文章的目的是什麼」。選項裡出現 newspaper、news report、To report on 的時候，回頭看第一段是不是導言：有最近的時間、有消息來源、一兩句就交代了整件事情，多半就是新聞。錯誤選項常拿文章裡的一段當成全篇，例如把背景說明當成歷史課本、把最後一段的細節當成文章的目的。
+94 學測第 45 題（答對率 48%）
+This passage is most likely taken from a(n) ______.
+(A) newspaper
+(B) history textbook
+(C) book review
+(D) magazine on international trade
+第 1 段就是導言：一開頭寫出日期和地點（On December 26, 2003、Bam, a historic city in Iran），接著寫至少 25,000 人死亡、還有好幾千人無家可歸；最後一段報導救援物資星期天（on Sunday）運抵，並引述精神領袖誓言重建。這是報導一場剛發生的災難的寫法，所以是 (A)。(B) 對的一半是第 3、4 段確實寫到兩千年的古堡和絲路的歷史，錯的一半是那只是說明巴姆有多珍貴的背景，以偏概全；(D) 以偏概全：絲路貿易站只在第 4 段帶到；(C) 無中生有：文章沒有評論任何一本書。
+到互動練習作答這一篇 → 看原文與解析
+92 指考第 50 題（答對率 73%）
+This passage is most likely taken from a ______.
+(A) personal letter
+(B) travel brochure
+(C) research paper
+(D) newspaper report
+第 1 段一句話就交代了誰（麥可·傑克森）、做了什麼事情（帶孩子去動物園，孩子臉上蓋著鮮豔的面紗）、引起什麼反應（provoked new concerns，引起外界對孩子的擔憂）；後面五段都很短，依序補上地點是柏林動物園、隨行人員的說法（Jackson’s aides said）、24 小時前另一起事件，最後才是檢察官的回應。這是新聞報導的寫法，所以是 (D)。(B) 對的一半是文章確實寫到動物園，錯的一半是動物園只是事情發生的地點，文章沒有介紹任何景點；(A) 無中生有：文章沒有寫信的人和收信的人；(C) 無中生有：文章沒有研究方法，也沒有數據。
+到互動練習作答這一篇 → 看原文與解析
+105 指考第 43 題（答對率 71%）
+What is the purpose of this passage?
+(A) To promote wildlife conservation.
+(B) To report on a new finding in paleontology.
+(C) To introduce a new animal species.
+(D) To compare the family trees of pantherine felids.
+導言的 paleontologists reported on Wednesday 已經點出這是報導古生物學家發表的新發現，所以是 (B)。(C) 對的一半是第 7 段確實替這種動物命名，錯的一半是命名放在最後一段，正是倒金字塔裡最次要的資訊，把它當成寫作目的是以偏概全；(D) 對的一半是第 5 段確實提到用 DNA 資料建立家族譜系（family tree），錯的一半是那是研究方法，文章沒有比較不同的譜系，無中生有；(A) 無中生有：全文沒有談到保育。
+到互動練習作答這一篇 → 看原文與解析
+Purdue Online Writing Lab. The Inverted Pyramid Structure. Purdue OWL
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

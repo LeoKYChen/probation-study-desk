@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g94-22-2/index.html
+Author: staresto-create ZZSH
+Title: 94 年學測克漏字第22題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 94 年學測 ／ 第22題
+94 年學測 克漏字 第22題
+字彙選義線索：句內答對率 54%
+答對率 54%：當年每 100 位考生，有 54 位答對。
+The picture 22 have been used in Canada for the last four years.
+(A)symbols
+(B)warnings
+(C)commercials
+(D)decorations
+答案：(B) warnings
+題目編號：G94_22_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+The picture warnings（圖片警示）作為複合名詞主詞，have been used（過去四年來一直被使用）呼應複數動詞；symbols／commercials／decorations 都不符合前文一直在講「警示圖片」的語境。
+深入解析
+你可能會這樣想
+The picture ___ 這個位置很容易被讀成「圖片的某某」，四個名詞塞進去都通順，只好用猜的。其實本篇後段就把答案寫出來給你看了。
+怎麼判斷
+兩個名詞並排時，前面那個當形容詞用，後面那個才是真正在講的東西（picture warnings ＝ 用圖片做的警示）。四個選項都是複數名詞，都與 have been used 相配，形態上分不出高下，可見這一格考的是語意，只能往上下文找。決定性的一句在同一篇後段：At the moment EU tobacco manufacturers only have to put written health warnings on cigarette packets（目前只被要求放文字的健康警語）——written（文字的）對 picture（圖片的），共用同一個名詞 warnings，全篇就是在對比「文字警語」與「圖片警語」。再回頭看前一句，reminders in large print that smokers die younger（以大字提醒吸菸者較早死）也是同一件事的同義說法。這一題的鑑別度 58，分的正是有沒有把這兩處線索讀進來。
+誘答選項
+symbols（符號）：菸盒上放的是照片，不是符號，而且符號不會有「駭人」的效果。commercials（電視廣告）：方向完全相反，本篇要的是勸人別抽菸，不是替菸商打廣告。decorations（裝飾）：菸盒上印受損的肺不是為了好看。
+常考字詞與句型
+warn sb of／about sth（警告某人某事）、warn sb (not) to V（警告某人（不要）做某事）、a health warning（健康警語）、a warning label（警示標籤）、a warning sign（警示標誌）、without warning（毫無預警地）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+European politicians are trying to get the UK Government to make cigarette companies print photos on the packets. These photos will show 21 smoking damages your health. The shocking pictures include images of smoke-damaged lungs and teeth, with reminders in large print that smokers die younger.
+The picture 22 have been used in Canada for the last four years. It has been very successful and has led to a 44% 23 in smokers wanting to kick the habit. At the moment EU tobacco manufacturers only have to put written health warnings on cigarette packets 24 the dangers of smoking.
+The aim of the campaign is to remind people of the damage the deadly weed does to their body. It is believed that this would be to the best interest of all people, 25 teens who might be tempted to start smoking. These dreadful photos may change the impression among teenagers that smoking is cool and sexy.
+中譯：歐洲多國政治人物正試圖推動英國政府要求菸商在菸盒上印製警示照片，這些照片將展示吸菸如何危害健康。這些駭人的圖片包括因吸菸受損的肺部與牙齒影像，並以大字體標示提醒：吸菸者往往較早死亡。這種警示照片在加拿大已經使用了四年，成效相當顯著，讓想戒菸的吸菸者比例增加了 44%。目前歐盟只要求菸草製造商在菸盒上以文字警語提醒吸菸的危害。這項活動的目的，是要提醒人們吸菸這種致命惡習對身體造成的傷害，人們相信這將符合所有人的最大利益，尤其是那些可能受誘惑而開始吸菸的青少年。這些駭人的照片，或許能改變青少年心中「吸菸很酷、很性感」的既有印象。
+📋 內容大意
+European politicians want the UK Government to require cigarette companies to print photographs on packets showing the damage smoking does to health.
+The pictures show damaged lungs and teeth, with large print reminding smokers they die younger. Canada has used them for four years, and 44% more smokers want to quit.
+EU makers now print only written notices. The campaign hopes the photos will remind everyone, above all teenagers, that smoking is not cool.
+← 第21題回到94 年學測第23題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

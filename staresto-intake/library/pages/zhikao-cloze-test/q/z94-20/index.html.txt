@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z94-20/index.html
+Author: staresto-create ZZSH
+Title: 94 年指考克漏字第20題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 94 年指考 ／ 第20題
+94 年指考 克漏字 第20題
+字彙選義線索：句內答對率 47%
+答對率 47%：當年每 100 位考生，有 47 位答對。
+__19__ by the multitude of information systems requiring complicated access, Berners-Lee fashioned a universal one that made information readily 20 .
+(A)available
+(B)consistent
+(C)important
+(D)unforgettable
+答案：(A) available
+題目編號：Z94_20（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】make + O + C，made information readily available 表示「使資訊容易取得」，呼應前文「設計一個統一系統」的目的。consistent（一致的）、important（重要的）、unforgettable（難忘的）都不符合「讓資訊容易存取」的語境。
+深入解析
+你可能會這樣想
+四個選項都是形容詞，都能接在 readily 後面，你會憑中文挑一個。
+怎麼判斷
+答對率不到五成，鑑別度高達 58。先看空格前後：Berners-Lee fashioned a universal one that made information readily ______（他打造出一套通用的系統，讓資訊變得______）。同一句的前半說，當時各種資訊系統要存取都得繞一大圈——他要解決的正是「拿不到、不好拿」這個問題，所以他做出來的系統要讓資訊變得容易取得，那就是 available（可取得的、可使用的）。填進去讀成 made information readily available。
+誘答選項
+consistent（一致的）講的是前後不矛盾；important（重要的）是在評價價值，但資訊的重要性不是這套系統造成的；unforgettable（難忘的）與取得的難易完全無關。三個都是形容詞，形態吻合，容易被順手選走。
+常考字詞與句型
+be available to sb（可供某人使用）、availability（可取得性）、accessible（容易接近或取得的）、complicated access（存取起來很麻煩）、fashion（動詞：打造、製作）、a multitude of（大量的、許多的）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：94學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Today, with a couple of clicks, you can go anywhere in the world without leaving your computer. So it should come as little 16 that the Internet has headlined the top 25 innovations of the past quarter century, according to a panel of technology leaders assembled to promote inventiveness.
+In creating the list, the group 17 twenty-five non-medically related technological innovations that have become widely used since 1980. These innovations are readily recognizable by most Americans, have had a direct impact on our everyday lives, and may also dramatically affect our lives 18.
+The top innovation, the Web, was created by British software consultant Tim Berners-Lee. 19 by the multitude of information systems requiring complicated access, Berners-Lee fashioned a universal one that made information readily 20. He created HTML (hypertext markup language) and its rule of usage (HTTP, hypertext transfer protocol). In 1991 he unveiled the World Wide Web. Today, this No. 1 invention has become so commonplace that it is almost taken for granted.
+中譯：如今，只要動動滑鼠、點幾下，你就能不離開電腦、去到世界任何角落。因此，根據一群受邀來推動創新的科技領袖所組成的專家小組指出，網際網路在過去 25 年來最重要的 25 項創新中名列榜首，這其實一點也不令人意外。在制定這份清單時，該小組從自 1980 年以來已被廣泛使用、與醫學無關的科技創新中，挑選出 25 項。這些創新對大多數美國人來說相當熟悉，已對我們的日常生活產生直接影響，未來也可能將持續大幅影響我們的生活。這份清單的第一名——全球資訊網，是由英國軟體顧問提姆．柏內茲—李所發明的。由於對當時各種需要複雜存取方式的資訊系統感到十分苦惱，柏內茲—李於是打造出一套通用系統，讓資訊得以輕易取得。他發明了 HTML（超文本標記語言）及其使用規則 HTTP（超文本傳輸協定）。1991 年，他正式發表了全球資訊網。如今，這項排名第一的發明已經變得如此普及，以至於人們幾乎將它視為理所當然。
+📋 內容大意
+Technology leaders ranked the Internet first among 25 innovations of the past quarter century.
+The list covered non-medical inventions since 1980 that reshaped ordinary American life.
+Tim Berners-Lee built a universal system with HTML and HTTP, unveiling the Web in 1991.
+← 第19題回到94 年指考第21題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

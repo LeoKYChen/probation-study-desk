@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z103-19/index.html
+Author: staresto-create ZZSH
+Title: 103 年指考克漏字第19題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 103 年指考 ／ 第19題
+103 年指考 克漏字 第19題
+字彙選義線索：句內答對率 84%
+答對率 84%：當年每 100 位考生，有 84 位答對。
+The chimps make and use tools and have mother-child relationships very 19 to those of humans.
+(A)casual
+(B)similar
+(C)direct
+(D)grateful
+答案：(B) similar
+題目編號：Z103_19（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+similar to those of humans（與人類的相似）表示黑猩猩的親子關係與人類非常相似；casual（隨意的／非正式的）、direct（直接的）、grateful（感激的）都不符合 similar to 的字詞搭配語意。
+深入解析
+你可能會這樣想
+四個選項都是形容詞，都能擺在 very 後面，你會直接比中文哪一個讀起來順。
+怎麼判斷
+這一格靠空格後面那個介系詞就定得下來。空格後是 to those of humans，先問哪一個形容詞固定接 to 表示「與……相比」——是 similar，be similar to 是成組的說法。再看 those 指的是誰：它代替前面的 mother-child relationships，免得整組名詞再講一次，所以 those of humans 就是「人類的親子關係」。整句讀成黑猩猩的親子關係與人類的非常相似，也正好呼應前一句 shows a clear link between humans and the rest of the animal kingdom（顯示人類與其他動物之間有明顯的關聯）。
+誘答選項
+casual（隨性的、非正式的）與 direct（直接的）都不接 to 作比較；grateful（感激的）雖然也接 to，但 be grateful to sb 接的是人、講的是感謝，與「兩者相像」無關。三個都是形容詞，形態吻合，容易被順手選走。
+常考字詞與句型
+be similar to（與……相似）、be different from（與……不同）、those of + 名詞（代替前面提過的複數名詞，避免整組重講）、mother-child relationship（親子關係）、make and use tools（製造並使用工具）、be grateful to sb（感謝某人）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：103學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Hiding herself among the trees near a chimpanzee habitat, Elizabeth Lonsdorf is using her camera to explore mysteries of learning. The chimpanzee she records picks up a thin flat piece of grass and then digs out tiny insects from a hole. Dinner is 16 ! But how did the chimp develop this ingenious skill with tools? Do the chimp babies copy their parents in using tools? Do the mothers most skilled with tools have offspring who are also good at using tools? Here in Africa, Lonsdorf is conducting one of the world's longest wildlife studies, trying to discover how learning is transferred 17 generations.
+Lonsdorf has always been interested in animal learning and tool use, 18 the way young animals grow up and learn their way in the world. Her chimpanzee study shows a clear link between humans and the rest of the animal kingdom. The chimps make and use tools and have mother-child relationships very 19 to those of humans. Through observing chimpanzees' learning process, researchers hope to gain insight into what the development of our earliest ancestors 20 like.
+Lonsdorf hopes that by understanding the complexity of animal behavior, we can better appreciate and protect the diversity of life on this planet.
+中譯：伊麗莎白．隆斯多夫（Elizabeth Lonsdorf）躲藏在黑猩猩棲地附近的樹叢中，用相機探索學習的奧秘。她所拍攝的黑猩猩會撿起一片細長扁平的草，再從洞裡挖出小昆蟲——晚餐上桌了！但黑猩猩究竟是如何發展出這種使用工具的巧妙技能的呢？小黑猩猩是否會模仿父母使用工具？工具運用能力較強的母猩猩，牠們的後代是否也比較擅長使用工具？在非洲，隆斯多夫正進行世界上為時最久的野生動物研究之一，試圖找出學習是如何代代相傳的。
+隆斯多夫一直對動物學習與工具使用深感興趣，尤其是幼小動物如何成長並學習在世界上生存的方式。她的黑猩猩研究顯示人類與其他動物界之間存在明顯關聯：黑猩猩會製造並使用工具，其母子關係也與人類的母子關係十分相似。透過觀察黑猩猩的學習歷程，研究人員希望能藉此了解人類最早的祖先可能是怎麼發展的。
+隆斯多夫希望，透過理解動物行為的複雜性，我們能更加珍惜並保護這個星球上生命的多樣性。
+📋 內容大意
+Elizabeth Lonsdorf films chimpanzees using grass stems to fish out insects, asking how such skills are learned and handed down.
+Her long African study links humans with other animals: chimps make tools and their mother-child bonds resemble ours.
+Understanding how chimps learn may illuminate our earliest ancestors and help us protect the diversity of life.
+← 第18題回到103 年指考第20題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

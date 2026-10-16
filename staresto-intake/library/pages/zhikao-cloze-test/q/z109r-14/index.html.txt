@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z109r-14/index.html
+Author: staresto-create ZZSH
+Title: 109 年指考補考克漏字第14題詳解（慣用語／片語）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 109 年指考補考 ／ 第14題
+109 年指考補考 克漏字 第14題
+慣用語／片語線索：句內
+...we are essentially 14 the whole set of names in that group, which includes all our beloved family members.
+(A)making up
+(B)catching on
+(C)skipping off
+(D)flipping through
+答案：(D) flipping through
+題目編號：Z109R_14（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+flipping through the whole set of names（翻閱整組名字）表示大腦在尋找名字時，實際上是在瀏覽同一群組裡的所有名字；making up（捏造）、catching on（理解／流行）、skipping off（溜走）都不符合此處語意。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個都是兩個字組成的動詞片語，長得像，很容易憑眼熟挑；making up 因為前面出現過 mix up，看起來像同一掛的。
+怎麼判斷
+兩個條件一起把答案鎖死。第一，看空格後面的受詞：the whole set of names in that group（那一組名字的全部）。第二，看這一句開頭交代的目的：in order to find the name we are looking for（為了找出我們要的那個名字）。要在一整組東西裡找出其中一個，動作就是一頁一頁、一個一個快速翻過去——flip through 的本義正是快速翻閱（flip through a magazine 隨手翻雜誌），用到腦中的名單上就是把整組名字掃過一遍；空格前面是 are，所以填現在分詞 flipping through。受詞是「一整組」、目的是「找一個」，兩件事同時滿足的只有它。
+誘答選項
+make up 常見的意思是編造、組成、化妝、和好，沒有一個接得上「在一組名字裡找出一個」。catch on 是「聽懂、流行起來」，不及物，後面不能直接接受詞。skip off 是「匆匆離開、溜走」（She skipped off without saying goodbye. 她沒道別就溜走了），後面不接受詞；skip 單獨使用時常見的是 skip a page（跳過一頁）、skip class（翹課），而且「跳過整組名字」與「要在裡面找一個」語意矛盾。
+常考字詞與句型
+flip through（快速翻閱、翻過一遍）、make up（編造、組成）、catch on（聽懂、流行起來）、in order to V（為了……）、the whole set of（一整組的）、beloved（心愛的、摯愛的）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+"Anne! Jo! I mean, Max!" Mothers often mix up their children's names, but studies show that moms are not the only ones who make this mistake. 11 name phenomenon turns out to be very common. Almost everyone sometimes mixes up the names of their family and friends.
+The phenomenon is called a "cognitive glitch" by researchers in the field of cognitive science. It is not caused by a bad memory or by aging processes that affect brain functioning. It is simply a result of the way our brain 12 those we love.
+When our brain is attempting to retrieve a name so that we can say it, it is likely that another name in the same group will come to our lips 13 the one we meant to say. That is because in order to find the name we are looking for, we are essentially 14 the whole set of names in that group, which includes all our beloved family members. Scientists also report that the category 15 the person belongs (family, close friends, etc.) is far more influential in causing a mix-up than any phonetic similarity between names. Names that sound alike do not usually trigger the mix-up.
+Isn't it great to know that when you call others by the wrong name, it is evidence of your love for them all?
+中譯：「安！喬！我是說，麥克斯！」母親常常會叫錯孩子的名字，但研究顯示，會犯這種錯誤的並不只有媽媽們。這種「名字混淆」的現象其實相當普遍，幾乎每個人都曾經叫錯過家人或朋友的名字。
+認知科學領域的研究者將這種現象稱為「認知小失誤」（cognitive glitch）。這不是記憶力不好，也不是老化影響腦部功能所導致，而單純是我們大腦分類所愛之人的方式所造成的結果。
+當大腦試圖提取一個名字以便說出口時，同一個「群組」裡的另一個名字很可能會先脫口而出，取代原本想說的那個名字。這是因為，為了找出我們要找的那個名字，大腦實際上是在「翻找」該群組裡的整套名字，而這個群組正好包含了我們所有摯愛的家人。科學家也指出，某人所屬的「類別」（例如家人、密友等）遠比姓名發音是否相似，更容易造成叫錯名字的情況；發音相似的名字反而通常不太會引發混淆。
+這樣想來是不是很棒呢？當你叫錯別人的名字時，其實正證明了你有多愛他們。
+📋 內容大意
+Mothers often call one child by another's name, and studies show almost everyone muddles the names of loved ones.
+Scientists call it a cognitive glitch, caused not by poor memory or aging but by how the brain sorts people.
+Fetching one name means searching a whole group, so a neighboring name slips out first.
+The group a person sits in matters more than any likeness in sound, so the error signals affection.
+← 第13題回到109 年指考補考第15題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

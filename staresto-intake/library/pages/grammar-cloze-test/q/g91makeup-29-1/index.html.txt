@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g91makeup-29-1/index.html
+Author: staresto-create ZZSH
+Title: 91 年學測補考克漏字第29題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 91 年學測補考 ／ 第29題
+91 年學測補考 克漏字 第29題
+字彙選義線索：句內
+Do the colleges allow you to participate in activities 29 will help you develop yourself intellectually and emotionally?
+(A)what
+(B)they
+(C)that
+(D)those
+答案：(C) that
+題目編號：G91補考_29_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+關係代名詞 that 引導形容詞子句修飾 activities，作子句主詞；what（本身已包含先行詞，不能再接先行詞使用）、they（代名詞，不是關係代名詞不能這樣連接子句）、those（指示代名詞，同樣不能這樣連接子句）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項有兩個是關係詞、兩個是代名詞，如果沒數清楚空格後面缺什麼，很容易挑到 they 或 those。
+怎麼判斷
+先看空格前面：activities ___ will help you develop yourself intellectually and emotionally。先行詞是 activities（活動），空格後面接的是 will help you ...——一個沒有主詞的動詞。既然缺主詞，就要一個能進去補位、同時又能把整串接到 activities 後面的字，那正是關係代名詞，填 that（也可以用 which）。這一格與 83 年第 17 題 →正好是一組對照，兩題把這個判斷方式補完整了：83 年第 17 題 →的子句成分已滿（ordinary people used umbrellas），所以不能用關係代名詞、要用不占成分的關係副詞 where；本題的子句缺主詞，所以非關係代名詞不可。先數子句缺什麼，再決定用關係代名詞還是關係副詞。
+誘答選項
+what：本身已經含有先行詞（相當於 the thing which），前面不能再有 activities 這個先行詞。they：一般代名詞，不能把兩個子句接起來；填進去會變成 activities they will help you ...，兩個句子中間沒有連接詞。those：指示代名詞，同樣不能引導子句。
+常考字詞與句型
+the activities that ...（……的那些活動）、the place where …（……的地方）、participate in activities（參與活動）、develop oneself（充實自己）、intellectually and emotionally（在智識與情感上）、allow sb to V（讓某人……）。其中 the place where … 這一組考過 5 個年度，83 年第 17 題 →、89 年第 25 題 →、98 年第 23 題 →、學測參考試卷第 22 題 →都出現過。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Now that you are planning to go to college, how can you select an ideal college for yourself? 21 its reputation or the test scores it requires for admission? In fact, it is not 22 simple as that. College education is far more complicated than 23 the reputation of a college or the test scores it requires. In addition to these two factors, you should also have 24 important information. Finding out which college suits you involves time and energy, but 25 more than those you might spend on buying a motorcycle or a computer.
+Here are some tips 26 choosing an ideal one from a number of colleges.
+Visit the websites of these colleges and find out which college has departments 27 courses that interest you or will help you prepare for your future career.
+Are the professors in the departments you plan to 28 into experts in their own fields?
+Do the colleges allow you to participate in activities 29 will help you develop yourself intellectually and emotionally?
+I hope the 30 advice is helpful to you in selecting the right college.
+中譯：既然你正計劃上大學，該如何為自己挑選一所理想的大學呢？是看學校的名聲，還是看入學所需的測驗成績？事實上，事情並沒有那麼簡單。大學教育遠比一所學校的名聲或入學所需的測驗成績複雜得多。除了這兩項因素之外，你還應該掌握其他重要資訊。找出適合自己的大學需要花費時間和精力，但不會比你花在買機車或電腦上的心力更多。以下是從眾多大學中挑選理想學校的幾個建議：一、瀏覽這些大學的網站，找出哪些學校的科系開設了你感興趣、或有助於你未來職涯發展的課程。二、你打算就讀的科系裡，教授是否都是各自領域的專家？三、這些學校是否讓你有機會參與有助於你智識與情感發展的活動？希望以上的建議，能幫助你選出真正適合自己的大學。
+📋 內容大意
+Choosing an ideal college requires more than reputation or the entrance test scores it demands.
+College education is complex, so students need more information. Finding a good fit takes time and energy, but hardly more than choosing a motorcycle or a computer.
+The writer suggests visiting college websites for departments whose courses match your interests or career plans. Check whether the professors are experts and whether the college offers useful activities.
+← 第28題回到91 年學測補考第30題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

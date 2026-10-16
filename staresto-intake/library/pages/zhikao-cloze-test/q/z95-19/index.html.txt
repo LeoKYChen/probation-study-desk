@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z95-19/index.html
+Author: staresto-create ZZSH
+Title: 95 年指考克漏字第19題詳解（連接詞／轉折詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 95 年指考 ／ 第19題
+95 年指考 克漏字 第19題
+連接詞／轉折詞線索：跨句答對率 56%
+答對率 56%：當年每 100 位考生，有 56 位答對。
+If you've ever seen the Sean Connery movie Medicine Man, __18__ the annual convention of wizards and witches will be familiar to you. 19 , get prepared for the overwhelming attack of wizards and witches here.
+(A)If any
+(B)If not
+(C)If ever
+(D)If only
+答案：(B) If not
+題目編號：Z95_19（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+承接前句「如果你看過那部電影，這個巫師大會你會覺得很熟悉」，這句是條件對比的另一半：「如果沒看過，就做好心理準備」，If not（如果沒有）呼應前面的 If you've ever seen。If any／If ever／If only 都不符合這種「前後條件對比」的邏輯。
+深入解析
+你可能會這樣想
+四個選項都是 If 加一個短短的字，形態一模一樣，你會憑中文挑一個。
+怎麼判斷
+線索一定要跨句才看得到。前一句是 If you've ever seen the Sean Connery movie Medicine Man, {18}...（如果你看過那部電影，……就會很熟悉）。空格這一句要講的是相反的那一半：那如果沒看過呢？英文不必把整個條件再說一次，用 If not 就好——它等於 If you haven't seen it，not 把前面那個條件整個否定掉。填進去讀成 If not, get prepared for the overwhelming attack of wizards and witches here（如果沒看過，那就準備好迎接這裡巫師與女巫的猛烈攻勢）。這是英文常見的省略：重複的部分不必再說一次。英文的簡答也是同一件事——Do you like it?—Yes, I do.（do 代替 like it）、Are you coming?—I'm afraid not.（not 代替 I'm not coming）。看到 If not、if any、if ever 這幾個短形，先問一句「它在代替前面哪一段」。
+誘答選項
+If any（如果有的話）用來限定數量，常接在名詞後面（Correct the mistakes, if any.）；If ever（如果真有的話）用來加強「幾乎不曾」（He seldom, if ever, complains.）；If only（要是……就好了）表示與事實相反的願望，後面通常配假設語氣。三個都是 If 加一個字的短形，形態吻合，容易被順手選走。
+常考字詞與句型
+if not（如果不是的話，代替前面否定掉的條件）、if any（如果有的話）、if ever（如果真有的話）、if only（要是……就好了）、I'm afraid not.（恐怕不行，not 代替整個否定句）、get prepared for（做好準備迎接）。
+線索範圍說明：If not 指前一句的條件（若沒看過那部電影）
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：95學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Every year Catemaco, a small town in the south of Mexico, hosts the Annual Witch Gathering. Healers and witch doctors converge on this beautiful lakeside town in March to make their yearly trade. 16 since pre-Hispanic times, Lake Catemaco has been a centre for alternative medicine and strange treatments. 17, the area's association with witchcraft dates back to Olmec times more than 2,000 years ago.
+If you've ever seen the Sean Connery movie Medicine Man, 18 the annual convention of wizards and witches will be familiar to you. 19, get prepared for the overwhelming attack of wizards and witches here.
+Most witch doctors are guaranteed to be charlatans, not real doctors, who 20 some quick money from tourists. Yet, don't be surprised if the occasional remedy offered is effective.
+中譯：墨西哥南部有座小鎮卡特馬科，每年都會舉辦一年一度的巫師聚會。每年三月，治療師與巫醫們都會齊聚這座風景優美的湖濱小鎮，進行他們一年一度的交易活動。自前西班牙殖民時期以來，卡特馬科湖一直是替代療法與各種奇特療法的中心。事實上，這個地區與巫術的淵源可追溯至兩千多年前的奧爾梅克文明時期。如果你曾看過史恩康納萊主演的電影《燃燒的天堂》，那麼你對這場一年一度的巫師聚會應該不會感到陌生。若你還沒看過，那就做好心理準備，迎接這裡鋪天蓋地而來的巫師與女巫吧。大多數巫醫其實都是招搖撞騙、不是真正的醫師，只是想從觀光客身上快速撈一筆錢。不過，若偶爾真的遇到有效的療法，也別太意外。
+📋 內容大意
+The Mexican town of Catemaco holds a yearly gathering of healers and witch doctors.
+The lake has drawn such practice since before the Spanish came, and far earlier still.
+Visitors meet a crowd of self-styled wizards, mostly frauds, though a remedy occasionally works.
+← 第18題回到95 年指考第20題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

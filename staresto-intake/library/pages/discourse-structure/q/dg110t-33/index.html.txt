@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dg110t-33/index.html
+Author: staresto-create ZZSH
+Title: 學測 110試辦 篇章結構 第33題詳解（掌握段落內語句的連貫性與一致性）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 學測 110試辦 ／ 第33題
+學測 110試辦 篇章結構 第33題
+選文：散盡家財的億萬富翁（Chuck Feeney）
+掌握段落內語句的連貫性與一致性線索：指示詞、同義呼應
+(A)However, Feeney never felt at ease with the lifestyle of the wealthy.然而，Feeney 對有錢人的生活方式始終不自在。
+(B)He encourages people to donate at least half their fortunes before death.他鼓勵大家在過世前至少捐出一半財產。
+(C)This is exactly what happened to “former” American billionaire Charles Feeney.這正是美國「前」億萬富翁 Charles Feeney 身上發生的事。
+(D)Such incredible secret generosity won him the title “James Bond of Philanthropy” from Forbes magazine.這樣驚人而低調的慷慨，為他贏得富比士雜誌「慈善界詹姆士龐德」的稱號。
+答案：(D) Such incredible secret generosity won him the title “James Bond of Philanthropy” from Forbes magazine.
+題目編號：Dg110t_33
+解析
+先看空格的位置。 它在第三段的最後一句，要把整段收掉。
+再看空格前面。 前一句說：接下來數十年間，他透過基金會匿名（anonymously）捐出超過八十億美元給世界各地的慈善團體、大學、人權運動與基金會。
+D 的 Such incredible secret generosity 指的正是這件事。這裡要注意兩個字的對應：incredible（驚人的）對應八十億這個數字，secret（不為人知的）對應 anonymously。兩個字沒有一個和前一句重複，但意思一個接一個。
+如果你選了 B（他鼓勵大家在過世前至少捐出一半財產。）：B 也是捐款，字面上最靠近。但這一段從頭到尾講的是他自己捐，B 講的是勸別人捐，主角換了；B 也沒有回應「匿名」這個關鍵。
+【下次先看這裡】選項開頭是 Such + 名詞，先回頭找前一句有沒有實際發生過的事可以對應。注意對應的不一定是同一個字，意思接得上就算。
+線索與數據
+線索種類指示詞、同義呼應
+線索在哪前一句 Such ... generosity；secret ↔ anonymously
+答對率本場考試不公布統計
+本篇題型4選4・刪去法可收尾
+展開本題所在的整篇選文與中文翻譯
+本篇共 4 格、4選4；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+Generous billionaires are not hard to come by, but it is definitely a challenge to find a billionaire who spends all his fortune on charity just to end up broke. 31
+Feeney, who grew up in a poor neighborhood of New Jersey, is a genius at finding business opportunities. Since childhood, he would take any job to make a few cents for his family—jobs like distributing umbrellas in summer and selling Christmas cards in winter. In his college years at Cornell University, he sold home-made sandwiches to other students and is still remembered there as the Sandwich Man. Then, in the 1960s, Feeney established airport retailer Duty Free Shoppers (DFS), which helped him reach his billionaire status by the 1980s. 32 He lived modestly, and often pondered what to do with all the money he made.
+轉折：把全部財產交出去
+Influenced by his upbringing, Feeney decided to give away all his money to those in need in his lifetime. In 1984, the then 53-year-old Feeney signed over everything—his DFS shares and the various businesses and properties he had acquired worldwide—to Atlantic Philanthropies, a charity foundation he established. In the following decades, Feeney donated through the organization more than $8 billion anonymously, to charities, universities, human rights campaigns, and foundations worldwide. 33Such incredible secret generosity won him the title “James Bond of Philanthropy” from Forbes magazine.
+Pioneering the idea of “Giving while Living,” Feeney is a role model for many famous billionaires today, including Bill Gates and Warren Buffet. 34 In September 2020, Feeney’s go-for-broke mission was completed, and he now lives happily with his wife on a pension in a modest apartment in San Francisco.
+中譯
+慷慨的億萬富翁並不難找，但要找到一個把全部財產都用在慈善上、最後讓自己身無分文的億萬富翁，那絕對是件難事。31
+Feeney 在紐澤西一個貧窮的社區長大，天生擅長發現商機。從小他什麼工作都做，只為替家裡多賺幾分錢——夏天發雨傘、冬天賣聖誕卡之類的。在康乃爾大學念書那幾年，他做三明治賣給同學，直到今天那裡的人還記得他這位「三明治人」。後來在一九六○年代，Feeney 創辦了機場零售通路 DFS（免稅商店），靠著它在一九八○年代躋身億萬富翁之列。32 他生活簡樸，也常常思考賺來的這些錢該怎麼辦。
+受到成長背景的影響，Feeney 決定在有生之年把所有的錢都捐給需要的人。一九八四年，當時五十三歲的他，把手上的一切——DFS 股份，以及他在世界各地取得的各種事業與不動產——全部移轉給他自己成立的慈善基金會「大西洋慈善事業」。接下來的數十年間，Feeney 透過這個組織匿名捐出超過八十億美元，捐給世界各地的慈善機構、大學、人權運動和基金會。33
+Feeney 開創了「Giving while Living」（活著的時候就捐）這個觀念，是今天許多知名富豪的典範，包括比爾蓋茲和華倫巴菲特。34 二○二○年九月，Feeney 這場散盡家財的任務完成了，如今他和太太住在舊金山一間普通的公寓裡，靠退休金過著快樂的日子。
+← 第32題回到互動練習第34題 →
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

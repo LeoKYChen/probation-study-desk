@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/gref-28-3/index.html
+Author: staresto-create ZZSH
+Title: 學測參考試卷克漏字第28題詳解（分詞／動狀詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 學測參考試卷 ／ 第28題
+學測參考試卷 克漏字 第28題
+分詞／動狀詞線索：句內
+It boosts metabolism, thereby 28 the body to burn more calories.
+(A)cause
+(B)causing
+(C)to cause
+(D)having caused
+答案：(B) causing
+題目編號：GRef_28_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+現在分詞 causing 補充說明結果，「促進新陳代謝，進而使身體燃燒更多卡路里」，分詞構句表示伴隨的結果；cause（原形動詞，不能這樣單獨補充說明）、to cause（不定詞，不太符合這種伴隨結果的分詞構句）、having caused（完成式分詞，時態不合，這裡是同時發生的結果不是先前已完成的動作）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項是 cause 的四種形態，你會開始判斷主動被動、想分詞構句的意義主詞。其實空格前面那個 thereby 已經把形態決定了。
+怎麼判斷
+先看結構：It boosts metabolism, thereby ___ the body to burn more calories.（咖啡因促進新陳代謝，藉此使身體燃燒更多熱量。）句子已經有主要動詞 boosts，所以空格不可能再是一個限定動詞。關鍵在 thereby（藉此、從而）——它是副詞，慣用的接法是 thereby + 現在分詞，用來帶出前面那個動作所造成的結果，所以填 causing。同型的說法還有 thus causing、thereby making、thereby allowing。再看語意驗算：促進新陳代謝是原因，燃燒更多熱量是隨之而來的結果，現在分詞正是用來表達這種「隨之發生」的關係——87 年第 38 題 →的 encouraging the production of white blood cells 走的是同一條路（笑對免疫系統有益，隨之促進白血球生成）。順便把 cause 的句型記起來：cause sb／sth to V（使某人或某物做某事），本句的 cause the body to burn 正是這個用法。
+誘答選項
+cause：原形動詞，句子已經有 boosts，不能再放一個限定動詞。to cause：不定詞表目的，但燃燒熱量是新陳代謝加快之後自然發生的結果，不是「為了」燃燒熱量才加快代謝。having caused：完成分詞，表示動作發生在主要動詞之前，但這裡是先促進代謝、才燃燒熱量，時間順序剛好相反。
+常考字詞與句型
+thereby + V-ing（藉此、從而）、cause sb／sth to V（使……做……）、boost metabolism（促進新陳代謝）、burn calories（燃燒熱量）、thus（因此）、the main ingredient in（……的主要成分）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Tea and coffee contain caffeine, a substance that can make you active. 26 you do not feel fully engaged after you wake up in the morning, drinking coffee at breakfast can mean the 27 between a productive day and never arriving at work.
+Caffeine is also the main ingredient in many "diet pills." It boosts metabolism, thereby 28 the body to burn more calories. If you take a 29 to a different time zone, caffeine can help you overcome jet lag. Most hotels have coffee and tea service in the room for this very reason.
+Every individual handles caffeine differently. For some people, a single cup of coffee in the morning will make them feel nervous and 30 them up all night. Other people can down five cups and be perfectly calm.
+中譯：茶和咖啡都含有咖啡因，這種物質能讓人變得有活力。如果你早上起床後感覺還沒完全清醒，早餐時喝杯咖啡，可能就是「精神飽滿過完一天」跟「根本到不了辦公室」之間的關鍵差異。咖啡因也是許多「減肥藥」的主要成分，它能促進新陳代謝，進而讓身體燃燒更多卡路里。如果你要搭機前往不同時區，咖啡因也能幫助你克服時差。這正是為什麼大多數飯店房間裡都會提供咖啡與茶飲服務的原因。每個人對咖啡因的反應都不一樣：對某些人來說，早上喝一杯咖啡就會讓他們感到緊張、整晚睡不著；但也有些人可以連喝五杯，卻依然十分平靜。
+📋 內容大意
+Tea and coffee both contain caffeine, a substance that makes people alert.
+A morning cup can decide whether a day is productive. Caffeine is also the main ingredient of many diet pills, since it raises metabolism and helps the body burn more calories.
+Travelers use it against jet lag, which is why hotels provide coffee and tea. One cup leaves some people awake all night; others drink five and stay calm.
+← 第27題回到學測參考試卷第29題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

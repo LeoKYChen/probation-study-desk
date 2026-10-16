@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g88-26-2/index.html
+Author: staresto-create ZZSH
+Title: 88 年學測克漏字第26題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 88 年學測 ／ 第26題
+88 年學測 克漏字 第26題
+字彙選義線索：句內
+However, there are 26 to that generality.
+(A)situations
+(B)exceptions
+(C)perceptions
+(D)observations
+答案：(B) exceptions
+題目編號：G88_26_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】exceptions to 指「……的例外」，表示這個通則也有例外情況；situations to／perceptions to／observations to 都不是英文裡常見的字詞搭配。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是常見的名詞，中文意思差很遠，但如果只讀空格所在的這一句，會覺得「情況」「看法」「觀察」擺進去好像都通。這一格要往前看一個字、往後讀一句。
+怎麼判斷
+四個選項都是名詞，可見這一格考的是語意，那就看它跟哪個字對得起來。空格前面是 there are ___ to that generality（那個通則有……），generality 是「通則、一般性的說法」。與「通則」天生成對的字是「例外」——有通則就有例外，an exception to a rule 是英文裡固定的組合。再往後讀一句就完全確定了：For example, John Steinbeck is {27} to have been an excellent listener, yet he was hated by some of the people he wrote about.（舉例來說，史坦貝克是個極好的聆聽者，卻被他筆下的一些人所憎恨。）前面才說善於聆聽的人最受喜愛，這裡舉出一個被討厭的，這就是那個例外。提醒一句：空格後面那個 to 不能單獨拿來當線索，situation、perception、observation 這些字後面也接得了介系詞；真正定案的是「通則對例外」這一組語意，以及下一句給的實例。
+誘答選項
+situations（情況）：there are situations to that generality 不是通行的說法。perceptions（看法、認知）：講的是人怎麼看待事情，與「通則的例外」無關。observations（觀察、意見）：同樣接不上 generality。
+常考字詞與句型
+an exception to（……的例外）、with the exception of（除了……之外）、without exception（毫無例外）、a generality（通則）、no doubt（無疑）、be hated by（被……憎恨）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Most people like to talk, but few people like to listen. 21 listening well is a rare talent that everyone should treasure. Because they hear more, good listeners 22 to know more and to be more sensitive to what is going on around them than other people. In addition, good listeners are inclined to accept or tolerate 23 to judge and criticize. Therefore, they have 24 enemies than other people. 25 , they are probably the most loved of people.
+However, there are 26 to that generality. For example, John Steinbeck is 27 to have been an excellent listener, yet he was hated by some of the people he wrote about. No doubt his ability to listen contributed 28 his capacity to write. 29 , the results of his listening did not make him popular.
+Thus, 30 on what a good listener does, he may become either popular or disliked in his lifetime.
+中譯：大多數人喜歡說話，卻很少人喜歡聆聽。然而，善於聆聽是一項稀有的才能，每個人都應該珍惜。因為他們聽得更多，善於聆聽的人比其他人更了解周遭發生的事，也更敏銳。此外，善於聆聽的人傾向於接受或容忍，而不是急著評斷和批評。因此，他們的敵人比其他人少，事實上，他們可能是最受人喜愛的人。然而，這個通則也有例外。舉例來說，約翰·史坦貝克據說是一位出色的聆聽者，然而卻被他筆下描寫的一些人所憎恨。他的聆聽能力無疑對他的寫作能力有所貢獻，然而，他聆聽所得到的結果並沒有讓他受歡迎。因此，一個善於聆聽的人，這一生可能因此變得受歡迎，也可能因此招人厭惡，端看他怎麼運用所聽到的內容。
+📋 內容大意
+Talking is common, listening is rare, and good listeners notice more of what happens around them.
+They accept and tolerate more readily, judge and criticize less, and so they make few enemies and win wide affection.
+John Steinbeck is a counter-example: his gift as a listener fed his writing, but some people he wrote about hated him.
+← 第25題回到88 年學測第27題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

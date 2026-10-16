@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g114-17-2/index.html
+Author: staresto-create ZZSH
+Title: 114 年學測克漏字第17題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 114 年學測 ／ 第17題
+114 年學測 克漏字 第17題
+慣用語／片語線索：句內答對率 50%
+答對率 50%：當年每 100 位考生，有 50 位答對。
+Motion sickness occurs when the signals your brain receives from your eyes, ears, and body 17 .
+(A)are not regular
+(B)can hardly move
+(C)do not match
+(D)are rarely cued
+答案：(C) do not match
+題目編號：G114_17_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「當大腦從眼睛、耳朵、身體接收到的訊號『不一致』時」，do not match 符合，呼應後文解釋大腦收到矛盾訊息造成的困惑；are not regular（不規律）、can hardly move（幾乎不能動）、are rarely cued（很少被提示）都不合。
+深入解析
+你可能會這樣想
+match 你最熟的是名詞「比賽、火柴」，當動詞時想到的是「配對」，所以 signals do not match 讀起來會怪：訊號怎麼配對？這裡的 match 是不及物動詞，意思是「相符、一致」——兩樣東西擺在一起對不起來，就是 not match。
+怎麼判斷
+答案就寫在下一句：when these parts send conflicting information（當這些部位送出互相矛盾的訊息）。conflicting 正是 do not match 的同義改寫。再往下 One part... detects that your body is moving, but the other parts {18}，一邊偵測到在動、一邊沒有，這就是「不一致」的具體說明。選項難以取捨時，往下一句找有沒有同義的說法，是克漏字最穩的做法。
+誘答選項
+are not regular（不規律）講的是頻率或週期，文章談的是內容互相矛盾，不是時間不規律；can hardly move（幾乎不能動）的主詞是 signals，訊號不會「動」；are rarely cued（很少被提示）語意生硬，文章也沒有提到訊號需要被提示。
+常考字詞與句型
+match（相符、一致）、match A with B（把 A 與 B 配對）、a good match（很相配）、conflicting information（互相矛盾的資訊）、send signals（發出訊號）、be in conflict with（與……衝突）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+If you have ever been sick to your stomach on a rocking boat or a bumpy car ride, you know the discomfort of motion sickness. It can 16 suddenly, progressing from a feeling of uneasiness to a cold sweat. Soon, it can lead to dizziness, nausea, and vomiting.
+Motion sickness occurs when the signals your brain receives from your eyes, ears, and body 17 . Your brain doesn't know whether you are stationary or moving when these parts send conflicting information: One part of your balance-sensing system detects that your body is moving, but the other parts 18 . Your brain's confused reaction makes you feel sick. You may experience the discomfort from the motion of cars, boats, or amusement park rides. You may also get sick from playing video games, or looking through a microscope.
+You can take some 19 to help avoid the discomfort. If you are traveling, reserve seats where motion is felt the least, such as the front row of a car or forward cars of a train. Looking out into the distance from the vehicle can help 20 . You can also take medicine before your ride to avoid or reduce nausea and vomiting.
+中譯：如果你曾在搖晃的船上或顛簸的車程中感到反胃想吐，你一定明白暈動症有多麼不舒服。它可能突然發作，從一開始隱約的不適感，逐漸演變成冒冷汗，接著可能引發頭暈、噁心和嘔吐。暈動症的發生，是因為大腦從眼睛、耳朵和身體所接收到的訊號彼此不一致——當這些身體部位傳來相互矛盾的資訊時，大腦便無法判斷你究竟是靜止不動，還是正在移動：你身體的其中一套平衡感應系統偵測到身體正在移動，但其他部位卻沒有偵測到同樣的訊息。大腦因此感到混亂，這種混亂的反應正是讓你感到不適的原因。你可能會因為搭乘汽車、船隻或遊樂園設施而感到暈眩不適，也可能因為玩電子遊戲，或透過顯微鏡觀察物體而感到不舒服。你可以採取一些預防措施來避免這種不適感——如果你正在旅行，可以預訂晃動感受最小的座位，例如汽車前座或火車前段的車廂。將視線望向車外遠處，也有助於緩解不適。你也可以在搭乘交通工具前先服藥，以預防或減輕噁心和嘔吐的症狀。
+📋 內容大意
+Motion sickness is familiar to anyone who has felt ill on a rocking boat or bumpy car ride. It starts with unease and can end in vomiting.
+It arises when the signals from your eyes, ears and body conflict. One part of the balance system senses movement, the rest sense none, and the brain is confused.
+Video games and microscopes can bring it on too. Travelers can sit where motion is least, look far into the distance, or take medicine before the journey.
+← 第16題回到114 年學測第18題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

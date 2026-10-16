@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g97-23-2/index.html
+Author: staresto-create ZZSH
+Title: 97 年學測克漏字第23題詳解（時態／語態）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 97 年學測 ／ 第23題
+97 年學測 克漏字 第23題
+時態／語態線索：句內答對率 61%
+答對率 61%：當年每 100 位考生，有 61 位答對。
+If he sold the stone, he thought, he 23 enough money for the rest of his life.
+(A)had
+(B)had had
+(C)would have
+(D)would have had
+答案：(C) would have
+題目編號：G97_23_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+這一句是 he thought 帶出的轉述：他當時想的是 If I sell the stone, I will have enough money，放進過去的敘述裡，if 子句與主要子句各往前推一格，成了 If he sold ..., he would have ...，主要子句用 would + 原形動詞，表示「如果他賣了這顆寶石，他這輩子就衣食無缺了」；had（單純過去式，變成在敘述已成事實的「他有足夠的錢」）、had had（過去完成式，句中沒有更早的參照點）、would have had（配的是 If he had sold 那種與過去事實相反的假設，與這裡的 If he sold 對不齊）都不合。
+深入解析
+你可能會這樣想
+看到 would have，你可能會反射性把它接成 would have + 過去分詞，覺得後面應該再來一個過去分詞，於是改挑 would have had。這裡要看清楚一件事：would have enough money 的 have 不是完成式的助動詞，它就是動詞本身，意思是「擁有」，後面接的是名詞 enough money，不是過去分詞。
+怎麼判斷
+先看 if 子句：If he sold the stone 用的是過去式。這一句夾著 he thought，是旅人當時心裡的想法：他想的是 If I sell the stone, I will have enough money.（如果我把寶石賣掉，錢就夠了。）放進過去的敘述裡，if 子句與主要子句各往前推一格，就成了 If he sold the stone, he would have enough money。還原驗算：把 he thought 拿掉，時態推回原來的 sell 與 will have，讀起來完全通順。轉述時 will 變 would 的最短版本是 He said he would come.（他說他會來。）主要子句是 would + 原形，本題的原形就是 have（擁有）。這一格鑑別度只有 31，偏低，連高分群考生也會失手，原因有兩個：一是 he thought 插在 if 子句與主要子句中間，把句子切斷，讀的時候容易以為時態要再往過去推一層；二是 would have 這兩個字連在一起，長得太像 would have + 過去分詞的前半截，對這個組合越敏感的人，反而越容易多想一步。110 年第 25 題 →與 114 年第 11 題 →考的都是 would have + 過去分詞，可以拿來與本題對照：那兩題後面接的是貨真價實的過去分詞，本題接的是名詞。
+誘答選項
+had：把主要子句寫成單純的過去式，變成在敘述事實「他有足夠的錢」，但他還沒賣掉寶石，不合事實。had had：過去完成式，需要一個更早的過去參照點，句中沒有。would have had：這是與過去事實相反的假設，要配的 if 子句必須是 If he had sold the stone（過去完成式）；本題的 if 子句是 If he sold（過去式），兩邊搭不起來。判斷方法很單純：if 子句往前推一格，主要子句就得往前推一格，兩邊要對齊。
+常考字詞與句型
+If + 過去式, 主詞 + would + 原形動詞（與現在事實相反的假設；在過去的敘述裡轉述 If + 現在式, 主詞 + will + 原形動詞 的條件句時，也是這個形態，本題就是）、If + had + 過去分詞, 主詞 + would have + 過去分詞（與過去事實相反的假設）、for the rest of one's life（一輩子、餘生）、have enough money（有足夠的錢）、sell sth（賣掉某物）、come back to find sb（回來找某人）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+A wise woman traveling in the mountains found a precious stone. The next day she met another traveler who was hungry. The wise woman generously opened her bag to 21 her food with the traveler. When the hungry traveler saw the precious stone, he asked her to give it to him. The woman did 22 without hesitation. The traveler left, rejoicing.
+If he sold the stone, he thought, he 23 enough money for the rest of his life. But in a few days he came back to find the woman. When he found her, he said, "I know how valuable this stone is, but I'm giving it back to you, 24 that you can give me something even more precious. You gave me the stone without asking for anything 25 . Please teach me what you have in your heart that makes you so generous."
+中譯：一位聰慧的女子在山中旅行時，撿到了一顆珍貴的寶石。隔天，她遇見了另一位飢餓的旅人。這位聰慧的女子慷慨地打開她的袋子，與這位旅人分享食物。當這位飢餓的旅人看到那顆珍貴的寶石時，他要求她把寶石送給他。這位女子毫不猶豫地照做了。旅人心滿意足地離開了。他心想，如果把這顆寶石賣掉，他這輩子就衣食無缺了。但幾天後，他回來找這位女子。找到她時，他說：「我知道這顆寶石有多麼珍貴，但我要把它還給你，希望你能給我一樣更珍貴的東西。你把這顆寶石送給我，卻沒有要求任何回報。請教教我，你心裡是懷著什麼樣的胸懷，才能如此慷慨。」
+📋 內容大意
+A wise traveling woman generously gave away a precious stone she found to a hungry traveler without hesitation.（敘事文）
+The traveler returned the valuable stone, wanting instead to learn the source of the wise woman's extraordinary generosity.（敘事文）
+← 第22題回到97 年學測第24題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

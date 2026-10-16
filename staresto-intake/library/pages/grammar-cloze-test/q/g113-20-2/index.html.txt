@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g113-20-2/index.html
+Author: staresto-create ZZSH
+Title: 113 年學測克漏字第20題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 113 年學測 ／ 第20題
+113 年學測 克漏字 第20題
+字彙選義線索：跨句答對率 22%
+答對率 22%：當年每 100 位考生，有 22 位答對。
+However, they cannot 20 the personal attention coming from the distinctive tap of a pea shooter.
+(A)forget
+(B)change
+(C)match
+(D)regret
+答案：(C) match
+題目編號：G113_20_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+match 在此是「比得上、匹敵」，本句指現代鬧鐘再方便，也比不上敲窗人帶來的那份個人化關懷；forget（忘記）、regret（後悔）的主詞都必須是人，鬧鐘與手機做不到這些動作；change（改變）的主詞可以是東西，但「改變那份關懷」語意不合。
+重點：match 當及物動詞是「比得上、敵得過」，多半用在否定——cannot match、be no match for。
+延伸閱讀：match 當動詞的「比得上」 ↗
+深入解析
+你可能會這樣想
+match 你記得的大概是名詞「火柴、比賽」與動詞「配對」（match the words with the pictures）。同樣是只記到第一個意思就停了：它當及物動詞還有「比得上、匹敵」的意思，而且多半用在否定句——cannot match（比不上）、be no match for（不是…的對手）。這個意思在簡單的句子裡就看得到：（下棋沒人比得過他）、The champion has finally met his match.（那位冠軍終於遇到對手了。）反過來的說法是 surpass、outdo、beat（勝過）。
+怎麼判斷
+這一格必須把前後兩句合起來讀：前一句用 surely simpler and more convenient 先讓一步，承認新科技的優點；本句以 However 轉折，說它們 cannot ___ the personal attention（比不上那份專屬的關照）。有讓步才有轉折，缺了前一句就判不出方向，屬於跨句題。整篇從敲窗人這個行業寫到它被鬧鐘取代，最後這句是作者的評價，情感方向是惋惜。
+誘答選項
+forget 與 regret 的主詞都必須是有意識的人——鬧鐘不會忘記、不會後悔；change 的主詞可以是東西（劍橋例句 The weather in the hills can change very quickly.），但「改變那份專屬的關照」語意不合，本句要的是「比得上」。看到主詞是無生命的東西，先檢查動詞需不需要「意識」，是很快的篩選法。一句記完：Nothing beats the beef noodles people line up for; no chain restaurant can match them.（沒什麼比得上讓大家排隊的那碗牛肉麵；連鎖餐廳哪一家都比不上。）〔情境取材自 107 學測作文題：排隊嘗鮮〕
+常考字詞與句型
+cannot match（比不上）、be no match for（不是…的對手）、meet one's match（遇到對手）、match A with B（把 A 與 B 配對）、a perfect match（絕配）、live up to（不辜負）、in time for（趕得及…）。
+線索範圍說明：前一句 alarm clocks are surely simpler and more convenient 建立讓步對比
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The modern worker rolls out of bed, groans, and turns off an alarm clock before reluctantly getting up for the day's work. But how did people get to work on time before alarm clocks were widely used? During the second Industrial Age, people toiled at unusual hours in mines or factories and often had to get up for work early in the morning. They 16 alarm clocks because adjustable alarms had been invented by the mid-19th century. But the new device was still relatively expensive and unreliable. British workers thus relied on a human alarm clock known as a “knocker-up.”
+17 sticks or pea shooters, the human alarms would tour the streets, tap on windows, or blast them with dried peas, trying to wake paying customers in time for work. Whether they wielded rods or pea shooters, knockers-up became 18 throughout the United Kingdom. Every morning, these people, often older in age, were seen in big streets and small alleys, waking up their customers professionally. They usually would not leave people's houses until they were sure their customers were awake.
+While the practice continued in some parts of the country until the 1970s, it 19 as alarm clocks became more widespread and affordable. Today, beeping alarm clocks and smartphones that play morning music are surely simpler and more convenient. However, they cannot 20 the personal attention coming from the distinctive tap of a pea shooter.
+中譯：現代上班族從床上爬起，呻吟一聲，關掉鬧鐘，才心不甘情不願地起身準備上班。但在鬧鐘還未普及的年代，人們是怎麼準時上班的呢？在第二次工業時代，人們常在礦坑或工廠裡從事作息時間特殊的工作，經常需要一大清早就起床上工。他們不能仰賴鬧鐘，因為雖然可調式鬧鐘早在 19 世紀中葉就已發明，但這項新裝置當時價格昂貴、也不太可靠。因此，英國的工人們仰賴一種被稱為「敲窗人」的真人鬧鐘。這些「人肉鬧鐘」拿著長棍或豆子噴槍，在街上巡迴，敲打窗戶，或用曬乾的豆子射擊窗戶，試圖及時叫醒付費客戶起床上班。無論是揮舞長棍還是使用豆子噴槍，「敲窗人」在整個英國都成為一種常見的身影。每天清晨，這些通常年紀較長的人，會出現在大街小巷之中，專業地叫醒他們的客戶，而且通常會等到確定客戶真的醒來後才會離開。這項行業在英國部分地區一直延續到 1970 年代，但隨著鬧鐘越來越普及、價格也越來越親民，這項傳統便逐漸走入歷史。如今，嗶嗶作響的鬧鐘和能播放晨間音樂的智慧型手機，無疑更簡單、更便利，但它們終究無法取代那種來自豆子噴槍獨特敲擊聲背後，人與人之間的親切關懷。
+📋 內容大意
+Before affordable alarm clocks, British workers depended on human 'knockers-up' who tapped on windows to wake paying customers for early shifts.
+The trade faded as alarm clocks became cheap and widespread, though the writer notes that modern devices lack the personal touch it offered.
+← 第19題回到113 年學測
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

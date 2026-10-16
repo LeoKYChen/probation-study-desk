@@ -1,0 +1,5135 @@
+[
+ {
+  "id": "z110",
+  "year": "110年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "方言與語言的分界（Dialect or Language?）",
+  "titleStatus": null,
+  "blankCount": 10,
+  "optionCount": 12,
+  "eliminationValid": false,
+  "unusedOptions": [
+   "C",
+   "L"
+  ],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "recognized",
+   "B": "determine",
+   "C": "sound",
+   "D": "trouble",
+   "E": "comprehension",
+   "F": "ground",
+   "G": "right",
+   "H": "converse",
+   "I": "similar",
+   "J": "prestigious",
+   "K": "distinguish",
+   "L": "particular"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": "【第一段】引言：粵語是方言還是語言？先丟出問題",
+    "segs": [
+     [
+      "Some people say that Cantonese is a dialect of Chinese. Others insist that it is a language in its own ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " . Who is correct? How do dialects differ from languages?",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】點出主旨：分界標準有兩種；標準一：社會政治面",
+    "segs": [
+     [
+      "Two kinds of criteria are used to ",
+      "gradient"
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " languages from dialects.",
+      "gradient"
+     ],
+     [
+      " The first are social and political: In this view, “languages” are typically written, official, and ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " , ",
+      null
+     ],
+     [
+      "whereas",
+      "trans"
+     ],
+     [
+      " “dialects” are mostly spoken, unofficial, and looked down upon. As a saying goes, “A language is a dialect with an army and a navy.” This implies that a powerful group of people like an army or a government can ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " which dialect is chosen as the official language of a state.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】標準二：語言學的互通性，以丹麥語與挪威語為例",
+    "segs": [
+     [
+      "Linguists have a different criterion: If two kinds of speech are so ",
+      "topic"
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " in grammar, vocabulary, and pronunciation that their speakers can understand each other, they are regarded as dialects of a single language.",
+      "topic"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "On the other hand",
+      "trans"
+     ],
+     [
+      ", if ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " is difficult or even impossible, they are different languages. On this ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " , Mexican Spanish and Argentine Spanish are dialects of the same language (Spanish). Speakers of these dialects normally have little ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " communicating with each other. Cantonese, ",
+      null
+     ],
+     [
+      "on the other hand",
+      "trans"
+     ],
+     [
+      ", is not considered a dialect of Chinese because speakers of the two languages can hardly ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " with each other. This criterion of mutual understandability, ",
+      null
+     ],
+     [
+      "though",
+      "trans"
+     ],
+     [
+      " objective, can annoy nationalists. ",
+      null
+     ],
+     [
+      "For example",
+      "trans"
+     ],
+     [
+      ", Danes and Norwegians have no difficulty understanding each other, making Danish and Norwegian ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " as dialects of the same language. ",
+      null
+     ],
+     [
+      "Yet",
+      "trans"
+     ],
+     [
+      ", few Danes or Norwegians would actually feel happy about this classification.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Two kinds of criteria are used to ___ languages from dialects.”",
+  "thesisExplain": "第一段用粵語當引子，連丟兩個問句；第二段第一句才把全文的架子搭起來——標準有兩種。中心思想在這裡，關鍵落在第 22 格。這一格後面接 languages from dialects，A from B 的結構把動詞限死，要填的是能與 from 搭配的那一個；另一個意思相近的選項不能這樣接，光比對中文意思分不出來。第二段兌現社會政治標準，第三段兌現語言學的互通性標準，收在丹麥語與挪威語這個讓民族主義者不太舒服的例子上。第 27 格的 on this ground（依這個標準）是本篇最值得記下來的片語。寫作上這是「先報架構、再逐項展開」的論說寫法。",
+  "macro": {
+   "structure": "綱領展開型 — 以粵語的爭議提問開場 → 綱領：標準有兩種(全文中心思想) → 標準一：社會政治面 → 標準二：語言學的互通性 → 收尾：丹麥語與挪威語的例子",
+   "transitions": "whereas（對比，兩者的社會地位）→ As a saying goes（引用，帶出那句名言）→ On the other hand（對比，互通有困難就算不同語言）→ though（讓步，客觀卻惹人不快）→ Yet（轉折，收在民族情感）",
+   "patterns": "論說文 (Argumentation) + 分類論述 (Classification)",
+   "outline": [
+    "1. 開場：粵語是漢語的方言，還是自成一種語言？",
+    "2. 綱領：語言與方言的分界，有兩套標準",
+    "3. 標準一：社會政治面——書寫的、官方的，相對於口說的、非官方的、被看輕的",
+    "4. 標準二：語言學的互通性——彼此聽得懂就算方言；丹麥語與挪威語即為一例"
+   ]
+  },
+  "zhTranslation": [
+   "有些人說，粵語是漢語的一種方言。另一些人則堅持，粵語本身就是一種語言。誰才是對的？方言和語言到底有什麼不同？",
+   "要把語言和方言區分開來，有兩種標準。第一種是社會與政治的：依這種看法，「語言」通常是書寫的、官方的、享有聲望的，而「方言」多半是口說的、非官方的，而且不被看重。有一句話說：「語言，就是有陸軍和海軍撐腰的方言。」這意味著，像軍隊或政府這樣有權力的一群人，可以決定哪一種方言被選為一個國家的官方語言。",
+   "語言學家則有不同的標準：如果兩種話在文法、詞彙與發音上相似到說話者彼此聽得懂，它們就被視為同一種語言的方言。反過來說，如果理解有困難、甚至根本不可能，它們就是不同的語言。依這個標準，墨西哥西班牙語和阿根廷西班牙語是同一種語言（西班牙語）的方言，說這兩種方言的人彼此溝通通常沒什麼障礙。至於粵語，則不被視為漢語的方言，因為這兩種語言的使用者幾乎無法交談。這種以互相理解為依據的標準雖然客觀，卻可能惹惱民族主義者。舉例來說，丹麥人和挪威人理解彼此毫無困難，這使得丹麥語和挪威語被認定為同一種語言的方言。然而，幾乎沒有哪個丹麥人或挪威人，會對這樣的歸類感到高興。"
+  ]
+ },
+ {
+  "id": "z109",
+  "year": "109年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "惡魔島鳥人的真實身世（The Birdman of Alcatraz）",
+  "titleStatus": null,
+  "blankCount": 10,
+  "optionCount": 12,
+  "eliminationValid": false,
+  "unusedOptions": [
+   "C",
+   "E"
+  ],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "keen",
+   "B": "breed",
+   "C": "release",
+   "D": "banned",
+   "E": "supportive",
+   "F": "imprisonment",
+   "G": "illness",
+   "H": "separated",
+   "I": "nickname",
+   "J": "effective",
+   "K": "pleaded",
+   "L": "privilege"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": "【第一段】其人與稱號：「惡魔島鳥人」其實名不副實",
+    "segs": [
+     [
+      "Robert Stroud (1890－1963) was an American prisoner who reared and sold birds and became an ornithologist while in prison. He became known as the “Birdman of Alcatraz.” ",
+      null
+     ],
+     [
+      "Despite",
+      "trans"
+     ],
+     [
+      " this ",
+      "gradient"
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " , he actually kept birds only at Leavenworth Prison, before he was transferred to Alcatraz.",
+      "gradient"
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】回溯：判處死刑、改判終身監禁、獨自服刑",
+    "segs": [
+     [
+      "Stroud is one of the most notorious criminals in American history.",
+      "topic"
+     ],
+     [
+      " He was convicted of first-degree murder and sentenced to death by hanging in 1916. His mother desperately ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " for his life. ",
+      null
+     ],
+     [
+      "Finally",
+      "trans"
+     ],
+     [
+      ", in 1920, President Woodrow Wilson changed his death sentence to life ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " without parole. ",
+      null
+     ],
+     [
+      "But because of",
+      "trans"
+     ],
+     [
+      " Stroud’s unpredictable and violent outbursts, the warden directed that Stroud be placed in a ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " unit to live out his sentence in total isolation.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】在 Leavenworth 監獄養鳥、著書的那段期間",
+    "segs": [
+     [
+      "While at Leavenworth (1912－1942), Stroud developed a ",
+      "topic"
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " interest in birds after finding an injured sparrow in the prison yard.",
+      "topic"
+     ],
+     [
+      " He was given a special right to ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " birds and maintain a lab inside his two prison cells. It was felt that this activity would allow for productive use of his time. ",
+      null
+     ],
+     [
+      "As a result of",
+      "trans"
+     ],
+     [
+      " this ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " , Stroud was able to author two books on canaries and their diseases. He had raised nearly 300 birds in his cells, carefully studying their habits and physiology. He even developed and marketed medicines for various kinds of bird ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " . ",
+      null
+     ],
+     [
+      "Although",
+      "trans"
+     ],
+     [
+      " it is widely debated whether the remedies he developed were ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " , Stroud was able to make scientific observations that would later benefit research on the canary species.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】結局：移送惡魔島後不准養鳥，手稿未能出版",
+    "segs": [
+     [
+      "In 1942, Stroud was transferred to Alcatraz.",
+      "topic"
+     ],
+     [
+      " He spent the next seventeen years there, ",
+      null
+     ],
+     [
+      "but",
+      "trans"
+     ],
+     [
+      " was not allowed to keep pets. While there, he wrote two more manuscripts, ",
+      null
+     ],
+     [
+      "but",
+      "trans"
+     ],
+     [
+      " these were never published because it was ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " by the prison authorities. In 1963, he died in a medical center in Missouri.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Despite this ___ , he actually kept birds only at Leavenworth Prison, before he was transferred to Alcatraz.”",
+  "thesisExplain": "「惡魔島鳥人」這個稱號其實名不副實——第一段最後這一句就是全文中心思想，關鍵落在第 21 格。這一格前面是 Despite this，this 指的是前一句剛提到的那個叫法，要填的名詞得能被 this 回指；只看句意去選「名聲」「事實」一類的字，跟前一句就接不起來。第二段倒回去交代他為什麼入獄，第三段才是養鳥與著書的那三十年，第四段點明他到了惡魔島反而不准養鳥。第 22 格的 plead for（懇求）與第 27 格的 privilege（特權）是本篇最值得記下來的兩個用法。寫作上這是「先破除誤解、再按時間補全」的人物寫法。",
+  "macro": {
+   "structure": "破除誤解型 — 介紹其人與那個叫法 → 點破：他養鳥的地方其實在移送之前(全文中心思想) → 回溯：死刑改判與獨自服刑 → 養鳥與著書的三十年 → 收尾：移送之後不准養鳥，手稿也未能出版",
+   "transitions": "Despite（讓步，點破稱呼與事實的落差）→ Finally（時間，帶出改判）→ But because of（因果，說明獨自服刑的理由）→ While at Leavenworth（時間背景）→ As a result of（因果，帶出著書）→ Although（讓步，療效有爭論）",
+   "patterns": "記敘文 (Narrative) + 人物側寫 (Profile)",
+   "outline": [
+    "1. 其人：美國囚犯，在獄中養鳥、賣鳥，後來成為鳥類學家",
+    "2. 點破：他養鳥的地方，其實是移送惡魔島之前的那一座監獄",
+    "3. 回溯：一九一六年判處死刑，一九二〇年改判終身不得假釋，並被要求獨自服刑",
+    "4. 成果與結局：牢房裡養了近三百隻鳥、寫成兩本書；移送之後不准再養，手稿未能出版"
+   ]
+  },
+  "zhTranslation": [
+   "Robert Stroud（1890－1963）是一名美國囚犯，他在獄中飼養並販售鳥類，還成了鳥類學家。他因此被稱為「惡魔島鳥人」。儘管有這個稱號，他其實只在 Leavenworth 監獄養過鳥，那是他被移送到惡魔島之前的事。",
+   "Stroud 是美國史上最惡名昭彰的罪犯之一。他在一九一六年被判一級謀殺罪，處以絞刑。他的母親拚了命為他的性命求情。最後，在一九二〇年，Woodrow Wilson 總統把他的死刑改判為終身監禁、不得假釋。但由於 Stroud 的情緒難以預測、又會暴力發作，典獄長下令把他關進隔離區，讓他在完全孤立的狀態下服完刑期。",
+   "在 Leavenworth 的那段期間（1912－1942），Stroud 在監獄中庭撿到一隻受傷的麻雀之後，對鳥類產生了濃厚的興趣。他獲得一項特別許可，可以繁殖鳥類，並在自己的兩間牢房裡經營一間實驗室。當時認為，這樣的活動能讓他的時間用得有意義。由於這項特權，Stroud 得以寫出兩本關於金絲雀及其疾病的書。他在牢房裡養了將近三百隻鳥，仔細研究牠們的習性與生理。他甚至研發並販售治療各種鳥類疾病的藥物。儘管他研發的療方是否有效廣受爭論，Stroud 確實做出了一些科學觀察，日後對金絲雀這個物種的研究有所助益。",
+   "一九四二年，Stroud 被移送到惡魔島。他在那裡度過接下來的十七年，卻不准飼養寵物。在惡魔島期間，他又寫了兩份手稿，但這些都未能出版，因為監獄當局不准。一九六三年，他在密蘇里州的一所醫療中心過世。"
+  ]
+ },
+ {
+  "id": "z109b",
+  "year": "109年補考",
+  "exam": "指考",
+  "examType": "補考",
+  "title": "氣泡布的誕生（The Invention of Bubble Wrap）",
+  "titleStatus": null,
+  "blankCount": 10,
+  "optionCount": 12,
+  "eliminationValid": false,
+  "unusedOptions": [
+   "B",
+   "C"
+  ],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "act",
+   "B": "follow",
+   "C": "managing",
+   "D": "disappointing",
+   "E": "protection",
+   "F": "dismiss",
+   "G": "delicate",
+   "H": "founded",
+   "I": "expanded",
+   "J": "accidental",
+   "K": "reduce",
+   "L": "addicted"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": "【第一段】引言：氣泡布取代報紙，發明的由來卻出乎意料",
+    "segs": [
+     [
+      "Bubble wrap, a sheet of thin plastic filled with air bubbles, is one of the most common packing materials. Before it was invented, people used balled-up newspaper to safeguard items during shipping. ",
+      null
+     ],
+     [
+      "But",
+      "trans"
+     ],
+     [
+      " it was messy and didn’t offer that much ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " . Bubble wrap solved these problems and was a “godsend” for the shipping industry. ",
+      null
+     ],
+     [
+      "However",
+      "trans"
+     ],
+     [
+      ", the invention of bubble wrap was actually quite ",
+      "thesis"
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " .",
+      "thesis"
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】由來：原本要做壁紙，結果失敗",
+    "segs": [
+     [
+      "Originally",
+      "trans"
+     ],
+     [
+      ", bubble wrap was created in the late 1950s by two engineers for use as a wallpaper that would appeal to the young postwar generation. They placed two pieces of plastic shower curtain through a heat-sealing machine to create the texture. ",
+      null
+     ],
+     [
+      "But",
+      "trans"
+     ],
+     [
+      " the result was ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " . What turned out was only a plastic sheet with trapped air bubbles in it, far from the material they had intended to produce.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】轉機：改當緩衝材料，IBM 帶動市場",
+    "segs": [
+     [
+      "However",
+      "trans"
+     ],
+     [
+      ", the inventors did not totally ",
+      "topic"
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " their failed product.",
+      "topic"
+     ],
+     [
+      " They found that their invention could have a different use. The air bubbles created excellent cushions to ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " shock, perfect for packaging and shipping fragile items. To market this invention, the two engineers ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " a company in 1960 and named their product Bubble Wrap. ",
+      null
+     ],
+     [
+      "Meanwhile",
+      "trans"
+     ],
+     [
+      ", IBM, the leading computer maker at the time, needed a safe way of packing their ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " electronic devices for transit. They found bubble wrap to be the answer to their problem. That opened the door for a lot of other businesses to start using bubble wrap. During the 1970s and 1980s, the company branched into creating more packing products. Bubble wrap has since evolved into different shapes, sizes, and thicknesses for ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " applications.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】延伸：捏氣泡成了紓壓的方法",
+    "segs": [
+     [
+      "Besides",
+      "trans"
+     ],
+     [
+      " using it for shipping, people find great joy in popping those air-filled pockets.",
+      "topic"
+     ],
+     [
+      " Some are even ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " to doing it—always needing to have just one more pop. Scientific research has found an explanation for this phenomenon: The simple ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " of popping helps to release muscle tension and take the mind off a stressful situation. From packing material to a therapeutic tool, bubble wrap has come a long way since its original purpose as wallpaper.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“However, the invention of bubble wrap was actually quite ___ .”",
+  "thesisExplain": "第一段先講氣泡布解決了什麼問題，最後一句一轉：它其實是意外的產物。全文中心思想在這裡，關鍵落在第 22 格。這一格前面是 quite、後面就收句，句內沒有結構線索可依靠，只能靠後面兩段回頭把它定義出來——本來要做壁紙，做出來的卻是一片夾著氣泡的塑膠膜，這正是這一格要的意思。第二段是失敗，第三段是轉用，第四段再加一層：連捏氣泡都成了用途。第 24 格要從前後文判斷動詞的意思，第 29 格要看 to 後面接的是什麼形態，這兩格都值得多留意。寫作上這是「先拋反差、再逐段兌現」的排法。",
+  "macro": {
+   "structure": "反差開場型 — 用途與價值：取代揉皺的報紙 → 一句反轉：發明的由來和大家想的不同(全文中心思想) → 失敗：本來要做的是壁紙 → 轉用：氣泡成了緩衝，IBM 帶動市場 → 延伸：捏氣泡成了紓壓",
+   "transitions": "But（轉折，指出舊做法的缺點）→ However（轉折，帶出全文中心思想）→ Originally（時間回溯，交代原始構想）→ Meanwhile（同時，帶出 IBM 這個轉機）→ Besides（追加，轉入紓壓那一層）",
+   "patterns": "說明文 (Exposition) + 現象解釋 (Phenomenon Explanation)",
+   "outline": [
+    "1. 價值：在它問世前，人們用揉成一團的報紙包裝，既凌亂又不好用",
+    "2. 反轉：這項發明的由來，和大家想的不一樣",
+    "3. 由來：一九五〇年代末原本要做的是給戰後年輕世代的壁紙，成品卻和原意差很遠",
+    "4. 轉用與延伸：氣泡成了緩衝，IBM 用它包裝電子設備；後來連捏氣泡都成了紓壓"
+   ]
+  },
+  "zhTranslation": [
+   "氣泡布是一種夾著氣泡的薄塑膠膜，是最常見的包裝材料之一。在它被發明出來以前，人們用揉成一團的報紙來保護運送途中的物品。但那樣既凌亂，也提供不了多少保護。氣泡布解決了這些問題，對運輸業來說簡直是天賜之物。然而，氣泡布的發明其實相當偶然。",
+   "氣泡布最初是在一九五〇年代末，由兩位工程師做出來的，本來打算當成能吸引戰後年輕世代的壁紙。他們把兩片塑膠浴簾放進熱封機裡，想做出那種質感。但結果卻令人失望。做出來的只是一片夾著氣泡的塑膠膜，和他們原本想生產的材料相去甚遠。",
+   "不過，這兩位發明人並沒有把失敗的產品完全丟開。他們發現這項發明可以有別的用途。那些氣泡形成了極佳的緩衝，能夠減少衝擊，非常適合用來包裝與運送易碎物品。為了把這項發明推向市場，兩位工程師在一九六〇年創辦了一家公司，把產品命名為 Bubble Wrap。與此同時，當時的電腦業龍頭 IBM 正需要一種安全的方式，來包裝運送途中的精密電子設備。他們發現氣泡布正是問題的解答。這扇門一開，許多其他企業也開始使用氣泡布。一九七〇與一九八〇年代，這家公司又擴展到生產更多包裝產品。氣泡布自此發展出不同的形狀、尺寸與厚度，以因應更廣泛的用途。",
+   "除了用來運送物品之外，人們還從捏破那些充氣小泡中得到極大的樂趣。有些人甚至上了癮——總覺得還要再捏一個才夠。科學研究已經替這個現象找到解釋：捏破氣泡這個簡單的動作，有助於釋放肌肉的緊繃，也能把注意力從壓力情境上移開。從包裝材料到療癒工具，氣泡布比起當初要做壁紙的構想，已經有了長足的發展。"
+  ]
+ },
+ {
+  "id": "z108",
+  "year": "108年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "蓋提中心：山丘上的美術館（The Getty Center）",
+  "titleStatus": null,
+  "blankCount": 10,
+  "optionCount": 12,
+  "eliminationValid": false,
+  "unusedOptions": [
+   "F",
+   "I"
+  ],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "delight",
+   "B": "explorations",
+   "C": "turn",
+   "D": "surprised",
+   "E": "imported",
+   "F": "over-emphasized",
+   "G": "artistic",
+   "H": "hidden",
+   "I": "foundations",
+   "J": "materials",
+   "K": "house",
+   "L": "ever-changing"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": "【第一段】背景：山頂上的建築群與館藏",
+    "segs": [
+     [
+      "The Getty Center sits more than 800 feet above sea level, towering above the city of Los Angeles. A 0.75-mile-long tramway takes visitors to the top of the hill. At the top, four exhibit pavilions and a visitor center form the heart of an eleven-building complex. The museum was originally constructed to ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " the vast art collection belonging to oil tycoon J. Paul Getty. ",
+      null
+     ],
+     [
+      "Today",
+      "trans"
+     ],
+     [
+      ", it is stocked with so many art works that the exhibit arenas can show just a part of them at a time, making the ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " special exhibitions a highlight of any visit to the Getty.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】點出主旨：來看美術館，看到的是一件藝術品",
+    "segs": [
+     [
+      "The Center's award-winning architect, Richard Meier, did an outstanding job of creating a public space that has ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " many visitors. Visitors go to the Getty thinking they are visiting a museum with works of art on the inside. ",
+      null
+     ],
+     [
+      "What they discover ",
+      "gradient"
+     ],
+     [
+      "instead",
+      "trans"
+     ],
+     [
+      " is a work of art with a museum inside.",
+      "gradient"
+     ],
+     [
+      " The idea is interesting: The outdoor space can be a completely satisfying ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " experience.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】建材與處處不同的景觀",
+    "segs": [
+     [
+      "Meier took a few basic ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " : metal, stone and glass. ",
+      null
+     ],
+     [
+      "Working with a billion-dollar budget, he combined them to create a work of architecture that can excite visitors as much as the art collection inside does.",
+      "topic"
+     ],
+     [
+      " Around every corner and at every ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " , there is a new view to enchant guests. ",
+      null
+     ],
+     [
+      "And then",
+      "trans"
+     ],
+     [
+      ", just when they think they have seen it all, a new fountain or landscape pops up.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】石材：義大利石灰華裡的化石",
+    "segs": [
+     [
+      "The building stone is travertine, ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " from Italy, the same source as for the historic buildings in Rome. ",
+      null
+     ],
+     [
+      "A special cutting process exposes the fossils long buried inside the stone, which reveals the delicate treasures ",
+      "topic"
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " under the rough surface.",
+      "topic"
+     ],
+     [
+      " Some of them are set as “feature” stones scattered about the site, waiting to ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " those who find them. The most fantastic one is on the arrival plaza wall, across from the tram station.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第五段】收尾：免費導覽",
+    "segs": [
+     [
+      "In addition to",
+      "trans"
+     ],
+     [
+      " museum tours, the Getty also provides various free on-site tours, including tours of the gardens.",
+      "topic"
+     ],
+     [
+      " These ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " are a must for anyone interested in learning more about Meier's techniques and ideas.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“What they discover instead is a work of art with a museum inside.”",
+  "thesisExplain": "訪客以為自己要去一座裡面掛著藝術品的美術館，結果發現的是一件裡面裝著美術館的藝術品——第二段這一句是全文中心思想，不含空格，卻是整篇最漂亮的一個翻轉。後面三段都在替它舉證：金屬、石材、玻璃，每個轉角的新視野，石頭裡露出來的化石。第 21 格前面是 constructed to、後面接 the vast art collection，要填的是能以「收藏」為受詞的動詞，中文語感容易只想到「展示」；第 26 格前面是 at every，與前半句的 Around every corner 對仗，兩個介系詞片語要一起看才選得準。寫作上這是「顛倒讀者預期」的寫法，一句話把主客關係翻了過來。",
+  "macro": {
+   "structure": "顛倒預期型 — 位置與規模：山頂上的十一棟建築群 → 翻轉：來看美術館，看到的是一件裝著美術館的藝術品(全文中心思想) → 建築本身與視野 → 石頭裡的化石 → 收尾：免費導覽",
+   "transitions": "Today（時間轉折，帶出館藏過多、只能分批展出）→ instead（翻轉，點出全文中心思想）→ Working with（伴隨，帶出預算規模）→ And then, just when（時間巧合，製造驚喜感）→ In addition to（追加，補上導覽）",
+   "patterns": "說明文 (Exposition) + 景物描寫 (Descriptive Writing)",
+   "outline": [
+    "1. 位置與規模：海拔超過八百英尺，纜車上山，十一棟建築構成的園區",
+    "2. 翻轉：訪客以為要看美術館，看到的卻是一件裝著美術館的作品",
+    "3. 建築本身：金屬、石材、玻璃三樣，加上十億美元預算，每個轉角都有新景",
+    "4. 細節與收尾：石材切面露出化石，散置各處等人發現；另有免費的花園導覽"
+   ]
+  },
+  "zhTranslation": [
+   "蓋提中心座落在海拔八百多英尺處，俯瞰洛杉磯市。一條長零點七五英里的纜車線把訪客載上山頂。山頂上，四座展館與一座遊客中心構成這座十一棟建築群的核心。這座美術館最初興建的目的，是為了容納石油大亨 J. Paul Getty 的龐大藝術收藏。今天，館內的作品多到展場一次只能展出其中一部分，這也使得不斷更換的特展成為每一趟蓋提之行的亮點。",
+   "這座中心得獎的建築師 Richard Meier，出色地創造出一個令許多訪客驚喜的公共空間。訪客來到蓋提，以為自己要參觀的是一座裡面陳列著藝術品的美術館。他們發現的卻是一件裡面裝著美術館的藝術品。這個想法很有意思：戶外空間本身，就可以是一次完全令人滿足的藝術體驗。",
+   "Meier 只取了幾樣基本材料：金屬、石材與玻璃。在十億美元的預算下，他把它們組合起來，造出一件足以像館內收藏一樣令訪客動容的建築作品。每一個轉角、每轉一個彎，都有新的景致讓賓客著迷。然後，就在他們以為已經看遍一切的時候，一座新的噴泉或一片新的景觀又冒了出來。",
+   "建築用的石材是石灰華，由義大利進口，與羅馬那些歷史建築的來源相同。特殊的切割方式讓長久埋在石頭裡的化石露了出來，也顯露出那些藏在粗糙表面底下的精緻寶藏。其中有些被當作「特色」石塊散置在園區各處，等著讓發現它們的人驚喜一番。最精采的那一塊，就在纜車站對面的入口廣場牆上。",
+   "除了館內導覽之外，蓋提也提供多種免費的現場導覽，包括花園導覽。對於任何想更了解 Meier 的手法與構想的人來說，這些走訪都不容錯過。"
+  ]
+ },
+ {
+  "id": "z107",
+  "year": "107年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "水產養殖的價值與代價（Aquaculture）",
+  "titleStatus": null,
+  "blankCount": 10,
+  "optionCount": 12,
+  "eliminationValid": false,
+  "unusedOptions": [
+   "G",
+   "L"
+  ],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "spread",
+   "B": "culture",
+   "C": "trapped",
+   "D": "adored",
+   "E": "alive",
+   "F": "monopoly",
+   "G": "delicious",
+   "H": "illegal",
+   "I": "supply",
+   "J": "wealthier",
+   "K": "evidence",
+   "L": "treated"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": "【第一段】定義與主旨：水產養殖的價值",
+    "segs": [
+     [
+      "Aquaculture is the farming of any aquatic plant or animal. ",
+      null
+     ],
+     [
+      "Aquaculture is of great importance ",
+      "gradient"
+     ],
+     [
+      "because",
+      "trans"
+     ],
+     [
+      " it reduces the possibility of over fishing wild fish, and also improves the quality and increases the ",
+      "gradient"
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " of fish for human consumption.",
+      "gradient"
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】上古：澳洲原住民與中國的養殖",
+    "segs": [
+     [
+      "Ancient civilizations throughout the world engaged in different types of fish farming.",
+      "topic"
+     ],
+     [
+      " The indigenous people in Australia are believed to have raised eels as early as 6000 BC. Abundant ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " indicates they developed volcanic floodplains near Lake Condah into channels and dams, then captured eels and preserved them to eat all year round. The earliest records of fish ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " , ",
+      null
+     ],
+     [
+      "however",
+      "trans"
+     ],
+     [
+      ", are from China, where the practice was in wide use around 2500 BC. When the waters subsided after river floods, some fish, mainly carp, were ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " in lakes. Early fish farmers then fed their brood using nymphs and silkworm feces, and ate them afterwards.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】古羅馬：海魚與牡蠣的池養",
+    "segs": [
+     [
+      "In Europe, aquaculture first began in ancient Rome.",
+      "topic"
+     ],
+     [
+      " The Romans, who ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " sea fish and oysters, created oyster farms which were similar to swimming pools. Fish and crustaceans (such as shrimps and crabs) caught in lagoons were kept ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " in these pools until it was time to eat them. The farms were often built inside ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " homes, where well-to-do families could invite their guests over and choose the fish they wished to eat. This Roman tradition was later adopted by Christian monasteries in central Europe.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】中世紀歐洲：淡水魚只歸修院與貴族",
+    "segs": [
+     [
+      "During the Middle Ages, aquaculture ",
+      "topic"
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " in Europe, ",
+      "topic"
+     ],
+     [
+      "since",
+      "trans"
+     ],
+     [
+      " far away from the seacoasts and the big rivers, fish had to be salted so they did not rot.",
+      "topic"
+     ],
+     [
+      " Throughout feudal Europe, monastic orders and the aristocracy were the main users of freshwater fish, ",
+      null
+     ],
+     [
+      "for",
+      "trans"
+     ],
+     [
+      " they had a ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " over the land, forests, and water courses ",
+      null
+     ],
+     [
+      "while",
+      "trans"
+     ],
+     [
+      " the common people could seldom build ponds of their own. As with hunting, ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " fishing was severely punished and the less well-off would have to wait a few centuries before fresh fish was served on their plates.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Aquaculture is of great importance because it reduces the possibility of over fishing wild fish.”",
+  "thesisExplain": "第一段只有兩句，第二句就是全文中心思想：養殖之所以重要，是因為它減輕了野生魚被過度捕撈的壓力。這一句不含空格，但同一句裡的第 21 格值得一起看——前面是 increases the、後面接 of fish，要填的是能被「增加」的抽象名詞，而且要與前半句的 quality 並列。後面三段全是歷史：澳洲原住民、中國、羅馬，一路寫到中世紀。第 29 格的 have a monopoly over（獨占）與第 30 格的 illegal fishing 是最後一段的兩個關鍵。寫作上這是「先講價值、再用歷史來支持」的排法，第一段第二句因此不只是背景交代。",
+  "macro": {
+   "structure": "價值加史述型 — 定義與價值：減輕野生魚的捕撈壓力(全文中心思想) → 上古：澳洲原住民與中國的早期做法 → 羅馬：海魚與牡蠣的池養 → 中世紀歐洲：淡水魚落入修道院與貴族手中",
+   "transitions": "however（轉折，最早的文字記載其實在中國）→ When the waters subsided（時間條件，帶出洪水退後的取魚）→ In Europe（空間轉換，轉入羅馬）→ During the Middle Ages（時間推進）→ As with hunting（類比，與狩獵並論）",
+   "patterns": "說明文 (Exposition) + 歷史敘述 (Historical Account)",
+   "outline": [
+    "1. 定義與價值：養殖水生動植物，可減輕野生魚被過度捕撈的壓力",
+    "2. 上古：澳洲原住民養鰻可上推至西元前六千年；中國約西元前二五〇〇年已廣為採用",
+    "3. 羅馬：在潟湖捕到的魚蝦蟹養在池中，富有人家的宅子裡就設有養殖池，可讓賓客現挑",
+    "4. 中世紀：淡水魚幾乎都到了修道院與貴族手中，一般人難以自建魚池"
+   ]
+  },
+  "zhTranslation": [
+   "水產養殖指的是養殖任何水生的植物或動物。水產養殖之所以極為重要，是因為它降低了野生魚遭到過度捕撈的可能，同時也提升了供人食用的魚的品質、增加了供應量。",
+   "世界各地的古文明都從事過各種形式的養魚。澳洲的原住民據信早在西元前六千年就已經養鰻。大量的證據顯示，他們把康達湖附近的火山氾濫平原改造成水道與水壩，捕捉鰻魚後保存起來，好讓一整年都有得吃。不過，養魚最早的文字記載來自中國，大約在西元前二五〇〇年，這種做法已經廣為採用。河水氾濫之後水位下降時，有些魚——主要是鯉魚——會被困在湖泊裡。早期的養魚人接著用若蟲與蠶糞餵養魚苗，之後再把魚吃掉。",
+   "在歐洲，水產養殖最早始於古羅馬。羅馬人熱愛海魚與牡蠣，蓋出類似泳池的牡蠣養殖場。在潟湖捕到的魚，以及蝦蟹這類甲殼動物，會活養在這些池子裡，直到要吃的時候。這些養殖池往往就蓋在較富有人家的宅子裡，好讓他們邀請賓客過來，親自挑選想吃的魚。這項羅馬傳統後來被中歐的基督教修道院沿用。",
+   "到了中世紀，水產養殖在歐洲擴散開來，因為在遠離海岸與大河的地方，魚必須經過鹽漬才不會腐壞。在整個封建時代的歐洲，修道院教團與貴族是淡水魚的主要使用者，因為他們獨占了土地、森林與水道，一般平民很少能自己建造魚池。就像狩獵一樣，非法捕魚會受到嚴厲懲罰；境況較差的人得再等上幾個世紀，餐盤上才會出現新鮮的魚。"
+  ]
+ },
+ {
+  "id": "z106",
+  "year": "106年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "皮蛋的由來（The Century Egg）",
+  "titleStatus": null,
+  "blankCount": 10,
+  "optionCount": 12,
+  "eliminationValid": false,
+  "unusedOptions": [
+   "A",
+   "E"
+  ],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "provokes",
+   "B": "exotic",
+   "C": "delicacy",
+   "D": "dates back",
+   "E": "refreshed",
+   "F": "implies",
+   "G": "appetizing",
+   "H": "mixture",
+   "I": "goes by",
+   "J": "unchanged",
+   "K": "challenge",
+   "L": "favor"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": "【第一段】起源傳說：農夫偶然發現皮蛋",
+    "segs": [
+     [
+      "Hundreds of years ago, a savory idea—called the century egg—was hatched in rural China. As the story goes, a farmer found naturally preserved duck eggs in a muddy pool of water and slaked lime. ",
+      null
+     ],
+     [
+      "After surviving a tasting, he set out to replicate them manually, resulting in a ",
+      "gradient"
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " that would endure for centuries as a comfort food in Hong Kong, China and parts of Southeast Asia.",
+      "gradient"
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】年代：可追溯到明朝，做法幾乎沒變",
+    "segs": [
+     [
+      "Though",
+      "trans"
+     ],
+     [
+      " details of the century egg’s discovery are undocumented, scientists estimate that it ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " more than 500 years to the Ming Dynasty. And ",
+      null
+     ],
+     [
+      "aside from",
+      "trans"
+     ],
+     [
+      " some techniques used for large-scale production today, the egg preservation process has remained relatively ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " .",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】做法：浸泡的材料與時間",
+    "segs": [
+     [
+      "To make the eggs, a vat is typically filled with a combination of strong black tea, lime, salt and freshly burned wood ashes, and left to cool overnight. ",
+      null
+     ],
+     [
+      "The next day",
+      "trans"
+     ],
+     [
+      ", duck, quail, or chicken eggs are added to the ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " . ",
+      null
+     ],
+     [
+      "Then",
+      "trans"
+     ],
+     [
+      " they soak anywhere from seven weeks to five months—not for a century as the name ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " .",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】別名、外觀與氣味",
+    "segs": [
+     [
+      "The century egg also ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " many other names, such as hundred-year egg, thousand-year egg, or millennium egg. ",
+      null
+     ],
+     [
+      "But",
+      "trans"
+     ],
+     [
+      " no matter what it’s called, this common snack has a rather uncommon taste and is often grouped by travelers with other ",
+      "topic"
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " Asian foods such as chicken feet or snake soup.",
+      "topic"
+     ],
+     [
+      " Getting beyond the egg’s appearance is the first ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " . ",
+      null
+     ],
+     [
+      "Instead of",
+      "trans"
+     ],
+     [
+      " being white with a bright orange yolk, the jelly- like egg takes on a less ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " dark brown and swampy green hue. There’s also a pungent ammonia-like odor to contend with, which has earned the snack yet another nickname: the “horse urine egg.”",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第五段】收尾：年輕一代不愛吃，前途未卜",
+    "segs": [
+     [
+      "While",
+      "trans"
+     ],
+     [
+      " the century egg draws a following from older generations and curious travelers, it is falling out of ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " with the younger set, who are weary of China’s preserved and fermented foods. ",
+      null
+     ],
+     [
+      "The future of the humble snack is uncertain, ",
+      "topic"
+     ],
+     [
+      "but",
+      "trans"
+     ],
+     [
+      " chefs in Chinese restaurants are still trying to preserve this nostalgic bite of culinary heritage.",
+      "topic"
+     ]
+    ]
+   }
+  ],
+  "thesis": "“resulting in a ___ that would endure for centuries as a comfort food in Hong Kong, China and parts of Southeast Asia”",
+  "thesisExplain": "一個農夫在泥水與石灰裡撿到自然醃成的鴨蛋，試吃之後動手複製——第一段最後這一句交代了全文的起點，也是中心思想，關鍵落在第 21 格。這一格前面是 a、後面接關係子句 that would endure，要填的是能被「延續數百年」修飾的單數可數名詞；只憑「好吃的東西」這個語感去挑，容易選到不能這樣被修飾的字。後面四段依序處理年代、做法、別名與外觀氣味，最後一段一轉，收在年輕世代不再買單、前景不明。第 26 格的 goes by 是「以某名稱為人所知」，不是「經過」。",
+  "macro": {
+   "structure": "起源展開型 — 起源故事：農夫的偶然發現(全文中心思想) → 年代考據 → 製作過程與浸泡時間 → 別名、外觀與氣味 → 收尾：世代之間的接受度差很多",
+   "transitions": "As the story goes（帶出傳說的口吻）→ Though（讓步，記載不全但仍可估算年代）→ And aside from（排除，區隔出大量生產的技術）→ Then（順序，帶出浸泡）→ But no matter what（讓步，轉入口味的討論）→ While（對比，收在世代差異）",
+   "patterns": "說明文 (Exposition) + 過程描述 (Process Description)",
+   "outline": [
+    "1. 起源：數百年前的中國農村，農夫在泥水與石灰中發現自然醃成的鴨蛋",
+    "2. 年代：學者估計已有五百多年歷史，起源的細節並沒有留下記載",
+    "3. 做法：濃茶、石灰、鹽與剛燒好的木灰調成一缸，蛋放進去泡七週到五個月",
+    "4. 觀感與現況：外觀深褐墨綠、氣味刺鼻，別名眾多；世代之間的接受度差很多"
+   ]
+  },
+  "zhTranslation": [
+   "好幾百年前，一個美味的點子——皮蛋——在中國農村誕生。故事是這麼說的：有個農夫在一窪泥水與消石灰混成的水池裡，發現了自然醃成的鴨蛋。試吃過後他平安無事，於是動手用人工複製，做出一道延續數百年、在香港、中國與東南亞部分地區都令人安心的家常美味。",
+   "儘管皮蛋是怎麼被發現的，細節並沒有留下記載，科學家估計它可以上溯到五百多年前的明朝。而且除了今天大量生產所使用的一些技術之外，這種蛋的醃製過程一直維持得相對不變。",
+   "要做皮蛋，通常會在一口大缸裡裝滿濃紅茶、石灰、鹽和剛燒好的木灰混成的液體，放著隔夜冷卻。隔天，把鴨蛋、鵪鶉蛋或雞蛋放進這缸混合物裡。接著它們就浸泡七個星期到五個月不等——並不是像名字暗示的那樣要泡上一百年。",
+   "皮蛋還有許多別的名字，例如百年蛋、千年蛋或千禧蛋。但不管叫什麼，這道常見的小點心味道相當不尋常，旅人常把它和雞爪、蛇湯之類的異國亞洲食物歸為一類。要越過這顆蛋的外觀，是第一道關卡。它不是蛋白配上鮮橘色的蛋黃，而是像果凍一般，呈現不那麼開胃的深褐與墨綠色調。還有一股刺鼻的阿摩尼亞氣味要應付，這也替它掙得了另一個別名：「馬尿蛋」。",
+   "皮蛋雖然吸引了老一輩與好奇旅人的追隨，卻逐漸不受年輕族群的青睞——他們對中國的醃漬與發酵食品已經不感興趣。這道樸實小點的未來並不確定，但中式餐館的廚師仍努力保存這一口帶著懷舊味道的飲食遺產。"
+  ]
+ },
+ {
+  "id": "zref107",
+  "year": "107學年度起適用參考試卷",
+  "exam": "指考",
+  "examType": "參考試卷",
+  "title": "布袋戲：掌中的舞台（Taiwanese Puppet Show）",
+  "titleStatus": null,
+  "blankCount": 10,
+  "optionCount": 12,
+  "eliminationValid": false,
+  "unusedOptions": [
+   "A",
+   "I"
+  ],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "attracted",
+   "B": "appeal",
+   "C": "accompanied",
+   "D": "conduct",
+   "E": "director",
+   "F": "figures",
+   "G": "occasions",
+   "H": "succeed",
+   "I": "transparent",
+   "J": "supporting",
+   "K": "techniques",
+   "L": "worship"
+  },
+  "flagNote": "本篇與 101 年指考文意選填為同一組題目：空格、選項、答案完全相同，正文只有第四段少了 processions and 共 16 個字元。兩份都收錄，練過其中一份再練另一份不會有新的收穫。",
+  "flagKind": ["沿用題指認"],
+  "sourceNote": "本篇出自大考中心公布的參考試卷，不是正式考試的試題，沒有考生作答資料。",
+  "paras": [
+   {
+    "label": "【第一段】點出主旨：布袋戲是台灣重要的表演藝術",
+    "segs": [
+     [
+      "The Taiwanese puppet show (“Budaixi”) is a distinguished form of performing arts in Taiwan.",
+      "gradient"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Although",
+      "trans"
+     ],
+     [
+      " basically hand puppets, the ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " appear as complete forms, with hands and feet, on an elaborately decorated stage.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】後場音樂與鼓師的角色",
+    "segs": [
+     [
+      "The puppet performance is typically ",
+      "topic"
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " by a small orchestra.",
+      "topic"
+     ],
+     [
+      " The backstage music is directed by the drum player. The drummer needs to pay attention to what is going on in the plot and follow the rhythm of the characters. He also uses the drum to ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " the other musicians. There are generally around four to five musicians who perform the backstage music. The form of music used is often associated with various performance ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " , including acrobatics and skills like window-jumping, stage movement, and fighting. Sometimes unusual animal puppets also appear on stage for extra ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " , especially for children in the audience.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】兩位演師的分工與師徒關係",
+    "segs": [
+     [
+      "In general, a show needs two performers.",
+      "topic"
+     ],
+     [
+      " The main performer is generally the chief or ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " of the troupe. He is the one in charge of the whole show, manipulating the main puppets, singing, and narrating. The ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " performer manipulates the puppets to coordinate with the main performer. He also changes the costumes of the puppets, and takes care of the stage. The relationship between the main performer and his partner is one of master and apprentice. Frequently, the master trains his sons to eventually ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " him as puppet masters.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】演出的場合與用意",
+    "segs": [
+     [
+      "Budaixi troupes are often hired to perform at festivals held in honor of local gods, and on happy ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " such as weddings, births, and promotions. The main purpose of Budaixi is to ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " and offer thanks to the deities. The shows also serve as a popular means of folk entertainment.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“The Taiwanese puppet show (“Budaixi”) is a distinguished form of performing arts in Taiwan.”",
+  "thesisExplain": "第一句就是定義，也是全文中心思想，不含空格。後面三段各補一塊：後場音樂怎麼配、兩位演師怎麼分工、什麼場合演又為什麼演。第 22 格考的是 be accompanied by 這組被動用法，第 23 格要填的動詞得能以樂師為受詞。第 28 格的 succeed 後面接了受詞 him，意思是「接替某人」，不是「成功」。寫作上這是「定義開場、逐面補全」的介紹文，每一段各管一個面向，彼此不重疊。",
+  "macro": {
+   "structure": "定義展開型 — 開篇定義：布袋戲是台灣重要的表演藝術(全文中心思想) → 後場音樂與鼓師的角色 → 兩位演師的分工與師徒關係 → 演出時機與用意",
+   "transitions": "Although（讓步，戲偶雖為掌中操作卻做成完整形體）→ He also（並列，鼓師的第二項職責）→ In general（總說，帶出演師人數）→ Frequently（頻率，帶出師徒傳承）",
+   "patterns": "說明文 (Exposition) + 文化介紹 (Cultural Introduction)",
+   "outline": [
+    "1. 定義與外形：台灣重要的表演藝術；戲偶雖為掌中操作，卻有手有腳",
+    "2. 後場：約四到五位樂師，由鼓師帶頭，音樂隨著劇情與角色節奏走",
+    "3. 演師：主演操偶、演唱並擔任口白，另一位配合並管換裝與舞台，兩人為師徒",
+    "4. 時機與用意：受邀在酬神的廟會中演出，也在婚禮、生子、升遷時登場，兼具民間娛樂"
+   ]
+  },
+  "zhTranslation": [
+   "布袋戲是台灣一種格外出色的表演藝術。這些戲偶基本上是掌中偶，但在裝飾華麗的戲台上，它們以完整的形體現身，有手也有腳。",
+   "布袋戲的演出通常由一個小型樂隊伴奏。後場音樂由鼓師指揮。鼓師必須留意劇情的進展，跟上角色的節奏。他也用鼓來指揮其他樂師。演奏後場音樂的樂師通常有四到五位。所使用的音樂形式，往往與各種演出技巧相配合，包括特技，以及跳窗、走位、對打這類身段功夫。有時候還會有不尋常的動物戲偶登場，增添額外的吸引力，對台下的小朋友尤其有效。",
+   "一般來說，一場戲需要兩位演師。主演通常是劇團的團主或導演。他負責整場戲，操作主要的戲偶、演唱並擔任口白。另一位演師則操作戲偶，配合主演。他也負責替戲偶換裝，並照管舞台。主演與搭檔之間的關係，是師父與徒弟。師父常常訓練自己的兒子，讓他們日後繼承自己，成為掌中戲的師傅。",
+   "布袋戲團常受邀在為地方神明舉辦的廟會中演出，也在婚禮、生子、升遷這類喜慶的日子登場。布袋戲的主要用意是敬神並向神明表達謝意。這些戲同時也是廣受歡迎的民間娛樂形式。"
+  ]
+ },
+ {
+  "id": "z105",
+  "year": "105年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "獅身人面像的守望（The Great Sphinx）",
+  "titleStatus": null,
+  "blankCount": 10,
+  "optionCount": 12,
+  "eliminationValid": false,
+  "unusedOptions": [
+   "C",
+   "L"
+  ],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "movable",
+   "B": "installed",
+   "C": "diversified",
+   "D": "problem",
+   "E": "aged",
+   "F": "planning",
+   "G": "measured",
+   "H": "constructing",
+   "I": "exact",
+   "J": "deteriorating",
+   "K": "statue",
+   "L": "religious"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": "【第一段】引言：獅身人面像正在受損，科學家著手修復",
+    "segs": [
+     [
+      "The Great Sphinx in the Giza desert is a mythological creature with the body of a lion and the head of a human being. This monumental ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " is often regarded as a national symbol of Egypt, having guarded the famous Egyptian pyramids for 4,000 years. ",
+      null
+     ],
+     [
+      "Nevertheless",
+      "trans"
+     ],
+     [
+      ", the stone creature does not look like it did 4,000 years ago; wind, water, pollution, and human contact have slowly ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " the rock. Scientists are now trying to restore it. They not only want it to look like it did when it was first built but also are looking for ways to keep it from ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " more than it has.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】修復工法：測量、編號、手工雕鑿、逐塊替換",
+    "segs": [
+     [
+      "Fixing the Sphinx, ",
+      "topic"
+     ],
+     [
+      "however",
+      "trans"
+     ],
+     [
+      ", is not an easy job.",
+      "topic"
+     ],
+     [
+      " It takes several years of ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " before the work begins. Each stone in the Sphinx is carefully ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " . Scientists use computers to help figure out the size and shape of each stone. Each old stone is given a number. ",
+      null
+     ],
+     [
+      "Then",
+      "trans"
+     ],
+     [
+      ", one by one, replacement stones are carved by hand, just like people did long ago, in the ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " sizes and shapes as the ones they are replacing. When the new stones are ready, they are ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " and the worn ones removed.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】防護構想的各種提案",
+    "segs": [
+     [
+      "Scientists are also worried about how to keep the Sphinx from falling apart again.",
+      "topic"
+     ],
+     [
+      " They have talked about ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " a wall around the Sphinx to protect it from the wind and sand, or perhaps covering it completely with a glass pyramid. Some think that burying part of it in the sand would serve the purpose. One scientist has even suggested building a ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " shelter to protect it at night and during bad weather. The walls of the shelter could be retracted into the ground during the day so that visitors could see the Sphinx.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】收尾：方法談不攏，但必須保護是共識",
+    "segs": [
+     [
+      "There are no easy solutions to the ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " , ",
+      null
+     ],
+     [
+      "not to mention",
+      "trans"
+     ],
+     [
+      " solutions that are agreeable to all parties. ",
+      null
+     ],
+     [
+      "The one thing that is agreed upon is that something needs to be done to protect this ancient sculpture.",
+      "gradient"
+     ]
+    ]
+   }
+  ],
+  "thesis": "“The one thing that is agreed upon is that something needs to be done to protect this ancient sculpture.”",
+  "thesisExplain": "前三段各講一件事：像壞了、怎麼修、怎麼防。第四段兩句收尾，第二句是全文中心思想，不含空格——它把前面所有談不攏的方案歸納成一句共識：方法沒有共識，但「得做點什麼」沒有人反對。第 23 格前面是 keep it from，介系詞後要接動名詞，主詞又是像本身，得挑不及物的那個用法；第 26 格前後是 in the … sizes and shapes as，這組 in the same … as 的結構把選項限死。第 30 格回頭指前面整段的難處，是全篇唯一需要跨段回指的空格。寫作上這是「列方案、不下定論、只留共識」的收法，議題未定時很好用。",
+  "macro": {
+   "structure": "議題陳列型 — 介紹與現況：守望四千年的獅身人面像正在受損 → 修復工法：記錄、編號、手工雕鑿、逐塊替換 → 保護構想的各種提案 → 收尾：方法談不攏，但「必須有所作為」是共識(全文中心思想)",
+   "transitions": "Nevertheless（轉折，從國家象徵翻到受損現況）→ however（轉折，點出修復不易）→ Then, one by one（順序，帶出逐塊替換）→ or perhaps（並列，列出另一種提案）→ not to mention（遞進，難度再加一層）",
+   "patterns": "說明文 (Exposition) + 問題解決 (Problem-Solution)",
+   "outline": [
+    "1. 現況：獅身人面像守望金字塔四千年，風、水、污染與人的碰觸已使岩石受損",
+    "2. 修復：動工前需要好幾年的前置作業，每塊石頭都仔細記錄、編號",
+    "3. 提案：立牆擋風沙、罩上玻璃金字塔、把一部分埋進沙裡、夜間與惡劣天候可用的遮蔽",
+    "4. 收尾：各種辦法都不容易，唯一有共識的是必須做點什麼"
+   ]
+  },
+  "zhTranslation": [
+   "位於吉薩沙漠的獅身人面像，是一頭獅身人首的神話生物。這座宏偉的雕像常被視為埃及的國家象徵，四千年來守護著著名的埃及金字塔。然而，這頭石造生物看起來已不同於四千年前的模樣；風、水、污染與人的碰觸，慢慢使這塊岩石老化。科學家如今正設法修復它。他們不只希望它看起來像剛建成時那樣，也在尋找辦法，不讓它比現在更加惡化。",
+   "不過，修復獅身人面像並不是件容易的事。動工之前得先花上好幾年規劃。像上的每一塊石頭都被仔細丈量。科學家用電腦協助算出每塊石頭的大小與形狀。每一塊舊石頭都會被編號。接著，替換用的石頭一塊一塊以手工雕鑿，就像很久以前的人做的那樣，尺寸與形狀都與被替換的那一塊完全相同。新石頭備妥之後就會被裝上去，磨損的舊石頭則被移除。",
+   "科學家也擔心，該怎麼防止獅身人面像再次崩壞。他們討論過在四周築一道牆，擋住風與沙，或者乾脆用一座玻璃金字塔把它整個罩住。有人認為把它的一部分埋進沙裡就能達到目的。甚至有一位科學家建議蓋一座可移動的遮蔽物，在夜間與天候不佳時保護它。遮蔽物的牆面可以在白天縮回地下，讓遊客得以看見獅身人面像。",
+   "這個難題沒有簡單的解決辦法，更別說要找出各方都同意的辦法了。唯一有共識的是：必須做點什麼來保護這座古老的雕刻。"
+  ]
+ },
+ {
+  "id": "z104",
+  "year": "104年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "1918 年大流感（The 1918 Influenza Epidemic）",
+  "titleStatus": null,
+  "blankCount": 10,
+  "optionCount": 12,
+  "eliminationValid": false,
+  "unusedOptions": [
+   "B",
+   "F"
+  ],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "military",
+   "B": "crisis",
+   "C": "harder",
+   "D": "wider",
+   "E": "deadly",
+   "F": "come across",
+   "G": "shipments",
+   "H": "infected",
+   "I": "preceded",
+   "J": "warn",
+   "K": "accelerated",
+   "L": "sweep through"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": "【第一段】點出主旨：二十世紀最慘重的健康危機之一；兩波疫情的經過",
+    "segs": [
+     [
+      "The 1918 influenza epidemic, which occurred during World War I, was one of the most devastating health crises of the 20th century.",
+      "gradient"
+     ],
+     [
+      " Between September 1918 and June 1919, more than 600,000 Americans died of influenza and pneumonia, making the epidemic far more ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " than the war itself. The influenza hit Americans in two waves. The first wave attacked the army camps and was less fatal than the second. The second wave arrived in the port city of Boston in September 1918 with war ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " of machinery and supplies. Other wartime events enabled the disease to ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " the country quickly. As men across the nation were joining the ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " to serve the country, they brought the virus with them everywhere they went. In October 1918 alone, the virus killed almost 200,000. In the following month, the end of World War I resulted in an even ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " spread of the disease. The celebration of the end of the war with parades and parties was a complete disaster from the standpoint of public health. This ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " the spread of the disease in some cities. The flu that winter was destructive beyond imagination as millions were ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " and thousands died. ",
+      null
+     ],
+     [
+      "In fact",
+      "trans"
+     ],
+     [
+      ", it caused many more deaths than any of the other epidemics which had ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " it.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】收尾：專家預警，建議每年打流感疫苗",
+    "segs": [
+     [
+      "Medical scientists ",
+      "topic"
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " that another epidemic will attack people at some point in the future.",
+      "topic"
+     ],
+     [
+      " Today’s worldwide transportation makes it even ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " to control an epidemic. ",
+      null
+     ],
+     [
+      "Therefore",
+      "trans"
+     ],
+     [
+      ", doctors advise that we continue to get our annual flu shots in order to stay healthy.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“The 1918 influenza epidemic, which occurred during World War I, was one of the most devastating health crises of the 20th century.”",
+  "thesisExplain": "第一句就把結論下完：這是二十世紀最慘重的健康危機之一。中心思想不含空格，後面整段都在替這個判斷舉證——六十萬美國人死亡、兩波疫情、戰時的物資運輸與人員流動、慶祝停戰的遊行。第 23 格的 sweep through（席捲）以疾病為主詞、以國家為受詞，是本篇最值得記下來的一組；第 26 格前面是 This、後面接 the spread，要填的是能以整件事為主詞的及物動詞。第二段只有三句，把時間推到今天，收在年年接種疫苗這個建議上。寫作上這是「先斷後證、末段落到行動」的排法。",
+  "macro": {
+   "structure": "先斷後證型 — 開篇下判斷：二十世紀最慘重的健康危機之一(全文中心思想) → 數據佐證：九個月內超過六十萬美國人死亡 → 兩波疫情與擴散途徑 → 第二段：專家的預警與年度疫苗建議",
+   "transitions": "making（分詞結果，帶出與戰爭本身的對比）→ The first wave…The second wave（並列，兩波對照）→ As（伴隨，人員流動同時帶著病毒）→ In fact（補充，與歷來疫病相比）→ Therefore（因果，收在建議）",
+   "patterns": "說明文 (Exposition) + 因果分析 (Cause and Effect)",
+   "outline": [
+    "1. 判斷：一九一八年流感是二十世紀最慘重的健康危機之一",
+    "2. 規模：一九一八年九月到一九一九年六月，超過六十萬美國人死於流感與肺炎",
+    "3. 擴散：第一波打在軍營，第二波隨戰時貨運抵達港市波士頓",
+    "4. 收尾：醫學界仍預期未來還會有下一次，因此建議年年接種流感疫苗"
+   ]
+  },
+  "zhTranslation": [
+   "一九一八年的流感大流行發生在第一次世界大戰期間，是二十世紀最具毀滅性的健康危機之一。從一九一八年九月到一九一九年六月，超過六十萬美國人死於流感與肺炎，使得這場疫病遠比戰爭本身更為致命。流感分兩波襲擊美國人。第一波攻擊軍營，致命程度不如第二波。第二波在一九一八年九月，隨著載運機具與物資的戰時貨運抵達港市波士頓。其他戰時事件則讓這場疾病得以迅速席捲全國。當全國各地的男子紛紛從軍報國，他們也把病毒帶到所到之處。光是一九一八年十月，這個病毒就奪走將近二十萬條人命。接下來那個月，第一次世界大戰結束，反而造成疾病更大範圍的擴散。以遊行和派對慶祝戰爭結束，從公共衛生的角度來看是一場徹底的災難。這在某些城市加速了疾病的傳播。那年冬天的流感破壞力超乎想像，數百萬人受到感染，數千人死亡。事實上，它造成的死亡人數，比在它之前的任何一場疫病都多得多。",
+   "醫學家警告，未來某個時刻還會有另一場疫病侵襲人類。今日的全球運輸，使得控制疫病變得更加困難。因此醫師建議，我們應該持續每年接種流感疫苗，以維持健康。"
+  ]
+ },
+ {
+  "id": "z103",
+  "year": "103年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "燒紙錢的信仰源流（Burning Paper Offerings）",
+  "titleStatus": null,
+  "blankCount": 10,
+  "optionCount": 12,
+  "eliminationValid": false,
+  "unusedOptions": [
+   "B",
+   "E"
+  ],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "replaced",
+   "G": "collected",
+   "B": "mortal",
+   "H": "purchase",
+   "C": "spirit",
+   "I": "alive",
+   "D": "available",
+   "J": "needs",
+   "E": "journey",
+   "K": "limited",
+   "F": "luxurious",
+   "L": "images"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": "【第一段】點出主旨：燒紙錢源自唐代，另一個世界是人間的鏡像",
+    "segs": [
+     [
+      "The practice of burning paper money or paper model offerings at funerals in Chinese society can be traced back to the Tang dynasty (618-907 AD). Chinese people believe that when someone passes away, there is a death of the body, ",
+      null
+     ],
+     [
+      "but",
+      "trans"
+     ],
+     [
+      " the ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " continues to live in the next world. ",
+      null
+     ],
+     [
+      "This “next world” is a mirror of the human world, where the “residents” need places to live, money to spend, daily necessities, and entertainment just like when they were ",
+      "gradient"
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " .",
+      "gradient"
+     ],
+     [
+      " Some of these necessities are buried with the deceased, ",
+      null
+     ],
+     [
+      "while",
+      "trans"
+     ],
+     [
+      " most others are “shipped” to them by burning paper models. As the ashes fly high, the offerings are ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " by the residents in the next world.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】家屬的心意：紙紮要大、要豪華",
+    "segs": [
+     [
+      "Relatives of the deceased want to see their beloved family members live comfortably in the next world, ",
+      "topic"
+     ],
+     [
+      "so",
+      "trans"
+     ],
+     [
+      " the paper houses are big and the cars are very ",
+      "topic"
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " , mostly Mercedes-Benzes.",
+      "topic"
+     ],
+     [
+      " A complete package of paper offerings may include a couple of servants, cash, and credit cards so that the deceased will have all their ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " satisfied.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】今昔對照：從專賣店到網路訂購",
+    "segs": [
+     [
+      "These traditional paper offerings were sold only at specialty stores in the past. The style and variety of the products were ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " . ",
+      null
+     ],
+     [
+      "For example",
+      "trans"
+     ],
+     [
+      ", “houses” looked all the same and were built by pasting paper around a bamboo frame, with ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " of a door, windows, and a roof printed on it. There were no trendy, modern supplies to choose from. ",
+      null
+     ],
+     [
+      "Now",
+      "trans"
+     ],
+     [
+      ", the ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " can be made on the Internet. And with the incorporation of new materials and designs, paper offerings come in many more varieties. The old one-style-fits-all houses have been ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " by buildings that are fully equipped with decorations, furniture, and household appliances. Digital cameras, iPhones, and even skin care products are also ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " . ",
+      null
+     ],
+     [
+      "It seems that, with the help of a simple click, this old Chinese tradition has been given a face-lift.",
+      "topic"
+     ]
+    ]
+   }
+  ],
+  "thesis": "“This ‘next world’ is a mirror of the human world.”",
+  "thesisExplain": "一句話是整篇的根基：另一個世界是人間的鏡像。這個信念不含空格，卻決定了後面每一格的方向——鏡像世界的「住戶」需要房子、需要錢、需要日用品，所以紙紮才會有大宅、名車、僕人與信用卡。第 22 格考的是 when they were 之後該接什麼，時態與句意一起把選項壓到只剩一個；第 25 格前面是 all their、後面接 satisfied，要填的是能和 satisfied 搭配的名詞。第三段一轉，講的是這項舊習俗怎麼被網路與新材料翻新。寫作上這是「先立信念、再看它長出什麼」的寫法：前提交代清楚，後面的細節才不會像流水帳。",
+  "macro": {
+   "structure": "信念展開型 — 溯源至唐代 → 立下前提：另一個世界是人間的鏡像(全文中心思想) → 家屬的心意與紙紮的內容 → 今昔對照：從專賣店到網路",
+   "transitions": "while（對比，隨葬與焚燒兩種送達方式）→ so（因果，家屬心意決定紙紮的規格）→ For example（舉例，說明過去的做法）→ Now（時間轉折，帶出今昔對照）→ It seems that（收束，下一個總結性的判斷）",
+   "patterns": "說明文 (Exposition) + 今昔對比 (Then and Now)",
+   "outline": [
+    "1. 溯源：華人社會焚燒紙錢與紙紮的習俗，可上溯至唐代",
+    "2. 前提：人過世後肉身死亡，另一個世界是人間的一面鏡子",
+    "3. 心意：房子要大、車子要好，還附上僕人、現金與信用卡",
+    "4. 今昔：過去只在專賣店買，房子全都長一個樣；如今在網路上就能辦，品項大增"
+   ]
+  },
+  "zhTranslation": [
+   "華人社會在喪禮上焚燒紙錢或紙紮供品的習俗，可以追溯到唐朝（西元 618 至 907 年）。華人相信，人過世之後，肉身雖然死亡，靈魂卻會在另一個世界繼續活著。這個「另一個世界」是人間的一面鏡子，那裡的「住戶」和他們在世時一樣，需要住的地方、可以花用的錢、日常用品，還有娛樂。這些必需品有一部分隨死者下葬，其餘大多藉由焚燒紙紮「寄」給他們。當紙灰高高飛起，這些供品就被另一個世界的住戶收到了。",
+   "死者的親人希望看見自己心愛的家人在另一個世界過得舒適，所以紙紮房子蓋得很大，車子也非常豪華，多半是賓士。一整套完整的紙紮供品可能包括幾名僕人、現金，還有信用卡，好讓死者的一切需求都獲得滿足。",
+   "這些傳統的紙紮供品，過去只在專賣店販售。產品的款式與種類都相當有限。舉例來說，「房子」看起來全都一個樣，是把紙糊在竹架外面做成的，上頭印著門、窗和屋頂的圖案。當時沒有什麼時髦、現代的用品可以挑。如今，採購可以在網路上完成。加上新材料與新設計的加入，紙紮供品的種類多了許多。過去那種一款通用的房子，已經被配備齊全的建築取代，裡頭有裝潢、家具和家電。數位相機、iPhone，甚至保養品也都買得到。看來，只要輕輕一點，這項古老的華人傳統就換上了新面貌。"
+  ]
+ },
+ {
+  "id": "z102",
+  "year": "102年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "冰旅館：零下十五度的一夜（The Ice Hotel）",
+  "titleStatus": null,
+  "blankCount": 10,
+  "optionCount": 12,
+  "eliminationValid": false,
+  "unusedOptions": [
+   "D",
+   "J"
+  ],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "breath",
+   "G": "moisture",
+   "B": "careful",
+   "H": "offer",
+   "C": "check in",
+   "I": "purpose",
+   "D": "deposit",
+   "J": "sufficient",
+   "E": "frozen",
+   "K": "warm up",
+   "F": "impossible",
+   "L": "withstand"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": "【第一段】引言：零下十五度，每年仍有四千人上門",
+    "segs": [
+     [
+      "People who want to experience an overnight stay in arctic-like cold may try the ice hotel—a building of frozen water. ",
+      null
+     ],
+     [
+      "Despite",
+      "trans"
+     ],
+     [
+      " the seemingly unattractive prospect of sleeping in a room at minus 15 degrees Celsius, every year about 4,000 people ",
+      "topic"
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " to an ice hotel in a town in Canada.",
+      "topic"
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】體感：冷到呼氣結成水珠、鼻尖發麻",
+    "segs": [
+     [
+      "The only warm things at the ice hotel are the candles on the bedside tables.",
+      "topic"
+     ],
+     [
+      " The air is so cold that you can see your ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " , which turns to liquid and appears as tiny droplets at the opening of your sleeping bag. The tip of your nose feels numb—almost as though it were ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " . Getting up for a little while—to drink a glass of water or go to the bathroom—seems ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " without risking death.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】行前說明：該穿什麼、該怎麼做",
+    "segs": [
+     [
+      "Since",
+      "trans"
+     ],
+     [
+      " an adventurous spirit alone is not enough to ",
+      "topic"
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " more than two hours at the icy hotel, the staff briefs guests on what to wear and how to behave.",
+      "topic"
+     ],
+     [
+      " Normal winter boots and outfits ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " little protection from the cold. The guests also learn how to ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " quickly in their arctic sleeping bags and how to prevent eyeglasses from freezing.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】熱水池與睡前提醒",
+    "segs": [
+     [
+      "For individuals who need to escape the cold for a brief period, there are outdoor hot tubs in the hotel courtyard. You should make sure you have stopped sweating before you go to bed, ",
+      null
+     ],
+     [
+      "though",
+      "trans"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "because",
+      "trans"
+     ],
+     [
+      " any ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " freezes immediately. Guests who are not ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " can quickly get cold feet and a blocked nose.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第五段】收尾：住冰旅館真正的理由",
+    "segs": [
+     [
+      "Comfort, ",
+      "gradient"
+     ],
+     [
+      "however",
+      "trans"
+     ],
+     [
+      ", is not the ",
+      "gradient"
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " to stay in the ice hotel.",
+      "gradient"
+     ],
+     [
+      " Guests want to feel like polar explorers. For them, the first hot cup of post-expedition coffee is pure delight.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Comfort, however, is not the ___ to stay in the ice hotel.”",
+  "thesisExplain": "攝氏零下十五度、睡在冰做的房間裡，為什麼每年還有四千人去？前面四段寫的全是「有多不舒服」，最後一段才回答為什麼——中心思想在這裡，關鍵落在第 30 格。這一格前面是 not the、後面接不定詞 to stay，要填的名詞得能後接不定詞當修飾語。全文把答案壓到最後一段，讀者一路累積的疑問在這裡得到解答。寫作上，這種把理由留到最後的排法，比開頭就講理由更有力。",
+  "macro": {
+   "structure": "懸念後解型 — 現象：零下十五度仍有四千人上門 → 體感細節：床頭蠟燭、鼻尖發麻、半夜起身的難處 → 行前說明：該穿什麼、該怎麼做 → 戶外熱水池與睡前提醒 → 最後才給出理由(全文中心思想)",
+   "transitions": "Despite（讓步，聽來毫不吸引人卻仍有人前往）→ so…that（因果，冷到看得見自己吐出的白氣）→ Since（因果，帶出行前說明的理由）→ though（讓步，提醒睡前別出汗）→ however（轉折，收在真正的理由）",
+   "patterns": "說明文 (Exposition) + 懸念解答 (Question and Answer)",
+   "outline": [
+    "1. 現象：明明是零下十五度的房間，每年仍有約四千人上門",
+    "2. 體感：唯一溫暖的是床頭蠟燭；鼻尖發麻，半夜起身簡直像在拚命",
+    "3. 準備：光有冒險精神不夠，館方會先做行前說明",
+    "4. 理由：客人要的不是舒適，而是當一回極地探險家"
+   ]
+  },
+  "zhTranslation": [
+   "想體驗在北極般的酷寒中過一夜的人，可以試試冰旅館——一棟用結冰的水蓋成的建築。儘管睡在攝氏零下十五度的房間裡聽起來一點也不吸引人，每年仍有大約四千人到加拿大某個小鎮的冰旅館辦理住房。",
+   "冰旅館裡唯一溫暖的東西，是床頭桌上的蠟燭。空氣冷到你可以看見自己呼出的氣，那口氣會化成液體，在睡袋開口處凝成細小的水珠。鼻尖麻木得幾乎沒有感覺——彷彿它已經結凍了。想起身一下下——喝杯水或上個廁所——都像是不冒著送命的風險就辦不到。",
+   "光靠一股冒險精神，熬不過在這家冰冷旅館裡待上兩個多鐘頭，因此館方會先向房客說明該穿什麼、該怎麼做。一般的冬季靴子與衣物，對這種寒冷幾乎提供不了什麼保護。房客也會學到，如何在北極級的睡袋裡快速回暖，以及怎麼防止眼鏡結霜。",
+   "對於需要短暫離開寒冷的人，旅館中庭設有戶外熱水池。不過，你得確定自己在上床前已經不再出汗，因為任何濕氣都會立刻結冰。不夠小心的房客，很快就會雙腳冰冷、鼻子不通。",
+   "然而，舒適從來不是入住冰旅館的目的。房客想要的，是感覺自己像個極地探險家。對他們來說，探險結束後的第一杯熱咖啡，就是純粹的享受。"
+  ]
+ },
+ {
+  "id": "zref99",
+  "year": "99課綱參考試卷（102年施測）",
+  "exam": "指考",
+  "examType": "參考試卷",
+  "title": "一張 CD 的三層結構（How a CD Is Made）",
+  "titleStatus": null,
+  "blankCount": 10,
+  "optionCount": 12,
+  "eliminationValid": false,
+  "unusedOptions": [
+   "H",
+   "K"
+  ],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "reliable",
+   "B": "label",
+   "C": "invented",
+   "D": "measurement",
+   "E": "technically",
+   "F": "digitally",
+   "G": "protective",
+   "H": "remotely",
+   "I": "middle",
+   "J": "primitive",
+   "K": "player",
+   "L": "converted"
+  },
+  "flagNote": null,
+  "sourceNote": "本篇出自大考中心公布的參考試卷，不是正式考試的試題，沒有考生作答資料。",
+  "paras": [
+   {
+    "label": "【第一段】CD 的三層構造與亮暗兩面",
+    "segs": [
+     [
+      "A compact disc (CD) is a thin, circular disc of metal and plastic about 12cm in diameter. ",
+      null
+     ],
+     [
+      "It’s actually made of three layers.",
+      "topic"
+     ],
+     [
+      " A CD is made mostly from a plastic base called polycarbonate. Sandwiched in the ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " there is a thin layer of aluminum. ",
+      null
+     ],
+     [
+      "Finally",
+      "trans"
+     ],
+     [
+      ", on top of the aluminum, is a ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " layer of polish to prevent it from being scratched easily. CDs are shiny on one side and dull on the other. The dull side usually has a ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " on it telling you what’s on the CD; ",
+      null
+     ],
+     [
+      "but",
+      "trans"
+     ],
+     [
+      " the shiny side is the important part. It’s shiny so that a laser beam can bounce off the disc and read the information stored on it.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】點出主旨：從唱片、錄音帶到數位取樣，CD 上其實沒有音樂",
+    "segs": [
+     [
+      "Before CDs were ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " , music was typically stored on plastic LP (long-playing) records and cassette tapes. LPs scratched easily, ",
+      null
+     ],
+     [
+      "while",
+      "trans"
+     ],
+     [
+      " tapes could sometimes be distorted entirely. They were not ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " ways of storing music. ",
+      null
+     ],
+     [
+      "In fact",
+      "trans"
+     ],
+     [
+      ", the technology employed by LPs and tapes in storing music was rather ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " compared to that of CDs. On a CD, music is stored ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " —as a long string of numbers. After the music has been recorded, it is ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " into numbers by a process called “sampling.” During the sampling process, an electronic device in a CD measures the sound recorded; ",
+      null
+     ],
+     [
+      "then",
+      "trans"
+     ],
+     [
+      ", the device turns the ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " into a number, and stores it in binary format, ",
+      null
+     ],
+     [
+      "that is",
+      "trans"
+     ],
+     [
+      ", as a long list of ones and zeros . ",
+      null
+     ],
+     [
+      "In other words",
+      "trans"
+     ],
+     [
+      ", there is ",
+      "gradient"
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " no music on a CD at all—just a huge long list of numbers!",
+      "gradient"
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】收尾：三十多年後仍然普及",
+    "segs": [
+     [
+      "Although",
+      "trans"
+     ],
+     [
+      " CDs have been around for more than 30 years, ",
+      "topic"
+     ],
+     [
+      "because of",
+      "trans"
+     ],
+     [
+      " their reliability and compactness they are still a very popular way of storing music and computer data .",
+      "topic"
+     ]
+    ]
+   }
+  ],
+  "thesis": "“In other words, there is ___ no music on a CD at all—just a huge long list of numbers!”",
+  "thesisExplain": "這篇其實是兩件事併在一起講：前半寫 CD 的三層構造，後半寫音樂怎麼變成數字。沒有一句話同時管住兩半，這裡標的是後半的收束句，也是全篇最有力的一句。關鍵落在第 30 格。這一格前面是 there is、後面接 no music，要填的是修飾整句判斷的副詞，意思接近「嚴格說來」；一看到「沒有音樂」就急著找帶否定意味的字，會忽略這一格其實是在替後面的斷言加上限定。第一段的第 21 格則靠 Sandwiched 這個字定位，屬空間關係。寫作上這是「先技術、後翻轉」的科普寫法，第二段最後一句把讀者原本的認知推翻。",
+  "macro": {
+   "structure": "先技術後翻轉型 — 第一段：CD 的三層構造與正反兩面 → 第二段：CD 之前的儲存方式有什麼毛病 → 取樣原理：把聲音變成數字 → 收束：CD 上其實沒有音樂 → 第三段：三十多年後仍然普及",
+   "transitions": "Finally（順序，帶出第三層）→ Before CDs were（時間回溯）→ In fact（補充比較）→ After the music has been recorded（時間承接，帶出取樣）→ In other words（換句話說，收束全段）→ Although（讓步收尾）",
+   "patterns": "說明文 (Exposition) + 過程描述 (Process Description)",
+   "outline": [
+    "1. 構造：直徑約十二公分，塑膠基底、一層薄鋁、最上面一層拋光",
+    "2. 兩面：亮的一面供雷射讀取，霧的一面印著內容說明",
+    "3. 對照：LP 容易刮傷、卡帶可能整卷走樣，都不是好的存放方式",
+    "4. 原理與現況：取樣把聲音化成一長串 1 和 0；三十多年後仍是主流"
+   ]
+  },
+  "zhTranslation": [
+   "光碟（CD）是一片薄薄的圓形碟片，由金屬與塑膠製成，直徑約十二公分。它其實是由三層構成的。CD 主要由一種叫做聚碳酸酯的塑膠基底做成。夾在中間的，是一層薄薄的鋁。最後，在鋁層之上，還有一層具保護作用的拋光層，避免它輕易被刮傷。CD 一面亮、一面霧。霧的那一面通常印有標示，告訴你這張 CD 裡收錄了什麼；但亮的那一面才是重點。它之所以做得光亮，是為了讓雷射光束能從碟面反射回來，讀取儲存在上面的資訊。",
+   "在 CD 被發明出來以前，音樂通常儲存在塑膠製的 LP（密紋唱片）與卡式錄音帶上。LP 很容易刮傷，卡帶則有時候會整卷走樣。它們都不是可靠的音樂儲存方式。事實上，比起 CD，LP 與卡帶在儲存音樂上所用的技術相當原始。在 CD 上，音樂是以數位方式儲存的——存成一長串數字。音樂錄好之後，會透過一種叫做「取樣」的過程被轉換成數字。在取樣的過程中，CD 裡的電子裝置會測量錄下的聲音；接著，這個裝置把測得的數值轉成一個數字，並以二進位格式儲存，也就是存成一長串的 1 和 0。換句話說，嚴格說來 CD 上根本沒有音樂——只有一份巨大而冗長的數字清單！",
+   "雖然 CD 問世已經超過三十年，但由於它可靠又輕巧，至今仍然是儲存音樂與電腦資料非常普遍的方式。"
+  ]
+ },
+ {
+  "id": "z101",
+  "year": "101年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "布袋戲：掌中的舞台（Taiwanese Puppet Show）",
+  "titleStatus": null,
+  "blankCount": 10,
+  "optionCount": 12,
+  "eliminationValid": false,
+  "unusedOptions": [
+   "A",
+   "I"
+  ],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "attracted",
+   "G": "occasions",
+   "B": "appeal",
+   "H": "succeed",
+   "C": "accompanied",
+   "I": "transparent",
+   "D": "conduct",
+   "J": "supporting",
+   "E": "director",
+   "K": "techniques",
+   "F": "figures",
+   "L": "worship"
+  },
+  "flagNote": "本篇與「107 學年度起適用參考試卷」文意選填為同一組題目（正文差 16 個字元）。",
+  "flagKind": ["沿用題指認"],
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": "【第一段】點出主旨：布袋戲是台灣重要的表演藝術",
+    "segs": [
+     [
+      "The Taiwanese puppet show (“Budaixi”) is a distinguished form of performing arts in Taiwan.",
+      "gradient"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Although",
+      "trans"
+     ],
+     [
+      " basically hand puppets, the ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " appear as complete forms, with hands and feet, on an elaborately decorated stage.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】後場音樂與鼓師的角色",
+    "segs": [
+     [
+      "The puppet performance is typically ",
+      "topic"
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " by a small orchestra.",
+      "topic"
+     ],
+     [
+      " The backstage music is directed by the drum player. The drummer needs to pay attention to what is going on in the plot and follow the rhythm of the characters. He also uses the drum to ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " the other musicians. There are generally around four to five musicians who perform the backstage music. The form of music used is often associated with various performance ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " , including acrobatics and skills like window-jumping, stage movement, and fighting. Sometimes unusual animal puppets also appear on stage for extra ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " , especially for children in the audience.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】兩位演師的分工與師徒關係",
+    "segs": [
+     [
+      "In general, a show needs two performers.",
+      "topic"
+     ],
+     [
+      " The main performer is generally the chief or ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " of the troupe. He is the one in charge of the whole show, manipulating the main puppets, singing, and narrating. The ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " performer manipulates the puppets to coordinate with the main performer. He also changes the costumes of the puppets, and takes care of the stage. The relationship between the main performer and his partner is one of master and apprentice. Frequently, the master trains his sons to eventually ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " him as puppet masters.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】演出的場合與用意",
+    "segs": [
+     [
+      "Budaixi troupes are often hired to perform at processions and festivals held in honor of local gods, and on happy ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " such as weddings, births, and promotions. The main purpose of Budaixi is to ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " and offer thanks to the deities. The shows also serve as a popular means of folk entertainment.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“The Taiwanese puppet show (“Budaixi”) is a distinguished form of performing arts in Taiwan.”",
+  "thesisExplain": "第一句就是定義，也是全文中心思想，不含空格。後面三段各補一塊：後場音樂怎麼配、兩位演師怎麼分工、什麼場合演又為什麼演。第 22 格考的是 be accompanied by 這組被動用法，第 23 格要填的動詞得能以樂師為受詞。第 28 格的 succeed 後面接了受詞 him，意思是「接替某人」，不是「成功」。寫作上這是「定義開場、逐面補全」的介紹文，每一段各管一個面向，彼此不重疊。",
+  "macro": {
+   "structure": "定義展開型 — 開篇定義：布袋戲是台灣重要的表演藝術(全文中心思想) → 後場音樂與鼓師的角色 → 兩位演師的分工與師徒關係 → 演出時機與用意",
+   "transitions": "Although（讓步，戲偶雖為掌中操作卻做成完整形體）→ He also（並列，鼓師的第二項職責）→ In general（總說，帶出演師人數）→ Frequently（頻率，帶出師徒傳承）",
+   "patterns": "說明文 (Exposition) + 文化介紹 (Cultural Introduction)",
+   "outline": [
+    "1. 定義與外形：台灣重要的表演藝術；戲偶雖為掌中操作，卻有手有腳",
+    "2. 後場：約四到五位樂師，由鼓師帶頭，音樂隨著劇情與角色節奏走",
+    "3. 演師：主演操偶、演唱並擔任口白，另一位配合並管換裝與舞台，兩人為師徒",
+    "4. 時機與用意：受邀在繞境與廟會中演出，也在婚禮、生子、升遷時登場，兼具民間娛樂"
+   ]
+  },
+  "zhTranslation": [
+   "布袋戲是台灣一種格外出色的表演藝術。這些戲偶基本上是掌中偶，但在裝飾華麗的戲台上，它們以完整的形體現身，有手也有腳。",
+   "布袋戲的演出通常由一個小型樂隊伴奏。後場音樂由鼓師指揮。鼓師必須留意劇情的進展，跟上角色的節奏。他也用鼓來指揮其他樂師。演奏後場音樂的樂師通常有四到五位。所使用的音樂形式，往往與各種演出技巧相配合，包括特技，以及跳窗、走位、對打這類身段功夫。有時候還會有不尋常的動物戲偶登場，增添額外的吸引力，對台下的小朋友尤其有效。",
+   "一般來說，一場戲需要兩位演師。主演通常是劇團的團主或導演。他負責整場戲，操作主要的戲偶、演唱並擔任口白。另一位演師則操作戲偶，配合主演。他也負責替戲偶換裝，並照管舞台。主演與搭檔之間的關係，是師父與徒弟。師父常常訓練自己的兒子，讓他們日後繼承自己，成為掌中戲的師傅。",
+   "布袋戲團常受邀在為地方神明舉辦的繞境與廟會中演出，也在婚禮、生子、升遷這類喜慶的日子登場。布袋戲的主要用意是敬神並向神明表達謝意。這些戲同時也是廣受歡迎的民間娛樂形式。"
+  ]
+ },
+ {
+  "id": "z100",
+  "year": "100年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "文字的六千年（The History of the Written Word）",
+  "titleStatus": null,
+  "blankCount": 10,
+  "optionCount": 12,
+  "eliminationValid": false,
+  "unusedOptions": [
+   "D",
+   "K"
+  ],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "expense",
+   "G": "users",
+   "B": "fading",
+   "H": "rapid",
+   "C": "colors",
+   "I": "gaining",
+   "D": "research",
+   "J": "medium",
+   "E": "replacing",
+   "K": "circular",
+   "F": "offer",
+   "L": "unknown"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": "【第一段】文字的力量，說故事的人受到敬重",
+    "segs": [
+     [
+      "The history of the written word goes back 6,000 years. ",
+      null
+     ],
+     [
+      "Words express feelings, open doors into the ",
+      "topic"
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " , create pictures of worlds never seen, and allow adventures never dared.",
+      "topic"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Therefore",
+      "trans"
+     ],
+     [
+      ", the original ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " of words, such as storytellers, poets, and singers, were respected in all cultures in the past.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】點出主旨：影像文化取代文字",
+    "segs": [
+     [
+      "But",
+      "trans"
+     ],
+     [
+      " now the romance is ",
+      "topic"
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " .",
+      "topic"
+     ],
+     [
+      " Imagination is being surpassed by the instant picture. In a triumphant march, movies, TV, videos, and DVDs are ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " storytellers and books. ",
+      null
+     ],
+     [
+      "A visual culture is taking over the world—at the ",
+      "thesis"
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " of the written word.",
+      "thesis"
+     ],
+     [
+      " Our literacy, and with it our verbal and communication skills, are in ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " decline.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】例外：圖像小說逆勢成長",
+    "segs": [
+     [
+      "The only category of novel that is ",
+      "topic"
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " ground in our increasingly visual world is the graphic novel.",
+      "topic"
+     ],
+     [
+      " A growing number of adults and young people worldwide are reading graphic novels, and educators are beginning to realize the power of this ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " . The graphic novel looks like a comic book, ",
+      null
+     ],
+     [
+      "but",
+      "trans"
+     ],
+     [
+      " it is longer, more sophisticated, and may come in black and white or multiple ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " and appear in many sizes. ",
+      null
+     ],
+     [
+      "In fact",
+      "trans"
+     ],
+     [
+      ", some of the most interesting, daring, and most heartbreaking art being created right now is being published in graphic novels. Graphic novels ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " the opportunity to examine the increasingly visual world of communications today while exploring serious social and literary topics. The graphic novel can be used to develop a sense of visual literacy, in much the same way that students are introduced to art appreciation.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“A visual culture is taking over the world—at the ___ of the written word.”",
+  "thesisExplain": "六千年的文字史，第一段寫得像一篇頌詞；第二段一個 But 之後全部翻轉，這一句就是翻轉後的結論，也是全文中心思想，關鍵落在第 25 格。這一格前面是 at the、後面接 of，兩個介系詞把名詞的位置框死，要填的字得能跟 at the … of 連成「以某物為代價」的整組意思；只看句意去挑「損失」「消失」一類的字，跟這組介系詞就搭不起來。第三段再一轉，指出唯一的例外，全文因此不是單向的哀嘆。寫作上這是「頌—轉—例外」的三拍結構，最後那一拍讓論點站得住。",
+  "macro": {
+   "structure": "頌轉例外型 — 第一段：文字的力量與說故事者的地位 → But 轉折：視覺文化壓過文字(全文中心思想) → 第三段再轉：圖像小說是唯一的例外 → 收尾：可用來培養視覺識讀",
+   "transitions": "Therefore（因果，帶出說故事者受敬重的理由）→ But now（轉折，全文的分水嶺）→ In a triumphant march（比喻，形容影像的推進）→ In fact（補充，強化圖像小說的分量）",
+   "patterns": "說明文 (Exposition) + 對比論述 (Contrast)",
+   "outline": [
+    "1. 文字的力量：表達情感、造出從未見過的世界、帶來不敢想的冒險",
+    "2. 轉折：想像力被即時影像超越，電影、電視與 DVD 大舉推進",
+    "3. 例外：圖像小說是唯一還在成長的小說類型，讀者與教育界都在增加",
+    "4. 價值：外形像漫畫卻更長更複雜，可用來培養視覺識讀能力"
+   ]
+  },
+  "zhTranslation": [
+   "文字的歷史可以回溯到六千年前。文字表達情感，推開通往未知的門，造出從未有人見過的世界，也讓人得以展開從不敢想的冒險。因此，最早的那批文字使用者——說故事的人、詩人、歌者——在過去的每一種文化裡都受到敬重。",
+   "但如今，這份浪漫正在褪去。想像力被即時的影像超越。電影、電視、錄影帶與 DVD 以凱旋般的姿態行進，取代了說故事的人與書本。視覺文化正在接管世界——代價是文字。我們的識讀能力，連同我們的口語與溝通能力，正在急速衰退。",
+   "在這個愈來愈視覺化的世界裡，唯一還在壯大的小說類型是圖像小說。全世界有愈來愈多的成人與年輕人在讀圖像小說，教育工作者也開始意識到這種媒介的力量。圖像小說看起來像漫畫書，但篇幅更長、更為精緻複雜，可能是黑白的，也可能有多種顏色，開本大小不一。事實上，此刻正在創作的作品裡，有些最有意思、最大膽、也最令人心碎的藝術，就發表在圖像小說裡。圖像小說提供了一個機會，讓人得以檢視今日愈來愈視覺化的傳播世界，同時探討嚴肅的社會與文學題材。圖像小說可以用來培養視覺識讀能力，就像引導學生認識藝術欣賞那樣。"
+  ]
+ },
+ {
+  "id": "z99",
+  "year": "99年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "火星文的興起（Textese）",
+  "titleStatus": null,
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "quickly",
+   "B": "criticized",
+   "C": "likely",
+   "D": "abbreviated",
+   "E": "replace",
+   "F": "remove",
+   "G": "standard",
+   "H": "ignorance",
+   "I": "popularity",
+   "J": "symbol"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": "【第一段】定義：火星文是什麼，在哪裡使用",
+    "segs": [
+     [
+      "Textese (also known as chatspeak, texting language, or txt talk) is a term for the abbreviations and slang most commonly used among young people today.",
+      "topic"
+     ],
+     [
+      " The ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " of textese is largely due to the necessary brevity of mobile phone text messaging, ",
+      null
+     ],
+     [
+      "though",
+      "trans"
+     ],
+     [
+      " its use is also very common on the Internet, including e-mail and instant messaging.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】寫法：用字母、圖形、數字代替整字，省略母音",
+    "segs": [
+     [
+      "There are no ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " rules for writing textese. ",
+      null
+     ],
+     [
+      "However",
+      "trans"
+     ],
+     [
+      ", the common practice is to use single letters, pictures, or numbers to represent whole words.",
+      "topic"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "For example",
+      "trans"
+     ],
+     [
+      ", “i <3 u” uses the picture ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " of a heart “<3” for “love,” and the letter “u” to ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " “you.” For words which have no common abbreviation, textese users often ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " the vowels from a word, and the reader is forced to interpret a string of consonants by re-adding the vowels. ",
+      null
+     ],
+     [
+      "Thus",
+      "trans"
+     ],
+     [
+      ", “dictionary” becomes “dctnry,” and “keyboard” becomes “kybrd.” The reader must interpret the ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " words depending on the context in which it is used, ",
+      null
+     ],
+     [
+      "as",
+      "trans"
+     ],
+     [
+      " there are many examples of words or phrases which use the same abbreviations. ",
+      null
+     ],
+     [
+      "So",
+      "trans"
+     ],
+     [
+      " if someone says “ttyl, lol” they probably mean “talk to you later, lots of love” not “talk to you later, laugh out loud,” and if someone says “omg, lol” they most ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " mean “oh my god, laugh out loud” not “oh my god, lots of love.”",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】成因與批評：為了少打字，卻遭學者批評",
+    "segs": [
+     [
+      "The emergence of textese is clearly due to a desire to type less and to communicate more ",
+      "thesis"
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " than one can manage without such shortcuts.",
+      "thesis"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Yet",
+      "trans"
+     ],
+     [
+      " it has been severely ",
+      "topic"
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " as “wrecking our language.”",
+      "topic"
+     ],
+     [
+      " Some scholars even consider the use of textese as “irritating” and essentially lazy behavior. They’re worried that “sloppy” habits gained while using textese will result in students’ growing ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " of proper spelling, grammar and punctuation.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“The emergence of textese is clearly due to a desire to type less and to communicate more ___ than one can manage without such shortcuts.”",
+  "thesisExplain": "前兩段講的是「是什麼」與「怎麼寫」，第三段第一句才回答「為什麼會有」——中心思想在這裡，關鍵落在第 28 格。這一格前面是 communicate、後面接 than，more + 修飾語 + than 這一整組把詞性框死，要填的是修飾動詞的副詞；只想到「快」這個意思，沒注意到這組結構，就會挑到形容詞。緊接著的 Yet 一轉，把整篇從「為什麼會出現」推到「代價是什麼」，第 29 與第 30 格全落在反面那一半。寫作上這是「先給理由、再給反面」的收法，論點才不會只有一邊。",
+  "macro": {
+   "structure": "現象解釋型 — 定義 textese 並說明它為什麼四處可見 → 寫法：字母、圖形、數字表示整字，並只留子音 → 成因：想少打字、少花時間(全文中心思想) → Yet 轉折：學者的疑慮",
+   "transitions": "though（讓步，補上簡訊以外的使用場合）→ However（轉折，帶出實際的通行做法）→ For example（舉例）→ Thus（結果，示範只留子音的寫法）→ Yet（轉折，從成因翻到反面意見）",
+   "patterns": "說明文 (Exposition) + 現象解釋 (Phenomenon Explanation)",
+   "outline": [
+    "1. 定義：textese 是年輕人常用的縮寫與俚語，起因於簡訊必須簡短",
+    "2. 寫法：以單一字母、圖形或數字表示整個字；沒有通用寫法時只留子音",
+    "3. 判讀：同一組寫法可能對應好幾個說法，得靠上下文決定",
+    "4. 成因與反面：源自想少打字、少花時間；卻有學者認為它正在毀壞語言"
+   ]
+  },
+  "zhTranslation": [
+   "火星文（textese，也稱作 chatspeak、texting language 或 txt talk）是一個統稱，指的是今天年輕人之間最常使用的縮寫與俚語。火星文之所以廣為流行，主要是因為手機簡訊必須簡短；不過它在網路上也很常見，包括電子郵件與即時通訊。",
+   "書寫火星文沒有標準的規則。不過通行的做法，是用單一字母、圖形或數字來代表一整個字。舉例來說，「i <3 u」用「<3」這個心形的圖形符號代表 love，用字母 u 代替 you。碰到沒有通用縮寫的字，火星文的使用者常常把字裡的母音拿掉，讀的人就得自己把母音補回去，才能解讀一長串子音。於是「dictionary」變成「dctnry」，「keyboard」變成「kybrd」。讀的人必須依照上下文來判讀這些被縮寫過的字，因為有很多字或片語共用同一組縮寫。所以如果有人說「ttyl, lol」，他們指的多半是「talk to you later, lots of love」，而不是「talk to you later, laugh out loud」；如果有人說「omg, lol」，那他們最有可能指的是「oh my god, laugh out loud」，而不是「oh my god, lots of love」。",
+   "火星文的出現，顯然出於一種想少打幾個字、並且溝通得比沒有這些捷徑時更快的渴望。然而它也遭到嚴厲批評，被說成是「正在毀壞我們的語言」。有些學者甚至認為使用火星文「很惱人」，本質上是一種懶惰的行為。他們擔心，使用火星文時養成的「馬虎」習慣，會導致學生對正確的拼字、文法與標點日益無知。"
+  ]
+ },
+ {
+  "id": "z98",
+  "year": "98年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "購物成癮的心理（Oniomania）",
+  "titleStatus": null,
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "support",
+   "B": "qualify",
+   "C": "affection",
+   "D": "ashamed",
+   "E": "make up for",
+   "F": "leaving",
+   "G": "turn to",
+   "H": "buying",
+   "I": "self-esteem",
+   "J": "contentment"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": "【第一段】點出主旨：購物成癮的定義與心理循環",
+    "segs": [
+     [
+      "Oniomania is the technical term for the compulsive desire to shop, more commonly referred to as compulsive shopping or shopping addiction.",
+      "gradient"
+     ],
+     [
+      " Victims often experience feelings of ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " when they are in the process of purchasing, which seems to give their life meaning while letting them forget about their sorrows. Once ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " the environment where the purchasing occurred, the feeling of a personal reward would be gone. To compensate, the addicted person would go shopping again. ",
+      null
+     ],
+     [
+      "Eventually",
+      "trans"
+     ],
+     [
+      " a feeling of suppression will overcome the person. ",
+      null
+     ],
+     [
+      "For example",
+      "trans"
+     ],
+     [
+      ", cases have shown that the bought goods will be hidden or destroyed, ",
+      null
+     ],
+     [
+      "because",
+      "trans"
+     ],
+     [
+      " the person concerned feels ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " of their addiction and tries to conceal it. He or she is either regretful or depressed. In order to cope with the feelings, the addicted person is prompted to ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " another purchase.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】成因：童年經驗；收尾：美國約 8.9% 的人口",
+    "segs": [
+     [
+      "Compulsive shopping often begins at an early age.",
+      "topic"
+     ],
+     [
+      " Children who experienced parental neglect often grew up with low ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "because",
+      "trans"
+     ],
+     [
+      " throughout much of their childhood they felt that they were not important as a person. ",
+      null
+     ],
+     [
+      "As a result",
+      "trans"
+     ],
+     [
+      ", they used toys to ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " their feelings of loneliness. ",
+      null
+     ],
+     [
+      "Because of",
+      "trans"
+     ],
+     [
+      " the ongoing sentiment of deprivation they endured as children, adults that have depended on materials for emotional ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " when they were much younger are more likely to become addicted to shopping. During adulthood, the purchase, ",
+      null
+     ],
+     [
+      "instead of",
+      "trans"
+     ],
+     [
+      " the toy, is substituted for ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " . The victims are unable to deal with their everyday problems, especially those that alter their self-esteem. Important issues in their lives are repressed by ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " something. According to studies, as many as 8.9 percent of the American population ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " as compulsive buyers. Research has also found that men and women suffer from this problem at about the same rate.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Oniomania is the technical term for the compulsive desire to shop, more commonly referred to as compulsive shopping or shopping addiction.”",
+  "thesisExplain": "開篇先給一個專有名詞下定義，這是學術性說明文最常見的起手式，中心思想就在這裡，不含空格。這個定義句管住了全篇的方向：第一段寫成癮者當下的心理循環，第二段回頭追溯童年成因。第 22 格考的是分詞構句省略主詞後留下的形式，第 24 格的 turn to 與第 26 格的 make up for 都是動詞片語，必須整組記；只掌握單字意思，這三格都容易踩空。寫作上這是「定義—現象—成因」的三段式：先讓讀者知道在談什麼，再談它長什麼樣子，最後才問它從哪裡來。",
+  "macro": {
+   "structure": "定義展開型 — 開篇為 Oniomania 下定義(全文中心思想) → 現象：購買當下與事後的心理循環 → 追溯童年經驗 → 數據收尾：約 8.9% 的美國人，男女比例相近",
+   "transitions": "Once（時間條件，帶出情緒的轉折）→ To compensate（目的，說明再次購物的理由）→ For example（舉例佐證）→ As a result（因果，從覺得自己不重要帶出靠玩具排遣孤單）→ According to studies（數據佐證）",
+   "patterns": "說明文 (Exposition) + 因果分析 (Cause and Effect)",
+   "outline": [
+    "1. 定義：Oniomania 指強迫性的購物慾望，俗稱購物成癮",
+    "2. 現象：購買當下彷彿人生有了意義，一旦不在那個場景，獎賞感就消失",
+    "3. 掩飾：把買來的東西藏起來或毀掉，接著後悔或消沉",
+    "4. 成因與數據：童年經驗與成年後的購物行為相連；約 8.9% 的美國人屬於這一類"
+   ]
+  },
+  "zhTranslation": [
+   "Oniomania 是強迫性購物慾望的專門術語，一般更常被稱為強迫性購物或購物成癮。患者在購買的過程中往往會體驗到一種滿足感，這種感覺似乎讓他們的人生有了意義，同時讓他們忘掉自己的煩惱。一旦離開了發生購買行為的那個場所，這種自我獎賞的感覺就會消失。為了彌補，成癮者會再去購物一次。最終，一種壓抑感會籠罩這個人。舉例來說，已有案例顯示，買來的東西會被藏起來或毀掉，因為當事人對自己的成癮感到羞愧，並試圖掩飾。他或她不是懊悔，就是消沉。為了應付這些情緒，成癮者又被驅使著去進行下一次購買。",
+   "強迫性購物往往在很小的時候就開始了。曾經歷父母忽略的孩子，長大過程中常常自我價值低落，因為在童年的大半時間裡，他們覺得自己作為一個人並不重要。結果，他們用玩具來彌補自己的孤獨感。由於童年時期持續承受著匱乏的感受，那些在年幼時就依賴物質換取情感支持的成年人，日後比較容易對購物成癮。到了成年階段，取代玩具、被拿來替代情感的，變成了「購買」這件事。這些人無法處理日常生活中的問題，特別是那些會動搖自我價值的問題。生命中重要的課題，被「買點什麼」這個動作壓了下去。根據研究，多達 8.9% 的美國人口符合強迫性購物者的標準。研究也發現，男性與女性受此問題困擾的比例大致相同。"
+  ]
+ },
+ {
+  "id": "zref95",
+  "year": "95課綱參考試卷（98年施測）",
+  "exam": "指考",
+  "examType": "參考試卷",
+  "title": "業餘天文學家的典範：赫歇爾（William Herschel）",
+  "titleStatus": null,
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "day",
+   "B": "strange",
+   "C": "cloudy",
+   "D": "identified",
+   "E": "assistance",
+   "F": "undetected",
+   "G": "profession",
+   "H": "polished",
+   "I": "persisted",
+   "J": "observation"
+  },
+  "flagNote": null,
+  "sourceNote": "本篇出自大考中心公布的參考試卷，不是正式考試的試題，沒有考生作答資料。",
+  "paras": [
+   {
+    "label": "【第一段】點出主旨：業餘天文學家的典範赫歇爾；白天教音樂，晚上觀星、磨鏡，發現天王星的經過",
+    "segs": [
+     [
+      "If amateur astronomers look to someone as their ideal, it is undoubtedly William Herschel.",
+      "gradient"
+     ],
+     [
+      " He was a musician by ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " —",
+      null
+     ],
+     [
+      "first",
+      "trans"
+     ],
+     [
+      " in a German band, ",
+      null
+     ],
+     [
+      "then",
+      "trans"
+     ],
+     [
+      " in the English spa town of Bath, where he played the oboe in an orchestra, served as organist in a church and gave music lessons. By ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " , that is. By night he was an astronomer when skies were clear and a mirror maker when they were ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " . He personally ground and ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " the mirrors for his telescopes—more than two hundred of them! People wondered when Herschel ever found time to sleep. He spent most of his time at night observing stars, with the faithful ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " of his sister Caroline. Scanning the solar system for as yet ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " objects, he compiled lists of double stars, colored stars and nebulas (i.e., clouds of dust and gas that are to become stars). His first major discovery, in 1774, was the Great Nebula in Orion, which modern astrophysicists have since ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " as a “nursery” for new stars. In the course of his systematic ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " of star fields, he detected a peculiar object. The entry in his log for March 13, 1781 includes a note about a ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " nebulous star that he “suspected to be a comet.” ",
+      null
+     ],
+     [
+      "Since",
+      "trans"
+     ],
+     [
+      " the object moved during the next few nights, Herschel ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " in this belief. On April 26, he submitted his findings to the Royal Society in a paper entitled “Account of a Comet.”",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“If amateur astronomers look to someone as their ideal, it is undoubtedly William Herschel.”",
+  "thesisExplain": "白天在樂團吹雙簧管、教音樂，入夜後看星星，天候不許可就磨鏡片，兩百多面反射鏡全是自己做的——第一句先把結論講在前面：業餘天文學家心中的典範就是他。中心思想不含空格，但它決定了整篇的讀法：後面每一句都在替「典範」兩字舉證。全篇只有一段，時間線卻很清楚，最後收在一七八一年那則紀錄。第 21 格的 by profession 與第 22 格的 by day 是同一組對照，兩格要一起看；單看一格，很容易挑到意思沾得上邊卻搭不起來的字。寫作上這是「先下判斷、再排證據」的人物寫法。",
+  "macro": {
+   "structure": "先判後證型 — 開篇下判斷：業餘天文學家的典範(全文中心思想) → 本業與副業的對照 → 自製器材與家人相伴 → 發現與紀錄：星雲清單與獵戶座大星雲 → 收尾：一七八一年那則「疑似彗星」的紀錄",
+   "transitions": "first…then（時間推進，交代音樂本業的兩段經歷）→ In the course of（時間背景，帶出關鍵發現）→ Since（因果，說明判斷的依據）→ i.e.（補充定義，解釋星雲是什麼）",
+   "patterns": "記敘文 (Narrative) + 人物側寫 (Profile)",
+   "outline": [
+    "1. 判斷：業餘天文學家心中的典範，非 William Herschel 莫屬",
+    "2. 對照：樂團樂手與音樂教師，入夜後看星星，天候不許可就磨鏡片",
+    "3. 器材與家人：親手磨出兩百多面鏡子，妹妹 Caroline 長年在旁",
+    "4. 成果：一七七四年發現獵戶座大星雲；一七八一年記下一顆「疑似彗星」的天體"
+   ]
+  },
+  "zhTranslation": [
+   "如果業餘天文學家心中有一個理想的典範，那毫無疑問就是 William Herschel。就職業而言，他是個音樂家——先是在一支德國樂團裡，後來到了英格蘭的溫泉小鎮 Bath，在管弦樂團吹雙簧管、在教堂擔任管風琴師，還教授音樂課。這說的是白天。到了夜裡，天空晴朗時他是天文學家，天上有雲時他就成了鏡片工匠。他自己親手研磨、拋光望遠鏡用的反射鏡——一共兩百多面！大家都很好奇，Herschel 究竟什麼時候才睡覺。他大部分的夜晚都在觀測星星，身旁始終有妹妹 Caroline 忠實的協助。他在太陽系裡搜尋那些尚未被偵測到的天體，整理出雙星、有色恆星與星雲（也就是日後將形成恆星的塵埃與氣體雲）的清單。他在一七七四年的第一項重大發現是獵戶座大星雲，現代天文物理學家後來確認那是新恆星的「育嬰房」。在他有系統地觀測星野的過程中，他察覺到一個特殊的天體。他一七八一年三月十三日的觀測紀錄裡，寫下了一顆奇特的雲霧狀星體，他「懷疑那是一顆彗星」。由於這個天體在接下來幾個晚上持續移動，Herschel 便堅持這個看法。四月二十六日，他向皇家學會提交了一篇名為〈彗星報告〉的論文。"
+  ]
+ },
+ {
+  "id": "z97",
+  "year": "97年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "運動員的日常（Life as an Athlete）",
+  "titleStatus": null,
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "options": {
+   "A": "conform",
+   "B": "prevent",
+   "C": "obey",
+   "D": "guidance",
+   "E": "excellent",
+   "F": "techniques",
+   "G": "professional",
+   "H": "team",
+   "I": "at risk",
+   "J": "to the limit"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": "【第一段】比賽本身：規則、團體與個人項目、各種層級",
+    "segs": [
+     [
+      "Athletes and sports competitors compete in organized, officiated sports events to entertain spectators.",
+      "topic"
+     ],
+     [
+      " When playing a game, athletes are required to understand the strategies of their game and ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      " the rules and regulations of the sport. The events in which they compete include both ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " sports, such as baseball, basketball, and soccer, and individual sports, such as golf, tennis, and bowling. The level of play varies from unpaid high school athletics to ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " sports, in which the best from around the world compete in events broadcast on international television.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】點出主旨：當運動員不只是上場比賽",
+    "segs": [
+     [
+      "Being an athlete involves more than competing in athletic events.",
+      "gradient"
+     ],
+     [
+      " Athletes spend many hours each day practicing skills and improving teamwork under the ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " of a coach or a sports instructor. They view videotapes not only to critique their own performances and ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " but also to learn their opponents’ tendencies and weaknesses to gain a competitive advantage. Some athletes work regularly with strength trainers to gain muscle and to ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " injury. Many athletes push their bodies ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " during both practice and play, ",
+      null
+     ],
+     [
+      "so",
+      "trans"
+     ],
+     [
+      " career-ending injury always is a risk. Even minor injuries may put a player ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " of replacement. ",
+      null
+     ],
+     [
+      "Because",
+      "trans"
+     ],
+     [
+      " competition at all levels is extremely intense and job security is always unstable, many athletes train year round to maintain ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " form and technique and peak physical condition. Athletes also must ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " to strictly controlled diets during their sports season to supplement any physical training program.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Being an athlete involves more than competing in athletic events.”",
+  "thesisExplain": "第一段講的是比賽本身：戰術、規則、團體或個人項目、從高中到最高層級。第二段第一句一轉，把話推到比賽以外——這一句才是全文中心思想，不含空格，卻決定了第二段每一格的方向：影片研究、體能訓練、飲食控制，全都不是「比賽」而是「比賽之外」。第 37 格的 to the limit 與第 38 格的 at risk 都是固定片語，要整組記；第 40 格考的是 conform to 這組動詞加介系詞的搭配，只憑中文語感選會錯。寫作上這是「先立後轉」：先把讀者以為的那一面寫足，再用一句話把範圍推開。",
+  "macro": {
+   "structure": "先立後轉型 — 第一段：比賽本身(戰術、規則、項目類型、層級) → 第二段首句轉折：當運動員不只是上場比賽(全文中心思想) → 展開：教練陪練、影片研究、體能訓練、傷病風險、賽季飲食",
+   "transitions": "When playing a game（情境設定）→ The level of play varies from…to（層級對比）→ involves more than（轉折，把範圍推開）→ not only…but also（並列兩個目的）→ Because（因果，解釋長年訓練的理由）",
+   "patterns": "說明文 (Exposition) + 職業描述 (Occupational Description)",
+   "outline": [
+    "1. 比賽面：戰術與規則都要掌握，項目分成兩大類",
+    "2. 層級：從沒有酬勞的高中校隊，到國際電視轉播的最高層級",
+    "3. 轉折：當一名運動員，遠不只是上場比賽",
+    "4. 場外面：跟教練練、看影片摸清對手、重量訓練、傷病風險、賽季飲食"
+   ]
+  },
+  "zhTranslation": [
+   "運動員與競技選手在有組織、有裁判的運動賽事中競賽，以娛樂觀眾。比賽時，運動員必須理解該項運動的戰術，並遵守這項運動的規則與規定。他們參與的賽事包括團體運動，例如棒球、籃球和足球，也包括個人運動，例如高爾夫、網球和保齡球。競技的層級各有不同，從沒有酬勞的高中校隊，一直到職業運動——在職業層級，世界各地的頂尖好手在國際電視轉播的賽事中一較高下。",
+   "當一名運動員，遠不只是參加比賽而已。運動員每天要花上好幾個小時，在教練或運動指導員的指導下磨練技術、改善團隊默契。他們看比賽錄影，不只是為了檢討自己的表現與技巧，也是為了摸清對手的習慣與弱點，好取得競爭優勢。有些運動員會定期與體能教練合作，增加肌肉並預防運動傷害。許多運動員在練習與比賽時都把身體逼到極限，因此隨時可能發生足以終結職業生涯的傷病。就算是小傷，也可能讓球員面臨被取代的風險。由於各個層級的競爭都極為激烈、工作又毫無保障，許多運動員全年無休地訓練，以維持絕佳的競技狀態與技術，以及巔峰的體能。運動員在賽季期間還必須遵守嚴格控管的飲食，來搭配各項體能訓練計畫。"
+  ]
+ },
+ {
+  "id": "z96",
+  "year": "96年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "超市裡的心理戰（Psychological Warfare in the Supermarket）",
+  "titleStatus": null,
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "options": {
+   "A": "powerful",
+   "B": "expensive",
+   "C": "likely",
+   "D": "informed",
+   "E": "persuades",
+   "F": "increases",
+   "G": "influence",
+   "H": "privacy",
+   "I": "product",
+   "J": "satisfaction"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": "【第一段】點出主旨：逛超市是一場心理戰；氣味與陳列高度",
+    "segs": [
+     [
+      "A trip to the supermarket has now become an exercise in psychological warfare.",
+      "gradient"
+     ],
+     [
+      " Shopkeepers know that filling a store with the smell of freshly baked bread makes people feel hungry and ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      " them to buy more food than they intended. Stocking the most ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " products at eye level helps them sell faster than cheaper but less visible competitors.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】群體智慧：貨架螢幕告訴你別人買了什麼",
+    "segs": [
+     [
+      "Researchers on customer behavior are now investigating how “swarm intelligence” (that is, how social animals like ants or bees behave in a crowd) can be used to ",
+      "topic"
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " what people buy.",
+      "topic"
+     ],
+     [
+      " The idea is that, if a certain product is seen to be popular, shoppers are ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " to choose it too. With the help of modern technology, some supermarkets are now able to keep customers ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " about what others are buying. As a customer walks past a shelf of goods in one of these supermarkets, a screen on the shelf will tell him how many people currently in the store have chosen that particular ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " . As it turns out, such a “swarm moves” model ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " sales without the need to give people discounts. The reason is simple: it gives shoppers the ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " of knowing that they bought the “right” product—that is, the one everyone else bought.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】延伸：同一套心理學搬到網路",
+    "segs": [
+     [
+      "The psychology that works in physical stores is just as ",
+      "topic"
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " on the Internet.",
+      "topic"
+     ],
+     [
+      " Online retailers such as Amazon are good at telling shoppers which products are popular with like-minded consumers. Even in the ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " of your home, you can still be part of the swarm.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“A trip to the supermarket has now become an exercise in psychological warfare.”",
+  "thesisExplain": "逛個超市也是一場心理戰——第一段第一句就把全文的調子定完，後面兩段都在替這句話舉證：先是麵包香氣與陳列高度，再是「群體智慧」螢幕，最後把場景搬到網路。中心思想不含空格，但它管住了整篇的解題方向：每一格都在描述商家怎麼影響顧客，選項只要跟這條線對不上就可以先排除。第二段的第 34 格是 be likely to 這一整組，第 38 格要填的是抽象名詞當受詞，兩題都靠空格所在句的結構定案。寫作上這是「一句定調、兩段舉證」的標準骨架，主題句先亮出立場，證據依序補上。",
+  "macro": {
+   "structure": "一句定調型 — 開篇即下判斷：逛超市是一場心理戰(全文中心思想) → 舉證一：氣味與陳列高度 → 舉證二：群體智慧與貨架螢幕 → 延伸：同一套心理學搬到網路",
+   "transitions": "Stocking…helps（並列，帶出第二項手法）→ The idea is that（說明原理）→ With the help of modern technology（帶出新手法）→ As it turns out（結果揭曉）→ The reason is simple（解釋原因）→ Even in（讓步收尾）",
+   "patterns": "說明文 (Exposition) + 主張舉證 (Claim and Evidence)",
+   "outline": [
+    "1. 定調：上一趟超市已經是一場心理戰",
+    "2. 手法一：現烤麵包的香氣讓人覺得餓，以及把某些商品擺在視線高度",
+    "3. 手法二：以群體智慧為本，用貨架螢幕告訴顧客別人選了什麼",
+    "4. 延伸：網路零售商同樣操作這一套，待在家裡也躲不掉"
+   ]
+  },
+  "zhTranslation": [
+   "如今上一趟超市，等於是進行一場心理戰。店家知道，讓店裡充滿現烤麵包的香氣會讓人覺得餓，說服他們買下比原本打算更多的食物。把最貴的商品陳列在視線高度，能讓這些商品賣得比更便宜、卻不那麼顯眼的競爭對手更快。",
+   "研究顧客行為的學者，現在正在探究「群體智慧」（也就是螞蟻、蜜蜂這類社會性動物在群體中的行為模式）可以怎麼用來影響人們買什麼。這個想法是：如果某項商品看起來很受歡迎，顧客也會傾向選它。藉助現代科技，有些超市現在能讓顧客隨時知道別人正在買什麼。當顧客走過這類超市的貨架時，架上的螢幕會告訴他，目前店裡有多少人選了那項特定商品。結果證明，這種「群體移動」模式不必打折就能提高銷售。原因很簡單：它讓購物的人得到一種滿足感——知道自己買對了東西，也就是大家都在買的那一個。",
+   "在實體店裡奏效的心理學，搬到網路上一樣有力。像 Amazon 這樣的網路零售商，很擅長告訴消費者哪些商品受到同類型顧客的青睞。就算待在自家不受打擾的空間裡，你依然是那個群體的一分子。"
+  ]
+ },
+ {
+  "id": "z95",
+  "year": "95年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "離婚之後，孩子歸誰（Child Custody After Divorce）",
+  "titleStatus": null,
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "options": {
+   "A": "award",
+   "B": "challenged",
+   "C": "concerned",
+   "D": "consequence",
+   "E": "divorce",
+   "F": "fight",
+   "G": "increase",
+   "H": "took place",
+   "I": "traditional",
+   "J": "unusual"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": "【第一段】現象：離婚普遍，監護權過去自動判給母親",
+    "segs": [
+     [
+      "With one out of every two American marriages ending in divorce, custody of children has become an issue in the American society. Up until the late 1970s, it had been common practice in the United States to automatically ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      " custody to the mother when a divorce occurred.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】舊慣例鬆動，實際上仍多判給母親",
+    "segs": [
+     [
+      "However",
+      "trans"
+     ],
+     [
+      ", since the 1970s, this practice has been ",
+      "topic"
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " .",
+      "topic"
+     ],
+     [
+      " Most custody battles today are decided, in theory, on the basis of who is the more fit parent for the child. The reality, ",
+      null
+     ],
+     [
+      "nevertheless",
+      "trans"
+     ],
+     [
+      ", is that most women still win custody of their children in a ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " .",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】成因：六〇、七〇年代的社會變遷",
+    "segs": [
+     [
+      "This legal change was the result of the social changes that ",
+      "topic"
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " in the United States during the 1960s and 1970s.",
+      "topic"
+     ],
+     [
+      " These changes challenged many of the ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " roles men and women were expected to play. As a ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " , it is not uncommon nowadays to find women working outside their homes and being very ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " about their careers and personal lives. It is also not ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " to see men accepting roles that were once considered the exclusive domain of women, such as shopping for groceries, driving their children to and from school, or cleaning their homes.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】點出主旨：爭取並取得監護權的父親變多",
+    "segs": [
+     [
+      "Because of",
+      "trans"
+     ],
+     [
+      " the ",
+      "gradient"
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " in the divorce rate, the change in the roles that men and women are expected to play, and the changing attitude of the judicial system toward child custody, more men have started to ",
+      "gradient"
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " for and win custody of their children when divorce occurs.",
+      "gradient"
+     ]
+    ]
+   }
+  ],
+  "thesis": "“more men have started to ___ for and win custody of their children when divorce occurs”",
+  "thesisExplain": "全文四段走的是一條因果線：早年監護權多半歸母親 → 一九七〇年代起這個做法鬆動 → 背後是那十幾年的社會變遷 → 於是有了最後這個結果。中心思想落在最後一段的主要子句，關鍵在第 40 格。這一格後面接 for，要填的動詞得能跟 for 連成「為了某件事而爭取」的整組意思；只挑一個中文語感像「取得」的字，跟後面的 for 就接不起來。最後一段開頭一口氣列了三個原因，主要子句壓到最後才出現，這是英文常見的先因後果寫法。指考作文要寫社會變遷帶來的改變，這個排法可以直接借。",
+  "macro": {
+   "structure": "因果推演型 — 現象與舊慣例(離婚時監護權多半歸母親) → 舊慣例開始鬆動 → 追溯成因：六〇、七〇年代的社會變遷 → 結果：取得監護權的父親變多(全文中心思想)",
+   "transitions": "However（轉折，帶出舊慣例的鬆動）→ nevertheless（讓步，理論與現實仍有落差）→ This legal change was the result of（明示因果的接點）→ It is also（並列，補上另一半的角色鬆動）→ Because of（總結三項原因，帶出結論）",
+   "patterns": "說明文 (Exposition) + 因果分析 (Cause and Effect)",
+   "outline": [
+    "1. 現象：美國離婚率高，子女監護權成為社會議題",
+    "2. 轉變：理論上改看誰更適任，實際上母親仍多半勝出",
+    "3. 成因：六〇、七〇年代的社會變遷，鬆動了男女各自被期待扮演的角色",
+    "4. 結果：離婚時最終取得子女監護權的父親變多"
+   ]
+  },
+  "zhTranslation": [
+   "美國每兩對婚姻就有一對以離婚收場，子女監護權因而成為美國社會的一個議題。一直到一九七〇年代後期為止，美國的通行做法都是：一旦發生離婚，監護權就自動判給母親。",
+   "然而，一九七〇年代以來，這個做法開始受到挑戰。今天大多數的監護權爭奪，理論上是依「誰是比較適任的家長」來判定。不過現實是，在離婚案件中，多數女性仍然爭取到子女的監護權。",
+   "這項法律上的轉變，是一九六〇與一九七〇年代美國社會變遷的結果。這些變遷挑戰了許多過去認為男性與女性各自「應該」扮演的傳統角色。因此，如今看到女性外出工作、並且非常在意自己的事業與個人生活，已經不是什麼稀奇的事。同樣地，看到男性接下過去被視為女性專屬的角色——採買日用品、接送孩子上下學、打掃家裡——也不再罕見。",
+   "由於離婚率的上升、男女被期待扮演的角色改變，加上司法體系對子女監護權的態度轉變，離婚時開始爭取、並且贏得子女監護權的男性變多了。"
+  ]
+ },
+ {
+  "id": "z94",
+  "year": "94年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "澎湖：散落海上的珍珠（The Penghu Archipelago）",
+  "titleStatus": null,
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "options": {
+   "A": "attractions",
+   "B": "between",
+   "C": "for",
+   "D": "location",
+   "E": "masterpiece",
+   "F": "nearly",
+   "G": "particularly",
+   "H": "preserved",
+   "I": "even",
+   "J": "uninhabited"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": "【第一段】點出主旨：如珍珠散落的澎湖，沙灘與海底景觀最吸引人",
+    "segs": [
+     [
+      "Like pearls scattered in the East Sea, the Penghu archipelago is situated in the southwest of the Taiwan Strait. It consists of ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      " one hundred islands, of which many are famous for their pure white-sand beaches. ",
+      null
+     ],
+     [
+      "The broad beaches and beautiful underwater scenery are the major ",
+      "gradient"
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " of Penghu islands.",
+      "gradient"
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】無人島的原始風貌：玄武岩、生態、賞鳥",
+    "segs": [
+     [
+      "Among the one hundred or so islands, only 20 are inhabited. ",
+      null
+     ],
+     [
+      "The ",
+      "topic"
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " islands of Penghu have been kept intact without human intervention.",
+      "topic"
+     ],
+     [
+      " The primitive conditions on these islands, their unique basalt rock formations and rich ecology bring ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " more surprises for visitors. These islands are designated as natural reservations, ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " they are endowed with remarkable and rare resources. ",
+      null
+     ],
+     [
+      "For instance",
+      "trans"
+     ],
+     [
+      ", Gupo (Grand Aunt) Island is the largest uninhabited island in the North Sea area and the main ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " of seaweed production. Like Gupo Island, Baisha (White Sand) Island is also uninhabited and has ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " the primitive, unspoiled character. The island features well-developed columnar basalt formations, which on the southern coastline are ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " spectacular. This is also one of the best areas of the Penghu Islands for bird watching. ",
+      null
+     ],
+     [
+      "In addition",
+      "trans"
+     ],
+     [
+      ", there are also pillar-shaped rock formations that are Mother Nature’s ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " sculptures.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】收尾：花開鳥鳴，宛如天堂",
+    "segs": [
+     [
+      "Like gifts from God, the yellow flowers that bloom ",
+      "topic"
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " the basalt rock cracks and the beautiful songs of little singing birds on the meadows turn these islands into a paradise.",
+      "topic"
+     ]
+    ]
+   }
+  ],
+  "thesis": "“The broad beaches and beautiful underwater scenery are the major ___ of Penghu islands.”",
+  "thesisExplain": "像珍珠一樣散在海上——第一段用一個明喻開場，同一句交代位置，第二句交代島數，第三句才把話收到這裡。全文中心思想在這裡，關鍵落在第 32 格。這一格前面是 the major、後面接 of Penghu islands，要填的是可數名詞複數，而且得能承接前面並列的兩個主詞；只看著 major 是形容詞就選，很容易挑到意思相近卻不能這樣用的字。第二段把前面說的一一兌現：人跡罕至的島嶼、玄武岩地景、生態與賞鳥、石柱；第三段再用另一個明喻收尾，與開頭的珍珠前後呼應。寫作上這是「明喻開、明喻收」的框架，中間再生硬的地理資料，都被包在同一個畫面裡。",
+  "macro": {
+   "structure": "明喻框架型 — 以珍珠明喻開場並交代位置(hook) → 點出沙灘與水下景觀是全文重心(全文中心思想) → 逐項展開：人跡罕至的島嶼、玄武岩地景、生態與賞鳥、石柱 → 以另一個明喻收尾，前後呼應",
+   "transitions": "Like pearls（明喻破題）→ Among…only 20（縮小範圍）→ For instance（舉例）→ Like Gupo Island（類比承接第二座島）→ In addition（追加，補上石柱地景）→ Like gifts from God（明喻收尾，呼應開頭）",
+   "patterns": "說明文 (Exposition) + 景物描寫 (Descriptive Writing)",
+   "outline": [
+    "1. 開場：以珍珠明喻帶出澎湖位在台灣海峽西南方，由上百座島嶼組成",
+    "2. 主旨：全文重心落在寬闊沙灘與水下景觀",
+    "3. 展開：只有二十座有人居住，其餘未經人為干擾；玄武岩柱狀節理與賞鳥",
+    "4. 收尾：岩縫黃花與草原鳥鳴，以明喻把群島寫成人間天堂"
+   ]
+  },
+  "zhTranslation": [
+   "澎湖群島宛如散落在東海上的珍珠，位於台灣海峽的西南方。它由將近一百座島嶼組成，其中許多以潔白的沙灘聞名。寬闊的沙灘與美麗的水下景觀，是澎湖群島最主要的觀光亮點。",
+   "在這一百來座島嶼當中，只有二十座有人居住。澎湖那些無人居住的島嶼，未經人為干擾而保持了原本的樣貌。這些島上的原始環境、獨特的玄武岩地形和豐富的生態，為遊客帶來更多驚喜。這些島嶼被劃設為自然保留區，因為它們擁有非凡而稀有的資源。舉例來說，姑婆嶼是北海地區最大的無人島，也是紫菜的主要產地。和姑婆嶼一樣，白沙島同樣無人居住，也保留了原始而未遭破壞的樣貌。這座島以發育良好的柱狀玄武岩著稱，南岸的柱狀節理尤其壯觀。這裡也是澎湖群島最適合賞鳥的地點之一。此外，島上還有柱狀的岩石地形，堪稱大自然的雕塑傑作。",
+   "宛如上天的禮物，從玄武岩縫隙間綻放的黃花，加上草原上小鳥的悅耳歌聲，讓這些島嶼成了人間天堂。"
+  ]
+ },
+ {
+  "id": "z93",
+  "year": "93年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "讓高中生經營一家公司（Junior Achievement）",
+  "titleStatus": null,
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "options": {
+   "A": "miniature",
+   "B": "elaborate",
+   "C": "applying",
+   "D": "programs",
+   "E": "founded",
+   "F": "firms",
+   "G": "leading",
+   "H": "population",
+   "I": "varies",
+   "J": "offered"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": "【第一段】緣起：創辦人擔心年輕人不懂企業運作",
+    "segs": [
+     [
+      "Junior Achievement was started in Springfield, Massachusetts, in 1919 by Horace A. Moses. Mr. Moses, who had been a poor farm boy, had worked his way up to become one of the ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      " industrialists in the United States. He was concerned that so many of the young people ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " for positions with his firm knew absolutely nothing about the way a corporation is run. ",
+      null
+     ],
+     [
+      "As a solution to this problem",
+      "trans"
+     ],
+     [
+      ", he ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " Junior Achievement, Inc.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】點出主旨：讓高中生在學時參與經營公司",
+    "segs": [
+     [
+      "In essence",
+      "trans"
+     ],
+     [
+      ", Junior Achievement is an organization that gives high-school boys and girls a chance to become part of the operation of a ",
+      "gradient"
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " corporation while still in school.",
+      "gradient"
+     ],
+     [
+      " Every September, students are ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " the opportunity to join Junior Achievement through the co-operation of local school systems. Some students make products that range in size from earrings to quite ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " furniture for the home. Others produce weekly radio and television shows or operate banks, accounting ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      ", and advertising agencies.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】規模：從大城市到小鎮",
+    "segs": [
+     [
+      "Junior Achievement ",
+      "topic"
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " range in size from those in the big cities, like New York and Los Angeles, to those in small towns with a ",
+      "topic"
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " of a few thousand.",
+      "topic"
+     ],
+     [
+      " Each program ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " with the size of the area and the amount of industrial and business activity in the city.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Junior Achievement is an organization that gives high-school boys and girls a chance to become part of the operation of a ___ corporation while still in school”",
+  "thesisExplain": "第一段結尾留下的是一個問題：來應徵的年輕人完全不懂公司怎麼運作。第二段開頭這一句就是解答，也是全文中心思想，關鍵落在第 34 格。這一格前面是 a、後面是 corporation，要填的是修飾語，難在它得同時說明「還在學校裡」與「真的在營運」兩件事；選錯的話句子照樣通順，整篇的核心卻不見了。第一段從創辦人的出身寫到他的憂慮，第三段再把規模從大城市寫到小鎮，一前一後補足這個定義。寫作上這是「問題—解答」最乾淨的用法：問題寫在前一段結尾，解答就放下一段第一句，中間不繞路。",
+  "macro": {
+   "structure": "問題解決型 — 創辦人的出身與憂慮(問題：年輕人對企業運作一無所知) → 一句話定義這個組織(全文中心思想) → 學生實際在做的事 → 規模差異：從大城市到小鎮",
+   "transitions": "who had been（插入補述，帶出創辦人的出身）→ As a solution to this problem（明示問題與解答的接點）→ In essence（下定義，帶出全文中心思想）→ Some…Others（並列，展開實作內容）→ range in size from…to（範圍對比，收在規模差異）",
+   "patterns": "說明文 (Exposition) + 問題解決 (Problem-Solution)",
+   "outline": [
+    "1. 緣起：創辦人出身貧農之家，憂心年輕人對企業運作一無所知",
+    "2. 定義：讓高中生還在學就參與公司營運的組織",
+    "3. 實作：學生做商品、經營廣播電視節目、辦銀行與廣告業務",
+    "4. 規模：從 New York、Los Angeles 這樣的大城到小鎮都有"
+   ]
+  },
+  "zhTranslation": [
+   "Junior Achievement（青年成就）是 Horace A. Moses 於 1919 年在美國麻薩諸塞州的 Springfield 創辦的。Moses 先生出身貧困的農家，靠自己一路奮鬥，成為全美最重要的實業家之一。他很擔心：來他公司應徵職位的年輕人當中，竟有那麼多人對一家企業如何運作完全一無所知。為了解決這個問題，他創辦了 Junior Achievement 公司。",
+   "本質上，Junior Achievement 是一個讓高中男女學生還在學校裡，就有機會參與一家小型公司實際營運的組織。每年九月，透過當地學校系統的配合，學生都會獲得加入 Junior Achievement 的機會。有些學生製作產品，大小從耳環到相當精緻講究的家用家具都有；另一些學生則製作每週的廣播與電視節目，或是經營銀行、會計事務所和廣告公司。",
+   "Junior Achievement 的各項計畫規模不一，大的在 New York、Los Angeles 這樣的大城市，小的則在只有幾千人的小鎮。每一項計畫都會隨著當地面積大小、以及該城市工商業活動的多寡而有所不同。"
+  ]
+ },
+ {
+  "id": "z93b",
+  "year": "93年敏督利颱風受災地區考生補救考試",
+  "exam": "指考",
+  "examType": "補考",
+  "title": "不丹的開門（Bhutan Opens Its Doors）",
+  "titleStatus": null,
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "options": {
+   "A": "direct",
+   "B": "reserves",
+   "C": "diverse",
+   "D": "sparingly",
+   "E": "in advance",
+   "F": "measures",
+   "G": "festivals",
+   "H": "mammals",
+   "I": "entirely",
+   "J": "in existence"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": "【第一段】點出主旨：開放觀光後，世人看見不丹的自然、動物與政體",
+    "segs": [
+     [
+      "Bhutan first flung open its doors to tourists in 1974. ",
+      null
+     ],
+     [
+      "Since then",
+      "trans"
+     ],
+     [
+      ", the tiny country has revealed to the rest of the world its enviable nature ",
+      "gradient"
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      ", exotic animals, and a one-of-a-kind government.",
+      "gradient"
+     ],
+     [
+      " Bhutan’s ruler, King Jigme Singye Wangchuck, who was elected in 1972, runs the only Democratic Monarchy ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      ".",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】地理、人口、珍稀動物與地形",
+    "segs": [
+     [
+      "Bordered by India, Tibet, and China, Bhutan ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " about 18,000 square miles and has a population of about 750,000. Bhutan is home to several rare ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      ", including red pandas, blue sheep, and musk deer. Its ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " landscape includes snowcapped peaks, bamboo jungles, meadows, and grasslands.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】宗教生活：務農、節慶與經幡",
+    "segs": [
+     [
+      "The strongly religious Bhutanese rely almost ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " on agriculture for their survival, raising cattle and living in rural villages. To celebrate their Buddhism, the Bhutanese hold many unique ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      ", called teschus, and stake prayer flags in the ground, which worshippers believe offer a ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " line to the gods.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】旅人提醒：提早規劃、行李從簡",
+    "segs": [
+     [
+      "Tourists who would like to visit Bhutan should plan their trips far ",
+      "topic"
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      ".",
+      "topic"
+     ],
+     [
+      " They must provide a travel visa and itinerary upon arrival. ",
+      null
+     ],
+     [
+      "Moreover",
+      "trans"
+     ],
+     [
+      ", they should pack ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      ": The country’s only airline, Druk Air, has just two planes—both with limited storage space.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Since then, the tiny country has revealed to the rest of the world its enviable nature ___, exotic animals, and a one-of-a-kind government.”",
+  "thesisExplain": "1974 年開了門，然後呢？這一句把後面要講的東西一次列完：自然、動物、政體，全文中心思想在這裡，關鍵落在第 31 格。這一格前面是 nature 當修飾語，要填的名詞得跟 nature 連成一個站得住的完整概念，不是挑一個意思沾得上邊的字就好；後面兩項是同一串的並列成分，形式上也在幫忙定位。政體那一項第一段自己就交代完了，第二段兌現地理與物種，第三段轉到宗教生活，第四段給旅人提醒。寫作上這叫「預告式主旨句」：第一段先把清單擺出來，讀者後面每走到一段，都知道自己走到哪裡。",
+  "macro": {
+   "structure": "預告式清單型 — 開放觀光的時間點(hook) → 一句列出自然、動物、政體三項(全文中心思想) → 地理與物種 → 宗教生活 → 旅人提醒",
+   "transitions": "Since then（時間承接，帶出開放之後的樣貌）→ Bordered by（補述地理位置）→ To celebrate（目的，帶出宗教實踐）→ Moreover（追加，補上第二項提醒）",
+   "patterns": "說明文 (Exposition) + 清單展開 (List Expansion)",
+   "outline": [
+    "1. 開場：1974 年開放觀光，國王於 1972 年獲選",
+    "2. 地理與物種：國土約一萬八千平方英里，小貓熊、岩羊、麝鹿",
+    "3. 宗教生活：務農為生，以獨有的宗教儀式與經幡表達信仰",
+    "4. 旅人提醒：入境須備妥簽證與行程表，全國只有兩架客機"
+   ]
+  },
+  "zhTranslation": [
+   "不丹在 1974 年首度對觀光客敞開大門。從那時起，這個小國便向世界展現了它令人稱羨的自然保留區、珍奇的動物，以及獨一無二的政體。不丹的統治者 Jigme Singye Wangchuck 國王於 1972 年獲選，主持著全世界唯一的民主君主制。",
+   "不丹與印度、西藏和中國接壤，國土面積約一萬八千平方英里，人口約七十五萬。這裡是好幾種稀有哺乳動物的家園，包括小貓熊、岩羊和麝鹿。境內地貌多變，有白雪覆蓋的山峰、竹林、草原與牧地。",
+   "篤信宗教的不丹人幾乎完全仰賴農業維生，他們養牛，住在鄉間村落。為了實踐佛教信仰，不丹人會舉辦許多獨特的慶典，稱為 teschus，並在地上插設經幡；信眾相信經幡能提供一條直通神明的管道。",
+   "想造訪不丹的旅客，行程要提早很久規劃。他們必須在入境時出示旅遊簽證與行程表。此外，行李也要盡量精簡：該國唯一的航空公司 Druk Air 只有兩架飛機，而且兩架的置物空間都很有限。"
+  ]
+ },
+ {
+  "id": "z92",
+  "year": "92年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "認識袋鼠（Kangaroos）",
+  "titleStatus": null,
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "options": {
+   "A": "keen",
+   "B": "following",
+   "C": "for good",
+   "D": "in action",
+   "E": "wondered",
+   "F": "just",
+   "G": "snoozing",
+   "H": "pouch",
+   "I": "amazing",
+   "J": "until"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": "【第一段】點出主旨：袋鼠種類多；體型與作息",
+    "segs": [
+     [
+      "There are more than 50 different kinds of kangaroos in the world today.",
+      "gradient"
+     ],
+     [
+      " The smallest ones are only five centimeters tall ",
+      null
+     ],
+     [
+      "but",
+      "trans"
+     ],
+     [
+      " the biggest are more than two meters. Kangaroos cannot walk or run. They ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      " jump. The best time to see kangaroos ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " is the evening and early morning. They spend the daytime ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " in the shade.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】育兒過程：從出生到離開育兒袋",
+    "segs": [
+     [
+      "Straight after they are born, the joeys (baby kangaroos), which are only about two-and-a-half centimeters long, have to drag themselves to their mother’s ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " . They find their way there by ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " the pattern of their mother’s hairs. They stay in the pouch ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " they are eight months old. ",
+      null
+     ],
+     [
+      "After that",
+      "trans"
+     ],
+     [
+      ", they leave home ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " . Sometimes the joeys aren’t too ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " on making their way in the big wide world. A 50 pound joey, ",
+      null
+     ],
+     [
+      "for example",
+      "trans"
+     ],
+     [
+      ", was once found still living in its mother’s pouch.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】名稱由來的傳說",
+    "segs": [
+     [
+      "Have you ever ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " why these animals are called “kangaroos”? Well, according to one story, when Captain Cook landed in Australia and heard the aborigines calling these ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " animals “Kangooroo,” he wrote the name down as “kangaroo.” That’s how this animal got its name.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“There are more than 50 different kinds of kangaroos in the world today.”",
+  "thesisExplain": "這篇沒有一句話直接點出中心思想，是典型的動物說明文，三段各講一個主題：體型與作息、小袋鼠怎麼長大、名字的由來。開頭這句先給讀者一個量的概念，後面才逐項展開，所以標它為代表句。全篇的難處不在結構而在字：第 31 格考副詞放在動詞前面的位置，第 33 格考 spend + 時間 + 動名詞這一整組句型，第 37 格是介系詞片語當副詞用。其中第 33、37 格在空格所在句裡就能解決，第 31 格則要靠前一句 cannot walk or run 才定得下來。寫作上，分項說明最容易寫成流水帳，本文靠一隻五十磅重卻還賴著不走的小袋鼠抓住讀者的注意力。",
+  "macro": {
+   "structure": "分項說明型 — 體型與作息(第一段) → 育兒過程：從出生到獨立(第二段) → 名稱由來的傳說(第三段，以問句帶出)",
+   "transitions": "Straight after（時間起點，出生的那一刻）→ After that（時間推進，離開母親之後）→ Sometimes（轉入例外情況）→ for example（舉例佐證）→ according to one story（帶出傳說，語氣保留）",
+   "patterns": "說明文 (Exposition) + 過程描述 (Process Description)",
+   "outline": [
+    "1. 體型與作息：五十多種，五公分到兩公尺，傍晚與清晨才活動",
+    "2. 育兒：出生時只有約兩公分半，循著母袋鼠毛髮的紋路找到路",
+    "3. 例外：曾有一隻五十磅重的小袋鼠遲遲不肯獨立",
+    "4. 名稱由來：Captain Cook 把原住民的稱呼記成了 kangaroo"
+   ]
+  },
+  "zhTranslation": [
+   "現今世界上有五十多種不同的袋鼠。最小的只有五公分高，最大的則超過兩公尺。袋鼠不會走路，也不會跑，牠們只會跳。想看袋鼠活動，最好的時段是傍晚和清晨；白天牠們大多在樹蔭下打盹。",
+   "小袋鼠只有大約兩公分半長，一出生就必須自己爬到母袋鼠的育兒袋裡去。牠們循著母袋鼠毛髮的紋路找到路。牠們會待在育兒袋裡，直到八個月大。在那之後，牠們才會永遠離開這個家。有時候小袋鼠並不太熱衷於到廣大的世界闖蕩：曾經就有人發現一隻五十磅重的小袋鼠還住在母親的育兒袋裡。",
+   "你有沒有想過，這些動物為什麼叫「kangaroo」（袋鼠）？根據一種說法，當年 Captain Cook 登陸澳洲，聽見原住民把這種令人驚奇的動物叫作「Kangooroo」，便把這個名字記成了「kangaroo」。這種動物的名字就是這麼來的。"
+  ]
+ },
+ {
+  "id": "z91",
+  "year": "91年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "電腦時代的新英文（Computer Words）",
+  "titleStatus": null,
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "options": {
+   "A": "For one thing",
+   "B": "full of",
+   "C": "understand",
+   "D": "familiar with",
+   "E": "find",
+   "F": "In either case",
+   "G": "For example",
+   "H": "traditional",
+   "I": "snail mail",
+   "J": "colorful"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": "【第一段】點出主旨：想學好英文，就得認識電腦新詞",
+    "segs": [
+     [
+      "Are you someone who practically lives in front of the computer—a mouse potato? Or are you nervous about new technology—a technophobe? ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      ", if you want to master the English language, you will need to be ",
+      "gradient"
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " those new computer words that seem to be popping up everywhere.",
+      "gradient"
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】理由一：多數電腦用語在母語裡已有相近說法",
+    "segs": [
+     [
+      "Luckily, most computer words are easy to learn.",
+      "topic"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      ", many of these words probably already have similar forms in your own language. ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      ", the German word for computer is Computer, in South American Spanish it is computador, and in Japanese we ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " konpyuta.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】理由二：許多電腦用語很有趣",
+    "segs": [
+     [
+      "Another reason",
+      "trans"
+     ],
+     [
+      " why computer words are easy to learn is that many of them are so ",
+      "topic"
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      ".",
+      "topic"
+     ],
+     [
+      " They are words that often make us smile when we first hear them such as ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " (traditional mail rather than Internet-based mail) or wysiwyg (what-you-see-is-what-you-get).",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】收尾：詞語背後的電腦文化",
+    "segs": [
+     [
+      "To get a feeling for computer words, it helps to ",
+      "topic"
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " the world that created them— cyberculture, as it is often called.",
+      "topic"
+     ],
+     [
+      " The computer industry is ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " young people who think of themselves as very different from ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " business people in suits. It is a world that avoids heavy scientific-sounding language in favor of words that are simple, fresh and playful.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“if you want to master the English language, you will need to be ___ those new computer words that seem to be popping up everywhere”",
+  "thesisExplain": "兩個提問開場，一個是幾乎住在電腦前的人，一個是怕新科技的人，看似對立，第一段末這一句把兩種人拉到同一個結論上。全文中心思想在這裡，關鍵落在第 32 格。這一格前面是 be 動詞、後面直接接名詞片語，中間不放介系詞，形容詞與介系詞要當成一整組記；只想到 be 後面該放形容詞，會在幾個意思沾得上邊的選項之間卡住。後面兩段各給一個理由，最後一段再把話題推到造詞的那個文化，一層一層往外擴。寫作上這是「先分後合」的破題法：先擺出兩種相反的讀者，再用一句話把他們收到同一個結論，開場就有了對象感。",
+  "macro": {
+   "structure": "提問破題型 — 兩種相反的讀者(hook) → 點出電腦新詞是學好英文躲不掉的一環(全文中心思想) → 理由一：多數語言早有形式相近的說法 → 理由二：造詞本身好記 → 收尾：詞語背後的電腦文化",
+   "transitions": "Luckily（承接，帶出「好學」這個主張）→ Another reason（並列，帶出第二項理由）→ such as（舉例）→ rather than（對比）→ in favor of（取捨對比，收在文風上）",
+   "patterns": "說明文 (Exposition) + 原因列舉 (Reason Enumeration)",
+   "outline": [
+    "1. 破題：以兩種相反的讀者提問開場，帶出電腦新詞躲不掉",
+    "2. 理由一：多數語言早有形式相近的說法（德文、西班牙文、日文為例）",
+    "3. 理由二：這些詞往往令人一聽就會心一笑，因此好記",
+    "4. 收尾：詞語背後是一種電腦文化，避開學術腔、偏好簡單活潑的用字"
+   ]
+  },
+  "zhTranslation": [
+   "你是不是那種幾乎整天坐在電腦前的人——一隻「滑鼠馬鈴薯」？還是你對新科技感到緊張——一個「科技恐懼者」？不論屬於哪一種，只要你想精通英文，就必須熟悉那些似乎到處冒出來的電腦新詞。",
+   "幸好，大多數電腦詞彙都很好學。首先，這些詞當中有許多，在你自己的語言裡多半已經有形式相近的說法。舉例來說，德文的「電腦」是 Computer，南美西班牙文是 computador，日文則說 konpyuta。",
+   "電腦詞彙好學的另一個原因是，其中許多詞都很生動有趣。這些詞往往在我們第一次聽到時就令人會心一笑，例如 snail mail（指傳統郵件，相對於網路郵件）或 wysiwyg（所見即所得）。",
+   "想抓住電腦詞彙的感覺，先了解創造出這些詞的那個世界會很有幫助——也就是常被稱作「電腦文化」的那個世界。電腦產業裡滿是年輕人，他們認為自己和那些穿西裝的傳統商界人士非常不同。這是一個刻意避開沉重學術腔調的世界，偏好簡單、新鮮又帶點玩心的用字。"
+  ]
+ }
+]

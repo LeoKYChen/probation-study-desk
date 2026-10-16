@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g102-16-1/index.html
+Author: staresto-create ZZSH
+Title: 102 年學測克漏字第16題詳解（分詞／動狀詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 102 年學測 ／ 第16題
+102 年學測 克漏字 第16題
+分詞／動狀詞線索：句內答對率 53%
+答對率 53%：當年每 100 位考生，有 53 位答對。
+If the number 16 is in the same area as the number making the call, an area code usually doesn't need to be dialed.
+(A)calling
+(B)being called
+(C)having called
+(D)has been calling
+答案：(B) being called
+題目編號：G102_16_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+現在分詞被動語態 being called，作後位形容詞修飾 number，「正在被撥打的號碼」（相當於 the number [that is] being called 的省略結構）；calling（現在分詞，主動語意方向不合，應該是號碼「被撥打」）、having called（完成分詞，不合語境）、has been calling（限定動詞，不能這樣修飾名詞）都不合。
+深入解析
+你可能會這樣想
+空格夾在主詞 the number 與動詞 is 之間，你第一個念頭大概是「這裡要放一個動詞」，於是挑了最像動詞的 has been calling。或者選 calling，因為「打電話的號碼」唸起來很順。
+怎麼判斷
+先把整句的主要動詞找出來。If the number ______ is in the same area as the number making the call, ...，主要動詞是 is，空格那一塊是插在主詞與動詞之間的修飾語，不是動詞本身。has been calling 是限定動詞（有時態、有人稱變化），放進去會讓一個子句出現兩個主要動詞，先排除。再決定主動還是被動。還原成完整的關係子句：the number that is being called（正在被撥打的那個號碼），把 that is 一起省略掉，就剩下 being called 擺在名詞後面。這種「關係代名詞加 be 動詞一起省略」的後位修飾，它最短的版本你一定看過：a barking dog（正在吠的狗，主動）對 a broken window（被打破的窗戶，被動）。最好的線索就在同一句裡。句子後半是 the number making the call（撥出電話的那個號碼），用的是主動分詞。這一句把兩個號碼擺在一起對照：一個在撥（making），一個被撥（being called）。看到 making the call，就能反推空格必須是被動。上一句的 the phone receiving the call（接到電話的那支電話）也是同一組主動分詞的對照。
+誘答選項
+calling：主動，意思變成「撥打電話的號碼」，與句尾的 the number making the call 撞成同一個東西，整句會變成「撥出的號碼和撥出的號碼在同一區」，講不通。having called：完成分詞，強調動作已完成且早於主要動詞，本句沒有時間先後的問題。has been calling：限定動詞，一個子句不能有兩個主要動詞。
+常考字詞與句型
+be based in（位於、以…為據點）、make a call（打電話）、receive a call（接到電話）、dial a number（撥號碼）、in its entirety（完整地、一字不漏地）、be in the same area as（與…在同一區）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+An area code is a section of a telephone number which generally represents the geographical area that the phone receiving the call is based in. It is the two or three digits just before the local number. If the number 16 is in the same area as the number making the call, an area code usually doesn't need to be dialed. The local number, 17 , must always be dialed in its entirety.
+The area code was introduced in the United States in 1947. It was created 18 the format of XYX, with X being any number between 2-9 and Y being either 1 or 0. Cities and areas with higher populations would have a smaller first and third digit, and 1 as the center digit. New York, being the largest city in the United States, was 19 the 212 area code, followed by Los Angeles at 213.
+In countries other than the United States and Canada, the area code generally determines the 20 of a call. Calls within an area code and often a small group of neighboring area codes are normally charged at a lower rate than outside the area code.
+中譯：區域號碼是電話號碼中的一部分，通常代表接聽電話所在的地理區域，位於本地號碼前面的兩到三個數字。如果撥打的號碼與撥出電話所在地屬於同一區域，通常不需要撥打區域號碼；但本地號碼則必須完整撥打，一碼都不能少。區域號碼於 1947 年在美國首次引進，其格式為「XYX」，X 代表 2 到 9 之間的任一數字，Y 則是 0 或 1。人口較多的城市或地區，第一碼與第三碼的數字通常較小，中間則固定為 1。紐約身為美國最大城市，被分配到 212 這個區域號碼，其次是洛杉磯的 213。在美國和加拿大以外的國家，區域號碼通常決定的是通話的費率。同一區域號碼內、甚至鄰近幾個區域號碼之間的通話，費率通常會比撥打區域外的電話便宜。
+📋 內容大意
+Area codes designate geographic telephone regions, influence local and long-distance dialing formats, and determine call pricing.
+回到102 年學測第17題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

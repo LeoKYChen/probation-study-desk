@@ -1,0 +1,44 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g93-21-2/index.html
+Author: staresto-create ZZSH
+Title: 93 年學測克漏字第21題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 93 年學測 ／ 第21題
+93 年學測 克漏字 第21題
+字彙選義線索：句內答對率 41%
+答對率 41%：當年每 100 位考生，有 41 位答對。
+Each and every dollar you contribute will go 21 the purchase of family-sized insecticide-treated mosquito nets costing $5 each.
+(A)towards
+(B)against
+(C)down
+(D)over
+答案：(A) towards
+題目編號：G93_21_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】go towards 指「用於／有助於」（描述金錢的用途）；against（反對）、down（向下）、over（超過）都不合。
+深入解析
+你可能會這樣想
+你最熟的 towards 幾乎都跟走路綁在一起——walk towards the door（朝門口走去）、run towards the finish line（朝終點線跑去），是一個講方向的字。這一句的主詞卻是 every dollar（每一塊錢），錢不會走路，於是 towards 第一輪就被你排掉了。答對率只有四成，最容易選錯的就在這裡。
+怎麼判斷
+四個選項都是接在 go 後面的字，可見這一格考的是 go 和哪一個搭起來才符合這句話的意思。先把主詞和後面接的東西看清楚：主詞是 every dollar you contribute（你捐出的每一塊錢），空格後面是 the purchase of family-sized insecticide-treated mosquito nets（購買經殺蟲劑處理的家庭號蚊帳這件事），所以這一格要說的是「這筆錢會被拿去做什麼用」。劍橋 English Grammar Today 的 towards or toward 條目說得很清楚：toward(s) 可以表示「為了買到或達成某件事」，例句是 Would you like to make a contribution towards our new children's playground?（你願意為我們的新兒童遊戲場捐一點錢嗎？）。牛津高階詞典的例句更接近本句：The money will go towards a new school building.（這筆錢將用於興建新校舍。）。把走路的方向義往抽象推一步就通了：走路的 towards 是人朝著一個目標移動，這裡是錢朝著一個目標流過去，箭頭方向一模一樣，只是換成看不見的東西在動。
+誘答選項
+against：go against 是「違背、與……相牴觸」（go against the rules 違反規定），語意完全相反。down：go down 是「下降、往下走」，講的是量或位置的變化，跟用途無關。over：go over 是「仔細檢查、複習」（go over the notes 複習筆記），也可以是「走過去」，但都接不上「購買蚊帳」這個用途。三個誘答選項都是常見的 go 加介系詞或副詞的組合，各自都有明確的意思，只是沒有一個能表示「錢用在哪裡」。
+常考字詞與句型
+go towards（用於支付……的費用）、make a contribution towards（為……出一份錢）、count towards（可計入……）、an attitude towards（對……的態度）、go against（違背）、go over（複習、仔細檢查）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The CAMBODIA DAILY is launching a world-wide campaign to wipe out malaria in Cambodia. You can help save three lives for only $5 by supporting this effort. Each and every dollar you contribute will go 21 the purchase of family-sized insecticide-treated mosquito nets costing $5 each. These nets are recognized by medical experts as the best hope for 22 the spread of malaria－Cambodia's most deadly disease.
+23 the Health Ministry and the Malaria Center, The CAMBODIA DAILY will distribute the nets to the most 24 areas of the country. 25 to this campaign and save three lives for only $5, send your donation to: American Assistance for Cambodia, P.O. Box 2716, GPO, New York, NY 10116. Credit Card donations are also accepted.
+中譯：《柬埔寨日報》正發起一項全球性的活動，致力於根除柬埔寨的瘧疾。只要捐款五美元，你就能協助拯救三條生命。你所捐出的每一分錢，都將用於購買每頂五美元、適合全家使用的殺蟲處理蚊帳。這些蚊帳被醫學專家公認為對抗瘧疾——柬埔寨最致命疾病——傳播的最佳希望。《柬埔寨日報》將與衛生部及瘧疾防治中心合作，將這些蚊帳分發到全國受瘧疾影響最嚴重的地區。想參與這項活動、只需五美元就能拯救三條生命，請將捐款寄至：American Assistance for Cambodia, P.O. Box 2716, GPO, New York, NY 10116。我們也接受信用卡捐款。
+📋 內容大意
+The CAMBODIA DAILY is raising funds to distribute insecticide-treated mosquito nets across high-risk areas to combat malaria.
+← 第20題回到93 年學測第22題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

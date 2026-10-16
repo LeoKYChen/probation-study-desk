@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g98-29-3/index.html
+Author: staresto-create ZZSH
+Title: 98 年學測克漏字第29題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 98 年學測 ／ 第29題
+98 年學測 克漏字 第29題
+慣用語／片語線索：句內答對率 73%
+答對率 73%：當年每 100 位考生，有 73 位答對。
+Since the Seoul 1988 Paralympic Games and the Albertville 1992 Winter Paralympic Games, they have also 29 in the same city as the Olympics.
+(A)taken turns
+(B)taken place
+(C)taken off
+(D)taken over
+答案：(B) taken place
+題目編號：G98_29_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】take place 固定片語「舉行/發生」，表示「帕運也在跟奧運相同的城市舉行」；taken turns（輪流）、taken off（起飛/脫下）、taken over（接管）都不合。
+深入解析
+你可能會這樣想
+take place 你背過「舉行、發生」，真正麻煩的是它旁邊那一串長得很像的片語：take one's place（就座、就定位）、take the place of（取代）、take turns（輪流），看到四個都以 taken 開頭的選項，記憶很容易互相干擾。另外提醒一件常錯的事：take place 沒有被動式，不能寫成 was taken place，因為它本身就等於 happen。
+怎麼判斷
+線索在前一句：The Paralympic Games have always been held in the same year as the Olympic Games（帕運一直與奧運在同一年舉行）。空格句用 also 承接，把「同一年」升級成「同一個城市」，需要的動詞正是「舉行」——前一句的 held 就是最直接的同義提示。再者主詞 they 指的是帕運這項賽事，賽事本身只能「舉行、發生」，這也把選項縮到只剩 take place。
+誘答選項
+taken turns（輪流）與「在同一個城市」正好相反，而且 take turns 後面通常接 V-ing 或 to V（They take turns driving. 他們輪流開車）。taken off 是「起飛、脫下、突然大受歡迎」：「起飛」的主詞是飛機，「脫下」要接衣物當受詞（take off one's hat），都與 in the same city 搭不上。taken over 是「接管」，後面需要一個被接管的對象，句子裡並沒有。
+常考字詞與句型
+take place（舉行、發生）、be held（舉行）、take turns（輪流）、take over（接管）、take off（起飛；脫下）、in the same year as（與……同一年）。其中 take over 這一組考過 4 個年度，97 年第 17 題 →、106 年第 29 題 →、110 年第 17 題 →都出現過；take place 考過 4 個年度，86 年第 37 題 →、88 年第 17 題 →、92 年補考第 27 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The Paralympics are Olympic-style games for athletes with a disability. They were organized for the first time in Rome in 1960. In Toronto in 1976, the idea of putting together different disability groups 26 sports competitions was born. Today, the Paralympics are sports events for athletes from six different disability groups. They emphasize the participants' athletic achievements 27 their physical disability.
+The games have grown in size gradually. The number of athletes 28 in the Summer Paralympic Games has increased from 400 athletes from 23 countries in 1960 to 3,806 athletes from 136 countries in 2004.
+The Paralympic Games have always been held in the same year as the Olympic Games. Since the Seoul 1988 Paralympic Games and the Albertville 1992 Winter Paralympic Games, they have also 29 in the same city as the Olympics. On June 19, 2001, an agreement was signed between the International Olympic Committee and the International Paralympics Committee to keep this 30 in the future. From the 2012 bid onwards, the city chosen to host the Olympic Games will also host the Paralympics.
+中譯：帕拉林匹克運動會（帕運）是為身心障礙運動員舉辦的奧運式賽事，於 1960 年在羅馬首度舉行。1976 年在多倫多，將不同身心障礙類別的選手集合起來共同參與運動賽事的構想誕生了。如今，帕運已是六種不同身心障礙類別運動員參加的體育賽事，強調參賽者的運動成就而非他們的身體障礙。這項賽事的規模逐漸擴大：夏季帕運的參賽選手人數，已從 1960 年 23 國 400 名運動員，成長到 2004 年 136 國 3806 名運動員。帕運一直都與奧運在同一年舉行。自 1988 年首爾帕運及 1992 年阿爾貝維爾冬季帕運起，帕運也開始在與奧運相同的城市舉辦。2001 年 6 月 19 日，國際奧會與國際帕拉林匹克委員會簽署協議，確保未來這項安排能持續下去。從 2012 年主辦城市申辦起，凡是獲選主辦奧運的城市，也將同時主辦帕運。
+📋 內容大意
+The Paralympics are Olympic-style games that have evolved to showcase the athletic achievements of competitors across six different disability groups.
+The Paralympic Games have steadily expanded in size, drawing thousands more international athletes over the decades.
+The Paralympics are officially tied to the Olympic Games, sharing both the same host year and host city by formal agreement.
+← 第28題回到98 年學測第30題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

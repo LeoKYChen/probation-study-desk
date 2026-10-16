@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g111-13-1/index.html
+Author: staresto-create ZZSH
+Title: 111 年學測克漏字第13題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 111 年學測 ／ 第13題
+111 年學測 克漏字 第13題
+字彙選義線索：句內答對率 20%
+答對率 20%：當年每 100 位考生，有 20 位答對。
+Although all book towns have a great number of bookshops, that's where the similarities 13 .
+(A)form
+(B)count
+(C)end
+(D)matter
+答案：(C) end
+題目編號：G111_13_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+that's where the similarities end 是固定說法，意為「相似之處就到此為止」，呼應下一句各書鎮各有特色；form（形成）方向相反，count（計算、重要）、matter（重要）都無法與 that's where 構成這個說法。
+重點：end 當動詞是「到此為止」，常跟表範圍的 where 連用（That's where the similarities end）；count 與 matter 講的是「重要、算數」，接不進這個句框。
+延伸閱讀：end 當動詞，結束的不只是時間 ↗
+深入解析
+你可能會這樣想
+end 你大概只記得「結束」，腦中畫面是時間或事件（The meeting ended at five.）。這裡結束的卻是 the similarities——講的是「兩者像到哪裡為止」。
+怎麼判斷
+先確認空格在句中是什麼功能：that's where the similarities ___，where 引導的子句裡 similarities 是主詞，空格就是它的動詞。四個選項都是動詞，句法過不了篩，要靠語意。關鍵在下一句：Each of these towns shows unique features of its own.（每個書鎮都有自己獨特的地方。）unique 與 similarities 正好相對，作者用它畫出界線——相似到此為止，再往下都是差異。驗算法：把 that's where…ends 換成中文的「到此為止」唸一遍——雖然所有書鎮都有很多書店，但相似之處就到此為止，接回下一句的「各有特色」，語氣銜接得上。順帶把 end 的兩個用法分清楚：名詞是「端點」，make ends meet（收支相抵）就是讓收入與支出兩端碰在一起；本題是動詞，走到那個端點。一句記完：Both charts show that students spend most of their time in class, but that's where the similarities end.（兩張圖都顯示學生大部分時間都在上課，但相似之處也就到此為止。）〔情境取材自 111 學測參考試卷作文題：美國高中生的時間分配〕
+誘答選項
+四個都能接在 similarities 後面當動詞，錯在語意方向。form 是「形成」，會讀成「相似之處就是在這裡形成的」——方向相反，下一句講的是差異，不是相似如何產生。count 與 matter 都可表示「重要、有分量」，放進來變成「相似之處在這裡才重要」，但下一句沒有承接重要性這條線，而是列舉各鎮的不同；count 另有「數數、計算」的意思，但放進來會變成「相似之處在這裡數數」，語意不通。
+常考字詞與句型
+That's where…ends（…到此為止）、come to an end（結束）、end up（最終落得）、make ends meet（收支相抵）、have a lot in common（有許多共同點）、unique features（獨特之處）。其中 make ends meet 這一組考過 3 個年度，95 年第 19 題 →、106 年第 22 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+A book town is a rural town in which second-hand and antiquarian bookshops are concentrated. The concept was 11 by Richard Booth, who opened the first second-hand bookshop in Hay-on-Wye, UK in 1961. Following him, many local people opened their own bookshops, and the small town soon became a model of sustainable rural development and tourism.
+Since the 1970s, book towns like Hay on-Wye 12 up all over the world. Although all book towns have a great number of bookshops, that's where the similarities 13 . Each of these towns shows unique features of its own. Some have many small private shops, while others have organizations steered by volunteers. Some even run regular activities to attract visitors. For example, an annual book festival is held in Hay-on-Wye. Clunes, in Australia, holds a monthly book talk that hosts authors to discuss their latest 14 .
+As digital reading is changing our traditional way of reading, book towns like Hay-on-Wye are particularly important to 15 . The feel of a book, the smell, the weight, and the knowledge that a particular book might be more than a hundred years old—all these highlight the importance of preserving the physical book as a complement to technology.
+中譯：書鎮是指一個集中了許多二手書店和古書店的鄉村小鎮。這個概念最早由理查·布斯提出，他於 1961 年在英國的海伊鎮開設了第一間二手書店。在他的帶動之下，許多當地居民也紛紛開設起自己的書店，這座小鎮很快便成為永續鄉村發展與觀光的典範。自 1970 年代起，像海伊鎮這樣的書鎮已在世界各地紛紛出現。雖然所有書鎮都擁有數量眾多的書店，但它們的共通點也就只有這一點——每個書鎮都各自展現出獨特的風貌：有些擁有許多小型私人書店，有些則由志工組織營運，甚至還會定期舉辦活動來吸引遊客。舉例來說，海伊鎮每年都會舉辦書展；澳洲的克倫斯鎮則每月舉行一場書籍座談，邀請作家分享他們的新作。隨著數位閱讀逐漸改變我們傳統的閱讀方式，像海伊鎮這樣的書鎮，對於保存紙本書籍顯得格外重要。書本的觸感、氣味、重量，以及知道某本書可能已有上百年歷史的那種感受——這一切都凸顯出，在科技發達的時代，保存實體書籍作為補充的重要性。
+📋 內容大意
+A book town is a country town full of second-hand and antiquarian bookshops. Richard Booth started the idea in 1961 with his shop in Hay-on-Wye.
+Local people then opened shops of their own. The town became a model of rural development and tourism, and similar towns have appeared worldwide since the 1970s.
+The towns are also different. Some have private shops. Others are run by volunteers. Some hold festivals or author talks. They matter more now that people read on screens.
+← 第12題回到111 年學測第14題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

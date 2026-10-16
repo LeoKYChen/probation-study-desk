@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g112-11-1/index.html
+Author: staresto-create ZZSH
+Title: 112 年學測克漏字第11題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 112 年學測 ／ 第11題
+112 年學測 克漏字 第11題
+慣用語／片語線索：句內答對率 29%
+答對率 29%：當年每 100 位考生，有 29 位答對。
+It looks like a precisely engineered jigsaw puzzle, each branch growing just perfectly so it almost, 11 , touches the neighboring tree.
+(A)in no time
+(B)by all means
+(C)but not quite
+(D)and pretty much
+答案：(C) but not quite
+題目編號：G112_11_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+almost, but not quite, touches 意為「幾乎碰到、但就是差那麼一點」，正是樹冠羞避現象的關鍵；in no time（立刻）、by all means（當然可以）、and pretty much（差不多）語意都不合。
+深入解析
+你可能會這樣想
+句子裡已經有 almost（幾乎），你會覺得再補一句是多餘的，於是把 but not quite 排除。事實上 almost, but not quite 是一組固定的強調說法：almost 只說了「很接近」，but not quite 才點出「就是沒到」——中文是「幾乎，卻又差那麼一點」。
+怎麼判斷
+空格夾在兩個逗號之間，是插入語；將它移除後，句子 each branch growing just perfectly so it almost touches the neighboring tree 仍然完整，可見這一格補的是對 almost 的進一步說明。枝條到底有沒有碰到，本文有三處明確的敘述，可逐一核對：第一句 a network of cracks formed by gaps between the outermost edges of tree branches（樹枝末梢之間的縫隙所形成的網狀裂紋）；第二段 trees maintain 「shyness gaps」—spaces large enough to prevent them from touching their neighbors（樹木維持著羞避縫隙，其寬度足以避免彼此接觸）；第三段 by having branches that do not touch those of their neighbors（藉由枝條不與鄰樹接觸）。三處都直言並未接觸，插入語必須把 almost 修正為「終究沒有碰到」，故應填 but not quite。凡是兩個逗號之間的插入語，判斷步驟相同：先將插入語移除，確認主句的意思，再回到全文找出與該點直接相關的敘述逐一核對。not quite 屬部分否定，如 I don't quite understand.、It's not quite ready.，quite 前加 not，表示尚未完全達到。
+誘答選項
+and pretty much 意為「而且差不多」，填入後句意成為枝條實際上已經碰到鄰樹，與上述三處敘述牴觸，且與 almost 語意重複；in no time 意為「立刻、很快」；by all means 意為「當然可以、務必」，用於答應對方的請求。
+常考字詞與句型
+almost, but not quite（幾乎，卻差那麼一點）、not quite（不完全）、not exactly（不盡然）、in no time（立刻）、by all means（當然可以）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+In certain forests, when you look up you will see a network of cracks formed by gaps between the outermost edges of tree branches. It looks like a precisely engineered jigsaw puzzle, each branch growing just perfectly so it almost, 11 , touches the neighboring tree. This beautiful phenomenon is called crown shyness.
+Scientists have been discussing crown shyness since the 1920s, proposing 12 explanations for the phenomenon. Some researchers point out that as trees often grow close together, treetops can easily collide and break when swayed by the wind. In order to protect their branches from breakage, trees maintain "shyness gaps"—spaces large enough to prevent them from touching their neighbors.
+Other scientists suggest that plants, like animals, 13 resources—nutrients, water, space, and light. In forested areas with thick tree crowns, there is intense struggle for these resources. Gaps in the treetops resulting from crown shyness may allow trees to increase their 14 light and enhance photosynthesis. Additionally, by having branches that do not touch those of their neighbors, trees may be able to limit the spread of leaf-eating insects, and potentially also the transmission of diseases from tree to tree.
+15 decades of investigation, there is no consensus on exactly what causes the beautiful and mysterious phenomenon of crown shyness.
+中譯：在某些森林裡，當你抬頭望向天空，會看到樹枝最外緣之間的縫隙所形成的一張網狀裂紋，看起來就像一幅精密設計的拼圖，每根樹枝都恰到好處地生長，幾乎、但又不完全碰到相鄰的樹木。這種美麗的現象被稱為「樹冠羞避」。科學家自 1920 年代起便開始討論樹冠羞避現象，並提出了各種不同的解釋。有些研究人員指出，由於樹木經常生長得很密集，樹冠在被風吹動搖擺時很容易互相碰撞而斷裂。為了保護枝條不被折斷，樹木會維持一定的「羞避間隙」——足夠大到能避免與鄰近樹木接觸的空間。也有科學家認為，植物就像動物一樣，會競爭養分、水分、空間和光線等資源。在樹冠茂密的森林區域，這些資源的競爭格外激烈，樹冠羞避所形成的縫隙，或許能讓樹木增加接觸光線的機會，提升光合作用的效率。此外，透過讓枝條不去碰觸鄰近樹木的枝條，樹木也可能藉此限制以葉片為食的昆蟲擴散，甚至潛在地降低疾病在樹木間傳播的機會。儘管經過數十年的研究，科學界至今仍未對這個既美麗又神祕的樹冠羞避現象的確切成因達成共識。
+📋 內容大意
+Crown shyness is a forest canopy phenomenon with various proposed theories, though scientists have yet to agree on its exact cause.
+回到112 年學測第12題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

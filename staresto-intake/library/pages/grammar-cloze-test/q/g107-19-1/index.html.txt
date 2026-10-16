@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g107-19-1/index.html
+Author: staresto-create ZZSH
+Title: 107 年學測克漏字第19題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 107 年學測 ／ 第19題
+107 年學測 克漏字 第19題
+字彙選義線索：句內答對率 28%
+答對率 28%：當年每 100 位考生，有 28 位答對。
+During such breaks, the mind turns inward, 19 it can subconsciously puzzle over subtle meanings and connections.
+(A)if
+(B)but
+(C)where
+(D)which
+答案：(C) where
+題目編號：G107_19_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+where 引導關係副詞子句，先行詞是前面的 the mind turns inward 所形成的「內在境地」；which 之後的子句已完整、無空缺，if 與 but 也無法與逗號前的敘述構成合理邏輯。
+深入解析
+你可能會這樣想
+where 在你腦中大概只能指「地方」——公園、學校、城市；一看到前面沒有具體地點，就把 where 排除掉。事實上 where 引導的關係副詞子句，先行詞不必是實體場所，也可以是抽象的「情境、境地、狀態」。
+怎麼判斷
+關代與關副的分別，不是看先行詞，是看空格後面的子句完不完整。關係代名詞要在形容詞子句裡當主詞或受詞，所以後面接的是不完整子句；關係副詞是副詞，不佔主詞或受詞的位置，所以後面接的是完整子句。本句 it can subconsciously puzzle over subtle meanings and connections 主詞 it、動詞 puzzle over、受詞 subtle meanings 俱全，是完整子句，所以選關係副詞 where。where 是表地點或狀態的關係副詞，先行詞不限於實際的地方，也可以是表示情況的抽象名詞，例如 a situation where…（在…的情況下）、cases where…（在…的案例中）。本句的 the mind turns inward（心思轉向內在）指的就是一種心理狀態。最常見的例句 This is the house where I was born. 也是同一個結構。
+誘答選項
+if 引導條件，但前後不是條件關係；but 表轉折，然而「心思轉向內在」與「琢磨細微意義」是順承而非對比。
+常考字詞與句型
+a situation／case where…（在…的情況／案例中）、the reason why …（…的原因）、the time when …（…的時候）、puzzle over（苦思）、turn inward（轉向內在）。其中 the reason why … 這一組考過 5 個年度，83 年第 17 題 →、89 年第 25 題 →、92 年補考第 21 題 →、98 年第 23 題 →都出現過；the time when … 考過 3 個年度，83 年第 17 題 →、89 年第 25 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+It has long been assumed that creativity is some unusual trait enjoyed by the few. However, according to a wide array of scientific and sociological research, creativity is 16 a sign of rare genius than a natural human potential. Thus, it can be nurtured and encouraged.
+It is believed that taking breaks from a problem can help 17 a moment of insight or stimulate new ideas. Unconventional solutions can also be explored. That is why some of the most successful companies in the world, such as 3M and Google, encourage their employees to 18 all sorts of relaxing activities, such as playing pinball and wandering about the campus. During such breaks, the mind turns inward, 19 it can subconsciously puzzle over subtle meanings and connections.
+Another way to increase creativity is to take risks. This is because many breakthroughs come up when people venture 20 their usual routines or areas of expertise. This can be done by, for example, learning new skills or traveling to new countries.
+中譯：長久以來，人們普遍認為創造力是少數天才才擁有的特殊天賦。然而，根據大量科學與社會學研究顯示，創造力與其說是稀有天才的象徵，不如說是每個人與生俱來的潛能，因此是可以被培養與鼓勵的。研究認為，暫時放下手邊的問題休息一下，有助於激發靈光乍現的頓悟時刻，或刺激新想法的誕生，也能幫助人們探索非傳統的解決方案。這也是為什麼像 3M 和 Google 這樣全球最成功的企業，會鼓勵員工從事各種放鬆身心的活動，例如打彈珠台或在園區裡隨意走走。在這樣的休息時間裡，思緒會轉向內在，讓大腦能在潛意識中，慢慢琢磨那些細微的意義與關聯。另一個提升創造力的方法，是勇於冒險，因為許多重大突破，往往來自人們勇於跳脫日常慣例或專業領域之外的嘗試，例如學習新技能，或前往陌生的國家旅行。
+📋 內容大意
+Creativity has long been seen as a rare gift. Research now treats it as a natural human power that can be trained.
+Stepping away from a problem often brings sudden insight. Companies such as 3M and Google let staff relax, and during those pauses the mind keeps working.
+Taking risks also helps. Breakthroughs often come when people move outside their usual routines, by learning new skills or traveling to new countries.
+← 第18題回到107 年學測第20題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

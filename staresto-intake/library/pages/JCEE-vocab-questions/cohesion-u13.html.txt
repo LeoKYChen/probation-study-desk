@@ -1,0 +1,109 @@
+Source: https://github.com/staresto-create/JCEE-vocab-questions/blob/7342ffeafc4870943b9531ec57e0c5b0c39acbe8/cohesion-u13.html
+Author: staresto-create ZZSH
+Title: 問題與解決｜Anesthesia: The Discovery That Transformed Medicine
+Noncommercial educational text only
+
+問題與解決
+這種文章不是「有個問題，然後解決了」那麼簡單。它是一個循環：每解決一次，就冒出新的問題。乙醚不是終點，氯仿也不是——每一個解法後面都跟著一個 but。
+預覽模式：所有步驟、圖表、課文標記都已展開，進度不會存檔。學生拿到的一般連結不受影響。
+上次做到一半，已經幫你接回來了。重新開始
+ALL+ 互動英語 9 月號 Unit 13（pp. 54–57） Anesthesia: The Discovery That Transformed Medicine 全文 52 行 9/28 讀第 1–22 行，9/29 讀第 23–52 行
+第一步
+先擺一排你想得到的上層：組織方式
+問題解決文常常從「我們現在有多好」開始，因為你要先覺得現在很好，等一下讀到以前有多慘才會有感覺。下面是第 1 到 7 行，點三個有底色的地方。
+There are countless reasons to be grateful for living in the modern world. Technologies from phones and planes to fridges and blenders make our lives much more comfortable and luxurious than those of our ancestors. But perhaps no innovations have spared people from more misery than anesthetics, the medicines that put us to sleep and stop us from feeling pain during surgeries.
+已標出 0 / 3
+三個都標出來了。那麼——作者為什麼先講手機、飛機、冰箱、果汁機？
+先擺一排人人想得到的發明，再說麻醉比它們重要
+因為讀者需要先知道現代生活究竟方便到什麼程度
+因為這幾樣發明跟麻醉都是同一個時期出現的產物
+因為作者接下來要比較科技和醫學究竟何者更重要
+先擺一排人人想得到的發明，再說麻醉比它們都重要。手機、飛機、冰箱、果汁機是墊底用的——它們讓人聯想到「方便、舒適」。然後第 4 到 5 行一句 But perhaps no innovations have spared people from more misery than anesthetics 把整個標準抬高一級：那些只是讓生活舒服，麻醉是讓人免於受苦。
+注意那個最高級的句型。no innovations have…more…than X 等於「X 是最……的」。看到 no…more…than，先把它翻成最高級再讀。
+另外三個為什麼排除：
+「先知道現代生活多方便」——這一個最容易選，因為前三行確實在講方便。但方便只是手段，第 4 行的 But 立刻把它推翻掉了。看到 But，前面那幾行的功能就從「重點」變成「墊底」。
+「同一個時期出現的產物」——課文沒有給手機、冰箱的年代，也沒有把它們跟一八四六年放在一起比。課文沒寫的關聯不能自己補。
+「比較科技和醫學何者更重要」——比的不是兩個領域，是一個東西（麻醉）和一整排東西。而且比完之後就不再回頭講科技了，那一排發明從第 8 行起完全消失。
+那全篇怎麼走？
+第二步
+每個解法後面都跟著一個 but上層：怎麼認出來
+先回答：這篇文章推進的方式，最接近下列哪一種？
+依照時間順序，記錄麻醉技術的每一項重要發明
+每解決一次就冒出新問題，再解決，又再冒出來
+把幾種麻醉方式並排，比較它們各自的優點缺點
+先提出一個主張，再用三個實驗的結果去證明它
+每解決一次就冒出新問題。證據是三個轉折，位置都在解法剛講完的時候：第 20 到 22 行 None of these methods, however, were particularly effective、第 33 到 34 行 While ether clearly had massive benefits, it wasn’t perfect、第 38 到 39 行 but finding the right dosage proved to be difficult。
+另外三個為什麼排除，每一個都是這個系列教過的別種結構：
+「依時間順序記錄」——這是時間序（第四單元）。這篇確實有年份，但年份不是骨架。真正推著文章往前走的是「上一個方法不夠好」，不是「後來又過了幾年」。拿掉那三個轉折，這篇就散了；拿掉年份，還讀得懂。
+「並排比較優缺點」——這是比較對照（第十二單元）。這一個最容易選，因為乙醚和氯仿確實各有優缺點。但比較對照會把兩者擺在一起對照著寫，這篇是先後接力：氯仿是為了解決乙醚的問題才出現的，第 37 到 38 行寫得很清楚——Chloroform soon started to be used instead。
+「用實驗結果證明主張」——文章只有一個實驗（第 41 到 43 行 John Snow 試劑量），而且那是解法的一部分，不是拿來證明什麼。
+下面這張圖就是全篇的起伏。點任一點，第四步的課文對應行會亮起來（課文還沒打開的話，先把行號記住就好）。
+把循環拆開
+9/29 的範圍從這裡開始：第 23–52 行
+第一、二步用的是 9/28 的第 1–22 行（開場、麻醉發明前的手術、無效的舊方法）。第三步以後會用到整篇，包含 9/29 的第 23–52 行（乙醚的突破、氯仿與劑量、今天）。如果你今天是 9/28，做到這裡可以先停，明天再接下去。（第二步的圖已經畫出後半段的起伏，先看到不影響。）
+第三步
+循環表上層：怎麼驗證
+怎麼確定一篇是這種循環，不是單純的「問題→解決」？拆成三欄看：問題、解法、新問題。三輪逐一按開。
+已拆出 0 / 3
+看出來了嗎——這一輪的「新問題」，就是下一輪的「問題」。三輪像鏈條一樣扣在一起，這就是這種文章往前走的方式。
+怎麼認出一篇是這種循環：找解法後面的轉折詞。如果每一個解法後面都有一個 but、however、wasn’t perfect，那就是循環；如果解法講完就結束了，那是單純的問題解決。
+而循環在哪裡停下來，作者是有態度的。這篇停在 John Snow 算出劑量（第 41 到 46 行），然後第 47 行直接跳到 Today。作者沒有再挑毛病，等於在說：問題到這裡算解決了。
+考卷上怎麼考：最常見的是把中途的解法當成最終答案——問「作者認為最有效的止痛方式是什麼」，選項給乙醚。乙醚是第二輪的解法，不是終點。讀這種文章，一定要讀到最後一個轉折之後。
+看跟著循環擺盪的字
+第四步
+好、壞、好、壞下層：正負評價的擺盪
+這篇的形容詞在正負之間來回擺，而且擺動的節奏剛好對應上面那個循環——上下兩層在這一課是同一件事。
+負面那一堆集中在第 9 到 15 行和第 34 到 40 行（terrifying、screams、agony、appalling、unpleasant、vomit、death），正面那一堆集中在開頭、第 30 到 33 行和結尾（grateful、miraculous、breakthrough、massive benefits、lucky）。把兩色分別關掉看一次，起伏就一目了然。
+點圖上任一點，或直接點課文裡有底色的字。
+正面（青）
+負面（藍灰）
+線索
+點圖上的一點，或課文裡有底色的字
+青色是正面評價，藍灰是負面評價。
+另外兩樣，前面單元教過，這篇自己確認得出來：
+概括名詞。第 20 到 21 行的 None of these methods 一次收走前面五種舊方法（酒、鴉片、笑氣、催眠、打昏）；第 23 行的 This all changed 更狠，收走的是整整一段的失敗。跟第三、四、八、九、十二單元同一種工具——這是第六次遇到了，你應該已經很熟。
+換字。同一個主題一路換說法：anesthetics（6）→ anesthesia（8）→ ether（25）→ chloroform（37）→ anesthesia（47）。中間那兩個是具體的藥名，頭尾兩個是總稱——這正是第二、三單元教過的上義詞往下落到實例，再收回來。
+考卷怎麼考
+第五步
+別把中途的解法當終點上層：考點
+問題解決文的題目集中在兩種：
+一、方法與問題的配對。問「哪個方法是為了解決什麼」。做法是先在腦中把循環表畫出來，再回去對。
+二、把中途的解法當成最終答案。這是最常見的陷阱。乙醚是第二輪的解法，它自己也有問題；讀到最後一個轉折之後，才是作者的結論。
+試一題：根據全文，氯仿為什麼後來取代了乙醚？
+Because chloroform could be given in almost any amount without danger.
+Because chloroform was much cheaper and far easier to produce.
+Because ether was hard to inhale and posed a fire risk.
+Because ether had been shown to cause several patients’ deaths.
+第三句。第 34 到 37 行寫的是 Breathing it in was very unpleasant, which often caused patients to cough or vomit, and it could easily catch fire。正解換過字：very unpleasant to breathe 改寫成 hard to inhale，could easily catch fire 改寫成 posed a fire risk。
+另外三個為什麼排除：
+in almost any amount without danger——跟課文正好相反。第 38 到 40 行說氯仿的劑量很難拿捏，過量會致死。氯仿解決的是乙醚的問題，不是沒有自己的問題——這正好踩到「把中途的解法當終點」那個陷阱。
+much cheaper and far easier to produce——聽起來最合理，所以最難排除。價錢和生產難度在真實世界確實會影響選擇，但課文一個字都沒提。這種誘答靠的是你的常識，不是文本。
+ether had been shown to cause several patients’ deaths——把死亡接錯了對象。第 39 到 40 行的死亡風險屬於氯仿過量，不是乙醚。兩段都在講副作用，字看起來都眼熟，位置卻錯了一格。
+最後一題
+第六步
+把一句話放回去
+這就是考卷上的篇章結構題。下面把第 20–22 行那一句整句抽掉了，四個候選句只有一句放得進去。
+… Other methods for reducing pain included giving the patient alcohol, opium, or nitrous oxide, substances that people otherwise used for pleasure. Sometimes, surgeons even tried to hypnotize patients or knock them unconscious with a blow to the head. （空格）
+This all changed in 1846, when an American dentist named William Morton demonstrated the use of ether as an anesthetic.
+Alcohol was the method surgeons trusted most.
+None of these methods, however, were particularly effective.
+Doctors therefore began to look for a chemical solution.
+These methods stayed in use for many more years.
+四個線索同時指向同一句。這四句單獨看都說得通，沒有一句本身是錯的。要排除，得靠位置和線索。
+先講一個例外。前面說大考的正解通常是改寫，但抽句題不一樣：被抽掉的就是原文那一句，所以正解一定是原文。這一題要靠的是誘答哪裡接不上。
+一、概括名詞收不收得住。None of these methods 的 these methods 要一次收走前面列出的五種做法——酒、鴉片、笑氣、催眠、打昏。四句裡只有它罩得住整份清單；Alcohol was the method surgeons trusted most 只挑一項，剩下四項就懸在那裡。
+另外三個為什麼排除，各有一個明確的依據：
+二、方向。Doctors therefore began to look for a chemical solution. 用 therefore 往前推進，讀者會以為接下來要講尋找的過程。可是下一句是 This all changed in 1846——changed 需要前面留下一個「還沒改變」的狀態，不是一個已經開始的行動。
+三、評價。These methods stayed in use for many more years. 只講時間，沒有評價。但下一段把乙醚稱為 a miraculous breakthrough（第 30 到 31 行）——突破之所以是突破，前面必須先說「全都無效」。沒有那句評價，breakthrough 就沒有對照。
+四、落點。Alcohol was the method surgeons trusted most. 除了收不住清單，還多說了一件課文沒說的事：文章從頭到尾沒有比較過哪一種方法比較受信任。
+考卷上不會有底色，也不會有行號。但你剛才用的四個線索，每一篇問題解決文都有。
+帶著走的五句話
+問題解決文常常先講「現在有多好」。那是墊底用的。看到 But，前面那幾行的功能就從重點變成襯托。
+驗證方法：找解法後面的轉折詞。每一個解法後面都有 but、however、wasn’t perfect，就是循環；解法講完就結束，那是單純的問題解決。
+這一輪的新問題，就是下一輪的問題。三輪像鏈條一樣扣著。循環在哪裡停下來，是作者的態度——他不再挑毛病，就是認為問題解決了。
+別把中途的解法當終點。乙醚不是答案，氯仿也不是。讀到最後一個轉折之後，才是作者的結論。
+評價字會跟著循環一起擺盪。好、壞、好、壞——把正負兩堆字分開看，全篇的起伏就出來了。這是上下兩層咬在一起的一課。
+單字輪：把字拆成部件來記 →
+← 回讀法練習總表
+總表上有目前可以做的所有單元，還有你累積到現在的讀法工具。
+本題庫自己寫的部分（解析、中譯、分類、標註與編排）採用 CC BY-NC 4.0（姓名標示─非商業性）授權：可以分享，但須註明出處，不得用於商業用途。試題來源與完整說明請見使用與著作權。

@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/gref-18-1/index.html
+Author: staresto-create ZZSH
+Title: 學測參考試卷克漏字第18題詳解（介系詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 學測參考試卷 ／ 第18題
+學測參考試卷 克漏字 第18題
+介系詞線索：句內
+Mothers begin licking their kittens 18 birth---to clean them, stimulate the release of body waste, wake them up to suck milk, and provide comfort.
+(A)out of
+(B)right after
+(C)just before
+(D)along with
+答案：(B) right after
+題目編號：GRef_18_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】right after 指「緊接在……之後」，表示「母貓從出生後就開始舔舐小貓」；out of（從……）、just before（就在……之前，時間方向相反）、along with（伴隨）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是介系詞，其中兩個前面還帶了一個副詞，而 just before（就在……之前）與 right after（就在……之後）只差方向，如果沒把破折號後面那一串讀完，很容易挑反。
+怎麼判斷
+四個選項都是介系詞，可見這一格考的是語意與時間方向。順帶把一件事分清楚：這四個選項剛好分成兩型。out of 與 along with 是幾個字合起來當一個介系詞用，中間拆不開；just before 與 right after 則是「副詞加介系詞」，前面那個字只是修飾語，真正管事的是後面的 before 與 after。驗算法是把前面那個字拿掉——just before birth 拿掉 just 仍是 before birth，句子照樣成立；along with 拿掉 along 就不成句。劍橋 English Grammar Today 的 Prepositional phrases 條目說，副詞可以放在介系詞前面修飾它，主要用在可分級的時間或地點介系詞上，條目列出的字裡就有 before。整句是 Mothers begin licking their kittens ___ birth——母貓從什麼時候開始舔幼貓？決定性的線索在破折號後面：to clean them, stimulate the release of body waste, wake them up to suck milk, and provide comfort（清潔幼貓、刺激牠們排便、叫醒牠們吸奶、給予安撫）。這四件事全都要等幼貓出生之後才做得了——還沒出生就談不上清潔、排便或吸奶，所以填 right after（緊接在……之後）。right 在這裡是用來加強介系詞的副詞，意思是「就在、緊接著」，同一組還有 right before（就在之前）、right now（就是現在）、right here（就在這裡）。
+誘答選項
+just before（就在……之前）：時間方向剛好相反，與破折號後面那四件事直接衝突。out of（從……出來）：out of birth 不是通行的說法。along with（連同、伴隨）：講的是同時附帶的東西，不是時間的先後。
+常考字詞與句型
+right after（緊接在……之後）、right before（就在……之前）、right now（就是現在）、give birth to（生下）、stimulate（刺激）、provide comfort（給予安撫）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+When it comes to personal hygiene, cats are the best example of cleanliness. They are naturally equipped with 16 they need to groom themselves: a flexible tongue with which to lick, forepaws they moisten with saliva and use like washcloths, and teeth to dig out tougher pieces of food. 17, adult cats may spend as much as half of their waking hours grooming themselves, their relatives and friends.
+Mothers begin licking their kittens 18 birth---to clean them, stimulate the release of body waste, wake them up to suck milk, and provide comfort. Kittens usually begin grooming themselves when they are about four weeks old. 19 five weeks of age, kittens also begin grooming other baby cats, as well as their mom.
+20 grooming among cats, called allogrooming, often continues into adulthood. Allogrooming is a social activity that serves to strengthen the bond between cats.
+中譯：說到個人衛生，貓咪堪稱是愛乾淨的最佳典範。牠們天生就配備了理毛所需的一切：靈活的舌頭可以舔舐，前腳沾上唾液後可以當作毛巾使用，牙齒則能挑出比較頑固的食物殘渣。說出來你可能不信，成年貓花在替自己、親屬和朋友理毛上的時間，可能多達清醒時間的一半。母貓從小貓一出生就開始舔舐牠們——清潔身體、刺激排泄、喚醒牠們吸奶，並給予安撫。小貓通常在大約四週大時開始自己理毛。到了五週大左右，小貓也開始替其他小貓和媽媽理毛。貓咪之間這種彼此理毛的行為稱為「互相理毛」，通常會持續到成年。互相理毛是一種能強化貓咪之間情感連結的社交行為。
+📋 內容大意
+Cats are models of cleanliness. They groom themselves with a flexible tongue, forepaws moistened by saliva, and teeth for digging out stubborn food.
+Adult cats may devote half of their waking day to grooming, tending their own coats and those of relatives and friends.
+Mothers lick newborn kittens to clean and comfort them. Kittens groom themselves from four weeks, then groom their mother; this shared habit is called allogrooming, which strengthens their bonds.
+← 第17題回到學測參考試卷第19題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

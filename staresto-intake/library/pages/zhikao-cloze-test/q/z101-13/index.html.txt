@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z101-13/index.html
+Author: staresto-create ZZSH
+Title: 101 年指考克漏字第13題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 101 年指考 ／ 第13題
+101 年指考 克漏字 第13題
+字彙選義線索：句內答對率 64%
+答對率 64%：當年每 100 位考生，有 64 位答對。
+...it serves as a meeting place where exhibits, discussions, and reflections 13 to war, peace, and conflict resolution are in focus.
+(A)related
+(B)limited
+(C)addicted
+(D)contributed
+答案：(A) related
+題目編號：Z101_13（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+related to war, peace, and conflict resolution（與戰爭、和平及衝突解決相關）表示展覽、討論與省思都圍繞這些主題；limited／addicted／contributed 都不符合此處語意搭配。
+深入解析
+你可能會這樣想
+四個選項都是動詞加 -ed 的形態，很容易立刻進入文法模式，去分主動被動、去想是不是分詞構句。更麻煩的是這四個字後面都能接 to——be related to、be limited to、be addicted to、contribute to，所以「看介系詞就知道」這個方法在這一題完全失靈。
+怎麼判斷
+鑑別度高達 59，分開的正是有沒有先把句子的骨幹抓出來。主詞是三個並列的名詞 exhibits, discussions, and reflections（展覽、討論與省思），真正的動詞是後面的 are in focus。中間那一串沒有位置再放一個限定動詞，所以空格填的是掛在名詞後面的分詞，補充說明這三樣東西是什麼樣的東西。這就是後位修飾：分詞單獨一個放在名詞前面（a barking dog、a broken window），一旦後面還帶著東西（這裡帶了 to war, peace, and conflict resolution），整串就得移到名詞後面（the man standing there）。四個都是過去分詞、也都配 to，形態與介系詞都刷不掉任何一個，只能靠語意——這個中心的展覽與討論是「與戰爭、和平、衝突解決有關的」，只有 related 講得通。
+誘答選項
+be limited to 是「只限於」，填進去會變成「只限這三個主題」的展覽、討論與省思，等於替這些活動劃出界線；但這一句只是在說明它們圍繞哪些主題，沒有要劃定範圍。be addicted to 是「對……上癮」，只用在人身上，reflections 不會上癮。contribute to 是「對……有所貢獻、促成」，這個意思是不及物用法；放在名詞後面的過去分詞帶被動語意，contributed 會讀成及物用法的「捐出、提供」，reflections contributed to war 就成了「捐給戰爭的省思」，語意不通。
+常考字詞與句型
+be related to（與……有關）、be limited to（只限於）、be addicted to（對……上癮）、contribute to（對……有所貢獻）、conflict resolution（衝突解決）、in focus（成為焦點）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：101學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The Nobel Peace Center is located in an old train station building close to the Oslo City Hall and overlooking the harbor. It was officially opened on June 11, 2005 as part of the celebrations to 11 Norway's centenary as an independent country.
+It is a center where you can experience and learn about the various Nobel Peace Prize Laureates and their activities 12 the remarkable history of Alfred Nobel, the founder of the Nobel Prize. In addition, it serves as a meeting place where exhibits, discussions, and reflections 13 to war, peace, and conflict resolution are in focus.
+The Center combines exhibits and films with digital communication and interactive installations and has already received attention for its use of state-of-the-art technology. Visitors are welcome to experience the Center 14 or join a guided tour. Since its opening, the Nobel Peace Center has been educating, inspiring and entertaining its visitors 15 exhibitions, activities, lectures, and cultural events. The Center is financed by private and public institutions.
+中譯：諾貝爾和平中心位於一座舊火車站建築內，鄰近奧斯陸市政廳，並俯瞰港口。它於 2005 年 6 月 11 日正式開幕，作為慶祝挪威獨立建國一百週年的活動之一。在這座中心，你可以體驗並了解歷屆諾貝爾和平獎得主的事蹟，以及諾貝爾獎創辦人艾佛烈·諾貝爾傳奇的一生。此外，它也是一個聚會場所，展覽、討論與省思都聚焦在戰爭、和平與衝突解決等議題上。這座中心結合了展覽、影片、數位通訊與互動裝置，因大量運用尖端科技而備受矚目。訪客可以選擇自行參觀，或參加導覽行程。自開幕以來，諾貝爾和平中心便持續透過展覽、活動、講座與文化活動，教育、啟發並娛樂著訪客。這座中心由私人與公家機構共同出資營運。
+📋 內容大意
+The Nobel Peace Center stands in a former Oslo train station overlooking the harbor.
+Opened in 2005, it presents the Peace Prize winners and the story of Alfred Nobel.
+Praised for its advanced technology, it also hosts tours, talks and cultural events for visitors.
+← 第12題回到101 年指考第14題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

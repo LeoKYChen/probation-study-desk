@@ -1,0 +1,51 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dg114-34/index.html
+Author: staresto-create ZZSH
+Title: 學測 114年 篇章結構 第34題詳解（掌握段落內語句的連貫性與一致性）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 學測 114年 ／ 第34題
+學測 114年 篇章結構 第34題
+選文：膠囊旅館（Capsule Hotels）
+掌握段落內語句的連貫性與一致性線索：舉例、結論的位置提示詞答對率 46%
+(A)In response to rising demands, these hotels are embracing a wave of innovation.為因應日益增加的需求，這類旅館正迎向一波創新。
+(B)The room’s thin plastic walls easily transmit the sound of snoring made by neighboring guests.房間的塑膠薄牆很容易傳來隔壁客人的打呼聲。
+(C)The chambers are stacked side-by-side, two units high, with the upper rooms reached by a ladder.這些艙間並排堆疊，上下兩層，上層要爬梯子上去。
+(D)Today, they provide low-budget, overnight lodging in commerce centers in large cities worldwide.如今這類旅館在全球大城市的商業中心提供平價的過夜住宿。
+答案：(B) The room’s thin plastic walls easily transmit the sound of snoring made by neighboring guests.
+題目編號：Dg114_34
+解析
+先看空格後面。 後面是 Also, you may have to share common facilities...（此外，你可能得和其他客人共用浴室等公共設施）。Also（此外）表示這是清單上的又一項，前面列的應該是同一類的東西。
+再看空格前面。 前面只列了一項：有些旅館艙內沒空調，空氣不流通。
+空格前面是一項缺點，後面 Also 帶出的共用設施也是缺點；夾在中間的這一句，同樣應該是一項缺點。B 講打呼聲穿牆，正好是同一類的抱怨。
+回頭看一件事：第二段說牆常用玻璃纖維或塑膠做，那時只是中性的規格；到了第四段，同一件事變成缺點。同一個事實放在不同段落，任務不一樣——這也是第 32 題不能選 B 的原因。
+如果你選了 C（這些艙間並排堆疊，上下兩層，上層要爬梯子上去。）：C 是規格描述，沒有任何負面意思，放在一串抱怨中間會斷掉。
+【下次先看這裡】看到 Also、Besides、「此外」，先看前面列的是哪一類的東西。空格夾在同一份清單中間，要填的就是同一類的那一項。
+線索與數據
+線索種類舉例、結論的位置提示詞
+線索在哪後一句 Also
+答對率46%
+鑑別度66
+本篇題型4選4・刪去法可收尾
+數據出處：本頁的答對率與鑑別度來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響。
+展開本題所在的整篇選文與中文翻譯
+本篇共 4 格、4選4；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+A capsule hotel, also known as a pod hotel, is a unique type of basic, affordable accommodation. Originated in Japan, these hotels were initially meant for business professionals to stay close to populated business districts without spending a lot. 31
+A typical room of a capsule hotel is roughly the length and width of a single bed, with sufficient height for a guest to crawl in and sit up on the bed. The walls of each capsule may be made of wood, metal or any rigid material, but are often fiberglass or plastic. 32 Each capsule is equipped with a comfortable mattress, a small light, and sometimes a television or other entertainment options. Such minimalist design is what makes these hotels both inexpensive and efficient, providing only the essential elements for a good night sleep.
+The first capsule hotel, the Capsule Inn Osaka, opened in 1979. Since then, capsule hotels have quickly spread to other cities and countries. Chains have emerged in Taiwan, Singapore, and even on resort islands like Bali. Pod hotels are also seen in Europe and North America, especially in big cities like New York, London, and Paris. 33 Instead of the traditional bare pod-sized style, new chains now feature interior design that appeals to digitally connected travelers from around the world. Guests may enjoy facilities such as free Wi-Fi, mobile charging, and even a soundless alarm system that raises the sleeping guests into a seated position while gradually brightening the lights.
+轉折：列出缺點，提醒不是人人適合
+While offering budget-conscious travelers a unique option, capsule hotels may not be suitable for everyone. Some hotels may not provide air conditioning in the capsules, leading to poor air flow. 34The room’s thin plastic walls easily transmit the sound of snoring made by neighboring guests. Also, you may have to share common facilities (such as bathrooms) with other guests. And, if you’re worried about feeling claustrophobic in small spaces, you’d better think twice before making a reservation.
+中譯
+膠囊旅館又稱為艙式旅館，是一種很特別的簡便平價住宿。這類旅館源自日本，最初是為了讓商務人士能住在人潮密集的商業區附近，又不必花太多錢。31
+膠囊旅館典型的房間，長寬大約就是一張單人床的尺寸，高度則剛好夠客人爬進去、在床上坐直。每個艙間的牆面可以是木頭、金屬或任何堅硬的材質，但常見的是玻璃纖維或塑膠。32 每個艙間都配有舒適的床墊、一盞小燈，有時還有電視或其他娛樂設備。正是這種極簡的設計，讓這類旅館既便宜又有效率，只提供一夜好眠所需的基本要素。
+第一家膠囊旅館「大阪膠囊旅館」於一九七九年開幕。從那時起，膠囊旅館很快擴散到其他城市與國家。台灣、新加坡都出現了連鎖品牌，連峇里島這樣的度假島嶼也有。艙式旅館在歐洲和北美也看得到，尤其是紐約、倫敦、巴黎這些大城市。33 新的連鎖品牌不再走傳統那種空蕩蕩、只有一個艙位大小的路線，而是主打室內設計，要吸引世界各地隨時連著網路的旅客。房客可以享有免費無線網路、手機充電，甚至還有無聲的鬧鐘系統——它會把還在睡的客人緩緩升成坐姿，同時把燈光逐漸調亮。
+膠囊旅館雖然為精打細算的旅客提供了一個特別的選擇，卻不見得適合每個人。有些旅館的艙間裡沒有空調，空氣流通不佳。34 另外，你可能得和其他房客共用公共設施（例如浴室）。還有，如果你擔心自己在狹小空間裡會有幽閉恐懼的感覺，訂房之前最好再想一想。
+← 第33題回到互動練習
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

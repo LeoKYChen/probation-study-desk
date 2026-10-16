@@ -1,0 +1,111 @@
+Source: https://github.com/staresto-create/JCEE-vocab-questions/blob/7342ffeafc4870943b9531ec57e0c5b0c39acbe8/cohesion-u4.html
+Author: staresto-create ZZSH
+Title: 時間序｜When Dreams Led to Scientific Breakthroughs
+Noncommercial educational text only
+
+時間序
+四位科學家，四個夢。作者把他們排成一條時間線——但課文的出現順序，不等於事情發生的順序。
+預覽模式：所有步驟、時間軸、課文標記都已展開，進度不會存檔。學生拿到的一般連結不受影響。
+上次做到一半，已經幫你接回來了。重新開始
+ALL+ 互動英語 9 月號 Unit 4 When Dreams Led to Scientific Breakthroughs pp. 16–17（課文共 64 行）
+For centuries→On March 1, 1869→just a few years before→later thinkers→Today
+這五個片語分別在第 5、15、25、35、55 行。把它們連起來，就是這篇文章的骨架。其中有一個的方向跟其他四個相反。
+第一步
+先把時間訊號挑出來
+下面八張字卡都是課文裡的片語。有些在告訴你時間，有些只是在描述方式或地點。把講時間的挑出來，一共五張。點錯會變灰，但還可以再點。
+For centuries第 5 行
+in the quiet, unpredictable world of dreams第 4–5 行
+On March 1, 1869第 15–16 行
+in a logical, systematic way第 17–18 行
+had occurred just a few years before第 25 行
+later thinkers第 35 行
+in organic chemistry第 32 行
+Today第 55 行
+找到 0 / 5
+找不到，直接看答案
+五張時間訊號串起來，就是這篇的骨架：數百年來 → 1869 年 3 月 1 日 → 更早幾年 → 後來的人 → 今天。
+沒被選到的三張長得也很像——都是 in 開頭的介系詞片語——但它們回答的是「怎麼做」「在哪裡」，不是「什麼時候」。判斷的方法不是看句型，是看它回答的問題。
+一篇文章只要能挑出這樣一串時間訊號，它多半就是時間序寫的。時間序的文章，段落順序本身就在傳遞訊息，這是讀的時候最省力的一條線。
+可是有一張的方向不一樣
+第二步
+出現順序不等於時間順序
+課文先講門得列夫，寫明是 On March 1, 1869（第 15–16 行）。下一段才講凱庫勒。
+那麼，凱庫勒夢見那條蛇，是什麼時候的事？
+1869 年之後
+比 1869 年早幾年
+跟門得列夫同一年
+課文沒有交代
+第 25 行：a similar discovery had occurred just a few years before.
+had ＋ p.p.（過去完成式）的工作，就是把時間推到另一個過去事件之前。後面再加一個 before，方向又確定了一次。所以：
+課文出現順序：門得列夫 → 凱庫勒
+實際發生順序：凱庫勒 → 門得列夫
+考卷上問「下列事件何者最先發生」的時候，照字面順序回答就會答錯。中文沒有時態，這一步對我們特別容易漏掉，所以看到 had ＋ p.p.，先停一下，確認時間是不是往回走了。
+把整條時間線畫出來
+9/8 的範圍從這裡開始：第 33–64 行
+第一、二步用的是 9/7 的第 1–32 行。第三步以後會用到整篇，包含 9/8 的第 33–64 行。如果你今天是 9/7，做到這裡可以先停，明天再接下去。（第一步的字卡裡已經有兩張來自第 33 行以後，先看到不影響。）
+第三步
+兩條線，只有前兩個位置交換
+左邊是課文出現的順序，右邊是實際發生的順序。點任何一個名字，下面會出現它在課文裡的行，時間訊號會標起來。
+點上面的名字，這裡會顯示對應的課文行。
+整條線上只有一個地方交叉。其他三段課文順序和時間順序完全一致，作者也就沒有多加說明——順序自己會講話。只有要往回走的那一次，他必須用 had occurred … before 明講。
+這給你一個很省力的讀法：時間序的文章，預設「先寫的先發生」，只在看到過去完成式或 before、earlier、previously 這類字的時候才停下來重排。
+下一個：作者怎麼指回前面
+第四步
+This ＋ 一個概括的名詞
+時間序把段落串起來，但段落內部靠的是另一套工具。看第 30 行：
+第 28–29 行Then one night, he dreamed of a snake biting its own tail and forming a ring.
+第 30 行This striking vision led him to propose a circular molecular structure…
+This striking vision 指的是什麼？
+苯的環狀結構
+凱庫勒夢見蛇咬住自己的尾巴繞成一圈
+凱庫勒長年的研究
+有機化學上的突破
+vision 這個字本身沒有內容，內容全在前面那一句。
+作者不想把整句重講一次，就用一個概括的名詞（vision）把它整包收起來，前面加 This。要判斷它指什麼，往前找最近的一整句話，不是找最近的一個名詞。
+選「苯的環狀結構」的話，方向剛好相反——那是這個 vision 造成的結果，寫在同一句的後半段。
+再看一個一模一樣的
+第 45–47 行…Niels Bohr is said to have dreamed of electrons orbiting the nucleus like planets around the sun.
+第 48 行This vivid image inspired his model of the atom…
+波耳的原子模型
+電子繞著原子核運行，像行星繞著太陽
+諾貝爾物理獎
+原子的結構
+同一個手法，同一個位置。夢的內容寫在前面，This ＋ 概括名詞把它收起來，接著才寫它引出的結果（his model of the atom）。
+vision、image 這種字在這裡叫概括名詞。常見的還有 this approach、this decision、this problem、these findings、such discoveries。看到它們，先往前找那一整句。
+第三單元練過同一種工具，但那裡的 these reactions 一次收走了三整段；這裡的 This striking vision 只收前面一整句。同一種工具，收的範圍可大可小——往前找的時候，先確定它收的是一句還是一整片。
+這正是這期第 12 單元「看懂代名詞的指涉對象」要處理的東西，你已經先練到了。
+把整篇打開
+第五步
+三條線一起看
+點任何一個有底色的字，同一條線上的字會一起亮起來。三種顏色可以各自關掉。
+時間訊號（橘）
+換字：做研究的人（青）
+指涉（藍灰）
+時間訊號
+點一個字看看
+橘色是時間骨架，青色是同一種人的不同說法，藍灰是回頭指前文的詞。
+那考卷上怎麼考？
+第六步
+把一句話放回去
+這就是考卷上的篇章結構題。下面把第 24–25 行整句抽掉了，四個候選句只有一句放得進去。前面五步練的東西，這一題全部用上。
+… Upon waking, he immediately wrote it down—and what he had envisioned was what we now recognize as the periodic table.
+（空格） August Kekulé had long endeavored unsuccessfully to determine the structure of benzene. Then one night, he dreamed of a snake biting its own tail and forming a ring. …
+Remarkably, a similar discovery had occurred just a few years before.
+Soon afterward, another chemist would make a discovery in much the same way.
+August Kekulé, however, reached his conclusion through years of careful experiments.
+Since then, no other scientist has reported a discovery of this kind.
+三個線索同時指向同一句。
+時間方向。空格後面接的是凱庫勒，而這篇在這裡是全文唯一一次往回走。只有正解的 had occurred … before 把時間推到 1869 之前。Soon afterward（不久之後）和 Since then（從那時起）都是往後，方向相反。
+空格要留一個位子。空格後那句直接寫 August Kekulé，沒有任何介紹就出場了，表示空格必須先鋪好「還有另一個人、另一件事」的位子。正解的 a similar discovery 正好留下這個位子——而且它又是一個概括名詞，跟你第四步練的 This striking vision 同一種東西：先概括，下一句才落實成凱庫勒。August Kekulé, however… 那句提早把名字點掉了，後面那句反而變成重複。
+內容不能打架。reached his conclusion through years of careful experiments（靠多年實驗得出結論）跟第 28–29 行的夢直接相反。no other scientist has reported a discovery of this kind（此後沒有別人有過這類發現）則跟第 33 行以後的拉馬努金和波耳整段矛盾。
+考卷上不會有底色，也不會有時間軸。但時間訊號、留位子的概括名詞、前後內容一不一致，這三樣每一篇文章都在。
+帶著走的五句話
+先找時間訊號，骨架就出來了。判斷一個片語是不是時間訊號，看它回答的是不是「什麼時候」，不是看它的句型。
+出現順序不等於時間順序。看到 had ＋ p.p.，或 before、earlier、previously，先停下來確認時間是不是往回走了。
+順序一致的時候作者不會多說。他只在要往回走的那一次明講——所以那一句通常就是考點。
+This／These／such ＋ 概括名詞，指的是前面一整句。往前找最近的一整句，不是最近的一個名詞。
+篇章結構題三個線索一起用。時間方向對不對、空格後面需不需要一個位子、內容跟前後文有沒有打架。
+單字輪：neuro-、-logy 這一輪 →
+← 回讀法練習總表
+總表上有目前可以做的所有單元，還有你累積到現在的讀法工具。
+本題庫自己寫的部分（解析、中譯、分類、標註與編排）採用 CC BY-NC 4.0（姓名標示─非商業性）授權：可以分享，但須註明出處，不得用於商業用途。試題來源與完整說明請見使用與著作權。

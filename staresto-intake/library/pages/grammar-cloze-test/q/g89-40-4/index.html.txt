@@ -1,0 +1,42 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g89-40-4/index.html
+Author: staresto-create ZZSH
+Title: 89 年學測克漏字第40題詳解（語意連貫）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 89 年學測 ／ 第40題
+89 年學測 克漏字 第40題
+語意連貫線索：篇章
+I jumped out of the car, ran round to open the trunk and there inside 40 .
+(A)were two scared and shivering little girls
+(B)were two red-faced and excited children
+(C)was one of the passers-by I had asked
+(D)was nothing at all
+答案：(B) were two red-faced and excited children
+題目編號：G89_40_4（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+結尾揭曉真相：孩子們躲在後車廂裡，臉紅興奮地笑（呼應前文聽到的笑聲），were two red-faced and excited children 符合這種「惡作劇被發現」的歡樂結局；were two scared and shivering little girls（跟前文聽到笑聲矛盾）、was one of the passers-by（不合）、was nothing at all（跟後文解釋找到孩子矛盾）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+故事到這裡是找不到孩子的高潮，情緒一路緊繃，所以「兩個嚇壞了發抖的小女孩」讀起來最合乎預期。但作者在前一句就已經把謎底的線索埋好了，只要往回讀一句就會發現方向反了。
+怎麼判斷
+往回讀一句：Suddenly, behind me I heard a tapping noise and laughter.（突然，我聽到身後傳來敲擊聲和笑聲。）laughter 這個字是決定性的證據——被困住而驚恐的孩子不會笑。再往後讀：They had apparently pulled out the back seat, crawled behind it, and then had not been able to push the seat forward again.（她們顯然是把後座拉開、爬到後面去，然後就推不回來了。）這是她們自己爬進去玩的，不是意外受困。最後一句 I almost wept with relief!（我幾乎要喜極而泣。）——是鬆一口氣，不是心疼。三個證據都指向同一個結論：兩個孩子紅著臉、興奮得很。順便看這一句的結構：there inside were two red-faced and excited children，表地方的副詞 there inside 擺到句首，主詞就跑到動詞後面去了，這是倒裝。同型的句子這一篇前面才出現過一次——on the back seat were their two jackets（後座擺著她們的兩件外套），兩句可以對照著看。
+誘答選項
+were two scared and shivering little girls（兩個嚇壞了發抖的小女孩）：與前面的 laughter 直接矛盾，也與結尾的 wept with relief 對不上。was one of the passers-by I had asked（是我剛問過的路人之一）：情節上說不通，而且後面那句明說是「她們」把後座拉開爬進去的。was nothing at all（什麼都沒有）：那敲擊聲和笑聲從何而來，故事也就沒有結局了。
+常考字詞與句型
+open the trunk（打開後車廂）、weep with relief（喜極而泣、鬆一口氣落淚）、crawl behind（爬到……後面）、pull out（拉出、抽出）、push sth forward（把某物往前推）、red-faced（滿臉通紅的）。
+線索範圍說明：選項是完整句子，必須讀懂整段的對話走向或事件順序才選得出來
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Last Tuesday I took my two nieces, aged three and five, to town in the car. It began to rain heavily so I decided 36 , while I rushed into a shop. I told the girls I would be back in a few minutes and asked them not to touch anything. Then I locked all the doors and left.
+I was back at the car in less than five minutes 37 ! I could hardly believe my eyes. The car doors were still locked, the windows tightly shut, and on the back seat were their two jackets. 38 , I ran to the corner of the street but there was no sign of them. I rushed up to a couple of passers-by and asked in vain whether 39 .
+Feeling quite sick with fear, I sat on the driver's seat, trying to stop trembling. Suddenly, behind me I heard a tapping noise and laughter. I jumped out of the car, ran round to open the trunk and there inside 40 . They had apparently pulled out the back seat, crawled behind it, and then had not been able to push the seat forward again. I almost wept with relief!
+中譯：上星期二，我開車帶著三歲和五歲的兩個姪女進城。天空突然下起大雨，我決定把她們留在車上，自己則衝進商店。我跟她們說我幾分鐘後就會回來，並要求她們不要亂碰任何東西，接著我鎖上所有車門就離開了。不到五分鐘我就回到車旁——但眼前的景象讓我簡直不敢相信自己的眼睛！車門依然上鎖，車窗也緊閉著，後座上還放著她們的兩件外套，但女孩們卻已經憑空消失了！我驚慌失措地跑到街角，卻連她們的蹤影都找不到。我衝上前去問了幾位路人，卻沒有人看見兩個小女孩，一切都是徒勞。我嚇得渾身發軟，坐進駕駛座試著讓自己冷靜下來，不再發抖。突然，我聽到背後傳來敲擊聲和笑聲。我跳下車，跑到車後打開後車廂，裡面竟是兩個滿臉通紅、興奮不已的孩子！原來她們把後座椅背拉起，爬到後面躲了起來，之後卻沒辦法把椅背推回去。我簡直喜極而泣！
+📋 內容大意
+A woman left her two nieces in a locked car. When she came back, they were gone. She searched the street in fear, then heard tapping from the trunk.（敘事文）
+← 第39題回到89 年學測
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,51 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dz99-32/index.html
+Author: staresto-create ZZSH
+Title: 指考 99年 篇章結構 第32題詳解（掌握段落內語句的連貫性與一致性）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 指考 99年 ／ 第32題
+指考 99年 篇章結構 第32題
+選文：蟑螂什麼時候學得比較好（When Cockroaches Learn Best）
+掌握段落內語句的連貫性與一致性線索：轉折詞、前提呼應答對率 46%
+(A)When these insects moved toward a vanilla smell, on the other hand, they were punished with a taste of salt.另一方面，這些昆蟲若朝香草味移動，就會被鹽的味道處罰。
+(B)This result thus shows that the time when they were trained decided the effect of their learning.這個結果因而顯示，受訓的時間決定了牠們學習的效果。
+(C)They are often more active and tend to search for food during the night.牠們在夜間通常比較活躍，也傾向在夜間覓食。
+(D)They were also found to like sugar water, but not salt water.研究也發現牠們喜歡糖水，不喜歡鹽水。
+(E)Cockroaches have the same problem!蟑螂也有同樣的問題！
+答案：(D) They were also found to like sugar water, but not salt water.
+題目編號：Dz99_32
+解析
+先看空格前面。 前一句說：多數蟑螂在任何時候都比較喜歡香草味，勝過薄荷味。
+再看空格後面。 後面是 Therefore, the scientists trained the cockroaches to prefer the peppermint smell by rewarding the insects with a taste of sugar water...（因此科學家用糖水獎勵牠們，訓練牠們改為偏好薄荷味。）
+要拿糖水當獎勵，前面必須先確認糖水對蟑螂是好東西。 這一步就在空格裡。D 不只交代了糖水，還一併交代了鹽水。
+這一題的鑑別度 73，是本篇最高。
+如果你選了 A（另一方面，這些昆蟲若朝香草味移動，就會被鹽的味道處罰。）：A 也講糖鹽、也講氣味，話題最近。但 A 的 on the other hand（另一方面）要和一個已經說過的做法對照，而這時候訓練還沒開始，只測出了偏好。
+【下次先看這裡】後面說「用某樣東西當獎勵或處罰」，先確認前面有沒有交代過那樣東西對牠們是好是壞。沒有，那句交代就在空格裡。
+線索與數據
+線索種類轉折詞、前提呼應
+線索在哪後一句 後句 Therefore；糖水是獎勵的前提
+答對率46%
+鑑別度73
+本篇題型5選5・刪去法可收尾
+數據出處：本頁的答對率與鑑別度來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響。
+展開本題所在的整篇選文與中文翻譯
+本篇共 5 格、5選5；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+Do you have trouble getting started in the morning? Do you have problems learning early in the day? If you do, you are not alone. 31 They learn better at night than they do in the morning.
+To investigate when cockroaches learn best, researchers at Vanderbilt University tested the insects for which odor (peppermint or vanilla) they preferred. Most cockroaches preferred the smell of vanilla to that of peppermint at all times. 32They were also found to like sugar water, but not salt water. Therefore, the scientists trained the cockroaches to prefer the peppermint smell by rewarding the insects with a taste of sugar water when they approached a peppermint smell. 33
+When the cockroaches were trained at night, they remembered the new associations (peppermint = sugar water; vanilla = salt water) for up to 48 hours. However, if the cockroaches were trained in the morning, they quickly forgot which smell went with which water. 34
+So, cockroaches learn better at night than they do in the morning. 35 Because of this, it is likely that information they gather at night will be more useful to them. These experiments provide some clues about the interactions between body rhythms, learning and memory.
+中譯
+你早上會不會很難進入狀況？你會不會在一天剛開始的時候學東西特別吃力？如果會，你不孤單。31 牠們晚上學東西的效果比早上好。
+為了研究蟑螂什麼時候學得最好，范德堡大學的研究人員測試這些昆蟲偏好哪一種氣味（薄荷或香草）。多數蟑螂在任何時間都比較喜歡香草味，不喜歡薄荷味。32 因此，科學家訓練蟑螂改為偏好薄荷味：只要牠們靠近薄荷味，就給牠們嘗一口糖水當獎賞。33
+蟑螂如果在夜間受訓，這些新的連結（薄荷＝糖水；香草＝鹽水）牠們可以記住長達四十八小時。但如果是在早上受訓，牠們很快就忘記哪一種氣味配哪一種水。34
+所以，蟑螂晚上學東西的效果比早上好。35 正因如此，牠們在夜間蒐集到的訊息，很可能對牠們比較有用。這些實驗為身體節律、學習與記憶之間的互動提供了一些線索。
+← 第31題回到互動練習第33題 →
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

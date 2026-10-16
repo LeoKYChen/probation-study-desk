@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g103-27-3/index.html
+Author: staresto-create ZZSH
+Title: 103 年學測克漏字第27題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 103 年學測 ／ 第27題
+103 年學測 克漏字 第27題
+字彙選義線索：句內答對率 40%
+答對率 40%：當年每 100 位考生，有 40 位答對。
+The answer is: not very thoroughly, 27 they are executives, specialized experts, or ordinary people in the street.
+(A)whoever
+(B)because
+(C)whether
+(D)rather
+答案：(C) whether
+題目編號：G103_27_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】whether...or... 指「不論是……還是……」，表示「不論他們是主管、專家、或一般人」；whoever（無論是誰，不太符合這個並列結構）、because（因為）、rather（而不是）都不合。
+深入解析
+你可能會這樣想
+看到後面有 or，你可能想到 whether... or... 這組，但也可能因為 whoever 帶有「無論是誰」的味道，覺得它更貼「不論主管、專家還是路人」的語意。答對率只有四成，whoever 是最容易選錯的一個。這一題比的不是語意像不像，而是文法角色對不對。
+怎麼判斷
+用一個很乾淨的檢驗法：先數空格後面的子句缺不缺主詞。whoever 是複合關係代名詞，它自己必須在子句裡當主詞或受詞——Whoever comes first will get the prize.（誰先到誰得獎），whoever 就是 comes 的主詞。本題空格後面是 they are executives, specialized experts, or ordinary people in the street，主詞 they 已經在了，再放一個 whoever 進去就多出一個主詞，句子直接壞掉。whether 是連接詞，後面接完整子句，引導的是讓步：「不論是…還是…」，正好與句中的 or 呼應成 whether they are A, B, or C。語意也對得起來：前面說「答案是：並沒有很徹底」，接著要補一句「不管哪一種人都一樣」，正是讓步。再補一個常被混淆的點：whether 有兩種用法，一是引導名詞子句的「是否」（I don't know whether he will come.），二是本題這種讓步的「不論是…還是…」。看到 whether，先確認它引導的子句在整句裡扮演什麼角色，兩種用法就分得開。
+誘答選項
+whoever：本身要當子句的主詞，後面不能再出現 they。because（因為）：整句沒有在解釋原因，而且 because 沒辦法與後面的 or 串起三種用法。rather（相當地、寧可）：是副詞，不能引導子句；要表達「而不是」得用 rather than，而且 rather than 後面接的是對等的成分，不是一個完整子句。
+常考字詞與句型
+whether A or B（不論是 A 還是 B）、whether or not（不論是否）、rather than（而不是）、would rather do（寧願做…）、specialize in（專攻、專門從事）、in the street（在街上）。其中 rather than 這一組考過 9 個年度，83 年第 30 題 →、88 年第 23 題 →、94 年第 25 題 →、98 年第 27 題 →、99 年第 20 題 →、105 年第 26 題 →、107 年第 16 題 →、107 年第 28 題 →、110 年試辦考試第 13 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Most human beings actually decide before they think. When people encounter a complex issue and form an opinion, how thoroughly have they 26 all the important factors involved before they make their decisions? The answer is: not very thoroughly, 27 they are executives, specialized experts, or ordinary people in the street. Very few people, no matter how intelligent or experienced, can 28 all the possibilities or outcomes of a policy or a course of action within just a short period of time.
+Those who take pride in being decisive often try their best to consider all the factors beforehand. 29 , it is not unusual for them to come up with a decision before they have the time to do so. And 30 an opinion is formed, most of their thinking then is simply trying to find support for it.
+中譯：大多數人其實是先做決定、後思考。當人們遇到複雜的議題並形成意見時，在做出決定之前，他們究竟把所有重要因素都仔細考慮過了嗎？答案是：並沒有考慮得很周全，無論是企業主管、專業人士，還是一般大眾都是如此。無論一個人多聰明、多有經驗，很少有人能在短時間內考慮到一項政策或行動方案的所有可能性與後果。那些以果斷自豪的人，往往會盡力事先考慮周全所有因素，然而，他們常常在還沒來得及仔細思考之前就已經做出了決定。而一旦意見形成，他們接下來大部分的思考，往往只是在為這個已經形成的意見尋找支持的理由。
+📋 內容大意
+People usually make decisions instinctively before thoroughly analyzing all factors and possibilities involved.
+Even decisive individuals frequently form opinions first and then use reasoning merely to justify their initial choice.
+← 第26題回到103 年學測第28題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

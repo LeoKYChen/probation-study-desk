@@ -1,0 +1,146 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/z102p3.html
+Author: staresto-create ZZSH
+Title: 102 指考閱讀測驗：非洲學校走向數位化｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 102 指考
+102 指考閱讀測驗：非洲學校走向數位化
+Schools in Africa Going Digital
+指考 102年第 44–47 題4 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段Grace Wambui, a 14-year-old pupil in Nairobi, had never touched a tablet computer. But it took her only about one minute to work out how to use one when such devices arrived at Amaf School in Kawangware, a slum in the Kenyan capital. Teaching used to be conducted with a blackboard and a handful of tattered textbooks. Now children in groups of five take turns to swipe the touch screen of the devices, which are loaded with a multimedia version of Kenya’s syllabus.
+第 2 段The tablets at Amaf School are part of a pilot project run by eLimu, a technology start-up. If it and other firms are right, tablets and other digital devices may soon be the rule in African schools. Many are betting on a boom in digital education in Kenya and elsewhere. Some executives even expect it to take off like M-Pesa, Kenya’s hugely successful mobile-money service.
+第 3 段Such growth in digital education would be timely. The flood of new pupils has overwhelmed state schools, which were already understaffed, underfunded and poorly managed. The prospect of Africa’s 300 million pupils learning digitally has caught the attention of global technology giants. Amazon has seen sales of its Kindle e-readers in Africa increase tenfold in the past year. Intel has been helping African governments buy entry-level computers. In Nigeria, Intel brought together a publisher and a telecom carrier to provide exam-preparation tools over mobile phones, a service that has become hugely popular.
+第 4 段A bigger question is whether digital tools actually improve education. Early results are encouraging. In Ghana, reading skills improved measurably among 350 children that had been given Kindle e-readers. In Ethiopia, in the absence of teachers, children figured out how to use tablets and learned the English ABCs. At Amaf School, average marks in science went from 58 to 73 in a single term.
+題目
+44.Which of the following is the best title for this passage?
+(A)The Bestseller in Africa
+(B)Problems Plaguing Education in Africa
+(C)Schools in Africa Are Going Digital
+(D)Tablet Computers Are in Great Demand in Kenya
+45.What is the author trying to convey in citing Grace Wambui’s case?
+(A)Grace is a genius in computer skills.
+(B)The tablet computer is very user-friendly.
+(C)The delivery system in Kenya is very poor.
+(D)Tablet computers are common in Kawangware.
+46.According to the passage, what is eLimu?
+(A)A company.
+(B)A computer program.
+(C)An e-book.
+(D)An educational project.
+47.According to the passage, which of the following is true about education in Africa?
+(A)The number of students keeps dropping in recent years.
+(B)There are more than enough teachers for traditional classroom teaching.
+(C)Students have received Kindle e-readers donated by Amazon to improve reading.
+(D)Early results from use of digital tools in teaching are quite positive in some countries.
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+44
+(C)
+68%
+59
+45
+(B)
+49%
+59
+46
+(A)
+27%
+43
+47
+(D)
+57%
+61
+答對率與鑑別度出處：大考中心 102 學年度指定科目考試統計圖表：英文科答對率及鑑別指數表
+每一題的依據句
+第 44 題 主旨題 Main idea
+依據句：全文要讀完整篇才能判斷，不在某一句裡。
+第 1 段用 Grace 的例子，說平板電腦送進了肯亞的學校；第 2 段說數位裝置可能很快在非洲學校普及；第 3 段說非洲的學生太多、學校應付不來，科技大廠紛紛投入；第 4 段說初步結果令人振奮。全文講的是非洲的學校走向數位化，所以是 (C)。(D) 照抄第 1 段的 Kenya，全文也談到奈及利亞、迦納和衣索比亞，只講肯亞的平板，過於狹隘；(B) 公立學校的問題只是第 3 段說數位教育來得正是時候的原因，過於狹隘；(A) 暢銷商品，文章沒有在談，偏離主題。
+錯誤選項：(A) 偏離主題；(B) 過於狹隘（只講第 3 段）；(D) 過於狹隘（只講第 1 段）
+第 45 題 文章段落組織 Structure
+第 1 段But it took her only about one minute to work out how to use one
+這一題答對率只有 49%，問的是作者舉 Grace 這個例子的用意。判斷步驟：[1] 第 1 段說 Grace 從來沒有摸過平板電腦；[2] 接著用 But 轉折，說她只花一分鐘左右就學會怎麼使用；[3] 一個從沒用過的孩子一分鐘就會用，表示平板很容易上手，所以是 (B)。(A) 作者沒有說 Grace 有特別的天分，例子的重點在平板好用；(D) 照抄 Kawangware，Grace 從沒摸過平板，可見平板在這個貧民區並不普遍；(C) 原文沒有談到肯亞的運送系統。
+第 46 題 細節題 Supporting details
+第 2 段a pilot project run by eLimu, a technology start-up.
+第 2 段If it and other firms are right
+原文 → 正確選項
+start-up → company
+這一題答對率只有 27%，是這一批最難的題目之一，關鍵是看懂逗點後面的同位語。判斷步驟：[1] 第 2 段說平板是 eLimu 主持（run by eLimu）的試辦計畫的一部分；[2] eLimu 後面緊接著逗點和 a technology start-up，這是同位語，說明 eLimu 是什麼，start-up 是新創公司；[3] 下一句 If it and other firms are right 又把 eLimu 和其他公司（other firms）並列。所以 eLimu 是一家公司，答案是 (A)。最多人選錯的是 (D)，這個選項照抄 project：試辦計畫是 eLimu 主持的，計畫和主持計畫的公司是兩回事。(B) 電腦程式、(C) 電子書，是平板裡裝的東西，不是 eLimu。
+第 47 題 細節題（何者為是） Supporting details
+第 4 段Early results are encouraging.
+原文 → 正確選項
+Early results → Early results
+encouraging → positive
+第 4 段說數位工具能不能改善教育，初步的結果（Early results）令人振奮（encouraging），接著舉迦納、衣索比亞和 Amaf 學校的例子，選項換成 quite positive in some countries，所以是 (D)。(C) 照抄 Kindle e-readers，原文說迦納的孩子拿到 Kindle，沒有說是 Amazon 捐的，第 3 段說的是 Kindle 在非洲的銷量增加；(B) 照抄 teachers，第 4 段說衣索比亞的孩子在沒有老師的情況下自己學，第 3 段也說公立學校人手不足，選項說反了；(A) 第 3 段說大量的新學生湧入，學生人數是在增加。
+逐段中譯
+第 1 段Grace Wambui 是奈洛比一名 14 歲的學生，從來沒有摸過平板電腦。但是平板電腦送到肯亞首都貧民區 Kawangware 的 Amaf 學校時，她只花了一分鐘左右，就學會怎麼使用。以前上課只有一塊黑板和幾本破舊的課本。現在孩子們五個人一組，輪流滑動平板的觸控螢幕，平板裡裝的是多媒體版本的肯亞課程。
+第 2 段Amaf 學校的平板電腦，是科技新創公司 eLimu 主持的試辦計畫的一部分。如果 eLimu 和其他公司的看法沒錯，平板和其他數位裝置可能很快就會在非洲的學校普及。許多人都看好肯亞和其他地方的數位教育會蓬勃發展。有些主管甚至預期，數位教育會像肯亞非常成功的行動支付服務 M-Pesa 一樣，一飛沖天。
+第 3 段數位教育這樣的成長，可以說來得正是時候。大量湧入的新學生，讓公立學校應付不來，這些學校原本就人手不足、經費不足，管理也不好。非洲三億名學生都用數位方式學習的前景，吸引了全球科技大廠的注意。Amazon 的 Kindle 電子書閱讀器，在非洲的銷量過去一年增加了十倍。Intel 一直在協助非洲各國政府購買入門級的電腦。在奈及利亞，Intel 找來一家出版社和一家電信業者合作，用手機提供準備考試的工具，這項服務變得非常受歡迎。
+第 4 段更重要的問題是，數位工具是不是真的能改善教育。初步的結果令人振奮。在迦納，350 名拿到 Kindle 電子書閱讀器的孩子，閱讀能力有了明顯的進步。在衣索比亞，沒有老師的情況下，孩子們自己摸索出怎麼使用平板，學會了英文字母。在 Amaf 學校，科學的平均分數在一個學期內從 58 分提高到 73 分。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。沒有列出的段落，就是沒有主旨句，請對照「這一篇的文章結構」裡的綱要，找出那一段的重點。
+第 2 段If it and other firms are right, tablets and other digital devices may soon be the rule in African schools.
+第 4 段A bigger question is whether digital tools actually improve education.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體說明文 Expository
+組織方式舉例說明 Example/Illustration這一類怎麼辨識 →
+關鍵轉折詞ButNowA bigger question is
+綱要
+奈洛比 Amaf 學校 14 歲的 Grace 從沒摸過平板電腦，(But) 平板送到學校時，她一分鐘左右就學會；過去上課只有黑板和破舊課本，(Now) 現在孩子五人一組輪流用平板。
+這是科技新創公司 eLimu 的試辦計畫，平板等數位裝置可能很快在非洲學校普及，有些主管甚至預期會像肯亞的行動支付 M-Pesa 一樣大成功。
+數位教育來得正是時候，因為學生大量湧入，原本就人手不足、經費不足、管理不善的公立學校已經招架不住。
+非洲三億學生的商機吸引了國際科技大廠：Amazon 的 Kindle 在非洲的銷量一年成長十倍，Intel 也協助各國政府購買入門電腦，還在奈及利亞促成用手機提供考試準備工具的服務，大受歡迎。
+(A bigger question is) 更重要的問題是數位工具能不能真正改善教育，初步結果令人振奮：迦納拿到 Kindle 的孩子閱讀能力明顯進步，衣索比亞的孩子沒有老師也自己學會用平板、學會英文字母，Amaf 學校的科學平均分數一學期從 58 分升到 73 分。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 7 個、參考字彙 14 個、字詞搭配 13 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+conduct[kənˈdʌkt]v.進行五級第 1 段詞彙題考過 2 次：107 學測第 14 題 conducted（答案）、99 指考第 8 題 conducts（誘答）
+version[ˈvɝʒən]n.版本五級第 1 段詞彙題考過 2 次：83 推薦甄選第 9 題（答案）、81 聯考第 6 題（誘答）
+executive[ɪgˈzɛkjətɪv]n.主管、高階經理人五級第 2 段詞彙題考過 1 次：109 指考第 1 題 executives（誘答）
+overwhelm[ˌoʊvɚˈwɛlm]v.讓人應付不來、壓垮五級第 3 段詞彙題考過 1 次：109 指考補考第 2 題（誘答）
+prospect[ˈprɑspɛkt]n.前景、可能性五級第 3 段詞彙題考過 1 次：109 指考第 5 題（誘答）
+publisher[ˈpʌblɪʃɚ]n.出版社四級第 3 段詞彙題考過 1 次：109 學測第 3 題（誘答）
+convey[kənˈveɪ]v.傳達四級第 45 題詞彙題考過 5 次：108 學測第 3 題 conveyed（誘答）、105 學測第 4 題 conveyed（誘答）、104 學測第 12 題 conveyed（誘答）、99 指考第 2 題（誘答）、95 指考第 1 題 conveys（誘答）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+slum[slʌm]n.貧民區六級第 1 段
+tattered[ˈtætɚd]adj.破舊的表外第 1 段
+swipe[swaɪp]v.滑動（觸控螢幕）表外第 1 段
+multimedia[ˌmʌltiˈmidiə]adj.多媒體的表外第 1 段
+syllabus[ˈsɪləbəs]n.課程綱要、課程內容表外第 1 段
+boom[bum]n.熱潮、蓬勃發展五級第 2 段
+understaffed[ˌʌndɚˈstæft]adj.人手不足的表外第 3 段
+underfunded[ˌʌndɚˈfʌndɪd]adj.經費不足的表外第 3 段
+e-reader[ˈiˌridɚ]n.電子書閱讀器表外第 3 段
+tenfold[ˈtɛnˌfoʊld]adv.十倍地表外第 3 段
+telecom[ˈtɛləˌkɑm]n.電信（telecom carrier 電信業者）表外第 3 段
+cite[saɪt]v.引用、舉出五級第 45 題
+e-book[ˈiˌbʊk]n.電子書表外第 46 題
+donate[ˈdoʊˌneɪt]v.捐贈五級第 47 題
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+It takes + sb + 時間 + to + V某人花……做……第 1 段原文：it took her only about one minute to work out
+work out + N弄懂……第 1 段原文：to work out how to use one
+take turns to + V輪流……第 1 段原文：take turns to swipe
+be loaded with + N裝滿……第 1 段原文：are loaded with a multimedia version
+be the rule成為常態第 2 段原文：be the rule in African schools
+bet on + N看好……第 2 段原文：Many are betting on a boom
+take off（事業、產品）起飛第 2 段原文：to take off like M-Pesa
+catch the attention of + sb引起某人的注意第 3 段原文：has caught the attention of global technology giants
+increase + 數字-fold增加……倍第 3 段原文：increase tenfold
+bring together A and B讓 A 和 B 合作第 3 段原文：brought together a publisher and a telecom carrier
+in the absence of + N在沒有……的情況下第 4 段原文：in the absence of teachers
+figure out + N弄清楚……第 4 段原文：children figured out how to use tablets
+go from A to B從 A 變成 B第 4 段原文：went from 58 to 73
+← 上一篇篇目一覽下一篇 →
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

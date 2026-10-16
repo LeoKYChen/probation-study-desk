@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z93m-18/index.html
+Author: staresto-create ZZSH
+Title: 93 年指考敏督利颱風受災地區考生補救考試克漏字第18題詳解（關係子句／疑問詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 93 年指考敏督利颱風受災地區考生補救考試 ／ 第18題
+93 年指考敏督利颱風受災地區考生補救考試 克漏字 第18題
+關係子句／疑問詞線索：句內
+The man then took the worm out of the first jar and put it in the second jar 18 contained alcohol and said to the audience, “Now watch the reaction.”
+(A)what
+(B)when
+(C)which
+(D)where
+答案：(C) which
+題目編號：Z93M_18（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+which 引導形容詞子句修飾先行詞 jar，並在子句中作主詞（那個罐子裝著酒精）。what 不能有先行詞、when／where 分別修飾時間／地點先行詞，都不符合這裡修飾「罐子」這個物品先行詞的語法。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+jar 是個罐子，罐子就是容器，容器就是「地方」，所以 where 讀起來特別順——「放進第二個罐子，那裡面裝著酒精」。中文這樣講完全通，英文卻不行，差別在空格後面那個子句缺不缺東西。
+怎麼判斷
+關係詞這一類題有一個自己動手就能驗算的方法：先找出前面那個名詞（先行詞），再把它整個搬回空格後面的子句裡，看句子成不成立、它站的是哪一個位置。本題的先行詞是 the second jar，搬回去就成了 The second jar contained alcohol.（第二個罐子裝著酒精。）句子完全成立，而且它站的是主詞的位置——主詞被抽走了，空格就要填一個代替主詞的關係代名詞，答案是 which。where 之所以不行，正是因為它是關係副詞：關係副詞後面的子句必須自己完整，像 the jar where he put the worm（他把蟲放進去的那個罐子），子句裡 he 是主詞、the worm 是受詞，成分都齊了；本題的 contained alcohol 少了主詞，非得由關係代名詞補上不可。what 也排除，理由在劍橋 English Grammar Today 的 what 條目：what 自己就帶著先行詞（等於 the thing that），前面若已經站著一個名詞，就得改用 which 或 that，所以英文說 This is the book which the lecturer mentioned.，不能說成 the book what ...。
+誘答選項
+when 的先行詞必須是時間（the day when we met），jar 不是時間；where 與 what 的問題如上。這三個選項都不是敗在語意，而是敗在文法上——when 與 where 沒辦法在 contained 前面補出一個主詞，what 則容不下前面那個先行詞。
+常考字詞與句型
+which 引導的關係子句（補充說明前面的名詞，並代替子句裡的主詞或受詞）、關係副詞 where（先行詞是地方，且後面的子句必須完整）、take sth out of（把某物從……取出）、put sth in（把某物放進……）、say to sb（對某人說）、reaction（反應）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+A man wanted to prove to a group of alcoholics the effect of alcohol on human body systems. He displayed two jars in front of the group, one containing water and the other containing alcohol, 16 a very healthy worm. He said to the audience: "This jar contains water." Then he dropped the worm in the jar and said, "Please watch the reaction." The group watched closely 17 the worm floated in the jar, dangling and swimming.
+The man then took the worm out of the first jar and put it in the second jar 18 contained alcohol and said to the audience, "Now watch the reaction." The group saw the worm go down into the water and soon begin to struggle for 19. Right there and then every one in the group witnessed the worm shrinking and disintegrating. Then it died.
+The man turned round and asked the audience, "What would you all say to this?" After a long silence, someone from the rear 20 and said, "I can see that if I drink alcohol, there will be no more worms in my body."
+中譯：有個人想向一群酗酒者證明酒精對人體系統的影響。他在群眾面前擺出兩個罐子，一個裝水、另一個裝酒精，並在旁邊放了一條非常健康的蟲。他對聽眾說：「這個罐子裝的是水。」接著他把蟲放進罐子裡，說：「請仔細觀察牠的反應。」群眾專注地看著這條蟲在罐子裡漂浮、擺動、游動。接著，這個人把蟲從第一個罐子拿出，放進裝有酒精的第二個罐子，並對聽眾說：「現在請觀察牠的反應。」群眾看到這條蟲沉入水中，很快便開始為了求生而掙扎。就在那一刻，在場所有人都目睹了這條蟲逐漸萎縮、瓦解，最後死去。這個人轉過身，問聽眾：「你們對此有什麼看法？」在一片長久的沉默之後，後排有人站了起來，說：「我明白了，如果我喝酒，我體內就再也不會有蟲了。」
+📋 內容大意
+A man set out to show drinkers what alcohol does to the body.
+A worm swam happily in his jar of water, but shrank, struggled and died in the jar of alcohol.
+Asked what they had learned, one listener replied that drinking would rid him of worms.
+← 第17題回到93 年指考敏督利颱風受災地區考生補救考試第19題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

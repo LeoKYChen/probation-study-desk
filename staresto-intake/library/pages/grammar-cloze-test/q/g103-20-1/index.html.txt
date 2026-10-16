@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g103-20-1/index.html
+Author: staresto-create ZZSH
+Title: 103 年學測克漏字第20題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 103 年學測 ／ 第20題
+103 年學測 克漏字 第20題
+字彙選義線索：句內答對率 48%
+答對率 48%：當年每 100 位考生，有 48 位答對。
+But frowning, the man answered, “I'm from Argos and there the people are unfriendly, 20 , and vicious.
+(A)brave
+(B)lonely
+(C)mean
+(D)skinny
+答案：(C) mean
+題目編號：G103_20_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+並列形容詞，「不友善、刻薄、且惡毒」，mean（刻薄的）符合這種負面性格描述的並列；brave（勇敢的，正面詞跟其他負面詞不搭）、lonely（孤獨的，不太符合「人很糟糕」的描述語境）、skinny（瘦的，外貌描述跟性格描述不搭）都不合。
+深入解析
+你可能會這樣想
+mean 在你腦中幾乎只有動詞的「意思是」（What do you mean?），突然要它放在形容詞的位置，第一反應是「這裡怎麼會放一個動詞」，於是跳過正解，改去挑一個看得懂的形容詞。答對率只有四成八，將近一半的人在這裡失手，主因就是這個字義落差，不是題目繞。
+怎麼判斷
+先看結構：unfriendly, ______, and vicious 是三個並列的補語，用逗號與 and 串成 A、B、and C 的形式。空格要填的必然是形容詞，而且必須與另外兩個同一類。unfriendly（不友善的）與 vicious（惡毒的）都是負面性格，中間那個也只能是負面性格。碰到並列結構，就用「另外兩項是什麼性質」反推空格，這是最省力的解法。mean 當形容詞是「刻薄的、惡劣的」，劍橋詞典的釋義是 unkind or unpleasant，日常口語極常見：Don't be so mean to your sister.（別對你妹妹那麼刻薄）。放進 unfriendly 與 vicious 中間，語意強度還剛好遞增。再往下讀一句可以完全確認：They're thieves and murderers, all of them.（他們全都是小偷和殺人犯）——整段在把家鄉的人講到最壞，只有負面性格詞說得通。
+誘答選項
+brave（勇敢的）：正面詞，夾在兩個負面詞中間前後矛盾。lonely（孤單的）：講的是自己的心理狀態，不是「對別人不好」，也解釋不了下一句的小偷與殺人犯。skinny（骨瘦如柴的）：外貌描述，與性格描述不同類，並列不起來。
+常考字詞與句型
+be mean to sb（對某人刻薄）、mean well（出於好意）、by no means（絕不、一點也不）、by means of（藉由、以…方式）、a vicious circle（惡性循環）、mean to do（打算做…）。其中 by no means 這一組考過 3 個年度，105 年第 25 題 →、107 年第 29 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Aesop, the Greek writer of fables, was sitting by the roadside one day when a traveler asked him what sort of people lived in Athens. Aesop replied, "Tell me where you come from and what sort of people live there, and I'll tell you what sort of people you'll find in Athens." 16 , the man answered, "I come from Argos, and there the people are all friendly, generous, and warm-hearted. I love them." 17 this, Aesop answered, "I'm happy to tell you, my dear friend, that you'll find the people of Athens much the same."
+A few hours later, 18 traveler came down the road. He too stopped and asked Aesop the same question. 19 , Aesop made the same request. But frowning, the man answered, "I'm from Argos and there the people are unfriendly, 20 , and vicious. They're thieves and murderers, all of them." "Well, I'm afraid you'll find the people of Athens much the same," replied Aesop.
+中譯：伊索——這位希臘寓言作家——有一天坐在路邊，一位旅人問他雅典住著什麼樣的人。伊索回答：「告訴我你從哪裡來、那裡的人是什麼樣子，我就能告訴你在雅典會遇到什麼樣的人。」旅人笑著回答：「我來自阿爾戈斯，那裡的人都很友善、慷慨又熱情，我很愛他們。」聽到這話，伊索說：「親愛的朋友，我很高興告訴你，雅典人也跟他們差不多。」幾小時後，另一位旅人沿路而來，也停下腳步問了伊索同樣的問題。伊索又提出了同樣的要求。這位旅人卻皺著眉頭回答：「我來自阿爾戈斯，那裡的人不友善、刻薄又惡毒，全都是小偷和殺人犯。」伊索回答：「嗯，恐怕你在雅典遇到的人也差不多。」
+📋 內容大意
+A traveler from Argos praised his hometown, and Aesop assured him he would find the people of Athens equally friendly.（敘事文）
+A second traveler complained bitterly about Argos, leading Aesop to tell him he would encounter the same hostility in Athens.（敘事文）
+← 第19題回到103 年學測第21題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

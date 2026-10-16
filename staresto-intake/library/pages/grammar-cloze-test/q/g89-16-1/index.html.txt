@@ -1,0 +1,41 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g89-16-1/index.html
+Author: staresto-create ZZSH
+Title: 89 年學測克漏字第16題詳解（時態／語態）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 89 年學測 ／ 第16題
+89 年學測 克漏字 第16題
+時態／語態線索：句內
+As soon as you 16 , I'd like to talk to you for a few minutes.
+(A)finish
+(B)finished
+(C)are finishing
+(D)will finish
+答案：(A) finish
+題目編號：G89_16_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】as soon as 引導的時間副詞子句，要用現在式代替未來式來表達即將發生的動作（主句用未來語氣 I'd like to）；finished（過去式，時態不合）、are finishing（現在進行式，不符合這種「一旦完成」的瞬間動作）、will finish（時間副詞子句不能用未來式，須用現在式代替）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+句子的意思明明是「等你忙完之後」，講的是還沒發生的事，所以很自然就會選 will finish。這個直覺在中文裡沒有問題，在英文裡卻正好踩到一條規矩。
+怎麼判斷
+四個選項都是同一個動詞 finish 的不同形態，可見這一格考的是形態，那就先看它出現在什麼樣的子句裡。空格前面是 As soon as（一……就……），這是帶出時間副詞子句的連接詞；逗號後面 I'd like to talk to you 才是主要子句。英文有一條規矩：時間副詞子句裡通常不用未來式，改用現在式來表示未來會發生的事。掛鉤用 I will call you when I get there.（我到了就打給你。）——沒有人會寫 when I will get there。as soon as、when、before、after、until、by the time 這些帶時間的連接詞底下都一樣。所以 will finish 先排除，填現在式的 finish。
+誘答選項
+will finish：時間副詞子句裡不用未來式，這是最容易選錯的一個。finished：過去式。整段對話講的是眼前正在發生的事，Sue 現在還在忙，動作還沒完成。are finishing：現在進行式強調「正在做」的過程，但 as soon as 要的是一個完成的時間點（忙完的那一刻），不是一段過程。
+常考字詞與句型
+as soon as（一……就……）、by the time（到……的時候）、interrupt sb（打斷某人）、be busy with sth（忙於某事）、for a few minutes（幾分鐘）、come on in（進來吧）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Joe: I see you're busy right now, Sue. As soon as you 16 , I'd like to talk to you for a few minutes. Sue: It's O.K. Come on in.
+Joe: Oh, no, I don't want to interrupt you. I can wait. I'll come back 17 . Sue: I'm afraid it's going to be a long wait! I'm working 18 my history paper.
+Joe: History paper? I thought you'd finished it. 19 you turn it in on Friday? Sue: Uh-huh. But the professor just returned it to me. I 20 to add 10 more pages. Joe: Ten more pages! That's a lot. How are you going to do it? Sue: That's what I'm trying to figure out. Now what can I do for you?
+中譯：喬：我看妳現在很忙，蘇。等妳忙完，我想跟妳談幾分鐘。蘇：沒關係，進來吧。喬：喔，不用了，我不想打擾妳，我可以等，等一下再回來找妳。蘇：恐怕要等很久喔！我正在忙我的歷史報告。喬：歷史報告？我以為妳已經寫完了。妳不是星期五就交了嗎？蘇：嗯，是啊。但教授剛把報告退回給我，要我再多加十頁。喬：再加十頁！這也太多了吧。妳打算怎麼辦？蘇：這正是我在傷腦筋的地方。那你找我有什麼事嗎？
+📋 內容大意
+Sue explains to Joe that she must revise her history paper by adding ten more pages after her professor returned it.（敘事文）
+回到89 年學測第17題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,402 @@
+{
+ "CLA-g100p4": {
+  "advPct": 1.8,
+  "blanks": 5,
+  "contentTokens": 114,
+  "levels": {
+   "1": 68,
+   "2": 25,
+   "3": 11,
+   "4": 4,
+   "5": 2,
+   "6": 0
+  },
+  "offList": 4,
+  "readLoad": 43.0,
+  "rlBand": 2,
+  "sentLen": 18.6,
+  "vcBand": 0,
+  "words": 215,
+  "year": "改編練習（五）"
+ },
+ "CLA-g103p4": {
+  "advPct": 5.6,
+  "blanks": 5,
+  "contentTokens": 126,
+  "levels": {
+   "1": 68,
+   "2": 28,
+   "3": 13,
+   "4": 7,
+   "5": 4,
+   "6": 3
+  },
+  "offList": 3,
+  "readLoad": 47.6,
+  "rlBand": 2,
+  "sentLen": 17.9,
+  "vcBand": 1,
+  "words": 238,
+  "year": "改編練習（十五）"
+ },
+ "CLA-g104p1": {
+  "advPct": 1.1,
+  "blanks": 5,
+  "contentTokens": 89,
+  "levels": {
+   "1": 53,
+   "2": 23,
+   "3": 3,
+   "4": 6,
+   "5": 1,
+   "6": 0
+  },
+  "offList": 3,
+  "readLoad": 44.4,
+  "rlBand": 2,
+  "sentLen": 17.7,
+  "vcBand": 0,
+  "words": 222,
+  "year": "改編練習（四）"
+ },
+ "CLA-g106p1": {
+  "advPct": 3.3,
+  "blanks": 5,
+  "contentTokens": 90,
+  "levels": {
+   "1": 59,
+   "2": 18,
+   "3": 1,
+   "4": 8,
+   "5": 3,
+   "6": 0
+  },
+  "offList": 1,
+  "readLoad": 46.4,
+  "rlBand": 2,
+  "sentLen": 15.0,
+  "vcBand": 0,
+  "words": 232,
+  "year": "改編練習（十四）"
+ },
+ "CLA-g106p2": {
+  "advPct": 3.1,
+  "blanks": 5,
+  "contentTokens": 96,
+  "levels": {
+   "1": 48,
+   "2": 30,
+   "3": 7,
+   "4": 6,
+   "5": 0,
+   "6": 3
+  },
+  "offList": 2,
+  "readLoad": 42.8,
+  "rlBand": 2,
+  "sentLen": 17.1,
+  "vcBand": 0,
+  "words": 214,
+  "year": "改編練習（三）"
+ },
+ "CLA-g107p1": {
+  "advPct": 7.0,
+  "blanks": 5,
+  "contentTokens": 86,
+  "levels": {
+   "1": 44,
+   "2": 25,
+   "3": 6,
+   "4": 3,
+   "5": 5,
+   "6": 1
+  },
+  "offList": 2,
+  "readLoad": 45.6,
+  "rlBand": 2,
+  "sentLen": 18.0,
+  "vcBand": 2,
+  "words": 228,
+  "year": "改編練習（十三）"
+ },
+ "CLA-g110p4": {
+  "advPct": 8.7,
+  "blanks": 5,
+  "contentTokens": 104,
+  "levels": {
+   "1": 62,
+   "2": 14,
+   "3": 9,
+   "4": 10,
+   "5": 7,
+   "6": 2
+  },
+  "offList": 0,
+  "readLoad": 43.8,
+  "rlBand": 2,
+  "sentLen": 22.7,
+  "vcBand": 2,
+  "words": 219,
+  "year": "改編練習（二）"
+ },
+ "CLA-g111p1": {
+  "advPct": 4.8,
+  "blanks": 5,
+  "contentTokens": 126,
+  "levels": {
+   "1": 70,
+   "2": 28,
+   "3": 15,
+   "4": 5,
+   "5": 6,
+   "6": 0
+  },
+  "offList": 2,
+  "readLoad": 48.0,
+  "rlBand": 2,
+  "sentLen": 17.6,
+  "vcBand": 1,
+  "words": 240,
+  "year": "改編練習（十二）"
+ },
+ "CLA-g113p1": {
+  "advPct": 7.6,
+  "blanks": 5,
+  "contentTokens": 105,
+  "levels": {
+   "1": 57,
+   "2": 18,
+   "3": 8,
+   "4": 10,
+   "5": 7,
+   "6": 1
+  },
+  "offList": 4,
+  "readLoad": 44.2,
+  "rlBand": 2,
+  "sentLen": 17.7,
+  "vcBand": 2,
+  "words": 221,
+  "year": "改編練習（一）"
+ },
+ "CLA-g115p1": {
+  "advPct": 5.0,
+  "blanks": 5,
+  "contentTokens": 101,
+  "levels": {
+   "1": 61,
+   "2": 21,
+   "3": 10,
+   "4": 4,
+   "5": 3,
+   "6": 2
+  },
+  "offList": 0,
+  "readLoad": 46.2,
+  "rlBand": 2,
+  "sentLen": 20.0,
+  "vcBand": 1,
+  "words": 231,
+  "year": "改編練習（十一）"
+ },
+ "CLA-g99p1": {
+  "advPct": 4.8,
+  "blanks": 5,
+  "contentTokens": 83,
+  "levels": {
+   "1": 42,
+   "2": 11,
+   "3": 12,
+   "4": 6,
+   "5": 2,
+   "6": 2
+  },
+  "offList": 8,
+  "readLoad": 37.0,
+  "rlBand": 2,
+  "sentLen": 17.6,
+  "vcBand": 1,
+  "words": 185,
+  "year": "改編練習（六）"
+ },
+ "CLA-z100p1": {
+  "advPct": 3.9,
+  "blanks": 5,
+  "contentTokens": 103,
+  "levels": {
+   "1": 58,
+   "2": 18,
+   "3": 11,
+   "4": 2,
+   "5": 1,
+   "6": 3
+  },
+  "offList": 10,
+  "readLoad": 47.2,
+  "rlBand": 2,
+  "sentLen": 18.7,
+  "vcBand": 1,
+  "words": 236,
+  "year": "改編練習（十九）"
+ },
+ "CLA-z101p4": {
+  "advPct": 4.5,
+  "blanks": 5,
+  "contentTokens": 112,
+  "levels": {
+   "1": 55,
+   "2": 28,
+   "3": 7,
+   "4": 11,
+   "5": 5,
+   "6": 0
+  },
+  "offList": 6,
+  "readLoad": 45.4,
+  "rlBand": 2,
+  "sentLen": 18.0,
+  "vcBand": 1,
+  "words": 227,
+  "year": "改編練習（九）"
+ },
+ "CLA-z104p4": {
+  "advPct": 9.7,
+  "blanks": 5,
+  "contentTokens": 113,
+  "levels": {
+   "1": 62,
+   "2": 19,
+   "3": 12,
+   "4": 8,
+   "5": 9,
+   "6": 2
+  },
+  "offList": 1,
+  "readLoad": 46.6,
+  "rlBand": 2,
+  "sentLen": 16.2,
+  "vcBand": 2,
+  "words": 233,
+  "year": "改編練習（十八）"
+ },
+ "CLA-z105p1": {
+  "advPct": 3.6,
+  "blanks": 5,
+  "contentTokens": 110,
+  "levels": {
+   "1": 63,
+   "2": 21,
+   "3": 12,
+   "4": 6,
+   "5": 4,
+   "6": 0
+  },
+  "offList": 4,
+  "readLoad": 46.2,
+  "rlBand": 2,
+  "sentLen": 20.2,
+  "vcBand": 1,
+  "words": 231,
+  "year": "改編練習（十七）"
+ },
+ "CLA-z105p2": {
+  "advPct": 5.7,
+  "blanks": 5,
+  "contentTokens": 105,
+  "levels": {
+   "1": 65,
+   "2": 15,
+   "3": 8,
+   "4": 9,
+   "5": 5,
+   "6": 1
+  },
+  "offList": 2,
+  "readLoad": 43.8,
+  "rlBand": 2,
+  "sentLen": 20.5,
+  "vcBand": 1,
+  "words": 219,
+  "year": "改編練習（八）"
+ },
+ "CLA-z109p1": {
+  "advPct": 4.0,
+  "blanks": 5,
+  "contentTokens": 125,
+  "levels": {
+   "1": 55,
+   "2": 32,
+   "3": 21,
+   "4": 4,
+   "5": 4,
+   "6": 1
+  },
+  "offList": 8,
+  "readLoad": 48.0,
+  "rlBand": 2,
+  "sentLen": 19.3,
+  "vcBand": 1,
+  "words": 240,
+  "year": "改編練習（十六）"
+ },
+ "CLA-z109p2": {
+  "advPct": 5.5,
+  "blanks": 5,
+  "contentTokens": 109,
+  "levels": {
+   "1": 52,
+   "2": 26,
+   "3": 17,
+   "4": 2,
+   "5": 5,
+   "6": 1
+  },
+  "offList": 6,
+  "readLoad": 45.0,
+  "rlBand": 2,
+  "sentLen": 19.4,
+  "vcBand": 1,
+  "words": 225,
+  "year": "改編練習（十）"
+ },
+ "CLA-z110p4": {
+  "advPct": 2.7,
+  "blanks": 5,
+  "contentTokens": 110,
+  "levels": {
+   "1": 52,
+   "2": 30,
+   "3": 18,
+   "4": 1,
+   "5": 1,
+   "6": 2
+  },
+  "offList": 6,
+  "readLoad": 44.4,
+  "rlBand": 2,
+  "sentLen": 17.7,
+  "vcBand": 0,
+  "words": 222,
+  "year": "改編練習（七）"
+ },
+ "CLA-z95p2": {
+  "advPct": 7.4,
+  "blanks": 5,
+  "contentTokens": 121,
+  "levels": {
+   "1": 59,
+   "2": 40,
+   "3": 6,
+   "4": 5,
+   "5": 7,
+   "6": 2
+  },
+  "offList": 2,
+  "readLoad": 47.6,
+  "rlBand": 2,
+  "sentLen": 15.4,
+  "vcBand": 2,
+  "words": 238,
+  "year": "改編練習（二十）"
+ }
+}

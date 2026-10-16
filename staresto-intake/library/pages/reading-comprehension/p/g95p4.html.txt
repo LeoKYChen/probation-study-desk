@@ -1,0 +1,135 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/g95p4.html
+Author: staresto-create ZZSH
+Title: 95 學測閱讀測驗：二語學習的腦部差異｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 95 學測
+95 學測閱讀測驗：二語學習的腦部差異
+Brain Differences in Second Language Learning
+學測 95年第 53–56 題4 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段Joy Hirsch, a neuroscientist in New York, has recently found evidence that children and adults don’t use the same parts of the brain when learning a second language. He used an instrument called an MRI (magnetic resonance imaging) to study the brains of two groups of bilingual people. One group consisted of those who had learned a second language as children. The other consisted of people who learned their second language later in life. People from both groups were placed inside the MRI scanner. This allowed Hirsch to see which parts of the brain were getting more blood and were more active. He asked people from both groups to think about what they had done the day before, first in one language and then the other. They couldn’t speak out loud, because any movement would disrupt the scanning.
+第 2 段Hirsch looked specifically at two language centers in the brain—Broca’s area, believed to control speech production, and Wernicke’s area, thought to process meaning. He found that both groups of people used the same part of Wernicke’s area no matter what language they were speaking. But how they used Broca’s area was different.
+第 3 段People who learned a second language as children used the same region in Broca’s area for both languages. People who learned a second language later in life used a special part of Broca’s area for their second language—near the one activated for their native tongue.
+第 4 段How does Hirsch explain this difference? He believes that, when language is first being programmed in young children, their brains may mix all languages into the same area. But once that programming is complete, a different part of the brain must take over a new language. Another possibility is simply that we may acquire languages differently as children than we do as adults. Hirsch thinks that mothers teach a baby to speak by using different methods such as touch, sound, and sight. And that’s very different from sitting in a high school class.
+題目
+53.The purpose of this passage is to
+(A)explain how people become bilingual.
+(B)explain how to be a better second language learner.
+(C)describe research into the brains of bilingual people.
+(D)describe the best ways to acquire languages at different ages.
+54.In the study, the subjects were placed inside the MRI scanner to
+(A)observe the activities of the brains when they used languages.
+(B)observe the movements of the brains when they spoke out loud.
+(C)describe the functions of the areas of the brains when they slept.
+(D)describe the best areas of the brains for learning second languages.
+55.The language center in the brain that is believed to control speech production is called
+(A)MRI.
+(B)native tongue.
+(C)Wernicke’s area.
+(D)Broca’s area.
+56.According to the passage, which of the following is TRUE for bilingual people?
+(A)Those who spoke different languages used the same part of Wernicke’s area.
+(B)Those who spoke different languages always used the same part of Broca’s area.
+(C)Those who spoke the same language never used Broca’s area and Wernicke’s area.
+(D)Those who spoke different languages always used different parts of Wernicke’s area.
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+53
+(C)
+50%
+57
+54
+(A)
+45%
+63
+55
+(D)
+64%
+69
+56
+(A)
+44%
+63
+答對率與鑑別度出處：大考中心 95 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表
+每一題的依據句
+第 53 題 主旨題 Main idea
+依據句：全文要讀完整篇才能判斷，不在某一句裡。
+第 1 段介紹 Hirsch 用 MRI 研究兩組雙語者的大腦；第 2、3 段說研究發現兩組人使用 Wernicke 區的方式相同、使用 Broca 區的方式不同；第 4 段說 Hirsch 怎麼解釋這個差異。全文在描述一項針對雙語者大腦的研究，所以是 (C)。(D) 小時候和長大後學語言的方式不同，只是第 4 段的一種推測，而且原文沒說哪一種方法最好，過於狹隘；(A) 怎麼成為雙語者、(B) 怎麼把第二語言學得更好，文章都沒有談，偏離主題。
+錯誤選項：(A) 偏離主題；(B) 偏離主題；(D) 過於狹隘（只講第 4 段）
+第 54 題 細節題 Supporting details
+第 1 段This allowed Hirsch to see which parts of the brain were getting more blood and were more active.
+第 1 段He asked people from both groups to think about what they had done the day before, first in one language and then the other.
+原文 → 正確選項
+active → activities
+第 1 段說兩組人躺進 MRI 掃描儀，讓 Hirsch 看到大腦哪些部位比較活躍（more active）；他請受試者先用一種語言、再用另一種語言回想前一天的事。這就是在觀察大腦使用語言時的活動，所以是 (A)。(B) 照抄 out loud，原文說受試者不能說出聲，因為任何動作都會干擾掃描；(D) 照抄 second language，研究是看兩組人使用大腦的部位有什麼不同，沒有要找出學第二語言最好的部位；(C) 受試者是在回想前一天的事，不是在睡覺。
+第 55 題 細節題 Supporting details
+第 2 段Broca’s area, believed to control speech production
+原文 → 正確選項
+Broca’s area → Broca’s area
+第 2 段說一般認為控制說話（control speech production）的是 Broca 區，所以是 (D)。(C) 照抄 Wernicke’s area，Wernicke 區是處理意義的；(A) 照抄第 1 段的 MRI，那是觀察大腦的儀器；(B) 照抄第 3 段的 native tongue，母語是一種語言，不是大腦的部位。
+第 56 題 細節題（何者為是） Supporting details
+第 2 段He found that both groups of people used the same part of Wernicke’s area no matter what language they were speaking.
+原文 → 正確選項
+the same part of Wernicke’s area → the same part of Wernicke’s area
+第 2 段說兩組人不論說哪一種語言（no matter what language they were speaking），用的都是 Wernicke 區的同一個部位，所以是 (A)。(D) 照抄 different，不同的是使用 Broca 區的方式，選項把它接到 Wernicke 區；(B) 照抄第 3 段的 Broca’s area，只有小時候學第二語言的人兩種語言都用 Broca 區的同一個區域，長大後才學的人用的是另一個部位，所以不能說 always；(C) 原文說兩組人都用到這兩個區域。
+逐段中譯
+第 1 段紐約的神經科學家 Joy Hirsch 最近找到證據，顯示兒童和成人學第二語言時，用的不是大腦的同一個部位。他用一種叫做 MRI（磁振造影）的儀器，研究兩組雙語者的大腦。一組是小時候學第二語言的人，另一組是長大後才學第二語言的人。兩組人都躺進 MRI 掃描儀裡，Hirsch 因此能看到大腦哪些部位得到比較多血液、比較活躍。他請兩組人回想前一天做了什麼事，先用一種語言想，再用另一種語言想。他們不能說出聲，因為任何動作都會干擾掃描。
+第 2 段Hirsch 特別觀察大腦裡的兩個語言中樞：一般認為控制說話的 Broca 區，以及處理意義的 Wernicke 區。他發現兩組人不論說哪一種語言，用的都是 Wernicke 區的同一個部位。但是兩組人使用 Broca 區的方式不一樣。
+第 3 段小時候學第二語言的人，兩種語言都用 Broca 區的同一個區域。長大後才學第二語言的人，則用 Broca 區一個特別的部位處理第二語言，這個部位靠近母語會啟動的那個部位。
+第 4 段Hirsch 怎麼解釋這個差異？他認為，幼兒的大腦剛開始建立語言程式時，可能把所有語言都放進同一個區域。但是程式一旦建立完成，大腦就必須由另一個部位來接手新的語言。另一個可能則單純是，我們小時候學語言的方式和長大後不一樣。Hirsch 認為，媽媽教寶寶說話時，會用觸摸、聲音和視覺等不同的方法，這和坐在高中教室裡上課非常不同。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。沒有列出的段落，就是沒有主旨句，請對照「這一篇的文章結構」裡的綱要，找出那一段的重點。
+第 1 段Joy Hirsch, a neuroscientist in New York, has recently found evidence that children and adults don’t use the same parts of the brain when learning a second language.
+第 4 段How does Hirsch explain this difference?
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體說明文 Expository
+組織方式比較對比 Compare/Contrast這一類怎麼辨識 →
+關鍵轉折詞ButBut onceAnother possibilityAnd
+綱要
+(has recently found evidence that) 介紹研究：兒童與成人學習二語時，大腦使用不同區域。
+(He used … to study) 描述研究方法：用 MRI 掃描兩組雙語者（兒童期學、成年期學）的大腦活躍區塊。
+(He found that) 研究發現：Wernicke 區使用相同，(But how … was different) 但 Broca 區不同。
+兒童期學二語者 Broca 區使用相同區域，成年期學者則用特殊區域。
+(How does … explain this difference) Hirsch 提出兩種解釋：一是兒童剛學語言時，大腦可能把所有語言放在同一區，(But once that programming is complete) 等這個過程完成，新的語言就得由不同腦區接管；(Another possibility is simply that) 二是兒童和成人學語言的方式本來就不同，媽媽用觸覺、聲音、視覺教寶寶說話，和坐在高中教室上課很不一樣。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 9 個、參考字彙 6 個、字詞搭配 7 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+evidence[ˈɛvədəns]n.證據四級第 1 段詞彙題考過 1 次：92 學測補考第 8 題（答案）
+magnetic[mægˈnɛtɪk]adj.磁的（magnetic resonance imaging 磁振造影）四級第 1 段詞彙題考過 3 次：109 指考補考第 5 題（誘答）、106 指考第 10 題（誘答）、101 指考第 3 題（答案）
+consist[kənˈsɪst]v.由……組成（consist of）四級第 1 段詞彙題考過 1 次：94 學測第 9 題（誘答）
+disrupt[dɪsˈrʌpt]v.干擾、打斷五級第 1 段詞彙題考過 1 次：93 補救考試第 6 題 disrupted（答案）
+specifically （詞彙表：specific）[spəˈsɪfɪkli]adv.特別、專門三級第 2 段詞彙題考過 3 次：103 指考第 3 題 specifically（答案）、99 指考第 10 題 specifically（誘答）、92 指考第 4 題 specifically（誘答）
+process[ˈprɑsɛs]v.處理三級第 2 段詞彙題考過 4 次：100 學測第 8 題（答案）、96 指考第 2 題（誘答）、84 推薦甄選第 2 題（誘答）、81 聯考第 1 題（誘答）
+native[ˈneɪtɪv]adj.本國的、出生地的（native tongue 母語）三級第 3 段詞彙題考過 1 次：106 學測第 3 題（誘答）
+acquire[əˈkwaɪr]v.學會、習得四級第 4 段詞彙題考過 2 次：107 學測第 10 題（誘答）、95 學測第 10 題（誘答）
+observe[əbˈzɝv]v.觀察三級第 54 題詞彙題考過 2 次：102 學測第 3 題 observed（誘答）、93 學測第 2 題（答案）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+neuroscientist[ˈnjʊroʊˌsaɪəntɪst]n.神經科學家表外第 1 段
+resonance[ˈrɛzənəns]n.共振（magnetic resonance imaging 核磁共振造影）表外第 1 段
+bilingual[baɪˈlɪŋgwəl]adj.雙語的表外第 1 段
+scanner （詞彙表：scan）[ˈskænɚ]n.掃描器五級第 1 段
+activated[ˈæktəˌveɪtɪd]adj.啟動的、活化的表外第 3 段
+programming[ˈproʊˌgræmɪŋ]n.（大腦裡的）程式設定、運作模式表外第 4 段
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+find evidence that + 子句找到……的證據第 1 段原文：has recently found evidence that
+consist of + N由……組成第 1 段原文：One group consisted of those who had learned a second language as children
+out loud出聲地第 1 段原文：They couldn’t speak out loud
+no matter what + 子句不論……第 2 段原文：no matter what language they were speaking
+native tongue母語第 3 段原文：their native tongue
+take over + N接手……第 4 段原文：a different part of the brain must take over a new language
+acquire a language習得語言第 4 段原文：we may acquire languages differently as children
+← 上一篇篇目一覽
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

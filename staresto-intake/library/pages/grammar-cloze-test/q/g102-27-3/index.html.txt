@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g102-27-3/index.html
+Author: staresto-create ZZSH
+Title: 102 年學測克漏字第27題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 102 年學測 ／ 第27題
+102 年學測 克漏字 第27題
+慣用語／片語線索：句內答對率 50%
+答對率 50%：當年每 100 位考生，有 50 位答對。
+In 1905 he developed a test in which he 27 children do tasks such as follow commands, copy patterns, name objects, and put things in order or arrange them properly.
+(A)had
+(B)kept
+(C)wanted
+(D)asked
+答案：(A) had
+題目編號：G102_27_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】使役動詞 have + O + 原形動詞「讓/使某人做某事」，had children do tasks 表示「讓孩子們做任務」；kept（保持，keep 通常接 V-ing 不接原形動詞）、wanted／asked（通常接 to V 不接原形動詞）都不合這個使役結構，只有 have 可以直接接受詞 + 原形動詞。
+深入解析
+你可能會這樣想
+have 在你腦中的第一個意思是「有」，第二個是完成式的助動詞。要它表示「叫某人去做某事」，是很少主動想起來的用法。答對率只有五成，一半的人在這裡失手：看到後面的 do 是原形動詞，覺得四個選項代進去都怪，就憑感覺挑了 asked 或 wanted。
+怎麼判斷
+決定性的線索就在空格後面的 children do——do 是原形動詞，前面沒有 to。能夠接「受詞加原形動詞」的動詞很有限，就是使役動詞 make、let、have（另有 see、hear、watch 這類感官動詞）。這一組常見的例子有 My mother made me clean my room.（媽媽叫我打掃房間）、Let me try.（讓我試試）。have sb do sth 的意思是「請、叫某人做某事」，語氣比 make 溫和，用在這裡正合適：他讓孩子們做各式各樣的任務。還原驗算：he had children do tasks 等於他讓孩子們去做一些任務。其餘三個選項要求的接法都不一樣，代進去句子就壞了。這一題只要盯住「後面是原形動詞，還是 to 加原形動詞」，一刀就能切開。
+誘答選項
+kept：keep 後面接的是現在分詞（keep + 受詞 + V-ing），keep sb doing sth（讓某人一直做某事），不接原形動詞。wanted：want sb to do sth，中間必須有 to。asked：ask sb to do sth，同樣必須有 to；ask 若不接 to V，後面接的是名詞或名詞子句（ask a question、ask what he wants），不會直接接原形動詞。
+常考字詞與句型
+have sb do（叫某人做…）、make sb do（使某人做…）、let sb do（讓某人做…）、keep sb doing（讓某人一直做…）、ask sb to do（要求某人做…）、follow commands（服從指令）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+French psychologist Alfred Binet (1859-1911) took a different approach from most other psychologists of his day: He was interested in the workings of the 26 mind rather than the nature of mental illness. He wanted to find a way to measure the ability to think and reason, apart from education in any particular field.
+In 1905 he developed a test in which he 27 children do tasks such as follow commands, copy patterns, name objects, and put things in order or arrange them properly. He later created a standard of measuring children's intelligence 28 the data he had collected from the French children he studied. If 70 percent of 8-year-olds could pass a particular test, then 29 on the test represented an 8-year-old's level of intelligence.
+From Binet's work, the phrase "intelligence quotient" ("IQ") entered the English vocabulary. The IQ is the ratio of "mental age" to chronological age times 100, with 100 30 the average. So, an 8-year-old who passes the 10-year-old's test would have an IQ of 10/8 times 100, or 125.
+中譯：法國心理學家阿爾弗雷德·比奈（1859-1911）採取了與同時代大多數心理學家截然不同的研究取向：他關注的是正常心智的運作方式，而非精神疾病的本質。他希望找到一種方法，能夠測量一個人思考與推理的能力，而不受特定領域教育程度的影響。1905 年，他開發出一套測驗，讓兒童完成諸如遵循指令、臨摹圖形、說出物品名稱，以及依序排列或正確擺放物品等任務。他後來根據對法國兒童所蒐集到的資料，制定出一套測量兒童智力的標準：如果有 70%的八歲兒童能通過某項測驗，那麼在該測驗中的成功表現，就代表了八歲兒童應有的智力水準。比奈的研究成果，讓「智商」（IQ）這個詞彙從此進入英語詞彙之中。智商是「心智年齡」與「實際年齡」的比值再乘以 100，其中 100 代表平均值。因此，一位通過十歲兒童測驗的八歲孩童，其智商即為 10 除以 8 再乘以 100，也就是 125。
+📋 內容大意
+Alfred Binet developed early standardized intelligence tests for children, establishing the foundation for modern IQ measurements.
+← 第26題回到102 年學測第28題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

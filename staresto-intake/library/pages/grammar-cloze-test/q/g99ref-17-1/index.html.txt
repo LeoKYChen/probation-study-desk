@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g99ref-17-1/index.html
+Author: staresto-create ZZSH
+Title: 99 課綱學測參考用試卷克漏字第17題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 99 課綱學測參考用試卷 ／ 第17題
+99 課綱學測參考用試卷 克漏字 第17題
+字彙選義線索：跨句
+Facing this 17 , engineers at a Japanese company have developed a thin-film flexible solar panel.
+(A)strength
+(B)feature
+(C)challenge
+(D)reaction
+答案：(C) challenge
+題目編號：G99課綱學測參考用試卷_17_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「面對這個『挑戰』」，challenge（挑戰）符合，呼應前文提到矽材料昂貴且面板笨重的問題；strength（優勢）、feature（特色）、reaction（反應）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是名詞，而 feature（特色）在講新產品的文章裡出現頻率很高，很容易第一眼就選它。這一格要往前讀一句，看作者剛剛講的是好事還是壞事。
+怎麼判斷
+四個選項都是名詞，可見這一格考的是語意，那就往前讀。前一句是 But silicon is expensive and the panels are heavy.（但矽很貴，而且面板很重。）——句首用 But 一轉，講的是傳統太陽能板的兩個缺點。本句是 Facing this ___ , engineers ... have developed a thin-film flexible solar panel.（面對這個……，工程師開發出薄膜可撓式太陽能板。）既然前面講的是問題、後面講的是為解決問題而開發的新東西，空格要填的當然是「難題」，填 challenge。
+誘答選項
+strength（優勢）：方向完全相反，如果矽的昂貴笨重是優勢，就沒有理由去開發新面板。feature（特色）：中性，說不出「需要被克服」的意思，與 Facing（面對）這個動詞也不搭——人不會「面對一個特色」。reaction（反應）：前一句講的是材料的性質，不是誰對誰的反應。
+常考字詞與句型
+face a challenge（面對挑戰）、meet a challenge（迎接挑戰）、pose a challenge（構成挑戰）、a major strength（一大優勢）、a key feature（一項關鍵特色）、crystallized silicon（結晶矽）。
+線索範圍說明：this challenge 概括前一句「矽很貴、面板很重」
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Solar panels can turn sunlight into electricity. Conventional solar panels are 16 crystallized silicon, the same material used in computer chips. But silicon is expensive and the panels are heavy. Facing this 17 , engineers at a Japanese company have developed a thin-film flexible solar panel. The new panel is not the first of its 18 , but it may be the most flexible—it bends like paper.
+At one kilogram per square meter, this new type of panel weighs one tenth of conventional solar panels. 19 means it could be used in novel places, such as the roof of a tent, the walls of a building, or the top of a bus. Sheets of the material could be used to make portable, rollable battery chargers for mobile electronic 20 , like notebook computers or cellphones. As many countries are now pushing for green technology, the new flexible solar panels may spur a great demand.
+中譯：太陽能板能將陽光轉化為電力。傳統太陽能板是由結晶矽製成的，這與電腦晶片使用的材料相同。但矽的成本高昂，太陽能板也相當笨重。面對這項挑戰，一家日本公司的工程師開發出一種薄膜可撓式太陽能板。這款新型太陽能板不是同類產品中的第一款，但可能是最具彈性的一款——它能像紙一樣彎曲。這種新型太陽能板每平方公尺才重一公斤，只有傳統太陽能板重量的十分之一。這代表它可以應用在許多新穎的地方，例如帳篷屋頂、建築物牆面，或公車車頂。這種材料製成的薄片，還可以用來製作可攜式、可捲曲的行動電子產品充電器，例如筆記型電腦或手機的充電器。隨著越來越多國家積極推動綠色科技，這種新型可撓式太陽能板可能會激發龐大的市場需求。
+📋 內容大意
+Ordinary solar panels turn sunlight into electricity using crystallized silicon, the material in computer chips. Silicon is costly and the panels are heavy.
+Engineers at a Japanese company made a thin-film flexible panel bending like paper. It weighs one kilogram per square meter, a tenth of an ordinary panel.
+Its lightness suits new places such as tent roofs, building walls and bus tops. Sheets could become rollable chargers for notebook computers and mobile phones.
+← 第16題回到99 課綱學測參考用試卷第18題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

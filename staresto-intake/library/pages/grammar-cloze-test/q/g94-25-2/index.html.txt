@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g94-25-2/index.html
+Author: staresto-create ZZSH
+Title: 94 年學測克漏字第25題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 94 年學測 ／ 第25題
+94 年學測 克漏字 第25題
+慣用語／片語線索：句內答對率 55%
+答對率 55%：當年每 100 位考生，有 55 位答對。
+It is believed that this would be to the best interest of all people, 25 teens who might be tempted to start smoking.
+(A)in fact
+(B)rather than
+(C)regarding
+(D)especially
+答案：(D) especially
+題目編號：G94_25_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「這對所有人都有最大利益，尤其是那些可能被誘惑開始吸菸的青少年」，especially（尤其是）符合這種強調特定群體的語氣；in fact（事實上）、rather than（而不是）、regarding（關於）都不合。
+深入解析
+你可能會這樣想
+看到 all people 後面接著 teens，很容易讀成「不是所有人，而是青少年」，於是選 rather than。這一題的鑑別度高達 71，是這一份考卷裡最會分程度的一題，分的就是這件事：你把 teens 讀成 all people 的「一部分」，還是讀成站在 all people 相反的那一邊。
+怎麼判斷
+四個選項都是用來標示前後兩塊關係的用語，可見這一格考的不是文法，是你怎麼看待 all people 與 teens 的關係。先確認前後兩塊的關係。前面是 to the best interest of all people（對所有人都最有利），後面是 teens who might be tempted to start smoking（可能受誘惑而開始抽菸的青少年）——青少年本來就在「所有人」裡面，是其中特別值得一提的一群。先講整體、再從裡面挑出一小群強調，用的就是 especially。掛回這個句子：I like fruit, especially bananas.（我喜歡水果，尤其是香蕉。）香蕉沒有跳出水果之外，只是被特別點名而已。
+誘答選項
+rather than（而不是）：會把 teens 推到 all people 的外面，等於推翻自己前半句剛講完的 all people，前後矛盾。in fact（事實上）：用來修正或加強前面的說法，後面通常接一整句話，這裡接的是名詞。regarding（關於）：它確實是介系詞，後面可以直接接名詞（95 年第 18 題 →考過同一個字），但它引出的是「談論的主題」，而這裡的 teens 不是主題，是人群裡的一小群。
+常考字詞與句型
+especially（尤其是）、in particular（尤其、特別是）、above all（最重要的是）、rather than（而不是）、be tempted to V（受誘惑而想做某事）、remind sb of sth（提醒某人某事）。其中 rather than 這一組考過 9 個年度，83 年第 30 題 →、88 年第 23 題 →、98 年第 27 題 →、99 年第 20 題 →、103 年第 27 題 →、105 年第 26 題 →、107 年第 16 題 →、107 年第 28 題 →、110 年試辦考試第 13 題 →都出現過；above all 考過 3 個年度，86 年第 29 題 →、96 年第 29 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+European politicians are trying to get the UK Government to make cigarette companies print photos on the packets. These photos will show 21 smoking damages your health. The shocking pictures include images of smoke-damaged lungs and teeth, with reminders in large print that smokers die younger.
+The picture 22 have been used in Canada for the last four years. It has been very successful and has led to a 44% 23 in smokers wanting to kick the habit. At the moment EU tobacco manufacturers only have to put written health warnings on cigarette packets 24 the dangers of smoking.
+The aim of the campaign is to remind people of the damage the deadly weed does to their body. It is believed that this would be to the best interest of all people, 25 teens who might be tempted to start smoking. These dreadful photos may change the impression among teenagers that smoking is cool and sexy.
+中譯：歐洲多國政治人物正試圖推動英國政府要求菸商在菸盒上印製警示照片，這些照片將展示吸菸如何危害健康。這些駭人的圖片包括因吸菸受損的肺部與牙齒影像，並以大字體標示提醒：吸菸者往往較早死亡。這種警示照片在加拿大已經使用了四年，成效相當顯著，讓想戒菸的吸菸者比例增加了 44%。目前歐盟只要求菸草製造商在菸盒上以文字警語提醒吸菸的危害。這項活動的目的，是要提醒人們吸菸這種致命惡習對身體造成的傷害，人們相信這將符合所有人的最大利益，尤其是那些可能受誘惑而開始吸菸的青少年。這些駭人的照片，或許能改變青少年心中「吸菸很酷、很性感」的既有印象。
+📋 內容大意
+European politicians want the UK Government to require cigarette companies to print photographs on packets showing the damage smoking does to health.
+The pictures show damaged lungs and teeth, with large print reminding smokers they die younger. Canada has used them for four years, and 44% more smokers want to quit.
+EU makers now print only written notices. The campaign hopes the photos will remind everyone, above all teenagers, that smoking is not cool.
+← 第24題回到94 年學測第26題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

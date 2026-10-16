@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g100-26-3/index.html
+Author: staresto-create ZZSH
+Title: 100 年學測克漏字第26題詳解（代名詞／指示詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 100 年學測 ／ 第26題
+100 年學測 克漏字 第26題
+代名詞／指示詞線索：句內答對率 47%
+答對率 47%：當年每 100 位考生，有 47 位答對。
+Water is more useful to mankind than diamonds, and yet 26 are costlier.
+(A)the above
+(B)the former
+(C)the following
+(D)the latter
+答案：(D) the latter
+題目編號：G100_26_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】the latter 固定用法「後者」，指前面提到的兩者（water 和 diamonds）中後面提到的那個，即 diamonds；the above（以上的）、the former（前者，語意相反，前者指 water）、the following（以下的）都不合。
+深入解析
+你可能會這樣想
+the former 和 the latter 常常一起背，順序記反是最常見的失誤。答對率只有四成七，超過一半的人在這裡失手，但鑑別度高達 67——代表這一題分的是「有沒有回頭去看前面那兩樣東西誰先誰後」，不是單字難不難。
+怎麼判斷
+先回頭找那兩樣東西。文章開頭問：Which is more valuable? Water or diamonds?——順序是先 water、後 diamonds。接著就是這一句：Water is more useful to mankind than diamonds, and yet ______ are costlier. 兩個線索可以一起用。第一，and yet 是轉折，前半說水比較有用，後半必須講出相反的一面，也就是「比較貴的是鑽石」。第二，空格後面的動詞是 are，是複數；water 是不可數名詞要配 is，diamonds 是複數才配 are，光看動詞就能確定指的是 diamonds。the former 指前面提到的那一個（water），the latter 指後面提到的那一個（diamonds），所以答案是 the latter。記法：latter 和 late（晚的）同源，晚出現的那一個。整篇的結論也對得上：最後一句 diamonds carry a higher monetary value than water（鑽石的金錢價值高於水）。
+誘答選項
+the former：前者，指的是 water，語意剛好相反，而且 water 要配 is 不是 are。the above：以上所述，用來回指前面整段內容，不是用來從兩者中指定其中一個。the following：以下所述，指的是還沒出現的內容，方向錯了。
+常考字詞與句型
+the former（前者）、the latter（後者）、and yet（然而）、be costlier than（比…昂貴）、carry a higher monetary value（具有較高的金錢價值）、have to do with（與…有關）。其中 and yet 這一組考過 4 個年度，92 年第 21 題 →、101 年第 21 題 →、109 年第 28 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Which is more valuable? Water or diamonds? Water is more useful to mankind than diamonds, and yet 26 are costlier. Why? Called the diamond-water paradox, this is a classic problem posed to students of economics.
+The answer has to do with supply and demand. Being a rare natural resource, diamonds are 27 in supply. However, their demand is high because many people buy them to tell the world that they have money, 28 as conspicuous consumption in economics. In other words, the scarcity of goods is 29 causes humans to attribute value. If we 30 surrounded by an unending abundance of diamonds, we probably wouldn't value them very much.
+Hence, diamonds carry a higher monetary value than water, even though we find more use for water.
+中譯：何者更有價值？水還是鑽石？水對人類的用處遠大於鑽石，然而鑽石卻昂貴得多，這是為什麼呢？這個經典的經濟學問題被稱為「鑽石與水的悖論」，答案與供需有關。鑽石是稀有的天然資源，供給量有限；然而，鑽石的需求量卻很高，因為許多人購買鑽石是為了向世人展示自己的財力，這在經濟學上稱為「炫耀性消費」。換句話說，商品的稀有性正是人類賦予其價值的原因。如果我們身邊充斥著取之不盡的鑽石，我們大概就不會這麼珍視它們了。因此，儘管水對我們更有用處，鑽石的金錢價值卻遠高於水。
+📋 內容大意
+The diamond-water paradox highlights the economic puzzle of why useless diamonds cost more than essential water.
+Value is driven by scarcity and high demand related to social status rather than basic usefulness.
+Hence, scarcity gives diamonds a far higher monetary price than water despite water's greater utility.
+← 第25題回到100 年學測第27題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

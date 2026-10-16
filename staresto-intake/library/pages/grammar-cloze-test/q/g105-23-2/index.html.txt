@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g105-23-2/index.html
+Author: staresto-create ZZSH
+Title: 105 年學測克漏字第23題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 105 年學測 ／ 第23題
+105 年學測 克漏字 第23題
+字彙選義線索：句內答對率 42%
+答對率 42%：當年每 100 位考生，有 42 位答對。
+The sensors pick up signals from the person's blood pressure, pulse, and perspiration. 23 the process of questioning, all the signals are recorded on a single strip of moving paper.
+(A)Before
+(B)Among
+(C)Without
+(D)Throughout
+答案：(D) Throughout
+題目編號：G105_23_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「在整個詢問過程中」，Throughout（自始至終/整個……期間）符合；Before（之前）、Among（在……之中）、Without（沒有）都不合。
+深入解析
+你可能會這樣想
+throughout 這個字，你的印象多半只有「遍及各地」（throughout the world）這一個意思，不太會想到它也能講時間；再加上 Before 讀起來也順（「問話之前」），答對率因此掉到四成二。
+怎麼判斷
+先讀主要子句：all the signals are recorded on a single strip of moving paper（所有訊號都被記錄在一條移動的紙帶上）。訊號要有得記錄，一定是問話「正在進行」的時候 — 問話還沒開始，哪來的訊號？再看下一句 Once the questions are finished, the examiner analyzes the results（問題問完之後，測謊人員分析結果），時間軸講得很明白：先記錄、後分析，而記錄發生在問話期間。劍橋詞典把 throughout 標為 B2，釋義是「在每一個部分，或在整段期間」，它同時管空間和時間；這裡接的是 the process（過程），是一段時間，取的就是「整段期間」這一義。順便把 during 和 throughout 的差別一起釐清：during 可以指整段期間，也可以指期間裡的某個時候；throughout 則專指「從頭到尾一整段期間」。本句主詞是 all the signals（所有訊號，一個都不漏），配 throughout 才對味。
+誘答選項
+Before（在……之前）時間點錯了，問話還沒開始就沒有訊號可記錄。Among（在……之中）後面接的是一群人或一堆東西，例 among the trees（在樹林之中）、among the crowd（在人群之中）；the process 是單獨一個「過程」，不是一群東西，接不上。Without（沒有）代進去會變成「沒有問話過程，訊號卻被記錄下來」，前後矛盾。
+常考字詞與句型
+throughout the process（在整個過程中）、throughout the year（一整年）、throughout the world（全世界各地）、during the process（在過程中）、a strip of paper（一條紙帶）、be recorded on（被記錄在……上）、once + 子句（一旦……就……）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+A polygraph machine, also known as a "lie detector," is a common part of criminal investigations. The instrument is used to measure 21 a person's body reacts to questions. The theory underlying it is that lying is stressful, and that this stress can be measured and recorded on a polygraph machine.
+When a person takes a polygraph test, four to six wires, called sensors, are 22 to different parts of his body. The sensors pick up signals from the person's blood pressure, pulse, and perspiration. 23 the process of questioning, all the signals are recorded on a single strip of moving paper. Once the questions are finished, the examiner analyzes the results to determine if the person tested 24 truthful.
+Well-trained examiners can usually detect lying with a high degree of 25 when they use a polygraph. However, because different people behave differently when lying, a polygraph test is by no means perfect.
+中譯：測謊機，又稱「謊言偵測器」，是刑事偵查中常見的工具。這項儀器用來測量一個人身體對問題的反應方式。其背後的理論是：說謊會造成壓力，而這種壓力可以透過測謊機測量並記錄下來。當受測者接受測謊時，會有四到六條稱為感應器的導線，連接到身體不同部位，這些感應器會擷取受測者血壓、脈搏和排汗的訊號。在整個問話過程中，所有訊號都會被記錄在一條移動中的紙帶上。問話結束後，測謊人員會分析結果，判斷受測者是否誠實。訓練有素的測謊人員在使用測謊機時，通常能相當準確地偵測出謊言。然而，由於每個人說謊時的反應不盡相同，測謊測試絕非完美無缺。
+📋 內容大意
+The polygraph, or lie detector, is a standard tool in criminal investigation and measures the body's reactions to questions.
+Four to six sensors are fixed to the body. They pick up blood pressure, pulse and sweat, and a moving strip of paper records every signal.
+The examiner then reads the record to judge truthfulness. Skilled examiners are usually reliable, but people behave differently when lying, so the test is far from perfect.
+← 第22題回到105 年學測第24題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

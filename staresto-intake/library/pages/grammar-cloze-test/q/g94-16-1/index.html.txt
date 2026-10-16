@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g94-16-1/index.html
+Author: staresto-create ZZSH
+Title: 94 年學測克漏字第16題詳解（分詞／動狀詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 94 年學測 ／ 第16題
+94 年學測 克漏字 第16題
+分詞／動狀詞線索：句內答對率 55%
+答對率 55%：當年每 100 位考生，有 55 位答對。
+To be creative, you must dare 16, and courageously express your own outlook and 17 what makes you unique.
+(A)rebel
+(B)to rebel
+(C)rebelling
+(D)be rebelled
+答案：(B) to rebel
+題目編號：G94_16_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+dare 表示「敢於」、當一般動詞用時，後面接 to V 或原形都可以（劍橋 English Grammar Today），官方答案是 to rebel：本句是肯定句，dare 接在 must 後面當一般動詞，帶 to 的寫法最穩；填原形 rebel 文法上也說得通，不是錯誤。rebelling（劍橋列的 dare 用法只接不定詞或原形，沒有接動名詞的）、be rebelled（rebel 是不及物動詞，沒有被動用法）都不合。
+深入解析
+你可能會這樣想
+鑑別度只有 23，代表連高分群考生也常失手。原因很可能在 and 後面的 express：它是原形，對並列結構越熟的人，越容易把它當成空格要對齊的對象，照抄原形選 rebel。再加上 dare 接原形本來就是成立的用法，這一格要判斷的其實不是「哪一個錯」，而是「哪一個最穩」。
+怎麼判斷
+四個選項 rebel、to rebel、rebelling、be rebelled 是同一個字的四種形態，可見這一格考的是 dare 後面接什麼形態。（同一份考卷的第 24 題也是這一型，四個選項是 highlight 的四種形態，兩題可以對照著看。）先把句子結構拉出來：you must dare ___, and courageously express your own outlook ...。用並列結構三步裡的前兩步來看：第一步，對等連接詞是 and；第二步，確定它連的是哪兩樣——and 連的是 must 底下的兩個動作 dare ___ 與 courageously express，用分配律還原就是 you must dare ___ 與 you must courageously express your own outlook，所以和 express 對齊的是 dare，不是空格。dare 與 express 都用原形，是因為兩個都接在 must 後面；這一步看清楚，就知道 express 的形態決定不了空格，空格要看的是 dare 本身。劍橋 English Grammar Today 的 dare 條目說，dare 表示「有膽量做某事」時可以當一般動詞，後面接不定詞或原形都可以（If Sally dares (to) go there again, she'll be in big trouble!）；另有較少見的半助動詞用法，只接原形（No one dare go there.）。本句的 dare 接在助動詞 must 後面，是一般動詞，括號裡那個 to 可有可無，所以 to rebel 與 rebel 文法上都成立，官方答案是 to rebel。to rebel 之所以最穩，有兩個理由：一般動詞 dare 的每一種句型，帶 to 的寫法都成立；而劍橋詞典 dare 條目列在「接原形」用法底下的例句，都是否定句或疑問句（I wouldn't dare have a party in my flat.、Dare you tell him the news?），本句卻是肯定句。全文最後一句也可以拿來對照：it was exactly his courage to "rebel" and to express his own ideas，rebel 加了引號，指的正是第一段這個「敢於叛逆」，寫的也是 to rebel。
+誘答選項
+rebel：一般動詞 dare 後面可以直接接原形，所以這個選項不能說是文法錯誤；只是本句是肯定句，帶 to 的寫法最穩。如果是因為 and 後面的 express 是原形才選它，那是把對齊的對象找錯了：和 express 並列的是 dare。rebelling：劍橋列出的 dare 用法只接不定詞或原形，沒有接動名詞的。be rebelled：rebel 是不及物動詞（劍橋標 [I]），用法是 rebel against sth（反抗某事物），沒有受詞就談不上被動；而且「叛逆」是主詞自己做出來的動作，語意上也不可能被動。
+常考字詞與句型
+dare (to) do sth（敢於做某事）、How dare you!（你竟敢！）、I dare say（我猜想、大概）、rebel against（反抗、違抗）、go against（違背）、break the rules（打破常規）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Experts say that creativity by definition means going against the tradition and breaking the rules. To be creative, you must dare 16, and courageously express your own outlook and 17 what makes you unique. But does our society encourage children to break the rules? I'm afraid the answer is no.
+The famous film director Ang Lee recalls his father's disappointment with him when he was young. 18 a small child, he would pick up a broom and pretend to be playing guitar for the entertainment of family guests. Then, when he was studying film in college, he would exhaust himself just for a performance tour. His father, 19 always hoped that he would get a PhD and become a professor, 20 with a scoff: "What is all this nonsense?!"
+But it later turned out that it was exactly his courage to "rebel" and to express his own ideas that marks his films with distinct creativity.
+中譯：專家表示，創造力就其定義而言，意味著要違背傳統、打破常規。要有創造力，你必須敢於叛逆，並勇敢地表達自己獨特的觀點與特質。但我們的社會真的鼓勵孩子打破常規嗎？恐怕答案是否定的。知名導演李安曾回憶，年少時父親對他相當失望。當他還是個小孩子時，他會拿起掃把假裝彈吉他，只為了娛樂家中的賓客。後來，當他在大學主修電影時，他甚至會為了一場公演而累到筋疲力竭。他的父親一直希望他能拿到博士學位、成為一名教授，總是嗤之以鼻地說：「這些荒唐事到底是在做什麼？！」然而，事實證明，正是他敢於「叛逆」、勇於表達自己想法的勇氣，才成就了他電影中鮮明獨特的創造力。
+📋 內容大意
+Ang Lee's early rebellion against his father's traditional expectations allowed him to develop the unique creativity that defined his film career.（敘事文）
+回到94 年學測第17題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

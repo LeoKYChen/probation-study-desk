@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z93m-27/index.html
+Author: staresto-create ZZSH
+Title: 93 年指考敏督利颱風受災地區考生補救考試克漏字第27題詳解（慣用語／片語）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 93 年指考敏督利颱風受災地區考生補救考試 ／ 第27題
+93 年指考敏督利颱風受災地區考生補救考試 克漏字 第27題
+慣用語／片語線索：句內
+Teams have been known to come from 27 to win, but the chances of overcoming that kind of lead are slim.
+(A)above
+(B)down
+(C)behind
+(D)underneath
+答案：(C) behind
+題目編號：Z93M_27（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【運動慣用語】come from behind 固定用法，表示「從落後局面逆轉獲勝」，符合後文「扭轉這種領先差距的機會很渺茫」的語境。above／down／underneath 都不是這個慣用語的字詞搭配。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+看到 come from ___ to win，你知道整句在講逆轉獲勝，於是要找一個表示落後的字。down 這時候特別誘人，因為 be down by ten points（落後十分）確實是英文裡真實存在的說法，運動報導天天在用。問題不在 down 的意思，在它能不能接在 from 後面。
+怎麼判斷
+這一格考的是一個整組的慣用語：come from behind。劍橋詞典把它收為慣用語，正體中文的釋義就是「（比賽中）成功扭轉劣勢，後來居上」，整組記起來就好，不必拆開分析 behind 在裡面算什麼詞性。behind 之所以是那個字，可以對照這個用法：Our team is 3 points behind the winners.（我們這隊落後冠軍三分）——behind 除了「在……後面」，本來就有「落後」這一層意思。再用篇內驗算：前一句問的是「上半場就領先三十分的那一隊，還是它的對手比較可能贏」，同一句後半又說 the chances of overcoming that kind of lead are slim（要扭轉那樣的領先差距，機會很渺茫），可見這一格說的正是「從落後的位置追上來」。
+誘答選項
+down 是本題最容易選的一個，而且它的落後義是真的——劍橋收有 The Cavaliers were 20 points down at half-time.（騎士隊中場休息時落後二十分）。但請看劍橋另一個例句：Michigan, down (by) ten points at the half, came back to win the football game.（密西根隊中場落後十分，後來反敗為勝。）同樣是落後、同樣是 at the half，劍橋配的動詞是 came back，不是 come from——down 走的是「幾分 down」這種形容詞式的說法，接不到 from 後面；能接在 from 後面表示落後位置的是 behind。above（在……之上）與 underneath（在……下方）都是講空間位置，一個方向還相反，一個不用在比分上。
+常考字詞與句型
+come from behind（從落後中逆轉獲勝）、come back to win（反敗為勝）、be + 數字 + points down（落後幾分）、be + 數字 + points ahead（領先幾分）、overcome a lead（扭轉領先差距）、slim（機會渺茫的）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Which would you wear to a football game, a sweater or a raincoat? 26 the raincoat if you thought there was a good chance of rain. Which basketball team is more likely to win, one that is 30 points ahead at the half or its opponent? Teams have been known to come from 27 to win, but the chances of overcoming that kind of lead are slim.
+28 of us can be perfectly sure about how things will turn out in the future. But we can, and often do, think of the possibilities. We can try to guess 29 this or that might happen.
+In some cases mathematics can help make these guesses more accurate. The branch of mathematics that helps make our guesses more accurate is called probability. Probability is the science of 30. It is among the fastest growing and most useful parts of today's mathematics.
+中譯：去看一場美式足球賽，你會穿毛衣還是雨衣？如果你認為很有可能下雨，你或許就會選擇穿雨衣。哪一支籃球隊比較有可能獲勝——是上半場就領先 30 分的那一隊，還是它的對手？球隊確實有可能從落後大幅追分逆轉獲勝，但要扭轉這麼大的差距，機會其實相當渺茫。我們當中沒有人能夠完全確定未來會如何發展，但我們可以，也經常會去思考各種可能性。我們可以嘗試猜測這件事或那件事是否會發生。在某些情況下，數學能幫助我們讓這些猜測更加準確。這門幫助我們讓猜測更精準的數學分支，就叫做機率。機率是研究不確定性的科學，它是當今數學中發展最快、也最實用的領域之一。
+📋 內容大意
+Sensible choices, from clothing to sport, rest on judging what is likely to happen.
+Nobody can be certain about the future, yet we constantly weigh the possibilities.
+Mathematics sharpens such guesses, and that branch, probability, is among its most useful today.
+← 第26題回到93 年指考敏督利颱風受災地區考生補救考試第28題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

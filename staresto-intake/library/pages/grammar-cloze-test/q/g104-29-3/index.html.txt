@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g104-29-3/index.html
+Author: staresto-create ZZSH
+Title: 104 年學測克漏字第29題詳解（時態／語態）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 104 年學測 ／ 第29題
+104 年學測 克漏字 第29題
+時態／語態線索：句內答對率 45%
+答對率 45%：當年每 100 位考生，有 45 位答對。
+Apples have been grown for thousands of years in Asia and Europe, and 29 to North America by European colonists in the 17th century.
+(A)bring
+(B)have brought
+(C)were brought
+(D)have been brought
+答案：(C) were brought
+題目編號：G104_29_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+被動語態過去式 were brought，「被歐洲殖民者帶到北美」，17th century 是明確過去時間點，用簡單過去式被動；bring（原形動詞）、have brought（現在完成主動，方向不合，應該是蘋果「被帶去」）、have been brought（現在完成被動，時態不合，明確過去時間點應用簡單過去式）都不合。
+深入解析
+你可能會這樣想
+前半句是 have been grown（現在完成式被動），看到 and 就直覺認為「後面要跟前面同一個時態」，於是挑 have been brought。這正是本題的陷阱所在。答對率只有四成五。and 連接的是兩個動作，但兩個動作各自配的時間副詞不同時，時態本來就可以不同。
+怎麼判斷
+兩個判斷點，缺一不可，順序建議先語態、後時態。第一，語態：by European colonists（由歐洲殖民者）這個 by 片語就是被動語態的招牌 —— 蘋果是「被」殖民者帶過去的，不是蘋果自己去帶。所以主動的 bring 和 have brought 先排除。第二，時態：in the 17th century（在十七世紀）是一個明確而且已經結束的過去時間點。現在完成式不能跟明確的過去時間點連用 —— 你不會說 I have seen him yesterday.，只能說 I saw him yesterday。同樣的道理，have been brought 配不上 in the 17th century，只能用簡單過去式的被動 were brought。那前半句為什麼可以用 have been grown？因為它配的是 for thousands of years（數千年來），是一段從過去延續到現在的期間，正是現在完成式該出現的地方。同一個句子裡前後時態不同，不是矛盾，而是因為兩邊的時間副詞不同 —— 這正是本題要分辨的地方。最後確認主詞：Apples 是複數，be 動詞用 were 不是 was。
+誘答選項
+bring 以複數主詞 Apples 來看可以是現在簡單式，但它是主動（後面也找不到受詞），而且現在式與 in the 17th century 這個過去時間對不上。have brought 是主動，會變成「蘋果把某物帶到北美」，方向顛倒。have been brought 語態對了，但時態撞上 in the 17th century。三個誘答選項剛好對應三種不同的錯誤，這種題目一定要把語態和時態分開檢查，不要一次判斷。
+常考字詞與句型
+be brought to（被帶到……）、bring A to B（把 A 帶到 B）、for thousands of years（數千年來，搭配現在完成式）、in the 17th century（在十七世紀，搭配過去式）、be grown（被種植）、colonist（殖民者）、be cultivated（被栽培）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Nutritional products that can be collected from trees include fruits, nuts, seeds, leaves, and bark. Tree products have been an important part of diets for thousands of years, from early humans 26 fruits and nuts to the first cultivation of important trees, such as mango and apple.
+The apple is one of the world's most cultivated fruit trees, 27 over 7,000 different kinds in existence. Despite their great 28 , however, most domesticated apples can be traced back to a common ancestor, the wild apple of Central Asia, Malus sieversii. Apples have been grown for thousands of years in Asia and Europe, and 29 to North America by European colonists in the 17th century.
+Today, apples are 30 eaten the world over and form the basis for multi-million dollar industries. In 2005, at least 55 million tons of apples were grown worldwide, which generated a value of about $10 billion.
+中譯：能從樹木採集到的營養產品包括水果、堅果、種子、葉片和樹皮。數千年來，樹木產物一直是人類飲食中重要的一部分，從早期人類採集水果和堅果，到後來人類開始栽培芒果、蘋果等重要果樹。蘋果是世界上栽培最廣泛的果樹之一，目前已知的品種超過 7000 種。然而，儘管品種如此繁多，大多數人工栽培的蘋果，其實都能追溯回同一個祖先——原產於中亞的野生蘋果「新疆野蘋果」。蘋果在亞洲和歐洲已栽種了數千年，並於 17 世紀由歐洲殖民者引進北美洲。如今，蘋果已是全世界普遍食用的水果，並形成了價值數百萬美元的產業。2005 年，全球至少種植了 5500 萬噸蘋果，創造了約一百億美元的產值。
+📋 內容大意
+Trees have fed people for thousands of years. They give fruit, nuts, seeds, leaves and bark. Early humans picked food; later farmers grew mango and apple.
+The apple is one of the most widely grown fruit trees. More than 7,000 kinds exist, yet nearly all come from one wild ancestor in Central Asia.
+Apples grew in Asia and Europe for centuries. European colonists took them to North America in the 17th century, and today they support big industries.
+← 第28題回到104 年學測第30題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g103-24-2/index.html
+Author: staresto-create ZZSH
+Title: 103 年學測克漏字第24題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 103 年學測 ／ 第24題
+103 年學測 克漏字 第24題
+字彙選義線索：句內答對率 77%
+答對率 77%：當年每 100 位考生，有 77 位答對。
+Not only will the summit lose its tourist attraction, but the disappearance of the snows will also cause major damage to the ecosystem on the dry African plains at its base. 24 the snow covering the peak, there will not be enough moisture and water to nourish the plants and animals below.
+(A)Among
+(B)Besides
+(C)Inside
+(D)Without
+答案：(D) Without
+題目編號：G103_24_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「沒有覆蓋山頂的積雪，就不會有足夠的水分」，Without（沒有）符合這個假設性條件；Among（在……之中）、Besides（此外）、Inside（在……裡面）都不合。
+深入解析
+你可能會這樣想
+前一句剛講完積雪消失會破壞生態，你可能直接抓 Besides 來承接上一句，因為它看起來就是個銜接用的字。但這裡 Besides 後面接的是名詞片語 the snow covering the peak，整個變成「除了覆蓋山頂的積雪之外」，與後半句的「水分不夠」接不起來。
+怎麼判斷
+還原成完整子句最清楚：Without the snow covering the peak 等於 If there is no snow covering the peak，也等於 If the snow does not cover the peak。這是用 without 加名詞來代替條件子句的寫法，主要子句配 there will not be，形成「沒有 A，就不會有 B」的假設因果。語意方向也對得上：前一句說 the disappearance of the snows will also cause major damage to the ecosystem（積雪消失還會嚴重破壞生態），本句正是在說明怎麼個破壞法——沒有雪，就沒有足夠的水分滋養山下的動植物。順帶把 the snow covering the peak 的結構看清楚：covering the peak 是現在分詞片語，擺在名詞後面修飾 the snow，等於一個省略的關係子句 the snow which covers the peak，意思是「覆蓋著山頂的那片積雪」。這一點掛在 a barking dog（正在吠的狗）上就好：分詞可以擺名詞前面當形容詞，帶著自己的受詞時就擺到名詞後面去。
+誘答選項
+Among（在…之中）：後面要接三者以上的複數名詞或群體，the snow 是不可數的單一事物。Besides（除…之外還有）：語意是「追加」，會變成「除了積雪還有別的」，與後半句不通。Inside（在…裡面）：純粹的位置關係，說不通「在積雪裡面就沒有水分」。
+常考字詞與句型
+without a doubt（毫無疑問）、do without（沒有…也行、將就）、It goes without saying that（不用說也知道…）、apart from（除…之外）、nourish the soil（滋養土壤）、moisture in the air（空氣中的水分）。其中 apart from 這一組考過 5 個年度，86 年第 27 題 →、87 年第 22 題 →、101 年第 19 題 →、111 年第 16 題 →都出現過；do without 考過 3 個年度，101 年第 25 題 →、110 年第 16 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Every year tens of thousands of tourists visit Mount Kilimanjaro, the highest mountain in Tanzania, Africa, to witness the scenes depicted in Earnest Hemingway's The Snows of Kilimanjaro. They are attracted by the American writer's 21 of the millennia-old glaciers.
+However, this tourist attraction will soon 22 . According to the Climate Change Group, formed by environmentalists worldwide to document the effects of global warming, Mount Kilimanjaro's snows and glaciers are melting and are 23 to disappear by 2020.
+Not only will the summit lose its tourist attraction, but the disappearance of the snows will also cause major damage to the ecosystem on the dry African plains at its base. 24 the snow covering the peak, there will not be enough moisture and water to nourish the plants and animals below. Rising temperatures, an effect of global warming, 25 threaten the ecosystem of this mountain area. The loss of snows on the 5,892m peak, which have been there for about 11,700 years, could have disastrous effects on Tanzania.
+中譯：每年都有數萬名遊客造訪坦尚尼亞、非洲最高峰吉力馬札羅山，只為親眼目睹海明威名著《吉力馬札羅的雪》中所描繪的景象。他們被這位美國作家對這座千年冰河的描寫所吸引。然而，這項觀光資源即將消失。根據全球環保人士組成的「氣候變遷小組」記錄，吉力馬札羅山的積雪與冰河正在融化，預計將於 2020 年前完全消失。屆時，這座山峰失去的不只是觀光吸引力，積雪的消失還將對山腳下乾燥非洲平原的生態系統造成重大破壞。少了山頂積雪，山下的動植物將缺乏足夠的水分與濕氣滋養。全球暖化所導致的氣溫上升，也持續威脅著這座山區的生態系統。這座 5892 公尺高峰上存在了約 11700 年的積雪一旦消失，恐將對坦尚尼亞帶來災難性的後果。
+📋 內容大意
+Tens of thousands of tourists visit Mount Kilimanjaro in Tanzania each year. They come for the ancient glaciers Hemingway wrote about in The Snows of Kilimanjaro.
+The Climate Change Group reports that the snows and glaciers are melting and could be gone by 2020. The summit would then lose its appeal to visitors.
+The loss would also harm the plains below, because the snow supplies their water. Rising temperatures add more pressure.
+← 第23題回到103 年學測第25題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

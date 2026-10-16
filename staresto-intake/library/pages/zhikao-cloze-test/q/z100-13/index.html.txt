@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z100-13/index.html
+Author: staresto-create ZZSH
+Title: 100 年指考克漏字第13題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 100 年指考 ／ 第13題
+100 年指考 克漏字 第13題
+字彙選義線索：句內答對率 41%
+答對率 41%：當年每 100 位考生，有 41 位答對。
+They are necessary when the customer is 13 or when the vendor has done all that can reasonably or legally be expected.
+(A)at fault
+(B)on call
+(C)in tears
+(D)off guard
+答案：(A) at fault
+題目編號：Z100_13（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+at fault（有過錯的／出差錯的）表示當顧客本身理虧或有疏失，或是廠商已盡合理合法責任時，就應發出拒絕調整的訊息；on call／in tears／off guard 都不符合此處語意。
+深入解析
+你可能會這樣想
+四個選項都是「介系詞加名詞」的片語，中文都能說成「處於某種狀態」，你會覺得每一個好像都放得進去。
+怎麼判斷
+答對率四成一。四個選項都是介系詞片語、都能接在 be 動詞後面當補語，形態上刷不掉，這一格考的是認不認得這幾個片語各自的意思。先確認整句在講什麼：They are necessary when the customer is ______ or when the vendor has done all that can reasonably or legally be expected.（在什麼情況下必須拒絕客戶的要求）。這裡有一個 or 連著兩個 when 子句，要先看清楚它連的是哪兩樣——是兩種「該拒絕的情況」；後面那一種寫得很清楚：賣方該做的都已經做到了。既然兩種情況並列，前面那一種就該是「錯不在賣方」的另一半，也就是客戶自己有問題。at fault 正是「有過失、該負責任」，填進去讀成 when the customer is at fault（當過錯在客戶這一方時）。
+誘答選項
+on call（隨時待命）用在醫師、工程師這類職務上，客戶不會待命；in tears（淚流滿面）講的是情緒，與該不該拒絕無關；off guard（沒有防備）通常出現在 catch sb off guard（趁人不備）這個組合裡，單獨接在 the customer is 後面很少這樣用。三個都是介系詞片語，形態吻合，容易被順手選走。
+常考字詞與句型
+at fault（有過失、該負責）、catch sb off guard（讓某人措手不及）、on call（隨時待命）、in tears（淚流滿面）、reasonably（合理地）、legally（在法律上、依法）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：100學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Handling customer claims is a common task for most business firms. These claims include requests to exchange merchandise, requests for refunds, requests that work 11, and other requests for adjustments. Most of these claims are approved because they are legitimate.
+However, some requests for adjustment must be 12, and an adjustment refusal message must be sent. Adjustment refusals are negative messages for the customer. They are necessary when the customer is 13 or when the vendor has done all that can reasonably or legally be expected.
+An adjustment refusal message requires your best communication skills 14 it is bad news to the receiver. You have to refuse the claim and retain the customer 15. You may refuse the request for adjustment and even try to sell the customer more merchandise or service. All this is happening when the customer is probably angry, disappointed, or inconvenienced.
+中譯：處理顧客申訴是大多數企業共同面對的日常工作。這些申訴包括換貨要求、退款要求、要求修正已完成工作的要求，以及其他調整要求。這些申訴大多數會被批准，因為它們都合理。然而，有些調整要求必須被拒絕，這時就必須發出一封「拒絕調整信」。拒絕調整信對顧客而言是負面的訊息，通常用在顧客本身有過失，或廠商已經做到合理或法律上所能做的一切之時。撰寫拒絕調整信需要你最好的溝通技巧，因為這對收件者來說是壞消息。你必須拒絕這項申訴，同時還要留住這位顧客。你可能得拒絕這次調整要求，甚至試著向顧客推銷更多商品或服務——而這一切都發生在顧客可能正處於生氣、失望或不便的情緒之下。
+📋 內容大意
+Firms constantly handle customer claims, and most are granted, since they are legitimate.
+Some must be turned down, and a refusal message then has to be written.
+Such letters demand real skill: the writer carries bad news yet must keep an angry customer.
+← 第12題回到100 年指考第14題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

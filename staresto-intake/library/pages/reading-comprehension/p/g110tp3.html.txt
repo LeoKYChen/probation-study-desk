@@ -1,0 +1,159 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/g110tp3.html
+Author: staresto-create ZZSH
+Title: 110 學測試辦考試閱讀測驗：印度單一時區的爭議｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 110 學測試辦考試
+110 學測試辦考試閱讀測驗：印度單一時區的爭議試辦考試
+Controversy of India's Single Time Zone
+學測 110年試辦考試第 43–46 題4 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段For decades, India’s time zone has been a hotly debated issue. Back in 1884 when time zones were officially established, two time zones were used—Bombay Time and Calcutta Time. Indian Standard Time (IST) was introduced in 1906, but Calcutta Time and Bombay Time continued to be maintained after India’s independence in 1947, until 1948 and 1955 respectively. The current single time zone, though a legacy of British rule, is often viewed as a symbol of unity. Yet, not everyone thinks it is a good idea.
+第 2 段India stretches 3,000 km from east to west, spanning roughly 30 degrees longitude. This corresponds to a two-hour difference in mean solar time, based on the position of the sun in the sky. Thus, the sun rises nearly two hours earlier in the east than in India’s far west. In Northeastern states, sunrise can be as early as 4 a.m. in summer and sunset by 4 p.m. in winter, much earlier than the official working hours. This results in great loss of daylight hours and more consumption of electricity, and often reduced productivity.
+第 3 段Meanwhile, recent studies point out that the current system leads to a serious problem in education for some students. Nationwide, the school day starts at roughly the same time; thus, children go to bed later and have reduced sleep in west India, where the sun sets later. Such sunset-induced sleep deprivation is more pronounced among the poor, mostly due to their noisy environment and lack of sleep-inducing facilities like window shades or indoor beds. On average, an hour’s delay in sunset time reduces children’s sleep by 30 minutes, and an hour’s delay in annual average sunset time reduces education by about 0.8 years. As a result, children living in locations with later sunsets are less likely to complete primary and middle school education.
+第 4 段Despite various requests and proposals for multiple time zones, the government is keen to retain the current system. Reasons provided include prevention of confusion and safety issues regarding railway and flight operations.
+題目
+43.Which of the following illustrates the Indian time zone system since 1955?
+圖片出處：大學入學考試中心 110 學年度學科能力測驗試辦考試英文考科
+(A)（見圖）
+(B)（見圖）
+(C)（見圖）
+(D)（見圖）
+44.Which of the following is closest in meaning to the word “pronounced” in the third paragraph?
+(A)Serious.
+(B)Flexible.
+(C)Distant.
+(D)Noisy.
+45.According to the passage, which of the following is a supporting argument for multiple time zones?
+(A)The number of traffic accidents can be reduced.
+(B)Children may have better-quality sleep and education.
+(C)India may have more energy resources to generate electricity.
+(D)The country may rid itself of the impact of British colonization.
+46.According to the passage, when is most likely the sunset hour in December in the city of Varanasi shown on the map?
+圖片出處：大學入學考試中心 110 學年度學科能力測驗試辦考試英文考科
+(A)7 p.m.
+(B)6 p.m.
+(C)5 p.m.
+(D)4 p.m.
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+43
+(A)
+—
+—
+44
+(A)
+—
+—
+45
+(B)
+—
+—
+46
+(C)
+—
+—
+答對率：本卷非正式施測，無答對率
+每一題的依據句
+第 43 題 細節題（圖片題） Supporting details
+第 1 段Indian Standard Time (IST) was introduced in 1906, but Calcutta Time and Bombay Time continued to be maintained after India’s independence in 1947, until 1948 and 1955 respectively.
+第 1 段The current single time zone, though a legacy of British rule, is often viewed as a symbol of unity.
+第 1 段說加爾各答時間和孟買時間分別在 1948 年和 1955 年停用，又說目前是單一時區，所以 1955 年以後全國只用一個時區，四張圖裡只有 (A) 整個印度同一個時間。(B) 分成兩個時區，是單一時區全面實施以前的情形；(C)、(D) 分成三個時區，文章都沒有提。
+延伸閱讀臺師大英語系劉宇挺教授：教授特別肯定這組圖文整合題：讀文章的同時就對照選項的地圖，比讀完再看圖容易掌握這篇資訊量頗高的文章；對單字量還不夠的人，圖片也能幫忙抓住關鍵資訊。 〈大考解析〉
+第 44 題 詞義題 Vocabulary in context
+第 3 段Meanwhile, recent studies point out that the current system leads to a serious problem in education for some students.
+第 3 段Such sunset-induced sleep deprivation is more pronounced among the poor, mostly due to their noisy environment and lack of sleep-inducing facilities like window shades or indoor beds.
+pronounced 在這裡不是「發音」的意思，而是「明顯、嚴重」。同一段第一句已經說現行制度造成嚴重的教育問題，這一句又說睡眠不足在窮人家庭 more pronounced，原因是環境吵雜、缺少幫助入睡的設施，可見窮人家庭的情況更嚴重。(D) 照抄同一句的 noisy，但吵雜是造成問題的原因，不是 pronounced 的意思；(B) 有彈性、(C) 遙遠都接不上。
+怎麼從前後文推出字義 →
+第 45 題 細節題 Supporting details
+第 3 段On average, an hour’s delay in sunset time reduces children’s sleep by 30 minutes, and an hour’s delay in annual average sunset time reduces education by about 0.8 years.
+第 3 段As a result, children living in locations with later sunsets are less likely to complete primary and middle school education.
+第 3 段說單一時區讓西部日落晚，孩子睡得少，受教育的年數也跟著減少；反過來說，改成多個時區，孩子就可能睡得比較好、受更完整的教育，所以這是支持多時區的論點。(C) 照抄第 2 段的 electricity，原文說的是現制讓用電量增加，不是多時區能帶來更多發電的能源；(D) 照抄第 1 段的 British，原文只說單一時區是英國統治留下來的，沒有人拿擺脫殖民影響當作改制的理由；(A) 交通安全是第 4 段政府維持現制的理由，方向正好相反。
+第 46 題 細節題（圖片題） Supporting details
+第 2 段Thus, the sun rises nearly two hours earlier in the east than in India’s far west.
+第 2 段In Northeastern states, sunrise can be as early as 4 a.m. in summer and sunset by 4 p.m. in winter, much earlier than the official working hours.
+第 2 段說印度東西兩端相差將近兩個小時，東北各邦冬天下午 4 點就日落。地圖上的 Varanasi 在東經 83 度，大約在 68 度和 97 度的中間，和最東邊差一個小時左右，所以 12 月的日落時間大約是下午 5 點。(D) 4 點是東北部的日落時間，(B) 6 點大約是最西部的日落時間，(A) 7 點比最西部還晚，都不對。
+延伸閱讀臺師大英語系劉宇挺教授：教授特別肯定這組圖文整合題：讀文章的同時就對照選項的地圖，比讀完再看圖容易掌握這篇資訊量頗高的文章；對單字量還不夠的人，圖片也能幫忙抓住關鍵資訊。 〈大考解析〉
+逐段中譯
+第 1 段數十年來，印度的時區一直是爭論激烈的議題。早在 1884 年正式劃定時區的時候，印度使用兩個時區：孟買時間和加爾各答時間。1906 年開始實施印度標準時間（IST），不過 1947 年印度獨立之後，加爾各答時間和孟買時間仍然繼續使用，分別到 1948 年和 1955 年才停用。目前的單一時區雖然是英國統治留下來的制度，卻常常有人把它看成國家團結的象徵。然而，並不是每個人都認為這是好主意。
+第 2 段印度東西綿延 3,000 公里，橫跨大約 30 度經度，換算成依太陽在天空中的位置計算的平均太陽時，相差兩個小時。因此，東部的日出比最西部早將近兩個小時。在東北各邦，夏天的日出可能早在清晨 4 點，冬天的日落則在下午 4 點，都比官方的上班時間早得多。結果造成大量日照時間浪費、用電量增加，生產力也常常因此降低。
+第 3 段同時，最近的研究指出，現行制度讓部分學生的教育出現嚴重的問題。全國各地學校的上課時間大致相同，因此在日落比較晚的印度西部，孩子上床的時間比較晚，睡眠也比較少。這種日落造成的睡眠不足，在窮人家庭更加明顯，主要是因為他們的環境吵雜，又缺少窗簾或室內床鋪這類幫助入睡的設施。平均來說，日落時間晚一小時，孩子的睡眠就減少 30 分鐘；每年平均日落時間晚一小時，受教育的年數就減少大約 0.8 年。結果，住在日落較晚地區的孩子，比較不容易完成小學和國中教育。
+第 4 段儘管有各種要求和提議改用多個時區，政府仍然堅持維持現行制度，提出的理由包括避免混亂，以及鐵路和航班營運的安全問題。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。
+第 1 段For decades, India’s time zone has been a hotly debated issue.
+第 2 段This results in great loss of daylight hours and more consumption of electricity, and often reduced productivity.
+第 3 段Meanwhile, recent studies point out that the current system leads to a serious problem in education for some students.
+第 4 段Despite various requests and proposals for multiple time zones, the government is keen to retain the current system.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體說明文 Expository
+組織方式因果關係 Cause-Effect這一類怎麼辨識 →
+關鍵轉折詞YetThusMeanwhilethusAs a resultDespite
+綱要
+印度的時區爭議已有數十年，從兩個時區改為單一時區，(Yet) 不是每個人都贊成。
+印度東西橫跨約 30 度經度，(Thus) 東部比西部早將近兩小時日出，東北部浪費日照、耗電，生產力下降。
+(Meanwhile) 研究指出單一時區造成教育問題：(thus) 西部日落晚，孩子睡得少。
+睡眠不足在窮人家庭更明顯，(As a result) 日落晚地區的孩子較難完成中小學教育。
+(Despite) 儘管有人提議多時區，政府為避免混亂與交通安全問題，仍堅持現制。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 22 個、參考字彙 12 個、字詞搭配 9 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+zone[zoʊn]n.區域（time zone 時區）三級第 1 段詞彙題考過 1 次：110 學測第 9 題 zones（誘答）
+issue[ˈɪʃu]n.議題四級第 1 段詞彙題考過 3 次：99 指考第 8 題 issues（答案）、85 聯考第 2 題（誘答）、83 推薦甄選第 9 題（誘答）
+roughly[ˈrʌfli]adv.大約三級第 2 段詞彙題考過 5 次：112 學測第 10 題（誘答）、96 學測第 14 題（答案）、93 補救考試第 11 題（誘答）、91 指考第 10 題（誘答）、89 學測第 4 題（誘答）
+correspond[ˌkɔrəˈspɑnd]v.相當於、等於（correspond to）四級第 2 段詞彙題考過 1 次：110 學測第 15 題 corresponded（誘答）
+consumption[kənˈsʌmpʃən]n.消耗（量）五級第 2 段詞彙題考過 2 次：115 學測第 5 題（答案）、89 學測第 3 題（誘答）
+productivity[ˌproʊdəkˈtɪvəti]n.生產力五級第 2 段詞彙題考過 1 次：94 學測第 4 題 productivities（誘答）
+mostly[ˈmoʊstli]adv.主要三級第 3 段詞彙題考過 2 次：92 學測第 3 題（誘答）、92 學測補考第 9 題（誘答）
+facility[fəˈsɪlɪti]n.設施、設備四級第 3 段詞彙題考過 3 次：108 學測第 1 題（誘答）、105 學測第 6 題（誘答）、98 指考第 6 題 facilities（誘答）
+annual[ˈænjuəl]adj.每年的、全年的四級第 3 段詞彙題考過 2 次：108 學測第 10 題（答案）、97 學測第 13 題 annually（誘答）
+location[loʊˈkeɪʃən]n.地區、地點三級第 3 段詞彙題考過 1 次：97 指考第 1 題（答案）
+various[ˈvɛriəs]adj.各種的三級第 4 段詞彙題考過 6 次：99 學測第 7 題（誘答）、96 學測第 14 題 variously（誘答）、94 指考第 8 題（誘答）、91 學測第 6 題 variously（誘答）、91 學測補考第 7 題（誘答）、90 學測第 7 題（誘答）
+request[rɪˈkwɛst]n.要求、請求三級第 4 段詞彙題考過 3 次：96 學測第 1 題（誘答）、92 學測補考第 3 題（誘答）、82 聯考第 1 題（誘答）
+multiple[ˈmʌltəpəl]adj.多個的四級第 4 段詞彙題考過 1 次：114 學測第 7 題（誘答）
+keen[kin]adj.一心要、很想（be keen to）四級第 4 段詞彙題考過 1 次：107 指考第 9 題（誘答）
+retain[rɪˈteɪn]v.維持、保留四級第 4 段詞彙題考過 2 次：97 指考第 4 題（誘答）、82 聯考第 7 題 retained（誘答）
+prevention[prɪˈvɛnʃən]n.避免、防止四級第 4 段詞彙題考過 3 次：110 指考第 4 題 preventions（誘答）、96 指考第 3 題（誘答）、92 學測第 6 題 preventions（誘答）
+operation[ˌɑpəˈreɪʃən]n.營運、運作三級第 4 段詞彙題考過 6 次：113 學測第 9 題（誘答）、110 學測第 7 題（誘答）、104 學測第 4 題 operations（誘答）、100 學測第 8 題（誘答）、98 指考第 4 題（誘答）、96 指考第 2 題（誘答）
+illustrate[ˈɪləˌstreɪt]v.說明、呈現四級第 43 題詞彙題考過 2 次：104 指考第 9 題 illustrating（誘答）、91 學測第 10 題 illustrated（誘答）
+flexible[ˈflɛksəbəl]adj.有彈性的、靈活的四級第 44 題詞彙題考過 7 次：110 指考第 6 題（誘答）、105 學測第 11 題（誘答）、104 學測第 1 題（答案）、103 學測第 6 題（誘答）、98 學測第 6 題（誘答）、91 指考第 9 題 flexibly（誘答）、86 聯考第 9 題（答案）
+resource[ˈrisɔrs]n.資源三級第 45 題詞彙題考過 2 次：115 學測第 7 題（誘答）、101 指考第 1 題（誘答）
+generate[ˈʤɛnəˌreɪt]v.產生（電力）五級第 45 題詞彙題考過 1 次：100 指考第 7 題 generated（誘答）
+impact[ˈɪmpækt]n.影響四級第 45 題詞彙題考過 2 次：115 學測第 7 題（誘答）、85 推薦甄選第 11 題（答案）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+respectively （詞彙表：respective）[rɪˈspɛktɪvli]adv.分別地六級第 1 段
+legacy[ˈlɛgəsi]n.遺留下來的東西、遺產五級第 1 段
+km[kɪˈlɑmətɚ]n.公里（kilometer 的縮寫）表外第 2 段
+span[spæn]v.橫跨六級第 2 段
+longitude[ˈlɑnʤəˌtud]n.經度六級第 2 段
+sunrise[ˈsʌnˌraɪz]n.日出表外第 2 段
+sunset[ˈsʌnˌsɛt]n.日落表外第 2 段
+daylight[ˈdeɪˌlaɪt]n.白天、日光（daylight hours 白天的時數）表外第 2 段
+sunset-induced[ˈsʌnˌsɛtɪnˌdust]adj.日落造成的表外第 3 段
+deprivation[ˌdɛprəˈveɪʃən]n.缺乏、不足（sleep deprivation 睡眠不足）表外第 3 段
+sleep-inducing （詞彙表：induce）[ˈslipɪnˌdusɪŋ]adj.讓人想睡的、助眠的六級第 3 段
+colonization[ˌkɑlənɪˈzeɪʃən]n.殖民（統治）表外第 45 題
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+a hotly debated issue爭論不休的議題第 1 段
+be viewed as + N看作……第 1 段原文：is often viewed as a symbol of unity
+correspond to + N相當於……第 2 段原文：This corresponds to a two-hour difference
+result in + N造成……第 2 段原文：This results in great loss of daylight hours
+point out that + 子句指出……第 3 段原文：recent studies point out that
+sleep deprivation睡眠不足第 3 段原文：sunset-induced sleep deprivation
+be pronounced among + N在……之中特別明顯第 3 段原文：is more pronounced among the poor
+on average平均來說第 3 段
+be keen to + V很想……、一心要……第 4 段原文：the government is keen to retain the current system
+← 上一篇篇目一覽
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

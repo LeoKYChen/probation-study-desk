@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dz97-42/index.html
+Author: staresto-create ZZSH
+Title: 指考 97年 篇章結構 第42題詳解（掌握段落內語句的連貫性與一致性）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 指考 97年 ／ 第42題
+指考 97年 篇章結構 第42題
+選文：巴黎的咖啡館（The Cafés of Paris）
+掌握段落內語句的連貫性與一致性線索：專有名詞重現答對率 67%
+(A)When did the cafés in France start?法國的咖啡館是什麼時候開始的？
+(B)Linger a bit and you will see that the Parisian stereotypes are still alive and well.待久一點，你就會看到巴黎人的典型形象依然鮮活。
+(C)Nowadays in Paris cafés still play the role of picture windows for observing contemporary life.如今在巴黎，咖啡館仍扮演著觀察當代生活的窗口。
+(D)These were like all-male clubs, with many functioning as centers of political life and discussion.這些咖啡館像是清一色男性的俱樂部，許多還成為政治生活與討論的中心。
+(E)Le Procope attracted Paris’s political and literary elite, and thus played an important part among the upper class.Le Procope 吸引了巴黎的政治與文學菁英，因而在上流社會占有重要地位。
+答案：(E) Le Procope attracted Paris’s political and literary elite, and thus played an important part among the upper class.
+題目編號：Dz97_42
+解析
+先看空格前面。 前一句說 Le Procope 一六八六年由 Francesco Procopio dei Coltelli 開設，是他讓法國變成一個喝咖啡的社會。焦點在這一家店。
+再看空格後面。 後面說到十八世紀末，全巴黎為咖啡著迷，全城約有七百家咖啡館。焦點已經放大到整座城市。
+從一家店到七百家，中間需要一句話說明這一家店為什麼有那麼大的影響。E 承接 Le Procope 這個名字，說明它吸引了什麼樣的人。
+如果你選了 D（這些咖啡館像是清一色男性的俱樂部，許多還成為政治生活與討論的中心。）：D 也講政治、也講咖啡館，話題非常近。但 D 的 These（這些）是複數，要指回一群咖啡館，而前一句從頭到尾只有 Le Procope 一家。
+【下次先看這裡】選項開頭是 These、Those，先數前面提到的是一個還是很多個。只有一個，就不是它。
+線索與數據
+線索種類專有名詞重現
+線索在哪前一句 Le Procope
+答對率67%
+鑑別度62
+本篇題型5選5・刪去法可收尾
+數據出處：本頁的答對率與鑑別度來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響。
+展開本題所在的整篇選文與中文翻譯
+本篇共 5 格、5選5；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+開場：巴黎少不了咖啡館，它等於法國人的第二個客廳
+It is impossible to imagine Paris without its cafés. The city has some 12,000 cafés varying in size, grandeur, and significance. The cafés are like an extension of the French living room, a place to start and end the day, to gossip and debate.
+41 The oldest café in Paris is Le Procope. It was opened in 1686 by Francesco Procopio dei Coltelli, the man who turned France into a coffee-drinking society. 42Le Procope attracted Paris’s political and literary elite, and thus played an important part among the upper class. By the end of the 18th century, all of Paris was intoxicated with coffee and the city supported some 700 cafés. 43 By the 1840s the number of cafés had grown to 3,000. The men who gathered in these cafés and set the theme of the times included journalists, playwrights and writers. Around the turn of the 20th century, the sidewalk cafés became the meeting halls for artists and literary figures.
+44 The artists gathered at the café may not be as great as those of the past, but faces worth watching are just the same. 45 You’ll see the old men in navy berets; ultra-thin, bronzed women with hair dyed bright orange; and schoolchildren sharing an afternoon chocolate with their mothers. The café in Paris has always been a place for seeing and being seen.
+中譯
+很難想像巴黎沒有咖啡館會是什麼樣子。這座城市大約有一萬兩千家咖啡館，大小、氣派程度與重要性各不相同。咖啡館就像法國人客廳的延伸，是一天的起點與終點，也是閒聊與辯論的地方。
+41 巴黎最老的咖啡館是 Le Procope，一六八六年由 Francesco Procopio dei Coltelli 開設，正是這個人讓法國變成一個喝咖啡的社會。42 到十八世紀末，整個巴黎都為咖啡著迷，全城養得起大約七百家咖啡館。43 到了一八四○年代，咖啡館的數量已成長到三千家。聚在這些咖啡館裡、為那個時代定調的人，包括記者、劇作家和作家。大約在二十世紀初，露天咖啡座成了藝術家與文人的聚會場所。
+44 聚在咖啡館的藝術家也許不如過去那些人偉大，但值得一看的面孔還是一樣多。45 你會看見戴著深藍色貝雷帽的老人；瘦得不得了、皮膚曬成古銅色、頭髮染成亮橘色的女人；還有下午和媽媽分著喝一杯熱巧克力的學童。巴黎的咖啡館向來就是一個看人、也被人看的地方。
+← 第41題回到互動練習第43題 →
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z100-15/index.html
+Author: staresto-create ZZSH
+Title: 100 年指考克漏字第15題詳解（慣用語／片語）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 100 年指考 ／ 第15題
+100 年指考 克漏字 第15題
+慣用語／片語線索：句內答對率 63%
+答對率 63%：當年每 100 位考生，有 63 位答對。
+An adjustment refusal message requires your best communication skills __14__ it is bad news to the receiver. You have to refuse the claim and retain the customer 15 .
+(A)by and large
+(B)over and over
+(C)at the same time
+(D)for the same reason
+答案：(C) at the same time
+題目編號：Z100_15（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+at the same time（同時）表示「你必須拒絕客戶的請求，同時還要留住這位客戶」，符合「拒絕」與「留客」這兩個看似矛盾任務同時進行的語意。by and large（大體上）、over and over（一再地）、for the same reason（基於同樣的理由）都不符合這種「同時兼顧兩件事」的語意。
+深入解析
+你可能會這樣想
+四個選項都是三四個字的片語，你會挑一個中文讀起來最順的擺進去。
+怎麼判斷
+這是邏輯勾環：要判斷的是同一句裡兩件事之間的關係。整句是 You have to refuse the claim and retain the customer ______.（你必須拒絕這項索賠，並且______留住這位客戶）。拒絕與留住是兩件方向相反的事，卻要在同一封信裡一起做到，這種「一邊……一邊……、然而同時」的關係就是 at the same time。這個片語除了字面的「同時」，還有一層轉折的用法——先承認前面那件事，再提出一件與它拉扯的事，中文常譯成「但另一方面」。填進去讀成 refuse the claim and retain the customer at the same time（拒絕索賠，同時又要把客戶留住）。
+誘答選項
+over and over（一再地、反覆地）講的是次數，留住客戶不是一件反覆做的事；for the same reason（基於同樣的理由）要回指前面已經講過的理由，可是拒絕索賠又要留住客戶，並不是出於前文的哪一個理由，這一句要補的是兩件事得一起做到；by and large（大體而言）是對整體情況下評語，接在這裡讀不出與「拒絕」的拉扯。
+常考字詞與句型
+at the same time（同時；但另一方面）、over and over（一再地、反覆地）、for the same reason（基於同樣的理由）、retain a customer（留住客戶）、refuse a claim（拒絕索賠要求）、handle a claim（處理索賠）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：100學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Handling customer claims is a common task for most business firms. These claims include requests to exchange merchandise, requests for refunds, requests that work 11, and other requests for adjustments. Most of these claims are approved because they are legitimate.
+However, some requests for adjustment must be 12, and an adjustment refusal message must be sent. Adjustment refusals are negative messages for the customer. They are necessary when the customer is 13 or when the vendor has done all that can reasonably or legally be expected.
+An adjustment refusal message requires your best communication skills 14 it is bad news to the receiver. You have to refuse the claim and retain the customer 15. You may refuse the request for adjustment and even try to sell the customer more merchandise or service. All this is happening when the customer is probably angry, disappointed, or inconvenienced.
+中譯：處理顧客申訴是大多數企業共同面對的日常工作。這些申訴包括換貨要求、退款要求、要求修正已完成工作的要求，以及其他調整要求。這些申訴大多數會被批准，因為它們都合理。然而，有些調整要求必須被拒絕，這時就必須發出一封「拒絕調整信」。拒絕調整信對顧客而言是負面的訊息，通常用在顧客本身有過失，或廠商已經做到合理或法律上所能做的一切之時。撰寫拒絕調整信需要你最好的溝通技巧，因為這對收件者來說是壞消息。你必須拒絕這項申訴，同時還要留住這位顧客。你可能得拒絕這次調整要求，甚至試著向顧客推銷更多商品或服務——而這一切都發生在顧客可能正處於生氣、失望或不便的情緒之下。
+📋 內容大意
+Firms constantly handle customer claims, and most are granted, since they are legitimate.
+Some must be turned down, and a refusal message then has to be written.
+Such letters demand real skill: the writer carries bad news yet must keep an angry customer.
+← 第14題回到100 年指考第16題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

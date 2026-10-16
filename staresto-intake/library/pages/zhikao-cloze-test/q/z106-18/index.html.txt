@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z106-18/index.html
+Author: staresto-create ZZSH
+Title: 106 年指考克漏字第18題詳解（慣用語／片語）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 106 年指考 ／ 第18題
+106 年指考 克漏字 第18題
+慣用語／片語線索：句內答對率 31%
+答對率 31%：當年每 100 位考生，有 31 位答對。
+In the absence of enzymes, reactants may take hundreds of years to convert into a usable product, if they are able to do so 18 .
+(A)at all
+(B)at hand
+(C)at first
+(D)at ease
+答案：(A) at all
+題目編號：Z106_18（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+if they are able to do so at all 中的 at all 用於條件句尾加強語氣，意為「究竟是否真能如此」；at hand（在手邊）、at first（起初）、at ease（自在）語意都不合。
+深入解析
+你可能會這樣想
+at all 你大概只在否定句裡看過（not at all 一點也不），很少看到它單獨掛在條件句的句尾。這裡的 at all 是加強語氣，意思是「究竟、真的」。
+怎麼判斷
+先看空格落在哪裡。它在 if 子句的最後面——if they are able to do so ___，前面 do so 已經把動作講完了，空格補的是對這件事的態度，不是新的資訊。再看整句的語氣走向：In the absence of enzymes, reactants may take hundreds of years to convert into a usable product（沒有酵素的話，反應物可能要花上幾百年才能轉換成可用的產物）——已經是很極端的說法，句尾的 if 子句是再加一層，語氣只會更強，不會轉去講別的事。at all 正是做這件事的：它把「要花幾百年」再推進成「而且還不確定究竟辦不辦得到」。驗算法：把 at all 換成中文的「究竟」唸一遍——如果它們究竟真辦得到的話，語氣接得上，方向就對。這種 if…at all 的用法在英文裡自成一組，都是「就算真有，也很有限」的口吻：I rarely, if ever, go there.（我很少去那裡，甚至可以說從不去。）／There is little, if any, evidence.（就算有證據，也少得可憐。）
+誘答選項
+三個都是 at + 名詞的片語，形狀一樣，意思各自不同。at hand 是「在手邊、近在眼前」，講的是位置或時間上的接近，接在 do so 後面會變成「在手邊辦得到」，說不通。at first 是「起初」，表示時間上的第一階段，通常後面要接一個轉折（at first…, but later…），本句沒有這樣的對照。at ease 是「自在、不拘束」，形容人的狀態（feel at ease、put sb at ease），主詞是反應物，不是會感到自在的對象。
+常考字詞與句型
+if…at all（如果真的…的話）、not at all（一點也不）、if any／if ever（如果真有／真做過）、at hand（在手邊；即將到來）、at ease（自在）、in the absence of（缺乏）、convert into（轉換成）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：106學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+One factor that separates a living thing from an inanimate object is the organism's ability to carry out chemical reactions that are crucial for its survival. Imagine the infinite amount of reactions that a large organism such as human carries out every single day. 16 of these reactions are possible without enzymes.
+Enzymes consist of various types of proteins that work to drive the chemical reactions 17 for certain types of nutrients to take effect. Enzymes can either launch a reaction or speed it up. In the absence of enzymes, reactants may take hundreds of years to convert into a usable product, if they are able to do so 18 . This is why enzymes are crucial in the sustenance of life on earth.
+Enzymes, 19 , do not always function perfectly. In 1902 Sir Archibald Garrod was the first to attribute a 20 to an enzyme defect, which he later referred to as an "inborn error of metabolism." Today, newborns are routinely screened for certain enzyme defects such as PKU (phenylketonuria) and galactosemia, an error in the handling of the sugar galactose.
+中譯：使生物體有別於無生命物體的其中一項因素，在於該生物體能夠進行維持其生存所必需的化學反應。試想像人類這樣的大型生物體，每天要進行的反應數量是多麼龐大。在沒有酵素的情況下，這些反應沒有一個能夠發生。酵素由多種蛋白質組成，其作用是推動某些營養素發揮效用所需的化學反應。酵素能夠啟動反應，也能加快反應速度。若缺乏酵素，反應物即使終究能夠轉化為可用的產物，也可能需要耗費數百年的時間。這正是酵素之所以對維持地球生命至關重要的原因。然而，酵素並不是每次都能完美運作。1902 年，阿奇博爾德．加羅德爵士首度將某種疾病歸因於酵素缺陷，他後來將此稱為「先天性代謝異常」。如今，新生兒會例行接受特定酵素缺陷的篩檢，例如苯酮尿症（PKU）以及一種在處理半乳糖這種糖分時出現異常的半乳糖血症。
+📋 內容大意
+Living things survive by carrying out countless chemical reactions, and enzymes make every one of them possible.
+These proteins start reactions or hurry them along, work that would otherwise take centuries.
+Enzymes can fail; such defects have been recognized since 1902, and babies are now screened for them.
+← 第17題回到106 年指考第19題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

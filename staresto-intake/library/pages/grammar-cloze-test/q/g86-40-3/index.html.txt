@@ -1,0 +1,44 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g86-40-3/index.html
+Author: staresto-create ZZSH
+Title: 86 年學測克漏字第40題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 86 年學測 ／ 第40題
+86 年學測 克漏字 第40題
+慣用語／片語線索：跨句
+A number of major industries and more than twenty leading colleges 40 .
+(A)are also interested in the rejected proposal
+(B)have resolved the mystery of listening comprehension
+(C)are doing extensive research on the young engineer
+(D)have become very concerned about our bad listening habits
+答案：(D) have become very concerned about our bad listening habits
+題目編號：G86_40_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+主詞 A number of major industries and more than twenty leading colleges 是複數，四個選項的動詞（are、have）也都是複數形，要靠語意分：承接下文「他們設立了聆聽診所」，語意應該是「開始關注不良聆聽習慣」才會催生後面的診所，have become very concerned 符合這個因果承接；其他三個選項語意都跟後文「設立診所找出問題」接不起來。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是一整串，讀起來都像那麼一回事，而且這一次形態刷不掉——四個的動詞都是複數形。這一格只能靠下一句。
+怎麼判斷
+先確認主詞與動詞的一致：A number of major industries and more than twenty leading colleges ___。主詞是複數，四個選項的動詞（are、have）也都是複數形，所以形態上分不出高下。（順便把這一組經典的主詞單複數記起來：a number of + 複數名詞，動詞用複數，重點在「許多」；the number of + 複數名詞，動詞用單數，重點在「數量」這個單一概念。）既然形態刷不掉，就往後讀一句：They have set up "listening clinics" and courses to find out what is wrong—and what to do about it.（他們設立了「聆聽診所」與課程，要找出問題出在哪、又該怎麼辦。）會去設立診所與課程，代表他們已經開始正視這個問題了，所以空格填 have become very concerned about our bad listening habits（已經非常關切我們不良的聆聽習慣）。
+誘答選項
+are also interested in the rejected proposal（也對那個被否決的提案感興趣）：那個提案只是文章開頭的例子，產業與大學不會去關心它。have resolved the mystery of listening comprehension（已經解開了聽力理解之謎）：如果已經解開了，就不需要再設立診所去「找出問題出在哪」，前後矛盾。are doing extensive research on the young engineer（正在對那位年輕工程師做大規模研究）：下一句講的是診所與課程，不是研究某一個人。
+常考字詞與句型
+a number of（許多……）、the number of（……的數量）、be concerned about（關切、擔心）、set up（設立）、find out（查明）、leading colleges（頂尖大學）。其中 a number of 這一組考過 4 個年度，84 年第 35 題 →、91 年補考第 26 題 →、98 年第 28 題 →都出現過；the number of 考過 3 個年度，84 年第 35 題 →、98 年第 28 題 →都出現過。
+線索範圍說明：下一句 They have set up "listening clinics" and courses to find out what is wrong 說明他們已經在正視這個問題；四個選項的動詞都是複數，句內分不出來
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The people in the room were tense. Five young engineers were sitting with their 31 . They were trying to settle details of an important new plant site for a major client. Suddenly one of the young engineers gave what he thought was a good solution 32 the problem. What he had to say was 33 by an uncomfortable silence. The boss then laughingly pointed out that the same proposal had been made and 34 some minutes before. The incident seemed funny 35 the time, but several months later it did not.
+After the project had been successfully finished, most of the engineers who had worked on it were 36 . But the young man who had made a fool of himself at the meeting was not on the list. 37 The young engineer swore that he had never heard the proposal made and rejected. 38 He was a victim of a bad listening habit that he didn't know he had.
+Bad listening habits can hurt you a lot in your daily living. Much of your success, both in your work and social life, 39 how you listen. A number of major industries and more than twenty leading colleges 40 . They have set up "listening clinics" and courses to find out what is wrong—and what to do about it.
+中譯：房間裡的氣氛相當緊繃。五位年輕工程師正和老闆坐在一起，努力敲定一個重要新廠址的細節，這個案子攸關一位重要客戶。突然，其中一位年輕工程師提出了他自認為很棒的解決方案。他說完後，迎來的卻是一陣尷尬的沉默。老闆隨後笑著指出，同樣的提案在幾分鐘前就已經有人提過，而且被否決了。這件事當下看起來挺有趣的，但幾個月後就不這麼好笑了。專案順利完成後，大多數參與的工程師都獲得了升遷，但那位在會議上出糗的年輕工程師卻不在名單之列。他發誓自己從未聽過那個提案被提出、又被否決。他是對的。他其實是自己都沒察覺到的不良聆聽習慣的受害者。不良的聆聽習慣，在日常生活中會對你造成很大的傷害。你在工作與社交生活中的許多成就，其實與你聆聽的方式息息相關。許多大型企業和二十多所頂尖大學已經開始正視這個問題，紛紛成立「聆聽診所」和相關課程，找出問題所在——以及該如何改善。
+📋 內容大意
+Five young engineers sat tensely with their manager, settling details of a new plant site for an important client.
+One engineer offered what he thought was a good solution and met an awkward silence. The manager noted the same idea had come up and been rejected minutes earlier.
+Months later most of the team moved up, but he alone was left off the list. Poor listening cost him, and now industries and colleges run listening clinics.
+← 第39題回到86 年學測
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z107-19/index.html
+Author: staresto-create ZZSH
+Title: 107 年指考克漏字第19題詳解（連接詞／轉折詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 107 年指考 ／ 第19題
+107 年指考 克漏字 第19題
+連接詞／轉折詞線索：句內答對率 59%
+答對率 59%：當年每 100 位考生，有 59 位答對。
+19 the source of the injury, these spots typically do not require any treatment and should go away as your nail grows out.
+(A)Supposing
+(B)Including
+(C)Whatever
+(D)Whether
+答案：(C) Whatever
+題目編號：Z107_19（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【連接詞】Whatever the source of the injury 表示「無論受傷原因是什麼」，為讓步子句，其後省略 be 動詞 is。Supposing（假設）、Including（包括）語意不合；Whether 通常需搭配 or not 或子句動詞，不符此處省略句構。
+深入解析
+你可能會這樣想
+Supposing、Including、Whatever、Whether 四個排在一起，其中兩個是 -ing 形，你很容易先認定這是分詞的題目，開始找意義主詞、分主動被動。選項的排列方式本身就是陷阱，這一題根本不走分詞那條路。
+怎麼判斷
+先看空格後面接的是什麼。空格後是 the source of the injury 這個名詞片語，接著一個逗號，再接完整的主要子句 these spots typically do not require any treatment…。也就是說，空格帶的這一串裡沒有動詞，能放進這個位置的只有可以省略 be 動詞的讓步結構：Whatever (is) the source of the injury（無論受傷的原因是什麼）。這裡省掉的只有 be 動詞，與 While (he was) walking home 省掉 he was 的道理相近。驗算法很簡單：把 Whatever 換成 No matter what 讀一次，語意完全成立。另外提醒一個落差：whatever 你的印象大概只有它單獨當代名詞用的「隨便、無所謂」（Whatever you say.），其實它也可以接一個名詞片語、省掉中間的 be 動詞，意思是「無論……是什麼」（Whatever the reason, ...）。鑑別度只有 34，吃虧的反而是文法練得熟的人：看到兩個 -ing 排在一起就進了分詞的程序，找不到動詞就把 Whatever 排掉，繞一大圈回到原點。
+誘答選項
+Supposing（假如）等於 if，後面要接完整的子句（Supposing it rains, what will we do?），本題沒有動詞可接。Including（包括）確實已經整組轉成介系詞、後面接名詞沒錯，但語意會變成「包括受傷的原因在內」，與主要子句「不需要治療」接不起來。Whether 要嘛接 or not、要嘛接 A or B、要嘛帶一個子句，單獨接一個名詞片語不成立。
+常考字詞與句型
+whatever + 名詞片語（無論…是什麼）、no matter what（無論什麼，與 whatever 可互換）、go away（消失、痊癒）、grow out（長出來）、require treatment（需要治療）、supposing（假如，等於 if）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：107學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Many people at some point in life have white spots on their fingernails. One of the most common causes for these little white spots is a condition called leukonychia. Although the name sounds pretty serious, the condition typically 16 . And while many people think the white spots are caused by a calcium or zinc deficiency, that's generally not the case.
+In reality, these spots most often develop 17 mild to moderate trauma to your nail. If you can't think of anything that would have injured your nail, consider the fact that nails grow very slowly, so the injury 18 weeks before the spots ever appeared. The spots could also be a sign of a mild infection or allergy, or a side effect of certain medications.
+19 the source of the injury, these spots typically do not require any treatment and should go away as your nail grows out. And they should not return unless you suffer another injury to a nail. However, this generally 20 when only a single or a few nails are affected. If all of your nails are showing white spots, the leukonychia could be related to another more serious condition such as anemia, cardiac disease, diabetes, or kidney disease.
+中譯：許多人一生中都曾在指甲上出現白色斑點，其中最常見的原因之一是一種稱為「白甲症」（leukonychia）的病症。雖然這個名稱聽起來相當嚴重，但這種狀況通常並不嚴重。此外，許多人認為白斑是缺鈣或缺鋅所致，但事實通常不是這樣。
+實際上，這些斑點多半是指甲受到輕度到中度的創傷所造成。如果你想不起指甲曾受過什麼傷，別忘了指甲生長速度非常緩慢，因此受傷後可能要經過數週，斑點才會顯現出來。這些斑點也可能是輕微感染、過敏，或某些藥物副作用的徵兆。
+不論受傷的原因是什麼，這些斑點通常不需要治療，會隨著指甲生長而自然消失，除非指甲再次受傷，否則不會復發。不過，這個現象通常只適用於一片或少數幾片指甲受影響的情況。如果所有指甲都出現白斑，白甲症則可能與貧血、心臟病、糖尿病或腎臟病等更嚴重的病症有關。
+📋 內容大意
+Though the name sounds alarming, white spots on fingernails usually mean leukonychia, a harmless condition.
+They rarely come from poor diet; most follow a minor knock weeks earlier, or an infection, allergy or drug.
+No treatment is needed as the nail grows out, but spots on every nail may signal serious illness.
+← 第18題回到107 年指考第20題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

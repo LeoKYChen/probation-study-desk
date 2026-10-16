@@ -1,0 +1,50 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dz93-41/index.html
+Author: staresto-create ZZSH
+Title: 指考 93年 篇章結構 第41題詳解（掌握篇章的主題論述）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 指考 93年 ／ 第41題
+指考 93年 篇章結構 第41題
+選文：中國傳統水墨畫的演變（Chinese Brush Painting）
+掌握篇章的主題論述線索：人稱代名詞所有格答對率 51%
+(A)Another genre commonly found in Chinese brush painting was flower-and-bird painting.水墨畫另一個常見的類別是花鳥畫。
+(B)However, the subject matters later expanded beyond religious themes.然而題材後來擴展到宗教之外。
+(C)As a result, they have obtained more natural and richly varied colors.因此他們得到了更自然、更豐富多變的色彩。
+(D)Its growth has inevitably reflected the changes of time.它的發展必然反映了時代的變遷。
+(E)It then gradually developed into two separate styles.它接著逐漸發展出兩種不同的風格。
+答案：(D) Its growth has inevitably reflected the changes of time.
+題目編號：Dz93_41
+解析
+先看空格前面那一句。 前面說水墨畫從西元前四千年開始，一路發展了六千多年，只講一件事：很久，而且一直在變。
+再往下看一整段。 第二段講一世紀的宗教壁畫，接著歷史人物、山水、九世紀的花鳥；第三段講二十世紀。整篇是照年代往下走的。
+這一格要放的，就是一句同時涵蓋「一直在變」和「照年代往下走」的話。D 的 Its 指前一句的水墨畫，the changes of time（時代的變遷）涵蓋後面整篇的內容。它是全篇的主旨句，不是某一段的。
+如果你選了 E（它接著逐漸發展出兩種不同的風格。）：E 也是代名詞開頭，形式很像。但這一格後面接的第二段，開頭只講宗教壁畫一種，沒有 E 說的「兩種風格」。
+如果你選了 B（然而題材後來擴展到宗教之外。）：However 表示語意轉折，前面必須先有可以轉的內容。前一句從頭到尾沒提過宗教。
+【下次先看這裡】空格在第一段最後、後面還有一大篇沒讀，先問「這篇接下來是照什麼順序走的」。
+線索與數據
+線索種類人稱代名詞所有格
+線索在哪前一句 Its
+答對率51%
+鑑別度41
+本篇題型5選5・刪去法可收尾
+數據出處：本頁的答對率與鑑別度來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響。
+展開本題所在的整篇選文與中文翻譯
+本篇共 5 格、5選5；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+開場：六千多年的發展，隨著時代而變
+Starting around 4,000 B.C., traditional Chinese brush painting has developed continuously over a period of more than six thousand years. 41Its growth has inevitably reflected the changes of time.
+During the 1st century A.D., the art of painting religious murals gradually gained in prominence, with the introduction of Buddhism to China and the consequent building of temples. 42 For example, paintings of historical characters and stories of everyday life became extremely popular. Besides historical figures, landscape painting was also common in Chinese brush painting. By the 4th century, this particular type of painting had already established itself as an independent form of expression. 43 The blue-and-green landscape used bright blue, green and red pigments derived from minerals to create a richly decorative style; the ink-and-wash landscape relied on vivid brushwork and various intensity of ink to express the artist’s conception of nature as well as his own emotions. 44 A great many artists in the 9th century painted in this genre and their subject matters included a rich variety of flowers, fruits, birds, insects, and fish.
+Since the turn of the 20th century, painters have often mixed several colors on one brush or mixed their colors with black inks. 45 Such techniques have been widely adopted and further developed in the contemporary period.
+中譯
+中國傳統水墨畫大約起自西元前四千年，六千多年來持續發展。41
+西元一世紀，隨著佛教傳入中國、寺廟隨之興建，宗教壁畫的藝術逐漸受到重視。42 舉例來說，描繪歷史人物與日常生活故事的畫作變得非常盛行。除了歷史人物之外，山水畫在水墨畫中也很常見。到了四世紀，這一類畫作已經確立為一種獨立的表現形式。43 青綠山水使用取自礦物的鮮明藍、綠與紅色顏料，形成裝飾性濃厚的風格；水墨山水則靠著生動的筆法和濃淡不一的墨色，表現畫家對自然的體會以及自身的情感。44 九世紀有非常多畫家投入這個類別，題材涵蓋各式各樣的花卉、果實、飛鳥、昆蟲與魚。
+二十世紀初以來，畫家常在同一枝筆上調和數種顏色，或把顏色與黑墨混合。45 這些技法在當代已被廣泛採用，並進一步發展。
+回到互動練習第42題 →
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

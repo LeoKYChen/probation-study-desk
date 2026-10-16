@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g113-13-1/index.html
+Author: staresto-create ZZSH
+Title: 113 年學測克漏字第13題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 113 年學測 ／ 第13題
+113 年學測 克漏字 第13題
+慣用語／片語線索：句內答對率 52%
+答對率 52%：當年每 100 位考生，有 52 位答對。
+When evaluating a business, mystery shoppers have to follow certain standard procedures to avoid 13 .
+(A)keen competitions
+(B)financial hardship
+(C)racial conflicts
+(D)personal bias
+答案：(D) personal bias
+題目編號：G113_13_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「必須遵循一定的標準程序以避免『個人偏見』」，personal bias（個人偏見）符合，呼應後文提供 checklist 確保評估一致性的目的；keen competitions（激烈競爭）、financial hardship（財務困難）、racial conflicts（種族衝突）都不合。
+深入解析
+你可能會這樣想
+四個選項都是名詞片語，你可能哪個認識就選哪個。這一題真正要問的是：神祕客為什麼需要「標準程序」？標準程序存在的目的，就是讓不同的人評出來的結果一致，不摻進個人好惡。
+怎麼判斷
+線索在下一句：They are often given a checklist that provides directions on what to observe or look out for to ensure consistency（給他們一張檢核表，指示要觀察什麼，以確保一致性）。ensure consistency（確保一致性）就是 avoid personal bias（避免個人偏見）的正面說法，同一件事的一體兩面。選項難分高下時，找文章有沒有把同一個概念換句話講。
+誘答選項
+keen competitions（激烈競爭）、financial hardship（財務困難）、racial conflicts（種族衝突）都是社會或經濟層面的問題，跟「評分是否客觀一致」無關。這三個放進句子文法都通，但整段完全沒有相關鋪陳。
+常考字詞與句型
+personal bias（個人偏見）、be biased against sb（對某人有偏見）、avoid V-ing（避免做……）、follow procedures（遵循程序）、ensure consistency（確保一致性）、look out for（留意）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Mystery shoppers are paid consumers who are hired to shop in stores and collect data. They are sent to a wide variety of service-based businesses, including stores, restaurants, and banks—potentially anywhere customers are served. Sometimes referred to as secret shoppers, mystery shoppers 11 regular customers to purchase items, eat in restaurants, make inquiries, or return items.
+They grade and report on the quality of products, customer service, and environment of the stores 12 they are assigned. When evaluating a business, mystery shoppers have to follow certain standard procedures to avoid 13 . They are often given a checklist that provides directions on what to observe or look out for to ensure consistency.
+Sometimes these shoppers collect data about their "normal" observations, such as cleanliness of the store or timeliness of the service. They may also pretend to be 14 customers, arguing with a salesperson without a good reason.
+With the data they collect, mystery shoppers can identify areas for 15 and thereby help enhance the quality of products and services. In this way, these secret shoppers may help a business gain a competitive edge.
+中譯：神祕客是受雇於店家、以消費者身分進行消費並蒐集資料的付費人員。他們被派往各式各樣提供服務的商家，包括零售店、餐廳和銀行——幾乎任何有顧客服務的地方都可能出現他們的身影。神祕客有時也被稱為秘密購物者，他們會假扮成一般顧客購買商品、在餐廳用餐、詢問問題，或辦理退貨。他們會針對所被指派商家的產品品質、顧客服務和環境進行評分並提出報告。在評鑑一間商家時，神祕客必須遵循特定的標準流程，以避免出現主觀偏差。他們通常會拿到一份檢查清單，上面列出該觀察或留意的事項，以確保評鑑結果的一致性。有時，這些神祕客會蒐集關於「日常」觀察的資料，例如商店的整潔程度或服務的即時性；他們有時也會假扮成難搞的顧客，故意無理取鬧地與店員爭執。透過蒐集到的這些資料，神祕客能找出需要改進的地方，進而協助提升產品與服務的品質。透過這樣的方式，這些秘密顧客能幫助商家在市場競爭中取得優勢。
+📋 內容大意
+Mystery shoppers, also called secret shoppers, are paid consumers. Businesses hire them to visit shops, restaurants and banks and gather data.
+They act like ordinary customers, buying items, eating meals, asking questions or returning goods. Then they grade the products, the service and the store itself.
+A checklist keeps their reports consistent and fair. They note routine things like cleanliness and service speed, and their data shows a business what to fix.
+← 第12題回到113 年學測第14題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

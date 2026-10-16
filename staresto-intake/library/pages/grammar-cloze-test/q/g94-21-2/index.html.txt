@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g94-21-2/index.html
+Author: staresto-create ZZSH
+Title: 94 年學測克漏字第21題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 94 年學測 ／ 第21題
+94 年學測 克漏字 第21題
+字彙選義線索：句內答對率 64%
+答對率 64%：當年每 100 位考生，有 64 位答對。
+These photos will show 21 smoking damages your health.
+(A)when
+(B)how
+(C)where
+(D)what
+答案：(B) how
+題目編號：G94_21_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「這些照片將展示吸菸如何危害你的健康」，how（如何）符合；when（何時）、where（哪裡）、what（不能這樣接完整子句表達「如何」）都不合。
+深入解析
+你可能會這樣想
+what 是最常用的疑問詞，看到 show 後面要接東西，很容易直覺就填 what。這一題要靠「數子句成分」才定得了案（同樣的判斷方式：97 年第 27 題 →、98 年第 23 題 →、105 年第 21 題 →、95 年第 24 題 →）。
+怎麼判斷
+四個選項都是 wh- 詞，可見這一格考的是 show 後面那個子句要用哪一個字引導。這種擺在動詞後面、由 wh- 詞帶頭的子句，就是間接問句，掛鉤是 Tell me how to get there.（告訴我怎麼去那裡。）與 Can you tell me how much it costs?（可以告訴我多少錢嗎？）。間接問句有兩個看得見的特徵，本句全中：語序回到直述句的「主詞 + 動詞」，而且不借助 do／does／did（英國文化協會 LearnEnglish 的 question words 說明）。還原成直接問句就一目了然：How does smoking damage your health?（吸菸如何危害你的健康？）改成間接問句時 does 消失、damage 補回第三人稱單數的 -s，就成了 how smoking damages your health。認出這一點，成分也就順手數清楚了：smoking（主詞）、damages（動詞）、your health（受詞），一個都不缺。what 自己要在子句裡當主詞或受詞，成分既然已經滿了就沒有它的位置，先刷掉。剩下 when、where、how 三個都是副詞性的，不占句子成分，這時才輪到語意：下一句 The shocking pictures include images of smoke-damaged lungs and teeth（受損的肺與牙齒的影像）講的是「傷害長什麼樣子、怎麼造成的」，不是時間也不是地點，所以填 how。
+誘答選項
+what：成分已滿，塞不進去。when（何時）、where（何處）：文法上都放得進去，但整段沒有任何時間或地點的線索在支撐它們。
+同卷第 19 題也是四個 wh- 詞，差在哪
+那一格是關係子句，這一格是間接問句，分辨方法只有一句話：看 wh- 詞前面接的是名詞還是動詞。前面是名詞（His father, who ...），wh- 詞回頭補充說明那個名詞，是關係子句；前面是動詞（show ...），wh- 詞帶著整個子句去當那個動詞的受詞，是間接問句。
+常考字詞與句型
+show／tell sb how to V（告訴某人怎麼做）、damage one's health（損害健康）、be bad for one's health（對健康有害）、in large print（以大字體印刷）、die young（早逝）、smoke-damaged（因吸菸而受損的）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+European politicians are trying to get the UK Government to make cigarette companies print photos on the packets. These photos will show 21 smoking damages your health. The shocking pictures include images of smoke-damaged lungs and teeth, with reminders in large print that smokers die younger.
+The picture 22 have been used in Canada for the last four years. It has been very successful and has led to a 44% 23 in smokers wanting to kick the habit. At the moment EU tobacco manufacturers only have to put written health warnings on cigarette packets 24 the dangers of smoking.
+The aim of the campaign is to remind people of the damage the deadly weed does to their body. It is believed that this would be to the best interest of all people, 25 teens who might be tempted to start smoking. These dreadful photos may change the impression among teenagers that smoking is cool and sexy.
+中譯：歐洲多國政治人物正試圖推動英國政府要求菸商在菸盒上印製警示照片，這些照片將展示吸菸如何危害健康。這些駭人的圖片包括因吸菸受損的肺部與牙齒影像，並以大字體標示提醒：吸菸者往往較早死亡。這種警示照片在加拿大已經使用了四年，成效相當顯著，讓想戒菸的吸菸者比例增加了 44%。目前歐盟只要求菸草製造商在菸盒上以文字警語提醒吸菸的危害。這項活動的目的，是要提醒人們吸菸這種致命惡習對身體造成的傷害，人們相信這將符合所有人的最大利益，尤其是那些可能受誘惑而開始吸菸的青少年。這些駭人的照片，或許能改變青少年心中「吸菸很酷、很性感」的既有印象。
+📋 內容大意
+European politicians want the UK Government to require cigarette companies to print photographs on packets showing the damage smoking does to health.
+The pictures show damaged lungs and teeth, with large print reminding smokers they die younger. Canada has used them for four years, and 44% more smokers want to quit.
+EU makers now print only written notices. The campaign hopes the photos will remind everyone, above all teenagers, that smoking is not cool.
+← 第20題回到94 年學測第22題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

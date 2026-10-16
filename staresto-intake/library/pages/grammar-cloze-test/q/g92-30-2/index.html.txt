@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g92-30-2/index.html
+Author: staresto-create ZZSH
+Title: 92 年學測克漏字第30題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 92 年學測 ／ 第30題
+92 年學測 克漏字 第30題
+字彙選義線索：跨句答對率 33%
+答對率 33%：當年每 100 位考生，有 33 位答對。
+As a result, about 95 % of Australia's mammals and 94 % of its frogs are found 30 else in the world.
+(A)nowhere
+(B)somewhere
+(C)everywhere
+(D)anywhere
+答案：(A) nowhere
+題目編號：G92_30_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+nowhere else 意為「世界上別無他處」，承接前一句「牠們各自獨立演化」的結果——澳洲九成以上的哺乳類與蛙類在其他地方都找不到；somewhere／everywhere／anywhere else 都無法表達這個否定語意。
+深入解析
+答對率只有三成三，鑑別度卻有 53。
+你可能會這樣想
+nowhere 是一個「自帶否定」的副詞，句子裡看不到 not，你因此讀不出否定的意思，往往改挑看起來比較安全的 anywhere 或 somewhere。要記住：nowhere ＝ not anywhere，否定已經藏在字裡，句中不需要也不能再加 not。
+怎麼判斷
+作答線索在前一句 They evolved separately.（牠們各自獨立演化）。本句以 As a result 開頭，承接的就是這個原因：澳洲與其他陸塊分開之後，動物走上不同的演化路線，結果就是這些物種只有澳洲有、世界其他地方都找不到。看到 As a result、Therefore、Thus 這類表結果的連貫標記，先回頭把原因找出來，再判斷結果的語意方向；這一步做完，四個 -where 只剩一個說得通。這一格光看本句是選不出來的，線索不在空格附近，而在上一句——遇到句首帶連貫標記的空格，養成先往回讀一句的習慣。
+誘答選項
+somewhere else 是「別的某個地方」，會變成「在世界上別的某處被發現」，與獨有性矛盾；everywhere else 是「其他各處都有」，語意完全相反；anywhere else 通常用於否定句或疑問句（not found anywhere else 才成立），本句沒有 not，單獨用 anywhere 語意不完整。
+常考字詞與句型
+nowhere else（別無他處）、nowhere to be found（遍尋不著）、get nowhere（毫無進展）、out of nowhere（突然冒出）。
+線索範圍說明：As a result 承接前一句 They evolved separately，才知道是「別處都沒有」
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Up to about 250 million years ago the world had just one huge super-continent called Pangaea. Animals were able to move and intermix with 26. About 200 million years ago this super-continent broke up into two continents: Laurasia and Gondwana. About 60 million years ago Gondwana broke up into 27 later became South America, Africa, Antarctica, India and Australia.
+Since then Australia 28 from the rest of the world by vast oceans. The animals there no longer had 29 with animals from other parts of the world. They evolved separately. As a result, about 95 % of Australia's mammals and 94 % of its frogs are found 30 else in the world. Australia has lots of very unusual animals.
+中譯：大約 2 億 5 千萬年前，地球上曾經只有一塊巨大的超級大陸，稱為「盤古大陸」。當時的動物可以自由移動，彼此交流混居。大約 2 億年前，這塊超級大陸分裂成兩塊：勞亞大陸和岡瓦納大陸。大約 6 千萬年前，岡瓦納大陸又進一步分裂，後來形成了南美洲、非洲、南極洲、印度和澳洲。自此之後，澳洲便被廣闊的海洋與世界其他地區隔絕開來，當地的動物再也無法與世界其他地方的動物有所接觸，於是牠們各自獨立演化。結果，澳洲有大約 95%的哺乳類動物和 94%的蛙類，是世界上其他地方都找不到的獨有物種。澳洲擁有許多非常獨特罕見的動物。
+📋 內容大意
+Until about 250 million years ago, all the land was one super-continent, Pangaea. Animals could move and mix freely.
+It later split into Laurasia and Gondwana. Gondwana then broke into Africa, South America, Antarctica, India and Australia.
+Wide oceans then kept Australia apart. Its animals developed alone, so most of its mammals and frogs live only there.
+← 第29題回到92 年學測
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

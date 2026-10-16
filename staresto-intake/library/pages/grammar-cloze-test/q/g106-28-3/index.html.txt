@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g106-28-3/index.html
+Author: staresto-create ZZSH
+Title: 106 年學測克漏字第28題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 106 年學測 ／ 第28題
+106 年學測 克漏字 第28題
+慣用語／片語線索：句內答對率 36%
+答對率 36%：當年每 100 位考生，有 36 位答對。
+Using empirical data from laboratory experiments 28 observations of a mid-sized Japanese bank in real life, researchers find that weather conditions indeed influence a worker's focus.
+(A)out of
+(B)as well as
+(C)in case of
+(D)due to
+答案：(B) as well as
+題目編號：G106_28_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+as well as 用來連接兩個並列的成分，意為「以及」：研究者同時使用實驗室的實證資料與對一家日本中型銀行的實地觀察；out of（出自）、in case of（萬一）、due to（由於）都是表原因或來源的片語，無法並列兩個名詞組。
+深入解析
+你可能會這樣想
+這句開頭是 Using empirical data...，你直覺這裡在交代研究資料從哪裡來，於是往 out of（出自）或 due to（由於）伸手。方向沒錯，這句確實在交代資料來源，錯在這一格的位置不是「來源」的位置，是「連接」的位置。
+怎麼判斷
+先數這一格前後各是什麼。前面 empirical data from laboratory experiments 是一個名詞組（實驗室實驗得到的實證資料），後面 observations of a mid-sized Japanese bank in real life 又是一個名詞組（對一家日本中型銀行的實地觀察）。兩個對等的名詞組並排，中間要的是等同於 and 的東西，四個選項裡只有 as well as 做得到，其餘三個都是多字介系詞，擺進去會把後面那一組降級成前面那一組的來源、原因或條件，句子就散了。驗算法很快：把這一格換成 and 讀一遍，句子照樣通順，就知道這一格要的是連接。另有一個常考的細節要一併記住——as well as 連接兩個主詞時，動詞跟前面那個走：The math teacher, as well as her students, was surprised by the result.（那位數學老師和她的學生都對結果感到意外。）不是 were。一句記完：The school announced that the basketball courts, as well as the library, would stay closed during the typhoon.（學校宣布颱風期間籃球場和圖書館都不開放。）〔情境取材自 114 學測作文題：颱風停課〕
+誘答選項
+out of（出自、用完）帶出來源或材料；in case of（萬一發生…）帶出假設情況；due to（由於）帶出原因。三者都是多字介系詞（幾個字合起來當一個介系詞用），後面接的成分是前面那件事的來源、原因或條件，不能拿來並列兩個對等名詞組。同義的方向記一組：as well as ＝ along with ＝ in addition to，三個都是「以及」。
+常考字詞與句型
+A as well as B（A 以及 B，動詞隨 A）、along with（連同）、in addition to（除…之外還）、empirical data（實證資料）、laboratory experiment（實驗室實驗）、in real life（在實際生活中）、due to（由於）、in case of（萬一）。其中 in addition to 這一組考過 5 個年度，84 年第 33 題 →、88 年第 23 題 →、91 年補考第 24 題 →、101 年第 19 題 →都出現過；due to 考過 4 個年度，89 年第 30 題 →、108 年第 25 題 →、109 年第 29 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Research has proven that weather plays a part in our moods: Warmer temperatures and exposure to sunshine increase positive thinking, whereas cold, rainy days bring anxiety and fatigue. 26 , many people believe that bad weather can reduce productivity and efficiency.
+There is, however, a significant 27 between such beliefs and the actual effect of weather on people's performance at work. Using empirical data from laboratory experiments 28 observations of a mid-sized Japanese bank in real life, researchers find that weather conditions indeed influence a worker's focus. When the weather is bad, individuals tend to focus more on their work rather than thinking about activities they could 29 outside of work. But photos showing outdoor activities, such as sailing on a sunny day or walking in the woods, can greatly distract workers and thus 30 their productivity.
+The findings conclude that workers are actually most productive when the weather is lousy—and only if nothing reminds them of good weather.
+中譯：研究已經證實，天氣會影響我們的情緒：溫暖的氣溫和日照能提升正向思考，而寒冷、下雨的日子則會帶來焦慮與疲憊。因此，許多人認為壞天氣會降低工作效率與生產力。然而，這樣的想法與天氣對工作表現的實際影響之間，其實存在著明顯的落差。研究人員結合實驗室的實證數據以及對一家日本中型銀行的實地觀察，發現天氣狀況確實會影響員工的專注力。天氣不好時，人們往往更專注於工作，而不會分心想著下班後能做什麼活動。但顯示戶外活動的照片，例如晴天出海航行或在森林裡散步的畫面，卻會嚴重分散員工注意力，進而降低生產力。這項研究的結論是：員工在天氣糟糕時反而最有生產力——但前提是沒有任何事物提醒他們好天氣的存在。
+📋 內容大意
+Weather affects human mood, leading many to assume that bad weather hurts workplace productivity.
+Research reveals that bad weather actually improves focus and productivity by removing outdoor distractions.
+Workers achieve peak productivity during poor weather, provided they are not reminded of pleasant outdoor alternatives.
+← 第27題回到106 年學測第29題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

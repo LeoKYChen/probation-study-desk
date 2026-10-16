@@ -1,0 +1,117 @@
+Source: https://github.com/staresto-create/JCEE-vocab-questions/blob/7342ffeafc4870943b9531ec57e0c5b0c39acbe8/cohesion-202610-u1.html
+Author: staresto-create ZZSH
+Title: 倒金字塔：科學新聞｜AI-Designed Vaccine Shows Promise in First Human Trial
+Noncommercial educational text only
+
+倒金字塔：科學新聞
+九月號第一單元練過倒金字塔：最重要的放最前面，從最後一段往上砍，新聞照樣成立。這一篇也是倒金字塔，只是換成科學新聞。科學新聞的最後一層放的是「還不確定」的話，這一層砍得掉，可是一砍，整則新聞就變成誇大。這一頁讓你自己砍砍看。
+預覽模式：所有步驟、圖表、課文標記都已展開，進度不會存檔。學生拿到的一般連結不受影響。
+上次做到一半，已經幫你接回來了。重新開始
+ALL+ 互動英語 10 月號 Unit 1（pp. 6–7） AI-Designed Vaccine Shows Promise in First Human Trial 全文 31 行 10/1
+第一步
+導言先把大事講完上層：組織方式
+新聞的第一段叫導言，要回答讀者最想知道的幾件事：發生了什麼、誰做的、在哪裡、為什麼重要。下面是第 1 到 9 行，點三個有底色的地方。
+Researchers recently completed the first human trial of a new vaccine designed with the help of artificial intelligence. Developed at the University of Cambridge, the vaccine is intended to protect against many different coronaviruses instead of just one. Scientists hope it could help people prepare for future outbreaks before they begin to spread widely.
+已標出 0 / 3
+三個都標出來了。那麼——第 1 到 9 行這一段，在整則新聞裡負責什麼工作？
+先交代試驗的細節，讓讀者判斷可不可信
+把最重要的事一次講完，後面再慢慢補充
+先說研究的限制，再一步一步說出成果
+用一個病人的故事開頭，引起讀者興趣
+把最重要的事一次講完。剛才標的三處剛好是新聞的基本問題：發生了什麼（第一次人體試驗完成了）、誰在哪裡做的（劍橋大學）、為什麼算新聞（一支疫苗對付很多種病毒，不是只對付一種）。讀者只讀這一段，就已經知道這則新聞在講什麼。
+注意導言最後一句。第 7 行用的是 Scientists hope it could help：hope 是希望，could 是「可能」。科學新聞的導言報好消息，但連導言都不把話說滿。這一點第四步會再回來。
+另外三個為什麼排除：
+「先交代試驗的細節」——39 位志願者、安全、沒用針頭，這些細節在第 16 到 21 行，屬於第二層。這個最容易選，因為導言確實提到 human trial；可是導言只說「完成了試驗」，試驗怎麼做、結果如何，都留到後面。
+「先說研究的限制」——方向反了。限制在第 22 到 27 行，是全篇的最後一層，不在開頭。
+「用一個病人的故事開頭」——這是新聞的另一種寫法，叫華爾街日報式。這篇從頭到尾沒有出現任何一個人的故事，第一個字就是 Researchers。
+整篇是什麼形狀？
+第二步
+又是倒金字塔上層：怎麼認出來
+先回答：這則新聞的組織方式，最接近下列哪一種？
+華爾街日報式：先說一個人的故事，結尾再回到這個人
+序列：照時間先後，一步一步交代研究進行的經過
+比較對照：把新疫苗跟一般疫苗一項一項比較優劣
+倒金字塔：最重要的事放最前面，越往後的越次要
+倒金字塔。第一段講完最重要的事，第二段補上做法和試驗結果，第三段再補上保留和將來的可能。三段的份量一段比一段輕，這就是倒金字塔。
+另外三個為什麼排除，每一個都是別種結構：
+「比較對照」——這個最容易選，因為第 10 到 11 行確實拿 Most vaccines target a specific virus 對上 This new vaccine takes a different approach。可是這一組對比只有兩句，用來說明新疫苗新在哪裡；作者沒有一項一項比，也沒有說哪一種比較好。文章裡出現一次對比，不等於整篇是比較對照。
+「序列」——序列要有一連串的時間點往前推。這篇只有第 1 行的 recently 一個時間，其他全是現在的狀態和將來的可能。
+「華爾街日報式」——這種寫法用一個人的故事開頭，結尾再回到同一個人身上。這篇沒有任何一個人的故事。
+下面就是這篇的倒金字塔。跟九月號第一單元比一比：那一篇的最後一層是各界的反應，這一篇的最後一層是研究人員自己的保留。點任一層，第四步的課文對應行會亮起來（課文還沒打開的話，先把行號記住就好）。
+那我來砍砍看
+第三步
+砍尾巴，再寫一句摘要上層：怎麼驗證
+驗證倒金字塔的方法跟九月號一樣：從最後一段往上砍，看剩下的內容還讀不讀得懂。按「砍掉」和「放回」，什麼順序都可以。
+三段都在，這是完整的報導。
+從尾巴砍，導言一直都在，所以這篇確實是倒金字塔。從頭砍就不行，導言一不見，讀者就不知道發生了什麼事。
+可是砍第三段的時候，要多想一步。九月號那篇的最後一段是各界的反應，砍掉只是少了一些細節。這篇的最後一段放的是 caution、still in an early stage、will be required，全是研究人員自己的保留。這一段砍掉以後，新聞還是成立，只是讀者會以為疫苗已經成功了。
+所以科學新聞的摘要，不能只抓導言。下面試一題。
+哪一句最適合當這篇新聞的一句話摘要？
+An AI-built vaccine for many coronaviruses seemed safe in a first human test but needs bigger studies.
+A new vaccine designed with AI has now been shown to protect people against many different coronaviruses.
+Researchers gave a new vaccine to volunteers without a needle, using a high-pressure jet of liquid instead.
+Most vaccines target one virus, so scientists hope to design vaccines for other groups of viruses.
+第一句。它把三層各收一句：做了什麼（first human test）、結果如何（seemed safe）、還差什麼（needs bigger studies）。而且它沒有照抄課文：AI-designed 寫成 AI-built，human trial 寫成 human test，larger trials 寫成 bigger studies。
+另外三個為什麼排除：
+「has now been shown to protect people」——這個最容易選，因為它就是導言的內容。但它把第三段的保留整個砍掉了：課文第 25 到 27 行說，有效性要等更大的試驗才能確認，這一句卻說已經證明。砍掉但書的摘要，就是誇大。
+「without a needle, using a high-pressure jet of liquid」——第 20 到 21 行確實這樣寫，但那是第二層裡的一個細節。細節不會是摘要。
+「Most vaccines target one virus, so…」——把第 10 行的對照組跟第 29 到 30 行的將來用途接在一起，還加了一個 so。課文沒有說「因為多數疫苗只對付一種病毒，所以要替別的病毒設計疫苗」，這個因果是選項自己加的。
+看作者怎麼把話說得不滿
+第四步
+作者有多確定下層：確定程度的語言（hedging）
+科學新聞要一邊報好消息，一邊不把話說滿。作者用一組字來調整每一句的把握程度：hope、could、believe、if、caution、still、will be required。語言學家 Hyland 把這種字叫做 hedges。他的研究也發現，外語學生常常沒注意到這些字，就把「可能」讀成「已經」。
+跟第十二單元的比較與程度的語言分清楚：那裡的 far more、less than 是在比兩樣東西差多少；這裡的字是在說這件事有多確定是真的。
+點課文裡有底色的字，同一條的字會一起亮起來。兩色可以各自關掉。
+確定程度的語言（青）
+換字（藍灰）
+線索
+點圖上的一層，或課文裡有底色的字
+青色是表示「還不確定」的字，藍灰是同一個做法的三種說法。
+另外兩樣，前面單元教過，這篇自己確認得出來：
+對比標記。第 10 到 11 行 Most vaccines 對 This new vaccine，一句講一般的疫苗，一句講這支新疫苗。第 23 行的 but 和第 28 行的 though 則是另一種轉折：前面剛說完好消息，後面馬上收回一點。跟第八單元練過的一樣，看到它，作者要換邊了。
+概括名詞。第 22 行的 the results 一次收掉第 16 到 21 行的試驗結果：安全、有免疫反應、不用針頭。跟第三、第四單元練過的一樣，往前找之前，先確定它收的是一句還是一整片。
+考卷怎麼考科學新聞
+第五步
+科學新聞的兩個陷阱上層：考點
+科學新聞的題目，誘答多半出在兩個地方：
+一、把「可能」改成「已經」。細節題最常見的誘答，是把原文的 hope、could、will be required 拿掉，讓一件還沒確定的事變成事實。看到選項說 proven、approved、has been shown，就回課文找那一句前面有沒有 hedge。
+二、拿細節當主旨。倒金字塔的主旨在導言，第二層、第三層的細節不會是主旨。這一點跟九月號第一單元一樣。
+試一題：Which of the following is TRUE about the vaccine, according to the passage?
+It has already been approved for use against all coronaviruses.
+It was given to the 39 volunteers by means of a needle.
+Its effectiveness has yet to be proven in larger studies.
+It protects against one virus better than most vaccines do.
+第三句。先注意：它沒有照抄課文。has yet to be proven 是第 26 到 27 行 before its effectiveness can be confirmed 的改寫，larger studies 是 larger trials 的換字。大考的正解通常就是這樣換過字的；反過來說，跟原文最像的選項，不一定對。
+另外三個為什麼排除：
+by means of a needle——這個最容易選，因為 39 volunteers、needle 都是課文裡的字。但第 20 行寫的是 without a needle，差一個介系詞，意思就反了。
+already been approved for use against all coronaviruses——這就是第一個陷阱：第 25 行說 still in an early stage，還要做更大的試驗，談不上核准。而且第 19 行寫的是 several coronaviruses，不是 all。
+protects against one virus better——方向反了。第 6 到 7 行說這支疫苗對付 many different coronaviruses instead of just one，只對付一種病毒的是第 10 行的 Most vaccines。
+最後一題
+第六步
+把一句話放回去
+這就是考卷上的篇章結構題。下面把第 15 到 16 行那一句整句抽掉了，四個候選句只有一句放得進去。
+… Researchers made use of AI to identify features shared by many coronaviruses and combined them into a single vaccine.
+（空格）
+In a trial involving 39 volunteers, the vaccine was found to be safe and produced immune responses against several coronaviruses. It was also given without a needle, using a high-pressure jet of liquid.
+The goal is to train the immune system to recognize a broader range of viruses.
+The goal is to make the vaccine easy to give to people without using a needle.
+This allows the vaccine to target one specific virus more accurately than before.
+The results, however, have not yet been confirmed by any of the larger trials.
+四個線索同時指向同一句。這四句單獨看都說得通，沒有一句本身是錯的。要排除，得靠位置和線索。
+先講一個例外。前面說大考的正解通常是改寫，但抽句題不一樣：抽掉的就是原文那一句，所以正解一定是原文。這一題要靠的是另外三句哪裡接不上，不是比對字面。
+一、接得住前一句。前一句說，研究人員找出很多冠狀病毒的共同特徵，合成一支疫苗。正解接著講目的：讓免疫系統認得 a broader range of viruses。「很多病毒的共同特徵」對上「更廣的範圍」，前後兩句是同一件事的做法和目的。
+另外三個為什麼排除，各有一個明確的依據：
+二、位置。不用針頭這件事，原文放在第 20 行，而且用 It was also given 開頭。also 表示這是另外補充的一件事，不是設計這支疫苗的目的。把它提到這裡，後面那句的 also 就沒有著落了。
+三、方向。target one specific virus 跟第 11 行 This new vaccine takes a different approach 相反。只鎖定一種病毒的，是第 10 行的 Most vaccines。
+四、指涉。The results 要先有試驗才有結果，可是試驗在空格的下一句才出現。這一句也最容易選，因為第 22 到 27 行真的有類似的保留，但它的位置在第三段，不在這裡。這就是倒金字塔的層次：保留放在最後一層。
+考卷上不會有底色，也不會有行號。但你剛才用的四個線索，每一篇科學新聞都用得上。
+帶著走的五句話
+科學新聞也是倒金字塔。導言先交代發生了什麼、誰在哪裡做的、為什麼算新聞，後面一層一層補細節。
+驗證方法：從尾巴砍。砍到只剩導言還知道發生什麼事，就是倒金字塔；從頭砍，新聞就沒了。
+科學新聞的最後一層放的是保留。砍掉它，新聞還在，卻變成誇大。所以摘要要把「還不確定」一起寫進去。
+下層：確定程度的語言（hedging）。hope、could、believe、if、caution、still、will be required——看到這些字，那一句就只是「可能」，不是「已經」。
+考卷的陷阱：把可能改成已經。選項出現 proven、approved、has been shown，就回課文看原句前面有沒有 hedge。正解多半換過字，誘答反而照抄原文。
+單字輪：把字拆成部件來記 →
+← 回讀法練習總表
+總表上有目前可以做的所有單元，還有你累積到現在的讀法工具。
+本題庫自己寫的部分（解析、中譯、分類、標註與編排）採用 CC BY-NC 4.0（姓名標示─非商業性）授權：可以分享，但須註明出處，不得用於商業用途。試題來源與完整說明請見使用與著作權。

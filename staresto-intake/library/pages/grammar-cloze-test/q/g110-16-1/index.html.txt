@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g110-16-1/index.html
+Author: staresto-create ZZSH
+Title: 110 年學測克漏字第16題詳解（連接詞／轉折詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 110 年學測 ／ 第16題
+110 年學測 克漏字 第16題
+連接詞／轉折詞線索：句內答對率 26%
+答對率 26%：當年每 100 位考生，有 26 位答對。
+In fact, a visit to a major European city just would not be the same 16 encountering them: bathing in fountains, perching on historic buildings, and flocking in public squares.
+(A)as
+(B)for
+(C)though
+(D)without
+答案：(D) without
+題目編號：G110_16_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+without 是介系詞，後面接動名詞 encountering；would not be the same without… 意為「少了…就不一樣了」。as、though 當連接詞時後面接的是子句（正式書面語裡 though 可以接 V-ing，但這裡語意接不上），for + V-ing 用於說明物品用途，都不合。
+深入解析
+你可能會這樣想
+空格後面是 encountering，你一看到 -ing 就想找連接詞，把 as、though 填進去；但這裡的 -ing 是動名詞不是子句，需要的是介系詞。
+怎麼判斷
+空格後面是 encountering，是動名詞不是子句，所以這一格要填介系詞，不是連接詞。三個誘答各有排除的理由（見下），剩下 without，後面正是接名詞或動名詞：without encountering them（沒有遇見牠們）、without saying a word（一句話也沒說）。整句是 would not be the same without…，意思是少了鴿子在噴泉洗澡、在廣場成群飛舞的畫面，歐洲城市之旅就不對味了。
+誘答選項
+as：當連接詞時後面接「主詞 + 動詞」的子句，as expected、as mentioned above 這類省略寫法另當別論，這一句兩種都不是；當介系詞時意思是「作為、當作」（work as a waitress），as encountering them 說不通。for：for + V-ing 用來說明物品的用途或原因：I need something for storing CDs.（我需要能收 CD 的東西），語意套不進來，would not be the same for encountering them 讀不出「少了…」的意思。though：連接詞「雖然」，後面通常接完整子句（though it was raining）；正式書面語裡雖然有 though + V-ing 的省略寫法（The patient, though getting stronger, is still not well enough to come off his medication.），但「雖然遇見鴿子」與「少了鴿子就不對味」的語意完全接不上。
+常考字詞與句型
+would not be the same without…（少了…就不一樣了）、without doing sth（沒有做某事）、do without（沒有…也行）、cannot help doing（忍不住做）。其中 do without 這一組考過 3 個年度，101 年第 25 題 →、103 年第 24 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Street pigeons are a common sight in many European cities. In fact, a visit to a major European city just would not be the same 16 encountering them: bathing in fountains, perching on historic buildings, and flocking in public squares. In Barcelona, however, the birds are now threatening to 17 the city's historic center, pooping on monuments, buildings, and even tourists.
+The city council originally proposed 18 the pigeon population by gathering the birds and shooting them. But that idea led to strong protests from numerous animal rights groups. After heated debates and discussions, the government was finally persuaded to consider another 19 effective method: giving the pigeons birth control.
+In 2016, the city council decided to put its 85,000 pigeon population on a birth control pill to block the formation of eggs in birds. Starting from April 2017, the pills were placed in 40 bird feeders 20 throughout the city. It was predicted that there would be a decrease of 20 percent in the pigeon population in the first year and between 70 and 80 percent in four or five years.
+中譯：街頭鴿子在許多歐洲城市中隨處可見。事實上，造訪歐洲主要城市時，若沒有遇見牠們——在噴泉中戲水、棲息在歷史建築上、成群聚集在廣場中——似乎就少了點什麼。然而，在巴塞隆納，這些鴿子如今卻威脅著這座城市的歷史中心，牠們的排泄物弄髒了紀念碑、建築物，甚至遊客本身。市議會原本提議透過捕捉並撲殺鴿子來控制數量，但這項提議引發了眾多動物權益團體的強烈抗議。經過激烈的辯論與討論，政府最終被說服考慮另一種同樣有效的方法：讓鴿子節育。2016 年，市議會決定為當地八萬五千隻鴿子施予節育藥物，以阻止鳥蛋的形成。從 2017 年 4 月起，這些藥物被投放在全市四十個餵食器中。預估第一年鴿子數量將減少 20%，而在四到五年內，減幅將達到 70%至 80%。
+📋 內容大意
+Barcelona managed its overpopulated street pigeons by switching from lethal culling to a birth control program following public protests.
+回到110 年學測第17題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

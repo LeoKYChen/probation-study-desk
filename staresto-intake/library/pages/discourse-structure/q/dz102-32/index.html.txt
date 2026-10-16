@@ -1,0 +1,68 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dz102-32/index.html
+Author: staresto-create ZZSH
+Title: 指考 102年 篇章結構 第32題詳解（掌握段落主題句和細節的關係）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 指考 102年 ／ 第32題
+指考 102年 篇章結構 第32題
+選文：一打十三個的由來（Why a Baker's Dozen Is Thirteen）
+掌握段落主題句和細節的關係線索：序列與時間詞答對率 83%
+(A)Van Amsterdam awoke with a start.Van Amsterdam 猛然驚醒。
+(B)In walked an old woman wrapped in a long black shawl.走進來一位裹著黑色長披肩的老婦人。
+(C)The more he took from the baskets, the more they seemed to hold.他從籃子裡拿得愈多，籃子裡似乎就裝得愈多。
+(D)From that day, everything went wrong in Van Amsterdam’s bakery.從那天起，Van Amsterdam 的麵包店樣樣不對勁。
+(E)In great excitement, Van Amsterdam counted out twelve cookies—and one more.Van Amsterdam 滿心興奮地數出十二塊餅乾——再加一塊。
+(F)Staring at his unsold Saint Nicholas cookies, he prayed that Saint Nicholas could help him.望著賣不出去的聖尼古拉餅乾，他祈求聖尼古拉幫幫他。
+答案：(D) From that day, everything went wrong in Van Amsterdam’s bakery.
+題目編號：Dz102_32
+解析
+先看空格的位置。 它在第三段的第一句。
+再看空格後面。 後面一連四句都是壞事：麵包發過頭或根本不發、派太酸或太甜、餅乾焦掉或沒烤熟，客人漸漸不來了。壞事一件接一件，卻沒有人先說「開始出問題了」。
+D 就是那句主題句，而 From that day（從那天起）指的正是老婦人撂下狠話走掉的那一天。
+如果你選了 F（望著賣不出去的聖尼古拉餅乾，他祈求聖尼古拉幫幫他。）：F 也是壞事之後的反應。但這一格前面，店裡還沒有出過任何差錯，F 卻已經對著賣不掉的餅乾祈禱，前後接不上。
+【下次先看這裡】段落開頭是空格、後面接一串具體的壞事，空格通常就是那句「從那天起就不對勁了」。
+線索與數據
+線索種類序列與時間詞
+線索在哪兩側 From that day
+答對率83%
+鑑別度46
+本篇題型6選5・刪去法不收尾
+數據出處：本頁的答對率與鑑別度來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響。
+多出來的那一個：C
+(C)The more he took from the baskets, the more they seemed to hold.他從籃子裡拿得愈多，籃子裡似乎就裝得愈多。
+C 是夢裡的畫面，句子漂亮，內容也完全符合這個故事。問題在於：第五段已經寫過 No matter how many presents Nicholas handed out, there were always more to give（不管發出多少禮物，總是還有更多可以給）。 C 是同一件事的第二種說法。
+這一篇的多餘選項和 100 年指考那一篇同型——不是離題，是把已經講過的話再講一次。
+【下次先看這裡】一個選項讀起來很美、內容也對，卻哪一格都放不進去時，回頭看看它講的是不是前面某一句已經說完的事。
+展開本題所在的整篇選文與中文翻譯
+本篇共 5 格、6選5；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+人物設定：一個絕不多給也絕不少給的老實麵包師
+In the Dutch colonial town later known as Albany, New York, there lived a baker, Van Amsterdam, who was as honest as he could be. He took great care to give his customers exactly what they paid for—not more and not less.
+One Saint Nicholas Day morning, when the baker was just ready for business, the door of his shop flew open. 31 She asked for a dozen of the baker’s Saint Nicholas cookies. Van Amsterdam counted out twelve cookies. But the woman insisted that a dozen is thirteen. Van Amsterdam was not a man to bear foolishness. He refused. The woman turned to go without the cookies but she stopped at the door, saying, “Van Amsterdam! However honest you may be, your heart is small and your fist is tight.” Then she was gone.
+轉壞：從那天起，店裡什麼都做不好
+32From that day, everything went wrong in Van Amsterdam’s bakery. His bread rose too high or not at all. His pies were sour or too sweet. His cookies were burnt or doughy. His customers soon noticed the difference and slipped away.
+A year passed. The baker grew poorer and poorer. Finally, on the day before Saint Nicholas Day, no customer came to his shop. 33
+夢境：夢見聖尼古拉發禮物發不完，最後變成那個老婦人
+That night, the baker had a dream. He saw Saint Nicholas pulling out gifts from his baskets for a crowd of happy children. No matter how many presents Nicholas handed out, there were always more to give. Then somehow, Saint Nicholas turned into the old woman with the long black shawl!
+34 He suddenly realized that he always gave his customers exactly what they paid for, “But why not give more?”
+The next morning, on Saint Nicholas Day, the baker rose early to make cookies. And to his surprise, the cookies were as fine as they could be. When he had just finished, the old woman appeared at his door again. She asked for a dozen of Van Amsterdam’s Saint Nicholas cookies. 35
+結局：十三個算一打成了習俗，傳到其他城鎮
+When people heard he counted thirteen as a dozen, he had more customers than ever and became wealthy. The practice then spread to other towns as a common custom.
+中譯
+在後來稱為紐約州奧本尼的那座荷蘭殖民小鎮上，住著一位名叫 Van Amsterdam 的麵包師傅，他誠實得不能再誠實。他非常用心，顧客付多少錢就給多少東西——不多也不少。
+聖尼古拉節那天早上，麵包師傅才剛準備好要開門做生意，店門忽然被推開。31 她要買一打師傅做的聖尼古拉餅乾。Van Amsterdam 數出十二塊餅乾。但那位婦人堅持一打是十三塊。Van Amsterdam 不是那種會容忍胡鬧的人。他拒絕了。婦人沒買餅乾就轉身要走，卻在門口停下，說：「Van Amsterdam！你再怎麼誠實，還是心胸狹小、出手小氣。」然後她就走了。
+32 他烤的麵包不是發過頭就是完全不發。派不是酸就是太甜。餅乾不是烤焦就是還沒熟。顧客很快就察覺不對勁，一個個溜走了。
+一年過去了。師傅愈來愈窮。終於，在聖尼古拉節的前一天，他的店裡一個顧客也沒來。33
+那天晚上，師傅做了一個夢。他看見聖尼古拉從籃子裡拿出禮物，發給一群開心的孩子。不管尼古拉發出多少禮物，籃子裡總是還有更多可以給。然後不知怎麼地，聖尼古拉變成了那位披著黑色長披肩的老婦人！
+34 他忽然明白，自己一直都是顧客付多少就給多少，「但為什麼不多給一點呢？」
+隔天早上，聖尼古拉節當天，師傅一早起來做餅乾。令他意外的是，餅乾好得不能再好。他才剛做完，那位老婦人又出現在他門口。她要買一打 Van Amsterdam 的聖尼古拉餅乾。35
+人們聽說他把十三塊算成一打，他的顧客比以前更多，也因此富裕起來。這個做法後來傳到其他城鎮，成為普遍的習俗。
+← 第31題回到互動練習第33題 →
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

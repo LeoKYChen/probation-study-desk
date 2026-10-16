@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z96-30/index.html
+Author: staresto-create ZZSH
+Title: 96 年指考克漏字第30題詳解（介系詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 96 年指考 ／ 第30題
+96 年指考 克漏字 第30題
+介系詞線索：句內答對率 48%
+答對率 48%：當年每 100 位考生，有 48 位答對。
+Bhutan is one of the most isolated nations in the world, 30 foreign influences and tourism regulated by the government to preserve its traditional Tibetan Buddhist culture.
+(A)by
+(B)with
+(C)for
+(D)in
+答案：(B) with
+題目編號：Z96_30（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】with + 受詞 + 受詞補語（表附帶狀態），with foreign influences and tourism regulated 表示「外國影響力與觀光業受到政府管制」這個附帶狀態。by／for／in 都沒有這種用法。
+深入解析
+你可能會這樣想
+with 這個字，你的印象大概只有「和……一起」與「用……」，看到它後面接著一長串 foreign influences and tourism regulated by the government，會覺得沒有一個介系詞放得進去。
+怎麼判斷
+答對率不到五成，鑑別度只有 28，連高分群考生也會失手，原因在於這個句型擺在句子最後面、後面又接一長串修飾語，形狀不容易認出來。先把空格後面拆成兩層：foreign influences and tourism 是受詞，regulated by the government 是補充說明這個受詞處於什麼狀態，還原成完整子句就是 foreign influences and tourism are regulated by the government（外國影響力與觀光業受到政府管制）。能還原成「受詞是或處於那個狀態」，就確定是 with + 受詞 + 受詞補語（表附帶狀態）這個句型，空格填 with。同一年第 11 題也考 with，但那一題考的是 be satisfied with 這個固定的字詞搭配，兩題擺在一起，正好看出同一個介系詞的兩種考法。
+誘答選項
+by、for、in 都不能帶出「受詞 + 受詞補語」這兩層來表示附帶狀態；把它們填進去，regulated by the government 那一串就沒有地方可以掛。
+常考字詞與句型
+with + 受詞 + 受詞補語（表附帶狀態）、with his eyes closed（閉著眼睛）、with the engine running（引擎還發動著）、be regulated by（受……管制）、preserve a culture（保存文化）、isolated（孤立的、與外界隔絕的）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：96學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The Kingdom of Bhutan is a landlocked nation situated between India and China. The entire country is mountainous, 26 a small strip of subtropical plains in the extreme south. The elevation gain from the subtropical plains to the glacier-covered Himalayan heights exceeds 7,000 m.
+Its traditional 27 is based on forestry, animal husbandry and subsistence agriculture. However, these 28 less than 50% of the GDP now that Bhutan has become an exporter of hydroelectricity. Besides, cash crops and tourism are also 29.
+Bhutan is one of the most isolated nations in the world, 30 foreign influences and tourism regulated by the government to preserve its traditional Tibetan Buddhist culture. It is often described as the last surviving refuge of traditional Himalayan Buddhist culture.
+中譯：不丹王國是一個位於印度與中國之間的內陸國家。整個國家幾乎都是山地，除了最南端一小塊亞熱帶平原之外。從亞熱帶平原到冰河覆蓋的喜馬拉雅山高地，海拔落差超過 7,000 公尺。不丹傳統上以林業、畜牧業與自給農業為經濟基礎，但隨著不丹成為水力發電的出口國，這些傳統產業如今占 GDP 不到 50%。此外，經濟作物與觀光業也逐漸成為重要產業。不丹是世界上最與世隔絕的國家之一，政府對外來影響與觀光業都有嚴格管制，以保存其傳統的藏傳佛教文化。不丹常被形容為喜馬拉雅傳統佛教文化最後的庇護所。
+📋 內容大意
+Bhutan is a landlocked, almost entirely mountainous country lying between India and China.
+Forestry, herding and farming long supported it, but exported hydroelectricity now earns more.
+The government limits outside influence and tourism to preserve its Tibetan Buddhist culture.
+← 第29題回到96 年指考
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

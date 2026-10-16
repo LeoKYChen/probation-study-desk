@@ -1,0 +1,50 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z103-12/index.html
+Author: staresto-create ZZSH
+Title: 103 年指考克漏字第12題詳解（分詞／動狀詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 103 年指考 ／ 第12題
+103 年指考 克漏字 第12題
+分詞／動狀詞線索：句內答對率 36%
+答對率 36%：當年每 100 位考生，有 36 位答對。
+Many Americans replace their toothbrushes only once or twice a year. The ADA, however, recommends 12 a new toothbrush every three to four months.
+(A)use
+(B)to use
+(C)using
+(D)used
+答案：(C) using
+題目編號：Z103_12（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+recommend 後面接動名詞當受詞（recommend + V-ing），故填 using；use 是原形，to use 是不定詞，used 是過去式或過去分詞，都不能直接當 recommend 的受詞。
+深入解析
+你可能會這樣想
+recommend 的中文是「建議」，你大概直覺想接不定詞，寫成 recommend to use。但英文裡 recommend 後面要接一個動作時，用的是動名詞或 that 子句，不直接接不定詞。
+怎麼判斷
+這一題考的是這個動詞要求後面跟什麼形式，屬於用法而非字義，句法一關就能定案。空格前是主要動詞 recommends，空格處要填的是它的受詞。recommend 後面接動作時有兩種寫法：recommend + V-ing（The ADA recommends using a new toothbrush every three to four months.）以及 recommend + that + S + (should) + 原形 V（The ADA recommends that you should use a new toothbrush…）。本句空格後面沒有 that、也沒有主詞，只有名詞片語 a new toothbrush，所以走的是第一種，填 using。驗算法：把兩種寫法都試著唸一遍，能唸通的那一種就是句子要的形式；若填的字讓 recommend 後面既不是動名詞也不是完整子句，那一定不對。這一組要接動名詞的動詞值得一起記：suggest、recommend、avoid、enjoy、finish、mind、practice、consider、admit。與它們對照的是慣接不定詞的那一組：want、hope、plan、decide、promise、agree——這一組多半帶著「還沒做、打算去做」的意味。兩組分開記，寫作時最不容易出錯。
+誘答選項
+use 是原形動詞，recommend 後面不直接接原形動詞。to use 是不定詞，形式上像個受詞，但 recommend 不收不定詞當受詞，這是這個字的用法規定，記下來就好。used 有兩個身分——過去式與過去分詞，兩種都當不了 recommends 的受詞：當過去式會讓句子出現第二個限定動詞，當過去分詞要修飾後面的 toothbrush，就得放在冠詞後面（a used toothbrush），而且「用過的」與 new 意思相反。
+常考字詞與句型
+recommend + V-ing（建議做…）、recommend + that + S + (should) + V（建議…）、suggest + V-ing（建議做…）、avoid + V-ing（避免做）、consider + V-ing（考慮做）、mind + V-ing（介意做）、decide + to V（決定做）。
+鑑別度分析：鑑別度 13，高低分群的差距不大。本題答對率三成六——大考中心《選才電子報》第 307 期說明鑑別度時提到，鑑別度低表示高、低分群考生的答對率差距小，原因很多，而且它與答對率一樣，只是推論試題品質的指標之一。這一題的難處在於 recommend 的用法規定：中文「建議」容易直覺接不定詞，但 recommend 後面接動作時用的是動名詞或 that 子句，不直接接不定詞；四個選項是同一個動詞的四種形態，考的是這個動詞要求後面跟什麼形式，屬於用法而不是字義。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：103學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Brushing your teeth regularly will help you maintain a healthy smile. But that smile won't last long if you don't take proper care of your toothbrush and switch to a new one often. According to the American Dental Association (ADA), toothbrushes can harbor bacteria. These germs come from the mouth and can 11 in toothbrushes over time.
+Many Americans replace their toothbrushes only once or twice a year. The ADA, however, recommends 12 a new toothbrush every three to four months. Children's toothbrushes may need to be changed more 13 .
+During those three to four months of use, there are several ways to keep a toothbrush clean. 14 , rinse your toothbrush thoroughly with tap water after use, making sure to remove any toothpaste and debris. Store your toothbrush in an upright position, and let 15 air dry. Most importantly, do not share toothbrushes.
+中譯：定期刷牙有助於維持健康的笑容，但如果沒有妥善保養牙刷、經常更換新牙刷，這樣的笑容不會持久。根據美國牙醫協會（ADA）的說法，牙刷上可能藏有細菌，這些細菌來自口腔，並會隨著時間累積在牙刷上。
+許多美國人一年只更換一到兩次牙刷，但 ADA 建議每三到四個月就使用新牙刷。兒童的牙刷則可能需要更頻繁地更換。
+在這三、四個月的使用期間，有幾種方法可以保持牙刷清潔。例如，每次使用後應以自來水徹底沖洗牙刷，確保去除牙膏殘留和碎屑；將牙刷直立存放，讓它風乾。最重要的是，不要與他人共用牙刷。
+📋 內容大意
+A healthy smile needs a clean toothbrush, since germs from the mouth build up on one.
+Many Americans keep the same brush for a year, but dentists advise changing it every few months.
+Between changes, rinse it well after use, stand it upright to dry, and never share it.
+← 第11題回到103 年指考第13題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

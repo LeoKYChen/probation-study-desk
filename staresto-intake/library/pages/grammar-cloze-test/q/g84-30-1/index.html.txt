@@ -1,0 +1,44 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g84-30-1/index.html
+Author: staresto-create ZZSH
+Title: 84 年學測克漏字第30題詳解（關係子句／疑問詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 84 年學測 ／ 第30題
+84 年學測 克漏字 第30題
+關係子句／疑問詞線索：句內
+People hoist their glasses 30 they are sitting around ski lodges, sailing, dancing, or enjoying a football game.
+(A)where
+(B)while
+(C)what
+(D)why
+答案：(B) while
+題目編號：G84_30_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+while 在這裡表示「當……的同時」，後面並列的 sitting around ski lodges、sailing、dancing、enjoying a football game 都是「活動」而非「地點」，用 while 銜接這些並列的動態活動更合理；where 帶出的子句講的是地點，但 sailing、dancing 這些是活動不是地點，用 where 語意兜不起來。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+空格後面接著一長串 sitting、sailing、dancing、enjoying，其中 ski lodges 是地方，很容易讓人選 where。這一格要先數成分，再看那一串到底是地點還是活動。
+怎麼判斷
+四個選項都是 wh- 詞，先數空格後面那個子句缺不缺成分：they are sitting around ski lodges, sailing, dancing, or enjoying a football game——主詞是 they、動詞是 are sitting／sailing／dancing／enjoying，受詞也齊了，成分一個都不缺。既然不缺，what 就先排除：它自己是一個名詞，進到子句裡一定要當主詞、受詞或介系詞的受詞（同樣的判斷方式：93 年第 18 題 →、91 年第 25 題 →、90 年第 20 題 →、87 年第 26 題 →）。剩下 where、while、why，這時看那一串在講什麼：sitting around ski lodges（在滑雪小屋裡閒坐）、sailing（航行）、dancing（跳舞）、enjoying a football game（看球賽）——四個並列的都是「活動」，不是「地點」；ski lodges 只是其中一個活動的場所，涵蓋不了整串。所以不是 where。也不是 why——這一句沒有在解釋舉杯的原因。剩下 while（當……的同時）：人們是在做這些活動的同時舉杯，時間上重疊，語意完全吻合。（同時性的說法還有 as，86 年第 23 題 →考的就是 as 的這個用法。）
+誘答選項
+where：並列的四個是活動不是地點。why：句中沒有因果關係。what：成分已滿，塞不進去。
+常考字詞與句型
+while + 子句（當……的同時）、hoist one's glass（舉杯）、sit around（閒坐）、a ski lodge（滑雪小屋）、go sailing（去玩帆船）、just the opposite（正好相反）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+America encourages its young people to drink. 21 , our society makes drinking a part of every celebration. Our personal celebrations, 22 weddings, promotions, graduations, and anniversaries, are 23 linked with drinking. 24 children can attend any family affair without seeing the adults enjoying their liquor. Drinking is part of our national celebrations as well. The Fourth of July means beer and New Year's Eve is an entire night dedicated to the proposition that everyone must get 25 .
+Secondly, the shows young people watch on television encourage them to drink. On 26 every soap opera, the characters drink casually and often. The rock videos young people watch over and over again feature alcohol, too. 27 on the videos sit in bars, nightclubs, and roadhouses. Drinking, the message goes, is cool.
+The strongest encouragement to drink that young people receive, 28 , comes from advertisers. Beer companies often sponsor the sports events young people watch. In addition, advertisements for liquor, on TV and in print, show situations that are 29 to the young. People hoist their glasses 30 they are sitting around ski lodges, sailing, dancing, or enjoying a football game. We may say we don't want our children to drink, but our messages say just the opposite.
+中譯：美國鼓勵年輕人喝酒。其一，我們的社會讓喝酒成為每個慶祝場合的一部分。我們個人的慶祝活動，例如婚禮、升遷、畢業典禮和週年紀念日，都與喝酒緊密相連。很少有孩子能在不看到大人喝酒的情況下參加家庭聚會。喝酒也是我們國家慶典的一部分。國慶日代表啤酒，跨年夜則整晚都在慶祝「每個人都必須喝醉」這個信念。第二，年輕人在電視上看的節目也鼓勵他們喝酒，幾乎每部肥皂劇裡，角色都輕鬆頻繁地喝酒。年輕人一再重複觀看的搖滾錄影帶裡也常出現酒精，影片人物坐在酒吧、夜店和路邊小酒館裡。這些影片傳達的訊息是：喝酒很酷。然而，年輕人受到最強烈的喝酒鼓勵，來自廣告商。啤酒公司經常贊助年輕人愛看的體育賽事。此外，電視和平面媒體上的酒類廣告，展示的情境對年輕人極具吸引力。人們在滑雪小屋、航海、跳舞或看足球賽時舉杯暢飲。我們可能會說不希望孩子喝酒，但我們傳遞的訊息卻恰恰相反。
+📋 內容大意
+American culture pushes its young toward alcohol by tying drink to every kind of celebration.
+Weddings, graduations and anniversaries all come with alcohol. Children see adults drinking at family events. National holidays are the same, from the Fourth of July to New Year's Eve.
+Television sends the same message. Soap operas show casual drinking, rock videos are set in bars, and drinking is made to look cool.
+Advertisers push hardest. They sponsor sports events and show happy scenes of skiing, sailing and dancing. Our messages tell children the opposite of what we say.
+← 第29題回到84 年學測第31題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

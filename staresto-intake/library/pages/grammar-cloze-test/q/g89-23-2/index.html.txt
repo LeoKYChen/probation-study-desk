@@ -1,0 +1,42 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g89-23-2/index.html
+Author: staresto-create ZZSH
+Title: 89 年學測克漏字第23題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 89 年學測 ／ 第23題
+89 年學測 克漏字 第23題
+字彙選義線索：句內
+Everyone dreams about 20 percent of their sleeping time. 23 people who say they never dream show about 20 percent of REM sleep. 24 these “non-dreamers” do their sleeping in a laboratory 25 researchers can wake them up and ask them whether they were having dreams the moment before, it 26 that they dream as much as others.
+(A)Even
+(B)For
+(C)Except
+(D)Unless
+答案：(A) Even
+題目編號：G89_23_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「甚至那些說自己從不做夢的人，也顯示出約 20% 的快速動眼期睡眠」，Even（甚至）加強語氣，呼應後文的反預期結果；For（因為）、Except（除了，這裡不是排除而是「甚至包括」）、Unless（除非）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+Except（除了）在這裡特別誘人，因為「說自己從不做夢的人」聽起來就像一群該被排除在外的例外。但只要把整句讀完就會發現，這一句要說的正好相反——那些人不但沒被排除，反而也有同樣的數據。
+怎麼判斷
+先看空格後面接的是什麼：people who say they never dream show about 20 percent of REM sleep 是一個完整的句子（主詞是 people、動詞是 show）。空格出現在整句的最前面，要修飾的是主詞 people 這一群人，所以要的是一個能加強語氣的副詞。再看前一句：Everyone dreams about 20 percent of their sleeping time（每個人的睡眠時間裡大約有兩成在做夢）。本句要說的是「連那些自稱從不做夢的人也一樣有兩成」——這是把一個看似最不可能的例子拿出來，用來證明前面那句話真的適用於所有人。這種「連……也」的加強語氣就是 Even。掛鉤用 Even a child can do it.（連小孩都會做。）。
+誘答選項
+Except（除了）：意思是把某一群排除在外，但本句接著就說這些人也有兩成的快速動眼期睡眠，等於沒有被排除，語意自相矛盾。這個選項要靠讀完整句才刷得掉，不能只看空格附近。For（因為）：當連接詞時它引出的是前面那句話的理由，但本句不是在解釋每個人為什麼做夢，要的是「連……也」的加強語氣。Unless（除非）：帶出的是條件，後面要接一個條件子句再配主要子句，而本句只有一個完整句子，沒有主要子句可以配。
+常考字詞與句型
+even（甚至、連……也）、even if（即使）、even though（雖然）、not even（連……都不）、about 20 percent（大約百分之二十）、sleeping time（睡眠時間）。其中 even though 這一組考過 6 個年度，95 年第 25 題 →、96 年第 25 題、103 年第 30 題 →、106 年第 19 題 →、107 年第 21 題 →都出現過；even if 考過 4 個年度，95 年第 25 題 →、96 年第 25 題、103 年第 30 題 →都出現過。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Basically, there are two kinds of sleep. One is Rapid Eye Movement (REM) sleep. In 21 , the brain waves of a sleeping person are similar to those of a waking person, and the eyes move about rapidly under the closed lids. 22 kind of sleep is Non-Rapid Eye Movement sleep.
+Scientists have discovered that dreams happen mainly in REM sleep. Everyone dreams about 20 percent of their sleeping time. 23 people who say they never dream show about 20 percent of REM sleep. 24 these "non-dreamers" do their sleeping in a laboratory 25 researchers can wake them up and ask them whether they were having dreams the moment before, it 26 that they dream as much as others.
+Events in daily life sometimes occur symbolically in dreams. 27 , a boy is having difficulties on the school playground because a bigger boy keeps bullying him. He may dream at night of being alone in the playground, 28 a lion. At other times the dreaded event from daily life simply occurs in a dream in its real-life form; 29 , the boy dreams of being bullied by the bigger boy.
+30 scientific research, we have known more about the relationship between sleep and dreams. However, why a dream will take a certain symbolic form is still a mystery.
+中譯：基本上，睡眠可分為兩種。第一種是快速動眼期（REM）睡眠，在這個階段，睡眠者的腦波與清醒時相似，眼球會在閉著的眼皮下快速轉動。另一種則是非快速動眼期睡眠。科學家發現，做夢主要發生在快速動眼期。每個人在睡眠時間中大約有 20%在做夢，就連那些聲稱自己從不做夢的人，也有大約 20%的快速動眼期睡眠時間。如果讓這些「不做夢的人」在實驗室裡睡覺，研究人員就能把他們叫醒，詢問他們前一刻是否在做夢，結果發現，原來他們做夢的次數其實跟其他人一樣多。日常生活中發生的事，有時會以象徵的形式出現在夢境中。舉例來說，一個男孩在學校操場上因為一直被較大的男孩欺負而感到困擾，晚上他可能會夢見自己獨自一人在操場上，面對一頭獅子。而有時候，日常生活中令人恐懼的事件，也會直接以原本的樣貌出現在夢境中，也就是說，這名男孩夢見的就是自己被那個較大的男孩欺負。透過科學研究，我們對睡眠與夢境之間的關係已有了更多了解。然而，夢境為什麼會以某種特定的象徵形式呈現，至今仍是個謎。
+📋 內容大意
+Scientific research shows that everyone dreams during REM sleep, often transforming daily experiences into direct or symbolic dreams.
+← 第22題回到89 年學測第24題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,44 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g94-28-3/index.html
+Author: staresto-create ZZSH
+Title: 94 年學測克漏字第28題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 94 年學測 ／ 第28題
+94 年學測 克漏字 第28題
+字彙選義線索：句內答對率 52%
+答對率 52%：當年每 100 位考生，有 52 位答對。
+Animals are able to feel pain 26 they can use it for self-protection. 27, if you touch something hot and feel pain, you will learn from this 28 that you should not touch that item in the future.
+(A)discomfort
+(B)prescription
+(C)enjoyment
+(D)satisfaction
+答案：(A) discomfort
+題目編號：G94_28_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「你會從這種不適感中學到不該再碰那個東西」，discomfort（不適）呼應前面提到的 feel pain（感到疼痛）；prescription（處方）、enjoyment（享受，語意相反）、satisfaction（滿足）都不合。
+深入解析
+你可能會這樣想
+discomfort 比 pain 少見，在考場上看到它常常直接跳過。其實它就是 dis-（不）加上 comfort（舒適）——不舒服，正是前半句 feel pain 的另一種說法。答對率五成二、鑑別度 69，這一題分得很開，分的就是你有沒有回頭把 this 指的東西找出來。
+怎麼判斷
+四個選項都是抽象名詞，擺進去都合文法，可見這一格考的是語意，而且關鍵在 this。「this + 名詞」是英文回頭指前文的常用手法：用一個比較概括的名詞，把前面剛講過的內容概括起來再指一次（Halliday 與 Hasan《Cohesion in English》談的指稱銜接）。所以 this ___ 必須對得上前半句剛出現的 touch something hot and feel pain，四個選項裡只有 discomfort（不適）對得上 pain。整句還原：you will learn from this discomfort ＝ you will learn from the pain you have just felt（你會從剛剛那份痛學到教訓）。
+誘答選項
+enjoyment（享受）、satisfaction（滿足）：方向相反，碰到滾燙的東西不會是享受。而且這兩個字意思很接近，四選一只能有一個答案，意思幾乎相同的兩個選項必定同時錯，還沒回頭讀句子就能砍掉一半（同一個判斷方式：95 年第 29 題 →的 hardly 與 rarely）。prescription（處方箋）：只是被「痛」聯想到看病吃藥，句子裡沒有任何醫療情境，而且處方也不是你剛剛親身感受到的東西。
+常考字詞與句型
+learn from sth（從……學到教訓）、cause／feel discomfort（造成／感到不適）、in the future（將來）、write a prescription for（開……的處方）、to one's satisfaction（做到讓某人滿意的程度）、get enjoyment out of（從……得到樂趣）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Do plants have feelings? There is currently no reason to believe that plants experience pain, because they are devoid of central nervous systems and brains. Animals are able to feel pain 26 they can use it for self-protection. 27, if you touch something hot and feel pain, you will learn from this 28 that you should not touch that item in the future. On the other hand, plants cannot move 29 and do not need to learn to avoid certain things, so this sensation would be unnecessary.
+From a physiological standpoint, plants are completely different from animals. They cannot feel pain. Therefore, 30 animals' body parts, many fruits and vegetables can be harvested over and over again without dying.
+中譯：植物有感覺嗎？目前並沒有證據顯示植物會感受到疼痛，因為它們沒有中樞神經系統和大腦。動物能感受疼痛，這樣牠們才能利用疼痛來保護自己。舉例來說，如果你碰到滾燙的東西並感到疼痛，你會從這次經驗中學到，未來不該再碰觸那樣東西。相反地，植物無法自行移動，也不需要學習避開某些事物，因此這種感覺對植物而言是不必要的。從生理學角度來看，植物與動物完全不同，它們無法感受疼痛。因此，與動物的身體部位不同，許多水果和蔬菜可以一次又一次地被採收，而不會因此死亡。
+📋 內容大意
+Lacking a central nervous system and the need for self-protective mobility, plants do not experience pain like animals do.
+← 第27題回到94 年學測第29題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

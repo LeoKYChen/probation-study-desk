@@ -1,0 +1,50 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z96-15/index.html
+Author: staresto-create ZZSH
+Title: 96 年指考克漏字第15題詳解（連接詞／轉折詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 96 年指考 ／ 第15題
+96 年指考 克漏字 第15題
+連接詞／轉折詞線索：句內答對率 12%
+答對率 12%：當年每 100 位考生，有 12 位答對。
+The low point seems to last longer for women—throughout their 30s and 40s, only climbing 15 women reach 50.
+(A)once
+(B)unless
+(C)before
+(D)since
+答案：(A) once
+題目編號：Z96_15（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+once 在此是從屬連接詞「一旦…就」，引導時間副詞子句：女性的低潮要一直持續到五十歲才開始回升；unless（除非）語意相反，before（在…之前）時間順序顛倒，since（自從、因為）也不合。
+重點：once 當從屬連接詞時等於 as soon as 或 after，引導時間子句，講的是「一旦…就」；本句是女性的低潮要到五十歲才開始回升，unless（除非）是條件而且方向相反，before（在…之前）把先後顛倒過來，since（自從、因為）也對不上。
+延伸閱讀：once 當連接詞，「一旦…就」 ↗
+深入解析
+你可能會這樣想
+once 在你腦中大概只有兩個身分：副詞「曾經」（I once lived in Japan.）與「一次」（once a week）。它還有第三個身分——從屬連接詞「一旦…就」，後面接完整子句——只記得前兩個身分的話，句子需要連接詞時就不容易想到它。
+怎麼判斷
+先看空格後面：women reach 50 是主詞加動詞的完整子句，需要有東西把它接上主要子句，所以這一格要填連接詞。這一步就把 once 的「曾經」與「一次」排除了——那兩個身分是副詞，帶不了子句。確定要連接詞之後再看語意方向：主要子句說女性的低潮橫跨三十幾與四十幾歲，only climbing 表示要到某個時間點才開始回升，所以連接詞要表達「這個條件成立，結果才發生」。once 當連接詞正是這個意思：Once you understand the rule, the rest is easy.（一旦懂了規則，其餘就簡單了。）驗算在下一句。作者接著寫男性：Men, on the other hand, have the lowest point in their 40s, going up again when they reach 50.——同一個「到五十歲才回升」的意思，寫男性時用 when，寫女性時用 once。前後對照，方向就確定了。順帶把 once 與 as soon as 分清楚，兩者常被當成同義詞。as soon as 重的是時間緊接：As soon as we hear any news, we'll call you.（一有消息就通知你。）once 重的是條件成立：My boss is a nice man once you get to know him.（一旦你了解他，我老闆人很好。）後面這句換成 as soon as 就不通，因為「了解一個人」不是瞬間發生的事，是一道門檻。
+誘答選項
+三個都是連接詞，句法上都塞得進去，要靠語意刷掉。unless 是「除非」，等於 if...not，放進來會變成「只在女性還沒滿五十歲時才回升」，與「到五十歲才回升」正好相反。before 是「在…之前」，時間順序顛倒——低潮是持續「到」五十歲，不是五十歲「之前」就結束。since 當連接詞有「自從」與「因為」兩義：「自從女性年滿五十」通常要配完成式，本句沒有；「因為女性年滿五十」把時間點說成原因，與 only climbing 的語氣對不上。
+常考字詞與句型
+once + S + V（一旦…就，重條件）、as soon as（一…就，重時間）、the moment (that)（一…就）、by the time …（到…的時候）、once in a while（偶爾）、at once（立刻）。
+鑑別度分析：鑑別度 7，高低分群的差距不大。本題答對率一成二，屬於難度很高的題目——大考中心《選才電子報》第 307 期說明鑑別度時，就把答對率低的難題列為鑑別度偏低的原因之一：高、低分群考生在這類題目上的答對率差距不大，鑑別度的數值就會比較小。這一題比較像是不分程度的考生都在同一個字上轉向：once 最先想到的是「一次、曾經」這個副詞用法，而這一格用的是連接詞的 once，等於 as soon as 或 after。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：96學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Recent studies show that levels of happiness for most people change throughout their lives. In a British study between 1991 and 2003, people were asked how satisfied they are 11 their lives. The resulting statistics graph shows a smile-shaped curve.
+Most of the people 12 happy and become progressively less happy as they grow older. For many of them, the most miserable period in their life is their 40s. 13, their levels of happiness climb.
+Furthermore, it seems that men are slightly happier on average than women in their teens, but women bounce back and overtake men 14 in life. The low point seems to last longer for women—throughout their 30s and 40s, only climbing 15 women reach 50. Men, on the other hand, have the lowest point in their 40s, going up again when they reach 50.
+中譯：近期研究顯示，大多數人一生中的快樂程度會隨時間改變。一項 1991 年至 2003 年間的英國研究詢問受訪者對自己生活的滿意程度，結果統計出的曲線呈現微笑形狀。大多數人一開始很快樂，隨著年齡增長快樂程度逐漸下降。對許多人來說，人生最痛苦的時期是 40 多歲。過了那段時期後，快樂程度便開始回升。此外，男性在青少年時期似乎平均比女性快樂一些，但女性後來會反彈並在人生較晚的階段反超男性。低潮期對女性而言似乎持續得更久——貫穿 30、40 多歲，直到 50 歲才開始回升。相對地，男性的最低點落在 40 多歲，到了 50 歲便再度回升。
+📋 內容大意
+A British study asked people how satisfied they felt, and the answers formed a smile-shaped curve.
+Happiness falls steadily from youth to a low point around the forties.
+Women dip earlier and longer but recover after fifty; men rise again at the same age.
+← 第14題回到96 年指考第16題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

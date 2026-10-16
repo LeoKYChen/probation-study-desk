@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z93-27/index.html
+Author: staresto-create ZZSH
+Title: 93 年指考克漏字第27題詳解（句型結構）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 93 年指考 ／ 第27題
+93 年指考 克漏字 第27題
+句型結構線索：句內答對率 51%
+答對率 51%：當年每 100 位考生，有 51 位答對。
+Outbreaks of avian influenza 27 be devastating for the poultry industry and for farmers.
+(A)can
+(B)shall
+(C)dare
+(D)need
+答案：(A) can
+題目編號：Z93_27（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+can be devastating 表示「可能具有毀滅性」，can 表達可能性；shall（將要，較正式且不合語境）、dare（敢）、need（需要）都不符合這裡描述禽流感可能造成之影響的語意。
+深入解析
+你可能會這樣想
+四個選項都是助動詞，後面都接原形的 be，形態上刷不掉，你會憑中文挑一個。
+怎麼判斷
+答對率剛過五成。整句是 Outbreaks of avian influenza ______ be devastating for the poultry industry and for farmers（禽流感疫情______對家禽業與農民造成毀滅性的打擊）。這一句在陳述一種有可能發生的後果，不是命令、不是承諾，也不是必要條件。表示「有可能會」用 can——can 除了「能夠」，也用來說一件事在某些情況下會發生，例如 Winters here can be very cold.（這裡的冬天有時會非常冷）。填進去讀成 Outbreaks of avian influenza can be devastating。
+誘答選項
+shall 在現代英文裡主要用於法律條文或提議（Shall we go?），不用來陳述可能性；dare 與 need 當助動詞時主要用在否定句與疑問句（He dare not go.、You needn't worry.）；要在肯定句裡表達同樣的意思，就得換成一般動詞的 dare to V 與 need to V，那時候它們的詞性已經不是助動詞了。三個都是助動詞，形態吻合，容易被順手選走。
+常考字詞與句型
+can（能夠；有可能會）、Winters here can be very cold.（這裡的冬天有時會非常冷）、dare not + 原形（不敢）、need not + 原形（不必）、be devastating for（對……造成毀滅性打擊）、an outbreak of（……的爆發）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：93學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Avian influenza, or "bird flu," is a contagious disease caused by viruses that normally infect only birds and, less commonly, pigs. 26 all bird species are thought to be susceptible to infection, domestic poultry flocks are especially vulnerable to infections that can rapidly reach epidemic proportions.
+Outbreaks of avian influenza 27 be devastating for the poultry industry and for farmers. For example, an outbreak of avian influenza in the USA in 1983–1984 resulted in the destruction of more than 17 million birds 28 nearly US$ 65 million. Economic consequences are often most serious in developing countries 29 poultry raising is an important source of income, and of food, for impoverished rural farmers and their families.
+When outbreaks become widespread within a country, control can be extremely difficult. 30, government authorities usually undertake aggressive emergency control measures as soon as an outbreak is detected.
+中譯：禽流感，俗稱「鳥類流感」，是一種由病毒引起的傳染病，這類病毒通常只感染鳥類，較少感染豬隻。儘管所有鳥類都被認為可能受到感染，家禽尤其容易受到感染，且疫情可能迅速演變成大規模流行。禽流感爆發可能對家禽產業與農民造成毀滅性打擊。舉例來說，1983 年至 1984 年間，美國一次禽流感疫情導致超過 1,700 萬隻鳥被撲殺，損失金額高達近 6,500 萬美元。在開發中國家，經濟衝擊往往最為嚴重，因為家禽養殖是當地貧困農民家庭重要的收入與糧食來源。一旦疫情在一國之內大規模蔓延，防疫工作將變得極為困難。因此，政府當局通常會在疫情一經偵測到，便立即採取積極的緊急防疫措施。
+📋 內容大意
+Bird flu is a contagious viral disease of birds, and poultry flocks suffer worst.
+Outbreaks ruin farmers: one in the United States destroyed millions of birds.
+Poor countries lose most, so governments act fast before an outbreak spreads.
+← 第26題回到93 年指考第28題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

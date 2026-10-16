@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g96-28-3/index.html
+Author: staresto-create ZZSH
+Title: 96 年學測克漏字第28題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 96 年學測 ／ 第28題
+96 年學測 克漏字 第28題
+慣用語／片語線索：句內答對率 40%
+答對率 40%：當年每 100 位考生，有 40 位答對。
+And being a tiny country, everything in Rwanda is 28 in a few hours and the interesting spots can be explored comfortably in a couple of weeks.
+(A)off the record
+(B)beyond doubt
+(C)in touch
+(D)within reach
+答案：(D) within reach
+題目編號：G96_28_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】within reach 固定片語「觸手可及的/在可及範圍內」，表示「盧安達的一切在幾小時內都能到達」；off the record（非正式的/不公開的）、beyond doubt（無庸置疑）、in touch（保持聯絡）都不合。
+深入解析
+你可能會這樣想
+這題答對率只有四成，最容易選錯的是 in touch。原因是你把 touch 讀成「碰到、接觸到」，於是把 everything in Rwanda is in touch in a few hours 自行補成「盧安達的一切幾小時內都接觸得到」。落差在於 in touch 講的是人與人之間的音訊往來 —— keep in touch with sb（與某人保持聯絡）、get in touch with sb（與某人聯繫），和「到不到得了某個地方」無關。另外提醒一件事：97 年第 25 題 →考過 off record，那一題少了 the，光靠「冠詞漏掉」就能刷掉；本題選項 A 的 off the record 冠詞是齊的，同一個判斷方式用不上，必須改用語意判斷。
+怎麼判斷
+先把整句的邏輯量一次。開頭是 And being a tiny country（而且因為是個很小的國家），所以 everything in Rwanda is ___ in a few hours。國家小 + 幾小時，講的一定是「距離近、很快就到得了」。後半句把這個意思說得更白：the interesting spots can be explored comfortably in a couple of weeks（有趣的景點兩三個星期就能從容走完）—— 前後兩半都在講「範圍小、跑得完」，這個篇內對照就把語意鎖死了。再看 within reach 這個片語，它不必死背，拆開就懂：within 是「在……範圍內」，reach 是「手能構到的距離」，合起來就是「近得構得著」，劍橋詞典也收了 within easy reach of（離……很近）這個說法。常見的 Keep medicine out of children's reach.（藥品要放在小孩拿不到的地方。）就是它的反面，一正一反擺在一起最好記。這句話還有一個和答題無關、但值得知道的地方：And being a tiny country 的意義主詞是盧安達，可是主要子句的主詞卻是 everything in Rwanda，兩邊對不起來 —— 這就是文法書說的垂懸分詞（dangling participle），劍橋詞典舉的例子是 Arriving home, the door was open.（回到家的是人，不是門）。把主詞補回去就合法了：And Rwanda being a tiny country, everything is within reach...，或者還原成副詞子句 And because Rwanda is a tiny country, ...。要提醒的是，這種寫法在英文裡由來已久，不是近年才鬆綁：Merriam-Webster's Dictionary of English Usage 說垂懸修飾語在英國文學裡根深柢固，莎士比亞「哈姆雷特」就寫過 Sleeping in mine orchard, a serpent stung me.（睡在果園裡的是我，不是蛇）；把它訂成錯誤的是二十世紀的規範文法，像 Strunk 與 White「The Elements of Style」就明文要求句首的分詞片語必須指向主要子句的主詞。所以拿捏的方式是：自己寫作文時務必把主詞對齊，但讀到母語人士這樣寫的時候，不必懷疑自己看錯。順帶把這裡的 being 和同一份考卷第 18 題的 including 對著看：including 已經升格成介系詞，用起來不必管意義主詞是誰；這裡的 being 還是不折不扣的分詞，主詞就得對齊。同樣是 -ing 結尾，詞性不同，用法就不同。
+誘答選項
+off the record（不公開的、非正式的）：指說出來的話不列入正式紀錄，像 This is off the record.（這段話別寫進報導。）和距離遠近完全無關。beyond doubt（無庸置疑）：beyond 表示「超出……的範圍」，beyond doubt 就是「超出可懷疑的範圍」。它修飾的是一件事有多確定，不是有多近。順便把 beyond 和 within 對著看：beyond reach（構不到）正好是 within reach 的反面。in touch（有聯絡）：見上面。
+常考字詞與句型
+within reach（在可及的範圍內）、out of reach（構不到、拿不到）、within easy reach of（離……很近）、keep in touch with（與……保持聯絡）、off the record（不公開地、非正式地）、beyond doubt（無庸置疑）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Whenever I set foot on the soil of Rwanda, a country in east-central Africa, I feel as if I have entered paradise: green hills, red earth, sparkling rivers and mountain lakes. Herds of goats and cows 26 enormous horns graze the lush green fields. Although located close to the equator, Rwanda's "thousand hills," 27 from 1,500 m to 2,500 m in height, ensure that the temperature is pleasant all year around. And being a tiny country, everything in Rwanda is 28 in a few hours and the interesting spots can be explored comfortably in a couple of weeks.
+But 29, Rwanda is a symbol of the triumph of the human spirit over evil. Though it was once known to the world for the 1994 tribal conflict that resulted in about one million deaths, Rwanda has 30 the mass killing. Now it is healing and prospering and greets visitors with open arms.
+中譯：每當我踏上盧安達——這個位於非洲中東部的國家——的土地時，我都感覺自己彷彿進入了天堂：翠綠的山丘、紅色的泥土、閃閃發光的河流與高山湖泊。成群長著巨大犄角的山羊和牛，在青翠的草地上吃草。雖然盧安達地處赤道附近，但它的「千丘之國」地形——海拔從 1500 公尺到 2500 公尺不等——確保了全年氣候宜人。身為一個小國，盧安達的景點在短短幾小時內就能走遍，境內有趣的地方也能在一兩週內從容探索完畢。但最重要的是，盧安達象徵著人類精神戰勝邪惡的力量。儘管它曾因 1994 年造成約一百萬人死亡的種族衝突而為世人所知，盧安達如今已挺過那場大屠殺，正逐漸療癒、日漸繁榮，並張開雙臂歡迎來訪的旅客。
+📋 內容大意
+Rwanda strikes the writer as paradise. There are green hills, red soil, bright rivers and mountain lakes, and fields grazed by goats and long-horned cattle.
+Its thousand hills rise from 1,500 to 2,500 meters, so the weather stays pleasant all year. The country is small enough to see in a couple of weeks.
+Rwanda also stands as a symbol of the human spirit overcoming evil. Once known only for the 1994 conflict and its million deaths, the country is now healing.
+← 第27題回到96 年學測第29題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

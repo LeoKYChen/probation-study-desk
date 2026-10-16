@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z109r-16/index.html
+Author: staresto-create ZZSH
+Title: 109 年指考補考克漏字第16題詳解（分詞／動狀詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 109 年指考補考 ／ 第16題
+109 年指考補考 克漏字 第16題
+分詞／動狀詞線索：句內
+Reflecting less than one percent of the sunlight 16 on it, TrES-2b is less reflective than black acrylic paint, and is blacker than coal.
+(A)falls
+(B)falling
+(C)fallen
+(D)to fall
+答案：(B) falling
+題目編號：Z109R_16（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【分詞作形容詞】falling on it 修飾 sunlight，表示「照射在它身上的陽光」，為主動意涵的現在分詞。falls 為限定動詞不可直接修飾名詞；fallen 為不及物動詞 fall 的過去分詞，修飾名詞時常指「已經落下的」（fallen leaves），不符合正照射過來的陽光；to fall 不定詞放在名詞後面多表示要去做、還沒發生的事，不符合此處「正照在它身上」的語意。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個是同一個字的不同形態，會讓人立刻進入文法模式；又因為空格前面是 the sunlight，很容易覺得「陽光是被照下來的」而挑過去分詞 fallen。
+怎麼判斷
+先看整句的骨幹：Reflecting less than one percent of the sunlight ______ on it, TrES-2b is less reflective than ...。主要子句是 TrES-2b is less reflective ...，前面那一整串是分詞片語。空格前面是名詞 the sunlight、後面是介系詞片語 on it，可見空格填的是掛在 sunlight 後面的修飾語，不是限定動詞，falls 先排除。接著用修飾語後置的通則：分詞單獨一個時放在名詞前面（a barking dog），後面還帶著東西就整串移到名詞後面（the man standing there）。最後分主動被動：還原成 the sunlight that falls on it（照在它上面的陽光），是陽光自己落下來，主動關係，所以用現在分詞 falling。再補一個一勞永逸的判斷依據：fall 是不及物動詞，本來就沒有被動式，所以只要看到 fall 的過去分詞被拿來表示被動，一律可以先刷掉。
+誘答選項
+falls 是限定動詞，這一句已經有主要動詞 is，不能再放一個。fallen 是過去分詞，但 fall 不及物、沒有被動用法，fallen 修飾名詞時，常指「已經落下的」東西（fallen leaves 落葉）；陽光是正在照過來，不是已經落地的東西。to fall 表目的或還沒發生的事，陽光不是「為了要照在它上面」才存在的。
+常考字詞與句型
+the sunlight falling on ...（照在……上的陽光）、fallen leaves（落葉）、reflect（反射）、reflective（會反射的）、light years away（光年之遙）、a barking dog（吠叫的狗，分詞單獨一個放名詞前面）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Astronomers have discovered the darkest alien planet known to exist in the galaxy.
+The Jupiter-sized planet, known as TrES-2b, is located in another solar system some 750 million light years away from Earth. Reflecting less than one percent of the sunlight 16 on it, TrES-2b is less reflective than black acrylic paint, and is blacker than coal. The only light that comes from TrES-2b is a faint red glow, 17 the heated coils on an electric stove or a very dim light bulb. Researchers believe this results from its extremely hot atmosphere, which is as high as 1,800°F (980°C), 18 its closeness to its sun—its source of energy.
+So how does this planet manage to absorb about 99% of the light it receives from its sun? 19 researchers are not completely sure, they believe it could be because its atmosphere is composed of light-absorbing chemicals like vaporized sodium or even some elements whose existence is not yet known. Although they may never be able to 20 exactly how the planet remains so stealthily hidden, scientists are sure of one thing—there are many more even darker planets out there just waiting to be discovered!
+中譯：天文學家發現了目前已知銀河系中最黑暗的一顆系外行星。
+這顆與木星大小相當、名為 TrES-2b 的行星，位在距地球約 7 億 5 千萬光年外的另一個太陽系中。它反射的陽光不到百分之一，反光程度比黑色壓克力漆還低，甚至比煤炭還要黑。TrES-2b 唯一發出的光是一種微弱的紅色光暈，類似電爐上發熱的線圈，或是非常昏暗的燈泡。研究人員相信，這是因為它的大氣層極度炎熱，溫度高達華氏 1,800 度（攝氏 980 度），這是由於它距離其能量來源——所繞行的恆星——非常近所致。
+那麼，這顆行星究竟是如何吸收掉來自其恆星約 99%的光線呢？儘管研究人員尚無法完全確定，但他們認為，這可能是因為其大氣層是由會吸光的化學物質組成，例如氣化的鈉，甚至可能包含一些人類尚未發現存在的元素。雖然科學家或許永遠無法確切得知這顆行星究竟是如何如此隱密地「藏身」，但有一件事可以肯定：外太空中還有更多更加黑暗的行星，正等待著被發現！
+📋 內容大意
+Astronomers have found the darkest planet known in the galaxy, blacker than coal or black paint.
+Jupiter-sized TrES-2b lies 750 million light years away and throws back under one percent of the light it receives.
+A furnace-hot atmosphere gives it a dim red glow, and light-swallowing chemicals may explain the rest.
+← 第15題回到109 年指考補考第17題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,44 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g93-20-1/index.html
+Author: staresto-create ZZSH
+Title: 93 年學測克漏字第20題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 93 年學測 ／ 第20題
+93 年學測 克漏字 第20題
+慣用語／片語線索：句內答對率 52%
+答對率 52%：當年每 100 位考生，有 52 位答對。
+The reincarnated leaders were always “discovered” in the households of lowly families 20 noble ones.
+(A)relative to
+(B)rather than
+(C)as a result of
+(D)with regard to
+答案：(B) rather than
+題目編號：G93_20_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+依照文意（發現的繼承者總是出身卑微家庭，而不是貴族家庭），加上下一句「這是為了確保沒有強大的貴族家庭能奪取頭銜」的因果印證，語意上是對比「而不是貴族家庭」，rather than（而不是）符合這個邏輯；as a result of（由於……的緣故）會讓因果關係變得不通順。
+深入解析
+你可能會這樣想
+四個選項都是好幾個字組成的一組，長得都很像那種幾個字合起來當一個介系詞用的說法（劍橋 English Grammar Today 的 Prepositions 條目），於是你很容易一個一個代進去唸唸看哪個順，唸到 as a result of 覺得「因為貴族家庭」好像也講得通，就停在那裡。答對率只有五成出頭，最容易選錯的就是 as a result of。其實這一格有一個看得見的訊號，不必靠語感。
+怎麼判斷
+四個選項都能直接接名詞，可見這一格考的不是文法而是「兩邊的語意關係」：是對比、排除，還是因果。訊號就在空格兩側——前面是 lowly families（出身低微的家庭），後面是 noble ones（顯貴的家庭），lowly 與 noble 是一組反義詞，而 ones 是代替 families 的替代詞（掛鉤用 I have two pens. One is red; the other is blue.）。同一個名詞、相反的形容詞擺在空格兩邊，這一格要的就是「是前者，不是後者」，rather than（而不是）正是做這件事的。再用下一句驗算：This was to ensure that no single and powerful noble family could seize the title（這是為了確保沒有哪個有權有勢的貴族家庭能奪走這個頭銜），整段的用意就是把貴族排除在外，與 rather than 完全同向。這一題的鑑別度有 46，分開的就是有沒有看出 lowly 與 noble 這一組對立。
+誘答選項
+as a result of（由於……）：填進去會變成「因為貴族家庭而被發現在平民家庭裡」，因果講不通，下一句的用意還正好相反。relative to（相對於）：用在拿一個基準去衡量比例或程度（The house is cheap relative to our income. 相對於我們的收入，這房子算便宜。），不是二選一的排除。with regard to（關於）：用來帶出要談的主題（with regard to your question 關於你的問題），後面接的是話題，不是被排除的對象，本身完全沒有對比的意思。
+常考字詞與句型
+A rather than B（是 A 而不是 B）、would rather V than V（寧願……而不願……）、rather than V-ing（而不是做……）、as a result of（由於……）、with regard to（關於）、relative to（相對於）。其中 as a result of 這一組考過 4 個年度，85 年第 35 題 →、99 課綱學測參考用試卷第 24 題 →、109 年第 22 題 →都出現過；with regard to 考過 4 個年度，95 年第 18 題 →、107 年第 30 題 →、110 年第 21 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Whenever a Dalai Lama died, a search began for his reincarnation. The 16 male child had to have certain qualities. 17 was the ability to identify the belongings of his predecessor, or rather his previous self. Another requirement was 18 he should have large ears, upward-slanting eyes and eyebrows. Besides, one of his hands should bear a mark like a conch-shell. The successful candidate, usually 19 two or three, was then removed from his family to Lhasa to begin spiritual training for his future role. The Panchen Lamas were chosen in a similar way.
+The reincarnated leaders were always "discovered" in the households of lowly families 20 noble ones. This was to ensure that no single and powerful noble family could seize the title and pass it to the next generation.
+中譯：每當一位達賴喇嘛圓寂，尋找他轉世靈童的過程便隨即展開。這名男童必須具備特定的特質。其中之一是能夠指認出前一世所使用的物品。另一項條件是必須擁有大耳朵、上揚的眼睛與眉毛。此外，他其中一隻手上還必須帶有類似海螺的印記。雀屏中選的候選人通常才兩三歲，隨後便被帶離家人身邊前往拉薩，開始接受靈性訓練，為未來的角色做準備。班禪喇嘛的挑選方式也大致相同。這些轉世的領袖，向來都「發現」於地位低下的平民家庭，而非顯赫的貴族家庭之中，目的是為了確保沒有任何一個權貴家族能獨占這個頭銜，並將其傳給下一代。
+📋 內容大意
+The selection process for a reincarnated Dalai Lama required specific physical and spiritual signs, choosing children from humble families to prevent political consolidation.
+← 第19題回到93 年學測第21題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,146 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/z100p2.html
+Author: staresto-create ZZSH
+Title: 100 指考閱讀測驗：動物實驗的必要性與倫理爭議｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 100 指考
+100 指考閱讀測驗：動物實驗的必要性與倫理爭議
+The Necessity and Ethical Debate of Animal Experimentation
+指考 100年第 40–43 題4 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段In an ideal world, people would not test medicines on animals. Such experiments are stressful and sometimes painful for animals, and expensive and time-consuming for people. Yet animal experimentation is still needed to help bridge vast gaps in medical knowledge. That is why there are some 50 to 100 million animals used in research around the world each year.
+第 2 段Europe, on the whole, has the world’s most restrictive laws on animal experiments. Even so, its scientists use some 12 million animals a year, most of them mice and rats, for medical research. Official statistics show that just 1.1 million animals are used in research in America each year. But that is misleading. The American authorities do not think mice and rats are worth counting and, as these are the most common laboratory animals, the true figure is much higher. Japan and China have even less comprehensive data than America.
+第 3 段Now Europe is reforming the rules governing animal experiments by restricting the number of animals used in labs. Alternatives to animal testing, such as using human tissue or computer models, are now strongly recommended. In addition, sharing all research results freely should help to reduce the number of animals for scientific use. At present, scientists often share only the results of successful experiments. If their findings do not fit the hypothesis being tested, the work never sees the light of day. This practice means wasting time, money, and animals’ lives in endlessly repeating the failed experiments.
+第 4 段Animal experimentation has taught humanity a great deal and saved countless lives. It needs to continue, even if that means animals sometimes suffer. Europe’s new measures should eventually both reduce the number of animals used in experiments and improve the way in which scientific research is conducted.
+題目
+40.What is the main idea of this passage?
+(A)The success of animal experiments should be ensured.
+(B)Ban on the use of animals in the lab should be enforced.
+(C)Greater efforts need to be taken to reduce the number of lab animals.
+(D)Scientists should be required to share their research results with each other.
+41.Which of the following statements is true about animals used in the lab?
+(A)America uses only about 1.1 million lab animals per year.
+(B)Europe does not use mice and rats as lab animals at all.
+(C)Britain does not use as many lab animals as China does.
+(D)Japan has limited data on the number of lab animals used each year.
+42.Which of the following is mentioned as an alternative to replace animal experiments?
+(A)Statistical studies.
+(B)Computer models.
+(C)DNA planted in animals.
+(D)Tissue from dead animals.
+43.What usually happens to unsuccessful animal experiments?
+(A)They are not revealed to the public.
+(B)They are made into teaching materials.
+(C)They are collected for future publication.
+(D)They are not removed from the research topic list.
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+40
+(C)
+61%
+43
+41
+(D)
+46%
+43
+42
+(B)
+75%
+56
+43
+(A)
+62%
+67
+答對率與鑑別度出處：大考中心 100 學年度指定科目考試統計圖表：英文科答對率及鑑別指數表
+每一題的依據句
+第 40 題 主旨題 Main idea
+依據句：全文要讀完整篇才能判斷，不在某一句裡。
+第 1 段說動物實驗仍有必要，但每年用掉 5,000 萬到 1 億隻動物；第 2 段說各國實際用的動物數量；第 3 段說歐洲正在限制實驗動物的數量，推薦替代方法和公開研究結果；第 4 段說歐洲的新措施應該能減少實驗用的動物。全文要說的是應該更努力減少實驗動物的數量，所以是 (C)。(D) 照抄第 3 段的 research results，分享研究結果只是減少動物數量的方法之一，過於狹隘；(B) 第 4 段說動物實驗需要繼續下去，作者沒有主張禁止，偏離主題；(A) 文章沒有談怎麼確保實驗成功，偏離主題。
+錯誤選項：(A) 偏離主題；(B) 偏離主題；(D) 過於狹隘（只講第 3 段）
+第 41 題 細節題（何者為是） Supporting details
+第 2 段Japan and China have even less comprehensive data than America.
+原文 → 正確選項
+less comprehensive data → limited data
+這一題答對率只有 46%，錯誤選項都照抄第 2 段的字，要逐項回原文核對。判斷步驟：[1] 第 2 段最後一句說日本和中國的資料比美國還不完整（less comprehensive data），選項換成日本每年使用的實驗動物數量資料有限，所以是 (D)；[2] (A) 照抄 1.1 million，但原文接著說這個數字會讓人誤解，因為美國沒有把小鼠和大鼠算進去，實際的數字要高得多，選項加了 only，和原文相反；[3] (B) 照抄 mice and rats，原文說歐洲用的動物大多是小鼠和大鼠，選項說反了；[4] (C) 照抄 China，原文沒有提到英國，也沒有比較英國和中國。
+第 42 題 細節題 Supporting details
+第 3 段such as using human tissue or computer models
+原文 → 正確選項
+computer models → Computer models
+第 3 段說動物實驗的替代方法，例如使用人體組織或電腦模型（computer models），所以是 (B)。(D) 照抄 tissue，原文說的是人體組織（human tissue），選項換成死去動物的組織，對的字放錯了對象；(A) 照抄第 2 段的 statistics，那是美國官方統計實驗動物的數量，不是替代方法；(C) 原文沒有提到把 DNA 植入動物。
+第 43 題 細節題 Supporting details
+第 3 段If their findings do not fit the hypothesis being tested, the work never sees the light of day.
+原文 → 正確選項
+never sees the light of day → not revealed to the public
+第 3 段說目前科學家常常只分享成功的實驗結果，如果研究發現不符合要驗證的假設，這項研究就永遠不會公開（never sees the light of day）。see the light of day 是首次出現、公之於世的意思，選項換成不會向大眾公開，所以是 (A)。(B) 做成教材、(C) 收集起來日後出版、(D) 不從研究題目清單上移除，原文都沒有提到；原文接著說這種做法會讓失敗的實驗不斷重複，可見失敗的結果並沒有公開。
+逐段中譯
+第 1 段在理想的世界裡，人們不會拿動物來測試藥物。這種實驗對動物來說壓力很大，有時候還很痛苦；對人來說，又花錢又耗時間。然而，要填補醫學知識上的巨大缺口，動物實驗仍然有必要。這就是為什麼全世界每年大約有 5,000 萬到 1 億隻動物用於研究。
+第 2 段整體來說，歐洲對動物實驗的法律限制是全世界最多的。即使如此，歐洲的科學家每年仍然用大約 1,200 萬隻動物做醫學研究，大多是小鼠和大鼠。官方統計顯示，美國每年只有 110 萬隻動物用於研究，但這個數字會讓人誤解。美國主管機關認為小鼠和大鼠不值得計算，而這兩種正是最常見的實驗動物，所以實際的數字要高得多。日本和中國的資料比美國還不完整。
+第 3 段現在歐洲正在改革動物實驗的規定，限制實驗室使用動物的數量。動物實驗的替代方法，例如使用人體組織或電腦模型，現在大力推薦。此外，把所有研究結果都公開分享，應該也有助於減少用於科學研究的動物數量。目前科學家常常只分享成功的實驗結果；如果研究發現不符合要驗證的假設，這項研究就永遠不會公開。這種做法意味著不斷重複失敗的實驗，浪費時間、金錢和動物的生命。
+第 4 段動物實驗讓人類學到很多，也救了無數人的性命。即使有時候會讓動物受苦，動物實驗還是需要繼續下去。歐洲的新措施最終應該能減少實驗用的動物數量，也能改善科學研究進行的方式。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。沒有列出的段落，就是沒有主旨句，請對照「這一篇的文章結構」裡的綱要，找出那一段的重點。這一篇沒有一句話直接點出全文中心思想，怎麼從各段歸納，請看第 40 題（主旨題）的解析。
+第 1 段Yet animal experimentation is still needed to help bridge vast gaps in medical knowledge.
+第 3 段Now Europe is reforming the rules governing animal experiments by restricting the number of animals used in labs.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體論說文 Argumentative
+組織方式問題解決 Problem-Solution這一類怎麼辨識 →
+關鍵轉折詞YetThat is whyEven soButNowIn additioneven if
+綱要
+理想的世界不該拿動物試藥，動物受苦，人也耗錢耗時；(Yet) 然而醫學知識還有很大的缺口要靠動物實驗填補，(That is why) 所以全球每年用掉五千萬到一億隻動物。
+歐洲的動物實驗法規全世界最嚴格，(Even so) 但歐洲科學家每年仍用掉約一千二百萬隻動物，多半是小鼠和大鼠。
+美國官方統計每年只用 110 萬隻，(But) 這個數字會誤導人，因為美國不把最常用的小鼠、大鼠算進去；至於日本和中國，資料比美國還不完整。
+(Now) 歐洲正修改規定，限制實驗動物的數量，推薦人體組織、電腦模型等替代方法；(In addition) 也鼓勵公開所有研究結果，因為科學家往往只公開成功的實驗，失敗的結果不發表，別人就一再重做失敗的實驗。
+作者認為動物實驗救了無數性命，(even if) 即使動物有時會受苦也要繼續做，而歐洲的新措施可望減少動物用量，也改善研究的方式。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 16 個、參考字彙 6 個、字詞搭配 12 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+experiment[ɪkˈspɛrəmənt]n.實驗三級第 1 段詞彙題考過 1 次：87 聯考第 7 題（誘答）
+misleading （詞彙表：mislead）[mɪsˈlidɪŋ]adj.讓人誤解的四級第 2 段詞彙題考過 1 次：109 指考補考第 4 題 misled（答案）
+authority[əˈθɔrəti]n.主管機關、當局四級第 2 段詞彙題考過 1 次：94 學測第 15 題（誘答）
+reform[rɪˈfɔrm]v.改革四級第 3 段詞彙題考過 3 次：98 指考第 10 題 reformed（誘答）、94 學測第 2 題（誘答）、85 聯考第 7 題（誘答）
+restrict[rɪˈstrɪkt]v.限制三級第 3 段詞彙題考過 2 次：90 學測第 3 題 restricted（答案）、89 學測第 8 題 restricting（誘答）
+alternative[ɔlˈtɝnətɪv]n.替代方法四級第 3 段詞彙題考過 2 次：115 學測第 4 題 alternatively（誘答）、101 指考第 10 題 alternatively（誘答）
+recommend[ˌrɛkəˈmɛnd]v.建議五級第 3 段詞彙題考過 2 次：105 指考第 3 題 recommended（答案）、99 指考第 9 題 recommended（答案）
+hypothesis[haɪˈpɑθəsəs]n.假設五級第 3 段詞彙題考過 1 次：87 聯考第 7 題（誘答）
+humanity[hjuˈmænɪti]n.人類四級第 4 段詞彙題考過 1 次：86 推薦甄選第 2 題（誘答）
+measures[ˈmɛʒɚz]n.措施四級第 4 段詞彙題考過 2 次：100 學測第 10 題（誘答）、96 學測第 6 題 measure（誘答）
+eventually （詞彙表：eventual）[ɪˈvɛnʧuəli]adv.最終四級第 4 段詞彙題考過 4 次：111 學測第 8 題（答案）、110 指考第 6 題（誘答）、90 聯考第 15 題（誘答）、85 推薦甄選第 6 題 eventually（誘答）
+conduct[kənˈdʌkt]v.進行、實施五級第 4 段詞彙題考過 2 次：107 學測第 14 題 conducted（答案）、99 指考第 8 題 conducts（誘答）
+enforce[ɪnˈfɔrs]v.實施、執行四級第 40 題詞彙題考過 1 次：110 指考第 8 題 enforcement（誘答）
+replace[rɪˈpleɪs]v.取代三級第 42 題詞彙題考過 4 次：109 學測第 11 題 replaced（誘答）、102 學測第 2 題 replaced（答案）、98 指考參考試卷第 7 題 replaced（誘答）、94 學測第 11 題（答案）
+statistical[stəˈtɪstɪkəl]adj.統計的五級第 42 題詞彙題考過 1 次：97 指考第 5 題（誘答）
+reveal[rɪˈvil]v.公開、揭露三級第 43 題詞彙題考過 2 次：110 指考第 2 題 revealed（答案）、88 聯考第 5 題 revealed（答案）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+stressful[ˈstrɛsfəl]adj.讓人有壓力的、緊張的表外第 1 段
+experimentation[ɪkˌspɛrəmənˈteɪʃən]n.實驗（animal experimentation 動物實驗）表外第 1 段
+restrictive[rɪˈstrɪktɪv]adj.限制嚴格的表外第 2 段
+comprehensive[ˌkɑmpriˈhɛnsɪv]adj.全面的、完整的六級第 2 段
+finding[ˈfaɪndɪŋ]n.研究結果、發現表外第 3 段
+ban[bæn]n.禁令、禁止五級第 40 題
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+test + sth + on + N在……身上試驗……第 1 段原文：test medicines on animals
+bridge a gap填補落差第 1 段原文：bridge vast gaps in medical knowledge
+on the whole整體來說第 2 段
+even so即便如此第 2 段
+be worth + V-ing值得……第 2 段原文：are worth counting
+an alternative to + N……的替代方案第 3 段原文：Alternatives to animal testing
+at present目前第 3 段
+fit the hypothesis符合假設第 3 段原文：do not fit the hypothesis
+see the light of day公諸於世第 3 段原文：never sees the light of day
+teach + sb + a great deal讓某人學到很多第 4 段原文：has taught humanity a great deal
+save lives拯救生命第 4 段原文：saved countless lives
+conduct research進行研究第 4 段原文：scientific research is conducted
+← 上一篇篇目一覽下一篇 →
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

@@ -1,0 +1,149 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/z101p4.html
+Author: staresto-create ZZSH
+Title: 101 指考閱讀測驗：爆破拆除建築物｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 101 指考
+101 指考閱讀測驗：爆破拆除建築物
+Explosive Demolition of Buildings
+指考 101年第 48–51 題4 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段Demolition is the tearing-down of buildings and other structures. You can level a five-story building easily with excavators and wrecking balls, but when you need to bring down a 20-story skyscraper, explosive demolition is the preferred method for safely demolishing the huge structure.
+第 2 段In order to demolish a building safely, blasters must map out a careful plan ahead of time. The first step is to examine architectural blueprints of the building to determine how the building is put together. Next, the blaster crew tours the building, jotting down notes about the support structure on each floor. Once they have gathered all the data they need, the blasters devise a plan of attack. They decide what explosives to use, where to position them in the building, and how to time their explosions.
+第 3 段Generally speaking, blasters will explode the major support columns on the lower floors first and then on a few upper stories. In a 20-story building, the blasters might blow the columns on the first and second floor, as well as the 12th and 15th floors. In most cases, blowing the support structures on the lower floors is sufficient for collapsing the building, but loading explosives on upper floors helps break the building material into smaller pieces as it falls. This makes for easier cleanup following the blast. The main challenge in bringing a building down is controlling the direction in which it falls. To topple the building towards the north, the blasters set off explosives on the north side of the building first. By controlling the way it collapses, a blasting crew will be able to tumble the building over on one side, into a parking lot or other open area. This sort of blast is the easiest to execute, and it is generally the safest way to go.
+題目
+48.What do the blasters need to do in preparing for the demolition of a building, according to the passage?
+(A)Study the structure of the building.
+(B)Hire an experienced tour guide.
+(C)Make a miniature of the building.
+(D)Consult the original architect.
+49.In most cases, where does the explosion start in the building during its destruction?
+(A)The topmost layer.
+(B)The upper floors.
+(C)The lower levels.
+(D)The basement.
+50.According to the following diagram, which part of the target building should the demolition team explode first to safely bring it down?
+圖片出處：大學入學考試中心 101 學年度指定科目考試英文考科
+(A)The east side.
+(B)The west side.
+(C)The south side.
+(D)The north side.
+51.What is the passage mainly about?
+(A)How to execute demolition at the right time.
+(B)How to collapse a building with explosives.
+(C)How to use explosives for different purposes.
+(D)How to destroy a building with minimum manpower.
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+48
+(A)
+58%
+62
+49
+(C)
+64%
+56
+50
+(C)
+47%
+44
+51
+(B)
+56%
+46
+答對率與鑑別度出處：大考中心 101 學年度指定科目考試統計圖表：英文科答對率及鑑別指數表
+每一題的依據句
+第 48 題 細節題 Supporting details
+第 2 段The first step is to examine architectural blueprints of the building to determine how the building is put together.
+原文 → 正確選項
+how the building is put together → structure of the building
+第 2 段說第一步是研究建築物的藍圖，了解建築物是怎麼構成的（how the building is put together），接著實地記下每一層樓的支撐結構，選項換成研究建築物的結構，所以是 (A)。(B) 照抄 tours，原文說爆破小組自己在建築物裡實地走一遍，不是請導遊；(D) 照抄 architectural，原文說要研究建築藍圖（architectural blueprints），沒有說要找原來的建築師；(C) 原文沒有提到做建築物的模型。
+第 49 題 細節題 Supporting details
+第 3 段blasters will explode the major support columns on the lower floors first
+原文 → 正確選項
+lower floors → lower levels
+第 3 段說一般來說，爆破人員會先（first）炸低樓層（lower floors）的主要支柱，選項換成 lower levels，所以是 (C)。(B) 照抄 upper floors，高樓層是後來才炸的，作用是讓建材碎成小塊；(A) 最頂層、(D) 地下室，原文都沒有提到。
+第 50 題 細節題（圖片題） Supporting details
+第 3 段To topple the building towards the north, the blasters set off explosives on the north side of the building first.
+第 3 段into a parking lot or other open area.
+這一題答對率只有 47%，要把原文的規則套到圖上。判斷步驟：[1] 第 3 段說要讓建築物往北倒，就先引爆北側的炸藥，也就是先炸哪一側，建築物就往哪一側倒；[2] 原文又說要讓建築物倒進停車場或其他空曠的地方（open area），最安全；[3] 看圖：目標建築的北邊是百貨公司，西邊是教堂，東邊是學校，只有南邊是清空區（Cleared Area）；[4] 要讓建築物往南倒進清空區，就先炸南側，所以是 (C)。(D) 北側是照抄原文舉的例子，往北倒會壓到百貨公司；(A) 往東倒會壓到學校；(B) 往西倒會壓到教堂。
+第 51 題 主旨題 Main idea
+依據句：全文要讀完整篇才能判斷，不在某一句裡。
+第 1 段說拆除高樓的首選是爆破拆除；第 2 段說爆破前要怎麼規劃；第 3 段說先炸哪幾層，以及怎麼控制倒下的方向。全文講的是怎麼用炸藥讓建築物倒塌，所以是 (B)。(A) 照抄第 2 段的 time，原文的 how to time their explosions 是安排引爆的時間，只是計畫的一部分，過於狹隘；(C) 照抄 explosives，炸藥的用途很多，全文只談拆除建築物，太過廣泛；(D) 文章沒有談到怎麼節省人力，偏離主題。
+錯誤選項：(A) 過於狹隘（只講第 2 段）；(C) 太過廣泛；(D) 偏離主題
+逐段中譯
+第 1 段拆除是把建築物和其他結構拆掉。用挖土機和破壞球，可以輕鬆夷平一棟五層樓的建築；但要拆掉一棟 20 層樓的摩天大樓，安全拆除這種龐大建築的首選方法是爆破拆除。
+第 2 段為了安全地拆除一棟建築物，爆破人員必須事先擬定周詳的計畫。第一步是研究建築物的藍圖，了解建築物是怎麼構成的。接著，爆破小組會在建築物裡實地走一遍，記下每一層樓的支撐結構。收集到需要的所有資料以後，爆破人員就擬定作戰計畫。他們決定要用哪些炸藥、炸藥放在建築物的什麼位置，以及引爆的時間怎麼安排。
+第 3 段一般來說，爆破人員會先炸低樓層的主要支柱，再炸幾層高樓層。以一棟 20 層樓的建築為例，爆破人員可能會炸一樓和二樓的支柱，以及 12 樓和 15 樓的支柱。大多數情況下，炸掉低樓層的支撐結構就足以讓建築物倒塌，但在高樓層裝炸藥，有助於讓建材在倒下時碎成比較小的塊，爆破以後比較容易清理。拆除建築物最大的挑戰，是控制倒下的方向。要讓建築物往北倒，爆破人員就先引爆建築物北側的炸藥。爆破小組控制建築物倒塌的方式，就能讓建築物倒向一側，倒進停車場或其他空曠的地方。這種爆破最容易執行，通常也是最安全的做法。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。沒有列出的段落，就是沒有主旨句，請對照「這一篇的文章結構」裡的綱要，找出那一段的重點。這一篇沒有一句話直接點出全文中心思想，怎麼從各段歸納，請看第 51 題（主旨題）的解析。
+第 1 段You can level a five-story building easily with excavators and wrecking balls, but when you need to bring down a 20-story skyscraper, explosive demolition is the preferred method for safely demolishing the huge structure.
+第 2 段In order to demolish a building safely, blasters must map out a careful plan ahead of time.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體說明文 Expository
+組織方式時序發展 Chronological這一類怎麼辨識 →
+關鍵轉折詞butThe first stepNextOnceGenerally speakingfirst … thenIn most casesbut
+綱要
+拆除就是拆掉建築物和其他結構；五層樓用挖土機、破壞球就能夷平，(but) 但要拆二十層的摩天大樓，安全的首選是爆破。
+爆破前要先仔細規劃：(The first step) 第一步是研究建築藍圖，了解建築的結構；(Next) 接著爆破小組實地走一遍，記下每層樓的支撐結構。
+(Once) 資料收齊以後，爆破人員擬定計畫，決定用哪些炸藥、放在哪裡、什麼時候引爆。
+(Generally speaking) 一般來說，爆破人員 (first … then) 先炸低樓層的主要支柱，再炸幾層高樓層；(In most cases) 炸低樓層就足以讓建築倒塌，(but) 高樓層放炸藥是為了讓建材碎成小塊，方便清理。
+最大的挑戰是控制倒塌方向：要讓建築往北倒，就先引爆北側的炸藥；讓建築倒向一側的停車場或空地，是最容易執行、通常也最安全的做法。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 14 個、參考字彙 11 個、字詞搭配 14 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+explosive[ɪkˈsploʊsɪv]adj.爆破的（explosive demolition 爆破拆除）四級第 1 段詞彙題考過 1 次：102 指考第 8 題（答案）
+determine[dɪˈtɝmən]v.了解、確定三級第 2 段詞彙題考過 1 次：86 推薦甄選第 4 題 determined（誘答）
+crew[kru]n.小組三級第 2 段詞彙題考過 1 次：84 聯考第 2 題（誘答）
+explosion[ɪkˈsploʊʒən]n.爆炸、引爆四級第 2 段詞彙題考過 2 次：106 指考第 2 題（誘答）、94 學測第 8 題 explosions（答案）
+explode[ɪkˈsploʊd]v.炸、引爆三級第 3 段詞彙題考過 1 次：92 學測第 5 題 exploded（答案）
+sufficient[səˈfɪʃənt]adj.足以……的、足夠的三級第 3 段詞彙題考過 2 次：94 學測第 7 題（誘答）、88 聯考第 3 題（答案）
+collapse[kəˈlæps]v.讓……倒塌四級第 3 段詞彙題考過 3 次：102 學測第 13 題（答案）、99 學測第 13 題（誘答）、89 學測第 5 題 collapsed（誘答）
+tumble[ˈtʌmbəl]v.讓……倒下四級第 3 段詞彙題考過 3 次：115 學測第 9 題（誘答）、110 學測第 8 題 tumbled（答案）、105 指考第 2 題 tumbled（誘答）
+execute[ˈɛksəˌkjut]v.執行、進行五級第 3 段詞彙題考過 2 次：109 指考第 6 題（誘答）、103 指考第 4 題 executing（誘答）
+consult[kənˈsʌlt]v.請教、諮詢四級第 48 題詞彙題考過 1 次：103 學測第 5 題 consults（答案）
+original[əˈrɪʤənəl]adj.原來的三級第 48 題詞彙題考過 8 次：109 學測第 5 題（誘答）、99 學測第 11 題 originally（誘答）、99 指考第 4 題 originally（誘答）、95 學測第 3 題 originally（答案）、93 學測第 4 題 originally（誘答）、92 學測補考第 2 題（誘答）、85 推薦甄選第 14 題（答案）、84 推薦甄選第 1 題（誘答）
+destruction[dɪˈstrʌkʃən]n.摧毀、拆除四級第 49 題詞彙題考過 1 次：89 學測第 7 題（誘答）
+destroy[dɪˈstrɔɪ]v.摧毀三級第 51 題詞彙題考過 3 次：100 學測第 7 題（誘答）、83 推薦甄選第 3 題 destroys（誘答）、83 聯考第 9 題（誘答）
+minimum[ˈmɪnəməm]adj.最少的四級第 51 題詞彙題考過 1 次：103 學測第 6 題（答案）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+demolition[ˌdɛməˈlɪʃən]n.拆除表外第 1 段
+excavator[ˈɛkskəˌveɪtɚ]n.挖土機表外第 1 段
+demolish[dɪˈmɑlɪʃ]v.拆除表外第 1 段
+blaster[ˈblæstɚ]n.爆破人員表外第 2 段
+architectural[ˌɑrkəˈtɛkʧərəl]adj.建築的表外第 2 段
+blueprint[ˈbluˌprɪnt]n.藍圖、設計圖表外第 2 段
+jot[ʤɑt]v.（jot down）匆匆記下表外第 2 段
+topple[ˈtɑpəl]v.使倒下、推倒表外第 3 段
+miniature[ˈmɪniəˌʧʊr]n.縮小的模型五級第 48 題
+architect[ˈɑrkəˌtɛkt]n.建築師五級第 48 題
+layer[ˈleɪɚ]n.層五級第 49 題
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+level a building把建築物夷平第 1 段原文：level a five-story building
+bring down + N推倒、拆除……第 1 段原文：bring down a 20-story skyscraper
+map out a plan規劃好計畫第 2 段原文：map out a careful plan
+ahead of time事先第 2 段
+put + sth + together組裝……第 2 段原文：how the building is put together
+jot down + N隨手記下……第 2 段原文：jotting down notes
+devise a plan擬定計畫第 2 段原文：devise a plan of attack
+generally speaking一般來說第 3 段
+in most cases在大多數情況下第 3 段
+be sufficient for + N／V-ing足以……第 3 段原文：is sufficient for collapsing the building
+break A into B把 A 弄碎成 B第 3 段原文：break the building material into smaller pieces
+make for + N有助於……第 3 段原文：This makes for easier cleanup
+set off + N引爆……第 3 段原文：set off explosives
+the way to go最好的做法第 3 段原文：the safest way to go
+← 上一篇篇目一覽
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

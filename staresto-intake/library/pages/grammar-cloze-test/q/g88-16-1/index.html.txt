@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g88-16-1/index.html
+Author: staresto-create ZZSH
+Title: 88 年學測克漏字第16題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 88 年學測 ／ 第16題
+88 年學測 克漏字 第16題
+慣用語／片語線索：句內
+This morning I 16 at 6 o'clock by a telephone call that wasn't for me.
+(A)awoke
+(B)woke up
+(C)was woken up
+(D)wakened
+答案：(C) was woken up
+題目編號：G88_16_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+被動語態「我被一通電話叫醒」，was woken up 符合（電話叫醒了他，他是被叫醒的一方）；awoke（主動語態，不能這樣搭配 by 表被動）、woke up（主動語態，不符合這裡需要的被動）、wakened（未配合 be 動詞構成被動）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是「醒來」，中文分不出差別，而 woke up 是你最熟的說法，很容易第一眼就選它。這一格要看的不是哪個字最眼熟，而是誰把誰叫醒。
+怎麼判斷
+四個選項都是 wake 這一組字的形態變化，可見這一格考的是形態。決定性的線索在空格後面：by a telephone call（被一通電話）。by 帶出的是動作的執行者——是那通電話把人吵醒的，客人是被吵醒的一方。看到 by 加執行者就是被動，所以填 was woken up。同一個判斷方式在題庫裡反覆出現：92 年第 28 題 →的 Since then Australia ___ from the rest of the world by vast oceans 也是靠 by 認出被動。再用語意驗算：整段是客人在抱怨，他不可能是自己選擇六點起床的。
+誘答選項
+woke up：主動語態，I woke up at 6 o'clock（我六點醒來）本身說得通，可是這樣一來，後面 by a telephone call 帶出的執行者就沒有著落了。awoke：awake 的過去式，這裡是主動的「醒來」（He awoke at six. 他六點醒來。），講的是自己醒的，接不上 by 帶出來的執行者。wakened：waken 的過去式和過去分詞同形。當過去式讀，它和 woke up 一樣是主動，接不上 by 帶出的執行者；當過去分詞讀，前面又少了 be 動詞（was wakened 才是被動）。
+常考字詞與句型
+be woken up by（被……吵醒）、wake up（醒來、叫醒）、wake sb up（把某人叫醒）、oversleep（睡過頭）、a wake-up call（晨喚電話、警訊）、at six o'clock（在六點）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Guest: My name is Hagen. I'm in room 229. This morning I 16 at 6 o'clock by a telephone call that wasn't for me. Now this is the second time this 17 . It's just not good enough! The call was for a Mr. Haugen! Don't you people listen!
+Receptionist: I'm 18 terribly sorry, Mr. Hagen. I will inform the early morning supervisor. She will ensure it doesn't happen again.
+Guest: Well, I hope not! Also, I received this FAX this morning. I've only got the first two pages. 19 should be four more. Didn't anyone check? This is a very important document!
+Receptionist: I 20 apologize, Mr. Hagen. I'll check the FAX office right away. Could I have those two sheets, please?
+中譯：房客：我叫哈根，住在 229 號房。今天早上六點，我被一通不是找我的電話吵醒。這已經是這星期第二次了！這樣真的太不像話了！那通電話是要找豪根先生的！你們都沒在聽嗎！櫃檯人員：真的非常抱歉，哈根先生。我會通知早班主管，她會確保這種事不再發生。房客：希望如此！還有，我今早收到一份傳真，但只收到前兩頁。應該還有四頁才對。難道沒有人檢查過嗎？這是非常重要的文件！櫃檯人員：我誠心跟您道歉，哈根先生。我會馬上去查傳真機。可以請您把那兩頁給我嗎？
+📋 內容大意
+A hotel guest angrily complains that a wrong wake-up call has woken him a second time.（敘事文）
+The receptionist apologizes and promises to tell the supervisor so that it will not happen again.（敘事文）
+The guest then complains that four pages of an important fax are missing.（敘事文）
+The receptionist apologizes again and offers to check the fax office at once.（敘事文）
+回到88 年學測第17題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dz96-44/index.html
+Author: staresto-create ZZSH
+Title: 指考 96年 篇章結構 第44題詳解（掌握段落內語句的連貫性與一致性）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 指考 96年 ／ 第44題
+指考 96年 篇章結構 第44題
+選文：日本的高齡就業（Japan's Aging Workforce）
+掌握段落內語句的連貫性與一致性線索：指示詞、轉折詞答對率 30%
+(A)The new policy could be a strain for employers.這項新政策對雇主來說可能是一大負擔。
+(B)Therefore, aged Japanese are now being encouraged to work longer in life.因此，日本現在鼓勵高齡者多工作幾年。
+(C)And, unlike the U.S., Japan has no law against discrimination based on age.而且，日本不像美國，沒有禁止年齡歧視的法律。
+(D)But by 2025, they won’t get any until they are 65.但到了二〇二五年，他們要等到六十五歲才領得到。
+(E)These people born between 1947 and 1949 make up 5.2 million members of the work force.這些一九四七到一九四九年間出生的人，在勞動力中占了五百二十萬人。
+答案：(E) These people born between 1947 and 1949 make up 5.2 million members of the work force.
+題目編號：Dz96_44
+解析
+先看空格前面。 前一句說：因為日本嬰兒潮世代大批退休，企業原本正要省下一大筆人事費。
+再看空格後面。 後面是 Consequently, there was much opposition from corporations to the new retirement law.（因此，企業界對新的退休法反彈很大。）Consequently（因此）要有原因，而且反彈有多大，原因就要有多重。
+前一句已經給了一半原因（本來可以省錢），但沒說省多少。E 補上數字：五百二十萬人。These people 指的就是前一句的嬰兒潮世代。有了這個數字，「反彈很大」才有分量。
+如果你選了 C（而且，日本不像美國，沒有禁止年齡歧視的法律。）：C 也在講阻力。但 C 談的是「政府管不動」，和「企業損失多大」是兩個層次；Consequently 前面要的是企業的損失。
+【下次先看這裡】後面是 Consequently、As a result，先問「這個結果有多強」。反應很激烈，前面通常要有一個具體數字來支持。
+線索與數據
+線索種類指示詞、轉折詞
+線索在哪兩側 These people；後句 Consequently
+答對率30%
+鑑別度34
+本篇題型5選5・刪去法可收尾
+數據出處：本頁的答對率與鑑別度來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響。
+展開本題所在的整篇選文與中文翻譯
+本篇共 5 格、5選5；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+Japan is dealing with a problem that’s just starting to sweep the world—an aging population combined with a shrinking work force. 41 By so doing, it is hoped that Japan’s government will save its increasingly burdened pension (i.e., payment received after retirement) system from going bankrupt. In 2000, the Japanese could get a full pension from the government at 60. 42 What’s more, premiums paid by workers every month are set to rise while payouts they get after retirement fall.
+To help workers to cope with this, Japan passed a law last year that requires companies by 2013 to raise their retirement age from 60 to 65 or rehire their retired workers. 43 In a country where forced layoffs are a last resort, large companies traditionally have relied on retirement to reduce payrolls. They were just about to enjoy a big cut in personnel costs because of the mass retirement of Japan’s baby boomers. 44These people born between 1947 and 1949 make up 5.2 million members of the work force. Consequently, there was much opposition from corporations to the new retirement law. Early signs suggest that large corporations will hesitate in raising their retirement ages. 45 Violators of the new law would face only “administrative guidance,” not penalties. Such resistance is hurting the effectiveness of the policies, which may thus prolong the aging problem.
+中譯
+日本正在處理一個才剛開始席捲全世界的問題——人口老化，同時勞動力萎縮。41 藉此，日本政府希望能讓負擔日益沉重的年金制度（也就是退休後領取的給付）免於破產。二○○○年時，日本人六十歲就可以從政府那裡領到全額年金。42 此外，勞工每月繳的保費將調升，退休後領到的給付則將減少。
+為了幫勞工因應這件事，日本去年通過一項法律，要求企業在二○一三年前把退休年齡從六十歲提高到六十五歲，或者把退休員工再僱用回來。43 在一個把強制裁員當成最後手段的國家，大企業傳統上都是靠退休來縮減人事。日本嬰兒潮世代大量退休，本來正要讓這些企業大幅節省人事成本。44 因此，企業界對這項新的退休法規有很多反對聲音。早期跡象顯示，大企業對於調高退休年齡會有所遲疑。45 違反新法者只會受到「行政指導」，不會有罰則。這樣的抵制正在削弱政策的效果，也可能因此拖長老化問題。
+← 第43題回到互動練習第45題 →
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

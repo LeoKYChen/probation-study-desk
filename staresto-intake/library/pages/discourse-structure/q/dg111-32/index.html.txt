@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dg111-32/index.html
+Author: staresto-create ZZSH
+Title: 學測 111年 篇章結構 第32題詳解（掌握段落內語句的連貫性與一致性）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 學測 111年 ／ 第32題
+學測 111年 篇章結構 第32題
+選文：日本盂蘭盆節（The Obon Festival）
+掌握段落內語句的連貫性與一致性線索：舉例、結論的位置提示詞答對率 45%
+(A)Some people also visit the cemetery to clean up the family graves and pray for their ancestors.有些人也會去墓園整理家族墓地、向祖先祭拜。
+(B)Such festive activities are usually held in parks, temples, and other public places around Japan.這類節慶活動通常在日本各地的公園、寺廟和其他公共場所舉行。
+(C)Obon concludes with another bonfire, okuribi, lighting up the sky to see the ancestors’ spirits off.Obon 以另一場火 okuribi 作結，照亮天空，送走祖先的靈魂。
+(D)Originating from the Chinese Ghost Festival, this annual event has evolved into a time of family reunion.這個一年一度的節日源自中國的中元節，如今已演變成家人團聚的時節。
+答案：(A) Some people also visit the cemetery to clean up the family graves and pray for their ancestors.
+題目編號：Dg111_32
+解析
+先看空格前面。 前面講 mukaebi（迎火）：人們在家門前生一小堆火，替回家的靈魂引路。這是第一項儀式。
+再看空格後面。 後面說供品會擺在家中的佛壇和寺廟裡。這是另一項儀式，而且沒有任何轉折詞——表示還在同一份清單上往下列。
+空格夾在兩項儀式中間，要放的就是清單上的另一項。A 的 also（也）正是往清單上再加一項的用字，掃墓、祭拜也和前後同屬祭祀活動。
+這一題有個特別的地方：它的鑑別度只有 26，是這一篇最低的——高分群和其他考生答對的比例很接近。原因大概在於這一格前後沒有任何一個字重複出現，唯一的線索是 also 這個很小的字，而且三段都在列儀式，看起來哪一項擺哪裡都通。這種題目要靠段落分工來判斷：第二段講「迎」，第三段講「送」，掃墓屬於迎回來之後做的事。
+如果你選了 B（這類節慶活動通常在日本各地的公園、寺廟和其他公共場所舉行。）：B 的 Such festive activities（這類節慶活動）要指回前面提過的活動，可是前面只有「在家門前生火」一件事，稱不上「這類節慶活動」；而且 B 講的是地點，接不上後面的供品。
+【下次先看這裡】前後都在列同一類東西、又沒有轉折詞，空格幾乎一定是清單上的另一項。先確認這一項屬於哪一段的分工。
+線索與數據
+線索種類舉例、結論的位置提示詞
+線索在哪兩側都沒有 also
+答對率45%
+鑑別度26
+本篇題型4選4・刪去法可收尾
+數據出處：本頁的答對率與鑑別度來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響。
+展開本題所在的整篇選文與中文翻譯
+本篇共 4 格、4選4；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+Obon, or the Bon Festival, is a Japanese holiday that honors the spirits of the dead. 31 The festival usually lasts for four to five days in August. During this period, many people travel back to their hometowns and spend time with loved ones, both past and present.
+前段儀式：迎火、掃墓與供品
+Though not a national holiday, Obon is surely one of the most traditional events of the year. Celebration often begins with mukaebi (welcoming fire), during which people make a small bonfire in front of their house to guide spirits upon their return back home. 32Some people also visit the cemetery to clean up the family graves and pray for their ancestors. Food offerings are presented at house altars and temples. Some regions prepare horses made of cucumbers and cows made of eggplants, hoping that the spirits will come back to Earth quickly, on a horse, and leave slowly, riding the cow.
+33 Paper lanterns and offerings are sent floating down rivers to accompany the ancestors back to their resting place. Many areas will also organize bon-odori dances. The style of the dances varies from region to region but is normally based on the rhythms of taiko drums. Performers usually play on a tall stage with lanterns and banners strung all around. Participants, often dressed in light cotton kimonos, are encouraged to dance to the music around the stage. 34 Originally dedicated to the deceased, the dances have now become a symbol of the summer festival themselves.
+中譯
+Obon，即盂蘭盆節，是日本一個追念亡者靈魂的節日。31 這個節日通常在八月，為期四到五天。這段期間，許多人會回到故鄉，和所愛的人共度時光——包括已經過世的和還在世的。
+盂蘭盆節雖然不是國定假日，卻無疑是一年之中最傳統的活動之一。慶祝通常從 mukaebi（迎火）開始，人們在自家門前生一小堆火，替返家的靈魂引路。32 供品會擺在家中的佛壇和寺廟裡。有些地區會用小黃瓜做馬、用茄子做牛，希望靈魂騎馬快快回到人間，再騎牛慢慢離開。
+33 紙燈籠和供品會被放進河裡漂流，陪伴祖先回到安息之處。許多地方也會舉辦 bon-odori（盆舞）。舞蹈的形式各地不同，但通常以太鼓的節奏為基礎。表演者多半在一座高台上演出，四周掛滿燈籠和旗幟。參加的人常穿著輕薄的棉質浴衣，可以隨著音樂繞著高台起舞。34 這些舞蹈原本是為亡者而跳，如今本身已成為夏日祭典的象徵。
+← 第31題回到互動練習第33題 →
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

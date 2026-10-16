@@ -1,0 +1,156 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/z109p2.html
+Author: staresto-create ZZSH
+Title: 109 指考閱讀測驗：馬里亞納海溝的深海汙染｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 109 指考
+109 指考閱讀測驗：馬里亞納海溝的深海汙染
+Deep-Sea Pollution in Mariana Trench
+指考 109年第 40–43 題4 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段The planet’s deepest point is in the Pacific Ocean’s Mariana Trench, which lies miles below the sea surface. According to a new study published in Nature Ecology & Evolution, even in this remote locale, creatures cannot escape pollution.
+第 2 段A team of researchers recently sent a remotely operated vehicle into the depths of the Mariana Trench. They found that extraordinarily high levels of forbidden industrial chemicals are contaminating marine life more than 7 miles deep in the trench. The small hard-shelled marine life that the robotic submarine brought to the surface was polluted with toxic chemicals, with toxin levels 50 times greater than those of the most heavily polluted rivers in the world.
+第 3 段These pollution levels were not the only alarming aspect of the discovery. The types of compounds found were all considered “persistent organic pollutants” (POPs), meaning they stick around in the environment for a very long time. Two of the most prevalent types are PCBs and PBDEs. PCBs were once used in many industrial applications, but were outlawed in the United States in the 1970s after being linked to cancer. Similarly, PBDEs were used in a wide range of products—from electronics to couch cushions. Neither chemical breaks down in the environment.
+第 4 段These compounds stick to the surface of materials like plastic. Many creatures mistakenly eat this colorful but toxic material, causing the POPs to build up in their bodies, lurking in their fat tissues. When these sea creatures die, their POP-riddled bodies sink to the ocean floor, where deep-sea marine life eat their remains. POPs are therefore transferred to other creatures along the food chain.
+第 5 段The Mariana Trench is many miles away from any industrial source. This suggests that these pollutants travel over long distances despite having been prohibited worldwide decades ago.
+題目
+40.What is the passage mainly about?
+(A)The decrease of polluted creatures in the food chain.
+(B)Using remote control in research on marine pollution.
+(C)Pollution of the deep sea by persistent toxic chemicals.
+(D)Types of chemical pollution caused by industrial applications.
+41.Which of the following is closest in meaning to “POP-riddled” in paragraph 4?
+(A)Operated by POPs.
+(B)Filled with POPs.
+(C)Completed with POPs.
+(D)Discarded by POPs.
+42.According to the passage, which of the following statements is true?
+(A)PCBs are often used in making electronic products.
+(B)Chemicals washed down to the ocean stay on the surface.
+(C)The deepest point of the Mariana Trench is free from pollution.
+(D)A robotic vehicle was used to help study pollution in the Mariana Trench.
+43.Which of the following can be inferred from the passage?
+(A)Marine pollution poses a threat to human health.
+(B)Strict regulations are being developed to stop ocean pollution.
+(C)PCBs and PBDEs become less harmful over long periods of time.
+(D)Chemical pollution is more serious in rivers than in industrial areas.
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+40
+(C)
+72%
+55
+41
+(B)
+73%
+62
+42
+(D)
+64%
+66
+43
+(A)
+50%
+39
+答對率與鑑別度出處：大考中心 109 學年度指定科目考試統計圖表：英文科答對率及鑑別度表
+每一題的依據句
+第 40 題 主旨題 Main idea
+依據句：全文要讀完整篇才能判斷，不在某一句裡。
+第 1 段說即使在地球最深的馬里亞納海溝，生物也逃不過汙染；第 2 段說海溝深處的生物體內有濃度極高的有毒化學物質；第 3 段說這些都是會在環境中留存很久的持久性有機汙染物；第 4、5 段說明這些汙染物怎麼沿著食物鏈、長距離傳到深海。全文講的是持久性有毒化學物質汙染深海，所以是 (C)。(B) 照抄第 2 段的 remote，遙控載具只是研究用的工具，過於狹隘；(D) 照抄第 3 段的 industrial applications，化學物質的種類和用途只是第 3 段的內容，過於狹隘；(A) 照抄第 4 段的 food chain，原文說汙染物沿著食物鏈傳下去，沒有說受汙染的生物變少，偏離主題。
+錯誤選項：(A) 偏離主題；(B) 過於狹隘（只講第 2 段）；(D) 過於狹隘（只講第 3 段）
+第 41 題 詞義題 Vocabulary in context
+第 4 段causing the POPs to build up in their bodies, lurking in their fat tissues.
+第 4 段先說生物誤吃了沾著 POPs 的塑膠，POPs 就在牠們體內累積（build up in their bodies），潛藏在脂肪組織裡；接著說這些生物死後，POP-riddled 的屍體沉到海底。體內累積了大量 POPs 的屍體，就是充滿 POPs 的屍體，所以是 (B)。be riddled with 是「充滿（不好的東西）」。(A) 照抄第 2 段的 operated，遙控操作的是研究用的載具；(C) 完成、(D) 丟棄，都接不上前一句說的累積。
+怎麼從前後文推出字義 →
+第 42 題 細節題（何者為是） Supporting details
+第 2 段A team of researchers recently sent a remotely operated vehicle into the depths of the Mariana Trench.
+原文 → 正確選項
+remotely operated vehicle → robotic vehicle
+第 2 段說研究團隊派了一具遙控載具（remotely operated vehicle）潛入馬里亞納海溝，後面也稱它為 robotic submarine，選項換成 A robotic vehicle was used，所以是 (D)。(A) 照抄第 3 段的 electronic，用在電子產品上的是 PBDEs，不是 PCBs；(B) 照抄第 4 段的 surface，化合物附著在塑膠的表面，生物死後還會沉到海底，不是一直留在海面；(C) 照抄第 1 段的 deepest point，原文說即使在最深的地方，生物也逃不過汙染。
+第 43 題 推論題 Inference
+第 3 段were outlawed in the United States in the 1970s after being linked to cancer.
+第 4 段POPs are therefore transferred to other creatures along the food chain.
+原文 → 正確選項
+linked to cancer → threat to human health
+這一題要把兩段合起來推論。第 3 段說 PCBs 發現和癌症有關（linked to cancer）以後，美國就禁用了；第 4 段說 POPs 會沿著食物鏈傳到其他生物身上。人吃海裡的魚貝，也在這條食物鏈上，海洋裡的這些汙染物就可能進到人體，所以可以推論海洋汙染威脅人類健康，是 (A)。(C) 照抄 PCBs and PBDEs，原文說這兩種化學物質都不會在環境中分解，時間久了也不會變得比較無害；(D) 照抄第 2 段的 rivers，原文是拿汙染最嚴重的河川來比較海溝生物體內的毒素濃度，沒有比較河川和工業區；(B) 第 5 段說這些汙染物幾十年前就已經禁用，沒有提到正在制定新的法規。
+逐段中譯
+第 1 段地球最深的地方，在太平洋的馬里亞納海溝，位於海面下好幾英里。根據《Nature Ecology & Evolution》期刊最新發表的一項研究，即使在這麼偏遠的地方，生物也逃不過汙染。
+第 2 段一個研究團隊最近派了一具遙控載具潛入馬里亞納海溝深處。他們發現，在海溝 7 英里以下的深處，濃度極高的禁用工業化學物質正在汙染海洋生物。這艘機器潛水艇帶回海面的小型甲殼類海洋生物，體內有有毒的化學物質，毒素濃度是全世界汙染最嚴重的河川的 50 倍。
+第 3 段令人憂心的，不只是這些汙染程度。研究找到的化合物，全都屬於「持久性有機汙染物」（POPs），意思是這些物質會在環境中留存很長的時間。最常見的兩種是 PCBs 和 PBDEs。PCBs 過去用在許多工業用途上，但在 1970 年代發現和癌症有關以後，美國就禁用了。同樣地，PBDEs 也曾用在各式各樣的產品上，從電子產品到沙發坐墊都有。這兩種化學物質都不會在環境中分解。
+第 4 段這些化合物會附著在塑膠等材料的表面。很多生物誤吃了這些色彩鮮豔卻有毒的東西，POPs 就在牠們體內累積，潛藏在脂肪組織裡。這些海洋生物死後，充滿 POPs 的屍體沉到海底，深海的海洋生物再吃下這些遺骸。POPs 就這樣沿著食物鏈，傳到其他生物身上。
+第 5 段馬里亞納海溝離任何工業汙染源都有好幾英里遠。這表示，雖然這些汙染物幾十年前就已經在全球禁用，仍然能夠遠距離移動。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。這一篇沒有一句話直接點出全文中心思想，怎麼從各段歸納，請看第 40 題（主旨題）的解析。
+第 1 段According to a new study published in Nature Ecology & Evolution, even in this remote locale, creatures cannot escape pollution.
+第 2 段They found that extraordinarily high levels of forbidden industrial chemicals are contaminating marine life more than 7 miles deep in the trench.
+第 3 段The types of compounds found were all considered “persistent organic pollutants” (POPs), meaning they stick around in the environment for a very long time.
+第 4 段POPs are therefore transferred to other creatures along the food chain.
+第 5 段This suggests that these pollutants travel over long distances despite having been prohibited worldwide decades ago.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體說明文 Expository
+組織方式因果關係 Cause-Effect這一類怎麼辨識 →
+關鍵轉折詞Similarlythereforedespite
+綱要
+地球最深處在太平洋的馬里亞納海溝，《Nature Ecology & Evolution》的新研究發現，即使在這麼偏遠的地方，生物也逃不過汙染。
+研究團隊派遙控載具潛入海溝，發現海溝 7 英里以下的海洋生物體內，禁用的工業化學物質濃度高得驚人，帶上來的小型甲殼生物毒素濃度是全世界汙染最嚴重河川的 50 倍。
+這些化合物屬於「持久性有機汙染物」(POPs)，最常見的是 PCBs 和 PBDEs：PCBs 曾廣泛用於工業，1970 年代因為和癌症有關而禁用；(Similarly) PBDEs 同樣用途廣泛，從電子產品到沙發坐墊都有；兩種都不會在環境中分解。
+這些化合物附著在塑膠上，生物誤吃後在體內脂肪累積；生物死後沉到海底，深海生物吃下遺骸，POPs (therefore) 因此沿著食物鏈傳下去。
+馬里亞納海溝離任何工業汙染源都很遠，表示這些汙染物 (despite) 雖然幾十年前就全球禁用，仍能長距離移動。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 11 個、參考字彙 15 個、字詞搭配 13 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+remote[rɪˈmoʊt]adj.偏遠的三級第 1 段詞彙題考過 2 次：114 學測第 6 題（誘答）、106 學測第 3 題（答案）
+researcher[ˈrisɚʧɚ]n.研究人員四級第 2 段詞彙題考過 1 次：109 學測第 3 題（誘答）
+extraordinarily （詞彙表：extraordinary）[ɪkˌstrɔrdəˈnɛrəli]adv.非常、格外地五級第 2 段詞彙題考過 1 次：97 指考第 5 題（答案）
+contaminate[kənˈtæməˌneɪt]v.汙染五級第 2 段詞彙題考過 1 次：102 指考第 1 題（答案）
+aspect[ˈæspɛkt]n.方面、部分四級第 3 段詞彙題考過 1 次：81 聯考第 9 題（誘答）
+application[ˌæpləˈkeɪʃən]n.用途（industrial applications 工業用途）四級第 3 段詞彙題考過 1 次：103 指考第 7 題（誘答）
+product[ˈprɑdəkt]n.產品三級第 3 段詞彙題考過 3 次：94 學測第 4 題 products（答案）、87 聯考第 10 題 products（誘答）、81 聯考第 10 題（誘答）
+remains （詞彙表：remain）[rɪˈmeɪnz]n.遺骸、屍體三級第 4 段詞彙題考過 4 次：91 學測第 3 題（誘答）、88 聯考第 5 題 remained（誘答）、85 聯考第 10 題 remains（誘答）、82 聯考第 7 題 remained（答案）
+transfer[trænsˈfɝ]v.轉移、傳到四級第 4 段詞彙題考過 6 次：111 學測第 10 題 transfers（誘答）、102 學測第 2 題 transferred（誘答）、101 學測第 14 題（誘答）、96 學測第 8 題 transferred（誘答）、95 學測第 11 題（誘答）、92 學測補考第 5 題（誘答）
+decrease[ˈdikris]n.減少三級第 40 題詞彙題考過 2 次：109 學測第 4 題 decreased（答案）、100 學測第 11 題（誘答）
+regulation[ˌrɛgjəˈleɪʃən]n.法規、規定四級第 43 題詞彙題考過 2 次：110 指考第 4 題 regulations（誘答）、104 學測第 13 題（答案）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+trench[trɛnʧ]n.海溝表外第 1 段
+locale[loʊˈkæl]n.地點、場所表外第 1 段
+marine[məˈrin]adj.海洋的（marine life 海洋生物）五級第 2 段
+robotic[roʊˈbɑtɪk]adj.機器人的、自動操控的（robotic submarine 無人潛水艇）表外第 2 段
+toxic[ˈtɑksɪk]adj.有毒的五級第 2 段
+toxin[ˈtɑksən]n.毒素表外第 2 段
+compound[ˈkɑmpaʊnd]n.化合物五級第 3 段
+persistent[pɚˈsɪstənt]adj.持久的、長期存在的六級第 3 段
+pollutant[pəˈlutənt]n.汙染物表外第 3 段
+prevalent[ˈprɛvələnt]adj.常見的、普遍的表外第 3 段
+outlaw[ˈaʊtˌlɔ]v.宣布……違法、禁止六級第 3 段
+lurk[lɝk]v.潛伏、藏著表外第 4 段
+prohibit[proʊˈhɪbət]v.禁止五級第 5 段
+discard[dɪˈskɑrd]v.丟棄六級第 41 題
+infer[ɪnˈfɝ]v.推論、推斷六級第 43 題
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+escape + N逃過……第 1 段原文：creatures cannot escape pollution
+be polluted with + N沾上……等汙染物第 2 段原文：was polluted with toxic chemicals
+stick around留著不走、久久不散第 3 段原文：they stick around in the environment
+be linked to + N和……有關第 3 段原文：after being linked to cancer
+a wide range of + N各式各樣的……第 3 段原文：in a wide range of products
+break down分解第 3 段原文：Neither chemical breaks down in the environment
+stick to + N黏在……上第 4 段原文：stick to the surface of materials
+build up累積第 4 段原文：causing the POPs to build up in their bodies
+sink to the ocean floor沉到海底第 4 段
+transfer + sth + to + N把……轉移到……第 4 段原文：POPs are therefore transferred to other creatures
+along the food chain沿著食物鏈第 4 段
+travel long distances遠距離移動第 5 段原文：travel over long distances
+despite + N／V-ing儘管……第 5 段原文：despite having been prohibited worldwide
+← 上一篇篇目一覽下一篇 →
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

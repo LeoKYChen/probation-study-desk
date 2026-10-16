@@ -1,0 +1,44 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g104-23-2/index.html
+Author: staresto-create ZZSH
+Title: 104 年學測克漏字第23題詳解（分詞／動狀詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 104 年學測 ／ 第23題
+104 年學測 克漏字 第23題
+分詞／動狀詞線索：句內答對率 36%
+答對率 36%：當年每 100 位考生，有 36 位答對。
+In places like India, the peacock is considered lucky because the great many “eyes” on its feathers are said to alert it to 23 evil.
+(A)approach
+(B)approaching
+(C)approached
+(D)be approaching
+答案：(B) approaching
+題目編號：G104_23_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+alert sb to sth 的 to 是介系詞，後面須接名詞，故空格要填修飾 evil 的現在分詞 approaching（逼近的）；approach 與 be approaching 都是動詞形式，approached 為被動意味，都不合。
+深入解析
+你可能會這樣想
+看到空格前面的 to，你大概會直覺接原形動詞，於是選 approach。這個 to 不是不定詞，是 alert sb to sth（提醒某人注意某事）本身帶的介系詞。
+怎麼判斷
+判斷的依據在空格前後兩側：前面是 alert it to 的 to，後面是名詞 evil。alert sb to sth 的 to 是介系詞，其後須接名詞；而該名詞 evil 已經印在空格後面，可知空格要填的是修飾 evil 的字，也就是現在分詞 approaching（正在逼近的），全句意為「羽毛上眾多眼睛狀的花紋據說能提醒牠留意逼近的邪惡」。凡是空格前有 to 的題目，判斷步驟相同：先看空格後面接的是什麼。像本題空格後面已經有名詞 evil，可見這個 to 是介系詞，空格只能填修飾 evil 的字；alert sb to sth、be used to V-ing 的 to 都是介系詞，後面接名詞或動名詞，而 be determined to V、be delighted to V 的 to 則是不定詞，後面接原形動詞。
+誘答選項
+approach 是原形動詞，介系詞 to 後面不接原形。be approaching 同樣是動詞形式，不能放在介系詞之後，且該子句已有動詞 are said。approached 為過去分詞，表示被動或動作已完成，而 evil 是逼近的一方，語意不合。
+常考字詞與句型
+alert sb to sth（提醒某人注意某事）、look forward to + V-ing（期待）、be used to + V-ing（習慣於）、object to + V-ing（反對）、an approaching storm（逼近的暴風雨）。其中 be used to + V-ing 這一組考過 4 個年度，83 年第 15 題 →、99 年第 16 題 →、105 年第 21 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Much like the dove and robin, the bluebird is considered a very lucky sign in most cultures, particularly when seen in the spring. 21 , a woodpecker, when seen near the home, is regarded as a good sign. In contrast, the peacock is not 22 seen as lucky. In places like India, the peacock is considered lucky because the great many "eyes" on its feathers are said to alert it to 23 evil. Peacocks are also highly valued in China and Japan, where they are kept as symbols by the ruling families to 24 their status and wealth.
+However, the peacock receives only scorn from the rest of the world. The feathers of peacocks are considered the most 25 part of the bird because the eye-shaped markings on them are associated with "evil eyes." To bring the evil eye into the home is thus believed to invite trouble and sorrow.
+中譯：就像鴿子和知更鳥一樣，藍鳥在大多數文化中都被視為十分吉利的象徵，尤其是在春天看到的時候。同樣地，若在家附近看到啄木鳥，也被視為一種吉兆。相較之下，孔雀就不一定被視為吉祥的象徵了。在印度等地，孔雀被認為是吉祥的，因為牠羽毛上眾多「眼睛」般的花紋，據說能提醒牠留意逼近的邪惡。孔雀在中國和日本也備受重視，統治家族會飼養孔雀作為地位與財富的象徵。然而，在世界其他地方，孔雀卻常常受到輕視——孔雀的羽毛被認為是牠身上最不吉利的部位，因為羽毛上眼睛狀的花紋，常被聯想成「邪眼」。因此，人們相信把「邪眼」帶進家中，會招致麻煩與不幸。
+📋 內容大意
+Unlike birds that symbolize good fortune, peacocks hold complex cultural meanings, revered in Asian nations as symbols of protection and wealth, but shunned elsewhere as signs of bad luck.
+← 第22題回到104 年學測第24題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,6745 @@
+[
+ {
+  "id": "y109",
+  "year": "109年",
+  "accuracyRateSource": "大考中心 109 學年度學科能力測驗統計圖表：英文科答對率及鑑別度表",
+  "exam": "學測",
+  "examType": "正式考試",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "酒窩的成因（The Causes of Dimples）",
+  "flagNote": null,
+  "options": {
+   "A": "flaw",
+   "B": "exhibit",
+   "C": "chubby",
+   "D": "attractiveness",
+   "E": "fade",
+   "F": "rare",
+   "G": "range",
+   "H": "transfer",
+   "I": "natural",
+   "J": "presence"
+  },
+  "paras": [
+   {
+    "label": "【第一段】現象與文化觀感 → 科學真相的反轉",
+    "segs": [
+     [
+      "Dimples are small folds or indentations on the cheeks of one's face. Generally, they appear on both cheeks; a single dimple on one cheek is a relatively",
+      null
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      "phenomenon. Some cultures are found to show preference for dimples on one's cheeks, as the feature is claimed to be a sign of",
+      null
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      ".",
+      null
+     ],
+     [
+      " Though",
+      "trans"
+     ],
+     [
+      " often associated with beauty,",
+      "gradient"
+     ],
+     [
+      " most dimples are actually a genetic",
+      "gradient"
+     ],
+     [
+      " ",
+      "gradient"
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      "caused by shortened facial muscles.",
+      "gradient"
+     ],
+     [
+      " When a person smiles, the shorter-than-normal muscle pulls up the facial skin, which in turn creates a small indentation—or dimple—in the skin. Such dimples tend to occur in families, and are assumed to be an inherited feature.",
+      null
+     ],
+     [
+      " In fact",
+      "trans"
+     ],
+     [
+      ", some researchers believe that the",
+      null
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      "of dimples from parents to children takes only one gene. If neither of the parents has dimple genes, their children will not",
+      null
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      "the trait.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】例外情況：非遺傳性的酒窩",
+    "segs": [
+     [
+      "Not all dimples are formed by a genetic defect,",
+      "topic"
+     ],
+     [
+      " though",
+      "trans"
+     ],
+     [
+      "; some may appear due to the",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      "of excessive fat on the face.",
+      "topic"
+     ],
+     [
+      " Such dimples are not a permanent trait,",
+      null
+     ],
+     [
+      " for",
+      "trans"
+     ],
+     [
+      " they vanish when the excessive fat goes away. Many babies, for example, have dimples on their",
+      null
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      "cheeks.",
+      null
+     ],
+     [
+      " As",
+      "trans"
+     ],
+     [
+      " they grow older and lose their baby fat, the dimples may",
+      null
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      "with time.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】解決方案：人工創造酒窩",
+    "segs": [
+     [
+      "For those people who were born without",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      "dimples, various methods can be applied to successfully create them.",
+      "topic"
+     ],
+     [
+      " These methods",
+      null
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      "from a simple step like makeup to a drastic one like surgery. It all depends on whether you think it is worth the effort.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“most dimples are actually a genetic ___ caused by shortened facial muscles”",
+  "thesisExplain": "酒窩人人愛，這篇偏要從另一個角度講。全文的中心思想落在這一句，關鍵在第 33 格：前面先鋪「酒窩＝好看」這個大家都同意的說法，Though 一轉，整篇對酒窩的定調就換了；這一格填什麼，定調就是什麼。位置上，它夾在 a genetic ___ caused by 中間，前面是冠詞加形容詞、後面是過去分詞片語，詞性就這樣固定下來，剩下才是挑意思。往下讀，dimples、such dimples、they 這條隱形連結，加上 In fact、though、for、As 幾個轉承點，就是後兩段（嬰兒肥消掉就不見的那種、後天做出來的那種）扣回主旨的方式。寫作上這個骨架直接搬得動：先寫大家普遍怎麼想，再用一句轉折立自己的主張，後面每段回頭扣它。86 年學測問你同不同意 Laughter is better than medicine，用的就是這個方法。",
+  "macro": {
+   "structure": "先破後立型 — 普遍認知(hook) → Though轉折點出科學真相 → 補充例外情況 → 提出解決方案",
+   "patterns": "現象解釋 (Phenomenon Explanation) + 問題解決 (Problem-Solution)",
+   "transitions": "Though（讓步轉折，帶出全文中心思想）→ In fact（補充具體研究細節）→ though（第二段再次讓步轉折，帶出例外）→ for（因果說明）→ As（伴隨時間關係）",
+   "outline": [
+    "1. 現象定義與文化觀感（單邊酒窩相對罕見／被視為吸引力象徵）",
+    "2. 科學真相反轉：遺傳性肌肉缺陷造成的酒窩（成因機制＋遺傳規律）",
+    "3. 例外情況：脂肪造成的非永久性酒窩（以嬰兒肥為例）",
+    "4. 解決方案：人工創造酒窩的方法（從化妝到手術）"
+   ]
+  },
+  "zhTranslation": [
+   "酒窩是臉頰上的小凹痕或皺褶。一般來說，酒窩會同時出現在兩邊臉頰；只有一邊臉頰有酒窩則相對罕見。有些文化認為酒窩是吸引力的象徵。雖然酒窩常讓人聯想到美，但大多數酒窩其實是臉部肌肉發育過短所造成的一種遺傳缺陷。當一個人微笑時，過短的肌肉會把臉部皮膚往上拉，進而在皮膚上形成一個小凹痕，也就是酒窩。這種酒窩往往在家族中反覆出現，一般認為是遺傳特徵。事實上，有些研究者認為，酒窩從父母傳給子女只需要一個基因。如果父母都沒有酒窩基因，他們的孩子就不會表現出這個特徵。",
+   "不是所有酒窩都是遺傳缺陷造成的；有些酒窩可能是因為臉部脂肪過多而出現。這種酒窩不是永久性的特徵，因為當多餘的脂肪消失後，酒窩也會消失。舉例來說，許多嬰兒的圓潤臉頰上就有酒窩。隨著年齡增長、嬰兒肥逐漸消退，這些酒窩也可能隨著時間而淡化消失。",
+   "對於天生沒有酒窩的人來說，可以透過各種方法成功製造出酒窩。這些方法從化妝這種簡單的步驟，到手術這種較激烈的方式都有，全視個人認為是否值得而定。"
+  ]
+ },
+ {
+  "id": "y108",
+  "year": "108年",
+  "accuracyRateSource": "大考中心 108 學年度學科能力測驗統計圖表：英文科答對率及鑑別度表",
+  "exam": "學測",
+  "examType": "正式考試",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "失憶父親的溫暖（A Forgetful Father's Love）",
+  "flagNote": "開頭的 “Or so my mother told us.” 是省略句式，用來表示這是母親轉述、不是敘事者親眼所見的語氣：完整的意思是 or at least that is what my mother told us，前一句「父親婚後就開始健忘」只是母親的說法。",
+  "flagKind": ["語言現象說明"],
+  "options": {
+   "A": "little",
+   "B": "purchases",
+   "C": "trusted",
+   "D": "requests",
+   "E": "insisted",
+   "F": "ready",
+   "G": "ruined",
+   "H": "privilege",
+   "I": "revealed",
+   "J": "obvious"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：父親健忘的怪癖",
+    "segs": [
+     [
+      "My father started to suffer from memory loss right after his marriage.",
+      "topic"
+     ],
+     [
+      " Or so my mother told us. She said they were married on May 26, while my dad's memory told him it was June 25. This often ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      " their anniversary celebration, ",
+      null
+     ],
+     [
+      "for",
+      "trans"
+     ],
+     [
+      " his rose bouquet always came one month late.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】具體例子：買菜清單",
+    "segs": [
+     [
+      "Mom seldom asked Dad to go shopping in the traditional market for her. ",
+      null
+     ],
+     [
+      "But",
+      "trans"
+     ],
+     [
+      " whenever Dad ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " on going, she made sure that he brought a shopping list. ",
+      null
+     ],
+     [
+      "Dad certainly had the list",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " when he left for the market, but he would somehow forget it, and then would find it again only after he returned home.",
+      "topic"
+     ],
+     [
+      " Of course, the ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " that he made were based mainly on his memory of the list. Unfortunately, the items were usually different from Mom's ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      ".",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】轉折：健忘反而成為優點",
+    "segs": [
+     [
+      "My father's poor memory gave him certain advantages, ",
+      "gradient"
+     ],
+     [
+      "though",
+      "trans"
+     ],
+     [
+      ".",
+      "gradient"
+     ],
+     [
+      " For instance, he was ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " with many secrets in my family and our community. ",
+      null
+     ],
+     [
+      "Because of",
+      "trans"
+     ],
+     [
+      " his poor memory, he had the ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " of hearing everyone's private matters. The reason was ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      ": Dad would not remember any of it, we thought. As for our neighbors, they liked to invite my father to dinner so that they could tell him stories about their children, parents, friends, and pets. They also believed the secrets in their families would never be ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      ". They were quite right, ",
+      null
+     ],
+     [
+      "for",
+      "trans"
+     ],
+     [
+      " my father cared ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " about who did what to whom.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】結語：他唯一不會忘記的事",
+    "segs": [
+     [
+      "But",
+      "trans"
+     ],
+     [
+      " there is one thing he would never forget: showing up for dinner on time.",
+      "topic"
+     ]
+    ]
+   }
+  ],
+  "thesis": "“My father's poor memory gave him certain advantages, though.”",
+  "thesisExplain": "全文先用「結婚紀念日搞錯」「買菜清單記錯」兩個生活小插曲鋪陳父親健忘的困擾，再用 though 轉折點出「健忘其實帶來意外好處」——因為記不住秘密，反而成為鄰居信任、樂於傾訴的對象；結尾再用 But 呼應開頭語氣，點出他唯一不會忘記的事(準時吃飯)，形成首尾呼應的溫馨收尾。",
+  "macro": {
+   "structure": "生活軼事型 — 現象鋪陳(健忘的困擾) → though轉折(健忘的意外優點) → 舉例佐證(鄰居信任) → 溫馨收尾(唯一不忘的事)",
+   "transitions": "for（因果，×2）→ But（對比，×2）→ though（讓步轉折，帶出全文中心思想）→ Because of（因果）",
+   "patterns": "記敘文 (Narrative) + 因果關係 (Cause-Effect)",
+   "outline": [
+    "1. 引言：父親婚後開始健忘，連結婚紀念日都記錯",
+    "2. 例子：買菜清單記憶錯亂的生活趣事",
+    "3. 轉折：健忘反而讓他成為鄰居信任、樂於傾訴秘密的對象",
+    "4. 結語：他唯一不會忘記的事——準時赴約吃飯"
+   ]
+  },
+  "zhTranslation": [
+   "我父親從結婚後就開始出現健忘的毛病。至少我母親是這麼跟我們說的。她說他們是5月26日結婚的，但我爸的記憶卻告訴他是6月25日。這常常搞砸了他們的結婚紀念日慶祝，因為他送的玫瑰花束總是晚了一個月才到。",
+   "媽媽很少要求爸爸去傳統市場幫她買菜。但每當爸爸堅持要去的時候，媽媽一定會確保他帶著購物清單出門。爸爸出門去市場時，手上確實會拿著準備好的清單，但他總會不知怎麼地忘了帶清單，回到家後才又找到。當然，他買回來的東西主要都是憑他對清單的記憶採買的。可惜的是，買回來的東西通常跟媽媽要求的不一樣。",
+   "不過，我父親的健忘症其實也帶給他一些意想不到的好處。舉例來說，我們家和社區裡的許多秘密都會託付給他。因為他記性不好，他反而享有聽到大家私事的特殊待遇。原因很明顯：大家都認為，反正爸爸不會記得這些事。至於我們的鄰居，他們喜歡邀請我父親去吃晚餐，好跟他聊聊自己孩子、父母、朋友和寵物的故事。他們也相信，家裡的秘密永遠不會被洩漏出去。他們的想法完全正確，因為我父親壓根不在乎誰對誰做了什麼。",
+   "但有一件事他絕對不會忘記：準時出現吃晚餐。"
+  ],
+  "internalNote": "原稿註記「有特殊句型」，指開頭 “Or so my mother told us.” 的省略句式；說明寫在 flagNote。"
+ },
+ {
+  "id": "y107",
+  "year": "107年",
+  "accuracyRateSource": "大考中心 107 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
+  "exam": "學測",
+  "examType": "正式考試",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "幸運餅乾的起源（The Origins of Fortune Cookies）",
+  "flagNote": null,
+  "options": {
+   "A": "account",
+   "B": "appeared",
+   "C": "competing",
+   "D": "contained",
+   "E": "replaced",
+   "F": "secret",
+   "G": "successful",
+   "H": "tastes",
+   "I": "traces",
+   "J": "treats"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：多種起源說法並存",
+    "segs": [
+     [
+      "Fortune cookies, commonly served after meals at Chinese restaurants in the U.S., are characterized by a fortune, which is written on a small piece of paper tucked inside the cookie.",
+      null
+     ],
+     [
+      " There are several ",
+      "gradient"
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      " stories about the origin of the fortune cookie.",
+      "gradient"
+     ],
+     [
+      " None of them, however, has been proven to be entirely true.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】說法一：中國元朝起義傳說",
+    "segs": [
+     [
+      "One of these stories",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " the cookie's origin back to 13th- and 14th-century China, which was then occupied by the Mongols.",
+      "topic"
+     ],
+     [
+      " According to the legend, notes of ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " plans for a revolution to overthrow the Mongols were hidden in mooncakes that would ordinarily have been stuffed with sweet bean paste. The revolution turned out to be ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " and eventually led to the formation of the Ming Dynasty. This story may sound highly credible, ",
+      null
+     ],
+     [
+      "but",
+      "trans"
+     ],
+     [
+      " there seems to be no solid evidence that it inspired the creation of the ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " we know of today as fortune cookies.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】說法二：David Jung版本",
+    "segs": [
+     [
+      "Another",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " claims that David Jung, a Chinese immigrant living in Los Angeles, created the fortune cookie in 1918.",
+      "topic"
+     ],
+     [
+      " Concerned about the poor people he saw wandering near his shop, he made cookies and passed them out free on the streets. Each cookie ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " a strip of paper inside with an inspirational Bible quotation on it.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】說法三：較普遍接受的版本(Hagiwara)",
+    "segs": [
+     [
+      "However",
+      "trans"
+     ],
+     [
+      ", the more generally accepted story is that the fortune cookie first",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " in either 1907 or 1914 in San Francisco, created by a Japanese immigrant, Makoto Hagiwara.",
+      "topic"
+     ],
+     [
+      " The fortune cookie was based on a Japanese snack, ",
+      null
+     ],
+     [
+      "but",
+      "trans"
+     ],
+     [
+      " Hagiwara sweetened the recipe to appeal to American ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      ". He enclosed thank you notes in the cookies and served them to his guests with tea. Within a few years, Chinese restaurant owners in San Francisco had copied the recipe and ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " the thank-you notes with fortune notes. Such fortune cookies became common in Chinese restaurants in the U.S. after World War II.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“There are several ___ stories about the origin of the fortune cookie. None of them, however, has been proven to be entirely true.”",
+  "thesisExplain": "幸運餅乾到底哪裡來的？開頭兩句合起來才是完整的中心思想，關鍵落在第 31 格。several ___ stories：前面是數量詞、後面是名詞，中間只剩形容詞的位置，這是先定位置、再定意思的典型例子。第二句的 None of them, however 是另外一半——them 回指 stories，however 把「說法好幾種」轉成「一種都沒被證實」，兩句缺一不可。後面三段（元朝起義的傳說、David Jung 的版本、Hagiwara 的版本）彼此平行、互相對照，不是誰對誰錯的辯論。寫作上這是並列式說明文的標準開場：先說有幾種，再說它們彼此的關係。100 年指考問畢業典禮該溫馨、熱鬧還是嚴肅，先並列三種再表態，是同一個做法。",
+  "macro": {
+   "structure": "多方並陳型 — 提出核心懸念(起源眾說紛紜) → 說法一(中國起義傳說，but轉折指出證據不足) → 說法二(David Jung慈善說) → 說法三(Hagiwara較普遍接受的版本，However標示最終採信對象)",
+   "transitions": "however（開頭：懸念鋪陳）→ but（說法一：可信但無證據）→ Another（說法二起始，並列標記）→ However（說法三起始，標示「更普遍被接受」）→ but（Hagiwara改編：日式點心→美式口味）",
+   "patterns": "說明文 (Expository) + 比較對比 (Compare/Contrast)",
+   "outline": [
+    "1. 引言：幸運餅乾起源眾說紛紜，無一被證實",
+    "2. 說法一：中國元朝抗蒙起義藏字條傳說(可信但無實證)",
+    "3. 說法二：David Jung 1918年慈善發放版本",
+    "4. 說法三：Hagiwara 1907/1914舊金山版本(較普遍接受的說法)"
+   ]
+  },
+  "zhTranslation": [
+   "幸運餅乾在美國中式餐廳飯後常見，特色是裡面藏著一張寫有幸運籤語的小紙條。關於幸運餅乾的起源，有好幾種彼此競爭的說法。不過，這些說法都沒有一個被證實完全屬實。",
+   "其中一種說法把幸運餅乾的起源追溯到13、14世紀被蒙古人統治的中國。傳說中，寫有推翻蒙古人起義計畫的秘密紙條，被藏在原本應該包著甜豆沙餡的月餅裡。這場起義後來成功了，並最終促成明朝的建立。這個故事聽起來相當可信，但似乎沒有確切證據顯示，它就是今日我們所知幸運餅乾這種點心的起源。",
+   "另一種說法則主張，住在洛杉磯的華裔移民 David Jung在1918年發明了幸運餅乾。他看到店舖附近有許多流浪的窮人，心生憐憫，於是做了餅乾免費發放給他們。每塊餅乾裡都夾著一張寫有勵志聖經語錄的紙條。",
+   "然而，較普遍被接受的說法是，幸運餅乾最早於1907年或1914年出現在舊金山，由日本移民萩原眞創造。幸運餅乾是根據一種日式點心改良而來，萩原眞把配方調得更甜，以迎合美國人的口味。他會在餅乾裡放入感謝字條，並搭配茶水招待客人。幾年之內，舊金山的中式餐廳老闆便仿效了這個配方，把感謝字條換成了幸運籤語。這種幸運餅乾在二次大戰後，就在美國的中式餐廳裡變得普遍。"
+  ]
+ },
+ {
+  "id": "y106",
+  "year": "106年",
+  "accuracyRateSource": "大考中心 106 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
+  "exam": "學測",
+  "examType": "正式考試",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "古埃及人與洋蔥（Onions in Ancient Egypt）",
+  "flagNote": null,
+  "options": {
+   "A": "reflected",
+   "B": "parts",
+   "C": "admired",
+   "D": "functioned",
+   "E": "prompt",
+   "F": "decorating",
+   "G": "spiritual",
+   "H": "discovered",
+   "I": "symbols",
+   "J": "healing"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：埃及人對洋蔥的特殊喜愛",
+    "segs": [
+     [
+      "The widespread popularity of onions is not limited to modern-day kitchens. There is evidence of onions being used for culinary and medicinal purposes all over the ancient world. ",
+      null
+     ],
+     [
+      "Nonetheless",
+      "trans"
+     ],
+     [
+      ", ",
+      "gradient"
+     ],
+     [
+      "no culture",
+      "gradient"
+     ],
+     [
+      " ",
+      "gradient"
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      " onions quite as much as the ancient Egyptians.",
+      "gradient"
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】洋蔥的精神象徵意義",
+    "segs": [
+     [
+      "For them, the onion was not just food or medicine; it held significant",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " meaning.",
+      "topic"
+     ],
+     [
+      " Onions were considered to be ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " of eternal life. The circle-within-a-circle structure of an onion, for them, ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " the eternity of existence. According to certain documents, ancient Egyptians also used onions for medicinal purposes, ",
+      null
+     ],
+     [
+      "but",
+      "trans"
+     ],
+     [
+      " they likely would have viewed the ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " power of the vegetable as magical, rather than medical.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】考古證據：墓葬中的洋蔥",
+    "segs": [
+     [
+      "Onions are depicted in many paintings",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " inside pyramids and tombs that span the history of ancient Egypt.",
+      "topic"
+     ],
+     [
+      " They ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " as a funeral offering shown upon the altars of the gods. The dead were buried with onions and onion flowers on or around various ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " of their bodies. Mummies have also been found with onions and onion flowers ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " their pelvis, chest, ears, eyes, and feet.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】學者對用途的兩種推測",
+    "segs": [
+     [
+      "Some scholars theorize that onions may have been used for the dead because it was believed that their strong scent would",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " the dead to breathe again.",
+      "topic"
+     ],
+     [
+      " Other researchers believe it was because onions were known for their special curative properties, which would be helpful in the afterlife.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“no culture ___ onions quite as much as the ancient Egyptians”",
+  "thesisExplain": "洋蔥在古代到處都有人吃，但把它一路帶進墓室裡陪葬的，只有一個地方。中心思想落在這一句，關鍵在第 31 格。no culture ___ onions quite as much as… 是「否定主詞 + as…as」的最高級說法，整組結構把這一格鎖成動詞，連時態都一併定下來，認出來幾乎不用猜。文章先承認洋蔥本來就用得普遍，Nonetheless 一轉才推到這一句；後面三段（精神象徵、墓葬裡的證據、學者推測的用途）都是佐證，不是各自獨立的主旨。寫作上，「別人都有，但沒有誰像 X 這樣」一句話就能把主題推到最高點。108 年學測要你談台灣最讓你引以為榮的兩個面向，主題句用這個句型很有力。",
+  "macro": {
+   "structure": "先普遍後特殊型 — 普遍現象(洋蔥全球都用) → Nonetheless轉折(埃及人格外崇拜) → 精神意義說明 → 考古證據佐證 → 學者推測用途(結尾並列兩種理論，不下定論)",
+   "transitions": "Nonetheless（轉折，帶出全文中心思想）→ but（精神意義段內部轉折：醫療用途被視為魔法而非醫學）",
+   "patterns": "說明文 (Expository) + 現象解釋 (Phenomenon Explanation)",
+   "outline": [
+    "1. 引言：洋蔥雖然全球都用，但埃及人格外崇拜(全文中心思想)",
+    "2. 精神意義：洋蔥象徵永恆生命，圈中圈結構呼應存在的永恆",
+    "3. 考古證據：壁畫、木乃伊身上發現洋蔥裝飾",
+    "4. 學者推測：洋蔥用途的兩種理論(喚醒死者呼吸／具療效有助來世)"
+   ]
+  },
+  "zhTranslation": [
+   "洋蔥廣受歡迎，並不只限於現代廚房。有證據顯示，古代世界各地都把洋蔥用於烹飪和醫療。然而，沒有哪個文化像古埃及人那樣崇尚洋蔥。",
+   "對古埃及人而言，洋蔥不只是食物或藥材，更具有重大的精神意義。他們認為洋蔥是永恆生命的象徵。洋蔥那種一圈套一圈的結構，對他們來說體現了存在的永恆性。根據某些文獻記載，古埃及人也將洋蔥用於醫療用途，但他們可能將這種蔬菜的療效視為魔法，而非醫學。",
+   "在橫跨古埃及各個時期的金字塔和墓穴裡發現的許多壁畫中，都描繪著洋蔥。洋蔥曾被當作獻給神明祭壇的喪葬供品。死者下葬時，身體各個部位周圍會擺放洋蔥和洋蔥花。木乃伊身上也曾發現洋蔥和洋蔥花，裝飾在骨盆、胸口、耳朵、眼睛和腳部等處。",
+   "有些學者推測，洋蔥被用在死者身上，是因為古人相信洋蔥濃烈的氣味能促使死者重新開始呼吸。另一派研究者則認為，這是因為洋蔥以特殊的療效聞名，而這種療效在來世會有幫助。"
+  ]
+ },
+ {
+  "id": "y105",
+  "year": "105年",
+  "accuracyRateSource": "大考中心 105 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
+  "exam": "學測",
+  "examType": "正式考試",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "印度人造林（A Man-Made Forest in India）",
+  "flagNote": null,
+  "options": {
+   "A": "deserted",
+   "B": "interference",
+   "C": "vision",
+   "D": "crazy",
+   "E": "creation",
+   "F": "encouraged",
+   "G": "ignored",
+   "H": "survived",
+   "I": "dry",
+   "J": "true"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：主角登場",
+    "segs": [
+     [
+      "Are forests always created by nature?",
+      null
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "A man from rural India proves that this is not necessarily",
+      "gradient"
+     ],
+     [
+      " ",
+      "gradient"
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      ".",
+      "gradient"
+     ],
+     [
+      " Abdul Kareem, who used to be an airline ticketing agent, has a great love for the woods. ",
+      null
+     ],
+     [
+      "Though",
+      "trans"
+     ],
+     [
+      " he never went to college, he can talk about plants and trees like an expert.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】開墾過程：從荒地到森林",
+    "segs": [
+     [
+      "In 1977, he bought a piece of rocky wasteland with the",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " of growing trees on it.",
+      "topic"
+     ],
+     [
+      " In the beginning, people thought he was ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " to waste his time and money on the land. ",
+      null
+     ],
+     [
+      "But",
+      "trans"
+     ],
+     [
+      " he simply ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " them and kept working on the soil and planting trees there. The land was so ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " that it had to be watered several times a day. Kareem had to fetch the water from a source that was a kilometer away. In the first two years, none of the trees he planted ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      ". ",
+      null
+     ],
+     [
+      "However",
+      "trans"
+     ],
+     [
+      ", in the third year, several young trees started growing. Greatly ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " by the result, Kareem planted more trees and his man-made forest began to take shape.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】理念：順應自然、不干預",
+    "segs": [
+     [
+      "Kareem let his forest grow naturally, without using fertilizers or insecticides.",
+      "topic"
+     ],
+     [
+      " He believed in the ability of nature to renew itself without the ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " of humans. That's why he did not allow fallen leaves or twigs from the forest to be removed.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】成果：森林的誕生與影響",
+    "segs": [
+     [
+      "After years of hard work, Kareem has not only realized his dream but also transformed a piece of",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " property into a beautiful forest.",
+      "topic"
+     ],
+     [
+      " Today, his forest is home to 1,500 medicinal plants, 2,000 varieties of trees, rare birds, animals, and insects. Now, scientists from all over the world come to visit his ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      ". They hope to find the secret of his success.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“A man from rural India proves that this is not necessarily ___.”(呼應開頭提問：森林是否一定由大自然創造？)",
+  "thesisExplain": "森林一定是大自然長出來的嗎？開頭先問，緊接著這一句給答案，中心思想就在這裡，關鍵落在第 31 格。this 回指前面提問所說的那件事，not necessarily ___ 又把詞性框住；指涉和詞性兩條線在這一格交會，最適合拿來練「先確認 this 指什麼，再決定填什麼」。後面三段（買下一片滿是石頭的荒地、不施肥不噴藥、最後養出上千種動植物）都是這句話的敘事佐證。寫作上：先設問，再用一個具體的人一句話回答，是記敘與論說混寫時很好用的開場。83 年學測的 Things Are Not As Difficult As They Appear，立意方式一模一樣。",
+  "macro": {
+   "structure": "提問破題型 — 提出疑問(森林是否必為天然) → 破題(一介平凡人證明不是這樣) → 開墾歷程(挫折與突破) → 順應自然理念 → 成果與迴響",
+   "transitions": "Though（讓步，凸顯主角非科班出身卻博學）→ But（對比，他不理會旁人質疑）→ However（轉折，前兩年失敗、第三年終於成功）",
+   "patterns": "記敘文 (Narrative) + 時序發展 (Chronological)",
+   "outline": [
+    "1. 引言：提問破題，Kareem證明森林不一定是天然的",
+    "2. 開墾歷程：買下荒地、旁人質疑、頭兩年失敗、第三年終於成功",
+    "3. 理念：不施肥不用藥、順應自然、不移除落葉枯枝",
+    "4. 成果：荒地變身生態豐富的森林，吸引各國科學家造訪"
+   ]
+  },
+  "zhTranslation": [
+   "森林一定都是大自然創造的嗎？一位來自印度鄉間的男子證明了事實未必如此。阿布杜．卡林姆曾經是一名航空公司訂票員，對森林有著深厚的熱愛。雖然他從未上過大學，但談起植物和樹木時，他就像個專家。",
+   "1977年，他買下一塊佈滿岩石的荒地，懷抱著在上面種樹的願景。一開始，大家都認為他把時間和金錢浪費在這塊地上，簡直是瘋了。但他不理會這些閒言閒語，繼續埋首耕耘土壤、種植樹木。這塊地非常乾燥，一天得澆水好幾次。卡林姆得從一公里外的水源取水。頭兩年，他種下的樹沒有一棵存活下來。然而，到了第三年，幾棵幼樹開始生長。深受這個結果的鼓舞，卡林姆種下更多的樹，他親手種出的森林也逐漸成形。",
+   "卡林姆讓森林自然生長，不使用任何肥料或殺蟲劑。他相信大自然有能力在沒有人類干預的情況下自我更新。這也是為什麼他不讓人清除森林裡的落葉或枯枝。",
+   "經過多年的努力，卡林姆不只實現了自己的夢想，還把一塊荒廢的土地變成一片美麗的森林。如今，這片森林裡棲息著1,500種藥用植物、2,000種樹木，以及各種珍稀鳥類、動物和昆蟲。現在，世界各地的科學家都前來造訪他一手創造的森林，希望能找出他成功的秘訣。"
+  ]
+ },
+ {
+  "id": "y104",
+  "year": "104年",
+  "accuracyRateSource": "大考中心 104 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
+  "exam": "學測",
+  "examType": "正式考試",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "迴紋針的發明（The Invention of the Paperclip）",
+  "flagNote": null,
+  "options": {
+   "A": "familiar",
+   "B": "honor",
+   "C": "device",
+   "D": "removable",
+   "E": "known as",
+   "F": "protest",
+   "G": "symbol",
+   "H": "twisted into",
+   "I": "associated with",
+   "J": "historical"
+  },
+  "paras": [
+   {
+    "label": "【第一段】定義與提問",
+    "segs": [
+     [
+      "A paperclip, made of steel wire bent into a hooped shape, is an instrument used to hold sheets of paper together.",
+      null
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "This common",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      " is a wonder of simplicity and function.",
+      "topic"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "But",
+      "trans"
+     ],
+     [
+      " where did this simple, cheap, and indispensable invention come from?",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】演變：從別針到鋼絲夾",
+    "segs": [
+     [
+      "In the late 19th century, the most common way to hold papers together was by using a pin.",
+      "topic"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Although",
+      "trans"
+     ],
+     [
+      " the pin was an inexpensive tool and was easily ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      ", it would leave holes in the paper. Later, as steel wire became more common, inventors began to notice its elastic feature. With this feature, it could be stretched and ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " various clip-like objects. In the years just prior to 1900, quite a few paperclip designs emerged.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】發明者爭議：掛名者與實際設計者",
+    "segs": [
+     [
+      "The name most frequently",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " the paperclip invention is Johan Vaaler, a Norwegian inventor.",
+      "topic"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "However",
+      "trans"
+     ],
+     [
+      ", ",
+      "thesis"
+     ],
+     [
+      "Vaaler's clips were not the same as the paperclips currently in use.",
+      "thesis"
+     ],
+     [
+      " Specifically, they did not have the interior loop we see today. The ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " looped design was invented by Gem Manufacturing Ltd. in England. This clip is therefore sometimes ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " the Gem clip.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】迴紋針成為挪威的愛國象徵",
+    "segs": [
+     [
+      "Because of Vaaler, the paperclip played an important",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " role in Norway.",
+      "topic"
+     ],
+     [
+      " During World War II, Norway was occupied by the Nazis. Norwegians were prohibited from wearing any ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " of their national unity, such as buttons with the initials of their king. ",
+      null
+     ],
+     [
+      "Thus",
+      "trans"
+     ],
+     [
+      ", in ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      ", they started wearing paperclips to show their solidarity. The reason for doing this was simple: Paperclips were a Norwegian invention whose original function was to bind together. After the war, a giant paperclip statue was erected in Oslo to ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " Vaaler—",
+      null
+     ],
+     [
+      "even though",
+      "trans"
+     ],
+     [
+      " his design was never actually manufactured.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Vaaler's clips were not the same as the paperclips currently in use.”",
+  "thesisExplain": "全文的核心反諷在於：大家公認的迴紋針發明人 Vaaler，設計其實跟現在通用的款式不同(沒有內圈)，真正的現代造型是英國Gem公司發明的；但挪威人仍然把迴紋針當成愛國象徵、為 Vaaler 立雕像致敬。這種「掛名發明人≠實際設計者，但象徵意義仍然成立」的反差，貫穿第三、四段，是全文最耐人尋味之處。",
+  "macro": {
+   "structure": "溯源考據型 — 定義提問(這個小物從何而來) → 演變過程(別針→鋼絲夾) → 發明者爭議(掛名者與實際設計者不同，全文中心思想) → 象徵意義延伸(挪威愛國象徵，even though收尾呼應反諷)",
+   "transitions": "But（提問轉折）→ Although（讓步：別針便宜卻有缺陷）→ However（轉折，帶出全文中心思想）→ Thus（結果，帶出配戴迴紋針的抗議行動）→ even though（結尾讓步，凸顯反諷收尾）",
+   "patterns": "說明文 (Expository) + 時序發展 (Chronological)",
+   "outline": [
+    "1. 引言：迴紋針的定義，提問其起源",
+    "2. 演變：從別針到鋼絲夾的材質與設計演進",
+    "3. 爭議：Vaaler掛名發明人，但現代造型其實是Gem公司設計(全文中心思想)",
+    "4. 延伸：二戰時期迴紋針成為挪威人的愛國抗議象徵，戰後立雕像致敬Vaaler"
+   ]
+  },
+  "zhTranslation": [
+   "迴紋針是用鋼絲彎折成環狀所製成，是用來夾住成疊紙張的工具。這個常見的小物件，簡單又實用，堪稱一項奇蹟。但這項簡單、便宜又不可或缺的發明，究竟是從何而來的呢？",
+   "19世紀晚期，最常見的固定紙張方式是使用大頭針。雖然大頭針便宜又容易拆卸，但它會在紙上留下針孔。後來，隨著鋼絲愈來愈普及，發明家開始注意到鋼絲的彈性特質。利用這項特質，鋼絲可以拉長、扭轉成各種夾子形狀的物件。在1900年前的那幾年裡，出現了不少迴紋針的設計。",
+   "最常與迴紋針發明連結在一起的名字，是挪威發明家約翰．瓦勒。然而，瓦勒設計的迴紋針，其實跟現在通用的款式並不相同。具體來說，他的設計沒有我們今天看到的內圈。這種常見的雙圈造型設計，其實是英國Gem製造公司發明的。因此，這種迴紋針有時也被稱為「Gem夾」。",
+   "因為瓦勒的緣故，迴紋針在挪威扮演了一個重要的歷史角色。二戰期間，挪威被納粹占領。挪威人被禁止配戴任何代表民族團結的象徵物，例如印有國王姓名縮寫的鈕扣。因此，挪威人便以配戴迴紋針作為抗議，藉此表達團結一心。這麼做的原因很簡單：迴紋針是挪威人的發明，原本的功能就是「把東西連結在一起」。戰後，奧斯陸豎立了一座巨大的迴紋針雕像，用來紀念瓦勒——儘管他的設計從未真正投入生產。"
+  ]
+ },
+ {
+  "id": "y103",
+  "year": "103年",
+  "accuracyRateSource": "大考中心 103 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
+  "exam": "學測",
+  "examType": "正式考試",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "命名的藝術（The Art of Choosing First Names）",
+  "flagNote": null,
+  "options": {
+   "A": "drawn to",
+   "B": "fall into",
+   "C": "impact",
+   "D": "involving",
+   "E": "keep",
+   "F": "passing down",
+   "G": "regardless",
+   "H": "religion",
+   "I": "respect",
+   "J": "unique"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：命名的多重因素(全文綱要)",
+    "segs": [
+     [
+      "In English-speaking cultures, the choice of first names for children can be prompted by many factors: tradition, religion, nature, culture, and fashion, to name just a few.",
+      "gradient"
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】因素一：家族傳承(tradition)",
+    "segs": [
+     [
+      "Certain people like to give a name that has been handed down in the family to show",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      " for or to remember a relative whom they love or admire.",
+      "topic"
+     ],
+     [
+      " Some families have a tradition of ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " the father's first name to the first born son. In other families, a surname is included in the selection of a child's given name to ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " a family surname going. It may be the mother's maiden name, for instance.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】因素二：宗教(religion)",
+    "segs": [
+     [
+      "For a long time,",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " has also played an important role in naming children.",
+      "topic"
+     ],
+     [
+      " Boys' names such as John, Peter, and Thomas are chosen from the Bible. Girls' names such as Faith, Patience, and Sophie (wisdom) are chosen because they symbolize Christian qualities.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】因素三：自然(nature)",
+    "segs": [
+     [
+      "However",
+      "trans"
+     ],
+     [
+      ", for people who are not necessarily religious but are fond of nature, names",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " things of beauty are often favored.",
+      "topic"
+     ],
+     [
+      " Flower and plant names like Heather, Rosemary, and Iris ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " this category.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第五段】因素四：文化媒體與個人喜好(culture/fashion)",
+    "segs": [
+     [
+      "Another factor that has had a great",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " on the choice of names is the spread of culture through the media.",
+      "topic"
+     ],
+     [
+      " People may choose a name because they are strongly ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " a character in a book or a television series; they may also adopt names of famous people or their favorite actors and actresses. Sometimes, people pick foreign names for their children because those names are unusual and will thus make their children more ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " and distinctive. Finally, some people just pick a name the sound of which they like, ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " of its meaning, its origins, or its popularity. ",
+      null
+     ],
+     [
+      "However",
+      "trans"
+     ],
+     [
+      ", even these people may look at the calendar to pick a lucky day when they make their choice.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“the choice of first names for children can be prompted by many factors: tradition, religion, nature, culture, and fashion”",
+  "thesisExplain": "開頭這句話直接列出全文的五大命名因素(傳承、宗教、自然、文化、時尚)，後面四段依序展開說明，是典型「總—分」結構的全文中心思想句，每一段的主旨句都只是這個總綱底下的其中一個分項，不是各自獨立發展的主旨。",
+  "macro": {
+   "structure": "總分列舉型 — 總綱(五大命名因素，全文中心思想) → 分項一：家族傳承 → 分項二：宗教 → 分項三：自然 → 分項四：文化媒體與個人喜好",
+   "transitions": "However（自然段起始，與宗教段對比）→ However（結尾，只憑讀音挑名字的人，仍會挑吉日）",
+   "patterns": "說明文 (Expository) + 分類 (Classification)",
+   "outline": [
+    "1. 引言：命名受五大因素影響(傳承／宗教／自然／文化／時尚)——全文總綱",
+    "2. 傳承：紀念親人、傳父名或母姓",
+    "3. 宗教：取自聖經人名或象徵基督教美德的名字",
+    "4. 自然：花草等美好事物的名字",
+    "5. 文化與個人喜好：媒體角色、名人、獨特外國名、單純喜歡讀音"
+   ]
+  },
+  "zhTranslation": [
+   "在英語系文化中，孩子的名字選擇會受到許多因素影響，包括傳統、宗教、自然、文化和流行等，這裡只列舉幾項。",
+   "有些人喜歡取一個在家族中代代相傳的名字，藉此對他們敬愛或仰慕的某位親人表達敬意或紀念之情。有些家族則有一個傳統，就是把父親的名字傳給長子。在其他家族裡，孩子的名字中會包含一個姓氏，以延續家族姓氏，這個姓氏可能就是母親娘家的姓。",
+   "長久以來，宗教也在孩子的命名上扮演重要角色。像約翰、彼得、湯瑪士這類男孩名字取自聖經；而信心、耐心、蘇菲(智慧)這類女孩名字，則是因為它們象徵著基督教美德而被選用。",
+   "然而，對於不一定有宗教信仰、但熱愛大自然的人來說，與美好事物有關的名字往往更受青睞。像石楠、迷迭香、鳶尾花這類花草植物的名字，就屬於這一類。",
+   "另一個對命名選擇有重大影響的因素，是媒體帶動的文化傳播。有些人選擇某個名字，是因為他們深受書中或電視劇角色的吸引；他們也可能採用名人或喜愛演員的名字。有時候，人們會為孩子取外國名字，因為這些名字不常見，能讓孩子顯得更獨特、與眾不同。最後，也有些人單純因為喜歡某個名字的發音而選用，不管它的意義、來源或流行程度如何。不過，即使是這樣的人，做決定時也可能會看看日曆挑個好日子。"
+  ]
+ },
+ {
+  "id": "y102",
+  "year": "102年",
+  "accuracyRateSource": "大考中心 102 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
+  "exam": "學測",
+  "examType": "正式考試",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "珊瑚礁危機（Coral Reefs in Danger）",
+  "flagNote": null,
+  "options": {
+   "A": "resistance",
+   "B": "identified",
+   "C": "last",
+   "D": "escape",
+   "E": "sadly",
+   "F": "eventually",
+   "G": "disappearance",
+   "H": "souvenirs",
+   "I": "endangered",
+   "J": "carry"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：珊瑚礁的重要性",
+    "segs": [
+     [
+      "Often called “rainforests of the sea,” coral reefs provide a home for 25% of all species in the ocean.",
+      "topic"
+     ],
+     [
+      " They are stony structures full of dark hideaways where fish and sea animals can lay their eggs and ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      " from predators. Without these underwater “apartment houses,” there would be fewer fish in the ocean. Some species might even become ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " or disappear completely.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】現況：珊瑚礁正陷入嚴重危機",
+    "segs": [
+     [
+      "There are thousands of reefs in the world;",
+      "gradient"
+     ],
+     [
+      " ",
+      "gradient"
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      ", ",
+      "trans"
+     ],
+     [
+      "however",
+      "trans"
+     ],
+     [
+      ", they are now in serious danger.",
+      "gradient"
+     ],
+     [
+      " More than one-third are in such bad shape that they could die within ten years. Many might not even ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " that long! Scientists are working hard to find out what leads to this destruction. There are still a lot of questions unanswered, ",
+      null
+     ],
+     [
+      "but",
+      "trans"
+     ],
+     [
+      " three main causes have been ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      ".",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】原因一：污染／原因二：暖化",
+    "segs": [
+     [
+      "The first cause is pollution on land.",
+      "topic"
+     ],
+     [
+      " The pollutants run with rainwater into rivers and streams, which ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " the poisons into the ocean. Chemicals from the poisons kill reefs or make them weak, so they have less ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " to diseases. Global warming is another reason. Higher ocean temperatures kill the important food source for the coral—the algae, the tiny greenish-gold water plants that live on coral. When the algae die, the coral loses its color and it also dies ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      ". This process, known as “coral bleaching,” has happened more and more frequently in recent years.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】原因三：人為破壞＋結語",
+    "segs": [
+     [
+      "The last factor contributing to the",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " of coral reefs is people.",
+      "topic"
+     ],
+     [
+      " People sometimes crash into reefs with their boats or drop anchors on them, breaking off large chunks of coral. Divers who walk on reefs can also do serious damage. Moreover, some people even break coral off to collect for ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " since it is so colorful and pretty. How can we help the reefs? We need to learn more about them and work together to stop the activities that may threaten their existence.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“There are thousands of reefs in the world; ___, however, they are now in serious danger.”",
+  "thesisExplain": "海裡的「公寓大樓」住著四分之一的海洋生物，現在正在垮。中心思想落在這一句，關鍵在第 33 格。這一格被分號和 however 夾在中間，前後各是一個完整句子，光看位置就知道它不是句子的骨幹，而是作者表態的地方——先想清楚這一格在句中扮演什麼角色，再挑字。分號把「數量很多」和「處境危險」擺在一起對照，they 回指 reefs，however 標出轉折，三個線索指向同一件事。後面依序講三個成因（陸地污染、全球暖化、人為破壞），都是這句的展開。寫作上：分號＋一個表態的副詞＋however，一句話就能把「看起來很好、其實不然」寫清楚。110 年學測那張遊客踩進花田的圖，第一段正好這樣落筆。",
+  "macro": {
+   "structure": "問題成因型 — 建立重要性(珊瑚礁是海洋生物的家) → however 轉折(核心問題：珊瑚礁正面臨嚴重危機，全文中心思想) → 原因一二(污染、暖化) → 原因三(人為破壞)＋結語呼籲",
+   "transitions": "however（轉折，帶出全文中心思想）→ but（讓步：原因未完全查明，但已找出三大主因）",
+   "patterns": "問題解決 (Problem-Solution) + 因果關係 (Cause-Effect)",
+   "outline": [
+    "1. 引言：珊瑚礁是四分之一海洋物種的家，作用如同「海底公寓」",
+    "2. 核心問題：珊瑚礁數量雖多，卻正嚴重瀕危(全文中心思想)，已找出三大主因",
+    "3. 原因一二：陸地污染物隨雨水入海、海水暖化導致珊瑚白化",
+    "4. 原因三：人為直接破壞(船隻、潛水客、收集紀念品)，結尾呼籲保護行動"
+   ]
+  },
+  "zhTranslation": [
+   "珊瑚礁常被稱為「海洋中的雨林」，是海洋中四分之一物種的棲息地。珊瑚礁是佈滿黑暗藏身處的石灰岩結構，魚類和海洋動物可以在裡面產卵、躲避掠食者。少了這些海底「公寓」，海裡的魚就會變少。有些物種甚至可能瀕臨滅絕，或完全消失。",
+   "全世界有數千座珊瑚礁；然而遺憾的是，這些珊瑚礁如今正陷入嚴重危機。超過三分之一的珊瑚礁狀況惡劣，可能在十年內死亡。許多珊瑚礁甚至活不了那麼久！科學家正努力找出造成這種破壞的原因。目前還有許多疑問尚未解答，但已經找出三個主要原因。",
+   "第一個原因是陸地污染。污染物隨雨水流入河川和溪流，再由河川溪流把這些毒素帶進海洋。這些污染物中的化學物質會殺死珊瑚，或使珊瑚變得虛弱，降低牠們對疾病的抵抗力。全球暖化是另一個原因。海水溫度升高會殺死珊瑚重要的食物來源——藻類，也就是附著在珊瑚上、帶點綠色和金色的微小水生植物。當藻類死亡，珊瑚就會褪色，最終也隨之死亡。這個過程被稱為「珊瑚白化」，近年來發生的頻率愈來愈高。",
+   "造成珊瑚礁消失的最後一個因素是人類。人們有時會開船撞上珊瑚礁，或在珊瑚礁上下錨，把大塊珊瑚撞斷。潛水客在珊瑚礁上行走，也可能造成嚴重破壞。此外，有些人甚至會因為珊瑚色彩鮮豔美麗，而把珊瑚敲下來當作紀念品收集。我們該如何幫助珊瑚礁呢？我們需要多了解珊瑚礁，並齊心協力阻止那些可能威脅牠們生存的行為。"
+  ]
+ },
+ {
+  "id": "y101",
+  "year": "101年",
+  "accuracyRateSource": "大考中心 101 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
+  "exam": "學測",
+  "examType": "正式考試",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "颱風命名方式（Typhoon Naming Conventions）",
+  "flagNote": null,
+  "flagKind": [],
+  "options": {
+   "A": "request",
+   "B": "favor",
+   "C": "disadvantage",
+   "D": "composed",
+   "E": "recycled",
+   "F": "practice",
+   "G": "replaced",
+   "H": "raise",
+   "I": "various",
+   "J": "female"
+  },
+  "paras": [
+   {
+    "label": "【第一段】兩種命名慣例：數字式(缺點)",
+    "segs": [
+     [
+      "Generally there are two ways to name typhoons: the number-based convention and the list-based convention.",
+      "gradient"
+     ],
+     [
+      " Following the number-based convention, typhoons are coded with ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      " types of numbers such as a 4-digit or a 6-digit code. For example, the 14th typhoon in 2003 can be labeled either as Typhoon 0314 or Typhoon 200314. The ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " of this convention, ",
+      null
+     ],
+     [
+      "however",
+      "trans"
+     ],
+     [
+      ", is that a number is hard to remember.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】清單式命名法的起源與性別平等爭議",
+    "segs": [
+     [
+      "The list-based convention, on the other hand, is based on the list of typhoon names compiled in advance by a committee, and is more widely used.",
+      "topic"
+     ],
+     [
+      " At the very beginning, only ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " names were used because at that time typhoons were named after girlfriends or wives of the experts on the committee. In 1979, ",
+      null
+     ],
+     [
+      "however",
+      "trans"
+     ],
+     [
+      ", male names were also included because women protested against the original naming ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " for reasons of gender equality.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】亞洲命名規則",
+    "segs": [
+     [
+      "In Asia, Western names were used until 2000 when the committee decided to use Asian names to",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " Asians' awareness of typhoons.",
+      "topic"
+     ],
+     [
+      " The names were chosen from a name pool ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " of 140 names, 10 each from the 14 members of the committee. Each country has its unique naming preferences. Korea and Japan ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " animal names and China likes names of gods such as Longwang (dragon king) and Fengshen (god of the wind).",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】除名機制與案例",
+    "segs": [
+     [
+      "After the 140 names are all used in order, they will be",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      ".",
+      "topic"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "But",
+      "trans"
+     ],
+     [
+      " the names can be changed. If a member country suffers great damage from a certain typhoon, it can ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " that the name of the typhoon be deleted from the list at the annual committee meeting. For example, the names of Nabi by South Korea, and Longwang by China were ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " with other names in 2007. The deletion of both names was due to the severe damage caused by the typhoons bearing the names.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Generally there are two ways to name typhoons: the number-based convention and the list-based convention.”",
+  "thesisExplain": "開頭這句話點出全文架構：兩種命名慣例(數字式／清單式)，第一段先講數字式的缺點，第二段起轉向清單式命名法的起源、演變(含性別平等爭議)、亞洲地區規則，以及除名機制，整篇文章其實是圍繞「清單式命名法」的介紹展開，數字式只是用來對比襯托的引子。",
+  "macro": {
+   "structure": "對比展開型 — 總綱(兩種命名慣例) → 數字式的缺點(對比襯托) → 清單式的起源與性別平等演變 → 亞洲命名規則 → 除名機制與實例",
+   "transitions": "however（第一段：數字式的缺點）→ on the other hand（段落轉換至清單式）→ however（1979年男性名字納入的轉折）→ But（第四段：名字可被更改）",
+   "patterns": "分類 (Classification) + 比較對比 (Compare/Contrast)",
+   "outline": [
+    "1. 引言：兩種命名慣例(數字式／清單式)——全文中心思想",
+    "2. 數字式缺點：數字難記；清單式起源：早期只用女性名字，1979年起納入男性名字",
+    "3. 亞洲命名規則：2000年起改用亞洲名字，14國各出10個名字，各國偏好不同",
+    "4. 除名機制：140個名字循環使用，但受災嚴重可申請除名(以Nabi、Longwang為例)"
+   ]
+  },
+  "zhTranslation": [
+   "一般來說，颱風命名有兩種慣例：數字式和清單式。依照數字式慣例，颱風會被賦予各種數字編碼，例如四位數或六位數的代碼。舉例來說，2003年的第14個颱風，可以標示為「0314號颱風」或「200314號颱風」。然而，這種慣例的缺點是數字很難記住。",
+   "另一方面，清單式慣例則是根據委員會事先編製好的颱風名單來命名，使用得更為廣泛。一開始，只使用女性名字，因為當時的颱風是以委員會專家的女友或妻子的名字命名的。然而，到了1979年，基於性別平等的考量，女性抗議這種原本的命名慣例，於是男性的名字也被納入其中。",
+   "在亞洲地區，直到2000年之前都使用西方名字，該年委員會決定改用亞洲名字，以提升亞洲人對颱風的認知。這些名字選自一個由140個名字組成的名字庫，由14個委員國各提供10個名字。每個國家都有自己獨特的命名偏好。韓國和日本偏好動物名字，中國則喜歡用神祇的名字，例如龍王和風神。",
+   "等到140個名字依序全部用完後，就會循環重複使用。但這些名字是可以更改的。如果某個會員國因某個颱風而遭受重大損害，就可以在年度委員會會議上，要求將該颱風的名字從名單中除名。舉例來說，南韓的「娜比」和中國的「龍王」這兩個名字，就在2007年因造成嚴重災情而被其他名字取代。這兩個名字之所以被除名，正是因為以它們命名的颱風造成了嚴重的災害。"
+  ],
+  "internalNote": "第 40 題原稿曾誤植答案字母為 C；第三百七十四場對照大考中心原卷與選擇題答案，官方答案為 G (replaced)，十個選項與原卷逐字相同，flagNote 與解析的相關說明已刪。"
+ },
+ {
+  "id": "y100",
+  "year": "100年",
+  "accuracyRateSource": "大考中心 100 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
+  "exam": "學測",
+  "examType": "正式考試",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "微波爆米花健康疑慮（Health Concerns About Microwave Popcorn）",
+  "flagNote": null,
+  "flagKind": [],
+  "options": {
+   "A": "chemical",
+   "B": "amount",
+   "C": "popping",
+   "D": "popular",
+   "E": "comes",
+   "F": "healthy",
+   "G": "needed",
+   "H": "responsible",
+   "I": "remove",
+   "J": "problems"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：爆米花的隱藏危機",
+    "segs": [
+     [
+      "Popcorn is one of the snacks that rarely fail to make watching a movie more fun.",
+      null
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "However",
+      "trans"
+     ],
+     [
+      ", the modern way of preparing this",
+      "gradient"
+     ],
+     [
+      " ",
+      "gradient"
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      " snack may carry an unhappy secret.",
+      "gradient"
+     ],
+     [
+      " Research by the U.S. government now reports that microwave popcorn may contain substances that can cause health ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      ".",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】危害物質：化學塗層與奶油調味劑",
+    "segs": [
+     [
+      "Researchers found that commercial popcorn companies often coat their microwave popcorn bags with a",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " called perfluorooctanoic acid (PFOA) which has been found to cause both cancer and lung disease in laboratory animals.",
+      "topic"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Making matters worse",
+      "trans"
+     ],
+     [
+      ", the artificial butter substitute that generally ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " with microwavable popcorn contains a common food-flavoring substance. This substance, according to health scientists, is ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " for some serious lung diseases.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】健康替代方案：自己動手爆米花",
+    "segs": [
+     [
+      "For an easy and",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " alternative, nutritionists suggest that we pop our own popcorn.",
+      "topic"
+     ],
+     [
+      " All that is ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " is a large, high pot, about four tablespoons of vegetable oil and a small handful of organic popcorn kernels. When the kernels start ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      ", shake the pot to let the steam escape and to let the unpopped kernels fall to the bottom. ",
+      null
+     ],
+     [
+      "As soon as",
+      "trans"
+     ],
+     [
+      " the popping slows down, ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " the pot from the stove. ",
+      null
+     ],
+     [
+      "Then",
+      "trans"
+     ],
+     [
+      " pour the popcorn into a bowl and season with a small ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " of real butter or olive oil and natural salt. And the healthy and fun snack is ready to serve.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“the modern way of preparing this ___ snack may carry an unhappy secret”",
+  "thesisExplain": "進電影院手上那一桶爆米花，這篇要講的是它的另一面。中心思想落在這一句，關鍵在第 31 格。this ___ snack：指示詞在前、名詞在後，中間是形容詞的位置；this 回指前一句講的爆米花，所以這一格填的字必須接得回前文，線索就藏在這條隱形連結裡。前面先鋪爆米花和看電影的關係，However 一轉帶出問題；第二段講包裝塗層和奶油調味劑，第三段給「自己動手做」的替代方案，「問題→解方」扣得很緊。寫作上，先給讀者熟悉的好處、再轉出問題、最後給做法，是說明文常見的三段式。113 年學測要你挑一項青少年的困擾、說明原因再談解方，結構很接近。",
+  "macro": {
+   "structure": "問題解方型 — 建立好感(爆米花是看電影的樂趣) → However轉折(現代製法暗藏健康隱憂，全文中心思想) → 具體危害說明(化學塗層、奶油調味劑) → 健康替代方案(自製爆米花步驟)",
+   "transitions": "However（轉折，帶出全文中心思想）→ Making matters worse（遞進，追加另一項危害）→ As soon as（步驟段的時間銜接）→ Then（步驟段的順序銜接）",
+   "patterns": "問題解決 (Problem-Solution) + 現象解釋 (Phenomenon Explanation)",
+   "outline": [
+    "1. 引言：爆米花雖是看電影良伴，現代製法卻暗藏健康隱憂(全文中心思想)",
+    "2. 危害說明：PFOA化學塗層致癌、人工奶油調味劑導致肺病",
+    "3. 解方：自製爆米花的健康替代方案與詳細步驟"
+   ]
+  },
+  "zhTranslation": [
+   "爆米花是幾乎每次都能讓看電影更有樂趣的零食之一。然而，現代製作這種受歡迎零食的方式，可能暗藏著令人不快的秘密。美國政府的研究報告指出，微波爆米花可能含有會造成健康問題的物質。",
+   "研究人員發現，商業爆米花公司經常在微波爆米花袋上塗上一種名為全氟辛酸(PFOA)的化學物質，研究發現這種物質會在實驗動物身上引發癌症和肺部疾病。更糟的是，微波爆米花通常搭配的人工奶油代用品，含有一種常見的食品調味物質。根據健康科學家的說法，這種物質正是導致某些嚴重肺部疾病的元兇。",
+   "為了提供簡單又健康的替代方案，營養師建議我們自己爆爆米花。所需要的東西只有一個大而深的鍋子、大約四湯匙的植物油，以及一小把有機玉米粒。當玉米粒開始爆開時，搖晃鍋子讓蒸氣散出，並讓沒爆開的玉米粒落到鍋底。一旦爆裂聲逐漸變慢，就把鍋子從爐子上移開。接著把爆米花倒進碗裡，用少許真奶油或橄欖油，以及天然鹽調味就可以了。這樣一份健康又有趣的零食就完成了。"
+  ],
+  "internalNote": "原稿選項清單曾漏列 C、H 兩個選項；第三百七十四場對照大考中心原卷，原卷十個選項齊全（C＝popping，H＝responsible），答案與官方相同，flagNote 與解析的「漏列」說明已刪。"
+ },
+ {
+  "id": "y99",
+  "year": "99年",
+  "accuracyRateSource": "大考中心 99 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
+  "exam": "學測",
+  "examType": "正式考試",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "足球與團隊精神（Football and Teamwork）",
+  "flagNote": null,
+  "options": {
+   "A": "cooperation",
+   "B": "prosper",
+   "C": "teacher",
+   "D": "behave",
+   "E": "isolated",
+   "F": "essential",
+   "G": "better",
+   "H": "share",
+   "I": "field",
+   "J": "remember"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：足球是社會化的老師",
+    "segs": [
+     [
+      "Football is more than a sport; it is also an invaluable",
+      "gradient"
+     ],
+     [
+      " ",
+      "gradient"
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      ".",
+      "gradient"
+     ],
+     [
+      " In teaching young players to cooperate with their fellows on the practice ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      ", the game shows them the necessity of teamwork in society. It prepares them to be ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " citizens and persons.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】球場上學到的合作課",
+    "segs": [
+     [
+      "Wherever football is played, the players learn the rough-and-tumble lesson that only through the",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " of each member can the team win.",
+      "topic"
+     ],
+     [
+      " It is a lesson they must always ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " on the field.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】延伸到社會：不再是獨行俠",
+    "segs": [
+     [
+      "Off the field, they continue to keep it in mind. In society, the former player does not look upon himself as a lone wolf who has the right to remain",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " from the society and go his own way.",
+      "topic"
+     ],
+     [
+      " He understands his place in the team; he knows he is a member of society and must ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " himself as such. He realizes that only by cooperating can he do his ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " in making society what it should be.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】結論：合作精神落實到公民生活",
+    "segs": [
+     [
+      "The man who has played football knows that teamwork is",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " in modern living.",
+      "topic"
+     ],
+     [
+      " He is also aware that every citizen must do his part if the nation is to ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      ". ",
+      null
+     ],
+     [
+      "So",
+      "trans"
+     ],
+     [
+      " he has little difficulty in adjusting himself to his role in family life and in the business world, and to his duties as a citizen.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Football is more than a sport; it is also an invaluable ___.”",
+  "thesisExplain": "球場上沒有人能自己一個人贏——這就是這篇要講的事。中心思想落在開頭這一句，關鍵在第 31 格。an invaluable ___ 前面是冠詞加形容詞，位置定死了要填名詞；分號前的 more than a sport 又規定這個名詞得跳出「運動」的範圍：位置決定形式，分號前那半句決定意思，兩邊都限制住了，能填的其實不多。後面三段順著這條線往外走，從球場上的合作，到離開球場後在社會裡怎麼定位自己，最後落到公民生活；the players、he、the former player、the man who has played football 換了好幾種說法，講的其實是同一個人，這條隱形連結沒認出來，讀到後面會以為換了主角。寫作上，「X 不只是 A，更是 B」是主題句最快立起來的句型。104 年學測要你從兩本推薦書挑一本說明理由，主題句寫成「這本書不只是……，更是……」最快站住。",
+  "macro": {
+   "structure": "定義延伸型 — 定義(足球是老師) → 球場上的合作課 → 延伸到社會角色(不再是獨行俠) → 結論(合作精神＝現代公民必備)",
+   "transitions": "So（結尾，帶出結果：因為理解合作，適應各種社會角色沒什麼困難）",
+   "patterns": "說明文 (Expository) + 定義 (Definition)",
+   "outline": [
+    "1. 引言：足球是教導合作的老師(全文中心思想)",
+    "2. 球場：唯有隊員合作才能獲勝",
+    "3. 社會：退役球員不再自視為獨行俠，理解自己是社會的一員",
+    "4. 結論：團隊精神是現代公民生活的必備素養"
+   ]
+  },
+  "zhTranslation": [
+   "足球不只是一項運動，更是一位無價的老師。透過教導年輕球員在練習場上與隊友合作，這項運動讓他們了解到，在社會中團隊合作有其必要性。它也讓他們準備好成為更好的公民與更好的人。",
+   "不論在哪裡踢球，球員都會從激烈的拚搶中學到一個教訓：唯有透過每個成員的合作，球隊才能獲勝。這是一堂他們必須永遠銘記在心的課。",
+   "離開球場之後，他們依然把這個道理放在心上。在社會中，退役球員不會把自己看作是一匹獨行的孤狼，認為自己有權利與社會隔絕、獨行其是。他懂得自己在團隊中的位置；他知道自己是社會的一份子，也必須以此自我要求、循規蹈矩。他明白，唯有透過合作，他才能在建立理想社會的過程中，盡到自己的一份心力。",
+   "曾經踢過足球的人都明白，團隊合作在現代生活中是不可或缺的。他也清楚知道，如果國家要興盛，每個公民都必須盡自己的本分。因此，他在調適自己在家庭、職場中的角色，以及作為公民應盡的責任時，都能得心應手。"
+  ]
+ },
+ {
+  "id": "y98",
+  "year": "98年",
+  "accuracyRateSource": "大考中心 98 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
+  "exam": "學測",
+  "examType": "正式考試",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "龜兔賽跑的新解讀（A New Ending to the Tortoise and the Hare）",
+  "flagNote": "第 40 題後面那兩句（Another moral which also means a great deal is…）在原始試卷上就是直接相連的寫法，不是排版跑位。",
+  "flagKind": ["資料校訂"],
+  "options": {
+   "A": "arranged",
+   "B": "challenges",
+   "C": "competitors",
+   "D": "cooperate",
+   "E": "fast",
+   "F": "finishing",
+   "G": "identify",
+   "H": "opposite",
+   "I": "same",
+   "J": "teamwork"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：經典寓言可以有新解讀",
+    "segs": [
+     [
+      "Familiar fables can be narrated differently or extended in interesting and humorous ways.",
+      "gradient"
+     ],
+     [
+      " The end of the famous fable of “The Tortoise and the Hare” is well known to all: the tortoise wins the race against the hare. The moral lesson is that slow and steady wins the race. We all have grown up with this popular version, ",
+      null
+     ],
+     [
+      "but",
+      "trans"
+     ],
+     [
+      " the ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      " fable can be extended with different twists.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】第二次賽跑：快而穩定戰勝穩紮穩打",
+    "segs": [
+     [
+      "At the request of the hare, a second race is",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      ", and this time, the hare runs without taking a rest and wins.",
+      "topic"
+     ],
+     [
+      " The moral lesson is that ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      ", consistent will always beat slow and steady.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】第三次賽跑：發揮所長、改變場地",
+    "segs": [
+     [
+      "Then it is the tortoise that",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " the hare to a third race along a different route in which there is a river just before the final destination.",
+      "topic"
+     ],
+     [
+      " This time, the tortoise wins the race because the hare cannot swim. The moral lesson is “First ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " your strengths, and then change the playing field to suit them.”",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】第四次賽跑：合作取代競爭",
+    "segs": [
+     [
+      "But",
+      "trans"
+     ],
+     [
+      " the story continues. Both ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " know their own drawbacks and limitations very well; therefore, they jointly decide to have one last race—not to decide who the winner or loser is, but just for their own pleasure and satisfaction. The two ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " as a team. Firstly, the hare carries the tortoise on its back to the river. Then, the tortoise carries the hare and swims to the ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " bank of the river. Lastly, the hare carries the tortoise again on its back. Thus they reach the ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " line together.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第五段】結語：合作與情境思維的寓意",
+    "segs": [
+     [
+      "Overall, many moral lessons from the last match are highlighted. The most obvious one is the importance of",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      ".",
+      "topic"
+     ],
+     [
+      " Another moral which also means a great deal is “competition against situations rather than against rivals.”",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Familiar fables can be narrated differently or extended in interesting and humorous ways.”",
+  "thesisExplain": "開頭這句話點出全文寫作手法：熟悉的寓言可以重新敘述、延伸出不同寓意。後面四段依序讓龜兔進行第二、三、四次賽跑，每次都翻轉出新的寓意(速度也能致勝／發揮所長改變場地／合作勝過競爭)，是「舊瓶裝新酒」式的寓言改寫寫作手法。",
+  "macro": {
+   "structure": "多次翻轉型 — 提出經典版本 → but轉折(可延伸新版本) → 第二次賽跑(速度致勝) → 第三次賽跑(揚長避短) → But轉折(第四次賽跑：合作取代競爭)＋結語點出雙重寓意",
+   "transitions": "but（第一段：帶出「寓言可以改寫」的全文中心思想）→ But（第四段：故事還沒完，帶出最終合作版本）",
+   "patterns": "記敘文 (Narrative) + 比較對比 (Compare/Contrast)",
+   "outline": [
+    "1. 引言：經典寓言可以重新詮釋(全文中心思想)",
+    "2. 第二次賽跑：兔子不休息，快而穩定獲勝",
+    "3. 第三次賽跑：烏龜改變賽道(有河流)，發揮所長獲勝",
+    "4. 第四次賽跑：兩者深知自己的缺點與極限，決定合作而非競爭，一起抵達終點",
+    "5. 結語：最大的寓意是團隊合作，其次是「與情境競爭而非與對手競爭」"
+   ]
+  },
+  "zhTranslation": [
+   "大家熟悉的寓言故事，可以用不同的方式重新敘述，或以有趣幽默的方式延伸發展。「龜兔賽跑」這則知名寓言的結局大家都知道：烏龜贏了與兔子的比賽。這則寓言教訓告訴我們，穩紮穩打才能贏得比賽。我們都是聽著這個大家熟悉的版本長大的，但同一個寓言故事，其實可以延伸出不同的轉折。",
+   "應兔子的要求，雙方安排了第二場比賽，這一次，兔子中途不休息地跑完全程並贏得比賽。這則寓言教訓告訴我們，快速而穩定，總是會勝過緩慢而穩定。",
+   "接著，是烏龜向兔子提出第三場比賽的挑戰，比賽路線改到終點前有一條河的不同路徑。這一次，因為兔子不會游泳，烏龜贏得了比賽。這則寓言教訓是：「先找出自己的優勢，然後改變場地來配合這項優勢。」",
+   "但故事還沒結束。雙方都非常清楚自己的缺點與極限，因此決定共同進行最後一場比賽——這次比賽的目的不是分出勝負，純粹是為了雙方共同的樂趣與滿足感。雙方這次以團隊合作的方式進行比賽：首先，兔子把烏龜背在背上運到河邊；接著，烏龜背著兔子游到對岸；最後，兔子再次把烏龜背在背上。就這樣，牠們一起抵達了終點線。",
+   "整體而言，這場最後的比賽凸顯了許多寓意。其中最明顯的一項，就是團隊合作的重要性。另一項同樣意義深遠的寓意，則是「與情境競爭，而非與對手競爭」。"
+  ],
+  "internalNote": "第40題後的句子「Another moral which also means a great deal is “competition against situations rather than against rivals.”」，經您提供原始PDF截圖確認為原文本來的寫法(兩句話直接相連，不是複製貼上跑位)，已依此還原。"
+ },
+ {
+  "id": "y97",
+  "year": "97年",
+  "accuracyRateSource": "大考中心 97 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
+  "exam": "學測",
+  "examType": "正式考試",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "師徒與轉世小豬（The Guru, the Disciple, and the Pig）",
+  "flagNote": "第 36、37 題的句子依大考中心原始試卷還原：第 36 題後有逗號（Soon after their __36__, the guru died…），第 37 題原文為 the disciple __37__ his knife。",
+  "flagKind": ["資料校訂"],
+  "options": {
+   "A": "shock",
+   "B": "conversation",
+   "C": "like",
+   "D": "promise",
+   "E": "released",
+   "F": "screamed",
+   "G": "learned",
+   "H": "recognize",
+   "I": "stroke",
+   "J": "sharpened"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：師父預見來世並託付弟子",
+    "segs": [
+     [
+      "One day, a guru foresaw in a vision what he would be in his next life.",
+      "topic"
+     ],
+     [
+      " Then he called his favorite disciple and asked him, “What would you do to thank me for all you have received from me?” The disciple said he would do whatever his guru asked him to do.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】師父交代任務：認出並了結小豬",
+    "segs": [
+     [
+      "Having received this",
+      "gradient"
+     ],
+     [
+      " ",
+      "gradient"
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      ", the guru said, “Then this is what I'd like you to do for me.",
+      "gradient"
+     ],
+     [
+      " I've just ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " that I'll die very soon and I'm going to be reborn as a pig. Do you see that sow eating garbage there in the yard? I'm going to be the fourth piglet of its next litter. You'll ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " me by a mark on my brow. After that sow gives birth, find the fourth piglet with a mark on its brow and, with one ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " of your knife, slaughter it. I'll then be ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " from a pig's life. Will you do this for me?”",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】弟子照做，小豬卻開口求饒",
+    "segs": [
+     [
+      "The disciple felt sad to hear this, ",
+      null
+     ],
+     [
+      "but",
+      "trans"
+     ],
+     [
+      " he agreed to do as he was told. Soon after their ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      ", the guru died and the sow did have a litter of four little pigs. Then the disciple ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " his knife and picked out the little pig with a mark on its brow. When he was about to cut its throat, the little pig suddenly ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      ", “Stop!”",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】轉折：小豬其實過得很快樂，不想被解脫",
+    "segs": [
+     [
+      "Before the disciple could recover from the",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " of hearing the little pig speak in a human voice, it continued, “Don't kill me. I want to live on as a pig.",
+      "topic"
+     ],
+     [
+      " When I asked you to kill me, I didn't know what a pig's life would be ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      ". It's great! Just let me go.”",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“I want to live on as a pig. ... It's great! Just let me go.”",
+  "thesisExplain": "全文最大的反諷在結尾：師父原本認為投胎為豬是必須盡快擺脫的處境，託付弟子在特定時機殺了自己以求解脫；沒想到小豬真正投胎後卻樂在其中，主動開口懇求「不要殺我、讓我繼續當豬」，翻轉了「靈魂必須被解救」的預設立場，帶出「當事人的主觀感受可能與旁觀者(甚至自己前世)的預期完全不同」的核心寓意。",
+  "macro": {
+   "structure": "計畫翻轉型 — 引言(師父預知來世) → 交代任務(認出小豬並了結) → 弟子依約行事 → 轉折(小豬開口求饒，翻轉全文預設，帶出核心寓意)",
+   "transitions": "but（第三段：弟子雖傷心仍依約行事）",
+   "patterns": "記敘文 (Narrative) + 比較對比 (Compare/Contrast)",
+   "outline": [
+    "1. 引言：師父預見來世，弟子承諾報答師恩",
+    "2. 任務交代：師父指示弟子如何認出並了結轉世小豬，以求解脫",
+    "3. 執行：師父過世後，弟子依約準備動手",
+    "4. 轉折：小豬開口求饒，坦言豬的生活其實很快樂(全文核心思想／反諷收尾)"
+   ]
+  },
+  "zhTranslation": [
+   "有一天，一位上師在異象中預見了自己來世將會投胎成什麼。於是他叫來最鍾愛的弟子，問他：「你打算怎麼報答我這些年來對你的付出？」弟子說，無論上師要求他做什麼，他都願意去做。",
+   "得到這個承諾後，上師說：「那麼，這就是我希望你為我做的事。我剛剛得知，我很快就要死了，而且會投胎成一頭豬。你看到院子裡那頭正在吃廚餘的母豬了嗎？我將會是牠下一胎中的第四隻小豬。你可以憑我額頭上的一個記號認出我。等那頭母豬生產後，找到額頭上有記號的第四隻小豬，然後手起刀落，把牠殺了。這樣我就能從豬的一生中解脫。你願意為我做這件事嗎？」",
+   "弟子聽了很難過，但仍答應照做。他們談話結束後不久，上師就過世了，而那頭母豬也生下了四隻小豬。於是弟子磨利了刀，挑出額頭上有記號的那隻小豬。就在他準備割開牠喉嚨的那一刻，小豬突然尖叫了一聲：「住手！」",
+   "弟子還來不及從聽見小豬用人聲說話的震驚中回過神來，小豬又接著說：「別殺我。我想繼續當一頭豬活下去。當初我請你殺我的時候，我根本不知道當豬的生活會是什麼樣子。這一切太棒了！讓我走吧。」"
+  ],
+  "internalNote": "第36、37題句子，經您提供原始PDF截圖確認：36題後應有逗號(Soon after their __36__, the guru died...)；37題原文是「the disciple __37__ his knife」，並無「the guru」字樣，已依此更新為正確版本。"
+ },
+ {
+  "id": "y96",
+  "year": "96年",
+  "accuracyRateSource": "大考中心 96 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
+  "exam": "學測",
+  "examType": "正式考試",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "老人與打板球的男孩（The Old Man and the Cricket Players）",
+  "flagNote": null,
+  "options": {
+   "A": "disappointed",
+   "B": "enjoyed",
+   "C": "favorite",
+   "D": "happily",
+   "E": "merely",
+   "F": "noisy",
+   "G": "paycheck",
+   "H": "promised",
+   "I": "reward",
+   "J": "run out of"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：老人反其道而行，付錢請男孩繼續玩",
+    "segs": [
+     [
+      "An old man who lived in a small side street of Mumbai had to put up with the nuisance of boys playing cricket and making a lot of noise outside his house, at night. One evening when the boys were particularly",
+      null
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      ", he went out to talk to them. He explained that he had just retired and was happiest when he could see or hear boys playing his ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " game, cricket.",
+      null
+     ],
+     [
+      " ",
+      "gradient"
+     ],
+     [
+      "He would therefore give them 25 rupees each week to play in the street at night.",
+      "gradient"
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】第一二週：如願拿到全額",
+    "segs": [
+     [
+      "The boys were thrilled, for they could hardly believe that they were being paid to do something they",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      "!",
+      "topic"
+     ],
+     [
+      " At the end of the first two weeks, the boys came to the old man's house, and went away ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " their 25 rupees.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三四段】第三四週：金額逐漸縮水",
+    "segs": [
+     [
+      "The third week when they came back,",
+      "topic"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "however",
+      "trans"
+     ],
+     [
+      ", the old man said he had",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " money and sent them away with only 15 rupees.",
+      "topic"
+     ],
+     [
+      " The fourth week, the man said he had not yet received his ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " from the government and gave them only 10 rupees. The boys were very ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      ", but there was not much they could do about it.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第五段】第五週：金額砍到最低，男孩憤而離去",
+    "segs": [
+     [
+      "At the end of the fifth week, the boys came back again and knocked at the old man's house, waiting for their",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      ".",
+      "topic"
+     ],
+     [
+      " Slowly, the door opened and the old man appeared. He apologized that he could not afford to pay them 25 rupees as he had ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "but",
+      "trans"
+     ],
+     [
+      " said he would give them five rupees each week without fail. This was really too much for the boys. “You expect us to play seven days a week for ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " five rupees!” they yelled. “No way!” They stormed away and never played on the street again.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“He would therefore give them 25 rupees each week to play in the street at night.”",
+  "thesisExplain": "全文的核心手法是：老人用「付費」把男孩單純的玩樂樂趣，轉變成一份「有酬勞的工作」，再逐週減薪，讓男孩從「免費也想做的事」變成「錢太少不划算的事」——這是典型「外在動機取代內在動機」的故事，開頭這個看似反常的決定(倒貼錢請男孩繼續打球)，其實是精心設計、逐步瓦解男孩玩興的手段。",
+  "macro": {
+   "structure": "逐步瓦解型 — 引言(老人反常地付錢請男孩繼續玩，全文核心手法) → 第一二週(全額，男孩開心) → 第三四週(逐週減薪，男孩失望) → 第五週(減到最低，男孩憤而離去)",
+   "transitions": "however（第三週起的轉折，開始減薪）→ but（第五週：道歉但仍減薪）",
+   "patterns": "記敘文 (Narrative) + 問題解決 (Problem-Solution)",
+   "outline": [
+    "1. 引言：老人提議每週付25盧比請男孩在門前打板球(核心手法)",
+    "2. 第一二週：男孩開心領全額",
+    "3. 第三四週：金額逐週減少(15→10)，男孩開始失望",
+    "4. 第五週：降到只剩5盧比，男孩憤而放棄，再也不打板球"
+   ]
+  },
+  "zhTranslation": [
+   "一位住在孟買一條小巷弄裡的老人，長期忍受著晚上一群男孩在他家門外打板球、發出吵鬧聲的困擾。有一天晚上，男孩們特別吵鬧，他終於走出去跟他們談。他解釋說，自己剛退休，能看到或聽到男孩們玩他最愛的板球，是他最快樂的時刻。因此，他願意每週付25盧比，讓他們晚上在街上打球。",
+   "男孩們喜出望外，因為他們簡直不敢相信，自己居然能因為做喜歡的事而領到錢！頭兩週結束時，男孩們來到老人家，開開心心地帶著25盧比離開。",
+   "到了第三週，男孩們回來時，老人卻說他錢用完了，只給了他們15盧比就打發走。第四週，老人又說他還沒收到政府發的薪水，只給了他們10盧比。男孩們感到非常失望，但也無可奈何。",
+   "到了第五週結束時，男孩們又回到老人家門口敲門，等著領取他們的酬勞。門緩緩打開，老人出現了。他抱歉地表示，自己沒辦法像先前承諾的那樣付給他們25盧比，但表示他往後每週一定會給他們五盧比。這對男孩們來說實在太過分了。「你要我們一週七天都來打球，就只給五盧比！」他們大喊：「不可能！」他們憤而離去，再也沒有在那條街上打過球。"
+  ]
+ },
+ {
+  "id": "y95",
+  "year": "95年",
+  "accuracyRateSource": "大考中心 95 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
+  "exam": "學測",
+  "examType": "正式考試",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "健康與自我照顧（Taking Care of Your Health）",
+  "flagNote": null,
+  "options": {
+   "A": "ruin",
+   "B": "visit",
+   "C": "neglecting",
+   "D": "lower",
+   "E": "easier",
+   "F": "responsibility",
+   "G": "chronic",
+   "H": "key",
+   "I": "promote",
+   "J": "achieving"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：健康不能光靠看醫生",
+    "segs": [
+     [
+      "Good health is not something you are able to buy, nor can you get it back with a quick",
+      null
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      " to a doctor.",
+      null
+     ],
+     [
+      " ",
+      "gradient"
+     ],
+     [
+      "Keeping yourself healthy has to be your own",
+      "gradient"
+     ],
+     [
+      " ",
+      "gradient"
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      ".",
+      "gradient"
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】忽視健康習慣的後果",
+    "segs": [
+     [
+      "If you mistreat your body by keeping bad habits,",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " symptoms of illness, and ignoring common health rules, even the best medicine can be of little use.",
+      "topic"
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】wellness 的定義：因人而異",
+    "segs": [
+     [
+      "Nowadays health specialists",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " the idea of wellness for everybody.",
+      "topic"
+     ],
+     [
+      " Wellness means ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " the best possible health within the limits of your body. One person may need fewer calories than another. Some people might prefer a lot of ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " exercise to more challenging exercise. ",
+      null
+     ],
+     [
+      "While",
+      "trans"
+     ],
+     [
+      " one person enjoys playing seventy-two holes of golf a week, another would rather play three sweaty, competitive games of tennis. Understanding the needs of your body is the ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      ".",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】無法避免疾病，但能壓低風險",
+    "segs": [
+     [
+      "Everyone runs the risk of accidents, and no one can be sure of avoiding",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " disease.",
+      "topic"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Nevertheless",
+      "trans"
+     ],
+     [
+      ", poor diet, stress, a bad working environment, and carelessness can ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " good health. By changing your habits or the conditions surrounding you, you can ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " the risk or reduce the damage of disease.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Keeping yourself healthy has to be your own ___.”",
+  "thesisExplain": "健康這件事，錢買不到，看一次醫生也解決不了——說完這兩句，作者把話收回到讀者身上，中心思想就落在這一句，關鍵在第 32 格。your own ___ 前面是所有格加 own、後面是句點，位置只容得下名詞；has to be 這個說法本身帶著「不得不」的味道，也限定了這一格要配合這種語氣。這裡要留意：前後兩句之間一個轉折詞都沒有，靠的是意思直接接上去——這種沒有明顯標記的接法，讀的時候要自己把關係補起來。後面三段依序談壞習慣的代價、wellness 因人而異、風險歸零不可能但可以壓低，都圍著這一句轉。寫作上，一句話把「該由誰來做、由誰來扛」講清楚，很適合當論說文的主題句，89 年學測談 Weight Loss 的成因時就很好用。",
+  "macro": {
+   "structure": "責任歸屬型 — 破題(健康買不到，要靠自己，全文中心思想) → 忽視習慣的後果 → wellness 的定義(因人而異，理解自己的身體) → 疾病無法完全避免，但風險可自行壓低",
+   "transitions": "While（第三段內部對比：不同人偏好不同運動強度）→ Nevertheless（第四段：雖無法避免意外與疾病，但仍可自行壓低風險）",
+   "patterns": "說明文 (Expository) + 定義 (Definition)",
+   "outline": [
+    "1. 引言：健康買不到，維持健康要靠自己(全文中心思想)",
+    "2. 忽視壞習慣、不理健康警訊的後果",
+    "3. wellness 的定義：在身體限制內追求最佳健康狀態，因人而異",
+    "4. 結語：意外與疾病無法完全避免，但可透過改變習慣壓低風險"
+   ]
+  },
+  "zhTranslation": [
+   "健康不是花錢就能買到的東西，也不是去看一次醫生就能挽回的。維持自己的健康，終究是自己的責任。",
+   "如果你靠著維持壞習慣、忽略生病的徵兆、無視常見的健康守則來糟蹋自己的身體，就算是最好的藥物也起不了什麼作用。",
+   "如今，健康專家大力推廣「wellness(健康自在)」這個理念，主張人人都適用。所謂 wellness，指的是在自己身體條件的限制內，達到最好的健康狀態。有人需要的熱量比別人少。有些人可能偏好較輕鬆的運動，而非挑戰性較高的運動。有人一週喜歡打七十二洞高爾夫球，有人則寧可打三場汗流浹背、充滿競爭的網球賽。了解自己身體的需求，正是關鍵所在。",
+   "每個人都可能面臨意外的風險，也沒有人能保證自己不會罹患慢性病。儘管如此，不良的飲食、壓力、惡劣的工作環境和粗心大意，都可能毀壞你的健康。透過改變自己的習慣，或改變周遭的環境，你就能降低罹病的風險，或減輕疾病帶來的傷害。"
+  ]
+ },
+ {
+  "id": "y94",
+  "year": "94年",
+  "accuracyRateSource": "大考中心 94 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
+  "exam": "學測",
+  "examType": "正式考試",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "愛情與磨合（Love After the Magic Fades）",
+  "flagNote": null,
+  "options": {
+   "A": "breaks down",
+   "B": "Consequently",
+   "C": "similarly",
+   "D": "indeed",
+   "E": "few",
+   "F": "forever",
+   "G": "Instead of",
+   "H": "takes over",
+   "I": "free",
+   "J": "As long as"
+  },
+  "paras": [
+   {
+    "label": "【第一段】愛情初期的美好幻覺",
+    "segs": [
+     [
+      "Falling in love is always magical.",
+      "gradient"
+     ],
+     [
+      " It feels eternal as if love will last ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      ". We naively believe that somehow we are ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " from the problems our parents had. We are assured that we are destined to live happily ever after.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】轉折：現實生活的落差",
+    "segs": [
+     [
+      "But",
+      "trans"
+     ],
+     [
+      " as the magic fades and daily life",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      ", it happens that men, forgetting that men and women are supposed to be different, continue to expect women to think and react the way men do;",
+      "topic"
+     ],
+     [
+      " women, ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      ", expect men to feel and behave the way women do.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】不理解導致的衝突循環",
+    "segs": [
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " taking time to understand and respect each other, we become demanding, resentful, judgmental, and intolerant.",
+      "topic"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      ", our relationships are filled with unnecessary disagreements and conflicts. Somehow, problems creep in, resentments build, and communication ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      ". Mistrust increases and rejection and repression surface. The magic of love is then lost.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】結語：理解差異才能讓愛延續",
+    "segs": [
+     [
+      "Very",
+      null
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " people are able to grow in love. ",
+      null
+     ],
+     [
+      "Yet",
+      "trans"
+     ],
+     [
+      ", it does happen. ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " men and women are able to respect and accept their differences, love has a chance to blossom.",
+      "topic"
+     ],
+     [
+      " Love is, ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      ", magical, and it certainly can last if we remember our differences and respect each other.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Falling in love is always magical.”",
+  "thesisExplain": "全文以「墜入愛河總是充滿魔力」開場，中段用 But 轉折點出現實生活與期待的落差如何一步步瓦解這份魔力(誤解、要求、衝突)，結尾再度呼應開頭，說明懂得理解並接納彼此差異，愛情的魔力就能持續——形成首尾呼應、中間轉折鋪陳的結構。",
+  "macro": {
+   "structure": "首尾呼應型 — 開場(愛情的魔力，全文中心思想) → But 轉折(現實落差：性別期待不同) → 衝突循環(不理解→抱怨→溝通出問題) → 結語呼應開頭(理解差異，愛情魔力得以延續)",
+   "transitions": "But（第二段：現實生活的轉折）→ Yet（第四段：儘管少數，仍會發生）",
+   "patterns": "說明文 (Expository) + 因果關係 (Cause-Effect)",
+   "outline": [
+    "1. 引言：墜入愛河總是充滿魔力(全文中心思想)",
+    "2. 轉折：現實生活來臨，男女對彼此有錯誤期待",
+    "3. 衝突循環：不理解→抱怨挑剔→溝通出問題→魔力消失",
+    "4. 結語：理解並接納差異，愛情的魔力才能真正持續"
+   ]
+  },
+  "zhTranslation": [
+   "墜入愛河總是充滿魔力。它讓人感覺彷彿能天長地久，愛會永遠持續下去。我們天真地相信，自己不知怎麼地就能免於父母曾經歷過的種種問題。我們深信，我們注定會從此過著幸福快樂的生活。",
+   "但當魔力逐漸消退、日常生活接手一切之後，男人往往忘了男女本來就是不同的，仍繼續期待女人用男人的方式思考與反應；同樣地，女人也期待男人用女人的方式去感受與行事。",
+   "不花時間去理解並尊重彼此，我們反而變得要求苛刻、心懷怨懟、愛下判斷、不夠包容。於是，我們的關係中開始充斥著不必要的爭執與衝突。不知不覺間，問題悄悄滋生，怨恨逐漸累積，溝通也隨之瓦解。猜疑心加深，拒絕與壓抑的情緒浮上檯面。愛情的魔力，就此消失殆盡。",
+   "能夠在愛裡持續成長的人非常少。然而，這樣的事確實會發生。只要男女雙方能夠尊重並接納彼此的差異，愛情就有機會綻放。愛情，的確是充滿魔力的，只要我們記得彼此的差異、懂得互相尊重，這份愛情就一定能夠長久維繫。"
+  ]
+ },
+ {
+  "id": "y93",
+  "year": "93年",
+  "accuracyRateSource": "大考中心 93 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
+  "exam": "學測",
+  "examType": "正式考試",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "外星人的各種猜測（Speculations About Aliens）",
+  "flagNote": null,
+  "options": {
+   "A": "as well as",
+   "B": "beings",
+   "C": "drawings",
+   "D": "in any way",
+   "E": "kept an eye on",
+   "F": "like",
+   "G": "others",
+   "H": "originated",
+   "I": "since",
+   "J": "harm"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：外星人存在的普遍猜測",
+    "segs": [
+     [
+      "Although",
+      "trans"
+     ],
+     [
+      " stories about aliens have never been officially confirmed, ",
+      "gradient"
+     ],
+     [
+      "their existence has been widely speculated upon.",
+      "gradient"
+     ],
+     [
+      " Many people believe that ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      " from outer space have visited us for centuries.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】各種起源與影響地球的說法",
+    "segs": [
+     [
+      "Some say that life on Earth",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " “out there” and was seeded here.",
+      "topic"
+     ],
+     [
+      " Others say that aliens have ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " what happens on Earth, and are responsible for quite a few legends, and that the ancient Greek and Roman gods, ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " the fairies and dwarfs in many classical tales, were in fact “space people” living here. Still ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " say that aliens were responsible for the growth of highly evolved civilizations which have ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " perished, including the Incan and Mayan civilizations and the legendary Atlantis.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】考古證據佐證",
+    "segs": [
+     [
+      "A lot of ancient civilizations,",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " the Egyptians, Hindus, Greeks, and Mayans, have left writings and",
+      "topic"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " which indicate contacts with superior beings “from the stars.”",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】外星人意圖眾說紛紜，結語存疑",
+    "segs": [
+     [
+      "Many believe that the aliens are here to help us,",
+      "topic"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "while",
+      "trans"
+     ],
+     [
+      " others hold that the aliens intend us",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      ".",
+      "topic"
+     ],
+     [
+      " Still others think that most aliens visit Earth to study us like our scientists study primitive natives and animals, and have no interest in helping us ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      ". It is difficult to comment conclusively on these theories in general, apart from saying that any and all of them might be possible. Maybe time will tell.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Although stories about aliens have never been officially confirmed, their existence has been widely speculated upon.”",
+  "thesisExplain": "開頭這句話用 Although 讓步點出全文核心立場：外星人的故事雖從未被官方證實，卻被廣泛猜測討論。後面三段依序列出各種起源說法、考古證據，以及外星人意圖的不同猜測，全文始終維持「眾說紛紜、無法下定論」的開放式立場，呼應開頭與結尾「Maybe time will tell」的存疑態度。",
+  "macro": {
+   "structure": "眾說紛紜型 — 破題(存在未證實但廣泛被猜測，全文中心思想) → 起源與影響地球的各種說法(Some...Others...Still others) → 考古證據佐證 → 意圖眾說紛紜，結語存疑不下定論",
+   "transitions": "Although（開頭讓步，帶出全文中心思想）→ while（第四段：兩派意圖猜測的對比）",
+   "patterns": "說明文 (Expository) + 比較對比 (Compare/Contrast)",
+   "outline": [
+    "1. 引言：外星人存在雖未證實，卻被廣泛猜測(全文中心思想)",
+    "2. 起源說法：地球生命源自外星／外星人暗中觀察地球／古文明神祇即外星人／古文明的興起與外星人有關",
+    "3. 考古證據：多個古文明留下暗示接觸外星人的文字與圖畫",
+    "4. 意圖猜測：有人認為外星人來幫助人類，有人認為心懷惡意，也有人認為只是單純研究，結語存疑不下定論"
+   ]
+  },
+  "zhTranslation": [
+   "儘管關於外星人的種種說法從未獲得官方證實，他們是否存在，卻一直是人們廣泛揣測討論的話題。許多人相信，來自外太空的生物已經造訪地球好幾個世紀了。",
+   "有人說，地球上的生命起源於「外太空」，後來才被播種到地球上。另有人說，外星人一直在密切關注地球上發生的事，並且與不少傳說有關，也有人認為，古希臘、羅馬神話中的眾神，以及許多經典故事裡的仙子與矮人，其實都是居住在地球上的「外星人」。還有人說，某些高度發展、後來卻已經滅亡的文明(包括印加、馬雅文明，以及傳說中的亞特蘭提斯)，當初的興起都跟外星人脫不了關係。",
+   "許多古文明，例如埃及人、印度人、希臘人和馬雅人，都留下了顯示曾與來自星際的高等生物接觸的文字紀錄與圖畫。",
+   "許多人相信外星人是來幫助人類的，但也有人主張，外星人其實是想傷害我們。還有些人則認為，多數外星人造訪地球，只是為了像我們的科學家研究原始部落和動物一樣研究人類，對於幫助人類毫無興趣。整體而言，目前很難對這些理論做出定論，只能說每一種說法都有可能成立。或許，時間會給我們答案。"
+  ]
+ },
+ {
+  "id": "y92",
+  "year": "92年",
+  "accuracyRateSource": "大考中心 92 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
+  "exam": "學測",
+  "examType": "正式考試",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "壓力的雙面性（The Two Faces of Stress）",
+  "flagNote": "這篇的十個選項裡，about、from、even、as、like、to、that 共七個是虛詞，只有 managing、unusual、leading 三個是實詞。同樣型態的還有 92 年補考那一篇，其餘各篇以實詞為主；這兩篇的十題線索也都落在空格所在句之內。你可以拿它練虛詞的語感，但別把它當成文意選填的代表性練習。",
+  "flagKind": ["非典型提醒"],
+  "options": {
+   "A": "about",
+   "B": "from",
+   "C": "even",
+   "D": "as",
+   "E": "managing",
+   "F": "like",
+   "G": "to",
+   "H": "that",
+   "I": "unusual",
+   "J": "leading"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：壓力是熱門話題",
+    "segs": [
+     [
+      "Stress has become a favorite subject of everyday conversation.",
+      "topic"
+     ],
+     [
+      " It is not ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      " to hear friends and family members talk about the difficulty they have in ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " the stress of everyday life and the efforts they make to control the events ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " cause stress.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】壓力對健康的具體影響數據",
+    "segs": [
+     [
+      "Most of us understand the results of not controlling our reactions",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " stress.",
+      "topic"
+     ],
+     [
+      " Forty-three percent of all adults suffer terrible health effects ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " stress. Most physician office visits are for stress-related illnesses and complaints. Stress is linked to the six ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " causes of death—heart disease, cancer, lung disease, accidents, liver disease, and suicide. Currently, health care costs account for ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " twelve percent of the gross domestic product.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】轉折：壓力不全然有害，甚至是必要的",
+    "segs": [
+     [
+      "Yet, while stress may damage our health, it is sometimes necessary,",
+      "thesis"
+     ],
+     [
+      " ",
+      "thesis"
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " desirable.",
+      "thesis"
+     ],
+     [
+      " Exciting or challenging events ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " the birth of a child, completion of a major project at work, or moving to a new city generate ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " much stress as does tragedy or disaster. And without stress, life would be dull.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Yet, while stress may damage our health, it is sometimes necessary, ___ desirable.”",
+  "thesisExplain": "前兩段先把壓力有多普遍、對健康的傷害有多具體講得很足，第三段用 Yet, while 一轉，全文真正的中心思想才登場，關鍵落在第 38 格。necessary, ___ desirable 是兩個形容詞並列、後面那個比前面那個再往上一層的寫法；這一格要填的就是把語氣往上推的那個字——看的是兩個形容詞之間的強弱關係，不是單看某個字的意思。往下讀，好事帶來的壓力（生小孩、完成工作上的重大專案）一點都不比壞事少，而完全沒有壓力的日子反而單調，都在支持這一句。寫作上，兩個形容詞並列、後者再加一層，主張一句話就有層次。92 年指考作文規定第一段以 Exams of all kinds have become a necessary part of my high school life. 為主題句，題目裡的 necessary 正好套得上這個寫法。",
+  "macro": {
+   "structure": "先害後益型 — 現象鋪陳(壓力是熱門話題) → 具體危害數據(死因排名、醫療支出占比) → Yet/while轉折(壓力也有其必要性，全文中心思想)",
+   "transitions": "Yet / while（轉折，帶出全文中心思想：壓力不全然是負面的）",
+   "patterns": "說明文 (Expository) + 因果關係 (Cause-Effect)",
+   "outline": [
+    "1. 引言：壓力是日常話題，人人都在努力控制它",
+    "2. 危害數據：43%成人受壓力影響健康，壓力與六大死因相關，醫療支出占GDP約12%",
+    "3. 轉折：壓力有時是必要甚至值得擁有的，好事帶來的壓力不亞於壞事，沒有壓力生活反而枯燥(全文中心思想)"
+   ]
+  },
+  "zhTranslation": [
+   "壓力已經成為日常對話中熱門話題。聽到親朋好友聊起自己在應付日常生活壓力上的困難，以及他們為了控制造成壓力的事件所做的努力，其實一點也不稀奇。",
+   "我們大多數人都明白，如果不控制自己對壓力的反應，會有什麼後果。43%的成年人都因壓力而承受嚴重的健康影響。大多數看診的原因，都與壓力相關的疾病和不適有關。壓力與六大主要死因息息相關——心臟病、癌症、肺病、意外事故、肝病與自殺。目前，醫療保健支出約占國內生產毛額的12%。",
+   "然而，雖然壓力可能損害我們的健康，它有時候卻是必要的，甚至是令人嚮往的。令人興奮或具有挑戰性的事件，例如迎接新生兒的誕生、完成工作上的重大專案，或搬到新城市，所帶來的壓力，並不亞於悲劇或災難所帶來的壓力。而且，如果完全沒有壓力，生活反而會顯得枯燥乏味。"
+  ]
+ },
+ {
+  "id": "y92b",
+  "year": "92年補考",
+  "accuracyRateSource": "大考中心未公布本卷逐題數據",
+  "exam": "學測",
+  "examType": "補考",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "生活水準的衡量（Measuring the Standard of Living）",
+  "flagNote": "這篇的十個選項裡，these、other、while、not only、with、such as、also 共七個是虛詞，只有 lower、methods、evenly 三個是實詞，與 92 年正式考那一篇同型；拿來練沒問題，但別把它當成文意選填的代表性練習。",
+  "flagKind": ["非典型提醒"],
+  "options": {
+   "A": "these",
+   "B": "lower",
+   "C": "evenly",
+   "D": "other",
+   "E": "while",
+   "F": "not only",
+   "G": "methods",
+   "H": "with",
+   "I": "such as",
+   "J": "also"
+  },
+  "paras": [
+   {
+    "label": "【第一段】定義：生活水準的高低",
+    "segs": [
+     [
+      "The term “standard of living” usually refers to the economic well-being enjoyed by a person, family, community, or nation.",
+      "gradient"
+     ],
+     [
+      " A standard of living is considered high when it includes ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      " necessities but also certain comforts and luxuries; it is considered low when food, clean water, housing, and ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " necessities are limited or lacking.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】測量方式：以必需品支出比例衡量",
+    "segs": [
+     [
+      "Different",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " have been employed by economists to measure standard of living.",
+      "topic"
+     ],
+     [
+      " One of ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " measures is to calculate the percentage of income that people spend on certain necessities. The higher this percentage is, the ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " is the standard of living of these people.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】美國的例子：貧富不均",
+    "segs": [
+     [
+      "The U.S. has one of the world's highest standards of living.",
+      "topic"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "But",
+      "trans"
+     ],
+     [
+      " income is not distributed ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " throughout its population. Some Americans enjoy great wealth, ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " others suffer in extreme poverty.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】影響因素的多樣性",
+    "segs": [
+     [
+      "Americans",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " different racial and educational backgrounds may vary in their standards of living.",
+      "topic"
+     ],
+     [
+      " People living in different parts of the U.S. ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " show different standards of living. Of course, in determining overall standards of living of Americans, factors ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " household composition and family size need also to be taken into consideration.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“The term “standard of living” usually refers to the economic well-being enjoyed by a person, family, community, or nation.”",
+  "thesisExplain": "開頭這句話為全文下定義，後面三段依序說明「如何衡量生活水準」「美國作為高生活水準國家卻貧富不均」「生活水準受種族、教育、地區、家庭組成等因素影響而因人而異」，都是圍繞「生活水準」這個核心概念，從定義到衡量方式、再到實際差異的完整論述脈絡。",
+  "macro": {
+   "structure": "定義展開型 — 定義(生活水準的高低標準，全文中心思想) → 衡量方式(必需品支出比例法) → 美國案例(生活水準高但分配不均) → 影響因素(種族、教育、地區、家庭組成)",
+   "transitions": "But（第三段：轉折點出美國雖生活水準高卻分配不均）",
+   "patterns": "定義 (Definition) + 比較對比 (Compare/Contrast)",
+   "outline": [
+    "1. 引言：生活水準的定義，高低標準的判斷方式(全文中心思想)",
+    "2. 衡量方式：經濟學家以必需品支出占收入比例來衡量(比例越高，生活水準越低)",
+    "3. 美國案例：生活水準雖為世界最高之一，但財富分配不均",
+    "4. 影響因素：種族、教育背景、居住地區、家庭組成都會造成生活水準差異"
+   ]
+  },
+  "zhTranslation": [
+   "「生活水準」一詞，通常指的是個人、家庭、社區或國家所享有的經濟福祉。當生活水準不只涵蓋生活必需品，還包括某些舒適享受與奢侈品時，就視為高生活水準；而當食物、乾淨的水、住房等必需品匱乏或不足時，就視為低生活水準。",
+   "經濟學家採用不同的方法來衡量生活水準。其中一種衡量方式，是計算人們花在特定必需品上的收入所占的百分比。這個百分比愈高，代表這些人的生活水準愈低。",
+   "美國是全世界生活水準最高的國家之一。但收入在其國內人口間的分配並不平均。有些美國人享有龐大財富，另一些人則生活在極度貧困之中。",
+   "不同種族與教育背景的美國人，在生活水準上可能有所差異。居住在美國不同地區的人，生活水準也各不相同。當然，在判斷美國人整體生活水準時，家庭組成和家庭人數等因素，也都需要一併納入考量。"
+  ],
+  "internalNote": "第 38 題原稿曾誤植答案字母為 F；第三百七十四場對照大考中心選擇題答案，官方答案即為 H (with)，flagNote 與解析的相關說明已刪。"
+ },
+ {
+  "id": "y91",
+  "year": "91年",
+  "accuracyRateSource": "大考中心 91 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
+  "exam": "學測",
+  "examType": "正式考試",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "驢子與鹽包的智慧（A Lesson from Amir's Donkey）",
+  "flagNote": null,
+  "options": {
+   "A": "dutifully",
+   "B": "played",
+   "C": "heavier",
+   "D": "the way",
+   "E": "not",
+   "F": "lightening",
+   "G": "finally",
+   "H": "himself",
+   "I": "teach",
+   "J": "troubled"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：驢子意外發現鹽會溶解",
+    "segs": [
+     [
+      "Amir tied two sacks of salt to the back of his donkey and headed for the market to sell the salt. On",
+      null
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      ", Amir and the donkey passed a stream. The donkey jumped into the stream to cool ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      ". ",
+      "gradient"
+     ],
+     [
+      "As a result, much of the salt melted in the water, ruining the salt for Amir but",
+      "gradient"
+     ],
+     [
+      " ",
+      "gradient"
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      "the load for the donkey.",
+      "gradient"
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】驢子屢次故技重施",
+    "segs": [
+     [
+      "Amir tried to get to the market on the following days,",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "but",
+      "trans"
+     ],
+     [
+      " the donkey",
+      "topic"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " the same trick and ruined the salt. Amir was very much ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " by the donkey's trick, ",
+      null
+     ],
+     [
+      "but",
+      "trans"
+     ],
+     [
+      " did not know what to do. So he stopped going to the market for three days and tried to think of a way to ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " the donkey a lesson.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】阿米爾想出對策：用沙子取代鹽",
+    "segs": [
+     [
+      "On the third day, he",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " came up with a good idea.",
+      "topic"
+     ],
+     [
+      " The next day, Amir loaded the sacks ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " with salt but with sand. When the donkey jumped into the stream and got the sacks wet, they became much ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      ". The donkey was so much weighed down by the wet sand that he could hardly get out of the stream.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】結語：驢子學到教訓",
+    "segs": [
+     [
+      "From then on, the donkey learned the lesson, and",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " carried Amir's salt to the market without ruining it.",
+      "topic"
+     ]
+    ]
+   }
+  ],
+  "thesis": "“As a result, much of the salt melted in the water, ruining the salt for Amir but ___ the load for the donkey.”",
+  "thesisExplain": "鹽泡到水裡會怎樣，驢子比阿米爾先想通。這一句點出全文的關鍵所在，重量落在第 33 格。ruining… but ___… 是一組對照並列：but 前後結構一樣、方向相反，前半對阿米爾是損失，後半對驢子就該是相反的結果——認出這個對稱，這一格幾乎由前半句決定。而 the load 這個受詞又限制了能跟它搭配的動詞，意思和搭配兩條線在這裡交會。後面情節全從這個現象長出來：驢子食髓知味，阿米爾改裝沙子，驢子自己學到教訓。寫作上，敘事文最有力的一句往往不是結局，而是把「為什麼會變成這樣」講清楚的那一句。93 年指考寫 Travel Is The Best Teacher，也得靠這樣一句話把經驗和道理接起來。",
+  "macro": {
+   "structure": "以彼之道還施彼身型 — 意外發現(鹽泡水變輕，全文關鍵機制) → 屢次故技重施 → 主人想出對策(換成沙子，泡水反而變重) → 結語(驢子學到教訓，從此盡責)",
+   "transitions": "but（×2，第二段：驢子故技重施、阿米爾苦惱卻不知如何是好）",
+   "patterns": "記敘文 (Narrative) + 問題解決 (Problem-Solution)",
+   "outline": [
+    "1. 引言：驢子意外發現鹽泡水會溶解變輕(全文關鍵機制)",
+    "2. 驢子屢次故技重施，阿米爾苦惱不知如何是好",
+    "3. 阿米爾想出對策：改用沙子(泡水反而變重)",
+    "4. 結語：驢子學到教訓，從此盡責地把鹽運到市場"
+   ]
+  },
+  "zhTranslation": [
+   "阿米爾把兩袋鹽綁在驢子背上，準備前往市場賣鹽。途中，阿米爾和驢子經過一條小溪。驢子跳進溪水中，想讓自己涼快一下。結果，大部分的鹽都在水中溶解了，這對阿米爾來說是損失，但對驢子來說，卻讓牠身上的重量變輕了。",
+   "接下來幾天，阿米爾試著前往市場，但驢子又故技重施，把鹽弄壞了。阿米爾對驢子這個把戲感到非常困擾，卻不知道該怎麼辦。於是他暫停去市場三天，試著想出一個方法，好好教訓這頭驢子。",
+   "到了第三天，他終於想出了一個好點子。隔天，阿米爾在袋子裡裝的不是鹽，而是沙子。當驢子跳進溪裡、把袋子弄濕時，袋子反而變得重了許多。驢子被濕沙子的重量壓得幾乎爬不出小溪。",
+   "從那時起，這頭驢子學到了教訓，此後盡忠職守地把阿米爾的鹽運到市場，再也沒有把鹽弄壞過。"
+  ]
+ },
+ {
+  "id": "y91b",
+  "year": "91年補考",
+  "accuracyRateSource": "大考中心未公布本卷逐題數據",
+  "exam": "學測",
+  "examType": "補考",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "海豚與鮪魚捕撈（Dolphins and Tuna Fishing）",
+  "flagNote": null,
+  "options": {
+   "A": "also",
+   "B": "trapped",
+   "C": "between",
+   "D": "stretch",
+   "E": "save",
+   "F": "senseless",
+   "G": "competition",
+   "H": "aboard",
+   "I": "yourself",
+   "J": "off"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：孩童能否影響政策的提問",
+    "segs": [
+     [
+      "Can young people really improve the world by influencing their elders to change a policy?",
+      "gradient"
+     ],
+     [
+      " Read this story and decide for ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      ".",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】問題：捕鮪魚漁網誤捕海豚",
+    "segs": [
+     [
+      "Dolphins, like most of us, love to eat tuna. So in many parts of the world dolphins and fishermen are in",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " for tuna.",
+      "topic"
+     ],
+     [
+      " In the past, there wasn't much conflict ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " dolphins and fishermen, because the numbers of tuna in the ocean were enormous. Now, ",
+      null
+     ],
+     [
+      "however",
+      "trans"
+     ],
+     [
+      ", men have developed huge fishing nets that form underwater “walls” that ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " for miles. They can catch thousands of tuna at one time. Unfortunately, they ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " catch many dolphins at the same time.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】海豚受困窒息而死",
+    "segs": [
+     [
+      "Dolphins, like us, have to breathe air.",
+      "topic"
+     ],
+     [
+      " When they are ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " in the nets too long, they cannot breathe. By the time they are brought ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " the ship, they will be dead.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】孩子們發起行動改變現況",
+    "segs": [
+     [
+      "Many children were upset to hear about the",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " death of these wonderful sea creatures and decided to help",
+      "topic"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " them. They wrote letters to the tuna companies and supermarkets asking them to find a way to spare dolphins. Eventually their hard work paid ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      ". Now you can buy tuna with the label “dolphin-free tuna.” So you see, everyone can make a difference.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Can young people really improve the world by influencing their elders to change a policy?”",
+  "thesisExplain": "開頭這個提問就是全文的核心命題，後面用「孩童寫信抗議海豚因捕鮪魚漁網喪命」的故事作答：孩子們確實透過寫信給廠商，成功促成「不含海豚」（dolphin-free）鮪魚標示的誕生，證明年輕人的確可以透過影響長輩(廠商決策者)來改變政策，呼應開頭提問並在結尾點題「everyone can make a difference」。",
+  "macro": {
+   "structure": "提問實證型 — 提出疑問(孩童能否改變政策，全文中心思想) → 問題說明(漁網誤捕海豚致死的原因) → 海豚受困窒息死亡的過程 → 孩子們發起寫信行動，成功促成改變(回答開頭提問)",
+   "transitions": "however（第二段：現代大型漁網造成的新問題，與過去對比）",
+   "patterns": "記敘文 (Narrative) + 問題解決 (Problem-Solution)",
+   "outline": [
+    "1. 引言：孩童能否透過影響長輩改變政策的提問(全文中心思想)",
+    "2. 問題：現代大型漁網捕鮪魚時意外捕獲大量海豚",
+    "3. 海豚受困漁網中無法呼吸而死",
+    "4. 行動與結果：孩子們寫信抗議，成功促成「不含海豚」鮪魚標示，回應開頭提問"
+   ]
+  },
+  "zhTranslation": [
+   "年輕人真的能夠透過影響長輩來改變政策、進而讓世界變得更好嗎？讀完這個故事，你可以自己判斷。",
+   "海豚跟我們大多數人一樣，喜歡吃鮪魚。因此，在世界許多地方，海豚和漁民都在爭奪鮪魚資源。過去，海豚和漁民之間並沒有太多衝突，因為當時海裡的鮪魚數量非常龐大。然而，現在人類已經開發出巨大的漁網，能在水中形成綿延數英里的「牆」。這些漁網一次能捕獲數千條鮪魚，但不幸的是，也會同時捕獲大量海豚。",
+   "海豚跟我們一樣需要呼吸空氣。當牠們在漁網中受困過久，就會無法呼吸。等到牠們被拉上船時，往往早已死亡。",
+   "許多孩子聽聞這些美麗海洋生物毫無意義地死去，感到相當難過，於是決定挺身而出，幫助拯救海豚。他們寫信給鮪魚公司和超市，要求業者想辦法保護海豚。最終，他們的努力有了回報。現在，你可以買到標示著「不含海豚」的鮪魚產品了。由此可見，每個人都可以帶來改變。"
+  ]
+ },
+ {
+  "id": "y90",
+  "year": "90年",
+  "accuracyRateSource": "該屆逐題數據未公開",
+  "exam": "學測",
+  "examType": "正式考試",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "劇院寄放雙腿的夢（A Strange Dream at the Theater Cloakroom）",
+  "flagNote": "90 年學測正式考題。這是學測文意選填現存最早的年份，89 年以前的學測沒有這個題型。",
+  "flagKind": ["出處說明"],
+  "options": {
+   "A": "sorry",
+   "B": "outside",
+   "C": "leaving",
+   "D": "securely",
+   "E": "any",
+   "F": "normal",
+   "G": "quite",
+   "H": "came",
+   "I": "make",
+   "J": "way"
+  },
+  "paras": [
+   {
+    "label": "【第一段】夢境開場：離奇的規定",
+    "segs": [
+     [
+      "I had an extraordinary dream last night. In the dream the cloakroom attendant at a theater stopped me in the lobby and insisted on my",
+      null
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      " my legs behind. I was not surprised, but I was ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " annoyed. I said I had never heard of such a rule at a theater before.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】劇院方解釋規定緣由",
+    "segs": [
+     [
+      "The man replied that he was very",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " about it, but people often complained that other people's legs were always in the",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      ".",
+      "topic"
+     ],
+     [
+      " Therefore, it had been decided that people should leave their legs ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      ".",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】敘事者雖有疑慮仍選擇順從",
+    "segs": [
+     [
+      "It seemed to me that the management had gone beyond their legal right in making this order.",
+      "topic"
+     ],
+     [
+      " Under ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " circumstances, I should have disputed it. ",
+      null
+     ],
+     [
+      "However",
+      "trans"
+     ],
+     [
+      ", I didn't want to ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " a disturbance, so I sat down and prepared to obey the rule.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】發現腿真的可以拆卸",
+    "segs": [
+     [
+      "I had never before known that the human leg could be taken off.",
+      "topic"
+     ],
+     [
+      " I had always thought it was more ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " fixed. ",
+      null
+     ],
+     [
+      "But",
+      "trans"
+     ],
+     [
+      " the man showed me how to undo them, and I found that they ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " off quite easily.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第五段】結語：夢裡什麼都不奇怪",
+    "segs": [
+     [
+      "The discovery did not surprise me",
+      null
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " more than the original request that I should take them off.",
+      null
+     ],
+     [
+      " ",
+      "gradient"
+     ],
+     [
+      "Nothing does surprise one in a dream.",
+      "gradient"
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Nothing does surprise one in a dream.”",
+  "thesisExplain": "全文以荒誕的夢境邏輯貫穿——「腿可以像衣物一樣寄放」這種在現實中完全不合理的設定，敘事者在夢裡卻用近乎理性的態度一步步接受(質疑合法性、但選擇不鬧事、最後甚至順利拆下雙腿)，直到結尾這句話點破全文荒謬情節得以成立的關鍵：這正是夢境的本質——再離奇的事，在夢裡都不足為奇。",
+  "macro": {
+   "structure": "荒誕接受型 — 離奇情境開場(寄放雙腿的規定) → 對方解釋緣由 → 敘事者雖懷疑卻選擇順從 → 意外發現腿真能拆下 → 結語點破夢境邏輯(全文中心思想)",
+   "transitions": "but（服務員道歉後轉而說明原因）→ Therefore（規定訂立的結果）→ However（不願鬧事，選擇順從）→ But（服務員示範拆卸方式）",
+   "patterns": "記敘文 (Narrative) + 因果關係 (Cause-Effect)",
+   "outline": [
+    "1. 夢境開場：劇院要求寄放雙腿的離奇規定",
+    "2. 服務員解釋：因為別人的腿總是「擋路」，所以訂立此規定",
+    "3. 敘事者雖質疑合法性，仍選擇不鬧事、配合規定",
+    "4. 意外發現：雙腿真的能輕易拆卸",
+    "5. 結語：夢裡沒有什麼是真正令人驚訝的(全文中心思想)"
+   ]
+  },
+  "zhTranslation": [
+   "昨晚我做了一個非比尋常的夢。夢裡，一位劇院衣帽間服務員在大廳裡叫住我，堅持要我把雙腿寄放在那裡。我並不感到驚訝，但相當惱怒。我說，我從沒聽過劇院有這種規定。",
+   "那名男子回答，他對此感到非常抱歉，但他表示，人們常常抱怨別人的雙腿老是擋路。因此，劇院方面決定，大家應該把雙腿寄放在外面。",
+   "我覺得，劇院管理階層訂立這項規定，已經超出他們的合法權限。在正常情況下，我應該要提出異議才對。然而，我不想引起騷動，於是坐了下來，準備遵守這項規定。",
+   "我從來不知道，人的腿原來是可以拆下來的。我一直以為，腿是牢牢固定在身上的。但那名男子示範給我看，該怎麼把腿拆下來，而我發現，它們其實可以相當輕易地卸下。",
+   "這個發現，並沒有比原本那個要我把腿脫下來的要求，更讓我感到驚訝。畢竟，在夢裡，沒有什麼事情是真正令人意外的。"
+  ],
+  "internalNote": "此為90年真實學測考題，經比對確認為學測文意選填現存最早年份（89年以前學測無此題型）。"
+ },
+ {
+  "id": "y111r",
+  "year": "111年（＝115學年度參考試卷同內容）",
+  "accuracyRateSource": "大考中心 111 學年度學科能力測驗統計圖表：英文科答對率及鑑別度表",
+  "exam": "學測",
+  "examType": "正式考試",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "titleStatus": null,
+  "sourceNote": "本篇為 111 年學測正式試題；115 學年度參考試卷沿用同一內容。",
+  "title": "特技演員的崛起（The Rise of Stunt Performers）",
+  "flagNote": "111 年學測正式考題（第 21–30 題，選項 A–J）。附大考中心官方答對率（P）與鑑別度（D）。115 學年度參考試卷沿用了同一篇內容。",
+  "flagKind": ["出處說明", "沿用題指認"],
+  "options": {
+   "A": "possible",
+   "B": "sensation",
+   "C": "risky",
+   "D": "cost",
+   "E": "witnessed",
+   "F": "professional",
+   "G": "called for",
+   "H": "tried out",
+   "I": "necessity",
+   "J": "career"
+  },
+  "paras": [
+   {
+    "label": "【第一段】定義：特技演員做什麼",
+    "segs": [
+     [
+      "A stunt person is a man or a woman who performs dangerous acts, usually in the television or movie industry.",
+      "topic"
+     ],
+     [
+      " In this line of work, the person is paid to do daring actions that are deemed too ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " for the regular actor to perform, including jumping from heights, crashing cars, or fighting with weapons.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】起源：因應演員受傷而演變出此職業",
+    "segs": [
+     [
+      "Stunt work emerged out of",
+      "gradient"
+     ],
+     [
+      " ",
+      "gradient"
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " over time.",
+      "gradient"
+     ],
+     [
+      " In the early days of the film industry, actors themselves shot acrobatic acts and dangerous scenes, until they began to get injured. There were, ",
+      null
+     ],
+     [
+      "however",
+      "trans"
+     ],
+     [
+      ", no ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " crew members to perform impressive stunts at that time. If something dangerous needed to be done for a scene, the producers would hire anyone crazy or desperate enough to do it. These people were not trained to perform stunts, so they often ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " things for the first time during the actual shooting. They had to learn from their own mistakes, which ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " some their lives, and almost all suffered light or severe injuries.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】需求成長：從默片到西部片時代",
+    "segs": [
+     [
+      "Beginning around 1910, audiences developed a taste for serial action movies, which",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " the use of dedicated stunt people to perform in dangerous scenes.",
+      "topic"
+     ],
+     [
+      " Such demand increased with the rise of western movies, and many cowboys with masterful skills on horseback found a new ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " as a stunt person. Tom Mix and Yakima Canutt were among the most famous.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】科技演進：從實體特效到CGI",
+    "segs": [
+     [
+      "The 1960s and '70s",
+      null
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " the development of most modern stunt technology, like air rams and bullet squibs. That technology has continued to evolve into the present.",
+      null
+     ],
+     [
+      " Today, CGI (computer generated imagery) is widely used in filmmaking, and it is now ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " to create very lifelike scenes without using real stunt people. ",
+      null
+     ],
+     [
+      "However",
+      "trans"
+     ],
+     [
+      ", CGI has difficulties of its own, and there will always be a demand for the realism and thrilling ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " of an actual stunt. ",
+      null
+     ],
+     [
+      "So",
+      "trans"
+     ],
+     [
+      " the stunt industry is probably in no immediate danger of dying off.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Stunt work emerged out of ___ over time.”",
+  "thesisExplain": "特技演員這一行，不是電影一開始就有的，是被現實逼出來的。這一句就是全文的中心思想，關鍵落在第 22 格。emerge out of ___ 是一組很常見的字詞搭配，後面習慣接抽象名詞，out of curiosity、out of habit 都是同一類用法，光憑這個組合就能先刷掉一半選項。句尾的 over time 又預告了全文按時間走：默片和西部片時期需要的人變多、實體特效、再到 CGI——技術再厲害，真人從樓上翻下來那一下的真實感還是換不掉，結尾又回到開頭。寫作上，要交代「某個行業或習慣是怎麼冒出來的」，用這種一句話講成因、後面照時間排的寫法最清楚。105 年指考談「碩士報考清潔隊員」這類現象，開頭正好可以這樣立。",
+  "macro": {
+   "structure": "演變溯源型 — 定義(特技演員的工作內容) → 起源(因應演員受傷的實際需求，全文中心思想) → 需求成長(默片到西部片時代) → 科技演進(實體特效到CGI，結語仍有存在價值)",
+   "transitions": "however（早期缺乏專業特技人員）→ However（CGI技術發達但仍有其局限）→ So（結語，特技產業不會消失）",
+   "patterns": "說明文 (Expository) + 時序發展 (Chronological)",
+   "outline": [
+    "1. 定義：特技演員從事電影／電視中的危險動作",
+    "2. 起源：早期演員自己上陣受傷，逐漸演變出因應需求的專門職業(全文中心思想)",
+    "3. 需求成長：3. 需求成長：1910年左右起連續劇式動作電影興起、西部片時代牛仔轉行成為特技演員、西部片時代牛仔轉行成為特技演員",
+    "4. 科技演進：1960-70年代技術發展至今日CGI，但真人特技仍有其無可取代的真實感"
+   ]
+  },
+  "zhTranslation": [
+   "特技演員是專門執行危險動作的男性或女性，通常活躍於電視或電影產業。從事這份工作，特技演員領取酬勞去執行那些對一般演員來說風險過高的大膽動作，包括從高處跳下、撞車，或是持械打鬥等。",
+   "特技演員這個行業，是隨著時間演進、因應實際需求而逐漸出現的。電影產業發展初期，演員都是親自上陣拍攝雜技和危險場景，直到他們開始受傷為止。然而，當時並沒有專業的工作人員能夠執行令人印象深刻的特技動作。如果某個場景需要有人執行危險動作，製片就會雇用任何夠瘋狂或夠走投無路、願意去做的人。這些人沒有受過特技訓練，因此往往是在實際拍攝時，才第一次嘗試那些危險動作。他們只能從自己的錯誤中學習，這也讓一些人因此喪命，幾乎所有人都受過或輕或重的傷。",
+   "大約從1910年開始，觀眾開始喜歡上連續劇式的動作電影，這股風潮也帶動了對專職特技演員的需求，讓他們能在危險場景中演出。隨著西部片興起，這股需求進一步增加，許多擅長馬術的牛仔，也因此在特技演員這個行業裡找到了新的職業出路。湯姆．米克斯和亞基馬．卡努特是其中最有名的兩位。",
+   "1960和70年代，見證了大多數現代特技技術的發展，例如空氣彈射墊和爆破裝置。這項技術至今仍持續演進。如今，電腦動畫特效(CGI)已被廣泛運用於電影製作，即使不使用真人特技演員，也能製作出栩栩如生的畫面。然而，CGI技術本身也有其局限，人們對真實特技所帶來的真實感與刺激感，永遠存在著需求。因此，特技產業短期內應該不會面臨消失的危機。"
+  ],
+  "internalNote": "⚠重要更正：此篇原本標記為「115學年度參考試卷」，但經核對111年真實學測正式試卷，確認這篇「特技演員」其實就是111年學測正式考題(第21-30題，選項A-J)，115學年度參考試卷只是重複沿用了111年的真實考題內容。已將標題更正為111年為主、並附註115參考試卷沿用此內容。已附上111年官方答對率(P)/鑑別度(D)。此份同時附有篇章結構題組(111年真實學測為Obon Festival，4選4格式；115參考試卷為Roller coasters，5選4格式)，已依指示擱置，待指考文意選填處理完畢後再回頭處理。 ／ patterns 原附註：與總表「115參考試卷／文意選填」條目一致。"
+ },
+ {
+  "id": "y99r",
+  "year": "99課綱（102年施測）",
+  "accuracyRateSource": "本卷非正式施測，無答對率",
+  "exam": "學測",
+  "examType": "參考試卷",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "titleStatus": null,
+  "sourceNote": "99 課綱學測參考試卷（102 年施測），非正式施測，大考中心未公布逐題答對率。",
+  "title": "青少年晚起之謎（Teenage Sleep Patterns）",
+  "flagNote": "99 課綱適用的學測參考試卷內容（非正式考題）。",
+  "flagKind": ["出處說明"],
+  "options": {
+   "A": "therefore",
+   "B": "alert",
+   "C": "due to",
+   "D": "in conflict with",
+   "E": "cause",
+   "F": "reluctant",
+   "G": "allowing",
+   "H": "awaken",
+   "I": "for example",
+   "J": "lack"
+  },
+  "paras": [
+   {
+    "label": "【第一段】常見誤解：以為晚起是懶惰",
+    "segs": [
+     [
+      "Many teenagers have trouble getting up early in the morning. Some people believe that they are",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      " to get up early all because of laziness.",
+      "topic"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "But",
+      "trans"
+     ],
+     [
+      " it is not necessarily the case.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】科學解釋：青少年生理時鐘天生較晚",
+    "segs": [
+     [
+      "Sleep experts say this teen behavior actually has a physical",
+      "gradient"
+     ],
+     [
+      " ",
+      "gradient"
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      ":",
+      "gradient"
+     ],
+     [
+      " Teenagers are biologically programmed to go to sleep later and get up later than other age groups. Teenagers normally don't feel sleepy until 11 p.m. or later. And they cannot ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " until 8:00 a.m. because they need about nine hours of sleep a night.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】問題：生理時鐘與上學時間衝突，睡眠不足",
+    "segs": [
+     [
+      "Obviously, their biological rhythm is",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " an early school start time.",
+      "topic"
+     ],
+     [
+      " With most high schools starting before 7:30 a.m., teenagers have to get up as early as 6:30 a.m. or so. They are, ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      ", not getting the sleep they need. In fact, surveys show that half the teenagers in the USA are missing one to 1½ hours of sleep every school night. The ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " of sleep has negative effects on almost all aspects of teens' lives. Their academic, athletic, and even driving performances may drop ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " insufficient sleep. They also more easily get annoyed and depressed.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】解方：延後上學時間帶來正面成效",
+    "segs": [
+     [
+      "To meet teens' sleep needs, many school districts in the USA changed the school start time,",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " children to start later in the morning.",
+      "topic"
+     ],
+     [
+      " This change has brought many positive results, ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      ", a decrease in visits to health centers and rest requests. Besides, students reported that they felt less sleepy and were more ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " during the day. Teachers also found that there was a more positive mood in the classroom.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Sleep experts say this teen behavior actually has a physical ___”",
+  "thesisExplain": "「早上叫不起來就是懶」，這篇用 But 把這個說法翻掉，中心思想落在這一句，關鍵在第 32 格。a physical ___ 前面有冠詞和形容詞，後面緊接著冒號——冒號之後那句話就是替這一格作的說明，讀的時候前後對起來看，這一格自己會浮出來。physical 和後文的 biologically programmed 是同一條意思線，這種同義呼應在文意選填裡常當線索用。後面依序講生理時鐘與上學時間衝突、睡不夠帶來的影響，再用延後上學的實例收尾，正面回應開頭那個說法。寫作上：先點出一般人的誤解，再用一句話把真正的關鍵交代清楚，後面全部拿來佐證。103 年指考那題高中生時間分配圖表，第二段比較台美差異時就用得上。",
+  "macro": {
+   "structure": "破除迷思型 — 常見誤解(晚起=懶惰) → But破題(其實是生理原因，全文中心思想) → 問題說明(生理時鐘與上學時間衝突，睡眠不足的負面影響) → 解方佐證(延後上學時間的正面成效)",
+   "transitions": "But（破除迷思，帶出全文中心思想）",
+   "patterns": "現象解釋 (Phenomenon Explanation) + 問題解決 (Problem-Solution)",
+   "outline": [
+    "1. 常見誤解：以為青少年晚起是因為懶惰",
+    "2. 科學解釋：青少年生理時鐘天生較晚(全文中心思想)",
+    "3. 問題：生理時鐘與過早的上學時間衝突，導致長期睡眠不足及其負面影響",
+    "4. 解方：美國多學區延後上學時間，睡眠、精神、情緒與課堂氣氛都有改善"
+   ]
+  },
+  "zhTranslation": [
+   "許多青少年早上都很難早起。有些人認為，他們之所以不願意早起，完全是因為懶惰。但事實未必如此。",
+   "睡眠專家表示，青少年這種行為其實有生理上的原因：青少年的生理時鐘天生就被設定成比其他年齡層更晚睡、更晚起。青少年通常要到晚上11點以後才會感到睏意，而且因為他們每晚需要大約九小時的睡眠，所以早上8點以前根本無法自然醒來。",
+   "顯然，青少年的生理時鐘與提早開始上課的時間互相衝突。由於大多數高中在早上7點半前就開始上課，青少年早在6點半左右就得起床。因此，他們一直無法獲得足夠的睡眠。事實上，調查顯示，美國有一半的青少年，每個上學日晚上都少睡了1到1.5小時。睡眠不足幾乎對青少年生活的各個層面都有負面影響。他們在課業、體育，甚至開車上的表現，都可能因為睡眠不足而下滑。他們也更容易感到煩躁和沮喪。",
+   "為了滿足青少年的睡眠需求，美國許多學區已經更改了上課時間，讓孩子們早上可以晚一點到校。這項改變帶來了許多正面成效，例如就診次數和請假休息的次數都有所下降。此外，學生也表示，他們白天感覺比較不睏，精神也比較好。老師們也發現，課堂氣氛變得更加正向。"
+  ],
+  "internalNote": "此為99課綱適用之學測參考試卷內容，無附篇章結構題組。"
+ },
+ {
+  "id": "y95r",
+  "year": "95課綱（98年施測）",
+  "accuracyRateSource": "本卷非正式施測，無答對率",
+  "exam": "學測",
+  "examType": "參考試卷",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "titleStatus": null,
+  "sourceNote": "95 課綱學測參考試卷（98 年施測），非正式施測，大考中心未公布逐題答對率。",
+  "title": "太陽能的發展歷程（Solar Energy Over Time）",
+  "flagNote": "95 課綱適用的學測參考試卷內容（非正式考題）。",
+  "flagKind": ["出處說明"],
+  "options": {
+   "A": "work",
+   "B": "absorb",
+   "C": "available",
+   "D": "dry",
+   "E": "lessen",
+   "F": "design",
+   "G": "free",
+   "H": "important",
+   "I": "manner",
+   "J": "rise"
+  },
+  "paras": [
+   {
+    "label": "【第一段】太陽能的優勢：免費、不會造成污染",
+    "segs": [
+     [
+      "Solar energy is the most readily available source of energy.",
+      "gradient"
+     ],
+     [
+      " It does not belong to anybody and is, therefore, ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      ". Of all the nonconventional sources of energy, it is the most ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " because it is non-polluting and helps to ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " the greenhouse effect.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】發展歷程：從原始使用到石油危機後才受重視",
+    "segs": [
+     [
+      "Solar energy has been used since prehistoric times,",
+      "topic"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "but",
+      "trans"
+     ],
+     [
+      " in a most primitive",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      ".",
+      "topic"
+     ],
+     [
+      " Before 1970, some research and development was carried out in a few countries to exploit solar energy more efficiently, ",
+      null
+     ],
+     [
+      "but",
+      "trans"
+     ],
+     [
+      " most of this ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " remained mainly academic. ",
+      null
+     ],
+     [
+      "After",
+      "trans"
+     ],
+     [
+      " the dramatic ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " in oil prices in the 1970s, several countries began to ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " extensive research programs to exploit solar energy.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】生活中的應用實例",
+    "segs": [
+     [
+      "When we hang out our clothes to",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " in the sun, we use the energy of the sun.",
+      "topic"
+     ],
+     [
+      " In the same way, solar panels ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " the energy of the sun to provide heat for cooking and for heating water. Such systems are ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " on the market and are being used in homes and factories.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】結語：未來展望",
+    "segs": [
+     [
+      "In the next few years it is expected that millions of households in the world will be using solar energy as the trends in developed countries show.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Solar energy is the most readily available source of energy.”",
+  "thesisExplain": "開頭點出太陽能的核心優勢——最容易取得的能源，不屬於任何人，因此是免費的，這是貫穿全文的核心思想。後面段落依序說明人類雖然自古就在使用太陽能，卻直到 1970 年代石油危機後才真正重視它、投入研究，再以曬衣服、太陽能板等生活實例具體化太陽能的應用，結尾展望未來太陽能將更普及，都是圍繞「太陽能是免費、乾淨且值得推廣的能源」這個核心概念展開。",
+  "macro": {
+   "structure": "優勢展開型 — 破題(太陽能的優勢：免費且不污染，全文中心思想) → 發展歷程(原始使用→石油危機後才受重視) → 生活應用實例(曬衣服、太陽能板) → 結語(未來展望更普及)",
+   "transitions": "but（太陽能雖早被使用但方式原始／早期研究仍停留學術層面，×2）→ After（石油危機後研究才真正擴大）",
+   "patterns": "說明文 (Expository) + 時序發展 (Chronological)",
+   "outline": [
+    "1. 破題：太陽能免費、不會造成污染，是最容易取得的能源(全文中心思想)",
+    "2. 發展歷程：自古即有人使用但方式原始，直到 1970 年代石油危機後才真正投入大規模研究",
+    "3. 生活應用：曬衣服、太陽能板加熱等實例，證明已普遍商業化",
+    "4. 結語：未來太陽能使用將更加普及"
+   ]
+  },
+  "zhTranslation": [
+   "太陽能是最容易取得的能源。它不屬於任何人，因此是免費的。在所有非傳統能源中，太陽能是最重要的一種，因為它不會造成污染，還有助於減緩溫室效應。",
+   "人類自史前時代就已在使用太陽能，只是方式相當原始。1970 年以前，只有少數國家投入研究與開發，希望更有效率地運用太陽能，但這些研究大多停留在學術層面。直到 1970 年代石油價格劇烈上漲後，才有多個國家開始著手規劃大規模的研究計畫，以開發利用太陽能。",
+   "我們把衣服掛出去曬乾時，其實就是在利用太陽的能量。同樣地，太陽能板也會吸收太陽的能量，用來提供煮飯和加熱用水所需的熱能。這類系統目前已經在市面上販售，並廣泛運用於住家與工廠之中。",
+   "預期在未來幾年內，隨著已開發國家的趨勢帶動，全球將有數百萬個家庭開始使用太陽能。"
+  ],
+  "internalNote": "此為95課綱適用之學測參考試卷內容，無附篇章結構題組。"
+ },
+ {
+  "id": "y113",
+  "year": "113年",
+  "accuracyRateSource": "大考中心 113 學年度學科能力測驗統計圖表：英文科答對率及鑑別度表",
+  "exam": "學測",
+  "examType": "正式考試",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "風之電話（The Wind Phone）",
+  "flagNote": "113 年學測正式考題（第 21–30 題）。附大考中心官方答對率（P）與鑑別度（D）。",
+  "flagKind": ["出處說明"],
+  "options": {
+   "A": "passed on",
+   "B": "bridge",
+   "C": "sorrow",
+   "D": "hope",
+   "E": "departed",
+   "F": "mechanism",
+   "G": "housed",
+   "H": "manageable",
+   "I": "fateful",
+   "J": "brought forth"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：海嘯後山丘上的風之電話亭",
+    "segs": [
+     [
+      "On a hilltop overlooking the 2011-tsunami hit Otsuchi Town in northeastern Japan, there is a white phone booth standing all alone in the wind.",
+      "topic"
+     ],
+     [
+      " The lonely “wind phone” serves to connect family members to their ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " loved ones who died in the tsunami that claimed 18,000 lives. People come to speak to those they have lost, to say the words they never got to say on that ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " day.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】起源：設計師佐佐木格的私人悼念空間",
+    "segs": [
+     [
+      "The idea for the wind phone was first",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " by a Japanese garden designer named Itaru Sasaki, who was grieving over the death of his cousin in 2010, before the tsunami.",
+      "topic"
+     ],
+     [
+      " Feeling that he needed a private space to help him navigate through the ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      ", Sasaki positioned a booth where he could “speak” to the dead relative. The booth he built ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " only an old dial phone with a disconnected phone line. When he stepped into the booth, he could pick up the phone to call his cousin, telling him how he was, and how he missed him. Sasaki stated in an interview: “Because my thoughts couldn't be ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " through a regular phone line, I wanted them to be carried on the wind.” Hence, the wind phone allows Sasaki to create a one-way conversation with deep, soulful personal meaning, and renders the grieving process more ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " for him.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】推廣：從私人紀念到全球共鳴",
+    "segs": [
+     [
+      "Sasaki opened his wind phone to the public in 2011, after the devastating tsunami. News about the phone gradually spread, and the booth has become a",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " between the living and the dead.",
+      "topic"
+     ],
+     [
+      " Phones resembling the wind phone have since been built around the world. Some were even set up to allow people to call their loved ones lost in the COVID-19 pandemic.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】結語：哀悼是天生機制，希望永遠都在",
+    "segs": [
+     [
+      "Grieving is a natural",
+      "gradient"
+     ],
+     [
+      " ",
+      "gradient"
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " for coping with loss of a loved one, and people grieve in various ways.",
+      "gradient"
+     ],
+     [
+      " For those who speak into the wind phone, ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " is always there: They believe that their messages will—through some unknown way—reach the deceased.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Grieving is a natural ___ for coping with loss of a loved one, and people grieve in various ways.”",
+  "thesisExplain": "一具沒有接線的電話，卻有人特地前來打。全文用「風之電話」這個真實故事鋪了一路，到結尾才把重點放在這一句，中心思想在這裡，關鍵落在第 29 格。這一格前面有 a 和 natural、後面接 for coping with，前後兩邊一起把詞性定住，意思是後面才要考慮的事；順序顛倒過來做，很容易被意思相近的選項牽走。故事從佐佐木格一個人的悼念，寫到海嘯後開放給所有人，再寫到世界各地紛紛設立，Sasaki、people、they 接成的隱形連結，把「一個人的做法」一路擴成「大家的做法」，結尾那句 in various ways 才站得住。寫作上這是「從一個人收到所有人」的結尾法：先講一個具體的人怎麼做，最後一句再把它說成人人都有的事。106 年指考寫「寂寞的時候怎麼排解」，正適合這樣收。",
+  "macro": {
+   "structure": "個案見證型 — 引言(海嘯後的電話亭) → 起源(設計師的私人悼念空間) → 推廣(從私人到公眾、從日本到全球) → 結語(哀悼機制與希望，全文核心思想)",
+   "transitions": "Hence（結果，帶出風之電話的獨特意義）→ after（時間承接，海嘯後開放給大眾）",
+   "outline": [
+    "1. 引言：日本海嘯災區山丘上，孤立佇立的白色電話亭「風之電話」",
+    "2. 起源：設計師佐佐木格為悼念過世表親而設，只是一支沒接線的老式電話",
+    "3. 推廣：2011 年開放給大眾使用，逐漸擴散到世界各地，甚至用於 COVID-19 疫情的悼念",
+    "4. 結語：哀悼是天生的應對機制，人人方式不同，但希望永遠都在(全文核心思想)"
+   ],
+   "patterns": "記敘文 (Narrative) + 現象解釋 (Phenomenon Explanation)"
+  },
+  "zhTranslation": [
+   "在俯瞰日本東北部、曾遭受 2011 年海嘯重創的大槌町的一座山丘上，佇立著一座孤零零的白色電話亭，在風中兀自矗立。這座名為「風之電話」的孤單電話亭，讓家屬能與在這場奪走一萬八千條人命的海嘯中逝去的親人「連結」。人們前來這裡，向他們失去的人說話，訴說那一天來不及說出口的話。",
+   "「風之電話」的構想，最早是由一位名叫佐佐木格的日本庭園設計師提出的，他在 2010 年、也就是海嘯發生前，正為失去表親而傷心。他覺得自己需要一個私密的空間，幫助自己走過悲傷，於是設置了一座電話亭，讓他可以在裡面「跟」過世的親人「說話」。他建造的這座電話亭裡，只裝了一支斷了線的老式撥盤電話。他走進電話亭後，就可以拿起話筒打給表親，告訴他自己過得如何、有多想念他。他在訪談中表示，自己的心聲無法透過一般電話線傳達出去，所以他希望這些心意能隨風傳送出去。因此，這座風之電話讓佐佐木格得以進行一段單向對話，飽含深刻動人的個人意義，也讓哀悼的過程對他來說變得比較容易承受。",
+   "佐佐木格在海嘯發生後、也就是 2011 年，把這座電話亭開放給大眾使用。這座電話亭的消息逐漸傳開，成為連結生者與逝者之間的一座橋樑。類似風之電話的裝置，自此在世界各地陸續設立，有些甚至是為了讓人們能撥給在 COVID-19 疫情中逝去的親人而設置的。",
+   "哀悼是人類應對失去摯愛的一種天生機制，而每個人哀悼的方式各不相同。對那些對著風之電話說話的人來說，希望始終存在：他們相信，自己的心意終將以某種未知的方式，傳達給逝去的親人。"
+  ],
+  "internalNote": "此為113年學測正式考題(第21-30題)，已附上官方答對率(P)/鑑別度(D)。篇章結構部分(運動傷害恢復主題，4選4格式，第31-34題)依約定先擱置。"
+ },
+ {
+  "id": "y114",
+  "year": "114年",
+  "accuracyRateSource": "大考中心 114 學年度學科能力測驗統計圖表：英文科答對率及鑑別度表",
+  "exam": "學測",
+  "examType": "正式考試",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "巴黎聖母院的鐘聲（The Bells of Notre-Dame）",
+  "flagNote": "114 年學測正式考題（第 21–30 題）。附大考中心官方答對率（P）與鑑別度（D）。",
+  "flagKind": ["出處說明"],
+  "options": {
+   "A": "reference",
+   "B": "bearing",
+   "C": "familiar",
+   "D": "retained",
+   "E": "faithful",
+   "F": "survived",
+   "G": "celebration",
+   "H": "restoration",
+   "I": "noted",
+   "J": "silent"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：聖母院以其鐘聲聞名",
+    "segs": [
+     [
+      "The Notre-Dame de Paris is one of the most famous cathedrals in Europe. Located at the heart of Paris, this medieval cathedral is",
+      "gradient"
+     ],
+     [
+      " ",
+      "gradient"
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " for its intricate architecture, stunning stained glass windows, and, above all, its bells.",
+      "gradient"
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】歷史：鐘的年代與倖存的Emmanuel鐘",
+    "segs": [
+     [
+      "Mounted in the two tall towers of the cathedral, Notre-Dame's bells have been ringing for over 800 years.",
+      "topic"
+     ],
+     [
+      " In fact, there is documented ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " to the ringing of bells even before the cathedral's construction was completed, dating as far back as the 12th century. The 10 bells vary in size, each ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " a name. The largest one, named “Emmanuel,” weighs over 13 tons. It is the only one of the whole group that ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " the French Revolution, while the rest were melted down for weapons. The melted bells were recast in the late 19th century. But due to their poor acoustic quality, all of the bells were replaced in 2013—except for Emmanuel, which ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " its renowned, excellent sound. This particular bell, ringing in F sharp, is considered one of the most harmonically beautiful in Europe.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】功能：巴黎生活中不可或缺的「大教堂之聲」",
+    "segs": [
+     [
+      "Over centuries, the bells have become a",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " part of life in Paris, where they are known as “the cathedral's voice.”",
+      "topic"
+     ],
+     [
+      " They have been used to mark the hours of the day, to call the ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " to prayer, and to signal emergency situations such as fires and invasions. They have also rung in times of ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " and of mourning, announcing such events as royal weddings and coronations of kings, as well as funerals of heads of state.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】結語：2019年大火後的沉寂與修復",
+    "segs": [
+     [
+      "However",
+      "trans"
+     ],
+     [
+      ", after the devastating fire that damaged the cathedral in 2019, the bells fell",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      ".",
+      "topic"
+     ],
+     [
+      " The building went through a complex and time-consuming process of ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      ", and the famous monument was finally reopened on December 8, 2024. The sounds of Notre-Dame bells once again filled the air in Paris, and will be heard for generations to come.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Located at the heart of Paris, this medieval cathedral is ___ for its intricate architecture, stunning stained glass windows, and, above all, its bells.”",
+  "thesisExplain": "聖母院建築精緻、又有彩繪玻璃，但這篇真正要談的是鐘。開頭這一句就是全文焦點，關鍵在第 21 格。這一格落在 be 動詞和 for 之間，是一組固定的組合，能放進去的形式先少掉好幾個；先認出組合再挑語意，比只憑中文意思快也準。整句用「A、B，and, above all, C」三項並列，above all 把重點推到最後一項，後面各段就照這個重點走：唯一躲過法國大革命的 Emmanuel 鐘、鐘聲在巴黎人生活裡身兼多職（報時、禮拜、示警、慶典、送別），最後停在 2019 年那場大火之後的沉默，還有 2024 年重新響起的那一刻。寫作上，「三項並列＋above all 收在最重的一項」一句話就能帶出一整段開頭，92 年學測寫 Music Is An Important Part of Our Life 這類題目最好用。",
+  "macro": {
+   "structure": "重點聚焦型 — 引言(聖母院以鐘聲聞名，全文中心思想) → 鐘的歷史(倖存法國大革命的Emmanuel鐘) → 鐘聲的多重功能(報時、宗教、示警、慶典、哀悼) → 結語(大火沉寂到修復重響)",
+   "transitions": "However（結尾轉折，帶出2019年大火造成的沉寂）",
+   "outline": [
+    "1. 引言：聖母院以精緻建築、彩繪玻璃聞名，但最重要的是它的鐘聲(全文中心思想)",
+    "2. 歷史：10口鐘中只有Emmanuel鐘在法國大革命中留了下來，音質卓越沿用至今",
+    "3. 功能：鐘聲是巴黎生活的一部分，用於報時、宗教、示警、慶典與哀悼",
+    "4. 結語：2019年大火後鐘聲沉寂，歷經修復，2024年重新在巴黎上空響起"
+   ],
+   "patterns": "說明文 (Expository) + 時序發展 (Chronological)"
+  },
+  "zhTranslation": [
+   "巴黎聖母院是歐洲最著名的大教堂之一。這座位於巴黎市中心的中世紀教堂，以其精緻的建築、令人驚豔的彩繪玻璃窗聞名，但最為人稱道的，還是它的鐘聲。",
+   "巴黎聖母院的鐘安裝在教堂的兩座高塔裡，已經響了超過800年。事實上，早在教堂完工之前，就已經有文獻提及鐘聲，最早可追溯到12世紀。這10口鐘大小不一，每一口都有自己的名字。其中最大的一口鐘名為「艾曼紐爾」，重達13公噸以上。它是所有鐘裡唯一一口在法國大革命中倖存下來的鐘，其餘的鐘則全被熔毀用來製造武器。這些被熔毀的鐘，在19世紀末重新鑄造。但由於音質不佳，這些鐘在2013年全數被更換——唯獨艾曼紐爾例外，因為它保留了自己那出色又著名的音色。這口鐘以升F調鳴響，被視為歐洲音色最和諧優美的鐘之一。",
+   "幾個世紀以來，鐘聲已經成為巴黎生活中熟悉的一部分，人們稱它們為「大教堂之聲」。這些鐘聲曾用來報時、召喚信徒祈禱，以及在火災或入侵等緊急情況發生時發出警訊。鐘聲也曾在慶典與哀悼的時刻響起，宣告皇室婚禮、國王加冕等大事，以及國家元首的葬禮。",
+   "然而，在2019年那場重創教堂的大火之後，鐘聲陷入沉寂。這座建築物歷經一段漫長而複雜的修復過程，這座知名地標終於在2024年12月8日重新開放。巴黎聖母院的鐘聲再度響徹巴黎上空，並將繼續傳承給後世聆聽。"
+  ],
+  "internalNote": "此為114年學測正式考題(第21-30題)，已附上官方答對率(P)/鑑別度(D)。篇章結構部分(膠囊旅館主題，4選4格式，第31-34題)依約定先擱置。"
+ },
+ {
+  "id": "y115",
+  "year": "115年",
+  "accuracyRateSource": "大考中心 115 學年度學科能力測驗統計圖表：英文科答對率及鑑別度表",
+  "exam": "學測",
+  "examType": "正式考試",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "午睡的科學（The Science of Napping）",
+  "flagNote": "115 年學測正式考題（第 21–30 題）。附大考中心官方答對率（P）與鑑別度（D）。115 學年度起篇章結構改為四個空格、五個選項（5 選 4）；其餘題型與題號不變，文意選填仍為第 21–30 題。",
+  "flagKind": ["出處說明"],
+  "options": {
+   "A": "retain",
+   "B": "depend on",
+   "C": "atmosphere",
+   "D": "delay",
+   "E": "unproductive",
+   "F": "risk",
+   "G": "function",
+   "H": "minimal",
+   "I": "dramatic",
+   "J": "point to"
+  },
+  "paras": [
+   {
+    "label": "【第一段】破除罪惡感：午睡不是壞事",
+    "segs": [
+     [
+      "Are you feeling a little guilty about your daily mid-afternoon snooze? Well, you don't need to.",
+      null
+     ],
+     [
+      " ",
+      "gradient"
+     ],
+     [
+      "Taking a nap in the middle of the day is by no means",
+      "gradient"
+     ],
+     [
+      " ",
+      "gradient"
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      ".",
+      "gradient"
+     ],
+     [
+      " In fact, you are giving your brain and your body some time to recharge and turn up refreshed.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】科學研究：午睡有助大腦健康與記憶",
+    "segs": [
+     [
+      "Research has shown that napping is linked with brain size and",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      ";",
+      "topic"
+     ],
+     [
+      " specifically, it can boost our cognition and memory. In our early 20s, our brain starts shrinking, which gradually slows cognition and increases dementia ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " in later life. The brain size of habitual nappers, ",
+      null
+     ],
+     [
+      "however",
+      "trans"
+     ],
+     [
+      ", is found to be better preserved. This suggests that napping may significantly ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " age-related brain shrinkage, and thus lower the possibility of developing dementia. Neurologists also confirm that naps can enhance memory and learning. For students cramming for college exams, napping will help ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " acquired knowledge and learned skills.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】如何午睡：時間長短因人而異",
+    "segs": [
+     [
+      "Understanding how to perfect your nap is vital for reaping its benefits.",
+      "topic"
+     ],
+     [
+      " To begin with, you need to find out the ideal length of a nap. Some studies recommend napping for 20 to 40 minutes, ",
+      null
+     ],
+     [
+      "while",
+      "trans"
+     ],
+     [
+      " others ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " shorter naps, such as 15 to 20 minutes. The best nap length, ",
+      null
+     ],
+     [
+      "however",
+      "trans"
+     ],
+     [
+      ", may ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " a person's physical condition and fatigue level. For some people, even a five-minute nap can bring about surprisingly ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " benefits.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】午睡環境的重要性",
+    "segs": [
+     [
+      "Furthermore",
+      "trans"
+     ],
+     [
+      ", the environment where naps are taken also plays an important role.",
+      "topic"
+     ],
+     [
+      " A dark space with little distraction is ideal for napping. So, find yourself a quiet place with ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " light or with blackout curtains. If you can't find a dark room, consider wearing a sleep mask. You can also add some soothing nature sounds to create a relaxing ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      ", which can make your naps more effective.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Taking a nap in the middle of the day is by no means ___.”",
+  "thesisExplain": "午休鐘一響就趴下去的那二十分鐘，到底值不值得？開頭第一句就把立場講明了，全文的中心思想在這裡，整句的重量壓在第 21 格。這一格前面是 by no means，把話整個推翻的全否定；先弄清楚它要推翻的是哪一種看法，就不必一個一個代選項去試。往下讀，nap、napping、naps 一路重複出現，中間用 In fact、however、Furthermore 承接，走向很清楚：先翻掉成見，再搬科學證據（大腦、記憶），最後給做法（睡多久、房間怎麼弄暗）。這個結構寫作時直接用得上——第一句先否定一個大家習以為常的說法，第二段擺證據，第三段給做法。101 年學測要你寫信勸好友別再熬夜打電玩，也是這一套：先承接對方的想法再翻轉，比一開口就訓話有用。",
+  "macro": {
+   "structure": "破除迷思型 — 破題(午睡不是沒有生產力，全文中心思想) → 科學實證(大腦健康與記憶效益) → 實務建議一(午睡時長因人而異) → 實務建議二(午睡環境的重要性)",
+   "transitions": "however（×2，午睡者大腦保存較好／最佳長度因人而異）→ while（不同研究建議不同時長對比）→ Furthermore（遞進，環境因素）",
+   "outline": [
+    "1. 破題：午睡不是沒有生產力的行為(全文中心思想)",
+    "2. 科學實證：午睡與大腦大小及功能相關，能延緩老化性腦萎縮、降低失智風險，並提升記憶與學習",
+    "3. 實務建議一：理想午睡時長因人而異，需視個人體況與疲勞程度調整",
+    "4. 實務建議二：安靜、昏暗的環境能提升午睡效果"
+   ],
+   "patterns": "說明文 (Expository) + 現象解釋 (Phenomenon Explanation)"
+  },
+  "zhTranslation": [
+   "你是否曾對自己每天下午小睡一下感到有點罪惡感？其實，你不需要這樣。白天小睡片刻，絕對不是沒有生產力的行為。事實上，你正在給大腦和身體一段時間充電，讓自己恢復精神、煥然一新。",
+   "研究顯示，午睡與大腦大小及功能有關；具體來說，午睡能提升我們的認知能力與記憶力。人在二十出頭時，大腦就開始萎縮，這會逐漸使認知能力下降，並增加晚年罹患失智症的風險。然而，研究發現，習慣午睡的人，大腦體積能獲得較好的保存。這意味著，午睡可能可以顯著延緩與老化相關的腦部萎縮，進而降低罹患失智症的可能性。神經學家也證實，午睡能增強記憶力與學習能力。對於正在為大學考試臨時抱佛腳的學子來說，午睡有助於鞏固已經學到的知識與技能。",
+   "想要真正發揮午睡的效果，就必須先了解如何睡得恰到好處。首先，你需要找出最適合自己的午睡長度。有些研究建議午睡20到40分鐘，另一些研究則主張較短的午睡時間，例如15到20分鐘。然而，最理想的午睡長度，可能取決於一個人的身體狀況與疲勞程度。對某些人來說，即使只是五分鐘的小睡，也能帶來令人意想不到的顯著效果。",
+   "此外，進行午睡的環境也扮演著重要角色。一個干擾少、光線昏暗的空間，最適合用來午睡。因此，找一個光線微弱的安靜角落，或使用遮光窗簾。如果找不到昏暗的房間，可以考慮戴上眼罩。你也可以加入一些舒緩的大自然音效，營造放鬆的氛圍，讓你的午睡效果更好。"
+  ],
+  "internalNote": "115 學年度學測正式考題（非參考試卷），文意選填為第 21–30 題；115 學年度起篇章結構改為 5 選 4（第 31–34 題），其餘題號與 114 年相同（第三百七十四場對照大考中心 114 年試題更正）。附大考中心官方答對率（P）與鑑別度（D）。"
+ },
+ {
+  "id": "y110",
+  "year": "110年",
+  "accuracyRateSource": "大考中心 110 學年度學科能力測驗統計圖表：英文科答對率及鑑別度表",
+  "exam": "學測",
+  "examType": "正式考試",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "運動不必痛苦（Exercise Without Pain）",
+  "flagNote": "110 年學測正式考題（第 31–40 題，當年文意選填的題號與現行不同）。附大考中心官方答對率（P）與鑑別度（D）。",
+  "flagKind": ["出處說明"],
+  "options": {
+   "A": "means",
+   "B": "soreness",
+   "C": "point to",
+   "D": "argue",
+   "E": "demanding",
+   "F": "abide by",
+   "G": "fanatic",
+   "H": "current",
+   "I": "make time",
+   "J": "modest"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：少量運動就有效，破除忙碌藉口",
+    "segs": [
+     [
+      "If you cannot find ways to fit exercise into your busy daily schedule, don't worry! Exercise doesn't always have to be laborious.",
+      null
+     ],
+     [
+      " ",
+      "gradient"
+     ],
+     [
+      "Research shows that",
+      "gradient"
+     ],
+     [
+      " ",
+      "gradient"
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      " amounts of exercise—even just 15 minutes a day—helps ease depression, enhance self-image, relieve stress, and much more.",
+      "gradient"
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】心態：輕鬆開始，不必是健身狂熱者",
+    "segs": [
+     [
+      "That's right.",
+      null
+     ],
+     [
+      " Doing exercise makes you happy, and you don't have to be a fitness ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " to do it. What you need to do is to make “start slow and have fun” a motto to ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      ". Then you'll be well on your way to using physical activity as a tool to make you feel better every day.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】破除迷思：運動不必疼痛才有效",
+    "segs": [
+     [
+      "The “no pain, no gain” view of exercise is now considered old-fashioned.",
+      "topic"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "In fact",
+      "trans"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " health studies prove that exercise doesn't have to hurt to be effective. You might ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " that if working out doesn't give you pain, it isn't working. According to fitness trainers, physically ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " exercises may make you breathe heavily and your muscles may ache temporarily, ",
+      null
+     ],
+     [
+      "but",
+      "trans"
+     ],
+     [
+      " exercise should not be painful. ",
+      null
+     ],
+     [
+      "In fact",
+      "trans"
+     ],
+     [
+      ", if it is, it may ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " an injury or muscle strain.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】結語：溫和運動同樣有效，鼓勵擠出時間運動",
+    "segs": [
+     [
+      "Many great forms of exercise—like walking, swimming, or gentle stretching—get results without the",
+      null
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " or discomfort some people associate with exercise. For the sake of your health, it is time to make regular exercise a part of your life.",
+      null
+     ],
+     [
+      " Keep in mind that even short periods of low-impact exercise serve as a powerful ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " to improve your health. ",
+      null
+     ],
+     [
+      "So",
+      "trans"
+     ],
+     [
+      ", no matter how busy you are, try to ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " for exercise every day, like a 15-minute walk with your dog. Your body will thank you in many ways.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Research shows that ___ amounts of exercise—even just 15 minutes a day—helps ease depression, enhance self-image, relieve stress, and much more.”",
+  "thesisExplain": "「沒時間運動」這個藉口，這篇第一句就拆了。中心思想落在這裡，關鍵在第 31 格。這一格是形容詞的位置，修飾後面的 amounts of exercise；而緊接著的破折號補述，就在同一句裡，可以直接拿來比對——文意選填最值得養成的習慣就是這個：先在同一句裡找補述、同位語或例子，再回頭決定這一格。後面 ease、enhance、relieve 三個動詞並列把好處疊出來，也預告了全篇要處理的正是「不夠拚就沒用」這種想法（no pain, no gain 那一段）。寫作上：主張句＋破折號補述＋動詞並列，一句話就能當一段的開頭。101 年指考要你描述最常從事的運動，第二段講好處時最用得上。",
+  "macro": {
+   "structure": "破除迷思型 — 破題(少量運動就有效，全文中心思想) → 心態建立(輕鬆開始、不必狂熱) → 破除迷思(no pain no gain已過時) → 結語(溫和運動同樣有效，鼓勵擠出時間運動)",
+   "transitions": "In fact（×2，點出現代研究推翻舊觀念、運動會痛反而可能是受傷警訊）→ but（運動雖然會喘、痠痛，但不該疼痛）→ So（結語，呼籲行動）",
+   "outline": [
+    "1. 破題：研究顯示少量運動(每天15分鐘)就能改善憂鬱、自我形象與壓力(全文中心思想)",
+    "2. 心態：運動使人快樂，不必是健身狂熱者，從「慢慢開始、樂在其中」做起",
+    "3. 破除迷思：「沒有痛苦就沒有收穫」已過時，現代研究證實運動不必疼痛才有效，疼痛反而可能是受傷警訊",
+    "4. 結語：散步、游泳、伸展等溫和運動一樣有效，鼓勵不論多忙都要擠出時間運動"
+   ],
+   "patterns": "說明文 (Expository) + 問題解決 (Problem-Solution)"
+  },
+  "zhTranslation": [
+   "如果你找不到方法把運動排進忙碌的日常行程裡，別擔心！運動不一定得是件辛苦費力的事。研究顯示，適度的運動量——即使一天只有15分鐘——也有助於緩解憂鬱、提升自我形象、舒緩壓力，還有更多其他好處。",
+   "沒錯，運動能讓你感到快樂，而且你不需要成為健身狂熱者，也能做到這一點。你需要做的，就是把「慢慢開始、樂在其中」當成一句奉行的座右銘。這樣一來，你就能順利透過身體活動，讓自己每天都感覺更好。",
+   "「沒有痛苦，就沒有收穫」這種運動觀念，如今已經被認為過時了。事實上，最新的健康研究證實，運動不必讓人感到疼痛，也能有效果。你或許會主張，如果運動時不會痛，那就代表沒有效果。但根據健身教練的說法，體力消耗較大的運動，可能會讓你呼吸急促、肌肉暫時痠痛，但運動本身不應該讓人感到疼痛。事實上，如果運動會痛，這反而可能是受傷或肌肉拉傷的警訊。",
+   "許多很棒的運動方式——像是散步、游泳，或是輕度伸展——都不需要讓人感到痠痛不適，卻仍然能帶來成效，儘管有些人總以為運動就該伴隨這些不適感。為了自己的健康著想，是時候把規律運動變成生活的一部分了。切記，即使是短時間的低強度運動，也能成為改善健康的強大方法。因此，不管你有多忙，都要盡量每天挪出時間運動，例如遛狗散步15分鐘。你的身體，會用許多方式感謝你。"
+  ],
+  "internalNote": "此為110年學測正式考題(第31-40題)，已附上官方答對率(P)/鑑別度(D)。110年學測無獨立篇章結構題型(該題型自111學年度才納入學測)。"
+ },
+ {
+  "id": "y112",
+  "year": "112年",
+  "accuracyRateSource": "大考中心 112 學年度學科能力測驗統計圖表：英文科答對率及鑑別度表",
+  "exam": "學測",
+  "examType": "正式考試",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "喝水的迷思（Myths About Drinking Water）",
+  "flagNote": "112 年學測正式考題（第 21–30 題，10 選 10，選項 A–J）。附大考中心官方答對率（P）與鑑別度（D）。",
+  "flagKind": ["出處說明"],
+  "options": {
+   "A": "absorption",
+   "B": "active",
+   "C": "alert",
+   "D": "combat",
+   "E": "option",
+   "F": "effective",
+   "G": "even",
+   "H": "status",
+   "I": "pass through",
+   "J": "reach for"
+  },
+  "paras": [
+   {
+    "label": "【第一段】破除迷思：白開水不一定是最健康的選擇",
+    "segs": [
+     [
+      "Water makes up more than half of our body weight. To sustain this amount of fluid in our bodies, plain water is considered our best choice, for it contains no sugar and no calories. ",
+      null
+     ],
+     [
+      "Yet",
+      "trans"
+     ],
+     [
+      ", is water always the healthiest drink we can",
+      "gradient"
+     ],
+     [
+      " ",
+      "gradient"
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      "? Well, it depends on who and where we are, and what we're doing.",
+      "gradient"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Obviously",
+      "trans"
+     ],
+     [
+      ", a physically ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " person with an outdoor job under the sun will need to drink more fluid than a desk-bound person who lives and works in an air-conditioned place. ",
+      null
+     ],
+     [
+      "But there's more to it than that",
+      "trans"
+     ],
+     [
+      ". When a person sweats, he loses water and salt, so he needs to replace both. Replacing lost fluid with just plain water means the body has too much water and not enough salt. To ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " things out, the body will get rid of water by producing urine. ",
+      null
+     ],
+     [
+      "For this reason",
+      "trans"
+     ],
+     [
+      ", milk can actually be more ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " than drinking water. Milk naturally contains salt and lactose, a sugar which the human body needs in small amounts to help stimulate water ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      ". Coconut water, which contains salt and carbohydrates, is also more functional than water at restoring and maintaining a normal fluid ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " after exercise.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】回到一般人：水仍是好選擇，但要「會喝」",
+    "segs": [
+     [
+      "For the average person, ",
+      "topic"
+     ],
+     [
+      "however",
+      "trans"
+     ],
+     [
+      ", water remains a very good",
+      "topic"
+     ],
+     [
+      " ",
+      "topic"
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " for keeping hydrated—if you know how to drink it.",
+      "topic"
+     ],
+     [
+      " The secret is: Never wait until the body is telling you you're thirsty, since there must already have been significant changes in your body for it to eventually ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " your consciousness. At that point, it might be well past the best moment to take in fluid. ",
+      null
+     ],
+     [
+      "Also",
+      "trans"
+     ],
+     [
+      ", drinking a lot of liquid in one go can cause more water to ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " the body quickly and come out as urine. To ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " this, you need to drink water throughout the day to maintain your hydration levels.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Yet, is water always the healthiest drink we can ___? Well, it depends on who and where we are, and what we're doing.”",
+  "thesisExplain": "流完汗猛灌白開水，其實不一定最好。這篇的中心思想是用一問一答立起來的，關鍵落在第 21 格。這一格所在的 the healthiest drink we can ___ 省略了關係代名詞，drink 既是先行詞、也是這個動作的受詞；認出這層關係，能填的形式馬上少一半。Yet 把前面「白開水最好」的鋪陳整個轉開，Well, it depends 再把答案交給條件（who、where、what we're doing），後面幾句都在補條件：在太陽底下工作的人、整天坐辦公室的人、流汗流掉的鹽分，還有牛奶為什麼有時反而更合適。寫作上，「先設問，再用 it depends 帶出條件」是論說文很省力的開場，一開頭就不會把話說死。96 年指考問「你能想像沒有電的世界嗎」，用的也是同一個方法。",
+  "macro": {
+   "structure": "破除迷思型 — 背景鋪陳(水占體重一半、白開水看似最佳選擇) → 反問破題(水永遠最健康嗎？答案因人、因地、因活動而異，全文中心思想) → 生理機制說明(流汗同時流失水與鹽，只補白開水會水多鹽少，身體便以排尿恢復平衡) → 反例佐證(牛奶、椰子水在特定情況更有效) → 轉折回到一般人(水仍是好選擇) → 提出正確喝水方法(別等口渴、全天分次補充)",
+   "patterns": "說明文 (Expository) + 比較對比 (Compare/Contrast)",
+   "transitions": "Yet（轉折，推翻「白開水最健康」的直覺，帶出全文中心思想）→ Obviously（舉例佐證，戶外勞動者vs.坐辦公室者，呼應「看你在做什麼」）→ But there's more to it than that（句子型轉折，慣用語，意思是「事情不只如此、還有更深一層的原因」——單字都很簡單，卻很容易讀錯；it 指前面「該喝多少水」這件事，that 指前一句「活動量大小」這個理由，作者用這句宣告要從「活動量」推進到「體液平衡」的生理機制）→ For this reason（因果，推得牛奶比白開水更有效）→ however（第二段轉折，把焦點從特殊族群拉回一般人）→ Also（補充第二個喝水要點）",
+   "outline": [
+    "1. 背景：水分占體重一半以上，白開水無糖無熱量，被視為補水首選",
+    "2. 反問破題：水是否永遠是最健康的飲品？取決於「誰、在哪裡、在做什麼」(全文中心思想)",
+    "3. 生理機制：流汗會同時流失水與鹽，只補白開水會造成水多鹽少，身體便以製造尿液的方式排水求取平衡",
+    "4. 反例佐證：牛奶(含鹽與乳糖)、椰子水(含鹽與碳水化合物)在特定情況下比白開水更有效、更具功能性",
+    "5. 回到一般人：水仍是保持體內水分充足的好選擇，但要會喝——不等口渴才喝、不一次灌太多，應全天分次補充"
+   ]
+  },
+  "zhTranslation": [
+   "水分占了我們體重的一半以上。為了維持體內這麼多的水分，一般認為白開水是最好的選擇，因為它不含糖，也沒有熱量。然而，水真的永遠是我們能選用的最健康飲品嗎？這其實要看我們是誰、身在何處，以及正在做什麼。顯然，一個在太陽底下從事戶外工作、身體活動量大的人，會比長時間坐辦公室、在冷氣房裡生活與工作的人需要補充更多水分。但事情還不只如此。人在流汗時，會同時流失水分和鹽分，因此兩者都必須補回來。如果只用白開水補充流失的體液，就等於讓身體水分過多、鹽分不足。為了讓兩者恢復平衡，身體會藉由製造尿液把水分排掉。正因如此，牛奶其實可能比喝白開水更有效。牛奶本身就含有鹽分與乳糖；乳糖是一種人體需要少量攝取、有助於促進水分吸收的糖。而含有鹽分與碳水化合物的椰子水，在運動後恢復並維持正常的體液狀態上，也比白開水更具功能性。",
+   "不過，對一般人來說，只要懂得怎麼喝，水仍然是保持體內水分充足的絕佳選擇。訣竅是：千萬不要等到身體告訴你口渴了才喝，因為你的身體必定早已產生明顯的變化，最後才會讓你意識到口渴。到了那個時候，可能早就錯過補充水分的最佳時機了。此外，一次灌下大量液體，反而會使更多水分快速通過身體，再以尿液的形式排出。為了避免這種情況，你必須整天分次喝水，以維持身體的水分含量。"
+  ],
+  "internalNote": "此為112年學測正式考題(第21-30題，10選10，選項A-J)，已附上大考中心官方答對率(P)/鑑別度(D)，資料來源為《112學年度學科能力測驗各科答對率及鑑別度表》英文科。本篇無負D值，不會出現「特殊」難易度分級。篇章結構部分(第31-34題)依約定先擱置。"
+ },
+ {
+  "id": "y110t",
+  "year": "110年試辦考試",
+  "accuracyRateSource": "本卷非正式施測，無答對率",
+  "exam": "學測",
+  "examType": "試辦考試",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "titleStatus": null,
+  "sourceNote": "110 年試辦考試（適用於 108 課綱），非正式施測，大考中心未公布逐題答對率。",
+  "title": "非洲傳統宗教的亡者信仰（African Traditional Religions）",
+  "flagNote": "110 年試辦考試內容（適用於 108 課綱，非正式考題），第 21–30 題。大考中心未公布本場逐題答對率與鑑別度。",
+  "flagKind": ["出處說明"],
+  "options": {
+   "A": "due",
+   "B": "subjects",
+   "C": "guardians",
+   "D": "conditions",
+   "E": "live on",
+   "F": "resting",
+   "G": "hope for",
+   "H": "significant",
+   "I": "violations",
+   "J": "comprise"
+  },
+  "paras": [
+   {
+    "label": "【第一段】破題：死亡不是終點，亡靈的兩種去處",
+    "segs": [
+     [
+      "In the traditional religions of Africa, life does not end with death.",
+      "gradient"
+     ],
+     [
+      " After death, humans continue to ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " as spirits. Some African groups believe these spirits dwell underground in a world much like that of the living—but upside down. ",
+      null
+     ],
+     [
+      "Other groups",
+      "trans"
+     ],
+     [
+      " believe the sky is the permanent ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " place of the dead. ",
+      null
+     ],
+     [
+      "For instance",
+      "trans"
+     ],
+     [
+      ", the Bushmen of southern Africa believe that the spirits of the dead go up to the sky and become stars.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】祖靈自成一類，以及成為祖靈的條件",
+    "segs": [
+     [
+      "Among the spirits, the ancestors ",
+      "topic"
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " a special category of their own.",
+      "topic"
+     ],
+     [
+      " As ancestors, they have some extra powers. To become an ancestor is the best that one can ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " after death. ",
+      null
+     ],
+     [
+      "However",
+      "trans"
+     ],
+     [
+      ", not everyone who dies will turn into an ancestor. For one to become an ancestor, there are ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " to be fulfilled while the person is alive—living an upright life and fulfilling all social and religious duties, for example.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】祖靈與在世子孫：守護與懲罰",
+    "segs": [
+     [
+      "Many African groups believe that the spirits of ancestors remain near their living descendants as ",
+      "topic"
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " of the family and their traditions.",
+      "topic"
+     ],
+     [
+      " They help in times of trouble as long as their descendants perform proper rituals and pay them ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " respect. ",
+      null
+     ],
+     [
+      "But",
+      "trans"
+     ],
+     [
+      " they punish people if certain ceremonies have not been performed properly or if there are some ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " of community laws.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】祖先進入神話，成為傳說題材",
+    "segs": [
+     [
+      "Ancestor worship also plays a very ",
+      "topic"
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " role in the mythologies of some African peoples.",
+      "topic"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "For example",
+      "trans"
+     ],
+     [
+      ", the people of Buganda in present-day Uganda say that their first ancestor was Kintu, who came from the land of the gods and married Nambe, daughter of the king of heaven. ",
+      null
+     ],
+     [
+      "Another example",
+      "trans"
+     ],
+     [
+      " is the Dinkas of Sudan, who believe they are descended from Garang and Abuk, the first man and woman created by God as tiny clay figures in a pot. For these Africans, the honored dead have become not only objects of worship but also ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " of tales and legends.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“In the traditional religions of Africa, life does not end with death.”",
+  "thesisExplain": "第一句就是全文核心思想——在非洲傳統宗教裡，死亡不是終點。接下來依序把這句話展開：亡靈去了哪裡(地下或天上)、亡靈之中自成一類的祖靈以及成為祖靈的條件、祖靈與在世子孫的守護與懲罰、最後是祖先進入神話成為傳說題材。每一段都是「死亡之後仍然延續」的一種面貌，讀的時候把第一句擺在心裡，各段就不會散開。",
+  "macro": {
+   "structure": "概念說明型 — 破題(死亡不是終點，全文中心思想) → 亡靈的去處(地下／天上兩說) → 祖靈：自成一類與成為條件 → 祖靈與子孫：守護與懲罰 → 神話層面：祖先成為傳說題材",
+   "transitions": "Other groups（帶出與前說並列的第二種說法）→ For instance（舉布希曼人為例）→ However（轉折，指出不是人人都能成為祖靈）→ But（轉折，由祖靈的幫助轉到懲罰）→ For example／Another example（連續舉布干達與丁卡兩例）",
+   "patterns": "說明文 (Expository) + 分類 (Classification)",
+   "outline": [
+    "1. 破題：在非洲傳統宗教裡生命不因死亡而結束，人死後以靈的形式存在；亡靈的去處有地下與天上兩種說法(全文中心思想)",
+    "2. 祖靈：在眾靈中自成一類、擁有額外力量，成為祖靈是死後最好的指望，但生前須滿足條件",
+    "3. 祖靈與在世子孫的互動：儀式與敬意做到就守護，儀式失當或觸犯律法則降下懲罰",
+    "4. 神話層面：祖先崇拜在神話中角色吃重，舉布干達與丁卡兩例，收束於祖先既是崇拜對象也是傳說題材"
+   ]
+  },
+  "zhTranslation": [
+   "在非洲的傳統宗教裡，生命不會隨著死亡而結束。人死之後，會以靈的形式繼續存在。有些非洲族群相信這些亡靈住在地底下，那裡的世界和活人的世界很像，只是上下顛倒。另一些族群則相信，天空才是死者永久的安息之地。舉例來說，非洲南部的布希曼人相信，死者的靈會升上天空，變成星星。",
+   "在眾靈之中，祖靈自成一個特殊的類別。身為祖靈，他們擁有一些額外的力量。能成為祖靈，是一個人死後所能指望的最好結果。然而，並不是每個死去的人都會變成祖靈。一個人要成為祖靈，生前必須先滿足一些條件——例如行事正直、善盡所有的社會與宗教義務。",
+   "許多非洲族群相信，祖靈會留在在世子孫的身邊，守護整個家族與家族的傳統。只要子孫舉行合宜的儀式、致上應有的敬意，祖靈就會在困難的時候伸出援手。但是，如果某些儀式沒有按規矩舉行，或者有人觸犯了族群的律法，祖靈也會降下懲罰。",
+   "在某些非洲民族的神話裡，祖先崇拜也扮演著非常重要的角色。舉例來說，今日烏干達境內的布干達人說，他們的第一位祖先是金圖，他來自諸神之地，娶了天國國王的女兒南貝。另一個例子是蘇丹的丁卡人，他們相信自己是加朗與阿布克的後代，這兩位是神造出來的第一個男人與第一個女人，一開始是放在陶罐裡的小泥人。對這些非洲人來說，受敬重的死者不但是崇拜的對象，也成了各種故事與傳說的題材。"
+  ],
+  "internalNote": "110年試辦考試(適用於108課綱)文意選填第21-30題。大考中心未公布逐題答對率與鑑別度，故 accuracyRate 與 discrimination 為 null。本篇有官方試題解析(02-110年試辦考試英文解析.pdf)，逐題作答線索說明已用於 contextSpan 判定。同卷另有篇章結構第31-34題(4選4)，資料另存，待 discourse-structure 站建置時使用。（使用者觀察，僅供內部參考、不寫進站上）本篇十格中有九格的字根是國中熟字，難點集中在熟字的第二義或第二詞性(如 resting、conditions、due、subjects)，真生字只有 comprise 一個，而該格仍可靠句構與空格後的名詞夾出。另：due 這個字在 113 年學測詞彙題第 3 題(V0473，gsat/data.js)考過 be due 的用法，答對率 23%、鑑別度 6，該題目前無 note，屬低答對率加強解析的待辦對象；日後兩站可互相指認。（查證紀錄，不寫進站上）第 23 格 comprise 以「部分」當主詞的方向，經劍橋 English Grammar Today〈Consist, comprise or compose?〉確認為明文許可用法，例句 Oil and coal comprise 70% of the nation's exports.；牛津指出主動的 comprise of 為誤用。（判斷依據）第 29 格 contextSpan 取「篇章」，依據使用者拍板的原則：兩層之間難以取捨時，看哪一層的比例較高。"
+ }
+]

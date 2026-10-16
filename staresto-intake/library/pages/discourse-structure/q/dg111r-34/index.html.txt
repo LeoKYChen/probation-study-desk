@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dg111r-34/index.html
+Author: staresto-create ZZSH
+Title: 學測 111參 篇章結構 第34題詳解（掌握段落內語句的連貫性與一致性）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 學測 111參 ／ 第34題
+學測 111參 篇章結構 第34題
+選文：哥白尼與他的禁書（Copernicus and His Banned Book）
+掌握段落內語句的連貫性與一致性線索：指示詞、語意對比
+(A)The book, however, wasn’t published until two months before his death.不過這本書直到他過世前兩個月才出版。
+(B)If this act was an attempt to seek the Catholic Church’s approval, it was of no use.如果這個舉動是想爭取天主教會的認可，那並沒有用。
+(C)This went against the philosophical and religious beliefs held during medieval times.這牴觸了中世紀所抱持的哲學與宗教信念。
+(D)In his spare time, Copernicus studied the stars and the planets, applying his math knowledge to the mysteries of the night sky.哥白尼利用閒暇時間研究恆星與行星，把他的數學知識用在夜空的種種謎團上。
+答案：(B) If this act was an attempt to seek the Catholic Church’s approval, it was of no use.
+題目編號：Dg111r_34
+解析
+先看空格前面。 前一句是 Ironically, Copernicus had dedicated his work to Pope Paul III.（諷刺的是，哥白尼把這部著作獻給了教宗保祿三世。）看到「諷刺的是」，就要找諷刺的另一頭——一頭是他做了一件示好的事，另一頭必須是「結果卻不如意」。
+再看空格後面。 後面說教會最後查禁了 De Revolutionibus，此後將近三個世紀，這本書都留在禁書名單上。
+前面是獻書、後面是查禁，中間需要一句把兩者接起來的話。B 的 this act（這個舉動）指的正是獻書給教宗，of no use（沒有用）則直接帶出後面的查禁。
+如果你選了 A（不過這本書直到他過世前兩個月才出版。）：A 講的也是這本書。但這一段的主線是「獻書給教宗 → 教會查禁」，A 講的是出版時間，插進來會把這條線切斷；however 也沒有東西可以轉。
+【下次先看這裡】看到 Ironically（諷刺的是），先確認諷刺的兩頭在不在：一頭是「他做了什麼好意的事」，另一頭是「結果卻怎樣」。缺哪一頭，哪一頭就在空格裡。
+線索與數據
+線索種類指示詞、語意對比
+線索在哪兩側 this act；Ironically 的兩頭
+答對率本場考試不公布統計
+本篇題型4選4・刪去法可收尾
+展開本題所在的整篇選文與中文翻譯
+本篇共 4 格、4選4；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+生平：出身、求學與任職
+Copernicus, founder of modern astronomy, was born in 1473 to a well-to-do merchant family in Torun, Poland. He was sent off to attend university in Italy, studying mathematics and optics, and canon law. Returning from his studies abroad, Copernicus was appointed to an administrative position in the cathedral of Frauenburg. There he spent a sheltered and academic life for the rest of his days.
+31 He made his observations from a tower situated on the protective wall around the cathedral. His observations were made with the “bare eyeball,” so to speak, as a hundred years were to pass before the invention of the telescope. In 1530, Copernicus completed his famous work De Revolutionibus, which later played a major role in changing the philosophical view of humankind’s place in the universe. 32
+Copernicus died in 1543 and was never to know what a stir his work would cause. In his book, he asserted that the Earth rotated on its axis once daily and traveled around the Sun once yearly. 33 People then regarded the Earth as stationary, situated at the center of the universe, with the Sun and all the planets revolving around it. Copernicus’ theory challenged the long-held belief that God created the Heavens and the Earth, and could overturn the core values of the Catholic world. Religious leader Martin Luther voiced his opposition to the sun-centered system model. Other ministers quickly followed suit, saying of Copernicus, “This fool wants to turn the whole art of astronomy upside down.”
+結局：求認可失敗，著作遭禁
+Ironically, Copernicus had dedicated his work to Pope Paul III. 34If this act was an attempt to seek the Catholic Church’s approval, it was of no use. The Church ultimately banned De Revolutionibus, and the book remained on the list of forbidden reading material for nearly three centuries thereafter.
+中譯
+現代天文學的奠基者哥白尼，一四七三年出生於波蘭托倫一個家境富裕的商人家庭。他被送到義大利念大學，修習數學、光學和教會法（教會內部的法律）。結束國外的學業回來之後，哥白尼被派到弗勞恩堡的大教堂擔任行政職務。此後他就在那裡度過受到庇護、與學術為伍的餘生。
+31 他的觀測是在大教堂外牆上的一座塔樓進行的。可以說，他是用「肉眼」看的，因為望遠鏡要再過一百年才發明出來。一五三○年，哥白尼完成了他著名的《天體運行論》，這本書後來在改變人類看待自身在宇宙中位置的哲學觀上，扮演了重要的角色。32
+哥白尼於一五四三年過世，始終不知道他的著作會掀起多大的波瀾。他在書中主張，地球每天繞著地軸自轉一圈，每年繞太陽公轉一圈。33 當時的人認為地球是靜止的，位在宇宙的中心，太陽和所有行星都繞著它轉。哥白尼的理論挑戰了長久以來「上帝創造天地」的信念，也可能顛覆天主教世界的核心價值。宗教領袖馬丁路德公開反對這套以太陽為中心的模型。其他教士很快跟進，說哥白尼「這個蠢材想把整個天文學徹底翻過來」。
+諷刺的是，哥白尼把這部著作獻給了教宗保祿三世。34 教會最終查禁了《天體運行論》，此後將近三個世紀，這本書一直留在禁書名單上。
+← 第33題回到互動練習
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

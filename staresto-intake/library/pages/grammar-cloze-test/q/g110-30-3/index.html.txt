@@ -1,0 +1,51 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g110-30-3/index.html
+Author: staresto-create ZZSH
+Title: 110 年學測克漏字第30題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 110 年學測 ／ 第30題
+110 年學測 克漏字 第30題
+慣用語／片語線索：句內答對率 17%
+答對率 17%：當年每 100 位考生，有 17 位答對。
+The study warned that Papua's glaciers are only the “first to go” if greenhouse gases are 30 and temperatures continue rising.
+(A)kept balanced
+(B)made released
+(C)seen dismissed
+(D)left unchecked
+答案：(D) left unchecked
+題目編號：G110_30_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+leave sth unchecked 是「放任不管、不加抑制」，本句指「若溫室氣體未受抑制」；kept balanced（維持平衡）與後半句 temperatures continue rising 自相矛盾，made released、seen dismissed 兩組動詞搭配本身就不成立。
+重點：unchecked 指有害的事沒受到限制而持續或擴大；常見說法是 go unchecked、continue unchecked、leave sth unchecked。
+延伸閱讀：unchecked，沒人管而一路擴大 ↗
+深入解析
+答對率一成七，鑑別度 10：這是 110 年學測克漏字十五格裡最難的一格。
+你可能會這樣想
+leave + 受詞 + 過去分詞。你把 unchecked 讀成「沒被檢查的」，這很自然，因為 check 你背的就是「檢查」。但 check 當動詞還有一個意思：抑制、遏止（check the spread of a disease 遏止疾病擴散）。加上表否定的字首 un-，unchecked 就是「未受抑制、放任不管」；unattended（無人看管的）、unfinished（未完成的）同理。真正難的在後面：are left unchecked 連著兩個過去分詞，切不對整句就散了。
+怎麼判斷
+先把主動句還原：leave [greenhouse gases] [unchecked]。leave 後面是受詞加受詞補語，unchecked 說的是受詞的狀態。改成被動，用受詞當主詞，補語留在原地：greenhouse gases are left [unchecked]。同一個句型的例子：keep the door open（讓門開著）、make yourself understood（讓別人聽懂你的意思），補語都在說受詞怎麼樣了；leave 只是把補語換成過去分詞。再用一主一動驗算：are 是這個子句唯一的動詞，left 和 unchecked 都不是，這樣就不會把 left 讀成「離開」。最後看方向：後半句 temperatures continue rising（氣溫持續上升），前面必須是「放著不管」才接得下去。一句記完：Left unchecked, the rising water turned the whole alley into a river within an hour.（積水放著不管，不到一個小時整條巷子就成了河。）〔情境取材自 114 學測作文題：颱風停課〕
+誘答選項
+kept balanced（維持平衡）方向剛好相反，正是答案的反義。made released、seen dismissed 是拼湊出來的，英文沒有這兩種說法。
+常考字詞與句型
+leave sth unchecked（放任不管）、leave sth unattended（無人看管）、go unchecked（未受遏止地持續下去）、keep sth under control（控制住）。
+鑑別度分析：鑑別度 10，高低分群的差距不大。本題答對率一成七，屬於難度很高的題目——大考中心《選才電子報》第 307 期說明鑑別度時，就把答對率低的難題列為鑑別度偏低的原因之一：高、低分群考生在這類題目上的答對率差距不大，鑑別度的數值就會比較小。這一題比較像是不分程度的考生都被同一個形狀擋住：四個選項都是「動詞 + 過去分詞」，形狀一模一樣，要判的是哪一組真的成立，不是哪一個字面上讀得通。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Glaciers are usually associated with colder climates. But some mountain ranges of South America, Africa, and Indonesia are also 26 glaciers and ice sheets. These tropical glaciers serve as a major source of water supply to one-sixth of the world's population.
+A newly published study, however, revealed that rising temperatures are posing an 27 threat to the last tropical glaciers in Indonesia's Papua region. The ice sheets, which once spanned 20 square kilometers, are thinning over five times as quickly compared to a few years ago. 28 already shrunk by 85% to a mere 0.5 square kilometers, Papua's glaciers will completely disappear within a decade, researchers have predicted.
+The disappearance of the glaciers will also leave a significant 29 impact. For many indigenous Papuans, the ice sheets represent a sacred symbol. "The mountains and valleys are the arms and legs of their god and the glaciers are the head," explained the head researcher. The study warned that Papua's glaciers are only the "first to go" if greenhouse gases are 30 and temperatures continue rising. And this is certainly a serious warning about the depressing fate of other glaciers around the world.
+中譯：冰河通常讓人聯想到寒冷的氣候。但南美洲、非洲和印尼的部分山脈，其實也擁有冰河與冰原。這些熱帶冰河是全球六分之一人口的重要水源之一。然而，一項最新發表的研究顯示，氣溫上升正對印尼巴布亞地區剩下的熱帶冰河構成迫切的威脅。這片曾經廣達 20 平方公里的冰原，融化速度比幾年前快了五倍以上。研究人員預測，這片已縮減 85%、只剩 0.5 平方公里的巴布亞冰河，將在十年內完全消失。冰河的消失也將帶來重大的文化衝擊——對許多巴布亞原住民而言，這片冰原象徵著神聖的意義。「這些山脈與河谷是他們神祇的手腳，冰河則是頭部，」研究負責人如此解釋。這項研究警告，若溫室氣體排放不受控制、氣溫持續上升，巴布亞的冰河恐怕只是「第一個消失」的冰河，這無疑也對全球其他冰河令人擔憂的命運，發出了嚴正的警訊。
+📋 內容大意
+Glaciers are not only in cold regions. Ranges in South America, Africa and Indonesia have them too, and they supply water for a sixth of the world's people.
+A new study says rising temperatures now threaten Papua's last tropical glaciers. The ice is thinning five times faster than before and has shrunk by 85%.
+Researchers expect the ice to vanish within ten years. For indigenous Papuans the glaciers are sacred, the head of their god, and more glaciers will follow.
+← 第29題回到110 年學測
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g103-30-3/index.html
+Author: staresto-create ZZSH
+Title: 103 年學測克漏字第30題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 103 年學測 ／ 第30題
+103 年學測 克漏字 第30題
+字彙選義線索：句內答對率 47%
+答對率 47%：當年每 100 位考生，有 47 位答對。
+And 30 an opinion is formed, most of their thinking then is simply trying to find support for it.
+(A)though
+(B)unless
+(C)once
+(D)even
+答案：(C) once
+題目編號：G103_30_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+連接詞 once 表示「一旦……就……」，語意為「而一旦意見形成，他們隨後大部分的思考就只是在為這個意見尋找支持的證據」，呼應整段文章批評人類「先決定後思考」的心理現象；unless（除非）、even（甚至，不能這樣單獨作連接詞）都不合；though（雖然）會讓語意變成「雖然意見形成了，卻只是在找支持證據」，但「意見形成」與「替它找支持」之間並沒有矛盾，讓步關係不成立。
+深入解析
+你可能會這樣想
+once 這個字，你的印象多半只有兩個意思：「一次」（once a week）與「曾經」（I once lived there）。這兩個都是副詞，突然要它當連接詞帶一整個子句，感覺很陌生，於是就放掉了。答對率四成七，這個詞性上的落差是主因。
+怎麼判斷
+先看句構。空格後面是 an opinion is formed，是一個完整子句；逗號後面又是一個完整子句 most of their thinking then is simply trying to find support for it。兩個完整子句要接在一起，空格非放連接詞不可。even 是副詞，不能單獨連接子句，要當連接詞得寫成 even if 或 even though，詞性上直接排除。先問「這個字能不能單獨當連接詞」，是這一題最快的刷法。剩下三個都是連接詞，就改比語意。once 當連接詞是「一旦…就…」，強調前後的時間先後與必然結果，而且副詞子句習慣用現在式代替未來式或表通則，句中的 an opinion is formed 正是現在式的被動。語意也完全吻合：意見一旦形成，後續的思考就只剩下替它找理由。though（雖然）表讓步，會變成「雖然意見形成了，他們的思考卻只是在找支持」——但這兩件事之間並不互相牴觸，讓步關係根本不成立。unless（除非）等於 if... not，會變成「除非意見形成，否則思考只是在找支持」，語意剛好顛倒。最後回頭對主旨：第一句 Most human beings actually decide before they think. 講的就是先有結論、再補理由。填 once，整篇的邏輯才前後一致。順帶注意句中的 then（那時、接下來）：它與 once 前後呼應，標示的正是「意見形成之後」那個時間點，也是 once 的旁證。
+誘答選項
+though（雖然）：讓步關係不成立，前後兩件事並不衝突。unless（除非）：等於 if not，代進去語意與全篇相反。even（甚至）：副詞，不能單獨連接兩個子句。
+常考字詞與句型
+once（一旦…就…）、as soon as（一…就…）、even if（即使）、even though（儘管、雖然）、form an opinion（形成看法）、find support for（為…找到支持）。其中 even though 這一組考過 6 個年度，89 年第 23 題 →、95 年第 25 題 →、96 年第 25 題、106 年第 19 題 →、107 年第 21 題 →都出現過；even if 考過 4 個年度，89 年第 23 題 →、95 年第 25 題 →、96 年第 25 題都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Most human beings actually decide before they think. When people encounter a complex issue and form an opinion, how thoroughly have they 26 all the important factors involved before they make their decisions? The answer is: not very thoroughly, 27 they are executives, specialized experts, or ordinary people in the street. Very few people, no matter how intelligent or experienced, can 28 all the possibilities or outcomes of a policy or a course of action within just a short period of time.
+Those who take pride in being decisive often try their best to consider all the factors beforehand. 29 , it is not unusual for them to come up with a decision before they have the time to do so. And 30 an opinion is formed, most of their thinking then is simply trying to find support for it.
+中譯：大多數人其實是先做決定、後思考。當人們遇到複雜的議題並形成意見時，在做出決定之前，他們究竟把所有重要因素都仔細考慮過了嗎？答案是：並沒有考慮得很周全，無論是企業主管、專業人士，還是一般大眾都是如此。無論一個人多聰明、多有經驗，很少有人能在短時間內考慮到一項政策或行動方案的所有可能性與後果。那些以果斷自豪的人，往往會盡力事先考慮周全所有因素，然而，他們常常在還沒來得及仔細思考之前就已經做出了決定。而一旦意見形成，他們接下來大部分的思考，往往只是在為這個已經形成的意見尋找支持的理由。
+📋 內容大意
+People usually make decisions instinctively before thoroughly analyzing all factors and possibilities involved.
+Even decisive individuals frequently form opinions first and then use reasoning merely to justify their initial choice.
+← 第29題回到103 年學測
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g112-20-2/index.html
+Author: staresto-create ZZSH
+Title: 112 年學測克漏字第20題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 112 年學測 ／ 第20題
+112 年學測 克漏字 第20題
+慣用語／片語線索：句內答對率 33%
+答對率 33%：當年每 100 位考生，有 33 位答對。
+Moreover, the effect is often 20 space motion sickness, headaches, and nausea.
+(A)varied with
+(B)brought about
+(C)transferred from
+(D)accompanied by
+答案：(D) accompanied by
+題目編號：G112_20_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+be accompanied by 是「伴隨著、同時出現」，本句指這種效應常伴隨著太空動暈症、頭痛與噁心；varied with（隨…而變）、brought about（引起，主詞須是原因）、transferred from（從…轉移）語意都不合。
+深入解析
+你可能會這樣想
+accompany 你記得的大概是「陪伴」，腦中畫面是人陪人（My mother accompanied me to the hospital. 我媽媽陪我去醫院）。用於抽象事物時，be accompanied by 的意思是「伴隨著、同時出現」。
+怎麼判斷
+空格前為 is often、後接三個並列名詞，可知此處為被動語態加介系詞的結構，主詞 the effect 是承受動作的一方。劍橋詞典對 accompanied by sth 的釋義是「與某事物同時存在或伴隨出現」，全句意為「這種效應常伴隨著太空動暈症、頭痛與噁心」。作答線索在前文 As a result, the astronauts have swollen, puffy faces（因此太空人的臉會變得腫脹浮腫），已說明該效應指的是臉部浮腫，此處補述隨之出現的其他症狀，兩者為並列而非因果。凡是被動語態後接介系詞的題目，判斷步驟相同：先確認主詞是動作的承受者，再檢查各選項所要求的主詞是原因還是結果。
+誘答選項
+brought about 是「引起、導致」，主詞須是原因；本句主詞 the effect 本身即是結果，方向相反，且原文只是並列描述同時出現的現象，並未主張因果。varied with 是「隨…而變化」，須有可變動的量；transferred from 是「自…移轉」，語意都不合。另須注意 accompany 為及物動詞，後面直接接受詞，不加 with。
+常考字詞與句型
+be accompanied by（伴隨著）、accompany sb（陪伴某人，不加 with）、bring about a change（帶來改變）、motion sickness（動暈症）、nausea（噁心）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Gravity has been at the top of the science agenda since the start of Mars missions. In the earlier days of space travel, scientists tried to overcome the force of gravity so that a rocket could shoot 16 Earth's pull in order to land humans on the moon. Today, they are more interested in how reduced gravity affects the astronauts' 17 condition. Our bodies have evolved to exist within Earth's gravity (1 g), not in the weightlessness of space (0 g) or the microgravity of Mars (0.3 g).
+When on Earth, we have more fluids in our lower body because they are pulled down by Earth's gravity. However, with the absence of gravity in the outer space, our body fluids 18 , shifting toward the upper body and the head. As a result, the astronauts have swollen, puffy faces, very much resembling that of the round-headed Charlie Brown in the famous comic strip.
+This "Charlie Brown effect" will be more 19 when the astronauts go on their Mars missions, which will take about three years to complete, much longer than missions to the moon. Moreover, the effect is often 20 space motion sickness, headaches, and nausea. Such a syndrome is considered the top health risk for the astronauts, and scientists are still trying to figure out how it may be prevented.
+中譯：自火星任務展開以來，重力問題便一直是科學議程上的重要課題。在太空探索的早期階段，科學家致力於克服地心引力，讓火箭能擺脫地球引力升空，將人類送上月球。如今，他們更關注的是重力減弱如何影響太空人的身體狀況。人類的身體演化以適應地球的重力環境（1g），而非太空中的無重力狀態（0g），也不是火星上的微重力環境（0.3g）。在地球上，我們下半身的體液較多，因為受到地心引力向下牽引；然而，一旦身處外太空、失去重力，我們體內的體液會重新分佈，向上半身及頭部移動。因此，太空人的臉會變得腫脹浮腫，看起來就像知名漫畫裡那個圓頭查理·布朗一樣。這種「查理·布朗效應」，在太空人執行需耗時約三年、遠比登月任務更久的火星任務時，將會更加明顯。此外，這種效應通常還伴隨著太空暈動症、頭痛和噁心等症狀。這種症候群被認為是太空人面臨的頭號健康風險，科學家目前仍在努力找出預防的方法。
+📋 內容大意
+Reduced gravity in space alters human fluid distribution, creating health risks like the "Charlie Brown effect" that pose major challenges for long Mars missions.
+← 第19題回到112 年學測
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

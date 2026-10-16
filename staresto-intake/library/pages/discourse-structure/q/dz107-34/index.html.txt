@@ -1,0 +1,65 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dz107-34/index.html
+Author: staresto-create ZZSH
+Title: 指考 107年 篇章結構 第34題詳解（掌握段落內語句的連貫性與一致性）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 指考 107年 ／ 第34題
+指考 107年 篇章結構 第34題
+選文：麵包、鹽與法國大革命（Bread, Salt, and the French Revolution）
+掌握段落內語句的連貫性與一致性線索：指示詞、序列與時間詞答對率 53%
+(A)External threats closely shaped the course of the Revolution.外部的威脅深深左右了這場革命的走向。
+(B)With the collapse of the royal family, calm was restored gradually.隨著王室垮台，秩序逐漸恢復。
+(C)Meanwhile, peasants’ resentment against the gabelle was spreading.同時，農民對鹽稅（gabelle）的不滿正在蔓延。
+(D)The common household could not afford to buy enough food to meet their basic needs.一般家庭買不起足夠的食物來滿足基本需求。
+(E)The anger quickly built up, culminating in the massive riots of the French Revolution in 1789.憤怒迅速累積，最後演變成一七八九年法國大革命的大規模暴動。
+(F)Specifically, bread and salt, two most essential elements in the French cuisine, were at the heart of the conflict.具體來說，麵包和鹽這兩樣法國飲食中最基本的東西，正是這場衝突的核心。
+答案：(E) The anger quickly built up, culminating in the massive riots of the French Revolution in 1789.
+題目編號：Dz107_34
+解析
+先看空格前面。 前一句是 The desperate population thus blamed the ruling class for the famine and economic disturbances.（走投無路的人民因此把飢荒與經濟亂象怪罪到統治階級頭上。）——情緒有了，事情還沒發生。
+再看空格後面。 後面是 The results include the storming of the Bastille… and the eventual beheading of King Louis XVI and his wife, Marie Antoinette.（那些結果包括攻陷巴士底獄……以及路易十六與王后瑪麗·安東妮最終被送上斷頭台。）The results（那些結果）——是什麼事情的結果？ 怪罪統治階級不會直接生出攻陷監獄和處決國王，中間要有一個事件。
+E 就是那個事件：一七八九年的大規模暴動。
+如果你選了 B（隨著王室垮台，秩序逐漸恢復。）：B 講的也是革命的後續。但 B 說的是平息下來，而空格後面接的是攻陷巴士底獄、國王被處決——事情正在往上衝，不是往下收。
+【下次先看這裡】後面出現 The results、The consequences（那些結果），先問「哪一件事的結果」。找不到那件事，它就在空格裡。
+線索與數據
+線索種類指示詞、序列與時間詞
+線索在哪後一句 後句 The results 需要一個事件；1789
+答對率53%
+鑑別度74
+本篇題型6選5・刪去法不收尾
+數據出處：本頁的答對率與鑑別度來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響。
+多出來的那一個：A
+(A)External threats closely shaped the course of the Revolution.外部的威脅深深左右了這場革命的走向。
+A 提到革命，也是一句像模像樣的歷史論斷。但五格都放不進去：
+格
+那一格在等什麼
+A 為什麼不行
+34
+憤怒爆發成哪一件事
+A 沒有事件、沒有年份
+共同點：第一段第二句就把範圍收在「食物」上，第二、三段各講一樣，全篇沒有一處在談國外。A 講的是另一條線。
+【下次先看這裡】六個選項先拿去和第一段對一次。第一段已經說了這篇要談什麼，談別的那一個通常就是多出來的。
+展開本題所在的整篇選文與中文翻譯
+本篇共 5 格、6選5；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+The causes of the French Revolution are complex and still widely debated among historians. However, many scholars agree that food played an important role in the socio-political upheaval. 31
+A main component in the French daily meal, bread was often tied up with the national identity. Studies show that the average 18th-century French worker spent half his daily wage on bread. In 1788 and 1789, however, when the grain crops failed two years in a row, the price of bread shot up to 88 percent of his earnings. 32 The great majority of the French population was starving. Some even resorted to theft or prostitution to stay alive.
+33 Started in the 15th century, this tax on salt consumption was applied particularly to the poor, while the nobility and the privileged were exempted. The high rate and unequal distribution of the tax provoked widespread illegal dealing in salt by smugglers, leading to skyrocketing salt prices.
+引爆：王室毫無感覺，憤怒累積成 1789 年的暴動
+However, the royal court at Versailles was isolated from and indifferent to the escalating crisis. The desperate population thus blamed the ruling class for the famine and economic disturbances. 34The anger quickly built up, culminating in the massive riots of the French Revolution in 1789. The results include the storming of the Bastille, a medieval fortress and prison in Paris, and the eventual beheading of King Louis XVI and his wife, Marie Antoinette.
+35 Yet, the gabelle and the “bread question” remained among the most unsettling social and political issues throughout the Revolutionary and Napoleonic periods (1789-1815) and well beyond.
+中譯
+法國大革命的成因複雜，史家至今仍爭論不休。不過許多學者同意，食物在這場社會與政治的動盪中扮演了重要角色。31
+麵包是法國人日常飲食的主要部分，往往和民族認同綁在一起。研究顯示，十八世紀的法國工人平均要拿出半天的工資買麵包。然而在一七八八和一七八九年，穀物連續兩年歉收，麵包的價格飆漲到工人收入的百分之八十八。32 絕大多數的法國人處於挨餓狀態。有些人甚至靠偷竊或賣身求生。
+33 這項對鹽課徵的消費稅始於十五世紀，特別針對窮人，貴族和特權階級則不必繳。稅率高又課得不公平，引發私鹽販子大規模的非法交易，鹽價因此一路飆升。
+然而，凡爾賽的王室既與這場不斷惡化的危機隔絕，也對它漠不關心。走投無路的民眾於是把飢荒和經濟動盪都歸咎於統治階級。34 後果包括攻陷巴士底獄——那是巴黎一座中世紀的堡壘兼監獄——以及路易十六和他的妻子瑪麗・安東妮最終被送上斷頭台。
+35 不過，鹽稅（gabelle）和「麵包問題」始終是革命時期與拿破崙時期（一七八九至一八一五年）以及其後很長一段時間裡，最令人不安的社會與政治議題之一。
+← 第33題回到互動練習第35題 →
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

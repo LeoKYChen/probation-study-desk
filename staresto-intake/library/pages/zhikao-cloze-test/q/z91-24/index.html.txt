@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z91-24/index.html
+Author: staresto-create ZZSH
+Title: 91 年指考克漏字第24題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 91 年指考 ／ 第24題
+91 年指考 克漏字 第24題
+字彙選義線索：句內答對率 50%
+答對率 50%：當年每 100 位考生，有 50 位答對。
+Secondly, it is by participating in any IMO contest that young mathematicians of all countries can foster friendly 24.
+(A)behaviors
+(B)messages
+(C)relations
+(D)guests
+答案：(C) relations
+題目編號：Z91_24（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+foster friendly relations（建立友好關係）為字詞搭配，表示各國年輕數學家透過競賽培養友誼；behaviors／messages／guests 都不符合此處語意。
+深入解析
+你可能會這樣想
+四個選項都是名詞，文法上都放得進去，只能靠語意判斷。答對率五成。
+怎麼判斷
+空格前面是 foster friendly（培養友好的……），要問的是「培養友好的什麼」。foster friendly relations（建立友好關係）是常考的字詞搭配，同一組的還有 maintain friendly relations。同句就選得出答案；下一句「因此鼓勵並建立更多國際交流」可以再驗算一次，方向完全吻合。
+誘答選項
+behaviors（行為）：friendly behavior 本身說得通，但「培養友好的舉止」講的是個人的舉止，與下一句的國際交流接不上。messages（訊息）：訊息是傳遞的，不是培養的。guests（客人）：與 foster 完全搭不起來，這一段講的是國與國之間的往來，不是招待客人。
+順便把強調句型學起來
+這一句的架構是 it is by participating in any IMO contest that ...，這是強調句型（分裂句，cleft sentence，劍橋 English Grammar Today 的 Cleft sentences 條目）。它把一個訊息拆成兩個子句：接在 It is 後面的是要強調的部分，that 後面裝的是已經知道的資訊。還原成一般語序就是 Young mathematicians of all countries can foster friendly relations by participating in any IMO contest.，被搬到 It is 後面的是 by participating in any IMO contest（透過參加 IMO 競賽）這個介系詞片語，強調的是「靠什麼方式」。公式是 It is + 要強調的成分 + that + 句子的其餘部分——英文一句話本來先把主詞和動詞這個骨幹交代出去，強調句型就是把你要強調的成分搬到骨幹的位置。要強調的成分是人的時候，that 可以換成 who。句子的主要動詞不能單獨搬進那個位置，要強調動作得改用另一型 What he did was ...；但像本題的 by participating（透過參加）這種被介系詞帶著的動名詞，整組是介系詞片語，進得去。同一份考卷的第三篇有兩處同型，強調的都是主詞：it is the recording industry that wants to {27} piracy（第 27 題所在句）、It is the fans that support the kingdoms（第 29 題所在句）。三處對照就知道，被強調的成分可以是主詞，也可以是介系詞片語。
+常考字詞與句型
+maintain friendly relations（維持友好關係）、establish relations with（與……建立關係）、It is + 強調的成分 + that ...（強調句型）、international exchange（國際交流）、based upon（根據……）、by V-ing（藉由做……）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：91學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+There are six international science Olympiads in the world. They are all organized with a simple intention—to 21 global understanding and mutual appreciation among young scientists in all countries. Each of the six science Olympiads 22 its specific aims.
+The aims of the International Mathematical Olympiad (IMO), for example, are three-fold. With arduous but interesting math problems, the first aim of the IMO is to discover, to encourage and, most important of all, to challenge 23 gifted young people all over the world. Secondly, it is by participating in any IMO contest that young mathematicians of all countries can foster friendly 24.
+Based upon its second aim, more international exchanges are encouraged and established. Any IMO contest brings not only young mathematicians together but also their instructors; 25, the IMO has its final aim to create opportunities for the exchange of information on math schedules and practice throughout the world.
+中譯：全世界共有六項國際科學奧林匹亞競賽，其創辦宗旨很單純——促進各國青年科學家之間的全球理解與相互欣賞。這六項科學奧林匹亞各有其特定目標。以國際數學奧林匹亞（IMO）為例，其目標有三：透過艱深卻有趣的數學題目，IMO 的首要目標是發掘、鼓勵，並且最重要的是挑戰全世界具有數學天賦的年輕人。其次，正是透過參與 IMO 競賽，各國的年輕數學家得以建立友誼。基於第二項目標，更多的國際交流因此被促成並建立。任何一屆 IMO 競賽不只讓年輕數學家齊聚一堂，也讓他們的指導老師相聚；因此，IMO 的最終目標便是為世界各地數學課程與教學實務的資訊交流創造機會。
+📋 內容大意
+Six international science Olympiads exist, all meant to build understanding among young scientists.
+Each pursues its own aims, and those of the International Mathematical Olympiad are threefold.
+It seeks to challenge gifted students, build friendships, and let teachers exchange teaching ideas.
+← 第23題回到91 年指考第25題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g92-22-1/index.html
+Author: staresto-create ZZSH
+Title: 92 年學測克漏字第22題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 92 年學測 ／ 第22題
+92 年學測 克漏字 第22題
+字彙選義線索：句內答對率 53%
+答對率 53%：當年每 100 位考生，有 53 位答對。
+It was then decided that Alan Shepard should relieve himself in his space suit, and continue with the mission as scheduled. 22 problem urged NASA to develop the first space toilet, a modified diaper.
+(A)Each
+(B)This
+(C)Their
+(D)Another
+答案：(B) This
+題目編號：G92_22_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+This 指代前文提到的問題（雪帕德必須在太空衣裡如廁），This problem 承接上文；Each（每個，不指代特定問題）、Their（他們的）、Another（另一個，語意不合，這裡指的正是前面提到的同一個問題）都不合。
+深入解析
+你可能會這樣想
+四個選項擺進去都成句：Each problem、This problem、Their problem、Another problem，沒有一個違反文法。這種時候很容易憑語感挑一個，而 Another problem（另一個問題）讀起來特別順，因為前面確實出了狀況，感覺「又來一個」。但這一格不是要你再開一個新問題，是要你把剛剛那個問題概括起來再指一次。
+怎麼判斷
+四個選項都是擺在名詞 problem 前面的限定詞，可見這一格考的不是文法而是「這個 problem 到底指什麼」，那就得回頭讀前一句。前一句是 It was then decided that Alan Shepard should relieve himself in his space suit（於是決定讓雪帕德在太空衣裡解決），這件事本身就是一個問題。用一個比較概括的名詞（problem）把前面剛講過的內容概括起來再指一次，前面就要加 this，這叫回指（Halliday 與 Hasan「Cohesion in English」的指稱銜接）。判斷的順序是先問「this 指的是前面哪一段」，再看四個選項哪一個對得上（同型：94 年第 28 題 →的 this discomfort 回指前文的 feel pain）。這一題的鑑別度 46，分開的就是有沒有動手把 this 的所指釘回前一句。
+誘答選項
+Another（另一個）：它預設前面已經出現過同類的問題，而這是別的一個；但本句指的正是剛剛那一個，方向相反。Each（每一個）：要有一組複數的問題可以一個一個分配，前文只講了一件事。Their（他們的）：前文沒有出現一群人來當這個 their 的所指，被決定的是任務怎麼進行，不是誰的問題。
+常考字詞與句型
+solve a problem（解決問題）、pose a problem（造成問題）、run into a problem（碰上問題）、urge sb to V（力促某人做……）、a modified version（改良過的版本）、cause trouble（惹麻煩）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The first American space toilet was Alan Shepard's space suit. His flight was supposed to last only 15 minutes, so there was no provision made for him to relieve himself in the capsule. His flight, 21, was delayed for hours. It was then decided that Alan Shepard should relieve himself in his space suit, and continue with the mission as scheduled.
+22 problem urged NASA to develop the first space toilet, a modified diaper. Diapers are 23 used by astronauts when they are outside the space shuttle, wearing a spacesuit.
+As the flights grew longer, a new set of two collection bags was devised, 24 for liquid wastes and the other for solid wastes. Once used, the bags are sealed and stored for the flight back to the earth, 25 they are disposed of.
+中譯：第一個美製太空馬桶，其實是艾倫·雪帕德的太空衣。他原本的飛行任務預計只會持續 15 分鐘，因此艙內並未為他準備如廁的設施。然而，他的飛行任務卻延遲了好幾個小時。於是，任務單位決定讓雪帕德直接在太空衣裡如廁，並按原訂計畫繼續執行任務。這個問題促使 NASA 開發出第一款太空馬桶——一種改良版的尿布。太空人在太空艙外、穿著太空衣進行任務時，通常會使用這種尿布。隨著飛行任務時間越來越長，科學家設計出一套新的雙收集袋系統，一個用於收集液態廢物，另一個用於收集固態廢物。使用完畢後，這些袋子會被密封並存放，直到返回地球後才進行處理。
+📋 內容大意
+Delays during early space missions forced NASA to continuously develop and upgrade waste disposal systems for astronauts.（敘事文）
+← 第21題回到92 年學測第23題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

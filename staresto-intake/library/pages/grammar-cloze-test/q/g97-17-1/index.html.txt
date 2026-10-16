@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g97-17-1/index.html
+Author: staresto-create ZZSH
+Title: 97 年學測克漏字第17題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 97 年學測 ／ 第17題
+97 年學測 克漏字 第17題
+慣用語／片語線索：句內答對率 62%
+答對率 62%：當年每 100 位考生，有 62 位答對。
+Researchers at recently concluded that a compound in green tea 17 the growth of cancer cells.
+(A)looks after
+(B)slows down
+(C)takes over
+(D)turns out
+答案：(B) slows down
+題目編號：G97_17_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】slow down 固定片語動詞「減緩」；looks after（照顧）、takes over（接管）、turns out（結果是）都不合。
+深入解析
+你可能會這樣想
+slow down 這個片語，你的印象大概是車子減速、或人放慢腳步，都是「自己慢下來」。這裡它是及物用法：後面直接接受詞 the growth of cancer cells，意思是「使……變慢、減緩」（劍橋詞典 slow down 詞條同時收不及物與及物兩種用法）。同一個片語，主詞從「自己慢下來」換成「讓別的東西慢下來」，中文就得從「減速」改成「減緩」。
+怎麼判斷
+分兩步。第一步看結構：空格後面有受詞 the growth，所以空格必須放得下受詞；四個選項在這一步都還過得去，刷不掉人。第二步看語意方向：整段從第一句 What is so special about green tea? 開始就在講綠茶的好處，緊接著下一句還說它 helpful，所以綠茶對癌細胞生長只可能是「壓下去」，不會是中性或正面的描述。這一格鑑別度 63，相當高，分開的正是「有沒有順著整段的正負方向讀」——只盯著空格那一句，四個片語塞進去文法都不會壞；把整段的方向讀進來，答案就只剩一個。
+誘答選項
+looks after 是「照顧」，主詞通常是人，「照顧癌細胞的生長」與全文方向完全相反。takes over 是「接管、接手」，需要有前一個負責的人或單位被接替，文中沒有這樣的對象。turns out 常見的用法是 turn out to be（結果是……）或後面接 that 子句，它不會直接接一個「生長」當受詞。
+常考字詞與句型
+slow down（減緩、使變慢）、speed up（加快）、the growth of（……的生長）、cancer cells（癌細胞）、look after（照顧）、take over（接管）。其中 take over 這一組考過 4 個年度，98 年第 29 題 →、106 年第 29 題 →、110 年第 17 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+What is so special about green tea? The Chinese and Indians 16 it for at least 4,000 years to treat everything from headache to depression. Researchers at recently concluded that a compound in green tea 17 the growth of cancer cells. Green tea is also helpful 18 infection and damaged immune function. The secret power of green tea is its richness in a powerful anti-oxidant.
+Green tea and black tea come from the same plant. Their 19 is in the processing. Green tea is dried but not fermented, and this shorter processing gives it a lighter flavor than black tea. It also helps retain the tea's beneficial chemicals. That is 20 green tea is so good for health.
+The only reported negative effect of drinking green tea is a possible allergic reaction and insomnia due to the caffeine it contains.
+中譯：綠茶到底有什麼特別之處？中國人和印度人使用綠茶至少已有四千年歷史，用來治療從頭痛到憂鬱症等各種病症。最近的研究人員發現，綠茶中的一種化合物能減緩癌細胞的生長。綠茶也有助於對抗感染和受損的免疫功能。綠茶的神奇力量來自於它富含強效抗氧化物。綠茶和紅茶其實來自同一種植物，兩者的差別在於加工方式。綠茶只經過乾燥而未經發酵，這樣較短的加工過程使它的味道比紅茶更清淡，也有助於保留茶葉中對健康有益的化學成分。這就是為什麼綠茶對健康這麼好。飲用綠茶唯一被報導的負面影響，是可能引發過敏反應，以及因所含咖啡因而導致失眠。
+📋 內容大意
+Green tea has been long used in traditional medicine and is proven by modern research to offer various health and medicinal benefits.
+Green tea retains its health-promoting chemicals and distinct flavor due to its minimal, non-fermented processing method.
+Despite its numerous benefits, green tea may cause mild side effects like caffeine-induced insomnia or allergic reactions in some individuals.
+← 第16題回到97 年學測第18題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

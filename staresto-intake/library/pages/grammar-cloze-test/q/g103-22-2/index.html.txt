@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g103-22-2/index.html
+Author: staresto-create ZZSH
+Title: 103 年學測克漏字第22題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 103 年學測 ／ 第22題
+103 年學測 克漏字 第22題
+字彙選義線索：句內答對率 62%
+答對率 62%：當年每 100 位考生，有 62 位答對。
+However, this tourist attraction will soon 22 .
+(A)operate
+(B)expand
+(C)recover
+(D)vanish
+答案：(D) vanish
+題目編號：G103_22_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「這個觀光景點很快就會『消失』」，vanish（消失）符合後文冰河融化的主題；operate（運作）、expand（擴大，語意相反）、recover（恢復）都不合。
+深入解析
+你可能會這樣想
+vanish 你大概只在魔術或故事裡見過（The rabbit vanished.），一時不確定它能不能用在 tourist attraction 這種抽象的東西上，於是退而求其次，挑比較眼熟的 recover 或 expand。
+怎麼判斷
+兩個線索，一個在這一句的句首，一個在後面兩句。先看轉折詞：句首的 However 標示語意反轉。前一句說遊客被冰河的描寫吸引（正面、興盛），However 之後必然轉向負面。operate、expand、recover 三個不是正面就是維持現狀，只有 vanish 是負面。單憑一個 However 就能刷掉三個選項。再往下讀兩句：Mount Kilimanjaro's snows and glaciers are melting and are {23} to disappear by 2020（積雪與冰河正在融化，將在 2020 年前消失）。disappear 就是 vanish 的同義字，作者先用 vanish 一句話概括，再用 disappear 具體說明。另外注意主詞 this tourist attraction 指的是「這項觀光吸引力」這件事，不是一棟建築或一部機器，所以更不可能 operate。
+誘答選項
+operate（運作、營運、動手術）：這個字有三個常見意思——機器或系統「運作」、公司或事業「營運」、醫生「動手術」。營運那一個意思最容易讓人猶豫，因為觀光景點聽起來像是可以「開始營運」的地方；但這座山每年已有數萬遊客造訪，早就在營運了，談不上「即將開始營運」，而且 However 要求語意轉負，營運是中性偏正面，方向也不對。expand（擴大、擴張）：方向與 However 的轉折相反。recover（恢復、康復）：要先受到損害才談得上恢復，這裡損害還沒發生，時間順序不對。
+常考字詞與句型
+vanish into thin air（憑空消失）、tourist attraction（觀光景點、觀光賣點）、recover from an illness（病癒）、operate on a patient（為病人動手術）、expand into（擴展到…）、melt away（融化消失）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Every year tens of thousands of tourists visit Mount Kilimanjaro, the highest mountain in Tanzania, Africa, to witness the scenes depicted in Earnest Hemingway's The Snows of Kilimanjaro. They are attracted by the American writer's 21 of the millennia-old glaciers.
+However, this tourist attraction will soon 22 . According to the Climate Change Group, formed by environmentalists worldwide to document the effects of global warming, Mount Kilimanjaro's snows and glaciers are melting and are 23 to disappear by 2020.
+Not only will the summit lose its tourist attraction, but the disappearance of the snows will also cause major damage to the ecosystem on the dry African plains at its base. 24 the snow covering the peak, there will not be enough moisture and water to nourish the plants and animals below. Rising temperatures, an effect of global warming, 25 threaten the ecosystem of this mountain area. The loss of snows on the 5,892m peak, which have been there for about 11,700 years, could have disastrous effects on Tanzania.
+中譯：每年都有數萬名遊客造訪坦尚尼亞、非洲最高峰吉力馬札羅山，只為親眼目睹海明威名著《吉力馬札羅的雪》中所描繪的景象。他們被這位美國作家對這座千年冰河的描寫所吸引。然而，這項觀光資源即將消失。根據全球環保人士組成的「氣候變遷小組」記錄，吉力馬札羅山的積雪與冰河正在融化，預計將於 2020 年前完全消失。屆時，這座山峰失去的不只是觀光吸引力，積雪的消失還將對山腳下乾燥非洲平原的生態系統造成重大破壞。少了山頂積雪，山下的動植物將缺乏足夠的水分與濕氣滋養。全球暖化所導致的氣溫上升，也持續威脅著這座山區的生態系統。這座 5892 公尺高峰上存在了約 11700 年的積雪一旦消失，恐將對坦尚尼亞帶來災難性的後果。
+📋 內容大意
+Tens of thousands of tourists visit Mount Kilimanjaro in Tanzania each year. They come for the ancient glaciers Hemingway wrote about in The Snows of Kilimanjaro.
+The Climate Change Group reports that the snows and glaciers are melting and could be gone by 2020. The summit would then lose its appeal to visitors.
+The loss would also harm the plains below, because the snow supplies their water. Rising temperatures add more pressure.
+← 第21題回到103 年學測第23題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g104-30-3/index.html
+Author: staresto-create ZZSH
+Title: 104 年學測克漏字第30題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 104 年學測 ／ 第30題
+104 年學測 克漏字 第30題
+字彙選義線索：句內答對率 40%
+答對率 40%：當年每 100 位考生，有 40 位答對。
+Today, apples are 30 eaten the world over and form the basis for multi-million dollar industries.
+(A)regularly
+(B)particularly
+(C)permanently
+(D)barely
+答案：(A) regularly
+題目編號：G104_30_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「蘋果在世界各地『經常性』被食用」，regularly（經常性地）符合這種廣泛食用的描述；particularly（特別地）、permanently（永久地）、barely（幾乎不，語意相反）都不合。
+深入解析
+你可能會這樣想
+regularly 你背的是「規律地、定期地」（exercise regularly，規律運動），所以看到 are regularly eaten，腦中翻成「被定期食用」就覺得很怪，反而不敢選。這一格答對率只有四成，卡住的正是這個字義落差。劍橋詞典把 regularly 的第一義直接列為 often（經常），例句 Experts say that the product, if eaten regularly, could be harmful.（專家說這種產品如果經常食用，可能有害。）—— 這裡講的是頻率高、成為常態，不必真的照時間表。
+怎麼判斷
+are regularly eaten the world over 就是「在世界各地被經常食用」。文內前後都在講規模：同一句後半 form the basis for multi-million dollar industries（構成價值數百萬美元的產業基礎），下一句 In 2005, at least 55 million tons of apples were grown worldwide（2005 年全球至少種植五千五百萬噸蘋果）。要維持這種產量與產業規模，食用頻率必須是「經常」。把 barely（幾乎不）代進去，跟後面的數字語意矛盾，一秒淘汰。至於為什麼連高分群考生也會在這一格失手（本題鑑別度只有 34）：問題出在這一格幾乎沒有「推」的空間。四個副詞擺進 are ___ eaten，文法上都通；前後文提供的線索只能刷掉方向明顯相反的 barely，卻刷不掉 particularly —— 「蘋果在全世界特別受食用」讀起來甚至頗順。要分辨 particularly 和 regularly，靠的不是邏輯推理，而是兩件事：知不知道 regularly 有「經常」這一義，以及知不知道 particularly 是「尤其、特別是」（劍橋釋義 especially, or more than usual），講的是比其他的或比平常更突出，所以要有一個對照的對象。本句沒有拿蘋果跟別的水果比，particularly 就沒有立足點。字義本身沒累積到，程度再好也推不出來，這就是這一格鑑別度偏低的原因。
+誘答選項
+particularly（特別是、尤其）用來從一群裡面挑出特例，例 I like fruit, particularly apples.（我喜歡水果，尤其是蘋果。）本句沒有這種比較框架。permanently（永久地）指狀態不再改變，例 permanently closed（永久歇業），不用來講頻率。barely（幾乎不）是否定副詞，例 I can barely hear you.（我幾乎聽不見你說話。）方向完全相反。
+常考字詞與句型
+regularly（經常地；規律地）、on a regular basis（定期地、經常地）、particularly（特別是、尤其）、barely（幾乎不）、the world over（全世界各地）、form the basis for（構成……的基礎）、multi-million dollar（數百萬美元的）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Nutritional products that can be collected from trees include fruits, nuts, seeds, leaves, and bark. Tree products have been an important part of diets for thousands of years, from early humans 26 fruits and nuts to the first cultivation of important trees, such as mango and apple.
+The apple is one of the world's most cultivated fruit trees, 27 over 7,000 different kinds in existence. Despite their great 28 , however, most domesticated apples can be traced back to a common ancestor, the wild apple of Central Asia, Malus sieversii. Apples have been grown for thousands of years in Asia and Europe, and 29 to North America by European colonists in the 17th century.
+Today, apples are 30 eaten the world over and form the basis for multi-million dollar industries. In 2005, at least 55 million tons of apples were grown worldwide, which generated a value of about $10 billion.
+中譯：能從樹木採集到的營養產品包括水果、堅果、種子、葉片和樹皮。數千年來，樹木產物一直是人類飲食中重要的一部分，從早期人類採集水果和堅果，到後來人類開始栽培芒果、蘋果等重要果樹。蘋果是世界上栽培最廣泛的果樹之一，目前已知的品種超過 7000 種。然而，儘管品種如此繁多，大多數人工栽培的蘋果，其實都能追溯回同一個祖先——原產於中亞的野生蘋果「新疆野蘋果」。蘋果在亞洲和歐洲已栽種了數千年，並於 17 世紀由歐洲殖民者引進北美洲。如今，蘋果已是全世界普遍食用的水果，並形成了價值數百萬美元的產業。2005 年，全球至少種植了 5500 萬噸蘋果，創造了約一百億美元的產值。
+📋 內容大意
+Trees have fed people for thousands of years. They give fruit, nuts, seeds, leaves and bark. Early humans picked food; later farmers grew mango and apple.
+The apple is one of the most widely grown fruit trees. More than 7,000 kinds exist, yet nearly all come from one wild ancestor in Central Asia.
+Apples grew in Asia and Europe for centuries. European colonists took them to North America in the 17th century, and today they support big industries.
+← 第29題回到104 年學測
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

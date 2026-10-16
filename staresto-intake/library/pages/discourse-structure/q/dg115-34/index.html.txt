@@ -1,0 +1,65 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dg115-34/index.html
+Author: staresto-create ZZSH
+Title: 學測 115年 篇章結構 第34題詳解（掌握篇章整體結構發展及段落與段落間的關係）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 學測 115年 ／ 第34題
+學測 115年 篇章結構 第34題
+選文：微笑背後的因素（What Shapes a Smile）
+掌握篇章整體結構發展及段落與段落間的關係線索：轉折詞、範圍呼應答對率 50%
+(A)Another crucial factor is a society's immigration diversity.另一個關鍵因素是一個社會的移民多樣性。
+(B)Various factors have thus contributed to the phenomenon of smiling.因此，種種因素共同造就了微笑這個現象。
+(C)For most of recorded human history, the open smile has been deeply unfashionable.在有文字記載的歷史裡，絕大多數時間，露齒而笑都很不受青睞。
+(D)A genuine smile indicates contentment, while a forced smile suggests underlying distress.真心的笑代表滿足，強擠出來的笑則透露內心的不安。
+(E)In fact, there is a well-known Russian proverb that goes, "Smiling with no reason is a sign of stupidity."事實上，俄羅斯有一句廣為人知的諺語：「無緣無故地笑是愚蠢的表現。」
+答案：(B) Various factors have thus contributed to the phenomenon of smiling.
+題目編號：Dg115_34
+解析
+先看空格的位置。 它在最後一段的第一句，而最後一段只有兩句話。前面三段各講一個面向：時代、文化解讀、社會組成。到這裡，該講的都講完了。
+再看空格後面。 後面是 As many psychologists now point out, this simple gesture is in fact far more complicated than it may appear.（許多心理學家指出，這個簡單的動作其實遠比看起來複雜。）要說「比看起來複雜」，前面得先有一句話說明複雜在哪裡。
+B 就是那一句：Various factors（種種因素）把前面三段一次總結，thus（因此）表示因果，是從前面推出來的結論。
+如果你選了 A（另一個關鍵因素是一個社會的移民多樣性。）：A 也是講因素的句子。但 Another（另一個）是在前面數過的因素之外再添一項，新添的因素後面要有內容說明；這是最後一段，後面只剩一句結論，沒有地方展開。
+【下次先看這裡】空格在最後一段的第一句，先回頭數這篇一共講了幾件事。最後一段要的通常是「把前面全部總結起來」的那一句，不是再加一項。
+線索與數據
+線索種類轉折詞、範圍呼應
+線索在哪兩側 thus，因果；Various factors 總結前三段
+答對率50%
+鑑別度58
+本篇題型5選4・刪去法不收尾
+數據出處：本頁的答對率與鑑別度來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響。
+多出來的那一個：D
+(D)A genuine smile indicates contentment, while a forced smile suggests underlying distress.真心的笑代表滿足，強擠出來的笑則透露內心的不安。
+D 讀起來完全通順，主題也對——它就是在講微笑。但四個空格都放不下：
+格
+那一格在等什麼
+D 為什麼不行
+34
+歸納三段的總結
+D 只講一件事，收不了三段
+看出共同點了嗎？全篇問的是「什麼東西影響了微笑」，D 答的是「微笑分成哪兩種」。這一年多出來的選項不是隨便湊的，它和正解同一個主題、卻是不同的切面。
+【下次先看這裡】5 選 4 一定會多一個。先看清楚整篇在問什麼，切面不對的那一個就是多出來的。四格填完不要因為「還剩一個」就回頭懷疑自己。
+展開本題所在的整篇選文與中文翻譯
+本篇共 4 格、5選4；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+破題：先立常識，再用提問打開全文
+Smiling is a gesture that many people engage in dozens of times a day without thought. Most people believe that smiling is an expression of good feelings, a simple way to show happiness and friendliness. But does this hold true across time and cultures?
+31 In the West, for example, portraits of men and women before the 1700s typically depicted them with a serious, unsmiling expression. The absence of smiles stemmed partly from the attempt to hide their decayed teeth caused by poor dental hygiene. More importantly, smiling and laughter had long been perceived in the society as manifestations of a lack of self-control and good manners. Paintings with white-toothed smiles emerged after the 1700s, with the gradual rise of a culture that valued perception and responsiveness.
+Recent studies also show that interpretations of smiling may vary from culture to culture. While in most cultures smiling is associated with positive emotions, in certain cultures the same person can be judged as less intelligent when smiling. 32
+The amount people smile is culturally influenced as well. People smile more when they are from countries that are high in individualism and low in population. These are often places where the needs and rights of the individual take precedence over those of the group. 33 Newcomers from different parts of the world are found to smile more. Without a shared language, they often resort to smiling to get along with others. For them, smiling is a straightforward way to indicate that one is reliable and trustworthy.
+結尾：總結各項因素，回應開頭的提問
+34Various factors have thus contributed to the phenomenon of smiling. As many psychologists now point out, this simple gesture is in fact far more complicated than it may appear.
+中譯
+微笑是許多人一天做上幾十次、卻從來不會多想的一個動作。多數人相信微笑是好心情的表現，是表達快樂與友善最簡單的方式。但這件事在不同的時代、不同的文化裡都成立嗎？
+31 以西方為例，一七○○年代以前的男女肖像畫，畫中人物通常表情嚴肅、不帶笑容。畫裡沒有笑容，一部分是為了遮掩因口腔衛生不良而蛀壞的牙齒。更重要的是，在當時的社會裡，微笑與大笑長久以來都被看成缺乏自制與教養的表現。露出白牙微笑的畫作要到一七○○年代之後才出現，當時社會逐漸興起一種文化，看重一個人能不能察覺別人的心思、並且做出回應。
+近期的研究也顯示，各文化對微笑的解讀可能不同。在多數文化裡，微笑和正面情緒連在一起；但在某些文化裡，同一個人只要笑了，就可能被認為比較不聰明。32
+人們笑的次數多寡同樣受文化影響。一個國家如果個人主義色彩濃、人口又少，那裡的人就笑得比較多。在這些地方，個人的需求與權利往往優先於群體。33 研究發現，來自世界各地的新移民笑得比較多。在沒有共同語言的情況下，他們常常靠微笑來和別人相處。對他們來說，微笑是最直接的方式，用來表示自己可靠、值得信任。
+34 正如許多心理學家現在所指出的，這個看似簡單的動作，其實遠比表面上複雜得多。
+← 第33題回到互動練習
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

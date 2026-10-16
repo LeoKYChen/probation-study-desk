@@ -1,0 +1,50 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z108-19/index.html
+Author: staresto-create ZZSH
+Title: 108 年指考克漏字第19題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 108 年指考 ／ 第19題
+108 年指考 克漏字 第19題
+字彙選義線索：跨句答對率 47%
+答對率 47%：當年每 100 位考生，有 47 位答對。
+The submarine cables require extra 19 to install.
+(A)speed
+(B)light
+(C)care
+(D)link
+答案：(C) care
+題目編號：Z108_19（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+require extra care（需要額外的小心／謹慎）表示海底電纜的安裝需要格外謹慎，呼應後文必須避開珊瑚礁、沉船等障礙物；speed／light／link 都不符合此處語意。
+深入解析
+你可能會這樣想
+care 這個字，你的印象大概只有動詞的「在乎、關心」（I don't care.）或 take care of 的「照顧」，很難把它跟鋪設電纜連起來。句子又短，The submarine cables require extra ___ to install. 四個名詞放進去讀起來都成句，於是就變成憑感覺挑。
+怎麼判斷
+先用形態刷一次：link 是可數名詞，extra link 前面少了冠詞、後面也沒有變複數，形態本身就不完整，可以直接排除。剩下三個都能當不可數用，得靠字詞搭配定案：require care 是常見的字詞搭配，意思是「需要小心處理」，extra 再加強一層就是「格外小心」。care 當不可數名詞時正是「小心、謹慎」，掛鉤是紙箱上常看到的 Handle with care.（小心輕放）。往下讀一句就能驗算：They must generally be run across flat surfaces of the ocean floor, and stay clear of coral reefs, sunken ships, fish beds…（必須沿著海床平坦處鋪設，並避開珊瑚礁、沉船、魚群棲息地），整句都在講施工時要多小心。答對率四成七，鑑別度 68 是同篇最高的一題，分的正是有沒有動手往下讀一句去確認，還是停在四個名詞的中文意思上猜。
+誘答選項
+speed（速度）方向相反，下一句列出那一堆要避開的東西，說明的是慢工細活而不是求快。light（光）會讓人聯想到最後一段的 fiber-optic cables（光纖電纜），但那是電纜運作時用光傳訊號，不是安裝時需要光；看到一個剛剛好像看過的選項，那正是要停下來驗算的訊號，不是選它的理由。link（連結）除了形態不完整，語意也繞回自己：電纜本身就是 link，說「安裝需要額外的連結」等於什麼都沒說。
+常考字詞與句型
+require extra care（需要格外小心）、handle with care（小心輕放）、with care（小心地）、take care of（照顧、處理）、install a cable（鋪設電纜）、a fiber-optic cable（光纖電纜）。
+線索範圍說明：care 靠下一句列出的珊瑚礁、沉船等障礙來驗算
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：108學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+When we stream the latest TV series, or download high-resolution photos, we are probably unaware that the data behind them is speeding around the world in cables under the sea.
+These cable systems, faster and cheaper than satellites, carry most of the intercontinental Internet traffic. Today, there are over 420 submarine cables 16 , stretching over 700,000 miles around the world. It is not a new phenomenon, 17 . The first transcontinental cable—laid in 1854—ran from Ireland to Newfoundland, and made telegraph communication possible between England and Canada. Currently, the world's highest-capacity undersea Internet cable is a 5,600-mile link between the US and Japan. 18 named "FASTER," the cable connects Oregon in the US with Japan and Taiwan.
+The submarine cables require extra 19 to install. They must generally be run across flat surfaces of the ocean floor, and stay clear of coral reefs, sunken ships, fish beds, and other general 20 . The fiber-optic cables are also very fragile, so they are surrounded with layers of tubing and steel to prevent damage.
+中譯：當我們線上收看最新影集，或下載高畫質照片時，可能沒有意識到這些資料其實正透過海底電纜快速傳遍全世界。
+這些海底電纜系統比衛星更快、更便宜，承載了絕大多數的洲際網路流量。如今，全世界已有超過 420 條海底電纜正在運作，總長超過 70 萬英里。這其實不是新現象，第一條橫洲電纜早在 1854 年鋪設，連接愛爾蘭與紐芬蘭，讓英國與加拿大之間得以進行電報通訊。目前，世界上容量最大的海底網路電纜是一條連接美國與日本、長達 5,600 英里的電纜，這條被恰如其分地命名為「FASTER」的電纜，將美國奧勒岡州與日本、台灣連接起來。
+海底電纜的鋪設需要格外小心，通常必須沿著海床平坦處鋪設，並避開珊瑚礁、沉船、魚群棲息地及其他各種障礙物。這些光纖電纜也相當脆弱，因此外層會包覆數層管線與鋼材來保護，以防損壞。
+📋 內容大意
+Most traffic between continents travels through cables lying on the ocean floor, not by satellite.
+Over 420 such cables span the globe, and the first was laid in 1854 between Ireland and Newfoundland.
+Laying them is delicate work: routes must avoid reefs and wrecks, and the fibers need steel armor.
+← 第18題回到108 年指考第20題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

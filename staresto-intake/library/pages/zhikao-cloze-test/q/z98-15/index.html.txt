@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z98-15/index.html
+Author: staresto-create ZZSH
+Title: 98 年指考克漏字第15題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 98 年指考 ／ 第15題
+98 年指考 克漏字 第15題
+字彙選義線索：句內答對率 28%
+答對率 28%：當年每 100 位考生，有 28 位答對。
+This kind of practice allows students to learn from mistakes in a safe environment that would not be 15 with textbooks alone.
+(A)exciting
+(B)necessary
+(C)possible
+(D)important
+答案：(C) possible
+題目編號：Z98_15（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+would not be possible with textbooks alone 意為「單靠教科書做不到」：這種在安全環境中從錯誤中學習的練習，光靠教科書無法做到；exciting、necessary、important 都無法與 would not be…with textbooks alone 構成合理語意。
+深入解析
+你可能會這樣想
+這題的難處不在單字，在句子的結構：a safe environment that would not be ___ with textbooks alone，要把 would not be、空格與 with textbooks alone 三個部分合起來讀，才知道整句在說「單靠教科書辦不到」。
+怎麼判斷
+前一句舉例說明，模擬病人可以設定成對某種藥物過敏，學生要是沒有察覺，病人就會出狀況。這種「犯了錯也不會真的害到人」的環境，正是教科書給不了的。所以空格要填 possible——與 would not be 合起來是「不可能存在」。句中的 alone 也是線索：alone 放在名詞後面時是「光靠、只」（Money alone can't buy happiness.），本句 with textbooks alone ＝「單靠教科書」，語氣本身就在暗示「還需要別的東西」。
+誘答選項
+exciting：刺激的，would not be exciting with textbooks alone 只是說「光靠教科書不夠刺激」，與本句講的「犯錯也不會害到人」的安全環境無關。necessary：必要的，代進去變成「光靠教科書時這種安全環境就不必要」，與全段推崇這套系統的語氣相反。important：重要的，同樣會把句子說成「光靠教科書時這種環境不重要」，而全文正要強調它的價值；would not be ___ with textbooks alone 要表達的是「做不到」，不是「不重要」。
+常考字詞與句型
+would not be possible（不可能做到）、make sth possible（使某事成為可能）、if possible（可能的話）、with…alone（單靠…）、learn from mistakes（從錯誤中學習）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：98學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Keele University in the United Kingdom has developed a "virtual patient," created by a computer, to help train the pharmacists of the future. Students in the university's School of 11 work with the "patient" to gain experience in effective communication and decision-making.
+Students talk with the "patient" directly or by typing questions into a computer. The "patient" responds verbally or with gestures to indicate 12 such as pain, stress or anxiety. As a result, students are forced to communicate clearly 13 that the "patient" understands them completely.
+The Virtual Patient can also be used to explore various medical situations. For example, the "patient" can be programmed to be allergic to certain medicine and can 14 serious reactions if student learners are not aware of the situation. This kind of practice allows students to learn from mistakes in a safe environment that would not be 15 with textbooks alone. The unique system can both be used in a classroom setting or for distance learning.
+中譯：英國基爾大學開發了一位由電腦生成的「虛擬病人」，用來協助訓練未來的藥師。該校藥學院的學生會與這位「病人」互動，藉此累積有效溝通與臨床決策的經驗。學生可以直接與「病人」對話，或透過在電腦上輸入問題來互動。這位「病人」會用語言或動作回應，表現出疼痛、壓力或焦慮等各種狀態。因此，學生必須練習清楚地溝通，以便讓「病人」完全理解他們的意思。這套虛擬病人系統也可以用來探索各種醫療情境。舉例來說，這位「病人」可以被設定為對某種藥物過敏，如果學生沒有注意到這一點，就可能引發嚴重的過敏反應。這種訓練方式讓學生能在安全的環境中從錯誤中學習，這是單靠教科書無法提供的。這套獨特的系統既能用於課堂教學，也能用於遠距教學。
+📋 內容大意
+A British university has built a computer-created virtual patient to train future pharmacists.
+Students speak to it or type questions, and it replies in words or gestures showing pain or stress.
+Programmed for allergies and other risks, it lets students learn from mistakes safely, in class or at a distance.
+← 第14題回到98 年指考第16題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

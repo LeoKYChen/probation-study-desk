@@ -1,0 +1,1006 @@
+[
+ {
+  "id": "g115r",
+  "year": "115參",
+  "session": "115參",
+  "exam": "學測",
+  "examType": "參考試卷",
+  "title": "雲霄飛車是怎麼設計的（Designing a Roller Coaster）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "C"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "points": 8,
+  "pointsPerItem": 2,
+  "options": {
+   "A": "Designers must then consider the space available for the coaster.",
+   "B": "Building an exciting roller coaster starts with a brilliant design.",
+   "C": "Theme and type are also important aspects to consider in coaster design.",
+   "D": "Designers can draw on a number of techniques to provide a memorable ride.",
+   "E": "When the design is complete, detailed calculation and careful testing procedures will follow."
+  },
+  "optionsZh": {
+   "B": "要造出一台刺激的雲霄飛車，得從一份出色的設計開始。",
+   "A": "設計者接著必須考慮這台車可用的空間。",
+   "D": "設計者可以運用多種技法，做出令人難忘的乘坐體驗。",
+   "E": "設計完成之後，接著是詳細的計算與仔細的測試程序。",
+   "C": "主題與類型也是雲霄飛車設計時要考慮的重要面向。"
+  },
+  "unusedExplanation": {
+   "opt": "C",
+   "lead": "C 這一句**沒有任何毛病**。它談的是設計考量，和全篇完全同一件事；`also` 的用法也對——這篇確實一項一項在數設計考量。放進第 32 格或第 33 格，念起來都很順。\n\n問題只有一個：**沒有任何一段的內容在等它。**",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "設計者、first——要一句宣布「開始講設計」",
+     "why": "C 的 `also` 表示前面已經列過，但一項都還沒列"
+    },
+    {
+     "blank": 32,
+     "want": "占地面、占空中、避開障礙物",
+     "why": "整段沒有主題或類型"
+    },
+    {
+     "blank": 33,
+     "want": "最陡的落差、double dips、slammers、gully coaster",
+     "why": "全是軌道做法，不是主題或類型"
+    },
+    {
+     "blank": 34,
+     "want": "安全確認之後才能造車",
+     "why": "這一格要的是設計之後，C 還在設計之中"
+    }
+   ],
+   "summary": "**這一篇的多餘選項和 115 學測那一篇做法不一樣。** 115 學測多出來的 D 是切面不對（全篇問「什麼影響微笑」，D 答「微笑分幾種」），一眼看得出不同類；這一篇的 C 切面完全正確，看起來甚至比某些正解更像正解。",
+   "extra": [
+    "所以判斷多餘選項，**不能靠「哪一個看起來最不像」**。要反過來做：把四個空格前後在等什麼各寫一句，四格都配對完，剩下的那個自然就是多的。"
+   ],
+   "takeaway": "5 選 4 不要先挑「多的那一個」。先一格一格問「這一格前後在等什麼」，填滿四格，剩下的就是多的。順序反過來就會被騙。"
+  },
+  "paraLabels": [
+   "引言：從乘坐感受轉入全文主題——設計",
+   "設計考量一：這台車是給誰坐的",
+   "設計考量二：地面與空中可用的空間",
+   "設計考量三：做出獨一無二的手感",
+   "結尾：算過、測過，設計才能動工"
+  ],
+  "marks": [
+   [
+    0,
+    "__31__",
+    "gradient"
+   ],
+   [
+    1,
+    "The designers must first consider what kind of riders will use the coaster.",
+    "topic"
+   ],
+   [
+    2,
+    "__32__",
+    "topic"
+   ],
+   [
+    3,
+    "The next objective for the designers is to achieve a unique “feel” for the coaster.",
+    "topic"
+   ],
+   [
+    4,
+    "__34__",
+    "topic"
+   ],
+   [
+    1,
+    "first",
+    "trans"
+   ],
+   [
+    "A",
+    "then",
+    "trans"
+   ],
+   [
+    3,
+    "next",
+    "trans"
+   ],
+   [
+    "E",
+    "When",
+    "trans"
+   ],
+   [
+    4,
+    "Only after",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Roller coasters have been known for their agonizingly slow starts, near heart-stopping drops and scream-inducing turns and loops. __31__",
+   "The designers must first consider what kind of riders will use the coaster. If the coaster is designed for small children, the hills and curves will be gentle, and the car speed will be relatively slow. Families usually want a somewhat faster ride with plenty of turns and moderate force. Ultimate thrill seekers want extreme heights and speed.",
+   "__32__ Roller coasters usually take up a lot of room not only on the ground but also in the air. Designers must take into consideration surrounding rides, power lines, and other obstacles. Some amusement parks have added so many rides that a new roller coaster has to be designed to make its way through existing rides and walkways.",
+   "The next objective for the designers is to achieve a unique “feel” for the coaster. __33__ Once up the incline, the first drop is usually designed to be the steepest, and therefore the fastest and scariest. Other drops can be designed with a brief flattened section in the middle, and are called double dips. Drops with very abrupt transitions to a flat or upturned section are called slammers because they slam the passengers down into their seats. Letting the cars run close to the ground, in what is called a gully coaster, gives the illusion of increased speed.",
+   "__34__ Only after its safety is assured can the design be used to build a new roller coaster."
+  ],
+  "zhTranslation": [
+   "雲霄飛車向來以幾件事出名：起步慢得讓人難熬、俯衝幾乎讓人心跳停止、轉彎和翻圈讓人忍不住尖叫。__31__",
+   "設計者必須先考慮這台車會有哪一種乘客。如果是為小朋友設計的，坡度和彎道都會比較平緩，車速也相對慢。全家一起搭的，通常會想要快一點、彎道多一點、力道適中的體驗。至於一心追求刺激的人，要的是極端的高度與速度。",
+   "__32__ 雲霄飛車占掉的空間通常很大，不只是地面，連上方的空間也是。設計者必須把周邊的遊樂設施、電線和其他障礙物都算進去。有些遊樂園加蓋的設施太多，新的雲霄飛車只好設計成從既有的設施和步道之間穿過去。",
+   "設計者的下一個目標，是讓這台車有獨特的「感覺」。__33__ 車子爬上斜坡之後，第一段俯衝通常會設計成最陡的一段，也因此最快、最嚇人。其他的俯衝可以在中間設計一小段平緩處，這種叫做 double dips（dip 是「往下沉一下」，double dip 就是一連沉兩次）。俯衝之後突然轉成平段或上揚段的叫做 slammers（slam 就是「用力摔、用力壓」），因為它們會把乘客狠狠壓進座位裡。讓車子貼近地面跑，也就是所謂的 gully coaster（gully 是地面的凹溝，等於讓車子在溝裡跑），會製造出速度變快的錯覺。",
+   "__34__ 要等到安全性獲得確認之後，這份設計才能用來造出一台新的雲霄飛車。"
+  ],
+  "reading": [],
+  "flagNote": null,
+  "sourcePdf": "https://www.ceec.edu.tw/files/file_pool/1/0O211576602559573811/02_02_學測英文考科115起適用參考試卷.pdf",
+  "answerPdf": "https://www.ceec.edu.tw/files/file_pool/1/0O211577274372290893/02_03_學測英文考科115起適用參考試卷參考答案及評分原則.pdf",
+  "answerSource": "官方參考答案及評分原則 PDF（31 B／32 A／33 D／34 E）",
+  "verified": "試卷正文＋官方答案兩邊交叉核對一致",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 18,
+   "選項字數區間": "10-13",
+   "選項字數全距": 3,
+   "選項長度變異係數": "11.7%"
+  }
+ },
+ {
+  "id": "g115",
+  "year": "115年",
+  "session": "115學測",
+  "exam": "學測",
+  "examType": "正式考試",
+  "title": "微笑背後的因素（What Shapes a Smile）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "D"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "points": 8,
+  "pointsPerItem": 2,
+  "options": {
+   "A": "Another crucial factor is a society's immigration diversity.",
+   "B": "Various factors have thus contributed to the phenomenon of smiling.",
+   "C": "For most of recorded human history, the open smile has been deeply unfashionable.",
+   "D": "A genuine smile indicates contentment, while a forced smile suggests underlying distress.",
+   "E": "In fact, there is a well-known Russian proverb that goes, \"Smiling with no reason is a sign of stupidity.\""
+  },
+  "optionsZh": {
+   "C": "在有文字記載的歷史裡，絕大多數時間，露齒而笑都很不受青睞。",
+   "E": "事實上，俄羅斯有一句廣為人知的諺語：「無緣無故地笑是愚蠢的表現。」",
+   "A": "另一個關鍵因素是一個社會的移民多樣性。",
+   "B": "因此，種種因素共同造就了微笑這個現象。",
+   "D": "真心的笑代表滿足，強擠出來的笑則透露內心的不安。"
+  },
+  "unusedExplanation": {
+   "opt": "D",
+   "lead": "D 讀起來完全通順，主題也對——它就是在講微笑。但四個空格都放不下：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "一句「過去的人不笑」，好讓後面的肖像畫當例子",
+     "why": "D 沒有時代，也沒有「不笑」"
+    },
+    {
+     "blank": 32,
+     "want": "一個佐證，說明某些文化把笑看成不聰明",
+     "why": "D 分的是真笑假笑，不是文化差異"
+    },
+    {
+     "blank": 33,
+     "want": "宣布第二個因素，帶出新住民",
+     "why": "D 不是因素，也沒有移民"
+    },
+    {
+     "blank": 34,
+     "want": "歸納三段的總結",
+     "why": "D 只講一件事，收不了三段"
+    }
+   ],
+   "summary": "看出共同點了嗎？**全篇問的是「什麼東西影響了微笑」，D 答的是「微笑分成哪兩種」。**這一年多出來的選項不是隨便湊的，它和正解同一個主題、卻是不同的切面。",
+   "extra": [],
+   "takeaway": "5 選 4 一定會多一個。先看清楚整篇在問什麼，切面不對的那一個就是多出來的。四格填完不要因為「還剩一個」就回頭懷疑自己。"
+  },
+  "paraLabels": [
+   "破題：先立常識，再用提問打開全文",
+   "面向一：時代——微笑不是一直都受歡迎",
+   "面向二：文化——同樣的笑，解讀不同",
+   "面向三：社會組成——個人主義與移民多樣性",
+   "結尾：總結各項因素，回應開頭的提問"
+  ],
+  "marks": [
+   [
+    1,
+    "__31__",
+    "topic"
+   ],
+   [
+    2,
+    "Recent studies also show that interpretations of smiling may vary from culture to culture.",
+    "topic"
+   ],
+   [
+    3,
+    "The amount people smile is culturally influenced as well.",
+    "topic"
+   ],
+   [
+    4,
+    "__34__",
+    "gradient"
+   ],
+   [
+    0,
+    "But",
+    "trans"
+   ],
+   [
+    1,
+    "for example",
+    "trans"
+   ],
+   [
+    1,
+    "More importantly",
+    "trans"
+   ],
+   [
+    2,
+    "While",
+    "trans"
+   ],
+   [
+    "E",
+    "In fact",
+    "trans"
+   ],
+   [
+    "A",
+    "Another",
+    "trans"
+   ],
+   [
+    "B",
+    "thus",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Smiling is a gesture that many people engage in dozens of times a day without thought. Most people believe that smiling is an expression of good feelings, a simple way to show happiness and friendliness. But does this hold true across time and cultures?",
+   "__31__ In the West, for example, portraits of men and women before the 1700s typically depicted them with a serious, unsmiling expression. The absence of smiles stemmed partly from the attempt to hide their decayed teeth caused by poor dental hygiene. More importantly, smiling and laughter had long been perceived in the society as manifestations of a lack of self-control and good manners. Paintings with white-toothed smiles emerged after the 1700s, with the gradual rise of a culture that valued perception and responsiveness.",
+   "Recent studies also show that interpretations of smiling may vary from culture to culture. While in most cultures smiling is associated with positive emotions, in certain cultures the same person can be judged as less intelligent when smiling. __32__",
+   "The amount people smile is culturally influenced as well. People smile more when they are from countries that are high in individualism and low in population. These are often places where the needs and rights of the individual take precedence over those of the group. __33__ Newcomers from different parts of the world are found to smile more. Without a shared language, they often resort to smiling to get along with others. For them, smiling is a straightforward way to indicate that one is reliable and trustworthy.",
+   "__34__ As many psychologists now point out, this simple gesture is in fact far more complicated than it may appear."
+  ],
+  "zhTranslation": [
+   "微笑是許多人一天做上幾十次、卻從來不會多想的一個動作。多數人相信微笑是好心情的表現，是表達快樂與友善最簡單的方式。但這件事在不同的時代、不同的文化裡都成立嗎？",
+   "__31__ 以西方為例，一七○○年代以前的男女肖像畫，畫中人物通常表情嚴肅、不帶笑容。畫裡沒有笑容，一部分是為了遮掩因口腔衛生不良而蛀壞的牙齒。更重要的是，在當時的社會裡，微笑與大笑長久以來都被看成缺乏自制與教養的表現。露出白牙微笑的畫作要到一七○○年代之後才出現，當時社會逐漸興起一種文化，看重一個人能不能察覺別人的心思、並且做出回應。",
+   "近期的研究也顯示，各文化對微笑的解讀可能不同。在多數文化裡，微笑和正面情緒連在一起；但在某些文化裡，同一個人只要笑了，就可能被認為比較不聰明。__32__",
+   "人們笑的次數多寡同樣受文化影響。一個國家如果個人主義色彩濃、人口又少，那裡的人就笑得比較多。在這些地方，個人的需求與權利往往優先於群體。__33__ 研究發現，來自世界各地的新移民笑得比較多。在沒有共同語言的情況下，他們常常靠微笑來和別人相處。對他們來說，微笑是最直接的方式，用來表示自己可靠、值得信任。",
+   "__34__ 正如許多心理學家現在所指出的，這個看似簡單的動作，其實遠比表面上複雜得多。"
+  ],
+  "reading": [],
+  "flagNote": null,
+  "sourcePdf": "https://www.ceec.edu.tw/files/file_pool/1/0q054532302653501476/02-115學測英文試卷.pdf",
+  "answerPdf": "https://www.ceec.edu.tw/files/file_pool/1/0Q019605937183041652/02-115學測英文參考答案.pdf",
+  "answerSource": "官方選擇題參考答案 PDF（31 C／32 E／33 A／34 B）",
+  "verified": "試卷正文＋官方答案兩邊交叉核對一致",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 20,
+   "選項字數區間": "8-19",
+   "選項字數全距": 11,
+   "選項長度變異係數": "30.0%"
+  }
+ },
+ {
+  "id": "g114",
+  "year": "114年",
+  "session": "114學測",
+  "exam": "學測",
+  "examType": "正式考試",
+  "title": "膠囊旅館（Capsule Hotels）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 4,
+  "spec": "4選4",
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   34
+  ],
+  "points": 8,
+  "pointsPerItem": 2,
+  "options": {
+   "A": "In response to rising demands, these hotels are embracing a wave of innovation.",
+   "B": "The room’s thin plastic walls easily transmit the sound of snoring made by neighboring guests.",
+   "C": "The chambers are stacked side-by-side, two units high, with the upper rooms reached by a ladder.",
+   "D": "Today, they provide low-budget, overnight lodging in commerce centers in large cities worldwide."
+  },
+  "optionsZh": {
+   "D": "如今這類旅館在全球大城市的商業中心提供平價的過夜住宿。",
+   "C": "這些艙間並排堆疊，上下兩層，上層要爬梯子上去。",
+   "A": "為因應日益增加的需求，這類旅館正迎向一波創新。",
+   "B": "房間的塑膠薄牆很容易傳來隔壁客人的打呼聲。"
+  },
+  "paraLabels": [
+   "定義與起源：從商務用途到全球普及",
+   "硬體規格：一張單人床大小的房間長什麼樣",
+   "發展歷程：從擴散各國到迎向創新",
+   "轉折：列出缺點，提醒不是人人適合"
+  ],
+  "marks": [
+   [
+    0,
+    "A capsule hotel, also known as a pod hotel, is a unique type of basic, affordable accommodation.",
+    "gradient"
+   ],
+   [
+    1,
+    "A typical room of a capsule hotel is roughly the length and width of a single bed, with sufficient height for a guest to crawl in and sit up on the bed.",
+    "topic"
+   ],
+   [
+    3,
+    "While offering budget-conscious travelers a unique option, capsule hotels may not be suitable for everyone.",
+    "topic"
+   ],
+   [
+    "D",
+    "Today",
+    "trans"
+   ],
+   [
+    1,
+    "but",
+    "trans"
+   ],
+   [
+    2,
+    "Since then",
+    "trans"
+   ],
+   [
+    2,
+    "Instead of",
+    "trans"
+   ],
+   [
+    3,
+    "While",
+    "trans"
+   ],
+   [
+    3,
+    "Also",
+    "trans"
+   ],
+   [
+    0,
+    "initially",
+    "trans"
+   ],
+   [
+    "A",
+    "In response to",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "A capsule hotel, also known as a pod hotel, is a unique type of basic, affordable accommodation. Originated in Japan, these hotels were initially meant for business professionals to stay close to populated business districts without spending a lot. __31__",
+   "A typical room of a capsule hotel is roughly the length and width of a single bed, with sufficient height for a guest to crawl in and sit up on the bed. The walls of each capsule may be made of wood, metal or any rigid material, but are often fiberglass or plastic. __32__ Each capsule is equipped with a comfortable mattress, a small light, and sometimes a television or other entertainment options. Such minimalist design is what makes these hotels both inexpensive and efficient, providing only the essential elements for a good night sleep.",
+   "The first capsule hotel, the Capsule Inn Osaka, opened in 1979. Since then, capsule hotels have quickly spread to other cities and countries. Chains have emerged in Taiwan, Singapore, and even on resort islands like Bali. Pod hotels are also seen in Europe and North America, especially in big cities like New York, London, and Paris. __33__ Instead of the traditional bare pod-sized style, new chains now feature interior design that appeals to digitally connected travelers from around the world. Guests may enjoy facilities such as free Wi-Fi, mobile charging, and even a soundless alarm system that raises the sleeping guests into a seated position while gradually brightening the lights.",
+   "While offering budget-conscious travelers a unique option, capsule hotels may not be suitable for everyone. Some hotels may not provide air conditioning in the capsules, leading to poor air flow. __34__ Also, you may have to share common facilities (such as bathrooms) with other guests. And, if you’re worried about feeling claustrophobic in small spaces, you’d better think twice before making a reservation."
+  ],
+  "zhTranslation": [
+   "膠囊旅館又稱為艙式旅館，是一種很特別的簡便平價住宿。這類旅館源自日本，最初是為了讓商務人士能住在人潮密集的商業區附近，又不必花太多錢。__31__",
+   "膠囊旅館典型的房間，長寬大約就是一張單人床的尺寸，高度則剛好夠客人爬進去、在床上坐直。每個艙間的牆面可以是木頭、金屬或任何堅硬的材質，但常見的是玻璃纖維或塑膠。__32__ 每個艙間都配有舒適的床墊、一盞小燈，有時還有電視或其他娛樂設備。正是這種極簡的設計，讓這類旅館既便宜又有效率，只提供一夜好眠所需的基本要素。",
+   "第一家膠囊旅館「大阪膠囊旅館」於一九七九年開幕。從那時起，膠囊旅館很快擴散到其他城市與國家。台灣、新加坡都出現了連鎖品牌，連峇里島這樣的度假島嶼也有。艙式旅館在歐洲和北美也看得到，尤其是紐約、倫敦、巴黎這些大城市。__33__ 新的連鎖品牌不再走傳統那種空蕩蕩、只有一個艙位大小的路線，而是主打室內設計，要吸引世界各地隨時連著網路的旅客。房客可以享有免費無線網路、手機充電，甚至還有無聲的鬧鐘系統——它會把還在睡的客人緩緩升成坐姿，同時把燈光逐漸調亮。",
+   "膠囊旅館雖然為精打細算的旅客提供了一個特別的選擇，卻不見得適合每個人。有些旅館的艙間裡沒有空調，空氣流通不佳。__34__ 另外，你可能得和其他房客共用公共設施（例如浴室）。還有，如果你擔心自己在狹小空間裡會有幽閉恐懼的感覺，訂房之前最好再想一想。"
+  ],
+  "reading": [],
+  "flagNote": null,
+  "sourcePdf": "https://www.ceec.edu.tw/files/file_pool/1/0p056425554473267580/02-114學測英文試題.pdf",
+  "answerPdf": "https://www.ceec.edu.tw/files/file_pool/1/0P020599726139811147/114學測英文參考答案.pdf",
+  "answerSource": "官方選擇題參考答案 PDF（31 D／32 C／33 A／34 B）",
+  "verified": "試卷正文＋官方答案兩邊交叉核對一致",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 20,
+   "選項字數區間": "13-16",
+   "選項字數全距": 3,
+   "選項長度變異係數": "9.1%"
+  }
+ },
+ {
+  "id": "g113",
+  "year": "113年",
+  "session": "113學測",
+  "exam": "學測",
+  "examType": "正式考試",
+  "title": "受傷之後還能不能運動（Exercising with Sports Injuries）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 4,
+  "spec": "4選4",
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   34
+  ],
+  "points": 8,
+  "pointsPerItem": 2,
+  "options": {
+   "A": "For example, an injured runner might end up cycling and swimming instead of running.",
+   "B": "Over time, researchers have come to realize the importance of exercising when injured.",
+   "C": "Many suggest that most patients can continue with the sport they love.",
+   "D": "This seems to run counter to the common practice."
+  },
+  "optionsZh": {
+   "D": "這似乎和一般的做法相反。",
+   "C": "許多醫師認為，大多數病人可以繼續從事自己喜愛的運動。",
+   "A": "例如，受傷的跑者可能改成騎車和游泳，不再跑步。",
+   "B": "久而久之，研究者逐漸體認到受傷時運動的重要性。"
+  },
+  "paraLabels": [
+   "開場：用一則親身故事引入",
+   "對比：把故事拉到與常規做法的衝突",
+   "分歧與共識：各專家做法不同，但底線一致",
+   "結尾：從個案回到研究趨勢與注意事項"
+  ],
+  "marks": [
+   [
+    1,
+    "__31__",
+    "topic"
+   ],
+   [
+    2,
+    "Dr. Weinstein is not alone in his treatment of sports injury, but the specific advice can differ from specialist to specialist.",
+    "topic"
+   ],
+   [
+    3,
+    "__34__",
+    "gradient"
+   ],
+   [
+    0,
+    "So",
+    "trans"
+   ],
+   [
+    1,
+    "But",
+    "trans"
+   ],
+   [
+    1,
+    "In fact",
+    "trans"
+   ],
+   [
+    2,
+    "but",
+    "trans",
+    "injury, ",
+    " the specific"
+   ],
+   [
+    2,
+    "nevertheless",
+    "trans"
+   ],
+   [
+    "A",
+    "For example",
+    "trans"
+   ],
+   [
+    2,
+    "however",
+    "trans"
+   ],
+   [
+    3,
+    "Thus",
+    "trans"
+   ],
+   [
+    3,
+    "however",
+    "trans"
+   ],
+   [
+    2,
+    "Others",
+    "trans"
+   ],
+   [
+    2,
+    "Still others",
+    "trans"
+   ],
+   [
+    2,
+    "that is",
+    "trans"
+   ],
+   [
+    3,
+    "despite",
+    "trans"
+   ],
+   [
+    "B",
+    "Over time",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "While Dr. Weinstein, a surgeon at Dartmouth College, was trying to lift a heavy box, he twisted his back. The pain was agonizing. The surgeon could not sit, and when he lay down he could barely get up. So he decided to go out for a run. He took an aspirin, iced the injured area, and off he went. When he returned, he felt “pretty good.”",
+   "__31__ When people have sprained a muscle or tendon, they are usually advised not to go right back to exercising until the pain goes away. But Dr. Weinstein says that approach is outdated and counterproductive. In fact, when active people consult him, he usually tells them to just keep exercising.",
+   "Dr. Weinstein is not alone in his treatment of sports injury, but the specific advice can differ from specialist to specialist. __32__ They nevertheless caution that a cutback may be necessary, such as running shorter distances or going more slowly. Others say the patients may need to engage in sports outside of their usual, main sport (that is, to cross-train), at least some of the time. Still others say the safest thing to do is cross-train all the time until the pain is gone. __33__ Their consensus, however, is that unless the injury involves something as serious as a broken bone or a ripped muscle, moderate exercise can actually speed healing.",
+   "__34__ Thus, more and more patients are now advised to keep moving despite the pain. The rule of thumb, however, is to see a doctor first and get an accurate diagnosis. If a serious injury is ruled out and the pain is not getting worse after exercising, then the exercise “makes a lot of sense.”"
+  ],
+  "zhTranslation": [
+   "達特茅斯學院的外科醫師溫斯坦，在搬一個重箱子的時候扭傷了背。那個痛非常難受。他坐不下來，躺下去之後又幾乎爬不起來。於是他決定出門去跑步。他吃了一顆阿斯匹靈，在受傷的地方冰敷，然後就出發了。回來之後，他覺得「還滿不錯的」。",
+   "__31__ 一般人拉傷肌肉或肌腱之後，通常會被勸告先別馬上恢復運動，要等到不痛了再說。但溫斯坦醫師表示，那套做法已經過時，而且效果適得其反。事實上，有運動習慣的人來找他，他通常會叫他們繼續運動就好。",
+   "在運動傷害的處理上，抱持這種看法的不只溫斯坦醫師一人，不過各個專科醫師給的建議並不完全一樣。__32__ 但他們仍提醒，減量可能是必要的，例如把距離縮短、或是跑慢一點。另一些醫師則說，病人至少有一部分時間需要從事自己主要運動以外的項目，也就是交叉訓練。還有一些醫師認為，最安全的做法是全程改做交叉訓練，直到不痛為止。__33__ 不過他們的共識是：只要傷勢沒有嚴重到骨折或肌肉撕裂的程度，適度運動其實能加快復原。",
+   "__34__ 因此，現在越來越多病人被建議即使會痛也要繼續活動。不過大原則是：先看醫師，取得正確的診斷。如果排除了嚴重傷害，而且運動之後疼痛沒有加劇，那麼運動就「很有道理」。"
+  ],
+  "reading": [],
+  "flagNote": null,
+  "sourcePdf": "https://www.ceec.edu.tw/files/file_pool/1/0o051427482769341323/02-113學測英文科定稿.pdf",
+  "answerPdf": "https://www.ceec.edu.tw/files/file_pool/1/0O023491996471637771/02-113學測英文參考答案.pdf",
+  "answerSource": "官方選擇題參考答案 PDF（31 D／32 C／33 A／34 B）",
+  "verified": "試卷正文＋官方答案兩邊交叉核對一致",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 21,
+   "選項字數區間": "9-14",
+   "選項字數全距": 5,
+   "選項長度變異係數": "15.6%"
+  }
+ },
+ {
+  "id": "g112",
+  "year": "112年",
+  "session": "112學測",
+  "exam": "學測",
+  "examType": "正式考試",
+  "title": "聯覺：聽見聲音的顏色（Synesthesia）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 4,
+  "spec": "4選4",
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   34
+  ],
+  "points": 8,
+  "pointsPerItem": 2,
+  "options": {
+   "A": "This consistency serves as a proof that synesthesia is real.",
+   "B": "Meanwhile, environmental influences seem to shape a person’s synesthesia.",
+   "C": "People with synesthesia used to be accused of making their experiences up.",
+   "D": "Some studies even show that people may all be synesthetic to some degree."
+  },
+  "optionsZh": {
+   "C": "有聯覺的人過去常被指責是自己編造這些經驗。",
+   "A": "這種一致性可作為聯覺確實存在的證據。",
+   "B": "另一方面，環境的影響似乎也會形塑一個人的聯覺。",
+   "D": "有些研究甚至顯示，所有人可能都或多或少有聯覺。"
+  },
+  "paraLabels": [
+   "破題：用連續設問把讀者帶進題目",
+   "定義：說明什麼是聯覺",
+   "真實性：從被質疑到取得證據",
+   "成因：先天基因與後天環境並存",
+   "普遍性：從罕見到人人可能都有"
+  ],
+  "marks": [
+   [
+    1,
+    "Synesthesia is a condition in which people’s senses intermix.",
+    "gradient"
+   ],
+   [
+    2,
+    "__32__",
+    "topic"
+   ],
+   [
+    4,
+    "Once thought to be extremely rare, synesthesia is now found to affect about one to four percent of the population.",
+    "topic"
+   ],
+   [
+    2,
+    "however",
+    "trans",
+    "1990s, ",
+    ""
+   ],
+   [
+    2,
+    "however",
+    "trans",
+    "support, ",
+    ""
+   ],
+   [
+    3,
+    "because",
+    "trans"
+   ],
+   [
+    3,
+    "But",
+    "trans"
+   ],
+   [
+    "B",
+    "Meanwhile",
+    "trans"
+   ],
+   [
+    3,
+    "For example",
+    "trans"
+   ],
+   [
+    3,
+    "Also",
+    "trans"
+   ],
+   [
+    4,
+    "while",
+    "trans"
+   ],
+   [
+    2,
+    "even if",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Have you ever thought of “coloring” the names of the days of the week? When you listen to someone speaking, do you see a rainbow of colors? Or perhaps Mozart’s music tastes like an apple pie to you? If so, it is very likely that you have synesthesia.",
+   "Synesthesia is a condition in which people’s senses intermix. In some cases, people with synesthesia may experience colors when they hear, read, or even think of letters and numbers. In others, words can trigger a real sensation of taste on their tongue.",
+   "__31__ In the early 1990s, however, scientists noticed that synesthetic colors do not change over time. When asked what color is evoked by a letter or number, synesthetic people would persistently give the same answer even if tested months or years apart. __32__ The most compelling support, however, comes from brain scans, which show that color processing areas in the brain light up when these people listen to certain words.",
+   "Is synesthesia genetically inherited or acquired after birth? Scientists agree that synesthesia has a genetic basis, because it frequently runs in families. But an actual synesthesia gene (or genes) has not been identified yet. __33__ For example, the flavors people with taste-word synesthesia experience are usually childhood flavors, such as chocolate or strawberries. Also, people with color-music synesthesia more often than not have had early musical training.",
+   "Once thought to be extremely rare, synesthesia is now found to affect about one to four percent of the population. __34__ As is often observed, most of us tend to associate lower notes with darker colors and higher notes with brighter colors. Researchers further point out that in most people synesthesia is active only during the first months of their infancy, while this ability remains forever in certain individuals."
+  ],
+  "zhTranslation": [
+   "你有沒有想過要幫星期一到星期日「上色」？聽別人說話的時候，你會看見一片彩虹般的顏色嗎？或者，莫札特的音樂嘗起來像蘋果派？如果是這樣，你很可能有聯覺。",
+   "聯覺是一種感官彼此交混的狀況。有些人有聯覺，在聽到、讀到、甚至只是想到字母和數字的時候，會經驗到顏色。另一些人則是文字會在舌頭上引發真實的味覺。",
+   "__31__ 不過在一九九○年代初期，科學家注意到聯覺產生的顏色不會隨時間改變。問他們某個字母或數字會引發什麼顏色，即使兩次測驗相隔數月甚至數年，有聯覺的人始終給出同樣的答案。__32__ 不過最有力的支持來自腦部掃描：這些人聽到某些字詞時，腦中負責處理顏色的區域會亮起來。",
+   "聯覺是遺傳來的，還是出生之後才有的？科學家同意聯覺有遺傳基礎，因為它常常在同一個家族裡出現。但真正的聯覺基因（或多個基因）目前還沒有找到。__33__ 舉例來說，有「味覺—文字」聯覺的人嘗到的味道，通常是童年的味道，像巧克力或草莓。另外，有「顏色—音樂」聯覺的人，多半很小的時候就受過音樂訓練。",
+   "聯覺一度被認為極為罕見，現在則發現大約百分之一到百分之四的人口有這種現象。__34__ 常見的觀察是，我們多數人都傾向把較低的音和較暗的顏色連在一起，把較高的音和較亮的顏色連在一起。研究者進一步指出，多數人的聯覺只在嬰兒期的頭幾個月活躍，某些人身上這個能力則會一直保留下來。"
+  ],
+  "reading": [],
+  "flagNote": null,
+  "sourcePdf": "https://www.ceec.edu.tw/files/file_pool/1/0n045359274947649605/02-112學測英文試卷.pdf",
+  "answerPdf": "https://www.ceec.edu.tw/files/file_pool/1/0N015546416633213720/02-112學測英文參考答案.pdf",
+  "answerSource": "官方選擇題參考答案 PDF（31 C／32 A／33 B／34 D）",
+  "verified": "試卷正文＋官方答案兩邊交叉核對一致",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 22,
+   "選項字數區間": "9-13",
+   "選項字數全距": 4,
+   "選項長度變異係數": "14.4%"
+  }
+ },
+ {
+  "id": "g111r",
+  "year": "111參",
+  "session": "111參",
+  "exam": "學測",
+  "examType": "參考試卷",
+  "title": "哥白尼與他的禁書（Copernicus and His Banned Book）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 4,
+  "spec": "4選4",
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   34
+  ],
+  "points": 8,
+  "pointsPerItem": 2,
+  "options": {
+   "A": "The book, however, wasn’t published until two months before his death.",
+   "B": "If this act was an attempt to seek the Catholic Church’s approval, it was of no use.",
+   "C": "This went against the philosophical and religious beliefs held during medieval times.",
+   "D": "In his spare time, Copernicus studied the stars and the planets, applying his math knowledge to the mysteries of the night sky."
+  },
+  "optionsZh": {
+   "D": "哥白尼利用閒暇時間研究恆星與行星，把他的數學知識用在夜空的種種謎團上。",
+   "A": "不過這本書直到他過世前兩個月才出版。",
+   "C": "這牴觸了中世紀所抱持的哲學與宗教信念。",
+   "B": "如果這個舉動是想爭取天主教會的認可，那並沒有用。"
+  },
+  "paraLabels": [
+   "生平：出身、求學與任職",
+   "研究：業餘觀測與著作完成",
+   "衝突：新學說如何牴觸當時的宇宙觀與信仰",
+   "結局：求認可失敗，著作遭禁"
+  ],
+  "marks": [
+   [
+    1,
+    "__31__",
+    "topic"
+   ],
+   [
+    2,
+    "__33__",
+    "topic"
+   ],
+   [
+    3,
+    "Ironically, Copernicus had dedicated his work to Pope Paul III.",
+    "topic"
+   ],
+   [
+    "A",
+    "however",
+    "trans"
+   ],
+   [
+    3,
+    "Ironically",
+    "trans"
+   ],
+   [
+    1,
+    "as",
+    "trans",
+    "so to speak, ",
+    " a hundred"
+   ]
+  ],
+  "paras": [
+   "Copernicus, founder of modern astronomy, was born in 1473 to a well-to-do merchant family in Torun, Poland. He was sent off to attend university in Italy, studying mathematics and optics, and canon law. Returning from his studies abroad, Copernicus was appointed to an administrative position in the cathedral of Frauenburg. There he spent a sheltered and academic life for the rest of his days.",
+   "__31__ He made his observations from a tower situated on the protective wall around the cathedral. His observations were made with the “bare eyeball,” so to speak, as a hundred years were to pass before the invention of the telescope. In 1530, Copernicus completed his famous work De Revolutionibus, which later played a major role in changing the philosophical view of humankind’s place in the universe. __32__",
+   "Copernicus died in 1543 and was never to know what a stir his work would cause. In his book, he asserted that the Earth rotated on its axis once daily and traveled around the Sun once yearly. __33__ People then regarded the Earth as stationary, situated at the center of the universe, with the Sun and all the planets revolving around it. Copernicus’ theory challenged the long-held belief that God created the Heavens and the Earth, and could overturn the core values of the Catholic world. Religious leader Martin Luther voiced his opposition to the sun-centered system model. Other ministers quickly followed suit, saying of Copernicus, “This fool wants to turn the whole art of astronomy upside down.”",
+   "Ironically, Copernicus had dedicated his work to Pope Paul III. __34__ The Church ultimately banned De Revolutionibus, and the book remained on the list of forbidden reading material for nearly three centuries thereafter."
+  ],
+  "zhTranslation": [
+   "現代天文學的奠基者哥白尼，一四七三年出生於波蘭托倫一個家境富裕的商人家庭。他被送到義大利念大學，修習數學、光學和教會法（教會內部的法律）。結束國外的學業回來之後，哥白尼被派到弗勞恩堡的大教堂擔任行政職務。此後他就在那裡度過受到庇護、與學術為伍的餘生。",
+   "__31__ 他的觀測是在大教堂外牆上的一座塔樓進行的。可以說，他是用「肉眼」看的，因為望遠鏡要再過一百年才發明出來。一五三○年，哥白尼完成了他著名的《天體運行論》，這本書後來在改變人類看待自身在宇宙中位置的哲學觀上，扮演了重要的角色。__32__",
+   "哥白尼於一五四三年過世，始終不知道他的著作會掀起多大的波瀾。他在書中主張，地球每天繞著地軸自轉一圈，每年繞太陽公轉一圈。__33__ 當時的人認為地球是靜止的，位在宇宙的中心，太陽和所有行星都繞著它轉。哥白尼的理論挑戰了長久以來「上帝創造天地」的信念，也可能顛覆天主教世界的核心價值。宗教領袖馬丁路德公開反對這套以太陽為中心的模型。其他教士很快跟進，說哥白尼「這個蠢材想把整個天文學徹底翻過來」。",
+   "諷刺的是，哥白尼把這部著作獻給了教宗保祿三世。__34__ 教會最終查禁了《天體運行論》，此後將近三個世紀，這本書一直留在禁書名單上。"
+  ],
+  "reading": [],
+  "flagNote": null,
+  "sourcePdf": "https://www.ceec.edu.tw/files/file_pool/1/0K022548082283063557/01-英文考科參考試卷.pdf",
+  "answerPdf": "https://www.ceec.edu.tw/files/file_pool/1/0M263619887569719600/111學年度用學測英文考科參考試卷參考答案.pdf",
+  "answerSource": "官方參考答案 PDF（31 D／32 A／33 C／34 B）",
+  "verified": "試卷正文＋官方參考答案兩邊交叉核對一致",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 19,
+   "選項字數區間": "11-22",
+   "選項字數全距": 11,
+   "選項長度變異係數": "28.3%"
+  }
+ },
+ {
+  "id": "g111",
+  "year": "111年",
+  "session": "111學測",
+  "exam": "學測",
+  "examType": "正式考試",
+  "title": "日本盂蘭盆節（The Obon Festival）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 4,
+  "spec": "4選4",
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   34
+  ],
+  "points": 8,
+  "pointsPerItem": 2,
+  "options": {
+   "A": "Some people also visit the cemetery to clean up the family graves and pray for their ancestors.",
+   "B": "Such festive activities are usually held in parks, temples, and other public places around Japan.",
+   "C": "Obon concludes with another bonfire, okuribi, lighting up the sky to see the ancestors’ spirits off.",
+   "D": "Originating from the Chinese Ghost Festival, this annual event has evolved into a time of family reunion."
+  },
+  "optionsZh": {
+   "D": "這個一年一度的節日源自中國的中元節，如今已演變成家人團聚的時節。",
+   "A": "有些人也會去墓園整理家族墓地、向祖先祭拜。",
+   "C": "Obon 以另一場火 okuribi 作結，照亮天空，送走祖先的靈魂。",
+   "B": "這類節慶活動通常在日本各地的公園、寺廟和其他公共場所舉行。"
+  },
+  "paraLabels": [
+   "概說：節日的來歷、時間與意義",
+   "前段儀式：迎火、掃墓與供品",
+   "後段儀式：送火、水燈與盆踊"
+  ],
+  "marks": [
+   [
+    0,
+    "Obon, or the Bon Festival, is a Japanese holiday that honors the spirits of the dead.",
+    "gradient"
+   ],
+   [
+    1,
+    "Though not a national holiday, Obon is surely one of the most traditional events of the year.",
+    "topic"
+   ],
+   [
+    2,
+    "__33__",
+    "topic"
+   ],
+   [
+    1,
+    "Though",
+    "trans"
+   ],
+   [
+    2,
+    "but",
+    "trans",
+    "region ",
+    " is"
+   ],
+   [
+    2,
+    "Originally",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Obon, or the Bon Festival, is a Japanese holiday that honors the spirits of the dead. __31__ The festival usually lasts for four to five days in August. During this period, many people travel back to their hometowns and spend time with loved ones, both past and present.",
+   "Though not a national holiday, Obon is surely one of the most traditional events of the year. Celebration often begins with mukaebi (welcoming fire), during which people make a small bonfire in front of their house to guide spirits upon their return back home. __32__ Food offerings are presented at house altars and temples. Some regions prepare horses made of cucumbers and cows made of eggplants, hoping that the spirits will come back to Earth quickly, on a horse, and leave slowly, riding the cow.",
+   "__33__ Paper lanterns and offerings are sent floating down rivers to accompany the ancestors back to their resting place. Many areas will also organize bon-odori dances. The style of the dances varies from region to region but is normally based on the rhythms of taiko drums. Performers usually play on a tall stage with lanterns and banners strung all around. Participants, often dressed in light cotton kimonos, are encouraged to dance to the music around the stage. __34__ Originally dedicated to the deceased, the dances have now become a symbol of the summer festival themselves."
+  ],
+  "zhTranslation": [
+   "Obon，即盂蘭盆節，是日本一個追念亡者靈魂的節日。__31__ 這個節日通常在八月，為期四到五天。這段期間，許多人會回到故鄉，和所愛的人共度時光——包括已經過世的和還在世的。",
+   "盂蘭盆節雖然不是國定假日，卻無疑是一年之中最傳統的活動之一。慶祝通常從 mukaebi（迎火）開始，人們在自家門前生一小堆火，替返家的靈魂引路。__32__ 供品會擺在家中的佛壇和寺廟裡。有些地區會用小黃瓜做馬、用茄子做牛，希望靈魂騎馬快快回到人間，再騎牛慢慢離開。",
+   "__33__ 紙燈籠和供品會被放進河裡漂流，陪伴祖先回到安息之處。許多地方也會舉辦 bon-odori（盆舞）。舞蹈的形式各地不同，但通常以太鼓的節奏為基礎。表演者多半在一座高台上演出，四周掛滿燈籠和旗幟。參加的人常穿著輕薄的棉質浴衣，可以隨著音樂繞著高台起舞。__34__ 這些舞蹈原本是為亡者而跳，如今本身已成為夏日祭典的象徵。"
+  ],
+  "reading": [],
+  "flagNote": null,
+  "sourcePdf": "https://www.ceec.edu.tw/files/file_pool/1/0m053357638065462325/02-111學測英文試卷.pdf",
+  "answerPdf": "https://www.ceec.edu.tw/files/file_pool/1/0M023644450776620070/02-111學測英文參考答案.pdf",
+  "answerSource": "官方選擇題參考答案 PDF（31 D／32 A／33 C／34 B）",
+  "verified": "試卷正文＋官方答案兩邊交叉核對一致",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 17,
+   "選項字數區間": "15-17",
+   "選項字數全距": 2,
+   "選項長度變異係數": "5.1%"
+  }
+ },
+ {
+  "id": "g110t",
+  "year": "110試辦",
+  "session": "110試辦",
+  "exam": "學測",
+  "examType": "試辦考試",
+  "title": "散盡家財的億萬富翁（Chuck Feeney）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 4,
+  "spec": "4選4",
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   34
+  ],
+  "points": 8,
+  "pointsPerItem": 2,
+  "options": {
+   "A": "However, Feeney never felt at ease with the lifestyle of the wealthy.",
+   "B": "He encourages people to donate at least half their fortunes before death.",
+   "C": "This is exactly what happened to “former” American billionaire Charles Feeney.",
+   "D": "Such incredible secret generosity won him the title “James Bond of Philanthropy” from Forbes magazine."
+  },
+  "optionsZh": {
+   "C": "這正是美國「前」億萬富翁 Charles Feeney 身上發生的事。",
+   "A": "然而，Feeney 對有錢人的生活方式始終不自在。",
+   "D": "這樣驚人而低調的慷慨，為他贏得富比士雜誌「慈善界詹姆士龐德」的稱號。",
+   "B": "他鼓勵大家在過世前至少捐出一半財產。"
+  },
+  "paraLabels": [
+   "破題：用一個反差設定引出主角",
+   "前半生：白手起家到成為億萬富翁",
+   "轉折：把全部財產交出去",
+   "影響：理念如何擴散，以及他的結局"
+  ],
+  "marks": [
+   [
+    0,
+    "__31__",
+    "gradient"
+   ],
+   [
+    1,
+    "Feeney, who grew up in a poor neighborhood of New Jersey, is a genius at finding business opportunities.",
+    "topic"
+   ],
+   [
+    2,
+    "Influenced by his upbringing, Feeney decided to give away all his money to those in need in his lifetime.",
+    "topic"
+   ],
+   [
+    3,
+    "Pioneering the idea of “Giving while Living,” Feeney is a role model for many famous billionaires today, including Bill Gates and Warren Buffet.",
+    "topic"
+   ],
+   [
+    0,
+    "but",
+    "trans"
+   ],
+   [
+    1,
+    "Then",
+    "trans"
+   ],
+   [
+    "A",
+    "However",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Generous billionaires are not hard to come by, but it is definitely a challenge to find a billionaire who spends all his fortune on charity just to end up broke. __31__",
+   "Feeney, who grew up in a poor neighborhood of New Jersey, is a genius at finding business opportunities. Since childhood, he would take any job to make a few cents for his family—jobs like distributing umbrellas in summer and selling Christmas cards in winter. In his college years at Cornell University, he sold home-made sandwiches to other students and is still remembered there as the Sandwich Man. Then, in the 1960s, Feeney established airport retailer Duty Free Shoppers (DFS), which helped him reach his billionaire status by the 1980s. __32__ He lived modestly, and often pondered what to do with all the money he made.",
+   "Influenced by his upbringing, Feeney decided to give away all his money to those in need in his lifetime. In 1984, the then 53-year-old Feeney signed over everything—his DFS shares and the various businesses and properties he had acquired worldwide—to Atlantic Philanthropies, a charity foundation he established. In the following decades, Feeney donated through the organization more than $8 billion anonymously, to charities, universities, human rights campaigns, and foundations worldwide. __33__",
+   "Pioneering the idea of “Giving while Living,” Feeney is a role model for many famous billionaires today, including Bill Gates and Warren Buffet. __34__ In September 2020, Feeney’s go-for-broke mission was completed, and he now lives happily with his wife on a pension in a modest apartment in San Francisco."
+  ],
+  "zhTranslation": [
+   "慷慨的億萬富翁並不難找，但要找到一個把全部財產都用在慈善上、最後讓自己身無分文的億萬富翁，那絕對是件難事。__31__",
+   "Feeney 在紐澤西一個貧窮的社區長大，天生擅長發現商機。從小他什麼工作都做，只為替家裡多賺幾分錢——夏天發雨傘、冬天賣聖誕卡之類的。在康乃爾大學念書那幾年，他做三明治賣給同學，直到今天那裡的人還記得他這位「三明治人」。後來在一九六○年代，Feeney 創辦了機場零售通路 DFS（免稅商店），靠著它在一九八○年代躋身億萬富翁之列。__32__ 他生活簡樸，也常常思考賺來的這些錢該怎麼辦。",
+   "受到成長背景的影響，Feeney 決定在有生之年把所有的錢都捐給需要的人。一九八四年，當時五十三歲的他，把手上的一切——DFS 股份，以及他在世界各地取得的各種事業與不動產——全部移轉給他自己成立的慈善基金會「大西洋慈善事業」。接下來的數十年間，Feeney 透過這個組織匿名捐出超過八十億美元，捐給世界各地的慈善機構、大學、人權運動和基金會。__33__",
+   "Feeney 開創了「Giving while Living」（活著的時候就捐）這個觀念，是今天許多知名富豪的典範，包括比爾蓋茲和華倫巴菲特。__34__ 二○二○年九月，Feeney 這場散盡家財的任務完成了，如今他和太太住在舊金山一間普通的公寓裡，靠退休金過著快樂的日子。"
+  ],
+  "reading": [],
+  "flagNote": null,
+  "sourcePdf": "https://www.ceec.edu.tw/files/file_pool/1/0L251351892018529090/02-110試辦考試英文試卷定稿.pdf",
+  "answerPdf": "使用者先前已核定",
+  "answerSource": "使用者已核定（C A D B），本次以官網原卷正文獨立推導，結果一致",
+  "verified": "試卷正文推導＋使用者既有核定，兩條路徑一致",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 15,
+   "選項字數區間": "11-15",
+   "選項字數全距": 4,
+   "選項長度變異係數": "12.0%"
+  }
+ }
+]

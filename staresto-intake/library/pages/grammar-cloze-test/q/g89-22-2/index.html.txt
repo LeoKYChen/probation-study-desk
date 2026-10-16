@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g89-22-2/index.html
+Author: staresto-create ZZSH
+Title: 89 年學測克漏字第22題詳解（代名詞／指示詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 89 年學測 ／ 第22題
+89 年學測 克漏字 第22題
+代名詞／指示詞線索：跨句
+In 21 , the brain waves of a sleeping person are similar to those of a waking person, and the eyes move about rapidly under the closed lids. 22 kind of sleep is Non-Rapid Eye Movement sleep.
+(A)Other
+(B)Another
+(C)The other
+(D)Others
+答案：(C) The other
+題目編號：G89_22_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「另一種睡眠是非快速動眼期睡眠」，前面已經講了兩種睡眠中的第一種（REM），這裡用 The other 特指「兩者中的另一個」；Other（其他的，不特指）、Another（另一個，用於三個以上任一個，這裡只有兩種不適用）、Others（複數，不合單數 kind）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+other、another、the other、others 這一組是英文裡最容易混淆的組合之一，四個都翻成「其他的、另一個」，光靠中文根本分不開。分它們不必靠語感，靠的是「一共有幾個」和「剩下幾個」。
+怎麼判斷
+四個選項都是 other 家族的成員，可見這一格考的是「總數與剩餘數」，那就回頭數。這一篇的第一句就把總數講死了：there are two kinds of sleep（睡眠有兩種）；第二句 One is Rapid Eye Movement (REM) sleep 點名了第一種。兩個之中已經講掉一個，剩下的那一個是唯一且確定的，所以要用 the other。掛鉤用 I have two pens. One is red; the other is blue.（我有兩枝筆，一枝是紅的，另一枝是藍的。）。順便把整組分清楚：兩者用 one... the other...；三者以上任取一個用 one... another...；剩下的全部（複數）用 the others。92 年第 24 題 →考的正是同一組的另一半——那一格空在 one 的位置，靠後面出現的 the other 反推；本題空在 the other 的位置，靠前面的 two 與 One 反推。兩題擺在一起看，這一組就不會再混。
+誘答選項
+Another（另一個）：用在三個以上的情況，表示「再來一個、不特定的另一個」，而本篇一開始就說只有兩種，另一種是確定的，不能用不特定的說法。Other（其他的）：後面要接複數名詞或不可數名詞（other people、other kinds），不能直接修飾單數的 kind。Others（其他人、其他的東西）：本身是複數代名詞，不能拿來修飾後面的 kind。
+常考字詞與句型
+one … the other …（兩者中的一個……另一個……）、one … another …（三者以上的一個……另一個……）、the others（其餘的全部）、each other（彼此）、on the other hand（另一方面）、in other words（換句話說）。其中 one … another … 這一組考過 3 個年度，92 年第 24 題 →、93 年第 17 題 →都出現過；the others 考過 3 個年度，92 年第 24 題 →、103 年第 18 題 →都出現過。
+線索範圍說明：The other 指前一句提到的兩種睡眠中的另一種
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Basically, there are two kinds of sleep. One is Rapid Eye Movement (REM) sleep. In 21 , the brain waves of a sleeping person are similar to those of a waking person, and the eyes move about rapidly under the closed lids. 22 kind of sleep is Non-Rapid Eye Movement sleep.
+Scientists have discovered that dreams happen mainly in REM sleep. Everyone dreams about 20 percent of their sleeping time. 23 people who say they never dream show about 20 percent of REM sleep. 24 these "non-dreamers" do their sleeping in a laboratory 25 researchers can wake them up and ask them whether they were having dreams the moment before, it 26 that they dream as much as others.
+Events in daily life sometimes occur symbolically in dreams. 27 , a boy is having difficulties on the school playground because a bigger boy keeps bullying him. He may dream at night of being alone in the playground, 28 a lion. At other times the dreaded event from daily life simply occurs in a dream in its real-life form; 29 , the boy dreams of being bullied by the bigger boy.
+30 scientific research, we have known more about the relationship between sleep and dreams. However, why a dream will take a certain symbolic form is still a mystery.
+中譯：基本上，睡眠可分為兩種。第一種是快速動眼期（REM）睡眠，在這個階段，睡眠者的腦波與清醒時相似，眼球會在閉著的眼皮下快速轉動。另一種則是非快速動眼期睡眠。科學家發現，做夢主要發生在快速動眼期。每個人在睡眠時間中大約有 20%在做夢，就連那些聲稱自己從不做夢的人，也有大約 20%的快速動眼期睡眠時間。如果讓這些「不做夢的人」在實驗室裡睡覺，研究人員就能把他們叫醒，詢問他們前一刻是否在做夢，結果發現，原來他們做夢的次數其實跟其他人一樣多。日常生活中發生的事，有時會以象徵的形式出現在夢境中。舉例來說，一個男孩在學校操場上因為一直被較大的男孩欺負而感到困擾，晚上他可能會夢見自己獨自一人在操場上，面對一頭獅子。而有時候，日常生活中令人恐懼的事件，也會直接以原本的樣貌出現在夢境中，也就是說，這名男孩夢見的就是自己被那個較大的男孩欺負。透過科學研究，我們對睡眠與夢境之間的關係已有了更多了解。然而，夢境為什麼會以某種特定的象徵形式呈現，至今仍是個謎。
+📋 內容大意
+Scientific research shows that everyone dreams during REM sleep, often transforming daily experiences into direct or symbolic dreams.
+← 第21題回到89 年學測第23題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

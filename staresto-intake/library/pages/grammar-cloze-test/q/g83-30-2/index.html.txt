@@ -1,0 +1,44 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g83-30-2/index.html
+Author: staresto-create ZZSH
+Title: 83 年學測克漏字第30題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 83 年學測 ／ 第30題
+83 年學測 克漏字 第30題
+慣用語／片語線索：跨句
+People 28 high self-esteem are not hurt by criticism; they do not 29 criticism as personal rejection. 30 , they tend to believe criticism to be suggestion for improvement.
+(A)Instead
+(B)In addition
+(C)Thus
+(D)In case
+答案：(A) Instead
+題目編號：G83_30_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+前一句剛說他們不會因為批評就覺得自己遭到否定，這句是語意上的對比轉折「相反地，他們認為批評是建議」，Instead（相反地、取而代之）符合上下文語意連結。In addition（此外，累加）、Thus（因此，因果）、In case（以防萬一）都不符合這裡「否定前者、代之以後者」的邏輯。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是轉折詞，而 Thus（因此）在論說文裡出現頻率很高，如果沒讀出前後是「不是 A，而是 B」的替換關係，很容易挑錯。
+怎麼判斷
+四個選項都是轉折詞，可見這一格考的是這一句與前一句的關係。前一句是否定的：they do not {29} criticism as personal rejection（他們不會因為批評就覺得自己遭到否定）。本句是 ___ , they tend to believe criticism to be suggestion for improvement.（……，他們傾向於相信批評是改進的建議。）前一句說「不是這樣看」，這一句說「而是那樣看」——用一個正面的說法取代前面被否定掉的說法，正是 Instead（相反地、反而）的用途。順便把 instead 與 instead of 分清楚，兩者常一起考：instead 是副詞，單獨使用，通常放在句首或句尾（He didn't go. He stayed home instead.）；instead of 是整組當一個介系詞用，後面要接名詞或動名詞（instead of going home）。88 年第 23 題 →考的就是 instead of 不能直接接原形動詞這一點，兩題可以對照著看。
+誘答選項
+In addition（此外）：同向累加，但這一句不是再加一點，是把前一句被否定的部分替換掉。Thus（因此）：表因果，但「不因為批評覺得自己遭到否定」與「認為批評是建議」是一體的兩面，不是因果。In case（以防萬一）：帶出預防性的條件，與這裡的替換關係無關。
+常考字詞與句型
+instead（相反地、反而）、instead of（而不是）、rather than（而不是）、a suggestion for improvement（改進的建議）、tend to V（傾向於）、believe A to be B（相信 A 是 B）。其中 rather than 這一組考過 9 個年度，88 年第 23 題 →、94 年第 25 題 →、98 年第 27 題 →、99 年第 20 題 →、103 年第 27 題 →、105 年第 26 題 →、107 年第 16 題 →、107 年第 28 題 →、110 年試辦考試第 13 題 →都出現過；instead of 考過 6 個年度，98 年第 27 題 →、102 年第 26 題 →、105 年第 20 題 →、108 年第 28 題 →、110 年試辦考試第 13 題 →都出現過。
+線索範圍說明：Instead 承接前一句「不因批評受傷」，帶出相反的做法
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+A person's self-concept is reflected in the way he or she behaves, and the way a person behaves affects other people's reactions. 21 , the way people think about themselves 22 a profound effect on all areas of their lives.
+For instance, people who have a 23 sense of self-esteem usually act with confidence. 24 they have self-assurance, they do not need constant praise and encouragement from others to feel 25 about themselves. Self-confident people are their own best friends. They participate 26 life enthusiastically and spontaneously. They are not affected by 27 others think they "should" do.
+People 28 high self-esteem are not hurt by criticism; they do not 29 criticism as personal rejection. 30 , they tend to believe criticism to be suggestion for improvement.
+中譯：一個人的自我概念反映在他／她的行為方式上，而一個人的行為方式也會影響他人的反應。因此，人們對自己的看法對生活各層面都有深遠的影響。舉例來說，擁有健全自尊心的人通常表現得很有自信。因為他們有自信，不需要別人不斷的稱讚和鼓勵才能感覺良好。有自信的人是自己最好的朋友。他們熱情自發地參與生活，不會受到別人認為他們「應該」怎麼做的影響。自尊心高的人不會被批評傷害；他們不會把批評當作是對自己的否定，相反地，他們往往把批評視為改進的建議。
+📋 內容大意
+A person's self-concept shapes behavior, and behavior shapes how others respond, which means self-image touches every area of life.
+People whose self-esteem is strong act confidently, need no constant praise, and throw themselves into life enthusiastically and spontaneously.
+They are untroubled by other people's expectations and treat criticism as advice for improvement rather than as personal rejection.
+← 第29題回到83 年學測
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

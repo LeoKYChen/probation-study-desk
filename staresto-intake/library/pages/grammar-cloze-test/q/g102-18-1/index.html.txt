@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g102-18-1/index.html
+Author: staresto-create ZZSH
+Title: 102 年學測克漏字第18題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 102 年學測 ／ 第18題
+102 年學測 克漏字 第18題
+字彙選義線索：句內答對率 28%
+答對率 28%：當年每 100 位考生，有 28 位答對。
+It was created 18 the format of XYX, with X being any number between 2-9 and Y being either 1 or 0.
+(A)for
+(B)as
+(C)by
+(D)in
+答案：(D) in
+題目編號：G102_18_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+in the format of 是「以…的格式」，in 表示「以某種形式、方式」；for（為了）、as（作為）、by（藉由某種方法）語意都不合。
+深入解析
+你可能會這樣想
+created 後面接 in，你可能會覺得怪：被創造出來的東西不是「在」格式裡面。所以很容易直接選 as——「被創造成 XYX 這種格式」，中文聽起來最像。你看出這一格要交代「長成什麼樣子」，方向對了，錯在 in 的其中一種用法你還不熟：in 加名詞可以表示「以某種形式、用某種方式」，跟「在裡面」無關。
+怎麼判斷
+先看被創造的是什麼。主詞 It 指的是前面那個 area code（區碼），XYX 是它的排列樣式，不是它本身。所以這一格要接的是「以某種樣式呈現」，正是 in the format of（以…的格式）。這一格屬於 in 的「方式與形式」那一組，一起記最有效率：in English（用英文）、in ink（用墨水）、in cash（付現）、in capital letters（用大寫）、in the form of（以…的形式）。format 這個字也可以從字根回推：form（形狀、形式）這個家族還有 formal（正式的）、formula（公式）、transform（改變形態）、uniform（同一種形式，也就是制服）。一句記完：The shop printed its coupons in the format of a postcard, so customers could mail one home while waiting in line.（那家店把折價券印成明信片的形式，排隊的顧客可以順手寄一張回家。）〔情境取材自 107 學測作文題：排隊嘗鮮〕
+誘答選項
+as（作為）：會把區碼說成格式本身，但被創造的是區碼，格式只是它的樣子。for（為了）：帶出目的，格式不是目的。by（藉由）：帶出方法或手段，格式是結果不是手段。三個選項的中文都常見，差別只在這一格要的是「形式」，而形式這一格固定歸 in。這裡不必記反義，記同義就夠：in the format of 等於 in the form of，也等於 following the pattern of。
+常考字詞與句型
+in the format of（以…的格式）、in the form of（以…的形式）、in cash（以現金）、in capital letters（用大寫字母）、area code（區碼）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+An area code is a section of a telephone number which generally represents the geographical area that the phone receiving the call is based in. It is the two or three digits just before the local number. If the number 16 is in the same area as the number making the call, an area code usually doesn't need to be dialed. The local number, 17 , must always be dialed in its entirety.
+The area code was introduced in the United States in 1947. It was created 18 the format of XYX, with X being any number between 2-9 and Y being either 1 or 0. Cities and areas with higher populations would have a smaller first and third digit, and 1 as the center digit. New York, being the largest city in the United States, was 19 the 212 area code, followed by Los Angeles at 213.
+In countries other than the United States and Canada, the area code generally determines the 20 of a call. Calls within an area code and often a small group of neighboring area codes are normally charged at a lower rate than outside the area code.
+中譯：區域號碼是電話號碼中的一部分，通常代表接聽電話所在的地理區域，位於本地號碼前面的兩到三個數字。如果撥打的號碼與撥出電話所在地屬於同一區域，通常不需要撥打區域號碼；但本地號碼則必須完整撥打，一碼都不能少。區域號碼於 1947 年在美國首次引進，其格式為「XYX」，X 代表 2 到 9 之間的任一數字，Y 則是 0 或 1。人口較多的城市或地區，第一碼與第三碼的數字通常較小，中間則固定為 1。紐約身為美國最大城市，被分配到 212 這個區域號碼，其次是洛杉磯的 213。在美國和加拿大以外的國家，區域號碼通常決定的是通話的費率。同一區域號碼內、甚至鄰近幾個區域號碼之間的通話，費率通常會比撥打區域外的電話便宜。
+📋 內容大意
+Area codes designate geographic telephone regions, influence local and long-distance dialing formats, and determine call pricing.
+← 第17題回到102 年學測第19題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

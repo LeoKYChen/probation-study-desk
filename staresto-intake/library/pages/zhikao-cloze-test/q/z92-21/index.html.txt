@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z92-21/index.html
+Author: staresto-create ZZSH
+Title: 92 年指考克漏字第21題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 92 年指考 ／ 第21題
+92 年指考 克漏字 第21題
+字彙選義線索：句內答對率 68%
+答對率 68%：當年每 100 位考生，有 68 位答對。
+...five percent of the school children indicated that they did not read any 21 reading materials.
+(A)story
+(B)comic
+(C)technology
+(D)extracurricular
+答案：(D) extracurricular
+題目編號：Z92_21（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+extracurricular reading materials（課外讀物）為字詞搭配，表示學童完全不閱讀課外書籍；story／comic／technology 填進去會把讀物限定成某一類，與下一句接著列出漫畫、寓言故事、科技等各類讀物所占的比例對不上。
+深入解析
+你可能會這樣想
+extracurricular 是四個選項裡最長、最陌生的一個，你可能因為不認得就先把它排除，改挑一個眼熟的。
+怎麼判斷
+鑑別度高達 56。先看形態：空格後面是 reading materials（讀物），所以空格要填的是修飾它的形容詞。四個選項裡 story、comic、technology 三個主要當名詞用，只有 extracurricular 是形容詞——光看詞性就定了一半。再看字本身：extra 是「額外的」、curricular 來自 curriculum（課程），合起來就是「課程以外的」，也就是課外。填進去讀成 they did not read any extracurricular reading materials（他們不讀任何課外讀物）。下一句列出漫畫、寓言故事、自然科學、科技類的書，正是課外讀物的種類，可以拿來驗算。
+誘答選項
+story、comic、technology 填進去，會把讀物限定成某一類；而且下一句才在列漫畫、寓言故事這些類別，如果空格填了 comic，就會與下一句自相矛盾——不讀漫畫的人怎麼會有兩成五愛讀漫畫。
+常考字詞與句型
+extracurricular activities（課外活動）、reading materials（讀物）、curriculum（課程）、fable（寓言）、comic（漫畫）、natural sciences（自然科學）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：92學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The Internet has replaced books as a major source of information for Taiwanese primary school students, according to a recent survey. The survey was conducted last December, and it 16 that 77 percent of the students considered the Internet to be the most convenient source of information. 14 percent of the respondents said they often 17 books for information instead of going online. Of all the students surveyed, 27 percent said they had never used the 18.
+The survey randomly selected 4,200 students in 26 primary schools in 19 parts of Taiwan to investigate their reading habits. A total of 4,017 questionnaires were properly 20 by the respondents.
+According to the survey, five percent of the school children indicated that they did not read any 21 reading materials. Of those who read such materials, 25 percent liked to read comics, 20 percent fables and stories, 15 percent books on natural sciences, and 12.3 percent books on technology. The survey 22 indicated that 45 percent of the school children read at least five books every month; 23 45 percent of them read less than three per month.
+中譯：根據一項最新調查，網際網路已取代書籍，成為台灣國小學童獲取資訊的主要來源。這項調查於去年 12 月進行，結果發現 77%的學生認為網路是最方便的資訊來源。14%的受訪者表示，他們常會轉而閱讀書籍以取得資訊，而非上網查詢。在所有受訪學生中，27%表示自己從未使用過網路。這項調查隨機抽取台灣各地 26 所國小的 4,200 名學生，以了解他們的閱讀習慣，共有 4,017 份問卷由受訪者妥善填答。調查顯示，5%的學童表示自己完全不閱讀課外讀物。在會閱讀這類讀物的學生中，25%喜歡看漫畫、20%看寓言與故事、15%看自然科學書籍、12.3%看科技類書籍。調查進一步顯示，45%的學童每個月至少閱讀五本書；另外 45%的學童則每個月閱讀不到三本。
+📋 內容大意
+A recent survey reports that the Internet has overtaken books as the main information source for Taiwan's primary school pupils.
+It sampled 4,200 pupils from 26 schools around Taiwan and asked about their reading habits.
+Only a few read nothing outside class; comics and stories lead the rest, and monthly reading amounts differ sharply.
+← 第20題回到92 年指考第22題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

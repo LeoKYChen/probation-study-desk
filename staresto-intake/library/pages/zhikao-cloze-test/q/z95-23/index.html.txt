@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z95-23/index.html
+Author: staresto-create ZZSH
+Title: 95 年指考克漏字第23題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 95 年指考 ／ 第23題
+95 年指考 克漏字 第23題
+字彙選義線索：句內答對率 46%
+答對率 46%：當年每 100 位考生，有 46 位答對。
+If they stay in a museum too long, a feeling of boredom and monotony will build up, leading 23 to impatience and fatigue.
+(A)efficiently
+(B)eventually
+(C)fortunately
+(D)permanently
+答案：(B) eventually
+題目編號：Z95_23（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+leading eventually to（最終導致……）表示無聊感累積後終將演變成不耐煩與疲勞；efficiently／fortunately／permanently 都不符合此處語意邏輯。
+深入解析
+你可能會這樣想
+四個選項都是 -ly 副詞，形態一樣，你會憑中文哪個順挑一個。
+怎麼判斷
+答對率四成六，鑑別度高達 61。空格夾在 leading 與 to 之間，修飾的是 lead to（導致）這個動作。先看整句在講什麼：a feeling of boredom and monotony will build up, leading ______ to impatience and fatigue——無聊與單調的感覺會慢慢累積，最後導致不耐煩與疲憊。關鍵在 build up（逐漸累積）：既然是慢慢累積起來的，導致的結果就是在一段時間之後才出現，所以要的是講時間終點的 eventually（最終、到頭來）。填進去讀成 leading eventually to impatience and fatigue。
+誘答選項
+efficiently（有效率地）是在評價做事的效率，累積無聊不談效率；fortunately（幸好）是正面的評價，但不耐煩與疲憊不是好事；permanently（永久地）指的是狀態不再改變，但逛完博物館的疲憊會消退，不是永久。三個都是 -ly 副詞，形態吻合，容易被順手選走。
+常考字詞與句型
+eventually（最終、到頭來）、lead to（導致）、build up（逐漸累積）、impatience（不耐煩）、fatigue（疲憊）、permanently（永久地）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：95學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Young visitors to museums often complain about having museum feet, the tired feeling one gets after spending too much time in a museum. A case of museum feet makes one feel like saying: "This is 21. I could have done the painting myself. When can we sit down? What time is it?" Studies of museum behavior show that the average visitor spends about four seconds looking at one object. For young visitors, the time span can be 22 shorter.
+Children are more interested in smells, sounds, and the "feel" of a place than looking at a work of art. If they stay in a museum too long, a feeling of boredom and monotony will build up, leading 23 to impatience and fatigue.
+To 24 museum feet, try not to have children look at too many things in one visit. It is reported that young visitors get more out of a visit if they focus on 25 nine objects. One and a half hours is the ideal time to keep their eyes and minds sharp, and their feet happy!
+中譯：年輕的博物館訪客常常抱怨自己得了「博物館腳」——也就是在博物館待太久後所產生的疲憊感。「博物館腳」發作時，會讓人忍不住想說：「這也沒什麼特別的，我自己也畫得出來。我們什麼時候可以坐下來？現在幾點了？」關於博物館參觀行為的研究顯示，一般訪客平均只會花大約四秒鐘看一件展品。對年輕訪客來說，這個時間甚至更短。相較於欣賞藝術品，孩童往往對氣味、聲音，以及一個地方的「氛圍」更感興趣。如果他們在博物館待太久，無聊與單調的感覺便會逐漸累積，最終演變成不耐煩與疲勞。為了避免「博物館腳」，最好不要讓孩子在一次參觀中看太多東西。有報告指出，如果年輕訪客只專注參觀不超過九件展品，反而能獲得更多收穫。一個半小時是最理想的參觀時間，既能讓孩子保持眼神與思緒的敏銳，雙腳也不會太過勞累！
+📋 內容大意
+Young visitors often complain of "museum feet," the weariness that comes from staying too long.
+Research shows visitors glance at each object for seconds, and children care more for smells, sounds and atmosphere than for art.
+Since impatience and fatigue build up, shorter visits with fewer objects are advised, about an hour and a half being ideal.
+← 第22題回到95 年指考第24題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g96-26-3/index.html
+Author: staresto-create ZZSH
+Title: 96 年學測克漏字第26題詳解（介系詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 96 年學測 ／ 第26題
+96 年學測 克漏字 第26題
+介系詞線索：句內答對率 54%
+答對率 54%：當年每 100 位考生，有 54 位答對。
+Herds of goats and cows 26 enormous horns graze the lush green fields.
+(A)into
+(B)with
+(C)for
+(D)from
+答案：(B) with
+題目編號：G96_26_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+with 表示「有著……特徵的」（goats and cows with enormous horns＝長著巨大犄角的山羊和牛）；into／for／from 都不合這個修飾用法。
+深入解析
+你可能會這樣想
+with 這個字，你的印象大概只有兩個意思：「和……一起」和「用……工具」。這兩個意思套進 Herds of goats and cows ___ enormous horns 都不通，於是你反而會去找別的選項，把真正的答案跳過去。落差就在這裡：with 還有一個你一定看過、但很少被說破的用法 —— 表示「具有某項特徵」，劍橋詞典直接把這個意思解釋成 having。97 年第 26 題 →也考過 with，不過那一題是 with + 受詞 + 受詞補語（表附帶狀態），句型比較長；本題是最單純的 with + 名詞，兩題可以擺在一起，把 with 的兩種考法一次分清楚。
+怎麼判斷
+先數句子成分，這一步就能定案。Herds of goats and cows ___ enormous horns graze the lush green fields. 主詞是 Herds of goats and cows，動詞是 graze，受詞是 the lush green fields —— 主要成分已經齊了。既然齊了，___ enormous horns 這一段就只能是修飾語，而且緊貼在主詞後面，是在後位修飾主詞。能後位修飾名詞、又表示「具有某特徵」的介系詞就是 with。還原成關係子句驗算：cows with enormous horns 等於 cows that have enormous horns（有著巨大犄角的牛）。這個「with 等於 having」的還原做過一次，兩個常見的老例句就全部串起來了 —— the girl with long hair（長頭髮的女孩）、a house with a red roof（有紅屋頂的房子），句型和本題一模一樣，只是換成牛和角。
+誘答選項
+into（進入）：表示方向或轉變，像 walk into the room（走進房間）、turn into a butterfly（變成蝴蝶）；牛「進入巨大犄角」不成話。for（為了、給）：表示目的或對象，cows for enormous horns 會被讀成「為了取角而養的牛」，可是這一段是在寫眼前的風景（成群的牛羊在青翠草地上吃草），不是在講用途。from（從……來）：表示來源或出處，cows from enormous horns（來自巨大犄角的牛）語意不通。
+常考字詞與句型
+the girl with long hair（長頭髮的女孩）、herds of cattle（成群的牛）、graze the fields（在田野上吃草）、run into sb（偶然遇見某人）、be famous for（以……聞名）、lush green（蒼翠繁茂的）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Whenever I set foot on the soil of Rwanda, a country in east-central Africa, I feel as if I have entered paradise: green hills, red earth, sparkling rivers and mountain lakes. Herds of goats and cows 26 enormous horns graze the lush green fields. Although located close to the equator, Rwanda's "thousand hills," 27 from 1,500 m to 2,500 m in height, ensure that the temperature is pleasant all year around. And being a tiny country, everything in Rwanda is 28 in a few hours and the interesting spots can be explored comfortably in a couple of weeks.
+But 29, Rwanda is a symbol of the triumph of the human spirit over evil. Though it was once known to the world for the 1994 tribal conflict that resulted in about one million deaths, Rwanda has 30 the mass killing. Now it is healing and prospering and greets visitors with open arms.
+中譯：每當我踏上盧安達——這個位於非洲中東部的國家——的土地時，我都感覺自己彷彿進入了天堂：翠綠的山丘、紅色的泥土、閃閃發光的河流與高山湖泊。成群長著巨大犄角的山羊和牛，在青翠的草地上吃草。雖然盧安達地處赤道附近，但它的「千丘之國」地形——海拔從 1500 公尺到 2500 公尺不等——確保了全年氣候宜人。身為一個小國，盧安達的景點在短短幾小時內就能走遍，境內有趣的地方也能在一兩週內從容探索完畢。但最重要的是，盧安達象徵著人類精神戰勝邪惡的力量。儘管它曾因 1994 年造成約一百萬人死亡的種族衝突而為世人所知，盧安達如今已挺過那場大屠殺，正逐漸療癒、日漸繁榮，並張開雙臂歡迎來訪的旅客。
+📋 內容大意
+Rwanda strikes the writer as paradise. There are green hills, red soil, bright rivers and mountain lakes, and fields grazed by goats and long-horned cattle.
+Its thousand hills rise from 1,500 to 2,500 meters, so the weather stays pleasant all year. The country is small enough to see in a couple of weeks.
+Rwanda also stands as a symbol of the human spirit overcoming evil. Once known only for the 1994 conflict and its million deaths, the country is now healing.
+← 第25題回到96 年學測第27題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

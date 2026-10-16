@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g94-30-3/index.html
+Author: staresto-create ZZSH
+Title: 94 年學測克漏字第30題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 94 年學測 ／ 第30題
+94 年學測 克漏字 第30題
+慣用語／片語線索：句內答對率 54%
+答對率 54%：當年每 100 位考生，有 54 位答對。
+Therefore, 30 animals' body parts, many fruits and vegetables can be harvested over and over again without dying.
+(A)as with
+(B)for
+(C)unlike
+(D)except for
+答案：(C) unlike
+題目編號：G94_30_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意對比：「因此，不像動物的身體部位，許多水果蔬菜可以一次又一次被採收而不會死亡」，unlike（不像）符合這種對比；as with（和……一樣，語意相反）、for（因為）、except for（除了）都不合。
+深入解析
+你可能會這樣想
+unlike 開頭是 un-，很容易和 dislike（不喜歡）混在一起，讀成「不喜歡動物的身體部位」。unlike 是介系詞，意思是「不像……、與……不同」，跟喜不喜歡沒有關係。這一題的鑑別度 61，分的是你有沒有看出這一格要的是「對比」，而不是原因或排除。
+怎麼判斷
+四個選項都能直接接名詞，可見這一格考的不是詞性，是語意關係——到底是對比、排除，還是因果。空格後面接的是名詞片語 animals' body parts，逗號之後才是完整的主要子句 many fruits and vegetables can be harvested over and over again without dying。所以空格要的是一個能直接接名詞、又能把前後兩樣東西擺在一起比的介系詞。文章講的是：動物的身體部位割掉就沒了，蔬果卻可以一採再採——兩者不同，用 unlike。
+誘答選項
+as with（就……的情況而言、和……一樣）：方向剛好相反，等於說蔬果和動物的身體部位情況相同，與整篇「植物與動物完全不同」的主旨矛盾。except for（除了……之外）：是把某個成員從一個群體裡挑出來排除，但動物的身體部位本來就不在「水果和蔬菜」這個群體裡，沒有東西可以排除。for：當「因為」時是連接詞，後面要接完整子句；當介系詞時是「為了、給」，接上去會變成「為了動物的身體部位，蔬果可以一採再採」，語意不通。
+對比要用哪一個，先看後面接什麼
+unlike 後面接名詞（unlike animals' body parts）；In contrast、On the other hand 這一類轉折詞後面接的是一整句話（本篇就用過 On the other hand, plants cannot move ...）。同一篇裡兩種都出現了：第 27 題把 In contrast 放進選項當誘答，這一題則是真的要對比，但位置只容得下介系詞。要對比時先看空格後面是名詞還是句子，就不會拿錯工具。（劍橋 English Grammar Today 的 Contrasts 條目另有一條分工：把兩件事並排比較、要說第二件跟第一件不同時，用 by／in contrast，不用 on the contrary；同型見 95 年第 30 題 →。）
+常考字詞與句型
+unlike + 名詞（不像……、與……不同）、dislike + 名詞／V-ing（不喜歡……）、except for（除了……以外）、over and over again（一次又一次）、from a physiological standpoint（從生理學的角度來看）、harvest crops（採收作物）。其中 except for 這一組考過 4 個年度，87 年第 22 題 →、101 年第 19 題 →、111 年第 16 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Do plants have feelings? There is currently no reason to believe that plants experience pain, because they are devoid of central nervous systems and brains. Animals are able to feel pain 26 they can use it for self-protection. 27, if you touch something hot and feel pain, you will learn from this 28 that you should not touch that item in the future. On the other hand, plants cannot move 29 and do not need to learn to avoid certain things, so this sensation would be unnecessary.
+From a physiological standpoint, plants are completely different from animals. They cannot feel pain. Therefore, 30 animals' body parts, many fruits and vegetables can be harvested over and over again without dying.
+中譯：植物有感覺嗎？目前並沒有證據顯示植物會感受到疼痛，因為它們沒有中樞神經系統和大腦。動物能感受疼痛，這樣牠們才能利用疼痛來保護自己。舉例來說，如果你碰到滾燙的東西並感到疼痛，你會從這次經驗中學到，未來不該再碰觸那樣東西。相反地，植物無法自行移動，也不需要學習避開某些事物，因此這種感覺對植物而言是不必要的。從生理學角度來看，植物與動物完全不同，它們無法感受疼痛。因此，與動物的身體部位不同，許多水果和蔬菜可以一次又一次地被採收，而不會因此死亡。
+📋 內容大意
+Lacking a central nervous system and the need for self-protective mobility, plants do not experience pain like animals do.
+← 第29題回到94 年學測
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

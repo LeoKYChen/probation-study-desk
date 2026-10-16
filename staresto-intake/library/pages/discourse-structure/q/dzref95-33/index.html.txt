@@ -1,0 +1,41 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dzref95-33/index.html
+Author: staresto-create ZZSH
+Title: 指考 95課綱參考試卷（98年施測） 篇章結構 第33題詳解（掌握段落內語句的連貫性與一致性）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 指考 95課綱參考試卷（98年施測） ／ 第33題
+指考 95課綱參考試卷（98年施測） 篇章結構 第33題
+選文：酸雨與撒石灰（Acid Rain and Liming）
+掌握段落內語句的連貫性與一致性線索：指示詞
+(A)However, liming does permit fish to remain in a lake.然而，撒石灰確實能讓魚留在湖裡。
+(B)Liming tends to be expensive and has to be done repeatedly.撒石灰往往很花錢，而且必須一再進行。
+(C)Different changes may take different lengths of time for ecosystems to recover.不同的變化，生態系統要花的復原時間長短也不同。
+(D)But the soil, lakes, streams, and forests that are continually acidified can take many years or even centuries to heal.但持續遭到酸化的土壤、湖泊、溪流和森林，可能要好幾年、甚至好幾世紀才能復原。
+(E)Limestone or lime (a naturally occurring basic compound) can be added to acidic lakes to “cancel out” the acidity.石灰石或石灰（一種天然的鹼性化合物）可以加進酸化的湖泊，把酸性「抵消」掉。
+答案：(E) Limestone or lime (a naturally occurring basic compound) can be added to acidic lakes to “cancel out” the acidity.
+題目編號：Dzref95_33
+解析
+先看空格後面。 後面是 This process, called liming, has been used only in Norway and Sweden, but not in other countries.（這個做法，叫做 liming，只有挪威和瑞典用過，其他國家沒有。）
+兩個線索：This process（這個做法）要指回前面剛描述過的一個做法；called liming（叫做 liming）是在替它取名字——既然現在才取名，前一句就不會先用到 liming 這個字。
+E 正好符合：它描述了做法本身（把石灰加進酸湖中和酸性），而且全句沒有出現 liming。
+如果你選了 B（撒石灰往往很花錢，而且必須一再進行。）：B 裡就有 liming，字面上最接近。但 B 是在評價這個做法，評價之前總得先說明做法是什麼；而且 B 已經在用 liming 這個字了，後面那句「叫做 liming」就變成多餘。
+【下次先看這裡】後面出現「這個做法叫做○○」，前一句一定是在描述那個做法，而且不會先用到那個名字。
+線索與數據
+線索種類指示詞
+線索在哪後一句 This process, called liming——命名句
+答對率本場考試不公布統計
+本篇題型5選5・刪去法可收尾
+展開本題所在的整篇選文與中文翻譯
+本篇共 5 格、5選5；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+Acid rain penetrates deeply into an ecosystem. It may change the chemistry of the soil and streams and may narrow—sometimes to nothing—the space where certain plants and animals can survive. 31 For example, visibility might improve within days, and small or regular chemical changes in streams might improve within months. 32
+There are some things that people can do to bring back lakes and streams more quickly. 33Limestone or lime (a naturally occurring basic compound) can be added to acidic lakes to “cancel out” the acidity. This process, called liming, has been used only in Norway and Sweden, but not in other countries. 34 It is considered at best a short-term remedy, not an effort to reduce or prevent pollution. In addition, it does not solve the broader problems of changes in the soil, forest health, materials damage, and risks to human health. 35 It allows the native fish populations to survive until the acidity in the area decreases.
+中譯
+酸雨會深入一個生態系統。它可能改變土壤和溪流的化學性質，也可能壓縮某些動植物能夠存活的空間——有時候壓縮到完全消失。31 舉例來說，能見度可能幾天之內就改善，溪流中小幅或規律的化學變化可能幾個月內就好轉。32
+有些事情是人可以做的，能讓湖泊和溪流更快恢復。33 這個做法稱為撒石灰，目前只有挪威和瑞典採用，其他國家沒有。34 它頂多只能算是短期的補救，而不是減少或防止污染的努力。此外，它並不能解決土壤變化、森林健康、材料損害和人體健康風險這些更大的問題。35 它讓當地原有的魚群能夠存活，直到該地區的酸度下降為止。
+← 第32題回到互動練習第34題 →
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

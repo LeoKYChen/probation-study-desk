@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g93-30-3/index.html
+Author: staresto-create ZZSH
+Title: 93 年學測克漏字第30題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 93 年學測 ／ 第30題
+93 年學測 克漏字 第30題
+慣用語／片語線索：句內答對率 56%
+答對率 56%：當年每 100 位考生，有 56 位答對。
+They performed poorly at a detailed activity 30 arranging a row of beads.
+(A)according to
+(B)next to
+(C)such as
+(D)because of
+答案：(C) such as
+題目編號：G93_30_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】such as 指「例如」，舉例說明 detailed activity 是什麼（排列珠子）；according to（根據）、next to（在……旁邊）、because of（因為）都不合。
+深入解析
+你可能會這樣想
+四個選項都是兩三個字組成的一組，代進去唸都不太卡，because of（因為）尤其誘人——「因為排珠子而表現不好」聽起來甚至有點道理。但這一句的重點不在因果，在於後面那串字跟前面那個名詞是什麼關係。
+怎麼判斷
+四個選項都是幾個字合起來當一個介系詞用（劍橋 English Grammar Today 的 Prepositions 條目），後面都能接動名詞，文法上一個也刷不掉，可見這一格考的是語意關係。關鍵在空格前後兩個東西的層級：前面是 a detailed activity（一項精細的活動），是一個籠統的上位說法；後面是 arranging a row of beads（把一排珠子排好），是一件具體的事。籠統的說法後面接一個具體的例子，用的就是 such as（例如），掛鉤是 I like fruits such as apples and bananas.（我喜歡蘋果、香蕉之類的水果。）。填進去讀一次：他們在像「把珠子排成一排」這種精細的活動上表現不好，語意完全順。such as 是「舉例」這一組的成員之一。同一組的 for example 與 for instance 多半用來引出一句完整的話（也可以接名詞或動名詞，劍橋詞典例句 by, for example, using recycled paper），such as 後面只接名詞，這是最快分辨的一條線；that is 與 in other words 又是另一回事，那是換句話說，後面講的還是同一件事。整組的分法寫在 89 年第 27 題 →的解析裡。such as 另外考過一次：84 年第 22 題 →。
+誘答選項
+because of（因為）：表原因，但「排珠子」不是「表現不好」的原因，它就是那項活動本身。according to（根據）：後面接的是消息或判斷的來源（according to the report 根據那份報告），這裡沒有來源可言。next to（在……旁邊）：講的是位置，跟活動的內容無關。
+常考字詞與句型
+such as（例如）、for example（舉例來說）、perform poorly at（在……方面表現不佳）、a row of（一排……）、according to（根據）、be good at（擅長）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Learning style means a person's natural, habitual, and preferred way(s) of learning. Research about learning styles has identified 26 differences.
+For example, one study found various differences 27 boys and girls in sensory learning styles. Girls were 28 more sensitive to sounds and more skillful at fine motor performance than boys. Boys, 29, showed an early visual superiority to girls. They were, however, clumsier than girls. They performed poorly at a detailed activity 30 arranging a row of beads. But boys excelled at other activities that required total body coordination.
+中譯：學習風格是指一個人天生、習慣性且偏好的學習方式。關於學習風格的研究已發現了性別上的差異。舉例來說，一項研究發現，男孩與女孩在感官學習風格上存在多種差異：女孩對聲音較為敏感，精細動作表現也較男孩靈巧；相較之下，男孩則較早展現出視覺上的優勢，但動作卻比女孩笨拙，在需要精細操作的活動（例如排列一串珠子）上表現較差。然而，男孩在需要全身協調的其他活動上則表現優異。
+📋 內容大意
+Learning style means how a person naturally prefers to learn.
+One study found that girls hear sounds better and handle small movements better than boys.
+Boys saw better at first but were clumsier. They did poorly at fine work like threading beads, yet well at whole-body activities.
+← 第29題回到93 年學測
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

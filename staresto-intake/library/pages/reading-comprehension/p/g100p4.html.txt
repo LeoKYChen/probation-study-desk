@@ -1,0 +1,141 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/g100p4.html
+Author: staresto-create ZZSH
+Title: 100 學測閱讀測驗：紅杉的生態｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 100 學測
+100 學測閱讀測驗：紅杉的生態
+The Ecology of Redwood Trees
+學測 100年第 53–56 題4 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段Redwood trees are the tallest plants on the earth, reaching heights of up to 100 meters. They are also known for their longevity, typically 500 to 1000 years, but sometimes more than 2000 years. A hundred million years ago, in the age of dinosaurs, redwoods were common in the forests of a much more moist and tropical North America. As the climate became drier and colder, they retreated to a narrow strip along the Pacific coast of Northern California.
+第 2 段The trunk of redwood trees is very stout and usually forms a single straight column. It is covered with a beautiful soft, spongy bark. This bark can be pretty thick, well over two feet in the more mature trees. It gives the older trees a certain kind of protection from insects, but the main benefit is that it keeps the center of the tree intact from moderate forest fires because of its thickness. This fire resistant quality explains why the giant redwood grows to live that long. While most other types of trees are destroyed by forest fires, the giant redwood actually prospers because of them. Moderate fires will clear the ground of competing plant life, and the rising heat dries and opens the ripe cones of the redwood, releasing many thousands of seeds onto the ground below.
+第 3 段New trees are often produced from sprouts, little baby trees, which form at the base of the trunk. These sprouts grow slowly, nourished by the root system of the “mother” tree. When the main tree dies, the sprouts are then free to grow as full trees, forming a “fairy ring” of trees around the initial tree. These trees, in turn, may give rise to more sprouts, and the cycle continues.
+題目
+53.Why were redwood trees more prominent in the forests of North America millions of years ago?
+(A)The trees were taller and stronger.
+(B)The soil was softer for seeds to sprout.
+(C)The climate was warmer and more humid.
+(D)The temperature was lower along the Pacific coast.
+54.What does a “fairy ring” in the last paragraph refer to?
+(A)Circled tree trunks.
+(B)Connected root systems.
+(C)Insect holes around an old tree.
+(D)Young trees surrounding a mature tree.
+55.Which of the following is a function of the tree bark as mentioned in the passage?
+(A)It allows redwood trees to bear seeds.
+(B)It prevents redwood trees from attack by insects.
+(C)It helps redwood trees absorb moisture in the air.
+(D)It makes redwood trees more beautiful and appealing.
+56.Why do redwood trees grow to live that long according to the passage?
+(A)They have heavy and straight tree trunks.
+(B)They are properly watered and nourished.
+(C)They are more resistant to fire damage than other trees.
+(D)They produce many young trees to sustain their life cycle.
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+53
+(C)
+53%
+56
+54
+(D)
+48%
+39
+55
+(B)
+66%
+62
+56
+(C)
+58%
+60
+答對率與鑑別度出處：大考中心 100 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表
+每一題的依據句
+第 53 題 細節題 Supporting details
+第 1 段A hundred million years ago, in the age of dinosaurs, redwoods were common in the forests of a much more moist and tropical North America.
+原文 → 正確選項
+moist → humid
+tropical → warmer
+第 1 段說一億年前的北美洲比現在潮濕（moist）得多，屬於熱帶（tropical）氣候，當時紅杉在森林裡很常見，選項換成 warmer and more humid。(D) 照抄 Pacific coast，太平洋沿岸是氣候變乾冷之後紅杉退縮到的地方，時間和因果都接錯了；(B) 照抄第 2 段的 soft，柔軟的是紅杉的樹皮，不是土壤；(A) 文章沒有比較當時和現在的紅杉高矮。
+第 54 題 詞義題（指代詞） Vocabulary in context
+第 3 段When the main tree dies, the sprouts are then free to grow as full trees, forming a “fairy ring” of trees around the initial tree.
+原文 → 正確選項
+around the initial tree → surrounding a mature tree
+第 3 段說母樹死了以後，從樹幹基部長出的嫩芽長成大樹，在原來那棵樹的周圍（around the initial tree）形成一圈 fairy ring，選項換成 young trees surrounding a mature tree。(A) 照抄 trunk，嫩芽長在樹幹基部，圍成一圈的是新長出來的樹，不是樹幹；(B) 照抄 root system，母樹的根系是嫩芽養分的來源，不是那一圈樹；(C) 照抄第 2 段的 insect，原文說樹皮能讓老樹不受昆蟲侵害，文章沒有提到蟲洞。
+換個說法的名詞怎麼認 →
+第 55 題 細節題 Supporting details
+第 2 段It gives the older trees a certain kind of protection from insects,
+原文 → 正確選項
+protection from insects → from attack by insects
+第 2 段說樹皮讓老樹在某種程度上不受昆蟲侵害（protection from insects），選項換成 prevents redwood trees from attack by insects。(A) 照抄 seeds，讓毬果張開、撒出種子的是火災的熱氣，不是樹皮；(D) 照抄 beautiful，原文用 beautiful 形容樹皮的樣子，沒說樹皮的功能是讓紅杉更好看；(C) 吸收空氣中的水分，文章沒提。
+第 56 題 細節題 Supporting details
+第 2 段This fire resistant quality explains why the giant redwood grows to live that long.
+原文 → 正確選項
+fire resistant → resistant to fire damage
+第 2 段說樹皮很厚，能在森林火災中保護樹心，這種耐火（fire resistant）的特性就是紅杉能活那麼久的原因，選項換成 more resistant to fire damage than other trees；同一段也說其他樹木會毀於火災。(A) 照抄 straight，粗壯筆直的樹幹是紅杉的外觀，不是長壽的原因；(B) 照抄第 3 段的 nourished，靠母樹的根系提供養分的是嫩芽；(D) 照抄 cycle，嫩芽長成新樹、循環不息說的是紅杉怎麼繁衍，不是一棵紅杉為什麼長壽。
+逐段中譯
+第 1 段紅杉是地球上最高的植物，可以長到 100 公尺高。紅杉也以長壽聞名，通常能活 500 到 1000 年，有時甚至超過 2000 年。一億年前的恐龍時代，北美洲比現在潮濕得多，屬於熱帶氣候，當時紅杉在森林裡很常見。後來氣候變得比較乾冷，紅杉就退縮到北加州太平洋沿岸的一條狹長地帶。
+第 2 段紅杉的樹幹非常粗壯，通常長成一根筆直的柱子。樹幹外面覆蓋著漂亮、柔軟、像海綿一樣的樹皮。這層樹皮可以相當厚，比較成熟的樹，樹皮厚度超過兩英尺。樹皮讓老樹在某種程度上不受昆蟲侵害，但最主要的好處是，樹皮夠厚，遇到中等規模的森林火災時，能保護樹心完好無損。這種耐火的特性，就是巨大的紅杉能活那麼久的原因。大部分其他種類的樹木會毀於森林火災，巨大的紅杉卻反而因為森林火災長得更好。中等規模的火災會清除地面上和紅杉競爭的植物，上升的熱氣也會烘乾成熟的紅杉毬果，讓毬果張開，把成千上萬顆種子撒在下方的地面上。
+第 3 段新的樹常常從嫩芽長出來，嫩芽就是樹幹基部長出的小樹苗。這些嫩芽長得很慢，靠「母樹」的根系提供養分。母樹死了以後，嫩芽就能自由長成大樹，在原來那棵樹的周圍形成一圈「仙女環」。這些樹接著又可能長出更多嫩芽，就這樣循環下去。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。沒有列出的段落，就是沒有主旨句，請對照「這一篇的文章結構」裡的綱要，找出那一段的重點。這一篇沒有一句話直接點出全文中心思想，要讀完各段，自己歸納。
+第 3 段New trees are often produced from sprouts, little baby trees, which form at the base of the trunk.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體說明文 Expository
+組織方式因果關係 Cause-Effect這一類怎麼辨識 →
+關鍵轉折詞butAsbecauseWhilethenin turn
+綱要
+介紹紅杉是地球上最高的植物，壽命長達數百到兩千年以上。
+(As) 氣候變得乾冷，紅杉從北美各地退縮到加州太平洋沿岸。
+說明樹皮厚實，可防蟲，(because) 更能保護樹心不受火災破壞，所以長壽。
+(While) 其他樹毀於森林火災，紅杉反而受惠：火清除競爭植物，熱氣使毬果張開散播種子。
+新樹常從樹幹基部的嫩芽長出，母樹死後形成「仙女環」，(in turn) 循環不息。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 12 個、參考字彙 8 個、字詞搭配 9 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+moist[mɔɪst]adj.潮濕的三級第 1 段詞彙題考過 1 次：110 學測第 4 題（答案）
+retreat[rɪˈtrit]v.退縮、退到四級第 1 段詞彙題考過 2 次：109 指考補考第 3 題（誘答）、96 學測第 12 題 retreated（誘答）
+benefit[ˈbɛnəfɪt]n.好處三級第 2 段詞彙題考過 2 次：108 學測第 14 題（誘答）、92 學測第 1 題 benefited（誘答）
+moderate[ˈmɑdərət]adj.中等的、不太大的四級第 2 段詞彙題考過 4 次：111 學測第 8 題（誘答）、108 學測第 8 題 moderately（誘答）、99 學測第 1 題（誘答）、90 聯考第 13 題（答案）
+destroy[dɪˈstrɔɪ]v.摧毀、毀掉三級第 2 段詞彙題考過 3 次：100 學測第 7 題（誘答）、83 推薦甄選第 3 題 destroys（誘答）、83 聯考第 9 題（誘答）
+release[rɪˈlis]v.釋放、放出三級第 2 段詞彙題考過 2 次：98 指考第 3 題 released（誘答）、93 指考第 3 題（答案）
+initial[ɪˈnɪʃəl]adj.最初的、原本的四級第 3 段詞彙題考過 4 次：115 學測第 4 題 initially（答案）、108 學測第 10 題（誘答）、102 學測第 15 題 initially（誘答）、89 聯考第 1 題 initially（誘答）
+connected （詞彙表：connect）[kəˈnɛktɪd]adj.相連的三級第 54 題詞彙題考過 3 次：103 學測第 4 題（誘答）、101 學測第 9 題 connected（誘答）、84 推薦甄選第 8 題（誘答）
+surrounding （詞彙表：surround）[səˈraʊndɪŋ]adj.圍繞著的（surrounding a mature tree 圍著一棵成樹）三級第 54 題詞彙題考過 1 次：107 學測第 9 題 surrounded（答案）
+absorb[əbˈzɔrb]v.吸收四級第 55 題詞彙題考過 1 次：106 指考第 5 題 absorbs（誘答）
+appealing （詞彙表：appeal）[əˈpilɪŋ]adj.吸引人的、好看的三級第 55 題詞彙題考過 5 次：113 學測第 9 題（答案）、106 學測第 5 題 appealing（誘答）、99 指考第 2 題（誘答）、85 推薦甄選第 5 題 appealed（誘答）、84 推薦甄選第 8 題（誘答）
+sustain[səˈsteɪn]v.維持、延續五級第 56 題詞彙題考過 1 次：85 聯考第 10 題 sustains（誘答）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+redwood[ˈrɛdˌwʊd]n.紅杉表外第 1 段
+longevity[lɔnˈʤɛvəti]n.長壽六級第 1 段
+stout[staʊt]adj.粗壯的表外第 2 段
+spongy[ˈspʌnʤi]adj.像海綿一樣鬆軟的表外第 2 段
+intact[ɪnˈtækt]adj.完整無損的五級第 2 段
+resistant[rɪˈzɪstənt]adj.耐……的、抗……的（fire resistant 耐火的）六級第 2 段
+sprout[spraʊt]n.新芽、幼苗表外第 3 段
+nourish[ˈnɝɪʃ]v.滋養、供給養分六級第 3 段
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+retreat to + 地方退縮到……第 1 段原文：they retreated to a narrow strip along the Pacific coast
+protection from + N免受……的侵害第 2 段原文：a certain kind of protection from insects
+keep + N + intact讓……保持完好第 2 段原文：it keeps the center of the tree intact
+forest fires森林火災第 2 段原文：moderate forest fires
+clear A of B清除 A 上的 B第 2 段原文：Moderate fires will clear the ground of competing plant life
+at the base of + N在……的底部第 3 段原文：at the base of the trunk
+be free to + V可以自由地……第 3 段原文：the sprouts are then free to grow as full trees
+in turn接著又……第 3 段原文：These trees, in turn, may give rise to more sprouts
+give rise to + N產生……第 3 段原文：may give rise to more sprouts
+← 上一篇篇目一覽
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

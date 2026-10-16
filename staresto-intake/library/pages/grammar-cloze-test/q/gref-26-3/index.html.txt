@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/gref-26-3/index.html
+Author: staresto-create ZZSH
+Title: 學測參考試卷克漏字第26題詳解（連接詞／轉折詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 學測參考試卷 ／ 第26題
+學測參考試卷 克漏字 第26題
+連接詞／轉折詞線索：句內
+Tea and coffee contain caffeine, a substance that can make you active. 26 you do not feel fully engaged after you wake up in the morning, drinking coffee at breakfast can mean the 27 between a productive day and never arriving at work.
+(A)Although
+(B)Because
+(C)If
+(D)Unless
+答案：(C) If
+題目編號：GRef_26_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+If 在這裡引導條件子句，「如果你早上起床後感覺還沒完全清醒」，符合條件句邏輯；Although（雖然）、Because（因為）、Unless（除非）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是從屬連接詞，而「早上起床沒精神所以喝咖啡」聽起來很像因果，Because 很誘人。這一格要看主要子句裡那個 can。
+怎麼判斷
+四個選項都是從屬連接詞，可見這一格考的是前後兩件事的關係。先讀整句：___ you do not feel fully engaged after you wake up in the morning, drinking coffee at breakfast can mean the {27} between a productive day and never arriving at work.（……你早上醒來後覺得還沒完全進入狀況，早餐喝杯咖啡，可能就決定你這一天是有生產力，還是根本到不了公司。）關鍵在主要子句用的是 can mean（可能意味著）——講的是一種可能的結果，不是既成的事實。再看這一整段的口吻：它是在對讀者說明咖啡因的作用，讀者不一定每天早上都沒精神；所以這是一個假設的情境「如果你……那麼……」，填 If。
+誘答選項
+Because（因為）：它預設「你早上就是沒精神」是既定的事實，但作者面對的是所有讀者，不能替每個人斷定；而且既定事實配上 can（可能）語氣也不搭。Although（雖然）：讓步要求前後牴觸，但「沒精神」與「喝咖啡有幫助」是順著走的。Unless（除非）：意思會變成「除非你沒精神，否則喝咖啡才有幫助」，把邏輯整個顛倒了。
+常考字詞與句型
+If + 子句（如果）、feel engaged（進入狀況、投入）、a productive day（有生產力的一天）、contain caffeine（含咖啡因）、a substance（物質）、make sb active（使某人有活力）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Tea and coffee contain caffeine, a substance that can make you active. 26 you do not feel fully engaged after you wake up in the morning, drinking coffee at breakfast can mean the 27 between a productive day and never arriving at work.
+Caffeine is also the main ingredient in many "diet pills." It boosts metabolism, thereby 28 the body to burn more calories. If you take a 29 to a different time zone, caffeine can help you overcome jet lag. Most hotels have coffee and tea service in the room for this very reason.
+Every individual handles caffeine differently. For some people, a single cup of coffee in the morning will make them feel nervous and 30 them up all night. Other people can down five cups and be perfectly calm.
+中譯：茶和咖啡都含有咖啡因，這種物質能讓人變得有活力。如果你早上起床後感覺還沒完全清醒，早餐時喝杯咖啡，可能就是「精神飽滿過完一天」跟「根本到不了辦公室」之間的關鍵差異。咖啡因也是許多「減肥藥」的主要成分，它能促進新陳代謝，進而讓身體燃燒更多卡路里。如果你要搭機前往不同時區，咖啡因也能幫助你克服時差。這正是為什麼大多數飯店房間裡都會提供咖啡與茶飲服務的原因。每個人對咖啡因的反應都不一樣：對某些人來說，早上喝一杯咖啡就會讓他們感到緊張、整晚睡不著；但也有些人可以連喝五杯，卻依然十分平靜。
+📋 內容大意
+Tea and coffee both contain caffeine, a substance that makes people alert.
+A morning cup can decide whether a day is productive. Caffeine is also the main ingredient of many diet pills, since it raises metabolism and helps the body burn more calories.
+Travelers use it against jet lag, which is why hotels provide coffee and tea. One cup leaves some people awake all night; others drink five and stay calm.
+← 第25題回到學測參考試卷第27題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

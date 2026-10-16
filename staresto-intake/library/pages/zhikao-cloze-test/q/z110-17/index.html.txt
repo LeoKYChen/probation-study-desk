@@ -1,0 +1,50 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z110-17/index.html
+Author: staresto-create ZZSH
+Title: 110 年指考克漏字第17題詳解（時態／語態）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 110 年指考 ／ 第17題
+110 年指考 克漏字 第17題
+時態／語態線索：跨句答對率 58%
+答對率 58%：當年每 100 位考生，有 58 位答對。
+Others 17 the size of a small stone.
+(A)may be
+(B)would be
+(C)must have been
+(D)could have been
+答案：(A) may be
+題目編號：Z110_17（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+may be 表示對現在事實的推測可能性，符合「其他流星體可能只有小石頭大小」的客觀描述語氣；would be 通常需搭配假設語境；must have been／could have been 為完成式，用於對過去事件的推測，與此處描述客觀現況不符。
+深入解析
+你可能會這樣想
+四個選項都是助動詞加上 be，中間還混了兩個 have been，很容易一頭栽進「這是在考語氣還是在考時態」的分析。這一題不必想那麼遠，前一句就把答案定下來了。
+怎麼判斷
+把前後兩句擺在一起看：Some are very large and may be hundreds of feet wide. Others ___ the size of a small stone.（有些非常大，可能寬達數百英尺。其他的只有小石頭那麼大。）Some... Others... 是一組成對的說法，兩句在講同一件事的兩半，句型與時態理當一致。前一句用的是現在式的 are 與 may be，講的是流星體現在普遍的樣子；後一句照抄同一個形態就對了。這個方法在克漏字裡非常好用：遇到並列或對稱的結構，先找出前面那一個是什麼形態，後面照抄。
+誘答選項
+must have been 與 could have been 都是助動詞加上 have 與過去分詞，講的是對過去的推測（當時一定是……、當時可能是……）。但本文在描述流星體現在的性質，不是在回推某件已經發生的事，時間層整個對不上。would be 常用在假設或過去的未來，本句既沒有假設的前提，也沒有一個過去的時間點可以往後看。鑑別度 56，分開的是有沒有回頭讀前一句，還是只盯著空格附近推敲語氣。
+常考字詞與句型
+Some... Others...（有些……其他的……）、may be（可能是，表推測）、must have + 過去分詞（當時一定……）、could have + 過去分詞（當時可能……）、the size of（……那麼大）、chunks of rock or metal（石塊或金屬碎塊）。
+線索範圍說明：Others 承接前一句 Some are very large，兩句一大一小，對比說明流星體的大小
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：110學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Do you know the difference between the terms meteoroid, meteor, and meteorite in astronomy? Many people find these words confusing. However, the difference is all about their 16.
+Meteoroids are far up in the sky. They are chunks of rock or metal that speed through space. Some are very large and may be hundreds of feet wide. Others 17 the size of a small stone. Most meteoroids travel around the sun in space and stay away from the Earth. However, sometimes a meteoroid will enter the Earth's atmosphere. Friction with the atmosphere will cause it to 18 and burn while traveling at high speed.
+As a meteoroid begins to burn in the atmosphere, it leaves a streak of light. When this tail-like light is falling down toward the Earth, it is called a meteor, or a shooting star. Most meteors vaporize completely before they hit the ground.
+If any meteor 19 its fiery journey through the atmosphere and lands on Earth, it is called a meteorite. Large meteorites can cause great explosions and much destruction on the surface of the Earth. 20 , Barringer Crater in the American state of Arizona, measuring 1,200 m in diameter and some 170 m deep, was produced by a meteorite impact.
+中譯：你知道天文學中「流星體」（meteoroid）、「流星」（meteor）與「隕石」（meteorite）這幾個詞的差別嗎？許多人常把這些詞搞混。然而，它們的差別其實全在於所在的位置。流星體位於高空之中，是在太空中高速穿梭的岩石或金屬碎塊。有些流星體非常巨大，可能寬達數百英尺；其他則可能只有小石頭般大小。大多數流星體會繞著太陽在太空中運行，遠離地球。然而，有時候流星體會進入地球大氣層，與大氣層的摩擦會使它在高速前進的同時開始升溫並燃燒。當流星體在大氣層中開始燃燒時，會留下一道光跡；當這道拖著尾巴的光芒朝地球墜落時，就被稱為「流星」，或稱 shooting star。大多數流星在撞擊地面前就已完全氣化。如果有流星在穿越大氣層的熾熱旅程中存活下來、並最終落到地球上，就被稱為「隕石」。大型隕石可能在地表造成劇烈爆炸和嚴重破壞。舉例來說，位於美國亞利桑那州、直徑約 1200 公尺、深約 170 公尺的巴林傑隕石坑，就是一次隕石撞擊所形成的。
+📋 內容大意
+Meteoroid, meteor and meteorite name the same object at three different places.
+Meteoroids are rocks or metal, from pebble-sized to hundreds of feet, racing through space.
+One entering our atmosphere burns and leaves a streak of light, the meteor or shooting star.
+The few that survive and land are meteorites, and big ones blast craters like Arizona's.
+← 第16題回到110 年指考第18題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

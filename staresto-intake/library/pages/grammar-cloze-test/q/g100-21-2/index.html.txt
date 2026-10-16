@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g100-21-2/index.html
+Author: staresto-create ZZSH
+Title: 100 年學測克漏字第21題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 100 年學測 ／ 第21題
+100 年學測 克漏字 第21題
+慣用語／片語線索：句內答對率 56%
+答對率 56%：當年每 100 位考生，有 56 位答對。
+It 21 the kind of welcome it has been getting ever since.
+(A)is given
+(B)was given
+(C)has given
+(D)had given
+答案：(B) was given
+題目編號：G100_21_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+被動語態過去式 was given，「它（首演）獲得了從那時起一直持續的熱烈歡迎」（被觀眾「給予」歡迎，被動）；is given（現在式，時態不合，這是講首演那次的過去事件）、has given（現在完成主動，方向不合）、had given（過去完成主動，方向也不合）都不合。
+深入解析
+你可能會這樣想
+看到後半的 it has been getting ever since（從那時起一直受到），很多人覺得整句要配現在完成式，就挑了 has given。另一個容易錯的地方是主動被動：welcome 在這裡是名詞「歡迎」，歡迎是觀眾給的，音樂劇是接受的一方。
+怎麼判斷
+先確定時間點。前一句寫得很清楚：On March 23, 1999, the musical MAMMA MIA! made its first public appearance in London.（1999 年 3 月 23 日在倫敦首演）。這一句講的就是首演當晚的事，是一個結束在過去的時間點，所以用過去式。後半的 ever since 反而是線索：既然說「從那時起一直如此」，那個「那時」就是一個過去的點，而本句正是在描述那個點。再判斷語態。give 是「給」，還原成主動就是 The audience gave it the kind of welcome...（觀眾給了它這樣的歡迎）。把受詞 it 提到句首當主詞，就變成 It was given the kind of welcome...。這是授與動詞的被動：give sb sth 變成 sb is given sth，例如 He gave me a book. → I was given a book. 這一題的鑑別度只有 31，是這一年最低的一題，連高分群考生也大量失手。原因是兩個關卡疊在一起：要同時判斷時態（首演那一刻，過去式）和語態（歡迎是被給予的，被動）。只要其中一個判斷錯就會被帶走，而 has given 對「看到 ever since 就想完成式」的人特別像正確答案。
+誘答選項
+is given：語態對了，但現在式講的是常態，接不上「1999 年首演那一晚」這個明確的過去時間點。has given：現在完成式而且是主動，方向相反，會變成「音樂劇給了歡迎」。had given：過去完成式而且是主動，方向同樣相反，何況過去完成式要有另一個過去時間點當參照，用來表示在那個時間點之前就已經發生的事，本文沒有這樣的參照點。
+常考字詞與句型
+give sb a warm welcome（熱烈歡迎某人）、make one's first public appearance（首次公開亮相）、ever since（從那時起一直）、go wild（為之瘋狂）、out of one's seat（離開座位）、in the aisles（在走道上）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+On March 23, 1999, the musical MAMMA MIA! made its first public appearance in London. It 21 the kind of welcome it has been getting ever since. The audience went wild. They were literally out of their seats and singing and dancing in the aisles.
+MAMMA MIA! has become a 22 entertainment phenomenon. More than 30 million people all over the world have fallen in love with the characters, the story and the music. The musical has been performed in more than nine languages, with more productions than any 23 musical.
+Its worldwide popularity is mainly due to its theme music, which showcases ABBA's timeless songs in a fresh and vital way 24 retains the essence of both pop music and good musical theater. It has 25 so many people that a film version was also made. To no one's surprise, it has enjoyed similar popularity.
+中譯：1999 年 3 月 23 日，音樂劇《媽媽咪呀！》在倫敦首次公演。從那時起，它便一直受到同樣熱烈的歡迎。觀眾反應相當熱情，紛紛離開座位，在走道上又唱又跳。《媽媽咪呀！》已成為一股全球性的娛樂現象，全球超過三千萬人為劇中角色、劇情和音樂深深著迷。這齣音樂劇已用超過九種語言演出，製作場次比任何其他音樂劇都多。它之所以廣受歡迎，主要歸功於劇中的主題音樂，以清新而充滿活力的方式呈現 ABBA 樂團的經典歌曲，同時保留了流行音樂與優質音樂劇場的精髓。它吸引了如此多人，甚至因此拍成電影版，而電影版也毫不意外地同樣廣受歡迎。
+📋 內容大意
+The musical MAMMA MIA! opened in London on March 23, 1999. The audience left their seats and danced in the aisles.
+More than 30 million people around the world have come to love its characters, story and music. It has been staged in over nine languages.
+Its success rests on ABBA's songs, presented in a fresh way. A film version followed and was just as popular.
+← 第20題回到100 年學測第22題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

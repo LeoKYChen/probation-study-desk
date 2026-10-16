@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z93m-16/index.html
+Author: staresto-create ZZSH
+Title: 93 年指考敏督利颱風受災地區考生補救考試克漏字第16題詳解（介系詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 93 年指考敏督利颱風受災地區考生補救考試 ／ 第16題
+93 年指考敏督利颱風受災地區考生補救考試 克漏字 第16題
+介系詞線索：句內
+He displayed two jars in front of the group, one containing water and the other containing alcohol, 16 a very healthy worm.
+(A)in addition
+(B)along with
+(C)on account of
+(D)as a result of
+答案：(B) along with
+題目編號：Z93M_16（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+along with（連同）表示「和一條健康的蟲一起展示」，along with a very healthy worm 補充說明展示品還包括一條蟲。in addition 通常需搭配 to 或單獨作副詞使用、on account of（因為）、as a result of（由於）都不符合這裡「一併展示」的語意。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+in addition 的中文是「此外」，把它擺進空格讀成「此外還有一條很健康的蟲」，意思好像完全通順，於是就直接選了它。落差在於：in addition 後面接的是一整句話（He displayed two jars. In addition, he showed a worm.），它本身不能帶名詞；要讓它後面直接放名詞，非得補上 to 不可——劍橋 English Grammar Today 談 in addition to 時舉的例句是 In addition to doing an exam, applicants also had to do an interview.（除了考試之外，申請人還得面試。）
+怎麼判斷
+先看空格後面接的是什麼：a very healthy worm 是一個名詞組，前面沒有動詞、也沒有連接詞帶出新的句子，可見這一格要的是能直接接名詞的東西。四個選項有三個做得到（along with、on account of、as a result of 後面都接名詞），只有 in addition 少了 to，形態本身就不完整。片語題先檢查冠詞與介系詞有沒有缺，缺零件的往往一眼就刷得掉，這個方法很值得練熟。剩下三個再用語意分：這一整句從頭到尾都在列「他擺出了什麼」——兩個罐子，一個裝水、一個裝酒精，再加上一條蟲，是一份展示品的清單，不是因果關係。along with 的意思正是「連同、和……一起」，接得上這份清單。
+誘答選項
+on account of（因為）與 as a result of（由於……的結果）雖然都能直接接名詞，但兩個講的都是原因，而那條蟲不是他擺出兩個罐子的理由。in addition 若要成立，句子得改寫成 ..., and in addition, he showed a very healthy worm.，先有對等連接詞與主詞動詞才行。這三個選項有一個共同的破綻：沒有一個能把那條蟲掛進「展示品清單」裡。
+常考字詞與句型
+along with（連同、和……一起）、in addition to（除了……之外還有）、on account of（因為，後面接名詞）、as a result of（由於……的結果）、display（展示、陳列）、one ... the other ...（兩者之中一個……另一個……，例如 I have two pens. One is red; the other is blue.）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+A man wanted to prove to a group of alcoholics the effect of alcohol on human body systems. He displayed two jars in front of the group, one containing water and the other containing alcohol, 16 a very healthy worm. He said to the audience: "This jar contains water." Then he dropped the worm in the jar and said, "Please watch the reaction." The group watched closely 17 the worm floated in the jar, dangling and swimming.
+The man then took the worm out of the first jar and put it in the second jar 18 contained alcohol and said to the audience, "Now watch the reaction." The group saw the worm go down into the water and soon begin to struggle for 19. Right there and then every one in the group witnessed the worm shrinking and disintegrating. Then it died.
+The man turned round and asked the audience, "What would you all say to this?" After a long silence, someone from the rear 20 and said, "I can see that if I drink alcohol, there will be no more worms in my body."
+中譯：有個人想向一群酗酒者證明酒精對人體系統的影響。他在群眾面前擺出兩個罐子，一個裝水、另一個裝酒精，並在旁邊放了一條非常健康的蟲。他對聽眾說：「這個罐子裝的是水。」接著他把蟲放進罐子裡，說：「請仔細觀察牠的反應。」群眾專注地看著這條蟲在罐子裡漂浮、擺動、游動。接著，這個人把蟲從第一個罐子拿出，放進裝有酒精的第二個罐子，並對聽眾說：「現在請觀察牠的反應。」群眾看到這條蟲沉入水中，很快便開始為了求生而掙扎。就在那一刻，在場所有人都目睹了這條蟲逐漸萎縮、瓦解，最後死去。這個人轉過身，問聽眾：「你們對此有什麼看法？」在一片長久的沉默之後，後排有人站了起來，說：「我明白了，如果我喝酒，我體內就再也不會有蟲了。」
+📋 內容大意
+A man set out to show drinkers what alcohol does to the body.
+A worm swam happily in his jar of water, but shrank, struggled and died in the jar of alcohol.
+Asked what they had learned, one listener replied that drinking would rid him of worms.
+回到93 年指考敏督利颱風受災地區考生補救考試第17題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

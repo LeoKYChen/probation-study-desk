@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g107-21-2/index.html
+Author: staresto-create ZZSH
+Title: 107 年學測克漏字第21題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 107 年學測 ／ 第21題
+107 年學測 克漏字 第21題
+慣用語／片語線索：句內答對率 63%
+答對率 63%：當年每 100 位考生，有 63 位答對。
+Hair usually gets greasy when it has not been washed because it soaks up oil—hence the need for shampoo! 21 this oil-absorbing feature might not always be so great for our hygiene, it can be great for the environment.
+(A)For
+(B)While
+(C)In case
+(D)As long as
+答案：(B) While
+題目編號：G107_21_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意讓步對比：「雖然這種吸油特性對我們的衛生可能不總是很好，但它對環境卻可能很棒」，While 在這裡表示「雖然」的讓步轉折；For（因為）、In case（以防）、As long as（只要）都不合。
+深入解析
+你可能會這樣想
+while 你腦中第一個意思一定是「當……的時候」，所以看到句首的 While 會直覺去找「同時發生」的兩件事，結果怎麼讀都不通順。問題出在 while 當連接詞其實有兩個意思：一個是時間（在……的時候），另一個是表示對比或讓步（雖然、然而）（劍橋 English Grammar Today）。
+怎麼判斷
+看前後兩個子句的關係就好。前半：this oil-absorbing feature might not always be so great for our hygiene（這種吸油的特性對我們的衛生不見得是好事）；後半：it can be great for the environment（但它對環境可能很棒）。一個負面、一個正面，是明顯的對比，不是同時發生。驗算方式最簡單：把 While 換成 Although（雖然）讀一次，意思完全通，那就對了。表示對比的 while 也可以換成 whereas（然而）。
+誘答選項
+For（因為）表原因，但吸油特性對衛生不好，並不是它對環境好的原因。In case（以防萬一）要接「為了預防某事發生」。As long as（只要）是條件。這三個代進去，前後兩句的正負對比全部會消失。這個「因果還是對比」的判斷在 108 年第 25 題 →也考過（Due to 與 In contrast to 的選擇），做法一樣：先看前後兩句是同向還是反向，再挑連接詞。
+常考字詞與句型
+while（雖然、然而，表對比；也可表「當……的時候」）、whereas（然而，表對比）、although（雖然）、even though（即使、雖然）、in case（以防萬一）、as long as（只要）、soak up（吸收）、be great for（對……很有好處）、hygiene（衛生）。其中 even though 這一組考過 6 個年度，89 年第 23 題 →、95 年第 25 題 →、96 年第 25 題、103 年第 30 題 →、106 年第 19 題 →都出現過；as long as 考過 4 個年度，89 年第 24 題 →、96 年第 23 題 →、98 年第 19 題 →都出現過；in case 考過 3 個年度，85 年第 33 題 →、96 年第 23 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Hair usually gets greasy when it has not been washed because it soaks up oil—hence the need for shampoo! 21 this oil-absorbing feature might not always be so great for our hygiene, it can be great for the environment.
+Matter of Trust, a nonprofit organization, has an innovative solution for removing the large-scale oil spill in the Gulf of Mexico in 2010, using the ultimate renewable 22 : human hair, of which there is an unlimited supply. Since its founding in 1998, Matter of Trust has collected donations of human hair and animal fur to 23 the thousands of oil spills that happen each year. The hair and fur are made into mats and brooms and sent to 24 waters to absorb the oil.
+Across the United States each day, 300,000 pounds of hair and fur are cut. Matter of Trust is helping organize the collection of this 25 hair and fur through thousands of salons, pet groomers, and ranchers. Individuals can also speak to local hair stylists and pet groomers about sending in leftover hair and fur.
+中譯：頭髮沒有清洗時通常會變得油膩，因為它會吸收油脂——這也是為什麼我們需要用洗髮精的原因！雖然這種吸油特性對我們的個人衛生來說未必是件好事，但對環境而言，卻可能大有益處。非營利組織「Matter of Trust」，針對 2010 年墨西哥灣大規模漏油事件，提出了一項創新的解決方案——利用終極的可再生資源：人類的頭髮，因為頭髮的供應量幾乎是取之不盡的。自 1998 年成立以來，「Matter of Trust」持續收集人類頭髮和動物毛皮的捐贈，用來應對每年發生的數千起漏油事件。這些頭髮和毛皮會被製成吸油墊和吸油刷，送往受污染的水域吸附油污。在美國，每天約有 30 萬磅的頭髮和毛皮被剪下。「Matter of Trust」透過全美數千家美髮沙龍、寵物美容店和牧場，協助組織收集這些原本不會被利用的頭髮和毛皮。個人也可以主動與當地的美髮師或寵物美容師聯繫，將剩餘的頭髮和毛皮送去捐贈。
+📋 內容大意
+Hair turns greasy because it soaks up oil. That is bad for hygiene but useful for the environment.
+The nonprofit Matter of Trust used human hair to clean the 2010 Gulf of Mexico oil spill. Since 1998 it has collected hair and animal fur.
+Donated hair becomes mats and brooms sent out to oiled waters. Salons, pet groomers and ranchers gather the 300,000 pounds cut daily across the United States.
+← 第20題回到107 年學測第22題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

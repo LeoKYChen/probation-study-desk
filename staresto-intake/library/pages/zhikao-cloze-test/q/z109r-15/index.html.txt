@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z109r-15/index.html
+Author: staresto-create ZZSH
+Title: 109 年指考補考克漏字第15題詳解（關係子句／疑問詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 109 年指考補考 ／ 第15題
+109 年指考補考 克漏字 第15題
+關係子句／疑問詞線索：句內
+Scientists also report that the category 15 the person belongs (family, close friends, etc.) is far more influential in causing a mix-up than any phonetic similarity between names.
+(A)by whom
+(B)to which
+(C)in that
+(D)for what
+答案：(B) to which
+題目編號：Z109R_15（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【關係代名詞】to which 引導形容詞子句修飾 category，還原句意為 the person belongs to the category，介系詞 to 須提前置於 which 之前。by whom（被誰）、in that（因為）、for what（為了什麼）都不符合此處 belong to 的字詞搭配及句構。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個都是「介系詞加關係詞」的組合，形態很像，很容易憑語感挑；by whom 因為 the person 是人，看起來特別合理。
+怎麼判斷
+這一類題只有一條路走得通：把關係子句還原成一個獨立的句子，看缺的是哪一塊。原句是 the category ______ the person belongs（那個人所屬的 ______ 類別），還原成 The person belongs to the category.（那個人屬於這個類別）。belong 是不及物動詞，後面一定要接 to 才帶得出「屬於什麼」，belong to 是常見的字詞搭配，所以介系詞確定是 to。再看先行詞：the category 是東西不是人，關係代名詞用 which。合起來就是 to which。判斷方式壓成一句話：先還原成完整句子，看動詞需要哪個介系詞、先行詞是人還是物，兩件事分開決定，就不會在四個組合之間繞圈子。
+誘答選項
+by whom 的 whom 指人，但先行詞是 the category（類別），對不上；而且 belong 也不配 by。in that 是連接詞，意思是「因為、在於」（It is a good plan in that it saves time），後面要接完整的子句，不是回頭修飾前面的名詞。for what 不成立——前面已經有先行詞 the category 時就不能用 what，得改用 which 或 that，這是 what 的鐵律：它自己已經含著先行詞，前面不能再站一個名詞。
+常考字詞與句型
+belong to（屬於）、介系詞 + which（回頭修飾前面的名詞）、the category to which ...（……所屬的類別）、in that（因為、在於）、influential（有影響力的）、phonetic similarity（語音上的相似）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+"Anne! Jo! I mean, Max!" Mothers often mix up their children's names, but studies show that moms are not the only ones who make this mistake. 11 name phenomenon turns out to be very common. Almost everyone sometimes mixes up the names of their family and friends.
+The phenomenon is called a "cognitive glitch" by researchers in the field of cognitive science. It is not caused by a bad memory or by aging processes that affect brain functioning. It is simply a result of the way our brain 12 those we love.
+When our brain is attempting to retrieve a name so that we can say it, it is likely that another name in the same group will come to our lips 13 the one we meant to say. That is because in order to find the name we are looking for, we are essentially 14 the whole set of names in that group, which includes all our beloved family members. Scientists also report that the category 15 the person belongs (family, close friends, etc.) is far more influential in causing a mix-up than any phonetic similarity between names. Names that sound alike do not usually trigger the mix-up.
+Isn't it great to know that when you call others by the wrong name, it is evidence of your love for them all?
+中譯：「安！喬！我是說，麥克斯！」母親常常會叫錯孩子的名字，但研究顯示，會犯這種錯誤的並不只有媽媽們。這種「名字混淆」的現象其實相當普遍，幾乎每個人都曾經叫錯過家人或朋友的名字。
+認知科學領域的研究者將這種現象稱為「認知小失誤」（cognitive glitch）。這不是記憶力不好，也不是老化影響腦部功能所導致，而單純是我們大腦分類所愛之人的方式所造成的結果。
+當大腦試圖提取一個名字以便說出口時，同一個「群組」裡的另一個名字很可能會先脫口而出，取代原本想說的那個名字。這是因為，為了找出我們要找的那個名字，大腦實際上是在「翻找」該群組裡的整套名字，而這個群組正好包含了我們所有摯愛的家人。科學家也指出，某人所屬的「類別」（例如家人、密友等）遠比姓名發音是否相似，更容易造成叫錯名字的情況；發音相似的名字反而通常不太會引發混淆。
+這樣想來是不是很棒呢？當你叫錯別人的名字時，其實正證明了你有多愛他們。
+📋 內容大意
+Mothers often call one child by another's name, and studies show almost everyone muddles the names of loved ones.
+Scientists call it a cognitive glitch, caused not by poor memory or aging but by how the brain sorts people.
+Fetching one name means searching a whole group, so a neighboring name slips out first.
+The group a person sits in matters more than any likeness in sound, so the error signals affection.
+← 第14題回到109 年指考補考第16題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

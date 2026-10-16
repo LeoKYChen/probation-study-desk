@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z98ref-19/index.html
+Author: staresto-create ZZSH
+Title: 指考參考試卷（95 課綱適用，98 年施測）克漏字第19題詳解（句型結構）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 指考參考試卷（95 課綱適用，98 年施測） ／ 第19題
+指考參考試卷（95 課綱適用，98 年施測） 克漏字 第19題
+句型結構線索：句內
+Therefore we think of architecture as some vague, learned thing having to do with French cathedrals or Italian palaces or Greek temples, 19 with New York or Chicago streets or Los Angeles suburbs.
+(A)not
+(B)but
+(C)often
+(D)then
+答案：(A) not
+題目編號：Z98參_19（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+本句以 having to do with X, not with Y 的結構表達對比：我們誤以為建築只和歐洲古蹟有關，而非和紐約、芝加哥街道有關，故填入 not 以形成「與 X 有關、而非與 Y 有關」的對比句構；but／often／then 都不符合此處的對比邏輯。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+逗號後面接一個字再接 with，很容易讀成「而且也跟紐約街頭有關」，於是往 but 那種轉折的方向想。
+怎麼判斷
+照第 18 題那三步走。第一步找對等連接詞：這裡沒有 and，但逗號加上空格那個字站的就是連接的位置。第二步看它連的是哪兩樣：前面是 with French cathedrals or Italian palaces or Greek temples（用 or 並列的三個名詞，全是遠方的古典建築），後面是 with New York or Chicago streets or Los Angeles suburbs用 or 並列的三個名詞，全是眼前美國城市的街道與郊區。兩邊結構完全對稱，都是「with + 三個並列的名詞」，這種對稱本身就是最強的線索。第三步從兩邊的內容反推：整段正在說我們誤以為建築是某種模糊高深的東西，所以這一格要把身邊那一組排除掉——A, not B（是 A，不是 B）。
+誘答選項
+but 雖然也表對比，但它連接的後半仍然是成立的（不是被否定的）；這裡要說的是「我們沒把紐約街頭算進去」，是排除不是轉折。often（經常）與 then（然後）都是副詞，接不起兩個 with 片語，放進去整句會斷掉。
+常考字詞與句型
+A, not B（是 A，不是 B）、have to do with（與……有關）、cathedral（大教堂）、palace（宮殿）、suburb（郊區）、vague（模糊不清的）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Architecture is an art. Any art must give us pleasure; if it doesn't, either it is bad art or we are abnormally blind. We are in general insensitive to architecture 16 an art and to the joy it may bring to us. It is the constant nearness of architecture during our life that has 17 us in this way.
+We forget that it is an art of here and now; because it is with us every day and 18 we must have houses to live in, we are apt to think of them solely as dwelling places. Therefore we think of architecture as some vague, learned thing having to do with French cathedrals or Italian palaces or Greek temples, 19 with New York or Chicago streets or Los Angeles suburbs.
+This false belief has strengthened in us until our eyes are 20 and our minds are deadened to all the beauty that is being created around us today. Eventually we lose all the fine deep pleasure that we might otherwise experience from our ordinary surroundings.
+中譯：建築是一門藝術。任何藝術都必須帶給我們愉悅感；如果做不到這一點，那要不是這件作品本身不算好藝術，就是我們的感受力異常遲鈍。我們普遍對建築作為一門藝術、以及它可能帶給我們的喜悅相當不敏感。正是因為建築在我們生活中無所不在、如此貼近，才讓我們對它產生了這樣的盲目。我們忘了建築其實是一門「當下、此地」的藝術；因為它每天都與我們同在，而且我們生活中必須要有房子可住，我們便容易只把房子當作居住場所來看待。因此，我們把建築想像成某種模糊、學術性的東西，聯想到的是法國的大教堂、義大利的宮殿或希臘的神廟，而不是紐約或芝加哥的街道、或洛杉磯的郊區。這種錯誤的觀念在我們心中根深柢固，使我們的雙眼變得遲鈍，心靈也對今日周遭正在被創造出來的一切美好事物麻木無感。最終，我們失去了原本可能從日常周遭環境中所體驗到的那種深刻美好的愉悅感。
+📋 內容大意
+Architecture is an art, yet most of us take no pleasure in it.
+Being always around us, buildings seem mere shelter rather than works of art.
+So we reserve the name for foreign cathedrals and palaces, and grow blind to the beauty built beside us today.
+← 第18題回到指考參考試卷（95 課綱適用，98 年施測）第20題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

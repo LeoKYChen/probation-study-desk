@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g105-29-3/index.html
+Author: staresto-create ZZSH
+Title: 105 年學測克漏字第29題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 105 年學測 ／ 第29題
+105 年學測 克漏字 第29題
+字彙選義線索：句內答對率 64%
+答對率 64%：當年每 100 位考生，有 64 位答對。
+Today, all countries are involved in, and to varying degrees dependent on, trade with other countries. 29 international trade, nations would be limited to the goods and services produced within their own borders.
+(A)Despite
+(B)Between
+(C)Without
+(D)Under
+答案：(C) Without
+題目編號：G105_29_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+假設語氣的語境（配合 would be），「沒有國際貿易，各國就只能用自己國內生產的商品和服務」，Without（沒有）符合這種假設條件；Despite（儘管）、Between（在……之間）、Under（在……之下）都不合。
+深入解析
+你可能會這樣想
+Despite（儘管）和 Without（沒有）在中文裡都帶點「不管有沒有」的味道，考試時很容易混淆；而且 Despite 看起來比較「高級」，反而容易讓人誤選。
+怎麼判斷
+決定性的線索是主要子句裡的 would：nations would be limited to the goods and services produced within their own borders（各國將只能侷限於自己境內生產的商品與服務）。劍橋 English Grammar Today 的「Would」條說明，would 用在條件句的主要子句，談的是想像出來的情況。既然是想像，前面就必須有一個「假設的條件」。without 加名詞正好可以當條件用，等於一個 if 子句 — 劍橋 English Grammar Today 的「Without」條指出，without 帶有否定意味，without 加 V-ing 可以表達「如果某人不做某事」。還原成 if 子句驗算：Without international trade, nations would be limited to… ＝ If there were no international trade, nations would be limited to…（如果沒有國際貿易，各國就只能侷限於……）再把 Despite 代進去讀完整句：Despite international trade, nations would be limited to…（儘管有國際貿易，各國仍會被侷限於……）— 這和全文主旨完全相反，文章從頭到尾都在說貿易讓各國突破自身國境的限制。「代進去把整句讀完」永遠比只看單字中譯安全。這個句型在道謝時很常見：Without your help, I couldn't have finished it.（沒有你的幫忙，我不可能完成。）
+誘答選項
+Despite（儘管）表讓步，後面接名詞，例 despite the rain（儘管下雨），與 would 的假設語意搭不起來。Between（在……之間）後面通常接兩者，或接 A and B。Under（在……之下；在……情況下）例 under pressure（在壓力下），但 under international trade 不是英文的說法。
+常考字詞與句型
+Without + 名詞（若沒有……）、without（沒有；如果沒有）、despite + 名詞（儘管……）、in spite of（儘管……）、be limited to（只限於、侷限於）、within one's borders（在國境之內）、be dependent on（依賴……）。其中 in spite of 這一組考過 9 個年度，86 年第 21 題 →、89 年第 30 題 →、93 年第 23 題 →、99 年第 24 題 →、99 年第 28 題 →、106 年第 19 題 →、107 年第 30 題 →、109 年第 29 題 →、112 年第 15 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+International trade is the exchange of goods and services between countries. Trade is driven by different production costs in different countries, making 26 cheaper for some countries to import goods rather than make them. A country is said to have a comparative advantage over another when it can produce a commodity more cheaply. This comparative advantage is 27 by key factors of production such as land, capital, and labor.
+While international trade has long been conducted in history, its economic, social, and political importance has been 28 in recent centuries. During the 1990s, international trade grew by nearly 8.6% each year. In the year 1990 alone, the growth in trade in services was as high as 19%. Today, all countries are involved in, and to varying degrees dependent on, trade with other countries.
+29 international trade, nations would be limited to the goods and services produced within their own borders. Trade is certainly a main 30 force for globalization. It is also the subject of many international agreements that aim to govern and facilitate international trade, such as those negotiated through the World Trade Organization (WTO).
+中譯：國際貿易是國與國之間商品與服務的交換。由於各國生產成本不同，貿易因此產生，這使得某些國家從國外進口商品，比自行生產更為划算。當一個國家能以更低成本生產某項商品時，就被稱為對其他國家擁有「比較利益」。這種比較利益取決於土地、資本、勞力等關鍵生產要素。雖然國際貿易早已存在於歷史之中，但其經濟、社會與政治上的重要性在近幾個世紀大幅提升。1990 年代，國際貿易每年成長近 8.6%，光是 1990 年，服務貿易的成長率就高達 19%。如今，世界各國都不同程度地參與並依賴與他國的貿易往來。若沒有國際貿易，各國就只能使用自己國境內生產的商品與服務。貿易無疑是推動全球化的一股主要力量，也是許多旨在規範與促進國際貿易的國際協議的核心議題，例如透過世界貿易組織（WTO）所談判達成的各項協定。
+📋 內容大意
+International trade relies on comparative advantage and cost differences among countries for producing goods and services.
+The economic and political significance of global trade has grown rapidly in modern history, creating widespread global interdependence.
+International trade drives globalization and is governed by key international agreements and organizations.
+← 第28題回到105 年學測第30題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z109r-18/index.html
+Author: staresto-create ZZSH
+Title: 109 年指考補考克漏字第18題詳解（介系詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 109 年指考補考 ／ 第18題
+109 年指考補考 克漏字 第18題
+介系詞線索：句內
+Researchers believe this results from its extremely hot atmosphere, which is as high as 1,800°F (980°C), 18 its closeness to its sun—its source of energy.
+(A)thanks to
+(B)regardless of
+(C)in addition to
+(D)in terms of
+答案：(A) thanks to
+題目編號：Z109R_18（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【慣用語】thanks to 表示「由於／多虧」，說明大氣層高溫的原因是它距離恆星（能量來源）很近。regardless of（不論）、in addition to（此外）、in terms of（就…而言）都不符合此處表因果關係的文意。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+thanks to 這個組合，你的印象大概只有「感謝」兩個字，很難立刻想到它其實是在講原因；四個選項又都由兩三個字組成、長得像，容易憑語感挑。
+怎麼判斷
+先確認空格兩邊的關係。前面是 its extremely hot atmosphere（它極熱的大氣層），後面是 its closeness to its sun，而破折號後面作者把話講白了：its source of energy（那是它的能量來源）。離能量來源很近，所以非常熱——這是因果關係，空格要填的是帶出原因的說法。thanks to 的意思正是「由於、多虧」。特別要記的是它不帶好壞的感情色彩，壞事一樣能用：The game was cancelled thanks to the rain.（比賽因為下雨取消了），別被字面的 thanks 綁住。另外看這四個選項的共同身分：它們後面一律接名詞，整組當一個介系詞用，是多字介系詞而不是連接詞——連接詞後面接的是子句。這個分法有依據：劍橋 English Grammar Today 的 Prepositions 條目說 some pairs and groups of words operate like single prepositions，並把 because of、in place of、in addition to、in front of、up to 列為例子。
+誘答選項
+regardless of（不管、無論）表示不受影響，但這一句的高溫正是被距離影響的，方向剛好相反。in addition to（除了……之外，還）要求前後是可以相加的兩樣東西，但「離恆星近」不是與「大氣很熱」並列的另一件事，它是那件事的原因。in terms of（就……而言、從……的角度）用來限定討論的角度（in terms of cost），接在這裡讀不通。
+常考字詞與句型
+thanks to（由於、多虧，不限好事）、regardless of（不管、無論）、in terms of（就……而言）、as high as（高達）、closeness to（與……的接近程度）、source of energy（能量來源）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Astronomers have discovered the darkest alien planet known to exist in the galaxy.
+The Jupiter-sized planet, known as TrES-2b, is located in another solar system some 750 million light years away from Earth. Reflecting less than one percent of the sunlight 16 on it, TrES-2b is less reflective than black acrylic paint, and is blacker than coal. The only light that comes from TrES-2b is a faint red glow, 17 the heated coils on an electric stove or a very dim light bulb. Researchers believe this results from its extremely hot atmosphere, which is as high as 1,800°F (980°C), 18 its closeness to its sun—its source of energy.
+So how does this planet manage to absorb about 99% of the light it receives from its sun? 19 researchers are not completely sure, they believe it could be because its atmosphere is composed of light-absorbing chemicals like vaporized sodium or even some elements whose existence is not yet known. Although they may never be able to 20 exactly how the planet remains so stealthily hidden, scientists are sure of one thing—there are many more even darker planets out there just waiting to be discovered!
+中譯：天文學家發現了目前已知銀河系中最黑暗的一顆系外行星。
+這顆與木星大小相當、名為 TrES-2b 的行星，位在距地球約 7 億 5 千萬光年外的另一個太陽系中。它反射的陽光不到百分之一，反光程度比黑色壓克力漆還低，甚至比煤炭還要黑。TrES-2b 唯一發出的光是一種微弱的紅色光暈，類似電爐上發熱的線圈，或是非常昏暗的燈泡。研究人員相信，這是因為它的大氣層極度炎熱，溫度高達華氏 1,800 度（攝氏 980 度），這是由於它距離其能量來源——所繞行的恆星——非常近所致。
+那麼，這顆行星究竟是如何吸收掉來自其恆星約 99%的光線呢？儘管研究人員尚無法完全確定，但他們認為，這可能是因為其大氣層是由會吸光的化學物質組成，例如氣化的鈉，甚至可能包含一些人類尚未發現存在的元素。雖然科學家或許永遠無法確切得知這顆行星究竟是如何如此隱密地「藏身」，但有一件事可以肯定：外太空中還有更多更加黑暗的行星，正等待著被發現！
+📋 內容大意
+Astronomers have found the darkest planet known in the galaxy, blacker than coal or black paint.
+Jupiter-sized TrES-2b lies 750 million light years away and throws back under one percent of the light it receives.
+A furnace-hot atmosphere gives it a dim red glow, and light-swallowing chemicals may explain the rest.
+← 第17題回到109 年指考補考第19題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

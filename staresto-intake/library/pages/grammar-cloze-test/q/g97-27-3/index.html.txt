@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g97-27-3/index.html
+Author: staresto-create ZZSH
+Title: 97 年學測克漏字第27題詳解（連接詞／轉折詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 97 年學測 ／ 第27題
+97 年學測 克漏字 第27題
+連接詞／轉折詞線索：句內答對率 69%
+答對率 69%：當年每 100 位考生，有 69 位答對。
+Situated on both banks of the winding River Vltava, Prague is like one big open-air museum. 26 some six hundred years of architecture nearly untouched by natural disaster or war, the city retains much of its medieval appearance. 27 you go, there are buildings in Romanic, Baroque, and Rococo styles that were popular hundreds of years ago.
+(A)Since
+(B)Before
+(C)Whatever
+(D)Wherever
+答案：(D) Wherever
+題目編號：G97_27_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】Wherever 引導讓步/地方副詞子句「無論你去哪裡」；Since（自從）、Before（之前）、Whatever（無論什麼，這裡問的是「哪裡」不是「什麼」）都不合。
+深入解析
+你可能會這樣想
+Whatever 和 Wherever 中文都翻成「無論……」，太像了，所以很多人憑感覺二選一。要分開它們，看的不是中文，是空格後面的子句缺不缺受詞。
+怎麼判斷
+把空格後面拿出來看：you go。主詞 you 有了，動詞 go 也有了，而 go 是不及物動詞，後面不需要受詞。Whatever 進到子句裡必須占一個名詞位置（當主詞或受詞），這裡沒有位置給它，第一步就刷掉。Wherever 是副詞性的，不占名詞位置，正好合用。還原成白話驗算：No matter where you go, there are buildings in Romanic, Baroque, and Rococo styles.（無論你走到哪裡，都看得到羅馬式、巴洛克式和洛可可式的建築。）這個「數子句成分」的方法最短的版本是 Stay where you are.（待在原地。）where 帶出的是地方，不是東西。98 年第 23 題 →與 105 年第 21 題 →用的也是同一個判斷方式，三題可以擺在一起練。
+誘答選項
+Since：當「自從」時後面接的是過去的某個時間起點，而且主要子句多用現在完成式（劍橋 English Grammar Today 的 Since 條目），這裡 you go 不是時間起點、主要子句 there are 也是現在式，兩邊都對不上；當「既然」解時語意也接不上，「既然你走」講不通。Before：引導時間子句，可是這一句講的是走到哪裡都看得到建築，是地點不是時間先後。Whatever：理由如上，go 後面沒有受詞位置。
+常考字詞與句型
+wherever（無論在哪裡，＝ no matter where）、whatever（無論什麼，＝ no matter what）、no matter where（不論何處）、in the Baroque style（巴洛克風格的）、be popular hundreds of years ago（在數百年前風行一時）、a building in the Rococo style（洛可可風格的建築）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Prague, the capital of the Czech Republic, is a very beautiful city. Situated on both banks of the winding River Vltava, Prague is like one big open-air museum. 26 some six hundred years of architecture nearly untouched by natural disaster or war, the city retains much of its medieval appearance. 27 you go, there are buildings in Romanic, Baroque, and Rococo styles that were popular hundreds of years ago. All of them successfully 28 the destruction of postwar redevelopment and remained unchanged.
+While the Iron Curtain was still in place under the communist government, Prague was 29 visited by foreigners. Since the 1990s, 30 , all that has changed. Prague is now one of the most popular tourist attractions in Europe.
+中譯：布拉格，捷克共和國的首都，是一座非常美麗的城市。座落在蜿蜒的伏爾塔瓦河兩岸，布拉格就像一座巨大的露天博物館。擁有將近六百年幾乎未受天災或戰爭破壞的建築，這座城市保留了大量中世紀的風貌。無論你走到哪裡，都能看到幾百年前流行的羅馬式、巴洛克式和洛可可式建築。這些建築全都成功躲過了戰後重建的破壞，維持原貌至今。在共產政權統治、鐵幕仍然存在的時期，布拉格鮮少有外國遊客造訪。但自 1990 年代起，一切都改變了。布拉格如今已成為歐洲最受歡迎的觀光景點之一。
+📋 內容大意
+Prague is a historically preserved city whose diverse architectural styles have survived war and natural disasters over centuries.
+Prague transitioned from an isolated city during the communist era into one of Europe's top tourist destinations today.
+← 第26題回到97 年學測第28題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

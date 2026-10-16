@@ -1,0 +1,50 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z94-30/index.html
+Author: staresto-create ZZSH
+Title: 94 年指考克漏字第30題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 94 年指考 ／ 第30題
+94 年指考 克漏字 第30題
+字彙選義線索：句內答對率 13%
+答對率 13%：當年每 100 位考生，有 13 位答對。
+Piaget 30 to establish a body of psychology all his life and became a very influential figure in educational psychology.
+(A)forgot
+(B)afforded
+(C)sought
+(D)tended
+答案：(C) sought
+題目編號：Z94_30（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+seek to V 意為「設法、致力於做某事」，sought 是 seek 的過去式：皮亞傑終其一生致力於建立一套心理學體系；forgot（忘記）、afforded（負擔得起）、tended（傾向於）語意都不合。
+重點：sought 是 seek 的過去式與過去分詞，seek to V 是「設法、致力於」，講的是實際投入；tend to V 只是「傾向於」，是性向不是作為，接不出後半的 became a very influential figure。
+延伸閱讀：seek 的三態與 seek to V ↗
+深入解析
+你可能會這樣想
+看到空格後面接 to establish，你會直覺去找「習慣接 to V」的那個字。但這一題用句型篩不出答案：forget to V、afford to V、seek to V、tend to V 四個全都成立，結構這一關四個選項一起過，只能靠語意分。
+怎麼判斷
+先看骨幹。主詞是 Piaget，空格就是主要動詞，all his life（終其一生）是時間副詞，後半句由 and 接上第二個動詞 became。所以這一格的動詞，語氣要對得上「終其一生」與「成為極具影響力的人物」兩個條件。seek 是「尋求、追求」，接不定詞時 seek to V 表示「設法、致力於」，語氣積極而持續，兩個條件都對得上。驗算法：把 all his life 拿掉唸一遍，再放回去唸一遍，語氣和 all his life 搭不起來的選項就不是答案。還有一關在認字。seek 的三態是 seek-sought-sought，與 buy-bought-bought、bring-brought-brought、think-thought-thought、fight-fought-fought 同屬 -ought 這一組。要先認得出 sought 是 seek，才輪得到辨義。
+誘答選項
+forget to V 是「忘記要做某事」，forget V-ing 才是「忘記做過」；放進來會變成「終其一生忘記要建立心理學體系」，語意不通。afford to V 是「負擔得起」，配的是花錢或花時間的事，而且多半用在否定與疑問（can't afford to），肯定直述句少見。tend to V 是「傾向於」，講的是性向不是作為。這一格與後半的 became 由 and 連起來，是同一個人先後做的兩件事，前面得是實際投入才接得出「於是成為影響深遠的人物」；一種傾向接不出這個結果。
+常考字詞與句型
+seek to V（設法、致力於）、seek help／advice（尋求協助／建議）、much sought-after（炙手可熱的）、tend to V（傾向於）、afford to V（負擔得起）、forget to V（忘記要做）／forget V-ing（忘記做過）。
+鑑別度分析：鑑別度 4，高低分群的差距不大。本題答對率一成三，屬於難度很高的題目——大考中心《選才電子報》第 307 期說明鑑別度時，就把答對率低的難題列為鑑別度偏低的原因之一：高、低分群考生在這類題目上的答對率差距不大，鑑別度的數值就會比較小。這一題比較像是不分程度的考生都在同一個環節斷了：sought 是 seek 的過去式，字形變化大，認不出這個形態就接不到 seek to V 這個用法。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：94學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Jean Piaget, a psychologist and pioneer in the study of child intelligence, was born in Switzerland in 1896. At age 10, he managed his first 26, a description of a partly albino sparrow he observed in a public park. At age 15, he 27 to devote his life to developing a biological explanation of knowledge.
+He began his career as a zoologist, 28 mollusks and their adaptations to their environment. 29 age 21, he had already published 25 professional papers on that topic.
+Later, after working with Alfred Binet in Paris, he became interested in levels of logic used by children taking standardized tests on intelligence. Piaget 30 to establish a body of psychology all his life and became a very influential figure in educational psychology. His works were all written originally in French and were later translated into English.
+中譯：尚．皮亞傑是一位心理學家，也是兒童智力研究的先驅，1896 年出生於瑞士。10 歲時，他完成了人生中第一篇著作——一篇關於他在公園觀察到的一隻部分白化麻雀的描述。15 歲時，他便立志將一生投入發展一套關於知識的生物學解釋。他的職業生涯始於動物學家，研究軟體動物及其對環境的適應。到了 21 歲，他就已經發表了 25 篇該領域的專業論文。後來，在巴黎與阿爾弗雷德．比奈共事之後，他開始對兒童在標準化智力測驗中所使用的邏輯層次產生興趣。皮亞傑終其一生都在追求建立一套完整的心理學體系，並成為教育心理學界極具影響力的人物。他的著作原本都以法文寫成，後來才被翻譯成英文。
+📋 內容大意
+Jean Piaget, born in Switzerland in 1896, pioneered the study of children's thinking.
+A published naturalist while still a boy, he trained first as a zoologist.
+Work in Paris turned him toward children's reasoning, and he shaped educational psychology for life.
+← 第29題回到94 年指考
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

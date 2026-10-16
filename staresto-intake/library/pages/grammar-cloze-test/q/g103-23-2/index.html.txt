@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g103-23-2/index.html
+Author: staresto-create ZZSH
+Title: 103 年學測克漏字第23題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 103 年學測 ／ 第23題
+103 年學測 克漏字 第23題
+字彙選義線索：句內答對率 55%
+答對率 55%：當年每 100 位考生，有 55 位答對。
+According to the Climate Change Group, formed by environmentalists worldwide to document the effects of global warming, Mount Kilimanjaro's snows and glaciers are melting and are 23 to disappear by 2020.
+(A)capable
+(B)ready
+(C)likely
+(D)horrible
+答案：(C) likely
+題目編號：G103_23_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】likely to 指「有可能……」；capable（有能力的，通常接 of 不接 to）、ready（準備好的）、horrible（可怕的）都不合。
+深入解析
+你可能會這樣想
+be ready to 你很熟（準備好要做某事），代進去唸起來也順，於是選了 ready。問題在 ready 講的是準備好了、馬上就要，而本句是在對 2020 年這個期限做推測，不是說眼前就要發生。另一個常見狀況是把 capable 與 able 混在一起，忘了它們後面接的東西不一樣。
+怎麼判斷
+用兩層去篩：第一，這個形容詞後面能不能接 to 加原形動詞；第二，主詞是不是有意志的東西。be likely to 加原形動詞表示「很可能會…」，是對可能性的推測，主詞可以是無生命的事物——It is likely to rain.（可能會下雨）。本句在推測冰河消失的時程（by 2020），正是這個用法。be capable of 後面接名詞或動名詞（be capable of + 名詞或動名詞），接的是 of 不是 to，光看介系詞就排除了。這組形容詞與介系詞的字詞搭配要成對記：be able to do 對照 be capable of doing。be ready to 加原形動詞在文法上可以，語意卻不合：ready 表示已做好準備、隨時可以行動，口語裡也可以指「馬上就要」（劍橋詞典的例句是 ready to collapse），而本句講的是對 2020 年這個期限的推測，不是眼前就要發生的事。horrible 是純粹的形容詞，沒有 be horrible to do 表可能性這種句型（be horrible to sb 是「對某人很惡劣」，意思差得遠）。還可以從時態確認：句子前半 are melting 是正在發生的事實，後半接的是預測，推測語氣的 likely 最合。
+誘答選項
+capable：後面搭配的是 of，而且指「有能力做某事」，冰河沒有能力可言。ready：準備好或馬上就要，接不上 by 2020 這種對未來時程的推測。horrible：可怕的，接不出「有可能…」的意思。
+常考字詞與句型
+be likely to（很可能…）、be capable of（有能力…）、be able to（能夠…）、be ready to（準備好…）、be bound to（必定…）、be about to（即將…）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Every year tens of thousands of tourists visit Mount Kilimanjaro, the highest mountain in Tanzania, Africa, to witness the scenes depicted in Earnest Hemingway's The Snows of Kilimanjaro. They are attracted by the American writer's 21 of the millennia-old glaciers.
+However, this tourist attraction will soon 22 . According to the Climate Change Group, formed by environmentalists worldwide to document the effects of global warming, Mount Kilimanjaro's snows and glaciers are melting and are 23 to disappear by 2020.
+Not only will the summit lose its tourist attraction, but the disappearance of the snows will also cause major damage to the ecosystem on the dry African plains at its base. 24 the snow covering the peak, there will not be enough moisture and water to nourish the plants and animals below. Rising temperatures, an effect of global warming, 25 threaten the ecosystem of this mountain area. The loss of snows on the 5,892m peak, which have been there for about 11,700 years, could have disastrous effects on Tanzania.
+中譯：每年都有數萬名遊客造訪坦尚尼亞、非洲最高峰吉力馬札羅山，只為親眼目睹海明威名著《吉力馬札羅的雪》中所描繪的景象。他們被這位美國作家對這座千年冰河的描寫所吸引。然而，這項觀光資源即將消失。根據全球環保人士組成的「氣候變遷小組」記錄，吉力馬札羅山的積雪與冰河正在融化，預計將於 2020 年前完全消失。屆時，這座山峰失去的不只是觀光吸引力，積雪的消失還將對山腳下乾燥非洲平原的生態系統造成重大破壞。少了山頂積雪，山下的動植物將缺乏足夠的水分與濕氣滋養。全球暖化所導致的氣溫上升，也持續威脅著這座山區的生態系統。這座 5892 公尺高峰上存在了約 11700 年的積雪一旦消失，恐將對坦尚尼亞帶來災難性的後果。
+📋 內容大意
+Tens of thousands of tourists visit Mount Kilimanjaro in Tanzania each year. They come for the ancient glaciers Hemingway wrote about in The Snows of Kilimanjaro.
+The Climate Change Group reports that the snows and glaciers are melting and could be gone by 2020. The summit would then lose its appeal to visitors.
+The loss would also harm the plains below, because the snow supplies their water. Rising temperatures add more pressure.
+← 第22題回到103 年學測第24題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z91-16/index.html
+Author: staresto-create ZZSH
+Title: 91 年指考克漏字第16題詳解（連接詞／轉折詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 91 年指考 ／ 第16題
+91 年指考 克漏字 第16題
+連接詞／轉折詞線索：跨句答對率 59%
+答對率 59%：當年每 100 位考生，有 59 位答對。
+There is, 16, only a limited amount of water on the planet.
+(A)meanwhile
+(B)besides
+(C)in fact
+(D)for example
+答案：(C) in fact
+題目編號：Z91_16（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+In fact（事實上）作插入語，用來強調、澄清前文說法，符合語境（強調地球水資源有限這個事實）。meanwhile（同時）、besides（此外）、for example（例如）都不符合這種「強調事實」的插入語氣。
+深入解析
+你可能會這樣想
+in fact 你背的是「事實上」，四個選項代進去中文好像都通，只好憑語感挑一個。問題是這一格不是在考中文翻譯，是在考前後兩句的關係。
+怎麼判斷
+in fact 是強調用的轉折詞：先講一句話，再用 in fact 對剛剛講過的內容補上更詳細的資訊，把前一句講得更重、更清楚（劍橋 English Grammar Today 的 In fact 條目）。回頭讀前一句：到 2025 年將有超過 27 億人面臨嚴重缺水。這一句說地球上的水本來就只有這麼多——不是換話題，是把前一句背後的事實端出來，正是 in fact 的位置。這是邏輯勾環，線索一定要跨句才看得到。另外注意它夾在兩個逗號中間。in fact 確實常放句首，但插在句子中間同樣正常；101 年學測第 18 題 →的 in fact 也是插在 is 與 an outdoor museum 之間，同一個考法。
+誘答選項
+for example（舉例來說）是最像的一個：它後面接的必須是前一句的其中一個個案。「地球的水有限」不是「27 億人缺水」的一個個案，它是背後的原因，方向剛好相反；真要用 for example，後面接的應該是「某個國家今年遭遇乾旱」這種具體的例子。meanwhile（同時）要有兩件同時進行的事；besides（此外）是再加一件新的事，但這一句沒有加新的東西，只是把前一句說得更深。
+常考字詞與句型
+in fact（事實上）、as a matter of fact（事實上，與 in fact 同義）、in actual fact（實際上，語氣更強）、face severe shortages of（面臨嚴重的……短缺）、a limited amount of（有限的……）、on the planet（在地球上）。
+線索範圍說明：前一句先立說法：2025 年將有超過 27 億人嚴重缺水；這一句用 in fact 補上背後的事實——地球上的水本來就有限
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：91學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+More than 2.7 billion people will face severe shortages of fresh water by 2025. There is, 16, only a limited amount of water on the planet. Less than 3 percent of the world's water is fresh, and most of 17 is trapped in polar ice or buried underground in springs too deep to reach. Freshwater lakes, rivers and reservoirs may seem 18 but provide just a drop in the bucket.
+Even 19 supplies are sufficient or plentiful, they are increasingly at risk due to various forms of pollution.
+Fierce national competition 20 water resources has prompted fears that water issues contain the seeds of violent conflict. International cooperation is therefore by all means urgent.
+中譯：到 2025 年，將有超過 27 億人面臨嚴重的淡水短缺。然而，地球上的水量其實有限。世界上不到 3%的水是淡水，其中大部分被封存在極地冰層中，或深埋在難以取用的地下泉源裡。淡水湖泊、河流和水庫看似豐沛，實際上只是滄海一粟。即使供給充足或豐富的地方，也因各種污染而日益面臨風險。各國為爭奪水資源而激烈競爭，使人們擔心水資源問題恐將成為暴力衝突的導火線。因此，國際合作刻不容緩。
+📋 內容大意
+By 2025 more than 2.7 billion people will lack fresh water, and the planet's supply is limited.
+Nearly all of the tiny fresh share sits in polar ice or too deep underground to reach.
+Pollution and fierce national rivalry over water make international cooperation urgent.
+回到91 年指考第17題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

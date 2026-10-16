@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g101-24-2/index.html
+Author: staresto-create ZZSH
+Title: 101 年學測克漏字第24題詳解（代名詞／指示詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 101 年學測 ／ 第24題
+101 年學測 克漏字 第24題
+代名詞／指示詞線索：跨句答對率 60%
+答對率 60%：當年每 100 位考生，有 60 位答對。
+But Brahma thought 24 would do because he believed humans would dig into the earth and climb every mountain, and eventually find it.
+(A)each
+(B)more
+(C)any
+(D)neither
+答案：(D) neither
+題目編號：G101_24_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+前面提到兩個藏匿地點的建議（藏在地底或帶到最高的山頂），Brahma 認為「兩者都不」可行，neither（兩者都不）精確對應這種對兩個選項都否定的語意；each（每一個，語意不合，應該是全部否定）、more（更多）、any（任何一個，在肯定句裡是「哪一個都行」，與後面否定兩個建議的理由相反）都不合。
+深入解析
+你可能會這樣想
+But Brahma thought ______ would do. 這一句最卡的其實是 would do——do 在這裡不是「做」。看不懂 would do，就只能憑感覺在四個選項裡挑，最多人挑 any，因為「任何一個」聽起來最保險。
+怎麼判斷
+先解決 do。do 有一個常考的用法，意思是「足夠、可以、行得通」，例如 That will do.（這樣就可以了）（劍橋詞典）。所以 ______ would do 問的是「哪一個行得通」。接著回上一句數清楚有幾個選項：The gods suggested that they hide it {23} in the earth or take it to the top of the highest mountain.——只有兩個建議。英文對「剛好兩個」有專用的一組字：both（兩者都）、either（兩者之一）、neither（兩者都不）；三個以上才用 all、any、none。這一組最短的版本是：I have two pens. One is red; the other is blue. 再看後面的理由 because he believed humans would dig into the earth and climb every mountain（因為他相信人類會挖遍大地、爬遍每一座山），兩個建議都被否定掉了，所以答案是「兩者都不」的 neither。
+誘答選項
+each：每一個，語意是肯定的，會變成「每一個都行得通」，與後面的理由完全矛盾。more：更多，句中沒有可以拿來比較的對象。any：在這種肯定句裡是「隨便哪一個都行」，同樣講反了；要表示否定必須寫成 not any，而 neither 已經把「兩個都不」包在一個字裡。
+常考字詞與句型
+That will do.（這樣就可以了）、neither of the two（兩者都不）、either…or…（不是…就是…）、neither…nor…（既不…也不…）、suggest that sb do sth（建議某人做某事）、dig into（挖進…）。
+線索範圍說明：neither 指前一句提出的兩個藏匿地點
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+There was once a time when all human beings were gods. However, they often took their divinity for granted and 21 abused it. Seeing this, Brahma, the chief god, decided to take their divinity away from them and hide it 22 it could never be found.
+Brahma called a council of the gods to help him decide on a place to hide the divinity. The gods suggested that they hide it 23 in the earth or take it to the top of the highest mountain. But Brahma thought 24 would do because he believed humans would dig into the earth and climb every mountain, and eventually find it. So, the gods gave up.
+Brahma thought for a long time and finally decided to hide their divinity in the center of their own being, for humans would never think to 25 it there. Since that time humans have been going up and down the earth, digging, climbing, and exploring—searching for something already within themselves.
+中譯：曾經有一段時期，所有人類都是神。然而，他們常把自己的神性視為理所當然，甚至濫用它。眾神之首梵天見狀，決定收回人類的神性，並將它藏在一個人類永遠找不到的地方。梵天召集眾神開會，商討該把神性藏在哪裡。眾神提議把神性深埋地底，或帶到最高的山頂上。但梵天認為這兩種方法都行不通，因為他相信人類終將挖遍大地、爬遍每一座山，最終還是會找到它。於是，眾神放棄了。梵天思考了許久，最終決定把人類的神性藏在人類自身內心深處，因為人類永遠不會想到要到那裡尋找。從那時起，人類便不斷地上天下地、挖掘、攀爬、探索——尋找著早已存在於自己內心的事物。
+📋 內容大意
+When humans abused their divine power, Brahma decided to strip them of divinity and hide it away.（敘事文）
+The gods suggested hiding the divinity in the earth or on mountains, but Brahma rejected these ideas knowing humans would find it.（敘事文）
+Brahma chose to hide divinity within humans themselves, leading humanity on an endless external search.（敘事文）
+← 第23題回到101 年學測第25題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

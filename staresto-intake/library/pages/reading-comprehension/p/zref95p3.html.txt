@@ -1,0 +1,137 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/zref95p3.html
+Author: staresto-create ZZSH
+Title: 98 指考參考試卷（95 課綱）閱讀測驗：銀行體系的起源與發展｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 98 指考參考試卷（95 課綱）
+98 指考參考試卷（95 課綱）閱讀測驗：銀行體系的起源與發展參考試卷
+The Origin and Development of the Banking System
+指考 98年參考試卷（95 課綱）第 44–47 題4 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段The history of banking began in England. In 1642, the Great Civil War broke out between the king and Parliament. London was the stronghold of Parliament and the safest city in the kingdom. So those who did not want to have their gold seized by one side or the other placed it in the hands of the goldsmiths in the city, who naturally had their own methods of safe-keeping.
+第 2 段In exchange for their gold, the depositors received “goldsmith’s notes.” These notes were the first bank notes. Once their truth was established, they proved to be very popular with their recipients, as gold was heavy and cumbersome. Soon, these notes began to be used as currency, with everyone happy to accept them since each was backed 100% by a deposit of gold.
+第 3 段However, there was a problem. Once the goldsmiths realized that few people actually wanted to get their gold back with the notes, they began to issue more notes than the gold they had. This newly created money was then lent out to people who wished to borrow it at a rate of interest. This practice was questioned but never tested in court. Then in 1694, this practice of creating money out of thin air was effectively made legal with the founding of the Bank of England. It was not the first bank to be founded (Coutts was founded in 1690), but the nature of its creation was central to the role that banks went on to play in the supply of money.
+題目
+44.According to the passage, who started the banking system?
+(A)The king of England.
+(B)Parliament members.
+(C)Goldsmiths.
+(D)London citizens.
+45.People left their gold in the hands of the goldsmiths because the goldsmiths ______.
+(A)issued bank notes
+(B)could keep it safe
+(C)could add the value of the gold
+(D)were supported by the Parliament
+46.Why did people prefer to keep bank notes rather than real gold?
+(A)Bank notes were easier to carry.
+(B)Keeping bank notes was a new fashion.
+(C)Bank notes had become a legal currency.
+(D)People could earn interest from bank notes.
+47.What is most likely the reason for the founding of the Bank of England?
+(A)To increase the national income.
+(B)To lend gold to London citizens.
+(C)To stop the practice of using gold as currency.
+(D)To prevent goldsmiths from making illegal profits.
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+44
+(C)
+—
+—
+45
+(B)
+—
+—
+46
+(A)
+—
+—
+47
+(D)
+—
+—
+答對率：本卷非正式施測，無答對率
+每一題的依據句
+第 44 題 細節題 Supporting details
+第 2 段In exchange for their gold, the depositors received “goldsmith’s notes.”
+第 2 段These notes were the first bank notes.
+原文 → 正確選項
+goldsmith → Goldsmith
+第 1 段說人們把黃金交給倫敦的金匠保管；第 2 段說存黃金的人換到「金匠票據」（goldsmith’s notes），這些票據就是最早的鈔票，後來還當作貨幣使用；第 3 段說金匠把多發的票據借給別人收利息。存款、發行鈔票、放款都是金匠開始做的，所以是 (C)。三個錯誤選項都照抄第 1 段的字：(A) 國王和 (B) 國會是內戰的雙方，人們就是怕黃金落到他們手裡才交給金匠；(D) 倫敦市民是把黃金交給金匠的人，不是經營銀行業務的人。
+第 45 題 細節題 Supporting details
+第 1 段who naturally had their own methods of safe-keeping.
+原文 → 正確選項
+safe-keeping → keep it safe
+第 1 段說人們把黃金交給金匠，因為金匠自然有他們自己的保管方法（methods of safe-keeping），選項換成金匠能把黃金保管好，所以是 (B)。(A) 照抄第 2 段的 bank notes，金匠票據是人們交出黃金以後才拿到的，是結果，不是原因；(D) 照抄 Parliament，原文說倫敦是國會的大本營，沒有說國會支持金匠，人們把黃金交給金匠，正是不想讓任何一方拿走；(C) 原文沒有說金匠能讓黃金增值。
+第 46 題 細節題 Supporting details
+第 2 段they proved to be very popular with their recipients, as gold was heavy and cumbersome.
+原文 → 正確選項
+heavy and cumbersome → easier to carry
+第 2 段說拿到票據的人都很喜歡，因為黃金又重又不方便攜帶（heavy and cumbersome），反過來說，票據比較容易攜帶，所以是 (A)。(C) 照抄 currency，票據是先在收票人之間流行起來，不久才開始當作貨幣使用，原文也沒有說這時已經合法；(D) 照抄第 3 段的 interest，收利息的是借錢給別人的金匠，不是拿著票據的人；(B) 原文沒有說拿票據是一種流行。
+第 47 題 推論題 Inference
+第 3 段they began to issue more notes than the gold they had.
+第 3 段This practice was questioned but never tested in court.
+第 3 段this practice of creating money out of thin air was effectively made legal with the founding of the Bank of England.
+原文沒有直接寫英格蘭銀行為什麼成立，要從第 3 段推。判斷步驟：[1] 金匠發行比手上黃金還多的票據，再把這些錢借出去收利息，這種做法有人質疑，合不合法一直沒有定論；[2] 1694 年英格蘭銀行成立以後，憑空創造金錢的做法才合法化，等於把這種做法納入正式成立的銀行，不再是金匠私下賺取有疑慮的利潤；[3] 四個選項中，只有 (D) 防止金匠賺取不法利潤和這個脈絡相合。(B) 照抄第 1 段的 London，銀行借出去的是新創造出來的錢，不是黃金；(C) 照抄第 2 段的 currency，票據本來就以黃金作擔保，原文沒有說要停止用黃金當貨幣；(A) 原文沒有提到國家收入。
+逐段中譯
+第 1 段銀行的歷史從英格蘭開始。1642 年，國王和國會之間爆發了英國內戰。倫敦是國會的大本營，也是全國最安全的城市。所以，不想讓黃金落入任何一方手裡的人，就把黃金交給城裡的金匠保管，金匠自然有他們自己保管貴重物品的方法。
+第 2 段存黃金的人交出黃金，換到的是「金匠票據」。這些票據就是最早的鈔票。一旦大家確認票據可靠，拿到票據的人都很喜歡，因為黃金又重又不方便攜帶。不久，這些票據開始當作貨幣使用，大家都樂意收下，因為每一張都有十足的黃金存款作擔保。
+第 3 段不過，問題來了。金匠發現很少人真的會拿票據來領回黃金，就開始發行比手上黃金還多的票據，再把這些新創造出來的錢，借給想借錢的人，收取利息。這種做法曾經引起質疑，卻從來沒有在法院裡檢驗過。後來在 1694 年，隨著英格蘭銀行成立，這種憑空創造金錢的做法實際上合法化了。英格蘭銀行不是第一家成立的銀行（Coutts 銀行成立於 1690 年），但它成立的方式，對銀行後來在貨幣供給上扮演的角色，有關鍵的影響。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。沒有列出的段落，就是沒有主旨句，請對照「這一篇的文章結構」裡的綱要，找出那一段的重點。
+第 1 段The history of banking began in England.
+第 3 段Once the goldsmiths realized that few people actually wanted to get their gold back with the notes, they began to issue more notes than the gold they had.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體說明文 Expository
+組織方式時序發展 Chronological這一類怎麼辨識 →
+關鍵轉折詞In 1642SoSoonHoweverThenbut
+綱要
+銀行業的歷史從英國開始。(In 1642) 1642 年英國國王和國會爆發內戰，倫敦是國會的據點，也最安全，(So) 擔心黃金落入任何一方手中的人，就把黃金交給城裡的金匠保管。
+存戶交出黃金，換到「金匠票據」，這就是最早的鈔票；票據的可信度確立以後，大家都很喜歡，因為黃金又重又不方便。
+(Soon) 不久票據就開始當作貨幣使用，因為每一張都有十足的黃金擔保，人人樂於接受。
+(However) 但問題來了：金匠發現很少人真的拿票據換回黃金，就開始發行超過庫存黃金的票據，再把這些新創造的錢借給別人收利息；這種做法有人質疑，卻從來沒有上法院檢驗。
+(Then) 1694 年英格蘭銀行成立，等於讓這種「憑空造錢」的做法合法化；英格蘭銀行不是第一家銀行，(but) 但它成立的性質，對日後銀行在貨幣供給上扮演的角色十分關鍵。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 5 個、參考字彙 7 個、字詞搭配 13 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+seize[siz]v.奪走、沒收四級第 1 段詞彙題考過 1 次：93 學測第 2 題（誘答）
+exchange[ɪksˈʧeɪnʤ]n.交換（in exchange for 用……換）三級第 2 段詞彙題考過 1 次：98 學測第 8 題 exchanging（答案）
+deposit[dɪˈpɑzɪt]n.存款三級第 2 段詞彙題考過 4 次：107 學測第 9 題 deposited（誘答）、102 學測第 3 題 deposited（誘答）、101 指考第 1 題（誘答）、98 學測第 8 題 depositing（誘答）
+issue[ˈɪʃu]v.發行四級第 3 段詞彙題考過 3 次：99 指考第 8 題 issues（答案）、85 聯考第 2 題（誘答）、83 推薦甄選第 9 題（誘答）
+profit[ˈprɑfət]n.利潤三級第 47 題詞彙題考過 2 次：109 指考補考第 1 題 profiting（誘答）、106 學測第 12 題（誘答）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+stronghold[ˈstrɔŋˌhoʊld]n.據點、大本營表外第 1 段
+goldsmith[ˈgoʊldˌsmɪθ]n.金匠表外第 1 段
+depositor[dɪˈpɑzɪtɚ]n.存款人、寄存東西的人表外第 2 段
+recipient[rɪˈsɪpiənt]n.收到的人五級第 2 段
+cumbersome[ˈkʌmbɚsəm]adj.笨重的、不方便攜帶的表外第 2 段
+currency[ˈkɝənsi]n.貨幣五級第 2 段
+parliament[ˈpɑrləmənt]n.國會、議會六級第 44 題
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+break out（戰爭）爆發第 1 段原文：the Great Civil War broke out
+have + sth + p.p.（自己的東西）讓別人……第 1 段原文：have their gold seized
+place + sth + in the hands of + sb把……交給某人保管第 1 段原文：placed it in the hands of the goldsmiths
+in exchange for + N用來交換……第 2 段原文：In exchange for their gold
+prove to be + adj.結果證明……第 2 段原文：they proved to be very popular
+be popular with + sb某人都很喜歡第 2 段原文：very popular with their recipients
+be backed by + N有……作為擔保第 2 段原文：each was backed 100% by a deposit of gold
+lend out + sth + to + sb把……借給某人第 3 段原文：was then lent out to people
+at a rate of interest收取利息第 3 段
+out of thin air憑空第 3 段
+be central to + N是……的核心第 3 段原文：was central to the role
+go on to + V後來接著……第 3 段原文：banks went on to play
+play a role in + N在……扮演角色第 3 段原文：the role that banks went on to play in the supply of money
+← 上一篇篇目一覽下一篇 →
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

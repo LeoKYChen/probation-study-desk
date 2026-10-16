@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g99-24-2/index.html
+Author: staresto-create ZZSH
+Title: 99 年學測克漏字第24題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 99 年學測 ／ 第24題
+99 年學測 克漏字 第24題
+字彙選義線索：句內答對率 63%
+答對率 63%：當年每 100 位考生，有 63 位答對。
+Storage onions, on the other hand, are available August through April. 24 fresh onions, they have multiple layers of thick, dark, papery skin.
+(A)Unlike
+(B)Through
+(C)Besides
+(D)Despite
+答案：(A) Unlike
+題目編號：G99_24_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意對比：「跟新鮮洋蔥不同，它們（儲存洋蔥）有好幾層厚實深色的紙質外皮」，Unlike（不像）符合這種對比；Through（透過）、Besides（此外）、Despite（儘管）都不合。
+深入解析
+你可能會這樣想
+Despite 很誘人，因為它和 Unlike 一樣會出現在句首、後面一樣接名詞，而且「儘管」和「不像」在腦中都掛著轉折的標籤。也有人選 Besides（此外），因為前面剛講完新鮮洋蔥、這裡接著講儲藏洋蔥，看起來很像在補充。
+怎麼判斷
+先看這一句在整篇的位置。前面講新鮮洋蔥：thin, light-colored skin（薄而顏色淺的外皮）。這一句講儲藏洋蔥：multiple layers of thick, dark, papery skin（好幾層厚實、深色、如紙般的外皮）。薄對厚、淺對深——這是對比，兩者不一樣。前一句就已經先提示了：Storage onions, on the other hand, are available August through April. on the other hand 已經宣告要講「另一面」，這一句是同一個對比的延續。Unlike 是介系詞，意思是「不像…、與…不同」，後面接名詞，正好用來標示這種差異，整句是「與新鮮洋蔥不同，它們有好幾層厚實深色的外皮」。這一題的鑑別度高達 77，是本題庫最高的幾題之一。它分的不是單字，而是「有沒有看出這一整篇都在做兩種洋蔥的對照」——讀懂結構的人一眼就選，沒讀懂的人四個都覺得可以。
+誘答選項
+Through：透過、穿過，表示方式或路徑，與比較無關。Besides：除…之外還有，是把東西加上去；但這一句不是在替新鮮洋蔥補充特徵，而是在講另一種洋蔥的不同之處。Despite：儘管，表讓步，後面接的東西要與主要子句形成「照理說應該…卻…」的落差；fresh onions 和「有厚外皮」之間沒有這種讓步關係。
+常考字詞與句型
+unlike（與…不同，介系詞）、on the other hand（另一方面）、despite（儘管，後接名詞）、in spite of（儘管）、multiple layers of（好幾層的…）、be divided into two categories（分成兩類）。其中 in spite of 這一組考過 9 個年度，86 年第 21 題 →、89 年第 30 題 →、93 年第 23 題 →、99 年第 28 題 →、105 年第 29 題 →、106 年第 19 題 →、107 年第 30 題 →、109 年第 29 題 →、112 年第 15 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Onions can be divided into two categories: fresh onions and storage onions. Fresh onions are available 21 yellow, red and white throughout their season, March through August. They can be 22 by their thin, light-colored skin. Because they have a higher water content, they are typically sweeter and milder tasting than storage onions. This higher water content also makes 23 easier for them to bruise. With its delicate taste, the fresh onion is an ideal choice for salads and other lightly-cooked dishes.
+Storage onions, on the other hand, are available August through April. 24 fresh onions, they have multiple layers of thick, dark, papery skin. They also have an 25 flavor and a higher percentage of solids. For these reasons, storage onions are the best choice for spicy dishes that require longer cooking times or more flavor.
+中譯：洋蔥可分為兩大類：新鮮洋蔥和儲藏洋蔥。新鮮洋蔥在 3 月到 8 月的產季期間，有黃、紅、白等各種顏色可供選擇，可以透過薄而顏色淺的外皮來辨識。由於含水量較高，新鮮洋蔥口感通常比儲藏洋蔥更甜、更溫和，但也因此更容易碰傷。新鮮洋蔥味道細緻，很適合用來做沙拉或其他輕度烹調的料理。儲藏洋蔥則是 8 月到隔年 4 月供應，與新鮮洋蔥不同，它們有好幾層厚實、深色、如紙般的外皮，味道也更濃烈，固形物比例也較高。因此，儲藏洋蔥最適合用在需要長時間烹煮或口味較重的辛辣料理中。
+📋 內容大意
+Fresh onions, available from March through August, have a higher water content and milder taste, making them ideal for light cooking and salads.
+Storage onions have thicker skin and stronger flavor, which makes them better suited for long-cooked, highly seasoned dishes.
+← 第23題回到99 年學測第25題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

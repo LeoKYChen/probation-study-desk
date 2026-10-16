@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z100-18/index.html
+Author: staresto-create ZZSH
+Title: 100 年指考克漏字第18題詳解（時態／語態）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 100 年指考 ／ 第18題
+100 年指考 克漏字 第18題
+時態／語態線索：句內答對率 57%
+答對率 57%：當年每 100 位考生，有 57 位答對。
+But when they thought they were alone (though they 18 by a secret camera), their faces twisted into vivid mixes of anguished distress, fear, and disgust.
+(A)were being taped
+(B)had taped
+(C)are taping
+(D)have been taped
+答案：(A) were being taped
+題目編號：Z100_18（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+過去進行式被動語態 were being taped，表示「當時正被祕密攝影機拍攝著」，與前後的過去式 thought、twisted 時態一致，且學生是「被拍攝」的對象（被動關係）。had taped／are taping 都是主動語態（語意錯誤，學生不是拍攝者），have been taped 是現在完成式被動，時態不符合過去語境。
+深入解析
+你可能會這樣想
+四個選項都是 tape 的各種時態與語態組合排在一起，你會想一次判完時態、語態兩件事，很容易只顧到一邊。
+怎麼判斷
+鑑別度高達 55，分開的是有沒有把兩件事分開判、而且兩件都判對。先判語態：主詞是 they（那些學子），學子是「被祕密攝影機拍攝」的一方，不是拍攝的人，所以必須是被動，had taped 與 are taping 都是主動，先排除。再判時態：括號前的 thought 與括號後的 twisted 都是過去式，括號裡講的是他們自以為獨處的「那個當下」正在發生的事，所以要用過去進行式的被動 were being taped（當時正被拍攝著）。填進去讀成 though they were being taped by a secret camera（其實當時正被祕密攝影機拍著）。
+誘答選項
+have been taped 是現在完成式的被動，它的時間落在「到現在為止」，與整段的過去時間軸接不上；had taped 若讀成過去完成式，方向是往更早推，但這裡要講的是同一個當下正在進行的事，不是更早發生的事。
+常考字詞與句型
+was／were being + 過去分詞（過去進行式的被動）、tape（動詞：錄影、錄音）、twist into（扭曲成）、though + 子句（雖然、其實）、a secret camera（祕密攝影機）、anguished distress（極度的痛苦不安）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：100學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+People may express their feelings differently on different occasions. Cultures sometimes vary greatly in this regard.
+A group of researchers in Japan, 16, studied the facial reactions of students to a horror film. When the Japanese students watched the film 17 the teacher present, their faces showed only the slightest hints of reaction. But when they thought they were alone (though they 18 by a secret camera), their faces twisted into vivid mixes of anguished distress, fear, and disgust.
+The study also shows that there are several unspoken rules about how feelings should be 19 shown on different occasions. One of the most common rules is minimizing the show of emotion. This is the Japanese norm for feelings of distress 20 someone in authority, which explains why the students masked their upset with a poker face in the experiment.
+中譯：人們在不同場合可能會用不同方式表達情緒，不同文化在這方面的差異有時相當大。舉例來說，一群日本研究人員研究了學生觀看恐怖片時的臉部反應。當這些日本學生在老師在場的情況下觀看影片時，他們的臉上只顯露出極輕微的反應跡象。但當他們以為自己獨處時（儘管其實正被一台隱藏攝影機拍攝著），他們的表情卻扭曲成痛苦悲傷、恐懼與噁心交織的強烈神情。這項研究也顯示，關於情緒該如何在不同場合恰當地表現，存在著幾條不成文的規則，其中最常見的一條就是「盡量減少情緒的外露」。這正是日本人在有權威人士在場時面對痛苦情緒的文化規範，也解釋了為什麼學生們在實驗中會用撲克臉來掩飾內心的不安。
+📋 內容大意
+How openly people show feelings depends on the occasion and differs greatly across cultures.
+Japanese students watching a horror film stayed blank before a teacher but grimaced when alone.
+Unspoken rules govern such display, and playing down emotion before authority is the Japanese norm.
+← 第17題回到100 年指考第19題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

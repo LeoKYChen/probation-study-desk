@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g98-23-2/index.html
+Author: staresto-create ZZSH
+Title: 98 年學測克漏字第23題詳解（關係子句／疑問詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 98 年學測 ／ 第23題
+98 年學測 克漏字 第23題
+關係子句／疑問詞線索：句內答對率 69%
+答對率 69%：當年每 100 位考生，有 69 位答對。
+Natives planted the fruit across South and Central America and in the Caribbean region, 23 Christopher Columbus first found it.
+(A)that
+(B)what
+(C)which
+(D)where
+答案：(D) where
+題目編號：G98_23_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+關係副詞 where 引導地方子句，「在……那裡哥倫布首次發現了它」；that／what／which 都不能這樣引導子句來表達「在某地」的地點語意。
+深入解析
+你可能會這樣想
+where 你最熟的用法是疑問詞「在哪裡」，所以看到它出現在逗號後面會覺得陌生。這裡的 where 是關係副詞，前面那一整片加勒比海地區就是它的先行詞，整個子句在補充說明「哥倫布就是在那裡第一次見到鳳梨的」。
+怎麼判斷
+用最可靠的方法：數一數空格後面的子句缺不缺成分。Christopher Columbus first found it 的主詞、動詞、受詞都齊了，一個名詞位置都不缺；而 that、which 進到子句裡一定要當主詞或受詞，這裡沒有空位給它們，所以只能填不占名詞位置的關係副詞 where。代回先行詞驗算：把先行詞 the Caribbean region 放回子句裡——Columbus first found it in the Caribbean region.——代回去就得補上 in，可見這一格要的是 in which，也就是 where。這一格鑑別度 60，分開的正是「有沒有動手數子句成分」這個習慣。
+誘答選項
+that 還多一個問題：它不能用在逗號後面的補充說明子句（劍橋 English Grammar Today 的關係子句條目）。which 若要用，必須補上介系詞成為 in which。what 自己帶著先行詞（＝ the thing that），不能再回頭修飾前面的名詞。101 年第 22 題 →也考 where，但那一題空格前沒有先行詞，著力點與本題正好相反，兩題可以對著看。
+常考字詞與句型
+the place where …（……的那個地方）、the reason why …（……的原因）、the day when（……的那一天）、in which（＝ where，在其中）、the Caribbean region（加勒比海地區）、plant a crop（種植作物）。其中 the place where … 這一組考過 5 個年度，83 年第 17 題 →、89 年第 25 題 →、91 年補考第 29 題 →、學測參考試卷第 22 題 →都出現過；the reason why … 考過 5 個年度，83 年第 17 題 →、89 年第 25 題 →、92 年補考第 21 題 →、107 年第 19 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The pineapple, long a symbol of Hawaii, was not a native plant. 21 , pineapples did not appear there until 1813. The pineapple was 22 found in Paraguay and in the southern part of Brazil. Natives planted the fruit across South and Central America and in the Caribbean region, 23 Christopher Columbus first found it.
+Columbus brought it, along with many other new things, back to Europe with him. From there, the tasty fruit 24 throughout other parts of civilization. It was carried on sailing ships around the world because it was found to help prevent scurvy, a disease that often 25 sailors on long voyages. It was at the end of one of these long voyages that the pineapple came to Hawaii to stay.
+中譯：鳳梨長久以來是夏威夷的象徵，卻不是當地原生植物。事實上，鳳梨直到 1813 年才出現在夏威夷。鳳梨最早發現於巴拉圭和巴西南部。原住民將這種水果種植於中南美洲及加勒比海地區，哥倫布正是在那裡首次發現了鳳梨。哥倫布把鳳梨連同許多其他新事物一起帶回歐洲。從那裡，這種美味的水果逐漸傳播到世界其他文明地區。由於人們發現鳳梨有助於預防壞血病——一種常在長途航海中折磨水手的疾病——因此鳳梨被帶上遠洋船隻，隨船隻航行世界各地。正是在其中一趟長途航行的尾聲，鳳梨才終於落腳夏威夷。
+📋 內容大意
+The pineapple has long symbolized Hawaii, but it is not native and reached the islands in 1813.
+It first grew in Paraguay and southern Brazil. Native peoples planted it across Central and South America and the Caribbean, and Columbus carried it to Europe.
+Sailing ships then took the fruit around the world because it helped prevent scurvy, and one long voyage brought it to Hawaii.
+← 第22題回到98 年學測第24題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

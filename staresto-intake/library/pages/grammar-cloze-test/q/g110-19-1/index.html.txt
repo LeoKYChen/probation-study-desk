@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g110-19-1/index.html
+Author: staresto-create ZZSH
+Title: 110 年學測克漏字第19題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 110 年學測 ／ 第19題
+110 年學測 克漏字 第19題
+字彙選義線索：跨句答對率 48%
+答對率 48%：當年每 100 位考生，有 48 位答對。
+After heated debates and discussions, the government was finally persuaded to consider another 19 effective method: giving the pigeons birth control.
+(A)nearly
+(B)shortly
+(C)precisely
+(D)similarly
+答案：(D) similarly
+題目編號：G110_19_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「另一個『同樣』有效的方法」，similarly（同樣地）符合，暗示這個新方法跟原本的方法一樣有效（但更人道）；nearly（幾乎）、shortly（不久）、precisely（精確地）都不合。
+深入解析
+你可能會這樣想
+another ___ effective method，四個副詞都能修飾 effective，讀起來都不奇怪，所以容易憑語感隨手挑。這一格的線索不在這句話裡——要判斷的是新方法和舊方法之間的關係，而舊方法寫在前面兩句。
+怎麼判斷
+往前找舊方法：gathering the birds and shooting them（聚集後射殺），接著 that idea led to strong protests from numerous animal rights groups（引發動保團體強烈抗議）。所以政府換方法的理由是「不人道」，不是「沒效」。既然舊方法本身有效，新方法就要說成「一樣有效」，這就是 similarly effective。空格前的 another（另一個）也在暗示：這是同一類（同樣有效）之中的另一個選擇。
+誘答選項
+nearly effective（幾乎有效）暗示新方法效果打了折扣，但最後一段預測四五年內減少七到八成，效果很好；shortly（不久）是時間副詞，不能拿來修飾 effective 的程度；precisely（精確地）用來修飾數字或描述，修飾 effective 語意不通。
+常考字詞與句型
+similarly（同樣地）、be similar to（與……相似）、equally effective（同樣有效）、lead to（導致）、an effective method（有效的方法）、protest against（抗議……）。其中 lead to 這一組考過 7 個年度，88 年第 28 題 →、90 年第 22 題 →、94 年第 23 題 →、99 年第 26 題 →、108 年第 16 題 →、學測參考試卷第 23 題 →都出現過；be similar to 考過 3 個年度，89 年第 21 題 →、109 年第 21 題 →都出現過。
+線索範圍說明：similarly 與前一句被否決的做法相比，指「同樣有效的另一個方法」
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Street pigeons are a common sight in many European cities. In fact, a visit to a major European city just would not be the same 16 encountering them: bathing in fountains, perching on historic buildings, and flocking in public squares. In Barcelona, however, the birds are now threatening to 17 the city's historic center, pooping on monuments, buildings, and even tourists.
+The city council originally proposed 18 the pigeon population by gathering the birds and shooting them. But that idea led to strong protests from numerous animal rights groups. After heated debates and discussions, the government was finally persuaded to consider another 19 effective method: giving the pigeons birth control.
+In 2016, the city council decided to put its 85,000 pigeon population on a birth control pill to block the formation of eggs in birds. Starting from April 2017, the pills were placed in 40 bird feeders 20 throughout the city. It was predicted that there would be a decrease of 20 percent in the pigeon population in the first year and between 70 and 80 percent in four or five years.
+中譯：街頭鴿子在許多歐洲城市中隨處可見。事實上，造訪歐洲主要城市時，若沒有遇見牠們——在噴泉中戲水、棲息在歷史建築上、成群聚集在廣場中——似乎就少了點什麼。然而，在巴塞隆納，這些鴿子如今卻威脅著這座城市的歷史中心，牠們的排泄物弄髒了紀念碑、建築物，甚至遊客本身。市議會原本提議透過捕捉並撲殺鴿子來控制數量，但這項提議引發了眾多動物權益團體的強烈抗議。經過激烈的辯論與討論，政府最終被說服考慮另一種同樣有效的方法：讓鴿子節育。2016 年，市議會決定為當地八萬五千隻鴿子施予節育藥物，以阻止鳥蛋的形成。從 2017 年 4 月起，這些藥物被投放在全市四十個餵食器中。預估第一年鴿子數量將減少 20%，而在四到五年內，減幅將達到 70%至 80%。
+📋 內容大意
+Barcelona managed its overpopulated street pigeons by switching from lethal culling to a birth control program following public protests.
+← 第18題回到110 年學測第20題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

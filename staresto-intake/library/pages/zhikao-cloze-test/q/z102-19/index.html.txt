@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z102-19/index.html
+Author: staresto-create ZZSH
+Title: 102 年指考克漏字第19題詳解（介系詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 102 年指考 ／ 第19題
+102 年指考 克漏字 第19題
+介系詞線索：句內答對率 48%
+答對率 48%：當年每 100 位考生，有 48 位答對。
+In recent years, the postal service has suffered tens of billions of dollars in losses 19 the increasing popularity of the Internet and e-commerce.
+(A)at
+(B)with
+(C)under
+(D)between
+答案：(B) with
+題目編號：Z102_19（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【介系詞】losses with the increasing popularity... 表示「隨著網路與電商日益普及而產生的虧損」，with 在此表伴隨關係。at／under／between 都不符合此處慣用搭配。
+深入解析
+你可能會這樣想
+with 這個字，你的印象大概只有「和……一起」與「用……工具」這兩種，不太會想到它後面接的可以不是同伴也不是工具，而是一個正在變化的現象。
+怎麼判斷
+答對率不到五成，鑑別度只有 30。這一題難，卻連高分群考生也常失手：對「和……一起」「用……」這兩個常見義越熟的人，越會覺得四個選項沒有一個對得上，最後憑感覺挑一個。先看空格前後的關係：前面是郵政署近年虧損數百億美元，後面是網路與電子商務日益普及——兩件事同時在發生，而且後者正是前者的背景與成因。劍橋 English Grammar Today 的 with 條目收了「因為、由於」這個意思（例句 With all this work, I'd better stay in tonight.），後面接的名詞若本身表示變化，中文就順成「隨著……」。填進去讀成 has suffered ... losses with the increasing popularity of the Internet（隨著網路日益普及而蒙受虧損）。這一型後面常接 the increasing popularity of、the rise of、the development of 這類講變化的名詞組。
+誘答選項
+at 常接時間點或地點（at that time、at the station），表原因時也多半跟在表情緒的字後面（surprised at the news），都接不上一個持續變化的現象；under 講的是「在……之下」的狀態或條件（under pressure、under the new law），這裡不是在說虧損發生在什麼規定之下；between 講的是兩者之間的位置、時間或關係（between A and B），句中的 the Internet and e-commerce 雖然有 and，但它們是 popularity 所講的對象，虧損並不是落在這兩者之間。
+常考字詞與句型
+with + 名詞（因為、由於；後接表變化的名詞時譯成「隨著……」）、with the rise of（隨著……的興起）、suffer losses（蒙受虧損）、tens of billions of dollars（數百億美元）、under pressure（承受壓力）、e-commerce（電子商務）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：102學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The U.S. Postal Service has been struggling financially for some time. It plans to stop delivering mail on Saturdays, 16 Aug. 1 this year. This decision was announced on Wednesday without congressional approval. 17 forbidden to do so by the Congress, the agency for the first time will deliver mail only Monday through Friday. It is expected that this 18 will save about $2 billion a year.
+In recent years, the postal service has suffered tens of billions of dollars in losses 19 the increasing popularity of the Internet and e-commerce.
+The postal service plans to continue Saturday delivery of packages, which remain a profitable and growing part of the delivery business. Post offices would remain open on Saturdays 20 customers can drop off mail or packages, buy postage stamps, or access their post office boxes. But hours would likely be reduced at thousands of smaller locations.
+中譯：美國郵政署財務困難已有一段時間。該署計畫自今年 8 月 1 日起停止週六送信服務，這項決定於週三宣布，並未經國會批准。除非遭國會明令禁止，否則該署將首度只在週一至週五送信。預期這項做法每年可節省約 20 億美元。近年來，隨著網路和電子商務日益普及，郵政署已蒙受數百億美元的虧損。郵政署計畫繼續在週六遞送包裹，因為這仍是獲利且持續成長的業務。郵局在週六仍會開放營業，以便顧客可以投遞郵件或包裹、購買郵票，或使用郵政信箱。但數千個較小的郵局據點的營業時間可能會縮減。
+📋 內容大意
+Facing heavy losses, the U.S. Postal Service announced an end to Saturday letter delivery.
+The Internet and online shopping have cost it tens of billions in recent years.
+Parcels, still profitable, will arrive on Saturdays, and post offices will open for shorter hours.
+← 第18題回到102 年指考第20題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

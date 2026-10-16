@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g106-21-2/index.html
+Author: staresto-create ZZSH
+Title: 106 年學測克漏字第21題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 106 年學測 ／ 第21題
+106 年學測 克漏字 第21題
+慣用語／片語線索：句內答對率 24%
+答對率 24%：當年每 100 位考生，有 24 位答對。
+Unfortunately, shoes are not always readily available for people living in poverty, 21 shoes that are the right size.
+(A)except for
+(B)provided with
+(C)far from
+(D)let alone
+答案：(D) let alone
+題目編號：G106_21_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+let alone 用在否定句之後，意思是「更不用說」，表示連前面較容易的事都做不到，後面更難的事更不可能；except for（除了…之外）會使語意相反，provided with（被提供）放進來與前半的意思矛盾，far from（遠非）語意不通。
+重點：let alone 用在否定的說法之後，後面接的是更難、更不可能的那一件事；同義說法有 much less、not to mention。
+延伸閱讀：let alone，前面那件都不行，後面更不用說 ↗
+深入解析
+你可能會這樣想
+let alone 照字面像「讓…獨自」，這樣拆就完全走偏。它是固定用語，意思是「更不用說」。使用有兩條鐵則：前面必須是否定的說法，而且 let alone 後面接的是「更難、更進一階」的那件事。
+怎麼判斷
+先看前後兩段的難易關係。前半 shoes are not always readily available for people living in poverty（貧困地區的人連鞋子都不見得有）是否定；後半 shoes that are the right size（合腳的鞋）要求更高。連鞋子都不一定有，更別說合腳的——遞進關係很清楚，兩條鐵則都成立。驗算法：把空格換成「更不用說」唸一遍，若前面那句不是否定的，或後面那件事反而比較容易，就代表選錯了。同義說法一起記：let alone ＝ much less，兩個都接在否定的說法後面；not to mention、to say nothing of 意思相近，但前面不限於否定的說法。He couldn't boil water, let alone cook a meal for eight.（他連水都不會煮，更別說張羅八個人的一餐。）一句記完：He barely has time for breakfast these days, let alone for the homework he keeps putting off.（他這陣子連早餐都幾乎沒時間吃，更不用說那些一再拖延的功課。）〔情境取材自 101 學測作文題：朋友沉迷電玩〕
+誘答選項
+except for 是「除了…之外（其餘全部）」，屬於排除，會讀成「除了合腳的鞋以外其他都有」——與前半的否定正好相反。provided with 是「被提供」（provide sb with sth 的被動），接在逗號後面只能當分詞片語回頭修飾 people living in poverty，整句會讀成「對那些拿到了合腳鞋子的貧困者來說，鞋子不見得隨手可得」，和前半的意思正好矛盾，而且它表達不出遞進。far from 是「遠非、一點也不」，後面接形容詞或名詞表示強烈否定（far from perfect），放進來會變成「遠非合腳的鞋」，語意讀不通，而且它表達的是程度上的否定，不是遞進。
+常考字詞與句型
+not…, let alone…（更不用說）、much less（更不用說）、not to mention（更別提）、to say nothing of（更別提）、readily available（隨手可得）、far from（遠非）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Shoes are hugely important for protecting our feet, especially in places like Africa, where healthcare provision is limited. Unfortunately, shoes are not always readily available for people living in poverty, 21 shoes that are the right size. Almost as soon as a child receives shoes to wear, he/she is likely to have grown out of them. Then the child has to 22 with shoes that are too small.
+The Shoe That Grows, created by a charity called Because International, changes all this. It allows children to 23 their shoes' size as their feet grow. The innovative footwear resembles a common sandal and is made of leather straps and rubber soles, a material similar to that used in tires. They come 24 two sizes, and can expand in three places. The straps on the heel and toe control the length of the shoe, 25 the two on either side allow for different widths. With this special design, the shoes can "grow" up to five sizes and last for at least five years.
+中譯：鞋子對保護雙腳非常重要，尤其是在像非洲這樣醫療資源有限的地方。然而，對貧困地區的人來說，取得合腳的鞋子並不容易。孩子往往才剛拿到鞋子沒多久，腳就已經長大到穿不下了，之後只能被迫穿著過小的鞋子。一個名為「Because International」的慈善機構所研發的「會長大的鞋子」，改變了這一切。這種鞋子讓孩子的鞋子能隨著腳的成長而調整尺寸。這款創新的鞋子外型類似一般涼鞋，由皮革綁帶和橡膠鞋底製成，材質與輪胎所用的相似。這款鞋子有兩種尺寸供選擇，並能在三個部位進行調整：腳跟和腳趾處的綁帶用來控制鞋子的長度，兩側的綁帶則能調整鞋子的寬度。透過這樣的特殊設計，這款鞋子最多可以「長大」五個尺碼，並可持續使用至少五年。
+📋 內容大意
+Shoes protect the feet, but poor families across Africa often cannot get them. Shoes of the right size are even harder to find.
+Children outgrow new shoes almost at once and must then wear pairs that pinch.
+The Shoe That Grows uses leather straps and rubber soles. Straps at the heel and toe change its length, side straps change its width. It grows five sizes.
+← 第20題回到106 年學測第22題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

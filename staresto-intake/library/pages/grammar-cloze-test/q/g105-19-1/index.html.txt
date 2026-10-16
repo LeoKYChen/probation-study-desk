@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g105-19-1/index.html
+Author: staresto-create ZZSH
+Title: 105 年學測克漏字第19題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 105 年學測 ／ 第19題
+105 年學測 克漏字 第19題
+字彙選義線索：句內答對率 52%
+答對率 52%：當年每 100 位考生，有 52 位答對。
+Yet, knowing perfectly well 19 a troublemaker his son was, the father refused to give them any money. 20 , he asked the kidnappers to pay him $250 to take the boy back.
+(A)how
+(B)that
+(C)why
+(D)what
+答案：(D) what
+題目編號：G105_19_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】what a + 名詞（名詞前可加形容詞）的感嘆句結構，what a troublemaker his son was（他兒子真是個麻煩精），作 knowing 的受詞子句；how（通常接形容詞/副詞本身，不接這種名詞結構）、that、why 都不合。
+深入解析
+你可能會這樣想
+看到 knowing perfectly well 後面接空格，直覺會填 that，因為「知道……這件事」平常就是 know that。也有很多人挑 how，因為中文說「知道他兒子有多麻煩」，那個「多」讓人反射性想到 how。這一格答對率只有五成二，兩個直覺各拉走一票。
+怎麼判斷
+判斷點只有一個：空格後面緊接著 a troublemaker，是「冠詞 + 名詞」的名詞片語。感嘆句（exclamative）通常用 what 或 how 開頭，劍橋 English Grammar Today 的「Exclamations」條寫得很清楚：what 後面接名詞片語（What an amazing car!），how 後面接形容詞或副詞（How interesting it was to hear her story!）。這裡後面是名詞，就只能用 what。把句子還原一次會更踏實：直述句是 His son was a real troublemaker.（他兒子真是個麻煩精。）改成感嘆句就是 What a troublemaker his son was!（他兒子是多大的一個麻煩精啊！）本題只是把這整個感嘆句放進 knowing 後面當受詞，所以主詞動詞維持 his son was 的正常順序，不倒裝。想用 how 也不是不行，但整句必須改寫成 knowing perfectly well how troublesome his son was — 名詞 troublemaker 得換成形容詞 troublesome，how 才站得住。what a + 名詞 對上 how + 形容詞，這一組互換請一起記。
+誘答選項
+that 帶出的名詞子句必須是完整的直述句，也就是 knowing perfectly well that his son was a troublemaker — 文法沒錯，但語序和空格後面的 a troublemaker his son was 對不上，代進去讀就會發現多出一個 a troublemaker。why（為什麼）會變成「知道他兒子為什麼是個麻煩精」，文章沒有在追究原因。how 如上所述，後面得接形容詞或副詞。
+常考字詞與句型
+What a/an + 形容詞 + 名詞 + 主詞 + 動詞（多麼……啊）、How + 形容詞或副詞 + 主詞 + 動詞（多麼……啊）、know perfectly well（心知肚明、非常清楚）、a troublemaker（麻煩製造者）、refuse to V（拒絕做……）、give sb money（給某人錢）。其中 refuse to V 這一組考過 3 個年度，學測詞彙 89 年第 8 題、108 年第 17 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Bill and Sam decided to kidnap the son of a banker to compensate for their business loss. They kidnapped the boy and hid him in a cave. They asked for a ransom of $2,000 to return the boy.
+16 , their plan quickly got out of control. Their young captive 17 to be a mischievous boy. He viewed the kidnapping as a wonderful camping trip. He demanded that his kidnappers play tiring games with him, such as riding Bill as a horse for nine miles. Bill and Sam were soon desperate and decided to 18 the little terror. They lowered the price to $1,500.
+Yet, knowing perfectly well 19 a troublemaker his son was, the father refused to give them any money. 20 , he asked the kidnappers to pay him $250 to take the boy back. To persuade the boy to return home, Bill and Sam had to tell him that his father was taking him bear-hunting. The kidnappers finally handed over the boy and $250 to the banker and fled town as quickly as they could.
+中譯：比爾和山姆決定綁架一位銀行家的兒子，藉此彌補他們生意上的損失。他們綁走了男孩，把他藏在一個山洞裡，並要求兩千美元的贖金才肯放人。然而，他們的計畫很快就失控了。這名年幼的人質原來是個調皮搗蛋的孩子，他把整場綁架當成一次美好的露營之旅，還要求綁匪陪他玩累人的遊戲，例如騎在比爾身上「當馬」走上九英里。比爾和山姆很快就束手無策，決定把這個小麻煩精送回去，並把贖金降到一千五百美元。然而，這位父親完全清楚自己兒子有多難搞，因此拒絕支付任何贖金。相反地，他還要求綁匪付他兩百五十美元，才願意把兒子接回去。為了說服男孩願意回家，比爾和山姆只好騙他說爸爸要帶他去獵熊。綁匪最終只好把男孩和兩百五十美元一起交給這位銀行家，然後盡快逃離小鎮。
+📋 內容大意
+Two men kidnapped a banker's son and held him for ransom to make up for financial losses.（敘事文）
+The kidnapped boy tormented his captors with exhausting games, forcing them to lower the ransom price out of desperation.（敘事文）
+The father demanded payment to take his troublemaking son back, leaving the kidnappers no choice but to pay him and flee.（敘事文）
+← 第18題回到105 年學測第20題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

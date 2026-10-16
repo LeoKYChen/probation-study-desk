@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g97-19-1/index.html
+Author: staresto-create ZZSH
+Title: 97 年學測克漏字第19題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 97 年學測 ／ 第19題
+97 年學測 克漏字 第19題
+字彙選義線索：句內答對率 84%
+答對率 84%：當年每 100 位考生，有 84 位答對。
+Their 19 is in the processing.
+(A)weight
+(B)purpose
+(C)difference
+(D)structure
+答案：(C) difference
+題目編號：G97_19_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「它們的差異在於加工方式」，difference（差異）符合，呼應後文說明兩者處理過程不同；weight（重量）、purpose（目的）、structure（結構）都不合。
+深入解析
+你可能會這樣想
+這一格多數人一眼就挑了 difference，靠的是語感。不過值得把判斷的依據想清楚，因為同樣的問法換一篇文章、換一組選項，語感就未必靠得住。
+怎麼判斷
+看空格前後的句子怎麼接。前一句 Green tea and black tea come from the same plant.（綠茶和紅茶來自同一種植物）已經把「相同」講完了；把兩樣東西擺在一起說「相同」之後，接下來自然要交代「那不同在哪」。空格所在的 Their ______ is in the processing 就是這個轉折點，填 difference 才接得上。再往後讀一句 Green tea is dried but not fermented（綠茶只乾燥不發酵），正是在說明兩者加工方式的差別，前後完全咬合。「先說相同、再說相異」是說明文常見的推進方式，看到 the same plant 就要準備接 difference。
+誘答選項
+weight（重量）：全文沒有比較兩種茶的重量。purpose（目的）：processing 是製作過程，不是目的，而且茶葉本身不會有「目的」放在製程裡。structure（結構）：如果講的是葉片或分子結構，後面該接的是形狀或組成的描述，但接下來講的是乾燥與發酵這些「做法」，對不上。
+常考字詞與句型
+the difference between A and B（A 與 B 之間的差別）、tell the difference（分辨出差別）、make a difference（造成影響、有所不同）、come from the same plant（來自同一種植物）、a lighter flavor（較清淡的風味）、be in the processing（在於加工過程）。其中 make a difference 這一組考過 3 個年度，93 年第 27 題 →、學測參考試卷第 27 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+What is so special about green tea? The Chinese and Indians 16 it for at least 4,000 years to treat everything from headache to depression. Researchers at recently concluded that a compound in green tea 17 the growth of cancer cells. Green tea is also helpful 18 infection and damaged immune function. The secret power of green tea is its richness in a powerful anti-oxidant.
+Green tea and black tea come from the same plant. Their 19 is in the processing. Green tea is dried but not fermented, and this shorter processing gives it a lighter flavor than black tea. It also helps retain the tea's beneficial chemicals. That is 20 green tea is so good for health.
+The only reported negative effect of drinking green tea is a possible allergic reaction and insomnia due to the caffeine it contains.
+中譯：綠茶到底有什麼特別之處？中國人和印度人使用綠茶至少已有四千年歷史，用來治療從頭痛到憂鬱症等各種病症。最近的研究人員發現，綠茶中的一種化合物能減緩癌細胞的生長。綠茶也有助於對抗感染和受損的免疫功能。綠茶的神奇力量來自於它富含強效抗氧化物。綠茶和紅茶其實來自同一種植物，兩者的差別在於加工方式。綠茶只經過乾燥而未經發酵，這樣較短的加工過程使它的味道比紅茶更清淡，也有助於保留茶葉中對健康有益的化學成分。這就是為什麼綠茶對健康這麼好。飲用綠茶唯一被報導的負面影響，是可能引發過敏反應，以及因所含咖啡因而導致失眠。
+📋 內容大意
+Green tea has been long used in traditional medicine and is proven by modern research to offer various health and medicinal benefits.
+Green tea retains its health-promoting chemicals and distinct flavor due to its minimal, non-fermented processing method.
+Despite its numerous benefits, green tea may cause mild side effects like caffeine-induced insomnia or allergic reactions in some individuals.
+← 第18題回到97 年學測第20題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g95-25-2/index.html
+Author: staresto-create ZZSH
+Title: 95 年學測克漏字第25題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 95 年學測 ／ 第25題
+95 年學測 克漏字 第25題
+慣用語／片語線索：句內答對率 68%
+答對率 68%：當年每 100 位考生，有 68 位答對。
+The mark of heroes is not necessarily the result of their action, but 24 they are willing to do for others and for their chosen cause. 25 they fail, their determination lives on for others to follow.
+(A)Not until
+(B)Even if
+(C)As if
+(D)No sooner than
+答案：(B) Even if
+題目編號：G95_25_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】even if 指「即使」，表示「即使他們失敗了，他們的決心依然能激勵他人」；Not until（直到……才）、As if（彷彿）、No sooner than（不是標準搭配，需要完整倒裝結構）都不合。
+深入解析
+你可能會這樣想
+Not until 與 No sooner than 這兩個選項長得很有氣勢，你可能會被它們吸走。但這兩個一放到句首，句子的形態就必須改變——它們的文法條件不能通融，先檢查條件過不過，比慢慢想語意快得多。
+怎麼判斷
+先看句子的形態：這一句是 ___ they fail, their determination lives on for others to follow，主要子句 their determination lives on 是正常語序，主詞在前、動詞在後，沒有倒裝。這一點等一下會一口氣刷掉兩個選項。確定形態沒問題之後再看語意：Even if 是「即使」，用來讓步——即使失敗了，決心依然延續下去，正好接上最後一句 The glory lies not in the achievement but in the sacrifice（榮耀不在成就，而在犧牲）。整段的意思是「不管失不失敗，都不影響決心的價值」，讓步關係完全吻合。
+誘答選項
+Not until 放在句首時，主要子句一定要倒裝，也就是把助動詞搬到主詞前面：Not until they fail does their determination live on...。原句沒有倒裝，Not until 立刻排除。這裡說的倒裝專指主詞與助動詞位置對調，跟 Not only had he... 是同一組。No sooner 的正確形態是 no sooner...than...，同樣要倒裝，而且通常配過去完成式：No sooner had they failed than...。選項寫成 No sooner than 已經把中間該有的東西砍掉了，形態本身就不完整。這兩個選項都不必想語意，光看主要子句沒倒裝就能刷掉。As if 是「彷彿、好像」，形態上沒問題，但它用來打比方，而這裡說「他們的決心延續下去讓別人跟隨」是真的在發生，不是比喻，語意上不合。順便分清楚 even if 與 even though：even if 講的是還沒發生、帶假設意味的（Even if it rains, we will go.）；even though 講的是已經是事實的（Even though it was raining, we went.）。
+常考字詞與句型
+even if（即使、就算）、even though（雖然、儘管）、Not until …（直到……才）、no sooner...than...（一……就）、as if（彷彿、好像）、live on（繼續存在、延續下去）。其中 even though 這一組考過 6 個年度，89 年第 23 題 →、96 年第 25 題、103 年第 30 題 →、106 年第 19 題 →、107 年第 21 題 →都出現過；even if 考過 4 個年度，89 年第 23 題 →、96 年第 25 題、103 年第 30 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+There are two kinds of heroes: heroes who shine in the face of great danger, who perform an 21 act in a difficult situation, and heroes who live an ordinary life like us, who do their work 22 by many of us, but who 23 a difference in the lives of others.
+Heroes are selfless people who perform extraordinary acts. The mark of heroes is not necessarily the result of their action, but 24 they are willing to do for others and for their chosen cause. 25 they fail, their determination lives on for others to follow. The glory lies not in the achievement but in the sacrifice.
+中譯：英雄有兩種：一種是在面對重大危險時挺身而出，在艱困情境中做出令人驚嘆之舉的英雄；另一種則是像我們一樣過著平凡生活的英雄，他們所做的事往往不被大多數人注意，卻切實地為他人的生命帶來改變。英雄是無私的人，他們做出超凡的行為。英雄的印記不一定在於行動的結果，而在於他們願意為他人及自己選擇的理念付出什麼。即使他們失敗了，他們的決心仍會延續下去，激勵他人繼續前行。榮耀不在於成就本身，而在於犧牲。
+📋 內容大意
+Heroes come in two kinds: those who act bravely in great danger, and those who live ordinary lives.
+The second kind work quietly, without praise, yet still change other people's lives.
+Heroism lies less in results than in the willingness to act for others. Even a failure leaves determination for others to follow.
+← 第24題回到95 年學測第26題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

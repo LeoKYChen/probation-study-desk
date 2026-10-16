@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g100-19-1/index.html
+Author: staresto-create ZZSH
+Title: 100 年學測克漏字第19題詳解（分詞／動狀詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 100 年學測 ／ 第19題
+100 年學測 克漏字 第19題
+分詞／動狀詞線索：句內答對率 78%
+答對率 78%：當年每 100 位考生，有 78 位答對。
+Thus, they learned how to preserve the body by drying it out, oiling and then 19 the body in linen, before placing it in the coffin.
+(A)wrapped
+(B)wrapping
+(C)to wrap
+(D)being wrapped
+答案：(B) wrapping
+題目編號：G100_19_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+並列動名詞結構「drying...oiling and then wrapping」（乾燥、上油、然後用亞麻布包裹），跟前面 drying／oiling 並列一致；wrapped（過去分詞，不合並列一致性）、to wrap（不定詞）、being wrapped（動名詞的被動形式，這裡是主動包裹的動作）都不合。
+深入解析
+你可能會這樣想
+看到空格後面就是 the body，很多人直覺「屍體是被包起來的」，於是挑了被動的 wrapped 或 being wrapped。這是把「意義上的被動」和「文法上的被動」混在一起了：屍體確實是被包的，但這句話動手的人是埃及人。
+怎麼判斷
+先看空格所在的整串：they learned how to preserve the body by drying it out, oiling and then ______ the body in linen。關鍵在最前面的 by——by 是介系詞，後面要接動名詞，而它後面已經接了 drying、oiling 兩個動名詞，用逗號和 and 串成一串。空格是這一串的第三個，形式必須和前兩個一致，所以是 wrapping。驗算的方法很簡單，把每一個都拉回 by 後面唸一次：by drying it out（把屍體風乾）、by oiling（上油）、by wrapping the body in linen（用亞麻布包裹屍體），三個都通，形式就對了。主動被動也順帶確認：這三個動作的執行者都是 they，所以是主動。這裡還有一條學測反覆考的鐵律可以一起記住：被動語態後面不能再接原來的受詞——the body 還好端端地跟在空格後面，光憑這一點就能把兩個被動選項刷掉。這一題本身不難，鑑別度卻只有 38，是這一年最低的幾題之一。題目偏易時能拉開的差距本來就小；真正會失手的，多半是只看空格前後兩三個字、沒有往回找到那個 by 的人。
+誘答選項
+wrapped：過去分詞，形式與前面的 drying、oiling 不一致，而且動作的執行者是埃及人，不該用被動。to wrap：不定詞，接不上介系詞 by。being wrapped：動名詞的被動形式，形式上勉強能接在 by 後面，但語意會變成「屍體被包裹」這件事本身是保存方法，與並列的前兩個主動動名詞衝突，而且它後面還接著受詞 the body，被動之後不能再接受詞。
+常考字詞與句型
+wrap A in B（用 B 把 A 包起來）、dry sth out（把某物弄乾）、by V-ing（藉由做…）、learn how to（學會如何…）、place sth in（把某物放進…）、oil sth（在某物上抹油）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+When it comes to Egypt, people think of pyramids and mummies, both of which are closely related to Egyptian religious beliefs. The ancient Egyptians believed firmly in life 16 death. When a person died, his or her soul was thought to travel to an underworld, where it 17 a series of judgments before it could progress to a better life in the next world.
+For the soul to travel smoothly, the body had to 18 unharmed. Thus, they learned how to preserve the body by drying it out, oiling and then 19 the body in linen, before placing it in the coffin.
+Egyptians also built pyramids as 20 for their kings, or pharaohs. The pyramid housed the pharaoh's body together with priceless treasure, which would accompany him into the next world.
+中譯：提到埃及，人們會想到金字塔和木乃伊，這兩者都與埃及人的宗教信仰密切相關。古埃及人堅信人死後仍有來生。人死後，靈魂被認為會前往冥界，在那裡經歷一連串的審判，才能前往來世過更好的生活。為了讓靈魂順利踏上旅程，屍體必須保持完好無損。因此，他們發展出保存屍體的方法：先將屍體風乾、上油，再用亞麻布包裹屍體，然後放入棺材中。埃及人也建造金字塔作為國王（法老）的陵墓，金字塔裡存放著法老的遺體和無價的珍寶，這些珍寶將伴隨他前往來世。
+📋 內容大意
+Pyramids and mummies both come from ancient Egyptian religion. The Egyptians firmly believed that life did not end at death.
+Egyptians believed the soul travelled to an underworld and faced a series of judgments there. To pass them, the body had to stay whole.
+So they dried the body, oiled it, and bound it in linen before placing it in a coffin. Pyramids held their kings and treasure.
+← 第18題回到100 年學測第20題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

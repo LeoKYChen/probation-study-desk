@@ -1,0 +1,166 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/z105p4.html
+Author: staresto-create ZZSH
+Title: 105 指考閱讀測驗：尖叫的特性與應用｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 105 指考
+105 指考閱讀測驗：尖叫的特性與應用
+What Makes Screams Unique and How to Use It
+指考 105年第 48–51 題4 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段Screaming is one of the primal responses humans share with other animals. Conventional thinking suggests that what sets a scream apart from other sounds is its loudness or high pitch. However, many sounds that are loud and high-pitched do not raise goose bumps like screams can. To find out what makes human screams unique, neuroscientist Luc Arnal and his team examined a bank of sounds containing sentences spoken or screamed by 19 adults. The result shows screams and screamed sentences had a quality called “roughness,” which refers to how fast a sound changes in loudness. While normal speech sounds only have slight differences in loudness—between 4 and 5 Hz, screams can switch very fast, varying between 30 and 150 Hz, thus perceived as being rough and unpleasant.
+第 2 段Arnal’s team asked 20 subjects to judge screams as neutral or fearful, and found that the scariest almost always corresponded with roughness. The team then studied how the human brain responds to roughness using fMRI brain scanners. As expected, after hearing a scream, activity increased in the brain’s auditory centers where sound coming into the ears is processed. But the scans also lit up in the amygdala, the brain’s fear center.
+第 3 段The amygdala is the area that regulates our emotional and physiological response to danger. When a threat is detected, our adrenaline rises, and our body prepares to react to danger. The study discovered that screams have a similar influence on our body. It also found that roughness isn’t heard when we speak naturally, regardless of the language we use, but it is prevalent in artificial sounds. The most aggravating alarm clocks, car horns, and fire alarms possess high degrees of roughness.
+第 4 段One potential application for this research might be to add roughness to alarm sounds to make them more effective, the same way a bad smell is added to natural gas to make it easily detectable. Warning sounds could also be added to electric cars, which are particularly silent, so they can be efficiently detected by pedestrians.
+題目
+48.What is the first paragraph mainly about?
+(A)Different types of screams.
+(B)Human sounds and animal cries.
+(C)Specific features of screams.
+(D)Sound changes and goose bumps.
+49.According to the passage, which of the following is NOT a finding by Arnal’s team?
+(A)Changes in volume make screams different from other sounds.
+(B)Only humans can produce sounds with great loudness variation.
+(C)Normal human speech sounds vary between 4 to 5 Hz in loudness.
+(D)Drastic volume variation in speech can effectively activate the amygdala.
+50.What does “it” in the third paragraph refer to?
+(A)The study.
+(B)Language.
+(C)Roughness.
+(D)The amygdala.
+51.Which of the following devices may be improved with the researchers’ findings?
+(A)Smoke detectors.
+(B)Security cameras.
+(C)Electric bug killers.
+(D)Fire extinguishers.
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+48
+(C)
+54%
+57
+49
+(B)
+64%
+35
+50
+(C)
+60%
+60
+51
+(A)
+40%
+52
+答對率與鑑別度出處：大考中心 105 學年度指定科目考試統計圖表：英文科答對率及鑑別指數表
+每一題的依據句
+第 48 題 主旨題 Main idea
+第 1 段To find out what makes human screams unique
+第 1 段which refers to how fast a sound changes in loudness.
+原文 → 正確選項
+what makes human screams unique → Specific features of screams
+第 1 段先說一般認為尖叫的特別之處是大聲或高音，但許多大聲的高音並不讓人起雞皮疙瘩；接著說 Arnal 的團隊研究人類的尖叫特別在哪裡（what makes human screams unique），發現尖叫有「粗糙度」，也就是音量變化很快。這一段講的是尖叫有哪些特點，所以是 (C)。(B) 照抄 animal，人類和動物共有尖叫的反應只是第一句的開場；(D) 照抄 goose bumps，雞皮疙瘩是用來說明大聲的高音不等於尖叫；(A) 這一段沒有把尖叫分成不同種類。
+第 49 題 細節題 Supporting details
+第 1 段screams can switch very fast, varying between 30 and 150 Hz
+第 3 段but it is prevalent in artificial sounds.
+題目問哪一個不是 Arnal 團隊的發現。(A) 第 1 段說尖叫的音量變化很快，這就是尖叫和其他聲音不同的地方，是發現；(C) 第 1 段說一般說話的音量變化在 4 到 5 赫茲之間，是發現；(D) 第 2 段說聽到尖叫以後，杏仁核亮了起來，是發現。(B) 和原文矛盾：第 3 段說人工的聲音也常常有粗糙度，鬧鐘、汽車喇叭和火災警報器的粗糙度都很高，可見不是只有人類發得出音量變化大的聲音，所以選 (B)。
+第 50 題 詞義題（指代詞） Vocabulary in context
+第 3 段roughness isn’t heard when we speak naturally, regardless of the language we use, but it is prevalent in artificial sounds.
+原文 → 正確選項
+roughness → Roughness
+這一句用 but 連接兩個對比的部分：粗糙度（roughness）在自然說話時聽不到，但 it 在人工的聲音裡很普遍。前後兩部分講的是同一件事，聽得到或聽不到的是粗糙度，所以 it 指的是 roughness，答案是 (C)。(B) language 是離 it 最近的名詞，但「語言在人工的聲音裡很普遍」說不通；(A) the study 出現在前一句，研究不會在聲音裡；(D) the amygdala 是第 3 段第一句說的大腦恐懼中樞，「杏仁核在人工的聲音裡很普遍」同樣說不通。
+代名詞怎麼找出指的是誰 →
+第 51 題 推論題 Inference
+第 4 段One potential application for this research might be to add roughness to alarm sounds to make them more effective
+第 3 段The most aggravating alarm clocks, car horns, and fire alarms possess high degrees of roughness.
+這一題答對率只有 40%。判斷步驟：[1] 第 4 段說這項研究可以用在警報聲（alarm sounds）上，加入粗糙度讓警報更有效；[2] 所以要找的是會發出警報聲的裝置；[3] 煙霧偵測器偵測到煙會發出警報，所以是 (A)。最多人選錯的是 (D)，這個選項照抄第 3 段的 fire，火災警報器會發出聲音，滅火器卻是用來滅火，不會發出警報；(B) 監視器錄的是影像；(C) 電蚊燈用來殺蟲，都不靠警報聲。
+逐段中譯
+第 1 段尖叫是人類和其他動物共有的原始反應之一。一般的想法認為，尖叫和其他聲音不同的地方，在於音量大或音調高。然而，許多又大聲、音調又高的聲音，並不像尖叫那樣讓人起雞皮疙瘩。為了找出人類的尖叫特別在哪裡，神經科學家 Luc Arnal 和他的團隊研究了一個聲音資料庫，裡面是 19 位成人說出或尖叫出來的句子。結果顯示，尖叫和尖叫出來的句子，都有一種叫做「粗糙度」（roughness）的特性，指的是聲音的音量變化得多快。一般說話的聲音，音量只有些微的差異，在 4 到 5 赫茲之間；尖叫的音量卻可以變化得非常快，在 30 到 150 赫茲之間，所以聽起來粗糙、刺耳。
+第 2 段Arnal 的團隊請 20 位受試者判斷尖叫聲是平常的還是恐懼的，發現最可怕的尖叫，幾乎都是最粗糙的。團隊接著用功能性磁振造影（fMRI）掃描儀，研究人腦對粗糙度有什麼反應。和預期的一樣，聽到尖叫以後，大腦處理耳朵接收到的聲音的聽覺中樞，活動增加了。不過，掃描影像上，大腦的恐懼中心杏仁核也亮了起來。
+第 3 段杏仁核是調節我們對危險的情緒和生理反應的區域。察覺到威脅的時候，我們的腎上腺素上升，身體準備對危險做出反應。研究發現，尖叫對身體也有類似的影響。研究也發現，不管我們說的是哪一種語言，自然說話的時候都聽不到粗糙度，但人工的聲音卻常常有粗糙度。最讓人煩躁的鬧鐘、汽車喇叭和火災警報器，粗糙度都很高。
+第 4 段這項研究可能的一個應用，是在警報聲裡加入粗糙度，讓警報更有效，就像在天然氣裡加入難聞的氣味，讓人容易察覺一樣。也可以替特別安靜的電動車加上警示音，讓行人能有效地察覺。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。沒有列出的段落，就是沒有主旨句，請對照「這一篇的文章結構」裡的綱要，找出那一段的重點。這一篇沒有一句話直接點出全文中心思想，要讀完各段，自己歸納。
+第 1 段The result shows screams and screamed sentences had a quality called “roughness,” which refers to how fast a sound changes in loudness.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體說明文 Expository
+組織方式因果關係 Cause-Effect這一類怎麼辨識 →
+關鍵轉折詞HoweverWhilethusAs expectedButalso
+綱要
+尖叫是人類和其他動物共有的原始反應，一般認為尖叫的特別之處在於大聲或高音，(However) 然而許多又大又高的聲音並不像尖叫那樣讓人起雞皮疙瘩。
+神經科學家 Luc Arnal 的團隊發現尖叫有一種「粗糙度」，指音量變化的快慢；(While) 一般說話的變化只在 4 到 5 赫茲之間，尖叫卻在 30 到 150 赫茲之間，(thus) 所以聽起來刺耳。
+受試者判斷最可怕的尖叫幾乎都最粗糙；用功能性磁振造影觀察大腦，(As expected) 不出所料，聽覺中樞活動增加，(But) 不過恐懼中心杏仁核 (also) 也亮了起來。
+杏仁核在察覺威脅時讓身體準備應變，尖叫對身體也有類似影響；研究也發現，不論說哪一種語言，自然說話都沒有粗糙度，人造的聲音卻很常有，最惱人的鬧鐘、汽車喇叭、火災警報卻都很粗糙。
+這項研究可能的應用是在警報聲中加入粗糙度，讓警報更有效，就像在天然氣裡加入臭味，讓人容易察覺；也可以替特別安靜的電動車加上警示音，讓行人容易注意到。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 21 個、參考字彙 20 個、字詞搭配 13 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+response[rɪˈspɑns]n.反應三級第 1 段詞彙題考過 2 次：96 學測第 2 題（誘答）、85 聯考第 5 題（誘答）
+conventional[kənˈvɛnʃənəl]adj.一般的、傳統的四級第 1 段詞彙題考過 2 次：110 學測第 6 題（誘答）、93 補救考試第 7 題（答案）
+normal[ˈnɔrməl]adj.一般的三級第 1 段詞彙題考過 1 次：87 聯考第 2 題 normally（答案）
+slight[slaɪt]adj.些微的四級第 1 段詞彙題考過 1 次：113 學測第 1 題（誘答）
+perceive[pɚˈsiv]v.感覺到、察覺五級第 1 段詞彙題考過 2 次：104 指考第 2 題 perceived（誘答）、96 指考第 1 題 perceived（答案）
+fearful[ˈfɪrfəl]adj.恐懼的三級第 2 段詞彙題考過 1 次：100 學測第 14 題（誘答）
+correspond[ˌkɔrəˈspɑnd]v.相符、對應（correspond with）四級第 2 段詞彙題考過 1 次：110 學測第 15 題 corresponded（誘答）
+process[ˈprɑsɛs]v.處理三級第 2 段詞彙題考過 4 次：100 學測第 8 題（答案）、96 指考第 2 題（誘答）、84 推薦甄選第 2 題（誘答）、81 聯考第 1 題（誘答）
+regulate[ˈrɛgjəˌleɪt]v.調節四級第 3 段詞彙題考過 2 次：109 指考第 9 題 regulates（誘答）、95 指考第 9 題（誘答）
+emotional[ɪˈmoʊʃənəl]adj.情緒的三級第 3 段詞彙題考過 2 次：89 聯考第 3 題（誘答）、88 推薦甄選第 10 題 emotionally（答案）
+detect[dɪˈtɛkt]v.察覺三級第 3 段詞彙題考過 3 次：107 指考第 3 題 detected（誘答）、91 指考第 7 題 detected（誘答）、90 學測第 3 題 detected（誘答）
+artificial[ˌɑrtəˈfɪʃəl]adj.人工的四級第 3 段詞彙題考過 3 次：93 學測第 8 題（答案）、87 推薦甄選第 5 題（誘答）、85 聯考第 9 題（誘答）
+possess[pəˈzɛs]v.具有四級第 3 段詞彙題考過 1 次：114 學測第 8 題 possessed（誘答）
+potential[pəˈtɛnʃəl]adj.可能的四級第 4 段詞彙題考過 6 次：111 學測第 4 題 potentially（答案）、99 學測第 12 題（誘答）、97 指考第 2 題 potentially（誘答）、96 學測第 2 題（答案）、90 聯考第 15 題（誘答）、85 聯考第 9 題（誘答）
+application[ˌæpləˈkeɪʃən]n.應用四級第 4 段詞彙題考過 1 次：103 指考第 7 題（誘答）
+efficiently （詞彙表：efficient）[ɪˈfɪʃəntli]adv.有效地三級第 4 段詞彙題考過 7 次：107 學測第 15 題（誘答）、101 學測第 7 題（誘答）、97 指考第 2 題 efficiently（誘答）、89 聯考第 13 題（誘答）、88 推薦甄選第 9 題（答案）、88 聯考第 3 題（誘答）、85 推薦甄選第 8 題 efficiently（誘答）
+specific[spəˈsɪfɪk]adj.特定的、具體的三級第 48 題詞彙題考過 3 次：103 指考第 3 題 specifically（答案）、99 指考第 10 題 specifically（誘答）、92 指考第 4 題 specifically（誘答）
+volume[ˈvɑljum]n.音量三級第 49 題詞彙題考過 1 次：103 學測第 11 題（誘答）
+variation[ˌvɛriˈeɪʃən]n.變化五級第 49 題詞彙題考過 1 次：95 指考第 4 題（答案）
+researcher[ˈrisɚʧɚ]n.研究人員四級第 51 題詞彙題考過 1 次：109 學測第 3 題（誘答）
+security[sɪˈkjʊrəti]n.保全（security cameras 監視器）三級第 51 題詞彙題考過 4 次：105 學測第 6 題（誘答）、94 學測第 15 題（誘答）、92 學測補考第 4 題（答案）、88 聯考第 8 題（誘答）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+primal[ˈpraɪməl]adj.原始的、最基本的表外第 1 段
+neuroscientist[ˈnjʊroʊˌsaɪəntɪst]n.神經科學家表外第 1 段
+neutral[ˈnutrəl]adj.中性的、不帶情緒的五級第 2 段
+fMRI[ˌɛfˌɛmˌɑrˈaɪ]n.功能性磁振造影表外第 2 段
+scanner[ˈskænɚ]n.掃描器表外第 2 段
+auditory[ˈɔdɪˌtɔri]adj.聽覺的表外第 2 段
+scan[skæn]n.掃描五級第 2 段
+amygdala[ˌæmɪgˈdɑlə]n.杏仁核（大腦裡處理恐懼的區域）表外第 2 段
+physiological[ˌfɪziəˈlɑʤɪkəl]adj.生理的表外第 3 段
+adrenaline[əˈdrɛnələn]n.腎上腺素表外第 3 段
+regardless[rɪˈgɑrdləs]adv.（regardless of）不管、不論五級第 3 段
+prevalent[ˈprɛvələnt]adj.常見的、普遍的表外第 3 段
+aggravating[ˈægrəˌveɪtɪŋ]adj.讓人煩躁的、惱人的表外第 3 段
+detectable[dɪˈtɛktəbəl]adj.察覺得到的表外第 4 段
+pedestrian[pəˈdɛstriən]n.行人五級第 4 段
+drastic[ˈdræstɪk]adj.劇烈的六級第 49 題
+activate[ˈæktəˌveɪt]v.啟動、刺激（大腦區域）活躍表外第 49 題
+finding[ˈfaɪndɪŋ]n.研究結果、發現表外第 51 題
+detector[dɪˈtɛktɚ]n.偵測器（smoke detector 煙霧偵測器）表外第 51 題
+extinguisher[ɪkˈstɪŋgwɪʃɚ]n.滅火器（fire extinguisher）表外第 51 題
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+share + sth + with + N和……共有……第 1 段原文：one of the primal responses humans share with other animals
+set A apart from B讓 A 和 B 不一樣第 1 段原文：what sets a scream apart from other sounds
+raise goose bumps讓人起雞皮疙瘩第 1 段原文：do not raise goose bumps
+refer to + N指的是……第 1 段原文：which refers to how fast a sound changes
+vary between A and B在 A 和 B 之間變動第 1 段原文：varying between 30 and 150 Hz
+perceive A as B覺得 A 是 B第 1 段原文：perceived as being rough and unpleasant
+judge A as B把 A 判斷為 B第 2 段原文：judge screams as neutral or fearful
+correspond with + N和……相符第 2 段原文：corresponded with roughness
+respond to + N對……做出反應第 2 段原文：how the human brain responds to roughness
+have an influence on + N對……有影響第 3 段原文：screams have a similar influence on our body
+regardless of + N不論……第 3 段原文：regardless of the language we use
+add A to B把 A 加進 B第 4 段原文：to add roughness to alarm sounds
+the same way + 子句就像……一樣第 4 段原文：the same way a bad smell is added to natural gas
+← 上一篇篇目一覽
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

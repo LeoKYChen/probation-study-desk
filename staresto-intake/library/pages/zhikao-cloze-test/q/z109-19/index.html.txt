@@ -1,0 +1,51 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z109-19/index.html
+Author: staresto-create ZZSH
+Title: 109 年指考克漏字第19題詳解（慣用語／片語）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 109 年指考 ／ 第19題
+109 年指考 克漏字 第19題
+慣用語／片語線索：句內答對率 61%
+答對率 61%：當年每 100 位考生，有 61 位答對。
+He was about to 19 the dishes, but he noticed that in one dish, the bacteria had failed to grow in the area around the fungus.
+(A)toss out
+(B)get off
+(C)catch up
+(D)carry on
+答案：(A) toss out
+題目編號：Z109_19（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+toss out the dishes（把培養皿丟棄）表示弗萊明原本打算把這些受污染的培養皿丟掉，卻意外發現黴菌周圍沒有細菌生長；get off／catch up／carry on 都不符合此處語境。
+深入解析
+你可能會這樣想
+toss 你的印象大概是擲硬幣、拋球那個「拋、扔」的動作，像 toss a coin，沒把它跟丟垃圾連在一起。toss out 就是把不要的東西扔掉，和 throw away 是同一個意思，只是換了一組字。
+怎麼判斷
+四個選項都是動詞片語，先從語意線索下手。前一句說他發現有些培養皿長了黴菌，which had ruined his experiment（那毀掉了他的實驗）——實驗既然毀了，接下來的自然動作就是把這些培養皿處理掉。空格後面直接接著受詞 the dishes，所以這一格要的是能帶受詞、而且意思是丟棄的片語。整句用 be about to V（正要……）帶出來，接著用 but 轉折：正要丟掉，卻注意到異常——這個差一點就錯過的轉折，正是整篇在講機緣巧合的核心。
+誘答選項
+get off（下車、脫身）與 catch up（趕上、跟上）語意都與丟棄無關，擺在 the dishes 前面也接不順。carry on（繼續進行）形態上帶得了受詞，但意思是把某件事繼續下去，代進去變成他正要繼續那些培養皿，語意不通，而且與後面的 but 轉折接不上——如果他打算繼續做，發現黴菌就不算意外的插曲了。鑑別度 57，分開的是有沒有把前一句的 ruined his experiment 讀進來。
+順便把這個 since 記起來
+下一句藏著一個常考的用法：a drug that has since saved millions of lives。你學過的 since 後面一定要接東西——接時間點（since 2010）或接子句（since I was a child）；這裡的 since 後面什麼都沒接，夾在助動詞與過去分詞之間，這時它是單獨當副詞用，意思等於 since then（自那時起）。判斷方式就這一句：since 後面不接名詞也不接子句，它就是 since then。同型的句子題庫裡還有兩處——指考 101 年那篇的 security measures have since been tightened（自那時起安全措施已加強）、學測文意選填 113 年那篇的 Phones ... have since been built around the world（自那時起世界各地陸續建起）。學測文意選填 93 年第 36 題考的正是這個字（have since perished），答對率只有一成五，是歷年最低的幾題之一。
+常考字詞與句型
+toss out（扔掉、丟棄）、throw away（丟掉）、be about to V（正要……）、carry on（繼續進行）、catch up with（趕上）、give rise to（引發、導致）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：109學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Scientific discovery can take various forms. One of them is "serendipity," the luck of finding valuable things unintentionally. Serendipity was at work when Alexander Fleming discovered penicillin, the antibiotic miracle.
+Fleming had long been known for having an untidy laboratory. One morning in 1928, this 16 proved very fortunate. It was his first day coming back to work after a long vacation. Before the vacation, he 17 in the sink a number of petri dishes in which he had been growing bacteria. While he was sorting through the long 18 dishes of germs that morning, he observed that some of the dishes were contaminated with a fungus, which had ruined his experiment. He was about to 19 the dishes, but he noticed that in one dish, the bacteria had failed to grow in the area around the fungus. This accidental finding gave rise to subsequent research that led to the discovery of penicillin—a drug that has since saved millions of lives.
+Chance 20 , however, may not be enough to make key discoveries like this. The scientist must have a prepared and open mind to detect the importance of the unforeseen incident and to use it constructively.
+中譯：科學發現可能有各種不同的形式，其中之一便是「機緣巧合」（serendipity），也就是在無意間發現有價值事物的幸運。亞歷山大．弗萊明（Alexander Fleming）發現抗生素奇蹟「盤尼西林」的過程，正是機緣巧合發揮作用的例子。
+弗萊明長期以來以實驗室凌亂聞名。1928 年的某天早晨，這個雜亂的習慣卻證明是件幸運的事。那天是他長假結束後回來工作的第一天。在休假前，他曾將許多正在培養細菌的培養皿隨意堆放在水槽裡。當天早上，他在整理這些長時間乏人問津、佈滿細菌的培養皿時，發現其中有些已遭黴菌污染，實驗因而報廢。他正打算把這些培養皿丟棄，卻注意到其中一個培養皿裡，黴菌周圍的細菌竟然無法生長。這項意外的發現，後來促成了進一步的研究，最終導致盤尼西林的發現——這種藥物自此拯救了數百萬條生命。
+然而，光靠機緣巧合，或許還不足以促成像這樣的重大發現；科學家還必須擁有準備充分、開放的心態，才能察覺意外事件的重要性，並善加運用。
+📋 內容大意
+Some discoveries come by serendipity, when something valuable turns up while nobody is looking for it.
+Back from a holiday, Fleming saw that a fungus in his unwashed dishes had killed the bacteria around it.
+That accident produced penicillin, but only a prepared, open mind can turn such luck into discovery.
+← 第18題回到109 年指考第20題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z109r-11/index.html
+Author: staresto-create ZZSH
+Title: 109 年指考補考克漏字第11題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 109 年指考補考 ／ 第11題
+109 年指考補考 克漏字 第11題
+字彙選義線索：跨句
+11 name phenomenon turns out to be very common.
+(A)Forgetful
+(B)Complicated
+(C)Scrambled
+(D)Alternative
+答案：(C) Scrambled
+題目編號：Z109R_11（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+Scrambled name phenomenon（名字混淆現象）呼應開頭 Mothers often mix up their children's names（母親常把孩子的名字叫錯），表示這種名字混淆的現象相當普遍；Forgetful／Complicated／Alternative 都不符合此處語意。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+前一句剛講到媽媽常叫錯孩子的名字，很容易直接抓 Forgetful（健忘的）——叫錯名字，不就是記性不好嗎。
+怎麼判斷
+空格所在的這一句短得只剩 ______ name phenomenon turns out to be very common.，句內沒有任何線索可用，一定要回頭讀。前一句是 Mothers often mix up their children's names（媽媽常把孩子的名字搞混），後半接著說 moms are not the only ones who make this mistake；下一句是 Almost everyone sometimes mixes up the names of their family and friends。前後兩句圍著同一個動作打轉：mix up（弄混、搞混）。所以這一格要填的，是能概括「名字被弄混」的那個形容詞。scramble 的本義是把東西攪亂、把順序打散（scrambled eggs 炒蛋就是把蛋打散攪亂），所以填 Scrambled，scrambled name phenomenon 就是「名字叫串了的現象」。這一題示範的是一個很實用的習慣：空格所在的句子太短、句內找不到依據時，答案常常落在前後句反覆出現的那個動作或名詞上。
+誘答選項
+Forgetful 方向看起來最接近，但第二段第二句就直接說 It is not caused by a bad memory（不是記性不好造成的）——整篇正在推翻「健忘」這個解釋，只讀第一段就填它，會與後文直接矛盾。Complicated（複雜的）沒有回應「名字被弄混」這件事，任何現象都可以說它複雜。Alternative（替代的、另一個的）語意不合，說話的人不是在替名字找替代品。
+常考字詞與句型
+mix up（弄混、搞混）、scrambled（被打亂的、攪亂的）、turn out to be（結果是、原來是）、phenomenon（現象）、forgetful（健忘的）、alternative（替代的、另一個的）。
+線索範圍說明：前後兩句都圍著 mix up（把名字弄混）這個動作
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+"Anne! Jo! I mean, Max!" Mothers often mix up their children's names, but studies show that moms are not the only ones who make this mistake. 11 name phenomenon turns out to be very common. Almost everyone sometimes mixes up the names of their family and friends.
+The phenomenon is called a "cognitive glitch" by researchers in the field of cognitive science. It is not caused by a bad memory or by aging processes that affect brain functioning. It is simply a result of the way our brain 12 those we love.
+When our brain is attempting to retrieve a name so that we can say it, it is likely that another name in the same group will come to our lips 13 the one we meant to say. That is because in order to find the name we are looking for, we are essentially 14 the whole set of names in that group, which includes all our beloved family members. Scientists also report that the category 15 the person belongs (family, close friends, etc.) is far more influential in causing a mix-up than any phonetic similarity between names. Names that sound alike do not usually trigger the mix-up.
+Isn't it great to know that when you call others by the wrong name, it is evidence of your love for them all?
+中譯：「安！喬！我是說，麥克斯！」母親常常會叫錯孩子的名字，但研究顯示，會犯這種錯誤的並不只有媽媽們。這種「名字混淆」的現象其實相當普遍，幾乎每個人都曾經叫錯過家人或朋友的名字。
+認知科學領域的研究者將這種現象稱為「認知小失誤」（cognitive glitch）。這不是記憶力不好，也不是老化影響腦部功能所導致，而單純是我們大腦分類所愛之人的方式所造成的結果。
+當大腦試圖提取一個名字以便說出口時，同一個「群組」裡的另一個名字很可能會先脫口而出，取代原本想說的那個名字。這是因為，為了找出我們要找的那個名字，大腦實際上是在「翻找」該群組裡的整套名字，而這個群組正好包含了我們所有摯愛的家人。科學家也指出，某人所屬的「類別」（例如家人、密友等）遠比姓名發音是否相似，更容易造成叫錯名字的情況；發音相似的名字反而通常不太會引發混淆。
+這樣想來是不是很棒呢？當你叫錯別人的名字時，其實正證明了你有多愛他們。
+📋 內容大意
+Mothers often call one child by another's name, and studies show almost everyone muddles the names of loved ones.
+Scientists call it a cognitive glitch, caused not by poor memory or aging but by how the brain sorts people.
+Fetching one name means searching a whole group, so a neighboring name slips out first.
+The group a person sits in matters more than any likeness in sound, so the error signals affection.
+回到109 年指考補考第12題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

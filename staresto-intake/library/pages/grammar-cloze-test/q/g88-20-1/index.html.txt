@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g88-20-1/index.html
+Author: staresto-create ZZSH
+Title: 88 年學測克漏字第20題詳解（句型結構）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 88 年學測 ／ 第20題
+88 年學測 克漏字 第20題
+句型結構線索：句內
+Receptionist: I 20 apologize, Mr.
+(A)could
+(B)do
+(C)ought
+(D)may
+答案：(B) do
+題目編號：G88_20_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】強調用法的助動詞 do + 原形動詞，表示「我真的（確實）很抱歉」，加強語氣；could（可以）、ought（應該，後面通常接 to）、may（可能）都不能這樣加強動詞語氣。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是助動詞，後面又都接得了原形動詞 apologize，看起來一個也刷不掉。其實有一個可以用形態直接刷掉，剩下的才靠語氣分。
+怎麼判斷
+先用形態刷一個：ought 後面一定要接 to（ought to apologize），而本句空格後面是光禿禿的 apologize，少了 to，形態本身就不完整。這個方法是片語題很好用的第一步——先檢查介系詞或冠詞有沒有缺（同型：97 年第 25 題 →的 off record 少了 the、95 年第 25 題 →的 No sooner than 中間被砍掉了東西）。剩下 could、may、do，再看語氣：客人已經連抱怨兩件事、語氣很衝，櫃檯要做的是加重道歉的分量，不是說「我可以道歉」或「我也許道歉」。英文要加強一般動詞的語氣，用的正是助動詞 do 加原形動詞：I do apologize.（我真的非常抱歉。）掛鉤是 Do come in.（快請進。）與 I do hope so.（我真的這麼希望。）。
+誘答選項
+could（可以、能夠）：講的是能力或可能性，變成「我可以道歉」，聽起來像還在考慮要不要道歉，反而更失禮。may（可能、可以）：同樣是可能性或請求許可，語氣完全不對。ought：形態不完整，缺了 to。
+常考字詞與句型
+do + 原形動詞（真的、確實，加強語氣）、Do come in.（快請進）、I do hope so.（我真的這麼希望）、ought to V（應該）、make an apology（致歉）、I'm afraid …（恐怕……）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Guest: My name is Hagen. I'm in room 229. This morning I 16 at 6 o'clock by a telephone call that wasn't for me. Now this is the second time this 17 . It's just not good enough! The call was for a Mr. Haugen! Don't you people listen!
+Receptionist: I'm 18 terribly sorry, Mr. Hagen. I will inform the early morning supervisor. She will ensure it doesn't happen again.
+Guest: Well, I hope not! Also, I received this FAX this morning. I've only got the first two pages. 19 should be four more. Didn't anyone check? This is a very important document!
+Receptionist: I 20 apologize, Mr. Hagen. I'll check the FAX office right away. Could I have those two sheets, please?
+中譯：房客：我叫哈根，住在 229 號房。今天早上六點，我被一通不是找我的電話吵醒。這已經是這星期第二次了！這樣真的太不像話了！那通電話是要找豪根先生的！你們都沒在聽嗎！櫃檯人員：真的非常抱歉，哈根先生。我會通知早班主管，她會確保這種事不再發生。房客：希望如此！還有，我今早收到一份傳真，但只收到前兩頁。應該還有四頁才對。難道沒有人檢查過嗎？這是非常重要的文件！櫃檯人員：我誠心跟您道歉，哈根先生。我會馬上去查傳真機。可以請您把那兩頁給我嗎？
+📋 內容大意
+A hotel guest angrily complains that a wrong wake-up call has woken him a second time.（敘事文）
+The receptionist apologizes and promises to tell the supervisor so that it will not happen again.（敘事文）
+The guest then complains that four pages of an important fax are missing.（敘事文）
+The receptionist apologizes again and offers to check the fax office at once.（敘事文）
+← 第19題回到88 年學測第21題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

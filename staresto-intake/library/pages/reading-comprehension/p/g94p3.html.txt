@@ -1,0 +1,127 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/g94p3.html
+Author: staresto-create ZZSH
+Title: 94 學測閱讀測驗：時差問題與旅行方向的影響｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 94 學測
+94 學測閱讀測驗：時差問題與旅行方向的影響
+Jet Lag and the Impact of Travel Direction
+學測 94年第 49–52 題4 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段Jet lag, caused by traveling between time zones, is becoming a common problem for frequent travelers: for 49 per cent it is only a nuisance and for 45 percent it is a real problem. It is caused by disruption to the internal biological clock, and may lead to digestive problems, tiredness, and sleep disruption.
+第 2 段Generally speaking, our biological clock is slightly disturbed if we just move into the next time zone, but jet lag becomes a problem once we have passed through three or four time zones. The body takes about one day to get over each hour of time difference. But the seriousness of jet lag problems also depends on our direction of travel. If we go north or south, we won’t notice any difference, because there is usually no time zone change. However, if we travel west we will be in advance of ourselves as far as our internal clock is concerned, and problems may arise. A west-to-east journey, on the other hand, makes us late compared to the local time. It often demands even greater effort in adjustment since we are not quick enough to catch up with the new time schedule. Therefore, a trip from New York to Los Angeles often causes fewer problems than a Los Angeles-New York trip.
+題目
+49.A traveler who suffers from jet lag has problems in ______.
+(A)adjusting his biological clock
+(B)knowing the direction of a jet
+(C)knowing the distance of his flight
+(D)getting used to the weather of a new place
+50.If one travels across three time zones, he needs about ______ hours to get over his jet lag problem.
+(A)24
+(B)36
+(C)48
+(D)72
+51.A person may suffer the most serious case of jet lag when he takes a ______ journey.
+(A)east-to-west
+(B)west-to-east
+(C)north-to-south
+(D)south-to-north
+52.The main purpose of the passage is to ______.
+(A)explain the cause of jet lag problems
+(B)teach us how to avoid jet lag problems
+(C)explain the differences between time zones
+(D)show the ways to lessen the degree of jet lag problems
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+49
+(A)
+67%
+67
+50
+(D)
+26%
+36
+51
+(B)
+70%
+33
+52
+(A)
+45%
+60
+答對率與鑑別度出處：大考中心 94 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表
+每一題的依據句
+第 49 題 細節題 Supporting details
+第 1 段It is caused by disruption to the internal biological clock
+第 2 段The body takes about one day to get over each hour of time difference.
+原文 → 正確選項
+biological clock → biological clock
+第 1 段說時差是體內的生理時鐘（biological clock）失調造成的；第 2 段說每差一個小時，身體大約要一天才能恢復。有時差的旅客，問題就在調整生理時鐘，所以是 (A)。(B) 照抄第 2 段的 direction，旅行的方向會影響時差有多嚴重，不是說旅客不知道飛機往哪個方向飛；(C) 飛行的距離、(D) 適應新地方的天氣，原文都沒有提到。
+第 50 題 細節題 Supporting details
+第 2 段The body takes about one day to get over each hour of time difference.
+跨越一個時區，時間就差一個小時，跨越三個時區就差三個小時。第 2 段說每差一個小時，身體大約要一天才能恢復，三個小時就要三天，3 × 24＝72 小時，所以是 (D)。這一題要先把時區換成小時，再把天數換成小時：(A) 24 只算了一個小時時差要的一天；(B) 36、(C) 48 都算錯了天數。
+第 51 題 細節題 Supporting details
+第 2 段A west-to-east journey, on the other hand, makes us late compared to the local time.
+第 2 段It often demands even greater effort in adjustment since we are not quick enough to catch up with the new time schedule.
+原文 → 正確選項
+west-to-east → west-to-east
+第 2 段說往西走可能出現問題；從西往東（west-to-east）的旅程，通常需要花更大的力氣（even greater effort）調整，因為我們追不上新的時間表；最後還舉例說洛杉磯到紐約比紐約到洛杉磯問題多。時差最嚴重的是 (B)。(C) 照抄 north、(D) 照抄 south，原文說往北或往南通常沒有時區變化，不會注意到任何差別；(A) 從東往西也可能有問題，但 even greater 比較的結果是從西往東比較嚴重。
+第 52 題 主旨題 Main idea
+依據句：全文要讀完整篇才能判斷，不在某一句裡。
+第 1 段說時差是生理時鐘失調造成的，會引起哪些問題；第 2 段說明時差的嚴重程度和跨越幾個時區、往哪個方向旅行有關。全文在解釋時差問題是怎麼來的，所以是 (A)。三個錯誤選項都偏離主題：(B) 怎麼避免時差、(D) 怎麼減輕時差，文章都沒有教；(C) 文章談的是跨越時區對身體的影響，不是比較各個時區有什麼不同。
+錯誤選項：(B) 偏離主題；(C) 偏離主題；(D) 偏離主題
+逐段中譯
+第 1 段時差是在不同時區之間旅行造成的，對經常旅行的人來說，正成為一個常見的問題：49% 的人覺得時差只是件麻煩事，45% 的人覺得是真正的問題。時差是體內的生理時鐘失調造成的，可能引起消化問題、疲倦和睡眠障礙。
+第 2 段一般來說，如果只是移到隔壁的時區，我們的生理時鐘只會稍微失調；但是一旦跨越三、四個時區，時差就成了問題。每差一個小時，身體大約需要一天才能恢復。不過，時差問題有多嚴重，也要看旅行的方向。如果往北或往南走，我們不會注意到任何差別，因為通常沒有時區的變化。然而，如果往西走，就體內的時鐘來說，我們會比當地時間超前，可能因此出現問題。另一方面，從西往東的旅程，會讓我們比當地時間落後。這種旅程通常需要花更大的力氣調整，因為我們追不上新的時間表。所以，從紐約到洛杉磯的旅行，引起的問題往往比從洛杉磯到紐約少。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。這一篇沒有一句話直接點出全文中心思想，各段也都沒有主旨句。請對照「這一篇的文章結構」裡的綱要，找出各段的重點，再自己歸納全文的主旨。
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體說明文 Expository
+組織方式因果關係 Cause-Effect這一類怎麼辨識 →
+關鍵轉折詞Generally speakingbutButHoweveron the other handTherefore
+綱要
+說明時差是旅行跨時區造成的問題，常導致消化、疲勞和睡眠紊亂。
+解釋時差成因：內部生理時鐘受擾亂。
+(Generally speaking) 說明跨越 3-4 個時區會導致明顯時差，(The body takes about) 身體需一天來適應每小時時差。
+(But the seriousness … also depends on) 強調時差嚴重性也與旅行方向有關，(If … we won’t notice any difference, because) 南北向無時差。
+(However) 比較東西向旅行：西向東旅行 (on the other hand) 較難適應，(Therefore) 紐約到洛杉磯問題少於洛杉磯到紐約。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 7 個、參考字彙 5 個、字詞搭配 9 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+zone[zoʊn]n.地帶、區（time zone 時區）三級第 1 段詞彙題考過 1 次：110 學測第 9 題 zones（誘答）
+frequent[ˈfrikwənt]adj.經常的（frequent travelers 經常旅行的人）三級第 1 段詞彙題考過 5 次：100 學測第 3 題（誘答）、100 指考第 4 題 frequently（誘答）、86 聯考第 6 題 frequently（誘答）、85 聯考第 6 題 frequently（誘答）、84 聯考第 10 題 frequently（誘答）
+slightly （詞彙表：slight）[ˈslaɪtli]adv.稍微、輕微地四級第 2 段詞彙題考過 1 次：113 學測第 1 題（誘答）
+disturb[dɪˈstɝb]v.打亂、擾亂四級第 2 段詞彙題考過 3 次：112 學測第 9 題 disturbed（誘答）、87 聯考第 5 題 disturbing（答案）、83 推薦甄選第 3 題 disturbs（答案）
+journey[ˈʤɝni]n.旅程三級第 2 段詞彙題考過 1 次：105 學測第 1 題（誘答）
+demand[dɪˈmænd]v.需要四級第 2 段詞彙題考過 5 次：109 指考補考第 1 題 demanding（誘答）、107 學測第 7 題 demanding（答案）、102 學測第 4 題（誘答）、99 指考第 2 題（誘答）、98 指考第 7 題 demanding（答案）
+adjustment[əˈʤʌstmənt]n.調整、適應四級第 2 段詞彙題考過 2 次：110 學測第 7 題（誘答）、96 學測第 4 題 adjust（答案）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+nuisance[ˈnusəns]n.麻煩事、討厭的事表外第 1 段
+disruption[dɪsˈrʌpʃən]n.擾亂、失調（sleep disruption 睡眠障礙）表外第 1 段
+biological[ˌbaɪəˈlɑʤɪkəl]adj.生物的、生理的（biological clock 生理時鐘）五級第 1 段
+digestive[daɪˈʤɛstɪv]adj.消化的表外第 1 段
+lessen[ˈlɛsən]v.減輕、減少六級第 52 題
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+time zones時區第 1 段原文：traveling between time zones
+frequent travelers常出門旅行的人第 1 段
+lead to + N導致……第 1 段原文：may lead to digestive problems
+biological clock生理時鐘第 1 段原文：the internal biological clock
+generally speaking一般來說第 2 段
+get over + N從……恢復過來第 2 段原文：The body takes about one day to get over each hour of time difference
+in advance of + N比……超前第 2 段原文：we will be in advance of ourselves
+as far as + N + is concerned就……而言第 2 段原文：as far as our internal clock is concerned
+catch up with + N趕上……第 2 段原文：to catch up with the new time schedule
+← 上一篇篇目一覽下一篇 →
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

@@ -1,0 +1,40 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g86-25-1/index.html
+Author: staresto-create ZZSH
+Title: 86 年學測克漏字第25題詳解（句型結構）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 86 年學測 ／ 第25題
+86 年學測 克漏字 第25題
+句型結構線索：句內
+Only by entering this quiet mental state 25 a climber really do his or her best.
+(A)can
+(B)shall
+(C)must
+(D)should
+答案：(A) can
+題目編號：G86_25_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】Only by + V-ing 放在句首時，主要子句要部分倒裝，助動詞 can 移到主詞前面，主詞後面再接原形動詞，表示「唯有透過……才能夠」；shall／must／should 都不符合這裡「才能夠」的語意（can）。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是助動詞，後面又都接得了原形 do，看起來一個也刷不掉。而這一句的語序還有點怪——助動詞跑到主詞 a climber 前面去了，很容易愣住。那個「怪」正是這一格的線索。
+怎麼判斷
+先看句子的形狀：Only by entering this quiet mental state ___ a climber really do his or her best.句首是 Only by + 動名詞，而主要子句的助動詞跑到主詞 a climber 前面——這是倒裝。這是一組很常考的句型：否定或限制的副詞（片語）放到句首時，後面的主要子句要倒裝，助動詞提到主詞前面。這一家的成員包括 Not until …、No sooner … than …、Not only … but also …、Hardly … when …、Never、Seldom、Little，以及本題的 Only + 副詞片語（Only by、Only then、Only after、Only when）。（Only 嚴格說是「限制」不是「否定」，但它與否定詞共用同一條倒裝規則。）既然四個選項都是助動詞、形態上刷不掉，就用語意分：整段講的是攀登者唯有進入這種安靜的心理狀態，才「能夠」真正發揮實力——講的是能力，填 can。還原成不倒裝的說法就更清楚了：A climber can really do his or her best only by entering this quiet mental state.順便對照 95 年第 25 題 →，那一題考的是 Not until 與 No sooner，判斷方式完全一樣——先看主要子句有沒有倒裝，沒有倒裝就直接刷掉那個選項，比慢慢想語意快得多。
+誘答選項
+must（必須）：講義務，變成「唯有進入這種狀態，攀登者才必須發揮實力」，語意不通。should（應該）：講建議或責任，同樣不是這一句要說的。shall：現代英語裡多用於徵詢意見（Shall we go?）或法律條文，語氣與這一句不合。
+常考字詞與句型
+Only by V-ing + 倒裝（唯有透過……才……）、Not until …（直到……才……）、No sooner … than …（一……就……）、not only … but also …（不但……而且……）、do one's best（盡全力）、enter a state（進入某種狀態）。其中 not only … but also … 這一組考過 3 個年度，83 年第 14 題 →、學測參考試卷第 23 題 →都出現過。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Climbing the most difficult mountains requires a very special mental condition. 21 the climber is doing something very difficult, everything that he or she sees, hears, or 22 must come together to help in the work of climbing.
+All of the parts of the body work together smoothly and quietly 23 each part feels what is happening in the other parts. There is no room for thinking about what time it is, or about how one looks. 24 thinking must focus on what is happening at that moment, and the mind and the body become one. Only by entering this quiet mental state 25 a climber really do his or her best.
+中譯：攀登最艱難的山峰，需要一種非常特殊的心理狀態。因為登山者正在做一件極度困難的事，他／她所看到、聽到或感受到的一切，都必須匯聚起來，協助他完成攀登的任務。身體的每個部位都協調合作、動作流暢而安靜，同時每個部位都感受得到其他部位正在發生的事。這時候完全沒有餘裕去想現在幾點，或自己看起來如何。此刻，思緒必須完全專注於當下正在發生的事，讓身心合而為一。唯有進入這種寧靜的心理狀態，登山者才能真正發揮出最佳表現。
+📋 內容大意
+Extreme mountain climbing demands total mental focus and physical harmony, uniting the mind and body in the present moment.
+← 第24題回到86 年學測第26題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

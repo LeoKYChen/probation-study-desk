@@ -1,0 +1,42 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g89-28-2/index.html
+Author: staresto-create ZZSH
+Title: 89 年學測克漏字第28題詳解（分詞／動狀詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 89 年學測 ／ 第28題
+89 年學測 克漏字 第28題
+分詞／動狀詞線索：句內
+He may dream at night of being alone in the playground, 28 a lion.
+(A)face
+(B)faced
+(C)facing
+(D)to face
+答案：(C) facing
+題目編號：G89_28_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+現在分詞片語 facing，補充說明夢境畫面「面對一隻獅子」，修飾主詞 he（做夢的男孩主動面對著獅子）；face（原形動詞，不能這樣作分詞構句）、faced（過去分詞，被動語意「被面對」方向不合）、to face（不定詞，不符合這個分詞構句結構）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是 face 的形態變化，而「面對」在中文裡常說成「被迫面對」，帶著被動的味道，所以 faced 看起來很合理。這一格要分的正是主動與被動的方向。
+怎麼判斷
+四個選項都是同一個動詞 face 的不同形態，可見這一格考的是形態。先看結構：逗號前面是一個完整的句子 He may dream at night of being alone in the playground（他晚上可能夢見自己獨自站在操場上），逗號後面沒有主詞、也沒有連接詞，所以這一串是分詞片語，補充說明前面那個畫面裡的情形。分詞片語要先問「意義主詞是誰」：夢裡站在操場上的是那個男孩，而面對獅子的也是他，他是主動去面對的一方，所以用現在分詞 facing。還原成完整的說法是 and he is facing a lion（而他正面對著一頭獅子）。掛鉤是 a barking dog（正在叫的狗）——現在分詞表示那個名詞自己在做這個動作。
+誘答選項
+faced：過去分詞表被動，方向不合；而且這裡還有一個更快的破綻可以用——face 要表達「面臨、被迫面對」時，被動的說法是 be faced with sth（be faced with a difficult choice 面臨艱難的抉擇），後面那個 with 不能省。本句空格後面直接就是 a lion，沒有 with，形態本身就不完整。這個方法在片語題上很好用：先檢查介系詞有沒有缺，常常一眼就刷掉一個選項。face：原形動詞。前面已經有一個主要動詞 may dream 了，一個句子不能有兩個主要動詞而中間只用逗號連接。to face：不定詞表目的或未來的動作，但這裡要說的是夢境當下的畫面，不是他做夢是「為了」面對獅子。
+常考字詞與句型
+be faced with（面臨……）、face a problem（面對問題）、face to face（面對面）、dream of（夢見、夢想）、be alone（獨自一人）、at night（在夜裡）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Basically, there are two kinds of sleep. One is Rapid Eye Movement (REM) sleep. In 21 , the brain waves of a sleeping person are similar to those of a waking person, and the eyes move about rapidly under the closed lids. 22 kind of sleep is Non-Rapid Eye Movement sleep.
+Scientists have discovered that dreams happen mainly in REM sleep. Everyone dreams about 20 percent of their sleeping time. 23 people who say they never dream show about 20 percent of REM sleep. 24 these "non-dreamers" do their sleeping in a laboratory 25 researchers can wake them up and ask them whether they were having dreams the moment before, it 26 that they dream as much as others.
+Events in daily life sometimes occur symbolically in dreams. 27 , a boy is having difficulties on the school playground because a bigger boy keeps bullying him. He may dream at night of being alone in the playground, 28 a lion. At other times the dreaded event from daily life simply occurs in a dream in its real-life form; 29 , the boy dreams of being bullied by the bigger boy.
+30 scientific research, we have known more about the relationship between sleep and dreams. However, why a dream will take a certain symbolic form is still a mystery.
+中譯：基本上，睡眠可分為兩種。第一種是快速動眼期（REM）睡眠，在這個階段，睡眠者的腦波與清醒時相似，眼球會在閉著的眼皮下快速轉動。另一種則是非快速動眼期睡眠。科學家發現，做夢主要發生在快速動眼期。每個人在睡眠時間中大約有 20%在做夢，就連那些聲稱自己從不做夢的人，也有大約 20%的快速動眼期睡眠時間。如果讓這些「不做夢的人」在實驗室裡睡覺，研究人員就能把他們叫醒，詢問他們前一刻是否在做夢，結果發現，原來他們做夢的次數其實跟其他人一樣多。日常生活中發生的事，有時會以象徵的形式出現在夢境中。舉例來說，一個男孩在學校操場上因為一直被較大的男孩欺負而感到困擾，晚上他可能會夢見自己獨自一人在操場上，面對一頭獅子。而有時候，日常生活中令人恐懼的事件，也會直接以原本的樣貌出現在夢境中，也就是說，這名男孩夢見的就是自己被那個較大的男孩欺負。透過科學研究，我們對睡眠與夢境之間的關係已有了更多了解。然而，夢境為什麼會以某種特定的象徵形式呈現，至今仍是個謎。
+📋 內容大意
+Scientific research shows that everyone dreams during REM sleep, often transforming daily experiences into direct or symbolic dreams.
+← 第27題回到89 年學測第29題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z110-13/index.html
+Author: staresto-create ZZSH
+Title: 110 年指考克漏字第13題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 110 年指考 ／ 第13題
+110 年指考 克漏字 第13題
+字彙選義線索：句內答對率 54%
+答對率 54%：當年每 100 位考生，有 54 位答對。
+This 13 us from physical discomfort and sickness.
+(A)conceals
+(B)derives
+(C)shields
+(D)transforms
+答案：(C) shields
+題目編號：Z110_13（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+shields us from（保護我們免受……）表示這個修復系統保護我們免於身體不適與生病；conceals（隱藏）、derives（衍生）、transforms（轉變）都不符合此處語意。
+深入解析
+你可能會這樣想
+shield 這個字，你的印象大概只有名詞的「盾牌」，遊戲裡拿來擋攻擊的那一面。它當動詞用的時候意思很直接——像盾牌一樣擋在前面，也就是保護、遮擋，而且幾乎固定與 from 一起出現。
+怎麼判斷
+判斷的關鍵不在空格本身，在空格後面那個 from。這一格要的是能走「動詞 + 受詞 + from + 所要擋掉的東西」這條路的動詞，而且語意上要說得通：This ___ us from physical discomfort and sickness.（這使我們免於身體不適與生病）。常見的 protect ... from 就是同一個結構，shield 是它比較有畫面的說法。遇到動詞題，先看一眼空格後面的介系詞，常常一步就把範圍縮到剩一兩個。
+誘答選項
+conceal 雖然也能接 from，但 conceal sth from sb 是「對某人隱瞞某事」，from 後面通常是要瞞住的那個人，本句 from 後面卻是不適與生病，代進去語意不通。derive 確實常與 from 連用，但 derive from 是「源自」，主詞要是被衍生出來的那個東西，而本句主詞 This 指的是前一句的修復機制，它並不是從不適與生病衍生出來的。transform 常見的是 transform A into B；它接 from 時，from 後面是轉變前的樣子（transformed from a quiet farming village into a busy port），不是要擋掉的東西，代進去語意不通。鑑別度高達 65，分開的是有沒有把 from 當成線索去反推動詞，還是只把四個動詞的中文意思擺進去憑感覺挑。
+常考字詞與句型
+shield sb from sth（保護某人免於……）、protect sb from sth（保護某人免於……）、conceal sth from sb（對某人隱瞞某事）、derive from（源自）、transform A into B（把 A 轉變成 B）、physical discomfort（身體上的不適）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：110學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+We all know that too much stress is not good for our health, but too little is not ideal, either. While 11 stress can be dangerous to the body, short-term stress is actually healthy.
+Short-term stress triggers the production of protective chemicals in our body and strengthens the body's defenses. 12 our body is in a vulnerable situation, a burst of stress will quickly mobilize the body's own repair system to defend the damaged areas. This 13 us from physical discomfort and sickness.
+Small amounts of stress hormones may even sharpen our memory. A recent study found that when rats were forced to swim—an activity that places them under stress for a short while—they remembered their way through mazes far 14 than rats that were in a relaxed state.
+The key to a healthy lifestyle is to keep our stress level 15 . Too much stress will make us cranky and sick. Too little stress, on the other hand, will lead to boredom and low motivation.
+中譯：我們都知道壓力過大對健康不好，但壓力太少也不理想。長期壓力可能對身體造成危害，但短期壓力其實對健康有益。短期壓力會促使體內產生保護性化學物質，強化身體的防禦機制。當我們的身體處於脆弱狀態時，一波壓力反應會迅速動員身體自身的修復系統，防禦受損部位。這能保護我們免於身體不適與生病。少量的壓力荷爾蒙甚至可能讓記憶力更敏銳。一項近期研究發現，當老鼠被迫游泳——這是一種讓牠們短暫承受壓力的活動——牠們記得走出迷宮的路，遠比處於放鬆狀態的老鼠清楚。健康生活型態的關鍵，在於讓壓力程度保持平衡。壓力過大會讓我們暴躁易怒、容易生病；另一方面，壓力太少則會導致無聊與缺乏動力。
+📋 內容大意
+Too much stress harms health, but a short burst of it does good.
+It sets off protective chemicals and calls up the body's repair system against damage.
+It may even sharpen memory: stressed rats found their way through mazes faster than relaxed ones.
+The aim is a middle level, since too little brings boredom and low motivation.
+← 第12題回到110 年指考第14題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

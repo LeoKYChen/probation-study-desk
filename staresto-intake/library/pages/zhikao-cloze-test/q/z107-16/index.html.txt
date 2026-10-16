@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z107-16/index.html
+Author: staresto-create ZZSH
+Title: 107 年指考克漏字第16題詳解（句型結構）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 107 年指考 ／ 第16題
+107 年指考 克漏字 第16題
+句型結構線索：句內答對率 34%
+答對率 34%：當年每 100 位考生，有 34 位答對。
+Although the name sounds pretty serious, the condition typically 16 .
+(A)isn't
+(B)doesn't
+(C)couldn't
+(D)wouldn't
+答案：(A) isn't
+題目編號：Z107_16（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+本句是省略句，isn't 後面省略了與前面重複的 serious：儘管名稱聽起來嚇人，這個症狀通常並不嚴重；doesn't、couldn't、wouldn't 都無法承接 be 動詞的省略。
+深入解析
+你可能會這樣想
+空格後面直接是句號，你會覺得句子沒寫完，因而不敢下手。其實這是省略：Although the name sounds pretty serious, the condition typically isn't (serious).——形容詞 serious 前面才剛出現過，第二次就省略掉，只留下否定的助動詞。
+怎麼判斷
+關鍵在先確認省略掉的是什麼，再決定該用哪一種助動詞。往前找，前半句 sounds pretty serious 的 serious 是形容詞，後半要否定的正是它。形容詞前面要配的是 be 動詞，所以只能用 isn't；doesn't、couldn't、wouldn't 後面該接原形動詞，接不上一個形容詞。這個順序可以固定下來：看到句尾只剩一個助動詞，先回頭找它省略掉的是什麼詞類，是形容詞或名詞就用 be，是一般動詞就用 do，有情態意味才用 can／will 那一類。驗算法：把省略的字補回去唸一遍——the condition typically isn't serious（這個症狀通常並不嚴重），再對照前半的 Although the name sounds pretty serious（雖然名稱聽起來很嚴重），讓步關係成立，方向就對了。這種省略在簡答裡很常見：Are you tired?—Yes, I am (tired). ／ Do you like it?—Yes, I do (like it). be 動詞的問句用 be 回答，一般動詞的問句用 do 回答。本題只是把同一條規則放進一個敘述句的後半。
+誘答選項
+doesn't 要接原形動詞，補回去只能是前半的 sound pretty serious，也就是 the condition typically doesn't (sound pretty serious)。這樣文法上說得通，意思卻變成症狀「聽起來」不嚴重；這一句要講的是症狀實際上不嚴重，所以要否定的是 be 動詞。couldn't 與 wouldn't 除了同樣接原形動詞之外，還多帶了「不可能」與「不會」的推測語氣，而本句 typically（通常）講的是實際情況，不是推測。
+常考字詞與句型
+Although…, …isn't.（省略重複的形容詞）、sound + 形容詞（聽起來…）、that's not the case（不是這樣）、typically（通常）、deficiency（缺乏、不足）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：107學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Many people at some point in life have white spots on their fingernails. One of the most common causes for these little white spots is a condition called leukonychia. Although the name sounds pretty serious, the condition typically 16 . And while many people think the white spots are caused by a calcium or zinc deficiency, that's generally not the case.
+In reality, these spots most often develop 17 mild to moderate trauma to your nail. If you can't think of anything that would have injured your nail, consider the fact that nails grow very slowly, so the injury 18 weeks before the spots ever appeared. The spots could also be a sign of a mild infection or allergy, or a side effect of certain medications.
+19 the source of the injury, these spots typically do not require any treatment and should go away as your nail grows out. And they should not return unless you suffer another injury to a nail. However, this generally 20 when only a single or a few nails are affected. If all of your nails are showing white spots, the leukonychia could be related to another more serious condition such as anemia, cardiac disease, diabetes, or kidney disease.
+中譯：許多人一生中都曾在指甲上出現白色斑點，其中最常見的原因之一是一種稱為「白甲症」（leukonychia）的病症。雖然這個名稱聽起來相當嚴重，但這種狀況通常並不嚴重。此外，許多人認為白斑是缺鈣或缺鋅所致，但事實通常不是這樣。
+實際上，這些斑點多半是指甲受到輕度到中度的創傷所造成。如果你想不起指甲曾受過什麼傷，別忘了指甲生長速度非常緩慢，因此受傷後可能要經過數週，斑點才會顯現出來。這些斑點也可能是輕微感染、過敏，或某些藥物副作用的徵兆。
+不論受傷的原因是什麼，這些斑點通常不需要治療，會隨著指甲生長而自然消失，除非指甲再次受傷，否則不會復發。不過，這個現象通常只適用於一片或少數幾片指甲受影響的情況。如果所有指甲都出現白斑，白甲症則可能與貧血、心臟病、糖尿病或腎臟病等更嚴重的病症有關。
+📋 內容大意
+Though the name sounds alarming, white spots on fingernails usually mean leukonychia, a harmless condition.
+They rarely come from poor diet; most follow a minor knock weeks earlier, or an infection, allergy or drug.
+No treatment is needed as the nail grows out, but spots on every nail may signal serious illness.
+← 第15題回到107 年指考第17題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

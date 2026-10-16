@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g110-17-1/index.html
+Author: staresto-create ZZSH
+Title: 110 年學測克漏字第17題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 110 年學測 ／ 第17題
+110 年學測 克漏字 第17題
+慣用語／片語線索：句內答對率 31%
+答對率 31%：當年每 100 位考生，有 31 位答對。
+In Barcelona, however, the birds are now threatening to 17 the city's historic center, pooping on monuments, buildings, and even tourists.
+(A)set up
+(B)hang on
+(C)take over
+(D)break down
+答案：(C) take over
+題目編號：G110_17_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+take over 是「接管、占據」，本句指鴿子正威脅著要占據巴塞隆納的歷史城區；set up（設立）、hang on（稍等、堅持）、break down（故障、破裂）語意都不合。
+深入解析
+答對率三成一，鑑別度 18。
+你可能會這樣想
+take over 你多半在商業新聞裡看過，意思是「接管公司、併購」，所以很難把它跟鴿子放在一起。這個片語的核心是「取得控制權、把地盤接手過去」，主詞不必是人或公司；動物、植物、機器都可以 take over。同義的說法是 take control of。
+怎麼判斷
+the birds are now threatening to ___ the city's historic center（這些鳥如今正威脅著要…這座城市的歷史城區），後面緊接 pooping on monuments, buildings, and even tourists（在古蹟、建築甚至遊客身上排泄）——鴿子多到把整個歷史城區占為己有，正是 take over。前後文的方向也對得上：前一句才說少了鴿子的歐洲城市之旅就不對味，本句用 In Barcelona, however 一轉，把鴿子從風景寫成麻煩；下一句市議會提出對付這些鴿子的辦法，更證實問題不小。一句記完：Weeds have taken over the corner of the park where the swings used to be.（雜草已經占滿公園裡原本擺鞦韆的那個角落。）〔情境取材自 111 學測作文題：兩座公園的比較〕
+誘答選項
+set up 是「設立、架設」；hang on 是「稍等一下、堅持住」；break down 是「故障、破裂」。三個都表達不出「占據」。
+常考字詞與句型
+take over（接管、占據）、take over from sb（接手某人的工作）、a takeover（收購）、take control of（掌控）、set up（設立）、hang on（稍等）。其中 take over 這一組考過 4 個年度，97 年第 17 題 →、98 年第 29 題 →、106 年第 29 題 →都出現過。
+鑑別度分析：鑑別度 18，高低分群的差距不算大。本題答對率三成一——大考中心《選才電子報》第 307 期說明鑑別度時提到，鑑別度低表示高、低分群考生的答對率差距小，原因很多，而且它與答對率一樣，只是推論試題品質的指標之一。這一題的難處在於 take over 常見的語境：多半在商業新聞裡看到「接管公司、併購」，這一格的主詞卻是鴿子，要把它讀成「取得控制權、把地盤接手過去」，才對得上後面 pooping on monuments 的描述。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Street pigeons are a common sight in many European cities. In fact, a visit to a major European city just would not be the same 16 encountering them: bathing in fountains, perching on historic buildings, and flocking in public squares. In Barcelona, however, the birds are now threatening to 17 the city's historic center, pooping on monuments, buildings, and even tourists.
+The city council originally proposed 18 the pigeon population by gathering the birds and shooting them. But that idea led to strong protests from numerous animal rights groups. After heated debates and discussions, the government was finally persuaded to consider another 19 effective method: giving the pigeons birth control.
+In 2016, the city council decided to put its 85,000 pigeon population on a birth control pill to block the formation of eggs in birds. Starting from April 2017, the pills were placed in 40 bird feeders 20 throughout the city. It was predicted that there would be a decrease of 20 percent in the pigeon population in the first year and between 70 and 80 percent in four or five years.
+中譯：街頭鴿子在許多歐洲城市中隨處可見。事實上，造訪歐洲主要城市時，若沒有遇見牠們——在噴泉中戲水、棲息在歷史建築上、成群聚集在廣場中——似乎就少了點什麼。然而，在巴塞隆納，這些鴿子如今卻威脅著這座城市的歷史中心，牠們的排泄物弄髒了紀念碑、建築物，甚至遊客本身。市議會原本提議透過捕捉並撲殺鴿子來控制數量，但這項提議引發了眾多動物權益團體的強烈抗議。經過激烈的辯論與討論，政府最終被說服考慮另一種同樣有效的方法：讓鴿子節育。2016 年，市議會決定為當地八萬五千隻鴿子施予節育藥物，以阻止鳥蛋的形成。從 2017 年 4 月起，這些藥物被投放在全市四十個餵食器中。預估第一年鴿子數量將減少 20%，而在四到五年內，減幅將達到 70%至 80%。
+📋 內容大意
+Barcelona managed its overpopulated street pigeons by switching from lethal culling to a birth control program following public protests.
+← 第16題回到110 年學測第18題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

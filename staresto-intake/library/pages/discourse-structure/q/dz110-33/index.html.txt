@@ -1,0 +1,62 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dz110-33/index.html
+Author: staresto-create ZZSH
+Title: 指考 110年 篇章結構 第33題詳解（掌握段落主題句和細節的關係）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 指考 110年 ／ 第33題
+指考 110年 篇章結構 第33題
+選文：妮基與她的娜娜雕像（Niki de Saint Phalle）
+掌握段落主題句和細節的關係線索：指示詞、同義呼應答對率 63%
+(A)The series is mostly composed of life-size dolls of women in various roles such as brides and new mothers.這個系列大多由真人大小的女性人偶構成，扮演新娘、新手媽媽等各種角色。
+(B)Work on the garden began in 1979, and it was officially opened to the public in May 1998.這座園子一九七九年動工，一九九八年五月正式對外開放。
+(C)Many modern women artists create sculptures that have become iconic pieces of feminist movement.許多當代女性藝術家創作出成為女性主義運動代表作的雕塑。
+(D)Through these joyful and powerful images of Nana, the artist sends a positive message to all women.透過這些歡欣而有力的娜娜形象，這位藝術家向所有女性傳達了正面的訊息。
+(E)Her rebelliousness created a series of conflicts with her family, which led to a nervous breakdown at age 23.她的叛逆造成一連串與家人的衝突，並在二十三歲時導致精神崩潰。
+(F)Instead, the works focus on the elements of life experience, personality, and self-knowledge that the cards refer to.相反地，這些作品聚焦於那些牌所指涉的生命經驗、個性與自我認識。
+答案：(D) Through these joyful and powerful images of Nana, the artist sends a positive message to all women.
+題目編號：Dz110_33
+解析
+先看空格前面。 前一句是 Saint Phalle used vivid colors in these works and her female subjects dance cheerfully and merrily.（Saint Phalle 在這些作品裡用了鮮豔的色彩，作品中的女性歡快地舞動著。）
+再看空格的位置。 第一段到此結束，下一段換去講另一件作品——塔羅公園。Nana 這一段要在這裡收尾。
+D 就是收尾的那一句：these joyful and powerful images（這些歡欣而有力的形象）回指前一句的鮮豔色彩與歡快舞動，joyful（歡欣）對上 cheerfully and merrily（歡快地）；而 a positive message to all women（給所有女性的正面訊息）則呼應這一段中間說過的「女性榮光的見證」。
+如果你選了 F（相反地，這些作品聚焦於那些牌所指涉的生命經驗、個性與自我認識。）：F 也像一句收尾。但 F 開頭是 Instead（相反地），這裡前一句是在描述作品的用色與舞姿，沒有可以「相反」的對象；而且 F 的 the cards（那些牌）在這裡沒有東西可指。
+【下次先看這裡】段落最後一句是空格，先看這一段從頭到尾在講什麼。空格通常是把整段的意思收成一句話。
+線索與數據
+線索種類指示詞、同義呼應
+線索在哪前一句 these joyful and powerful images 回指前句；cheerfully and merrily ↔ joyful
+答對率63%
+鑑別度65
+本篇題型6選5・刪去法不收尾
+數據出處：本頁的答對率與鑑別度來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響。
+多出來的那一個：C
+(C)Many modern women artists create sculptures that have become iconic pieces of feminist movement.許多當代女性藝術家創作出成為女性主義運動代表作的雕塑。
+C 裡有 women（女性）、sculptures（雕塑）、feminist（女性主義），全篇的關鍵詞幾乎全中。但五格都放不進去：
+格
+那一格在等什麼
+C 為什麼不行
+33
+第一段的收尾，把 Nana 的訊息說出來
+C 講的不是她的作品
+共同點：這一篇從頭到尾只講一個人——她的成長、她的 Nana 系列、她的塔羅公園、她的過世。C 講的是「許多當代女性藝術家」，鏡頭從一個人拉到一群人，而這篇文章沒有要往那個方向走。
+這裡有一個值得記住的對照。 在指考 100 年研究用試卷那一篇（社區菜園），第 32 格的答案正好就是一句「從一個人跨到一群人」的句子——因為那一篇第二段確實要從一位老太太談到全美國。同樣型態的句子，在那篇是答案，在這篇是多出來的那一個。
+【下次先看這裡】「這句話寫得對不對」和「這篇文章要不要走這個方向」是兩件事。挑答案看的是第二件。
+展開本題所在的整篇選文與中文翻譯
+本篇共 5 格、6選5；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+Niki de Saint Phalle, one of the most famous artists of the 20th century, was a French-American born in 1930. She was brought up in a very conservative family, and yet, she rejected the staid, conservative values of her family to pursue a career in painting. 31 Fortunately, painting offered her an effective therapy and a way to develop as an artist. Her famous “Nana” series gained universal praise. It is a testimony to the glory of women. 32 Some of these sculptures are very big, “so that men would look small next to them.” Saint Phalle used vivid colors in these works and her female subjects dance cheerfully and merrily. 33Through these joyful and powerful images of Nana, the artist sends a positive message to all women.
+Saint Phalle’s sculptural park, “The Tarot Garden,” inspired by Tarot cards, is situated in the Italian province of Tuscany. 34 The park contains sculptures of the symbols found on Tarot cards. The brightly colored combinations of buildings and sculptures reflect the metaphysical qualities represented by the 22 main tarot cards. The sculptures, however, have nothing to do with fortune telling. 35
+結尾：交代她的過世與一生評價
+Saint Phalle passed away on May 21, 2002, in San Diego, California, at the age of 71. Her death meant the loss of a woman of diverse creative talents.
+中譯
+妮基・德・聖法勒是二十世紀最著名的藝術家之一，法裔美籍，一九三○年出生。她在非常保守的家庭長大，卻違抗家族那套古板保守的價值觀，走上繪畫這條路。31 幸好，繪畫給了她有效的療癒，也給了她成為藝術家的路。她著名的「娜娜」系列廣受讚譽，那是女性榮光的見證。32 這些雕塑有些非常巨大，「好讓男人站在旁邊顯得渺小」。聖法勒在這些作品裡用了鮮豔的色彩，作品中的女性歡快地舞動著。33
+聖法勒以塔羅牌為靈感的雕塑公園「塔羅花園」，位於義大利的托斯卡尼省。34 這座公園裡有塔羅牌上各種符號的雕塑。色彩鮮明的建築與雕塑相互組合，映照出二十二張塔羅大牌所代表的抽象意涵。不過，這些雕塑跟算命毫無關係。35
+聖法勒於二○○二年五月二十一日在美國加州聖地牙哥過世，享年七十一歲。她的離世，代表世人失去了一位才華多元的女性創作者。
+← 第32題回到互動練習第34題 →
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

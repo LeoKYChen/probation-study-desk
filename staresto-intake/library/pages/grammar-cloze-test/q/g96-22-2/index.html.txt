@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g96-22-2/index.html
+Author: staresto-create ZZSH
+Title: 96 年學測克漏字第22題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 96 年學測 ／ 第22題
+96 年學測 克漏字 第22題
+字彙選義線索：句內答對率 52%
+答對率 52%：當年每 100 位考生，有 52 位答對。
+According to the analysis, the 22 between India's southern and northern tips shrinks by 2 cm every year.
+(A)height
+(B)distance
+(C)geography
+(D)landscape
+答案：(B) distance
+題目編號：G96_22_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「印度南北端之間的『距離』每年縮短 2 公分」，distance（距離）符合；height（高度）、geography（地理）、landscape（地貌）都不合。
+深入解析
+你可能會這樣想
+這題答對率只有五成二，一半的人沒拿到。height 是這一題的陷阱：整篇都在講喜馬拉雅山，下一句又寫 the thickness of the Himalayas increases（喜馬拉雅山的厚度增加），滿腦子都是「高」，看到 height 就想選。落差在於 shrink 這個動詞：你可能把它讀成「縮水、變矮」，但本句 shrink 的對象是 the ___ between India's southern and northern tips —— 南端到北端量的是地表上橫過去的一段長度，不是往上的高度。印度在變短，不是在變矮。
+怎麼判斷
+關鍵在空格後面緊接著的 between India's southern and northern tips。between A and B 給的是「兩點之間」，能被「兩點之間」修飾、又能 shrink by 2 cm 的名詞只有 distance。還原成最熟的句型：the distance between the two cities（兩座城市之間的距離），句型完全一樣。再用單位驗算一次：shrinks by 2 cm 給的是一個長度數值，geography 和 landscape 都是抽象概念，量不出 2 公分。這裡順便把 by 記牢：shrink by 2 cm 是「縮短了 2 公分」講變化量，shrink to 2 cm 才是「縮短到 2 公分」講結果值，常見的 Prices rose by 10%.（價格上漲了一成。）就是同一個 by。最後看篇內對照，文章把這兩句寫得很對稱：the distance between India's tips shrinks by 2 cm 對 the thickness of the Himalayas increases —— 一個變短、一個變厚，兩句都是「可以量的維度名詞 + 變化動詞」。distance 和 thickness 放在同一個位置上，這個對稱就是最強的佐證。
+誘答選項
+height（高度）：量的是垂直方向。文章裡走垂直方向的是喜馬拉雅山的 thickness，不是印度的南北兩端。geography（地理、地理環境）：指一地的地理條件或這門學科，不可數，也沒有「兩端之間」這種量測概念。landscape（地貌、景觀）：指眼睛看得到的地表樣貌，同樣不是一個可以每年減少 2 公分的長度。
+常考字詞與句型
+the distance between A and B（A 與 B 之間的距離）、within walking distance（步行可到的距離內）、keep one's distance（保持距離）、at a distance（在一段距離外）、shrink by（縮短……的幅度）、a long-distance call（長途電話）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+India is shrinking. A new analysis of satellite-based data has given precisely the rate 21 which the country is losing size as it pushes northward against the Himalayas. According to the analysis, the 22 between India's southern and northern tips shrinks by 2 cm every year. As India's size decreases, the thickness of the Himalayas increases. 23 the shrinking continues, India will disappear in 200 million years. There would only be a vast mountain range along the southern coast of China.
+The Indian plate's 24 movement is not new. However, this cannot be treated as a trivial finding in science. A movement of 25 a few millimeters (mm) of the earth's crust is a sign of possible earthquakes. Such dangers are now obvious in India, where the movement of the plate continues.
+中譯：印度正在縮小。一項根據衛星資料的新分析，精確計算出印度在向北推擠喜馬拉雅山脈的過程中縮小的速度。根據這項分析，印度南北兩端之間的距離每年縮短 2 公分。隨著印度面積縮小，喜馬拉雅山的厚度則在增加。如果這種縮小持續下去，印度將在兩億年後消失，屆時只會剩下一片沿著中國南部海岸的廣大山脈。印度板塊的北移現象並不是新鮮事。然而，這在科學上不能被視為無關緊要的發現。地殼只要移動幾公釐，就可能是地震即將發生的徵兆。這樣的危險在印度已相當明顯，因為該板塊仍持續在移動。
+📋 內容大意
+Satellite data now shows precisely how quickly India is losing size as the plate pushes north into the Himalayas.
+The gap between the country's northern and southern tips closes by two centimeters a year, and the mountains grow thicker. India could vanish in 200 million years.
+The plate's motion is not new. But a shift of a few millimeters in the crust signals possible earthquakes, so the finding matters.
+← 第21題回到96 年學測第23題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

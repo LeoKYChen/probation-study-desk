@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z95-13/index.html
+Author: staresto-create ZZSH
+Title: 95 年指考克漏字第13題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 95 年指考 ／ 第13題
+95 年指考 克漏字 第13題
+字彙選義線索：句內答對率 42%
+答對率 42%：當年每 100 位考生，有 42 位答對。
+__12__ using any thermometer, double check that it covers the right temperature 13 for your activity or experiment.
+(A)range
+(B)record
+(C)system
+(D)unit
+答案：(A) range
+題目編號：Z95_13（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+temperature range（溫度範圍）是字詞搭配，表示溫度計所能偵測的溫度區間。record（紀錄）、system（系統）、unit（單位）都不符合「溫度計涵蓋範圍」的語意。
+深入解析
+你可能會這樣想
+四個選項都是名詞，都能接在 temperature 後面組成一個名詞組，你會憑中文挑一個。
+怎麼判斷
+答對率四成二。關鍵在空格前面的動詞 covers。cover 在這裡是「涵蓋、包含」，它涵蓋得住的必然是一段有寬度的東西，而不是一個點。所以填 range，temperature range 就是「溫度範圍」。填進去讀成 double check that it covers the right temperature range for your activity（再確認一次它涵蓋的溫度範圍適不適合你要做的事）。下一句的例子也能驗算：花園用的溫度計拿去量沸騰的液體會爆掉，正是因為它涵蓋的範圍不夠高。
+誘答選項
+record（紀錄）指的是記下來的數值，一個紀錄不需要被「涵蓋」；system（系統）在這一篇最後一段確實出現過（different systems of measures 不同的度量系統），形態也吻合，容易被順手選走，但溫度計涵蓋的不是一套系統；unit（單位）是計量用的標準，公尺、公斤都是單位，是一個點而不是一段。
+常考字詞與句型
+temperature range（溫度範圍）、cover a range（涵蓋一段範圍）、a wide range of（各式各樣的）、conversion tables（換算表）、unit（單位）、system of measures（度量系統）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：95學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Measurements are needed in many everyday activities. In kitchens you will find measures for volume (measuring cups), mass (scales and weights), and temperature (cooking thermometers). Accurate measurements are 11 important for scientific experiments.
+In a laboratory, make sure your measure meets your needs. 12 using any thermometer, double check that it covers the right temperature 13 for your activity or experiment. A garden thermometer, 14, will burst if you try to use it for boiling liquids.
+There are different systems of measures. Most scientists now use the International System of measures, with meters for length, kilograms for 15, and seconds for time. If the measures in your experiment show other units, appropriate conversion tables for different systems may prove to be very useful.
+中譯：許多日常活動都需要用到測量。在廚房裡，你會看到測量體積的量杯、測量質量的秤與砝碼，以及測量溫度的烹飪溫度計。準確的測量對科學實驗尤其重要。在實驗室裡，務必確認你的測量工具符合需求。使用任何溫度計之前，都要先確認它所涵蓋的溫度範圍是否適合你的活動或實驗所需。舉例來說，一支花園用溫度計，如果拿去測量沸騰的液體，就會爆裂。測量單位有好幾種不同的系統，目前大多數科學家使用的是國際單位制，長度以公尺為單位，質量以公斤為單位，時間則以秒為單位。如果你實驗中所使用的測量工具顯示的是其他單位，能夠對照不同單位系統的換算表，將會非常有用。
+📋 內容大意
+Measuring runs through daily life, from kitchen cups and scales to laboratory work.
+Any instrument must suit its task; a garden thermometer will shatter in boiling liquid.
+Scientists mostly use the International System, and conversion tables help with other units.
+← 第12題回到95 年指考第14題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

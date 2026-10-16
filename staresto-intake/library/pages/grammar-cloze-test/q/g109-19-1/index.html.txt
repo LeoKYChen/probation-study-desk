@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g109-19-1/index.html
+Author: staresto-create ZZSH
+Title: 109 年學測克漏字第19題詳解（連接詞／轉折詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 109 年學測 ／ 第19題
+109 年學測 克漏字 第19題
+連接詞／轉折詞線索：句內答對率 16%
+答對率 16%：當年每 100 位考生，有 16 位答對。
+Featuring floral patterns, religious symbols, and messages of hope, the painted henna crowns are amazing substitutes for the hats and wigs that the cancer patients would 19 use to cover their heads.
+(A)moreover
+(B)altogether
+(C)namely
+(D)otherwise
+答案：(D) otherwise
+題目編號：G109_19_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+otherwise 在此是「若非如此、本來」：既然現在有 henna 頭冠當替代品，帽子與假髮就是患者「本來會用」的東西。moreover（此外）、altogether（總共、完全）、namely（也就是）語意都不合。
+重點：otherwise 放在 would 後面是「若非如此、本來就會」，指的是沒有發生的那一種情況——這裡是「要不是有 henna 頭冠，本來會戴的帽子與假髮」；moreover（此外）是補充，altogether（總共、完全）是程度，namely（也就是）是點名，三個都讀不出這個「本來」。
+延伸閱讀：otherwise——「若非如此、本來」 ↗
+深入解析
+答對率一成六，鑑別度 2：高分群考生也幾乎沒占到便宜。四個選項都是副詞，文法上誰都塞得進去，只能靠語意判斷。
+你可能會這樣想
+otherwise 你大概只會用在句首的「否則」（Hurry up; otherwise you'll be late.）。這裡它夾在 would 與 use 之間，位置陌生，就不敢選。這不是它多了新的意思，是同一個意思換了位置與功能。把字拆開看就清楚：otherwise ＝ other + wise，這個 wise 不是「聰明」，是古英文的 wise「方式、樣子」——字面就是「用另一種方式、在另一種情況下」。likewise（同樣地）、clockwise（順時針）用的都是同一個 wise，而 likewise 與 otherwise 正好是一對反義字：一個說照樣，一個說不照樣。美劇裡還常聽到第三種用法，同樣是這個 wise：接在名詞後表示「就…而言」——這用法很口語，聽得懂就好，作文不要用。
+怎麼判斷
+記一個公式：would／might／could + otherwise + 原形動詞 ＝「若不是現在這樣，本來會…」。念一句就有感覺：problems that might otherwise go unnoticed（若非如此，本來沒有人會注意到的問題）。本句的觸發點是 substitutes for（…的替代品）：既然頭冠是替代品，帽子與假髮就是「本來會用」的東西；would 也在配合這個假設。or ＝ or else ＝ otherwise 的意思不難，難的是位置。這一組一句記完：Weather-wise, tomorrow looks bad—otherwise the city would not have called off work and school. Time-wise the trip is fine, and money-wise, likewise.（就天氣來說，明天看來很糟——若非如此，市府不會宣布停止上班上課。時間上這趟行程沒問題，錢的方面也一樣。）〔情境取材自 114 學測作文題：颱風停課〕
+誘答選項
+moreover（此外）是補充、namely（也就是）是把前面講過的東西說得更明確、altogether（總共、完全）是總計，三個都表達不出「若非如此」。
+常考字詞與句型
+…; otherwise…（否則）、would otherwise + 原形（本來會…）、unless otherwise stated（除非另有說明）、likewise（同樣地）、clockwise（順時針方向）、substitute for（…的替代品）。
+鑑別度分析：鑑別度 2，高分群與低分群答對的比例只差一點。本題答對率一成六，屬於難度很高的題目——大考中心《選才電子報》第 307 期說明鑑別度時，就把答對率低的難題列為鑑別度偏低的原因之一：高、低分群考生在這類題目上的答對率差距不大，鑑別度的數值就會比較小。這一題比較像是不分程度的考生都停在同一個意思上：otherwise 最常見的用法是「否則」，而這一格用的是另一個意思「若非如此、本來」，放在 would 後面指的是沒有發生的那一種情況。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The art and tradition of using all-natural paste from the henna plant to create temporary henna tattoos goes back to ancient Asia and the Middle East. Over the centuries, henna tattoos 16 used in weddings and holiday celebrations because they are thought to carry blessings from the gods.
+Today, the ancient art form has found a new 17 in the hands of contemporary artists. Henna Heals, an artist group based in Canada, uses henna tattoos to help women suffering from cancer feel confident and beautiful again. They draw elegant henna crowns on the women's bare heads to help them 18 the loss of their hair after cancer treatment.
+Featuring floral patterns, religious symbols, and messages of hope, the painted henna crowns are amazing substitutes for the hats and wigs that the cancer patients would 19 use to cover their heads. Many women report that the henna crowns really work as a healing device, helping them build a more 20 self-image at a time when they are vulnerable and depressed. According to Frances Darwin, founder of Henna Heals, the number of artists now involved in the project across Canada and the US has grown to over 150.
+中譯：利用指甲花天然糊料在皮膚上繪製暫時性刺青的藝術與傳統，可追溯至古代亞洲與中東地區。數個世紀以來，指甲花刺青一直被用於婚禮和節慶場合，因為人們相信它能帶來神明的祝福。如今，這項古老的藝術形式在當代藝術家手中找到了新的應用方式。「Henna Heals」是一個位於加拿大的藝術家團體，他們運用指甲花刺青，幫助罹患癌症的女性重拾自信與美麗。他們在這些女性光禿的頭上畫上優雅的指甲花「皇冠」，幫助她們面對癌症治療後掉髮的失落感。這些繪有花卉圖案、宗教符號與希望訊息的指甲花皇冠，成為癌症患者原本可能用來遮掩頭部的帽子和假髮的絕佳替代品。許多女性表示，指甲花皇冠確實發揮了療癒的效果，幫助她們在脆弱與沮喪的時刻，建立起更正向的自我形象。根據「Henna Heals」創辦人法蘭西絲·達爾文表示，目前參與這項計畫的藝術家人數，在加拿大與美國已成長至超過 150 人。
+📋 內容大意
+Contemporary artists use traditional henna tattoos to create decorative crowns for cancer patients, restoring their confidence during hair loss.
+← 第18題回到109 年學測第20題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

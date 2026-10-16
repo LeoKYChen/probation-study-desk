@@ -1,0 +1,44 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z93m-19/index.html
+Author: staresto-create ZZSH
+Title: 93 年指考敏督利颱風受災地區考生補救考試克漏字第19題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 93 年指考敏督利颱風受災地區考生補救考試 ／ 第19題
+93 年指考敏督利颱風受災地區考生補救考試 克漏字 第19題
+字彙選義線索：跨句
+The group saw the worm go down into the water and soon begin to struggle for 19.
+(A)health
+(B)audience
+(C)proof
+(D)survival
+答案：(D) survival
+題目編號：Z93M_19（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+struggle for survival（為求生存而掙扎）為字詞搭配，表示蟲子在酒精中開始為了活命而掙扎；health／audience／proof 都不符合 struggle for 的搭配語意。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+audience 這個字剛剛才在同一篇裡出現過（He said to the audience），眼睛掃到選項時會覺得特別眼熟，很容易直接選它。但眼熟不等於正確——刻意從文章裡取用出現過的字來當誘答選項，是常見的命題手法，看到一個「剛剛好像看過」的選項，那正是要停下來驗算的訊號，不是選它的理由。把 struggle for audience 讀一次就知道不通：蟲不會為了觀眾而掙扎。
+怎麼判斷
+四個選項都是名詞，文法上都放得進 for 後面，可見這一格考的不是文法而是語意，只能往上下文找。這一格落在大考中心說的「詞彙量」這一項上，問的是 struggle for 後面接的是什麼。只讀空格所在的這一句還定不了案：the worm go down into the water and soon begin to struggle（蟲沉進液體裡，隨即開始掙扎）只說了牠在掙扎，沒說牠在爭取什麼——為了浮上來、為了游出去、為了活下去，讀到這裡都還講得通。定案的依據在下一句：Right there and then every one in the group witnessed the worm shrinking and disintegrating. Then it died.（就在當下，這群人親眼看著那條蟲萎縮、崩解，然後牠死了。）結局是死亡，那麼前一句那場掙扎爭的就只會是一條命。把 survival 放回去讀一次，struggle for survival（為求生存而掙扎）語意完全接得上；這是常考的字詞搭配，兩個字要整組記起來。這一類題有一個方法很省力：讀到「掙扎」而句內看不出掙扎的目標是什麼時，往下讀一句看結局，結局會反過來告訴你目標。
+誘答選項
+health（健康）方向不對，蟲不是在爭取變健康，是在保命；proof（證據）是這場示範要拿給人看的東西，不是蟲自己要爭取的；audience（觀眾）如上，是眼熟造成的陷阱。三個選項雖然都是名詞，卻沒有一個能當「掙扎」的目標，也沒有一個接得上下一句的死亡結局。
+常考字詞與句型
+struggle for survival（為求生存而掙扎）、struggle to V（努力想做某事）、see sb 或 sth + 原形動詞（看到某人或某物做某事，如 I saw him leave.）、go down into（往下沉進……）、witness（目睹）、proof（證據，動詞形是 prove 證明）。
+線索範圍說明：struggle 爭取的目標由下一句蟲萎縮、崩解到死亡的結局定案
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+A man wanted to prove to a group of alcoholics the effect of alcohol on human body systems. He displayed two jars in front of the group, one containing water and the other containing alcohol, 16 a very healthy worm. He said to the audience: "This jar contains water." Then he dropped the worm in the jar and said, "Please watch the reaction." The group watched closely 17 the worm floated in the jar, dangling and swimming.
+The man then took the worm out of the first jar and put it in the second jar 18 contained alcohol and said to the audience, "Now watch the reaction." The group saw the worm go down into the water and soon begin to struggle for 19. Right there and then every one in the group witnessed the worm shrinking and disintegrating. Then it died.
+The man turned round and asked the audience, "What would you all say to this?" After a long silence, someone from the rear 20 and said, "I can see that if I drink alcohol, there will be no more worms in my body."
+中譯：有個人想向一群酗酒者證明酒精對人體系統的影響。他在群眾面前擺出兩個罐子，一個裝水、另一個裝酒精，並在旁邊放了一條非常健康的蟲。他對聽眾說：「這個罐子裝的是水。」接著他把蟲放進罐子裡，說：「請仔細觀察牠的反應。」群眾專注地看著這條蟲在罐子裡漂浮、擺動、游動。接著，這個人把蟲從第一個罐子拿出，放進裝有酒精的第二個罐子，並對聽眾說：「現在請觀察牠的反應。」群眾看到這條蟲沉入水中，很快便開始為了求生而掙扎。就在那一刻，在場所有人都目睹了這條蟲逐漸萎縮、瓦解，最後死去。這個人轉過身，問聽眾：「你們對此有什麼看法？」在一片長久的沉默之後，後排有人站了起來，說：「我明白了，如果我喝酒，我體內就再也不會有蟲了。」
+📋 內容大意
+A man set out to show drinkers what alcohol does to the body.
+A worm swam happily in his jar of water, but shrank, struggled and died in the jar of alcohol.
+Asked what they had learned, one listener replied that drinking would rid him of worms.
+← 第18題回到93 年指考敏督利颱風受災地區考生補救考試第20題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

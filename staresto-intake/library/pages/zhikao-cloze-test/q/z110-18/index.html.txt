@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z110-18/index.html
+Author: staresto-create ZZSH
+Title: 110 年指考克漏字第18題詳解（慣用語／片語）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 110 年指考 ／ 第18題
+110 年指考 克漏字 第18題
+慣用語／片語線索：句內答對率 75%
+答對率 75%：當年每 100 位考生，有 75 位答對。
+Friction with the atmosphere will cause it to 18 and burn while traveling at high speed.
+(A)wear out
+(B)turn off
+(C)break through
+(D)heat up
+答案：(D) heat up
+題目編號：Z110_18（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+heat up（升溫、變熱）與後面的 burn 構成同一個過程：與大氣摩擦先生熱，進而燃燒；wear out（磨損、耗盡）、turn off（關掉）、break through（突破）都接不上 and burn 這個結果。
+深入解析
+你可能會這樣想
+heat up 你大概只想到廚房裡的加熱——把飯菜熱一熱，後面一定接一個受詞。本句的 heat up 沒有受詞，是不及物的用法，意思是自己升溫、變熱。同一個片語，及物與不及物兩種用法都很常見，這一題考的正是後者。
+怎麼判斷
+四個選項都是動詞片語，文法上都接得上 cause it to ___，可見這一格考的是語意。線索是空格後面那個 and burn：空格與 burn 由 and 並列，兩者要是同一個過程裡先後發生的事。整句在講流星體高速穿過大氣層時與空氣摩擦——摩擦生熱，熱到極點就燒起來，先升溫再燃燒，順序完全吻合。
+誘答選項
+wear out（磨損、耗盡）雖然摩擦聽起來像會磨損，但它接不上 and burn，磨損不會導致燃燒。turn off（關掉）用在電器與開關上，流星體沒有開關可以關。break through（突破、穿透）表面上很誘人，因為流星體確實是穿過大氣層——但這一格與 burn 並列，要的是摩擦造成的結果，而穿透是它本來就在做的事，不是摩擦造成的。鑑別度 52，分開的是有沒有用 and 後面那個 burn 去回推空格。
+常考字詞與句型
+heat up（升溫、變熱；及物時是把……加熱）、cause sth to V（導致某物……）、friction with（與……的摩擦）、wear out（磨損、耗盡）、break through（突破、穿透）、travel at high speed（高速前進）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：110學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Do you know the difference between the terms meteoroid, meteor, and meteorite in astronomy? Many people find these words confusing. However, the difference is all about their 16.
+Meteoroids are far up in the sky. They are chunks of rock or metal that speed through space. Some are very large and may be hundreds of feet wide. Others 17 the size of a small stone. Most meteoroids travel around the sun in space and stay away from the Earth. However, sometimes a meteoroid will enter the Earth's atmosphere. Friction with the atmosphere will cause it to 18 and burn while traveling at high speed.
+As a meteoroid begins to burn in the atmosphere, it leaves a streak of light. When this tail-like light is falling down toward the Earth, it is called a meteor, or a shooting star. Most meteors vaporize completely before they hit the ground.
+If any meteor 19 its fiery journey through the atmosphere and lands on Earth, it is called a meteorite. Large meteorites can cause great explosions and much destruction on the surface of the Earth. 20 , Barringer Crater in the American state of Arizona, measuring 1,200 m in diameter and some 170 m deep, was produced by a meteorite impact.
+中譯：你知道天文學中「流星體」（meteoroid）、「流星」（meteor）與「隕石」（meteorite）這幾個詞的差別嗎？許多人常把這些詞搞混。然而，它們的差別其實全在於所在的位置。流星體位於高空之中，是在太空中高速穿梭的岩石或金屬碎塊。有些流星體非常巨大，可能寬達數百英尺；其他則可能只有小石頭般大小。大多數流星體會繞著太陽在太空中運行，遠離地球。然而，有時候流星體會進入地球大氣層，與大氣層的摩擦會使它在高速前進的同時開始升溫並燃燒。當流星體在大氣層中開始燃燒時，會留下一道光跡；當這道拖著尾巴的光芒朝地球墜落時，就被稱為「流星」，或稱 shooting star。大多數流星在撞擊地面前就已完全氣化。如果有流星在穿越大氣層的熾熱旅程中存活下來、並最終落到地球上，就被稱為「隕石」。大型隕石可能在地表造成劇烈爆炸和嚴重破壞。舉例來說，位於美國亞利桑那州、直徑約 1200 公尺、深約 170 公尺的巴林傑隕石坑，就是一次隕石撞擊所形成的。
+📋 內容大意
+Meteoroid, meteor and meteorite name the same object at three different places.
+Meteoroids are rocks or metal, from pebble-sized to hundreds of feet, racing through space.
+One entering our atmosphere burns and leaves a streak of light, the meteor or shooting star.
+The few that survive and land are meteorites, and big ones blast craters like Arizona's.
+← 第17題回到110 年指考第19題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

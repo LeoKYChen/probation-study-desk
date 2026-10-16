@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g107-16-1/index.html
+Author: staresto-create ZZSH
+Title: 107 年學測克漏字第16題詳解（比較級）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 107 年學測 ／ 第16題
+107 年學測 克漏字 第16題
+比較級線索：跨句答對率 31%
+答對率 31%：當年每 100 位考生，有 31 位答對。
+However, according to a wide array of scientific and sociological research, creativity is 16 a sign of rare genius than a natural human potential.
+(A)more
+(B)less
+(C)better
+(D)worse
+答案：(B) less
+題目編號：G107_16_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+less A than B 意為「與其說是 A，不如說是 B」；前一句提到長久以來大家認為創造力是少數人專屬，本句以 However 翻轉，說創造力與其說是天才的標誌，不如說是人類天生的潛能。more 會使語意完全相反，better／worse 則無法與 than 構成這個句型的語意。
+深入解析
+你可能會這樣想
+四個選項都是比較級，句中也有現成的 than，文法上 more 與 less 都塞得進去、都完全合乎語法——這正是本題的難處：光靠文法救不了，一定要讀懂語意方向。
+怎麼判斷
+四個選項都是比較級，句中也有現成的 than，光靠句法選不出來，語意方向要靠鄰句決定。作答線索在前一句 It has long been assumed that creativity is some unusual trait enjoyed by the few.（長久以來大家認為，創造力是少數人才具備的一種罕見特質），本句以 However 起頭，就是要推翻這個看法。既然要推翻「少數人專屬」，答案必然是「與其說是罕見天才的標誌，不如說是人人都有的天生潛能」，填 less。下一句 Thus, it can be nurtured and encouraged.（因此創造力是可以培養、可以激發的）再印證一次——正因為人人都有，才談得上培養。兩個句型連中文一起記：less A than B ＝ 與其說 A 不如說 B；more A than B ＝ 與其說 B 不如說 A，方向相反，只記字面會選反。
+誘答選項
+more：文法上同樣成立，但 more A than B 是「與其說是 B，不如說是 A」，填進去變成「創造力與其說是人人都有的潛能，不如說是罕見天才的標誌」，正好回到前一句要推翻的看法，與 However 的轉折方向相反。better：是 good 的比較級，當形容詞要放在冠詞後、名詞前（a better sign），不能擺在冠詞 a 的前面，better a sign 不成立；而且文章在談創造力是什麼，不是在比較好壞。worse：是 bad 的比較級，位置的問題與 better 相同，而且 than 後面的 a natural human potential 是正面的說法，說創造力「比天生潛能更糟」與全文語意不合。
+常考字詞與句型
+less A than B（與其說 A 不如說 B）、not so much A as B（與其說 A 不如說 B）、rather than（而不是）、nurture a talent（培養才能）。其中 rather than 這一組考過 9 個年度，83 年第 30 題 →、88 年第 23 題 →、94 年第 25 題 →、98 年第 27 題 →、99 年第 20 題 →、103 年第 27 題 →、105 年第 26 題 →、107 年第 28 題 →、110 年試辦考試第 13 題 →都出現過。
+線索範圍說明：more 與 less 在句內同樣合文法，是前一句 It has long been assumed that creativity is some unusual trait enjoyed by the few 加上 However 才決定方向
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+It has long been assumed that creativity is some unusual trait enjoyed by the few. However, according to a wide array of scientific and sociological research, creativity is 16 a sign of rare genius than a natural human potential. Thus, it can be nurtured and encouraged.
+It is believed that taking breaks from a problem can help 17 a moment of insight or stimulate new ideas. Unconventional solutions can also be explored. That is why some of the most successful companies in the world, such as 3M and Google, encourage their employees to 18 all sorts of relaxing activities, such as playing pinball and wandering about the campus. During such breaks, the mind turns inward, 19 it can subconsciously puzzle over subtle meanings and connections.
+Another way to increase creativity is to take risks. This is because many breakthroughs come up when people venture 20 their usual routines or areas of expertise. This can be done by, for example, learning new skills or traveling to new countries.
+中譯：長久以來，人們普遍認為創造力是少數天才才擁有的特殊天賦。然而，根據大量科學與社會學研究顯示，創造力與其說是稀有天才的象徵，不如說是每個人與生俱來的潛能，因此是可以被培養與鼓勵的。研究認為，暫時放下手邊的問題休息一下，有助於激發靈光乍現的頓悟時刻，或刺激新想法的誕生，也能幫助人們探索非傳統的解決方案。這也是為什麼像 3M 和 Google 這樣全球最成功的企業，會鼓勵員工從事各種放鬆身心的活動，例如打彈珠台或在園區裡隨意走走。在這樣的休息時間裡，思緒會轉向內在，讓大腦能在潛意識中，慢慢琢磨那些細微的意義與關聯。另一個提升創造力的方法，是勇於冒險，因為許多重大突破，往往來自人們勇於跳脫日常慣例或專業領域之外的嘗試，例如學習新技能，或前往陌生的國家旅行。
+📋 內容大意
+Creativity has long been seen as a rare gift. Research now treats it as a natural human power that can be trained.
+Stepping away from a problem often brings sudden insight. Companies such as 3M and Google let staff relax, and during those pauses the mind keeps working.
+Taking risks also helps. Breakthroughs often come when people move outside their usual routines, by learning new skills or traveling to new countries.
+回到107 年學測第17題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

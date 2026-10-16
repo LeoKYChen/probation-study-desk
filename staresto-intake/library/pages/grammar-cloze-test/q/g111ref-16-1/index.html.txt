@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g111ref-16-1/index.html
+Author: staresto-create ZZSH
+Title: 111 年學測英文參考試卷克漏字第16題詳解（句型結構）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 111 年學測英文參考試卷 ／ 第16題
+111 年學測英文參考試卷 克漏字 第16題
+句型結構線索：句內
+His writing style, characterized by simplicity and understatement, influenced modern fiction, as 16 his life of adventure.
+(A)was
+(B)being
+(C)did
+(D)doing
+答案：(C) did
+題目編號：G111學測英文參考試卷_16_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+did 在這裡代替前面已經出現過的一般動詞 influenced（避免重複講同一個動詞）。句意是「他的寫作風格影響了現代小說，他充滿冒險的一生『也』（影響了現代小說）」，後半句要表達「也一樣」，英文用「as + 倒裝」結構來代替重複的動詞。因為 influenced 是一般動詞（不是 be 動詞），倒裝時不能直接把動詞本身搬到主詞前面，必須借助助動詞 do／does／did 代替，且時態要跟被取代的動詞一致（influenced 是過去式，所以用 did）。A) was 只能代替 be 動詞，這裡前面是一般動詞不能用 was 代替；B) being／D) doing 是分詞形式，不是限定動詞，無法承擔倒裝句裡代替原動詞的角色。
+重點：as/than 引導的比較句裡，如果後面重複前面用過的一般動詞，要用助動詞 do/does/did 代替並倒裝（動詞放主詞前面），時態要跟被取代的動詞一致
+延伸閱讀：as/than 倒裝代替前述動詞（含例句 as did） ↗
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項是 be 動詞、分詞與 do 的變化，你會先想「這一格要什麼詞性」，卻可能沒注意到空格前面那個 as——它帶出的是一個倒裝的短句。
+怎麼判斷
+先看整句：His writing style, characterized by simplicity and understatement, influenced modern fiction, as ___ his life of adventure.（他的寫作風格以簡潔與含蓄著稱，影響了現代小說，而他充滿冒險的一生……。）關鍵在 as——這裡的 as 是「……也一樣」的意思，後面接的是一個倒裝的短句，用來說「另一樣東西也做了同一件事」。前面那個動詞是 influenced（一般動詞、過去式），要在後半句代替它、避免重複整個 influenced modern fiction，用的是助動詞 did：as did his life of adventure（他充滿冒險的一生也影響了現代小說）。這叫做動詞替代——用 do／does／did 代替前面出現過的一般動詞。可以對照這個簡答：Do you like it? — Yes, I do.（那個 do 代替的正是 like it。）同型的說法還有 So did I.（我也是）、As did many others.（其他許多人也是）。注意 as 後面這裡用的是倒裝語序（did 在主詞前面）；不倒裝寫成 as his life of adventure did 也成立。
+誘答選項
+was：be 動詞。前面那個動詞是 influenced 不是 be 動詞，替代時要用同一類的助動詞，一般動詞就得用 do 系列。being、doing：兩個都是分詞，不是限定動詞，表達不出「他的冒險生涯也影響了現代小說」這個完整的意思。
+常考字詞與句型
+as did sb／sth（……也是，動詞替代）、So did I.（我也是）、Do you like it? — Yes, I do.（do 代替前面的動詞）、be characterized by（以……為特色）、understatement（含蓄的表達）、influence modern fiction（影響現代小說）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Ernest Hemingway (1899-1961) was an American author and journalist. His writing style, characterized by simplicity and understatement, influenced modern fiction, as 16 his life of adventure.
+Hemingway started his career as a journalist at 17. In the 1920s, he was sent to Europe as a newspaper correspondent to 17 such events as the Greek Revolution. During this period, he produced his early important works, including The Sun Also Rises. Among his later works, the most outstanding is The Old Man and the Sea (1952), which became perhaps his most famous book, finally winning him the Pulitzer Prize he had long been 18 .
+Hemingway liked to portray soldiers, hunters, bullfighters—tough, at times primitive people whose courage and honesty are set against the brutal ways of modern society, and who in this 19 lose hope and faith. His straightforward prose is particularly effective in his short stories, some of 20 are collected in Men Without Women (1927). In 1954, Hemingway was awarded the Nobel Prize in Literature. He died in Idaho in 1961.
+中譯：厄尼斯特·海明威（1899-1961）是一位美國作家兼記者。他以簡潔、含蓄著稱的寫作風格，影響了現代小說的發展，他充滿冒險的一生也是如此。海明威 17 歲就開始當記者。1920 年代，他被派往歐洲擔任報社特派記者，報導諸如希臘革命之類的重大事件。在這段期間，他創作出早期的重要作品，包括《太陽依舊升起》。在他後期的作品中，最傑出的當屬《老人與海》（1952 年），這本書後來成為他最著名的代表作，也終於為他贏得長期以來一直未能獲得的普立茲獎。海明威喜歡刻畫士兵、獵人、鬥牛士等堅毅、有時帶點原始氣息的人物，他們的勇氣與誠實，與現代社會的殘酷本質形成強烈對比，並在這樣的衝突中逐漸失去希望與信念。他直白簡練的文筆，在他的短篇小說中表現得尤為出色，其中部分作品收錄於《沒有女人的男人們》（1927 年）。1954 年，海明威榮獲諾貝爾文學獎。他於 1961 年在愛達荷州逝世。
+📋 內容大意
+Ernest Hemingway (1899-1961) was an American writer and journalist. His plain, understated style shaped modern fiction. His life of adventure had the same effect.
+He began reporting at seventeen. In the 1920s a newspaper sent him to Europe to report events such as the Greek Revolution. The Sun Also Rises came from those years.
+The Old Man and the Sea (1952) finally won him the Pulitzer Prize. The Nobel Prize followed in 1954. He wrote about tough men in a hard, violent world.
+回到111 年學測英文參考試卷第17題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

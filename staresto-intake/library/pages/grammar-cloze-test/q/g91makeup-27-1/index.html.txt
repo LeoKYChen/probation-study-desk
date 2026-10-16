@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g91makeup-27-1/index.html
+Author: staresto-create ZZSH
+Title: 91 年學測補考克漏字第27題詳解（分詞／動狀詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 91 年學測補考 ／ 第27題
+91 年學測補考 克漏字 第27題
+分詞／動狀詞線索：句內
+Visit the websites of these colleges and find out which college has departments 27 courses that interest you or will help you prepare for your future career.
+(A)offer
+(B)offers
+(C)offered
+(D)offering
+答案：(D) offering
+題目編號：G91補考_27_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+現在分詞 offering 作形容詞修飾 departments，表示「提供你感興趣課程的系所」；offer（原形動詞，不能這樣修飾名詞）、offers（限定動詞，句子已有主要動詞 has）、offered（過去分詞，被動語意方向不合，應該是系所主動「提供」課程）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項是 offer 的四種形態，你會開始判斷時態；但這個句子已經有動詞 has 了，空格填的不是句子的動詞，是用來修飾前面那個名詞的。
+怎麼判斷
+先看結構：find out which college has departments ___ courses that interest you（找出哪一所大學有……你感興趣的課程的系所）。子句的主詞是 which college、動詞是 has、受詞是 departments，成分已經齊了，所以空格不可能再是一個限定動詞——offer 與 offers 先排除。剩下 offered 與 offering，用主動被動分：系所是提供課程的一方，是主動，所以用現在分詞 offering。整串 offering courses that interest you 掛在 departments 後面，走的是那條位置規則：分詞當形容詞用時，單獨一個放名詞前，帶了受詞就整串放名詞後。這一條在題庫裡已經出現三次，剛好可以一起看：88 年第 38 題 →的 a window overlooking the bay（現在分詞，窗戶主動朝向海灣）、84 年第 36 題 →的 items made from myrtlewood（過去分詞，商品被製成）、本題的 departments offering courses（現在分詞，系所主動提供課程）。判斷方式永遠是同一個：那個名詞是做這個動作的，還是被這個動作處理的。
+誘答選項
+offered：過去分詞表被動，變成「被提供課程的系所」，方向反了。offer、offers：限定動詞。句子已經有 has，再放一個限定動詞，會變成兩個句子沒有連接詞連接。
+常考字詞與句型
+departments offering courses（提供課程的系所）、a window overlooking（俯瞰……的窗）、items made from（用……做成的物品）、courses that interest sb（某人感興趣的課程）、prepare for one's career（為職涯做準備）、a department（系所）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Now that you are planning to go to college, how can you select an ideal college for yourself? 21 its reputation or the test scores it requires for admission? In fact, it is not 22 simple as that. College education is far more complicated than 23 the reputation of a college or the test scores it requires. In addition to these two factors, you should also have 24 important information. Finding out which college suits you involves time and energy, but 25 more than those you might spend on buying a motorcycle or a computer.
+Here are some tips 26 choosing an ideal one from a number of colleges.
+Visit the websites of these colleges and find out which college has departments 27 courses that interest you or will help you prepare for your future career.
+Are the professors in the departments you plan to 28 into experts in their own fields?
+Do the colleges allow you to participate in activities 29 will help you develop yourself intellectually and emotionally?
+I hope the 30 advice is helpful to you in selecting the right college.
+中譯：既然你正計劃上大學，該如何為自己挑選一所理想的大學呢？是看學校的名聲，還是看入學所需的測驗成績？事實上，事情並沒有那麼簡單。大學教育遠比一所學校的名聲或入學所需的測驗成績複雜得多。除了這兩項因素之外，你還應該掌握其他重要資訊。找出適合自己的大學需要花費時間和精力，但不會比你花在買機車或電腦上的心力更多。以下是從眾多大學中挑選理想學校的幾個建議：一、瀏覽這些大學的網站，找出哪些學校的科系開設了你感興趣、或有助於你未來職涯發展的課程。二、你打算就讀的科系裡，教授是否都是各自領域的專家？三、這些學校是否讓你有機會參與有助於你智識與情感發展的活動？希望以上的建議，能幫助你選出真正適合自己的大學。
+📋 內容大意
+Choosing an ideal college requires more than reputation or the entrance test scores it demands.
+College education is complex, so students need more information. Finding a good fit takes time and energy, but hardly more than choosing a motorcycle or a computer.
+The writer suggests visiting college websites for departments whose courses match your interests or career plans. Check whether the professors are experts and whether the college offers useful activities.
+← 第26題回到91 年學測補考第28題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g88-18-1/index.html
+Author: staresto-create ZZSH
+Title: 88 年學測克漏字第18題詳解（比較級）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 88 年學測 ／ 第18題
+88 年學測 克漏字 第18題
+比較級線索：句內
+Receptionist: I'm 18 terribly sorry, Mr.
+(A)most
+(B)much
+(C)more
+(D)many
+答案：(A) most
+題目編號：G88_18_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+most 在這裡作副詞，加強語氣修飾 terribly，相當於「非常／十分」（正式道歉常見用法 I am most sorry），不是最高級比較的意思；much／more／many 都不能這樣加在 terribly sorry 前面表達強調語氣。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+most 一出現，腦中幾乎自動接上「最」，於是開始找比較的對象——可是這句話裡沒有任何東西可以拿來比。這一格的 most 不是最高級。
+怎麼判斷
+先看空格後面接什麼：terribly sorry。terribly 是副詞、sorry 是形容詞，空格要填的是再往前一層加強語氣的字。most 除了當最高級，還可以當副詞用，意思等於 very（非常），語氣正式，常見於書面與新聞（a most pessimistic outlook 極其悲觀的前景）。本句是飯店櫃檯對客人正式道歉，I am most terribly sorry 就是「我真的非常抱歉」。辨認最高級與「非常」有一個很好用的訊號——冠詞：the most ... 是最高級（the most pessimistic outlook 最悲觀的那一個前景）；a most ... 則是「非常」（a most pessimistic outlook 一個極其悲觀的前景）。本句連冠詞都沒有，整串擺在 be 動詞後面當補語，更不可能是最高級。
+誘答選項
+much：可以加強比較級（much better）或過去分詞（much appreciated），但不能直接修飾 terribly 這樣的副詞。more：比較級，本句沒有比較的對象。many：修飾可數名詞，而 terribly sorry 既不是名詞也不可數。三個誘答選項的共同問題是：它們談的都是數量或比較，只有 most 能單純加強語氣。
+常考字詞與句型
+most + 形容詞（非常……，正式語體）、a most unusual case（極不尋常的案例）、the most + 形容詞（最……）、be terribly sorry（非常抱歉）、apologize to sb for sth（為某事向某人道歉）、ensure sth（確保某事）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Guest: My name is Hagen. I'm in room 229. This morning I 16 at 6 o'clock by a telephone call that wasn't for me. Now this is the second time this 17 . It's just not good enough! The call was for a Mr. Haugen! Don't you people listen!
+Receptionist: I'm 18 terribly sorry, Mr. Hagen. I will inform the early morning supervisor. She will ensure it doesn't happen again.
+Guest: Well, I hope not! Also, I received this FAX this morning. I've only got the first two pages. 19 should be four more. Didn't anyone check? This is a very important document!
+Receptionist: I 20 apologize, Mr. Hagen. I'll check the FAX office right away. Could I have those two sheets, please?
+中譯：房客：我叫哈根，住在 229 號房。今天早上六點，我被一通不是找我的電話吵醒。這已經是這星期第二次了！這樣真的太不像話了！那通電話是要找豪根先生的！你們都沒在聽嗎！櫃檯人員：真的非常抱歉，哈根先生。我會通知早班主管，她會確保這種事不再發生。房客：希望如此！還有，我今早收到一份傳真，但只收到前兩頁。應該還有四頁才對。難道沒有人檢查過嗎？這是非常重要的文件！櫃檯人員：我誠心跟您道歉，哈根先生。我會馬上去查傳真機。可以請您把那兩頁給我嗎？
+📋 內容大意
+A hotel guest angrily complains that a wrong wake-up call has woken him a second time.（敘事文）
+The receptionist apologizes and promises to tell the supervisor so that it will not happen again.（敘事文）
+The guest then complains that four pages of an important fax are missing.（敘事文）
+The receptionist apologizes again and offers to check the fax office at once.（敘事文）
+← 第17題回到88 年學測第19題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

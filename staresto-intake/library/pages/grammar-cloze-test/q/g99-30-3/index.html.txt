@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g99-30-3/index.html
+Author: staresto-create ZZSH
+Title: 99 年學測克漏字第30題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 99 年學測 ／ 第30題
+99 年學測 克漏字 第30題
+字彙選義線索：句內答對率 58%
+答對率 58%：當年每 100 位考生，有 58 位答對。
+In addition, bottled water produces an incredible amount of solid 30 .
+(A)waste
+(B)resource
+(C)ground
+(D)profit
+答案：(A) waste
+題目編號：G99_30_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「瓶裝水產生大量的固體『廢棄物』」，waste（廢棄物）呼應後文「90% 的瓶子沒有被回收，堆積在垃圾掩埋場」；resource（資源，語意相反）、ground（地面）、profit（利潤）都不合。
+深入解析
+你可能會這樣想
+solid 在你腦中的第一個意思是形容詞「堅固的」，所以 solid ground（堅實的地面）看起來特別順，於是就選了 ground。這裡的 solid 其實是「固體的」，solid waste 是環保領域的常用說法：固體廢棄物。
+怎麼判斷
+答案就寫在下一句：90% of the bottles used are not recycled and lie for ages in landfills.（用過的瓶子有 90% 沒有被回收，長年堆在垃圾掩埋場裡）。landfill 是垃圾掩埋場，會被送進掩埋場的東西就是垃圾，所以空格是 waste。段落的邏輯也一致：這一段從 bottled water has other disadvantages 起就在列缺點，前一項是全球暖化，這一項是垃圾。順帶把 solid 的兩個用法分清楚：當形容詞是「固體的、堅固的」，當名詞用複數 solids 則是「固形物」——這一份考卷的第二篇 a higher percentage of solids（固形物比例較高）用的正是名詞。同一個字在同一份試題裡出現兩種用法，兩篇擺在一起看最省力。
+誘答選項
+resource：資源，語意相反；若真要講回收再利用還說得通，但下一句明說 90% 沒有被回收。ground：地面，solid ground 這個搭配確實存在，但與「產生大量的…」接不起來，你不會說一家公司 produces solid ground。profit：利潤，與這一段的環保主題無關。
+常考字詞與句型
+solid waste（固體廢棄物）、a waste of time（浪費時間）、an incredible amount of（數量驚人的…）、be recycled（被回收）、a landfill（垃圾掩埋場）、contribute to global warming（加劇全球暖化）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Many people like to drink bottled water because they feel that tap water may not be safe, but is bottled water really any better? Bottled water is mostly sold in plastic bottles and that's why it is potentially health 26 . Processing the plastic can lead to the release of harmful chemical substances into the water contained in the bottles. The chemicals can be absorbed into the body and 27 physical discomfort, such as stomach cramps and diarrhea. Health risks can also result from inappropriate storage of bottled water. Bacteria can multiply if the water is kept on the shelves for too long or if it is exposed to heat or direct sunlight. 28 the information on storage and shipment is not always readily available to consumers, bottled water may not be a better alternative to tap water.
+Besides these 29 issues, bottled water has other disadvantages. It contributes to global warming. An estimated 2.5 million tons of carbon dioxide were generated in 2006 by the production of plastic for bottled water. In addition, bottled water produces an incredible amount of solid 30 . According to one research, 90% of the bottles used are not recycled and lie for ages in landfills.
+中譯：許多人喜歡喝瓶裝水，因為他們覺得自來水可能不安全，但瓶裝水真的比較好嗎？瓶裝水大多裝在塑膠瓶中，這正是它可能危害健康的原因。塑膠加工過程可能釋放有害化學物質到瓶內的水中。這些化學物質一旦被人體吸收，可能會造成身體不適，例如胃痙攣和腹瀉。不當儲存瓶裝水也可能帶來健康風險——如果水被放置在架上過久，或暴露在高溫或陽光直射下，細菌就可能大量繁殖。由於消費者往往無法輕易得知瓶裝水的儲存與運送資訊，瓶裝水未必比自來水更好的選擇。除了這些安全疑慮之外，瓶裝水還有其他缺點：它會加劇全球暖化——據估計，2006 年生產瓶裝水所需的塑膠就產生了 250 萬噸二氧化碳。此外，瓶裝水也製造了驚人數量的固體廢棄物，根據一項研究，使用過的瓶子有 90%沒有被回收，長年堆積在垃圾掩埋場中。
+📋 內容大意
+Many people choose bottled water over tap water, believing it safer, but the plastic bottle itself creates health risks.
+Processing plastic can release harmful chemicals into the water, leading to stomach cramps and diarrhea, and bacteria multiply when bottles sit too long or stand in heat or sunlight.
+Storage and shipment information rarely reaches consumers, and bottled water also drives global warming and leaves an enormous quantity of unrecycled plastic, about 90% of which ends up in landfills.
+← 第29題回到99 年學測
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

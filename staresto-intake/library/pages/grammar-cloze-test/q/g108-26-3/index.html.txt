@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g108-26-3/index.html
+Author: staresto-create ZZSH
+Title: 108 年學測克漏字第26題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 108 年學測 ／ 第26題
+108 年學測 克漏字 第26題
+字彙選義線索：句內答對率 46%
+答對率 46%：當年每 100 位考生，有 46 位答對。
+A camera and a viewing system are built 26 these glasses.
+(A)beyond
+(B)into
+(C)from
+(D)with
+答案：(B) into
+題目編號：G108_26_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】built into 指「內建於」；beyond（超越）、from、with 都不合。
+深入解析
+你可能會這樣想
+build 你想到「建造」，於是覺得後面接哪個介系詞好像都差不多。其實 build 配上不同介系詞，意思差很多，這一格考的正是這件事。
+怎麼判斷
+句意是「一台相機和一套顯示系統被裝在這副眼鏡裡」——相機不是擺在眼鏡旁邊，而是做進眼鏡的結構裡，成為眼鏡的一部分。表示「進入內部並成為其中一部分」的介系詞是 into，be built into 就是「內建於……」。把被動還原成主動驗算一次：The designers built a camera and a viewing system into these glasses.（設計者把相機和顯示系統做進這副眼鏡裡），into 後面接的是「被裝進去的那個東西」，位置與語意都對得上。你身邊就有現成的例子：built-in camera（內建相機）、a built-in wardrobe（嵌入式衣櫃）。
+誘答選項
+beyond（超越、在……之外）方向剛好相反，會變成裝在眼鏡外面。from 表來源，be built from 是「用某種材料建成」，例如 The house was built from stone.，這裡講的不是材料。with 可以表工具或配備，語意偏「附帶什麼」，但這一格要的是「裝進內部」的方位關係，into 才精準。順帶一提，build on（以……為基礎進一步發展）是同一個字另一個常考的搭配，109 年第 18 題 →就把它放進選項當誘答，兩個一起記起來。
+常考字詞與句型
+be built into（內建於……）、built-in（內建的、嵌入式的）、build on（以……為基礎發展）、be built from／of（由……建成）、build up（累積、增強）、a viewing system（顯示系統）、be set to V（被設定成……）、play tricks with（對……耍花招）。其中 build up 這一組考過 3 個年度，106 年第 18 題 →、109 年第 30 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Researchers from a university in Japan have developed "diet-glasses" that play tricks with one's perception of food, which could be helpful to people on a diet.
+A camera and a viewing system are built 26 these glasses. As the wearer brings the food toward their mouth, the camera captures an image of the food. It replays the image back through the glasses after processing it on an attached computer. The size of the food they are about to eat is magnified while 27 of their hand remains normal. Their brain is 28 tricked into thinking they are eating more than they really are. The study showed that participants who wore the glasses ate 9.3% less than those who did not wear them.
+The team has also developed a special device which uses scent bottles and visual trickery to make the wearers of these glasses think that the plain snack they are eating is 29 than it actually is. The device, for instance, can be set to 30 one's favorite flavor. Recent experiments with this device showed that 80% of the participants were fooled by the smell. For example, some participants thought that they were eating a chocolate snack, but in fact they were not.
+中譯：日本一所大學的研究人員開發出一種「減肥眼鏡」，能欺騙人對食物份量的感知，對正在節食的人可能有所幫助。這種眼鏡內建了攝影機和顯示系統。當配戴者把食物送到嘴邊時，攝影機會拍下食物的影像，並透過連接的電腦處理後，將影像重新投射回眼鏡中。他們即將吃下的食物看起來會被放大，而手的大小則維持正常比例。他們的大腦因此被騙，誤以為自己吃下的食物比實際上更多。研究顯示，配戴這種眼鏡的受試者，比沒有配戴的人少吃了 9.3%的食物。研究團隊還開發了一種特殊裝置，利用香氣瓶與視覺錯覺，讓配戴眼鏡的人誤以為自己吃的平淡零食比實際上更美味。舉例來說，這個裝置可以設定釋放使用者最喜歡的香味。近期的實驗顯示，有 80%的受試者被氣味所欺騙，例如有些受試者誤以為自己在吃巧克力零食，但其實不是。
+📋 內容大意
+Japanese researchers have built diet-glasses designed to fool the wearer's perception of food.
+A camera catches the food as it nears the mouth. A computer enlarges the picture but keeps the hand normal, so the brain sees more. Wearers ate 9.3% less.
+A second device uses scent bottles and visual tricks so a plain snack seems richer in flavor. 80% of the testers were fooled; some thought they had eaten chocolate.
+← 第25題回到108 年學測第27題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

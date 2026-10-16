@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g106-25-2/index.html
+Author: staresto-create ZZSH
+Title: 106 年學測克漏字第25題詳解（連接詞／轉折詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 106 年學測 ／ 第25題
+106 年學測 克漏字 第25題
+連接詞／轉折詞線索：句內答對率 43%
+答對率 43%：當年每 100 位考生，有 43 位答對。
+The straps on the heel and toe control the length of the shoe, 25 the two on either side allow for different widths.
+(A)whether
+(B)while
+(C)with
+(D)for
+答案：(B) while
+題目編號：G106_25_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+前後兩個子句是並列對比關係（控制長度 vs 控制寬度），while（而/然而）連接兩個對等子句表達這種對比；whether（是否）、with（不能這樣連接兩個完整子句）、for（因為，這裡是並列對比不是因果）都不合。
+深入解析
+你可能會這樣想
+while 你腦中第一個意思是「當……的時候」，於是你去找兩件同時發生的事，結果發現「綁帶控制長度」和「兩側調整寬度」根本不是在講時間，就卡住了。while 當連接詞其實有兩個意思：一個表時間，另一個表對比，可以翻成「而」「然而」（劍橋 English Grammar Today 把 while 收在「表對比的連接詞」這一類底下）。
+怎麼判斷
+先數子句。空格前是一個完整子句：The straps on the heel and toe control the length of the shoe；空格後也是一個完整子句：the two on either side allow for different widths。兩個完整子句要接在一起，中間一定要有連接詞。再看關係：一個管長度、一個管寬度，是同一件事情的兩面對照，不是因果也不是條件，所以選表對比的 while，換成 whereas 讀也完全通。這一題鑑別度偏低，代表 with 這個選項連高分群考生也會踩。原因是 with 讀起來很順口（「兩側的則……」），但 with 是介系詞，後面接的是名詞或動名詞，接不了 the two ... allow ... 這種完整子句。with 接不了這種子句，其實寫在「介系詞」這個名字裡。介系詞的英文是 preposition：pre- 是「前面」，position 是「位置」，合起來就是放在名詞前面的字。後面那個位置既然留給名詞，這種完整的直述子句自然放不進去。這條不用另外背。這是詞性能不能接子句的問題，不是語意問題——遇到兩個完整子句時，先把不能接子句的選項刪掉，範圍馬上縮小。
+誘答選項
+whether（是否）引導的是名詞子句，代進去無法表達對比。with 如前所述不能接完整子句。for（因為）表原因，但控制長度並不是控制寬度的原因，前後是並列不是因果。表對比的 while 在 102 年第 23 題 →、107 年第 21 題 →都考過，107 年那題還放在句首寫成大寫的 While。三題的解法完全一樣：先看前後兩句是同向還是反向，再挑連接詞。
+常考字詞與句型
+while（然而、而，表對比；也可表「當……的時候」）、whereas（然而，表對比）、on the other hand（另一方面）、allow for（容許有、考慮到）、on either side（兩側）、control the length（控制長度）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Shoes are hugely important for protecting our feet, especially in places like Africa, where healthcare provision is limited. Unfortunately, shoes are not always readily available for people living in poverty, 21 shoes that are the right size. Almost as soon as a child receives shoes to wear, he/she is likely to have grown out of them. Then the child has to 22 with shoes that are too small.
+The Shoe That Grows, created by a charity called Because International, changes all this. It allows children to 23 their shoes' size as their feet grow. The innovative footwear resembles a common sandal and is made of leather straps and rubber soles, a material similar to that used in tires. They come 24 two sizes, and can expand in three places. The straps on the heel and toe control the length of the shoe, 25 the two on either side allow for different widths. With this special design, the shoes can "grow" up to five sizes and last for at least five years.
+中譯：鞋子對保護雙腳非常重要，尤其是在像非洲這樣醫療資源有限的地方。然而，對貧困地區的人來說，取得合腳的鞋子並不容易。孩子往往才剛拿到鞋子沒多久，腳就已經長大到穿不下了，之後只能被迫穿著過小的鞋子。一個名為「Because International」的慈善機構所研發的「會長大的鞋子」，改變了這一切。這種鞋子讓孩子的鞋子能隨著腳的成長而調整尺寸。這款創新的鞋子外型類似一般涼鞋，由皮革綁帶和橡膠鞋底製成，材質與輪胎所用的相似。這款鞋子有兩種尺寸供選擇，並能在三個部位進行調整：腳跟和腳趾處的綁帶用來控制鞋子的長度，兩側的綁帶則能調整鞋子的寬度。透過這樣的特殊設計，這款鞋子最多可以「長大」五個尺碼，並可持續使用至少五年。
+📋 內容大意
+Shoes protect the feet, but poor families across Africa often cannot get them. Shoes of the right size are even harder to find.
+Children outgrow new shoes almost at once and must then wear pairs that pinch.
+The Shoe That Grows uses leather straps and rubber soles. Straps at the heel and toe change its length, side straps change its width. It grows five sizes.
+← 第24題回到106 年學測第26題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

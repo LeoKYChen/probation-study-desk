@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g102-30-3/index.html
+Author: staresto-create ZZSH
+Title: 102 年學測克漏字第30題詳解（分詞／動狀詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 102 年學測 ／ 第30題
+102 年學測 克漏字 第30題
+分詞／動狀詞線索：句內答對率 54%
+答對率 54%：當年每 100 位考生，有 54 位答對。
+The IQ is the ratio of “mental age” to chronological age times 100, with 100 30 the average.
+(A)is
+(B)are
+(C)been
+(D)being
+答案：(D) being
+題目編號：G102_30_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】with + 受詞 + 受詞補語（表附帶狀態），這裡的受詞補語是現在分詞 being，「以 100 作為平均值」；is／are（限定動詞，不能這樣接在 with + 受詞後面）、been（過去分詞，這個結構需要 being 不是 been）都不合。
+深入解析
+你可能會這樣想
+看到 with 100 ______ the average，你會覺得這裡缺一個動詞，於是挑了 is 或 are。這是最常見的失分點：把 with 帶出來的這一塊誤當成一個獨立的句子。
+怎麼判斷
+先看整句的主結構。The IQ is the ratio of “mental age” to chronological age times 100 本身已經是完整的句子，主詞 The IQ、動詞 is 都齊了。逗號後面的 with 100 ______ the average 是附加上去補充說明的，裡面不能再有一個限定動詞。is 與 are 都是限定動詞，代進去等於一句話出現兩個主要動詞，先排除。這個結構是：with 加受詞加受詞補語（表附帶狀態）。受詞是 100，受詞補語就是空格這一塊，用來說明 100 處於什麼狀態。補語位置若要用動詞，必須改成分詞：主動用現在分詞，被動用過去分詞。100 是「作為」平均值，屬主動，所以用 being。還原成完整子句驗算：with 100 being the average 等於 and 100 is the average（而 100 就是那個平均值）。這個句型常見的例子有：with his eyes closed（閉著眼睛，被動，用過去分詞）、with the engine running（引擎還開著，主動，用現在分詞）。本題屬於後者。最後用下一句驗算：an 8-year-old who passes the 10-year-old's test would have an IQ of 10/8 times 100, or 125，10 除以 8 再乘以 100 得 125，高於 100，正說明 100 是那個當作基準的平均值。
+誘答選項
+is、are：都是限定動詞，with 引導的附帶結構裡不能放限定動詞；何況若真要當成一個句子，前面還缺一個連接詞。been：過去分詞，前面要有 have、has 或 had 這類助動詞才能構成完成式，不能單獨放在受詞補語的位置；而且 100 與 the average 之間是主動關係，不是被動。
+常考字詞與句型
+with one's eyes closed（閉著眼睛）、with the engine running（引擎還開著）、with one's arms folded（雙臂交叉）、the ratio of A to B（A 與 B 的比例）、chronological age（實足年齡）、on average（平均而言）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+French psychologist Alfred Binet (1859-1911) took a different approach from most other psychologists of his day: He was interested in the workings of the 26 mind rather than the nature of mental illness. He wanted to find a way to measure the ability to think and reason, apart from education in any particular field.
+In 1905 he developed a test in which he 27 children do tasks such as follow commands, copy patterns, name objects, and put things in order or arrange them properly. He later created a standard of measuring children's intelligence 28 the data he had collected from the French children he studied. If 70 percent of 8-year-olds could pass a particular test, then 29 on the test represented an 8-year-old's level of intelligence.
+From Binet's work, the phrase "intelligence quotient" ("IQ") entered the English vocabulary. The IQ is the ratio of "mental age" to chronological age times 100, with 100 30 the average. So, an 8-year-old who passes the 10-year-old's test would have an IQ of 10/8 times 100, or 125.
+中譯：法國心理學家阿爾弗雷德·比奈（1859-1911）採取了與同時代大多數心理學家截然不同的研究取向：他關注的是正常心智的運作方式，而非精神疾病的本質。他希望找到一種方法，能夠測量一個人思考與推理的能力，而不受特定領域教育程度的影響。1905 年，他開發出一套測驗，讓兒童完成諸如遵循指令、臨摹圖形、說出物品名稱，以及依序排列或正確擺放物品等任務。他後來根據對法國兒童所蒐集到的資料，制定出一套測量兒童智力的標準：如果有 70%的八歲兒童能通過某項測驗，那麼在該測驗中的成功表現，就代表了八歲兒童應有的智力水準。比奈的研究成果，讓「智商」（IQ）這個詞彙從此進入英語詞彙之中。智商是「心智年齡」與「實際年齡」的比值再乘以 100，其中 100 代表平均值。因此，一位通過十歲兒童測驗的八歲孩童，其智商即為 10 除以 8 再乘以 100，也就是 125。
+📋 內容大意
+Alfred Binet developed early standardized intelligence tests for children, establishing the foundation for modern IQ measurements.
+← 第29題回到102 年學測
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

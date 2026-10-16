@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dz95-44/index.html
+Author: staresto-create ZZSH
+Title: 指考 95年 篇章結構 第44題詳解（掌握段落內語句的連貫性與一致性）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 指考 95年 ／ 第44題
+指考 95年 篇章結構 第44題
+選文：寫信與電子郵件（Letters and E-mail）
+掌握段落內語句的連貫性與一致性線索：定冠詞 the答對率 45%
+(A)E-mail is different.電子郵件不一樣。
+(B)The downside is, I might be less likely to say something deeper.缺點是，我可能比較不會說出深入一點的話。
+(C)The time and distance, as a matter of fact, influence the letter-writer.事實上，時間和距離會影響寫信的人。
+(D)I can zap a message to Kenya whenever I want to, and it gets there almost in a second.我可以隨時把訊息傳到肯亞，幾乎一秒就到。
+(E)I will also take more care with my style, trying to write in a way that is interesting and worth reading.我也會更講究文筆，努力寫得有意思、值得一讀。
+答案：(D) I can zap a message to Kenya whenever I want to, and it gets there almost in a second.
+題目編號：Dz95_44
+解析
+先看空格前面。 前一句說：有了電子郵件，地理不成障礙，時間也不重要。這句話很抽象。
+再看空格後面。 後面是 The ease of this kind of writing and sending probably makes for a different kind of communication.（這種書寫與傳送的便利，大概造就了另一種溝通方式。）The ease（這種便利）用了定冠詞——要說「這種便利」，前面得先有人示範過那有多便利。
+前一句只說了「地理不是障礙、時間不重要」，那是原則，不是畫面。D 補上畫面：隨時傳、一秒到。而且 D 裡的 Kenya 和第一段寫信給肯亞的弟弟前後對照，同一件事，兩種做法。
+如果你選了 B（缺點是，我可能比較不會說出深入一點的話。）：B 也是第一人稱、也在講電子郵件。但後面要指的是「便利」，B 講的是代價，The ease 指不回去。
+【下次先看這裡】後面用 the 指回一個抽象名詞（the ease、the problem、the difference），先回頭找那個名詞的具體內容出現過沒有。沒有，它就在空格裡。
+線索與數據
+線索種類定冠詞 the
+線索在哪後一句 The ease
+答對率45%
+鑑別度59
+本篇題型5選5・刪去法可收尾
+數據出處：本頁的答對率與鑑別度來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響。
+展開本題所在的整篇選文與中文翻譯
+本篇共 5 格、5選5；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+Many people say that e-mail is just a faster way to deliver letters. The fact is that letter writing and e-mail are completely different processes. Handwritten or typed, letters travel in envelopes through actual space and take time getting from one place to another. 41 If I am writing on paper to my brother in Kenya, I will be less likely to complain about the breakfast I had this morning. I will probably write about my relationships and some things that I’ve been thinking about. 42 People tend to regard letters as important. My brother might save my letter; he might read it back to me years from now.
+43 It is instant, traveling from point to point. If you don’t print it out, the message doesn’t physically exist. With e-mail, geography is no obstacle and time is not important. 44I can zap a message to Kenya whenever I want to, and it gets there almost in a second. The ease of this kind of writing and sending probably makes for a different kind of communication. I can complain about the breakfast I had this morning or rattle on about friends and movies. That is because I am not so focused on style and profundity. 45 My brother might glance at my mail, have a laugh, and then delete it.
+中譯
+很多人說電子郵件只是把信送得比較快的方式。事實上，寫信和電子郵件是完全不同的兩回事。不管是手寫還是打字，信件裝在信封裡穿過真實的空間，從一個地方到另一個地方需要時間。41 如果我寫信給人在肯亞的弟弟，我比較不會去抱怨今天早上那頓早餐。我大概會寫我的人際關係，以及一些我最近在想的事。42 人們往往把信看得很重要。我弟弟可能會留著我的信；他可能多年以後再讀給我聽。
+43 它是即時的，從一點傳到另一點。如果你不把它印出來，這則訊息在實體上並不存在。用電子郵件，地理不是障礙，時間也不重要。44 這種書寫和寄送的方便，大概造就了另一種不同的溝通。我可以抱怨今天早上那頓早餐，或是沒完沒了地扯朋友和電影。那是因為我沒那麼在意文筆和深度。45 我弟弟可能瞄一眼我的信，笑一笑，然後就刪掉。
+← 第43題回到互動練習第45題 →
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

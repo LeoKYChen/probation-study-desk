@@ -1,0 +1,42 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g83-15-1/index.html
+Author: staresto-create ZZSH
+Title: 83 年學測克漏字第15題詳解（分詞／動狀詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 83 年學測 ／ 第15題
+83 年學測 克漏字 第15題
+分詞／動狀詞線索：句內
+When the Spanish explorers went to Mexico, they saw the Aztec kings 15 umbrellas.
+(A)used
+(B)to use
+(C)used to
+(D)using
+答案：(D) using
+題目編號：G83_15_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】see + O + V-ing 表示「看到某人正在做某事」（強調動作進行中）。used to 是固定的「過去習慣」用法，不適用於這個感官動詞句型；used（過去式／過去分詞）與 to use（不定詞）也套不進這個句型結構。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+used to（過去經常）是你很熟的說法，四個選項裡它最眼熟，很容易第一眼就選它。但這一格考的是感官動詞的句型，used to 根本進不來。
+怎麼判斷
+先看句型：they saw the Aztec kings ___ umbrellas。動詞是 saw（看見），後面接了受詞 the Aztec kings，空格要填的是說明這些國王在做什麼的受詞補語。感官動詞（see、hear、watch、feel、notice）的句型有兩種：see + 受詞 + 原形動詞，看到整個動作從頭到尾（I saw him cross the street. 我看著他走過馬路。）；see + 受詞 + V-ing，看到動作正在進行中（I saw him crossing the street. 我看到他正在過馬路。）。本題的選項裡沒有原形 use，只有 using，所以填 using——探險家看到的是國王們正撐著傘的畫面。
+誘答選項
+used to：意思是「過去經常」，它後面要接原形動詞，而且自己要當句子的主要動詞（The Chinese used to carry umbrellas.），塞不進「感官動詞 + 受詞 + 補語」這個位置。used：當過去分詞是被動（被使用），但國王是使用者不是被使用的一方。to use：不定詞。感官動詞後面的補語不加 to，這正是感官動詞與 want、ask 那類動詞不同的地方。
+常考字詞與句型
+see sb V-ing（看到某人正在做……）、see sb V（看著某人做完……）、hear sb V-ing（聽到某人正在……）、used to V（過去經常）、be used to + V-ing（習慣於做……）、an Aztec king（阿茲特克國王）。其中 be used to + V-ing 這一組考過 4 個年度，99 年第 16 題 →、104 年第 23 題 →、105 年第 21 題 →都出現過；used to V 考過 3 個年度，83 年第 13 題 →、99 年第 16 題 →、111 年第 17 題 →都出現過。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The umbrella is not a new invention. The Chinese 11 umbrellas in the eleventh century B.C. 12 China they traveled to India, Persia, and Egypt. But in Greece and Rome, men 13 use them. They believed umbrellas were 14 for women. When the Spanish explorers went to Mexico, they saw the Aztec kings 15 umbrellas. English explorers found out that Indian princes also carried umbrellas on the east coast of North America. It 16 that people in different parts of the world invented umbrellas at different times.
+England was probably the first country in Europe 17 ordinary people used umbrellas 18 the rain. England has a rainy climate, and umbrellas are very useful there. The umbrella is now a very ordinary 19 . Everybody uses it today. It keeps the rain and the sun off people. Some umbrellas fold up, 20 it is easy to carry them.
+中譯：雨傘不是新發明。中國人在西元前十一世紀就開始使用雨傘，雨傘再從中國傳到印度、波斯和埃及。但在希臘和羅馬，男人卻不肯用傘，他們認為雨傘是女性用品。當西班牙探險家到墨西哥時，他們看到阿茲特克國王使用雨傘。英國探險家發現北美東岸的印第安酋長也會撐傘。看來世界各地的人在不同時期各自發明了雨傘。英國可能是歐洲第一個一般民眾用雨傘擋雨的國家。英國氣候多雨，雨傘在那裡非常實用。雨傘現在已是非常普通的物品，人人都在使用。它能遮雨也能遮陽。有些雨傘可以摺疊，這樣攜帶起來很方便。
+📋 內容大意
+The umbrella is far older than most people assume; Chinese records place it in the eleventh century B.C.（敘事文）
+Umbrellas spread to India, Persia and Egypt, yet Greek and Roman men rejected them as women's goods, while Aztec kings and Indian princes carried them freely.
+England, whose climate is wet, was probably the first European country in which ordinary people took up the umbrella, now an everyday item that keeps both rain and sun off.
+← 第14題回到83 年學測第16題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

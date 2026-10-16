@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g113-18-2/index.html
+Author: staresto-create ZZSH
+Title: 113 年學測克漏字第18題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 113 年學測 ／ 第18題
+113 年學測 克漏字 第18題
+慣用語／片語線索：句內答對率 43%
+答對率 43%：當年每 100 位考生，有 43 位答對。
+Whether they wielded rods or pea shooters, knockers-up became 18 throughout the United Kingdom.
+(A)familiar presences
+(B)distant memories
+(C)vague images
+(D)public eyesores
+答案：(A) familiar presences
+題目編號：G113_18_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「敲窗人成為英國各地『熟悉的身影』」，familiar presences 符合，呼應後文描述他們每天早上出現在大街小巷；distant memories（遙遠的記憶，這裡是講他們當時「存在」不是「回憶」）、vague images（模糊的形象）、public eyesores（有礙觀瞻的東西，語意相反）都不合。
+深入解析
+你可能會這樣想
+presence 你背的多半是「出席、在場」這個抽象意思（Your presence is required. 需要您親自出席），而且是不可數的。但 presence 也可以當可數名詞，指存在感明顯的人物、身影，familiar presences 就是「熟悉的身影」。看到它後面加了 -s，就該想到這裡用的是可數的那個意思。
+怎麼判斷
+看時態和後文。本句 knockers-up became ___ throughout the United Kingdom 用的是 became，講的是他們當年在各地成為什麼。下一句 Every morning, these people... were seen in big streets and small alleys（每天早上，這些人出現在大街小巷）——were seen（被看見）正是「熟悉的身影」的具體描述。
+誘答選項
+distant memories（遙遠的記憶）是後人回頭看的角度，但本段講的是他們當年還在工作的時期，時間點不對；vague images（模糊的形象）與「每天早上都看得到」矛盾；public eyesores（有礙觀瞻的東西）帶明顯貶意，但全文對敲窗人是正面描述，最後一句還說鬧鐘取代不了那份人情味。
+常考字詞與句型
+a familiar presence（熟悉的身影）、in the presence of（在……面前）、presence of mind（沉著、鎮定）、become a common sight（成為常見的景象）、a distant memory（遙遠的記憶）、an eyesore（有礙觀瞻的東西）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The modern worker rolls out of bed, groans, and turns off an alarm clock before reluctantly getting up for the day's work. But how did people get to work on time before alarm clocks were widely used? During the second Industrial Age, people toiled at unusual hours in mines or factories and often had to get up for work early in the morning. They 16 alarm clocks because adjustable alarms had been invented by the mid-19th century. But the new device was still relatively expensive and unreliable. British workers thus relied on a human alarm clock known as a “knocker-up.”
+17 sticks or pea shooters, the human alarms would tour the streets, tap on windows, or blast them with dried peas, trying to wake paying customers in time for work. Whether they wielded rods or pea shooters, knockers-up became 18 throughout the United Kingdom. Every morning, these people, often older in age, were seen in big streets and small alleys, waking up their customers professionally. They usually would not leave people's houses until they were sure their customers were awake.
+While the practice continued in some parts of the country until the 1970s, it 19 as alarm clocks became more widespread and affordable. Today, beeping alarm clocks and smartphones that play morning music are surely simpler and more convenient. However, they cannot 20 the personal attention coming from the distinctive tap of a pea shooter.
+中譯：現代上班族從床上爬起，呻吟一聲，關掉鬧鐘，才心不甘情不願地起身準備上班。但在鬧鐘還未普及的年代，人們是怎麼準時上班的呢？在第二次工業時代，人們常在礦坑或工廠裡從事作息時間特殊的工作，經常需要一大清早就起床上工。他們不能仰賴鬧鐘，因為雖然可調式鬧鐘早在 19 世紀中葉就已發明，但這項新裝置當時價格昂貴、也不太可靠。因此，英國的工人們仰賴一種被稱為「敲窗人」的真人鬧鐘。這些「人肉鬧鐘」拿著長棍或豆子噴槍，在街上巡迴，敲打窗戶，或用曬乾的豆子射擊窗戶，試圖及時叫醒付費客戶起床上班。無論是揮舞長棍還是使用豆子噴槍，「敲窗人」在整個英國都成為一種常見的身影。每天清晨，這些通常年紀較長的人，會出現在大街小巷之中，專業地叫醒他們的客戶，而且通常會等到確定客戶真的醒來後才會離開。這項行業在英國部分地區一直延續到 1970 年代，但隨著鬧鐘越來越普及、價格也越來越親民，這項傳統便逐漸走入歷史。如今，嗶嗶作響的鬧鐘和能播放晨間音樂的智慧型手機，無疑更簡單、更便利，但它們終究無法取代那種來自豆子噴槍獨特敲擊聲背後，人與人之間的親切關懷。
+📋 內容大意
+Before affordable alarm clocks, British workers depended on human 'knockers-up' who tapped on windows to wake paying customers for early shifts.
+The trade faded as alarm clocks became cheap and widespread, though the writer notes that modern devices lack the personal touch it offered.
+← 第17題回到113 年學測第19題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

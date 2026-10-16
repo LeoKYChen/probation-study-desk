@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dz93-43/index.html
+Author: staresto-create ZZSH
+Title: 指考 93年 篇章結構 第43題詳解（掌握段落內語句的連貫性與一致性）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 指考 93年 ／ 第43題
+指考 93年 篇章結構 第43題
+選文：中國傳統水墨畫的演變（Chinese Brush Painting）
+掌握段落內語句的連貫性與一致性線索：人稱代名詞主格、序列與時間詞答對率 34%
+(A)Another genre commonly found in Chinese brush painting was flower-and-bird painting.水墨畫另一個常見的類別是花鳥畫。
+(B)However, the subject matters later expanded beyond religious themes.然而題材後來擴展到宗教之外。
+(C)As a result, they have obtained more natural and richly varied colors.因此他們得到了更自然、更豐富多變的色彩。
+(D)Its growth has inevitably reflected the changes of time.它的發展必然反映了時代的變遷。
+(E)It then gradually developed into two separate styles.它接著逐漸發展出兩種不同的風格。
+答案：(E) It then gradually developed into two separate styles.
+題目編號：Dz93_43
+解析
+先看空格後面。 後面那一句用分號隔成兩半：前半講 the blue-and-green landscape（青綠山水），後半講 the ink-and-wash landscape（水墨山水）。數一數，就是兩種。
+這一格要放的，是一句先講到「兩種」的話。五個選項裡只有 E 出現 two。
+回頭驗 It 是誰。 前一句說到四世紀，this particular type of painting（也就是前面提到的山水畫）已經成為一種獨立的畫法。E 的 It 就是山水畫，then 對應的是四世紀那個時間點。前後都吻合。
+如果你選了 A（水墨畫另一個常見的類別是花鳥畫。）：A 也提到「另一種」，很容易誤選。但後面那一句從頭到尾都在講 landscape，一個字都沒提到花或鳥。
+【下次先看這裡】空格後面有兩個並排的東西，先回頭找哪個選項提到數字。
+線索與數據
+線索種類人稱代名詞主格、序列與時間詞
+線索在哪兩側 It；then
+答對率34%
+鑑別度42
+本篇題型5選5・刪去法可收尾
+數據出處：本頁的答對率與鑑別度來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響。
+展開本題所在的整篇選文與中文翻譯
+本篇共 5 格、5選5；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+Starting around 4,000 B.C., traditional Chinese brush painting has developed continuously over a period of more than six thousand years. 41
+During the 1st century A.D., the art of painting religious murals gradually gained in prominence, with the introduction of Buddhism to China and the consequent building of temples. 42 For example, paintings of historical characters and stories of everyday life became extremely popular. Besides historical figures, landscape painting was also common in Chinese brush painting. By the 4th century, this particular type of painting had already established itself as an independent form of expression. 43It then gradually developed into two separate styles. The blue-and-green landscape used bright blue, green and red pigments derived from minerals to create a richly decorative style; the ink-and-wash landscape relied on vivid brushwork and various intensity of ink to express the artist’s conception of nature as well as his own emotions. 44 A great many artists in the 9th century painted in this genre and their subject matters included a rich variety of flowers, fruits, birds, insects, and fish.
+Since the turn of the 20th century, painters have often mixed several colors on one brush or mixed their colors with black inks. 45 Such techniques have been widely adopted and further developed in the contemporary period.
+中譯
+中國傳統水墨畫大約起自西元前四千年，六千多年來持續發展。41
+西元一世紀，隨著佛教傳入中國、寺廟隨之興建，宗教壁畫的藝術逐漸受到重視。42 舉例來說，描繪歷史人物與日常生活故事的畫作變得非常盛行。除了歷史人物之外，山水畫在水墨畫中也很常見。到了四世紀，這一類畫作已經確立為一種獨立的表現形式。43 青綠山水使用取自礦物的鮮明藍、綠與紅色顏料，形成裝飾性濃厚的風格；水墨山水則靠著生動的筆法和濃淡不一的墨色，表現畫家對自然的體會以及自身的情感。44 九世紀有非常多畫家投入這個類別，題材涵蓋各式各樣的花卉、果實、飛鳥、昆蟲與魚。
+二十世紀初以來，畫家常在同一枝筆上調和數種顏色，或把顏色與黑墨混合。45 這些技法在當代已被廣泛採用，並進一步發展。
+← 第42題回到互動練習第44題 →
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g104-26-3/index.html
+Author: staresto-create ZZSH
+Title: 104 年學測克漏字第26題詳解（分詞／動狀詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 104 年學測 ／ 第26題
+104 年學測 克漏字 第26題
+分詞／動狀詞線索：句內答對率 53%
+答對率 53%：當年每 100 位考生，有 53 位答對。
+Tree products have been an important part of diets for thousands of years, from early humans 26 fruits and nuts to the first cultivation of important trees, such as mango and apple.
+(A)to gather
+(B)gather
+(C)gathered
+(D)gathering
+答案：(D) gathering
+題目編號：G104_26_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】gathering fruits and nuts 為動名詞片語，與後文 the first cultivation of important trees（名詞片語）構成 from X to Y 的對等平行結構，兩者都當介系詞 from 的受詞，表示「從早期人類採集水果與堅果的階段，到栽培重要樹種的階段」；to gather（不定詞）、gather（原形動詞）都不符合這裡對等平行的名詞性結構；gathered（過去分詞，語意方向不合，應為人類「主動」採集，而非人類「被採集」）也不合。
+深入解析
+你可能會這樣想
+看到 from … to … 你想到的是「從 A 到 B」的距離或時間，很少人會停下來檢查一件事：from 後面和 to 後面接的東西，必須是同一種性質的東西。這一格考的就是這個平行結構，而且四個選項都是同一個動詞的變化形，等於直接問你「這個位置該放哪一種形式」。
+怎麼判斷
+先把 from 和 to 各自帶的內容框起來對齊看：from early humans ___ fruits and nuts ／ to the first cultivation of important trees。to 後面是 the first cultivation（名詞片語），而且它指的是一件「事」—— 人類最早開始栽培樹木這個階段。from 是介系詞，後面也必須是名詞性質，而且要跟「一件事」對得起來。這一步是本題最關鍵的判斷，也是最容易做歪的地方：如果把 gathering 讀成修飾 early humans 的形容詞（「採集水果堅果的早期人類」），from 後面就變成「一群人」，to 後面卻是「一件事」—— 人對事，兩端不對等，平行結構立刻垮掉。正確的讀法是：gathering 是動名詞，early humans 是它意義上的主詞，整包 early humans gathering fruits and nuts 是一個名詞性的單位，意思是「早期人類採集水果與堅果這件事」，這樣才跟 the first cultivation of important trees（最早栽培重要樹種這件事）屬於同一個層次。整句要說的是：樹木產物在人類飲食中的重要性，從「早期人類採集果實堅果」一路延續到「人類最早開始栽培芒果、蘋果這類重要果樹」。from … to … 拉的是時間軸上的兩個階段，兩端當然都得是「階段」。順帶一提，動名詞前面可以帶一個意義上的主詞，例如：Do you mind my opening the window?（你介意我開窗嗎？）—— 被介意的不是「我」，是「我開窗」這件事，my 是動名詞 opening 意義上的主詞。本題的 early humans gathering … 是同一個道理，只是主詞用原形名詞而不是所有格；正式文體會寫成所有格，現代英文直接用名詞更常見，兩種都看得到。最後用主動被動再確認一次：採集的動作是人類做的，是主動，所以用 -ing 的 gathering；若換成過去分詞 gathered 就變成被動，語意講不通。
+誘答選項
+to gather（不定詞）不能當介系詞 from 的受詞 —— 介系詞後面接名詞或動名詞，不接不定詞，例 be good at cooking（擅長烹飪），不能寫成 be good at to cook。gather（原形動詞）會讓句子在沒有連接詞的情況下多出一個動詞，結構直接崩掉。gathered（過去分詞）方向錯，如上所述。
+常考字詞與句型
+from A to B（從 A 到 B，兩端性質須對等）、mind sb doing sth（介意某人做某事）、be good at + V-ing（擅長做……）、gather fruits and nuts（採集水果與堅果）、cultivation（栽培、耕作）、such as（例如）、be an important part of（是……的重要一環）、for thousands of years（數千年來）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Nutritional products that can be collected from trees include fruits, nuts, seeds, leaves, and bark. Tree products have been an important part of diets for thousands of years, from early humans 26 fruits and nuts to the first cultivation of important trees, such as mango and apple.
+The apple is one of the world's most cultivated fruit trees, 27 over 7,000 different kinds in existence. Despite their great 28 , however, most domesticated apples can be traced back to a common ancestor, the wild apple of Central Asia, Malus sieversii. Apples have been grown for thousands of years in Asia and Europe, and 29 to North America by European colonists in the 17th century.
+Today, apples are 30 eaten the world over and form the basis for multi-million dollar industries. In 2005, at least 55 million tons of apples were grown worldwide, which generated a value of about $10 billion.
+中譯：能從樹木採集到的營養產品包括水果、堅果、種子、葉片和樹皮。數千年來，樹木產物一直是人類飲食中重要的一部分，從早期人類採集水果和堅果，到後來人類開始栽培芒果、蘋果等重要果樹。蘋果是世界上栽培最廣泛的果樹之一，目前已知的品種超過 7000 種。然而，儘管品種如此繁多，大多數人工栽培的蘋果，其實都能追溯回同一個祖先——原產於中亞的野生蘋果「新疆野蘋果」。蘋果在亞洲和歐洲已栽種了數千年，並於 17 世紀由歐洲殖民者引進北美洲。如今，蘋果已是全世界普遍食用的水果，並形成了價值數百萬美元的產業。2005 年，全球至少種植了 5500 萬噸蘋果，創造了約一百億美元的產值。
+📋 內容大意
+Trees have fed people for thousands of years. They give fruit, nuts, seeds, leaves and bark. Early humans picked food; later farmers grew mango and apple.
+The apple is one of the most widely grown fruit trees. More than 7,000 kinds exist, yet nearly all come from one wild ancestor in Central Asia.
+Apples grew in Asia and Europe for centuries. European colonists took them to North America in the 17th century, and today they support big industries.
+← 第25題回到104 年學測第27題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

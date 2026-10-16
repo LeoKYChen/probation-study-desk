@@ -1,0 +1,1728 @@
+[
+ {
+  "id": "GCLA-g113p1_11",
+  "year": "改編練習（一）",
+  "passageId": "CLA-g113p1",
+  "blankNum": 11,
+  "category": "字彙選義",
+  "options": {
+   "A": "doubted",
+   "B": "pretended",
+   "C": "regretted",
+   "D": "determined"
+  },
+  "answer": "D",
+  "explanation": "語意「看到鉤子和線圈扣得這麼牢，他『斷定』只要仿照這種構造，就能做出牢固的扣件」，determined 在這裡是「斷定、得出結論」，後面接 that 子句；doubted（不相信）和他親眼看到的證據語意矛盾，pretended（假裝）、regretted（後悔）也都不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】determine 你最熟的意思大概是「決定」或「下定決心」，會覺得「決定」放不進這一句，反而去選中文很順的 doubted：「他懷疑，如果能仿照這種構造，就能做出扣件。」【怎麼判斷】句首的分詞片語 Seeing how tightly the hooks and loops held together（看到鉤子和線圈扣得這麼牢）交代他看到的證據，做 Seeing 這個動作的是 he；空格後的 that 子句是他推出的結論，所以空格要一個「根據觀察得出結論」的動詞，這是邏輯勾環。determine 除了「決定」，還有「查明、斷定」的意思，句型是 determine that + 子句，例如 After a few tests, the doctor determined that my knee pain came from running too much.（做了幾項檢查之後，醫生斷定我的膝蓋痛是跑太多造成的。）至於 fastener 這個字，破折號後面的 something that holds two things together 就是它的解釋。【誘答選項】doubted 是最有吸引力的一個。中文說「我懷疑他會來」，往往是猜他會來；可是英文 doubt that + 子句的核心義是「不相信……是真的」。放進本句，就變成他看到鉤子扣得很牢，卻不相信能做出扣件，和前面的證據語意矛盾。pretended 是「假裝」，他沒有假裝的理由；regretted 是對已經發生的事「後悔」，這時扣件還沒做出來，無從後悔。【常考字詞與句型】determine that + 子句（斷定……）、be determined to V（下定決心做……）、be determined by + N（由……決定）、doubt that + 子句（不相信……）、suspect that + 子句（猜想大概是……）、pretend to V（假裝做……）。學測 105 年第 27 題的正解 determined，用的就是 be determined by（由……決定）。"
+ },
+ {
+  "id": "GCLA-g113p1_12",
+  "year": "改編練習（一）",
+  "passageId": "CLA-g113p1",
+  "blankNum": 12,
+  "category": "時態／語態",
+  "options": {
+   "A": "had perfected",
+   "B": "has perfected",
+   "C": "was perfected",
+   "D": "is perfecting"
+  },
+  "answer": "A",
+  "explanation": "【句型】By + 過去時間點，主要子句用過去完成式 had + p.p.，表示「到 1955 年，他『已經改良出』一個扣得牢又容易扯開的版本」；has perfected 是現在完成式，不能配過去的時間點；was perfected 讓主詞變成接受改良的對象，後面卻還有受詞 a version；is perfecting 是現在進行式，和過去的敘事不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】看到 By 1955，你知道這是過去的事，卻可能覺得 has perfected 也行，因為現在完成式同樣表示「已經完成」；或者看到 was 就覺得 was perfected 也合。perfect 在這裡也不是形容詞「完美的」，而是動詞「把……改良到完善」。【怎麼判斷】四個選項都是 perfect 的不同形態，可見這一格考的是時態與語態。先還原成完整子句：By 1955, he had perfected a version that stayed closed yet was easy to pull apart when needed.（到了 1955 年，他已經改良出一個扣得牢、需要時又容易扯開的版本。）by 加上一個時間點，意思是「最晚到那個時間點」，動作在那之前就完成了。如果那個時間點在過去，完成的動作比過去還早，所以用過去完成式，句型是 By + 過去時間點, S + had + p.p.，例如 By the end of last semester, I had read five English novels.（到上學期末，我已經讀完五本英文小說。）至於語態，主詞 he 是做改良的人，後面又接了受詞 a version，所以要用主動。【誘答選項】has perfected 是現在完成式，講的是到「現在」為止，不能配 By 1955 這種過去時間點。was perfected 是 be 動詞加過去分詞，意思變成 he 是接受改良的一方，可是後面還有受詞 a version，結構不成立。is perfecting 是現在進行式，講的是此刻正在改良，時間不合。【常考字詞與句型】By + 過去時間點, S + had + p.p.（到……為止已經……）、By + 未來時間點, S + will have + p.p.（到……為止將已經……）、perfect one’s skills（把技巧練到純熟）、an improved version（改良版）、pull sth apart（把……扯開）、stay closed（保持閉合）。"
+ },
+ {
+  "id": "GCLA-g113p1_13",
+  "year": "改編練習（一）",
+  "passageId": "CLA-g113p1",
+  "blankNum": 13,
+  "category": "字彙選義",
+  "options": {
+   "A": "promote",
+   "B": "purchase",
+   "C": "manufacture",
+   "D": "repair"
+  },
+  "answer": "C",
+  "explanation": "語意「他先在歐洲、後來又在北美開設工廠，大規模『製造』這項產品」，manufacture（製造）和 factories、on a large scale 相配；promote（宣傳）是行銷的工作，用不著開工廠；purchase（購買）不合，產品是他自己的發明；repair（修理）也不合，產品剛取得專利，還談不上大量修理。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】這一格最容易選錯的是 promote。中文常說「大力推廣新產品」，看到空格後的 on a large scale（大規模地），很自然就想成「大規模推廣」。【怎麼判斷】de Mestral opened factories in Europe and, eventually, North America to ___ it on a large scale.（de Mestral 先在歐洲設廠，後來又擴展到北美，為的是大規模地 ___ 它。）to V 表示目的，而開工廠為的是生產，所以答案是 manufacture（製造）。前文 he could produce a strong fastener（他就能做出牢固的扣件）的 produce 和 manufacture 意思相近，這是同義勾環。【誘答選項】promote 的中文直覺讀得通，可是 promote 用在產品上，核心義是「宣傳、促銷」，句中的 factories 已經把目的限定在生產。中文會通，是因為「推廣」可以泛指讓產品普及的一切努力，英文 promote 卻專指宣傳這一面。purchase（購買）不合，產品是他自己的發明，用不著向別人買；repair（修理）也不合，產品剛取得專利，還沒有東西可修。【常考字詞與句型】on a large scale（大規模地）、mass-produce sth（大量生產……）、open a factory（設廠）、promote a new product（宣傳新產品）、make a purchase（購買）、receive a patent（取得專利）。promoted 也是學測 86 年第 36 題的正解，不過那一題是 be promoted（獲得升職）的意思。"
+ },
+ {
+  "id": "GCLA-g113p1_14",
+  "year": "改編練習（一）",
+  "passageId": "CLA-g113p1",
+  "blankNum": 14,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "As a result",
+   "B": "Even so",
+   "C": "For example",
+   "D": "In other words"
+  },
+  "answer": "A",
+  "explanation": "語意「大多數時尚評論家認為它又醜又廉價，『因此』它只用在運動器材上」，前一句是原因、本句是結果，As a result（因此）符合；Even so（即使如此）要接出乎意料的事，For example（例如）要舉前一句的例子，In other words（換句話說）要把前一句換個說法，都不合。",
+  "contextSpan": "跨句",
+  "contextNote": "前一句 Most fashion critics considered it ugly and cheap-looking 是原因，本句用途只限於運動器材是結果，讀了前一句才知道兩句是因果關係",
+  "note": "【你可能會這樣想】空格後面是 its use was limited to athletic equipment（它的用途只限於運動器材），你可能覺得這是退而求其次，就選 Even so，讀成「即使如此，它還是只能用在運動器材上」。可是 Even so 前後兩句的方向要相反。【怎麼判斷】四個選項都是轉折詞，要先問前後兩句是什麼關係。這一格非讀前一句不可：Most fashion critics considered it ugly and cheap-looking.（大多數時尚評論家認為它又醜又廉價。）評論家看不上眼，魔鬼氈就只能用在運動器材上，也就是說，前一句是原因，本句是結果，這是邏輯勾環，要用 As a result（因此、結果）。驗算的方法是把兩句合成一句：Because most fashion critics considered it ugly and cheap-looking, its use was limited to athletic equipment. 意思不變，就證明兩句是因果關係。【誘答選項】Even so（即使如此）用在前一句的情況照理會導向某個結果、後一句卻出乎意料的時候，例如 The test was really hard. Even so, most of us passed.（考試真的很難。即使如此，我們大多數人都及格了。）本句的用途受限，正是評論家看不上眼的自然結果，不是出乎意料。For example（例如）後面要接前一句的具體例子，可是「只用在運動器材上」不是「評論家嫌它醜」的例子。In other words（換句話說）是把前一句換個說法再講一次，本句卻提供了新資訊。【常考字詞與句型】be limited to + N（只限於……）、consider + O + adj.（認為……是……）、Even so,（即使如此）、result in + N（導致……）、In other words,（換句話說）、athletic equipment（運動器材）。As a result 也是學測 85 年第 35 題的正解。"
+ },
+ {
+  "id": "GCLA-g113p1_15",
+  "year": "改編練習（一）",
+  "passageId": "CLA-g113p1",
+  "blankNum": 15,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "showed up",
+   "B": "took off",
+   "C": "wore out",
+   "D": "held back"
+  },
+  "answer": "B",
+  "explanation": "語意「到了 1960 年代初期，這種扣件終於『大受歡迎』」，take off 在這裡是「開始成功、流行起來」；showed up（出現）不合，魔鬼氈早在 1955 年就取得專利、開設工廠，這時不是第一次出現；wore out（磨損）和 however、finally 帶出的好轉語意矛盾；held back（遲疑、退縮）的主詞要是人。",
+  "contextSpan": "跨句",
+  "contextNote": "上文 At first, though, Velcro was not a success 說它一開始不成功，而且 1955 年就已經取得專利、開設工廠，才知道這一句講的是終於大受歡迎，不是終於出現",
+  "note": "【你可能會這樣想】take off 你最熟的是「起飛」和「脫下」，放進這一句覺得怪，於是改選 showed up：中文說一樣東西「終於出頭」，聽起來就像「終於出現」。【怎麼判斷】In the early 1960s, however, the fastener finally ___ when NASA began using it in items sent into space with astronauts.（不過到了 1960 年代初期，美國太空總署 NASA 開始把它用在隨太空人上太空的物品上，這種扣件終於 ___。）只看這一句，「終於出現」似乎也通，要往前讀才定得了。上文 At first, though, Velcro was not a success.（不過，魔鬼氈一開始並不成功。）however 告訴你這一句和「不成功」方向相反，finally（終於）也表示等到了好轉，所以空格要一個「開始成功、變得流行」的動詞片語，這是邏輯勾環。take off 從「飛機起飛」延伸出「開始成功」的意思，例如 Her YouTube channel really took off after one of her videos went viral.（她有一支影片爆紅之後，她的 YouTube 頻道就紅起來了。）【誘答選項】showed up 是最有吸引力的一個，「終於出頭」的中文直覺很自然；可是 show up 的核心義是「出現、現身」。上文說魔鬼氈 1955 年就取得專利、開設工廠，1960 年代不是第一次出現。中文會通，是因為「出頭」除了「冒出來」，還有「出人頭地」的意思，英文 show up 卻沒有這一層。wore out 是「磨損、用壞」，和好轉語意矛盾。held back 當不及物動詞是「遲疑、退縮」，主詞要是人。【常考字詞與句型】take off（開始成功、流行）、show up（出現、現身）、wear out（磨損、用壞）、hold back（遲疑、退縮）、go viral（在網路上爆紅）、gain popularity（越來越受歡迎）。"
+ },
+ {
+  "id": "GCLA-g110p4_11",
+  "year": "改編練習（二）",
+  "passageId": "CLA-g110p4",
+  "blankNum": 11,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "even if",
+   "B": "so that",
+   "C": "as though",
+   "D": "now that"
+  },
+  "answer": "B",
+  "explanation": "【句型】so that + S + can V 表示「好讓……能夠……」，語意「有特殊需求的遊客免費、一般民眾的門票大打折扣，目的是『好讓』各種年齡、各種能力的人都能聚在一起玩」；even if（即使）、as though（彷彿）、now that（既然）都接不上這層目的關係。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】空格後面是 people of all ages and abilities can come together and play（各種人都能聚在一起玩），你可能覺得這是樂園已經做到的事，於是挑 now that（既然），讀成「既然大家都能一起玩，門票就打折」。【怎麼判斷】這一句前半的免費入園和門票打折是做法，後半「各種人都能一起玩」是做法要達到的目的，所以中間要一個表目的的連接詞，這是邏輯勾環。so that 帶出的子句常有 can、could 這類助動詞，表示「好讓……能夠」，本句的 can come together 正好吻合。【誘答選項】even if（即使）表讓步，可是票價打折和大家一起玩之間沒有讓步關係。as though（彷彿）描述看起來像什麼樣子，和樂園降低門檻的用意不合。至於 now that（既然），中文讀起來也通，因為「既然」和「好讓」都在講因果；不過 now that 後面接的是已經成立、拿來當理由的事實，而本句「大家聚在一起玩」要靠低票價才做得到，是結果不是理由，用 now that 等於把因果倒過來。【常考字詞與句型】so that + S + can／could V（好讓……能夠……）、in order that + S + may V（為了……，較正式）、now that + 子句（既然……）、even if + 子句（即使……）、admission is free（免費入場）、be heavily discounted（大打折扣）。so that 也是指考 102 年第 20 題的正解。"
+ },
+ {
+  "id": "GCLA-g110p4_12",
+  "year": "改編練習（二）",
+  "passageId": "CLA-g110p4",
+  "blankNum": 12,
+  "category": "字彙選義",
+  "options": {
+   "A": "restrictions",
+   "B": "decorations",
+   "C": "attractions",
+   "D": "accommodations"
+  },
+  "answer": "C",
+  "explanation": "語意「樂園有 25 英畝的『遊樂設施』，包括遊樂器材、遊戲場、釣魚湖和野餐區」，attractions 指吸引遊客前來的設施或景點，正好概括 including 後面列出的項目；restrictions（限制）、decorations（裝飾品）、accommodations（住宿）都不能概括這些項目。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】attraction 你最熟的意思大概是「吸引力」，所以看到 25 acres of ___，會覺得「25 英畝的吸引力」講不通，轉而挑 decorations（裝飾品）這類具體的名詞。其實 attraction 當可數名詞時，指「吸引人前往的地方或東西」，在主題樂園裡就是各項遊樂設施。【怎麼判斷】空格後面緊接 including rides, playgrounds, a catch-and-release（釣了再放生的）fishing lake, and picnic areas，including 帶出的是空格那個名詞底下的成員，所以空格要填一個總稱，能把遊樂器材、遊戲場、釣魚湖、野餐區全部包進去。這四樣都是遊客來玩的地方，attractions 正好是總稱。例句：The night market near our school has become one of the city’s top tourist attractions.（學校附近的夜市已經成為本市最熱門的觀光景點之一。）【誘答選項】restrictions（限制、規定）和句首 Completely wheelchair-accessible（全區輪椅都能通行）的方向相反，而且遊戲場、釣魚湖都不是規定；decorations（裝飾品）是擺著好看的東西，遊樂器材要坐、釣魚湖要釣，都不是拿來看的；accommodations 一般指「住宿」，在身障的情境也可以指「無障礙的調整措施」，可是 including 後面列出的是遊樂器材、釣魚湖這些地方，都不是住宿或措施。【常考字詞與句型】a tourist attraction（觀光景點）、a major attraction（最吸引人的地方）、the attraction of sth（某事物的吸引力）、be attracted to sth（受……吸引）、place restrictions on sth（對……加以限制）、book accommodations（訂住宿）。attractions 也是學測 101 年第 16 題的正解。"
+ },
+ {
+  "id": "GCLA-g110p4_13",
+  "year": "改編練習（二）",
+  "passageId": "CLA-g110p4",
+  "blankNum": 13,
+  "category": "字彙選義",
+  "options": {
+   "A": "adapted",
+   "B": "adopted",
+   "C": "advertised",
+   "D": "abandoned"
+  },
+  "answer": "A",
+  "explanation": "語意「所有遊樂器材都經過『改造』，讓坐輪椅的人也能搭乘」，adapted 指為了新的使用者或用途而調整，接得上後面全家人都能同樂的結果；adopted（採用、領養）、advertised（宣傳）、abandoned（放棄）都不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】adapt 和 adopt 只差一個字母，發音也接近，你很可能看到 adopted 覺得眼熟，就選了它。adapt 是「調整東西或自己，讓它適合新的用途或環境」，adopt 是「採用（做法、意見）」或「領養（小孩、寵物）」。【怎麼判斷】四個選項都是 a 開頭的過去分詞，字形很像，只能靠意思和後面的結果來判斷。這一句說遊樂器材都 ___ for wheelchair users（為了坐輪椅的人而……），後半 so every member of the family can join in the fun（所以全家人都能一起玩）交代結果。要讓坐輪椅的家人也能搭乘，設施本身就得經過調整，這正是 adapt sth for sb（為某人改造某物）。前文 ultra-accessible 後面的 that is 已經解釋，這是身障者都能輕鬆使用的樂園，也和「改造」的方向一致。【誘答選項】adopted（採用）用在做法、計畫或建議上，遊樂器材卻是實體的設施，光是「採用」不能讓輪椅上得去；advertised（宣傳）只是對外打廣告，設施沒有改變，坐輪椅的人還是搭不了，接不上後面全家同樂的結果；abandoned（放棄、拋棄）是不要這些設施了，和全家人都能一起玩語意矛盾。【常考字詞與句型】adapt sth for sb（為某人改造某物）、adapt to sth（適應……）、adopt a child／pet（領養小孩／寵物）、adopt a policy（採用政策）、an advertising campaign（廣告活動）、abandon a plan（放棄計畫）。adapted 也是指考 107 年第 14 題的正解，那一題是 be adapted into（改編成書、電影）的用法。"
+ },
+ {
+  "id": "GCLA-g110p4_14",
+  "year": "改編練習（二）",
+  "passageId": "CLA-g110p4",
+  "blankNum": 14,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "original design",
+   "B": "future plan",
+   "C": "new addition",
+   "D": "rival park"
+  },
+  "answer": "C",
+  "explanation": "語意「這個『新增的園區』有五座主題戲水區和一項河船遊樂設施」，This 指前一句 2017 年開幕的摩根靈感島，new addition 說出它是樂園後來加上的一區；original design（原本的設計；原創的設計）指的是設計，不是一個園區，future plan（未來的計畫）、rival park（對手樂園）也和前文不合。",
+  "contextSpan": "跨句",
+  "contextNote": "This 回指前一句 the park celebrated the opening of Morgan’s Inspiration Island，再對照前文樂園 2010 年開幕，才知道靈感島是後來新增的園區",
+  "note": "【你可能會這樣想】original design 很容易讀成「原創設計」，你可能因此選它。可是不管讀成「原創的設計」還是「原本的設計」，它講的都是一份設計，不是一個已經開幕的地方。【怎麼判斷】空格這一句是 This ___ is made up of five themed splash pads—play areas where water sprays up from the ground—and a riverboat ride（河船遊樂設施），兩個破折號中間就是 splash pads 的解釋。This 指什麼，要看前一句 In June 2017, the park celebrated the opening of Morgan’s Inspiration Island.（2017 年 6 月，樂園慶祝摩根靈感島開幕。）This 就指這座靈感島，這是指標勾環。再對照前文 Morgan’s Wonderland opened in the spring of 2010，樂園 2010 年開幕，靈感島七年後才啟用，new addition（新增的部分）正好說出這層關係。【誘答選項】original design 有兩個意思。照「原本的設計」讀，指 2010 年開園時就有的規劃，可是靈感島 2017 年才開幕，時間對不上；照「原創的設計」讀，design 指的是設計方案，This 回指的卻是一座已經開幕、有戲水區和河船設施的園區，一個地方不能說成「設計」。future plan（未來的計畫）還沒實現，前一句卻說它已經開幕。rival park（對手樂園）是和摩根奇幻樂園競爭的另一座樂園，可是慶祝開幕的正是樂園本身。【常考字詞與句型】a new addition to sth（……新增的部分或成員）、in addition to sth（除了……之外）、be made up of sth（由……組成）、celebrate the opening of sth（慶祝……開幕）、the original plan（原本的計畫）、a rival team（對手隊伍）。"
+ },
+ {
+  "id": "GCLA-g110p4_15",
+  "year": "改編練習（二）",
+  "passageId": "CLA-g110p4",
+  "blankNum": 15,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "object to",
+   "B": "stick to",
+   "C": "attend to",
+   "D": "switch to"
+  },
+  "answer": "D",
+  "explanation": "【句型】switch to sth 指「改用、換成……」，語意「坐輪椅的遊客在戲水區『換坐』特製的防水椅，就能盡情玩水，不必擔心弄壞自己的輪椅」；object to（反對）、stick to（繼續用原本的）、attend to（處理、照料）都不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】stick to 你可能只記得「堅持」，於是想成遊客堅持要坐防水椅，好像也說得通。不過 stick to 的核心義是「守著原本的、不改變」，正好和這一句要講的「換椅子」相反。【怎麼判斷】這一句講坐輪椅的遊客怎麼在戲水區玩：guests in wheelchairs can ___ special waterproof（防水的）chairs and enjoy the water without risking damage to their own wheelchairs（坐輪椅的遊客可以……特製的防水椅，盡情玩水，不必冒著弄壞自己輪椅的風險）。句尾的 their own wheelchairs（自己的輪椅）是關鍵：遊客本來坐的是自己的輪椅，玩水時用的是防水椅，中間發生的動作就是「換椅子」，switch to sth 正是「從原本的東西改成另一樣」。【誘答選項】object to（反對）和後面的盡情玩水語意矛盾；stick to（繼續用、不改變）指守著原本的東西，可是遊客原本坐的是自己的輪椅，防水椅是到了戲水區才換上的，談不上「繼續用」；attend to（處理、照料）的受詞是需要照顧的人或事情，遊客坐上防水椅是去玩水，不是去照料椅子。【常考字詞與句型】switch to sth（改用、換成……）、switch from A to B（從 A 換成 B）、object to + N／V-ing（反對……）、stick to sth（堅守、繼續用……）、attend to sth（處理、照料……）、risk + N／V-ing（冒……的風險）。attend to 也是學測 113 年第 11 題的選項。"
+ },
+ {
+  "id": "GCLA-g106p2_11",
+  "year": "改編練習（三）",
+  "passageId": "CLA-g106p2",
+  "blankNum": 11,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "Because of",
+   "B": "Instead of",
+   "C": "In spite of",
+   "D": "In terms of"
+  },
+  "answer": "C",
+  "explanation": "語意「卡波耶拉『儘管』外表像舞蹈，卻和其他武術有許多相同的基本技巧」，前後是讓步關係，in spite of（儘管）符合；because of（因為）把讓步講成因果，instead of（而不是）前後要是能互相替換的同類東西，in terms of（就……而言）限定的是外表，主要子句講的卻是技巧，都不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】你可能憑中文直覺選 instead of，讀成「卡波耶拉不走舞蹈路線，而是和其他武術有相同的技巧」，中文相當順，卻沒有先看前後是順著走還是衝突。【怎麼判斷】四個選項都是以 of 結尾、整組當介系詞用的片語，後面接名詞 its dancelike appearance（它像舞蹈的外表），可見這一格看的是邏輯關係。開頭 martial art 後面的破折號補上 a style of fighting（一種格鬥方式），破折號後面就是前面那個字的解釋，可見它本質是格鬥。外表像舞蹈，後半卻說它和其他武術有許多相同的基本技巧，這是讓步關係，屬於邏輯勾環，所以選 in spite of（儘管）。換成連接詞驗算：Although it looks like a dance, it shares many basic techniques with other martial arts.（雖然它看起來像舞蹈，卻和其他武術有許多相同的基本技巧。）【誘答選項】instead of 的中文「而不是」似乎說得通，不過它的核心義是「以乙代替甲」，前後要是能互相替換的同類東西；中文會通，是因為「不是……而是……」不要求前後同類。because of（因為）表示因果，但外表不會是技巧相同的原因。in terms of（就……而言）限定外表，主要子句卻講技巧。【常考字詞與句型】in spite of + N／V-ing（儘管……）、share sth with sb（和某人共有某物）、instead of + N／V-ing（而不是……）、in terms of + N（就……而言）。in spite of 也是學測 93 年第 23 題、指考 96 年第 16 題的選項（兩題都不是正解）。"
+ },
+ {
+  "id": "GCLA-g106p2_12",
+  "year": "改編練習（三）",
+  "passageId": "CLA-g106p2",
+  "blankNum": 12,
+  "category": "分詞／動狀詞",
+  "options": {
+   "A": "Taking",
+   "B": "Taken",
+   "C": "Having taken",
+   "D": "To take"
+  },
+  "answer": "B",
+  "explanation": "【句型】分詞構句的動作若是由後面主要子句講的人承受，要用過去分詞。這些非洲人是違反自己的意願、遭人帶離家鄉的一方，所以用 taken（遭帶離）；taking 表示他們去帶走別人，having taken 表示他們先前帶走了什麼，to take 表示目的「為了帶走」，都不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】句首空格後面直接接 from their homes，你可能憑「句首放 V-ing」的印象選 Taking；或者覺得離開家鄉發生在先，選 Having taken。關鍵其實在於誰做這個動作：這些非洲人並沒有去帶走什麼人，他們是遭人帶離家鄉的一方。【怎麼判斷】主要子句是 they first developed it as a means of self-defense（他們起初把它當作自衛的方法），they 指前一句的 African slaves（非洲奴隸）。空格開頭的部分是分詞構句，做「帶離家鄉」這個動作的是別人，承受這個動作的才是 they。還原成完整子句：They were taken from their homes against their will, and they first developed it as a means of self-defense.（他們違反自己的意願遭人帶離家鄉，起初把它當作自衛的方法。）省掉重複的 they 和 were，剩下的就是過去分詞 Taken。同一句的 against their will（違反自己的意願）也是線索：只有承受動作的人才談得上「違反意願」。要強調「先發生」，得寫成 Having been taken，選項裡沒有這個形式。【誘答選項】Taking 表示這些非洲人主動去帶走別人，而且 take 後面少了受詞。Having taken 是 Taking 的完成式，多了「先發生」的意思，誰做動作的問題卻和 Taking 一樣。To take 放在句首是不定詞表示目的，意思變成「為了從家鄉帶走……，他們練起卡波耶拉」，因果說不通。【常考字詞與句型】against one’s will（違反某人的意願）、as a means of + N（作為……的方法）、in self-defense（出於自衛）、Based on + N（根據……）、Born and raised in + 地方（在……出生長大）、Located in + 地方（位於……）。後三個都是句首用過去分詞的常見寫法。"
+ },
+ {
+  "id": "GCLA-g106p2_13",
+  "year": "改編練習（三）",
+  "passageId": "CLA-g106p2",
+  "blankNum": 13,
+  "category": "字彙選義",
+  "options": {
+   "A": "disguise",
+   "B": "replace",
+   "C": "announce",
+   "D": "reward"
+  },
+  "answer": "A",
+  "explanation": "語意「奴隸學會用歌唱、拍手和舞蹈『掩飾』禁止的打鬥，讓卡波耶拉看起來只是娛樂」，disguise（掩飾、偽裝）符合；replace（取代）表示真的不打了，和 as though（好像）矛盾；announce（宣布）是公開說出來，和掩飾相反；reward（獎賞）的對象是值得嘉許的事，打鬥卻是禁止的，都不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】你可能把這句讀成「奴隸學會用歌唱、拍手和舞蹈取代禁止的打鬥」，中文完全說得通；disguise（偽裝、掩飾）比較陌生，反而容易略過。【怎麼判斷】這一句講奴隸面對懲罰的對策，關鍵在句尾的 as though Capoeira were simply entertainment（好像卡波耶拉只是娛樂）。as though 說的是看起來的樣子，事實並不是這樣。也就是說，打鬥還在進行，只是加上了歌舞，讓旁人以為那只是娛樂。能表達「讓甲看起來像乙」的動詞是 disguise，常說 disguise A as B（把甲偽裝成乙）或 disguise A with B（用乙掩飾甲）。前一句說奴隸主開始懲罰練習的人，正好說明奴隸為什麼要掩飾。【誘答選項】replace 說成中文「用歌舞取代打鬥」相當自然，但 replace A with B 的核心義是甲不見了，換成乙。要是奴隸真的不打了，卡波耶拉就真的只是娛樂，不必說「好像」，句中的 forbidden fights（禁止的打鬥）也不存在了；中文會通，是因為讀者自動補上了「其實還在打」。announce 是「宣布、公開說出來」，奴隸要避開懲罰，公開宣布打鬥正好相反。reward 是「獎賞」，對象是值得嘉許的事，打鬥卻是禁止的。【常考字詞與句型】disguise A as B（把甲偽裝成乙）、in disguise（喬裝的）、a blessing in disguise（因禍得福）、replace A with B（用乙取代甲）、reward sb for sth（因某事獎賞某人）、as though + 子句（好像……）。disguise 也是學測 104 年第 24 題、109 年第 27 題的選項（兩題都不是正解）。"
+ },
+ {
+  "id": "GCLA-g106p2_14",
+  "year": "改編練習（三）",
+  "passageId": "CLA-g106p2",
+  "blankNum": 14,
+  "category": "字彙選義",
+  "options": {
+   "A": "banned",
+   "B": "adopted",
+   "C": "praised",
+   "D": "invented"
+  },
+  "answer": "A",
+  "explanation": "語意「一開始，巴西政府也『禁止』卡波耶拉」：前一句說反對卡波耶拉的不只是奴隸主，下一句又用 However 轉折，說 Mestre Bimba 費心說服政府它應該成為正式格鬥技，banned（禁止）符合；adopted（正式採用）、praised（稱讚）都和前後兩句矛盾，invented（發明）和前文說非洲奴隸創造卡波耶拉矛盾，都不合。",
+  "contextSpan": "跨句",
+  "contextNote": "前一句 The slave owners were not the only ones against Capoeira 交代政府也反對卡波耶拉，下一句 However 帶出 Mestre Bimba 說服政府它應該成為正式格鬥技，才知道政府起初是禁止",
+  "note": "【你可能會這樣想】At first, the Brazilian government also {14} it.（一開始，巴西政府也……卡波耶拉。）這一句很短，四個選項放進去都說得通。你可能想到政府通常會推廣傳統文化，選了 praised 或 adopted。【怎麼判斷】本句定不了答案，要讀前後兩句。前一句是 The slave owners were not the only ones against Capoeira.（反對卡波耶拉的不只是奴隸主。）這句把話題從奴隸主轉到政府，本句的 also 就是「政府也一樣反對」，這是邏輯勾環。下一句再驗算（a man known as 用 known as 帶出人名 Mestre Bimba）：Bimba 花了大量時間和心力 convincing the government（說服政府）卡波耶拉有文化價值、should become an official fighting style（應該成為正式的格鬥技）。要「說服」，表示政府原本不這麼認為；「應該成為」正式格鬥技，表示它當時還沒有得到承認。兩句合起來，可見政府起初是禁止它，所以選 banned（禁止）。【誘答選項】adopted 是「正式採用」，要是政府早已採用，下一句就不必說它「應該成為」正式格鬥技。praised 是「稱讚」，和前一句說政府也反對卡波耶拉矛盾。invented 是「發明」，和前文 Capoeira was created nearly 500 years ago in Brazil by African slaves.（卡波耶拉是將近五百年前巴西的非洲奴隸創造的。）矛盾。【常考字詞與句型】ban sb from V-ing（禁止某人做……）、a ban on + N（對……的禁令）、convince sb that + 子句（說服某人相信……）、devote time and effort to + V-ing（投入時間和心力做……）、adopt a policy（採取一項政策）、be against + N（反對……）。"
+ },
+ {
+  "id": "GCLA-g106p2_15",
+  "year": "改編練習（三）",
+  "passageId": "CLA-g106p2",
+  "blankNum": 15,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "die out",
+   "B": "break out",
+   "C": "catch on",
+   "D": "show off"
+  },
+  "answer": "C",
+  "explanation": "語意「Bimba 開設的學校幫助這門武術在世界各地『流行起來』」，catch on（流行起來）符合；die out（逐漸消失）和開設學校推廣的方向相反，break out（爆發）用在戰爭、火災、疾病這類突然發生的壞事，show off（炫耀）要由人來做，都不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】catch 你最熟的意思是「抓」或「趕上（車）」，所以 catch on 很難和「流行」連在一起。你可能因此改選 break out，因為中文說一樣東西「在全世界爆紅」，「爆」字讓人聯想到「爆發」。【怎麼判斷】這一句說 Bimba 是最早開設卡波耶拉學校的人之一，which 指前面的 Capoeira schools（卡波耶拉學校），which helped the art ___ around the world 是說這些學校幫助這門武術在世界各地怎麼樣。開學校讓更多人學得到，方向是擴散、普及，這裡要的是「流行起來」，也就是 catch on。catch on 是不及物的片語動詞，說的常是一種想法、產品或活動越來越受歡迎，例如 The new app caught on quickly among high school students.（這個新 app 很快在高中生之間流行起來。）下一句說現在電影和 MV 裡都看得到卡波耶拉，也證實它確實傳開了。catch on 另一個常見意思是「理解、聽懂」，常說 catch on to sth，兩個意思要靠上下文分辨。【誘答選項】break out 的中文「爆發」讓人聯想到「爆紅」，放進來好像是「在全世界爆紅」。不過 break out 的核心義是戰爭、火災、打鬥、疾病這類壞事突然發生，例如 A fight broke out between two fans after the game.（比賽結束後，兩名球迷打了起來。）英文的 break out 沒有走紅的意思。die out 是「逐漸消失、絕跡」，學校讓學的人變多，方向正好相反。show off 是「炫耀、愛現」，做這個動作的必須是人，the art（這門武術）不會炫耀。【常考字詞與句型】catch on（流行起來）、catch on to sth（理解……）、die out（逐漸消失、絕跡）、break out（戰爭、火災等爆發）、show off（炫耀）、be among the first to V（是最早……的人之一）。"
+ },
+ {
+  "id": "GCLA-g104p1_11",
+  "year": "改編練習（四）",
+  "passageId": "CLA-g104p1",
+  "blankNum": 11,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "To his surprise",
+   "B": "For this reason",
+   "C": "In the same way",
+   "D": "To his regret"
+  },
+  "answer": "A",
+  "explanation": "語意「『出乎他意料的是』，聽眾從頭到尾都聽得很專心」，to his surprise 帶出和預期相反的結果，前一句他正擔心觀眾會睡著；for this reason（因為這個緣故）表示因果，in the same way（同樣地）表示前後兩件事相同，to his regret（令他遺憾的是）後面要接不好的事，都不合。",
+  "contextSpan": "跨句",
+  "contextNote": "前一句 he feared the audience would fall asleep 說他擔心觀眾會睡著，這一句卻說聽眾從頭到尾都很專心，結果和預期相反，才知道要選帶出意外的說法",
+  "note": "【你可能會這樣想】前一句講 Camake 的擔心，這一句講聽眾的反應，你可能就用 for this reason（因為這個緣故）把它們接起來；可是聽眾專心聽，並不是因為 Camake 擔心，兩句之間沒有因果。【怎麼判斷】四個選項都是放在句首的轉承說法，可見這一格考的是前後兩句的邏輯關係。前一句說 Since most of the 75-minute show was a cappella, that is, sung without instruments, he feared the audience would fall asleep.（演出大部分是無伴奏的清唱，所以他擔心觀眾會睡著。）a cappella 再難，後面的 that is 已經把它解釋成 sung without instruments。空格這一句卻說 the listeners paid close attention from start to finish（聽眾從頭到尾都聽得很專心）。預料是睡著，實際是專心聆聽，結果和預期相反，這就是邏輯勾環裡的「意外」關係。to his surprise（令他意外的是）正是用來帶出出乎意料的事，his 指的就是前一句擔心的 Camake。【誘答選項】for this reason（因為這個緣故）表示因果，this reason 要是前一句說的原因；Camake 的擔心並不會讓聽眾變得專心，所以接不上。in the same way（同樣地）表示後一句和前一句是同一類的事，可是空格後面講的是和前一句相反的情況，不是同類。to his regret（令他遺憾的是）中文讀起來也像在帶出一個結果；不過 regret 是遺憾，後面接的一定是不好的事，聽眾專心聽卻是好消息，語氣正好相反。【常考字詞與句型】to one’s surprise（令某人意外的是）、to one’s regret（令某人遺憾的是）、pay close attention to + N（專心注意……）、from start to finish（從頭到尾）。"
+ },
+ {
+  "id": "GCLA-g104p1_12",
+  "year": "改編練習（四）",
+  "passageId": "CLA-g104p1",
+  "blankNum": 12,
+  "category": "字彙選義",
+  "options": {
+   "A": "memory",
+   "B": "fear",
+   "C": "part",
+   "D": "picture"
+  },
+  "answer": "D",
+  "explanation": "語意「透過這些歌，他們不必親自走一趟，腦中就形成了歌者村子的『畫面』」，form a picture of 指在腦中想像出某個樣子；memory（記憶）要先去過才會有，fear（恐懼）和「不必親自去」的好處語意矛盾，form a part of（成為……的一部分）不合，聽眾是遠在歐洲的外人，都不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】picture 你最熟的意思是「圖片、照片」，所以看到 they had formed a ___ of the singers’ village，會覺得「形成一張村子的照片」說不通，轉而選中文最順的 memory：聽了歌，就留下了村子的記憶。【怎麼判斷】這一句在講歐洲聽眾聽完演出的感受：through the songs（透過這些歌），他們 without having to visit it（不必親自去那個村子），腦中就形成了某樣東西。picture 除了圖片、照片，還可以指「腦中的畫面、對某件事的整體印象」，form a picture of + N 就是「在腦中想像出……的樣子」。聽眾從沒去過泰武，只靠歌聲就「看見」了村子，正是 picture 的這個意思。同樣的用法也出現在 get a clear picture of the problem（把問題弄清楚）。【誘答選項】memory（記憶）中文讀起來最順，好像也說得通；可是 memory 指記得親身經歷過的事，同一句的 without having to visit it 說得很清楚，聽眾沒去過那裡，自然不會有記憶。中文會覺得通，是因為「記憶」和「印象」在口語裡常混著用。part（部分）雖然有 form a part of（構成……的一部分）這個常見搭配，但聽眾是坐在歐洲台下的外國人，不會成為村子的一部分。fear（恐懼）的問題在 without having to：這個說法表示省下了親自走一趟的工夫，後面接的是好處，對村子感到害怕不是好處。【常考字詞與句型】form a picture of + N（在腦中想像出……的樣子）、get a clear picture of + N（清楚了解……）、without having to V（不必……就……）、in person（親自）、form a part of + N（構成……的一部分）、bring back memories of + N（勾起對……的回憶）。"
+ },
+ {
+  "id": "GCLA-g104p1_13",
+  "year": "改編練習（四）",
+  "passageId": "CLA-g104p1",
+  "blankNum": 13,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "come up with",
+   "B": "put up with",
+   "C": "reconnect with",
+   "D": "break away from"
+  },
+  "answer": "C",
+  "explanation": "語意「唱傳統古謠也幫助學生和家長『重新和』自己的文化『連結』」，reconnect with 合乎後文家長開始納悶自己為什麼不會唱、孩子教父母唱的情形；come up with（想出）用在原本沒有的主意或辦法，put up with（忍受）用在令人不快的事，break away from（脫離）和「幫助」的正面語意相反，都不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】come up with 是學測常見的片語，你可能把它記成「想到」，於是覺得「幫助學生和家長想到自己的文化」讀起來很通順。【怎麼判斷】這一句是後面幾句的主旨句：主詞是 singing traditional ballads, or folk songs，ballads 不認得沒關係，or 前後是同一件事的兩種說法，後面的 folk songs 就是它的解釋。空格要填的是學生和家長和 their own culture 的關係。後面幾句是這句話的例證，屬於主題勾環：It used to be that only tribal elders aged between 50 and 60 could sing these songs.（以前只有五、六十歲的部落長老會唱這些歌。）文化本來就是他們的，只是一度疏遠，這正是 reconnect with（重新和……連結）的意思。【誘答選項】come up with（想出）中文直覺是「想到自己的文化」，好像也通；但它的核心義是想出原本沒有的主意或答案，文化卻是祖先傳下來、早就存在的東西。中文會覺得通，是因為「想到」同時可以表示「想出」和「想起」。put up with（忍受）用在令人不快的事，文化在這裡卻是珍貴的東西。break away from（脫離）方向相反，脫離自己的文化不會是唱古謠帶來的幫助。【常考字詞與句型】reconnect with + N（重新和……連結）、come up with + N（想出……）、put up with + N（忍受……）、wonder why + S + V（納悶為什麼……）。put up with 也是學測 107 年第 18 題的選項，那一題的正解是 take part in。"
+ },
+ {
+  "id": "GCLA-g104p1_14",
+  "year": "改編練習（四）",
+  "passageId": "CLA-g104p1",
+  "blankNum": 14,
+  "category": "句型結構",
+  "options": {
+   "A": "who teach",
+   "B": "whom teach",
+   "C": "which teach",
+   "D": "that teaches"
+  },
+  "answer": "A",
+  "explanation": "【句型】It is + 強調的部分 + who／that + V。強調句把 the children 移到 It is 後面，後面的子句缺主詞，指人用 who，動詞仍要配合複數的 the children，語意「現在常常是孩子『教』父母唱這些歌」；that teaches 的動詞錯配單數，whom 是受格，which 用來指事物，都不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】It is …… that 的強調句你很熟，看到 that teaches 就覺得眼熟；再加上句首是 it，動詞好像該配單數，加 -es 也就順理成章。問題在於強調句後面子句的動詞，看的不是 it，而是要強調的那個名詞。【怎麼判斷】強調句 It is + X + who／that + 其餘部分，是把要強調的 X 搬到 It is 後面，其他部分放進後面的子句。驗算分兩步。第一步，還原成一般句：The children often teach the songs to their parents.（孩子常常教父母唱這些歌。）還原之後看得出來，the children 是 teach 的主詞，所以後面子句缺的是主詞，要用能當主詞、又能指人的 who（或 that）。第二步，看動詞：子句裡的 who 代替的就是 the children，動詞仍然要配合複數，用 teach，不能因為句首是 it 就改成 teaches。兩步都過關的只有 who teach。【誘答選項】that teaches 用 that 沒有問題，錯在動詞：that 代替的是複數的 the children，動詞要用 teach。中文的動詞沒有單複數變化，只要「是孩子教父母」讀得通，就容易忽略 -es。whom teach 的 whom 是受格，只能當動詞或介系詞的受詞，例如 It was my grandmother whom I called first.（我第一個打電話給的是奶奶。）這裡缺的卻是主詞。which teach 的 which 用來指事物，the children 是人。【常考字詞與句型】It is + N + who／that + V（強調句：正是……）、It is not until + 時間 + that + S + V（直到……才……）、pass sth down to sb（把某事物傳給下一代）、teach sb to V（教某人做……）。"
+ },
+ {
+  "id": "GCLA-g104p1_15",
+  "year": "改編練習（四）",
+  "passageId": "CLA-g104p1",
+  "blankNum": 15,
+  "category": "字彙選義",
+  "options": {
+   "A": "relocate",
+   "B": "commute",
+   "C": "contribute",
+   "D": "respond"
+  },
+  "answer": "A",
+  "explanation": "語意「莫拉克颱風之後，學校和村子必須『遷移』到新的地點」，relocate 指整個搬到別的地方；commute（通勤）是每天在兩地之間來回，contribute（貢獻、促成）後面要接出力的對象或結果，respond（回應）要有人先提出問題或要求，都不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】你可能只看到 had to ___ to a new site，想到「去新的地方」就選了 commute，因為通勤也是「到某個地方去」。【怎麼判斷】先看這一句在講什麼：After Typhoon Morakot struck in August 2009（2009 年 8 月莫拉克颱風來襲之後），主詞是 the school and the village（學校和村子），空格後是 to a new site（到新的地點）。這裡要的是「整個搬走」的意思，relocate（遷移、搬遷）正好合用：字首 re- 表示「再一次」，locate 是「設在某處」，合起來就是「換到另一個地方」。下一句 Camake 說 “We could not take the forest or our houses with us,”（我們帶不走森林，也帶不走房子），講的正是搬家才會碰到的事。【誘答選項】commute（通勤）中文直覺是「到新的地方去」，好像也通；可是它指的是每天在住處和學校或公司之間來回，學校和村子不會每天來回。中文之所以通，是因為只看了「到……去」。contribute to（促成、對……有貢獻）後面要接出力的對象或結果，到新地點不是去貢獻什麼。respond to（回應）要有人先提出問題或要求，a new site 只是一個地點。【常考字詞與句型】relocate to + 地點（遷移到……）、commute to + 地點（通勤到……）、contribute to + N（促成……）、respond to + N（回應……）、take sth with sb（隨身帶走某物）、bring sth along（把某物帶著走）。"
+ },
+ {
+  "id": "GCLA-g100p4_11",
+  "year": "改編練習（五）",
+  "passageId": "CLA-g100p4",
+  "blankNum": 11,
+  "category": "字彙選義",
+  "options": {
+   "A": "visibility",
+   "B": "popularity",
+   "C": "longevity",
+   "D": "flexibility"
+  },
+  "answer": "C",
+  "explanation": "語意「紅杉也以『長壽』聞名，通常活 500 到 1,000 年，有時超過 2,000 年」，逗號後面的年數用來說明空格裡的名詞，longevity（長壽）符合；visibility（顯眼、能見度）、popularity（受歡迎的程度）、flexibility（彈性、柔韌度）都不能用年數來說明。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】四個選項都是 -ity 結尾的名詞，longevity 你多半沒看過，最容易選的反而是 visibility（顯眼、能見度）：前一句才說紅杉是地球上最高的植物，最高的東西當然最顯眼。問題是這一句用了 also，逗號後面又接了年數。【怎麼判斷】逗號後面的 typically 500 to 1,000 years but sometimes more than 2,000 years 是同位語，補充說明空格裡的名詞，而它給的是「多少年」。能用年數說明的特質只有壽命長短，所以空格要的是「長壽」，longevity 正是這個意思，前半就是 long，可以記成「活得長久」。also 也是線索：它表示這是「最高」之外的另一個特點。後文 explains why the giant redwood can live so long（說明巨大的紅杉為什麼能活那麼久）用 live so long 回頭呼應這一格，屬於同義勾環。【誘答選項】visibility（顯眼、能見度）看起來和「最高」有關，可是能見度要用公尺來說明，不能用年數；popularity（受歡迎的程度）談的是人的喜好，全文沒有提到人喜不喜歡紅杉；flexibility（彈性、柔韌度）指能不能彎曲，同樣不能用年數來說明。【常考字詞與句型】be known for + N（以……聞名）、be known as + 身分（以……的身分為人所知）、life expectancy（平均壽命）、reach a height of + 數字（高度達到……）、up to + 數字（最多可達……）、high visibility（能見度高）。"
+ },
+ {
+  "id": "GCLA-g100p4_12",
+  "year": "改編練習（五）",
+  "passageId": "CLA-g100p4",
+  "blankNum": 12,
+  "category": "字彙選義",
+  "options": {
+   "A": "drawback",
+   "B": "texture",
+   "C": "origin",
+   "D": "benefit"
+  },
+  "answer": "D",
+  "explanation": "語意「這層樹皮最主要的『好處』，是在中等規模的森林火災中讓樹心保持完好」，that 子句講的是正面的作用，benefit（好處）符合；drawback（缺點）和正面的內容語意矛盾，texture（質地、觸感）、origin（起源、來歷）都不能用「保護樹心」這件事來說明。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】空格前面有 but，你很自然會想：轉折之後應該接壞事，於是選了 drawback。【怎麼判斷】its main ___ 的 its 指樹皮，be 動詞後面的 that 子句說明這個名詞的內容：it keeps the center of the tree intact, or undamaged, during moderate forest fires（遇到中等規模的森林火災時，讓樹心保持完好）。intact 不認得也沒關係，逗號隔開的 or undamaged 就是它的解釋，這種 or 帶出的是同一件事的另一種說法。樹心沒有受損是好事，所以空格要的是正面的名詞「好處」。but 在這裡不是由好轉壞：前面已經有一個好處 some protection from insects（某種程度上不受昆蟲侵害），後面再提出 main（最主要的）好處，some 和 main 的對比才是 but 的作用。【誘答選項】drawback（缺點）接在「但是」後面，中文讀起來很自然；可是 that 子句說的是保護樹心，是正面的作用，所以要用 benefit。中文覺得通，是因為只看了 but。texture（質地、觸感）要用 soft、rough 這類形容詞描述，不能用 that 子句說明它做了什麼；origin（起源）說的是從哪裡來，和樹皮的作用無關。【常考字詞與句型】the main benefit of N is that + 子句（……最主要的好處是……）、protection from + N（保護不受……侵害）、keep + N + intact（讓……保持完好）、be covered with + N（覆蓋著……）、a major drawback（一大缺點）。"
+ },
+ {
+  "id": "GCLA-g100p4_13",
+  "year": "改編練習（五）",
+  "passageId": "CLA-g100p4",
+  "blankNum": 13,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "in spite of",
+   "B": "prior to",
+   "C": "on behalf of",
+   "D": "thanks to"
+  },
+  "answer": "D",
+  "explanation": "語意「大部分樹木毀於森林火災，紅杉反而『因為』火災長得好」，下一句說火災清除競爭的植物、烘開毬果撒下種子，可見火災對紅杉有利，thanks to（多虧、由於）符合；in spite of（儘管）把火災當成阻礙，prior to（在……之前）把先後弄反，on behalf of（代表）也不合。",
+  "contextSpan": "跨句",
+  "contextNote": "下一句說 Moderate fires clear the ground of competing plants，熱氣又烘開毬果撒下種子，可見火災對紅杉有利，才排除把火災當阻礙的說法",
+  "note": "【你可能會這樣想】前文才說紅杉的樹皮厚、耐得住火，所以你很容易選 in spite of（儘管）：「儘管有森林火災，紅杉還是長得很好」。只看這一句，這個想法沒有錯，問題出在下一句。【怎麼判斷】這一句的 them 指 forest fires，prosper 是「興盛、長得好」。四個選項都是介系詞片語，所以這一格要判斷的是紅杉和火災之間的關係，答案要往下一句找：Moderate fires clear the ground of competing plants, and the rising heat dries and opens the ripe cones of the redwood, releasing thousands of seeds onto the soil below.（中等規模的火災會清除地面上和紅杉競爭的植物，上升的熱氣也會烘開成熟的毬果，把成千上萬顆種子撒在下方的土地上。）這一句列出火災的兩個好處，可見紅杉是「因為」火災才長得好，火災是原因，不是阻礙，所以要用表示「多虧、由於」的 thanks to，屬於邏輯勾環。actually（反而）也提示紅杉和別的樹正好相反。【誘答選項】in spite of（儘管）中文讀起來最順，可是它表示後面接的是不利的條件，紅杉是克服了它才長得好；下一句卻說火災替紅杉清出空間、撒出種子，火災是幫手。中文之所以讀得通，是因為只讀到前文的「耐火」，還沒讀到火災的好處。prior to（在……之前）表示時間先後，下一句卻說紅杉是在火災清出空地、烘開毬果之後才長得好；on behalf of（代表）是替某人出面做事，紅杉不可能代表火災。【常考字詞與句型】thanks to + N（多虧、由於……）、in spite of + N（儘管……）、be destroyed by + N（毀於……）、clear A of B（清除 A 上的 B）、on behalf of + 人（代表……）、release seeds（散播種子）。thanks to 也是指考 109 年補考第 18 題的正解。"
+ },
+ {
+  "id": "GCLA-g100p4_14",
+  "year": "改編練習（五）",
+  "passageId": "CLA-g100p4",
+  "blankNum": 14,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "look after",
+   "B": "take after",
+   "C": "depend on",
+   "D": "get over"
+  },
+  "answer": "C",
+  "explanation": "語意「這些嫩芽長得很慢，『依靠』母樹的根系取得養分」，depend on A for B 是「靠 A 取得 B」，depend on（依靠）符合；look after（照顧）方向相反，take after（長得像）和 for food 接不上，get over（克服、走出）的受詞是困難或傷痛，母樹的根系不是要克服的東西，也不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】空格後面就是 the root system of the “mother” tree（「母樹」的根系），看到 mother，你可能想到母子之間的照顧，選了 look after（照顧）。可是空格要的是嫩芽對根系做什麼，句尾還有 for food。【怎麼判斷】四個選項都是片語動詞。主詞 These sprouts 的 sprouts，前一句已經用同位語解釋過：young trees that form at the base of the trunk（在樹幹基部長出的小樹苗），也就是嫩芽。depend on A for B 是常見的搭配，意思是「靠 A 取得 B」，放進來就是「嫩芽靠母樹的根系取得養分」。後文 When the main tree dies, the sprouts are free to grow as full trees（母樹死了以後，嫩芽就能自由長成大樹）也和這一致。【誘答選項】look after（照顧）中文很容易聯想到母子，可是照顧人的應該是母樹，這裡做動作的卻是嫩芽，方向相反，所以要用表示「依靠」的 depend on。中文覺得通，是因為看到 mother 就想到「照顧」。take after（長得像長輩）的受詞要是長輩本人，不會是「根系」；get over（克服、走出）的受詞是困難或傷痛，母樹的根系不是要克服的東西。【常考字詞與句型】depend on A for B（靠 A 取得 B）、take after + 長輩（長得像、個性像……）、look after + 人（照顧……）、at the base of + N（在……的底部）、be free to + V（可以自由地……）、the root system（根系）。"
+ },
+ {
+  "id": "GCLA-g100p4_15",
+  "year": "改編練習（五）",
+  "passageId": "CLA-g100p4",
+  "blankNum": 15,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "above all",
+   "B": "in turn",
+   "C": "in short",
+   "D": "after all"
+  },
+  "answer": "B",
+  "explanation": "語意「這些樹『接著』又可能長出更多嫩芽，循環不斷」，more sprouts 和 the cycle continues 表示重複前一代的過程，in turn（接著、輪到……也）符合；above all（最重要的是）用於排出輕重，in short（簡單來說）用於總結，after all（畢竟）用於補充理由，都不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】這是全文最後一句，後面還有 and the cycle continues（就這樣循環下去），看起來像在收尾，所以你可能選 in short（簡單來說）。【怎麼判斷】四個選項都是轉折詞，而這一句本身就有兩個線索：more sprouts表示前面已經出現過嫩芽，句尾的 and the cycle continues 表示這是把前面的過程再做一次。對照前文 When the main tree dies, the sprouts are free to grow as full trees（母樹死了以後，嫩芽就能自由長成大樹），These trees 指的正是這些新長成的樹，大樹又長出嫩芽，這種「前一代做完，輪到下一代照樣做」的關係，就是 in turn（接著、輪到……也），屬於邏輯勾環。【誘答選項】in short（簡單來說）放在最後一句，中文讀起來很像結論；可是 in short 要把前文濃縮成一句，本句卻是循環的下一步，所以要用 in turn。中文之所以覺得通，是因為這句話放在文章最後，看起來像收尾。above all（最重要的是）用來挑出最重要的一件事，本句沒有和別的事比較；after all（畢竟）用來補充理由，本句卻是接下來發生的事。【常考字詞與句型】in turn（接著、輪到……也）、give rise to + N（產生、引發……）、the cycle continues（循環不斷）、in short（簡單來說）、above all（最重要的是）、after all（畢竟）。give rise to 也是學測 114 年第 14 題的正解，in turn 也是指考 95 年第 14 題的選項。"
+ },
+ {
+  "id": "GCLA-g99p1_11",
+  "year": "改編練習（六）",
+  "passageId": "CLA-g99p1",
+  "blankNum": 11,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "in the face of",
+   "B": "at the sight of",
+   "C": "at the expense of",
+   "D": "at the mercy of"
+  },
+  "answer": "B",
+  "explanation": "語意「大部分的人『一看到』這些笨重、行動緩慢的蟲子就覺得噁心」，at the sight of（一看到）符合，呼應前一句 god of bad looks 講的是長相；in the face of（面對困難、危險時）、at the expense of（以……為代價）、at the mercy of（任由……擺布）都不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】四個選項都是「介系詞 + 名詞 + of」的片語，最容易選錯的是 in the face of。【怎麼判斷】這一句講人們的反應 feel disgusted（覺得噁心）。空格後的 these bulky, slow-moving bugs描述的是外形，外形要「看到」才會引起反應。at the sight of + N（一看到……）表示「一看見就產生某種反應」，例如 burst into tears at the sight of a needle（一看到針就哭）。前一句兩個破折號之間的 the language of the country’s native people（這個國家原住民的語言）是在解釋 Maori，讀懂這一句就知道 weta 意思是「醜陋之神」，讓人噁心的正是長相。【誘答選項】in the face of：中文說「面對這些蟲子覺得噁心」很順。可是 in the face of 是「面對困難、危險時（仍然……）」，後面接 danger、opposition 這類字；本句沒有克服困難的意思；中文會通，是因為「面對」的用法寬得多。at the expense of（以……為代價）表示犧牲某樣東西換取另一樣東西，本句沒有犧牲什麼。at the mercy of（任由……擺布）表示受對方控制，可是這些蟲子行動緩慢，人們並沒有受牠們擺布。【常考字詞與句型】at the sight of + N（一看到……）、in the face of + N（面對……）、at the expense of + N（以……為代價）、at the mercy of + N（任由……擺布）、feel disgusted at + N（對……感到噁心）。"
+ },
+ {
+  "id": "GCLA-g99p1_12",
+  "year": "改編練習（六）",
+  "passageId": "CLA-g99p1",
+  "blankNum": 12,
+  "category": "字彙選義",
+  "options": {
+   "A": "folding",
+   "B": "lifting",
+   "C": "crossing",
+   "D": "rubbing"
+  },
+  "answer": "D",
+  "explanation": "語意「威塔和近親蚱蜢、蟋蟀一樣，能把腳的某些部位互相『摩擦』，或在下半身上摩擦，發出「歌聲」」，rubbing（摩擦）符合；folding（摺起）、lifting（抬起）、crossing（交叉）都不會讓腳和身體來回接觸，也就發不出聲音。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】讀到 “sing”，你可能先想到用嘴巴唱歌，於是挑一個常和「腳」一起出現的動作，最容易選的是 crossing，因為中文說「雙腿交叉」很自然。其實 sing 放在引號裡，表示這是借用的說法，指昆蟲用身體發出聲音。【怎麼判斷】by + V-ing 表示方法，空格要填的是威塔發出聲音的方法。句首的 Just like their cousins the grasshoppers and crickets（就像牠們的近親蚱蜢和蟋蟀一樣）把威塔的「歌聲」和蚱蜢、蟋蟀相比；空格後的 together or against their lower bodies（互相……，或在下半身上……）描述兩個部位來回接觸。只有 rub（摩擦）能讓兩個部位接觸又發出聲音；rub A and B together（把 A 和 B 互相摩擦）、rub A against B（把 A 在 B 上摩擦）都是常見的搭配，正好對上句中的 together 和 against。全句圍繞「發出聲音」這個主題，屬於主題勾環。【誘答選項】crossing 是「交叉」：中文「雙腿交叉」讀起來很順，但交叉是擺好之後就不再動的姿勢，腳沒有反覆接觸，發不出聲音。folding 是「摺起、收合」，把腳收合只是改變姿勢，發不出聲音。lifting 是「抬起」，抬腳是讓腳離開身體，和 against their lower bodies（貼著下半身）的方向相反。【常考字詞與句型】rub A against B（把 A 在 B 上摩擦）、rub one’s eyes（揉眼睛）、fold one’s arms（雙手抱胸）、cross one’s legs（翹腳）、by + V-ing（藉由……的方式）。"
+ },
+ {
+  "id": "GCLA-g99p1_13",
+  "year": "改編練習（六）",
+  "passageId": "CLA-g99p1",
+  "blankNum": 13,
+  "category": "連接詞／轉折詞",
+  "options": {
+   "A": "Likewise",
+   "B": "Still",
+   "C": "Otherwise",
+   "D": "Besides"
+  },
+  "answer": "B",
+  "explanation": "語意「大概沒有多少人會同情這些瀕臨絕種的生物；『儘管如此』，牠們確實需要保護」，Still 放在句首當轉折詞，意思是「儘管如此」，帶出和前一句方向相反的結論；Likewise（同樣地）、Otherwise（否則）、Besides（此外）都不合。",
+  "contextSpan": "跨句",
+  "contextNote": "前一句 Not many people are likely to feel sympathy for these endangered creatures 說人們不同情威塔，本句卻說牠們確實需要保護，兩句方向相反，才知道要填表示讓步的轉折詞",
+  "note": "【你可能會這樣想】still 你最熟的意思是「仍然」，所以看到它放在句首、後面加逗號，會覺得「仍然，牠們需要保護」讀不通，轉而挑 Besides（此外）。其實 still 放在句首、後面接逗號時是轉折詞，意思是「儘管如此、話雖如此」。【怎麼判斷】四個選項都是轉折詞，要判斷的是兩句之間的關係，非讀前一句不可。前一句是 Not many people are likely to feel sympathy for these endangered creatures.（大概沒有多少人會同情這些瀕臨絕種的生物。）前一句說人們對威塔沒有好感，本句卻說威塔需要人來保護，方向相反，屬於邏輯勾環裡的讓步關係：先承認一件事，再說出和它相反的結論。句首的 Still 正是帶出這種結論的轉折詞。do need 的 do 是加強語氣的助動詞，強調「確實」，也和讓步的語氣呼應。學生作文也用得到：The final exam was only two days away. Still, Kevin spent the whole evening playing online games.（期末考只剩兩天，儘管如此，Kevin 還是整個晚上都在玩線上遊戲。）【誘答選項】Likewise（同樣地）表示後一句和前一句情況相同，但「沒有人同情」和「需要保護」並不是同一種情況。Otherwise（否則）表示「如果不這樣，就會……」，前一句是事實陳述，不是條件，接不出「否則就需要保護」。Besides（此外）用來追加方向相同的資訊，前一句說人們不同情，本句說威塔需要保護，兩句方向相反。【常考字詞與句型】Still, + 子句（句首：儘管如此）、feel sympathy for + N（同情……）、be likely to V（很可能……）、do／does／did + 原形動詞（加強語氣：確實……）、need + V-ing（需要有人來……）、endangered species（瀕臨絕種的物種）。otherwise 也是學測 105 年第 16 題的選項，意思同樣是「否則」。"
+ },
+ {
+  "id": "GCLA-g99p1_14",
+  "year": "改編練習（六）",
+  "passageId": "CLA-g99p1",
+  "blankNum": 14,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "safe hiding places",
+   "B": "close relatives",
+   "C": "steady food supplies",
+   "D": "natural enemies"
+  },
+  "answer": "D",
+  "explanation": "語意「威塔在一個沒有『天敵』的環境中演化、存活，直到老鼠隨著歐洲移民到來」，natural enemies（天敵）符合，老鼠一到威塔才有了天敵；safe hiding places（安全的藏身處）、close relatives（近親）、steady food supplies（穩定的食物來源）都和文章內容不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】文章開頭說威塔 found nowhere else on earth（其他地方都找不到），你可能認定威塔沒有親戚，覺得 close relatives（近親）很合理。這個推論漏看了 Just like their cousins the grasshoppers and crickets（就像牠們的近親蚱蜢和蟋蟀一樣）。【怎麼判斷】空格要填的是威塔原本的環境裡「沒有」的東西。本句自己就選得出來：until rats arrived 表示老鼠一來，這個環境就不再「沒有」這樣東西，可見老鼠就是這樣東西；四個選項裡，老鼠只當得上 natural enemies（天敵）。下一句的 Rats, which love to hunt and eat wetas（很愛獵食威塔的老鼠）可以驗算，hunt and eat wetas 正是「天敵」的換句話說，屬於同義勾環。【誘答選項】close relatives（近親）：老鼠不會是威塔的近親；前文也說蚱蜢和蟋蟀是威塔的 cousins（近親）。safe hiding places（安全的藏身處）：老鼠不會是威塔的藏身處；前文 nocturnal 後面的破折號說明威塔天黑以後才從 caves and holes（洞穴和地洞）出來，可見一直有藏身處。steady food supplies（穩定的食物來源）：老鼠是來吃威塔的。【常考字詞與句型】have been around（存在已久）、since the age of the dinosaurs（從恐龍時代起）、evolve and survive（演化並存活下來）、hunt and eat（獵食）、be closely related to + N（和……親緣相近）。"
+ },
+ {
+  "id": "GCLA-g99p1_15",
+  "year": "改編練習（六）",
+  "passageId": "CLA-g99p1",
+  "blankNum": 15,
+  "category": "字彙選義",
+  "options": {
+   "A": "pose",
+   "B": "face",
+   "C": "remove",
+   "D": "survive"
+  },
+  "answer": "A",
+  "explanation": "語意「老鼠對本地威塔族群『構成』嚴重威脅」，pose a threat to + N 是固定搭配，pose（構成）符合；face（面臨）表示主詞自己受到威脅，remove（消除）、survive（熬過）也都和老鼠獵食威塔的內容不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】pose 你最熟的意思大概是「擺姿勢」，不會想到它能和威脅放在一起。中文說「面臨嚴重威脅」很順口，face a serious threat 也是道地的英文，於是你很可能挑了 face。【怎麼判斷】主詞是 Rats（老鼠），逗號之間的 which love to hunt and eat wetas（很愛獵食威塔）說清楚老鼠是加害的一方；and 後面的 they 也指老鼠，空格後的 a serious threat to the native weta population 又標出受威脅的是威塔。所以空格要填的動詞必須表示「主詞帶來威脅」。pose 另有「造成、構成（問題或危險）」的意思，最常見的搭配是 pose a threat to + N（對……構成威脅）：Spending too much time on short videos can pose a threat to students’ sleep.（花太多時間看短影音，可能對學生的睡眠構成威脅。）【誘答選項】face：中文「面臨威脅」很自然，face a threat 本身也是常見的英文。可是 face 的主詞是受到威脅的一方，本句的老鼠卻是製造威脅的一方。中文之所以讀得通，是因為「面臨」和「構成」都能接「威脅」。remove（消除）和整句的意思相反，老鼠已經成了 a real problem（大問題）。survive（熬過）的主詞要是經歷危險之後還活著的一方，同樣把老鼠放錯了位置。【常考字詞與句型】pose a threat to + N（對……構成威脅）、pose a risk to + N（對……造成風險）、face a threat from + N（面臨來自……的威脅）、be a real problem for + N（對……是個大問題）、be used to + N／V-ing（習慣……）、a serious threat（嚴重的威脅）。pose 也出現在學測 113 年第 11 題的正解 pose as（假扮成），意思和本題的 pose（構成）不同。"
+ },
+ {
+  "id": "GCLA-z110p4_11",
+  "year": "改編練習（七）",
+  "passageId": "CLA-z110p4",
+  "blankNum": 11,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "took the place of",
+   "B": "caught up with",
+   "C": "made use of",
+   "D": "gave way to"
+  },
+  "answer": "D",
+  "explanation": "語意「早期球員用的是木球，後來木球『讓位給』羽毛填充球」，gave way to（讓位給、由……取代）符合，因為 until 表示木球時代到此結束；took the place of（取代）方向相反，變成木球取代羽毛填充球；caught up with（趕上）、made use of（利用）也都不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】看到 took the place of（取代），你很可能直接選它。問題出在方向：A take the place of B 是「A 取代 B」，A 是新來的；A give way to B 是「A 讓位給 B」，A 是退場的。【怎麼判斷】這一句說 Early golfers played with a wooden ball until it ___ the Featherie, a leather bag stuffed with feathers.（早期球員用的是木球，直到它……羽毛填充球，也就是塞滿羽毛的皮囊。）逗號後面的同位語就是 Featherie 的說明。Early 說明木球最早出現，until 表示打木球到某個時間點就結束了，退場的 it（木球）要配 give way to：In many schools, chalkboards have given way to smart screens.（在許多學校，黑板已經讓位給智慧螢幕。）【誘答選項】took the place of 的中文是「取代」，可是填進來就變成「木球取代了羽毛填充球」，和 Early 說木球最早出現的順序相反。中文會通，是因為「取代」沒有標出誰新誰舊。caught up with 是「趕上」，和 until 不合。made use of 是「利用」，木球不會去利用別的球。【常考字詞與句型】give way to + N（讓位給……）、take the place of + N（取代……）、catch up with + sb／sth（趕上……）、make use of + N（利用……）。give way to 也是學測 112 年第 13 題的選項，意思同樣是「讓位給」。"
+ },
+ {
+  "id": "GCLA-z110p4_12",
+  "year": "改編練習（七）",
+  "passageId": "CLA-z110p4",
+  "blankNum": 12,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "serious setback",
+   "B": "major breakthrough",
+   "C": "old tradition",
+   "D": "strict rule"
+  },
+  "answer": "B",
+  "explanation": "語意「下一個『重大突破』出現在 1900 年代初，也就是第一顆有橡膠核心、能多飛 20 碼的 Haskell 球」，major breakthrough 呼應第一句的 many advances；serious setback（重大挫敗）和多飛 20 碼矛盾，old tradition（老傳統）和 the first 矛盾，strict rule（嚴格的規定）不能指一顆球。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】只讀到 The next ___ came in the early 1900s（下一個……出現在 1900 年代初），四個選項都塞得進去。你可能想到高爾夫球歷史悠久，就選了 old tradition（老傳統）。【怎麼判斷】next 表示前面已經有一連串同類的東西。文章第一句說 the game has seen many advances（這項運動有了許多進步），接著木球退場、古塔膠球更耐用也更便宜，都是進步；空格是這串進步的下一個，major breakthrough（重大突破）和 advances 是同義勾環。逗號後面也能驗算：the first ball with a rubber core（第一顆有橡膠核心的球）和 up to 20 yards farther（最多多飛 20 碼）都合乎「突破」。例句：After weeks of practice, our robotics team made a breakthrough.（練了好幾週，機器人社終於有了突破。）【誘答選項】old tradition 是「老傳統」，可是句中說 Haskell 是 the first ball with a rubber core，是新東西。serious setback 是「重大挫敗」，和多飛 20 碼矛盾。strict rule 是「嚴格的規定」，而 the Haskell 是一顆球。【常考字詞與句型】make a breakthrough（有所突破）、suffer a setback（遭受挫敗）、break with tradition（打破傳統）、follow a strict rule（遵守嚴格的規定）、up to + 數字（最多達……）。"
+ },
+ {
+  "id": "GCLA-z110p4_13",
+  "year": "改編練習（七）",
+  "passageId": "CLA-z110p4",
+  "blankNum": 13,
+  "category": "字彙選義",
+  "options": {
+   "A": "appearance",
+   "B": "durability",
+   "C": "production",
+   "D": "performance"
+  },
+  "answer": "D",
+  "explanation": "語意「這些小凹洞對高爾夫球的『性能』很重要，因為能改善球的空氣動力」，performance 在這裡指東西用起來的表現、性能；appearance（外觀）、durability（耐用度）、production（生產）都和 because 後面的空氣動力接不上。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】performance 你最熟的意思大概是「表演」或「成績表現」，所以讀到 a golf ball’s performance 會覺得怪，轉而去選 appearance（外觀），因為凹洞是看得到的。其實 performance 用在機器、車子、球這類東西上，指的是「性能、用起來的表現」，例如 the performance of a car（車子的性能）。【怎麼判斷】主詞 These tiny marks 指前文的 dimples（or 後面的 tiny cup-shaped marks 就是它的解釋）；空格問凹洞對球的哪一方面重要。關鍵在 because 後面的理由：they improve its aerodynamics, or the way it moves through the air（它們能改善球的空氣動力，也就是球在空中移動的方式）。這裡同樣用 or 帶出解釋，說明 aerodynamics 指的是球怎麼在空中飛。這是一個邏輯勾環：because 前後要成立因果關係，而「改善空氣動力」只能用來解釋「性能比較好」。例句：Before buying a new phone, I always read reviews about its battery performance.（買新手機之前，我一定會先看電池續航的評價。）【誘答選項】appearance 是「外觀」。凹洞看得到，中文說「凹洞對外觀很重要」也讀得通，但改善空氣動力不會讓球變好看，因果接不上。durability 是「耐用度」，前文才講過古塔膠球 far more durable（耐用得多）；不過耐不耐用和空氣動力無關。production 是「生產」，講的是球怎麼做出來，和球飛得好不好沒有因果關係。【常考字詞與句型】play an important role in + N（在……扮演重要角色）、the performance of + 機器／產品（……的性能）、academic performance（學業表現）、battery performance（電池續航表現）。"
+ },
+ {
+  "id": "GCLA-z110p4_14",
+  "year": "改編練習（七）",
+  "passageId": "CLA-z110p4",
+  "blankNum": 14,
+  "category": "字彙選義",
+  "options": {
+   "A": "materials",
+   "B": "engines",
+   "C": "principles",
+   "D": "regulations"
+  },
+  "answer": "C",
+  "explanation": "語意「飛機能留在空中，靠的也是同樣的『原理』」，principles（原理）指前一句凹洞把氣流往下推、讓球往上升的空氣動力原理；materials（材料）、engines（引擎）、regulations（規定）前文都沒有提過，the same 找不到可以比的對象。",
+  "contextSpan": "跨句",
+  "contextNote": "the same 要回頭找前文講過的東西，前一句 They also force the airflow downward, which pushes the ball upward 講的是氣流推球上升的道理，所以填原理",
+  "note": "【你可能會這樣想】如果只讀本句 Airplanes depend on the same ___ to stay in the air.（飛機要留在空中，靠的是同樣的……），你可能憑常識選 engines（引擎）；或者想起前文講過羽毛、橡膠，就選 materials（材料）。可是不回頭找 the same 比的是什麼，就只能用常識猜。【怎麼判斷】the same 是一個指標勾環：說「同樣的……」，前文一定講過一個可以拿來比的東西。往前讀兩句：Dimples reduce drag, the force that pulls back on the ball, so it can travel faster and farther.（凹洞能減少阻力，也就是往後拉住球的力量，讓球飛得更快、更遠。）逗號後面的同位語 the force that pulls back on the ball 就是 drag 的解釋。They also force the airflow downward, which pushes the ball upward.（凹洞也會把氣流往下推，氣流則把球往上推。）這兩句講的不是零件或材料，而是空氣怎樣作用在球上的道理，球和飛機共用的就是這套道理，所以填 principles（原理）。例句：My sister learned to ride a bike the same way as I did, with Dad holding the seat.（我妹妹學騎腳踏車的方法和我一樣，都是爸爸在後面扶著座椅。）【誘答選項】engines 是「引擎」，可是前文講的高爾夫球沒有引擎，the same engines 找不到可以比的對象。materials 是「材料」，前文雖然提到羽毛和橡膠，但這兩句講的是空氣的推力和阻力。regulations 是「規定、法規」，前文完全沒有提到任何規定。【常考字詞與句型】depend on + N（依靠……）、the same + N + as + N（和……一樣的……）、stay in the air（留在空中）。"
+ },
+ {
+  "id": "GCLA-z110p4_15",
+  "year": "改編練習（七）",
+  "passageId": "CLA-z110p4",
+  "blankNum": 15,
+  "category": "連接詞／轉折詞",
+  "options": {
+   "A": "However",
+   "B": "Instead",
+   "C": "Therefore",
+   "D": "Afterward"
+  },
+  "answer": "C",
+  "explanation": "語意「凹洞淺的球飛得低而遠、凹洞深的球飛得高，『因此』球員可以依需要選球」，Therefore（因此）承接這個因果；However（然而）要有前後相反的意思，Instead（反而）要先有一種換掉的做法，Afterward（之後）要接在一件先發生的事後面，前文都沒有。",
+  "contextSpan": "跨句",
+  "contextNote": "前一句 balls with small, shallow dimples tend to have a longer, lower flight path, whereas those with deeper dimples fly higher 說不同凹洞的球飛法不同，這正是球員可以依需要選球的原因",
+  "note": "【你可能會這樣想】前一句有 whereas（而），把淺凹洞和深凹洞的球拿來對比，讀到空格時容易順勢選 However（然而）。不過 whereas 的對比在前一句裡面已經完成了，空格要連接的是前一句和這一句，兩層關係不能混在一起看。【怎麼判斷】四個選項都是句首的轉折詞，可見這一格考兩句之間的邏輯。前一句是 In general, balls with small, shallow dimples tend to have a longer, lower flight path, whereas those with deeper dimples fly higher.（一般來說，凹洞小而淺的球飛得比較遠、比較低，凹洞深的球則飛得比較高。）這一句是 golfers can choose their balls based on what they need for a particular shot or for particular weather.（球員可以依某一桿的需要或特定的天氣選球。）不同的球飛法不同是原因，球員可以挑選是結果，前因後果正是 Therefore（因此）的邏輯勾環。【誘答選項】However 填進來，中文「然而，球員可以依需要選球」好像也說得通。可是 However 要求前後兩句意思相反，這兩句方向一致，所以要用 Therefore。中文會通，是因為我們說話時常把「然而」當成換話題的開頭，不太在意前後是否相反。Instead 是「改為」，前面要先提到一種做法，前文沒有說球員原本怎麼選球。Afterward 是「之後」，要接在一件先發生的事後面；前一句是 In general 帶出的一般情形，不是一件先發生的事，談不上「之後」。【常考字詞與句型】choose A based on B（依 B 挑選 A）、tend to + V（往往……）、whereas + 子句（而……，表示對比）、in general（一般來說）、a flight path（飛行路徑）。Therefore 也是學測 108 年第 28 題、指考 93 年第 30 題的正解。"
+ },
+ {
+  "id": "GCLA-z105p2_11",
+  "year": "改編練習（八）",
+  "passageId": "CLA-z105p2",
+  "blankNum": 11,
+  "category": "字彙選義",
+  "options": {
+   "A": "remains",
+   "B": "ruins",
+   "C": "leftovers",
+   "D": "souvenirs"
+  },
+  "answer": "A",
+  "explanation": "語意「這塊化石是目前發現最古老的大型貓科動物『遺骸』」，remains 在這裡是名詞「遺骸」，和同一句的 fossil、第一句的 skull 指同一個東西；ruins（廢墟）指建築物，leftovers（剩菜、用剩的東西）、souvenirs（紀念品）都不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】remain 你一定認得，是動詞「仍然是、留下來」，所以看到名詞 remains 反而覺得陌生，不太敢選。另一個陷阱是 ruins：它的中文常譯成「遺跡」，放進「最古老的遺跡」讀起來很通順，你很可能就選了它。【怎麼判斷】這一句的主詞是 the fossil（化石），指的就是第一句那個 skull（頭骨）；空格要的是一個能和 fossil 畫上等號的名詞，後面還接著 of a big cat。文章開頭用 such as lions and tigers 舉例，告訴你 big cats 指的是獅子、老虎這類大型貓科動物，這是讀懂主題字的線索。skull、fossil 和空格是同一個東西換三種說法，屬於同義勾環。remains 在這裡的意思是人或動物死後留下來的身體部分，也就是「遺骸」，變成化石的頭骨正是這種東西。動詞 remain 是「留下來」，名詞 remains 就是「留下來的身體」，兩個意思連得起來。【誘答選項】ruins 中文讀起來很順，「最古老的遺跡」聽起來沒有問題。不過 ruins 的核心義是建築物倒塌或毀壞之後剩下的部分；動物的骨頭不是建築，所以要用 remains。中文會通，是因為「遺跡」在中文裡可以指各種古代留下來的東西。英文的 remains 也很廣，建築的遺跡、吃剩的東西、人或動物的遺骸都可以用；ruins 卻只用在倒塌或毀壞的建築物，動物的骨頭不能叫 ruins。leftovers 是「吃剩的飯菜、用剩的東西」，不能指動物的身體。souvenirs 是旅行時買來留念的「紀念品」，和化石無關。【常考字詞與句型】human remains（人類遺骸）、the ruins of + 建築（……的廢墟）、lie in ruins（成為廢墟、全毀）、eat leftovers（吃剩菜）、buy souvenirs for sb（替某人買紀念品）、the + 最高級 + N + ever + p.p.（有史以來……過最……的）。"
+ },
+ {
+  "id": "GCLA-z105p2_12",
+  "year": "改編練習（八）",
+  "passageId": "CLA-z105p2",
+  "blankNum": 12,
+  "category": "字彙選義",
+  "options": {
+   "A": "raise",
+   "B": "settle",
+   "C": "ignore",
+   "D": "repeat"
+  },
+  "answer": "B",
+  "explanation": "語意「缺乏化石證據，讓這個問題很難『有定論』」，settle 在這裡是「解決（爭論、問題）」，和前半句的 hotly debated 呼應；raise（提出）、ignore（忽視）、repeat（重複）都不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】settle 你最熟的意思大概是「定居」（settle in Taipei）或 settle down（安頓下來），放進 settle the question 好像說不通，於是改選中文最順的 raise，「很難提出這個問題」看起來也像一句話。【怎麼判斷】這一句由 and 連接兩個子句：前半句 Where big cats came from has long been hotly debated（大型貓科動物從哪裡來，長久以來一直爭論得很熱烈），後半句說缺乏化石證據，讓這個問題「很難怎麼樣」。the question 回指前半句那場爭論，屬於指標勾環；既然大家爭論不休，又缺少證據，難的當然是把問題解決、做出定論。settle 的核心義是讓不穩定的狀態安定下來：人安定在一個地方是「定居」，爭論安定下來就是「解決、了結」。順著原因與結果讀，缺乏證據是原因，爭論無法了結是結果，邏輯才說得通。【誘答選項】raise 中文讀起來很順，「很難提出這個問題」似乎也成立。不過 raise a question 是「提出問題」，前半句已經說這個問題爭論了很久，可見早就有人提出；缺乏證據妨礙的是回答，不是發問。中文會通，是因為「提出」和「解決」都能接「問題」，這一句的邏輯卻只容得下「解決」。ignore（忽視）也不合，缺乏證據只會讓人更容易把問題放在一邊，不會讓人難以忽視。repeat（重複）和證據多寡沒有關係。【常考字詞與句型】settle an argument／a dispute（解決爭執／糾紛）、settle down（安頓下來）、raise a question（提出問題）、make it hard (for sb) to V（使（某人）難以……）、a lack of + N（缺乏……）、be hotly debated（爭論得很熱烈）。例句：A lack of sleep made it hard for me to focus during the mock exam.（睡眠不足讓我在模擬考時很難專心。）"
+ },
+ {
+  "id": "GCLA-z105p2_13",
+  "year": "改編練習（八）",
+  "passageId": "CLA-z105p2",
+  "blankNum": 13,
+  "category": "字彙選義",
+  "options": {
+   "A": "confusing",
+   "B": "swapping",
+   "C": "covering",
+   "D": "comparing"
+  },
+  "answer": "D",
+  "explanation": "語意「團隊花了三年把這塊化石和其他化石『比較』，又用 DNA 資料建立家族譜系，最後確信牠是大型貓科動物」，comparing 符合；confusing（誤認）和句尾的確信語意矛盾，swapping（交換）、covering（覆蓋）都和辨認化石無關。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】confuse A with B 是「把 A 誤認成 B」，「把頭骨和其他化石混淆」中文聽起來像在講研究的波折，所以你可能會選 confusing。【怎麼判斷】上文寫 a paleontologist, or fossil expert，or 後面就是前面那個難字的解釋：他是研究化石的專家。這一句講的是他的團隊花了三年做什麼，結果寫在句尾：the team was convinced that the creature was a big cat（團隊確信這種動物是大型貓科動物）。the skull 就是第一句那塊頭骨化石；同一句還提到 using DNA data to build a family tree（用 DNA 資料建立家族譜系），可見三年都在確認身分，和其他化石一一對照正是化石專家的工作，所以是 comparing。三年的比較和 DNA 分析是原因，句尾的確信是結果，屬於邏輯勾環。【誘答選項】confusing 中文讀起來似乎說得通。不過 confuse A with B 的核心義是「把 A 錯認成 B」，是一種錯誤；團隊要是一直認錯，句尾就不可能確信牠是大型貓科動物。中文會通，是因為「混淆」也可以只表示「不容易分辨」，英文卻是已經認錯了。swapping（拿去交換）不合，頭骨換給別人，團隊就沒有東西可以研究三年。covering（蓋住）和辨認無關。【常考字詞與句型】compare A with B（拿 A 和 B 比較）、confuse A with B（把 A 誤認成 B）、swap A for B（用 A 換 B）、be convinced that + 子句（確信……）、build a family tree（建立家族譜系）。"
+ },
+ {
+  "id": "GCLA-z105p2_14",
+  "year": "改編練習（八）",
+  "passageId": "CLA-z105p2",
+  "blankNum": 14,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "backs up",
+   "B": "rules out",
+   "C": "carries out",
+   "D": "looks into"
+  },
+  "answer": "A",
+  "explanation": "語意「化石和 DNA 的證據『支持』大型貓科動物最早出現在中亞的看法」，backs up 和下一句描述牠們在喜馬拉雅山區生活的內容一致；rules out（排除）和文章開頭的結論矛盾，carries out（執行）、looks into（調查）都不合。",
+  "contextSpan": "跨句",
+  "contextNote": "下一句 They may have lived in a vast mountain area formed as the Himalayas rose 接著描述牠們在亞洲山區的生活，可見證據是支持而不是排除亞洲起源",
+  "note": "【你可能會這樣想】rule 你可能只記得「規則」或「裁定」，看到 rules out 會猜成「證據裁定了這個看法」，覺得也說得通。其實 rule out 是「排除」，方向正好和支持相反。【怎麼判斷】四個選項都是片語動詞，主詞是 the fossil and DNA evidence（化石和 DNA 的證據，evidence 不可數，動詞用單數），受詞是空格後的看法：大型貓科動物大約在 1,600 萬年前最早出現在中亞。只看這一句，「支持」和「排除」文法上都成立，所以要往下讀一句：They may have lived in a vast mountain area formed as the Himalayas rose, feeding on animals such as the Tibetan blue sheep.（牠們可能住在喜馬拉雅山隆起時形成的廣大山區，以西藏岩羊這類動物為食。）作者接著描述牠們在亞洲山區的生活，可見亞洲起源是作者認可的結論，證據在支持它，這一格的線索屬於主題勾環。文章開頭說大型貓科動物起源於中亞，可以用來驗算。back up 用在證據上就是「支持、證實」某個說法。【誘答選項】rules out 是「排除」，等於說證據否定了亞洲起源，和下一句語意矛盾。carries out 是「執行」，受詞通常是計畫、實驗，看法不能拿來執行。looks into 是「調查、研究」，做這個動作的必須是人，證據不會調查。【常考字詞與句型】back up a claim with data（用數據支持說法）、rule out the possibility of + N（排除……的可能）、carry out an experiment（進行實驗）、look into the cause（調查原因）、the idea that + 子句（……的看法）、taken together（綜合來看）。學測 106 年第 16 題的答案也是 look into，不過那一題是 look into the mirror（往鏡子裡看），into 表示目光的方向，不是「調查」；backed up 是指考 101 年第 19 題的選項，那一題是「（人潮）回堵」的意思。"
+ },
+ {
+  "id": "GCLA-z105p2_15",
+  "year": "改編練習（八）",
+  "passageId": "CLA-z105p2",
+  "blankNum": 15,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "At first",
+   "B": "In return",
+   "C": "As a rule",
+   "D": "Later on"
+  },
+  "answer": "D",
+  "explanation": "語意「接著牠們散布到東南亞……『後來』隨著跨越各大洲遷徙，發展成美洲豹和獅子」，Later on 承接前一句的 then，交代事情的先後；At first（起初）和 then 排好的順序矛盾，In return（作為回報）、As a rule（通常、照例）也不合前後句的關係。",
+  "contextSpan": "跨句",
+  "contextNote": "前一句 They then spread into Southeast Asia 用 then 排出先後，本句跨越各大洲是再往後的一步，才選得出表示時間在後的轉折詞",
+  "note": "【你可能會這樣想】只看本句 ___ , as they moved across continents, some of them developed into jaguars and lions（______，隨著牠們跨越各大洲遷徙，其中一些發展成美洲豹和獅子），At first 讀起來也很自然，「起初牠們跨越各大洲」沒有文法問題，所以你可能就選了它。【怎麼判斷】四個選項都是兩個字的轉折詞，可見這一格考的是句與句之間的關係，非看前一句不可。前一句是 They then spread into Southeast Asia, evolving into the clouded leopard, tiger, and snow leopard.（接著牠們散布到東南亞，演化出雲豹、老虎和雪豹。）then 已經把時間排好：先在中亞出現，接著到東南亞；本句跨越各大洲，是再往後的一步，屬於邏輯勾環裡的時間順序，所以要選表示「之後、後來」的 Later on。【誘答選項】At first（起初）表示最早的階段，前一句已經用 then 講過東南亞那一步，本句不可能再回到「起初」，時間順序矛盾。In return（作為回報）用在前面有人付出、後面得到回報的時候，但遷徙不是誰給的回報。As a rule（通常、照例）講經常如此的規律，本句講的卻是演化過程中的一個階段。【常考字詞與句型】at first（起初）、in return for + N（作為……的回報）、as a rule（通常、照例）、move across continents（跨越各大洲遷徙）、develop into + N（發展成……）、spread into + 地方（散布到……）。例句：At first I felt nervous about joining the debate club, but later on I began to enjoy it.（剛加入辯論社時我很緊張，後來卻喜歡上了。）"
+ },
+ {
+  "id": "GCLA-z101p4_11",
+  "year": "改編練習（九）",
+  "passageId": "CLA-z101p4",
+  "blankNum": 11,
+  "category": "字彙選義",
+  "options": {
+   "A": "construct",
+   "B": "renovate",
+   "C": "level",
+   "D": "inspect"
+  },
+  "answer": "C",
+  "explanation": "語意「用挖土機和破壞球，可以輕鬆『夷平』一棟五層樓的建築」，level 當動詞是「把建築物夷為平地」，和後半句用爆破拆除摩天大樓相對應；construct（建造）、renovate（整修）、inspect（檢查）都和拆除的語意不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】level（本句當動詞，意思是「夷平」）你最熟的是名詞「程度、等級」；當動詞用的 level 你多半沒見過，於是改挑看起來比較像動作的 construct 或 inspect。其實 level 當形容詞是「平的」，當動詞就是「使變平」，用在建築物上就是「夷為平地」。【怎麼判斷】第一句用 Demolition is…… 先解釋了 demolition（拆除），本句接著比較兩種拆法：受詞是 a five-story building，工具是 heavy machines such as excavators and wrecking balls。就算不認得 excavators 和 wrecking balls，such as 前面的 heavy machines 告訴你這兩樣是重型機具：such as 後面舉的，就是前面那個詞的例子。but 後半句 but for a 20-story skyscraper, explosive demolition is the preferred method（但如果是 20 層樓的摩天大樓，首選的方法是爆破拆除）比較的是五層樓和 20 層樓，兩邊做的事都是拆，所以空格要填「拆平」。這屬於主題勾環：全文的主題是拆除。【誘答選項】construct 是「建造」，挖土機挖地基也用得上，中文直覺可能覺得說得通；可是 but 後半句比較的是拆除方法，前半句如果講蓋房子，前後就比不起來。renovate 是「整修」，整修之後建築物還在，和第一句講的拆除不合。inspect 是「檢查」，檢查用不到撞毀牆面的重型機具，和 wrecking balls 搭不起來。【常考字詞與句型】level a building（把建築物夷平）、tear down a building（拆掉建築物）、bring down a building（把建築物拆倒）、renovate an old house（整修老房子）、inspect the damage（檢查損壞情形）、be leveled by an earthquake（因地震夷為平地）。"
+ },
+ {
+  "id": "GCLA-z101p4_12",
+  "year": "改編練習（九）",
+  "passageId": "CLA-z101p4",
+  "blankNum": 12,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "draw up",
+   "B": "call off",
+   "C": "turn down",
+   "D": "hand in"
+  },
+  "answer": "A",
+  "explanation": "語意「資料全部到手以後，爆破人員就『擬定』作戰計畫，決定要用哪些炸藥、放在哪裡、什麼時候引爆」，draw up（擬定）符合；call off（取消）、turn down（拒絕）、hand in（繳交）都和同一句接著決定計畫細節的內容不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】draw 你最熟的是「畫畫」，draw up 看起來像「往上畫」，很難連到計畫；反倒是天天在用的 hand in（交作業），讀成「交出作戰計畫」好像也通。draw up 要整組記：擬定、草擬（計畫、清單、合約）。【怎麼判斷】整句是 With the data in hand, the blasters ___ a plan of attack, deciding what explosives to use, where to place them, and how to time each explosion.（資料到手以後，爆破人員就……作戰計畫，決定用哪些炸藥、放在哪裡、什麼時候引爆。）blasters 在上文寫成 blasters, or explosives experts，or 後面就是前面那個字的換句話說。逗號後的 deciding……說明空格這個動作的內容：決定炸藥、位置和時間，都是在訂計畫，所以空格要填「擬定」。【誘答選項】hand in 是「繳交」，中文說「交出計畫」很自然，所以最有吸引力；可是 hand in 的前提是東西已經完成，同一句的 deciding……卻顯示計畫還在訂，談不上交出去。call off 是「取消」，取消計畫的人不會接著決定炸藥放在哪裡。turn down 是「拒絕」，對象是別人提出的提議，這份計畫卻是爆破人員自己要訂的。【常考字詞與句型】draw up a plan／list（擬定計畫／列出清單）、a plan of attack（作戰計畫、行動方案）、call off + N（取消……）、turn down an offer（拒絕提議）、hand in + N（繳交……）、in hand（已經掌握）。"
+ },
+ {
+  "id": "GCLA-z101p4_13",
+  "year": "改編練習（九）",
+  "passageId": "CLA-z101p4",
+  "blankNum": 13,
+  "category": "連接詞／轉折詞",
+  "options": {
+   "A": "Similarly",
+   "B": "Nevertheless",
+   "C": "Consequently",
+   "D": "Conversely"
+  },
+  "answer": "B",
+  "explanation": "語意「大多數情況下，炸低樓層就足以讓建築物倒塌；『儘管如此』，在高樓層裝炸藥還是有助於讓建材碎裂」，Nevertheless 先承認前一句的事實，再帶出另一項做法；Similarly（同樣地）、Consequently（因此）、Conversely（反過來說）都不合前後句的關係。",
+  "contextSpan": "跨句",
+  "contextNote": "前一句 In most cases, blowing up the lower floors is enough to collapse the building 先說炸低樓層就夠了，本句卻還在高樓層裝炸藥，讀了前一句才看得出是先讓步再轉折",
+  "note": "【你可能會這樣想】這一格最容易選的是 Consequently。前一句說炸低樓層建築物就會倒塌，本句說建材在倒下時碎裂，中文讀起來像因果。可是讓建材碎裂的是本句的 loading explosives on upper floors（在高樓層裝炸藥），不是前一句的炸低樓層，兩者沒有因果。【怎麼判斷】四個選項都是轉承副詞，可見這一格考兩句之間的邏輯關係。前一句：In most cases, blowing up the lower floors is enough to collapse the building.（大多數情況下，炸掉低樓層就足以讓建築物倒塌。）本句說在高樓層裝炸藥，有助於讓建材在倒下時碎裂開來。既然炸低樓層就「夠了」，為什麼還要在高樓層裝炸藥？作者先承認前一句的事實，再說明另外這樣做的好處，這是先讓步、再轉折的邏輯勾環，Nevertheless（儘管如此）正好表達這層關係。【誘答選項】Consequently（因此）帶出前一句造成的結果，但建材碎裂是高樓層的炸藥造成的，不是「炸低樓層就夠了」的結果。Similarly（同樣地）要帶出性質相同的事，前一句講讓建築物倒塌，本句講讓建材碎裂，兩件事的作用不同。Conversely（反過來說）要把前一句的關係倒過來講，本句講的是另一件事，不是前一句的反面。【常考字詞與句型】nevertheless（儘管如此）、in most cases（在大多數情況下）、load explosives on + N（在……裝炸藥）、be enough to V（足以……）、break sth apart（把……弄得四分五裂）、blow up + N（炸掉……）。nevertheless 是學測 88 年第 29 題的正解，那一題的選項也有 conversely、consequently。例句：The trail was muddy after the rain. Nevertheless, our hiking club finished the whole route.（雨後步道很泥濘，儘管如此，我們登山社還是走完了全程。）"
+ },
+ {
+  "id": "GCLA-z101p4_14",
+  "year": "改編練習（九）",
+  "passageId": "CLA-z101p4",
+  "blankNum": 14,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "call for",
+   "B": "make for",
+   "C": "put off",
+   "D": "stand for"
+  },
+  "answer": "B",
+  "explanation": "【句型】make for + N 指「有助於、促成」，語意「碎塊比較小，『有助於』爆破後的清理，清理起來比較容易」，主詞是原因、受詞是結果；call for（需要、要求）、put off（延後）、stand for（代表）放進句中都講不通。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】make 加上 for，你可能想成 make sth for sb（為某人做某物），讀起來意思模糊，於是改挑字面好懂的 call for。make for 要整組當一個動詞來記，意思是「有助於、促成（某種結果）」，後面接名詞。【怎麼判斷】主詞是 Smaller pieces（比較小的碎塊），受詞是 an easier cleanup after the blast（爆破後比較容易的清理）。主詞是原因、受詞是結果：碎塊越小，清理越容易，所以空格要表達「促成」，比較級 easier 就是線索。換成 Smaller pieces lead to an easier cleanup.（碎塊比較小，清理就比較容易。）也說得通，表示方向正確。【誘答選項】call for 是「需要、要求」。中文說「小碎塊需要比較容易的清理」好像也讀得過去，可是 call for 的主詞是提出需求的一方，清理變容易卻是碎塊小帶來的結果，不是碎塊需要的東西。中文會通，是因為「需要」和「帶來」在這句的中文裡聽起來差不多。put off 是「延後」，和 easier 表示的「變容易」語意矛盾。stand for 是「代表」，多半用在縮寫或符號，碎塊不會代表清理。【常考字詞與句型】make for + N（有助於……）、call for + N（需要……）、put off + V-ing（延後做……）、stand for + N（代表……）、lead to + N（導致……）、clean up after + N（在……之後收拾）。call for 也是學測 113 年第 11 題、指考 97 年第 14 題的選項；stand for 是指考 96 年第 24 題的選項。"
+ },
+ {
+  "id": "GCLA-z101p4_15",
+  "year": "改編練習（九）",
+  "passageId": "CLA-z101p4",
+  "blankNum": 15,
+  "category": "字彙選義",
+  "options": {
+   "A": "measuring",
+   "B": "reversing",
+   "C": "ignoring",
+   "D": "controlling"
+  },
+  "answer": "D",
+  "explanation": "語意「拆除建築物最難的部分，是『控制』建築物倒下的方向，讓它倒在爆破小組想要的地方」，controlling 符合 so that 子句說的目的；measuring（測量）、reversing（反轉）、ignoring（忽略）都達不到讓建築物倒在指定地點的目的。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】讀到 the direction in which it falls（建築物倒下的方向），你可能會想「方向很難掌握，所以要事先測量」，於是挑 measuring。可是句尾還有 so that 子句，要建築物倒在指定的地方，這要靠決定方向，不是量方向。【怎麼判斷】本句的主詞是 The hardest part of bringing a building down（拆除建築物最難的部分），be 動詞後面的動名詞說明最難的是什麼。關鍵在句尾 so that it comes down where the crew wants it to（好讓建築物倒在爆破小組想要的地方）：so that 帶出目的，要做到這一點，空格的動作必須能左右倒下的方向，這就是「控制」。這屬於邏輯勾環：目的子句說明前面動作的用意。下一句從北側的炸藥開始引爆、讓建築物往北倒，也印證了這一點。【誘答選項】measuring 是「測量」，中文說「測量倒下的方向」好像也是難事，可是測量只是了解已經存在的數值，量出方向不能讓建築物倒在想要的地方。reversing 是「反轉」，要先有原本的方向才談得上反轉。ignoring 是「忽略」，和 so that 子句的目的矛盾。【常考字詞與句型】control the direction of + N（控制……的方向）、lose control of + N（對……失去控制）、the hardest part of + V-ing（……最難的部分）、so that + 子句（好讓……）、set off explosives（引爆炸藥）、topple a building（推倒建築物）。"
+ },
+ {
+  "id": "GCLA-z109p2_11",
+  "year": "改編練習（十）",
+  "passageId": "CLA-z109p2",
+  "blankNum": 11,
+  "category": "字彙選義",
+  "options": {
+   "A": "populated",
+   "B": "contaminated",
+   "C": "protected",
+   "D": "criticized"
+  },
+  "answer": "B",
+  "explanation": "語意「這些動物受到嚴重『汙染』，毒素濃度是汙染最嚴重的河川裡測到的 50 倍」，contaminated（受汙染的）和後面的毒素濃度相符；populated（人口稠密的）形容地方，protected（受保護的）和毒素濃度語意矛盾，criticized（受批評的）是對人或做法的評價，都不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】空格前是 heavily，你最熟的搭配大概是 heavily populated（人口稠密的），可能直接選 populated。【怎麼判斷】主詞 These animals 指帶回來的小型甲殼動物，空格後的 with levels of toxins, or poisons, 50 times higher than those found in the most heavily polluted rivers（毒物的濃度是汙染最嚴重的河川裡測到的 50 倍）交代了原因。toxins 你可能不認得，但後面的 or poisons 就是它的解釋，這是用 or 帶出同義常用字的提示。四個選項都能接在 heavily 後面，可見這一格考的是語意：體內充滿有毒物質，就是「受到嚴重汙染」。contaminated（受汙染的）和句尾的 polluted 意思相同，這是同義勾環。【誘答選項】populated 是「有人居住的」，中文讀成「這些動物很密集」好像也通；不過 populated 描述一個地方住了多少人，主詞必須是地方，這裡的主詞卻是動物。中文會覺得通，是因為「密集」也能形容動物。protected（受保護的）和毒物濃度這麼高語意矛盾。criticized（受到批評的）的對象是人或做法，全句沒有人在評價這些動物。【常考字詞與句型】be contaminated with + N（受到……汙染）、heavily polluted（汙染嚴重的）、a heavily populated area（人口稠密的地區）、be heavily criticized for + N（因為……飽受批評）、high levels of + N（高濃度的……）。"
+ },
+ {
+  "id": "GCLA-z109p2_12",
+  "year": "改編練習（十）",
+  "passageId": "CLA-z109p2",
+  "blankNum": 12,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "Better still",
+   "B": "On the contrary",
+   "C": "Worse still",
+   "D": "In the meantime"
+  },
+  "answer": "C",
+  "explanation": "語意「『更糟的是』，研究找到的化學物質全都屬於持久性有機汙染物」，Worse still（更糟的是）在前一句的高毒素濃度之外，再加上一件更令人擔心的事；Better still（更好的是）帶出好消息，On the contrary（正好相反）要否定前一句，In the meantime（在這期間）表示時間，都不合。",
+  "contextSpan": "跨句",
+  "contextNote": "前一句說這些動物體內的毒素濃度是汙染最嚴重的河川裡測到的 50 倍，本句再補上這些物質會在環境中留存很久，兩句沒有相反也沒有時間先後，是在壞消息上再加一層",
+  "note": "【你可能會這樣想】still 你最熟的意思是「仍然」，Better still、Worse still 讀成「更好的仍然」「更糟的仍然」都說不通，你可能就避開這兩個，改選看起來比較熟的轉折詞。另一個常見的選法是 On the contrary（正好相反），因為前一句講毒素濃度，這一句改講留存時間，話題好像轉了方向。【怎麼判斷】四個選項都是句首的轉承說法，要回頭讀前一句的後半：with levels of toxins, or poisons, 50 times higher than those found in the most heavily polluted rivers in the world（毒物濃度是全世界汙染最嚴重的河川裡測到的 50 倍），這已經是壞消息。本句接著說這些化學物質都是 persistent organic pollutants，persistent 是難字，後面的 meaning they stay in the environment for a very long time（意思是會在環境中留存很長的時間）就是作者給的解釋，可見汙染不會自己消失，比濃度高更令人擔心。兩句是「壞消息再加一層」的邏輯勾環，Worse still（更糟的是）正是用來帶出更嚴重的第二件事；這裡的 still 加在比較級後面，意思是「更加」，不是「仍然」。【誘答選項】Better still（更好的是）和正解結構相同，中文直覺會覺得「再加一件事」就好；不過 Better still 要接更好的消息，化學物質久留不散卻是壞事，所以是 Worse still。On the contrary（正好相反）要先有一個說法再加以否定，本句並沒有推翻前一句的毒素濃度。In the meantime（在這期間）表示時間，兩句講的卻是同一批化學物質的兩個性質。【常考字詞與句型】What is worse／To make matters worse（更糟的是）、stay in the environment（留存在環境中）、in the meantime（在這期間）。"
+ },
+ {
+  "id": "GCLA-z109p2_13",
+  "year": "改編練習（十）",
+  "passageId": "CLA-z109p2",
+  "blankNum": 13,
+  "category": "時態／語態",
+  "options": {
+   "A": "had banned",
+   "B": "were banned",
+   "C": "have been banned",
+   "D": "were banning"
+  },
+  "answer": "B",
+  "explanation": "【句型】S + was／were + p.p.：PCBs 是承受「禁用」這個動作的一方，in the 1970s 又是過去明確的時間，所以用過去式的 be + p.p.，也就是 were banned（遭到禁用）；had banned 與 were banning 變成 PCBs 去禁止別的東西，have been banned 是現在完成式，不能和 in the 1970s 連用。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】句子後半有 after being linked to cancer（在發現和癌症有關之後），看到「之後」，你可能想到過去完成式，選 had banned。也有人選 have been banned，因為 PCBs（多氯聯苯，一種工業化學物質）到今天仍然禁用，現在完成式好像也通。【怎麼判斷】文法格先還原成完整子句。主詞 they 指 PCBs，動作是 ban（禁止）。禁用 PCBs 的是美國，PCBs 本身不會去禁止任何東西，所以 PCBs 是承受動作的一方，要用 be + p.p.。時態方面，in the 1970s 是過去明確的時間，要用過去式；現在完成式不和 in 2010、three years ago 這類明確的過去時間連用。兩個條件合起來就是：They were banned in the United States in the 1970s.（PCBs 在 1970 年代遭到美國禁用。）ban 是及物動詞，主動形式後面一定要有受詞，空格後面卻直接是 in the United States，這也說明主詞是承受動作的一方。【誘答選項】had banned 是過去完成式的主動形式，變成 PCBs 去禁止別的東西。have been banned 形式上也是 be + p.p.，看起來最接近，可是現在完成式講「到現在為止」，和 in the 1970s 語意矛盾；改成 PCBs have been banned since the 1970s.（從 1970 年代起一直禁用）才可以。were banning 是過去進行式的主動形式，同樣變成 PCBs 去禁止別的東西。【常考字詞與句型】be banned in + 地方（在某地遭到禁用）、be linked to + N（和……有關）、after being + p.p.（在遭到……之後）、have been + p.p. + since + 時間（從……起一直……）、be widely used in + N（廣泛用於……）。"
+ },
+ {
+  "id": "GCLA-z109p2_14",
+  "year": "改編練習（十）",
+  "passageId": "CLA-z109p2",
+  "blankNum": 14,
+  "category": "字彙選義",
+  "options": {
+   "A": "bodies",
+   "B": "spirits",
+   "C": "numbers",
+   "D": "temperatures"
+  },
+  "answer": "A",
+  "explanation": "語意「這些動物死後，『身體』沉到海底，深海生物再吃下牠們」，bodies（身體、屍體）符合；spirits（心情）、numbers（數量）、temperatures（體溫）雖然都能接 sink，卻不會沉到海底讓深海生物吃，都不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】空格前面說 these animals die（這些動物死了），後面是 sink（下沉），你可能想到中文的「心往下沉」，選 spirits；或者想到動物死了數量就減少，選 numbers。只看 their ___ sink，這兩個都是真的英文，讀到後半句才知道不行。【怎麼判斷】這一句說：When these animals die（這些動物死後），their ___ sink to the ocean floor, where deep-sea creatures feed on them（沉到海底，深海生物在那裡吃下它們）。句尾的 them 回指空格，這是指標勾環：空格裡的東西要能沉到海底，還要能吃下肚，所以一定是動物死後留下的身體。body 除了「身體」，也常指「屍體」，例如 A body was found in the river.（河裡發現一具屍體。）這裡是複數 bodies。【誘答選項】spirits 是「心情、情緒」，中文直覺讀成「牠們的心沉了下去」好像也通；不過 spirits 指情緒，不會沉到海底讓別的動物吃，句尾 feed on them 要的是吃得到的東西，所以是 bodies。中文會覺得通，是因為「心往下沉」本來就是常見的說法。numbers（數量）是抽象數字，不會掉到海底。temperatures（溫度）一樣不能吃。【常考字詞與句型】a dead body（屍體）、feed on + N（以……為食）、sink to the bottom of + N（沉到……底部）、One’s spirits sink.（某人心情低落）、a drop in numbers（數量減少）、along the food chain（沿著食物鏈）。"
+ },
+ {
+  "id": "GCLA-z109p2_15",
+  "year": "改編練習（十）",
+  "passageId": "CLA-z109p2",
+  "blankNum": 15,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "at high speeds",
+   "B": "over long distances",
+   "C": "in circles",
+   "D": "for a short time"
+  },
+  "answer": "B",
+  "explanation": "語意「海溝離任何工業汙染源都有好幾英里遠，表示這些汙染物能『遠距離』移動」，over long distances（長距離地）呼應句首的 many miles away；at high speeds（高速）講的是速度，in circles（繞圈子）到不了遠處，for a short time（短時間）和幾十年前就禁用卻仍在移動不合，都不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】travel at high speeds（高速移動）是你很熟的搭配，所以你可能選它。【怎麼判斷】先把句子拆開：主詞是 The fact that the trench lies many miles away from any industrial source（海溝離任何工業汙染源都有好幾英里遠這件事），動詞是 suggests（表示），受詞是 that 子句。既然工廠在很遠的地方，海溝裡卻找得到這些化學物質，合理的推論就是它們從遠處一路移動過來，所以空格要講「距離」。over long distances（長距離地）正好呼應同一句的 many miles away，這是同義勾環。【誘答選項】at high speeds 是「以高速」，中文「汙染物移動得很快」讀起來也通；不過句首給的線索是 many miles away，講的是距離，句中沒有任何關於速度的資訊，所以要選 over long distances。中文會覺得通，是因為「跑得快」和「跑得遠」在中文裡常常連在一起想。in circles（繞圈子）到不了好幾英里外的海溝。for a short time（短時間地）和幾十年前就禁用、到今天仍在移動語意矛盾。【常考字詞與句型】travel long distances（長途移動）、be many miles away from + N（離……好幾英里遠）、The fact that + 子句 + V（……這件事……）、despite + V-ing／N（儘管……）、go around in circles（原地打轉）。distances 也是指考 104 年第 16 題的正解。"
+ },
+ {
+  "id": "GCLA-g115p1_11",
+  "year": "改編練習（十一）",
+  "passageId": "CLA-g115p1",
+  "blankNum": 11,
+  "category": "字彙選義",
+  "options": {
+   "A": "delayed",
+   "B": "exaggerated",
+   "C": "challenged",
+   "D": "marked"
+  },
+  "answer": "D",
+  "explanation": "語意「這則消息登上世界各地的頭條，也是因為這次發現『標誌著』一段勇氣傳奇的最後一章」，marked（標誌著）符合，沉船一找到，故事也就有了結尾；delayed（延後）、exaggerated（誇大）、challenged（質疑）都和「最後一章」接不起來。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】mark 你最熟的意思是「做記號、打分數」，很難和「最後一章」連在一起，所以你可能改選 delayed：文章第一句說船沉沒 107 年以後才找到，「延後」好像正好對上這段時間。【怎麼判斷】這一句的主詞是 the discovery（這次發現），受詞是 the final chapter in a legendary story of courage（一段勇氣傳奇的最後一章），空格要說明兩者的關係。全文結尾說所有人都獲救，只有這艘船下落不明；也就是說，船一找到，故事就有了結尾，這次發現本身就是最後一章。mark 除了「做記號」，還有「標誌著（某個階段的開始或結束）」的意思，主詞常是一件事：Graduation marks the end of one stage of life and the beginning of another.（畢業標誌著人生一個階段的結束，也是另一個階段的開始。）【誘答選項】delayed 是「延後」：中文說「把最後一章延後了」，似乎接得上 107 年。可是 delay 的主詞多半是造成延誤的原因，本句的主詞是「發現」，船找到以後故事反而寫完了；讓故事遲遲沒有結尾的，是這艘船一直沉在海底找不到，不是這次發現。中文會覺得通，是因為直接把「107 年」和「延後」連在一起。exaggerated 是「誇大」，可是沉船確實找到了，沒有誇大什麼。challenged 是「質疑」，可是這次發現證實了船的下落，沒有質疑這段傳奇。【常考字詞與句型】mark the beginning of + N（標誌著……的開始）、mark a turning point（標誌著轉捩點）、make headlines（登上頭條）、the final chapter in + N（……的最後一章）、a legendary story（傳奇故事）、exaggerate the danger（誇大危險）。mark 也是指考 101 年第 11 題的正解，在那一題是 mark Norway’s centenary（紀念挪威獨立百年），意思是「紀念」，和本題不同。"
+ },
+ {
+  "id": "GCLA-g115p1_12",
+  "year": "改編練習（十一）",
+  "passageId": "CLA-g115p1",
+  "blankNum": 12,
+  "category": "字彙選義",
+  "options": {
+   "A": "trapped",
+   "B": "drowned",
+   "C": "dissolved",
+   "D": "released"
+  },
+  "answer": "A",
+  "explanation": "語意「堅忍號碰上浮冰，不久便完全『困』在浮冰群裡」，trapped（受困）符合，後文說船在冰裡漂了九個月才開始損壞；drowned（淹死）、dissolved（溶解）、released（釋放）都和船卡在冰裡的情況不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】中文常說「淹沒在浮冰裡」，所以你可能挑 drowned，而且這艘船後來確實沉了。【怎麼判斷】這一句講堅忍號離開南喬治亞島以後的遭遇：先 ran into floating ice（碰上浮冰），接著 was soon completely ___ in pack ice，空格要的是船在浮冰裡的狀態。逗號後面的 or huge sheets of sea ice pressed tightly together（也就是緊緊擠在一起的大片海冰）用 or 帶出 pack ice 的解釋，讀懂這個說明，就知道船四周的冰擠得密密實實，be trapped in + N（受困於……）說的正是這種處境。例句：During the typhoon, hundreds of travelers were trapped at the airport for two days.（颱風期間，好幾百名旅客受困機場兩天。）【誘答選項】drowned：中文「淹沒」讀起來很順。可是 drown 的核心義是「（人或動物）淹死」，英文說船沉沒用的是 sink；下一句又說船在冰裡漂了九個月，可見這時船並沒有沉。中文會通，是因為「淹沒」也可以用在東西上。dissolved 是「溶解」，木船不會溶在冰裡。released 是「釋放」，和船後來一直卡在冰裡、只好棄船的發展相反。【常考字詞與句型】be trapped in + N（受困於……）、run into + N（碰上……）、pack ice（浮冰群）、be pressed tightly together（緊緊擠在一起）、dissolve in water（溶於水）、release sb from + N（把某人從……釋放出來）。"
+ },
+ {
+  "id": "GCLA-g115p1_13",
+  "year": "改編練習（十一）",
+  "passageId": "CLA-g115p1",
+  "blankNum": 13,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "broke down",
+   "B": "sped up",
+   "C": "held up",
+   "D": "turned over"
+  },
+  "answer": "C",
+  "explanation": "語意「九個月來，這艘堅固的船一直『經得住』冰的擠壓，先往南漂，接著又讓浮冰推著往北」，held up（承受住、保持完好）符合，下一句才說冰的壓力漸漸讓船板變形；broke down（故障）、sped up（加速）、turned over（翻覆）都不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】hold up 你最常看到的大概是 be held up（受到耽擱），例如 I was held up in traffic.（我塞在車陣裡。）於是覺得讀不通，改選 broke down：船停在冰上不能航行，中文說「拋錨了九個月」好像也合理。【怎麼判斷】主詞是 the sturdy ship（這艘堅固的船），空格後面沒有受詞，要填的是說明船九個月來狀態的片語動詞。sturdy（堅固的）點出船的特點，For nine months 說明這個狀態持續了九個月。hold up 不接受詞時，意思是「（在壓力或考驗下）承受得住、保持完好」，正好和 sturdy 這個線索配合。下一句 Gradually, the pressure of the ice bent its wooden boards（冰的壓力漸漸讓船板變形）可以驗算：船過了這段時間才開始損壞，可見在那之前一直完好。例句：My old phone held up well for five years, but the battery finally died last month.（我的舊手機用了五年都還好好的，上個月電池才壞掉。）【誘答選項】broke down：中文「拋錨」用在交通工具上很自然。可是 break down 指機器突然故障，是一下子發生的事，不能和 for nine months 連用。中文會通，是因為「拋錨」也可以指停著動不了，英文的 break down 卻只講故障的那一刻。sped up 是「加速」，和 drifting slowly（緩緩漂流）語意矛盾。turned over 是「翻覆」，船要是翻了，就不會在冰上漂九個月。【常考字詞與句型】hold up well（經得起考驗、保持良好）、break down（故障；崩潰）、speed up（加速）、drift slowly（緩緩漂流）、turn over（翻覆；翻面）。break down 也是學測 101 年第 26 題的正解，那一題是 break down barriers（打破障礙），意思和本題的「故障」不同。"
+ },
+ {
+  "id": "GCLA-g115p1_14",
+  "year": "改編練習（十一）",
+  "passageId": "CLA-g115p1",
+  "blankNum": 14,
+  "category": "時態／語態",
+  "options": {
+   "A": "have spent",
+   "B": "had spent",
+   "C": "would spend",
+   "D": "were spending"
+  },
+  "answer": "B",
+  "explanation": "【句型】By the time + 過去式子句，主要子句用過去完成式，表示到那個時間點為止已經完成的事，語意「船員搭救生艇抵達象島時，『已經』在浮冰上紮營了五個月」，had spent 符合；have spent、would spend、were spending 的時間都對不上。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】看到 five months 這段時間，你可能想到「持續了一段時間就用完成式」，於是選 have spent；或者覺得紮營是持續的動作，選了進行式 were spending。【怎麼判斷】四個選項都是 spend 的不同形態，可見這一格考的是時態。By the time the men sailed in lifeboats to Elephant Island（等到船員搭救生艇抵達象島的時候）是過去的一個時間點，主要子句講的是這個時間點以前的事，所以用過去完成式 had + p.p.：they had spent five months camping on the drifting ice。還原成兩句來驗算：The men camped on the ice for five months. Then they sailed to the island.（船員先在浮冰上紮營五個月，然後才航向這座島。）先發生的那一件用過去完成式。至於 where no one lived，這是說明 Elephant Island 的關係子句，說明這是一座荒島。例句：By the time the concert started, we had waited in line for three hours.（演唱會開始的時候，我們已經排隊排了三個小時。）【誘答選項】have spent 是現在完成式：可是現在完成式的基準點是「現在」，本句的基準點卻是 By the time 帶出的過去時間。中文沒有時態變化，英文卻要看基準點決定時態。would spend 是「過去的未來」，意思成了抵達象島以後才去浮冰上紮營，先後順序相反。were spending 表示抵達象島的那一刻正在浮冰上紮營，可是人已經到了島上。【常考字詞與句型】By the time + 過去式, S + had + p.p.（到……的時候，已經……）、spend + 時間 + V-ing（花時間做……）、camp on + N（在……上紮營）、sail to + 地點（航行到……）。"
+ },
+ {
+  "id": "GCLA-g115p1_15",
+  "year": "改編練習（十一）",
+  "passageId": "CLA-g115p1",
+  "blankNum": 15,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "Then again",
+   "B": "For instance",
+   "C": "In the end",
+   "D": "What is more"
+  },
+  "answer": "C",
+  "explanation": "語意「救援看似近在眼前，冰和惡劣的天氣卻讓他們一直回不了象島；『最後』，Shackleton 在 1916 年 8 月 30 日開著一艘船回到象島」，In the end（最後、終於）帶出一番波折之後的結果；Then again（話說回來）、For instance（例如）、What is more（而且）都接不上前一句。",
+  "contextSpan": "跨句",
+  "contextNote": "前一句 Help was almost at hand, but ice and bad weather kept them from returning to the island 說他們一再受阻，本句寫的是受阻之後終於回到象島，才知道要填表示經過波折後有了結果的轉折詞",
+  "note": "【你可能會這樣想】前一句有 but，本句又是好消息，前後語氣好像相反，你可能挑表示轉折的 Then again（話說回來）。【怎麼判斷】四個選項都是轉折詞，非讀前一句不可。前一句是 Help was almost at hand, but ice and bad weather kept them from returning to the island.（救援看似近在眼前，冰和惡劣的天氣卻讓他們一直回不了象島。）kept them from returning to the island 說的是一段受阻的時間，本句 Shackleton returned to Elephant Island on August 30, 1916 則是受阻之後的結果。先有波折、後有結果，屬於邏輯勾環，In the end（最後、終於）正是用來帶出這種結局。例句：Our class argued for weeks about where to go on our graduation trip, but in the end we chose Hualien.（我們班為了畢業旅行要去哪裡爭論了好幾個星期，最後選了花蓮。）【誘答選項】Then again：中文「話說回來」好像能表示語氣一轉。可是 then again 是說話的人對自己剛說的話打個折扣，補上另一個考量；本句和前一句卻是事情的先後發展。中文會通，是因為「話說回來」常拿來轉換話題，英文的 then again 是拿另一個考量來削弱前面的說法，前後要是兩種看法。For instance（例如）帶出實例，本句不是受阻的例子。What is more（而且）追加同方向的資訊，兩句方向卻不同。【常考字詞與句型】in the end（最後、終於）、at the end of + N（在……的末尾）、be at hand（近在眼前）、keep sb from + V-ing（使某人無法……）、then again（話說回來）。for instance（例如）當答案的是學測 85 年第 33 題與指考 95 年第 14 題。"
+ },
+ {
+  "id": "GCLA-g111p1_11",
+  "year": "改編練習（十二）",
+  "passageId": "CLA-g111p1",
+  "blankNum": 11,
+  "category": "字彙選義",
+  "options": {
+   "A": "helpless",
+   "B": "careless",
+   "C": "homeless",
+   "D": "fearless"
+  },
+  "answer": "D",
+  "explanation": "語意「多年來，這群『無所畏懼的』族人頑強抵抗奴役，也不理會政府要他們改採較現代生活方式的勸說」，fearless（無所畏懼的）符合 stood strong against 和 resisted 這兩個勇於對抗的動作；helpless（無助的）、careless（粗心的）、homeless（無家可歸的）都和這兩個動作接不起來。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】你剛讀完前一句的 wander from place to place（四處遷徙），很可能認定馬賽人居無定所，於是選了 homeless。【怎麼判斷】空格要填的形容詞說明馬賽人是什麼樣的人。線索在後面兩個動作：have stood strong against slavery（頑強抵抗奴役）和 resisted their governments’ urging（不理會政府的勸說）。兩個動作都是面對強大的壓力仍然不退讓，能說明這種表現的形容詞只有 fearless。至於前一句的 semi-nomadic（半遊牧的），冒號後的說明就是它的解釋。作文也用得到這個字：Fearless on stage, Kevin sang in front of two thousand students.（Kevin 在台上毫不畏懼，當著兩千名學生唱歌。）【誘答選項】homeless：中文「這群無家可歸的族人」讀起來很順。可是 homeless 指沒有住處、生活困頓的人，和本句講的勇於對抗沒有關係。中文會通，是因為「四處遷徙」很容易讓人聯想成「沒有固定的家」。helpless（無助的）表示無力保護自己，和 stood strong（頑強抵抗）語意矛盾。careless（粗心的）講做事不小心，和抵抗奴役無關。【常考字詞與句型】stand strong against + N（頑強抵抗……）、resist + N／V-ing（抗拒……）、urge sb to V（力勸某人做……）、adopt a lifestyle（採取某種生活方式）、from place to place（四處、到處）、live on + N（靠……維生）。"
+ },
+ {
+  "id": "GCLA-g111p1_12",
+  "year": "改編練習（十二）",
+  "passageId": "CLA-g111p1",
+  "blankNum": 12,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "In theory",
+   "B": "Nonetheless",
+   "C": "In fact",
+   "D": "By the way"
+  },
+  "answer": "C",
+  "explanation": "語意「馬賽人不理會政府要他們改採現代生活方式的勸說；『事實上』，他們是少數保留了大部分傳統的部落之一」，In fact（事實上）帶出更有力的事實來證實前一句；In theory（理論上）、Nonetheless（儘管如此）、By the way（順帶一提）都不合。",
+  "contextSpan": "跨句",
+  "contextNote": "前一句 resisted their governments’ urging to adopt a more modern lifestyle 說馬賽人抗拒現代化，本句說他們保留了大部分傳統，兩句方向相同、後一句更進一步，才知道要填加強語氣的轉折詞",
+  "note": "【你可能會這樣想】前一句講「現代」生活方式，這一句講「傳統」，兩個概念正好相反，你可能因此選了表示讓步的 Nonetheless。【怎麼判斷】要判斷的是這一句和前一句的關係，非讀前一句不可。前一句說馬賽人 resisted their governments’ urging to adopt a more modern lifestyle（不理會政府要他們改採較現代生活方式的勸說），本句說他們保留了大部分傳統。抗拒現代化和保留傳統是同一件事的兩面，本句還說得更重：馬賽人是少數真的做到的部落。兩句方向相同、後一句加強前一句，屬於邏輯勾環，In fact 正是帶出這種更有力的事實的轉折詞。兩句之間也帶著因果的意味：抗拒現代化，所以保留了傳統。不過本句的重點不在交代結果，而是舉出「少數保留了大部分傳統的部落之一」這個事實，證明前一句說的抗拒是真的，所以用 In fact。下一句男孩要獨自殺死獅子才能成為戰士，可以用來驗算。作文裡也常這樣用：Kevin loves basketball. In fact, he practices for two hours every day.（Kevin 很愛打籃球。事實上，他每天練兩個小時。）【誘答選項】Nonetheless：「現代」和「傳統」意思相反，很容易讓人覺得要用轉折的字。可是 Nonetheless（儘管如此）要先承認一件事，再說出和它預期相反的結果；前一句說馬賽人抗拒現代化，照常理推下去正是保留傳統，兩句之間沒有出乎預期的轉折。In theory（理論上）暗示實際情形不是這樣，下一句卻舉出實例。By the way（順帶一提）插入的是和主題無關的話，本句卻是全文重點。【常考字詞與句型】one of the few + 複數名詞（少數……之一）、keep a tradition（保留傳統）、only by + V-ing（只有靠……才能）、on one’s own（獨自）、until recently（直到不久以前）、in theory（理論上）。in fact 也是學測 98 年第 21 題、101 年第 18 題的正解。"
+ },
+ {
+  "id": "GCLA-g111p1_13",
+  "year": "改編練習（十二）",
+  "passageId": "CLA-g111p1",
+  "blankNum": 13,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "belongs to",
+   "B": "varies with",
+   "C": "consists of",
+   "D": "stands out from"
+  },
+  "answer": "B",
+  "explanation": "語意「馬賽人的服裝『隨』年齡、性別和地區『而不同』」，vary with + N（隨……而不同）符合，年齡、性別和地區都是會讓服裝改變的條件；belongs to（屬於）、consists of（由……組成）、stands out from（從……中突顯出來）都和這三個條件接不起來。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】中文說「馬賽人的服裝屬於不同的年齡、性別和地區」好像也講得通，你可能因此選了 belongs to。【怎麼判斷】主詞是 Maasai clothing，空格後是 age, gender, and place（年齡、性別和地區）。這三樣都是條件，條件不同，穿的衣服就不同，所以空格要表示「隨條件而改變」。四個選項都是「動詞 + 介系詞」，只有 vary with + N 能把服裝和這三個條件連起來。後面兩句可以驗算：女性偏好格子、條紋或有圖案的布，是性別造成的差異；年輕男子在成年儀式之後穿黑色，是年齡造成的差異。主旨句先說服裝隨條件而改變，後文逐一舉例，屬於主題勾環。作文也用得到：The way we celebrate birthdays varies with age.（慶祝生日的方式隨年齡而不同。）【誘答選項】belongs to：中文「屬於」用得很寬，「服裝屬於不同年齡」沒什麼不對。可是 belong to 的核心意思是「歸某人所有」或「是某個團體的一員」，後面要接擁有者或團體，年齡、性別和地區都不能擁有服裝。中文會通，是因為「屬於」也能表示「歸類」。consists of（由……組成）後面接組成的材料或成員，服裝不是由年齡、性別和地區組成的。stands out from（從……中突顯出來）要拿主詞和同類的東西相比，年齡、性別和地區不是服裝的同類。【常考字詞與句型】vary with + N（隨……而不同）、vary from person to person（因人而異）、belong to + N（屬於……）、consist of + N（由……組成）、stand out from + N（在……中顯得突出）、opt for + N（選擇……）。"
+ },
+ {
+  "id": "GCLA-g111p1_14",
+  "year": "改編練習（十二）",
+  "passageId": "CLA-g111p1",
+  "blankNum": 14,
+  "category": "關係子句／疑問詞",
+  "options": {
+   "A": "that",
+   "B": "it",
+   "C": "which",
+   "D": "what"
+  },
+  "answer": "C",
+  "explanation": "【句型】逗號後面補充說明前面的事物，要用非限定的關係代名詞 which，代替 colorful glass beads，表示「彩色玻璃珠讓更細緻的設計和配色圖案成為可能」；that 不能放在逗號後面，it 沒有連接兩個子句的作用，what 本身已經含有先行詞。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】中文說「改用玻璃珠，它讓設計更細緻」很自然，that 又常當關係代名詞，你可能在 it 和 that 之間猶豫。【怎麼判斷】四個選項都能當主詞，這一格要看的是句子結構。先數動詞：前半句 Those materials were later replaced by colorful glass beads 已經有完整的主詞和動詞；空格後又有動詞 made，可見後半是另一個子句，兩個子句之間需要有連接作用的字。關係代名詞同時有代名詞和連接詞的作用：它代替 colorful glass beads 當後半句的主詞，也把兩個子句接起來。還原成兩個完整的句子就看得出來：Those materials were later replaced by colorful glass beads. The glass beads made more detailed designs and color patterns possible.（後來這些材料由彩色玻璃珠取代。玻璃珠讓更細緻的設計和配色圖案成為可能。）逗號後補充說明前面的名詞是非限定用法，指事物要用 which：I joined the robotics club, which meets every Friday.（我參加了機器人社，這個社團每週五聚會。）【誘答選項】that：限定用法裡 that 和 which 可以互換，所以你會覺得也行。可是 that 只引導限定的關係子句，前面不加逗號；本句 glass beads 後面已經有逗號。中文會通，是因為中文沒有限定和非限定的分別。it 只是代名詞，填進去就變成兩個完整的句子只用逗號相連。what 等於 the thing that，本身已經包含先行詞，前面不能再有名詞 glass beads。【常考字詞與句型】, which + V（非限定關係子句，補充說明前面的事物）、make + O + possible（讓……成為可能）、be replaced by + N（由……取代）、trade with + N（和……通商）、such as + N（例如……）。"
+ },
+ {
+  "id": "GCLA-g111p1_15",
+  "year": "改編練習（十二）",
+  "passageId": "CLA-g111p1",
+  "blankNum": 15,
+  "category": "字彙選義",
+  "options": {
+   "A": "holds",
+   "B": "shares",
+   "C": "loses",
+   "D": "earns"
+  },
+  "answer": "A",
+  "explanation": "語意「每一種顏色都『具有』特別的意義：白色代表和平……」，hold a meaning（具有某種意義）是常見搭配，holds 符合冒號後逐一列出的意義；shares（共有）表示各種顏色意義相同，loses（失去）表示意義已經不在，冒號後卻說每種顏色仍代表某樣東西，earns（贏得）表示因為表現而得到報酬或名聲，文章沒有交代顏色做了什麼。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】hold 你最熟的意思是「拿著、握著」，顏色又沒有手，於是你可能覺得 shares 比較像在講意義。其實 hold 另有「具有、含有」的意思，受詞可以是抽象的東西，例如 hold a meaning（具有某種意義）。【怎麼判斷】主詞是 Each color，受詞是 a special meaning，空格要填的動詞說明顏色和意義的關係。英文的冒號常用來帶出前面那句話的具體內容，所以線索就在冒號後面：white stands for peace, green for land and production（白色代表和平，綠色代表土地和生產），紅色則代表團結和勇敢。三種顏色各自代表不同的東西，可見每一種顏色都「具有」自己的意義；冒號前後說的是同一件事。作文也用得到：This old photo holds special meaning for my grandmother because it was taken on her first day of school.（這張舊照片對我奶奶有特別的意義，因為是她第一天上學時拍的。）【誘答選項】shares：中文「每種顏色都分享一個特別的意義」勉強讀得通。可是 share 的核心意思是「共同擁有」，Each color shares a special meaning 是說各種顏色共有同一個意義；冒號後面白、綠、紅各代表不同的東西，和「共有」不合。中文會通，是因為中文的「分享」常常只是「說出來讓人知道」。loses（失去）表示原本有、後來沒有了，冒號後卻說白色、綠色、紅色仍各自代表一樣東西，意義並沒有失去。earns（贏得）表示因為表現而得到報酬或名聲，文章沒有交代顏色做了什麼而得到這些意義。【常考字詞與句型】hold a special meaning（具有特別意義）、stand for + N（代表……）、be popular among + N（受……歡迎）、a symbol of + N（……的象徵）、share A with B（和 B 分享 A）、lose meaning（失去意義）。"
+ },
+ {
+  "id": "GCLA-g107p1_11",
+  "year": "改編練習（十三）",
+  "passageId": "CLA-g107p1",
+  "blankNum": 11,
+  "category": "字彙選義",
+  "options": {
+   "A": "meeting",
+   "B": "ceremony",
+   "C": "lottery",
+   "D": "competition"
+  },
+  "answer": "D",
+  "explanation": "語意「新首都開始規劃時，政府舉辦了一場『比賽』，替總統府尋找建造者」，competition（比賽）符合，下一句有人送件、有人贏得金牌；meeting（會議）、ceremony（典禮）、lottery（抽籤）都接不上送件和得獎的內容。",
+  "contextSpan": "跨句",
+  "contextNote": "下一句 Nine designs were submitted 和 won the gold medal 說有人提交設計、有人得到金牌，才知道舉行的是比賽，不是會議或抽籤",
+  "note": "【你可能會這樣想】空格後是 was held to find a builder（舉行……來找建造者），中文說「開會決定由誰來蓋」很自然，所以最容易選的是 meeting。只看這一句確實分不出來，要往下讀才知道。【怎麼判斷】四個選項都能 be held（舉行），本句只交代目的是 to find a builder，還不足以判斷。線索在下一句：Nine designs were submitted（共有九件設計送件），James Hoban 又 won the gold medal（贏得金牌）。提交作品和得到金牌都是比賽才有的事：有人送件，評審依作品好壞排名次，第一名得到金牌，屬於主題勾環。James Hoban 後面用逗號隔開的 an Irish-born architect 是同位語，說明他的身分；讀到 architect（建築師），就知道他參加的是設計比賽。【誘答選項】meeting：中文「舉行會議，找出建造者」讀起來很順。可是 meeting 是一群人聚在一起討論事情，不頒發金牌；中文會通，是因為中文的「找人」可以靠開會討論。ceremony 是「典禮」，用來慶祝已經決定的事，舉行典禮時建造者早就選好了。lottery 是「抽籤」，結果全憑運氣，下一句卻說 Hoban 得獎憑的是 practical and handsome design（實用又美觀的設計）。【常考字詞與句型】hold a competition（舉辦比賽）、enter a competition（參加比賽）、submit a design（提交設計）、win the gold medal（贏得金牌）、hold a meeting（開會）、win the lottery（中樂透）。competition 也是學測 109 年第 17 題的選項，那一題當「競爭」講，和本題的「比賽」意思不同。"
+ },
+ {
+  "id": "GCLA-g107p1_12",
+  "year": "改編練習（十三）",
+  "passageId": "CLA-g107p1",
+  "blankNum": 12,
+  "category": "字彙選義",
+  "options": {
+   "A": "promise",
+   "B": "rumor",
+   "C": "protest",
+   "D": "policy"
+  },
+  "answer": "D",
+  "explanation": "語意「Jefferson 也開放白宮讓民眾參觀，這項『政策』從那時起一直實行，只有戰爭期間例外」，policy（政策、做法）符合；promise（承諾）、rumor（謠言）、protest（抗議）都不能用來指 Jefferson 實際做出、而且實行至今的開放參觀。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】中文說「這個承諾一直持續到今天」很順口，所以 promise 最容易選。【怎麼判斷】逗號後的 a ___ that has continued ever since, except during wartime（從那時起一直實行、只有戰爭期間例外的……）是同位語，說明前面整件事：Jefferson also opened the house for public tours（Jefferson 也開放白宮讓民眾參觀）。所以空格的名詞要能概括「開放白宮參觀」這件事。policy 是「政策、做法」，指主事的人決定之後持續執行的辦法，正好符合。作文例句：Our school added a reading hour on Fridays, a policy that many students enjoy.（我們學校週五增加了一小時閱讀時間，許多學生都喜歡這項做法。）【誘答選項】promise 是「承諾」：中文「這個承諾持續至今」好像也說得通。可是 promise 是說出口、還沒做到的事，逗號前的 opened 卻是已經完成的動作；中文會通，是因為中文的「持續」後面可以接的名詞很多。rumor 是「謠言」，句中的開放參觀卻是確實發生的事。protest 是「抗議」，開放白宮並不是在反對什麼。【常考字詞與句型】adopt a policy（採取政策）、keep a promise（信守承諾）、spread a rumor（散播謠言）、protest against + N（抗議……）、open sth to the public（對大眾開放……）。"
+ },
+ {
+  "id": "GCLA-g107p1_13",
+  "year": "改編練習（十三）",
+  "passageId": "CLA-g107p1",
+  "blankNum": 13,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "set up",
+   "B": "carried on",
+   "C": "did away with",
+   "D": "signed up for"
+  },
+  "answer": "B",
+  "explanation": "語意「後來 Abraham Lincoln『延續』了這些慣例，但是就職日的人潮多到白宮容納不下」，carried on（繼續進行）符合；set up（設立）、did away with（廢除）、signed up for（報名參加）都和慣例早已存在、人潮多到容納不下的內容不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】set up 你最熟的是「設立」，看到 these customs（這些慣例），會覺得「林肯設立了這些慣例」很通順。可是 these 回指前文的活動。【怎麼判斷】these customs 指前兩句 Jefferson 開放白宮、舉辦招待會這些事，屬於指標勾環，later（後來）也表示這些慣例是前人留下的。but 後面說 the inaugural crowds grew far too large for the house to hold（就職日的人潮多到白宮容納不下），表示活動一直在辦。所以空格要填「繼續進行」。作文例句：Our club has carried on the tradition of a summer beach cleanup.（我們社團一直延續夏天淨灘的傳統。）【誘答選項】set up 是「設立」，中文「立下這些慣例」好像也說得通。可是 set up 指從無到有，these customs 和 later 都說明慣例在 Jefferson 的年代就有了；中文會通，是因為讀中文時很容易忽略 these。did away with 是「廢除」，活動廢除了就不會有 but 後面多到容納不下的人潮。signed up for 是「報名參加」，林肯卻是接待民眾的主人。【常考字詞與句型】carry on with + N（繼續做……）、do away with + N（廢除……）、sign up for + N（報名參加……）、far too + adj. + for sb to V（太……以致於某人無法……）。set up 也是學測 110 年第 17 題的選項，意思同樣是「設立」；carry on 是指考 109 年第 19 題的選項。"
+ },
+ {
+  "id": "GCLA-g107p1_14",
+  "year": "改編練習（十三）",
+  "passageId": "CLA-g107p1",
+  "blankNum": 14,
+  "category": "字彙選義",
+  "options": {
+   "A": "address",
+   "B": "create",
+   "C": "overlook",
+   "D": "describe"
+  },
+  "answer": "A",
+  "explanation": "語意「一直到 Grover Cleveland 第一次擔任總統時，才實施了有效的人潮管制措施來『處理』這個問題」，address 當動詞是「處理（問題）」；create（製造）、overlook（忽視）、describe（描述）都不是有效的管制措施要達成的目的。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】address 你最熟的是名詞「地址」，頂多知道它有「演說」的意思，很難想像它能接 the problem；於是你可能挑 describe，覺得「描述問題」也講得通。其實 address 當動詞時，常見的意思就是「處理、設法解決（問題）」。【怎麼判斷】主詞是 Effective crowd control measures（有效的人潮管制措施），to ___ the problem 說明措施的目的；the problem 回指前一句的 a security problem（安全問題）。措施既然是 crowd control（管制人潮），又是 effective（有效的），目的自然是解決問題，所以空格要填「處理」。address 這個意思和 deal with 相近，後面常接 problem、issue、concern：The principal promised to address students’ concerns about the new dress code.（校長承諾會處理學生對新服裝規定的疑慮。）【誘答選項】describe 是「描述」：中文「用措施來說明問題」乍讀好像也通。可是 describe 只是把情形說出來，crowd control measures 卻是實際的行動，目的在讓問題消失；中文會通，是因為「說明」和「處理」後面都能接「問題」。create 是「製造」，問題在前一句已經存在。overlook 是「忽視」，忽視問題的措施談不上 effective（有效的）。【常考字詞與句型】address the problem／issue（處理問題）、address sb’s concerns（處理某人的疑慮）、crowd control measures（人潮管制措施）、introduce measures（實施措施）、S + not + V + until + 時間（直到……才……）、overlook a mistake（忽略錯誤）。overlook 也是學測 106 年第 23 題的選項，意思同樣是「忽視」。"
+ },
+ {
+  "id": "GCLA-g107p1_15",
+  "year": "改編練習（十三）",
+  "passageId": "CLA-g107p1",
+  "blankNum": 15,
+  "category": "連接詞／轉折詞",
+  "options": {
+   "A": "Originally",
+   "B": "Finally",
+   "C": "Unfortunately",
+   "D": "Generally"
+  },
+  "answer": "B",
+  "explanation": "語意「白宮在不同時期用過其他幾個名稱；『最後』，Theodore Roosevelt 總統在 1901 年正式替它取了現在的名稱」，Finally（最後、終於）帶出幾經變化之後的結果；Originally（起初）、Unfortunately（不幸地）、Generally（一般而言）都不合前後句的關係。",
+  "contextSpan": "跨句",
+  "contextNote": "前一句 At various times, the White House went by several other names 說白宮在不同時期換過好幾個名稱，本句 1901 年正式定名是這段過程的結局，讀了前一句才知道要填表示最後結果的轉折詞",
+  "note": "【你可能會這樣想】本句講的是正式命名，你可能覺得「命名」聽起來像一切的起點，於是選了 Originally（起初）。可是前一句說白宮在這之前已經用過好幾個名稱，1901 年是終點，不是起點。【怎麼判斷】四個選項都是放在句首的副詞，要判斷兩句之間的關係，非讀前一句不可：the White House went by several other names（白宮用過其他幾個名稱）。such as 後面舉的就是 several other names 的例子，所以就算不認得 Executive Mansion，也知道它是舊名稱。名稱換過好幾次，到 1901 年才正式確定，這是一段過程的結局，屬於邏輯勾環。Finally 放在句首，帶出經過一段時間或幾番變化之後的結果。作文例句：I tried three different part-time jobs last summer. Finally, I found one at a bookstore that I really enjoyed.（去年暑假我換了三份打工，最後在一家書店找到真正喜歡的工作。）【誘答選項】Originally（起初）：讀到 present name（現在的名稱），很容易聯想到名稱的由來，以為這裡在講起源。可是 Originally 要帶出最早的情況，前一句已經說白宮在這之前用過別的名稱，1901 年的命名排在這些名稱之後。Unfortunately（不幸地）表示作者認為接下來是壞事，文章敘述正式定名時沒有任何負面的評價。Generally（一般而言）用來做概括的陳述，本句講的卻是 1901 年的單一事件。【常考字詞與句型】at last（終於）、go by + 名稱（用……這個名稱）、such as + N（例如……）、generally speaking（一般來說）。originally 是學測 98 年第 22 題的正解，意思同樣是「最初」；Generally 是指考 108 年第 13 題的選項。"
+ },
+ {
+  "id": "GCLA-g106p1_11",
+  "year": "改編練習（十四）",
+  "passageId": "CLA-g106p1",
+  "blankNum": 11,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "lose sight of",
+   "B": "make room for",
+   "C": "shed light on",
+   "D": "keep an eye on"
+  },
+  "answer": "C",
+  "explanation": "語意「這家公司的線上測驗，能讓你『更了解』狗狗吠叫背後的那顆腦袋」，shed light on（讓人更了解、說明清楚）符合，和前一句 help you learn more about 說的是同一件事；lose sight of（忽略、看不見）、make room for（騰出空間給）、keep an eye on（看管、留意）都不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】shed 這個字你可能不認得，很難和「了解」連在一起；反倒是 keep an eye on 每個字都認得，於是你很可能選它。shed light on 要整組記，意思是「讓人更了解」。【怎麼判斷】本句的主詞是 Its online test，受詞是 the brain behind the bark（吠叫背後的那顆腦袋）。測驗會給出資訊，所以空格要填「讓人更了解」。前一句的 will help you learn more about your dog’s cognitive traits（能幫你進一步了解狗狗的認知特質）可以驗算：learn more about 和 shed light on 意思相近，這是同義勾環。至於 cognitive traits，破折號後面的 the ways it thinks and learns（狗狗思考和學習的方式）就是它的解釋。【誘答選項】keep an eye on：中文「關注狗狗的大腦」很順，所以最有吸引力。可是 keep an eye on 的核心意思是「持續留意、看管」；一份做完就給報告的測驗，並不會一直看守狗的腦袋。中文會通，是因為「關注」可以只是「想了解」，英文的 keep an eye on 卻是看管。lose sight of（忽略、看不見）和前一句「幫你進一步了解」的方向相反。make room for（騰出空間給……）講的是空間或時間的安排。【常考字詞與句型】shed light on + N（讓人更了解……）、keep an eye on + N（看管、留意……）、lose sight of + N（忽略……）、make room for + N（騰出空間給……）。"
+ },
+ {
+  "id": "GCLA-g106p1_12",
+  "year": "改編練習（十四）",
+  "passageId": "CLA-g106p1",
+  "blankNum": 12,
+  "category": "字彙選義",
+  "options": {
+   "A": "complex",
+   "B": "precise",
+   "C": "ordinary",
+   "D": "fragile"
+  },
+  "answer": "A",
+  "explanation": "語意「Hare 博士說，狗的智力太『複雜』，沒辦法用單一數字來描述」，complex（複雜的）說明了用一個數字描述不了的原因，也和下一句狗跟人一樣有不同種類的智力呼應；precise（精確的）、ordinary（平凡的）、fragile（脆弱的）都不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】這一格你最可能猶豫的是 precise，因為中文會把它讀成「精細」；其實 precise 的意思是「精確的」。【怎麼判斷】too + adj. + to V 表示「太……以致於不能……」，空格的形容詞要說明狗的智力為什麼沒辦法用單一數字描述。描述不了，表示這個東西由好幾個部分組成，也就是 complex（複雜的）。上文說測驗涵蓋狗狗智力的 several areas（好幾個面向），同一句的 the ability to understand how others feel, known as empathy 也是文中提示：known as 後面是名稱，前面就是它的意思，所以不認得 empathy，也知道它指「體會別人感受的能力」。下一句拿狗和人比較，同樣說狗有不同種類的智力，這是主題勾環。例句：The college admission system is too complex to explain in five minutes.（大學入學制度太複雜，五分鐘講不完。）【誘答選項】precise：中文說「狗的智力太精細，沒辦法用數字描述」讀得通，所以最有吸引力。可是數字正是最精確的描述方式，說智力「太精確，所以不能用數字描述」就語意矛盾了。中文會通，是因為「精」同時有「精確」和「精細」兩種意思。ordinary（平凡的）不合，越平凡的東西越容易描述。fragile（脆弱的）和能不能用數字描述無關。【常考字詞與句型】too + adj. + to V（太……以致於不能……）、a complex problem（棘手的問題）、a precise answer（精確的答案）、Just as A, so B（正如 A，B 也一樣）。"
+ },
+ {
+  "id": "GCLA-g106p1_13",
+  "year": "改編練習（十四）",
+  "passageId": "CLA-g106p1",
+  "blankNum": 13,
+  "category": "字彙選義",
+  "options": {
+   "A": "appetite",
+   "B": "growth",
+   "C": "personality",
+   "D": "health"
+  },
+  "answer": "C",
+  "explanation": "語意「網站會帶你填一份問卷，也就是一系列關於狗狗『個性』的問題，例如狗狗在其他狗或小孩身邊會有多興奮」，personality（個性）符合冒號後面舉的問題；appetite（食慾）、growth（成長、發育）、health（健康）都和這個問題問的內容不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】看到 questionnaire（問卷），你可能先想到帶狗去動物醫院時要填的表格，於是選 health（健康）。【怎麼判斷】逗號後面的 a list of questions about your dog’s ___（一系列關於狗狗……的問題）是同位語，所以不認得 questionnaire 也能知道它是「一系列的問題」。空格要填這些問題問的是狗的哪一方面，答案就在冒號後面。冒號常用來帶出具體的例子，這裡帶出的是 How excited does your dog get around other dogs or children?（狗狗在其他狗或小孩身邊會有多興奮？）問狗見到別的狗或小孩會不會興奮，問的是狗的性情，也就是 personality（個性）。例句：My cat has a shy personality, so she hides in my room whenever guests come over.（我家貓咪個性害羞，只要有客人來，她就躲進我的房間。）【誘答選項】health：中文說「關於狗狗健康的問題」很自然，所以最有吸引力；可是冒號後面的問題問的是狗在其他狗和小孩身邊的反應，不是身體狀況。appetite（食慾）指想不想吃東西，問題裡沒有一句和吃有關。growth（成長、發育）指體型的變化，問題也沒有提到。【常考字詞與句型】a list of + N（一系列的……）、fill out a questionnaire（填寫問卷）、have an outgoing personality（個性外向）、lose one’s appetite（沒有食慾）、be in good health（身體健康）。"
+ },
+ {
+  "id": "GCLA-g106p1_14",
+  "year": "改編練習（十四）",
+  "passageId": "CLA-g106p1",
+  "blankNum": 14,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "fall into",
+   "B": "turn into",
+   "C": "run into",
+   "D": "break into"
+  },
+  "answer": "A",
+  "explanation": "語意「你的狗會『歸入』九種類型之一，例如 Einstein 型和 Charmer 型」，fall into 後面接類別時是「屬於、歸入」，符合測驗替狗分類的內容；turn into（變成）、run into（偶然遇到）、break into（闖入）都不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】fall 你最熟的意思是「跌倒、掉落」，fall into 讀起來像「掉進去」，好像和分類無關；反倒是 turn into（變成），中文說「你的狗會變成九種類型之一」很順，於是你很可能選它。其實 fall into 後面接 category、group 這類表示類別的名詞時，意思是「屬於、歸入（某一類）」。【怎麼判斷】本句的主詞是 Your dog，空格後面是 one of nine categories（九種類型之一），逗號後面的 such as Einstein and Charmer 舉出其中兩種類型的名稱。such as 後面列的是前面那個名詞的例子，不認得 categories 也能推出它是「類型」。四個選項都是「動詞 + into」，關鍵在前面的動詞，只有 fall into 能接類別，表示狗原本就屬於那一類。例句：Most of the complaints from students fall into three groups: lunch, homework, and school rules.（學生的抱怨大多可以歸成三類：午餐、作業和校規。）【誘答選項】turn into：中文說「變成某一類」很順，所以最有吸引力。可是 turn into 指本質或樣子改變，例如 Caterpillars turn into butterflies.（毛毛蟲會變成蝴蝶。）測驗只是看出狗原本是哪一型，狗本身並沒有改變。中文會通，是因為口語的「變成」有時只是「結果是」的意思，英文的 turn into 卻一定有前後的變化。run into 是「偶然遇到」。break into 是「闖入」。【常考字詞與句型】fall into a category（歸入某一類）、turn A into B（把 A 變成 B）、run into an old friend（巧遇老朋友）、break into a house（闖入民宅）。break into 也是指考 98 年第 14 題的選項，意思同樣是「闖入」。"
+ },
+ {
+  "id": "GCLA-g106p1_15",
+  "year": "改編練習（十四）",
+  "passageId": "CLA-g106p1",
+  "blankNum": 15,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "On the other hand",
+   "B": "To begin with",
+   "C": "In conclusion",
+   "D": "More importantly"
+  },
+  "answer": "D",
+  "explanation": "語意「這讓你有東西可以在臉書上炫耀一番；『更重要的是』，測驗結果能幫你看懂狗為什麼會有那些行為」，More importantly 帶出比前一句分量更重的好處；On the other hand（另一方面）、To begin with（首先）、In conclusion（總之）都不合前後兩句的關係。",
+  "contextSpan": "跨句",
+  "contextNote": "前一句 That gives you something to boast about on Facebook 先說可以拿來炫耀的小用處，本句再說能看懂狗的行為，讀了前一句才看得出兩句同一方向、後一項分量更重",
+  "note": "【你可能會這樣想】這一格最容易選的是 On the other hand。前一句講在臉書上炫耀，本句講了解狗的行為，兩件事看起來很不一樣。可是 on the other hand 要帶出的是和前一句對立的情況，本句和前一句講的都是測驗結果的好處，方向相同。【怎麼判斷】四個選項都是轉折詞，非讀前一句不可。前一句是 That gives you something to boast about on Facebook.（這讓你有東西可以在臉書上炫耀一番。）本句說測驗結果能幫你看懂狗為什麼會有那些行為。兩句都在講測驗結果的用處：炫耀是好玩的小用處，了解狗的行為才是實實在在的大用處，後一項比前一項更有分量，這是邏輯勾環裡的遞進關係，More importantly（更重要的是）正好帶出這層關係。下一句用 For example 舉 Charmer 型的狗為例，也印證這一句是重點。學生作文也用得到：Joining the school band helped me make new friends. More importantly, it taught me how to work with others.（參加學校樂隊讓我交到新朋友，更重要的是，它教會我怎麼和別人合作。）【誘答選項】On the other hand 表示對比，前後兩句要有相反的情況；本句和前一句都是好處，沒有對立。To begin with（首先）帶出列舉的第一項，可是前一句已經講了一個用處。In conclusion（總之）用在全文收尾，本句後面還有 For example 舉例。【常考字詞與句型】more importantly（更重要的是）、on the other hand（另一方面）、to begin with（首先）、in conclusion（總之）、boast about + N（誇耀……）。on the other hand 是學測 102 年第 17 題與指考 102 年第 14 題的正解；to begin with 也是學測 94 年第 27 題的選項。"
+ },
+ {
+  "id": "GCLA-g103p4_11",
+  "year": "改編練習（十五）",
+  "passageId": "CLA-g103p4",
+  "blankNum": 11,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "pay for",
+   "B": "lead to",
+   "C": "account for",
+   "D": "come with"
+  },
+  "answer": "D",
+  "explanation": "語意「許多新車現在都『配備』駕駛輔助技術，能自動停車、辨識交通標誌、及時煞車」，come with（附有、配備）符合；pay for（付錢買）、lead to（導致）、account for（占……比例；解釋）都不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】come with 你最熟的大概是「跟某人一起來」（Can I come with you?），很難想像車子「跟技術一起來」，於是你可能避開它，改選 pay for，把句子讀成「新車要付錢加裝各種輔助技術」。【怎麼判斷】空格後面接 driver assistance technologies（駕駛輔助技術），要找新車和技術的關係。後面的 that let them park themselves, read traffic signs, and brake to avoid crashes 說明這些技術已經是車子本身的功能。come with 用在產品上，意思是「附有、配備」，說的正是新車出廠時就裝好了這些技術：My new phone comes with a camera that takes clear pictures at night.（我的新手機配備了夜拍也很清楚的相機。）【誘答選項】pay for：中文「新車付錢加裝技術」讀起來很順，最有吸引力。可是 pay for 的意思是「付錢買」，付錢的是買車的人，不是車子；中文會通，是因為口語常省略付錢的人。lead to（導致）後面要接結果，這些技術是車上的配備，不是車子造成的結果。account for（占……比例；解釋）的主詞多半是數量或原因，新車兩者都不是。【常考字詞與句型】come with + N（附有、配備……）、pay for + N（付錢買……）、lead to + N（導致……）、account for + N（占……比例；解釋……）、driver assistance technology（駕駛輔助技術）。lead to 也是指考 92 年第 25 題的正解，意思同樣是「導致」。"
+ },
+ {
+  "id": "GCLA-g103p4_12",
+  "year": "改編練習（十五）",
+  "passageId": "CLA-g103p4",
+  "blankNum": 12,
+  "category": "字彙選義",
+  "options": {
+   "A": "expose",
+   "B": "alert",
+   "C": "admit",
+   "D": "entitle"
+  },
+  "answer": "B",
+  "explanation": "語意「透過 V2I，車子能『提醒』駕駛注意前方的安全問題，並且幫駕駛找出最佳路線」，alert sb to sth（提醒某人注意某事）符合；expose（使暴露於）、admit（允許進入）、entitle（使有權利）都不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】alert 你最熟的可能是形容詞「警覺的」，不太會想到它能當動詞。中文想成「讓駕駛接觸到前方的安全問題」，就會選 expose。【怎麼判斷】前一句列出 V2I 連結的 road signs, traffic lights, and traffic management systems（道路標誌、紅綠燈和交通管理系統），這就是 Infrastructure 的意思。這一句後半說 help them find the best routes（幫駕駛找出最佳路線）；safety problems ahead（前方的安全問題）是駕駛要事先知道的狀況，所以空格要填 alert，alert sb to sth 就是讓某人注意到某件事：My phone alerts me to heavy rain before it starts.（手機會在下大雨前通知我。）【誘答選項】expose：中文「讓駕駛接觸到安全問題」可是 expose sb to sth 的核心意思是「使某人暴露在危險或不好的事物之中」，和 V2I 提升安全的目的相反；中文會通，是因為「接觸」不分好壞，英文的 expose 卻帶著危險的意思。admit sb to（允許某人進入）後面要接學校或場所。entitle sb to（使某人有權利得到）後面要接權利或好處。【常考字詞與句型】alert sb to sth（提醒某人注意某事）、expose sb to sth（使某人暴露於……）、be admitted to + 學校（獲得……的入學許可）、be entitled to + N（有權利得到……）、traffic management system（交通管理系統）。"
+ },
+ {
+  "id": "GCLA-g103p4_13",
+  "year": "改編練習（十五）",
+  "passageId": "CLA-g103p4",
+  "blankNum": 13,
+  "category": "連接詞／轉折詞",
+  "options": {
+   "A": "Meanwhile",
+   "B": "In time",
+   "C": "That is",
+   "D": "In particular"
+  },
+  "answer": "A",
+  "explanation": "語意「V2V 和 V2I 都可能防止大約八成的車禍；『在此同時』，好幾家公司更進一步研發自己會開的汽車」，Meanwhile（在此同時、另一方面）帶出同一時期另一方面的發展；In time（終於、遲早）、That is（也就是說）、In particular（尤其是）都不合。",
+  "contextSpan": "跨句",
+  "contextNote": "前一句 Both V2V and V2I could prevent around 80 percent of crashes 講車輛通訊，本句改講自己會開的汽車，再加上 going a step further，才知道是同一時期另一方面的發展",
+  "note": "【你可能會這樣想】meanwhile 你最熟的意思大概是「同時」，指兩個動作在同一個時間點發生。這裡看不出是哪一個時間點，於是你可能轉向 In time，把句子讀成「隨著時間過去，有些公司更進一步」。【怎麼判斷】四個選項都是轉折詞，要看這一句和前一句的關係。前一句是 Both V2V and V2I could prevent around 80 percent of crashes.（V2V 和 V2I 都可能防止大約 80% 的車禍。）講的是車輛之間、車輛和設施之間的通訊。這一句的主角換成 a number of firms（好幾家公司），做的事是研發 cars that drive themselves（自己會開的汽車），going a step further（更進一步）也表示這是通訊之外的另一條路。兩件事在同一段時期各自進行，Meanwhile 正好表示「在此同時、另一方面」，不限於同一個時間點，也可以指同一段時期，屬於邏輯勾環。【誘答選項】In time：中文「隨著時間過去，有些公司更進一步」讀起來很順，所以這個選項最有吸引力。可是 In time 的意思是「經過一段時間之後，終於……」，後面多半接最後的結果；這一句的 are going a step further 是現在進行式，講的是眼前正在發生的事，不是等了一段時間才出現的結果；中文會通，是因為「隨著時間」可以泛指時代進步，英文的 in time 卻是指一件事最後的結局。That is（也就是說）用來把前一句換個說法再講一次，這一句卻是新的資訊。In particular（尤其是）從前面講的範圍裡挑出一項，自動駕駛汽車卻不在 V2V 和 V2I 的範圍裡。【常考字詞與句型】Meanwhile, + 子句（在此同時；另一方面）、go a step further（更進一步）、in time（終於；遲早）、in time for + N（及時趕上……）、in particular（尤其是）、at the controls（操控著車輛或飛機）。meanwhile 也是指考 91 年第 16 題的選項。"
+ },
+ {
+  "id": "GCLA-g103p4_14",
+  "year": "改編練習（十五）",
+  "passageId": "CLA-g103p4",
+  "blankNum": 14,
+  "category": "分詞／動狀詞",
+  "options": {
+   "A": "driven",
+   "B": "to drive",
+   "C": "having driven",
+   "D": "driving"
+  },
+  "answer": "D",
+  "explanation": "【句型】film + 受詞 + V-ing：語意「Google 拍下一輛這種車『載著』一位盲人去速食店買外帶漢堡的過程」，做 drive 這個動作的是受詞 one of them，後面又接受詞 a blind man，所以用主動的 driving；driven 後面接不了受詞，to drive 不合 film 的句型，having driven 表示動作已經結束，拍不到過程。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】中文會說盲人「讓車子載著」去買漢堡，你可能覺得這一句講的是盲人受到的動作，於是選了 driven。【怎麼判斷】這一句的主詞 It 指前一句的 Google，one of them 指前一句的 prototypes（原型車）。film 可以用「film + 受詞 + V-ing」表示拍下……正在做某事的過程，空格要放分詞。做 drive 這個動作的是誰？是受詞 one of them，也就是車子。空格後面還有 a blind man，drive 在這裡是及物動詞「開車載（某人）」，有受詞就要用主動的 V-ing。還原成完整的句子就很清楚：One of the cars was driving a blind man to a fast-food restaurant, and Google filmed it.（一輛這種車正載著一位盲人去速食店，Google 把這段拍了下來。）把 was driving 的主詞 one of the cars 放到 film 後面當受詞，拿掉 was，就成了 filmed one of them driving a blind man。【誘答選項】driven：中文「盲人讓車子載著」讀起來很順，所以這個選項最有吸引力。可是 driven 接在受詞 one of them 後面，表示車子是受到駕駛的一方，後面就不會再有受詞；filmed one of them driven a blind man 多出 a blind man，句子不成立。中文會通，是因為中文的主角是盲人，英文這一句的受詞卻是車子。to drive：film 後面不接「受詞 + to V」。having driven：表示動作在拍攝之前已經結束，拍不到過程。【常考字詞與句型】film／watch／see + 受詞 + V-ing（拍下／看著……正在做……）、drive sb to + 地點（開車載某人到……）、takeout food（外帶食物）、fast-food restaurant（速食店）、get a ride to + 地點（搭便車到……）。"
+ },
+ {
+  "id": "GCLA-g103p4_15",
+  "year": "改編練習（十五）",
+  "passageId": "CLA-g103p4",
+  "blankNum": 15,
+  "category": "字彙選義",
+  "options": {
+   "A": "skillful",
+   "B": "reckless",
+   "C": "gentle",
+   "D": "idle"
+  },
+  "answer": "B",
+  "explanation": "語意「年輕人不必再付昂貴的汽車保險費，因為他們『莽撞的』手腳再也不會碰到方向盤和油門」，reckless（魯莽的）說明了保費貴的原因；skillful（技術純熟的）、gentle（輕柔的）、idle（閒著的）都解釋不了保費為什麼貴。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】reckless 是比較難的字，你可能不認得，於是挑一個認得、又能形容手的字，最容易選的是 skillful。【怎麼判斷】這一句用 because 連接兩個子句，前半是結果：The young will not have to pay costly car insurance（年輕人不必再付昂貴的汽車保險費）；後半是原因：他們的手腳不再碰方向盤和油門。所以空格的形容詞必須說明年輕人的保費原本為什麼貴。年輕駕駛保費高，是因為他們開車比較衝動、容易出事，reckless（魯莽的、不顧危險的）正是這種特質。Reckless drivers near schools put students in danger, so the city has set up more speed cameras.（學校附近的魯莽駕駛讓學生陷入危險，所以市政府加裝了更多測速照相機。）【誘答選項】skillful（技術純熟的）：中文像在誇年輕人。可是年輕人的手腳要是很靈巧，開車就不容易出事，保費也就不會貴，因果正好顛倒；中文會通，是因為只看後半句沒有矛盾，要和前半句的保費一起讀才看得出問題。gentle（輕柔的）只描述動作溫和，說明不了保費為什麼貴。idle（閒著的）說明不了年輕人的保費原本為什麼貴；手腳要是本來就閒著，也談不上「不再碰」方向盤。【常考字詞與句型】reckless drivers（魯莽的駕駛人）、pay car insurance（付汽車保險費）、be skillful at + N／V-ing（擅長……）、idle away + 時間（虛度……）、no longer + V（不再……）、take the wheel（握方向盤、開車）。"
+ },
+ {
+  "id": "GCLA-z109p1_11",
+  "year": "改編練習（十六）",
+  "passageId": "CLA-z109p1",
+  "blankNum": 11,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "live up to",
+   "B": "keep up with",
+   "C": "get along with",
+   "D": "make do with"
+  },
+  "answer": "B",
+  "explanation": "語意「城市越來越擁擠，這些舊系統再也『應付』不了不斷增加的水量」，keep up with 指「跟上、應付得了（不斷增加的數量或速度）」，正好和 rising amount 搭配；live up to（達到〔期望、標準〕）、get along with（與……相處融洽）、make do with（將就著用）都不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】中文說「舊系統達不到流進來的水量」好像也通，所以你可能挑 live up to（達到）。可是 live up to 達到的是期望或標準，受詞不會是數量。【怎麼判斷】As cities grew more crowded（城市越來越擁擠）交代情況改變，空格的受詞是 the rising amount of water flowing into them（不斷增加的水量）。could no longer（再也不能）加上 rising，表示水量一直增加，舊系統卻追不上，所以空格要的是「跟得上、應付得了」。【誘答選項】live up to 是「達到（期望、標準）」，中文「達不到水量」和「應付不了水量」很像。不過 live up to 的受詞要是期望或標準，the rising amount of water 卻是一個數量，所以是 keep up with。中文會通，是因為「達到」後面什麼都能接，英文的 live up to 只接期望、標準這類字。get along with 是「和……相處融洽」，對象多半是人。make do with 是「將就著用（不夠的東西）」，和 rising 方向相反。【常考字詞與句型】keep up with the demand（應付需求）、keep up with the times（跟上時代）、live up to sb’s expectations（達到某人的期望）、get along with classmates（和同學相處融洽）、make do with what you have（將就著用現有的東西）、no longer + V（不再……）。"
+ },
+ {
+  "id": "GCLA-z109p1_12",
+  "year": "改編練習（十六）",
+  "passageId": "CLA-z109p1",
+  "blankNum": 12,
+  "category": "字彙選義",
+  "options": {
+   "A": "disposal",
+   "B": "collection",
+   "C": "treatment",
+   "D": "pollution"
+  },
+  "answer": "C",
+  "explanation": "語意「現代的廢水『處理』，是把汙水中有害的物理、化學和生物成分去除的過程」，treatment 在這裡是「處理」，is the process of removing…… 正是它的定義；disposal（丟棄、清除）、collection（收集）、pollution（汙染）都不是去除有害成分的過程。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】treatment 你最熟的意思大概是「治療」，所以看到 wastewater ___ 時不太會想到它，反而覺得 disposal 或 collection 比較像在講廢水。其實 treat 的核心義是「用某種方法處理一樣東西」，對病人是治療，對廢水就是處理。【怎麼判斷】這一句是定義句：be 動詞後面的 the process of removing harmful physical, chemical, and biological elements from sewage（去除汙水中有害成分的過程）就是在解釋主詞，所以空格的名詞必須表示「去除有害成分」。上文 the first steps were taken to clean wastewater（人類踏出清理廢水的第一步）已經講到清理廢水，本句再用一個名詞稱呼這件事，這是同義勾環。至於 sewage，上文已經用破折號解釋過：sewage—the dirty water from homes，破折號後面就是前面那個字的意思。【誘答選項】disposal 是「丟棄、清除」，中文「廢水處置」和「廢水處理」只差一個字。不過 disposal 是把那樣東西本身丟掉；本句卻是從汙水「裡面」去除有害成分（removing……from sewage），所以是 treatment。collection 是「收集」，沒有去除任何成分。pollution 是「汙染」，和 removing harmful elements 的方向相反。【常考字詞與句型】a wastewater treatment plant（汙水處理廠）、receive medical treatment（接受治療）、the process of + V-ing（……的過程）、remove A from B（從 B 去除 A）、waste disposal（廢棄物清除）、garbage collection（垃圾收集）。"
+ },
+ {
+  "id": "GCLA-z109p1_13",
+  "year": "改編練習（十六）",
+  "passageId": "CLA-z109p1",
+  "blankNum": 13,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "In this way",
+   "B": "By chance",
+   "C": "In the past",
+   "D": "At the same time"
+  },
+  "answer": "D",
+  "explanation": "語意「在初級池裡，汙泥沉到池底、油脂浮到上面；『同時』，蛋殼、咖啡渣這類有機物也在分解」，At the same time 表示兩件事在同一段時間裡進行；In this way（藉由這種方式）、By chance（碰巧）、In the past（過去）都不合前後句的關係。",
+  "contextSpan": "跨句",
+  "contextNote": "前一句 In the primary tanks, human waste, called sludge, settles to the bottom, while oils and grease float to the top 講初級池裡的沉澱和浮起，讀了前一句才知道本句的分解是在同一個池子、同一段時間裡發生",
+  "note": "【你可能會這樣想】前一句講汙泥沉澱、油脂浮起，本句接著講有機物分解，你可能挑 In this way（藉由這種方式），以為沉澱和浮起讓有機物分解。可是沉到池底、浮到上面只是把東西分開，並不會讓蛋殼、咖啡渣變小，兩件事沒有方法和結果的關係。【怎麼判斷】前一句：In the primary tanks, human waste, called sludge, settles to the bottom, while oils and grease float to the top, where they are collected.（在初級池裡，汙泥沉到池底，油和油脂浮到上面收集起來。）本句說有機物分解成比較小的物質，下一句才用 Next 帶出二級池，可見本句講的仍是初級池，和沉澱、浮起同時進行。這是邏輯勾環中的「同時」關係，At the same time（同時）正好表達。例句：I was reviewing for the quiz. At the same time, my classmates were rehearsing for the concert.（我在複習小考，同時，同學們在為音樂會排練。）【誘答選項】In this way 表示前一句的做法帶來本句的結果，最有吸引力。不過有機物分解並不是沉澱和浮起造成的，所以是 At the same time。中文會通，是因為「這樣一來」也常用來接下一個步驟，英文的 in this way 指的卻是「用前面說的方法」。By chance（碰巧）表示事情是偶然發生的，本句講的有機物分解卻是淨化流程固定的一環。In the past（過去）把事情放到從前，全篇卻是用現在簡單式描述現代的淨化流程。【常考字詞與句型】at the same time（同時）、settle to the bottom（沉到底部）、float to the top（浮到上層）、break sth down into + N（把……分解成……）、organic matter（有機物）、in this way（藉由這種方式）。"
+ },
+ {
+  "id": "GCLA-z109p1_14",
+  "year": "改編練習（十六）",
+  "passageId": "CLA-z109p1",
+  "blankNum": 14,
+  "category": "時態／語態",
+  "options": {
+   "A": "are eliminated",
+   "B": "eliminate",
+   "C": "have eliminated",
+   "D": "are eliminating"
+  },
+  "answer": "A",
+  "explanation": "【句型】S + be + p.p.，主詞是承受動作的一方。語意「先前沒有去除的固體，在二級池裡經由分解作用『消除』」，the solids 是消除的對象，eliminate 又一定要接受詞，所以用 are eliminated；eliminate、have eliminated、are eliminating 都是主動形式，後面卻沒有受詞。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】空格前的主詞很長：the solids that were not removed earlier，讀到 removed，你可能以為動詞已經出現，於是只看時態，挑 eliminate 或 have eliminated。其實 that were not removed earlier 是修飾 the solids 的形容詞子句，主要的動詞就在空格裡。【怎麼判斷】拿掉形容詞子句，剩下 the solids ___ through decomposition。固體不會消除別的東西，是淨化流程把固體消除，所以 the solids 是承受動作的一方，要用 be + p.p.。再看 eliminate：它是及物動詞，主動用法一定要接受詞，空格後面卻直接是介系詞片語 through decomposition，沒有受詞。時態方面，全篇描述現代的淨化流程，一律用現在簡單式（settles、moves、is filtered），所以是 are eliminated。還原成完整句子驗算：The solids that were not removed earlier are eliminated through decomposition.（先前沒有去除的固體，經由分解消除。）decomposition 後面的 a process that digests the material（把這些物質消化掉的過程）是同位語，用來解釋 decomposition。【誘答選項】eliminate 是主動形式，後面卻沒有受詞。have eliminated 是現在完成式，這裡卻是在描述每一次都一樣的流程。are eliminating 是現在進行式的主動形式，同樣缺受詞。【常考字詞與句型】eliminate + N（消除……）、be eliminated from + N（從……中消除）、eliminate the need for + N（免除……的需要）、through + N（經由……）、S + be + p.p.（主詞承受動作）、digest food（消化食物）。"
+ },
+ {
+  "id": "GCLA-z109p1_15",
+  "year": "改編練習（十六）",
+  "passageId": "CLA-z109p1",
+  "blankNum": 15,
+  "category": "字彙選義",
+  "options": {
+   "A": "test",
+   "B": "isolate",
+   "C": "spread",
+   "D": "kill"
+  },
+  "answer": "D",
+  "explanation": "語意「最後在池子裡加入氯，『殺死』剩下的細菌」，下一句 Once the bacteria are destroyed（細菌消滅以後）證實加氯是為了消滅細菌；test（檢驗）、isolate（隔離）、spread（散播）都和細菌接著遭到消滅的內容不合。",
+  "contextSpan": "跨句",
+  "contextNote": "本句只說加氯是為了對付剩下的細菌，要讀下一句 Once the bacteria are destroyed，才確定加氯的目的是消滅細菌",
+  "note": "【你可能會這樣想】chlorine（氯）是化學物質，你可能聯想到用藥劑檢驗東西，於是挑 test。光讀本句，test 和 isolate 好像都說得通，所以答案要往下一句找。【怎麼判斷】本句：Finally, the chemical chlorine is added in the last tanks to ___ the remaining bacteria.（最後在池子裡加入氯，……剩下的細菌。）前面的 the chemical 告訴你 chlorine 是一種化學物質；to ___ 是表示目的的不定詞，說明加氯要做什麼。關鍵在下一句：Once the bacteria are destroyed, the chlorine is taken out（細菌消滅以後，就把氯除去）。the bacteria 指的就是 the remaining bacteria，destroyed（消滅）說出了加氯的結果，這是同義勾環：空格的動詞和 destroyed 意思相同。上文說沙過濾 gets rid of almost all bacteria（去除幾乎所有的細菌），almost all 表示還剩一些，也說明 the remaining bacteria 是要清除的對象。【誘答選項】test 是「檢驗、測試」，中文說「加入化學物質檢驗剩下的細菌」很合理，所以最有吸引力。不過 test 只是檢查細菌在不在，細菌還留在水裡；下一句卻說細菌已經消滅，前後接不上。中文會通，是因為化學藥劑在中文裡常和「檢驗」連在一起，這一句的重點卻是加氯之後的結果。isolate 是「隔離」，細菌隔離起來還活著，和下一句的消滅不合。spread 是「散播」，會讓細菌擴散到更多水裡，和下一句語意矛盾。【常考字詞與句型】kill germs（殺菌）、be added to + N（加進……）、test the water（檢驗水質）、isolate A from B（把 A 和 B 隔離）、spread a disease（散播疾病）、get rid of + N（除掉……）。"
+ },
+ {
+  "id": "GCLA-z105p1_11",
+  "year": "改編練習（十七）",
+  "passageId": "CLA-z105p1",
+  "blankNum": 11,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "in favor of",
+   "B": "in place of",
+   "C": "in honor of",
+   "D": "in charge of"
+  },
+  "answer": "C",
+  "explanation": "語意「妮娜號在巴西建造，為的是『紀念』哥倫布首航新世界五百週年」，in honor of（為了紀念、向……致敬）符合，週年正是要紀念的對象；in favor of（贊成、支持）、in place of（代替）、in charge of（負責、主管）都不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】四個選項都是「in + 名詞 + of」，你可能先挑 in favor of：favor 讓你想到 do me a favor（幫個忙），in favor of 看起來就像中文的「為了……」。【怎麼判斷】句首的分詞片語交代妮娜號建造的原因，空格後面是 the 500th anniversary（五百週年）。週年是用來紀念的日子，所以空格要表達「為了紀念」，in honor of + N 正好可以接週年、節日或人物。主句兩個破折號中間的 an exact copy（一模一樣的複製品）就是在解釋 replica。例句：Our school held a concert in honor of its 50th anniversary.（我們學校為了紀念五十週年校慶，舉辦了一場音樂會。）【誘答選項】in favor of：中文讀成「為了五百週年」好像通，可是它的核心義是「贊成、支持」，後面接 the plan、the new rule 這類可以贊成或反對的主張，週年談不上贊成。中文會通，是因為「為了」可以接的東西很多。in place of（代替）：複製船不是拿來代替週年的。in charge of（負責）：主詞多半是人或單位，一艘船不會主管週年紀念。【常考字詞與句型】in honor of + N（為了紀念……）、celebrate the 50th anniversary（慶祝五十週年）、vote in favor of + N（投票贊成……）、in place of + N（代替……）、be in charge of + N（負責……）。in place of 也是指考 100 年第 20 題的選項，意思同樣是「取代」。"
+ },
+ {
+  "id": "GCLA-z105p1_12",
+  "year": "改編練習（十七）",
+  "passageId": "CLA-z105p1",
+  "blankNum": 12,
+  "category": "字彙選義",
+  "options": {
+   "A": "publish",
+   "B": "shorten",
+   "C": "imagine",
+   "D": "document"
+  },
+  "answer": "D",
+  "explanation": "語意「我的目標是在網誌上『記錄』我在船上的日子」，document 當動詞是「記錄」，和 in a blog、研究計畫都相合；publish（出版、發表）的受詞多半是文章、照片這類作品，shorten（縮短）、imagine（想像）也都和參與研究計畫的內容不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】document 你最熟的是名詞「文件」，很少想到它也能當動詞。看到 in a blog（在網誌上），你大概會覺得「在網誌上發表」最順，於是挑了 publish。【怎麼判斷】My goal was to ___ my days aboard the ship in a blog（我的目標是在網誌上……我在船上的日子），句尾的 as part of a research project sponsored by my university 說明這是大學贊助的研究計畫。四個選項的受詞都是 my days aboard the ship，所以要看哪一個動詞能接「日子」，又能和「網誌」「研究計畫」搭在一起。document 當動詞是「（用文字、照片、影片）記錄」，受詞可以是一段經歷或一件事情的過程，做研究本來就要把觀察到的東西記下來。名詞 document 是「記錄下來的東西」，動詞就是「把事情記錄下來」，兩個意思其實相通。例句：Many students document their trips with short videos and share them online.（很多學生用短影片記錄自己的旅行，再分享到網路上。）【誘答選項】publish：中文說「在網誌上發表我在船上的日子」好像也通。可是 publish 的受詞多半是寫好的作品，例如 publish an article（發表文章）；「日子」是一段經歷，要先記錄下來，才有東西可以發表。中文會通，是因為「發表」可以順口接很多東西。shorten（縮短）：研究計畫要的是留下紀錄，作者沒有理由縮短待在船上的時間。imagine（想像）：作者真的在船上，這些日子是親身經歷，不必靠想像。【常考字詞與句型】document + N（記錄……）、keep a blog（經營網誌）、as part of + N（作為……的一部分）、be sponsored by + N（由……贊助）、publish an article（發表文章）、a research project（研究計畫）。"
+ },
+ {
+  "id": "GCLA-z105p1_13",
+  "year": "改編練習（十七）",
+  "passageId": "CLA-z105p1",
+  "blankNum": 13,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "As expected",
+   "B": "If so",
+   "C": "By the same token",
+   "D": "As it turned out"
+  },
+  "answer": "D",
+  "explanation": "語意「我原本的目標是經營網誌、完成大學的研究計畫；『結果』，我在觀察或帶領學齡孩子參觀時，得到的心得最寶貴」，As it turned out 帶出和原本計畫不同的實際收穫；As expected（不出所料）、If so（如果是這樣）、By the same token（同理）都不合前後句的關係。",
+  "contextSpan": "跨句",
+  "contextNote": "前一句 My goal was to {12} my days aboard the ship in a blog 講作者上船時原本的目標，本句講實際上最寶貴的心得來自孩子，讀了前一句才看得出是計畫和結果的落差",
+  "note": "【你可能會這樣想】前一句說作者上船是為了研究，你可能覺得從孩子身上學到東西是意料中的事，於是挑了 As expected。其實 as it turned out 是完整的插入說法，意思是「結果、後來才發現」。【怎麼判斷】四個選項都是轉承說法，要看兩句之間的關係。前一句 My goal was to {12} my days aboard the ship in a blog（我的目標是在網誌上……我在船上的日子）講上船時的計畫，本句講的卻是實際的收穫：最寶貴的心得來自學齡孩子。從「原本打算」到「結果發現」，屬於邏輯勾環，As it turned out 正好帶出這種和原先設想不同的結果。例句：I thought the school trip would be boring. As it turned out, it was the best part of the semester.（我原本以為校外教學會很無聊，結果那是這學期最棒的一段時光。）【誘答選項】As expected（不出所料）：中文讀成「不出所料，我在帶孩子參觀時得到最寶貴的心得」，好像也通。可是 As expected 表示結果和事先的預料相同，前一句只說要經營網誌、完成研究計畫，作者事先並沒有料到心得會來自孩子，所以談不上「不出所料」。它和 As it turned out 正好方向相反。中文會通，是因為讀者自己替作者假設了預期。If so（如果是這樣）要承接前一句提出的可能性或問題，前一句卻是作者已經訂下的目標，不是假設。By the same token（同理）要帶出道理相同的另一件事，寫網誌和孩子帶來的心得不是同一個道理。【常考字詞與句型】as it turned out（結果、後來才發現）、it turns out (that) + 子句（結果發現……）、turn out to be + N（結果是……）、as expected（不出所料）。it turns out 是學測 115 年第 11 題的正解，意思同樣是「結果發現」。"
+ },
+ {
+  "id": "GCLA-z105p1_14",
+  "year": "改編練習（十七）",
+  "passageId": "CLA-z105p1",
+  "blankNum": 14,
+  "category": "字彙選義",
+  "options": {
+   "A": "appreciate",
+   "B": "resent",
+   "C": "reduce",
+   "D": "underestimate"
+  },
+  "answer": "A",
+  "explanation": "語意「學生很快就『體會到』在哥倫布那個時代駕船有多辛苦」，appreciate 在這裡是「充分了解、體會」，呼應前一句學生親手摸纜繩、推舵柄；resent（怨恨）、reduce（減少）、underestimate（低估）都和親身體驗的內容不合。",
+  "contextSpan": "跨句",
+  "contextNote": "前一句 students could touch the ropes, pass around a ballast stone……and move the extremely large tiller 講學生親手做了哪些事，才知道他們是因此體會到當年航行的辛苦",
+  "note": "【你可能會這樣想】appreciate 你最熟的是「感激」（I appreciate your help.），照這個意思讀，「學生很快就感激當年航行的辛苦」很彆扭，你可能就改挑 underestimate。【怎麼判斷】They 指前一句的 students，要回頭看學生做了什麼：touch the ropes, pass around a ballast stone……and move the extremely large tiller（摸纜繩、傳遞壓艙石、推動非常大的舵柄）。兩個破折號中間的 a heavy rock that helps keep a ship steady 就是在解釋 ballast stone。讀懂這個提示，就知道學生親手碰的東西又大又重；親身做過，才明白當年要花多少力氣。appreciate 另有「充分了解、體會（困難、價值）」的意思。例句：After a week of cooking for my family, I came to appreciate how much my mom does every day.（替家人煮了一星期的飯，我才體會到媽媽每天做了多少事。）【誘答選項】underestimate：中文說「學生很快就低估了當年的辛苦」好像也有可能，可是 underestimate 是「把……看得比實際小」，學生親手推過大舵柄、傳過重石頭，不會反而低估。resent（怨恨）：下一句說作者很高興看到學生成為主動的參與者，學生並沒有不滿。reduce（減少）：學生沒有真的駕船出海，談不上減輕當年船員的工作量。【常考字詞與句型】appreciate the value of + N（體會……的價值）、come to + V（漸漸……）、the hard work involved in + V-ing（……所需的辛勞）、keep + N + steady（讓……保持平穩）、underestimate the difficulty of + N（低估……的難度）。"
+ },
+ {
+  "id": "GCLA-z105p1_15",
+  "year": "改編練習（十七）",
+  "passageId": "CLA-z105p1",
+  "blankNum": 15,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "brings back",
+   "B": "bears out",
+   "C": "plays down",
+   "D": "takes over"
+  },
+  "answer": "B",
+  "explanation": "語意「我在妮娜號上的經驗『證實』了我長久以來的信念」，bear out 是「證實、支持（說法或想法）」；brings back（喚回）和 long-held（一直都在）不合，plays down（淡化）多半用在刻意把問題、風險說得不重要，takes over（接管）的受詞多半是工作或控制權。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】中文說「這段經驗喚起了我一直以來的信念」很順，你很可能就選了 brings back。【怎麼判斷】主詞是 My experience on the Nina（我在妮娜號上的經驗），受詞是 my long-held belief（我長久以來的信念）。作者上船前早有這個想法，上船後看到的情形又正好吻合，所以經驗的作用是「證實」它；bear out + N 就是「證實、支持（說法、想法）」。例句：The survey results bear out what many teachers have long suspected: students learn better after a good night’s sleep.（調查結果證實了許多老師長久以來的猜想：學生睡飽之後學得比較好。）【誘答選項】brings back：中文讀得通，可是 bring back 是「喚回、恢復」，對象是已經消失或遺忘的東西，例如 bring back memories（喚起回憶）；long-held 表示這個信念一直都在，談不上喚回。中文會通，是因為「喚起」也能指讓人重新注意到某個想法。plays down（淡化）多半是有人刻意把問題說得不重要，經驗不會刻意淡化信念。takes over（接管）的受詞多半是工作或控制權，信念談不上接管。【常考字詞與句型】bear out + N（證實……）、a long-held belief（長久以來的信念）、bring back memories（喚起回憶）、play down the importance of + N（淡化……的重要性）。take over 是學測 110 年第 17 題的正解，意思同樣是「接管、占據」。"
+ },
+ {
+  "id": "GCLA-z104p4_11",
+  "year": "改編練習（十八）",
+  "passageId": "CLA-z104p4",
+  "blankNum": 11,
+  "category": "字彙選義",
+  "options": {
+   "A": "transformed",
+   "B": "transported",
+   "C": "translated",
+   "D": "transferred"
+  },
+  "answer": "A",
+  "explanation": "語意「幾百年來，風和雨『徹底改變』了這片土地的樣貌，切出峽谷，留下高聳的岩柱」，transformed 符合逗號後面分詞片語描述的變化；transported（運送）、translated（翻譯）、transferred（轉移）都和切出峽谷、留下岩柱這個結果不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】你可能憑著「風會把沙土吹走」的印象選 transported，把句子讀成風雨把土地搬走了。可是句子後半交代的是土地上留下了什麼，不是土地去了哪裡。【怎麼判斷】四個選項都是 trans- 開頭的過去式動詞，只能靠語意區分。受詞 this land 指前一句火山灰和熔岩形成的卡帕多奇亞地區。逗號後面的分詞片語 carving out valleys and leaving behind towering rock pillars as tall as 40 meters（切出峽谷，留下高達 40 公尺的高聳岩柱）補充主要動詞造成的結果，讀懂結果就能回推前面的動作：土地變成了峽谷和岩柱，樣貌整個不一樣了，空格要填「使徹底改變」。【誘答選項】transported 是「運送、搬運」，中文說「風雨把土地沖走、吹走」好像也通，所以最有吸引力。可是 transport 是把東西移到另一個地方，分詞片語說的卻是土地在原地留下峽谷和岩柱，這是樣貌的改變，不是位置的移動。中文會通，是因為「沖刷」「吹蝕」在中文直覺裡和搬運連在一起。translated 是「翻譯」，對象是文字或語言。transferred 是「轉移、調動」，通常要接 to 交代轉到哪裡，本句沒有目的地。【常考字詞與句型】transform A into B（把 A 轉變成 B）、over the centuries（幾百年來）、carve out + N（切割出……）、leave behind + N（留下……）。transformed 也是學測 96 年第 30 題的選項；transferred 是學測 106 年第 18 題的正解，那一題指細菌「轉移」到眼睛。"
+ },
+ {
+  "id": "GCLA-z104p4_12",
+  "year": "改編練習（十八）",
+  "passageId": "CLA-z104p4",
+  "blankNum": 12,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "come in",
+   "B": "result in",
+   "C": "take in",
+   "D": "deal in"
+  },
+  "answer": "A",
+  "explanation": "【句型】come in + 形狀、大小、顏色，指「有（某種樣式）」，語意「仙女煙囪『有』各式各樣的形狀和大小」；result in（導致）、take in（吸收、收容）、deal in（買賣）放進句中，都不是在描述岩柱本身的外形。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】come in 你最熟的是「進來」，岩柱不會走進來，你可能因此轉而挑 result in，把句子讀成「岩柱造成了各種形狀和大小」。其實 come in 後面接形狀、尺寸、顏色時，意思是「有……的樣式」，買衣服、買鞋子時常常聽到。【怎麼判斷】主詞 They 指前一句的 fairy chimneys。前一句 These pillars are known as “fairy chimneys.”（這些岩柱叫做「仙女煙囪」。）known as 後面接的是前面那個東西的名稱，可見 fairy chimneys 是那些岩柱，不是真的煙囪。空格後面是 an extraordinary range of shapes and sizes（非常多樣的形狀和大小），but 後面又說大多數岩柱又高又直，像戴著帽子的大蘑菇。but 前後是「樣子很多」與「大多數長得差不多」的對比，可見前半句描述的是岩柱本身的外形，空格要填「有（各種樣子）」。例句：Phone cases come in many colors, so I picked a light blue one to match my backpack.（手機殼有很多顏色，所以我挑了淺藍色的來搭配我的背包。）【誘答選項】result in 是「導致、造成」，中文說「形成各種形狀」很自然，所以最有吸引力。可是 result in 的主詞是原因、受詞是結果；本句的形狀和大小卻是岩柱自己的樣子，不是岩柱造成的另一件事。中文會通，是因為「形成」既可以指「長成某個樣子」，也可以指「造成某個結果」。take in 是「吸收、收容」，岩柱不會把形狀吸收進去。deal in 是「經營……的買賣」，主詞多半是做生意的人或商店。【常考字詞與句型】come in all shapes and sizes（大小形狀各式各樣）、come in + 顏色（有……顏色）、result in + N（導致……）、take in + N（吸收、收容……）、deal in + N（經營……的買賣）、be known as + N（叫做……）。"
+ },
+ {
+  "id": "GCLA-z104p4_13",
+  "year": "改編練習（十八）",
+  "passageId": "CLA-z104p4",
+  "blankNum": 13,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "Every now and then",
+   "B": "Sooner or later",
+   "C": "For the most part",
+   "D": "All the same"
+  },
+  "answer": "B",
+  "explanation": "語意「頂端的帽子並不會永遠留著，『遲早』會掉下來」，Sooner or later 帶出一定會發生、只是時間早晚的事，呼應前一句的 does not last forever；Every now and then（偶爾）、For the most part（大致上）、All the same（儘管如此）都不合前後句的關係。",
+  "contextSpan": "跨句",
+  "contextNote": "前一句 The cap, however, does not last forever 說帽子不會永遠留著，讀了這一句才知道帽子掉落是必然的事，空格要用表示遲早的說法",
+  "note": "【你可能會這樣想】這一格最容易選的是 All the same。前一句有 however，你可能以為這裡還要再轉折一次，看到「儘管如此」就覺得合用。可是前一句已經說帽子不會永遠留著，本句接著說帽子掉下來，兩句的方向相同，中間沒有讓步再轉折的關係。【怎麼判斷】四個選項都是兩個字以上的副詞片語，可見這一格考的是兩句之間的邏輯關係，要先往前讀。上文說帽子是每根岩柱最硬的部分，保護下方比較軟的岩石；接著 The cap, however, does not last forever.（不過，帽子並不會永遠留著。）既然帽子不會永遠留著，掉下來就是一定會發生的事，差別只在早晚，Sooner or later（遲早）正好表達這一層意思。這屬於邏輯勾環：前一句說明一件事必然會發生，本句交代它發生以後的經過。句子後半 until it, too, collapses（直到岩柱也倒塌為止）把過程一路寫到結局，it, too 裡的 too 表示岩柱和帽子一樣也會倒下，這是每根岩柱都會走到的結果。例句：If you keep staying up late to play online games, sooner or later your grades will suffer.（如果你一直熬夜玩線上遊戲，成績遲早會受影響。）【誘答選項】Every now and then 是「偶爾、不時」，用在一再發生的事；可是每根岩柱只有一頂帽子，掉下來就沒了，不會偶爾掉一次。For the most part 是「大致上、多半」，帶有保留的語氣，和前一句說帽子不會永遠留著的肯定語氣不合。All the same 是「儘管如此」，後面要接和前一句方向相反的事，本句說帽子掉落，卻是順著前一句的意思往下講。【常考字詞與句型】sooner or later（遲早）、last forever（永遠持續）、fall off（掉落）、cut away + N（削去……）、every now and then（偶爾）、for the most part（大致上）、all the same（儘管如此）。"
+ },
+ {
+  "id": "GCLA-z104p4_14",
+  "year": "改編練習（十八）",
+  "passageId": "CLA-z104p4",
+  "blankNum": 14,
+  "category": "字彙選義",
+  "options": {
+   "A": "regain",
+   "B": "require",
+   "C": "retain",
+   "D": "reject"
+  },
+  "answer": "C",
+  "explanation": "語意「許多教堂裝飾著美麗的壁畫，壁畫的顏色到現在還『保有』原來的鮮豔」，retain（保有、保持）和 still、original 相呼應；regain（重新得到）、require（需要）、reject（拒絕）都不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】regain 和 retain 只差一個字母，你可能把句子讀成「壁畫的顏色恢復了原來的鮮豔」，想像壁畫經過修復，於是選 regain。可是文章沒有提到壁畫褪色或修復。【怎麼判斷】本句的主詞 Many of them 指前一句鑿出來的洞穴教堂。空格在關係子句 whose colors still ___ all their original freshness 裡，whose colors 指壁畫的顏色。這一句有兩個線索：still（仍然）表示一種狀態從過去延續到現在，original（原來的）指壁畫當初畫好時的樣子。既然鮮豔從當初一直延續到現在，空格要填「保有」。【誘答選項】regain 是「重新得到、恢復」，中文說「顏色恢復原來的鮮豔」也通，所以最有吸引力。可是 regain 的前提是先失去，例如 regain consciousness（恢復意識）；本句的 still 卻表示鮮豔從來沒有中斷過，兩者語意矛盾。中文會通，是因為「恢復原狀」是常見的說法。require 是「需要」，顏色已經擁有鮮豔，談不上需要。reject 是「拒絕、排斥」，顏色沒有理由排斥自己原來的鮮豔，和 still、original 的延續語意矛盾。【常考字詞與句型】retain heat（保溫）、retain + N（保有……）、regain + N（恢復、重新得到……）、be decorated with + N（裝飾著……）、carve A out of B（從 B 鑿出 A）、leave one’s mark on + N（在……留下印記）。require 也是學測 109 年第 26 題的選項；reject 的過去式 rejected 是學測 110 年第 22 題的選項。"
+ },
+ {
+  "id": "GCLA-z104p4_15",
+  "year": "改編練習（十八）",
+  "passageId": "CLA-z104p4",
+  "blankNum": 15,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "cut down on",
+   "B": "give up on",
+   "C": "stock up on",
+   "D": "catch up on"
+  },
+  "answer": "C",
+  "explanation": "語意「許多村莊仍然有人居住，居民在岩石鑿成的儲藏室裡『囤積』葡萄、馬鈴薯和扁麵包過冬」，stock up on（大量儲備）符合 in rock-cut storerooms 與 for the winter；cut down on（減少）、give up on（對……死心）、catch up on（補做）都和存放食物過冬不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】冬天食物少，你可能想到「省著吃」，於是選 cut down on，把句子讀成居民在冬天少吃葡萄和麵包。可是句子裡的 in rock-cut storerooms 交代食物放進儲藏室，這是在準備，不是在減量。【怎麼判斷】本句前半說這些村莊有許多仍然有人居住，所以 families 就是村莊裡的居民。空格的受詞是 grapes, potatoes, and flat bread（葡萄、馬鈴薯和扁麵包），後面有兩個線索：in rock-cut storerooms 交代地點是儲藏室，for the winter 交代目的是過冬。在儲藏室裡為了冬天把食物準備好，空格要填「囤積、大量儲備」。例句：Before the typhoon hit, my family stocked up on instant noodles and bottled water.（颱風來襲前，我們家囤了泡麵和瓶裝水。）【誘答選項】cut down on 是「減少（吃、用）」，中文說「冬天少吃一點」好像說得通，所以最有吸引力。可是 cut down on 講的是消耗得比較少，句子卻交代食物存放的地點。中文會通，是因為冬天缺糧和節省食物在中文直覺裡常連在一起。give up on 是「對……死心」，對象通常是人或計畫。catch up on 是「補做（之前沒做完的事）」，例如補眠，受詞多半是一件事，不是食物。【常考字詞與句型】stock up on + N（囤積……）、cut down on + N（減少……的攝取或使用）、catch up on sleep（補眠）、give up on + N（對……死心）、to this day（直到今天）、hide from + N（躲避……）。"
+ },
+ {
+  "id": "GCLA-z100p1_11",
+  "year": "改編練習（十九）",
+  "passageId": "CLA-z100p1",
+  "blankNum": 11,
+  "category": "字彙選義",
+  "options": {
+   "A": "charging",
+   "B": "commanding",
+   "C": "saving",
+   "D": "borrowing"
+  },
+  "answer": "B",
+  "explanation": "語意「松露是全世界最昂貴的天然食物之一，每磅往往『賣得』250 到 450 美元」，command 在這裡指商品「賣得（某個價錢）」，和前面的 most expensive 呼應；charging（收費）的主詞要是收錢的人，saving（節省）和最昂貴的語意矛盾，borrowing（借錢）和售價無關。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】command 你最熟的意思是「命令、指揮」，用在食物身上很奇怪，於是你可能改選 charging，因為中文說松露「要價」幾百美元。其實 command 也常指商品「賣得（某個價錢）」，例如 command a high price（賣得高價）。【怎麼判斷】主詞 they 指松露，逗號後的分詞片語 often ___ as much as US$250 to US$450 per pound 補充說明前半句。做這個動作的是松露，受詞是價錢，還原成完整子句就是 They often command as much as US$250 to US$450 per pound.（松露每磅往往賣得 250 到 450 美元。）as much as 加金額表示「高達……」，和 most expensive 方向一致，這是同義勾環：前半句說最昂貴，後半句用具體的價錢再說一次。文章開頭的 delicacies, or fine foods 也是文中提示，or 後面就是 delicacy 的解釋。例句：A jersey signed by a famous player can command more than NT$50,000 at an online auction.（知名球員簽名的球衣，在網路拍賣上可以賣到五萬元以上。）【誘答選項】charging 是「收費」，中文「要價」讀起來很順，所以最有吸引力；可是 charge 的主詞多半是收錢的一方，例如商店或餐廳，松露卻是買賣的商品，自己不會收錢。中文會通，是因為「要價」可以說商品，也可以說賣家。saving 是「節省」，和最昂貴語意矛盾。borrowing 是「借錢」，和商品的售價無關。【常考字詞與句型】command a high price（賣得高價）、as much as + 金額（高達……）、charge sb + 金額 + for sth（向某人收取……的費用）、among the most + adj. + N（最……的……之一）。"
+ },
+ {
+  "id": "GCLA-z100p1_12",
+  "year": "改編練習（十九）",
+  "passageId": "CLA-z100p1",
+  "blankNum": 12,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "picked up",
+   "B": "set aside",
+   "C": "made up",
+   "D": "given off"
+  },
+  "answer": "D",
+  "explanation": "語意「母豬對松露的氣味特別敏感，因為這種氣味和公豬『散發』的氣味很像」，give off 指「散發（氣味、光、熱）」，說明那種氣味是從公豬身上來的；picked up（聞到）、set aside（撥出、留下）、made up（編造）都說不出氣味的來源。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】give off 字面猜不出意思；pick up 你倒是很熟，知道它可以指「聞到（氣味）」，整句又都在講嗅覺，於是很容易選 picked up。可是這一句要的是氣味的來源。【怎麼判斷】Female pigs are especially sensitive to the odor of truffles，because 帶出原因：it is similar to the smell ___ by male pigs。it 指松露的氣味；空格是過去分詞，修飾 the smell，還原成關係子句就是 the smell that male pigs ___。要解釋母豬為什麼特別敏感，這種氣味必須來自公豬。這是邏輯勾環，because 子句要能解釋前半句。give off 正是「散發（氣味、光、熱）」。【誘答選項】picked up 在這裡是「聞到」。中文說「公豬聞到的氣味」好像也通；可是 pick up 的主詞是接收氣味的一方，公豬聞到什麼，解釋不了母豬為什麼特別敏感。中文會通，是因為「公豬的氣味」可以指公豬發出的，也可以指公豬聞到的。set aside 是「撥出、留下備用」，對象多半是時間或金錢。made up 是「編造」，氣味不是編出來的。【常考字詞與句型】give off a smell／heat／light（散發氣味／熱／光）、be sensitive to + N（對……敏感）、be similar to + N（和……相似）、pick up a new skill（學會新技能）、make up a story（編故事）。given off 也是指考 92 年第 20 題的選項，那一題的正解是 filled out。"
+ },
+ {
+  "id": "GCLA-z100p1_13",
+  "year": "改編練習（十九）",
+  "passageId": "CLA-z100p1",
+  "blankNum": 13,
+  "category": "字彙選義",
+  "options": {
+   "A": "detect",
+   "B": "release",
+   "C": "avoid",
+   "D": "absorb"
+  },
+  "answer": "A",
+  "explanation": "語意「人們訓練狗在『察覺到』這種氣味的地方往下挖」，detect（察覺）符合狗靠嗅覺找松露的用途；release（釋放）把氣味的來源說成狗，avoid（避開）和訓練狗找松露的目的矛盾，absorb（吸收）說明不了狗怎麼找到要挖的地點。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】detect 你可能只在偵探片或「煙霧偵測器」裡見過，覺得是機器或警察做的事，用在狗身上有點奇怪，於是改挑 release，想成狗「放出」氣味做記號。其實 detect 的核心是「察覺到不容易發現的東西」，做這個動作的可以是儀器，也可以是動物。【怎麼判斷】這一句的主詞是 dogs：dogs have been trained to dig into the ground wherever they ___ this odor（狗經過訓練，在哪裡……這種氣味，就在那裡往下挖）。this odor 是指標勾環，回指上文的 the odor of truffles；氣味是地底下的松露發出的，狗要做的是聞出來。wherever 帶出地點，在哪裡察覺到氣味就在哪裡挖，前後才合邏輯。前一句的 edible, or fit to eat 也是文中提示，or 後面就是 edible 的解釋：豬什麼都吃，所以才改訓練狗。【誘答選項】release 是「釋放」，氣味確實可以 release，所以這個選項最有吸引力；可是 this odor 指松露的氣味，來源是地底下的松露，不是狗。avoid 是「避開」，狗受訓練就是為了找到松露，避開氣味就挖不到松露。absorb 是「吸收」，多半用在液體、熱或知識，說明不了狗要在哪裡挖。【常考字詞與句型】detect a smell／sound（察覺到氣味／聲音）、a smoke detector（煙霧偵測器）、be trained to V（受過……的訓練）、dig into the ground（往地裡挖）、release stress（釋放壓力）、absorb water／heat（吸收水分／熱）。"
+ },
+ {
+  "id": "GCLA-z100p1_14",
+  "year": "改編練習（十九）",
+  "passageId": "CLA-z100p1",
+  "blankNum": 14,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "sinks in",
+   "B": "builds up",
+   "C": "wears off",
+   "D": "pays off"
+  },
+  "answer": "C",
+  "explanation": "語意「松露的風味很快就『逐漸消失』，有些松露還沒送到市場，風味就已經流失大半」，wear off 指「（效果、感覺、味道）逐漸消失」，和後半句的 is lost 一致；sinks in（滲入、讓人明白）、builds up（累積）、pays off（有回報）都和風味流失的語意不合。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】sink in 拆開來是「沉」加「進去」，很容易聯想到中文的「入味」，於是你可能覺得「松露的風味很快就入味」也說得通。【怎麼判斷】空格後面接 quickly，再由 and 連接後半句 much of it is lost before some truffles reach the market（有些松露還沒送到市場，風味就已經流失大半）。後半句的 is lost 說明風味在減少，所以空格也要是「逐漸消失」的意思。wear off 正是「（效果、感覺、味道）逐漸消失」，這是同義勾環：wears off quickly 和 much of it is lost 是同一個意思的兩種說法。例句：The excitement of winning the game wore off when we remembered the math test the next morning.（想起隔天早上的數學考試，贏球的興奮感很快就退了。）【誘答選項】sinks in 是「滲入；（事情）終於讓人明白」，中文「入味」的直覺讓它最有吸引力；可是 sink in 講的是液體或道理進到裡面，後半句說的卻是味道變少。中文會通，是因為「入味」也在講食物的味道。builds up 是「累積、增強」，和 is lost 語意矛盾。pays off 是「有回報」，主詞多半是努力或投資，不是風味。【常考字詞與句型】wear off（逐漸消失、退去）、sink in（終於明白、滲入）、build up + N（累積……）、pay off（有回報）、much of + N（大部分的……）、reach the market（送到市場）。"
+ },
+ {
+  "id": "GCLA-z100p1_15",
+  "year": "改編練習（十九）",
+  "passageId": "CLA-z100p1",
+  "blankNum": 15,
+  "category": "連接詞／轉折詞",
+  "options": {
+   "A": "Specifically",
+   "B": "Accordingly",
+   "C": "Alternatively",
+   "D": "Ironically"
+  },
+  "answer": "C",
+  "explanation": "語意「美食專家建議把松露裝進密封玻璃罐冷藏；『或者』，也可以把整顆松露泡在清淡的油裡保存」，Alternatively 帶出另一種同樣能保存松露的做法；Specifically（具體來說）、Accordingly（因此、照著做）、Ironically（諷刺的是）都不合前後兩句的關係。",
+  "contextSpan": "跨句",
+  "contextNote": "前一句 To preserve truffles, food experts suggest keeping them in closed glass jars in a refrigerator 先給一種保存方法，讀了前一句才知道本句提出的是另一個選擇，不是細節或結果",
+  "note": "【你可能會這樣想】這一格最容易選的是 Specifically。前一句說專家建議怎麼保存，本句接著講泡油，讀成「具體來說，可以泡在油裡」好像也很順。可是 specifically 要把前一句講過的事說得更細，本句的油卻是另一回事。【怎麼判斷】四個選項都是轉承副詞，可見這一格考兩句的邏輯關係。前一句：To preserve truffles, food experts suggest keeping them in closed glass jars in a refrigerator.（美食專家建議，要保存松露，可以裝進密封的玻璃罐，放在冰箱裡。）本句：they can be stored whole in bland oil（可以把整顆松露泡在清淡的油裡保存）。前一句開頭的 To preserve truffles 說出了目的，兩句都在回答「松露怎麼保存」，本句提出的是另一個選擇。這是邏輯勾環，Alternatively（或者、另一個辦法是）正好表達兩種做法任選其一。句尾的 that is, oil with little taste of its own 是文中提示，that is 後面就是 bland 的意思。【誘答選項】Specifically 是「具體來說」，中文直覺會把本句當成保存方法的細節；可是 specifically 後面要接前一句那件事的細節，本句的油卻和玻璃罐、冰箱無關。中文會通，是因為「具體來說」在中文裡常用來接各種補充的話。Accordingly 是「因此、照著做」，照前一句的建議做，應該是放進冰箱，不是泡在油裡。Ironically 是「諷刺的是」，用油保存並沒有出乎意料的地方。【常考字詞與句型】Alternatively, + 子句（或者，……）、preserve food（保存食物）、store sth in oil（把……泡在油裡保存）、more specifically（更具體地說）、act accordingly（照著做）。accordingly 也是學測 105 年第 16 題的選項，那一題的正解是 However。"
+ },
+ {
+  "id": "GCLA-z95p2_11",
+  "year": "改編練習（二十）",
+  "passageId": "CLA-z95p2",
+  "blankNum": 11,
+  "category": "字彙選義",
+  "options": {
+   "A": "conceal",
+   "B": "resist",
+   "C": "acquire",
+   "D": "disturb"
+  },
+  "answer": "C",
+  "explanation": "語意「戰士把狼皮裹在身上，希望能『得到』狼的勇氣和耐力」，acquire（得到、學到）符合 hoping to 表達的心願；conceal（隱藏）、resist（抵抗）、disturb（打擾）放進句中，都不是戰士披上狼皮想要達成的事。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】讀到 wrapped themselves in wolf skins（把狼皮裹在身上），你可能馬上聯想到「偽裝」，於是挑 conceal（隱藏）。可是空格的受詞是 the wolf’s courage and endurance（狼的勇氣和耐力），戰士要的是這些本領，不是要藏起來。【怎麼判斷】主詞是 Warriors（戰士），hoping to 帶出他們的心願，受詞是狼的勇氣和耐力，所以空格要的是「得到、學到」，本句自己就選得出答案。前一句 They respected its endurance, or its ability to keep going for a long time, and its skill at hunting. 說原住民敬佩狼的耐力和狩獵本領，可以拿來驗算：敬佩一種本領，自然希望自己也有。另外，前一句 or 後面的 its ability to keep going for a long time 就是 endurance 的解釋。【誘答選項】conceal 是「隱藏」。披狼皮確實有偽裝的作用，中文直覺容易把兩者連在一起。可是 conceal 的受詞是不想讓人看到的東西，狼的勇氣卻是戰士想得到的本領；中文會覺得通，是因為把「披狼皮」直接等同「偽裝」。resist 是「抵抗」，和 hoping to 的心願語意矛盾。disturb 是「打擾」，勇氣和耐力談不上打擾。【常考字詞與句型】acquire a skill（學到一項技能）、acquire knowledge（獲得知識）、wrap oneself in + N（把……裹在身上）、resist the temptation to V（忍住不去……）。"
+ },
+ {
+  "id": "GCLA-z95p2_12",
+  "year": "改編練習（二十）",
+  "passageId": "CLA-z95p2",
+  "blankNum": 12,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "in addition",
+   "B": "by contrast",
+   "C": "in that case",
+   "D": "for one thing"
+  },
+  "answer": "B",
+  "explanation": "語意「原住民把狼當成兄弟；『相較之下』，白人移民把狼看成必須消滅的敵人」，by contrast 帶出和上文相反的態度；in addition（此外）是同方向的補充，in that case（既然那樣）要有前提條件，for one thing（首先、一則）要帶出一連串理由，都不合兩群人截然不同的看法。",
+  "contextSpan": "跨句",
+  "contextNote": "上文 considered the wolf their spiritual brother 說原住民把狼當兄弟，本句 saw the wolf as an enemy 卻把狼當敵人，讀了上文才看得出兩種態度相反",
+  "note": "【你可能會這樣想】上文列出幾個部族，本句換成 White settlers（白人移民），你可能以為作者在繼續列舉，於是挑 in addition（此外）。可是本句講的是和原住民完全相反的看法。【怎麼判斷】四個選項都是轉承說法，所以先把兩邊對狼的看法並排：上文 The Lakota, Blackfeet, and Shoshone, among other tribes, considered the wolf their spiritual brother.（這些部族都把狼當作精神上的兄弟。）本句 saw the wolf as an enemy to be destroyed（把狼看成必須消滅的敵人）。兄弟和敵人正好相反，這是對比的邏輯勾環，by contrast（相較之下）正好表達這一層。例句：Many of my classmates spend their weekends at cram schools. By contrast, my brother spends his on the basketball court.（我很多同學週末都待在補習班；相較之下，我弟弟的週末都在籃球場上。）【誘答選項】in addition 是「此外」。中文說「此外，白人移民……」像是換一群人接著講，好像說得通。可是 in addition 補充的是同一方向的資訊，兄弟和敵人卻是相反的看法。中文會通，是因為「此外」在中文裡常常只用來換話題，英文的 in addition 卻要求前後性質相同。in that case 是「既然那樣、那樣的話」，前面要先有一個假設或情況，白人的態度卻不是從上文推出來的結果。for one thing 是「首先、一則」，用來帶出一連串理由的第一個，本句並沒有在列理由。【常考字詞與句型】by contrast（相較之下）、in contrast to + N（和……相反）、see + 受詞 + as + N（把……看成……）、for one thing……, for another……（一則……，再則……）。"
+ },
+ {
+  "id": "GCLA-z95p2_13",
+  "year": "改編練習（二十）",
+  "passageId": "CLA-z95p2",
+  "blankNum": 13,
+  "category": "字彙選義",
+  "options": {
+   "A": "refuse",
+   "B": "claim",
+   "C": "deliver",
+   "D": "lower"
+  },
+  "answer": "B",
+  "explanation": "語意「三十五年間，獵人送去超過八萬具狼屍，為的是『領取』賞金」，claim 在這裡是「領取（自己有權拿的東西）」；refuse（拒絕）、deliver（遞送）、lower（降低）都不是獵人送狼屍想達成的目的。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】claim 你最熟的意思是「聲稱」，例如 claim that + 子句，放進本句講不通，於是改挑 deliver，因為「送」狼屍和「送」賞金聽起來很搭。其實 claim 還有一個常用的意思：領取自己有權拿的東西，例如 claim your baggage（領取行李）、claim a prize（領獎）。【怎麼判斷】主詞是 hunters（獵人），動作是 brought in more than eighty thousand dead wolves（送去超過八萬具狼屍），不定詞 to ___ the reward 說明送狼屍的目的。前一句 bounty 後面用破折號接 a cash reward for every dead wolf（每殺一隻狼就發一筆賞金），破折號後面就是 bounty 的解釋，本句的 the reward 指的就是這筆賞金。獵人把狼屍送去、目的和賞金有關，空格自然是「領取」，本句自己就選得出答案。這是字詞搭配的判斷：不定詞帶出目的，空格的動作必須是獵人想要的結果。例句：The lucky winner has thirty days to claim the prize at the school office.（中獎的同學有三十天的時間到學校辦公室領獎。）【誘答選項】deliver 是「遞送、交付」。中文「送狼屍、送賞金」連在一起很順，所以最有吸引力。可是 deliver the reward 的主詞多半是發錢的一方，也就是政府，獵人卻是拿錢的一方。中文會通，是因為兩個動作都可以說「送」，讀者容易忽略一個是給錢、一個是拿錢。refuse 是「拒絕」，獵人辛苦送狼屍去，不會是為了拒絕賞金，語意矛盾。lower 是「降低」，獵人沒有權力調整賞金的金額，也不會想讓它變少。【常考字詞與句型】claim a reward／prize（領取賞金／獎品）、claim one’s baggage（領取行李）、claim that + 子句（聲稱……）、a reward for + N（……的賞金）。"
+ },
+ {
+  "id": "GCLA-z95p2_14",
+  "year": "改編練習（二十）",
+  "passageId": "CLA-z95p2",
+  "blankNum": 14,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "set out",
+   "B": "put away",
+   "C": "laid off",
+   "D": "handed down"
+  },
+  "answer": "A",
+  "explanation": "語意「從 1872 年公園開放那天起，園內就『擺出』下了毒的肉來毒死狼」，set out 在這裡是「擺出來、放置」，毒肉要擺出來狼才吃得到；put away（收好）、laid off（裁員）、handed down（傳給下一代）都達不到句尾 to kill wolves 的目的。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】set out 你最熟的意思是「出發」（set out on a trip），肉不會出發，你可能改挑 put away，因為 put 是「放」，「放毒肉」聽起來很自然。其實 set out 還有一個常用的意思：把東西擺出來，例如 set out snacks for the guests（替客人擺好點心）。【怎麼判斷】主詞是 poisoned meat（下了毒的肉），空格前是 was，句尾 to kill wolves 說明目的。肉要毒死狼，就得擺在狼找得到的地方，所以要填「擺出來」。這是字詞搭配的判斷：不定詞帶出目的，空格的動作必須能達成這個目的。還原成主動句：People set out poisoned meat to kill wolves.（有人擺出下了毒的肉來毒死狼。）上文 not even Yellowstone, the nation’s first national park 裡，逗號後的同位語告訴你 Yellowstone 是什麼地方。【誘答選項】put away 是「收好、放回原處」。中文「放毒肉」讀起來很順，所以最有吸引力。可是 put away 的核心是把東西移開存放，毒肉存放好了，狼就吃不到，和 to kill wolves 的目的矛盾。中文會通，是因為只看了 put 的「放」，忽略了 away 帶出的「移開」。laid off 是「裁員」，受詞多半是員工。handed down 是「傳給下一代」，對象是傳統、手藝或舊物，毒肉談不上代代相傳。【常考字詞與句型】set out + N（把……擺出來）、set out on a trip（出發去旅行）、put away + N（把……收好）、lay off workers（裁員）、hand down a tradition（把傳統傳下去）、from the day + 子句（從……那天起）。set out 是指考 94 年第 27 題的正解，不過那一題是 set out to V（立志要做……），意思和本題不同。"
+ },
+ {
+  "id": "GCLA-z95p2_15",
+  "year": "改編練習（二十）",
+  "passageId": "CLA-z95p2",
+  "blankNum": 15,
+  "category": "慣用語／片語",
+  "options": {
+   "A": "fell silent",
+   "B": "fell apart",
+   "C": "fell behind",
+   "D": "fell short"
+  },
+  "answer": "A",
+  "explanation": "語意「只有在威斯康辛、明尼蘇達和密西根北部的森林裡，還聽得到灰狼的嚎叫，美國西部廣大的土地卻『陷入一片寂靜』」，while 帶出和前半句 heard 相對的情況，fell silent 符合；fell apart（崩解）、fell behind（落後）、fell short（未達到）都和聲音無關。",
+  "contextSpan": "句內",
+  "note": "【你可能會這樣想】讀到 the vast lands of the American West（美國西部廣大的土地），你可能想到中文「大地支離破碎」，於是挑 fell apart。可是本句前半講的是聽不聽得到聲音。【怎麼判斷】本句前半是倒裝：only 加地點放在句首，英文用倒裝凸顯「只有這裡」，助動詞 could 因此移到主詞前面，意思是只有北方的森林還聽得到灰狼的嚎叫（the howl of gray wolves could still be heard）。後半用 while 接上，while 在這裡表示對比：北方森林還聽得到，西部大地就要和 heard 相對，講聲音消失，所以是 fell silent。fall 後面接形容詞，表示變成某種狀態，同 fall asleep（睡著）。例句：The noisy classroom fell silent when the principal walked in.（校長一走進來，吵鬧的教室立刻安靜下來。）【誘答選項】fell apart 是「崩解、四分五裂」。中文「大地支離破碎」讀起來說得通，所以最有吸引力。可是 while 要和前半句的 heard 形成對比，後半講的應該是聲音；中文會通，是因為只把後半句當成荒涼的描寫，沒有和前半句對照。fell behind 是「落後」，要有比較或競爭的對象，句中沒有。fell short 是「不足、未達到」，要有一個標準或目標，句中也沒有。【常考字詞與句型】fall silent（陷入寂靜）、fall apart（崩解）、fall behind + N（落後於……）、fall short of + N（未達到……）、Only + 地點 + 助動詞 + S + V（只有在……才……）。"
+ }
+]

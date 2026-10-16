@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g98-26-3/index.html
+Author: staresto-create ZZSH
+Title: 98 年學測克漏字第26題詳解（介系詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 98 年學測 ／ 第26題
+98 年學測 克漏字 第26題
+介系詞線索：句內答對率 26%
+答對率 26%：當年每 100 位考生，有 26 位答對。
+In Toronto in 1976, the idea of putting together different disability groups 26 sports competitions was born.
+(A)for
+(B)with
+(C)as
+(D)on
+答案：(A) for
+題目編號：G98_26_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+for 在此表目的與用途：把不同身心障礙類別的團體整合起來「為了」舉辦運動競賽；with（伴隨）、as（作為，會變成把團體當成賽事）、on（關於）語意都不合。
+深入解析
+你可能會這樣想
+for 你最熟的是「為了誰」和「持續多久」，一看到 putting together different disability groups，很容易直接選 with——「把不同障礙類別的團體和運動競賽放在一起」，唸起來也順。你看出這一格的工作是把前後兩個名詞組接起來，判斷沒錯，錯在接法：with 接的是同時存在的伴隨物，for 接的是「要拿來做什麼」。這一格要的是後者。
+怎麼判斷
+先數這一格前後各是什麼。前面 putting together different disability groups（把不同障礙類別的團體整合起來）是一個動作，後面 sports competitions（運動競賽）是這個動作的目的。目的用 for，這是 for 最常被漏掉的用法，而且整組長得很像：a place for meetings（開會用的場地）、equipment for training（訓練用的器材），中文一律翻成「…的」，英文一律用 for。驗算法很快：把 for 拆成完整的目的說法讀一遍——in order to hold sports competitions（以便舉辦運動競賽）——意思不變，就確定這一格是目的，不是伴隨。一句記完：Volunteers in our town set up tents for the distribution of food and blankets to the families left homeless by the earthquake.（鎮上的志工搭起帳篷，用來把食物和毛毯分發給地震中失去家園的那些家庭。）〔情境取材自 99 課綱參考試卷作文題：鄰國大地震寫信〕
+誘答選項
+with（伴隨）：會讀成「團體連同運動競賽一起被整合」，但競賽是整合之後才辦的，不是被整合的對象。as（作為）：會把團體說成競賽本身，語意不連貫。on（關於）：帶出主題，變成「關於運動競賽的團體」，與整合這個動作接不上。三者的問題相同——把目的換成了伴隨、作為或主題。同義記一組：for 等於 for the purpose of，也等於 in order to（後面接原形動詞）。
+常考字詞與句型
+for + 名詞（表用途、目的）、for the purpose of（為了…的目的）、in order to（為了）、put together（整合、拼湊）、be designed for（專為…而設計）、grow in size（規模變大）、be held in the same year as（與…同年舉行）、sign an agreement（簽署協議）。
+鑑別度分析：鑑別度 10，高低分群的差距不大。本題答對率二成六——大考中心《選才電子報》第 307 期說明鑑別度時提到，鑑別度低表示高、低分群考生的答對率差距小，原因很多，而且它與答對率一樣，只是推論試題品質的指標之一。這一題的難處在於 for 的哪一個意思：for 最先想到的是「為了誰」與「持續多久」，這一格用的卻是表目的的 for（a place for meetings 那一型），sports competitions 是前面整合團體這個動作的目的；with 的「伴隨」唸起來也順，要分清目的與伴隨才排得掉。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The Paralympics are Olympic-style games for athletes with a disability. They were organized for the first time in Rome in 1960. In Toronto in 1976, the idea of putting together different disability groups 26 sports competitions was born. Today, the Paralympics are sports events for athletes from six different disability groups. They emphasize the participants' athletic achievements 27 their physical disability.
+The games have grown in size gradually. The number of athletes 28 in the Summer Paralympic Games has increased from 400 athletes from 23 countries in 1960 to 3,806 athletes from 136 countries in 2004.
+The Paralympic Games have always been held in the same year as the Olympic Games. Since the Seoul 1988 Paralympic Games and the Albertville 1992 Winter Paralympic Games, they have also 29 in the same city as the Olympics. On June 19, 2001, an agreement was signed between the International Olympic Committee and the International Paralympics Committee to keep this 30 in the future. From the 2012 bid onwards, the city chosen to host the Olympic Games will also host the Paralympics.
+中譯：帕拉林匹克運動會（帕運）是為身心障礙運動員舉辦的奧運式賽事，於 1960 年在羅馬首度舉行。1976 年在多倫多，將不同身心障礙類別的選手集合起來共同參與運動賽事的構想誕生了。如今，帕運已是六種不同身心障礙類別運動員參加的體育賽事，強調參賽者的運動成就而非他們的身體障礙。這項賽事的規模逐漸擴大：夏季帕運的參賽選手人數，已從 1960 年 23 國 400 名運動員，成長到 2004 年 136 國 3806 名運動員。帕運一直都與奧運在同一年舉行。自 1988 年首爾帕運及 1992 年阿爾貝維爾冬季帕運起，帕運也開始在與奧運相同的城市舉辦。2001 年 6 月 19 日，國際奧會與國際帕拉林匹克委員會簽署協議，確保未來這項安排能持續下去。從 2012 年主辦城市申辦起，凡是獲選主辦奧運的城市，也將同時主辦帕運。
+📋 內容大意
+The Paralympics are Olympic-style games that have evolved to showcase the athletic achievements of competitors across six different disability groups.
+The Paralympic Games have steadily expanded in size, drawing thousands more international athletes over the decades.
+The Paralympics are officially tied to the Olympic Games, sharing both the same host year and host city by formal agreement.
+← 第25題回到98 年學測第27題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

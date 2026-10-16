@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g105-17-1/index.html
+Author: staresto-create ZZSH
+Title: 105 年學測克漏字第17題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 105 年學測 ／ 第17題
+105 年學測 克漏字 第17題
+慣用語／片語線索：句內答對率 69%
+答對率 69%：當年每 100 位考生，有 69 位答對。
+Their young captive 17 to be a mischievous boy.
+(A)made believe
+(B)got along
+(C)turned out
+(D)felt like
+答案：(C) turned out
+題目編號：G105_17_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】turn out to be 指「結果是」，表示「他們年輕的人質『結果』是個調皮搗蛋的男孩」；made believe（假裝）、got along（相處）、felt like（感覺想要）都不合。
+深入解析
+你可能會這樣想
+turn out 這個片語，你最熟的多半是「關燈」（turn out the lights）或「出席、到場」（Thousands of people turned out to welcome them.），比較少人第一時間想到它還有「結果是、原來是」這一義。另外 felt like 也很吸引人，因為你背過「想要」；但 feel like 後面接名詞或 V-ing，接不了 to be。
+怎麼判斷
+關鍵全在空格後面那兩個字 to be。四個選項裡只有 turn out 能接 to V — 劍橋詞典把 turn out 標為 B2，其中一義是「最後被發現是（往往出乎意料）」，句型就是 turn out to be + 名詞或形容詞。整句還原：Their young captive turned out to be a mischievous boy.（他們年幼的人質原來是個調皮搗蛋的孩子。）這個句型還有一個等值說法可以一起記，改寫題很好用：It turned out that their young captive was a mischievous boy. 也就是 turn out to be ＝ It turns out that…，兩種說法並存，意思相同。文意也支持：後面兩句 He viewed the kidnapping as a wonderful camping trip.（他把綁架當成一趟美好的露營之旅。）以及 He demanded that his kidnappers play tiring games with him.（他要求綁匪陪他玩累人的遊戲。）都在證明事情的發展出乎綁匪意料，這正是 turn out 的語感。順帶注意 demanded 後面的 play 沒有加 s，因為 demand、suggest、insist 這類表示「要求、建議」的動詞，帶出的 that 子句常用原形動詞，也可以寫成 should + 原形。
+誘答選項
+make believe（假裝）後面接 that 子句（that 常省略），例 The children made believe they were pirates.（孩子們假裝自己是海盜。）get along（相處融洽）是不及物用法，要接對象時寫成 get along with sb，也接不了 to be。feel like（想要）後面只接名詞或 V-ing，例 I feel like going home.（我想回家。）
+常考字詞與句型
+turn out to be（結果是、原來是）、it turns out that …（結果發現……）、turn out the lights（關燈）、turn out（出席、到場）、make believe（假裝）、get along with（與……相處融洽）、feel like + V-ing（想要做……）、demand that + 主詞 + 原形動詞（要求……）、view A as B（把 A 視為 B）。其中 turn out to be 這一組考過 5 個年度，89 年第 26 題 →、103 年第 28 題 →、108 年第 21 題 →、115 年第 11 題 →都出現過；it turns out that … 考過 4 個年度，83 年第 16 題 →、89 年第 26 題 →、94 年第 19 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Bill and Sam decided to kidnap the son of a banker to compensate for their business loss. They kidnapped the boy and hid him in a cave. They asked for a ransom of $2,000 to return the boy.
+16 , their plan quickly got out of control. Their young captive 17 to be a mischievous boy. He viewed the kidnapping as a wonderful camping trip. He demanded that his kidnappers play tiring games with him, such as riding Bill as a horse for nine miles. Bill and Sam were soon desperate and decided to 18 the little terror. They lowered the price to $1,500.
+Yet, knowing perfectly well 19 a troublemaker his son was, the father refused to give them any money. 20 , he asked the kidnappers to pay him $250 to take the boy back. To persuade the boy to return home, Bill and Sam had to tell him that his father was taking him bear-hunting. The kidnappers finally handed over the boy and $250 to the banker and fled town as quickly as they could.
+中譯：比爾和山姆決定綁架一位銀行家的兒子，藉此彌補他們生意上的損失。他們綁走了男孩，把他藏在一個山洞裡，並要求兩千美元的贖金才肯放人。然而，他們的計畫很快就失控了。這名年幼的人質原來是個調皮搗蛋的孩子，他把整場綁架當成一次美好的露營之旅，還要求綁匪陪他玩累人的遊戲，例如騎在比爾身上「當馬」走上九英里。比爾和山姆很快就束手無策，決定把這個小麻煩精送回去，並把贖金降到一千五百美元。然而，這位父親完全清楚自己兒子有多難搞，因此拒絕支付任何贖金。相反地，他還要求綁匪付他兩百五十美元，才願意把兒子接回去。為了說服男孩願意回家，比爾和山姆只好騙他說爸爸要帶他去獵熊。綁匪最終只好把男孩和兩百五十美元一起交給這位銀行家，然後盡快逃離小鎮。
+📋 內容大意
+Two men kidnapped a banker's son and held him for ransom to make up for financial losses.（敘事文）
+The kidnapped boy tormented his captors with exhausting games, forcing them to lower the ransom price out of desperation.（敘事文）
+The father demanded payment to take his troublemaking son back, leaving the kidnappers no choice but to pay him and flee.（敘事文）
+← 第16題回到105 年學測第18題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

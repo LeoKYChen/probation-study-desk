@@ -1,0 +1,44 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g89-30-2/index.html
+Author: staresto-create ZZSH
+Title: 89 年學測克漏字第30題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 89 年學測 ／ 第30題
+89 年學測 克漏字 第30題
+慣用語／片語線索：句內
+At other times the dreaded event from daily life simply occurs in a dream in its real-life form; 29 , the boy dreams of being bullied by the bigger boy. 30 scientific research, we have known more about the relationship between sleep and dreams.
+(A)Due to
+(B)As far as
+(C)In spite of
+(D)Consisting of
+答案：(A) Due to
+題目編號：G89_30_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「透過/因為科學研究，我們對睡眠與夢的關係有更多了解」，Due to（由於/因為）符合這個因果邏輯；In spite of（儘管）表達的是讓步/對立關係，跟「科學研究幫助我們了解更多」這個順向因果矛盾。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是好幾個字組成的一組，代進去一個一個唸，會覺得「靠科學研究」「就科學研究而言」聽起來好像都通。這一格先不要比語意，先看空格後面接的是名詞還是子句，一步就能砍掉一半。
+怎麼判斷
+先看結構：空格後面是 scientific research（科學研究），是一個名詞，不是子句；逗號後面 we have known more about ... 才是主要子句。所以空格要的是能直接接名詞、整組當一個介系詞用的那一型。As far as 先排除——它表示「就……而言」時後面接子句（as far as I know 就我所知），直接接名詞則是「遠至」（as far as Bristol 一直開到布里斯托），放在 scientific research 前面講不通。Consisting of 也排除——它是分詞，若擺在句首，意義主詞必須與主要子句的主詞一致，而主要子句的主詞是 we，變成「我們由科學研究組成」，語意荒謬，是典型的垂懸分詞。剩下 Due to 與 In spite of，這時才用語意分：主要子句說「我們對睡眠與夢的關係了解得更多了」，而科學研究正是造成這個結果的原因，是順向的因果，不是「儘管有科學研究，我們卻還是……」的讓步，所以填 Due to。due to 與 owing to、because of 意思相同，都是幾個字合起來當一個介系詞用（劍橋 English Grammar Today 的 Prepositions 條目），認得就好，不必拆開分析。
+誘答選項
+In spite of（儘管）：讓步，要求前後互相牴觸，本句是順向的因果。As far as（就……而言、遠至）：表「就……而言」時後面要接子句；直接接名詞只有「遠至」的意思，放在這裡講不通。Consisting of（由……組成）：分詞，擺在句首會造成意義主詞對不上的垂懸分詞。
+Due to 和 In spite of 的差別
+Due to 是由於，後面接原因。In spite of 是儘管，用在結果和預料相反的時候。Due to the crowds, the flower field was ruined within a single weekend.（由於人潮，這片花田一個週末就被踩壞了。）In spite of the warning sign, visitors kept walking into the field to take photos.（儘管有告示牌，遊客還是不斷走進花田拍照。）〔情境取材自 110 學測作文題：遊客踐踏花田〕兩句講的是同一片花田：前一句說它為什麼被踩壞，後一句說告示牌並沒有擋住遊客。歷屆考題裡 In spite of 沒當過答案，109 年第 29 題 →、指考 107 年第 17 題 →也都是擺在誘答的位置。順帶記另一組：as a result of、result from 後面接原因，result in 後面接結果。
+常考字詞與句型
+due to（由於）、owing to（由於）、because of（因為）、thanks to（多虧、由於）、in spite of（儘管）、the relationship between A and B（A 與 B 之間的關係）。其中 in spite of 這一組考過 9 個年度，86 年第 21 題 →、93 年第 23 題 →、99 年第 24 題 →、99 年第 28 題 →、105 年第 29 題 →、106 年第 19 題 →、107 年第 30 題 →、109 年第 29 題 →、112 年第 15 題 →都出現過；due to 考過 4 個年度，106 年第 28 題 →、108 年第 25 題 →、109 年第 29 題 →都出現過；owing to 考過 3 個年度，108 年第 25 題 →、109 年第 29 題 →都出現過。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Basically, there are two kinds of sleep. One is Rapid Eye Movement (REM) sleep. In 21 , the brain waves of a sleeping person are similar to those of a waking person, and the eyes move about rapidly under the closed lids. 22 kind of sleep is Non-Rapid Eye Movement sleep.
+Scientists have discovered that dreams happen mainly in REM sleep. Everyone dreams about 20 percent of their sleeping time. 23 people who say they never dream show about 20 percent of REM sleep. 24 these "non-dreamers" do their sleeping in a laboratory 25 researchers can wake them up and ask them whether they were having dreams the moment before, it 26 that they dream as much as others.
+Events in daily life sometimes occur symbolically in dreams. 27 , a boy is having difficulties on the school playground because a bigger boy keeps bullying him. He may dream at night of being alone in the playground, 28 a lion. At other times the dreaded event from daily life simply occurs in a dream in its real-life form; 29 , the boy dreams of being bullied by the bigger boy.
+30 scientific research, we have known more about the relationship between sleep and dreams. However, why a dream will take a certain symbolic form is still a mystery.
+中譯：基本上，睡眠可分為兩種。第一種是快速動眼期（REM）睡眠，在這個階段，睡眠者的腦波與清醒時相似，眼球會在閉著的眼皮下快速轉動。另一種則是非快速動眼期睡眠。科學家發現，做夢主要發生在快速動眼期。每個人在睡眠時間中大約有 20%在做夢，就連那些聲稱自己從不做夢的人，也有大約 20%的快速動眼期睡眠時間。如果讓這些「不做夢的人」在實驗室裡睡覺，研究人員就能把他們叫醒，詢問他們前一刻是否在做夢，結果發現，原來他們做夢的次數其實跟其他人一樣多。日常生活中發生的事，有時會以象徵的形式出現在夢境中。舉例來說，一個男孩在學校操場上因為一直被較大的男孩欺負而感到困擾，晚上他可能會夢見自己獨自一人在操場上，面對一頭獅子。而有時候，日常生活中令人恐懼的事件，也會直接以原本的樣貌出現在夢境中，也就是說，這名男孩夢見的就是自己被那個較大的男孩欺負。透過科學研究，我們對睡眠與夢境之間的關係已有了更多了解。然而，夢境為什麼會以某種特定的象徵形式呈現，至今仍是個謎。
+📋 內容大意
+Scientific research shows that everyone dreams during REM sleep, often transforming daily experiences into direct or symbolic dreams.
+← 第29題回到89 年學測第31題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

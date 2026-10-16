@@ -1,0 +1,53 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g95-17-1/index.html
+Author: staresto-create ZZSH
+Title: 95 年學測克漏字第17題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 95 年學測 ／ 第17題
+95 年學測 克漏字 第17題
+慣用語／片語線索：句內答對率 14%
+答對率 14%：當年每 100 位考生，有 14 位答對。
+I understand that college students like to 17 parties, movies, and lots of activities, but you also have to learn how to do without certain things.
+(A)indulge in
+(B)dwell in
+(C)attend to
+(D)apply to
+答案：(A) indulge in
+題目編號：G95_17_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+indulge in 是「盡情享受、沉溺於」，符合大學生盡情參加派對、看電影、參與各種活動的語意；dwell in（居住於）、attend to（處理、照料）、apply to（適用於、向…申請）語意都不合。
+重點：attend + 受詞是參加、出席；attend to + 受詞是處理、照料。差別只在一個 to。
+延伸閱讀：attend 與 attend to，分岔就在那個 to ↗
+深入解析
+答對率一成四，鑑別度 -1：高分群考生答對的比例與低分群幾乎一樣，甚至還略低。
+你可能會這樣想
+這一題最容易選錯的是 attend to：不是判斷錯，是根本沒看見那個 to。你背的是「attend ＝ 參加」，一個英文字配一個中文詞——這個記法裡沒有留給介系詞的位置，所以 to 就算出現在眼前，你也不會注意到。attend 有兩種用法，分岔點就是那個 to：attend + 受詞 ＝ 參加、出席（attend a meeting）；attend to + 受詞 ＝ 處理、照料。檢驗法是把受詞代進去唸：attend the party 成立；attend to the party 變成「照料那場派對」，跟「大學生喜歡參加派對」對不上。
+怎麼判斷
+整篇是母親寫給兒子談花錢的信——擔心他用錢的方式、要他量入為出、拒絕多寄錢。所以 college students like to ___ parties, movies, and lots of activities 不是中性描述休閒，是在鋪陳「花太多」。緊接的 but you also have to learn how to do without certain things 就是證據：but 前面必須是「盡情享受、放縱」，後面才轉得過來。indulge in 本身就帶著「過了頭」的語氣。
+誘答選項
+attend 家族的分岔正好沿著那個 to：人到場那支 → attendance（出席率）；照料那支 → attendant → flight attendant、attentive（周到的）。字根是 tend-「伸」，同家族還有 extend（延長）、intend（打算）、tendency（傾向）。一句記完：Flight attendants don't attend the flight—they attend to you, and the good ones are attentive.（空服員不是去搭那班飛機的人，是在機上照料你的人；好的空服員都很周到。）〔情境取材自 98 指考作文題：不必擔心預算的一天〕另兩個誘答同機制，也是差一個介系詞：dwell in（居住於）對 dwell on（老想著）、apply to（適用於）對 apply for（申請）。
+常考字詞與句型
+indulge in（盡情享受、沉溺於）、attend a meeting（出席會議）、attend to（處理、照料）、attendance（出席率）、flight attendant（空服員）、attentive（周到的）、dwell on（老想著）、apply to／apply for（適用於／申請）。
+鑑別度分析：鑑別度只有 -1，非常接近 0，加上本題答對率只有一成四，屬於難度極高的題目——大考中心《選才電子報》第 307 期說明鑑別度時，就把答對率低的難題列為鑑別度偏低的原因之一：高、低分群考生在這類題目上的答對率差距不大，鑑別度的數值就會比較小。這題比較像是全體考生（不分程度）都容易被 attend to 這個陷阱誤導，而非題目設計本身有嚴重瑕疵。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Dear Son,
+I am very happy to hear that you are doing well in school. However, I am very concerned with the way you 16 money. I understand that college students like to 17 parties, movies, and lots of activities, but you also have to learn how to do without certain things. After all, you must live within a limited budget.
+18 the extra money you want for this month, I am sorry that I have decided not to send it to you because I think it is time for you to learn how to live without my help. If I give you a hand every time you have problems with money now, what will you do when you no longer have me to support you? Besides, I remember telling you I used to have two part-time jobs when I was in college just to 19 . So, if you need money now, you should try either finding a job or cutting down on your 20 .
+I understand it is not easy to live on your own. But learning to budget your money is the first lesson you must learn to be independent. Good luck, son. And remember: never spend more than you earn.
+Love, Mom
+中譯：親愛的兒子：很高興聽到你在學校表現不錯。不過，我很擔心你花錢的方式。我理解大學生喜歡參加派對、看電影和各種活動，但你也必須學會割捨一些事情。畢竟，你必須在有限的預算內生活。至於這個月你想要的額外零用錢，很抱歉，我決定不寄給你，因為我認為現在是你該學習如何在沒有我幫助的情況下生活的時候了。如果我每次你有經濟困難時都伸出援手，那當你不再有我可以依靠時，你要怎麼辦？此外，我記得曾告訴過你，我大學時為了應付開銷，同時打過兩份工。所以，如果你現在需要錢，應該試著去找份工作，或是減少你的開銷。我明白獨立生活並不容易，但學會規劃自己的花費，是你邁向獨立必須學會的第一課。祝好運，兒子。記住：花費永遠不要超過你的收入。愛你的媽媽
+📋 內容大意
+A mother writes that she is pleased with her son's academic progress but troubled by his spending habits.
+She refuses the extra money he asked for this month, since he must learn to live within a limited budget before her support is gone.
+Recalling her own two part-time jobs at college, she advises him to find work or cut back, and closes with a rule: never spend more than you earn.
+← 第16題回到95 年學測第18題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

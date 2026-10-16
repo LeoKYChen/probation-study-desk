@@ -1,0 +1,42 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g83-13-1/index.html
+Author: staresto-create ZZSH
+Title: 83 年學測克漏字第13題詳解（句型結構）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 83 年學測 ／ 第13題
+83 年學測 克漏字 第13題
+句型結構線索：句內
+But in Greece and Rome, men 13 use them.
+(A)would
+(B)could
+(C)wouldn't
+(D)won't
+答案：(C) wouldn't
+題目編號：G83_13_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+上下文說希臘羅馬人認為雨傘是女性用品，所以男性「過去不願意」使用，需要否定意義的過去式情態助動詞 wouldn't。won't 是未來式不符合過去語境；would／could 為肯定形式與語意矛盾。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項裡兩個肯定、兩個否定，如果沒把句首的 But 和下一句一起讀，很容易挑錯方向。
+怎麼判斷
+先用形態刷一個：won't 是 will not 的縮寫，講的是現在或未來，而整段在敘述古代的事，時態對不上，先排除。剩下 would、could、wouldn't，看方向：空格所在的句子以 But 開頭——前面說雨傘從中國傳到印度、波斯、埃及，這裡用 But 一轉，代表希臘與羅馬的情況不一樣。下一句更直接：They believed umbrellas were {14} for women.（他們認為傘是女性用的東西。）既然認定那是女人的東西，男人當然不肯用，填 wouldn't。這裡的 would 不是「將會」，而是表示過去的意願；加上 not 就是「不肯、不願意」。掛鉤是一句你可能聽過的話：The car wouldn't start.（車子發不動。）——字面是「車子不肯發動」，把 would 的「意願」講得很傳神。
+誘答選項
+would、could：兩個都是肯定，與 But 帶出的轉折以及下一句「傘是女性用的東西」直接衝突。won't：講現在或未來，與過去的敘事對不上。
+常考字詞與句型
+wouldn't V（過去不肯、不願意）、would rather（寧願）、used to V（過去經常）、believe that（相信）、carry an umbrella（帶傘）、in Greece and Rome（在希臘與羅馬）。其中 used to V 這一組考過 3 個年度，83 年第 15 題 →、99 年第 16 題 →、111 年第 17 題 →都出現過。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The umbrella is not a new invention. The Chinese 11 umbrellas in the eleventh century B.C. 12 China they traveled to India, Persia, and Egypt. But in Greece and Rome, men 13 use them. They believed umbrellas were 14 for women. When the Spanish explorers went to Mexico, they saw the Aztec kings 15 umbrellas. English explorers found out that Indian princes also carried umbrellas on the east coast of North America. It 16 that people in different parts of the world invented umbrellas at different times.
+England was probably the first country in Europe 17 ordinary people used umbrellas 18 the rain. England has a rainy climate, and umbrellas are very useful there. The umbrella is now a very ordinary 19 . Everybody uses it today. It keeps the rain and the sun off people. Some umbrellas fold up, 20 it is easy to carry them.
+中譯：雨傘不是新發明。中國人在西元前十一世紀就開始使用雨傘，雨傘再從中國傳到印度、波斯和埃及。但在希臘和羅馬，男人卻不肯用傘，他們認為雨傘是女性用品。當西班牙探險家到墨西哥時，他們看到阿茲特克國王使用雨傘。英國探險家發現北美東岸的印第安酋長也會撐傘。看來世界各地的人在不同時期各自發明了雨傘。英國可能是歐洲第一個一般民眾用雨傘擋雨的國家。英國氣候多雨，雨傘在那裡非常實用。雨傘現在已是非常普通的物品，人人都在使用。它能遮雨也能遮陽。有些雨傘可以摺疊，這樣攜帶起來很方便。
+📋 內容大意
+The umbrella is far older than most people assume; Chinese records place it in the eleventh century B.C.（敘事文）
+Umbrellas spread to India, Persia and Egypt, yet Greek and Roman men rejected them as women's goods, while Aztec kings and Indian princes carried them freely.
+England, whose climate is wet, was probably the first European country in which ordinary people took up the umbrella, now an everyday item that keeps both rain and sun off.
+← 第12題回到83 年學測第14題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g93-25-2/index.html
+Author: staresto-create ZZSH
+Title: 93 年學測克漏字第25題詳解（分詞／動狀詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 93 年學測 ／ 第25題
+93 年學測 克漏字 第25題
+分詞／動狀詞線索：句內答對率 25%
+答對率 25%：當年每 100 位考生，有 25 位答對。
+These nets are recognized by medical experts as the best hope for 22 the spread of malaria－Cambodia's most deadly disease. 23 the Health Ministry and the Malaria Center, The CAMBODIA DAILY will distribute the nets to the most 24 areas of the country. 25 to this campaign and save three lives for only $5, send your donation to: American Assistance for Cambodia, P.O.
+(A)Contributing
+(B)Contribute
+(C)To contribute
+(D)For contributing
+答案：(C) To contribute
+題目編號：G93_25_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+句首的 To contribute… and save… 是不定詞片語表目的，修飾後面的祈使句 send your donation to…；Contribute 會造成兩個祈使句相連而句構斷裂，Contributing 當主詞則無動詞可配，For contributing 用於說明物品用途，都不合。
+重點：to + 原形動詞可以表示目的，回答「為什麼」；放在句首時，後面接主要子句，如 To get an outside line, you have to dial 9 first.（要撥外線，得先按 9。）本題的主要子句是祈使句 send your donation to…。
+延伸閱讀：句首的 to V，表示目的 ↗
+深入解析
+你可能會這樣想
+主要子句 send your donation to… 是祈使句，你看到句首要填一個動作，直覺挑原形 Contribute——這個直覺有來源：祈使句本來就用原形開頭，規則沒錯。錯在邊界：那樣一來，前後就變成兩個完整的祈使句，中間只有一個逗號，沒有連接詞連接。英文不允許這樣寫，這個錯誤叫 comma splice——兩句中間必須有連接詞，或改用分號、句號。中文可以一路逗號到底，英文不行。檢驗法：把逗號兩邊各自唸一次，兩邊都能單獨成句，就是 comma splice。
+怎麼判斷
+要讓句子成立，前半必須降級成修飾語。To contribute to this campaign and save three lives for only $5 是不定詞片語表目的：為了盡一份心力、只花五美元救三條命，請把捐款寄到…。目的在前、動作在後；and 連接的是 To contribute 與（to）save，第二個 to 依慣例省略。整篇是募款廣告，最後一句本來就是「為了…，請…」的行動呼籲。
+誘答選項
+Contributing 放句首會變成主詞，但後面接的是祈使句，沒有動詞配它。For contributing 的 for + V-ing 用來說明「物品的用途」（I need something for storing CDs.）；人做某事的目的要用 to + 原形。contribute 的字根是 trib-「分配、給予」，con-「一起」 + trib-「給」＝ 大家一起出一份。這個家族一句記完：Thousands of strangers contributed what they could, volunteers distributed the supplies overnight, and the rescue became a tribute to ordinary kindness.（數千個素不相識的人各盡所能捐輸，志工連夜把物資分送出去，那場救援成了對平凡善意的致敬。）〔情境取材自 99 課綱參考試卷作文題：鄰國大地震寫信〕
+常考字詞與句型
+To V…, 祈使句（為了…，請…）、in order to V（為了）、for + V-ing（說明用途）、make a donation to（捐款給）、contribute to（捐助；促成）、distribute（分配）、tribute（致敬）、wipe out（根除）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The CAMBODIA DAILY is launching a world-wide campaign to wipe out malaria in Cambodia. You can help save three lives for only $5 by supporting this effort. Each and every dollar you contribute will go 21 the purchase of family-sized insecticide-treated mosquito nets costing $5 each. These nets are recognized by medical experts as the best hope for 22 the spread of malaria－Cambodia's most deadly disease.
+23 the Health Ministry and the Malaria Center, The CAMBODIA DAILY will distribute the nets to the most 24 areas of the country. 25 to this campaign and save three lives for only $5, send your donation to: American Assistance for Cambodia, P.O. Box 2716, GPO, New York, NY 10116. Credit Card donations are also accepted.
+中譯：《柬埔寨日報》正發起一項全球性的活動，致力於根除柬埔寨的瘧疾。只要捐款五美元，你就能協助拯救三條生命。你所捐出的每一分錢，都將用於購買每頂五美元、適合全家使用的殺蟲處理蚊帳。這些蚊帳被醫學專家公認為對抗瘧疾——柬埔寨最致命疾病——傳播的最佳希望。《柬埔寨日報》將與衛生部及瘧疾防治中心合作，將這些蚊帳分發到全國受瘧疾影響最嚴重的地區。想參與這項活動、只需五美元就能拯救三條生命，請將捐款寄至：American Assistance for Cambodia, P.O. Box 2716, GPO, New York, NY 10116。我們也接受信用卡捐款。
+📋 內容大意
+The CAMBODIA DAILY is raising funds to distribute insecticide-treated mosquito nets across high-risk areas to combat malaria.
+← 第24題回到93 年學測第26題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

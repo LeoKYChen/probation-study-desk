@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g95-16-1/index.html
+Author: staresto-create ZZSH
+Title: 95 年學測克漏字第16題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 95 年學測 ／ 第16題
+95 年學測 克漏字 第16題
+字彙選義線索：句內答對率 45%
+答對率 45%：當年每 100 位考生，有 45 位答對。
+However, I am very concerned with the way you 16 money.
+(A)manage
+(B)restrict
+(C)charge
+(D)deposit
+答案：(A) manage
+題目編號：G95_16_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「你花錢的方式」，manage money（管理金錢）符合家長對孩子理財方式的擔憂；restrict（限制）、charge（收費）、deposit（存款）都不符合這裡「廣義理財管理方式」的語境。
+深入解析
+你可能會這樣想
+manage 你第一個想到的多半是 manage to V「設法做到、好不容易做成」。但 manage 更基本的用法是及物動詞「管理、掌管」，受詞可以是錢、時間、人、公司：manage money、manage one's time、manage a team。這封信通篇在講理財，the way you manage money 就是「你管理金錢的方式」。
+怎麼判斷
+這題答對率四成五，鑑別度卻高達 63，是全篇最會拉開差距的一題，分開的正是「認不認得 manage 的及物用法」。句構上還有一個可以自己驗算的地方：the way 後面直接接了一個完整子句 you ___ money，中間什麼都沒有——這正是 the way 後面可以什麼都不接的用法（the way 後面可接 that、可接 in which，也可以什麼都不接；the way how 在標準書面英語裡不用，見 100 年第 24 題 →）。既然是完整子句，空格要填的就是這個子句的動詞，而且受詞是 money。
+誘答選項
+restrict 是「限制」，但它的受詞通常是行為或數量（restrict spending 限制花費、restrict access 限制取得），restrict money 不是自然的說法；而且媽媽擔心的是「方式」不是「額度」。charge 常被讀成「充電」，它當「收費」時的說法是 charge sb for sth，這裡沒有收費的對象。deposit 是「存入」，只指把錢存進帳戶這一個動作，涵蓋不了整封信在講的整套理財行為。
+常考字詞與句型
+manage money（管理金錢）、manage one's time（管理時間）、manage to V（設法做到）、restrict spending（限制花費）、charge sb for sth（向某人收取費用）、deposit money in an account（把錢存入帳戶）。其中 manage to V 這一組考過 4 個年度，86 年第 28 題 →、學測詞彙 91 年第 2 題、99 年第 20 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Dear Son,
+I am very happy to hear that you are doing well in school. However, I am very concerned with the way you 16 money. I understand that college students like to 17 parties, movies, and lots of activities, but you also have to learn how to do without certain things. After all, you must live within a limited budget.
+18 the extra money you want for this month, I am sorry that I have decided not to send it to you because I think it is time for you to learn how to live without my help. If I give you a hand every time you have problems with money now, what will you do when you no longer have me to support you? Besides, I remember telling you I used to have two part-time jobs when I was in college just to 19 . So, if you need money now, you should try either finding a job or cutting down on your 20 .
+I understand it is not easy to live on your own. But learning to budget your money is the first lesson you must learn to be independent. Good luck, son. And remember: never spend more than you earn.
+Love, Mom
+中譯：親愛的兒子：很高興聽到你在學校表現不錯。不過，我很擔心你花錢的方式。我理解大學生喜歡參加派對、看電影和各種活動，但你也必須學會割捨一些事情。畢竟，你必須在有限的預算內生活。至於這個月你想要的額外零用錢，很抱歉，我決定不寄給你，因為我認為現在是你該學習如何在沒有我幫助的情況下生活的時候了。如果我每次你有經濟困難時都伸出援手，那當你不再有我可以依靠時，你要怎麼辦？此外，我記得曾告訴過你，我大學時為了應付開銷，同時打過兩份工。所以，如果你現在需要錢，應該試著去找份工作，或是減少你的開銷。我明白獨立生活並不容易，但學會規劃自己的花費，是你邁向獨立必須學會的第一課。祝好運，兒子。記住：花費永遠不要超過你的收入。愛你的媽媽
+📋 內容大意
+A mother writes that she is pleased with her son's academic progress but troubled by his spending habits.
+She refuses the extra money he asked for this month, since he must learn to live within a limited budget before her support is gone.
+Recalling her own two part-time jobs at college, she advises him to find work or cut back, and closes with a rule: never spend more than you earn.
+回到95 年學測第17題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g109-24-2/index.html
+Author: staresto-create ZZSH
+Title: 109 年學測克漏字第24題詳解（分詞／動狀詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 109 年學測 ／ 第24題
+109 年學測 克漏字 第24題
+分詞／動狀詞線索：句內答對率 55%
+答對率 55%：當年每 100 位考生，有 55 位答對。
+This energy allowed the water 24 into the air, which looked just like sneezing!
+(A)jump
+(B)to jump
+(C)jumping
+(D)jumped
+答案：(B) to jump
+題目編號：G109_24_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】allow + O + to V 固定句型「允許/使某物做某事」；jump（原形動詞，allow 的補語結構需要不定詞）、jumping（現在分詞）、jumped（過去式）都不合。
+深入解析
+你可能會這樣想
+你很熟悉 let me go、make me cry——這兩個動詞後面接的是原形動詞，所以看到 allow the water ___ 很容易也填原形 jump。但這一組動詞其實分成兩派：let、make、have 後面接原形動詞；allow、permit、enable、force 後面要接不定詞 to V。中文都翻成「讓、使」，英文卻不同，這是最常錯的地方。
+怎麼判斷
+句子是 This energy allowed the water ___ into the air（這股能量使水滴 ___ 到空中）。動詞是 allowed，句型固定為 allow + 受詞 + to V，所以填 to jump。可以用你熟的句子互相對照著記：Let me go.（原形）／My parents don't allow me to stay out late.（要加 to）——同樣是「讓我做某事」，動詞不同，後面就不同。
+誘答選項
+jump 是原形，符合 let／make 的句型但不符合 allow；jumping 是現在分詞，allow 的受詞補語不用分詞；jumped 是過去式或過去分詞，放在受詞後面會變成被動語意，但水滴是自己跳起來的。
+常考字詞與句型
+allow sb／sth to V（允許、使……做某事）、permit sb to V（准許某人做……）、enable sb to V（使某人能夠……）、force sb to V（迫使某人……）、let sb V（讓某人做，接原形）、make sb V（使某人做，接原形）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+When a person sneezes, the droplets can spread diseases. Now research shows that plants have a somewhat 21 problem. Plant diseases can also spread through tiny water drops that jump off leaves— a plant's version of a sneeze. Scientists already knew earlier that wind and splashes of rainwater can move bacteria and other germs from leaf to leaf.
+22 other possible transmission routes, researchers at Virginia Tech observed water drops on the leaves of wheat plants that were infected with leaf rust. They found that the sick plants could "sneeze" and 23 tiny water drops filled with leaf rust germs, spreading the disease to neighboring plants. The researchers noticed that small drops of water on the wheat leaves would move to combine and form a larger drop. As they were moving, the energy of the droplets in motion would be released. This energy allowed the water 24 into the air, which looked just like sneezing!
+However, not all plants can sneeze. The ability is 25 to those with leaves that are hydrophobic, or repel water—a special feature that forces the liquid to move away when the leaf is exposed to it.
+中譯：當一個人打噴嚏時，飛沫可能會傳播疾病。如今研究顯示，植物也面臨著類似的問題。植物的疾病也可能透過從葉片彈出的微小水滴傳播——這正是植物版本的「打噴嚏」。科學家先前已經知道，風和雨水的飛濺能將細菌和其他病菌從一片葉子傳到另一片葉子。為了尋找其他可能的傳播途徑，維吉尼亞理工學院的研究人員觀察了感染葉鏽病的小麥葉片上的水滴。他們發現，生病的植物會「打噴嚏」，噴出充滿葉鏽病病菌的微小水滴，將疾病傳播給鄰近的植物。研究人員注意到，小麥葉片上的小水滴會逐漸移動、匯聚成一顆較大的水滴。在水滴移動的過程中，運動所產生的能量會被釋放出來，這股能量能讓水滴彈射到空中，看起來就像打噴嚏一樣！然而，不是所有植物都會「打噴嚏」，只有葉片具有疏水性（會排斥水分）的植物才有這項能力——這種特殊構造會使水滴在接觸葉片時被迫移動離開。
+📋 內容大意
+Plants can "sneeze" by launching germ-filled water droplets from hydrophobic leaves, spreading infections to neighboring vegetation.
+← 第23題回到109 年學測第25題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,126 @@
+Source: https://github.com/staresto-create/JCEE-vocab-questions/blob/7342ffeafc4870943b9531ec57e0c5b0c39acbe8/cohesion-202610-u12.html
+Author: staresto-create ZZSH
+Title: 多方觀點：一個問題，十個人發言｜Should Students Use AI in College Applications?
+Noncommercial educational text only
+
+多方觀點：一個問題，十個人發言
+學生申請大學的時候，可不可以用 AI 幫忙準備學習歷程檔案？這一篇沒有替你回答，而是請來十個不同身分的人各說各的：老師、家長、學者、招生人員、學生、電腦科學家、輔導老師、科技顧問。這種寫法是論說文的多方觀點。這一頁教你怎麼把十個人分到正反意見表的三欄裡，也教你留意 should、need to、it is important that 這類表示「應該怎麼做」的說法，因為用這些說法的人，通常就是在提出做法的那一欄。
+預覽模式：所有步驟、圖表、課文標記都已展開，進度不會存檔。學生拿到的一般連結不受影響。
+上次做到一半，已經幫你接回來了。重新開始
+ALL+ 互動英語 10 月號 Unit 12（pp. 50–51） Should Students Use AI in College Applications? 全文 76 行 10/26 讀第 1–37 行，10/27 讀第 38–76 行
+第一步
+開頭先把兩邊擺出來上層：組織方式
+多方觀點的文章，開頭要交代兩件事：爭議是什麼，以及大致分成哪幾邊。作者自己不表態，只轉述別人的看法。下面是第 1 到 9 行，點三個有底色的地方。
+High school students are increasingly using advanced AI tools when preparing their learning portfolios. While some supporters believe these tools can help students present their ideas more clearly, critics worry that AI blurs the line between assistance and authorship. This issue ultimately brings significant challenges to keeping college admissions fair.
+已標出 0 / 3
+三個都標出來了。那麼——第 3 到 7 行 While some supporters believe…critics worry… 這一句在全文裡負責什麼？
+先擺出爭議的兩方，後面的人再各自表明立場
+表明作者支持使用 AI，並先舉出支持的理由
+比較支持者和批評者的人數，看哪一方比較多
+說明 AI 為什麼讓申請大學變得越來越不公平
+先擺出爭議的兩方，後面的人再各自表明立場。這一句用 While 把兩個子句接起來：前半句是支持的一方，後半句是擔憂的一方。While 在這裡不是「當……的時候」，而是「……，而……」，表示兩邊的對比，九月號第八單元看過同樣的用法。接下來第 7 行的 This issue 用一個概括名詞把兩邊的爭執收成「這個議題」，後面十個人發言，就是在回答這個議題。
+再看動詞。作者寫的是 supporters believe 和 critics worry：想法是支持者的，擔心是批評者的，作者只負責轉述。論說文如果作者要表態，會寫 I believe、we should 這類句子；多方觀點的開頭則用 believe、worry、argue、claim 這類動詞，把看法交給別人說。看到開頭這樣寫，就知道後面會有好幾個人輪流發言。
+另外三個為什麼排除：
+「說明 AI 為什麼讓申請大學變得越來越不公平」——這個最容易選，因為下一句第 7 到 9 行確實提到公平：This issue ultimately brings significant challenges to keeping college admissions fair。可是那是下一句的內容，而且下一句也只說這個議題會帶來挑戰，沒有解釋原因。把下一句的內容當成這一句的功能，歸屬錯了。
+「表明作者支持使用 AI」——相信 AI 有幫助的是 some supporters，不是作者。而且這一句的主要子句在 While 後面，講的是 critics 的擔憂；作者兩邊都轉述，沒有站到任何一邊。
+「比較兩方的人數」——第 3 到 4 行只寫 some supporters，另一邊只寫 critics，兩邊都沒有數字，文章也沒有說哪一邊人比較多。
+整篇怎麼排？
+第二步
+十個人，三種立場上層：怎麼認出來
+先回答：這篇文章的推進方式，最接近下列哪一種？
+先介紹學習歷程檔案，再分項說明它包含的內容
+先點出一個爭議，再讓不同身分的人表達看法
+先提出一個問題，再分析成因並提出解決辦法
+先描述一個現象，再列出它對學生造成的影響
+先點出一個爭議，再讓不同身分的人表達看法。這是論說文的多方觀點：作者不自己下結論，而是把立場不同的人的說法並排，讓讀者自己判斷。第 1 到 9 行點出爭議，第 10 行以後一共十段，一段一個人。
+這一篇的訊號很好認。第一，每一段的開頭都是「名字、身分、冒號、引號」：第 10 行 Ms. Huang, High School Teacher:、第 17 行 Mr. Lin, Parent:，一直到第 70 行 Mr. Wu, Technology Consultant:。第二，這十個身分刻意挑得很分散：出題的一方（老師、招生人員），寫檔案的一方（學生），旁邊的人（家長、輔導老師），還有懂技術的人（電腦科學家、科技顧問）。立場不同的人都要有，文章才算「多方」。第三，最後一段是第十個人說完話就結束了，作者沒有出來總結。雜誌在課文後面附的 Discussion Starter 反過來問你：AI 該不該限制？答案要你自己決定。
+另外三個為什麼排除，每一個都是別種結構：
+「先提出一個問題，再分析成因並提出解決辦法」——這是問題與解決，這個最容易選，因為文章裡確實有人提出做法：第 27 到 28 行要學生說清楚用了多少，第 60 到 61 行要學校教大家負責任地使用，第 74 到 75 行要學校找新的評量方式。可是這些做法出自三個不同的人，各說各的，作者沒有選其中一個；十個人裡也還有兩個人根本不覺得需要解決什麼。十月號第八單元的問題與解決，做法是作者自己提出來的，這一篇不是。
+「先描述一個現象，再列出它對學生造成的影響」——這是因果。因果文會把影響當成事實來寫；這一篇的發言者卻連有沒有壞影響都意見不同，第 42 到 43 行 Kevin 就說用了 AI，經歷和看法 aren’t their own 這種說法不成立。
+「先介紹學習歷程檔案，再分項說明它包含的內容」——這是描述。第 11 到 13 行確實說了檔案的用途是呈現 a student’s growth and achievements，可是那只是黃老師發言的第一句，後面九個人談的都不是檔案裡有什麼。
+下面這張圖是多方觀點的標準組織圖：正反意見表。最上面是爭議，下面分欄，每一欄放立場相同的人。這一篇的十個人分成三欄：支持、擔憂，以及不直接回答該不該用、而在談怎麼處理的人。點任一格，第四步的課文對應行會亮起來（課文還沒打開的話，先把行號記住就好）。
+把十個人放回表格
+10/27 的範圍從這裡開始：第 38–76 行
+第一、二步用的是 10/26 的第 1–37 行（開頭，以及黃老師、林先生、張教授、王女士四個人的發言）。第三步以後會用到整篇，包含 10/27 的第 38–76 行（Kevin、Amy、陳博士、劉老師、Eric、吳先生六個人的發言）。如果你今天是 10/26，做到這裡可以先停，明天再接下去。（第二步的說明和表格已經提到後面六個人，先看到不影響。）
+第三步
+把每個人放回意見表上層：怎麼驗證
+怎麼確定這篇是多方觀點，不是作者自己在論證？先找訊號詞，說出是哪一種結構，再把每個人放進正反意見表，最後用一句話說出整篇。
+訊號詞你在前兩步看過，這裡整理一次：第 3 到 6 行的 supporters believe 和 critics worry 把看法交給別人說；第 7 行的 This issue 點出爭議；第 10 行以後每一段都用「名字、身分、冒號、引號」開頭；全文沒有一句是作者自己的結論。整篇的訊號都在說「換下一個人發言」，這就是多方觀點。
+分欄的時候只問一個問題：這個人對「學生該不該用 AI」怎麼回答？回答可以用的，放支持；覺得會出問題的，放擔憂；不回答這個問題、而在談學校和大學該怎麼做的，放第三欄。
+下面六張卡片寫的是六個人的看法，都換過說法，也沒有名字和行號。每一張判斷一次：它屬於哪一欄？點下去就定了，不能改。
+已放 0 / 6，第一次就放對 0 張
+六張都放得回去，而且每一張只放得進一欄。這就是多方觀點。每個人都有自己的位置，作者自己卻不在任何一欄裡。
+最容易放錯的，是第一張和第四張。第一張是張教授，AI itself is not the problem 聽起來像支持；可是他的重點在 but 後面，要學生說清楚用了多少、用在哪裡。他沒有說學生該用，他是在訂規則。第四張是陳博士，他說偵測工具不可靠，聽起來像擔憂；可是他擔心的不是學生用 AI，而是學校拿什麼方法去查。分欄看的是這個人回答了哪一個問題，不是他的語氣好不好。
+再注意一件事：同一欄裡的人可以任意對調。黃老師和 Amy 對調、Kevin 和林先生對調，文章都照樣成立。多方觀點的各段之間沒有先後，也沒有因果；每一段只跟開頭那個爭議有關係。
+考卷上怎麼考：多方觀點的摘要題，誘答最愛只寫其中一個人，或者把最後一個人的話當成作者的結論。下面試一題摘要題。
+哪一句最適合當這篇文章的一句話摘要？
+Most of the people quoted agree that AI helps students present their experiences more clearly in college applications.
+Because AI detection tools are far from reliable, many honest students are unfairly punished when applying to college.
+The article concludes that universities will need to develop new ways to assess applications as AI keeps improving.
+People from different backgrounds disagree about AI in applications; some welcome it, some fear it, others suggest rules.
+第四句。它把三欄全部收進一句話：some welcome it 是支持，some fear it 是擔憂，others suggest rules 是談怎麼處理；前半句的 people from different backgrounds 說的是十個不同身分的人。它也沒有照抄課文：第 3 到 6 行的 supporters 和 critics 換成 some welcome it、some fear it，第 1 到 2 行的 using advanced AI tools 換成 AI in applications。
+另外三個為什麼排除：
+「The article concludes that universities will need to …」——這個最容易選，因為它是全文最後一段，很多人習慣把最後一段當成結論。可是第 70 到 76 行是吳先生的發言，前面有名字、身分和引號；作者從頭到尾沒有出來總結。把一個發言者的話說成文章的結論，歸屬錯了。
+「Most of the people quoted agree that AI helps students …」——明確支持的只有林先生和 Kevin 兩個人，雜誌的混合題第 2 題答案也是這兩個。十個人裡兩個，不是 most。這一句還照抄了第 20 行的 present their experiences more clearly。
+「Because AI detection tools are far from reliable …」——這是第 52 到 57 行陳博士一個人的看法，只是十個人裡的一格，代表不了整篇。
+看「應該怎麼做」的說法
+第四步
+「應該怎麼做」的說法下層：表示義務與建議的情態
+第三欄的四個人怎麼認？看他們用的動詞。第 27 到 28 行 it is important that students clearly disclose、第 60 行 Schools should teach、第 74 到 75 行 Schools and universities will need to develop：這些說法都在告訴別人應該做什麼。語言學上把這一類叫做 deontic modality，也就是表示義務與建議的情態；Palmer 把情態分成三類：表示確定程度的、表示義務與許可的、表示能力與意願的；這一篇要看的是第二類，也就是必須、應該、需要。
+跟確定程度的語言分清楚。十月號第一、第十一單元教過的 about、is believed to、could have been，表示說話的人有多確定；這一篇的 should、need to、it is important that，表示說話的人認為應該怎麼做。同一個助動詞可能兩種都有：第 46 到 47 行 universities will question us closely 的 will 是預測，Amy 說的是將來會發生的事；第 74 到 75 行 will need to develop 的 need to 才是必須。第 48 行 cannot explain 的 can 則是能力，也不屬於這一類。
+讀的時候怎麼用：多方觀點的文章裡，用這類說法的人，通常就是在提出做法的那一欄；只描述情況或後果的人，則多半在支持或擔憂那兩欄。考卷問「某某人建議怎麼做」，就去他那一段找 should、need to、it is important that。寫的時候也用得上：第 27 到 28 行正是雜誌句型欄的 it is important that + 主詞 +（should）+ 原形動詞，學測作文要提出建議時，這個句型比一再用 should 正式。
+點課文裡有底色的字，同一條的字會一起亮起來。青色是表示義務與建議的情態；藍灰是比較與程度的語言，這篇的發言者幾乎都在說「越來越……」。兩色可以各自關掉。
+義務與建議（青）
+比較與程度（藍灰）
+線索
+點表格裡的一格，或課文裡有底色的字
+青色是告訴別人應該怎麼做的說法；藍灰是比較級、表示變化的 increasingly，以及表示程度的字。
+另外兩樣，前面單元教過，這篇自己確認得出來：
+詞形變化的重複。十月號第八單元練過。開頭第 9 行先說，這個議題關係到 keeping college admissions fair；後面第 36 到 37 行 fair evaluations、第 55 行 unfair judgments、第 69 行 deeply unfair，三個人各自用了 fair 或 unfair。fair 加上字首 un- 變成反義，還是同一個字的家族。開頭埋下的字，後面的人接著用，十段各自獨立的發言就是這樣跟開頭扣在一起的。
+概括名詞。九月號第三、第四單元和十月號第九、第十一單元練過。第 7 行 This issue 收的是前一句整句：支持的一方和擔憂的一方之間的爭議。第 49 行 that gap 收的是第 48 到 49 行的 If a student cannot explain their own portfolio in person：檔案寫得出來、本人卻說不出來，中間那段落差就是 gap。兩個都是 this 或 that 加一個名詞，收的範圍一大一小。
+考卷怎麼考這種文章
+第五步
+誰說的，支持到什麼程度上層：考點
+多方觀點的題目，誘答幾乎都出在兩個地方：
+一、把甲的話安到乙頭上。十個人的說法常常很像，第三欄的張教授、劉老師、吳先生都在談做法，誘答就把劉老師的建議寫成張教授的看法。做法：選項說的是某某人，就回到那個人名字後面的引號裡找，不要在隔壁一段找到相似的句子就選。
+二、分不清「明確支持」和「有條件」。雜誌的混合題第 2 題問哪幾位 express clear support，答案只有林先生和 Kevin。第 27 行 AI itself is not the problem 看起來也是支持，可是 but 後面加了條件，重點在規則。做法：看到 not…but…、might seem…but…，答案在 but 後面。
+試一題：Which of the following best reflects Professor Chang’s view?
+The key problem is AI itself, since it makes students’ applications much less honest.
+Students should be taught clear rules for AI use rather than punished for using it.
+AI use is fine if students openly state how far and where they relied on it.
+Students need to disclose their AI use only when it has produced most of their work.
+第三句。先注意：它沒有照抄課文。第 26 行的 transparency 和第 28 行的 clearly disclose 換成 openly state，第 29 到 30 行的 how much they used it and for which parts of their work 換成 how far and where they relied on it，第 27 行的 AI itself is not the problem 換成 AI use is fine。另外三句反而滿是課文裡的字。大考的正解通常是改寫，照抄課文字面的選項反而要小心。
+另外三個為什麼排除：
+「Students should be taught clear rules …」——這個最難排除，因為它也是談怎麼處理，跟張教授同一欄，意思也說得通。可是這是第 59 到 62 行劉老師的話：Schools should teach responsible AI use and establish clear rules, rather than defaulting to punishment。張教授那一段從頭到尾沒有提到處罰，也沒有提到學校。歸屬錯了。
+「The key problem is AI itself …」——key、problem、itself 都是張教授用過的字，可是第 27 行說的是 AI itself is not the problem，選項把 not 拿掉，意思剛好相反。方向錯了。
+「disclose … only when it produced most of their work」——第 28 到 30 行要學生說明的是 how much they used it and for which parts，用多用少都要說，不是用得多才要說。選項加上 only when，把範圍縮小了。範圍錯了。
+最後一題
+第六步
+把一句話放回去
+這就是考卷上的篇章結構題。下面把第 27 到 30 行那一句整句抽掉了，四個候選句只有一句放得進去。
+… The experiences still belong to the student.”
+Professor Chang, Education Researcher: “The key issue is honesty and transparency. （空格）”
+Ms. Wang, Admissions Officer: “Universities want portfolios that show a student’s real abilities and interests. …
+AI itself is the real problem, so students should not be allowed to use it for any part of the work in their own learning portfolios.
+AI itself is not the problem, but it is important that students clearly disclose how much they used it and for which parts of their work.
+Schools should teach responsible AI use and establish clear rules for students, rather than punishing anyone whose work only seems to be written by AI.
+That doesn’t mean the experiences and opinions in their portfolios aren’t their own, even if AI helped them organize ideas and improve their writing.
+四個線索同時指向同一句。這四句單獨看都說得通，沒有一句本身是錯的。要排除，得靠位置和線索。
+先講一個例外。前面說大考的正解通常是改寫，但抽句題不一樣：抽掉的那一句就是原文，所以正解一定是原文。這一題要靠的是誘答哪裡接不上，不是比對字面。
+一、換字：前一句的名詞，要在後一句找到具體的做法。空格前面只有一句 The key issue is honesty and transparency，兩個抽象名詞，還沒說要做什麼。正解的 clearly disclose 就是 transparency 的具體做法，how much they used it and for which parts 就是 honesty 要交代的內容。前一句提出原則，後一句說怎麼做，而且用的正是第四步的 it is important that。
+另外三個為什麼排除，各有一個明確的依據：
+二、方向。「AI itself is the real problem …」跟正解只差一個 not，這個最容易選。可是前一句才說關鍵是 honesty and transparency；如果問題出在 AI 本身，關鍵就該是 AI，不會是誠實和透明。前一句說重點在交代清楚，這一句卻說根本不能用，方向剛好相反。
+三、歸屬。「Schools should teach responsible AI use …」是照著第 60 到 62 行劉老師的話改的。它談的是學校和處罰，跟前一句的誠實、透明一個字也接不上；主詞也從學生換成了學校。把另一個人的建議放進張教授的引號裡，歸屬錯了。
+四、指涉。「That doesn’t mean the experiences and opinions in their portfolios …」是照著第 41 到 43 行 Kevin 的話改的。句首的 That 要往前指一件事，their 要往前指一群人；可是空格前面只有 honesty and transparency，沒有「學生用 AI 做了什麼」這件事，也沒有 students 這群人，That 和 their 都找不到可以指的對象。
+再補一條：正解正是雜誌句型欄選出來的那一句。it is important that 後面的子句，動詞可以用 should 加原形，也可以省略 should 直接用原形，美式英語多半省略。這一句的主詞 students 是複數，看不出差別；主詞換成單數就看得出來：it is important that a student disclose…，disclose 不加 s。
+考卷上不會有底色，也不會有行號。但你剛才用的四個線索，每一篇多方觀點的文章都找得到。
+帶著走的五句話
+多方觀點的開頭先把兩邊擺出來。While some supporters believe…, critics worry…：作者用 believe、worry 把看法交給別人說，自己不表態，後面的人再輪流發言。
+驗證方法：把每個人放進正反意見表。只問一個問題：這個人對爭議怎麼回答？支持、擔憂，或者不回答而在談怎麼處理。每個人都放得進一欄、作者自己不在任何一欄，就是多方觀點。
+not…but… 不等於支持，最後一段也不等於結論。AI itself is not the problem 的重點在 but 後面的條件；最後一段是第十個人的發言，不是作者的結論。
+表示義務與建議的情態：should、need to、it is important that。它們說的是「應該怎麼做」，跟 about、is believed to 那種「有多確定」不同；用這些說法的人，通常在提出做法的那一欄。
+多方觀點的考點：誰說的，支持到什麼程度。選項說的是某某人，就回到那個人的引號裡找；分清明確支持和有條件的支持，雜誌的混合題問的正是這個。
+單字輪：把字拆成部件來記 →
+← 回讀法練習總表
+總表上有目前可以做的所有單元，還有你累積到現在的讀法工具。
+本題庫自己寫的部分（解析、中譯、分類、標註與編排）採用 CC BY-NC 4.0（姓名標示─非商業性）授權：可以分享，但須註明出處，不得用於商業用途。試題來源與完整說明請見使用與著作權。

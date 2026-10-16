@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z98ref-20/index.html
+Author: staresto-create ZZSH
+Title: 指考參考試卷（95 課綱適用，98 年施測）克漏字第20題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 指考參考試卷（95 課綱適用，98 年施測） ／ 第20題
+指考參考試卷（95 課綱適用，98 年施測） 克漏字 第20題
+字彙選義線索：句內
+This false belief has strengthened in us until our eyes are 20 and our minds are deadened to all the beauty that is being created around us today.
+(A)dulled
+(B)pleased
+(C)justified
+(D)excited
+答案：(A) dulled
+題目編號：Z98參_20（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+eyes are dulled（雙眼變得遲鈍）與後文 minds are deadened（心智變得麻木）並列對應，表示我們對周遭美的感受力逐漸消失；pleased／justified／excited 都不符合此處語意與並列結構。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個都是過去分詞接在 are 後面，文法上都通；pleased 與 excited 都是常見的字，讀起來很順。
+怎麼判斷
+三步判斷方式的第三個例子，這一題的依據在空格右邊。第一步找對等連接詞：our eyes are ______ and our minds are deadened。第二步確定 and 連的是哪兩樣：兩個完整的子句，結構完全對稱，都是「身心的某個部分 + be 動詞 + 過去分詞」。第三步從已經寫出來的那一邊反推：右邊是 deadened（被弄得麻木、失去感覺），左邊必須同方向，也是感覺被鈍化的意思，dulled（變遲鈍、變鈍）正是。第 18 題的依據在左邊、這一題在右邊，兩題擺一起就知道判斷方式不變、只是要往哪邊看而已。本題庫 91 年第 18 題 →（may seem ______ but provide just a drop in the bucket）也是依據在右邊的例子，只是那一題的連接詞是 but、兩邊要一正一反。
+誘答選項
+pleased（高興的）與 excited（興奮的）方向相反，都是正面的，與 deadened 對不起來，也與整句「錯誤的觀念害我們看不見身邊的美」矛盾。justified（站得住腳的、有正當理由的）講的是說法或做法合不合理，主詞通常是決定、行為或主張，不會說「眼睛是站得住腳的」。
+常考字詞與句型
+dull（使遲鈍、使變鈍）、deaden（使麻木、使失去感覺）、false belief（錯誤的觀念）、strengthen（強化、加深）、be justified（站得住腳的、有正當理由的）、until（直到……為止）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Architecture is an art. Any art must give us pleasure; if it doesn't, either it is bad art or we are abnormally blind. We are in general insensitive to architecture 16 an art and to the joy it may bring to us. It is the constant nearness of architecture during our life that has 17 us in this way.
+We forget that it is an art of here and now; because it is with us every day and 18 we must have houses to live in, we are apt to think of them solely as dwelling places. Therefore we think of architecture as some vague, learned thing having to do with French cathedrals or Italian palaces or Greek temples, 19 with New York or Chicago streets or Los Angeles suburbs.
+This false belief has strengthened in us until our eyes are 20 and our minds are deadened to all the beauty that is being created around us today. Eventually we lose all the fine deep pleasure that we might otherwise experience from our ordinary surroundings.
+中譯：建築是一門藝術。任何藝術都必須帶給我們愉悅感；如果做不到這一點，那要不是這件作品本身不算好藝術，就是我們的感受力異常遲鈍。我們普遍對建築作為一門藝術、以及它可能帶給我們的喜悅相當不敏感。正是因為建築在我們生活中無所不在、如此貼近，才讓我們對它產生了這樣的盲目。我們忘了建築其實是一門「當下、此地」的藝術；因為它每天都與我們同在，而且我們生活中必須要有房子可住，我們便容易只把房子當作居住場所來看待。因此，我們把建築想像成某種模糊、學術性的東西，聯想到的是法國的大教堂、義大利的宮殿或希臘的神廟，而不是紐約或芝加哥的街道、或洛杉磯的郊區。這種錯誤的觀念在我們心中根深柢固，使我們的雙眼變得遲鈍，心靈也對今日周遭正在被創造出來的一切美好事物麻木無感。最終，我們失去了原本可能從日常周遭環境中所體驗到的那種深刻美好的愉悅感。
+📋 內容大意
+Architecture is an art, yet most of us take no pleasure in it.
+Being always around us, buildings seem mere shelter rather than works of art.
+So we reserve the name for foreign cathedrals and palaces, and grow blind to the beauty built beside us today.
+← 第19題回到指考參考試卷（95 課綱適用，98 年施測）
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

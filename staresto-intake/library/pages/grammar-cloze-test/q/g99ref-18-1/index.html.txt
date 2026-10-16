@@ -1,0 +1,42 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g99ref-18-1/index.html
+Author: staresto-create ZZSH
+Title: 99 課綱學測參考用試卷克漏字第18題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 99 課綱學測參考用試卷 ／ 第18題
+99 課綱學測參考用試卷 克漏字 第18題
+字彙選義線索：句內
+The new panel is not the first of its 18 , but it may be the most flexible—it bends like paper.
+(A)kind
+(B)source
+(C)role
+(D)price
+答案：(A) kind
+題目編號：G99課綱學測參考用試卷_18_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】the first of its kind 指「同類中的第一個」，表示這種新面板不是同類產品中的第一個；source（來源）、role（角色）、price（價格）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是名詞，如果沒認出 the first of its ___ 是一個固定說法，會開始猜「第一個來源」「第一個角色」，怎麼想都不對。
+怎麼判斷
+四個選項都是名詞，可見這一格考的是搭配。整句是 The new panel is not the first of its ___ , but it may be the most flexible（這款新面板不是同類中的第一個，但可能是最有彈性的）。the first of its kind 是固定說法，意思是「同類產品中的第一個、首創」。再用後半句驗算：but it may be the most flexible——既然要說「雖然不是第一個，但可能是最有彈性的」，前半自然是在跟「同類的其他產品」比，kind（種類）完全吻合。順便記一下同一組：the first of its kind（同類中的首創）、one of a kind（獨一無二）、of this kind（這一類的）。
+誘答選項
+source（來源）：the first of its source 不成說法。role（角色）、price（價格）：兩個都與「同類產品」這個比較的範圍無關。
+常考字詞與句型
+the first of its kind（同類中的第一個）、one of a kind（獨一無二的）、a kind of（一種）、flexible（有彈性的、可撓的）、bend like paper（像紙一樣彎折）、per square meter（每平方公尺）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Solar panels can turn sunlight into electricity. Conventional solar panels are 16 crystallized silicon, the same material used in computer chips. But silicon is expensive and the panels are heavy. Facing this 17 , engineers at a Japanese company have developed a thin-film flexible solar panel. The new panel is not the first of its 18 , but it may be the most flexible—it bends like paper.
+At one kilogram per square meter, this new type of panel weighs one tenth of conventional solar panels. 19 means it could be used in novel places, such as the roof of a tent, the walls of a building, or the top of a bus. Sheets of the material could be used to make portable, rollable battery chargers for mobile electronic 20 , like notebook computers or cellphones. As many countries are now pushing for green technology, the new flexible solar panels may spur a great demand.
+中譯：太陽能板能將陽光轉化為電力。傳統太陽能板是由結晶矽製成的，這與電腦晶片使用的材料相同。但矽的成本高昂，太陽能板也相當笨重。面對這項挑戰，一家日本公司的工程師開發出一種薄膜可撓式太陽能板。這款新型太陽能板不是同類產品中的第一款，但可能是最具彈性的一款——它能像紙一樣彎曲。這種新型太陽能板每平方公尺才重一公斤，只有傳統太陽能板重量的十分之一。這代表它可以應用在許多新穎的地方，例如帳篷屋頂、建築物牆面，或公車車頂。這種材料製成的薄片，還可以用來製作可攜式、可捲曲的行動電子產品充電器，例如筆記型電腦或手機的充電器。隨著越來越多國家積極推動綠色科技，這種新型可撓式太陽能板可能會激發龐大的市場需求。
+📋 內容大意
+Ordinary solar panels turn sunlight into electricity using crystallized silicon, the material in computer chips. Silicon is costly and the panels are heavy.
+Engineers at a Japanese company made a thin-film flexible panel bending like paper. It weighs one kilogram per square meter, a tenth of an ordinary panel.
+Its lightness suits new places such as tent roofs, building walls and bus tops. Sheets could become rollable chargers for notebook computers and mobile phones.
+← 第17題回到99 課綱學測參考用試卷第19題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

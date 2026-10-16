@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z100-11/index.html
+Author: staresto-create ZZSH
+Title: 100 年指考克漏字第11題詳解（句型結構）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 100 年指考 ／ 第11題
+100 年指考 克漏字 第11題
+句型結構線索：句內答對率 26%
+答對率 26%：當年每 100 位考生，有 26 位答對。
+Handling customer claims is a common task for most business firms. These claims include requests to exchange merchandise, requests for refunds, requests that work 11 , and other requests for adjustments.
+(A)is correct
+(B)to be correct
+(C)is corrected
+(D)be corrected
+答案：(D) be corrected
+題目編號：Z100_11（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+request that 後面的子句要用「(should) + 原形動詞」的假設語氣，且 work（成品）是被修正的對象，須用被動的原形 be corrected；is correct、to be correct、is corrected 都不符合這個結構。
+深入解析
+你可能會這樣想
+看到 that 子句你想填一個有時態的動詞，於是挑 is corrected——文法上看起來很正常，卻踩進陷阱。關鍵在前面的 requests（這裡是名詞）：表示「要求、建議、堅持、命令」的字，後面的 that 子句要用「(should) + 原形動詞」，而 should 通常省略。這一組包括 request、suggest、insist、demand、require、recommend、propose、order。
+怎麼判斷
+為什麼是原形，不是不加 s？英文的假設語氣沒有專屬的字形，用的就是動詞原形；祈使句用的也是同一個形（Huddleston & Pullum《劍橋英語文法》2002 的界定是：在限定子句裡使用原形，描述的是還沒成為事實的情況）。醫生真正說出口的那句話是 「Stop smoking.」，寫成 The doctor insisted that Pat stop smoking. 時，那個動詞的形沒有變——兩邊講的都是「還沒發生、要促成的動作」。判斷法就從這裡來：that 子句唸起來像在下指令，就用原形；只是在陳述一件事，就照一般規則走。對照 The man insisted that he didn't lie.（他堅稱自己沒說謊），這句是陳述不是命令，didn't 沒有錯。否定的寫法同理，不加 do：She insisted that he not be present.（不會變成 didn't）。同一個考法，反過來考：學測文意選填 101 年第 39 題給的是 it can ___ that the name of the typhoon be deleted（颱風名稱除名），句子裡先擺出原形的 be deleted，要你回頭填前面那個觸發的字，答案就是 request。本題給觸發詞、要你填原形；那題給原形、要你填觸發詞。同一件事從兩頭考，看得懂一邊就看得懂另一邊。被動是從哪裡來的？顧客要求的那件事，說出口就是 Correct the work.（把成品修好）。但這一句的 that 子句已經用 work 當主詞，也就是把受詞 work 提到主詞的位置，動詞就得改成被動。原形加被動，合起來就是 be corrected——不是兩條規則疊在一起，是同一件要求換個主詞說出來。再看一個常見的句子：It is important that he (should) be on time.——同一組，that 子句一樣用原形。觸發的字不限動詞：動詞（suggest、insist、demand、request……）、名詞（a request that……、a suggestion that……）、形容詞（It is essential／important／necessary／vital that……）三類都算，理由都是同一個。
+誘答選項
+is correct：correct 當形容詞是「正確的」，requests that work is correct 讀成「要求成品是正確的」，但這一格要的是「把成品修正」這個動作；而且 is 是有時態的形式，不是這裡 requests that 後面要的原形。to be correct：不定詞不能直接接在 that 子句的主詞 work 後面當動詞，而且 correct 在這裡同樣是形容詞「正確的」，不是「修正」。is corrected：被動的方向對了，但 is 是直述句的現在式；在正式書面語（本文談的是商業書信）裡，request that 後面的子句用原形 (should) be corrected，與同句並列的 requests to exchange merchandise、requests for refunds 的正式口吻一致。
+常考字詞與句型
+request／suggest／insist／demand that + S + (should) + 原形動詞（要求、建議、堅持、命令；表示要求時 that 子句用原形）、It is necessary that…（有必要…）、a refund（退款）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：100學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Handling customer claims is a common task for most business firms. These claims include requests to exchange merchandise, requests for refunds, requests that work 11, and other requests for adjustments. Most of these claims are approved because they are legitimate.
+However, some requests for adjustment must be 12, and an adjustment refusal message must be sent. Adjustment refusals are negative messages for the customer. They are necessary when the customer is 13 or when the vendor has done all that can reasonably or legally be expected.
+An adjustment refusal message requires your best communication skills 14 it is bad news to the receiver. You have to refuse the claim and retain the customer 15. You may refuse the request for adjustment and even try to sell the customer more merchandise or service. All this is happening when the customer is probably angry, disappointed, or inconvenienced.
+中譯：處理顧客申訴是大多數企業共同面對的日常工作。這些申訴包括換貨要求、退款要求、要求修正已完成工作的要求，以及其他調整要求。這些申訴大多數會被批准，因為它們都合理。然而，有些調整要求必須被拒絕，這時就必須發出一封「拒絕調整信」。拒絕調整信對顧客而言是負面的訊息，通常用在顧客本身有過失，或廠商已經做到合理或法律上所能做的一切之時。撰寫拒絕調整信需要你最好的溝通技巧，因為這對收件者來說是壞消息。你必須拒絕這項申訴，同時還要留住這位顧客。你可能得拒絕這次調整要求，甚至試著向顧客推銷更多商品或服務——而這一切都發生在顧客可能正處於生氣、失望或不便的情緒之下。
+📋 內容大意
+Firms constantly handle customer claims, and most are granted, since they are legitimate.
+Some must be turned down, and a refusal message then has to be written.
+Such letters demand real skill: the writer carries bad news yet must keep an angry customer.
+回到100 年指考第12題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

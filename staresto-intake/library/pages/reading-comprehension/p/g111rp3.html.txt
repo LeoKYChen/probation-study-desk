@@ -1,0 +1,160 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/g111rp3.html
+Author: staresto-create ZZSH
+Title: 111 學測參考試卷閱讀測驗：車輛撞擊測試｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 111 學測參考試卷
+111 學測參考試卷閱讀測驗：車輛撞擊測試參考試卷
+Vehicle Crash Testing
+學測 111年參考試卷第 43–46 題4 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段Crash testing for vehicles is very important in helping minimize deaths, injuries, and property damage from vehicle crashes. One unit of the U.S. government responsible for ensuring the correct undertaking of this task is the Insurance Institute for Highway Safety (IIHS), a nonprofit, independent scientific body and educational organization. Another branch of government, the Highway Loss Data Institute, supports the mission of the IIHS. Auto insurers also support both organizations.
+第 2 段There are multiple kinds of crash tests for vehicle safety undertaken to provide the necessary information and guidance to vehicle owners. Some examples are frontal impact tests, offset tests, side impact tests, and rollover tests. The front-crash test accelerates a car straight into a solid concrete barrier. The scenario mimics what would happen if two cars crash head-on or a single vehicle crashes into a fixed object. An offset test requires only a portion of the front of the car to impact the barrier or a vehicle. It is important since impact forces in this kind of test remain the same as those with the frontal impact test, but only a small portion of the car absorbs all the force of the impact.
+第 3 段A side impact test simulates a car that is crossing an intersection being hit on the side by a car running a red light. The test is very important since side impact accidents in vehicles result in a high fatality rate. This happens because cars usually do not have a significant crumple zone on the side to cushion all the impact forces before the occupant is injured. A rollover test verifies the car’s ability to support itself, especially from the pillars supporting the roof, during a dynamic impact.
+第 4 段A lot of crash test programs are practiced around the world and provide necessary safety performance data based on real-world conditions.
+題目
+43.Which of the following is the mission of IIHS?
+(A)Car crash investigations.
+(B)Vehicle crash testing.
+(C)Property damage compensation.
+(D)Independent research on insurance policies.
+44.How does the frontal impact test differ from the offset test?
+(A)The vehicle travels at a higher speed in the frontal test.
+(B)The vehicle receives fewer impact forces in the offset test.
+(C)Only a small part of the vehicle takes the impact forces in the offset test.
+(D)The front of a vehicle crashes into another vehicle only in the frontal test.
+45.What does “crumple zone” mean in the third paragraph?
+(A)The space in a car where drivers can move freely.
+(B)The device that warns the driver about a potential collision.
+(C)An exit of a vehicle for occupants to escape from in a crash.
+(D)An area of a vehicle that absorbs the forces from a collision.
+46.Which part of the vehicle is the focus of the rollover test? Choose the English letter linked to the part.
+圖片出處：大學入學考試中心 111 學年度起適用學科能力測驗參考試卷英文考科
+(A)A
+(B)B
+(C)C
+(D)D
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+43
+(B)
+—
+—
+44
+(C)
+—
+—
+45
+(D)
+—
+—
+46
+(D)
+—
+—
+答對率：本卷非正式施測，無答對率
+每一題的依據句
+第 43 題 細節題 Supporting details
+第 1 段Crash testing for vehicles is very important in helping minimize deaths, injuries, and property damage from vehicle crashes.
+第 1 段One unit of the U.S. government responsible for ensuring the correct undertaking of this task is the Insurance Institute for Highway Safety (IIHS)
+原文 → 正確選項
+Crash testing for vehicles → Vehicle crash testing
+IIHS 負責的 this task，指前一句的車輛撞擊測試。(A) 照抄 crash，但 IIHS 做的是撞擊測試，用測試車模擬撞擊，不是調查已經發生的車禍；(C) 照抄 property damage，那是撞擊測試想減少的損失，IIHS 不負責賠償；(D) 照抄 independent 和 Insurance，但 independent 形容的是這個機構，名稱裡的保險也不表示它研究保單。
+第 44 題 細節題 Supporting details
+第 2 段It is important since impact forces in this kind of test remain the same as those with the frontal impact test, but only a small portion of the car absorbs all the force of the impact.
+原文 → 正確選項
+only a small portion of the car absorbs → Only a small part of the vehicle takes
+兩種測試的撞擊力道相同，差別在偏置撞擊只由車子的一小部分承受，portion 換成 part，absorb 換成 take。(A) 文章沒有比較兩種測試的車速；(B) 照抄 impact forces，但原文說力道相同，不是比較小；(D) 原文說兩種測試都可能撞上另一輛車，不是只有正面撞擊。
+第 45 題 詞義題 Vocabulary in context
+第 3 段This happens because cars usually do not have a significant crumple zone on the side to cushion all the impact forces before the occupant is injured.
+原文 → 正確選項
+to cushion all the impact forces → absorbs the forces from a collision
+不定詞 to cushion all the impact forces 說明 crumple zone 的作用：在乘客受傷前緩衝撞擊力，也就是吸收衝擊力的區域；crumple 是「壓皺、壓扁」。(A) 讓駕駛自由活動的空間、(B) 碰撞前警告駕駛的裝置，都和「緩衝撞擊力」無關，文章也沒提。(C) 照抄 occupant，但這個區域是用來保護乘客，不是讓乘客逃生的出口。
+怎麼從前後文推出字義 →
+第 46 題 細節題（圖片題） Supporting details
+第 3 段A rollover test verifies the car’s ability to support itself, especially from the pillars supporting the roof, during a dynamic impact.
+翻滾測試的重點是支撐車頂的車柱，圖上 D 指的就是車頂和車身之間的柱子。(A) 是車頭，屬於正面和偏置撞擊測試；(C) 是車門，屬於側面撞擊測試；(B) 是輪胎，文章沒提。
+逐段中譯
+第 1 段車輛撞擊測試對於減少車禍造成的死亡、傷害和財物損失非常重要。美國負責確保這項工作正確執行的單位之一，是公路安全保險協會（IIHS），這是一個非營利、獨立的科學與教育機構。另一個單位「公路損失數據協會」則支援 IIHS 的任務。汽車保險業者也支持這兩個組織。
+第 2 段為了提供車主必要的資訊和指引，車輛安全的撞擊測試有很多種，例如正面撞擊測試、偏置撞擊測試、側面撞擊測試和翻滾測試。正面撞擊測試是讓車子加速，直直撞上堅固的混凝土牆，模擬兩車迎面相撞，或單一車輛撞上固定物體的情況。偏置撞擊測試只讓車頭的一部分撞上障礙物或另一輛車。這項測試很重要，因為撞擊力道和正面撞擊測試相同，卻只由車子的一小部分承受全部的衝擊力。
+第 3 段側面撞擊測試模擬的是車子穿越路口時，一輛闖紅燈的車子從側面撞上來的情況。這項測試非常重要，因為側面撞擊事故的死亡率很高。原因是車子側面通常沒有足夠的潰縮區，無法在乘客受傷之前緩衝所有的撞擊力。翻滾測試則是檢驗車子在動態撞擊時支撐自身的能力，尤其是支撐車頂的車柱。
+第 4 段世界各地有許多撞擊測試計畫，根據真實世界的狀況，提供必要的安全性能數據。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。沒有列出的段落，就是沒有主旨句，請對照「這一篇的文章結構」裡的綱要，找出那一段的重點。
+第 1 段Crash testing for vehicles is very important in helping minimize deaths, injuries, and property damage from vehicle crashes.
+第 2 段There are multiple kinds of crash tests for vehicle safety undertaken to provide the necessary information and guidance to vehicle owners.
+第 4 段A lot of crash test programs are practiced around the world and provide necessary safety performance data based on real-world conditions.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體說明文 Expository
+組織方式分類 Classification這一類怎麼辨識 →
+關鍵轉折詞alsoSome examplessinceThis happens becauseespecially
+綱要
+撞擊測試能減少車禍傷亡，美國由 IIHS 負責，(also) 公路損失資料研究所和保險業也支持。
+撞擊測試有多種，(Some examples) 例如正面撞擊、偏置撞擊、側面撞擊、翻滾測試。
+正面撞擊模擬對撞，偏置撞擊只讓車頭一部分承受全部撞擊力。
+側面撞擊模擬闖紅燈的車撞上車側，(since, This happens because) 車側沒有潰縮區，所以死亡率高；翻滾測試則檢驗車頂支柱的支撐力。
+世界各地都有撞擊測試計畫，提供貼近真實情況的安全數據。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 22 個、參考字彙 15 個、字詞搭配 8 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+crash[kræʃ]n.撞擊、車禍（crash testing 撞擊測試）三級第 1 段詞彙題考過 2 次：115 學測第 9 題（誘答）、91 學測補考第 6 題 crashed（誘答）
+minimize[ˈmɪnəˌmaɪz]v.減到最少五級第 1 段詞彙題考過 1 次：88 聯考第 7 題（答案）
+injury[ˈɪnʤəri]n.傷害三級第 1 段詞彙題考過 1 次：105 學測第 5 題（答案）
+property[ˈprɑpɚti]n.財物、財產三級第 1 段詞彙題考過 1 次：108 指考第 1 題（答案）
+undertaking （詞彙表：undertake）[ˈʌndɚˌteɪkɪŋ]n.執行、進行五級第 1 段詞彙題考過 3 次：103 指考第 4 題 undertaking（誘答）、93 指考第 4 題（誘答）、91 指考第 6 題（誘答）
+mission[ˈmɪʃən]n.任務三級第 1 段詞彙題考過 4 次：109 學測第 9 題（誘答）、108 學測第 11 題 missions（誘答）、99 學測第 10 題 missions（誘答）、98 學測第 7 題（誘答）
+multiple[ˈmʌltəpəl]adj.多種的、許多的四級第 2 段詞彙題考過 1 次：114 學測第 7 題（誘答）
+information[ˌɪnfɚˈmeɪʃən]n.資訊三級第 2 段詞彙題考過 1 次：88 聯考第 1 題（誘答）
+guidance[ˈgaɪdəns]n.指引三級第 2 段詞彙題考過 1 次：96 學測第 6 題（誘答）
+impact[ˈɪmpækt]n.撞擊、衝擊四級第 2 段詞彙題考過 2 次：115 學測第 7 題（誘答）、85 推薦甄選第 11 題（答案）
+accelerate[ækˈsɛləˌreɪt]v.加速、使加速前進五級第 2 段詞彙題考過 1 次：112 學測第 8 題 accelerated（誘答）
+solid[ˈsɑləd]adj.堅固的三級第 2 段詞彙題考過 2 次：109 學測第 5 題（誘答）、106 學測第 1 題 solidly（誘答）
+concrete[ˈkɑnkrit]n.混凝土四級第 2 段詞彙題考過 1 次：102 學測第 11 題（誘答）
+barrier[ˈbæriɚ]n.障礙物、牆四級第 2 段詞彙題考過 1 次：99 學測第 13 題（誘答）
+remain[rɪˈmeɪn]v.仍然、保持（remain the same 維持不變）三級第 2 段詞彙題考過 4 次：91 學測第 3 題（誘答）、88 聯考第 5 題 remained（誘答）、85 聯考第 10 題 remains（誘答）、82 聯考第 7 題 remained（答案）
+absorb[əbˈzɔrb]v.承受、吸收四級第 2 段詞彙題考過 1 次：106 指考第 5 題 absorbs（誘答）
+significant[sɪgˈnɪfɪkənt]adj.足夠的、相當大的三級第 3 段詞彙題考過 2 次：104 學測第 3 題（誘答）、99 指考第 10 題 significantly（誘答）
+zone[zoʊn]n.區域（crumple zone 潰縮區）三級第 3 段詞彙題考過 1 次：110 學測第 9 題 zones（誘答）
+dynamic[daɪˈnæmɪk]adj.動態的四級第 3 段詞彙題考過 1 次：102 指考第 8 題（誘答）
+performance[pɚˈfɔrməns]n.性能、表現三級第 4 段詞彙題考過 2 次：98 指考參考試卷第 10 題（誘答）、83 推薦甄選第 4 題（誘答）
+investigation[ɪnˌvɛstəˈgeɪʃən]n.調查四級第 43 題詞彙題考過 1 次：98 指考第 4 題（答案）
+potential[pəˈtɛnʃəl]adj.潛在的、可能發生的四級第 45 題詞彙題考過 6 次：111 學測第 4 題 potentially（答案）、99 學測第 12 題（誘答）、97 指考第 2 題 potentially（誘答）、96 學測第 2 題（答案）、90 聯考第 15 題（誘答）、85 聯考第 9 題（誘答）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+nonprofit[nɑnˈprɑfət]adj.非營利的五級第 1 段
+insurer[ɪnˈʃʊrɚ]n.保險公司表外第 1 段
+frontal[ˈfrʌntəl]adj.正面的表外第 2 段
+rollover[ˈroʊlˌoʊvɚ]n.翻車表外第 2 段
+scenario[sɪˈnɛrioʊ]n.情況、情境五級第 2 段
+mimic[ˈmɪmɪk]v.模擬、模仿六級第 2 段
+simulate[ˈsɪmjəˌleɪt]v.模擬表外第 3 段
+intersection[ˌɪntɚˈsɛkʃən]n.十字路口六級第 3 段
+fatality[fəˈtæləti]n.死亡（fatality rate 死亡率）表外第 3 段
+crumple[ˈkrʌmpəl]n.擠壓變形（crumple zone 潰縮區，車身撞擊時用來吸收衝擊的部分）表外第 3 段
+occupant[ˈɑkjəpənt]n.車上的人、乘客表外第 3 段
+verify[ˈvɛrəˌfaɪ]v.檢驗、確認表外第 3 段
+pillar[ˈpɪlɚ]n.柱子（車頂的支柱）五級第 3 段
+compensation[ˌkɑmpənˈseɪʃən]n.賠償五級第 43 題
+collision[kəˈlɪʒən]n.碰撞六級第 45 題
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+property damage財物損失第 1 段
+be responsible for + V-ing負責……第 1 段原文：responsible for ensuring the correct undertaking of this task
+crash head-on正面相撞第 2 段原文：if two cars crash head-on
+crash into + N撞上……第 2 段原文：a single vehicle crashes into a fixed object
+absorb the force吸收撞擊的力道第 2 段原文：absorbs all the force of the impact
+run a red light闖紅燈第 3 段原文：a car running a red light
+result in + N造成……第 3 段原文：result in a high fatality rate
+real-world conditions真實世界的狀況第 4 段原文：based on real-world conditions
+← 上一篇篇目一覽
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

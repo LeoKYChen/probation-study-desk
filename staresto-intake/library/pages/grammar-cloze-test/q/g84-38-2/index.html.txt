@@ -1,0 +1,44 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g84-38-2/index.html
+Author: staresto-create ZZSH
+Title: 84 年學測克漏字第38題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 84 年學測 ／ 第38題
+84 年學測 克漏字 第38題
+字彙選義線索：跨句
+And 38 , Grants Pass has a lot of places to eat, ranging from a low-calorie dessert place to lovely restaurants, some of which offer good food and gorgeous views. 39 you can see, Grants Pass offers a lot to do in the summer. 40 you want to give your family a nice, wholesome vacation, try visiting this charming town.
+(A)fairly
+(B)happily
+(C)gorgeously
+(D)finally
+答案：(D) finally
+題目編號：G84_38_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+段落列舉的最後一項（前面依序列了水上活動、釣魚、露營地、商店、市集），And finally（最後）帶出列舉的最後一點；fairly／happily／gorgeously 都是修飾程度或心情的副詞，不符合這裡「列舉收尾」的功能。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是 -ly 結尾的副詞，而 fairly、gorgeously 這些字在描寫景點的文章裡很常見，如果沒看出這一段是在列清單，很容易挑一個聽起來像在誇獎的。
+怎麼判斷
+四個選項都是副詞，但只有一個能用來標示「列舉到最後一項了」。先看這一句在整篇的位置：作者依序介紹了水上活動、釣魚、採野莓、露營區、旅館、商店、露天市集，本句 And ___ , Grants Pass has a lot of places to eat（而……，Grants Pass 有很多吃飯的地方）是清單上的最後一項，再下一句就開始收尾了（{39} you can see, Grants Pass offers a lot to do in the summer.）。所以填 finally（最後）。And finally 是列舉收尾的固定說法。順帶一提，同一年的第 21 題考的正是列舉的開頭（For one thing，後面接 Secondly）——一篇考開頭、一篇考結尾，判斷方式完全相同：先看出這一段在列清單，再看空格落在清單的哪一個位置。
+誘答選項
+fairly（相當地）、gorgeously（華麗地）：修飾的是程度或樣子，放不進 And ___ , 這個句首位置。happily（開心地）放在句首時可以表示「幸好」（Happily, the weather remained fine throughout the afternoon.），文法上說得通，但標不出「這是最後一項」。
+常考字詞與句型
+And finally（最後）、first of all（首先）、last but not least（最後但同樣重要的是）、places to eat（吃飯的地方）、a low-calorie dessert（低卡甜點）、gorgeous views（絕美的景色）。
+線索範圍說明：And finally 承接前文依序介紹的玩水、釣魚、露營、住宿與購物，標出清單的最後一項
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Although Grants Pass, Oregon, is a fairly small town, it offers much to amuse summer visitors. Water sports are 31 the most popular tourist attraction. Visitors can go rafting down the Rogue River 32 . swimming in the Applegate River. Fishing in the area is another popular activity. Lots of people also go hunting for wild berries that grow along the roadsides. 33 , there are lovely, clean campgrounds where campers can park their vehicles.
+34 those who prefer to stay in town, Grants Pass offers several nice hotels. In town, tourists can browse through 35 number of interesting shops, such as antique stores and the shop that sells items 36 from Oregon's beautiful myrtlewood. Another fun 37 is shopping at the open market where local folks sell produce grown in their gardens. And 38 , Grants Pass has a lot of places to eat, ranging from a low-calorie dessert place to lovely restaurants, some of which offer good food and gorgeous views.
+39 you can see, Grants Pass offers a lot to do in the summer. 40 you want to give your family a nice, wholesome vacation, try visiting this charming town.
+中譯：雖然奧勒岡州的格蘭茨帕斯是個相當小的城鎮，但它提供許多吸引夏季遊客的活動。水上活動是最受歡迎的觀光項目。遊客可以沿羅格河泛舟，或在阿普爾蓋特河游泳。這一帶的釣魚活動也很受歡迎，許多人也會沿路邊採野莓。此外，這裡還有乾淨舒適的露營地讓露營者停放車輛。對於偏好待在城裡的人，格蘭茨帕斯也提供幾間不錯的旅館。在城裡，遊客可以逛許多有趣的商店，例如古董店和販售奧勒岡州美麗木材製品的商店。另一項有趣的活動是逛當地人販售自家種植農產品的傳統市集。而且，格蘭茨帕斯有很多用餐選擇，從低卡甜點店到能欣賞美景的高級餐廳都有。如你所見，格蘭茨帕斯夏天有很多可以玩的地方。如果你想給家人一個美好、健康的假期，不妨來這個迷人的小鎮走走。
+📋 內容大意
+Grants Pass, Oregon is small, yet it gives summer visitors plenty to do, and water sports are its best-known attraction.
+Visitors can raft the Rogue River, swim, fish, pick wild berries and stay at clean campgrounds, while those who prefer town have hotels, antique shops and myrtlewood stores.
+An open market and restaurants of every kind round out what this charming town offers families planning wholesome summer trips.
+← 第37題回到84 年學測第39題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

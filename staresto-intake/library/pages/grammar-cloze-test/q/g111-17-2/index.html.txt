@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g111-17-2/index.html
+Author: staresto-create ZZSH
+Title: 111 年學測克漏字第17題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 111 年學測 ／ 第17題
+111 年學測 克漏字 第17題
+慣用語／片語線索：句內答對率 73%
+答對率 73%：當年每 100 位考生，有 73 位答對。
+In the early days of aviation, plane windows 17 square in shape.
+(A)used to be
+(B)were to be
+(C)would have been
+(D)must have been
+答案：(A) used to be
+題目編號：G111_17_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】used to be 指「過去曾經是」，表示「早期飛機窗戶『曾經』是方形的」（現在不是了）；were to be（表計畫/命運）、would have been（與過去事實相反的假設）、must have been（過去推測，這裡是明確的歷史事實不是推測）都不合。
+深入解析
+你可能會這樣想
+used to 很容易和另外兩個長得像的說法混在一起。一次分清楚：used to + 原形動詞 ＝ 過去曾經（現在不是了）；be／get used to + 名詞或動名詞 ＝ 習慣於；be used to + 原形動詞 ＝ 被用來做……。本題是第一個。
+怎麼判斷
+句子是 In the early days of aviation, plane windows ___ square in shape（在航空業早期，飛機窗戶 ___ 方形的）。時間副詞 In the early days 已經定調是過去；而文章第一句就說 all plane windows have rounded edges（現在所有飛機窗戶都是圓角）。過去是方的、現在是圓的，這種今昔對比正是 used to 的核心語意——它不只講過去，還暗示「現在已經不是了」。
+誘答選項
+were to be 表示「按計畫或註定要……」，放進來變成「窗戶註定要是方的」，語意不通；would have been 是與過去事實相反的假設；must have been 是對過去的推測（一定是……吧），但方形窗是文章明確陳述的歷史事實，不是猜測。
+常考字詞與句型
+used to V（過去曾經……，現在不是了）、be／get used to V-ing（習慣於做……）、be used to V（被用來做……）、in the early days of（在……的早期）、be square／round in shape（形狀是方的／圓的）。其中 used to V 這一組考過 3 個年度，83 年第 13 題 →、83 年第 15 題 →、99 年第 16 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Airline passengers may have noticed that all plane windows have rounded edges, instead of the hard corners commonly found in our house. The round windows are indeed pleasant to the eye, but they actually were designed for reasons 16 aesthetics.
+In the early days of aviation, plane windows 17 square in shape. Then as commercial air travel became popular in the 1950s and airplanes began flying higher and faster, three planes mysteriously broke apart in midair. The cause? Square windows. Scientists found that sharp corners are natural weak spots where stress concentrates. The problem is 18 when airplanes fly at higher altitudes, where the difference between the inside and outside pressure increases, causing added stress. When subjected to repeated pressurization high in the sky, the four corners on a square window may 19 .
+Curved windows, on the other hand, distribute stress around more evenly, reducing the likelihood of cracks or breaks. Circular shapes are also stronger and resist deformation, and therefore can 20 extreme differences in pressure inside and outside of an aircraft. Thus, round windows are a major safety innovation that keeps planes from disintegrating mid-flight. They are also used on ships and spacecraft for their greater structural integrity.
+中譯：搭飛機的乘客可能都注意到，所有飛機窗戶的邊緣都是圓角的，不像我們家中常見的直角窗戶。圓形窗戶確實賞心悅目，但它們的設計其實是出於美觀以外的原因。在航空發展的早期，飛機窗戶原本是方形的。到了 1950 年代，隨著商業航空逐漸普及、飛機飛得越來越高、越來越快，卻接連發生三起飛機在空中神祕解體的事故。原因是什麼呢？正是方形窗戶。科學家發現，尖銳的角落天生就是應力容易集中的脆弱點。當飛機飛行在更高的高度時，機艙內外壓力差增大，帶來額外的應力，這個問題因此變得更加嚴重。在高空中反覆承受加壓過程時，方形窗戶的四個角落可能因此產生裂痕。相較之下，圓形窗戶能將應力更均勻地分散開來，大幅降低破裂或斷裂的風險。圓形結構同時也更堅固、更能抵抗形變，因此能承受機艙內外極端的壓力差異。因此，圓形窗戶可說是一項重大的安全創新，防止飛機在飛行途中解體。基於同樣更佳的結構完整性，圓形窗戶也被應用在船舶與太空船上。
+📋 內容大意
+Aircraft windows are rounded rather than square, and the shape serves safety, not only appearance.
+Early plane windows were square. In the 1950s, as flights climbed higher and faster, three aircraft broke apart in midair, and scientists blamed the sharp corners.
+Sharp corners are weak spots where stress builds, and high altitude makes it worse. Round windows spread the stress evenly, so ships and spacecraft use them too.
+← 第16題回到111 年學測第18題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

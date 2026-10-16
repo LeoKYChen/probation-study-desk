@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g83-29-2/index.html
+Author: staresto-create ZZSH
+Title: 83 年學測克漏字第29題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 83 年學測 ／ 第29題
+83 年學測 克漏字 第29題
+字彙選義線索：句內
+People 28 high self-esteem are not hurt by criticism; they do not 29 criticism as personal rejection. 30 , they tend to believe criticism to be suggestion for improvement.
+(A)like
+(B)look
+(C)watch
+(D)regard
+答案：(D) regard
+題目編號：G83_29_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】regard A as B 是字詞搭配，表示「把 A 視為 B」，符合「不把批評視為對自己的否定」的語意。like／look／watch 都沒有「視為」這種字詞搭配用法。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都與「看」有關，中文是「喜歡、看、注視、認為」，如果沒注意到後面那個 as，很容易在 look 與 watch 之間猶豫。
+怎麼判斷
+先看空格後面：criticism as personal rejection——受詞後面接了一個 as。這個 as 是決定性的線索：能走「動詞 + 受詞 + as + 補語」這個句型、意思是「把 A 視為 B」的，是 regard。整句是 they do not regard criticism as personal rejection（他們不把批評視為對自己的否定）。這一組「視為」的說法值得整批記起來，它們的句型完全相同：regard A as B、see A as B、view A as B、think of A as B、look on A as B。注意 look 要接 on 才行，單獨的 look 進不來。
+誘答選項
+look：要寫成 look on A as B 才成立，而本句空格後面直接接受詞，少了 on。watch（觀看）、like（喜歡）：兩個都沒有「視為」這個用法，後面也接不了 as + 補語。
+常考字詞與句型
+regard A as B（把 A 視為 B）、think of A as B（把 A 想成 B）、look on A as B（把 A 看作 B）、be regarded as（被視為）、personal rejection（對個人的否定）、take sth personally（把某事往心裡去）。其中 be regarded as 這一組考過 3 個年度，95 年第 18 題 →、104 年第 21 題 →都出現過；regard A as B 考過 3 個年度，94 年第 18 題 →、107 年第 30 題 →都出現過。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+A person's self-concept is reflected in the way he or she behaves, and the way a person behaves affects other people's reactions. 21 , the way people think about themselves 22 a profound effect on all areas of their lives.
+For instance, people who have a 23 sense of self-esteem usually act with confidence. 24 they have self-assurance, they do not need constant praise and encouragement from others to feel 25 about themselves. Self-confident people are their own best friends. They participate 26 life enthusiastically and spontaneously. They are not affected by 27 others think they "should" do.
+People 28 high self-esteem are not hurt by criticism; they do not 29 criticism as personal rejection. 30 , they tend to believe criticism to be suggestion for improvement.
+中譯：一個人的自我概念反映在他／她的行為方式上，而一個人的行為方式也會影響他人的反應。因此，人們對自己的看法對生活各層面都有深遠的影響。舉例來說，擁有健全自尊心的人通常表現得很有自信。因為他們有自信，不需要別人不斷的稱讚和鼓勵才能感覺良好。有自信的人是自己最好的朋友。他們熱情自發地參與生活，不會受到別人認為他們「應該」怎麼做的影響。自尊心高的人不會被批評傷害；他們不會把批評當作是對自己的否定，相反地，他們往往把批評視為改進的建議。
+📋 內容大意
+A person's self-concept shapes behavior, and behavior shapes how others respond, which means self-image touches every area of life.
+People whose self-esteem is strong act confidently, need no constant praise, and throw themselves into life enthusiastically and spontaneously.
+They are untroubled by other people's expectations and treat criticism as advice for improvement rather than as personal rejection.
+← 第28題回到83 年學測第30題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g110-27-3/index.html
+Author: staresto-create ZZSH
+Title: 110 年學測克漏字第27題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 110 年學測 ／ 第27題
+110 年學測 克漏字 第27題
+字彙選義線索：句內答對率 56%
+答對率 56%：當年每 100 位考生，有 56 位答對。
+A newly published study, however, revealed that rising temperatures are posing an 27 threat to the last tropical glaciers in Indonesia's Papua region.
+(A)occasional
+(B)elaborate
+(C)immediate
+(D)offensive
+答案：(C) immediate
+題目編號：G110_27_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「氣溫上升對最後的熱帶冰川構成『立即』的威脅」，immediate（立即的）符合這種緊迫性；occasional（偶爾的）、elaborate（精心製作的）、offensive（冒犯的）都不合。
+深入解析
+你可能會這樣想
+immediate 你最熟的是「立刻的」，多半配時間用（immediately 馬上）。放進 an ___ threat 裡，你可能覺得威脅怎麼會「立刻」，於是改挑別的。an immediate threat 是固定說法，指迫在眉睫、不能再拖的威脅，強調的是急迫性。
+怎麼判斷
+後面兩句把急迫感寫得很滿：The ice sheets... are thinning over five times as quickly compared to a few years ago（融化速度是幾年前的五倍以上）、will completely disappear within a decade（十年內就會完全消失）。「五倍速」加上「十年內消失」，這就是急迫。
+誘答選項
+occasional（偶爾的）與「持續加速融化」矛盾；elaborate（精心製作的）用來形容計畫或設計，威脅不會「精心製作」；offensive（冒犯的；攻擊性的）用在言語或軍事行動上，氣候變遷並不是刻意冒犯誰。
+常考字詞與句型
+an immediate threat（迫在眉睫的威脅）、pose a threat to（對……構成威脅）、take immediate action（立刻採取行動）、immediate family（直系親屬）、an elaborate plan（精心設計的計畫）、ice sheet（冰層、冰原）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Glaciers are usually associated with colder climates. But some mountain ranges of South America, Africa, and Indonesia are also 26 glaciers and ice sheets. These tropical glaciers serve as a major source of water supply to one-sixth of the world's population.
+A newly published study, however, revealed that rising temperatures are posing an 27 threat to the last tropical glaciers in Indonesia's Papua region. The ice sheets, which once spanned 20 square kilometers, are thinning over five times as quickly compared to a few years ago. 28 already shrunk by 85% to a mere 0.5 square kilometers, Papua's glaciers will completely disappear within a decade, researchers have predicted.
+The disappearance of the glaciers will also leave a significant 29 impact. For many indigenous Papuans, the ice sheets represent a sacred symbol. "The mountains and valleys are the arms and legs of their god and the glaciers are the head," explained the head researcher. The study warned that Papua's glaciers are only the "first to go" if greenhouse gases are 30 and temperatures continue rising. And this is certainly a serious warning about the depressing fate of other glaciers around the world.
+中譯：冰河通常讓人聯想到寒冷的氣候。但南美洲、非洲和印尼的部分山脈，其實也擁有冰河與冰原。這些熱帶冰河是全球六分之一人口的重要水源之一。然而，一項最新發表的研究顯示，氣溫上升正對印尼巴布亞地區剩下的熱帶冰河構成迫切的威脅。這片曾經廣達 20 平方公里的冰原，融化速度比幾年前快了五倍以上。研究人員預測，這片已縮減 85%、只剩 0.5 平方公里的巴布亞冰河，將在十年內完全消失。冰河的消失也將帶來重大的文化衝擊——對許多巴布亞原住民而言，這片冰原象徵著神聖的意義。「這些山脈與河谷是他們神祇的手腳，冰河則是頭部，」研究負責人如此解釋。這項研究警告，若溫室氣體排放不受控制、氣溫持續上升，巴布亞的冰河恐怕只是「第一個消失」的冰河，這無疑也對全球其他冰河令人擔憂的命運，發出了嚴正的警訊。
+📋 內容大意
+Glaciers are not only in cold regions. Ranges in South America, Africa and Indonesia have them too, and they supply water for a sixth of the world's people.
+A new study says rising temperatures now threaten Papua's last tropical glaciers. The ice is thinning five times faster than before and has shrunk by 85%.
+Researchers expect the ice to vanish within ten years. For indigenous Papuans the glaciers are sacred, the head of their god, and more glaciers will follow.
+← 第26題回到110 年學測第28題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

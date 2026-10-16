@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g106-19-1/index.html
+Author: staresto-create ZZSH
+Title: 106 年學測克漏字第19題詳解（連接詞／轉折詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 106 年學測 ／ 第19題
+106 年學測 克漏字 第19題
+連接詞／轉折詞線索：句內答對率 67%
+答對率 67%：當年每 100 位考生，有 67 位答對。
+Usually a stye is accompanied by a swollen eye. 19 a stye can look unpleasant at times, it is usually harmless and doesn't cause vision problems.
+(A)As
+(B)If
+(C)Unless
+(D)Although
+答案：(D) Although
+題目編號：G106_19_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意讓步：「雖然針眼有時看起來令人不舒服，但它通常是無害的」，Although（雖然）符合這個讓步轉折；As（當……時候/因為）、If（如果）、Unless（除非）都不合。
+深入解析
+你可能會這樣想
+四個選項都是連接詞，你可能會直覺挑 As，因為 As 又能表「當……的時候」又能表「因為」，看起來最保險。但這一題的關鍵不在單字意思，而在前後兩個子句是同方向還是反方向。
+怎麼判斷
+把兩個子句拆開讀。前半：a stye can look unpleasant at times（針眼有時看起來令人不舒服）——負面。後半：it is usually harmless and doesn't cause vision problems（通常無害，也不會造成視力問題）——正面。一負一正，是明顯的讓步轉折，所以選 Although（雖然）。驗算方式：換成 Even though 或 Though 讀一次，意思完全一樣。這裡要特別提醒一個很常見的錯誤：中文說「雖然……但是……」兩個都要出現，英文只能留一個。Although a stye can look unpleasant, but it is harmless. 是錯的，but 必須拿掉。原因不是「一句話只能有一個連接詞」——一句話當然可以有好幾個；而是 although 和 but 綁子句的方式不同：although 讓一個子句附屬於另一個（從屬連接詞），but 是把兩個地位相等的子句並排（對等連接詞），同一對子句不可能既一主一從、又兩兩對等（劍橋 English Grammar Today）。記法很簡單：一句話可以有好幾個連接詞，但同一對子句只能被綁一次。所以 although 配得上 still、nevertheless 這種副詞（Although it rained, we still enjoyed it. 雖然下雨，我們還是玩得很開心），就是配不上 but。「因為……所以……」錯在同一個地方：Because it rained, so we stayed home. 的 so 一樣要拿掉。
+誘答選項
+As（當……的時候／因為）表時間或原因，代進去會變成「因為看起來不舒服，所以無害」，前後不通。If（如果）是條件，但針眼看起來不舒服是既成事實，不是假設。Unless（除非）等於 if...not，代進去變成「除非看起來不舒服，否則無害」，語意完全走樣。同一個 Although 在 96 年第 19 題 →也考過，出題方式一模一樣：前後句一正一負就挑讓步連接詞，先判方向再挑詞。
+常考字詞與句型
+although（雖然）、even though（即使、雖然）、though（雖然）、in spite of（儘管，後面接名詞）、despite（儘管，後面接名詞）、unless（除非）、nevertheless（然而、儘管如此）、heal on their own（自行痊癒）、speed up（加快）。其中 in spite of 這一組考過 9 個年度，86 年第 21 題 →、89 年第 30 題 →、93 年第 23 題 →、99 年第 24 題 →、99 年第 28 題 →、105 年第 29 題 →、107 年第 30 題 →、109 年第 29 題 →、112 年第 15 題 →都出現過；even though 考過 6 個年度，89 年第 23 題 →、95 年第 25 題 →、96 年第 25 題、103 年第 30 題 →、107 年第 21 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+You begin to notice a bit of pain on your eyelid each time you blink. You 16 the mirror to find a tiny red spot on the base of your lower lashes. These 17 are probably the beginning of an eye stye. An eye stye is a small bump, resembling a pimple, that develops when an oil gland at the edge of an eyelid becomes infected by bacteria. These bacteria are found in the nose and are easily 18 to the eye when you rub your nose, then your eye. Pus will build up in the center of the stye, causing a yellowish spot. Usually a stye is accompanied by a swollen eye.
+19 a stye can look unpleasant at times, it is usually harmless and doesn't cause vision problems. Most styes heal on their own within a few days. You might speed up healing time by gently pressing a warm washcloth 20 your eyelid for 10 minutes, 3 or 4 times a day. Make sure you don't squeeze or pop a stye like you would a pimple. Doing so may cause a severe eye infection.
+中譯：你開始注意到，每次眨眼時眼皮都會有點刺痛感。你往鏡子裡一看，發現下睫毛根部有個小小的紅點。這些症狀很可能是麥粒腫（針眼）的初期徵兆。麥粒腫是眼瞼邊緣的皮脂腺遭細菌感染後形成的小腫塊，外觀類似青春痘。這些細菌通常存在於鼻腔中，當你揉完鼻子又揉眼睛時，很容易被帶到眼睛裡。膿液會逐漸在麥粒腫中心積聚，形成黃色的膿頭。通常麥粒腫還會伴隨眼皮腫脹。雖然麥粒腫有時候看起來令人不太舒服，但它通常無害，也不會造成視力問題。大多數麥粒腫會在幾天內自行痊癒。你可以用溫熱的毛巾輕敷眼皮，每次十分鐘、每天三到四次，來加速痊癒。切記不要像擠青春痘一樣擠壓或弄破麥粒腫，這麼做可能會導致嚴重的眼部感染。
+📋 內容大意
+Your eyelid hurts when you blink, and a tiny red spot appears at the base of the lower lashes. This is often a stye starting.
+A stye is a small bump like a pimple. It forms when bacteria from the nose infect an oil gland on the eyelid, often after rubbing.
+A stye looks unpleasant but is usually harmless and heals in a few days. A warm cloth held gently on the lid helps; never squeeze it.
+← 第18題回到106 年學測第20題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

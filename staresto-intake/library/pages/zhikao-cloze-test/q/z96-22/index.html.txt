@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z96-22/index.html
+Author: staresto-create ZZSH
+Title: 96 年指考克漏字第22題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 96 年指考 ／ 第22題
+96 年指考 克漏字 第22題
+字彙選義線索：句內答對率 39%
+答對率 39%：當年每 100 位考生，有 39 位答對。
+This may not sound like much, but it could change the Earth's climate as 22 before.
+(A)ever
+(B)never
+(C)always
+(D)yet
+答案：(B) never
+題目編號：Z96_22（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+as never before 意為「以前所未有的方式」：升溫幅度聽起來不大，卻可能以前所未有的程度改變地球氣候；ever、always、yet 都無法與 as…before 構成這個說法。
+深入解析
+你可能會這樣想
+as ___ before 這個結構看起來像少了什麼，你可能想填 ever，因為 ever before 眼熟。但 ever 通常跟在比較級或否定詞之後（better than ever before、hardly ever）；as ever 雖然也是個說法，意思卻是「一如往常」。as never before 才是固定說法，意思是「以前所未有的方式、程度前所未見」：The country is changing as never before.（這個國家正以前所未有的方式改變。）
+怎麼判斷
+先看句子的語氣走向。本句用 This may not sound like much, but… 起頭（這聽起來似乎不多，但是…），這是一個先退後進的句式：前半先承認讀者的第一印象，後半要把它推翻。既然是推翻，後半必須把嚴重性拉高，而且拉得越高，這個轉折才站得住。四個選項裡只有 never 能把程度推到頂——「以前從來沒有過的程度」。前一句提到科學家預估未來一百年的升溫幅度是華氏二到六度，數字本身確實不起眼，正是這個句式要處理的第一印象。驗算法：把 as never before 換成中文的「前所未有地」唸一遍——它可能以前所未有的程度改變地球氣候，語氣與 but 的轉折對得上。看到 may not sound…, but… 這個形狀，就知道作者要推翻你的第一印象，答案一定落在「把程度拉高」那一側。
+誘答選項
+ever 放進來是 as ever，如前所述意思是「一如往常」，與 as always 相同，會把事情說成常態，與 but 的轉折相反。always 是「總是」，as always 確實是個說法，但意思是「一如往常」，放進來會變成「像往常一樣改變氣候」，語氣不但沒拉高，反而把事情說成常態，與 but 的轉折相反。yet 當副詞用於否定句與疑問句（not yet 尚未），也常見於 the best yet（目前為止最好的），但沒有 as yet before 這種說法，形式上就不成立。
+常考字詞與句型
+as never before（以前所未有地）、better than ever before（比以往更好）、hardly ever（幾乎從不）、as always（一如往常）、not yet（尚未）、This may not sound like much, but…（這聽起來似乎不多，但…）。
+鑑別度分析：鑑別度 10，高低分群的差距不大。本題答對率三成九——大考中心《選才電子報》第 307 期說明鑑別度時提到，鑑別度低表示高、低分群考生的答對率差距小，原因很多，而且它與答對率一樣，只是推論試題品質的指標之一。這一題的難處在於 as never before 是固定說法，意思是「前所未有地」：ever before 眼熟，容易順手填 ever，但 as ever 與 as always 都是「一如往常」，與 This may not sound like much, but… 這個先退後進的轉折相反；後半句要把程度拉高，只有 never 做得到。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：96學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Average global temperature has increased by almost 1°F over the past century. Scientists expect it to increase an 21 2° to 6°F over the next one hundred years. This may not sound like much, but it could change the Earth's climate as 22 before.
+Climate change may affect people's health both directly and indirectly. For instance, heat stress and other heat-related health problems are caused directly by very warm temperatures. 23, human health can also be affected by ecological disturbances, changes in food and water supplies, as well as coastal flooding.
+How people and nature 24 climate change will determine how seriously it affects human health. Generally, poor people and poor countries are 25 probable to have the money and resources they need to cope with health problems due to climate change.
+中譯：過去一世紀以來，全球平均氣溫已上升將近華氏 1 度（不到攝氏 0.6 度）。科學家預期未來一百年氣溫還會再上升華氏 2 到 6 度（約攝氏 1.1 到 3.3 度）。這聽起來或許沒什麼大不了，但它可能會以前所未有的方式改變地球的氣候。氣候變遷可能直接或間接影響人類健康。例如，熱壓力及其他與高溫有關的健康問題就是由酷熱直接造成的。此外，人類健康也可能間接受到生態失衡、糧食與水資源供給改變，以及沿海洪患等因素影響。人與自然如何適應氣候變遷，將決定氣候變遷對人類健康影響的嚴重程度。整體而言，貧窮的人與貧窮的國家較不可能擁有足夠的金錢與資源，來應付因氣候變遷而產生的健康問題。
+📋 內容大意
+Global temperature has risen about one degree and may climb several more within a century.
+Warming harms health through heat itself and through disturbed food, water and coastal flooding.
+How people and nature meet the change decides the damage, and poorer countries can least afford it.
+← 第21題回到96 年指考第23題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

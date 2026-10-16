@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g93-18-1/index.html
+Author: staresto-create ZZSH
+Title: 93 年學測克漏字第18題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 93 年學測 ／ 第18題
+93 年學測 克漏字 第18題
+字彙選義線索：句內答對率 60%
+答對率 60%：當年每 100 位考生，有 60 位答對。
+Another requirement was 18 he should have large ears, upward-slanting eyes and eyebrows.
+(A)what
+(B)whether
+(C)why
+(D)that
+答案：(D) that
+題目編號：G93_18_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+that 引導名詞子句作主詞補語，說明「另一項要求是他應該有大耳朵」；what（不能這樣引導完整的主詞補語子句）、whether（是否，語意不合，這裡不是不確定性而是明確要求）、why（為什麼）都不合。
+深入解析
+你可能會這樣想
+what 這個字，你的印象大概只有疑問詞「什麼」這一個用法，所以看到 was 後面要接一個子句，就在 what 與 that 之間憑語感二選一，唸起來順就填哪一個。這一格不必靠語感，把子句的成分數一遍就有答案。
+怎麼判斷
+四個選項都是能帶出名詞子句的字，可見這一格考的是「這個子句缺不缺成分」。先把空格後面整串讀完：he should have large ears, upward-slanting eyes and eyebrows——主詞是 he，動詞是 should have，受詞是 large ears, upward-slanting eyes and eyebrows，三樣齊全，一個空位都沒有。that 的工作只是把整個子句掛到 was 後面去當主詞補語，它自己不占子句裡的任何位置，所以只有它填得進去。掛鉤用 The problem is that he is too young.（問題是他年紀太小。）：be 動詞後面接一個 that 子句來說明主詞是什麼，本句的 Another requirement was that... 是同一個句型。這一題的鑑別度 41，分開的就是有沒有真的動手數成分，憑語感的人在這裡拿不到分。
+誘答選項
+what：它自己就是一個名詞，進到子句裡一定要當主詞、受詞或介系詞的受詞，而這個子句這三個成分都不缺，因此排除。whether：意思是「是否」，用在兩種可能性還沒有定案的時候（I don't know whether he will come. 我不知道他會不會來。），這裡卻是一條講明白的條件，不是懸而未決的選擇。why：意思是「為什麼」，填進去會變成「另一項要求是為什麼他該有大耳朵」，語意接不起來。
+what 的兩種身分，別跟間接問句混在一起
+what 進到名詞子句裡有兩種用法，都不是疑問詞「什麼」那麼單純。第一種是複合關係代名詞，意思等於 the thing(s) that，劍橋 English Grammar Today 的 what 條目舉的例句是 What we need to do is make a list of useful phone numbers.（我們該做的事，是列一張常用電話號碼的清單。）。第二種才是間接問句的疑問詞，像 I don't know what he wants.（我不知道他想要什麼。）。分辨方法：換成 the thing that 讀得通就是第一種，非得換成「什麼」才通順就是第二種。兩種用法有一個共同點，也就是這一格真正的判斷依據——what 一定要在子句裡當主詞、受詞，或介系詞的受詞，因為它自己就是那個名詞。劍橋還講明另一件事：what 不能當一般的關係代名詞，前面若已經有名詞先行詞就得改用 which 或 that（This is the book which the lecturer mentioned. 這是那位講者提到的那本書；不能寫成 the book what...），所以空格前面只要有一個名詞，what 也先排除。題庫裡有一組題可以擺在一起看：95 年第 24 題 → but ___ they are willing to do for others，do 後面缺受詞，填 what；100 年第 29 題 → the scarcity of goods is ___ causes humans to attribute value，causes 前面缺主詞，填 what；107 年第 26 題 → ___ they are dreaming of，of 後面缺受詞，也填 what。本題的子句一個洞都沒有，這才是它非 that 不可的理由。
+常考字詞與句型
+meet a requirement（符合要求）、the requirement that…（……的這項要求）、The point is that…（重點在於……）、The reason is that…（原因在於……）、The problem is that…（問題在於……）、What matters is that…（重要的是……）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Whenever a Dalai Lama died, a search began for his reincarnation. The 16 male child had to have certain qualities. 17 was the ability to identify the belongings of his predecessor, or rather his previous self. Another requirement was 18 he should have large ears, upward-slanting eyes and eyebrows. Besides, one of his hands should bear a mark like a conch-shell. The successful candidate, usually 19 two or three, was then removed from his family to Lhasa to begin spiritual training for his future role. The Panchen Lamas were chosen in a similar way.
+The reincarnated leaders were always "discovered" in the households of lowly families 20 noble ones. This was to ensure that no single and powerful noble family could seize the title and pass it to the next generation.
+中譯：每當一位達賴喇嘛圓寂，尋找他轉世靈童的過程便隨即展開。這名男童必須具備特定的特質。其中之一是能夠指認出前一世所使用的物品。另一項條件是必須擁有大耳朵、上揚的眼睛與眉毛。此外，他其中一隻手上還必須帶有類似海螺的印記。雀屏中選的候選人通常才兩三歲，隨後便被帶離家人身邊前往拉薩，開始接受靈性訓練，為未來的角色做準備。班禪喇嘛的挑選方式也大致相同。這些轉世的領袖，向來都「發現」於地位低下的平民家庭，而非顯赫的貴族家庭之中，目的是為了確保沒有任何一個權貴家族能獨占這個頭銜，並將其傳給下一代。
+📋 內容大意
+The selection process for a reincarnated Dalai Lama required specific physical and spiritual signs, choosing children from humble families to prevent political consolidation.
+← 第17題回到93 年學測第19題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

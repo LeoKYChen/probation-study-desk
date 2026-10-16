@@ -1,0 +1,57 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dz109b-32/index.html
+Author: staresto-create ZZSH
+Title: 指考 109年補考 篇章結構 第32題詳解（掌握篇章整體結構發展及段落與段落間的關係）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 指考 109年補考 ／ 第32題
+指考 109年補考 篇章結構 第32題
+選文：古埃及由誰統治（Who Ruled Ancient Egypt）
+掌握篇章整體結構發展及段落與段落間的關係線索：轉折詞、語意對比
+(A)Under the vizier were local governors called nomarks.宰相底下是稱為 nomark 的地方首長。
+(B)The Pharaoh, however, could not run the government all by himself.不過，法老沒有辦法一個人治理整個國家。
+(C)As a living god, the Pharaoh was given absolute control over his subjects.法老身為在世的神，對他的子民擁有絕對的控制權。
+(D)Governors of specific pieces of land were sometimes controlled by the vizier.管理特定土地的首長有時受宰相管轄。
+(E)It only changed when parts of Egypt were invaded or someone overthrew the government.只有在埃及部分地區遭到入侵，或是有人推翻政府的時候，這套方式才會改變。
+(F)Together with the Pharaoh, the viziers, and the nomarks, these officials and nobles governed the country.這些官員與貴族，連同法老、宰相和地方首長，共同治理著這個國家。
+答案：(B) The Pharaoh, however, could not run the government all by himself.
+題目編號：Dz109b_32
+解析
+先看空格的位置。 第二段的第一句。第一段的結論是：他一個人擁有全埃及。
+再看空格後面。 後面是 There was a hierarchy of rulers and leaders below him who ran different aspects of the government.（在他底下有一整層統治者與領導者，各自負責政府的不同面向。）上一段說他一個人全包，這一句卻冒出一整層人。
+B 就是中間的轉折：however（不過）話鋒一轉，could not run the government all by himself（無法一個人治理）直接引出下一句的那一層人。
+如果你選了 A（宰相底下是稱為 nomark 的地方首長。）：A 講的也是層級。但 A 提到 the vizier（宰相），這一格前面從沒提過宰相，the vizier 指不到任何人。
+【下次先看這裡】段落開頭是空格、上一段剛下了一個很絕對的結論，空格通常是那句「不過，事情沒那麼簡單」。
+線索與數據
+線索種類轉折詞、語意對比
+線索在哪後一句 however；一個人全包 ↔ 底下一整層
+答對率本場考試不公布統計
+本篇題型6選5・刪去法不收尾
+多出來的那一個：D
+(D)Governors of specific pieces of land were sometimes controlled by the vizier.管理特定土地的首長有時受宰相管轄。
+D 的內容並沒有錯，用字也和這篇文章很接近——governors（首長）、vizier（宰相）、land（土地）。它是六個選項裡最像正解 A 的一個。但五格都放不進去：
+格
+那一格在等什麼
+D 為什麼不行
+32
+「法老一個人管不了」的轉折
+D 沒有轉折，也沒有提到法老
+共同點：這篇文章是一張由上而下的組織表——法老、宰相、地方首長、其他官員與祭司。每一格不是補上一層，就是把所有層總結一次。D 只是替其中一層加了一句「有時受某人管轄」的補充，哪一層都不需要它。
+【下次先看這裡】兩個選項長得很像的時候，比的不是誰的字面比較接近，而是誰把「下一句需要的東西」交出來了。
+展開本題所在的整篇選文與中文翻譯
+本篇共 5 格、6選5；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+Every civilization is built upon rules and regulations. In ancient Egypt, the government was dominated by a single figure, the Pharaoh, who was considered the divine representative of gods on earth. 31 He was the supreme ruler and owned all of Egypt, the land and all the people who lived there.
+32The Pharaoh, however, could not run the government all by himself. There was a hierarchy of rulers and leaders below him who ran different aspects of the government. The primary leader under the Pharaoh was named the vizier. The vizier was the “right-hand man” of the Pharaoh and had a status equivalent to that of a prime minister. 33 They ruled over an area of land called a nome. A nome was like a state or province.
+Other officials that reported to the Pharaoh were the army commander, chief treasurer, and the minister of public works. Since government and religion were inseparable in ancient Egypt, many of the officials were also priests and holy men. This group had a special status above the rest of the citizens, forming a kind of nobility. 34
+In the several-thousand-year span of Egyptian history, the general method of governing was quite consistent. 35 The consistency of this governing system is what allowed Egypt to remain a prominent country for such a long time.
+中譯
+每一個文明都建立在規則與制度之上。在古埃及，政府由單一人物主導，那就是法老，他被視為眾神在人間的神聖代表。31 他是至高無上的統治者，擁有整個埃及——土地，以及住在那片土地上的所有人。
+32 他底下有一整套統治者與領導者的層級，各自負責政府的不同面向。法老之下最主要的領導者稱為 vizier（宰相）。宰相是法老的「左右手」，地位相當於今天的首相。33 他們管轄一塊稱為 nome 的土地。nome 就像是一個州或一個省。
+其他向法老負責的官員包括軍隊統帥、財政大臣和公共工程大臣。由於古埃及的政治與宗教密不可分，許多官員同時也是祭司和聖職人員。這一群人的地位高於其他百姓，形成某種貴族階層。34
+在埃及長達數千年的歷史裡，統治的整體方式相當一致。35 正是這套統治制度的穩定，讓埃及能夠長時間維持大國的地位。
+← 第31題回到互動練習第33題 →
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

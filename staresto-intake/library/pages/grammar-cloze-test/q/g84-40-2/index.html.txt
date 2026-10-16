@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g84-40-2/index.html
+Author: staresto-create ZZSH
+Title: 84 年學測克漏字第40題詳解（關係子句／疑問詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 84 年學測 ／ 第40題
+84 年學測 克漏字 第40題
+關係子句／疑問詞線索：句內
+And 38 , Grants Pass has a lot of places to eat, ranging from a low-calorie dessert place to lovely restaurants, some of which offer good food and gorgeous views. 39 you can see, Grants Pass offers a lot to do in the summer. 40 you want to give your family a nice, wholesome vacation, try visiting this charming town.
+(A)Where
+(B)What
+(C)If
+(D)That
+答案：(C) If
+題目編號：G84_40_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意是條件句「如果你想給家人一個美好的假期，就試試造訪這個小鎮」，If 引導條件子句；Where、What、That 都不符合這裡「條件」的邏輯關係。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+That 在這裡有一點誘惑力，因為 that 也能帶出名詞子句；但名詞子句要在主要子句裡當主詞或受詞，而後面是一個祈使句，沒有位置給它。
+怎麼判斷
+四個選項都能帶出子句，先數成分：you want to give your family a nice, wholesome vacation——主詞是 you、動詞是 want、受詞是 to give ... 這一整串，成分一個都不缺。既然不缺，What 就先排除：它自己是一個名詞，進到子句裡一定要當主詞、受詞或介系詞的受詞（同樣的判斷方式：93 年第 18 題 →、91 年第 25 題 →、90 年第 20 題 →、87 年第 26 題 →、84 年第 30 題 →）。再看結構：空格帶出的子句後面接的是 try visiting this charming town（試試造訪這個迷人的小鎮）——一個祈使句。「如果……，就去做某事」是典型的條件加建議，填 If。整句是「如果你想給家人一個美好又健康的假期，不妨造訪這個迷人的小鎮」，這是旅遊介紹文常見的收尾方式。
+誘答選項
+That：帶出的名詞子句在本句找不到位置。Where（哪裡）：本句與地點無關，而且後面的祈使句也接不上。What：成分已滿。
+常考字詞與句型
+If you want to V, try V-ing（如果你想……，不妨試試）、try V-ing（試試看做……）、give sb a vacation（讓某人度個假）、a wholesome vacation（健康有益的假期）、be worth a visit（值得一遊）、a charming town（迷人的小鎮）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Although Grants Pass, Oregon, is a fairly small town, it offers much to amuse summer visitors. Water sports are 31 the most popular tourist attraction. Visitors can go rafting down the Rogue River 32 . swimming in the Applegate River. Fishing in the area is another popular activity. Lots of people also go hunting for wild berries that grow along the roadsides. 33 , there are lovely, clean campgrounds where campers can park their vehicles.
+34 those who prefer to stay in town, Grants Pass offers several nice hotels. In town, tourists can browse through 35 number of interesting shops, such as antique stores and the shop that sells items 36 from Oregon's beautiful myrtlewood. Another fun 37 is shopping at the open market where local folks sell produce grown in their gardens. And 38 , Grants Pass has a lot of places to eat, ranging from a low-calorie dessert place to lovely restaurants, some of which offer good food and gorgeous views.
+39 you can see, Grants Pass offers a lot to do in the summer. 40 you want to give your family a nice, wholesome vacation, try visiting this charming town.
+中譯：雖然奧勒岡州的格蘭茨帕斯是個相當小的城鎮，但它提供許多吸引夏季遊客的活動。水上活動是最受歡迎的觀光項目。遊客可以沿羅格河泛舟，或在阿普爾蓋特河游泳。這一帶的釣魚活動也很受歡迎，許多人也會沿路邊採野莓。此外，這裡還有乾淨舒適的露營地讓露營者停放車輛。對於偏好待在城裡的人，格蘭茨帕斯也提供幾間不錯的旅館。在城裡，遊客可以逛許多有趣的商店，例如古董店和販售奧勒岡州美麗木材製品的商店。另一項有趣的活動是逛當地人販售自家種植農產品的傳統市集。而且，格蘭茨帕斯有很多用餐選擇，從低卡甜點店到能欣賞美景的高級餐廳都有。如你所見，格蘭茨帕斯夏天有很多可以玩的地方。如果你想給家人一個美好、健康的假期，不妨來這個迷人的小鎮走走。
+📋 內容大意
+Grants Pass, Oregon is small, yet it gives summer visitors plenty to do, and water sports are its best-known attraction.
+Visitors can raft the Rogue River, swim, fish, pick wild berries and stay at clean campgrounds, while those who prefer town have hotels, antique shops and myrtlewood stores.
+An open market and restaurants of every kind round out what this charming town offers families planning wholesome summer trips.
+← 第39題回到84 年學測
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

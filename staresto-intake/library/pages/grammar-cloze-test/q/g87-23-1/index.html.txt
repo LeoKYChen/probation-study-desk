@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g87-23-1/index.html
+Author: staresto-create ZZSH
+Title: 87 年學測克漏字第23題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 87 年學測 ／ 第23題
+87 年學測 克漏字 第23題
+字彙選義線索：句內
+The man 23 everything he could to teach the parrot to say “Catano,” but he never 24 .
+(A)did
+(B)put
+(C)had
+(D)made
+答案：(A) did
+題目編號：G87_23_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】do everything one can 指「盡他所能」，did everything he could 就是這個句型的過去式；made everything he could 不是英文裡常見的字詞搭配，put／had 也不合這個語境。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是最高頻的動詞，中文都能翻成「做、放、有、使」，擺進去唸都不太卡。這一格靠的是搭配，而且句子裡還藏了一個省略的線索。
+怎麼判斷
+四個選項都是動詞，可見這一格考的是哪一個能跟 everything 組成固定的說法。答案是 do everything one can（盡一個人所能做的一切）——did everything he could 就是「他能做的都做了」。句子裡還有一個線索可以印證：everything he could 後面其實省略了一個 do（完整說法是 everything he could do）。既然那個被省略的動詞是 do，前面的主要動詞當然也是 do，兩處要對得上。類似的省略也出現在 Do you like it? — Yes, I do.（do 代替 like it）。順便把同一組的說法記起來：do one's best（盡力）、do everything possible（想盡一切辦法）、do what one can（做能做的）。
+誘答選項
+made：make everything he could 不是通行的說法；make 講的是製造或使某物變成某樣子，這裡不是在造東西。put、had：put 要接地方（put it on the table），had 是「擁有」，兩個都與「盡力去做」無關。
+常考字詞與句型
+do everything one can（盡其所能）、do one's best（盡力）、do what one can（做能做的）、teach sb to V（教某人做……）、at first（起初）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+There was once a man in Puerto Rico who had a wonderful parrot. The parrot was 21, there was no other bird like him in the whole world. He could learn to say any word-- 22 one. He could not say the name of his native town, Catano.
+The man 23 everything he could to teach the parrot to say "Catano," but he never 24. At first he was very gentle with the bird, but gradually he lost his 25. "You stupid bird! 26 can't you learn to say that one word? Say 'Catano' or I'll kill you!" But the parrot would not say it. Many times the man screamed, "Say 'Catano' or I'll kill you!" But the bird would not 27 the name. Finally the man gave up. He picked up the parrot and threw the bird into the chicken house.
+In the chicken house, there were four old chickens, waiting to be killed 28 Sunday's dinner. "You are even more stupid than the chickens," the man said as he was leaving. The next morning, the man went out to the chicken house. When he opened the door, he was 29 by what he saw. He could not believe his eyes and ears! On the floor 30 three dead chickens. The parrot was screaming at the fourth, "Say 'Catano' or I'll kill you!"
+中譯：波多黎各曾經有一個人養了一隻很棒的鸚鵡。這隻鸚鵡非常特別，全世界找不到第二隻像牠這樣的鳥。牠幾乎能學會說任何字——除了一個字例外，牠學不會說出自己家鄉的名字：卡塔諾。這個男人想盡辦法教鸚鵡說「卡塔諾」，但始終沒有成功。一開始他對這隻鳥很溫和，但漸漸地他失去了耐性。「你這隻笨鳥！你怎麼連這個字都學不會？說『卡塔諾』，不然我就殺了你！」但鸚鵡就是不肯說。這個男人好幾次都大吼：「說『卡塔諾』，不然我就殺了你！」但這隻鳥就是不肯說出這個名字。最後這個男人放棄了。他抓起鸚鵡，把牠丟進雞舍裡。雞舍裡有四隻老母雞，正等著被宰來當星期天的晚餐。「你比這些雞還笨。」男人離開時這麼說。隔天早上，這個男人到雞舍去。當他打開門時，眼前的景象讓他大吃一驚。他簡直不敢相信自己的眼睛和耳朵！地上躺著三隻死雞。鸚鵡正對著第四隻雞尖叫：「說『卡塔諾』，不然我就殺了你！」
+📋 內容大意
+A man in Puerto Rico owned a remarkable parrot that could pronounce almost any word, yet never the name of its home town, Catano.（敘事文）
+Gentle teaching turned to rage, and after threatening the bird again and again the man finally gave up and tossed it in with four old chickens awaiting slaughter.（敘事文）
+The next morning the sight inside the chicken house astonished him: three chickens dead on the floor, and the parrot screaming the same threat at the fourth.（敘事文）
+← 第22題回到87 年學測第24題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

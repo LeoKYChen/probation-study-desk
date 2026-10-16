@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g106-26-3/index.html
+Author: staresto-create ZZSH
+Title: 106 年學測克漏字第26題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 106 年學測 ／ 第26題
+106 年學測 克漏字 第26題
+慣用語／片語線索：句內答對率 55%
+答對率 55%：當年每 100 位考生，有 55 位答對。
+Research has proven that weather plays a part in our moods: Warmer temperatures and exposure to sunshine increase positive thinking, whereas cold, rainy days bring anxiety and fatigue. 26 , many people believe that bad weather can reduce productivity and efficiency.
+(A)At most
+(B)In contrast
+(C)Literally
+(D)Accordingly
+答案：(D) Accordingly
+題目編號：G106_26_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+前面講天氣影響情緒（暖天正面情緒、陰雨天焦慮疲勞），這句延續「因此」，許多人相信壞天氣會降低生產力，Accordingly（因此）承接這個邏輯推論；At most（至多）、In contrast（相反地，這裡是順接不是對比）、Literally（字面上地）都不合。
+深入解析
+你可能會這樣想
+accordingly 長得太像 according to，你很可能直接把它讀成「根據……」。這兩個要分清楚：according to 是「根據」，後面一定要接名詞（according to the research 根據這項研究）；accordingly 是副詞，可以單獨使用，意思是「因此、於是」，和 therefore、thus 一樣屬於用來連接前後文的副詞（劍橋 English Grammar Today 把這類詞歸在「連接副詞」linking adjunct 底下），不能接名詞。
+怎麼判斷
+比對前後兩句的方向。前一句：研究證實天氣會影響情緒，暖天正向、陰雨天焦慮疲憊。這一句：許多人相信壞天氣會降低生產力。後者正是從前者推出來的想法，前因後果、同一個方向。驗算方式：換成 Therefore 或 Thus 讀一次，意思完全一樣，那就對了。
+誘答選項
+At most（至多、充其量）用在數量或程度的上限，像 It takes 20 minutes at most（最多二十分鐘）。In contrast（相反地）要求前後反向，但這裡是順著推下去，不是轉折——真正的轉折在下一句，由 however 帶出來，那才是全篇的轉彎處。Literally（字面上地、真的）與前後邏輯無關。105 年第 16 題 →也把 Accordingly 放進選項當誘答（該題答案是 However），可以兩題一起看：判斷方法都是先確定前後句同向還是反向，再從同向的一組（therefore、thus、accordingly）或反向的一組（however、in contrast、nevertheless）裡挑。
+常考字詞與句型
+accordingly（因此、於是；也可表「照著、相應地」，如 act accordingly 照此行事）、according to（根據，後面接名詞）、therefore（因此）、thus（因此）、at most（至多、充其量）、in contrast（相反地）、literally（字面上地、真的）、play a part in（在……中起作用）。其中 in contrast 這一組考過 4 個年度，88 年第 25 題 →、93 年第 29 題 →、104 年第 21 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Research has proven that weather plays a part in our moods: Warmer temperatures and exposure to sunshine increase positive thinking, whereas cold, rainy days bring anxiety and fatigue. 26 , many people believe that bad weather can reduce productivity and efficiency.
+There is, however, a significant 27 between such beliefs and the actual effect of weather on people's performance at work. Using empirical data from laboratory experiments 28 observations of a mid-sized Japanese bank in real life, researchers find that weather conditions indeed influence a worker's focus. When the weather is bad, individuals tend to focus more on their work rather than thinking about activities they could 29 outside of work. But photos showing outdoor activities, such as sailing on a sunny day or walking in the woods, can greatly distract workers and thus 30 their productivity.
+The findings conclude that workers are actually most productive when the weather is lousy—and only if nothing reminds them of good weather.
+中譯：研究已經證實，天氣會影響我們的情緒：溫暖的氣溫和日照能提升正向思考，而寒冷、下雨的日子則會帶來焦慮與疲憊。因此，許多人認為壞天氣會降低工作效率與生產力。然而，這樣的想法與天氣對工作表現的實際影響之間，其實存在著明顯的落差。研究人員結合實驗室的實證數據以及對一家日本中型銀行的實地觀察，發現天氣狀況確實會影響員工的專注力。天氣不好時，人們往往更專注於工作，而不會分心想著下班後能做什麼活動。但顯示戶外活動的照片，例如晴天出海航行或在森林裡散步的畫面，卻會嚴重分散員工注意力，進而降低生產力。這項研究的結論是：員工在天氣糟糕時反而最有生產力——但前提是沒有任何事物提醒他們好天氣的存在。
+📋 內容大意
+Weather affects human mood, leading many to assume that bad weather hurts workplace productivity.
+Research reveals that bad weather actually improves focus and productivity by removing outdoor distractions.
+Workers achieve peak productivity during poor weather, provided they are not reminded of pleasant outdoor alternatives.
+← 第25題回到106 年學測第27題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

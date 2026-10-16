@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g98-25-2/index.html
+Author: staresto-create ZZSH
+Title: 98 年學測克漏字第25題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 98 年學測 ／ 第25題
+98 年學測 克漏字 第25題
+字彙選義線索：句內答對率 28%
+答對率 28%：當年每 100 位考生，有 28 位答對。
+It was carried on sailing ships around the world because it was found to help prevent scurvy, a disease that often 25 sailors on long voyages.
+(A)bothered
+(B)contacted
+(C)suffered
+(D)wounded
+答案：(A) bothered
+題目編號：G98_25_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+bother 在此是「困擾、折磨」，主詞是疾病：壞血病常折磨長途航行的水手；suffer 的主詞必須是受苦的人（sailors suffered from scurvy），主客顛倒，contacted（聯絡）、wounded（使受外傷）也都不合。
+深入解析
+你可能會這樣想
+bother 你記得的大概是「打擾」，而且主詞一定是人（Don't bother me. 別煩我／Sorry to bother you. 抱歉打擾了）。這裡的主詞卻是一種疾病，意思也轉為「困擾、折磨」——疾病、疼痛、傷勢都可以當 bother 的主詞：My back has been bothering me lately.（我最近背一直不太舒服）。
+怎麼判斷
+四個選項都是及物動詞的過去式，填入關係子句後文法上都能成立，因此判斷的依據在主詞與受詞的方向。空格所在的關係子句以 a disease 為先行詞，主詞是疾病、受詞是 sailors，需要一個能表示「疾病使水手受苦」的動詞；bother 用於疾病、疼痛、傷勢時即「使不適、折磨」，方向相符。作答線索在同一句前半 because it was found to help prevent scurvy（因為人們發現鳳梨有助於預防壞血病），空格所在的同位語進一步說明壞血病對水手造成的影響。凡是四個選項都是及物動詞、文法上都填得下的題目，判斷步驟相同：先確認主詞與受詞各是動作的發出者或承受者，再檢查各選項要求的方向是否與句子一致。
+誘答選項
+suffered 的方向與本句相反：suffer 的主詞須是承受痛苦的一方，表示罹患疾病時後接 from，如 Sailors often suffered from scurvy.（水手常罹患壞血病）；本句主詞是疾病，不能作 suffer 的主詞。contacted 是「聯絡」，主詞須是人；表示「染上疾病」的動詞是 contract，與 contact 形近義異，宜一併分辨。wounded 指刀槍或外力造成的外傷，不用於疾病。
+常考字詞與句型
+bother sb（困擾某人）、be bothered by（受…困擾）、suffer from a disease（罹患疾病）、contract a disease（染病）、prevent scurvy（預防壞血病）、on long voyages（在長途航行中）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The pineapple, long a symbol of Hawaii, was not a native plant. 21 , pineapples did not appear there until 1813. The pineapple was 22 found in Paraguay and in the southern part of Brazil. Natives planted the fruit across South and Central America and in the Caribbean region, 23 Christopher Columbus first found it.
+Columbus brought it, along with many other new things, back to Europe with him. From there, the tasty fruit 24 throughout other parts of civilization. It was carried on sailing ships around the world because it was found to help prevent scurvy, a disease that often 25 sailors on long voyages. It was at the end of one of these long voyages that the pineapple came to Hawaii to stay.
+中譯：鳳梨長久以來是夏威夷的象徵，卻不是當地原生植物。事實上，鳳梨直到 1813 年才出現在夏威夷。鳳梨最早發現於巴拉圭和巴西南部。原住民將這種水果種植於中南美洲及加勒比海地區，哥倫布正是在那裡首次發現了鳳梨。哥倫布把鳳梨連同許多其他新事物一起帶回歐洲。從那裡，這種美味的水果逐漸傳播到世界其他文明地區。由於人們發現鳳梨有助於預防壞血病——一種常在長途航海中折磨水手的疾病——因此鳳梨被帶上遠洋船隻，隨船隻航行世界各地。正是在其中一趟長途航行的尾聲，鳳梨才終於落腳夏威夷。
+📋 內容大意
+The pineapple has long symbolized Hawaii, but it is not native and reached the islands in 1813.
+It first grew in Paraguay and southern Brazil. Native peoples planted it across Central and South America and the Caribbean, and Columbus carried it to Europe.
+Sailing ships then took the fruit around the world because it helped prevent scurvy, and one long voyage brought it to Hawaii.
+← 第24題回到98 年學測第26題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

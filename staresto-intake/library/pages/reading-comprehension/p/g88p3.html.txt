@@ -1,0 +1,98 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/g88p3.html
+Author: staresto-create ZZSH
+Title: 88 學測閱讀測驗：分解者在生態循環中的作用｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 88 學測
+88 學測閱讀測驗：分解者在生態循環中的作用
+The Role of Decomposers in Ecological Cycles
+學測 88年第 49–50 題2 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段All living things die eventually. In ecological terms, the chemicals of living things are borrowed from the Earth, and at death they return. All the material that every animal, from the smallest fly to the largest elephant, takes in as food also returns to the Earth, as waste matter. The dead material and waste matter form the diet of a group of living organisms called decomposers. They include a range of bacteria, fungi, and small animals that break down nature’s wastes into ever smaller pieces until all the chemicals are released into the air, the soil, and the water, making them available to other living things. Without the carbon dioxide released from the process, all plant life would die out. Without the oxygen that plants give out, and without the food that they supply, life would grind to a halt and all animals would starve. The decomposers are a vital link in the natural cycle of life and death.
+題目
+49.Which of the following statements is NOT true?
+(A)Small living things like bacteria provide food for other living things.
+(B)Carbon dioxide is produced during the process of decomposition.
+(C)Plants are important for supporting the life of animals.
+(D)Decomposers play a minor role in the recycling of nature.
+50.According to the passage, death is not the end of life, but rather
+(A)supports many forms of life.
+(B)borrows material from the Earth.
+(C)shows how bacteria become chemicals.
+(D)controls the amounts of soil.
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+49
+(D)
+—
+—
+50
+(A)
+—
+—
+答對率：該屆逐題數據未公開
+每一題的依據句
+第 49 題 細節題 Supporting details
+第 1 段The decomposers are a vital link in the natural cycle of life and death.
+原文最後說分解者是大自然生死循環中不可或缺的一環（a vital link），不是次要的角色，所以和原文不符的是 (D)。其他三個選項都和原文相符：細菌這類分解者把化學物質釋放出來，讓其他生物可以利用，是 (A)；分解的過程會釋放二氧化碳，是 (B)；沒有植物提供的氧氣和食物，動物都會餓死，是 (C)。
+第 50 題 推論題 Inference
+第 1 段The dead material and waste matter form the diet of a group of living organisms called decomposers.
+第 1 段making them available to other living things
+原文說死去的生物是分解者的食物，分解者再把化學物質釋放到空氣、土壤和水中，讓其他生物利用（available to other living things）；植物靠二氧化碳生長，動物又靠植物的氧氣和食物活下去。死亡養活了許多生命，所以是 (A)。(B) 照抄 borrow，原文說生物身上的化學物質是向地球借來的，死的時候是還回去，不是借；(C) 照抄 bacteria，細菌是分解者，原文沒有說細菌變成化學物質；(D) 照抄 soil，土壤是化學物質釋放的地方之一，原文沒有說死亡控制土壤的多寡。
+逐段中譯
+第 1 段所有生物最後都會死。用生態學的說法，生物身上的化學物質是向地球借來的，死的時候就還回去。每一種動物，從最小的蒼蠅到最大的大象，吃下去當作食物的東西，最後也都會變成排泄物，回到地球。死去的生物和排泄物，是一群叫做分解者的生物的食物。分解者包括各種細菌、真菌和小動物，它們把大自然的廢物分解成愈來愈小的碎片，直到所有化學物質都釋放到空氣、土壤和水中，讓其他生物可以利用。要是沒有這個過程釋放出來的二氧化碳，所有植物都會滅絕。要是沒有植物釋放的氧氣、沒有植物提供的食物，生命就會停擺，所有動物都會餓死。分解者是大自然生死循環中不可或缺的一環。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。
+第 1 段The decomposers are a vital link in the natural cycle of life and death.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體說明文 Expository
+組織方式因果關係 Cause-Effect這一類怎麼辨識 →
+關鍵轉折詞Without
+綱要
+(In ecological terms) 從生態學角度看，所有生物體的化學物質都從地球借來，死亡時歸還。
+(All the material that … also returns to the Earth, as) 所有動物攝取的食物也以廢物形式歸還地球。
+死物質和廢物是分解者的食物，(They include) 分解者（細菌、真菌、小動物）將其分解成更小物質。
+(until) 直到所有化學物質釋放到空氣、土壤和水中，供其他生物使用。
+(Without) 沒有分解過程釋放的二氧化碳，植物將滅絕；沒有植物提供的氧氣和食物，所有生命將停滯，(The decomposers are a vital link) 分解者是生命與死亡自然循環中的關鍵環節。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 8 個、參考字彙 6 個、字詞搭配 9 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+eventually （詞彙表：eventual）[ɪˈvɛnʧuəli]adv.最後、終究四級第 1 段詞彙題考過 4 次：111 學測第 8 題（答案）、110 指考第 6 題（誘答）、90 聯考第 15 題（誘答）、85 推薦甄選第 6 題 eventually（誘答）
+ecological[ˌɛkəˈlɑʤɪkəl]adj.生態的五級第 1 段詞彙題考過 1 次：106 指考第 9 題（答案）
+bacteria[bækˈtɪriə]n.細菌三級第 1 段詞彙題考過 1 次：94 學測第 13 題（誘答）
+release[rɪˈlis]v.釋放三級第 1 段詞彙題考過 2 次：98 指考第 3 題 released（誘答）、93 指考第 3 題（答案）
+process[ˈprɑsɛs]n.過程三級第 1 段詞彙題考過 4 次：100 學測第 8 題（答案）、96 指考第 2 題（誘答）、84 推薦甄選第 2 題（誘答）、81 聯考第 1 題（誘答）
+halt[hɔlt]n.停止（grind to a halt 停擺）四級第 1 段詞彙題考過 1 次：114 學測第 8 題 halted（答案）
+vital[ˈvaɪtəl]adj.不可或缺的、極重要的四級第 1 段詞彙題考過 1 次：90 學測第 7 題（答案）
+recycling （詞彙表：recycle）[rɪˈsaɪkəlɪŋ]n.循環、回收（the recycling of nature 大自然的循環）四級第 49 題詞彙題考過 1 次：94 學測第 3 題 recycles（答案）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+organism[ˈɔrgəˌnɪzəm]n.生物、有機體五級第 1 段
+decomposer[ˌdikəmˈpoʊzɚ]n.分解者表外第 1 段
+fungi[ˈfʌnʤaɪ]n.真菌（fungus 的複數）表外第 1 段
+carbon[ˈkɑrbən]n.碳（carbon dioxide 二氧化碳）五級第 1 段
+dioxide[daɪˈɑkˌsaɪd]n.二氧化物（carbon dioxide 二氧化碳）表外第 1 段
+decomposition[ˌdikəmpoʊˈzɪʃən]n.分解、腐爛表外第 49 題
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+in ecological terms從生態的角度來看第 1 段
+take in + N攝取……第 1 段原文：takes in as food
+waste matter廢物第 1 段
+break down A into B把 A 分解成 B第 1 段原文：break down nature’s wastes into ever smaller pieces
+make + N + available to + N讓……可以取得第 1 段原文：making them available to other living things
+die out滅絕第 1 段原文：all plant life would die out
+give out + N放出……第 1 段原文：the oxygen that plants give out
+grind to a halt慢慢停擺第 1 段原文：life would grind to a halt
+a vital link關鍵的一環第 1 段原文：The decomposers are a vital link
+← 上一篇篇目一覽下一篇 →
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

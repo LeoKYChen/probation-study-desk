@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g111-12-1/index.html
+Author: staresto-create ZZSH
+Title: 111 年學測克漏字第12題詳解（時態／語態）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 111 年學測 ／ 第12題
+111 年學測 克漏字 第12題
+時態／語態線索：句內答對率 56%
+答對率 56%：當年每 100 位考生，有 56 位答對。
+Since the 1970s, book towns like Hay on-Wye 12 up all over the world.
+(A)spring
+(B)sprang
+(C)had sprung
+(D)have been springing
+答案：(D) have been springing
+題目編號：G111_12_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+現在完成進行式 have been springing，配合 Since the 1970s（自從 1970 年代起，持續到現在），spring up 表示「湧現/興起」；spring（現在式，不符合持續性）、sprang（過去式）、had sprung（過去完成式，沒有更早的過去參照點）都不合。
+深入解析
+你可能會這樣想
+你看到 Since the 1970s 就知道要用完成式，但選項裡有 sprang（過去簡單式）、had sprung（過去完成式）、have been springing（現在完成進行式），三個都跟「過去」有關，一時分不出來。關鍵在 since：since + 過去時間點，只要事情從那個點一路延續到現在，主要子句就配現在完成式或現在完成進行式；過去完成式則要另有一個過去時間點當參照，講的是在那之前就已發生的事。
+怎麼判斷
+句意是「自 1970 年代以來，像海伊鎮這樣的書鎮在世界各地不斷冒出來」——這件事從 1970 年代開始，到現在還在發生，而且強調「不斷、持續」，所以用現在完成進行式 have been springing。動詞片語 spring up 是「如雨後春筍般湧現、興起」。
+誘答選項
+spring 是現在簡單式，只講常態，接不上 since 帶出的時間跨度；sprang 是過去簡單式，會把整件事關在過去、與現在無關，正好和 since 衝突；had sprung 是過去完成式，必須有「另一個更早的過去時間點」當參照，本句沒有這個參照點。看到 since + 過去時間，先把純過去式和過去完成式刪掉，選項通常就只剩一兩個。
+常考字詞與句型
+spring up（如雨後春筍般湧現）、since + 過去時間點（自從……以來）、have been V-ing（現在完成進行式，一直在……）、for + 一段時間（達……之久）、pop up（突然冒出來）、sustainable development（永續發展）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+A book town is a rural town in which second-hand and antiquarian bookshops are concentrated. The concept was 11 by Richard Booth, who opened the first second-hand bookshop in Hay-on-Wye, UK in 1961. Following him, many local people opened their own bookshops, and the small town soon became a model of sustainable rural development and tourism.
+Since the 1970s, book towns like Hay on-Wye 12 up all over the world. Although all book towns have a great number of bookshops, that's where the similarities 13 . Each of these towns shows unique features of its own. Some have many small private shops, while others have organizations steered by volunteers. Some even run regular activities to attract visitors. For example, an annual book festival is held in Hay-on-Wye. Clunes, in Australia, holds a monthly book talk that hosts authors to discuss their latest 14 .
+As digital reading is changing our traditional way of reading, book towns like Hay-on-Wye are particularly important to 15 . The feel of a book, the smell, the weight, and the knowledge that a particular book might be more than a hundred years old—all these highlight the importance of preserving the physical book as a complement to technology.
+中譯：書鎮是指一個集中了許多二手書店和古書店的鄉村小鎮。這個概念最早由理查·布斯提出，他於 1961 年在英國的海伊鎮開設了第一間二手書店。在他的帶動之下，許多當地居民也紛紛開設起自己的書店，這座小鎮很快便成為永續鄉村發展與觀光的典範。自 1970 年代起，像海伊鎮這樣的書鎮已在世界各地紛紛出現。雖然所有書鎮都擁有數量眾多的書店，但它們的共通點也就只有這一點——每個書鎮都各自展現出獨特的風貌：有些擁有許多小型私人書店，有些則由志工組織營運，甚至還會定期舉辦活動來吸引遊客。舉例來說，海伊鎮每年都會舉辦書展；澳洲的克倫斯鎮則每月舉行一場書籍座談，邀請作家分享他們的新作。隨著數位閱讀逐漸改變我們傳統的閱讀方式，像海伊鎮這樣的書鎮，對於保存紙本書籍顯得格外重要。書本的觸感、氣味、重量，以及知道某本書可能已有上百年歷史的那種感受——這一切都凸顯出，在科技發達的時代，保存實體書籍作為補充的重要性。
+📋 內容大意
+A book town is a country town full of second-hand and antiquarian bookshops. Richard Booth started the idea in 1961 with his shop in Hay-on-Wye.
+Local people then opened shops of their own. The town became a model of rural development and tourism, and similar towns have appeared worldwide since the 1970s.
+The towns are also different. Some have private shops. Others are run by volunteers. Some hold festivals or author talks. They matter more now that people read on screens.
+← 第11題回到111 年學測第13題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

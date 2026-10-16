@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g103-19-1/index.html
+Author: staresto-create ZZSH
+Title: 103 年學測克漏字第19題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 103 年學測 ／ 第19題
+103 年學測 克漏字 第19題
+字彙選義線索：句內答對率 74%
+答對率 74%：當年每 100 位考生，有 74 位答對。
+He too stopped and asked Aesop the same question. 19 , Aesop made the same request.
+(A)Again
+(B)Indeed
+(C)Together
+(D)Moreover
+答案：(A) Again
+題目編號：G103_19_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「再一次，伊索提出了同樣的要求」，Again（再次）符合這種重複情節的語境；Indeed（的確）、Together（一起）、Moreover（此外）都不合。
+深入解析
+你可能會這樣想
+四個選項都是副詞，都可以放句首再加逗號，文法上沒有一個能被刷掉，只剩語意可比。這時候容易挑 Moreover，因為它在考卷與範文裡出現得最多，看起來最像「用來承接上下文的正式用語」。
+怎麼判斷
+這一格與前一格是同一組線索，往前後各看一句就有答案。前一句：He too stopped and asked Aesop the same question.（他也停下來問了同樣的問題）——too 與 the same 兩個訊號都在講重複。本句：______, Aesop made the same request.（伊索提出了同樣的要求）又出現一次 the same。整段的重點是「同一件事再發生一次」，填 Again（再一次）最貼。判斷這類副詞不能只問「它能不能連接上下文」，要問「它標示的是哪一種關係」：Moreover 標示追加一個新的論點，Indeed 標示強化或確認前面說過的話，Together 標示兩個以上的人共同行動。本句沒有新論點、沒有需要被確認的主張，提出要求的也只有伊索一個人，三個都對不上。
+誘答選項
+Indeed（的確、確實）：用來確認或強化前一句的說法，前一句只是敘述動作，沒有主張要確認。Together（一起）：要有兩個以上的人共同做同一件事。Moreover（此外）：追加新資訊用，本句不是新資訊而是舊情節重演。
+常考字詞與句型
+again and again（一次又一次）、once again（再一次）、make a request（提出要求）、what is more（此外、而且）、the same as（與…相同）、time and again（屢次、再三）。其中 what is more 這一組考過 3 個年度，92 年第 27 題 →、115 年第 11 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Aesop, the Greek writer of fables, was sitting by the roadside one day when a traveler asked him what sort of people lived in Athens. Aesop replied, "Tell me where you come from and what sort of people live there, and I'll tell you what sort of people you'll find in Athens." 16 , the man answered, "I come from Argos, and there the people are all friendly, generous, and warm-hearted. I love them." 17 this, Aesop answered, "I'm happy to tell you, my dear friend, that you'll find the people of Athens much the same."
+A few hours later, 18 traveler came down the road. He too stopped and asked Aesop the same question. 19 , Aesop made the same request. But frowning, the man answered, "I'm from Argos and there the people are unfriendly, 20 , and vicious. They're thieves and murderers, all of them." "Well, I'm afraid you'll find the people of Athens much the same," replied Aesop.
+中譯：伊索——這位希臘寓言作家——有一天坐在路邊，一位旅人問他雅典住著什麼樣的人。伊索回答：「告訴我你從哪裡來、那裡的人是什麼樣子，我就能告訴你在雅典會遇到什麼樣的人。」旅人笑著回答：「我來自阿爾戈斯，那裡的人都很友善、慷慨又熱情，我很愛他們。」聽到這話，伊索說：「親愛的朋友，我很高興告訴你，雅典人也跟他們差不多。」幾小時後，另一位旅人沿路而來，也停下腳步問了伊索同樣的問題。伊索又提出了同樣的要求。這位旅人卻皺著眉頭回答：「我來自阿爾戈斯，那裡的人不友善、刻薄又惡毒，全都是小偷和殺人犯。」伊索回答：「嗯，恐怕你在雅典遇到的人也差不多。」
+📋 內容大意
+A traveler from Argos praised his hometown, and Aesop assured him he would find the people of Athens equally friendly.（敘事文）
+A second traveler complained bitterly about Argos, leading Aesop to tell him he would encounter the same hostility in Athens.（敘事文）
+← 第18題回到103 年學測第20題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,53 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z104-20/index.html
+Author: staresto-create ZZSH
+Title: 104 年指考克漏字第20題詳解（連接詞／轉折詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 104 年指考 ／ 第20題
+104 年指考 克漏字 第20題
+連接詞／轉折詞線索：跨句答對率 74%
+答對率 74%：當年每 100 位考生，有 74 位答對。
+Road running is often a community-wide event that highlights or raises money for an issue or project. 20 , Race for the Cure is held throughout the U.S. to raise breast cancer awareness.
+(A)Above all
+(B)For example
+(C)As it appears
+(D)To some extent
+答案：(B) For example
+題目編號：Z104_20（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【轉折詞】前句概括說明「路跑常是社區性活動，用以宣傳議題或募款」，後句以 Race for the Cure 為具體實例，故用 For example（舉例）承接。Above all（最重要的是）、As it appears（看來）、To some extent（在某種程度上）都不符合舉例語境。
+深入解析
+你可能會這樣想
+四個選項都是擺在句首的轉承說法，中文讀起來好像都能硬接，尤其 Above all（最重要的是）看起來像在加強語氣，很容易覺得說得通。
+怎麼判斷
+轉折詞是最好認的邏輯勾環，判斷方式只有一句——先看前一句在做什麼，再看這一句在做什麼，兩者的關係決定填哪一個。前一句 Road running is often a community-wide event that highlights or raises money for an issue or project.（路跑常是全社區的活動，用來凸顯某個議題或為某個計畫募款）講的是通則；這一句 Race for the Cure is held throughout the U.S. to raise breast cancer awareness. 端出來的是一個有名有姓的具體活動。從通則走到具體個案，就是 For example。順便把兩組容易混淆的分清楚：for example 與 for instance 是舉一個具體的例子；that is 與 in other words 是把同一件事換句話說，後面接的還是同一件事。（學測 89 年第 27 題 →與第 29 題 →把這兩組擺在同一篇裡考，可以對照著看。）同一篇的第 17 題其實也在做「先講通則再舉例」的事：because it {17} all ages and abilities 是通則，下一句的 first time amateurs 與 running club members 就是例子，只是那裡沒有用轉折詞標出來。有標記的與沒標記的都要讀得出來。
+誘答選項
+Above all（最重要的是）用來在好幾件事情裡挑出最重要的一件，但前文沒有列出一串事情讓你挑。As it appears（就目前看來）帶著「只是表面如此、未必確定」的口吻，而 Race for the Cure 是實際在美國各地舉辦的活動，不是看起來如此。To some extent（在某種程度上）是打折扣、退一步的說法，這一句沒有在讓步，是在正面舉證支持前一句。
+常考字詞與句型
+for example（舉例來說）、in other words（換句話說）、above all（最重要的是）、to some extent（在某種程度上）、raise money for（為……募款）、raise awareness（喚起大眾對某事的重視）。
+線索範圍說明：For example 為前一句「路跑常是社區活動」舉例
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：104學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Road running is one of the most popular and accessible athletic activities in the world. It refers to the sport of running on paved roads or established paths as opposed to track and field, or cross country running. The three most common 16 for road running events are 10K runs, half marathons (21.1K), and marathons (42.2K).
+Road running is unique among athletic events because it 17 all ages and abilities. In many cases first time amateurs are welcome to participate in the same event as running club members and even current world-class 18 . Sometimes it may also include wheelchair entrants.
+Road running often offers those 19 a range of challenges such as dealing with hills, sharp bends, rough weather, and so on. Runners are advised to train prior to participating in a race. Another important factor contributing to success is a suitable pair of running shoes.
+Road running is often a community-wide event that highlights or raises money for an issue or project. 20 , Race for the Cure is held throughout the U.S. to raise breast cancer awareness. This race is also run in Germany, Italy, and Puerto Rico.
+中譯：路跑是世界上最受歡迎、最容易參與的運動之一，指的是在鋪設道路或既定路徑上跑步，有別於田徑場或越野跑。路跑賽事最常見的三種距離是 10 公里賽、半程馬拉松（21.1 公里）與全程馬拉松（42.2 公里）。
+路跑在運動賽事中相當獨特，因為它適合各種年齡與能力的人參與。許多情況下，初次參賽的業餘跑者可以和跑步俱樂部成員，甚至當今世界級的冠軍選手一同參加同一場賽事，有時甚至會納入輪椅組選手。
+路跑經常為參與其中的人帶來各種挑戰，例如應付上下坡、急轉彎、惡劣天候等等。建議跑者在參賽前應先接受訓練，而一雙合適的跑鞋也是成功的重要因素之一。
+路跑通常是全社區性的活動，用以凸顯某項議題或為某項計畫募款。例如，「為治癒而跑」（Race for the Cure）在美國各地舉辦，以喚起大眾對乳癌的關注，這項賽事也在德國、義大利與波多黎各舉行。
+📋 內容大意
+Road running, held on paved roads, is among the world's most popular sports.
+Races are usually run over ten kilometers, the half marathon or the full marathon.
+Beginners, club members, elite athletes and wheelchair entrants may all join the same race.
+Hills, bends and weather test runners, and many races raise money for a cause.
+← 第19題回到104 年指考
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

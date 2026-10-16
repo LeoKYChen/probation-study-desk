@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g99-25-2/index.html
+Author: staresto-create ZZSH
+Title: 99 年學測克漏字第25題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 99 年學測 ／ 第25題
+99 年學測 克漏字 第25題
+字彙選義線索：句內答對率 44%
+答對率 44%：當年每 100 位考生，有 44 位答對。
+They also have an 25 flavor and a higher percentage of solids.
+(A)anxious
+(B)intense
+(C)organic
+(D)effective
+答案：(B) intense
+題目編號：G99_25_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「它們（儲存洋蔥）風味也更強烈」，intense（強烈的）符合，呼應後文適合辛辣料理；anxious（焦慮的）、organic（有機的）、effective（有效的）都不合。
+深入解析
+你可能會這樣想
+intense 在你腦中大概綁在情緒或壓力上（intense pressure、an intense person），很少想到它可以拿來形容味道。答對率只有四成四，超過一半的人失手，最容易選錯的是 organic——講到食材就想到「有機」，而且 organic onions 確實是有這種說法。
+怎麼判斷
+先看空格所在的結構：an ______ flavor and a higher percentage of solids。and 把兩件事並列，後面那件用的是比較級 higher，明顯是在和新鮮洋蔥比。既然是並列，前面那件也應該是「比新鮮洋蔥更…」的某種性質。再回頭找對照：前面說新鮮洋蔥 sweeter and milder tasting（更甜、更溫和）。既然兩種洋蔥處處相對，儲藏洋蔥的味道就該是更濃烈。往下一句還有第三道保險：storage onions are the best choice for spicy dishes that require longer cooking times or more flavor（適合需要久煮或口味更重的辛辣料理）。more flavor 直接對應 intense flavor。intense 的核心意思是「程度很強的」，用在情緒是「強烈的」，用在味道、顏色、光線就是「濃烈的」（劍橋詞典）。
+誘答選項
+anxious：焦慮的，形容人的情緒，不能形容味道。organic：有機的，講的是栽種方式，與味道的濃淡無關，也對不上前後的對比。effective：有效的，用來說某個方法管用，味道談不上有效不有效。
+常考字詞與句型
+an intense flavor（濃烈的風味）、intense pressure（極大的壓力）、intense heat（酷熱）、a higher percentage of（較高比例的…）、spicy dishes（辛辣的料理）、require longer cooking times（需要較長的烹煮時間）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Onions can be divided into two categories: fresh onions and storage onions. Fresh onions are available 21 yellow, red and white throughout their season, March through August. They can be 22 by their thin, light-colored skin. Because they have a higher water content, they are typically sweeter and milder tasting than storage onions. This higher water content also makes 23 easier for them to bruise. With its delicate taste, the fresh onion is an ideal choice for salads and other lightly-cooked dishes.
+Storage onions, on the other hand, are available August through April. 24 fresh onions, they have multiple layers of thick, dark, papery skin. They also have an 25 flavor and a higher percentage of solids. For these reasons, storage onions are the best choice for spicy dishes that require longer cooking times or more flavor.
+中譯：洋蔥可分為兩大類：新鮮洋蔥和儲藏洋蔥。新鮮洋蔥在 3 月到 8 月的產季期間，有黃、紅、白等各種顏色可供選擇，可以透過薄而顏色淺的外皮來辨識。由於含水量較高，新鮮洋蔥口感通常比儲藏洋蔥更甜、更溫和，但也因此更容易碰傷。新鮮洋蔥味道細緻，很適合用來做沙拉或其他輕度烹調的料理。儲藏洋蔥則是 8 月到隔年 4 月供應，與新鮮洋蔥不同，它們有好幾層厚實、深色、如紙般的外皮，味道也更濃烈，固形物比例也較高。因此，儲藏洋蔥最適合用在需要長時間烹煮或口味較重的辛辣料理中。
+📋 內容大意
+Fresh onions, available from March through August, have a higher water content and milder taste, making them ideal for light cooking and salads.
+Storage onions have thicker skin and stronger flavor, which makes them better suited for long-cooked, highly seasoned dishes.
+← 第24題回到99 年學測第26題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

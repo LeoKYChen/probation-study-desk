@@ -1,0 +1,4715 @@
+[
+ {
+  "id": "PCA-g110p2",
+  "year": "（一）",
+  "accuracyRateSource": null,
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "護照的演變（The Evolution of the Passport）",
+  "flagNote": "本題庫改編練習：文章改編自 110 年學測閱讀測驗〈護照的歷史〉，照現行學測文意選填的版面出題（第 21–30 題，10 選 10），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "options": {
+   "A": "open",
+   "B": "subjects",
+   "C": "requesting",
+   "D": "standard",
+   "E": "authorities",
+   "F": "inland",
+   "G": "medieval",
+   "H": "described",
+   "I": "mention",
+   "J": "earned"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：旅行文件的概念自古就有，最早的記載在西元前 450 年",
+    "segs": [
+     [
+      "The concept of a travel document, which shows that a person is under a ruler’s protection while in a foreign land, has probably existed ever since the first rulers and states arose.",
+      "thesis"
+     ],
+     [
+      " But",
+      "trans"
+     ],
+     [
+      " the earliest",
+      "topic"
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      "of an object we might recognize as a passport dates from about 450 B.C.",
+      "topic"
+     ],
+     [
+      " The Hebrew Bible states that Nehemiah, an official serving King Artaxerxes of ancient Persia, asked permission to travel to Judah. The king agreed and gave Nehemiah a letter “to the governors of the province beyond the river,”",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      "safe passage for him as he traveled through their lands.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】中世紀伊斯蘭國家：繳稅收據當通行證",
+    "segs": [
+     [
+      "Centuries later",
+      "trans"
+     ],
+     [
+      ", in the",
+      "topic"
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      "period, the Islamic Caliphate used a form of passport called the bara’a, which was simply a receipt for taxes paid.",
+      "topic"
+     ],
+     [
+      " Only those who had settled their taxes",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      "the right to journey from one region of the Caliphate to another, so the receipt worked much like a travel pass.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】中世紀歐洲：地方核發文件，前往海港不需要，往內陸才需要",
+    "segs": [
+     [
+      "Europe in the Middle Ages",
+      "topic"
+     ],
+     [
+      ", on the other hand,",
+      "trans"
+     ],
+     [
+      " took a different approach.",
+      "topic"
+     ],
+     [
+      " There, travel documents were issued by local",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      "and generally contained a list of the towns and cities that the holder was allowed to enter or pass through.",
+      null
+     ],
+     [
+      " On the whole",
+      "trans"
+     ],
+     [
+      ", no papers were needed to reach seaports, which were regarded as",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      "trading points that anyone could enter. Traveling",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      "from a seaport,",
+      null
+     ],
+     [
+      " however",
+      "trans"
+     ],
+     [
+      ", did require documents.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】結語：亨利五世發明真正的護照，一次大戰才成為通行規定",
+    "segs": [
+     [
+      "King Henry V of England is credited with having invented the first true passport, as a way of helping his",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      "prove who they were in foreign lands. These documents were first",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      "in a 15th-century Act of Parliament,",
+      null
+     ],
+     [
+      " though",
+      "trans"
+     ],
+     [
+      " the Act did not yet call them “passports”; that term came into use about a century later.",
+      null
+     ],
+     [
+      " Even so",
+      "trans"
+     ],
+     [
+      ", passports did not become a",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      "requirement for international travel until the First World War. Only then did the passport take the form we know today.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“The concept of a travel document, which shows that a person is under a ruler’s protection while in a foreign land, has probably existed ever since the first rulers and states arose.”",
+  "thesisExplain": "護照看起來是現代人的東西，這篇開頭卻說，證明「我受統治者保護」的旅行文件，大概和國家一樣古老。全文的中心思想就是第一句，接下來照年代往下走，一個例子一個例子替它舉證：第一段後半是西元前 450 年波斯國王寫給省長的信，後面三段依序是中世紀伊斯蘭國家的繳稅收據、中世紀歐洲由地方核發的通行文件，最後是英王亨利五世發明的第一本真正的護照。結尾再用 Even so 轉一下，說護照到第一次世界大戰才成為出國的通行規定，正好和開頭呼應：概念很早就有，形式卻換了好幾次。寫作上，「先下一句總論，再依時間舉例」是寫某樣東西的來歷最穩的寫法，年代一路往後推，讀者不會迷路。",
+  "macro": {
+   "structure": "時序發展型 — 引言(旅行文件的概念和國家一樣古老，全文中心思想；最早的記載在西元前450年，波斯國王的信) → 中世紀伊斯蘭國家(繳稅收據當通行證) → 中世紀歐洲(地方當局核發文件，前往海港不需要、往內陸才需要) → 結語(亨利五世發明真正的護照，一次大戰才成為國際旅行的通行規定)",
+   "transitions": "But（轉折，從抽象的概念轉到最早的實物記載）→ Centuries later（時序推進，跳到中世紀）→ on the other hand（對比，同一時期歐洲的做法不同）→ On the whole（總括，前往海港一般不需要文件）→ however（對比，往內陸就需要文件）→ though（讓步，法案記載了這種文件，卻還沒用 passport 這個詞）→ Even so（讓步，護照雖然早就有了，卻到一次大戰才普遍規定）",
+   "outline": [
+    "1. 引言：證明受統治者保護的旅行文件，概念大概和國家一樣古老(全文中心思想)；最早的記載在西元前450年，波斯國王給 Nehemiah 一封信，請河那邊的省長讓他安全通行",
+    "2. 中世紀伊斯蘭國家：繳稅收據 bara’a 當通行證，繳清稅款才取得在各地區之間往來的資格",
+    "3. 中世紀歐洲：地方當局核發文件，列出可通行的城鎮；前往海港不需要文件，往內陸才需要",
+    "4. 結語：亨利五世發明第一本真正的護照，15 世紀的國會法案最早記載，passport 一詞約一百年後才出現，一次大戰才成為國際旅行的通行規定"
+   ],
+   "patterns": "說明文 (Expository) + 時序發展 (Chronological)"
+  },
+  "zhTranslation": [
+   "旅行文件用來證明一個人身在異地時仍受統治者保護，這個概念大概從世上出現第一批統治者和國家時就有了。不過，最早有記載、稱得上是護照的東西，可以追溯到西元前 450 年左右。根據希伯來聖經的記載，為古波斯國王 Artaxerxes 效力的官員 Nehemiah，請求准許他前往猶大。國王答應了，交給 Nehemiah 一封寫給「河那邊各省省長」的信，請他們在 Nehemiah 經過領土時讓他安全通行。",
+   "許多個世紀以後，到了中世紀，伊斯蘭哈里發國用的一種護照叫做 bara’a，其實就是一張繳稅的收據。只有繳清稅款的人，才取得從哈里發國的一個地區前往另一個地區的資格，所以這張收據的作用就和通行證差不多。",
+   "另一方面，中世紀的歐洲採取了不同的做法。在那裡，旅行文件由地方當局核發，上面通常列出持有人可以進入或通過的城鎮。大致來說，前往海港不需要任何文件，因為大家把海港看成開放的貿易據點，誰都可以進去。不過，要是從海港往內陸走，就真的需要文件了。",
+   "一般認為英王 Henry V 發明了第一本真正的護照，用來幫助他的子民在國外證明自己的身分。這種文件最早記載在 15 世紀的一項國會法案裡，不過法案還沒有把它們叫做 passport（護照），這個詞大約一百年後才開始使用。即使如此，一直到第一次世界大戰，護照才成為國際旅行的通行規定，也是從那時候起，護照才有了我們今天熟悉的樣子。"
+  ],
+  "internalNote": "第三百六十一場建檔。改編自 g110p2；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+ },
+ {
+  "id": "PCA-g101p3",
+  "year": "（二）",
+  "accuracyRateSource": null,
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "叉子上桌記（How the Fork Reached the Table）",
+  "flagNote": "本題庫改編練習：文章改編自 101 年學測閱讀測驗〈餐叉的演進史〉，照現行學測文意選填的版面出題（第 21–30 題，10 選 10），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "options": {
+   "A": "prized",
+   "B": "gap",
+   "C": "catch on",
+   "D": "ridiculed",
+   "E": "steady",
+   "F": "courts",
+   "G": "awkward",
+   "H": "diners",
+   "I": "encountered",
+   "J": "blade"
+  },
+  "paras": [
+   {
+    "label": "【第一段】起源：古希臘廚房裡切肉用的兩齒叉",
+    "segs": [
+     [
+      "Forks trace their origins back to the ancient Greeks, yet many centuries passed before they became the dining tools we know today.",
+      "gradient"
+     ],
+     [
+      " The Greek forks were fairly large, with two tines, and they belonged in the kitchen rather than at the table. Cooks used them to",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      "meat while carving it. Pinned in place by the tines, the meat could not twist or shift under the knife. A finished slice",
+      null
+     ],
+     [
+      " also",
+      "trans"
+     ],
+     [
+      " slid off the fork more easily than it would off a",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      ".",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】傳播：從中東宮廷經拜占庭、義大利傳到法國",
+    "segs": [
+     [
+      "By the 7th century A.D.",
+      "trans"
+     ],
+     [
+      ", forks had moved from the kitchen to the dining table in the royal",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      "of the Middle East.",
+      null
+     ],
+     [
+      " From the 10th through the 13th centuries",
+      "trans"
+     ],
+     [
+      ", they were fairly common among the wealthy in Byzantium.",
+      null
+     ],
+     [
+      " In the 11th century",
+      "trans"
+     ],
+     [
+      ", a Byzantine wife brought forks to Italy;",
+      null
+     ],
+     [
+      " however",
+      "trans"
+     ],
+     [
+      ", it was not until the 16th century that they started to",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      "there.",
+      null
+     ],
+     [
+      " Then in 1533",
+      "trans"
+     ],
+     [
+      ", forks crossed from Italy into France. The French were just as slow to accept them,",
+      null
+     ],
+     [
+      " because",
+      "trans"
+     ],
+     [
+      " they found it",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      "to eat with a fork.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】英國：起初受人嘲笑，後來成為富人的身分象徵",
+    "segs": [
+     [
+      "In 1608",
+      "trans"
+     ],
+     [
+      ", Thomas Coryate brought forks to England, having",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      "them in use during his travels in Italy.",
+      null
+     ],
+     [
+      " At first",
+      "trans"
+     ],
+     [
+      ", the English",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      "the fork as needless. “Why should a person need a fork when God had given him hands?” they asked.",
+      null
+     ],
+     [
+      " Slowly",
+      null
+     ],
+     [
+      ", however",
+      "trans"
+     ],
+     [
+      ", the wealthy took up forks as a symbol of their social status. Made of expensive materials and meant to impress guests, these forks were",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      "possessions.",
+      null
+     ],
+     [
+      " By the mid-1600s",
+      "trans"
+     ],
+     [
+      ", dining with forks had become fashionable among the British elite.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】改良：四齒彎叉解決食物掉落的問題，再傳到美國",
+    "segs": [
+     [
+      "Early table forks were modeled after kitchen forks, so small bits of food often fell through the",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      "between the two tines or slipped off.",
+      null
+     ],
+     [
+      " In late-17th-century France",
+      "trans"
+     ],
+     [
+      ", larger forks with four curved tines were developed to solve the problem. The additional tines made",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      "less likely to drop their food, and the curve allowed the fork to serve as a scoop, so people no longer had to keep switching to a spoon while eating.",
+      null
+     ],
+     [
+      " By the early 19th century",
+      "trans"
+     ],
+     [
+      ", four-tined forks had also appeared in Germany and England and slowly began to spread to America.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Forks trace their origins back to the ancient Greeks, yet many centuries passed before they became the dining tools we know today.”",
+  "thesisExplain": "這篇照年代講叉子的歷史，統攝全文的是開頭這一句。前半說叉子的起點在古希臘，後半用 yet 一轉，說叉子要再過好幾百年才成為今天的餐具；至於這幾百年裡發生了什麼事，就由接下來的內容交代：第一段後半先說古希臘的叉子還是廚房裡切肉的工具；第二段講叉子從中東宮廷上了餐桌，再傳到義大利、法國，卻推廣得很慢；第三段講英國人從嘲笑叉子，到拿叉子顯示身分；第四段回到叉子本身，講四齒彎叉的改良。讀的時候抓住段首的時間片語，就跟得上這條時間線。寫作上，要寫一樣東西怎麼演變，也可以先用一句話交代起點和現在，再照年代展開。",
+  "macro": {
+   "structure": "時序演進型 — 引言(起源於古希臘、歷經數百年才成為餐具，全文中心思想) → 傳播(中東宮廷、拜占庭、義大利、法國) → 英國(從嘲笑到身分象徵) → 改良(四齒彎叉，再傳到德、英，並開始傳到美國)",
+   "transitions": "By the 7th century A.D.（時間，叉子上了餐桌）→ however（讓步轉折，傳到義大利卻遲遲沒有流行）→ Then in 1533（時間承接，傳入法國）→ because（原因，法國人覺得彆扭）→ At first／however（對比，英國人從嘲笑到接受）→ By the mid-1600s（時間，成為時尚）→ In late-17th-century France（時間，四齒叉問世）→ By the early 19th century（時間，傳到德、英，再開始傳到美國）",
+   "outline": [
+    "1. 引言：叉子起源於古希臘，但要再過好幾百年才成為今天的餐具(全文中心思想)；當時是廚房切肉用的兩齒叉",
+    "2. 傳播：七世紀中東宮廷用叉子進餐，再經拜占庭傳到義大利、法國，兩地都很慢才接受",
+    "3. 英國：1608 年傳入，起初受人嘲笑，後來富人拿叉子顯示身分，1600 年代中期成為時尚",
+    "4. 改良：兩齒叉容易掉食物，十七世紀末法國發展出四齒彎叉，十九世紀初傳到德、英，並開始慢慢傳到美國"
+   ],
+   "patterns": "說明文 (Expository) + 時序發展 (Chronological)"
+  },
+  "zhTranslation": [
+   "叉子的起源可以追溯到古希臘人，不過還要再過好幾百年，叉子才成為我們今天熟悉的餐具。古希臘的叉子相當大，只有兩根叉齒，而且是放在廚房裡用的，不是擺在餐桌上的。廚師切肉的時候，用叉子把肉固定住。叉齒把肉釘牢了，刀子切下去，肉就不會扭動或移位。切好的肉片從叉子上滑下來，也比從刀刃上滑下來容易。",
+   "到了西元七世紀，在中東的王室宮廷裡，叉子已經從廚房搬上了餐桌。十到十三世紀，叉子在拜占庭的富人之間相當普遍。十一世紀時，一位嫁到義大利的拜占庭女子把叉子帶了過去；不過，一直要到十六世紀，叉子才在義大利流行起來。接著在 1533 年，叉子從義大利傳進法國。法國人接受叉子的速度一樣很慢，因為他們覺得用叉子吃飯很彆扭。",
+   "1608 年，英國人 Thomas Coryate 把叉子帶回英國，他是在義大利旅行時看到當地人用叉子的。英國人起初嘲笑叉子是多餘的東西。他們問：「上帝都給了人一雙手，人為什麼還需要叉子？」不過，富人慢慢用起叉子，把叉子當作社會地位的象徵。這些叉子用昂貴的材料做成，為的是讓客人留下深刻的印象，是主人珍視的寶貝。到了 1600 年代中期，用叉子吃飯在英國上流社會已經成為一種時尚。",
+   "早期的餐叉是照著廚房用的叉子做的，所以小塊食物常常從兩根叉齒之間的空隙掉下去，或是乾脆滑落。十七世紀末，法國發展出比較大、有四根彎曲叉齒的叉子，解決了這個問題。多了叉齒，用餐的人比較不容易讓食物掉下來；彎曲的叉齒還可以當杓子用，吃東西時就不必一直換成湯匙。到了十九世紀初，德國和英國也出現了四齒叉，並且開始慢慢傳到美國。"
+  ],
+  "internalNote": "第三百六十一場建檔。改編自 g101p3；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+ },
+ {
+  "id": "PCA-g90p1",
+  "year": "（三）",
+  "accuracyRateSource": null,
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "洋芋片的意外誕生（The Accidental Birth of the Potato Chip）",
+  "flagNote": "本題庫改編練習：文章改編自 90 年學測閱讀測驗〈洋芋片的意外發明〉，照現行學測文意選填的版面出題（第 21–30 題，10 選 10），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "options": {
+   "A": "fed up",
+   "B": "slices",
+   "C": "brought back",
+   "D": "remains",
+   "E": "fashionable",
+   "F": "chore",
+   "G": "assume",
+   "H": "favorite",
+   "I": "reject",
+   "J": "crisp"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：洋芋片其實是意外的產物",
+    "segs": [
+     [
+      "Believe it or not, the potato chip is America's best-loved snack food. Most people would",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      "that some brilliant inventor thought it up. That,",
+      null
+     ],
+     [
+      " however",
+      "trans"
+     ],
+     [
+      ", is not how it happened.",
+      null
+     ],
+     [
+      " In fact",
+      "trans"
+     ],
+     [
+      ", the chip came about by accident, thanks to an angry cook and a customer who was hard to please.",
+      "gradient"
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】背景：1853 年高級餐廳的炸薯條",
+    "segs": [
+     [
+      "Picture one of the most",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      "restaurants in Saratoga Springs, New York, in 1853. Its menu featured French-fried potatoes, a popular dish that Thomas Jefferson had",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      "from France. These were thickly cut potatoes, fried until they turned golden brown and",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      "on the outside.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】經過：挑剔的客人與賭氣的廚師",
+    "segs": [
+     [
+      "One evening",
+      "trans"
+     ],
+     [
+      ", a diner complained that his potatoes were too thick and sent them back to the kitchen. The cook cut a fresh batch thinner than before, only to have the guest",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      "them as well.",
+      null
+     ],
+     [
+      " By this time",
+      "trans"
+     ],
+     [
+      " the cook was",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      ". Determined to give the man exactly what he wanted, he shaved the potatoes as thin as he possibly could, so that they would come out too brittle to be eaten with a fork.",
+      null
+     ],
+     [
+      " To the cook's surprise",
+      "trans"
+     ],
+     [
+      ", the diner was delighted with the paper-thin",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      ", and before long other guests were ordering them too.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】發展：從一家餐廳傳遍全世界",
+    "segs": [
+     [
+      "Saratoga Chips soon earned a spot on the menu and became such a",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      "that diners asked to take some home. The restaurant began selling the chips in small packages, and within a few years they were sold all over the United States.",
+      null
+     ],
+     [
+      " Because",
+      "trans"
+     ],
+     [
+      " every potato had to be peeled by hand,",
+      null
+     ],
+     [
+      " however",
+      "trans"
+     ],
+     [
+      ", making them was a time-consuming",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      ", and the chips were often out of stock.",
+      null
+     ],
+     [
+      " In the 1920s",
+      "trans"
+     ],
+     [
+      ", a mechanical peeler was invented, and only then did chips become plentiful.",
+      null
+     ],
+     [
+      " From there",
+      "trans"
+     ],
+     [
+      " the snack gradually spread around the world, and to this day it",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      "as popular as ever.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“In fact, the chip came about by accident, thanks to an angry cook and a customer who was hard to please.”",
+  "thesisExplain": "洋芋片是誰發明的？第一段先擺出一般人的想像，接著用 however 推翻，再用 In fact 說出真相：洋芋片其實是意外的產物，起因是一位生氣的廚師和一位難伺候的客人。這一句先把後面三段要講的事情交代好了：第二段介紹 1853 年那家高級餐廳和厚切的炸薯條，是故事的背景；第三段寫客人兩次退回薯條，廚師賭氣把馬鈴薯削得像紙一樣薄，沒想到客人反而很滿意；第四段順著時間往下寫，洋芋片從一家餐廳賣到全美國，等削皮機發明以後又傳到全世界。至於 an angry cook 和 hard to please 這兩個描述，也都在第三段找得到對應的情節。寫作上，記敘文開頭先用一句話點出「事情和你想的不一樣」，讀者會帶著好奇往下讀，比從頭平鋪直敘更能引起興趣。",
+  "macro": {
+   "structure": "意外起源型 — 引言(洋芋片不是天才的發明，而是意外的產物，全文中心思想) → 背景(1853年高級餐廳與厚切炸薯條) → 經過(客人兩度退回、廚師賭氣削成薄片，反而大受歡迎) → 發展(從一家餐廳賣到全美，削皮機發明後普及全球)",
+   "transitions": "however（對比，推翻一般人的想像）→ In fact（強調，說出真相，帶出全文中心思想）→ One evening（時間，故事開場）→ By this time（時間，廚師的怒氣累積到頂點）→ To the cook's surprise（對比，結果和廚師的盤算相反）→ Because（原因，手工削皮費時）→ however（對比，大受歡迎卻受限於手工削皮）→ In the 1920s（時間，削皮機帶來轉機）→ From there（承接，從美國傳到全世界）",
+   "outline": [
+    "1. 引言：洋芋片是美國人最愛的零食，卻不是天才想出來的，而是一位生氣的廚師和一位難伺候的客人促成的意外(全文中心思想)",
+    "2. 背景：1853年紐約州 Saratoga Springs 的時髦餐廳，供應 Thomas Jefferson 從法國帶回的厚切炸薯條",
+    "3. 經過：客人兩度退回薯條，廚師受夠了，把馬鈴薯削得極薄，客人反而非常滿意，其他客人也開始點這道菜",
+    "4. 發展：洋芋片賣到全美，但手工削皮費時常缺貨；1920年代削皮機發明後供應充足，傳遍全世界至今"
+   ],
+   "patterns": "記敘文 (Narrative) + 時序發展 (Chronological)"
+  },
+  "zhTranslation": [
+   "信不信由你，洋芋片是美國人最愛的零食。大多數人會以為，是哪位聰明的發明家想出了洋芋片。然而，事情並不是這樣發生的。事實上，洋芋片是意外誕生的，起因是一位生氣的廚師和一位難伺候的客人。",
+   "想像一下 1853 年，紐約州 Saratoga Springs 一家數一數二的時髦餐廳。餐廳供應炸薯條，這道受歡迎的菜是 Thomas Jefferson 從法國帶回來的。這種薯條切得很厚，炸到外表金黃酥脆。",
+   "有一天晚上，一位客人抱怨他的薯條太厚，把薯條退回廚房。廚師重新做了一盤，切得比之前薄，沒想到客人連這一盤也退了回來。到了這時候，廚師已經受夠了。他決心完全照這位客人的要求做，把馬鈴薯削得要多薄有多薄，好讓炸出來的薯片脆到沒辦法用叉子吃。出乎廚師意料，客人對這些薄得像紙一樣的薯片非常滿意，沒多久，其他客人也開始點這道菜。",
+   "不久，Saratoga Chips 成了店裡的固定菜色，而且成了大家的最愛，客人還要求帶一些回家。於是餐廳開始用小包裝販賣洋芋片，幾年之內，美國各地都買得到。不過，因為每一顆馬鈴薯都得用手削皮，做洋芋片成了一件費時的苦差事，洋芋片也常常缺貨。到了 1920 年代，有人發明了削皮機，洋芋片這才供應充足。從那時起，洋芋片逐漸流傳到世界各地，直到今天仍然和以前一樣受歡迎。"
+  ],
+  "internalNote": "第三百六十一場建檔。改編自 g90p1；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+ },
+ {
+  "id": "PCA-z110p2",
+  "year": "（四）",
+  "accuracyRateSource": null,
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "餐廳的誕生（The Birth of the Restaurant）",
+  "flagNote": "本題庫改編練習：文章改編自 110 年指考閱讀測驗〈餐廳的起源與發展〉，照現行學測文意選填的版面出題（第 21–30 題，10 選 10），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "options": {
+   "A": "rise",
+   "B": "harsh",
+   "C": "privilege",
+   "D": "ushering",
+   "E": "elegant",
+   "F": "developed",
+   "G": "scene",
+   "H": "afford",
+   "I": "byproduct",
+   "J": "mediocre"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：餐廳是法國大革命階級鬥爭的副產品",
+    "segs": [
+     [
+      "France gave birth to the restaurant, though hardly in a civilized way.",
+      null
+     ],
+     [
+      " In fact",
+      "trans"
+     ],
+     [
+      ", today’s restaurant business is a",
+      "gradient"
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      "of the class warfare that arose during the French Revolution.",
+      "gradient"
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】革命前：貴族獨享美食，清湯熱潮催生第一批餐廳",
+    "segs": [
+     [
+      "Back in the Middle Ages",
+      "trans"
+     ],
+     [
+      ", fine dining was a",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      "reserved for noble families, who had grand kitchens and personal chefs of their own. Ordinary people, ",
+      null
+     ],
+     [
+      "by contrast",
+      "trans"
+     ],
+     [
+      ", could eat out only at dusty, shabby roadside inns, where strangers crowded around",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      "buffets of lukewarm roasts and over-sauced beans.",
+      null
+     ],
+     [
+      " But sometime in the 1760s",
+      "trans"
+     ],
+     [
+      ", the merchant class of Paris",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      "a taste for healthy clear broths that were believed to be restorative—hence the word “restaurant.”",
+      null
+     ],
+     [
+      " By the 1780s",
+      "trans"
+     ],
+     [
+      ", this new Parisian “healthy food” craze had led to a handful of reputable dining halls, where customers could sit at their own tables and choose from a wide range of dishes.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】革命爆發：民不聊生，暴動揭開法國大革命的序幕",
+    "segs": [
+     [
+      "Ironically",
+      "trans"
+     ],
+     [
+      ", these dining halls grew popular at a time when most of the French population could not",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      "bread. Decades of",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      "winters and oppressive taxation had taken their toll on kitchen tables, and by 1789 the starving masses could no longer be controlled. Looting and riots broke out across Paris,",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      "in the French Revolution.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】革命之後：貴族出逃，失業廚師開出高級餐廳",
+    "segs": [
+     [
+      "Rich nobles fled to the countryside, leaving behind their highly skilled chefs and the fine wines stored in their cellars. Suddenly out of work, these cooks found their way to the city’s eateries, and within a year nearly 50",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      "restaurants had popped up in Paris.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第五段】結語：拿破崙時代餐飲業興盛，巴黎成為中心",
+    "segs": [
+     [
+      "The restaurant business truly came into its own in the early 1800s, after General Napoleon seized control of the country.",
+      "topic"
+     ],
+     [
+      " He granted “freedom of pleasure” to every citizen, reasoning that people absorbed in champagne and fine food would hardly conspire against him. The number of restaurants began to",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      "sharply.",
+      null
+     ],
+     [
+      " By 1814",
+      "trans"
+     ],
+     [
+      ", a popular travel guide listed about three thousand of them. Paris had become the center of a new restaurant",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      ", and to some degree it remains so today.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“In fact, today’s restaurant business is a ___ of the class warfare that arose during the French Revolution.”",
+  "thesisExplain": "一般人想到法國餐廳，想到的是精緻和優雅，這篇卻一開頭就說它的來歷「一點也不文明」。中心思想落在第一段第二句，關鍵在第 21 格：今天的餐飲業，是大革命階級鬥爭附帶生出來的東西。後面四段照年代往下走，每一段都在回答「怎麼生出來的」：革命前，美食是貴族專屬，清湯熱潮才帶出幾家像樣的餐廳；革命爆發時，飢荒和苛稅逼得群眾暴動；貴族出逃以後，留下的廚師進城開店；到了拿破崙時代，餐廳越開越多，巴黎成了餐飲重鎮。也就是說，第一段先擺出結論，後面再用時間順序把因果補齊。寫作上，要交代一件事的來歷，可以先用一句話點出它出人意料的源頭，再照年代往下鋪。",
+  "macro": {
+   "structure": "時序因果型 — 引言(餐廳是大革命階級鬥爭的副產品，全文中心思想) → 革命前(貴族獨享美食、平民只有路邊旅店、清湯熱潮帶出第一批餐廳) → 革命爆發(嚴冬與苛稅造成飢荒，暴動揭開大革命序幕) → 革命後(貴族出逃，失業廚師進城開出高級餐廳) → 結語(拿破崙時代餐廳數量大增，巴黎成為餐飲中心)",
+   "transitions": "In fact（強調，點出餐飲業的真正來歷）→ Back in the Middle Ages（時間，回到中世紀）→ by contrast（對比，貴族與平民的用餐處境）→ But sometime in the 1760s（轉折兼時間，清湯熱潮出現）→ By the 1780s（時間，第一批餐廳成形）→ Ironically（對比，餐廳受歡迎的同時人民買不起麵包）→ By 1814（時間，餐廳數量的佐證）",
+   "outline": [
+    "1. 引言：餐廳誕生在法國，卻是大革命階級鬥爭的副產品(全文中心思想)",
+    "2. 革命前：中世紀美食是貴族的特權，平民只能去路邊旅店；1760 年代清湯熱潮出現，1780 年代有了幾家有名的餐廳",
+    "3. 革命爆發：多數人買不起麵包，嚴冬與苛稅讓群眾挨餓，1789 年暴動四起，揭開法國大革命的序幕",
+    "4. 革命之後：貴族逃往鄉下，留下的廚師進城工作，一年內巴黎冒出將近 50 家高級餐廳",
+    "5. 結語：拿破崙給人民「享樂的自由」，餐廳數量大增，巴黎成為餐飲中心，至今如此"
+   ],
+   "patterns": "說明文 (Expository) + 時序發展 (Chronological)"
+  },
+  "zhTranslation": [
+   "餐廳誕生在法國，誕生的過程卻一點也不文明。事實上，今天的餐飲業，是法國大革命期間階級鬥爭的副產品。",
+   "早在中世紀，精緻的餐飲是貴族家庭專屬的特權，他們有自己的大廚房，也有私人廚師。相較之下，一般人要在外面吃飯，只能去塵土滿布、破舊簡陋的路邊旅店，陌生人擠在一起，圍著普普通通的自助餐，吃不冷不熱的烤肉和醬汁太多的豆子。不過，大約在 1760 年代，巴黎的商人階級愛上了健康的清湯，大家相信這種湯能恢復元氣（restorative），「restaurant」（餐廳）這個字就是這樣來的。到了 1780 年代，這股巴黎新興的「健康飲食」熱潮，帶動了幾家有名的餐廳，客人可以坐在自己的那一桌用餐，從許多菜色中挑選。",
+   "諷刺的是，這些餐廳越來越受歡迎的時候，大多數法國人卻連麵包都買不起。數十年的嚴冬和沉重的苛稅，讓一般人家的餐桌越來越空，到了 1789 年，飢餓的群眾已經再也控制不住了。巴黎各地發生搶劫和暴動，揭開了法國大革命的序幕。",
+   "有錢的貴族逃到鄉下，留下了技術高超的廚師和酒窖裡的好酒。這些廚師一下子丟了工作，紛紛進了城裡的餐館，不到一年，巴黎就冒出了將近 50 家高級餐廳。",
+   "19 世紀初，拿破崙將軍掌控法國以後，餐飲業才真正蓬勃發展。他給每一個公民「享樂的自由」，因為他認為，一心想著香檳和美食的人，大概不會密謀推翻他。餐廳的數量開始急劇增加，到了 1814 年，一本受歡迎的旅遊指南就列了大約三千家餐廳。巴黎成了新興餐飲圈的中心，而且在某種程度上，到今天仍然是。"
+  ],
+  "internalNote": "第三百六十一場建檔。改編自 z110p2；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+ },
+ {
+  "id": "PCA-g108p3",
+  "year": "（五）",
+  "accuracyRateSource": null,
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "腦中神曲（Earworms）",
+  "flagNote": "本題庫改編練習：文章改編自 108 年學測閱讀測驗〈「腦中神曲」現象〉，照現行學測文意選填的版面出題（第 21–30 題，10 選 10），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "options": {
+   "A": "neutral",
+   "B": "fragments",
+   "C": "report",
+   "D": "intrudes",
+   "E": "catchy",
+   "F": "minority",
+   "G": "embedded",
+   "H": "hits",
+   "I": "loop",
+   "J": "stick"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：旋律卡在腦中一再重播，科學家稱為耳蟲",
+    "segs": [
+     [
+      "Music has a tendency to get stuck in our heads.",
+      "gradient"
+     ],
+     [
+      " Every so often, a tune",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      "on our thoughts without warning. Once inside, it plays, and replays, in a never-ending",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      "that may last anywhere from a few minutes to several hours. Scientists who study this curious phenomenon have given it a range of names—stuck-song syndrome, cognitive itch, and, most commonly, “earworm.” With each repetition, the melody grows more deeply",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      "in the mind, so the brain keeps playing it even when the ears hear nothing at all.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】特徵與成因：哪些歌容易變成耳蟲、什麼情境會引發耳蟲",
+    "segs": [
+     [
+      "Earworms seldom consist of entire songs.",
+      null
+     ],
+     [
+      " Instead",
+      "trans"
+     ],
+     [
+      ", they often take the form of song",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      "and typically come from a tune we already know. Researchers still cannot say why certain songs",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      "in the mind more readily than others, and everyone seems to have a personal playlist of them. The likeliest candidates pair a simple, upbeat melody with repetitive lyrics that are",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      "and easy to remember. Commercial jingles and slightly annoying radio",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      "are prime examples.",
+      null
+     ],
+     [
+      " In addition",
+      "trans"
+     ],
+     [
+      ", recent or repeated exposure to a song, or even to a small part of one, can set off an earworm, and so can word associations, such as overhearing a phrase that sounds like a line from a song.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】感受與應對：多數人不以為苦，應付方式取決於感受",
+    "segs": [
+     [
+      "While",
+      "trans"
+     ],
+     [
+      " earworms might be annoying, they are not necessarily unwelcome. Many people who get them",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      "finding the experience pleasant. Others feel",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      "about the tune, neither delighted nor upset. Only a",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      "of listeners, roughly one in three, are truly bothered by the music in their heads. How people cope with an earworm seems to depend on how they feel about it: those who welcome the song are content to just “let it be,” whereas those who resent it fight back by singing, talking, or even praying.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Music has a tendency to get stuck in our heads.”",
+  "thesisExplain": "一首歌明明沒在播，腦子裡卻停不下來。開頭這一句就是全文的中心思想：音樂有卡在腦中的傾向。後面的內容都在說明這句話：第一段先描述旋律怎麼闖進思緒、怎麼一再重播，再交代科學家給這個現象的名稱，也就是「耳蟲」；第二段說哪些歌最容易變成耳蟲，又有哪些情境會把它引出來；第三段轉到人的感受，許多人覺得愉快，也有人覺得無所謂，只有大約三分之一的人感到困擾，至於怎麼應付，則要看各人對耳蟲的感受。寫作上，第一句先用一個簡短的通則把現象說出來，接著一段一段回答「它是什麼、哪些歌、人怎麼反應」，讀者讀完第一句，就知道整篇要談什麼。",
+  "macro": {
+   "structure": "現象說明型 — 引言(音樂會卡在腦中，全文中心思想；耳蟲的描述與名稱) → 特徵與成因(容易變成耳蟲的歌、引發耳蟲的情境) → 感受與應對(多數人不以為苦，應付方式取決於感受)",
+   "transitions": "Instead（對比，從「很少是整首歌」轉到耳蟲常見的樣子）→ In addition（追加，從歌本身的特徵轉到引發耳蟲的情境）→ While（讓步，先承認耳蟲惱人，再帶出多數人並不排斥）",
+   "outline": [
+    "1. 引言：旋律闖進思緒、一再重播，科學家稱這個現象為「耳蟲」(全文中心思想)",
+    "2. 特徵與成因：耳蟲多是熟悉歌曲的片段，旋律簡單、歌詞好記的歌最容易卡住；最近或反覆聽到一首歌、字詞的聯想，都可能引發耳蟲",
+    "3. 感受與應對：許多人覺得愉快，也有人無所謂，只有約三分之一的人困擾；應付的方式取決於感受"
+   ],
+   "patterns": "說明文 (Expository) + 現象解釋 (Phenomenon Explanation)"
+  },
+  "zhTranslation": [
+   "音樂很容易卡在腦子裡。三不五時就有一段旋律毫無預警地闖進我們的思緒；它一旦進來，就不停播放、重播，沒完沒了，可能持續幾分鐘，也可能長達好幾個小時。研究這個奇特現象的科學家給了它各式各樣的名稱：卡歌症候群、認知搔癢，最常見的則是「耳蟲」。旋律每重複一次，就在腦海裡嵌得更深，所以即使耳朵什麼也沒聽到，大腦還是繼續播放。",
+   "耳蟲很少是整首歌，常常是歌曲的片段，而且多半是我們早就熟悉的曲子。研究人員至今還說不出為什麼有些歌比其他歌更容易留在腦中，而每個人似乎都有一份自己的耳蟲歌單。最可能變成耳蟲的歌，旋律簡單輕快，歌詞一再重複，又朗朗上口、容易記住。廣告歌曲和有點煩人的電台熱門歌曲，就是最典型的例子。此外，最近聽過或反覆聽到一首歌，甚至只是歌曲的一小段，都可能引發耳蟲；字詞的聯想也會，例如無意間聽到一句很像某首歌歌詞的話。",
+   "耳蟲雖然可能惱人，卻不見得讓人討厭。許多有過耳蟲的人表示，這種經驗很愉快；也有人覺得無所謂，既不特別高興，也不心煩。只有少數聽者，大約三分之一，真正因為腦中的音樂感到困擾。人們怎麼應付耳蟲，似乎取決於他們對耳蟲的感受：喜歡這首歌的人樂得「隨它去」；討厭它的人則會反擊，唱歌、說話，甚至祈禱。"
+  ],
+  "internalNote": "第三百六十一場建檔。改編自 g108p3；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+ },
+ {
+  "id": "PCA-g104p4",
+  "year": "（六）",
+  "accuracyRateSource": null,
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "久坐病的危害（The Dangers of Sitting Disease）",
+  "flagNote": "本題庫改編練習：文章改編自 104 年學測閱讀測驗〈「久坐病」的危害〉，照現行學測文意選填的版面出題（第 21–30 題，10 選 10），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "options": {
+   "A": "creeping",
+   "B": "remedy",
+   "C": "linking",
+   "D": "effective",
+   "E": "reserves",
+   "F": "regularly",
+   "G": "slows",
+   "H": "deadly",
+   "I": "counteracted",
+   "J": "bursts"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：久坐和多種疾病有關，專家稱為「久坐病」",
+    "segs": [
+     [
+      "You've most likely heard the news by now: a lifestyle built around commuting by car, working at a desk, and watching TV can be harmful to our health.",
+      null
+     ],
+     [
+      " Researchers are increasingly",
+      "gradient"
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      "the long hours we spend rooted in our chairs to a host of health problems.",
+      "gradient"
+     ],
+     [
+      " In fact",
+      "trans"
+     ],
+     [
+      ", the list includes so many",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      "diseases that experts have named this modern-day health epidemic the “sitting disease.”",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】機制：久坐讓代謝變慢、血糖血壓上升，進而傷害血管",
+    "segs": [
+     [
+      "When we sit for hours on end, the body's metabolism",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      "down. So does the rate at which enzymes break down our fat",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      ".",
+      null
+     ],
+     [
+      " As a result",
+      "trans"
+     ],
+     [
+      ", blood sugar levels and blood pressure both start to climb. If we stay seated, these numbers keep",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      "upward, steadily damaging the inside of the arteries and driving up the risk of diabetes, heart disease, stroke, and other serious conditions.",
+      null
+     ],
+     [
+      " In essence",
+      "trans"
+     ],
+     [
+      ", sitting too long brings about fundamental changes in our biology.",
+      "topic"
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】好消息：零星的輕度活動累積起來就有效",
+    "segs": [
+     [
+      "The good news is that small amounts of activity spread throughout the day, even just standing up and moving around, are enough to bring those levels back down.",
+      "topic"
+     ],
+     [
+      " Better yet",
+      "trans"
+     ],
+     [
+      ", such activity adds up, even when it comes in",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      "of only two or three minutes. Thirty minutes of light movement broken up in this way can be just as",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      "as a single half-hour block of exercise.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】轉折：規律運動也抵銷不了久坐的傷害",
+    "segs": [
+     [
+      "But wait",
+      "trans"
+     ],
+     [
+      "—you're a runner.",
+      null
+     ],
+     [
+      " Since",
+      "trans"
+     ],
+     [
+      " you exercise",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      ", you don't need to worry about the harm of a sedentary lifestyle, right? Well, not so fast. Recent studies show that people spend an average of 64 hours a week sitting, whether or not they get the 150 minutes of weekly exercise recommended by the World Health Organization (WHO). Regular exercisers,",
+      null
+     ],
+     [
+      " furthermore",
+      "trans"
+     ],
+     [
+      ", turn out to be about 30 percent less active on the days they work out.",
+      null
+     ],
+     [
+      " Overall",
+      "trans"
+     ],
+     [
+      ", for most people, all the harm that comes from sitting nine or more hours a day is simply not",
+      "topic"
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      "by the exercise and moving around they do.",
+      "topic"
+     ]
+    ]
+   },
+   {
+    "label": "【第五段】結語：解決方法就是站起來動一動",
+    "segs": [
+     [
+      "Scared straight out of your chair? Good. The",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      "is as simple as standing up and taking short activity breaks throughout the day.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Researchers are increasingly ___ the long hours we spend rooted in our chairs to a host of health problems.”",
+  "thesisExplain": "每天坐著通勤、上班、看電視，聽起來再平常不過，這篇要說的正是這份平常背後的代價。中心思想落在第一段第二句，關鍵在第 21 格：這一格的動詞和後面的 to 合起來，把「坐在椅子上的時間」和「各種健康問題」連在一起，後面每一段都在說這個連結從哪裡來、能不能解開。第二段講身體裡的變化，用 In essence 收成一句；第三段給好消息，零星的活動累積起來就有效；第四段用 But wait 反駁「有運動就沒事」的想法，再用 Overall 把話題拉回久坐的傷害；結尾交出辦法。寫作上，「現象、原因、反駁誤解、給辦法」是說明文很穩的骨架，寫健康習慣的題目都用得上。",
+  "macro": {
+   "structure": "問題解決型 — 引言(久坐和多種疾病有關，專家稱為久坐病，全文中心思想) → 機制(代謝變慢、血糖血壓上升、傷害動脈) → 好消息(零星的輕度活動累積起來就有效) → 破除迷思(規律運動也抵銷不了久坐的傷害) → 結語(站起來、常活動)",
+   "transitions": "In fact（強調，帶出「久坐病」這個名稱）→ As a result（結果，代謝變慢導致血糖血壓上升）→ In essence（總結，第二段收成一句）→ Better yet（追加，零星活動也會累積）→ But wait（對比，反駁「有運動就沒事」的想法）→ Since（原因，帶出「有運動就不必擔心」的假設）→ furthermore（追加第二項研究發現）→ Overall（總結，運動和走動都抵銷不了久坐的傷害）",
+   "outline": [
+    "1. 引言：開車通勤、久坐辦公、看電視的生活有害健康，研究把久坐和許多健康問題連在一起，致命疾病多到專家稱為「久坐病」(全文中心思想)",
+    "2. 機制：久坐讓新陳代謝和分解脂肪的速度變慢，血糖血壓上升，持續下去會損害動脈、提高糖尿病和心臟病等風險",
+    "3. 好消息：一天當中少量的活動就能讓數值降回來，每次兩三分鐘、累積 30 分鐘，效果可能和一次運動半小時一樣好",
+    "4. 破除迷思：有沒有運動，人們平均每週都坐 64 小時，規律運動的人在運動當天活動量反而較少，平常的運動和走動抵銷不了久坐的傷害",
+    "5. 結語：解決方法就是站起來，常找空檔活動一下"
+   ],
+   "patterns": "說明文 (Expository) + 問題解決 (Problem-Solution)"
+  },
+  "zhTranslation": [
+   "你現在大概已經聽說了：開車通勤、整天坐在辦公桌前、回家看電視，這樣的生活方式可能有害健康。研究人員越來越常把我們長時間黏在椅子上這件事，和許多健康問題連在一起。事實上，清單裡的致命疾病多到專家乾脆替這種現代流行病取了個名字，叫做「久坐病」。",
+   "一連坐上好幾個小時，身體的新陳代謝就會變慢；酵素分解體內儲存脂肪的速度也一樣變慢。結果血糖和血壓都開始升高。如果我們一直坐著不動，這些數值就會持續慢慢往上爬，不斷損害動脈內壁，也提高了糖尿病、心臟病、中風和其他重大疾病的風險。說到底，坐太久會讓身體在生理上產生根本的變化。",
+   "好消息是，一整天裡只要零零星星有少量活動，即使只是站起來走動一下，就足以讓這些數值降回來。更好的是，這些活動會累積起來，就算每次只有短短兩三分鐘也算數。像這樣拆成幾段、加起來 30 分鐘的輕度活動，效果可能和一次做完半小時的運動一樣好。",
+   "不過等等，你有在跑步。既然你有規律運動，就不必擔心久坐不動的生活方式帶來的傷害，對吧？嗯，先別急著下結論。最近的研究顯示，不論有沒有達到世界衛生組織（WHO）建議的每週 150 分鐘運動量，人們平均每週都要坐上 64 個小時。此外，研究還發現，規律運動的人在有運動的那幾天，活動量反而少了大約 30%。整體來說，大多數人每天坐九個小時以上造成的種種傷害，靠平常的運動和走動根本抵銷不了。",
+   "嚇得從椅子上跳起來了嗎？很好。解決的辦法很簡單，就是站起來，在一天當中常常找空檔活動一下。"
+  ],
+  "internalNote": "第三百六十一場建檔。改編自 g104p4；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+ },
+ {
+  "id": "PCA-g107p3",
+  "year": "（七）",
+  "accuracyRateSource": null,
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "把海水變成飲用水（Turning Seawater into Drinking Water）",
+  "flagNote": "本題庫改編練習：文章改編自 107 年學測閱讀測驗〈海水淡化〉，照現行學測文意選填的版面出題（第 21–30 題，10 選 10），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "options": {
+   "A": "exhausting",
+   "B": "bonds",
+   "C": "pressing",
+   "D": "harm",
+   "E": "plants",
+   "F": "supply",
+   "G": "viable",
+   "H": "consumes",
+   "I": "race",
+   "J": "concentrated"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：人口成長，淡水日漸短缺",
+    "segs": [
+     [
+      "Most parts of Taiwan have access to sufficient fresh water for drinking. In many arid regions such as Saudi Arabia, ",
+      null
+     ],
+     [
+      "however",
+      "trans"
+     ],
+     [
+      ", water resources are limited, and fresh water can be in short",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      ". As the world's population continues to grow, water shortages will occur more often, and the need for additional sources of water will become",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      ". Some may ask, “Since the ocean covers more than 70 percent of the Earth, why not just get our drinking water from the sea?”",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】問題一：淡化耗能，成本高昂",
+    "segs": [
+     [
+      "Turning seawater into fresh water requires removing the salt it contains, a process known as desalination. The trouble is that desalination",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      "a huge amount of energy. Salt dissolves easily in water, forming strong chemical",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      "that are difficult to break. ",
+      null
+     ],
+     [
+      "Since",
+      "trans"
+     ],
+     [
+      " both the energy and the technology involved are expensive, desalinated water can be costly.",
+      "topic"
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】問題二：海洋生物與濃鹽水的環境代價",
+    "segs": [
+     [
+      "Desalination carries environmental costs",
+      "topic"
+     ],
+     [
+      " as well",
+      "trans"
+     ],
+     [
+      ".",
+      "topic"
+     ],
+     [
+      " Marine life can get sucked into desalination",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      "and killed there. The loss of baby fish, plankton, and other tiny creatures throws the food chain off balance. ",
+      null
+     ],
+     [
+      "Also",
+      "trans"
+     ],
+     [
+      ", there is the question of what to do with the salt once it has been taken out. What remains is a highly",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      "brine. Pumping this super-salty water back into the sea can",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      "local aquatic life. Reducing these impacts is possible, but doing so adds to the costs.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】結語：困難重重，淡化仍越來越受重視",
+    "segs": [
+     [
+      "Despite",
+      "trans"
+     ],
+     [
+      " these economic and environmental hurdles, desalination is looking increasingly attractive as human beings are steadily",
+      "gradient"
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      "the fresh water available from other sources.",
+      "gradient"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "At present",
+      "trans"
+     ],
+     [
+      ", desalinating seawater is the only",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      "means of providing water for the growing populations in rural parts of the Middle East and North Africa. ",
+      null
+     ],
+     [
+      "Therefore",
+      "trans"
+     ],
+     [
+      ", the",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      "is on to develop a cheaper, cleaner, and more energy-efficient method of desalination, and promising new findings are being reported.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Despite these economic and environmental hurdles, desalination is looking increasingly attractive as human beings are steadily ___ the fresh water available from other sources.”",
+  "thesisExplain": "這篇文章前三段都在講難處：淡水不夠用，淡化既耗能又花錢，還會傷害海洋生態，讀到這裡，很容易以為作者不看好海水淡化。第四段第一句先用 Despite 承認這些難處，再轉到作者真正要說的話：其他水源正在用盡，淡化反而越來越有吸引力。這一句就是全文的中心思想，關鍵落在第 28 格。至於後面兩句，一句說淡化是中東、北非鄉村唯一的供水辦法，一句說各方正在競相研發更好的方法，都在支持這個結論。寫作上，「先承認困難，再用 Despite 帶出立場」是常用的結尾寫法，讀者看得出作者考慮過反面的理由，結論也就更有說服力。",
+  "macro": {
+   "structure": "問題解決型 — 引言(人口成長、淡水短缺，提出取用海水的想法) → 問題一(淡化耗能，成本高) → 問題二(吸入海洋生物、濃鹽水排回海中，傷害生態) → 結語(儘管困難重重，淡化越來越受重視，各方競相研發，全文中心思想)",
+   "transitions": "however（對比，台灣淡水充足，乾旱地區卻缺水）→ Since（原因，能源與技術都昂貴，所以淡化成本高）→ as well（追加，從經濟成本推到環境代價）→ Also（追加，第二項環境問題：濃鹽水）→ Despite（讓步，承認障礙後轉回淡化的價值，帶出全文中心思想）→ At present（時間，說明目前的處境）→ Therefore（結果，帶出研發競賽）",
+   "outline": [
+    "1. 引言：台灣淡水充足，沙烏地阿拉伯等乾旱地區卻缺水，人口成長使需求更迫切，有人問何不取用海水",
+    "2. 問題一：淡化要去除鹽分，鹽在水中形成難以打斷的化學鍵，耗能又昂貴，所以淡化的成本高",
+    "3. 問題二：淡化廠吸入海洋生物，使食物鏈失衡；濃鹽水排回海中傷害水中生物，降低影響又要增加成本",
+    "4. 結語：其他水源漸漸用盡，淡化越來越有吸引力(全文中心思想)，是中東、北非鄉村唯一可行的供水辦法，各方競相研發更便宜、乾淨、節能的方法"
+   ],
+   "patterns": "說明文 (Expository) + 問題解決 (Problem-Solution)"
+  },
+  "zhTranslation": [
+   "台灣大部分地方都有充足的淡水可以飲用。不過，在沙烏地阿拉伯這類乾旱地區，水資源有限，淡水可能供應不足。隨著世界人口持續成長，缺水的情形會越來越常發生，開發更多水源的需求也會變得非常迫切。有些人可能會問：「既然海洋覆蓋了地球百分之七十以上的面積，為什麼不乾脆從海裡取得飲用水呢？」",
+   "要把海水變成淡水，就得去除海水裡的鹽分，這個過程叫做海水淡化。問題是，海水淡化要消耗大量能源。鹽很容易溶解在水中，形成很強、很難打斷的化學鍵。由於所需的能源和技術都很昂貴，淡化後的水成本可能很高。",
+   "海水淡化也有環境上的代價。海洋生物可能隨著海水吸進淡化廠，死在廠裡。小魚、浮游生物和其他微小生物一旦死去，食物鏈就會失去平衡。另外，鹽分取出來之後要怎麼處理，也是個問題。剩下來的是濃度極高的鹽水，把這種超鹹的水抽回海裡，可能會傷害當地的水中生物。要降低這些影響是做得到的，但是會增加成本。",
+   "儘管有這些經濟與環境上的障礙，隨著人類漸漸用盡其他來源的淡水，海水淡化看起來越來越有吸引力。目前在中東和北非的鄉村地區，人口日漸增加，要供應他們用水，淡化海水是唯一可行的辦法。因此，各方競相研發更便宜、更乾淨、更節能的淡化方法，令人振奮的新發現也陸續出現。"
+  ],
+  "internalNote": "第三百六十一場建檔。改編自 g107p3；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+ },
+ {
+  "id": "PCA-z104p3",
+  "year": "（八）",
+  "accuracyRateSource": null,
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "海豚互叫名字（Dolphins Call Each Other by Name）",
+  "flagNote": "本題庫改編練習：文章改編自 104 年指考閱讀測驗〈瓶鼻海豚用哨聲互叫名字〉，照現行學測文意選填的版面出題（第 21–30 題，10 選 10），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "options": {
+   "A": "bonds",
+   "B": "captive",
+   "C": "recognizes",
+   "D": "address",
+   "E": "signature",
+   "F": "missing",
+   "G": "conduct",
+   "H": "conversation",
+   "I": "associates",
+   "J": "separated"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：科學家相信海豚會互叫「名字」",
+    "segs": [
+     [
+      "Imagine two bottlenose dolphins swimming in the Gulf of Mexico. From each of them comes a series of clicks, whistles, and whines, much like a",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      ".",
+      null
+     ],
+     [
+      " We cannot be sure what the pair are discussing, but scientists do believe that dolphins call one another by “name.”",
+      "topic"
+     ],
+     [
+      " A recent study suggests that each of these marine mammals produces its own unique",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      "whistle.",
+      null
+     ],
+     [
+      " Moreover",
+      "trans"
+     ],
+     [
+      ", a dolphin not only",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      "the whistles of others it is close to and wants to see again but also mimics them. It seems that a dolphin can call a companion simply by copying that companion’s distinct sound. “They’re abstract names,” said Randall Wells, one of the researchers behind the study.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】研究方法：野生與人工飼養海豚的哨聲錄音",
+    "segs": [
+     [
+      "To",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      "the study, the researchers listened to recordings, made around Florida’s Sarasota Bay from 1984 to 2009, of about 250 wild bottlenose dolphins. The study also included four",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      "dolphins living at a nearby aquarium. Some of the wild dolphins were caught for a short time and held in individual nets, which allowed them to hear but not see one another.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】研究發現：熟識的海豚分開時會模仿對方的哨聲",
+    "segs": [
+     [
+      "The researchers found that dolphins familiar with each other would copy the whistle of a group member when the two were",
+      "topic"
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      "by the nets.",
+      "topic"
+     ],
+     [
+      " Most of this took place between mothers and calves or among males who were close",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      ", suggesting that the behavior was friendly rather than hostile. This is somewhat like calling out the name of a child or friend who has gone",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      ".",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】比較：和人類語言裡的聲音模仿相似，和鳥類不同",
+    "segs": [
+     [
+      "Whistle copying of this kind resembles vocal copying in human language,",
+      "topic"
+     ],
+     [
+      " since",
+      "trans"
+     ],
+     [
+      " for both, keeping social",
+      "topic"
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      "strong appears to matter more than the immediate defense of resources.",
+      "topic"
+     ],
+     [
+      " In this respect",
+      "trans"
+     ],
+     [
+      ", dolphins differ from birds, which tend to call to one another in a more “aggressive context.”",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第五段】結語：自然界少見的溝通層次",
+    "segs": [
+     [
+      "If confirmed, the finding would mean that dolphins show a level of communication rarely found in nature.",
+      "gradient"
+     ],
+     [
+      " If dolphins can identify themselves and",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      "their friends by name with just a few squeaks, it is easy to imagine what else they might be saying.",
+      null
+     ],
+     [
+      " However",
+      "trans"
+     ],
+     [
+      ", as the study’s authors point out, all we can do for now is imagine.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“If confirmed, the finding would mean that dolphins show a level of communication rarely found in nature.”",
+  "thesisExplain": "海豚會不會叫彼此的名字？全文從墨西哥灣兩隻海豚的「對話」寫起，接著交代研究怎麼做、發現了什麼，到最後一段才把意義說出來：如果得到證實，這項發現代表海豚的溝通層次在自然界很少見。往前看，第一段的專屬哨聲、第三段熟識的海豚分開時互相模仿、第四段拿人類語言裡的聲音模仿和鳥類來比，都在替「少見的溝通層次」累積證據；第二段則交代研究怎麼取得錄音、怎麼把海豚隔開。至於 If confirmed 這個條件，作者特地保留下來，最後一句 all we can do for now is imagine 也和它前後呼應，也就是說，作者從頭到尾都把它當成有待證實的推論。寫作上，這是先擺證據、到結尾才下結論的寫法；結論前加一個條件，讀者就知道研究還沒有定案。",
+  "macro": {
+   "structure": "研究報導型 — 引言(海豚會互叫名字、每隻都有專屬哨聲) → 研究方法(野生與人工飼養海豚的錄音、分網隔開) → 研究發現(熟識的海豚分開時模仿對方哨聲) → 比較(和人類語言裡的聲音模仿相似、和鳥類不同) → 結語(自然界少見的溝通層次，全文中心思想)",
+   "transitions": "Moreover（追加，從自己的專屬哨聲推進到模仿同伴的哨聲）→ since（原因，說明模仿哨聲和人類語言裡的聲音模仿相似之處：都重在維繫關係）→ In this respect（承接，就「重在維繫關係」這一點，帶出和鳥類的差異）→ However（轉折，結尾提醒目前仍只能想像）",
+   "outline": [
+    "1. 引言：兩隻瓶鼻海豚像在對話，科學家相信海豚會叫彼此的「名字」；每隻海豚有專屬哨聲，也會模仿親近同伴的哨聲",
+    "2. 研究方法：分析 1984 到 2009 年間約 250 隻野生海豚和 4 隻水族館海豚的錄音，並把部分野生海豚分網隔開",
+    "3. 研究發現：熟識的海豚分開時會模仿對方的哨聲，多半發生在母子或親近的公海豚之間，屬於友善的舉動",
+    "4. 比較：模仿哨聲和人類語言裡的聲音模仿相似，重在維繫關係；鳥類則比較會在具有攻擊性的情境下呼叫彼此",
+    "5. 結語：如果得到證實，這將是自然界少見的溝通層次(全文中心思想)，但目前仍只能想像"
+   ],
+   "patterns": "說明文 (Expository) + 現象解釋 (Phenomenon Explanation)"
+  },
+  "zhTranslation": [
+   "想像兩隻瓶鼻海豚在墨西哥灣裡游著。牠們各自發出一連串喀噠聲、哨聲和嗚咽聲，聽起來很像在對話。我們沒辦法確定這兩隻海豚在討論什麼，不過科學家確實相信，海豚會叫彼此的「名字」。最近一項研究指出，這種海洋哺乳動物每一隻都會發出自己獨一無二的專屬哨聲。此外，海豚不但認得出親近、想再見面的同伴的哨聲，還會模仿這些哨聲。看來海豚只要模仿同伴特有的聲音，就能呼喚對方。參與這項研究的 Randall Wells 說：「這些是抽象的名字。」",
+   "為了進行這項研究，研究人員聽了大約 250 隻野生瓶鼻海豚的錄音，這些錄音是 1984 年到 2009 年在佛羅里達州薩拉索塔灣（Sarasota Bay）一帶錄下的。研究對象也包括附近一座水族館裡 4 隻人工飼養的海豚。研究團隊把一些野生海豚短暫捉起來，分別放進不同的網子裡，讓牠們聽得到、卻看不到彼此。",
+   "研究人員發現，彼此熟識的海豚隔著網子分開的時候，會模仿同一群裡那隻同伴的哨聲。這種情形大多發生在母海豚和小海豚之間，或是關係密切的公海豚夥伴之間，可見這是友善的舉動，不是敵意。這有點像大聲喊著走失的孩子或朋友的名字。",
+   "這種模仿哨聲的做法，和人類語言裡的聲音模仿很像，因為對兩者來說，維繫緊密的情誼，似乎比立即保衛資源更重要。在這一點上，海豚和鳥類不同，鳥類比較會在「具有攻擊性的情境」下呼叫彼此。",
+   "如果得到證實，這項發現就代表海豚的溝通層次在自然界很少見。如果海豚只用幾聲吱吱叫，就能表明自己的身分、叫出朋友的名字，也就不難想像牠們可能還說了哪些別的事情。不過，就像這項研究的作者指出的，目前我們能做的，仍然只是想像。"
+  ],
+  "internalNote": "第三百六十一場建檔。改編自 z104p3；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+ },
+ {
+  "id": "PCA-z106p2",
+  "year": "（九）",
+  "accuracyRateSource": null,
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "小小免費圖書館（Little Free Library）",
+  "flagNote": "本題庫改編練習：文章改編自 106 年指考閱讀測驗〈迷你免費圖書館的創立與影響〉，照現行學測文意選填的版面出題（第 21–30 題，10 選 10），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "options": {
+   "A": "comfortable",
+   "B": "post",
+   "C": "stocked",
+   "D": "reach",
+   "E": "inclined",
+   "F": "swap",
+   "G": "sparked",
+   "H": "curiosity",
+   "I": "accessible",
+   "J": "reads"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：露台上的一個木箱，發展成全球性的運動",
+    "segs": [
+     [
+      "Todd Bol, a retired businessman, could never have imagined what would come of the wooden container he built on his deck one day in 2009.",
+      null
+     ],
+     [
+      " That small homemade project has since grown into a movement with truly global",
+      "gradient"
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      ".",
+      "gradient"
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】起源：紀念母親的小書屋催生了 LFL",
+    "segs": [
+     [
+      "Bol’s creation was a dollhouse-size structure that resembled a schoolhouse. He mounted the little house on a",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      "and stood it on his lawn as a free community library in memory of his mother, a book lover and former schoolteacher. That humble prototype",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      "the founding of Little Free Library (LFL).",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】組織：小小免費圖書館的理念與規模",
+    "segs": [
+     [
+      "LFL is a nonprofit organization that seeks to put small,",
+      "topic"
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      "book exchange boxes in neighborhoods around the world.",
+      "topic"
+     ],
+     [
+      " Its concept is simple: neighbors are invited to take a book, leave a book, or",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      "one for another.",
+      null
+     ],
+     [
+      " Today",
+      "trans"
+     ],
+     [
+      ", more than 50,000 of these libraries are registered in 70 countries.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】運作：登記條件、各具特色的外觀、編號與招牌",
+    "segs": [
+     [
+      "Almost anyone can register with LFL and start a library, as long as the box is kept in good shape and",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      "with books that are appropriate for the neighborhood.",
+      null
+     ],
+     [
+      " Because",
+      "trans"
+     ],
+     [
+      " owners are free to design their own, the libraries usually look unlike one another, and the possibilities seem endless. One in California was built out of a used wine crate; another in Texas had tiny stairs and brightly colored walls. Once registered, each library is given a number on LFL’s website, where the LFL Index lists its location along with GPS coordinates and other information. Owners",
+      null
+     ],
+     [
+      " also",
+      "trans"
+     ],
+     [
+      " receive a sign that",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      "“Little Free Library.”",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第五段】影響：讓人拿起書，也讓鄰居熟起來",
+    "segs": [
+     [
+      "Passersby say they have become more",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      "to pick up a book when they walk past one of these little libraries. Part of the appeal is simple",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      "; the rest is convenience. Some sidewalk librarians add that they have met more neighbors since setting up a library in their front yard. Bol,",
+      null
+     ],
+     [
+      " too",
+      "trans"
+     ],
+     [
+      ", is proud of the way Little Free Library is bringing communities together. “It’s started a neighborhood exchange. It gets people talking and more",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      "with their neighbors,” he says. “This leads to them helping each other.”",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“That small homemade project has since grown into a movement with truly global ___.”",
+  "thesisExplain": "一個退休商人在自家露台上做的木箱，後來發展成遍布七十個國家的運動。這篇的中心思想就在第一段第二句，關鍵落在第 21 格：前一句先說 Bol 自己 could never have imagined（怎麼也想不到），這一句再把結果說出來，一小一大之間的落差，就是全文要講的事。後面四段照這個落差展開：第二段回到起點，那只是一個紀念母親的小書屋；第三段講它催生的組織，還有五萬多座的規模；第四段說幾乎人人都能登記設一座；第五段回到一條街上的鄰里，人們比較常拿起書，鄰居之間也熟了起來。寫作上，「先寫當事人沒料到，再寫結果有多大」是很能引起好奇的開頭，寫一件事的來龍去脈時可以照這樣起筆。",
+  "macro": {
+   "structure": "由小見大型 — 引言(露台上的木箱發展成全球性的運動，全文中心思想) → 起源(紀念母親的小書屋原型) → 組織(LFL 的理念與規模) → 運作(登記條件、各具特色的外觀、編號與招牌) → 影響(讓人拿起書，也拉近鄰里關係)",
+   "transitions": "Today（時間推移，帶出今日的規模）→ Because（原因，說明外觀為什麼通常各不相同）→ also（追加，主人另外收到招牌）→ too（追加，Bol 和設置書箱的人有同樣的感受）",
+   "outline": [
+    "1. 引言：退休商人 Todd Bol 2009 年在露台上做的木箱，發展成全球性的運動(全文中心思想)",
+    "2. 起源：像校舍的玩具屋大小書箱，立在草坪上紀念愛書又當過老師的母親，催生了 LFL",
+    "3. 組織：LFL 是非營利組織，在世界各地的社區設置換書箱，如今 70 國登記超過五萬座",
+    "4. 運作：幾乎人人都能登記，只要維護良好、書籍適合社區；外觀各具特色，登記後有編號、GPS 座標與招牌",
+    "5. 影響：路人出於好奇與方便更常拿起書，設置者認識更多鄰居，Bol 也很自豪社區因此凝聚"
+   ],
+   "patterns": "說明文 (Expository) + 時序發展 (Chronological)"
+  },
+  "zhTranslation": [
+   "2009 年的某一天，退休商人 Todd Bol 在自家露台上做了一個木箱，當時他怎麼也想不到，這個木箱後來會帶來什麼。這個自己動手做的小東西，如今已經發展成一場影響遍及全球的運動。",
+   "Bol 做的是一個玩具屋大小、外形像一間校舍的小屋。他把這間小屋裝在一根柱子上，立在自家草坪上，當作免費的社區圖書館，用來紀念他的母親。他的母親愛書，也當過學校老師。這個不起眼的原型，促成了「小小免費圖書館」（Little Free Library，LFL）的成立。",
+   "LFL 是一個非營利組織，目標是在世界各地的社區設置容易取用的小型換書箱。它的概念很簡單：歡迎鄰居拿一本書、放一本書，或是拿一本換一本。如今，70 個國家登記的這種圖書館已經超過五萬座。",
+   "幾乎每個人都可以向 LFL 登記，開設一座圖書館，只要書箱維護得好，裡面放的書也適合這個社區。因為主人可以自己設計書箱，所以各座圖書館的外觀通常各不相同，可能性似乎無窮無盡。加州有一座是用舊酒箱做的，德州有一座有小小的樓梯和色彩鮮豔的牆面。登記以後，每座圖書館會在 LFL 網站取得一個編號，LFL 的索引會列出它的位置，附上 GPS 座標和其他資料。主人還會收到一塊寫著「Little Free Library」的牌子。",
+   "路過的人說，經過這些小圖書館的時候，他們比較會拿起一本書來看。吸引人的地方，一部分是單純的好奇心，其餘則是方便。有些在人行道旁設圖書館的主人也說，自從在前院設了一座小圖書館，他們認識了更多鄰居。Bol 也很自豪，小小免費圖書館把社區的人凝聚在一起。他說：「這開啟了鄰里之間的交流，讓大家開始交談，和鄰居相處得更自在。」他又說：「這會讓他們互相幫忙。」"
+  ],
+  "internalNote": "第三百六十一場建檔。改編自 z106p2；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+ },
+ {
+  "id": "PCA-z107p2",
+  "year": "（十）",
+  "accuracyRateSource": null,
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "用燈光上網的 Li-Fi（Li-Fi: Wireless Data from Every Light）",
+  "flagNote": "本題庫改編練習：文章改編自 107 年指考閱讀測驗〈Li-Fi技術的優勢與應用〉，照現行學測文意選填的版面出題（第 21–30 題，10 選 10），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "options": {
+   "A": "fix",
+   "B": "coined",
+   "C": "transparent",
+   "D": "edge",
+   "E": "doubling",
+   "F": "vision",
+   "G": "posted",
+   "H": "process",
+   "I": "accessible",
+   "J": "security"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：Li-Fi 的原理、名稱由來與定義",
+    "segs": [
+     [
+      "Flickering lamps can bring on headaches.",
+      null
+     ],
+     [
+      " Yet",
+      "trans"
+     ],
+     [
+      " if a light flickers millions of times a second—far faster than the brain can",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      "or the eye can detect—that flicker might be harnessed to do something useful, such as transmitting data. That is the idea behind Li-Fi, short for Light Fidelity. The term was",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      "by Harald Haas, a University of Edinburgh professor, in a 2011 TED Talk. There, he shared his",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      "of “wireless data from every light.”",
+      null
+     ],
+     [
+      " Since then",
+      "trans"
+     ],
+     [
+      ", Li-Fi has grown into a wireless technology that sends data at high speeds through light-emitting diodes (LEDs), an increasingly popular way to light up homes and public spaces.",
+      "gradient"
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】優勢：比 Wi-Fi 安全、能在電磁敏感的場所使用、速度快",
+    "segs": [
+     [
+      "Because",
+      "trans"
+     ],
+     [
+      " it turns LED lights into networking devices, Li-Fi has several advantages over Wi-Fi (Wireless Fidelity).",
+      "topic"
+     ],
+     [
+      " For one thing",
+      "trans"
+     ],
+     [
+      ", it offers tighter",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      "for local networks. Unlike the radio waves that Wi-Fi relies on, light cannot pass through walls or doors. As long as glass windows and other",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      "surfaces are covered, only devices inside the room can connect to a Li-Fi channel, so hackers in remote locations are shut out.",
+      null
+     ],
+     [
+      " In addition",
+      "trans"
+     ],
+     [
+      ", Li-Fi can operate in places sensitive to electromagnetic waves, such as aircraft cabins, hospitals, and nuclear power plants, ",
+      null
+     ],
+     [
+      "because",
+      "trans"
+     ],
+     [
+      " light does not interfere with radio signals. Li-Fi's biggest",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      "over Wi-Fi, ",
+      null
+     ],
+     [
+      "however",
+      "trans"
+     ],
+     [
+      ", is speed: researchers have reached 224 gigabits per second in the lab, much faster than Wi-Fi broadband.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】應用：路燈、紅綠燈、觀光與家庭",
+    "segs": [
+     [
+      "How might Li-Fi enrich everyday life? Wherever there is LED lighting, there is a chance to put Li-Fi to work. Streetlights fitted with Li-Fi could bring the internet to cell phones, making it safer to walk at night. The LED bulbs in traffic lights could keep drivers",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      "on the weather and traffic conditions. Tourists could benefit as well, ",
+      null
+     ],
+     [
+      "since",
+      "trans"
+     ],
+     [
+      " local information would be easily",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      "to visitors. At home, smart lighting could even offer parents a quick",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      "for their children's internet addiction: switch off the lights, and their internet connection goes dark too.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】結語：燈泡兼作資料發射器，未來更光明",
+    "segs": [
+     [
+      "With 14 billion light bulbs potentially",
+      "topic"
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      "as 14 billion transmitters of wireless data, a cleaner, greener, and even brighter future is on the way.",
+      "topic"
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Since then, Li-Fi has grown into a wireless technology that sends data at high speeds through light-emitting diodes (LEDs), an increasingly popular way to light up homes and public spaces.”",
+  "thesisExplain": "用燈光上網，聽起來像科幻小說，第一段卻一步一步把它說清楚：先從閃爍的燈讓人頭痛講起，用 Yet 轉到「閃得夠快就能傳資料」，再交代 Li-Fi 這個名稱是誰、在什麼場合提出的，最後收在這一句，說明 Li-Fi 現在是什麼：一種透過 LED 高速傳送資料的無線技術。後面三段都從這一句展開。第二段拿 Li-Fi 和 Wi-Fi 比較，講安全、能在電磁敏感的場所使用、速度快三項優勢；第三段講路燈、紅綠燈、觀光、家庭四種應用；最後一段回到全世界燈泡的數量，展望更光明的未來。寫作上，介紹一樣新東西時，先從讀者熟悉的經驗談起，再下定義，接著分「優點」和「應用」兩段展開，是說明文很好用的順序。",
+  "macro": {
+   "structure": "定義說明型 — 引言(閃爍的燈光能傳資料，Li-Fi 的名稱由來與定義，全文中心思想) → 優勢(安全、可用於電磁敏感的場所、速度快) → 應用(路燈、紅綠燈、觀光、家庭) → 結語(140 億顆燈泡兼作發射器，未來更光明)",
+   "transitions": "Yet（對比，從「閃爍讓人頭痛」轉到「閃爍能傳資料」）→ Since then（時間承接，從 2011 年的構想帶到今天的技術）→ Because（原因，Li-Fi 用 LED 燈當網路裝置，所以比 Wi-Fi 有優勢）→ For one thing（列舉第一項優勢：安全）→ In addition（追加第二項優勢：電磁敏感的場所也能用）→ because（原因，光線不干擾無線電訊號）→ however（轉折兼強調，帶出最大的優勢：速度）→ since（原因，在地資訊容易取得，觀光客因此受惠）",
+   "outline": [
+    "1. 引言：燈光每秒閃爍幾百萬次就能傳資料，Haas 教授 2011 年提出 Li-Fi 一詞，如今已發展成透過 LED 高速傳資料的無線技術(全文中心思想)",
+    "2. 優勢：光線穿不透牆壁，網路更安全；不干擾無線電訊號，可用於機艙、醫院、核電廠；最大優勢是速度",
+    "3. 應用：路燈讓手機上網、紅綠燈提供天氣與路況、觀光客容易取得在地資訊、家長關燈就能斷網",
+    "4. 結語：140 億顆燈泡可能兼作資料發射器，更乾淨、更環保、更光明的未來即將到來"
+   ],
+   "patterns": "說明文 (Expository) + 定義 (Definition)"
+  },
+  "zhTranslation": [
+   "閃爍的燈會讓人頭痛。不過，如果燈光一秒鐘閃爍幾百萬次，遠遠快過大腦處理得了、眼睛察覺得到的速度，這種閃爍也許就能拿來做有用的事，例如傳輸資料。這就是 Li-Fi（Light Fidelity 的簡稱，光照上網）背後的構想。Li-Fi 這個名詞，最早是愛丁堡大學教授 Harald Haas 在 2011 年的一場 TED 演講中創造的。他在演講中分享了「每一盞燈都能傳送無線資料」的願景。從那時起，Li-Fi 已經發展成一種無線技術，透過發光二極體（LED）高速傳送資料，而 LED 也越來越常用來照亮住家和公共場所。",
+   "Li-Fi 把 LED 燈變成傳送資料的網路裝置，比起 Wi-Fi（Wireless Fidelity，無線上網）有幾項優勢。首先，Li-Fi 讓區域網路的安全防護更嚴密。Wi-Fi 靠的無線電波穿得過牆壁和門，光線卻穿不透。只要把玻璃窗和其他透明的表面遮住，能連上 Li-Fi 頻道的就只有房間裡的裝置，遠端的駭客也就進不來。此外，Li-Fi 可以在對電磁波敏感的地方運作，例如飛機客艙、醫院和核電廠，因為光線不會干擾無線電訊號。不過，Li-Fi 勝過 Wi-Fi 最大的優勢是速度：研究人員在實驗室裡已經達到每秒 224 gigabits，比 Wi-Fi 寬頻快得多。",
+   "Li-Fi 能怎樣豐富日常生活呢？只要有 LED 照明的地方，就有機會用上 Li-Fi。裝了 Li-Fi 的路燈可以讓手機上網，晚上走路也就更安全。紅綠燈裡的 LED 燈泡，可以讓駕駛隨時掌握天氣和路況。觀光客也能受惠，因為在地資訊會變得很容易取得。在家裡，智慧燈光甚至能給家長一個快速解決孩子網路成癮的辦法：把燈一關，孩子的網路也就斷了。",
+   "140 億顆燈泡都可能同時充當 140 億個無線資料發射器，一個更乾淨、更環保，甚至更光明的未來，就快到來了。"
+  ],
+  "internalNote": "第三百六十一場建檔。改編自 z107p2；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+ },
+ {
+  "id": "PCA-g114p1",
+  "year": "（十一）",
+  "accuracyRateSource": null,
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "從號誌臂到自駕車（From Signal Arms to Self-Driving Cars）",
+  "flagNote": "本題庫改編練習：文章改編自 114 年學測閱讀測驗〈紅綠燈的發明史〉，照現行學測文意選填的版面出題（第 21–30 題，10 選 10），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "options": {
+   "A": "filed",
+   "B": "unprecedented",
+   "C": "hazard",
+   "D": "display",
+   "E": "movable",
+   "F": "emergence",
+   "G": "stationed",
+   "H": "short-lived",
+   "I": "adjust",
+   "J": "versions"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：多數人認為紅綠燈的發明人是鐵路工程師 Knight，他仿照鐵路號誌設計出交通號誌",
+    "segs": [
+     [
+      "While waiting to cross a busy intersection, have you ever wondered who invented the traffic light? Most people credit John Peake Knight, an engineer from Nottingham, with this invention. As a railway manager in the 1860s, Knight specialized in designing signaling systems for Britain’s expanding rail network, and he saw no reason why the same approach could not be adapted to London’s crowded streets.",
+      null
+     ],
+     [
+      " Thus",
+      "trans"
+     ],
+     [
+      ", he proposed a signal that borrowed the",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      "arms used on railways: a horizontal arm ordered drivers to stop,",
+      null
+     ],
+     [
+      " whereas",
+      "trans"
+     ],
+     [
+      " one lowered to a 45-degree angle told them to move on, much like a traffic director’s gestures. Red and green gas lamps were added for use at night, and a police officer was",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      "beside the signal to operate it.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】挫敗：號誌在 1868 年裝在倫敦，一個月後就爆炸停用",
+    "segs": [
+     [
+      "Knight’s signal, installed near London’s Westminster Bridge in December 1868, turned out to be",
+      "topic"
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      ".",
+      "topic"
+     ],
+     [
+      " Just a month later",
+      "trans"
+     ],
+     [
+      ", a gas leak caused the lamps to explode, injuring the policeman operating the device. Deemed a public",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      ", the project was dropped at once, and traffic lights were banned from British streets until 1929.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】傳播與改良：號誌傳到美國各大城，Potts 發明黃燈",
+    "segs": [
+     [
+      "In the early 1900s",
+      "trans"
+     ],
+     [
+      ",",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      "of Britain’s traffic lights appeared in big American cities, where traffic was growing rapidly. Chicago favored systems with swinging arms,",
+      null
+     ],
+     [
+      " while",
+      "trans"
+     ],
+     [
+      " San Francisco chose red and green lights instead. Across the country, inventors",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      "patents for improvements on Knight’s ideas. A major breakthrough was the yellow light, invented by William Potts, a Detroit police officer. Installed in Detroit in 1920, Potts’ three-color system could",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      "an added signal: “proceed with caution.”",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】展望：自駕車出現以後，號誌可能不再需要",
+    "segs": [
+     [
+      "Now",
+      "trans"
+     ],
+     [
+      ", with the",
+      "topic"
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      "of self-driving cars, researchers have begun to suggest that traffic signals are no longer necessary.",
+      "topic"
+     ],
+     [
+      " In their view, cars approaching an intersection will automatically",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      "their speed so that they can pass through while keeping a safe distance from other vehicles. In the near future, we may experience a form of traffic management that is truly",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      "!",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": null,
+  "thesisExplain": "這篇沒有一句話統攝全文，主旨要從四段合起來歸納：交通號誌一路怎麼演變。四段照年代往下走。第一段是 1860 年代，Knight 仿照鐵路的號誌臂設計出交通號誌；第二段從 1868 年 12 月寫到 Just a month later，號誌裝好一個月就爆炸停用；第三段用 In the early 1900s 跳到美國，各大城市跟進，Potts 再加上黃燈；第四段用 Now 轉到自駕車，研究人員認為號誌可能不再需要。也就是說，讀這種文章不必找統攝全文的那一句，抓住時間片語，就看得出作者怎麼把一百多年的變化排成一條線。寫作上，交代一樣東西的來歷，照年代分段、段首點出時間，讀者最容易跟上。",
+  "macro": {
+   "structure": "時序發展型 — 引言(多數人認為紅綠燈的發明人是 Knight，他仿照鐵路號誌臂設計出交通號誌) → 挫敗(1868 年裝在倫敦西敏橋附近，一個月後煤氣外洩爆炸，計畫喊停) → 傳播與改良(1900 年代初傳到美國各大城，各地申請改良專利，Potts 發明黃燈) → 展望(自駕車出現後，研究人員認為號誌可能不再需要)",
+   "transitions": "Thus（結果，Knight 認為鐵路號誌也能用在街上，於是提出設計）→ whereas（對比，號誌臂水平伸出表示停，下降表示可以走）→ Just a month later（時序推進，號誌裝好一個月就出事）→ In the early 1900s（時序推進，從英國轉到美國）→ while（對比，芝加哥用號誌臂，舊金山用紅綠燈）→ Now（時序推進，轉到自駕車出現的今天）",
+   "outline": [
+    "1. 引言：多數人認為紅綠燈的發明人是諾丁漢的工程師 Knight；他專門設計鐵路號誌，仿照鐵路的活動號誌臂設計交通號誌，夜間加上紅綠煤氣燈，由一名警察在旁操作",
+    "2. 挫敗：號誌 1868 年 12 月裝在倫敦西敏橋附近，一個月後煤氣外洩爆炸，操作的警察受傷；當局認定危害公共安全，計畫喊停，紅綠燈禁用到 1929 年",
+    "3. 傳播與改良：1900 年代初，英國號誌的各種版本出現在美國大城，芝加哥用號誌臂、舊金山用紅綠燈，各地申請改良專利；底特律警察 Potts 發明黃燈，1920 年裝設三色號誌",
+    "4. 展望：自駕車出現後，研究人員認為號誌不再必要，車子會自動調整車速通過路口；不久的將來，或許會出現前所未有的交通管理方式"
+   ],
+   "patterns": "說明文 (Expository) + 時序發展 (Chronological)"
+  },
+  "zhTranslation": [
+   "在繁忙的十字路口等著過馬路時，你有沒有想過紅綠燈是誰發明的？大多數人認為，這項發明要歸功於諾丁漢的工程師 John Peake Knight。Knight 在 1860 年代擔任鐵路經理，專門替英國不斷擴張的鐵路網設計號誌系統，他認為同樣的做法，沒有理由不能改用在倫敦擁擠的街道上。於是他提出一種號誌，借用鐵路上可以活動的號誌臂：號誌臂水平伸出，表示駕駛人要停下來；號誌臂下降到 45 度角，表示可以通行，就像指揮交通的人在打手勢。號誌上另外加裝紅、綠兩色的煤氣燈，供夜間使用，旁邊還派駐一名警察負責操作。",
+   "Knight 的號誌在 1868 年 12 月裝設在倫敦西敏橋附近，結果卻沒用多久。才過一個月，煤氣外洩就讓燈具爆炸，正在操作號誌的警察因此受傷。當局認定這套號誌危害公共安全，計畫立刻喊停，紅綠燈也從此禁止在英國街頭使用，直到 1929 年才解禁。",
+   "1900 年代初期，美國大城市的交通量快速增加，各地陸續出現仿照英國紅綠燈的各種版本。芝加哥偏好用擺動號誌臂的系統，舊金山則採用紅綠燈。全美各地的發明家紛紛以 Knight 的構想為基礎，申請改良的專利。其中一大突破是黃燈，發明人是底特律的警察 William Potts。Potts 的三色系統在 1920 年裝設在底特律，可以多顯示一個號誌：「小心通行」。",
+   "如今隨著自駕車出現，研究人員開始主張，交通號誌已經沒有必要了。他們認為，車子接近路口時會自動調整車速，順利通過，同時和其他車輛保持安全距離。在不久的將來，我們或許就會體驗到一種真正前所未有的交通管理方式！"
+  ],
+  "internalNote": "第三百六十二場建檔。改編自 g114p1；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂，修訂後再以十篇全測的第三次盲測確認唯一解。"
+ },
+ {
+  "id": "PCA-g110p3",
+  "year": "（十二）",
+  "accuracyRateSource": null,
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "富蘭克林的玻璃琴（Franklin’s Glass Armonica）",
+  "flagNote": "本題庫改編練習：文章改編自 110 年學測閱讀測驗〈玻璃琴的興衰〉，照現行學測文意選填的版面出題（第 21–30 題，10 選 10），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "options": {
+   "A": "tastes",
+   "B": "locate",
+   "C": "rare",
+   "D": "accomplished",
+   "E": "pitches",
+   "F": "abandoned",
+   "G": "demand",
+   "H": "compose",
+   "I": "acquaintances",
+   "J": "mastered"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：富蘭克林也是發明家，他發明的玻璃琴風光多年後淡出舞台",
+    "segs": [
+     [
+      "Benjamin Franklin, one of the Founding Fathers of the United States, was a great politician.",
+      null
+     ],
+     [
+      " Yet",
+      "trans"
+     ],
+     [
+      " he was also a highly",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      "scientist and inventor. Of his many achievements, the least well-known are probably his contributions to music.",
+      null
+     ],
+     [
+      " He invented an instrument that both Mozart and Beethoven went on to",
+      "gradient"
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      "music for—the glass armonica, which enjoyed years of fame before fading from the concert stage.",
+      "gradient"
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】發明經過：富蘭克林聽到玻璃杯演奏，動手做出玻璃琴",
+    "segs": [
+     [
+      "In 1761",
+      "trans"
+     ],
+     [
+      ", while living in England, Franklin heard a performer playing musical glasses. He was charmed by the music, but he felt there had to be a better way to create the same sound. He had a glassmaker make thirty-seven hemispheres of glass, which varied in size and thickness so as to produce different",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      ". The hemispheres were color-coded with paint to help the player",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      "the notes. Franklin ran an iron rod through a hole in the top of each hemisphere so that they could nest together from largest to smallest. He linked all of this to a device shaped like a spinning wheel, with a foot control that turned the rod, making the glass hemispheres rotate.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】大受歡迎：富蘭克林演奏純熟，玻璃琴賣出好幾千台",
+    "segs": [
+     [
+      "To play the instrument, Franklin moistened his fingers and held them against the rims of the hemispheres as they turned, producing a unique sound. He",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      "it.",
+      null
+     ],
+     [
+      " After that",
+      "trans"
+     ],
+     [
+      ", he took it to parties and gatherings, where he played for his friends and",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      ". The armonica was in such great",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      "that thousands were built and sold.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】沒落：大家對音樂的喜好改變，大型音樂廳裡聽不見玻璃琴",
+    "segs": [
+     [
+      "But",
+      "trans"
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      "in music changed.",
+      "topic"
+     ],
+     [
+      " Music was moving out of the relatively small halls of Mozart’s day into the large concert halls of the 19th century, and without amplification, the glass armonica simply couldn’t be heard. Concert reviews from the period mourned the fact that the armonica sounded wonderful—but only when it could be heard.",
+      null
+     ],
+     [
+      " So",
+      "trans"
+     ],
+     [
+      ", alas, Franklin’s marvelous invention fell out of favor.",
+      null
+     ],
+     [
+      " By the early 19th century",
+      "trans"
+     ],
+     [
+      ", it had largely been",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      ".",
+      null
+     ],
+     [
+      " Even so",
+      "trans"
+     ],
+     [
+      ", the armonica is still played on",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      "occasions today.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“He invented an instrument that both Mozart and Beethoven went on to ___ music for—the glass armonica, which enjoyed years of fame before fading from the concert stage.”",
+  "thesisExplain": "這篇寫的是一件樂器的興衰。第一段先介紹富蘭克林，說他除了是政治家，也是科學家和發明家，最後一句才帶出玻璃琴：莫札特和貝多芬都替它寫過曲子，它風光了好些年，後來淡出音樂舞台。全文的中心思想就在這一句，前半講「興」，後半講「衰」。接下來照時間往下走，第二段講 1761 年富蘭克林聽到玻璃杯演奏，動手做出玻璃琴；第三段講他演奏純熟，玻璃琴賣出好幾千台，這兩段是「興」。至於「衰」，第四段用 But 轉過來，音樂廳變大以後，玻璃琴的聲音聽不見，終於沒落。寫作上，開頭先用一句話交代整件事的來龍去脈，後面再依時間展開，讀者讀到哪裡，都知道自己在故事的哪一段。",
+  "macro": {
+   "structure": "時序發展型 — 引言(富蘭克林也是科學家、發明家；他發明的玻璃琴風光多年後淡出舞台，全文中心思想) → 發明經過(1761年聽到玻璃杯演奏，做出37個玻璃半球的玻璃琴) → 大受歡迎(演奏純熟，帶到派對和聚會上，賣出好幾千台) → 沒落(音樂廳變大，玻璃琴聲音聽不見，19世紀初遭到淘汰，今天偶爾還有人演奏)",
+   "transitions": "Yet（轉折，政治家之外，他也是科學家和發明家）→ In 1761（時序起點，從發明的經過講起）→ After that（時序推進，練熟以後帶到派對和聚會上演奏）→ But（轉折，從大受歡迎轉到沒落）→ So（結果，聲音聽不見，玻璃琴不再受到青睞）→ By the early 19th century（時序推進，交代沒落的時間）→ Even so（讓步，大致遭到淘汰，今天仍偶爾有人演奏）",
+   "outline": [
+    "1. 引言：富蘭克林是政治家，也是科學家和發明家；他發明的玻璃琴，莫札特和貝多芬都替它寫過曲子，風光多年後淡出舞台(全文中心思想)",
+    "2. 發明經過：1761 年在英國聽到玻璃杯演奏，請人做 37 個大小厚薄不同的玻璃半球，用顏色標示音符的位置，以鐵棒串起，接上像紡車的裝置，用腳踏轉動",
+    "3. 大受歡迎：沾濕手指按住轉動的半球邊緣發聲；他練熟以後，帶到派對和聚會上演奏，玻璃琴賣出好幾千台",
+    "4. 沒落：大家對音樂的喜好改變，大型音樂廳裡沒有擴音，玻璃琴的聲音聽不見，19 世紀初大致遭到淘汰，今天偶爾還有人演奏"
+   ],
+   "patterns": "說明文 (Expository) + 時序發展 (Chronological)"
+  },
+  "zhTranslation": [
+   "美國開國元勳之一的富蘭克林，是一位偉大的政治家，不過他也是成就非凡的科學家和發明家。在他眾多的成就裡，最少人知道的大概是他對音樂的貢獻。他發明了一種樂器，後來莫札特和貝多芬都替它寫過曲子，那就是玻璃琴；這種樂器風光了好些年，後來才淡出音樂舞台。",
+   "1761 年，富蘭克林住在英國時，聽到有人演奏玻璃杯樂器。富蘭克林很喜歡這種音樂，但他覺得一定有更好的方法發出同樣的聲音。他請玻璃工匠做了 37 個玻璃半球，每一個的大小和厚度都不同，好發出高低不同的音。這些半球用油漆標上顏色，方便演奏的人找到每個音符的位置。富蘭克林用一根鐵棒穿過每個半球頂端的孔，讓這些半球由大到小一個套一個排在一起。他把整組裝置接到一個像紡車的機構上，用腳踏板轉動鐵棒，讓玻璃半球旋轉。",
+   "演奏的時候，富蘭克林把手指沾濕，在半球轉動時按住半球的邊緣，就發出一種獨特的聲音。他把這種樂器練得十分純熟。之後，他帶著玻璃琴到派對和聚會上，演奏給朋友和熟人聽。玻璃琴非常搶手，前後造了好幾千台，也都賣了出去。",
+   "但是大家對音樂的喜好改變了。音樂從莫札特時代比較小的廳堂，移到 19 世紀的大型音樂廳，少了擴音設備，玻璃琴的聲音根本聽不見。當時的音樂會評論感嘆，玻璃琴的聲音很美，前提是聽得到。於是，富蘭克林這項了不起的發明，可惜終究不再受到青睞。到了 19 世紀初，玻璃琴大致上已經沒有人用了。即使如此，今天偶爾還是有人演奏玻璃琴。"
+  ],
+  "internalNote": "第三百六十二場建檔。改編自 g110p3；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂，修訂後再以十篇全測的第三次盲測確認唯一解。"
+ },
+ {
+  "id": "PCA-g108p1",
+  "year": "（十三）",
+  "accuracyRateSource": null,
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "神仙魚的祕密（The Secrets of the Angelfish）",
+  "flagNote": "本題庫改編練習：文章改編自 108 年學測閱讀測驗〈神仙魚的變性能力〉，照現行學測文意選填的版面出題（第 21–30 題，10 選 10），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "options": {
+   "A": "tissue",
+   "B": "lacking",
+   "C": "sport",
+   "D": "specific",
+   "E": "entirely",
+   "F": "consists",
+   "G": "striking",
+   "H": "appearance",
+   "I": "signal",
+   "J": "capability"
+  },
+  "paras": [
+   {
+    "label": "【第一段】外觀：色彩鮮豔，花紋卻能幫助躲避危險；幼魚和成魚顏色不同",
+    "segs": [
+     [
+      "Angelfish, often found in warm seas and around coral reefs, are among the most brightly colored fish in the ocean.",
+      "topic"
+     ],
+     [
+      " Brilliant colors and stripes form",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      "patterns on their bodies.",
+      null
+     ],
+     [
+      " Yet",
+      "trans"
+     ],
+     [
+      " as eye-catching as these patterns are, they actually help the fish hide from danger among roots and plants. At night, when angelfish become inactive, their colors may turn pale. Young angelfish also tend to",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      "colors different from those of the adults. Some scientists believe this contrast between the young and the adults may",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      "their different social positions.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】職業：替其他魚清除死掉的組織，主食卻是海綿和藻類",
+    "segs": [
+     [
+      "Another",
+      "trans"
+     ],
+     [
+      " interesting fact about angelfish is that they have an occupation in the fish world.",
+      "topic"
+     ],
+     [
+      " Most of them serve as cleaners for other fish, picking dead",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      "off their bodies. What they remove,",
+      null
+     ],
+     [
+      " though",
+      "trans"
+     ],
+     [
+      ", is not their food.",
+      null
+     ],
+     [
+      " Instead",
+      "trans"
+     ],
+     [
+      ", their diet",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      "mainly of sponge and algae.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】變性能力：黑斑神仙魚能由雌變雄，原因和群體的組成有關",
+    "segs": [
+     [
+      "One particular kind of angelfish, the blackspot angelfish, has a special",
+      "topic"
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      ": it can change from female to male.",
+      "topic"
+     ],
+     [
+      " However",
+      "trans"
+     ],
+     [
+      ", the change does not happen at random; it takes place for a",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      "reason. Blackspot angelfish live in groups, and each group has one male, which is blue, and four females, which are yellow. The male, the largest and strongest member of the group, protects the females.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】變性過程：雄魚死後，最大的雌魚一步步變成雄魚",
+    "segs": [
+     [
+      "When the male dies, the group suddenly finds itself",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      "a “security guard.” This is when the largest female in the group begins to change in",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      ".",
+      null
+     ],
+     [
+      " First",
+      "trans"
+     ],
+     [
+      ", she grows larger, and after a week her color starts to shift from yellow to blue. Little by little, she also starts to treat the other fish the way a male would.",
+      null
+     ],
+     [
+      " Two weeks later",
+      "trans"
+     ],
+     [
+      ", black stripes emerge on her body, showing that the change is complete. She is now",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      "male!",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": null,
+  "thesisExplain": "這篇沒有一句話統攝全文，四段各講神仙魚的一個面向，所以不標全文中心思想。第一段從外觀講起，說牠們色彩鮮豔，花紋卻能幫助躲避危險；第二段用 Another 帶出另一個有趣的地方，也就是替其他魚清潔身體的「職業」；第三段把範圍縮小到黑斑神仙魚，說牠能由雌變雄，而且有特定的原因，接著交代群體的組成；第四段照時間順序，寫雄魚死後，最大的雌魚怎麼一步步變成雄魚。前三段的主旨句都在段首，第四段是依時間敘述的過程，所以不標主旨句。讀這類文章時，如果抓住每段的第一句和 Another、However 這些轉折詞，就看得出作者一段換一個面向，最後把篇幅留給變性這件最特別的事情。",
+  "macro": {
+   "structure": "分項介紹型 — 外觀(色彩鮮豔，花紋卻能幫助躲避危險；幼魚和成魚顏色不同) → 職業(替其他魚清除死掉的組織，主食是海綿和藻類) → 變性能力(黑斑神仙魚能由雌變雄，有特定原因；群體由一條雄魚和四條雌魚組成) → 變性過程(雄魚死後，最大的雌魚先變大、再變色、行為也改變，最後出現黑色條紋)",
+   "transitions": "Yet（對比，花紋搶眼，卻能幫助躲避危險）→ Another（追加，帶出神仙魚另一個有趣的地方）→ though（對比，清掉的東西不是食物）→ Instead（對比，轉到牠們真正吃的東西）→ However（轉折，變性不是隨機發生）→ First（排序，變化從體型開始）→ Two weeks later（時序推進，黑色條紋出現，轉變完成）",
+   "outline": [
+    "1. 外觀：神仙魚是海洋中色彩最鮮豔的魚類之一，花紋雖然搶眼，卻能幫助牠們躲避危險；夜裡顏色變淡，幼魚和成魚顏色不同，可能代表地位不同",
+    "2. 職業：大部分神仙魚替其他魚當清潔工，啄掉牠們身上死掉的組織，但那不是食物，牠們主要吃海綿和藻類",
+    "3. 變性能力：黑斑神仙魚能由雌變雄，而且有特定原因；每群有一條藍色雄魚和四條黃色雌魚，雄魚最大最強壯，負責保護雌魚",
+    "4. 變性過程：雄魚死後，最大的雌魚先變大，一週後由黃轉藍，對待其他魚的方式也慢慢像雄魚，兩週後出現黑色條紋，變成雄魚"
+   ],
+   "patterns": "說明文 (Expository) + 因果關係 (Cause-Effect)"
+  },
+  "zhTranslation": [
+   "神仙魚常見於溫暖的海域和珊瑚礁一帶，是海洋中色彩最鮮豔的魚類之一。亮麗的色彩和條紋在牠們身上構成醒目的花紋，不過這些花紋雖然搶眼，其實能幫助牠們躲在樹根和植物之間，避開危險。到了晚上，神仙魚不太活動，顏色可能會變淡。幼魚身上的顏色也往往和成魚不同，有些科學家認為，幼魚和成魚之間的這種差別，可能顯示牠們在群體中的地位不同。",
+   "神仙魚另一個有趣的地方，是牠們在魚類世界裡有一份「職業」。大部分的神仙魚替其他魚當清潔工，啄掉牠們身上死掉的組織。不過，牠們清掉的這些東西不是食物，牠們主要吃的是海綿和藻類。",
+   "有一種神仙魚叫黑斑神仙魚，具有一種特殊的能力：牠可以從雌性變成雄性。不過，這種轉變不是隨機發生的，而是出於特定的原因。黑斑神仙魚成群生活，每一群有一條藍色的雄魚和四條黃色的雌魚。雄魚是群體裡體型最大、最強壯的成員，負責保護雌魚。",
+   "雄魚死掉之後，群體一下子就少了一位「守衛」。這時，群體裡最大的雌魚就開始改變外觀。牠先是體型變大，一週之後，顏色開始從黃色轉成藍色。接著，牠對待其他魚的方式也慢慢變得像雄魚一樣。兩週之後，牠身上出現黑色條紋，表示轉變已經完成。牠現在完全是一條雄魚了！"
+  ],
+  "internalNote": "第三百六十二場建檔。改編自 g108p1；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂，修訂後再以十篇全測的第三次盲測確認唯一解。"
+ },
+ {
+  "id": "PCA-g112p3",
+  "year": "（十四）",
+  "accuracyRateSource": null,
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "香料之路上的桑吉巴（Zanzibar on the Spice Route）",
+  "flagNote": "本題庫改編練習：文章改編自 112 年學測閱讀測驗〈桑吉巴的貿易史〉，照現行學測文意選填的版面出題（第 21–30 題，10 選 10），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "options": {
+   "A": "rule",
+   "B": "sitting",
+   "C": "prosperous",
+   "D": "lends",
+   "E": "boom",
+   "F": "settled",
+   "G": "harmony",
+   "H": "unimaginable",
+   "I": "docked",
+   "J": "appetite"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：桑吉巴如今是熱門的海灘勝地，過去掌握它卻能取得難以想像的財富",
+    "segs": [
+     [
+      "Situated off the coast of Tanzania, Zanzibar is a tropical archipelago made up of several scattered islands. Washed by the warm, clean waters of the Indian Ocean, this popular beach destination is now known for its white sand beaches, slender palms, and turquoise seas.",
+      null
+     ],
+     [
+      " But",
+      "trans"
+     ],
+     [
+      " few people realize that in the past, control of Zanzibar meant access to",
+      "gradient"
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      "wealth.",
+      "gradient"
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】古代：位在阿拉伯與非洲之間的航線上，自古就是貿易重鎮",
+    "segs": [
+     [
+      "From ancient times",
+      "trans"
+     ],
+     [
+      ", Zanzibar has been a trading hotspot, thanks to its location on the trade route between Arabia and Africa.",
+      "topic"
+     ],
+     [
+      " Traders from Asia had already visited the islands 900 years before the first permanent inhabitants arrived from the African mainland (around 1000 AD).",
+      null
+     ],
+     [
+      " In the 8th century",
+      "trans"
+     ],
+     [
+      ", Persian merchants",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      "here.",
+      null
+     ],
+     [
+      " Over the next four centuries",
+      "trans"
+     ],
+     [
+      ", the communities they built grew into",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      "trading posts.",
+      null
+     ],
+     [
+      " Between the 12th and 15th centuries",
+      "trans"
+     ],
+     [
+      ", trade among Arabia, Persia, and Zanzibar increased, bringing the archipelago both wealth and power.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】探險時代：香料貿易興起，桑吉巴成為世界最大的貿易中心之一",
+    "segs": [
+     [
+      "During the Age of Exploration",
+      "trans"
+     ],
+     [
+      ", commerce in Zanzibar enjoyed a rapid",
+      "topic"
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      "largely due to the spice trade.",
+      "topic"
+     ],
+     [
+      " At the close of the 15th century",
+      "trans"
+     ],
+     [
+      ", Europeans’ enormous",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      "for spices gave rise to the Spice Route, a network of sea lanes joining Europe with the Far East, where most spices came from.",
+      null
+     ],
+     [
+      " In 1498",
+      "trans"
+     ],
+     [
+      ", Portuguese explorer Vasco da Gama made the first sea voyage to India via the southernmost tip of Africa.",
+      null
+     ],
+     [
+      " The following year",
+      "trans"
+     ],
+     [
+      ", he arrived at Zanzibar, an archipelago",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      "at the crossroads of the Spice Route. The islands soon attracted traders from different lands. Hundreds of ships on the route",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      "there, bringing spices and goods for trade, and Zanzibar became one of the biggest trading centers in the world.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】結語：多國統治、多種宗教交會，文化交融帶來遠超過海灘的魅力",
+    "segs": [
+     [
+      "Since the 16th century",
+      "trans"
+     ],
+     [
+      ", Zanzibar has come under the",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      "of the Portuguese, the Arabians, and then the British, each leaving a mark on the place. The paths of various religions have",
+      null
+     ],
+     [
+      " also",
+      "trans"
+     ],
+     [
+      " crossed here, giving the islands a long history of religious",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      ". For centuries, Muslims have lived peacefully alongside Christians and Buddhists there.",
+      null
+     ],
+     [
+      " This unique blend of cultures, scented with the aroma of cloves, vanilla, and cinnamon floating in the air,",
+      "topic"
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      "these jewels on the Indian Ocean an amazing charm that goes far beyond tropical beach fun.",
+      "topic"
+     ]
+    ]
+   }
+  ],
+  "thesis": "“But few people realize that in the past, control of Zanzibar meant access to ___ wealth.”",
+  "thesisExplain": "第一段先把桑吉巴寫成大家熟悉的樣子：白色沙灘、纖細的棕櫚樹、藍綠色的海水。最後一句用 But 轉過來，說很少人知道，在過去，控制了這裡就能取得難以想像的財富，全文的中心思想就在這一句。接下來三段依年代替它舉證：第二段說桑吉巴位在阿拉伯和非洲之間的航線上，自古就是貿易重鎮；第三段說探險時代香料貿易興起，桑吉巴成了世界上最大的貿易中心之一；第四段說葡萄牙人、阿拉伯人、英國人先後統治這裡，各種宗教也在這裡交會。最後一句再回到開頭的海灘，說文化交融帶來的魅力，遠遠超過熱帶海灘的玩樂。寫作上，先寫讀者熟悉的一面，再用 But 帶出少有人知道的另一面，讀者自然會想讀下去。",
+  "macro": {
+   "structure": "時序發展型 — 引言(桑吉巴如今是熱門的海灘勝地，但過去控制這裡就能取得難以想像的財富，全文中心思想) → 古代(位在阿拉伯與非洲之間的航線上，亞洲商人早早到來，波斯商人 8 世紀定居，聚落發展成貿易據點) → 探險時代(香料貿易興起，Vasco da Gama 抵達位在香料之路交會點的桑吉巴，數百艘船在此停靠) → 結語(葡萄牙、阿拉伯、英國先後統治，各種宗教和睦共處，文化交融帶來遠超過海灘的魅力)",
+   "transitions": "But（轉折，從今天的海灘勝地轉到少有人知道的過去）→ From ancient times（時序起點，從古代講起）→ In the 8th century（時序推進，波斯商人定居）→ Over the next four centuries（時序推進，聚落發展成貿易據點）→ Between the 12th and 15th centuries（時序推進，貿易日益頻繁）→ During the Age of Exploration（時序推進，進入探險時代）→ At the close of the 15th century（時序推進，香料之路出現）→ In 1498（時序推進，Vasco da Gama 航行到印度）→ The following year（時序推進，Vasco da Gama 抵達桑吉巴）→ Since the 16th century（時序推進，進入外國統治的時期）→ also（追加，除了統治者，各種宗教也在這裡交會）",
+   "outline": [
+    "1. 引言：桑吉巴是坦尚尼亞外海的熱帶群島，如今以海灘聞名；但過去控制這裡，就能取得難以想像的財富(全文中心思想)",
+    "2. 古代：位在阿拉伯與非洲之間的航線上，自古就是貿易重鎮；亞洲商人比非洲大陸的永久居民早九百年到來，波斯商人 8 世紀定居，聚落發展成繁榮的貿易據點",
+    "3. 探險時代：歐洲人對香料的需求催生香料之路，Vasco da Gama 1499 年抵達位在交會點的桑吉巴，數百艘船在此停靠，桑吉巴成為世界最大的貿易中心之一",
+    "4. 結語：16 世紀起先後由葡萄牙人、阿拉伯人、英國人統治，各種宗教和睦共處，文化交融加上香料香氣，帶來遠超過熱帶海灘的魅力"
+   ],
+   "patterns": "說明文 (Expository) + 時序發展 (Chronological)"
+  },
+  "zhTranslation": [
+   "桑吉巴位在坦尚尼亞外海，是由幾座分散的島嶼組成的熱帶群島。這個熱門的海灘勝地四周是印度洋溫暖清澈的海水，如今以白色沙灘、纖細的棕櫚樹和藍綠色的海水聞名。不過很少人知道，在過去，控制了桑吉巴，就等於能取得難以想像的財富。",
+   "由於位在阿拉伯和非洲之間的貿易路線上，桑吉巴自古就是貿易重鎮。第一批永久居民約在西元 1000 年從非洲大陸來到這裡，而早在這之前 900 年，亞洲商人就已經到過這些島嶼。8 世紀時，波斯商人在這裡定居。接下來的四百年間，他們建立的聚落發展成繁榮的貿易據點。12 到 15 世紀之間，阿拉伯、波斯和桑吉巴之間的貿易日益頻繁，為這片群島帶來財富和勢力。",
+   "探險時代，桑吉巴的商業迅速繁榮起來，主要是因為香料貿易。15 世紀末，歐洲人對香料的龐大需求催生了「香料之路」，這是連接歐洲和遠東的海上航線網路，大部分的香料都產自遠東。1498 年，葡萄牙探險家 Vasco da Gama 繞過非洲最南端，首度從海路航行到印度。第二年，他抵達桑吉巴，這片群島正好位在香料之路的交會點。這些島嶼很快就吸引了各地的商人，數以百計航行這條路線的船隻在這裡停靠，帶來香料和各種貨物進行交易，桑吉巴於是成為世界上最大的貿易中心之一。",
+   "從 16 世紀起，桑吉巴先後由葡萄牙人、阿拉伯人和英國人統治，每一個統治者都在這裡留下了印記。各種宗教也在這裡交會，讓這些島嶼有著悠久的宗教和睦歷史。幾百年來，穆斯林和基督徒、佛教徒在這裡和平共處。這種獨特的文化交融，加上空氣中飄散的丁香、香草和肉桂香氣，為這幾顆印度洋上的明珠增添了迷人的魅力，遠遠超過熱帶海灘的玩樂。"
+  ],
+  "internalNote": "第三百六十二場建檔。改編自 g112p3；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂，修訂後再以十篇全測的第三次盲測確認唯一解。"
+ },
+ {
+  "id": "PCA-g113p2",
+  "year": "（十五）",
+  "accuracyRateSource": null,
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "把黃石畫進國會的畫家（The Painter Who Brought Yellowstone to Congress）",
+  "flagNote": "本題庫改編練習：文章改編自 113 年學測閱讀測驗〈畫家 Thomas Moran 與黃石公園〉，照現行學測文意選填的版面出題（第 21–30 題，10 選 10），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "options": {
+   "A": "survey",
+   "B": "picturesque",
+   "C": "captured",
+   "D": "inspiration",
+   "E": "chief",
+   "F": "filling",
+   "G": "splendor",
+   "H": "declared",
+   "I": "promising",
+   "J": "tales"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：Moran 的畫讓美國人看見非凡景觀，促成國家公園的設立",
+    "segs": [
+     [
+      "Thomas Moran, a famous painter in the 19th century, played an important role in the establishment of American national parks.",
+      "gradient"
+     ],
+     [
+      " His vivid paintings brought the",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      "of extraordinary landscapes before the eyes of the American public, thus setting the stage for these regions to be widely recognized and formally established as national parks.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】童年：從英國工業區移民費城，受 Turner 啟發開始作畫",
+    "segs": [
+     [
+      "Moran came to the United States at age seven, when his family settled in Philadelphia. They had come from northwest England, the blackened heart of the Industrial Revolution: The main street of his hometown was “a dark, unattractive hole,” and the river running through it was a string of dirty water. That was all the nature the young Moran knew.",
+      null
+     ],
+     [
+      " By age 15",
+      "trans"
+     ],
+     [
+      ", he had begun painting, with the landscape paintings of the British master J.M.W. Turner as his",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      ". America, quite unlike the place he had left, offered him no shortage of scenery to paint.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】插畫生涯：升任首席插畫家，Langford 的故事讓他想親眼看看黃石",
+    "segs": [
+     [
+      "Soon the",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      "young painter was hired as an illustrator at Scribner’s Monthly.",
+      null
+     ],
+     [
+      " By age 34",
+      "trans"
+     ],
+     [
+      ", he had been appointed its",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      "illustrator.",
+      null
+     ],
+     [
+      " In 1871",
+      "trans"
+     ],
+     [
+      ", he was asked to illustrate The Wonders of Yellowstone, a story by Nathaniel P. Langford, who had taken part in an expedition to Yellowstone. Langford’s",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      "of its utterly fantastic sights made Moran eager to see this odd territory for himself.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】黃石考察：畫作送交國會，黃石成為世界第一座國家公園",
+    "segs": [
+     [
+      "That same year",
+      "trans"
+     ],
+     [
+      ", Moran joined the first US government",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      "of the Yellowstone region, traveling with the photographer William Henry Jackson. He spent two weeks there,",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      "his sketchbook with the landscape’s most stunning sights. His watercolors—the first color renderings of the area—were presented to Congress along with Jackson’s photos and the team’s findings. These powerful images",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      "the imagination of lawmakers.",
+      null
+     ],
+     [
+      " In March 1872",
+      "trans"
+     ],
+     [
+      ", Congress made Yellowstone the world’s first national park.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第五段】結語：黃石從可怕的蠻荒之地變成如畫的地方，他還畫了十二處日後的國家公園或保護區",
+    "segs": [
+     [
+      "Before Moran’s visit",
+      "trans"
+     ],
+     [
+      ", Yellowstone in the popular imagination was a harsh, wild place, with hot water and steam pouring out of hellish holes in the ground. Once the painter’s work appeared,",
+      null
+     ],
+     [
+      " however",
+      "trans"
+     ],
+     [
+      ", the public came to see the park as",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      ".",
+      null
+     ],
+     [
+      " By the end of his life",
+      "trans"
+     ],
+     [
+      ", Moran had painted a dozen other areas that would later be officially",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      "national parks or monuments.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Thomas Moran, a famous painter in the 19th century, played an important role in the establishment of American national parks.”",
+  "thesisExplain": "這篇看起來是一位畫家的生平，第一句卻先把結論說出來：Moran 在美國國家公園的設立上扮演了重要的角色。全文的中心思想就是這一句，後面各段依時間順序替它舉證。第二、三段交代他的來歷：小時候只見過工業區的髒河，十五歲受 Turner 啟發開始畫風景，後來當上首席插畫家，又因為替黃石的故事畫插圖，才想親自去看。第四段是關鍵：他的水彩畫和照片一起送進國會，幾個月後黃石就成了世界第一座國家公園。最後一段從大眾的眼光收尾，黃石的形象因他的畫改變，他還畫了十二處後來的國家公園或保護區。寫人物的文章先點出這個人最重要的貢獻，再依時間交代經過，讀者從第一段就知道，後面的經過都是在說明這項貢獻怎麼來的。",
+  "macro": {
+   "structure": "時序發展型 — 引言(Moran 的畫作促成美國國家公園的設立，全文中心思想) → 童年(從英國工業區移民費城，受 Turner 啟發開始作畫) → 插畫生涯(升任首席插畫家，替黃石的故事畫插圖，想親眼看看黃石) → 黃石考察(水彩畫送交國會，黃石成為世界第一座國家公園) → 結語(黃石的形象從蠻荒之地變成如畫的地方，他還畫了十二處日後的國家公園或保護區)",
+   "transitions": "By age 15（時序推進，開始作畫）→ By age 34（時序推進，升任首席插畫家）→ In 1871（時間，接下黃石故事的插畫工作）→ That same year（時間承接，同一年親自前往黃石）→ In March 1872（時間，黃石成為國家公園）→ Before Moran’s visit（時間，回頭交代他去之前大眾對黃石的印象）→ however（對比，畫作問世後印象改變）→ By the end of his life（時間，總結他一生的影響）",
+   "outline": [
+    "1. 引言：19 世紀畫家 Moran 在美國國家公園的設立上扮演重要角色(全文中心思想)；他的畫讓大眾看見非凡景觀，為這些地區成為國家公園鋪路",
+    "2. 童年：七歲隨家人從英格蘭西北部的工業區移居費城，家鄉只有暗街和髒河；十五歲受 Turner 的風景畫啟發開始作畫",
+    "3. 插畫生涯：受聘為《Scribner’s Monthly》插畫家，34 歲升任首席插畫家；1871 年替 Langford 的黃石故事畫插圖，想親眼看看黃石",
+    "4. 黃石考察：同年隨政府考察隊進入黃石，水彩畫、照片和考察結果送交國會；1872 年 3 月黃石成為世界第一座國家公園",
+    "5. 結語：大眾心中的黃石從地獄般的荒地變成如畫的地方；他一生還畫了十二處後來的國家公園或國家保護區"
+   ],
+   "patterns": "記敘文 (Narrative) + 時序發展 (Chronological)"
+  },
+  "zhTranslation": [
+   "Thomas Moran 是 19 世紀的知名畫家，在美國國家公園的設立上扮演了重要的角色。他生動的畫作讓美國大眾親眼看到這些非凡景觀的壯麗，也為這些地區日後廣受肯定、正式成為國家公園鋪好了路。",
+   "Moran 七歲時隨家人來到美國，在費城定居。他們來自英格蘭西北部，那裡是工業革命燻得烏黑的核心地帶：大街是「一個又暗又難看的洞」，流經當地的河，不過是一道髒水。小時候的 Moran 所認識的大自然，就只有這些。到了 15 歲，他已經開始作畫，靈感來自英國大師 J.M.W. Turner 的風景畫。美國和他離開的地方截然不同，有畫不完的風景。",
+   "不久，這位前途看好的年輕畫家就受聘為《Scribner’s Monthly》的插畫家。到了 34 歲，他已經升任這本雜誌的首席插畫家。1871 年，他受託替〈The Wonders of Yellowstone〉（黃石奇景）畫插圖，這是 Nathaniel P. Langford 寫的故事，Langford 曾經參加前往黃石的探險隊。Langford 筆下那些奇幻無比的景象，讓 Moran 迫不及待想親眼看看這片奇特的土地。",
+   "同一年，Moran 參加了美國政府對黃石地區的第一次實地考察，和攝影師 William Henry Jackson 同行。他在那裡待了兩個星期，把當地最壯觀的景色畫滿了整本素描本。他的水彩畫是這個地區最早的彩色圖像，連同 Jackson 的照片和考察隊的調查結果，一起送交國會。這些震撼人心的圖像激起了議員的想像。1872 年 3 月，國會把黃石設為全世界第一座國家公園。",
+   "在 Moran 去之前，一般人想像中的黃石是個荒涼的蠻荒之地，地上像地獄一樣的洞不斷冒出熱水和蒸氣。不過，這位畫家的作品問世以後，大家開始覺得這座公園的景色美得像一幅畫。Moran 一生還畫過另外十二處地方，這些地方後來都正式成為國家公園或國家保護區。"
+  ],
+  "internalNote": "第三百六十二場建檔。改編自 g113p2；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂，修訂後再以十篇全測的第三次盲測確認唯一解。"
+ },
+ {
+  "id": "PCA-z110p1",
+  "year": "（十六）",
+  "accuracyRateSource": null,
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "胡佛水壩的誕生（The Making of Hoover Dam）",
+  "flagNote": "本題庫改編練習：文章改編自 110 年指考閱讀測驗〈胡佛水壩的建設與意義〉，照現行學測文意選填的版面出題（第 21–30 題，10 選 10），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "options": {
+   "A": "presented",
+   "B": "symbolic",
+   "C": "bid",
+   "D": "draw",
+   "E": "unproven",
+   "F": "schedule",
+   "G": "massive",
+   "H": "streamlined",
+   "I": "investigated",
+   "J": "scale"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：名列二十世紀十大營建成就的胡佛水壩",
+    "segs": [
+     [
+      "Located in Black Canyon, which straddles the border between Nevada and Arizona in the southwestern United States, Hoover Dam has been named one of the Top 10 Construction Achievements of the 20th century.",
+      "gradient"
+     ],
+     [
+      " Constructed between 1931 and 1936, it was the largest of its kind at the time. Building a structure so",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      "was no small task. The effort involved thousands of workers and cost more than one hundred lives.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】緣起：選址評估、國會核准與得標",
+    "segs": [
+     [
+      "Since about 1900",
+      "trans"
+     ],
+     [
+      ", Black Canyon and nearby Boulder Canyon had been",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      "for their potential to support a dam that would control floods, provide irrigation water, and produce hydroelectric power.",
+      null
+     ],
+     [
+      " In 1928",
+      "trans"
+     ],
+     [
+      ", the US Congress authorized the project, and the contract went to Six Companies, Inc., which had submitted the winning",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      ".",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】施工：前所未有的難題與提前完工",
+    "segs": [
+     [
+      "However",
+      "trans"
+     ],
+     [
+      ", no concrete structure of this size had ever been built before, and the builders had to rely partly on",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      "techniques. The extreme summer heat and the lack of facilities near the site",
+      null
+     ],
+     [
+      " also",
+      "trans"
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      "tremendous difficulties.",
+      null
+     ],
+     [
+      " Nevertheless",
+      "trans"
+     ],
+     [
+      ", Six Companies turned the finished dam over to the federal government on March 1, 1936, more than two years ahead of",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      ".",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】設計：從平淡的原始設計到裝飾藝術風格",
+    "segs": [
+     [
+      "The dam’s initial design, which focused more on function than on appearance, was criticized by many as too plain and unremarkable for a project of such immense",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      ".",
+      null
+     ],
+     [
+      " So",
+      "trans"
+     ],
+     [
+      " Gordon B. Kaufmann, the architect brought in to redesign the exterior, greatly",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      "the dam’s look and gave the entire project an elegant Art Deco style. An American illustrator, Allen Tupper True, was",
+      null
+     ],
+     [
+      " also",
+      "trans"
+     ],
+     [
+      " hired to decorate the walls and floors of the new dam. He based his images and colors on Native American visions of rain, lightning, clouds, and animals. The patterns he created are",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      "and appear both ancient and modern.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第五段】結語：今日的國家歷史地標",
+    "segs": [
+     [
+      "Today",
+      "trans"
+     ],
+     [
+      ", Hoover Dam has become a national historic landmark.",
+      "topic"
+     ],
+     [
+      " Standing more than 725 feet above the Colorado River, the highest concrete dam in the Western Hemisphere continues to",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      "crowds 85 years after its creation, attracting more than a million visitors a year.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Located in Black Canyon, which straddles the border between Nevada and Arizona in the southwestern United States, Hoover Dam has been named one of the Top 10 Construction Achievements of the 20th century.”",
+  "thesisExplain": "全文的中心思想在第一句：胡佛水壩名列 20 世紀十大營建成就。這一句先把水壩的地位說出來，後面各段再交代它憑什麼得到這個地位。第一段接著說它是當時同類中最大的，動員了數千名工人，也付出一百多條人命；第二、三段依年代講選址、核准和得標，再用 However 和 Nevertheless 一轉一折，說明前所未有的難題沒有讓工程延誤，反而提前兩年多完工；第四段講外觀怎麼從平淡改成裝飾藝術風格；第五段回到今天，它已經是國家歷史地標，每年仍有一百多萬名遊客造訪。寫作上，介紹一座建築或一項成就時，先在第一句說出它的地位，再依時間交代來龍去脈，讀者一開始就知道這篇文章要說明什麼。",
+  "macro": {
+   "structure": "地位先行型 — 引言(名列二十世紀十大營建成就，全文中心思想) → 緣起(選址評估、國會核准與得標) → 施工(前所未有的難題與提前完工) → 設計(從平淡的原始設計到裝飾藝術風格) → 結語(今日的國家歷史地標)",
+   "transitions": "Since about 1900（時間起點，帶出選址評估）→ In 1928（時間推移，國會核准、合約得標）→ However（對比，帶出前所未有的難題）→ also（追加，酷熱與缺乏設施）→ Nevertheless（讓步，困難重重仍提前完工）→ So（結果，請建築師重新設計外觀）→ also（追加，另外聘請插畫家）→ Today（時間推移，帶出今日的地位）",
+   "outline": [
+    "1. 引言：位於內華達州和亞利桑那州交界黑峽谷的胡佛水壩，名列 20 世紀十大營建成就，是當時同類中最大的，動員數千名工人，也奪走一百多條人命(全文中心思想)",
+    "2. 緣起：大約從 1900 年起就有人勘查黑峽谷和博爾德峽谷，評估興建防洪、灌溉和水力發電的水壩；1928 年國會核准，由 Six Companies 得標",
+    "3. 施工：這麼大的混凝土結構前所未有，部分技術未經驗證，又有酷熱和缺乏設施的困難，Six Companies 仍在 1936 年 3 月 1 日提前兩年多完工",
+    "4. 設計：原始設計太平淡，建築師 Kaufmann 大幅簡化設計並採用裝飾藝術風格；插畫家 True 以美洲原住民的意象裝飾牆面和地板，圖案具有象徵意義",
+    "5. 結語：胡佛水壩如今是國家歷史地標，高出科羅拉多河 725 英尺以上，完工 85 年後每年仍吸引超過一百萬名遊客"
+   ],
+   "patterns": "說明文 (Expository) + 時序發展 (Chronological)"
+  },
+  "zhTranslation": [
+   "胡佛水壩位於黑峽谷，黑峽谷橫跨美國西南部內華達州和亞利桑那州的州界。這座水壩名列 20 世紀十大營建成就之一，在 1931 年到 1936 年間興建，是當時同類建築中最大的。要蓋一座這麼巨大的建築，可不是一件容易的事。這項工程動員了數千名工人，也奪走了一百多條人命。",
+   "大約從 1900 年起，就有人在勘查黑峽谷和附近的博爾德峽谷，評估這兩處有沒有條件支撐一座水壩，用來防洪、提供灌溉用水和水力發電。1928 年，美國國會核准了這項工程，合約交給了得標的 Six Companies 公司。",
+   "然而，這麼大的混凝土結構以前從來沒有人蓋過，有些施工技術也還沒有經過驗證。夏天酷熱，工地附近又缺乏設施，也帶來極大的困難。儘管如此，Six Companies 還是在 1936 年 3 月 1 日把完工的水壩移交給聯邦政府，比預定的時程早了兩年多。",
+   "水壩最初的設計重視功能多於外觀，很多人批評，以規模這麼龐大的工程來說，這個設計太平淡、太普通了。於是，受邀重新設計外觀的建築師 Gordon B. Kaufmann 把水壩的外觀改得簡潔流暢許多，並讓整個工程採用優雅的裝飾藝術（Art Deco）風格。美國插畫家 Allen Tupper True 也受聘負責裝飾新水壩的牆面和地板。他以美洲原住民對雨、閃電、雲和動物的想像，作為圖像和色彩的依據。他創作的圖案具有象徵意義，看起來既古老又現代。",
+   "如今，胡佛水壩已經成為國家歷史地標。這座西半球最高的混凝土水壩，高出科羅拉多河 725 英尺以上，完工 85 年後仍然吸引大批人潮，每年有超過一百萬名遊客造訪。"
+  ],
+  "internalNote": "第三百六十二場建檔。改編自 z110p1；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂，修訂後再以十篇全測的第三次盲測確認唯一解。"
+ },
+ {
+  "id": "PCA-z109p3",
+  "year": "（十七）",
+  "accuracyRateSource": null,
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "全黑隊的哈卡舞（The All Blacks’ Haka）",
+  "flagNote": "本題庫改編練習：文章改編自 109 年指考閱讀測驗〈紐西蘭全黑隊與毛利哈卡舞〉，照現行學測文意選填的版面出題（第 21–30 題，10 選 10），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "options": {
+   "A": "pride",
+   "B": "outsmarted",
+   "C": "umbrella",
+   "D": "aggressive",
+   "E": "spread",
+   "F": "distinguished",
+   "G": "possesses",
+   "H": "exclusive",
+   "I": "creation",
+   "J": "expresses"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：全黑隊賽前的哈卡震撼全場",
+    "segs": [
+     [
+      "New Zealand’s national rugby team, the All Blacks, is widely credited with bringing the haka to the world stage.",
+      "topic"
+     ],
+     [
+      " Just before kickoff, the whole squad will issue a warlike chant. Stamping their feet, slapping their thighs, rolling their eyes, and flicking their tongues, the players make",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      "gestures in unison. This display, intended to heighten their morale and intimidate the opposing side, is a sight to behold. No other international sports team",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      "a pregame ritual as powerful as the famed All Blacks haka.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】字義：haka 原意只是「舞蹈」，有的限男性，有的不分男女，也有只限女性的",
+    "segs": [
+     [
+      "What does the word “haka” mean? Many people regard it as an",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      "term. In their minds, it covers all the Māori war dances traditionally used to frighten the enemy and prepare fighters for battle. Such dances, it is commonly believed, took place either on the battlefield just before combat or as the warriors were leaving their village on the way to a fight. In the Māori language,",
+      null
+     ],
+     [
+      " however",
+      "trans"
+     ],
+     [
+      ", haka simply means “dance,” not “war dance.” Each dance comes with a chant that",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      "feelings or tells ancient stories.",
+      null
+     ],
+     [
+      " While",
+      "trans"
+     ],
+     [
+      " many haka are meant to be performed by men, others are open to anyone, male or female. There are even some haka that are",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      "to women.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】名作：全黑隊帶紅的兩支哈卡",
+    "segs": [
+     [
+      "Thanks to",
+      "trans"
+     ],
+     [
+      " the All Blacks, two haka have become widely renowned: Ka Mate and Kapa o Pango.",
+      "topic"
+     ],
+     [
+      " The former was composed by a Māori chief in the early 1800s and recounts how he",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      "his enemies. The All Blacks first performed it in 1906. The latter, a far more recent",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      ", was written specifically for the team in 2005. The squad now uses the two interchangeably.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】結語：哈卡走出毛利社群，成為全體紐西蘭人的象徵",
+    "segs": [
+     [
+      "Today",
+      "trans"
+     ],
+     [
+      ", haka of many kinds are performed at a wide range of ceremonial occasions, from the welcoming of",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      "guests to birthdays, weddings, and the funerals of chiefs and others of high status.",
+      null
+     ],
+     [
+      " Though",
+      "trans"
+     ],
+     [
+      " the practice was traditionally limited to Māori communities, it has since",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      "far beyond them. Māori and New Zealanders of European heritage alike now take",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      "in doing the haka, both on the rugby field and off it.",
+      null
+     ],
+     [
+      " The haka has become the most recognizable symbol of New Zealanders as a people.",
+      "topic"
+     ]
+    ]
+   }
+  ],
+  "thesis": null,
+  "thesisExplain": "這篇沒有一句話統攝全文，四段各講哈卡的一個面向，所以不標全文中心思想。第一段從全黑隊賽前的表演講起，說他們把哈卡帶上世界舞台；第二段先問 haka 是什麼意思，再用 however 說明它在毛利語中只是「舞蹈」，接著依誰可以跳，分成限男性、不分男女、只限女性幾類；第三段介紹全黑隊讓它出名的 Ka Mate 和 Kapa o Pango；第四段寫哈卡如今用在各種典禮場合，從毛利社群普及到全體紐西蘭人，段尾一句總結這一段：哈卡已經成為紐西蘭人最具代表性的象徵。第二段以問句開頭，所以不標主旨句。也就是說，讀這類介紹文化傳統的文章，抓住每段的主旨句和 however、Though 這些轉折詞，就看得出作者一段換一個面向。",
+  "macro": {
+   "structure": "介紹說明型 — 引言(全黑隊把哈卡帶上世界舞台) → 字義(haka 原意只是舞蹈，有的限男性，有的不分男女，也有只限女性的) → 名作(Ka Mate 與 Kapa o Pango) → 結語(哈卡走進各種典禮、普及全國，成為紐西蘭人的象徵)",
+   "transitions": "however（對比，帶出 haka 在毛利語中的原意）→ While（讓步，男性表演之外也有男女都能跳的哈卡）→ Thanks to（原因，全黑隊讓兩支哈卡出名）→ Today（時間推移，帶到今日的典禮場合）→ Though（讓步，傳統上只限於毛利社群）",
+   "outline": [
+    "1. 引言：全黑隊把哈卡帶上世界舞台，開球前齊聲吟唱、做出挑釁動作，提振士氣、震懾對手",
+    "2. 字義：一般人把 haka 當作毛利戰舞的統稱，其實在毛利語中只是「舞蹈」，搭配吟唱；有的限男性，有的男女都能跳，也有只限女性的",
+    "3. 名作：Ka Mate 是毛利酋長 1800 年代初所作，1906 年全黑隊首次表演；Kapa o Pango 是 2005 年專為球隊寫的",
+    "4. 結語：哈卡用在迎賓、婚禮、葬禮等典禮，從毛利社群普及到全體紐西蘭人，成為紐西蘭人最具代表性的象徵"
+   ],
+   "patterns": "說明文 (Expository) + 分類 (Classification)"
+  },
+  "zhTranslation": [
+   "紐西蘭國家橄欖球隊全黑隊（All Blacks）一般公認是把哈卡（haka）帶上世界舞台的功臣。就在開球之前，全隊會喊出一段好戰的吟唱。球員一面跺腳、拍打大腿、轉動眼珠、吐舌頭，一面整齊劃一地做出具攻擊性的動作。這段表演用意在提振球員的士氣、震懾對手，場面十分壯觀。沒有其他國際運動隊伍的賽前儀式，像著名的全黑隊哈卡舞這麼有氣勢。",
+   "haka 這個字是什麼意思？很多人把它當作一個統稱。在他們心裡，這個字涵蓋了所有的毛利戰舞，這些戰舞傳統上用來威嚇敵人，讓戰士做好作戰的準備。一般相信，這些戰舞是在戰場上開戰之前，或是戰士離開村落、前往戰場的途中表演的。不過，在毛利語中，haka 只是「舞蹈」的意思，不是「戰舞」。每一支舞都搭配一段吟唱，用來表達情感或講述古老的故事。雖然很多哈卡是由男性表演的，也有一些哈卡不分男女，誰都可以跳。甚至還有一些哈卡只限女性跳。",
+   "因為全黑隊的關係，有兩支哈卡變得廣為人知：Ka Mate 和 Kapa o Pango。前者是一位毛利酋長在 1800 年代初創作的，講述他怎麼智取敵人。全黑隊在 1906 年第一次表演這支哈卡。後者是新得多的作品，是 2005 年專門替全黑隊寫的。現在全黑隊兩支都會跳，交替使用。",
+   "如今，許多典禮場合都會表演各種哈卡，從迎接貴賓，到生日、婚禮，以及酋長和其他地位崇高的人的葬禮都有。表演哈卡傳統上只限於毛利社群，後來已經普及到毛利社群以外。不論是毛利人，還是歐洲裔的紐西蘭人，現在都以跳哈卡為榮，在橄欖球場上是這樣，在球場外也是。哈卡已經成為紐西蘭人最具代表性的象徵。"
+  ],
+  "internalNote": "第三百六十二場建檔。改編自 z109p3；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂，修訂後再以十篇全測的第三次盲測確認唯一解。"
+ },
+ {
+  "id": "PCA-z107p3",
+  "year": "（十八）",
+  "accuracyRateSource": null,
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "越來越小的大甲蟲（Big Beetles Getting Smaller）",
+  "flagNote": "本題庫改編練習：文章改編自 107 年指考閱讀測驗〈氣候變暖讓大型甲蟲變小〉，照現行學測文意選填的版面出題（第 21–30 題，10 選 10），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "options": {
+   "A": "diminished",
+   "B": "account",
+   "C": "extensive",
+   "D": "mature",
+   "E": "raised",
+   "F": "impact",
+   "G": "convinced",
+   "H": "wild",
+   "I": "decline",
+   "J": "drew on"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：大型甲蟲因為棲地變熱而變小",
+    "segs": [
+     [
+      "Some of the world’s largest beetles are getting smaller because the places they live are heating up, according to new research from Canada’s University of British Columbia.",
+      "gradient"
+     ],
+     [
+      " Published in the Journal of Animal Ecology in January 2018, the study shows that climate change is having an",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      "on these “teeny tiny” creatures.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】文獻：實驗室研究顯示甲蟲在高溫下長得比較小",
+    "segs": [
+     [
+      "The project began with a deep dive into the scientific literature.",
+      "topic"
+     ],
+     [
+      " Evolutionary ecologist Michelle Tseng and her students combed through every article they could find, searching for laboratory studies on how temperature affects insects. Of the studies Tseng’s group turned up, nineteen showed that at least 22 beetle species shrank when researchers",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      "them in warmer-than-normal conditions.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】方法：用館藏標本與氣候資料，檢驗野外是否也是如此",
+    "segs": [
+     [
+      "To see whether this pattern also held true for",
+      "topic"
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      "populations, the team turned to the university’s collection of 600,000 insect specimens.",
+      "topic"
+     ],
+     [
+      " Among them are thousands of bugs gathered locally since the late 1800s. From the eight species with the most",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      "records, the researchers photographed more than 6,500 beetles. They",
+      null
+     ],
+     [
+      " also",
+      "trans"
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      "climate data to track trends in rainfall and other factors besides temperature.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】結果：八種中五種變小，最大的四種縮小兩成，小型甲蟲沒有變小",
+    "segs": [
+     [
+      "After sorting the beetles into size categories, the team found that five of the eight species had",
+      "topic"
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      "in size over the past century.",
+      "topic"
+     ],
+     [
+      " The four largest species, the snail-killer ground beetles among them, showed a 20 percent",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      "in the last 45 years. Smaller beetles,",
+      null
+     ],
+     [
+      " in contrast",
+      "trans"
+     ],
+     [
+      ", either stayed the same or even grew slightly larger.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第五段】爭議：暖化是不是真正的原因，魚類的缺氧解釋也說明不了甲蟲",
+    "segs": [
+     [
+      "Some ecologists are cautious about Tseng’s findings, pointing out that no one has yet proved rising temperatures to be the real cause of the shrinkage. British biologist Alan Ronan Baudron,",
+      null
+     ],
+     [
+      " however",
+      "trans"
+     ],
+     [
+      ", is",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      ". His own research has documented the shrinking of certain fish species due to climate warming. According to his",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      ", warmer temperatures lower the concentration of oxygen in the water.",
+      null
+     ],
+     [
+      " As a result",
+      "trans"
+     ],
+     [
+      ", fish burn energy faster and",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      "at a smaller size.",
+      null
+     ],
+     [
+      " Even so",
+      "trans"
+     ],
+     [
+      ", neither he nor Tseng believes that reduced oxygen, the cause he points to in fish, can also explain what is happening to the beetles.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Some of the world’s largest beetles are getting smaller because the places they live are heating up, according to new research from Canada’s University of British Columbia.”",
+  "thesisExplain": "這篇是研究報導，第一句就把結論說完：世界上一些最大型的甲蟲正在變小，原因是牠們生活的地方越來越熱。句中的 because 交代因果，according to 交代消息來源，讀者一開始就知道後面要看的是證據。第二段從文獻找起，實驗室的結果先指出甲蟲在高溫下長得比較小；第三段把問題帶到野外，改用學校的館藏標本和氣候資料來驗證；第四段交出數字，八種裡有五種變小，最大的四種縮小兩成，小型甲蟲卻沒有變小，正好呼應首句說的「最大型」。第五段回到因果本身，有人持保留態度，有人深信不疑。寫作上，先下結論，再一步步交代證據和爭議，是報導研究發現很清楚的寫法。",
+  "macro": {
+   "structure": "研究報導型 — 引言(大型甲蟲因為棲地變熱而變小，全文中心思想) → 文獻(實驗室研究顯示甲蟲在高溫下長得比較小) → 方法(館藏標本與氣候資料，檢驗野外是否也是如此) → 結果(八種中五種變小，最大的四種縮小兩成，小型甲蟲沒有變小) → 爭議(暖化是不是真正的原因，魚類的缺氧解釋也說明不了甲蟲)",
+   "transitions": "also（追加，除了拍攝標本，也查看氣候資料）→ in contrast（對比，小型甲蟲沒有變小）→ however（對比，Baudron 和持保留態度的生態學家看法相反）→ As a result（結果，水中氧氣變少帶來的影響）→ Even so（讓步，缺氧說得通魚類縮小，卻說明不了甲蟲）",
+   "outline": [
+    "1. 引言：英屬哥倫比亞大學的新研究指出，世界上一些最大型的甲蟲因為棲地變熱而變小(全文中心思想)",
+    "2. 文獻：Michelle Tseng 和學生查遍文獻，找到 19 篇實驗室研究，顯示至少 22 種甲蟲在較暖的環境中飼養時體型縮小",
+    "3. 方法：為了確認野外是否也是如此，團隊利用學校 60 萬件昆蟲標本，拍攝 8 個物種、超過 6,500 隻甲蟲，並查看氣候資料",
+    "4. 結果：8 種中有 5 種在過去一百年變小，最大的 4 種在 45 年內縮小 20%，較小的甲蟲沒有變小，甚至稍微變大",
+    "5. 爭議：有些生態學家認為還沒證明暖化就是原因；Baudron 深信如此，他用缺氧解釋魚類縮小，但他和 Tseng 都不認為缺氧能解釋甲蟲"
+   ],
+   "patterns": "說明文 (Expository) + 因果關係 (Cause-Effect)"
+  },
+  "zhTranslation": [
+   "根據加拿大英屬哥倫比亞大學的新研究，世界上一些最大型的甲蟲正在變小，因為牠們生活的地方越來越熱。這項研究 2018 年 1 月發表在《動物生態學期刊》（Journal of Animal Ecology），顯示氣候變遷正在影響這些「小不點」生物。",
+   "這項研究從深入查閱科學文獻開始。演化生態學家 Michelle Tseng 和她的學生把找得到的論文全部仔細看過一遍，尋找探討溫度如何影響昆蟲的實驗室研究。Tseng 團隊找到的研究當中，有 19 篇顯示，研究人員把甲蟲養在比正常溫暖的環境裡，至少有 22 種甲蟲的體型會縮小。",
+   "為了確認這個模式在野生族群身上是不是也成立，研究團隊找上學校收藏的 60 萬件昆蟲標本。其中有數千隻蟲子，是 1800 年代末以來在當地採集的。研究人員從紀錄最完整的 8 個物種當中，拍攝了超過 6,500 隻甲蟲。他們也利用氣候資料，追蹤降雨量等溫度以外的因素有什麼變化趨勢。",
+   "研究人員把甲蟲依體型分類以後發現，8 種甲蟲中有 5 種在過去一百年體型變小了。最大的 4 種，包括捕食蝸牛的步行蟲，在過去 45 年體型縮小了 20%。相反地，比較小的甲蟲體型沒有改變，甚至還稍微變大。",
+   "有些生態學家對 Tseng 的發現持保留態度，他們指出，還沒有人證明氣溫上升就是甲蟲縮小的真正原因。不過，英國生物學家 Alan Ronan Baudron 對此深信不疑。他自己的研究記錄過某些魚類因為氣候暖化而縮小。根據他的說法，溫度升高會讓水中的氧氣濃度降低，結果魚燃燒能量的速度變快，體型還比較小就成熟了。即使如此，他和 Tseng 都不認為缺氧這個在魚類身上找到的原因，也能解釋甲蟲身上發生的變化。"
+  ],
+  "internalNote": "第三百六十二場建檔。改編自 z107p3；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂，修訂後再以十篇全測的第三次盲測確認唯一解。"
+ },
+ {
+  "id": "PCA-z105p4",
+  "year": "（十九）",
+  "accuracyRateSource": null,
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "尖叫的粗糙度（The Roughness of Screams）",
+  "flagNote": "本題庫改編練習：文章改編自 105 年指考閱讀測驗〈尖叫的特性與應用〉，照現行學測文意選填的版面出題（第 21–30 題，10 選 10），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "options": {
+   "A": "silent",
+   "B": "corresponded",
+   "C": "bank",
+   "D": "artificial",
+   "E": "switch",
+   "F": "application",
+   "G": "chilling",
+   "H": "regulates",
+   "I": "wisdom",
+   "J": "detected"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：尖叫的特別之處，不只是大聲和高音",
+    "segs": [
+     [
+      "Screaming is one of the primal responses that humans share with other animals. Conventional",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      "holds that what sets a scream apart from other sounds is its loudness or its high pitch. Many sounds that are both loud and shrill,",
+      null
+     ],
+     [
+      " however",
+      "trans"
+     ],
+     [
+      ", do not raise goose bumps the way a scream can.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】研究發現：尖叫具有音量快速變化的「粗糙度」",
+    "segs": [
+     [
+      "To find out what makes human screams unique, neuroscientist Luc Arnal and his team examined a",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      "of sounds containing sentences that 19 adults either spoke or screamed.",
+      null
+     ],
+     [
+      " The results showed that screams and screamed sentences shared a quality called “roughness,” which refers to how fast a sound changes in loudness.",
+      "gradient"
+     ],
+     [
+      " The loudness of ordinary speech changes only slowly, at rates between 4 and 5 Hz. In a scream,",
+      null
+     ],
+     [
+      " by contrast",
+      "trans"
+     ],
+     [
+      ", the loudness can",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      "back and forth far faster, at 30 to 150 Hz, so the sound strikes the ear as rough and unpleasant.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】大腦反應：最可怕的尖叫最粗糙，恐懼中心也有反應",
+    "segs": [
+     [
+      "Arnal’s team",
+      null
+     ],
+     [
+      " then",
+      "trans"
+     ],
+     [
+      " asked 20 volunteers to judge how",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      "each scream sounded. Those rated the scariest almost always",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      "with the highest levels of roughness.",
+      null
+     ],
+     [
+      " Next",
+      "trans"
+     ],
+     [
+      ", the researchers used fMRI scanners to observe how the brain responds to roughness.",
+      null
+     ],
+     [
+      " As expected",
+      "trans"
+     ],
+     [
+      ", hearing a scream boosted activity in the auditory centers, where incoming sound is processed.",
+      null
+     ],
+     [
+      " But",
+      "trans"
+     ],
+     [
+      " activity also showed up in the amygdala, the brain’s fear center.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】身體與人工聲音：尖叫引發應變反應，粗糙度常見於人工聲音",
+    "segs": [
+     [
+      "The amygdala is the area that",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      "our emotional and physiological reactions to danger. As soon as a threat is",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      ", adrenaline rises and the body gets ready to act. Screams, the study found, have a similar influence on the body. The researchers",
+      null
+     ],
+     [
+      " also",
+      "trans"
+     ],
+     [
+      " found that roughness is absent from natural speech, whatever language is being spoken.",
+      null
+     ],
+     [
+      " Yet",
+      "trans"
+     ],
+     [
+      " the same quality turns up again and again in",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      "sounds. The most aggravating alarm clocks, car horns, and fire alarms all possess high degrees of roughness.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第五段】應用：讓警報更有效，替電動車加上警示音",
+    "segs": [
+     [
+      "One potential",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      "of this research might be to add roughness to alarms to make them more effective, the same way a bad smell is added to natural gas so that a leak is hard to miss. Electric cars, which are nearly",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      ", could",
+      null
+     ],
+     [
+      " also",
+      "trans"
+     ],
+     [
+      " be given warning sounds so that pedestrians can readily notice them.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“The results showed that screams and screamed sentences shared a quality called “roughness,” which refers to how fast a sound changes in loudness.”",
+  "thesisExplain": "這篇的中心思想在第二段第二句：尖叫和尖叫出來的句子都有一種叫做「粗糙度」的特性，也就是音量變化得多快。第一段先擺出一般人的看法，認為尖叫特別在於大聲或高音，再用 however 指出這個看法說明不了雞皮疙瘩從哪裡來，讀者自然想知道答案；第二段接著提出粗糙度，後面三段都繞著它展開。第三段說受試者評為最可怕的尖叫，幾乎都是最粗糙的，大腦的恐懼中心也出現了活動；第四段說尖叫對身體的影響類似遇到威脅，又指出粗糙度在自然說話裡沒有，在人工的聲音裡卻很常見；第五段回到應用，把粗糙度加進警報聲和電動車的警示音。寫說明文時，先提出一般看法、再用研究結果修正它，是很能引起讀者興趣的開頭。",
+  "macro": {
+   "structure": "現象解釋型 — 引言(一般認為尖叫特別在於大聲、高音，卻解釋不了雞皮疙瘩) → 研究發現(尖叫具有音量快速變化的粗糙度，全文中心思想) → 大腦反應(最可怕的尖叫最粗糙，恐懼中心杏仁核也出現活動) → 身體與人工聲音(尖叫引發類似遇到威脅的反應，粗糙度常見於人工聲音) → 應用(讓警報更有效，替電動車加上警示音)",
+   "transitions": "however（對比，大聲又尖銳的聲音不一定讓人起雞皮疙瘩）→ by contrast（對比，尖叫和一般說話的音量變化）→ then（排序，接著請受試者判斷尖叫）→ Next（排序，接著做腦部掃描）→ As expected（印證預期，聽覺中樞的活動增加）→ But（對比，恐懼中心也有反應）→ also（追加，研究關於粗糙度的另一項發現）→ Yet（對比，自然說話沒有、人工的聲音常有）→ also（追加，第二種應用）",
+   "outline": [
+    "1. 引言：尖叫是人和動物共有的原始反應，一般認為它特別在於大聲或高音，但許多又大又尖的聲音並不讓人起雞皮疙瘩",
+    "2. 研究發現：神經科學家 Luc Arnal 的團隊發現尖叫具有粗糙度，音量每秒變化 30 到 150 次，一般說話只有 4 到 5 次(全文中心思想)",
+    "3. 大腦反應：受試者評為最可怕的尖叫幾乎都最粗糙；腦部掃描顯示聽覺中樞活動增加，恐懼中心杏仁核也出現了活動",
+    "4. 身體與人工聲音：杏仁核調節面對危險的反應，尖叫對身體有類似的影響；粗糙度不出現在自然說話裡，在最惱人的鬧鐘、喇叭、警報器裡卻很高",
+    "5. 應用：在警報聲裡加入粗糙度讓警報更有效，也可以替幾乎沒有聲音的電動車加上警示音"
+   ],
+   "patterns": "說明文 (Expository) + 因果關係 (Cause-Effect)"
+  },
+  "zhTranslation": [
+   "尖叫是人類和其他動物共有的原始反應之一。一般的看法認為，尖叫和其他聲音不同的地方，在於音量大或音調高。不過，許多又大聲又尖銳的聲音，並不像尖叫那樣讓人起雞皮疙瘩。",
+   "為了找出人類的尖叫特別在哪裡，神經科學家 Luc Arnal 和他的團隊研究了一個聲音資料庫，裡面是 19 位成人說出或尖叫出來的句子。結果顯示，尖叫和尖叫出來的句子，都有一種叫做「粗糙度」（roughness）的特性，指的是聲音的音量變化得多快。一般說話的音量變化很小，每秒只變化 4 到 5 次；相對地，尖叫的音量每秒可以來回切換 30 到 150 次，所以聽起來粗糙又刺耳。",
+   "Arnal 的團隊接著請 20 位受試者判斷每一聲尖叫聽起來有多嚇人，結果評為最可怕的那些尖叫，幾乎都是聽起來最粗糙的。接下來，研究人員用功能性磁振造影（fMRI）掃描儀，觀察大腦對粗糙度有什麼反應。和預期的一樣，聽到尖叫以後，大腦處理外來聲音的聽覺中樞，活動增加了。不過，大腦的恐懼中心杏仁核也出現了活動。",
+   "杏仁核是調節我們面對危險時情緒和生理反應的區域。一察覺到威脅，腎上腺素就上升，身體準備好採取行動。研究發現，尖叫對身體也有類似的影響。研究人員也發現，不管說的是哪一種語言，自然說話的時候都沒有粗糙度；可是在人工的聲音裡，粗糙度卻一再出現。最讓人煩躁的鬧鐘、汽車喇叭和火災警報器，粗糙度都很高。",
+   "這項研究可能的一個應用，是在警報聲裡加入粗糙度，讓警報更有效，就像在天然氣裡加入難聞的氣味，一旦外洩，大家馬上就會發現。電動車開起來幾乎沒有聲音，也可以替它們加上警示音，讓行人能很快察覺。"
+  ],
+  "internalNote": "第三百六十二場建檔。改編自 z105p4；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂，修訂後再以十篇全測的第三次盲測確認唯一解。"
+ },
+ {
+  "id": "PCA-z102p2",
+  "year": "（二十）",
+  "accuracyRateSource": null,
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "牽引光束成真（A Tractor Beam Made Real）",
+  "flagNote": "本題庫改編練習：文章改編自 102 年指考閱讀測驗〈真實世界的牽引光束〉，照現行學測文意選填的版面出題（第 21–30 題，10 選 10），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "options": {
+   "A": "believed",
+   "B": "selective",
+   "C": "pulled off",
+   "D": "transfer",
+   "E": "potential",
+   "F": "vast",
+   "G": "replicate",
+   "H": "struck",
+   "I": "properties",
+   "J": "microscopic"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：科幻影集裡的牽引光束，2013 年在實驗室裡成真",
+    "segs": [
+     [
+      "In science fiction TV shows such as Star Trek, tractor beams are used to tow spaceships and move objects around.",
+      null
+     ],
+     [
+      " For years",
+      "trans"
+     ],
+     [
+      ", scientists have labored to",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      "such beams in the lab.",
+      null
+     ],
+     [
+      " In 2013",
+      "trans"
+     ],
+     [
+      ", a team of British and Czech researchers led by Dr. Tomas Cizmar finally",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      "the feat.",
+      null
+     ],
+     [
+      " They say they have created a real-life “tractor beam” like the one on Star Trek: a beam of light that can attract objects, at least at a",
+      "gradient"
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      "level.",
+      "gradient"
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】原理：讓光的力反轉，把粒子拉向光源",
+    "segs": [
+     [
+      "Techniques for manipulating particles with light have been around since the 1970s, but this is",
+      "topic"
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      "to be the first time a light beam has been used to pull objects toward its source.",
+      "topic"
+     ],
+     [
+      " Ordinarily",
+      "trans"
+     ],
+     [
+      ", when tiny particles are",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      "by a beam of light, they are pushed along in the direction the light is traveling.",
+      null
+     ],
+     [
+      " After many years of research",
+      "trans"
+     ],
+     [
+      ", Dr. Cizmar’s team discovered a technique that allows the radiation force of light to be reversed, so that the resulting negative force can draw certain particles toward the light source.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】用途：挑選特定粒子，在醫學研究上很有潛力",
+    "segs": [
+     [
+      "Dr. Cizmar says that",
+      "topic"
+     ],
+     [
+      " even though",
+      "trans"
+     ],
+     [
+      " the technology is still a few years away from practical use, it holds huge",
+      "topic"
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      "for medical research.",
+      "topic"
+     ],
+     [
+      " In particular",
+      "trans"
+     ],
+     [
+      ", the tractor beam is highly",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      "in the particles it can attract. Given a mixture, it can single out the ones that share certain",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      ". The shared feature might be size",
+      null
+     ],
+     [
+      ", for instance",
+      "trans"
+     ],
+     [
+      ", or composition. “Eventually, this could be used to separate white blood cells",
+      null
+     ],
+     [
+      ", for example",
+      "trans"
+     ],
+     [
+      ",” Dr. Cizmar told BBC News.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】限制：拉動大型物體需要大量能量，產生的熱會毀壞物體",
+    "segs": [
+     [
+      "Trapping objects such as spaceships in a beam of light has long been a classic plot device in science fiction films and TV series.",
+      null
+     ],
+     [
+      " But",
+      "trans"
+     ],
+     [
+      " Dr. Cizmar said this particular technique would never lead to that.",
+      "topic"
+     ],
+     [
+      " A",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      "of energy takes place in the process. That is harmless for tiny particles, but it would be a serious problem for anything as big as a spaceship. Towing such an object would take a",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      "amount of energy. The resulting heat could destroy it.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“They say they have created a real-life “tractor beam” like the one on Star Trek: a beam of light that can attract objects, at least at a ___ level.”",
+  "thesisExplain": "這篇報導一項研究成果，中心思想在第一段末句：Cizmar 的團隊做出了真實世界的牽引光束，可以用光吸引物體。句尾的 at least 先說明這項成果有個限度，只在微觀的層次上做得到；後面三段就照「做到了什麼、還做不到什麼」展開。第二段說明原理，一般的光會把粒子往前推，這項技術卻讓光的力反轉，把粒子拉向光源；第三段說這道光束挑選粒子很精準，在醫學研究上很有潛力；第四段回到開頭的科幻情節，說明拖動太空船那麼大的東西需要大量能量，產生的熱會毀掉物體，正好呼應 at least 說的限度。寫作上，報導一項新發現時，開頭就把成果和限度一起交代，讀者讀到後面的限制時就不會覺得突兀。",
+  "macro": {
+   "structure": "成果報導型 — 引言(科幻裡的牽引光束 2013 年在微觀層次上成真，全文中心思想) → 原理(讓光的力反轉，把粒子拉向光源) → 用途(挑選特定粒子，醫學研究潛力大) → 限制(拖動大型物體需要大量能量，熱會毀壞物體)",
+   "transitions": "For years（時間，科學家多年來努力重現）→ In 2013（時間，研究成功）→ Ordinarily（對比，一般光束照到粒子的情形）→ After many years of research（時間，多年研究後找到新技術）→ even though（讓步，先承認離實際應用還遠，再說潛力）→ In particular（強調，具體說明潛力在哪裡）→ for instance（舉例，共同特性可能是大小）→ for example（舉例，將來可能用來分離白血球）→ But（轉折，回到科幻情節，說明做不到的事）",
+   "outline": [
+    "1. 引言：科幻影集裡的牽引光束，科學家努力多年，2013 年 Cizmar 的團隊做出真實世界的牽引光束，至少在微觀層次上能用光吸引物體(全文中心思想)",
+    "2. 原理：一般認為這是第一次用光把物體拉向光源；通常光會把粒子往前推，這項技術讓光的輻射力反轉，用負向的力把粒子拉向光源",
+    "3. 用途：離實際應用還有好幾年，在醫學研究上卻很有潛力；光束能從混合物中挑出大小或成分相同的粒子，將來可能用來分離白血球",
+    "4. 限制：這項技術不會變成科幻片裡困住太空船的光束，因為拖動大型物體需要大量能量，產生的熱會毀壞物體"
+   ],
+   "patterns": "說明文 (Expository) + 現象解釋 (Phenomenon Explanation)"
+  },
+  "zhTranslation": [
+   "在《星艦迷航記》這類科幻電視節目裡，牽引光束用來拖曳太空船、移動物體。多年來，科學家一直費盡心力，想在實驗室裡重現這種光束。2013 年，一支由 Tomas Cizmar 博士領導的英國和捷克研究團隊，終於做到了這件難事。他們說，他們做出了真實世界的「牽引光束」，就像《星艦迷航記》裡的那種：一道能吸引物體的光束，至少在微觀的層次上做得到。",
+   "用光操控微粒的技術從 1970 年代就有了，但一般認為，這是第一次用光束把物體拉向光源。通常光束照到微小的粒子時，會把粒子順著光前進的方向往前推。經過多年的研究，Cizmar 博士的團隊找到一種技術，可以讓光的輻射力反轉，再用反轉後產生的負向力，把某些粒子拉向光源。",
+   "Cizmar 博士說，雖然這項技術離實際應用還有好幾年，在醫學研究上卻有很大的潛力。特別是這種牽引光束對能吸引的粒子挑選得非常精準。面對摻在一起的許多粒子，它能單獨挑出具有某些共同特性的粒子，這些共同點可能是大小，也可能是成分。Cizmar 博士告訴 BBC 新聞：「舉例來說，將來這可以用來分離白血球。」",
+   "讓太空船這類物體困在一道光束裡，一直是科幻電影和影集常用的情節安排。但 Cizmar 博士說，這種技術永遠不會發展到那一步。這個過程會發生能量的轉移。對微小的粒子來說，這沒有害處，但對像太空船那麼大的東西來說，就是嚴重的問題。要拖動這樣的物體，需要大量的能量。產生的熱可能會把物體毀掉。"
+  ],
+  "internalNote": "第三百六十二場建檔。改編自 z102p2；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂，修訂後再以十篇全測的第三次盲測確認唯一解。"
+ }
+]

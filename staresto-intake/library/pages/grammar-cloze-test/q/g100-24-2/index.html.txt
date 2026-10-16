@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g100-24-2/index.html
+Author: staresto-create ZZSH
+Title: 100 年學測克漏字第24題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 100 年學測 ／ 第24題
+100 年學測 克漏字 第24題
+字彙選義線索：句內答對率 63%
+答對率 63%：當年每 100 位考生，有 63 位答對。
+Its worldwide popularity is mainly due to its theme music, which showcases ABBA's timeless songs in a fresh and vital way 24 retains the essence of both pop music and good musical theater.
+(A)how
+(B)what
+(C)where
+(D)that
+答案：(D) that
+題目編號：G100_24_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+關係代名詞 that 引導形容詞子句修飾 way，作子句主詞；how（how 不能接在先行詞名詞後面，而且它是副詞性的，不能當子句主詞）、what（需要先行詞的關係代名詞是 that/which 不是 what）、where（不是地方）都不合。
+深入解析
+你可能會這樣想
+空格前面是 way，很多人立刻想到「the way how」這個組合，就挑了 how。也有人看到前面已經有一個 which，覺得同一句不能再出現關係詞，於是改挑 what。
+怎麼判斷
+先看空格後面：retains 是一個動詞，而它前面沒有主詞。所以空格必須是一個「自己兼任主詞」的關係代名詞，這一步就能刷掉 how 和 where——它們是副詞性的，本身不能當主詞。再找先行詞：a fresh and vital way（一種清新而有活力的方式）。是這個「方式」保留了流行音樂與優質音樂劇場的精髓，所以先行詞是 way，關係代名詞用 that（也可以用 which）當子句的主詞。還原成兩句驗算：It showcases ABBA's timeless songs in a fresh and vital way. 加上 The way retains the essence of both pop music and good musical theater. 順帶把 the way 的規矩弄清楚：the way 後面可以接 that、可以接 in which，也可以什麼都不接，但不能寫成 the way how。先說一個常見的誤解：很多人以為問題在「重複」。但 the reason why、the place where 一樣重複，卻都是標準用法。真正的原因是 how 不能接在先行詞名詞後面——the manner how、the way how 都不行，而不帶先行詞的 This is how she did it 完全正確。口語裡確實聽得到 the way how，只是標準書面英語幾乎不用：COCA 語料庫裡 the way that 有將近一萬二千筆，the way how 只有八十三筆，不到 0.7%。考卷考的是標準書面英語，所以這一格填 how 會判錯。
+誘答選項
+how：不能接在 way 後面，理由如上。what：what 本身已經包含先行詞，等於 the thing that；這裡前面已經有先行詞 way，不能再用 what。where：關係副詞，用在地方，而且它不能當子句的主詞，後面必須接完整的句子。
+常考字詞與句型
+the way that（…的方式）、the way in which（…的方式）、the essence of（…的精髓）、be mainly due to（主要歸因於…）、showcase sth（展現、呈現某物）、timeless songs（歷久不衰的歌曲）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+On March 23, 1999, the musical MAMMA MIA! made its first public appearance in London. It 21 the kind of welcome it has been getting ever since. The audience went wild. They were literally out of their seats and singing and dancing in the aisles.
+MAMMA MIA! has become a 22 entertainment phenomenon. More than 30 million people all over the world have fallen in love with the characters, the story and the music. The musical has been performed in more than nine languages, with more productions than any 23 musical.
+Its worldwide popularity is mainly due to its theme music, which showcases ABBA's timeless songs in a fresh and vital way 24 retains the essence of both pop music and good musical theater. It has 25 so many people that a film version was also made. To no one's surprise, it has enjoyed similar popularity.
+中譯：1999 年 3 月 23 日，音樂劇《媽媽咪呀！》在倫敦首次公演。從那時起，它便一直受到同樣熱烈的歡迎。觀眾反應相當熱情，紛紛離開座位，在走道上又唱又跳。《媽媽咪呀！》已成為一股全球性的娛樂現象，全球超過三千萬人為劇中角色、劇情和音樂深深著迷。這齣音樂劇已用超過九種語言演出，製作場次比任何其他音樂劇都多。它之所以廣受歡迎，主要歸功於劇中的主題音樂，以清新而充滿活力的方式呈現 ABBA 樂團的經典歌曲，同時保留了流行音樂與優質音樂劇場的精髓。它吸引了如此多人，甚至因此拍成電影版，而電影版也毫不意外地同樣廣受歡迎。
+📋 內容大意
+The musical MAMMA MIA! opened in London on March 23, 1999. The audience left their seats and danced in the aisles.
+More than 30 million people around the world have come to love its characters, story and music. It has been staged in over nine languages.
+Its success rests on ABBA's songs, presented in a fresh way. A film version followed and was just as popular.
+← 第23題回到100 年學測第25題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

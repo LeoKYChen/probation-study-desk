@@ -1,0 +1,42 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g83-16-1/index.html
+Author: staresto-create ZZSH
+Title: 83 年學測克漏字第16題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 83 年學測 ／ 第16題
+83 年學測 克漏字 第16題
+字彙選義線索：句內
+It 16 that people in different parts of the world invented umbrellas at different times.
+(A)seems
+(B)likes
+(C)looks
+(D)maybe
+答案：(A) seems
+題目編號：G83_16_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】It seems that... 是固定句型，表示「看起來、似乎」。likes 文法上不能接 that 子句，looks 通常接 like 或形容詞，maybe 是副詞不能當句子主要動詞。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+seems 與 looks 的中文都能說成「看起來、似乎」，光比意思分不出來。這一格要看的是句子的形狀：主詞是一個空空的 it，後面接一個 that 子句。
+怎麼判斷
+先看結構：It ___ that people in different parts of the world invented umbrellas at different times.主詞是 it，但這個 it 不指前面任何一樣東西——它是虛主詞，真正的主詞是後面由 that 引導的那個名詞子句（世界各地的人在不同時期各自發明了雨傘）。因為真正的主詞太長，英文習慣先用 it 占住主詞的位置，把內容擺到後面去。這種虛主詞句構有一組固定的成員，答案就在其中：It seems that ...（似乎……）、It turns out that ...（結果發現……，89 年第 26 題 →考過）、It happens that ...（碰巧……）、It appears that ...（看起來……）。本句要說的是「看來世界各地的人是各自發明了雨傘」，填 seems。
+誘答選項
+looks：look 要表示「看起來似乎」時，後面得接 like 或 as if（It looks like it will rain.），不直接接 that 子句。likes：意思是「喜歡」，語意不通，也不走這個句構。maybe：是副詞「也許」，不是動詞，填進去句子就沒有動詞了。
+常考字詞與句型
+It seems that …（似乎……）、it turns out that …（結果發現……）、It appears that …（看起來……）、It looks like …（看起來像……）、seem to V（似乎……）、in different parts of the world（在世界各地）。其中 it turns out that … 這一組考過 4 個年度，89 年第 26 題 →、94 年第 19 題 →、105 年第 17 題 →都出現過。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The umbrella is not a new invention. The Chinese 11 umbrellas in the eleventh century B.C. 12 China they traveled to India, Persia, and Egypt. But in Greece and Rome, men 13 use them. They believed umbrellas were 14 for women. When the Spanish explorers went to Mexico, they saw the Aztec kings 15 umbrellas. English explorers found out that Indian princes also carried umbrellas on the east coast of North America. It 16 that people in different parts of the world invented umbrellas at different times.
+England was probably the first country in Europe 17 ordinary people used umbrellas 18 the rain. England has a rainy climate, and umbrellas are very useful there. The umbrella is now a very ordinary 19 . Everybody uses it today. It keeps the rain and the sun off people. Some umbrellas fold up, 20 it is easy to carry them.
+中譯：雨傘不是新發明。中國人在西元前十一世紀就開始使用雨傘，雨傘再從中國傳到印度、波斯和埃及。但在希臘和羅馬，男人卻不肯用傘，他們認為雨傘是女性用品。當西班牙探險家到墨西哥時，他們看到阿茲特克國王使用雨傘。英國探險家發現北美東岸的印第安酋長也會撐傘。看來世界各地的人在不同時期各自發明了雨傘。英國可能是歐洲第一個一般民眾用雨傘擋雨的國家。英國氣候多雨，雨傘在那裡非常實用。雨傘現在已是非常普通的物品，人人都在使用。它能遮雨也能遮陽。有些雨傘可以摺疊，這樣攜帶起來很方便。
+📋 內容大意
+The umbrella is far older than most people assume; Chinese records place it in the eleventh century B.C.（敘事文）
+Umbrellas spread to India, Persia and Egypt, yet Greek and Roman men rejected them as women's goods, while Aztec kings and Indian princes carried them freely.
+England, whose climate is wet, was probably the first European country in which ordinary people took up the umbrella, now an everyday item that keeps both rain and sun off.
+← 第15題回到83 年學測第17題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g93-29-3/index.html
+Author: staresto-create ZZSH
+Title: 93 年學測克漏字第29題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 93 年學測 ／ 第29題
+93 年學測 克漏字 第29題
+慣用語／片語線索：跨句答對率 47%
+答對率 47%：當年每 100 位考生，有 47 位答對。
+Boys, 29, showed an early visual superiority to girls.
+(A)similarly
+(B)moreover
+(C)in contrast
+(D)in consequence
+答案：(C) in contrast
+題目編號：G93_29_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+前文講女孩在聽覺和精細動作方面較強，這句話講「男孩則在視覺方面較早展現優勢」，語境明顯是在對比男孩女孩各自不同的優勢領域，in contrast（相反地）符合這種對比邏輯；moreover 是同向累加語氣，不符合這裡的對比關係。
+深入解析
+你可能會這樣想
+整段從頭到尾都在講 differences（差異），於是你讀到這一句時腦子裡跑的是「這裡同樣也是在講差異」，手就伸向 similarly（同樣地）。這是本題最大的陷阱：主題是「差異」，但這一句與前一句的關係不是「同樣」，而是「相反」。答對率四成七，最容易選錯的就是它。
+怎麼判斷
+四個選項都是轉折詞，可見這一格考的是前後兩句之間的邏輯關係，那就把兩句話擺在一起看：前一句說女孩對聲音更敏感、精細動作更靈巧（強項在聽覺與小肌肉），這一句說 Boys ___ showed an early visual superiority to girls（男孩較早展現出視覺上的優勢）。兩句講的是同一件事的兩邊——一邊強在這裡，另一邊強在那裡，是把兩者並排比較，正是 in contrast 的工作。劍橋 English Grammar Today 的 Contrasts 條目把分工講得很清楚：in contrast 與 by contrast 用來把兩個人或兩件事並排比較、指出它們不一樣；on the contrary 則是用來否定前面那句話，強調事實正好相反。本句要的是前者。這一題的鑑別度有 49，分開的就是有沒有讀出前後兩句是「各有各的強項」，而不是「同樣都有差異」。順便注意轉折詞的位置：這裡它夾在主詞 Boys 與動詞 showed 之間，兩邊各有一個逗號，這是轉折詞很常見的擺法（同型：101 年第 18 題 →、102 年第 17 題 →、97 年第 30 題 →、105 年第 16 題 →）。
+誘答選項
+similarly（同樣地）：要求前後兩句講的是同一個方向的事，例如「女孩對聲音敏感，男孩同樣對聲音敏感」，可是本句講的是男孩強在別的地方，方向相反。moreover（此外、而且）：同向累加，用在往同一個方向再加一筆，這裡沒有在加碼。in consequence（因此、結果）：表因果，前一句不是這一句的原因。
+常考字詞與句型
+in contrast（相較之下）、in contrast to（與……相對照）、by contrast（相形之下）、on the contrary（正好相反）、be superior to（優於……）、show an early superiority to（較早展現出勝過……的優勢）。其中 in contrast 這一組考過 4 個年度，88 年第 25 題 →、104 年第 21 題 →、106 年第 26 題 →都出現過；on the contrary 考過 4 個年度，95 年第 30 題 →、102 年第 26 題 →、107 年第 29 題 →都出現過。
+線索範圍說明：in contrast 與前一句女孩的表現相對照
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Learning style means a person's natural, habitual, and preferred way(s) of learning. Research about learning styles has identified 26 differences.
+For example, one study found various differences 27 boys and girls in sensory learning styles. Girls were 28 more sensitive to sounds and more skillful at fine motor performance than boys. Boys, 29, showed an early visual superiority to girls. They were, however, clumsier than girls. They performed poorly at a detailed activity 30 arranging a row of beads. But boys excelled at other activities that required total body coordination.
+中譯：學習風格是指一個人天生、習慣性且偏好的學習方式。關於學習風格的研究已發現了性別上的差異。舉例來說，一項研究發現，男孩與女孩在感官學習風格上存在多種差異：女孩對聲音較為敏感，精細動作表現也較男孩靈巧；相較之下，男孩則較早展現出視覺上的優勢，但動作卻比女孩笨拙，在需要精細操作的活動（例如排列一串珠子）上表現較差。然而，男孩在需要全身協調的其他活動上則表現優異。
+📋 內容大意
+Learning style means how a person naturally prefers to learn.
+One study found that girls hear sounds better and handle small movements better than boys.
+Boys saw better at first but were clumsier. They did poorly at fine work like threading beads, yet well at whole-body activities.
+← 第28題回到93 年學測第30題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

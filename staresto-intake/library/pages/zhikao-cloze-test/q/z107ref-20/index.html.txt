@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z107ref-20/index.html
+Author: staresto-create ZZSH
+Title: 指考參考試卷（107 學年度起適用）克漏字第20題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 指考參考試卷（107 學年度起適用） ／ 第20題
+指考參考試卷（107 學年度起適用） 克漏字 第20題
+字彙選義線索：跨句
+This 20 drove him to commit suicide in 1954, at the age of 41.
+(A)compromise
+(B)procession
+(C)humiliation
+(D)supplement
+答案：(C) humiliation
+題目編號：Z107參_20（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+humiliation（屈辱）呼應前文 Turing 被判「嚴重猥褻罪」的羞辱，表示正是這樣的屈辱最終促使他在 1954 年自殺身亡；compromise／procession／supplement 都不符合此處語意。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是名詞，若只讀空格所在的這一句 This ______ drove him to commit suicide in 1954，句子本身根本沒告訴你這個東西是什麼，只能憑感覺挑，compromise（妥協）因為聽起來帶著「不得已」的味道而顯得可選。
+怎麼判斷
+關鍵在句首那個 This。this 加上一個名詞是回指：用一個比較概括的名詞，把前面剛講過的內容整個概括起來再指一次（Halliday 與 Hasan「Cohesion in English」談的指稱銜接）。所以這一格的線索完全在前一句，句內找不到，前一句說圖靈被以嚴重猥褻罪定罪。回頭問一句：那件事對他而言是什麼？是公開的羞辱。humiliation（屈辱、羞辱）正是能把前一句整件事歸納起來的那個概括名詞。這個方法值得記起來：看到 This 或 These 帶著一個名詞，先停下來問「這個 this 指的是前面哪一段」，再看四個選項哪一個對得上。
+誘答選項
+compromise（妥協、折衷）指雙方各退一步達成的結果，前一句沒有任何協商。procession（隊伍、行列）是遊行或列隊行進，與前文無關，只是與 process（過程）長得像才顯得眼熟。supplement（補充品、增補）指額外補上的東西，也對不上前一句。三個選項的問題其實是同一個：只要真的回頭把 This 指向的那一句讀進來，沒有一個對得上。
+常考字詞與句型
+humiliation（屈辱、羞辱）、drive sb to V（迫使某人做某事）、this + 概括名詞（回指前面剛說過的內容）、compromise（妥協、折衷）、supplement（補充品、增補）、at the age of（在……歲時）。
+線索範圍說明：This + 名詞回指前一句「圖靈被以嚴重猥褻罪定罪」
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Alan Turing was one of the leading scientific geniuses of the 20th century. Many scholars consider him the father of modern computer science. He was also the man who cracked the 16 uncrackable Enigma code used by Nazi Germany. His code-breaking turned the tide of World War II and helped save two million lives. Nevertheless, 17 people have even heard his name.
+Turing displayed signs of high intelligence in math and science at a young age. By the time he was 23, he had already come up with the idea of what 18 the modern computer—the Turing machine. Today, Turing machines are still used in theoretical computation. He also proposed the now famous Turing test, used to determine whether a computer exhibits intelligent behavior equivalent to that of a human.
+The postwar era, however, was a disaster for Turing. He was gay, which was then a crime in Britain. 19 being hailed as one of the crucial figures in defeating the Nazis, Turing was convicted of "gross indecency." This 20 drove him to commit suicide in 1954, at the age of 41.
+Nearly 60 years after his death, Queen Elizabeth II granted Turing a formal pardon for his conviction, upon an online petition signed by prominent scientists and technology leaders around the world.
+中譯：艾倫·圖靈是二十世紀最傑出的科學天才之一，許多學者視他為現代電腦科學之父。他也是破解納粹德國所使用、據稱無法破解的「恩尼格瑪」密碼的人。他的解碼成就扭轉了第二次世界大戰的局勢，拯救了兩百萬條性命。然而，卻很少有人聽過他的名字。圖靈從小便在數學與科學方面展現高度的智慧。23 歲時，他已經構想出後來發展成現代電腦的概念——圖靈機。時至今日，圖靈機的概念仍應用於理論計算領域。他也提出了如今著名的「圖靈測試」，用來判斷電腦是否展現出與人類相當的智慧行為。然而，戰後時期對圖靈來說卻是一場災難。他是同性戀者，而這在當時的英國是一項罪行。儘管曾被譽為擊敗納粹的關鍵人物之一，圖靈卻因「嚴重猥褻罪」被定罪。這樣的屈辱最終促使他在 1954 年、41 歲時自殺身亡。在他過世將近 60 年後，在來自世界各地知名科學家與科技領袖連署請願下，英國女王伊莉莎白二世正式赦免了圖靈當年的罪行。
+📋 內容大意
+Alan Turing, called the father of computer science, broke the Enigma code and helped turn the Second World War.（敘事文）
+Gifted young, by twenty-three he had conceived the Turing machine, the idea behind modern computers.（敘事文）
+He also devised the Turing test, but postwar Britain convicted him for being gay.（敘事文）
+He took his own life in 1954, and a royal pardon came nearly sixty years later.（敘事文）
+← 第19題回到指考參考試卷（107 學年度起適用）
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

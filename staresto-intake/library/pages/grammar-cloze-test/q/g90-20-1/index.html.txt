@@ -1,0 +1,40 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g90-20-1/index.html
+Author: staresto-create ZZSH
+Title: 90 年學測克漏字第20題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 90 年學測 ／ 第20題
+90 年學測 克漏字 第20題
+慣用語／片語線索：句內
+They don't look too revolutionary, but you'd be surprised 20 they are capable of.
+(A)how much
+(B)at that
+(C)what if
+(D)such as
+答案：(A) how much
+題目編號：G90_20_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「你會驚訝於它們的能力有多大」，how much they are capable of 表達程度；at that、what if（如果……會怎樣）、such as（例如）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項長得完全不像，你會先讀中文意思去比對，覺得「你會很驚訝……」後面接什麼好像都行。其實這一格用不到語意，光看空格後面那串字缺了什麼就能定案。
+怎麼判斷
+把空格後面讀完：they are capable of——be capable of 的 of 後面應該接一個東西（be capable of sth 有能力做某事），但這裡 of 後面什麼都沒有，句子在這裡斷掉了。這個洞就是線索：空格要填的字必須自己跑進去補那個洞。how much 正好可以——它從 of 後面被提到最前面，整串 how much they are capable of 就成了一個名詞子句，意思是「它們的能耐有多大」。還原成直接問句更清楚：How much are they capable of?（它們有多大的能耐？）改成接在 surprised 後面的間接問句時，語序回到主詞加動詞，就成了 how much they are capable of。這個方法在克漏字裡反覆出現：先數空格後面那個子句缺不缺成分，缺什麼就找一個能補上去的字（同樣的判斷方式：91 年第 25 題 →、93 年第 18 題 →）。
+誘答選項
+what if（如果……會怎樣）：帶出的是一個假設的情境，後面要接完整的句子，而這裡的 of 還缺著東西。such as（例如）：後面接名詞用來舉例，接不了一個子句。at that（而且、還不只如此）：擺在句尾的慣用語，不能拿來引導後面的子句。
+常考字詞與句型
+be capable of（有能力……）、be capable of doing sth（能夠做某事）、be surprised at（對……感到驚訝）、be surprised to V（很訝異地做……）、be able to V（能夠）、look revolutionary（看起來很有突破性）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+At times, it seems like there are not many things that we can give a student who has everything. But 16 that Christmas is just a few weeks away, 17 is a gift idea. Those who have an inclination for crazy technological advances aren't hard 18. One simple way is a few new items that might 19 life more enjoyable. They don't look too revolutionary, but you'd be surprised 20 they are capable of. The following is one of the items.
+21 a student who is never on time, there is the new Projection Alarm Clock. Many ordinary clocks are hard to read early in the morning, deceiving students of the correct time, 22 causing them to be late for school. Through a projector, this attractive radio-alarm-clock is able to display the time onto a wall, ceiling, or anywhere 23. The benefits include an easier visibility of the time, and an alarm that gets increasingly louder 24 turned off. It won't magically transport a student to school on time every day, but it just might make 25 a little easier.
+中譯：有時候，好像很難找到什麼東西送給一個什麼都不缺的學子。不過，既然聖誕節只剩幾星期就要到了，這裡有一個送禮的好點子。對於熱愛各種瘋狂科技新玩意的人來說，其實不難討他們歡心。一個簡單的方法，就是送一些能讓生活更有樂趣的新玩意兒。它們看起來或許不怎麼革命性，但它們的功能可能會讓你大吃一驚。以下就是其中一項產品。對於一個總是遲到的學子來說，這款全新的投影鬧鐘正合適。許多一般的鬧鐘在清晨時分很難看清楚，讓學子誤判時間，因而導致遲到。透過投影功能，這款吸睛的收音機投影鬧鐘能將時間投影到牆壁、天花板或任何其他地方。它的優點包括更容易看清時間，以及鬧鈴聲音會隨著時間經過而逐漸變大，直到被關掉為止。它當然不會像魔法一樣，讓學子每天都準時到校，但它或許能讓起床這件事變得稍微容易一點。
+📋 內容大意
+The Projection Alarm Clock offers an innovative gift solution to help chronically late students wake up on time.
+← 第19題回到90 年學測第21題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

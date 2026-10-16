@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g112-14-1/index.html
+Author: staresto-create ZZSH
+Title: 112 年學測克漏字第14題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 112 年學測 ／ 第14題
+112 年學測 克漏字 第14題
+慣用語／片語線索：句內答對率 58%
+答對率 58%：當年每 100 位考生，有 58 位答對。
+Gaps in the treetops resulting from crown shyness may allow trees to increase their 14 light and enhance photosynthesis.
+(A)reliance on
+(B)exposure to
+(C)sensitivity to
+(D)reflection on
+答案：(B) exposure to
+題目編號：G112_14_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】exposure to 指「暴露於/接觸到」，表示樹冠間的縫隙讓樹木能增加「接觸」陽光的機會；reliance on（依賴）、sensitivity to（對……敏感）、reflection on（對……的反思）都不合。
+深入解析
+你可能會這樣想
+exposure 你最常在「曝光」「曝曬」的語境看到，感覺帶點負面（exposure to the sun 曬到太陽）。其實 exposure to sth 是中性的「接觸到、暴露於」，好壞由後面的名詞決定：exposure to sunlight 對植物是好事，increase their exposure to light 就是「增加接收到的光」。
+怎麼判斷
+整句是 Gaps in the treetops... may allow trees to increase their ___ light and enhance photosynthesis。and 後面的 enhance photosynthesis（促進光合作用）是關鍵：要行光合作用就得曬到光，所以空格講的是「接收到光的量」。四個選項都是「名詞 + 介系詞」的組合，這種題型先確認介系詞、再確認語意；本題四個介系詞形式上都能接 light，就得靠語意定案。
+誘答選項
+reliance on（對……的依賴）語氣太重，樹木不是變得「更依賴」光，而是「接觸更多」光；sensitivity to（對……敏感）指的是反應強弱，不是接收量；reflection 有「對……的反思」（reflection on sth）與「光的反射」兩義，但光被反射是彈開，跟增加吸收剛好相反。
+常考字詞與句型
+exposure to sth（接觸、暴露於……）、be exposed to（接觸到……）、reliance on sth（對……的依賴）、rely on（依賴）、sensitivity to sth（對……敏感）、be sensitive to（對……敏感）、reflect on sth（反思……）。其中 be sensitive to 這一組考過 4 個年度，85 年第 39 題 →、88 年第 22 題 →、93 年第 28 題 →都出現過；be exposed to 考過 3 個年度，99 年第 26 題 →、106 年第 18 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+In certain forests, when you look up you will see a network of cracks formed by gaps between the outermost edges of tree branches. It looks like a precisely engineered jigsaw puzzle, each branch growing just perfectly so it almost, 11 , touches the neighboring tree. This beautiful phenomenon is called crown shyness.
+Scientists have been discussing crown shyness since the 1920s, proposing 12 explanations for the phenomenon. Some researchers point out that as trees often grow close together, treetops can easily collide and break when swayed by the wind. In order to protect their branches from breakage, trees maintain "shyness gaps"—spaces large enough to prevent them from touching their neighbors.
+Other scientists suggest that plants, like animals, 13 resources—nutrients, water, space, and light. In forested areas with thick tree crowns, there is intense struggle for these resources. Gaps in the treetops resulting from crown shyness may allow trees to increase their 14 light and enhance photosynthesis. Additionally, by having branches that do not touch those of their neighbors, trees may be able to limit the spread of leaf-eating insects, and potentially also the transmission of diseases from tree to tree.
+15 decades of investigation, there is no consensus on exactly what causes the beautiful and mysterious phenomenon of crown shyness.
+中譯：在某些森林裡，當你抬頭望向天空，會看到樹枝最外緣之間的縫隙所形成的一張網狀裂紋，看起來就像一幅精密設計的拼圖，每根樹枝都恰到好處地生長，幾乎、但又不完全碰到相鄰的樹木。這種美麗的現象被稱為「樹冠羞避」。科學家自 1920 年代起便開始討論樹冠羞避現象，並提出了各種不同的解釋。有些研究人員指出，由於樹木經常生長得很密集，樹冠在被風吹動搖擺時很容易互相碰撞而斷裂。為了保護枝條不被折斷，樹木會維持一定的「羞避間隙」——足夠大到能避免與鄰近樹木接觸的空間。也有科學家認為，植物就像動物一樣，會競爭養分、水分、空間和光線等資源。在樹冠茂密的森林區域，這些資源的競爭格外激烈，樹冠羞避所形成的縫隙，或許能讓樹木增加接觸光線的機會，提升光合作用的效率。此外，透過讓枝條不去碰觸鄰近樹木的枝條，樹木也可能藉此限制以葉片為食的昆蟲擴散，甚至潛在地降低疾病在樹木間傳播的機會。儘管經過數十年的研究，科學界至今仍未對這個既美麗又神祕的樹冠羞避現象的確切成因達成共識。
+📋 內容大意
+Crown shyness is a forest canopy phenomenon with various proposed theories, though scientists have yet to agree on its exact cause.
+← 第13題回到112 年學測第15題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

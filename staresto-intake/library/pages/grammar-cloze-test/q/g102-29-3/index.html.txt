@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g102-29-3/index.html
+Author: staresto-create ZZSH
+Title: 102 年學測克漏字第29題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 102 年學測 ／ 第29題
+102 年學測 克漏字 第29題
+字彙選義線索：句內答對率 24%
+答對率 24%：當年每 100 位考生，有 24 位答對。
+If 70 percent of 8-year-olds could pass a particular test, then 29 on the test represented an 8-year-old's level of intelligence.
+(A)success
+(B)objection
+(C)agreement
+(D)discovery
+答案：(A) success
+題目編號：G102_29_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+success on the test 指「在該測驗上取得的成功」，是前半條件句 could pass a particular test 的同義改寫；objection（反對）、agreement（同意）、discovery（發現）與通過測驗都無關。
+重點：success 自己搭的介系詞是 in 與 with（success in doing sth）；本題的 on the test 不是 success 帶的。切在 success | on the test，這一格就只剩同義改寫要判。
+延伸閱讀：success 自己搭的介系詞 ↗
+深入解析
+你可能會這樣想
+四個都是名詞。你會用中文句意理解：前面說「如果七成的八歲孩子考得過某項測驗」，後面說「就代表八歲孩子的智力程度」，中間填「發現」、填「同意」好像都說得通。問題出在切的位置：是 success on | the test，還是 success | on the test？
+怎麼判斷
+切在前一種，就得去找後面接 on 的名詞：agreement 雖然可以接 on，但 agreement on the test（對這份測驗的共識）在這裡講不通，另外三個名詞配的介系詞分別是 in、to、of，都不是 on。要切的是後一種：his performance on the test、her score on the test 也都成立，on the test 不是 success 帶的。切對之後只剩一層。前半寫 If 70 percent of 8-year-olds could pass a particular test，後半講的是同一件事——英文常避免重複用字，同一個概念回來時多半會換一個說法，pass a particular test 換成名詞就是 success。另外三個都是憑空冒出來的新資訊。一句記完：Wei-ming's success on the civil service exam surprised no one who had watched him study every night after work.（偉明在公職考試上的過關，並沒有讓看過他每天下班後苦讀的人感到意外。）〔情境取材自 105 指考作文題：碩士考清潔隊員〕
+誘答選項
+objection（反對）：配 to，而且文中沒有任何人反對。agreement（同意、協議）：配 with 某人或 on 某事，一份測驗不是協商的對象。discovery（發現）：配 of，而且比奈在這裡是建立一套標準，不是宣布新發現。objection、agreement、discovery 各自搭 to、on、of，那是名詞自己的介系詞；本題的 on the test 不是這一種，用介系詞刷不掉選項。判得掉它們的是語意——文中沒有人反對，一份測驗不是協商的對象，比奈在這裡也不是宣布新發現。同義記一組：success on the test 等於 passing the test，反過來是 failure（失敗）。
+常考字詞與句型
+success in sth（在…方面的成功）、succeed in + V-ing（成功做到）、be successful in（在…上有成就）、objection to（對…的反對）、agreement on（對…的共識）、discovery of（對…的發現）、pass a test（考過測驗）、a level of intelligence（智力程度）。其中 succeed in + V-ing 這一組考過 3 個年度，87 年第 24 題 →、學測詞彙 96 年第 7 題都出現過。
+鑑別度分析：鑑別度 6，高低分群的差距不大。本題答對率二成四，屬於難度偏高的題目——大考中心《選才電子報》第 307 期說明鑑別度時，就把答對率低的難題列為鑑別度偏低的原因之一：高、低分群考生在這類題目上的答對率差距不大，鑑別度的數值就會比較小。這一題比較像是不分程度的考生都切錯同一個地方：把 on the test 讀成 success 自己帶的介系詞，於是回頭比四個名詞誰配得上 on。切點在 success | on the test，on the test 不歸前面那個名詞管。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+French psychologist Alfred Binet (1859-1911) took a different approach from most other psychologists of his day: He was interested in the workings of the 26 mind rather than the nature of mental illness. He wanted to find a way to measure the ability to think and reason, apart from education in any particular field.
+In 1905 he developed a test in which he 27 children do tasks such as follow commands, copy patterns, name objects, and put things in order or arrange them properly. He later created a standard of measuring children's intelligence 28 the data he had collected from the French children he studied. If 70 percent of 8-year-olds could pass a particular test, then 29 on the test represented an 8-year-old's level of intelligence.
+From Binet's work, the phrase "intelligence quotient" ("IQ") entered the English vocabulary. The IQ is the ratio of "mental age" to chronological age times 100, with 100 30 the average. So, an 8-year-old who passes the 10-year-old's test would have an IQ of 10/8 times 100, or 125.
+中譯：法國心理學家阿爾弗雷德·比奈（1859-1911）採取了與同時代大多數心理學家截然不同的研究取向：他關注的是正常心智的運作方式，而非精神疾病的本質。他希望找到一種方法，能夠測量一個人思考與推理的能力，而不受特定領域教育程度的影響。1905 年，他開發出一套測驗，讓兒童完成諸如遵循指令、臨摹圖形、說出物品名稱，以及依序排列或正確擺放物品等任務。他後來根據對法國兒童所蒐集到的資料，制定出一套測量兒童智力的標準：如果有 70%的八歲兒童能通過某項測驗，那麼在該測驗中的成功表現，就代表了八歲兒童應有的智力水準。比奈的研究成果，讓「智商」（IQ）這個詞彙從此進入英語詞彙之中。智商是「心智年齡」與「實際年齡」的比值再乘以 100，其中 100 代表平均值。因此，一位通過十歲兒童測驗的八歲孩童，其智商即為 10 除以 8 再乘以 100，也就是 125。
+📋 內容大意
+Alfred Binet developed early standardized intelligence tests for children, establishing the foundation for modern IQ measurements.
+← 第28題回到102 年學測第30題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

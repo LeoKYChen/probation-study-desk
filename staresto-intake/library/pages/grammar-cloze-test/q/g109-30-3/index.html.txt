@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g109-30-3/index.html
+Author: staresto-create ZZSH
+Title: 109 年學測克漏字第30題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 109 年學測 ／ 第30題
+109 年學測 克漏字 第30題
+慣用語／片語線索：句內答對率 20%
+答對率 20%：當年每 100 位考生，有 20 位答對。
+Also, the idea 30 a very complex issue regarding depression into something simple and easily understandable, and that tends to appeal to a lot of people.
+(A)breaks down
+(B)mixes up
+(C)tears off
+(D)results in
+答案：(A) breaks down
+題目編號：G109_30_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+break down A into B 是「把 A 拆解、簡化成 B」，本句指這個說法把複雜的憂鬱議題化約成簡單易懂的東西；mixes up（弄混）、tears off（撕下）、results in（導致）都無法與後面的 into 搭配。
+重點：break down 除了故障、崩潰，還有「把複雜的東西拆解成小部分」，這個用法後面常接 into。
+延伸閱讀：break sth down，把複雜的東西拆成小部分 ↗
+深入解析
+你可能會這樣想
+break down 你大概只記得兩個畫面——車子拋錨、人崩潰大哭。這不是你記錯，是只記到第一個意思就停了。它在說明文裡最常用的是另一義：把複雜的東西拆解成小部分。這個用法你其實聽過——a cost breakdown（費用明細）就是把總數拆開來看。Collins 的例句是 The report breaks down the results region by region.（報告把結果逐區拆開呈現）。
+怎麼判斷
+空格後面出現 into，這是最強的線索：break down A into B 的 into 是這個片語自帶的。本句說的正是「Blue Monday 這個說法，把憂鬱症這個複雜議題化約成簡單易懂的東西」，後半句 and that tends to appeal to a lot of people 也說明了為什麼——因為簡單，所以吸引人。做片語題時，先看空格後面有沒有介系詞，往往一眼就能篩掉大半選項。
+誘答選項
+results in 後面接的是結果本身（result in failure），不接 into；mix up 是「弄混」；tear off 是「撕下」。三者都無法與 into 搭配。反過來的說法是 build up（累積、堆起來）。這一組一句記完：Let me break the plan down for you: the calorie breakdown shows where the extra weight came from—right before the scale broke down and the dieter broke down in tears.（我把計畫拆開來講給你聽：熱量明細顯示多出來的體重從哪裡來——就在體重計壞掉、減重的人崩潰大哭之前。）〔情境取材自 89 學測作文題：減重〕
+常考字詞與句型
+break down A into B（把 A 分解為 B）、break down（故障；崩潰）、a cost breakdown（費用明細）、build up（累積）、result in（導致）、mix up（弄混）、jump on the bandwagon（跟風）。其中 result in 這一組考過 7 個年度，88 年第 28 題 →、90 年第 22 題 →、100 年第 25 題 →、102 年第 28 題 →、103 年第 25 題 →、學測參考試卷第 22 題 →、學測參考試卷第 23 題 →都出現過；build up 考過 3 個年度，106 年第 18 題 →、108 年第 26 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The idea of Blue Monday dates back to a 2005 campaign by Sky Travel. The travel company wanted to 26 people to take January vacations, so they reached out to a psychologist. The scholar then developed an equation to find the most depressing day of the year, and it turned out to be the third Monday in January. Since then, other companies have jumped on the bandwagon to promote everything from soft drinks to new clothes as a 27 . A group in the UK even started a website devoted to "beating Blue Monday."
+Many scientists, however, say there is no evidence that Blue Monday causes any more sadness than other specific days of the year. 28 , the idea of Blue Monday persists. According to psychologist Dean Burnett, people feel down in January 29 post-holiday discontent, and the Blue Monday claim makes it seem like there are scientific reasons for this. Also, the idea 30 a very complex issue regarding depression into something simple and easily understandable, and that tends to appeal to a lot of people.
+中譯：「憂鬱星期一」的概念可追溯至 2005 年 Sky Travel 旅遊公司的一場宣傳活動。這家旅遊公司想鼓勵人們在一月安排旅行，於是找上了一位心理學家合作。這位學者設計出一套公式，用來找出一年之中最令人沮喪的一天，結果得出的答案是一月的第三個星期一。從那時起，其他公司也紛紛搭上這波風潮，將各種商品——從汽水到新衣服——都當作對抗憂鬱星期一的解方來宣傳。英國甚至有一個團體專門成立了一個網站，致力於「戰勝憂鬱星期一」。然而，許多科學家表示，並沒有證據顯示憂鬱星期一比一年中其他特定日子更令人感到悲傷。儘管如此，憂鬱星期一的說法依然持續流傳。根據心理學家迪恩·伯內特的說法，人們在一月感到低落，其實是因為節慶過後的失落感，而憂鬱星期一的說法讓這種感覺看起來像是有科學根據一樣。此外，這個概念把憂鬱症這個相當複雜的議題，簡化成一個容易理解的簡單說法，這也往往是它吸引許多人的原因。
+📋 內容大意
+Despite lacking scientific proof, the concept of Blue Monday persists because it offers a simplified explanation for post-holiday sadness and marketing appeals.
+← 第29題回到109 年學測
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

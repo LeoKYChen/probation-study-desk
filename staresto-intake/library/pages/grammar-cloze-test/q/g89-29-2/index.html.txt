@@ -1,0 +1,42 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g89-29-2/index.html
+Author: staresto-create ZZSH
+Title: 89 年學測克漏字第29題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 89 年學測 ／ 第29題
+89 年學測 克漏字 第29題
+慣用語／片語線索：句內
+At other times the dreaded event from daily life simply occurs in a dream in its real-life form; 29 , the boy dreams of being bullied by the bigger boy. 30 scientific research, we have known more about the relationship between sleep and dreams.
+(A)for instance
+(B)in addition
+(C)in a word
+(D)that is
+答案：(D) that is
+題目編號：G89_29_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+分號後面講的還是前文那個男孩與那個一直欺負他的大男孩，作用是把分號前面那句「令人害怕的事以現實中的樣子出現在夢裡」放回他身上講清楚：他夢見的就是被那個大男孩欺負。這種補上細節、講得更精確的轉折詞是 that is（也就是說）；for instance（例如）用來帶出一個例子，這裡沒有出現新的例子；in addition（此外）是另外加一點；in a word（總之）是收尾總結，都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+分號前面是一句通則：有時候令人害怕的事會以現實中的樣子出現在夢裡；分號後面接著講男孩夢見自己被大男孩欺負。從通則走到一個男孩的夢，看起來就像在舉例，所以 for instance（例如）特別誘人。但這個男孩不是新找來的例子，前文已經講過他的處境，這一點要回頭確認。
+怎麼判斷
+四個選項都是轉折詞，可見這一格考的是分號前後兩部分的關係。先看分號後面講的是誰：the boy、the bigger boy 都帶著 the，指的是前文已經出場的那個男孩，以及那個一直欺負他的大男孩（a bigger boy keeps bullying him），不是另外舉的一個新例子。再看分號前面那一句：At other times the dreaded event from daily life simply occurs in a dream in its real-life form（另外有些時候，日常生活中令人害怕的事就直接以它現實中的樣子出現在夢裡）。分號後面做的事，是把這句話放回同一個男孩身上講清楚：「令人害怕的事」就是被大男孩欺負，「以現實中的樣子出現」就是夢裡出現的仍然是那個大男孩，而不是像前面那樣換成一頭獅子。把前面的說法補上細節、講得更精確，用的是 that is（也就是說；劍橋把 that is (to say) 解釋為 said when you want to give further details or be more exact about something）。填進去讀成：... in its real-life form; that is, the boy dreams of being bullied by the bigger boy.（……以現實中的樣子出現在夢裡，也就是說，男孩夢見的就是被那個大男孩欺負。）88 年第 25 題可以對照著看：那一題要分的是 In other words 與 In fact，問的同樣是後面這一句究竟是把前面重講一次，還是往前推進了一步。這一組其實有五個成員，一次分清楚比較省事：for example 與 for instance 完全同義，帶出的是一個例子；such as 只能接名詞，不能接整句；that is 與 in other words 是換句話說，後面講的還是同一件事。
+誘答選項
+for instance（例如）：用來帶出一個例子，讀起來雖然也像在接通則，但分號後面沒有出現新的例子，講的還是前文那個男孩、那個大男孩，作用是把分號前面那句話講得更精確，所以 that is 比 for instance 更貼切。for instance 當答案的是 85 年第 33 題 →與指考克漏字 95 年第 14 題 →。in addition（此外）：同向累加，用來再補一點新的內容，但分號後面沒有加進新的一點。in a word（總之）：用來收尾，把前面講過的濃縮成一句話，而這裡是把前面那句話展開講細，方向相反。
+常考字詞與句型
+that is（也就是說）、that is to say（也就是說、更確切地說）、i.e.（也就是說，多用於書面）、for instance（例如）、in a word（總之）、in its real-life form（以現實生活中的樣子）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Basically, there are two kinds of sleep. One is Rapid Eye Movement (REM) sleep. In 21 , the brain waves of a sleeping person are similar to those of a waking person, and the eyes move about rapidly under the closed lids. 22 kind of sleep is Non-Rapid Eye Movement sleep.
+Scientists have discovered that dreams happen mainly in REM sleep. Everyone dreams about 20 percent of their sleeping time. 23 people who say they never dream show about 20 percent of REM sleep. 24 these "non-dreamers" do their sleeping in a laboratory 25 researchers can wake them up and ask them whether they were having dreams the moment before, it 26 that they dream as much as others.
+Events in daily life sometimes occur symbolically in dreams. 27 , a boy is having difficulties on the school playground because a bigger boy keeps bullying him. He may dream at night of being alone in the playground, 28 a lion. At other times the dreaded event from daily life simply occurs in a dream in its real-life form; 29 , the boy dreams of being bullied by the bigger boy.
+30 scientific research, we have known more about the relationship between sleep and dreams. However, why a dream will take a certain symbolic form is still a mystery.
+中譯：基本上，睡眠可分為兩種。第一種是快速動眼期（REM）睡眠，在這個階段，睡眠者的腦波與清醒時相似，眼球會在閉著的眼皮下快速轉動。另一種則是非快速動眼期睡眠。科學家發現，做夢主要發生在快速動眼期。每個人在睡眠時間中大約有 20%在做夢，就連那些聲稱自己從不做夢的人，也有大約 20%的快速動眼期睡眠時間。如果讓這些「不做夢的人」在實驗室裡睡覺，研究人員就能把他們叫醒，詢問他們前一刻是否在做夢，結果發現，原來他們做夢的次數其實跟其他人一樣多。日常生活中發生的事，有時會以象徵的形式出現在夢境中。舉例來說，一個男孩在學校操場上因為一直被較大的男孩欺負而感到困擾，晚上他可能會夢見自己獨自一人在操場上，面對一頭獅子。而有時候，日常生活中令人恐懼的事件，也會直接以原本的樣貌出現在夢境中，也就是說，這名男孩夢見的就是自己被那個較大的男孩欺負。透過科學研究，我們對睡眠與夢境之間的關係已有了更多了解。然而，夢境為什麼會以某種特定的象徵形式呈現，至今仍是個謎。
+📋 內容大意
+Scientific research shows that everyone dreams during REM sleep, often transforming daily experiences into direct or symbolic dreams.
+← 第28題回到89 年學測第30題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

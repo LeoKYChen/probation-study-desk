@@ -1,0 +1,143 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/z96p2.html
+Author: staresto-create ZZSH
+Title: 96 指考閱讀測驗：注意力不足過動症｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 96 指考
+96 指考閱讀測驗：注意力不足過動症
+Attention Deficit/Hyperactivity Disorder, AD/HD
+指考 96年第 50–52 題3 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段Most parents dread a note or call from school saying that their child’s behavior is “not normal.” If your child’s academic performance and social life is suffering because they don’t pay attention, can’t sit still and act without thinking, it is most likely that they have AD/HD (Attention Deficit/ Hyperactivity Disorder).
+第 2 段AD/HD is a neurological disorder which stems not from the home environment, but from biological and genetic causes. Its symptoms typically show up in early childhood. The main characteristics are inattention, hyperactivity and impulsivity. Inattentive children have difficulty focusing on completing a task or learning something new. Hyperactive children always seem to be restless. Often they report that they need to stay busy and may try to do several tasks at once. Impulsive children often do not think before they act. They often blurt out inappropriate comments or have difficulty taking turns in conversation.
+第 3 段Most children can be inattentive, hyperactive, or impulsive at times. It is when these behaviors are inappropriate for their age and affect different areas in their lives that the disorder is diagnosed. Depression, anxiety, and learning disabilities may co-exist with AD/HD. Therefore, if a child is suspected of AD/HD, it is very important that he or she be evaluated by a professional.
+第 4 段Once your child is diagnosed with AD/HD, it is important to let the school know so that they can provide appropriate academic and social support. Your child’s school should keep this information confidential and it can usually make accommodations in the classroom to fit your child’s learning needs.
+題目
+50.What is the cause of AD/HD?
+(A)Gene problem.
+(B)Academic pressure.
+(C)Illness in childhood.
+(D)Inappropriate home environment.
+51.Which of the following are most likely AD/HD patients?
+(A)Children who are very lazy.
+(B)Children who are very attentive.
+(C)Children who act over-cautiously.
+(D)Children who have learning difficulties.
+52.What is the first thing to do if your child is suspected of AD/HD?
+(A)Report it to the school.
+(B)Consult a professional.
+(C)Wait until the child grows up.
+(D)Send the child to a special school.
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+50
+(A)
+63%
+72
+51
+(D)
+53%
+37
+52
+(B)
+43%
+31
+答對率與鑑別度出處：大考中心 96 學年度指定科目考試統計圖表：英文科答對率及鑑別指數表
+每一題的依據句
+第 50 題 細節題 Supporting details
+第 2 段AD/HD is a neurological disorder which stems not from the home environment, but from biological and genetic causes.
+原文 → 正確選項
+genetic → Gene
+第 2 段說注意力不足過動症的原因不在家庭環境，而在生理和遺傳（genetic causes），選項把 genetic 換成 gene，所以是 (A)。(D) 照抄 home environment，原文用 not … but … 說得很清楚，原因不是家庭環境，選項說反了；(B) 照抄第 1 段的 academic，學業表現出問題是症狀造成的結果，不是原因；(C) 照抄 childhood，原文說症狀通常在幼年時期出現，是說出現的時間，不是說幼年生病造成的。
+第 51 題 推論題 Inference
+第 3 段Depression, anxiety, and learning disabilities may co-exist with AD/HD.
+原文 → 正確選項
+learning disabilities → learning difficulties
+這一題答對率只有 53%，題目問 most likely，要找原文和選項最接近的一句。判斷步驟：[1] 第 3 段說學習障礙（learning disabilities）可能和注意力不足過動症同時存在；[2] 第 1 段也說，有這種疾患的孩子學業表現會出問題，第 2 段說他們很難專心學習新的東西；[3] 有學習困難的孩子最可能是患者，所以是 (D)。(B) 照抄 attentive，原文說的是 inattentive（注意力不足），選項的 very attentive 說反了；(C) 過度小心，和原文說的衝動、不經思考相反；(A) 原文沒有說患者很懶，過動的孩子反而總是靜不下來。
+第 52 題 細節題 Supporting details
+第 3 段if a child is suspected of AD/HD, it is very important that he or she be evaluated by a professional.
+原文 → 正確選項
+professional → professional
+這一題答對率只有 43%，最多人選的陷阱是 (A)，要分清楚兩件事的先後。判斷步驟：[1] 題目問的是懷疑（suspected）孩子有這種疾患時，第一件事做什麼；[2] 第 3 段說，如果懷疑孩子有注意力不足過動症，請專業人員（a professional）評估非常重要，選項換成諮詢專業人員，所以是 (B)；[3] (A) 照抄第 4 段的 school，原文說的是孩子一旦確診（Once your child is diagnosed）以後，才要讓學校知道，那是評估之後的事。(C) 等孩子長大，原文沒有這樣說；(D) 原文說學校會在課堂上做調整，沒有說要送孩子去特殊學校。
+逐段中譯
+第 1 段大多數家長都很怕接到學校的通知或電話，說孩子的行為「不正常」。如果孩子因為不專心、坐不住、做事不經思考，在學業表現和人際生活上都出了問題，那他們很可能有注意力不足過動症（AD/HD）。
+第 2 段注意力不足過動症是一種神經方面的疾患，原因不在家庭環境，而在生理和遺傳。症狀通常在幼年時期出現，主要的特徵是注意力不足、過動和衝動。注意力不足的孩子，很難專心完成一件工作，或學習新的東西。過動的孩子好像總是靜不下來，他們常常說自己需要一直忙，也可能想同時做好幾件事。衝動的孩子常常不經思考就行動，他們常常脫口說出不恰當的話，或是在對話中很難等別人說完再說。
+第 3 段大多數孩子偶爾都會不專心、過動或衝動。只有當這些行為和年齡不相稱，而且影響到生活的各個方面，才會診斷為這種疾患。憂鬱、焦慮和學習障礙，可能和注意力不足過動症同時存在。所以，如果懷疑孩子有注意力不足過動症，請專業人員評估是非常重要的。
+第 4 段孩子一旦確診有注意力不足過動症，一定要讓學校知道，學校才能提供適當的課業和人際支持。學校應該對這項資訊保密，通常也能在課堂上做一些調整，配合孩子的學習需求。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。這一篇沒有一句話直接點出全文中心思想，要讀完各段，自己歸納。
+第 1 段If your child’s academic performance and social life is suffering because they don’t pay attention, can’t sit still and act without thinking, it is most likely that they have AD/HD (Attention Deficit/ Hyperactivity Disorder).
+第 2 段AD/HD is a neurological disorder which stems not from the home environment, but from biological and genetic causes.
+第 3 段Therefore, if a child is suspected of AD/HD, it is very important that he or she be evaluated by a professional.
+第 4 段Once your child is diagnosed with AD/HD, it is important to let the school know so that they can provide appropriate academic and social support.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體說明文 Expository
+組織方式定義 Definition這一類怎麼辨識 →
+關鍵轉折詞Ifnot from … but fromThereforeOnceso that
+綱要
+大多數父母都怕學校說孩子的行為「不正常」；(If) 如果孩子因為不專心、坐不住、衝動行事而影響課業和人際，很可能是注意力不足過動症 (AD/HD)。
+AD/HD 是一種神經系統疾病，(not from … but from) 起因不是家庭環境，而是生理和遺傳，症狀通常在幼年出現。
+主要特徵是不專心、過動和衝動：不專心的孩子難以完成工作或學新東西，過動的孩子靜不下來，衝動的孩子做事不經思考，常脫口說出不得體的話。
+多數孩子偶爾也會這樣，要是行為和年齡不相稱、又影響生活各方面，才會診斷為 AD/HD，(Therefore) 所以懷疑孩子有 AD/HD 時，一定要請專業人員評估。
+(Once) 孩子一旦確診，應該告訴學校，(so that) 讓學校提供適當的課業和人際支持；學校應該保密，通常也能在教室裡做些調整，配合孩子的學習需要。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 15 個、參考字彙 12 個、字詞搭配 15 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+dread[drɛd]v.很怕、害怕四級第 1 段詞彙題考過 1 次：115 學測第 6 題 dreads（答案）
+normal[ˈnɔrməl]adj.正常的三級第 1 段詞彙題考過 1 次：87 聯考第 2 題 normally（答案）
+performance[pɚˈfɔrməns]n.表現三級第 1 段詞彙題考過 2 次：98 指考參考試卷第 10 題（誘答）、83 推薦甄選第 4 題（誘答）
+symptom[ˈsɪmptəm]n.症狀五級第 2 段詞彙題考過 1 次：97 指考第 7 題 symptoms（答案）
+inappropriate （詞彙表：appropriate）[ˌɪnəˈproʊpriɪt]adj.不恰當的四級第 2 段詞彙題考過 1 次：87 推薦甄選第 5 題 inappropriate（誘答）
+comment[ˈkɑmɛnt]n.話、評論四級第 2 段詞彙題考過 2 次：107 學測第 13 題（誘答）、102 學測第 4 題（答案）
+diagnose[ˌdaɪəgˈnoʊs]v.診斷五級第 3 段詞彙題考過 3 次：96 指考第 1 題 diagnosed（誘答）、87 推薦甄選第 1 題 diagnoses（誘答）、87 聯考第 6 題（答案）
+depression[dɪˈprɛʃən]n.憂鬱四級第 3 段詞彙題考過 2 次：108 指考第 7 題（誘答）、84 推薦甄選第 4 題（誘答）
+anxiety[æŋˈzaɪəti]n.焦慮四級第 3 段詞彙題考過 1 次：99 學測第 13 題（誘答）
+suspect[səˈspɛkt]v.懷疑（be suspected of 疑似有）三級第 3 段詞彙題考過 1 次：102 學測第 14 題 suspected（誘答）
+evaluate[ɪˈvæljuˌeɪt]v.評估四級第 3 段詞彙題考過 1 次：101 指考第 2 題 evaluates（誘答）
+professional[prəˈfɛʃənəl]n.專業人員四級第 3 段詞彙題考過 1 次：82 聯考第 6 題（誘答）
+information[ˌɪnfɚˈmeɪʃən]n.資訊三級第 4 段詞彙題考過 1 次：88 聯考第 1 題（誘答）
+confidential[ˌkɑnfəˈdɛnʃəl]adj.機密的、保密的五級第 4 段詞彙題考過 3 次：105 指考第 9 題（誘答）、104 指考第 7 題（誘答）、98 指考第 7 題（誘答）
+consult[kənˈsʌlt]v.請教、諮詢四級第 52 題詞彙題考過 1 次：103 學測第 5 題 consults（答案）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+hyperactivity[ˌhaɪpɚækˈtɪvəti]n.過動表外第 1 段
+neurological[ˌnʊrəˈlɑʤɪkəl]adj.神經的、神經方面的表外第 2 段
+biological[ˌbaɪəˈlɑʤɪkəl]adj.生物的、生理的五級第 2 段
+genetic[ʤəˈnɛtɪk]adj.遺傳的、基因的五級第 2 段
+impulsivity[ˌɪmpʌlˈsɪvəti]n.衝動表外第 2 段
+inattentive[ˌɪnəˈtɛntɪv]adj.不專心的表外第 2 段
+hyperactive[ˌhaɪpɚˈæktɪv]adj.過動的表外第 2 段
+impulsive[ɪmˈpʌlsɪv]adj.衝動的表外第 2 段
+blurt[blɝt]v.（blurt out）脫口而出表外第 2 段
+accommodation[əˌkɑməˈdeɪʃən]n.調整、配合（make accommodations 為了配合需要做調整）五級第 4 段
+attentive[əˈtɛntɪv]adj.專心的、注意力集中的表外第 51 題
+over-cautiously （詞彙表：cautious）[ˌoʊvɚˈkɔʃəsli]adv.過度謹慎地五級第 51 題
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+pay attention專心第 1 段原文：they don’t pay attention
+sit still坐著不動第 1 段原文：can’t sit still
+It is likely that + 子句很可能……第 1 段原文：it is most likely that they have AD/HD
+stem from + N源自……第 2 段原文：stems not from the home environment, but from biological and genetic causes
+not A but B不是 A，而是 B第 2 段原文：not from the home environment, but from biological and genetic causes
+show up出現第 2 段原文：typically show up in early childhood
+have difficulty + V-ing……有困難第 2 段原文：have difficulty focusing on completing a task
+at once同時第 2 段原文：several tasks at once
+blurt out + N脫口說出……第 2 段原文：blurt out inappropriate comments
+take turns in conversation輪流說話第 2 段原文：taking turns in conversation
+at times有時候第 3 段
+It is when + 子句 + that + 子句正是在……的時候，才……第 3 段原文：It is when these behaviors are inappropriate for their age and affect different areas in their lives that the disorder is diagnosed
+be diagnosed with + 疾病診斷出……第 4 段原文：is diagnosed with AD/HD
+keep + sth + confidential對……保密第 4 段原文：keep this information confidential
+make accommodations做出調整第 4 段原文：make accommodations in the classroom
+← 上一篇篇目一覽下一篇 →
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

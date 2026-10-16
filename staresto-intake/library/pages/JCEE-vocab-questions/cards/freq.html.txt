@@ -1,0 +1,21 @@
+Source: https://github.com/staresto-create/JCEE-vocab-questions/blob/7342ffeafc4870943b9531ec57e0c5b0c39acbe8/cards/freq.html
+Author: staresto-create ZZSH
+Title: 學測全卷用字統計 · 考古題用字的級數分布
+Noncommercial educational text only
+
+學測全卷用字統計
+學測 83–115 · 35 份試卷 × 高中英文參考詞彙表
+83 到 115 學年度學測 35 份試卷，文章、題目和選項全部算進來，看每個字出現在幾份試卷、一共出現幾次，再依大考中心《高中英文參考詞彙表》分級。
+各級的字在試卷用字裡占多少
+各級的字在幾份試卷出現過
+怎麼算
+字形一律算回詞彙表的詞條：went 算 go，studies 算 study，eventually 算 eventual，unknown 算 know，-ing、-ed 形容詞算回動詞；另外 reader 算 read、explorer 算 explore，-er、-or 的字也算回原字。有連字號的字拆開來算，片語也拆成單字來算；人名、地名、機構名稱等專有名詞不算。
+「份數」是這個字出現在幾份試卷裡，最多 35 份；「次數」是 35 份試卷合計出現幾次。清單先依份數排列，份數一樣再看次數。份數比次數更能看出年年都會用到的字，因為只看次數的話，一篇講蜜蜂的閱讀測驗就能讓 bee 排到很前面。
+有些字主要出現在閱讀測驗的題目裡，例如 Which of the following is true according to the passage? 這一句的 following、true、according、passage，清單上標成「題目用語」：學生先看懂題目才能作答，所以這些字照樣排名。
+詞彙表覆蓋清單算的是學測、指考詞彙題的選項，這一頁算的是整份學測試卷，兩邊的數字不能拿來互相比較；清單上每個字旁邊的「詞彙題」連結，會開啟這個字在覆蓋清單上的那一列。
+級別
+份數
+類別
+載入清單中…
+回題庫首頁 · 單字記憶卡 · 詞彙表覆蓋清單 · 字根家族表
+本題庫自己寫的部分（解析、中譯、分類、標註與編排）採用 CC BY-NC 4.0（姓名標示─非商業性）授權：可以分享，但須註明出處，不得用於商業用途。試題來源與完整說明請見使用與著作權。

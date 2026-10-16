@@ -1,0 +1,55 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dzres100-33/index.html
+Author: staresto-create ZZSH
+Title: 指考 100年研究用試卷（卷二） 篇章結構 第33題詳解（掌握段落內語句的連貫性與一致性）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 指考 100年研究用試卷（卷二） ／ 第33題
+指考 100年研究用試卷（卷二） 篇章結構 第33題
+選文：社區菜園（Growing Your Own Food）
+掌握段落內語句的連貫性與一致性線索：概括—列舉呼應、舉例、結論的位置提示詞
+(A)As a newcomer to vegetable gardening, Mayberry is hardly alone.在種菜這件事上，新手 Mayberry 一點也不孤單。
+(B)This year, some 43 million U.S. households will grow vegetables, fruit or herbs.今年約有四千三百萬戶美國家庭會種蔬菜、水果或香草。
+(C)Many of Mayberry’s neighbors have become healthy by eating organic vegetables.Mayberry 的許多鄰居因為吃有機蔬菜而變得健康。
+(D)That is, a dollar invested in seeds and seedlings can yield more than $8 worth of produce.也就是說，投入一美元的種子和幼苗，可以產出價值八美元以上的作物。
+(E)Along with dozens of her neighbors, Mayberry was planting cucumbers, carrots, onions and tomatoes.Mayberry 和數十位鄰居一起種下小黃瓜、胡蘿蔔、洋蔥和番茄。
+(F)Still others see stretching and bending in the garden as a worthy supplement to huffing and puffing in the local gym.還有些人把在園子裡伸展彎腰，看成上健身房氣喘吁吁之外的好補充。
+答案：(B) This year, some 43 million U.S. households will grow vegetables, fruit or herbs.
+題目編號：Dzres100_33
+解析
+先看空格前面。 前一句只有四個字：The numbers are impressive.（數字很驚人。）說了「數字」，卻一個數字也沒給。
+再看空格後面。 後面是 And an estimated 21 percent of food gardeners will be first-timers like Mayberry.（而且估計有兩成一的種菜者是像 Mayberry 一樣的新手。）And 表示這是再加一個數字——前面必須先有第一個。
+B 就是第一個數字。
+如果你選了 D（也就是說，投入一美元的種子和幼苗，可以產出價值八美元以上的作物。）：D 也帶數字。但 D 以 That is（也就是說）開頭，作用是解釋前面剛講過的一句話；而「數字很驚人」不需要被解釋成投資報酬率。D 講的是省錢，那是第三段的事。
+【下次先看這裡】前面說「數字很驚人」「原因有好幾個」，後面卻沒有東西接上，空格就是那個數字或那些原因。
+線索與數據
+線索種類概括—列舉呼應、舉例、結論的位置提示詞
+線索在哪前一句 The numbers are impressive ↔ 數字；後句 And
+答對率本場考試不公布統計
+本篇題型6選5・刪去法不收尾
+多出來的那一個：C
+(C)Many of Mayberry’s neighbors have become healthy by eating organic vegetables.Mayberry 的許多鄰居因為吃有機蔬菜而變得健康。
+C 裡有 Mayberry、有 neighbors、有蔬菜、有健康——全篇的關鍵詞它幾乎全中，是六個選項裡字面最像的一個。 但五格都放不下：
+格
+那一格在等什麼
+C 為什麼不行
+33
+一個驚人的數字
+C 沒有數字
+共同點：全篇問的是「為什麼開始種菜」，C 答的是「種菜以後怎麼樣了」。
+【下次先看這裡】關鍵詞重疊最多的那一個，常常正是多出來的。先問「這篇從頭到尾在回答什麼問題」，再看它答的是不是同一個問題。
+展開本題所在的整篇選文與中文翻譯
+本篇共 5 格、6選5；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+Helen Mayberry had never dug a hole in her life. She never even had her hands in dirt, not even once, she claimed. Yet this spring, the 77-year-old retiree from Galena, Illinois, was getting down and dirty. 31 Each of her neighbors had paid $25 for a 10-by-10 plot in a community garden taking shape on a donated acre of land, in this community of about 3,300 in the northwestern tip of the state of Illinois.
+32 Across the country during this time of recession and economic anxiety, Americans of all ages are flocking into their gardens to grow their own food. The numbers are impressive. 33This year, some 43 million U.S. households will grow vegetables, fruit or herbs. And an estimated 21 percent of food gardeners will be first-timers like Mayberry.
+When asked why they became enthusiastic about gardening, many of them cite the chilling effects of the recession, and the fact that gardening can reap financial rewards. 34 Others voice concerns over the purity and safety of food and think planting in the backyard can ensure that only wholesome products wind up on the dinner table. 35 And as gasoline prices rise again, garden work is seen as an economical vacation from stress. In a down economy, people turn the soil to save on food, and gain on taste.
+中譯
+Helen Mayberry 這輩子從沒挖過洞。她說自己連一次都沒把手伸進泥土裡過。然而今年春天，這位來自伊利諾州加利納、七十七歲的退休人士，卻蹲下身子弄得一身泥。31 她的每一位鄰居都付了二十五美元，在一塊捐出來的一英畝土地上取得十呎見方的一小塊地；這座社區菜園正在成形，而這個社區位於伊利諾州西北端，人口約三千三百人。
+32 在這段經濟衰退、人心不安的時期，全美各個年齡層的人都湧進自家園子種食物。這些數字很可觀。33 而且估計有百分之二十一的種菜人，會像 Mayberry 一樣是頭一回下田。
+問他們為什麼變得熱衷園藝，很多人提到經濟衰退帶來的寒意，以及種菜確實能帶來金錢上的回報。34 另一些人則是擔心食物乾不乾淨、安不安全，認為在自家後院種植可以確保端上餐桌的都是好東西。35 而隨著油價再度上漲，園藝工作成了一種既省錢又能紓壓的度假方式。在景氣低迷的時候，人們翻動土壤，省下伙食費，也換來好味道。
+← 第32題回到互動練習第34題 →
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

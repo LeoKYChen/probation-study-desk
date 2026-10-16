@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z109-13/index.html
+Author: staresto-create ZZSH
+Title: 109 年指考克漏字第13題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 109 年指考 ／ 第13題
+109 年指考 克漏字 第13題
+字彙選義線索：句內答對率 48%
+答對率 48%：當年每 100 位考生，有 48 位答對。
+...is active in assisting consumers involved in 13 with businesses or manufacturers.
+(A)references
+(B)shortages
+(C)purchases
+(D)disputes
+答案：(D) disputes
+題目編號：Z109_13（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+disputes with businesses or manufacturers（與企業或製造商的糾紛）表示委員會積極協助與廠商發生消費糾紛的消費者；references／shortages／purchases 都不符合此處語意。
+深入解析
+你可能會這樣想
+dispute 你大概只記得動詞的「爭論、提出異議」，沒認出它當名詞時是「糾紛、爭議」，而且是消費新聞裡的高頻字——消費糾紛就是 consumer disputes。
+怎麼判斷
+四個選項都是名詞複數，文法上都填得進 involved in ___ with businesses，可見這一格考的是語意。有兩個線索要一起看：一是同句前半的 assisting consumers（協助消費者）——既然需要協助，表示有麻煩要處理；二是 with businesses or manufacturers（與企業或製造商之間的），表示這件事發生在雙方之間。既要有麻煩、又要是雙方之間的，只有糾紛說得通。be involved in a dispute with sb 是很常見的組合。
+誘答選項
+purchases（購買）最誘人，因為消費者本來就在購買，involved in purchases 文法上也通；但「協助消費者處理與企業之間的購買」語意空洞，接不上 assisting 所暗示的有問題要解決。references（參考資料、推薦函）與 shortages（短缺）都不是消費者與企業之間的關係，套進 with businesses 這個結構就讀不通。鑑別度 60，分開的是有沒有把 assisting 這個字讀進來——它是整句最關鍵的提示，卻很容易被當成無關緊要的背景。
+常考字詞與句型
+a dispute with sb（與某人的糾紛）、be involved in（涉入、牽涉其中）、settle a dispute（解決糾紛）、raise consumer awareness（提高消費意識）、manufacturer（製造商）、well-being（福祉）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：109學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The Consumer Protection Act in Taiwan was enacted on January 11, 1994. The Act demonstrated the government's efforts to protect consumers' rights and interests. The Consumer Protection Commission, the current Consumer Protection Committee, 11 the supervisor and coordinator for the various consumer protection organizations that put this law into practice. In order to improve the well-being of consumers in Taiwan, the Committee advocates fair trade and 12 pricing for goods and services. The Committee also organizes educational programs to raise consumer awareness, and is active in assisting consumers involved in 13 with businesses or manufacturers.
+Since its establishment, the Consumer Protection Committee has taken measures that emphasize product safety and sanitation. These measures also ensure that all labels and advertisements 14 to regulations. In addition, the Committee collaborates with various international consumer protection organizations to respond to problems involving cross-border trade and business. 15 its regulatory power and administrative resources, the Committee plays a crucial role in protecting consumers in Taiwan.
+中譯：台灣的《消費者保護法》於 1994 年 1 月 11 日制定，展現出政府保障消費者權益的努力。消費者保護委員會（即現在的行政院消費者保護會）擔任各消費者保護組織的監督與協調者角色，負責推動這項法律的落實。為了提升台灣消費者的福祉，該委員會提倡公平交易與合理的商品及服務定價；委員會也舉辦教育宣導活動以提高消費者意識，並積極協助消費者處理與企業或製造商之間的糾紛。
+自成立以來，消保會採取了強調產品安全與衛生的各項措施，這些措施也確保所有標示與廣告都符合法規規定。此外，該委員會也與各國際消費者保護組織合作，共同因應跨國貿易與商業所涉及的問題。憑藉其管理權力與行政資源，消保會在保障台灣消費者權益上扮演著至關重要的角色。
+📋 內容大意
+Taiwan's 1994 Consumer Protection Act created a committee to oversee consumer bodies, promote fair trade and help aggrieved shoppers.
+It has since pushed product safety, checked labels and advertisements, and joined international partners on cross-border trade.
+← 第12題回到109 年指考第14題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

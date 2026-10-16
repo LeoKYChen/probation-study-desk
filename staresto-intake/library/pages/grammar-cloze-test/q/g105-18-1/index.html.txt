@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g105-18-1/index.html
+Author: staresto-create ZZSH
+Title: 105 年學測克漏字第18題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 105 年學測 ／ 第18題
+105 年學測 克漏字 第18題
+慣用語／片語線索：句內答對率 66%
+答對率 66%：當年每 100 位考生，有 66 位答對。
+Bill and Sam were soon desperate and decided to 18 the little terror.
+(A)hold on to
+(B)get rid of
+(C)make fun of
+(D)take advantage of
+答案：(B) get rid of
+題目編號：G105_18_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】get rid of 固定片語「擺脫」；hold on to（抓住不放，語意相反）、make fun of（嘲笑）、take advantage of（利用）都不合。
+深入解析
+你可能會這樣想
+卡住這一題的常常不是選項，而是受詞 the little terror。terror 你背的是「恐怖、驚駭」，看到 the little terror 翻不出來，整句讀不懂，只好硬猜。先把這個字處理掉：劍橋詞典在 terror 底下另收一個非正式用法，指「行為頑劣、難以管教的人（尤指小孩）」，例句就是 My brother is a little terror.（我弟弟是個小魔王。）所以 the little terror 指的就是前面那個 mischievous boy，中文說「那個小麻煩精」。
+怎麼判斷
+把這一句和下一句連起來看：Bill and Sam were soon desperate and decided to {18} the little terror. They lowered the price to $1,500.（比爾和山姆很快就束手無策，決定要對這個小麻煩精做某件事。他們把價錢降到 $1,500。）「降價」這個動作就是答案的保證 — 會降價，是因為急著把人脫手，所以空格要填「擺脫、除掉」，也就是 get rid of。反過來用 hold on to 檢驗更清楚：如果綁匪想把人「緊抓不放」，就沒有降價的道理，前後矛盾，直接淘汰。
+誘答選項
+hold on to（緊抓不放、保留）例 Hold on to your ticket.（票要收好。）語意與本題相反。make fun of（取笑、嘲弄）— 文中被整慘的是綁匪，被取笑的對象方向不對，而且接不上下一句的降價。take advantage of（利用；占……的便宜）例 take advantage of the opportunity（把握機會）。這三個和答案一樣，都是三個字一組、整組當一個及物動詞用的片語，受詞一律擺在最後 — 這一組四個一次背齊最划算。
+常考字詞與句型
+get rid of（除掉、擺脫）、hold on to（緊抓不放、保留）、make fun of（取笑、嘲弄）、take advantage of（利用；占……的便宜）、be desperate（走投無路的、不顧一切的）、lower the price（降價）、hide sb in a cave（把某人藏在山洞裡）。其中 get rid of 這一組考過 3 個年度，89 年第 32 題 →、92 年第 25 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Bill and Sam decided to kidnap the son of a banker to compensate for their business loss. They kidnapped the boy and hid him in a cave. They asked for a ransom of $2,000 to return the boy.
+16 , their plan quickly got out of control. Their young captive 17 to be a mischievous boy. He viewed the kidnapping as a wonderful camping trip. He demanded that his kidnappers play tiring games with him, such as riding Bill as a horse for nine miles. Bill and Sam were soon desperate and decided to 18 the little terror. They lowered the price to $1,500.
+Yet, knowing perfectly well 19 a troublemaker his son was, the father refused to give them any money. 20 , he asked the kidnappers to pay him $250 to take the boy back. To persuade the boy to return home, Bill and Sam had to tell him that his father was taking him bear-hunting. The kidnappers finally handed over the boy and $250 to the banker and fled town as quickly as they could.
+中譯：比爾和山姆決定綁架一位銀行家的兒子，藉此彌補他們生意上的損失。他們綁走了男孩，把他藏在一個山洞裡，並要求兩千美元的贖金才肯放人。然而，他們的計畫很快就失控了。這名年幼的人質原來是個調皮搗蛋的孩子，他把整場綁架當成一次美好的露營之旅，還要求綁匪陪他玩累人的遊戲，例如騎在比爾身上「當馬」走上九英里。比爾和山姆很快就束手無策，決定把這個小麻煩精送回去，並把贖金降到一千五百美元。然而，這位父親完全清楚自己兒子有多難搞，因此拒絕支付任何贖金。相反地，他還要求綁匪付他兩百五十美元，才願意把兒子接回去。為了說服男孩願意回家，比爾和山姆只好騙他說爸爸要帶他去獵熊。綁匪最終只好把男孩和兩百五十美元一起交給這位銀行家，然後盡快逃離小鎮。
+📋 內容大意
+Two men kidnapped a banker's son and held him for ransom to make up for financial losses.（敘事文）
+The kidnapped boy tormented his captors with exhausting games, forcing them to lower the ransom price out of desperation.（敘事文）
+The father demanded payment to take his troublemaking son back, leaving the kidnappers no choice but to pay him and flee.（敘事文）
+← 第17題回到105 年學測第19題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

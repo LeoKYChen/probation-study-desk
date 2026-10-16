@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z93m-29/index.html
+Author: staresto-create ZZSH
+Title: 93 年指考敏督利颱風受災地區考生補救考試克漏字第29題詳解（關係子句／疑問詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 93 年指考敏督利颱風受災地區考生補救考試 ／ 第29題
+93 年指考敏督利颱風受災地區考生補救考試 克漏字 第29題
+關係子句／疑問詞線索：句內
+We can try to guess 29 this or that might happen.
+(A)since
+(B)though
+(C)because
+(D)whether
+答案：(D) whether
+題目編號：Z93M_29（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+whether 引導名詞子句當 guess 的受詞，意思是「是否」。本句的 or 連接 this 與 that 兩個代名詞，它們就是 whether A or B 句型裡的兩個選項。since／though／because 都不能引導這種當受詞的名詞子句。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+看到句子裡有 or，你可能會想到 whether A or B（是否……）這個句型，回頭卻找不到兩個完整的子句，於是不敢確定；其實 A 與 B 不一定是子句，這一題就只是 this 與 that 兩個代名詞。另一種卡住的方式是把 since、because 讀成「因為」，覺得「我們可以猜，因為這件事可能發生」也講得通。
+怎麼判斷
+這一格與同一份試卷的第 18、21 兩題是同一組判斷方式的第三種情形：看空格前面接的是名詞還是動詞。第 18 題前面是名詞 jar、第 21 題前面是名詞 feast，兩題填的都是關係詞；本題前面是動詞 guess（猜測），動詞後面要的是受詞，所以空格帶出來的那一串是一個當受詞用的名詞子句，四個選項裡只有 whether 帶得出名詞子句。填進去是 guess whether this or that might happen（猜測這件事或那件事會不會發生）。至於句中那個 or，用國中數學的分配律驗算一次就清楚了：把 might happen 分配到 or 兩邊，還原成 whether this might happen or that might happen，兩邊都成立，可見 or 連的是 this 與 that 兩個代名詞，它們就是 whether A or B 的 A 與 B。並列結構的第二步是「確定 and 或 or 連的是哪兩樣」，這一題是很好的練習——層級抓錯，整題就錯了。
+誘答選項
+since、though、because 三個都是帶副詞子句的從屬連接詞，它們帶出來的子句是用來說明原因或讓步的，不能放在動詞後面當受詞。驗算方式很直接：把它們填進去讀一次，guess since this might happen 文法上說得通（guess 可以不接受詞），讀起來卻是「因為這件事可能發生，所以試著猜」，到底猜什麼完全沒有交代。
+常考字詞與句型
+guess whether + 子句（猜測是否……）、whether + 子句（是否……，可以整包當動詞的受詞）、this or that（這個或那個）、might（可能，表推測）、名詞子句當受詞（動詞後面接 whether 或 wh- 詞帶出的子句）、in some cases（在某些情況下）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Which would you wear to a football game, a sweater or a raincoat? 26 the raincoat if you thought there was a good chance of rain. Which basketball team is more likely to win, one that is 30 points ahead at the half or its opponent? Teams have been known to come from 27 to win, but the chances of overcoming that kind of lead are slim.
+28 of us can be perfectly sure about how things will turn out in the future. But we can, and often do, think of the possibilities. We can try to guess 29 this or that might happen.
+In some cases mathematics can help make these guesses more accurate. The branch of mathematics that helps make our guesses more accurate is called probability. Probability is the science of 30. It is among the fastest growing and most useful parts of today's mathematics.
+中譯：去看一場美式足球賽，你會穿毛衣還是雨衣？如果你認為很有可能下雨，你或許就會選擇穿雨衣。哪一支籃球隊比較有可能獲勝——是上半場就領先 30 分的那一隊，還是它的對手？球隊確實有可能從落後大幅追分逆轉獲勝，但要扭轉這麼大的差距，機會其實相當渺茫。我們當中沒有人能夠完全確定未來會如何發展，但我們可以，也經常會去思考各種可能性。我們可以嘗試猜測這件事或那件事是否會發生。在某些情況下，數學能幫助我們讓這些猜測更加準確。這門幫助我們讓猜測更精準的數學分支，就叫做機率。機率是研究不確定性的科學，它是當今數學中發展最快、也最實用的領域之一。
+📋 內容大意
+Sensible choices, from clothing to sport, rest on judging what is likely to happen.
+Nobody can be certain about the future, yet we constantly weigh the possibilities.
+Mathematics sharpens such guesses, and that branch, probability, is among its most useful today.
+← 第28題回到93 年指考敏督利颱風受災地區考生補救考試第30題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

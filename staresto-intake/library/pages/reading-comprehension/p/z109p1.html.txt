@@ -1,0 +1,145 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/z109p1.html
+Author: staresto-create ZZSH
+Title: 109 指考閱讀測驗：現代廢水處理流程｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 109 指考
+109 指考閱讀測驗：現代廢水處理流程
+Modern Wastewater Treatment Process
+指考 109年第 36–39 題4 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段Early civilizations often built drainage systems in urban areas to handle rainwater that ran down the street during a storm. The Romans constructed elaborate systems that also drained wastewater from the public baths. However, as the population of the cities grew, the old drainage systems became overloaded. During the Industrial Revolution, manufacturing waste was added to sewage, which increased the need for more efficient sewage treatment. In the mid-19th century, the first steps were taken to treat wastewater.
+第 2 段Sewage or wastewater treatment in modern times is the process of removing harmful physical, chemical, and biological elements from wastewater and house sewage. The whole process starts with screening out large objects such as paper and wood, and removing heavy materials like dirt. The screened wastewater is then ready to go through a series of concrete tanks for further treatment. In the second step, the sewage passes into the primary tanks. Here, human waste, called sludge, settles to the bottom while oils and grease float to the top, where they are collected. At the same time, organic matter like eggshells or coffee grounds in the sewage is broken down into smaller substances. The remaining sewage then enters the secondary tanks for the third stage of treatment. The solids that were not treated in the primary tanks are removed here through decomposition, which digests the material. Then, the liquid sewage is filtered through sand. This filtering process gets rid of almost all bacteria, as well as other solid particles that remain in the water. Finally, the wastewater flows into the last tanks, where the chemical chlorine is added to kill the remaining bacteria. After the bacteria are destroyed, the chlorine is eliminated from the water, and the treated clean water is discharged into a river or the ocean.
+題目
+36.What is the passage mainly about?
+(A)The elements of sewage.
+(B)The treatment of wastewater.
+(C)The history of draining systems.
+(D)The ways to control manufacturing waste.
+37.Which of the following is NOT a reason for developing more effective systems to deal with wastewater?
+(A)Population growth.
+(B)Increasing manufacturing waste.
+(C)Overloaded drainage systems.
+(D)Heavy rainfall due to climate change.
+38.Which of the following can be removed in the primary tanks?
+(A)Wood.
+(B)Heavy material.
+(C)Grease.
+(D)Organic matter.
+39.What is the main reason that liquid sewage needs to go through sand?
+(A)To eliminate bacteria.
+(B)To drain water.
+(C)To dissolve solid particles.
+(D)To remove oil.
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+36
+(B)
+74%
+51
+37
+(D)
+78%
+52
+38
+(C)
+50%
+58
+39
+(A)
+69%
+57
+答對率與鑑別度出處：大考中心 109 學年度指定科目考試統計圖表：英文科答對率及鑑別度表
+每一題的依據句
+第 36 題 主旨題 Main idea
+依據句：全文要讀完整篇才能判斷，不在某一句裡。
+第 1 段說明為什麼需要更有效率的汙水處理，第 2 段從篩除大型物品、初級池、二級池、沙過濾一直講到加氯消毒，一步一步介紹現代的廢水處理，所以是 (B)。(C) 排水系統的歷史只在第 1 段，是全文的引子，過於狹隘；(A) 照抄第 2 段的 elements，汙水裡的有害成分只是第 2 段第一句下定義時提到的，過於狹隘；(D) 照抄第 1 段的 manufacturing waste，製造業的廢棄物只是需要處理汙水的原因之一，全文沒有談怎麼控制這些廢棄物，偏離主題。
+錯誤選項：(A) 過於狹隘（只講第 2 段）；(C) 過於狹隘（只講第 1 段）；(D) 偏離主題
+第 37 題 細節題（未提及） Supporting details
+第 1 段as the population of the cities grew, the old drainage systems became overloaded.
+第 1 段manufacturing waste was added to sewage, which increased the need for more efficient sewage treatment.
+第 1 段說城市人口增加（the population of the cities grew），是 (A)；舊的排水系統不堪負荷（became overloaded），是 (C)；工業革命時期製造業的廢棄物加進汙水，更需要有效率的處理方法，是 (B)。第 1 段雖然提到早期排水系統是用來處理暴風雨時的雨水，但全文沒有提到氣候變遷帶來大雨，所以選 (D)。
+第 38 題 細節題 Supporting details
+第 2 段oils and grease float to the top, where they are collected.
+原文 → 正確選項
+grease → Grease
+這一題要照處理的步驟一步一步對。第 1 步，汙水還沒進池子以前，先篩掉紙張、木頭（wood）等大型物品，去除泥土等重物（heavy materials）；第 2 步才進初級池（primary tanks），這時汙泥沉到池底，油和油脂（grease）浮到上面，收集起來（collected），也就是在初級池去除了，所以是 (C)。(A) 照抄 wood、(B) 照抄 heavy material，都是在第 1 步、進初級池以前就去除了；(D) 照抄 organic matter，有機物在初級池只是分解成比較小的物質，還留在汙水裡，跟著進入二級池。
+第 39 題 細節題 Supporting details
+第 2 段This filtering process gets rid of almost all bacteria
+原文 → 正確選項
+gets rid of → eliminate
+第 2 段說液態汙水用沙過濾，這道程序可以去除（gets rid of）幾乎所有的細菌，選項換成 eliminate，所以是 (A)。(C) 照抄 solid particles，沙過濾也去除殘留的固體微粒，但是去除，不是溶解；(D) 照抄 oil，油和油脂是在初級池浮上來收集的；(B) 照抄第 1 段的 drain，排水系統是早期處理雨水的方法，和沙過濾無關。
+逐段中譯
+第 1 段早期的文明常在都市地區興建排水系統，處理暴風雨時順著街道流下的雨水。羅馬人建造了精密的排水系統，也排放公共浴場的廢水。然而，隨著城市人口增加，舊的排水系統變得不堪負荷。工業革命時期，製造業的廢棄物加進了汙水，處理汙水更需要有效率的方法。到了 19 世紀中期，人類開始踏出處理廢水的第一步。
+第 2 段現代的汙水（廢水）處理，是把廢水和家庭汙水中有害的物理、化學和生物成分去除的過程。整個過程從篩除紙張、木頭等大型物品開始，同時去除泥土等重物。篩過的廢水接著要流經一連串的混凝土池，做進一步的處理。第二步，汙水流進初級池。在這裡，人類的排泄物，也就是所謂的汙泥，沉到池底，油和油脂則浮到上面，收集起來。同時，汙水裡蛋殼、咖啡渣等有機物，會分解成比較小的物質。剩下的汙水接著進入二級池，做第三階段的處理。初級池沒有處理到的固體，在這裡經過分解，消化掉。然後，液態汙水用沙過濾。這道過濾程序可以去除幾乎所有的細菌，以及水中殘留的其他固體微粒。最後，廢水流進最後的池子，加入氯這種化學物質，殺死剩下的細菌。細菌消滅以後，再把水中的氯除去，處理乾淨的水就排進河川或海洋。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。沒有列出的段落，就是沒有主旨句，請對照「這一篇的文章結構」裡的綱要，找出那一段的重點。
+第 2 段Sewage or wastewater treatment in modern times is the process of removing harmful physical, chemical, and biological elements from wastewater and house sewage.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體說明文 Expository
+組織方式時序發展 Chronological這一類怎麼辨識 →
+關鍵轉折詞HoweverIn the second stepAt the same timeThenFinally
+綱要
+早期文明就建排水系統處理雨水，(However) 然而城市人口增加，舊系統不堪負荷，工業革命時製造業廢棄物又混進汙水，19 世紀中期開始處理廢水。
+現代汙水處理是把廢水和家庭汙水中有害的物理、化學、生物成分去除：第一步先篩掉紙、木頭等大型物品，去除泥土等重物，接著汙水進入一連串混凝土池。
+(In the second step) 第二步，汙水進入初級池，人類排泄物（汙泥）沉到底部，油脂浮到上面收集起來，(At the same time) 同時蛋殼、咖啡渣等有機物分解成較小的物質。
+剩下的汙水進入二級池做第三階段處理，初級池沒處理到的固體在這裡分解去除；(Then) 接著液態汙水用沙過濾，去除幾乎所有細菌和殘留的固體微粒。
+(Finally) 最後廢水流進最後的池子，加氯殺死剩下的細菌，細菌消滅以後再除去水中的氯，處理乾淨的水排進河川或海洋。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 17 個、參考字彙 11 個、字詞搭配 11 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+construct[kənˈstrʌkt]v.建造四級第 1 段詞彙題考過 2 次：109 學測第 7 題（誘答）、92 指考第 9 題 constructing（誘答）
+elaborate[ɪˈlæbərət]adj.精密的、複雜的五級第 1 段詞彙題考過 1 次：104 指考第 9 題 elaborating（誘答）
+drain[dreɪn]v.排放、排出三級第 1 段詞彙題考過 1 次：114 學測第 3 題 draining（誘答）
+manufacturing （詞彙表：manufacture）[ˌmænjəˈfækʧərɪŋ]n.製造業四級第 1 段詞彙題考過 1 次：94 學測第 3 題 manufactures（誘答）
+efficient[ɪˈfɪʃənt]adj.有效率的三級第 1 段詞彙題考過 7 次：107 學測第 15 題（誘答）、101 學測第 7 題（誘答）、97 指考第 2 題 efficiently（誘答）、89 聯考第 13 題（誘答）、88 推薦甄選第 9 題（答案）、88 聯考第 3 題（誘答）、85 推薦甄選第 8 題 efficiently（誘答）
+process[ˈprɑsɛs]n.過程三級第 2 段詞彙題考過 4 次：100 學測第 8 題（答案）、96 指考第 2 題（誘答）、84 推薦甄選第 2 題（誘答）、81 聯考第 1 題（誘答）
+physical[ˈfɪzɪkəl]adj.物理的四級第 2 段詞彙題考過 2 次：103 學測第 3 題 physically（誘答）、96 指考第 4 題 physically（誘答）
+concrete[ˈkɑnkrit]adj.混凝土的四級第 2 段詞彙題考過 1 次：102 學測第 11 題（誘答）
+float[floʊt]v.浮三級第 2 段詞彙題考過 1 次：113 學測第 2 題 floating（誘答）
+remaining （詞彙表：remain）[rɪˈmeɪnɪŋ]adj.剩下的三級第 2 段詞彙題考過 4 次：91 學測第 3 題（誘答）、88 聯考第 5 題 remained（誘答）、85 聯考第 10 題 remains（誘答）、82 聯考第 7 題 remained（答案）
+solid[ˈsɑləd]n.固體三級第 2 段詞彙題考過 2 次：109 學測第 5 題（誘答）、106 學測第 1 題 solidly（誘答）
+digest[daɪˈʤɛst]v.消化四級第 2 段詞彙題考過 1 次：97 學測第 3 題（答案）
+filter[ˈfɪltɚ]v.過濾五級第 2 段詞彙題考過 1 次：110 指考第 5 題 filtering（答案）
+bacteria[bækˈtɪriə]n.細菌三級第 2 段詞彙題考過 1 次：94 學測第 13 題（誘答）
+particle[ˈpɑrtɪkəl]n.微粒、顆粒五級第 2 段詞彙題考過 1 次：100 學測第 6 題 particles（誘答）
+destroy[dɪˈstrɔɪ]v.消滅三級第 2 段詞彙題考過 3 次：100 學測第 7 題（誘答）、83 推薦甄選第 3 題 destroys（誘答）、83 聯考第 9 題（誘答）
+eliminate[ɪˈlɪməˌneɪt]v.除去四級第 2 段詞彙題考過 5 次：106 學測第 4 題（誘答）、103 學測第 12 題 eliminated（答案）、93 指考第 5 題 eliminates（誘答）、92 學測補考第 5 題（誘答）、83 聯考第 9 題（誘答）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+drainage[ˈdreɪnɪʤ]n.排水（drainage system 排水系統）表外第 1 段
+overloaded[ˌoʊvɚˈloʊdɪd]adj.超過負荷的表外第 1 段
+sewage[ˈsuɪʤ]n.汙水表外第 1 段
+biological[ˌbaɪəˈlɑʤɪkəl]adj.生物的五級第 2 段
+series[ˈsɪriz]n.一連串、一系列（a series of）五級第 2 段
+sludge[slʌʤ]n.汙泥表外第 2 段
+grease[gris]n.油脂六級第 2 段
+decomposition[ˌdikəmpoʊˈzɪʃən]n.分解表外第 2 段
+chlorine[ˈklɔrin]n.氯表外第 2 段
+discharge[dɪsˈʧɑrʤ]v.排放六級第 2 段
+dissolve[dɪˈzɑlv]v.溶解五級第 39 題
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+add A to B把 A 加進 B第 1 段原文：manufacturing waste was added to sewage
+the need for + N對……的需求第 1 段原文：increased the need for more efficient sewage treatment
+take steps to + V採取步驟……第 1 段原文：the first steps were taken to treat wastewater
+remove A from B從 B 去除 A第 2 段原文：removing harmful physical, chemical, and biological elements from wastewater
+screen out + N篩除……第 2 段原文：screening out large objects
+a series of + N一連串的……第 2 段原文：a series of concrete tanks
+settle to the bottom沉到底部第 2 段原文：settles to the bottom
+float to the top浮到上層第 2 段
+break down + sth + into + N把……分解成……第 2 段原文：is broken down into smaller substances
+get rid of + N除掉……第 2 段原文：gets rid of almost all bacteria
+discharge + sth + into + 地方把……排放到……第 2 段原文：is discharged into a river or the ocean
+篇目一覽下一篇 →
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

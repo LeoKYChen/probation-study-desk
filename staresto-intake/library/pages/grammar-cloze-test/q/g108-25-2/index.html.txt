@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g108-25-2/index.html
+Author: staresto-create ZZSH
+Title: 108 年學測克漏字第25題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 108 年學測 ／ 第25題
+108 年學測 克漏字 第25題
+慣用語／片語線索：句內答對率 77%
+答對率 77%：當年每 100 位考生，有 77 位答對。
+In addition, the leftover material following the removal of fibers can even be used as a natural fertilizer back in the pineapple fields. 25 its low cost, this innovative material is already being used by many leading fashion companies to make their products.
+(A)Due to
+(B)Nothing but
+(C)In contrast to
+(D)On behalf of
+答案：(A) Due to
+題目編號：G108_25_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「由於成本低廉，這個創新材料已經被許多知名時尚公司採用」，Due to（由於）符合這個因果邏輯；Nothing but（只不過）、In contrast to（與……相反）、On behalf of（代表）都不合。
+深入解析
+你可能會這樣想
+表示原因你最先想到的一定是 because，但 because 後面要接完整子句，例如 Because it is cheap, ...。這一格空格後面是 its low cost，一個沒有動詞的名詞片語，所以要找的是幾個字合起來當一個介系詞用的那一型，不是連接詞——連接詞後面接的是子句。劍橋 English Grammar Today 的 Prepositions 條目就是這樣處理的：some pairs and groups of words operate like single prepositions，它列出的例子有 because of、in place of、in addition to、in front of、up to。先把這一步分清楚，選項馬上就篩掉一半。
+怎麼判斷
+能接名詞又表示原因的就是 Due to。整句是 Due to its low cost, this innovative material is already being used by many leading fashion companies（由於成本低廉，這個創新材料已經被許多知名時尚公司採用），前因後果順著走。用你更熟的說法對照一次：Due to its low cost 等於 Because of its low cost（後面接名詞），也等於 Because it is cheap（後面接子句）。同樣接名詞表原因的還有 owing to（由於）、on account of（由於），在正式寫作裡大致可以互換。順帶一提，早期有些用法書主張 due to 只能放在 be 動詞後面，例如 The delay was due to rain.，不適合放句首；但這個限制現在已被主要辭典與用法書視為過時的講究，這裡放句首完全站得住。
+誘答選項
+Nothing but（只不過是、只有）用來強調「除了……什麼都不是」，不表原因。In contrast to（與……相反、對比之下）表對比，但成本低和被採用之間是因果不是對比。On behalf of（代表……）用於代表某人出面做事，和句意無關。這個「原因 vs 讓步」的辨析是克漏字反覆出現的考法：109 年第 29 題 →就要你在 owing to（由於）和 in spite of（儘管）之間做選擇，兩題可以一起記。89 年第 30 題 →也是同一種考法，那一格的誘答就是 In spite of。
+常考字詞與句型
+due to（由於）、owing to（由於）、because of（因為，接名詞）、on account of（由於，接名詞）、because + 子句（因為……）、nothing but（只不過是）、in contrast to／with（與……相反）、on behalf of（代表……）、leading companies（龍頭企業、知名企業）。其中 due to 這一組考過 4 個年度，89 年第 30 題 →、106 年第 28 題 →、109 年第 29 題 →都出現過；owing to 考過 3 個年度，89 年第 30 題 →、109 年第 29 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The pineapple, a delicious tropical fruit, has been valued for centuries not only for its distinct and unique taste, but also for its miraculous health and medical benefits. But pineapples can also be a fashionable fruit: Pineapple leaves can 21 a substitute for leather.
+The idea was developed when a Spanish designer travelling to the Philippines observed a traditional Filipino shirt 22 together with the fibers of pineapple leaves. After five years of research, she created from pineapple leaves a material which, like real leather, can be used for making bags, shoes, and 23 textile products. It is an eco-friendly and biodegradable fiber.
+This eco-friendly leather has clear 24 for the environment, compared to real leather and synthetic leathers. It requires fewer chemicals, making it safer for the workers in factories. Its manufacture also leaves a smaller carbon footprint. In addition, the leftover material following the removal of fibers can even be used as a natural fertilizer back in the pineapple fields. 25 its low cost, this innovative material is already being used by many leading fashion companies to make their products.
+中譯：鳳梨是一種美味的熱帶水果，數百年來不只因其獨特的風味受人重視，其驚人的保健與醫療功效也備受推崇。但鳳梨其實還能成為一種時尚的水果：鳳梨葉能成為皮革的替代材料。這個想法的誕生，源於一位西班牙設計師到菲律賓旅行時，觀察到當地傳統襯衫是用鳳梨葉的纖維織成的。經過五年的研究，她成功用鳳梨葉開發出一種材質，能像真皮一樣用來製作包包、鞋子以及其他紡織產品，而且是一種環保、可生物分解的纖維。相較於真皮和人造皮革，這種環保皮革對環境有明顯的好處：它需要的化學品較少，讓工廠員工的工作環境更安全；製造過程留下的碳足跡也較小。此外，抽取纖維後剩餘的材料，還能拿回鳳梨田當作天然肥料使用。加上成本低廉，這項創新材質如今已被許多知名時尚品牌用來製作產品。
+📋 內容大意
+People have prized the pineapple for centuries for its taste and health benefits. Its leaves now make a fashionable substitute for leather.
+A Spanish designer in the Philippines saw a traditional shirt made from pineapple-leaf fiber. Five years of research turned the leaves into material for bags and shoes.
+It needs fewer chemicals than real or synthetic leather, so factory workers are safer. Leftover pulp feeds the fields, and its low cost attracts fashion companies.
+← 第24題回到108 年學測第26題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

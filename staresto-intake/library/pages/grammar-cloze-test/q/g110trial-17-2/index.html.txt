@@ -1,0 +1,41 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g110trial-17-2/index.html
+Author: staresto-create ZZSH
+Title: 110 年學測試辦考試克漏字第17題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 110 年學測試辦考試 ／ 第17題
+110 年學測試辦考試 克漏字 第17題
+字彙選義線索：句內
+But 17 is this helpful to us as a response to fear or cold?
+(A)how
+(B)where
+(C)what
+(D)whether
+答案：(A) how
+題目編號：G110試辦考試_17_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意疑問句「但這對我們作為對恐懼或寒冷的反應有『何』幫助？」，how（如何）符合這種質疑用途的疑問句；where（哪裡）、what（不能這樣接 is this helpful 這種結構）、whether（是否，不能這樣開頭構成直接疑問句）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是 wh- 詞，而 what 是最常用的一個，看到問句就想用它。這一格要先數空格後面那個句子缺不缺成分。
+怎麼判斷
+先數成分：___ is this helpful to us as a response to fear or cold?主詞是 this、動詞是 is、補語是 helpful，成分一個都不缺。既然不缺，what 就先排除——它是名詞性的疑問詞，進到句子裡一定要當主詞、受詞、介系詞的受詞或補語，這裡沒有位置給它。（同樣的判斷方式：93 年第 18 題 →、91 年第 25 題 →、90 年第 20 題 →、87 年第 26 題 →、84 年第 30 題 →。）剩下 how、where、whether，用語意分：前面才講完雞皮疙瘩是怎麼形成的，這一句用 But 一轉，要問的是「這東西對我們到底有什麼用」——問的是方式與用處，填 how。How is this helpful to us? 就是「這對我們有何幫助」。
+誘答選項
+what：成分已滿，塞不進去。where（哪裡）：問地點，與「有沒有用」無關。whether（是否）：它帶出的是名詞子句，不能直接放在句首構成一個帶問號的直接問句。
+常考字詞與句型
+How is this helpful?（這有什麼幫助）、be helpful to sb（對某人有幫助）、a response to（對……的反應）、fight-or-flight（戰或逃）、contract involuntarily（不由自主地收縮）。其中 be helpful to sb 這一組考過 3 個年度，91 年補考第 30 題 →、97 年第 18 題 →都出現過。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Goose bumps are one of those fight-or-flight reactions of the sympathetic nervous system. When you experience cold or fear, a nerve reaction is sent to the muscles, which then contract involuntarily. This muscle contraction causes your body hair to stand erect. The skin with standing body hair 16 a goose's skin after its feathers have been plucked—hence the name goose bumps. But 17 is this helpful to us as a response to fear or cold?
+Back in the days when our ancestors may have had a lot more body hair, this might have helped to keep them warm or scare an oncoming predator. These days, however, goose bumps are 18 to human beings.
+Goose bumps, or the reflex that causes them, also occur in many other mammals. Many mammals fluff up their fur when 19 , to look bigger and thus more dangerous. For example, when a porcupine encounters a predator, its long sharp pointed hairs will stand up as a means of 20 . In animals with a thick hair coat, the rising of hair traps more air between the hairs, providing another layer of insulation to keep them warm.
+中譯：雞皮疙瘩是交感神經系統「戰或逃」反應的其中一種。當你感到寒冷或恐懼時，神經反應會傳送到肌肉，使肌肉不自主地收縮，這種肌肉收縮會讓你的體毛豎立起來。豎起體毛的皮膚，看起來很像鵝被拔完羽毛後的皮膚——這也是「雞皮疙瘩」（goose bumps，字面意思為鵝皮疙瘩）這個名稱的由來。但這對我們面對恐懼或寒冷時真的有幫助嗎？在我們祖先體毛可能還相當濃密的年代，這樣的反應或許能幫助他們保暖，或嚇跑逼近的掠食者。然而，如今雞皮疙瘩對人類來說幾乎已經沒有實際用處了。雞皮疙瘩，或是引發它的反射反應，也出現在許多其他哺乳類動物身上。許多哺乳動物在感到害怕時會把毛髮蓬起，讓自己看起來更龐大、更具威嚇性。舉例來說，當豪豬遇到掠食者時，牠身上又長又尖銳的刺毛會豎立起來，作為一種嚇阻掠食者的手段。對於毛皮濃密的動物來說，毛髮豎起能在毛髮之間留住更多空氣，形成額外一層隔熱保暖的效果。
+📋 內容大意
+Goose bumps are an evolutionary nervous reaction that provided warmth and defense for hairy ancestors and animals, though mostly useless to modern humans.
+← 第16題回到110 年學測試辦考試第18題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

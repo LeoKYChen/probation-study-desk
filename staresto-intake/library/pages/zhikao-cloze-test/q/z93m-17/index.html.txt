@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z93m-17/index.html
+Author: staresto-create ZZSH
+Title: 93 年指考敏督利颱風受災地區考生補救考試克漏字第17題詳解（連接詞／轉折詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 93 年指考敏督利颱風受災地區考生補救考試 ／ 第17題
+93 年指考敏督利颱風受災地區考生補救考試 克漏字 第17題
+連接詞／轉折詞線索：句內
+The group watched closely 17 the worm floated in the jar, dangling and swimming.
+(A)as
+(B)if
+(C)yet
+(D)or
+答案：(A) as
+題目編號：Z93M_17（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+as 在此表示「當……的同時」，watched as the worm floated 表示一邊觀察一邊看著蟲漂浮游動的過程。if（如果）、yet（然而）、or（或者）都不符合這種「同時觀察」的語意。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+as 這個字，你的印象大概停在「因為」，於是看到 The group watched closely as ... 就想成「他們仔細看，因為蟲在漂」，語意接不起來，只好回頭在 if、yet、or 之間猜。
+怎麼判斷
+四個選項都是連接詞，形態上一個也刷不掉，可見這一格考的是空格前後兩件事之間的邏輯關係。先確認兩邊各在講什麼：前半是「這群人仔細地看」，後半是「蟲在罐子裡漂浮、懸垂、游動」。後半不是前半的原因，也不是與前半相反的事，它就是他們看到的那個過程本身，而且同時在發生。as 除了「因為」，還有「當……的時候」這個身分（劍橋詞典 as 條目），表示兩件事同時進行，正好接得上。判斷 as 的方法永遠是同一句：先看它後面接的是子句還是名詞，再看語意。這裡 the worm floated 有主詞也有動詞，是完整的子句，所以 as 走的是連接詞那一路。同樣的意思也常用 while 表達：I was doing my homework while my brother was watching TV.（我在寫功課，我弟弟在看電視。）兩件事同時進行，as 與 while 在這個用法上可以互換。學測題庫裡還有一題與本題極度相似：86 年第 23 題 →，選項是 or／if／as／but，答案同樣是 as，也同樣表示「當……的同時」，連 if 與 or 兩個誘答選項都與本題重複，兩題擺在一起看最省力。as 出現過的四種身分一併記起來（以下都在學測題庫）：86 年第 23 題 →與本題是「當……的同時」、88 年第 31 題 →是「當……時」、91 年第 24 題 →是「隨著」、94 年第 18 題 →是介系詞「以……的身分」。
+誘答選項
+if（如果）帶的是假設，但蟲在罐子裡漂是眼前正在發生的事實，不是假設；yet（然而）要求前後相反，「仔細看」與「蟲在漂」並沒有互相牴觸；or（或者）要求兩邊是可以二選一的選項，而「這群人仔細看」與「蟲在漂」不是兩個並排的選擇。三個都給不出「同時發生」這層關係。
+常考字詞與句型
+as + 子句（當……的時候，表兩件事同時進行）、watch closely（仔細觀看）、float（漂浮）、dangle（懸垂、晃來晃去）、yet 當連接詞（然而，等於 but）、drop sth in + 容器（把某物丟進……裡）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+A man wanted to prove to a group of alcoholics the effect of alcohol on human body systems. He displayed two jars in front of the group, one containing water and the other containing alcohol, 16 a very healthy worm. He said to the audience: "This jar contains water." Then he dropped the worm in the jar and said, "Please watch the reaction." The group watched closely 17 the worm floated in the jar, dangling and swimming.
+The man then took the worm out of the first jar and put it in the second jar 18 contained alcohol and said to the audience, "Now watch the reaction." The group saw the worm go down into the water and soon begin to struggle for 19. Right there and then every one in the group witnessed the worm shrinking and disintegrating. Then it died.
+The man turned round and asked the audience, "What would you all say to this?" After a long silence, someone from the rear 20 and said, "I can see that if I drink alcohol, there will be no more worms in my body."
+中譯：有個人想向一群酗酒者證明酒精對人體系統的影響。他在群眾面前擺出兩個罐子，一個裝水、另一個裝酒精，並在旁邊放了一條非常健康的蟲。他對聽眾說：「這個罐子裝的是水。」接著他把蟲放進罐子裡，說：「請仔細觀察牠的反應。」群眾專注地看著這條蟲在罐子裡漂浮、擺動、游動。接著，這個人把蟲從第一個罐子拿出，放進裝有酒精的第二個罐子，並對聽眾說：「現在請觀察牠的反應。」群眾看到這條蟲沉入水中，很快便開始為了求生而掙扎。就在那一刻，在場所有人都目睹了這條蟲逐漸萎縮、瓦解，最後死去。這個人轉過身，問聽眾：「你們對此有什麼看法？」在一片長久的沉默之後，後排有人站了起來，說：「我明白了，如果我喝酒，我體內就再也不會有蟲了。」
+📋 內容大意
+A man set out to show drinkers what alcohol does to the body.
+A worm swam happily in his jar of water, but shrank, struggled and died in the jar of alcohol.
+Asked what they had learned, one listener replied that drinking would rid him of worms.
+← 第16題回到93 年指考敏督利颱風受災地區考生補救考試第18題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

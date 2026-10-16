@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g99ref-19-1/index.html
+Author: staresto-create ZZSH
+Title: 99 課綱學測參考用試卷克漏字第19題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 99 課綱學測參考用試卷 ／ 第19題
+99 課綱學測參考用試卷 克漏字 第19題
+字彙選義線索：跨句
+At one kilogram per square meter, this new type of panel weighs one tenth of conventional solar panels. 19 means it could be used in novel places, such as the roof of a tent, the walls of a building, or the top of a bus.
+(A)That
+(B)What
+(C)There
+(D)Which
+答案：(A) That
+題目編號：G99課綱學測參考用試卷_19_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+That 代替前面提到的整個概念（新面板重量只有傳統的十分之一），作句子主詞；What（不能這樣代替前述概念作主詞開頭）、There（存在句，不合 means 的動詞結構）、Which（關係代名詞需要接在名詞後面）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是很短的功能詞，而 What 與 Which 都是你熟悉的、能帶出子句的字，很容易先往那邊想。這一格要先數空格後面的成分——這一次成分是滿的。
+怎麼判斷
+先看空格後面：___ means it could be used in novel places。means 是動詞，所以空格是這個句子的主詞；而 means 後面的 it could be used in novel places 是完整的受詞子句，成分不缺。再看它要指什麼：前一句說 this new type of panel weighs one tenth of conventional solar panels（這種新面板的重量只有傳統面板的十分之一）。本句要說的是「這一點意味著它可以用在新奇的地方」——那個「這一點」指的是前面一整句話，用指示代名詞 That 就可以了。That 不帶出子句，在這裡單純當主詞，回指前文。這一格與同一份考卷的第 21 題正好是一組對照，兩題把「數成分」這個判斷方式的兩面都考了，對照第 21 題就會看到。
+誘答選項
+What：它等於 the thing that，填進去之後 What means it could be used in novel places 整串會變成一個名詞子句，只能當另一個句子的主詞或受詞，後面卻再也沒有主要動詞，句子不完整。Which：關係代名詞，前面要有先行詞才能用，而本句空格出現在句首，前面隔著句號，沒有先行詞。There：只用在 there is／there are 這類存在句裡，當不了 means 的主詞。
+常考字詞與句型
+That means …（這意味著……）、that is why …（那就是為什麼……）、in novel places（在新奇的地方）、one tenth of（十分之一）、weigh（重達）、novel（新奇的）。
+線索範圍說明：That 指前一句的重量數據
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Solar panels can turn sunlight into electricity. Conventional solar panels are 16 crystallized silicon, the same material used in computer chips. But silicon is expensive and the panels are heavy. Facing this 17 , engineers at a Japanese company have developed a thin-film flexible solar panel. The new panel is not the first of its 18 , but it may be the most flexible—it bends like paper.
+At one kilogram per square meter, this new type of panel weighs one tenth of conventional solar panels. 19 means it could be used in novel places, such as the roof of a tent, the walls of a building, or the top of a bus. Sheets of the material could be used to make portable, rollable battery chargers for mobile electronic 20 , like notebook computers or cellphones. As many countries are now pushing for green technology, the new flexible solar panels may spur a great demand.
+中譯：太陽能板能將陽光轉化為電力。傳統太陽能板是由結晶矽製成的，這與電腦晶片使用的材料相同。但矽的成本高昂，太陽能板也相當笨重。面對這項挑戰，一家日本公司的工程師開發出一種薄膜可撓式太陽能板。這款新型太陽能板不是同類產品中的第一款，但可能是最具彈性的一款——它能像紙一樣彎曲。這種新型太陽能板每平方公尺才重一公斤，只有傳統太陽能板重量的十分之一。這代表它可以應用在許多新穎的地方，例如帳篷屋頂、建築物牆面，或公車車頂。這種材料製成的薄片，還可以用來製作可攜式、可捲曲的行動電子產品充電器，例如筆記型電腦或手機的充電器。隨著越來越多國家積極推動綠色科技，這種新型可撓式太陽能板可能會激發龐大的市場需求。
+📋 內容大意
+Ordinary solar panels turn sunlight into electricity using crystallized silicon, the material in computer chips. Silicon is costly and the panels are heavy.
+Engineers at a Japanese company made a thin-film flexible panel bending like paper. It weighs one kilogram per square meter, a tenth of an ordinary panel.
+Its lightness suits new places such as tent roofs, building walls and bus tops. Sheets could become rollable chargers for notebook computers and mobile phones.
+← 第18題回到99 課綱學測參考用試卷第20題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

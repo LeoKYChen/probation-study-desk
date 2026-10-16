@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g88-27-2/index.html
+Author: staresto-create ZZSH
+Title: 88 年學測克漏字第27題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 88 年學測 ／ 第27題
+88 年學測 克漏字 第27題
+字彙選義線索：句內
+For example, John Steinbeck is 27 to have been an excellent listener, yet he was hated by some of the people he wrote about.
+(A)called
+(B)named
+(C)said
+(D)told
+答案：(C) said
+題目編號：G88_27_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】be said to have been 固定被動句型「據說是……」；called／named／told 都不能這樣構成「據說」的固定用法。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項接在 be 動詞後面都能變成被動，中文也都能翻出「被叫做、被說成」的味道，光比意思會卡住。這一格要靠一個固定句型來定。
+怎麼判斷
+這個句型可以用一個等式來記：It is said that he was an excellent listener.（據說他是個極好的聆聽者。）＝ He is said to have been an excellent listener.（他據說曾經是個極好的聆聽者。）兩句意思完全相同，差別在於把 that 子句的主詞 he 提到句首當主詞，原來的動詞就變成不定詞掛在後面。特別注意等號兩邊的時態怎麼換：左邊 that 子句用的是過去式 was，提到右邊之後不能只寫 to be，要寫成 to have been——因為「據說」是現在的事，而「他是個好聆聽者」是更早的事，用完成式的不定詞把時間往前推一格。本句空格後面正好就是 to have been，完全對得上。
+誘答選項
+told：be told to V 是「被要求做某事」（89 年第 20 題 →考的就是這個），主詞是被交代的那個人，與「據說」無關。同一個「be + 過去分詞 + to V」的句型，換一個動詞意思就整個變了，兩題可以對照著記。called、named：意思是「被稱作、被命名為」，後面要接名詞當補語（He is called a genius. 他被稱為天才。），接不了不定詞。
+常考字詞與句型
+It is said that …／sb is said to V（據說……）、be believed to V（一般認為……）、be reported to V（據報導……）、be told to V（被要求做……）、be known as（以……著稱）、an excellent listener（極好的聆聽者）。其中 be known as 這一組考過 3 個年度，91 年第 25 題 →、100 年第 28 題 →都出現過。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Most people like to talk, but few people like to listen. 21 listening well is a rare talent that everyone should treasure. Because they hear more, good listeners 22 to know more and to be more sensitive to what is going on around them than other people. In addition, good listeners are inclined to accept or tolerate 23 to judge and criticize. Therefore, they have 24 enemies than other people. 25 , they are probably the most loved of people.
+However, there are 26 to that generality. For example, John Steinbeck is 27 to have been an excellent listener, yet he was hated by some of the people he wrote about. No doubt his ability to listen contributed 28 his capacity to write. 29 , the results of his listening did not make him popular.
+Thus, 30 on what a good listener does, he may become either popular or disliked in his lifetime.
+中譯：大多數人喜歡說話，卻很少人喜歡聆聽。然而，善於聆聽是一項稀有的才能，每個人都應該珍惜。因為他們聽得更多，善於聆聽的人比其他人更了解周遭發生的事，也更敏銳。此外，善於聆聽的人傾向於接受或容忍，而不是急著評斷和批評。因此，他們的敵人比其他人少，事實上，他們可能是最受人喜愛的人。然而，這個通則也有例外。舉例來說，約翰·史坦貝克據說是一位出色的聆聽者，然而卻被他筆下描寫的一些人所憎恨。他的聆聽能力無疑對他的寫作能力有所貢獻，然而，他聆聽所得到的結果並沒有讓他受歡迎。因此，一個善於聆聽的人，這一生可能因此變得受歡迎，也可能因此招人厭惡，端看他怎麼運用所聽到的內容。
+📋 內容大意
+Talking is common, listening is rare, and good listeners notice more of what happens around them.
+They accept and tolerate more readily, judge and criticize less, and so they make few enemies and win wide affection.
+John Steinbeck is a counter-example: his gift as a listener fed his writing, but some people he wrote about hated him.
+← 第26題回到88 年學測第28題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

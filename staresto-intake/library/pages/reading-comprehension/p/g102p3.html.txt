@@ -1,0 +1,134 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/g102p3.html
+Author: staresto-create ZZSH
+Title: 102 學測閱讀測驗：能量飲料與酒測｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 102 學測
+102 學測閱讀測驗：能量飲料與酒測
+Energy Drinks and Breathalyzer Tests
+學測 102年第 49–52 題4 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段An alcohol breath test (ABT) is often used by the police to find out whether a person is drunk while driving. In the United States, the legal blood alcohol limit is 0.08% for people aged 21 years or older, while people under 21 are not allowed to drive a car with any level of alcohol in their body. A “positive” test result, a result over the legal limit, allows the police to arrest the driver. However, many people who tested positive on the test have claimed that they only drank a “non-alcoholic” energy drink. Can one of these energy drinks really cause someone to test positive on an ABT? Researchers in Missouri set up an experiment to find out.
+第 2 段First, the amount of alcohol in 27 different popular energy drinks was measured. All but one had an alcohol level greater than 0.005%. In nine of the 27 drinks, the alcohol level was at least 0.096%. The scientists then investigated the possibility that these small levels of alcohol could be detected by an ABT. They asked test subjects to drink a full can or bottle of an energy drink and then gave each subject an ABT one minute and 15 minutes after the drink was finished.
+第 3 段For 11 of the 27 energy drinks, the ABT did detect the presence of alcohol if the test was given within one minute after the drink was taken. However, alcohol could not be detected for any of the drinks if the test was given 15 minutes after the drink was consumed. This shows that when the test is taken plays a crucial role in the test result. The sooner the test is conducted after the consumption of these drinks, the more likely a positive alcohol reading will be obtained.
+題目
+49.For a person who just turned 20, what is the legal alcohol level allowed while driving in the US?
+(A)0.000%.
+(B)0.005%.
+(C)0.080%.
+(D)0.096%.
+50.What is the purpose of the Missouri experiment?
+(A)To introduce a new method of calculating blood alcohol levels.
+(B)To discover the relation between energy drinks and ABT test results.
+(C)To warn about the dangers of drinking energy drinks mixed with alcohol.
+(D)To challenge the current legal alcohol limit for drivers in the United States.
+51.What were the participants of the experiment asked to do after they finished their energy drink?
+(A)To line up in the laboratory.
+(B)To recall the drink brands.
+(C)To take an alcohol breath test.
+(D)To check their breath for freshness.
+52.What is the most important factor that affects the ABT test result for energy drink consumers?
+(A)The age of the person who takes the test.
+(B)The place where the test is given.
+(C)The equipment that the test uses.
+(D)The time when the test is taken.
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+49
+(A)
+66%
+72
+50
+(B)
+73%
+57
+51
+(C)
+77%
+52
+52
+(D)
+70%
+71
+答對率與鑑別度出處：大考中心 102 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表
+每一題的依據句
+第 49 題 細節題 Supporting details
+第 1 段while people under 21 are not allowed to drive a car with any level of alcohol in their body.
+第 1 段說美國 21 歲以上的人法定上限是 0.08%，未滿 21 歲的人只要體內有任何酒精（any level of alcohol）就不准開車。剛滿 20 歲還未滿 21 歲，允許的酒精濃度就是零，所以是 (A)。(C) 0.08% 是 21 歲以上的標準；(B) 和 (D) 照抄第 2 段的數字，那是能量飲料的酒精含量，不是法定上限。
+第 50 題 細節題 Supporting details
+第 1 段Can one of these energy drinks really cause someone to test positive on an ABT? Researchers in Missouri set up an experiment to find out.
+原文 → 正確選項
+test positive on an ABT → ABT test results
+第 1 段最後問：喝能量飲料真的會讓人酒測呈陽性（test positive on an ABT）嗎？密蘇里州的研究人員設計實驗就是要找出答案，選項換成 discover the relation between energy drinks and ABT test results。(A) 照抄 blood alcohol，實驗沒有提出計算血液酒精濃度的新方法；(D) 照抄 legal，法定上限只是文章開頭的背景說明，實驗沒有挑戰這個標準；(C) 實驗測的是能量飲料本身含的酒精，不是摻了酒的能量飲料有什麼危險。
+第 51 題 細節題 Supporting details
+第 2 段They asked test subjects to drink a full can or bottle of an energy drink and then gave each subject an ABT one minute and 15 minutes after the drink was finished.
+原文 → 正確選項
+an ABT → an alcohol breath test
+第 2 段說受試者喝完能量飲料後，研究人員在 1 分鐘和 15 分鐘後各替每個人做一次 ABT。第 1 段開頭已經交代 ABT 就是 alcohol breath test（酒精呼氣檢測），選項把縮寫寫成全名，所以是 (C)。(A) 排隊、(B) 回想飲料品牌文章都沒提；(D) 呼氣檢測測的是酒精，不是口氣清不清新。
+第 52 題 細節題 Supporting details
+第 3 段This shows that when the test is taken plays a crucial role in the test result.
+原文 → 正確選項
+when the test is taken → The time when the test is taken
+第 3 段說喝完 1 分鐘內檢測，有 11 種飲料測得出酒精，15 分鐘後檢測，全都測不出來；因此結論是什麼時候檢測（when the test is taken）對結果有關鍵的影響，選項換成 the time when the test is taken。(A) 年齡在第 1 段決定的是法定上限，和能量飲料的檢測結果無關；(B) 檢測地點和 (C) 檢測儀器，實驗都沒有比較。
+逐段中譯
+第 1 段警察常用酒精呼氣檢測（ABT）判斷一個人是不是酒後駕車。在美國，21 歲以上的人法定血液酒精濃度上限是 0.08%，未滿 21 歲的人只要體內有任何酒精，就不准開車。「陽性」的檢測結果，也就是超過法定上限，警察就可以逮捕駕駛人。然而，許多檢測呈陽性的人都聲稱自己只喝了「不含酒精」的能量飲料。喝這些能量飲料，真的會讓人酒測呈陽性嗎？密蘇里州的研究人員設計了一項實驗來找出答案。
+第 2 段首先，研究人員測量了 27 種熱門能量飲料的酒精含量。除了一種以外，其他飲料的酒精含量都超過 0.005%。27 種飲料中，有 9 種的酒精含量至少 0.096%。接著，科學家研究酒測能不能測出這麼少量的酒精。他們請受試者喝完一整罐或一整瓶能量飲料，然後在喝完後 1 分鐘和 15 分鐘各替每位受試者做一次酒精呼氣檢測。
+第 3 段在 27 種能量飲料中，如果在喝完 1 分鐘內檢測，有 11 種確實測得出酒精。然而，如果在喝完 15 分鐘後才檢測，不論哪一種飲料都測不出酒精。這表示什麼時候檢測，對檢測結果有關鍵的影響。喝完這些飲料之後越早檢測，酒測讀數就越可能呈陽性。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。沒有列出的段落，就是沒有主旨句，請對照「這一篇的文章結構」裡的綱要，找出那一段的重點。這一篇沒有一句話直接點出全文中心思想，要讀完各段，自己歸納。
+第 1 段Can one of these energy drinks really cause someone to test positive on an ABT?
+第 3 段This shows that when the test is taken plays a crucial role in the test result.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體說明文 Expository
+組織方式因果關係 Cause-Effect這一類怎麼辨識 →
+關鍵轉折詞whileHoweverFirstthenHoweverThis shows that
+綱要
+說明酒測的用途與美國法定標準，(However) 許多酒測未過的人宣稱只喝了能量飲料。
+密蘇里研究人員設計實驗查證。
+(First) 先測量 27 種能量飲料的酒精含量，(then) 再讓受試者喝完後 1 分鐘、15 分鐘各測一次。
+喝完 1 分鐘內有 11 種測出酒精，(However) 15 分鐘後全都測不出來。
+(This shows that) 結論：測試時間是影響結果的關鍵。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 13 個、參考字彙 2 個、字詞搭配 10 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+breath[brɛθ]n.呼吸、呼氣（breath test 呼氣測試）三級第 1 段詞彙題考過 1 次：103 學測第 8 題（答案）
+arrest[əˈrɛst]v.逮捕三級第 1 段詞彙題考過 2 次：97 學測第 1 題（誘答）、94 學測第 10 題 arrested（答案）
+researcher[ˈrisɚʧɚ]n.研究人員四級第 1 段詞彙題考過 1 次：109 學測第 3 題（誘答）
+experiment[ɪkˈspɛrəmənt]n.實驗三級第 1 段詞彙題考過 1 次：87 聯考第 7 題（誘答）
+detect[dɪˈtɛkt]v.測出、察覺三級第 2 段詞彙題考過 3 次：107 指考第 3 題 detected（誘答）、91 指考第 7 題 detected（誘答）、90 學測第 3 題 detected（誘答）
+consume[kənˈsum]v.喝下、吃下四級第 3 段詞彙題考過 1 次：97 學測第 4 題（誘答）
+crucial[ˈkruʃəl]adj.關鍵的五級第 3 段詞彙題考過 2 次：104 指考第 1 題（誘答）、94 指考第 8 題（誘答）
+conduct[kənˈdʌkt]v.進行、實施五級第 3 段詞彙題考過 2 次：107 學測第 14 題 conducted（答案）、99 指考第 8 題 conducts（誘答）
+consumption[kənˈsʌmpʃən]n.喝下、飲用五級第 3 段詞彙題考過 2 次：115 學測第 5 題（答案）、89 學測第 3 題（誘答）
+obtain[əbˈteɪn]v.得到、取得四級第 3 段詞彙題考過 3 次：99 學測第 6 題（誘答）、88 推薦甄選第 8 題 obtains（誘答）、85 推薦甄選第 20 題 obtained（答案）
+calculate[ˈkælkjəˌleɪt]v.計算四級第 50 題詞彙題考過 1 次：106 學測第 13 題 calculated（誘答）
+recall[rɪˈkɔl]v.想起、記得四級第 51 題詞彙題考過 4 次：112 學測第 6 題（答案）、100 指考第 2 題（答案）、87 推薦甄選第 9 題 recalled（誘答）、83 聯考第 5 題（答案）
+equipment[ɪˈkwɪpmənt]n.設備、儀器四級第 52 題詞彙題考過 2 次：110 學測第 14 題 equipped（誘答）、95 指考第 1 題 equips（答案）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+non-alcoholic[ˌnɑnˌælkəˈhɔlɪk]adj.不含酒精的表外第 1 段
+participant[pɑrˈtɪsəpənt]n.參與者、受試者五級第 51 題
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+the legal limit法定上限第 1 段原文：the legal blood alcohol limit
+be allowed to + V獲准……第 1 段原文：people under 21 are not allowed to drive a car
+test positive檢測呈陽性第 1 段原文：many people who tested positive on the test
+set up an experiment進行實驗第 1 段原文：Researchers in Missouri set up an experiment
+all but one除了一個以外全部第 2 段原文：All but one had an alcohol level greater than 0.005%
+investigate the possibility調查……的可能性第 2 段原文：The scientists then investigated the possibility
+detect the presence of + N驗出……第 3 段原文：the ABT did detect the presence of alcohol
+play a crucial role in + N在……扮演關鍵角色第 3 段原文：when the test is taken plays a crucial role in the test result
+The 比較級 …, the 比較級 …越……就越……第 3 段原文：The sooner the test is conducted … the more likely a positive alcohol reading will be obtained
+conduct a test進行檢測第 3 段原文：the test is conducted
+← 上一篇篇目一覽下一篇 →
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

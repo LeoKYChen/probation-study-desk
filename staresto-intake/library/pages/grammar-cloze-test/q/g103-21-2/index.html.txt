@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g103-21-2/index.html
+Author: staresto-create ZZSH
+Title: 103 年學測克漏字第21題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 103 年學測 ／ 第21題
+103 年學測 克漏字 第21題
+字彙選義線索：句內答對率 76%
+答對率 76%：當年每 100 位考生，有 76 位答對。
+They are attracted by the American writer's 21 of the millennia-old glaciers.
+(A)situations
+(B)descriptions
+(C)translations
+(D)calculations
+答案：(B) descriptions
+題目編號：G103_21_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「被這位美國作家對千年冰河的『描述』所吸引」，descriptions（描述）符合，呼應海明威的文學作品描寫；situations（情況）、translations（翻譯）、calculations（計算）都不合。
+深入解析
+你可能會這樣想
+看到 the American writer's ______ of...，你可能沒細看結構就直接掃選項，挑一個「跟作家有關」的。translations 也跟文字工作有關，於是在它和正解之間猶豫。
+怎麼判斷
+先把結構看懂：X's 加名詞再加 of Y，是名詞化的說法，所有格 the American writer's 是動作的發出者，of the millennia-old glaciers 是動作的對象。還原成句子就是 The American writer described the millennia-old glaciers.（這位美國作家描寫了那片千年冰河）。碰到這種名詞化的結構，一律還原成「誰對什麼做了什麼」，語意馬上浮出來。線索其實在上一句就給了：tourists visit Mount Kilimanjaro... to witness the scenes depicted in Earnest Hemingway's The Snows of Kilimanjaro（遊客前來親眼看看海明威《吉力馬札羅的雪》裡所描繪的景象）。depict 就是「描繪」，descriptions 正是它換個說法。空格解不出來時，先回頭找上一句有沒有同義字被換過說法，這是克漏字最常見的線索安排方式。
+誘答選項
+situations（情況）：作家的「情況」與冰河搭不上，X's situation of Y 這種說法也不成立。translations（翻譯）：海明威用英文創作，而且人翻譯的是文字，不是冰河。calculations（計算）：小說家不做冰河的數據計算，這是科學報告才有的動作。
+常考字詞與句型
+be attracted by（被…吸引）、give a description of（描述…）、beyond description（無法形容）、centuries-old（有數百年歷史的）、depict sb as（把某人描繪成…）、witness a change（見證一項改變）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Every year tens of thousands of tourists visit Mount Kilimanjaro, the highest mountain in Tanzania, Africa, to witness the scenes depicted in Earnest Hemingway's The Snows of Kilimanjaro. They are attracted by the American writer's 21 of the millennia-old glaciers.
+However, this tourist attraction will soon 22 . According to the Climate Change Group, formed by environmentalists worldwide to document the effects of global warming, Mount Kilimanjaro's snows and glaciers are melting and are 23 to disappear by 2020.
+Not only will the summit lose its tourist attraction, but the disappearance of the snows will also cause major damage to the ecosystem on the dry African plains at its base. 24 the snow covering the peak, there will not be enough moisture and water to nourish the plants and animals below. Rising temperatures, an effect of global warming, 25 threaten the ecosystem of this mountain area. The loss of snows on the 5,892m peak, which have been there for about 11,700 years, could have disastrous effects on Tanzania.
+中譯：每年都有數萬名遊客造訪坦尚尼亞、非洲最高峰吉力馬札羅山，只為親眼目睹海明威名著《吉力馬札羅的雪》中所描繪的景象。他們被這位美國作家對這座千年冰河的描寫所吸引。然而，這項觀光資源即將消失。根據全球環保人士組成的「氣候變遷小組」記錄，吉力馬札羅山的積雪與冰河正在融化，預計將於 2020 年前完全消失。屆時，這座山峰失去的不只是觀光吸引力，積雪的消失還將對山腳下乾燥非洲平原的生態系統造成重大破壞。少了山頂積雪，山下的動植物將缺乏足夠的水分與濕氣滋養。全球暖化所導致的氣溫上升，也持續威脅著這座山區的生態系統。這座 5892 公尺高峰上存在了約 11700 年的積雪一旦消失，恐將對坦尚尼亞帶來災難性的後果。
+📋 內容大意
+Tens of thousands of tourists visit Mount Kilimanjaro in Tanzania each year. They come for the ancient glaciers Hemingway wrote about in The Snows of Kilimanjaro.
+The Climate Change Group reports that the snows and glaciers are melting and could be gone by 2020. The summit would then lose its appeal to visitors.
+The loss would also harm the plains below, because the snow supplies their water. Rising temperatures add more pressure.
+← 第20題回到103 年學測第22題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

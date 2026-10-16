@@ -1,0 +1,161 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/z100p4.html
+Author: staresto-create ZZSH
+Title: 100 指考閱讀測驗：博士學位的發展與過剩問題｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 100 指考
+100 指考閱讀測驗：博士學位的發展與過剩問題
+The Development and Oversupply of PhD Degrees
+指考 100年第 48–51 題4 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段Doctor of Philosophy, usually abbreviated as PhD or Ph.D., is an advanced academic degree awarded by universities. The first Doctor of Philosophy degree was awarded in Paris in 1150, but the degree did not acquire its modern status until the early 19th century. The doctorate of philosophy as it exists today originated at Humboldt University. The German practice was later adopted by American and Canadian universities, eventually becoming common in large parts of the world in the 20th century.
+第 2 段For most of history, even a bachelor’s degree at a university was the privilege of a rich few, and many academic staff did not hold doctorates. But as higher education expanded after the Second World War, the number of PhDs increased accordingly. American universities geared up first: By 1970, America was graduating half of the world’s PhDs in science and technology. Since then, America’s annual output of PhDs has doubled, to 64,000. Other countries are catching up. PhD production has sped up most dramatically in Mexico, Portugal, Italy, and Slovakia. Even Japan, where the number of young people is shrinking, has churned out about 46% more PhDs.
+第 3 段Researchers now warn that the supply of PhDs has far outstripped demand. America produced more than 100,000 doctoral degrees between 2005 and 2009, while there were just 16,000 new professorships. In research, the story is similar. Even graduates who find work outside universities may not fare all that well. Statistics show that five years after receiving their degrees, more than 60% of PhDs in Slovakia and more than 45% in Belgium, the Czech Republic, Germany, and Spain are still on temporary contracts. About one-third of Austria’s PhD graduates take jobs unrelated to their degrees.
+第 4 段Today, top universities around the world are still picking bright students and grooming them as potential PhDs. After all, it isn’t in their interests to turn the smart students away: The more bright students stay at universities, the better it is for academics. But considering the oversupply of PhDs, some people have already begun to wonder whether doing a PhD is a good choice for an individual.
+題目
+48.In which country did the modern practice of granting doctoral degrees start?
+(A)France.
+(B)Germany.
+(C)Canada.
+(D)The U.S.
+49.Which of the following words is closest in meaning to “churned out” in the second paragraph?
+(A)Failed.
+(B)Warned.
+(C)Demanded.
+(D)Produced.
+50.Which of the following may be inferred from the third paragraph?
+(A)PhD graduates in Austria are not encouraged to work outside university.
+(B)Most German PhDs work at permanent jobs immediately after graduation.
+(C)It is much easier for American PhD holders to find a teaching position than a research job.
+(D)It is more difficult for PhDs to get a permanent job five years after graduation in Slovakia than in Spain.
+51.Which of the following best describes the author’s attitude toward the increase of PhDs in recent years?
+(A)Concerned.
+(B)Supportive.
+(C)Indifferent.
+(D)Optimistic.
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+48
+(B)
+39%
+30
+49
+(D)
+62%
+58
+50
+(D)
+51%
+58
+51
+(A)
+54%
+68
+答對率與鑑別度出處：大考中心 100 學年度指定科目考試統計圖表：英文科答對率及鑑別指數表
+每一題的依據句
+第 48 題 細節題 Supporting details
+第 1 段The doctorate of philosophy as it exists today originated at Humboldt University.
+第 1 段The German practice was later adopted by American and Canadian universities
+原文 → 正確選項
+German → Germany
+這一題答對率只有 39%，題目問現代授予博士學位的做法從哪個國家開始，原文沒有直接寫國名。判斷步驟：[1] 第 1 段說第一個哲學博士學位 1150 年在巴黎頒發，但接著用 but 說這個學位到 19 世紀初才取得現代的地位，所以巴黎頒發的不是現代的做法，(A) 法國排除；[2] 下一句說現今的博士學位起源於洪堡大學（Humboldt University），再下一句把這套做法稱為 The German practice，可見洪堡大學在德國；[3] 美國和加拿大的大學是後來（later）採用這套做法，(C)、(D) 排除。所以是 (B)。
+第 49 題 詞義題 Vocabulary in context
+第 2 段Even Japan, where the number of young people is shrinking, has churned out about 46% more PhDs.
+churn out 是大量產出、快速生產的意思。這一句前面一路說各國博士人數增加，Other countries are catching up，接著用 Even 說連年輕人口減少的日本，博士也多了大約 46%，所以 churned out 是產出，是 (D)。(B) 照抄第 3 段的 warn，提出警告的是研究人員；(C) 照抄第 3 段的 demand，原文說博士的供給超過需求；(A) 失敗，和多了 46% 的博士接不上。
+怎麼從前後文推出字義 →
+第 50 題 推論題 Inference
+第 3 段Statistics show that five years after receiving their degrees, more than 60% of PhDs in Slovakia and more than 45% in Belgium, the Czech Republic, Germany, and Spain are still on temporary contracts.
+原文 → 正確選項
+five years after receiving their degrees → five years after graduation
+Slovakia → Slovakia
+Spain → Spain
+這一題答對率只有 51%，要把第 3 段的數字換算成選項的說法。判斷步驟：[1] 原文說取得學位五年後，斯洛伐克超過 60% 的博士仍是約聘（temporary contracts），西班牙是超過 45%；[2] 約聘的比例越高，找到長期工作的比例就越低，所以五年後在斯洛伐克比在西班牙更難找到長期工作，是 (D)。(B) 照抄 German，德國五年後仍有超過 45% 是約聘，不可能大多數一畢業就有長期工作；(A) 照抄 Austria，原文說奧地利約三分之一的博士從事和學位無關的工作，沒有說他們不受鼓勵到大學以外工作；(C) 照抄 America，原文說美國新增的教授職位只有 16,000 個，接著說研究工作的情形也差不多，兩者都難找，看不出教職比較容易。
+第 51 題 推論題 Inference
+依據句：全文要讀完整篇才能判斷，不在某一句裡。
+第 2 段說二次大戰以後各國博士人數大量增加；第 3 段一開頭就說研究人員提出警告，博士的供給遠遠超過需求，接著舉出教職太少、多年仍是約聘、從事和學位無關的工作等數字；第 4 段最後說，有些人開始懷疑念博士是不是好的選擇。作者對博士人數增加感到憂心，所以是 (A)。(B) 支持、(D) 樂觀，和第 3 段的警告與數字相反；(C) 漠不關心，作者用了兩段舉證說明供過於求的問題，並不是不在意。
+逐段中譯
+第 1 段哲學博士通常縮寫成 PhD 或 Ph.D.，是大學頒發的高等學位。第一個哲學博士學位是 1150 年在巴黎頒發的，但這個學位一直到 19 世紀初，才取得現代的地位。現今的哲學博士學位，起源於洪堡大學。後來美國和加拿大的大學採用了這套德國的做法，到了 20 世紀，終於在世界上很多地方普及。
+第 2 段歷史上大部分的時間，即使只是大學的學士學位，也是少數有錢人的特權，很多大學教師也沒有博士學位。不過第二次世界大戰以後，高等教育擴張，博士的人數也跟著增加。美國的大學最先做好準備：到了 1970 年，全世界科學與科技領域的博士，有一半是美國培養出來的。從那時候起，美國每年產出的博士人數增加了一倍，達到 64,000 人。其他國家也在急起直追，博士產出增加最快的是墨西哥、葡萄牙、義大利和斯洛伐克。即使在年輕人口不斷減少的日本，博士人數也大量增加了大約 46%。
+第 3 段研究人員現在提出警告，博士的供給已經遠遠超過需求。美國在 2005 年到 2009 年之間，產出了超過 10 萬個博士學位，新增的教授職位卻只有 16,000 個。研究工作的情形也差不多。即使是在大學以外找到工作的博士，處境也未必好到哪裡去。統計顯示，取得學位五年以後，斯洛伐克超過 60% 的博士，以及比利時、捷克、德國、西班牙超過 45% 的博士，仍然是約聘工作。奧地利的博士畢業生，大約三分之一從事和學位無關的工作。
+第 4 段現在，世界各地的頂尖大學仍然在挑選聰明的學生，把他們培養成未來的博士。畢竟，把聰明的學生拒於門外，對大學並沒有好處：留在大學的聰明學生越多，對學術界越有利。不過，考慮到博士供過於求，有些人已經開始懷疑，對個人來說，念博士到底是不是好的選擇。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。沒有列出的段落，就是沒有主旨句，請對照「這一篇的文章結構」裡的綱要，找出那一段的重點。這一篇沒有一句話直接點出全文中心思想，要讀完各段，自己歸納。
+第 2 段But as higher education expanded after the Second World War, the number of PhDs increased accordingly.
+第 3 段Researchers now warn that the supply of PhDs has far outstripped demand.
+第 4 段But considering the oversupply of PhDs, some people have already begun to wonder whether doing a PhD is a good choice for an individual.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體說明文 Expository
+組織方式時序發展 Chronological這一類怎麼辨識 →
+關鍵轉折詞butlaterButSince thenwhileAfter allBut
+綱要
+博士學位最早在 1150 年於巴黎頒發，(but) 到 19 世紀初才有現代的地位；現代博士制度源自德國洪堡大學，(later) 後來美國和加拿大的大學採用，20 世紀普及到世界大部分地區。
+過去連學士學位都是少數有錢人的特權，許多大學教師也沒有博士學位；(But) 二次大戰後高等教育擴張，博士人數也跟著增加。
+美國起步最早，1970 年已經培養全世界一半的理工博士，(Since then) 之後年產量又倍增到六萬四千人；其他國家也急起直追，連年輕人口減少的日本也多培養了約 46%。
+研究人員警告博士供過於求：美國 2005 到 2009 年產生十萬多名博士，(while) 新增的教授職缺只有一萬六千個，研究機構的情形也差不多；在大學以外找到工作的也未必好，畢業五年後，斯洛伐克超過 60%、比利時、捷克、德國和西班牙超過 45% 的博士仍是短期約聘，奧地利約三分之一的博士從事和學位無關的工作。
+頂尖大學仍積極培養聰明學生讀博士，(After all) 畢竟留住優秀學生對學術界有利；(But) 不過博士已經過剩，有人開始懷疑讀博士對個人是不是好的選擇。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 19 個、參考字彙 14 個、字詞搭配 14 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+advanced[ədˈvænst]adj.高等的（advanced degree 高等學位）三級第 1 段詞彙題考過 1 次：111 學測第 1 題（誘答）
+acquire[əˈkwaɪr]v.取得四級第 1 段詞彙題考過 2 次：107 學測第 10 題（誘答）、95 學測第 10 題（誘答）
+adopt[əˈdɑpt]v.採用四級第 1 段詞彙題考過 2 次：97 學測第 3 題（誘答）、88 推薦甄選第 4 題（誘答）
+eventually （詞彙表：eventual）[ɪˈvɛnʧuəli]adv.最後、終於四級第 1 段詞彙題考過 4 次：111 學測第 8 題（答案）、110 指考第 6 題（誘答）、90 聯考第 15 題（誘答）、85 推薦甄選第 6 題 eventually（誘答）
+privilege[ˈprɪvləʤ]n.特權四級第 2 段詞彙題考過 4 次：112 學測第 6 題（誘答）、98 指考參考試卷第 2 題（誘答）、97 學測第 8 題（答案）、88 推薦甄選第 6 題（答案）
+expand[ɪkˈspænd]v.擴張四級第 2 段詞彙題考過 4 次：96 學測第 8 題 expanded（答案）、93 學測第 1 題（誘答）、88 推薦甄選第 3 題 expanding（誘答）、84 聯考第 4 題 expanded（誘答）
+annual[ˈænjuəl]adj.每年的四級第 2 段詞彙題考過 2 次：108 學測第 10 題（答案）、97 學測第 13 題 annually（誘答）
+dramatically （詞彙表：dramatic）[drəˈmætɪkli]adv.大幅三級第 2 段詞彙題考過 1 次：97 學測第 11 題（誘答）
+shrink[ʃrɪŋk]v.減少、縮小三級第 2 段詞彙題考過 1 次：92 學測補考第 5 題（誘答）
+researcher[ˈrisɚʧɚ]n.研究人員四級第 3 段詞彙題考過 1 次：109 學測第 3 題（誘答）
+demand[dɪˈmænd]n.需求四級第 3 段詞彙題考過 5 次：109 指考補考第 1 題 demanding（誘答）、107 學測第 7 題 demanding（答案）、102 學測第 4 題（誘答）、99 指考第 2 題（誘答）、98 指考第 7 題 demanding（答案）
+temporary[ˈtɛmpəˌrɛri]adj.臨時的（temporary contracts 約聘）三級第 3 段詞彙題考過 6 次：101 學測第 8 題 temporarily（誘答）、99 學測第 1 題（誘答）、97 學測第 10 題（誘答）、97 指考第 9 題 temporarily（誘答）、92 學測第 4 題（答案）、91 指考第 10 題 temporarily（答案）
+potential[pəˈtɛnʃəl]adj.未來可能成為……的四級第 4 段詞彙題考過 6 次：111 學測第 4 題 potentially（答案）、99 學測第 12 題（誘答）、97 指考第 2 題 potentially（誘答）、96 學測第 2 題（答案）、90 聯考第 15 題（誘答）、85 聯考第 9 題（誘答）
+permanent[ˈpɝmənənt]adj.長期的、固定的（permanent job 正職）四級第 50 題詞彙題考過 6 次：102 指考第 8 題（誘答）、97 學測第 15 題 permanently（誘答）、97 指考第 9 題 permanently（誘答）、93 補救考試第 10 題 permanently（答案）、92 學測第 9 題（誘答）、86 推薦甄選第 16 題 permanently（誘答）
+immediately （詞彙表：immediate）[ɪˈmidiətli]adv.立刻三級第 50 題詞彙題考過 2 次：99 學測第 11 題 immediately（誘答）、88 推薦甄選第 9 題（誘答）
+graduation[ˌgræʤuˈeɪʃən]n.畢業四級第 50 題詞彙題考過 1 次：108 指考第 7 題（誘答）
+attitude[ˈætəˌtud]n.態度三級第 51 題詞彙題考過 1 次：95 學測第 5 題（答案）
+indifferent[ɪnˈdɪfrənt]adj.漠不關心的、冷淡的五級第 51 題詞彙題考過 4 次：110 指考第 7 題 indifferently（誘答）、102 指考第 10 題（誘答）、99 指考第 5 題（誘答）、86 聯考第 3 題（誘答）
+optimistic[ˌɑptəˈmɪstɪk]adj.樂觀的三級第 51 題詞彙題考過 3 次：101 學測第 7 題（答案）、95 學測第 6 題（誘答）、93 補救考試第 10 題 optimistically（誘答）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+abbreviate[əˈbriviˌeɪt]v.縮寫六級第 1 段
+doctorate[ˈdɑktərət]n.博士學位表外第 1 段
+originate[əˈrɪʤəˌneɪt]v.起源六級第 1 段
+bachelor[ˈbæʧəlɚ]n.學士（bachelor's degree 學士學位）六級第 2 段
+accordingly[əˈkɔrdɪŋli]adv.相應地、跟著六級第 2 段
+output[ˈaʊtˌpʊt]n.產出、產量五級第 2 段
+churn[ʧɝn]v.（churn out）大量產出表外第 2 段
+outstrip[ˌaʊtˈstrɪp]v.超過、超出表外第 3 段
+doctoral[ˈdɑktərəl]adj.博士的（doctoral degree 博士學位）表外第 3 段
+professorship[prəˈfɛsɚˌʃɪp]n.教授職位表外第 3 段
+oversupply[ˌoʊvɚsəˈplaɪ]n.供給過剩表外第 4 段
+grant[grænt]v.授予、頒發五級第 48 題
+infer[ɪnˈfɝ]v.推論、推斷六級第 50 題
+supportive[səˈpɔrtɪv]adj.支持的表外第 51 題
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+be abbreviated as + N縮寫成……第 1 段原文：usually abbreviated as PhD
+award a degree授予學位第 1 段原文：awarded by universities
+not + V + until + 時間直到……才……第 1 段原文：did not acquire its modern status until the early 19th century
+hold a doctorate擁有博士學位第 2 段原文：did not hold doctorates
+catch up趕上第 2 段原文：Other countries are catching up
+churn out + N大量產出……第 2 段原文：has churned out about 46% more PhDs
+supply outstrips demand供過於求第 3 段原文：the supply of PhDs has far outstripped demand
+fare well過得好、表現得好第 3 段原文：may not fare all that well
+on a temporary contract簽短期約第 3 段原文：still on temporary contracts
+be unrelated to + N和……無關第 3 段原文：unrelated to their degrees
+after all畢竟第 4 段
+in one's interests對某人有利第 4 段原文：in their interests
+turn away + sb拒絕某人第 4 段原文：to turn the smart students away
+The 比較級 …, the 比較級 …越……就越……第 4 段原文：The more bright students stay at universities, the better it is
+← 上一篇篇目一覽
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

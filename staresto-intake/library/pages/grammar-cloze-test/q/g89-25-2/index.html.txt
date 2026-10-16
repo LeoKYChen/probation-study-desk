@@ -1,0 +1,42 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g89-25-2/index.html
+Author: staresto-create ZZSH
+Title: 89 年學測克漏字第25題詳解（關係子句／疑問詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 89 年學測 ／ 第25題
+89 年學測 克漏字 第25題
+關係子句／疑問詞線索：句內
+Everyone dreams about 20 percent of their sleeping time. 23 people who say they never dream show about 20 percent of REM sleep. 24 these “non-dreamers” do their sleeping in a laboratory 25 researchers can wake them up and ask them whether they were having dreams the moment before, it 26 that they dream as much as others.
+(A)that
+(B)where
+(C)which
+(D)who
+答案：(B) where
+題目編號：G89_25_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+where 引導地方關係子句，修飾先行詞 a laboratory（在……的實驗室裡）；that／which 通常不這樣引導子句來表達「在……裡」的地點語意，who 指人，不合先行詞 laboratory，只有關係副詞 where 正確。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+that 與 which 是你最熟的兩個關係代名詞，看到空格前面有個名詞、後面接一串話，很容易就在這兩個之間挑。但這一格填哪一個，不是看你熟不熟，是看後面那個子句還缺不缺東西。
+怎麼判斷
+四個選項都是能帶出子句的字，先做分流，看空格前面接的是名詞還是動詞：前面是 a laboratory（名詞），所以這是回頭補充說明那個名詞的關係子句，不是間接問句。接著數子句成分：researchers can wake them up and ask them whether they were having dreams ——主詞是 researchers，動詞是 can wake 與 ask，受詞是 them，成分一個都不缺。既然不缺，that、which 就進不來：關係代名詞一定要在子句裡當主詞、受詞或介系詞的受詞，這裡沒有位置給它。剩下的 where 是關係副詞，本身不占句子成分，只代替一個表地方的介系詞片語。還原一次就清楚了：in a laboratory, and in the laboratory researchers can wake them up（在一間實驗室裡，而在那間實驗室裡研究人員可以叫醒他們），把 in the laboratory 換成 where。判斷方式相同的題目，題庫裡有好幾題：92 年第 25 題 →、98 年第 23 題 →，都是先行詞是地方、子句成分已滿，答案就是 where。
+誘答選項
+that、which：關係代名詞，進到子句裡一定要當主詞或受詞，本句這些位置都滿了，塞不進去。who：只用來指人，而先行詞 a laboratory 是地方，一眼就能刷掉。
+常考字詞與句型
+a laboratory where …（一間……的實驗室）、the place where …（……的地方）、the reason why …（……的原因）、the time when …（……的時候）、have a dream（做夢）、the moment before（前一刻）。其中 the place where … 這一組考過 5 個年度，83 年第 17 題 →、91 年補考第 29 題 →、98 年第 23 題 →、學測參考試卷第 22 題 →都出現過；the reason why … 考過 5 個年度，83 年第 17 題 →、92 年補考第 21 題 →、98 年第 23 題 →、107 年第 19 題 →都出現過；the time when … 考過 3 個年度，83 年第 17 題 →、107 年第 19 題 →都出現過。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Basically, there are two kinds of sleep. One is Rapid Eye Movement (REM) sleep. In 21 , the brain waves of a sleeping person are similar to those of a waking person, and the eyes move about rapidly under the closed lids. 22 kind of sleep is Non-Rapid Eye Movement sleep.
+Scientists have discovered that dreams happen mainly in REM sleep. Everyone dreams about 20 percent of their sleeping time. 23 people who say they never dream show about 20 percent of REM sleep. 24 these "non-dreamers" do their sleeping in a laboratory 25 researchers can wake them up and ask them whether they were having dreams the moment before, it 26 that they dream as much as others.
+Events in daily life sometimes occur symbolically in dreams. 27 , a boy is having difficulties on the school playground because a bigger boy keeps bullying him. He may dream at night of being alone in the playground, 28 a lion. At other times the dreaded event from daily life simply occurs in a dream in its real-life form; 29 , the boy dreams of being bullied by the bigger boy.
+30 scientific research, we have known more about the relationship between sleep and dreams. However, why a dream will take a certain symbolic form is still a mystery.
+中譯：基本上，睡眠可分為兩種。第一種是快速動眼期（REM）睡眠，在這個階段，睡眠者的腦波與清醒時相似，眼球會在閉著的眼皮下快速轉動。另一種則是非快速動眼期睡眠。科學家發現，做夢主要發生在快速動眼期。每個人在睡眠時間中大約有 20%在做夢，就連那些聲稱自己從不做夢的人，也有大約 20%的快速動眼期睡眠時間。如果讓這些「不做夢的人」在實驗室裡睡覺，研究人員就能把他們叫醒，詢問他們前一刻是否在做夢，結果發現，原來他們做夢的次數其實跟其他人一樣多。日常生活中發生的事，有時會以象徵的形式出現在夢境中。舉例來說，一個男孩在學校操場上因為一直被較大的男孩欺負而感到困擾，晚上他可能會夢見自己獨自一人在操場上，面對一頭獅子。而有時候，日常生活中令人恐懼的事件，也會直接以原本的樣貌出現在夢境中，也就是說，這名男孩夢見的就是自己被那個較大的男孩欺負。透過科學研究，我們對睡眠與夢境之間的關係已有了更多了解。然而，夢境為什麼會以某種特定的象徵形式呈現，至今仍是個謎。
+📋 內容大意
+Scientific research shows that everyone dreams during REM sleep, often transforming daily experiences into direct or symbolic dreams.
+← 第24題回到89 年學測第26題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

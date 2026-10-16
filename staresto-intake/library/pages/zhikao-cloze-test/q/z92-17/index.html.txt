@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z92-17/index.html
+Author: staresto-create ZZSH
+Title: 92 年指考克漏字第17題詳解（慣用語／片語）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 92 年指考 ／ 第17題
+92 年指考 克漏字 第17題
+慣用語／片語線索：句內答對率 45%
+答對率 45%：當年每 100 位考生，有 45 位答對。
+14 percent of the respondents said they often 17 books for information instead of going online.
+(A)used up
+(B)went off
+(C)turned to
+(D)made into
+答案：(C) turned to
+題目編號：Z92_17（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+turn to books（求助於書籍）表示轉而查閱書籍，與 instead of going online（而非上網）呼應；used up（用完）、went off（離開／爆炸）、made into（做成）都不符合語意。
+深入解析
+你可能會這樣想
+四個選項都是動詞加介副詞的片語，形態一樣，你會憑中文挑一個。
+怎麼判斷
+答對率四成五。先看空格前後：主詞是 14 percent of the respondents（一成四的受訪者），空格後面是 books for information instead of going online（書，為了找資料，而不是上網）。這一句在說有些人不上網、改去找書，所以要的是「轉而去用、求助於」——turn to。turn to sth for sth 是成組的說法，後面接的是你轉向的那樣東西與你要的東西。填進去讀成 they often turned to books for information（他們常轉而向書本找資料）。這與 turn to sb for help（向某人求助）是同一個 turn to，只是這裡轉向的不是人而是書。
+誘答選項
+used up（用完）後面接的是被用光的東西；went off（響起；離開；變質）不接受詞講「找資料」；made into 要寫成 make A into B，而且 A 是原料、B 是成品，書並不是被做成資料。
+常考字詞與句型
+turn to sb for help（向某人求助）、turn to sth for sth（轉而向……尋求……）、use up（用完）、go off（響起；變質）、instead of + V-ing（而不是做某事）、go online（上網）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：92學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The Internet has replaced books as a major source of information for Taiwanese primary school students, according to a recent survey. The survey was conducted last December, and it 16 that 77 percent of the students considered the Internet to be the most convenient source of information. 14 percent of the respondents said they often 17 books for information instead of going online. Of all the students surveyed, 27 percent said they had never used the 18.
+The survey randomly selected 4,200 students in 26 primary schools in 19 parts of Taiwan to investigate their reading habits. A total of 4,017 questionnaires were properly 20 by the respondents.
+According to the survey, five percent of the school children indicated that they did not read any 21 reading materials. Of those who read such materials, 25 percent liked to read comics, 20 percent fables and stories, 15 percent books on natural sciences, and 12.3 percent books on technology. The survey 22 indicated that 45 percent of the school children read at least five books every month; 23 45 percent of them read less than three per month.
+中譯：根據一項最新調查，網際網路已取代書籍，成為台灣國小學童獲取資訊的主要來源。這項調查於去年 12 月進行，結果發現 77%的學生認為網路是最方便的資訊來源。14%的受訪者表示，他們常會轉而閱讀書籍以取得資訊，而非上網查詢。在所有受訪學生中，27%表示自己從未使用過網路。這項調查隨機抽取台灣各地 26 所國小的 4,200 名學生，以了解他們的閱讀習慣，共有 4,017 份問卷由受訪者妥善填答。調查顯示，5%的學童表示自己完全不閱讀課外讀物。在會閱讀這類讀物的學生中，25%喜歡看漫畫、20%看寓言與故事、15%看自然科學書籍、12.3%看科技類書籍。調查進一步顯示，45%的學童每個月至少閱讀五本書；另外 45%的學童則每個月閱讀不到三本。
+📋 內容大意
+A recent survey reports that the Internet has overtaken books as the main information source for Taiwan's primary school pupils.
+It sampled 4,200 pupils from 26 schools around Taiwan and asked about their reading habits.
+Only a few read nothing outside class; comics and stories lead the rest, and monthly reading amounts differ sharply.
+← 第16題回到92 年指考第18題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dg111r-32/index.html
+Author: staresto-create ZZSH
+Title: 學測 111參 篇章結構 第32題詳解（掌握段落內語句的連貫性與一致性）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 學測 111參 ／ 第32題
+學測 111參 篇章結構 第32題
+選文：哥白尼與他的禁書（Copernicus and His Banned Book）
+掌握段落內語句的連貫性與一致性線索：轉折詞、序列與時間詞
+(A)The book, however, wasn’t published until two months before his death.不過這本書直到他過世前兩個月才出版。
+(B)If this act was an attempt to seek the Catholic Church’s approval, it was of no use.如果這個舉動是想爭取天主教會的認可，那並沒有用。
+(C)This went against the philosophical and religious beliefs held during medieval times.這牴觸了中世紀所抱持的哲學與宗教信念。
+(D)In his spare time, Copernicus studied the stars and the planets, applying his math knowledge to the mysteries of the night sky.哥白尼利用閒暇時間研究恆星與行星，把他的數學知識用在夜空的種種謎團上。
+答案：(A) The book, however, wasn’t published until two months before his death.
+題目編號：Dg111r_32
+解析
+先看空格前面。 前一句說：一五三〇年，哥白尼完成了名著 De Revolutionibus，這部書後來大幅改變了人類看待自己在宇宙中位置的觀點。
+再看空格後面。 第三段第一句是 Copernicus died in 1543 and was never to know what a stir his work would cause.（哥白尼一五四三年過世，始終不知道他的著作會引起多大的騷動。）
+把看得到的年份排出來：一五三〇年完成、一五四三年過世。中間隔了十三年，這十三年發生了什麼？而且後一句說他「始終不知道」——書要是早就出版了，他不可能一無所知。
+A 正好補上這一步：書拖到他過世前兩個月才出版。however 表示語意轉折（完成得早、出版得晚），The book 指的就是前一句的 De Revolutionibus，而「過世前兩個月」也解釋了為什麼他來不及知道後續的騷動。
+如果你選了 B（如果這個舉動是想爭取天主教會的認可，那並沒有用。）：B 的 this act（這個舉動）必須指回一個具體的動作，而前一句是「完成了一部著作」——完成著作不是一個對教會示好的舉動。獻書給教宗要到第四段才出現。
+如果你選了 C（這牴觸了中世紀所抱持的哲學與宗教信念。）：第二段從頭到尾只說他「完成了一部著作」，書裡主張什麼還沒講，This 沒有內容可以指。主張是第三段的事。
+【下次先看這裡】這一段照時間走的時候，先把看得到的年份排成一列。兩個年份之間隔太久，空格多半就是中間漏掉的那一步。
+線索與數據
+線索種類轉折詞、序列與時間詞
+線索在哪兩側 however；1530 ↔ 1543 ↔ 過世前兩個月
+答對率本場考試不公布統計
+本篇題型4選4・刪去法可收尾
+展開本題所在的整篇選文與中文翻譯
+本篇共 4 格、4選4；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+生平：出身、求學與任職
+Copernicus, founder of modern astronomy, was born in 1473 to a well-to-do merchant family in Torun, Poland. He was sent off to attend university in Italy, studying mathematics and optics, and canon law. Returning from his studies abroad, Copernicus was appointed to an administrative position in the cathedral of Frauenburg. There he spent a sheltered and academic life for the rest of his days.
+31 He made his observations from a tower situated on the protective wall around the cathedral. His observations were made with the “bare eyeball,” so to speak, as a hundred years were to pass before the invention of the telescope. In 1530, Copernicus completed his famous work De Revolutionibus, which later played a major role in changing the philosophical view of humankind’s place in the universe. 32The book, however, wasn’t published until two months before his death.
+Copernicus died in 1543 and was never to know what a stir his work would cause. In his book, he asserted that the Earth rotated on its axis once daily and traveled around the Sun once yearly. 33 People then regarded the Earth as stationary, situated at the center of the universe, with the Sun and all the planets revolving around it. Copernicus’ theory challenged the long-held belief that God created the Heavens and the Earth, and could overturn the core values of the Catholic world. Religious leader Martin Luther voiced his opposition to the sun-centered system model. Other ministers quickly followed suit, saying of Copernicus, “This fool wants to turn the whole art of astronomy upside down.”
+Ironically, Copernicus had dedicated his work to Pope Paul III. 34 The Church ultimately banned De Revolutionibus, and the book remained on the list of forbidden reading material for nearly three centuries thereafter.
+中譯
+現代天文學的奠基者哥白尼，一四七三年出生於波蘭托倫一個家境富裕的商人家庭。他被送到義大利念大學，修習數學、光學和教會法（教會內部的法律）。結束國外的學業回來之後，哥白尼被派到弗勞恩堡的大教堂擔任行政職務。此後他就在那裡度過受到庇護、與學術為伍的餘生。
+31 他的觀測是在大教堂外牆上的一座塔樓進行的。可以說，他是用「肉眼」看的，因為望遠鏡要再過一百年才發明出來。一五三○年，哥白尼完成了他著名的《天體運行論》，這本書後來在改變人類看待自身在宇宙中位置的哲學觀上，扮演了重要的角色。32
+哥白尼於一五四三年過世，始終不知道他的著作會掀起多大的波瀾。他在書中主張，地球每天繞著地軸自轉一圈，每年繞太陽公轉一圈。33 當時的人認為地球是靜止的，位在宇宙的中心，太陽和所有行星都繞著它轉。哥白尼的理論挑戰了長久以來「上帝創造天地」的信念，也可能顛覆天主教世界的核心價值。宗教領袖馬丁路德公開反對這套以太陽為中心的模型。其他教士很快跟進，說哥白尼「這個蠢材想把整個天文學徹底翻過來」。
+諷刺的是，哥白尼把這部著作獻給了教宗保祿三世。34 教會最終查禁了《天體運行論》，此後將近三個世紀，這本書一直留在禁書名單上。
+← 第31題回到互動練習第33題 →
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

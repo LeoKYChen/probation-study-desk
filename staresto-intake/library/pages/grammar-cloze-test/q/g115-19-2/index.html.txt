@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g115-19-2/index.html
+Author: staresto-create ZZSH
+Title: 115 年學測克漏字第19題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 115 年學測 ／ 第19題
+115 年學測 克漏字 第19題
+慣用語／片語線索：句內答對率 31%
+答對率 31%：當年每 100 位考生，有 31 位答對。
+The small portions were designed to merely “touch the heart,” as the name literally means, and 19 were first enjoyed as snacks.
+(A)if so
+(B)as such
+(C)by then
+(D)in that
+答案：(B) as such
+題目編號：G115_19_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+as such 在此意為「正因為如此、基於這樣的性質」，承接前面「分量小、只為 touch the heart」的說明，帶出「因此最早是當點心吃的」；if so（如果是這樣）、by then（到那時）、in that（在於…這一點）語意都不合。
+深入解析
+答對率三成一，鑑別度 -7：高分群考生答對的比例反而低於低分群。這在難題上並不少見，不代表題目有問題：對某個用法愈熟的人，愈容易被它帶走。
+你可能會這樣想
+as such ＝ as + 前面剛提過的那個身分。99 年學測文意選填那篇談足球與團隊精神，講到退役球員時寫道：He (the former player) knows he is a member of society and must behave himself as such.（打過球的人知道自己是社會的一員，就必須以這樣的身分行事。）這裡的 as such ＝ as a member of society——such 是代名詞，代替的是前面剛講過的那個身分，免得整串再講一次。本題同理。你多半把 as such 拆成「像這樣」，讀不通就換條路走；底子好的人反而容易改挑 in that（因為，比 because 正式）。卡住的地方不是字義，是沒察覺話被縮短過。
+怎麼判斷
+and 後面直接就是 were，主詞不見了——它跟前半句共用 The small portions（那些小分量的點心）；such 代替的則是 small portions designed to merely touch the heart（只為「點到心意」而設計的小分量）。還原成完整版：and, [being small portions meant only to touch the heart], they were first enjoyed as snacks。話一還原，as such ＝「正因為具備這樣的性質」就出來了。再用結構確認一次：in that 後面一定要接完整子句——It is a good plan in that it saves money.（這計畫很好，因為能省錢）；本句空格後直接是 were，沒有主詞，in that 進不來。這種「話被縮短過」你背過：When in Rome, do as the Romans do.（入境隨俗）——When 後面省掉了 you are，第二個 do 也不是真的在做什麼，它代替前面那個 do。同一個用法另見文意選填 99 年第 37 題。
+誘答選項
+if so（如果是這樣）用於假設，本句是既成事實；by then（到那時）需要兩個能比先後的時間點，本句沒有；in that 敗在結構。
+常考字詞與句型
+as such（正因為如此、以這樣的身分）、behave oneself（行為得體）、such as（例如）、in that + 子句（因為，比 because 正式）。
+鑑別度分析：鑑別度 -7，高分群答對的比例略低於低分群。本題答對率三成一——大考中心《選才電子報》第 307 期說明鑑別度時，就把答對率低的難題列為鑑別度偏低的原因之一：高、低分群考生在這類題目上的答對率差距不大，鑑別度的數值就會比較小。這一格的難處不在字義：such 是代名詞，要回頭問一句「as what」，把它代替的那串話找回來；in that 是較正式的用法，在這裡也容易被順手選走。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The history of dim sum stretches back to the early days of the Silk Road, an ancient network of trade routes connecting the East and the West. Those who traveled along the routes through China needed places to rest. Teahouses thus sprang up to 16 the weary travelers, offering them a cup of tea to help them regain energy. But the culinary art of dim sum 17 , for it was considered inappropriate to pair tea with food.
+Centuries later, the ability of tea to aid in digestion finally became known. Teahouse owners therefore began providing bite-sized snacks as an accompaniment, and the tradition of these Cantonese delicacies was born.
+Dim sum is more than just an example of Chinese cuisine. It is 18 an enjoyable dining experience that can span hours. The small portions were designed to merely "touch the heart," as the name literally means, and 19 were first enjoyed as snacks. The small size allows the customer to order a great variety of dishes, creating a banquet of different tastes and flavors. It is customary for big groups to enjoy simple dishes together as 20 . Ultimately, dim sum—the food—is only a small part of the dim sum experience.
+中譯：點心（港式飲茶）的歷史可追溯至古代絲路的早期時代——絲路是連接東西方的古老貿易路線網。沿著這條路線經過中國的旅人，需要有地方歇腳休息，茶館便因此應運而生，為疲憊的旅人提供一杯茶，幫助他們恢復體力。然而，點心這門烹飪藝術當時卻尚未誕生，因為當時人們認為茶與食物一起享用並不恰當。直到數個世紀之後，人們才逐漸了解到茶其實有助於消化。於是，茶館老闆開始提供小巧的點心作為茶的搭配，這項廣東美食的傳統也就此誕生。點心不只是中式料理的一個代表，它更是一場能持續數小時、令人愉悅的用餐體驗。這些小份量的點心，設計初衷正如其名稱字面意義——只是要「點到心意」，最初是被當作零食來享用的。份量小巧的特色，讓顧客能一次點各式各樣的菜色，組成一場口味豐富多變的盛宴。大型聚會通常會習慣一起享用簡單的菜餚，作為一種歡樂的社交活動。歸根結柢，點心這項食物本身，其實只是整個「飲茶」體驗中的一小部分而已。
+📋 內容大意
+Dim sum goes back to the early Silk Road. Teahouses grew up along the trade routes through China to give tired travelers a cup of tea.
+At first food was not served with tea, because the pairing seemed improper. Centuries later people learned that tea aids digestion, so teahouses added small snacks.
+The name means “touch the heart.” Small portions let diners order many dishes and make a banquet that can last hours. The food is only part of the experience.
+← 第18題回到115 年學測第20題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

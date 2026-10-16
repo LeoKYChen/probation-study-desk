@@ -1,0 +1,59 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dzref107-35/index.html
+Author: staresto-create ZZSH
+Title: 指考 107學年度起適用參考試卷 篇章結構 第35題詳解（掌握段落內語句的連貫性與一致性）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 指考 107學年度起適用參考試卷 ／ 第35題
+指考 107學年度起適用參考試卷 篇章結構 第35題
+選文：怪咖的正面特質（The Bright Side of Being Eccentric）
+掌握段落內語句的連貫性與一致性線索：One… Another… Some… Others 句型、人稱代名詞所有格
+(A)Eccentrics are also found to be healthier.研究也發現怪咖比較健康。
+(B)According to a recent study in England, eccentrics are more creative.根據英國最近的一項研究，怪咖比較有創造力。
+(C)Or it could be our best friend’s brother who wears shorts to a formal dance.也可能是我們最好的朋友的哥哥，穿著短褲去參加正式舞會。
+(D)People may have eccentric taste in clothes, or have eccentric hobbies.人們可能在衣著品味上很古怪，或者有古怪的嗜好。
+(E)Psychologists also find that eccentric people do not follow conventions.心理學家也發現，怪咖不跟從常規。
+(F)Such personal traits are found to play an important role in boosting the body’s immune system.研究發現，這些個人特質對提升人體免疫系統有重要作用。
+答案：(C) Or it could be our best friend’s brother who wears shorts to a formal dance.
+題目編號：Dzref107_35
+解析
+先看空格前面。 前一句是 It could be our aunt who has been raising pet lizards.（可能是那位養寵物蜥蜴的阿姨。）——舉了一個例子，句型是 It could be our + 某位親友 + who…。
+再看空格後面。 後面是 Their crazy hobby or strange sense of humor is what keeps them going.（他們瘋狂的嗜好或奇特的幽默感，就是支撐他們走下去的東西。）Their、them 都是複數，前面卻只有一位阿姨。
+C 補上第二個人，句型和前一句完全平行（Or it could be our…who…），複數才有著落。
+如果你選了 D（人們可能在衣著品味上很古怪，或者有古怪的嗜好。）：D 裡有 clothes（衣著）和 hobbies（嗜好），對得上 C 的短褲，也對得上後面那句的嗜好，字面最像。但 D 的主詞是泛稱的 People（人們），不是身邊某一個具體的人，Their 依然指不到誰。D 談的是「怎樣算古怪」，那是第一段的事。
+【下次先看這裡】前面舉了一個人，後面卻用 they／their，空格通常就是第二個人，而且句型會和前一句長得一模一樣。
+線索與數據
+線索種類One… Another… Some… Others 句型、人稱代名詞所有格
+線索在哪兩側 It could be our aunt ↔ Or it could be…；後句 Their 為複數
+答對率本場考試不公布統計
+本篇題型6選5・刪去法不收尾
+多出來的那一個：D
+(D)People may have eccentric taste in clothes, or have eccentric hobbies.人們可能在衣著品味上很古怪，或者有古怪的嗜好。
+D 裡有 eccentric（古怪）、有 hobbies（嗜好），第二段出現過 hobbies，第四段也有 crazy hobby（瘋狂的嗜好）——關鍵詞四處都對得上。 但五格都放不進去：
+格
+那一格在等什麼
+D 為什麼不行
+35
+身邊第二個具體的人
+D 的主詞是泛稱的 People，後句的 Their 指不到
+共同點：第一段問的是「什麼樣的人叫怪咖」，第二段之後整篇問的是「當怪咖有什麼好處」。D 停在第一段那個問題上。
+【下次先看這裡】關鍵詞對得上，不代表放得進去。先看這一篇從哪一段開始換了問題，再問這個選項回答的是換之前還是換之後的那一個。
+展開本題所在的整篇選文與中文翻譯
+本篇共 5 格、6選5；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+定義：什麼樣的人叫怪咖
+Eccentrics are people who have an unusual or odd personality, set of beliefs, or behavior pattern. They may or may not comprehend the standards for normal behavior in their culture. They simply don’t care about the society’s disapproval of their habits or beliefs.
+Once considered socially unacceptable, eccentric people have been found to possess some positive characteristics. 31 They often have more curiosity about the world and, in many cases, are contentedly obsessed by hobbies and interests. 32 They live in a world of their own and do not worry about what others think of them. So they are usually less restricted and therefore more carefree in forming new ideas.
+33 Statistics show they visit their doctors less—about once in eight to nine years, which is 20 times less than the average person. This could be partly due to their innate traits such as humor and happiness. 34 This may explain why eccentrics are, on the whole, healthier.
+結尾：所以該多留意身邊的怪咖，並舉例說明
+Psychologists therefore suggest that we pay attention to those who do not conform. It could be our aunt who has been raising pet lizards. 35Or it could be our best friend’s brother who wears shorts to a formal dance. Their crazy hobby or strange sense of humor is what keeps them going. Eccentric people may seem odd, but they will likely live a happier and healthier life because they enjoy what they are doing. In fact, many of history’s most brilliant minds have displayed some unusual behaviors and habits.
+中譯
+怪咖是指個性、信念或行為模式異於常人的人。他們可能懂、也可能不懂自己文化裡對於正常行為的標準。他們就是不在乎社會不認同自己的習慣或信念。
+過去人們認為怪咖不見容於社會，如今研究卻發現他們具有一些正面特質。31 他們對世界往往更有好奇心，而且很多時候會心滿意足地沉迷於自己的嗜好和興趣。32 他們活在自己的世界裡，不擔心別人怎麼看自己。所以他們通常比較不受拘束，在形成新想法時也就更加自在。
+33 統計顯示，他們看醫生的次數比較少——大約八到九年才看一次，比一般人少二十倍。這可能有一部分要歸因於他們天生的特質，例如幽默和快樂。34 這或許可以解釋，為什麼怪咖整體來說比較健康。
+因此心理學家建議，我們應該多注意那些不隨俗的人。那可能是我們那位養寵物蜥蜴的阿姨。35 他們那些瘋狂的嗜好或古怪的幽默感，正是支撐他們走下去的東西。怪咖看起來也許古怪，但他們很可能過得更快樂、更健康，因為他們享受自己正在做的事。事實上，歷史上許多最聰明的頭腦都表現過一些不尋常的行為和習慣。
+← 第34題回到互動練習
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

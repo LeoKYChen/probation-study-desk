@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z92-26/index.html
+Author: staresto-create ZZSH
+Title: 92 年指考克漏字第26題詳解（連接詞／轉折詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 92 年指考 ／ 第26題
+92 年指考 克漏字 第26題
+連接詞／轉折詞線索：句內答對率 66%
+答對率 66%：當年每 100 位考生，有 66 位答對。
+26 its strength, steel soon became a useful building material.
+(A)Prior to
+(B)Because of
+(C)In spite of
+(D)Not to mention
+答案：(B) Because of
+題目編號：Z92_26（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+Because of its strength（因為它的強度）符合因果邏輯——鋼因為強度高，所以成為實用的建材。Prior to（在……之前）、In spite of（儘管）、Not to mention（更不用說）都不符合這裡的因果語意。
+深入解析
+你可能會這樣想
+四個選項都是幾個字合起來當一個介系詞用的組合，你會憑中文挑一個，而 In spite of 最眼熟，很容易先被選走。
+怎麼判斷
+鑑別度高達 63。先看空格後面接的是什麼：its strength（它的強度），一個名詞組，不是子句——所以四個選項在形態上都過關，得靠邏輯定。前後兩件事是：鋼很堅固、鋼很快成為好用的建材。堅固是原因、成為好建材是結果，方向相同，所以用 Because of（因為）。填進去讀成 Because of its strength, steel soon became a useful building material。順帶記一個對照：because 是連接詞，後面接完整的子句（because it is strong）；because of 是介系詞，後面接名詞（because of its strength）。意思一樣，接什麼決定用哪一個——先看空格後面是名詞還是子句，這一步在克漏字裡幾乎每次都用得上。
+誘答選項
+In spite of（儘管）要求前後語意相反，但堅固與成為好建材是同一個方向；Prior to（在……之前）講的是時間先後；Not to mention（更別提）用在追加一件更誇張的事，這一句沒有那個語氣。
+常考字詞與句型
+because of + 名詞（因為）、because + 子句（因為）、due to（由於）、in spite of（儘管）、prior to + 名詞（在……之前）、not to mention（更別提）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：92學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Science makes possible the use of new materials and new methods of producing objects. For example, some 20th-century chairs are made of steel and plastic. These materials, 24, were undreamed of in the 18th century. As new materials develop, one invention often 25 another.
+Steel, for instance, was developed by engineers in the 19th century. 26 its strength, steel soon became a useful building material. 27 steel construction, buildings could then have a great many stories. But no one could be expected to walk up 8, 10, or 30 flights of 28.
+Therefore, to make tall buildings more accessible to their users, the elevator 29. By providing much-needed space in a world 30 people, tall buildings have solved a great problem of the city and have completely changed our way of life.
+中譯：科學使人們得以運用新材料及新方法來製造物品。舉例來說，有些 20 世紀的椅子是用鋼鐵與塑膠製成的，然而這些材料在 18 世紀是想都想不到的。隨著新材料的發展，一項發明往往會帶動另一項發明的誕生。以鋼鐵為例，它是 19 世紀工程師研發出來的。由於鋼鐵強度高，很快便成為一種實用的建築材料。有了鋼骨結構，建築物便能蓋得非常高。但沒有人能指望爬上 8 層、10 層，甚至 30 層樓梯。因此，為了讓使用者更方便進出高樓，人們發明了電梯。透過為日益擁擠、人口眾多的世界提供急需的空間，高樓大廈解決了城市的一大難題，也徹底改變了我們的生活方式。
+📋 內容大意
+Science allows objects to be made from materials and by methods earlier centuries could not imagine.
+Steel, developed in the nineteenth century, proved strong enough for building and let structures rise many stories.
+The elevator then made such heights usable, and tall buildings reshaped city life by adding much-needed space.
+← 第25題回到92 年指考第27題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

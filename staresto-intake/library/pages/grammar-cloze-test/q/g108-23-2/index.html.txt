@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g108-23-2/index.html
+Author: staresto-create ZZSH
+Title: 108 年學測克漏字第23題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 108 年學測 ／ 第23題
+108 年學測 克漏字 第23題
+字彙選義線索：句內答對率 71%
+答對率 71%：當年每 100 位考生，有 71 位答對。
+After five years of research, she created from pineapple leaves a material which, like real leather, can be used for making bags, shoes, and 23 textile products.
+(A)else
+(B)those
+(C)other
+(D)such
+答案：(C) other
+題目編號：G108_23_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「用來製作包包、鞋子和『其他』紡織品」，other（其他的）符合這種列舉後的概括；else（不能這樣修飾 textile products）、those（指示代名詞）、such 都不合這個位置。
+深入解析
+你可能會這樣想
+else 中文也翻成「其他」，所以 and else textile products 乍看好像可以。問題出在位置：else 只能放在被修飾的字後面，而且能被它修飾的字很有限。
+怎麼判斷
+else 能修飾的字其實很有限：只用在 any-、every-、no-、some- 開頭的字後面，以及 how、what、where、who、why 這些疑問詞後面（劍橋 English Grammar Today）。例如 something else（別的東西）、someone else（別人）、nowhere else（沒有別的地方）、What else do you need?（你還需要什麼？）。textile products 是普通名詞，不在這份名單裡，而且 else 不能擺到名詞前面去。要在複數普通名詞前面表示「其他的」，用的就是 other。還原檢查：bags, shoes, and other textile products（包包、鞋子，以及其他紡織品），前面兩項是舉例，other 把同一類的其餘部分一次包進來，這是列舉句很常見的收尾方式。
+誘答選項
+those 是指示代名詞，指的是前面提過的特定事物，但這裡是第一次提到「其他紡織品」，沒有可以指回去的對象。such 表示「這類的」，本身沒有「其餘、另外的」這一層意思；劍橋的例句 Andrew Davies, Melissa Peters, and other such stars 在列舉收尾時仍然要靠 other 帶出「其他」，所以單寫 such textile products 只說得出「這類紡織品」，表達不了「除了前面兩項以外的其餘」。else 則是位置錯誤。
+常考字詞與句型
+other + 複數名詞（其他的……）、the other（兩者中的另一個）、others（其他人、其他東西，代名詞）、another + 單數名詞（另一個）、something else（別的東西）、someone else（別人）、what else（還有什麼）、and other + 名詞（以及其他……，列舉收尾）、be used for V-ing（被用來做……）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The pineapple, a delicious tropical fruit, has been valued for centuries not only for its distinct and unique taste, but also for its miraculous health and medical benefits. But pineapples can also be a fashionable fruit: Pineapple leaves can 21 a substitute for leather.
+The idea was developed when a Spanish designer travelling to the Philippines observed a traditional Filipino shirt 22 together with the fibers of pineapple leaves. After five years of research, she created from pineapple leaves a material which, like real leather, can be used for making bags, shoes, and 23 textile products. It is an eco-friendly and biodegradable fiber.
+This eco-friendly leather has clear 24 for the environment, compared to real leather and synthetic leathers. It requires fewer chemicals, making it safer for the workers in factories. Its manufacture also leaves a smaller carbon footprint. In addition, the leftover material following the removal of fibers can even be used as a natural fertilizer back in the pineapple fields. 25 its low cost, this innovative material is already being used by many leading fashion companies to make their products.
+中譯：鳳梨是一種美味的熱帶水果，數百年來不只因其獨特的風味受人重視，其驚人的保健與醫療功效也備受推崇。但鳳梨其實還能成為一種時尚的水果：鳳梨葉能成為皮革的替代材料。這個想法的誕生，源於一位西班牙設計師到菲律賓旅行時，觀察到當地傳統襯衫是用鳳梨葉的纖維織成的。經過五年的研究，她成功用鳳梨葉開發出一種材質，能像真皮一樣用來製作包包、鞋子以及其他紡織產品，而且是一種環保、可生物分解的纖維。相較於真皮和人造皮革，這種環保皮革對環境有明顯的好處：它需要的化學品較少，讓工廠員工的工作環境更安全；製造過程留下的碳足跡也較小。此外，抽取纖維後剩餘的材料，還能拿回鳳梨田當作天然肥料使用。加上成本低廉，這項創新材質如今已被許多知名時尚品牌用來製作產品。
+📋 內容大意
+People have prized the pineapple for centuries for its taste and health benefits. Its leaves now make a fashionable substitute for leather.
+A Spanish designer in the Philippines saw a traditional shirt made from pineapple-leaf fiber. Five years of research turned the leaves into material for bags and shoes.
+It needs fewer chemicals than real or synthetic leather, so factory workers are safer. Leftover pulp feeds the fields, and its low cost attracts fashion companies.
+← 第22題回到108 年學測第24題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

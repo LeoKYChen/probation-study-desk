@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z102-18/index.html
+Author: staresto-create ZZSH
+Title: 102 年指考克漏字第18題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 102 年指考 ／ 第18題
+102 年指考 克漏字 第18題
+字彙選義線索：跨句答對率 51%
+答對率 51%：當年每 100 位考生，有 51 位答對。
+It is expected that this 18 will save about $2 billion a year.
+(A)move
+(B)round
+(C)chance
+(D)fact
+答案：(A) move
+題目編號：Z102_18（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+this move（這項措施／這個做法）指前文提到取消週六送信的決定，預期這項做法每年可省下約 20 億美元；round／chance／fact 都不符合此處語意。
+深入解析
+你可能會這樣想
+move 這個字，你的印象大概只有動詞的「移動、搬家」，不太會想到它當名詞是「舉措、做法」。
+怎麼判斷
+答對率剛過五成，鑑別度高達 63，是同一年克漏字十題裡最高的，分的是有沒有回頭把 this 的所指釘回前面。這是指標勾環：看到 this 帶著一個名詞，先問「這個 this 指的是前面哪一件事」，再看哪一個選項對得上。前面講的是郵政署決定週六不再送信（stop delivering mail on Saturdays），那是一個決定、一項做法；move 當名詞正是「舉措、行動」，this move 就是「這項措施」。填進去讀成 It is expected that this move will save about $2 billion a year（預計這項措施每年可省下約二十億美元）。這一句自己看不出該填哪一個名詞，四個填進去都合文法，線索一定在前面那幾句。
+誘答選項
+round（一回合、一輪）要有一連串重複的回合才說得通，這裡是一次就決定的事；chance（機會）與 fact（事實）文法上都放得進去，形態吻合，容易被順手選走，但前面那件事既不是一個機會，也不是在陳述一項事實，而是一個做出來的動作。
+常考字詞與句型
+move（名詞：舉措、行動）、make a move（採取行動、有所動作）、It is expected that ...（預計、預期……）、this + 名詞（回指前面提過的人事物）、a round of（一輪、一回合）。
+線索範圍說明：this move 概括前一句「只在週一到週五送信」的決定
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：102學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The U.S. Postal Service has been struggling financially for some time. It plans to stop delivering mail on Saturdays, 16 Aug. 1 this year. This decision was announced on Wednesday without congressional approval. 17 forbidden to do so by the Congress, the agency for the first time will deliver mail only Monday through Friday. It is expected that this 18 will save about $2 billion a year.
+In recent years, the postal service has suffered tens of billions of dollars in losses 19 the increasing popularity of the Internet and e-commerce.
+The postal service plans to continue Saturday delivery of packages, which remain a profitable and growing part of the delivery business. Post offices would remain open on Saturdays 20 customers can drop off mail or packages, buy postage stamps, or access their post office boxes. But hours would likely be reduced at thousands of smaller locations.
+中譯：美國郵政署財務困難已有一段時間。該署計畫自今年 8 月 1 日起停止週六送信服務，這項決定於週三宣布，並未經國會批准。除非遭國會明令禁止，否則該署將首度只在週一至週五送信。預期這項做法每年可節省約 20 億美元。近年來，隨著網路和電子商務日益普及，郵政署已蒙受數百億美元的虧損。郵政署計畫繼續在週六遞送包裹，因為這仍是獲利且持續成長的業務。郵局在週六仍會開放營業，以便顧客可以投遞郵件或包裹、購買郵票，或使用郵政信箱。但數千個較小的郵局據點的營業時間可能會縮減。
+📋 內容大意
+Facing heavy losses, the U.S. Postal Service announced an end to Saturday letter delivery.
+The Internet and online shopping have cost it tens of billions in recent years.
+Parcels, still profitable, will arrive on Saturdays, and post offices will open for shorter hours.
+← 第17題回到102 年指考第19題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

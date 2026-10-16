@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g93-28-3/index.html
+Author: staresto-create ZZSH
+Title: 93 年學測克漏字第28題詳解（句型結構）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 93 年學測 ／ 第28題
+93 年學測 克漏字 第28題
+句型結構線索：句內答對率 44%
+答對率 44%：當年每 100 位考生，有 44 位答對。
+Girls were 28 more sensitive to sounds and more skillful at fine motor performance than boys.
+(A)very
+(B)both
+(C)still
+(D)thus
+答案：(B) both
+題目編號：G93_28_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】both...and... 固定句型，這裡 both more sensitive...and more skillful 表示女孩「既……又……」（對聲音更敏感，也更擅長精細動作）；very（非常，不合這個並列結構）、still（仍然）、thus（因此）都不合。
+深入解析
+你可能會這樣想
+very 大概是你最熟的加強語氣的字，very sensitive（非常敏感）幾乎是反射動作。眼睛掃到空格後面的 sensitive，手就先填了 very，沒注意到中間還卡著一個 more。答對率四成四、鑑別度只有 34，連高分群考生也大量失手，原因就在這個反射太快——對 very 加形容詞越熟的人，越容易把中間的 more 直接跳過去。
+怎麼判斷
+四個選項裡 very、still、thus 都是副詞，光看詞性分不出來，那就先把句子結構拉出來：Girls were ___ more sensitive to sounds and more skillful at fine motor performance than boys.——were 後面掛著兩串並列的比較級，一串是 more sensitive to sounds，另一串是 more skillful at fine motor performance，中間用 and 連起來。看到 and 把兩個對等的東西串在一起，空格就該去找那個跟 and 呼應的字，both...and...（既……又……）正是這一組，掛鉤是 Both Tom and Mary are good at math.（湯姆和瑪莉數學都很好。）。填進去讀一次：女孩既對聲音更敏感，精細動作也更靈巧，兩件事並列，完全成立。
+誘答選項
+very：這是本題最容易選的一個，但它有個致命傷——very 修飾的是原級形容詞（very sensitive 非常敏感），要加強比較級得換人。劍橋 English Grammar Today 列出可以用來加強比較級的字是 much、a lot、far、even、rather（This food is much better than the food we had yesterday. 這頓飯比我們昨天吃的好太多了。），very 不在其中。still（仍然）：語意上要有一個「照理說不該如此、卻還是如此」的前提才用得上，而前一句只是在說研究發現了性別差異，沒有任何讓步的語境。thus（因此）：表因果，可是前一句沒有任何原因能推出這個結果。
+常考字詞與句型
+both A and B（既 A 又 B）、not only A but also B（不但 A 而且 B）、be sensitive to（對……敏感）、be skillful at（擅長於）、fine motor skills（精細動作能力）、much more + 形容詞（……得多）。其中 be sensitive to 這一組考過 4 個年度，85 年第 39 題 →、88 年第 22 題 →、112 年第 14 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Learning style means a person's natural, habitual, and preferred way(s) of learning. Research about learning styles has identified 26 differences.
+For example, one study found various differences 27 boys and girls in sensory learning styles. Girls were 28 more sensitive to sounds and more skillful at fine motor performance than boys. Boys, 29, showed an early visual superiority to girls. They were, however, clumsier than girls. They performed poorly at a detailed activity 30 arranging a row of beads. But boys excelled at other activities that required total body coordination.
+中譯：學習風格是指一個人天生、習慣性且偏好的學習方式。關於學習風格的研究已發現了性別上的差異。舉例來說，一項研究發現，男孩與女孩在感官學習風格上存在多種差異：女孩對聲音較為敏感，精細動作表現也較男孩靈巧；相較之下，男孩則較早展現出視覺上的優勢，但動作卻比女孩笨拙，在需要精細操作的活動（例如排列一串珠子）上表現較差。然而，男孩在需要全身協調的其他活動上則表現優異。
+📋 內容大意
+Learning style means how a person naturally prefers to learn.
+One study found that girls hear sounds better and handle small movements better than boys.
+Boys saw better at first but were clumsier. They did poorly at fine work like threading beads, yet well at whole-body activities.
+← 第27題回到93 年學測第29題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,1577 @@
+[
+ {
+  "id": "Dg115r_31",
+  "year": "115參",
+  "exam": "學測",
+  "examType": "參考試卷",
+  "passageId": "g115r",
+  "blankNum": 31,
+  "optionCount": 5,
+  "eliminationValid": false,
+  "options": {
+   "A": "Designers must then consider the space available for the coaster.",
+   "B": "Building an exciting roller coaster starts with a brilliant design.",
+   "C": "Theme and type are also important aspects to consider in coaster design.",
+   "D": "Designers can draw on a number of techniques to provide a memorable ride.",
+   "E": "When the design is complete, detailed calculation and careful testing procedures will follow."
+  },
+  "answer": "B",
+  "categories": [
+   "掌握篇章的主題論述"
+  ],
+  "categorySource": "115學年度起適用學測英文考科參考試卷試題解析 PDF",
+  "cueTypes": [
+   "定冠詞 the",
+   "序列與時間詞"
+  ],
+  "cueNote": "`The designers`；`first`",
+  "cuePosition": "後一句",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格前面。",
+     "t": "第一段只有一句話：雲霄飛車以慢得磨人的起步、幾乎讓人心跳停止的落差，以及令人尖叫的轉彎和翻轉聞名。這一句從頭到尾在講**坐起來的感覺**，沒提過任何人。"
+    },
+    {
+     "h": "再看空格後面。",
+     "t": "第二段第一句是 `The designers must first consider what kind of riders will use the coaster.`（設計者必須**先**考慮會是什麼樣的人來坐。）這裡有兩個字要抓："
+    }
+   ],
+   "why": "- `The designers`：用了定冠詞，表示「設計者」前面已經提過。可是第一段一個人都沒有。\n- `first`（首先）：表示接下來要一步一步數下去。既然有第一步，前面一定先宣布過「這件事要開始了」。\n\nB 一次補上兩件事：`design`（設計）帶出後面的設計者，`starts with`（從……開始）宣布整篇要開始講設計流程。這一句也是全篇的主旨句。",
+   "distractors": [
+    {
+     "opt": "A",
+     "t": "A 裡也有 designers，字面上很搭。但 `then`（接著）表示前面已經有過第一步，而空格前面只描述了乘坐感受，一步都還沒走。"
+    },
+    {
+     "opt": "C",
+     "t": "`also`（也）表示前面已經列過其他面向，第一段一項都沒列。"
+    }
+   ],
+   "takeaway": "空格後面出現 `first`、`then`、「首先」，先確認前面有沒有人宣布過「要開始一連串步驟了」。沒有，那句宣布就在空格裡。"
+  },
+  "accuracyRate": null,
+  "discrimination": null
+ },
+ {
+  "id": "Dg115r_32",
+  "year": "115參",
+  "exam": "學測",
+  "examType": "參考試卷",
+  "passageId": "g115r",
+  "blankNum": 32,
+  "optionCount": 5,
+  "eliminationValid": false,
+  "options": {
+   "A": "Designers must then consider the space available for the coaster.",
+   "B": "Building an exciting roller coaster starts with a brilliant design.",
+   "C": "Theme and type are also important aspects to consider in coaster design.",
+   "D": "Designers can draw on a number of techniques to provide a memorable ride.",
+   "E": "When the design is complete, detailed calculation and careful testing procedures will follow."
+  },
+  "answer": "A",
+  "categories": [
+   "掌握段落主題句和細節的關係"
+  ],
+  "categorySource": "115學年度起適用學測英文考科參考試卷試題解析 PDF",
+  "cueTypes": [
+   "序列與時間詞",
+   "同義呼應"
+  ],
+  "cueNote": "`then` ↔ 上一段 `first`；`space` ↔ `room`／`ground`／`air`",
+  "cuePosition": "兩側",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格的位置。",
+     "t": "它在第三段的第一句，而上一段的第一句是 `The designers must first consider...`（必須**先**考慮……）。**上一段用 `first`，這一段的段首就該接 `then`。**"
+    },
+    {
+     "h": "再看空格後面。",
+     "t": "後面說雲霄飛車很占地方，不只地面，連空中也是；設計者得把周邊設施、電線和其他障礙物都算進去。整段講的是**空間**。"
+    }
+   ],
+   "why": "A 的 `then` 接上了上一段的 `first`，`the space available`（可用的空間）也正是後面那一整段的內容。段首這一句要罩得住整段，A 剛好。",
+   "distractors": [
+    {
+     "opt": "C",
+     "t": "C 是這一格最像的選項——它同樣是「設計要考慮的一項」，同樣可以擺在段首，`also` 讀起來也順。但往下讀，這一段從頭到尾在講占多少地方、有哪些障礙物，**沒有一個字提到主題或類型**。段首的句子必須罩住整段，罩不住就不是它。"
+    }
+   ],
+   "takeaway": "段首的空格，先把整段讀完再回頭挑。選項只要有一個關鍵詞在這一段裡找不到對應的內容，就不是它。"
+  },
+  "accuracyRate": null,
+  "discrimination": null
+ },
+ {
+  "id": "Dg115r_33",
+  "year": "115參",
+  "exam": "學測",
+  "examType": "參考試卷",
+  "passageId": "g115r",
+  "blankNum": 33,
+  "optionCount": 5,
+  "eliminationValid": false,
+  "options": {
+   "A": "Designers must then consider the space available for the coaster.",
+   "B": "Building an exciting roller coaster starts with a brilliant design.",
+   "C": "Theme and type are also important aspects to consider in coaster design.",
+   "D": "Designers can draw on a number of techniques to provide a memorable ride.",
+   "E": "When the design is complete, detailed calculation and careful testing procedures will follow."
+  },
+  "answer": "D",
+  "categories": [
+   "掌握段落內語句的連貫性與一致性"
+  ],
+  "categorySource": "115學年度起適用學測英文考科參考試卷試題解析 PDF",
+  "cueTypes": [
+   "概括—列舉呼應"
+  ],
+  "cueNote": "`a number of techniques` ↔ 後面四種具體技法",
+  "cuePosition": "兩側",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格前面。",
+     "t": "前一句說：設計者接下來的目標，是做出獨一無二的乘坐感（`a unique “feel”`）。這只說了**目標**，還沒說**怎麼做到**。"
+    },
+    {
+     "h": "再看空格後面。",
+     "t": "後面是一長串具體做法：第一個落差通常設計得最陡、最快、最嚇人；中段做一小截平路的叫 double dips；落差末端突然轉平或上翹、把乘客壓進座位的叫 slammers；讓車廂貼著地面跑的叫 gully coaster。**數一數，四種。**"
+    }
+   ],
+   "why": "一個目標後面接四種做法，中間需要一句話先說「有好幾種手法」。D 的 `a number of techniques`（多種技法）正是那一句，後面四種就是它的清單。",
+   "distractors": [
+    {
+     "opt": "C",
+     "t": "C 又一次讀起來很順——它確實是設計的一項考量，`also` 也接得上前面已經數過的兩項。但後面列的四種全是落差和軌道的做法，主題（例如海盜船、外太空）和類型一項都沒出現。"
+    },
+    {
+     "opt": "E",
+     "t": "E 講的是設計完成之後的計算和測試，這一段卻還在談怎麼做出獨特的乘坐感；放進這裡，後面那一串技法就接不上了。"
+    }
+   ],
+   "takeaway": "前面給目標、後面接一串具體做法，空格通常是「有好幾種辦法」這種概括句。先數後面列了幾項，再找哪個選項罩得住。"
+  },
+  "accuracyRate": null,
+  "discrimination": null
+ },
+ {
+  "id": "Dg115r_34",
+  "year": "115參",
+  "exam": "學測",
+  "examType": "參考試卷",
+  "passageId": "g115r",
+  "blankNum": 34,
+  "optionCount": 5,
+  "eliminationValid": false,
+  "options": {
+   "A": "Designers must then consider the space available for the coaster.",
+   "B": "Building an exciting roller coaster starts with a brilliant design.",
+   "C": "Theme and type are also important aspects to consider in coaster design.",
+   "D": "Designers can draw on a number of techniques to provide a memorable ride.",
+   "E": "When the design is complete, detailed calculation and careful testing procedures will follow."
+  },
+  "answer": "E",
+  "categories": [
+   "掌握篇章整體結構發展及段落與段落間的關係"
+  ],
+  "categorySource": "115學年度起適用學測英文考科參考試卷試題解析 PDF",
+  "cueTypes": [
+   "同義呼應",
+   "序列與時間詞"
+  ],
+  "cueNote": "`testing` ↔ `safety is assured`；`When the design is complete`",
+  "cuePosition": "後一句",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格後面。",
+     "t": "最後一段只有兩句，後面那句是 `Only after its safety is assured can the design be used to build a new roller coaster.`（唯有在安全獲得確認之後，這份設計才能拿去造出一台新的雲霄飛車。）"
+    }
+   ],
+   "why": "**「安全獲得確認」是誰確認的？** 要確認安全，前面必須先有檢驗這件事。可是前面三段從頭到尾在講怎麼設計，沒有任何一句提到檢驗或測試。\n\nE 補上的正是這一步。`testing procedures`（測試程序）讓後一句的「安全獲得確認」有了來歷，`When the design is complete`（設計完成之後）也把前面三段的設計流程一次收掉。",
+   "distractors": [
+    {
+     "opt": "D",
+     "t": "D 也在講設計，語氣正面。但最後一段講的是**設計做完以後**的事，D 還停在設計當中；後面的「安全獲得確認」也一樣沒有著落。"
+    }
+   ],
+   "takeaway": "後面那一句把某件事當作已經做過（「確認之後」「檢查完畢」），先回頭找那件事在哪裡做的。找不到，它就在空格裡。"
+  },
+  "accuracyRate": null,
+  "discrimination": null
+ },
+ {
+  "id": "Dg115_31",
+  "year": "115年",
+  "exam": "學測",
+  "examType": "正式考試",
+  "passageId": "g115",
+  "blankNum": 31,
+  "optionCount": 5,
+  "eliminationValid": false,
+  "options": {
+   "A": "Another crucial factor is a society's immigration diversity.",
+   "B": "Various factors have thus contributed to the phenomenon of smiling.",
+   "C": "For most of recorded human history, the open smile has been deeply unfashionable.",
+   "D": "A genuine smile indicates contentment, while a forced smile suggests underlying distress.",
+   "E": "In fact, there is a well-known Russian proverb that goes, \"Smiling with no reason is a sign of stupidity.\""
+  },
+  "answer": "C",
+  "categories": [
+   "掌握段落主題句和細節的關係"
+  ],
+  "categorySource": null,
+  "cueTypes": [
+   "舉例、結論的位置提示詞"
+  ],
+  "cueNote": "`for example`",
+  "cuePosition": "後一句",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格前面。",
+     "t": "第一段最後一句是問句：`But does this hold true across time and cultures?`（但這在不同的時代和文化裡都成立嗎？）問句丟出兩個面向：**時代**和**文化**。"
+    },
+    {
+     "h": "再看空格後面。",
+     "t": "後面是 `In the West, for example, portraits of men and women before the 1700s typically depicted them with a serious, unsmiling expression.`（例如在西方，一七〇〇年代以前的人像畫，畫中人多半表情嚴肅、不帶笑容。）既然是舉例，前面一定有一句被它證明的話。"
+    }
+   ],
+   "why": "這個例子有兩個特徵：講的是**過去**、講的是**不笑**。空格裡那一句必須同時對上這兩點。C 的 `For most of recorded human history`（歷史上大多數時間）是時代，`deeply unfashionable`（很不受青睞）是不笑，而且正好接上問句的第一個面向。",
+   "distractors": [
+    {
+     "opt": "E",
+     "t": "E 也在講笑被負面看待，方向一致。但 E 以 `In fact`（事實上）開頭，這種詞是用來補強**前一句已經說過的說法**，而空格前面是一個問句，沒有說法可以補強。E 講的也是文化，不是時代。"
+    }
+   ],
+   "takeaway": "空格後面第一句就有 `for example`，先把那個例子的特徵一項一項列出來（講的是什麼時候？講的是什麼現象？），空格裡那一句必須每一項都對上。"
+  },
+  "accuracyRate": 73,
+  "discrimination": 52
+ },
+ {
+  "id": "Dg115_32",
+  "year": "115年",
+  "exam": "學測",
+  "examType": "正式考試",
+  "passageId": "g115",
+  "blankNum": 32,
+  "optionCount": 5,
+  "eliminationValid": false,
+  "options": {
+   "A": "Another crucial factor is a society's immigration diversity.",
+   "B": "Various factors have thus contributed to the phenomenon of smiling.",
+   "C": "For most of recorded human history, the open smile has been deeply unfashionable.",
+   "D": "A genuine smile indicates contentment, while a forced smile suggests underlying distress.",
+   "E": "In fact, there is a well-known Russian proverb that goes, \"Smiling with no reason is a sign of stupidity.\""
+  },
+  "answer": "E",
+  "categories": [
+   "掌握段落內語句的連貫性與一致性"
+  ],
+  "categorySource": null,
+  "cueTypes": [
+   "舉例、結論的位置提示詞",
+   "同義呼應"
+  ],
+  "cueNote": "`In fact`；`stupidity` ↔ `less intelligent`",
+  "cuePosition": "前一句",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格的位置。",
+     "t": "它在第三段的**最後一句**，段末的空格通常是補一個例子或收個尾。"
+    },
+    {
+     "h": "再看空格前面。",
+     "t": "前一句說：在多數文化裡微笑代表正面情緒，但在某些文化裡，同一個人笑的時候反而會被認為 `less intelligent`（比較不聰明）。這是一個聽起來很反常的說法，說完就沒有下文了。"
+    }
+   ],
+   "why": "E 補的正是佐證。注意兩個字的對應：諺語裡的 `stupidity`（愚蠢）對上前一句的 `less intelligent`，`Russian`（俄羅斯）也讓「某些文化」有了具體對象。**兩處都不是同一個字，但意思一個接一個。**",
+   "distractors": [
+    {
+     "opt": "D",
+     "t": "D 講的也是「笑代表什麼」，話題最貼。但這一段比的是**文化與文化**之間解讀不同，D 比的是**真笑與假笑**，切法不一樣；D 也沒有回應「比較不聰明」這個關鍵。"
+    },
+    {
+     "opt": "A",
+     "t": "`Another`（另一個）表示前面已經數過第一個因素，可是第三段從頭到尾在講解讀差異，沒有在數因素。"
+    }
+   ],
+   "takeaway": "前一句拋出一個聽起來很反常的說法，後面卻沒有下文，空格多半是那個佐證。看到 `In fact` 開頭的選項，先確認前面有沒有一句話等著被補強。"
+  },
+  "accuracyRate": 60,
+  "discrimination": 75
+ },
+ {
+  "id": "Dg115_33",
+  "year": "115年",
+  "exam": "學測",
+  "examType": "正式考試",
+  "passageId": "g115",
+  "blankNum": 33,
+  "optionCount": 5,
+  "eliminationValid": false,
+  "options": {
+   "A": "Another crucial factor is a society's immigration diversity.",
+   "B": "Various factors have thus contributed to the phenomenon of smiling.",
+   "C": "For most of recorded human history, the open smile has been deeply unfashionable.",
+   "D": "A genuine smile indicates contentment, while a forced smile suggests underlying distress.",
+   "E": "In fact, there is a well-known Russian proverb that goes, \"Smiling with no reason is a sign of stupidity.\""
+  },
+  "answer": "A",
+  "categories": [
+   "掌握段落內語句的連貫性與一致性"
+  ],
+  "categorySource": null,
+  "cueTypes": [
+   "One… Another… Some… Others 句型"
+  ],
+  "cueNote": "`Another crucial factor`",
+  "cuePosition": "兩側",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格前面。",
+     "t": "前面兩句在講第一個因素：個人主義高、人口少的國家，人們笑得比較多；那些地方個人的需求和權利先於團體。"
+    },
+    {
+     "h": "再看空格後面。",
+     "t": "後面說 `Newcomers from different parts of the world are found to smile more.`（來自世界各地的新住民笑得更多。）**「新住民」是突然冒出來的**——前面講的是個人主義，一個字都沒提到移民。"
+    }
+   ],
+   "why": "空格要做的就是把話題轉到第二個因素。A 的 `Another crucial factor`（另一個關鍵因素）表示前面已經數過第一個，`immigration diversity`（移民多樣性）也正好帶出後面的新住民。",
+   "distractors": [
+    {
+     "opt": "B",
+     "t": "B 裡也有「因素」，字面上最接近，很容易被吸過去。但 B 是用 `thus`（因此）帶出的結論，不是在列出新的因素；而且 B 講完就結束了，後面的新住民一樣沒有來歷。"
+    }
+   ],
+   "takeaway": "後面突然冒出一群前面沒提過的人，空格裡一定先把那群人帶出來。看到 `Another`，先回頭數「第一個是什麼」。"
+  },
+  "accuracyRate": 60,
+  "discrimination": 72
+ },
+ {
+  "id": "Dg115_34",
+  "year": "115年",
+  "exam": "學測",
+  "examType": "正式考試",
+  "passageId": "g115",
+  "blankNum": 34,
+  "optionCount": 5,
+  "eliminationValid": false,
+  "options": {
+   "A": "Another crucial factor is a society's immigration diversity.",
+   "B": "Various factors have thus contributed to the phenomenon of smiling.",
+   "C": "For most of recorded human history, the open smile has been deeply unfashionable.",
+   "D": "A genuine smile indicates contentment, while a forced smile suggests underlying distress.",
+   "E": "In fact, there is a well-known Russian proverb that goes, \"Smiling with no reason is a sign of stupidity.\""
+  },
+  "answer": "B",
+  "categories": [
+   "掌握篇章整體結構發展及段落與段落間的關係"
+  ],
+  "categorySource": null,
+  "cueTypes": [
+   "轉折詞",
+   "範圍呼應"
+  ],
+  "cueNote": "`thus`，因果；`Various factors` 總結前三段",
+  "cuePosition": "兩側",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格的位置。",
+     "t": "它在最後一段的第一句，而最後一段只有兩句話。前面三段各講一個面向：時代、文化解讀、社會組成。到這裡，該講的都講完了。"
+    },
+    {
+     "h": "再看空格後面。",
+     "t": "後面是 `As many psychologists now point out, this simple gesture is in fact far more complicated than it may appear.`（許多心理學家指出，這個簡單的動作其實遠比看起來複雜。）**要說「比看起來複雜」，前面得先有一句話說明複雜在哪裡。**"
+    }
+   ],
+   "why": "B 就是那一句：`Various factors`（種種因素）把前面三段一次總結，`thus`（因此）表示因果，是從前面推出來的結論。",
+   "distractors": [
+    {
+     "opt": "A",
+     "t": "A 也是講因素的句子。但 `Another`（另一個）是在前面數過的因素之外再添一項，新添的因素後面要有內容說明；這是最後一段，後面只剩一句結論，沒有地方展開。"
+    }
+   ],
+   "takeaway": "空格在最後一段的第一句，先回頭數這篇一共講了幾件事。最後一段要的通常是「把前面全部總結起來」的那一句，不是再加一項。"
+  },
+  "accuracyRate": 50,
+  "discrimination": 58
+ },
+ {
+  "id": "Dg114_31",
+  "year": "114年",
+  "exam": "學測",
+  "examType": "正式考試",
+  "passageId": "g114",
+  "blankNum": 31,
+  "optionCount": 4,
+  "eliminationValid": true,
+  "options": {
+   "A": "In response to rising demands, these hotels are embracing a wave of innovation.",
+   "B": "The room’s thin plastic walls easily transmit the sound of snoring made by neighboring guests.",
+   "C": "The chambers are stacked side-by-side, two units high, with the upper rooms reached by a ladder.",
+   "D": "Today, they provide low-budget, overnight lodging in commerce centers in large cities worldwide."
+  },
+  "answer": "D",
+  "categories": [
+   "掌握段落主題句和細節的關係"
+  ],
+  "categorySource": null,
+  "cueTypes": [
+   "人稱代名詞主格",
+   "序列與時間詞"
+  ],
+  "cueNote": "`they`；`Today`↔`initially`",
+  "cuePosition": "前一句",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格前面。",
+     "t": "前一句說膠囊旅館源於日本，`initially`（最初）是給商務人士用的，讓他們住得離商業區近又不必花大錢。看到「最初」，就要想到**還有「後來」**。"
+    },
+    {
+     "h": "再看空格的位置。",
+     "t": "它是第一段的最後一句，第二段開始講房間長什麼樣。所以這一格要把「起源」這一段收掉。"
+    }
+   ],
+   "why": "D 的 `Today`（如今）正好與 `initially` 成對，`they` 指前面那些旅館，`worldwide`（全球）也把「日本起家」推到「哪裡都有」。",
+   "distractors": [
+    {
+     "opt": "A",
+     "t": "A 也在講後來的發展。但 A 講的是「創新」，而第二段接著講的是最基本的房間規格，接不上；創新是第三段的事。"
+    }
+   ],
+   "takeaway": "看到 `initially`、`at first`、「最初」，先找「後來怎麼了」。段落最後一格常常就是那句「後來」。"
+  },
+  "accuracyRate": 56,
+  "discrimination": 68
+ },
+ {
+  "id": "Dg114_32",
+  "year": "114年",
+  "exam": "學測",
+  "examType": "正式考試",
+  "passageId": "g114",
+  "blankNum": 32,
+  "optionCount": 4,
+  "eliminationValid": true,
+  "options": {
+   "A": "In response to rising demands, these hotels are embracing a wave of innovation.",
+   "B": "The room’s thin plastic walls easily transmit the sound of snoring made by neighboring guests.",
+   "C": "The chambers are stacked side-by-side, two units high, with the upper rooms reached by a ladder.",
+   "D": "Today, they provide low-budget, overnight lodging in commerce centers in large cities worldwide."
+  },
+  "answer": "C",
+  "categories": [
+   "掌握段落內語句的連貫性與一致性"
+  ],
+  "categorySource": null,
+  "cueTypes": [
+   "定冠詞 the"
+  ],
+  "cueNote": "`The chambers`",
+  "cuePosition": "兩側",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看這一段在講什麼。",
+     "t": "第二段從頭到尾是**規格說明**：房間多大、牆用什麼材料做、裡面有什麼設備。空格夾在「牆的材質」和「每個艙間配有床墊、小燈」之間。"
+    },
+    {
+     "h": "再看空格後面。",
+     "t": "後面是 `Each capsule is equipped with...`（每個艙間配有……），已經講到艙間**內部**了。空格要放的，是還沒交代的**整體排列**。"
+    }
+   ],
+   "why": "C 講的正是排列方式，`The chambers`（這些艙間）用定冠詞，指的就是前面說的 capsule。",
+   "distractors": [
+    {
+     "opt": "B",
+     "t": "B 裡有 `plastic walls`，和前一句的 `plastic` 字面完全重複，是四個選項裡看起來最像的一個。但**字面重複不等於答案**——B 講的是缺點，第二段從頭到尾是中性的規格描述，還特別說這種極簡設計讓旅館又便宜又有效率。抱怨要到第四段才開始。"
+    }
+   ],
+   "takeaway": "選項和上一句有同一個字，先別急著填。再問一次：這一句的**語氣**跟這一段合不合？"
+  },
+  "accuracyRate": 46,
+  "discrimination": 62
+ },
+ {
+  "id": "Dg114_33",
+  "year": "114年",
+  "exam": "學測",
+  "examType": "正式考試",
+  "passageId": "g114",
+  "blankNum": 33,
+  "optionCount": 4,
+  "eliminationValid": true,
+  "options": {
+   "A": "In response to rising demands, these hotels are embracing a wave of innovation.",
+   "B": "The room’s thin plastic walls easily transmit the sound of snoring made by neighboring guests.",
+   "C": "The chambers are stacked side-by-side, two units high, with the upper rooms reached by a ladder.",
+   "D": "Today, they provide low-budget, overnight lodging in commerce centers in large cities worldwide."
+  },
+  "answer": "A",
+  "categories": [
+   "掌握篇章整體結構發展及段落與段落間的關係"
+  ],
+  "categorySource": null,
+  "cueTypes": [
+   "無明顯詞面線索"
+  ],
+  "cueNote": "靠後句 `Instead of the traditional` 推得",
+  "cuePosition": "後一句",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格後面。",
+     "t": "後面說 `Instead of the traditional bare pod-sized style, new chains now feature interior design that...`（新的連鎖店不再走傳統那種光禿禿的小艙風格，改以室內設計吸引……）。`Instead of the traditional`（不再走傳統的）表示**要講新東西了**，可是「新東西」這件事還沒有人宣布過。"
+    },
+    {
+     "h": "再看空格前面。",
+     "t": "前面一直在數地點：台灣、新加坡、峇里島、紐約、倫敦、巴黎。都是「開到哪裡」，不是「變成什麼樣」。"
+    }
+   ],
+   "why": "A 就是那個宣布：這類旅館正迎向一波創新。有了它，後面的新設計、免費 Wi-Fi、無聲鬧鐘才有名目。",
+   "distractors": [
+    {
+     "opt": "D",
+     "t": "D 也提到全球，和前面那一串城市很搭。但 D 講的還是「開到哪裡」，等於把前面重講一次，後面的 `Instead of the traditional` 依然沒有著落。"
+    }
+   ],
+   "takeaway": "後面出現 `Instead of the traditional...`、`no longer...`，先確認前面有沒有人宣布過「要改了」。沒有，那句宣布就在空格裡。"
+  },
+  "accuracyRate": 56,
+  "discrimination": 67
+ },
+ {
+  "id": "Dg114_34",
+  "year": "114年",
+  "exam": "學測",
+  "examType": "正式考試",
+  "passageId": "g114",
+  "blankNum": 34,
+  "optionCount": 4,
+  "eliminationValid": true,
+  "options": {
+   "A": "In response to rising demands, these hotels are embracing a wave of innovation.",
+   "B": "The room’s thin plastic walls easily transmit the sound of snoring made by neighboring guests.",
+   "C": "The chambers are stacked side-by-side, two units high, with the upper rooms reached by a ladder.",
+   "D": "Today, they provide low-budget, overnight lodging in commerce centers in large cities worldwide."
+  },
+  "answer": "B",
+  "categories": [
+   "掌握段落內語句的連貫性與一致性"
+  ],
+  "categorySource": null,
+  "cueTypes": [
+   "舉例、結論的位置提示詞"
+  ],
+  "cueNote": "`Also`",
+  "cuePosition": "後一句",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格後面。",
+     "t": "後面是 `Also, you may have to share common facilities...`（此外，你可能得和其他客人共用浴室等公共設施）。`Also`（此外）表示這是**清單上的又一項**，前面列的應該是同一類的東西。"
+    },
+    {
+     "h": "再看空格前面。",
+     "t": "前面只列了一項：有些旅館艙內沒空調，空氣不流通。"
+    }
+   ],
+   "why": "空格前面是一項缺點，後面 `Also` 帶出的共用設施也是缺點；夾在中間的這一句，同樣應該是一項缺點。B 講打呼聲穿牆，正好是同一類的抱怨。\n\n**回頭看一件事**：第二段說牆常用玻璃纖維或塑膠做，那時只是中性的規格；到了第四段，同一件事變成缺點。**同一個事實放在不同段落，任務不一樣**——這也是第 32 題不能選 B 的原因。",
+   "distractors": [
+    {
+     "opt": "C",
+     "t": "C 是規格描述，沒有任何負面意思，放在一串抱怨中間會斷掉。"
+    }
+   ],
+   "takeaway": "看到 `Also`、`Besides`、「此外」，先看前面列的是哪一類的東西。空格夾在同一份清單中間，要填的就是同一類的那一項。"
+  },
+  "accuracyRate": 46,
+  "discrimination": 66
+ },
+ {
+  "id": "Dg113_31",
+  "year": "113年",
+  "exam": "學測",
+  "examType": "正式考試",
+  "passageId": "g113",
+  "blankNum": 31,
+  "optionCount": 4,
+  "eliminationValid": true,
+  "options": {
+   "A": "For example, an injured runner might end up cycling and swimming instead of running.",
+   "B": "Over time, researchers have come to realize the importance of exercising when injured.",
+   "C": "Many suggest that most patients can continue with the sport they love.",
+   "D": "This seems to run counter to the common practice."
+  },
+  "answer": "D",
+  "categories": [
+   "掌握篇章整體結構發展及段落與段落間的關係"
+  ],
+  "categorySource": null,
+  "cueTypes": [
+   "指示詞"
+  ],
+  "cueNote": "`This`",
+  "cuePosition": "兩側",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格的位置。",
+     "t": "它在第二段的第一句，而第一段整段在講一個故事：Weinstein 醫師搬重物扭到背，痛到坐不住，結果他決定出去跑步，回來反而覺得還不錯。"
+    },
+    {
+     "h": "再看空格後面。",
+     "t": "後面說「人們拉傷肌肉或肌腱時，**通常會被建議**等不痛了再運動」。這句話講的正是「一般的做法」。"
+    }
+   ],
+   "why": "第一段是一個反常的故事，第二段要把它接到一般做法上，中間需要一句話點破兩者相反。D 的 `This` 指的就是第一段那整件事，`the common practice` 也讓後一句有了名目。",
+   "distractors": [
+    {
+     "opt": "B",
+     "t": "B 也和主題相關。但 B 講的是研究界的趨勢，而第二段接著講的是「一般人被怎麼建議」；而且 B 沒有指回第一段的故事，那個故事就白講了。"
+    }
+   ],
+   "takeaway": "第一段講一個故事、第二段開頭是空格，先問「這個故事跟接下來要講的道理是什麼關係」——多半是相反。"
+  },
+  "accuracyRate": 49,
+  "discrimination": 62
+ },
+ {
+  "id": "Dg113_32",
+  "year": "113年",
+  "exam": "學測",
+  "examType": "正式考試",
+  "passageId": "g113",
+  "blankNum": 32,
+  "optionCount": 4,
+  "eliminationValid": true,
+  "options": {
+   "A": "For example, an injured runner might end up cycling and swimming instead of running.",
+   "B": "Over time, researchers have come to realize the importance of exercising when injured.",
+   "C": "Many suggest that most patients can continue with the sport they love.",
+   "D": "This seems to run counter to the common practice."
+  },
+  "answer": "C",
+  "categories": [
+   "掌握段落主題句和細節的關係"
+  ],
+  "categorySource": null,
+  "cueTypes": [
+   "人稱代名詞主格",
+   "One… Another… Some… Others 句型"
+  ],
+  "cueNote": "`They`",
+  "cuePosition": "後一句",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格後面。",
+     "t": "後面是 `They nevertheless caution that a cutback may be necessary...`（他們仍然提醒，可能得減量，例如跑短一點或慢一點。）出現兩個問題：**`They` 是誰？** 前一句的重點是「具體建議因專家而異」，沒有一群人可以指。**`nevertheless` 要轉什麼？** 前面得先有一個比較寬鬆的說法。"
+    }
+   ],
+   "why": "C 一次補上兩個：`Many` 給 `They` 當對象，「可以繼續原來的運動」正是那個寬鬆說法，後面才轉成「不過要減量」。\n\n**再看這一整段的排法。** 往下讀會看到 `Others say...`、`Still others say...`。既然有「其他人」，前面一定要先有**第一群人**。C 的 `Many` 就是那第一群。",
+   "distractors": [
+    {
+     "opt": "A",
+     "t": "A 也在講運動傷害後怎麼做，字面上很搭。但 A 是 `For example` 開頭的例子，例子要有被舉例的對象；而且它講的是改做別的運動，和後一句「減量但繼續原來的運動」剛好相反。"
+    }
+   ],
+   "takeaway": "看到 `Others`、`Still others`，先確認前面有沒有「第一群人」。沒有，第一群就在空格裡。"
+  },
+  "accuracyRate": 33,
+  "discrimination": 41
+ },
+ {
+  "id": "Dg113_33",
+  "year": "113年",
+  "exam": "學測",
+  "examType": "正式考試",
+  "passageId": "g113",
+  "blankNum": 33,
+  "optionCount": 4,
+  "eliminationValid": true,
+  "options": {
+   "A": "For example, an injured runner might end up cycling and swimming instead of running.",
+   "B": "Over time, researchers have come to realize the importance of exercising when injured.",
+   "C": "Many suggest that most patients can continue with the sport they love.",
+   "D": "This seems to run counter to the common practice."
+  },
+  "answer": "A",
+  "categories": [
+   "掌握段落內語句的連貫性與一致性"
+  ],
+  "categorySource": null,
+  "cueTypes": [
+   "舉例、結論的位置提示詞"
+  ],
+  "cueNote": "`For example`",
+  "cuePosition": "前一句",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格前面。",
+     "t": "前一句說：還有些醫師認為最安全的做法是一直做交叉訓練（cross-train），直到不痛為止。`cross-train` 是一個專門的詞，再前一句只把它解釋成「從事平常主項以外的運動」，**還沒有具體例子**。"
+    },
+    {
+     "h": "再看空格後面。",
+     "t": "後面是 `Their consensus, however, is that...`，這是收尾，要把整段幾派說法歸納起來。收尾之前，那幾派說法必須已經講完。"
+    }
+   ],
+   "why": "A 正好補上具體例子：跑者改騎車和游泳，就是 cross-train 的樣子。",
+   "distractors": [
+    {
+     "opt": "B",
+     "t": "B 也是正面說法。但這一段從頭到尾在比較醫師之間的建議，B 換成了研究者，主角跳掉。"
+    }
+   ],
+   "takeaway": "前面出現一個專門的詞卻沒舉例，空格常常就是那個例子。看到 `For example` 開頭的選項，先找它要說明哪一句。"
+  },
+  "accuracyRate": 40,
+  "discrimination": 47
+ },
+ {
+  "id": "Dg113_34",
+  "year": "113年",
+  "exam": "學測",
+  "examType": "正式考試",
+  "passageId": "g113",
+  "blankNum": 34,
+  "optionCount": 4,
+  "eliminationValid": true,
+  "options": {
+   "A": "For example, an injured runner might end up cycling and swimming instead of running.",
+   "B": "Over time, researchers have come to realize the importance of exercising when injured.",
+   "C": "Many suggest that most patients can continue with the sport they love.",
+   "D": "This seems to run counter to the common practice."
+  },
+  "answer": "B",
+  "categories": [
+   "掌握篇章整體結構發展及段落與段落間的關係"
+  ],
+  "categorySource": null,
+  "cueTypes": [
+   "無明顯詞面線索"
+  ],
+  "cueNote": "靠後句 `Thus` 的因果關係推得",
+  "cuePosition": "後一句",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格後面。",
+     "t": "後面是 `Thus, more and more patients are now advised to keep moving despite the pain.` `Thus`（因此）表示因果關係——**因此之前必須有原因**。"
+    },
+    {
+     "h": "再看空格的位置。",
+     "t": "它在最後一段的第一句。前面三段講的是一位醫師的故事和幾位專家的說法，最後一段要把個案拉高到整體趨勢。"
+    }
+   ],
+   "why": "B 正好是那個原因，也正好是那個拉高。",
+   "distractors": [
+    {
+     "opt": "D",
+     "t": "D 的 `This` 可以指上一段結尾的共識，代進去讀得通；但 D 只點出「這和一般做法相反」，沒有交代做法為什麼改變，後面的 `Thus` 就推不出結論。"
+    }
+   ],
+   "takeaway": "空格後面第一個字是 `Thus`、`Therefore`、「因此」，空格裡放的一定是原因。"
+  },
+  "accuracyRate": 47,
+  "discrimination": 48
+ },
+ {
+  "id": "Dg112_31",
+  "year": "112年",
+  "exam": "學測",
+  "examType": "正式考試",
+  "passageId": "g112",
+  "blankNum": 31,
+  "optionCount": 4,
+  "eliminationValid": true,
+  "options": {
+   "A": "This consistency serves as a proof that synesthesia is real.",
+   "B": "Meanwhile, environmental influences seem to shape a person’s synesthesia.",
+   "C": "People with synesthesia used to be accused of making their experiences up.",
+   "D": "Some studies even show that people may all be synesthetic to some degree."
+  },
+  "answer": "C",
+  "categories": [
+   "掌握篇章整體結構發展及段落與段落間的關係"
+  ],
+  "categorySource": null,
+  "cueTypes": [
+   "轉折詞"
+  ],
+  "cueNote": "`however`",
+  "cuePosition": "後一句",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格的位置。",
+     "t": "它在第三段的第一句。前面兩段一段用問句破題、一段給定義，從頭到尾沒有人對聯覺表示過懷疑。"
+    },
+    {
+     "h": "再看空格後面第一句。",
+     "t": "後面是 `In the early 1990s, however, scientists noticed that synesthetic colors do not change over time.`（然而到了一九九〇年代初，科學家注意到聯覺產生的顏色不會隨時間改變。）`however` 表示語意轉折——**要轉，前面得先有一個相反的立場。**"
+    }
+   ],
+   "why": "往下讀完整段：顏色不變、隔數月數年再問答案仍相同、最後腦部掃描提供最有力的支持。整段在數證據。既然結局是證明，開頭被轉掉的那個立場就是「不被相信」。\n\nC 講的正是這件事，`used to`（過去曾經）與後面的 `In the early 1990s` 前後成對。\n\n**這題只有四成一的人答對**：空格在段落第一句，前面隔著段落分界，往前找找不到；線索全在**後面**那個 `however`。四個選項又都在同一個話題上，光比對「有沒有關係」分不出來。",
+   "distractors": [
+    {
+     "opt": "A",
+     "t": "A 也在講真實性，字面上的 `real` 更醒目。但 A 的 `This consistency`（這種一致性）必須指回前面剛提過的一致性，而空格前面是第二段結尾，講的是文字會在舌尖引發真實的味覺，沒有「一致」這回事。而且 A 已經是結論，後面的 `however` 就沒有東西可以轉。"
+    }
+   ],
+   "takeaway": "空格在段首、後面第一句就有 `however`，先問「它要轉掉的是哪一種說法」。那種說法就在空格裡。"
+  },
+  "accuracyRate": 41,
+  "discrimination": 47
+ },
+ {
+  "id": "Dg112_32",
+  "year": "112年",
+  "exam": "學測",
+  "examType": "正式考試",
+  "passageId": "g112",
+  "blankNum": 32,
+  "optionCount": 4,
+  "eliminationValid": true,
+  "options": {
+   "A": "This consistency serves as a proof that synesthesia is real.",
+   "B": "Meanwhile, environmental influences seem to shape a person’s synesthesia.",
+   "C": "People with synesthesia used to be accused of making their experiences up.",
+   "D": "Some studies even show that people may all be synesthetic to some degree."
+  },
+  "answer": "A",
+  "categories": [
+   "掌握段落內語句的連貫性與一致性"
+  ],
+  "categorySource": null,
+  "cueTypes": [
+   "指示詞",
+   "最高級／比較呼應"
+  ],
+  "cueNote": "`This consistency`；`The most compelling support`",
+  "cuePosition": "兩側",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格前面。",
+     "t": "前一句說：問聯覺者某個字母或數字讓他們看到什麼顏色，就算相隔數月或數年再測，他們始終給同樣的答案。這只是一個**現象**，還沒有人說它代表什麼。"
+    },
+    {
+     "h": "再看空格後面。",
+     "t": "後面是 `The most compelling support, however, comes from brain scans`（然而最有力的支持來自腦部掃描）。「最有力的」是比較過的說法——**要說最有力，前面得先有一項沒那麼有力的支持。**"
+    }
+   ],
+   "why": "前面只有現象、後面要比支持，中間缺的就是把現象認定為證據的那一句。A 的 `This consistency` 指的正是前一句「始終同樣的答案」，`a proof that synesthesia is real` 就是那項比較弱的支持。",
+   "distractors": [
+    {
+     "opt": "C",
+     "t": "C 和「這些經驗是不是真的」是同一個話題，很容易讓人誤選。但 C 是被質疑的立場，前一句已經在數證據，再退回質疑等於倒退；後面的「最有力的支持」也找不到可以比的對象——一項指責不是一項支持。"
+    }
+   ],
+   "takeaway": "後面出現「最有力的證據／支持」這種比較過的說法，先回頭找那項比較弱的。前面找不到，它就在空格裡。"
+  },
+  "accuracyRate": 54,
+  "discrimination": 65
+ },
+ {
+  "id": "Dg112_33",
+  "year": "112年",
+  "exam": "學測",
+  "examType": "正式考試",
+  "passageId": "g112",
+  "blankNum": 33,
+  "optionCount": 4,
+  "eliminationValid": true,
+  "options": {
+   "A": "This consistency serves as a proof that synesthesia is real.",
+   "B": "Meanwhile, environmental influences seem to shape a person’s synesthesia.",
+   "C": "People with synesthesia used to be accused of making their experiences up.",
+   "D": "Some studies even show that people may all be synesthetic to some degree."
+  },
+  "answer": "B",
+  "categories": [
+   "掌握段落主題句和細節的關係"
+  ],
+  "categorySource": null,
+  "cueTypes": [
+   "舉例、結論的位置提示詞"
+  ],
+  "cueNote": "`For example`／`Also`",
+  "cuePosition": "後一句",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看這一段開頭的問句。",
+     "t": "第四段第一句是 `Is synesthesia genetically inherited or acquired after birth?`（聯覺是遺傳來的，還是出生以後才形成的？）問句擺明這一段要講**兩邊**：先天與後天。"
+    },
+    {
+     "h": "再看空格前面。",
+     "t": "前面兩句都在講先天：聯覺有基因基礎，因為常有家族性；但真正的基因還沒找到。先天這一邊已經講完。"
+    },
+    {
+     "h": "再看空格後面。",
+     "t": "後面是 `For example`，舉的是童年的巧克力、草莓味道，以及從小學過音樂——都是**後天環境**裡的事。既然是舉例，前面一定要有一句被它證明的話。"
+    }
+   ],
+   "why": "B 就是換邊的那一句。",
+   "distractors": [
+    {
+     "opt": "D",
+     "t": "D 也是「研究顯示」的口吻，擺在科學討論裡讀起來很順。但 D 講的是**多少人**有聯覺，後面的巧克力和音樂訓練回答的是**怎麼來**的（後天環境），對不上。"
+    }
+   ],
+   "takeaway": "段落開頭是「是 X 還是 Y」的問句，往下就邊讀邊分哪幾句屬 X、哪幾句屬 Y。空格常常是換邊的那一句。"
+  },
+  "accuracyRate": 43,
+  "discrimination": 52
+ },
+ {
+  "id": "Dg112_34",
+  "year": "112年",
+  "exam": "學測",
+  "examType": "正式考試",
+  "passageId": "g112",
+  "blankNum": 34,
+  "optionCount": 4,
+  "eliminationValid": true,
+  "options": {
+   "A": "This consistency serves as a proof that synesthesia is real.",
+   "B": "Meanwhile, environmental influences seem to shape a person’s synesthesia.",
+   "C": "People with synesthesia used to be accused of making their experiences up.",
+   "D": "Some studies even show that people may all be synesthetic to some degree."
+  },
+  "answer": "D",
+  "categories": [
+   "掌握段落內語句的連貫性與一致性"
+  ],
+  "categorySource": null,
+  "cueTypes": [
+   "範圍呼應"
+  ],
+  "cueNote": "`one to four percent` ↔ `most of us`",
+  "cuePosition": "兩側",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先數空格前後的人數。",
+     "t": "前一句說聯覺過去被認為極為罕見，現在發現約有 `one to four percent of the population`（百分之一到四的人）有。後一句卻說 `most of us tend to associate lower notes with darker colors`（我們大多數人會把低音和深色連在一起）。**從百分之一到四，一下子變成「我們大多數人」**，中間必須有一句把範圍推開。"
+    }
+   ],
+   "why": "D 正是那一句。`even`（甚至）承接前一句的百分比往上加，`all`（所有人）與 `to some degree`（或多或少）也正好帶出後面的 `most of us`。",
+   "distractors": [
+    {
+     "opt": "B",
+     "t": "B 的 `Meanwhile`（另一方面）是銜接詞，讀起來很順，上一段又剛講完環境，順下去毫無阻力。但這一段從頭到尾在講**有多少人**有聯覺，不是**怎麼來的**；後面低音配深色、高音配亮色也不是環境造成的例子。"
+    }
+   ],
+   "takeaway": "前一句說「只有少數人」、後一句說「我們大多數人」，空格就是把範圍推開的那一句。前後兩句涵蓋的人數對不起來，中間一定缺一句。"
+  },
+  "accuracyRate": 44,
+  "discrimination": 58
+ },
+ {
+  "id": "Dg111r_31",
+  "year": "111參",
+  "exam": "學測",
+  "examType": "參考試卷",
+  "passageId": "g111r",
+  "blankNum": 31,
+  "optionCount": 4,
+  "eliminationValid": true,
+  "options": {
+   "A": "The book, however, wasn’t published until two months before his death.",
+   "B": "If this act was an attempt to seek the Catholic Church’s approval, it was of no use.",
+   "C": "This went against the philosophical and religious beliefs held during medieval times.",
+   "D": "In his spare time, Copernicus studied the stars and the planets, applying his math knowledge to the mysteries of the night sky."
+  },
+  "answer": "D",
+  "categories": [
+   "掌握段落主題句和細節的關係"
+  ],
+  "categorySource": null,
+  "cueTypes": [
+   "人稱代名詞所有格"
+  ],
+  "cueNote": "`his observations` 把觀測當作已知",
+  "cuePosition": "後一句",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格前面。",
+     "t": "第一段講他的生平：出身波蘭的富商家庭、到義大利念數學、光學和教會法、回國後被派到 Frauenburg 大教堂擔任行政職，在那裡過著受庇護的學術生活。到這裡為止，他的正職是**教堂的行政人員**。"
+    },
+    {
+     "h": "再看空格後面。",
+     "t": "後面是 `He made his observations from a tower situated on the protective wall around the cathedral.`（他在教堂圍牆上的一座塔樓進行觀測。）注意 `his observations`（他的觀測）——這是把「他在做觀測」當成讀者已經知道的事。可是前面一整段都在講行政職和求學，沒有一個字提到他在觀測什麼。"
+    }
+   ],
+   "why": "D 補的正是這一步：`In his spare time`（利用閒暇時間）和第一段的行政職剛好對上——本業是行政，天文是業餘；`studied the stars and the planets` 也讓後面的「他的觀測」有了來歷。",
+   "distractors": [
+    {
+     "opt": "A",
+     "t": "A 的 `The book`（這本書）用了定冠詞，表示書前面提過。可是這時候書還沒寫——著作要到第二段後半、一五三〇年才完成。"
+    },
+    {
+     "opt": "C",
+     "t": "C 的 `This` 要指回一個主張，而前面只有他的職務和生活，沒有任何主張。"
+    }
+   ],
+   "takeaway": "後面出現「他的觀測」「他的研究」這種把某件事當作已知的說法，先回頭找他是什麼時候開始做的。找不到，那一句就在空格裡。"
+  },
+  "accuracyRate": null,
+  "discrimination": null
+ },
+ {
+  "id": "Dg111r_32",
+  "year": "111參",
+  "exam": "學測",
+  "examType": "參考試卷",
+  "passageId": "g111r",
+  "blankNum": 32,
+  "optionCount": 4,
+  "eliminationValid": true,
+  "options": {
+   "A": "The book, however, wasn’t published until two months before his death.",
+   "B": "If this act was an attempt to seek the Catholic Church’s approval, it was of no use.",
+   "C": "This went against the philosophical and religious beliefs held during medieval times.",
+   "D": "In his spare time, Copernicus studied the stars and the planets, applying his math knowledge to the mysteries of the night sky."
+  },
+  "answer": "A",
+  "categories": [
+   "掌握段落內語句的連貫性與一致性"
+  ],
+  "categorySource": null,
+  "cueTypes": [
+   "轉折詞",
+   "序列與時間詞"
+  ],
+  "cueNote": "`however`；1530 ↔ 1543 ↔ 過世前兩個月",
+  "cuePosition": "兩側",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格前面。",
+     "t": "前一句說：一五三〇年，哥白尼完成了名著 De Revolutionibus，這部書後來大幅改變了人類看待自己在宇宙中位置的觀點。"
+    },
+    {
+     "h": "再看空格後面。",
+     "t": "第三段第一句是 `Copernicus died in 1543 and was never to know what a stir his work would cause.`（哥白尼一五四三年過世，始終不知道他的著作會引起多大的騷動。）"
+    }
+   ],
+   "why": "**把看得到的年份排出來**：一五三〇年完成、一五四三年過世。中間隔了十三年，這十三年發生了什麼？而且後一句說他「始終不知道」——書要是早就出版了，他不可能一無所知。\n\nA 正好補上這一步：書拖到他過世前兩個月才出版。`however` 表示語意轉折（完成得早、出版得晚），`The book` 指的就是前一句的 De Revolutionibus，而「過世前兩個月」也解釋了為什麼他來不及知道後續的騷動。",
+   "distractors": [
+    {
+     "opt": "B",
+     "t": "B 的 `this act`（這個舉動）必須指回一個具體的動作，而前一句是「完成了一部著作」——完成著作不是一個對教會示好的舉動。獻書給教宗要到第四段才出現。"
+    },
+    {
+     "opt": "C",
+     "t": "第二段從頭到尾只說他「完成了一部著作」，**書裡主張什麼還沒講**，`This` 沒有內容可以指。主張是第三段的事。"
+    }
+   ],
+   "takeaway": "這一段照時間走的時候，先把看得到的年份排成一列。兩個年份之間隔太久，空格多半就是中間漏掉的那一步。"
+  },
+  "accuracyRate": null,
+  "discrimination": null
+ },
+ {
+  "id": "Dg111r_33",
+  "year": "111參",
+  "exam": "學測",
+  "examType": "參考試卷",
+  "passageId": "g111r",
+  "blankNum": 33,
+  "optionCount": 4,
+  "eliminationValid": true,
+  "options": {
+   "A": "The book, however, wasn’t published until two months before his death.",
+   "B": "If this act was an attempt to seek the Catholic Church’s approval, it was of no use.",
+   "C": "This went against the philosophical and religious beliefs held during medieval times.",
+   "D": "In his spare time, Copernicus studied the stars and the planets, applying his math knowledge to the mysteries of the night sky."
+  },
+  "answer": "C",
+  "categories": [
+   "掌握段落內語句的連貫性與一致性"
+  ],
+  "categorySource": null,
+  "cueTypes": [
+   "指示詞",
+   "語意對比"
+  ],
+  "cueNote": "`This`；前句主張 ↔ 後句當時信念",
+  "cuePosition": "兩側",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格前面。",
+     "t": "前一句說：他在書中主張地球每天繞著地軸自轉一次、每年繞太陽公轉一圈。"
+    },
+    {
+     "h": "再看空格後面。",
+     "t": "後面說：當時的人認為地球是靜止的，位於宇宙中心，太陽和所有行星都繞著地球轉。"
+    }
+   ],
+   "why": "**兩句話講的是兩套完全相反的宇宙觀**，可是如果把它們直接接在一起，讀起來只是兩段並排的敘述——**沒有人說出它們是對立的**。中間缺的就是那句話。\n\nC 就是那座橋：`This` 指前一句的主張，`went against`（牴觸）點明兩者相反，`the beliefs held during medieval times`（中世紀所抱持的信念）則讓後面那一句有了名目——後面接著說明的，正是那些信念的內容。",
+   "distractors": [
+    {
+     "opt": "B",
+     "t": "B 也提到教會，第三段後面確實也講到馬丁路德和其他神職人員的反對，話題看起來很近。但 `this act` 一樣指不到東西——前一句是「主張」，不是「舉動」；而且教會實際的處置要到第四段才發生。"
+    }
+   ],
+   "takeaway": "前後兩句各講一套互相矛盾的說法，中間常常缺一句「這和那是牴觸的」。少了那一句，讀者不會知道作者是在做對比。"
+  },
+  "accuracyRate": null,
+  "discrimination": null
+ },
+ {
+  "id": "Dg111r_34",
+  "year": "111參",
+  "exam": "學測",
+  "examType": "參考試卷",
+  "passageId": "g111r",
+  "blankNum": 34,
+  "optionCount": 4,
+  "eliminationValid": true,
+  "options": {
+   "A": "The book, however, wasn’t published until two months before his death.",
+   "B": "If this act was an attempt to seek the Catholic Church’s approval, it was of no use.",
+   "C": "This went against the philosophical and religious beliefs held during medieval times.",
+   "D": "In his spare time, Copernicus studied the stars and the planets, applying his math knowledge to the mysteries of the night sky."
+  },
+  "answer": "B",
+  "categories": [
+   "掌握段落內語句的連貫性與一致性"
+  ],
+  "categorySource": null,
+  "cueTypes": [
+   "指示詞",
+   "語意對比"
+  ],
+  "cueNote": "`this act`；`Ironically` 的兩頭",
+  "cuePosition": "兩側",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格前面。",
+     "t": "前一句是 `Ironically, Copernicus had dedicated his work to Pope Paul III.`（諷刺的是，哥白尼把這部著作獻給了教宗保祿三世。）**看到「諷刺的是」，就要找諷刺的另一頭**——一頭是他做了一件示好的事，另一頭必須是「結果卻不如意」。"
+    },
+    {
+     "h": "再看空格後面。",
+     "t": "後面說教會最後查禁了 De Revolutionibus，此後將近三個世紀，這本書都留在禁書名單上。"
+    }
+   ],
+   "why": "前面是獻書、後面是查禁，中間需要一句把兩者接起來的話。B 的 `this act`（這個舉動）指的正是獻書給教宗，`of no use`（沒有用）則直接帶出後面的查禁。",
+   "distractors": [
+    {
+     "opt": "A",
+     "t": "A 講的也是這本書。但這一段的主線是「獻書給教宗 → 教會查禁」，A 講的是出版時間，插進來會把這條線切斷；`however` 也沒有東西可以轉。"
+    }
+   ],
+   "takeaway": "看到 `Ironically`（諷刺的是），先確認諷刺的兩頭在不在：一頭是「他做了什麼好意的事」，另一頭是「結果卻怎樣」。缺哪一頭，哪一頭就在空格裡。"
+  },
+  "accuracyRate": null,
+  "discrimination": null
+ },
+ {
+  "id": "Dg111_31",
+  "year": "111年",
+  "exam": "學測",
+  "examType": "正式考試",
+  "passageId": "g111",
+  "blankNum": 31,
+  "optionCount": 4,
+  "eliminationValid": true,
+  "options": {
+   "A": "Some people also visit the cemetery to clean up the family graves and pray for their ancestors.",
+   "B": "Such festive activities are usually held in parks, temples, and other public places around Japan.",
+   "C": "Obon concludes with another bonfire, okuribi, lighting up the sky to see the ancestors’ spirits off.",
+   "D": "Originating from the Chinese Ghost Festival, this annual event has evolved into a time of family reunion."
+  },
+  "answer": "D",
+  "categories": [
+   "掌握篇章的主題論述"
+  ],
+  "categorySource": null,
+  "cueTypes": [
+   "指示詞"
+  ],
+  "cueNote": "`this annual event`",
+  "cuePosition": "兩側",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格前面。",
+     "t": "第一句只說 Obon 是日本用來追思亡者的節日——**來歷還沒交代**。"
+    },
+    {
+     "h": "再看空格後面。",
+     "t": "後面說節日在八月舉行四到五天，「很多人回到家鄉，和所愛的人共度時光，**不論是還在的或已經不在的**」。"
+    }
+   ],
+   "why": "後面談的是「回家團聚」，可是前面只講了追思亡者，中間少了一步。D 一次補兩件事：`Originating from the Chinese Ghost Festival` 交代來歷，`a time of family reunion`（家人團聚的時節）帶出後面的返鄉。`this annual event` 指的就是前一句的 Obon。",
+   "distractors": [
+    {
+     "opt": "C",
+     "t": "`concludes`（作結）是收尾的詞，放在全篇第一段等於還沒開始就先結束。"
+    }
+   ],
+   "takeaway": "第一段的空格先問「這一段有沒有交代來歷」。介紹一件事物的文章，來歷幾乎都放在最前面。"
+  },
+  "accuracyRate": 63,
+  "discrimination": 58
+ },
+ {
+  "id": "Dg111_32",
+  "year": "111年",
+  "exam": "學測",
+  "examType": "正式考試",
+  "passageId": "g111",
+  "blankNum": 32,
+  "optionCount": 4,
+  "eliminationValid": true,
+  "options": {
+   "A": "Some people also visit the cemetery to clean up the family graves and pray for their ancestors.",
+   "B": "Such festive activities are usually held in parks, temples, and other public places around Japan.",
+   "C": "Obon concludes with another bonfire, okuribi, lighting up the sky to see the ancestors’ spirits off.",
+   "D": "Originating from the Chinese Ghost Festival, this annual event has evolved into a time of family reunion."
+  },
+  "answer": "A",
+  "categories": [
+   "掌握段落內語句的連貫性與一致性"
+  ],
+  "categorySource": null,
+  "cueTypes": [
+   "舉例、結論的位置提示詞"
+  ],
+  "cueNote": "`also`",
+  "cuePosition": "兩側都沒有",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格前面。",
+     "t": "前面講 mukaebi（迎火）：人們在家門前生一小堆火，替回家的靈魂引路。這是**第一項儀式**。"
+    },
+    {
+     "h": "再看空格後面。",
+     "t": "後面說供品會擺在家中的佛壇和寺廟裡。這是**另一項儀式**，而且沒有任何轉折詞——表示還在同一份清單上往下列。"
+    }
+   ],
+   "why": "空格夾在兩項儀式中間，要放的就是**清單上的另一項**。A 的 `also`（也）正是往清單上再加一項的用字，掃墓、祭拜也和前後同屬祭祀活動。\n\n**這一題有個特別的地方**：它的鑑別度只有 26，是這一篇最低的——**高分群和其他考生答對的比例很接近**。原因大概在於這一格前後沒有任何一個字重複出現，唯一的線索是 `also` 這個很小的字，而且三段都在列儀式，看起來哪一項擺哪裡都通。這種題目要靠**段落分工**來判斷：第二段講「迎」，第三段講「送」，掃墓屬於迎回來之後做的事。",
+   "distractors": [
+    {
+     "opt": "B",
+     "t": "B 的 `Such festive activities`（這類節慶活動）要指回前面提過的活動，可是前面只有「在家門前生火」一件事，稱不上「這類節慶活動」；而且 B 講的是地點，接不上後面的供品。"
+    }
+   ],
+   "takeaway": "前後都在列同一類東西、又沒有轉折詞，空格幾乎一定是清單上的另一項。先確認這一項屬於哪一段的分工。"
+  },
+  "accuracyRate": 45,
+  "discrimination": 26
+ },
+ {
+  "id": "Dg111_33",
+  "year": "111年",
+  "exam": "學測",
+  "examType": "正式考試",
+  "passageId": "g111",
+  "blankNum": 33,
+  "optionCount": 4,
+  "eliminationValid": true,
+  "options": {
+   "A": "Some people also visit the cemetery to clean up the family graves and pray for their ancestors.",
+   "B": "Such festive activities are usually held in parks, temples, and other public places around Japan.",
+   "C": "Obon concludes with another bonfire, okuribi, lighting up the sky to see the ancestors’ spirits off.",
+   "D": "Originating from the Chinese Ghost Festival, this annual event has evolved into a time of family reunion."
+  },
+  "answer": "C",
+  "categories": [
+   "掌握篇章整體結構發展及段落與段落間的關係"
+  ],
+  "categorySource": null,
+  "cueTypes": [
+   "One… Another… Some… Others 句型"
+  ],
+  "cueNote": "`another bonfire`",
+  "cuePosition": "後一句",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格的位置。",
+     "t": "它在**第三段的最前面**，整段的第一句。段首的空格通常要交代「這一段要講什麼」。"
+    },
+    {
+     "h": "再看空格後面。",
+     "t": "後面說紙燈籠和供品被放進河裡漂走，「陪祖先回到安息之處」。關鍵在 `back`（回去）——第二段講的是把靈魂**迎回來**，這裡講的是**送回去**。"
+    }
+   ],
+   "why": "C 的 `concludes`（作結）與 `see...off`（送別）正好是這一段的分工，`another bonfire`（另一場火）也回應第二段的迎火。",
+   "distractors": [
+    {
+     "opt": "B",
+     "t": "B 的 `Such`（這類）必須指回前面提過的東西，可是段首之前是上一段的結尾（用小黃瓜做馬、茄子做牛），指不過去。"
+    }
+   ],
+   "takeaway": "空格在段落最前面，先讀完整段再回頭選——段首那一句要能罩住整段。"
+  },
+  "accuracyRate": 47,
+  "discrimination": 35
+ },
+ {
+  "id": "Dg111_34",
+  "year": "111年",
+  "exam": "學測",
+  "examType": "正式考試",
+  "passageId": "g111",
+  "blankNum": 34,
+  "optionCount": 4,
+  "eliminationValid": true,
+  "options": {
+   "A": "Some people also visit the cemetery to clean up the family graves and pray for their ancestors.",
+   "B": "Such festive activities are usually held in parks, temples, and other public places around Japan.",
+   "C": "Obon concludes with another bonfire, okuribi, lighting up the sky to see the ancestors’ spirits off.",
+   "D": "Originating from the Chinese Ghost Festival, this annual event has evolved into a time of family reunion."
+  },
+  "answer": "B",
+  "categories": [
+   "掌握段落內語句的連貫性與一致性"
+  ],
+  "categorySource": null,
+  "cueTypes": [
+   "指示詞"
+  ],
+  "cueNote": "`Such festive activities`",
+  "cuePosition": "前一句",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格前面。",
+     "t": "前面一整串在講 bon-odori（盆舞）：太鼓的節奏、高台上的燈籠和旗幟、穿浴衣的人繞著台子跳舞。熱鬧的活動已經講完了，**但一直沒說在哪裡辦**。"
+    },
+    {
+     "h": "再看空格後面。",
+     "t": "後面說這些舞蹈原本是獻給亡者的，現在已經成為夏日祭典的象徵。這是**收尾的評論**。"
+    }
+   ],
+   "why": "B 補的正是中間缺的地點，`Such festive activities`（這類節慶活動）指的就是前面那一串跳舞的場面。",
+   "distractors": [
+    {
+     "opt": "A",
+     "t": "A 和跳舞完全是兩回事，前面那一串沒有一個字和掃墓有關；A 的 `also` 也要求前面正在列同一類的事，可是前面在描寫同一件事的細節，不是在列清單。"
+    }
+   ],
+   "takeaway": "一段把某個活動描寫得很細，卻沒說「在哪裡辦」「什麼時候辦」，空格常常就是補這一項。"
+  },
+  "accuracyRate": 50,
+  "discrimination": 58
+ },
+ {
+  "id": "Dg110t_31",
+  "year": "110試辦",
+  "exam": "學測",
+  "examType": "試辦考試",
+  "passageId": "g110t",
+  "blankNum": 31,
+  "optionCount": 4,
+  "eliminationValid": true,
+  "options": {
+   "A": "However, Feeney never felt at ease with the lifestyle of the wealthy.",
+   "B": "He encourages people to donate at least half their fortunes before death.",
+   "C": "This is exactly what happened to “former” American billionaire Charles Feeney.",
+   "D": "Such incredible secret generosity won him the title “James Bond of Philanthropy” from Forbes magazine."
+  },
+  "answer": "C",
+  "categories": [
+   "掌握篇章的主題論述"
+  ],
+  "categorySource": null,
+  "cueTypes": [
+   "指示詞",
+   "名詞首次出現"
+  ],
+  "cueNote": "`This`；`Charles Feeney`",
+  "cuePosition": "兩側",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格前面。",
+     "t": "第一段只有一句話：慷慨的億萬富翁不難找，但要找到一個把全部財產都花在慈善上、最後把自己弄到身無分文的，就很難了。注意，這裡描述的是**一種人**，還沒有指名道姓。"
+    },
+    {
+     "h": "再看空格後面。",
+     "t": "第二段第一句是 `Feeney, who grew up in a poor neighborhood of New Jersey...`（在紐澤西貧困社區長大的 Feeney……）——**直接只用姓氏**，而且用逗號加上補述，寫法上把他當成讀者已經認識的人。"
+    }
+   ],
+   "why": "一個人被這樣稱呼，表示前面一定有一句先報過全名。那一句就在空格裡。C 的 `Charles Feeney` 是全名首次出現的地方，`This` 指的正是前一句描述的那種情況。",
+   "distractors": [
+    {
+     "opt": "A",
+     "t": "A 裡也有 Feeney，看起來同樣可以接。但 A 用的也是姓氏，一樣需要前面先有全名；而且第一段從頭到尾沒提過他過什麼樣的生活，`However` 沒有東西可以轉。"
+    },
+    {
+     "opt": "D",
+     "t": "D 的 `Such ... generosity`（這樣的慷慨）必須指回前面實際做過的善舉，可是第一段講的是一種假設性的人；`won him` 的 `him` 也還沒有對象。"
+    }
+   ],
+   "takeaway": "下一段一開頭就直接用姓氏稱呼某個人，前面一定有一句先報過全名。那一句多半就在空格裡。"
+  },
+  "accuracyRate": null,
+  "discrimination": null
+ },
+ {
+  "id": "Dg110t_32",
+  "year": "110試辦",
+  "exam": "學測",
+  "examType": "試辦考試",
+  "passageId": "g110t",
+  "blankNum": 32,
+  "optionCount": 4,
+  "eliminationValid": true,
+  "options": {
+   "A": "However, Feeney never felt at ease with the lifestyle of the wealthy.",
+   "B": "He encourages people to donate at least half their fortunes before death.",
+   "C": "This is exactly what happened to “former” American billionaire Charles Feeney.",
+   "D": "Such incredible secret generosity won him the title “James Bond of Philanthropy” from Forbes magazine."
+  },
+  "answer": "A",
+  "categories": [
+   "掌握段落內語句的連貫性與一致性"
+  ],
+  "categorySource": null,
+  "cueTypes": [
+   "轉折詞",
+   "時態呼應"
+  ],
+  "cueNote": "`However`；前後敘述用過去式",
+  "cuePosition": "兩側",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格前面。",
+     "t": "前面說他在一九六〇年代創辦機場免稅店 DFS，到八〇年代已經是億萬富翁（`billionaire status`）。"
+    },
+    {
+     "h": "再看空格後面。",
+     "t": "後面是 `He lived modestly, and often pondered what to do with all the money he made.`（他生活簡樸，常常思索賺來的錢該怎麼用。）"
+    }
+   ],
+   "why": "**很有錢**接**生活簡樸**，方向相反，中間卻沒有任何轉折詞——轉折詞就在空格裡。A 以 `However` 開頭，`the lifestyle of the wealthy`（有錢人的生活方式）正好對應前一句的億萬富翁身分，後面的 `lived modestly`（生活簡樸）則是「不自在」的具體表現。",
+   "distractors": [
+    {
+     "opt": "B",
+     "t": "B 也在講錢和捐款，話題最接近。但看動詞：`encourages` 是現在式，而第二段從創業到致富，敘述**用的都是過去式**。放進這一格，時態就和前後的敘述對不上。內容上也對不上——他要到第三段才開始捐錢，這時候還在賺。"
+    }
+   ],
+   "takeaway": "前後兩句方向相反卻看不到轉折詞，先找開頭是 `However`、`But` 的選項。另外，選項的時態要和前後的敘述一致，時態不合可以直接刪掉。"
+  },
+  "accuracyRate": null,
+  "discrimination": null
+ },
+ {
+  "id": "Dg110t_33",
+  "year": "110試辦",
+  "exam": "學測",
+  "examType": "試辦考試",
+  "passageId": "g110t",
+  "blankNum": 33,
+  "optionCount": 4,
+  "eliminationValid": true,
+  "options": {
+   "A": "However, Feeney never felt at ease with the lifestyle of the wealthy.",
+   "B": "He encourages people to donate at least half their fortunes before death.",
+   "C": "This is exactly what happened to “former” American billionaire Charles Feeney.",
+   "D": "Such incredible secret generosity won him the title “James Bond of Philanthropy” from Forbes magazine."
+  },
+  "answer": "D",
+  "categories": [
+   "掌握段落內語句的連貫性與一致性"
+  ],
+  "categorySource": null,
+  "cueTypes": [
+   "指示詞",
+   "同義呼應"
+  ],
+  "cueNote": "`Such ... generosity`；`secret` ↔ `anonymously`",
+  "cuePosition": "前一句",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格的位置。",
+     "t": "它在第三段的最後一句，要把整段收掉。"
+    },
+    {
+     "h": "再看空格前面。",
+     "t": "前一句說：接下來數十年間，他透過基金會**匿名**（`anonymously`）捐出超過八十億美元給世界各地的慈善團體、大學、人權運動與基金會。"
+    }
+   ],
+   "why": "D 的 `Such incredible secret generosity` 指的正是這件事。這裡要注意兩個字的對應：`incredible`（驚人的）對應八十億這個數字，`secret`（不為人知的）對應 `anonymously`。**兩個字沒有一個和前一句重複，但意思一個接一個。**",
+   "distractors": [
+    {
+     "opt": "B",
+     "t": "B 也是捐款，字面上最靠近。但這一段從頭到尾講的是**他自己捐**，B 講的是**勸別人捐**，主角換了；B 也沒有回應「匿名」這個關鍵。"
+    }
+   ],
+   "takeaway": "選項開頭是 `Such + 名詞`，先回頭找前一句有沒有實際發生過的事可以對應。注意對應的不一定是同一個字，意思接得上就算。"
+  },
+  "accuracyRate": null,
+  "discrimination": null
+ },
+ {
+  "id": "Dg110t_34",
+  "year": "110試辦",
+  "exam": "學測",
+  "examType": "試辦考試",
+  "passageId": "g110t",
+  "blankNum": 34,
+  "optionCount": 4,
+  "eliminationValid": true,
+  "options": {
+   "A": "However, Feeney never felt at ease with the lifestyle of the wealthy.",
+   "B": "He encourages people to donate at least half their fortunes before death.",
+   "C": "This is exactly what happened to “former” American billionaire Charles Feeney.",
+   "D": "Such incredible secret generosity won him the title “James Bond of Philanthropy” from Forbes magazine."
+  },
+  "answer": "B",
+  "categories": [
+   "掌握段落內語句的連貫性與一致性"
+  ],
+  "categorySource": null,
+  "cueTypes": [
+   "人稱代名詞主格",
+   "時態呼應"
+  ],
+  "cueNote": "`He`；現在式",
+  "cuePosition": "兩側",
+  "explanation": {
+   "steps": [
+    {
+     "h": "先看空格前面。",
+     "t": "前一句說他開創了「生前捐贈」（Giving while Living）的理念，是比爾蓋茲、巴菲特等許多知名富豪的榜樣。這句只說了他**是榜樣**，還沒說他**怎麼影響別人**。"
+    },
+    {
+     "h": "再看空格後面。",
+     "t": "後面說二〇二〇年九月他散盡家財的任務完成，現在靠退休金和太太住在舊金山一間樸素的公寓裡。這是結局。"
+    }
+   ],
+   "why": "空格夾在「他是榜樣」和「他的結局」中間，要放的就是他實際的倡議。B 正好補上，而且 `encourages` 是現在式，和前一句的 `is a role model`、後一句的 `now lives` 同一組時態。",
+   "distractors": [
+    {
+     "opt": "D",
+     "t": "D 也是正面評價，讀起來很順。但 D 的 `Such ... generosity` 要指回前一句實際的捐款行為，而前一句講的是「他成了榜樣」，指不過去。"
+    }
+   ],
+   "takeaway": "四格四個選項，最後剩兩格時，先處理帶 `Such`、`This` 的那一個——它必須指回前一句，位置最挑，把它放定，另一個自然就位。"
+  },
+  "accuracyRate": null,
+  "discrimination": null
+ }
+]

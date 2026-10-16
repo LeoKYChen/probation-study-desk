@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g112-19-2/index.html
+Author: staresto-create ZZSH
+Title: 112 年學測克漏字第19題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 112 年學測 ／ 第19題
+112 年學測 克漏字 第19題
+字彙選義線索：句內答對率 54%
+答對率 54%：當年每 100 位考生，有 54 位答對。
+This “Charlie Brown effect” will be more 19 when the astronauts go on their Mars missions, which will take about three years to complete, much longer than missions to the moon.
+(A)contagious
+(B)unusual
+(C)severe
+(D)aggressive
+答案：(C) severe
+題目編號：G112_19_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「這個『查理布朗效應』在火星任務時會更『嚴重』」，severe（嚴重的）符合，呼應前文說火星任務時間更長（三年）；contagious（傳染性的）、unusual（不尋常的）、aggressive（侵略性的）都不合。
+深入解析
+你可能會這樣想
+This "Charlie Brown effect" will be more ___，四個形容詞接在 more 後面都成立。你可能被 contagious（有傳染性的）吸引，因為前面出現了 sickness、health risk，感覺跟疾病有關。但「查理布朗效應」是失重造成的生理反應，不是病菌引起的，不會傳染——跟症狀有關的字，不等於跟傳染有關的字。
+怎麼判斷
+關鍵在同一句的後半：when the astronauts go on their Mars missions, which will take about three years to complete, much longer than missions to the moon（火星任務約需三年，比登月任務長得多）。任務時間更長 → 處在失重狀態更久 → 症狀更嚴重，這條因果線只支持 severe（嚴重的），more severe 就是「更嚴重」。
+誘答選項
+contagious 需要有傳染源與傳染途徑，文章完全沒提；unusual（不尋常的）講的是罕見程度，任務變長不會讓這個現象變得比較罕見；aggressive 用在疾病上指「侵襲性強、惡化快」，通常形容癌症或治療方式，用來形容失重造成的臉部浮腫並不恰當。
+常考字詞與句型
+severe symptoms／damage（嚴重的症狀／損害）、severe weather（惡劣的天氣）、a severe case of（嚴重的……病例）、contagious disease（傳染病）、be at risk of（有……的風險）、health risk（健康風險）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Gravity has been at the top of the science agenda since the start of Mars missions. In the earlier days of space travel, scientists tried to overcome the force of gravity so that a rocket could shoot 16 Earth's pull in order to land humans on the moon. Today, they are more interested in how reduced gravity affects the astronauts' 17 condition. Our bodies have evolved to exist within Earth's gravity (1 g), not in the weightlessness of space (0 g) or the microgravity of Mars (0.3 g).
+When on Earth, we have more fluids in our lower body because they are pulled down by Earth's gravity. However, with the absence of gravity in the outer space, our body fluids 18 , shifting toward the upper body and the head. As a result, the astronauts have swollen, puffy faces, very much resembling that of the round-headed Charlie Brown in the famous comic strip.
+This "Charlie Brown effect" will be more 19 when the astronauts go on their Mars missions, which will take about three years to complete, much longer than missions to the moon. Moreover, the effect is often 20 space motion sickness, headaches, and nausea. Such a syndrome is considered the top health risk for the astronauts, and scientists are still trying to figure out how it may be prevented.
+中譯：自火星任務展開以來，重力問題便一直是科學議程上的重要課題。在太空探索的早期階段，科學家致力於克服地心引力，讓火箭能擺脫地球引力升空，將人類送上月球。如今，他們更關注的是重力減弱如何影響太空人的身體狀況。人類的身體演化以適應地球的重力環境（1g），而非太空中的無重力狀態（0g），也不是火星上的微重力環境（0.3g）。在地球上，我們下半身的體液較多，因為受到地心引力向下牽引；然而，一旦身處外太空、失去重力，我們體內的體液會重新分佈，向上半身及頭部移動。因此，太空人的臉會變得腫脹浮腫，看起來就像知名漫畫裡那個圓頭查理·布朗一樣。這種「查理·布朗效應」，在太空人執行需耗時約三年、遠比登月任務更久的火星任務時，將會更加明顯。此外，這種效應通常還伴隨著太空暈動症、頭痛和噁心等症狀。這種症候群被認為是太空人面臨的頭號健康風險，科學家目前仍在努力找出預防的方法。
+📋 內容大意
+Reduced gravity in space alters human fluid distribution, creating health risks like the "Charlie Brown effect" that pose major challenges for long Mars missions.
+← 第18題回到112 年學測第20題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

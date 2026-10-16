@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g103-25-2/index.html
+Author: staresto-create ZZSH
+Title: 103 年學測克漏字第25題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 103 年學測 ／ 第25題
+103 年學測 克漏字 第25題
+字彙選義線索：跨句答對率 49%
+答對率 49%：當年每 100 位考生，有 49 位答對。
+Rising temperatures, an effect of global warming, 25 threaten the ecosystem of this mountain area.
+(A)thus
+(B)just
+(C)instead
+(D)otherwise
+答案：(A) thus
+題目編號：G103_25_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+前文已建立「升溫→融雪→缺水」的因果鏈，thus（因此）承接這個因果推論，表示氣溫上升「因此」威脅生態系統；just（只是）、instead（取而代之）、otherwise（否則）都不符合這個因果邏輯位置。
+深入解析
+你可能會這樣想
+空格夾在逗號之後、動詞 threaten 之前，你會覺得「這個位置該放修飾動詞的副詞吧，thus 這種銜接用的詞怎麼會插在句子中間」，於是改選看起來比較像一般副詞的 just。答對率只有四成九，位置造成的誤判是主因之一。
+怎麼判斷
+第一步先把句子主幹抓出來。Rising temperatures, an effect of global warming, ______ threaten the ecosystem...，中間那段 an effect of global warming 是同位語，用兩個逗號夾住，拿掉完全不影響句構。主詞是 Rising temperatures（複數），動詞是原形的 threaten，空格正好落在主詞與動詞之間。thus、therefore、however 這一類詞歸在「連接副詞」（linking adjunct）底下，可以出現在副詞能出現的任何位置：句首、主詞與動詞之間、助動詞之後，甚至句尾（劍橋 English Grammar Today）。所以 thus 放在主詞與動詞中間是完全正常的位置，不是印錯也不是特例。這一點記起來，往後在句子中間看到 however、therefore 就不會誤判。第二步看邏輯關係。前面兩句已經鋪好一條因果鏈：積雪消失，於是沒有足夠的水分滋養動植物。本句的主詞 Rising temperatures 正是造成融雪的源頭，thus（因此）把「暖化升溫」與「威脅生態」串成結論，銜接得上。
+誘答選項
+just（只是、不過）：會把語氣削弱成「只是威脅一下而已」，與整段強調事態嚴重的語氣相反。instead（取而代之、反而）：要先有一個被取代的對象或被推翻的做法，前文沒有。otherwise（否則、不然）：要先有一個假設或條件才談得上「否則」，前一句是陳述事實。
+常考字詞與句型
+and thus（因而）、as a result（因此、結果）、an effect of（…所造成的影響）、have an effect on（對…有影響）、result in（導致…）、result from（起因於…）。其中 result in 這一組考過 7 個年度，88 年第 28 題 →、90 年第 22 題 →、100 年第 25 題 →、102 年第 28 題 →、109 年第 30 題 →、學測參考試卷第 22 題 →、學測參考試卷第 23 題 →都出現過；as a result 考過 7 個年度，85 年第 35 題 →、87 年第 35 題 →、90 年第 22 題 →、95 年第 28 題 →、99 課綱學測參考用試卷第 24 題 →、108 年第 28 題 →都出現過；have an effect on 考過 5 個年度，83 年第 21 題 →、87 年第 33 題 →、93 年第 24 題 →、99 課綱學測參考用試卷第 30 題 →都出現過；result from 考過 3 個年度，108 年第 16 題 →、學測參考試卷第 23 題 →都出現過。
+線索範圍說明：thus 承接前一句「沒有積雪就缺水」的結果
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Every year tens of thousands of tourists visit Mount Kilimanjaro, the highest mountain in Tanzania, Africa, to witness the scenes depicted in Earnest Hemingway's The Snows of Kilimanjaro. They are attracted by the American writer's 21 of the millennia-old glaciers.
+However, this tourist attraction will soon 22 . According to the Climate Change Group, formed by environmentalists worldwide to document the effects of global warming, Mount Kilimanjaro's snows and glaciers are melting and are 23 to disappear by 2020.
+Not only will the summit lose its tourist attraction, but the disappearance of the snows will also cause major damage to the ecosystem on the dry African plains at its base. 24 the snow covering the peak, there will not be enough moisture and water to nourish the plants and animals below. Rising temperatures, an effect of global warming, 25 threaten the ecosystem of this mountain area. The loss of snows on the 5,892m peak, which have been there for about 11,700 years, could have disastrous effects on Tanzania.
+中譯：每年都有數萬名遊客造訪坦尚尼亞、非洲最高峰吉力馬札羅山，只為親眼目睹海明威名著《吉力馬札羅的雪》中所描繪的景象。他們被這位美國作家對這座千年冰河的描寫所吸引。然而，這項觀光資源即將消失。根據全球環保人士組成的「氣候變遷小組」記錄，吉力馬札羅山的積雪與冰河正在融化，預計將於 2020 年前完全消失。屆時，這座山峰失去的不只是觀光吸引力，積雪的消失還將對山腳下乾燥非洲平原的生態系統造成重大破壞。少了山頂積雪，山下的動植物將缺乏足夠的水分與濕氣滋養。全球暖化所導致的氣溫上升，也持續威脅著這座山區的生態系統。這座 5892 公尺高峰上存在了約 11700 年的積雪一旦消失，恐將對坦尚尼亞帶來災難性的後果。
+📋 內容大意
+Tens of thousands of tourists visit Mount Kilimanjaro in Tanzania each year. They come for the ancient glaciers Hemingway wrote about in The Snows of Kilimanjaro.
+The Climate Change Group reports that the snows and glaciers are melting and could be gone by 2020. The summit would then lose its appeal to visitors.
+The loss would also harm the plains below, because the snow supplies their water. Rising temperatures add more pressure.
+← 第24題回到103 年學測第26題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

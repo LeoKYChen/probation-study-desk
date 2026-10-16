@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z108-20/index.html
+Author: staresto-create ZZSH
+Title: 108 年指考克漏字第20題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 108 年指考 ／ 第20題
+108 年指考 克漏字 第20題
+字彙選義線索：句內答對率 54%
+答對率 54%：當年每 100 位考生，有 54 位答對。
+...and stay clear of coral reefs, sunken ships, fish beds, and other general 20.
+(A)directions
+(B)obstacles
+(C)aquariums
+(D)circulations
+答案：(B) obstacles
+題目編號：Z108_20（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+obstacles（障礙物）呼應前文 coral reefs, sunken ships, fish beds 等具體例子，表示海底電纜鋪設須避開這些障礙物；directions／aquariums／circulations 都不符合此處語意。
+深入解析
+你可能會這樣想
+四個選項都是複數名詞，文法上都填得進 and other ___。如果只盯著空格看，obstacles（障礙物）與 directions（方向）好像都講得通，aquariums 又因為前面剛出現 fish beds（魚群棲息地）而顯得眼熟。
+怎麼判斷
+這一題的線索是 and other 這個結構本身。英文列舉時常用「A, B, C, and other + 概括名詞」收尾，而 other 後面那個名詞必須能把前面列的東西全部收進去。前面列的是 coral reefs（珊瑚礁）、sunken ships（沉船）、fish beds（魚群棲息地），三者的共同點不是形狀也不是位置，而是鋪設電纜時都要避開，所以概括名詞就是 obstacles（障礙物）。句中的動詞 stay clear of（避開、遠離）也把答案框死了，它後面接的必定是該閃開的東西。鑑別度 49，分的是有沒有把 and other 當成「請你找上位概念」的訊號。
+誘答選項
+directions（方向）不是東西，珊瑚礁與沉船也不能算是方向。aquariums（水族館）會因為前面的 fish beds 而顯得眼熟，但水族館是陸地上的人造建築，不會出現在海床上，眼熟不等於正確。circulations 的 circulation 講的是血液循環、空氣流通，或報刊的發行量，與該避開的障礙毫無關係。
+常考字詞與句型
+stay clear of（避開、遠離）、A, B, and other + 概括名詞（…以及其他…）、an obstacle to（…的障礙）、a coral reef（珊瑚礁）、a sunken ship（沉船）、prevent damage（防止損壞）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：108學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+When we stream the latest TV series, or download high-resolution photos, we are probably unaware that the data behind them is speeding around the world in cables under the sea.
+These cable systems, faster and cheaper than satellites, carry most of the intercontinental Internet traffic. Today, there are over 420 submarine cables 16 , stretching over 700,000 miles around the world. It is not a new phenomenon, 17 . The first transcontinental cable—laid in 1854—ran from Ireland to Newfoundland, and made telegraph communication possible between England and Canada. Currently, the world's highest-capacity undersea Internet cable is a 5,600-mile link between the US and Japan. 18 named "FASTER," the cable connects Oregon in the US with Japan and Taiwan.
+The submarine cables require extra 19 to install. They must generally be run across flat surfaces of the ocean floor, and stay clear of coral reefs, sunken ships, fish beds, and other general 20 . The fiber-optic cables are also very fragile, so they are surrounded with layers of tubing and steel to prevent damage.
+中譯：當我們線上收看最新影集，或下載高畫質照片時，可能沒有意識到這些資料其實正透過海底電纜快速傳遍全世界。
+這些海底電纜系統比衛星更快、更便宜，承載了絕大多數的洲際網路流量。如今，全世界已有超過 420 條海底電纜正在運作，總長超過 70 萬英里。這其實不是新現象，第一條橫洲電纜早在 1854 年鋪設，連接愛爾蘭與紐芬蘭，讓英國與加拿大之間得以進行電報通訊。目前，世界上容量最大的海底網路電纜是一條連接美國與日本、長達 5,600 英里的電纜，這條被恰如其分地命名為「FASTER」的電纜，將美國奧勒岡州與日本、台灣連接起來。
+海底電纜的鋪設需要格外小心，通常必須沿著海床平坦處鋪設，並避開珊瑚礁、沉船、魚群棲息地及其他各種障礙物。這些光纖電纜也相當脆弱，因此外層會包覆數層管線與鋼材來保護，以防損壞。
+📋 內容大意
+Most traffic between continents travels through cables lying on the ocean floor, not by satellite.
+Over 420 such cables span the globe, and the first was laid in 1854 between Ireland and Newfoundland.
+Laying them is delicate work: routes must avoid reefs and wrecks, and the fibers need steel armor.
+← 第19題回到108 年指考
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

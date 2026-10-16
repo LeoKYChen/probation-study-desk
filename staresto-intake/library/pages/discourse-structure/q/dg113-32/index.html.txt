@@ -1,0 +1,50 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dg113-32/index.html
+Author: staresto-create ZZSH
+Title: 學測 113年 篇章結構 第32題詳解（掌握段落主題句和細節的關係）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 學測 113年 ／ 第32題
+學測 113年 篇章結構 第32題
+選文：受傷之後還能不能運動（Exercising with Sports Injuries）
+掌握段落主題句和細節的關係線索：人稱代名詞主格、One… Another… Some… Others 句型答對率 33%
+(A)For example, an injured runner might end up cycling and swimming instead of running.例如，受傷的跑者可能改成騎車和游泳，不再跑步。
+(B)Over time, researchers have come to realize the importance of exercising when injured.久而久之，研究者逐漸體認到受傷時運動的重要性。
+(C)Many suggest that most patients can continue with the sport they love.許多醫師認為，大多數病人可以繼續從事自己喜愛的運動。
+(D)This seems to run counter to the common practice.這似乎和一般的做法相反。
+答案：(C) Many suggest that most patients can continue with the sport they love.
+題目編號：Dg113_32
+解析
+先看空格後面。 後面是 They nevertheless caution that a cutback may be necessary...（他們仍然提醒，可能得減量，例如跑短一點或慢一點。）出現兩個問題：They 是誰？ 前一句的重點是「具體建議因專家而異」，沒有一群人可以指。nevertheless 要轉什麼？ 前面得先有一個比較寬鬆的說法。
+C 一次補上兩個：Many 給 They 當對象，「可以繼續原來的運動」正是那個寬鬆說法，後面才轉成「不過要減量」。
+再看這一整段的排法。 往下讀會看到 Others say...、Still others say...。既然有「其他人」，前面一定要先有第一群人。C 的 Many 就是那第一群。
+如果你選了 A（例如，受傷的跑者可能改成騎車和游泳，不再跑步。）：A 也在講運動傷害後怎麼做，字面上很搭。但 A 是 For example 開頭的例子，例子要有被舉例的對象；而且它講的是改做別的運動，和後一句「減量但繼續原來的運動」剛好相反。
+【下次先看這裡】看到 Others、Still others，先確認前面有沒有「第一群人」。沒有，第一群就在空格裡。
+線索與數據
+線索種類人稱代名詞主格、One… Another… Some… Others 句型
+線索在哪後一句 They
+答對率33%
+鑑別度41
+本篇題型4選4・刪去法可收尾
+數據出處：本頁的答對率與鑑別度來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響。
+展開本題所在的整篇選文與中文翻譯
+本篇共 4 格、4選4；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+開場：用一則親身故事引入
+While Dr. Weinstein, a surgeon at Dartmouth College, was trying to lift a heavy box, he twisted his back. The pain was agonizing. The surgeon could not sit, and when he lay down he could barely get up. So he decided to go out for a run. He took an aspirin, iced the injured area, and off he went. When he returned, he felt “pretty good.”
+31 When people have sprained a muscle or tendon, they are usually advised not to go right back to exercising until the pain goes away. But Dr. Weinstein says that approach is outdated and counterproductive. In fact, when active people consult him, he usually tells them to just keep exercising.
+Dr. Weinstein is not alone in his treatment of sports injury, but the specific advice can differ from specialist to specialist. 32Many suggest that most patients can continue with the sport they love. They nevertheless caution that a cutback may be necessary, such as running shorter distances or going more slowly. Others say the patients may need to engage in sports outside of their usual, main sport (that is, to cross-train), at least some of the time. Still others say the safest thing to do is cross-train all the time until the pain is gone. 33 Their consensus, however, is that unless the injury involves something as serious as a broken bone or a ripped muscle, moderate exercise can actually speed healing.
+34 Thus, more and more patients are now advised to keep moving despite the pain. The rule of thumb, however, is to see a doctor first and get an accurate diagnosis. If a serious injury is ruled out and the pain is not getting worse after exercising, then the exercise “makes a lot of sense.”
+中譯
+達特茅斯學院的外科醫師溫斯坦，在搬一個重箱子的時候扭傷了背。那個痛非常難受。他坐不下來，躺下去之後又幾乎爬不起來。於是他決定出門去跑步。他吃了一顆阿斯匹靈，在受傷的地方冰敷，然後就出發了。回來之後，他覺得「還滿不錯的」。
+31 一般人拉傷肌肉或肌腱之後，通常會被勸告先別馬上恢復運動，要等到不痛了再說。但溫斯坦醫師表示，那套做法已經過時，而且效果適得其反。事實上，有運動習慣的人來找他，他通常會叫他們繼續運動就好。
+在運動傷害的處理上，抱持這種看法的不只溫斯坦醫師一人，不過各個專科醫師給的建議並不完全一樣。32 但他們仍提醒，減量可能是必要的，例如把距離縮短、或是跑慢一點。另一些醫師則說，病人至少有一部分時間需要從事自己主要運動以外的項目，也就是交叉訓練。還有一些醫師認為，最安全的做法是全程改做交叉訓練，直到不痛為止。33 不過他們的共識是：只要傷勢沒有嚴重到骨折或肌肉撕裂的程度，適度運動其實能加快復原。
+34 因此，現在越來越多病人被建議即使會痛也要繼續活動。不過大原則是：先看醫師，取得正確的診斷。如果排除了嚴重傷害，而且運動之後疼痛沒有加劇，那麼運動就「很有道理」。
+← 第31題回到互動練習第33題 →
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

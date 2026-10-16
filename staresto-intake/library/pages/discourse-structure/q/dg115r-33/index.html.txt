@@ -1,0 +1,63 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dg115r-33/index.html
+Author: staresto-create ZZSH
+Title: 學測 115參 篇章結構 第33題詳解（掌握段落內語句的連貫性與一致性）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 學測 115參 ／ 第33題
+學測 115參 篇章結構 第33題
+選文：雲霄飛車是怎麼設計的（Designing a Roller Coaster）
+掌握段落內語句的連貫性與一致性線索：概括—列舉呼應
+(A)Designers must then consider the space available for the coaster.設計者接著必須考慮這台車可用的空間。
+(B)Building an exciting roller coaster starts with a brilliant design.要造出一台刺激的雲霄飛車，得從一份出色的設計開始。
+(C)Theme and type are also important aspects to consider in coaster design.主題與類型也是雲霄飛車設計時要考慮的重要面向。
+(D)Designers can draw on a number of techniques to provide a memorable ride.設計者可以運用多種技法，做出令人難忘的乘坐體驗。
+(E)When the design is complete, detailed calculation and careful testing procedures will follow.設計完成之後，接著是詳細的計算與仔細的測試程序。
+答案：(D) Designers can draw on a number of techniques to provide a memorable ride.
+題目編號：Dg115r_33
+解析
+先看空格前面。 前一句說：設計者接下來的目標，是做出獨一無二的乘坐感（a unique “feel”）。這只說了目標，還沒說怎麼做到。
+再看空格後面。 後面是一長串具體做法：第一個落差通常設計得最陡、最快、最嚇人；中段做一小截平路的叫 double dips；落差末端突然轉平或上翹、把乘客壓進座位的叫 slammers；讓車廂貼著地面跑的叫 gully coaster。數一數，四種。
+一個目標後面接四種做法，中間需要一句話先說「有好幾種手法」。D 的 a number of techniques（多種技法）正是那一句，後面四種就是它的清單。
+如果你選了 C（主題與類型也是雲霄飛車設計時要考慮的重要面向。）：C 又一次讀起來很順——它確實是設計的一項考量，also 也接得上前面已經數過的兩項。但後面列的四種全是落差和軌道的做法，主題（例如海盜船、外太空）和類型一項都沒出現。
+如果你選了 E（設計完成之後，接著是詳細的計算與仔細的測試程序。）：E 講的是設計完成之後的計算和測試，這一段卻還在談怎麼做出獨特的乘坐感；放進這裡，後面那一串技法就接不上了。
+【下次先看這裡】前面給目標、後面接一串具體做法，空格通常是「有好幾種辦法」這種概括句。先數後面列了幾項，再找哪個選項罩得住。
+線索與數據
+線索種類概括—列舉呼應
+線索在哪兩側 a number of techniques ↔ 後面四種具體技法
+答對率本場考試不公布統計
+本篇題型5選4・刪去法不收尾
+多出來的那一個：C
+(C)Theme and type are also important aspects to consider in coaster design.主題與類型也是雲霄飛車設計時要考慮的重要面向。
+C 這一句沒有任何毛病。它談的是設計考量，和全篇完全同一件事；also 的用法也對——這篇確實一項一項在數設計考量。放進第 32 格或第 33 格，念起來都很順。
+問題只有一個：沒有任何一段的內容在等它。
+格
+那一格在等什麼
+C 為什麼不行
+33
+最陡的落差、double dips、slammers、gully coaster
+全是軌道做法，不是主題或類型
+這一篇的多餘選項和 115 學測那一篇做法不一樣。 115 學測多出來的 D 是切面不對（全篇問「什麼影響微笑」，D 答「微笑分幾種」），一眼看得出不同類；這一篇的 C 切面完全正確，看起來甚至比某些正解更像正解。
+所以判斷多餘選項，不能靠「哪一個看起來最不像」。要反過來做：把四個空格前後在等什麼各寫一句，四格都配對完，剩下的那個自然就是多的。
+【下次先看這裡】5 選 4 不要先挑「多的那一個」。先一格一格問「這一格前後在等什麼」，填滿四格，剩下的就是多的。順序反過來就會被騙。
+展開本題所在的整篇選文與中文翻譯
+本篇共 4 格、5選4；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+Roller coasters have been known for their agonizingly slow starts, near heart-stopping drops and scream-inducing turns and loops. 31
+設計考量一：這台車是給誰坐的
+The designers must first consider what kind of riders will use the coaster. If the coaster is designed for small children, the hills and curves will be gentle, and the car speed will be relatively slow. Families usually want a somewhat faster ride with plenty of turns and moderate force. Ultimate thrill seekers want extreme heights and speed.
+32 Roller coasters usually take up a lot of room not only on the ground but also in the air. Designers must take into consideration surrounding rides, power lines, and other obstacles. Some amusement parks have added so many rides that a new roller coaster has to be designed to make its way through existing rides and walkways.
+設計考量三：做出獨一無二的手感
+The next objective for the designers is to achieve a unique “feel” for the coaster. 33Designers can draw on a number of techniques to provide a memorable ride. Once up the incline, the first drop is usually designed to be the steepest, and therefore the fastest and scariest. Other drops can be designed with a brief flattened section in the middle, and are called double dips. Drops with very abrupt transitions to a flat or upturned section are called slammers because they slam the passengers down into their seats. Letting the cars run close to the ground, in what is called a gully coaster, gives the illusion of increased speed.
+34 Only after its safety is assured can the design be used to build a new roller coaster.
+中譯
+雲霄飛車向來以幾件事出名：起步慢得讓人難熬、俯衝幾乎讓人心跳停止、轉彎和翻圈讓人忍不住尖叫。31
+設計者必須先考慮這台車會有哪一種乘客。如果是為小朋友設計的，坡度和彎道都會比較平緩，車速也相對慢。全家一起搭的，通常會想要快一點、彎道多一點、力道適中的體驗。至於一心追求刺激的人，要的是極端的高度與速度。
+32 雲霄飛車占掉的空間通常很大，不只是地面，連上方的空間也是。設計者必須把周邊的遊樂設施、電線和其他障礙物都算進去。有些遊樂園加蓋的設施太多，新的雲霄飛車只好設計成從既有的設施和步道之間穿過去。
+設計者的下一個目標，是讓這台車有獨特的「感覺」。33 車子爬上斜坡之後，第一段俯衝通常會設計成最陡的一段，也因此最快、最嚇人。其他的俯衝可以在中間設計一小段平緩處，這種叫做 double dips（dip 是「往下沉一下」，double dip 就是一連沉兩次）。俯衝之後突然轉成平段或上揚段的叫做 slammers（slam 就是「用力摔、用力壓」），因為它們會把乘客狠狠壓進座位裡。讓車子貼近地面跑，也就是所謂的 gully coaster（gully 是地面的凹溝，等於讓車子在溝裡跑），會製造出速度變快的錯覺。
+34 要等到安全性獲得確認之後，這份設計才能用來造出一台新的雲霄飛車。
+← 第32題回到互動練習第34題 →
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

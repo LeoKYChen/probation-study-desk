@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g111ref-18-1/index.html
+Author: staresto-create ZZSH
+Title: 111 年學測英文參考試卷克漏字第18題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 111 年學測英文參考試卷 ／ 第18題
+111 年學測英文參考試卷 克漏字 第18題
+字彙選義線索：句內
+Among his later works, the most outstanding is The Old Man and the Sea (1952), which became perhaps his most famous book, finally winning him the Pulitzer Prize he had long been 18 .
+(A)planned
+(B)achieved
+(C)examined
+(D)denied
+答案：(D) denied
+題目編號：G111學測英文參考試卷_18_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+過去分詞 denied，被動語意「他長期以來一直『無法獲得』的普立茲獎」（he had long been denied the Pulitzer Prize）；planned（被計畫）、achieved（被達成，語意方向不合，如果已經 achieved 就不需要「finally winning」這個轉折）、examined（被審查）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是過去分詞，而「終於贏得他長久以來一直……的普立茲獎」這一句，如果沒讀出 finally（終於）背後的意思，很容易挑到 achieved（達成）。但如果早就達成了，就不會有「終於」兩個字。
+怎麼判斷
+四個選項都是過去分詞，可見這一格考的是語意。先把整句讀完：The Old Man and the Sea (1952) ... became perhaps his most famous book, finally winning him the Pulitzer Prize he had long been ___.（The Old Man and the Sea（老人與海）成了他最著名的作品，終於為他贏得那座他長久以來一直……的普立茲獎。）關鍵在 finally（終於）與 had long been（長久以來一直是）——兩個字合起來的意思是：他很久都沒得到，直到這一次才拿到。所以空格要填的是「一直被拒於門外」，填 denied。be denied sth 就是「被拒絕給予某物、一直得不到」（He was denied the chance. 他被剝奪了那個機會。）。還原一次：the Pulitzer Prize (that) he had long been denied——關係代名詞省略了，先行詞 the Pulitzer Prize 是 denied 的第二個受詞。
+誘答選項
+achieved（達成）：如果早就達成了，就不會有 finally winning him the Prize 這一句，前後矛盾。planned（計畫）：填進去是 he had long been planned the Pulitzer Prize，變成他本人「一直被計畫」；而且 plan 不能接兩個受詞，被動之後留不下普立茲獎這個受詞。examined（審查）：同樣會變成他本人「一直被審查」，examine 也不能接兩個受詞。
+常考字詞與句型
+be denied sth（被拒絕給予某物）、win sb a prize（為某人贏得獎項）、the Pulitzer Prize（普立茲獎）、be awarded the Nobel Prize（獲頒諾貝爾獎）、his most famous book（他最著名的作品）、outstanding（傑出的）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Ernest Hemingway (1899-1961) was an American author and journalist. His writing style, characterized by simplicity and understatement, influenced modern fiction, as 16 his life of adventure.
+Hemingway started his career as a journalist at 17. In the 1920s, he was sent to Europe as a newspaper correspondent to 17 such events as the Greek Revolution. During this period, he produced his early important works, including The Sun Also Rises. Among his later works, the most outstanding is The Old Man and the Sea (1952), which became perhaps his most famous book, finally winning him the Pulitzer Prize he had long been 18 .
+Hemingway liked to portray soldiers, hunters, bullfighters—tough, at times primitive people whose courage and honesty are set against the brutal ways of modern society, and who in this 19 lose hope and faith. His straightforward prose is particularly effective in his short stories, some of 20 are collected in Men Without Women (1927). In 1954, Hemingway was awarded the Nobel Prize in Literature. He died in Idaho in 1961.
+中譯：厄尼斯特·海明威（1899-1961）是一位美國作家兼記者。他以簡潔、含蓄著稱的寫作風格，影響了現代小說的發展，他充滿冒險的一生也是如此。海明威 17 歲就開始當記者。1920 年代，他被派往歐洲擔任報社特派記者，報導諸如希臘革命之類的重大事件。在這段期間，他創作出早期的重要作品，包括《太陽依舊升起》。在他後期的作品中，最傑出的當屬《老人與海》（1952 年），這本書後來成為他最著名的代表作，也終於為他贏得長期以來一直未能獲得的普立茲獎。海明威喜歡刻畫士兵、獵人、鬥牛士等堅毅、有時帶點原始氣息的人物，他們的勇氣與誠實，與現代社會的殘酷本質形成強烈對比，並在這樣的衝突中逐漸失去希望與信念。他直白簡練的文筆，在他的短篇小說中表現得尤為出色，其中部分作品收錄於《沒有女人的男人們》（1927 年）。1954 年，海明威榮獲諾貝爾文學獎。他於 1961 年在愛達荷州逝世。
+📋 內容大意
+Ernest Hemingway (1899-1961) was an American writer and journalist. His plain, understated style shaped modern fiction. His life of adventure had the same effect.
+He began reporting at seventeen. In the 1920s a newspaper sent him to Europe to report events such as the Greek Revolution. The Sun Also Rises came from those years.
+The Old Man and the Sea (1952) finally won him the Pulitzer Prize. The Nobel Prize followed in 1954. He wrote about tough men in a hard, violent world.
+← 第17題回到111 年學測英文參考試卷第19題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

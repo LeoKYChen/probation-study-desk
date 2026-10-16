@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z93m-22/index.html
+Author: staresto-create ZZSH
+Title: 93 年指考敏督利颱風受災地區考生補救考試克漏字第22題詳解（介系詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 93 年指考敏督利颱風受災地區考生補救考試 ／ 第22題
+93 年指考敏督利颱風受災地區考生補救考試 克漏字 第22題
+介系詞線索：句內
+The main events include unforgettable music on 12 stages, delicious Louisiana cuisine in two large food areas, and crafts artisans from the region and 22 the world purchasing and selling their works.
+(A)against
+(B)about
+(C)across
+(D)around
+答案：(D) around
+題目編號：Z93M_22（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+artisans from the region and around the world 並列，around the world（世界各地）呼應前面 from the region（來自本地），表示工匠來源涵蓋在地與全球；against／about／across 都不符合此處字詞搭配。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+across 與 around 的中文都可以說成「遍及、各地」，看起來分不出高下，於是憑語感二選一；也有人一看到 the world 就急著找一個「全世界」的說法，結果卡在這兩個之間。
+怎麼判斷
+先用並列結構的三步判斷方式。第一步，找對等連接詞：句子裡有 and。第二步，確定 and 連的是哪兩樣——不是 the region 與 the world 兩個名詞，而是 from the region 與空格帶出的那一串兩個介系詞片語，兩個都掛在 artisans 後面說明這些工藝家從哪裡來。這一步可以借國中數學的分配律驗算：and 兩邊共用同一個 artisans，把它分配進去，還原成 artisans from the region 與 artisans around the world 兩組，兩組都站得住，可見 and 連的正是那兩個介系詞片語。反過來想也清楚：英文之所以寫成並列，就是為了不必把 artisans 說兩次——把共用的部分提到前面，比兩句話分開寫短，這與數學上把公因式提出來、A（B＋C）＝AB＋AC 左邊比右邊短是同一回事。要提醒的是並不是每個 and 都拆得開：Tom and Mary are a good couple. 拆開就不成立，那表示 and 連的是一個整體，不是兩樣東西。第三步，依據在左：左邊已經寫出來的是 from the region（來自這個地區，也就是在地），右邊那一格就要與它形成「在地對全球」的一組，才說得通「在地與各地的工藝家都來了」。這一步刷掉 against（對抗）與 about（關於），兩個都說不出「來自世界各地」。剩下的 across 與 around 才是真正的難處：牛津高階兩個都收了「遍及」的意思——across 的第四義是 in every part of a place, group of people（同義詞 throughout），例句是 Her family is scattered across the country.（她的家人散居全國各地）；around 則是 in or to many places in an area（在一個範圍裡的許多地方）。兩個都有辭典依據，語意刷不掉，最後定案靠的是字詞搭配：講「世界各地」時，英文最制式的組合就是 around the world，與前面的 from 連起來讀成 from the region and around the world 也最自然。這一題不能用「兩個意思差不多的選項一定同時錯」去砍，這個方法在這裡會把正確答案一起砍掉。
+誘答選項
+against（對抗、靠著）方向完全不同，artisans against the world 會變成「與世界為敵的工藝家」；about（關於）後面一般接主題，artisans about the world 不成話；about 雖然也能表示散在某處各個地方（劍橋例句 Their belongings were flung about the room.），但主要是英式用法，美式多用 around，講的也是東西四散的位置，不是工藝家從哪裡來；across 如上，意思本身站得住，只是這個位置的制式說法是 around。
+常考字詞與句型
+around the world（世界各地）、across + 地方或群體（遍及，牛津高階第四義，同義詞 throughout）、from the region（來自當地）、artisan（工藝家、匠人）、purchase（購買）、works（作品，此義可數，這裡用複數）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Jazz is not only an American art form but also an international phenomenon. The New Orleans Jazz and Heritage Festival, also called Jazz Fest, is a 10-day cultural feast 21 thousands of musicians, cooks, and craftspeople welcome 500,000 visitors each year.
+The main events include unforgettable music on 12 stages, delicious Louisiana cuisine in two large food areas, and crafts artisans from the region and 22 the world purchasing and selling their works. The evening concerts 23 different locations during the 10-day Festival.
+The Festival 24 the indigenous music and culture of New Orleans and Louisiana, so the music encompasses every style associated with the 25 and the state: blues, R&B, gospel, Cajun, Afro-Caribbean, folk, Latin, rock, rap, country, bluegrass and everything in between. And of course there is lots of jazz, both contemporary and traditional.
+中譯：爵士樂不只是美國本土的藝術形式，更是一種國際性的現象。紐奧良爵士與傳統音樂節（又稱 Jazz Fest）是一場為期十天的文化盛宴，數以千計的音樂家、廚師與工藝家在此齊聚一堂，每年迎接 50 萬名遊客的到來。主要活動包括在 12 個舞台上演出的難忘音樂表演、兩大美食區供應的美味路易斯安那料理，以及來自當地及世界各地的工藝家們在此買賣自己的作品。這場為期十天的音樂節，晚間音樂會會在不同地點舉行。這個音樂節旨在慶祝紐奧良與路易斯安那當地的原生音樂與文化，因此音樂涵蓋了與這座城市及這個州相關的各種曲風：藍調、節奏藍調、福音、卡疆、非洲加勒比、民謠、拉丁、搖滾、饒舌、鄉村、藍草，以及介於這些曲風之間的一切音樂。當然，音樂節中還有大量的爵士樂，當代和傳統風格都有。
+📋 內容大意
+Jazz belongs to the world as well as America.
+New Orleans hosts a ten-day festival drawing half a million visitors each year.
+Twelve stages, Louisiana food and craft stalls celebrate the region's every musical style.
+← 第21題回到93 年指考敏督利颱風受災地區考生補救考試第23題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g107-25-2/index.html
+Author: staresto-create ZZSH
+Title: 107 年學測克漏字第25題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 107 年學測 ／ 第25題
+107 年學測 克漏字 第25題
+字彙選義線索：句內答對率 62%
+答對率 62%：當年每 100 位考生，有 62 位答對。
+Matter of Trust is helping organize the collection of this 25 hair and fur through thousands of salons, pet groomers, and ranchers.
+(A)unneeded
+(B)overthrown
+(C)excluded
+(D)disconnected
+答案：(A) unneeded
+題目編號：G107_25_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「這些『不需要的』頭髮和毛皮」，unneeded（不需要的，即被剪掉丟棄的頭髮）符合，呼應前文「每天被剪掉的 30 萬磅頭髮和毛皮」；overthrown（被推翻）、excluded（被排除）、disconnected（斷開連接）都不合。
+深入解析
+你可能會這樣想
+四個選項分別以 un-、over-、ex-、dis- 開頭，看起來全都帶著「否定、反向」的味道，所以很容易憑感覺挑一個。這一格的鑑別度高達 73，是 107 年學測克漏字十五格裡最高的一格——意思是搞懂線索的人幾乎都對，沒抓到線索的人就只能猜。
+怎麼判斷
+關鍵在 this 這個指示詞。this 一定是指回前面提過的東西，所以往前一句看：Across the United States each day, 300,000 pounds of hair and fur are cut.（全美國每天有三十萬磅的頭髮與毛皮被剪下來）。被剪下來、沒人要、本來會被丟掉的頭髮，就是 unneeded（不需要的）。拆字也很直觀：un-（不）加上 needed（被需要的），字面就是「不被需要的」。順帶分清楚一組容易混淆的字：unneeded 是「不需要的」；unnecessary 除了「不需要的」之外，還多了「超過所需、多此一舉的」這一層（劍橋辭典）。
+誘答選項
+overthrown 是 overthrow（推翻）的過去分詞，受詞通常是政權、制度，例如 overthrow the government（推翻政府）。excluded（被排除在外的）需要有一個明確被排除出去的範圍或群體。disconnected（斷了連結的）用在電源、網路或人際關係上。三個字放進來，都跟「被剪掉、沒人要」搭不上。
+常考字詞與句型
+unneeded（不需要的、用不到的）、unnecessary（沒必要的）、leftover（剩下的、剩餘的）、overthrow（推翻）、exclude（排除）、disconnect（切斷連結）、the collection of（……的蒐集）、hair stylist（髮型設計師）、pet groomer（寵物美容師）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Hair usually gets greasy when it has not been washed because it soaks up oil—hence the need for shampoo! 21 this oil-absorbing feature might not always be so great for our hygiene, it can be great for the environment.
+Matter of Trust, a nonprofit organization, has an innovative solution for removing the large-scale oil spill in the Gulf of Mexico in 2010, using the ultimate renewable 22 : human hair, of which there is an unlimited supply. Since its founding in 1998, Matter of Trust has collected donations of human hair and animal fur to 23 the thousands of oil spills that happen each year. The hair and fur are made into mats and brooms and sent to 24 waters to absorb the oil.
+Across the United States each day, 300,000 pounds of hair and fur are cut. Matter of Trust is helping organize the collection of this 25 hair and fur through thousands of salons, pet groomers, and ranchers. Individuals can also speak to local hair stylists and pet groomers about sending in leftover hair and fur.
+中譯：頭髮沒有清洗時通常會變得油膩，因為它會吸收油脂——這也是為什麼我們需要用洗髮精的原因！雖然這種吸油特性對我們的個人衛生來說未必是件好事，但對環境而言，卻可能大有益處。非營利組織「Matter of Trust」，針對 2010 年墨西哥灣大規模漏油事件，提出了一項創新的解決方案——利用終極的可再生資源：人類的頭髮，因為頭髮的供應量幾乎是取之不盡的。自 1998 年成立以來，「Matter of Trust」持續收集人類頭髮和動物毛皮的捐贈，用來應對每年發生的數千起漏油事件。這些頭髮和毛皮會被製成吸油墊和吸油刷，送往受污染的水域吸附油污。在美國，每天約有 30 萬磅的頭髮和毛皮被剪下。「Matter of Trust」透過全美數千家美髮沙龍、寵物美容店和牧場，協助組織收集這些原本不會被利用的頭髮和毛皮。個人也可以主動與當地的美髮師或寵物美容師聯繫，將剩餘的頭髮和毛皮送去捐贈。
+📋 內容大意
+Hair turns greasy because it soaks up oil. That is bad for hygiene but useful for the environment.
+The nonprofit Matter of Trust used human hair to clean the 2010 Gulf of Mexico oil spill. Since 1998 it has collected hair and animal fur.
+Donated hair becomes mats and brooms sent out to oiled waters. Salons, pet groomers and ranchers gather the 300,000 pounds cut daily across the United States.
+← 第24題回到107 年學測第26題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

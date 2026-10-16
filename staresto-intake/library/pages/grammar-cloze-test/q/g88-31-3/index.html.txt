@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g88-31-3/index.html
+Author: staresto-create ZZSH
+Title: 88 年學測克漏字第31題詳解（連接詞／轉折詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 88 年學測 ／ 第31題
+88 年學測 克漏字 第31題
+連接詞／轉折詞線索：句內
+It was my first day in this beautiful tropical city. 31 I was walking to the beach, a stranger came up to me and tried to shake my hand.
+(A)As
+(B)But
+(C)Though
+(D)For
+答案：(A) As
+題目編號：G88_31_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+As 在這裡表示「當……的時候／正當」，表示兩個動作同時發生（我走向海灘的時候，一個陌生人走過來）；But（但是）、Though（雖然）、For（因為）都不符合這裡的同時性語意。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都能翻成中文的「當、但是、雖然、因為」，光比意思會在 As 與 Though 之間猶豫。這一格先用形態刷掉一半，剩下的才輪到語意。
+怎麼判斷
+先看結構：空格後面是 I was walking to the beach（一個完整的子句），逗號之後 a stranger came up to me and tried to shake my hand 又是一個完整的主要子句。兩個完整子句要接在一起，空格要的是從屬連接詞，而且它得放在從屬子句的最前面。For 與 But 先排除，兩個都是對等連接詞：But 連接的是地位相同的兩個部分，不會造出「從屬子句加主要子句」這種結構；For（因為）引出的是前面那句話的理由，位置只能在後面，而空格在整句的最前面，前面根本還沒有東西讓它解釋（同樣的判斷方式：91 年第 24 題 →、90 年第 21 題 →）。剩下 As 與 Though，用語意分：「我正走向海灘」與「一個陌生人走過來」之間沒有互相牴觸的意思，不是讓步；兩件事是同時發生的——空格後面用的是過去進行式 was walking，正好當「正當我在走的時候」這個背景，前景則是陌生人突然出現。這是 As 的「當……的時候」。順帶把 as 在題庫裡考過的用法整理出來：本題是「當……時」；91 年第 24 題 →是「隨著」；94 年第 18 題 →是介系詞「以……的身分」。先看後面接的是子句還是名詞，再看語意，就分得出來。
+誘答選項
+Though（雖然）：讓步要求前後兩件事互相牴觸，本句沒有。But（但是）：對等連接詞，不能放句首帶出一個從屬子句再接主要子句。For（因為）：它引出的是前一句的理由，位置只能在後面。
+常考字詞與句型
+as + 子句（當……的時候）、come up to sb（走向某人）、shake hands with sb（與某人握手）、walk to the beach（走向海灘）、a tropical city（熱帶城市）、the first day（第一天）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+It was my first day in this beautiful tropical city. 31 I was walking to the beach, a stranger came up to me and tried to shake my hand. "Don't you remember me, my friend?" he said. But I couldn't 32 his face at all. I didn't know a soul in the city. I had just arrived by plane and still had jetlag. "I 33 you at the airport. I work there at the customs. How are you enjoying our beautiful city?" I couldn't remember him but I was too 34 to tell him. He was so friendly.
+35 he offered to take me to his uncle's seafood restaurant, just by the beach. I thanked him 36 but he insisted that we should go there for dinner. "You'll love the seafood there," he 37 me. "And it will be a dinner to remember."
+So we went to the restaurant and sat by a window 38 the bay. The dinner was great indeed, but the coffee they served was quite different. In fact, it tasted very strange...
+Anyway, it was not 39 10 o'clock the next morning that I finally woke up. But I had no idea where I was. All my money was 40 and my "friend" had even taken my watch and my shoes!
+中譯：這是我在這座美麗熱帶城市的第一天。當我走向海灘時，一個陌生人走過來想跟我握手。「朋友，你不記得我了嗎？」他說。但我完全想不起他的長相，我在這座城市裡誰也不認識，才剛搭飛機抵達，還在時差中。「我在機場見過你，我在海關工作。你喜歡我們這座美麗的城市嗎？」我雖然不記得他，但又不好意思說出來。他表現得非常友善，後來提議帶我去他叔叔開在海邊的海鮮餐廳。我婉謝了他，但他堅持我們應該一起去那裡吃晚餐。「你一定會愛上那裡的海鮮，」他向我保證，「那將會是一頓令人難忘的晚餐。」於是我們去了那間餐廳，坐在能眺望海灣的窗邊。晚餐確實很棒，但他們供應的咖啡味道很奇怪，事實上，嚐起來相當怪異……總之，一直到隔天早上十點左右我才終於清醒過來，但完全不知道自己身在何處。我所有的錢都不見了，我那位「朋友」甚至連我的手錶和鞋子都拿走了！
+📋 內容大意
+On my first day in a new tropical city, an overly friendly stranger approached me claiming to know me from the airport.（敘事文）
+The stranger insistently invited me to go to his uncle's restaurant by the beach for dinner.（敘事文）
+We went to the restaurant for dinner, but the coffee served at the end tasted very unusual.（敘事文）
+I woke up late the next morning only to discover that I had been robbed of my money, watch, and shoes.（敘事文）
+← 第30題回到88 年學測第32題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g107-23-2/index.html
+Author: staresto-create ZZSH
+Title: 107 年學測克漏字第23題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 107 年學測 ／ 第23題
+107 年學測 克漏字 第23題
+慣用語／片語線索：句內答對率 48%
+答對率 48%：當年每 100 位考生，有 48 位答對。
+Since its founding in 1998, Matter of Trust has collected donations of human hair and animal fur to 23 the thousands of oil spills that happen each year.
+(A)get away with
+(B)clean up after
+(C)run out of
+(D)look down upon
+答案：(B) clean up after
+題目編號：G107_23_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】clean up after 指「清理……之後的殘局」，表示「清理每年發生的數千起漏油事件」；get away with（逃脫懲罰）、run out of（用完）、look down upon（看不起）都不合。
+深入解析
+你可能會這樣想
+clean up 你熟的是「打掃乾淨」，後面直接接被打掃的東西，像 clean up the room（把房間打掃乾淨）。這裡多了一個 after，很多人會卡住：既然要清理漏油，為什麼不是 clean up the oil spills？
+怎麼判斷
+clean up after 的意思是「收拾某人或某件事留下來的殘局」（劍橋辭典）。重點在於 after 後面帶出的是「製造髒亂的那個人或那件事」，不是被清掉的髒污本身。你最熟悉的例句就是 Clean up after yourself.（自己弄髒的自己收拾），after 後面接的是弄髒的人。回到這一格：the thousands of oil spills that happen each year（每年發生的數千起漏油事件）是「事件」，事件留下的油污才是被清理的對象，所以 clean up after 完全吻合。
+誘答選項
+run out of（用完、耗盡）最容易被 oil 這個字誤導——run out of oil 是「油用完了」，但這篇講的是油外洩太多需要清理，不是油不夠用，方向相反。get away with（做了壞事卻沒受到懲罰）的受詞是壞事或謊言。look down upon（看不起、瞧不起）的受詞是人。兩個都跟清理無關。
+常考字詞與句型
+clean up after（收拾……留下的殘局）、clean up（清理乾淨）、oil spill（漏油、油污外洩）、get away with（做壞事而未受懲罰）、run out of（用完、耗盡）、look down upon／on（看不起）、donations of（……的捐贈）、animal fur（動物毛皮）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Hair usually gets greasy when it has not been washed because it soaks up oil—hence the need for shampoo! 21 this oil-absorbing feature might not always be so great for our hygiene, it can be great for the environment.
+Matter of Trust, a nonprofit organization, has an innovative solution for removing the large-scale oil spill in the Gulf of Mexico in 2010, using the ultimate renewable 22 : human hair, of which there is an unlimited supply. Since its founding in 1998, Matter of Trust has collected donations of human hair and animal fur to 23 the thousands of oil spills that happen each year. The hair and fur are made into mats and brooms and sent to 24 waters to absorb the oil.
+Across the United States each day, 300,000 pounds of hair and fur are cut. Matter of Trust is helping organize the collection of this 25 hair and fur through thousands of salons, pet groomers, and ranchers. Individuals can also speak to local hair stylists and pet groomers about sending in leftover hair and fur.
+中譯：頭髮沒有清洗時通常會變得油膩，因為它會吸收油脂——這也是為什麼我們需要用洗髮精的原因！雖然這種吸油特性對我們的個人衛生來說未必是件好事，但對環境而言，卻可能大有益處。非營利組織「Matter of Trust」，針對 2010 年墨西哥灣大規模漏油事件，提出了一項創新的解決方案——利用終極的可再生資源：人類的頭髮，因為頭髮的供應量幾乎是取之不盡的。自 1998 年成立以來，「Matter of Trust」持續收集人類頭髮和動物毛皮的捐贈，用來應對每年發生的數千起漏油事件。這些頭髮和毛皮會被製成吸油墊和吸油刷，送往受污染的水域吸附油污。在美國，每天約有 30 萬磅的頭髮和毛皮被剪下。「Matter of Trust」透過全美數千家美髮沙龍、寵物美容店和牧場，協助組織收集這些原本不會被利用的頭髮和毛皮。個人也可以主動與當地的美髮師或寵物美容師聯繫，將剩餘的頭髮和毛皮送去捐贈。
+📋 內容大意
+Hair turns greasy because it soaks up oil. That is bad for hygiene but useful for the environment.
+The nonprofit Matter of Trust used human hair to clean the 2010 Gulf of Mexico oil spill. Since 1998 it has collected hair and animal fur.
+Donated hair becomes mats and brooms sent out to oiled waters. Salons, pet groomers and ranchers gather the 300,000 pounds cut daily across the United States.
+← 第22題回到107 年學測第24題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g110-29-3/index.html
+Author: staresto-create ZZSH
+Title: 110 年學測克漏字第29題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 110 年學測 ／ 第29題
+110 年學測 克漏字 第29題
+字彙選義線索：跨句答對率 35%
+答對率 35%：當年每 100 位考生，有 35 位答對。
+The disappearance of the glaciers will also leave a significant 29 impact.
+(A)cultural
+(B)moral
+(C)political
+(D)environmental
+答案：(A) cultural
+題目編號：G110_29_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+下一句說明冰原對巴布亞原住民而言是神聖象徵，可知冰河消失帶來的是「文化」層面的衝擊；句中的 also 也顯示這是有別於前文環境衝擊的另一種影響，故 environmental 不合，moral（道德）與 political（政治）都無文內依據。
+深入解析
+你可能會這樣想
+題目在講冰河消失，你大概直覺選 environmental。但句中的 also 是關鍵——它代表「除了前面已經談過的影響，還有另一種」，前文談的正是環境層面，所以這一格必須是環境以外的。
+怎麼判斷
+本句的 also 是關鍵：它代表「除了前面已經談過的影響，還有另一種」，而前文從頭到尾談的都是環境層面（冰河變薄、面積只剩 0.5 平方公里、十年內將完全消失），所以這一格必須是環境以外的。作答線索在下一句 For many indigenous Papuans, the ice sheets represent a sacred symbol.（對許多巴布亞原住民而言，這些冰原是神聖的象徵），再下一句還說山脈與山谷是神的四肢、冰河是神的頭——這些都屬於文化層面，填 cultural。記一條：看到 also、another、in addition，先問「前面已經講過哪一種了」，答案通常就是還沒講過的那一種。
+誘答選項
+moral：「道德的」，指對錯、善惡的標準，下一句講的是冰原對原住民的神聖象徵意義，與道德判斷無關。political：「政治的」，文中沒有任何政府、政黨或政策的描述。environmental：「環境的」，前文從頭到尾談的都是環境層面的變化，而本句的 also 表示要說的是另一種影響，再填 environmental 就與 also 相衝。
+常考字詞與句型
+have a significant impact on（對…有重大影響）、cultural／environmental impact（文化／環境衝擊）、indigenous people（原住民）。
+線索範圍說明：下一句 the ice sheets represent a sacred symbol 才排除直覺的 environmental
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Glaciers are usually associated with colder climates. But some mountain ranges of South America, Africa, and Indonesia are also 26 glaciers and ice sheets. These tropical glaciers serve as a major source of water supply to one-sixth of the world's population.
+A newly published study, however, revealed that rising temperatures are posing an 27 threat to the last tropical glaciers in Indonesia's Papua region. The ice sheets, which once spanned 20 square kilometers, are thinning over five times as quickly compared to a few years ago. 28 already shrunk by 85% to a mere 0.5 square kilometers, Papua's glaciers will completely disappear within a decade, researchers have predicted.
+The disappearance of the glaciers will also leave a significant 29 impact. For many indigenous Papuans, the ice sheets represent a sacred symbol. "The mountains and valleys are the arms and legs of their god and the glaciers are the head," explained the head researcher. The study warned that Papua's glaciers are only the "first to go" if greenhouse gases are 30 and temperatures continue rising. And this is certainly a serious warning about the depressing fate of other glaciers around the world.
+中譯：冰河通常讓人聯想到寒冷的氣候。但南美洲、非洲和印尼的部分山脈，其實也擁有冰河與冰原。這些熱帶冰河是全球六分之一人口的重要水源之一。然而，一項最新發表的研究顯示，氣溫上升正對印尼巴布亞地區剩下的熱帶冰河構成迫切的威脅。這片曾經廣達 20 平方公里的冰原，融化速度比幾年前快了五倍以上。研究人員預測，這片已縮減 85%、只剩 0.5 平方公里的巴布亞冰河，將在十年內完全消失。冰河的消失也將帶來重大的文化衝擊——對許多巴布亞原住民而言，這片冰原象徵著神聖的意義。「這些山脈與河谷是他們神祇的手腳，冰河則是頭部，」研究負責人如此解釋。這項研究警告，若溫室氣體排放不受控制、氣溫持續上升，巴布亞的冰河恐怕只是「第一個消失」的冰河，這無疑也對全球其他冰河令人擔憂的命運，發出了嚴正的警訊。
+📋 內容大意
+Glaciers are not only in cold regions. Ranges in South America, Africa and Indonesia have them too, and they supply water for a sixth of the world's people.
+A new study says rising temperatures now threaten Papua's last tropical glaciers. The ice is thinning five times faster than before and has shrunk by 85%.
+Researchers expect the ice to vanish within ten years. For indigenous Papuans the glaciers are sacred, the head of their god, and more glaciers will follow.
+← 第28題回到110 年學測第30題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,68 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dz107-33/index.html
+Author: staresto-create ZZSH
+Title: 指考 107年 篇章結構 第33題詳解（掌握段落主題句和細節的關係）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 指考 107年 ／ 第33題
+指考 107年 篇章結構 第33題
+選文：麵包、鹽與法國大革命（Bread, Salt, and the French Revolution）
+掌握段落主題句和細節的關係線索：指示詞、專有名詞重現答對率 24%
+(A)External threats closely shaped the course of the Revolution.外部的威脅深深左右了這場革命的走向。
+(B)With the collapse of the royal family, calm was restored gradually.隨著王室垮台，秩序逐漸恢復。
+(C)Meanwhile, peasants’ resentment against the gabelle was spreading.同時，農民對鹽稅（gabelle）的不滿正在蔓延。
+(D)The common household could not afford to buy enough food to meet their basic needs.一般家庭買不起足夠的食物來滿足基本需求。
+(E)The anger quickly built up, culminating in the massive riots of the French Revolution in 1789.憤怒迅速累積，最後演變成一七八九年法國大革命的大規模暴動。
+(F)Specifically, bread and salt, two most essential elements in the French cuisine, were at the heart of the conflict.具體來說，麵包和鹽這兩樣法國飲食中最基本的東西，正是這場衝突的核心。
+答案：(C) Meanwhile, peasants’ resentment against the gabelle was spreading.
+題目編號：Dz107_33
+解析
+先看空格的位置。 第三段的第一句。
+再看空格後面。 後面是 Started in the 15th century, this tax on salt consumption was applied particularly to the poor, while the nobility and the privileged were exempted.（這項對食鹽消費課徵的稅始於十五世紀，特別針對窮人課徵，貴族與特權階級則免稅。）this tax（這項稅）用了 this——前面必須先有一項稅。 整段之前一個字都沒提到稅。
+C 就是把它講出來的那一句。gabelle 是法文借字，指的就是後一句說的鹽稅；Meanwhile（同時）則把時間拉回去，和第二段的麵包並排。第五段結尾再度用到 the gabelle，也說明這個字前面得先出現過。
+這一格的答對率是兩成四。 難處不在句子，在 gabelle 這個字。看到不認得的字先別跳過，看它在句中的位置——它接在 resentment against（對……的不滿）後面，是被討厭的東西；後一句說「這項對食鹽消費課徵的稅」，兩邊一對，gabelle 是什麼就出來了。
+如果你選了 D（一般家庭買不起足夠的食物來滿足基本需求。）：D 講的也是窮人的困境，和「特別針對窮人課徵」看起來同一路。但後句的主詞是「這項稅」，空格必須先把稅講出來；D 從頭到尾沒有稅。
+【下次先看這裡】段落第一句是空格、下一句用 this／these 指回來，空格就是把那個東西第一次講出來的句子。認不得的字先擺著，用前後文推它是什麼。
+重點：英文用 this 指回前面已經寫過的東西，而且多半是接下來還要繼續談的重點。所以後一句一出現 this tax，空格就得先把這項稅講出來；六個選項裡，只有 C 的 gabelle 能讓 this tax 有所指。
+延伸閱讀：this 指回前文——段落裡的 it、this、that ↗
+線索與數據
+線索種類指示詞、專有名詞重現
+線索在哪後一句 後句 this tax on salt consumption；gabelle ↔ 第五段 the gabelle
+答對率24%
+鑑別度27
+本篇題型6選5・刪去法不收尾
+數據出處：本頁的答對率與鑑別度來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響。
+多出來的那一個：A
+(A)External threats closely shaped the course of the Revolution.外部的威脅深深左右了這場革命的走向。
+A 提到革命，也是一句像模像樣的歷史論斷。但五格都放不進去：
+格
+那一格在等什麼
+A 為什麼不行
+33
+第一次把鹽稅講出來
+A 沒有提到稅，後句的「這項稅」指不到
+共同點：第一段第二句就把範圍收在「食物」上，第二、三段各講一樣，全篇沒有一處在談國外。A 講的是另一條線。
+【下次先看這裡】六個選項先拿去和第一段對一次。第一段已經說了這篇要談什麼，談別的那一個通常就是多出來的。
+展開本題所在的整篇選文與中文翻譯
+本篇共 5 格、6選5；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+The causes of the French Revolution are complex and still widely debated among historians. However, many scholars agree that food played an important role in the socio-political upheaval. 31
+A main component in the French daily meal, bread was often tied up with the national identity. Studies show that the average 18th-century French worker spent half his daily wage on bread. In 1788 and 1789, however, when the grain crops failed two years in a row, the price of bread shot up to 88 percent of his earnings. 32 The great majority of the French population was starving. Some even resorted to theft or prostitution to stay alive.
+第二項：鹽稅——主要課在窮人身上，逼出走私和高價
+33Meanwhile, peasants’ resentment against the gabelle was spreading. Started in the 15th century, this tax on salt consumption was applied particularly to the poor, while the nobility and the privileged were exempted. The high rate and unequal distribution of the tax provoked widespread illegal dealing in salt by smugglers, leading to skyrocketing salt prices.
+However, the royal court at Versailles was isolated from and indifferent to the escalating crisis. The desperate population thus blamed the ruling class for the famine and economic disturbances. 34 The results include the storming of the Bastille, a medieval fortress and prison in Paris, and the eventual beheading of King Louis XVI and his wife, Marie Antoinette.
+35 Yet, the gabelle and the “bread question” remained among the most unsettling social and political issues throughout the Revolutionary and Napoleonic periods (1789-1815) and well beyond.
+中譯
+法國大革命的成因複雜，史家至今仍爭論不休。不過許多學者同意，食物在這場社會與政治的動盪中扮演了重要角色。31
+麵包是法國人日常飲食的主要部分，往往和民族認同綁在一起。研究顯示，十八世紀的法國工人平均要拿出半天的工資買麵包。然而在一七八八和一七八九年，穀物連續兩年歉收，麵包的價格飆漲到工人收入的百分之八十八。32 絕大多數的法國人處於挨餓狀態。有些人甚至靠偷竊或賣身求生。
+33 這項對鹽課徵的消費稅始於十五世紀，特別針對窮人，貴族和特權階級則不必繳。稅率高又課得不公平，引發私鹽販子大規模的非法交易，鹽價因此一路飆升。
+然而，凡爾賽的王室既與這場不斷惡化的危機隔絕，也對它漠不關心。走投無路的民眾於是把飢荒和經濟動盪都歸咎於統治階級。34 後果包括攻陷巴士底獄——那是巴黎一座中世紀的堡壘兼監獄——以及路易十六和他的妻子瑪麗・安東妮最終被送上斷頭台。
+35 不過，鹽稅（gabelle）和「麵包問題」始終是革命時期與拿破崙時期（一七八九至一八一五年）以及其後很長一段時間裡，最令人不安的社會與政治議題之一。
+← 第32題回到互動練習第34題 →
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

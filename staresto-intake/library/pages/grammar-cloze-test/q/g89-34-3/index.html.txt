@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g89-34-3/index.html
+Author: staresto-create ZZSH
+Title: 89 年學測克漏字第34題詳解（語意連貫）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 89 年學測 ／ 第34題
+89 年學測 克漏字 第34題
+語意連貫線索：篇章
+I felt bad about it, though. 34 Jane: Oh, I'd have told her to leave after one week.
+(A)What have you done?
+(B)What would you have done?
+(C)What do you think of her?
+(D)What did you do to her?
+答案：(B) What would you have done?
+題目編號：G89_34_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+Mary 說她對說謊感到愧疚，這句是 Mary 反問 Jane「換作是你會怎麼做？」（假設語氣），呼應 Jane 接下來同樣假設語氣的回答「我早就叫她一週後走了」（I'd have told her）；其他選項時態或語氣都不呼應 Jane 用假設語氣的回答。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是 What 開頭的問句，中文都能翻成「你做了什麼、你會怎麼做、你覺得她怎麼樣」，光看空格那一格分不出來。這一格必須拿下一句的動詞形態來對——這是本篇唯一一格有明確文法可依的題目。
+怎麼判斷
+空格是 Mary 說的，前一句她說 I felt bad about it, though.（不過我覺得很過意不去。）——心裡不安，所以想聽聽對方會怎麼做。關鍵在下一句 Jane 的回答：Oh, I'd have told her to leave after one week.（喔，換作是我，一個星期後就會叫她走了。）這裡的 I'd 是 I would 的縮寫，整串是 would have + 過去分詞，這是與過去事實相反的假設語氣：事情已經過去了，Jane 也沒有真的遇上，她說的是「如果當時換成我，我會怎麼做」。既然答句用的是 would have + 過去分詞，問句就必須是同一個形態才對得起來，所以填 What would you have done?（換作是你，你當時會怎麼做？）這正是假設語氣的基本原則：動詞倒推一個時態，所以與過去事實相反的假設，主要子句要用 would have + 過去分詞（同型：110 年第 25 題 →）。
+誘答選項
+What have you done?（你到底做了什麼？）：現在完成式，問的是實際發生過的事，而且這句話往往帶著責備的語氣；Jane 回的卻是一個假設，形態與語氣都對不上。What did you do to her?（你對她做了什麼？）：過去式，同樣問的是實際發生的事，而 Mary 剛剛已經把實際做的事說完了，沒有再問一次的道理。What do you think of her?（你覺得她這個人怎麼樣？）：問的是對房客的評價，Jane 答的卻是自己會怎麼處理，答非所問。三個誘答選項的共同破綻是：它們問的都是「事實」，只有正確答案問的是「假設」，而下一句給的答案是一個假設。
+常考字詞與句型
+would have + 過去分詞（當時就會……，與過去事實相反）、What would you have done?（換作是你會怎麼做）、tell sb to leave（叫某人離開）、That reminds me.（這倒提醒我了）、move in with sb（搬去和某人同住）、father-in-law（配偶的父親）。
+線索範圍說明：選項是完整句子，必須讀懂整段的對話走向或事件順序才選得出來
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Jane: Hi, Mary. It's been a while. How are you? Mary: OK, I guess. 31
+Jane: Couldn't be better. By the way, is your house guest still staying with you?
+Mary: No. After three weeks, she finally left. 32
+Jane: So, how did you get rid of her? Mary: 33 I told her my parents were coming for a visit and I needed the room. I felt bad about it, though. 34
+Jane: Oh, I'd have told her to leave after one week. That reminds me. My father-in-law is coming to visit us next week. Can I move in with you for a few days? Mary: 35
+Jane: Please!
+中譯：珍：嗨，瑪麗，好久不見，妳好嗎？瑪麗：還可以吧，我猜。妳呢？珍：好得不能再好了。對了，妳家那位借住的客人還住在妳那嗎？瑪麗：沒有了，住了三個星期後，她終於離開了。謝天謝地！珍：那妳是怎麼把她請走的？瑪麗：這個嘛，我騙了她。我跟她說我爸媽要來拜訪，我需要空出房間。不過我還是覺得挺過意不去的。換作是妳，會怎麼做？珍：喔，換作是我，一個星期後就叫她走了。這倒提醒我，我公公下星期要來我們家。我可以去妳那裡借住幾天嗎？瑪麗：不行。珍：拜託啦！
+📋 內容大意
+Mary explains how she got an unwanted guest to leave, only for Jane to ask if she can stay with Mary instead.（敘事文）
+← 第33題回到89 年學測第35題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

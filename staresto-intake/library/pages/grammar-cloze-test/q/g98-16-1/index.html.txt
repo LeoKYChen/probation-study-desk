@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g98-16-1/index.html
+Author: staresto-create ZZSH
+Title: 98 年學測克漏字第16題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 98 年學測 ／ 第16題
+98 年學測 克漏字 第16題
+字彙選義線索：句內答對率 50%
+答對率 50%：當年每 100 位考生，有 50 位答對。
+That is, after he 16 his pages in the hymn book with small bits of paper, the small pieces would invariably fall out all over the floor.
+(A)marked
+(B)tore
+(C)served
+(D)took
+答案：(A) marked
+題目編號：G98_16_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「用小紙片標記聖歌本的頁面」，marked（標記）符合這個「用紙片做記號」的行為；tore（撕）、served（服務）、took（拿）都不符合這個語境。
+深入解析
+你可能會這樣想
+mark 這個字，你腦中第一個浮現的多半是名詞「分數、記號」，或是 marker（麥克筆）。所以看到空格後面接的是 his pages in the hymn book with small bits of paper，你會很想挑一個動作感更強的字，這一格只有五成的人答對，關鍵在有沒有把 mark 當動詞用。mark 當及物動詞是「做記號、標示」，最常用的句型是 mark A with B（用 B 在 A 上做記號）。
+怎麼判斷
+還原成完整句子：after he marked his pages in the hymn book with small bits of paper（他用小紙片在聖歌本的頁面上做記號之後）。判斷關鍵是 with small bits of paper 這個介系詞片語，它交代的是「用什麼工具」，前面的動詞就必須是「拿工具去做某件事」的動作。同一篇後面出現的 a good bookmark（很好的書籤）是最直接的篇內對照：bookmark ＝ book + mark，書籤的功能正是在書上做記號。
+誘答選項
+tore 是 tear（撕）的過去式，「撕書頁」與後文不合——掉滿地的是 the small pieces（那些小紙片），不是被撕破的書頁。served 的受詞通常是人或食物（serve customers 服務顧客、serve dinner 上菜），接 pages 不通。took 只是「拿」，take his pages with small bits of paper 說不出「標記」的意思。
+常考字詞與句型
+mark A with B（用 B 在 A 上做記號）、a bookmark（書籤）、bits of paper（小紙片、紙屑）、fall out（掉出來、脫落）、all over the floor（掉得滿地都是）、tear a page out of a book（把一頁從書裡撕下來）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Art Fry was a researcher in the 3M Company. He was bothered by a small irritation every Sunday as he sang in the church choir. That is, after he 16 his pages in the hymn book with small bits of paper, the small pieces would invariably fall out all over the floor.
+One day, an idea 17 Art Fry. He remembered a kind of glue developed by a colleague that everyone thought 18 a failure because it did not stick very well. He then coated the glue on a paper sample and found that it was not only a good bookmark, but it was great for writing notes. It would stay in place 19 you wanted it to. Then you could remove it 20 damage.
+The resulting product was called the Post-it, one of 3M's most successful office products.
+中譯：亞特·福萊是 3M 公司的一名研究員。他每個星期天在教堂唱詩班唱歌時，都會被一件小事困擾：他用小紙片標記聖歌本的頁碼，但這些小紙片總是掉得滿地都是。有一天，福萊突然想到一個點子。他想起同事研發過一種黏性不夠好、大家都認為是失敗品的膠水。他把這種膠水塗在紙樣上，發現它不只是很好的書籤，拿來寫便條也很棒。它能一直黏在你想要的地方，之後也能輕鬆撕下而不留下痕跡。最終研發出的產品被稱為「Post-it」便利貼，是 3M 公司最成功的辦公用品之一。
+📋 內容大意
+Art Fry, a 3M researcher, grew tired of the paper scraps in his hymn book. They fell onto the church floor every Sunday.
+He recalled a weak glue invented by a colleague. Everyone had written it off as a failure, but he coated a paper sample.
+The result made a good bookmark and a place for notes. It stayed where you put it and peeled off cleanly. 3M sold it as the Post-it.
+回到98 年學測第17題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

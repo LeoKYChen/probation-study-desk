@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z91-19/index.html
+Author: staresto-create ZZSH
+Title: 91 年指考克漏字第19題詳解（連接詞／轉折詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 91 年指考 ／ 第19題
+91 年指考 克漏字 第19題
+連接詞／轉折詞線索：句內答對率 26%
+答對率 26%：當年每 100 位考生，有 26 位答對。
+Even 19 supplies are sufficient or plentiful, they are increasingly at risk due to various forms of pollution.
+(A)how
+(B)why
+(C)what
+(D)where
+答案：(D) where
+題目編號：Z91_19（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+Even where 意為「即使在…的情況下」，where 引導的是抽象的情境子句，不必指實體地點：即使供水充足的地方，也日益受到污染威脅；how、why、what 都無法引導這種讓步子句。
+深入解析
+你可能會這樣想
+where 你大概只用來指實體地點——公園、學校、城市，所以看到本句沒有具體地名就把它排除了。其實 where 可以引導抽象的「情境、狀況」：a situation where…（在…的情況下）、cases where…（在…的案例中）。本句 Even where supplies are sufficient ＝「即使在供水充足的地方（情況下）」。
+怎麼判斷
+關鍵在句首的 Even——它需要一個讓步的框架，後面接的是完整子句 supplies are sufficient or plentiful，而這個子句不缺主詞也不缺受詞，所以要用引導副詞子句的 where，不是缺一角才用的 what。再看前後文：前一句說淡水湖泊、河流和水庫其實只是杯水車薪；本句再退一步說即使充足的地方也有污染威脅——語氣是層層加重的，Even 正好承接。
+誘答選項
+how：「如何、以什麼方式」，Even how supplies are sufficient 讀成「即使供水如何充足」，構不成「即使在…的情況下」的讓步子句。why：「為什麼」，引導的是原因（the reason why …），Even why 說不通。what：要代替子句裡缺的主詞或受詞（What I wanted was …），但 supplies are sufficient or plentiful 主詞、動詞、補語都齊了，沒有缺口可以讓 what 填。
+常考字詞與句型
+Even where…（即使在…的情況下）、a situation／case where…（在…的情況／案例中）、This is where…（這就是…之處）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：91學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+More than 2.7 billion people will face severe shortages of fresh water by 2025. There is, 16, only a limited amount of water on the planet. Less than 3 percent of the world's water is fresh, and most of 17 is trapped in polar ice or buried underground in springs too deep to reach. Freshwater lakes, rivers and reservoirs may seem 18 but provide just a drop in the bucket.
+Even 19 supplies are sufficient or plentiful, they are increasingly at risk due to various forms of pollution.
+Fierce national competition 20 water resources has prompted fears that water issues contain the seeds of violent conflict. International cooperation is therefore by all means urgent.
+中譯：到 2025 年，將有超過 27 億人面臨嚴重的淡水短缺。然而，地球上的水量其實有限。世界上不到 3%的水是淡水，其中大部分被封存在極地冰層中，或深埋在難以取用的地下泉源裡。淡水湖泊、河流和水庫看似豐沛，實際上只是滄海一粟。即使供給充足或豐富的地方，也因各種污染而日益面臨風險。各國為爭奪水資源而激烈競爭，使人們擔心水資源問題恐將成為暴力衝突的導火線。因此，國際合作刻不容緩。
+📋 內容大意
+By 2025 more than 2.7 billion people will lack fresh water, and the planet's supply is limited.
+Nearly all of the tiny fresh share sits in polar ice or too deep underground to reach.
+Pollution and fierce national rivalry over water make international cooperation urgent.
+← 第18題回到91 年指考第20題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

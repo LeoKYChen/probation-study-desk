@@ -1,0 +1,168 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/zref107p4.html
+Author: staresto-create ZZSH
+Title: 107 指考參考試卷閱讀測驗：以基因改造蚊子對抗瘧疾｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 107 指考參考試卷
+107 指考參考試卷閱讀測驗：以基因改造蚊子對抗瘧疾參考試卷
+Genetically Modified Mosquitoes against Malaria
+指考 107年參考試卷第 48–51 題4 題
+本篇與 103 指考閱讀測驗第 48–51 題一字不差，屬官方整題回收。本卷沒有答對率，103 指考的答對率只適用於那一場。
+前往對照：103 指考閱讀測驗第 48–51 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段Scientists are trying to genetically modify the world in which we live. They are even trying to wipe out diseases via genetic modification. For example, researchers have tried to engineer mosquitoes to kill malaria parasites. The malaria parasite is carried by the female Anopheles mosquito. When transmitted to a human, the parasite travels first to the liver and then on to the bloodstream, where it reproduces and destroys red blood cells. An estimated 250 million people suffer from malaria each year, and about one million die—many of them children. There are currently no effective or approved malaria vaccines.
+第 2 段To “kill” malaria, scientists are genetically modifying a bacterium in mosquitoes so that it releases toxic compounds. These compounds are not harmful to humans or the mosquito itself, but they do kill off the malaria parasite, making the mosquito incapable of infecting humans with malaria.
+第 3 段Despite this achievement, scientists are faced with the challenge of giving the modified mosquitoes a competitive advantage so that they can eventually replace the wild population. Complete blockage of the malaria parasite is very important. If some of the parasites slip through the mechanism, then the next generation will likely become resistant to it. And if that happens, the scientists are back where they started.
+第 4 段Another challenge for scientists is to gain public approval for this genetic modification regarding mosquitoes and malaria control. Environmental activists have raised concerns about the release of genetically engineered organisms without any clear knowledge of their long-term effect on ecosystems and human health. There is still a long way to go before genetic modification techniques are put to use in disease control.
+題目
+48.What is the main idea of this passage?
+(A)Researchers have found an effective way to halt the spread of insect-borne diseases around the world.
+(B)Many people are worried about the effects of genetically modified organisms on the environment.
+(C)It takes time to gain public support for the application of genetic modification to disease control.
+(D)Genetic engineering looks promising in reducing malaria, though there may be unknown consequences.
+49.Which of the following best shows the organization of this passage?
+(A)Introduction → Comparison → Contrast
+(B)Problem → Solution → Potential difficulties
+(C)Proposal → Arguments → Counter-arguments
+(D)Definition → Examples → Tentative conclusions
+50.According to the passage, which of the following is true about malaria parasites?
+(A)They are resistant to genetic modification and vaccines.
+(B)They reproduce in the human liver and grow stronger there.
+(C)They can be found in only one gender of a class of mosquitoes.
+(D)They are transmitted to around one million children each year.
+51.What does “that” in the third paragraph refer to?
+(A)Some malaria parasites escaping from the ecosystems.
+(B)Malaria parasites becoming immune to the engineered bacterium.
+(C)Modified mosquitoes becoming more competitive than the wild ones.
+(D)Transmission of malaria being blocked from mosquitoes to humans.
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+48
+(D)
+—
+—
+49
+(B)
+—
+—
+50
+(C)
+—
+—
+51
+(B)
+—
+—
+答對率：本卷非正式施測，無答對率
+每一題的依據句
+第 48 題 主旨題 Main idea
+依據句：全文要讀完整篇才能判斷，不在某一句裡。
+先看全文怎麼安排：第 1 段說瘧疾每年造成大約一百萬人死亡，還沒有有效的疫苗；第 2 段說科學家改造蚊子體內的細菌，讓蚊子無法傳播瘧疾；第 3、4 段說還有兩個挑戰，包括基因改造生物的長期影響還不清楚。主旨要同時說出這個方法有希望，也還有隱憂，所以是 (D)。最容易選錯的是 (A)，這個選項照抄第 1 段的 effective：原文只談瘧疾，不是全世界所有由蚊蟲傳播的疾病，而且第 3、4 段說還有很多挑戰，說已經找到有效的方法，說法太過武斷，太過廣泛。(B) 照抄 environment、(C) 照抄 public，環保人士的疑慮和爭取大眾認同，都只是第 4 段的內容，過於狹隘。
+錯誤選項：(A) 太過廣泛；(B) 過於狹隘（只講第 4 段）；(C) 過於狹隘（只講第 4 段）
+第 49 題 文章段落組織 Structure
+依據句：全文要讀完整篇才能判斷，不在某一句裡。
+第 1 段說瘧疾每年造成大約一百萬人死亡，又沒有有效的疫苗，這是問題（Problem）；第 2 段說科學家改造蚊子體內的細菌，殺死瘧疾寄生蟲，這是解決方法（Solution）；第 3 段用 Despite this achievement 帶出第一個挑戰，第 4 段用 Another challenge 帶出第二個挑戰，這是可能遇到的困難（Potential difficulties）。所以是 (B)。(A) 全文沒有比較和對照；(C) 原文沒有正反兩方的辯論，第 4 段環保人士的疑慮是挑戰之一；(D) 第 1 段不是在下定義，最後也沒有暫時的結論。
+第 50 題 細節題（何者為是） Supporting details
+第 1 段The malaria parasite is carried by the female Anopheles mosquito.
+原文 → 正確選項
+female → one gender
+第 1 段說瘧疾寄生蟲由雌性（female）瘧蚊（Anopheles mosquito）攜帶。female 是一種性別（one gender），Anopheles 是蚊子裡的一類（a class of mosquitoes），所以只有一種性別的某一類蚊子身上有瘧疾寄生蟲，是 (C)。(B) 照抄 liver，寄生蟲先到肝臟，接著進入血液，在血液裡繁殖；(D) 照抄 one million，每年大約一百萬人死於瘧疾，其中很多是兒童，不是每年傳給一百萬名兒童；(A) 照抄第 3 段的 resistant，原文說下一代寄生蟲可能會對改造的機制產生抗性，這是還沒發生的情況，沒有疫苗也不表示寄生蟲對疫苗有抗性。
+第 51 題 詞義題（指代詞） Vocabulary in context
+第 3 段If some of the parasites slip through the mechanism, then the next generation will likely become resistant to it.
+原文 → 正確選項
+resistant → immune
+that 指前一句說的情況：要是有寄生蟲從這個機制漏網，下一代寄生蟲很可能對它產生抗性（become resistant to it）。句中的 it 指 the mechanism，也就是第 2 段說的方法，改造蚊子體內的細菌來殺死寄生蟲。選項把 resistant 換成 immune，把這個機制換成 the engineered bacterium，所以是 (B)。(C) 照抄 competitive，讓改造蚊子更有競爭力是科學家要達成的目標，如果做到了，不會「從頭來過」；(A) 照抄第 4 段的 ecosystems，生態系是環保人士擔心的事情，而且原文說的是寄生蟲從機制中漏網，不是從生態系逃走；(D) 阻斷瘧疾從蚊子傳給人，是第 2 段的成果，也不會讓科學家從頭來過。
+代名詞怎麼找出指的是誰 →
+逐段中譯
+第 1 段科學家正嘗試用基因改造來改變我們生活的世界，甚至想透過基因改造消滅疾病。例如，研究人員曾嘗試改造蚊子，讓蚊子殺死瘧疾寄生蟲。瘧疾寄生蟲由雌性瘧蚊攜帶。寄生蟲傳到人身上以後，先到肝臟，再進入血液，在血液裡繁殖，破壞紅血球。每年估計有 2.5 億人感染瘧疾，大約一百萬人死亡，其中有很多是兒童。目前還沒有有效、或經過核准的瘧疾疫苗。
+第 2 段為了「殺死」瘧疾，科學家正在改造蚊子體內的一種細菌，讓這種細菌釋放有毒的化合物。這些化合物對人和蚊子本身都無害，卻能殺死瘧疾寄生蟲，讓蚊子無法把瘧疾傳給人。
+第 3 段儘管有這項成果，科學家還要面對一個挑戰：讓改造過的蚊子具有競爭優勢，最後能取代野生的蚊子。完全阻斷瘧疾寄生蟲非常重要。要是有一些寄生蟲從這個機制中漏網，下一代很可能就會產生抗性。一旦發生這種情況，科學家就得從頭來過。
+第 4 段科學家的另一個挑戰，是讓大眾認同這項針對蚊子和瘧疾防治的基因改造。環保人士提出疑慮，擔心在還不清楚基因改造生物對生態系和人體健康有什麼長期影響的情況下，就把它們野放出去。基因改造技術要用在疾病防治上，還有很長的路要走。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。沒有列出的段落，就是沒有主旨句，請對照「這一篇的文章結構」裡的綱要，找出那一段的重點。這一篇沒有一句話直接點出全文中心思想，怎麼從各段歸納，請看第 48 題（主旨題）的解析。
+第 2 段To “kill” malaria, scientists are genetically modifying a bacterium in mosquitoes so that it releases toxic compounds.
+第 3 段Despite this achievement, scientists are faced with the challenge of giving the modified mosquitoes a competitive advantage so that they can eventually replace the wild population.
+第 4 段Another challenge for scientists is to gain public approval for this genetic modification regarding mosquitoes and malaria control.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體說明文 Expository
+組織方式問題解決 Problem-Solution這一類怎麼辨識 →
+關鍵轉折詞For exampleDespiteIfAnd ifAnother
+綱要
+科學家嘗試用基因改造改變世界，甚至消滅疾病，(For example) 例如改造蚊子來殺死瘧疾寄生蟲；寄生蟲由雌性瘧蚊攜帶，傳給人以後先到肝臟，再進入血液繁殖、破壞紅血球。
+每年約有 2.5 億人感染瘧疾，約一百萬人死亡，其中很多是兒童，目前還沒有有效或核准的瘧疾疫苗。
+為了「殺死」瘧疾，科學家改造蚊子體內的一種細菌，讓它釋放有毒化合物；這種化合物對人和蚊子無害，卻能殺死瘧疾寄生蟲，蚊子也就無法把瘧疾傳給人。
+(Despite) 儘管有這項成果，科學家還要讓改造蚊子有競爭優勢，最終取代野生蚊子；(If) 要是有寄生蟲漏網，下一代很可能產生抗性，(And if) 一旦如此，就得從頭來過。
+(Another) 另一個挑戰是爭取大眾認同：環保人士擔心，還不清楚基因改造生物對生態和人體健康的長期影響就野放，基因改造技術要用在疾病防治，還有很長的路要走。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 18 個、參考字彙 20 個、字詞搭配 16 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+modify[ˈmɑdəˌfaɪ]v.改造、修改五級第 1 段詞彙題考過 1 次：98 指考第 9 題 modified（答案）
+researcher[ˈrisɚʧɚ]n.研究人員四級第 1 段詞彙題考過 1 次：109 學測第 3 題（誘答）
+destroy[dɪˈstrɔɪ]v.破壞三級第 1 段詞彙題考過 3 次：100 學測第 7 題（誘答）、83 推薦甄選第 3 題 destroys（誘答）、83 聯考第 9 題（誘答）
+estimated （詞彙表：estimate）[ˈɛstəˌmeɪtɪd]adj.估計的（an estimated 250 million 估計有 2.5 億）四級第 1 段詞彙題考過 6 次：105 學測第 12 題 estimated（誘答）、104 學測第 11 題（誘答）、99 指考第 9 題 estimated（誘答）、98 指考第 9 題 estimated（誘答）、91 學測第 10 題 estimated（誘答）、91 指考第 7 題 estimated（誘答）
+release[rɪˈlis]v.釋放三級第 2 段詞彙題考過 2 次：98 指考第 3 題 released（誘答）、93 指考第 3 題（答案）
+incapable （詞彙表：capable）[ˌɪnˈkeɪpəbəl]adj.無法……的（incapable of）三級第 2 段詞彙題考過 2 次：97 學測第 10 題（誘答）、86 聯考第 9 題（誘答）
+infect[ɪnˈfɛkt]v.傳染、感染五級第 2 段詞彙題考過 1 次：102 學測第 10 題 infecting（誘答）
+competitive[kəmˈpɛtətɪv]adj.有競爭力的（competitive advantage 競爭優勢）四級第 3 段詞彙題考過 3 次：100 學測第 12 題（誘答）、99 學測第 9 題（誘答）、92 學測第 9 題（答案）
+advantage[ædˈvæntɪʤ]n.優勢三級第 3 段詞彙題考過 2 次：113 學測第 7 題（誘答）、91 指考第 2 題（誘答）
+eventually （詞彙表：eventual）[ɪˈvɛnʧuəli]adv.最後、終於四級第 3 段詞彙題考過 4 次：111 學測第 8 題（答案）、110 指考第 6 題（誘答）、90 聯考第 15 題（誘答）、85 推薦甄選第 6 題 eventually（誘答）
+replace[rɪˈpleɪs]v.取代三級第 3 段詞彙題考過 4 次：109 學測第 11 題 replaced（誘答）、102 學測第 2 題 replaced（答案）、98 指考參考試卷第 7 題 replaced（誘答）、94 學測第 11 題（答案）
+approval[əˈpruvəl]n.認同、贊成四級第 4 段詞彙題考過 2 次：110 指考第 8 題（誘答）、93 指考第 1 題（誘答）
+technique[tɛkˈnik]n.技術三級第 4 段詞彙題考過 2 次：107 學測第 2 題 techniques（誘答）、99 學測第 8 題 techniques（誘答）
+halt[hɔlt]v.阻止、使停下四級第 48 題詞彙題考過 1 次：114 學測第 8 題 halted（答案）
+application[ˌæpləˈkeɪʃən]n.應用四級第 48 題詞彙題考過 1 次：103 指考第 7 題（誘答）
+promising[ˈprɑməsɪŋ]adj.很有希望的四級第 48 題詞彙題考過 3 次：111 學測第 8 題（誘答）、100 學測第 15 題（誘答）、98 指考第 2 題（誘答）
+consequence[ˈkɑnsəkwəns]n.後果四級第 48 題詞彙題考過 1 次：98 學測第 15 題（答案）
+conclusion[kənˈkluʒən]n.結論三級第 49 題詞彙題考過 2 次：109 學測第 1 題（答案）、101 學測第 1 題（誘答）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+genetically （詞彙表：genetic）[ʤəˈnɛtɪkli]adv.基因上（genetically modify 基因改造）五級第 1 段
+via[ˈvaɪə]prep.透過、經由五級第 1 段
+modification[ˌmɑdəfəˈkeɪʃən]n.改造、修改（genetic modification 基因改造）表外第 1 段
+malaria[məˈlɛriə]n.瘧疾表外第 1 段
+parasite[ˈpærəˌsaɪt]n.寄生蟲表外第 1 段
+transmit[trænzˈmɪt]v.傳染、傳播六級第 1 段
+bloodstream[ˈblʌdˌstrim]n.血液、血流表外第 1 段
+reproduce[ˌriprəˈdus]v.繁殖六級第 1 段
+vaccine[vækˈsin]n.疫苗六級第 1 段
+bacterium[bækˈtɪriəm]n.細菌（bacteria 的單數）表外第 2 段
+toxic[ˈtɑksɪk]adj.有毒的五級第 2 段
+compound[ˈkɑmpaʊnd]n.化合物五級第 2 段
+blockage[ˈblɑkɪʤ]n.阻斷表外第 3 段
+mechanism[ˈmɛkəˌnɪzəm]n.機制五級第 3 段
+resistant[rɪˈzɪstənt]adj.有抵抗力的、抗……的六級第 3 段
+activist[ˈæktəvɪst]n.運動人士、行動者五級第 4 段
+organism[ˈɔrgəˌnɪzəm]n.生物、有機體五級第 4 段
+ecosystem[ˈikoʊˌsɪstəm]n.生態系五級第 4 段
+immune[ɪˈmjun]adj.免疫的五級第 51 題
+transmission[trænˈsmɪʃən]n.傳播、傳染五級第 51 題
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+wipe out + N消滅……第 1 段原文：to wipe out diseases
+suffer from + 疾病罹患……第 1 段原文：suffer from malaria
+be harmful to + N對……有害第 2 段原文：are not harmful to humans
+kill off + N徹底消滅……第 2 段原文：kill off the malaria parasite
+be incapable of + V-ing沒有能力……第 2 段原文：incapable of infecting humans with malaria
+infect + sb + with + 疾病讓某人感染……第 2 段原文：infecting humans with malaria
+be faced with + N面臨……第 3 段原文：are faced with the challenge
+a competitive advantage競爭優勢第 3 段原文：giving the modified mosquitoes a competitive advantage
+slip through + N從……漏網第 3 段原文：slip through the mechanism
+become resistant to + N對……產生抗性第 3 段原文：become resistant to it
+be back where + sb + started回到原點第 3 段原文：the scientists are back where they started
+gain approval for + N讓……得到認同第 4 段原文：gain public approval for this genetic modification
+raise concerns about + N對……提出疑慮第 4 段原文：have raised concerns about the release
+an effect on + N對……的影響第 4 段原文：their long-term effect on ecosystems
+There is a long way to go before + 子句要……還有很長的路要走第 4 段原文：There is still a long way to go before genetic modification techniques are put to use
+put + sth + to use運用……第 4 段原文：are put to use in disease control
+← 上一篇篇目一覽
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

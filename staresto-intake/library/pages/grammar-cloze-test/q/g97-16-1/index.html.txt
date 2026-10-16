@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g97-16-1/index.html
+Author: staresto-create ZZSH
+Title: 97 年學測克漏字第16題詳解（時態／語態）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 97 年學測 ／ 第16題
+97 年學測 克漏字 第16題
+時態／語態線索：句內答對率 54%
+答對率 54%：當年每 100 位考生，有 54 位答對。
+The Chinese and Indians 16 it for at least 4,000 years to treat everything from headache to depression.
+(A)would use
+(B)are using
+(C)had used
+(D)have been using
+答案：(D) have been using
+題目編號：G97_16_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+現在完成進行式 have been using，配合 for at least 4,000 years（持續時間標記），表示從過去持續到現在的動作；would use（過去未來式，不合）、are using（現在進行式，不符合持續時間標記 for...years 的用法）、had used（過去完成式，沒有更早的過去參照點）都不合。
+深入解析
+你可能會這樣想
+have been using 這個組合又長又複雜，最容易選錯的是 had used，因為「四千年」聽起來就是很久很久以前的事，腦中自動把它歸到「過去」那一格。但這一題真正要判斷的不是「有多久以前」，而是「這件事到今天還在不在進行」。
+怎麼判斷
+關鍵在 for at least 4,000 years。for + 一段時間，畫的是一條從過去延伸到現在的線，不是過去的一個點。這種時間線要用現在完成式或現在完成進行式；本句強調的是「一直在用、到今天還在用」，所以用現在完成進行式 have been using。還原成兩句驗算：They started using it at least 4,000 years ago. + They are still using it today.（他們至少四千年前就開始用，今天還在用。）把兩句壓成一句，就是 have been using。這條時間線最短的版本你一定看過：I have lived here for five years.（我住這裡五年了，現在還住著。）同一個判斷方式在 109 年第 16 題 →也考過一次，那一題的線索是句首的 Over the centuries（幾個世紀以來），一樣是「延伸到今天」的時間線，兩題可以對著看。
+誘答選項
+had used 是過去完成式，它要求句子裡另外有一個「過去的參照點」，意思是「在過去某件事發生之前就已經用過了」；本文從頭到尾沒有這個更早的時間點，這個時態無處可掛。are using 是現在進行式，只講此刻正在進行的動作，配不上 for 4,000 years 這條長線。would use 是站在過去看未來的過去未來式（114 年第 11 題 →考的就是這個），意思會變成「他們後來就會用它」，與事實不符——他們早就在用了。
+常考字詞與句型
+have been V-ing（現在完成進行式，表一直持續在做）、for at least（長達至少……）、treat a headache（治療頭痛）、everything from A to B（從 A 到 B 什麼都有）、be still in use（仍在使用中）、suffer from depression（為憂鬱症所苦）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+What is so special about green tea? The Chinese and Indians 16 it for at least 4,000 years to treat everything from headache to depression. Researchers at recently concluded that a compound in green tea 17 the growth of cancer cells. Green tea is also helpful 18 infection and damaged immune function. The secret power of green tea is its richness in a powerful anti-oxidant.
+Green tea and black tea come from the same plant. Their 19 is in the processing. Green tea is dried but not fermented, and this shorter processing gives it a lighter flavor than black tea. It also helps retain the tea's beneficial chemicals. That is 20 green tea is so good for health.
+The only reported negative effect of drinking green tea is a possible allergic reaction and insomnia due to the caffeine it contains.
+中譯：綠茶到底有什麼特別之處？中國人和印度人使用綠茶至少已有四千年歷史，用來治療從頭痛到憂鬱症等各種病症。最近的研究人員發現，綠茶中的一種化合物能減緩癌細胞的生長。綠茶也有助於對抗感染和受損的免疫功能。綠茶的神奇力量來自於它富含強效抗氧化物。綠茶和紅茶其實來自同一種植物，兩者的差別在於加工方式。綠茶只經過乾燥而未經發酵，這樣較短的加工過程使它的味道比紅茶更清淡，也有助於保留茶葉中對健康有益的化學成分。這就是為什麼綠茶對健康這麼好。飲用綠茶唯一被報導的負面影響，是可能引發過敏反應，以及因所含咖啡因而導致失眠。
+📋 內容大意
+Green tea has been long used in traditional medicine and is proven by modern research to offer various health and medicinal benefits.
+Green tea retains its health-promoting chemicals and distinct flavor due to its minimal, non-fermented processing method.
+Despite its numerous benefits, green tea may cause mild side effects like caffeine-induced insomnia or allergic reactions in some individuals.
+回到97 年學測第17題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

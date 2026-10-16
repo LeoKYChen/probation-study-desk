@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/gref-27-3/index.html
+Author: staresto-create ZZSH
+Title: 學測參考試卷克漏字第27題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 學測參考試卷 ／ 第27題
+學測參考試卷 克漏字 第27題
+字彙選義線索：句內
+Tea and coffee contain caffeine, a substance that can make you active. 26 you do not feel fully engaged after you wake up in the morning, drinking coffee at breakfast can mean the 27 between a productive day and never arriving at work.
+(A)gap
+(B)line
+(C)connection
+(D)difference
+答案：(D) difference
+題目編號：GRef_27_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】the difference between A and B 指「A 跟 B 之間的差別」，表示喝咖啡可能是「有活力過完一天」跟「根本到不了辦公室」之間的關鍵差異；gap、line、connection 都不是這個字詞搭配的正確用字。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都能接在 between 前面湊出一個名詞，而 gap between（兩者之間的差距）看起來也說得通。這一格要看那兩樣東西是「有落差」還是「根本相反」。
+怎麼判斷
+四個選項都是名詞，可見這一格考的是搭配與語意。先看 between 後面接的是什麼：a productive day and never arriving at work（有生產力的一天，以及根本沒去成公司）——這是兩個完全相反的結果，不是同一件事上的程度落差。要說「是 A 與 B 之間的關鍵差別」，固定說法是 mean the difference between A and B，填 difference。整句是「早餐喝杯咖啡，可能就是有生產力的一天與根本到不了公司之間的差別」。這個說法帶著「關鍵就在這裡」的味道，與 87 年第 39 題 →收過的 make a difference to（對……造成影響）屬於同一組說法——difference 在這兩個說法裡都不是「差異」的字面義，而是「關鍵、影響」。
+誘答選項
+gap（差距）：the gap between 講的是同一個尺度上的距離（the gap between rich and poor 貧富差距），但「有生產力」與「沒去成公司」不是同一把尺上的兩點。line（界線）：the line between A and B 是「A 與 B 的分界」（the line between right and wrong 是非的界線），語意偏向劃分而不是「造成關鍵影響」。connection（關聯）：方向相反，這兩個結果之間不是有關聯，是互相排斥。
+常考字詞與句型
+mean the difference between A and B（是 A 與 B 的關鍵差別）、make a difference（造成改變）、the gap between（……之間的差距）、the line between（……的界線）、a diet pill（減肥藥）。其中 make a difference 這一組考過 3 個年度，93 年第 27 題 →、97 年第 19 題 →都出現過。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Tea and coffee contain caffeine, a substance that can make you active. 26 you do not feel fully engaged after you wake up in the morning, drinking coffee at breakfast can mean the 27 between a productive day and never arriving at work.
+Caffeine is also the main ingredient in many "diet pills." It boosts metabolism, thereby 28 the body to burn more calories. If you take a 29 to a different time zone, caffeine can help you overcome jet lag. Most hotels have coffee and tea service in the room for this very reason.
+Every individual handles caffeine differently. For some people, a single cup of coffee in the morning will make them feel nervous and 30 them up all night. Other people can down five cups and be perfectly calm.
+中譯：茶和咖啡都含有咖啡因，這種物質能讓人變得有活力。如果你早上起床後感覺還沒完全清醒，早餐時喝杯咖啡，可能就是「精神飽滿過完一天」跟「根本到不了辦公室」之間的關鍵差異。咖啡因也是許多「減肥藥」的主要成分，它能促進新陳代謝，進而讓身體燃燒更多卡路里。如果你要搭機前往不同時區，咖啡因也能幫助你克服時差。這正是為什麼大多數飯店房間裡都會提供咖啡與茶飲服務的原因。每個人對咖啡因的反應都不一樣：對某些人來說，早上喝一杯咖啡就會讓他們感到緊張、整晚睡不著；但也有些人可以連喝五杯，卻依然十分平靜。
+📋 內容大意
+Tea and coffee both contain caffeine, a substance that makes people alert.
+A morning cup can decide whether a day is productive. Caffeine is also the main ingredient of many diet pills, since it raises metabolism and helps the body burn more calories.
+Travelers use it against jet lag, which is why hotels provide coffee and tea. One cup leaves some people awake all night; others drink five and stay calm.
+← 第26題回到學測參考試卷第28題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

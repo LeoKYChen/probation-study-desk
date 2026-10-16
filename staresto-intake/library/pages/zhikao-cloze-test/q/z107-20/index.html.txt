@@ -1,0 +1,50 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z107-20/index.html
+Author: staresto-create ZZSH
+Title: 107 年指考克漏字第20題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 107 年指考 ／ 第20題
+107 年指考 克漏字 第20題
+字彙選義線索：跨句答對率 28%
+答對率 28%：當年每 100 位考生，有 28 位答對。
+However, this generally 20 when only a single or a few nails are affected.
+(A)indicates
+(B)defines
+(C)applies
+(D)confirms
+答案：(C) applies
+題目編號：Z107_20（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+apply 在此是「適用」：不過這種說法通常只適用於單一或少數指甲受影響的情況；indicates（顯示）、defines（定義）、confirms（證實）語意都不合。
+深入解析
+你可能會這樣想
+apply 你大概只熟 apply for a job（申請工作），很少看到它單獨用來表示「適用、成立」。四個選項的中文擺在一起都像那麼回事，你會想憑語意挑一個順的，但這一題句法就先淘汰了三個。
+怎麼判斷
+先看空格後面有沒有受詞。this generally ___ when only a single or a few nails are affected——空格後面直接接 when 引導的副詞子句，沒有任何名詞當受詞。indicate、define、confirm 三個在這裡都是及物用法，一定要有受詞（indicate a problem、define a term、confirm a booking），少了受詞句子就不完整。apply 則可以不及物，單獨表示「適用、成立」：This rule applies to everyone.（這條規則適用於所有人。）／The same applies here.（這裡也一樣。）這一步已經可以初步鎖定答案，再用文意確認方向。本句以 However 起頭，作用是限縮前面那個結論的適用範圍——前面說白點會隨著指甲長出去、不必治療，這一句補上「不過通常只在少數指甲受影響時才成立」，下一句接著講十指全是白點的情況，正好是被排除在外的那一種。驗算法：把 apply 換成 be true 唸一遍——this is generally true when only a few nails are affected，意思不變，代換成立。
+誘答選項
+三個在這裡都是及物用法，錯在缺受詞，語意也各自不合。indicate 是「顯示、指出」，要說「顯示什麼」，而且顯示的是徵兆與結論的關係，不是適用範圍。define 是「定義」，後面接被定義的字詞，本句沒有東西要下定義。confirm 是「證實」，後面接被證實的說法或安排；而且 However 這個轉折要的是限縮，不是證實，方向也相反。
+常考字詞與句型
+apply to（適用於）、The same applies.（同理適用）、apply for a job（求職）、apply pressure（施加壓力）、indicate（顯示）、confirm（證實）、application（申請；應用）。
+線索範圍說明：this 指前一句「白點會長出去、不再出現」的結論；下一句 If all of your nails… 的對比才界定適用範圍
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：107學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Many people at some point in life have white spots on their fingernails. One of the most common causes for these little white spots is a condition called leukonychia. Although the name sounds pretty serious, the condition typically 16 . And while many people think the white spots are caused by a calcium or zinc deficiency, that's generally not the case.
+In reality, these spots most often develop 17 mild to moderate trauma to your nail. If you can't think of anything that would have injured your nail, consider the fact that nails grow very slowly, so the injury 18 weeks before the spots ever appeared. The spots could also be a sign of a mild infection or allergy, or a side effect of certain medications.
+19 the source of the injury, these spots typically do not require any treatment and should go away as your nail grows out. And they should not return unless you suffer another injury to a nail. However, this generally 20 when only a single or a few nails are affected. If all of your nails are showing white spots, the leukonychia could be related to another more serious condition such as anemia, cardiac disease, diabetes, or kidney disease.
+中譯：許多人一生中都曾在指甲上出現白色斑點，其中最常見的原因之一是一種稱為「白甲症」（leukonychia）的病症。雖然這個名稱聽起來相當嚴重，但這種狀況通常並不嚴重。此外，許多人認為白斑是缺鈣或缺鋅所致，但事實通常不是這樣。
+實際上，這些斑點多半是指甲受到輕度到中度的創傷所造成。如果你想不起指甲曾受過什麼傷，別忘了指甲生長速度非常緩慢，因此受傷後可能要經過數週，斑點才會顯現出來。這些斑點也可能是輕微感染、過敏，或某些藥物副作用的徵兆。
+不論受傷的原因是什麼，這些斑點通常不需要治療，會隨著指甲生長而自然消失，除非指甲再次受傷，否則不會復發。不過，這個現象通常只適用於一片或少數幾片指甲受影響的情況。如果所有指甲都出現白斑，白甲症則可能與貧血、心臟病、糖尿病或腎臟病等更嚴重的病症有關。
+📋 內容大意
+Though the name sounds alarming, white spots on fingernails usually mean leukonychia, a harmless condition.
+They rarely come from poor diet; most follow a minor knock weeks earlier, or an infection, allergy or drug.
+No treatment is needed as the nail grows out, but spots on every nail may signal serious illness.
+← 第19題回到107 年指考
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

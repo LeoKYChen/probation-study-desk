@@ -1,0 +1,44 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g109-29-3/index.html
+Author: staresto-create ZZSH
+Title: 109 年學測克漏字第29題詳解（介系詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 109 年學測 ／ 第29題
+109 年學測 克漏字 第29題
+介系詞線索：句內答對率 56%
+答對率 56%：當年每 100 位考生，有 56 位答對。
+According to psychologist Dean Burnett, people feel down in January 29 post-holiday discontent, and the Blue Monday claim makes it seem like there are scientific reasons for this.
+(A)as for
+(B)owing to
+(C)in spite of
+(D)with respect to
+答案：(B) owing to
+題目編號：G109_29_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】owing to 指「由於」，表示「人們一月心情低落是由於假期後的不滿情緒」；as for（至於）、in spite of（儘管）、with respect to（關於）都不合。
+深入解析
+你可能會這樣想
+四個選項都是幾個字合起來當一個介系詞用（劍橋 English Grammar Today 的 Prepositions 條目），後面都能接 post-holiday discontent，所以句型上一個都刪不掉，只能純比邏輯關係。要問的是：假期後的失落感，和一月心情低落之間，是什麼關係？
+怎麼判斷
+句子是 people feel down in January ___ post-holiday discontent（人們在一月心情低落，___ 假期後的失落感）。放完長假回到日常，心情也往下掉——失落感是心情低落的原因，所以要用表原因的 owing to（由於）。後半句 the Blue Monday claim makes it seem like there are scientific reasons for this（憂鬱星期一的說法讓這件事看起來像有科學原因）裡的 reasons（原因）也回頭印證：這一段談的就是成因。
+誘答選項
+in spite of（儘管）是讓步，方向相反——變成「雖然有失落感，人們卻心情低落」，前後矛盾。這個字和 112 年第 15 題 →的 Despite 是同一組，都要接名詞，也都常拿來當這種因果題的誘答選項。as for（至於）和 with respect to（關於）都是「帶出話題」用的，只是換個題目來談，說不出兩件事的因果關係，而本句需要的正是因果。
+常考字詞與句型
+owing to（由於……）、due to（由於……，與 owing to 同義）、because of + 名詞（因為……）、in spite of（儘管……）、as for（至於）、with respect to（關於）、feel down（心情低落）。其中 in spite of 這一組考過 9 個年度，86 年第 21 題 →、89 年第 30 題 →、93 年第 23 題 →、99 年第 24 題 →、99 年第 28 題 →、105 年第 29 題 →、106 年第 19 題 →、107 年第 30 題 →、112 年第 15 題 →都出現過；due to 考過 4 個年度，89 年第 30 題 →、106 年第 28 題 →、108 年第 25 題 →都出現過；owing to 考過 3 個年度，89 年第 30 題 →、108 年第 25 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The idea of Blue Monday dates back to a 2005 campaign by Sky Travel. The travel company wanted to 26 people to take January vacations, so they reached out to a psychologist. The scholar then developed an equation to find the most depressing day of the year, and it turned out to be the third Monday in January. Since then, other companies have jumped on the bandwagon to promote everything from soft drinks to new clothes as a 27 . A group in the UK even started a website devoted to "beating Blue Monday."
+Many scientists, however, say there is no evidence that Blue Monday causes any more sadness than other specific days of the year. 28 , the idea of Blue Monday persists. According to psychologist Dean Burnett, people feel down in January 29 post-holiday discontent, and the Blue Monday claim makes it seem like there are scientific reasons for this. Also, the idea 30 a very complex issue regarding depression into something simple and easily understandable, and that tends to appeal to a lot of people.
+中譯：「憂鬱星期一」的概念可追溯至 2005 年 Sky Travel 旅遊公司的一場宣傳活動。這家旅遊公司想鼓勵人們在一月安排旅行，於是找上了一位心理學家合作。這位學者設計出一套公式，用來找出一年之中最令人沮喪的一天，結果得出的答案是一月的第三個星期一。從那時起，其他公司也紛紛搭上這波風潮，將各種商品——從汽水到新衣服——都當作對抗憂鬱星期一的解方來宣傳。英國甚至有一個團體專門成立了一個網站，致力於「戰勝憂鬱星期一」。然而，許多科學家表示，並沒有證據顯示憂鬱星期一比一年中其他特定日子更令人感到悲傷。儘管如此，憂鬱星期一的說法依然持續流傳。根據心理學家迪恩·伯內特的說法，人們在一月感到低落，其實是因為節慶過後的失落感，而憂鬱星期一的說法讓這種感覺看起來像是有科學根據一樣。此外，這個概念把憂鬱症這個相當複雜的議題，簡化成一個容易理解的簡單說法，這也往往是它吸引許多人的原因。
+📋 內容大意
+Despite lacking scientific proof, the concept of Blue Monday persists because it offers a simplified explanation for post-holiday sadness and marketing appeals.
+← 第28題回到109 年學測第30題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

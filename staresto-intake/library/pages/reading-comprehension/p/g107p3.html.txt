@@ -1,0 +1,152 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/g107p3.html
+Author: staresto-create ZZSH
+Title: 107 學測閱讀測驗：海水淡化｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 107 學測
+107 學測閱讀測驗：海水淡化
+Desalination
+學測 107年第 49–52 題4 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段Most parts of Taiwan have access to sufficient supplies of fresh water for drinking. But fresh water can be in short supply in many arid regions of the world such as Saudi Arabia, where there are limited water resources. As the world population continues to grow, shortages of fresh water will occur more often and the need for additional water supplies will become critical. Some may ask, “Since the ocean covers more than 70 percent of the Earth, why not just get drinking water from the ocean?”
+第 2 段To turn seawater into fresh water, we need to remove the salt in seawater, that is, to desalinate seawater. The problem is that the desalination of water requires a lot of energy. Salt dissolves very easily in water, forming strong chemical bonds, and those bonds are difficult to break. The energy and technology to desalinate water are both expensive, and this means that desalinating water can be costly.
+第 3 段There are environmental costs of desalination as well. Sea life can get sucked into desalination plants, killing small ocean creatures like baby fish and plankton, upsetting the food chain. Also, there is the problem of what to do with the separated salt, which is left over as a very concentrated brine. Pumping this super-salty water back into the ocean can harm local aquatic life. Reducing these impacts is possible, but it adds to the costs.
+第 4 段Despite the economic and environmental hurdles, desalination is becoming increasingly attractive as human beings are using up fresh water from other sources. At present, desalinating seawater is the only viable way to provide water to growing populations in rural areas of the Middle East and North Africa. Therefore, the race is on to find a cheaper, cleaner, and more energy-efficient way of desalinating seawater, and promising new findings are being reported.
+題目
+49.Which of the following is closest in meaning to “arid” in the first paragraph?
+(A)Occupied.
+(B)Isolated.
+(C)Dry.
+(D)Remote.
+50.What is the second paragraph mainly about?
+(A)The high cost of desalinating seawater.
+(B)The major chemical characteristics of seawater.
+(C)The urgent need to turn seawater into fresh water.
+(D)The amount of energy produced in the desalination of seawater.
+51.According to the passage, which of the following statements is true?
+(A)Mixing salt with water is not as easy as removing salt from seawater.
+(B)Desalinating seawater may kill some sea creatures and disturb the food chain.
+(C)Covering 70% of the Earth, the ocean has always satisfied human needs for water.
+(D)The increasing population in Saudi Arabia has resulted in shortages of fresh water.
+52.Which of the following best describes the author’s attitude toward the future of desalination?
+(A)Amazed.
+(B)Doubtful.
+(C)Conservative.
+(D)Hopeful.
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+49
+(C)
+75%
+55
+50
+(A)
+66%
+67
+51
+(B)
+68%
+61
+52
+(D)
+61%
+52
+答對率與鑑別度出處：大考中心 107 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表
+每一題的依據句
+第 49 題 詞義題 Vocabulary in context
+第 1 段But fresh water can be in short supply in many arid regions of the world such as Saudi Arabia, where there are limited water resources.
+第 1 段說世界上許多 arid 地區的淡水可能供應不足，並以水資源有限的沙烏地阿拉伯為例。淡水不足、水資源有限，可見 arid 是乾旱的意思，最接近 (C) Dry。(A) 有人居住的、(B) 孤立的、(D) 偏遠的都和缺水無關。
+怎麼從前後文推出字義 →
+第 50 題 主旨題 Main idea
+第 2 段The problem is that the desalination of water requires a lot of energy.
+第 2 段The energy and technology to desalinate water are both expensive, and this means that desalinating water can be costly.
+原文 → 正確選項
+costly → high cost
+第 2 段第一句先說淡化海水要去除鹽分，接著用 The problem is that 帶出這一段的重點：淡化需要大量能源，能源和技術都很昂貴，所以成本很高（costly），選項換成 high cost。(C) 照抄這一段第一句的 turn seawater into fresh water，但那句只是引出話題，迫切需要淡水是第 1 段的內容；(B) 照抄 chemical，化學鍵是用來解釋淡化為什麼耗費能源；(D) 照抄 energy，原文說的是淡化要消耗能源，不是產生能源，方向正好相反。
+第 51 題 細節題（何者為是） Supporting details
+第 3 段Sea life can get sucked into desalination plants, killing small ocean creatures like baby fish and plankton, upsetting the food chain.
+原文 → 正確選項
+upsetting the food chain → disturb the food chain
+第 3 段說海洋生物可能隨著海水吸進淡化廠，小魚和浮游生物因此死亡，擾亂食物鏈；upsetting the food chain 在選項換成 disturb the food chain。(A) 照抄第 2 段的 salt，原文說鹽很容易溶解在水中，難的是把鹽去除，選項把難易說反了；(C) 照抄第 1 段的 of the Earth，海洋覆蓋地球七成以上只是那個問句的前提，文章接著說淡水會短缺，不是海洋一直滿足人類用水；(D) 照抄 Saudi Arabia，原文說的是沙烏地阿拉伯水資源有限，人口成長說的是全世界。
+第 52 題 推論題 Inference
+依據句：全文要讀完整篇才能判斷，不在某一句裡。
+作者在第 2、3 段先說海水淡化成本高、對環境有害，第 4 段用 Despite 轉回來：淡化越來越受重視，各方競相研發更便宜、更乾淨、更節能的方法，也有令人振奮的新發現（promising new findings）。作者對淡化的未來抱著希望，所以是 (D)。(B) 懷疑和 (C) 保守只看到第 2、3 段的障礙，忽略了 Despite 之後的結論；(A) 驚訝，文章沒有表現出這種情緒。
+逐段中譯
+第 1 段台灣大部分地方都有充足的淡水可以飲用。不過，世界上許多乾旱地區的淡水可能供應不足，例如水資源有限的沙烏地阿拉伯。隨著世界人口持續成長，淡水短缺會越來越常發生，增加供水也會變得非常迫切。有些人可能會問：「既然海洋覆蓋了地球百分之七十以上的面積，為什麼不乾脆從海洋取得飲用水呢？」
+第 2 段要把海水變成淡水，就得去除海水中的鹽分，也就是把海水淡化。問題是，海水淡化需要大量能源。鹽很容易溶解在水中，形成很強的化學鍵，而這些化學鍵很難打斷。淡化海水所需的能源和技術都很昂貴，這表示淡化海水的成本可能很高。
+第 3 段海水淡化也有環境上的代價。海洋生物可能隨著海水吸進淡化廠，小魚、浮游生物這類小型海洋生物因此死亡，擾亂了食物鏈。另外，分離出來的鹽要怎麼處理也是個問題，這些鹽會以極濃的鹽水留下來。把這種超鹹的水抽回海中，可能會傷害當地的水中生物。要降低這些影響是做得到的，但是會增加成本。
+第 4 段儘管有經濟和環境上的障礙，隨著人類漸漸用盡其他來源的淡水，海水淡化也越來越有吸引力。目前在中東和北非的鄉村地區，淡化海水是供水給日漸增加的人口唯一可行的辦法。因此，各方競相尋找更便宜、更乾淨、更節能的海水淡化方式，也陸續有令人振奮的新發現。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。沒有列出的段落，就是沒有主旨句，請對照「這一篇的文章結構」裡的綱要，找出那一段的重點。
+第 2 段The problem is that the desalination of water requires a lot of energy.
+第 3 段There are environmental costs of desalination as well.
+第 4 段Despite the economic and environmental hurdles, desalination is becoming increasingly attractive as human beings are using up fresh water from other sources.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體說明文 Expository
+組織方式問題解決 Problem-Solution這一類怎麼辨識 →
+關鍵轉折詞Butthat isThe problem is thatas wellAlsobutDespiteAt presentTherefore
+綱要
+台灣多數地方淡水充足，(But) 沙烏地阿拉伯等乾旱地區缺水，人口成長將使缺水更嚴重，有人問何不取用海水。
+(that is) 海水要淡化才能喝，(The problem is that) 但淡化耗能，成本很高。
+(as well) 淡化也有環境代價：吸入海洋生物、破壞食物鏈，(Also) 濃鹽水排回海中會傷害生態。
+(Despite) 儘管有經濟與環境障礙，淡化越來越受重視，(At present) 目前是中東、北非鄉村唯一可行的供水方式。
+(Therefore) 各方競相研發更便宜、乾淨、節能的淡化技術，也已有可喜的發現。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 18 個、參考字彙 11 個、字詞搭配 11 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+access[ˈæksɛs]n.取得、使用（have access to 有……可以用）四級第 1 段詞彙題考過 5 次：106 學測第 8 題 accessed（誘答）、98 指考參考試卷第 9 題（誘答）、95 指考第 1 題 accesses（誘答）、87 推薦甄選第 8 題（誘答）、85 推薦甄選第 9 題（答案）
+sufficient[səˈfɪʃənt]adj.足夠的、充足的三級第 1 段詞彙題考過 2 次：94 學測第 7 題（誘答）、88 聯考第 3 題（答案）
+resource[ˈrisɔrs]n.資源三級第 1 段詞彙題考過 2 次：115 學測第 7 題（誘答）、101 指考第 1 題（誘答）
+shortage[ˈʃɔrtɪʤ]n.短缺、不足五級第 1 段詞彙題考過 1 次：101 指考第 1 題（答案）
+additional[əˈdɪʃənəl]adj.額外的、更多的三級第 1 段詞彙題考過 1 次：88 推薦甄選第 2 題 additionally（誘答）
+concentrated （詞彙表：concentrate）[ˈkɑnsənˌtreɪtɪd]adj.濃縮的、高濃度的四級第 3 段詞彙題考過 1 次：90 聯考第 12 題（誘答）
+impact[ˈɪmpækt]n.影響、衝擊四級第 3 段詞彙題考過 2 次：115 學測第 7 題（誘答）、85 推薦甄選第 11 題（答案）
+economic[ˌɛkəˈnɑmɪk]adj.經濟上的四級第 4 段詞彙題考過 1 次：101 學測第 13 題（誘答）
+rural[ˈrʊrəl]adj.鄉下的、農村的四級第 4 段詞彙題考過 1 次：92 學測第 4 題（誘答）
+promising[ˈprɑməsɪŋ]adj.有希望的、有前景的四級第 4 段詞彙題考過 3 次：111 學測第 8 題（誘答）、100 學測第 15 題（誘答）、98 指考第 2 題（誘答）
+occupied （詞彙表：occupy）[ˈɑkjəˌpaɪd]adj.有人占用的、忙碌的四級第 49 題詞彙題考過 4 次：108 學測第 6 題 occupied（誘答）、106 學測第 4 題（誘答）、101 學測第 3 題（誘答）、93 指考第 5 題 occupies（誘答）
+isolated （詞彙表：isolate）[ˈaɪsəˌleɪtɪd]adj.孤立的、偏遠的四級第 49 題詞彙題考過 1 次：89 聯考第 8 題 isolated（誘答）
+remote[rɪˈmoʊt]adj.偏遠的、遙遠的三級第 49 題詞彙題考過 2 次：114 學測第 6 題（誘答）、106 學測第 3 題（答案）
+urgent[ˈɝʤənt]adj.迫切的、緊急的四級第 50 題詞彙題考過 4 次：104 學測第 8 題（誘答）、101 學測第 8 題 urgently（誘答）、96 指考第 10 題（誘答）、95 指考第 10 題（誘答）
+disturb[dɪˈstɝb]v.擾亂、打亂四級第 51 題詞彙題考過 3 次：112 學測第 9 題 disturbed（誘答）、87 聯考第 5 題 disturbing（答案）、83 推薦甄選第 3 題 disturbs（答案）
+attitude[ˈætəˌtud]n.態度、看法三級第 52 題詞彙題考過 1 次：95 學測第 5 題（答案）
+amazed （詞彙表：amaze）[əˈmeɪzd]adj.驚訝的三級第 52 題詞彙題考過 5 次：109 學測第 2 題 amazed（答案）、99 學測第 3 題 amazed（誘答）、96 學測第 15 題 amazed（答案）、86 推薦甄選第 5 題 amazement（誘答）、84 推薦甄選第 6 題 amazingly（誘答）
+doubtful[ˈdaʊtfəl]adj.懷疑的、不確定的三級第 52 題詞彙題考過 4 次：106 學測第 14 題（誘答）、93 補救考試第 11 題 doubtfully（誘答）、90 學測第 1 題（誘答）、83 推薦甄選第 1 題（答案）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+arid[ˈærəd]adj.乾旱的表外第 1 段
+seawater[ˈsiˌwɔtɚ]n.海水表外第 2 段
+desalinate[diˈsæləˌneɪt]v.淡化（海水）、去除鹽分表外第 2 段
+desalination[dɪˌseɪlɪˈneɪʃən]n.（海水）淡化表外第 2 段
+dissolve[dɪˈzɑlv]v.溶解五級第 2 段
+plankton[ˈplæŋktən]n.浮游生物表外第 3 段
+brine[braɪn]n.鹽水、滷水表外第 3 段
+aquatic[əˈkwɑtɪk]adj.水生的表外第 3 段
+hurdle[ˈhɝdəl]n.障礙、難關六級第 4 段
+viable[ˈvaɪəbəl]adj.可行的五級第 4 段
+finding[ˈfaɪndɪŋ]n.研究結果、發現表外第 4 段
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+have access to + N取得得到……第 1 段原文：Most parts of Taiwan have access to sufficient supplies of fresh water
+be in short supply短缺第 1 段原文：fresh water can be in short supply
+water resources水資源第 1 段原文：limited water resources
+turn A into B把 A 變成 B第 2 段原文：To turn seawater into fresh water
+get sucked into + N捲進……第 3 段原文：Sea life can get sucked into desalination plants
+upset the food chain打亂食物鏈第 3 段原文：upsetting the food chain
+be left over剩下來第 3 段原文：which is left over as a very concentrated brine
+add to the cost增加成本第 3 段原文：it adds to the costs
+use up + N用光……第 4 段原文：human beings are using up fresh water
+the race is on to + V大家爭相……第 4 段原文：the race is on to find a cheaper, cleaner … way
+promising findings有希望的研究結果第 4 段原文：promising new findings are being reported
+← 上一篇篇目一覽下一篇 →
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

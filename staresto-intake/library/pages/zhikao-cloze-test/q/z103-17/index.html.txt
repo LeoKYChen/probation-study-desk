@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z103-17/index.html
+Author: staresto-create ZZSH
+Title: 103 年指考克漏字第17題詳解（介系詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 103 年指考 ／ 第17題
+103 年指考 克漏字 第17題
+介系詞線索：句內答對率 49%
+答對率 49%：當年每 100 位考生，有 49 位答對。
+Here in Africa, Lonsdorf is conducting one of the world's longest wildlife studies, trying to discover how learning is transferred 17 generations.
+(A)across
+(B)beside
+(C)upon
+(D)within
+答案：(A) across
+題目編號：Z103_17（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【介系詞】transferred across generations 表示「代代相傳」，across 表跨越（世代）之意，為此處慣用搭配。beside（在旁邊）、upon（在…之上）、within（在…之內）都不符合文意。
+深入解析
+你可能會這樣想
+across 這個字，你的印象大概只有走過馬路那個具體的動作（walk across the street），不太會想到它可以用在世代、族群這種抽象的範圍上。
+怎麼判斷
+答對率不到五成。先確定空格要的是什麼：is transferred 是被動，後面沒有受詞，所以空格填的是介系詞，帶出傳遞的範圍或方向。generations 是複數，講的是好幾個世代；學習要從上一代傳到下一代，跨越的是世代與世代之間，用 across（橫跨、遍及）。填進去讀成 how learning is transferred across generations（學習如何跨世代傳遞）。across 的具體義與這裡的抽象義是同一條線：都是從一邊到另一邊，只是這裡跨的不是馬路而是世代，這種「先有具體義、再往抽象推」的走法在介系詞題裡很常見。
+誘答選項
+beside（在……旁邊）講的是並排的位置，世代不是並排擺著的東西；upon 相當於較正式的 on，講的是接觸的表面或一發生就如何（upon arrival 一抵達），與傳遞的範圍無關；within（在……之內）方向剛好相反——它把範圍鎖在同一個世代裡面，但文章問的是上一代如何傳給下一代。
+常考字詞與句型
+across generations（跨世代）、transfer A to B（把 A 傳遞給 B）、pass down（代代相傳）、within（在……範圍之內）、upon arrival（一抵達）、conduct a study（進行研究）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：103學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Hiding herself among the trees near a chimpanzee habitat, Elizabeth Lonsdorf is using her camera to explore mysteries of learning. The chimpanzee she records picks up a thin flat piece of grass and then digs out tiny insects from a hole. Dinner is 16 ! But how did the chimp develop this ingenious skill with tools? Do the chimp babies copy their parents in using tools? Do the mothers most skilled with tools have offspring who are also good at using tools? Here in Africa, Lonsdorf is conducting one of the world's longest wildlife studies, trying to discover how learning is transferred 17 generations.
+Lonsdorf has always been interested in animal learning and tool use, 18 the way young animals grow up and learn their way in the world. Her chimpanzee study shows a clear link between humans and the rest of the animal kingdom. The chimps make and use tools and have mother-child relationships very 19 to those of humans. Through observing chimpanzees' learning process, researchers hope to gain insight into what the development of our earliest ancestors 20 like.
+Lonsdorf hopes that by understanding the complexity of animal behavior, we can better appreciate and protect the diversity of life on this planet.
+中譯：伊麗莎白．隆斯多夫（Elizabeth Lonsdorf）躲藏在黑猩猩棲地附近的樹叢中，用相機探索學習的奧秘。她所拍攝的黑猩猩會撿起一片細長扁平的草，再從洞裡挖出小昆蟲——晚餐上桌了！但黑猩猩究竟是如何發展出這種使用工具的巧妙技能的呢？小黑猩猩是否會模仿父母使用工具？工具運用能力較強的母猩猩，牠們的後代是否也比較擅長使用工具？在非洲，隆斯多夫正進行世界上為時最久的野生動物研究之一，試圖找出學習是如何代代相傳的。
+隆斯多夫一直對動物學習與工具使用深感興趣，尤其是幼小動物如何成長並學習在世界上生存的方式。她的黑猩猩研究顯示人類與其他動物界之間存在明顯關聯：黑猩猩會製造並使用工具，其母子關係也與人類的母子關係十分相似。透過觀察黑猩猩的學習歷程，研究人員希望能藉此了解人類最早的祖先可能是怎麼發展的。
+隆斯多夫希望，透過理解動物行為的複雜性，我們能更加珍惜並保護這個星球上生命的多樣性。
+📋 內容大意
+Elizabeth Lonsdorf films chimpanzees using grass stems to fish out insects, asking how such skills are learned and handed down.
+Her long African study links humans with other animals: chimps make tools and their mother-child bonds resemble ours.
+Understanding how chimps learn may illuminate our earliest ancestors and help us protect the diversity of life.
+← 第16題回到103 年指考第18題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

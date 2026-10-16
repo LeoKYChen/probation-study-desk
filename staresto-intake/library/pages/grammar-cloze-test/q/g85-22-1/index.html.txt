@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g85-22-1/index.html
+Author: staresto-create ZZSH
+Title: 85 年學測克漏字第22題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 85 年學測 ／ 第22題
+85 年學測 克漏字 第22題
+慣用語／片語線索：句內
+Like most immigrants, he was 22 a better life.
+(A)looking after
+(B)looking at
+(C)looking for
+(D)looking into
+答案：(C) looking for
+題目編號：G85_22_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+was looking for 是過去進行式，look for 是「設法找到、尋求」，he was looking for a better life 表示他和多數移民一樣在追求更好的生活；looking after（照顧）、looking at（看著）、looking into（調查）接上 a better life 意思都說不通。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是 looking 後面接一個不同的字（after、at、for、into），前半完全相同，可見 was 加 V-ing 構成進行式這一點不必判斷，要分的只有後面那個字帶出來的意思。look 換一個字，意思就整組換掉：look after 是「照顧」、look at 是「看」、look for 是「尋找」、look into 是「調查」。如果只記得 look 是「看」，四個看起來都和「看」有關，就很難下手。
+怎麼判斷
+先把這一句的核心找出來：Like most immigrants, he was ___ a better life.（像多數移民一樣，他……更好的生活。）主詞是 he，was 加上 looking 構成過去進行式，講的是他當時一直處在的狀態；要判斷的只剩 looking 後面那個字，能不能和受詞 a better life 搭得起來。a better life 不是擺在眼前的東西，而是一個還沒得到、要去追求的目標，搭配的是 look for。劍橋把 look for 解釋為 to try to find something or someone（設法找到某物或某人），例句 We were always looking for ways to make a little cash.（我們一直在找賺點小錢的門路）用的也是同一種受詞——還沒到手、要去找的東西。所以填 looking for：he was looking for a better life（他在追求更好的生活）。再往下讀一句可以驗算：So, when gold was discovered in the West in 1849, he {23} thousands of others and rushed to California. 這一句以表示結果的 So 開頭，西部一發現金礦，他就趕往加州，前因正是他一直在找更好的出路。
+誘答選項
+looking after（照顧）：look after 的受詞是要照料的人或東西，像 look after the kids（照顧孩子）；「照顧更好的生活」說不通。looking at（看著）：look at 是把目光放在眼前的東西上，像 look at the picture（看這張圖），而更好的生活是還沒得到的目標，不是擺在眼前看的東西。looking into（調查）：look into 是查明一個問題或情況的事實，像 look into the possibility of merging the two departments（研究兩個部門合併的可能性），用在 a better life 上意思不通。
+常考字詞與句型
+look for（尋找、尋求）、look after（照顧）、look at（看）、look into（調查、研究）、search for（搜尋）、a better life（更好的生活）。其中 look into 這一組考過 5 個年度，99 年第 18 題、99 課綱學測參考用試卷第 29 題、101 年第 26 題、106 年第 16 題都出現過。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+When Levi Strauss arrived in the United States from Bavaria, he was only seventeen, poor, and knew very 21 English. Like most immigrants, he was 22 a better life. So, when gold was discovered in the West in 1849, he 23 thousands of others and rushed to California.
+24 he planned to open a shop in San Francisco, he took many goods with him, 25 a large quantity of canvas. He hoped to sell 26 as material for tents or wagon covers. Business, however, was not 27 he had expected.
+28 , as he sat in a cafe in a small town, he had an idea. He saw a man with a hole in the leg of his trousers and 29 realized what Californians 30 for the rough work they were doing—good, strong trousers!
+中譯：李維·史特勞斯從巴伐利亞來到美國時，才十七歲，一貧如洗，幾乎不懂英語。像大多數移民一樣，他渴望過上更好的生活。因此，1849 年西部發現金礦時，他和成千上萬的人一起湧向加州。因為他打算在舊金山開店，他隨身帶了許多貨物，其中包括大量帆布，希望能賣給人們當帳篷或篷車篷布的材料。然而，生意並不如他預期的那樣好。有一天，當他坐在一個小鎮的咖啡館裡時，他有了一個點子。他看到一個男人的褲子破了一個洞，突然明白加州人在做粗重工作時需要的是什麼——耐穿堅固的褲子！
+📋 內容大意
+Levi Strauss came to the United States from Bavaria at seventeen. He was poor, knew hardly any English, and wanted a better life.（敘事文）
+When gold was found in 1849 he rushed west, taking a large load of canvas to sell for tents and wagon covers.（敘事文）
+Sales were poor. Then he saw a workman whose trousers had worn through, and knew what Californians really wanted: strong work trousers.（敘事文）
+← 第21題回到85 年學測第23題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

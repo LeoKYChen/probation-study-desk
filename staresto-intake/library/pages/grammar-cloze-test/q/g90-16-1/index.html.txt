@@ -1,0 +1,40 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g90-16-1/index.html
+Author: staresto-create ZZSH
+Title: 90 年學測克漏字第16題詳解（分詞／動狀詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 90 年學測 ／ 第16題
+90 年學測 克漏字 第16題
+分詞／動狀詞線索：句內
+But 16 that Christmas is just a few weeks away, 17 is a gift idea.
+(A)given
+(B)give
+(C)giving
+(D)to give
+答案：(A) given
+題目編號：G90_16_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】given that 是整組轉成連接詞的固定用法，表示「鑑於、既然」（等同於 considering that）；give（原形動詞）、giving（現在分詞，這個固定用語習慣用 given 不用 giving）、to give（不定詞）都不合這個固定用法。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+given、give、giving、to give 四個排在一起，你幾乎立刻就認定「這是文法題」，接著自動進入分詞構句的程序：找意義主詞、判主動被動、檢查有沒有垂懸。這條路一走就錯，而且錯得很有方向性——「聖誕節快到了」是主動的，照這個推法你會被推向 giving。這一格根本沒有意義主詞可找。
+怎麼判斷
+先看空格後面接什麼：that Christmas is just a few weeks away 是一個完整的 that 子句，逗號之後 {17} is a gift idea 又是一個完整的句子。要把兩個完整的東西接起來，空格要的是連接詞，不是分詞。given that 正是這樣一組已經定下來的連接詞，意思是「既然、鑑於」，等於 considering that 或 seeing that。它雖然長得像過去分詞，但整組轉成連接詞之後就不再帶著「被給予」的意思，也就不必去追誰給了誰（依 Greenbaum 與 Whitcut「Guide to English Usage」的分類，given、considering 這一類字單獨一個就能當介系詞用，後面接 that 子句時則當連接詞）。填進去讀一次：既然聖誕節只剩幾星期，這裡有個送禮的點子。這一型的題目要記住一句話：選項故意排成分詞的各種形態嚇人，其實只是在問你認不認得這個字，前後文再怎麼對齊也推不出答案，平常大量閱讀的人在這裡比較有利。
+誘答選項
+giving：現在分詞。若真要當分詞構句看，它的意義主詞得與主要子句的主詞一致，而主要子句是 {17} is a gift idea，找不到一個能執行「給」這個動作的人；何況 give 這個動詞後面要接的是「給誰、給什麼」，接不了一個 that 子句。give：原形動詞，句首沒有主詞可以搭配它，也帶不出 that 子句。to give：不定詞可以表目的（為了給……），但後面同樣掛不住 that 子句。三個選項的問題是同一個——它們後面都接不了那個 that 子句。
+常考字詞與句型
+given that（既然、鑑於）、considering that（考慮到）、seeing that（既然）、provided that（假如）、a few weeks away（再過幾星期）、have everything（什麼都不缺）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+At times, it seems like there are not many things that we can give a student who has everything. But 16 that Christmas is just a few weeks away, 17 is a gift idea. Those who have an inclination for crazy technological advances aren't hard 18. One simple way is a few new items that might 19 life more enjoyable. They don't look too revolutionary, but you'd be surprised 20 they are capable of. The following is one of the items.
+21 a student who is never on time, there is the new Projection Alarm Clock. Many ordinary clocks are hard to read early in the morning, deceiving students of the correct time, 22 causing them to be late for school. Through a projector, this attractive radio-alarm-clock is able to display the time onto a wall, ceiling, or anywhere 23. The benefits include an easier visibility of the time, and an alarm that gets increasingly louder 24 turned off. It won't magically transport a student to school on time every day, but it just might make 25 a little easier.
+中譯：有時候，好像很難找到什麼東西送給一個什麼都不缺的學子。不過，既然聖誕節只剩幾星期就要到了，這裡有一個送禮的好點子。對於熱愛各種瘋狂科技新玩意的人來說，其實不難討他們歡心。一個簡單的方法，就是送一些能讓生活更有樂趣的新玩意兒。它們看起來或許不怎麼革命性，但它們的功能可能會讓你大吃一驚。以下就是其中一項產品。對於一個總是遲到的學子來說，這款全新的投影鬧鐘正合適。許多一般的鬧鐘在清晨時分很難看清楚，讓學子誤判時間，因而導致遲到。透過投影功能，這款吸睛的收音機投影鬧鐘能將時間投影到牆壁、天花板或任何其他地方。它的優點包括更容易看清時間，以及鬧鈴聲音會隨著時間經過而逐漸變大，直到被關掉為止。它當然不會像魔法一樣，讓學子每天都準時到校，但它或許能讓起床這件事變得稍微容易一點。
+📋 內容大意
+The Projection Alarm Clock offers an innovative gift solution to help chronically late students wake up on time.
+回到90 年學測第17題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

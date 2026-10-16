@@ -1,0 +1,40 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g90-22-1/index.html
+Author: staresto-create ZZSH
+Title: 90 年學測克漏字第22題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 90 年學測 ／ 第22題
+90 年學測 克漏字 第22題
+字彙選義線索：句內
+Many ordinary clocks are hard to read early in the morning, deceiving students of the correct time, 22 causing them to be late for school.
+(A)though
+(B)therefore
+(C)otherwise
+(D)however
+答案：(B) therefore
+題目編號：G90_22_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+因果關係：「許多普通時鐘在早上很難看清楚，讓學子誤判時間，因此導致他們上學遲到」，therefore（因此）符合這個因果邏輯；though（雖然，轉折）、otherwise（否則）、however（然而，轉折）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項裡有三個帶著轉折的味道（though、otherwise、however），只有一個是因果。如果沒有先把前後兩件事的關係想清楚，很容易被「多數決」的錯覺帶走，覺得答案應該落在那三個裡面。
+怎麼判斷
+四個選項都是轉折詞，可見這一格考的是前後兩件事的邏輯關係，那就把空格兩邊各是什麼事看清楚。前面是 deceiving students of the correct time（讓學子誤判時間），後面是 causing them to be late for school（導致他們上學遲到）。誤判時間在前、遲到在後，前者正是後者的原因，這是順向的因果，不是轉折，therefore（因此）才是做這件事的字。結構上也可以印證：deceiving 與 causing 是兩個並列的現在分詞，補充說明前面整句話所造成的結果（劍橋 English Grammar Today 的 -ing clause 表 result），還原成 and this deceives students ..., and therefore causes them ...，兩個結果一前一後，中間的關係只能是因果。
+誘答選項
+though（雖然）：表讓步或轉折，會變成「讓學子誤判時間，雖然導致他們遲到」，兩件事本來同向，硬要轉折就講不通。however（然而）：同樣是轉折。otherwise（否則）：需要前面先有一個「如果不那樣做」的前提，本句沒有。
+常考字詞與句型
+deceive sb（欺騙某人）、cause sb to V（導致某人……）、hard to read（不好辨讀）、as a result（因此、結果）、lead to（導致）、result in（造成）。其中 result in 這一組考過 7 個年度，88 年第 28 題 →、100 年第 25 題 →、102 年第 28 題 →、103 年第 25 題 →、109 年第 30 題 →、學測參考試卷第 22 題 →、學測參考試卷第 23 題 →都出現過；as a result 考過 7 個年度，85 年第 35 題 →、87 年第 35 題 →、95 年第 28 題 →、99 課綱學測參考用試卷第 24 題 →、103 年第 25 題 →、108 年第 28 題 →都出現過；lead to 考過 7 個年度，88 年第 28 題 →、94 年第 23 題 →、99 年第 26 題 →、108 年第 16 題 →、110 年第 19 題 →、學測參考試卷第 23 題 →都出現過。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+At times, it seems like there are not many things that we can give a student who has everything. But 16 that Christmas is just a few weeks away, 17 is a gift idea. Those who have an inclination for crazy technological advances aren't hard 18. One simple way is a few new items that might 19 life more enjoyable. They don't look too revolutionary, but you'd be surprised 20 they are capable of. The following is one of the items.
+21 a student who is never on time, there is the new Projection Alarm Clock. Many ordinary clocks are hard to read early in the morning, deceiving students of the correct time, 22 causing them to be late for school. Through a projector, this attractive radio-alarm-clock is able to display the time onto a wall, ceiling, or anywhere 23. The benefits include an easier visibility of the time, and an alarm that gets increasingly louder 24 turned off. It won't magically transport a student to school on time every day, but it just might make 25 a little easier.
+中譯：有時候，好像很難找到什麼東西送給一個什麼都不缺的學子。不過，既然聖誕節只剩幾星期就要到了，這裡有一個送禮的好點子。對於熱愛各種瘋狂科技新玩意的人來說，其實不難討他們歡心。一個簡單的方法，就是送一些能讓生活更有樂趣的新玩意兒。它們看起來或許不怎麼革命性，但它們的功能可能會讓你大吃一驚。以下就是其中一項產品。對於一個總是遲到的學子來說，這款全新的投影鬧鐘正合適。許多一般的鬧鐘在清晨時分很難看清楚，讓學子誤判時間，因而導致遲到。透過投影功能，這款吸睛的收音機投影鬧鐘能將時間投影到牆壁、天花板或任何其他地方。它的優點包括更容易看清時間，以及鬧鈴聲音會隨著時間經過而逐漸變大，直到被關掉為止。它當然不會像魔法一樣，讓學子每天都準時到校，但它或許能讓起床這件事變得稍微容易一點。
+📋 內容大意
+The Projection Alarm Clock offers an innovative gift solution to help chronically late students wake up on time.
+← 第21題回到90 年學測第23題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

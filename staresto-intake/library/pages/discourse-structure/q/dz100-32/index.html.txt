@@ -1,0 +1,63 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dz100-32/index.html
+Author: staresto-create ZZSH
+Title: 指考 100年 篇章結構 第32題詳解（掌握段落主題句和細節的關係）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 指考 100年 ／ 第32題
+指考 100年 篇章結構 第32題
+選文：霸凌的連鎖反應（The Cycle of Bullying）
+掌握段落主題句和細節的關係線索：無明顯詞面線索答對率 46%
+(A)Hitler, for example, is claimed to have been a victim of bullying in his childhood.例如希特勒，據稱童年時曾是霸凌的受害者。
+(B)Campus bullying is becoming a serious problem in some high schools in big cities.校園霸凌在大城市的一些高中正成為嚴重問題。
+(C)The friends and classmates of the bully and the victim may accept the violence as normal.霸凌者與被霸凌者的朋友和同學，可能會把這種暴力視為正常。
+(D)Research indicates that bullying may form a chain reaction and the victim often becomes the bully.研究指出，霸凌可能形成連鎖反應，受害者往往變成霸凌者。
+(E)Psychologists have been puzzled by the inactivity of crowds and bystanders in urban centers when crimes occur in crowded places.心理學家一直對一件事感到困惑：都市裡人多的地方發生犯罪時，群眾和旁觀者卻不採取行動。
+(F)The link between bullying and school violence has attracted increasing attention since the 1999 tragedy at a Colorado high school.自從一九九九年科羅拉多州一所高中的悲劇之後，霸凌與校園暴力的關聯愈來愈受到注意。
+答案：(D) Research indicates that bullying may form a chain reaction and the victim often becomes the bully.
+題目編號：Dz100_32
+解析
+先看空格的位置。 它在第三段的第一句。
+再讀完整段。 後面說歷史上許多獨裁者與侵略者試圖用「自己也曾被霸凌」來合理化行為；接著是第 33 格；最後說歷史上最壞的一些人確實既是霸凌者也是被霸凌者。整段在講同一條規律：被霸凌的人後來變成霸凌別人的人。
+可是這條規律從頭到尾沒有人直接說出來。D 就是那句規律，放在段首正好統領整段。
+如果你選了 A（例如希特勒，據稱童年時曾是霸凌的受害者。）：A 講的正是「受害者變加害者」，內容完全吻合。但 A 帶著 for example（例如），這一格前面講的卻是美國政府對校園暴力的調查，希特勒並不是那件事的例子。
+【下次先看這裡】段首的空格，先讀完整段找出「這一段在講哪一條規律」。
+線索與數據
+線索種類無明顯詞面線索
+線索在哪後一句 靠整段的規律推得
+答對率46%
+鑑別度52
+本篇題型6選5・刪去法不收尾
+數據出處：本頁的答對率與鑑別度來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響。
+多出來的那一個：B
+(B)Campus bullying is becoming a serious problem in some high schools in big cities.校園霸凌在大城市的一些高中正成為嚴重問題。
+B 完全切題，句型也四平八穩，很像段首主題句。但五格都放不下：
+格
+那一格在等什麼
+B 為什麼不行
+32
+「受害者變加害者」這條規律
+B 講的是嚴重程度
+再看一件事：全篇第一句就是 The effect of bullying can be serious（霸凌的後果可能很嚴重）。 B 說的是同一件事，換個說法而已——它不是離題，是已經講過了。
+【下次先看這裡】一個選項讀起來很像主題句、卻哪一格都放不進去時，回頭看看第一段——它是不是把開頭已經說過的話再說一次。
+展開本題所在的整篇選文與中文翻譯
+本篇共 5 格、6選5；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+開場：霸凌的後果嚴重，卻幾乎沒人研究
+The effect of bullying can be serious and even lead to tragedy. Unfortunately, it is still a mostly unresearched area.
+31 That year two shotgun-wielding students, both of whom had been identified as gifted and who had been bullied for years, killed 13 people, wounded 24 and then committed suicide. A year later an analysis by the US government found that bullying played a major role in more than two-thirds of the campus violence.
+32Research indicates that bullying may form a chain reaction and the victim often becomes the bully. Numerous dictators and invaders throughout history have tried to justify their bullying behavior by claiming that they themselves were bullied. 33 Although it is no justification for bullying, many of the worst humans in history have indeed been bullies and victims of bullying.
+Since bullying is mostly ignored, it may provide an important clue in crowd behavior and passer-by behavior. 34 Many of them have suggested bullying as one of the reasons of this decline in emotional sensitivity and acceptance of violence as normal. When someone is bullied, it is not only the bully and the victim who are becoming less sensitive to violence. 35 In this sense, bullying affects not only the bullied but his friends and classmates and the whole society.
+中譯
+霸凌的影響可能很嚴重，甚至釀成悲劇。可惜的是，這仍然是一塊大致上沒人研究的領域。
+31 那一年，兩名持獵槍的學生殺死十三人、造成二十四人受傷，然後自殺；這兩人都曾被認定為資優生，也都被霸凌多年。一年後，美國政府的一份分析發現，三分之二以上的校園暴力事件，霸凌都扮演了主要角色。
+32 歷史上許多獨裁者和侵略者都曾試圖為自己的霸凌行為辯解，說他們自己也曾被霸凌。33 這雖然不能作為霸凌的正當理由，但歷史上許多最壞的人，確實既是霸凌者，也是霸凌的受害者。
+由於霸凌大多被忽視，它或許能為群眾行為和旁觀者行為提供重要線索。34 其中許多人認為，霸凌是造成這種情緒敏感度下降、並把暴力視為正常的原因之一。當有人被霸凌，變得對暴力比較不敏感的，並不只是霸凌者和受害者而已。35 從這個意義上看，霸凌影響的不只是被霸凌的人，還包括他的朋友、同學，以及整個社會。
+← 第31題回到互動練習第33題 →
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

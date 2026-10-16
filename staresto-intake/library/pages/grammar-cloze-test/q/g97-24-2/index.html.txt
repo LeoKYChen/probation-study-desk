@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g97-24-2/index.html
+Author: staresto-create ZZSH
+Title: 97 年學測克漏字第24題詳解（分詞／動狀詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 97 年學測 ／ 第24題
+97 年學測 克漏字 第24題
+分詞／動狀詞線索：句內答對率 76%
+答對率 76%：當年每 100 位考生，有 76 位答對。
+When he found her, he said, "I know how valuable this stone is, but I'm giving it back to you, 24 that you can give me something even more precious.
+(A)hope
+(B)hoping
+(C)hoped
+(D)to hope
+答案：(B) hoping
+題目編號：G97_24_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+現在分詞片語 hoping，補充說明說話者當下的心情「希望你能給我更珍貴的東西」；hope（原形動詞，不能這樣單獨補充說明）、hoped（過去式）、to hope（不定詞，不太符合這裡補充說明的伴隨動作語境）都不合。
+深入解析
+你可能會這樣想
+hope 是你很早就學會的動詞，一看到它就想幫它找主詞，於是把 hope 或 hoped 填進去，讀成「我把石頭還你、我希望……」。問題是這一句已經有主詞和動詞了（I'm giving），逗號後面不能再放一個並列的動詞卻不加連接詞。
+怎麼判斷
+先數句子的結構：I'm giving it back to you 是完整的主要子句；逗號後面這一串既沒有自己的主詞，也沒有連接詞。這種位置要放動詞，動詞就得換成分詞形式，用現在分詞片語補充說明主詞當下的心情或伴隨的狀態（劍橋 English Grammar Today 的 -ing clause）。還原成兩句驗算：I'm giving it back to you. + I hope that you can give me something even more precious.（我要把它還給你。我希望你能給我更珍貴的東西。）把第二句的主詞 I 拿掉、動詞改成 hoping，就是原句。這個結構最短的版本你一定看過：While (he was) walking home, he met an old friend.——主詞與前面相同時就省略，動詞改成 V-ing。
+誘答選項
+hope：原形動詞不能沒有連接詞就直接接在一個完整的句子後面。hoped：過去式，同樣的結構問題還在，而且時間也不對，說話者是此刻抱著希望，不是過去。to hope：不定詞放在這個位置通常表示目的，還原出來會變成「我把石頭還你，是為了希望你給我更珍貴的東西」——希望是心裡的狀態，不是可以刻意去執行的動作，當目的講不通；真要表達這層意思，英文會說 in the hope that...（懷著……的希望）。
+常考字詞與句型
+hoping that...（希望……，現在分詞補充說明心情）、in the hope that...（懷著……的希望）、give sth back to sb（把某物還給某人）、something even more precious（更珍貴的東西）、know how valuable sth is（知道某物有多珍貴）、teach sb sth（教某人某事）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+A wise woman traveling in the mountains found a precious stone. The next day she met another traveler who was hungry. The wise woman generously opened her bag to 21 her food with the traveler. When the hungry traveler saw the precious stone, he asked her to give it to him. The woman did 22 without hesitation. The traveler left, rejoicing.
+If he sold the stone, he thought, he 23 enough money for the rest of his life. But in a few days he came back to find the woman. When he found her, he said, "I know how valuable this stone is, but I'm giving it back to you, 24 that you can give me something even more precious. You gave me the stone without asking for anything 25 . Please teach me what you have in your heart that makes you so generous."
+中譯：一位聰慧的女子在山中旅行時，撿到了一顆珍貴的寶石。隔天，她遇見了另一位飢餓的旅人。這位聰慧的女子慷慨地打開她的袋子，與這位旅人分享食物。當這位飢餓的旅人看到那顆珍貴的寶石時，他要求她把寶石送給他。這位女子毫不猶豫地照做了。旅人心滿意足地離開了。他心想，如果把這顆寶石賣掉，他這輩子就衣食無缺了。但幾天後，他回來找這位女子。找到她時，他說：「我知道這顆寶石有多麼珍貴，但我要把它還給你，希望你能給我一樣更珍貴的東西。你把這顆寶石送給我，卻沒有要求任何回報。請教教我，你心裡是懷著什麼樣的胸懷，才能如此慷慨。」
+📋 內容大意
+A wise traveling woman generously gave away a precious stone she found to a hungry traveler without hesitation.（敘事文）
+The traveler returned the valuable stone, wanting instead to learn the source of the wise woman's extraordinary generosity.（敘事文）
+← 第23題回到97 年學測第25題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g113-12-1/index.html
+Author: staresto-create ZZSH
+Title: 113 年學測克漏字第12題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 113 年學測 ／ 第12題
+113 年學測 克漏字 第12題
+慣用語／片語線索：句內答對率 43%
+答對率 43%：當年每 100 位考生，有 43 位答對。
+They grade and report on the quality of products, customer service, and environment of the stores 12 they are assigned.
+(A)in that
+(B)with which
+(C)for that
+(D)to which
+答案：(D) to which
+題目編號：G113_12_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+the stores to which they are assigned（他們被分配到的商店），關係代名詞 which 代替 stores，介系詞 to 來自 assigned to 這個字詞搭配；in that（因為）、with which（assigned 是 assigned to 不是 assigned with）、for that 都不合。
+深入解析
+你可能會這樣想
+看到 the stores ___ they are assigned，你會想：這裡填關係代名詞 which 就好了，為什麼前面還要加 to？關鍵在於動詞片語本身自帶介系詞：assign sb to sth（把某人分派到某處）。把句子拆回兩句就清楚了——They grade and report on the quality... of the stores. 加上 They are assigned to the stores. 合併時 the stores 換成 which，原本跟在 assigned 後面的 to 也一起搬到 which 前面，就成了 to which。
+怎麼判斷
+步驟是固定的：先看空格後面那個動詞需要什麼介系詞。這裡是 be assigned to（被分派到），所以介系詞是 to。也可以用還原法檢查：把它改寫成口語常見的 the stores which they are assigned to，意思完全一樣，只是把介系詞留在句尾——這是同一個結構的兩種寫法。
+誘答選項
+with which 錯在介系詞：assign 搭配的是 to 不是 with。in that 是連接詞「因為」（＝because），後面要接完整句子表原因，但本句缺的是修飾 the stores 的關係子句。for that 更是不成立——在關係子句裡，介系詞後面接的是 which、whom 或 whose，不能接 that，這一點沒有例外。
+常考字詞與句型
+assign sb to sth（把某人分派到……）、be assigned to（被分派到）、report on sth（就……提出報告）、the way in which（……的方式）、the extent to which（……的程度）、the reason for which（＝why，……的原因）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Mystery shoppers are paid consumers who are hired to shop in stores and collect data. They are sent to a wide variety of service-based businesses, including stores, restaurants, and banks—potentially anywhere customers are served. Sometimes referred to as secret shoppers, mystery shoppers 11 regular customers to purchase items, eat in restaurants, make inquiries, or return items.
+They grade and report on the quality of products, customer service, and environment of the stores 12 they are assigned. When evaluating a business, mystery shoppers have to follow certain standard procedures to avoid 13 . They are often given a checklist that provides directions on what to observe or look out for to ensure consistency.
+Sometimes these shoppers collect data about their "normal" observations, such as cleanliness of the store or timeliness of the service. They may also pretend to be 14 customers, arguing with a salesperson without a good reason.
+With the data they collect, mystery shoppers can identify areas for 15 and thereby help enhance the quality of products and services. In this way, these secret shoppers may help a business gain a competitive edge.
+中譯：神祕客是受雇於店家、以消費者身分進行消費並蒐集資料的付費人員。他們被派往各式各樣提供服務的商家，包括零售店、餐廳和銀行——幾乎任何有顧客服務的地方都可能出現他們的身影。神祕客有時也被稱為秘密購物者，他們會假扮成一般顧客購買商品、在餐廳用餐、詢問問題，或辦理退貨。他們會針對所被指派商家的產品品質、顧客服務和環境進行評分並提出報告。在評鑑一間商家時，神祕客必須遵循特定的標準流程，以避免出現主觀偏差。他們通常會拿到一份檢查清單，上面列出該觀察或留意的事項，以確保評鑑結果的一致性。有時，這些神祕客會蒐集關於「日常」觀察的資料，例如商店的整潔程度或服務的即時性；他們有時也會假扮成難搞的顧客，故意無理取鬧地與店員爭執。透過蒐集到的這些資料，神祕客能找出需要改進的地方，進而協助提升產品與服務的品質。透過這樣的方式，這些秘密顧客能幫助商家在市場競爭中取得優勢。
+📋 內容大意
+Mystery shoppers, also called secret shoppers, are paid consumers. Businesses hire them to visit shops, restaurants and banks and gather data.
+They act like ordinary customers, buying items, eating meals, asking questions or returning goods. Then they grade the products, the service and the store itself.
+A checklist keeps their reports consistent and fair. They note routine things like cleanliness and service speed, and their data shows a business what to fix.
+← 第11題回到113 年學測第13題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

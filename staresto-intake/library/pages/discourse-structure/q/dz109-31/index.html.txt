@@ -1,0 +1,61 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dz109-31/index.html
+Author: staresto-create ZZSH
+Title: 指考 109年 篇章結構 第31題詳解（掌握段落內語句的連貫性與一致性）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 指考 109年 ／ 第31題
+指考 109年 篇章結構 第31題
+選文：羅馬角鬥士的真實生活（The Life of Roman Gladiators）
+掌握段落內語句的連貫性與一致性線索：語意呼應答對率 69%
+(A)Gladiators were recruited from different sources.角鬥士是從不同的來源招募來的。
+(B)The origins of gladiators were obscure and mysterious.角鬥士的來歷晦澀難解。
+(C)Recent research findings suggest that this name was likely literal.近期的研究發現顯示，這個稱呼很可能就是字面上的意思。
+(D)There is evidence to suggest that females also participated in gladiator contests.有證據顯示，女性也參加過角鬥比賽。
+(E)Gladiators fought for the entertainment of Rome’s rich and mighty, as well as for the public.角鬥士的搏鬥是為了娛樂羅馬的權貴，也為了娛樂一般民眾。
+(F)Also, there was little sign of meat or dairy products in the diet of almost all of these professional fighters.此外，這些職業鬥士幾乎每一位的飲食裡，都看不到什麼肉類或乳製品。
+答案：(E) Gladiators fought for the entertainment of Rome’s rich and mighty, as well as for the public.
+題目編號：Dz109_31
+解析
+先看空格前面。 前面兩句講的是他們怎麼打：帶著致命的武器，多半打到一方認輸或被殺為止。只有打鬥，沒有觀眾。
+再看空格後面。 後面是 Roman people enjoyed the sight of blood and violent death. They crowded into the arenas to watch gladiator games…（羅馬人愛看流血與暴力的死亡場面。他們擠進競技場觀看角鬥比賽……）觀眾突然就出現了，而且是一大群。
+E 就是中間那一句：他們打，是打給人看的。有了「為了娛樂」，後面兩句的愛看、擠進競技場才有立足點。
+如果你選了 A（角鬥士是從不同的來源招募來的。）：A 也是一句概括的敘述，位置感很像。但空格後面談的是觀眾，不是這些人從哪裡來；來源是下一段整段的事。
+【下次先看這裡】後面突然出現一群人（觀眾、顧客、讀者），先回頭找「他們為什麼會在這裡」。找不到，那一句就在空格裡。
+線索與數據
+線索種類語意呼應
+線索在哪後一句 entertainment ↔ 後句 enjoyed the sight／crowded into the arenas
+答對率69%
+鑑別度65
+本篇題型6選5・刪去法不收尾
+數據出處：本頁的答對率與鑑別度來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響。
+多出來的那一個：B
+(B)The origins of gladiators were obscure and mysterious.角鬥士的來歷晦澀難解。
+B 只有八個字，句子乾淨，origins（來歷）也是全篇談得最多的東西之一。但五格都放不進去：
+格
+那一格在等什麼
+B 為什麼不行
+31
+他們為什麼要打給人看
+B 講來歷，不是觀眾
+共同點：這一篇每一段都在給答案——是什麼人、從哪裡來、吃什麼，連骨頭都拿去化驗了。B 寫的卻是「來歷晦澀難解」。
+【下次先看這裡】一個選項說「無從得知」「眾說紛紜」，先看這篇文章的立場。整篇都在把事情講清楚的話，它多半就是多出來的那一個。
+展開本題所在的整篇選文與中文翻譯
+本篇共 5 格、6選5；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+破題：角鬥士是什麼人，羅馬人為什麼愛看
+Gladiators were combatants who fought against criminals, wild animals, and each other during the time of the Roman Empire. They were armed with deadly weapons and in most cases fought till either one of them accepted defeat or was killed. 31Gladiators fought for the entertainment of Rome’s rich and mighty, as well as for the public. Roman people enjoyed the sight of blood and violent death. They crowded into the arenas to watch gladiator games, just like we watch football, baseball, and tennis matches today.
+32 Some were slaves bought from different lands under Roman control, and some were prisoners of war. Most of the others were volunteers, a group which once accounted for half of all gladiators. The majority of the gladiators were Thracians, Gauls, and Africans. These combatants were generally skilled fighters and were paid for their services. 33 All of the fighters, both male and female, were well looked after by their owners and rewarded after winning fights.
+Roman historians sometimes called gladiators hordearii, a Latin term which means “barley eaters” in English. 34 Chemical analyses of the bones found in a gladiator graveyard indicated that the typical food eaten by gladiators was wheat, barley, and beans. 35 In addition to a plant-heavy diet, gladiators drank plant ashes to fortify the body after physical exertion and to promote better bone healing. The diet that gladiators followed may be unconventional by modern athletic standards, but in the days of the Romans, this was the diet of heroes.
+中譯
+角鬥士是羅馬帝國時代的搏鬥者，對手是罪犯、野獸，也包括彼此。他們手持致命的武器，多數情況下要打到其中一方認輸或被殺死為止。31 羅馬人喜歡看見血、看見激烈的死亡場面。他們擠進競技場觀賞角鬥比賽，就像我們今天看足球、棒球和網球比賽一樣。
+32 有些是從羅馬控制的各地買來的奴隸，有些是戰俘。其餘大多是自願加入的，這一群人一度占了所有角鬥士的一半。角鬥士多半是色雷斯人、高盧人和非洲人。這些搏鬥者一般都身手熟練，也因為出賽而領取報酬。33 所有的鬥士，不分男女，都受到主人妥善照料，打贏之後還會得到獎賞。
+羅馬史家有時稱角鬥士為 hordearii，這個拉丁文的意思是「吃大麥的人」。34 在一處角鬥士墓地找到的骨頭經過化學分析，結果顯示角鬥士平常吃的是小麥、大麥和豆類。35 除了以植物為主的飲食之外，角鬥士還會喝植物灰，用來在劇烈消耗體力之後強化身體，並幫助骨頭癒合得更好。以現代運動員的標準來看，角鬥士的這套飲食也許不太尋常，但在羅馬人的年代，這就是英雄的飲食。
+回到互動練習第32題 →
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

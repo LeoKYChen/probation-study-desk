@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z102ref-13/index.html
+Author: staresto-create ZZSH
+Title: 指考參考試卷（99 課綱適用，102 年施測）克漏字第13題詳解（介系詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 指考參考試卷（99 課綱適用，102 年施測） ／ 第13題
+指考參考試卷（99 課綱適用，102 年施測） 克漏字 第13題
+介系詞線索：句內
+The Scout is given a block of wood made of pine 13 two notches for wheels, four plastic wheels, and four nails.
+(A)in
+(B)by
+(C)for
+(D)with
+答案：(D) with
+題目編號：Z102參_13（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+a block of wood...with two notches（帶有兩個凹槽的木塊）表示童軍拿到的木塊上已鑿有兩個輪子用的凹槽，with 在此表示「具有……特徵」；in／by／for 都不符合此處的伴隨語意。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+學過「with + 受詞 + 受詞補語」表附帶狀態的人，一看到 with 就會想套那個句型，然後開始找受詞補語，找不到反而懷疑自己選錯；也有人因為後面 for wheels 裡已經有一個 for，覺得空格再填 for 太重複而把它排掉。
+怎麼判斷
+先問這是哪一種 with。附帶狀態的 with + 受詞 + 受詞補語，受詞後面一定接一個說明它處於什麼狀態的補語，而且還原得出「受詞是／處於那個狀態」：with the door open 還原成 the door is open、with tears in her eyes 還原成 tears were in her eyes。拿這個方法驗算本題：with two notches for wheels，for wheels 說的是凹槽的用途（裝輪子用的），不是凹槽當下的狀態，還原不成附帶狀態。再看 with 後面其實是三個並列的名詞（two notches for wheels、four plastic wheels、and four nails），受詞補語只針對一個受詞說話，後兩項後面什麼都沒帶，若說第一項多帶一個補語，並列就不對等了。下一句還給了決定性的證據：The finished car must use all nine pieces——九個零件是一塊木頭加四個輪子加四根釘子，凹槽是木塊上的特徵、不算零件，可見 with 後面那一串就是「拿到哪些東西」的清單。所以這裡是單純的 with + 名詞，意思是「附有、連同」。同一篇的 with 連這一格共出現五次，三種用法：with the help of parents（在……的協助下）、本題的「附有」、以及 with their dads, grandfathers、with each other、with family, friends（和……一起），沒有一處是 with + 受詞 + 受詞補語，可見看到 with 不能反射性地套那個句型。真正考那個句型的題，受詞後面會接一個形容詞、分詞或介系詞片語明白描述狀態。
+誘答選項
+in 表「在……裡面」，a block of wood in two notches 會變成木頭在凹槽裡，主客顛倒。by 表方法或經手者（made by hand），木塊不是靠兩個凹槽做出來的。for 表用途，a block of wood for two notches 變成「為了兩個凹槽而準備的木塊」，方向也反了；句中真正需要 for 的是 notches for wheels 那一組，已經寫在那裡了。
+常考字詞與句型
+with + 名詞（附有、連同）、with the help of（在……的協助下）、with + 受詞 + 受詞補語（表附帶狀態，例如 with the door open）、be made of（用……做的，看得出原料）、be given + 名詞（被給予……）、made by hand（手工製作）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The Pinewood Derby is a racing event for Cub Scouts in the Boy Scouts of America. Cub Scouts, with the help of parents, build their own cars from wood, usually from kits 11 a block of pine, plastic wheels, and metal axles.
+Cub Master Don Murphy organized the first Pinewood Derby, held May 15, 1953 in Manhattan Beach, California. Murphy's son was too young to participate in the popular Soap Box Derby races, so he 12 the idea of racing miniature wooden cars.
+The Scout is given a block of wood made of pine 13 two notches for wheels, four plastic wheels, and four nails. The finished car must use all nine pieces, must not exceed a certain weight, must not exceed a certain length and must fit on the track. Each 14 is able to carve and decorate the car as he chooses.
+The great thing about the race is that the boys build the cars with their dads, grandfathers, or 15 they choose. It's not about winning or losing; it is about having the quality time with each other and enjoying a great day with family, friends and smiling faces.
+中譯：小木車競賽是美國幼童軍活動中的一項賽車活動。幼童軍在家長的協助下，用木頭打造自己的賽車，通常使用內含一塊松木、塑膠輪子與金屬車軸的套件。幼童軍團長唐．墨菲於 1953 年 5 月 15 日在加州曼哈頓海灘舉辦了第一屆小木車競賽。墨菲的兒子當時年紀太小，無法參加當時盛行的肥皂箱賽車，於是他想出了讓孩子們用木頭賽車比賽的點子。每位童軍會拿到一塊已鑿出兩個輪子凹槽的松木、四個塑膠輪子和四根釘子。完成的賽車必須用上全部九個零件，不能超過規定的重量與長度，並且必須能放上賽道。每位童軍都可以自行雕刻裝飾自己的賽車。這項比賽最棒的地方在於，男孩們是和爸爸、爺爺或自己選擇的人一起打造賽車。重點不在輸贏，而是彼此共度美好時光，和家人朋友一起享受美好的一天、笑容滿面。
+📋 內容大意
+In the Pinewood Derby, American Cub Scouts race small cars built from a wooden kit.
+Don Murphy began it in 1953 for boys too young for the Soap Box Derby.
+Each boy carves and decorates his own car under set limits on weight, length and parts.
+The point is the time spent building alongside fathers and friends, not the winning.
+← 第12題回到指考參考試卷（99 課綱適用，102 年施測）第14題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g85-24-1/index.html
+Author: staresto-create ZZSH
+Title: 85 年學測克漏字第24題詳解（連接詞／轉折詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 85 年學測 ／ 第24題
+85 年學測 克漏字 第24題
+連接詞／轉折詞線索：句內
+So, when gold was discovered in the West in 1849, he 23 thousands of others and rushed to California. 24 he planned to open a shop in San Francisco, he took many goods with him, 25 a large quantity of canvas.
+(A)Although
+(B)Because
+(C)If
+(D)Unless
+答案：(B) Because
+題目編號：G85_24_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+因果關係：「因為他計畫在舊金山開店，所以他帶了很多貨物」，Because 符合；Although（雖然，轉折）、If（如果，條件）、Unless（除非）都不符合這個因果邏輯。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+Although 在這裡有一點誘惑力，因為「帶很多貨物」聽起來像是件麻煩事，讀著讀著就想接一個轉折。但讓步要求前後互相牴觸，而「要開店」與「帶貨物」是同一個方向——開店本來就需要貨。
+怎麼判斷
+四個選項都是從屬連接詞，形態上排除不了，可見這一格考的是前後兩件事的邏輯關係。前半是 he planned to open a shop in San Francisco（他打算在舊金山開一家店），後半是 he took many goods with him（他隨身帶了很多貨物）。打算開店是原因、帶貨物是結果，這是順向的因果，填 Because。順便一提，86 年第 21 題 →考的是完全一樣的判斷方式（也是 Because 與 Although 二選一），兩題可以對照著看：只要前後兩件事同向，就不可能是讓步。
+誘答選項
+Although（雖然）：讓步，但前後同向。If（如果）：帶出假設，但他確實打算開店，不是假設。Unless（除非）：帶出排除性的條件（除非……否則……），本句沒有那個結構。
+常考字詞與句型
+because + 子句（因為）、although + 子句（雖然）、plan to V（打算做……）、open a shop（開店）、take sth with sb（隨身帶著某物）、goods（貨物、商品）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+When Levi Strauss arrived in the United States from Bavaria, he was only seventeen, poor, and knew very 21 English. Like most immigrants, he was 22 a better life. So, when gold was discovered in the West in 1849, he 23 thousands of others and rushed to California.
+24 he planned to open a shop in San Francisco, he took many goods with him, 25 a large quantity of canvas. He hoped to sell 26 as material for tents or wagon covers. Business, however, was not 27 he had expected.
+28 , as he sat in a cafe in a small town, he had an idea. He saw a man with a hole in the leg of his trousers and 29 realized what Californians 30 for the rough work they were doing—good, strong trousers!
+中譯：李維·史特勞斯從巴伐利亞來到美國時，才十七歲，一貧如洗，幾乎不懂英語。像大多數移民一樣，他渴望過上更好的生活。因此，1849 年西部發現金礦時，他和成千上萬的人一起湧向加州。因為他打算在舊金山開店，他隨身帶了許多貨物，其中包括大量帆布，希望能賣給人們當帳篷或篷車篷布的材料。然而，生意並不如他預期的那樣好。有一天，當他坐在一個小鎮的咖啡館裡時，他有了一個點子。他看到一個男人的褲子破了一個洞，突然明白加州人在做粗重工作時需要的是什麼——耐穿堅固的褲子！
+📋 內容大意
+Levi Strauss came to the United States from Bavaria at seventeen. He was poor, knew hardly any English, and wanted a better life.（敘事文）
+When gold was found in 1849 he rushed west, taking a large load of canvas to sell for tents and wagon covers.（敘事文）
+Sales were poor. Then he saw a workman whose trousers had worn through, and knew what Californians really wanted: strong work trousers.（敘事文）
+← 第23題回到85 年學測第25題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

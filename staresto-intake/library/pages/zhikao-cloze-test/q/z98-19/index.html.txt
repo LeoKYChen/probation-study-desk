@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z98-19/index.html
+Author: staresto-create ZZSH
+Title: 98 年指考克漏字第19題詳解（慣用語／片語）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 98 年指考 ／ 第19題
+98 年指考 克漏字 第19題
+慣用語／片語線索：句內答對率 22%
+答對率 22%：當年每 100 位考生，有 22 位答對。
+When demands for dowry are not met, the bride is 19 torture, and often even killed.
+(A)aware of
+(B)required by
+(C)furious with
+(D)subject to
+答案：(D) subject to
+題目編號：Z98_19（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+be subject to 意為「遭受、易受」：當嫁妝的要求未被滿足時，新娘會遭受虐待，甚至常被殺害；aware of（察覺）、required by（被…要求）、furious with（對…生氣）語意都不合。
+重點：be subject to 是「遭受、易受」或「須經、以…為條件」，後面接名詞或動名詞，to 是介系詞，不是不定詞的 to。
+延伸閱讀：be subject to，受制於外力的那個 to ↗
+深入解析
+你可能會這樣想
+subject 你最熟的是名詞「科目」與「主題」。它當形容詞、後面接 to 時意思是「遭受、易受」，be subject to 必須整組記，本句 the bride is subject to torture 就是「新娘會遭受虐待」。
+怎麼判斷
+先看句子的結構怎麼接。主詞是 the bride，動詞是 is，空格這一段接在 is 後面；更關鍵的是後面用 and 並列了 often even killed。and 連接的兩個部分要對稱，killed 是新娘承受的遭遇，那麼空格這一段也必須是新娘承受的遭遇，而且程度上要能與「被殺害」放在同一條線上遞進。這一步就把方向鎖死了：填進去的東西不能是「察覺」「生氣」這類新娘自己的心理反應。再看前面的條件句 When demands for dowry are not met（當嫁妝的要求未被滿足時），條件之後接的是後果，也指向同一個方向。這裡的 meet 值得單獨記一下：它不是「遇見」，是「滿足、達到」——meet a demand（滿足要求）、meet one's needs（符合需求）、meet a deadline（趕上期限）、meet the standard（達到標準）、meet expectations（符合期待）。這一組的受詞都是「被提出來、需要被達成的東西」；本句用被動 are not met，就是「要求沒有被滿足」。驗算法：把兩個並列的部分接起來唸一遍——the bride is subject to torture, and often even killed（新娘會遭受虐待，甚至常被殺害），前輕後重，遞進成立。be subject to 有兩層常見用法，共同核心都是「受制於某個外力」。一是「遭受、易受」：These products are subject to damage in transit.（這些產品在運送中容易受損。）二是「須經…、以…為條件」：The plan is subject to approval.（該計畫須經核准。）／Prices are subject to change without notice.（價格如有變動恕不另行通知。）這裡有個容易看走眼的地方：be subject to + N / V-ing 的 to 是介系詞，不是不定詞的 to，所以後面接名詞或動名詞，不接原形動詞。The plan is subject to being canceled.（該計畫可能被取消。）同一個形狀的還有 be used to + V-ing（習慣於）、be opposed to + V-ing（反對）、look forward to + V-ing（期待）、object to + V-ing（反對）、be devoted to + V-ing（致力於），這一組的 to 全是介系詞。判斷方法很簡單：把 to 後面換成一個名詞唸唸看，唸得通就是介系詞。另外，subject 這個字有三個身分，讀到它要先認身分。名詞是「科目、主題、（實驗）對象」；動詞 subject sb／sth to sth 是「使某人遭受」（They subjected him to harsh criticism. 他們讓他遭受嚴厲批評。）；形容詞就是本題的 be subject to。認錯身分，整句就讀不動。
+誘答選項
+三個都是「形容詞／分詞 + 介系詞」，句法上都接得上，錯在語意方向。be aware of 是「察覺、意識到」，主詞是感受的一方，會變成「新娘察覺到虐待」，與後面的 killed 對不起來。be required by 是「被…所要求」，by 後面要接提出要求的人或規定，torture 不是要求的來源。be furious with 是「對…感到憤怒」，with 後面通常接人，而且同樣是新娘自己的情緒，不是她承受的遭遇。
+常考字詞與句型
+be subject to（遭受；須經）、subject to change without notice（如有變動恕不另行通知）、be exposed to（暴露於）、be aware of（察覺）、be furious with sb（對某人生氣）、meet a demand／one's needs／a deadline（滿足要求／符合需求／趕上期限）、be used to + V-ing（習慣於）、subject sb to sth（使某人遭受）、dowry（嫁妝）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：98學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+In spite of modernization and the increasing role of women in all walks of life, the practice of the dowry in India is still widespread. The dowry system, money or property brought by a bride to her husband at marriage, was started centuries ago with the intention of providing security for a girl 16 difficulties and unexpected circumstances after marriage.
+For this purpose, the parents gave 17 they could to their daughter, which consequently went to the groom's family. By the beginning of the 21st century, however, the custom had deteriorated to a point whereby the groom and his family had become very 18.
+When demands for dowry are not met, the bride is 19 torture, and often even killed. The more educated a man is, the 20 is the expectation for dowry at the time of marriage. Girls who are highly educated are required to have larger dowries because they usually marry more educated men.
+中譯：儘管社會現代化、女性在各行各業的角色日益提升，印度的嫁妝習俗至今依然十分普遍。嫁妝制度——即新娘結婚時帶到夫家的金錢或財產——起源於幾百年前，最初的用意是為女兒婚後可能遭遇的困難與意外狀況提供保障。基於這個目的，父母會把自己能給的一切都給女兒，而這些財產最終會歸入夫家。然而到了 21 世紀初，這項習俗已經惡化到一種地步，使得新郎與其家人變得非常貪婪。當嫁妝要求沒有被滿足時，新娘便可能遭受凌虐，甚至被殺害。一個男性受教育程度越高，結婚時對嫁妝的期望往往也越高。因此，受過高等教育的女孩通常需要準備更豐厚的嫁妝，因為她們往往會嫁給教育程度更高的男性。
+📋 內容大意
+Despite modernization and women's wider role, the dowry survives across India.
+It began as security for a bride, her parents giving what they could to the groom's family.
+By this century grooms and their families demanded far more; unmet demands bring torture or death.
+← 第18題回到98 年指考第20題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

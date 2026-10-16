@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g88-32-3/index.html
+Author: staresto-create ZZSH
+Title: 88 年學測克漏字第32題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 88 年學測 ／ 第32題
+88 年學測 克漏字 第32題
+字彙選義線索：句內
+But I couldn't 32 his face at all.
+(A)analyze
+(B)emphasize
+(C)recognize
+(D)memorize
+答案：(C) recognize
+題目編號：G88_32_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「我完全認不出他的臉」，recognize（認出）符合；analyze（分析）、emphasize（強調）、memorize（背下、記住，講的是把資訊存進腦中，而這裡是臉在眼前卻認不出來）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是 -ize 結尾的動詞，長得非常像，中文又都跟腦袋在運作有關（分析、強調、認出、記住），眼睛掃過去很容易挑錯。其中 memorize 與 recognize 都跟記憶有關，最容易互相干擾。
+怎麼判斷
+四個選項是四個不同的動詞，文法上都放得進去，可見這一格考的是語意，那就往後找。空格所在的句子是 But I couldn't ___ his face at all.（但我完全……不出他的臉。）下一句是 I didn't know a soul in the city.（我在這座城市裡一個人也不認識。）——連一個人都不認識，當然認不出對方的臉。下一句等於把答案直接講了出來，填 recognize（認出）。順便把 recognize 與 memorize 分清楚：memorize 是刻意去背、把東西存進腦袋（memorize a poem 背一首詩），是輸入；recognize 是東西出現在眼前時認得出來（Do you recognize this song? 你聽得出這首歌嗎？），是比對。本句講的是看到臉卻對不上人，屬於後者。
+誘答選項
+memorize（背下、記住）：講的是把資訊存進腦中的動作，而本句是臉就在眼前卻認不出來。analyze（分析）：把事情拆開來看，與認人無關。emphasize（強調）：把某一點特別提出來，與認人無關。
+常考字詞與句型
+recognize sb／sth（認出）、memorize sth（背下、記住）、not know a soul（一個人也不認識）、have jetlag（有時差）、arrive by plane（搭飛機抵達）、at all（完全，用於否定句）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+It was my first day in this beautiful tropical city. 31 I was walking to the beach, a stranger came up to me and tried to shake my hand. "Don't you remember me, my friend?" he said. But I couldn't 32 his face at all. I didn't know a soul in the city. I had just arrived by plane and still had jetlag. "I 33 you at the airport. I work there at the customs. How are you enjoying our beautiful city?" I couldn't remember him but I was too 34 to tell him. He was so friendly.
+35 he offered to take me to his uncle's seafood restaurant, just by the beach. I thanked him 36 but he insisted that we should go there for dinner. "You'll love the seafood there," he 37 me. "And it will be a dinner to remember."
+So we went to the restaurant and sat by a window 38 the bay. The dinner was great indeed, but the coffee they served was quite different. In fact, it tasted very strange...
+Anyway, it was not 39 10 o'clock the next morning that I finally woke up. But I had no idea where I was. All my money was 40 and my "friend" had even taken my watch and my shoes!
+中譯：這是我在這座美麗熱帶城市的第一天。當我走向海灘時，一個陌生人走過來想跟我握手。「朋友，你不記得我了嗎？」他說。但我完全想不起他的長相，我在這座城市裡誰也不認識，才剛搭飛機抵達，還在時差中。「我在機場見過你，我在海關工作。你喜歡我們這座美麗的城市嗎？」我雖然不記得他，但又不好意思說出來。他表現得非常友善，後來提議帶我去他叔叔開在海邊的海鮮餐廳。我婉謝了他，但他堅持我們應該一起去那裡吃晚餐。「你一定會愛上那裡的海鮮，」他向我保證，「那將會是一頓令人難忘的晚餐。」於是我們去了那間餐廳，坐在能眺望海灣的窗邊。晚餐確實很棒，但他們供應的咖啡味道很奇怪，事實上，嚐起來相當怪異……總之，一直到隔天早上十點左右我才終於清醒過來，但完全不知道自己身在何處。我所有的錢都不見了，我那位「朋友」甚至連我的手錶和鞋子都拿走了！
+📋 內容大意
+On my first day in a new tropical city, an overly friendly stranger approached me claiming to know me from the airport.（敘事文）
+The stranger insistently invited me to go to his uncle's restaurant by the beach for dinner.（敘事文）
+We went to the restaurant for dinner, but the coffee served at the end tasted very unusual.（敘事文）
+I woke up late the next morning only to discover that I had been robbed of my money, watch, and shoes.（敘事文）
+← 第31題回到88 年學測第33題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

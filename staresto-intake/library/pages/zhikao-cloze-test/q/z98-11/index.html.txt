@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z98-11/index.html
+Author: staresto-create ZZSH
+Title: 98 年指考克漏字第11題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 98 年指考 ／ 第11題
+98 年指考 克漏字 第11題
+字彙選義線索：跨句答對率 42%
+答對率 42%：當年每 100 位考生，有 42 位答對。
+Students in the university's School of 11 work with the “patient” to gain experience in effective communication and decision-making.
+(A)Education
+(B)Business
+(C)Pharmacy
+(D)Humanities
+答案：(C) Pharmacy
+題目編號：Z98_11（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+School of Pharmacy（藥學院）呼應全文主題 train the pharmacists of the future（訓練未來的藥師），表示這些學生是藥學院的學生；Education／Business／Humanities 都不符合此處語境。
+深入解析
+你可能會這樣想
+四個選項都是學院的名稱，文法上都放得進 School of 後面，你會憑印象挑一個最常見的。
+怎麼判斷
+答對率四成二。這是同義勾環：空格要的字，前一句已經用同一個字根的另一個字講出來了——to help train the pharmacists of the future（協助訓練未來的藥師）。pharmacists 是「藥師」，換成學院的名稱就是 Pharmacy（藥學），前者是從事這一行的人，後者是這門學科。填進去讀成 the university's School of Pharmacy（這所大學的藥學院）。這一格靠自己這一句判不出來，四個學院填進去都合文法，線索一定在前一句。順帶把同字根的變化一起記：pharmacy（藥學、藥局）、pharmacist（藥師）、pharmaceutical（製藥的）。
+誘答選項
+Education（教育）、Business（商學）、Humanities（人文學科）三個都是真實存在的學院名稱，形態吻合，容易被順手選走；但整篇講的是訓練藥師、模擬病人、藥物過敏反應，沒有一句與教育、商學或人文有關。
+常考字詞與句型
+School of Pharmacy（藥學院）、pharmacist（藥師）、a virtual patient（虛擬病人）、gain experience in（累積……的經驗）、decision-making（決策）、the humanities（人文學科）。
+線索範圍說明：Pharmacy 呼應前一句的 pharmacists（訓練未來的藥師）
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：98學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Keele University in the United Kingdom has developed a "virtual patient," created by a computer, to help train the pharmacists of the future. Students in the university's School of 11 work with the "patient" to gain experience in effective communication and decision-making.
+Students talk with the "patient" directly or by typing questions into a computer. The "patient" responds verbally or with gestures to indicate 12 such as pain, stress or anxiety. As a result, students are forced to communicate clearly 13 that the "patient" understands them completely.
+The Virtual Patient can also be used to explore various medical situations. For example, the "patient" can be programmed to be allergic to certain medicine and can 14 serious reactions if student learners are not aware of the situation. This kind of practice allows students to learn from mistakes in a safe environment that would not be 15 with textbooks alone. The unique system can both be used in a classroom setting or for distance learning.
+中譯：英國基爾大學開發了一位由電腦生成的「虛擬病人」，用來協助訓練未來的藥師。該校藥學院的學生會與這位「病人」互動，藉此累積有效溝通與臨床決策的經驗。學生可以直接與「病人」對話，或透過在電腦上輸入問題來互動。這位「病人」會用語言或動作回應，表現出疼痛、壓力或焦慮等各種狀態。因此，學生必須練習清楚地溝通，以便讓「病人」完全理解他們的意思。這套虛擬病人系統也可以用來探索各種醫療情境。舉例來說，這位「病人」可以被設定為對某種藥物過敏，如果學生沒有注意到這一點，就可能引發嚴重的過敏反應。這種訓練方式讓學生能在安全的環境中從錯誤中學習，這是單靠教科書無法提供的。這套獨特的系統既能用於課堂教學，也能用於遠距教學。
+📋 內容大意
+A British university has built a computer-created virtual patient to train future pharmacists.
+Students speak to it or type questions, and it replies in words or gestures showing pain or stress.
+Programmed for allergies and other risks, it lets students learn from mistakes safely, in class or at a distance.
+回到98 年指考第12題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

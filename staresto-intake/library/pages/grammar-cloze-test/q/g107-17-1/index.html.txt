@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g107-17-1/index.html
+Author: staresto-create ZZSH
+Title: 107 年學測克漏字第17題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 107 年學測 ／ 第17題
+107 年學測 克漏字 第17題
+字彙選義線索：句內答對率 47%
+答對率 47%：當年每 100 位考生，有 47 位答對。
+It is believed that taking breaks from a problem can help 17 a moment of insight or stimulate new ideas.
+(A)spark
+(B)carve
+(C)drill
+(D)grind
+答案：(A) spark
+題目編號：G107_17_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+spark 固定用法「激發」，表示「暫時放下問題休息可以幫助激發靈感的瞬間」；carve（雕刻）、drill（鑽）、grind（研磨）都不合。
+深入解析
+你可能會這樣想
+spark 你最熟的是名詞「火花」，動詞「引發、激發」的用法比較陌生，所以四個選項讀起來會覺得都很怪。
+怎麼判斷
+先確認空格的位置：help 後面可以直接接原形動詞（help 也可以接 to V，兩種都對），所以空格是一個原形動詞，受詞是 a moment of insight（靈光乍現的一刻）。真正的線索在 or 的後面：or stimulate new ideas（或激發新的想法）。or 連接兩個並列的動詞，兩邊的語意方向必須一致，stimulate 是「激發」，所以空格也要是同方向的「引發」。spark 當名詞是火花，火花點燃東西，這個字面意象可以直接幫你記住動詞的意思：spark 就是「點燃、引爆某件事」。
+誘答選項
+carve（雕刻）的受詞是木頭、石頭、雕像這類具體的材料。drill（鑽孔；操練）是往下鑽。grind（磨碎、碾磨）是磨成粉。三個都是對具體物體施力加工的動作，不能接 a moment of insight 這種抽象名詞。
+常考字詞與句型
+spark（引發、激發）、spark interest（引起興趣）、spark a debate（引發辯論）、spark controversy（引發爭議）、stimulate（刺激、激發）、a moment of insight（靈光乍現的一刻）、take a break from（暫時放下……休息一下）、help + 原形動詞（幫助……）、carve（雕刻）、drill（鑽孔；操練）、grind（磨碎）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+It has long been assumed that creativity is some unusual trait enjoyed by the few. However, according to a wide array of scientific and sociological research, creativity is 16 a sign of rare genius than a natural human potential. Thus, it can be nurtured and encouraged.
+It is believed that taking breaks from a problem can help 17 a moment of insight or stimulate new ideas. Unconventional solutions can also be explored. That is why some of the most successful companies in the world, such as 3M and Google, encourage their employees to 18 all sorts of relaxing activities, such as playing pinball and wandering about the campus. During such breaks, the mind turns inward, 19 it can subconsciously puzzle over subtle meanings and connections.
+Another way to increase creativity is to take risks. This is because many breakthroughs come up when people venture 20 their usual routines or areas of expertise. This can be done by, for example, learning new skills or traveling to new countries.
+中譯：長久以來，人們普遍認為創造力是少數天才才擁有的特殊天賦。然而，根據大量科學與社會學研究顯示，創造力與其說是稀有天才的象徵，不如說是每個人與生俱來的潛能，因此是可以被培養與鼓勵的。研究認為，暫時放下手邊的問題休息一下，有助於激發靈光乍現的頓悟時刻，或刺激新想法的誕生，也能幫助人們探索非傳統的解決方案。這也是為什麼像 3M 和 Google 這樣全球最成功的企業，會鼓勵員工從事各種放鬆身心的活動，例如打彈珠台或在園區裡隨意走走。在這樣的休息時間裡，思緒會轉向內在，讓大腦能在潛意識中，慢慢琢磨那些細微的意義與關聯。另一個提升創造力的方法，是勇於冒險，因為許多重大突破，往往來自人們勇於跳脫日常慣例或專業領域之外的嘗試，例如學習新技能，或前往陌生的國家旅行。
+📋 內容大意
+Creativity has long been seen as a rare gift. Research now treats it as a natural human power that can be trained.
+Stepping away from a problem often brings sudden insight. Companies such as 3M and Google let staff relax, and during those pauses the mind keeps working.
+Taking risks also helps. Breakthroughs often come when people move outside their usual routines, by learning new skills or traveling to new countries.
+← 第16題回到107 年學測第18題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g102-26-3/index.html
+Author: staresto-create ZZSH
+Title: 102 年學測克漏字第26題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 102 年學測 ／ 第26題
+102 年學測 克漏字 第26題
+字彙選義線索：句內答對率 38%
+答對率 38%：當年每 100 位考生，有 38 位答對。
+French psychologist Alfred Binet (1859-1911) took a different approach from most other psychologists of his day: He was interested in the workings of the 26 mind rather than the nature of mental illness.
+(A)contrary
+(B)normal
+(C)detective
+(D)mutual
+答案：(B) normal
+題目編號：G102_26_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+句中 rather than the nature of mental illness（而非精神疾病的本質）形成對比，可知 Binet 感興趣的是「正常」心智的運作，故填 normal；contrary（相反的）、detective（偵探的）、mutual（相互的）都無法與 mental illness 構成這組對照。
+深入解析
+你可能會這樣想
+四個選項的字義都不難，normal 更是很基本的字。這一題考的不是字義，而是能不能看出句中的對照關係。
+怎麼判斷
+判斷的依據在 rather than 這組對照。全句 He was interested in the workings of the ___ mind rather than the nature of mental illness.（他感興趣的是…心智的運作，而不是精神疾病的本質），rather than 前後必須是一組相對的概念；後面是 mental illness（精神疾病），前面要填的自然是與之相對的「正常的」，故選 normal。同句前半 took a different approach from most other psychologists of his day（採取與當時多數心理學家不同的研究取向）也呼應這一點：別人研究的是病態，他研究的是常態。凡是句中出現 rather than 或 instead of 的題目，判斷步驟相同：先找出與空格相對的那個概念，再挑出與它相反的選項。
+誘答選項
+contrary 是「相反的」，可以直接修飾名詞（a contrary opinion 相反的意見），但它講的是與某個已經提出的說法相反；本句並沒有那樣一個說法，the contrary mind 填進去講不通。detective 是「偵探的」，與心理學研究的對象無關。mutual 是「相互的」，須有互相作用的雙方，本句只談一個心智。三者都無法與 mental illness 構成一組對照。
+常考字詞與句型
+A rather than B（是 A 而不是 B）、instead of（而不是）、the workings of（…的運作方式）、normal／abnormal（正常的／異常的）、on the contrary（正好相反）。其中 instead of 這一組考過 6 個年度，83 年第 30 題 →、98 年第 27 題 →、105 年第 20 題 →、108 年第 28 題 →、110 年試辦考試第 13 題 →都出現過；on the contrary 考過 4 個年度，93 年第 29 題 →、95 年第 30 題 →、107 年第 29 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+French psychologist Alfred Binet (1859-1911) took a different approach from most other psychologists of his day: He was interested in the workings of the 26 mind rather than the nature of mental illness. He wanted to find a way to measure the ability to think and reason, apart from education in any particular field.
+In 1905 he developed a test in which he 27 children do tasks such as follow commands, copy patterns, name objects, and put things in order or arrange them properly. He later created a standard of measuring children's intelligence 28 the data he had collected from the French children he studied. If 70 percent of 8-year-olds could pass a particular test, then 29 on the test represented an 8-year-old's level of intelligence.
+From Binet's work, the phrase "intelligence quotient" ("IQ") entered the English vocabulary. The IQ is the ratio of "mental age" to chronological age times 100, with 100 30 the average. So, an 8-year-old who passes the 10-year-old's test would have an IQ of 10/8 times 100, or 125.
+中譯：法國心理學家阿爾弗雷德·比奈（1859-1911）採取了與同時代大多數心理學家截然不同的研究取向：他關注的是正常心智的運作方式，而非精神疾病的本質。他希望找到一種方法，能夠測量一個人思考與推理的能力，而不受特定領域教育程度的影響。1905 年，他開發出一套測驗，讓兒童完成諸如遵循指令、臨摹圖形、說出物品名稱，以及依序排列或正確擺放物品等任務。他後來根據對法國兒童所蒐集到的資料，制定出一套測量兒童智力的標準：如果有 70%的八歲兒童能通過某項測驗，那麼在該測驗中的成功表現，就代表了八歲兒童應有的智力水準。比奈的研究成果，讓「智商」（IQ）這個詞彙從此進入英語詞彙之中。智商是「心智年齡」與「實際年齡」的比值再乘以 100，其中 100 代表平均值。因此，一位通過十歲兒童測驗的八歲孩童，其智商即為 10 除以 8 再乘以 100，也就是 125。
+📋 內容大意
+Alfred Binet developed early standardized intelligence tests for children, establishing the foundation for modern IQ measurements.
+← 第25題回到102 年學測第27題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

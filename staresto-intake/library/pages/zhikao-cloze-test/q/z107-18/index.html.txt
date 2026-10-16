@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z107-18/index.html
+Author: staresto-create ZZSH
+Title: 107 年指考克漏字第18題詳解（時態／語態）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 107 年指考 ／ 第18題
+107 年指考 克漏字 第18題
+時態／語態線索：句內答對率 45%
+答對率 45%：當年每 100 位考生，有 45 位答對。
+If you can't think of anything that would have injured your nail, consider the fact that nails grow very slowly, so the injury 18 weeks before the spots ever appeared.
+(A)might occur
+(B)would occur
+(C)will have occurred
+(D)may have occurred
+答案：(D) may have occurred
+題目編號：Z107_18（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【時態】may have occurred 表示對過去事件的推測，意指「傷害可能早在斑點出現前數週就已發生」。might occur／would occur 為對現在或未來的推測，時態不合過去已發生的情境；will have occurred 多作未來完成式；用來推斷過去時表示說話者很有把握，不合此處只是提出一種可能的語境。
+深入解析
+你可能會這樣想
+四個選項都是「助動詞加動詞」，你會先去分 may 與 might、will 與 would 的強弱差別，在情態上打轉。真正的分水嶺其實不在那裡，而在有沒有 have 加過去分詞。
+怎麼判斷
+先找時間標記。句尾寫著 before the spots ever appeared，appeared 是過去式，表示斑點出現已經是過去的事；而受傷又發生在斑點出現之前，那就是比過去更早。掛鉤是 By the time I got there, he had left.，一樣是把時間再往前推一格。不過這兩件事要分清楚：he had left 是過去完成式，單純陳述「更早發生」這個事實；本題還多了一層「推測」，所以不能只換時態。要用「情態助動詞 + have + 過去分詞」這個組合，may 表示推測，have occurred 把時間往前推一格，答案就是 may have occurred（當時可能已經發生了）。同一句前半還有一個現成的示範：If you can't think of anything that would have injured your nail，作者已經用 would have injured 對過去做過一次推測，空格要的是同一件事。答對率四成五，鑑別度 41，分的是有沒有把句尾那個過去式當成時間軸的錨點。
+誘答選項
+might occur 的 might 確實也能表推測，但沒有 have 加過去分詞就只能講現在或未來可能發生，本句的受傷早已發生。would occur 是站在過去某個時間點往後看，與「比 appeared 更早」的方向相反。will have occurred 通常是未來完成式，站在未來某個時間點回頭看；它也能用來推斷已經發生的事（You will have heard about the plans.），但那是說話的人很有把握的推斷，本句只是提出一種可能，用 may 才合。
+常考字詞與句型
+may／might have + 過去分詞（對過去的推測：當時可能已經…）、would have + 過去分詞（對過去的推測，或與過去事實相反）、occur（發生，不及物）、think of（想到）、consider the fact that …（想想…這個事實）、grow slowly（生長緩慢）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：107學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Many people at some point in life have white spots on their fingernails. One of the most common causes for these little white spots is a condition called leukonychia. Although the name sounds pretty serious, the condition typically 16 . And while many people think the white spots are caused by a calcium or zinc deficiency, that's generally not the case.
+In reality, these spots most often develop 17 mild to moderate trauma to your nail. If you can't think of anything that would have injured your nail, consider the fact that nails grow very slowly, so the injury 18 weeks before the spots ever appeared. The spots could also be a sign of a mild infection or allergy, or a side effect of certain medications.
+19 the source of the injury, these spots typically do not require any treatment and should go away as your nail grows out. And they should not return unless you suffer another injury to a nail. However, this generally 20 when only a single or a few nails are affected. If all of your nails are showing white spots, the leukonychia could be related to another more serious condition such as anemia, cardiac disease, diabetes, or kidney disease.
+中譯：許多人一生中都曾在指甲上出現白色斑點，其中最常見的原因之一是一種稱為「白甲症」（leukonychia）的病症。雖然這個名稱聽起來相當嚴重，但這種狀況通常並不嚴重。此外，許多人認為白斑是缺鈣或缺鋅所致，但事實通常不是這樣。
+實際上，這些斑點多半是指甲受到輕度到中度的創傷所造成。如果你想不起指甲曾受過什麼傷，別忘了指甲生長速度非常緩慢，因此受傷後可能要經過數週，斑點才會顯現出來。這些斑點也可能是輕微感染、過敏，或某些藥物副作用的徵兆。
+不論受傷的原因是什麼，這些斑點通常不需要治療，會隨著指甲生長而自然消失，除非指甲再次受傷，否則不會復發。不過，這個現象通常只適用於一片或少數幾片指甲受影響的情況。如果所有指甲都出現白斑，白甲症則可能與貧血、心臟病、糖尿病或腎臟病等更嚴重的病症有關。
+📋 內容大意
+Though the name sounds alarming, white spots on fingernails usually mean leukonychia, a harmless condition.
+They rarely come from poor diet; most follow a minor knock weeks earlier, or an infection, allergy or drug.
+No treatment is needed as the nail grows out, but spots on every nail may signal serious illness.
+← 第17題回到107 年指考第19題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

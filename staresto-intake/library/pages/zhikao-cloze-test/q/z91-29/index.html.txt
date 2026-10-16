@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z91-29/index.html
+Author: staresto-create ZZSH
+Title: 91 年指考克漏字第29題詳解（連接詞／轉折詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 91 年指考 ／ 第29題
+91 年指考 克漏字 第29題
+連接詞／轉折詞線索：句內答對率 63%
+答對率 63%：當年每 100 位考生，有 63 位答對。
+It is the fans that support the kingdoms of the recording companies; 29, the industry never gives its feedback to the fans—by lowering the prices of CDs.
+(A)indeed
+(B)however
+(C)hence
+(D)furthermore
+答案：(B) however
+題目編號：Z91_29（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+分號前後語意對比：「粉絲支撐了唱片公司的王國」vs「業界卻從未回饋粉絲」，however 表達這種轉折對比。indeed（確實）、hence（因此，因果）、furthermore（此外，累加）都不符合這裡「前後對比」的邏輯。
+深入解析
+你可能會這樣想
+however 你的印象大概是「出現在句首、前面要有句號」，所以看到它要填在分號後面會猶豫。however 屬於連接副詞，可以出現在副詞能出現的任何位置（劍橋 English Grammar Today）；分號後面接 however 再加逗號，是很常見的寫法。
+怎麼判斷
+分號不是句界，前後兩半在同一句裡。前半：支撐唱片公司王國的是歌迷。後半：業界從未回饋歌迷，也就是從未調降 CD 售價。前面是歌迷付出、後面是業界不回報，一正一負，要的是轉折，用 however（然而）。這是邏輯勾環：先確定前後兩半同向還是反向，再挑轉折詞。另外這一句也是強調句型 It is the fans that support ...，被強調的是主詞 the fans（歌迷）；依劍橋 English Grammar Today，焦點是人的時候，that 也可以寫成 who。
+誘答選項
+indeed（的確）：用來加強、確認前面的說法，方向同向。hence（因此）：表結果，但「歌迷支撐了唱片業」推不出「業界不回饋」，那是相反的事。furthermore（此外）：再加一件同方向的事，同樣表達不出落差。
+常考字詞與句型
+however（然而，可插在句中）、give feedback to（給……回饋）、lower the price of（調降……的價格）、indeed（的確，用於加強）、hence（因此，表結果）、furthermore（此外，用於補充）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：91學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Many entertainment celebrities, on April 5, 2002, attended an anti-piracy demonstration in Taipei. The purpose of the rally was to ask fans to respect the copyright and to stop buying 26 CDs. Although the intellectual property right is to be protected by law, the fans may think otherwise.
+Obviously, it is the recording industry that wants to 27 piracy. Celebrities in the rally probably have no idea about how much a CD of their music albums costs. After signing million-dollar contracts with recording companies, singers devote most of their time 28 their music perfect while companies are busy commercializing their products.
+It is the fans that support the kingdoms of the recording companies; 29, the industry never gives its feedback to the fans—by lowering the prices of CDs. It is an easy arithmetic 30. When one can buy a CD of pop music for NT$50 anywhere on the streets, why does he or she want to spend NT$300 or more for the same one?
+中譯：2002 年 4 月 5 日，許多演藝明星出席了在台北舉行的一場反盜版示威活動。這場集會的目的是呼籲歌迷尊重著作權、停止購買盜版光碟。雖然智慧財產權應受到法律保護，但歌迷們或許有不同的想法。顯然，唱片業才是真正想要打擊盜版的一方。參加集會的明星們可能根本不知道自己專輯一張 CD 的成本是多少。在與唱片公司簽下數百萬美元的合約後，歌手們花費大部分時間讓自己的音樂盡善盡美，而唱片公司則忙於將產品商業化。支持這些唱片公司王國的正是歌迷；然而，唱片業卻從未以降低 CD 售價的方式回饋歌迷。這其實是一道簡單的算術題：當人們可以在街頭以新台幣 50 元買到一張流行音樂 CD 時，為什麼還要花新台幣 300 元甚至更多去買同一張呢？
+📋 內容大意
+Celebrities marched in Taipei in 2002, urging fans to respect copyright.
+The industry drives the campaign, though stars know little of what an album costs.
+Fans keep the companies rich but see no price cut, so cheap street copies win.
+← 第28題回到91 年指考第30題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

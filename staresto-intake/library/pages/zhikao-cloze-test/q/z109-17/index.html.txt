@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z109-17/index.html
+Author: staresto-create ZZSH
+Title: 109 年指考克漏字第17題詳解（時態／語態）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 109 年指考 ／ 第17題
+109 年指考 克漏字 第17題
+時態／語態線索：句內答對率 64%
+答對率 64%：當年每 100 位考生，有 64 位答對。
+Before the vacation, he 17 in the sink a number of petri dishes in which he had been growing bacteria.
+(A)would pile
+(B)had piled
+(C)was piling
+(D)might have piled
+答案：(B) had piled
+題目編號：Z109_17（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【時態】had piled 為過去完成式，表示「休假前」他已將培養皿堆放好，此動作發生在另一過去事件（回來工作）之前，故用過去完成式。would pile（過去習慣性動作，語意不合）、was piling（過去進行式，未強調先後順序）、might have piled（推測語氣，不合肯定敘述）都不合文意。
+深入解析
+你可能會這樣想
+四個選項都是助動詞加動詞，很容易一個一個去想這個語氣通不通。這一類時態題有更快的路：先找句子裡的時間標記，時間標記決定時態，不必憑語感。
+怎麼判斷
+時間標記就寫在句首：Before the vacation（在休假之前）。整段敘事的基準時間是過去——前一句才說 It was his first day coming back to work after a long vacation.（那是他休完長假回來上班的第一天）。「休假之前」比這個過去的基準點更早，所以要用過去完成式，也就是 had piled。掛鉤是 By the time I got there, he had left.：兩件事都發生在過去，先發生的那一件往前推一格用過去完成式。同一句後半的 in which he had been growing bacteria 用的也是同一個時間層，兩者互相印證。
+誘答選項
+might have piled 形態上也帶著 have 與過去分詞，最容易被誤認；但 might have + 過去分詞 是對過去的推測（當時也許堆了），而本文是在敘述一件確實發生過的事，不是在猜測。was piling 是過去進行式，強調當時正在進行的動作，但這裡要的是在那之前就已經完成的事。would pile 是過去的未來或過去的習慣性動作，兩者都對不上這個時間點。鑑別度 40，分的是認不認得「先發生的事要往前推一格」；認得這一點就選得出來，不太需要回頭讀上下文推理。
+常考字詞與句型
+過去完成式（表示比過去某個時間點更早發生）、by the time + 過去式子句（等到……的時候）、might have + 過去分詞（當時也許……，對過去的推測）、pile sth in／on（把……堆在……）、a number of（若干、一些）、petri dish（培養皿）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：109學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Scientific discovery can take various forms. One of them is "serendipity," the luck of finding valuable things unintentionally. Serendipity was at work when Alexander Fleming discovered penicillin, the antibiotic miracle.
+Fleming had long been known for having an untidy laboratory. One morning in 1928, this 16 proved very fortunate. It was his first day coming back to work after a long vacation. Before the vacation, he 17 in the sink a number of petri dishes in which he had been growing bacteria. While he was sorting through the long 18 dishes of germs that morning, he observed that some of the dishes were contaminated with a fungus, which had ruined his experiment. He was about to 19 the dishes, but he noticed that in one dish, the bacteria had failed to grow in the area around the fungus. This accidental finding gave rise to subsequent research that led to the discovery of penicillin—a drug that has since saved millions of lives.
+Chance 20 , however, may not be enough to make key discoveries like this. The scientist must have a prepared and open mind to detect the importance of the unforeseen incident and to use it constructively.
+中譯：科學發現可能有各種不同的形式，其中之一便是「機緣巧合」（serendipity），也就是在無意間發現有價值事物的幸運。亞歷山大．弗萊明（Alexander Fleming）發現抗生素奇蹟「盤尼西林」的過程，正是機緣巧合發揮作用的例子。
+弗萊明長期以來以實驗室凌亂聞名。1928 年的某天早晨，這個雜亂的習慣卻證明是件幸運的事。那天是他長假結束後回來工作的第一天。在休假前，他曾將許多正在培養細菌的培養皿隨意堆放在水槽裡。當天早上，他在整理這些長時間乏人問津、佈滿細菌的培養皿時，發現其中有些已遭黴菌污染，實驗因而報廢。他正打算把這些培養皿丟棄，卻注意到其中一個培養皿裡，黴菌周圍的細菌竟然無法生長。這項意外的發現，後來促成了進一步的研究，最終導致盤尼西林的發現——這種藥物自此拯救了數百萬條生命。
+然而，光靠機緣巧合，或許還不足以促成像這樣的重大發現；科學家還必須擁有準備充分、開放的心態，才能察覺意外事件的重要性，並善加運用。
+📋 內容大意
+Some discoveries come by serendipity, when something valuable turns up while nobody is looking for it.
+Back from a holiday, Fleming saw that a fungus in his unwashed dishes had killed the bacteria around it.
+That accident produced penicillin, but only a prepared, open mind can turn such luck into discovery.
+← 第16題回到109 年指考第18題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

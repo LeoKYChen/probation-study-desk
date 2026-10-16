@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g95-29-3/index.html
+Author: staresto-create ZZSH
+Title: 95 年學測克漏字第29題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 95 年學測 ／ 第29題
+95 年學測 克漏字 第29題
+字彙選義線索：句內答對率 65%
+答對率 65%：當年每 100 位考生，有 65 位答對。
+Baseball teams, however, play 29 every day for six months.
+(A)hardly
+(B)almost
+(C)somehow
+(D)rarely
+答案：(B) almost
+題目編號：G95_29_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「棒球隊幾乎每天都要打球，長達六個月」，almost（幾乎）符合這種強調頻繁程度的語氣；hardly（幾乎不，語意相反）、somehow（不知怎麼地）、rarely（很少，語意相反）都不合。
+深入解析
+你可能會這樣想
+hardly 常被當成 hard 的副詞，讀成「努力地」，或是只抓到「幾乎」兩個字，其實它是否定副詞，意思是「幾乎不」。這個誤會不解開，這題就會出現兩個看起來都對的選項。
+怎麼判斷
+這題鑑別度 61，是同篇最高，分開的是「有沒有先看選項彼此之間的關係」。四個選項裡 hardly 與 rarely 意思幾乎相同（都是「很少、幾乎不」）。四選一只能有一個答案，兩個同義的選項不可能同時對，所以它們必定同時錯——還沒回頭讀句子就能砍掉一半。這個方法在字彙題非常好用，看到兩個同義選項先劃掉。剩下 almost 與 somehow，再回句子看：Baseball teams, however, play ___ every day for six months。前一句剛說足球一年只打不超過十四場，however 要求後面走反方向，也就是棒球的場次極多。almost every day（幾乎每天）正好把場次拉到最大。
+誘答選項
+hardly 是「幾乎不」，hardly ever 就是「幾乎從不」，方向與 however 的要求相反。rarely 同樣是「很少」，一樣走反方向。somehow 是「不知怎麼地、以某種方式」，用來表達說話的人講不清楚原因，跟頻率無關，放進 play somehow every day 語意不通。hardly 是否定副詞這件事，從位置上也看得出來——它跟 seldom 一樣放在一般動詞前面、be 動詞後面（97 年第 29 題 →的 was seldom visited 就是靠這個位置定案的）。
+常考字詞與句型
+almost every day（幾乎每天）、almost all of（幾乎全部的）、hardly ever（幾乎從不）、hardly any（幾乎沒有）、hardly...when...（一……就）、rarely（很少、難得）。其中 hardly ever 這一組考過 3 個年度，101 年第 23 題 →、102 年第 24 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Fans of professional baseball and football argue continually over which is America's favorite sport. Though the figures on attendance for each vary with every new season, certain 26 remain the same.
+To begin with, football is a quicker, more physical sport, and football fans enjoy the emotional involvement they feel while watching. Baseball, on the other hand, seems more mental, like chess, and 27 those fans that prefer a quieter, more complicated game.
+28 , professional football teams usually play no more than fourteen games a year. Baseball teams, however, play 29 every day for six months.
+Finally, football fans seem to love the half-time activities, the marching bands, and the pretty cheerleaders. 30 , baseball fans are more content to concentrate on the game's finer details and spend the breaks between innings filling out their own private scorecards.
+中譯：職業棒球與美式足球的球迷經常爭論哪一項運動才是美國人最愛的運動。雖然兩者的觀眾人數每季都有所變動，但某些論點始終不變。首先，美式足球節奏較快、對抗性也較強，足球迷享受觀賽時那種情緒投入的感覺。另一方面，棒球則顯得更需要動腦，像下棋一樣，吸引偏好較安靜、較複雜比賽的球迷。此外，職業美式足球隊一年通常只打不超過十四場比賽，然而，棒球隊卻幾乎每天都要打，持續整整六個月。最後，美式足球迷似乎特別喜愛中場表演、遊行樂隊和啦啦隊員。相較之下，棒球迷則更滿足於專注比賽的細節，並在局間休息時填寫自己的計分卡。
+📋 內容大意
+Fans argue endlessly over whether baseball or football is America's favorite sport. The same points return every season.
+Football is faster and more physical, and its fans enjoy the emotional involvement. Baseball is more mental, like chess, and suits fans who prefer a quieter game.
+Football teams play about fourteen games a year, while baseball runs daily for six months. Football crowds love the half-time show; baseball crowds study the details.
+← 第28題回到95 年學測第30題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

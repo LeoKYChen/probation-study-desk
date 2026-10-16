@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g96-20-1/index.html
+Author: staresto-create ZZSH
+Title: 96 年學測克漏字第20題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 96 年學測 ／ 第20題
+96 年學測 克漏字 第20題
+字彙選義線索：句內答對率 43%
+答對率 43%：當年每 100 位考生，有 43 位答對。
+We are completely 20 to helping dogs enjoy a full and active life.
+(A)devoted
+(B)determined
+(C)delighted
+(D)directed
+答案：(A) devoted
+題目編號：G96_20_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】devoted to 指「致力於/奉獻給」；determined（下定決心的，通常接動詞不定詞而非這種介系詞用法）、delighted（高興的）、directed（被指導的）都不合這個「致力於」的語境。
+深入解析
+你可能會這樣想
+這題答對率只有四成三，四個選項都是 de- 或 di- 開頭的過去分詞當形容詞，長得幾乎一樣，而最誘人的是 determined —— 「我們完全下定決心要幫助狗狗享受充實而活躍的生活」，中文順到不行。落差在於：be determined 後面接的是不定詞 to V（be determined to help），而本題空格後面是 to helping，多了 -ing。同一個 to，在 be devoted to 裡是介系詞，在 be determined to 裡是不定詞符號 —— 用法不同，後面能接的東西就不同。這和常見的 used to V（以前常常）對 be used to V-ing（習慣於）的混淆是同一個大分類的陷阱。
+怎麼判斷
+決定性的線索不在空格，在空格後面的 helping。先分兩堆：to 是介系詞的，後面接名詞或動名詞 —— be devoted to V-ing、be used to V-ing、look forward to V-ing、object to V-ing；to 是不定詞符號的，後面接原形動詞 —— be determined to V、be delighted to V。空格後面是 helping 不是 help，第一刀就把 determined 和 delighted 一起砍掉。你一定看過的 I look forward to seeing you.（我期待見到你。）就是這一組最好的掛鉤，那個 to 後面本來就接 V-ing。再往下追一層，就知道 devoted 的 to 為什麼是介系詞：它來自及物動詞用法 devote sth to sth（把某物奉獻給某事，劍橋詞典 devote 詞條），例如 She devoted her life to helping others.；把受詞拉到主詞位置變成被動，就成了 She is devoted to helping others.，to 後面本來就是介系詞受詞的位置，當然接動名詞。這樣還原一次，就不必死背哪個接 V-ing、哪個接原形。「空格前後的 to 到底是哪一種用法」是這個題庫反覆出現的考法：104 年第 23 題 →的 alert it to ___ evil，那個 to 來自片語 alert sb to sth，是介系詞，所以空格要填修飾 evil 的 approaching；99 年第 16 題 →更乾脆，把四種一次列出來比較 —— gave up、ended up、took to 後面都接動名詞，只有 used to 接原形，光看選項就知道它在考 to 的用法。往後只要空格前後看得到 to，第一件事都是先確認它前面那個字要求接什麼。
+誘答選項
+determined（下定決心的）：搭配是 be determined to V（劍橋詞典），後面要原形 help。而且程度副詞也不搭，決心通常說 firmly determined，不說 completely determined。delighted（高興的）：be delighted to V（很高興做某事）、be delighted with sth（對某事感到高興），to 後面同樣要原形。directed（被指示的、被導向的）：direct sth to sb 是把某物寄給或指向某人，be directed to 多半解成「被指示去做某事」，但本句主詞 We 是自己投入的一方，不是被誰指派的，語氣整個反了。
+常考字詞與句型
+be devoted to V-ing（致力於做某事）、devote oneself to sth（投身於……）、be determined to V（決心做某事）、be delighted to V（很高興做某事）、be dedicated to V-ing（致力於做某事）、a full and active life（充實而活躍的生活）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+All dogs deserve to look and feel their best. After a spa treatment at Happy Puppy, dogs come home 16 pampered and relaxed. At Happy Puppy, your dog can enjoy a half day of care and then be taken to the salon at naptime. Here all the dogs are given a bath using professional shampoo and conditioners in a massaging tub. Their relaxing bath will be 17 a full fluff dry and brush-out. When you arrive for pick-up, your dog will be well-exercised and beautiful.
+You can also bring your dog to Happy Puppy and wash it yourself. We supply everything, 18 waist-high tubs, shampoo, and towels. This service is available seven days a week during normal operating hours.
+19 Happy Puppy is a relatively new service, we benefit from more than 20 years of experience in breeding and caring for dogs. We are completely 20 to helping dogs enjoy a full and active life. Our well-trained staff will provide the best possible service for you and your dog.
+中譯：每隻狗都值得看起來、感覺起來最美好。在 Happy Puppy 做完美容護理後，狗狗回家時會感到備受呵護、放鬆自在。在 Happy Puppy，您的狗狗可以享受半天的照護，之後在午休時間被帶到美容沙龍。這裡的每隻狗都會在按摩浴缸中，使用專業洗毛精和潤絲精洗澡。放鬆的沐浴之後，緊接著就是全套的吹整和刷毛。當您來接狗狗時，牠會運動充足又漂漂亮亮的。您也可以帶狗狗來 Happy Puppy 自己動手洗。我們提供一切所需，包括及腰高的浴缸、洗毛精和毛巾。這項服務在正常營業時間內全年無休。雖然 Happy Puppy 是相對新的服務，我們卻擁有超過二十年的養狗與照顧經驗。我們全心致力於幫助狗狗享受充實而活躍的生活。我們訓練有素的員工將為您和您的狗狗提供最好的服務。
+📋 內容大意
+Happy Puppy offers dogs a half day of care and a salon visit at naptime, so they come home pampered and relaxed.
+Each dog is bathed with professional shampoo in a massaging tub, then fluff-dried and brushed out. Owners may also wash their own dogs there any day of the week.
+The business is new, but its staff has over twenty years of experience breeding and caring for dogs. They work to help every dog live an active life.
+← 第19題回到96 年學測第21題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

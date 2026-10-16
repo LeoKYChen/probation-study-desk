@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g83-24-2/index.html
+Author: staresto-create ZZSH
+Title: 83 年學測克漏字第24題詳解（連接詞／轉折詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 83 年學測 ／ 第24題
+83 年學測 克漏字 第24題
+連接詞／轉折詞線索：句內
+For instance, people who have a 23 sense of self-esteem usually act with confidence. 24 they have self-assurance, they do not need constant praise and encouragement from others to feel 25 about themselves.
+(A)Until
+(B)Because
+(C)Unless
+(D)However
+答案：(B) Because
+題目編號：G83_24_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+前後句是因果關係「因為他們有自信，所以不需要持續的讚美」，Because（因為）符合。Until（直到）、Unless（除非）、However（然而）都不符合因果邏輯。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項裡有三個是從屬連接詞、一個是轉承副詞，如果沒看出前後是因果，很容易選了 However——畢竟「不需要別人的讚美」聽起來有點反差。
+怎麼判斷
+先用形態刷一個：However 是轉承副詞，它不能像連接詞那樣帶出一個子句再接主要子句（要用它得寫成 However, they do not need ...，後面不能再掛一個 they have self-assurance）。剩下 Until、Because、Unless，用語意分：前半是 they have self-assurance（他們有自信），後半是 they do not need constant praise and encouragement from others to feel {25} about themselves（他們不需要別人不斷的讚美與鼓勵）。有自信是原因、不需要外界肯定是結果，順向因果，填 Because。85 年第 24 題 →與 86 年第 21 題 →也靠同一個判斷方式，在因果與讓步之間二選一。口訣一句話：只要前後兩件事同向，就不可能是讓步。
+誘答選項
+However（然而）：形態不合，而且前後同向。Until（直到）：講時間的終點，這裡沒有時間關係。Unless（除非）：帶出排除性的條件，語意也不通。
+常考字詞與句型
+because + 子句（因為）、constant praise（不斷的讚美）、encouragement（鼓勵）、depend on others（依賴別人）、need sth from sb（需要來自某人的……）、be one's own best friend（做自己最好的朋友）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+A person's self-concept is reflected in the way he or she behaves, and the way a person behaves affects other people's reactions. 21 , the way people think about themselves 22 a profound effect on all areas of their lives.
+For instance, people who have a 23 sense of self-esteem usually act with confidence. 24 they have self-assurance, they do not need constant praise and encouragement from others to feel 25 about themselves. Self-confident people are their own best friends. They participate 26 life enthusiastically and spontaneously. They are not affected by 27 others think they "should" do.
+People 28 high self-esteem are not hurt by criticism; they do not 29 criticism as personal rejection. 30 , they tend to believe criticism to be suggestion for improvement.
+中譯：一個人的自我概念反映在他／她的行為方式上，而一個人的行為方式也會影響他人的反應。因此，人們對自己的看法對生活各層面都有深遠的影響。舉例來說，擁有健全自尊心的人通常表現得很有自信。因為他們有自信，不需要別人不斷的稱讚和鼓勵才能感覺良好。有自信的人是自己最好的朋友。他們熱情自發地參與生活，不會受到別人認為他們「應該」怎麼做的影響。自尊心高的人不會被批評傷害；他們不會把批評當作是對自己的否定，相反地，他們往往把批評視為改進的建議。
+📋 內容大意
+A person's self-concept shapes behavior, and behavior shapes how others respond, which means self-image touches every area of life.
+People whose self-esteem is strong act confidently, need no constant praise, and throw themselves into life enthusiastically and spontaneously.
+They are untroubled by other people's expectations and treat criticism as advice for improvement rather than as personal rejection.
+← 第23題回到83 年學測第25題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

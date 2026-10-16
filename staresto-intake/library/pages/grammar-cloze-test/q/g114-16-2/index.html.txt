@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g114-16-2/index.html
+Author: staresto-create ZZSH
+Title: 114 年學測克漏字第16題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 114 年學測 ／ 第16題
+114 年學測 克漏字 第16題
+字彙選義線索：句內答對率 31%
+答對率 31%：當年每 100 位考生，有 31 位答對。
+It can 16 suddenly, progressing from a feeling of uneasiness to a cold sweat.
+(A)crash
+(B)flush
+(C)burst
+(D)strike
+答案：(D) strike
+題目編號：G114_16_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+strike 用於疾病、災難時是「突然發作、突然侵襲」，與 suddenly 及後面的 progressing from a feeling of uneasiness to a cold sweat 完全吻合；crash（碰撞）、flush（沖洗、臉紅）、burst（爆裂；表「突然開始」要接 into／out）都不合。
+深入解析
+答對率三成一，鑑別度 14。
+你可能會這樣想
+a disease／disaster + strike。strike 你記的是「打、擊」（strike a ball 擊球）與「罷工」（go on strike）。它還有一個用法你可能比較少注意：主詞換成疾病、災難、天災時，意思是「突然發作、突然侵襲」，這一義在新聞與健康類文章裡到處都是。同義的說法是 hit，兩個字可以互換：An earthquake struck／hit the area.（地震侵襲該地區。）
+怎麼判斷
+主詞 It (motion sickness) 指的是前一句的暈動症，空格後面緊接 suddenly，再接 progressing from a feeling of uneasiness to a cold sweat（從一陣不適逐漸演變成冒冷汗）——整句描述的正是症狀突然發作、然後一路惡化。疾病當主詞、後面接 suddenly，答案就鎖定 strike。一句記完：The typhoon struck the island just after midnight, and classes were called off at dawn.（颱風在午夜剛過時侵襲本島，天一亮就宣布停課。）〔情境取材自 114 學測作文題：颱風停課〕
+誘答選項
+crash 是「碰撞、墜毀」，用在車輛或系統；flush 是「沖水、臉紅」，雖然跟臉有關，講的是臉紅不是發病；burst 是「爆裂」，要表達突然發生必須接介系詞（burst into tears 突然大哭、burst out laughing 突然大笑），不能像本句這樣單獨用。
+常考字詞與句型
+a disease strikes（疾病發作）、a disaster strikes（災難侵襲）、be struck by lightning（被閃電擊中）、strike a balance（取得平衡）、go on strike（罷工）、motion sickness（暈動症）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+If you have ever been sick to your stomach on a rocking boat or a bumpy car ride, you know the discomfort of motion sickness. It can 16 suddenly, progressing from a feeling of uneasiness to a cold sweat. Soon, it can lead to dizziness, nausea, and vomiting.
+Motion sickness occurs when the signals your brain receives from your eyes, ears, and body 17 . Your brain doesn't know whether you are stationary or moving when these parts send conflicting information: One part of your balance-sensing system detects that your body is moving, but the other parts 18 . Your brain's confused reaction makes you feel sick. You may experience the discomfort from the motion of cars, boats, or amusement park rides. You may also get sick from playing video games, or looking through a microscope.
+You can take some 19 to help avoid the discomfort. If you are traveling, reserve seats where motion is felt the least, such as the front row of a car or forward cars of a train. Looking out into the distance from the vehicle can help 20 . You can also take medicine before your ride to avoid or reduce nausea and vomiting.
+中譯：如果你曾在搖晃的船上或顛簸的車程中感到反胃想吐，你一定明白暈動症有多麼不舒服。它可能突然發作，從一開始隱約的不適感，逐漸演變成冒冷汗，接著可能引發頭暈、噁心和嘔吐。暈動症的發生，是因為大腦從眼睛、耳朵和身體所接收到的訊號彼此不一致——當這些身體部位傳來相互矛盾的資訊時，大腦便無法判斷你究竟是靜止不動，還是正在移動：你身體的其中一套平衡感應系統偵測到身體正在移動，但其他部位卻沒有偵測到同樣的訊息。大腦因此感到混亂，這種混亂的反應正是讓你感到不適的原因。你可能會因為搭乘汽車、船隻或遊樂園設施而感到暈眩不適，也可能因為玩電子遊戲，或透過顯微鏡觀察物體而感到不舒服。你可以採取一些預防措施來避免這種不適感——如果你正在旅行，可以預訂晃動感受最小的座位，例如汽車前座或火車前段的車廂。將視線望向車外遠處，也有助於緩解不適。你也可以在搭乘交通工具前先服藥，以預防或減輕噁心和嘔吐的症狀。
+📋 內容大意
+Motion sickness is familiar to anyone who has felt ill on a rocking boat or bumpy car ride. It starts with unease and can end in vomiting.
+It arises when the signals from your eyes, ears and body conflict. One part of the balance system senses movement, the rest sense none, and the brain is confused.
+Video games and microscopes can bring it on too. Travelers can sit where motion is least, look far into the distance, or take medicine before the journey.
+← 第15題回到114 年學測第17題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

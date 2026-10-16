@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g110-18-1/index.html
+Author: staresto-create ZZSH
+Title: 110 年學測克漏字第18題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 110 年學測 ／ 第18題
+110 年學測 克漏字 第18題
+字彙選義線索：句內答對率 70%
+答對率 70%：當年每 100 位考生，有 70 位答對。
+The city council originally proposed 18 the pigeon population by gathering the birds and shooting them.
+(A)counting
+(B)reducing
+(C)displaying
+(D)maintaining
+答案：(B) reducing
+題目編號：G110_18_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「市議會原本提議透過聚集並射殺鴿子來『減少』鴿子數量」，reducing（減少）符合，跟後文槍殺鴿子的手段呼應；counting（計算）、displaying（展示）、maintaining（維持，語意相反）都不合。
+深入解析
+你可能會這樣想
+四個選項都是動名詞，接在 proposed 後面文法上都成立，所以只能比語意。你可能被 counting（計算）吸引，因為後面提到 gathering the birds（把鳥聚集起來），聽起來像要清點數量。
+怎麼判斷
+關鍵在 gathering 後面接的那個動詞：and shooting them（然後射殺牠們）。聚集起來是為了射殺，射殺的目的當然是減少數量，不是清點。再往後看最後一句 there would be a decrease of 20 percent in the pigeon population（鴿子數量會減少兩成），decrease 這個字直接印證整段的目標就是 reduce。
+誘答選項
+counting（計算）與射殺這個手段搭不起來；displaying（展示）語意不通；maintaining（維持）方向相反，市議會要的是減少不是維持現狀。
+常考字詞與句型
+reduce the population（減少數量）、a decrease of 20 percent in（……減少兩成）、propose V-ing（提議做……）、birth control（節育）、maintain（維持）、animal rights group（動物權益團體）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Street pigeons are a common sight in many European cities. In fact, a visit to a major European city just would not be the same 16 encountering them: bathing in fountains, perching on historic buildings, and flocking in public squares. In Barcelona, however, the birds are now threatening to 17 the city's historic center, pooping on monuments, buildings, and even tourists.
+The city council originally proposed 18 the pigeon population by gathering the birds and shooting them. But that idea led to strong protests from numerous animal rights groups. After heated debates and discussions, the government was finally persuaded to consider another 19 effective method: giving the pigeons birth control.
+In 2016, the city council decided to put its 85,000 pigeon population on a birth control pill to block the formation of eggs in birds. Starting from April 2017, the pills were placed in 40 bird feeders 20 throughout the city. It was predicted that there would be a decrease of 20 percent in the pigeon population in the first year and between 70 and 80 percent in four or five years.
+中譯：街頭鴿子在許多歐洲城市中隨處可見。事實上，造訪歐洲主要城市時，若沒有遇見牠們——在噴泉中戲水、棲息在歷史建築上、成群聚集在廣場中——似乎就少了點什麼。然而，在巴塞隆納，這些鴿子如今卻威脅著這座城市的歷史中心，牠們的排泄物弄髒了紀念碑、建築物，甚至遊客本身。市議會原本提議透過捕捉並撲殺鴿子來控制數量，但這項提議引發了眾多動物權益團體的強烈抗議。經過激烈的辯論與討論，政府最終被說服考慮另一種同樣有效的方法：讓鴿子節育。2016 年，市議會決定為當地八萬五千隻鴿子施予節育藥物，以阻止鳥蛋的形成。從 2017 年 4 月起，這些藥物被投放在全市四十個餵食器中。預估第一年鴿子數量將減少 20%，而在四到五年內，減幅將達到 70%至 80%。
+📋 內容大意
+Barcelona managed its overpopulated street pigeons by switching from lethal culling to a birth control program following public protests.
+← 第17題回到110 年學測第19題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

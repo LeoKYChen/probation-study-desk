@@ -1,0 +1,573 @@
+[
+ {
+  "id": "CLA-g113p1",
+  "year": "改編練習（一）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "魔鬼氈的發明（The Invention of Velcro）",
+  "flagNote": "本題庫改編練習：文章改編自 113 年學測閱讀測驗〈魔鬼氈的發明〉，刪短後照現行學測綜合測驗的版面出題（第 11–15 題，每題四選一），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "accuracyRateSource": null,
+  "text": "One morning in 1941, Swiss engineer George de Mestral went for a walk in the woods with his dog. Back home, he found burrs, the sticky seed cases of some plants, stuck to the dog’s fur and his pants. Under a microscope, he saw that the burrs had many tiny hooks that clung firmly to the loops in the fabric. Seeing how tightly the hooks and loops held together, he {11} that if he could copy this design, he could produce a strong fastener—something that holds two things together—with many uses. Finding the right fabric for a strong bond was his first challenge. Cotton proved too soft, so after years of testing, he chose nylon, a strong man-made material. By 1955, he {12} a version that stayed closed yet was easy to pull apart when needed. That year, the product, named “Velcro,” received a Swiss patent, and de Mestral opened factories in Europe and, eventually, North America to {13} it on a large scale. At first, though, Velcro was not a success. Most fashion critics considered it ugly and cheap-looking. {14} , its use was limited to athletic equipment. In the early 1960s, however, the fastener finally {15} when NASA began using it in items sent into space with astronauts. Today, de Mestral’s design is found almost everywhere, from clothing and shoes to toys and airline seats.",
+  "zh": "1941 年的一個早晨，瑞士工程師 George de Mestral 帶著狗到樹林裡散步。回家後，他發現狗毛和自己的褲子上黏了不少芒刺，也就是某些植物會黏人的種子外殼。他把芒刺放到顯微鏡下，看見上面有許多細小的鉤子，緊緊勾住布料上的線圈。看到鉤子和線圈扣得這麼牢，他斷定，要是能仿照這種構造，就能做出一種牢固、用途廣泛的扣件，用來把兩樣東西固定在一起。他的第一個難題，是找到能牢牢黏合的布料。棉布太軟，所以經過多年測試，他改用尼龍這種堅固的人造材料。到了 1955 年，他已經把產品改良到既能牢牢扣住、需要時又能輕鬆扯開的程度。同一年，這項取名為 Velcro 的產品取得了瑞士的專利；de Mestral 也開始設廠大量製造，先在歐洲，後來又擴展到北美。不過，魔鬼氈一開始並不成功。大多數時尚評論家認為它又醜又廉價，因此它只用在運動器材上。到了 1960 年代初期，美國太空總署開始把它用在隨太空人上太空的物品上，這種扣件終於大受歡迎。如今，de Mestral 的設計幾乎隨處可見，從衣服、鞋子到玩具和飛機座椅都有。",
+  "textMarked": "One morning in 1941, Swiss engineer George de Mestral went for a walk in the woods with his dog. Back home, he found burrs, the sticky seed cases of some plants, stuck to the dog’s fur ~~and~~ his pants. Under a microscope, he saw that the burrs had many tiny hooks that clung firmly to the loops in the fabric. Seeing how tightly the hooks and loops held together, he {11} that if he could copy this design, he could produce a strong fastener—something that holds two things together—with many uses.\n\nFinding the right fabric for a strong bond was his first challenge. Cotton proved too soft, ~~so~~ after years of testing, he chose nylon, a strong man-made material. By 1955, he {12} a version that stayed closed ~~yet~~ was easy to pull apart ~~when~~ needed. That year, the product, named “Velcro,” received a Swiss patent, ~~and~~ de Mestral opened factories in Europe ~~and~~, eventually, North America to {13} it on a large scale.\n\nAt first, ~~though~~, Velcro was not a success. Most fashion critics considered it ugly ~~and~~ cheap-looking. {14} , its use was limited to athletic equipment. In the early 1960s, ~~however~~, the fastener finally {15} ~~when~~ NASA began using it in items sent into space with astronauts. @@Today, de Mestral’s design is found almost everywhere, from clothing and shoes to toys and airline seats.@@",
+  "outline": [
+   "On a walk in 1941, George de Mestral found burrs on his dog and pants. Their tiny hooks gripped fabric loops, which gave him the idea for a fastener.",
+   "Soft cotton failed, so he switched to nylon. By 1955 the fastener held well but opened easily, won a Swiss patent, and went into factory production.",
+   "Critics found Velcro ugly, so at first only sports gear used it. NASA made it popular in the 1960s, and today it appears almost everywhere, from clothing to airline seats."
+  ],
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "全文字數": 232,
+   "句數": 13,
+   "記號數": 11,
+   "每百字記號數": "4.7",
+   "建檔": "第三百六十五場建檔。改編自 g113p1；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+  }
+ },
+ {
+  "id": "CLA-g110p4",
+  "year": "改編練習（二）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "摩根奇幻樂園（Morgan’s Wonderland）",
+  "flagNote": "本題庫改編練習：文章改編自 110 年學測閱讀測驗〈摩根奇幻樂園〉，刪短後照現行學測綜合測驗的版面出題（第 11–15 題，每題四選一），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "accuracyRateSource": null,
+  "text": "Morgan’s Wonderland, located in San Antonio, Texas, is a theme park intended mainly for children with mental or physical disabilities. The park was built by Gordon Hartman, a former real estate developer, and was inspired by his daughter, Morgan, who has physical challenges and severe cognitive delays, or slow mental development. Morgan’s Wonderland opened in the spring of 2010 as the world’s first ultra-accessible family fun park—that is, a park that people with any disability can easily use. Admission is free for guests with special needs, and tickets for the general public are heavily discounted {11} people of all ages and abilities can come together and play in a safe environment. Completely wheelchair-accessible, the park offers 25 acres of {12} , including rides, playgrounds, a catch-and-release fishing lake, and picnic areas throughout the grounds. The rides have all been {13} for wheelchair users, so every member of the family can join in the fun. In June 2017, the park celebrated the opening of Morgan’s Inspiration Island. This {14} is made up of five themed splash pads—play areas where water sprays up from the ground—and a riverboat ride. There, guests in wheelchairs can {15} special waterproof chairs and enjoy the water without risking damage to their own wheelchairs. “Morgan taught me that there’s more to life in many ways than what I saw before,” said Hartman.",
+  "zh": "摩根奇幻樂園位在德州聖安東尼奧，是一座主要為身心障礙兒童設計的主題樂園。樂園由前房地產開發商 Gordon Hartman 興建，靈感來自他的女兒 Morgan；Morgan 身體有障礙，也有嚴重的認知發展遲緩，心智發展得比較慢。摩根奇幻樂園在 2010 年春天開幕，是全世界第一座「超無障礙」的家庭遊樂園，也就是說，不論有哪一種障礙的人，都能輕鬆使用園區。有特殊需求的遊客免費入園，一般民眾的門票也大打折扣，好讓各種年齡、各種能力的人都能聚在一起，在安全的環境裡玩樂。樂園全區都能讓輪椅通行，25 英畝的園區裡有各式遊樂設施，包括遊樂器材、遊戲場、釣了再放生的釣魚湖，園區各處還有野餐區。所有遊樂器材都經過改造，坐輪椅也能搭乘，全家人都能一起同樂。2017 年 6 月，樂園慶祝「摩根靈感島」開幕。這個新增的園區有五座主題戲水區（地面會噴出水來的遊戲區）和一項河船遊樂設施。坐輪椅的遊客在那裡可以換坐特製的防水椅，盡情玩水，不必擔心弄壞自己的輪椅。Hartman 說：「Morgan 讓我明白，人生在許多方面，比我以前所看到的還要豐富。」",
+  "textMarked": "^^Morgan’s Wonderland, located in San Antonio, Texas, is a theme park intended mainly for children with mental or physical disabilities.^^ The park was built by Gordon Hartman, a former real estate developer, ~~and~~ was inspired by his daughter, Morgan, who has physical challenges ~~and~~ severe cognitive delays, or slow mental development. Morgan’s Wonderland opened in the spring of 2010 as the world’s first ultra-accessible family fun park—that is, a park that people with any disability can easily use. Admission is free for guests with special needs, ~~and~~ tickets for the general public are heavily discounted {11} people of all ages ~~and~~ abilities can come together ~~and~~ play in a safe environment.\n\n@@Completely wheelchair-accessible, the park offers 25 acres of {12} , including rides, playgrounds, a catch-and-release fishing lake, and picnic areas throughout the grounds.@@ The rides have all been {13} for wheelchair users, ~~so~~ every member of the family can join in the fun.\n\nIn June 2017, the park celebrated the opening of Morgan’s Inspiration Island. This {14} is made up of five themed splash pads—play areas where water sprays up from the ground—~~and~~ a riverboat ride. There, guests in wheelchairs can {15} special waterproof chairs ~~and~~ enjoy the water without risking damage to their own wheelchairs. “Morgan taught me that there’s more to life in many ways than what I saw before,” said Hartman.",
+  "outline": [
+   "Gordon Hartman built this Texas theme park for disabled children after his daughter Morgan inspired him. It opened in 2010, and guests with special needs get in free.",
+   "The whole park is open to wheelchairs. It has rides, playgrounds, a fishing lake and picnic spots, and wheelchair users can enjoy every ride with their families.",
+   "A water area with splash pads and a riverboat ride opened in 2017. Hartman says Morgan taught him that life holds more than he once saw."
+  ],
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "全文字數": 230,
+   "句數": 10,
+   "記號數": 10,
+   "每百字記號數": "4.3",
+   "建檔": "第三百六十五場建檔。改編自 g110p4；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+  }
+ },
+ {
+  "id": "CLA-g106p2",
+  "year": "改編練習（三）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "巴西戰舞卡波耶拉（Capoeira）",
+  "flagNote": "本題庫改編練習：文章改編自 106 年學測閱讀測驗〈巴西戰舞卡波耶拉〉，刪短後照現行學測綜合測驗的版面出題（第 11–15 題，每題四選一），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "accuracyRateSource": null,
+  "text": "Capoeira is a martial art—a style of fighting—that also includes acrobatics, drumming, singing, and dance. {11} its dancelike appearance, it shares many basic techniques with other martial arts. Capoeira was created nearly 500 years ago in Brazil by African slaves. {12} from their homes against their will, they first developed it as a means of self-defense. But before long, Capoeira was no longer only for protection; it also became a powerful weapon in their life-or-death struggle against the slave owners. When the owners realized the power of Capoeira, they began to punish anyone who practiced it. The slaves therefore learned to {13} the forbidden fights with singing, clapping, and dancing, as though Capoeira were simply entertainment. The slave owners were not the only ones against Capoeira. At first, the Brazilian government also {14} it. However, a man known as Mestre Bimba devoted a great deal of time and effort to convincing the government that it had great cultural value and should become an official fighting style. He succeeded and turned the martial art into Brazil’s national sport. Bimba was also among the first to open Capoeira schools, which helped the art {15} around the world. Nowadays, Capoeira can be seen in movies and music videos, and it is believed to have influenced breaking and other hip-hop dance styles.",
+  "zh": "卡波耶拉是一種武術，也就是一種格鬥方式，還融合了雜技、擊鼓、歌唱和舞蹈。卡波耶拉儘管外表像舞蹈，卻和其他武術有許多相同的基本技巧。卡波耶拉是將近五百年前，巴西的非洲奴隸創造出來的。這些非洲人違反自己的意願，遭人擄離家鄉，起初練卡波耶拉是為了自衛。不過沒過多久，卡波耶拉就不只用來保護自己，還成了他們對抗奴隸主、攸關生死的強大武器。奴隸主發現卡波耶拉的威力之後，開始懲罰練習的人。奴隸於是學會用歌唱、拍手和舞蹈來掩飾這些禁止的打鬥，讓卡波耶拉看起來只是一種娛樂。反對卡波耶拉的不只是奴隸主，一開始，巴西政府也禁止卡波耶拉。不過，一位人稱 Mestre Bimba 的人花了大量時間和心力，說服巴西政府卡波耶拉有很高的文化價值，應該成為正式的格鬥技。他成功了，讓這門武術成為巴西的國技。Bimba 也是最早開設卡波耶拉學校的人之一，這些學校讓卡波耶拉在世界各地流行起來。現在，電影和 MV 裡都看得到卡波耶拉，一般也認為卡波耶拉影響了霹靂舞和其他嘻哈舞蹈。",
+  "textMarked": "@@Capoeira is a martial art—a style of fighting—that also includes acrobatics, drumming, singing, and dance.@@ {11} its dancelike appearance, it shares many basic techniques with other martial arts.\n\n@@Capoeira was created nearly 500 years ago in Brazil by African slaves.@@ {12} from their homes against their will, they first developed it as a means of self-defense. ~~But~~ before long, Capoeira was no longer only for protection; it also became a powerful weapon in their life-or-death struggle against the slave owners. ~~When~~ the owners realized the power of Capoeira, they began to punish anyone who practiced it. The slaves ~~therefore~~ learned to {13} the forbidden fights with singing, clapping, ~~and~~ dancing, ~~as though~~ Capoeira were simply entertainment.\n\nThe slave owners were not the only ones against Capoeira. At first, the Brazilian government also {14} it. ~~However~~, a man known as Mestre Bimba devoted a great deal of time and effort to convincing the government that it had great cultural value ~~and~~ should become an official fighting style. He succeeded ~~and~~ turned the martial art into Brazil’s national sport.\n\n@@Bimba was also among the first to open Capoeira schools, which helped the art {15} around the world.@@ Nowadays, Capoeira can be seen in movies ~~and~~ music videos, ~~and~~ it is believed to have influenced breaking ~~and~~ other hip-hop dance styles.",
+  "outline": [
+   "Capoeira mixes fighting, acrobatics, drumming, singing, and dance. Although it looks like a dance, many of its basic moves match those of other martial arts.",
+   "African slaves in Brazil created it nearly 500 years ago for self-defense. When their owners punished them for it, they hid the fighting behind music and dancing.",
+   "The Brazilian government first made the art illegal, but Mestre Bimba persuaded officials of its cultural worth, and it became the national sport.",
+   "Bimba’s early schools spread the art worldwide. Today it appears in films and music videos and is thought to have shaped breaking and other hip-hop dances."
+  ],
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "全文字數": 223,
+   "句數": 13,
+   "記號數": 14,
+   "每百字記號數": "6.3",
+   "建檔": "第三百六十五場建檔。改編自 g106p2；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+  }
+ },
+ {
+  "id": "CLA-g104p1",
+  "year": "改編練習（四）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "泰武國小古謠傳唱隊（Taiwu Elementary School Folk Singers）",
+  "flagNote": "本題庫改編練習：文章改編自 104 年學測閱讀測驗〈泰武國小古謠傳唱隊〉，刪短後照現行學測綜合測驗的版面出題（第 11–15 題，每題四選一），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "accuracyRateSource": null,
+  "text": "In 2009, the Taiwu Elementary School Folk Singers were invited to perform in Europe. Camake Valaule, a physical education teacher and the group’s founder, admitted he was very nervous on their first European tour. Since most of the 75-minute show was a cappella, that is, sung without instruments, he feared the audience would fall asleep. {11} , the listeners paid close attention from start to finish. They later told him that through the songs, they had formed a {12} of the singers’ village without having to visit it. According to Camake, singing traditional ballads, or folk songs, has also helped the students and their parents {13} their own culture. It used to be that only tribal elders aged between 50 and 60 could sing these songs. Hearing their children perform them, many parents have begun to wonder why they themselves cannot sing these ballads. Now, it is often the children {14} the songs to their parents. Although the group has become famous abroad, fame was never Camake’s goal when he founded it in 2006. What mattered most was helping the children understand why they sing these songs and helping them preserve their culture. After Typhoon Morakot struck in August 2009, the school and the village had to {15} to a new site. “We could not take the forest or our houses with us,” Camake said, “but we could bring our culture along.”",
+  "zh": "2009 年，泰武國小古謠傳唱隊受邀到歐洲演出。體育老師 Camake Valaule 是傳唱隊的創辦人，他坦承第一次到歐洲巡迴演出時非常緊張。75 分鐘的演出大部分是 a cappella，也就是沒有樂器伴奏的清唱，所以他擔心觀眾會睡著。出乎他意料的是，聽眾從頭到尾都聽得非常專心。他們事後告訴他，透過這些歌，他們不必親自走一趟，腦中就有了歌者村子的畫面。Camake 說，唱傳統古謠（也就是民歌）還讓學生和家長重新和自己的文化連結起來。以前只有五、六十歲的部落長老會唱這些歌；家長聽到孩子唱，很多人開始納悶，為什麼自己不會唱這些古謠。現在常常是孩子教父母唱這些歌。雖然傳唱隊已經在國外打響名號，但是 Camake 在 2006 年成立傳唱隊時，目標從來不是名聲。他最在意的是讓孩子明白自己為什麼唱這些歌，並且幫助他們保存自己的文化。2009 年 8 月莫拉克颱風來襲之後，學校和村子必須遷到新的地方。Camake 說：「我們帶不走森林，也帶不走我們的房子，但是我們可以把文化帶著走。」",
+  "textMarked": "In 2009, the Taiwu Elementary School Folk Singers were invited to perform in Europe. Camake Valaule, a physical education teacher and the group’s founder, admitted he was very nervous on their first European tour. ~~Since~~ most of the 75-minute show was a cappella, ~~that is~~, sung without instruments, he feared the audience would fall asleep. {11} , the listeners paid close attention from start to finish. They later told him that through the songs, they had formed a {12} of the singers’ village without having to visit it.\n\n@@According to Camake, singing traditional ballads, or folk songs, has also helped the students and their parents {13} their own culture.@@ It used to be that only tribal elders aged between 50 and 60 could sing these songs. Hearing their children perform them, many parents have begun to wonder why they themselves cannot sing these ballads. Now, it is often the children {14} the songs to their parents.\n\n~~Although~~ the group has become famous abroad, fame was never Camake’s goal when he founded it in 2006. ^^What mattered most was helping the children understand why they sing these songs and helping them preserve their culture.^^ ~~After~~ Typhoon Morakot struck in August 2009, the school ~~and~~ the village had to {15} to a new site. “We could not take the forest ~~or~~ our houses with us,” Camake said, “~~but~~ we could bring our culture along.”",
+  "outline": [
+   "In 2009 a school folk group from Taiwu toured Europe. Its founder feared a show without instruments would bore people, but audiences loved it and felt they saw the village.",
+   "Singing old ballads has brought students and parents closer to their culture. Once only tribal elders knew the songs; now children teach them to their parents.",
+   "Fame abroad was never the goal; keeping the culture alive was. After Typhoon Morakot forced the school and village to move, culture was something they could still carry."
+  ],
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "全文字數": 235,
+   "句數": 13,
+   "記號數": 9,
+   "每百字記號數": "3.8",
+   "建檔": "第三百六十五場建檔。改編自 g104p1；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+  }
+ },
+ {
+  "id": "CLA-g100p4",
+  "year": "改編練習（五）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "紅杉的生態（The Ecology of Redwood Trees）",
+  "flagNote": "本題庫改編練習：文章改編自 100 年學測閱讀測驗〈紅杉的生態〉，刪短後照現行學測綜合測驗的版面出題（第 11–15 題，每題四選一），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "accuracyRateSource": null,
+  "text": "Redwood trees are the tallest plants on Earth, reaching heights of up to 100 meters. They are also known for their {11} , typically 500 to 1,000 years but sometimes more than 2,000 years. The trunk of a redwood is huge and usually forms a single straight column. It is covered with a soft, spongy bark, which can be well over two feet thick in mature trees. This bark gives older trees some protection from insects, but its main {12} is that it keeps the center of the tree intact, or undamaged, during moderate forest fires. This resistance to fire explains why the giant redwood can live so long. While most other trees are destroyed by forest fires, the redwood actually prospers {13} them. Moderate fires clear the ground of competing plants, and the rising heat dries and opens the ripe cones of the redwood, releasing thousands of seeds onto the soil below. Besides seeds, new trees often grow from sprouts, young trees that form at the base of the trunk. These sprouts grow slowly and {14} the root system of the “mother” tree for food. When the main tree dies, the sprouts are free to grow as full trees, forming a “fairy ring,” or circle of trees, around the original tree. These trees, {15} , may give rise to more sprouts, and the cycle continues.",
+  "zh": "紅杉是地球上最高的植物，可以長到 100 公尺高。紅杉也以長壽聞名，通常能活 500 到 1,000 年，有時甚至超過 2,000 年。紅杉的樹幹非常粗大，通常長成一根筆直的柱子，外面覆蓋著一層柔軟、像海綿一樣的樹皮；比較成熟的樹，樹皮厚度可以超過兩英尺。這層樹皮讓老樹在某種程度上不受昆蟲侵害，但它最主要的好處是，遇到中等規模的森林火災時，能保護樹心完好無損。這種耐火的能力，就是巨大的紅杉能活那麼久的原因。大部分其他的樹木會毀於森林火災，紅杉卻反而因為森林火災長得更好。中等規模的火災會清除地面上和紅杉競爭的植物，上升的熱氣也會烘乾成熟的紅杉毬果，讓毬果張開，把成千上萬顆種子撒在下方的土地上。除了種子之外，新的樹也常常從嫩芽長出來，嫩芽就是在樹幹基部長出的小樹苗。這些嫩芽長得很慢，靠「母樹」的根系取得養分。母樹死了以後，嫩芽就能自由長成大樹，在原來那棵樹的周圍形成一圈「仙女環」，也就是環狀的樹群。這些樹接著又可能長出更多嫩芽，就這樣循環下去。",
+  "textMarked": "Redwood trees are the tallest plants on Earth, reaching heights of up to 100 meters. They are also known for their {11} , typically 500 to 1,000 years ~~but~~ sometimes more than 2,000 years.\n\nThe trunk of a redwood is huge ~~and~~ usually forms a single straight column. It is covered with a soft, spongy bark, which can be well over two feet thick in mature trees. This bark gives older trees some protection from insects, ~~but~~ its main {12} is that it keeps the center of the tree intact, or undamaged, during moderate forest fires. @@This resistance to fire explains why the giant redwood can live so long.@@\n\n@@While most other trees are destroyed by forest fires, the redwood actually prospers {13} them.@@ Moderate fires clear the ground of competing plants, ~~and~~ the rising heat dries ~~and~~ opens the ripe cones of the redwood, releasing thousands of seeds onto the soil below.\n\n@@Besides seeds, new trees often grow from sprouts, young trees that form at the base of the trunk.@@ These sprouts grow slowly ~~and~~ {14} the root system of the “mother” tree for food. ~~When~~ the main tree dies, the sprouts are free to grow as full trees, forming a “fairy ring,” or circle of trees, around the original tree. These trees, {15} , may give rise to more sprouts, ~~and~~ the cycle continues.",
+  "outline": [
+   "Redwoods are the tallest plants on the planet, rising as high as 100 meters, and many of them survive for centuries, some for over two thousand years.",
+   "Their huge trunks are wrapped in soft bark more than two feet thick, which guards the core during moderate fires and lets the trees reach great ages.",
+   "Fires that kill most other trees help redwoods grow: they burn away rival plants, and their heat opens ripe cones so that thousands of seeds drop.",
+   "Sprouts at the base of the trunk draw food from the mother tree’s roots. When she dies, they grow into a ring of trees that produce sprouts of their own."
+  ],
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "全文字數": 229,
+   "句數": 12,
+   "記號數": 11,
+   "每百字記號數": "4.8",
+   "建檔": "第三百六十五場建檔。改編自 g100p4；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+  }
+ },
+ {
+  "id": "CLA-g99p1",
+  "year": "改編練習（六）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "紐西蘭特有種昆蟲威塔（The Weta, a Native Insect of New Zealand）",
+  "flagNote": "本題庫改編練習：文章改編自 99 年學測閱讀測驗〈紐西蘭特有種昆蟲威塔〉，刪短後照現行學測綜合測驗的版面出題（第 11–15 題，每題四選一），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "accuracyRateSource": null,
+  "text": "In New Zealand, there is a grasshopper-like insect that is found nowhere else on earth. New Zealanders have given it the nickname weta, which in Maori—the language of the country’s native people—means “god of bad looks.” Most people feel disgusted {11} these bulky, slow-moving bugs. Wetas are nocturnal—they come out of their caves and holes only after dark. A giant weta can grow to over three inches long and weigh as much as 1.5 ounces. Just like their cousins the grasshoppers and crickets, wetas are able to “sing” by {12} parts of their legs together or against their lower bodies. Not many people are likely to feel sympathy for these endangered creatures. {13} , they do need protecting. The slow and clumsy wetas have been around in New Zealand since the age of the dinosaurs. There they evolved and survived in an environment where they had no {14} until rats arrived with European immigrants. Rats, which love to hunt and eat wetas, have become a real problem for many native species that are not used to their presence, and they {15} a serious threat to the native weta population.",
+  "zh": "紐西蘭有一種長得像蚱蜢的昆蟲，在地球上其他地方都找不到。紐西蘭人替這種昆蟲取了個暱稱叫 weta（威塔），這個字在毛利語（紐西蘭原住民的語言）裡的意思是「醜陋之神」。大部分的人看到這種笨重、行動緩慢的蟲子，都會覺得噁心。威塔是夜行性動物，也就是天黑以後才會從洞穴和地洞裡出來。巨型威塔可以長到三英寸以上，重達 1.5 盎司。威塔和牠們的近親蚱蜢、蟋蟀一樣，能把腳的某些部位互相摩擦，或在下半身上摩擦，發出「歌聲」。大概沒有多少人會同情這些瀕臨絕種的生物，儘管如此，威塔確實需要保護。行動緩慢又笨拙的威塔從恐龍時代就生活在紐西蘭，牠們在沒有天敵的環境中演化、存活下來，直到老鼠隨著歐洲移民來到紐西蘭。很愛獵食威塔的老鼠，已經成了許多本地物種的大問題，這些物種不習慣有老鼠存在；老鼠也對本地的威塔族群構成嚴重威脅。",
+  "textMarked": "@@In New Zealand, there is a grasshopper-like insect that is found nowhere else on earth.@@ New Zealanders have given it the nickname weta, which in Maori—the language of the country’s native people—means “god of bad looks.” Most people feel disgusted {11} these bulky, slow-moving bugs.\n\nWetas are nocturnal—they come out of their caves ~~and~~ holes only after dark. A giant weta can grow to over three inches long ~~and~~ weigh as much as 1.5 ounces. Just like their cousins the grasshoppers ~~and~~ crickets, wetas are able to “sing” by {12} parts of their legs together ~~or~~ against their lower bodies.\n\nNot many people are likely to feel sympathy for these endangered creatures. @@{13} , they do need protecting.@@ The slow ~~and~~ clumsy wetas have been around in New Zealand since the age of the dinosaurs. There they evolved ~~and~~ survived in an environment where they had no {14} ~~until~~ rats arrived with European immigrants. Rats, which love to hunt ~~and~~ eat wetas, have become a real problem for many native species that are not used to their presence, ~~and~~ they {15} a serious threat to the native weta population.",
+  "outline": [
+   "New Zealand is home to the weta, a grasshopper-like insect found nowhere else. Its Maori name points to its ugly looks, and most people find it disgusting.",
+   "Wetas hide in caves and holes until night. Giant ones may top three inches and 1.5 ounces, and like crickets they make sounds with their legs.",
+   "Few people care about these endangered insects, but they deserve protection. Safe since dinosaur times, wetas are now hunted by rats that came with European settlers."
+  ],
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "全文字數": 196,
+   "句數": 11,
+   "記號數": 11,
+   "每百字記號數": "5.6",
+   "建檔": "第三百六十五場建檔。改編自 g99p1；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+  }
+ },
+ {
+  "id": "CLA-z110p4",
+  "year": "改編練習（七）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "高爾夫球的演進（The Evolution of the Golf Ball）",
+  "flagNote": "本題庫改編練習：文章改編自 110 年指考閱讀測驗〈高爾夫球的演進與凹洞的空氣動力學原理〉，刪短後照現行學測綜合測驗的版面出題（第 11–15 題，每題四選一），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "accuracyRateSource": null,
+  "text": "Since golf began in the 15th century, the game has seen many advances, including significant changes to the golf ball. Early golfers played with a wooden ball until it {11} the Featherie, a leather bag stuffed with feathers. In 1848 came the Gutta Percha ball, which was far more durable and affordable. The next {12} came in the early 1900s with the Haskell, the first ball with a rubber core, which could travel up to 20 yards farther than the Gutta Percha ball. In 1905, William Taylor introduced the first ball covered with dimples, or tiny cup-shaped marks. By the 1930s, golf balls with rows of dimples were accepted as the standard design. These tiny marks play an important role in a golf ball’s {13} because they improve its aerodynamics, or the way it moves through the air. In flight, a ball experiences two major forces: lift and drag. Dimples reduce drag, the force that pulls back on the ball, so it can travel faster and farther. They also force the airflow downward, which pushes the ball upward. Airplanes depend on the same {14} to stay in the air. In general, balls with small, shallow dimples tend to have a longer, lower flight path, whereas those with deeper dimples fly higher. {15} , golfers can choose their balls based on what they need for a particular shot or for particular weather.",
+  "zh": "自從高爾夫球在 15 世紀出現以來，這項運動有了許多進步，其中包括高爾夫球本身的重大改變。早期的球員打的是木球，後來木球讓位給羽毛填充球（Featherie），也就是塞滿羽毛的皮囊。1848 年出現了古塔膠球（Gutta Percha），比之前的球耐用得多，價格也實惠得多。下一個重大突破出現在 1900 年代初，也就是 Haskell 球，這是第一顆有橡膠核心的球，最多可以比古塔膠球多飛 20 碼。1905 年，William Taylor 推出第一顆表面布滿凹洞（也就是小小的碗狀凹痕）的球。到了 1930 年代，表面有成排凹洞的高爾夫球，已經是公認的標準設計。這些小凹痕對高爾夫球的性能非常重要，因為它們能改善球的空氣動力，也就是球在空中移動的方式。球在飛行時，會受到兩種主要的力：升力和阻力。凹洞能減少阻力，也就是往後拉住球的那股力量，讓球飛得更快、更遠。凹洞也會把氣流往下推，氣流則把球往上推。飛機能留在空中，靠的也是同樣的原理。一般來說，凹洞小而淺的球，飛行路徑比較遠、比較低；凹洞比較深的球則飛得比較高。因此，球員可以依照某一桿的擊球需要或特定的天氣選球。",
+  "textMarked": "^^Since golf began in the 15th century, the game has seen many advances, including significant changes to the golf ball.^^ Early golfers played with a wooden ball ~~until~~ it {11} the Featherie, a leather bag stuffed with feathers. In 1848 came the Gutta Percha ball, which was far more durable ~~and~~ affordable. The next {12} came in the early 1900s with the Haskell, the first ball with a rubber core, which could travel up to 20 yards farther than the Gutta Percha ball. In 1905, William Taylor introduced the first ball covered with dimples, or tiny cup-shaped marks. By the 1930s, golf balls with rows of dimples were accepted as the standard design.\n\n@@These tiny marks play an important role in a golf ball’s {13} because they improve its aerodynamics, or the way it moves through the air.@@ In flight, a ball experiences two major forces: lift ~~and~~ drag. Dimples reduce drag, the force that pulls back on the ball, ~~so~~ it can travel faster ~~and~~ farther. They ~~also~~ force the airflow downward, which pushes the ball upward. Airplanes depend on the same {14} to stay in the air.\n\n~~In general~~, balls with small, shallow dimples tend to have a longer, lower flight path, ~~whereas~~ those with deeper dimples fly higher. {15} , golfers can choose their balls based on what they need for a particular shot ~~or~~ for particular weather.",
+  "outline": [
+   "Golf balls have changed greatly since the 15th century, moving from wooden balls and feather-filled leather bags to Gutta Percha, rubber-core, and finally dimpled designs.",
+   "Dimples help a golf ball fly better by cutting the air resistance that slows it down and by sending air downward to lift it, much as airplanes stay aloft.",
+   "Shallow dimples give a long, low flight, while deep ones send the ball higher, so players pick the ball that suits each shot and the weather."
+  ],
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "全文字數": 233,
+   "句數": 13,
+   "記號數": 11,
+   "每百字記號數": "4.7",
+   "建檔": "第三百六十五場建檔。改編自 z110p4；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+  }
+ },
+ {
+  "id": "CLA-z105p2",
+  "year": "改編練習（八）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "大型貓科動物起源的新發現（A New Finding on the Origin of Big Cats）",
+  "flagNote": "本題庫改編練習：文章改編自 105 年指考閱讀測驗〈大型貓科動物起源的新發現〉，刪短後照現行學測綜合測驗的版面出題（第 11–15 題，每題四選一），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "accuracyRateSource": null,
+  "text": "An ancient skull dug up recently indicates that big cats, such as lions and tigers, originated in central Asia, not Africa as widely thought. Dated to between 4.1 and 5.95 million years ago, the fossil is the oldest {11} of a big cat ever found. The previous record holder, tooth fragments found in Tanzania, is only about 3.8 million years old. Where big cats came from has long been hotly debated, and a lack of fossil evidence has made it hard to {12} the question. Jack Tseng, a paleontologist, or fossil expert, at the University of Southern California, and his team made the find in 2010 in Tibet. “This find suggests that big cats have a deeper evolutionary origin than previously suspected,” said Tseng. After three years of {13} the skull with other fossils and using DNA data to build a family tree, the team was convinced that the creature was a big cat. Taken together, the fossil and DNA evidence {14} the idea that big cats first appeared in central Asia some 16 million years ago. They may have lived in a vast mountain area formed as the Himalayas rose, feeding on animals such as the Tibetan blue sheep. They then spread into Southeast Asia, evolving into the clouded leopard, tiger, and snow leopard. {15} , as they moved across continents, some of them developed into jaguars and lions.",
+  "zh": "最近出土的一個古老頭骨顯示，獅子、老虎這類大型貓科動物起源於中亞，而不是一般認為的非洲。這塊化石的年代在 410 萬到 595 萬年前之間，是目前發現最古老的大型貓科動物遺骸；之前的紀錄保持者是在坦尚尼亞發現的牙齒碎片，只有大約 380 萬年。大型貓科動物從哪裡來，長久以來一直爭論得很熱烈，而缺乏化石證據，也讓這個問題很難有定論。南加州大學的古生物學家，也就是研究化石的專家 Jack Tseng，和他的團隊在 2010 年於西藏發現了這塊化石。Tseng 說：「這項發現顯示，大型貓科動物演化的起源比之前推測的更久遠。」團隊花了三年把這個頭骨和其他化石比對，又用 DNA 資料建立家族譜系，最後確信這種動物是大型貓科動物。綜合化石和 DNA 的證據來看，都支持這樣的看法：大型貓科動物大約在 1,600 萬年前最早出現在中亞。牠們可能住在喜馬拉雅山隆起時形成的廣大山區，以西藏岩羊這類動物為食。接著牠們散布到東南亞，演化出雲豹、老虎和雪豹；後來，隨著牠們跨越各大洲遷徙，其中一些發展成美洲豹和獅子。",
+  "textMarked": "^^An ancient skull dug up recently indicates that big cats, such as lions and tigers, originated in central Asia, not Africa as widely thought.^^ Dated to between 4.1 and 5.95 million years ago, the fossil is the oldest {11} of a big cat ever found. The previous record holder, tooth fragments found in Tanzania, is only about 3.8 million years old. Where big cats came from has long been hotly debated, ~~and~~ a lack of fossil evidence has made it hard to {12} the question.\n\nJack Tseng, a paleontologist, or fossil expert, at the University of Southern California, ~~and~~ his team made the find in 2010 in Tibet. “This find suggests that big cats have a deeper evolutionary origin than previously suspected,” said Tseng. After three years of {13} the skull with other fossils ~~and~~ using DNA data to build a family tree, the team was convinced that the creature was a big cat.\n\n@@Taken together, the fossil and DNA evidence {14} the idea that big cats first appeared in central Asia some 16 million years ago.@@ They may have lived in a vast mountain area formed as the Himalayas rose, feeding on animals such as the Tibetan blue sheep. They ~~then~~ spread into Southeast Asia, evolving into the clouded leopard, tiger, ~~and~~ snow leopard. {15} , ~~as~~ they moved across continents, some of them developed into jaguars ~~and~~ lions.",
+  "outline": [
+   "A skull dug up recently is older than the 3.8-million-year-old record from Tanzania. It suggests big cats came from central Asia, not Africa, a long-argued issue.",
+   "Jack Tseng's team found the fossil in Tibet in 2010. After three years of study with other fossils and DNA data, they concluded it belonged to a big cat.",
+   "Big cats probably arose in Asia about 16 million years ago, spread to Southeast Asia, and eventually reached other continents, where jaguars and lions appeared."
+  ],
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "全文字數": 234,
+   "句數": 11,
+   "記號數": 9,
+   "每百字記號數": "3.8",
+   "建檔": "第三百六十五場建檔。改編自 z105p2；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+  }
+ },
+ {
+  "id": "CLA-z101p4",
+  "year": "改編練習（九）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "爆破拆除建築物（Explosive Demolition of Buildings）",
+  "flagNote": "本題庫改編練習：文章改編自 101 年指考閱讀測驗〈爆破拆除建築物〉，刪短後照現行學測綜合測驗的版面出題（第 11–15 題，每題四選一），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "accuracyRateSource": null,
+  "text": "Demolition is the tearing-down of buildings and other structures. You can easily {11} a five-story building with heavy machines such as excavators and wrecking balls, but for a 20-story skyscraper, explosive demolition is the preferred method. To demolish a building safely, blasters, or explosives experts, must map out a careful plan ahead of time. The first step is to study the building’s blueprints to understand how it is put together. Next, the crew tours the building, noting the support structure of each floor. With the data in hand, the blasters {12} a plan of attack, deciding what explosives to use, where to place them, and how to time each explosion. Blasters usually set off explosives on the support columns of the lower floors first and then on a few upper floors. In most cases, blowing up the lower floors is enough to collapse the building. {13} , loading explosives on upper floors helps break the building material apart as it falls. Smaller pieces {14} an easier cleanup after the blast. The hardest part of bringing a building down is {15} the direction in which it falls, so that it comes down where the crew wants it to. To topple the building toward the north, the blasters start with the explosives on the north side. In this way, the crew can safely tumble the building over into a parking lot or other open area.",
+  "zh": "拆除就是把建築物和其他結構拆掉。用挖土機和破壞球這類重型機具，可以輕鬆夷平一棟五層樓的建築；但如果是 20 層樓的摩天大樓，首選的方法就是爆破拆除。為了安全拆除一棟建築物，爆破人員，也就是炸藥專家，必須事先擬定周詳的計畫。第一步是研究建築物的藍圖，了解建築物是怎麼構成的。接著，爆破小組會在建築物裡實地走一遍，記下每一層樓的支撐結構。資料到手以後，爆破人員就擬定作戰計畫，決定要用哪些炸藥、炸藥放在什麼位置，以及每一次引爆的時間怎麼安排。爆破人員通常會先引爆低樓層支柱上的炸藥，再引爆幾層高樓層的炸藥。大多數情況下，炸掉低樓層就足以讓建築物倒塌；儘管如此，在高樓層裝炸藥，有助於讓建材在倒下時碎裂開來。碎塊比較小，爆破以後清理起來就比較容易。拆除建築物最難的部分，是控制建築物倒下的方向，讓它倒在爆破小組想要的地方。要讓建築物往北倒，爆破人員就從北側的炸藥開始引爆。這樣一來，爆破小組就能安全地讓建築物倒進停車場或其他空曠的地方。",
+  "textMarked": "Demolition is the tearing-down of buildings ~~and~~ other structures. ^^You can easily {11} a five-story building with heavy machines such as excavators and wrecking balls, but for a 20-story skyscraper, explosive demolition is the preferred method.^^\n\n@@To demolish a building safely, blasters, or explosives experts, must map out a careful plan ahead of time.@@ The first step is to study the building’s blueprints to understand how it is put together. ~~Next~~, the crew tours the building, noting the support structure of each floor. With the data in hand, the blasters {12} a plan of attack, deciding what explosives to use, where to place them, ~~and~~ how to time each explosion.\n\n@@Blasters usually set off explosives on the support columns of the lower floors first and then on a few upper floors.@@ ~~In most cases~~, blowing up the lower floors is enough to collapse the building. {13} , loading explosives on upper floors helps break the building material apart ~~as~~ it falls. Smaller pieces {14} an easier cleanup after the blast.\n\n@@The hardest part of bringing a building down is {15} the direction in which it falls, so that it comes down where the crew wants it to.@@ To topple the building toward the north, the blasters start with the explosives on the north side. ~~In this way~~, the crew can safely tumble the building over into a parking lot ~~or~~ other open area.",
+  "outline": [
+   "Small buildings can be knocked down with excavators and wrecking balls, but explosives are the preferred way to demolish a 20-story skyscraper.",
+   "Blasters plan carefully in advance. They study blueprints, walk through the building to note its supports, and then choose the explosives, their positions, and the timing.",
+   "Blasting the lower floors brings the building down, and extra charges on upper floors break it into small pieces that are easier to clear away.",
+   "The key task is deciding which way the building falls. Blasting one side first tips it toward that side, ideally into an empty space nearby."
+  ],
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "全文字數": 234,
+   "句數": 13,
+   "記號數": 11,
+   "每百字記號數": "4.7",
+   "建檔": "第三百六十五場建檔。改編自 z101p4；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+  }
+ },
+ {
+  "id": "CLA-z109p2",
+  "year": "改編練習（十）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "馬里亞納海溝的深海汙染（Deep-Sea Pollution in the Mariana Trench）",
+  "flagNote": "本題庫改編練習：文章改編自 109 年指考閱讀測驗〈馬里亞納海溝的深海汙染〉，刪短後照現行學測綜合測驗的版面出題（第 11–15 題，每題四選一），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "accuracyRateSource": null,
+  "text": "The planet’s deepest point lies in the Mariana Trench—a long, narrow valley on the floor of the Pacific Ocean. According to a new study, even in this remote place, sea creatures cannot escape pollution. A team of researchers recently sent a remotely operated vehicle into the depths of the trench. In the small hard-shelled animals it brought back, the researchers found extremely high levels of prohibited industrial chemicals. These animals were heavily {11} , with levels of toxins, or poisons, 50 times higher than those found in the most heavily polluted rivers in the world. {12} , all the chemicals found were “persistent organic pollutants” (POPs), meaning they stay in the environment for a very long time. PCBs, one of the most common types, were once widely used in industry, but they {13} in the United States in the 1970s after being linked to cancer. These compounds stick to the surface of materials like plastic. Many sea creatures mistakenly eat this colorful but toxic material, so the chemicals build up inside them. When these animals die, their {14} sink to the ocean floor, where deep-sea creatures feed on them. This is how the pollutants pass from one creature to another along the food chain. The fact that the trench lies many miles away from any industrial source suggests that these pollutants can travel {15} , despite having been prohibited worldwide decades ago.",
+  "zh": "地球最深的地方在馬里亞納海溝，也就是太平洋海底一道狹長的深谷。根據一項新研究，即使在這麼偏遠的地方，海洋生物也逃不過汙染。一個研究團隊最近派了一具遙控載具潛入海溝深處，在它帶回來的小型甲殼動物體內，研究人員發現了濃度極高的禁用工業化學物質。這些動物受到嚴重的汙染，體內毒物的濃度是全世界汙染最嚴重的河川裡測到的 50 倍。更糟的是，研究找到的化學物質全都屬於「持久性有機汙染物」（POPs），也就是說，這些物質會在環境中留存很長的時間。最常見的一種是多氯聯苯（PCBs），過去廣泛用在工業上，但是在 1970 年代發現和癌症有關以後，美國就禁用了。這些化合物會附著在塑膠等材料的表面，很多海洋生物誤吃了這種色彩鮮豔卻有毒的東西，化學物質就在牠們體內累積。這些動物死後，屍體沉到海底，深海生物再吃下這些屍體。汙染物就是這樣沿著食物鏈，從一種生物傳到另一種生物身上。海溝離任何工業汙染源都有好幾英里遠，這表示這些汙染物雖然幾十年前就已經在全球禁用，仍然能夠遠距離移動。",
+  "textMarked": "The planet’s deepest point lies in the Mariana Trench—a long, narrow valley on the floor of the Pacific Ocean. ^^According to a new study, even in this remote place, sea creatures cannot escape pollution.^^ A team of researchers recently sent a remotely operated vehicle into the depths of the trench. In the small hard-shelled animals it brought back, the researchers found extremely high levels of prohibited industrial chemicals. These animals were heavily {11} , with levels of toxins, or poisons, 50 times higher than those found in the most heavily polluted rivers in the world.\n\n@@{12} , all the chemicals found were “persistent organic pollutants” (POPs), meaning they stay in the environment for a very long time.@@ PCBs, one of the most common types, were once widely used in industry, ~~but~~ they {13} in the United States in the 1970s after being linked to cancer.\n\nThese compounds stick to the surface of materials like plastic. Many sea creatures mistakenly eat this colorful ~~but~~ toxic material, ~~so~~ the chemicals build up inside them. ~~When~~ these animals die, their {14} sink to the ocean floor, where deep-sea creatures feed on them. @@This is how the pollutants pass from one creature to another along the food chain.@@\n\n@@The fact that the trench lies many miles away from any industrial source suggests that these pollutants can travel {15} , despite having been prohibited worldwide decades ago.@@",
+  "outline": [
+   "At the bottom of the Mariana Trench, the deepest spot on Earth, small animals collected by a robot carried toxin levels fifty times those found in the dirtiest rivers.",
+   "The chemicals belong to a group that lasts for decades in nature. PCBs, a common type, were outlawed in the US in the 1970s over cancer fears.",
+   "The chemicals cling to plastic that sea animals swallow by mistake. Dead animals sink to the seabed and are eaten, handing the poison along the food chain.",
+   "Because the trench lies far from any factory, the pollutants seem to have journeyed a great way, though the world stopped using them decades ago."
+  ],
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "全文字數": 234,
+   "句數": 12,
+   "記號數": 8,
+   "每百字記號數": "3.4",
+   "建檔": "第三百六十五場建檔。改編自 z109p2；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+  }
+ },
+ {
+  "id": "CLA-g115p1",
+  "year": "改編練習（十一）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "堅忍號的南極探險傳奇（The Legendary Antarctic Expedition of the Endurance）",
+  "flagNote": "本題庫改編練習：文章改編自 115 年學測閱讀測驗〈堅忍號的南極探險傳奇〉，刪短後照現行學測綜合測驗的版面出題（第 11–15 題，每題四選一），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "accuracyRateSource": null,
+  "text": "In March 2022, the Endurance—the lost ship of the polar explorer Ernest Shackleton—was found in Antarctica, 107 years after it sank. The news made headlines around the world partly because the discovery {11} the final chapter in a legendary story of courage. In August 1914, Shackleton and a crew of 27 set sail on the Endurance, hoping to make the first land crossing of Antarctica. After leaving South Georgia Island in December, the ship ran into floating ice and was soon completely {12} in pack ice, or huge sheets of sea ice pressed tightly together. For nine months, the sturdy ship {13} , drifting slowly south and then being pushed north by the ice. Gradually, the pressure of the ice bent its wooden boards, and freezing water rushed in. On October 27, 1915, Shackleton ordered his men to abandon the ship, which sank a few weeks later. By the time the men sailed in lifeboats to Elephant Island, where no one lived, they {14} five months camping on the drifting ice. They could not survive there for long, so Shackleton and five others sailed 800 miles across stormy seas to South Georgia Island for help. Help was almost at hand, but ice and bad weather kept them from returning to the island. {15} , Shackleton returned to Elephant Island on August 30, 1916, with a ship to rescue the rest of his men. Every member of the team survived, but the Endurance stayed lost until 2022.",
+  "zh": "2022 年 3 月，極地探險家 Ernest Shackleton 失落的船「堅忍號」在南極尋獲，距離它沉沒已經過了 107 年。這則消息登上世界各地的頭條，也是因為這次發現標誌著一段勇氣傳奇的最後一章。1914 年 8 月，Shackleton 和 27 名船員搭乘堅忍號啟航，希望成為第一支從陸路橫越南極大陸的隊伍。12 月離開南喬治亞島以後，堅忍號碰上浮冰，不久便完全困在浮冰群裡，也就是緊緊擠在一起的大片海冰。九個月來，這艘堅固的船一直經得住冰的擠壓，先是緩緩往南漂，接著又讓浮冰推著往北走。冰的壓力漸漸把船板擠得變形，冰冷的海水也灌了進來。1915 年 10 月 27 日，Shackleton 下令船員棄船，幾個星期後，船就沉了。等到船員搭救生艇抵達無人居住的象島時，他們已經在漂流的浮冰上紮營了五個月。船員在島上沒辦法活太久，於是 Shackleton 和另外五個人冒著狂風巨浪航行 800 英里，到南喬治亞島求救。救援看似近在眼前，冰和惡劣的天氣卻讓他們一直回不了象島。最後，Shackleton 在 1916 年 8 月 30 日開著一艘船回到象島，接走其餘隊員。所有人都活了下來，堅忍號卻一直下落不明，直到 2022 年才找到。",
+  "textMarked": "In March 2022, the Endurance—the lost ship of the polar explorer Ernest Shackleton—was found in Antarctica, 107 years after it sank. ^^The news made headlines around the world partly because the discovery {11} the final chapter in a legendary story of courage.^^\n\nIn August 1914, Shackleton ~~and~~ a crew of 27 set sail on the Endurance, hoping to make the first land crossing of Antarctica. After leaving South Georgia Island in December, the ship ran into floating ice ~~and~~ was soon completely {12} in pack ice, or huge sheets of sea ice pressed tightly together.\n\nFor nine months, the sturdy ship {13} , drifting slowly south ~~and~~ then being pushed north by the ice. ~~Gradually~~, the pressure of the ice bent its wooden boards, ~~and~~ freezing water rushed in. On October 27, 1915, Shackleton ordered his men to abandon the ship, which sank a few weeks later.\n\n~~By the time~~ the men sailed in lifeboats to Elephant Island, where no one lived, they {14} five months camping on the drifting ice. They could not survive there for long, ~~so~~ Shackleton ~~and~~ five others sailed 800 miles across stormy seas to South Georgia Island for help. Help was almost at hand, ~~but~~ ice ~~and~~ bad weather kept them from returning to the island. {15} , Shackleton returned to Elephant Island on August 30, 1916, with a ship to rescue the rest of his men. Every member of the team survived, ~~but~~ the Endurance stayed lost until 2022.",
+  "outline": [
+   "In 2022, explorers located Shackleton’s ship, the Endurance, in Antarctic waters, 107 years after it went down, bringing a famous tale of bravery to a close.",
+   "Shackleton and 27 men sailed in 1914, planning to cross Antarctica on foot, but soon after South Georgia their ship got stuck in thick sea ice.",
+   "The strong ship survived the moving ice for nine months before the pressure broke its boards. Shackleton told everyone to leave, and the ship sank weeks later.",
+   "After months on the ice, the crew reached an empty island by lifeboat. Shackleton sailed 800 miles for help and finally rescued every man in 1916."
+  ],
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "全文字數": 250,
+   "句數": 12,
+   "記號數": 12,
+   "每百字記號數": "4.8",
+   "建檔": "第三百六十六場建檔。改編自 g115p1；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+  }
+ },
+ {
+  "id": "CLA-g111p1",
+  "year": "改編練習（十二）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "馬賽人的文化與傳統（The Culture and Traditions of the Maasai People）",
+  "flagNote": "本題庫改編練習：文章改編自 111 年學測閱讀測驗〈馬賽人的文化與傳統〉，刪短後照現行學測綜合測驗的版面出題（第 11–15 題，每題四選一），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "accuracyRateSource": null,
+  "text": "Standing proud on the savannah, or open grassland, with their red blankets and painted shields, the Maasai are a widely known symbol of East Africa. The Maasai of Kenya and northern Tanzania are semi-nomadic: they wander from place to place with their herds and live almost entirely on the animals’ meat, blood, and milk. Over the years, these {11} people have stood strong against slavery and resisted their governments’ urging to adopt a more modern lifestyle. {12} , they are one of the few tribes that have kept most of their traditions. Until recently, a Maasai boy could become a warrior only by killing a lion on his own. Maasai clothing {13} age, gender, and place. Red is a popular color, and women generally opt for checked, striped, or patterned cloth. Young men wear black for several months after a ceremony that marks their coming of age. Beadwork—jewelry made of tiny colored balls called beads—is also an important part of Maasai culture. Made by women, it is famous for its complexity. Before trade with Europeans began in the 19th century, beads were made of natural materials such as clay, shells, and ivory. Those materials were later replaced by colorful glass beads, {14} made more detailed designs and color patterns possible. Multicolored beadwork is popular among both men and women. Each color {15} a special meaning: white stands for peace, green for land and production, and red—the Maasai’s favorite color—for unity and bravery.",
+  "zh": "披著紅色毯子、拿著彩繪盾牌，傲然站在大草原上的馬賽人，是東非廣為人知的象徵。住在肯亞和坦尚尼亞北部的馬賽人過著半遊牧的生活：他們帶著牲畜四處遷徙，幾乎完全靠這些動物的肉、血和奶維生。多年來，這群無所畏懼的族人頑強抵抗奴役，也不理會政府要他們改採較現代生活方式的勸說。事實上，馬賽人是少數保留了大部分傳統的部落之一。直到不久以前，馬賽男孩要獨自殺死一頭獅子，才能成為戰士。馬賽人的服裝依年齡、性別和地區而不同。紅色很受歡迎，女性通常選擇格子、條紋或有圖案的布。年輕男子在象徵成年的儀式之後，會穿幾個月的黑色衣服。串珠飾品，也就是用細小彩色珠子串成的首飾，同樣是馬賽文化重要的一部分。這些飾品由女性製作，以繁複精細聞名。19 世紀和歐洲人通商以前，珠子是用黏土、貝殼、象牙這些天然材料做的；後來改用彩色的玻璃珠，可以做出更細緻的設計和配色圖案。男女都喜歡多色的串珠飾品。每一種顏色都有特別的意義：白色代表和平，綠色代表土地和生產，馬賽人最喜愛的紅色則代表團結和勇敢。",
+  "textMarked": "Standing proud on the savannah, or open grassland, with their red blankets ~~and~~ painted shields, the Maasai are a widely known symbol of East Africa. The Maasai of Kenya ~~and~~ northern Tanzania are semi-nomadic: they wander from place to place with their herds ~~and~~ live almost entirely on the animals’ meat, blood, ~~and~~ milk. Over the years, these {11} people have stood strong against slavery ~~and~~ resisted their governments’ urging to adopt a more modern lifestyle. ^^{12} , they are one of the few tribes that have kept most of their traditions.^^ Until recently, a Maasai boy could become a warrior only by killing a lion on his own.\n\n@@Maasai clothing {13} age, gender, and place.@@ Red is a popular color, ~~and~~ women generally opt for checked, striped, ~~or~~ patterned cloth. Young men wear black for several months after a ceremony that marks their coming of age.\n\n@@Beadwork—jewelry made of tiny colored balls called beads—is also an important part of Maasai culture.@@ Made by women, it is famous for its complexity. ~~Before~~ trade with Europeans began in the 19th century, beads were made of natural materials such as clay, shells, ~~and~~ ivory. Those materials were later replaced by colorful glass beads, {14} made more detailed designs ~~and~~ color patterns possible. Multicolored beadwork is popular among both men and women. Each color {15} a special meaning: white stands for peace, green for land and production, ~~and~~ red—the Maasai’s favorite color—for unity and bravery.",
+  "outline": [
+   "Known for red blankets and painted shields, the Maasai of Kenya and Tanzania live off their herds and have kept most traditions despite pressure to modernize.",
+   "Their clothing differs by age, gender, and place. Red is widely worn, women like checked or patterned cloth, and young men wear black after a coming-of-age ceremony.",
+   "Beadwork made by women is central to Maasai culture. Glass beads from European trade replaced natural materials, and every color carries its own meaning."
+  ],
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "全文字數": 247,
+   "句數": 14,
+   "記號數": 14,
+   "每百字記號數": "5.7",
+   "建檔": "第三百六十六場建檔。改編自 g111p1；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+  }
+ },
+ {
+  "id": "CLA-g107p1",
+  "year": "改編練習（十三）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "白宮的歷史（The History of the White House）",
+  "flagNote": "本題庫改編練習：文章改編自 107 年學測閱讀測驗〈白宮的歷史〉，刪短後照現行學測綜合測驗的版面出題（第 11–15 題，每題四選一），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "accuracyRateSource": null,
+  "text": "For more than two hundred years, the White House has stood as a symbol of the American presidency and the American people. As plans for a new capital began in 1790, a {11} was held to find a builder for the “President’s House.” Nine designs were submitted, and James Hoban, an Irish-born architect, won the gold medal for his practical and handsome design. Although George Washington oversaw the construction, he never lived in the house. In 1800, President John Adams and his wife became its first residents. American presidents can express their own style in how they decorate the house and how they receive the public. Thomas Jefferson held the first inaugural open house in 1805—after he was sworn in, many who had watched him take the oath simply followed him home. Jefferson also opened the house for public tours, a {12} that has continued ever since, except during wartime. In addition, he held receptions on New Year’s Day and the Fourth of July. Abraham Lincoln later {13} these customs, but the inaugural crowds grew far too large for the house to hold, creating a security problem. Effective crowd control measures to {14} the problem were not introduced until Grover Cleveland’s first term. At various times, the White House went by several other names, such as the “President’s Palace” and the “Executive Mansion.” {15} , President Theodore Roosevelt officially gave the building its present name in 1901.",
+  "zh": "兩百多年來，白宮一直是美國總統職位與美國人民的象徵。1790 年新首都開始規劃，籌備期間政府舉辦了一場比賽，替「總統府」尋找建造者。比賽共收到九件設計，出生於愛爾蘭的建築師 James Hoban 以實用又美觀的設計贏得金牌。George Washington 雖然監督了白宮的興建，卻從來沒有在裡面住過。1800 年，John Adams 總統和夫人成為白宮的第一批住戶。美國總統可以從白宮的布置和接待民眾的方式，展現自己的風格。Thomas Jefferson 在 1805 年舉辦了第一次就職開放日：他宣誓就職以後，許多看他宣誓的民眾乾脆一路隨他回到白宮。Jefferson 也開放白宮讓民眾參觀，這項政策從那時起一直延續，只有戰爭期間例外。此外，他還在元旦和七月四日國慶日舉辦招待會。後來 Abraham Lincoln 延續了這些慣例，但是就職日湧進白宮的人潮多到容納不下，造成了安全問題。一直到 Grover Cleveland 第一次擔任總統時，才實施了有效的人潮管制措施來處理這個問題。白宮在不同時期還用過其他幾個名稱，例如「總統宮」和「行政官邸」。最後，Theodore Roosevelt 總統在 1901 年正式替這棟建築取了現在的名稱。",
+  "textMarked": "For more than two hundred years, the White House has stood as a symbol of the American presidency ~~and~~ the American people. ~~As~~ plans for a new capital began in 1790, a {11} was held to find a builder for the “President’s House.” Nine designs were submitted, ~~and~~ James Hoban, an Irish-born architect, won the gold medal for his practical ~~and~~ handsome design. ~~Although~~ George Washington oversaw the construction, he never lived in the house. In 1800, President John Adams ~~and~~ his wife became its first residents.\n\n@@American presidents can express their own style in how they decorate the house and how they receive the public.@@ Thomas Jefferson held the first inaugural open house in 1805—~~after~~ he was sworn in, many who had watched him take the oath simply followed him home. Jefferson also opened the house for public tours, a {12} that has continued ever since, except during wartime. ~~In addition~~, he held receptions on New Year’s Day ~~and~~ the Fourth of July. Abraham Lincoln later {13} these customs, ~~but~~ the inaugural crowds grew far too large for the house to hold, creating a security problem. Effective crowd control measures to {14} the problem were not introduced until Grover Cleveland’s first term.\n\n@@At various times, the White House went by several other names, such as the “President’s Palace” and the “Executive Mansion.”@@ {15} , President Theodore Roosevelt officially gave the building its present name in 1901.",
+  "outline": [
+   "The White House has long symbolized the presidency. Irish-born James Hoban won the design contest, and although Washington supervised the work, the Adams family moved in first.",
+   "Presidents show personal style in hosting the public. Jefferson opened the house for tours and holiday events, but growing crowds raised safety concerns until Cleveland took action.",
+   "Before 1901 the house had other names, including the President’s Palace and the Executive Mansion, until Theodore Roosevelt made its present name official."
+  ],
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "全文字數": 238,
+   "句數": 13,
+   "記號數": 12,
+   "每百字記號數": "5.0",
+   "建檔": "第三百六十六場建檔。改編自 g107p1；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+  }
+ },
+ {
+  "id": "CLA-g106p1",
+  "year": "改編練習（十四）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "狗狗認知測驗 Dognition（Dognition: Testing Dogs’ Cognitive Traits）",
+  "flagNote": "本題庫改編練習：文章改編自 106 年學測閱讀測驗〈狗狗認知測驗 Dognition〉，刪短後照現行學測綜合測驗的版面出題（第 11–15 題，每題四選一），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "accuracyRateSource": null,
+  "text": "Is your dog an Einstein or a Charmer? For US $60, a recently founded company called Dognition will help you learn more about your dog’s cognitive traits—the ways it thinks and learns. Its online test can {11} the brain behind the bark. The test looks at several areas of a dog’s intelligence, such as memory and the ability to understand how others feel, known as empathy. But don’t expect it to give your pet an IQ score. Dr. Hare, one of the company’s founders, says a dog’s intelligence is too {12} to be described with a single number. Just as humans have different kinds of intelligence, so do dogs. First, Dognition’s website takes you through a questionnaire, a list of questions about your dog’s {13} : How excited does your dog get around other dogs or children? Then, you and your dog do tests that are as fun as playing fetch or hide-and-seek. Finally, you get a report on how your dog thinks. Your dog could {14} one of nine categories, such as Einstein and Charmer. That gives you something to boast about on Facebook. {15} , the result can help you see why dogs behave the way they do. For example, a Charmer trusts you so much that it would rather solve problems with information from you than with what it can see for itself. In this way, Dognition can bring dogs and their owners closer together.",
+  "zh": "你的狗是 Einstein 型，還是 Charmer 型？只要 60 美元，一家新成立的公司 Dognition 就能幫你進一步了解狗狗的認知特質，也就是狗狗思考和學習的方式。這家公司的線上測驗，能讓你更清楚狗狗吠叫背後的那顆腦袋。測驗涵蓋狗狗智力的好幾個面向，例如記憶力，以及體會別人感受的能力，也就是同理心。不過，別期待測驗會給你的寵物一個智商分數。這家公司的創辦人之一 Hare 博士說，狗的智力太複雜，沒辦法用單一數字來描述。就像人類有不同種類的智力，狗也一樣。首先，Dognition 的網站會帶你填一份問卷，也就是一系列關於狗狗個性的問題，例如：狗狗在其他狗或小孩身邊會有多興奮？接著，你和狗狗一起做一些測驗，就像玩丟接球或捉迷藏一樣好玩。最後，你會拿到一份報告，說明你的狗狗怎麼思考。你的狗會歸入九種類型之一，例如 Einstein 型和 Charmer 型。這讓你有東西可以在臉書上炫耀一番。更重要的是，測驗結果能幫你看懂狗為什麼會有那些行為。例如，Charmer 型的狗非常信任你，解決問題時寧可依靠你給的資訊，也不靠自己親眼看到的東西。如此一來，Dognition 就能拉近狗和主人之間的距離。",
+  "textMarked": "Is your dog an Einstein ~~or~~ a Charmer? ^^For US $60, a recently founded company called Dognition will help you learn more about your dog’s cognitive traits—the ways it thinks and learns.^^ Its online test can {11} the brain behind the bark.\n\n@@The test looks at several areas of a dog’s intelligence, such as memory and the ability to understand how others feel, known as empathy.@@ ~~But~~ don’t expect it to give your pet an IQ score. Dr. Hare, one of the company’s founders, says a dog’s intelligence is too {12} to be described with a single number. ~~Just as~~ humans have different kinds of intelligence, so do dogs.\n\n~~First~~, Dognition’s website takes you through a questionnaire, a list of questions about your dog’s {13} : How excited does your dog get around other dogs ~~or~~ children? ~~Then~~, you and your dog do tests that are as fun as playing fetch ~~or~~ hide-and-seek. ~~Finally~~, you get a report on how your dog thinks.\n\n@@Your dog could {14} one of nine categories, such as Einstein and Charmer.@@ That gives you something to boast about on Facebook. {15} , the result can help you see why dogs behave the way they do. ~~For example~~, a Charmer trusts you so much that it would rather solve problems with information from you than with what it can see for itself. ~~In this way~~, Dognition can bring dogs ~~and~~ their owners closer together.",
+  "outline": [
+   "For sixty dollars, a new company named Dognition offers an online test that helps owners learn how their dogs think and learn.",
+   "The test covers memory, empathy, and other abilities instead of giving an IQ score, since dogs, like humans, have many kinds of intelligence.",
+   "Owners first answer questions about how their dog acts, then do game-like tests with it, and finally receive a report on its thinking.",
+   "Each dog is placed in one of nine groups. Besides being fun to share, the results explain dog behavior and bring pets and owners closer."
+  ],
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "全文字數": 241,
+   "句數": 16,
+   "記號數": 14,
+   "每百字記號數": "5.8",
+   "建檔": "第三百六十六場建檔。改編自 g106p1；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+  }
+ },
+ {
+  "id": "CLA-g103p4",
+  "year": "改編練習（十五）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "自動駕駛汽車的未來（The Future of Driverless Cars）",
+  "flagNote": "本題庫改編練習：文章改編自 103 年學測閱讀測驗〈自動駕駛汽車的未來〉，刪短後照現行學測綜合測驗的版面出題（第 11–15 題，每題四選一），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "accuracyRateSource": null,
+  "text": "Today the car seems to take a big leap forward every few years. Many new cars now {11} driver assistance technologies that let them park themselves, read traffic signs, and brake to avoid crashes. Carmakers are also testing Vehicle-to-Vehicle communication, or V2V. V2V uses wireless signals to send each car’s location, speed, and direction back and forth between cars, so that they keep safe distances from each other. Another system being tested, Vehicle-to-Infrastructure communication, or V2I, would link cars with nearby road signs, traffic lights, and traffic management systems. Through V2I, cars could {12} drivers to safety problems ahead and help them find the best routes. Both V2V and V2I could prevent around 80 percent of crashes. {13} , a number of firms are going a step further, building cars that drive themselves to a chosen destination without a human at the controls. Google already uses prototypes, or test versions, of such cars to carry its staff along California freeways. It once filmed one of them {14} a blind man to a fast-food restaurant for takeout hamburgers. If and when cars go completely driverless, the benefits will be enormous. Huge numbers of elderly and disabled people could regain their mobility—the freedom to get around on their own. The young will not have to pay costly car insurance, because their {15} hands and feet will no longer touch the wheel or the gas pedal. Commuters will gain hours each day to rest, read, or work.",
+  "zh": "現今汽車似乎每隔幾年就有一次大躍進。許多新車現在都配備了駕駛輔助技術，讓車子能自動停車、辨識交通標誌，還能及時煞車避免撞車。汽車製造商也正在測試車對車通訊（Vehicle-to-Vehicle communication，簡稱 V2V）。V2V 用無線訊號在車輛之間來回傳送每輛車的位置、速度和方向，讓車輛彼此保持安全距離。另一套正在測試的系統是車對基礎設施通訊（Vehicle-to-Infrastructure communication，簡稱 V2I），能把車輛和附近的道路標誌、紅綠燈和交通管理系統連結起來。透過 V2I，車子能提醒駕駛注意前方的安全問題，並且幫駕駛找出最佳路線。V2V 和 V2I 都可能防止大約 80% 的車禍。在此同時，有好幾家公司更進一步，正在研發不需要人操控、能自己開到指定目的地的汽車。Google 已經用這種車的原型車，也就是試驗用的車款，在加州的高速公路上接送員工。Google 還曾拍下一輛這種車載著一位盲人去速食店買外帶漢堡的過程。如果汽車真有完全無人駕駛的一天，好處會非常大。大批年長者和身心障礙者能重新擁有行動能力，也就是自己到處走動的自由。年輕人不必再付昂貴的汽車保險費，因為他們莽撞的手腳再也不會碰到方向盤和油門。至於通勤的人，每天會多出好幾個小時，可以休息、閱讀或工作。",
+  "textMarked": "^^Today the car seems to take a big leap forward every few years.^^ Many new cars now {11} driver assistance technologies that let them park themselves, read traffic signs, ~~and~~ brake to avoid crashes.\n\nCarmakers are also testing Vehicle-to-Vehicle communication, or V2V. V2V uses wireless signals to send each car’s location, speed, and direction back and forth between cars, ~~so that~~ they keep safe distances from each other. Another system being tested, Vehicle-to-Infrastructure communication, or V2I, would link cars with nearby road signs, traffic lights, and traffic management systems. Through V2I, cars could {12} drivers to safety problems ahead ~~and~~ help them find the best routes. @@Both V2V and V2I could prevent around 80 percent of crashes.@@\n\n@@{13} , a number of firms are going a step further, building cars that drive themselves to a chosen destination without a human at the controls.@@ Google already uses prototypes, or test versions, of such cars to carry its staff along California freeways. It once filmed one of them {14} a blind man to a fast-food restaurant for takeout hamburgers.\n\n@@If and when cars go completely driverless, the benefits will be enormous.@@ Huge numbers of elderly and disabled people could regain their mobility—the freedom to get around on their own. The young will not have to pay costly car insurance, ~~because~~ their {15} hands and feet will no longer touch the wheel or the gas pedal. Commuters will gain hours each day to rest, read, ~~or~~ work.",
+  "outline": [
+   "Cars keep improving quickly. Many new models now offer driver assistance features such as self-parking, sign reading, and automatic braking.",
+   "In V2V, cars share their position, speed, and direction by radio, while V2I links them to road signs and traffic systems. Together, the two could stop most crashes.",
+   "Some companies are also developing cars that need no driver. Google has used test models to transport its employees and once let a blind man ride off to buy hamburgers.",
+   "Driverless cars would bring huge benefits. Older and disabled people could travel freely, young drivers would save on insurance, and commuters would gain extra free time."
+  ],
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "全文字數": 245,
+   "句數": 14,
+   "記號數": 9,
+   "每百字記號數": "3.7",
+   "建檔": "第三百六十六場建檔。改編自 g103p4；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+  }
+ },
+ {
+  "id": "CLA-z109p1",
+  "year": "改編練習（十六）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "現代廢水的淨化流程（How Wastewater Is Cleaned Today）",
+  "flagNote": "本題庫改編練習：文章改編自 109 年指考閱讀測驗〈現代廢水處理流程〉，刪短後照現行學測綜合測驗的版面出題（第 11–15 題，每題四選一），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "accuracyRateSource": null,
+  "text": "Early civilizations often built drainage systems in cities to carry away rainwater that ran down the streets during storms. As cities grew more crowded, however, these old systems could no longer {11} the rising amount of water flowing into them. During the Industrial Revolution, waste from factories was also added to sewage—the dirty water from homes—so better ways of handling it were needed even more. In the mid-19th century, the first steps were taken to clean wastewater. Modern wastewater {12} is the process of removing harmful physical, chemical, and biological elements from sewage. It starts with screening out large objects such as paper and wood, as well as heavy materials like dirt. The water then passes into a series of concrete tanks. In the primary tanks, human waste, called sludge, settles to the bottom, while oils and grease float to the top, where they are collected. {13} , organic matter such as eggshells and coffee grounds is broken down into smaller substances. Next, the sewage moves into the secondary tanks, where the solids that were not removed earlier {14} through decomposition, a process that digests the material. After that, the liquid is filtered through sand, which gets rid of almost all bacteria and tiny solid particles. Finally, the chemical chlorine is added in the last tanks to {15} the remaining bacteria. Once the bacteria are destroyed, the chlorine is taken out, and the clean water is released into a river or the ocean.",
+  "zh": "早期的文明常在城市裡興建排水系統，把暴風雨時順著街道流下的雨水排走。然而，隨著城市越來越擁擠，這些舊系統再也應付不了流進來、不斷增加的水量。到了工業革命時期，工廠的廢棄物也加進了汙水（也就是家庭排出的髒水），於是更需要更好的方法來處理汙水。19 世紀中期，人類踏出了清理廢水的第一步。現代的廢水處理，是把汙水中有害的物理、化學和生物成分去除的過程。整個過程從篩除紙張、木頭等大型物品，以及泥土等重物開始，接著水流進一連串的混凝土池。在初級池裡，人類的排泄物，也就是所謂的汙泥，沉到池底，油和油脂則浮到上面，在那裡收集起來。同時，汙水裡蛋殼、咖啡渣這類有機物會分解成比較小的物質。接下來，汙水流進二級池，先前沒有去除的固體在這裡經由分解作用去除，分解就是把這些物質消化掉的過程。之後，液體用沙過濾，去除幾乎所有的細菌和微小的固體顆粒。最後一道步驟，是在末端的池子裡加入氯這種化學物質，殺死剩下的細菌。細菌消滅以後，再把氯除去，乾淨的水就排進河川或海洋。",
+  "textMarked": "Early civilizations often built drainage systems in cities to carry away rainwater that ran down the streets during storms. ~~As~~ cities grew more crowded, ~~however~~, these old systems could no longer {11} the rising amount of water flowing into them. During the Industrial Revolution, waste from factories was also added to sewage—the dirty water from homes—~~so~~ better ways of handling it were needed even more. In the mid-19th century, the first steps were taken to clean wastewater.\n\n^^Modern wastewater {12} is the process of removing harmful physical, chemical, and biological elements from sewage.^^ It starts with screening out large objects such as paper ~~and~~ wood, ~~as well as~~ heavy materials like dirt. The water then passes into a series of concrete tanks.\n\nIn the primary tanks, human waste, called sludge, settles to the bottom, ~~while~~ oils and grease float to the top, where they are collected. {13} , organic matter such as eggshells ~~and~~ coffee grounds is broken down into smaller substances. ~~Next~~, the sewage moves into the secondary tanks, where the solids that were not removed earlier {14} through decomposition, a process that digests the material. ~~After that~~, the liquid is filtered through sand, which gets rid of almost all bacteria ~~and~~ tiny solid particles.\n\n~~Finally~~, the chemical chlorine is added in the last tanks to {15} the remaining bacteria. ~~Once~~ the bacteria are destroyed, the chlorine is taken out, ~~and~~ the clean water is released into a river ~~or~~ the ocean.",
+  "outline": [
+   "Old city drains carried off storm water, but they became overloaded as cities grew, and factory waste made better methods necessary. Wastewater cleaning began in the mid-1800s.",
+   "Modern plants remove harmful physical, chemical, and biological matter from sewage, first screening out large objects and dirt before sending the water into concrete tanks.",
+   "In the first tanks, sludge sinks while oils rise and get collected; later, decomposition and sand filters take out most solids and bacteria.",
+   "In the last stage, chlorine destroys the bacteria left in the water; the chlorine is then taken out, and the clean water flows into rivers or the sea."
+  ],
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "全文字數": 250,
+   "句數": 13,
+   "記號數": 15,
+   "每百字記號數": "6.0",
+   "建檔": "第三百六十六場建檔。改編自 z109p1；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+  }
+ },
+ {
+  "id": "CLA-z105p1",
+  "year": "改編練習（十七）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "妮娜號複製船上的動手學習（Hands-on Learning aboard the Nina Replica Ship）",
+  "flagNote": "本題庫改編練習：文章改編自 105 年指考閱讀測驗〈妮娜號複製船上的動手學習〉，刪短後照現行學測綜合測驗的版面出題（第 11–15 題，每題四選一），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "accuracyRateSource": null,
+  "text": "Some people call the Nina a traveling museum, while others refer to it as a living or open-air museum. Built in Brazil {11} the 500th anniversary of Columbus’ first voyage to the New World, the Nina is a replica—an exact copy—of Columbus’ favorite ship, showing visitors how large the original was and what sailing tools were used more than 500 years ago. I joined the crew of the Nina in February 2013. My goal was to {12} my days aboard the ship in a blog as part of a research project sponsored by my university. {13} , I gained my most valuable insights when I watched or guided school-age children on tours of the ship. The field-trip tour of the Nina is hands-on learning, or learning by doing, at its best. On board, students could touch the ropes, pass around a ballast stone—a heavy rock that helps keep a ship steady—and move the extremely large tiller that steered ships in Columbus’ day. They soon came to {14} the hard work involved in sailing a ship back in his time. I was pleased to see the students become active participants in their own learning. My experience on the Nina {15} my long-held belief that students stay interested, ask better questions, and think more deeply when they are actively engaged in learning. The students who boarded the Nina came as passive learners. They left as bold explorers.",
+  "zh": "有人說妮娜號是一座巡迴博物館，也有人說它是一座活的博物館，或是露天博物館。妮娜號在巴西建造，為的是紀念哥倫布首航新世界五百週年；這艘船是哥倫布最喜愛的那艘船的複製船，也就是和原船一模一樣的複製品，讓參觀的人看到五百多年前那艘原船有多大、船上用的是哪些航海器具。2013 年 2 月，我加入妮娜號的船員行列。我的目標是用網誌記錄我在船上的日子，這是我任職的大學贊助的一項研究計畫的一部分。結果，我在觀察學齡孩子參觀、或是自己帶孩子參觀這艘船的時候，得到的心得最寶貴。妮娜號的校外教學導覽，是動手學習，也就是「做中學」的最佳示範。在船上，學生可以摸摸纜繩，傳遞壓艙石（一種幫助船身保持平穩的重石頭），還可以推動那根非常大的舵柄，哥倫布那個時代的船就是靠舵柄掌舵。學生很快就體會到，在哥倫布那個時代駕船航行有多辛苦。看到學生在自己的學習中成為主動的參與者，我很高興。我長久以來相信，學生主動投入學習的時候，會保持興趣、問出更好的問題，思考也會更深入；我在妮娜號上的經驗，證實了這個看法。登上妮娜號的學生，來的時候只會等著別人教，離開的時候已經成了勇敢的探險家。",
+  "textMarked": "Some people call the Nina a traveling museum, ~~while~~ others refer to it as a living ~~or~~ open-air museum. @@Built in Brazil {11} the 500th anniversary of Columbus’ first voyage to the New World, the Nina is a replica—an exact copy—of Columbus’ favorite ship, showing visitors how large the original was and what sailing tools were used more than 500 years ago.@@\n\nI joined the crew of the Nina in February 2013. My goal was to {12} my days aboard the ship in a blog as part of a research project sponsored by my university. {13} , I gained my most valuable insights ~~when~~ I watched ~~or~~ guided school-age children on tours of the ship.\n\n@@The field-trip tour of the Nina is hands-on learning, or learning by doing, at its best.@@ On board, students could touch the ropes, pass around a ballast stone—a heavy rock that helps keep a ship steady—~~and~~ move the extremely large tiller that steered ships in Columbus’ day. They soon came to {14} the hard work involved in sailing a ship back in his time. I was pleased to see the students become active participants in their own learning.\n\n^^My experience on the Nina {15} my long-held belief that students stay interested, ask better questions, and think more deeply when they are actively engaged in learning.^^ The students who boarded the Nina came as passive learners. They left as bold explorers.",
+  "outline": [
+   "Some call the Nina a traveling or living museum. Built in Brazil for the 500th anniversary of Columbus’ first voyage, it copies his favorite ship and its sailing tools.",
+   "The writer joined the crew in 2013 to keep a blog for a university project, yet the best lessons came from watching and guiding schoolchildren around the ship.",
+   "On the tour, students handle ropes, a ballast stone, and the huge tiller. They soon realize how hard sailing was in Columbus’ time and take an active role.",
+   "The trip supports the writer’s view that students who learn actively stay curious and think harder. Children arrive as passive listeners and leave as eager adventurers."
+  ],
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "全文字數": 244,
+   "句數": 12,
+   "記號數": 8,
+   "每百字記號數": "3.3",
+   "建檔": "第三百六十六場建檔。改編自 z105p1；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+  }
+ },
+ {
+  "id": "CLA-z104p4",
+  "year": "改編練習（十八）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "土耳其哥樂美國家公園：自然與人文（Goreme National Park: Where Nature Meets Man）",
+  "flagNote": "本題庫改編練習：文章改編自 104 年指考閱讀測驗〈土耳其哥樂美國家公園：自然與人文〉，刪短後照現行學測綜合測驗的版面出題（第 11–15 題，每題四選一），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "accuracyRateSource": null,
+  "text": "With soaring rock formations and mysterious underground cities, Goreme National Park is an incredible tourist attraction in central Turkey. Thousands of years ago, ancient volcanoes poured out layer upon layer of thick ash and lava, which formed the Cappadocia region, where the park now stands. Over the centuries, wind and rain {11} this land, carving out valleys and leaving behind towering rock pillars as tall as 40 meters. These pillars are known as “fairy chimneys.” They {12} an extraordinary range of shapes and sizes, but most are tall and look like giant mushrooms with a cap on top. The cap is the hardest part of each pillar and protects the softer rock below from the weather. The cap, however, does not last forever. {13} , it falls off, and wind and rain cut away the rest of the pillar until it, too, collapses. But Goreme is more than its dramatic scenery. Humans, too, have left their mark on the region. In the fourth century, the Byzantine Christians inhabited, or lived in, the area. They carved thousands of cave churches out of rock. Many of them were decorated with beautiful wall paintings whose colors still {14} all their original freshness. These Christians even dug out entire underground villages to hide from the Romans and, later, the Muslims. To this day, many of these villages are still inhabited, and families {15} grapes, potatoes, and flat bread in rock-cut storerooms for the winter.",
+  "zh": "哥樂美國家公園有高聳的岩石地形和神祕的地下城市，是土耳其中部很吸引人的觀光景點。數千年前，一群古老的火山噴出一層又一層厚厚的火山灰和熔岩，形成了卡帕多奇亞地區，也就是這座公園現在的所在地。幾百年來，風和雨徹底改變了這片土地的樣貌，切出峽谷，留下高達 40 公尺的高聳岩柱。這些岩柱叫做「仙女煙囪」。仙女煙囪的形狀和大小各式各樣，不過大多數又高又直，看起來像頂端戴著一頂帽子的大蘑菇。帽子是每根岩柱最硬的部分，保護下方比較軟的岩石不受風吹雨打。不過，帽子並不會永遠留著，遲早會掉下來，接著風雨就削去岩柱剩下的部分，直到岩柱也倒塌為止。但是，哥樂美不只有壯觀的風景，人類也在這個地區留下了印記。四世紀時，拜占庭的基督徒住在這一帶。他們在岩石上鑿出數千座洞穴教堂，許多教堂裝飾著美麗的壁畫，壁畫的顏色到現在還保有原來的鮮豔。這些基督徒甚至挖出整座地下村莊，用來躲避羅馬人，以及後來的穆斯林。直到今天，這些村莊有許多仍然有人居住，居民在岩石鑿成的儲藏室裡囤積葡萄、馬鈴薯和扁麵包，準備過冬。",
+  "textMarked": "^^With soaring rock formations and mysterious underground cities, Goreme National Park is an incredible tourist attraction in central Turkey.^^ Thousands of years ago, ancient volcanoes poured out layer upon layer of thick ash ~~and~~ lava, which formed the Cappadocia region, where the park now stands. Over the centuries, wind and rain {11} this land, carving out valleys ~~and~~ leaving behind towering rock pillars as tall as 40 meters.\n\nThese pillars are known as “fairy chimneys.” They {12} an extraordinary range of shapes and sizes, ~~but~~ most are tall ~~and~~ look like giant mushrooms with a cap on top. The cap is the hardest part of each pillar ~~and~~ protects the softer rock below from the weather. The cap, ~~however~~, does not last forever. {13} , it falls off, ~~and~~ wind and rain cut away the rest of the pillar ~~until~~ it, too, collapses.\n\n~~But~~ Goreme is more than its dramatic scenery. @@Humans, too, have left their mark on the region.@@ In the fourth century, the Byzantine Christians inhabited, or lived in, the area. They carved thousands of cave churches out of rock. Many of them were decorated with beautiful wall paintings whose colors still {14} all their original freshness.\n\nThese Christians even dug out entire underground villages to hide from the Romans ~~and~~, later, the Muslims. To this day, many of these villages are still inhabited, ~~and~~ families {15} grapes, potatoes, and flat bread in rock-cut storerooms for the winter.",
+  "outline": [
+   "Central Turkey’s Goreme National Park draws tourists with its rock formations and underground cities. Ancient volcanoes built up the land, and wind and rain carved valleys and pillars.",
+   "The pillars, called fairy chimneys, vary widely, yet most look like mushrooms. A hard cap shields the softer rock below, but once the cap drops, the pillar wears away.",
+   "People have also marked the area. Byzantine Christians lived there during the fourth century and cut thousands of cave churches, many decorated with brightly colored wall paintings.",
+   "These Christians dug whole villages underground to hide from the Romans and the Muslims. Many villages have residents today, with food stored for winter."
+  ],
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "全文字數": 244,
+   "句數": 15,
+   "記號數": 13,
+   "每百字記號數": "5.3",
+   "建檔": "第三百六十六場建檔。改編自 z104p4；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+  }
+ },
+ {
+  "id": "CLA-z100p1",
+  "year": "改編練習（十九）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "松露的特性、採集與保存（Characteristics, Harvesting, and Preservation of Truffles）",
+  "flagNote": "本題庫改編練習：文章改編自 100 年指考閱讀測驗〈松露的特性、採集與保存〉，刪短後照現行學測綜合測驗的版面出題（第 11–15 題，每題四選一），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "accuracyRateSource": null,
+  "text": "Since the days of the ancient Greeks and Romans, truffles have been used in Europe as delicacies, or fine foods, and even as medicines. Today they are among the most expensive natural foods in the world, often {11} as much as US$250 to US$450 per pound. Truffles are actually mushrooms, but unusual ones. They live in close association with the roots of certain trees and grow underground. This is why they are difficult to find. In Europe, truffles are harvested with the help of female pigs or trained dogs. Female pigs are especially sensitive to the odor of truffles because it is similar to the smell {12} by male pigs. The use of pigs is risky, though, because they tend to eat anything remotely edible, or fit to eat. For this reason, dogs have been trained to dig into the ground wherever they {13} this odor, and they willingly exchange their truffle for a piece of bread and a pat on the head. To enjoy the wonderful flavor of what has been described as a jewel of the earth, you must eat truffles fresh and uncooked, shortly after they are dug up. Their flavor {14} quickly, and much of it is lost before some truffles reach the market. To preserve truffles, food experts suggest keeping them in closed glass jars in a refrigerator. {15} , they can be stored whole in bland oil, that is, oil with little taste of its own.",
+  "zh": "從古希臘、羅馬時代開始，歐洲人就把松露當作珍饈，也就是精緻的美食，甚至當作藥材。如今松露是全世界最昂貴的天然食物之一，每磅往往賣得 250 到 450 美元的高價。松露其實是蕈類，只是很不尋常。松露和特定樹木的根緊密共生，長在地底下，所以很難找到。在歐洲，採集松露要靠母豬或訓練過的狗幫忙。母豬對松露的氣味特別敏感，因為這種氣味和公豬散發的氣味很像。不過用豬有風險，因為豬什麼東西只要勉強能吃，就會吃下去。因此，人們訓練狗在察覺到這種氣味的地方往下挖，狗也願意用挖到的松露換一塊麵包，再讓主人拍拍頭。松露有「土地的寶石」之稱，想享受它絕妙的風味，一定要在挖出來後不久，就吃新鮮、生的松露。松露的風味很快就會消失，有些松露還沒送到市場，風味就已經流失大半。美食專家建議，要保存松露，可以裝進密封的玻璃罐，放在冰箱裡；或者，也可以把整顆松露泡在清淡的油裡保存，也就是本身沒什麼味道的油。",
+  "textMarked": "Since the days of the ancient Greeks ~~and~~ Romans, truffles have been used in Europe as delicacies, or fine foods, ~~and~~ even as medicines. Today they are among the most expensive natural foods in the world, often {11} as much as US$250 to US$450 per pound. @@Truffles are actually mushrooms, but unusual ones.@@ They live in close association with the roots of certain trees ~~and~~ grow underground. ~~This is why~~ they are difficult to find.\n\n@@In Europe, truffles are harvested with the help of female pigs or trained dogs.@@ Female pigs are especially sensitive to the odor of truffles ~~because~~ it is similar to the smell {12} by male pigs. The use of pigs is risky, ~~though~~, ~~because~~ they tend to eat anything remotely edible, or fit to eat. ~~For this reason~~, dogs have been trained to dig into the ground wherever they {13} this odor, ~~and~~ they willingly exchange their truffle for a piece of bread and a pat on the head.\n\n@@To enjoy the wonderful flavor of what has been described as a jewel of the earth, you must eat truffles fresh and uncooked, shortly after they are dug up.@@ Their flavor {14} quickly, ~~and~~ much of it is lost before some truffles reach the market. To preserve truffles, food experts suggest keeping them in closed glass jars in a refrigerator. {15} , they can be stored whole in bland oil, that is, oil with little taste of its own.",
+  "outline": [
+   "Prized in Europe since ancient times as food and medicine, truffles sell for high prices. These unusual mushrooms grow underground near tree roots, so they are hard to find.",
+   "Female pigs and trained dogs sniff out truffles in Europe. Since pigs eat almost anything, hunters train dogs, which happily trade their finds for bread.",
+   "Truffles taste best eaten fresh and raw soon after digging, since their flavor fades fast. Glass jars in a refrigerator or bland oil can help keep them."
+  ],
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "全文字數": 245,
+   "句數": 13,
+   "記號數": 13,
+   "每百字記號數": "5.3",
+   "建檔": "第三百六十六場建檔。改編自 z100p1；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+  }
+ },
+ {
+  "id": "CLA-z95p2",
+  "year": "改編練習（二十）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "美國對狼的戰爭（The War on Wolves in America）",
+  "flagNote": "本題庫改編練習：文章改編自 95 年指考閱讀測驗〈美國對狼的戰爭〉，刪短後照現行學測綜合測驗的版面出題（第 11–15 題，每題四選一），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "accuracyRateSource": null,
+  "text": "Native Americans could not understand the white man’s war on the wolf. The Lakota, Blackfeet, and Shoshone, among other tribes, considered the wolf their spiritual brother. They respected its endurance, or its ability to keep going for a long time, and its skill at hunting. Warriors wrapped themselves in wolf skins, hoping to {11} the wolf’s courage and endurance. The best Comanche warriors were even called wolves. White settlers, {12} , saw the wolf as an enemy to be destroyed. Western ranchers, who raised cattle, complained that wolves killed thousands of their animals each year. In 1884, Montana created its first wolf bounty—a cash reward for every dead wolf. Over thirty-five years, hunters brought in more than eighty thousand dead wolves to {13} the reward, and the government even provided free poison. Finally, in 1914, ranchers persuaded Congress to provide money to kill wolves on public lands. No place was safe for the last wolves in the American West, not even Yellowstone, the nation’s first national park. From the day the park opened in 1872, poisoned meat was {14} to kill wolves. In October 1926, two young wolves trapped near a dead bison became the last animals killed in the park’s wolf control program. Ranchers had won the war against the wolf. Only in the northern woods of Wisconsin, Minnesota, and Michigan could the howl of gray wolves still be heard, while the vast lands of the American West {15} . The country had lost its greatest predator.",
+  "zh": "美洲原住民無法理解白人為什麼要對狼發動戰爭。拉科塔人、黑腳人、修休尼人等部族，都把狼當作精神上的兄弟。他們敬佩狼的耐力，也就是長時間持續下去的能力，也敬佩狼的狩獵本領。戰士會把狼皮裹在身上，希望能得到狼的勇氣和耐力。科曼奇人最精銳的戰士，甚至就叫做狼。相反地，白人移民把狼看成必須消滅的敵人。西部那些養牛的牧場主人抱怨，狼每年咬死好幾千頭牲口。1884 年，蒙大拿第一次祭出狼的懸賞，也就是每殺一隻狼就發一筆賞金。三十五年間，獵人送去超過八萬具狼屍，領取賞金，政府甚至免費提供毒藥。最後在 1914 年，牧場主人說服國會撥款，在公有土地上撲殺狼。對美國西部最後的狼來說，沒有一個地方是安全的，連美國第一座國家公園黃石公園也不例外。從 1872 年公園開放那天起，園內就有人擺出下了毒的肉來毒死狼。1926 年 10 月，兩隻小狼在一頭野牛的屍體附近落入陷阱，成了公園控制狼群的計畫中最後殺死的動物。牧場主人打贏了這場對狼的戰爭。只有在威斯康辛、明尼蘇達和密西根北部的森林裡，還聽得到灰狼的嚎叫，美國西部廣大的土地卻陷入一片寂靜。這個國家失去了它最偉大的掠食者。",
+  "textMarked": "Native Americans could not understand the white man’s war on the wolf. @@The Lakota, Blackfeet, and Shoshone, among other tribes, considered the wolf their spiritual brother.@@ They respected its endurance, or its ability to keep going for a long time, ~~and~~ its skill at hunting. Warriors wrapped themselves in wolf skins, hoping to {11} the wolf’s courage and endurance. The best Comanche warriors were even called wolves.\n\n@@White settlers, {12} , saw the wolf as an enemy to be destroyed.@@ Western ranchers, who raised cattle, complained that wolves killed thousands of their animals each year. In 1884, Montana created its first wolf bounty—a cash reward for every dead wolf. Over thirty-five years, hunters brought in more than eighty thousand dead wolves to {13} the reward, ~~and~~ the government even provided free poison. ~~Finally~~, in 1914, ranchers persuaded Congress to provide money to kill wolves on public lands.\n\n@@No place was safe for the last wolves in the American West, not even Yellowstone, the nation’s first national park.@@ From the day the park opened in 1872, poisoned meat was {14} to kill wolves. In October 1926, two young wolves trapped near a dead bison became the last animals killed in the park’s wolf control program.\n\n^^Ranchers had won the war against the wolf.^^ Only in the northern woods of Wisconsin, Minnesota, ~~and~~ Michigan could the howl of gray wolves still be heard, ~~while~~ the vast lands of the American West {15} . The country had lost its greatest predator.",
+  "outline": [
+   "Several Native American tribes treated the wolf as a spiritual brother, admired its endurance and hunting skill, and wore wolf skins to gain its qualities.",
+   "White settlers took the opposite view. Ranchers blamed wolves for cattle losses, Montana paid for dead wolves, and the government supplied poison and federal money.",
+   "Even Yellowstone offered no protection. Poison was used against wolves from the park’s earliest days, and the last animals its control program killed were two young wolves in 1926.",
+   "With the ranchers victorious, wild gray wolves survived only in a few northern forests, leaving the West quiet and without its top hunter."
+  ],
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "全文字數": 250,
+   "句數": 16,
+   "記號數": 9,
+   "每百字記號數": "3.6",
+   "建檔": "第三百六十六場建檔。改編自 z95p2；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+  }
+ }
+]

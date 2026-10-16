@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g92-24-1/index.html
+Author: staresto-create ZZSH
+Title: 92 年學測克漏字第24題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 92 年學測 ／ 第24題
+92 年學測 克漏字 第24題
+慣用語／片語線索：句內答對率 49%
+答對率 49%：當年每 100 位考生，有 49 位答對。
+As the flights grew longer, a new set of two collection bags was devised, 24 for liquid wastes and the other for solid wastes.
+(A)the one
+(B)someone
+(C)no one
+(D)one
+答案：(D) one
+題目編號：G92_24_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】one...the other... 固定句型，表示「兩者中的一個……另一個……」（one for liquid, the other for solid）；the one（通常用於特指情況）、someone、no one 都不合這個「一個…另一個…」的對應句型。
+深入解析
+你可能會這樣想
+四個選項長得很像，都繞著 one 打轉，最容易憑感覺挑 the one，覺得「特指那一個」比較精確。答對率不到五成。但這一格根本不必憑感覺，答案就寫在空格後面那半句裡。
+怎麼判斷
+四個選項都是代名詞，可見這一格考的是「兩者中的一個」該怎麼說，那就往後看。空格後面是 for liquid wastes and the other for solid wastes——the other 已經出現了。one... the other... 是兩者對應的組合：前面點名一個，後面用 the other 指剩下的那一個，掛鉤用 I have two pens. One is red; the other is blue.（我有兩枝筆，一枝是紅的，另一枝是藍的。）。句子前半的 a new set of two collection bags 也明說了是兩個，兩邊互相印證。這一題的鑑別度高達 68，是 92 年克漏字十題裡最高的，分開的就是有沒有讀完後半句再回頭填。順便把整組分清楚：兩者用 one... the other...；三者以上任取一個用 one... another...；剩下的全部用 the others。
+誘答選項
+someone（某人）、no one（沒有人）：這兩個都只指人，而這裡講的是收集袋——先看指人還是指物，一次就刷掉兩個。the one（那一個）：the 表示已經在講定的某一個，需要前文先鎖定它；而這裡是第一次把兩個袋子分開來講，還沒有哪一個被指定過。
+常考字詞與句型
+one... the other...（兩者中的一個……另一個……）、one … another …（三者以上的一個……另一個……）、the others（其餘的全部）、a set of（一組……）、be devised（被設計出來）、liquid／solid waste（液態／固態廢棄物）。其中 one … another … 這一組考過 3 個年度，89 年第 22 題 →、93 年第 17 題 →都出現過；the others 考過 3 個年度，89 年第 22 題 →、103 年第 18 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The first American space toilet was Alan Shepard's space suit. His flight was supposed to last only 15 minutes, so there was no provision made for him to relieve himself in the capsule. His flight, 21, was delayed for hours. It was then decided that Alan Shepard should relieve himself in his space suit, and continue with the mission as scheduled.
+22 problem urged NASA to develop the first space toilet, a modified diaper. Diapers are 23 used by astronauts when they are outside the space shuttle, wearing a spacesuit.
+As the flights grew longer, a new set of two collection bags was devised, 24 for liquid wastes and the other for solid wastes. Once used, the bags are sealed and stored for the flight back to the earth, 25 they are disposed of.
+中譯：第一個美製太空馬桶，其實是艾倫·雪帕德的太空衣。他原本的飛行任務預計只會持續 15 分鐘，因此艙內並未為他準備如廁的設施。然而，他的飛行任務卻延遲了好幾個小時。於是，任務單位決定讓雪帕德直接在太空衣裡如廁，並按原訂計畫繼續執行任務。這個問題促使 NASA 開發出第一款太空馬桶——一種改良版的尿布。太空人在太空艙外、穿著太空衣進行任務時，通常會使用這種尿布。隨著飛行任務時間越來越長，科學家設計出一套新的雙收集袋系統，一個用於收集液態廢物，另一個用於收集固態廢物。使用完畢後，這些袋子會被密封並存放，直到返回地球後才進行處理。
+📋 內容大意
+Delays during early space missions forced NASA to continuously develop and upgrade waste disposal systems for astronauts.（敘事文）
+← 第23題回到92 年學測第25題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

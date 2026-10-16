@@ -1,0 +1,44 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z93m-28/index.html
+Author: staresto-create ZZSH
+Title: 93 年指考敏督利颱風受災地區考生補救考試克漏字第28題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 93 年指考敏督利颱風受災地區考生補救考試 ／ 第28題
+93 年指考敏督利颱風受災地區考生補救考試 克漏字 第28題
+字彙選義線索：跨句
+28 of us can be perfectly sure about how things will turn out in the future. But we can, and often do, think of the possibilities.
+(A)All
+(B)Some
+(C)Many
+(D)None
+答案：(D) None
+題目編號：Z93M_28（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+None of us can be perfectly sure（我們沒有人能完全確定）呼應後句「但」我們可以、也經常會去思考各種可能性，前後形成「無法確定／但仍會臆測」的對比。All／Some／Many 都無法帶出這種與後句 But 銜接的語意對比。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都能接 of us，文法上一個也刷不掉，只能比語意；而「我們有些人／很多人無法完全確定未來」聽起來也很合理，Some 與 Many 就這樣被選走。這一題的線索不在空格所在的這一句，在下一句的第一個字。
+怎麼判斷
+先把下一句讀完：But we can, and often do, think of the possibilities.（但我們可以、而且經常會去思考各種可能性。）開頭是 But，But 要求前後相反。既然後面是肯定的「我們可以思考可能性」，前面那一句就必須是否定的——四個選項裡只有 None 是否定的，填進去讀成 None of us can be perfectly sure about how things will turn out in the future.（我們沒有人能完全確定未來會怎麼發展。）前後就成了「沒有人能確定，但我們仍然會去想」，這才是這一段要說的話。這一格是「先讀連接詞再回頭填空」的典型：空格所在的句子自己是中立的，正負要由下一句的 But 決定。順帶記一個同句裡的用法：we can, and often do, think of... 的 do 是替代，代替後面的 think of the possibilities，避免重複；Do you like it? — Yes, I do. 就是同一個判斷方式。
+誘答選項
+All of us can be perfectly sure（我們全都能完全確定）填進去，後面的 But 就沒有東西可以轉折了，而且與整篇「機率是用來讓猜測更準確」的主旨相反；Some 與 Many 都是「有一部分人能確定」，同樣接不上 But——如果真有人能確定，後面就不必說「但我們可以去思考可能性」了。三個選項的共同破綻是：它們都讓下一句的 But 失去作用。
+常考字詞與句型
+none of us（我們沒有人……）、turn out（結果變成、演變成）、be sure about（對……有把握）、think of（想到、思考）、do 的替代用法（代替前面出現過的動作，如 Do you like it? — Yes, I do.）、possibility（可能性）。
+線索範圍說明：空格的正負由下一句開頭的 But 決定
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Which would you wear to a football game, a sweater or a raincoat? 26 the raincoat if you thought there was a good chance of rain. Which basketball team is more likely to win, one that is 30 points ahead at the half or its opponent? Teams have been known to come from 27 to win, but the chances of overcoming that kind of lead are slim.
+28 of us can be perfectly sure about how things will turn out in the future. But we can, and often do, think of the possibilities. We can try to guess 29 this or that might happen.
+In some cases mathematics can help make these guesses more accurate. The branch of mathematics that helps make our guesses more accurate is called probability. Probability is the science of 30. It is among the fastest growing and most useful parts of today's mathematics.
+中譯：去看一場美式足球賽，你會穿毛衣還是雨衣？如果你認為很有可能下雨，你或許就會選擇穿雨衣。哪一支籃球隊比較有可能獲勝——是上半場就領先 30 分的那一隊，還是它的對手？球隊確實有可能從落後大幅追分逆轉獲勝，但要扭轉這麼大的差距，機會其實相當渺茫。我們當中沒有人能夠完全確定未來會如何發展，但我們可以，也經常會去思考各種可能性。我們可以嘗試猜測這件事或那件事是否會發生。在某些情況下，數學能幫助我們讓這些猜測更加準確。這門幫助我們讓猜測更精準的數學分支，就叫做機率。機率是研究不確定性的科學，它是當今數學中發展最快、也最實用的領域之一。
+📋 內容大意
+Sensible choices, from clothing to sport, rest on judging what is likely to happen.
+Nobody can be certain about the future, yet we constantly weigh the possibilities.
+Mathematics sharpens such guesses, and that branch, probability, is among its most useful today.
+← 第27題回到93 年指考敏督利颱風受災地區考生補救考試第29題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

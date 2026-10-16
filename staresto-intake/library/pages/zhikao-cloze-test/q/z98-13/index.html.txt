@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z98-13/index.html
+Author: staresto-create ZZSH
+Title: 98 年指考克漏字第13題詳解（慣用語／片語）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 98 年指考 ／ 第13題
+98 年指考 克漏字 第13題
+慣用語／片語線索：句內答對率 53%
+答對率 53%：當年每 100 位考生，有 53 位答對。
+As a result, students are forced to communicate clearly 13 that the “patient” understands them completely.
+(A)in order
+(B)in return
+(C)in case
+(D)in addition
+答案：(A) in order
+題目編號：Z98_13（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】in order that + 子句，固定用法，表示「以便、為了使……」，in order that the patient understands 符合「學生必須清楚溝通，以便讓病人完全理解」的目的語意。in return（作為回報）、in case（以防萬一）、in addition（此外）都不符合這種「目的」語意。
+深入解析
+你可能會這樣想
+四個選項都是 in 開頭的片語，長得很像，容易混淆，你會憑哪個中文順挑一個。
+怎麼判斷
+鑑別度高達 55，分開的是有沒有注意到空格後面那個 that。空格後是 that the “patient” understands them completely，一個完整的 that 子句；四個選項裡只有 in order 能直接接 that 子句組成 in order that（以便、為了使……），那是表目的的連接詞。填進去讀成 communicate clearly in order that the patient understands them completely（清楚溝通，好讓病人完全聽懂）。同一個意思的三種說法可以一起記：in order that + 子句、so that + 子句、in order to + 原形動詞。
+誘答選項
+in return（作為回報）可以單獨用，或接 for + 名詞，不接 that 子句；in case 雖然也能接子句，但它是「以防萬一」，會讀成「以防病人完全聽懂」，語意剛好相反；in addition（此外）是轉折詞，後面要接一個獨立的句子或 to + 名詞，接不上這裡的 that 子句。三個都是 in 開頭的片語，形態吻合，容易被順手選走。
+常考字詞與句型
+in order that + 子句（以便、為了使……）、in order to + 原形動詞（為了）、in return for（作為……的回報）、in addition to（除……之外）、be forced to V（被迫做某事）、communicate clearly（清楚溝通）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：98學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Keele University in the United Kingdom has developed a "virtual patient," created by a computer, to help train the pharmacists of the future. Students in the university's School of 11 work with the "patient" to gain experience in effective communication and decision-making.
+Students talk with the "patient" directly or by typing questions into a computer. The "patient" responds verbally or with gestures to indicate 12 such as pain, stress or anxiety. As a result, students are forced to communicate clearly 13 that the "patient" understands them completely.
+The Virtual Patient can also be used to explore various medical situations. For example, the "patient" can be programmed to be allergic to certain medicine and can 14 serious reactions if student learners are not aware of the situation. This kind of practice allows students to learn from mistakes in a safe environment that would not be 15 with textbooks alone. The unique system can both be used in a classroom setting or for distance learning.
+中譯：英國基爾大學開發了一位由電腦生成的「虛擬病人」，用來協助訓練未來的藥師。該校藥學院的學生會與這位「病人」互動，藉此累積有效溝通與臨床決策的經驗。學生可以直接與「病人」對話，或透過在電腦上輸入問題來互動。這位「病人」會用語言或動作回應，表現出疼痛、壓力或焦慮等各種狀態。因此，學生必須練習清楚地溝通，以便讓「病人」完全理解他們的意思。這套虛擬病人系統也可以用來探索各種醫療情境。舉例來說，這位「病人」可以被設定為對某種藥物過敏，如果學生沒有注意到這一點，就可能引發嚴重的過敏反應。這種訓練方式讓學生能在安全的環境中從錯誤中學習，這是單靠教科書無法提供的。這套獨特的系統既能用於課堂教學，也能用於遠距教學。
+📋 內容大意
+A British university has built a computer-created virtual patient to train future pharmacists.
+Students speak to it or type questions, and it replies in words or gestures showing pain or stress.
+Programmed for allergies and other risks, it lets students learn from mistakes safely, in class or at a distance.
+← 第12題回到98 年指考第14題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

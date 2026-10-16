@@ -1,0 +1,66 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dz105-33/index.html
+Author: staresto-create ZZSH
+Title: 指考 105年 篇章結構 第33題詳解（掌握段落主題句和細節的關係）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 指考 105年 ／ 第33題
+指考 105年 篇章結構 第33題
+選文：加盟這門生意（What It Means to Buy a Franchise）
+掌握段落主題句和細節的關係線索：概括—列舉呼應答對率 50%
+(A)Whether a franchise is profitable or not depends largely on the nature of the business.加盟賺不賺錢，很大程度取決於行業的性質。
+(B)Research has shown that customers tend to choose a brand they recognize over one they don’t.研究顯示，顧客傾向選擇自己認得的品牌，而不是不認得的。
+(C)A franchise comes with a built-in business formula including products, services, and even employee uniforms.加盟附帶一套現成的營運公式，包含產品、服務，甚至員工制服。
+(D)Moreover, the franchisee is given no right to renew or extend the franchise after the term of the contract.此外，合約期滿之後，加盟主沒有續約或延長的權利。
+(E)The most famous example was Isaac Singer, who created franchises to distribute his sewing machines to larger areas.最有名的例子是 Isaac Singer，他建立加盟體系，把自己的縫紉機推廣到更大的地區。
+(F)A franchise is a license issued by a large, usually well-known, company to an individual or a small business owner.加盟是一家大型、通常也頗有名氣的公司，發給個人或小企業主的一張授權。
+答案：(C) A franchise comes with a built-in business formula including products, services, and even employee uniforms.
+題目編號：Dz105_33
+解析
+先看空格前面。 前一句是 One of the benefits is the ready-made business operation.（好處之一是現成的營運模式。）說了「現成的營運模式」，沒說現成的是哪些東西。
+再看空格後面。 後面是 Depending on the franchise, the franchisor company may offer support in training and financial planning.（視加盟品牌而定，總部可能提供訓練與財務規劃的支援。）——這已經換到「總部的支援」了。
+C 就是中間那一句：現成的到底包含什麼——產品、服務，連員工制服都有。
+如果你選了 F（加盟是一家大型、通常也頗有名氣的公司，發給個人或小企業主的一張授權。）：F 也以 A franchise 開頭，形式和 C 一樣。但 F 是一句定義，而這一段列的是好處，F 沒有說現成的營運模式包含哪些東西。
+【下次先看這裡】前一句拋出一個概括的說法（現成的、有支援的、有名氣的），下一句又換了話題，中間那一格就是把概括說法拆開來講的內容。
+線索與數據
+線索種類概括—列舉呼應
+線索在哪前一句 ready-made business operation ↔ 具體內容
+答對率50%
+鑑別度63
+本篇題型6選5・刪去法不收尾
+數據出處：本頁的答對率與鑑別度來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響。
+多出來的那一個：A
+(A)Whether a franchise is profitable or not depends largely on the nature of the business.加盟賺不賺錢，很大程度取決於行業的性質。
+A 的句子完整、說法也合理，讀起來像整篇的結論。但五格都放不進去：
+格
+那一格在等什麼
+A 為什麼不行
+33
+「現成的營運模式」包含哪些東西
+A 講的是賺不賺錢，不是內容
+共同點：全篇回答的是「加盟是什麼、有哪些優點、有哪些缺點」，A 回答的是「什麼情況下會賺錢」，換了一個問題。
+還有一個看得出來的地方：另外五個選項都在敘述一件事實，只有 A 是一句「要看情況」的判斷句（Whether… depends largely on…）。
+【下次先看這裡】六個選項裡如果有一句是「要看情況而定」，先問這一篇有沒有在討論條件。沒有的話，它很可能就是多出來的那一個。
+展開本題所在的整篇選文與中文翻譯
+本篇共 5 格、6選5；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+Starting a business on one’s own can be quite challenging and costly. To reduce the risks involved in starting a business from scratch, many people buy a franchise instead. 31 Under the license, the individual acquires the right to use the big company’s brand name and agrees to sell its products.
+The concept of the franchise dates back to the 19th century in the U.S. 32 Then, in the 1930s, Howard Johnson restaurants skyrocketed in popularity, paving the way for restaurant chains and the subsequent franchises that would define the unprecedented rise of the American fast-food industry.
+There are many advantages to investing in a franchise. One of the benefits is the ready-made business operation. 33A franchise comes with a built-in business formula including products, services, and even employee uniforms. Depending on the franchise, the franchisor company may offer support in training and financial planning. Some even provide assistance with approved suppliers. To new business owners, the most recognized advantage of a franchise is perhaps the well-established brand name of the franchisor such as that of McDonald’s. 34
+缺點一：開辦金和抽成很重，用麥當勞算給你看
+Disadvantages include heavy start-up costs as well as ongoing royalty costs on the part of the franchisee. To take the McDonald’s example further, the estimated minimum cost for a franchisee to start a McDonald’s is US$500,000. And it has to pay an annual fee equivalent to 12% of its sales to McDonald’s.
+35 Other disadvantages include lack of territory control or creativity with one’s own business.
+中譯
+自己開一家公司相當有挑戰性，成本也高。為了降低從零開始創業的風險，許多人改為買下一個加盟權。31 依照這張授權，個人取得使用那家大公司品牌名稱的權利，並同意銷售它的產品。
+加盟這個概念可以追溯到十九世紀的美國。32 後來在一九三○年代，Howard Johnson 餐廳人氣暴漲，替連鎖餐廳鋪了路，也帶出後來的加盟體系——美國速食業前所未有的興起，正是由這些加盟體系形塑出來的。
+投資加盟有許多好處。其中之一是現成的營運模式。33 依加盟品牌而異，加盟總部可能提供訓練和財務規劃方面的支援。有些甚至協助引介經過認可的供應商。對新的業主來說，加盟最廣為人知的好處，也許是總部那個早已建立起來的品牌名稱，例如麥當勞。34
+缺點包括加盟主要負擔沉重的開辦成本，以及持續支付的權利金。再以麥當勞為例，加盟主要開一家麥當勞，估計最少要五十萬美元，而且每年還必須付給麥當勞相當於營業額百分之十二的費用。
+35 其他缺點包括無法掌控自己的營業區域，也無法在自己的生意上發揮創意。
+← 第32題回到互動練習第34題 →
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g89-27-2/index.html
+Author: staresto-create ZZSH
+Title: 89 年學測克漏字第27題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 89 年學測 ／ 第27題
+89 年學測 克漏字 第27題
+慣用語／片語線索：跨句
+Events in daily life sometimes occur symbolically in dreams. 27 , a boy is having difficulties on the school playground because a bigger boy keeps bullying him.
+(A)In general
+(B)As a result
+(C)For example
+(D)In contrast
+答案：(C) For example
+題目編號：G89_27_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+前面說「日常生活中的事件有時會以象徵形式出現在夢中」，這句舉一個具體例子（一個男孩在操場上遇到困難），For example 符合舉例功能；In general（一般而言）、As a result（因此）、In contrast（相反地）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是很常見的轉折詞，中文意思差很遠，照理說不難分，但如果只讀空格所在的那一句，你會看到一個男孩在操場上被欺負的故事，看不出它跟前面有什麼關係，於是只好憑感覺挑。這一格必須回頭看前一句。
+怎麼判斷
+四個選項都是轉折詞，可見這一格考的是前後兩句的關係，那就把兩句擺在一起。前一句是一句通則：Events in daily life sometimes occur symbolically in dreams（日常生活中的事件有時會以象徵的形式出現在夢裡）。這一句則是一個具體的情境：一個男孩在操場上被大男孩欺負，晚上夢見自己獨自站在操場上面對一頭獅子。從一句概括的話走到一個具體的個案，這就是舉例，用 For example。掛鉤是 I like fruits such as apples and bananas. 那種舉例的動作，只是這裡舉的是一整個情境，所以用 For example 而不是 such as。這一題與 93 年第 26 題 →正好可以對照著看：那一題是空格在通則句裡，要靠下一句 For example 舉的例子反推答案；本題則是空格就在 For example 的位置上，要靠前一句的通則來確認。看到 For example，就要意識到前後兩句是「通則與個案」的關係。
+誘答選項
+In general（一般而言）：方向剛好相反，它是從一堆個案歸納成一句通則，而本句是從通則走向個案。As a result（因此、結果）：表因果，但男孩的故事不是「日常事件會象徵性地出現在夢裡」所造成的結果，它只是這句話的一個例子。In contrast（相較之下）：要把兩件不同的事並排比較，而本句與前一句講的是同一件事。
+舉例與換句話說的幾個說法怎麼分
+for example 與 for instance 完全同義，可以互換，後面接的是一句完整的話，前後用逗號隔開。such as 不一樣，它後面直接接名詞，從一類東西裡點出幾個成員，中間不斷句，84 年第 22 題 →與 93 年第 30 題 →考的都是它。that is 與 in other words 又是另一回事：那是把同一件事換句話說，後面講的還是前面那件事，不是新的例子。四個說法裡只有 such as 後面不能接一整句話，這是最好用的一條分界。for instance 當答案的是 85 年第 33 題 →與指考克漏字 95 年第 14 題 →。A dream can turn a small worry into a strange scene. For example, a student who is afraid of being called on may dream that he is the one standing at the blackboard.（夢會把一個小小的擔心變成奇怪的畫面。舉例來說，一個怕被點名的學生，可能會夢見站在黑板前的人是自己。）A student who is afraid of being called on, for instance, may dream that he is the one standing at the blackboard.（換成 for instance，並且改放到句子中間當插入語，意思不變。）Dreams often replay small worries such as tests, homework, and being late.（夢常常重播考試、作業、遲到這類小小的擔心。）〔情境取材自 94 學測作文題：課堂上做的夢〕
+常考字詞與句型
+for example（舉例來說）、such as（例如）、occur symbolically（以象徵的形式出現）、have difficulties（遇到困難）、bully sb（霸凌某人）、on the school playground（在學校操場上）。
+線索範圍說明：For example 為前一句「日常事件象徵性地出現在夢中」舉例
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Basically, there are two kinds of sleep. One is Rapid Eye Movement (REM) sleep. In 21 , the brain waves of a sleeping person are similar to those of a waking person, and the eyes move about rapidly under the closed lids. 22 kind of sleep is Non-Rapid Eye Movement sleep.
+Scientists have discovered that dreams happen mainly in REM sleep. Everyone dreams about 20 percent of their sleeping time. 23 people who say they never dream show about 20 percent of REM sleep. 24 these "non-dreamers" do their sleeping in a laboratory 25 researchers can wake them up and ask them whether they were having dreams the moment before, it 26 that they dream as much as others.
+Events in daily life sometimes occur symbolically in dreams. 27 , a boy is having difficulties on the school playground because a bigger boy keeps bullying him. He may dream at night of being alone in the playground, 28 a lion. At other times the dreaded event from daily life simply occurs in a dream in its real-life form; 29 , the boy dreams of being bullied by the bigger boy.
+30 scientific research, we have known more about the relationship between sleep and dreams. However, why a dream will take a certain symbolic form is still a mystery.
+中譯：基本上，睡眠可分為兩種。第一種是快速動眼期（REM）睡眠，在這個階段，睡眠者的腦波與清醒時相似，眼球會在閉著的眼皮下快速轉動。另一種則是非快速動眼期睡眠。科學家發現，做夢主要發生在快速動眼期。每個人在睡眠時間中大約有 20%在做夢，就連那些聲稱自己從不做夢的人，也有大約 20%的快速動眼期睡眠時間。如果讓這些「不做夢的人」在實驗室裡睡覺，研究人員就能把他們叫醒，詢問他們前一刻是否在做夢，結果發現，原來他們做夢的次數其實跟其他人一樣多。日常生活中發生的事，有時會以象徵的形式出現在夢境中。舉例來說，一個男孩在學校操場上因為一直被較大的男孩欺負而感到困擾，晚上他可能會夢見自己獨自一人在操場上，面對一頭獅子。而有時候，日常生活中令人恐懼的事件，也會直接以原本的樣貌出現在夢境中，也就是說，這名男孩夢見的就是自己被那個較大的男孩欺負。透過科學研究，我們對睡眠與夢境之間的關係已有了更多了解。然而，夢境為什麼會以某種特定的象徵形式呈現，至今仍是個謎。
+📋 內容大意
+Scientific research shows that everyone dreams during REM sleep, often transforming daily experiences into direct or symbolic dreams.
+← 第26題回到89 年學測第28題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

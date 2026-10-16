@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g115-17-2/index.html
+Author: staresto-create ZZSH
+Title: 115 年學測克漏字第17題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 115 年學測 ／ 第17題
+115 年學測 克漏字 第17題
+慣用語／片語線索：句內答對率 44%
+答對率 44%：當年每 100 位考生，有 44 位答對。
+But the culinary art of dim sum 17 , for it was considered inappropriate to pair tea with food.
+(A)would hardly develop
+(B)had yet to develop
+(C)was fast developing
+(D)had almost developed
+答案：(B) had yet to develop
+題目編號：G115_17_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】had yet to 指「尚未」，表示點心的烹飪藝術「尚未發展」，因為當時認為茶配食物不恰當；would hardly develop（不太可能發展，語意不合，這裡是講「尚未」而非「不太可能」）、was fast developing（正快速發展，語意相反）、had almost developed（幾乎已經發展，語意相反）都不合。
+深入解析
+你可能會這樣想
+yet 你最熟的用法是擺在否定句或疑問句的句尾：I haven't finished yet.／Have you eaten yet?——句子裡一定看得到 not 或問號。所以看到 had yet to develop 這種「長得像肯定句」的寫法，你很容易讀成「已經發展了」，正好翻反。劍橋《English Grammar Today》的 Yet 條目說明 yet 多半用於現在完成式的否定句與疑問句、置於句尾；而劍橋辭典另立 have yet to 詞條，直接定義為「還沒做某事」（have yet to do sth ＝ have not done sth），例句如 They have yet to make a decision.（他們還沒做出決定）。換句話說，have／had yet to 是形式肯定、語意否定，這正是本題答對率被壓到四成四的原因。
+怎麼判斷
+關鍵在空格後的 for 子句：for it was considered inappropriate to pair tea with food（因為當時認為茶配食物並不恰當）。for 在這裡是對等連接詞「因為」，交代的是點心還沒出現的理由。既然「茶配食物被視為不恰當」，點心這門手藝當然還沒誕生。再看下一段開頭 Centuries later, the ability of tea to aid in digestion finally became known.——finally（終於）這個字回頭確認了：在那之前一直是「尚未」的狀態。時態上，had yet to 的 had 是 have 的過去式，講的是「當時尚未」，與整段的過去敘事一致。
+誘答選項
+would hardly develop 是「不太可能發展」，講的是可能性高低，但下一段點心明明就發展出來了，語意矛盾；was fast developing（正快速發展）與 had almost developed（幾乎已發展成形）方向完全相反，而且都跟後面「茶配食物不恰當」的理由接不起來——只要抓住 for 子句是在解釋「為什麼還沒有」，這兩個選項立刻排除。
+常考字詞與句型
+have／has／had yet to V（尚未……）、be yet to V（同義，較正式）、not yet（還沒）、as yet（到目前為止，多用於否定）、the best is yet to come（好戲還在後頭）。順帶分清一組常錯的：yet（還沒，用於否定與疑問）、already（已經，用於肯定）、still（仍然，表持續）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The history of dim sum stretches back to the early days of the Silk Road, an ancient network of trade routes connecting the East and the West. Those who traveled along the routes through China needed places to rest. Teahouses thus sprang up to 16 the weary travelers, offering them a cup of tea to help them regain energy. But the culinary art of dim sum 17 , for it was considered inappropriate to pair tea with food.
+Centuries later, the ability of tea to aid in digestion finally became known. Teahouse owners therefore began providing bite-sized snacks as an accompaniment, and the tradition of these Cantonese delicacies was born.
+Dim sum is more than just an example of Chinese cuisine. It is 18 an enjoyable dining experience that can span hours. The small portions were designed to merely "touch the heart," as the name literally means, and 19 were first enjoyed as snacks. The small size allows the customer to order a great variety of dishes, creating a banquet of different tastes and flavors. It is customary for big groups to enjoy simple dishes together as 20 . Ultimately, dim sum—the food—is only a small part of the dim sum experience.
+中譯：點心（港式飲茶）的歷史可追溯至古代絲路的早期時代——絲路是連接東西方的古老貿易路線網。沿著這條路線經過中國的旅人，需要有地方歇腳休息，茶館便因此應運而生，為疲憊的旅人提供一杯茶，幫助他們恢復體力。然而，點心這門烹飪藝術當時卻尚未誕生，因為當時人們認為茶與食物一起享用並不恰當。直到數個世紀之後，人們才逐漸了解到茶其實有助於消化。於是，茶館老闆開始提供小巧的點心作為茶的搭配，這項廣東美食的傳統也就此誕生。點心不只是中式料理的一個代表，它更是一場能持續數小時、令人愉悅的用餐體驗。這些小份量的點心，設計初衷正如其名稱字面意義——只是要「點到心意」，最初是被當作零食來享用的。份量小巧的特色，讓顧客能一次點各式各樣的菜色，組成一場口味豐富多變的盛宴。大型聚會通常會習慣一起享用簡單的菜餚，作為一種歡樂的社交活動。歸根結柢，點心這項食物本身，其實只是整個「飲茶」體驗中的一小部分而已。
+📋 內容大意
+Dim sum goes back to the early Silk Road. Teahouses grew up along the trade routes through China to give tired travelers a cup of tea.
+At first food was not served with tea, because the pairing seemed improper. Centuries later people learned that tea aids digestion, so teahouses added small snacks.
+The name means “touch the heart.” Small portions let diners order many dishes and make a banquet that can last hours. The food is only part of the experience.
+← 第16題回到115 年學測第18題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

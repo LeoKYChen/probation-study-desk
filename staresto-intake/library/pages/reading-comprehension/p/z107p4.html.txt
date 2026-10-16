@@ -1,0 +1,158 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/z107p4.html
+Author: staresto-create ZZSH
+Title: 107 指考閱讀測驗：斯瓦巴全球種子庫的爭議｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 107 指考
+107 指考閱讀測驗：斯瓦巴全球種子庫的爭議
+The Debate over the Svalbard Global Seed Vault
+指考 107年第 48–51 題4 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段In order to protect the diversity of crops from catastrophe, the Svalbard Global Seed Vault, a seed bank, was built beneath a mountain on an Arctic island halfway between Norway and the North Pole. The Vault is meant to help farmers and scientists find the genes they need to improve today’s crops. It also aims to breed varieties that might better respond to emerging challenges, such as climate change and population growth. Currently, the Vault holds more than 860,000 samples, originating from almost every country in the world.
+第 2 段There is now, however, a growing body of opinion that the world’s faith in Svalbard is misplaced. Those who have worked with farmers in the field say that diversity cannot be boxed up and saved in a single container—no matter how secure it may be. Crops are always changing, pests and diseases are always adapting, and global warming will bring additional challenges that remain unforeseen. In a perfect world, the solution would be as diverse and dynamic as plant life itself.
+第 3 段The dispute about how best to save crop diversity centers on whether we should work with communities in the fields or with institutions, since it will be extremely difficult to find enough funding to do both. Now the isolated Svalbard seed vault is sucking up available funding. Yet, the highly centralized approach may not be able to help farmers cope with climate change, fifty or a hundred years from now. According to new research findings, as much as 75 percent of global crop diversity exists outside the big institutional seed banks. Such diversity is held instead by some of the world’s most marginal farmers. Moreover, it is argued with increasing force that seed banks can neither make up for the practical knowledge of farmers on the ground, nor compete with their ingenuity.
+題目
+48.What is the main idea of this passage?
+(A)Seed banks can help farmers improve their crops.
+(B)The practice of seed banks requires global cooperation.
+(C)The idea of saving crop diversity in seed banks is debatable.
+(D)Seed banks are able to deal with challenges of climate change.
+49.According to this passage, which of the following statements is true about the Svalbard Global Seed Vault?
+(A)It is using up a lot of the funding.
+(B)It is located in the center of Norway.
+(C)It aims to fight against gene modified crops.
+(D)It holds 75 percent of global crop diversity.
+50.Which of the following is true about the role of farmers in preserving crop variety?
+(A)Competing with seed banks.
+(B)Providing practical knowledge.
+(C)Packaging seeds for research.
+(D)Responding to population growth.
+51.What does “the highly centralized approach” in the third paragraph refer to?
+(A)Working with institutions.
+(B)Working with farmers.
+(C)Finding enough crop diversity.
+(D)Finding sufficient funds.
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+48
+(C)
+61%
+61
+49
+(A)
+46%
+71
+50
+(B)
+42%
+35
+51
+(A)
+27%
+24
+答對率與鑑別度出處：大考中心 107 學年度指定科目考試統計圖表：英文科答對率及鑑別指數表
+每一題的依據句
+第 48 題 主旨題 Main idea
+依據句：全文要讀完整篇才能判斷，不在某一句裡。
+第 1 段介紹斯瓦巴全球種子庫和它的目的；第 2 段用 however 一轉，說越來越多人認為世界對種子庫的信心放錯了地方；第 3 段說明爭議的焦點，以及種子庫做不到的事。全文談的是用種子庫保存作物多樣性這個做法有爭議，所以是 (C)。(A) 照抄第 1 段的 improve，幫助改良作物只是第 1 段說的設立目的，後面兩段正是在質疑這一點，過於狹隘；(D) 照抄 climate change，第 3 段反而說這種做法可能沒辦法幫助農民因應氣候變遷，偏離主題；(B) 照抄 global，Global 是種子庫名稱的一部分，原文沒有談全球合作，偏離主題。
+錯誤選項：(A) 過於狹隘（只講第 1 段）；(B) 偏離主題；(D) 偏離主題
+第 49 題 細節題（何者為是） Supporting details
+第 3 段Now the isolated Svalbard seed vault is sucking up available funding.
+原文 → 正確選項
+sucking up available funding → using up a lot of the funding
+第 3 段先說經費非常難找，很難兩邊都做，接著說斯瓦巴種子庫正吸走（sucking up）可用的經費。suck up 是「吸光、吸走」，經費本來就少，種子庫又把錢都吸走，選項換成 is using up a lot of the funding，所以是 (A)。(D) 照抄 75 percent，75% 的作物多樣性是在大型機構的種子庫之外，掌握在農民手中，選項說反了；(B) 照抄第 1 段的 Norway，種子庫在挪威和北極點之間的島上，不在挪威中部；(C) 照抄 gene，種子庫是要幫人找到改良作物的基因，原文沒有提到對抗基因改造作物。
+第 50 題 細節題 Supporting details
+第 3 段seed banks can neither make up for the practical knowledge of farmers on the ground, nor compete with their ingenuity.
+原文 → 正確選項
+practical knowledge → practical knowledge
+最後一句用 neither…nor 句型，主詞是種子庫（seed banks）：種子庫既無法取代（make up for）第一線農民的實務知識（practical knowledge），也比不上（compete with）農民的巧思。可見在保存作物多樣性這件事上，農民提供的是種子庫取代不了的實務知識，所以是 (B)。(A) 原文的 compete with 是說種子庫比不上農民，主詞是種子庫，選項把主詞換成農民，說成農民和種子庫競爭；(D) 照抄第 1 段的 population growth，因應人口成長是種子庫希望培育新品種的目的之一；(C) 第 2 段說多樣性沒辦法裝箱保存，原文沒有說農民替研究包裝種子。
+第 51 題 詞義題（指代詞） Vocabulary in context
+第 3 段centers on whether we should work with communities in the fields or with institutions
+第 3 段Now the isolated Svalbard seed vault is sucking up available funding.
+原文 → 正確選項
+with institutions → Working with institutions
+第 3 段第一句先說爭議在兩種做法之間：和田間的社群合作，或和機構合作（with institutions）。接著說斯瓦巴種子庫正吸走經費，種子庫就是第 2 段說的，把全世界的種子集中存放在單一容器裡的機構。下一句說 the highly centralized approach（高度集中的做法）可能幫不了農民，指的就是這種把種子集中在機構保存的做法，也就是和機構合作，所以是 (A)。再下一句說 75% 的作物多樣性在大型機構的種子庫之外，對照的也是機構。(B) 和田間的農民合作，種子分散在各地，正好是不集中的做法；(C) 照抄 crop diversity，保存作物多樣性是兩種做法共同的目標，不是其中一種做法；(D) 照抄 funding 的 fund，經費難找是爭議的原因，不是做法。
+換個說法的名詞怎麼認 →
+逐段中譯
+第 1 段為了保護作物的多樣性，不受浩劫毀滅，斯瓦巴全球種子庫這座種子銀行，建在北極一座島嶼的山底下，這座島嶼位在挪威和北極點的中間。種子庫的用意，是幫助農民和科學家找到改良現有作物所需要的基因。種子庫也希望培育出更能因應新挑戰的品種，例如氣候變遷和人口成長。目前，種子庫保存了超過 86 萬份樣本，來自世界上幾乎每一個國家。
+第 2 段然而，現在有越來越多人認為，世界對斯瓦巴種子庫的信心放錯了地方。曾經在田間和農民一起工作的人說，多樣性沒辦法裝箱，存放在單一的容器裡，不管這個容器有多安全都一樣。作物不斷在改變，病蟲害不斷在適應，全球暖化還會帶來更多目前無法預見的挑戰。在理想的世界裡，解決的方法應該像植物本身一樣多樣、一樣不斷變化。
+第 3 段怎麼保存作物多樣性最好，爭議的焦點在於：我們應該和田間的社群合作，還是和機構合作，因為經費非常難找，很難兩邊都做。現在，偏遠的斯瓦巴種子庫正吸走可用的經費。然而，這種高度集中的做法，五十年或一百年後，可能沒辦法幫助農民因應氣候變遷。根據新的研究結果，全球多達 75% 的作物多樣性，存在於大型機構的種子庫之外，掌握在世界上一些最邊緣的農民手中。此外，越來越多人強力主張，種子庫既無法取代第一線農民的實務知識，也比不上他們的巧思。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。這一篇沒有一句話直接點出全文中心思想，怎麼從各段歸納，請看第 48 題（主旨題）的解析。
+第 1 段In order to protect the diversity of crops from catastrophe, the Svalbard Global Seed Vault, a seed bank, was built beneath a mountain on an Arctic island halfway between Norway and the North Pole.
+第 2 段There is now, however, a growing body of opinion that the world’s faith in Svalbard is misplaced.
+第 3 段The dispute about how best to save crop diversity centers on whether we should work with communities in the fields or with institutions, since it will be extremely difficult to find enough funding to do both.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體論說文 Argumentative
+組織方式比較對比 Compare/Contrast這一類怎麼辨識 →
+關鍵轉折詞alsohoweversinceYetMoreoverneither … nor
+綱要
+為了保護作物多樣性免於浩劫，斯瓦巴全球種子庫建在北極一座島嶼的山裡，幫助農民和科學家找到改良作物的基因，(also) 也希望培育出更能因應氣候變遷的品種。
+(however) 然而越來越多人認為，世界對斯瓦巴的信心放錯了地方：多樣性沒辦法裝箱存在單一容器裡，因為作物不斷改變，病蟲害不斷適應，暖化還會帶來無法預見的挑戰。
+爭議的焦點是保存作物多樣性應該和田間社群合作，還是和機構合作，(since) 因為經費很難兩邊都顧到；現在偏遠的斯瓦巴種子庫正吸走可用的經費。
+(Yet) 然而這種高度集中的做法，五十年或一百年後可能幫不了農民因應氣候變遷；新研究發現，全球多達 75% 的作物多樣性不在大型機構種子庫，而在世界上最邊緣的一些農民手中。
+(Moreover) 此外，越來越多人主張，種子庫 (neither … nor) 既無法取代第一線農民的實務知識，也比不上他們的巧思。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 17 個、參考字彙 12 個、字詞搭配 16 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+variety[vəˈraɪəti]n.品種三級第 1 段詞彙題考過 2 次：111 學測第 3 題（誘答）、86 推薦甄選第 5 題（答案）
+emerging （詞彙表：emerge）[ɪˈmɝʤɪŋ]adj.新出現的四級第 1 段詞彙題考過 2 次：113 學測第 2 題 emerging（答案）、93 補救考試第 4 題 emerged（誘答）
+container[kənˈteɪnɚ]n.容器四級第 2 段詞彙題考過 2 次：114 學測第 1 題（答案）、100 學測第 6 題 containers（誘答）
+secure[sɪˈkjʊr]adj.安全的四級第 2 段詞彙題考過 1 次：104 指考第 1 題（答案）
+adapt[əˈdæpt]v.適應四級第 2 段詞彙題考過 3 次：104 指考第 10 題 adapted（誘答）、88 推薦甄選第 4 題（答案）、81 聯考第 8 題（誘答）
+additional[əˈdɪʃənəl]adj.更多的、額外的三級第 2 段詞彙題考過 1 次：88 推薦甄選第 2 題 additionally（誘答）
+remain[rɪˈmeɪn]v.仍然、依然三級第 2 段詞彙題考過 4 次：91 學測第 3 題（誘答）、88 聯考第 5 題 remained（誘答）、85 聯考第 10 題 remains（誘答）、82 聯考第 7 題 remained（答案）
+dynamic[daɪˈnæmɪk]adj.不斷變化的四級第 2 段詞彙題考過 1 次：102 指考第 8 題（誘答）
+dispute[dɪˈspjut]n.爭議四級第 3 段詞彙題考過 2 次：99 指考第 3 題（答案）、84 聯考第 8 題（誘答）
+institution[ˌɪnstɪˈtuʃən]n.機構五級第 3 段詞彙題考過 1 次：90 聯考第 5 題 institutions（誘答）
+extremely （詞彙表：extreme）[ɪkˈstrimli]adv.非常、極三級第 3 段詞彙題考過 4 次：105 指考第 8 題 extremes（答案）、87 推薦甄選第 7 題 extremely（誘答）、86 聯考第 6 題 extremely（誘答）、85 聯考第 1 題 extremely（誘答）
+isolated （詞彙表：isolate）[ˈaɪsəˌleɪtɪd]adj.偏遠的四級第 3 段詞彙題考過 1 次：89 聯考第 8 題 isolated（誘答）
+practical[ˈpræktɪkəl]adj.實務的（practical knowledge 實務知識）三級第 3 段詞彙題考過 1 次：101 學測第 7 題（誘答）
+locate[ˈloʊkeɪt]v.位於（be located in）三級第 49 題詞彙題考過 1 次：108 指考第 3 題 located（誘答）
+modify[ˈmɑdəˌfaɪ]v.改造、修改（gene modified 基因改造的）五級第 49 題詞彙題考過 1 次：98 指考第 9 題 modified（答案）
+preserve[prɪˈzɝv]v.保存四級第 50 題詞彙題考過 3 次：106 學測第 11 題 preserved（誘答）、99 學測第 5 題（答案）、98 學測第 9 題（答案）
+sufficient[səˈfɪʃənt]adj.足夠的三級第 51 題詞彙題考過 2 次：94 學測第 7 題（誘答）、88 聯考第 3 題（答案）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+catastrophe[kəˈtæstrəfi]n.大災難六級第 1 段
+vault[vɔlt]n.地下保管庫（seed vault 種子庫）表外第 1 段
+halfway[ˌhæfˈweɪ]adv.在中途、在一半的地方表外第 1 段
+originate[əˈrɪʤəˌneɪt]v.來自、源自六級第 1 段
+misplaced[mɪˈspleɪst]adj.錯放的、用錯地方的表外第 2 段
+unforeseen[ˌʌnfɔrˈsin]adj.預料不到的表外第 2 段
+centralized[ˈsɛntrəˌlaɪzd]adj.集中的、中央集權式的表外第 3 段
+finding[ˈfaɪndɪŋ]n.研究結果、發現表外第 3 段
+institutional[ˌɪnstɪˈtuʃənəl]adj.機構的表外第 3 段
+marginal[ˈmɑrʤənəl]adj.邊緣的、處境弱勢的六級第 3 段
+ingenuity[ˌɪnʤəˈnuəti]n.巧思、聰明才智表外第 3 段
+debatable[dɪˈbeɪtəbəl]adj.有爭議的、值得商榷的表外第 48 題
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+protect A from B保護 A 免於 B第 1 段原文：to protect the diversity of crops from catastrophe
+halfway between A and B在 A 和 B 的中間第 1 段原文：halfway between Norway and the North Pole
+be meant to + V目的是……第 1 段原文：The Vault is meant to help farmers
+respond to + N因應……第 1 段原文：better respond to emerging challenges
+a growing body of + N越來越多的……第 2 段原文：a growing body of opinion
+faith in + N對……的信心第 2 段原文：the world’s faith in Svalbard
+in the field在田野、在實地第 2 段原文：worked with farmers in the field
+box up + N把……裝箱第 2 段原文：cannot be boxed up
+no matter how + adj. + 子句不論多麼……第 2 段原文：no matter how secure it may be
+center on + N集中在……第 3 段原文：centers on whether we should work
+suck up + N吸走……第 3 段原文：is sucking up available funding
+cope with + N應付……第 3 段原文：cope with climate change
+as much as + 數字多達……第 3 段原文：as much as 75 percent
+make up for + N彌補……第 3 段原文：make up for the practical knowledge
+compete with + N和……相比、比得上……第 3 段原文：compete with their ingenuity
+on the ground在第一線第 3 段原文：farmers on the ground
+← 上一篇篇目一覽
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z94-17/index.html
+Author: staresto-create ZZSH
+Title: 94 年指考克漏字第17題詳解（慣用語／片語）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 94 年指考 ／ 第17題
+94 年指考 克漏字 第17題
+慣用語／片語線索：句內答對率 23%
+答對率 23%：當年每 100 位考生，有 23 位答對。
+In creating the list, the group 17 twenty-five non-medically related technological innovations that have become widely used since 1980.
+(A)gives in
+(B)takes over
+(C)singles out
+(D)turns down
+答案：(C) singles out
+題目編號：Z94_17（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+single out 意為「從一群當中挑選出來（特別關注）」：評選小組從眾多創新中挑出二十五項非醫療類的技術發明；gives in（讓步）、takes over（接管）、turns down（拒絕）語意都不合。
+重點：single out 是從一群人或東西裡挑出一個給予特別對待，表揚或批評都用得上；常見 be singled out for praise／criticism。
+延伸閱讀：single out，從一群裡挑出那一個 ↗
+深入解析
+你可能會這樣想
+single 在你腦中是形容詞「單一的、單身的」，很難聯想到它能當動詞。其實 single 當動詞就是「挑選出來」，通常與 out 連用，成了 single out——把某一個從群體中挑出來，給予特別的關注。
+怎麼判斷
+先抓骨幹。主詞是 the group（那個評選小組），空格是主要動詞，受詞是 twenty-five non-medically related technological innovations，後面的 that 子句是修飾受詞的。句首 In creating the list（在製作這份名單的過程中）是介系詞 in 加動名詞，交代動作發生的場合。四個選項都是動詞片語，句法上都放得進去，要靠語意決定——而場合已經把方向給了：既然是在「製作名單」，動作必然是從一堆東西裡挑出一部分。驗算法：把句首這一段與主要子句的因果接起來唸一遍——They were making a list, so they picked twenty-five innovations out of many.（他們要做名單，所以從眾多創新裡挑出二十五項。）接得起來，方向就對。single out 褒貶都能用，關鍵在「被挑出來的那一個受到特別對待」：Jamie was thrilled when the teacher singled out his poem and asked him to read it aloud.（老師特別挑中他的詩請他朗讀，他非常興奮。）換成 be singled out for criticism，就是被挑出來挨罵。
+誘答選項
+三個都是動詞片語，錯在動作方向。give in 是「讓步、屈服」，要帶出讓步的對象得寫成 give in to sth，後面接的是壓力或要求；表「讓步」時它是不及物的，不能像本句這樣直接接一個受詞。take over 是「接管、接手」，接的是公司、職務或地盤，把二十五項發明「接管」過來講不通。turn down 是「拒絕」，方向與「製作名單」正好相反——名單是把東西收進來，不是推出去。
+常考字詞與句型
+single sb／sth out（挑出）、be singled out for praise／criticism（被特別表揚／批評）、pick out（挑出）、give in to sth（屈服於）、take over（接管）、turn down（拒絕；調低）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：94學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Today, with a couple of clicks, you can go anywhere in the world without leaving your computer. So it should come as little 16 that the Internet has headlined the top 25 innovations of the past quarter century, according to a panel of technology leaders assembled to promote inventiveness.
+In creating the list, the group 17 twenty-five non-medically related technological innovations that have become widely used since 1980. These innovations are readily recognizable by most Americans, have had a direct impact on our everyday lives, and may also dramatically affect our lives 18.
+The top innovation, the Web, was created by British software consultant Tim Berners-Lee. 19 by the multitude of information systems requiring complicated access, Berners-Lee fashioned a universal one that made information readily 20. He created HTML (hypertext markup language) and its rule of usage (HTTP, hypertext transfer protocol). In 1991 he unveiled the World Wide Web. Today, this No. 1 invention has become so commonplace that it is almost taken for granted.
+中譯：如今，只要動動滑鼠、點幾下，你就能不離開電腦、去到世界任何角落。因此，根據一群受邀來推動創新的科技領袖所組成的專家小組指出，網際網路在過去 25 年來最重要的 25 項創新中名列榜首，這其實一點也不令人意外。在制定這份清單時，該小組從自 1980 年以來已被廣泛使用、與醫學無關的科技創新中，挑選出 25 項。這些創新對大多數美國人來說相當熟悉，已對我們的日常生活產生直接影響，未來也可能將持續大幅影響我們的生活。這份清單的第一名——全球資訊網，是由英國軟體顧問提姆．柏內茲—李所發明的。由於對當時各種需要複雜存取方式的資訊系統感到十分苦惱，柏內茲—李於是打造出一套通用系統，讓資訊得以輕易取得。他發明了 HTML（超文本標記語言）及其使用規則 HTTP（超文本傳輸協定）。1991 年，他正式發表了全球資訊網。如今，這項排名第一的發明已經變得如此普及，以至於人們幾乎將它視為理所當然。
+📋 內容大意
+Technology leaders ranked the Internet first among 25 innovations of the past quarter century.
+The list covered non-medical inventions since 1980 that reshaped ordinary American life.
+Tim Berners-Lee built a universal system with HTML and HTTP, unveiling the Web in 1991.
+← 第16題回到94 年指考第18題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g91-25-1/index.html
+Author: staresto-create ZZSH
+Title: 91 年學測克漏字第25題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 91 年學測 ／ 第25題
+91 年學測 克漏字 第25題
+字彙選義線索：句內答對率 44%
+答對率 44%：當年每 100 位考生，有 44 位答對。
+They all have blond hair and “strange eyes.” 24 the children grow, they run around the village in a pack, wearing identical clothing and hairstyles, staring at everyone impolitely. 25 one child learns is also known by the others instantly.
+(A)Which
+(B)While
+(C)Where
+(D)What
+答案：(D) What
+題目編號：G91_25_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+What 引導名詞子句作句子主詞，「一個孩子學到的東西」；Which（哪一個）、While（當……同時）、Where（哪裡）都不能這樣構成名詞子句主詞。
+深入解析
+你可能會這樣想
+空格在整句的最前面，你會直覺把它當成疑問詞在問問題，於是 Which（哪一個）與 What（什麼）看起來都可以。但這一句不是問句，它是一個直述句，空格帶出來的整串是這個句子的主詞。答對率四成四，卡在沒有先把整句的結構看清楚。
+怎麼判斷
+四個選項都是 wh- 詞，先數成分。空格後面是 one child learns，主詞是 one child、動詞是 learns，而 learn 在這裡講的是「學到某樣東西」，受詞卻不見了——這個洞就是關鍵。再往後看，is also known by the others instantly 才是整句的主要動詞部分，所以空格帶出來的那一整串要當這個句子的主詞。需要一個字同時做兩件事：自己就是一個名詞（整串才能當主詞用），又要能填進 learns 後面那個受詞的洞。這正是複合關係代名詞 what，意思等於 the thing(s) that（劍橋 English Grammar Today 的 what 條目）。還原一次就通了：The thing that one child learns is also known by the others instantly.（一個孩子學到的東西，其他孩子立刻也都知道。）。這一題的鑑別度 62，分開的就是有沒有發現 learns 後面缺了受詞。這一格與 93 年第 18 題 →正好是一體兩面：那一題的子句成分已經滿了，what 沒有位置可填，所以填 that；本題的子句缺了受詞，非 what 不可。本題庫判斷方式相同的還有 92 年第 27 題 →、95 年第 24 題 →、100 年第 29 題 →、107 年第 26 題 →，都是「子句缺一個成分，由 what 自己去補」。
+誘答選項
+Which（哪一個）：當疑問詞時要有一組已知的選項讓人挑，本句沒有；當關係代名詞時前面要有先行詞，而空格前面什麼都沒有。Where（哪裡）：副詞性的字，填不進 learns 後面那個受詞的洞，整句也與地點無關。While（當……同時）：從屬連接詞，帶出的是副詞子句，副詞子句不能拿來當句子的主詞。
+常考字詞與句型
+be known to sb（為某人所知）、be known as（以……的身分為人所知）、be known for（以……著稱）、learn sth from sb（向某人學到某事）、at once（立刻）、one mind（想法一致、同一個心思）。其中 be known as 這一組考過 3 個年度，88 年第 27 題 →、100 年第 28 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+It is a usual sunny afternoon in the village of Midwich, England. It seems not 21 any afternoon in the village, but all of a sudden, people and animals lose consciousness. 22 they awake, all of the women of child-bearing age have become pregnant.
+This is an episode from a 1960 science fiction story. The women in the story 23 birth to children that have the same appearance. They all have blond hair and "strange eyes." 24 the children grow, they run around the village in a pack, wearing identical clothing and hairstyles, staring at everyone impolitely. 25 one child learns is also known by the others instantly. Villagers begin to 26 their belief that the children all have "one mind."
+In this story, the children are produced by some unexplained force from outer space. But this story written 40 years ago 27 predicted the arrival of a recent method of genetic engineering—cloning. Cloning is the genetic process of producing copies of an individual. Will the genetic copies of a human really have "one mind" as 28 in this story? This situation is so strange to us that we do not know what will 29 of it. Faced with this new situation, people have 30 to find out how to deal with it.
+中譯：在英格蘭的米德威奇村，這是個平常晴朗的午後。看起來就跟村裡任何一個尋常的下午沒有兩樣，但突然間，村裡的人和動物全都失去了意識。當他們醒來時，村裡所有育齡婦女竟然都懷孕了。這是 1960 年一部科幻小說中的情節。故事裡的婦女生下的孩子外貌全都一模一樣，全都有著金髮和「奇異的眼睛」。隨著孩子們逐漸長大，他們穿著相同的衣服和髮型，成群結隊在村裡四處奔跑，毫不客氣地盯著每個人看。只要其中一個孩子學會了什麼，其他孩子也會立刻知道。村民開始相信這些孩子擁有「同一個心智」。故事中，這些孩子是由某種來自外太空、無法解釋的力量所產生的。然而，這篇寫於 40 年前的故事，卻彷彿預言了近年才出現的一種基因工程技術——複製（克隆）。複製是一種透過基因技術複製出個體副本的過程。人類的基因複製體，真的會像故事中所描述的那樣，擁有「同一個心智」嗎？這種情況對我們來說如此陌生，以至於我們根本不知道未來會如何發展。面對這個嶄新的處境，人類必須設法找出因應之道。
+📋 內容大意
+A science fiction tale about identical children sharing one mind foreshadowed modern ethical questions about human cloning.（敘事文）
+← 第24題回到91 年學測第26題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,64 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dz103-32/index.html
+Author: staresto-create ZZSH
+Title: 指考 103年 篇章結構 第32題詳解（掌握段落內語句的連貫性與一致性）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 指考 103年 ／ 第32題
+指考 103年 篇章結構 第32題
+選文：怪咖的正面特質（The Bright Side of Being Eccentric）
+掌握段落內語句的連貫性與一致性線索：舉例、結論的位置提示詞、概括—列舉呼應答對率 45%
+(A)Eccentrics are also found to be healthier.研究也發現怪咖比較健康。
+(B)According to a recent study in England, eccentrics are more creative.根據英國最近的一項研究，怪咖比較有創造力。
+(C)Or it could be our best friend’s brother who wears shorts to a formal dance.也可能是我們最好的朋友的哥哥，穿著短褲去參加正式舞會。
+(D)People may have eccentric taste in clothes, or have eccentric hobbies.人們可能在衣著品味上很古怪，或者有古怪的嗜好。
+(E)Psychologists also find that eccentric people do not follow conventions.心理學家也發現，怪咖不跟從常規。
+(F)Such personal traits are found to play an important role in boosting the body’s immune system.研究發現，這些個人特質對提升人體免疫系統有重要作用。
+答案：(E) Psychologists also find that eccentric people do not follow conventions.
+題目編號：Dz103_32
+解析
+先看空格前面。 好奇心和嗜好剛講完，第一項特質已經交代完畢。
+再看空格後面。 後面兩句是 They live in a world of their own and do not worry about what others think of them. So they are usually less restricted and therefore more carefree in forming new ideas.（他們活在自己的世界裡，不擔心別人怎麼看他們。所以他們通常比較不受拘束，想新點子時也更無所顧忌。）
+「活在自己的世界、不在乎別人眼光」——這兩句該掛在哪一個標題底下？ 前面談的是好奇心，話題已經換了。E 的 do not follow conventions（不跟從常規）就是這兩句的總說，also 也剛好接在第一項之後。
+順帶記一件事：第四段開頭是 Psychologists therefore suggest that we pay attention to those who do not conform.（心理學家因此建議我們留意那些不從眾的人。）其中的 those who do not conform（不從眾的人），呼應的正是這一句的 do not follow conventions。
+如果你選了 A（研究也發現怪咖比較健康。）：A 也帶 also，形式和 E 一模一樣。但後面兩句講的是不在意別人眼光，和健康接不上；健康是第三段整段的事。
+【下次先看這裡】兩個選項都帶 also 的時候，別用 also 分辨。直接看空格後面那幾句在講什麼，空格就是它們的標題。
+線索與數據
+線索種類舉例、結論的位置提示詞、概括—列舉呼應
+線索在哪兩側 also；do not follow conventions ↔ 後兩句
+答對率45%
+鑑別度59
+本篇題型6選5・刪去法不收尾
+數據出處：本頁的答對率與鑑別度來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響。
+多出來的那一個：D
+(D)People may have eccentric taste in clothes, or have eccentric hobbies.人們可能在衣著品味上很古怪，或者有古怪的嗜好。
+D 裡有 eccentric（古怪）、有 hobbies（嗜好），第二段出現過 hobbies，第四段也有 crazy hobby（瘋狂的嗜好）——關鍵詞四處都對得上。 但五格都放不進去：
+格
+那一格在等什麼
+D 為什麼不行
+32
+第二項正面特質（不跟從常規）
+D 沒有轉到常規，也沒有 also 這類接續詞
+共同點：第一段問的是「什麼樣的人叫怪咖」，第二段之後整篇問的是「當怪咖有什麼好處」。D 停在第一段那個問題上。
+【下次先看這裡】關鍵詞對得上，不代表放得進去。先看這一篇從哪一段開始換了問題，再問這個選項回答的是換之前還是換之後的那一個。
+展開本題所在的整篇選文與中文翻譯
+本篇共 5 格、6選5；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+定義：什麼樣的人叫怪咖
+Eccentrics are people who have an unusual or odd personality, set of beliefs, or behavior pattern. They may or may not comprehend the standards for normal behavior in their culture. They simply don’t care about the society’s disapproval of their habits or beliefs.
+Once considered socially unacceptable, eccentric people have been found to possess some positive characteristics. 31 They often have more curiosity about the world and, in many cases, are contentedly obsessed by hobbies and interests. 32Psychologists also find that eccentric people do not follow conventions. They live in a world of their own and do not worry about what others think of them. So they are usually less restricted and therefore more carefree in forming new ideas.
+33 Statistics show they visit their doctors less—about once in eight to nine years, which is 20 times less than the average person. This could be partly due to their innate traits such as humor and happiness. 34 This may explain why eccentrics are, on the whole, healthier.
+Psychologists therefore suggest that we pay attention to those who do not conform. It could be our aunt who has been raising pet lizards. 35 Their crazy hobby or strange sense of humor is what keeps them going. Eccentric people may seem odd, but they will likely live a happier and healthier life because they enjoy what they are doing. In fact, many of history’s most brilliant minds have displayed some unusual behaviors and habits.
+中譯
+怪咖是指個性、信念或行為模式異於常人的人。他們可能懂、也可能不懂自己文化裡對於正常行為的標準。他們就是不在乎社會不認同自己的習慣或信念。
+過去人們認為怪咖不見容於社會，如今研究卻發現他們具有一些正面特質。31 他們對世界往往更有好奇心，而且很多時候會心滿意足地沉迷於自己的嗜好和興趣。32 他們活在自己的世界裡，不擔心別人怎麼看自己。所以他們通常比較不受拘束，在形成新想法時也就更加自在。
+33 統計顯示，他們看醫生的次數比較少——大約八到九年才看一次，比一般人少二十倍。這可能有一部分要歸因於他們天生的特質，例如幽默和快樂。34 這或許可以解釋，為什麼怪咖整體來說比較健康。
+因此心理學家建議，我們應該多注意那些不隨俗的人。那可能是我們那位養寵物蜥蜴的阿姨。35 他們那些瘋狂的嗜好或古怪的幽默感，正是支撐他們走下去的東西。怪咖看起來也許古怪，但他們很可能過得更快樂、更健康，因為他們享受自己正在做的事。事實上，歷史上許多最聰明的頭腦都表現過一些不尋常的行為和習慣。
+← 第31題回到互動練習第33題 →
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

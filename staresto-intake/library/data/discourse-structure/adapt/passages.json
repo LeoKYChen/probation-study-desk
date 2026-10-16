@@ -1,0 +1,4450 @@
+[
+ {
+  "id": "DSA-g111p2",
+  "year": "（一）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "安全帽的百年演變（The Evolution of the Hard Hat）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "E"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "A common color code has also been developed to show each person’s role on site.",
+   "B": "Having seen metal helmets save soldiers’ lives in the war, he wanted to give workers similar protection.",
+   "C": "Since it first appeared in the early 20th century, it has saved countless lives around the world.",
+   "D": "Recently, new models and accessories have been introduced to meet the needs of different worksites.",
+   "E": "Brightly colored hard hats make workers easier to spot on busy or poorly lit sites."
+  },
+  "optionsZh": {
+   "A": "業界也發展出通用的顏色標示，用來表明工地上每個人的職務。",
+   "B": "他在大戰中見過金屬頭盔救了士兵的命，希望也給工人類似的保護。",
+   "C": "安全帽自 20 世紀初問世以來，已經在世界各地拯救了無數條人命。",
+   "D": "近年來，業界推出了新款式和配件，以因應各種工地的需求。",
+   "E": "顏色鮮豔的安全帽，讓工人在忙碌或光線不足的工地上比較容易被看見。"
+  },
+  "unusedExplanation": {
+   "opt": "E",
+   "lead": "E 這一句文法正確，講的也是安全帽，而且是實情：顏色鮮豔的安全帽確實比較容易被看見。它最容易被放進第 34 格，因為第四段也在講顏色。可是第四段講的是顏色代表什麼職務，不是顏色能不能被看見，**全篇沒有任何一段在談能見度。**",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "一句說出安全帽有多重要，並把時間帶到它問世的年代，第二段從 1919 年講起才接得上",
+     "why": "E 沒有說安全帽為什麼重要；第一段也還沒提過顏色，後一段直接講 1919 年的發明，和能見度接不上"
+    },
+    {
+     "blank": 32,
+     "want": "有人想替工人做出比焦油更好的保護，後一句的 `The result`（成果）才有來由",
+     "why": "E 講的是今天顏色鮮豔的安全帽，放在 1919 年的故事中間，時間不對，也沒有人想做什麼"
+    },
+    {
+     "blank": 33,
+     "want": "一句概括新款式和配件，後面的透氣安全帽和面罩才是它的例子",
+     "why": "透氣和面罩都和顏色無關，`for example`（例如）舉的不是 E 的例子"
+    },
+    {
+     "blank": 34,
+     "want": "一句說明顏色用來表示職務，後一句的顏色分配才是它的細節",
+     "why": "後一句講哪種職務戴哪種顏色，第三句講這些顏色沒有法律規定，都不是在談顏色能不能被看見"
+    }
+   ],
+   "summary": "**這一篇多出來的 E 屬於「主題相同，切面不對」，和 115 學測多出來的 D 同一類。** 全篇講的是「安全帽從問世到今天怎麼一路改變，又始終保護工人的頭部」，E 講的卻是「顏色鮮豔讓工人容易被看見」。不過 E 和第四段都在談顏色，比 115 學測多出來的 D 更容易誤選；第四段講的是顏色代表什麼職務，E 講的卻是顏色能不能被看見。至於 115 學測參考試卷多出來的 C，則屬於「切面對，卻沒有段落在等它」，和這一篇不同。",
+   "extra": [],
+   "takeaway": "選項和某一段談同一個話題（這一篇是顏色），不代表它就是那一段的主題句。先讀完那一段的其他句子，說出它們在講顏色的哪一面，再看選項講的是不是同一面；講的是另一面，就是多出來的那一句。"
+  },
+  "paraLabels": [
+   "破題：先說安全帽是什麼，再點出它問世以來救了無數人命",
+   "起源：Bullard 從戰場回來，做出每個工人都買得起的安全帽",
+   "演進：材質一路更新，近年又推出新款式和配件",
+   "辨識：用顏色標示工地上每個人的職務",
+   "結尾：產品推陳出新，保護頭部的任務始終不變"
+  ],
+  "marks": [
+   [
+    0,
+    "__31__",
+    "gradient"
+   ],
+   [
+    1,
+    "The hard hat was invented in 1919 by Edward W. Bullard, who had just returned from World War I.",
+    "topic"
+   ],
+   [
+    2,
+    "Over the past century, hard hats have improved considerably, moving from canvas and leather to aluminum, fiberglass, and, eventually, thermoplastic.",
+    "topic"
+   ],
+   [
+    3,
+    "__34__",
+    "topic"
+   ],
+   [
+    4,
+    "Yet from Bullard’s canvas hat to today’s models fitted with sensors and cameras, the hard hat’s main job has never changed: keeping workers’ heads safe.",
+    "topic"
+   ],
+   [
+    "C",
+    "Since",
+    "trans"
+   ],
+   [
+    1,
+    "Before the war",
+    "trans"
+   ],
+   [
+    1,
+    "The result",
+    "trans"
+   ],
+   [
+    1,
+    "soon",
+    "trans"
+   ],
+   [
+    1,
+    "later",
+    "trans"
+   ],
+   [
+    2,
+    "Over the past century",
+    "trans"
+   ],
+   [
+    2,
+    "eventually",
+    "trans"
+   ],
+   [
+    "D",
+    "Recently",
+    "trans"
+   ],
+   [
+    2,
+    "for example",
+    "trans"
+   ],
+   [
+    2,
+    "Today",
+    "trans"
+   ],
+   [
+    "A",
+    "also",
+    "trans"
+   ],
+   [
+    3,
+    "though",
+    "trans"
+   ],
+   [
+    4,
+    "Yet",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "A hard hat is a helmet worn mainly at worksites to protect the head from injuries caused by falling objects. __31__",
+   "The hard hat was invented in 1919 by Edward W. Bullard, who had just returned from World War I. Before the war, workers used to smear their hats with tar to protect their heads. __32__ The result was the Hard Boiled Hat, which was cheap enough for every worker and light enough to wear all day long. Made of steamed canvas and glue, with a leather brim and a coat of black paint, it also had a suspension system inside to soften blows. Hard hats soon came into wide use, and they were later required on major construction projects such as the Hoover Dam in 1931 and the Golden Gate Bridge in 1933.",
+   "Over the past century, hard hats have improved considerably, moving from canvas and leather to aluminum, fiberglass, and, eventually, thermoplastic. __33__ A ventilated hard hat, for example, keeps its wearer cooler, while a see-through face shield protects the face without blocking the view. Today, available attachments include radios, sensors, cameras, and much more.",
+   "__34__ Yellow is usually worn by general laborers and contractors, white (or sometimes black) by supervisors and managers, and green by inspectors and new workers. No law sets these colors, though, so they can vary from company to company and site to site.",
+   "New products continue to expand the market for hard hats. Yet from Bullard’s canvas hat to today’s models fitted with sensors and cameras, the hard hat’s main job has never changed: keeping workers’ heads safe."
+  ],
+  "zhTranslation": [
+   "安全帽是一種主要在工地配戴的頭盔，用來保護頭部，避免被掉落物砸傷。__31__",
+   "安全帽是 Edward W. Bullard 在 1919 年發明的，他當時剛從第一次世界大戰返鄉。大戰以前，工人習慣在帽子上塗焦油來保護頭部。__32__ 成果就是 Hard Boiled Hat：價錢便宜到每個工人都買得起，重量也輕到可以整天戴著。這種帽子用蒸過的帆布和膠製成，帽簷是皮革，外面塗上一層黑漆，裡面還裝了懸吊系統來減輕撞擊。安全帽不久就普及開來，後來在大型工程裡更規定一定要戴，例如 1931 年的胡佛水壩和 1933 年的金門大橋。",
+   "過去 100 年來，安全帽有了長足的進步，材質從帆布和皮革，換成鋁、玻璃纖維，最後是熱塑性塑膠。__33__ 例如，透氣的安全帽讓配戴的人比較涼爽，透明面罩則能保護臉部，又不會擋住視線。如今可以加裝的配件，還有無線電、感測器、攝影機等等。",
+   "__34__ 一般工人和承包商通常戴黃色，監工和經理戴白色（有時是黑色），檢查人員和新進工人則戴綠色。不過，這些顏色並沒有法律規定，所以各公司、各工地的標示方式可能不一樣。",
+   "新產品持續擴大安全帽的市場。然而，從 Bullard 的帆布帽，到今天裝上感測器和攝影機的款式，安全帽最主要的任務始終沒有改變：保護工人的頭部。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 111 年學測閱讀測驗〈安全帽的演進史〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 17,
+   "選項字數區間": "15-17",
+   "選項字數全距": 2,
+   "選項長度變異係數": "6.2%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 g111p2；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-g107p2",
+  "year": "（二）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "西尼羅病毒流行的原因（Why West Nile Spreads）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "A"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "Residents were also urged to use insect repellent and to wear long sleeves after dark.",
+   "B": "A small number of patients die, especially the elderly and people with weak immune systems.",
+   "C": "City officials declared a state of emergency and began spraying pesticide from the air to kill mosquitoes.",
+   "D": "How bad an outbreak gets also depends on whether governments are able and willing to protect people.",
+   "E": "Much of the blame goes to the weather, which gave mosquitoes an unusually good year."
+  },
+  "optionsZh": {
+   "A": "當局也呼籲居民擦防蚊液，天黑以後穿長袖衣物。",
+   "B": "少數病人會死亡，特別是年長者和免疫系統較弱的人。",
+   "C": "市府官員宣布進入緊急狀態，開始從空中噴灑殺蟲劑消滅蚊子。",
+   "D": "疫情會有多嚴重，也要看政府有沒有能力、有沒有意願保護民眾。",
+   "E": "大部分要怪天氣，那一年的天氣對蚊子特別有利。"
+  },
+  "unusedExplanation": {
+   "opt": "A",
+   "lead": "A 寫的也是 2012 年的達拉斯，時態和第二段一樣是過去式，內容也合理：疫情期間，衛生單位常會呼籲民眾擦防蚊液、穿長袖。它最容易讓人想放進第 32 格，因為第 32 格前面剛講完達拉斯有人染病、死亡，後面又說居民擔心 `the cure`（這個對策）比病還糟，而擦防蚊液也是一種對付蚊子的辦法。\n\n問題在於：**A 的 `also`（也）表示前面已經有一項措施，第 32 格前面卻只有染病和死亡的人數；當局呼籲居民擦防蚊液，居民也沒有理由反對，更不會擔心它比病還糟。其他三格要的，也都不是當局給居民的建議。**",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "一句把第一段由輕到重的病況推到最嚴重的結果，讓下一段的「正因為這樣，疫情才那麼可怕」說得通",
+     "why": "A 講的是 2012 年達拉斯當局呼籲居民怎麼防蚊，第一段卻還在介紹這種病，沒有提到任何城市；A 也不是比昏迷更嚴重的病況"
+    },
+    {
+     "blank": 32,
+     "want": "達拉斯當局面對疫情採取的措施，後一句的居民才有反對的對象，`the cure`（這個對策）也才有所指",
+     "why": "A 的 `also`（也）前面找不到第一項措施；擦防蚊液、穿長袖只會減少被叮咬的機會，居民沒有理由反對，`the cure`（這個對策）也就不會是指它"
+    },
+    {
+     "blank": 33,
+     "want": "回答前一句「為什麼 2012 年夏天特別適合蚊子」，而且要能涵蓋後面暖冬、酷暑兩項",
+     "why": "A 說的是居民被呼籲做什麼，沒有回答為什麼那年夏天特別適合蚊子，也沒有提到天氣"
+    },
+    {
+     "blank": 34,
+     "want": "第四段的主題句，帶出「政府」這項因素，後面達拉斯郡沒做到的措施才是它的例子",
+     "why": "A 說的是居民被要求自己做的事，後面的檢驗死鳥、設捕蚊器卻是郡政府該做而沒做的事，最後一句也把責任歸給官員"
+    }
+   ],
+   "summary": "**這一篇多出來的 A 屬於「切面對，卻沒有段落在等它」，和 115 學測參考試卷多出來的 C 同一類。**A 和第二段一樣寫 2012 年的達拉斯，也一樣在講當地怎麼對付疫情；可是第 32 格要的是一項居民會反對、擔心比病還糟的措施，呼籲居民擦防蚊液做不到這一點，其他三格也沒有一格在談當局給居民的建議。至於 115 學測多出來的 D，則屬於「主題相同，切面不對」，和這一篇不同。",
+   "extra": [],
+   "takeaway": "多出來的選項有時和某一段寫的是同一件事（這一篇是 2012 年達拉斯怎麼對付疫情），時間、地點都對得上。遇到這種情況，要看空格前後真正需要什麼：第 32 格後面的居民表示反對，空格裡就得是一項會讓人反對的措施，A 的呼籲做不到這一點。"
+  },
+  "paraLabels": [
+   "背景：病毒怎麼傳給人，染病後由輕到重，最嚴重的會死亡",
+   "實例：2012 年美國疫情，達拉斯最嚴重，市政府空中噴藥，有居民反對",
+   "原因一：天氣（暖冬、酷暑）讓蚊子大增，經濟危機也可能有影響",
+   "原因二：政府沒做到該做的防疫；最後一句把政府和氣候並列"
+  ],
+  "marks": [
+   [
+    1,
+    "That is what made the major outbreaks of West Nile in the U.S. in the summer of 2012 so frightening.",
+    "topic"
+   ],
+   [
+    2,
+    "Why was the summer of 2012 so hospitable to the West Nile virus and the mosquitoes that carry it?",
+    "topic"
+   ],
+   [
+    2,
+    "__33__",
+    "topic"
+   ],
+   [
+    3,
+    "__34__",
+    "topic"
+   ],
+   [
+    3,
+    "Diseases like West Nile thus have as much to do with what officials fail to do as with climate.",
+    "thesis"
+   ],
+   [
+    2,
+    "also",
+    "trans"
+   ],
+   [
+    3,
+    "thus",
+    "trans"
+   ],
+   [
+    "D",
+    "also",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "West Nile is a viral disease that begins in birds, which pass it on to mosquitoes that then go on to infect human beings with a bite. Most people who contract West Nile never develop any symptoms. In those who do, symptoms appear 2 to 14 days after the bite. About one in five infected people develops a fever, headaches, and body aches, usually lasting a week or so. A far less lucky one in 150 suffers high fever, tremors, paralysis, and coma. __31__",
+   "That is what made the major outbreaks of West Nile in the U.S. in the summer of 2012 so frightening. The situation was particularly bad in and around Dallas, Texas, where the virus sickened nearly 400 people and killed 19 that year. __32__ Some residents objected, fearing that the cure could be worse than the disease.",
+   "Why was the summer of 2012 so hospitable to the West Nile virus and the mosquitoes that carry it? __33__ An extremely mild winter allowed more mosquitoes than usual to survive. The unusually high temperatures of the scorching summer that followed increased their numbers further by speeding up their life cycle. The economic crisis may also have played a role. Homeowners who could not pay their bank loans were forced to abandon their houses, sometimes leaving behind swimming pools that became excellent mosquito breeding grounds.",
+   "__34__ Dallas County was not doing some of the key things that help slow the spread of West Nile, such as testing dead birds for the virus and setting out enough mosquito traps. Diseases like West Nile thus have as much to do with what officials fail to do as with climate."
+  ],
+  "zhTranslation": [
+   "西尼羅熱是一種病毒引起的疾病。病毒最先出現在鳥類身上，鳥把病毒傳給蚊子，蚊子再藉由叮咬把病毒傳染給人。大多數感染西尼羅病毒的人從頭到尾都不會出現症狀；至於有症狀的人，會在被叮咬後 2 到 14 天之間發病。感染的人當中，大約每 5 人就有 1 人會發燒、頭痛、全身痠痛，通常持續一個星期左右。每 150 人當中的 1 人就不幸得多，會高燒、顫抖、癱瘓，甚至昏迷。__31__",
+   "正因為這樣，2012 年夏天西尼羅病毒在美國大規模爆發，才會那麼令人害怕。德州達拉斯一帶的情況特別嚴重，那一年病毒在當地讓將近 400 人染病、19 人死亡。__32__ 有些居民表示反對，擔心這個對策的害處比疾病本身還大。",
+   "為什麼 2012 年夏天特別適合西尼羅病毒和傳播病毒的蚊子？__33__ 那年冬天極為溫和，讓比平常更多的蚊子活了下來。接下來的夏天又異常炎熱，高溫加快了蚊子的生命週期，蚊子的數量因此更多。經濟危機可能也有影響。繳不出銀行貸款的屋主只好棄屋離開，有時留下的游泳池就成了蚊子絕佳的繁殖場所。",
+   "__34__ 達拉斯郡就沒有做到幾項減緩西尼羅病毒擴散的關鍵措施，像是檢驗死鳥身上有沒有病毒、設置足夠的捕蚊器。因此，西尼羅熱這類疾病和官員該做卻沒做的事情關係密切，就跟它和氣候的關係一樣。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 107 年學測閱讀測驗〈西尼羅病毒〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 19,
+   "選項字數區間": "15-17",
+   "選項字數全距": 2,
+   "選項長度變異係數": "6.2%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 g107p2；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-g106p4",
+  "year": "（三）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "茶在英國普及的經過（How Tea Spread Through Britain）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "C"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "Around 1840, wealthy families in Britain began to enjoy a new meal called “afternoon tea.”",
+   "B": "Even working-class families now drank it with their supper after a long, hard day’s work.",
+   "C": "Outside Britain, the term “high tea” is sometimes used to mean an elegant afternoon tea.",
+   "D": "For most British people, however, tea was still a luxury that they could rarely afford.",
+   "E": "A tea lover since childhood in Portugal, the new queen made it popular at court."
+  },
+  "optionsZh": {
+   "A": "1840 年左右，英國的富裕家庭開始享用一種叫做「下午茶」的新餐點。",
+   "B": "這時連勞工家庭也喝茶了，在辛苦工作一整天之後配晚餐喝。",
+   "C": "在英國以外的地方，「high tea」這個詞有時候指的是精緻的下午茶。",
+   "D": "然而，對大多數英國人來說，茶仍然是難得喝得起的奢侈品。",
+   "E": "這位新王后從小在葡萄牙就愛喝茶，讓茶在宮廷裡流行起來。"
+  },
+  "unusedExplanation": {
+   "opt": "C",
+   "lead": "C 讀起來很通順，講的也是英國的喝茶習慣；`high tea` 和 `afternoon tea` 兩個詞都出現在文章裡，C 說的用法也確有其事。可是四個空格都放不下它：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "一句說出 Catherine 做了什麼，讓喝茶先在貴族之間流行，下一段說風氣「傳出貴族圈」才有起點",
+     "why": "C 沒有提到 Catherine，也沒有提到貴族圈"
+    },
+    {
+     "blank": 32,
+     "want": "一句說大多數人喝不起茶，後面的高價、重稅和「只在工作時喝得到」才有要說明的對象",
+     "why": "C 講的是一個詞的用法，和茶貴不貴無關"
+    },
+    {
+     "blank": 33,
+     "want": "一句先提出有錢人下午這一頓新餐點，並給後一句的 `At the time` 一個時間點",
+     "why": "C 講的是英國以外的地方現在怎麼用這個詞，不是十九世紀英國的新習慣，`At the time` 也沒有時間點可以指"
+    },
+    {
+     "blank": 34,
+     "want": "一句舉出一般人家喝茶配晚餐，當作「傳遍每一個角落」的例子，後一句的 `this filling evening meal` 才有對象",
+     "why": "C 沒有提到任何人家，也沒有提到任何一頓晚餐"
+    }
+   ],
+   "summary": "**這一篇多出來的 C 屬於「主題相同，切面不對」，和 115 學測多出來的 D 同一類。** 全篇講的是「茶怎麼從宮廷一路普及到每個英國家庭」，C 講的卻是「high tea 這個詞在英國以外怎麼用」。不過 C 和文章共用 `high tea`、`afternoon tea` 兩個詞，第 33、34 格尤其容易誤選。至於 115 學測參考試卷多出來的 C，則屬於「切面對，卻沒有段落在等它」，和這一篇不同。",
+   "extra": [],
+   "takeaway": "選項和文章共用幾個字，不代表它就是答案。先問每一段在講什麼、每一格前後各需要一句什麼樣的話；剩下的選項如果在回答文章沒有問的問題，它就是多出來的。"
+  },
+  "paraLabels": [
+   "破題：茶花了大約兩百年才普及到每個英國家庭，最早帶動風氣的是一位外國公主",
+   "擴散與限制：風氣傳到中產階級，大多數人卻仍喝不起，只有在工作時喝得到",
+   "新習慣：十九世紀的有錢人開始吃下午茶",
+   "普及與結尾：茶價下跌，連勞工家庭都喝茶，今天不論貧富都喝"
+  ],
+  "marks": [
+   [
+    0,
+    "Tea is now the most typical English drink, but it took about two hundred years to reach every home in Britain.",
+    "thesis"
+   ],
+   [
+    1,
+    "The fashion soon spread beyond the circle of the nobility to the middle classes.",
+    "topic"
+   ],
+   [
+    1,
+    "__32__",
+    "topic"
+   ],
+   [
+    2,
+    "__33__",
+    "topic"
+   ],
+   [
+    3,
+    "As tea became much cheaper during the nineteenth century, it finally spread to every corner of British society.",
+    "topic"
+   ],
+   [
+    1,
+    "soon",
+    "trans"
+   ],
+   [
+    "D",
+    "however",
+    "trans"
+   ],
+   [
+    "A",
+    "Around 1840",
+    "trans"
+   ],
+   [
+    2,
+    "At the time",
+    "trans"
+   ],
+   [
+    "B",
+    "Even",
+    "trans"
+   ],
+   [
+    3,
+    "Unlike",
+    "trans"
+   ],
+   [
+    3,
+    "Today",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Tea is now the most typical English drink, but it took about two hundred years to reach every home in Britain. Much of its early popularity came from a foreign princess, Catherine of Braganza, who married King Charles II in 1662. __31__",
+   "The fashion soon spread beyond the circle of the nobility to the middle classes. In London, tea became a popular drink at the coffeehouses, where people met to do business and discuss the news. __32__ It came with a high price tag, and the government taxed it heavily as well. Many workers drank it only at work, where employers served them a cup in midmorning, creating a lasting British custom, the “tea break.”",
+   "__33__ At the time, the rich usually ate nothing between lunch and dinner, which might not be served until eight o’clock. The Duchess of Bedford is often said to have started the custom by having tea with bread, butter, and cake at about four o’clock. Thin sandwiches, named after the eighteenth-century Earl of Sandwich, were soon added to the menu.",
+   "As tea became much cheaper during the nineteenth century, it finally spread to every corner of British society. __34__ Unlike the light afternoon tea of the rich, this filling evening meal came to be called “high tea.” Today, people in Britain drink tea at any time of the day, whether they are rich or poor."
+  ],
+  "zhTranslation": [
+   "茶是現在最典型的英國飲料，但它花了大約兩百年，才普及到英國的每一個家庭。茶在英國早期能流行起來，很大一部分要歸功於一位外國公主，也就是在 1662 年嫁給英王 Charles II 的 Catherine of Braganza。__31__",
+   "這股風氣很快就從貴族圈傳到了中產階級。在倫敦，茶成了咖啡館裡受歡迎的飲料，人們在那裡碰面談生意、討論時事。__32__ 茶的價格很高，政府還課以重稅。許多工人只有在工作時才喝得到茶，因為雇主會在上午工作到一半時請他們喝一杯，這也成了一項延續至今的英國習俗，也就是「喝茶休息時間」（tea break）。",
+   "__33__ 在那個時候，有錢人在午餐和晚餐之間通常什麼都不吃，而晚餐可能要到八點才開始。據說這個習慣是貝德福公爵夫人開始的：她在下午四點左右喝茶，配上麵包、奶油和蛋糕。不久之後，以十八世紀的三明治伯爵命名的薄片三明治，也加進了下午茶的菜單。",
+   "十九世紀茶變得便宜許多，終於傳遍了英國社會的每一個角落。__34__ 和有錢人簡單的下午茶不同，這一頓晚餐吃得很飽，後來就叫做「high tea」。現在，英國人不論貧富，一天裡任何時候都會喝茶。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 106 年學測閱讀測驗〈茶在英國的流行〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 16,
+   "選項字數區間": "15-15",
+   "選項字數全距": 0,
+   "選項長度變異係數": "0.0%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 g106p4；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-g115rp2",
+  "year": "（四）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "引水人的專業（The Expertise of Marine Pilots）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "E"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "Marine pilotage is a job that demands a high level of skill as well as quick and independent thinking.",
+   "B": "As the sea level rises and falls, the water in harbor channels may reverse direction.",
+   "C": "A large ship that strays even slightly out of the channel can easily run aground.",
+   "D": "A local professional called a marine pilot then guides the ship safely into the harbor.",
+   "E": "Getting on board can be risky in itself, as pilots often climb a rope ladder from a small boat."
+  },
+  "optionsZh": {
+   "A": "引水這份工作需要高度的技術，也需要能迅速、獨立地思考。",
+   "B": "隨著海面升高、降低，港內航道的海水可能會倒轉方向流動。",
+   "C": "大型船隻只要稍微偏離航道，就很容易擱淺。",
+   "D": "接著由一位叫做引水人的在地專業人士，引導船隻安全進港。",
+   "E": "光是登船本身就有風險，因為引水人常常得從小船攀著繩梯爬上大船。"
+  },
+  "unusedExplanation": {
+   "opt": "E",
+   "lead": "E 談的也是引水人，`risky`（有風險的）看起來和第二段的擱淺、第四段的 `risk management`（風險管理）都接得上，文法和語氣也沒有問題。可是**全篇談的是「船隻進港為什麼需要引水人、這份工作要求什麼」，E 談的卻是「引水人自己登船時有什麼危險」。**所以四個空格都放不下它：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "一句交代船長把船開到港外以後，進港這一段由誰負責",
+     "why": "E 沒有說誰負責引導船隻進港，引水人也還沒有出現，就先講他們怎麼爬上船"
+    },
+    {
+     "blank": 32,
+     "want": "一句說明船偏離深水航道會出什麼事，後一句的船身、貨物受損才有原因",
+     "why": "E 的危險落在爬繩梯的引水人身上，不會讓船身和貨物受損"
+    },
+    {
+     "blank": 33,
+     "want": "一句說明潮汐怎麼影響海流，後一句「漲潮的方法退潮不一定行得通」才有道理",
+     "why": "E 和潮汐、海流都沒有關係"
+    },
+    {
+     "blank": 34,
+     "want": "一句說出這份工作需要哪些能力，後一句才能用 `Above all`（最重要的是）說出比這些都重要的一點",
+     "why": "E 講的是登船的危險，不是這份工作需要的能力；而且登船這件事要到第四段第三句才交代"
+    }
+   ],
+   "summary": "**這一篇多出來的 E 屬於「主題相同，切面不對」，和 115 學測多出來的 D 同一類。** 115 學測全篇問「什麼影響微笑」，D 答「微笑分幾種」；這一篇談的是船隻進港為什麼需要引水人、這份工作要求什麼，E 談的卻是引水人登船時自己的安危。至於 115 學測參考試卷多出來的 C，則屬於「切面對，卻沒有段落在等它」，和這一篇不同。",
+   "extra": [],
+   "takeaway": "多出來的選項常常和某一格共用一個字（這一篇是 E 的 `risky` 和第四段的 `risk`）。遇到這種情況，要問兩句說的是不是同一件事：第四段的風險指的是船、港口和海洋環境的安全，E 的風險卻是引水人爬繩梯時自己的安全，意思對不上，就不是它。"
+  },
+  "paraLabels": [
+   "破題：船長只把船開到港外，進港改由引水人引導",
+   "引水人為什麼不可少：港口中間深、四周淺，船一偏離航道就會擱淺",
+   "更多難題：潮汐讓海流轉向，風也會改變船的方向",
+   "這份工作的要求：技術與獨立判斷，最重要的是風險管理"
+  ],
+  "marks": [
+   [
+    0,
+    "__31__",
+    "gradient"
+   ],
+   [
+    1,
+    "A marine pilot, often a former ship captain, is an expert with specialized knowledge of a particular port or harbor.",
+    "topic"
+   ],
+   [
+    2,
+    "In addition to shallow seabeds, tide and wind pose further challenges for bringing ships into a port.",
+    "topic"
+   ],
+   [
+    3,
+    "__34__",
+    "topic"
+   ],
+   [
+    0,
+    "But",
+    "trans"
+   ],
+   [
+    2,
+    "In addition to",
+    "trans"
+   ],
+   [
+    2,
+    "Also",
+    "trans"
+   ],
+   [
+    3,
+    "Above all",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Ships are the lifeline of trade among countries. Almost everything, from food to machinery, comes by way of the sea in huge ships commanded by captains. But a ship’s captain usually guides the vessel only until it reaches the waters just outside a port, where it waits to enter the harbor. __31__",
+   "A marine pilot, often a former ship captain, is an expert with specialized knowledge of a particular port or harbor. The pilot is needed to direct large ships into a port, where deep channels are often surrounded by shallow seabeds. __32__ Both the ship and its cargo could then be badly damaged, and some kinds of cargo might be dangerous if released into the sea.",
+   "In addition to shallow seabeds, tide and wind pose further challenges for bringing ships into a port. __33__ The same strategy for docking a vessel during an incoming tide may not work during an outgoing tide. Also, the wind can significantly alter the direction of the ship and how it reacts, adding to the difficulty of docking it.",
+   "__34__ Above all, it is about risk management. A marine pilot goes on board at a crucial time and directs the vessel based on his or her knowledge of the port and the situation at hand. The pilot is responsible for not only the safety of the ship but also the protection of the port and the marine environment."
+  ],
+  "zhTranslation": [
+   "船舶是國際貿易的命脈。從糧食到機械，幾乎所有東西都是由船長指揮的巨型船隻經海路運來。不過，船長通常只把船開到港口外的水域，船就在那裡等候進港。__31__",
+   "引水人往往本身當過船長，是對某個港口有專門了解的專家。大型船隻進港需要引水人引導，因為港口常有深水航道，四周卻是較淺的海床。__32__ 這麼一來，船身和貨物都可能嚴重受損，有些貨物一旦流進海裡，還可能造成危害。",
+   "除了海床較淺，潮汐和風也讓船隻進港更加困難。__33__ 漲潮時讓船靠岸的方法，到了退潮時不一定行得通。此外，風也會大幅改變船的方向和反應，讓靠岸更加困難。",
+   "__34__ 最重要的是，這份工作講究的是風險管理。引水人在關鍵時刻登船，根據自己對港口和當下狀況的了解來指揮船隻。引水人不但要負責船的安全，也要保護港口和海洋環境。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 115 年學測參考試卷閱讀測驗〈引水人的專業〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 16,
+   "選項字數區間": "15-19",
+   "選項字數全距": 4,
+   "選項長度變異係數": "11.8%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 g115rp2；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-g100p2",
+  "year": "（五）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "大象怎麼分辨敵友（How Elephants Spot Their Enemies）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "B"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "Elephants can, and they use both sight and smell to tell dangerous people from harmless ones.",
+   "B": "Elephants can be a serious threat to local farmers, since they often raid crops at night.",
+   "C": "What the elephants saw mattered as well, but it made them angry rather than afraid.",
+   "D": "Smell alone was enough for the elephants to tell the two groups apart.",
+   "E": "When a threat can be seen but not smelled, the risk is lower."
+  },
+  "optionsZh": {
+   "A": "大象做得到，而且牠們會同時靠視覺和嗅覺，分辨哪些人危險、哪些人無害。",
+   "B": "大象可能對當地農民構成嚴重威脅，因為牠們常在夜裡闖進田裡吃作物。",
+   "C": "大象看到的東西也有影響，不過這時牠們的反應是生氣，而不是害怕。",
+   "D": "大象光靠氣味，就分辨得出這兩個族群。",
+   "E": "如果威脅看得到卻聞不到，風險就比較低。"
+  },
+  "unusedExplanation": {
+   "opt": "B",
+   "lead": "B 讀起來很順，談的也是大象和人之間的威脅，還和第一段的問句一樣用了 `can`、`threat`。問題是，**全篇問的是「大象能不能分辨哪些人對牠有威脅、靠什麼分辨」，B 說的卻是「大象對農民有什麼威脅」，方向正好相反。**所以四個空格都放不下：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "回答問句的兩件事「做不做得到、怎麼做到」，並預告後面嗅覺、視覺兩部分",
+     "why": "B 雖然也用 `Elephants can` 開頭，說的卻是大象威脅農民，沒有回答大象能不能分辨人，也沒有提到任何一種感官"
+    },
+    {
+     "blank": 32,
+     "want": "替第三段的氣味實驗下結論：大象光靠氣味就分辨得出兩個族群",
+     "why": "B 的 `farmers` 和第二段最後一句共用同一個字，接起來看似很順，卻沒有氣味，也沒有說大象分辨得出哪一個族群"
+    },
+    {
+     "blank": 33,
+     "want": "從氣味轉到視覺，並點出大象這一次是生氣、不是害怕",
+     "why": "B 沒有顏色，也沒有生氣和害怕的對比"
+    },
+    {
+     "blank": 34,
+     "want": "和「聞到」相對的「只看到」，提供 `Therefore` 需要的理由「風險比較低」",
+     "why": "B 說的是大象會吃農民的作物，推不出大象為什麼不逃、反而生氣"
+    }
+   ],
+   "summary": "**這一篇多出來的 B 屬於「主題相同，切面不對」，和 115 學測多出來的 D 同一類。** 115 學測全篇問「什麼影響微笑」，D 答「微笑分幾種」；這一篇問的是大象能不能分辨哪些人危險、靠什麼分辨，B 談的卻是大象對農民有多危險。至於 115 學測參考試卷多出來的 C，則屬於「切面對，卻沒有段落在等它」，和這一篇不同。",
+   "extra": [],
+   "takeaway": "先把四格各自需要什麼樣的句子寫成一句話，四格都填完再看剩下的那一個。剩下的那一句如果和全篇談的方向不同（這一篇是大象對人的威脅，而不是大象怎麼判斷人的威脅），就可以確定它是多出來的。"
+  },
+  "paraLabels": [
+   "破題：問動物能不能分辨敵友、怎麼分辨，再以大象作答：靠視覺與嗅覺",
+   "背景：肯亞的兩個族群，一個有時會獵殺大象，一個大多務農",
+   "嗅覺：光靠氣味就分辨得出兩族，聞到馬賽族的衣服就逃開",
+   "視覺：看到沒人穿過的紅色衣服反而發怒，紅色是馬賽族年輕男性常穿的顏色",
+   "解釋：聞到表示危險就在附近，只看到表示風險低，所以反應不同"
+  ],
+  "marks": [
+   [
+    0,
+    "__31__",
+    "gradient"
+   ],
+   [
+    1,
+    "In Kenya, researchers studied how elephants respond to men from two local ethnic groups, the Maasai and the Kamba.",
+    "topic"
+   ],
+   [
+    2,
+    "__32__",
+    "topic"
+   ],
+   [
+    3,
+    "__33__",
+    "topic"
+   ],
+   [
+    4,
+    "The researchers believe that the elephants react differently because they interpret smells and sights in different ways.",
+    "topic"
+   ],
+   [
+    0,
+    "But",
+    "trans"
+   ],
+   [
+    "C",
+    "but",
+    "trans"
+   ],
+   [
+    4,
+    "so",
+    "trans",
+    "nearby, ",
+    " the best"
+   ],
+   [
+    4,
+    "Therefore",
+    "trans"
+   ],
+   [
+    4,
+    "instead of",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Most of us find it easy to tell our friends from our enemies. But can other animals tell which humans pose a threat to them, and if so, how? __31__",
+   "In Kenya, researchers studied how elephants respond to men from two local ethnic groups, the Maasai and the Kamba. The Maasai raise cattle, and their young men sometimes spear elephants to prove their manhood. The Kamba are mainly farmers and pose little danger to the animals.",
+   "__32__ The researchers placed clothing near groups of elephants; some pieces were clean, while others had been worn for five days by a Maasai or a Kamba man. When the elephants smelled clothing worn by a Maasai man, they moved away faster and farther than they did from the other pieces. They also took longer to relax afterward and headed for tall grass. Because they never came close enough to see the clothing, its scent was the only clue they had.",
+   "__33__ In the same study, the elephants were shown clean red and white clothing. They behaved far more aggressively toward the red pieces than toward the white ones. Red is the color young Maasai men typically wear.",
+   "The researchers believe that the elephants react differently because they interpret smells and sights in different ways. Smelling a potential danger means that a threat is nearby, so the best thing to do is run away and hide. __34__ Therefore, instead of showing fear and running away, the elephants express their anger and become aggressive."
+  ],
+  "zhTranslation": [
+   "我們大多數人都能輕易分辨誰是朋友、誰是敵人。但其他動物分辨得出哪些人對牠們有威脅嗎？如果分辨得出，又是怎麼做到的？__31__",
+   "研究人員在肯亞觀察大象面對當地兩個族群的男性時有什麼反應，這兩個族群是馬賽族和坎巴族。馬賽族以養牛為生，族裡的年輕男性有時會用長矛獵殺大象，證明自己是男子漢。坎巴族則大多務農，對大象沒什麼危險。",
+   "__32__ 研究人員把衣服放在象群附近，有的是乾淨的衣服，有的是馬賽族或坎巴族男性穿了五天的衣服。大象聞到馬賽族男性穿過的衣服時，離開的速度比聞到其他衣服時更快，走得也更遠。牠們事後也要花更久的時間才放鬆下來，而且會往高高的草叢走。由於大象始終沒有靠近到看得見衣服，氣味是牠們唯一的線索。",
+   "__33__ 在同一項研究中，研究人員讓大象看乾淨的紅色衣服和白色衣服。大象對紅色衣服表現出的攻擊性，遠比對白色衣服強。紅色正是馬賽族年輕男性常穿的顏色。",
+   "研究人員認為，大象會有不同的反應，是因為牠們對氣味和視覺的解讀不同。聞到潛在的危險，表示威脅就在附近，所以最好的辦法就是逃跑、躲起來。__34__ 因此，大象不是表現出害怕、逃開，而是表現出憤怒，變得具有攻擊性。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 100 年學測閱讀測驗〈大象的辨敵能力〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 19,
+   "選項字數區間": "13-16",
+   "選項字數全距": 3,
+   "選項長度變異係數": "9.3%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 g100p2；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-g93p3",
+  "year": "（六）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "動物發光的用途（What Living Lights Are For）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "B"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "On land, the best-known glowing animals are fireflies, small beetles that flash to attract a mate.",
+   "B": "Some deep-sea squid even release a cloud of glowing liquid to confuse an approaching predator.",
+   "C": "On land as in the sea, living lights can be used to deceive other animals.",
+   "D": "The flashes can help them communicate with their own kind, lure prey, or escape from predators.",
+   "E": "To turn its lights off, a fish slides two black lids up to cover them."
+  },
+  "optionsZh": {
+   "A": "在陸地上，最為人熟知的發光動物是螢火蟲；牠們是一種小甲蟲，靠閃光吸引配偶。",
+   "B": "有些深海烏賊甚至會噴出一團會發光的液體，迷惑逼近的捕食者。",
+   "C": "在陸地上和在海裡一樣，生物發出的光也可以用來欺騙其他動物。",
+   "D": "這些閃光可以幫助牠們和同類溝通、引誘獵物，或逃離捕食者。",
+   "E": "燈眼魚要關燈的時候，會把兩片黑色的蓋子往上拉，蓋住頭燈。"
+  },
+  "unusedExplanation": {
+   "opt": "B",
+   "lead": "B 講的也是動物怎麼用光，而且是真實的情形：有一種深海的小烏賊遇到危險時，噴出的不是墨汁，而是一團會發光的液體，作用就像一般烏賊噴墨。B 留在「動物怎麼用光」這個範圍裡，放在第 31 格，好像是在替「好幾個原因」舉例；放在第 34 格，「迷惑捕食者」又和這一段的「騙」意思相近，所以很容易讓人想選。可是仔細看，四個空格都放不下：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "把前一句說的「好幾個原因」一一列出來，也就是動物閃光的用途",
+     "why": "前一句只說「好幾個原因」，這裡要的是把用途列出來的總述；B 只舉了一種動物的一種做法，說不出前一句的「好幾個原因」是哪些；第二段又從頭介紹海裡的發光動物，前面如果先講了深海烏賊，第二段的開頭就接不上"
+    },
+    {
+     "blank": 32,
+     "want": "交代一直亮著的光，燈眼魚怎麼讓它一明一滅",
+     "why": "第二段講的是燈眼魚，B 換成烏賊，也沒有交代燈眼魚怎麼把一直亮著的光關掉"
+    },
+    {
+     "blank": 33,
+     "want": "從海裡轉到陸地，帶出螢火蟲，並說出牠們用光來找配偶",
+     "why": "第三段後面四句講的是陸地上的螢火蟲怎麼配對，B 講的卻是海裡的烏賊怎麼脫身，沒有從海裡轉到陸地"
+    },
+    {
+     "blank": 34,
+     "want": "說出光也可以用來騙其他動物，當這一段的主題句",
+     "why": "B 講的是海裡的烏賊，後面三句講的全是陸地上的雌螢火蟲，B 概括不了它們；B 的 `even`（甚至）前面也沒有一件程度較輕的事可以比"
+    }
+   ],
+   "summary": "**這一篇多出來的 B 屬於「切面對，卻沒有段落在等它」，和 115 學測參考試卷多出來的 C 同一類。**B 談的確實是動物怎麼用光，內容也沒有錯；可是第二段講燈眼魚，第三、四段講螢火蟲，沒有一段在談烏賊，也沒有一格需要再多舉一個海裡的例子。至於 115 學測多出來的 D，則屬於「主題相同，切面不對」，和這一篇不同。",
+   "extra": [],
+   "takeaway": "多出來的選項有時和全篇談同一件事（這一篇是動物怎麼用光），內容也正確。這時要回到每一格本身，看那一段講的是哪一種動物、空格需要的是總述還是例子。四格各自配好以後，剩下的那一句，就算切面和全篇相同，也沒有段落在等它。"
+  },
+  "paraLabels": [
+   "破題：有些動物會發光，閃光有好幾種用途",
+   "海裡的例子：燈眼魚的光來自細菌，靠黑色的蓋子一明一滅，用來溝通和脫身",
+   "陸地上的例子：螢火蟲靠各自的閃光訊號找配偶",
+   "騙局：同樣的光也能拿來誘捕別種的雄蟲"
+  ],
+  "marks": [
+   [
+    0,
+    "__31__",
+    "gradient"
+   ],
+   [
+    1,
+    "Some fish produce light in the blackness of the sea.",
+    "topic"
+   ],
+   [
+    2,
+    "__33__",
+    "topic"
+   ],
+   [
+    3,
+    "__34__",
+    "topic"
+   ],
+   [
+    0,
+    "but",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Some animals have organs in their bodies that produce light. Most of them live in the sea, but some live on land. When it is dark, they flash their lights on and off for a number of reasons. __31__",
+   "Some fish produce light in the blackness of the sea. When night falls over the Red Sea, tiny flashlight fish swim up from deep water to feed, each with a pair of “headlamps,” one beneath each eye. The light comes from bacteria that live inside the headlamps and glow all the time. __32__ By blinking their lights, the fish communicate with one another, and a fish guarding its home area blinks faster when an intruder comes near. When a predator approaches, a flashlight fish swims slowly in one direction with its lights on, then blinks them off and darts away in another direction.",
+   "__33__ After darkness falls in some parts of North America, female fireflies wait in the grass. The males fly overhead, flashing light from the undersides of their bodies. As there are many species of firefly, the males of each kind flash their own particular signal. Recognizing the flashing code of her own species, a female flashes back to one of the males, and he lands beside her.",
+   "__34__ When they are hungry, some female fireflies lure the males of other species to them. They flash a false reply when these males signal overhead, but eat the males as soon as they land. Eating the males also gives the females chemicals that protect them from spiders."
+  ],
+  "zhTranslation": [
+   "有些動物體內有會發光的器官。這些動物大多住在海裡，也有一些住在陸地上。天黑的時候，牠們讓光一閃一滅，原因有好幾個。__31__",
+   "在漆黑的海裡，有些魚會發光。夜幕籠罩紅海時，小小的燈眼魚從深水處游上來覓食，每一條都有一對「頭燈」，兩隻眼睛下方各一個。頭燈的光來自住在裡面的細菌，這些細菌一直在發光。__32__ 燈眼魚靠著讓光一明一滅彼此溝通；守著自己地盤的燈眼魚，有外來者靠近時，閃光就會變快。捕食者逼近的時候，燈眼魚會先亮著燈朝一個方向慢慢游，接著突然關燈，再往另一個方向迅速游走。",
+   "__33__ 在北美洲的一些地方，天黑以後，雌螢火蟲在草叢裡等待，雄螢火蟲則在上空飛，從身體下方發出閃光。因為螢火蟲有許多種，每一種的雄蟲都發出自己特有的訊號。雌蟲認出自己這一種的閃光密碼，就閃光回應其中一隻雄蟲，那隻雄蟲就降落在牠身旁。",
+   "__34__ 有些雌螢火蟲餓了，會把其他種類的雄螢火蟲引誘過來。這些雄蟲在上空發出訊號時，雌蟲就送出假的回應，等雄蟲一降落，就把雄蟲吃掉。吃下這些雄蟲，雌蟲還能得到一些化學物質，保護自己不被蜘蛛吃掉。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 93 年學測閱讀測驗〈生物發光及其溝通應用〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 19,
+   "選項字數區間": "15-16",
+   "選項字數全距": 1,
+   "選項長度變異係數": "3.2%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 g93p3；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-z108p4",
+  "year": "（七）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "剛果的霍加狓（The Okapi of Congo）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "C"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "Despite being close relatives, the okapi and the giraffe are not hard to tell apart.",
+   "B": "The okapi first appeared in Western writing in 1890, when explorer Henry Morton Stanley mentioned a strange “African donkey.”",
+   "C": "Okapis are shy animals that live alone deep in Congo’s rainforests and are rarely seen.",
+   "D": "It was only later, when okapi skulls were examined, that naturalists realized the animal was related to the giraffe.",
+   "E": "Yet its image is everywhere in the Democratic Republic of Congo, its only home in the wild."
+  },
+  "optionsZh": {
+   "A": "雖然是近親，霍加狓和長頸鹿卻不難分辨。",
+   "B": "霍加狓第一次出現在西方人的著作裡，是在 1890 年：探險家 Henry Morton Stanley 提到了一種奇怪的「非洲驢」。",
+   "C": "霍加狓很怕生，單獨住在剛果的雨林深處，很少有人看見牠。",
+   "D": "一直到後來檢查了霍加狓的頭骨，博物學家才發現這種動物和長頸鹿有親緣關係。",
+   "E": "然而，在剛果民主共和國，霍加狓的形象隨處可見，那裡也是牠唯一的野生棲地。"
+  },
+  "unusedExplanation": {
+   "opt": "C",
+   "lead": "C 這一句**挑不出文法毛病**，說的也是真的：霍加狓確實很怕生、單獨生活，野生的霍加狓也只住在剛果的雨林裡，很少有人看見。它談的也是霍加狓這種動物，和全篇主題一樣；放在第 31 格，「很少有人看見」好像能說明前一句的「西方世界對牠所知不多」，C 又提到剛果，後一句的 `the country`（這個國家）也指得到，所以很容易讓人想選。\n\n問題在於：**C 講的是霍加狓的習性，可是全篇沒有任何一格需要這樣的句子。**",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "一句說明霍加狓在剛果的地位，後一句拿大貓熊、袋鼠來比才有根據",
+     "why": "C 雖然提到剛果，說的卻只是霍加狓住在那裡、很少有人看見，沒有說牠在剛果有什麼地位；大貓熊、袋鼠是一提起來就讓人想到某個國家的動物，「很少有人看見」說明不了霍加狓為什麼能代表剛果，比喻還是少了根據"
+    },
+    {
+     "blank": 32,
+     "want": "一句概括「霍加狓和長頸鹿不難分辨」的話，後面的體型、角就是它的細節",
+     "why": "C 講的是習性，沒有提到長頸鹿；後一句說霍加狓 `much smaller`（小得多），C 沒有提供比較的對象"
+    },
+    {
+     "blank": 33,
+     "want": "替第三段開頭，交代霍加狓最早怎麼出現在西方人的記載裡",
+     "why": "C 講的是霍加狓的習性，不是西方人最早怎麼知道牠；後一句說 `In the years that followed`（之後幾年）又聽到 `more stories`（更多傳聞），前面要先有一件事和一則傳聞，C 都沒有"
+    },
+    {
+     "blank": 34,
+     "want": "交代前面斑馬的猜測後來怎麼更正",
+     "why": "C 說的是習性，沒有說誰在什麼時候查出了什麼，斑馬的猜測還是沒有結局"
+    }
+   ],
+   "summary": "**全篇講的是霍加狓在剛果的地位、牠和長頸鹿的關係、西方人認識牠的經過，以及牠的數量；C 講的卻是霍加狓的習性。**這一篇多出來的 C 屬於「切面對，卻沒有段落在等它」，和 115 學測參考試卷多出來的 C 同一類：習性也是在介紹這種動物，可是第二段描述的是長相、拿牠和長頸鹿比較，第三段講的是發現的經過，沒有一段在談牠怎麼生活。至於 115 學測多出來的 D，則屬於「主題相同，切面不對」，和這一篇不同。",
+   "extra": [],
+   "takeaway": "先一格一格寫下這一格前後需要什麼，四格都配對完，剩下的那個就是多的。遇到好像能說明前一句的選項，再拿它和空格後面的句子核對一次，看後一句是不是順著它往下講。"
+  },
+  "paraLabels": [
+   "引言：西方人眼中的陌生動物，卻是剛果的代表動物",
+   "外觀：條紋像斑馬，親緣卻最接近長頸鹿，外表又和長頸鹿不難分辨",
+   "發現經過：從「非洲驢」、雨林斑馬的猜測，到確認是長頸鹿的親戚",
+   "保育：設了保護區，數量仍減少一半以上"
+  ],
+  "marks": [
+   [
+    1,
+    "Although the okapi has striped markings like those of a zebra, it is most closely related to the giraffe.",
+    "topic"
+   ],
+   [
+    1,
+    "__32__",
+    "topic"
+   ],
+   [
+    2,
+    "__33__",
+    "topic"
+   ],
+   [
+    3,
+    "But decades of political turbulence have let many of Congo’s natural resources slip out of the government’s control, and okapi numbers have fallen by more than half since 1995.",
+    "topic"
+   ],
+   [
+    "E",
+    "Yet",
+    "trans"
+   ],
+   [
+    1,
+    "Although",
+    "trans"
+   ],
+   [
+    "A",
+    "Despite",
+    "trans"
+   ],
+   [
+    1,
+    "While",
+    "trans"
+   ],
+   [
+    "D",
+    "It was only later",
+    "trans"
+   ],
+   [
+    3,
+    "But",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "The okapi is a mammal living in one of the most biodiverse areas of central Africa. The animal was little known to the Western world until the early 20th century, and it is often described as half-zebra, half-giraffe, as if it were a mixed-breed creature from a Greek legend. __31__ The okapi is to the country what the giant panda is to China or the kangaroo to Australia.",
+   "Although the okapi has striped markings like those of a zebra, it is most closely related to the giraffe. It has a long neck and large, flexible ears. Its face and throat are grayish white. Its coat ranges from chocolate to reddish brown, in sharp contrast with the white horizontal stripes and rings on its legs and its white ankles. __32__ The okapi is much smaller, about the size of a horse, and looks more like a deer than a giraffe. While both male and female giraffes have horns, only male okapis do.",
+   "__33__ In the years that followed, Europeans in Africa heard more stories of an animal that they came to call the “African unicorn.” Explorers may have caught only a fleeting glimpse of its striped backside as it fled into the bushes, leading to speculation that it was some sort of rainforest zebra. Some even believed that the okapi was a new species of zebra. __34__",
+   "In 1992, the Okapi Wildlife Reserve was established in northeastern Congo to protect this rare mammal. But decades of political turbulence have let many of Congo’s natural resources slip out of the government’s control, and okapi numbers have fallen by more than half since 1995. Today, perhaps only 10,000 to 15,000 remain."
+  ],
+  "zhTranslation": [
+   "霍加狓是一種哺乳動物，生活在中非生物多樣性最豐富的地區之一。一直到 20 世紀初，西方世界對這種動物都所知不多；人們常形容牠半斑馬、半長頸鹿，好像牠是希臘神話裡由不同動物混合而成的生物。__31__ 霍加狓對這個國家的意義，就像大貓熊之於中國、袋鼠之於澳洲。",
+   "雖然霍加狓身上的條紋和斑馬很像，牠的親緣關係卻和長頸鹿最近。霍加狓的脖子很長，耳朵又大又靈活，臉和喉嚨是灰白色。身上的毛從巧克力色到紅棕色都有，和腿上白色的橫紋、環紋以及白色的腳踝，形成強烈的對比。__32__ 霍加狓的體型小得多，大約和馬一樣大，看起來也比較像鹿，不像長頸鹿。長頸鹿公的母的都有角，霍加狓卻只有公的才有。",
+   "__33__ 之後幾年，在非洲的歐洲人又聽到更多傳聞，說有一種動物，他們後來把牠叫做「非洲獨角獸」。探險家看到的，可能只是這種動物逃進樹叢時一閃而過的條紋臀部，於是有人猜測牠是某種雨林斑馬，有些人甚至相信霍加狓是新品種的斑馬。__34__",
+   "1992 年，剛果東北部設立了霍加狓野生動物保護區，保護這種稀有的哺乳動物。但是數十年的政治動盪，讓剛果許多天然資源脫離了政府的掌控，霍加狓的數量從 1995 年以來減少了一半以上。如今大概只剩下一萬到一萬五千隻。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 108 年指考閱讀測驗〈霍加狓的發現、特徵與保育困境〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 19,
+   "選項字數區間": "15-19",
+   "選項字數全距": 4,
+   "選項長度變異係數": "10.5%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 z108p4；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-z103p2",
+  "year": "（八）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "社會連結與心臟健康（The Power of Social Connection）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "D"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "Their rate of heart disease was far lower than that of men in America or Europe.",
+   "B": "Staying close to family and friends may protect anyone’s heart, not just the hearts of Japanese men.",
+   "C": "What did seem to matter was how closely the men held on to Japanese ways of life.",
+   "D": "Doctors have long advised that a diet low in fatty meat can help protect the heart.",
+   "E": "The farther from Japan the men lived, the more likely they were to have heart disease."
+  },
+  "optionsZh": {
+   "A": "他們的心臟病發生率，遠低於美國和歐洲的男性。",
+   "B": "和家人朋友保持親近，可能對每個人的心臟都有保護作用，不只是日本男性。",
+   "C": "看起來真正有關的，是這些男性保留日本生活方式的程度。",
+   "D": "醫生長久以來一直建議，少吃油脂多的肉，有助於保護心臟。",
+   "E": "這些男性住的地方離日本越遠，得心臟病的可能就越大。"
+  },
+  "unusedExplanation": {
+   "opt": "D",
+   "lead": "D 談的是保護心臟的方法，和全篇同一個話題，說法本身也沒有錯，醫生確實一直這樣建議。D 又和第三段一樣談到飲食，還和第五段一樣用了 `protect`（保護），放在第 33 格或第 34 格，乍看之下好像接得上。\n\n問題在於：**這篇文章要找的是「飲食以外，還有什麼保護了日本男性的心臟」，D 卻回頭講吃什麼能保護心臟。**",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "謎題的另一半：日本男性的心臟其實很健康，和前一句的抽菸形成對比，後一句才能問「是什麼在保護他們」",
+     "why": "D 是給一般人的飲食建議，沒有說日本男性的心臟比較健康，抽菸和心臟病少這兩件事的矛盾就沒有出現，後一句的提問沒有根據"
+    },
+    {
+     "blank": 32,
+     "want": "研究的結果：三個地方的心臟病多寡不同，第三段才能接著解釋各組之間的差距",
+     "why": "D 是一般的健康建議，不是這項研究的結果，第三段說的 `the gap between the groups`（各組之間的差距）找不到來源"
+    },
+    {
+     "blank": 33,
+     "want": "第四段的主題句：說出飲食以外真正有關的是什麼，帶出後面傳統和西化兩群人的比較",
+     "why": "第三段才說飲食解釋不了全部的差距，D 又回頭談飲食；後面比較的是傳統文化和緊密的團體，和吃什麼無關"
+    },
+    {
+     "blank": 34,
+     "want": "把研究的發現推廣到每一個人，好接後一句的「我們需要歸屬感」",
+     "why": "D 雖然也說「保護心臟」，談的卻是吃什麼，和前一句的緊密團體、後一句的歸屬感都接不上"
+    }
+   ],
+   "summary": "**全篇問的是「抽菸這麼普遍，是什麼保護了日本男性的心臟」，答案一路指向人和人之間的連結；D 答的卻是「吃什麼能保護心臟」。**這一篇多出來的 D 屬於「主題相同，切面不對」，和 115 學測多出來的 D 同一類：話題同樣是心臟病，看的角度卻不一樣，所以沒有一格接得上。至於 115 學測參考試卷多出來的 C，則屬於「切面對，卻沒有段落在等它」，和這一篇不同。",
+   "extra": [],
+   "takeaway": "先一格一格問「這裡需要一句什麼樣的話」，把四格填完。剩下的那一句如果和文章談同一個話題，再看文章談到這個話題時，是在肯定它還是在排除它。"
+  },
+  "paraLabels": [
+   "破題：日本男性多半抽菸，心臟病卻很少",
+   "研究：比較住在日本、夏威夷、加州的日裔男性",
+   "排除：常見的危險因子和飲食都解釋不完差距",
+   "轉折：真正有關的是傳統生活與緊密的團體",
+   "結論：每個人都需要真實世界裡的歸屬感"
+  ],
+  "marks": [
+   [
+    0,
+    "In the 1960s and 1970s, Japanese men posed a puzzle for public health researchers.",
+    "topic"
+   ],
+   [
+    1,
+    "Researchers in the United States and Japan set out to find the answer.",
+    "topic"
+   ],
+   [
+    2,
+    "The usual risk factors, such as high blood pressure and cholesterol, explained some of the gap between the groups, but not all of it.",
+    "topic"
+   ],
+   [
+    3,
+    "__33__",
+    "topic"
+   ],
+   [
+    4,
+    "__34__",
+    "gradient"
+   ],
+   [
+    0,
+    "then",
+    "trans"
+   ],
+   [
+    2,
+    "Yet",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "In the 1960s and 1970s, Japanese men posed a puzzle for public health researchers. Most of them smoked, and smoking is one of the strongest risk factors for heart disease. __31__ What, then, was protecting their hearts?",
+   "Researchers in the United States and Japan set out to find the answer. They studied nearly 12,000 men of Japanese descent between the ages of 45 and 69. The men lived in Japan, Hawaii, or California, so the researchers could compare people with the same roots in three very different places. __32__",
+   "The usual risk factors, such as high blood pressure and cholesterol, explained some of the gap between the groups, but not all of it. Diet was another obvious suspect, since many of the men in America had switched from rice and fish to hamburgers and fries. Yet even the change in diet left part of the gap unexplained.",
+   "__33__ A second study of about 3,800 Japanese Americans in California found that the most traditional men had as little heart disease as men in Japan. They had been raised in Japanese culture and belonged to close-knit groups whose members supported one another. Among men who had adopted a Western way of life with looser social ties, the rate was three to five times higher.",
+   "The researchers suggested that close-knit groups may have protected the men from stress, which can harm the heart. __34__ We need to feel part of something bigger in order to thrive. And we need that sense of belonging not only online but in the real world of hugs, handshakes, and pats on the back."
+  ],
+  "zhTranslation": [
+   "在 1960 和 1970 年代，日本男性讓公共衛生研究人員想不通。他們大多抽菸，而抽菸是心臟病最主要的危險因子之一。__31__ 那麼，保護他們心臟的究竟是什麼？",
+   "美國和日本的研究人員著手尋找答案。他們研究了將近 12,000 名日裔男性，年齡在 45 到 69 歲之間。這些男性分別住在日本、夏威夷和加州，所以研究人員可以比較同樣出身、卻住在三個截然不同地方的人。__32__",
+   "高血壓、膽固醇這些常見的危險因子，可以解釋各組之間一部分的差距，卻不是全部。飲食是另一個明顯的可能原因，因為住在美國的男性，很多人已經從吃米飯和魚，改吃漢堡和薯條。可是，就連飲食的改變，也還有一部分差距解釋不了。",
+   "__33__ 另一項研究調查了加州大約 3,800 名日裔美國人，發現最傳統的那一群人，心臟病和日本本地的男性一樣少。他們從小在日本文化中長大，也屬於關係緊密、成員彼此扶持的團體。至於改採西方生活方式、社會關係比較鬆散的人，心臟病的比率則高出三到五倍。",
+   "研究人員認為，關係緊密的團體可能保護了這些男性，讓他們少受壓力的影響，而壓力會傷害心臟。__34__ 我們需要覺得自己屬於某個更大的群體，才能過得好。而且我們需要的歸屬感，不只在網路上，也要在真實的世界裡，在擁抱、握手和拍拍肩膀之中。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 103 年指考閱讀測驗〈社會連結對健康的影響〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 19,
+   "選項字數區間": "17-17",
+   "選項字數全距": 0,
+   "選項長度變異係數": "0.0%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 z103p2；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-z105p3",
+  "year": "（九）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "美國烹飪節目的演變（The Evolution of American Cooking Shows）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "C"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "Aired in the daytime, these programs targeted middle-class women who wanted convenient meals for busy families.",
+   "B": "Some later shows were hosted by famous chefs who taught viewers to cook fine European dishes.",
+   "C": "In the 1940s, few homes had a TV set, so early cooking shows reached only small audiences.",
+   "D": "By then, viewers wanted a chef with personality and a show that was fun to watch.",
+   "E": "Most of their fans love food but would rather watch others cook than do the cooking themselves."
+  },
+  "optionsZh": {
+   "A": "這些節目在白天播出，對象是中產階級的婦女，她們想替忙碌的家人準備方便的餐點。",
+   "B": "後來有些節目由名廚主持，教觀眾做精緻的歐洲料理。",
+   "C": "1940 年代家裡有電視的人很少，所以早期的烹飪節目觀眾也不多。",
+   "D": "到了那時，觀眾希望廚師有個人特色，節目看起來也要有趣。",
+   "E": "他們的粉絲大多熱愛美食，卻寧可看別人做菜，也不想自己動手。"
+  },
+  "unusedExplanation": {
+   "opt": "C",
+   "lead": "C 本身沒有錯：1940 年代美國家裡有電視的人確實很少，早期的電視烹飪節目觀眾也就不多。它談的也是烹飪節目，和全篇主題一樣；而且第 31 格前面剛講到電視時代，第 33 格前面又說節目紅不起來，乍看好像都放得進去。**問題是，全篇談的是「節目的內容怎麼隨著觀眾改變」，C 談的卻是「電視普不普及、節目有多少觀眾」。**所以四個空格都放不下：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "一句概括 1950 年代的節目做給誰看、觀眾需要什麼（方便的餐點），讓後面 Poppy Cannon 的罐頭料理當例子",
+     "why": "C 說的時間又回到 1940 年代，說的是觀眾很少；Poppy Cannon 是很受歡迎的作者，這個例子和 C 對不上"
+    },
+    {
+     "blank": 32,
+     "want": "第三段的起點：1950 年代之後，有一段節目很高檔、只教某些地方料理的時期，後一句的 `less fancy` 和 `from all over the world` 才有比較的對象",
+     "why": "C 沒有任何高檔的料理，也沒有哪一個地方的菜色，時間也又回到 1940 年代"
+    },
+    {
+     "blank": 33,
+     "want": "回答前一句留下的問題：光有好菜不夠，那還需要什麼；同時帶出第五段的名人和實境秀",
+     "why": "C 說的觀眾少，原因是家裡沒有電視，和節目還需要什麼無關；年代也停在 1940 年代"
+    },
+    {
+     "blank": 34,
+     "want": "說出今天的觀眾大多只看不做，最後一句「照著節目食譜做菜不流行了」才有原因",
+     "why": "C 講的是 1940 年代的觀眾人數，推不出今天大家不照食譜做菜"
+    }
+   ],
+   "summary": "**這一篇多出來的 C 屬於「主題相同，切面不對」，和 115 學測多出來的 D 同一類。**全篇談的是烹飪節目教什麼、做給誰看，以及這些內容怎麼隨著觀眾改變；C 談的卻是電視還不普及的時候，節目能接觸到多少觀眾。話題同樣是早期的烹飪節目，看的角度卻不一樣，所以沒有一格接得上。至於 115 學測參考試卷多出來的 C，則屬於「切面對，卻沒有段落在等它」，和這一篇不同。",
+   "extra": [],
+   "takeaway": "先一格一格問「這裡需要一句什麼樣的話」，把四格填完。剩下的那一句如果和文章談同一個話題，再看它說的是不是文章一路在談的那件事；這一篇談的是節目內容怎麼變，不是電視普不普及。"
+  },
+  "paraLabels": [
+   "破題與起點：先點出全文主旨，再從 1926 年的廣播節目 Aunt Sammy 說起",
+   "1940、50 年代：節目搬上電視，替忙碌的家庭示範方便快速的做法",
+   "1950 年代以後：從名廚的精緻歐洲料理，走向世界各地的菜色",
+   "1990 年代：菜色五花八門，但光有好菜不夠，觀眾也看重廚師的個人特色和節目的趣味",
+   "21 世紀與結尾：名廚和搖滾巨星一樣有名，觀眾大多只看不做，照著節目食譜做菜也就不流行了"
+  ],
+  "marks": [
+   [
+    0,
+    "American cooking programs have taught audiences, changed audiences, and changed with audiences from generation to generation.",
+    "thesis"
+   ],
+   [
+    1,
+    "Cooking shows moved to television in the 1940s.",
+    "topic"
+   ],
+   [
+    2,
+    "__32__",
+    "topic"
+   ],
+   [
+    3,
+    "By the 1990s, cooking shows covered everything from elegant restaurant dishes to healthy home meals.",
+    "topic"
+   ],
+   [
+    4,
+    "In the early 21st century, new shows were created to please audiences who loved celebrities and reality TV.",
+    "topic"
+   ],
+   [
+    0,
+    "In October 1926",
+    "trans"
+   ],
+   [
+    0,
+    "but",
+    "trans",
+    "matters, ",
+    " it was"
+   ],
+   [
+    1,
+    "By the 1950s",
+    "trans"
+   ],
+   [
+    1,
+    "for example",
+    "trans"
+   ],
+   [
+    2,
+    "Over time",
+    "trans"
+   ],
+   [
+    2,
+    "One well-known example",
+    "trans"
+   ],
+   [
+    3,
+    "By the 1990s",
+    "trans"
+   ],
+   [
+    3,
+    "however",
+    "trans"
+   ],
+   [
+    4,
+    "In the early 21st century",
+    "trans"
+   ],
+   [
+    "E",
+    "but",
+    "trans",
+    "food ",
+    " would"
+   ]
+  ],
+  "paras": [
+   "American cooking programs have taught audiences, changed audiences, and changed with audiences from generation to generation. In October 1926, the United States Department of Agriculture created a fictional radio host named Aunt Sammy. Over the radio, she gave homemakers advice on all kinds of household matters, but it was mostly her recipes that caught listeners’ attention. The show helped spread cooking tips and led to a nationwide exchange of recipes.",
+   "Cooking shows moved to television in the 1940s. By the 1950s, they were often hosted by a cook who explained step by step how to prepare a dish. __31__ Poppy Cannon, for example, was the popular author of “The Can-Opener Cookbook.” She appeared on television, using canned foods to show how to cook quickly and easily.",
+   "__32__ Over time, cooking shows grew less fancy and began to feature dishes from all over the world. One well-known example is Martin Yan’s “Yan Can Cook,” which began airing on American public television in 1982. On the show, Yan taught Chinese cooking and signed off with the catchphrase “If Yan can cook, so can you!”",
+   "By the 1990s, cooking shows covered everything from elegant restaurant dishes to healthy home meals. Good food alone, however, was not enough to make a show a hit. __33__",
+   "In the early 21st century, new shows were created to please audiences who loved celebrities and reality TV. Some were filmed outside the studio, and many turned cooking into a contest between chefs. Top chefs have become as famous as rock stars. __34__ Cooking from a show’s recipes, as Aunt Sammy’s listeners once did, has gone out of style."
+  ],
+  "zhTranslation": [
+   "美國的烹飪節目一代又一代地教導觀眾、改變觀眾，也隨著觀眾而改變。1926 年 10 月，美國農業部創造了一位虛構的廣播主持人，名叫 Aunt Sammy（山姆阿姨）。她透過廣播，針對各種家務事給家庭主婦建議，不過最吸引聽眾注意的，主要還是她的食譜。這個節目幫忙傳播烹飪的訣竅，也促成了全國性的食譜交流。",
+   "烹飪節目在 1940 年代搬上了電視。到了 1950 年代，節目通常由一位廚師主持，一步一步說明一道菜怎麼做。__31__ 例如 Poppy Cannon 是《開罐器食譜》（The Can-Opener Cookbook）的作者，很受歡迎。她上電視時用罐頭食品示範怎麼快速、輕鬆地做菜。",
+   "__32__ 後來，烹飪節目沒那麼高檔了，開始介紹世界各地的菜色。一個有名的例子是甄文達（Martin Yan）的《甄能煮》（Yan Can Cook），這個節目 1982 年開始在美國的公共電視播出。他在節目裡教中國菜，每一集結尾都會說一句經典台詞：「甄能煮，你也能！」（If Yan can cook, so can you!）",
+   "到了 1990 年代，烹飪節目從餐廳的精緻料理到家裡的健康餐點都有。不過，光有好菜並不足以讓節目走紅。__33__",
+   "21 世紀初，業者推出新的節目，迎合喜歡名人、熱愛實境秀的觀眾。有些節目走出攝影棚拍攝，也有不少節目把做菜變成廚師之間的比賽。頂尖的廚師如今已經和搖滾巨星一樣有名。__34__ 像當年 Aunt Sammy 的聽眾那樣照著節目的食譜做菜，已經不流行了。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 105 年指考閱讀測驗〈美國烹飪節目的演變〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 21,
+   "選項字數區間": "16-17",
+   "選項字數全距": 1,
+   "選項長度變異係數": "3.0%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 z105p3；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-z93bp3",
+  "year": "（十）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "語言教室的起落（The Ups and Downs of the Language Lab）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "D"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "Within just a few years, however, it became clear that the hoped-for breakthrough was not coming.",
+   "B": "It is a room divided into small booths, where each student listens to recordings in a foreign language.",
+   "C": "It is now clear that, when used properly, labs can add real value to language teaching.",
+   "D": "Setting up a lab with booths and headphones for a whole class cost a great deal of money.",
+   "E": "In the 1980s, labs made a comeback, as their strengths and limits became better understood and equipment improved."
+  },
+  "optionsZh": {
+   "A": "然而不到幾年，大家就發現期待中的突破並不會出現。",
+   "B": "語言教室是隔成一間間小隔間的教室，每個學生在裡面各自聽外語錄音。",
+   "C": "現在大家都很清楚，只要使用得當，語言教室能為語言教學帶來實實在在的幫助。",
+   "D": "建一間語言教室，替全班每個學生裝好隔間和耳機，要花很多錢。",
+   "E": "到了 1980 年代，大家對語言教室的優點和限制了解得更多，設備也改進了，語言教室於是重新受到重視。"
+  },
+  "unusedExplanation": {
+   "opt": "D",
+   "lead": "D 談的也是語言教室，`booths`（小隔間）、`headphones`（耳機）都是語言教室的設備，所以第一眼很像第一段描述語言教室的句子；放在第二段 `expensive equipment`（昂貴的設備）後面，`cost a great deal of money`（花很多錢）又像在接著說設備很貴。可是四個空格都放不下：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "一句說明語言教室是什麼樣的地方、學生在裡面做什麼，後一句學生錄音、老師監聽的細節才接得上",
+     "why": "D 只說建一間語言教室很花錢，沒有說學生在裡面做什麼，和後一句學生怎麼練習接不上"
+    },
+    {
+     "blank": 32,
+     "want": "一句交代熱潮過後的結果：語言教室沒有帶來期待中的突破，第三段才能接著分析失敗的原因",
+     "why": "D 只是把前一句的 `expensive` 再說一次，語言教室到底有沒有效果還是沒有交代，第三段一開頭的 `failure`（沒有達到預期）就沒有根據"
+    },
+    {
+     "blank": 33,
+     "want": "一句從失敗轉到重新受到重視，並交代設備改進，後面才能說新一代的語言教室設備豐富、受到歡迎",
+     "why": "D 說的是建置的花費，沒有從第三段的失敗轉到第四段的受歡迎，後一句的 `The newer labs`（新一代的語言教室）也沒有交代從哪裡來"
+    },
+    {
+     "blank": 34,
+     "want": "一句概括語言教室使用得當時的價值，後面兩句才是它的例子",
+     "why": "後面兩句舉的是語言教室的用處（提供聽力材料、當作資源中心），不是花費的例子"
+    }
+   ],
+   "summary": "**全篇談的是語言教室「效果如何」：先被寄予厚望，接著失敗，後來重新受到重視，最後說使用得當就有價值；D 談的卻是語言教室「要花多少錢」。**這一篇多出來的 D 屬於「主題相同，切面不對」，和 115 學測多出來的 D 同一類：115 學測那一篇問的是「什麼影響微笑」，D 答的卻是「微笑分幾種」。至於 115 學測參考試卷多出來的 C，則屬於「切面對，卻沒有段落在等它」，和這一篇不同。",
+   "extra": [],
+   "takeaway": "四格先各自配好，再回頭問剩下那一句回答的是不是全篇在談的問題。這一篇談的是語言教室效果如何，D 回答的是要花多少錢，看出切面不同，就不必回頭懷疑前面的答案。"
+  },
+  "paraLabels": [
+   "破題：語言教室是什麼——學生在隔間裡聽外語錄音，也能錄下自己的回答",
+   "期待：剛推出時大家寄予厚望，學校紛紛裝設，幾年後卻看出不會有突破",
+   "失敗：沒有達到預期的四個原因——教材、與課堂脫節、師資訓練、設備維護",
+   "再起：1980 年代起設備改進，新一代的語言教室重新受到重視",
+   "結論：只要使用得當，語言教室能為語言教學帶來幫助，並舉兩種用處"
+  ],
+  "marks": [
+   [
+    0,
+    "One of the best-known technological aids in language teaching is the language laboratory.",
+    "topic"
+   ],
+   [
+    1,
+    "When language labs first appeared, they were praised as a way to make language learning faster and more effective.",
+    "topic"
+   ],
+   [
+    2,
+    "There were several reasons for the language lab’s failure to live up to expectations.",
+    "topic"
+   ],
+   [
+    3,
+    "__33__",
+    "topic"
+   ],
+   [
+    4,
+    "__34__",
+    "gradient"
+   ],
+   [
+    "A",
+    "however",
+    "trans"
+   ],
+   [
+    2,
+    "And",
+    "trans"
+   ],
+   [
+    3,
+    "in particular",
+    "trans"
+   ],
+   [
+    4,
+    "For example",
+    "trans"
+   ],
+   [
+    4,
+    "also",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "One of the best-known technological aids in language teaching is the language laboratory. __31__ Students can record their own responses and play them back, while a teacher listens in and checks their progress.",
+   "When language labs first appeared, they were praised as a way to make language learning faster and more effective. They would take the burden of repetitive drills away from teachers, give learners more chances to practice listening and speaking, and let learners work at their own pace and keep track of their own progress. Many schools were quick to install the expensive equipment. __32__",
+   "There were several reasons for the language lab’s failure to live up to expectations. The recorded materials were often poorly designed, leaving students frustrated and bored. The published programs had little to do with the work students were doing in class. Few language teachers had received any training in designing materials or in running a lab. And once installed, the equipment proved difficult to maintain.",
+   "__33__ The newer labs contained much more than the traditional tape-based systems. Computer programs and video materials, in particular, proved extremely popular with learners.",
+   "__34__ For example, recordings can give learners a wide variety of natural, clearly recorded speech to help them sharpen their listening skills. Labs can also serve as resource centers, much like libraries, where learners get extra practice at a level they choose."
+  ],
+  "zhTranslation": [
+   "語言教學用到的科技輔助工具當中，最有名的之一就是語言教室。__31__ 學生可以錄下自己的回答再播放出來，老師則在一旁監聽，掌握他們的學習情形。",
+   "語言教室剛出現的時候，大家稱讚它能讓語言學習更快、更有效。語言教室可以替老師分擔反覆練習的工作，讓學習者有更多機會練習聽和說，也讓他們按照自己的步調學習，自己掌握學習進度。許多學校很快就裝設了昂貴的設備。__32__",
+   "語言教室沒有達到預期，原因有好幾個。錄音教材往往設計不良，讓學生覺得挫折又無聊。市面上出版的教材，和學生在課堂上學的內容沒什麼關係。很少語言老師受過設計教材或操作語言教室的訓練。而且設備一裝好，維護起來就很困難。",
+   "__33__ 新一代的語言教室，設備比過去以錄音帶為主的傳統系統豐富得多。其中電腦程式和影音教材，特別受到學習者歡迎。",
+   "__34__ 例如，錄音教材可以提供各式各樣自然、錄音清楚的語音，幫助學習者加強聽力。語言教室也可以像圖書館一樣當作資源中心，讓學習者按照自己選擇的程度多加練習。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 93 年指考敏督利颱風補考閱讀測驗〈語言實驗室的發展與應用〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 18,
+   "選項字數區間": "16-18",
+   "選項字數全距": 2,
+   "選項長度變異係數": "5.7%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 z93bp3；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-g113p3",
+  "year": "（十一）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "冰島的「100% Fish」計畫（Iceland’s 100% Fish Project）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "E"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "Cod skin is used in health supplements and energy drinks, and even to treat severe burns like Petur’s.",
+   "B": "By sharing their knowledge, businesses and scientists have found better ways to handle fish and create new products.",
+   "C": "Petur survived because his doctors tried an unusual treatment: covering his burns with codfish skin.",
+   "D": "Reducing fish waste has become a serious concern today, as many countries face food shortages.",
+   "E": "Some countries now raise fish on farms to keep up with the growing demand for seafood."
+  },
+  "optionsZh": {
+   "A": "鱈魚皮用在保健食品和能量飲料裡，甚至用來治療像 Petur 那樣的嚴重燒傷。",
+   "B": "企業和科學家分享彼此的知識，找到了更好的魚貨處理方式，也開發出新產品。",
+   "C": "Petur 能活下來，是因為醫師試了一種不尋常的療法：把鱈魚皮覆蓋在他的燒傷上。",
+   "D": "如今許多國家面臨糧食短缺，減少漁獲浪費成了一大課題。",
+   "E": "有些國家現在養殖魚類，以應付越來越大的海鮮需求。"
+  },
+  "unusedExplanation": {
+   "opt": "E",
+   "lead": "E 讀起來很順，談的也是海鮮和糧食：`Some countries now raise fish on farms to keep up with the growing demand for seafood.`（有些國家現在養殖魚類，以應付越來越大的海鮮需求。）E 的 `Some countries`（有些國家）和 D 的 `many countries`（許多國家）一樣是大範圍的說法，放在第 32 格冰島的例子前面，乍看接得上；`growing demand`（需求越來越大）又好像能解釋第 34 格後面鱈魚為什麼越來越值錢。\n\n問題在於：**全篇談的是「捕到的魚怎麼不浪費」，E 談的卻是「怎麼得到更多的魚」。**",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "一句交代 Petur 後來怎麼了，而且要說出救他的療法，第二段的 `That treatment`（這種療法）才有所指",
+     "why": "E 講的是其他國家養魚，沒有交代 Petur 傷勢的結果，也沒有提到任何療法，第二段的 `That treatment` 也就沒有所指"
+    },
+    {
+     "blank": 32,
+     "want": "一句範圍比較大的話，提出漁獲浪費的問題，後面冰島四成、六成的數字才是它的例子",
+     "why": "E 談的是養殖魚類、增加供應，後面的數字講的卻是捕到的鱈魚有多少浪費掉，兩者不是同一件事"
+    },
+    {
+     "blank": 33,
+     "want": "一個「魚的某個部位做成什麼產品」的例子，和後面的魚頭、魚骨屬於同一類",
+     "why": "E 沒有提到魚的任何部位，也沒有提到任何產品"
+    },
+    {
+     "blank": 34,
+     "want": "一句說明這些合作夥伴一起做了什麼，而且說得出鱈魚為什麼變得更值錢",
+     "why": "E 和前一句的漁業公司、大學、研究團隊沒有關係；第五段談的是合作，不是海鮮的需求"
+    }
+   ],
+   "summary": "**這一篇多出來的 E 屬於「主題相同，切面不對」，和 115 學測多出來的 D 同一類。**115 學測全篇問「什麼影響微笑」，D 答的卻是「微笑分幾種」；這一篇全篇在講冰島怎麼把捕到的鱈魚幾乎全部用上，E 卻講養殖漁業怎麼增加魚的產量。至於 115 學測參考試卷多出來的 C，則屬於「切面對，卻沒有段落在等它」，和這一篇不同。",
+   "extra": [],
+   "takeaway": "四格填完，先用一句話說出全篇在講什麼（這一篇是「捕到的魚怎麼不浪費」），再看剩下的那一句回答的是不是同一個問題。E 回答的是「怎麼得到更多的魚」，看出切面不同，就不必回頭懷疑前面的答案。"
+  },
+  "paraLabels": [
+   "開場：Petur 觸電重傷，一種鱈魚皮療法救了他一命",
+   "引出計畫：魚皮療法是 100% Fish 的成果之一，計畫要把每條魚的每個部位都用上",
+   "問題與成果：漁獲浪費是一大課題，冰島從只會利用四成，進步到將近九成五",
+   "實例：魚皮、魚頭、魚骨和過去丟掉的部分，各有各的用途",
+   "關鍵與結尾：跨領域合作讓每條鱈魚更值錢，也成為全世界的典範"
+  ],
+  "marks": [
+   [
+    0,
+    "__31__",
+    "topic"
+   ],
+   [
+    1,
+    "As its name suggests, the project aims to put every part of each fish caught to use.",
+    "gradient"
+   ],
+   [
+    2,
+    "__32__",
+    "topic"
+   ],
+   [
+    3,
+    "Nearly every part of the fish now ends up in some kind of product.",
+    "topic"
+   ],
+   [
+    4,
+    "Iceland’s success depends largely on people from different fields working together.",
+    "topic"
+   ],
+   [
+    1,
+    "also",
+    "trans"
+   ],
+   [
+    4,
+    "also",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "In 2020, Petur Oddsson, a power station worker in Iceland, was struck by a 60,000-volt current. The electric shock burned almost half of his body and melted away several layers of his skin. Burns this deep and extensive can be fatal. __31__",
+   "That treatment was one result of a larger effort in Iceland called “100% Fish.” As its name suggests, the project aims to put every part of each fish caught to use. It also hopes to change the fishing industry by encouraging new uses for fish.",
+   "__32__ In Iceland, as recently as 2003, people knew how to use only about 40% of each cod they caught. The rest, about 60% of the fish, went to waste. With the help of 100% Fish, Icelanders have now found uses for almost 95% of each cod.",
+   "Nearly every part of the fish now ends up in some kind of product. __33__ Dried fish heads and spines are shipped to West Africa, where they form the base of a protein-rich soup. Omega-3 capsules, sprays that help protect against colds, and dog snacks are made from parts that were once thrown away.",
+   "Iceland’s success depends largely on people from different fields working together. The project brings fishing companies together with universities, startups, and research teams. __34__ Each cod caught in Iceland is now worth far more than it used to be. The project also offers the world a useful model for making better use of natural resources."
+  ],
+  "zhTranslation": [
+   "2020 年，冰島電廠員工 Petur Oddsson 遭到 6 萬伏特的電流擊中。這次電擊燒傷了他將近一半的身體，還熔掉了好幾層皮膚。這麼深、面積又這麼大的燒傷可能致命。__31__",
+   "這種療法，是冰島一項名為「100% Fish」的大型計畫的成果之一。正如名稱所示，這項計畫的目標是把捕到的每一條魚的每個部位都用上。計畫也希望鼓勵大家替魚找出新用途，藉此改變漁業。",
+   "__32__ 直到 2003 年，冰島人還只知道怎麼利用每條鱈魚的四成左右，其餘大約六成都浪費掉了。在 100% Fish 的帶動下，冰島人現在已經替一條鱈魚將近 95% 的部分找到了用途。",
+   "現在魚身上幾乎每個部位都會做成某種產品。__33__ 曬乾的魚頭和魚骨運到西非，在當地用來熬煮富含蛋白質的湯。至於 Omega-3 膠囊、預防感冒的噴劑和狗零食，原料也都是過去丟掉的部分。",
+   "冰島的成功，主要靠不同領域的人通力合作。這項計畫讓漁業公司和大學、新創公司以及研究團隊攜手合作。__34__ 如今冰島捕到的每一條鱈魚，價值都比過去高出許多。這項計畫也為全世界提供了一個實用的模式，讓各國更妥善地利用自然資源。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 113 年學測閱讀測驗〈「100% Fish」計畫〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 20,
+   "選項字數區間": "15-18",
+   "選項字數全距": 3,
+   "選項長度變異係數": "8.3%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 g113p3；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-g110tp2",
+  "year": "（十二）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "大富翁背後的發明人（The Woman Behind Monopoly）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "B"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "Magie’s game could be played in two ways, and each way gave players a different goal.",
+   "B": "Under its new name, the game became a best seller in America, and Parker Brothers made a fortune.",
+   "C": "An unemployed man, Charles Darrow, sold a modified version to the game maker Parker Brothers as his own.",
+   "D": "She set out to challenge the capitalist system of property ownership by designing a board game.",
+   "E": "The company promoted Darrow as the inventor who had become a millionaire by selling the game."
+  },
+  "optionsZh": {
+   "A": "Magie 的遊戲有兩種玩法，每一種玩法給玩家的目標都不一樣。",
+   "B": "改了新名字以後，這款遊戲成了美國的暢銷商品，Parker Brothers 也賺了一大筆錢。",
+   "C": "一個名叫 Charles Darrow 的失業男子，把一個修改過的版本當成自己的作品，賣給遊戲廠商 Parker Brothers。",
+   "D": "她著手設計一款桌遊，藉此挑戰資本主義的財產所有制。",
+   "E": "這家公司把 Darrow 宣傳成發明人，說他靠賣這款遊戲成了百萬富翁。"
+  },
+  "unusedExplanation": {
+   "opt": "B",
+   "lead": "B 讀起來很順，講的也是大富翁：`Under its new name`（改了新名字以後）接在第五段的 `the name Monopoly` 後面很自然，`a best seller`（暢銷商品）也呼應第一段說大富翁風行全球；`Parker Brothers made a fortune`（Parker Brothers 賺了一大筆錢）又和最後一句的 `rags-to-riches`（白手起家、由窮變富）都談到發財。\n\n問題在於：**全篇講的是「這款遊戲真正從哪裡來、原本的理念怎麼走樣」，B 講的卻是「遊戲改名以後賣得好不好」。**把 B 放進四個空格，每一格都放不下：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "一句說明 Magie 怎麼把 George 的土地理念變成一款遊戲",
+     "why": "B 講的是改名以後的銷路，這時遊戲都還沒發明"
+    },
+    {
+     "blank": 32,
+     "want": "一句主題句，告訴讀者遊戲有兩種玩法，輸贏的目標很不一樣",
+     "why": "B 沒有提到規則，遊戲也還沒改名"
+    },
+    {
+     "blank": 33,
+     "want": "一句說出有人把遊戲當成自己的作品賣給 Parker Brothers，後面「Parker Brothers 得知真正的起源」才說得通",
+     "why": "B 沒有任何人冒用起源，遊戲也還沒改名"
+    },
+    {
+     "blank": 34,
+     "want": "一句說出 Darrow 由窮變富的故事，後面的 `rags-to-riches myth` 才有所指",
+     "why": "前一句已經說過遊戲很快就成了暢銷商品，B 再說一次只是重複；B 的發財說的又是一家公司，不是一個人，而且 Parker Brothers 賺錢是真的，談不上「神話」，後一句的 `rags-to-riches myth` 還是沒有所指的故事"
+    }
+   ],
+   "summary": "**這一篇多出來的 B 屬於「主題相同，切面不對」，和 115 學測多出來的 D 同一類。**115 學測全篇問「什麼影響微笑」，D 答的卻是「微笑分幾種」；這一篇全篇講的是大富翁真正的起源，以及原本的理念怎麼被改掉，B 講的卻是改名後的大富翁賣得多好。至於 115 學測參考試卷多出來的 C，則屬於「切面對，卻沒有段落在等它」，和這一篇不同。",
+   "extra": [],
+   "takeaway": "四格填完，先用一句話說出全篇在講什麼（這一篇是大富翁真正的起源和理念的轉變），再看剩下的那一句。它就算和某一格的前後句共用字詞或意思（例如 `name`、發財），只要談的是另一個切面，就是多出來的。"
+  },
+  "paraLabels": [
+   "破題：大富翁家喻戶曉，發明人和她的理念卻很少人知道",
+   "發明人：Magie 受 Henry George 啟發，想用桌遊挑戰土地私有的制度",
+   "兩套規則：「大家都贏」和「贏家通吃」，讓玩家看出不同制度的結果",
+   "流傳：遊戲在校園和貴格會社群流行，修改過的版本遭人冒名賣出",
+   "結局：Parker Brothers 只留下壟斷規則，反倒造出白手起家的神話"
+  ],
+  "marks": [
+   [
+    0,
+    "Monopoly is a very popular board game around the world today, but little is known about its American inventor, Elizabeth Magie, and the philosophy behind her invention.",
+    "thesis"
+   ],
+   [
+    1,
+    "Born in 1866, Magie was a rebel against the norms and politics of her times.",
+    "topic"
+   ],
+   [
+    2,
+    "__32__",
+    "topic"
+   ],
+   [
+    3,
+    "The game soon became a hit on college campuses and among Quaker communities, and some people modified the game board.",
+    "topic"
+   ],
+   [
+    4,
+    "However, when Parker Brothers learned of the game’s true origin, it bought Magie’s patent for only $500.",
+    "topic"
+   ],
+   [
+    0,
+    "but",
+    "trans"
+   ],
+   [
+    1,
+    "In 1904",
+    "trans"
+   ],
+   [
+    2,
+    "on the other hand",
+    "trans"
+   ],
+   [
+    4,
+    "However",
+    "trans"
+   ],
+   [
+    4,
+    "Thus",
+    "trans"
+   ],
+   [
+    4,
+    "ironically",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Monopoly is a very popular board game around the world today, but little is known about its American inventor, Elizabeth Magie, and the philosophy behind her invention.",
+   "Born in 1866, Magie was a rebel against the norms and politics of her times. Her thinking was shaped by the economist Henry George, who believed that all people should have an equal right to use the land, just as they have an equal right to breathe the air. __31__ In 1904, she patented her Landlord’s Game. The game board consisted of a circuit of streets and landmarks for sale.",
+   "__32__ Under the Prosperity rules, every player gained each time someone acquired a new property. The game was won (by all!) when the player starting with the least money doubled his or her fortune. Under the Monopolist rules, on the other hand, each player advanced by acquiring properties and collecting rent from all who landed there later. Whoever managed to bankrupt the other players won the game. The purpose of the dual sets of rules, said Magie, was for players to understand how these different approaches to property can lead to different social outcomes: “all win” or “win all.”",
+   "The game soon became a hit on college campuses and among Quaker communities, and some people modified the game board. __33__",
+   "However, when Parker Brothers learned of the game’s true origin, it bought Magie’s patent for only $500. The game was sold under the name Monopoly, with only the rules that let one player triumph over all the others, and it soon became a best seller. __34__ Thus a rags-to-riches myth was created, ironically exemplifying Monopoly’s implicit values: Chase wealth and crush your opponents if you want to come out on top."
+  ],
+  "zhTranslation": [
+   "大富翁是今天風行全世界的桌遊，但很少人知道它的美國發明人 Elizabeth Magie，也很少人知道她發明這款遊戲背後的理念。",
+   "Magie 生於 1866 年，是個反抗當時社會規範和政治的人。她的想法深受經濟學家 Henry George 影響；George 認為，人人都應該有平等使用土地的權利，就像人人都有呼吸空氣的權利一樣。__31__ 1904 年，她為自己的「地主遊戲」取得專利。遊戲的版面是一圈可以買賣的街道和地標。",
+   "__32__ 照繁榮規則玩，每當有人取得新的地產，每一位玩家都能獲益。等到起始資金最少的那位玩家財富翻倍，遊戲就算贏了（而且是大家一起贏！）。壟斷規則就不一樣了，玩家靠取得地產、向之後停在那裡的人收租來前進，能讓其他玩家全部破產的人就是贏家。Magie 說，設計兩套規則的用意，是讓玩家了解對待財產的方式不同，社會的結果也會不同：「大家都贏」或「贏家通吃」。",
+   "這款遊戲很快在大學校園和貴格會社群流行起來，有些人還修改了遊戲版面。__33__",
+   "不過，Parker Brothers 得知遊戲真正的起源以後，只花 500 美元就買下 Magie 的專利。這款遊戲改用大富翁（Monopoly）這個名字販售，只保留讓一個玩家打敗其他所有人的規則，很快就成了暢銷商品。__34__ 一段白手起家的神話就這樣誕生了；諷刺的是，這段神話正好體現了大富翁隱含的價值觀：想要出人頭地，就要追求財富、擊垮對手。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 110 年學測試辦考試閱讀測驗〈大富翁遊戲的真實起源〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 18,
+   "選項字數區間": "16-18",
+   "選項字數全距": 2,
+   "選項長度變異係數": "5.8%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 g110tp2；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-g110p1",
+  "year": "（十三）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "仙人掌外皮發電（Turning Cactus Waste into Power）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "B"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "For now, the biogas generator is still only a pilot project in a single farming district.",
+   "B": "Generators of the same kind can run on animal manure instead of cactus waste.",
+   "C": "The thick outer skin, with all those sharp spines, was simply thrown away.",
+   "D": "The prickly pear is a better biofuel crop than wheat, sugarcane, or soybeans.",
+   "E": "A local green energy startup came up with the idea of turning this waste into power."
+  },
+  "optionsZh": {
+   "A": "目前，這座沼氣發電機還只是單一農業區裡的試驗計畫。",
+   "B": "同一種發電機也可以改用動物糞便來運轉，不必用仙人掌廢料。",
+   "C": "至於布滿尖刺的厚外皮，就直接丟掉了。",
+   "D": "仙人掌是比小麥、甘蔗或大豆更好的生質燃料作物。",
+   "E": "當地一家綠能新創公司想到，可以把這些廢棄物變成電力。"
+  },
+  "unusedExplanation": {
+   "opt": "B",
+   "lead": "B 讀起來很順，講的也是沼氣發電機，和第三段的 `biogas generator`、第五段的 `similar generators` 好像都有關係；動物糞便可以產生沼氣，本身也是事實。\n\n問題在於：**全篇談的是「仙人掌的外皮怎麼變成能源、這樣做好在哪裡」，B 說的卻是「這種發電機不用仙人掌也可以」。**所以四個空格都放不下：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "說明沒用到的外皮怎麼處理，後面幾段的廢棄物和外皮才有著落",
+     "why": "第二段還沒有出現任何發電機，B 的 `the same kind` 沒有可以比的對象；B 也沒有交代外皮"
+    },
+    {
+     "blank": 32,
+     "want": "從每天 10 噸的廢棄物轉到解決的辦法，交代是誰想到把廢棄物變成電力",
+     "why": "B 沒有交代是誰想到要把這些廢棄物變成電力，後一句的 `Its biogas generator` 是誰的發電機也就不清楚；B 還說發電機不必用仙人掌，和這一段正要介紹的仙人掌發電方向相反"
+    },
+    {
+     "blank": 33,
+     "want": "一句概括後面兩項好處的主題句，說出仙人掌比哪些作物好",
+     "why": "B 談的是發電機的原料，不是仙人掌和其他生質燃料作物相比好在哪裡"
+    },
+    {
+     "blank": 34,
+     "want": "交代這項計畫目前的規模，後面推廣到其他市場、推廣到全國才有起點",
+     "why": "B 等於說不一定要用仙人掌，和最後一句「仙人掌可能是關鍵」方向相反；蔬果市場有的是蔬果廢料，B 說的動物糞便也和推廣到蔬果市場接不上"
+    }
+   ],
+   "summary": "**這一篇多出來的 B 屬於「主題相同，切面不對」，和 115 學測多出來的 D 同一類。**115 學測全篇問「什麼影響微笑」，D 答的卻是「微笑分幾種」；這一篇談的是仙人掌的外皮怎麼變成能源、有什麼好處，B 談的卻是這種發電機改用別的原料也行。至於 115 學測參考試卷多出來的 C，則屬於「切面對，卻沒有段落在等它」，和這一篇不同。",
+   "extra": [],
+   "takeaway": "四格填完，先用一句話說出全篇在講什麼（這一篇是「仙人掌外皮變成能源的好處和前景」），再看剩下的那一句。B 和某些格共用幾個字（這一篇是 `generator`），談的卻是文章沒有要談的方向，就可以確定它是多出來的。"
+  },
+  "paraLabels": [
+   "破題：仙人掌是墨西哥的國家象徵，用途很多，如今又多了生產再生能源",
+   "問題：仙人掌大量種植，卻只用嫩肉，布滿尖刺的外皮都丟掉",
+   "實例：米爾帕阿爾塔每天大量的廢棄外皮，由一家新創公司拿來發電",
+   "優勢：和其他生質燃料作物相比，不推高糧價，也不占用糧食生產的水和農地",
+   "結尾：試驗計畫目前只在一個農業區，若能推廣，仙人掌可能是墨西哥能源未來的關鍵"
+  ],
+  "marks": [
+   [
+    0,
+    "Now the bright green plant is being put to a new use: producing renewable energy.",
+    "gradient"
+   ],
+   [
+    1,
+    "For years, only its soft, edible flesh was used.",
+    "topic"
+   ],
+   [
+    2,
+    "__32__",
+    "topic"
+   ],
+   [
+    3,
+    "__33__",
+    "topic"
+   ],
+   [
+    4,
+    "__34__",
+    "gradient"
+   ],
+   [
+    0,
+    "Now",
+    "trans"
+   ],
+   [
+    3,
+    "For one thing",
+    "trans"
+   ],
+   [
+    3,
+    "while",
+    "trans"
+   ],
+   [
+    3,
+    "therefore",
+    "trans"
+   ],
+   [
+    3,
+    "also",
+    "trans"
+   ],
+   [
+    3,
+    "As a result",
+    "trans"
+   ],
+   [
+    4,
+    "If",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "The prickly pear cactus is such a powerful symbol in Mexico that it occupies a prime spot on the country’s national flag. The plant was considered sacred by the ancient Aztecs, and modern-day Mexicans eat it, drink it, and even use it in medicines and shampoos. Now the bright green plant is being put to a new use: producing renewable energy.",
+   "Known locally as nopal, the prickly pear is farmed on a massive scale in Mexico. For years, only its soft, edible flesh was used. __31__",
+   "Milpa Alta, a farming district in the south of Mexico City, grows about 200,000 tons of prickly pear a year. Up to 10 tons of it ends up as waste on the floor of the local cactus market every day. __32__ Its biogas generator, set up at the market as a pilot project, turns cactus skins into gas that can be used to make electricity. Vendors there welcome this new way to use skins that once went straight into the trash.",
+   "__33__ For one thing, only the skin of the cactus is used for fuel, while the inner flesh is still eaten. Using the plant as a fuel source will therefore not push up food prices. The cactus also needs very little water, so it can grow on dry land that is unsuited to most food crops. As a result, it does not take water or farmland away from food production.",
+   "__34__ City officials would like to set up similar generators at other produce markets in the capital. If the project can be expanded in this way, the prickly pear could be the key to Mexico’s energy future."
+  ],
+  "zhTranslation": [
+   "仙人掌在墨西哥是極具分量的象徵，甚至在墨西哥國旗上占了顯要的位置。古代阿茲特克人把這種植物視為神聖，現代的墨西哥人會吃仙人掌、喝仙人掌汁，甚至拿它來做藥品和洗髮精。如今，這種鮮綠色的植物又有了新用途：生產再生能源。",
+   "這種仙人掌在當地叫做 nopal，在墨西哥大量種植。多年來，人們只用它柔軟、可以吃的嫩肉。__31__",
+   "米爾帕阿爾塔是墨西哥城南部的農業區，一年生產大約 20 萬噸仙人掌，其中每天多達 10 噸成了廢棄物，丟在當地仙人掌市場的地上。__32__ 它的沼氣發電機，以試驗計畫的方式設在市場裡，把外皮變成可以用來發電的沼氣。以前直接丟進垃圾桶的外皮有了新用途，市場的攤販都很歡迎。",
+   "__33__ 一來，做燃料只用仙人掌的外皮，裡面的嫩肉照樣可以吃，所以拿這種植物當燃料來源，不會推高糧食價格。二來，仙人掌需要的水很少，可以種在大多數糧食作物長不好的乾地上，因此不會占用糧食生產要用的水和農地。",
+   "__34__ 墨西哥城的官員希望在市內其他的蔬果市場，也設置類似的發電機。如果這項計畫能這樣推廣出去，仙人掌可能就是墨西哥能源未來的關鍵。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 110 年學測閱讀測驗〈仙人掌的再生能源應用〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 19,
+   "選項字數區間": "13-16",
+   "選項字數全距": 3,
+   "選項長度變異係數": "9.4%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 g110p1；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-g109p4",
+  "year": "（十四）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "用聲音驅趕鐵軌上的鹿（Sounds That Keep Deer off the Tracks）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "B"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "According to the transport ministry, crashes with deer and other wild animals disrupted train services 613 times in 2016–17.",
+   "B": "The two recordings are played from speakers fitted at the front and back of the train.",
+   "C": "Flashing red lights had little effect, and lion dung sprayed on the tracks was soon washed away by rain.",
+   "D": "In late-night tests, playing the sounds from a moving train cut deer sightings by 45 percent.",
+   "E": "A snort alone puts deer on alert but does not always make them leave the tracks."
+  },
+  "optionsZh": {
+   "A": "根據日本國土交通省的資料，2016 至 2017 年間，火車撞上鹿和其他野生動物，打亂列車營運的情形有 613 次。",
+   "B": "這兩種錄音是從裝在火車前後兩端的喇叭播放出來的。",
+   "C": "閃爍的紅燈沒什麼效果，噴灑在鐵軌上的獅子糞便也很快就被雨水沖掉了。",
+   "D": "在深夜的測試中，從行駛中的火車播放這些聲音，讓看到鹿的次數減少了 45%。",
+   "E": "光是鹿的鼻息聲，只能讓鹿提高警覺，不一定會讓牠們離開鐵軌。"
+  },
+  "unusedExplanation": {
+   "opt": "B",
+   "lead": "B 讀起來很順，也很像正解。它講的是新裝置的兩種錄音從火車前後兩端的喇叭播出來，和第一段的喇叭、第四段的聲音說的是同一件事；放在第 33 格或第 34 格，乍看都像在說明這個裝置。\n\n問題在於：**B 談的確實是新裝置，可是沒有一段需要交代喇叭裝在火車的哪個位置。**所以四個空格都放不下：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "一個說明撞鹿有多常見的數字，主題句的「常見」才有證據，後一句的 `Each time` 也才有一次一次可以數的事件",
+     "why": "B 講的是錄音怎麼播放，和撞鹿的次數無關"
+    },
+    {
+     "blank": 32,
+     "want": "把前一句的「好幾種方法」具體說出來，而且是靠視覺、嗅覺的舊方法，下一段的 `rather than sight or smell` 才有對比的對象",
+     "why": "B 的錄音是聲音，正是下一段才要介紹的新方法"
+    },
+    {
+     "blank": 33,
+     "want": "只用鼻息聲有什麼不足，後一句才有理由再加上狗吠聲",
+     "why": "B 沒有說出任何不足；它說的「兩種錄音」，在狗吠聲還沒加上之前就出現，順序也不對"
+    },
+    {
+     "blank": 34,
+     "want": "一個令人滿意的測試結果，後一句的「受到這個結果鼓舞」才有著落",
+     "why": "B 只說喇叭裝在哪裡，沒有任何成效"
+    }
+   ],
+   "summary": "**這一篇多出來的 B 屬於「切面對，卻沒有段落在等它」，和 115 學測參考試卷多出來的 C 同一類。**B 談的確實是新裝置，內容也沒有錯；可是第一段已經說過火車上裝了喇叭，第四段講的是聲音為什麼對鹿有用，第五段講的是成效和計畫，沒有一段需要交代喇叭裝在火車的哪個位置。至於 115 學測多出來的 D，則屬於「主題相同，切面不對」，和這一篇不同。",
+   "extra": [],
+   "takeaway": "四格填完，先用一句話說出全篇在講什麼（這一篇是「日本怎麼用聲音把鹿趕離鐵軌、效果如何」），再看剩下的那一句。B 和第四、五段談的都是新裝置，可是第四段講聲音為什麼有用，第五段講成效，B 只講喇叭裝在哪裡；四格都代進去試過，每一格都放不下，B 就是多出來的那一句。"
+  },
+  "paraLabels": [
+   "破題：日本在火車上裝喇叭，用狗吠聲和鹿的鼻息聲把鹿趕離鐵軌",
+   "問題：火車撞鹿是日本鐵路常見又嚴重的問題，2016 至 2017 年間撞上鹿和其他野生動物共打亂營運 613 次",
+   "成因與舊方法：鹿為了鐵質舔鐵軌，閃爍的紅燈和獅子糞便都沒能把鹿嚇走",
+   "新方法：改靠聲音，鹿的鼻息聲只讓鹿警覺，再加上狗吠聲才讓鹿逃走",
+   "成效與展望：深夜測試看到鹿的次數少了 45%，接著要設固定裝置，但避開住宅區"
+  ],
+  "marks": [
+   [
+    0,
+    "Researchers in Japan have fitted a train with a speaker that barks like a dog and snorts like a deer.",
+    "thesis"
+   ],
+   [
+    1,
+    "On Japan’s railways, collisions with deer have become a common and serious problem.",
+    "topic"
+   ],
+   [
+    2,
+    "Deer are drawn to railway lines because they need iron in their diets.",
+    "topic"
+   ],
+   [
+    3,
+    "The new device, developed by a team at Japan’s Railway Technical Research Institute (RTRI), relies on sound rather than sight or smell.",
+    "topic"
+   ],
+   [
+    4,
+    "__34__",
+    "topic"
+   ],
+   [
+    3,
+    "rather than",
+    "trans"
+   ],
+   [
+    4,
+    "though",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Researchers in Japan have fitted a train with a speaker that barks like a dog and snorts like a deer. The unusual noises are meant to drive deer away from the tracks before the train can hit them.",
+   "On Japan’s railways, collisions with deer have become a common and serious problem. __31__ Each time, trains were stopped or delayed for at least 30 minutes.",
+   "Deer are drawn to railway lines because they need iron in their diets. They lick the rails to pick up iron filings produced as the wheels grind against the tracks. Over the years, several ways of scaring them off have been tried. __32__",
+   "The new device, developed by a team at Japan’s Railway Technical Research Institute (RTRI), relies on sound rather than sight or smell. According to RTRI researchers, deer repeatedly give short, shrill snorts to warn one another of danger. __33__ The team added the barking of a dog, an animal that deer greatly fear. When deer hear a 3-second snort followed by about 20 seconds of barking, they panic and run away from the tracks.",
+   "__34__ Encouraged by the outcome, RTRI now plans to set up fixed barking devices where deer are often seen. Officials have promised, though, that the noises will not be played in areas where people live beside the tracks."
+  ],
+  "zhTranslation": [
+   "日本的研究人員在一列火車上裝了喇叭，可以發出狗吠聲，也可以發出鹿的鼻息聲。這些不尋常的聲音，是要在火車撞上鹿之前，先把鹿從鐵軌旁趕走。",
+   "在日本的鐵路上，火車撞到鹿已經成了常見又嚴重的問題。__31__ 每一次，列車都停駛或延誤了至少 30 分鐘。",
+   "鹿之所以靠近鐵路，是因為飲食中需要鐵質。車輪和鐵軌摩擦會產生鐵屑，鹿就舔鐵軌來攝取這些鐵屑。這些年來，人們試過好幾種把鹿嚇走的方法。__32__",
+   "這個新裝置是日本鐵道綜合技術研究所（RTRI）的團隊開發的，它靠的是聲音，而不是視覺或嗅覺。RTRI 的研究人員說，鹿會反覆發出短促尖銳的鼻息聲，警告同伴有危險。__33__ 研究團隊又加上了鹿非常害怕的狗吠聲。鹿聽到 3 秒的鼻息聲、接著大約 20 秒的狗吠聲，就會驚慌地逃離鐵軌。",
+   "__34__ 研究所受到這個結果鼓舞，現在打算在鹿常出現的地方設置固定的狗吠裝置。不過，相關人員保證，鐵軌旁有住家的地區不會播放這些聲音。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 109 年學測閱讀測驗〈用聲音驅趕鹿隻〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 17,
+   "選項字數區間": "16-19",
+   "選項字數全距": 3,
+   "選項長度變異係數": "8.5%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 g109p4；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-g105p4",
+  "year": "（十五）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "海蛇怎麼喝到淡水（How Sea Snakes Get Fresh Water）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "A"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "Some sea snakes that stay near the coast can drink from springs and streams.",
+   "B": "The team wanted to find out whether the snakes really became dehydrated at sea.",
+   "C": "The results suggest that the snakes can live with some dehydration between rains.",
+   "D": "Whether a snake chose to drink depended partly on its body condition.",
+   "E": "Snakes on the surface have a brief chance to drink their fill."
+  },
+  "optionsZh": {
+   "A": "有些待在海岸附近的海蛇，可以喝泉水和溪水。",
+   "B": "研究團隊想知道，海蛇在海上是不是真的會脫水。",
+   "C": "研究結果顯示，在兩場雨之間，海蛇能忍受某種程度的脫水。",
+   "D": "海蛇會不會喝水，有一部分取決於牠的身體狀況。",
+   "E": "浮在海面的海蛇，有短暫的機會可以喝個夠。"
+  },
+  "unusedExplanation": {
+   "opt": "A",
+   "lead": "A 讀起來很順：文法正確，內容也有研究根據（例如蘭嶼附近的海蛇，就可能從泉水、溪流取得淡水）。它談的同樣是海蛇怎麼喝到淡水，和全篇同一個主題；句中的 `springs and streams`（泉水和溪水）又和「淡水」「沒東西喝」意思相近，所以放在第 31 格「海面上形成一層淡水」後面，或放在第 32 格「乾季大概沒有東西可以喝」後面，乍讀都好像接得上。\n\n問題在於：**全篇從第二段起，談的都是遠離陸地、只能靠雨水的黃腹海蛇；A 說的卻是待在海岸附近、另有水源的海蛇。**對象和重點都不同，沒有一格需要這樣的一句話。",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "說出黃腹海蛇怎麼利用海面上這層雨水，把本段「雨水是唯一的淡水來源」說完",
+     "why": "A 說的是海岸附近的海蛇喝泉水、溪水，和「雨水是唯一的淡水來源」對不上"
+    },
+    {
+     "blank": 32,
+     "want": "說出研究團隊想查證什麼，第四段的實驗才有目的",
+     "why": "A 沒有提出任何問題，談的也不是研究團隊鎖定的外海黃腹海蛇"
+    },
+    {
+     "blank": 33,
+     "want": "先提出「身體狀況」這個新條件，後一句的胖瘦才有著落",
+     "why": "A 不是研究結果，也沒有提到胖瘦"
+    },
+    {
+     "blank": 34,
+     "want": "歸納研究結果，回答第一段的提問：沒下雨的時候，海蛇靠忍受脫水活下去",
+     "why": "A 沒有下任何結論；後一句說海蛇可能一次脫水長達六、七個月，A 卻說海蛇另有水源，也沒有「忍受脫水」的意思"
+    }
+   ],
+   "summary": "**這一篇多出來的 A 屬於「主題相同，切面不對」，和 115 學測多出來的 D 同一類。**A 和全篇一樣談海蛇怎麼取得淡水，但它的重點是「靠近海岸的海蛇另有水源」；本文的重點卻是「遠離陸地的黃腹海蛇只能靠雨水，沒下雨時只好忍受脫水」。主題一樣、重點不同，就沒有段落需要它。至於 115 學測參考試卷多出來的 C，則屬於「切面對，卻沒有段落在等它」，和這一篇不同。",
+   "extra": [
+    "A 的 `springs and streams` 和第二段的 `fresh water`、第三段的 `nothing to drink` 意思接近，這正是它容易讓人誤選的地方。不過字面相近，不代表放得進去；先問這一段談的是哪一種海蛇、哪一種水源，A 一對照就不合了。"
+   ],
+   "takeaway": "四格填完，先用一句話說出全篇在講什麼（這一篇是「遠洋的黃腹海蛇怎麼度過沒下雨的日子」），再看剩下的那一句。A 主題相同，談的卻是別的對象、別的情況，就算用字很像，也放不進任何一格。"
+  },
+  "paraLabels": [
+   "破題：海蛇的鹽腺應付不了海水，提出牠怎麼活下去的問題",
+   "答案的一部分：雨水是黃腹海蛇唯一的淡水來源",
+   "研究問題：乾季長達六、七個月，海蛇會不會脫水",
+   "研究結果：季節、胖瘦、體內水分三項發現",
+   "結論：海蛇能忍受脫水，長期乾旱卻可能讓牠們越來越少"
+  ],
+  "marks": [
+   [
+    0,
+    "This poses a serious problem when it comes to getting enough water to drink.",
+    "topic"
+   ],
+   [
+    1,
+    "For the yellow-bellied sea snake, which usually spends all of its time far from land, rain is the only source of fresh water.",
+    "topic"
+   ],
+   [
+    2,
+    "__32__",
+    "topic"
+   ],
+   [
+    4,
+    "__34__",
+    "gradient"
+   ],
+   [
+    0,
+    "but",
+    "trans"
+   ],
+   [
+    0,
+    "If",
+    "trans"
+   ],
+   [
+    1,
+    "When",
+    "trans"
+   ],
+   [
+    3,
+    "while",
+    "trans"
+   ],
+   [
+    3,
+    "Finally",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Many marine animals, including penguins and marine iguanas, have evolved special glands to get rid of excess salt. In penguins these glands sit just above the eyes, and marine iguanas sneeze the salt out through their noses. Sea snakes have salt glands too, under their tongues, but these glands cannot handle the massive amounts of salt that would enter their bodies if they actually drank seawater. This poses a serious problem when it comes to getting enough water to drink. If seawater is not an option, how do these snakes survive in the ocean?",
+   "For the yellow-bellied sea snake, which usually spends all of its time far from land, rain is the only source of fresh water. When it rains, a thin layer of fresh water forms on top of the ocean. __31__",
+   "An international team of researchers focused on a population of yellow-bellied sea snakes in the Pacific waters off Costa Rica, where the dry season can last six or seven months. During those dry months, the snakes presumably have nothing to drink. __32__",
+   "The researchers collected more than 500 of the snakes and weighed them. During the dry season, nearly half of the snakes drank the fresh water the team offered them, while almost none did in the wet season. __33__ Thinner, more withered snakes were more likely to drink, and they drank more. Finally, as predicted, snakes captured in the dry season contained significantly less body water than those scooped up in the wet season.",
+   "__34__ The snakes may stay dehydrated for six or seven months at a time. Scientists believe that dehydration at sea, especially during long droughts, may explain why sea snake numbers are falling in some parts of the world."
+  ],
+  "zhTranslation": [
+   "許多海洋動物，例如企鵝和海鬣蜥，都演化出特殊的腺體來排除多餘的鹽分。企鵝的這種腺體長在眼睛上方，海鬣蜥則是靠打噴嚏，把鹽分從鼻孔噴出來。海蛇也有鹽腺，位置在舌頭下方，可是牠如果真的喝下海水，大量的鹽分進入體內，這些腺體就應付不了。這麼一來，要喝到足夠的水就成了一個嚴重的問題。既然不能喝海水，海蛇要怎麼在海洋裡活下去呢？",
+   "黃腹海蛇通常一直待在遠離陸地的海上，對牠來說，雨水是唯一的淡水來源。下雨時，海面上會形成一層薄薄的淡水。__31__",
+   "一個國際研究團隊鎖定哥斯大黎加外海（太平洋）的一群黃腹海蛇，當地的乾季可能長達六、七個月。在這幾個乾旱的月份裡，海蛇大概沒有東西可以喝。__32__",
+   "研究人員捕捉了 500 多條這種海蛇，並替牠們秤重。乾季時，將近一半的海蛇會喝研究團隊提供的淡水；到了雨季，幾乎沒有一條會喝。__33__ 越瘦、越乾癟的海蛇越可能喝水，喝的量也越多。最後，一如預期，乾季捕獲的海蛇體內水分明顯比雨季撈到的少。",
+   "__34__ 海蛇可能一次就脫水長達六、七個月。科學家認為，海上脫水（尤其是在長期乾旱的時候）或許可以解釋世界上某些地區的海蛇為什麼越來越少。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 105 年學測閱讀測驗〈海蛇的飲水策略〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 19,
+   "選項字數區間": "12-14",
+   "選項字數全距": 2,
+   "選項長度變異係數": "6.9%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 g105p4；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-g99p2",
+  "year": "（十六）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "畢業舞會的變遷（How the Prom Has Changed）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "E"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "Since the 1990s, some communities have organized alternative proms for teens with particular needs.",
+   "B": "Whether simple or lavish, proms have always been more or less traumatic for many adolescents.",
+   "C": "High schools hold a prom every year to help students learn proper social behavior.",
+   "D": "For many older Americans, the prom was a modest, home-grown affair in the school gymnasium.",
+   "E": "For some families, paying for one night of fun has become a real burden."
+  },
+  "optionsZh": {
+   "A": "1990 年代以來，有些地方開始舉辦另類舞會，照顧有特定需求的青少年。",
+   "B": "不論簡樸還是奢華，畢業舞會對許多青少年來說，多少一直都是讓人難熬的事情。",
+   "C": "高中每年都會舉辦畢業舞會，幫助學生學會合宜的社交禮儀。",
+   "D": "對許多年紀較大的美國人來說，畢業舞會是在學校體育館裡、由地方自己辦的簡樸活動。",
+   "E": "對有些家庭來說，為一個晚上的玩樂付錢，已經成了不小的負擔。"
+  },
+  "unusedExplanation": {
+   "opt": "E",
+   "lead": "E 讀起來很順，講的也是畢業舞會要花的錢，和第三段後半的大肆消費同一個方向。放在第 33 格，接在加長型禮車、狂歡一整夜後面，乍看非常自然。\n\n問題在於：**這篇文章談的是畢業舞會對青少年的意義和影響，E 談的卻是家庭付不付得起；四格前後沒有一格在談家庭的開銷。**",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "一句說明大人把舞會當成社交技巧的一課以後，學校實際上怎麼做",
+     "why": "E 談的是家庭的花費，和社交技巧無關；而且第二段還沒有提到舞會要花多少錢"
+    },
+    {
+     "blank": 32,
+     "want": "一句總括早年舞會的樣子：簡樸、在學校體育館自己辦，後面的穿著和音樂才有所歸屬",
+     "why": "後面的細節處處在說早年的舞會不鋪張，E 卻說花費已經成了負擔，意思正好相反"
+    },
+    {
+     "blank": 33,
+     "want": "一句同時涵蓋第三段簡樸和奢華兩種舞會，再說出舞會讓青少年難熬",
+     "why": "E 只說到奢華的舞會，而且負擔落在家庭身上；後面談的是青少年擔心形象、找不到舞伴，沒有一句再談錢"
+    },
+    {
+     "blank": 34,
+     "want": "一句說出後面兩個例子屬於哪一類：為特定青少年辦的另類舞會",
+     "why": "E 沒有提到任何一種舞會，後面兩個例子就不知道是什麼的例子"
+    }
+   ],
+   "summary": "**這一篇多出來的 E 屬於「主題相同，切面不對」，和 115 學測多出來的 D 同一類。**115 學測全篇問「什麼影響微笑」，D 答「微笑分幾種」；這一篇談的是畢業舞會對美國青少年的意義，從大人的用意、舞會的演變一路寫到青少年的壓力和另類舞會，E 卻講家庭付不付得起。至於 115 學測參考試卷多出來的 C，則屬於「切面對，卻沒有段落在等它」，和這一篇不同。",
+   "extra": [
+    "E 的 `burden`（負擔）和第四段的「難熬」意思相近，第 33 格的誘答力就在這裡。不過難熬的是參加舞會的青少年，負擔卻落在付錢的家庭身上，兩者並不是同一回事。"
+   ],
+   "takeaway": "四格填完，先用一句話說出全篇在講什麼：這一篇談的是畢業舞會對青少年的意義和影響。再看剩下的那一句：E 談的是家庭付不付得起，主題相同、切面不同，四格前後也沒有一格在談家庭的開銷。多出來的選項不一定是「看起來最不像」的那一句，這一篇的 E 反而讀起來很順。"
+  },
+  "paraLabels": [
+   "破題：畢業舞會是美國青少年第一次正式社交，也是成年禮",
+   "用意：prom 這個字的由來，以及大人為什麼重視舞會",
+   "演變：從體育館裡的簡樸聚會，變成大肆消費的場合",
+   "轉折：不論簡樸或奢華，舞會都讓不少青少年難熬",
+   "回應：另類舞會照顧有特定需求的青少年"
+  ],
+  "marks": [
+   [
+    1,
+    "In the United States, parents and educators have come to regard the prom as an important lesson in social skills.",
+    "topic"
+   ],
+   [
+    2,
+    "__32__",
+    "topic"
+   ],
+   [
+    3,
+    "__33__",
+    "topic"
+   ],
+   [
+    4,
+    "__34__",
+    "topic"
+   ],
+   [
+    0,
+    "also",
+    "trans"
+   ],
+   [
+    2,
+    "By the 1930s",
+    "trans"
+   ],
+   [
+    2,
+    "After the 1960s",
+    "trans"
+   ],
+   [
+    "B",
+    "Whether",
+    "trans"
+   ],
+   [
+    "A",
+    "Since the 1990s",
+    "trans"
+   ],
+   [
+    4,
+    "for example",
+    "trans"
+   ],
+   [
+    4,
+    "also",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "The high school prom is the first formal social event for most American teenagers. It has also been a rite of passage for young Americans for about a century.",
+   "The word “prom” was first used in the 1890s for formal dances at which guests would display their fashions and dancing skills during the evening’s grand march. In the United States, parents and educators have come to regard the prom as an important lesson in social skills. __31__",
+   "The first high school proms were held in the 1920s. By the 1930s, proms had become common across the country. __32__ Prom-goers were well dressed but not fancily dressed up for the occasion: boys wore jackets and ties, and girls their Sunday dresses. Couples danced to music provided by a local amateur band or a record player. After the 1960s, and especially since the 1980s, the prom in many areas has become a serious exercise in excessive consumption, with boys renting expensive tuxedos and girls wearing designer gowns. Stretch limousines are often hired to drive prom-goers to expensive restaurants or discos for an all-night extravaganza.",
+   "__33__ Many of them worry about their self-image and about fitting in with their peers. Prom night can be a dreadful experience for socially awkward teens or for those who fail to find a date.",
+   "__34__ There have been reports, for example, of proms organized by and for homeless youth. There have also been “couple-free” proms, to which all students are welcome."
+  ],
+  "zhTranslation": [
+   "對大多數美國青少年來說，高中畢業舞會是他們第一次參加的正式社交活動。大約一百年來，畢業舞會也一直是美國年輕人的成年禮。",
+   "prom 這個字最早在 1890 年代出現，指的是正式的舞會，賓客會在晚上開場的列隊進場（grand march）中展示自己的服裝和舞技。在美國，家長和教育工作者逐漸把畢業舞會看作學習社交技巧的重要一課。__31__",
+   "美國最早的高中畢業舞會在 1920 年代舉行。到了 1930 年代，畢業舞會已經遍及全國。__32__ 參加舞會的人穿著得體，但不會為了這個場合刻意盛裝打扮：男生穿外套、打領帶，女生穿上做禮拜時穿的洋裝。一對對舞伴隨著當地業餘樂團或唱機播放的音樂跳舞。1960 年代以後，尤其是 1980 年代以來，許多地區的畢業舞會變成了大肆消費的場合，男生租昂貴的晚禮服，女生穿名牌禮服。參加舞會的人還常常租加長型禮車，載他們到高價的餐廳或舞廳，狂歡一整夜。",
+   "__33__ 其中很多人擔心自己的形象，也擔心能不能融入同儕。對不擅社交的青少年，或是找不到舞伴的人來說，畢業舞會那一晚可能是很可怕的經驗。",
+   "__34__ 例如，有報導提到由無家可歸的青少年籌辦、也專為他們舉辦的舞會。另外也有「不需舞伴」的舞會，歡迎所有學生參加。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 99 年學測閱讀測驗〈美國高中畢業舞會的演變與意義〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 18,
+   "選項字數區間": "14-15",
+   "選項字數全距": 1,
+   "選項長度變異係數": "3.4%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 g99p2；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-z108p2",
+  "year": "（十七）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "催眠到底是什麼（What Hypnosis Really Is）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "A"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "People in pain can be taught how to put themselves into a trance.",
+   "B": "Not everyone, it turns out, responds to hypnosis to the same degree.",
+   "C": "According to Spiegel, it is a state of highly focused attention and intense concentration.",
+   "D": "Activity dropped in the part of the brain that fires up when people worry.",
+   "E": "Spiegel relied on self-hypnosis to get through the pain of his recovery."
+  },
+  "optionsZh": {
+   "A": "身體疼痛的人，可以學會怎麼讓自己進入恍惚狀態。",
+   "B": "原來，每個人受催眠影響的程度並不一樣。",
+   "C": "根據 Spiegel 的說法，催眠是一種高度專注、注意力非常集中的狀態。",
+   "D": "人一擔心就會活躍起來的那個腦區，活動下降了。",
+   "E": "Spiegel 靠著替自己催眠，度過復原期間的疼痛。"
+  },
+  "unusedExplanation": {
+   "opt": "A",
+   "lead": "A 讀起來很順，說的是身體疼痛的人可以學會自我催眠，第五段也確實提到，學了自我催眠的人需要的止痛藥只有一半。A 又有 `pain`（疼痛）、`trance`（恍惚狀態）這些全篇一再出現的字，放進第 31 格或第 33 格，乍看都像答案。\n\n問題在於：**講學習自我催眠的是第五段，那一段沒有空格；四個空格要的都不是這件事。**",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "說出 Spiegel 本人不用止痛藥，改用了什麼方法，後一句的 `It worked` 才知道是什麼有效",
+     "why": "A 是一般的說法，沒有說 Spiegel 自己做了什麼；大家感到意外的，是他這一次的結果"
+    },
+    {
+     "blank": 32,
+     "want": "更正「催眠是一種睡眠」的誤解，說出催眠其實是專注的狀態",
+     "why": "A 沒有說催眠是什麼，前一句的誤解就沒有人更正"
+    },
+    {
+     "blank": 33,
+     "want": "從「催眠是有效的工具」轉到「每個人容易被催眠的程度不同」，概括後面兩組人的比較",
+     "why": "A 沒有提到人和人的差別，後面研究團隊比較兩組人，就沒有來由"
+    },
+    {
+     "blank": 34,
+     "want": "把 `some interesting changes` 講具體，而且說得通下一段的減輕焦慮",
+     "why": "學習自我催眠是一種作法，不是大腦掃描看到的變化"
+    }
+   ],
+   "summary": "**這一篇多出來的 A 屬於「切面對，卻沒有段落在等它」，和 115 學測參考試卷多出來的 C 同一類。**A 說的事情第五段確實談到，可是第五段沒有空格；第一段的空格要的是 Spiegel 本人的作法，第三段的空格要的是人和人的差別，A 的重點和這兩格都不一樣。至於 115 學測多出來的 D，則屬於「主題相同，切面不對」，和這一篇不同，也比這一篇好認。",
+   "extra": [],
+   "takeaway": "選項裡出現和空格前後相同的字（像這一篇的 `pain`、`trance`），先別急著填。先遮住選項，想想那個位置需要一句什麼樣的話，再看選項說的是不是那件事。"
+  },
+  "paraLabels": [
+   "開場：用一則親身經歷引出催眠",
+   "定義：先點出常見的誤解，再說明催眠是高度專注的狀態",
+   "差異：不是每個人都一樣容易被催眠",
+   "研究：大腦掃描看到的變化",
+   "應用：從研究結果到取代止痛藥的期望"
+  ],
+  "marks": [
+   [
+    1,
+    "__32__",
+    "topic"
+   ],
+   [
+    2,
+    "__33__",
+    "topic"
+   ],
+   [
+    4,
+    "Spiegel hopes that the practice can be used to replace painkillers.",
+    "topic"
+   ],
+   [
+    4,
+    "However",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "When Dr. David Spiegel emerged from a three-hour shoulder surgery in 1972, he did not use any pain medication to recover. __31__ It worked—to the surprise of everyone but Spiegel himself, who has studied hypnosis for 45 years.",
+   "Hypnosis is often misunderstood as a kind of sleep in which a person does whatever he or she is told to do. __32__ When hypnotized, you tune out most of the stimuli around you. You focus intently on the subject at hand, to the near exclusion of any other thought. This trance-like state can be an effective tool to control pain, ease anxiety, and deal with stress.",
+   "__33__ In a recent study, Spiegel and his colleagues found that people who are easily hypnotized tend to be more trusting of others, more intuitive, and more likely to get caught up in a good movie. The research team compared people who were highly hypnotizable with those low in hypnotizability.",
+   "Both groups were given fMRI scans under several different conditions: at rest, while recalling a memory, and during two sessions of hypnosis. The researchers saw some interesting changes in the brain during hypnosis—but only in the highly hypnotizable group. __34__",
+   "This helps explain how hypnosis can have powerful effects, including reducing stress, anxiety, pain, and self-consciousness. Spiegel hopes that the practice can be used to replace painkillers. His own earlier research has shown that when people in pain were taught self-hypnosis, they needed half as much pain medication and suffered half as much pain as those who were only given painkillers. However, more needs to be learned about hypnosis before its full potential can be harnessed."
+  ],
+  "zhTranslation": [
+   "1972 年，David Spiegel 醫師動完三個小時的肩部手術，復原期間沒有用任何止痛藥。__31__ 結果真的有效。除了研究催眠已經 45 年的 Spiegel 本人，大家都很驚訝。",
+   "很多人誤以為催眠是一種睡眠，人在這種狀態下，別人叫他做什麼，他就做什麼。__32__ 處在催眠狀態時，你會把周遭大部分的刺激都摒除在外。你會全神貫注在眼前的事情上，幾乎不去想任何別的事情。這種恍惚般的狀態，可以是控制疼痛、緩解焦慮、應付壓力的有效工具。",
+   "__33__ Spiegel 和同事在最近一項研究中發現，容易被催眠的人往往比較信任別人，比較依賴直覺，看到一部好電影，也比較容易沉浸其中。研究團隊把很容易催眠的人和不容易催眠的人拿來做比較。",
+   "兩組人都在幾種不同的情況下接受功能性磁振造影（fMRI）掃描：休息時、回想一段記憶時，以及兩次催眠過程中。研究人員看到大腦在催眠時出現一些有趣的變化，但只出現在很容易催眠的那一組。__34__",
+   "這有助於解釋催眠為什麼能有強大的效果，包括減輕壓力、焦慮、疼痛，以及在意別人眼光的不自在。Spiegel 希望催眠可以用來取代止痛藥。他自己先前的研究顯示，身體疼痛的人學了自我催眠以後，和只拿到止痛藥的人相比，需要的止痛藥只有一半，感受到的疼痛也只有一半。不過，我們對催眠還需要更多了解，才能充分發揮它的潛力。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 108 年指考閱讀測驗〈催眠的科學與應用〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 18,
+   "選項字數區間": "12-14",
+   "選項字數全距": 2,
+   "選項長度變異係數": "6.9%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 z108p2；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-z107p1",
+  "year": "（十八）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "自行車的始祖（The Ancestor of the Bicycle）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "D"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "Drais wanted his invention to give ordinary people an affordable way to get around.",
+   "B": "Though not a modern bike, the machine already had two features that bicycles still have today.",
+   "C": "In just two years, Drais’s machine had gone from a local curiosity to an international craze.",
+   "D": "Among his other creations were two human-powered vehicles that ran on four wheels instead of two.",
+   "E": "Drais’s idea of a two-wheeled machine lived on long after the craze had ended."
+  },
+  "optionsZh": {
+   "A": "Drais 希望他的發明能讓一般人有一種負擔得起的代步方式。",
+   "B": "滑行車雖然不是現代的自行車，卻已經有兩個到今天自行車都還有的特點。",
+   "C": "短短兩年內，Drais 的車就從地方上的新奇玩意，變成了各國風行的熱潮。",
+   "D": "他的其他發明當中，有兩種靠人力推動的車，用的是四個輪子，而不是兩個。",
+   "E": "熱潮退去很久以後，Drais 兩輪車的構想仍然留了下來。"
+  },
+  "unusedExplanation": {
+   "opt": "D",
+   "lead": "D 讀起來很順，講的也是 Drais 造的車，改編前的指考原文也確實提過這兩種四輪車。它的 `human-powered vehicles`（靠人力推動的車）看起來正好可以取代第三段的馬，`two`、`wheels` 又和第二段的兩個輪子字面相近。\n\n問題在於：**全篇講的是滑行車怎麼成為自行車的始祖，D 講的卻是 Drais 另外造的四輪車；四個空格都放不下它。**",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "一句先承認滑行車很簡陋，再預告它已經有現代自行車的特點，後面兩句說的「輪子前後排列」「用把手控制方向」才有所歸屬",
+     "why": "D 講的是另外兩種四輪車，後一句卻說這是第一輛兩個輪子前後排列的車，兩句說的不是同一輛車；D 也沒有把前面的簡陋和後面的特點連起來"
+    },
+    {
+     "blank": 32,
+     "want": "一句說出 Drais 發明這種車的用意，也就是讓一般人有負擔得起的代步工具，後面的「馬很貴」「兩輪車可以取代馬」才有方向",
+     "why": "D 只是再列一項發明，沒有說出任何用意；再下一句說的是兩輪車，D 的車卻有四個輪子"
+    },
+    {
+     "blank": 33,
+     "want": "一句總括前面德國、巴黎、英國的例子，把成功講到最高點，下一段的 `The success ... was short-lived` 才有東西可以轉折",
+     "why": "D 和流行、熱潮都沒有關係，前面的例子也就沒有得到總括"
+    },
+    {
+     "blank": 34,
+     "want": "一句說明遭到禁止以後，滑行車的構想並沒有就此消失，後一句法國人裝上踏板才接得上",
+     "why": "D 沒有交代禁止以後的事情，四輪車也接不上後人替兩輪的滑行車裝上踏板"
+    }
+   ],
+   "summary": "**這一篇多出來的 D 屬於「主題相同，切面不對」，和 115 學測多出來的 D 同一類。**全篇講的是「滑行車怎麼成為自行車的始祖」，D 講的卻是「Drais 還造過哪些車」。D 真正放得進去的地方，是第一段列舉各項發明的那一句，可是第一段沒有空格。至於 115 學測參考試卷多出來的 C，則屬於「切面對，卻沒有段落在等它」，和這一篇不同。",
+   "extra": [],
+   "takeaway": "四格填完，先用一句話說出全篇在講什麼：這一篇講的是滑行車怎麼成為自行車的始祖。再看剩下的那一句：D 講的是同一個人，卻是另一件事（Drais 還造過哪些車），所以它是多出來的。"
+  },
+  "paraLabels": [
+   "破題：多產的發明家，靠滑行車成名",
+   "構造：很簡陋，卻已經有現代自行車的兩個特點",
+   "用意：取代昂貴的馬，讓一般人有負擔得起的代步工具",
+   "成功：從德國的試騎到巴黎、英國，兩年內風行各國",
+   "轉折與結尾：熱潮退去，構想由後人接續"
+  ],
+  "marks": [
+   [
+    0,
+    "But it was the running machine, the ancestor of the modern bicycle, that made him famous.",
+    "thesis"
+   ],
+   [
+    1,
+    "The running machine, also known as the Draisine or the hobby horse, was a very primitive bicycle.",
+    "topic"
+   ],
+   [
+    2,
+    "__32__",
+    "topic"
+   ],
+   [
+    4,
+    "The success of the hobby horse was short-lived, though.",
+    "topic"
+   ],
+   [
+    0,
+    "But",
+    "trans"
+   ],
+   [
+    "B",
+    "Though",
+    "trans"
+   ],
+   [
+    3,
+    "The next year",
+    "trans"
+   ],
+   [
+    "C",
+    "In just two years",
+    "trans"
+   ],
+   [
+    4,
+    "though",
+    "trans"
+   ],
+   [
+    4,
+    "too",
+    "trans",
+    "issue, ",
+    ", because"
+   ],
+   [
+    4,
+    "Decades later",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Born in 1785 in southwestern Germany, Baron Karl Drais was one of the most creative German inventors of the 19th century. The baron’s numerous inventions include an early keyboard typewriter, the meat grinder, and a device to record piano music on paper. But it was the running machine, the ancestor of the modern bicycle, that made him famous.",
+   "The running machine, also known as the Draisine or the hobby horse, was a very primitive bicycle. With no chain or pedals, it moved only when riders pushed off the ground with their feet. The frame and wheels were made of wood. __31__ It was the first vehicle with two wheels placed one behind the other. Riders also steered it with a bar much like a modern handlebar.",
+   "__32__ Horses cost a lot to buy, and they had to be fed even when they were not being used. A muscle-powered two-wheeler, he believed, could replace them and let large numbers of people travel faster than on foot.",
+   "Drais made his first recorded ride on June 12, 1817, covering 13 kilometers in about an hour. The same trip usually took a horse-drawn mail coach four hours. The next year, Drais introduced the machine in Paris, where it quickly caught on. Riders in Britain were soon racing on their own copies of it. __33__",
+   "The success of the hobby horse was short-lived, though. The machines were heavy and difficult to ride. Safety was an issue, too, because riders often sped along the sidewalks. Collisions with unsuspecting pedestrians were frequent, and within a few years many European and American cities had banned the machine. __34__ Decades later, in the 1860s, French inventors added pedals to the front wheel and took a big step toward the modern bicycle."
+  ],
+  "zhTranslation": [
+   "Karl Drais 男爵 1785 年生於德國西南部，是 19 世紀德國最有創意的發明家之一。這位男爵的發明很多，包括早期一種有鍵盤的打字機、絞肉機，還有一種能把鋼琴音樂記錄在紙上的裝置。不過，讓他成名的是現代自行車的始祖：滑行車（running machine）。",
+   "滑行車又叫 Draisine 或 hobby horse，是一種非常原始的自行車。它沒有鏈條，也沒有踏板，騎的人要用雙腳蹬地，車子才會前進。車架和輪子都是木頭做的。__31__ 它是第一輛把兩個輪子前後排成一直線的車。騎的人也用一根很像現代把手的橫桿來控制方向。",
+   "__32__ 馬買起來很貴，就算沒在用，也還是得餵。他相信，一輛靠人力推動的兩輪車可以取代馬，讓許多人移動得比走路還快。",
+   "1817 年 6 月 12 日，Drais 第一次有紀錄的試騎，大約一個小時就騎了 13 公里；同樣的路程，馬拉的郵務馬車通常要走四個小時。第二年，Drais 的滑行車在巴黎公開亮相，很快就在當地流行起來。不久，英國也有人騎著自己仿製的滑行車比賽。__33__",
+   "不過，滑行車的成功並不長久。這種車很重，也不好騎。安全也是問題，因為騎的人常在人行道上飛快騎過。滑行車常常撞上沒有防備的行人，幾年之內，歐洲和美國的許多城市都禁止使用這種車。__34__ 數十年後，到了 1860 年代，法國的發明家替滑行車的前輪裝上踏板，朝現代的自行車邁進了一大步。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 107 年指考閱讀測驗〈德萊斯的滑行車與自行車的起源〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 23,
+   "選項字數區間": "14-16",
+   "選項字數全距": 2,
+   "選項長度變異係數": "6.4%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 z107p1；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-z106p4",
+  "year": "（十九）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "國歌曲調的歐洲根源（The European Roots of National Anthems）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "D"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "Anthems in Myanmar and Sri Lanka are closer to folk music, relying more on local instruments.",
+   "B": "As nationalism spread through Europe in the 18th and 19th centuries, so did national anthems.",
+   "C": "About ten years later, the emperor’s court musicians replaced the first version with their own melody.",
+   "D": "A few countries, such as Spain, have national anthems with no official words at all.",
+   "E": "With the growth of empires, Europeans carried their musical taste to distant parts of the world."
+  },
+  "optionsZh": {
+   "A": "緬甸和斯里蘭卡的國歌比較接近民謠，用的多半是本土的樂器。",
+   "B": "18、19 世紀，民族主義在歐洲各地擴散，國歌也跟著傳開了。",
+   "C": "大約十年後，天皇的宮廷樂師用自己譜寫的旋律，取代了最初那個版本。",
+   "D": "少數國家，例如西班牙，國歌完全沒有正式的歌詞。",
+   "E": "隨著帝國擴張，歐洲人把自己的音樂品味帶到了世界上遙遠的地方。"
+  },
+  "unusedExplanation": {
+   "opt": "D",
+   "lead": "D 讀起來很順，講的也是國歌，而且西班牙的國歌確實沒有正式的歌詞，和文章的事實並不衝突。\n\n問題在於：**這一篇談的是國歌的「音樂」怎麼從歐洲傳到世界各地，D 談的卻是「歌詞」；四個空格前後要的東西，D 都給不了。**",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "一句交代國歌怎麼從最早的兩首，普及到歐洲各國",
+     "why": "D 講的是少數國家，談的又是歌詞，後一句的 `Many states`（許多邦國）接在它後面說不通"
+    },
+    {
+     "blank": 32,
+     "want": "一句把歐洲的國歌風格帶到海外，後一句的「前殖民地」「以前的統治者」才有來源",
+     "why": "D 雖然和前一句一樣提到西班牙，卻沒有帝國，也沒有殖民地"
+    },
+    {
+     "blank": 33,
+     "want": "Bristow 兩種少見類型裡的第二種",
+     "why": "Bristow 分的是音樂風格，D 講的是有沒有歌詞；而且第二段已經說過，西班牙選的是進行曲"
+    },
+    {
+     "blank": 34,
+     "want": "一句說日本把英國人 Fenton 寫的曲子換成日本人寫的旋律，段末「日本作曲家寫的旋律」才說得通",
+     "why": "D 和日本無關，也沒有交代旋律換成日本人寫的"
+    }
+   ],
+   "summary": "**這一篇多出來的 D 屬於「主題相同，切面不對」，和 115 學測多出來的 D 同一類。**全篇談的是國歌的音樂怎麼從歐洲傳到世界，D 談的是國歌的歌詞，主題一樣，切面卻不同。D 的 `Spain` 和第二段最後一句的 Spain 是同一個字，「少數國家」又像是一種少見的類型，所以放進第 32 格或第 33 格乍看說得通；可是讀懂那一段在講什麼，就排除得掉。至於 115 學測參考試卷多出來的 C，則屬於「切面對，卻沒有段落在等它」，和這一篇不同。",
+   "extra": [],
+   "takeaway": "四格填完，先用一句話說出全篇在講什麼：這一篇談的是國歌的音樂怎麼從歐洲傳到世界各地。再看剩下的那一句：D 談的是國歌的歌詞，主題相同、切面不同，所以它是多出來的。不要先挑「看起來最不像」的那一句。"
+  },
+  "paraLabels": [
+   "破題：國家獨立後最先確立的事情之一，就是國歌",
+   "起源：國歌在歐洲興起，分成聖歌與進行曲兩種",
+   "傳播：歐洲的國歌風格隨著帝國傳到世界各地",
+   "例外：聖歌與進行曲之外，兩種比較少見的類型",
+   "實例：聽起來很傳統的日本國歌，也受到歐洲影響"
+  ],
+  "marks": [
+   [
+    2,
+    "__32__",
+    "topic"
+   ],
+   [
+    2,
+    "As a result, most anthems today are either hymns or marches played on European instruments.",
+    "thesis"
+   ],
+   [
+    3,
+    "In addition to hymns and marches, British composer Michael Bristow identifies two less common types.",
+    "topic"
+   ],
+   [
+    4,
+    "Even an anthem that sounds traditional may owe a great deal to Europe, and Japan’s is a good example.",
+    "topic"
+   ],
+   [
+    1,
+    "Others",
+    "trans"
+   ],
+   [
+    2,
+    "Even after",
+    "trans"
+   ],
+   [
+    2,
+    "As a result",
+    "trans"
+   ],
+   [
+    3,
+    "In addition to",
+    "trans"
+   ],
+   [
+    4,
+    "Yet",
+    "trans"
+   ],
+   [
+    4,
+    "therefore",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Over the past three hundred years, a national anthem has been one of the first things a country establishes when it gains its freedom or independence. Anthems are generally performed at formal state occasions and at other events that celebrate the nation’s identity.",
+   "The Dutch song “Het Wilhelmus,” written in the 16th century, is often called the world’s oldest national anthem. Next came Britain’s “God Save the King,” a hymn that became popular in the 1740s. __31__ Many states, such as those that are now part of Germany, took the British hymn as their model. Others, notably Spain and France, chose marches, songs with a strong beat often played by military bands.",
+   "__32__ Even after former colonies gained independence, they often kept the traditions of their old rulers. As a result, most anthems today are either hymns or marches played on European instruments.",
+   "In addition to hymns and marches, British composer Michael Bristow identifies two less common types. National anthems in South and Central America are often operatic, with long, elaborate orchestral introductions. Italian opera of the 19th century shaped this style. __33__",
+   "Even an anthem that sounds traditional may owe a great deal to Europe, and Japan’s is a good example. In 1869, John William Fenton, a British bandmaster living in Japan, noticed that the country had no national anthem. A Japanese military officer, Ōyama Iwao, chose the words from a classic Japanese poem, and Fenton set them to music. __34__ Yet it was a German musician, Franz Eckert, who gave the new tune Western harmony. The anthem Japan sings today therefore combines a tune by Japanese composers with European harmony."
+  ],
+  "zhTranslation": [
+   "過去三百年來，一個國家取得自由或獨立的時候，最先確立的事情之一，往往就是國歌。國歌通常在國家的正式場合演奏，也會出現在其他慶祝國家認同的活動上。",
+   "荷蘭的〈威廉頌〉（Het Wilhelmus）寫於 16 世紀，常被稱為世界上最古老的國歌。接著是英國的〈天佑吾王〉（God Save the King），這是一首聖歌，在 1740 年代開始流行。__31__ 許多邦國，例如今天屬於德國的那些邦國，都以這首英國聖歌為範本。其他國家，特別是西班牙和法國，則選了進行曲，也就是節奏強烈、常由軍樂隊演奏的歌。",
+   "__32__ 前殖民地即使獨立了，也常常保留以前統治者的傳統。因此，今天大多數的國歌不是聖歌就是進行曲，而且用歐洲的樂器演奏。",
+   "除了聖歌和進行曲，英國作曲家 Michael Bristow 還歸納出兩種比較少見的類型。中南美洲的國歌常常帶有歌劇風格，前面有很長、很繁複的管弦樂前奏。這種風格受到 19 世紀義大利歌劇的影響。__33__",
+   "即使是聽起來很傳統的國歌，也可能深受歐洲影響，日本的國歌就是一個好例子。1869 年，住在日本的英國軍樂隊隊長 John William Fenton 注意到，這個國家沒有國歌。日本軍官大山巖（Ōyama Iwao）從一首日本古典詩歌選出歌詞，再由 Fenton 譜曲。__34__ 不過，替這首新曲子配上西式和聲的，卻是德國音樂家 Franz Eckert。因此，日本今天唱的國歌，是日本作曲家寫的旋律，配上歐洲的和聲。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 106 年指考閱讀測驗〈國歌的歷史演變與文化影響〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 20,
+   "選項字數區間": "15-16",
+   "選項字數全距": 1,
+   "選項長度變異係數": "3.1%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 z106p4；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-z97p1",
+  "year": "（二十）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "樂高積木的五十年（Fifty Years of Lego Bricks）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "C"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "The new design let children build almost anything and then start over with the same bricks.",
+   "B": "For a while, the company’s move into plastic toys looked like a costly mistake.",
+   "C": "Years later, he learned that the word Lego also means “I gather” in Latin.",
+   "D": "With few customers during the Great Depression, he began making piggy banks and little wooden cars.",
+   "E": "As junior managing director, he set out to make the bricks hold together better."
+  },
+  "optionsZh": {
+   "A": "新的設計讓孩子幾乎什麼都能拼，拼完還能用同一批積木從頭再來。",
+   "B": "有一段時間，公司跨足塑膠玩具這一步，看起來像是一個代價很高的錯誤。",
+   "C": "幾年以後，他才知道 Lego 這個字在拉丁文裡也有「我收集」的意思。",
+   "D": "經濟大蕭條期間客人很少，他開始做小豬撲滿和木頭小汽車。",
+   "E": "身為副總經理，他著手讓積木拼起來更牢固。"
+  },
+  "unusedExplanation": {
+   "opt": "C",
+   "lead": "C 讀起來很順，講的也是樂高；Lego 在拉丁文裡碰巧有「我收集」的意思，這件事也是真的。放進第 34 格，`I gather`（我收集）乍看和把積木拼在一起有關，很容易選下去。\n\n問題在於：**全篇講的是樂高積木怎麼從挫折走到成功、為什麼一直受歡迎，C 講的卻是名字在拉丁文裡的巧合；四個空格都放不下它。**",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "一句說這位木匠怎麼開始做玩具的話，後一句「決定把玩具當成主要事業」才有前提",
+     "why": "C 講的是名字，可是 Lego 這個名字要到這一段最後一句才出現，後一句的 `them` 也沒有東西可以指"
+    },
+    {
+     "blank": 32,
+     "want": "一句把第二段的挫折總結成一個判斷的話，第三段「看出巨大的潛力」才有相反的看法可以對照",
+     "why": "C 和賣不好、被退貨都沒有關係，第三段的轉折也就沒有對照的對象"
+    },
+    {
+     "blank": 33,
+     "want": "Godtfred 從想法到成果之間做了什麼，後一句的「終於研發完成」才說得通",
+     "why": "C 講名字的意思，沒有人在改良積木"
+    },
+    {
+     "blank": 34,
+     "want": "一句概括「城堡改拼成船、新舊積木接得起來」這些例子的主題句",
+     "why": "C 講的是拉丁文的意思，後面的例子並不是在說明它"
+    }
+   ],
+   "summary": "**這一篇多出來的 C 屬於「主題相同，切面不對」，和 115 學測多出來的 D 同一類。**全篇講的是樂高積木怎麼從挫折走到成功、五十年來為什麼一直受歡迎，C 講的卻是 Lego 這個名字在拉丁文裡的巧合：話題沒有離開樂高，談的卻是另一個切面。至於 115 學測參考試卷多出來的 C，則屬於「切面對，卻沒有段落在等它」，和這一篇不同。",
+   "extra": [],
+   "takeaway": "四格填完，先用一句話說出全篇在講什麼：這一篇講的是樂高積木怎麼從挫折走到成功、為什麼一直受歡迎。再看剩下的那一句：C 談的是名字在拉丁文裡的巧合，是另一個切面，所以它是多出來的，不必回頭懷疑前面的答案。"
+  },
+  "paraLabels": [
+   "起源：木匠在經濟大蕭條時改做木頭玩具，取名 Lego",
+   "挫折：1947 年改做塑膠玩具，市場不看好",
+   "轉機：Godtfred 改良積木，1958 年研發出互扣式設計",
+   "成果：同一批積木可以一拼再拼，樂高賣到全世界",
+   "結尾：五十年來積木幾乎沒變，所以一直受歡迎"
+  ],
+  "marks": [
+   [
+    0,
+    "The Lego Group had a very humble beginning in the workshop of Ole Kirk Christiansen, a carpenter from Denmark.",
+    "topic"
+   ],
+   [
+    1,
+    "In 1947, the company expanded into making plastic toys, and it soon began producing early versions of its building bricks.",
+    "topic"
+   ],
+   [
+    2,
+    "However, Christiansen’s son, Godtfred Kirk Christiansen, saw immense potential in the plastic bricks.",
+    "topic"
+   ],
+   [
+    3,
+    "__34__",
+    "topic"
+   ],
+   [
+    4,
+    "Over those fifty years, the brick itself had hardly changed.",
+    "topic"
+   ],
+   [
+    0,
+    "A few years later",
+    "trans"
+   ],
+   [
+    1,
+    "In 1947",
+    "trans"
+   ],
+   [
+    1,
+    "At first",
+    "trans"
+   ],
+   [
+    "B",
+    "For a while",
+    "trans"
+   ],
+   [
+    2,
+    "However",
+    "trans"
+   ],
+   [
+    2,
+    "In 1958",
+    "trans"
+   ],
+   [
+    3,
+    "By 2008",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "The Lego Group had a very humble beginning in the workshop of Ole Kirk Christiansen, a carpenter from Denmark. __31__ Local families liked them so much that he decided to make toys his main business. A few years later, he named the company Lego, from the Danish words leg godt, which mean “play well.”",
+   "In 1947, the company expanded into making plastic toys, and it soon began producing early versions of its building bricks. At first, retailers and customers did not think highly of them, since most people preferred toys made of wood or metal. Many of the company’s shipments were returned after poor sales. __32__",
+   "However, Christiansen’s son, Godtfred Kirk Christiansen, saw immense potential in the plastic bricks. He believed they could become a system for creative play. __33__ In 1958, the modern interlocking brick design was finally developed and patented. Small tubes underneath each brick now gripped the one below, so a model stayed in one piece until a child pulled it apart.",
+   "__34__ A castle could be taken apart and turned into a ship, and pieces from a new set fit the ones a child already had. By 2008, Lego was sold in more than 130 countries, and about seven Lego sets were sold every second.",
+   "Fans around the world celebrated the brick’s 50th anniversary that year. Over those fifty years, the brick itself had hardly changed. A brick made in 1958 still fits one made today, and that is probably why the toy has never fallen out of favor."
+  ],
+  "zhTranslation": [
+   "樂高集團的起步非常簡陋，就在丹麥木匠 Ole Kirk Christiansen 的工作坊裡。__31__ 當地的家庭非常喜歡這些玩具，所以他決定把做玩具當成主要事業。幾年後，他替公司取名 Lego，名字來自丹麥文的 leg godt，意思是「好好地玩」。",
+   "1947 年，公司擴大經營，開始做塑膠玩具，不久也開始生產早期的組合積木。起初，零售商和顧客都不太看好這些塑膠製品，因為大多數人比較喜歡木頭或金屬做的玩具。公司出的很多貨因為賣不好，都被退了回來。__32__",
+   "不過，Christiansen 的兒子 Godtfred Kirk Christiansen 看出這些塑膠積木有巨大的潛力。他相信這些積木可以變成一套激發創意的遊戲系統。__33__ 1958 年，現代的互扣式積木設計終於研發完成，也取得了專利。每塊積木底下的小管子會緊緊扣住下面那一塊，所以拼好的模型不會散開，要等孩子自己動手拆。",
+   "__34__ 一座城堡可以拆掉改拼成一艘船，新買的一盒積木也能和孩子原本的積木接在一起。到了 2008 年，樂高已經在超過 130 個國家銷售，每秒大約賣出七盒。",
+   "那一年，世界各地的樂高迷慶祝這種積木問世 50 週年。這五十年來，積木本身幾乎沒有改變。1958 年做的積木，到今天仍然可以和新做的積木接在一起，這大概就是這種玩具從來沒有退流行的原因。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 97 年指考閱讀測驗〈樂高積木的歷史與演變〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 19,
+   "選項字數區間": "14-16",
+   "選項字數全距": 2,
+   "選項長度變異係數": "6.6%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 z97p1；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-g110tp1",
+  "year": "（二十一）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "島上哺乳類的體型變化（How Island Mammals Change Size）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "A"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "On islands with few predators, many animals lose their natural fear of large animals, including humans.",
+   "B": "Over the centuries, they gradually shrank to one-sixth of the body weight they once had.",
+   "C": "On smaller islands with limited food and few other species, big mammals shrink much more.",
+   "D": "Why big mammals shrink has to do with how useful a large body is in different places.",
+   "E": "Large species like deer and elephants tend to shrink, while rodents such as rats often grow larger."
+  },
+  "optionsZh": {
+   "A": "在掠食者少的島上，許多動物失去了對大型動物天生的戒心，連人類也不怕。",
+   "B": "幾百年下來，牠們逐漸縮小到只剩原本體重的六分之一。",
+   "C": "在食物有限、其他物種又少的較小島嶼上，大型哺乳類縮小的幅度就大得多。",
+   "D": "大型哺乳類為什麼會縮小，和大體型在不同的地方有多少用處有關。",
+   "E": "鹿和大象這類大型物種往往會縮小，老鼠之類的齧齒類則往往會變大。"
+  },
+  "unusedExplanation": {
+   "opt": "A",
+   "lead": "A 講的也是島嶼對動物的影響：`few predators`（掠食者少）和第三段的 `few natural predators`（天敵少）說的是同一件事，第一段也說島嶼深深影響 `their inhabitants`（島上的生物）。可是全篇講的是**島上哺乳類的體型怎麼改變**，A 講的卻是**島上動物的行為：不再害怕大型動物**。把 A 放進四個空格，每一格都放不下：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "一句具體說出哪些動物變小、哪些動物變大的話，後一句的 `This pattern` 才有一個體型變化的模式可以指",
+     "why": "A 和主題句講的體型無關，`This pattern` 找不到體型變化的模式可以指"
+    },
+    {
+     "blank": 32,
+     "want": "一句主題句，把話題從第二段的現象轉到原因，並點出後面要比較體型大在不同環境裡有沒有用",
+     "why": "A 談的是動物怕不怕大型動物，後面三句卻都在講體型大有沒有用"
+    },
+    {
+     "blank": 33,
+     "want": "一句說出另一種島，在那裡大型哺乳類縮小得很多，和前一句「動物種類多的島」對比",
+     "why": "A 雖然也說到一種島（掠食者少的島），卻沒有提到縮小，主題句說的「要看是什麼樣的島」還是只說了一邊"
+    },
+    {
+     "blank": 34,
+     "want": "一句說出這群紅鹿縮小到什麼程度，後一句的 `The whole process` 才有過程可以指",
+     "why": "A 沒有提到鹿，也沒有提到縮小，回答不了第一句的 `how far`"
+    }
+   ],
+   "summary": "**全篇講的是「島上的大型哺乳類為什麼縮小、縮小多少」，A 講的卻是「島上的動物不再害怕大型動物」。**這一篇多出來的 A 屬於「主題相同，切面不對」，和 115 學測多出來的 D 同一類。至於 115 學測參考試卷多出來的 C，則屬於「切面對，卻沒有段落在等它」，和這一篇不同。",
+   "extra": [],
+   "takeaway": "四格都填完、剩下一個選項時，先用一句話說出全篇在講什麼（這一篇是島上大型哺乳類的體型變化），再看剩下的那一句。它就算和某一格前後共用字詞（例如 `predators`），只要談的是另一個切面，就是多出來的。"
+  },
+  "paraLabels": [
+   "破題：島嶼的面積與隔絕，深深影響島上的生物",
+   "現象：島上哺乳類體型改變的模式，稱為福斯特法則",
+   "原因：大體型在大陸上有用，到了島上反而成為負擔",
+   "進一步：大型哺乳類縮小多少，要看是什麼樣的島",
+   "實例：澤西島的紅鹿縮小的幅度與速度"
+  ],
+  "marks": [
+   [
+    0,
+    "The size and isolation of islands have a profound effect on island ecosystems and their inhabitants.",
+    "gradient"
+   ],
+   [
+    1,
+    "Scientists who study species evolution have found that mammals that settle on islands often end up a very different size from their relatives on the mainland.",
+    "topic"
+   ],
+   [
+    2,
+    "__32__",
+    "topic"
+   ],
+   [
+    3,
+    "A study of fossil elephants from islands around the world suggests that how much big mammals shrink depends on the kind of island they live on.",
+    "topic"
+   ],
+   [
+    4,
+    "Red deer on Jersey, one of the Channel Islands about 14 miles off the coast of France, show how far and how fast big mammals can shrink.",
+    "topic"
+   ],
+   [
+    "E",
+    "while",
+    "trans"
+   ],
+   [
+    1,
+    "Although",
+    "trans"
+   ],
+   [
+    2,
+    "In fact",
+    "trans"
+   ],
+   [
+    2,
+    "since",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Islands are quite different from continents and other mainland areas. The size and isolation of islands have a profound effect on island ecosystems and their inhabitants.",
+   "Scientists who study species evolution have found that mammals that settle on islands often end up a very different size from their relatives on the mainland. __31__ This pattern, first described by J. Bristol Foster in 1964, is known as Foster’s rule, or the island effect. Although there are a number of exceptions, the trend generally holds true for both fossil species and mammals living on islands today.",
+   "__32__ In a mainland environment, being large is often a safer and more adaptive way for an animal to avoid predators. On an island, with few natural predators and less competition, being large is no longer an advantage. In fact, great size can become a burden, since a huge animal needs far more food to survive and reproduce.",
+   "A study of fossil elephants from islands around the world suggests that how much big mammals shrink depends on the kind of island they live on. On balanced islands with many kinds of animals, competition with other large plant-eaters often keeps big mammals from shrinking very much. __33__",
+   "Red deer on Jersey, one of the Channel Islands about 14 miles off the coast of France, show how far and how fast big mammals can shrink. When rising seas cut the island off from the mainland, a group of normal-sized red deer was trapped there. __34__ The whole process took less than 6,000 years."
+  ],
+  "zhTranslation": [
+   "島嶼和大陸，或其他大片陸地，有很大的不同。島嶼的面積和與世隔絕的環境，對島上的生態系和生物有深遠的影響。",
+   "研究物種演化的科學家發現，遷居到島上的哺乳類，最後體型往往和牠們在大陸上的親戚很不一樣。__31__ 這個模式在 1964 年由 J. Bristol Foster 首先提出，稱為福斯特法則，也叫島嶼效應。雖然有不少例外，但無論是化石物種，還是今天住在島上的哺乳類，大致上都符合這個趨勢。",
+   "__32__ 在大陸上，體型大往往是動物躲避掠食者比較安全、也比較能適應環境的方式。到了島上，天敵少、競爭也少，體型大就不再是優勢。事實上，體型大反而可能成為負擔，因為大型動物需要多得多的食物才能生存和繁衍。",
+   "一項研究分析了世界各地島嶼上的大象化石，結果顯示，大型哺乳類會縮小多少，要看牠們住在什麼樣的島上。在生態平衡、動物種類多的島上，和其他大型草食動物的競爭，往往讓大型哺乳類不至於縮小太多。__33__",
+   "海峽群島中的澤西島（Jersey）距離法國海岸約 14 英里，島上的紅鹿就說明了大型哺乳類能縮小到什麼程度、又能縮得多快。海平面上升，把這座島和大陸隔開的時候，有一群體型正常的紅鹿被困在島上。__34__ 整個過程花了不到 6,000 年。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 110 年學測試辦考試閱讀測驗〈福斯特法則：島嶼效應〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 17,
+   "選項字數區間": "15-17",
+   "選項字數全距": 2,
+   "選項長度變異係數": "6.0%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 g110tp1；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-g113p1",
+  "year": "（二十二）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "從刺果到魔鬼氈（From Burrs to Velcro）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "E"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "He realized that copying nature’s design could give him a strong fastener with many uses.",
+   "B": "In its early years, Velcro did not sell well, and few people took the invention seriously.",
+   "C": "He started with cotton, but strips made of cotton wore out too quickly to be useful.",
+   "D": "Today, de Mestral’s invention can be found almost everywhere, from our homes to airplanes and hospitals.",
+   "E": "Burrs spread their seeds by catching on the fur of animals that brush past them."
+  },
+  "optionsZh": {
+   "A": "他領悟到，只要模仿大自然的這種設計，就能做出牢固又用途廣泛的扣件。",
+   "B": "魔鬼氈剛推出的那幾年賣得並不好，也很少人把這項發明當一回事。",
+   "C": "他先用棉布試做，可是棉布做的黏扣帶太快就磨損，派不上用場。",
+   "D": "如今，de Mestral 的發明幾乎隨處可見，從家裡到飛機上、醫院裡都有。",
+   "E": "刺果會勾住路過動物的毛，藉此散播種子。"
+  },
+  "unusedExplanation": {
+   "opt": "E",
+   "lead": "E 講的也是刺果和它的鉤子：`catching on the fur of animals`（勾住動物的毛）呼應第一段狗毛上黏滿刺果，放在第二段最後、緊接著「鉤子勾住褲子的小線圈」，讀起來非常順。可是這一篇講的是**一個人怎麼從刺果得到靈感、發明出魔鬼氈，又怎麼讓它普及**，E 講的卻是**刺果在大自然裡怎麼散播種子**。把 E 放進四個空格，每一格都放不下：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "一句把他看到的鉤子和線圈，轉成發明扣件的念頭，後一段的「開發產品」和 `the job`（這項用途）才有所指",
+     "why": "E 講的是植物怎麼散播種子，沒有任何要發明東西的念頭"
+    },
+    {
+     "blank": 32,
+     "want": "一句說他先試了哪一種材料卻失敗了，後一句說合成纖維 `turned out to be the answer`（結果才是答案）才說得通",
+     "why": "E 沒有提到任何材料"
+    },
+    {
+     "blank": 33,
+     "want": "一句主題句，概括魔鬼氈剛推出時賣得不好",
+     "why": "E 講的是刺果，不是魔鬼氈上市後的銷路"
+    },
+    {
+     "blank": 34,
+     "want": "一句主題句，概括魔鬼氈今天用得非常普遍",
+     "why": "E 講的是大自然裡的刺果，和後面列出的各種用途無關"
+    }
+   ],
+   "summary": "**全篇講的是「魔鬼氈怎麼從刺果得到靈感、發明出來，又怎麼普及」，E 講的卻是「刺果怎麼在大自然裡散播種子」。**這一篇多出來的 E 屬於「主題相同，切面不對」，和 115 學測多出來的 D 同一類。至於 115 學測參考試卷多出來的 C，則屬於「切面對，卻沒有段落在等它」，和這一篇不同。",
+   "extra": [],
+   "takeaway": "四格都填完、剩下一個選項時，先用一句話說出全篇在講什麼（這一篇是魔鬼氈的發明和普及），再看剩下的那一句。它就算和某一格的前一句談到同樣的東西（例如鉤子、動物的毛），只要談的是另一個切面，就是多出來的。"
+  },
+  "paraLabels": [
+   "起因：1941 年散步回家，發現刺果黏在狗毛和褲子上",
+   "發現：刺果的尖端是小鉤子，勾住布料的線圈，讓他想到可以做成扣件",
+   "開發：棉布不耐用，改用尼龍；取名、取得專利、開始量產",
+   "上市：起初賣得不好，1960 年代太空總署採用後人氣上升",
+   "今天：魔鬼氈隨處可見，連人工心臟都用得到"
+  ],
+  "marks": [
+   [
+    2,
+    "Developing a real product took years of hard work.",
+    "topic"
+   ],
+   [
+    3,
+    "__33__",
+    "topic"
+   ],
+   [
+    4,
+    "__34__",
+    "topic"
+   ],
+   [
+    1,
+    "though",
+    "trans"
+   ],
+   [
+    2,
+    "first",
+    "trans"
+   ],
+   [
+    2,
+    "finally",
+    "trans"
+   ],
+   [
+    2,
+    "By 1955",
+    "trans"
+   ],
+   [
+    2,
+    "later",
+    "trans"
+   ],
+   [
+    "B",
+    "In its early years",
+    "trans"
+   ],
+   [
+    3,
+    "in the 1960s",
+    "trans"
+   ],
+   [
+    "D",
+    "Today",
+    "trans"
+   ],
+   [
+    4,
+    "Most impressively",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "One fine morning in 1941, Swiss engineer George de Mestral went for a walk in the woods with his dog. When they got home, he found a lot of burrs from a wild plant stuck to the dog’s fur and to his pants. Curious about how they held on so tightly, he rushed to his microscope to take a closer look.",
+   "To the naked eye, the tips of the burrs looked straight. Under the microscope, though, he could see that each tip actually ended in a tiny hook. The hooks had caught on the small loops of thread in his pants and clung to them firmly. __31__",
+   "Developing a real product took years of hard work. De Mestral’s first challenge was finding a material strong enough for the job. __32__ Synthetic fibers turned out to be the answer, and he finally settled on nylon. The improved fastener had about 300 hooks in every square inch, so it stayed firmly closed yet could be pulled apart easily. He named it “Velcro,” from the French words velours (velvet) and crochet (hook). By 1955, he had patented his invention, and he soon began mass-producing it in factories in Europe and later in Canada and the United States.",
+   "__33__ Because most fashion critics found it ugly and cheap-looking, it was used mostly on sports equipment such as ski gear and diving suits. Its popularity grew quickly in the 1960s, when NASA began using it to keep objects from floating around in spacecraft.",
+   "__34__ It is used on clothing and shoes, children’s toys, airplane seat cushions, blood pressure cuffs, and surgical gowns. Most impressively, it even helped hold together the first artificial heart."
+  ],
+  "zhTranslation": [
+   "1941 年一個晴朗的早晨，瑞士工程師 George de Mestral 帶著狗到樹林裡散步。回到家後，他發現狗毛和自己的褲子上黏了許多野生植物的刺果。他很好奇這些刺果為什麼黏得這麼牢，於是立刻衝到顯微鏡前，想看個仔細。",
+   "用肉眼看，刺果的尖端是直的；可是在顯微鏡下，他看得出每個尖端其實都帶著一個小鉤子。這些鉤子勾住了褲子布料上的小線圈，緊緊附著不放。__31__",
+   "要開發出真正的產品，花了好幾年的心血。de Mestral 的第一個難題，是找到一種夠堅固、能勝任的材料。__32__ 結果發現合成纖維才是答案，他最後選定了尼龍。改良後的扣件每平方英寸大約有 300 個鉤子，所以能牢牢黏住，需要時又能輕鬆扯開。他把它取名為 Velcro，來自法文的 velours（天鵝絨）和 crochet（鉤子）。到了 1955 年，他已經為這項發明取得專利，不久就開始量產，先在歐洲設廠，後來又擴展到加拿大和美國。",
+   "__33__ 大多數時尚評論家覺得它很醜，看起來很廉價，所以它多半只用在滑雪裝備、潛水衣這類運動用品上。到了 1960 年代，美國太空總署開始用它來固定太空船裡的物品，免得東西到處飄，它的人氣也跟著快速上升。",
+   "__34__ 衣服和鞋子、兒童玩具、飛機座椅的坐墊、血壓計的壓脈帶和手術衣，都用得到它。最令人驚嘆的是，它甚至幫忙固定了第一顆人工心臟。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 113 年學測閱讀測驗〈魔鬼氈的發明〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 20,
+   "選項字數區間": "15-16",
+   "選項字數全距": 1,
+   "選項長度變異係數": "3.1%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 g113p1；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-g114p3",
+  "year": "（二十三）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "俄羅斯飲酒習慣的由來（How Russia Took to Drinking）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "C"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "Before long, vodka had become an everyday drink, even in the homes of the poorest families.",
+   "B": "Despite all the new policies and campaigns, heavy drinking never disappeared from Russian society.",
+   "C": "Today, vodka is still widely known, both in Russia and abroad, as the country’s national drink.",
+   "D": "For many centuries, strong liquor played only a small part in Russian daily life.",
+   "E": "In those days, people in other parts of Europe were far better known for heavy drinking."
+  },
+  "optionsZh": {
+   "A": "沒過多久，伏特加就成了日常飲品，連最窮的人家也不例外。",
+   "B": "儘管有種種新政策和運動，酗酒的問題始終沒有從俄羅斯社會消失。",
+   "C": "到了今天，伏特加在俄羅斯國內外仍然以國酒的身分廣為人知。",
+   "D": "好幾百年來，烈酒在俄羅斯人的日常生活裡只占很小的分量。",
+   "E": "在那個年代，歐洲其他地方的人愛喝酒的名聲要大得多。"
+  },
+  "unusedExplanation": {
+   "opt": "C",
+   "lead": "C 讀起來很通順，講的也是伏特加，`national drink`（國酒）還是第二段原有的說法。放進第 34 格，C 的 `Today`（今天）和 `still`（仍然），乍看正好接上最後一句的 `it is still among the heaviest-drinking countries in the world`（仍然是全世界最會喝酒的國家之一）。\n\n問題在於：**全篇談的是俄羅斯人愛喝酒是怎麼來的，C 談的卻是伏特加的名聲。**",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "一句回應第一段的 `there is more to the story`（事情沒有這麼簡單），說出和刻板印象不同的事實，而且第二段的細節（大多喝低酒精的飲料、伏特加是外來的）都要能當它的例子",
+     "why": "C 講的是今天伏特加的名聲，不但沒有提出不同的說法，反而附和了第一段的刻板印象；第二段講的又全是 14 世紀以前的事"
+    },
+    {
+     "blank": 32,
+     "want": "一句說出當時以愛喝酒出名的是哪些人，後一句的俗語「醉得像個德國人」才是它的佐證",
+     "why": "C 沒有提到任何一群愛喝酒的人，後一句的 `their love of alcohol`（他們對酒的喜愛）和「醉得像個德國人」都沒有著落"
+    },
+    {
+     "blank": 33,
+     "want": "一句說明伏特加變便宜以後帶來什麼結果：喝酒普及到最窮的人家，這也正是下一段的禁酒運動要對付的問題",
+     "why": "C 說的是今天的情況，下一段卻又回到 19 世紀，時間前後顛倒；而且伏特加是不是國酒，和喝的人變多是兩回事"
+    },
+    {
+     "blank": 34,
+     "want": "一句交代禁酒運動的結果，最後一句「仍然是全世界最會喝酒的國家之一」才是它的佐證",
+     "why": "C 沒有提到禁酒運動，也沒有說酗酒的問題還在不在；伏特加有名，並不代表俄羅斯人喝得多"
+    }
+   ],
+   "summary": "**全篇講的是「俄羅斯人愛喝酒是怎麼來的」，C 講的卻是「伏特加今天有多出名」。**這一篇多出來的 C 屬於「主題相同，切面不對」，和 115 學測多出來的 D 同一類。至於 115 學測參考試卷多出來的 C，則屬於「切面對，卻沒有段落在等它」，和這一篇不同。",
+   "extra": [],
+   "takeaway": "填完四格以後，先用一句話說出這一篇在回答什麼問題，再拿剩下的那一句來比。這一篇問的是「俄羅斯人愛喝酒是怎麼來的」，C 回答的是「伏特加有多出名」，看出切面不同，就不必回頭懷疑前面的答案。"
+  },
+  "paraLabels": [
+   "破題：批評的人認為俄羅斯人天生愛喝酒，但事情沒有這麼簡單",
+   "反證一：烈酒很晚才傳進俄羅斯，伏特加也不是本地發明",
+   "反證二：15、16 世紀的記載互相矛盾，當時以愛喝酒出名的是歐洲其他地方的人，例如德國人",
+   "原因：國家靠伏特加賺錢，價格大跌以後，伏特加成了日常飲品",
+   "結尾：禁酒運動持續多年，酗酒的問題到今天仍然存在"
+  ],
+  "marks": [
+   [
+    1,
+    "__31__",
+    "topic"
+   ],
+   [
+    2,
+    "Records from the 15th and 16th centuries give contradictory information about how much Russians drank.",
+    "topic"
+   ],
+   [
+    3,
+    "The Russian state played a significant role in the spread of drinking.",
+    "topic"
+   ],
+   [
+    4,
+    "Meanwhile, a powerful anti-alcohol movement started in the 19th century.",
+    "topic"
+   ],
+   [
+    0,
+    "However",
+    "trans"
+   ],
+   [
+    1,
+    "later",
+    "trans"
+   ],
+   [
+    2,
+    "while",
+    "trans"
+   ],
+   [
+    3,
+    "In the 1860s",
+    "trans"
+   ],
+   [
+    "A",
+    "Before long",
+    "trans"
+   ],
+   [
+    4,
+    "Meanwhile",
+    "trans"
+   ],
+   [
+    "B",
+    "Despite",
+    "trans"
+   ],
+   [
+    4,
+    "Although",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Russia is widely portrayed as the most alcohol-dependent country in the world. Critics of the country say that drinking is almost an inherent trait of the Russian people. However, there is more to the story.",
+   "__31__ Before Russia adopted Christianity in the 10th century, people drank mostly beverages with low alcohol content. Vodka, Russia’s national drink, was not a Russian invention. It began as a strong grape spirit that visitors from Genoa, Italy, brought to Moscow in the late 14th century. Russian monks later learned to make their own version of the drink.",
+   "Records from the 15th and 16th centuries give contradictory information about how much Russians drank. Some documents noted that Russians “indulge in excessive drinking whenever the occasion arises,” while others claimed that Russians “rarely drink wine.” __32__ There were many sayings about their love of alcohol, such as “drunk as a German.”",
+   "The Russian state played a significant role in the spread of drinking. For hundreds of years, the government controlled the vodka trade and collected huge revenues from it. With so much money at stake, Russia’s rulers had every reason to keep people drinking. In the 1860s, changes in government policy caused vodka prices to drop sharply. __33__",
+   "Meanwhile, a powerful anti-alcohol movement started in the 19th century. Government policies were introduced and public organizations were set up to prevent the spread of alcoholism. __34__ Although Russia does not rank first in alcohol consumption per person, it is still among the heaviest-drinking countries in the world."
+  ],
+  "zhTranslation": [
+   "一般人常把俄羅斯說成全世界最依賴酒精的國家，批評俄羅斯的人更說，愛喝酒幾乎是俄羅斯人與生俱來的特質。不過，事情沒有這麼簡單。",
+   "__31__ 俄羅斯在 10 世紀接受基督教之前，人們喝的大多是酒精濃度低的飲料。至於俄羅斯的國酒伏特加，其實也不是俄羅斯人發明的。它原本是用葡萄蒸餾的烈酒，14 世紀末由來自義大利熱那亞的訪客帶到莫斯科，後來俄羅斯的修士才學會自己製作這種酒。",
+   "關於 15、16 世紀的俄羅斯人喝多少酒，當時的記載說法互相矛盾。有的文獻說俄羅斯人「一有機會就喝得過量」，有的卻說俄羅斯人「很少喝葡萄酒」。__32__ 當時有許多俗語形容他們嗜酒，例如「醉得像個德國人」。",
+   "喝酒的風氣在俄羅斯越來越普遍，國家在這當中扮演了重要的角色。好幾百年來，政府一直掌控伏特加的買賣，從中賺進龐大的收入。既然牽涉這麼多錢，統治者當然樂於讓人民繼續喝酒。到了 1860 年代，政府政策的改變又讓伏特加的價格大幅下跌。__33__",
+   "同一時期，19 世紀也興起一股強大的禁酒運動：政府制定政策，民間也成立團體，要防止酗酒的風氣蔓延。__34__ 雖然以每人平均飲酒量來說，俄羅斯並不是第一名，但仍然是全世界最會喝酒的國家之一。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 114 年學測閱讀測驗〈俄羅斯人的飲酒文化史〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 21,
+   "選項字數區間": "13-16",
+   "選項字數全距": 3,
+   "選項長度變異係數": "9.4%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 g114p3；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-g104p1",
+  "year": "（二十四）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "泰武國小古謠傳唱隊（Young Voices, Ancient Songs）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "E"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "With the ancient ballads of their tribe, the children have won fans far beyond Taiwan.",
+   "B": "The whole audience stayed wide-awake, listening to every song with full attention and great interest.",
+   "C": "His real aim was to help the children understand why they sing and keep their culture alive.",
+   "D": "Camake believes that singing the old ballads has helped the children and their parents rediscover their culture.",
+   "E": "Singing without instruments, the children have to stay in tune and keep the beat on their own."
+  },
+  "optionsZh": {
+   "A": "孩子們憑著部落的古老歌謠，贏得了台灣以外許多地方的樂迷。",
+   "B": "全場觀眾都清醒得很，每一首歌都聽得全神貫注、興致勃勃。",
+   "C": "他真正的目的，是幫助孩子們明白自己為什麼要唱，並且讓文化延續下去。",
+   "D": "Camake 認為，唱這些古老的歌謠，讓孩子和他們的父母重新認識了自己的文化。",
+   "E": "沒有樂器伴奏，孩子們唱歌時得靠自己唱準音、抓穩節奏。"
+  },
+  "unusedExplanation": {
+   "opt": "E",
+   "lead": "E 講的也是這群孩子唱歌：`Singing without instruments`（沒有樂器伴奏）呼應第二段的 a cappella 和 `without any instruments`（完全沒有樂器），放在第 32 格讀起來很順。可是這一篇講的是**泰武古謠傳唱隊在國外受到肯定，Camake 真正在意的卻是讓孩子把文化傳下去**，E 講的卻是**清唱這種唱法有多難**。把 E 放進四個空格，每一格都放不下：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "一句概括傳唱隊在台灣以外受到的肯定，後面的歐洲巡演、日本節目票選才是它的細節",
+     "why": "E 講的是清唱的難處，後面兩句沒有一句在說明它"
+    },
+    {
+     "blank": 32,
+     "want": "一句說出觀眾在演出當下的反應，而且和 Camake 擔心觀眾睡著正好相反",
+     "why": "E 只講孩子怎麼唱，觀眾有沒有睡著沒有交代，後一句觀眾事後的稱讚也接不上"
+    },
+    {
+     "blank": 33,
+     "want": "一句概括古謠讓孩子和父母重新認識自己的文化，後面長老、家長、孩子的細節才有主題句",
+     "why": "E 沒有提到父母，也沒有提到文化"
+    },
+    {
+     "blank": 34,
+     "want": "一句說出 Camake 成立傳唱隊真正的用意，和前一句的「國際名聲」相對",
+     "why": "E 不是任何人的用意，和下一段「把文化帶著走」也沒有關係"
+    }
+   ],
+   "summary": "**全篇講的是「傳唱隊在國外受到肯定，Camake 真正在意的卻是文化傳承」，E 講的卻是「清唱這種唱法的難處」。**這一篇多出來的 E 屬於「主題相同，切面不對」，和 115 學測多出來的 D 同一類。至於 115 學測參考試卷多出來的 C，則屬於「切面對，卻沒有段落在等它」，和這一篇不同。",
+   "extra": [],
+   "takeaway": "四格都填完、剩下一個選項時，先用一句話說出全篇在講什麼（這一篇是傳唱隊受到的肯定和 Camake 的初衷），再看剩下的那一句。它就算和某一格的前一句共用字詞（例如 `without any instruments`），只要談的是另一個切面，就是多出來的。"
+  },
+  "paraLabels": [
+   "破題：泰武古謠傳唱隊是誰，在國外得到哪些肯定",
+   "第一次到歐洲：擔心觀眾睡著，觀眾卻聽得全神貫注",
+   "回到部落：孩子唱古謠，父母跟著重新認識自己的文化",
+   "初衷：成立傳唱隊不是為了名聲，而是為了讓文化延續",
+   "遷村之後：森林和房子帶不走，文化帶得走"
+  ],
+  "marks": [
+   [
+    0,
+    "__31__",
+    "topic"
+   ],
+   [
+    1,
+    "Recalling the group’s first tour of Europe, Camake Valaule, a physical education teacher and the group’s founder, admitted that he had felt very nervous.",
+    "topic"
+   ],
+   [
+    2,
+    "__33__",
+    "topic"
+   ],
+   [
+    3,
+    "__34__",
+    "thesis"
+   ],
+   [
+    4,
+    "Camake said, “We could not take the forest or our houses with us, but we were able to bring our culture along.”",
+    "topic"
+   ],
+   [
+    0,
+    "In 2009",
+    "trans"
+   ],
+   [
+    0,
+    "Two years later",
+    "trans"
+   ],
+   [
+    1,
+    "Afterward",
+    "trans"
+   ],
+   [
+    2,
+    "It used to be that",
+    "trans"
+   ],
+   [
+    2,
+    "Now that",
+    "trans"
+   ],
+   [
+    3,
+    "however",
+    "trans"
+   ],
+   [
+    4,
+    "but",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "The Taiwu Elementary School Folk Singers are a group of Paiwan children from a small school in Pingtung, southern Taiwan. __31__ In 2009, they were invited to perform in several European countries, including Belgium, France, and Germany. Two years later, viewers of the Japanese TV program “Amazing Voice” voted them one of the world’s top five performance groups.",
+   "Recalling the group’s first tour of Europe, Camake Valaule, a physical education teacher and the group’s founder, admitted that he had felt very nervous. Most of the 75-minute show was sung a cappella, that is, without any instruments, so he had worried that the audience would fall asleep. __32__ Afterward, people told him that the performance let them picture the children’s village without ever having visited it. The experience greatly boosted the group’s confidence.",
+   "__33__ It used to be that only tribal elders in their fifties and sixties could sing these songs. Now that the children perform them, many parents have begun to ask why they themselves never learned the ballads. Often it is the children who teach the songs to their parents, piecing together a memory that had begun to fade.",
+   "Winning international fame, however, was never what Camake had in mind when he started the group. __34__",
+   "After Typhoon Morakot struck in August 2009, Taiwu Village and its school had to move down from the mountains. Camake said, “We could not take the forest or our houses with us, but we were able to bring our culture along.” He promised to keep singing with the children for as long as they were willing to sing."
+  ],
+  "zhTranslation": [
+   "泰武國小古謠傳唱隊是一群排灣族的孩子，來自台灣南部屏東的一所小學。__31__ 2009 年，他們受邀到幾個歐洲國家演出，包括比利時、法國和德國。兩年後，日本電視節目《Amazing Voice》的觀眾把他們票選為全球五大表演團體之一。",
+   "回想起傳唱隊第一次到歐洲巡迴演出，體育老師、也是傳唱隊創辦人的 Camake Valaule 坦承，他當時非常緊張。75 分鐘的演出大部分是 a cappella，也就是完全沒有樂器伴奏的清唱，所以他一直擔心觀眾會睡著。__32__ 演出結束後，觀眾告訴他，這場演出讓他們不必親自造訪，就能想像出孩子們的村子是什麼模樣。這次經驗讓傳唱隊的信心大增。",
+   "__33__ 以前會唱這些歌的，只有五、六十歲的部落長老。現在孩子們唱這些歌，許多家長開始問，為什麼自己從來沒學過這些古謠。如今常常是孩子教父母唱，把漸漸淡去的記憶一點一點拼回來。",
+   "不過，Camake 當初成立傳唱隊，心裡想的從來不是贏得國際名聲。__34__",
+   "2009 年 8 月莫拉克颱風過後，泰武村和泰武國小不得不從山上遷到山下。Camake 說：「我們帶不走森林，也帶不走我們的房子，但是我們可以把文化帶著走。」他也承諾，只要孩子們願意唱，他就會一直陪著他們唱下去。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 104 年學測閱讀測驗〈泰武國小古謠傳唱隊〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 18,
+   "選項字數區間": "15-17",
+   "選項字數全距": 2,
+   "選項長度變異係數": "6.2%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 g104p1；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-g99rp3",
+  "year": "（二十五）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "研究快樂這件事（The Science of Happiness）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "D"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "Studies show that doing kind things for friends and strangers alike tends to make people happier.",
+   "B": "It is hard to know whether one person’s sense of well-being is greater than another’s.",
+   "C": "In a growing field called positive psychology, researchers are looking for ways to make people happier.",
+   "D": "Many people assume that earning more money is the surest way to become happier.",
+   "E": "Researchers can now keep track of how often people genuinely smile in daily life."
+  },
+  "optionsZh": {
+   "A": "研究顯示，不論對朋友還是陌生人，做好事往往能讓人更快樂。",
+   "B": "很難知道一個人的幸福感是不是比另一個人的高。",
+   "C": "在正向心理學這個日漸成長的領域裡，研究人員正在尋找讓人更快樂的方法。",
+   "D": "很多人以為，賺更多錢是讓自己更快樂最可靠的途徑。",
+   "E": "研究人員現在可以記錄人們在日常生活中真心微笑的次數。"
+  },
+  "unusedExplanation": {
+   "opt": "D",
+   "lead": "D 這一句文法正確，講的也是怎麼讓人更快樂，和全篇同一個主題；它的 `become happier`（變得更快樂）也和第四段的 `happiness boosters`（能提升快樂的方法）字面相近，最容易被放進第 34 格。可是全篇談的是**心理學家怎麼用科學方法研究快樂、研究出了什麼**，D 說的卻是一般人對金錢的看法，既不是研究，也不是研究的發現。把 D 放進四個空格，每一格都放不下：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "一句說出現在的研究人員在哪個領域、想做什麼，和前面「過去只幫助心理疾病患者」形成對比；第二段用 `However`（不過）轉到這類研究的困難，前面也要先有研究的目標",
+     "why": "D 說的是一般人的想法，不是研究人員在做的事，也和「過去只幫助病人」形成不了對比"
+    },
+    {
+     "blank": 32,
+     "want": "一句說出第二個障礙：人和人之間很難比較，後一句我的「8」和你的「6」才是它的例子",
+     "why": "第二段講的是測量快樂有哪些困難，D 談金錢和快樂的關係，和「我的 8 分是不是比你的 6 分快樂」接不上"
+    },
+    {
+     "blank": 33,
+     "want": "一句說出一種具體的測量做法，後面談真笑和假笑的分別才有來由",
+     "why": "D 不是測量快樂的方法，後一句突然講起笑容就沒有來由"
+    },
+    {
+     "blank": 34,
+     "want": "一句報告第一項研究發現：做什麼事能讓人更快樂，後一句的 `Other research-backed happiness boosters`（其他有研究支持、能提升快樂的方法）才說得通",
+     "why": "D 只是很多人的看法，沒有研究支持；後一句說「其他有研究支持的」方法，前面要先有一項研究發現"
+    }
+   ],
+   "summary": "**全篇問的是「科學家怎麼研究快樂、研究出了什麼」，D 說的卻是「很多人以為錢能買到快樂」。**這一篇多出來的 D 屬於「主題相同，切面不對」，和 115 學測多出來的 D 同一類。至於 115 學測參考試卷多出來的 C，則屬於「切面對，卻沒有段落在等它」，和這一篇不同。",
+   "extra": [],
+   "takeaway": "多出來的選項常常和某一段用了相近的字（這一篇是 D 的 happier 和第四段的 happiness boosters），讀起來好像接得上。遇到這種選項，先問它說的是不是這篇文章在談的事情：這一篇每一段都在談研究，一句只講一般人想法的話，就算字面相近，也放不進任何一格。"
+  },
+  "paraLabels": [
+   "引言：心理學家過去只研究心理疾病，如今正向心理學開始研究怎麼讓人更快樂",
+   "難題：快樂很難用科學方法測量，人和人之間也很難比較",
+   "突破：研究人員找到比較好的測量方法，例如觀察真心的笑容",
+   "發現：做好事能讓人更快樂，另有幾種習慣也有研究支持"
+  ],
+  "marks": [
+   [
+    0,
+    "But today, happiness is a hot subject of research.",
+    "gradient"
+   ],
+   [
+    1,
+    "However, this kind of research faces significant obstacles.",
+    "topic"
+   ],
+   [
+    2,
+    "In recent years, however, researchers have found better ways to measure happiness.",
+    "topic"
+   ],
+   [
+    3,
+    "__34__",
+    "topic"
+   ],
+   [
+    0,
+    "But today",
+    "trans"
+   ],
+   [
+    1,
+    "However",
+    "trans"
+   ],
+   [
+    1,
+    "For one thing",
+    "trans"
+   ],
+   [
+    2,
+    "In recent years, however",
+    "trans"
+   ],
+   [
+    3,
+    "Other",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Not long ago, joy wasn’t considered serious enough for psychologists to study. These scientists traditionally helped people with depression or other mental illnesses, not those who were already doing well. But today, happiness is a hot subject of research. __31__",
+   "However, this kind of research faces significant obstacles. For one thing, it is difficult to measure a feeling like happiness scientifically. Suppose your best friend says she feels great but is crying a lot and acting more depressed than usual. For the purposes of a scientific study, would you rate her as happy or sad? __32__ On a scale of 1 to 10, how can we be sure that my “8” is happier than your “6”?",
+   "In recent years, however, researchers have found better ways to measure happiness. __33__ Real smiles usually look quite different from the forced ones people put on for photographs. A real smile tends to reach the eyes and make the skin around them crinkle, while a fake one often moves only the mouth.",
+   "__34__ Other research-backed happiness boosters include keeping a diary of your future dreams, setting and pursuing goals, making friends and family members a big part of your life, expressing optimism about your future, extending gratitude to people who help you, and exercising regularly. The good news is that most of these habits cost little or nothing, so almost anyone can start practicing them today."
+  ],
+  "zhTranslation": [
+   "不久之前，心理學家還認為快樂不夠嚴肅，不值得研究。這些科學家向來幫助的是患有憂鬱症或其他心理疾病的人，而不是本來就過得很好的人。但是現在，快樂成了熱門的研究主題。__31__",
+   "不過，這類研究面臨一些重大的障礙。首先，像快樂這樣的感受，很難用科學方法測量。假設你最好的朋友說她感覺很好，卻常常哭，看起來也比平常沮喪；如果是為了做科學研究，你會把她評為快樂還是難過？__32__ 在 1 到 10 分的量表上，我們怎麼能確定我的「8」比你的「6」快樂？",
+   "不過，近年來研究人員已經找到比較好的方法來測量快樂。__33__ 真心的笑容和人們拍照時擠出來的笑容，通常看起來很不一樣。真心的笑容往往會牽動眼睛，讓眼睛周圍的皮膚皺起來；假笑則常常只動到嘴巴。",
+   "__34__ 其他有研究支持、能提升快樂的方法還包括：把對未來的夢想寫成日記、設定並追求目標、讓親友在生活中占重要的位置、對未來抱持樂觀、向幫助過你的人表達感謝，以及規律運動。好消息是，這些習慣大多不花什麼錢，幾乎每個人今天就可以開始做。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 99 課綱學測參考試卷（102 年施測）閱讀測驗〈正面心理學與幸福研究〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 17,
+   "選項字數區間": "14-16",
+   "選項字數全距": 2,
+   "選項長度變異係數": "6.6%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 g99rp3；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-z96p1",
+  "year": "（二十六）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "卡內基：從送信童到慈善家（Andrew Carnegie: From Messenger Boy to Philanthropist）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "A"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "To keep costs down, he bought the iron mines and railroads that served his steel mills.",
+   "B": "Though he worked long hours, he still found his own ways to keep learning.",
+   "C": "He did not want simply to hand out money; he wanted to help people help themselves.",
+   "D": "In 1901, at the age of 65, he finally sold his company and left business behind.",
+   "E": "In the 1860s, Carnegie saw that the growing railroads would need far more iron."
+  },
+  "optionsZh": {
+   "A": "為了壓低成本，他買下了供應鋼廠原料的鐵礦，以及替鋼廠運貨的鐵路。",
+   "B": "雖然工作時間很長，他還是找到了自己的方法繼續學習。",
+   "C": "他不想只是把錢送給別人，而是要幫助別人自助。",
+   "D": "1901 年，65 歲的他終於賣掉公司，離開了商場。",
+   "E": "1860 年代，卡內基看出鐵路越蓋越多，需要的鐵也會大幅增加。"
+  },
+  "unusedExplanation": {
+   "opt": "A",
+   "lead": "A 談的也是卡內基的事業，`iron mines`（鐵礦）、`railroads`（鐵路）、`steel mills`（鋼廠）都和第三段的鐵路橋、煉鋼有關，所以第一眼很像第三段的句子，尤其是放在第三段段首的第 32 格。可是四個空格都放不下：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "一句概括少年卡內基工作之餘仍在學習的話，後面兩句的看戲、借書才是它的例子",
+     "why": "這時他還只是送信童，根本還沒有鋼廠；而且 A 講的是做生意，後面兩句講的卻是學習"
+    },
+    {
+     "blank": 32,
+     "want": "一句把故事從少年時代帶到他成年做生意，並點出他看到鐵路需要大量的鐵，後一句才能接著談木造的鐵路橋",
+     "why": "A 一開頭就說他為了壓低成本買下鐵礦和鐵路，還提到 `his steel mills`（他的鋼廠），這一段卻到第四句才說他 `Later, he turned to steel`（後來轉向鋼鐵業），先後順序不對；A 也沒有說明後一句為什麼要談木造的橋"
+    },
+    {
+     "blank": 33,
+     "want": "一句交代他終於離開商場，第五段開頭說他把後半生都用來捐出財富才說得通",
+     "why": "A 說他想辦法壓低成本，等於又回頭忙生意，和前面想多讀書的心願正好相反，也沒有交代他離開商場"
+    },
+    {
+     "blank": 34,
+     "want": "一句說明他捐錢的原則：不是直接發錢，而是幫助別人自助，後一句才接著說他捐建圖書館",
+     "why": "第五段第一句已經說他後半生專心捐出財富，A 卻又談經營鋼廠的成本，和捐錢的方式沒有關係"
+    }
+   ],
+   "summary": "**全篇談的是卡內基怎麼看待財富與學習：少年時靠讀書自學，致富後對只顧賺錢感到不安，最後把錢用來幫助別人自助；A 談的卻是他「怎麼壓低成本」的經營方法。**這一篇多出來的 A 屬於「主題相同，切面不對」，和 115 學測多出來的 D 同一類。至於 115 學測參考試卷多出來的 C，則屬於「切面對，卻沒有段落在等它」，和這一篇不同。",
+   "extra": [],
+   "takeaway": "四格先各自配好，再回頭問剩下那一句回答的是不是全篇在談的問題。這一篇談的是卡內基怎麼看待財富與學習，A 談的是經營鋼廠的方法，看出切面不同，就不必回頭懷疑前面的答案。"
+  },
+  "paraLabels": [
+   "出身：蘇格蘭織布工之子，手工織布業沒落後，全家移民美國",
+   "少年：一到美國就去工作，但工作之餘看戲、借書，繼續學習",
+   "事業：看出鐵路需要大量的鐵，改建鐵橋致富，再轉向鋼鐵業",
+   "轉折：對商人生活感到不安，想多讀書，1901 年賣掉公司",
+   "捐獻：不只是發錢，而是幫助別人自助，捐建 2,500 多座圖書館"
+  ],
+  "marks": [
+   [
+    0,
+    "Andrew Carnegie, one of the richest men of his time, was born in 1835 to a weaver’s family in Scotland.",
+    "topic"
+   ],
+   [
+    1,
+    "__31__",
+    "topic"
+   ],
+   [
+    2,
+    "__32__",
+    "topic"
+   ],
+   [
+    3,
+    "However, Carnegie often said he felt uneasy about the life of a businessman.",
+    "topic"
+   ],
+   [
+    4,
+    "For the rest of his life, Carnegie devoted himself to giving away his fortune.",
+    "topic"
+   ],
+   [
+    0,
+    "But",
+    "trans"
+   ],
+   [
+    2,
+    "Later",
+    "trans"
+   ],
+   [
+    3,
+    "However",
+    "trans"
+   ],
+   [
+    3,
+    "instead",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Andrew Carnegie, one of the richest men of his time, was born in 1835 to a weaver’s family in Scotland. As a child, he was expected to follow his father’s trade. But when factory machines put hand weavers like his father out of work, the family had to leave for a new life in America.",
+   "In 1848, the Carnegies settled near Pittsburgh, then a busy industrial city. Andrew went to work at once, first in a cotton factory and later as a messenger boy in a telegraph office. __31__ When he delivered messages to the city theater, he often stayed to watch plays, especially Shakespeare’s. On Saturday nights, he borrowed books from a small library that a generous local man had opened to working boys.",
+   "__32__ Many railroad bridges were still made of wood, which could easily catch fire. He started a company to replace them with stronger iron bridges, and it made him rich. Later, he turned to steel, using a new method from Britain to make it cheaply and in large amounts. By 1900, his mills alone produced more steel than all of Great Britain.",
+   "However, Carnegie often said he felt uneasy about the life of a businessman. In a note to himself in 1868, he warned that a life spent chasing more and more money would harm him beyond repair. He wished instead to spend more time studying and reading widely. __33__",
+   "For the rest of his life, Carnegie devoted himself to giving away his fortune. He believed that a man who dies rich “dies disgraced.” __34__ Remembering the small library of his boyhood, he paid to build more than 2,500 libraries around the world. By the time he died in 1919, he had given away about $350 million."
+  ],
+  "zhTranslation": [
+   "安德魯·卡內基是當時數一數二的富豪，1835 年出生在蘇格蘭一個織布工的家庭。小時候，家人期待他繼承父親的行業。但是工廠裡的機器讓他父親這樣的手工織布工丟了工作，全家只好前往美國，展開新的生活。",
+   "1848 年，卡內基一家在匹茲堡附近落腳，那裡當時是個繁忙的工業城市。安德魯馬上就去工作，先在一家棉紡廠，後來在電報局當送信童。__31__ 他把電報送到市立劇院的時候，常常留下來看戲，尤其是莎士比亞的戲。每到星期六晚上，他就到一間小圖書館借書，那是當地一位熱心人士開放給做工的少年使用的。",
+   "__32__ 當時許多鐵路橋還是木造的，很容易起火。他成立一家公司，用更堅固的鐵橋取代這些木橋，因此致富。後來他轉向鋼鐵業，用一種從英國引進的新方法，便宜又大量地煉鋼。到了 1900 年，光是他的鋼廠，產量就超過全英國。",
+   "然而，卡內基常常說，他對商人的生活感到不安。1868 年，他寫了一段話提醒自己：一輩子追著越來越多的錢跑，會讓他受到無法挽回的傷害。他反而希望多花點時間求學，廣泛閱讀。__33__",
+   "在往後的日子裡，卡內基全心全意地捐出自己的財富。他認為一個人死的時候還很富有，就是「死得可恥」。__34__ 他沒有忘記少年時代那間小圖書館，出錢在世界各地蓋了 2,500 多座圖書館。到 1919 年過世的時候，他一共捐出了大約 3.5 億美元。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 96 年指考閱讀測驗〈安德魯·卡內基的生平與慈善〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 22,
+   "選項字數區間": "14-16",
+   "選項字數全距": 2,
+   "選項長度變異係數": "6.4%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 z96p1；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-z102p3",
+  "year": "（二十七）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "非洲學校走向數位化（Schools in Africa Going Digital）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "C"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "The country’s state schools, already short of teachers and money, could not handle so many children.",
+   "B": "The prospect of millions of African pupils learning digitally has caught the attention of technology giants.",
+   "C": "Across Africa, far more people own a mobile phone than a computer or tablet.",
+   "D": "If the optimists are right, tablets may soon be as common in African classrooms as blackboards.",
+   "E": "A bigger question is whether tablets and other digital tools actually help children learn."
+  },
+  "optionsZh": {
+   "A": "這個國家的公立學校原本就缺老師、缺經費，應付不了這麼多孩子。",
+   "B": "非洲數以百萬計的學生用數位方式學習，這樣的前景引起了科技大廠的注意。",
+   "C": "在整個非洲，擁有手機的人遠比擁有電腦或平板的人多。",
+   "D": "如果這些樂觀的人看得沒錯，平板在非洲的教室裡可能很快就會和黑板一樣普遍。",
+   "E": "更重要的問題是，平板和其他數位工具是不是真的能幫助孩子學習。"
+  },
+  "unusedExplanation": {
+   "opt": "C",
+   "lead": "C 讀起來很順，談的也是非洲的數位裝置：`mobile phone`（手機）和第二段 M-Pesa 用手機轉帳、第四段奈及利亞用手機提供考試工具是同一個字，`tablet`（平板）更是全篇一再出現；說法本身也沒有錯，非洲擁有手機的人確實遠比擁有電腦的人多。問題是，**全篇談的是「非洲的學校走向數位化：為什麼正是時候、誰在投入、到底有沒有效果」，C 說的卻是「一般人擁有哪一種裝置」。**所以四個空格都放不下：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "把企業界的樂觀預測落實到教室，說出非洲的學校會有什麼改變，第三段開頭的 `Such a change`（這樣的改變）才有具體的內容",
+     "why": "C 說的是一般人擁有哪一種裝置，這是現況，不是學校會有的改變；C 也沒有談到學校，第三段說「對肯亞的學校來說正是時候」就沒有著落"
+    },
+    {
+     "blank": 32,
+     "want": "說出公立學校應付不了湧進來的大量學生，後面班級人數暴增、物資不夠用才是它的細節",
+     "why": "C 講的是一般人擁有的裝置，和學生湧入、班級人數暴增都沒有關係"
+    },
+    {
+     "blank": 33,
+     "want": "一句概括後面 Amazon、Intel 各項動作的主題句，說出大企業注意到非洲的數位教育",
+     "why": "後面三句說的是企業做了什麼，C 說的卻是一般民眾擁有什麼，也概括不了 Kindle 銷量成長十倍這件事"
+    },
+    {
+     "blank": 34,
+     "want": "一句提出「數位工具能不能幫助學習」的問題，後面的「初步跡象顯示它們確實有幫助」和三個例子才有回答的對象",
+     "why": "C 沒有提出任何問題，後面三個學習成效的例子也不是在說明手機比電腦普遍"
+    }
+   ],
+   "summary": "**這一篇談的是非洲的學校怎麼走向數位化：為什麼正是時候、誰在投入、到底有沒有效果；C 談的卻是非洲的一般人擁有哪一種裝置。**這一篇多出來的 C 屬於「主題相同，切面不對」，和 115 學測多出來的 D 同一類。至於 115 學測參考試卷多出來的 C，則屬於「切面對，卻沒有段落在等它」，和這一篇不同。",
+   "extra": [],
+   "takeaway": "先把四格各自在等什麼寫成一句話，四格都填完再看剩下的那一個。剩下的那一句如果和文章共用幾個字（這一篇是 `mobile phone`、`tablet`），談的卻是文章沒有要談的方向，就可以確定它是多出來的。"
+  },
+  "paraLabels": [
+   "案例：奈洛比 Amaf 學校的學生第一次用平板，上課從黑板、破舊課本換成平板",
+   "預測：這是新創公司的試辦計畫，企業界看好數位教育在非洲蓬勃發展，平板可能和黑板一樣普遍",
+   "時機：肯亞實施國小免費教育，大批學生湧入，原本就缺老師、缺經費的公立學校應付不來",
+   "商機：非洲學生數位學習的前景吸引科技大廠，Amazon、Intel 紛紛投入",
+   "成效：更重要的是數位工具能不能幫助學習，初步跡象顯示確實有幫助"
+  ],
+  "marks": [
+   [
+    1,
+    "Many firms are betting on a boom in digital education in Kenya and elsewhere in Africa.",
+    "topic"
+   ],
+   [
+    1,
+    "__31__",
+    "thesis"
+   ],
+   [
+    2,
+    "Such a change would come at just the right time for Kenya’s schools.",
+    "topic"
+   ],
+   [
+    3,
+    "__33__",
+    "topic"
+   ],
+   [
+    4,
+    "__34__",
+    "topic"
+   ],
+   [
+    0,
+    "But",
+    "trans"
+   ],
+   [
+    0,
+    "Now",
+    "trans"
+   ],
+   [
+    "E",
+    "A bigger question",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Grace Wambui, a 14-year-old pupil in Nairobi, had never touched a tablet computer. But when tablets arrived at Amaf School in Kawangware, a low-income area of the Kenyan capital, it took her only about a minute to work out how to use one. Lessons there used to rely on a blackboard and a handful of worn-out textbooks. Now children in groups of five take turns swiping the touch screens of tablets loaded with a multimedia version of Kenya’s school curriculum.",
+   "The tablets at Amaf School are part of a pilot project run by eLimu, a Kenyan technology start-up. Many firms are betting on a boom in digital education in Kenya and elsewhere in Africa. Some business leaders even expect it to take off like M-Pesa, the hugely successful service that lets Kenyans send money by mobile phone. __31__",
+   "Such a change would come at just the right time for Kenya’s schools. When Kenya made primary education free in 2003, about 1.3 million extra pupils poured into its classrooms. __32__ At many schools, class sizes soared, some doubling almost overnight. Books, desks, and even pencils ran short.",
+   "__33__ Amazon has reported that sales of its Kindle e-readers in Africa grew tenfold in a single year. Intel has been helping African governments buy low-cost computers. In Nigeria, the firm brought together a local publisher and a mobile phone company to offer exam-preparation tools by phone, a service that soon became very popular.",
+   "__34__ The early signs suggest that they do. In Ghana, children who were given e-readers by a charity made measurable gains in reading. In Ethiopia, children with no teachers worked out on their own how to use tablets and learned the English alphabet. At Amaf School, average marks in science rose from 58 to 73 in a single term."
+  ],
+  "zhTranslation": [
+   "Grace Wambui 是奈洛比一名 14 歲的學生，從來沒有摸過平板電腦。但是平板電腦送到 Amaf 學校的時候，她只花了一分鐘左右，就學會怎麼使用；這所學校位在肯亞首都的低收入地區 Kawangware。以前上課只靠一塊黑板和幾本破舊的課本，現在孩子們五個人一組，輪流滑動平板的觸控螢幕，平板裡裝的是多媒體版本的肯亞課程。",
+   "Amaf 學校的平板電腦，是肯亞科技新創公司 eLimu 主持的試辦計畫的一部分。許多公司都看好數位教育會在肯亞和非洲其他地方蓬勃發展，有些企業主管甚至預期，數位教育會像 M-Pesa 一樣一飛沖天；M-Pesa 讓肯亞人用手機就能轉帳，是非常成功的服務。__31__",
+   "這樣的改變，對肯亞的學校來說正是時候。肯亞在 2003 年實施國小免費教育，大約 130 萬名新學生湧進教室。__32__ 許多學校的班級人數暴增，有的幾乎一夕之間就多了一倍；書本、桌椅，甚至連鉛筆都不夠用。",
+   "__33__ Amazon 表示，旗下 Kindle 電子書閱讀器在非洲的銷量，一年之內成長了十倍。Intel 一直在協助非洲各國政府購買平價電腦；在奈及利亞，Intel 還找來當地一家出版社和一家電信業者合作，用手機提供準備考試的工具，這項服務很快就大受歡迎。",
+   "__34__ 初步的跡象顯示，它們確實有幫助。在迦納，一個慈善團體送給孩子電子書閱讀器，這些孩子的閱讀能力有了明顯的進步。在衣索比亞，沒有老師教的孩子自己摸索出平板的用法，還學會了英文字母。在 Amaf 學校，科學的平均分數在一個學期內從 58 分提高到 73 分。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 102 年指考閱讀測驗〈非洲學校走向數位化〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 22,
+   "選項字數區間": "14-16",
+   "選項字數全距": 2,
+   "選項長度變異係數": "6.4%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 z102p3；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-z102p4",
+  "year": "（二十八）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "斯巴達松超級馬拉松的魅力（The Allure of the Spartathlon Ultra-Marathon）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "B"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "Runners are drawn to the Spartathlon by two things: its difficulty and its history.",
+   "B": "To many finishers, the simple wreath and water mean more than any medal.",
+   "C": "Many runners are also moved by the thought of following in Pheidippides’s footsteps.",
+   "D": "Within just a few minutes, their sore joints and muscles start to stiffen.",
+   "E": "It is recorded that he reached Sparta on the day after he left Athens."
+  },
+  "optionsZh": {
+   "A": "吸引跑者參加斯巴達松的有兩件事情：它的難度和它的歷史。",
+   "B": "對許多完賽的跑者來說，簡單的花環和水比任何獎牌都更有意義。",
+   "C": "許多跑者也因為想到能循著 Pheidippides 的腳步前進而深受感動。",
+   "D": "才短短幾分鐘，他們痠痛的關節和肌肉就開始僵硬。",
+   "E": "根據記載，他離開雅典的隔天就抵達了斯巴達。"
+  },
+  "unusedExplanation": {
+   "opt": "B",
+   "lead": "B 讀起來很通順，也沒有離開主題：它講的是跑者完賽時拿到的花環和水。放進第 34 格，`wreath`（花環）、`water`（水）都是第四段第一句出現過的字，乍看像是順著往下說。但四個空格都放不下：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "交代 Pheidippides 花了多少時間到斯巴達，後一句 Foden 懷疑有沒有人能「這麼快」跑完才有來由",
+     "why": "B 講的是今天的完賽場面，和古代的記載無關"
+    },
+    {
+     "blank": 32,
+     "want": "總說第三段要談的吸引力，後面列出的各種考驗才有所歸屬",
+     "why": "B 只談終點的花環和水，概括不了酷熱、低溫、半夜翻山、時間壓力這些考驗"
+    },
+    {
+     "blank": 33,
+     "want": "在難度之外補上另一個吸引跑者的原因，而且照應第二段的歷史",
+     "why": "花環和水要到第四段完賽時才出現，B 的 `the simple wreath and water`（那簡單的花環和水）在這裡指不到東西；B 也沒有說到歷史，段首說的兩件事情就只講了難度"
+    },
+    {
+     "blank": 34,
+     "want": "說出喜悅為什麼很快就消失，後一句跑者在鎮上慢慢走、每一步都很痛才有原因",
+     "why": "B 回頭肯定完賽那一刻的意義，方向和前一句 `However, the joy does not last long.` 正好相反"
+    }
+   ],
+   "summary": "**B 談的是完賽時的花環和水有什麼意義，它最適合放的位置是第四段第一句後面，可是那裡沒有空格。**這一篇多出來的 B 屬於「切面對，卻沒有段落在等它」，和 115 學測參考試卷多出來的 C 同一類。至於 115 學測多出來的 D，則屬於「主題相同，切面不對」，和這一篇不同。第四段的話題確實是完賽，可是第四段的空格要的是喜悅為什麼消失，不是完賽有什麼意義；B 和空格附近共用的字又多，所以比 115 學測多出來的 D 難認。",
+   "extra": [],
+   "takeaway": "選項裡出現空格附近的字（像這一篇的 `wreath`、`water`），先別急著填。先遮住選項，想想那個位置需要一句什麼樣的話，再看選項說的是不是那件事。"
+  },
+  "paraLabels": [
+   "引言：斯巴達松是什麼，36 小時內從雅典跑到斯巴達",
+   "由來：從 Pheidippides 的記載，到 1982 年 Foden 等人親身驗證，隔年辦成比賽",
+   "魅力：吸引跑者的兩件事情，先談難度（各種考驗），再談歷史",
+   "完賽之後：喜悅很快消失、身體僵硬，沒過多久卻又想再跑"
+  ],
+  "marks": [
+   [
+    0,
+    "In the Spartathlon, one of the world’s toughest ultra-marathons, runners cover 246 kilometers, almost six marathons, within 36 hours.",
+    "topic"
+   ],
+   [
+    1,
+    "The race’s roots go back to 490 B.C., when an Athenian named Pheidippides made the journey to Sparta to ask the Spartans for help against the invading Persians.",
+    "topic"
+   ],
+   [
+    2,
+    "__32__",
+    "gradient"
+   ],
+   [
+    2,
+    "but",
+    "trans"
+   ],
+   [
+    2,
+    "Above all",
+    "trans"
+   ],
+   [
+    "C",
+    "also",
+    "trans"
+   ],
+   [
+    3,
+    "However",
+    "trans"
+   ],
+   [
+    3,
+    "But",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "In the Spartathlon, one of the world’s toughest ultra-marathons, runners cover 246 kilometers, almost six marathons, within 36 hours. The runners start in Athens and run all the way to the historic city of Sparta.",
+   "The race’s roots go back to 490 B.C., when an Athenian named Pheidippides made the journey to Sparta to ask the Spartans for help against the invading Persians. __31__ In 1982, this story sparked the interest of John Foden, a British air-force officer and long-distance runner, who wondered if anyone could really cover that distance so quickly. Foden and four other runners from the air force decided to see for themselves. Three of the five made it to Sparti, as the town is now called, in less than 40 hours. Their success led to the first Spartathlon a year later.",
+   "__32__ The Spartathlon is not the hardest race in the world, but it combines many different tests. There is the heat of the Greek day, and then the sharp drop in temperature when darkness falls. There are long climbs, and in the middle of the night, runners must cross a mountain about 1,200 meters high. Above all, there is the constant pressure of the clock. __33__",
+   "As finishers receive a wreath and water from schoolgirls, many are overjoyed. However, the joy does not last long. __34__ After the race, Sparti looks like the set of a zombie movie, as runners move slowly and painfully around the town. But the urge to do it all over again soon appears."
+  ],
+  "zhTranslation": [
+   "斯巴達松（Spartathlon）是世界上最艱難的超級馬拉松之一，跑者要在 36 小時內跑完 246 公里，將近六場馬拉松的距離。跑者從雅典出發，一路跑到歷史悠久的斯巴達。",
+   "這項比賽的由來，可以追溯到西元前 490 年：當時一位名叫 Pheidippides 的雅典人前往斯巴達，請斯巴達人幫忙抵抗入侵的波斯人。__31__ 1982 年，這個故事引起了英國空軍軍官、長跑選手 John Foden 的興趣，他想知道是不是真的有人能這麼快就跑完這段路。Foden 和另外四位空軍的跑者決定親自試試看。五個人當中，有三個人在 40 小時內抵達了 Sparti，也就是斯巴達現在的名稱。他們的成功，促成了一年後第一屆斯巴達松的舉辦。",
+   "__32__ 斯巴達松不是世界上最難的比賽，卻結合了許多不同的考驗。白天有希臘的酷熱，天黑以後氣溫又急遽下降。路上有很長的上坡，跑者還得在半夜翻過一座大約 1,200 公尺高的山。最重要的是，時間的壓力始終都在。__33__",
+   "完賽的跑者從女學生手中接過花環和水，許多人欣喜若狂。不過，這份喜悅維持不了多久。__34__ 賽後的 Sparti 看起來就像殭屍電影的片場，跑者在鎮上慢慢地走來走去，每一步都很痛。但是沒過多久，想再跑一次的念頭又冒了出來。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 102 年指考閱讀測驗〈斯巴達松超級馬拉松的魅力〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 19,
+   "選項字數區間": "12-14",
+   "選項字數全距": 2,
+   "選項長度變異係數": "6.9%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 z102p4；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-z99p3",
+  "year": "（二十九）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "麝香貓咖啡的價格與來歷（The Price and Origin of Kopi Luwak）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "A"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "Many people are put off by the idea of coffee that comes from an animal’s droppings.",
+   "B": "To meet the growing demand, many producers now keep civets in small cages.",
+   "C": "The palm civet is a cat-sized animal that lives in trees and feeds mainly on fruit.",
+   "D": "What is harder to explain is why so little of it is produced.",
+   "E": "Wild civets are thought to seek out and eat only the ripest coffee cherries."
+  },
+  "optionsZh": {
+   "A": "很多人一想到咖啡是從動物糞便裡來的，就倒胃口。",
+   "B": "為了滿足日益增加的需求，現在很多業者把椰子狸關在小籠子裡飼養。",
+   "C": "椰子狸是體型和貓差不多大的動物，住在樹上，主要以水果為食。",
+   "D": "比較難解釋的是，這種咖啡為什麼產量這麼少。",
+   "E": "一般認為，野生的椰子狸只會挑最成熟的咖啡果實來吃。"
+  },
+  "unusedExplanation": {
+   "opt": "A",
+   "lead": "A 讀起來很順，談的也是麝香貓咖啡，而且提到 `an animal’s droppings`（動物的糞便），和文章裡的 `civet droppings`（椰子狸的糞便）有共同的字。問題是，**全篇談的是麝香貓咖啡為什麼稀少、怎麼產生、味道為什麼特別，以及受歡迎以後帶來的問題，A 說的卻是人們對這種咖啡的觀感。**所以四個空格都放不下：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "一句和「價格高不難理解」形成對比、提出「產量為什麼這麼少」的話，後一句「稀少的不是咖啡樹，而是椰子狸糞便裡的咖啡豆」才有問題可以回答",
+     "why": "A 沒有提出任何問題，後一句「稀少的不是咖啡樹」就變成在回答一個前面沒人問過的問題"
+    },
+    {
+     "blank": 32,
+     "want": "一句介紹椰子狸是什麼動物、吃什麼的主題句，後面講分布、習性、怎麼吃咖啡果實的細節才有主旨",
+     "why": "A 談的是人的反應，後面三句卻都在講椰子狸住在哪裡、怎麼吃咖啡果實；A 雖然也提到 `an animal’s droppings`（動物的糞便），可是那是泛指任何一種動物，後一句說「分布在南亞和東南亞」的，必須是一種特定的動物"
+    },
+    {
+     "blank": 33,
+     "want": "消化作用以外，讓咖啡味道特別的另一個原因",
+     "why": "A 說的是人們想不想喝，和咖啡的味道為什麼特別無關"
+    },
+    {
+     "blank": 34,
+     "want": "說明椰子狸付出什麼代價的一句話，後一句「只吃得到咖啡果實、被養在鐵絲網地板上」才接得上",
+     "why": "前一句說麝香貓咖啡受歡迎，A 卻說很多人倒胃口，方向相反；A 也沒有提到椰子狸被關起來"
+    }
+   ],
+   "summary": "**全篇談的是麝香貓咖啡怎麼來、為什麼特別、帶來什麼問題，A 談的卻是人們想到它的來源就倒胃口。**這一篇多出來的 A 屬於「主題相同，切面不對」，和 115 學測多出來的 D 同一類。至於 115 學測參考試卷多出來的 C，則屬於「切面對，卻沒有段落在等它」，和這一篇不同。",
+   "extra": [],
+   "takeaway": "先把四格各自在等什麼寫成一句話，四格都填完再看剩下的那一個。剩下的那一句如果和文章共用某個字（這一篇是 droppings），談的卻是文章沒有討論的事（這一篇是人們的觀感），就可以確定它是多出來的。"
+  },
+  "paraLabels": [
+   "引言：咖啡專家願意花大錢，麝香貓咖啡是全世界最貴的咖啡之一",
+   "提問與解答：價錢高不難理解，產量少是因為咖啡豆要從椰子狸的糞便裡來",
+   "來源：椰子狸是什麼動物，咖啡豆怎麼從牠的糞便裡來",
+   "風味的原因：消化液改變了咖啡豆，野生椰子狸也只挑最熟的果實",
+   "今日的問題：需求增加，椰子狸關進籠子受苦，咖啡品質也變差"
+  ],
+  "marks": [
+   [
+    0,
+    "Then there is Kopi Luwak (translated as “civet coffee”), one of the most expensive coffees in the world, which can sell for as much as US$80 a cup.",
+    "topic"
+   ],
+   [
+    1,
+    "__31__",
+    "topic"
+   ],
+   [
+    2,
+    "__32__",
+    "topic"
+   ],
+   [
+    3,
+    "While the beans survive the trip through the animal, they do not come out unchanged.",
+    "topic"
+   ],
+   [
+    4,
+    "Its popularity, though, has come at a high price for the civets.",
+    "topic"
+   ],
+   [
+    0,
+    "Then",
+    "trans"
+   ],
+   [
+    1,
+    "since",
+    "trans"
+   ],
+   [
+    3,
+    "While",
+    "trans"
+   ],
+   [
+    3,
+    "however",
+    "trans"
+   ],
+   [
+    4,
+    "though",
+    "trans"
+   ],
+   [
+    4,
+    "Since",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Coffee experts are willing to pay large sums of money for high-quality beans. Premium varieties such as Kona and Blue Mountain are known to cost far more than ordinary coffee. Then there is Kopi Luwak (translated as “civet coffee”), one of the most expensive coffees in the world, which can sell for as much as US$80 a cup.",
+   "Its high price is easy to understand, since genuine Kopi Luwak is produced only in very small amounts. __31__ The coffee plants themselves are not rare; the beans found in civet droppings are. That’s right—beans picked out of the body waste of the palm civet. Coffee beans do not become Kopi Luwak until they have passed through the animal’s body.",
+   "__32__ Found in South and Southeast Asia, it comes out at night and often visits coffee farms to feed on the cherries. It swallows them whole but digests only their soft outer flesh. Farmers then pick the hard beans out of its droppings, wash them, and roast them.",
+   "While the beans survive the trip through the animal, they do not come out unchanged. Juices in the civet’s digestive system break down some of the proteins in the beans, which is believed to make the coffee less bitter. Digestion may not be the whole story, however. __33__",
+   "Kopi Luwak is said to taste unlike any other coffee, with hints of caramel and an earthy flavor. Its popularity, though, has come at a high price for the civets. __34__ Fed almost nothing but coffee cherries and kept on wire floors, some of them grow thin and develop painful sores. Since they cannot choose their own cherries, the coffee they produce is often of poorer quality, too."
+  ],
+  "zhTranslation": [
+   "咖啡專家願意花大錢買高品質的咖啡豆。可娜、藍山這類高檔品種，價錢都比一般咖啡貴得多。再來還有 Kopi Luwak（譯為「麝香貓咖啡」），這是全世界最貴的咖啡之一，一杯要價可以高達 80 美元。",
+   "它的價格這麼高並不難理解，因為真正的麝香貓咖啡產量非常少。__31__ 稀少的不是咖啡樹本身，而是椰子狸糞便裡的咖啡豆。沒錯，就是從椰子狸的排泄物裡挑出來的咖啡豆。咖啡豆要先通過這種動物的身體，才會成為麝香貓咖啡。",
+   "__32__ 椰子狸分布在南亞和東南亞，晚上出來活動，常常跑到咖啡園吃咖啡果實。牠把果實整顆吞下去，但只消化外層柔軟的果肉。農民再從牠的糞便裡挑出堅硬的咖啡豆，洗乾淨後拿去烘焙。",
+   "咖啡豆雖然完好地通過椰子狸的身體，出來的時候卻已經不是原來的樣子。椰子狸消化系統裡的消化液會分解咖啡豆裡的一部分蛋白質，一般認為這會讓咖啡比較不苦。不過，消化作用可能不是全部的原因。__33__",
+   "據說麝香貓咖啡的味道和其他咖啡都不一樣，帶有焦糖的香氣和泥土般的風味。不過，它這麼受歡迎，椰子狸卻付出了很高的代價。__34__ 這些椰子狸幾乎只吃得到咖啡果實，又被養在鐵絲網地板上，有些變得很瘦，身上還長出疼痛的瘡。而且，牠們沒辦法自己挑選果實，產出的咖啡品質往往也比較差。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 99 年指考閱讀測驗〈麝香貓咖啡（Kopi Luwak）的獨特產製與價格〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 21,
+   "選項字數區間": "13-16",
+   "選項字數全距": 3,
+   "選項長度變異係數": "9.4%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 z99p3；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ },
+ {
+  "id": "DSA-zref95p4",
+  "year": "（三十）",
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "title": "馬雅城市為什麼消失（Why the Mayan Cities Vanished）",
+  "titleStatus": null,
+  "blankCount": 4,
+  "optionCount": 5,
+  "spec": "5選4",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "D"
+  ],
+  "blankRange": [
+   31,
+   34
+  ],
+  "options": {
+   "A": "Experts still disagree about the causes, but several factors seem to have played a part.",
+   "B": "Mayan culture survived, and it is still alive today in the villages of the region.",
+   "C": "It is famous for its written language, striking art, huge buildings, and advanced mathematics and astronomy.",
+   "D": "Today, the ruins of many old Mayan cities attract tourists from all over the world.",
+   "E": "To feed their growing numbers, the Maya cleared more and more of the forest for farming."
+  },
+  "optionsZh": {
+   "A": "專家對原因至今看法不一，不過有幾個因素似乎都起了作用。",
+   "B": "馬雅文化留存了下來，至今仍在這個地區的村落裡延續著。",
+   "C": "它以文字、引人注目的藝術、宏偉的建築，以及先進的數學和天文學聞名。",
+   "D": "今天，許多古老馬雅城市的遺跡，吸引了世界各地的觀光客。",
+   "E": "為了養活越來越多的人口，馬雅人把越來越多的森林開墾成農地。"
+  },
+  "unusedExplanation": {
+   "opt": "D",
+   "lead": "D 說許多古老馬雅城市的遺跡，今天吸引了世界各地的觀光客。它和全篇談的是同一批城市，文法也沒有問題；`Today`（今天）、`Mayan cities`（馬雅城市）這些字，又和第二段講城市衰落、重新發現的內容很像，放在第 32 格乍看很順。問題在於：**全篇要回答的是這些城市為什麼消失，D 講的卻是城市的遺跡今天成了觀光景點。**所以四個空格都放不下：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "把第一句「了不起的文明」講具體，列出這個文明有哪些成就，後一句才接著說馬雅文化怎麼成形、發展到高峰",
+     "why": "觀光客是今天的事，後一句卻接著說馬雅文化在前古典期成形，時間順序不對；D 也列不出任何成就"
+    },
+    {
+     "blank": 32,
+     "want": "說出馬雅有什麼東西沒有跟著城市一起消失，和後一句「消失的只有城市，它們淹沒在叢林裡」形成對比",
+     "why": "D 講的仍然是城市，說不出有什麼東西的下場和城市不同；後一句說消失的「只有」城市，D 卻說這些城市的遺跡今天還吸引觀光客，前後也對不上"
+    },
+    {
+     "blank": 33,
+     "want": "從上一段的問題轉到原因，預告後面要談的幾個因素",
+     "why": "D 沒有回答城市為什麼消失，後面的戰爭、人口過多也就少了一句交代「這些是原因」的話"
+    },
+    {
+     "blank": 34,
+     "want": "把人口稠密和下一段的樹木所剩無幾連起來",
+     "why": "D 和人口、森林都沒有關係，下一段花粉研究發現樹木所剩無幾，就找不到來由"
+    }
+   ],
+   "summary": "**全篇問的是「馬雅城市為什麼消失」，一路從興盛、衰落談到原因，D 談的卻是那些城市的遺跡今天成了觀光景點。**這一篇多出來的 D 屬於「主題相同，切面不對」，和 115 學測多出來的 D 同一類。至於 115 學測參考試卷多出來的 C，則屬於「切面對，卻沒有段落在等它」，和這一篇不同。",
+   "extra": [],
+   "takeaway": "先抓住全篇在回答什麼問題，再看每一個選項是不是在談這個問題。這一篇從城市怎麼興盛、怎麼衰落一路談到原因，講今天觀光景點的那一句，再怎麼像第二段的內容，也不在這條主線上。"
+  },
+  "paraLabels": [
+   "背景：馬雅文明的範圍、成就與鼎盛時期",
+   "轉折：古典期結束後城市衰落、文化留存，引出城市為什麼消失的問題",
+   "原因：城邦之間的戰爭，以及人口過多帶來的森林開墾",
+   "後果與結論：森林消失、環境受損、缺水乾旱，歸納四項因素"
+  ],
+  "marks": [
+   [
+    0,
+    "The Maya built a remarkable civilization that covered much of what is now southern Mexico and northern Central America.",
+    "topic"
+   ],
+   [
+    1,
+    "Strangely, after the Classic Period ended, many of these cities ceased to be centers of importance.",
+    "topic"
+   ],
+   [
+    1,
+    "One question that interests scholars is why these cities simply disappeared.",
+    "thesis"
+   ],
+   [
+    2,
+    "__33__",
+    "topic"
+   ],
+   [
+    3,
+    "Studies of ancient pollen show that in many areas, very few trees were left.",
+    "topic"
+   ],
+   [
+    3,
+    "Thus warfare, overpopulation, overuse of resources, and destruction of the environment all appear to be factors in the disappearance of the Mayan cities.",
+    "thesis"
+   ],
+   [
+    1,
+    "Rather than",
+    "trans"
+   ],
+   [
+    1,
+    "Strangely",
+    "trans"
+   ],
+   [
+    2,
+    "Toward the end of the Classic Period",
+    "trans"
+   ],
+   [
+    2,
+    "also",
+    "trans"
+   ],
+   [
+    3,
+    "Thus",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "The Maya built a remarkable civilization that covered much of what is now southern Mexico and northern Central America. __31__ Mayan culture took shape in the Preclassic Period, but it reached its highest development in the Classic Period, from about 250 to 900 AD. During this time, Mayan society was one of the most densely populated and culturally active in the world.",
+   "Rather than a single empire, Mayan civilization was made up of many separate city-states that shared a common culture. Strangely, after the Classic Period ended, many of these cities ceased to be centers of importance. __32__ Only the cities were lost, swallowed up by the tropical jungle. Not until the last two hundred years or so did travelers and scholars rediscover and study them. One question that interests scholars is why these cities simply disappeared.",
+   "__33__ Toward the end of the Classic Period, there was large-scale, continuous warfare among the city-states. The rulers were highly competitive and made fierce war on one another. Overpopulation was probably also to blame. The Mayan population reached as many as 200 people per square kilometer, among the highest densities in the pre-industrial world. __34__",
+   "Studies of ancient pollen show that in many areas, very few trees were left. The loss of so many trees damaged the local environment and helped cause a lack of water and, in time, drought. Thus warfare, overpopulation, overuse of resources, and destruction of the environment all appear to be factors in the disappearance of the Mayan cities."
+  ],
+  "zhTranslation": [
+   "馬雅人建立了一個了不起的文明，範圍涵蓋今天墨西哥南部和中美洲北部的大片地區。__31__ 馬雅文化在前古典期逐漸成形，到了古典期（大約西元 250 年到 900 年）才發展到最高峰。在這段期間，馬雅社會是世界上人口最稠密、文化最活躍的社會之一。",
+   "馬雅文明不是一個統一的帝國，而是由許多各自獨立、文化相同的城邦組成。奇怪的是，古典期結束以後，其中許多城市就不再是重要的中心了。__32__ 消失的只有城市，它們淹沒在熱帶叢林裡。一直到最近兩百年左右，旅人和學者才重新發現這些城市，開始研究它們。學者感興趣的一個問題，就是這些城市為什麼就這樣消失了。",
+   "__33__ 到了古典期末期，城邦之間爆發大規模、持續不斷的戰爭。統治者彼此競爭激烈，互相猛烈攻伐。人口過多可能也是原因。馬雅的人口密度最高達到每平方公里 200 人，在前工業時代的世界裡數一數二。__34__",
+   "古代花粉的研究顯示，在許多地區，樹木已經所剩無幾。失去這麼多樹木，破壞了當地的環境，也是造成缺水、後來發生乾旱的原因之一。因此，戰爭、人口過多、資源過度利用和環境破壞，似乎都是馬雅城市消失的因素。"
+  ],
+  "reading": [],
+  "flagNote": "本題庫改編練習：文章改編自 95 課綱指考參考試卷（98 年施測）閱讀測驗〈馬雅文明的興衰與城市消失原因〉，照現行學測篇章結構的版面出題（第 31–34 題，5 選 4），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "sourceFile": null,
+  "internalNote": {
+   "_說明": "命題端量測，網站不顯示，供審稿使用",
+   "還原後句數": 19,
+   "選項字數區間": "15-16",
+   "選項字數全距": 1,
+   "選項長度變異係數": "3.2%",
+   "建檔": "2026-10-12 依第三版命題規格（大考中心命題工作坊原則）重做；改編自 zref95p4；命題分身出題，盲測與四方審閱後裁定修訂。"
+  }
+ }
+]

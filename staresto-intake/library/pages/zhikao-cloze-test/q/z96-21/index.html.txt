@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z96-21/index.html
+Author: staresto-create ZZSH
+Title: 96 年指考克漏字第21題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 96 年指考 ／ 第21題
+96 年指考 克漏字 第21題
+字彙選義線索：跨句答對率 49%
+答對率 49%：當年每 100 位考生，有 49 位答對。
+Scientists expect it to increase an 21 2° to 6° F over the next one hundred years.
+(A)extreme
+(B)additional
+(C)immediate
+(D)original
+答案：(B) additional
+題目編號：Z96_21（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+additional 2° to 6° F（額外的 2 到 6 華氏度）表示在過去一世紀已上升近 1°F 的基礎上，未來一百年還會再增加 2 到 6 度；extreme／immediate／original 都不符合此處語意。
+深入解析
+你可能會這樣想
+四個選項都是形容詞，都能擺在 an 與數字之間，你會憑中文挑一個。
+怎麼判斷
+答對率不到五成。空格前是 increase an ______，後面接的是一個溫度的增幅（兩到六華氏度）。increase an additional + 數量 是成組的說法，意思是「再增加多少」。為什麼是「再」：這一段的主題句 Average global temperature has increased by almost 1°F over the past century（過去一世紀全球平均溫度已上升將近一華氏度）已經先講過一次上升，空格這一句講的是未來一百年還要在那之上再加。填進去讀成 increase an additional two to six degrees（再增加兩到六度）。這一格真正該學起來的不只是這個字：同一個現象，文章前後會換不同的說法再講一次。主題句用 increased by（上升了多少），空格這一句改用 increase an additional（再增加多少），講的是同一件事的兩個階段。讀克漏字時把整段的核心概念放在心上，遇到空格先問一句「這是不是在把前面講過的事換個說法再說一遍」，很多格就是這樣定下來的。
+誘答選項
+extreme（極端的）是在評價幅度大不大，但這一句只是在報數字；immediate（立即的）講的是時間上的馬上，與「未來一百年」矛盾；original（原本的、最初的）指的是最早那一個，這裡講的卻是後來再增加的部分。三個都是形容詞，形態吻合，容易被順手選走。
+常考字詞與句型
+an additional + 數量（額外的、再增加的）、in addition（此外）、increase by + 幅度（增加了多少）、average global temperature（全球平均溫度）、over the next hundred years（在接下來一百年）、original（原本的、最初的）。
+線索範圍說明：an additional 的「額外」相對於主題句的 increased by almost 1°F
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：96學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Average global temperature has increased by almost 1°F over the past century. Scientists expect it to increase an 21 2° to 6°F over the next one hundred years. This may not sound like much, but it could change the Earth's climate as 22 before.
+Climate change may affect people's health both directly and indirectly. For instance, heat stress and other heat-related health problems are caused directly by very warm temperatures. 23, human health can also be affected by ecological disturbances, changes in food and water supplies, as well as coastal flooding.
+How people and nature 24 climate change will determine how seriously it affects human health. Generally, poor people and poor countries are 25 probable to have the money and resources they need to cope with health problems due to climate change.
+中譯：過去一世紀以來，全球平均氣溫已上升將近華氏 1 度（不到攝氏 0.6 度）。科學家預期未來一百年氣溫還會再上升華氏 2 到 6 度（約攝氏 1.1 到 3.3 度）。這聽起來或許沒什麼大不了，但它可能會以前所未有的方式改變地球的氣候。氣候變遷可能直接或間接影響人類健康。例如，熱壓力及其他與高溫有關的健康問題就是由酷熱直接造成的。此外，人類健康也可能間接受到生態失衡、糧食與水資源供給改變，以及沿海洪患等因素影響。人與自然如何適應氣候變遷，將決定氣候變遷對人類健康影響的嚴重程度。整體而言，貧窮的人與貧窮的國家較不可能擁有足夠的金錢與資源，來應付因氣候變遷而產生的健康問題。
+📋 內容大意
+Global temperature has risen about one degree and may climb several more within a century.
+Warming harms health through heat itself and through disturbed food, water and coastal flooding.
+How people and nature meet the change decides the damage, and poorer countries can least afford it.
+← 第20題回到96 年指考第22題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

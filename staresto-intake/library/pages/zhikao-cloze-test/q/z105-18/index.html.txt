@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z105-18/index.html
+Author: staresto-create ZZSH
+Title: 105 年指考克漏字第18題詳解（時態／語態）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 105 年指考 ／ 第18題
+105 年指考 克漏字 第18題
+時態／語態線索：句內答對率 51%
+答對率 51%：當年每 100 位考生，有 51 位答對。
+By the time he was 23, he had already come up with the idea of what 18 the modern computer—the Turing machine.
+(A)would become
+(B)should become
+(C)could have become
+(D)had become
+答案：(A) would become
+題目編號：Z105_18（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【過去的未來】would become 表示「未來將成為」，站在過去時間點描述後來成真的未來事件（此構想後來發展成現代電腦）。should become（應該成為）、could have become（本可能成為，暗示未實現）、had become（過去完成式，時序矛盾）都不合文意。
+深入解析
+你可能會這樣想
+空格前一個子句剛用過 had already come up with（過去完成式），對稱的慣性會讓你想再選一次同樣的形態，had become 於是讀起來特別順；句首的 By the time he was 23 又是過去完成式的典型訊號，更加深了這個念頭。答對率只有五成一。
+怎麼判斷
+四個選項是同一個動詞 become 配上四種不同的助動詞，但它們問的不是同一件事：would 問的是時間方向，should 問的是語氣，could have 問的是和事實相不相符，had 問的是先後順序。一格要同時判四樣，所以動手之前先把句子的結構定下來，再一項一項刷。先看 what 在子句裡站哪個位置：the idea of what ______ the modern computer，what 是複合關係代名詞（等於 the thing that），它自己就是這個子句的主詞，所以空格填的必定是這個子句的動詞。接著把時間軸排出來：圖靈 23 歲那年（過去）想出了一個構想，那個構想是後來才發展成現代電腦的。站在過去往後看，用的是過去的未來，形態就是 would 加原形。掛鉤是間接引述 He said he would come.（他說他會來）：說的動作在過去，來的動作在那之後。填 would become，讀成「後來會成為現代電腦的那個東西」，時間軸才對得上。這一題的鑑別度只有 23，連高分群考生也在這裡失手，原因就在前一個子句的 had already come up with：對過去完成式越敏感的人，越容易把它當成整句的基準形態照抄一次。但那個過去完成式說的是「想出構想」比 23 歲更早，方向往前；空格這一格要往後看，方向相反，不能照抄。
+誘答選項
+had become 方向剛好相反，它表示「在 23 歲之前就已經是現代電腦」，但現代電腦是後來的事，時間顛倒了。should become 的 should 帶著建議或義務的口吻，這一句只是在敘述後來發生的事，沒有人在建議什麼。could have become 是「本來有可能成為，但實際上沒有」，與事實不符——同一段後面還寫著 Today, Turing machines are still used in theoretical computation.
+常考字詞與句型
+would 加原形（站在過去看未來，後來會……）、come up with（想出、提出）、by the time 加子句（到……的時候）、what 等於 the thing that（複合關係代名詞）、could have 加過去分詞（本來有可能……但沒有）、be used in（用於……）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：105學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Alan Turing was one of the leading scientific geniuses of the 20th century. Many scholars consider him the father of modern computer science. He was also the man who cracked the 16 uncrackable Enigma code used by Nazi Germany. His code-breaking turned the tide of World War II and helped save two million lives. Nevertheless, 17 people have even heard his name. Turing displayed signs of high intelligence in math and science at a young age. By the time he was 23, he had already come up with the idea of what 18 the modern computer—the Turing machine. Today, Turing machines are still used in theoretical computation. He also proposed the now famous Turing test, used to determine whether a computer exhibits intelligent behavior equivalent to that of a human.
+The postwar era, however, was a disaster for Turing. He was gay, which was then a crime in Britain. 19 being hailed as one of the crucial figures in defeating the Nazis, Turing was convicted of "gross indecency." This 20 drove him to commit suicide in 1954, at the age of 41.
+Nearly 60 years after his death, Queen Elizabeth II granted Turing a formal pardon for his conviction, upon an online petition signed by prominent scientists and technology leaders around the world.
+中譯：艾倫．圖靈是二十世紀最頂尖的科學天才之一，許多學者將他視為現代電腦科學之父。他也是破解納粹德國所使用、據稱牢不可破的恩尼格瑪密碼的人。他的破密工作扭轉了第二次世界大戰的局勢，並拯救了兩百萬條人命。然而，卻鮮少有人聽過他的名字。圖靈從小就在數學與科學方面展現高度智慧。到了 23 歲，他便已構思出後來發展成現代電腦的概念——圖靈機。時至今日，圖靈機仍應用於理論計算領域。他也提出了如今著名的圖靈測試，用來判斷電腦是否展現出與人類相當的智慧行為。然而，戰後時期對圖靈而言卻是一場災難。他是同性戀者，而這在當時的英國是一項罪行。他非但沒有因擊敗納粹的重大貢獻而受到推崇，反而被判「嚴重猥褻罪」有罪。這樣的屈辱最終導致他於 1954 年、41 歲時自殺身亡。在他死後將近 60 年，伊莉莎白二世女王在全球知名科學家與科技領袖連署的網路請願下，正式赦免了他的罪名。
+📋 內容大意
+Alan Turing, called the father of computer science, broke the Enigma code and helped turn the Second World War.（敘事文）
+Gifted young, by twenty-three he had conceived the Turing machine, the idea behind modern computers.（敘事文）
+He also devised the Turing test, but postwar Britain convicted him for being gay.（敘事文）
+He took his own life in 1954, and a royal pardon came nearly sixty years later.（敘事文）
+← 第17題回到105 年指考第19題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

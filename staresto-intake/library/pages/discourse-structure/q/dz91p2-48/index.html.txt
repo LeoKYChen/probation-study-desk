@@ -1,0 +1,44 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dz91p2-48/index.html
+Author: staresto-create ZZSH
+Title: 指考 91年（第二篇） 篇章結構 第48題詳解（掌握段落主題句和細節的關係）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 指考 91年（第二篇） ／ 第48題
+指考 91年（第二篇） 篇章結構 第48題
+選文：雨刷的發明（The Invention of Windshield Wipers）
+掌握段落主題句和細節的關係線索：人稱代名詞所有格答對率 35%
+(A)Her solution was simple.她的辦法很簡單。
+(B)A year later, she received a patent for it.一年後，她取得了這項裝置的專利。
+(C)Its function of wiping rain was later considered and added.後來才想到並加上了刷雨的功能。
+(D)Instead, she paid much attention to the streetcar motorman.她反而把注意力放在電車駕駛身上。
+(E)Wiping off the snow and ice by hands, however, seemed to be the only solution.然而，用手把雪和冰擦掉似乎是唯一的辦法。
+答案：(A) Her solution was simple.
+題目編號：Dz91p2_48
+解析
+先看空格後面。 後面整句在說明那個裝置怎麼運作：駕駛拉車內的一支拉桿，帶動玻璃外的一支搖臂，把雪和冰刷掉。這是細節。
+再看空格前面。 前面說 Mary 坐在位子上把裝置畫進素描本。這時讀者只知道「她畫了東西」，還不知道那是什麼。
+中間需要一句先給總評的話。A 只有四個字，後面那一整串正是在證明「簡單」。
+這題為什麼只有三成五的人對：A 短、又沒有任何一個字和上下文重複。這種題目要靠段落功能判斷——先總說、後細說是很常見的排法。另外 Her 與前一句主詞 Mary 相接，是唯一看得見的線索。
+【下次先看這裡】後面是一長串細節，空格常是那句「先給評價」的短句，別因為它短就跳過。
+線索與數據
+線索種類人稱代名詞所有格
+線索在哪前一句 Her
+答對率35%
+鑑別度54
+本篇題型5選5・刪去法可收尾
+數據出處：本頁的答對率與鑑別度來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響。
+展開本題所在的整篇選文與中文翻譯
+本篇共 5 格、5選5；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+Windshield wipers of a car were invented by Mary Anderson on a trip in New York City in 1903. While touring the city on a streetcar, Mary was not interested in the views on the streets. 46 Repeatedly, the motorman had to get out of the streetcar to wipe off the snow and ice collected on the windshield. New York streetcar motormen at that time had tried various ways to solve this problem. 47 Mary, sitting on her seat, quickly drew her device in her sketchbook. 48Her solution was simple. Mary’s device allowed the motorman to use a lever inside the streetcar to activate a swinging arm on the windshield to wipe off the snow and ice. Because the device was first designed for cold weather, it could be easily removed when warmer weather arrived. 49 Even though her friends teased her about her awkward invention attached to a streetcar, Mary didn’t give in to peer pressure. 50 By 1913, her invention became standard equipment on American cars. Windshield wipers save lives and make it easier to drive through storms.
+中譯
+汽車的雨刷是 Mary Anderson 在一九○三年一趟紐約市之行中發明的。搭電車遊覽這座城市的時候，Mary 對街上的景色沒有興趣。46 駕駛得一再走出電車，把擋風玻璃上積的雪和冰擦掉。當時紐約的電車駕駛試過各種辦法解決這個問題。47 Mary 坐在座位上，很快就把她的裝置畫進素描本裡。48 Mary 的裝置讓駕駛可以在電車裡操作一根拉桿，帶動擋風玻璃上一支搖臂，把雪和冰刷掉。由於這個裝置一開始是為寒冷天氣設計的，天氣轉暖時可以輕易拆下來。49 儘管朋友取笑她把這個古怪的發明裝在電車上，Mary 並沒有屈服於同儕壓力。50 到了一九一三年，她的發明成為美國汽車的標準配備。雨刷挽救性命，也讓人在暴風雨中開車變得比較容易。
+← 第47題回到互動練習第49題 →
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

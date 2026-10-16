@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g99-27-3/index.html
+Author: staresto-create ZZSH
+Title: 99 年學測克漏字第27題詳解（句型結構）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 99 年學測 ／ 第27題
+99 年學測 克漏字 第27題
+句型結構線索：句內答對率 47%
+答對率 47%：當年每 100 位考生，有 47 位答對。
+The chemicals can be absorbed into the body and 27 physical discomfort, such as stomach cramps and diarrhea.
+(A)cause
+(B)causing
+(C)caused
+(D)to cause
+答案：(A) cause
+題目編號：G99_27_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+並列動詞結構「can be absorbed...and cause」（可以被吸收並且導致身體不適），與前面 can 的並列結構保持一致用原形動詞 cause；causing（現在分詞）、caused（過去式/分詞）、to cause（不定詞）都不合這個並列動詞結構。
+深入解析
+你可能會這樣想
+看到 and 前面是 can be absorbed（被動），很多人以為後面也要一起用被動，就挑了 caused；也有人直覺補一個現在分詞 causing。這一格答對率只有四成七，難就難在——and 只告訴你「兩邊的形態要一樣」，它告訴不了你「這個動作是主動還是被動」。那一層只能靠讀懂句子的意思。
+怎麼判斷
+分兩層做，順序不能顛倒。第一層：形態。把整句的結構拉出來——The chemicals can be absorbed into the body and ___ physical discomfort.整句只有一個助動詞 can，而 and 連接的是 can 後面的兩個動作：can be absorbed（可以被吸收）與 can ___（可以……）。既然共用同一個 can，第二個動作也必須是原形動詞。最簡單的例子：I can sing and dance.——dance 前面不必再放一次 can，但形式一定要和 sing 一樣是原形。第二層：語態。這一層 and 幫不上忙，只能回頭讀句子在講什麼。化學物質是「被」人體吸收的（被動），但造成身體不適的是化學物質「自己」（主動）——兩個動作的方向不一樣。所以第二個動詞不能一起用被動，填原形主動的 cause。還原成兩句驗算最清楚：The chemicals can be absorbed into the body. 加上 The chemicals can cause physical discomfort.（這些化學物質會被人體吸收，並且可能造成身體不適。）記住這一句：同一個主詞底下的兩個並列動詞，形態要一致，語態可以不一樣。看到 and 就整組照抄的人，正是在這一格失手。同型的還有 93 年第 25 題 →（答對率只有二成五）：那一題的 and 連接 To contribute 與 (to) save 兩個不定詞，形態同樣一望即知，但真正的難處是「前半那一整串在句子裡是什麼功能」——它不是第二個祈使句，是表目的的不定詞片語。兩題可以擺在一起看：and 只解決「兩邊要一樣」，解決不了「這一整串在句子裡扮演什麼角色」。（形態一致的其他例子：100 年第 19 題 →是介系詞 by 後面三個動名詞並列。）
+誘答選項
+caused：這是本題最容易選的一個。當過去分詞看，會變成「被造成」，方向錯了——不適是化學物質造成的，不是化學物質被不適造成；當過去式看，則與前面的 can 衝突（can 後面只能接原形）。挑它的人多半是看到前面是被動就照著填被動，那正是「只套並列、不讀句意」的結果。causing：現在分詞，會變成補充說明的分詞構句；但前面已經有 and，and 後面要接的是與前面對等的成分，不是分詞。to cause：不定詞若表目的，會變成「為了造成不適而被吸收」，語意荒謬。
+常考字詞與句型
+can be p.p. and V（共用助動詞，形態一致語態可不同）、cause discomfort（造成不適）、be absorbed into（被吸收進……）、stomach cramps（胃痙攣）、physical discomfort（身體不適）、such as（例如）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Many people like to drink bottled water because they feel that tap water may not be safe, but is bottled water really any better? Bottled water is mostly sold in plastic bottles and that's why it is potentially health 26 . Processing the plastic can lead to the release of harmful chemical substances into the water contained in the bottles. The chemicals can be absorbed into the body and 27 physical discomfort, such as stomach cramps and diarrhea. Health risks can also result from inappropriate storage of bottled water. Bacteria can multiply if the water is kept on the shelves for too long or if it is exposed to heat or direct sunlight. 28 the information on storage and shipment is not always readily available to consumers, bottled water may not be a better alternative to tap water.
+Besides these 29 issues, bottled water has other disadvantages. It contributes to global warming. An estimated 2.5 million tons of carbon dioxide were generated in 2006 by the production of plastic for bottled water. In addition, bottled water produces an incredible amount of solid 30 . According to one research, 90% of the bottles used are not recycled and lie for ages in landfills.
+中譯：許多人喜歡喝瓶裝水，因為他們覺得自來水可能不安全，但瓶裝水真的比較好嗎？瓶裝水大多裝在塑膠瓶中，這正是它可能危害健康的原因。塑膠加工過程可能釋放有害化學物質到瓶內的水中。這些化學物質一旦被人體吸收，可能會造成身體不適，例如胃痙攣和腹瀉。不當儲存瓶裝水也可能帶來健康風險——如果水被放置在架上過久，或暴露在高溫或陽光直射下，細菌就可能大量繁殖。由於消費者往往無法輕易得知瓶裝水的儲存與運送資訊，瓶裝水未必比自來水更好的選擇。除了這些安全疑慮之外，瓶裝水還有其他缺點：它會加劇全球暖化——據估計，2006 年生產瓶裝水所需的塑膠就產生了 250 萬噸二氧化碳。此外，瓶裝水也製造了驚人數量的固體廢棄物，根據一項研究，使用過的瓶子有 90%沒有被回收，長年堆積在垃圾掩埋場中。
+📋 內容大意
+Many people choose bottled water over tap water, believing it safer, but the plastic bottle itself creates health risks.
+Processing plastic can release harmful chemicals into the water, leading to stomach cramps and diarrhea, and bacteria multiply when bottles sit too long or stand in heat or sunlight.
+Storage and shipment information rarely reaches consumers, and bottled water also drives global warming and leaves an enormous quantity of unrecycled plastic, about 90% of which ends up in landfills.
+← 第26題回到99 年學測第28題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

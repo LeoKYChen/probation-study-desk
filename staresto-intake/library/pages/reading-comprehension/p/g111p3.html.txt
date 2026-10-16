@@ -1,0 +1,167 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/g111p3.html
+Author: staresto-create ZZSH
+Title: 111 學測閱讀測驗：斑馬魚的再生能力｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 111 學測
+111 學測閱讀測驗：斑馬魚的再生能力
+The Regenerative Ability of Zebrafish
+學測 111年第 43–46 題4 題
+本篇與 115 學測參考試卷第 43–46 題一字不差，屬官方整題回收。兩份試卷各自收錄，練習時可以互相對照。
+前往對照：115 學測參考試卷閱讀測驗第 43–46 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段Zebrafish, named for their characteristic stripes, have been a popular test subject for researchers. Only a few centimeters in length, the fish breed easily in captivity, grow quickly, and their transparent body makes it easy to study their organs. Above all, they possess some amazing “self-healing” power. When part of their heart is removed, they can grow it back in a matter of weeks. When blinded, they can quickly regain the ability to see.
+第 2 段Recent studies show that humans and zebrafish have the same major organs and share 70 percent of the genes. Moreover, 84 percent of human genes associated with disease find a counterpart in zebrafish. Scientists thus hope that understanding the self-healing mystery of the fish may one day allow humans to regenerate such organs as eyes, hearts, and spines.
+第 3 段Researchers at Vanderbilt University are particularly interested in zebrafish retina regeneration. They have learned that damage of retina can cause blindness in zebrafish, yet it only takes about three to four weeks before vision is restored. The structure and cell types of zebrafish retinas are almost identical to those of humans. If the process can be replicated in humans, it may give rise to new treatments for blindness caused by retinal damage.
+第 4 段In order to know exactly how zebrafish retina is regenerated, the team looked at the neurotransmitter gamma-aminobutyric acid (GABA), a chemical messenger in the brain that reduces the activity of neurons. They found that lowering GABA levels in zebrafish can trigger retina regeneration, while a high level of GABA concentration will suppress the regeneration process. This suggested that GABA plays an important role in the fish’s ability to regain their sight.
+第 5 段The team is beginning to test the GABA theory on mice. If that works, human trials will be next on the agenda. If the research proves successful in humans, some of the nearly 40 million blind people worldwide may one day have a tiny, striped fish to thank.
+題目
+43.What can we learn about zebrafish from the passage?
+(A)How they should be studied in labs.
+(B)Where they derive their regenerative ability.
+(C)Why they share humans’ genetic code.
+(D)What they may offer in medical advancements.
+44.Which of the following statements is true regarding GABA in zebrafish?
+(A)Increasing GABA level facilitates neuron activities.
+(B)There is a high level of GABA in the brain of zebrafish.
+(C)Lowering GABA levels in the brain can stimulate retina regrowth.
+(D)GABA contains chemical elements that trigger the growth of neurons.
+45.Which of the following is closest in meaning to “replicated” in the third paragraph?
+(A)Reproduced.
+(B)Reassembled.
+(C)Recycled.
+(D)Restored.
+46.According to the passage, which of the following is an opinion, but NOT a fact?
+(A)Humans and zebrafish have 70 percent of genes in common.
+(B)Zebrafish can quickly recover vision after damage to the retina.
+(C)Scientists are testing if the GABA theory works on mice as it does on zebrafish.
+(D)Understanding regeneration in zebrafish may allow humans to regrow their organs.
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+43
+(D)
+60%
+65
+44
+(C)
+58%
+61
+45
+(A)
+48%
+45
+46
+(D)
+48%
+55
+答對率與鑑別度出處：大考中心 111 學年度學科能力測驗統計圖表：英文科答對率及鑑別度表
+每一題的依據句
+第 43 題 細節題 Supporting details
+第 2 段Scientists thus hope that understanding the self-healing mystery of the fish may one day allow humans to regenerate such organs as eyes, hearts, and spines.
+第 3 段it may give rise to new treatments for blindness caused by retinal damage
+原文 → 正確選項
+new treatments → medical advancements
+第 2 段說斑馬魚或許能讓人類的器官再生，第 3 段說可能帶來治療失明的新療法，這些都是醫學上的進展。(A) 第 1 段的 study 講的是斑馬魚身體透明、容易研究，說的是為什麼常拿斑馬魚做研究，文章沒有說應該怎麼研究；(B) 文章只說 GABA 在視網膜再生中扮演重要角色，沒說再生能力從哪裡來；(C) 只說基因有 70% 相同，沒說為什麼相同。
+第 44 題 細節題（何者為是） Supporting details
+第 4 段They found that lowering GABA levels in zebrafish can trigger retina regeneration
+原文 → 正確選項
+trigger retina regeneration → stimulate retina regrowth
+trigger 在選項換成 stimulate，regeneration 換成 regrowth。(A) 方向相反，原文說 GABA 降低神經元的活動；(D) 照抄同一段的 chemical 和 trigger，可是會啟動再生的是降低 GABA，不是 GABA 含有什麼成分；(B) 文章沒有比較斑馬魚腦中 GABA 的高低。
+第 45 題 詞義題 Vocabulary in context
+第 3 段If the process can be replicated in humans, it may give rise to new treatments for blindness caused by retinal damage.
+原文 → 正確選項
+replicated → Reproduced
+把斑馬魚視網膜再生的過程在人類身上「再做一次」，replicate 和 reproduce 都是複製、重現。(B) Reassembled 是把拆開的東西重新組裝，(C) Recycled 是回收再利用，兩個都不是把同一個過程再做一次。(D) Restored 照抄同一段 vision is restored，但恢復的是視力，不是把過程複製到人身上。
+怎麼從前後文推出字義 →
+第 46 題 推論題 Inference
+第 2 段Scientists thus hope that understanding the self-healing mystery of the fish may one day allow humans to regenerate such organs as eyes, hearts, and spines.
+原文 → 正確選項
+may one day allow humans to regenerate such organs → may allow humans to regrow their organs
+hope 和 may 表示的是科學家的期望和推測，還沒有證實，屬於意見。(A)、(B)、(C) 文章都當作研究結果或正在進行的事來陳述，是事實。
+逐段中譯
+第 1 段斑馬魚因身上特有的條紋而得名，一直是研究人員愛用的實驗對象。斑馬魚只有幾公分長，在人工飼養下容易繁殖、長得快，身體又是透明的，觀察器官十分方便。最重要的是，斑馬魚擁有驚人的「自我修復」能力：心臟切掉一部分，幾個星期就能長回來；眼睛看不見了，也能很快恢復視力。
+第 2 段近來的研究顯示，人類和斑馬魚有相同的主要器官，基因有 70% 相同。而且與疾病相關的人類基因，有 84% 在斑馬魚身上找得到對應的基因。因此科學家希望，弄懂斑馬魚自我修復的奧祕，或許有一天能讓人類的眼睛、心臟、脊椎這些器官再生。
+第 3 段范德堡大學的研究人員對斑馬魚視網膜的再生特別感興趣。他們發現，視網膜受損會讓斑馬魚失明，但只要大約三到四個星期，視力就能恢復。斑馬魚視網膜的結構和細胞種類幾乎和人類一模一樣，如果這個過程能在人類身上重現，或許能為視網膜受損造成的失明帶來新的療法。
+第 4 段為了弄清楚斑馬魚的視網膜究竟怎麼再生，研究團隊觀察了神經傳導物質 GABA（γ-胺基丁酸）。GABA 是腦中的化學信使，會降低神經元的活動。研究團隊發現，降低斑馬魚體內的 GABA 濃度可以啟動視網膜再生，GABA 濃度高則會抑制再生的過程。這表示 GABA 在斑馬魚恢復視力的能力中扮演重要的角色。
+第 5 段研究團隊開始在老鼠身上測試 GABA 的理論，如果成功，下一步就是人體試驗。要是研究在人體上也證實有效，全世界將近 4,000 萬名盲人當中，也許有些人有一天要感謝這種小小的條紋魚。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。沒有列出的段落，就是沒有主旨句，請對照「這一篇的文章結構」裡的綱要，找出那一段的重點。
+第 1 段Zebrafish, named for their characteristic stripes, have been a popular test subject for researchers.
+第 2 段Scientists thus hope that understanding the self-healing mystery of the fish may one day allow humans to regenerate such organs as eyes, hearts, and spines.
+第 3 段Researchers at Vanderbilt University are particularly interested in zebrafish retina regeneration.
+第 4 段This suggested that GABA plays an important role in the fish’s ability to regain their sight.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體說明文 Expository
+組織方式因果關係 Cause-Effect這一類怎麼辨識 →
+關鍵轉折詞Above allMoreoverthusyetIfwhileIf
+綱要
+斑馬魚是熱門研究對象，(Above all) 具有驚人的自癒能力，心臟、視力都能再生。
+人和斑馬魚有相同的主要器官，共享七成基因，(Moreover) 致病基因也多有對應，(thus) 科學家希望藉此讓人類器官再生。
+范德堡大學研究視網膜再生，(yet) 斑馬魚失明後三、四週就能恢復，(If) 若能在人身上複製，可能治療失明。
+研究發現降低 GABA 濃度會啟動視網膜再生，(while) 濃度高則會抑制。
+團隊開始在老鼠身上測試，(If) 若成功，全球四千萬盲人或許要感謝這條小魚。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 17 個、參考字彙 17 個、字詞搭配 12 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+researcher[ˈrisɚʧɚ]n.研究人員四級第 1 段詞彙題考過 1 次：109 學測第 3 題（誘答）
+transparent[trænˈspɛrənt]adj.透明的五級第 1 段詞彙題考過 1 次：109 指考補考第 5 題（答案）
+possess[pəˈzɛs]v.擁有、具有四級第 1 段詞彙題考過 1 次：114 學測第 8 題 possessed（誘答）
+amazing （詞彙表：amaze）[əˈmeɪzɪŋ]adj.驚人的、令人驚嘆的三級第 1 段詞彙題考過 5 次：109 學測第 2 題 amazed（答案）、99 學測第 3 題 amazed（誘答）、96 學測第 15 題 amazed（答案）、86 推薦甄選第 5 題 amazement（誘答）、84 推薦甄選第 6 題 amazingly（誘答）
+associated （詞彙表：associate）[əˈsoʊsiˌeɪtɪd]adj.和……有關的（associated with）四級第 2 段詞彙題考過 3 次：110 學測第 14 題 associated（誘答）、108 學測第 3 題 associated（誘答）、105 學測第 7 題 associates（誘答）
+mystery[ˈmɪstəri]n.奧祕、謎三級第 2 段詞彙題考過 1 次：81 聯考第 10 題（誘答）
+regenerate （詞彙表：generate）[rɪˈʤɛnəˌreɪt]v.再生、重新長出五級第 2 段詞彙題考過 1 次：100 指考第 7 題 generated（誘答）
+vision[ˈvɪʒən]n.視力三級第 3 段詞彙題考過 2 次：101 學測第 1 題（誘答）、91 指考第 2 題（誘答）
+identical[aɪˈdɛntɪkəl]adj.完全相同的、一模一樣的四級第 3 段詞彙題考過 4 次：111 學測第 7 題（誘答）、102 指考第 8 題（誘答）、93 補救考試第 7 題（誘答）、90 聯考第 15 題（答案）
+process[ˈprɑsɛs]n.過程三級第 3 段詞彙題考過 4 次：100 學測第 8 題（答案）、96 指考第 2 題（誘答）、84 推薦甄選第 2 題（誘答）、81 聯考第 1 題（誘答）
+messenger[ˈmɛsənʤɚ]n.信使、傳遞訊息的物質（chemical messenger 化學信使）四級第 4 段詞彙題考過 2 次：106 指考第 3 題（誘答）、97 指考第 3 題 messengers（誘答）
+trigger[ˈtrɪgɚ]v.啟動、引發五級第 4 段詞彙題考過 1 次：109 指考第 4 題 triggered（誘答）
+concentration[ˌkɑnsənˈtreɪʃən]n.濃度四級第 4 段詞彙題考過 3 次：98 指考參考試卷第 2 題（誘答）、89 學測第 7 題（誘答）、85 推薦甄選第 4 題（誘答）
+code[koʊd]n.密碼（genetic code 遺傳密碼）四級第 43 題詞彙題考過 2 次：106 學測第 7 題（誘答）、105 指考第 1 題 codes（誘答）
+facilitate[fəˈsɪləˌteɪt]v.促進、使容易五級第 44 題詞彙題考過 2 次：102 指考第 1 題（誘答）、89 聯考第 14 題（答案）
+reassemble （詞彙表：assemble）[ˌriəˈsɛmbəl]v.重新組裝四級第 45 題詞彙題考過 1 次：85 聯考第 7 題（答案）
+recycle[rɪˈsaɪkəl]v.回收再利用四級第 45 題詞彙題考過 1 次：94 學測第 3 題 recycles（答案）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+zebrafish[ˈzibrəˌfɪʃ]n.斑馬魚表外第 1 段
+captivity[kæpˈtɪvəti]n.人工飼養、圈養六級第 1 段
+counterpart[ˈkaʊntɚˌpɑrt]n.對應的人或物六級第 2 段
+spine[spaɪn]n.脊椎五級第 2 段
+retina[ˈrɛtənə]n.視網膜表外第 3 段
+replicate[ˈrɛpləˌkeɪt]v.複製、重現表外第 3 段
+retinal[ˈrɛtənəl]adj.視網膜的表外第 3 段
+neurotransmitter[ˌnjʊroʊˈtrænsmɪtɚ]n.神經傳導物質表外第 4 段
+gamma-aminobutyric[ˈgæmə əˌminoʊbjuˈtɪrɪk]adj.γ-胺基（gamma-aminobutyric acid γ-胺基丁酸，簡稱 GABA）表外第 4 段
+neuron[ˈnjʊrɑn]n.神經元表外第 4 段
+suppress[səˈprɛs]v.抑制六級第 4 段
+agenda[əˈʤɛndə]n.待辦事項、議程（next on the agenda 下一步要做的事情）五級第 5 段
+derive[dɪˈraɪv]v.得到、取得（derive from）五級第 43 題
+regenerative[rɪˈʤɛnəˌreɪtɪv]adj.再生的表外第 43 題
+genetic[ʤəˈnɛtɪk]adj.基因的、遺傳的五級第 43 題
+stimulate[ˈstɪmjəˌleɪt]v.刺激、促進五級第 44 題
+reproduce[ˌriprəˈdus]v.重現、複製六級第 45 題
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+a test subject實驗對象第 1 段原文：a popular test subject for researchers
+breed in captivity在人工飼養下繁殖第 1 段原文：breed easily in captivity
+grow + sth + back（身體部位）再長回來第 1 段原文：they can grow it back
+in a matter of + 時間短短（幾週、幾天）之內第 1 段原文：in a matter of weeks
+regain the ability to + V恢復……的能力第 1 段原文：regain the ability to see
+be associated with + N和……有關第 2 段原文：human genes associated with disease
+be identical to + N和……完全相同第 3 段原文：almost identical to those of humans
+give rise to + N帶來、引發……第 3 段原文：it may give rise to new treatments
+play an important role in + N在……扮演重要角色第 4 段原文：GABA plays an important role in the fish’s ability
+on the agenda排入下一步的計畫第 5 段原文：human trials will be next on the agenda
+prove successful結果證明是成功的第 5 段原文：If the research proves successful
+have + sb／sth + to thank要感謝……第 5 段原文：may one day have a tiny, striped fish to thank
+← 上一篇篇目一覽
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

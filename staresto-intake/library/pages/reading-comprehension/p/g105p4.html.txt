@@ -1,0 +1,152 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/g105p4.html
+Author: staresto-create ZZSH
+Title: 105 學測閱讀測驗：海蛇的飲水策略｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 105 學測
+105 學測閱讀測驗：海蛇的飲水策略
+How Sea Snakes Drink
+學測 105年第 53–56 題4 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段Many marine animals, including penguins and marine iguanas, have evolved ways to get rid of excess salt by using special salt-expelling glands around their tongue. However, the sea snake’s salt glands cannot handle the massive amounts of salt that would enter their bodies if they actually drank seawater. This poses a serious problem when it comes to getting enough water to drink. If seawater is not an option, how does this animal survive in the ocean?
+第 2 段An international team of researchers focused on a population of yellow-bellied sea snakes living near Costa Rica, where rain often does not fall for up to seven months out of the year. Because yellow-bellied sea snakes usually spend all of their time far from land, rain is the animals’ only source of fresh water. When it rains, a thin layer of fresh water forms on top of the ocean, providing the snakes with a fleeting opportunity to lap up that precious resource. But during the dry season when there is no rain, snakes presumably have nothing to drink. Thus, the team became interested in testing whether sea snakes became dehydrated at sea.
+第 3 段The researchers collected more than 500 yellow-bellied sea snakes and weighed them. They found that during the dry season about half of the snakes accepted fresh water offered to them, while nearly none did during the wet season. A snake’s likelihood to drink also correlated with its body condition, with more withered snakes being more likely to drink, and to drink more. Finally, as predicted, snakes captured during the dry season contained significantly less body water than those scooped up in the rainy season. Thus, it seems the snake is able to endure certain degrees of dehydration in between rains. Scientists believe that dehydration at sea may explain the declining populations of sea snakes in some parts of the world.
+題目
+53.What is the purpose of the study described in this passage?
+(A)To test if sea snakes lose body water at sea.
+(B)To see whether sea snakes drink water offered to them.
+(C)To find out if sea snakes are greatly reduced in population.
+(D)To prove that sea snakes drink only water coming from rivers.
+54.Which of the following is true about sea snakes?
+(A)Their salt glands can remove the salt in the seawater.
+(B)They can drink seawater when it mixes with rainwater.
+(C)The ocean is like a desert to them since they don’t drink seawater.
+(D)They usually live near the coastal area where there is more fresh water.
+55.Which of the following is one of the findings of the study?
+(A)If a sea snake was dried and weak, it drank more fresh water.
+(B)If captured in the wet season, sea snakes drank a lot of fresh water.
+(C)Most of the sea snakes had lost a lot of body water when captured.
+(D)Dehydration is not a problem among sea snakes since they live at sea.
+56.What can be inferred from the study?
+(A)Sea snakes can easily survive long years of drought.
+(B)Evolution will very likely enable sea snakes to drink seawater.
+(C)Sea snakes will be the last creature affected by global warming.
+(D)The sea snakes’ population distribution is closely related to rainfall.
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+53
+(A)
+31%
+35
+54
+(C)
+44%
+39
+55
+(A)
+37%
+46
+56
+(D)
+58%
+53
+答對率與鑑別度出處：大考中心 105 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表
+每一題的依據句
+第 53 題 細節題 Supporting details
+第 2 段Thus, the team became interested in testing whether sea snakes became dehydrated at sea.
+原文 → 正確選項
+became dehydrated → lose body water
+第 2 段最後說研究團隊想知道海蛇在海上是否會脫水（became dehydrated），這就是研究目的，選項把 became dehydrated 換成 lose body water。(B) 照抄第 3 段的 offered to them，請海蛇喝淡水是研究的做法，不是目的；(C) 照抄第 3 段的 population，海蛇數量減少是研究結束後科學家提出的推測；(D) 原文說雨水是海蛇唯一的淡水來源，文章沒有提到河水。
+第 54 題 細節題（何者為是） Supporting details
+第 1 段However, the sea snake’s salt glands cannot handle the massive amounts of salt that would enter their bodies if they actually drank seawater.
+第 2 段But during the dry season when there is no rain, snakes presumably have nothing to drink.
+第 1 段說海蛇的鹽腺應付不了海水的鹽分，不能喝海水；第 2 段說乾季不下雨時，海蛇大概沒有水可以喝。身在一大片海水中卻沒水可喝，就像在沙漠裡一樣，所以是 (C)。(A) 照抄 salt glands，原文說的正好相反，海蛇的鹽腺排不掉喝海水帶進來的鹽；(D) 照抄第 2 段的 fresh water，原文說黃腹海蛇通常待在遠離陸地的海上；(B) 原文說下雨時海面會形成一層淡水，海蛇喝的是這層淡水，不是摻了雨水的海水。
+第 55 題 細節題 Supporting details
+第 3 段A snake’s likelihood to drink also correlated with its body condition, with more withered snakes being more likely to drink, and to drink more.
+原文 → 正確選項
+more withered → dried and weak
+drink more → drank more
+第 3 段說越乾瘦的海蛇（more withered）越可能喝水，也喝得越多，選項換成 dried and weak 和 drank more。(B) 照抄 wet season，原文說雨季時幾乎沒有海蛇喝水；(C) 照抄 body water，原文說的是乾季捕獲的海蛇體內水分比雨季少，不是大多數海蛇都失去很多水分；(D) 照抄 dehydration，研究發現海蛇會在海上脫水，脫水還可能造成某些地區海蛇減少，不是沒有問題。
+第 56 題 推論題 Inference
+第 2 段Because yellow-bellied sea snakes usually spend all of their time far from land, rain is the animals’ only source of fresh water.
+第 3 段Scientists believe that dehydration at sea may explain the declining populations of sea snakes in some parts of the world.
+第 2 段說雨水是黃腹海蛇唯一的淡水來源，第 3 段說科學家認為海上脫水可能是某些地區海蛇減少的原因。雨少的地方海蛇容易脫水、數量減少，可以推論海蛇分布在哪裡和雨量有密切關係，所以是 (D)。(A) 原文說海蛇只能在兩場雨之間忍受某種程度的脫水，不是能熬過多年乾旱；(B) 文章沒說海蛇會演化出喝海水的能力；(C) 文章沒有談全球暖化。
+逐段中譯
+第 1 段許多海洋動物，包括企鵝和海鬣蜥，都演化出排除多餘鹽分的方法，靠的是舌頭周圍專門排鹽的腺體。不過，海蛇如果真的喝下海水，大量的鹽分會進入體內，牠們的鹽腺應付不了。要喝到足夠的水，這就成了一個嚴重的問題。既然不能喝海水，這種動物要怎麼在海洋裡生存呢？
+第 2 段一個國際研究團隊鎖定一群住在哥斯大黎加附近的黃腹海蛇，當地一年中可能長達七個月不下雨。黃腹海蛇通常一直待在遠離陸地的海上，所以雨水是牠們唯一的淡水來源。下雨時，海面上會形成一層薄薄的淡水，海蛇才有短暫的機會舔飲這珍貴的資源。但是在不下雨的乾季，海蛇大概就沒有水可以喝了。因此，研究團隊想知道海蛇在海上是否會脫水。
+第 3 段研究人員捕捉了 500 多條黃腹海蛇，並替牠們秤重。他們發現，乾季時大約一半的海蛇會喝研究人員提供的淡水，雨季時則幾乎沒有一條海蛇會喝。海蛇喝不喝水，也和牠的身體狀況有關：越乾瘦的海蛇越可能喝水，也喝得越多。最後，一如預期，乾季捕獲的海蛇體內水分明顯比雨季捕獲的少。由此看來，海蛇似乎能在兩場雨之間忍受某種程度的脫水。科學家認為，海上脫水可能可以解釋某些地區海蛇數量為什麼減少。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。沒有列出的段落，就是沒有主旨句，請對照「這一篇的文章結構」裡的綱要，找出那一段的重點。這一篇沒有一句話直接點出全文中心思想，要讀完各段，自己歸納。
+第 3 段Thus, it seems the snake is able to endure certain degrees of dehydration in between rains.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體說明文 Expository
+組織方式問題解決 Problem-Solution這一類怎麼辨識 →
+關鍵轉折詞HoweverIfBecauseWhenButThuswhileFinallyThus
+綱要
+許多海洋動物能排出多餘鹽分，(However) 海蛇的鹽腺應付不了海水，(If) 那牠們不喝海水要怎麼生存？
+研究團隊鎖定哥斯大黎加附近的黃腹海蛇，(Because) 雨水是牠們唯一的淡水來源，(When it rains) 下雨時才能喝到海面上的淡水。
+(But) 乾季沒有水喝，(Thus) 團隊想知道海蛇是否在海上脫水。
+研究發現乾季約一半的海蛇會喝淡水，(while) 雨季幾乎不喝，越乾瘦的蛇喝得越多。
+(Finally) 乾季捕獲的海蛇體內水分明顯較少，(Thus) 可見海蛇能忍受一定程度的脫水，脫水也可能是部分地區海蛇減少的原因。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 12 個、參考字彙 20 個、字詞搭配 11 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+massive[ˈmæsɪv]adj.大量的五級第 1 段詞彙題考過 2 次：107 學測第 15 題（答案）、105 指考第 4 題 massively（誘答）
+researcher[ˈrisɚʧɚ]n.研究人員四級第 2 段詞彙題考過 1 次：109 學測第 3 題（誘答）
+precious[ˈprɛʃəs]adj.珍貴的三級第 2 段詞彙題考過 2 次：95 學測第 8 題（誘答）、91 學測補考第 7 題（誘答）
+resource[ˈrisɔrs]n.資源三級第 2 段詞彙題考過 2 次：115 學測第 7 題（誘答）、101 指考第 1 題（誘答）
+predict[prɪˈdɪkt]v.預測（as predicted 和預測的一樣）四級第 3 段詞彙題考過 2 次：108 學測第 3 題 predicted（答案）、103 學測第 7 題（誘答）
+capture[ˈkæpʧɚ]v.捕捉、抓到三級第 3 段詞彙題考過 1 次：103 學測第 15 題 captured（誘答）
+significantly （詞彙表：significant）[sɪgˈnɪfɪkəntli]adv.明顯地、大幅地三級第 3 段詞彙題考過 2 次：104 學測第 3 題（誘答）、99 指考第 10 題 significantly（誘答）
+scoop[skup]v.撈起、舀起（scoop up）四級第 3 段詞彙題考過 1 次：108 學測第 13 題 scooping（誘答）
+decline[dɪˈklaɪn]v.減少、下降五級第 3 段詞彙題考過 1 次：95 學測第 7 題（答案）
+drought[draʊt]n.乾旱五級第 56 題詞彙題考過 1 次：107 指考第 6 題（答案）
+evolution[ˌɛvəˈluʃən]n.演化五級第 56 題詞彙題考過 1 次：103 指考第 9 題（誘答）
+distribution[ˌdɪstrəˈbjuʃən]n.分布四級第 56 題詞彙題考過 3 次：104 學測第 13 題（誘答）、96 學測第 13 題 distributions（誘答）、90 聯考第 5 題 distributions（誘答）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+marine[məˈrin]adj.海洋的、海生的五級第 1 段
+iguana[aɪˈgwɑnə]n.鬣蜥表外第 1 段
+evolve[ɪˈvɑlv]v.演化出五級第 1 段
+excess[ˈɛksɛs]adj.多餘的、過多的六級第 1 段
+salt-expelling[ˈsɔltɪkˌspɛlɪŋ]adj.排出鹽分的表外第 1 段
+gland[glænd]n.腺體（salt gland 鹽腺）表外第 1 段
+seawater[ˈsiˌwɔtɚ]n.海水表外第 1 段
+yellow-bellied[ˈjɛloʊˌbɛlid]adj.黃腹的（yellow-bellied sea snake 黃腹海蛇）表外第 2 段
+layer[ˈleɪɚ]n.層五級第 2 段
+fleeting[ˈflitɪŋ]adj.短暫的、轉眼即逝的表外第 2 段
+presumably[prɪˈzuməbli]adv.想必、大概五級第 2 段
+dehydrated[dɪˈhaɪdreɪtɪd]adj.脫水的表外第 2 段
+likelihood[ˈlaɪkliˌhʊd]n.可能性五級第 3 段
+correlate[ˈkɔrəˌleɪt]v.有關聯、相互關聯表外第 3 段
+withered （詞彙表：wither）[ˈwɪðɚd]adj.乾癟的、萎縮的五級第 3 段
+dehydration[ˌdihaɪˈdreɪʃən]n.脫水表外第 3 段
+rainwater[ˈreɪnˌwɔtɚ]n.雨水表外第 54 題
+coastal[ˈkoʊstəl]adj.沿海的表外第 54 題
+finding[ˈfaɪndɪŋ]n.研究結果、發現表外第 55 題
+infer[ɪnˈfɝ]v.推論六級第 56 題
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+get rid of + N除去……第 1 段原文：ways to get rid of excess salt
+excess salt多餘的鹽分第 1 段
+massive amounts of + N大量的……第 1 段原文：the massive amounts of salt
+pose a serious problem造成嚴重的問題第 1 段原文：This poses a serious problem
+when it comes to + V-ing說到……第 1 段原文：when it comes to getting enough water to drink
+focus on + N把重點放在……第 2 段原文：researchers focused on a population of yellow-bellied sea snakes
+a source of + N……的來源第 2 段原文：rain is the animals’ only source of fresh water
+provide + sb + with + N提供某人……第 2 段原文：providing the snakes with a fleeting opportunity
+lap up + N舔食……第 2 段原文：to lap up that precious resource
+the dry season乾季第 2 段原文：during the dry season
+correlate with + N和……相關第 3 段原文：A snake’s likelihood to drink also correlated with its body condition
+← 上一篇篇目一覽
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

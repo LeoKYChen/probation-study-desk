@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z99-12/index.html
+Author: staresto-create ZZSH
+Title: 99 年指考克漏字第12題詳解（句型結構）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 99 年指考 ／ 第12題
+99 年指考 克漏字 第12題
+句型結構線索：句內答對率 70%
+答對率 70%：當年每 100 位考生，有 70 位答對。
+If we used more of this source of heat and light, it 12 all the power needed throughout the world.
+(A)supplies
+(B)has supplied
+(C)was supplying
+(D)could supply
+答案：(D) could supply
+題目編號：Z99_12（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+與現在事實相反的假設語氣：If + 過去式（used）, 主要子句用 could/would + 原形動詞，could supply 符合這種假設語氣的公式。supplies（直述句現在式）、has supplied（現在完成式）、was supplying（過去進行式）都不符合假設語氣的動詞形式配對。
+深入解析
+你可能會這樣想
+看到 If 你大概直接讀成「如果……就……」，順手填一個現在式進去；但這一句的 If 子句用的是過去式 used，那正是一個訊號。
+怎麼判斷
+鑑別度高達 58，分開的是有沒有先看 If 子句的動詞形態。If 子句寫的是 used（過去式），可是講的並不是過去的事——太陽現在就在那裡，是我們現在沒有多用它。這就是與現在事實相反的假設語氣：動詞倒推一個時態，現在的事改用過去式，公式是 If + 過去式，主要子句用 would／could／might + 原形動詞。常見的例子是 If I were you, I would tell him.（我不可能是你，所以 were 配 would）。四個選項裡只有 could supply 符合這個形態，填進去讀成 it could supply all the power needed throughout the world（它就能供應全世界所需的電力）。
+誘答選項
+supplies 是現在式，會把整句讀成單純的條件句，與 If 子句的過去式對不上；has supplied 是現在完成式、was supplying 是過去進行式，兩個都在陳述已經發生或當時正在發生的事實，與「假設」剛好相反。三個都是 supply 的形態，形態吻合，容易被順手選走。
+常考字詞與句型
+If + 過去式，S + would／could + 原形動詞（與現在事實相反的假設語氣）、If I were you（如果我是你）、supply A with B（供應 A 以 B）、harness energy（利用、駕馭能源）、throughout the world（全世界）、all the power needed（所需的全部電力）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：99學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The sun is an extraordinarily powerful source of energy. In fact, the Earth 11 20,000 times more energy from the sun than we currently use. If we used more of this source of heat and light, it 12 all the power needed throughout the world.
+We can harness energy from the sun, or solar energy, in many ways. For instance, many satellites in space are equipped with large panels whose solar cells transform sunlight directly 13 electric power. These panels are covered with glass and are painted black inside to absorb as much heat as possible.
+Solar energy has a lot to offer. To begin with, it is a clean fuel. In contrast, fossil fuels, such as oil or coal, release 14 substances into the air when they are burned. 15, fossil fuels will run out, but solar energy will continue to reach the Earth long after the last coal has been mined and the last oil well has run dry.
+中譯：太陽是極其強大的能量來源。事實上，地球從太陽接收到的能量是我們目前所使用能量的兩萬倍。如果我們能善加利用這種熱與光的來源，它就能供應全世界所需要的所有電力。我們可以透過許多方式擷取太陽的能量（即太陽能）。舉例來說，太空中許多人造衛星裝有大型太陽能板，其太陽能電池能將陽光直接轉換成電力。這些太陽能板覆有玻璃，內部塗成黑色以盡量吸收熱能。太陽能有很多優點。首先，它是乾淨的燃料。相較之下，石油、煤炭等化石燃料燃燒時會釋放有害物質到空氣中。而且，化石燃料終將用盡，但太陽能會持續照射地球，即使在最後一塊煤被開採完、最後一口油井枯竭之後仍會繼續存在。
+📋 內容大意
+The sun sends the earth far more energy than the world now uses.
+Satellites already carry black, glass-covered panels whose cells convert sunlight straight to electricity.
+Solar energy burns clean, unlike oil and coal, and will last long after they are gone.
+← 第11題回到99 年指考第13題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

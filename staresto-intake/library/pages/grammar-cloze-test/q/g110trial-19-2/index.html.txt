@@ -1,0 +1,41 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g110trial-19-2/index.html
+Author: staresto-create ZZSH
+Title: 110 年學測試辦考試克漏字第19題詳解（分詞／動狀詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 110 年學測試辦考試 ／ 第19題
+110 年學測試辦考試 克漏字 第19題
+分詞／動狀詞線索：句內
+Many mammals fluff up their fur when 19 , to look bigger and thus more dangerous.
+(A)threaten
+(B)threatening
+(C)threatened
+(D)to threaten
+答案：(C) threatened
+題目編號：G110試辦考試_19_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+過去分詞 threatened，省略主詞的分詞構句（when [they are] threatened），被動語意「當牠們受到威脅時」；threaten（原形動詞，不合這個省略結構）、threatening（現在分詞，主動語意方向不合，應該是動物「被威脅」）、to threaten（不定詞）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項是 threaten 的四種形態，你會想找主詞、判主動被動；但空格前面只有一個 when，看起來什麼都沒有，一時不知從何下手。那個「什麼都沒有」正是線索——它省略了主詞與 be 動詞。
+怎麼判斷
+先看結構：Many mammals fluff up their fur when ___ , to look bigger and thus more dangerous.（許多哺乳類在……時會把毛蓬起來，讓自己看起來更大、更危險。）when 後面照理要接一個完整的子句（主詞加動詞），但這裡直接接了一個字——這是省略：當副詞子句的主詞與主要子句相同時，可以把主詞與 be 動詞一起省略。還原之後是 when they are threatened（當牠們受到威脅時），省略 they are 就剩下 threatened。再分主動被動：哺乳類是被威脅的一方，所以用過去分詞 threatened。這個方法在題庫裡反覆出現：90 年第 24 題 →的 until (it is) turned off（直到它被關掉）、還有 While (he was) walking home 這種寫法，機制完全相同。看到 when、while、until、if 後面直接接分詞或形容詞，就先把主詞與 be 動詞補回去。
+誘答選項
+threatening：現在分詞表主動，變成「當牠們威脅別人時」，方向反了——牠們是因為受到威脅才蓬毛自保。threaten：原形動詞。when 後面要接的是子句，原形動詞既沒有主詞也沒有時態，站不住。to threaten：不定詞表目的，但這裡是時間副詞子句，不是在講目的。
+常考字詞與句型
+when (they are) threatened（當牠們受威脅時）、fluff up one's fur（把毛蓬起來）、feel threatened（感到受威脅）、encounter a predator（遇上掠食者）、thus（因此）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Goose bumps are one of those fight-or-flight reactions of the sympathetic nervous system. When you experience cold or fear, a nerve reaction is sent to the muscles, which then contract involuntarily. This muscle contraction causes your body hair to stand erect. The skin with standing body hair 16 a goose's skin after its feathers have been plucked—hence the name goose bumps. But 17 is this helpful to us as a response to fear or cold?
+Back in the days when our ancestors may have had a lot more body hair, this might have helped to keep them warm or scare an oncoming predator. These days, however, goose bumps are 18 to human beings.
+Goose bumps, or the reflex that causes them, also occur in many other mammals. Many mammals fluff up their fur when 19 , to look bigger and thus more dangerous. For example, when a porcupine encounters a predator, its long sharp pointed hairs will stand up as a means of 20 . In animals with a thick hair coat, the rising of hair traps more air between the hairs, providing another layer of insulation to keep them warm.
+中譯：雞皮疙瘩是交感神經系統「戰或逃」反應的其中一種。當你感到寒冷或恐懼時，神經反應會傳送到肌肉，使肌肉不自主地收縮，這種肌肉收縮會讓你的體毛豎立起來。豎起體毛的皮膚，看起來很像鵝被拔完羽毛後的皮膚——這也是「雞皮疙瘩」（goose bumps，字面意思為鵝皮疙瘩）這個名稱的由來。但這對我們面對恐懼或寒冷時真的有幫助嗎？在我們祖先體毛可能還相當濃密的年代，這樣的反應或許能幫助他們保暖，或嚇跑逼近的掠食者。然而，如今雞皮疙瘩對人類來說幾乎已經沒有實際用處了。雞皮疙瘩，或是引發它的反射反應，也出現在許多其他哺乳類動物身上。許多哺乳動物在感到害怕時會把毛髮蓬起，讓自己看起來更龐大、更具威嚇性。舉例來說，當豪豬遇到掠食者時，牠身上又長又尖銳的刺毛會豎立起來，作為一種嚇阻掠食者的手段。對於毛皮濃密的動物來說，毛髮豎起能在毛髮之間留住更多空氣，形成額外一層隔熱保暖的效果。
+📋 內容大意
+Goose bumps are an evolutionary nervous reaction that provided warmth and defense for hairy ancestors and animals, though mostly useless to modern humans.
+← 第18題回到110 年學測試辦考試第20題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

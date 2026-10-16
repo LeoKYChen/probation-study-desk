@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g108-17-1/index.html
+Author: staresto-create ZZSH
+Title: 108 年學測克漏字第17題詳解（句型結構）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 108 年學測 ／ 第17題
+108 年學測 克漏字 第17題
+句型結構線索：跨句答對率 29%
+答對率 29%：當年每 100 位考生，有 29 位答對。
+However, many people, either refusing to accept the new date or not having heard about it, 17 to celebrate New Year's Day on April 1.
+(A)continue
+(B)continuing
+(C)to continue
+(D)continued
+答案：(D) continued
+題目編號：G108_17_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+本句主要子句缺少限定動詞，須填過去式 continued；continue 為現在式，與前一句 In 1582 的時間背景不合，continuing 是分詞、to continue 是不定詞，兩者都不能單獨當主要動詞。
+深入解析
+你可能會這樣想
+你知道「一個句子要有一個動詞」，但主詞 many people 後面被一長串插入語打斷——either refusing to accept the new date or not having heard about it——等讀到空格時已經忘了主詞是誰、還缺不缺動詞。
+怎麼判斷
+先把句型的骨幹看出來，這一題與 104 年第 18 題 →是同一個結構：S ，插入的修飾語，___V___把兩個逗號之間的成分遮掉，句子剩下 However, many people ___ to celebrate New Year's Day on April 1.——主詞 many people 後面顯然缺一個主要動詞，所以空格非動詞不可。（那一長串 either refusing... or not having heard... 是兩個並列的分詞片語，用來補充說明這些人的狀態，分詞不能當主要動詞。）認出這一點之後，continuing 與 to continue 都是非限定形式，先刪掉。這裡有一個很多人會踩的陷阱：剩下的 continued 長得跟過去分詞一模一樣，很容易被一起歸進「非限定、不能當主要動詞」那一堆，四個選項一口氣刷掉三個，只剩 continue，時態又對不上，於是卡死。但 continue 是規則動詞，過去式與過去分詞同形，光看字尾分不出來——要看它位於句子裡的什麼位置。這個位置需要一個主要動詞，所以它是過去式，不是過去分詞。（同理，The company closed last year. 的 closed 也是過去式，不是「被關閉」。）最後才是時態：剩下 continue 與 continued，本句自己沒有任何時間標記，依據在前一句——In 1582, Pope Gregory XIII ordered a new calendar…。這一段在敘述十六世紀的歷史，動詞都用過去式，所以是 continued。這一格屬於跨句題，光看本句判不出來。主詞與動詞中間可以插入修飾語，這是很基本的結構（The boy in the blue shirt is my brother.），本題只是插入語特別長。遇到長插入語，先用括號把它括起來，句子結構就露出來了。
+誘答選項
+continuing：現在分詞，不能單獨當主要動詞；填進去整句就變成一串修飾語接一串修飾語，從頭到尾沒有動詞。to continue：不定詞，同樣是非限定形式。continue：原形。這一段敘述的是十六世紀發生的事，現在式與整段的時態不合。
+常考字詞與句型
+S, 插入的修飾語, V（主詞與動詞被長插入語隔開）、continue to V／continue V-ing（繼續做）、either A or B（不是 A 就是 B）、not having + 過去分詞（完成式分詞，表更早發生）、refuse to V（拒絕做）、規則動詞的過去式與過去分詞同形（看位置判斷）。其中 refuse to V 這一組考過 3 個年度，學測詞彙 89 年第 8 題、105 年第 19 題 →、105 年第 20 題 →都出現過。
+線索範圍說明：選 continued 而非 continue 的時態依據在前一句 In 1582, Pope Gregory XIII ordered a new calendar；本句自身沒有任何時間標記
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+April Fools' Day, one of the most light-hearted days of the year, has an unclear origin. Some see it as a celebration related to the turn of the seasons from winter to spring; others, however, believe that it 16 the adoption of a new calendar. Ancient cultures celebrated New Year's Day on or around April 1, which roughly coincides with the beginning of spring.
+In 1582, Pope Gregory XIII ordered a new calendar, which called for New Year's Day to be celebrated on January 1. However, many people, either refusing to accept the new date or not having heard about it, 17 to celebrate New Year's Day on April 1. Other people began to make fun of these traditionalists, sending them on "fool's errands" or trying to fool them into believing something false. 18 , the practice spread throughout Europe and the rest of the world.
+Nowadays, on April Fools' Day, people often 19 to create elaborate hoaxes to fool others. Newspapers, radio and TV stations, and websites have participated in the April 1 tradition of making 20 reports in order to fool their audiences. The BBC once reported that Swiss farmers were experiencing a spaghetti crop and showed scenes of people harvesting noodles from trees. Guess what? Numerous viewers were fooled.
+中譯：愚人節是一年之中氣氛最輕鬆的日子之一，但其起源卻不甚明確。有人認為這是慶祝冬去春來、季節轉換的節日；但也有人認為，這與新曆法的採用有關。古代文化多在 4 月 1 日前後慶祝新年，這恰好接近春天的開始。1582 年，教宗額我略十三世下令採用新曆法，將新年訂於 1 月 1 日慶祝。然而，許多人因為不願接受新的日期，或根本沒聽說這項改變，依然繼續在 4 月 1 日慶祝新年。其他人開始嘲笑這些堅持舊曆的人，故意派他們去做徒勞無功的差事，或設法欺騙他們相信一些虛假的事。漸漸地，這樣的風氣傳遍了整個歐洲及世界其他地區。如今，在愚人節這一天，人們常常會精心策劃各種騙局來捉弄他人。報紙、廣播電台、電視台和網站也都加入了 4 月 1 日的傳統，發布虛構報導來愚弄觀眾。英國廣播公司 BBC 曾經報導瑞士農民正經歷「義大利麵大豐收」，還播出人們從樹上「採收」麵條的畫面。猜猜結果如何？無數觀眾都被騙了。
+📋 內容大意
+April Fools' Day is one of the most light-hearted days of the year, but its origin remains unclear.
+One theory traces it to 1582, when a new calendar moved New Year's Day to January 1 and those who kept the old date were mocked as fools.
+Today the tradition lives on in elaborate hoaxes, staged not only by individuals but also by newspapers, radio and TV stations, and websites.
+← 第16題回到108 年學測第18題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

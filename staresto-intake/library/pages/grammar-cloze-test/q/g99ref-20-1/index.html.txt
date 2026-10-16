@@ -1,0 +1,42 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g99ref-20-1/index.html
+Author: staresto-create ZZSH
+Title: 99 課綱學測參考用試卷克漏字第20題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 99 課綱學測參考用試卷 ／ 第20題
+99 課綱學測參考用試卷 克漏字 第20題
+字彙選義線索：句內
+Sheets of the material could be used to make portable, rollable battery chargers for mobile electronic 20 , like notebook computers or cellphones.
+(A)nurseries
+(B)instincts
+(C)horizons
+(D)devices
+答案：(D) devices
+題目編號：G99課綱學測參考用試卷_20_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「可攜式、可捲曲的行動電子『裝置』充電器」，devices 符合，呼應後文舉例筆電、手機；nurseries（托兒所）、instincts（本能）、horizons（視野）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是名詞的複數，中文差很遠，照理不難分；但如果只讀空格所在的半句，會不確定「行動電子什麼」，只好猜。這一格往後讀幾個字就有答案。
+怎麼判斷
+四個選項都是名詞，可見這一格考的是語意，那就往後讀。空格後面緊接著就是 like notebook computers or cellphones（像筆記型電腦或手機）——作者直接把例子擺出來了，而筆電與手機正是「電子裝置」，填 devices。整句是「這種材料做成的薄片可以用來製造可攜、可捲曲的充電器，供筆電或手機這類行動電子裝置使用」。這個方法在說明性的文章裡特別好用：看到 like、such as、for example 後面接的例子，往往就是空格的定義。
+誘答選項
+instincts（本能）：講的是與生俱來的反應，與電子產品無關。nurseries（幼兒園；苗圃）、horizons（視野、地平線）：兩個與筆電、手機這組例子完全對不上。
+常考字詞與句型
+an electronic device（電子裝置）、a mobile device（行動裝置）、a battery charger（充電器）、portable（可攜的）、rollable（可捲曲的）、push for（積極推動）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Solar panels can turn sunlight into electricity. Conventional solar panels are 16 crystallized silicon, the same material used in computer chips. But silicon is expensive and the panels are heavy. Facing this 17 , engineers at a Japanese company have developed a thin-film flexible solar panel. The new panel is not the first of its 18 , but it may be the most flexible—it bends like paper.
+At one kilogram per square meter, this new type of panel weighs one tenth of conventional solar panels. 19 means it could be used in novel places, such as the roof of a tent, the walls of a building, or the top of a bus. Sheets of the material could be used to make portable, rollable battery chargers for mobile electronic 20 , like notebook computers or cellphones. As many countries are now pushing for green technology, the new flexible solar panels may spur a great demand.
+中譯：太陽能板能將陽光轉化為電力。傳統太陽能板是由結晶矽製成的，這與電腦晶片使用的材料相同。但矽的成本高昂，太陽能板也相當笨重。面對這項挑戰，一家日本公司的工程師開發出一種薄膜可撓式太陽能板。這款新型太陽能板不是同類產品中的第一款，但可能是最具彈性的一款——它能像紙一樣彎曲。這種新型太陽能板每平方公尺才重一公斤，只有傳統太陽能板重量的十分之一。這代表它可以應用在許多新穎的地方，例如帳篷屋頂、建築物牆面，或公車車頂。這種材料製成的薄片，還可以用來製作可攜式、可捲曲的行動電子產品充電器，例如筆記型電腦或手機的充電器。隨著越來越多國家積極推動綠色科技，這種新型可撓式太陽能板可能會激發龐大的市場需求。
+📋 內容大意
+Ordinary solar panels turn sunlight into electricity using crystallized silicon, the material in computer chips. Silicon is costly and the panels are heavy.
+Engineers at a Japanese company made a thin-film flexible panel bending like paper. It weighs one kilogram per square meter, a tenth of an ordinary panel.
+Its lightness suits new places such as tent roofs, building walls and bus tops. Sheets could become rollable chargers for notebook computers and mobile phones.
+← 第19題回到99 課綱學測參考用試卷第21題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

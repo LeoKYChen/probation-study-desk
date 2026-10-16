@@ -1,0 +1,42 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g89-19-1/index.html
+Author: staresto-create ZZSH
+Title: 89 年學測克漏字第19題詳解（句型結構）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 89 年學測 ／ 第19題
+89 年學測 克漏字 第19題
+句型結構線索：跨句
+I thought you'd finished it. 19 you turn it in on Friday?
+(A)Mustn't
+(B)Needn't
+(C)Couldn't
+(D)Didn't
+答案：(D) Didn't
+題目編號：G89_19_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「你不是星期五交了嗎？」是過去式的一般疑問句否定形式，Didn't 符合詢問過去動作；Mustn't（不可以，表禁止）、Needn't（不需要）、Couldn't（不能）都不符合這裡「你沒有交嗎」的語意。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是助動詞加 not 的縮寫，後面又都能接原形動詞 turn，文法上一個也刷不掉，這時候很容易憑感覺挑一個語氣最強的。其實這一格靠的是「這句話在問什麼時候的事」。
+怎麼判斷
+四個選項都是否定的助動詞，形態上刷不掉，可見這一格考的是語意與時態，那就把前後兩句一起讀。前一句 Joe 說 I thought you'd finished it.（我以為你已經寫完了。），代表他心裡本來認定這件事早就完成；下一句 Sue 回答 Uh-huh.（嗯，有啊。），代表 Joe 問的確實是一件已經發生的事。所以這一格要問的是過去的動作有沒有做，用過去式的助動詞 Didn't。否定疑問句在這裡不是真的在否定，而是帶著「你不是……嗎」的確認與意外語氣，掛鉤是 Didn't you know?（你不知道嗎？）。還原成完整的意思是：你不是星期五就交出去了嗎？
+誘答選項
+Mustn't：must not 是「不可以」，表禁止，填進去會變成「你不可以星期五交嗎」，語意完全走樣。Needn't：need not 是「不需要」，講的是必要性，也不是在問過去做了沒有。Couldn't：could not 是「不能、無法」，問的是能力或可能性；而且 Joe 明明知道 Sue 交了，不是在懷疑她能不能交。三個誘答選項的共同問題是：它們談的是禁止、必要與能力，只有 Didn't 在談事實。
+常考字詞與句型
+turn in（繳交）、hand in（繳交）、Didn't you …?（你不是……嗎）、on Friday（在星期五）、return sth to sb（把某物退還給某人）、figure out（想出、弄清楚）。
+線索範圍說明：Didn't 對應前一句 I thought you'd finished it，問的是已經發生的事
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Joe: I see you're busy right now, Sue. As soon as you 16 , I'd like to talk to you for a few minutes. Sue: It's O.K. Come on in.
+Joe: Oh, no, I don't want to interrupt you. I can wait. I'll come back 17 . Sue: I'm afraid it's going to be a long wait! I'm working 18 my history paper.
+Joe: History paper? I thought you'd finished it. 19 you turn it in on Friday? Sue: Uh-huh. But the professor just returned it to me. I 20 to add 10 more pages. Joe: Ten more pages! That's a lot. How are you going to do it? Sue: That's what I'm trying to figure out. Now what can I do for you?
+中譯：喬：我看妳現在很忙，蘇。等妳忙完，我想跟妳談幾分鐘。蘇：沒關係，進來吧。喬：喔，不用了，我不想打擾妳，我可以等，等一下再回來找妳。蘇：恐怕要等很久喔！我正在忙我的歷史報告。喬：歷史報告？我以為妳已經寫完了。妳不是星期五就交了嗎？蘇：嗯，是啊。但教授剛把報告退回給我，要我再多加十頁。喬：再加十頁！這也太多了吧。妳打算怎麼辦？蘇：這正是我在傷腦筋的地方。那你找我有什麼事嗎？
+📋 內容大意
+Sue explains to Joe that she must revise her history paper by adding ten more pages after her professor returned it.（敘事文）
+← 第18題回到89 年學測第20題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

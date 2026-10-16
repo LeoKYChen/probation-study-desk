@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g102-19-1/index.html
+Author: staresto-create ZZSH
+Title: 102 年學測克漏字第19題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 102 年學測 ／ 第19題
+102 年學測 克漏字 第19題
+字彙選義線索：句內答對率 38%
+答對率 38%：當年每 100 位考生，有 38 位答對。
+New York, being the largest city in the United States, was 19 the 212 area code, followed by Los Angeles at 213.
+(A)reserved
+(B)assigned
+(C)represented
+(D)assembled
+答案：(B) assigned
+題目編號：G102_19_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+be assigned sth 意為「被分配到某物」，本句指紐約因為是美國最大城而被分配到 212 這組區碼；reserved（保留，須用 be reserved for）、represented（代表）、assembled（組裝、集合）語意都不合。
+深入解析
+你可能會這樣想
+assign sb sth（分配某物給某人）。看到 New York was assigned the 212 area code（紐約被分配到 212 這組區碼），被動後面還接著一個名詞，你會覺得不通——那是 sth 那一格，原本就在那裡。assign 有兩個受詞，人一個、物一個。
+怎麼判斷
+兩個受詞的動詞改成被動，用人（間接受詞）當主詞，物（直接受詞）留在動詞後面不動，所以句子看起來會多一個名詞。這個改法你一定看過：give sb sth 改成被動就是 The winner was given a prize.（優勝者獲頒一份獎品。）offer、send、award 全是同一組。語意也對得上：前一句說區碼是依人口規則分派的，本句接著說紐約分到 212、洛杉磯 213，一組一組發下去，正是「分配」。assign 家族一起記：assign（分配）、assignment（作業、任務）、an assigned seat（指定座位）、an assigned task（分派到的工作）。一句記完：The new crew members were assigned the busiest street in town.（新進的隊員被分配到鎮上最忙的那條街。）〔情境取材自 105 指考作文題：碩士考清潔隊員〕
+誘答選項
+reserved（保留）要接 for：be reserved for VIPs（保留給貴賓）；represented 是「代表」，區碼確實代表地區，但本句主詞是紐約不是號碼，方向反了；assembled 是「組裝、集合」，與號碼無關。
+常考字詞與句型
+be assigned sth（被分配到某物）、be given／offered／awarded sth（被給予／提供／頒授某物）、be reserved for（保留給…）、an assignment（作業、任務）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+An area code is a section of a telephone number which generally represents the geographical area that the phone receiving the call is based in. It is the two or three digits just before the local number. If the number 16 is in the same area as the number making the call, an area code usually doesn't need to be dialed. The local number, 17 , must always be dialed in its entirety.
+The area code was introduced in the United States in 1947. It was created 18 the format of XYX, with X being any number between 2-9 and Y being either 1 or 0. Cities and areas with higher populations would have a smaller first and third digit, and 1 as the center digit. New York, being the largest city in the United States, was 19 the 212 area code, followed by Los Angeles at 213.
+In countries other than the United States and Canada, the area code generally determines the 20 of a call. Calls within an area code and often a small group of neighboring area codes are normally charged at a lower rate than outside the area code.
+中譯：區域號碼是電話號碼中的一部分，通常代表接聽電話所在的地理區域，位於本地號碼前面的兩到三個數字。如果撥打的號碼與撥出電話所在地屬於同一區域，通常不需要撥打區域號碼；但本地號碼則必須完整撥打，一碼都不能少。區域號碼於 1947 年在美國首次引進，其格式為「XYX」，X 代表 2 到 9 之間的任一數字，Y 則是 0 或 1。人口較多的城市或地區，第一碼與第三碼的數字通常較小，中間則固定為 1。紐約身為美國最大城市，被分配到 212 這個區域號碼，其次是洛杉磯的 213。在美國和加拿大以外的國家，區域號碼通常決定的是通話的費率。同一區域號碼內、甚至鄰近幾個區域號碼之間的通話，費率通常會比撥打區域外的電話便宜。
+📋 內容大意
+Area codes designate geographic telephone regions, influence local and long-distance dialing formats, and determine call pricing.
+← 第18題回到102 年學測第20題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

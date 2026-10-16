@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g94-27-3/index.html
+Author: staresto-create ZZSH
+Title: 94 年學測克漏字第27題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 94 年學測 ／ 第27題
+94 年學測 克漏字 第27題
+慣用語／片語線索：跨句答對率 83%
+答對率 83%：當年每 100 位考生，有 83 位答對。
+Animals are able to feel pain 26 they can use it for self-protection. 27, if you touch something hot and feel pain, you will learn from this 28 that you should not touch that item in the future.
+(A)In contrast
+(B)Before long
+(C)For example
+(D)To begin with
+答案：(C) For example
+題目編號：G94_27_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+舉例：承接前一句「動物能感受痛覺，痛覺可以用來自我保護」，這句舉一個具體例子說明（碰到燙的東西會痛，因此學會不再碰），For example 符合；In contrast（相反地）、Before long（不久後）、To begin with（首先，通常用於列舉開頭而非單一舉例）都不如 For example 自然。
+深入解析
+你可能會這樣想
+四個選項都是句首常見的轉折詞，背了中文意思就想直接套上去。這一題的鑑別度只有 32，但原因和難題正好相反：它本身不難，各種程度的人都答得出來，自然分不太出高下。要判斷的是最基本的一種篇章關係——前一句給原則，這一句給實例。
+怎麼判斷
+把前後兩句擺在一起看。前一句是通則：Animals are able to feel pain {26} they can use it for self-protection.（動物會痛，痛能拿來自保。）本句則是一個具體情境：if you touch something hot and feel pain, you will learn ... that you should not touch that item in the future（你碰到燙的東西會痛，於是學會以後別再碰）。一個抽象、一個具體，而且具體那句正好在示範前一句講的道理，這就是舉例，填 For example。
+誘答選項
+To begin with（首先）：用在列舉的第一項，後面要有第二項、第三項接上來才成立（95 年第 28 題 →就是靠 To begin with → ___ → Finally 這條列舉鏈定案的），而本篇後面既沒有 Second 也沒有 Finally。In contrast（相較之下）：需要前後兩件事並排比較，但這一句是延續前一句、不是掉頭；本篇真正要對比的地方在後面，用的是 On the other hand。Before long（不久之後）：講的是時間先後，本篇並不是按時間推進的故事。
+整組的分法寫在哪一則
+for example、for instance、such as、that is 四個說法的分工，89 年第 27 題 →那一則寫得最齊，因為那一篇第 27、29 兩格的選項裡，舉例與換句話說的說法都出現了。這裡只留一條最好用的分界：such as 後面直接接名詞，其餘三個多半用來引出一句完整的話（for example 也可以接名詞或動名詞，劍橋詞典例句 by, for example, using recycled paper）。Some families treat their pets as members of the family. For example, they push their dogs in strollers and let them sit at the dinner table.（有些家庭把寵物當成家人。舉例來說，他們用嬰兒車推狗出門，還讓狗坐上餐桌。）They push their dogs in strollers, for instance, and let them sit at the dinner table.（換成 for instance 並放到句子中間，意思不變。）Pets such as dogs, cats, and rabbits now appear in family photos.（狗、貓、兔子這類寵物，現在也出現在全家福裡。）〔情境取材自 115 學測作文題：把寵物當家人〕
+常考字詞與句型
+for example／for instance（舉例來說）、take sth for example（以……為例）、such as（例如）、to begin with（首先、第一點）、before long（不久之後）、on the other hand（另一方面）。
+線索範圍說明：For example 為前一句的原則舉例
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Do plants have feelings? There is currently no reason to believe that plants experience pain, because they are devoid of central nervous systems and brains. Animals are able to feel pain 26 they can use it for self-protection. 27, if you touch something hot and feel pain, you will learn from this 28 that you should not touch that item in the future. On the other hand, plants cannot move 29 and do not need to learn to avoid certain things, so this sensation would be unnecessary.
+From a physiological standpoint, plants are completely different from animals. They cannot feel pain. Therefore, 30 animals' body parts, many fruits and vegetables can be harvested over and over again without dying.
+中譯：植物有感覺嗎？目前並沒有證據顯示植物會感受到疼痛，因為它們沒有中樞神經系統和大腦。動物能感受疼痛，這樣牠們才能利用疼痛來保護自己。舉例來說，如果你碰到滾燙的東西並感到疼痛，你會從這次經驗中學到，未來不該再碰觸那樣東西。相反地，植物無法自行移動，也不需要學習避開某些事物，因此這種感覺對植物而言是不必要的。從生理學角度來看，植物與動物完全不同，它們無法感受疼痛。因此，與動物的身體部位不同，許多水果和蔬菜可以一次又一次地被採收，而不會因此死亡。
+📋 內容大意
+Lacking a central nervous system and the need for self-protective mobility, plants do not experience pain like animals do.
+← 第26題回到94 年學測第28題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

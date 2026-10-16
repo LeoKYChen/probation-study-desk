@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g103-29-3/index.html
+Author: staresto-create ZZSH
+Title: 103 年學測克漏字第29題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 103 年學測 ／ 第29題
+103 年學測 克漏字 第29題
+字彙選義線索：跨句答對率 63%
+答對率 63%：當年每 100 位考生，有 63 位答對。
+Those who take pride in being decisive often try their best to consider all the factors beforehand. 29 , it is not unusual for them to come up with a decision before they have the time to do so.
+(A)However
+(B)Furthermore
+(C)Conditionally
+(D)Similarly
+答案：(A) However
+題目編號：G103_29_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意轉折：「他們努力想要事先考慮所有因素，然而，他們卻常常在還沒時間充分考慮前就做出決定了」，這是一種「努力想周全卻仍然倉促決定」的反差對比，However（然而）符合這種轉折語氣；Furthermore（此外）、Conditionally（有條件地）、Similarly（同樣地）都不合。
+深入解析
+你可能會這樣想
+However 這個字你一定認得，看到題目大概覺得穩了。但這一題的鑑別度只有 15，低得反常——高分群考生在這一格答對的比例，與其他考生幾乎一樣，並沒有拉開差距。原因不在 however 本身，而在後半句你有沒有真的讀懂。
+怎麼判斷
+關鍵在 before they have the time to do so 的 do so。do so 是替代用法，用來代替前面出現過的整個動詞片語，避免重複。這個用法你一定看過：Do you like it?—Yes, I do.（do 替代 like it）、When in Rome, do as the Romans do.（後面的 do 替代前面的動作）。本題的 do so 替代的是前一句的 consider all the factors beforehand（事先考慮所有因素）。把它還原出來再讀一次：前一句 Those who take pride in being decisive often try their best to consider all the factors beforehand.（以果斷自豪的人往往盡力事先考慮所有因素）；本句還原後是 it is not unusual for them to come up with a decision before they have the time to consider all the factors beforehand.（他們常常還來不及考慮所有因素，就已經做出決定了）。還原之後，兩句的反差立刻浮出來：想要考慮周全，卻根本來不及考慮就決定。這是清清楚楚的轉折，只有 However 接得上。沒有把 do so 還原的人，讀到 before they have the time to do so 只有一個模糊的「在他們有時間之前」，抓不到反差；這時 Furthermore 看起來也能接受。這正是鑑別度被拉低的原因：讀懂與沒讀懂的人在這一格看到的句子不一樣，而沒讀懂的人並不會發覺自己沒讀懂，於是憑語感選，選對選錯都成了隨機。再補一層確認：主旨句就在第一行 Most human beings actually decide before they think.（大多數人其實是先做決定才思考）。本句是這個主旨的再一次印證，而印證的方式正是「本來想周全、結果沒做到」的反差。
+誘答選項
+Furthermore（此外）：用來追加同一個方向的新論點，本句與前句方向相反，不是追加。Conditionally（有條件地）：副詞，意思是「附帶條件地」，沒有銜接兩句邏輯的功能，語意也對不上。Similarly（同樣地）：用來標示兩件事情況相似，本題前後句正好相反。
+常考字詞與句型
+take pride in（以…為傲）、try one's best to do（盡力做…）、come up with（想出、提出）、do so（這麼做，替代前面提過的動作）、It is not unusual for sb to do（某人常常…並不稀奇）、beforehand（事先、預先）。其中 come up with 這一組考過 3 個年度，86 年第 32 題 →、110 年試辦考試第 15 題 →都出現過。
+線索範圍說明：However 轉折前一句「果決的人會盡量考慮周全」
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Most human beings actually decide before they think. When people encounter a complex issue and form an opinion, how thoroughly have they 26 all the important factors involved before they make their decisions? The answer is: not very thoroughly, 27 they are executives, specialized experts, or ordinary people in the street. Very few people, no matter how intelligent or experienced, can 28 all the possibilities or outcomes of a policy or a course of action within just a short period of time.
+Those who take pride in being decisive often try their best to consider all the factors beforehand. 29 , it is not unusual for them to come up with a decision before they have the time to do so. And 30 an opinion is formed, most of their thinking then is simply trying to find support for it.
+中譯：大多數人其實是先做決定、後思考。當人們遇到複雜的議題並形成意見時，在做出決定之前，他們究竟把所有重要因素都仔細考慮過了嗎？答案是：並沒有考慮得很周全，無論是企業主管、專業人士，還是一般大眾都是如此。無論一個人多聰明、多有經驗，很少有人能在短時間內考慮到一項政策或行動方案的所有可能性與後果。那些以果斷自豪的人，往往會盡力事先考慮周全所有因素，然而，他們常常在還沒來得及仔細思考之前就已經做出了決定。而一旦意見形成，他們接下來大部分的思考，往往只是在為這個已經形成的意見尋找支持的理由。
+📋 內容大意
+People usually make decisions instinctively before thoroughly analyzing all factors and possibilities involved.
+Even decisive individuals frequently form opinions first and then use reasoning merely to justify their initial choice.
+← 第28題回到103 年學測第30題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

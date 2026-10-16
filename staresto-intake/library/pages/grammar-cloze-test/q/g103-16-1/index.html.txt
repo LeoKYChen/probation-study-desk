@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g103-16-1/index.html
+Author: staresto-create ZZSH
+Title: 103 年學測克漏字第16題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 103 年學測 ／ 第16題
+103 年學測 克漏字 第16題
+字彙選義線索：句內答對率 67%
+答對率 67%：當年每 100 位考生，有 67 位答對。
+Aesop replied, “Tell me where you come from and what sort of people live there, and I'll tell you what sort of people you'll find in Athens.” 16 , the man answered, “I come from Argos, and there the people are all friendly, generous, and warm-hearted.
+(A)Amazing
+(B)Smiling
+(C)Deciding
+(D)Praying
+答案：(B) Smiling
+題目編號：G103_16_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+現在分詞片語作插入語，描述說話時的表情動作「微笑著回答」；Amazing（令人驚訝的，是形容詞不是描述動作的分詞）、Deciding（正在決定，這裡沒有要做決定的情節）、Praying（祈禱）都不合。
+深入解析
+你可能會這樣想
+空格後面是逗號接 the man answered，你直覺想找一個副詞，結果四個選項全是 -ing 結尾，一時不知道該用什麼標準挑，只好比較哪個字義唸起來順，或者選了最眼熟的 Amazing。
+怎麼判斷
+這是分詞構句，還原成完整子句就清楚了：Smiling, the man answered... 等於 The man smiled and answered...，也可以還原成 As he smiled, the man answered...。分詞在意義上的主詞必須是主要子句的主詞，也就是 the man，所以把四個選項代進 The man ______. 檢驗最快：the man smiled 說得通。更關鍵的線索在同一篇後半段，文章用完全相同的句構寫第二位旅人：But frowning, the man answered, ...（那人皺著眉回答）。frowning 對 Smiling，一個皺眉一個微笑，兩位旅人一負一正，結構完全對稱。讀到後面那句回頭看，這一格填的是表情動作就沒有疑問了。語意上也合：這位旅人接著說家鄉的人 friendly, generous, and warm-hearted，講的全是好話，配的自然是微笑。
+誘答選項
+Amazing 是主動形式，意思是「令人驚訝的」，主詞要是引起驚訝的那個事物；人做主詞得用 Amazed（感到驚訝的）。這與 interesting 對 interested、boring 對 bored 是同一組道理。何況這裡沒有任何人感到驚訝。Deciding：decide 後面要接受詞或 to 加原形動詞（decide + 受詞、decide + to V），這位旅人沒有在做什麼決定。Praying（祈禱）與情境無關。
+常考字詞與句型
+smile at sb（對某人微笑）、frown at sb（對某人皺眉）、warm-hearted（熱心的、親切的）、be generous with（在…方面大方）、be amazed at（對…感到驚訝）、amazing（令人驚訝的）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Aesop, the Greek writer of fables, was sitting by the roadside one day when a traveler asked him what sort of people lived in Athens. Aesop replied, "Tell me where you come from and what sort of people live there, and I'll tell you what sort of people you'll find in Athens." 16 , the man answered, "I come from Argos, and there the people are all friendly, generous, and warm-hearted. I love them." 17 this, Aesop answered, "I'm happy to tell you, my dear friend, that you'll find the people of Athens much the same."
+A few hours later, 18 traveler came down the road. He too stopped and asked Aesop the same question. 19 , Aesop made the same request. But frowning, the man answered, "I'm from Argos and there the people are unfriendly, 20 , and vicious. They're thieves and murderers, all of them." "Well, I'm afraid you'll find the people of Athens much the same," replied Aesop.
+中譯：伊索——這位希臘寓言作家——有一天坐在路邊，一位旅人問他雅典住著什麼樣的人。伊索回答：「告訴我你從哪裡來、那裡的人是什麼樣子，我就能告訴你在雅典會遇到什麼樣的人。」旅人笑著回答：「我來自阿爾戈斯，那裡的人都很友善、慷慨又熱情，我很愛他們。」聽到這話，伊索說：「親愛的朋友，我很高興告訴你，雅典人也跟他們差不多。」幾小時後，另一位旅人沿路而來，也停下腳步問了伊索同樣的問題。伊索又提出了同樣的要求。這位旅人卻皺著眉頭回答：「我來自阿爾戈斯，那裡的人不友善、刻薄又惡毒，全都是小偷和殺人犯。」伊索回答：「嗯，恐怕你在雅典遇到的人也差不多。」
+📋 內容大意
+A traveler from Argos praised his hometown, and Aesop assured him he would find the people of Athens equally friendly.（敘事文）
+A second traveler complained bitterly about Argos, leading Aesop to tell him he would encounter the same hostility in Athens.（敘事文）
+回到103 年學測第17題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

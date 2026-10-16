@@ -1,0 +1,163 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/g114p1.html
+Author: staresto-create ZZSH
+Title: 114 學測閱讀測驗：紅綠燈的發明史｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 114 學測
+114 學測閱讀測驗：紅綠燈的發明史
+The Invention History of Traffic Lights
+學測 114年第 35–38 題4 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段While waiting to cross the street at busy intersections, have you ever wondered who invented the traffic light? Most people credit the first traffic light to Nottingham engineer John Peake Knight. A railway manager, Knight specialized in designing the signaling system for Britain’s growing railway network in the 1860s. He saw no reason why this could not be adapted for use on the busy London intersections. Thus, he proposed a signaling system based on the railway movable-arm signal: Arms extending horizontally commanded drivers to stop, whereas arms lowered to a 45-degree angle told drivers to move on, resembling a traffic director’s gestures. Red and green gas lamps were added to the signal for use at night. A police officer was stationed by the side to operate the system.
+第 2 段Knight’s traffic signal was installed near London’s Westminster Bridge in December 1868, but the system was short-lived. A gas leak one month later caused an explosion in the lights, injuring the policeman operating it. Deemed a public hazard, the project was immediately dropped, and traffic lights were banned until their return in 1929 back to the British streets.
+第 3 段In the early 1900s, versions of the British traffic lights appeared in big cities in America, where traffic was on a sharp rise. Systems using movable arms were popular in Chicago, while those using the red and green lights were adopted in San Francisco. Patents with innovations on Knight’s ideas were filed nationwide. A major breakthrough was the yellow light invented by a Detroit police officer William Potts. Installed in Detroit in 1920, Potts’ three-color system allowed for the added signal “proceed with caution” to be displayed.
+第 4 段Now, with the emergence of self-driving cars, researchers have begun to suggest that traffic signals are no longer necessary. Intersections will operate in a way that cars automatically adjust their speed to cross through, while maintaining safe distances from other vehicles. In the near future, we may experience a brand new form of traffic management!
+題目
+35.What is this passage mainly about?
+(A)The evolution of traffic control systems.
+(B)The inventors of traffic lights in history.
+(C)The functions of different traffic signals.
+(D)The development of modern transportation.
+36.Which of the following pictures shows Knight’s proposed traffic signal?
+圖片出處：大學入學考試中心 114 學年度學科能力測驗英文考科
+(A)（見圖）
+(B)（見圖）
+(C)（見圖）
+(D)（見圖）
+37.Which of the following statements is true, according to the passage?
+(A)Knight was injured in the explosion of his traffic light.
+(B)Potts’ traffic light was the first one to appear in the USA.
+(C)The first traffic signal originated from the idea of a traffic director.
+(D)Future vehicles may not need traffic lights to cross an intersection.
+38.Here is a sentence: “This design was adopted in later traffic light designs across the world.” Which paragraph is most suitable to have it as the final sentence?
+(A)Paragraph 1.
+(B)Paragraph 2.
+(C)Paragraph 3.
+(D)Paragraph 4.
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+35
+(A)
+47%
+72
+36
+(C)
+52%
+45
+37
+(D)
+56%
+72
+38
+(C)
+75%
+43
+答對率與鑑別度出處：大考中心 114 學年度學科能力測驗統計圖表：英文科答對率及鑑別度表
+每一題的依據句
+第 35 題 主旨題 Main idea
+依據句：全文要讀完整篇才能判斷，不在某一句裡。
+第 1 段講 Knight 仿照鐵路號誌設計出交通號誌，第 2 段講這套號誌裝在倫敦一個月就因為瓦斯外洩爆炸停用，第 3 段講美國各大城跟進，Potts 再加上黃燈成為三色號誌，第 4 段講自駕車出現後號誌可能不再需要。文章裡沒有一句話直接點出全文的主旨，可是四段依時間往下排，合起來講的就是交通號誌系統怎麼演變。(B) 發明者只寫到 Knight 和 Potts 兩位，(C) 各種號誌代表什麼意思只在第 1、3 段帶到，都過於狹隘；(D) 文章只講號誌，沒講整個現代交通運輸，太過廣泛。
+錯誤選項：(B) 過於狹隘；(C) 過於狹隘（只講第 1、3 段）；(D) 太過廣泛
+第 36 題 細節題（圖片題） Supporting details
+第 1 段Thus, he proposed a signaling system based on the railway movable-arm signal: Arms extending horizontally commanded drivers to stop, whereas arms lowered to a 45-degree angle told drivers to move on, resembling a traffic director’s gestures.
+第 1 段Red and green gas lamps were added to the signal for use at night.
+Knight 的號誌要同時有可以擺動的號誌臂和夜間用的燈，四張圖裡只有 (C) 兩者都有。(B) 只有臂、沒有燈，比較像他參考的鐵路號誌本身；(A) 只有燈；(D) 寫 STOP、GO 的牌子文章沒提。
+第 37 題 細節題（何者為是） Supporting details
+第 4 段Now, with the emergence of self-driving cars, researchers have begun to suggest that traffic signals are no longer necessary.
+第 4 段Intersections will operate in a way that cars automatically adjust their speed to cross through, while maintaining safe distances from other vehicles.
+原文 → 正確選項
+self-driving cars → Future vehicles
+traffic signals are no longer necessary → may not need traffic lights
+自駕車在選項換成 Future vehicles，「號誌不再必要」換成「可能不需要紅綠燈」。(A) 照抄第 2 段的 explosion，但受傷的是操作號誌的警察，不是 Knight；(C) 照抄第 1 段的 traffic director，原文說的是號誌臂像交通指揮的手勢，構想其實來自鐵路號誌；(B) 黃燈是改良，不是美國第一座。
+第 38 題 文章段落組織 Structure
+第 3 段Installed in Detroit in 1920, Potts’ three-color system allowed for the added signal “proceed with caution” to be displayed.
+This design 要接一個前面剛講完的設計，而且是之後世界各地都採用的；第 3 段最後一句的三色系統正好符合，今天的紅綠燈就是紅、黃、綠三色。(A) 第 1 段結尾講的是警察在旁邊操作號誌，而且第 2 段說這套號誌一個月後就停用了，談不上之後世界各地都採用；(B) 第 2 段結尾是英國禁用號誌，(D) 第 4 段講的是未來可能不再需要號誌，都接不上 later designs。
+把句子放回段落怎麼判斷 →
+逐段中譯
+第 1 段在繁忙的十字路口等著過馬路時，你有沒有想過紅綠燈是誰發明的？大多數人認為第一座紅綠燈出自諾丁漢的工程師 John Peake Knight。Knight 是一位鐵路經理，1860 年代英國的鐵路網不斷擴張，他專門設計鐵路的號誌系統。他認為這套系統一樣可以改用在倫敦繁忙的路口，於是以鐵路的可動臂號誌為基礎，提出一套號誌系統：號誌臂水平伸出，表示駕駛人要停下來；號誌臂下降到 45 度角，表示可以通行，就像指揮交通的人在打手勢。號誌上另外加裝紅、綠兩色的煤氣燈，供夜間使用，旁邊還派駐一名警察負責操作。
+第 2 段Knight 的交通號誌在 1868 年 12 月裝設在倫敦西敏橋附近，但這套系統沒用多久。一個月後，煤氣外洩引起燈具爆炸，操作號誌的警察因此受傷。當局認定這套號誌危害公共安全，計畫隨即喊停，紅綠燈也從此禁止使用，直到 1929 年才重回英國街頭。
+第 3 段1900 年代初期，美國大城市的交通量急遽增加，各地陸續出現仿照英國紅綠燈的號誌。芝加哥流行用可動臂的系統，舊金山則採用紅綠燈的系統。全美各地都有人以 Knight 的構想為基礎，申請改良的專利。其中一大突破是底特律警察 William Potts 發明的黃燈。Potts 的三色系統 1920 年裝設在底特律，多了一個「小心通行」的號誌。
+第 4 段如今隨著自駕車出現，研究人員開始提出交通號誌已經沒有必要的看法。未來的路口會這樣運作：車輛自動調整速度通過路口，同時和其他車輛保持安全距離。在不久的將來，我們或許就會體驗到全新的交通管理方式！
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。這一篇沒有一句話直接點出全文中心思想，怎麼從各段歸納，請看第 35 題（主旨題）的解析。
+第 1 段Most people credit the first traffic light to Nottingham engineer John Peake Knight.
+第 2 段Knight’s traffic signal was installed near London’s Westminster Bridge in December 1868, but the system was short-lived.
+第 3 段In the early 1900s, versions of the British traffic lights appeared in big cities in America, where traffic was on a sharp rise.
+第 4 段Now, with the emergence of self-driving cars, researchers have begun to suggest that traffic signals are no longer necessary.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體說明文 Expository
+組織方式時序發展 Chronological這一類怎麼辨識 →
+關鍵轉折詞ThuswhereasbutIn the early 1900swhileNow
+綱要
+多數人認為紅綠燈的發明人是鐵路號誌工程師 Knight，(Thus) 他仿照鐵路臂板號誌設計交通號誌，臂水平代表停，(whereas) 下垂代表行。
+1868 年號誌裝在倫敦西敏橋附近，(but) 一個月後瓦斯外洩爆炸，計畫立即停止。
+(In the early 1900s) 英國式號誌出現在美國大城，芝加哥用臂板，(while) 舊金山用紅綠燈。
+底特律警察 Potts 發明黃燈，1920 年裝設三色號誌。
+(Now) 自駕車出現後，研究者認為號誌可能不再需要。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 21 個、參考字彙 13 個、字詞搭配 14 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+invent[ɪnˈvɛnt]v.發明三級第 1 段詞彙題考過 2 次：87 聯考第 3 題 inventing（誘答）、87 聯考第 6 題（誘答）
+credit[ˈkrɛdət]v.把……歸功於（credit A to B）三級第 1 段詞彙題考過 5 次：114 學測第 9 題 credited（誘答）、113 學測第 7 題（答案）、109 指考補考第 6 題（答案）、107 學測第 10 題（誘答）、98 指考第 1 題（誘答）
+signaling （詞彙表：signal）[ˈsɪgnəlɪŋ]n.號誌、訊號（signaling system 號誌系統）三級第 1 段詞彙題考過 2 次：106 學測第 12 題（誘答）、92 指考第 3 題 signaled（誘答）
+adapt[əˈdæpt]v.改造、改用（be adapted for 改來用在）四級第 1 段詞彙題考過 3 次：104 指考第 10 題 adapted（誘答）、88 推薦甄選第 4 題（答案）、81 聯考第 8 題（誘答）
+extend[ɪkˈstɛnd]v.伸出、伸展四級第 1 段詞彙題考過 1 次：98 指考參考試卷第 4 題 extended（誘答）
+resemble[rɪˈzɛmbəl]v.像、和……相似四級第 1 段詞彙題考過 2 次：109 指考第 6 題（誘答）、90 聯考第 12 題（誘答）
+gesture[ˈʤɛsʧɚ]n.手勢三級第 1 段詞彙題考過 1 次：108 學測第 14 題（誘答）
+install[ɪnˈstɔl]v.安裝、裝設四級第 2 段詞彙題考過 2 次：109 學測第 7 題（誘答）、106 學測第 11 題 installed（誘答）
+leak[lik]n.外洩、漏出（gas leak 煤氣外洩）三級第 2 段詞彙題考過 1 次：102 學測第 12 題（誘答）
+explosion[ɪkˈsploʊʒən]n.爆炸四級第 2 段詞彙題考過 2 次：106 指考第 2 題（誘答）、94 學測第 8 題 explosions（答案）
+immediately （詞彙表：immediate）[ɪˈmidiətli]adv.立刻、隨即三級第 2 段詞彙題考過 2 次：99 學測第 11 題 immediately（誘答）、88 推薦甄選第 9 題（誘答）
+version[ˈvɝʒən]n.版本、款式五級第 3 段詞彙題考過 2 次：83 推薦甄選第 9 題（答案）、81 聯考第 6 題（誘答）
+adopt[əˈdɑpt]v.採用四級第 3 段詞彙題考過 2 次：97 學測第 3 題（誘答）、88 推薦甄選第 4 題（誘答）
+breakthrough[ˈbreɪkˌθru]n.突破五級第 3 段詞彙題考過 2 次：98 學測第 15 題（誘答）、95 指考第 6 題（答案）
+proceed[prəˈsid]v.前進、通行（proceed with caution 小心通行）四級第 3 段詞彙題考過 1 次：85 聯考第 7 題（誘答）
+caution[ˈkɔʃən]n.小心、謹慎五級第 3 段詞彙題考過 3 次：109 指考第 3 題（答案）、107 指考第 8 題 cautioned（誘答）、93 指考第 1 題（誘答）
+researcher[ˈrisɚʧɚ]n.研究人員四級第 4 段詞彙題考過 1 次：109 學測第 3 題（誘答）
+automatically （詞彙表：automatic）[ˌɔtəˈmætɪkli]adv.自動地三級第 4 段詞彙題考過 3 次：105 學測第 9 題 automatically（誘答）、104 學測第 7 題（誘答）、98 學測第 3 題 automatically（答案）
+adjust[əˈʤʌst]v.調整四級第 4 段詞彙題考過 2 次：110 學測第 7 題 adjustment（誘答）、96 學測第 4 題（答案）
+evolution[ˌɛvəˈluʃən]n.演變、發展五級第 35 題詞彙題考過 1 次：103 指考第 9 題（誘答）
+transportation[ˌtrænspɚˈteɪʃən]n.交通運輸四級第 35 題詞彙題考過 1 次：95 學測第 11 題（答案）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+intersection[ˌɪntɚˈsɛkʃən]n.十字路口六級第 1 段
+specialize[ˈspɛʃəˌlaɪz]v.專門從事（specialize in）五級第 1 段
+movable-arm[ˈmuvəbəlˌɑrm]adj.活動臂式的（號誌）表外第 1 段
+horizontally （詞彙表：horizontal）[ˌhɔrɪˈzɑntəli]adv.水平地五級第 1 段
+whereas[wɛˈræz]conj.然而、而五級第 1 段
+deem[dim]v.認為、視為六級第 2 段
+hazard[ˈhæzɚd]n.危險五級第 2 段
+ban[bæn]v.禁止五級第 2 段
+movable[ˈmuvəbəl]adj.可以移動的表外第 3 段
+patent[ˈpætənt]n.專利五級第 3 段
+innovation[ˌɪnəˈveɪʃən]n.創新、新的做法五級第 3 段
+emergence[ɪˈmɝʤəns]n.出現表外第 4 段
+originate[əˈrɪʤəˌneɪt]v.起源於（originate from）六級第 37 題
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+credit A to B把 A 歸功於 B第 1 段原文：credit the first traffic light to Nottingham engineer John Peake Knight
+specialize in + N／V-ing專門做……第 1 段原文：specialized in designing the signaling system
+see no reason why + 子句覺得沒有理由不……第 1 段原文：saw no reason why this could not be adapted
+be adapted for + N改造成適合……第 1 段原文：be adapted for use on the busy London intersections
+be stationed + 地點駐守在……第 1 段原文：was stationed by the side
+a gas leak瓦斯外洩第 2 段
+be deemed + N／adj.視為……第 2 段原文：Deemed a public hazard
+a public hazard對大眾的危險第 2 段
+be on the rise正在上升第 3 段原文：traffic was on a sharp rise
+file a patent申請專利第 3 段原文：Patents … were filed nationwide
+a major breakthrough重大突破第 3 段
+allow for + N讓……成為可能第 3 段原文：allowed for the added signal
+proceed with caution小心前進第 3 段
+maintain a safe distance from + N和……保持安全距離第 4 段原文：maintaining safe distances from other vehicles
+篇目一覽下一篇 →
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

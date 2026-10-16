@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g92-27-2/index.html
+Author: staresto-create ZZSH
+Title: 92 年學測克漏字第27題詳解（關係子句／疑問詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 92 年學測 ／ 第27題
+92 年學測 克漏字 第27題
+關係子句／疑問詞線索：句內答對率 23%
+答對率 23%：當年每 100 位考生，有 23 位答對。
+About 60 million years ago Gondwana broke up into 27 later became South America, Africa, Antarctica, India and Australia.
+(A)which
+(B)where
+(C)what
+(D)that
+答案：(C) what
+題目編號：G92_27_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+what 是複合關係代名詞，本身就等於「先行詞 + 關係代名詞」（＝the things which），介系詞 into 後面沒有先行詞，只能用 what；which、that 前面必須有先行詞，where 引導地方副詞子句，都不合。
+重點：what 為複合關係代名詞，等於 the thing(s) that；本題 into 後面直接接子句，前面沒有名詞可當先行詞，which、that、where 三個都要先有先行詞才成立。
+延伸閱讀：what 為複合關係代名詞＝ 先行詞 + 關係代名詞 that 或 which（＝ the thing(s) that） ↗
+深入解析
+你可能會這樣想
+介系詞 + what + 動詞。看到空格後面接著動詞 later became，你判斷要填關係代名詞——這一步沒錯，錯在下一步：直接選 which 或 that。你熟悉的關係代名詞多半長成「先行詞 + 關代」，眼睛已經習慣往左邊找名詞。這一格的關鍵就在：往左找，找不到。空格左邊只有介系詞 into，再往前是動詞 broke up 和主詞 Gondwana，沒有名詞可以當先行詞。
+怎麼判斷
+關係代名詞的解題法只有一步：把先行詞代進關代子句，唸得通就對。先試 which：先行詞是哪一個字？找不到，代不進去，which 和 that 這裡都不能用。what ＝ the thing(s) that／which，先行詞跟關代包在一起，所以它前面本來就不會有先行詞——這是 what 最好認的地方。代進去看看：broke up into what later became South America… ＝ broke up into the landmasses that later became South America…（分裂成後來變成南美洲…的那幾塊陸地），唸得通，答案就是它。這個用法你一定見過：What he said is true.（他說的話是真的）＝ The thing that he said is true. 一句記完：What used to be a parking lot is now the park where the whole neighborhood jogs.（原本是停車場的那塊地，如今成了整個社區慢跑的公園。）〔情境取材自 111 學測作文題：兩座公園的比較〕
+誘答選項
+which 與 that 前面都要有先行詞，這裡沒有；that 還多一條限制，不能直接接在介系詞後面（英文不說 into that）。where 後面要接完整子句，本句 where 之後直接是動詞 later became，缺主詞。
+常考字詞與句型
+what（＝the thing(s) that／which，複合關係代名詞）、Do what you like.（做你喜歡的事）、what is called（所謂的）、what is more（更有甚者）、what is worse（更糟的是）、break up into（分裂成）。其中 what is more 這一組考過 3 個年度，103 年第 19 題 →、115 年第 11 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Up to about 250 million years ago the world had just one huge super-continent called Pangaea. Animals were able to move and intermix with 26. About 200 million years ago this super-continent broke up into two continents: Laurasia and Gondwana. About 60 million years ago Gondwana broke up into 27 later became South America, Africa, Antarctica, India and Australia.
+Since then Australia 28 from the rest of the world by vast oceans. The animals there no longer had 29 with animals from other parts of the world. They evolved separately. As a result, about 95 % of Australia's mammals and 94 % of its frogs are found 30 else in the world. Australia has lots of very unusual animals.
+中譯：大約 2 億 5 千萬年前，地球上曾經只有一塊巨大的超級大陸，稱為「盤古大陸」。當時的動物可以自由移動，彼此交流混居。大約 2 億年前，這塊超級大陸分裂成兩塊：勞亞大陸和岡瓦納大陸。大約 6 千萬年前，岡瓦納大陸又進一步分裂，後來形成了南美洲、非洲、南極洲、印度和澳洲。自此之後，澳洲便被廣闊的海洋與世界其他地區隔絕開來，當地的動物再也無法與世界其他地方的動物有所接觸，於是牠們各自獨立演化。結果，澳洲有大約 95%的哺乳類動物和 94%的蛙類，是世界上其他地方都找不到的獨有物種。澳洲擁有許多非常獨特罕見的動物。
+📋 內容大意
+Until about 250 million years ago, all the land was one super-continent, Pangaea. Animals could move and mix freely.
+It later split into Laurasia and Gondwana. Gondwana then broke into Africa, South America, Antarctica, India and Australia.
+Wide oceans then kept Australia apart. Its animals developed alone, so most of its mammals and frogs live only there.
+← 第26題回到92 年學測第28題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

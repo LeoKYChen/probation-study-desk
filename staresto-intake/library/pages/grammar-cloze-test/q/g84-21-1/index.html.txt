@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g84-21-1/index.html
+Author: staresto-create ZZSH
+Title: 84 年學測克漏字第21題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 84 年學測 ／ 第21題
+84 年學測 克漏字 第21題
+慣用語／片語線索：跨句
+America encourages its young people to drink. 21 , our society makes drinking a part of every celebration.
+(A)For example
+(B)Afterwards
+(C)For one thing
+(D)On the whole
+答案：(C) For one thing
+題目編號：G84_21_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+段落開頭列舉多個原因的第一項（第二段開頭有 Secondly 承接第二項），For one thing（其中一個原因是）符合這種「列點論述」的開頭；For example 是舉例、Afterwards 是之後、On the whole 是整體而言，都不符合這裡「列出第一個理由」的功能。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是段落開頭常見的轉折詞，而 For example（舉例來說）看起來最像是要開始講例子，很容易先挑它。這一格的證據不在附近，在整篇文章的結構裡。
+怎麼判斷
+四個選項都是轉折詞，可見這一格考的是這一段在整篇裡的位置。往後找一個關鍵字：這一篇後面出現了 Secondly（第二點），再往後又出現 The strongest encouragement ... comes from advertisers（最強的鼓勵來自廣告商）。也就是說，作者是在列舉「美國鼓勵年輕人喝酒」的幾個原因，而空格所在的地方正是第一點的開頭。既然後面用了 Secondly，前面這一點就要用 For one thing（其一是……）——英文列舉常用 For one thing ... , for another ... 這一組；本篇則是用 Secondly 接第二點。（同型見 93 年第 17 題 →的 for one thing …, for another … 那一組。）
+誘答選項
+For example（舉例來說）：單看前兩句，把「社會讓喝酒成為每個慶祝場合的一部分」當成第一句的例子也說得通；但後文用 Secondly 帶出第二點，前面就需要一個標出第一點的詞，For example 沒有這個作用。On the whole（整體而言）：用來收尾、下總結，而這裡才剛開始展開。Afterwards（之後）：講時間先後，與列舉原因無關。
+常考字詞與句型
+For one thing …, for another …（其一……其二……）、Secondly（第二點）、on the whole（整體而言）、encourage sb to V（鼓勵某人做……）、be part of（是……的一部分）、a celebration（慶祝活動）。其中 on the whole 這一組考過 4 個年度，83 年第 21 題 →、學測詞彙 91 年第 11 題、學測詞彙 91 年補考第 12 題都出現過。
+線索範圍說明：For one thing 與後文的 Secondly 搭配，標出列舉的第一個原因
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+America encourages its young people to drink. 21 , our society makes drinking a part of every celebration. Our personal celebrations, 22 weddings, promotions, graduations, and anniversaries, are 23 linked with drinking. 24 children can attend any family affair without seeing the adults enjoying their liquor. Drinking is part of our national celebrations as well. The Fourth of July means beer and New Year's Eve is an entire night dedicated to the proposition that everyone must get 25 .
+Secondly, the shows young people watch on television encourage them to drink. On 26 every soap opera, the characters drink casually and often. The rock videos young people watch over and over again feature alcohol, too. 27 on the videos sit in bars, nightclubs, and roadhouses. Drinking, the message goes, is cool.
+The strongest encouragement to drink that young people receive, 28 , comes from advertisers. Beer companies often sponsor the sports events young people watch. In addition, advertisements for liquor, on TV and in print, show situations that are 29 to the young. People hoist their glasses 30 they are sitting around ski lodges, sailing, dancing, or enjoying a football game. We may say we don't want our children to drink, but our messages say just the opposite.
+中譯：美國鼓勵年輕人喝酒。其一，我們的社會讓喝酒成為每個慶祝場合的一部分。我們個人的慶祝活動，例如婚禮、升遷、畢業典禮和週年紀念日，都與喝酒緊密相連。很少有孩子能在不看到大人喝酒的情況下參加家庭聚會。喝酒也是我們國家慶典的一部分。國慶日代表啤酒，跨年夜則整晚都在慶祝「每個人都必須喝醉」這個信念。第二，年輕人在電視上看的節目也鼓勵他們喝酒，幾乎每部肥皂劇裡，角色都輕鬆頻繁地喝酒。年輕人一再重複觀看的搖滾錄影帶裡也常出現酒精，影片人物坐在酒吧、夜店和路邊小酒館裡。這些影片傳達的訊息是：喝酒很酷。然而，年輕人受到最強烈的喝酒鼓勵，來自廣告商。啤酒公司經常贊助年輕人愛看的體育賽事。此外，電視和平面媒體上的酒類廣告，展示的情境對年輕人極具吸引力。人們在滑雪小屋、航海、跳舞或看足球賽時舉杯暢飲。我們可能會說不希望孩子喝酒，但我們傳遞的訊息卻恰恰相反。
+📋 內容大意
+American culture pushes its young toward alcohol by tying drink to every kind of celebration.
+Weddings, graduations and anniversaries all come with alcohol. Children see adults drinking at family events. National holidays are the same, from the Fourth of July to New Year's Eve.
+Television sends the same message. Soap operas show casual drinking, rock videos are set in bars, and drinking is made to look cool.
+Advertisers push hardest. They sponsor sports events and show happy scenes of skiing, sailing and dancing. Our messages tell children the opposite of what we say.
+回到84 年學測第22題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

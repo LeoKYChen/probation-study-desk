@@ -1,0 +1,44 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z98ref-17/index.html
+Author: staresto-create ZZSH
+Title: 指考參考試卷（95 課綱適用，98 年施測）克漏字第17題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 指考參考試卷（95 課綱適用，98 年施測） ／ 第17題
+指考參考試卷（95 課綱適用，98 年施測） 克漏字 第17題
+字彙選義線索：跨句
+It is the constant nearness of architecture during our life that has 17 us in this way.
+(A)treated
+(B)guided
+(C)pleased
+(D)blinded
+答案：(D) blinded
+題目編號：Z98參_17（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+blinded us（使我們變得盲目／遲鈍）呼應全文主題——建築因與我們朝夕相處而讓我們對其美感變得視而不見；treated／guided／pleased 都不符合此處「因熟悉而遲鈍」的語意。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個都是過去分詞，接在 has 後面組成現在完成式，文法上都放得進去；treated 語意最中性，很容易被當成安全牌。
+怎麼判斷
+關鍵在句尾的 in this way（變成這樣），它是回指，指的是前一句剛講完的狀態：We are in general insensitive to architecture {16} an art（我們對建築普遍無感）。所以空格要填的動詞，必須能造成「無感」這個結果。再往前看，篇章第二句早就埋了伏筆：either it is bad art or we are abnormally blind（不是作品差，就是我們瞎得反常）。blind 當動詞是「使看不見、蒙蔽」，has blinded us in this way 就是「把我們變成這樣看不見」，前後完全接得起來。另外這一句是強調句型 It is ... that ...，還原成 The constant nearness of architecture has ______ us，主詞是「天天就在身邊」這件事，不是建築本身。
+誘答選項
+treated（對待）語意太空，「以這種方式對待我們」沒有說出造成什麼結果，對不上 in this way 所指的「無感」。guided（引導）與 pleased（取悅）方向都相反，引導與取悅不會讓人變得無感；pleased 還會與第二句的 Any art must give us pleasure 撞在一起，讀起來像在說藝術成功了，與整段的批評剛好相反。
+常考字詞與句型
+blind sb to sth（使某人對……視而不見）、in this way（以這種方式、變成這樣）、It is ... that ...（強調句型，把要強調的部分提到 It is 後面）、constant（持續不斷的）、nearness（就在身邊、貼近）、please（取悅）。
+線索範圍說明：in this way 回指前一句「我們對建築普遍無感」
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Architecture is an art. Any art must give us pleasure; if it doesn't, either it is bad art or we are abnormally blind. We are in general insensitive to architecture 16 an art and to the joy it may bring to us. It is the constant nearness of architecture during our life that has 17 us in this way.
+We forget that it is an art of here and now; because it is with us every day and 18 we must have houses to live in, we are apt to think of them solely as dwelling places. Therefore we think of architecture as some vague, learned thing having to do with French cathedrals or Italian palaces or Greek temples, 19 with New York or Chicago streets or Los Angeles suburbs.
+This false belief has strengthened in us until our eyes are 20 and our minds are deadened to all the beauty that is being created around us today. Eventually we lose all the fine deep pleasure that we might otherwise experience from our ordinary surroundings.
+中譯：建築是一門藝術。任何藝術都必須帶給我們愉悅感；如果做不到這一點，那要不是這件作品本身不算好藝術，就是我們的感受力異常遲鈍。我們普遍對建築作為一門藝術、以及它可能帶給我們的喜悅相當不敏感。正是因為建築在我們生活中無所不在、如此貼近，才讓我們對它產生了這樣的盲目。我們忘了建築其實是一門「當下、此地」的藝術；因為它每天都與我們同在，而且我們生活中必須要有房子可住，我們便容易只把房子當作居住場所來看待。因此，我們把建築想像成某種模糊、學術性的東西，聯想到的是法國的大教堂、義大利的宮殿或希臘的神廟，而不是紐約或芝加哥的街道、或洛杉磯的郊區。這種錯誤的觀念在我們心中根深柢固，使我們的雙眼變得遲鈍，心靈也對今日周遭正在被創造出來的一切美好事物麻木無感。最終，我們失去了原本可能從日常周遭環境中所體驗到的那種深刻美好的愉悅感。
+📋 內容大意
+Architecture is an art, yet most of us take no pleasure in it.
+Being always around us, buildings seem mere shelter rather than works of art.
+So we reserve the name for foreign cathedrals and palaces, and grow blind to the beauty built beside us today.
+← 第16題回到指考參考試卷（95 課綱適用，98 年施測）第18題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

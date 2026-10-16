@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g100-29-3/index.html
+Author: staresto-create ZZSH
+Title: 100 年學測克漏字第29題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 100 年學測 ／ 第29題
+100 年學測 克漏字 第29題
+字彙選義線索：句內答對率 43%
+答對率 43%：當年每 100 位考生，有 43 位答對。
+In other words, the scarcity of goods is 29 causes humans to attribute value.
+(A)what
+(B)which
+(C)why
+(D)how
+答案：(A) what
+題目編號：G100_29_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+what 引導名詞子句作 is 的補語，「物品的稀缺性是『使人類賦予價值的原因』」；which（需要明確先行詞，這裡沒有）、why（不合這個主詞補語子句結構）、how 都不合。
+深入解析
+你可能會這樣想
+空格前面是 is、後面是動詞 causes，很多人想填一個關係代名詞去修飾前面的 goods 或 scarcity，就挑了 which。答對率只有四成三，是這一年最低的一題。難點在於這裡的 what 不是疑問詞「什麼」，而是一個自己帶著先行詞的關係代名詞，等於 the thing that。
+怎麼判斷
+先看句子缺什麼。the scarcity of goods is ______ causes humans to attribute value. 主詞是 the scarcity of goods，動詞是 is，所以 be 動詞後面缺的是主詞補語，而補語的位置要放名詞或名詞子句。再看空格後面：causes 是動詞，前面沒有主詞。所以空格必須同時做兩件事——對外當這個名詞子句的頭，對內當 causes 的主詞。能一個字兼兩種用法的就是 what。把它拆開唸一次就懂了：what 等於 the thing that，整句是 the scarcity of goods is the thing that causes humans to attribute value（商品的稀有性就是那個讓人類賦予價值的東西）。這也正是 which 不行的原因：which 需要先行詞擺在它前面，而這裡 be 動詞後面是空的，沒有東西給它修飾。最短的版本：This is what I want.（這就是我要的東西）等於 This is the thing that I want.，同一個結構，只是那裡的 what 當受詞、這裡當主詞。
+誘答選項
+which：關係代名詞，必須有先行詞；放在 be 動詞後面沒有東西可修飾，整句會缺補語。why：引導的子句可以放在 be 動詞後面（That's why they moved house.），但 why 之後要接完整的句子，這裡的 causes 缺主詞，接不起來。how：同樣是副詞性的，不能當 causes 的主詞；how 引導的子句雖然可以放在 be 動詞後面（This is how it works.），但後面一樣要接完整的句子。
+常考字詞與句型
+what（…的東西，等於 the thing that）、in other words（換句話說）、the scarcity of（…的稀有性）、cause sb to do sth（使某人做某事）、attribute value to sth（賦予某物價值）、This is what I want.（這就是我要的）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Which is more valuable? Water or diamonds? Water is more useful to mankind than diamonds, and yet 26 are costlier. Why? Called the diamond-water paradox, this is a classic problem posed to students of economics.
+The answer has to do with supply and demand. Being a rare natural resource, diamonds are 27 in supply. However, their demand is high because many people buy them to tell the world that they have money, 28 as conspicuous consumption in economics. In other words, the scarcity of goods is 29 causes humans to attribute value. If we 30 surrounded by an unending abundance of diamonds, we probably wouldn't value them very much.
+Hence, diamonds carry a higher monetary value than water, even though we find more use for water.
+中譯：何者更有價值？水還是鑽石？水對人類的用處遠大於鑽石，然而鑽石卻昂貴得多，這是為什麼呢？這個經典的經濟學問題被稱為「鑽石與水的悖論」，答案與供需有關。鑽石是稀有的天然資源，供給量有限；然而，鑽石的需求量卻很高，因為許多人購買鑽石是為了向世人展示自己的財力，這在經濟學上稱為「炫耀性消費」。換句話說，商品的稀有性正是人類賦予其價值的原因。如果我們身邊充斥著取之不盡的鑽石，我們大概就不會這麼珍視它們了。因此，儘管水對我們更有用處，鑽石的金錢價值卻遠高於水。
+📋 內容大意
+The diamond-water paradox highlights the economic puzzle of why useless diamonds cost more than essential water.
+Value is driven by scarcity and high demand related to social status rather than basic usefulness.
+Hence, scarcity gives diamonds a far higher monetary price than water despite water's greater utility.
+← 第28題回到100 年學測第30題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

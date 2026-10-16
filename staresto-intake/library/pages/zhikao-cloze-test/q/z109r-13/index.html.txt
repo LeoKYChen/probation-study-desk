@@ -1,0 +1,50 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z109r-13/index.html
+Author: staresto-create ZZSH
+Title: 109 年指考補考克漏字第13題詳解（介系詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 109 年指考補考 ／ 第13題
+109 年指考補考 克漏字 第13題
+介系詞線索：句內
+When our brain is attempting to retrieve a name so that we can say it, it is likely that another name in the same group will come to our lips 13 the one we meant to say.
+(A)as for
+(B)instead of
+(C)due to
+(D)far beyond
+答案：(B) instead of
+題目編號：Z109R_13（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【轉折詞】instead of 表示「取代」，指另一個名字會「取代」原本想說的名字脫口而出。as for（至於）、due to（由於）、far beyond（遠超過）都不符合此處「替代」的文意。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個看起來都是幾個字合起來當一個介系詞用，一個一個代進去讀都不算太怪；due to（由於）特別誘人，因為整段都在解釋原因。
+怎麼判斷
+先看清楚這一句在講什麼：another name in the same group will come to our lips ______ the one we meant to say（同一組裡的另一個名字會脫口而出，______ 我們本來想講的那一個）。空格兩邊擺著兩個名字：實際跑出來的那一個，與本來要講的那一個。兩者是取代的關係——出來的是甲，而不是本來要講的乙。instead of（而不是、取代）正好是這個意思。空格兩邊各站著一樣東西時，先問它們是取代、並列、還是因果，比把四個選項逐一代進去快得多。順帶記住這一類選項的共同點：四個都由兩三個字組成，後面一律接名詞，也都不是連接詞——連接詞後面要接的是子句。但這四個還要再分成兩型。as for、instead of、due to 是幾個字合起來當一個介系詞用，中間拆不開（劍橋 English Grammar Today 的 Prepositions 條目就是這樣處理的：some pairs and groups of words operate like single prepositions，列出的例子有 because of、in place of、in addition to、in front of、up to）。far beyond 不一樣：far 是副詞、beyond 才是介系詞，兩個字各做各的，拿掉 far 句子照樣成立——劍橋的 beyond 條目就收了 Our house is just beyond the bridge.（我們家就在橋的那一頭）這個例句，用的是同一型。驗算法很簡單：拿掉前面那個字還通，就是副詞加介系詞；不通，才是整組當一個介系詞用。
+誘答選項
+as for（至於）用來換一個話題（As for the price, we can talk later），這一句沒有換話題。due to（由於）會變成「另一個名字因為我們本來想講的那個而脫口而出」，因果講不通；真正的原因作者寫在下一句的 That is because。far beyond（遠遠超過）用在程度或範圍的比較，兩個名字之間沒有高低多寡可比。
+這一組在題庫裡的落點
+instead of 當過五次答案，本題是其中一次，另外三題在學測克漏字 98 年第 27 題 →、指考克漏字 105 年第 19 題 →與文意選填學測 94 年第 35 題；105 年那一題還被 107 學年度起適用參考試卷第 19 題 →沿用，兩邊是同一題。把四題擺在一起看，會發現 instead of 每次的擺法都不同：夾在兩個名詞片語之間、擺句首接動名詞、擺句中比兩個名字。常一起考的 rather than 只在學測克漏字當過兩次答案，而 in place of 從來沒當過答案——它在本題庫只出現過一次，是 100 年第 20 題的誘答。She called him by his brother's name instead of his own.（她把他叫成他哥哥的名字，而不是他自己的。）He laughed rather than correct her right away.（他笑了出來，而不是當場糾正她；rather than 後面接的是原形動詞 correct。）〔情境取材自 95 學測作文題：廚房裡的大猩猩〕
+常考字詞與句型
+instead of（而不是、取代）、as for（至於）、due to（由於）、come to one's lips（脫口而出）、attempt to V（試圖、企圖）、retrieve（取回、檢索）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+"Anne! Jo! I mean, Max!" Mothers often mix up their children's names, but studies show that moms are not the only ones who make this mistake. 11 name phenomenon turns out to be very common. Almost everyone sometimes mixes up the names of their family and friends.
+The phenomenon is called a "cognitive glitch" by researchers in the field of cognitive science. It is not caused by a bad memory or by aging processes that affect brain functioning. It is simply a result of the way our brain 12 those we love.
+When our brain is attempting to retrieve a name so that we can say it, it is likely that another name in the same group will come to our lips 13 the one we meant to say. That is because in order to find the name we are looking for, we are essentially 14 the whole set of names in that group, which includes all our beloved family members. Scientists also report that the category 15 the person belongs (family, close friends, etc.) is far more influential in causing a mix-up than any phonetic similarity between names. Names that sound alike do not usually trigger the mix-up.
+Isn't it great to know that when you call others by the wrong name, it is evidence of your love for them all?
+中譯：「安！喬！我是說，麥克斯！」母親常常會叫錯孩子的名字，但研究顯示，會犯這種錯誤的並不只有媽媽們。這種「名字混淆」的現象其實相當普遍，幾乎每個人都曾經叫錯過家人或朋友的名字。
+認知科學領域的研究者將這種現象稱為「認知小失誤」（cognitive glitch）。這不是記憶力不好，也不是老化影響腦部功能所導致，而單純是我們大腦分類所愛之人的方式所造成的結果。
+當大腦試圖提取一個名字以便說出口時，同一個「群組」裡的另一個名字很可能會先脫口而出，取代原本想說的那個名字。這是因為，為了找出我們要找的那個名字，大腦實際上是在「翻找」該群組裡的整套名字，而這個群組正好包含了我們所有摯愛的家人。科學家也指出，某人所屬的「類別」（例如家人、密友等）遠比姓名發音是否相似，更容易造成叫錯名字的情況；發音相似的名字反而通常不太會引發混淆。
+這樣想來是不是很棒呢？當你叫錯別人的名字時，其實正證明了你有多愛他們。
+📋 內容大意
+Mothers often call one child by another's name, and studies show almost everyone muddles the names of loved ones.
+Scientists call it a cognitive glitch, caused not by poor memory or aging but by how the brain sorts people.
+Fetching one name means searching a whole group, so a neighboring name slips out first.
+The group a person sits in matters more than any likeness in sound, so the error signals affection.
+← 第12題回到109 年指考補考第14題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

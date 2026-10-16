@@ -1,0 +1,51 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dz94-43/index.html
+Author: staresto-create ZZSH
+Title: 指考 94年 篇章結構 第43題詳解（掌握段落內語句的連貫性與一致性）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 指考 94年 ／ 第43題
+指考 94年 篇章結構 第43題
+選文：出生序與智力（Birth Order and Intelligence）
+掌握段落內語句的連貫性與一致性線索：序列與時間詞、轉折詞答對率 33%
+(A)There are definitely two sides to this issue.這個議題確實有兩種立場。
+(B)Scores decreased as the family size increased and also with birth order.分數隨著家庭人數增加而下降，也隨著出生序愈後面而下降。
+(C)An intelligence test was administered to over 350,000 Dutch males when they turned 19 years of age.一項智力測驗施測於三十五萬名以上的荷蘭男性，時間是他們滿十九歲的時候。
+(D)On the other side are Rutherford and Sewell, who studied more than 10,000 American high school graduates.另一邊是 Rutherford 和 Sewell，他們研究了一萬多名美國高中畢業生。
+(E)Since then, the theory has been elaborated and even extended to explain the positive effect of birth order on intelligence.自那時起，這個理論持續被闡述，甚至被擴大用來解釋出生序對智力的正面效應。
+答案：(E) Since then, the theory has been elaborated and even extended to explain the positive effect of birth order on intelligence.
+題目編號：Dz94_43
+解析
+先把年份排出來。 空格前面是一九七五年（Zajonc 和 Markus 提出匯流理論），空格後面是一九九一年（Rutherford 和 Sewell 檢驗這個理論，發現不成立）。中間隔了十六年。
+再看空格後面的第一個字。 後面是 However（然而）。它後面講的是「檢驗之後找不到支持」，如果前面先交代這個理論一路發展、甚至擴大了解釋範圍，這個轉折就更有力。
+E 補的正是這十六年：Since then（自那時起）接一九七五，the theory 指匯流理論，elaborated and even extended（持續被闡述、甚至被擴大）說明它一路發展得很好——這樣後面的 However 才轉得動。
+這題只有三成三的人答對，兩個原因：
+第一，這一格前後都在談理論，能和前後文對上字面的選項不只一個，光看重複的字分不出來。第二，也是更主要的——E 裡的 positive effect（正面效應）和前一句的 negative effect（負面效應）看起來互相矛盾，作答時容易因此把它刪掉。但 even（甚至）這個字是提示：elaborated and even extended 講的是理論往外延伸，連反方向的現象也想一併解釋，不是推翻自己。
+如果你選了 A（這個議題確實有兩種立場。）：A 接在「有人提出理論」之後，讀起來也算順。但 A 一旦放進來，等於先把結論說了，後面的 However 就沒有必要再轉一次。
+【下次先看這裡】空格前後的年份差很多，中間多半漏了「這段期間發生什麼」。選項裡有 Since then、In the following years 就先試它。
+線索與數據
+線索種類序列與時間詞、轉折詞
+線索在哪兩側 Since then；1975 ↔ 1991；後句 However
+答對率33%
+鑑別度36
+本篇題型5選5・刪去法可收尾
+數據出處：本頁的答對率與鑑別度來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響。
+展開本題所在的整篇選文與中文翻譯
+本篇共 5 格、5選5；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+Many researchers have been interested in whether or not an individual’s birth order has an effect on intelligence. One of the first studies was carried out in the Netherlands during the early 1970s. 41 The test was called the “Raven,” which is similar to the I.Q. test. The researchers found a strong relationship between the birth order of the test takers and their scores on the Raven test. 42
+交鋒開始：一派提出理論解釋，另一派檢驗後說效應根本不存在
+In 1975, Zajonc and Markus developed the confluence theory to explain the negative effect of birth order on intelligence involving the data from the Dutch. 43Since then, the theory has been elaborated and even extended to explain the positive effect of birth order on intelligence. However, Rutherford and Sewell in 1991 tested the theory and found no support for it. They concluded that birth order effects did not exist.
+44 On one side there are Zajonc and Markus, who state that birth order effects may be explained solely by family size and the spacing of births. With short birth intervals, increasing order of birth will be associated with lower intelligence levels. But with long birth intervals, this pattern may be reversed. 45 They show that the confluence model does not explain any relationship between birth order and intelligence that may exist in the American data. Up to date, there is no agreement between these opposing views. And such a debate may continue for years to come.
+中譯
+許多研究者一直很關心一個人的出生序會不會影響智力。最早的研究之一在一九七○年代初期於荷蘭進行。41 那項測驗叫做「瑞文氏測驗」（Raven），性質與智力測驗相近。研究者發現，受測者的出生序與他們在瑞文氏測驗上的分數之間有很強的關聯。42
+一九七五年，Zajonc 和 Markus 提出匯流理論，用荷蘭的那批資料來解釋出生序對智力的負面效應。43 然而，Rutherford 和 Sewell 在一九九一年檢驗這個理論，並未找到支持它的證據。他們的結論是，出生序效應並不存在。
+44 一邊是 Zajonc 和 Markus，他們主張出生序效應完全可以用家庭人數和生育間隔來解釋。生育間隔短的時候，出生序愈後面，智力水準愈低；但生育間隔長的時候，這個模式可能反過來。45 他們指出，匯流模型無法解釋美國資料中可能存在的任何出生序與智力的關聯。到目前為止，這兩派對立的看法仍沒有共識。這樣的爭論可能還會持續好些年。
+← 第42題回到互動練習第44題 →
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

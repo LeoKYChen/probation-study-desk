@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z105-11/index.html
+Author: staresto-create ZZSH
+Title: 105 年指考克漏字第11題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 105 年指考 ／ 第11題
+105 年指考 克漏字 第11題
+字彙選義線索：跨句答對率 73%
+答對率 73%：當年每 100 位考生，有 73 位答對。
+Or, they may have 11 you with the loud music from their earphones, or by taking up more than one seat on a crowded subway car.
+(A)offended
+(B)controlled
+(C)acquired
+(D)supplied
+答案：(A) offended
+題目編號：Z105_11（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+offended you（冒犯你）呼應前文 irritated（惹惱），表示他人可能用耳機外洩的音樂聲冒犯到你；controlled／acquired／supplied 都不符合此處語意。
+深入解析
+你可能會這樣想
+offend 這個字，你的印象大概只有「冒犯」兩個字，而且多半綁在言語上——說錯話得罪人。耳機音樂外洩、在車廂裡占掉兩個位子，這些事在你的印象裡不會被歸到「冒犯」底下，所以就算認得這個字，也不見得敢把它填進來。加上空格後面接的是 you with the loud music，「動詞加人加 with 加東西」這個排法會讓 supplied 看起來形態吻合。
+怎麼判斷
+動手填之前先問一句：這一段在講什麼？第一句就把核心問出來了——Have you been irritated by someone standing too close in line, talking too loud or making eye contact for too long?（你是不是被那種排隊靠太近、講話太大聲、盯著你看太久的人惹惱過？）整段從頭到尾都在講「別人踩進你的空間、讓你不舒服」，irritated 就是這一段的核心用字。空格這一句用 Or 接下去，做的事情與前一句一模一樣，只是再舉兩個例子：耳機裡的音樂太大聲、在擁擠的地鐵車廂裡占了不只一個位子。既然是同一件事換個說法再講一次，空格要的就是與 irritated 同方向的那個字。這就是同義勾環：空格與前後文的某個字是同義改寫。英文的習慣是不把同一個字重複用，改寫時會換成同義字（Halliday 與 Hasan「Cohesion in English」把同義詞複現列為詞彙銜接的手段之一），所以這裡不會再出現一次 irritated，而是換成 offend，讀成 they may have offended you with the loud music，與第一句對得起來。這個方法比逐個選項推敲可靠得多：先找出這一段在講什麼、核心用字是哪一個，再看空格是不是那個字的改寫。找得到這條連結才敢填，找不到就表示還沒讀懂這一段。
+誘答選項
+三個誘答選項的問題其實是同一個：方向不對。這一段從第一句起就在講別人做了讓你不舒服的事，空格要的必須是一個負面的動作。supply（提供）是把對方需要的東西給他，帶正面或中性的意思；controlled（控制）語意太重，用大聲音樂與占位子講不到控制別人；acquired（取得、習得）後面接的是東西不是人，acquired you 根本說不通。supplied 另外有一個地方要提防：它的形態與 you with 這個排法完全吻合，看起來很像 supply sb with sth（The hotel supplies its guests with towels.）。但句中那個 with 不是 supply 帶來的，它是表「用什麼手段」的 with，證據在後半句的並列——with the loud music 與 or by taking up more than one seat 對等，一個是 with 加名詞、一個是 by 加動名詞，兩個都在回答「用什麼方式」。順便記一個通則：句子裡出現一個介系詞時，不要單獨拿它去挑動詞，因為配得上同一個介系詞的動詞往往不只一個，學測 91 年第 23 題 →的 give birth to 正是同一個判斷方式失靈的例子。
+常考字詞與句型
+offend sb（冒犯、惹惱某人）、be irritated by（被……惹惱）、supply sb with sth（提供某人某物）、take up（占用時間或空間）、may have 加過去分詞（推測過去可能發生過的事）、more than one 加單數名詞（不只一個）。
+線索範圍說明：線索在前一句的 irritated，空格是它的同義改寫
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：105學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Have you been irritated by someone standing too close in line, talking too loud or making eye contact for too long? Or, they may have 11 you with the loud music from their earphones, or by taking up more than one seat on a crowded subway car. You feel unhappy because your personal space has been violated.
+According to scientists, personal space involves certain invisible forces imposed on you through all the 12. For example, people may feel their space is being invaded when they experience an unwelcome sound, smell, or stare.
+In certain situations such as in crowded subway cars or elevators, it is not always possible for people to keep their 13 distance from others. They learn coping strategies to deal with their discomfort. For instance, people often avoid eye contact with someone standing 14 them, or they pretend that these people are lifeless objects in their personal space. Given the opportunity, they may 15 to a corner, putting distance between themselves and strangers. Or, they may sit or stand equidistant from one another like birds on a wire.
+中譯：你是否曾因為排隊時有人站得太靠近、講話太大聲，或視線接觸過久而感到不悅？又或者，他們可能用耳機裡外洩的音樂聲，或在擁擠的地鐵車廂裡占用超過一個座位而讓你感到冒犯。你之所以感到不快，是因為你的個人空間被侵犯了。根據科學家的說法，個人空間牽涉到透過各種感官施加在你身上的無形力量。舉例來說，當人們經歷令人不快的聲音、氣味或凝視時，可能會感覺自己的空間正遭到入侵。在諸如擁擠的地鐵車廂或電梯等某些情境中，人們並不總是能與他人保持理想的距離。他們因此學會了應對不適的策略。舉例來說，人們常常避免與站得很近的人有眼神接觸，或假裝這些人是自己個人空間裡沒有生命的物體。若有機會，他們可能會退到角落，藉此拉開與陌生人之間的距離。又或者，他們可能像電線上的鳥兒一樣，彼此保持等距而坐或站立。
+📋 內容大意
+Standing too near, staring or leaking loud music annoys us by intruding on personal space.
+Scientists say sound, smell and gaze all carry invisible forces that mark out this space.
+In packed lifts or trains people cope by avoiding eyes, ignoring others, or spreading out evenly.
+回到105 年指考第12題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

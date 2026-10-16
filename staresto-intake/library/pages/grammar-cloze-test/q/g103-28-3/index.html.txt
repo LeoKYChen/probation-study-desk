@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g103-28-3/index.html
+Author: staresto-create ZZSH
+Title: 103 年學測克漏字第28題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 103 年學測 ／ 第28題
+103 年學測 克漏字 第28題
+慣用語／片語線索：句內答對率 45%
+答對率 45%：當年每 100 位考生，有 45 位答對。
+Very few people, no matter how intelligent or experienced, can 28 all the possibilities or outcomes of a policy or a course of action within just a short period of time.
+(A)set out
+(B)turn out
+(C)put into practice
+(D)take into account
+答案：(D) take into account
+題目編號：G103_28_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】take into account 固定片語「將……納入考慮」；set out（出發/著手）、turn out（結果是）、put into practice（付諸實行）都不合。
+深入解析
+你可能會這樣想
+take into account 你應該看過，但可能記成 take account of，或是不確定 into 後面能不能直接接一長串受詞。加上 put into practice 的形狀跟它幾乎一樣（動詞加 into 加名詞），兩個擺在一起就分不出來。答對率四成五，最容易選錯的是 put into practice。
+怎麼判斷
+先確認受詞是什麼：all the possibilities or outcomes of a policy or a course of action（一項政策或行動方案的所有可能性與結果）。這些是還沒發生、拿來評估的東西，不是可以拿去執行的東西。take ... into account 是「把…列入考慮」，受詞正是要被評估的因素，完全吻合。put ... into practice 是「把…付諸實行」，受詞必須是可以實行的計畫、理論或方法（put the plan into practice）。「把所有可能性付諸實行」語意不通。再看語境確認：前面那個問句在問人們有沒有把所有重要因素都仔細考慮過，本句說「很少有人能在短時間內把所有可能性都列入考慮」，講的是思考的侷限，不是執行力。語序要特別留意：這個片語有兩種擺法。受詞短的時候把受詞放中間——take all the factors into account；受詞很長的時候就把 into account 提到前面——take into account all the possibilities or outcomes of...。本題受詞長，用的是後者。以後看到 take into account 後面直接接一長串名詞，不要以為是印錯。同義的說法還有 take ... into consideration。順帶處理句中的 no matter how intelligent or experienced：這是省略的讓步子句，還原成完整子句是 no matter how intelligent or experienced they may be。這種省略在正式文章裡很常見，還原的方法就是把主詞與 be 動詞補回去，與 While (he was) walking home 的省略是同一回事。
+誘答選項
+set out（出發、著手進行）：這個意思後面接 to 加原形動詞（set out + to V，例 set out to solve the problem）；set out 另有及物用法，意思是「逐條說明、陳列」（set out the terms of the contract），但本句講的是能不能在短時間內把所有可能性想過一遍，不是把它們寫下來說明，語意對不上。turn out（結果是、原來是）：這個意思是不及物的，常見的是 It turned out that... 或 turn out to be...；及物的 turn out 是「關掉（燈）」或「大量生產」（turn out the lights、turn out thousands of these games），都與考慮可能性無關。put into practice（付諸實行）：受詞必須是可執行的計畫或理論。
+常考字詞與句型
+take into account（把…列入考慮）、take into consideration（把…列入考量）、put into practice（付諸實行）、set out to do（著手做…）、turn out to be（結果是…）、a course of action（行動方案）。其中 turn out to be 這一組考過 5 個年度，89 年第 26 題 →、105 年第 17 題 →、108 年第 21 題 →、115 年第 11 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Most human beings actually decide before they think. When people encounter a complex issue and form an opinion, how thoroughly have they 26 all the important factors involved before they make their decisions? The answer is: not very thoroughly, 27 they are executives, specialized experts, or ordinary people in the street. Very few people, no matter how intelligent or experienced, can 28 all the possibilities or outcomes of a policy or a course of action within just a short period of time.
+Those who take pride in being decisive often try their best to consider all the factors beforehand. 29 , it is not unusual for them to come up with a decision before they have the time to do so. And 30 an opinion is formed, most of their thinking then is simply trying to find support for it.
+中譯：大多數人其實是先做決定、後思考。當人們遇到複雜的議題並形成意見時，在做出決定之前，他們究竟把所有重要因素都仔細考慮過了嗎？答案是：並沒有考慮得很周全，無論是企業主管、專業人士，還是一般大眾都是如此。無論一個人多聰明、多有經驗，很少有人能在短時間內考慮到一項政策或行動方案的所有可能性與後果。那些以果斷自豪的人，往往會盡力事先考慮周全所有因素，然而，他們常常在還沒來得及仔細思考之前就已經做出了決定。而一旦意見形成，他們接下來大部分的思考，往往只是在為這個已經形成的意見尋找支持的理由。
+📋 內容大意
+People usually make decisions instinctively before thoroughly analyzing all factors and possibilities involved.
+Even decisive individuals frequently form opinions first and then use reasoning merely to justify their initial choice.
+← 第27題回到103 年學測第29題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

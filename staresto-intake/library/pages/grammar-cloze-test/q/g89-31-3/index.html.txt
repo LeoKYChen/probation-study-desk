@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g89-31-3/index.html
+Author: staresto-create ZZSH
+Title: 89 年學測克漏字第31題詳解（語意連貫）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 89 年學測 ／ 第31題
+89 年學測 克漏字 第31題
+語意連貫線索：篇章
+Mary: OK, I guess. 31 Jane: Couldn't be better.
+(A)It's a small world.
+(B)And you?
+(C)Thanks a lot.
+(D)Where are you going?
+答案：(B) And you?
+題目編號：G89_31_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+Mary 回答完自己的近況後，反問對方「那你呢？」，Jane 接著回應「再好不過了」（回答關於自己的狀況），And you? 符合這種互相問候後的反問語氣；其他選項在這個寒暄階段都答非所問。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是日常對話裡常聽到的短句，單獨看每一句都說得通，所以很容易憑「哪一句最順口」隨手挑。對話題不能只看空格那一格，要看輪到誰說話、以及下一句對方回了什麼。
+怎麼判斷
+這一格是 Mary 說的。先往前看：Jane 開口問 How are you?（你好嗎？），Mary 答 OK, I guess.（還可以吧。）——她已經把自己的近況交代完了，所以空格不會還在講自己。再往後看，這一步才是決定性的：下一句 Jane 說 Couldn't be better.（再好不過了。）這是在回答「你好嗎」。Jane 之所以會回答這個問題，只可能是因為空格裡 Mary 把問題丟回去了，而能把問題丟回去的只有 And you?（那你呢？）。這個方法是這整篇的通用解法：答案幾乎都寫在下一句裡，先往後讀一句，再回頭選。順便把這組寒暄的節奏記起來：How are you? — OK, I guess. And you? — Couldn't be better. 另外，Jane 這句 Couldn't be better. 正是「表面否定、實為最高級」的說法（再……不過了），101 年第 28 題 →整整考了一格，這裡活生生出現在對話裡，可以對照著記。
+誘答選項
+It's a small world.（世界真小）：用在意外碰到熟人、或發現彼此有共同認識的人，而這裡兩人是老朋友碰面寒暄，沒有巧合可言。Thanks a lot.（多謝）：Jane 沒有幫上什麼忙，無從謝起；而且道謝之後對方不會接一句「再好不過了」。Where are you going?（你要去哪裡？）：問的是行程，Jane 下一句答的卻是自己的狀態，對不上。
+常考字詞與句型
+It's been a while.（好久不見）、And you?（那你呢）、Couldn't be better.（再好不過了）、It's a small world.（世界真小）、by the way（順帶一提）、stay with sb（借住在某人家）。
+線索範圍說明：選項是完整句子，必須讀懂整段的對話走向或事件順序才選得出來
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Jane: Hi, Mary. It's been a while. How are you? Mary: OK, I guess. 31
+Jane: Couldn't be better. By the way, is your house guest still staying with you?
+Mary: No. After three weeks, she finally left. 32
+Jane: So, how did you get rid of her? Mary: 33 I told her my parents were coming for a visit and I needed the room. I felt bad about it, though. 34
+Jane: Oh, I'd have told her to leave after one week. That reminds me. My father-in-law is coming to visit us next week. Can I move in with you for a few days? Mary: 35
+Jane: Please!
+中譯：珍：嗨，瑪麗，好久不見，妳好嗎？瑪麗：還可以吧，我猜。妳呢？珍：好得不能再好了。對了，妳家那位借住的客人還住在妳那嗎？瑪麗：沒有了，住了三個星期後，她終於離開了。謝天謝地！珍：那妳是怎麼把她請走的？瑪麗：這個嘛，我騙了她。我跟她說我爸媽要來拜訪，我需要空出房間。不過我還是覺得挺過意不去的。換作是妳，會怎麼做？珍：喔，換作是我，一個星期後就叫她走了。這倒提醒我，我公公下星期要來我們家。我可以去妳那裡借住幾天嗎？瑪麗：不行。珍：拜託啦！
+📋 內容大意
+Mary explains how she got an unwanted guest to leave, only for Jane to ask if she can stay with Mary instead.（敘事文）
+← 第30題回到89 年學測第32題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

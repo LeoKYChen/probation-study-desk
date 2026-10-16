@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g106-22-2/index.html
+Author: staresto-create ZZSH
+Title: 106 年學測克漏字第22題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 106 年學測 ／ 第22題
+106 年學測 克漏字 第22題
+慣用語／片語線索：句內答對率 21%
+答對率 21%：當年每 100 位考生，有 21 位答對。
+Then the child has to 22 with shoes that are too small.
+(A)get done
+(B)get lost
+(C)make do
+(D)make believe
+答案：(C) make do
+題目編號：G106_22_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+make do with sth 是「將就使用、湊合著用」，本句指孩子只好將就穿太小的鞋；get done（完成、被處理掉）、get lost（迷路、走開）、make believe（假裝）語意都不合。
+重點：make do 是在沒有更好的東西時將就著用；常見 make do with sth（將就用某物）、make do without sth（沒有也過得去）。
+延伸閱讀：make do，將就著用 ↗
+深入解析
+你可能會這樣想
+你是不是覺得 make do 看起來像印錯、少了一個字？很合理——你學過的 make 幾乎都帶受詞（make a cake、make him laugh），do 也是（do homework），兩個動詞光溜溜黏在一起，確實不像正常的英文。但 make do 是整組的固定片語，要當一個字記：do 在這裡不及物，整組意思是「將就、湊合著用」，後面常接 with，也可以接 without。這個 do 就是 That will do.（這樣就行了）裡的那個 do——「夠用、行得通」。檢驗法：把整組換成 manage 唸唸看，has to manage with shoes that are too small 通順，就對了。
+怎麼判斷
+這一段在講問題，不在講解法：窮困地區的孩子拿到鞋，很快就 grown out of them（長大穿不下），而 shoes that are the right size 又不容易取得。沒有新鞋可換，結果只能是「將就穿太小的」。後面 The Shoe That Grows 才登場解決這個問題。空格落在問題那一半，填的必須是委屈、湊合的動作。
+誘答選項
+make believe ＝ 假裝（＝ pretend），跟 make do 只差一個字，是本題最主要的陷阱，但「假裝穿太小的鞋」講不通。get done ＝ 完成；get lost ＝ 迷路，口語裡還有「走開」的意思。make 家族一句記完：When jobs are scarce, many graduates make do with work far below their training; pretending to be content is just making believe.（工作難找的時候，許多畢業生只能將就做遠低於所學的工作；假裝自己滿意，那只是自欺欺人。）〔情境取材自 105 指考作文題：碩士考清潔隊員〕
+常考字詞與句型
+make do with（將就使用）、make do without（沒有…也過得去）、make believe（假裝）、make ends meet（收支相抵）、grow out of（長大而穿不下）、outgrow（長大而不再適合）、readily available（容易取得的）。其中 make ends meet 這一組考過 3 個年度，95 年第 19 題 →、111 年第 13 題 →都出現過。
+鑑別度分析：鑑別度 9，高低分群的差距不大。本題答對率二成一，屬於難度偏高的題目——大考中心《選才電子報》第 307 期說明鑑別度時，就把答對率低的難題列為鑑別度偏低的原因之一：高、低分群考生在這類題目上的答對率差距不大，鑑別度的數值就會比較小。這一題比較像是四個選項對不分程度的考生都說得通：四組都由最常見的 get 與 make 組成，單看字面每一組都有話講，要靠 make do 這一組的實際意思才能排除其他三組。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Shoes are hugely important for protecting our feet, especially in places like Africa, where healthcare provision is limited. Unfortunately, shoes are not always readily available for people living in poverty, 21 shoes that are the right size. Almost as soon as a child receives shoes to wear, he/she is likely to have grown out of them. Then the child has to 22 with shoes that are too small.
+The Shoe That Grows, created by a charity called Because International, changes all this. It allows children to 23 their shoes' size as their feet grow. The innovative footwear resembles a common sandal and is made of leather straps and rubber soles, a material similar to that used in tires. They come 24 two sizes, and can expand in three places. The straps on the heel and toe control the length of the shoe, 25 the two on either side allow for different widths. With this special design, the shoes can "grow" up to five sizes and last for at least five years.
+中譯：鞋子對保護雙腳非常重要，尤其是在像非洲這樣醫療資源有限的地方。然而，對貧困地區的人來說，取得合腳的鞋子並不容易。孩子往往才剛拿到鞋子沒多久，腳就已經長大到穿不下了，之後只能被迫穿著過小的鞋子。一個名為「Because International」的慈善機構所研發的「會長大的鞋子」，改變了這一切。這種鞋子讓孩子的鞋子能隨著腳的成長而調整尺寸。這款創新的鞋子外型類似一般涼鞋，由皮革綁帶和橡膠鞋底製成，材質與輪胎所用的相似。這款鞋子有兩種尺寸供選擇，並能在三個部位進行調整：腳跟和腳趾處的綁帶用來控制鞋子的長度，兩側的綁帶則能調整鞋子的寬度。透過這樣的特殊設計，這款鞋子最多可以「長大」五個尺碼，並可持續使用至少五年。
+📋 內容大意
+Shoes protect the feet, but poor families across Africa often cannot get them. Shoes of the right size are even harder to find.
+Children outgrow new shoes almost at once and must then wear pairs that pinch.
+The Shoe That Grows uses leather straps and rubber soles. Straps at the heel and toe change its length, side straps change its width. It grows five sizes.
+← 第21題回到106 年學測第23題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

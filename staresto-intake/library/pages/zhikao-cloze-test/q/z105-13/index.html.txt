@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z105-13/index.html
+Author: staresto-create ZZSH
+Title: 105 年指考克漏字第13題詳解（分詞／動狀詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 105 年指考 ／ 第13題
+105 年指考 克漏字 第13題
+分詞／動狀詞線索：句內答對率 21%
+答對率 21%：當年每 100 位考生，有 21 位答對。
+In certain situations such as in crowded subway cars or elevators, it is not always possible for people to keep their 13 distance from others.
+(A)prefer
+(B)preferring
+(C)preferred
+(D)being preferred
+答案：(C) preferred
+題目編號：Z105_13（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+空格夾在所有格 their 與名詞 distance 之間，須填形容詞，preferred 是過去分詞轉品當形容詞「偏好的」：在擁擠的車廂或電梯裡，人們不見得能與他人保持自己偏好的距離；prefer、preferring、being preferred 都不合。
+重點：所有格 their 與名詞 distance 中間是形容詞的位置；分詞當形容詞時，-ing 形多表主動、-ed 形多表被動——距離是「被偏好的」，所以用 preferred。prefer 是動詞原形，接不上；preferring 是主動，讀起來變成 distance 去偏好別人，語意不通；being preferred 是分詞片語，不放在這個位置。
+延伸閱讀：-ed 形當形容詞（their preferred distance） ↗
+深入解析
+你可能會這樣想
+prefer 這個動詞你很熟（prefer A to B），但很少把 preferred 當成一個形容詞記住：「偏好的、首選的」。看到四個選項都由同一個字變化而來，容易覺得要靠語意分，其實這一題靠位置就能定案。
+怎麼判斷
+先看空格卡在哪裡。their ___ distance——前面是所有格 their，後面是名詞 distance，這個位置要放修飾 distance 的字，在這一題就是形容詞。四個選項都是 prefer 變出來的，所以這一格考的是哪一種形式能當形容詞。先把它還原成關係子句看看：the distance which is preferred by them，他們所偏好的距離。既然過去分詞自己就能當形容詞，這一串就可以直接說成 their preferred distance，跟 our preferred way of living 是一樣的道理。其餘三個用同一個方法還原就過不了關，逐一說明見下一段。這種「過去分詞當形容詞」的例子很常見：a broken window（破掉的窗戶）、fried rice（炒飯）。
+誘答選項
+preferring 是現在分詞，還原成 the distance which is preferring，語意不通。being preferred 還原成 the distance being preferred，可見 being preferred 只能放在 distance 後面，放不到 their 跟 distance 中間。prefer 是原形動詞，動詞不能當形容詞。
+常考字詞與句型
+preferred distance／method（偏好的距離／首選方法）、prefer A to B（喜歡 A 勝過 B）、prefer to V（寧可）、required documents（必備文件）、reserved seats（預留座位）、personal space（個人空間）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：105學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Have you been irritated by someone standing too close in line, talking too loud or making eye contact for too long? Or, they may have 11 you with the loud music from their earphones, or by taking up more than one seat on a crowded subway car. You feel unhappy because your personal space has been violated.
+According to scientists, personal space involves certain invisible forces imposed on you through all the 12. For example, people may feel their space is being invaded when they experience an unwelcome sound, smell, or stare.
+In certain situations such as in crowded subway cars or elevators, it is not always possible for people to keep their 13 distance from others. They learn coping strategies to deal with their discomfort. For instance, people often avoid eye contact with someone standing 14 them, or they pretend that these people are lifeless objects in their personal space. Given the opportunity, they may 15 to a corner, putting distance between themselves and strangers. Or, they may sit or stand equidistant from one another like birds on a wire.
+中譯：你是否曾因為排隊時有人站得太靠近、講話太大聲，或視線接觸過久而感到不悅？又或者，他們可能用耳機裡外洩的音樂聲，或在擁擠的地鐵車廂裡占用超過一個座位而讓你感到冒犯。你之所以感到不快，是因為你的個人空間被侵犯了。根據科學家的說法，個人空間牽涉到透過各種感官施加在你身上的無形力量。舉例來說，當人們經歷令人不快的聲音、氣味或凝視時，可能會感覺自己的空間正遭到入侵。在諸如擁擠的地鐵車廂或電梯等某些情境中，人們並不總是能與他人保持理想的距離。他們因此學會了應對不適的策略。舉例來說，人們常常避免與站得很近的人有眼神接觸，或假裝這些人是自己個人空間裡沒有生命的物體。若有機會，他們可能會退到角落，藉此拉開與陌生人之間的距離。又或者，他們可能像電線上的鳥兒一樣，彼此保持等距而坐或站立。
+📋 內容大意
+Standing too near, staring or leaking loud music annoys us by intruding on personal space.
+Scientists say sound, smell and gaze all carry invisible forces that mark out this space.
+In packed lifts or trains people cope by avoiding eyes, ignoring others, or spreading out evenly.
+← 第12題回到105 年指考第14題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

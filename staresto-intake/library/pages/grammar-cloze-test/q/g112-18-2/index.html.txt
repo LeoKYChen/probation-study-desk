@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g112-18-2/index.html
+Author: staresto-create ZZSH
+Title: 112 年學測克漏字第18題詳解（時態／語態）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 112 年學測 ／ 第18題
+112 年學測 克漏字 第18題
+時態／語態線索：句內答對率 22%
+答對率 22%：當年每 100 位考生，有 22 位答對。
+However, with the absence of gravity in the outer space, our body fluids 18 , shifting toward the upper body and the head.
+(A)redistribute
+(B)redistributed
+(C)redistributing
+(D)being redistributed
+答案：(A) redistribute
+題目編號：G112_18_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+主要子句需要一個限定動詞，全文以現在簡單式敘述通則，故填原形 redistribute；redistributed 若當過去式則與全篇時態不合，redistributing 與 being redistributed 都是非限定形式，不能單獨當主要動詞。
+重點：主要子句的動詞一定是限定動詞（看得出時態與人稱）；-ing 形與過去分詞是非限定形式，不能單獨當真正的動詞。本句後半的 shifting 已經是分詞構句，前面那一格只能放限定動詞，而全文用現在簡單式、主詞 fluids 是複數，所以用原形 redistribute。
+延伸閱讀：限定動詞與非限定動詞——哪一個才是真正的動詞 ↗
+深入解析
+你可能會這樣想
+句首一長串 However, with the absence of gravity in the outer space 讀完，主詞 our body fluids 才出現，接著就是空格，後面又接一個分詞片語 shifting toward the upper body——修飾成分把句子撐得很開，你就看不出主要動詞的位置正是空格。
+怎麼判斷
+先找主要動詞。把句首的介系詞片語與句尾的分詞片語都遮掉，剩下 our body fluids ___，這一格是全句唯一的主要動詞。redistributing 是現在分詞、being redistributed 是被動分詞，兩個都是非限定形式，當不了主要動詞，先刪掉。剩下 redistribute 與 redistributed，差別在時態。前一句 When on Earth, we have more fluids in our lower body…（在地球上，我們下半身的體液比較多）用的是現在簡單式，因為整段在說明科學通則；本句承接同一個通則，所以用原形。驗算法：把整段唸過一遍，看時態有沒有跳動——通則從頭到尾都用現在式，若這一格忽然變成過去式，就會讀成「曾經發生過一次」。順帶記一件事：redistribute 在這裡是不及物用法——體液自己重新分佈，後面不需要受詞。很多動詞（move、shift、spread）都兼具及物與不及物，看句子有沒有受詞就能分辨。一句記完：When my sister went to college, the housework in our family redistributed itself, and I ended up doing the dishes every night.（姊姊上大學之後，家裡的家事重新分配了一遍，結果每晚洗碗的變成我。）〔情境取材自 105 學測作文題：家事分工〕
+誘答選項
+redistributed 若讀成過去式，會把一個持續成立的科學通則說成過去發生過的單一事件，與全篇時態不合；若讀成過去分詞，則需要 be 動詞才能構成被動，本句沒有。redistributing 是現在分詞，只能當修飾語或接在 be 動詞後面構成進行式，單獨放在主詞後面會讓句子沒有動詞。being redistributed 同樣是非限定形式，而且多了被動的意思——體液是自己移動的，不是被誰重新分配的。
+常考字詞與句型
+distribute（分配）／redistribute（重新分佈）、the absence of（缺乏）、shift toward（朝…移動）、be pulled down by（被…往下拉）、resemble（像、類似）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Gravity has been at the top of the science agenda since the start of Mars missions. In the earlier days of space travel, scientists tried to overcome the force of gravity so that a rocket could shoot 16 Earth's pull in order to land humans on the moon. Today, they are more interested in how reduced gravity affects the astronauts' 17 condition. Our bodies have evolved to exist within Earth's gravity (1 g), not in the weightlessness of space (0 g) or the microgravity of Mars (0.3 g).
+When on Earth, we have more fluids in our lower body because they are pulled down by Earth's gravity. However, with the absence of gravity in the outer space, our body fluids 18 , shifting toward the upper body and the head. As a result, the astronauts have swollen, puffy faces, very much resembling that of the round-headed Charlie Brown in the famous comic strip.
+This "Charlie Brown effect" will be more 19 when the astronauts go on their Mars missions, which will take about three years to complete, much longer than missions to the moon. Moreover, the effect is often 20 space motion sickness, headaches, and nausea. Such a syndrome is considered the top health risk for the astronauts, and scientists are still trying to figure out how it may be prevented.
+中譯：自火星任務展開以來，重力問題便一直是科學議程上的重要課題。在太空探索的早期階段，科學家致力於克服地心引力，讓火箭能擺脫地球引力升空，將人類送上月球。如今，他們更關注的是重力減弱如何影響太空人的身體狀況。人類的身體演化以適應地球的重力環境（1g），而非太空中的無重力狀態（0g），也不是火星上的微重力環境（0.3g）。在地球上，我們下半身的體液較多，因為受到地心引力向下牽引；然而，一旦身處外太空、失去重力，我們體內的體液會重新分佈，向上半身及頭部移動。因此，太空人的臉會變得腫脹浮腫，看起來就像知名漫畫裡那個圓頭查理·布朗一樣。這種「查理·布朗效應」，在太空人執行需耗時約三年、遠比登月任務更久的火星任務時，將會更加明顯。此外，這種效應通常還伴隨著太空暈動症、頭痛和噁心等症狀。這種症候群被認為是太空人面臨的頭號健康風險，科學家目前仍在努力找出預防的方法。
+📋 內容大意
+Reduced gravity in space alters human fluid distribution, creating health risks like the "Charlie Brown effect" that pose major challenges for long Mars missions.
+← 第17題回到112 年學測第19題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

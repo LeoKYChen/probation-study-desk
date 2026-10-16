@@ -1,0 +1,172 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/g111p2.html
+Author: staresto-create ZZSH
+Title: 111 學測閱讀測驗：安全帽的演進史｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 111 學測
+111 學測閱讀測驗：安全帽的演進史
+The Evolution of the Hard Hat
+學測 111年第 39–42 題4 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段A hard hat is a helmet used mostly at worksites to protect the head from injuries due to falling objects. Since its introduction in the early 20th century, the headgear has saved countless lives and is considered the number one safety tool for construction workers.
+第 2 段The hard hat was invented in 1919 by Edward W. Bullard, who had just returned from World War I. Before the war, workers used to smear their hats with coal tar for protection of their head. Bullard, having witnessed the life-saving power of the metal helmet in the War, decided to produce a head protection device that was affordable for every worker and lightweight enough to be worn all day long. The Hard Boiled Hat was thus born, using steamed canvas and leather, covered with black paint, and featuring a suspension system to reduce impact. Soon, hard hats became widely used. The headgear was later made mandatory at construction sites in major construction projects, such as the Hoover Dam in 1931 and the Golden Gate Bridge in 1933.
+第 3 段Over the past century, hard hats have advanced considerably, evolving from canvas and leather to aluminum, fiberglass, and, eventually, to thermoplastic. Recently, new models have been introduced and accessories added to meet the needs of laborers working on various job sites. For instance, a ventilated hard hat was developed to keep wearers cooler, and see-through face shields were attached to better see the hazards lurking above. Today, attachments include radios, sensors, cameras, and a lot more. A common color code has also been developed for recognizing people and their roles on site. Yellow is used for general laborers and contractors, white (or sometimes black) for supervisors and managers, and green for inspectors and new workers.
+第 4 段New products continue to expand the market. Global sales of hard hats totaled USD 2.1 billion in 2016, and are expected to reach USD 3.19 billion in 2025.
+題目
+39.Which of the following aspects about hard hats is NOT discussed in the passage?
+(A)Their functions.
+(B)Their appearances.
+(C)Their materials.
+(D)Their limitations.
+40.In what order did the following protective hats appear? a. fiberglass hats b. hats with see-through shields c. hats with canvas and leather d. hats with tar over them
+(A)d → c → a → b
+(B)c → d → b → a
+(C)c → b → a → d
+(D)d → c → b → a
+41.According to the passage, which of the following statements is true about the hard hat?
+(A)Global sales have doubled every ten years.
+(B)The inspiration came from the inventor’s wartime experience.
+(C)It was standard equipment for construction workers in the 1920s.
+(D)Different colors are used in different industries to signal the roles of people on site.
+42.Which of the following words are used in the passage to refer to the hard hat? a. tool b. code c. device d. helmet e. accessory f. headgear
+(A)a, b, d, e
+(B)a, c, d, f
+(C)c, d, e, f
+(D)a, d, e, f
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+39
+(D)
+74%
+65
+40
+(A)
+69%
+61
+41
+(B)
+51%
+56
+42
+(B)
+51%
+44
+答對率與鑑別度出處：大考中心 111 學年度學科能力測驗統計圖表：英文科答對率及鑑別度表
+每一題的依據句
+第 39 題 細節題（未提及） Supporting details
+第 1 段A hard hat is a helmet used mostly at worksites to protect the head from injuries due to falling objects.
+第 3 段Over the past century, hard hats have advanced considerably, evolving from canvas and leather to aluminum, fiberglass, and, eventually, to thermoplastic.
+第 3 段A common color code has also been developed for recognizing people and their roles on site.
+有提到的三個面向：第 1 段保護頭部是 (A) 功能，第 2、3 段的帆布、皮革、鋁、塑膠是 (C) 材質，第 2 段的黑漆和第 3 段的顏色標示是 (B) 外觀。安全帽有什麼缺點或限制，文章沒提。
+第 40 題 細節題 Supporting details
+第 2 段Before the war, workers used to smear their hats with coal tar for protection of their head.
+第 2 段The Hard Boiled Hat was thus born, using steamed canvas and leather, covered with black paint, and featuring a suspension system to reduce impact.
+第 3 段Over the past century, hard hats have advanced considerably, evolving from canvas and leather to aluminum, fiberglass, and, eventually, to thermoplastic.
+第 3 段and see-through face shields were attached to better see the hazards lurking above
+依時間排：一戰前塗煤焦油（d）、1919 年帆布和皮革（c）、之後的玻璃纖維（a）、近年才加上的透明面罩（b）。選項照用原文的材料名稱，難處在第 3 段的 Recently 把面罩排到最後。(B)、(C) 把帆布和皮革排在煤焦油之前，(C) 還把煤焦油放到最後，可是第 2 段說塗煤焦油是一戰前的做法；(B)、(D) 把透明面罩排在玻璃纖維之前，順序也不對。
+第 41 題 細節題（何者為是） Supporting details
+第 2 段Bullard, having witnessed the life-saving power of the metal helmet in the War, decided to produce a head protection device that was affordable for every worker and lightweight enough to be worn all day long.
+原文 → 正確選項
+having witnessed the life-saving power of the metal helmet in the War → The inspiration came from the inventor’s wartime experience
+Bullard 在戰場上看到金屬頭盔救人，才決定做安全帽，就是靈感來自他的戰時經歷。(C) 照抄 construction，但工地規定一定要戴是 1931、1933 年的事，不是 1920 年代；(D) 照抄 roles，但顏色區分的是工地上的職務，不是不同的產業；(A) 2016 年到 2025 年預估從 21 億到 31.9 億美元，不是每十年翻倍。
+第 42 題 詞義題（指代詞） Vocabulary in context
+第 1 段A hard hat is a helmet used mostly at worksites
+第 1 段the headgear has saved countless lives and is considered the number one safety tool for construction workers
+第 2 段decided to produce a head protection device
+作者換了四個說法來指安全帽，避免一直重複 hard hat：helmet、headgear、tool、device。code 指的是顏色標示，accessory 是加裝在安全帽上的配件，都不是安全帽本身：(A) 混進了 code 和 accessory，(C)、(D) 混進了 accessory。
+換個說法的名詞怎麼認 →
+逐段中譯
+第 1 段安全帽是主要用在工地的頭盔，保護頭部不受掉落物砸傷。安全帽在 20 世紀初問世以來，拯救了無數生命，公認是建築工人的頭號安全裝備。
+第 2 段安全帽是 Edward W. Bullard 在 1919 年發明的，他當時剛從第一次世界大戰返鄉。戰前，工人習慣在帽子上塗煤焦油來保護頭部。Bullard 在戰場上親眼看到金屬頭盔救人一命，決定做一種每個工人都買得起、又輕到可以戴一整天的頭部防護裝置。Hard Boiled Hat 就這樣誕生了：用蒸過的帆布和皮革製成，外面塗上黑漆，裡面有減輕撞擊的懸吊系統。不久，安全帽就普及開來。後來在大型工程裡，工地規定一定要戴安全帽，例如 1931 年的胡佛水壩和 1933 年的金門大橋。
+第 3 段過去一百年來，安全帽有了長足的進步，材質從帆布和皮革，演變為鋁、玻璃纖維，最後是熱塑性塑膠。近年來，業者推出了新款式，也加上各種配件，滿足在各種工作場所的勞工需求。例如，透氣的安全帽讓配戴的人比較涼爽；加裝透明面罩，則能更清楚看見頭頂上潛藏的危險。如今的配件還有無線電、感測器、攝影機等等。業界也發展出通用的顏色標示，用來辨識工地上的人和他們的職務：黃色代表一般工人和承包商，白色（有時是黑色）代表監工和經理，綠色代表檢查人員和新進工人。
+第 4 段新產品持續擴大市場。2016 年全球安全帽銷售額總計 21 億美元，預計 2025 年將達到 31.9 億美元。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。
+第 1 段Since its introduction in the early 20th century, the headgear has saved countless lives and is considered the number one safety tool for construction workers.
+第 2 段The hard hat was invented in 1919 by Edward W. Bullard, who had just returned from World War I.
+第 3 段Over the past century, hard hats have advanced considerably, evolving from canvas and leather to aluminum, fiberglass, and, eventually, to thermoplastic.
+第 4 段New products continue to expand the market.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體說明文 Expository
+組織方式時序發展 Chronological這一類怎麼辨識 →
+關鍵轉折詞SincethusSoonlaterOver the past centuryRecentlyFor instance
+綱要
+安全帽 (Since) 自 20 世紀初問世，救了無數人命，是建築工人的頭號安全工具。
+1919 年 Bullard 從一次大戰歸來，受鋼盔啟發，設計出便宜又輕的帽子，(thus) Hard Boiled Hat 就此誕生。
+(Soon) 安全帽廣為使用，(later) 胡佛水壩、金門大橋工程規定必戴。
+(Over the past century) 材質從帆布皮革演進到熱塑性塑膠，(Recently, For instance) 新增通風、面罩、無線電等配件，並以顏色區分身分。
+新產品持續擴大市場，全球銷售額預計 2025 年達 31.9 億美元。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 20 個、參考字彙 24 個、字詞搭配 11 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+mostly[ˈmoʊstli]adv.主要三級第 1 段詞彙題考過 2 次：92 學測第 3 題（誘答）、92 學測補考第 9 題（誘答）
+injury[ˈɪnʤəri]n.傷害三級第 1 段詞彙題考過 1 次：105 學測第 5 題（答案）
+construction[kənˈstrʌkʃən]n.建築、營造（construction workers 建築工人）四級第 1 段詞彙題考過 4 次：101 指考第 5 題（誘答）、96 學測第 13 題 constructions（誘答）、91 指考第 1 題（誘答）、84 聯考第 5 題（誘答）
+invent[ɪnˈvɛnt]v.發明三級第 2 段詞彙題考過 2 次：87 聯考第 3 題 inventing（誘答）、87 聯考第 6 題（誘答）
+witness[ˈwɪtnəs]v.親眼看到四級第 2 段詞彙題考過 2 次：99 學測第 14 題（答案）、84 聯考第 6 題（誘答）
+steamed （詞彙表：steam）[stimd]adj.蒸過的三級第 2 段詞彙題考過 1 次：109 指考補考第 1 題 steaming（答案）
+impact[ˈɪmpækt]n.撞擊四級第 2 段詞彙題考過 2 次：115 學測第 7 題（誘答）、85 推薦甄選第 11 題（答案）
+considerably （詞彙表：considerable）[kənˈsɪdərəbli]adv.大幅地、相當地三級第 3 段詞彙題考過 4 次：108 學測第 8 題 considerably（誘答）、102 學測第 15 題 considerably（誘答）、101 學測第 11 題 considerably（答案）、90 學測第 5 題 considerably（答案）
+eventually （詞彙表：eventual）[ɪˈvɛnʧuəli]adv.最後四級第 3 段詞彙題考過 4 次：111 學測第 8 題（答案）、110 指考第 6 題（誘答）、90 聯考第 15 題（誘答）、85 推薦甄選第 6 題 eventually（誘答）
+various[ˈvɛriəs]adj.各種的三級第 3 段詞彙題考過 6 次：99 學測第 7 題（誘答）、96 學測第 14 題 variously（誘答）、94 指考第 8 題（誘答）、91 學測第 6 題 variously（誘答）、91 學測補考第 7 題（誘答）、90 學測第 7 題（誘答）
+attach[əˈtæʧ]v.裝上、加裝四級第 3 段詞彙題考過 4 次：101 學測第 15 題 attachment（誘答）、93 學測第 1 題（誘答）、85 推薦甄選第 5 題 attached（誘答）、82 聯考第 4 題 attached（誘答）
+code[koʊd]n.標示（color code 顏色標示）四級第 3 段詞彙題考過 2 次：106 學測第 7 題（誘答）、105 指考第 1 題 codes（誘答）
+recognize[ˈrɛkəgˌnaɪz]v.辨識、認出三級第 3 段詞彙題考過 3 次：108 學測第 6 題 recognized（誘答）、95 學測第 10 題（答案）、85 聯考第 3 題（誘答）
+product[ˈprɑdəkt]n.產品三級第 4 段詞彙題考過 3 次：94 學測第 4 題 products（答案）、87 聯考第 10 題 products（誘答）、81 聯考第 10 題（誘答）
+expand[ɪkˈspænd]v.擴大四級第 4 段詞彙題考過 4 次：96 學測第 8 題 expanded（答案）、93 學測第 1 題（誘答）、88 推薦甄選第 3 題 expanding（誘答）、84 聯考第 4 題 expanded（誘答）
+aspect[ˈæspɛkt]n.方面四級第 39 題詞彙題考過 1 次：81 聯考第 9 題（誘答）
+limitation[ˌlɪmɪˈteɪʃən]n.限制、缺點四級第 39 題詞彙題考過 3 次：107 學測第 12 題 limitations（誘答）、95 學測第 13 題（誘答）、91 學測第 8 題（答案）
+inspiration[ˌɪnspəˈreɪʃən]n.靈感四級第 41 題詞彙題考過 1 次：115 學測第 3 題（誘答）
+equipment[ɪˈkwɪpmənt]n.裝備、配備四級第 41 題詞彙題考過 2 次：110 學測第 14 題 equipped（誘答）、95 指考第 1 題 equips（答案）
+signal[ˈsɪgnəl]v.表示、標示三級第 41 題詞彙題考過 2 次：106 學測第 12 題（誘答）、92 指考第 3 題 signaled（誘答）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+worksite[ˈwɝkˌsaɪt]n.工地、工作場所表外第 1 段
+headgear[ˈhɛdˌgɪr]n.帽子、頭部護具表外第 1 段
+smear[smɪr]v.塗抹表外第 2 段
+tar[tɑr]n.焦油（coal tar 煤焦油）表外第 2 段
+affordable[əˈfɔrdəbəl]adj.負擔得起的表外第 2 段
+lightweight[ˈlaɪtˌweɪt]adj.輕巧的表外第 2 段
+canvas[ˈkænvəs]n.帆布五級第 2 段
+suspension[səˈspɛnʃən]n.懸吊（帽內的懸吊系統，讓帽殼和頭部之間留有空隙）六級第 2 段
+mandatory[ˈmændəˌtɔri]adj.強制的、規定一定要的表外第 2 段
+evolve[ɪˈvɑlv]v.演進、逐步發展五級第 3 段
+aluminum[əˈlumənəm]n.鋁六級第 3 段
+fiberglass[ˈfaɪbɚˌglæs]n.玻璃纖維表外第 3 段
+thermoplastic[ˌθɝməˈplæstɪk]n.熱塑性塑膠表外第 3 段
+accessory[ækˈsɛsəri]n.配件六級第 3 段
+laborer[ˈleɪbərɚ]n.工人表外第 3 段
+ventilated[ˈvɛntəˌleɪtɪd]adj.通風的表外第 3 段
+wearer[ˈwɛrɚ]n.戴的人表外第 3 段
+shield[ʃild]n.防護罩（face shield 面罩）五級第 3 段
+hazard[ˈhæzɚd]n.危險、危害五級第 3 段
+lurk[lɝk]v.潛伏表外第 3 段
+sensor[ˈsɛnsɚ]n.感應器五級第 3 段
+contractor[ˈkɑnˌtræktɚ]n.承包商五級第 3 段
+supervisor[ˈsupɚˌvaɪzɚ]n.監工、主管五級第 3 段
+wartime[ˈwɔrˌtaɪm]adj.戰爭時期的表外第 41 題
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+protect + N + from + N保護……不受……傷害第 1 段原文：to protect the head from injuries
+save lives拯救性命第 1 段原文：has saved countless lives
+smear A with B在 A 上塗抹 B第 2 段原文：smear their hats with coal tar
+be affordable for + sb某人負擔得起第 2 段原文：affordable for every worker
+be made mandatory成為強制規定第 2 段原文：was later made mandatory at construction sites
+a construction site工地第 2 段原文：mandatory at construction sites
+meet the needs of + N滿足……的需求第 3 段原文：to meet the needs of laborers
+a color code顏色代碼（用顏色分類的規則）第 3 段原文：A common color code
+on site在現場第 3 段原文：people and their roles on site
+expand the market擴大市場第 4 段原文：New products continue to expand the market
+be expected to + V預計會……第 4 段原文：are expected to reach USD 3.19 billion in 2025
+← 上一篇篇目一覽下一篇 →
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

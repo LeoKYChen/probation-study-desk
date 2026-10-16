@@ -1,0 +1,44 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z93m-26/index.html
+Author: staresto-create ZZSH
+Title: 93 年指考敏督利颱風受災地區考生補救考試克漏字第26題詳解（連接詞／轉折詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 93 年指考敏督利颱風受災地區考生補救考試 ／ 第26題
+93 年指考敏督利颱風受災地區考生補救考試 克漏字 第26題
+連接詞／轉折詞線索：跨句
+Which would you wear to a football game, a sweater or a raincoat? 26 the raincoat if you thought there was a good chance of rain.
+(A)Probably
+(B)Formally
+(C)Similarly
+(D)Consequently
+答案：(A) Probably
+題目編號：Z93M_26（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+這是答句的省略，Probably 承接前一句的問句「你會穿什麼？」，省略了主詞和動詞（you would wear），直接以 Probably the raincoat 簡答「大概會穿雨衣」，符合口語化的簡答語氣。Formally（正式地）、Similarly（同樣地）、Consequently（因此）都不符合這種「簡答可能性」的語意。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是 -ly 結尾的副詞，中文擺進去好像都能講，於是憑語感挑；Consequently（因此）特別誘人，因為它看起來最像在承接前面那一句。真正卡住人的其實不是選項，是這一格所在的句子根本不完整——它沒有主詞也沒有動詞，只有一個副詞加一個名詞 the raincoat，會讓人懷疑自己是不是讀漏了什麼。
+怎麼判斷
+先回頭看前一句：Which would you wear to a football game, a sweater or a raincoat?（去看美式足球賽，你會穿毛衣還是雨衣？）這是一個問句，而空格所在的這一句正是它的答句。英文的答句可以只留下真正回答問題的部分，與問句重複的主詞和動詞一起省掉；把省掉的補回來就是 You would probably wear the raincoat if you thought there was a good chance of rain.（如果你覺得很可能下雨，你大概會穿雨衣。）這種簡答很常見：Do you like it? — Yes, I do. 答句不必把 like it 再說一次。既然這一格是在回答「會穿哪一件」，要填的就是一個表示可能性的副詞，Probably 正好。要注意的是，這一格不看前一句就定不了案——單看 ___ the raincoat if you thought...，四個副詞在形態上都放得進去。
+誘答選項
+Consequently（因此）要求前面是一個原因，但前面是問句，問句當不了原因；Similarly（同樣地）要求前後兩件事同向並列，前面只問了一個問題，沒有第一件事可以「同樣」；Formally（正式地）講的是方式，回答「穿哪一件」時說「正式地雨衣」不成話。三個選項都接不上「回答可能性」這件事。
+常考字詞與句型
+probably（大概、很可能）、a good chance of + 名詞（很有可能……）、consequently（因此）、similarly（同樣地）、formally（正式地）、簡答省略（答句可省去與問句重複的主詞與動詞）。
+線索範圍說明：簡答省略掉的主詞與動詞要靠前一句的問句還原
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Which would you wear to a football game, a sweater or a raincoat? 26 the raincoat if you thought there was a good chance of rain. Which basketball team is more likely to win, one that is 30 points ahead at the half or its opponent? Teams have been known to come from 27 to win, but the chances of overcoming that kind of lead are slim.
+28 of us can be perfectly sure about how things will turn out in the future. But we can, and often do, think of the possibilities. We can try to guess 29 this or that might happen.
+In some cases mathematics can help make these guesses more accurate. The branch of mathematics that helps make our guesses more accurate is called probability. Probability is the science of 30. It is among the fastest growing and most useful parts of today's mathematics.
+中譯：去看一場美式足球賽，你會穿毛衣還是雨衣？如果你認為很有可能下雨，你或許就會選擇穿雨衣。哪一支籃球隊比較有可能獲勝——是上半場就領先 30 分的那一隊，還是它的對手？球隊確實有可能從落後大幅追分逆轉獲勝，但要扭轉這麼大的差距，機會其實相當渺茫。我們當中沒有人能夠完全確定未來會如何發展，但我們可以，也經常會去思考各種可能性。我們可以嘗試猜測這件事或那件事是否會發生。在某些情況下，數學能幫助我們讓這些猜測更加準確。這門幫助我們讓猜測更精準的數學分支，就叫做機率。機率是研究不確定性的科學，它是當今數學中發展最快、也最實用的領域之一。
+📋 內容大意
+Sensible choices, from clothing to sport, rest on judging what is likely to happen.
+Nobody can be certain about the future, yet we constantly weigh the possibilities.
+Mathematics sharpens such guesses, and that branch, probability, is among its most useful today.
+← 第25題回到93 年指考敏督利颱風受災地區考生補救考試第27題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

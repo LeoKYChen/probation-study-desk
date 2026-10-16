@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g87-24-1/index.html
+Author: staresto-create ZZSH
+Title: 87 年學測克漏字第24題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 87 年學測 ／ 第24題
+87 年學測 克漏字 第24題
+字彙選義線索：句內
+The man 23 everything he could to teach the parrot to say “Catano,” but he never 24 .
+(A)failed
+(B)attempted
+(C)changed
+(D)succeeded
+答案：(D) succeeded
+題目編號：G87_24_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+依照故事情節（男人一直教不會鸚鵡說 Catano，直到故事結尾，鸚鵡才在雞舍裡自己喊出這個字），語意上應該是「他從未成功過」，he never succeeded 才符合故事邏輯；failed（他從未失敗過）反而會變成「他總是成功」，跟故事情節矛盾。attempted／changed 都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+前面說他費心教鸚鵡說那個字，後面用 but 一轉，照直覺會覺得「但他失敗了」，於是選了 failed。這一格的關鍵在空格前面那個字——never。
+怎麼判斷
+四個選項是四個不同的動詞，可見這一格考的是語意，但在判斷語意之前，一定要先把否定算進去。空格前面是 he never ___，填什麼進去都會被 never 反轉一次：填 failed 就成了「他從未失敗」，也就是「他每次都成功」——可是整個故事講的正是他怎麼教都教不會，方向完全相反。填 succeeded 才對：he never succeeded（他始終沒有成功），與同一句前半的 The man {23} everything he could 對得上，也與後面他對鸚鵡大吼的發展一致。這個方法值得記起來：看到 never、hardly、no 這類否定詞，先把它算進去再判斷選項的方向，不要只看選項本身的中文。
+誘答選項
+failed：見上，被 never 反轉之後語意與故事相反，這正是本題的陷阱。attempted（嘗試）：he never attempted 是「他從未嘗試」，與同一句前半他費心教鸚鵡的敘述矛盾。changed（改變）：語意與「教得會教不會」無關。
+常考字詞與句型
+succeed in + V-ing（成功做到）、fail to V（未能做到）、attempt to V（嘗試做）、never succeed（始終沒有成功）、in the end（最後）。其中 succeed in + V-ing 這一組考過 3 個年度，學測詞彙 96 年第 7 題、102 年第 29 題 →都出現過。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+There was once a man in Puerto Rico who had a wonderful parrot. The parrot was 21, there was no other bird like him in the whole world. He could learn to say any word-- 22 one. He could not say the name of his native town, Catano.
+The man 23 everything he could to teach the parrot to say "Catano," but he never 24. At first he was very gentle with the bird, but gradually he lost his 25. "You stupid bird! 26 can't you learn to say that one word? Say 'Catano' or I'll kill you!" But the parrot would not say it. Many times the man screamed, "Say 'Catano' or I'll kill you!" But the bird would not 27 the name. Finally the man gave up. He picked up the parrot and threw the bird into the chicken house.
+In the chicken house, there were four old chickens, waiting to be killed 28 Sunday's dinner. "You are even more stupid than the chickens," the man said as he was leaving. The next morning, the man went out to the chicken house. When he opened the door, he was 29 by what he saw. He could not believe his eyes and ears! On the floor 30 three dead chickens. The parrot was screaming at the fourth, "Say 'Catano' or I'll kill you!"
+中譯：波多黎各曾經有一個人養了一隻很棒的鸚鵡。這隻鸚鵡非常特別，全世界找不到第二隻像牠這樣的鳥。牠幾乎能學會說任何字——除了一個字例外，牠學不會說出自己家鄉的名字：卡塔諾。這個男人想盡辦法教鸚鵡說「卡塔諾」，但始終沒有成功。一開始他對這隻鳥很溫和，但漸漸地他失去了耐性。「你這隻笨鳥！你怎麼連這個字都學不會？說『卡塔諾』，不然我就殺了你！」但鸚鵡就是不肯說。這個男人好幾次都大吼：「說『卡塔諾』，不然我就殺了你！」但這隻鳥就是不肯說出這個名字。最後這個男人放棄了。他抓起鸚鵡，把牠丟進雞舍裡。雞舍裡有四隻老母雞，正等著被宰來當星期天的晚餐。「你比這些雞還笨。」男人離開時這麼說。隔天早上，這個男人到雞舍去。當他打開門時，眼前的景象讓他大吃一驚。他簡直不敢相信自己的眼睛和耳朵！地上躺著三隻死雞。鸚鵡正對著第四隻雞尖叫：「說『卡塔諾』，不然我就殺了你！」
+📋 內容大意
+A man in Puerto Rico owned a remarkable parrot that could pronounce almost any word, yet never the name of its home town, Catano.（敘事文）
+Gentle teaching turned to rage, and after threatening the bird again and again the man finally gave up and tossed it in with four old chickens awaiting slaughter.（敘事文）
+The next morning the sight inside the chicken house astonished him: three chickens dead on the floor, and the parrot screaming the same threat at the fourth.（敘事文）
+← 第23題回到87 年學測第25題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

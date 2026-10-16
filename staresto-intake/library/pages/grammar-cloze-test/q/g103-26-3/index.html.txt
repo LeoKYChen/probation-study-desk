@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g103-26-3/index.html
+Author: staresto-create ZZSH
+Title: 103 年學測克漏字第26題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 103 年學測 ／ 第26題
+103 年學測 克漏字 第26題
+字彙選義線索：句內答對率 40%
+答對率 40%：當年每 100 位考生，有 40 位答對。
+When people encounter a complex issue and form an opinion, how thoroughly have they 26 all the important factors involved before they make their decisions?
+(A)conveyed
+(B)examined
+(C)solved
+(D)implied
+答案：(B) examined
+題目編號：G103_26_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「他們有多徹底地『檢視』過所有重要因素」，examined（檢視）符合這種審慎評估的語境；conveyed（傳達）、solved（解決）、implied（暗示）都不合。
+深入解析
+你可能會這樣想
+examine 這個字，你的印象大概綁在 exam（考試）上，第一個念頭是「考試、測驗」，於是覺得「考試所有重要因素」講不通，就把它放掉了。答對率只有四成，這個字義落差是主因。examine 的核心意思其實是「仔細檢查、審視」，醫生 examine a patient（為病人做檢查）用的就是這個意思；「考試」那層意思反而是從「檢驗程度」引申出來的。
+怎麼判斷
+先看句子在問什麼。how thoroughly（多麼徹底地）這個副詞已經把答案框住了：能被 thoroughly 修飾的動詞，必須是可以「做得徹不徹底」的動作，也就是要花時間逐項檢視的動作。再看受詞：all the important factors involved（所有相關的重要因素）。跟 factors 搭配的動詞，慣用的是 examine、consider、weigh 這一類「檢視、考量、權衡」，而不是 solve。下一句直接把答案講出來：The answer is: not very thoroughly（答案是：並不怎麼徹底）。作者說的是人們沒有把因素看得夠仔細，指的正是「檢視」這個動作。整篇的主旨句也擺在第一行：Most human beings actually decide before they think.（大多數人其實是先做決定才思考）——沒有仔細檢視就下判斷，是本文從頭到尾在講的事。順帶注意 involved 的位置：the important factors involved 意思是「相關的重要因素」，involved 擺在名詞後面，等於 that are involved；擺在名詞前面的 involved parents 是「積極參與的父母」，意思不一樣。
+誘答選項
+conveyed（傳達）：convey an idea 是把想法表達出來讓別人理解，但這一句講的是人在做決定之前自己有沒有仔細考慮那些因素，不是把因素說給誰聽。solved（解決）：因素不是問題，不會被「解決」；能被 solve 的是 problem、puzzle、mystery。implied（暗示）：暗示是說話的人不把話講明，與考慮得周不周全無關。
+常考字詞與句型
+take a close look at（仔細檢視…）、weigh the pros and cons（權衡利弊）、the factors involved（相關的因素）、convey a message（傳達訊息）、solve a problem（解決問題）、imply that（暗示…）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Most human beings actually decide before they think. When people encounter a complex issue and form an opinion, how thoroughly have they 26 all the important factors involved before they make their decisions? The answer is: not very thoroughly, 27 they are executives, specialized experts, or ordinary people in the street. Very few people, no matter how intelligent or experienced, can 28 all the possibilities or outcomes of a policy or a course of action within just a short period of time.
+Those who take pride in being decisive often try their best to consider all the factors beforehand. 29 , it is not unusual for them to come up with a decision before they have the time to do so. And 30 an opinion is formed, most of their thinking then is simply trying to find support for it.
+中譯：大多數人其實是先做決定、後思考。當人們遇到複雜的議題並形成意見時，在做出決定之前，他們究竟把所有重要因素都仔細考慮過了嗎？答案是：並沒有考慮得很周全，無論是企業主管、專業人士，還是一般大眾都是如此。無論一個人多聰明、多有經驗，很少有人能在短時間內考慮到一項政策或行動方案的所有可能性與後果。那些以果斷自豪的人，往往會盡力事先考慮周全所有因素，然而，他們常常在還沒來得及仔細思考之前就已經做出了決定。而一旦意見形成，他們接下來大部分的思考，往往只是在為這個已經形成的意見尋找支持的理由。
+📋 內容大意
+People usually make decisions instinctively before thoroughly analyzing all factors and possibilities involved.
+Even decisive individuals frequently form opinions first and then use reasoning merely to justify their initial choice.
+← 第25題回到103 年學測第27題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

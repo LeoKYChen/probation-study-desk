@@ -1,0 +1,44 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g104-24-2/index.html
+Author: staresto-create ZZSH
+Title: 104 年學測克漏字第24題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 104 年學測 ／ 第24題
+104 年學測 克漏字 第24題
+字彙選義線索：句內答對率 64%
+答對率 64%：當年每 100 位考生，有 64 位答對。
+Peacocks are also highly valued in China and Japan, where they are kept as symbols by the ruling families to 24 their status and wealth.
+(A)replace
+(B)disguise
+(C)distinguish
+(D)represent
+答案：(D) represent
+題目編號：G104_24_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「作為象徵被統治家族飼養，用來『代表』他們的地位與財富」，represent（代表）符合；replace（取代）、disguise（偽裝）、distinguish（區別）都不合。
+深入解析
+你可能會這樣想
+represent 你最熟的是「代表某人或某單位出面」—— He represented our school in the contest.（他代表學校參加比賽。）主詞是人。這裡是另一個同樣常考的意思：「象徵、表示」，主詞是物。同一個字換一種主詞就換一種中文，這是字彙選義題常見的考法。
+怎麼判斷
+答案其實藏在空格前面：kept as symbols by the ruling families（被統治家族當作象徵飼養）。symbol（象徵）這個名詞的意思，換成動詞來說就是 represent（象徵、代表；劍橋釋義 to be a sign or symbol of something）。整句還原：孔雀被統治家族當成象徵養著，目的是「象徵」他們的地位與財富；to represent 是表目的的不定詞（為了……）。distinguish 是本題最容易選的一個，因為中文「彰顯身分地位」聽起來很像「與眾不同」。但 distinguish 的意思是「區別、分辨」，句型是 distinguish A from B（把 A 和 B 區分開來），受詞必須是被分辨的對象；直接接 their status and wealth 會變成「分辨他們的地位與財富」，講不通。看到中文譯法接近就選，是字彙題常見的失分原因，動詞一定要連句型一起檢查。
+誘答選項
+replace（取代）例 replace the old system（取代舊制度）。disguise（偽裝、掩飾）例 disguise one's feelings（掩飾情緒），方向剛好相反 —— 統治家族是要把地位「秀出來」，不是藏起來。distinguish（區別、分辨）如上所述，句型對不上。
+常考字詞與句型
+represent（代表；象徵）、a symbol of（……的象徵）、stand for（代表、象徵）、distinguish A from B（分辨 A 與 B）、be kept as（被當作……留著）、status and wealth（地位與財富）、be highly valued（備受重視）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Much like the dove and robin, the bluebird is considered a very lucky sign in most cultures, particularly when seen in the spring. 21 , a woodpecker, when seen near the home, is regarded as a good sign. In contrast, the peacock is not 22 seen as lucky. In places like India, the peacock is considered lucky because the great many "eyes" on its feathers are said to alert it to 23 evil. Peacocks are also highly valued in China and Japan, where they are kept as symbols by the ruling families to 24 their status and wealth.
+However, the peacock receives only scorn from the rest of the world. The feathers of peacocks are considered the most 25 part of the bird because the eye-shaped markings on them are associated with "evil eyes." To bring the evil eye into the home is thus believed to invite trouble and sorrow.
+中譯：就像鴿子和知更鳥一樣，藍鳥在大多數文化中都被視為十分吉利的象徵，尤其是在春天看到的時候。同樣地，若在家附近看到啄木鳥，也被視為一種吉兆。相較之下，孔雀就不一定被視為吉祥的象徵了。在印度等地，孔雀被認為是吉祥的，因為牠羽毛上眾多「眼睛」般的花紋，據說能提醒牠留意逼近的邪惡。孔雀在中國和日本也備受重視，統治家族會飼養孔雀作為地位與財富的象徵。然而，在世界其他地方，孔雀卻常常受到輕視——孔雀的羽毛被認為是牠身上最不吉利的部位，因為羽毛上眼睛狀的花紋，常被聯想成「邪眼」。因此，人們相信把「邪眼」帶進家中，會招致麻煩與不幸。
+📋 內容大意
+Unlike birds that symbolize good fortune, peacocks hold complex cultural meanings, revered in Asian nations as symbols of protection and wealth, but shunned elsewhere as signs of bad luck.
+← 第23題回到104 年學測第25題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

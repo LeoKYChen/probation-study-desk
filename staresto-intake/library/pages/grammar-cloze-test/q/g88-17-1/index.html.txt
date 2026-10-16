@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g88-17-1/index.html
+Author: staresto-create ZZSH
+Title: 88 年學測克漏字第17題詳解（時態／語態）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 88 年學測 ／ 第17題
+88 年學測 克漏字 第17題
+時態／語態線索：句內
+Now this is the second time this 17 .
+(A)happens
+(B)is happening
+(C)has happened
+(D)had happened
+答案：(C) has happened
+題目編號：G88_17_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+現在完成式 has happened，這是經典的 this is the Nth time (that)...has happened 句型，表示「這是這件事累積到現在第二次發生」；happens（現在簡單式）、is happening（現在進行式）、had happened（過去完成式，時態不對，這是當下正在抱怨的事）都不符合這個固定句型。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+「這已經是第二次了」講的是已經發生過的事，所以你很容易往過去式或過去完成式去找。其實這是一個固定句型，而句型本身就把時態鎖死了。
+怎麼判斷
+四個選項都是同一個動詞 happen 的形態，可見這一格考的是時態。先把句型認出來：This is the first／second／third time (that) 主詞 + have／has + 過去分詞。掛鉤用 This is the first time I have been here.（這是我第一次來這裡。）這個句型的意思是「從過去累積到現在為止，這是第幾次」，重點落在「累積到此刻」，所以主要子句用現在式的 This is，後面那個子句就用現在完成式。本句的主詞 this 是單數，所以是 has happened。還原成完整的意思：從以前到現在，這種事已經是第二次發生了。
+誘答選項
+had happened：過去完成式需要另一個更晚的過去時間點當基準，而本句的基準是「現在」（This is ...），沒有那個更晚的過去點。happens：現在簡單式講的是通常如此、反覆如此的事，不含「累積到現在第幾次」的意思。is happening：現在進行式強調此刻正在進行，但客人抱怨的是已經發生完的兩次。
+常考字詞與句型
+This is the first time I have p.p.（這是我第一次……）、It is the second time that …（這是第二次……）、happen to sb（發生在某人身上）、take place（舉行、發生）、the second time（第二次）、not good enough（不夠好）。其中 take place 這一組考過 4 個年度，86 年第 37 題 →、92 年補考第 27 題 →、98 年第 29 題 →都出現過。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Guest: My name is Hagen. I'm in room 229. This morning I 16 at 6 o'clock by a telephone call that wasn't for me. Now this is the second time this 17 . It's just not good enough! The call was for a Mr. Haugen! Don't you people listen!
+Receptionist: I'm 18 terribly sorry, Mr. Hagen. I will inform the early morning supervisor. She will ensure it doesn't happen again.
+Guest: Well, I hope not! Also, I received this FAX this morning. I've only got the first two pages. 19 should be four more. Didn't anyone check? This is a very important document!
+Receptionist: I 20 apologize, Mr. Hagen. I'll check the FAX office right away. Could I have those two sheets, please?
+中譯：房客：我叫哈根，住在 229 號房。今天早上六點，我被一通不是找我的電話吵醒。這已經是這星期第二次了！這樣真的太不像話了！那通電話是要找豪根先生的！你們都沒在聽嗎！櫃檯人員：真的非常抱歉，哈根先生。我會通知早班主管，她會確保這種事不再發生。房客：希望如此！還有，我今早收到一份傳真，但只收到前兩頁。應該還有四頁才對。難道沒有人檢查過嗎？這是非常重要的文件！櫃檯人員：我誠心跟您道歉，哈根先生。我會馬上去查傳真機。可以請您把那兩頁給我嗎？
+📋 內容大意
+A hotel guest angrily complains that a wrong wake-up call has woken him a second time.（敘事文）
+The receptionist apologizes and promises to tell the supervisor so that it will not happen again.（敘事文）
+The guest then complains that four pages of an important fax are missing.（敘事文）
+The receptionist apologizes again and offers to check the fax office at once.（敘事文）
+← 第16題回到88 年學測第18題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

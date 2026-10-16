@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g99-28-3/index.html
+Author: staresto-create ZZSH
+Title: 99 年學測克漏字第28題詳解（連接詞／轉折詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 99 年學測 ／ 第28題
+99 年學測 克漏字 第28題
+連接詞／轉折詞線索：句內答對率 34%
+答對率 34%：當年每 100 位考生，有 34 位答對。
+Bacteria can multiply if the water is kept on the shelves for too long or if it is exposed to heat or direct sunlight. 28 the information on storage and shipment is not always readily available to consumers, bottled water may not be a better alternative to tap water.
+(A)Although
+(B)Despite
+(C)Since
+(D)So
+答案：(C) Since
+題目編號：G99_28_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+Since 在此是表原因的從屬連接詞「既然、因為」：正因為儲存與運送的資訊不易取得，瓶裝水未必比自來水更好。Although（雖然）語意方向相反，Despite 是介系詞須接名詞，So 引導結果不能放在句首帶出原因子句。
+深入解析
+你可能會這樣想
+since 你大概只想到「自從」，而且腦中綁定現在完成式，所以看到句首的 Since 帶出一個完整子句就排除了它。其實 since 有三種用法：介系詞（since last month）、表時間的連接詞（自從）、以及表原因的連接詞「既然、因為」——本題考第三種，與 because、as 意思接近：Since you are here, let's begin.（既然你來了，我們就開始吧）。
+怎麼判斷
+先看空格後面接的是什麼。這一格後面是 the information … is not always readily available，一個完整子句，所以要填連接詞——Despite 是介系詞，只能接名詞，可排除。再看前後的邏輯：前一句說水放太久或曬到太陽會滋生細菌，本句說消費者又無從得知這些資訊，兩件事層層堆疊，導向「瓶裝水未必比自來水好」這個結論，所以要的是表原因的連接詞，也就是 Since。
+誘答選項
+Although 是讓步，方向相反；Despite 是介系詞，後面只能接名詞不能接子句；So 表結果，不能引導原因子句。
+常考字詞與句型
+since／as／because + 子句（因為）、despite + 名詞（儘管）、in spite of（儘管）、an alternative to（…的替代選擇）。其中 in spite of 這一組考過 9 個年度，86 年第 21 題 →、89 年第 30 題 →、93 年第 23 題 →、99 年第 24 題 →、105 年第 29 題 →、106 年第 19 題 →、107 年第 30 題 →、109 年第 29 題 →、112 年第 15 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Many people like to drink bottled water because they feel that tap water may not be safe, but is bottled water really any better? Bottled water is mostly sold in plastic bottles and that's why it is potentially health 26 . Processing the plastic can lead to the release of harmful chemical substances into the water contained in the bottles. The chemicals can be absorbed into the body and 27 physical discomfort, such as stomach cramps and diarrhea. Health risks can also result from inappropriate storage of bottled water. Bacteria can multiply if the water is kept on the shelves for too long or if it is exposed to heat or direct sunlight. 28 the information on storage and shipment is not always readily available to consumers, bottled water may not be a better alternative to tap water.
+Besides these 29 issues, bottled water has other disadvantages. It contributes to global warming. An estimated 2.5 million tons of carbon dioxide were generated in 2006 by the production of plastic for bottled water. In addition, bottled water produces an incredible amount of solid 30 . According to one research, 90% of the bottles used are not recycled and lie for ages in landfills.
+中譯：許多人喜歡喝瓶裝水，因為他們覺得自來水可能不安全，但瓶裝水真的比較好嗎？瓶裝水大多裝在塑膠瓶中，這正是它可能危害健康的原因。塑膠加工過程可能釋放有害化學物質到瓶內的水中。這些化學物質一旦被人體吸收，可能會造成身體不適，例如胃痙攣和腹瀉。不當儲存瓶裝水也可能帶來健康風險——如果水被放置在架上過久，或暴露在高溫或陽光直射下，細菌就可能大量繁殖。由於消費者往往無法輕易得知瓶裝水的儲存與運送資訊，瓶裝水未必比自來水更好的選擇。除了這些安全疑慮之外，瓶裝水還有其他缺點：它會加劇全球暖化——據估計，2006 年生產瓶裝水所需的塑膠就產生了 250 萬噸二氧化碳。此外，瓶裝水也製造了驚人數量的固體廢棄物，根據一項研究，使用過的瓶子有 90%沒有被回收，長年堆積在垃圾掩埋場中。
+📋 內容大意
+Many people choose bottled water over tap water, believing it safer, but the plastic bottle itself creates health risks.
+Processing plastic can release harmful chemicals into the water, leading to stomach cramps and diarrhea, and bacteria multiply when bottles sit too long or stand in heat or sunlight.
+Storage and shipment information rarely reaches consumers, and bottled water also drives global warming and leaves an enormous quantity of unrecycled plastic, about 90% of which ends up in landfills.
+← 第27題回到99 年學測第29題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

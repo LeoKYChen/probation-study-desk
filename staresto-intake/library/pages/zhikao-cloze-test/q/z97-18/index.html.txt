@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z97-18/index.html
+Author: staresto-create ZZSH
+Title: 97 年指考克漏字第18題詳解（關係子句／疑問詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 97 年指考 ／ 第18題
+97 年指考 克漏字 第18題
+關係子句／疑問詞線索：句內答對率 74%
+答對率 74%：當年每 100 位考生，有 74 位答對。
+Plants make antioxidants to protect themselves from the sun's ultraviolet (UV) light, 18 may cause harmful elements to form within the plant cells.
+(A)which
+(B)that
+(C)what
+(D)such
+答案：(A) which
+題目編號：Z97_18（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+which 引導非限定關係子句，先行詞是前面的 the sun's ultraviolet (UV) light（紫外線），補充說明「紫外線可能導致植物細胞內產生有害物質」。逗號後的非限定子句不能用 that，what 不能有先行詞，such 不是關係代名詞，都不合。
+深入解析
+你可能會這樣想
+which 與 that 都能當關係代名詞，你大概覺得兩個都行，就挑一個讀起來順的。
+怎麼判斷
+先數句子成分：逗號後面是 ______ may cause harmful elements to form，動詞 may cause 缺一個主詞，所以空格要填的是一個能當主詞的關係代名詞，先行詞是逗號前的 the sun's ultraviolet (UV) light。接著看那個逗號：逗號隔開的是非限定關係子句，只是補充說明，不是用來限定先行詞是哪一個——而非限定關係子句不能用 that，這裡的先行詞是事物，所以用 which（劍橋 English Grammar Today 的 Relative clauses 條目）。還原一次驗算：..., and it may cause harmful elements to form within the plant cells。
+誘答選項
+that 在限定關係子句裡可以代替 which，但一碰到逗號就不行；what 自己帶著先行詞（等於 the thing that），這一句前面已經有 UV light 當先行詞，再放 what 就多了一個；such 不是關係代名詞，接不上。
+常考字詞與句型
+逗號 + which（非限定關係子句指事物用 which，不能用 that）、cause A to V（導致 A 做某事）、protect A from B（保護 A 免於 B）、antioxidants（抗氧化物質）、form（形成、產生）、ultraviolet light（紫外線）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：97學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The fruits and vegetables we eat often come in distinctive colors. The rich colors, 16, are not there only to attract attention. They perform another important function for the plants. Research shows that the substances 17 these colors actually protect plants from chemical damage.
+The colors come mainly from chemicals known as antioxidants. Plants make antioxidants to protect themselves from the sun's ultraviolet (UV) light, 18 may cause harmful elements to form within the plant cells.
+When we eat colorful fruits and vegetables, the coloring chemicals protect us, too. Typically, an intensely colored plant has 19 of these protective chemicals than a paler one does. Research on how chemicals in blueberries affect brain function even suggests that these chemicals may help our own brains work more 20. In other words, eating richly colored fruits and vegetables makes us both healthier and smarter.
+中譯：我們吃的蔬果經常帶有鮮明的顏色。然而，這些鮮豔的顏色，並不只是為了吸引目光而存在，它們對植物本身還有另一個重要功能。研究顯示，造成這些顏色的物質實際上能保護植物免受化學損傷。這些顏色主要來自一種叫做抗氧化物的化學物質。植物製造抗氧化物是為了保護自己免受太陽紫外線（UV）的傷害，因為紫外線可能導致植物細胞內形成有害物質。當我們食用色彩繽紛的蔬果時，這些呈色的化學物質同樣也能保護我們。一般而言，顏色濃豔的植物所含的這類保護性化學物質，比顏色較淡的植物多。關於藍莓中的化學物質如何影響腦部功能的研究甚至顯示，這些物質可能有助於讓我們的大腦運作得更有效率。換句話說，食用色彩豐富的蔬果不只讓我們更健康，也讓我們更聰明。
+📋 內容大意
+The bright colors of fruits and vegetables serve a purpose beyond catching the eye.
+They come from antioxidants that shield plant cells against damage from ultraviolet light.
+Eating deeply colored produce passes that protection to us and may even sharpen the brain.
+← 第17題回到97 年指考第19題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g102-25-2/index.html
+Author: staresto-create ZZSH
+Title: 102 年學測克漏字第25題詳解（比較級）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 102 年學測 ／ 第25題
+102 年學測 克漏字 第25題
+比較級線索：句內答對率 54%
+答對率 54%：當年每 100 位考生，有 54 位答對。
+For example, a 1798 dime is much rarer than a 1916 dime, but the 25 sells for significantly more, simply because many more people collect early 20th century dimes than dimes from the 1700s.
+(A)older
+(B)better
+(C)latter
+(D)bigger
+答案：(C) latter
+題目編號：G102_25_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】the latter 固定用法「後者」，指前面提到的兩者（1798 dime 和 1916 dime）中後面提到的那個，即 1916 dime；older（較舊的）、better（較好的）、bigger（較大的）都不合這個指代用法。
+深入解析
+你可能會這樣想
+latter 與 later 長得太像，你很可能把它讀成「較晚的」，再想「1916 比 1798 晚，那沒錯啊」——但選項給的是 latter，不是 later，兩個字的意思完全不同。也可能因為前半句在比稀有度，就順手挑了 older。
+怎麼判斷
+the latter 意思是「後者」，指的是前面剛提過的兩個東西當中，後面提到的那一個，與它成對的是 the former（前者）。這是指代用法，跟時間早晚無關——決定誰是「後者」的是它在句子裡出現的先後順序，不是它本身的年代。回頭數一次：前半句依序提到 a 1798 dime、a 1916 dime，後者就是 1916 dime。再用後半句驗算：simply because many more people collect early 20th century dimes than dimes from the 1700s（因為收集二十世紀初一角硬幣的人，遠多於收集十八世紀的）。1916 年正屬於二十世紀初，正是被較多人收集、因此賣得較貴的那一枚，驗算完全吻合。順帶把兩個字分清楚：latter 是「兩者中的後者」，later 是「較晚、後來」，拼字只差一個字母，用法完全不同。
+誘答選項
+older（較舊的）：1798 年那一枚才比較舊，但句子說賣得比較貴的是另一枚，代進去與後半句的解釋直接矛盾。better（較好的）：文章沒有比較兩枚硬幣的好壞或品相。bigger（較大的）：文章完全沒有比較兩枚硬幣的大小，這個選項與整段的主題無關。
+常考字詞與句型
+the former … the latter …（前者…後者）、the latter half of（…的後半）、command a high price（賣得高價）、be popular with（受…歡迎）、significantly more（明顯更多）、sooner or later（遲早）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+For coin collectors who invest money in coins, the value of a coin is determined by various factors. First, scarcity is a major determinant. 21 a coin is, the more it is worth. Note, however, that rarity has little to do with the 22 of a coin. Many thousand-year-old coins often sell for no more than a few dollars because there are a lot of them around, 23 a 1913 Liberty Head Nickel may sell for over one million US dollars because there are only five in existence.
+Furthermore, the demand for a particular coin will also 24 influence coin values. Some coins may command higher prices because they are more popular with collectors. For example, a 1798 dime is much rarer than a 1916 dime, but the 25 sells for significantly more, simply because many more people collect early 20th century dimes than dimes from the 1700s.
+中譯：對投資錢幣的錢幣收藏家來說，一枚錢幣的價值取決於多項因素。首先，稀有度是決定價值的主要因素之一：一枚錢幣越稀有，價值就越高。不過要注意的是，稀有度與錢幣的年代並沒有太大關係——許多上千年歷史的古錢幣，往往因為市面上數量眾多，售價不過幾塊美金；然而，一枚 1913 年的自由女神頭像鎳幣，卻可能因為全球只剩五枚，而以超過一百萬美元的價格售出。此外，特定錢幣的市場需求也會大大影響其價值——有些錢幣因為受到收藏家的青睞，因此能賣出更高的價格。舉例來說，一枚 1798 年的一角硬幣，其稀有程度遠高於 1916 年的一角硬幣，但後者的售價卻明顯高出許多，原因只在於：收藏 20 世紀初一角硬幣的人，遠比收藏 1700 年代硬幣的人來得多。
+📋 內容大意
+For collectors who invest, several things set a coin's value. Scarcity matters most: the harder a coin is to find, the more it is worth.
+Rarity has little to do with how old a coin is. Old coins are often cheap, but a 1913 Liberty Head Nickel can sell for over a million dollars.
+Demand also counts. A 1798 dime is much rarer than a 1916 dime, yet the 1916 costs far more because more people collect it.
+← 第24題回到102 年學測第26題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

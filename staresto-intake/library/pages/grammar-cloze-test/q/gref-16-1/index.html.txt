@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/gref-16-1/index.html
+Author: staresto-create ZZSH
+Title: 學測參考試卷克漏字第16題詳解（代名詞／指示詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 學測參考試卷 ／ 第16題
+學測參考試卷 克漏字 第16題
+代名詞／指示詞線索：句內
+They are naturally equipped with 16 they need to groom themselves: a flexible tongue with which to lick, forepaws they moisten with saliva and use like washcloths, and teeth to dig out tougher pieces of food. 17, adult cats may spend as much as half of their waking hours grooming themselves, their relatives and friends.
+(A)anything
+(B)nothing
+(C)everything
+(D)the thing
+答案：(C) everything
+題目編號：GRef_16_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「牠們天生就配備了理毛所需的『一切』」，everything（一切）符合；anything（任何事，通常用於疑問/否定句）、nothing（沒有東西，語意相反）、the thing（特指的那個東西，不合這種泛指的語境）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是「東西」的意思，而 the thing 看起來最具體，很容易先挑它。這一格往後讀就有明確的證據——作者接著列了三樣東西。
+怎麼判斷
+四個選項裡三個是不定代名詞、一個是名詞片語，可見這一格考的是數量與語意。先把句子讀完：They are naturally equipped with ___ they need to groom themselves（牠們天生就配備了理毛所需的……）。空格後面 they need 是省略了關係代名詞的子句，修飾前面那個空格。再往後讀，證據就出現了：冒號後面一口氣列了三樣——a flexible tongue（靈活的舌頭）、forepaws they moisten with saliva（沾唾液當抹布的前掌）、teeth to dig out tougher pieces of food（挑出難咬食物殘渣的牙齒）。既然是三樣不是一樣，就不能用單指一樣的 the thing，要用涵蓋全部的 everything。整句是「牠們天生就備妥了理毛所需的一切」。
+誘答選項
+the thing：單數、特指某一樣，但後面列了三樣，數量對不上。anything（任何東西）：主要用在疑問句與否定句裡（Do you need anything?、I don't need anything.），肯定句裡的 anything 意思會變成「隨便什麼都行」，與「所需的一切」不同。nothing（什麼都沒有）：語意相反，貓要是什麼都沒配備就理不了毛了。
+常考字詞與句型
+be equipped with（配備有）、everything (that) sb needs（某人所需的一切）、groom oneself（理毛、打理儀容）、a flexible tongue（靈活的舌頭）、moisten sth with（用……沾濕某物）、dig out（挖出、挑出）。其中 be equipped with 這一組考過 3 個年度，85 年第 37 題 →、113 年第 17 題 →都出現過。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+When it comes to personal hygiene, cats are the best example of cleanliness. They are naturally equipped with 16 they need to groom themselves: a flexible tongue with which to lick, forepaws they moisten with saliva and use like washcloths, and teeth to dig out tougher pieces of food. 17, adult cats may spend as much as half of their waking hours grooming themselves, their relatives and friends.
+Mothers begin licking their kittens 18 birth---to clean them, stimulate the release of body waste, wake them up to suck milk, and provide comfort. Kittens usually begin grooming themselves when they are about four weeks old. 19 five weeks of age, kittens also begin grooming other baby cats, as well as their mom.
+20 grooming among cats, called allogrooming, often continues into adulthood. Allogrooming is a social activity that serves to strengthen the bond between cats.
+中譯：說到個人衛生，貓咪堪稱是愛乾淨的最佳典範。牠們天生就配備了理毛所需的一切：靈活的舌頭可以舔舐，前腳沾上唾液後可以當作毛巾使用，牙齒則能挑出比較頑固的食物殘渣。說出來你可能不信，成年貓花在替自己、親屬和朋友理毛上的時間，可能多達清醒時間的一半。母貓從小貓一出生就開始舔舐牠們——清潔身體、刺激排泄、喚醒牠們吸奶，並給予安撫。小貓通常在大約四週大時開始自己理毛。到了五週大左右，小貓也開始替其他小貓和媽媽理毛。貓咪之間這種彼此理毛的行為稱為「互相理毛」，通常會持續到成年。互相理毛是一種能強化貓咪之間情感連結的社交行為。
+📋 內容大意
+Cats are models of cleanliness. They groom themselves with a flexible tongue, forepaws moistened by saliva, and teeth for digging out stubborn food.
+Adult cats may devote half of their waking day to grooming, tending their own coats and those of relatives and friends.
+Mothers lick newborn kittens to clean and comfort them. Kittens groom themselves from four weeks, then groom their mother; this shared habit is called allogrooming, which strengthens their bonds.
+回到學測參考試卷第17題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z107ref-17/index.html
+Author: staresto-create ZZSH
+Title: 指考參考試卷（107 學年度起適用）克漏字第17題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 指考參考試卷（107 學年度起適用） ／ 第17題
+指考參考試卷（107 學年度起適用） 克漏字 第17題
+字彙選義線索：跨句
+Nevertheless, 17 people have even heard his name.
+(A)many
+(B)some
+(C)any
+(D)few
+答案：(D) few
+題目編號：Z107參_17（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【字彙／轉折】前句盛讚其貢獻重大，後句以 Nevertheless（然而）轉折，說明「卻鮮少人聽過他的名字」，故用 few（很少）。many／some 語意相反；any 通常用於否定句或疑問句，不符此處肯定句語境。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+看到 people have even heard his name，很容易先讀成「有人聽過他的名字」，覺得 some 或 many 都說得通；even（甚至）看起來像在加強語氣，更會把你往肯定的方向推。
+怎麼判斷
+四個選項都是數量詞，可見這一格考的是「多還是少」，而方向由句首的 Nevertheless 決定。Nevertheless（然而、儘管如此）是轉折詞，它要求這一句與前面那一句方向相反：前面剛說他的解碼扭轉了二戰局勢、幫忙救了兩百萬條性命，這一句就只能往下掉，這麼大的貢獻，卻幾乎沒有人聽過他的名字。few 是「幾乎沒有」，本身帶著否定意味，正好對得上這個轉折。另一個線索是 even：have even heard his name（連他的名字都聽過）講的是最低限度的一件事，配上 few 才讀得通，連最起碼的「聽過名字」都很少有人做到。注意 few 與 a few 差一個冠詞就差很多：few 是幾乎沒有，a few 是有一些，little 與 a little 同理。同一篇的第 19 題做完之後，可以回頭與這一題擺在一起看。另外一提：這一篇選文取自 105 年指考，在那份卷子上編為第 17 題 →，兩邊是同一題，不是網站重複。
+誘答選項
+many（許多）與 some（一些）方向都偏肯定，若真的很多人聽過，前一句的貢獻與這一句就沒有落差，Nevertheless 也就沒有存在的理由。any 不能這樣用：它的位置在否定句、疑問句與條件句裡（I don't have any money.、Do you have any questions?），或表示「任何一個」的泛指（Any child can learn it.，通常配情態助動詞或講通則），單獨擺在一個陳述事實的肯定句句首當主詞的修飾語並不成立。
+常考字詞與句型
+few + 可數複數名詞（幾乎沒有）、a few + 可數複數名詞（有一些）、little + 不可數名詞（幾乎沒有）、a little + 不可數名詞（有一點）、nevertheless（然而、儘管如此）、even（連……也，用來加強最低限度的說法）。
+線索範圍說明：Nevertheless 轉折前一句「他的破譯拯救了兩百萬人」
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Alan Turing was one of the leading scientific geniuses of the 20th century. Many scholars consider him the father of modern computer science. He was also the man who cracked the 16 uncrackable Enigma code used by Nazi Germany. His code-breaking turned the tide of World War II and helped save two million lives. Nevertheless, 17 people have even heard his name.
+Turing displayed signs of high intelligence in math and science at a young age. By the time he was 23, he had already come up with the idea of what 18 the modern computer—the Turing machine. Today, Turing machines are still used in theoretical computation. He also proposed the now famous Turing test, used to determine whether a computer exhibits intelligent behavior equivalent to that of a human.
+The postwar era, however, was a disaster for Turing. He was gay, which was then a crime in Britain. 19 being hailed as one of the crucial figures in defeating the Nazis, Turing was convicted of "gross indecency." This 20 drove him to commit suicide in 1954, at the age of 41.
+Nearly 60 years after his death, Queen Elizabeth II granted Turing a formal pardon for his conviction, upon an online petition signed by prominent scientists and technology leaders around the world.
+中譯：艾倫·圖靈是二十世紀最傑出的科學天才之一，許多學者視他為現代電腦科學之父。他也是破解納粹德國所使用、據稱無法破解的「恩尼格瑪」密碼的人。他的解碼成就扭轉了第二次世界大戰的局勢，拯救了兩百萬條性命。然而，卻很少有人聽過他的名字。圖靈從小便在數學與科學方面展現高度的智慧。23 歲時，他已經構想出後來發展成現代電腦的概念——圖靈機。時至今日，圖靈機的概念仍應用於理論計算領域。他也提出了如今著名的「圖靈測試」，用來判斷電腦是否展現出與人類相當的智慧行為。然而，戰後時期對圖靈來說卻是一場災難。他是同性戀者，而這在當時的英國是一項罪行。儘管曾被譽為擊敗納粹的關鍵人物之一，圖靈卻因「嚴重猥褻罪」被定罪。這樣的屈辱最終促使他在 1954 年、41 歲時自殺身亡。在他過世將近 60 年後，在來自世界各地知名科學家與科技領袖連署請願下，英國女王伊莉莎白二世正式赦免了圖靈當年的罪行。
+📋 內容大意
+Alan Turing, called the father of computer science, broke the Enigma code and helped turn the Second World War.（敘事文）
+Gifted young, by twenty-three he had conceived the Turing machine, the idea behind modern computers.（敘事文）
+He also devised the Turing test, but postwar Britain convicted him for being gay.（敘事文）
+He took his own life in 1954, and a royal pardon came nearly sixty years later.（敘事文）
+← 第16題回到指考參考試卷（107 學年度起適用）第18題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

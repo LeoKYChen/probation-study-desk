@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z102-11/index.html
+Author: staresto-create ZZSH
+Title: 102 年指考克漏字第11題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 102 年指考 ／ 第11題
+102 年指考 克漏字 第11題
+字彙選義線索：句內答對率 72%
+答對率 72%：當年每 100 位考生，有 72 位答對。
+Fish can "talk" to each other and make a range of 11 by vibrating their swim bladder.
+(A)choices
+(B)objects
+(C)accents
+(D)noises
+答案：(D) noises
+題目編號：Z102_11（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+make noises（發出聲音）表示魚類透過振動魚鰾發出各種聲音來「交談」；choices／objects／accents 都不符合此處語意。
+深入解析
+你可能會這樣想
+noise 這個字，你的印象大概只有「噪音」，帶著吵人、惱人的意思，所以看到魚在「說話」就不敢選它。其實 noise 也可以單純指「聲音、聲響」，不一定帶著吵人的意思。
+怎麼判斷
+這是同義勾環：空格要的字，同一句後面已經先講出來了。句尾的 to produce or receive sound（發出或接收聲音）點明魚鰾的作用就是發聲，而空格前的 make a range of ______ 講的正是魚發出來的東西，sound 與 noise 是同一組意思，所以填 noises。動詞也對得上：make a noise（發出聲音）是成組的說法。整句讀成 make a range of noises（發出各式各樣的聲音）。
+誘答選項
+choices（選擇）與 objects（物體）都能接在 a range of 後面，形態吻合，容易被順手選走，但振動魚鰾產生的既不是選擇也不是物體；accents（口音、腔調）看起來與「說話」有關，但口音講的是說話的腔調，要先有語言才談得上口音，魚發出的只是聲響。
+常考字詞與句型
+make a noise（發出聲音）、a range of（一系列的、各式各樣的）、vibrate（振動）、be used as（被當作……使用）、attract mates（吸引配偶）、accent（口音、腔調）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：102學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The undersea world isn't as quiet as we thought, according to a New Zealand researcher. Fish can "talk" to each other and make a range of 11 by vibrating their swim bladder, an internal gas-filled organ used as a resonating chamber to produce or receive sound.
+Fish are believed to speak to each other for a number of reasons, such as to attract mates, scare off predators, or give directions to other fish. Damselfish, for example, have been found to make sounds to scare off 12 fish and even divers. Another discovery about fish sounds is that not all fish are 13 "talkative." Some species talk a lot, while others don't. The gurnard species has a wide vocal repertoire and keeps up a constant chatter. Codfish, 14 , usually keep silent, except when they are laying eggs.
+Any goldfish lover who hopes to strike up a conversation with their pet goldfish is 15 . Goldfish have excellent hearing, but they don't make any sound whatsoever. Their excellent hearing isn't associated with vocalization.
+中譯：根據一位紐西蘭研究者的說法，海底世界並不如我們想像的那麼安靜。魚類能藉由振動魚鰾（一種充滿氣體、可作為共鳴腔以發出或接收聲音的內部器官）互相「說話」，發出各種聲音。
+科學家相信魚類基於多種原因互相交談，例如吸引配偶、嚇阻掠食者，或為同類指路。舉例來說，人們發現雀鯛會發出聲音來嚇跑具威脅性的魚類，甚至潛水客。另一項關於魚類聲音的發現是，不是所有魚都同樣「健談」。有些魚種話很多，有些則不然。魴鮄（gurnard）的叫聲種類豐富，並不斷地發出聲響；相對地，鱈魚則通常保持沉默，除非在產卵時才會發聲。
+任何希望能和自己養的金魚聊聊天的愛好者，恐怕要失望了。金魚雖然聽力極佳，卻完全不會發出任何聲音；牠們優異的聽力並不與發聲能力相關。
+📋 內容大意
+The sea is noisier than we supposed: fish make sounds by vibrating the swim bladder.
+They call to attract mates, warn off enemies or guide other fish, though some species stay quiet.
+Goldfish are the extreme case, hearing beautifully yet never making a sound themselves.
+回到102 年指考第12題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g102-21-2/index.html
+Author: staresto-create ZZSH
+Title: 102 年學測克漏字第21題詳解（比較級）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 102 年學測 ／ 第21題
+102 年學測 克漏字 第21題
+比較級線索：句內答對率 56%
+答對率 56%：當年每 100 位考生，有 56 位答對。
+First, scarcity is a major determinant. 21 a coin is, the more it is worth.
+(A)Rare as
+(B)The rare
+(C)Rarest
+(D)The rarer
+答案：(D) The rarer
+題目編號：G102_21_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】the + 比較級..., the + 比較級... 固定句型「越……就越……」，表示「一枚硬幣越稀有，它就越值錢」；Rare as（不合這個句型結構）、The rare（原級無比較級變化，不合 the...the...句型）、Rarest（最高級，這個句型需要比較級不是最高級）都不合。
+深入解析
+你可能會這樣想
+Rare as 看起來很誘人，因為 Rare as it is（雖然它很稀有）這種形容詞放句首的說法形狀很像。也可能一看到前一句的 scarcity（稀少）就直覺挑最高級 Rarest。
+怎麼判斷
+關鍵全在句子後半：the more it is worth。這裡已經擺明是「the 加比較級」的形狀，而這個句型一定成對出現——「the 加比較級 ..., the 加比較級 ...」，意思是「越…就越…」。前半看到後半的 the more，就知道空格必須也是 the 加比較級，四選一瞬間變成一選一。還原成完整子句驗算：The rarer a coin is, the more it is worth. 等於 If a coin is rarer, it is worth more.（一枚硬幣越稀有，就越值錢）。這個句型最短的版本是 The more, the better.（越多越好）。語意也對得上：前一句說 scarcity is a major determinant（稀少是主要決定因素），本句正是把這個因素展開來講。
+誘答選項
+Rare as：這是讓步的說法，形容詞提到句首，Rare as it is 等於 Although it is rare（雖然它很稀有）。語意變成讓步，與後半的 the more it is worth 湊不成對，句型也接不起來。The rare：the 加原級形容詞，構不成這個句型；the rare 若當名詞用是指「稀有的人事物」，整句會散掉。Rarest：最高級。這個句型要的是比較級，不是最高級，也無法與後面的 the more 成對。
+常考字詞與句型
+the more..., the more...（越…就越…）、the sooner, the better（越快越好）、be worth（值…、值得）、a major determinant（主要決定因素）、determine the value of（決定…的價值）、scarcity value（稀有價值）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+For coin collectors who invest money in coins, the value of a coin is determined by various factors. First, scarcity is a major determinant. 21 a coin is, the more it is worth. Note, however, that rarity has little to do with the 22 of a coin. Many thousand-year-old coins often sell for no more than a few dollars because there are a lot of them around, 23 a 1913 Liberty Head Nickel may sell for over one million US dollars because there are only five in existence.
+Furthermore, the demand for a particular coin will also 24 influence coin values. Some coins may command higher prices because they are more popular with collectors. For example, a 1798 dime is much rarer than a 1916 dime, but the 25 sells for significantly more, simply because many more people collect early 20th century dimes than dimes from the 1700s.
+中譯：對投資錢幣的錢幣收藏家來說，一枚錢幣的價值取決於多項因素。首先，稀有度是決定價值的主要因素之一：一枚錢幣越稀有，價值就越高。不過要注意的是，稀有度與錢幣的年代並沒有太大關係——許多上千年歷史的古錢幣，往往因為市面上數量眾多，售價不過幾塊美金；然而，一枚 1913 年的自由女神頭像鎳幣，卻可能因為全球只剩五枚，而以超過一百萬美元的價格售出。此外，特定錢幣的市場需求也會大大影響其價值——有些錢幣因為受到收藏家的青睞，因此能賣出更高的價格。舉例來說，一枚 1798 年的一角硬幣，其稀有程度遠高於 1916 年的一角硬幣，但後者的售價卻明顯高出許多，原因只在於：收藏 20 世紀初一角硬幣的人，遠比收藏 1700 年代硬幣的人來得多。
+📋 內容大意
+For collectors who invest, several things set a coin's value. Scarcity matters most: the harder a coin is to find, the more it is worth.
+Rarity has little to do with how old a coin is. Old coins are often cheap, but a 1913 Liberty Head Nickel can sell for over a million dollars.
+Demand also counts. A 1798 dime is much rarer than a 1916 dime, yet the 1916 costs far more because more people collect it.
+← 第20題回到102 年學測第22題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

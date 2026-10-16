@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g114-13-1/index.html
+Author: staresto-create ZZSH
+Title: 114 年學測克漏字第13題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 114 年學測 ／ 第13題
+114 年學測 克漏字 第13題
+字彙選義線索：句內答對率 29%
+答對率 29%：當年每 100 位考生，有 29 位答對。
+They periodically stopped their conversations to switch tables so the insights and ideas might 13 and deepen.
+(A)circulate
+(B)emphasize
+(C)recover
+(D)preserve
+答案：(A) circulate
+題目編號：G114_13_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+circulate 是「流通、傳布」，本句指與會者換桌讓見解與想法得以流通並深化；emphasize（強調）、recover（恢復）、preserve（保存）語意都不合。
+深入解析
+你可能會這樣想
+circulate 你大概只記得「血液循環」（Blood circulates through the body. 血液在體內循環）。用在消息、想法、文件上時，它的意思是「流通、傳開」：Rumors circulated quickly.（謠言很快傳開）。
+怎麼判斷
+空格與 deepen 由 and 並列、同受 might 支配，可知要填的是與 deepen 同類的不及物動詞，且語意上與「加深」互補。前半句 They periodically stopped their conversations to switch tables（他們不時中斷談話、換到別桌）說明了機制：人換桌，見解與想法也隨之傳到別桌，正是「流通」。後一句 As they moved from one table to another, they noticed new ideas emerging from the discussions.（他們從一桌換到另一桌時，注意到討論中不斷湧現新想法）再次印證。circulate 就廣度而言、deepen 就深度而言，兩者並列而語意互補。凡是空格與另一個動詞由 and 並列的題目，判斷步驟相同：先確認並列成分的詞性與及物性，再從語意是否互補來挑選。
+誘答選項
+emphasize（強調）與 preserve（保存）都是及物動詞，須接受詞，本句空格後直接接 and deepen，句型即不成立。recover 是「恢復、復原」，用於健康、損失或失物，而見解與想法並未失去，語意不合。
+常考字詞與句型
+circulate（流通、傳開）、circulation（發行量、循環）、rumors circulate（謠言流傳）、circulate a memo（傳閱備忘錄）、deepen one's understanding（加深理解）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+In 1995, a group of business and academic leaders met at the home of Juanita Brown and David Isaacs in Mill Valley, California. None of them had any idea they were about to create a social innovation that 11 rapidly around the world.
+The group was supposed to have a large-circle discussion in their beautiful garden. Unfortunately, it started pouring. With their plan 12 by the rain, the two dozen participants squeezed into the living room. They broke into small, intimate table conversations, recording their insights on paper tablecloths. They periodically stopped their conversations to switch tables so the insights and ideas might 13 and deepen. As they moved from one table to another, they noticed new ideas emerging from the discussions. This in turn enriched subsequent rounds of conversation.
+Over the course of the morning, the innovative discussion process 14 a new form of collective effort that transformed the depth, scope, and quality of their discussion. The World Café was 15 created. Since that rainy morning in Mill Valley, the World Café approach has been applied to multi-group discussions and cooperative actions by businesses, industries, and educational institutions around the world.
+中譯：1995 年，一群商界與學界領袖在加州米爾谷的胡安妮塔·布朗與大衛·艾薩克斯家中聚會。他們誰也沒想到，自己即將創造出一項迅速風靡全球的社會創新。這群人原本打算在美麗的花園中，圍成一個大圈進行討論，不料卻突然下起傾盆大雨。原訂計畫被大雨打亂後，這二十多位與會者只好擠進客廳裡，分成幾組人馬，圍著小桌子展開親密的交談，並把彼此的想法寫在紙桌巾上。他們會定期停下交談、更換桌次，讓不同的想法與見解得以交流並深化。隨著他們從一桌移動到另一桌，他們注意到討論中不斷湧現出新的想法，這也讓後續一輪又一輪的對話變得更加豐富。就這樣，在整個上午的過程中，這種創新的討論方式，逐漸發展成一種全新形式的集體合作，徹底改變了他們討論的深度、廣度與品質。「世界咖啡館」討論法就此誕生。自從米爾谷那個下雨的早晨以來，「世界咖啡館」的方法已被廣泛應用於世界各地企業、產業與教育機構的多方討論與合作行動之中。
+📋 內容大意
+In 1995 business and academic leaders met at the Mill Valley home of Juanita Brown and David Isaacs. They did not know they were inventing something new.
+Heavy rain ruined their plan for a big circle discussion in the garden. Two dozen people crowded indoors and talked in small groups at tables.
+They changed tables from time to time, so ideas travelled and deepened. That morning produced the World Café, now used by businesses and schools worldwide.
+← 第12題回到114 年學測第14題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

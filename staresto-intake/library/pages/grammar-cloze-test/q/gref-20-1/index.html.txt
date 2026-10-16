@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/gref-20-1/index.html
+Author: staresto-create ZZSH
+Title: 學測參考試卷克漏字第20題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 學測參考試卷 ／ 第20題
+學測參考試卷 克漏字 第20題
+字彙選義線索：句內
+Kittens usually begin grooming themselves when they are about four weeks old. 19 five weeks of age, kittens also begin grooming other baby cats, as well as their mom. 20 grooming among cats, called allogrooming, often continues into adulthood.
+(A)Early
+(B)Natural
+(C)Mutual
+(D)Personal
+答案：(C) Mutual
+題目編號：GRef_20_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「貓咪之間彼此理毛，稱為互相理毛」，Mutual（互相的）符合 allogrooming（互相理毛）這個字的定義；Early（早期的）、Natural（自然的）、Personal（個人的）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+這一篇一開始講的是貓「替自己」理毛，所以 Personal（個人的）看起來很合理；但這一段講的已經不是自己理自己，是彼此互相。
+怎麼判斷
+四個選項都是形容詞，可見這一格考的是語意，那就往前讀一句。前一句是 kittens also begin grooming other baby cats, as well as their mom（幼貓也開始替其他幼貓和媽媽理毛）——重點在 other baby cats 與 their mom，理毛的對象是別的貓，不是自己。本句是 ___ grooming among cats, called allogrooming, often continues into adulthood（貓之間的……理毛，稱為 allogrooming，常會持續到成年）。既然是彼此替對方理，就是「互相的」，填 Mutual。還有一個字本身就在提示：allogrooming 的字首 allo- 來自希臘文，意思是 other（其他的），整個字就是「替別的個體理毛」，與 mutual 的意思完全吻合。再看 among cats（在貓與貓之間）也印證了這是雙向的行為。
+誘答選項
+Personal（個人的、自己的）：方向相反，這一段講的正是替「別的貓」理毛。Early（早期的）：與時間有關，但這一句要說的是對象不是時間；而且後半句說它會持續到成年，反而不限於早期。Natural（天生的）：這一篇第二句確實提過 naturally equipped，但那是講配備，不是講「互相」這個特性。
+常考字詞與句型
+mutual respect（互相尊重）、mutual benefit（互利）、a mutual friend（共同的朋友）、among（在……之間，三者以上）、continue into adulthood（持續到成年）、strengthen the bond（強化連結）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+When it comes to personal hygiene, cats are the best example of cleanliness. They are naturally equipped with 16 they need to groom themselves: a flexible tongue with which to lick, forepaws they moisten with saliva and use like washcloths, and teeth to dig out tougher pieces of food. 17, adult cats may spend as much as half of their waking hours grooming themselves, their relatives and friends.
+Mothers begin licking their kittens 18 birth---to clean them, stimulate the release of body waste, wake them up to suck milk, and provide comfort. Kittens usually begin grooming themselves when they are about four weeks old. 19 five weeks of age, kittens also begin grooming other baby cats, as well as their mom.
+20 grooming among cats, called allogrooming, often continues into adulthood. Allogrooming is a social activity that serves to strengthen the bond between cats.
+中譯：說到個人衛生，貓咪堪稱是愛乾淨的最佳典範。牠們天生就配備了理毛所需的一切：靈活的舌頭可以舔舐，前腳沾上唾液後可以當作毛巾使用，牙齒則能挑出比較頑固的食物殘渣。說出來你可能不信，成年貓花在替自己、親屬和朋友理毛上的時間，可能多達清醒時間的一半。母貓從小貓一出生就開始舔舐牠們——清潔身體、刺激排泄、喚醒牠們吸奶，並給予安撫。小貓通常在大約四週大時開始自己理毛。到了五週大左右，小貓也開始替其他小貓和媽媽理毛。貓咪之間這種彼此理毛的行為稱為「互相理毛」，通常會持續到成年。互相理毛是一種能強化貓咪之間情感連結的社交行為。
+📋 內容大意
+Cats are models of cleanliness. They groom themselves with a flexible tongue, forepaws moistened by saliva, and teeth for digging out stubborn food.
+Adult cats may devote half of their waking day to grooming, tending their own coats and those of relatives and friends.
+Mothers lick newborn kittens to clean and comfort them. Kittens groom themselves from four weeks, then groom their mother; this shared habit is called allogrooming, which strengthens their bonds.
+← 第19題回到學測參考試卷第21題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

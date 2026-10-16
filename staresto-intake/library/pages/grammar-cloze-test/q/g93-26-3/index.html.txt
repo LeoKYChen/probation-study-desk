@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g93-26-3/index.html
+Author: staresto-create ZZSH
+Title: 93 年學測克漏字第26題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 93 年學測 ／ 第26題
+93 年學測 克漏字 第26題
+字彙選義線索：句內答對率 45%
+答對率 45%：當年每 100 位考生，有 45 位答對。
+Research about learning styles has identified 26 differences.
+(A)cultural
+(B)racial
+(C)age
+(D)gender
+答案：(D) gender
+題目編號：G93_26_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+後文接著討論 boys and girls 在感官學習風格上的差異，所以這裡指的是「性別」差異，gender 符合；cultural（文化的）、racial（種族的）、age（年齡）都不合這個上下文脈絡。
+深入解析
+你可能會這樣想
+四個選項擺進去都成句：cultural differences（文化差異）、racial differences（種族差異）、age differences（年齡差異）、gender differences（性別差異）都是常見的組合，文法上一個也刷不掉。只讀空格所在的這一句，你會發現怎麼選都對，於是憑印象挑一個最眼熟的。答對率四成五，最容易出錯的就在這裡——問題不在難，在於停在原地找答案。
+怎麼判斷
+四個選項是四個不同的名詞或形容詞，文法上全都放得進去，可見這一格考的是語意，而語意的依據不在這一句裡，一定要往上下文找。往下讀一句就有了：For example, one study found various differences {27} boys and girls in sensory learning styles.（舉例來說，一項研究發現男孩與女孩在感官學習風格上有各種差異。）——下一句用 For example 開頭，代表它是上一句的例子，而這個例子舉的是 boys and girls，那麼上一句所說的差異當然就是性別的差異，填 gender。這一題的鑑別度高達 65，是本篇最高的一題，分開的就是有沒有先往下讀一句再回頭填。順帶記住這個習慣：看到 For example、In other words、That is 這類字開頭的句子，它一定在替前一句服務，前一句填不出來時就往下看。
+誘答選項
+cultural（文化的）、racial（種族的）：全篇從頭到尾沒有提到任何國家、族群或文化背景，沒有東西能支持這兩個選項。age（年齡的）：兩個名詞並排時，前面那個當形容詞用（跟 94 年第 22 題 →考的是同一個結構），所以 age differences（年齡差異）文法上完全正確，但下一句比的是男孩和女孩，不是不同年齡的人；這個選項唯一的破綻在上下文，不在文法。
+常考字詞與句型
+gender differences（性別差異）、gender equality（性別平等）、the gender gap（性別差距）、racial discrimination（種族歧視）、cultural background（文化背景）、learning style（學習風格）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Learning style means a person's natural, habitual, and preferred way(s) of learning. Research about learning styles has identified 26 differences.
+For example, one study found various differences 27 boys and girls in sensory learning styles. Girls were 28 more sensitive to sounds and more skillful at fine motor performance than boys. Boys, 29, showed an early visual superiority to girls. They were, however, clumsier than girls. They performed poorly at a detailed activity 30 arranging a row of beads. But boys excelled at other activities that required total body coordination.
+中譯：學習風格是指一個人天生、習慣性且偏好的學習方式。關於學習風格的研究已發現了性別上的差異。舉例來說，一項研究發現，男孩與女孩在感官學習風格上存在多種差異：女孩對聲音較為敏感，精細動作表現也較男孩靈巧；相較之下，男孩則較早展現出視覺上的優勢，但動作卻比女孩笨拙，在需要精細操作的活動（例如排列一串珠子）上表現較差。然而，男孩在需要全身協調的其他活動上則表現優異。
+📋 內容大意
+Learning style means how a person naturally prefers to learn.
+One study found that girls hear sounds better and handle small movements better than boys.
+Boys saw better at first but were clumsier. They did poorly at fine work like threading beads, yet well at whole-body activities.
+← 第25題回到93 年學測第27題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

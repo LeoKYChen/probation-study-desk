@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g93-27-3/index.html
+Author: staresto-create ZZSH
+Title: 93 年學測克漏字第27題詳解（介系詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 93 年學測 ／ 第27題
+93 年學測 克漏字 第27題
+介系詞線索：句內答對率 82%
+答對率 82%：當年每 100 位考生，有 82 位答對。
+For example, one study found various differences 27 boys and girls in sensory learning styles.
+(A)for
+(B)within
+(C)between
+(D)into
+答案：(C) between
+題目編號：G93_27_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】differences between 指「……之間的差異」；for／within／into 都不是 differences 常見的搭配介系詞。
+深入解析
+你可能會這樣想
+difference 的中文是「差異」，你大概不會特別去想它後面該接哪一個介系詞，反正「在……方面的差異」聽起來 for 或 within 好像也不是不行。這一格其實有一個一眼就看得到的訊號。
+怎麼判斷
+四個選項都是介系詞，可見這一格考的是 differences 跟誰搭配。訊號在空格後面：boys and girls 是用 and 連起來的「兩方」，而 between 的本義就是「在兩者之間」，difference between A and B（A 與 B 之間的差異）是最基本的組合，掛鉤直接用 What's the difference between A and B?（A 和 B 有什麼不同？）。看到 and 把兩個對象並排在空格後面，between 幾乎是自動的。順便把範圍分清楚：between 用在分得清楚的對象之間，兩者最常見，三者以上也可以（劍橋詞典例句 The money was divided equally between her three children.）；among 講的是「在一群之中」（among the three countries 在這三個國家之中）。
+誘答選項
+within（在……內部）：講的是一個範圍之內的情況（differences within a group 一個群體內部的差異），這裡要比的是男孩與女孩兩邊，不是某一群人的內部。for：differences 不搭 for，for 帶出的是對象或目的。into：go into、turn into 那一類「進入、轉變成」的動作才用 into，與差異無關。
+常考字詞與句型
+the difference between A and B（A 與 B 之間的差異）、tell the difference（分辨出差別）、make a difference（造成影響、帶來改變）、make no difference（沒有差別、無關緊要）、among the three（在三者之中）、a difference in style（風格上的差異）。其中 make a difference 這一組考過 3 個年度，97 年第 19 題 →、學測參考試卷第 27 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Learning style means a person's natural, habitual, and preferred way(s) of learning. Research about learning styles has identified 26 differences.
+For example, one study found various differences 27 boys and girls in sensory learning styles. Girls were 28 more sensitive to sounds and more skillful at fine motor performance than boys. Boys, 29, showed an early visual superiority to girls. They were, however, clumsier than girls. They performed poorly at a detailed activity 30 arranging a row of beads. But boys excelled at other activities that required total body coordination.
+中譯：學習風格是指一個人天生、習慣性且偏好的學習方式。關於學習風格的研究已發現了性別上的差異。舉例來說，一項研究發現，男孩與女孩在感官學習風格上存在多種差異：女孩對聲音較為敏感，精細動作表現也較男孩靈巧；相較之下，男孩則較早展現出視覺上的優勢，但動作卻比女孩笨拙，在需要精細操作的活動（例如排列一串珠子）上表現較差。然而，男孩在需要全身協調的其他活動上則表現優異。
+📋 內容大意
+Learning style means how a person naturally prefers to learn.
+One study found that girls hear sounds better and handle small movements better than boys.
+Boys saw better at first but were clumsier. They did poorly at fine work like threading beads, yet well at whole-body activities.
+← 第26題回到93 年學測第28題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

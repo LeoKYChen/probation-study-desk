@@ -1,0 +1,44 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g88-25-2/index.html
+Author: staresto-create ZZSH
+Title: 88 年學測克漏字第25題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 88 年學測 ／ 第25題
+88 年學測 克漏字 第25題
+慣用語／片語線索：跨句
+Therefore, they have 24 enemies than other people. 25 , they are probably the most loved of people.
+(A)In contrast
+(B)In particular
+(C)In fact
+(D)In other words
+答案：(C) In fact
+題目編號：G88_25_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+前一句說「他們的敵人比其他人少」，這句延續同一個論點並加強語氣，「事實上，他們可能是最受人喜愛的人」，In fact（事實上）符合這種承接、加強前述論點的語意；In particular（尤其是）通常用於「先講整體，再挑出其中特定一項細講」，但這裡前後句主詞相同（都是 good listeners），沒有整體對部分的關係，不適用。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+前一句說「他們的敵人比別人少」，這一句說「他們大概是最受人喜愛的」，兩句講的都是好事，讀起來很像同一件事換句話說，所以 In other words 特別誘人。但這兩句不是同一件事——後一句比前一句多說了一層。
+怎麼判斷
+四個選項都是轉折詞，可見這一格考的是前後兩句的關係。前一句是「敵人比別人少」（沒有那麼多人討厭他們），本句是「他們大概是最受人喜愛的」（不只是不被討厭，還很受歡迎）。從「比較少人討厭」到「最多人喜愛」，程度往上跳了一級，這是加碼不是重述，用 In fact（事實上，而且更進一步）。這一組判斷方式與 89 年第 29 題 →完全相同：那一題要分的是 that is（換句話說）與 for instance（舉個例子），本題要分的是 In other words（換句話說）與 In fact（更進一步）。共同要問的都是同一句話：後面這一句究竟是把前面重講一次，還是更進一步？
+誘答選項
+In other words（換句話說）：後面接的應該是同一件事的另一種表述，而「最受人喜愛」比「敵人較少」多說了一件事。In contrast（相較之下）：要把兩件相反的事並排比較，而本句與前一句同向。In particular（尤其是）：先講整體、再挑出其中特定的一項來細講，但前後兩句的主詞都是 good listeners，沒有從整體縮到特定的一項。
+常考字詞與句型
+in fact（事實上）、as a matter of fact（事實上）、in other words（換句話說）、in contrast（相較之下）、in particular（尤其是）、be loved by（受……喜愛）。其中 in contrast 這一組考過 4 個年度，93 年第 29 題 →、104 年第 21 題 →、106 年第 26 題 →都出現過；as a matter of fact 考過 3 個年度，98 年第 21 題 →、102 年第 17 題 →都出現過。
+線索範圍說明：In fact 強化前一句的說法
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Most people like to talk, but few people like to listen. 21 listening well is a rare talent that everyone should treasure. Because they hear more, good listeners 22 to know more and to be more sensitive to what is going on around them than other people. In addition, good listeners are inclined to accept or tolerate 23 to judge and criticize. Therefore, they have 24 enemies than other people. 25 , they are probably the most loved of people.
+However, there are 26 to that generality. For example, John Steinbeck is 27 to have been an excellent listener, yet he was hated by some of the people he wrote about. No doubt his ability to listen contributed 28 his capacity to write. 29 , the results of his listening did not make him popular.
+Thus, 30 on what a good listener does, he may become either popular or disliked in his lifetime.
+中譯：大多數人喜歡說話，卻很少人喜歡聆聽。然而，善於聆聽是一項稀有的才能，每個人都應該珍惜。因為他們聽得更多，善於聆聽的人比其他人更了解周遭發生的事，也更敏銳。此外，善於聆聽的人傾向於接受或容忍，而不是急著評斷和批評。因此，他們的敵人比其他人少，事實上，他們可能是最受人喜愛的人。然而，這個通則也有例外。舉例來說，約翰·史坦貝克據說是一位出色的聆聽者，然而卻被他筆下描寫的一些人所憎恨。他的聆聽能力無疑對他的寫作能力有所貢獻，然而，他聆聽所得到的結果並沒有讓他受歡迎。因此，一個善於聆聽的人，這一生可能因此變得受歡迎，也可能因此招人厭惡，端看他怎麼運用所聽到的內容。
+📋 內容大意
+Talking is common, listening is rare, and good listeners notice more of what happens around them.
+They accept and tolerate more readily, judge and criticize less, and so they make few enemies and win wide affection.
+John Steinbeck is a counter-example: his gift as a listener fed his writing, but some people he wrote about hated him.
+← 第24題回到88 年學測第26題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

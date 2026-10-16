@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g96-25-2/index.html
+Author: staresto-create ZZSH
+Title: 96 年學測克漏字第25題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 96 年學測 ／ 第25題
+96 年學測 克漏字 第25題
+字彙選義線索：句內答對率 53%
+答對率 53%：當年每 100 位考生，有 53 位答對。
+A movement of 25 a few millimeters (mm) of the earth's crust is a sign of possible earthquakes.
+(A)yet
+(B)even
+(C)rather
+(D)indeed
+答案：(B) even
+題目編號：G96_25_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「甚至只是幾毫米的移動，都是可能發生地震的徵兆」，even（甚至）加強語氣，強調小幅度移動的重要性；yet（然而）、rather（相當）、indeed（的確）都不合。
+深入解析
+你可能會這樣想
+四個都是很常見的副詞，中文一翻好像都能塞。indeed 最容易被放行，因為「的確」是個萬用詞，讀過去不太會卡；rather 也很誘人，因為它和 quite 一樣都能表「相當」，你可能會下意識把 quite a few（相當多）套到它身上，覺得 rather a few 也是「相當多」。落差有兩層：第一，rather a few 不是標準說法；第二，本句要講的是「量很小」，不是「量很多」，方向剛好相反。這題鑑別度 52，分開的就是有沒有讀出「小量卻有大意義」這個語氣 —— 讀出來的人直接鎖定 even，沒讀出來的人只能比較四個中文翻譯。
+怎麼判斷
+先把本句的邏輯量一遍：前面是 a movement of ___ a few millimeters（地殼只移動幾公釐，量很小），後面是 is a sign of possible earthquakes（是可能地震的徵兆，意義很大）。「小到這種程度，竟然都算數」，這種「連……都」的語氣，英文用 even。劍橋 English Grammar Today 把 even 歸在聚焦副詞（focusing adverb）底下，功能是標出「超出你預期」的那一項，位置就擺在它要強調的那一項前面 —— 這裡要強調的是 a few millimeters，所以 even 就緊貼在它前面，位置完全吻合。還原驗算：把 even 讀成「連……都」再走一次 ——「地殼連幾公釐的移動都是可能地震的徵兆」，通。篇內對照更直接：同一段的 this cannot be treated as a trivial finding in science（這在科學上不能被當成無關緊要的發現），trivial 就是「微不足道的」，作者一路在鋪「量小、但別小看」，even 正好接在這條線上。
+誘答選項
+yet（然而；還沒）：當副詞表示「尚未」時擺在否定句或疑問句的句尾，像 He hasn't arrived yet.；表示轉折時放在兩個子句之間，不會插進 of 和 a few 的中間。rather（相當；寧可）：修飾形容詞或副詞（rather cold 相當冷），或者用在 would rather V（寧願做某事），它的工作不是標「連……都」。indeed（的確、確實）：用來加強已經說出口的話，多半擺句尾或句首，像 It was cold indeed.；它加強的是已經說出口的那句斷言，不是「小到超乎預期」的量。
+常考字詞與句型
+even if（即使、就算）、even though（雖然、儘管）、even so（即使如此）、a sign of（……的徵兆）、would rather V（寧願做某事）、not yet（尚未）、quite a few（相當多）。其中 even though 這一組考過 6 個年度，89 年第 23 題、95 年第 25 題、103 年第 30 題、106 年第 19 題、107 年第 21 題都出現過；even if 考過 4 個年度，89 年第 23 題、95 年第 25 題、103 年第 30 題都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+India is shrinking. A new analysis of satellite-based data has given precisely the rate 21 which the country is losing size as it pushes northward against the Himalayas. According to the analysis, the 22 between India's southern and northern tips shrinks by 2 cm every year. As India's size decreases, the thickness of the Himalayas increases. 23 the shrinking continues, India will disappear in 200 million years. There would only be a vast mountain range along the southern coast of China.
+The Indian plate's 24 movement is not new. However, this cannot be treated as a trivial finding in science. A movement of 25 a few millimeters (mm) of the earth's crust is a sign of possible earthquakes. Such dangers are now obvious in India, where the movement of the plate continues.
+中譯：印度正在縮小。一項根據衛星資料的新分析，精確計算出印度在向北推擠喜馬拉雅山脈的過程中縮小的速度。根據這項分析，印度南北兩端之間的距離每年縮短 2 公分。隨著印度面積縮小，喜馬拉雅山的厚度則在增加。如果這種縮小持續下去，印度將在兩億年後消失，屆時只會剩下一片沿著中國南部海岸的廣大山脈。印度板塊的北移現象並不是新鮮事。然而，這在科學上不能被視為無關緊要的發現。地殼只要移動幾公釐，就可能是地震即將發生的徵兆。這樣的危險在印度已相當明顯，因為該板塊仍持續在移動。
+📋 內容大意
+Satellite data now shows precisely how quickly India is losing size as the plate pushes north into the Himalayas.
+The gap between the country's northern and southern tips closes by two centimeters a year, and the mountains grow thicker. India could vanish in 200 million years.
+The plate's motion is not new. But a shift of a few millimeters in the crust signals possible earthquakes, so the finding matters.
+← 第24題回到96 年學測第26題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

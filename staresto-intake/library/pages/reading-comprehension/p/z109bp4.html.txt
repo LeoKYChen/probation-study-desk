@@ -1,0 +1,157 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/z109bp4.html
+Author: staresto-create ZZSH
+Title: 109 指考補考閱讀測驗：匯率的歷史演變與體系｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 109 指考補考
+109 指考補考閱讀測驗：匯率的歷史演變與體系補考
+The Historical Evolution and Systems of Exchange Rates
+指考 109年補考第 48–51 題4 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段In finance, an exchange rate is the rate at which one country’s currency is exchanged for the currency of another. The rate is set according to the respective values of the currencies to be exchanged. Before World War I, most currencies were evaluated by the Gold Standard. That is, paper currency issued by a government represented a real amount of gold held by that government. For example, in the 1930s, the British government owned about 8 times as much gold as the U.S. government. Therefore, 1 ounce of gold was worth 4.24 GBP (United Kingdom pound sterling) or 35 USD (U.S. dollars). The difference in the price of gold became the exchange rate for the two currencies: 1GBP was worth 8.25 USD.
+第 2 段The Gold Standard started to break down during the Second World War, when European powers printed more money than they had in gold reserves in order to fund military projects. After World War II, the Bretton Woods System was established. The U.S. dollar was chosen as the international reserve currency for trading. Every country knew how much gold a USD was worth, and thus they based the value of their currencies on the USD. All countries were expected to maintain a fixed exchange rate, but were permitted to change it in extraordinary times, such as a recession or inflation.
+第 3 段Unfortunately, this system could not keep pace with the fast-changing global economy. As the U.S. increased its military spending, foreign aid, and international investment in the 1960s, it no longer held gold reserves necessary to cover the volume of USD circulation around the world. Other major currencies thus became more valuable and stable compared to the USD, and the Bretton Woods System was finally abolished in 1971.
+第 4 段In 1976, the Jamaica Agreement formalized the floating exchange rate system that continues to this day. The value of a country’s currency may vary according to the supply and demand of the foreign exchange market. Countries around the world can also allow their central banks to determine their own exchange rate.
+題目
+48.According to the passage, which of the following is true about the Gold Standard?
+(A)It showed the importance of gold for currency exchange.
+(B)It reflected the dominance of the U.S. economy in the world.
+(C)It demonstrated how rich countries manipulated exchange rates.
+(D)It decided that the GBP was worth less than the USD in the 1930s.
+49.What is the second paragraph mainly about?
+(A)The cause of economic recession.
+(B)Changes in currency rates and European powers.
+(C)World War II and the drop in gold prices.
+(D)The rise of a new currency exchange system.
+50.What caused the Bretton Woods System to fail?
+(A)Major world powers fell into economic depression.
+(B)The U.S. did not have enough gold to cover the amount of U.S. dollars.
+(C)The system was too complicated for the practice of currency exchange.
+(D)European countries printed more paper money than they had in gold reserves.
+51.According to the passage, which of the following is true about the Jamaica Agreement?
+(A)Individual countries may not decide their own exchange rate.
+(B)In a recession, all countries need to follow a fixed exchange rate.
+(C)Gold is again used as the standard of the currency exchange rate.
+(D)Supply and demand in the currency market determines the exchange rate.
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+48
+(A)
+—
+—
+49
+(D)
+—
+—
+50
+(B)
+—
+—
+51
+(D)
+—
+—
+答對率：大考中心未公布本卷逐題數據
+每一題的依據句
+第 48 題 細節題（何者為是） Supporting details
+第 1 段paper currency issued by a government represented a real amount of gold held by that government.
+第 1 段The difference in the price of gold became the exchange rate for the two currencies
+第 1 段說在金本位之下，政府發行的紙幣代表政府實際持有的黃金，兩國黃金價格的差異，就成了兩種貨幣的匯率。匯率是由黃金決定的，可見黃金對貨幣兌換非常重要，所以是 (A)。(D) 照抄 1930s，原文算出 1 英鎊值 8.25 美元，英鎊比美元值錢，不是比較不值錢；(B) 照抄 U.S.，原文說英國政府擁有的黃金大約是美國的 8 倍，看不出美國經濟獨霸世界；(C) 原文說匯率依黃金決定，沒有提到富國操縱匯率。
+第 49 題 主旨題 Main idea
+第 2 段After World War II, the Bretton Woods System was established.
+第 2 段they based the value of their currencies on the USD.
+原文 → 正確選項
+was established → The rise
+第 2 段第一句說金本位在二戰期間開始瓦解，接著說二戰以後建立了布列敦森林體系（the Bretton Woods System was established），各國以美元訂定本國貨幣的價值，維持固定匯率。這一段的重點是新的貨幣兌換體系出現，所以是 (D)。(B) 照抄 European powers，歐洲列強印鈔票只是金本位瓦解的原因；(A) 照抄 recession，經濟衰退只是可以調整匯率的特殊時期的例子；(C) 照抄 World War II，原文沒有提到金價下跌。
+第 50 題 細節題 Supporting details
+第 3 段it no longer held gold reserves necessary to cover the volume of USD circulation around the world.
+原文 → 正確選項
+no longer held gold reserves necessary to cover → did not have enough gold to cover
+第 3 段說 1960 年代美國持有的黃金儲備，已經不足以支應（no longer held gold reserves necessary to cover）全世界流通的美元，其他貨幣因此比美元更穩定，布列敦森林體系終於廢除。選項換成 did not have enough gold to cover，所以是 (B)。(D) 照抄第 2 段的 than they had in gold reserves，歐洲列強印出超過黃金儲備的鈔票，是二戰期間金本位瓦解的原因，不是布列敦森林體系失敗的原因；(A) 原文沒有說世界強權陷入經濟蕭條；(C) 原文說的是這個體系跟不上快速變化的全球經濟，不是體系太複雜。
+第 51 題 細節題（何者為是） Supporting details
+第 4 段may vary according to the supply and demand of the foreign exchange market.
+原文 → 正確選項
+supply and demand of the foreign exchange market → Supply and demand in the currency market
+第 4 段說牙買加協定確立了浮動匯率制度，一國貨幣的價值隨外匯市場的供需（supply and demand of the foreign exchange market）變動，選項換成 Supply and demand in the currency market，所以是 (D)。(A) 照抄 their own exchange rate，原文說各國可以讓中央銀行決定自己的匯率，選項加上 not，意思相反；(B) 照抄第 2 段的 fixed exchange rate，固定匯率是布列敦森林體系的做法；(C) 照抄第 1 段的 Gold，金本位在二戰期間就開始瓦解，牙買加協定沒有恢復金本位。
+逐段中譯
+第 1 段在金融上，匯率是一國貨幣兌換另一國貨幣的比率。匯率依照要兌換的兩種貨幣各自的價值來決定。第一次世界大戰以前，大多數貨幣的價值都以金本位評定。也就是說，政府發行的紙幣，代表政府實際持有的一定數量的黃金。例如在 1930 年代，英國政府擁有的黃金大約是美國政府的 8 倍。因此，1 盎司黃金值 4.24 英鎊（GBP），或 35 美元（USD）。黃金價格的差異，就成了這兩種貨幣的匯率：1 英鎊值 8.25 美元。
+第 2 段第二次世界大戰期間，歐洲列強為了支應軍事計畫，印出超過黃金儲備的鈔票，金本位開始瓦解。二戰以後，布列敦森林體系建立。美元獲選為國際貿易的儲備貨幣。每個國家都知道一美元值多少黃金，因此各國都以美元作為訂定本國貨幣價值的基準。所有國家原則上都要維持固定匯率，但遇到經濟衰退或通貨膨脹等特殊時期，可以調整匯率。
+第 3 段可惜的是，這個體系跟不上快速變化的全球經濟。1960 年代，美國增加軍事支出、對外援助和國際投資，持有的黃金儲備已經不足以支應全世界流通的美元數量。因此，其他主要貨幣和美元相比，變得更有價值、也更穩定，布列敦森林體系終於在 1971 年廢除。
+第 4 段1976 年，牙買加協定正式確立了沿用至今的浮動匯率制度。一國貨幣的價值，可能隨外匯市場的供需而變動。世界各國也可以讓中央銀行決定自己的匯率。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。沒有列出的段落，就是沒有主旨句，請對照「這一篇的文章結構」裡的綱要，找出那一段的重點。這一篇沒有一句話直接點出全文中心思想，要讀完各段，自己歸納。
+第 2 段After World War II, the Bretton Woods System was established.
+第 3 段Unfortunately, this system could not keep pace with the fast-changing global economy.
+第 4 段In 1976, the Jamaica Agreement formalized the floating exchange rate system that continues to this day.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體說明文 Expository
+組織方式時序發展 Chronological這一類怎麼辨識 →
+關鍵轉折詞Before World War IThat isFor exampleThereforeAfter World War IIUnfortunatelythusIn 1976
+綱要
+匯率是一國貨幣兌換另一國貨幣的比率，依兩種貨幣各自的價值決定。
+(Before World War I) 第一次世界大戰前，多數貨幣採金本位，(That is) 也就是紙幣代表政府持有的黃金；(For example) 例如一盎司黃金值 4.24 英鎊或 35 美元，(Therefore) 所以一英鎊值 8.25 美元。
+二戰期間歐洲列強印出超過黃金儲備的鈔票，金本位開始瓦解；(After World War II) 二戰後建立布列敦森林體系，各國依美元訂定幣值，維持固定匯率。
+(Unfortunately) 可惜這個體系跟不上全球經濟：1960 年代美國的黃金儲備不足以支應全球流通的美元，其他主要貨幣 (thus) 因此比美元更穩定，布列敦森林體系終於在 1971 年廢除。
+(In 1976) 1976 年牙買加協定確立了沿用至今的浮動匯率制度，一國貨幣的價值隨外匯市場的供需變動，各國也可以讓中央銀行決定自己的匯率。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 26 個、參考字彙 6 個、字詞搭配 11 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+finance[ˈfaɪnæns]n.金融四級第 1 段詞彙題考過 1 次：96 學測第 3 題 financed（誘答）
+exchange[ɪksˈʧeɪnʤ]n.兌換（exchange rate 匯率）三級第 1 段詞彙題考過 1 次：98 學測第 8 題 exchanging（答案）
+evaluate[ɪˈvæljuˌeɪt]v.評定、評估四級第 1 段詞彙題考過 1 次：101 指考第 2 題 evaluates（誘答）
+issue[ˈɪʃu]v.發行四級第 1 段詞彙題考過 3 次：99 指考第 8 題 issues（答案）、85 聯考第 2 題（誘答）、83 推薦甄選第 9 題（誘答）
+represent[ˌrɛprəˈzɛnt]v.代表三級第 1 段詞彙題考過 2 次：92 指考第 9 題 representing（答案）、86 推薦甄選第 17 題 represents（答案）
+reserve[rɪˈzɝv]n.儲備（gold reserves 黃金儲備）三級第 2 段詞彙題考過 5 次：107 學測第 9 題 reserved（誘答）、106 學測第 2 題（誘答）、91 學測補考第 5 題（誘答）、83 推薦甄選第 8 題 reserved（答案）、83 聯考第 5 題（誘答）
+permit[pɚˈmɪt]v.允許、准許三級第 2 段詞彙題考過 1 次：98 學測第 5 題（誘答）
+extraordinary[ɪkˈstrɔrdəˌnɛri]adj.非常的、特殊的五級第 2 段詞彙題考過 1 次：97 指考第 5 題（答案）
+recession[rɪˈsɛʃən]n.經濟衰退五級第 2 段詞彙題考過 1 次：92 指考第 10 題（答案）
+inflation[ɪnˈfleɪʃən]n.通貨膨脹四級第 2 段詞彙題考過 1 次：99 學測第 4 題（答案）
+unfortunately （詞彙表：fortunate）[ənˈfɔrʧənətli]adv.可惜、不幸四級第 3 段詞彙題考過 3 次：96 指考第 7 題 fortunately（誘答）、91 學測第 7 題（誘答）、86 聯考第 1 題 fortunately（答案）
+pace[peɪs]n.速度、步調（keep pace with 跟上）四級第 3 段詞彙題考過 1 次：87 推薦甄選第 8 題（答案）
+investment[ɪnˈvɛstmənt]n.投資四級第 3 段詞彙題考過 1 次：87 聯考第 3 題 investing（答案）
+volume[ˈvɑljum]n.數量、總量三級第 3 段詞彙題考過 1 次：103 學測第 11 題（誘答）
+circulation[ˌsɝkjəˈleɪʃən]n.流通四級第 3 段詞彙題考過 4 次：113 學測第 4 題（誘答）、103 學測第 14 題（誘答）、96 學測第 5 題（誘答）、94 指考第 5 題（答案）
+stable[ˈsteɪbəl]adj.穩定的三級第 3 段詞彙題考過 1 次：105 指考第 4 題 stably（誘答）
+abolish[əˈbɑlɪʃ]v.廢除五級第 3 段詞彙題考過 2 次：102 指考第 3 題（誘答）、98 指考第 9 題 abolished（誘答）
+floating （詞彙表：float）[ˈfloʊtɪŋ]adj.浮動的（floating exchange rate 浮動匯率）三級第 4 段詞彙題考過 1 次：113 學測第 2 題 floating（誘答）
+demand[dɪˈmænd]n.需求（supply and demand 供需）四級第 4 段詞彙題考過 5 次：109 指考補考第 1 題 demanding（誘答）、107 學測第 7 題 demanding（答案）、102 學測第 4 題（誘答）、99 指考第 2 題（誘答）、98 指考第 7 題 demanding（答案）
+determine[dɪˈtɝmən]v.決定三級第 4 段詞彙題考過 1 次：86 推薦甄選第 4 題 determined（誘答）
+reflect[rɪˈflɛkt]v.反映四級第 48 題詞彙題考過 1 次：81 聯考第 8 題（答案）
+demonstrate[ˈdɛmənˌstreɪt]v.顯示、說明四級第 48 題詞彙題考過 2 次：105 學測第 7 題 demonstrates（答案）、94 學測第 10 題 demonstrated（誘答）
+manipulate[məˈnɪpjəˌleɪt]v.操縱、操控五級第 48 題詞彙題考過 2 次：102 指考第 1 題（誘答）、93 指考第 4 題（誘答）
+economic[ˌɛkəˈnɑmɪk]adj.經濟的四級第 49 題詞彙題考過 1 次：101 學測第 13 題（誘答）
+depression[dɪˈprɛʃən]n.蕭條（economic depression 經濟蕭條）四級第 50 題詞彙題考過 2 次：108 指考第 7 題（誘答）、84 推薦甄選第 4 題（誘答）
+complicated （詞彙表：complicate）[ˈkɑmpləˌkeɪtɪd]adj.複雜的四級第 50 題詞彙題考過 3 次：97 指考第 8 題 complicated（誘答）、95 指考第 7 題（誘答）、83 推薦甄選第 8 題 complicated（誘答）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+currency[ˈkɝənsi]n.貨幣五級第 1 段
+respective[rɪˈspɛktɪv]adj.各自的六級第 1 段
+ounce[aʊns]n.盎司（重量單位，約 28 公克）六級第 1 段
+sterling[ˈstɝlɪŋ]n.英鎊（pound sterling）表外第 1 段
+formalize[ˈfɔrməˌlaɪz]v.正式確立表外第 4 段
+dominance[ˈdɑmənəns]n.主導地位、優勢表外第 48 題
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+exchange A for B把 A 換成 B第 1 段原文：one country’s currency is exchanged for the currency of another
+數字 + times as much + N + as是……的幾倍第 1 段原文：about 8 times as much gold as the U.S. government
+be worth + 金額值……第 1 段原文：1 ounce of gold was worth 4.24 GBP
+break down瓦解第 2 段原文：started to break down
+base A on B以 B 作為 A 的基礎第 2 段原文：they based the value of their currencies on the USD
+be expected to + V應該要……第 2 段原文：All countries were expected to maintain a fixed exchange rate
+keep pace with + N跟上……第 3 段原文：could not keep pace with the fast-changing global economy
+compared to + N和……相比第 3 段原文：compared to the USD
+to this day直到今天第 4 段原文：continues to this day
+vary according to + N隨著……而變動第 4 段原文：may vary according to the supply and demand
+supply and demand供需第 4 段
+← 上一篇篇目一覽
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

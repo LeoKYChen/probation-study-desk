@@ -1,0 +1,50 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g113-14-1/index.html
+Author: staresto-create ZZSH
+Title: 113 年學測克漏字第14題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 113 年學測 ／ 第14題
+113 年學測 克漏字 第14題
+字彙選義線索：句內答對率 25%
+答對率 25%：當年每 100 位考生，有 25 位答對。
+They may also pretend to be 14 customers, arguing with a salesperson without a good reason.
+(A)difficult
+(B)potential
+(C)constant
+(D)anonymous
+答案：(A) difficult
+題目編號：G113_14_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+difficult 形容人時是「難相處的、難搞的」，a difficult customer 即「奧客」，與後面的分詞構句 arguing with a salesperson without a good reason 完全吻合；potential（潛在的）、constant（持續不斷的）、anonymous（匿名的）都不合。
+重點：difficult 形容事情是「困難的」，形容人則是「不友善、難對付的」，如 a difficult person to deal with（很難應付的人）、a difficult customer（難搞的顧客）。
+延伸閱讀：difficult 形容人，是「難相處、難對付的」 ↗
+深入解析
+你可能會這樣想
+difficult 你只記得「困難的」，用來形容事情（a difficult question）；形容「人」時它會轉彎，變成「難相處的、難搞的」——a difficult customer 就是「奧客」，a difficult child 是「難帶的孩子」。
+怎麼判斷
+答案寫在逗號後面。空格後緊接 arguing with a salesperson without a good reason（無緣無故就跟店員起爭執），這個分詞構句正是在說明前面那種顧客長什麼樣。看到空格後接逗號加分詞或同位語，先讀那一段，答案常常就藏在裡面。再確認一次方向：本句說神祕客有時會「假裝成」某一種顧客，而假裝的目的是測試店家的應對，所以那個形容詞必須描述一種會給店員出難題的顧客——difficult 正是這個意思。驗算法：把 difficult 換成「難搞的」唸一遍，接回後面的分詞構句，前後說的是同一件事，方向就對了。同類會轉彎的形容詞一起記：easy（容易的／隨和的，an easy person to work with）、hard（困難的／嚴厲的，be hard on sb）、tough（艱難的／強悍的）、mean（吝嗇的、刻薄的）。看到熟悉的形容詞去修飾人，先想它有沒有第二個意思。一句記完：Luckily, Adam was not a difficult person; when I admitted losing his camera, he only asked whether it could still be found.（幸好 Adam 不是難相處的人；我坦承弄丟了他的相機之後，他只問還找不找得到。）〔情境取材自 97 學測作文題：借來的貴重物品遺失〕
+誘答選項
+potential 是「潛在的」，a potential customer 指還沒消費、可能會來的人，但神祕客是進到店裡執行任務的，而且潛在顧客不會無故與店員爭執。constant 是「持續不斷的」，形容頻率或狀態（constant noise），用來修飾顧客會變成「不斷出現的顧客」，那是 a regular customer（常客）的意思，與後面的爭執接不上。anonymous 是「匿名的」，指不具名，神祕客確實不表明身分，但這一句講的是他假裝成哪一種顧客、做出什麼行為，不是講他具不具名；填進去後面那段爭執就沒有著落。
+常考字詞與句型
+a difficult customer（難搞的顧客）、a difficult child（難帶的孩子）、a regular customer（常客）、a potential customer（潛在顧客）、mystery shopper（神祕客）、pretend to V（假裝做…）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Mystery shoppers are paid consumers who are hired to shop in stores and collect data. They are sent to a wide variety of service-based businesses, including stores, restaurants, and banks—potentially anywhere customers are served. Sometimes referred to as secret shoppers, mystery shoppers 11 regular customers to purchase items, eat in restaurants, make inquiries, or return items.
+They grade and report on the quality of products, customer service, and environment of the stores 12 they are assigned. When evaluating a business, mystery shoppers have to follow certain standard procedures to avoid 13 . They are often given a checklist that provides directions on what to observe or look out for to ensure consistency.
+Sometimes these shoppers collect data about their "normal" observations, such as cleanliness of the store or timeliness of the service. They may also pretend to be 14 customers, arguing with a salesperson without a good reason.
+With the data they collect, mystery shoppers can identify areas for 15 and thereby help enhance the quality of products and services. In this way, these secret shoppers may help a business gain a competitive edge.
+中譯：神祕客是受雇於店家、以消費者身分進行消費並蒐集資料的付費人員。他們被派往各式各樣提供服務的商家，包括零售店、餐廳和銀行——幾乎任何有顧客服務的地方都可能出現他們的身影。神祕客有時也被稱為秘密購物者，他們會假扮成一般顧客購買商品、在餐廳用餐、詢問問題，或辦理退貨。他們會針對所被指派商家的產品品質、顧客服務和環境進行評分並提出報告。在評鑑一間商家時，神祕客必須遵循特定的標準流程，以避免出現主觀偏差。他們通常會拿到一份檢查清單，上面列出該觀察或留意的事項，以確保評鑑結果的一致性。有時，這些神祕客會蒐集關於「日常」觀察的資料，例如商店的整潔程度或服務的即時性；他們有時也會假扮成難搞的顧客，故意無理取鬧地與店員爭執。透過蒐集到的這些資料，神祕客能找出需要改進的地方，進而協助提升產品與服務的品質。透過這樣的方式，這些秘密顧客能幫助商家在市場競爭中取得優勢。
+📋 內容大意
+Mystery shoppers, also called secret shoppers, are paid consumers. Businesses hire them to visit shops, restaurants and banks and gather data.
+They act like ordinary customers, buying items, eating meals, asking questions or returning goods. Then they grade the products, the service and the store itself.
+A checklist keeps their reports consistent and fair. They note routine things like cleanliness and service speed, and their data shows a business what to fix.
+← 第13題回到113 年學測第15題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

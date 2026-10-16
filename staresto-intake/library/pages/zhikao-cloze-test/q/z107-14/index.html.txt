@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z107-14/index.html
+Author: staresto-create ZZSH
+Title: 107 年指考克漏字第14題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 107 年指考 ／ 第14題
+107 年指考 克漏字 第14題
+字彙選義線索：句內答對率 63%
+答對率 63%：當年每 100 位考生，有 63 位答對。
+...ran in American newspapers for 28 years before it was eventually 14 into books, films, and musical comedies.
+(A)adapted
+(B)admitted
+(C)advanced
+(D)advised
+答案：(A) adapted
+題目編號：Z107_14（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+adapted into books, films, and musical comedies（被改編成書籍、電影和音樂喜劇）表示這部漫畫最終被改編成其他形式的作品；admitted／advanced／advised 都不符合此處語意。
+深入解析
+你可能會這樣想
+adapt 這個字，你的印象大概只有「適應」（adapt to a new environment），所以看到 adapted 會覺得它跟漫畫沒關係。四個選項 adapted、admitted、advanced、advised 都是 ad- 開頭的過去分詞，長得很像，形態上一個也刷不掉。
+怎麼判斷
+四個選項都是過去分詞、都接在 was 後面成為被動，可見這一格考的是字義，而定案的線索是空格後面的 into books, films, and musical comedies。into 表示「變成另一種形式」，四個動詞裡只有 adapt 走這個搭配：adapt A into B 是「把 A 改編成 B」，被動就是 be adapted into B。整句還原：這部漫畫在美國報紙上連載二十八年，最後被改編成書籍、電影與音樂喜劇。順便把 adapt 與 adopt 分清楚，這兩個字只差一個字母卻常混淆在一起：adapt 是「使適應、改編」，adopt 是「採用、領養」。鑑別度 55，分的是有沒有拿 into 當線索，而不是只憑對這四個字的模糊印象挑一個。
+誘答選項
+admitted 的 admit 是「承認」或「准許進入」（admit sb into a school），把一部漫畫「承認成書籍與電影」語意不成立。advanced 的 advance 是「推進、提前」，advance into 是往前推進到某處，例如軍隊推進到某地，漫畫不會推進成電影。advised 的 advise 走的是 advise sb to V 與 advise sb on sth，根本不接 into。
+常考字詞與句型
+adapt A into B（把 A 改編成 B）、be adapted from（改編自）、adapt to（適應）、adopt（採用、領養，與 adapt 只差一個字母）、run in newspapers（在報紙上連載）、be published in（刊登於）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：107學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+"Keeping up with the Joneses" is a catchphrase in many parts of the English-speaking world. Just like "keeping up appearances," it refers to the 11 to one's neighbors as a standard for social status or the accumulation of material goods. Generally speaking, the more luxuries people have, the higher their value or social status—or 12 they believe. To fail to "keep up with the Joneses" is thus perceived as revealing socio-economic inferiority or, as the Chinese would put it, a great loss of face.
+The 13 was popularized when a comic strip of the same name was created by cartoonist Arthur R. "Pop" Momand. The strip was first published in 1916 in the New York World, and ran in American newspapers for 28 years before it was eventually 14 into books, films, and musical comedies. The "Joneses" of the title were rich neighbors of the strip's main characters and, interestingly, they were merely 15 but never actually seen in person in the comic strip.
+中譯：「與瓊斯家看齊」（Keeping up with the Joneses）是英語世界許多地區常見的慣用語，就像「維持門面」一樣，指的是將自己與鄰居比較，作為衡量社會地位或物質累積程度的標準。一般而言，一個人擁有的奢侈品越多，其身價或社會地位便越高——至少人們是這麼認為的。因此，若無法「與瓊斯家看齊」，便會被視為透露出社經地位的低下，或者用中文的說法，就是「很沒面子」。
+這個說法因漫畫家阿瑟．「老爹」．莫曼德（Arthur R. "Pop" Momand）創作的同名連環漫畫而廣為流行。這部漫畫於 1916 年首次刊登在《紐約世界報》，連載長達 28 年，之後陸續被改編成書籍、電影與音樂喜劇。標題中的「瓊斯家」是漫畫主角的富有鄰居，有趣的是，他們在漫畫中始終只被人談論，卻從未真正露面。
+📋 內容大意
+"Keeping up with the Joneses" means measuring oneself against one's neighbors; falling behind reads as social and economic failure.
+The saying spread from a 1916 comic strip that ran for 28 years, whose Joneses were talked about but never shown.
+← 第13題回到107 年指考第15題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

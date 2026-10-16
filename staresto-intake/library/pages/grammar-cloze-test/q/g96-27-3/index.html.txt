@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g96-27-3/index.html
+Author: staresto-create ZZSH
+Title: 96 年學測克漏字第27題詳解（分詞／動狀詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 96 年學測 ／ 第27題
+96 年學測 克漏字 第27題
+分詞／動狀詞線索：句內答對率 51%
+答對率 51%：當年每 100 位考生，有 51 位答對。
+Although located close to the equator, Rwanda's “thousand hills,” 27 from 1,500 m to 2,500 m in height, ensure that the temperature is pleasant all year around.
+(A)differing
+(B)wandering
+(C)ranging
+(D)climbing
+答案：(C) ranging
+題目編號：G96_27_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】ranging from...to... 固定分詞片語「範圍從……到……」；differing（不搭配 from...to...這個固定範圍表達）、wandering（漫遊）、climbing（攀爬）都不合。
+深入解析
+你可能會這樣想
+這題答對率只有五成一。climbing 是最容易選的一個，因為整句都在講山，climb 又剛好是「攀登」，「從 1,500 公尺爬升到 2,500 公尺」中文順得不得了。落差在於分詞的意義主詞是誰：這裡被形容的是 Rwanda's thousand hills（那一千座山丘本身），山丘不會自己往上爬。而且句子要說的是「這些山丘的高度分布在 1,500 到 2,500 公尺之間」—— 同一時間、各座山各有各的高度，不是同一座山一路往上升。這題鑑別度 56，分開的就是有沒有把 from...to... 當成一整組線索去找搭配的動詞，還是只把 from 讀成一般的「從……」。
+怎麼判斷
+兩個逗號夾住的 ___ from 1,500 m to 2,500 m in height 是插進來補充說明前面名詞的分詞片語，第一步永遠是還原成完整子句：Rwanda's thousand hills range from 1,500 m to 2,500 m in height.（盧安達的千座山丘高度從 1,500 公尺到 2,500 公尺不等。）主詞和動詞搭不搭，一還原就看得出來。第二步看 from...to... 這一組：range 的詞典詞條就是 range from A to B（在 A 到 B 之間變動，劍橋詞典 range 詞條），它給的是一組數值的上下限，正好搭上句尾的 in height（在高度這個項目上）。這裡也可以順手複習 from X to Y 的平行原則 ——X 和 Y 必須是同性質的東西，本題兩邊都是高度數值，對得整整齊齊。同一份考卷的第 18 題考 including，和本題一樣是「-ing 形態的字，後面接什麼是有規矩的」：including 後面直接接名詞，ranging 後面一定接 from...to...，兩題可以一起記。
+誘答選項
+differing（不同的）：differ 的搭配是 differ from（與……不同）或 differ in（在某方面不同），沒有 differ from A to B 這種表範圍的用法。如果真要說「高度各有不同」，英文會寫 differing in height，不會拉出 from...to...。看到 from 後面接 to，就要去找能配成一整組的動詞，這個方法和片語題先檢查介系詞是同一個道理。wandering（漫遊、閒晃）：wander 的主詞要能自己移動，像 wander around the town（在鎮上閒晃）；山丘不會漫遊。climbing（攀爬；上升）：climb 確實可以表示數值上升，像 The plane climbed from 5,000 to 30,000 feet.（飛機從 5,000 英尺爬升到 30,000 英尺。）所以它錯不在片語不通，而在意義主詞不對 —— 飛機是真的在升高，一千座山丘不是。
+常考字詞與句型
+range from A to B（範圍從 A 到 B 不等）、a wide range of（各式各樣的）、differ from（與……不同）、wander around（四處閒晃）、in height（在高度上）、all year around（一年到頭）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Whenever I set foot on the soil of Rwanda, a country in east-central Africa, I feel as if I have entered paradise: green hills, red earth, sparkling rivers and mountain lakes. Herds of goats and cows 26 enormous horns graze the lush green fields. Although located close to the equator, Rwanda's "thousand hills," 27 from 1,500 m to 2,500 m in height, ensure that the temperature is pleasant all year around. And being a tiny country, everything in Rwanda is 28 in a few hours and the interesting spots can be explored comfortably in a couple of weeks.
+But 29, Rwanda is a symbol of the triumph of the human spirit over evil. Though it was once known to the world for the 1994 tribal conflict that resulted in about one million deaths, Rwanda has 30 the mass killing. Now it is healing and prospering and greets visitors with open arms.
+中譯：每當我踏上盧安達——這個位於非洲中東部的國家——的土地時，我都感覺自己彷彿進入了天堂：翠綠的山丘、紅色的泥土、閃閃發光的河流與高山湖泊。成群長著巨大犄角的山羊和牛，在青翠的草地上吃草。雖然盧安達地處赤道附近，但它的「千丘之國」地形——海拔從 1500 公尺到 2500 公尺不等——確保了全年氣候宜人。身為一個小國，盧安達的景點在短短幾小時內就能走遍，境內有趣的地方也能在一兩週內從容探索完畢。但最重要的是，盧安達象徵著人類精神戰勝邪惡的力量。儘管它曾因 1994 年造成約一百萬人死亡的種族衝突而為世人所知，盧安達如今已挺過那場大屠殺，正逐漸療癒、日漸繁榮，並張開雙臂歡迎來訪的旅客。
+📋 內容大意
+Rwanda strikes the writer as paradise. There are green hills, red soil, bright rivers and mountain lakes, and fields grazed by goats and long-horned cattle.
+Its thousand hills rise from 1,500 to 2,500 meters, so the weather stays pleasant all year. The country is small enough to see in a couple of weeks.
+Rwanda also stands as a symbol of the human spirit overcoming evil. Once known only for the 1994 conflict and its million deaths, the country is now healing.
+← 第26題回到96 年學測第28題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,44 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g85-35-2/index.html
+Author: staresto-create ZZSH
+Title: 85 年學測克漏字第35題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 85 年學測 ／ 第35題
+85 年學測 克漏字 第35題
+慣用語／片語線索：跨句
+Lizards, 33 can change the color of their skin and 34 the trees and leaves around them. 35 , they cannot be detected by other animals that threaten them.
+(A)Nevertheless
+(B)As a result
+(C)In contrast
+(D)On the other hand
+答案：(B) As a result
+題目編號：G85_35_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+承接前面「蜥蜴能改變膚色、融入周遭的樹葉」，這句延續說明其結果——因此無法被天敵發現，As a result（因此）承接這個因果關係；In contrast（相較之下）在這裡語意不通（前後句不是對比關係），Nevertheless、On the other hand 也都不符合這種順接因果的邏輯。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是轉折詞，而其中三個帶著轉折或對比的味道（Nevertheless、In contrast、On the other hand），只有一個是因果。如果沒把前後兩句的方向讀清楚，很容易被「多數決」的錯覺帶走。
+怎麼判斷
+把前後兩句擺在一起看：前一句說蜥蜴能改變膚色、與周遭的樹葉融為一體；本句是 ___ , they cannot be detected by other animals that threaten them.（……，牠們無法被威脅牠們的動物發現。）融入環境是原因、不被發現是結果，這是順向的因果，填 As a result（因此）。順便對照 87 年第 35 題 →：那一題的前後是「大人笑得少」與「小孩笑得多」，講的是兩群不同的對象，所以用 on the other hand 提出另一面；本題前後講的是同一件事的因與果。同一組轉折詞，用哪一個永遠取決於前後兩句的關係，不是取決於哪個字比較眼熟。
+誘答選項
+On the other hand（另一方面）：要拿兩個不同的對象或面向來比，但本句前後是同一件事的兩端。In contrast（相較之下）：把兩件相反的事並排比較，本句沒有相反的兩件事。Nevertheless（儘管如此）：讓步轉折，要求前後互相牴觸，而這裡是順著走的。
+常考字詞與句型
+as a result（因此、結果）、as a result of（由於）、therefore（因此）、consequently（因此）、cannot be detected（無法被發現）、on the other hand（另一方面）。其中 as a result 這一組考過 7 個年度，87 年第 35 題 →、90 年第 22 題 →、95 年第 28 題 →、99 課綱學測參考用試卷第 24 題 →、103 年第 25 題 →、108 年第 28 題 →都出現過；as a result of 考過 4 個年度，93 年第 20 題 →、99 課綱學測參考用試卷第 24 題 →、109 年第 22 題 →都出現過。
+線索範圍說明：As a result 承接前一句「變色融入環境」的結果
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+All forms of life have an instinctive urge to survive. Nature provides 31 with the means of survival. We have learned much about survival from 32 forms of animal life.
+Lizards, 33 can change the color of their skin and 34 the trees and leaves around them. 35 , they cannot be detected by other animals that threaten them. Nature provides other forms of protection 36 environmental dangers.
+Human beings, too, 37 special devices to protect 38 . Their skin is very 39 to temperature changes. 40 warm weather, sweating helps humans regulate their body temperature.
+中譯：所有生物都有求生的本能。大自然賦予生物求生的方法。我們從低等動物身上學到很多關於生存的知識。例如蜥蜴，牠們能改變皮膚顏色，融入周遭的樹木和樹葉，因此不會被威脅牠們的其他動物發現。大自然也提供其他形式的保護，讓生物免受環境危害。人類也有特殊的機制來保護自己。人類的皮膚對溫度變化非常敏感，在溫暖的天氣裡，流汗能幫助人類調節體溫。
+📋 內容大意
+Every living thing wants to survive, and nature gives each species ways to stay alive.
+A lizard can change skin color to match nearby trees and leaves, so predators cannot see the lizard.
+Human skin also feels temperature changes, and sweating helps cool the body.
+← 第34題回到85 年學測第36題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

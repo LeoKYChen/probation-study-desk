@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g106-30-3/index.html
+Author: staresto-create ZZSH
+Title: 106 年學測克漏字第30題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 106 年學測 ／ 第30題
+106 年學測 克漏字 第30題
+字彙選義線索：句內答對率 55%
+答對率 55%：當年每 100 位考生，有 55 位答對。
+But photos showing outdoor activities, such as sailing on a sunny day or walking in the woods, can greatly distract workers and thus 30 their productivity.
+(A)reform
+(B)lower
+(C)switch
+(D)demand
+答案：(B) lower
+題目編號：G106_30_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「照片會大大分散工人的注意力，因此『降低』他們的生產力」，lower（降低）符合這個負面效果；reform（改革）、switch（切換）、demand（要求）都不合。
+深入解析
+你可能會這樣想
+lower 你最熟的是形容詞「較低的、下面的」——本份考卷第一篇的 lower lashes（下睫毛）就是這個用法。所以輪到它當動詞「降低」時，你反而會遲疑。這種一個字跨兩種詞性的情況在克漏字裡很常見，看到空格時先確定「這裡需要什麼詞性」，再回頭想這個字有沒有那種用法。
+怎麼判斷
+先確認詞性。空格前是 and thus，前面已經有一個動詞 can greatly distract workers，and 連接的必須是對等的成分，所以還原成完整寫法是：photos can greatly distract workers and photos can thus lower their productivity.——助動詞 can 後面接原形動詞，空格一定是動詞原形，四個選項都是原形，這一步先確定「要動詞」。再看方向。thus（因而）表示後面是前面的結果；前面是 distract workers（分散注意力），是負面的，所以後面接的也必須是負面結果，只有 lower（降低）符合。這裡也可以順便回頭看全篇的結論：workers are actually most productive when the weather is lousy，照片提醒了好天氣，注意力被拉走，生產力自然往下掉。
+誘答選項
+reform（改革）用在制度或組織，像 reform the education system（改革教育制度），不會用來講生產力。switch（切換、轉換）是換成另一個，常見 switch to another channel（轉到別台），但這裡沒有「換成什麼」。demand（要求）語意上和 distract 接不起來。
+常考字詞與句型
+lower productivity（降低生產力）、raise the price（提高價格）、lower the price（降低價格）、distract sb from（使某人分心而無法……）、reform（改革）、switch to（改用、換成）、focus on（專注於）、remind sb of（使某人想起）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Research has proven that weather plays a part in our moods: Warmer temperatures and exposure to sunshine increase positive thinking, whereas cold, rainy days bring anxiety and fatigue. 26 , many people believe that bad weather can reduce productivity and efficiency.
+There is, however, a significant 27 between such beliefs and the actual effect of weather on people's performance at work. Using empirical data from laboratory experiments 28 observations of a mid-sized Japanese bank in real life, researchers find that weather conditions indeed influence a worker's focus. When the weather is bad, individuals tend to focus more on their work rather than thinking about activities they could 29 outside of work. But photos showing outdoor activities, such as sailing on a sunny day or walking in the woods, can greatly distract workers and thus 30 their productivity.
+The findings conclude that workers are actually most productive when the weather is lousy—and only if nothing reminds them of good weather.
+中譯：研究已經證實，天氣會影響我們的情緒：溫暖的氣溫和日照能提升正向思考，而寒冷、下雨的日子則會帶來焦慮與疲憊。因此，許多人認為壞天氣會降低工作效率與生產力。然而，這樣的想法與天氣對工作表現的實際影響之間，其實存在著明顯的落差。研究人員結合實驗室的實證數據以及對一家日本中型銀行的實地觀察，發現天氣狀況確實會影響員工的專注力。天氣不好時，人們往往更專注於工作，而不會分心想著下班後能做什麼活動。但顯示戶外活動的照片，例如晴天出海航行或在森林裡散步的畫面，卻會嚴重分散員工注意力，進而降低生產力。這項研究的結論是：員工在天氣糟糕時反而最有生產力——但前提是沒有任何事物提醒他們好天氣的存在。
+📋 內容大意
+Weather affects human mood, leading many to assume that bad weather hurts workplace productivity.
+Research reveals that bad weather actually improves focus and productivity by removing outdoor distractions.
+Workers achieve peak productivity during poor weather, provided they are not reminded of pleasant outdoor alternatives.
+← 第29題回到106 年學測
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

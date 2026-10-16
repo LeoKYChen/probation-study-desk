@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z101-17/index.html
+Author: staresto-create ZZSH
+Title: 101 年指考克漏字第17題詳解（慣用語／片語）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 101 年指考 ／ 第17題
+101 年指考 克漏字 第17題
+慣用語／片語線索：句內答對率 54%
+答對率 54%：當年每 100 位考生，有 54 位答對。
+The British team was scheduled to 17 the Italian team in the game.
+(A)oppose to
+(B)fight over
+(C)battle for
+(D)compete against
+答案：(D) compete against
+題目編號：Z101_17（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+compete against the Italian team（與義大利隊競賽）表示英國隊原定要與義大利隊比賽；oppose to（語意與文法不符，表示「反對」，且常用 be opposed to）、fight over（為……爭奪）、battle for（為……而戰）都不符合此處運動賽事的語境。
+深入解析
+你可能會這樣想
+四個選項的中文都能說成「對抗、爭奪」，你會憑中文挑一個，不會去檢查它後面該不該接介系詞。
+怎麼判斷
+先看空格後面接的是什麼：緊接著名詞組 the Italian team，也就是比賽的對手，所以空格要的是一個後面能直接接「對手」的說法。這樣一看就刷掉三個：oppose to 本身就是錯的形態（oppose 是及物動詞，直接接受詞 oppose the plan，不接 to）；fight over 與 battle for 後面接的都是「爭奪的東西」，不是對手。剩下 compete against（與……對抗、較量），後面接的正是對手，填進去讀成 was scheduled to compete against the Italian team（預定要對上義大利隊）。compete 這個字的三種搭配值得一次記起來：compete against 或 compete with 接對手，compete for 接爭奪的目標。
+誘答選項
+oppose to 多了一個 to（該說 oppose 加受詞，或 be opposed to），形態本身有問題，這個方法在片語題裡常常一眼刷掉一個選項；fight over a toy（為一個玩具吵架）、battle for independence（為獨立而戰），把 the Italian team 放進這兩個位置，會讀成「爭奪義大利隊」，語意不對。
+常考字詞與句型
+compete against（與……對抗、較量）、compete with（與……競爭）、compete for（爭取、爭奪）、be scheduled to V（預定要做某事）、fight over（為……爭吵）、battle for（為……而戰）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：101學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+In 1985, a riot at a Brussels soccer match occurred, in which many fans lost their lives. The 16 began 45 minutes before the start of the European Cup final. The British team was scheduled to 17 the Italian team in the game.
+Noisy British fans, after setting off some rockets and fireworks to cheer for 18 team, broke through a thin wire fence and started to attack the Italian fans. The Italians, in panic, 19 the main exit in their section when a six-foot concrete wall collapsed. By the end of the night, 38 soccer fans had died and 437 were injured. The majority of the deaths resulted from people 20 trampled underfoot or crushed against barriers in the stadium.
+As a result of this 1985 soccer incident, security measures have since been tightened at major sports competitions to prevent similar events from happening.
+中譯：1985 年，布魯塞爾一場足球賽發生暴動，造成許多球迷喪生。這場悲劇在歐洲盃決賽開賽前 45 分鐘就已經開始。當時英國隊即將對戰義大利隊。喧鬧的英國球迷施放了一些煙火和爆竹為自己球隊加油後，衝破一道薄薄的鐵絲網，開始攻擊義大利球迷。義大利球迷驚慌之下衝向他們所在看台區的主要出口，此時一道六英尺高的水泥牆倒塌了。整晚下來，共有 38 名球迷罹難、437 人受傷。大多數死亡案例都是因為民眾被踩踏或被推擠撞上柵欄所致。自從 1985 年這起足球慘案後，各大型運動賽事的安全措施都已大幅加強，以防止類似事件再度發生。
+📋 內容大意
+A riot at a 1985 European Cup final in Brussels killed many soccer fans.
+British fans set off fireworks, broke through a fence and attacked the Italian supporters.
+A wall collapsed as the Italians fled; 38 died, and security at big matches has been tighter since.
+← 第16題回到101 年指考第18題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

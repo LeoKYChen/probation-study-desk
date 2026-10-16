@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z101-11/index.html
+Author: staresto-create ZZSH
+Title: 101 年指考克漏字第11題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 101 年指考 ／ 第11題
+101 年指考 克漏字 第11題
+字彙選義線索：句內答對率 58%
+答對率 58%：當年每 100 位考生，有 58 位答對。
+It was officially opened on June 11, 2005 as part of the celebrations to 11 Norway's centenary as an independent country.
+(A)help
+(B)solve
+(C)take
+(D)mark
+答案：(D) mark
+題目編號：Z101_11（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+mark Norway's centenary（紀念挪威獨立百年）表示諾貝爾和平中心的開幕是紀念挪威獨立百週年慶祝活動的一部分；help／solve／take 都不符合此處語意搭配。
+深入解析
+你可能會這樣想
+mark 這個字，你的印象大概只有「做記號、標記」，所以看到 celebrations to mark 會覺得「慶祝活動去標記一個百年」很奇怪，反而覺得 help 或 take 讀起來比較安全。
+怎麼判斷
+四個選項是四個不同的動詞，文法上都放得進 to 後面的原形位置，可見這一格考的是語意，只能往前後文找。空格前是 as part of the celebrations to（作為慶祝活動的一環，而活動的目的是……），空格後是 Norway's centenary as an independent country（挪威獨立建國的百週年）。慶祝活動存在的目的，就是紀念這個百年。mark 除了做記號，還有「以活動或儀式紀念、慶祝某個日子或事件」這個意思（劍橋詞典 mark 詞條），常見的組合是 a ceremony to mark the anniversary。兩個意思是接得起來的：先在時間軸上把那個日子標出來，再為它辦活動，就是紀念。同一份考卷的第 16 題四個選項也是四個不同的名詞、文法上全部放得進去，同樣只能靠上下文定案，兩題的做法一樣。另外一提：這一篇選文後來被 107 學年度起適用的指考參考試卷沿用，在那份卷子上編為第 11 題 →，兩邊是同一題，不是網站重複。
+誘答選項
+help（幫助）、solve（解決）、take（拿、花費）三個都是高頻字，但沒有一個與 centenary 組得起來：慶祝活動不會去「幫助」一個百年；solve 後面接的一定是待解的難題（solve a problem、solve a mystery），「解決一個百年」語意矛盾；take 若讀成「花費」，句子裡缺少要花掉的時間或金錢。
+常考字詞與句型
+mark an anniversary（紀念某個週年）、a ceremony to mark the occasion（為某個場合舉行的紀念儀式）、as part of + 名詞（作為……的一環）、centenary（百週年）、be officially opened（正式開幕）、solve a problem（解決問題）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：101學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The Nobel Peace Center is located in an old train station building close to the Oslo City Hall and overlooking the harbor. It was officially opened on June 11, 2005 as part of the celebrations to 11 Norway's centenary as an independent country.
+It is a center where you can experience and learn about the various Nobel Peace Prize Laureates and their activities 12 the remarkable history of Alfred Nobel, the founder of the Nobel Prize. In addition, it serves as a meeting place where exhibits, discussions, and reflections 13 to war, peace, and conflict resolution are in focus.
+The Center combines exhibits and films with digital communication and interactive installations and has already received attention for its use of state-of-the-art technology. Visitors are welcome to experience the Center 14 or join a guided tour. Since its opening, the Nobel Peace Center has been educating, inspiring and entertaining its visitors 15 exhibitions, activities, lectures, and cultural events. The Center is financed by private and public institutions.
+中譯：諾貝爾和平中心位於一座舊火車站建築內，鄰近奧斯陸市政廳，並俯瞰港口。它於 2005 年 6 月 11 日正式開幕，作為慶祝挪威獨立建國一百週年的活動之一。在這座中心，你可以體驗並了解歷屆諾貝爾和平獎得主的事蹟，以及諾貝爾獎創辦人艾佛烈·諾貝爾傳奇的一生。此外，它也是一個聚會場所，展覽、討論與省思都聚焦在戰爭、和平與衝突解決等議題上。這座中心結合了展覽、影片、數位通訊與互動裝置，因大量運用尖端科技而備受矚目。訪客可以選擇自行參觀，或參加導覽行程。自開幕以來，諾貝爾和平中心便持續透過展覽、活動、講座與文化活動，教育、啟發並娛樂著訪客。這座中心由私人與公家機構共同出資營運。
+📋 內容大意
+The Nobel Peace Center stands in a former Oslo train station overlooking the harbor.
+Opened in 2005, it presents the Peace Prize winners and the story of Alfred Nobel.
+Praised for its advanced technology, it also hosts tours, talks and cultural events for visitors.
+回到101 年指考第12題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

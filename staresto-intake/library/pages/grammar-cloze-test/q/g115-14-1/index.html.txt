@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g115-14-1/index.html
+Author: staresto-create ZZSH
+Title: 115 年學測克漏字第14題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 115 年學測 ／ 第14題
+115 年學測 克漏字 第14題
+慣用語／片語線索：句內答對率 58%
+答對率 58%：當年每 100 位考生，有 58 位答對。
+When all members in a group know what's going on with each other, it is 14 that they will fight.
+(A)hardly surprising
+(B)more acceptable
+(C)truly important
+(D)less likely
+答案：(D) less likely
+題目編號：G115_14_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「當群體成員彼此了解狀況時，牠們打架的可能性就『比較低』」，less likely 符合，呼應前文說明糞便訊息有助於群體和諧；hardly surprising（不太令人驚訝）、more acceptable（更可接受）、truly important（真的重要）都不合。
+深入解析
+你可能會這樣想
+看到 it is ___ that they will fight，很多人第一反應是把 it 當成「它」，回頭去找 it 指的是哪一個名詞。這裡的 it 是虛主詞，本身沒有意義，真正的主詞是後面的 that 子句 that they will fight——句子還原就是 That they will fight is less likely。
+怎麼判斷
+劍橋《English Grammar Today》在 Likely and unlikely 條目明確列出 likely 的兩種句型：S be likely to V（較常用），以及 It is likely that S will V（較少用），本題正是後者，而四個選項中只有 likely 走得通這個句型的語意。語意上，同一句前半 When all members in a group know what's going on with each other 說明群體彼此了解，配上本段主旨 peace and harmony in the group，打架的可能性應該是「降低」，所以選 less likely。
+誘答選項
+hardly surprising（不令人意外）、more acceptable（更能接受）、truly important（真的重要）三個放進 It is ... that 句型，文法上都成立，但語意接不上「和平與和諧」這個結論——這一題考的是讀懂段落的邏輯走向，不是文法對錯。
+常考字詞與句型
+be likely to V（很可能……）、It is likely／unlikely that...（很可能／不太可能……）、more／less likely（可能性較高／較低）、be as likely as（可能性相當）。劍橋另有一項提醒：It is likely to 不等於 It is easy to，兩者不可混用。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+From the campfire to the café, people have always gathered together to share the latest news. White rhinoceroses, 11 , do the same thing—only their choice of meeting place is a giant pile of poop. A new study indicates that rhinos have a smelly way to 12 .
+Scientists studying white rhinos in South Africa have found that these animals leave messages in their poop. In particular, they leave their poop in the same place for all the other members in the group to smell—just like humans leaving messages on social media. Furthermore, different rhinos leave different chemicals in their poop, which provide important 13 about the age, sex, general health, and reproductive conditions of each specific rhino.
+This is of great significance for the peace and harmony in the group. When all members in a group know what's going on with each other, it is 14 that they will fight.
+The researchers have even made "fake poop" to see how different rhinos would react. They find that dominant males are particularly 15 the "fake poop" that carries chemicals from females ready to mate. The males sniff it for longer duration and come back to the same spot more frequently, a clear sign that they are gathering information about mating opportunities from the poop.
+中譯：從營火旁到咖啡館，人們總是喜歡聚在一起分享最新的消息。事實上，白犀牛也會做同樣的事——只不過牠們選擇的聚會地點，是一大堆的糞便。一項新研究顯示，犀牛有一種「臭氣沖天」的溝通方式。科學家在南非研究白犀牛時發現，這些動物會在糞便中留下訊息，特別是牠們會把糞便集中留在同一個地方，讓群體中的其他成員都能聞到——就像人類在社群媒體上留言一樣。此外，不同犀牛的糞便中所含的化學物質也不盡相同，這些化學物質能提供關於該犀牛年齡、性別、整體健康狀況及生育狀態的重要線索。這對維持群體間的和平與和諧具有重大意義——當群體中的每個成員都了解彼此的狀況時，牠們打架的機率就會降低。研究人員甚至製作了「假糞便」，來觀察不同犀牛的反應。他們發現，占優勢地位的公犀牛，對含有母犀牛發情化學物質的「假糞便」特別感興趣。這些公犀牛會嗅聞較長的時間，也會更頻繁地回到同一個地點，這清楚顯示牠們正透過糞便蒐集有關交配機會的資訊。
+📋 內容大意
+People gather at campfires and cafés to share news. A new study shows white rhinos do something similar at a giant pile of dung.
+Rhinos in South Africa drop dung in one shared spot for the group to smell. Its chemicals reveal each animal's age, sex, health and readiness to breed.
+Shared knowledge keeps the group peaceful and fighting rare. In tests with fake dung, dominant males sniffed longer and returned more often when females were ready to mate.
+← 第13題回到115 年學測第15題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,50 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g111-16-2/index.html
+Author: staresto-create ZZSH
+Title: 111 年學測克漏字第16題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 111 年學測 ／ 第16題
+111 年學測 克漏字 第16題
+慣用語／片語線索：句內答對率 21%
+答對率 21%：當年每 100 位考生，有 21 位答對。
+The round windows are indeed pleasant to the eye, but they actually were designed for reasons 16 aesthetics.
+(A)contrary to
+(B)except for
+(C)more of
+(D)other than
+答案：(D) other than
+題目編號：G111_16_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+other than 是「除…之外的其他、不同於」，本句指圓窗其實是基於美觀以外的理由而設計；except for 用於「整體中扣除例外」，contrary to（與…相反）語氣過強，more of（更像是）句構不合。
+重點：other than + 名詞是「除…之外的其他」，重心在後面那個「別的」；如 reasons other than aesthetics（美觀以外的理由）。
+延伸閱讀：other than，除了這個以外的別的 ↗
+深入解析
+答對率二成一，鑑別度 13。
+你可能會這樣想
+reasons other than + N。看到「除了…以外」你先想到 except for，就挑了它。本題只要看方向：other than 是「不是這個，是別的」——設計理由不是美觀，是別的。填 other than，句子就成了 reasons other than aesthetics（美觀以外的理由），後面整段講的正是那個「別的」：飛安。
+怎麼判斷
+文內線索很清楚：前半 The round windows are indeed pleasant to the eye（圓窗確實賞心悅目）先讓一步，接著 but…actually 一轉，就是要說真正的原因不是美觀；下一句 In the early days of aviation, plane windows {17} square in shape（航空發展早期，飛機窗戶是方形的）開始講飛安，方向完全吻合。一句記完：Some students follow the news for reasons other than schoolwork.（有些學子關注新聞是出於課業以外的理由。）〔情境取材自 108 指考作文題：青年對各類新聞的關注度〕
+誘答選項
+except for 用在「例外是整體的一部分」的時候——You can type all the letter except for your signature.（除了簽名，整封信都可以打字，簽名是這封信的一部分。）本題要看的是 other than 的方向——理由不是美觀，是別的。contrary to 是「與…相反」，語氣太強——設計理由不是「與美觀相反」，只是「不只是美觀」；more of 是「更像是」，後面要接名詞當補語，句構接不上。
+常考字詞與句型
+other than（除…之外的其他）、none other than（正是）、except for（除了…之外）、apart from（除…之外）、contrary to popular belief（與一般認知相反）。其中 apart from 這一組考過 5 個年度，86 年第 27 題 →、87 年第 22 題 →、101 年第 19 題 →、103 年第 24 題 →都出現過；except for 考過 4 個年度，87 年第 22 題 →、94 年第 30 題 →、101 年第 19 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Airline passengers may have noticed that all plane windows have rounded edges, instead of the hard corners commonly found in our house. The round windows are indeed pleasant to the eye, but they actually were designed for reasons 16 aesthetics.
+In the early days of aviation, plane windows 17 square in shape. Then as commercial air travel became popular in the 1950s and airplanes began flying higher and faster, three planes mysteriously broke apart in midair. The cause? Square windows. Scientists found that sharp corners are natural weak spots where stress concentrates. The problem is 18 when airplanes fly at higher altitudes, where the difference between the inside and outside pressure increases, causing added stress. When subjected to repeated pressurization high in the sky, the four corners on a square window may 19 .
+Curved windows, on the other hand, distribute stress around more evenly, reducing the likelihood of cracks or breaks. Circular shapes are also stronger and resist deformation, and therefore can 20 extreme differences in pressure inside and outside of an aircraft. Thus, round windows are a major safety innovation that keeps planes from disintegrating mid-flight. They are also used on ships and spacecraft for their greater structural integrity.
+中譯：搭飛機的乘客可能都注意到，所有飛機窗戶的邊緣都是圓角的，不像我們家中常見的直角窗戶。圓形窗戶確實賞心悅目，但它們的設計其實是出於美觀以外的原因。在航空發展的早期，飛機窗戶原本是方形的。到了 1950 年代，隨著商業航空逐漸普及、飛機飛得越來越高、越來越快，卻接連發生三起飛機在空中神祕解體的事故。原因是什麼呢？正是方形窗戶。科學家發現，尖銳的角落天生就是應力容易集中的脆弱點。當飛機飛行在更高的高度時，機艙內外壓力差增大，帶來額外的應力，這個問題因此變得更加嚴重。在高空中反覆承受加壓過程時，方形窗戶的四個角落可能因此產生裂痕。相較之下，圓形窗戶能將應力更均勻地分散開來，大幅降低破裂或斷裂的風險。圓形結構同時也更堅固、更能抵抗形變，因此能承受機艙內外極端的壓力差異。因此，圓形窗戶可說是一項重大的安全創新，防止飛機在飛行途中解體。基於同樣更佳的結構完整性，圓形窗戶也被應用在船舶與太空船上。
+📋 內容大意
+Aircraft windows are rounded rather than square, and the shape serves safety, not only appearance.
+Early plane windows were square. In the 1950s, as flights climbed higher and faster, three aircraft broke apart in midair, and scientists blamed the sharp corners.
+Sharp corners are weak spots where stress builds, and high altitude makes it worse. Round windows spread the stress evenly, so ships and spacecraft use them too.
+← 第15題回到111 年學測第17題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

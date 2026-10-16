@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z102ref-14/index.html
+Author: staresto-create ZZSH
+Title: 指考參考試卷（99 課綱適用，102 年施測）克漏字第14題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 指考參考試卷（99 課綱適用，102 年施測） ／ 第14題
+指考參考試卷（99 課綱適用，102 年施測） 克漏字 第14題
+字彙選義線索：跨句
+Each 14 is able to carve and decorate the car as he chooses.
+(A)race
+(B)scout
+(C)master
+(D)parent
+答案：(B) scout
+題目編號：Z102參_14（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+Each scout（每位童軍）呼應全文主題 Cub Scouts（幼童軍），表示每位童軍都能依自己喜好雕刻裝飾賽車；race（比賽）、master（團長）、parent（家長，但下文明確是男孩們自己動手）都不符合此處語意。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+只讀這一句的話，四個都放得進去——每一場比賽、每個童軍、每位團長、每位家長，中文讀起來都成立，所以光看句內是選不出來的。而且文章開頭提過 with the help of parents（在家長協助下），parent 會顯得特別有理。
+怎麼判斷
+線索在前一句，要回頭讀。前一句是 The Scout is given a block of wood ...（拿到材料的是童軍），接著 The finished car must use all nine pieces（完成的車必須用上全部九個零件）。這一整段從頭到尾都在說童軍拿到什麼、要做出什麼，所以「可以自己雕刻與裝飾」的當然也是童軍本人，填 scout。句尾的 as he chooses（照他自己的意思）指的也是同一個人。這一題示範的是一個很實用的習慣：句內四個選項都通的時候，不要硬在句內比較，往前一句找那個一直在做事的人。
+誘答選項
+race（比賽）不會雕刻東西，主詞與動詞對不上。master（團長）在文章裡只出現一次，是辦第一屆比賽的 Cub Master Don Murphy，他是帶隊的大人，不是拿到材料、動手做車的童軍。parent（家長）雖然開頭提過會幫忙，但「幫忙」與「自己決定怎麼雕、怎麼裝飾」是兩回事，而且最後一段講得很清楚，這件事的重點是孩子與爸爸、爺爺一起做。
+常考字詞與句型
+carve（雕刻）、decorate（裝飾）、as he chooses（照他自己的意思）、be able to V（能夠……）、exceed a certain weight（超過一定的重量）、fit on the track（放得上軌道）。
+線索範圍說明：前一句 The Scout is given a block of wood 點明拿到材料的是童軍本人
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The Pinewood Derby is a racing event for Cub Scouts in the Boy Scouts of America. Cub Scouts, with the help of parents, build their own cars from wood, usually from kits 11 a block of pine, plastic wheels, and metal axles.
+Cub Master Don Murphy organized the first Pinewood Derby, held May 15, 1953 in Manhattan Beach, California. Murphy's son was too young to participate in the popular Soap Box Derby races, so he 12 the idea of racing miniature wooden cars.
+The Scout is given a block of wood made of pine 13 two notches for wheels, four plastic wheels, and four nails. The finished car must use all nine pieces, must not exceed a certain weight, must not exceed a certain length and must fit on the track. Each 14 is able to carve and decorate the car as he chooses.
+The great thing about the race is that the boys build the cars with their dads, grandfathers, or 15 they choose. It's not about winning or losing; it is about having the quality time with each other and enjoying a great day with family, friends and smiling faces.
+中譯：小木車競賽是美國幼童軍活動中的一項賽車活動。幼童軍在家長的協助下，用木頭打造自己的賽車，通常使用內含一塊松木、塑膠輪子與金屬車軸的套件。幼童軍團長唐．墨菲於 1953 年 5 月 15 日在加州曼哈頓海灘舉辦了第一屆小木車競賽。墨菲的兒子當時年紀太小，無法參加當時盛行的肥皂箱賽車，於是他想出了讓孩子們用木頭賽車比賽的點子。每位童軍會拿到一塊已鑿出兩個輪子凹槽的松木、四個塑膠輪子和四根釘子。完成的賽車必須用上全部九個零件，不能超過規定的重量與長度，並且必須能放上賽道。每位童軍都可以自行雕刻裝飾自己的賽車。這項比賽最棒的地方在於，男孩們是和爸爸、爺爺或自己選擇的人一起打造賽車。重點不在輸贏，而是彼此共度美好時光，和家人朋友一起享受美好的一天、笑容滿面。
+📋 內容大意
+In the Pinewood Derby, American Cub Scouts race small cars built from a wooden kit.
+Don Murphy began it in 1953 for boys too young for the Soap Box Derby.
+Each boy carves and decorates his own car under set limits on weight, length and parts.
+The point is the time spent building alongside fathers and friends, not the winning.
+← 第13題回到指考參考試卷（99 課綱適用，102 年施測）第15題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,153 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/g104p2.html
+Author: staresto-create ZZSH
+Title: 104 學測閱讀測驗：過度醫療的問題｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 104 學測
+104 學測閱讀測驗：過度醫療的問題
+The Problem of Overtreatment
+學測 104年第 45–48 題4 題
+本篇與 107 學年度起適用參考試卷第 41–44 題一字不差，屬官方整題回收。兩份試卷各自收錄，練習時可以互相對照。
+前往對照：107 學測參考試卷閱讀測驗第 41–44 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段When it comes to medical care, many patients and doctors believe “more is better.” But what they do not realize is that overtreatment—too many scans, too many blood tests, too many procedures—may pose harm. Sometimes a test leads you down a path to more and more testing, some of which may be invasive, or to treatment for things that should be left alone.
+第 2 段Terrence Power, for example, complained that after his wife learned she had Wegener’s disease, an uncommon disorder of the immune system, they found it difficult to refuse testing recommended by her physician. The doctor insisted on office visits every three weeks, even when she was feeling well. He frequently ordered blood tests and X-rays, and repeatedly referred her to specialists for even minor complaints. Even when tests came back negative, more were ordered, and she was hospitalized as a precaution when she developed a cold. She had as many as 25 doctor visits during one six-month period. The couple was spending about $30,000 a year for her care.
+第 3 段After several years of physical suffering and near financial ruin from the medical costs, the couple began questioning the treatment after consulting with other patients in online support groups. “It’s a really hard thing to determine when they’ve crossed the line,” Mr. Power said. “You think she’s getting the best care in the world, but after a while you start to wonder: What is the objective?” Mr. Power then spoke with his own primary care doctor, who advised him to find a new specialist to oversee Mrs. Power’s care. Under the new doctor’s care, the regular testing stopped and Mrs. Power’s condition stabilized. Now she sees the doctor only four or five times a year.
+題目
+45.What is the main idea of this passage?
+(A)Treatments do not always cause harmful side effects.
+(B)Patients tend to believe more testing is better treatment.
+(C)Too much medical care may not be beneficial to patients.
+(D)Doctors generally recommend office visits that are necessary.
+46.Which of the following was a problem for Mrs. Power during her medical treatment?
+(A)She had to be hospitalized for three weeks whenever she had a cold.
+(B)She didn’t have any insurance, so she went broke because of her illness.
+(C)When test results showed she was fine, her doctor still ordered more tests.
+(D)Her doctor asked her to consult other specialists due to her constant complaints.
+47.Who does “they” in the third paragraph most likely refer to?
+(A)Physicians.
+(B)Other patients.
+(C)Mr. and Mrs. Power.
+(D)The online support groups.
+48.Which of the following best describes the author’s attitude toward medical tests?
+(A)More tests than necessary are too much.
+(B)Medical tests are essential for disease prevention.
+(C)Many tests are needed for confirmation of diagnosis.
+(D)Doctors’ interpretations of test results are seldom wrong.
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+45
+(C)
+77%
+51
+46
+(C)
+64%
+49
+47
+(A)
+42%
+52
+48
+(A)
+65%
+74
+答對率與鑑別度出處：大考中心 104 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表
+每一題的依據句
+第 45 題 主旨題 Main idea
+依據句：全文要讀完整篇才能判斷，不在某一句裡。
+第 1 段開門見山：很多人相信醫療越多越好，但過度醫療可能造成傷害；第 2、3 段用 Power 太太的例子說明，太多檢查讓她身心受苦、幾乎破產，停掉例行檢查後病情反而穩定。全文要說的是太多醫療對病人未必有益，所以是 (C)。(B) 病人相信檢查越多越好，只是第 1 段第一句的說法，過於狹隘；(A) 說治療不一定有副作用、(D) 說醫生通常只建議必要的回診，都和文章的立場相反，偏離主題。
+錯誤選項：(A) 偏離主題；(B) 過於狹隘（只講第 1 段）；(D) 偏離主題
+第 46 題 細節題 Supporting details
+第 2 段Even when tests came back negative, more were ordered,
+原文 → 正確選項
+tests came back negative → test results showed she was fine
+more were ordered → still ordered more tests
+第 2 段說就算檢查結果正常（tests came back negative），醫生還是安排更多檢查，選項換成 test results showed she was fine 和 still ordered more tests。(A) 照抄 three weeks，原文說每三週回診一次，感冒住院是為了預防萬一，沒說住院三週；(D) 照抄 specialists，原文說連小毛病（minor complaints）也轉診，不是因為她一直抱怨；(B) 原文說醫療費用讓這對夫妻幾乎破產，沒提到有沒有保險。
+第 47 題 詞義題（指代詞） Vocabulary in context
+第 3 段“It’s a really hard thing to determine when they’ve crossed the line,” Mr. Power said.
+they 出現在 Power 先生說的話裡：很難判斷 they 什麼時候越過了界線（crossed the line）。第 2 段一路寫的是醫生堅持回診、一再安排檢查和轉診，做得太多、越過界線的是醫生，所以是 (A)。(B) 照抄前一句的 other patients，(D) 照抄 online support groups，這對夫妻是和其他病友交流之後才開始質疑，病友和互助團體不是安排檢查的人；(C) Power 夫婦是承受過度醫療的一方。
+代名詞怎麼找出指的是誰 →
+第 48 題 推論題 Inference
+依據句：全文要讀完整篇才能判斷，不在某一句裡。
+第 1 段說過度醫療（太多掃描、太多抽血、太多醫療程序）可能造成傷害，一項檢查常會引出更多檢查；Power 太太的例子也說明檢查做得太多反而傷身又傷財，停掉例行檢查後病情穩定。作者認為超過需要的檢查就是太多了，所以是 (A)。(B)、(C) 強調檢查必要，和作者的立場相反；(D) 文章沒有談醫生判讀檢查結果準不準。
+逐段中譯
+第 1 段談到醫療照護，許多病人和醫生都相信「越多越好」。但是他們沒有意識到，過度醫療，也就是太多掃描、太多抽血檢驗、太多醫療程序，可能會造成傷害。有時候一項檢查會帶著你走上越來越多檢查的路，其中有些可能是侵入性的；有時候則會去治療一些原本應該放著不管的問題。
+第 2 段以 Terrence Power 為例，他抱怨妻子得知自己罹患韋格納肉芽腫（一種罕見的免疫系統疾病）之後，兩人發現很難拒絕醫師建議的檢查。醫生堅持她每三週回診一次，即使她覺得身體很好也一樣。醫生經常要她抽血、照 X 光，連小毛病也一再轉診給專科醫師。就算檢查結果正常，醫生還是安排更多檢查；她感冒時，醫生也為了預防萬一讓她住院。在某個半年期間，她看診多達 25 次。這對夫妻每年要花大約三萬美元在她的醫療上。
+第 3 段經過好幾年身體上的折磨，醫療費用也幾乎讓他們破產，這對夫妻在網路病友互助團體裡和其他病人交流之後，開始質疑這些治療。Power 先生說：「醫生什麼時候做得太過頭了，真的很難判斷。你以為她得到的是世界上最好的照顧，但過了一陣子你會開始懷疑：這樣做的目的到底是什麼？」Power 先生後來和自己的家庭醫師談過，醫師建議他另外找一位專科醫師負責 Power 太太的治療。在新醫師的照護下，例行檢查停了，Power 太太的病情也穩定下來。現在她一年只看醫生四、五次。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。沒有列出的段落，就是沒有主旨句，請對照「這一篇的文章結構」裡的綱要，找出那一段的重點。
+第 1 段But what they do not realize is that overtreatment—too many scans, too many blood tests, too many procedures—may pose harm.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體說明文 Expository
+組織方式舉例說明 Example/Illustration這一類怎麼辨識 →
+關鍵轉折詞Butfor exampleEven whenAfterthenNow
+綱要
+許多病人和醫生認為醫療越多越好，(But) 過度醫療其實可能有害，一項檢查常引來更多檢查。
+(for example) 以 Power 太太為例：醫生堅持每三週回診，頻繁抽血、照 X 光，連小毛病也轉診專科。
+(Even when) 檢查正常仍加做檢查，感冒就住院，半年看診 25 次，一年花費約三萬美元。
+(After) 多年身心與經濟的煎熬後，夫妻和網路病友交流，開始質疑治療。
+(then) 先生的家庭醫師建議換專科醫師，停止例行檢查後病情穩定，(Now) 現在一年只看診四、五次。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 20 個、參考字彙 10 個、字詞搭配 14 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+procedure[prəˈsiʤɚ]n.醫療處置、手術四級第 1 段詞彙題考過 2 次：97 指考第 1 題（誘答）、85 推薦甄選第 1 題（誘答）
+recommend[ˌrɛkəˈmɛnd]v.建議五級第 2 段詞彙題考過 2 次：105 指考第 3 題 recommended（答案）、99 指考第 9 題 recommended（答案）
+frequently （詞彙表：frequent）[ˈfrikwəntli]adv.常常、頻繁地三級第 2 段詞彙題考過 5 次：100 學測第 3 題（誘答）、100 指考第 4 題 frequently（誘答）、86 聯考第 6 題 frequently（誘答）、85 聯考第 6 題 frequently（誘答）、84 聯考第 10 題 frequently（誘答）
+complaint[kəmˈpleɪnt]n.不適、小毛病（minor complaints 小病痛）三級第 2 段詞彙題考過 4 次：109 指考補考第 3 題（誘答）、98 學測第 7 題（誘答）、84 推薦甄選第 4 題（答案）、82 聯考第 2 題 complaints（答案）
+precaution[prɪˈkɔʃən]n.預防措施（as a precaution 以防萬一）五級第 2 段詞彙題考過 1 次：109 指考補考第 7 題（答案）
+physical[ˈfɪzɪkəl]adj.身體上的四級第 3 段詞彙題考過 2 次：103 學測第 3 題 physically（誘答）、96 指考第 4 題 physically（誘答）
+financial[fəˈnænʃəl]adj.財務的、經濟上的四級第 3 段詞彙題考過 3 次：105 學測第 15 題 financially（誘答）、96 指考第 4 題 financially（答案）、82 聯考第 6 題（答案）
+ruin[ˈruən]n.破產、毀滅（financial ruin 傾家蕩產）四級第 3 段詞彙題考過 1 次：105 學測第 13 題 ruined（答案）
+consult[kənˈsʌlt]v.請教、商量（consult with）四級第 3 段詞彙題考過 1 次：103 學測第 5 題 consults（答案）
+determine[dɪˈtɝmən]v.判斷、確定三級第 3 段詞彙題考過 1 次：86 推薦甄選第 4 題 determined（誘答）
+objective[əbˈʤɛktɪv]n.目的、目標四級第 3 段詞彙題考過 6 次：108 學測第 7 題（誘答）、97 指考第 6 題（誘答）、94 學測第 12 題（誘答）、92 學測第 8 題 objectively（答案）、91 學測第 7 題（誘答）、85 推薦甄選第 1 題（答案）
+advise[ædˈvaɪz]v.建議、勸三級第 3 段詞彙題考過 4 次：108 學測第 6 題 advised（誘答）、103 學測第 5 題 advises（誘答）、96 學測第 15 題 advised（誘答）、92 學測第 1 題 advised（誘答）
+tend[tɛnd]v.往往、傾向於（tend to）三級第 45 題詞彙題考過 1 次：103 學測第 15 題 tended（答案）
+insurance[ɪnˈʃʊrəns]n.保險四級第 46 題詞彙題考過 1 次：109 學測第 8 題（誘答）
+constant[ˈkɑnstənt]adj.不斷的、一直有的三級第 46 題詞彙題考過 3 次：107 指考第 1 題 constantly（誘答）、102 學測第 8 題 constantly（答案）、88 推薦甄選第 2 題 constantly（答案）
+attitude[ˈætəˌtud]n.態度、看法三級第 48 題詞彙題考過 1 次：95 學測第 5 題（答案）
+essential[ɪˈsɛnʃəl]adj.必要的、不可或缺的四級第 48 題詞彙題考過 2 次：104 學測第 7 題（誘答）、96 學測第 11 題（答案）
+prevention[prɪˈvɛnʃən]n.預防四級第 48 題詞彙題考過 3 次：110 指考第 4 題 preventions（誘答）、96 指考第 3 題（誘答）、92 學測第 6 題 preventions（誘答）
+diagnosis[ˌdaɪəgˈnoʊsəs]n.診斷五級第 48 題詞彙題考過 1 次：89 學測第 3 題（誘答）
+interpretation[ɪnˌtɝprɪˈteɪʃən]n.解讀、判讀五級第 48 題詞彙題考過 1 次：95 指考第 6 題（誘答）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+overtreatment[ˌoʊvɚˈtritmənt]n.過度醫療、過度治療表外第 1 段
+scan[skæn]n.掃描檢查五級第 1 段
+invasive[ɪnˈveɪsɪv]adj.侵入性的（檢查或治療）表外第 1 段
+immune[ɪˈmjun]adj.免疫的五級第 2 段
+specialist[ˈspɛʃəlɪst]n.專科醫師五級第 2 段
+hospitalize[ˈhɑspɪtəˌlaɪz]v.讓（病人）住院六級第 2 段
+oversee[ˌoʊvɚˈsi]v.監督、負責照料五級第 3 段
+stabilize[ˈsteɪbəˌlaɪz]v.穩定下來六級第 3 段
+beneficial[ˌbɛnəˈfɪʃəl]adj.有益的五級第 45 題
+confirmation[ˌkɑnfɚˈmeɪʃən]n.證實、確認表外第 48 題
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+when it comes to + N說到……第 1 段原文：When it comes to medical care
+pose harm造成傷害第 1 段原文：may pose harm
+leave + sth + alone不去管……第 1 段原文：things that should be left alone
+find it difficult to + V覺得很難……第 2 段原文：they found it difficult to refuse testing
+insist on + N堅持……第 2 段原文：The doctor insisted on office visits every three weeks
+order a test開立檢查第 2 段原文：He frequently ordered blood tests and X-rays
+refer + sb + to + N把某人轉介給……第 2 段原文：repeatedly referred her to specialists
+come back negative（檢查結果）是陰性第 2 段原文：Even when tests came back negative
+as a precaution為了預防起見第 2 段原文：was hospitalized as a precaution
+develop a cold感冒第 2 段原文：when she developed a cold
+consult with + sb和某人商量第 3 段原文：after consulting with other patients
+cross the line做得過頭第 3 段原文：when they’ve crossed the line
+advise + sb + to + V建議某人……第 3 段原文：advised him to find a new specialist
+under one's care由某人照顧、治療第 3 段原文：Under the new doctor’s care
+← 上一篇篇目一覽下一篇 →
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

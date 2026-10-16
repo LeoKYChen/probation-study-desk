@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g97-22-2/index.html
+Author: staresto-create ZZSH
+Title: 97 年學測克漏字第22題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 97 年學測 ／ 第22題
+97 年學測 克漏字 第22題
+字彙選義線索：句內答對率 42%
+答對率 42%：當年每 100 位考生，有 42 位答對。
+The woman did 22 without hesitation.
+(A)so
+(B)such
+(C)as
+(D)thus
+答案：(A) so
+題目編號：G97_22_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】do so 固定用法，代替前面提到的動作（把寶石給他），表示「毫不猶豫地這麼做了」；such（不能這樣代替動作，通常修飾名詞）、as、thus（因此，這裡需要代動詞不是連接詞）都不合。
+深入解析
+你可能會這樣想
+so 這個字，你的印象幾乎只有「所以」，看到 The woman did ______ ，很難把 so 跟「做」聯想在一起。這一格答對率只有四成二，不到一半，最容易卡住的地方就在這裡。其實 did so 的 so 不是「所以」，這一整組 do so 是替代用法（substitution），用來代替前面剛出現過的整個動作，避免重複（劍橋 English Grammar Today 的 substitution 條目）。
+怎麼判斷
+這個用法最短的版本你一定看過：Do you like it?—Yes, I do.（do 替代 like it）、When in Rome, do as the Romans do.（後面的 do 替代前面整串動作）。本題要替代的動作就藏在前一句：he asked her to give it to him（他要求她把寶石給他）。把 did so 還原回去驗算：The woman gave him the precious stone without hesitation.（那女子毫不猶豫地把寶石給了他。）讀起來完全通順，答案就定下來了。還有一個結構上的證據：did 是及物動詞的位置，後面卻看不到受詞——寶石到哪裡去了？因為它已經連同動作一起由 so 代替了。這一格鑑別度高達 67，是全篇最高，分開的正是「有沒有動手把 did so 還原成前一句的動作」；沒有還原的人，讀到的只是一句意思模糊的「那女子就這麼做了」，接下來 The traveler left, rejoicing 為什麼要 rejoicing，也一起糊掉。103 年第 29 題 →同樣考 do so，那一題把它藏在 before they have the time to do so 裡面，兩題可以擺在一起練。
+誘答選項
+such：是修飾名詞用的，像 such a thing、such generosity，不能單獨接在 did 後面代替動作。as：要接子句才成立，例如 She did as he asked.（她照他要求的做了），但空格後面是句號，沒有子句。thus（因此）：是轉折詞，功能是標示前後句的邏輯關係，它不能當動詞的受詞，did thus 不是現代英文的用法。
+常考字詞與句型
+do so（這麼做，替代前面提過的動作）、without hesitation（毫不猶豫地）、such a thing（這樣的事）、do as sb asks（照某人要求的去做）、ask sb to do sth（要求某人做某事）、leave rejoicing（心滿意足地離開）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+A wise woman traveling in the mountains found a precious stone. The next day she met another traveler who was hungry. The wise woman generously opened her bag to 21 her food with the traveler. When the hungry traveler saw the precious stone, he asked her to give it to him. The woman did 22 without hesitation. The traveler left, rejoicing.
+If he sold the stone, he thought, he 23 enough money for the rest of his life. But in a few days he came back to find the woman. When he found her, he said, "I know how valuable this stone is, but I'm giving it back to you, 24 that you can give me something even more precious. You gave me the stone without asking for anything 25 . Please teach me what you have in your heart that makes you so generous."
+中譯：一位聰慧的女子在山中旅行時，撿到了一顆珍貴的寶石。隔天，她遇見了另一位飢餓的旅人。這位聰慧的女子慷慨地打開她的袋子，與這位旅人分享食物。當這位飢餓的旅人看到那顆珍貴的寶石時，他要求她把寶石送給他。這位女子毫不猶豫地照做了。旅人心滿意足地離開了。他心想，如果把這顆寶石賣掉，他這輩子就衣食無缺了。但幾天後，他回來找這位女子。找到她時，他說：「我知道這顆寶石有多麼珍貴，但我要把它還給你，希望你能給我一樣更珍貴的東西。你把這顆寶石送給我，卻沒有要求任何回報。請教教我，你心裡是懷著什麼樣的胸懷，才能如此慷慨。」
+📋 內容大意
+A wise traveling woman generously gave away a precious stone she found to a hungry traveler without hesitation.（敘事文）
+The traveler returned the valuable stone, wanting instead to learn the source of the wise woman's extraordinary generosity.（敘事文）
+← 第21題回到97 年學測第23題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

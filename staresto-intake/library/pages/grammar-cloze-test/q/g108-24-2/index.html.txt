@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g108-24-2/index.html
+Author: staresto-create ZZSH
+Title: 108 年學測克漏字第24題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 108 年學測 ／ 第24題
+108 年學測 克漏字 第24題
+字彙選義線索：句內答對率 64%
+答對率 64%：當年每 100 位考生，有 64 位答對。
+This eco-friendly leather has clear 24 for the environment, compared to real leather and synthetic leathers.
+(A)advantages
+(B)considerations
+(C)opportunities
+(D)responsibilities
+答案：(A) advantages
+題目編號：G108_24_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「這種環保皮革對環境有明顯的『優勢』」，advantages（優勢）符合，呼應後文說明它更環保的具體原因；considerations（考量）、opportunities（機會）、responsibilities（責任）都不合。
+深入解析
+你可能會這樣想
+advantage 你最熟的用法大概是 take advantage of（利用），所以看到 has clear ___ for the environment 不一定會第一時間想到它。advantage 當一般名詞就是最基本的「優點、好處」，這一格要的正是這個意思。
+怎麼判斷
+空格後面的 compared to real leather and synthetic leathers（和真皮與合成皮相比）是關鍵：句子裡出現比較，這一格填的就該是「比較之下勝出的地方」。再往下看三句，全部都在為這一格作註解：It requires fewer chemicals（需要較少的化學藥劑）、Its manufacture also leaves a smaller carbon footprint（製造過程的碳足跡也較小）、the leftover material ... can even be used as a natural fertilizer（剩下的材料甚至可以當天然肥料）。連續三個好處，答案只能是「優點」。
+誘答選項
+considerations（考量、要納入思考的因素）是中性的，不含好壞判斷，接不上後面三個明確的優點。opportunities（機會）指的是可以去做某事的時機，環境不會「有機會」。responsibilities（責任）方向相反，後文講的是好處不是義務。
+常考字詞與句型
+have advantages for（對……有好處）、have an advantage over（勝過……）、take advantage of（利用；占便宜）、the advantages and disadvantages of（……的優缺點）、compared to／with（和……相比）、eco-friendly（環保的）、biodegradable（可生物分解的）、carbon footprint（碳足跡）、leftover material（剩餘材料）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The pineapple, a delicious tropical fruit, has been valued for centuries not only for its distinct and unique taste, but also for its miraculous health and medical benefits. But pineapples can also be a fashionable fruit: Pineapple leaves can 21 a substitute for leather.
+The idea was developed when a Spanish designer travelling to the Philippines observed a traditional Filipino shirt 22 together with the fibers of pineapple leaves. After five years of research, she created from pineapple leaves a material which, like real leather, can be used for making bags, shoes, and 23 textile products. It is an eco-friendly and biodegradable fiber.
+This eco-friendly leather has clear 24 for the environment, compared to real leather and synthetic leathers. It requires fewer chemicals, making it safer for the workers in factories. Its manufacture also leaves a smaller carbon footprint. In addition, the leftover material following the removal of fibers can even be used as a natural fertilizer back in the pineapple fields. 25 its low cost, this innovative material is already being used by many leading fashion companies to make their products.
+中譯：鳳梨是一種美味的熱帶水果，數百年來不只因其獨特的風味受人重視，其驚人的保健與醫療功效也備受推崇。但鳳梨其實還能成為一種時尚的水果：鳳梨葉能成為皮革的替代材料。這個想法的誕生，源於一位西班牙設計師到菲律賓旅行時，觀察到當地傳統襯衫是用鳳梨葉的纖維織成的。經過五年的研究，她成功用鳳梨葉開發出一種材質，能像真皮一樣用來製作包包、鞋子以及其他紡織產品，而且是一種環保、可生物分解的纖維。相較於真皮和人造皮革，這種環保皮革對環境有明顯的好處：它需要的化學品較少，讓工廠員工的工作環境更安全；製造過程留下的碳足跡也較小。此外，抽取纖維後剩餘的材料，還能拿回鳳梨田當作天然肥料使用。加上成本低廉，這項創新材質如今已被許多知名時尚品牌用來製作產品。
+📋 內容大意
+People have prized the pineapple for centuries for its taste and health benefits. Its leaves now make a fashionable substitute for leather.
+A Spanish designer in the Philippines saw a traditional shirt made from pineapple-leaf fiber. Five years of research turned the leaves into material for bags and shoes.
+It needs fewer chemicals than real or synthetic leather, so factory workers are safer. Leftover pulp feeds the fields, and its low cost attracts fashion companies.
+← 第23題回到108 年學測第25題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

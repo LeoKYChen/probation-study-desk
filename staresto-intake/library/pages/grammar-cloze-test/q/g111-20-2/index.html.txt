@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g111-20-2/index.html
+Author: staresto-create ZZSH
+Title: 111 年學測克漏字第20題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 111 年學測 ／ 第20題
+111 年學測 克漏字 第20題
+字彙選義線索：句內答對率 54%
+答對率 54%：當年每 100 位考生，有 54 位答對。
+Circular shapes are also stronger and resist deformation, and therefore can 20 extreme differences in pressure inside and outside of an aircraft.
+(A)tolerate
+(B)improve
+(C)justify
+(D)obtain
+答案：(A) tolerate
+題目編號：G111_20_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「圓形形狀能夠『承受』極端的壓力差異」，tolerate（承受/容忍）符合；improve（改善）、justify（證明合理）、obtain（獲得）都不合。
+深入解析
+你可能會這樣想
+tolerate 你背的多半是「容忍（別人的行為）」，帶著人際互動的味道，所以用在「圓形能 tolerate 壓力差」會覺得怪怪的。tolerate 也可以用在物體上，指承受得住、耐得住（高溫、壓力、惡劣環境），這是科普文章裡很常見的用法。
+怎麼判斷
+同一句的前半已經給了同方向的鋪陳：Circular shapes are also stronger and resist deformation（圓形也比較堅固、能抵抗變形）。and therefore 把前後綁成因果——既然堅固、能抗變形，接下來自然是「承受得住」極端的壓力差。resist 和 tolerate 在這裡是同一個方向的兩個字。
+誘答選項
+improve（改善）：圓窗不會讓壓力差變小，只是撐得住；justify（證明……正當）的受詞通常是說法、決定或行為；obtain（獲得）方向不對，壓力差不是要去取得的東西。
+常考字詞與句型
+tolerate（承受、耐得住；容忍）、tolerance（耐受度、容忍）、be tolerant of（容忍……）、resist deformation（抵抗變形）、withstand pressure（承受壓力）、structural integrity（結構完整性）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Airline passengers may have noticed that all plane windows have rounded edges, instead of the hard corners commonly found in our house. The round windows are indeed pleasant to the eye, but they actually were designed for reasons 16 aesthetics.
+In the early days of aviation, plane windows 17 square in shape. Then as commercial air travel became popular in the 1950s and airplanes began flying higher and faster, three planes mysteriously broke apart in midair. The cause? Square windows. Scientists found that sharp corners are natural weak spots where stress concentrates. The problem is 18 when airplanes fly at higher altitudes, where the difference between the inside and outside pressure increases, causing added stress. When subjected to repeated pressurization high in the sky, the four corners on a square window may 19 .
+Curved windows, on the other hand, distribute stress around more evenly, reducing the likelihood of cracks or breaks. Circular shapes are also stronger and resist deformation, and therefore can 20 extreme differences in pressure inside and outside of an aircraft. Thus, round windows are a major safety innovation that keeps planes from disintegrating mid-flight. They are also used on ships and spacecraft for their greater structural integrity.
+中譯：搭飛機的乘客可能都注意到，所有飛機窗戶的邊緣都是圓角的，不像我們家中常見的直角窗戶。圓形窗戶確實賞心悅目，但它們的設計其實是出於美觀以外的原因。在航空發展的早期，飛機窗戶原本是方形的。到了 1950 年代，隨著商業航空逐漸普及、飛機飛得越來越高、越來越快，卻接連發生三起飛機在空中神祕解體的事故。原因是什麼呢？正是方形窗戶。科學家發現，尖銳的角落天生就是應力容易集中的脆弱點。當飛機飛行在更高的高度時，機艙內外壓力差增大，帶來額外的應力，這個問題因此變得更加嚴重。在高空中反覆承受加壓過程時，方形窗戶的四個角落可能因此產生裂痕。相較之下，圓形窗戶能將應力更均勻地分散開來，大幅降低破裂或斷裂的風險。圓形結構同時也更堅固、更能抵抗形變，因此能承受機艙內外極端的壓力差異。因此，圓形窗戶可說是一項重大的安全創新，防止飛機在飛行途中解體。基於同樣更佳的結構完整性，圓形窗戶也被應用在船舶與太空船上。
+📋 內容大意
+Aircraft windows are rounded rather than square, and the shape serves safety, not only appearance.
+Early plane windows were square. In the 1950s, as flights climbed higher and faster, three aircraft broke apart in midair, and scientists blamed the sharp corners.
+Sharp corners are weak spots where stress builds, and high altitude makes it worse. Round windows spread the stress evenly, so ships and spacecraft use them too.
+← 第19題回到111 年學測
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

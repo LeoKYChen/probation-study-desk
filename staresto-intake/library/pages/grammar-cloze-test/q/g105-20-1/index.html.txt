@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g105-20-1/index.html
+Author: staresto-create ZZSH
+Title: 105 年學測克漏字第20題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 105 年學測 ／ 第20題
+105 年學測 克漏字 第20題
+字彙選義線索：跨句答對率 74%
+答對率 74%：當年每 100 位考生，有 74 位答對。
+Yet, knowing perfectly well 19 a troublemaker his son was, the father refused to give them any money. 20 , he asked the kidnappers to pay him $250 to take the boy back.
+(A)Namely
+(B)Altogether
+(C)Simply
+(D)Instead
+答案：(D) Instead
+題目編號：G105_20_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+前面說父親拒絕付錢，這句「取而代之」，父親反而要求綁匪付錢給他，Instead（取而代之）符合這種反轉的語意；Namely（即）、Altogether（總共）、Simply（只是）都不合。
+深入解析
+你可能會這樣想
+instead 你最熟的形狀是 instead of，而 instead of 後面一定要接名詞或 V-ing。這一題空格後面是逗號加一個完整句子，沒有 of，很多人因此覺得「instead 單獨用怪怪的」而放掉它。其實 instead 本身就是副詞，意思是「取而代之、反倒」，放句首加逗號或放句尾都是標準用法（劍橋詞典 instead：in place of someone or something else，取代某人或某物）。
+怎麼判斷
+空格在句首、後面接逗號，又是一題靠前後句關係決定的題目，所以要往回讀一句。前一句 the father refused to give them any money（父親拒絕付他們任何錢）是「不做 A」；空格這一句 he asked the kidnappers to pay him $250 to take the boy back（他反過來要求綁匪付他 $250，他才願意把男孩帶回去）是「改做 B」。「不做 A，反而做 B」正是 instead 的功能：它替換掉前一句被否決的那個動作。驗算方式是把省略的部分補回去：Instead of giving them money, he asked the kidnappers to pay him $250. 兩句意思一樣，補回去之後你就看得出來，句首單獨出現的 instead 其實是 instead of that 省略掉 of that 的結果 — of 後面的內容前一句已經講過，不必重複。這種「舊資訊省略掉」的手法你其實很熟：Do you like it? — Yes, I do.（do 代替 like it）用的是同一個道理。
+誘答選項
+Namely（也就是、即）用來把前面提過的東西點名說清楚，例 Two people were absent, namely Tom and Amy.（有兩個人缺席，就是湯姆和艾咪。）父親要錢並不是在說明「拒絕」的內容。Altogether（總共；完全地）是計數或程度副詞，例 That comes to $50 altogether.（總共是 50 美元。）Simply（只是、不過）語氣輕描淡寫，不符合這裡的反轉。要注意的是，四個選項擺在句首讀起來都通順，文法完全幫不上忙 — 這種題目只能靠前後句的邏輯關係決定。
+常考字詞與句型
+instead（取而代之、反倒）、instead of（而不是……）、namely（也就是、即）、altogether（總共；完全地）、take sb back（把某人接回去）、persuade sb to V（說服某人做……）。其中 instead of 這一組考過 6 個年度，83 年第 30 題 →、98 年第 27 題 →、102 年第 26 題 →、108 年第 28 題 →、110 年試辦考試第 13 題 →都出現過。
+線索範圍說明：Instead 與前一句父親的反應相對照
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Bill and Sam decided to kidnap the son of a banker to compensate for their business loss. They kidnapped the boy and hid him in a cave. They asked for a ransom of $2,000 to return the boy.
+16 , their plan quickly got out of control. Their young captive 17 to be a mischievous boy. He viewed the kidnapping as a wonderful camping trip. He demanded that his kidnappers play tiring games with him, such as riding Bill as a horse for nine miles. Bill and Sam were soon desperate and decided to 18 the little terror. They lowered the price to $1,500.
+Yet, knowing perfectly well 19 a troublemaker his son was, the father refused to give them any money. 20 , he asked the kidnappers to pay him $250 to take the boy back. To persuade the boy to return home, Bill and Sam had to tell him that his father was taking him bear-hunting. The kidnappers finally handed over the boy and $250 to the banker and fled town as quickly as they could.
+中譯：比爾和山姆決定綁架一位銀行家的兒子，藉此彌補他們生意上的損失。他們綁走了男孩，把他藏在一個山洞裡，並要求兩千美元的贖金才肯放人。然而，他們的計畫很快就失控了。這名年幼的人質原來是個調皮搗蛋的孩子，他把整場綁架當成一次美好的露營之旅，還要求綁匪陪他玩累人的遊戲，例如騎在比爾身上「當馬」走上九英里。比爾和山姆很快就束手無策，決定把這個小麻煩精送回去，並把贖金降到一千五百美元。然而，這位父親完全清楚自己兒子有多難搞，因此拒絕支付任何贖金。相反地，他還要求綁匪付他兩百五十美元，才願意把兒子接回去。為了說服男孩願意回家，比爾和山姆只好騙他說爸爸要帶他去獵熊。綁匪最終只好把男孩和兩百五十美元一起交給這位銀行家，然後盡快逃離小鎮。
+📋 內容大意
+Two men kidnapped a banker's son and held him for ransom to make up for financial losses.（敘事文）
+The kidnapped boy tormented his captors with exhausting games, forcing them to lower the ransom price out of desperation.（敘事文）
+The father demanded payment to take his troublemaking son back, leaving the kidnappers no choice but to pay him and flee.（敘事文）
+← 第19題回到105 年學測第21題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

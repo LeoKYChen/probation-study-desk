@@ -1,0 +1,44 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g104-22-2/index.html
+Author: staresto-create ZZSH
+Title: 104 年學測克漏字第22題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 104 年學測 ／ 第22題
+104 年學測 克漏字 第22題
+字彙選義線索：句內答對率 57%
+答對率 57%：當年每 100 位考生，有 57 位答對。
+In contrast, the peacock is not 22 seen as lucky.
+(A)officially
+(B)mutually
+(C)universally
+(D)eventually
+答案：(C) universally
+題目編號：G104_22_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「孔雀不是『普遍』被視為幸運的」，universally（普遍地）符合，呼應後文說明不同地方對孔雀看法不同（印度中國覺得幸運，但西方覺得不吉利）；officially（正式地）、mutually（相互地）、eventually（最終）都不合。
+深入解析
+你可能會這樣想
+universal 你背的是「宇宙的、全世界的」，所以看到 universally 會先想到地理範圍，覺得用在這一句語氣太大。其實 universally 的核心不在「範圍多廣」，而在「無一例外、所有情況都如此」，中文譯成「普遍地」。這個理解上的偏差，是這一格最容易出錯的地方。
+怎麼判斷
+關鍵在 not 和 universally 的先後順序。not universally 是部分否定，意思是「不是在所有情況下都……」，而不是「完全不……」。這個判斷會直接決定整段怎麼讀：空格後面兩句先說印度、中國、日本覺得孔雀吉利，再用 However 說世界其他地方輕視孔雀 —— 有的地方覺得吉利、有的不覺得，這正是「不普遍」。如果把它讀成「完全不被視為吉祥」，接下來印度那幾句就會自相矛盾。部分否定這一組請整組記起來：not all（不是全部）、not always（不是每次都）、not necessarily（未必）、not everyone（不是每個人都）。not universally 也屬於同一類。
+誘答選項
+officially（正式地、官方地）—— 吉不吉利是民間信仰，沒有官方認定這回事。mutually（相互地）要有雙方互相的動作，例 mutually beneficial（互惠的）。eventually（最終、終於）是時間副詞，例 He eventually agreed.（他最後同意了。）與「普不普遍」無關。這三個副詞的字尾都是 -ly、長度也差不多，掃過去很像，但意思領域完全不同 —— 副詞題不能靠形狀，要靠字義代入。
+常考字詞與句型
+universally（普遍地、無一例外地）、a universal truth（普世的真理）、not necessarily（未必、不一定）、not always（不是每次都）、be seen as（被視為）、mutually beneficial（互惠互利的）、eventually（最終、終於）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Much like the dove and robin, the bluebird is considered a very lucky sign in most cultures, particularly when seen in the spring. 21 , a woodpecker, when seen near the home, is regarded as a good sign. In contrast, the peacock is not 22 seen as lucky. In places like India, the peacock is considered lucky because the great many "eyes" on its feathers are said to alert it to 23 evil. Peacocks are also highly valued in China and Japan, where they are kept as symbols by the ruling families to 24 their status and wealth.
+However, the peacock receives only scorn from the rest of the world. The feathers of peacocks are considered the most 25 part of the bird because the eye-shaped markings on them are associated with "evil eyes." To bring the evil eye into the home is thus believed to invite trouble and sorrow.
+中譯：就像鴿子和知更鳥一樣，藍鳥在大多數文化中都被視為十分吉利的象徵，尤其是在春天看到的時候。同樣地，若在家附近看到啄木鳥，也被視為一種吉兆。相較之下，孔雀就不一定被視為吉祥的象徵了。在印度等地，孔雀被認為是吉祥的，因為牠羽毛上眾多「眼睛」般的花紋，據說能提醒牠留意逼近的邪惡。孔雀在中國和日本也備受重視，統治家族會飼養孔雀作為地位與財富的象徵。然而，在世界其他地方，孔雀卻常常受到輕視——孔雀的羽毛被認為是牠身上最不吉利的部位，因為羽毛上眼睛狀的花紋，常被聯想成「邪眼」。因此，人們相信把「邪眼」帶進家中，會招致麻煩與不幸。
+📋 內容大意
+Unlike birds that symbolize good fortune, peacocks hold complex cultural meanings, revered in Asian nations as symbols of protection and wealth, but shunned elsewhere as signs of bad luck.
+← 第21題回到104 年學測第23題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

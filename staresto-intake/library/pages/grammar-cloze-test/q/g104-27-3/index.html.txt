@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g104-27-3/index.html
+Author: staresto-create ZZSH
+Title: 104 年學測克漏字第27題詳解（句型結構）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 104 年學測 ／ 第27題
+104 年學測 克漏字 第27題
+句型結構線索：句內答對率 51%
+答對率 51%：當年每 100 位考生，有 51 位答對。
+The apple is one of the world's most cultivated fruit trees, 27 over 7,000 different kinds in existence.
+(A)all
+(B)with
+(C)around
+(D)still
+答案：(B) with
+題目編號：G104_27_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+with + 受詞 + 受詞補語（表附帶狀態），這裡的受詞補語是介系詞片語 in existence，「現存的品種超過七千種」；all／around／still 都不合這個句型位置。
+深入解析
+你可能會這樣想
+with 你最熟的是「和……一起」和「用……工具」。這裡是第三種用法：帶出主要動作發生時的「附帶狀態」，中文常翻成「有著……」「在……的情況下」。這個句型沒認出來就完全無從下手，所以答對率只有五成一。
+怎麼判斷
+先數一數逗號後面那一串缺什麼。逗號前 The apple is one of the world's most cultivated fruit trees 已經是一個完整的句子；逗號後是 ___ over 7,000 different kinds in existence —— 裡面有名詞 over 7,000 different kinds，也有補語 in existence（存在著），就是沒有動詞。一串沒有動詞的東西要掛到主句上，前面必須有一個介系詞把它整包帶進來，這正是 with 的工作：with + 受詞 + 受詞補語。還原成兩個獨立句子驗算最清楚：The apple is one of the world's most cultivated fruit trees. There are over 7,000 different kinds in existence.（蘋果是全世界栽培最廣的果樹之一。現存的品種超過七千種。）合併時把第二句壓成 with 帶出的附帶說明，就成了原句。這個句型最典型的例子是 He was sitting there with his eyes closed.（他坐在那裡，眼睛閉著。）那是 with + 受詞 + 過去分詞當受詞補語；本題的受詞補語是介系詞片語，受詞補語的形式不同，但句型完全一樣 —— 在這個句型裡，with 後面一定是「一個名詞，加上說明它狀態的東西」。
+誘答選項
+all、still 是限定詞或副詞；around 雖然也可以當介系詞，但那是「圍繞、在…周圍」的意思，表「大約」時是副詞，而且與緊接著的 over（超過）語意衝突。三個都沒有「把一整包名詞當附帶狀態帶進句子」的能力。填進去之後，over 7,000 different kinds in existence 這一串會懸在句子外面，沒有任何東西把它接回主句，句子就散掉了。遇到這種「逗號後面一串沒有動詞」的結構，先想有沒有介系詞可以填，往往就是答案。
+常考字詞與句型
+with + 受詞 + 受詞補語（表附帶狀態）、with one's eyes closed（閉著眼睛）、with a book in hand（手裡拿著一本書）、in existence（現存的、存在的）、one of the most + 形容詞 + 複數名詞（最……的之一）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Nutritional products that can be collected from trees include fruits, nuts, seeds, leaves, and bark. Tree products have been an important part of diets for thousands of years, from early humans 26 fruits and nuts to the first cultivation of important trees, such as mango and apple.
+The apple is one of the world's most cultivated fruit trees, 27 over 7,000 different kinds in existence. Despite their great 28 , however, most domesticated apples can be traced back to a common ancestor, the wild apple of Central Asia, Malus sieversii. Apples have been grown for thousands of years in Asia and Europe, and 29 to North America by European colonists in the 17th century.
+Today, apples are 30 eaten the world over and form the basis for multi-million dollar industries. In 2005, at least 55 million tons of apples were grown worldwide, which generated a value of about $10 billion.
+中譯：能從樹木採集到的營養產品包括水果、堅果、種子、葉片和樹皮。數千年來，樹木產物一直是人類飲食中重要的一部分，從早期人類採集水果和堅果，到後來人類開始栽培芒果、蘋果等重要果樹。蘋果是世界上栽培最廣泛的果樹之一，目前已知的品種超過 7000 種。然而，儘管品種如此繁多，大多數人工栽培的蘋果，其實都能追溯回同一個祖先——原產於中亞的野生蘋果「新疆野蘋果」。蘋果在亞洲和歐洲已栽種了數千年，並於 17 世紀由歐洲殖民者引進北美洲。如今，蘋果已是全世界普遍食用的水果，並形成了價值數百萬美元的產業。2005 年，全球至少種植了 5500 萬噸蘋果，創造了約一百億美元的產值。
+📋 內容大意
+Trees have fed people for thousands of years. They give fruit, nuts, seeds, leaves and bark. Early humans picked food; later farmers grew mango and apple.
+The apple is one of the most widely grown fruit trees. More than 7,000 kinds exist, yet nearly all come from one wild ancestor in Central Asia.
+Apples grew in Asia and Europe for centuries. European colonists took them to North America in the 17th century, and today they support big industries.
+← 第26題回到104 年學測第28題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

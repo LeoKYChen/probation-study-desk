@@ -1,0 +1,5579 @@
+[
+ {
+  "id": "VPCA-g110p2_21",
+  "year": "（一）",
+  "passageId": "PCA-g110p2",
+  "blankNum": 21,
+  "categories": [
+   "詞性判斷",
+   "字彙選義",
+   "同義呼應",
+   "句型結構"
+  ],
+  "options": {
+   "A": "open",
+   "B": "subjects",
+   "C": "requesting",
+   "D": "standard",
+   "E": "authorities",
+   "F": "inland",
+   "G": "medieval",
+   "H": "described",
+   "I": "mention",
+   "J": "earned"
+  },
+  "answer": "I",
+  "gloss": "（名詞）提及、記載",
+  "collocation": "the earliest ___ of an object we might recognize as a passport；the earliest mention of + N（最早提到……的記載）；make mention of（提到）；there is no mention of（完全沒提到）；名詞 mention 接 of，名詞 reference 接 to",
+  "explanation": "mention 你最熟的是動詞「提到」，像 Don’t mention it.（不客氣），所以很多人看到 the earliest ___ of 就跳過它，改選看起來像名詞的 standard，讀成「最早的護照標準」。其實冠詞加最高級形容詞後面要接名詞，mention 在這裡就是名詞「提及、記載」。【句構線索】把省略了關係代名詞的 we might recognize as a passport 遮起來，骨架是 the earliest ___ of an object dates from about 450 B.C.，dates 是單數，空格是單數名詞。【文內驗證】下一句 `The Hebrew Bible states` 交代這個記載出自哪裡，也就是說，這裡講的是「書上最早提到」護照的地方。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g110p2_22",
+  "year": "（一）",
+  "passageId": "PCA-g110p2",
+  "blankNum": 22,
+  "categories": [
+   "句型結構",
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "open",
+   "B": "subjects",
+   "C": "requesting",
+   "D": "standard",
+   "E": "authorities",
+   "F": "inland",
+   "G": "medieval",
+   "H": "described",
+   "I": "mention",
+   "J": "earned"
+  },
+  "answer": "C",
+  "gloss": "請求",
+  "collocation": "a letter “to the governors of the province beyond the river,” ___ safe passage for him；request + N（請求某事）；request sth from sb（向某人請求某事）；safe passage（安全通行）",
+  "explanation": "有人會選 described，以為信上「寫明」讓他安全通行。可是逗號前 The king agreed and gave Nehemiah a letter…… 已經是完整的句子，後面又沒有連接詞，described 當過去式就多出一個動詞；當過去分詞，又表示信是接受描述的一方，後面接不了受詞 safe passage。【句構線索】空格要放主動的 V-ing，因為做「請求」這個動作的是那封信；放不放行由省長決定，國王只能請求。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g110p2_23",
+  "year": "（一）",
+  "passageId": "PCA-g110p2",
+  "blankNum": 23,
+  "categories": [
+   "同義呼應",
+   "語意連貫",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "open",
+   "B": "subjects",
+   "C": "requesting",
+   "D": "standard",
+   "E": "authorities",
+   "F": "inland",
+   "G": "medieval",
+   "H": "described",
+   "I": "mention",
+   "J": "earned"
+  },
+  "answer": "G",
+  "gloss": "中世紀的",
+  "collocation": "in the ___ period；the medieval period（中世紀）＝ the Middle Ages；medieval Europe（中世紀的歐洲）",
+  "explanation": "in the ___ period 只告訴你空格是形容詞，選項裡的形容詞卻有好幾個；medieval 是第六級的字，不少人不認得，就去挑認得的 standard，讀成「標準時期」，和前面的 Centuries later 接不起來。【作答線索】句首 Centuries later 把時間從第一段的西元前 450 年往後推了一千多年，能和 period 搭配、說出「哪一個時期」的，只有表示年代的字。【文內驗證】第三段的 Europe in the Middle Ages, on the other hand 拿同一時期的歐洲來對比；medieval 來自拉丁文「中間的時代」，medieval period 正是 the Middle Ages 的另一種說法。",
+  "contextSpan": "篇章",
+  "contextNote": "線索在第三段第一句 `Europe in the Middle Ages, on the other hand, took a different approach.`（另一方面，中世紀的歐洲採取了不同的做法。）——on the other hand 拿來對比的是同一時期的兩種做法，第三段講的是 the Middle Ages，第二段的伊斯蘭國家也就落在中世紀；空格和 period 合起來，就是 the Middle Ages 的另一種說法。"
+ },
+ {
+  "id": "VPCA-g110p2_24",
+  "year": "（一）",
+  "passageId": "PCA-g110p2",
+  "blankNum": 24,
+  "categories": [
+   "字彙選義",
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "open",
+   "B": "subjects",
+   "C": "requesting",
+   "D": "standard",
+   "E": "authorities",
+   "F": "inland",
+   "G": "medieval",
+   "H": "described",
+   "I": "mention",
+   "J": "earned"
+  },
+  "answer": "J",
+  "gloss": "（動詞過去式）取得、贏得",
+  "collocation": "Only those who had settled their taxes ___ the right to journey from one region of the Caliphate to another；earn the right to + V（取得做……的資格）；earn a reputation（贏得名聲）；earn a living（謀生）",
+  "explanation": "earn 你記的是「賺錢」（earn money），看到後面接 the right 覺得對不上，就可能改選同樣是 -ed 的 described，讀成「描述了旅行的權利」；可是繳清稅款和「描述權利」沒有關係，也接不上句尾的收據像通行證。【作答線索】earn the right to + V 是「取得做……的資格」：繳清稅款，才取得在各地區之間往來的資格，所以收據就像通行證。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g110p2_25",
+  "year": "（一）",
+  "passageId": "PCA-g110p2",
+  "blankNum": 25,
+  "categories": [
+   "字彙選義",
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "open",
+   "B": "subjects",
+   "C": "requesting",
+   "D": "standard",
+   "E": "authorities",
+   "F": "inland",
+   "G": "medieval",
+   "H": "described",
+   "I": "mention",
+   "J": "earned"
+  },
+  "answer": "E",
+  "gloss": "（名詞）當局、主管機關",
+  "collocation": "travel documents were issued by local ___；local authorities（地方當局）；the authorities（有關當局）；health authorities（衛生主管機關）；an authority on + 領域（……的權威）",
+  "explanation": "authority 你記的大概是「權威」，像 an authority on history（歷史權威），用這個意思讀 issued by local ___ 讀不通，就可能改選同樣是複數名詞的 subjects，讀成「由當地的人民核發」；可是文件是發給人民的，不是人民自己發。authority 用複數時常指「當局、主管機關」，local authorities 就是地方政府。【作答線索】同一句說文件列出持有人可以進入的城鎮，決定誰進得了城的，是管這些城鎮的地方機關。【一字多義】The local authorities closed the road after the landslide.（土石流之後，地方當局封閉了那條路。）",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g110p2_26",
+  "year": "（一）",
+  "passageId": "PCA-g110p2",
+  "blankNum": 26,
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "open",
+   "B": "subjects",
+   "C": "requesting",
+   "D": "standard",
+   "E": "authorities",
+   "F": "inland",
+   "G": "medieval",
+   "H": "described",
+   "I": "mention",
+   "J": "earned"
+  },
+  "answer": "A",
+  "gloss": "開放的",
+  "collocation": "seaports, which were regarded as ___ trading points that anyone could enter；be regarded as + adj／N（視為……）；an open market（開放的市場）；be open to the public（對外開放）",
+  "explanation": "有人看到 trading points，會選 standard，讀成「標準的貿易據點」，文法上放得進去，意思卻和後面的 that anyone could enter（誰都進得去）接不起來。【作答線索】同一句前半說前往海港 no papers were needed，後半又說誰都進得去，兩處都在說海港不設門檻，所以是「開放的」貿易據點。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g110p2_27",
+  "year": "（一）",
+  "passageId": "PCA-g110p2",
+  "blankNum": 27,
+  "categories": [
+   "詞性判斷",
+   "語意連貫",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "open",
+   "B": "subjects",
+   "C": "requesting",
+   "D": "standard",
+   "E": "authorities",
+   "F": "inland",
+   "G": "medieval",
+   "H": "described",
+   "I": "mention",
+   "J": "earned"
+  },
+  "answer": "F",
+  "gloss": "（副詞）往內陸",
+  "collocation": "Traveling ___ from a seaport；travel／move／head inland（往內陸走）；inland 當形容詞：an inland city（內陸城市）、inland areas（內陸地區）",
+  "explanation": "inland 看起來是 in 加 land，你見過的多半是形容詞，像 an inland city，所以讀到 Traveling ___ from a seaport 時，有人不敢把它放在動詞後面，改選也能形容路線的 open，讀成「開放地旅行」，可是 open 沒有這種副詞用法，意思也和下文「需要文件」相反。【句構線索】travel 在這裡不接受詞，後面補的是「往哪個方向走」，修飾動詞的方向要用副詞，和 travel abroad、go home、head south 一樣，abroad、home、south 在這些句子裡都是副詞；inland 當副詞就是「往內陸」。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在前一句 `On the whole, no papers were needed to reach seaports`（大致來說，前往海港不需要任何文件）——本句的 however 把話轉過來，did require documents 和前一句的 no papers were needed 正好相反，所以本句講的路線要和「前往海港」相對：從海港出發，往內陸走。"
+ },
+ {
+  "id": "VPCA-g110p2_28",
+  "year": "（一）",
+  "passageId": "PCA-g110p2",
+  "blankNum": 28,
+  "categories": [
+   "字彙選義",
+   "同義呼應",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "open",
+   "B": "subjects",
+   "C": "requesting",
+   "D": "standard",
+   "E": "authorities",
+   "F": "inland",
+   "G": "medieval",
+   "H": "described",
+   "I": "mention",
+   "J": "earned"
+  },
+  "answer": "B",
+  "gloss": "（名詞）臣民、子民",
+  "collocation": "helping his ___ prove who they were in foreign lands；a king and his subjects（國王和他的子民）；loyal subjects（忠誠的臣民）；British subjects（英國國民）；help + 受詞 + 原形動詞",
+  "explanation": "subject 你一定認得，腦中跑出來的卻是「科目」「主題」或文法的「主詞」，用這些意思讀 helping his ___ prove who they were，接不起來，就可能改選 authorities，讀成「幫他的官員證明身分」；可是前一段的 local authorities 是發文件的單位，這裡要的是出國、需要證明身分的人。subject 還有一個歷史課常見的意思「臣民、子民」。【作答線索】句子的主角是 King Henry V，後面的 who they were 用 they，空格必須是複數的「人」，也就是國王統治下出國的人民。【文內驗證】全文第一句說旅行文件證明 `a person is under a ruler’s protection while in a foreign land`，ruler 對 King，a foreign land 對 foreign lands，受統治者保護的人就是這一格。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g110p2_29",
+  "year": "（一）",
+  "passageId": "PCA-g110p2",
+  "blankNum": 29,
+  "categories": [
+   "語意連貫",
+   "字彙選義",
+   "句型結構"
+  ],
+  "options": {
+   "A": "open",
+   "B": "subjects",
+   "C": "requesting",
+   "D": "standard",
+   "E": "authorities",
+   "F": "inland",
+   "G": "medieval",
+   "H": "described",
+   "I": "mention",
+   "J": "earned"
+  },
+  "answer": "H",
+  "gloss": "（動詞過去分詞）描述、記載",
+  "collocation": "These documents were first ___ in a 15th-century Act of Parliament；be first described in + 文件／書刊（最早記載於……）；describe A as B（把 A 描述成 B）",
+  "explanation": "有人會選同樣是 -ed 的 earned，看到 were first ___ 就以為「最早取得」說得通；可是「文件最早在法案裡取得」意思不通，後面的 in a 15th-century Act of Parliament 講的是寫在哪裡。【作答線索】同一句後半說法案還沒把它們叫做 passports，講的是法案怎麼寫、怎麼稱呼，所以文件是最早在法案裡「描述、記載」到。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g110p2_30",
+  "year": "（一）",
+  "passageId": "PCA-g110p2",
+  "blankNum": 30,
+  "categories": [
+   "語意連貫",
+   "詞性判斷",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "open",
+   "B": "subjects",
+   "C": "requesting",
+   "D": "standard",
+   "E": "authorities",
+   "F": "inland",
+   "G": "medieval",
+   "H": "described",
+   "I": "mention",
+   "J": "earned"
+  },
+  "answer": "D",
+  "gloss": "（形容詞）標準的、通行的",
+  "collocation": "passports did not become a ___ requirement for international travel until the First World War；a standard requirement（通行的規定）；standard practice（慣例、標準做法）；standard equipment（標準配備）；standard 當名詞：meet the standard（達到標準）",
+  "explanation": "standard 你熟悉的是名詞「標準」，像 high standards（高標準），看到 a ___ requirement 就不太敢放它，有人會改選 open，讀成「開放的規定」，意思卻不通。其實 standard 可以放在名詞前面當形容詞，意思是「標準的、人人照著做的」，standard requirement 就是「通行的規定」。【作答線索】前兩句才說護照在 15 世紀就有了，本句用 Even so 轉過來，可見這一格講的不是「有沒有護照」，而是「是不是出國都得帶」。【句構線索】not … until …（直到……才……）把重點放在時間點，最後一句的 Only then 又把這個時間點重說一次。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在前兩句 `King Henry V of England is credited with having invented the first true passport`（一般認為英王 Henry V 發明了第一本真正的護照）——護照在 15 世紀就有了，Even so 卻說它到一次大戰前還不是 a ___ requirement，可見空格講的不是「有沒有護照」，而是「是不是出國都得帶」，也就是成為通行的標準規定。"
+ },
+ {
+  "id": "VPCA-g101p3_21",
+  "year": "（二）",
+  "passageId": "PCA-g101p3",
+  "blankNum": 21,
+  "categories": [
+   "詞性判斷",
+   "句型結構",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "prized",
+   "B": "gap",
+   "C": "catch on",
+   "D": "ridiculed",
+   "E": "steady",
+   "F": "courts",
+   "G": "awkward",
+   "H": "diners",
+   "I": "encountered",
+   "J": "blade"
+  },
+  "answer": "E",
+  "gloss": "（動詞）使穩定、固定住",
+  "collocation": "Cooks used them to ___ meat while carving it；steady + 受詞（把……穩住、固定住）；use A to V（用 A 來做……）",
+  "explanation": "steady 你最熟的是形容詞「穩定的」（a steady job），讀到 to 後面要原形動詞時，選項裡好像找不到合適的字，很可能就卡在這一格；有人會改填另一個原形的 catch on，可是 catch on 是不及物的「流行起來」，後面接不了 meat。【句構線索】use A to V 是「用 A 來做……」，to 後面要能直接接受詞 meat 的原形動詞。【作答線索】廚師切肉時，叉子能做的就是把肉按住、不讓它亂動，所以填 steady（使穩定、穩住）。【文內驗證】下一句說叉齒把肉釘牢了，刀子切下去，肉就不會扭動或移位，正是「穩住」的結果。【一字多義】steady 當動詞：steady the ladder（扶穩梯子）、steady yourself（站穩）。形容詞和動詞同一個字形，差別在它在句子裡的位置。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g101p3_22",
+  "year": "（二）",
+  "passageId": "PCA-g101p3",
+  "blankNum": 22,
+  "categories": [
+   "語意連貫",
+   "句型結構",
+   "同義呼應"
+  ],
+  "options": {
+   "A": "prized",
+   "B": "gap",
+   "C": "catch on",
+   "D": "ridiculed",
+   "E": "steady",
+   "F": "courts",
+   "G": "awkward",
+   "H": "diners",
+   "I": "encountered",
+   "J": "blade"
+  },
+  "answer": "J",
+  "gloss": "刀刃；刀",
+  "collocation": "it would off a ___；slide off + 物（從……上滑落）；more easily than it would (slide) off a blade，would 後面省略了 slide",
+  "explanation": "看到 a ___ 要單數名詞，有人會填 gap；可是「從空隙上滑下來」說不通。這一格難在比較句省略了動詞：完整的說法是 than it would slide off a blade，後半句省掉了 slide。【作答線索】比較的兩邊要是同一類東西：前半句說肉片從叉子上滑下來，後半句就得是另一件切肉的工具。前一句已經把刀帶進來（under the knife），所以填 blade（刀刃）。【文內驗證】knife 和 blade 是同一把刀，英文常這樣換字，避免重複。【延伸的字詞搭配】a sharp／dull blade（鋒利／鈍的刀刃）、razor blade（刮鬍刀片）。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在前一句 `the meat could not twist or shift under the knife`（刀子切下去，肉就不會扭動或移位）——前一句已經把切肉的刀帶進來，本句拿叉子和另一件工具比較哪一個比較容易讓肉片滑下來，比較的對象就是這把刀，所以填 blade（刀刃）。"
+ },
+ {
+  "id": "VPCA-g101p3_23",
+  "year": "（二）",
+  "passageId": "PCA-g101p3",
+  "blankNum": 23,
+  "categories": [
+   "字彙選義",
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "prized",
+   "B": "gap",
+   "C": "catch on",
+   "D": "ridiculed",
+   "E": "steady",
+   "F": "courts",
+   "G": "awkward",
+   "H": "diners",
+   "I": "encountered",
+   "J": "blade"
+  },
+  "answer": "F",
+  "gloss": "（名詞）宮廷",
+  "collocation": "in the royal ___ of the Middle East；the royal court（王室宮廷）；at court（在宮廷裡）",
+  "explanation": "court 你最先想到的大概是「法院」或「球場」，用這兩個意思讀 the royal courts of the Middle East 接不起來，很容易把它劃掉，改填另一個複數名詞 diners；可是 in the royal diners 不是道地的英文。【作答線索】空格前是 royal，後面是 of the Middle East，句子說叉子搬上了「某個地方」的餐桌，所以要一個和國王有關的場所，也就是宮廷。下一句說叉子在拜占庭的富人之間相當普遍，也看得出叉子先流行在上層社會。【一字多義】court 最早是「圍起來的院子」：國王住的院落是宮廷；早期由國王親自審案，審案的地方後來也叫 court（法院）；圍起來打球的場地是 court（球場）。【延伸的字詞搭配】the royal court（王室宮廷）、courtyard（庭院）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g101p3_24",
+  "year": "（二）",
+  "passageId": "PCA-g101p3",
+  "blankNum": 24,
+  "categories": [
+   "字彙選義",
+   "句型結構",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "prized",
+   "B": "gap",
+   "C": "catch on",
+   "D": "ridiculed",
+   "E": "steady",
+   "F": "courts",
+   "G": "awkward",
+   "H": "diners",
+   "I": "encountered",
+   "J": "blade"
+  },
+  "answer": "C",
+  "gloss": "流行起來、普遍為人接受",
+  "collocation": "it was not until the 16th century that they started to ___ there；catch on（流行起來，不及物）；It was not until A that B（直到 A，B 才發生）；catch on to sth（弄懂、明白）",
+  "explanation": "照字面把 catch on 讀成「抓住」，後面卻沒有受詞，很多人覺得句子缺了一塊，就改填另一個原形的 steady；可是 steady 當動詞要接受詞，「叉子在義大利穩住」也說不通。這裡的 catch on 是不及物的片語動詞，意思是「流行起來、普遍為人接受」，本來就不需要受詞。【作答線索】前半說十一世紀叉子已經帶到義大利，接著 however 一轉，再配上 it was not until the 16th century that...（直到十六世紀才……），可見隔了五百年才真正普及。【句構線索】started to 後面接原形動詞，後面只剩地方副詞 there，所以要一個不接受詞的動詞。【延伸的字詞搭配】The idea never really caught on.（這個點子始終沒有流行起來）、catch on to a joke（聽懂笑話）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g101p3_25",
+  "year": "（二）",
+  "passageId": "PCA-g101p3",
+  "blankNum": 25,
+  "categories": [
+   "字詞搭配",
+   "句型結構",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "prized",
+   "B": "gap",
+   "C": "catch on",
+   "D": "ridiculed",
+   "E": "steady",
+   "F": "courts",
+   "G": "awkward",
+   "H": "diners",
+   "I": "encountered",
+   "J": "blade"
+  },
+  "answer": "G",
+  "gloss": "笨拙的、彆扭的",
+  "collocation": "they found it ___ to eat with a fork；find + it + 形容詞 + to V（覺得做某事很……，it 是虛受詞）",
+  "explanation": "prized 也帶 -ed，又是形容詞，有人會把它填進來。可是「覺得用叉子吃飯很珍貴」和前半句的 slow to accept（很慢才接受）互相矛盾。【句構線索】find it + 形容詞 + to V 是「覺得做某事很……」，it 先占住受詞的位置，真正的受詞是 to eat with a fork。【作答線索】because 帶出法國人不肯用叉子的原因，所以要負面的形容詞：awkward（彆扭的）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g101p3_26",
+  "year": "（二）",
+  "passageId": "PCA-g101p3",
+  "blankNum": 26,
+  "categories": [
+   "句型結構",
+   "字彙選義",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "prized",
+   "B": "gap",
+   "C": "catch on",
+   "D": "ridiculed",
+   "E": "steady",
+   "F": "courts",
+   "G": "awkward",
+   "H": "diners",
+   "I": "encountered",
+   "J": "blade"
+  },
+  "answer": "I",
+  "gloss": "（動詞過去分詞）遇見、見到",
+  "collocation": "having ___ them in use during his travels in Italy；encounter + 受詞（遇到、碰見）；having + p.p.（完成式分詞構句，表示比主要子句更早發生的事）",
+  "explanation": "ridiculed 也能接在 having 後面，文法上放得進去；可是嘲笑叉子的人特地把叉子帶回國，說不通。【句構線索】having + 過去分詞表示這件事比 brought forks to England 更早發生。【作答線索】in use 是「正在使用中」，encounter them in use 就是「見到別人在用」，所以填 encountered。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g101p3_27",
+  "year": "（二）",
+  "passageId": "PCA-g101p3",
+  "blankNum": 27,
+  "categories": [
+   "語意連貫",
+   "句型結構",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "prized",
+   "B": "gap",
+   "C": "catch on",
+   "D": "ridiculed",
+   "E": "steady",
+   "F": "courts",
+   "G": "awkward",
+   "H": "diners",
+   "I": "encountered",
+   "J": "blade"
+  },
+  "answer": "D",
+  "gloss": "嘲笑、譏笑",
+  "collocation": "the English ___ the fork as needless；ridicule A as B（嘲笑 A 是 B）；同類句型 regard／see／dismiss A as B（把 A 看成 B）",
+  "explanation": "encountered 也是帶 -ed 的及物動詞，放在主詞和受詞中間看起來很合；可是 encounter A as B 不是道地的說法。as needless 前面要一個「把 A 看成 B」一類的動詞，光看句構還不夠，得讀下一句，才知道英國人的態度是嘲笑。【作答線索】下一句是英國人的反問：上帝都給了人一雙手，人為什麼還需要叉子？這句話帶著挖苦的口氣，和本句的 needless（多餘的）呼應；再往下 however 一轉，說富人慢慢用起叉子，正好是「先嘲笑、後接受」。【延伸的字詞搭配】ridicule A as B（嘲笑 A 是 B）、ridiculous（荒謬可笑的）。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在下一句 `“Why should a person need a fork when God had given him hands?” they asked.`（他們問：「上帝都給了人一雙手，人為什麼還需要叉子？」）——下一句的反問帶著挖苦的口氣，說明英國人起初是拿叉子來取笑，本句說他們把叉子看成多餘的東西，用的動詞就是 ridiculed（嘲笑）。"
+ },
+ {
+  "id": "VPCA-g101p3_28",
+  "year": "（二）",
+  "passageId": "PCA-g101p3",
+  "blankNum": 28,
+  "categories": [
+   "字彙選義",
+   "詞性判斷",
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "prized",
+   "B": "gap",
+   "C": "catch on",
+   "D": "ridiculed",
+   "E": "steady",
+   "F": "courts",
+   "G": "awkward",
+   "H": "diners",
+   "I": "encountered",
+   "J": "blade"
+  },
+  "answer": "A",
+  "gloss": "（形容詞）珍貴的、珍視的",
+  "collocation": "these forks were ___ possessions；prized possessions（珍藏、心愛的東西）；prize（動詞：珍視）→ prized（形容詞：珍貴的）",
+  "explanation": "prize 你記得的是名詞「獎品」，看到 prized 可能讀成「得了獎的」，和叉子扯不上關係，就改填另一個形容詞 awkward；可是彆扭的東西，談不上讓客人印象深刻。prize 也是動詞「珍視」，過去分詞 prized 當形容詞用，就是「珍貴的」。【作答線索】同一句前半交代了這些叉子的來歷：用昂貴的材料做成，又是拿來讓客人留下深刻印象的，對主人來說當然是寶貝；前一句說富人把叉子當作社會地位的象徵，也是同一回事。【句構線索】空格夾在 were 和名詞 possessions 中間，要一個形容詞。【延伸的字詞搭配】prized possessions（心愛的東西）、be highly prized for（因……備受珍視）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g101p3_29",
+  "year": "（二）",
+  "passageId": "PCA-g101p3",
+  "blankNum": 29,
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "prized",
+   "B": "gap",
+   "C": "catch on",
+   "D": "ridiculed",
+   "E": "steady",
+   "F": "courts",
+   "G": "awkward",
+   "H": "diners",
+   "I": "encountered",
+   "J": "blade"
+  },
+  "answer": "B",
+  "gloss": "空隙、縫隙",
+  "collocation": "fell through the ___ between the two tines；the gap between A and B（A 和 B 之間的空隙）；fall through + 名詞（從……的空隙掉下去）",
+  "explanation": "blade 也是單數名詞，看到 two tines 聯想到刀叉，有人會填 blade；可是「兩根叉齒之間的刀刃」說不通。【句構線索】fall through + 名詞是照字面「從……的空隙掉下去」（through 是介系詞）；fall through 單獨用時則是「計畫告吹」。【作答線索】空格後有 between the two tines，要的是兩根叉齒之間的空間，所以填 gap。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g101p3_30",
+  "year": "（二）",
+  "passageId": "PCA-g101p3",
+  "blankNum": 30,
+  "categories": [
+   "字彙選義",
+   "語意連貫",
+   "同義呼應"
+  ],
+  "options": {
+   "A": "prized",
+   "B": "gap",
+   "C": "catch on",
+   "D": "ridiculed",
+   "E": "steady",
+   "F": "courts",
+   "G": "awkward",
+   "H": "diners",
+   "I": "encountered",
+   "J": "blade"
+  },
+  "answer": "H",
+  "gloss": "用餐的人",
+  "collocation": "made ___ less likely to drop their food；make + 受詞 + 形容詞（使……變得……）；be likely to V（可能……）",
+  "explanation": "diner 常見的意思是美式小餐館，只認得這個意思，就會跳過它，改填另一個複數名詞 courts；可是宮廷不會掉自己的食物。這裡的 diner 是「用餐的人」，由 dine（用餐）加上 -er 而來。【句構線索】make + 受詞 + less likely 是「讓某人比較不會……」。【作答線索】會掉食物的是正在吃東西的人，同一句後半的 people 指的也是這群人。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g90p1_21",
+  "year": "（三）",
+  "passageId": "PCA-g90p1",
+  "blankNum": 21,
+  "categories": [
+   "語意連貫",
+   "詞性判斷",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "fed up",
+   "B": "slices",
+   "C": "brought back",
+   "D": "remains",
+   "E": "fashionable",
+   "F": "chore",
+   "G": "assume",
+   "H": "favorite",
+   "I": "reject",
+   "J": "crisp"
+  },
+  "answer": "G",
+  "gloss": "以為、認定",
+  "collocation": "Most people would ___ that some brilliant inventor thought it up；assume that + 子句（以為、認定）；情態助動詞 would + 原形動詞",
+  "explanation": "would 後面要接原形動詞，assume 和 reject 都是原形；「拒絕相信」聽起來也像在說洋芋片不是天才發明的，只讀這一句，很容易選 reject。【作答線索】關鍵在下一句 That, however, is not how it happened.（然而，事情並不是這樣發生的。）however 表示前後意思相反，所以本句說的必須是後來證明不對的想法，也就是大家以為有一位發明家想出了洋芋片。要是填 reject，大家本來就不相信這個說法，下一句再說「事情不是這樣」，前後就不再相反，however 也就接不上了。所以填 assume（以為、認定）。【延伸的字詞搭配】It is safe to assume that…（大可認定）。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在下一句 `That, however, is not how it happened.`（然而，事情並不是這樣發生的。）——however 表示前後意思相反，本句說的必須是後來證明不對的想法，所以填 assume（以為），不是 reject（拒絕接受）。"
+ },
+ {
+  "id": "VPCA-g90p1_22",
+  "year": "（三）",
+  "passageId": "PCA-g90p1",
+  "blankNum": 22,
+  "categories": [
+   "語意連貫",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "fed up",
+   "B": "slices",
+   "C": "brought back",
+   "D": "remains",
+   "E": "fashionable",
+   "F": "chore",
+   "G": "assume",
+   "H": "favorite",
+   "I": "reject",
+   "J": "crisp"
+  },
+  "answer": "E",
+  "gloss": "時髦的、上流人士常去的",
+  "collocation": "Picture one of the most ___ restaurants；one of the most + 形容詞 + 複數名詞（最……的……之一）；a fashionable restaurant／neighborhood（時髦的餐廳／高級住宅區）",
+  "explanation": "favorite 是「最喜愛的」，看到 one of the most ___ restaurants，很容易順手填進來，可是 favorite 本身已經是「最」，一般不再加 most。【句構線索】the most 後面接形容詞，再接複數名詞 restaurants。crisp 是食物的口感，fed up 是人的情緒，都不能形容餐廳。【作答線索】fashionable（時髦的、上流人士常去的）說的正是一家講究的高級餐廳。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g90p1_23",
+  "year": "（三）",
+  "passageId": "PCA-g90p1",
+  "blankNum": 23,
+  "categories": [
+   "字詞搭配",
+   "句型結構"
+  ],
+  "options": {
+   "A": "fed up",
+   "B": "slices",
+   "C": "brought back",
+   "D": "remains",
+   "E": "fashionable",
+   "F": "chore",
+   "G": "assume",
+   "H": "favorite",
+   "I": "reject",
+   "J": "crisp"
+  },
+  "answer": "C",
+  "gloss": "帶回",
+  "collocation": "a popular dish that Thomas Jefferson had ___ from France；bring back sth from + 地方（從某地帶回）；had + 過去分詞（過去完成式）",
+  "explanation": "fed up 的字形像過去分詞，放在 had 後面看似合乎文法，可是 fed up 是形容詞「受夠了」，「Thomas Jefferson 從法國受夠了」說不通。【句構線索】that 代替 dish，當空格裡動詞的受詞，所以空格後面直接接 from France；用過去完成式，是因為帶回這道菜發生在 1853 年之前。【作答線索】from France 交代來源，bring back from 就是「從某地帶回來」。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g90p1_24",
+  "year": "（三）",
+  "passageId": "PCA-g90p1",
+  "blankNum": 24,
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "fed up",
+   "B": "slices",
+   "C": "brought back",
+   "D": "remains",
+   "E": "fashionable",
+   "F": "chore",
+   "G": "assume",
+   "H": "favorite",
+   "I": "reject",
+   "J": "crisp"
+  },
+  "answer": "J",
+  "gloss": "酥脆的",
+  "collocation": "fried until they turned golden brown and ___ on the outside；turn + 形容詞（變得……）；crisp on the outside and tender on the inside（外酥內嫩）",
+  "explanation": "and 前面是 golden brown，空格要放形容詞；fashionable 也是形容詞，前一句又在講餐廳，可能順手填進來，可是炸薯條的外皮不會「時髦」。【作答線索】油炸以後外皮會有的口感是 crisp（酥脆的）。【文內驗證】第三段廚師要讓薯片 too brittle to be eaten with a fork（脆到沒辦法用叉子吃），brittle 和 crisp 意思相近。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g90p1_25",
+  "year": "（三）",
+  "passageId": "PCA-g90p1",
+  "blankNum": 25,
+  "categories": [
+   "句型結構",
+   "詞性判斷",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "fed up",
+   "B": "slices",
+   "C": "brought back",
+   "D": "remains",
+   "E": "fashionable",
+   "F": "chore",
+   "G": "assume",
+   "H": "favorite",
+   "I": "reject",
+   "J": "crisp"
+  },
+  "answer": "I",
+  "gloss": "拒絕接受、退回",
+  "collocation": "only to have the guest ___ them as well；have + 受詞 + 原形動詞（遇到某人做某事）；only to + 原形動詞（結果卻……）",
+  "explanation": "整段故事用過去式，這一格很容易去找過去式動詞，選項裡卻沒有。【句構線索】only to have the guest ___ them，have + 受詞 + 原形動詞，表示「遇到某人做某事」，only to 表示結果令人失望。原形動詞選項裡 assume them 說不通，填 reject（拒絕接受、退回）。【文內驗證】前一句客人已經 sent them back to the kitchen，as well（也）指同樣的事又來一次。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g90p1_26",
+  "year": "（三）",
+  "passageId": "PCA-g90p1",
+  "blankNum": 26,
+  "categories": [
+   "語意連貫",
+   "同義呼應"
+  ],
+  "options": {
+   "A": "fed up",
+   "B": "slices",
+   "C": "brought back",
+   "D": "remains",
+   "E": "fashionable",
+   "F": "chore",
+   "G": "assume",
+   "H": "favorite",
+   "I": "reject",
+   "J": "crisp"
+  },
+  "answer": "A",
+  "gloss": "受夠了、忍無可忍",
+  "collocation": "By this time the cook was ___；be fed up with sth／sb（受夠了……）",
+  "explanation": "was 後面放形容詞，fashionable、crisp 都接得上，brought back 也能組成 be + 過去分詞；單看這一句，「廚師很時髦」在文法上也說得通。【作答線索】By this time（到這時候）表示事情累積到某個程度：客人先嫌薯條太厚，又把切薄的一盤也退回來，廚師的耐性到這裡用完了。下一句 Determined to give the man exactly what he wanted 寫他決定把馬鈴薯削得薄到不能再薄，好讓客人用叉子吃不了，這是受夠了的人才會有的賭氣做法，所以填 fed up（受夠了、忍無可忍）。【文內驗證】第一段最後一句已經預告故事裡有 an angry cook，和 fed up 前後呼應。【延伸的字詞搭配】be fed up with waiting（等得不耐煩）；be fed up with sb（受夠了某人）。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在前後兩句：前一句 `only to have the guest ___ them as well`（沒想到客人連這一盤也……）說廚師重做的薯條又一次不合客人的意；下一句 `Determined to give the man exactly what he wanted`（決心完全照這個人的要求做）寫他賭氣的做法。前後兩句合起來，空格要的是廚師受夠了的心情，填 fed up。"
+ },
+ {
+  "id": "VPCA-g90p1_27",
+  "year": "（三）",
+  "passageId": "PCA-g90p1",
+  "blankNum": 27,
+  "categories": [
+   "詞性判斷",
+   "字彙選義",
+   "同義呼應"
+  ],
+  "options": {
+   "A": "fed up",
+   "B": "slices",
+   "C": "brought back",
+   "D": "remains",
+   "E": "fashionable",
+   "F": "chore",
+   "G": "assume",
+   "H": "favorite",
+   "I": "reject",
+   "J": "crisp"
+  },
+  "answer": "B",
+  "gloss": "（名詞）薄片",
+  "collocation": "the diner was delighted with the paper-thin ___；be delighted with sth（對……很滿意）；paper-thin slices（薄得像紙一樣的片）；a slice of + 食物",
+  "explanation": "slices 看起來像第三人稱單數的動詞（切），先按詞性把選項分類的話，很可能把它歸到動詞那一堆。其實 slice 也是名詞「薄片」，複數就是 slices。【句構線索】空格前有 the 和形容詞 paper-thin（薄得像紙一樣），空格是 delighted with 的受詞，slices 在這裡只能是名詞。chore 是「費事的工作」，不會薄得像紙；favorite 和 paper-thin 也搭不上。【文內驗證】前一句說廚師 shaved the potatoes as thin as he possibly could，本句的 paper-thin 正是在呼應這件事，一片片端上桌的就是 slices。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g90p1_28",
+  "year": "（三）",
+  "passageId": "PCA-g90p1",
+  "blankNum": 28,
+  "categories": [
+   "字彙選義",
+   "詞性判斷",
+   "句型結構"
+  ],
+  "options": {
+   "A": "fed up",
+   "B": "slices",
+   "C": "brought back",
+   "D": "remains",
+   "E": "fashionable",
+   "F": "chore",
+   "G": "assume",
+   "H": "favorite",
+   "I": "reject",
+   "J": "crisp"
+  },
+  "answer": "H",
+  "gloss": "（名詞）最受喜愛的東西",
+  "collocation": "became such a ___ that diners asked to take some home；such a + 單數名詞 + that 子句（如此……以致於……）；a favorite with sb（受某人喜愛的東西）",
+  "explanation": "favorite 最熟的是形容詞「最喜愛的」，例如 my favorite song，遇到需要名詞的 became such a ___ that，不會想到它，反而去找 chore。其實 favorite 也可以當名詞，指「最受喜愛的人或東西」：Ice cream is a favorite with children.（冰淇淋是小孩最愛的東西。）【句構線索】such a + 單數名詞 + that 子句，意思是「如此……以致於……」。chore 也是單數名詞，放進去卻成了「洋芋片成了一件苦差事，以致於客人要求帶一些回家」，因果接不起來。【作答線索】that 子句交代結果：客人要求帶一些回家，可見洋芋片極受喜愛。【文內驗證】第三段結尾 before long other guests were ordering them too（沒多久其他客人也開始點），說的是同一股熱潮。【延伸的字詞搭配】a crowd favorite（大家的最愛）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g90p1_29",
+  "year": "（三）",
+  "passageId": "PCA-g90p1",
+  "blankNum": 29,
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "fed up",
+   "B": "slices",
+   "C": "brought back",
+   "D": "remains",
+   "E": "fashionable",
+   "F": "chore",
+   "G": "assume",
+   "H": "favorite",
+   "I": "reject",
+   "J": "crisp"
+  },
+  "answer": "F",
+  "gloss": "費時又累人的工作、苦差事",
+  "collocation": "making them was a time-consuming ___；a time-consuming chore（費時的苦差事）；household chores（家事）",
+  "explanation": "favorite 也是單數名詞，前文又一路在講洋芋片受歡迎，可能順手填進來，可是「費時的最愛」和前半句接不上。【作答線索】Because 子句交代原因：馬鈴薯得一顆顆用手削皮；空格所在的部分交代結果：做洋芋片成了費時又累人的工作，後半句 the chips were often out of stock 再說出後果。chore 指單調、費力的例行工作。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g90p1_30",
+  "year": "（三）",
+  "passageId": "PCA-g90p1",
+  "blankNum": 30,
+  "categories": [
+   "詞性判斷",
+   "句型結構",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "fed up",
+   "B": "slices",
+   "C": "brought back",
+   "D": "remains",
+   "E": "fashionable",
+   "F": "chore",
+   "G": "assume",
+   "H": "favorite",
+   "I": "reject",
+   "J": "crisp"
+  },
+  "answer": "D",
+  "gloss": "（動詞）仍然是",
+  "collocation": "to this day it ___ as popular as ever；remain + 形容詞（仍然……）；as popular as ever（和以前一樣受歡迎）",
+  "explanation": "remains 常記成名詞「遺跡、遺骸」（the remains of an ancient city），看到 -s 結尾，容易把它當名詞放在一旁；slices 也是 -s 結尾，字形同樣放得進這個位置。【句構線索】it 是主詞，空格後的 as popular as ever 是形容詞片語，中間缺的是連綴動詞。子句開頭的 to this day（直到今天）說的是現在的情形，所以用現在式，主詞 it 是第三人稱單數，動詞就是 remains；「它切得和以前一樣受歡迎」不成話。【延伸的字詞搭配】remain silent（保持沉默）；remain unchanged（維持不變）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z110p2_21",
+  "year": "（四）",
+  "passageId": "PCA-z110p2",
+  "blankNum": 21,
+  "categories": [
+   "語意連貫",
+   "字彙選義",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "rise",
+   "B": "harsh",
+   "C": "privilege",
+   "D": "ushering",
+   "E": "elegant",
+   "F": "developed",
+   "G": "scene",
+   "H": "afford",
+   "I": "byproduct",
+   "J": "mediocre"
+  },
+  "answer": "I",
+  "gloss": "（名詞）副產品、附帶產生的結果",
+  "collocation": "today’s restaurant business is a ___ of the class warfare；a byproduct of + N（……的副產品）；an unexpected／unintended byproduct（意外的副產品）；by- 是「旁邊、次要」的意思，同 bystander（旁觀者）、bypass（繞道）",
+  "explanation": "空格夾在 a 和 of 中間，要填單數名詞，但名詞選項不只一個。scene 最容易吸走人：a scene of the class warfare 讀成「階級鬥爭的一幕」，餐飲業卻成了鬥爭的現場，和「誕生」接不上。【作答線索】第一句用 gave birth to 講餐廳的來歷，還說這個誕生 hardly in a civilized way；第二句用 In fact 補充它是從什麼裡面生出來的：階級鬥爭。鬥爭的目的是推翻貴族，不是開餐廳，餐廳是順帶產生的結果，所以填 byproduct（副產品）。【文內驗證】第三、四段寫出經過：貴族出逃，失業的廚師進城，一年內開出將近 50 家餐廳。【延伸的字詞搭配】an unintended byproduct（意料之外的副產品）。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在前一句 `France gave birth to the restaurant, though hardly in a civilized way`（餐廳誕生在法國，過程卻一點也不文明）——前一句用「生出來」比喻餐廳的來歷，本句接著交代它是從大革命的階級鬥爭裡附帶生出來的，填 byproduct（副產品）。"
+ },
+ {
+  "id": "VPCA-z110p2_22",
+  "year": "（四）",
+  "passageId": "PCA-z110p2",
+  "blankNum": 22,
+  "categories": [
+   "字彙選義",
+   "同義呼應"
+  ],
+  "options": {
+   "A": "rise",
+   "B": "harsh",
+   "C": "privilege",
+   "D": "ushering",
+   "E": "elegant",
+   "F": "developed",
+   "G": "scene",
+   "H": "afford",
+   "I": "byproduct",
+   "J": "mediocre"
+  },
+  "answer": "C",
+  "gloss": "（名詞）特權",
+  "collocation": "fine dining was a ___ reserved for noble families；a privilege reserved for + 某群人（專屬某群人的特權）；enjoy the privilege of + V-ing（享有……的特權）；It is a privilege to + V（……是一種榮幸）",
+  "explanation": "a ___ reserved for 要單數名詞，scene 也進得去。可是 reserved for noble families 是「只保留給貴族」，講的是只有某些人才享有的東西。【作答線索】下一句用 by contrast 對比：平民只能去髒亂的路邊旅店。一邊獨享、一邊沒有，填 privilege（特權）才對得上。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z110p2_23",
+  "year": "（四）",
+  "passageId": "PCA-z110p2",
+  "blankNum": 23,
+  "categories": [
+   "語意連貫",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "rise",
+   "B": "harsh",
+   "C": "privilege",
+   "D": "ushering",
+   "E": "elegant",
+   "F": "developed",
+   "G": "scene",
+   "H": "afford",
+   "I": "byproduct",
+   "J": "mediocre"
+  },
+  "answer": "J",
+  "gloss": "（形容詞）普通的、平庸的",
+  "collocation": "strangers crowded around ___ buffets of lukewarm roasts and over-sauced beans；mediocre food／grades／performance（普普通通的食物／成績／表現）",
+  "explanation": "buffets 前面要形容詞，elegant 最容易誤選，因為自助餐也可以很高級。可是這一句都在講平民吃得多差：旅店 dusty, shabby，烤肉 lukewarm（不冷不熱），豆子 over-sauced（醬汁太多）。【怎麼判斷】前後的形容詞都往「差」那邊走，空格也要同一個方向，mediocre 是「普通、不怎麼樣」。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z110p2_24",
+  "year": "（四）",
+  "passageId": "PCA-z110p2",
+  "blankNum": 24,
+  "categories": [
+   "字詞搭配",
+   "句型結構"
+  ],
+  "options": {
+   "A": "rise",
+   "B": "harsh",
+   "C": "privilege",
+   "D": "ushering",
+   "E": "elegant",
+   "F": "developed",
+   "G": "scene",
+   "H": "afford",
+   "I": "byproduct",
+   "J": "mediocre"
+  },
+  "answer": "F",
+  "gloss": "（動詞過去式）培養出（develop a taste for 開始愛上）",
+  "collocation": "the merchant class of Paris ___ a taste for healthy clear broths；develop a taste for + N（開始喜歡上……）；acquire a taste for + N（漸漸喜歡上……）；an acquired taste（要慢慢才吃得慣的東西）",
+  "explanation": "develop 學生記的是「發展、開發」，看到 ___ a taste for 想不到「培養出一種喜好」。develop a taste for 是常用說法，「開始喜歡上」。【句構線索】主詞後面要一個能接受詞 a taste 的主要動詞，時間在 1760 年代，用過去式。選項裡只有 developed 是過去式，但這一格要學會的是 develop 的這個意思。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z110p2_25",
+  "year": "（四）",
+  "passageId": "PCA-z110p2",
+  "blankNum": 25,
+  "categories": [
+   "語意連貫",
+   "句型結構",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "rise",
+   "B": "harsh",
+   "C": "privilege",
+   "D": "ushering",
+   "E": "elegant",
+   "F": "developed",
+   "G": "scene",
+   "H": "afford",
+   "I": "byproduct",
+   "J": "mediocre"
+  },
+  "answer": "H",
+  "gloss": "（動詞原形）買得起、負擔得起",
+  "collocation": "most of the French population could not ___ bread；can／could not afford + N（買不起……）；can’t afford to + V（沒錢做……；也指承擔不起……的後果）；affordable（價格負擔得起的）",
+  "explanation": "could not 後面要原形動詞，原形的選項有 afford 和 rise。有人想到麵包會「發」（the bread rises）而填 rise，可是 rise 不及物，不能接 bread 當受詞。【作答線索】句首 Ironically 表示反差：巴黎才有了可以點各式菜色的餐廳，大多數人卻連麵包都買不起，所以填 afford。【文內驗證】下一句說嚴冬和重稅掏空了餐桌，群眾在挨餓（the starving masses）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z110p2_26",
+  "year": "（四）",
+  "passageId": "PCA-z110p2",
+  "blankNum": 26,
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "rise",
+   "B": "harsh",
+   "C": "privilege",
+   "D": "ushering",
+   "E": "elegant",
+   "F": "developed",
+   "G": "scene",
+   "H": "afford",
+   "I": "byproduct",
+   "J": "mediocre"
+  },
+  "answer": "B",
+  "gloss": "（形容詞）嚴酷的、惡劣的",
+  "collocation": "Decades of ___ winters and oppressive taxation；harsh winters／weather／conditions（嚴寒的冬天／惡劣的天候、環境）；harsh criticism（嚴厲的批評）；a harsh punishment（重罰）",
+  "explanation": "空格要形容詞修飾 winters，有人會選 mediocre，以為「普通的冬天」也通。可是這些冬天和 oppressive taxation（沉重的稅）並列，一起讓一般人家的餐桌空了（had taken their toll on kitchen tables），兩樣都要是讓日子難過的東西。harsh winters 是酷寒的冬天，普通的冬天不會讓人挨餓。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z110p2_27",
+  "year": "（四）",
+  "passageId": "PCA-z110p2",
+  "blankNum": 27,
+  "categories": [
+   "字彙選義",
+   "字詞搭配",
+   "句型結構",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "rise",
+   "B": "harsh",
+   "C": "privilege",
+   "D": "ushering",
+   "E": "elegant",
+   "F": "developed",
+   "G": "scene",
+   "H": "afford",
+   "I": "byproduct",
+   "J": "mediocre"
+  },
+  "answer": "D",
+  "gloss": "（動詞 V-ing，分詞構句）引來、揭開……的序幕（usher in）",
+  "collocation": "Looting and riots broke out across Paris, ___ in the French Revolution；usher in + N（揭開……的序幕、帶來新時代）；usher in a new era（開啟新時代）；usher sb into a room（引某人進房間）",
+  "explanation": "usher 學生如果見過，記的是名詞「帶位員」；看到 ushering 不知道它能當動詞，就把它跳過。【一字多義】帶位員做的事是「領人進去」，所以動詞 usher 是「引導」，如 usher the guests into the hall（領客人進大廳）。把「領進門」用在事件上，usher in 就是「揭開……的序幕、迎來」：搶劫和暴動把法國大革命領了進來，也就是說，暴動是大革命的開端。【句構線索】逗號前已經是完整的句子，又沒有連接詞，逗號後只能用分詞；ushering 用主動的 V-ing，因為「揭開序幕」的是前面的搶劫和暴動。【延伸的字詞搭配】usher in a new era（開啟新時代）、usher in the New Year（迎接新年）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z110p2_28",
+  "year": "（四）",
+  "passageId": "PCA-z110p2",
+  "blankNum": 28,
+  "categories": [
+   "語意連貫",
+   "同義呼應"
+  ],
+  "options": {
+   "A": "rise",
+   "B": "harsh",
+   "C": "privilege",
+   "D": "ushering",
+   "E": "elegant",
+   "F": "developed",
+   "G": "scene",
+   "H": "afford",
+   "I": "byproduct",
+   "J": "mediocre"
+  },
+  "answer": "E",
+  "gloss": "（形容詞）高雅的、高級的",
+  "collocation": "nearly 50 ___ restaurants had popped up in Paris；an elegant restaurant／dress／hotel（高級的餐廳／高雅的禮服／氣派的飯店）；an elegant solution（巧妙簡潔的解法）",
+  "explanation": "只看本句 nearly 50 ___ restaurants had popped up，好像什麼形容詞都放得進去，mediocre 最容易吸走人。關鍵在這些餐廳是誰開的，答案要往前一句找。【作答線索】前一句說貴族逃走，留下 highly skilled chefs（技術高超的廚師）和 fine wines（好酒）；本句前半說這些廚師進了城裡的餐館。一流的廚師帶著服侍貴族的手藝進城，開出來的是高級餐廳，所以填 elegant。【文內驗證】第五段的 champagne and fine food（香檳和美食）也是同一個方向，說的都是講究的飲食。【延伸的字詞搭配】an elegant restaurant／hotel（高級餐廳／氣派的飯店）。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在前一句 `leaving behind their highly skilled chefs and the fine wines stored in their cellars`（留下了技術高超的廚師和酒窖裡的好酒）——前一句交代貴族留下一流的廚師和好酒，這些廚師進城以後開出來的是高級餐廳，填 elegant（高雅的、高級的）。"
+ },
+ {
+  "id": "VPCA-z110p2_29",
+  "year": "（四）",
+  "passageId": "PCA-z110p2",
+  "blankNum": 29,
+  "categories": [
+   "詞性判斷",
+   "字彙選義",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "rise",
+   "B": "harsh",
+   "C": "privilege",
+   "D": "ushering",
+   "E": "elegant",
+   "F": "developed",
+   "G": "scene",
+   "H": "afford",
+   "I": "byproduct",
+   "J": "mediocre"
+  },
+  "answer": "A",
+  "gloss": "（動詞原形）上升、增加",
+  "collocation": "The number of restaurants began to ___ sharply；the number of + 複數名詞 + rise／grow／increase（……的數量增加）；rise sharply／steadily（急劇／穩定上升）；a sharp rise in + N（……急劇增加）",
+  "explanation": "rise 學生常在 a rise in prices（物價上漲）這類片語裡看到，當成名詞，就不往 began to 後面放；began to 後面要原形動詞，原形的選項又有 afford 和 rise 兩個。afford 是及物動詞，後面要接買得起的東西，這裡只有副詞 sharply，接不上。【怎麼判斷】主詞 The number of restaurants 要的是表示多少的動詞，number 搭配 rise、grow、increase、drop；sharply 說明變化很大，began to rise sharply 就是「開始急劇增加」。rise 同一個字形可以是名詞、也可以是動詞，要先讀懂句子才分得出來。【文內驗證】下一句說 1814 年的旅遊指南列了大約三千家餐廳，比第四段的將近 50 家多了好幾十倍。【延伸的字詞搭配】a sharp rise in sales（銷售額急劇增加）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z110p2_30",
+  "year": "（四）",
+  "passageId": "PCA-z110p2",
+  "blankNum": 30,
+  "categories": [
+   "字彙選義",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "rise",
+   "B": "harsh",
+   "C": "privilege",
+   "D": "ushering",
+   "E": "elegant",
+   "F": "developed",
+   "G": "scene",
+   "H": "afford",
+   "I": "byproduct",
+   "J": "mediocre"
+  },
+  "answer": "G",
+  "gloss": "（名詞）（某個領域的）圈子、……界",
+  "collocation": "Paris had become the center of a new restaurant ___；the restaurant／food／music／art scene（餐飲／美食／音樂／藝術圈）；on the scene（在現場）；behind the scenes（在幕後）",
+  "explanation": "scene 學生記的是「場景、現場」，a new restaurant scene 翻成「新的餐廳場景」覺得不通，就不敢選。scene 另一個常用的意思是某個領域的整體活動和相關的人，也就是「……圈、……界」，如 the music scene（樂壇）、the art scene（藝術圈）。【怎麼判斷】a new restaurant ___ 前有冠詞和形容詞，restaurant 當修飾語，空格要單數名詞；privilege、byproduct 文法上也進得去，但「新的餐廳特權」「新的餐廳副產品」說不出意思。【文內驗證】前一句才說三千家餐廳列在旅遊指南上，巴黎成了整個餐飲圈的中心，句尾再補一句：在某種程度上，巴黎到今天仍然是這個圈子的中心。【延伸的字詞搭配】the local food scene（當地美食圈）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g108p3_21",
+  "year": "（五）",
+  "passageId": "PCA-g108p3",
+  "blankNum": 21,
+  "categories": [
+   "字詞搭配",
+   "詞性判斷",
+   "句型結構"
+  ],
+  "options": {
+   "A": "neutral",
+   "B": "fragments",
+   "C": "report",
+   "D": "intrudes",
+   "E": "catchy",
+   "F": "minority",
+   "G": "embedded",
+   "H": "hits",
+   "I": "loop",
+   "J": "stick"
+  },
+  "answer": "D",
+  "gloss": "（動詞第三人稱單數）闖入、打擾",
+  "collocation": "a tune ___ on our thoughts without warning；intrude on／upon + N（闖入、打擾）；intrude on sb's privacy（侵犯某人的隱私）；intruder（入侵者）",
+  "explanation": "常見的誤選是 hits：字尾同樣有 s，hit on 看起來也像一組片語。可是 hit on 是「想到（點子）」或「搭訕」，主詞不會是一段旋律。【句構線索】主詞 a tune 是單數，空格要放現在式第三人稱單數的動詞，後面還要能接 on。【作答線索】without warning（毫無預警）說的就是不請自來，intrude on 正是「闖進、打擾」。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g108p3_22",
+  "year": "（五）",
+  "passageId": "PCA-g108p3",
+  "blankNum": 22,
+  "categories": [
+   "字詞搭配",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "neutral",
+   "B": "fragments",
+   "C": "report",
+   "D": "intrudes",
+   "E": "catchy",
+   "F": "minority",
+   "G": "embedded",
+   "H": "hits",
+   "I": "loop",
+   "J": "stick"
+  },
+  "answer": "I",
+  "gloss": "（名詞）循環",
+  "collocation": "it plays, and replays, in a never-ending ___；in a loop（不斷循環）；an endless／a never-ending loop（沒完沒了的循環）；be out of the loop（狀況外）",
+  "explanation": "讀到 plays, and replays，很容易聯想到電台一再播放的歌，就去選跟音樂有關的 hits；可是 a never-ending 後面要單數名詞，hits 是複數。【作答線索】單數名詞選項不只一個，report、stick 也能當名詞，要靠意思判斷：旋律播完又繞回開頭再來一次，這就是 loop，後面說它可以持續好幾個小時，也只有「循環」說得通。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g108p3_23",
+  "year": "（五）",
+  "passageId": "PCA-g108p3",
+  "blankNum": 23,
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "neutral",
+   "B": "fragments",
+   "C": "report",
+   "D": "intrudes",
+   "E": "catchy",
+   "F": "minority",
+   "G": "embedded",
+   "H": "hits",
+   "I": "loop",
+   "J": "stick"
+  },
+  "answer": "G",
+  "gloss": "（過去分詞，當形容詞用）深植的、嵌入的",
+  "collocation": "the melody grows more deeply ___ in the mind；be／become deeply embedded in（深植於……）；grow + 形容詞（漸漸變得……）",
+  "explanation": "這一句在講旋律，所以常有人選 catchy（好記的）。可是 more deeply catchy 不是英文會說的話，deeply embedded in（深深嵌進）才是常見的搭配。【句構線索】grows 在這裡是連綴動詞「漸漸變得」，後面接形容詞或當形容詞用的過去分詞。【作答線索】With each repetition（每重複一次）表示程度一次比一次深，句尾又說耳朵沒聽到、大腦還在播，正是旋律嵌進腦中的結果。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g108p3_24",
+  "year": "（五）",
+  "passageId": "PCA-g108p3",
+  "blankNum": 24,
+  "categories": [
+   "語意連貫",
+   "字詞搭配",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "neutral",
+   "B": "fragments",
+   "C": "report",
+   "D": "intrudes",
+   "E": "catchy",
+   "F": "minority",
+   "G": "embedded",
+   "H": "hits",
+   "I": "loop",
+   "J": "stick"
+  },
+  "answer": "B",
+  "gloss": "（名詞複數）片段",
+  "collocation": "they often take the form of song ___；take the form of + N（以……的形式出現）；fragments of + N（……的片段）",
+  "explanation": "只看這一句，song hits（熱門歌曲）文法通、意思也通，很多人會選 hits：耳蟲本來就常是流行歌。問題出在前一句已經說耳蟲很少是整首歌，hits 指的是整首走紅的歌，接在後面就前後矛盾。【句構線索】song 後面要接名詞，空格前沒有冠詞，可數名詞要用複數，選項裡的複數名詞是 fragments 和 hits。【作答線索】本句用 Instead（反而）開頭，接的是前一句「整首歌」的反面，所以是 fragments（片段）。【延伸的字詞搭配】fragments of a conversation（零星聽到的對話）、break into fragments（碎成片段）。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在前一句 `Earworms seldom consist of entire songs.`（耳蟲很少是整首歌）——前一句先說耳蟲很少是整首歌，本句用 Instead 接著說它常常是什麼樣子，答案要是「整首」的反面，所以填 fragments（片段）。只看本句，take the form of song hits（以熱門歌曲的形式出現）文法語意都通，你選不出來。"
+ },
+ {
+  "id": "VPCA-g108p3_25",
+  "year": "（五）",
+  "passageId": "PCA-g108p3",
+  "blankNum": 25,
+  "categories": [
+   "字彙選義",
+   "詞性判斷",
+   "同義呼應",
+   "句型結構"
+  ],
+  "options": {
+   "A": "neutral",
+   "B": "fragments",
+   "C": "report",
+   "D": "intrudes",
+   "E": "catchy",
+   "F": "minority",
+   "G": "embedded",
+   "H": "hits",
+   "I": "loop",
+   "J": "stick"
+  },
+  "answer": "J",
+  "gloss": "（動詞）留在（記憶中）、揮之不去",
+  "collocation": "why certain songs ___ in the mind more readily than others；stick in the mind／stick in one's head（留在腦海裡、讓人忘不了）；get stuck in one's head（卡在腦中）；stick with sb（讓人一直記得）",
+  "explanation": "stick 一般人先想到名詞「棍子」，或是動詞「黏、貼」（stick a stamp on the envelope），想不到「一首歌留在腦子裡」也用這個字，所以常把它跳過，改填同樣是原形動詞的 report。可是 report 是「表示、報告」，歌不會「在腦中報告」。【句構線索】why certain songs ___ in the mind 是間接問句，疑問詞後面照直述句的順序排，certain songs 是主詞，空格是它的動詞；主詞是複數、現在式，要原形。【文內驗證】第一段第一句說音樂會 get stuck in our heads，stuck 正是 stick 的過去分詞；本句問「為什麼有些歌比較容易留在腦中」，就是把開頭那句換個說法再講一次。【一字多義】stick 當動詞，最早是「刺進去」，刺進去的東西就固定在那裡，所以引申為「黏住、卡住」；一首歌 stick in the mind，就是在腦子裡固定下來、趕不走。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g108p3_26",
+  "year": "（五）",
+  "passageId": "PCA-g108p3",
+  "blankNum": 26,
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "neutral",
+   "B": "fragments",
+   "C": "report",
+   "D": "intrudes",
+   "E": "catchy",
+   "F": "minority",
+   "G": "embedded",
+   "H": "hits",
+   "I": "loop",
+   "J": "stick"
+  },
+  "answer": "E",
+  "gloss": "（形容詞）朗朗上口的、容易記住的",
+  "collocation": "repetitive lyrics that are ___ and easy to remember；a catchy tune／song／slogan（好記的曲子／歌／標語）",
+  "explanation": "neutral 也是形容詞，有人會覺得「中性的歌詞」說得通。可是這一句在說什麼樣的歌最容易變成耳蟲，「中性」說不出歌詞為什麼容易卡在腦中。【作答線索】and 後面的 easy to remember（容易記住）和空格並列，意思要相近，正是 catchy。catchy 來自 catch（抓住），一下子就抓住耳朵的歌，就是 catchy。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g108p3_27",
+  "year": "（五）",
+  "passageId": "PCA-g108p3",
+  "blankNum": 27,
+  "categories": [
+   "詞性判斷",
+   "字彙選義",
+   "句型結構",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "neutral",
+   "B": "fragments",
+   "C": "report",
+   "D": "intrudes",
+   "E": "catchy",
+   "F": "minority",
+   "G": "embedded",
+   "H": "hits",
+   "I": "loop",
+   "J": "stick"
+  },
+  "answer": "H",
+  "gloss": "（名詞複數）熱門歌曲、走紅的作品",
+  "collocation": "Commercial jingles and slightly annoying radio ___ are prime examples；radio hits（電台熱播歌曲）；a hit song（熱門歌曲）；a big／smash hit（大受歡迎的作品）；be a hit with sb（受某人歡迎）",
+  "explanation": "hit 你熟悉的是動詞「打、撞」，看到 hits 就當成動詞刪掉，改選 fragments。這裡的 hits 是名詞複數，指大受歡迎、到處都在播的歌。【句構線索】這一句的動詞是後面的 are，Commercial jingles and slightly annoying radio ___ 整串都是主詞，空格只能是名詞；radio 在這裡修飾後面的名詞，和 radio station 一樣。空格前沒有冠詞，可數名詞要用複數，選項裡的複數名詞是 hits 和 fragments，可是 radio fragments（電台的片段）不是一類歌。【作答線索】主詞是兩類並列的歌，commercial jingles（廣告歌曲）是一類，另一類要能和它並排，還要說得上「有點煩人」；一首歌在電台一天播上好幾次，聽到後來才會有點煩，熱門歌曲正是這樣。【一字多義】名詞 hit 是「一擊」，打中目標就是成功，所以也指受歡迎的作品：The movie was a big hit.（那部電影很賣座。）",
+  "contextSpan": "跨句",
+  "contextNote": "線索在前一句 `The likeliest candidates pair a simple, upbeat melody with repetitive lyrics`（最可能變成耳蟲的歌，旋律簡單輕快、歌詞一再重複）——本句的 prime examples（最典型的例子）就是前一句那種歌的實例：廣告歌曲是一類，另一類是電台一再播放的流行歌，所以填 hits（熱門歌曲）。"
+ },
+ {
+  "id": "VPCA-g108p3_28",
+  "year": "（五）",
+  "passageId": "PCA-g108p3",
+  "blankNum": 28,
+  "categories": [
+   "字詞搭配",
+   "句型結構"
+  ],
+  "options": {
+   "A": "neutral",
+   "B": "fragments",
+   "C": "report",
+   "D": "intrudes",
+   "E": "catchy",
+   "F": "minority",
+   "G": "embedded",
+   "H": "hits",
+   "I": "loop",
+   "J": "stick"
+  },
+  "answer": "C",
+  "gloss": "（動詞）表示、說出（自己的感受）",
+  "collocation": "Many people who get them ___ finding the experience pleasant；report + V-ing（表示自己……）；report that + 子句（表示……）",
+  "explanation": "stick 也是原形動詞，有人會填 stick，可是 stick finding the experience pleasant 不成話。【句構線索】主詞 Many people 後面接了形容詞子句 who get them，子句結束才輪到主要動詞；主詞是複數、現在式，要原形。【怎麼判斷】空格後面接 finding（V-ing），能接動名詞、又能說出自己感受的是 report，意思是「表示自己……」。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g108p3_29",
+  "year": "（五）",
+  "passageId": "PCA-g108p3",
+  "blankNum": 29,
+  "categories": [
+   "語意連貫",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "neutral",
+   "B": "fragments",
+   "C": "report",
+   "D": "intrudes",
+   "E": "catchy",
+   "F": "minority",
+   "G": "embedded",
+   "H": "hits",
+   "I": "loop",
+   "J": "stick"
+  },
+  "answer": "A",
+  "gloss": "（形容詞）無所謂好壞的、沒有特別感覺的",
+  "collocation": "Others feel ___ about the tune, neither delighted nor upset；feel neutral about（對……沒有特別的好惡）；remain／stay neutral（保持中立）",
+  "explanation": "前一句才講過愉快，有人會以為這裡也要填「好聽、好記」的 catchy；可是 feel 的主詞是人，catchy 形容的是歌，人不會 feel catchy。【作答線索】句尾 neither delighted nor upset（既不特別高興，也不心煩）把意思說明白了：不好不壞，就是 neutral。neutral 你可能只記得「中立國」的「中立」，用在感受上，就是「無所謂」。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g108p3_30",
+  "year": "（五）",
+  "passageId": "PCA-g108p3",
+  "blankNum": 30,
+  "categories": [
+   "語意連貫",
+   "字詞搭配",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "neutral",
+   "B": "fragments",
+   "C": "report",
+   "D": "intrudes",
+   "E": "catchy",
+   "F": "minority",
+   "G": "embedded",
+   "H": "hits",
+   "I": "loop",
+   "J": "stick"
+  },
+  "answer": "F",
+  "gloss": "（名詞）少數",
+  "collocation": "Only a ___ of listeners, roughly one in three, are truly bothered；a minority of + 複數名詞（少數的……）；be in the minority（屬於少數）；反義字 majority（多數）",
+  "explanation": "a ___ of 的位置要單數名詞，loop、report、stick 也都能當名詞，沒讀懂句意就容易誤選。逗號中間的 roughly one in three（大約三分之一）是補充說明，空格要的是概括這群人的詞。【作答線索】句首的 Only（只有）表示人數不多，三分之一又不到一半，正是 minority。【句構線索】a minority of + 複數名詞當主詞，動詞看 of 後面的名詞，所以用 are。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g104p4_21",
+  "year": "（六）",
+  "passageId": "PCA-g104p4",
+  "blankNum": 21,
+  "categories": [
+   "字詞搭配",
+   "句型結構",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "creeping",
+   "B": "remedy",
+   "C": "linking",
+   "D": "effective",
+   "E": "reserves",
+   "F": "regularly",
+   "G": "slows",
+   "H": "deadly",
+   "I": "counteracted",
+   "J": "bursts"
+  },
+  "answer": "C",
+  "gloss": "（動詞 V-ing）把……和……連在一起、認為兩者有關（link A to B）",
+  "collocation": "Researchers are increasingly ___ the long hours we spend rooted in our chairs to a host of health problems；link A to B（認為 A 和 B 有關）；A is linked to B（A 和 B 有關）",
+  "explanation": "are increasingly 後面要 V-ing，linking 和 creeping 都合，creeping 很容易先填進去；可是 creep 不接受詞，接不上 the long hours。【作答線索】研究人員把「坐著的時間」和「各種健康問題」放在一起談，要的是把兩件事連起來的動詞。【句構線索】把省略了關係代名詞的 we spend rooted in our chairs 括起來，link A to B 就出現了。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g104p4_22",
+  "year": "（六）",
+  "passageId": "PCA-g104p4",
+  "blankNum": 22,
+  "categories": [
+   "詞性判斷",
+   "字彙選義",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "creeping",
+   "B": "remedy",
+   "C": "linking",
+   "D": "effective",
+   "E": "reserves",
+   "F": "regularly",
+   "G": "slows",
+   "H": "deadly",
+   "I": "counteracted",
+   "J": "bursts"
+  },
+  "answer": "H",
+  "gloss": "（形容詞）致命的",
+  "collocation": "the list includes so many ___ diseases that experts have named...；a deadly disease（致命的疾病）；so many + 複數名詞 + that（多到……以致於）；-ly 結尾的形容詞：deadly、costly、friendly",
+  "explanation": "看到 -ly 結尾，很多同學直接把 deadly 當成副詞，到了 so many 和 diseases 之間需要形容詞的這一格，反而沒想到它。其實 -ly 結尾的不一定是副詞：friendly、lovely、lonely 都是形容詞，deadly（致命的）也是這一類；副詞的 -ly 通常加在形容詞後面，像 quick → quickly。【作答線索】清單裡這類疾病多到專家要替它取名字，還稱作 epidemic（流行病），空格要說的是這些病有多危險。【常見誤選】effective 放進來變成「有效的疾病」，說不通。【延伸的字詞搭配】potentially deadly（可能致命的）、a deadly virus（致命的病毒）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g104p4_23",
+  "year": "（六）",
+  "passageId": "PCA-g104p4",
+  "blankNum": 23,
+  "categories": [
+   "語意連貫",
+   "句型結構",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "creeping",
+   "B": "remedy",
+   "C": "linking",
+   "D": "effective",
+   "E": "reserves",
+   "F": "regularly",
+   "G": "slows",
+   "H": "deadly",
+   "I": "counteracted",
+   "J": "bursts"
+  },
+  "answer": "G",
+  "gloss": "（動詞第三人稱單數）變慢（slow down）",
+  "collocation": "the body's metabolism ___ down；slow down（變慢、放慢）；So does + 主詞（……也一樣）",
+  "explanation": "主詞 the body's metabolism 是單數，同學會去找字尾有 -s 的選項，可是 reserves 和 bursts 看起來也像第三人稱單數的動詞，只靠字形分不出來。【作答線索】下一句說分解脂肪的速度「也一樣」，再下一句 As a result 說血糖和血壓開始上升；也就是說，身體處理養分的速度慢下來，數值才會往上走，所以代謝是「變慢」。【句構線索】So does 會把前一句的動詞借過來用，用在 rate（速度）身上也要說得通，slow down 兩邊都合。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在下一句 `So does the rate at which enzymes break down our fat`（酵素分解脂肪的速度也一樣）以及再下一句 `As a result, blood sugar levels and blood pressure both start to climb`（結果血糖和血壓都開始升高）——So does 把本句的動詞借給「速度」用，速度能「一樣」的只有變快或變慢；後一句說血糖血壓因此上升，可見身體處理養分的速度是變慢，填 slows（變慢）。"
+ },
+ {
+  "id": "VPCA-g104p4_24",
+  "year": "（六）",
+  "passageId": "PCA-g104p4",
+  "blankNum": 24,
+  "categories": [
+   "字彙選義",
+   "詞性判斷",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "creeping",
+   "B": "remedy",
+   "C": "linking",
+   "D": "effective",
+   "E": "reserves",
+   "F": "regularly",
+   "G": "slows",
+   "H": "deadly",
+   "I": "counteracted",
+   "J": "bursts"
+  },
+  "answer": "E",
+  "gloss": "（名詞）儲存量、儲備",
+  "collocation": "enzymes break down our fat ___；fat reserves（體內儲存的脂肪）；cash reserves（現金儲備）；oil reserves（石油蘊藏量）；break down（分解）",
+  "explanation": "reserve 你最熟的是動詞「預訂、保留」（reserve a table），看到 reserves 讀成「他預訂」，接不上 our fat，就刪掉了。這一格要的是名詞「儲存起來備用的東西」，fat reserves 就是體內儲存的脂肪。【作答線索】酵素 break down（分解）的是一樣東西，所以空格是名詞，fat 在前面修飾它，和 blood pressure 一樣是名詞修飾名詞。【怎麼判斷】remedy 放進來成了「我們的脂肪解藥」，酵素分解的不會是解藥，意思說不通；bursts 是「一陣一陣」，脂肪不會一陣一陣地存在身上。【延伸的字詞搭配】energy reserves（能量儲備）、oil reserves（石油蘊藏量）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g104p4_25",
+  "year": "（六）",
+  "passageId": "PCA-g104p4",
+  "blankNum": 25,
+  "categories": [
+   "字彙選義",
+   "字詞搭配",
+   "句型結構"
+  ],
+  "options": {
+   "A": "creeping",
+   "B": "remedy",
+   "C": "linking",
+   "D": "effective",
+   "E": "reserves",
+   "F": "regularly",
+   "G": "slows",
+   "H": "deadly",
+   "I": "counteracted",
+   "J": "bursts"
+  },
+  "answer": "A",
+  "gloss": "（動詞 V-ing）緩慢上升（creep up）",
+  "collocation": "these numbers keep ___ upward；keep + V-ing（持續……）；creep up（慢慢升高、悄悄增加）",
+  "explanation": "keep 後面要 V-ing，選項裡有 linking 和 creeping 兩個，有些同學看到 upward 想不出 creep 怎麼會往上，就改填 linking；可是 link 後面一定要接受詞，keep linking upward 接不起來。creep 你記的是「爬行」，像蟲那樣慢慢、悄悄地移動，其實英文常拿 creep 講數字、價格不知不覺地往上爬，和中文說「數字一路往上爬」很像。【作答線索】同一句後面的 steadily damaging（不斷損害）說明這是緩慢而持續的過程；前一句 both start to climb 也告訴你方向是往上，upward 正好接上。【延伸的字詞搭配】prices are creeping up（物價悄悄上漲）、creep into（悄悄滲入）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g104p4_26",
+  "year": "（六）",
+  "passageId": "PCA-g104p4",
+  "blankNum": 26,
+  "categories": [
+   "字彙選義",
+   "詞性判斷",
+   "同義呼應"
+  ],
+  "options": {
+   "A": "creeping",
+   "B": "remedy",
+   "C": "linking",
+   "D": "effective",
+   "E": "reserves",
+   "F": "regularly",
+   "G": "slows",
+   "H": "deadly",
+   "I": "counteracted",
+   "J": "bursts"
+  },
+  "answer": "J",
+  "gloss": "（名詞）一陣、短短的一段（活動）",
+  "collocation": "such activity adds up, even when it comes in ___ of only two or three minutes；in short bursts（一小段一小段地）；a burst of energy／laughter（一陣精力／笑聲）",
+  "explanation": "burst 你熟的是動詞「爆炸、破裂」（burst into tears），看到 bursts 先當成第三人稱單數的動詞，放在 comes in 後面不合文法，就跳過了。這裡它是名詞「短短的一陣」：氣球一下子爆開，時間短、力道集中，a burst of activity 就是一小段集中的活動。【作答線索】前一句說的是一天裡零零星星的小活動，本句又說每段只有兩三分鐘，空格要的就是「一段一段」。【常見誤選】reserves 也是複數名詞，可是「兩三分鐘的儲存量」說不通。【延伸的字詞搭配】in short bursts（一小段一小段地）、a burst of applause（一陣掌聲）。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在前一句 `small amounts of activity spread throughout the day, even just standing up and moving around`（一整天裡零零星星的少量活動，即使只是站起來走動一下）——前一句已經說這些活動量小、分散在一天當中，本句接著說它們會累積，而且每段只有兩三分鐘，空格要的就是「短短的一陣」，填 bursts（一陣、短短的一段）。"
+ },
+ {
+  "id": "VPCA-g104p4_27",
+  "year": "（六）",
+  "passageId": "PCA-g104p4",
+  "blankNum": 27,
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "creeping",
+   "B": "remedy",
+   "C": "linking",
+   "D": "effective",
+   "E": "reserves",
+   "F": "regularly",
+   "G": "slows",
+   "H": "deadly",
+   "I": "counteracted",
+   "J": "bursts"
+  },
+  "answer": "D",
+  "gloss": "有效的",
+  "collocation": "can be just as ___ as a single half-hour block of exercise；as + 形容詞 + as（和……一樣）",
+  "explanation": "as ___ as 中間要形容詞，effective 和 deadly 都是形容詞，要靠意思分。這一段在講好消息：零星活動累積到 30 分鐘，和一次運動半小時的效果差不多，所以填「有效的」；deadly 放進來變成「和運動一樣致命」，語氣完全相反。【延伸的字詞搭配】cost-effective（划算的）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g104p4_28",
+  "year": "（六）",
+  "passageId": "PCA-g104p4",
+  "blankNum": 28,
+  "categories": [
+   "詞性判斷",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "creeping",
+   "B": "remedy",
+   "C": "linking",
+   "D": "effective",
+   "E": "reserves",
+   "F": "regularly",
+   "G": "slows",
+   "H": "deadly",
+   "I": "counteracted",
+   "J": "bursts"
+  },
+  "answer": "F",
+  "gloss": "規律地、經常",
+  "collocation": "Since you exercise ___；exercise regularly（規律運動）；不及物動詞 + 副詞",
+  "explanation": "-ly 結尾的選項有 deadly 和 regularly，同學看到 -ly 就當成副詞；deadly 卻是形容詞「致命的」。【句構線索】exercise 在這裡不接受詞，句子到 exercise 已經完整，空格只能放修飾動詞的副詞。【作答線索】前一句 But wait—you're a runner. 假設讀者是固定在運動的跑者，所以填「規律地」。【文內驗證】同一段的 Regular exercisers 指的正是這一群人。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g104p4_29",
+  "year": "（六）",
+  "passageId": "PCA-g104p4",
+  "blankNum": 29,
+  "categories": [
+   "字彙選義",
+   "句型結構",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "creeping",
+   "B": "remedy",
+   "C": "linking",
+   "D": "effective",
+   "E": "reserves",
+   "F": "regularly",
+   "G": "slows",
+   "H": "deadly",
+   "I": "counteracted",
+   "J": "bursts"
+  },
+  "answer": "I",
+  "gloss": "（動詞過去分詞）抵銷（影響）",
+  "collocation": "all the harm ... is simply not ___ by the little moving around they do；be + 過去分詞 + by（主詞 harm 是承受動作的一方）；counteract the effects of（抵銷……的影響）",
+  "explanation": "這一格前面是 is simply not、後面接 by，主詞 harm（傷害）是承受動作的一方，要過去分詞；選項裡長得像過去分詞的只有 counteracted，可是這個字長，沒見過的同學不敢選，回頭去找熟悉的動詞。拆開就懂：counter（對抗）加上 act（作用），就是「抵銷」。【作答線索】前兩句說有運動的人照樣一週坐 64 小時，運動當天還動得更少，所以久坐的傷害，靠平常的運動和走動抵銷不了。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g104p4_30",
+  "year": "（六）",
+  "passageId": "PCA-g104p4",
+  "blankNum": 30,
+  "categories": [
+   "詞性判斷",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "creeping",
+   "B": "remedy",
+   "C": "linking",
+   "D": "effective",
+   "E": "reserves",
+   "F": "regularly",
+   "G": "slows",
+   "H": "deadly",
+   "I": "counteracted",
+   "J": "bursts"
+  },
+  "answer": "B",
+  "gloss": "解決辦法、補救之道",
+  "collocation": "The ___ is as simple as standing up；the remedy for + 問題（……的解決辦法）；as simple as + V-ing（就像……一樣簡單）",
+  "explanation": "remedy 你可能只記得「藥方、療法」（a home remedy 偏方），結尾講的是站起來動一動，不是吃藥，於是不敢選。其實 remedy 也指問題的「補救辦法」。【句構線索】The 後面接單數的 is，名詞選項裡只有 remedy 是單數。【文內驗證】前一句 Scared straight out of your chair? Good. 先嚇你一下，這一句就給出路；第三段也說過少量活動就能讓數值降回來。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g107p3_21",
+  "year": "（七）",
+  "passageId": "PCA-g107p3",
+  "blankNum": 21,
+  "categories": [
+   "字詞搭配",
+   "詞性判斷",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "exhausting",
+   "B": "bonds",
+   "C": "pressing",
+   "D": "harm",
+   "E": "plants",
+   "F": "supply",
+   "G": "viable",
+   "H": "consumes",
+   "I": "race",
+   "J": "concentrated"
+  },
+  "answer": "F",
+  "gloss": "（名詞）供應（in short supply＝供應不足）",
+  "collocation": "fresh water can be in short ___；be in short supply（短缺、供不應求）；water supply（供水）；supply and demand（供需）",
+  "explanation": "讀到 can be，很多人直接找形容詞或過去分詞，concentrated 接在 be 後面看起來很順，就忽略了中間的 in short。in short 你熟的意思是「總之」，這裡卻和空格連成固定說法 be in short supply，short 是「不足的」，supply 在介系詞 in 後面當名詞，意思是「供應不足」。【作答線索】同一句前半的 water resources are limited（水資源有限）說明了短缺的原因。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g107p3_22",
+  "year": "（七）",
+  "passageId": "PCA-g107p3",
+  "blankNum": 22,
+  "categories": [
+   "字彙選義",
+   "語意連貫",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "exhausting",
+   "B": "bonds",
+   "C": "pressing",
+   "D": "harm",
+   "E": "plants",
+   "F": "supply",
+   "G": "viable",
+   "H": "consumes",
+   "I": "race",
+   "J": "concentrated"
+  },
+  "answer": "C",
+  "gloss": "（形容詞）迫切的、急需處理的",
+  "collocation": "the need for additional sources of water will become ___；a pressing need／problem／issue（迫切的需求／問題）",
+  "explanation": "pressing 你熟的是 press「按、壓」，看起來像動名詞「按壓」，於是先排除，改選同樣是 -ing 結尾、又確定是形容詞的 exhausting（累人的）；可是「需求變得很累人」說不通。pressing 當形容詞是「迫切的」，事情壓在身上，就是急著要處理。【作答線索】同一句前半說人口持續成長、缺水會越來越常發生，開發新水源的需求只會越來越急。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g107p3_23",
+  "year": "（七）",
+  "passageId": "PCA-g107p3",
+  "blankNum": 23,
+  "categories": [
+   "詞性判斷",
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "exhausting",
+   "B": "bonds",
+   "C": "pressing",
+   "D": "harm",
+   "E": "plants",
+   "F": "supply",
+   "G": "viable",
+   "H": "consumes",
+   "I": "race",
+   "J": "concentrated"
+  },
+  "answer": "H",
+  "gloss": "（動詞第三人稱單數）消耗",
+  "collocation": "desalination ___ a huge amount of energy；consume energy／fuel／time（消耗能源／燃料／時間）",
+  "explanation": "bonds 和 plants 也長得像第三人稱單數，desalination plants 又是常見說法，讀快了容易填 plants；可是填進去，句子就少了動詞。【句構線索】The trouble is that 後面是完整的子句，desalination 是主詞，空格是它的動詞，consumes 是「消耗」。【文內驗證】段尾說 the energy and the technology involved are expensive。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g107p3_24",
+  "year": "（七）",
+  "passageId": "PCA-g107p3",
+  "blankNum": 24,
+  "categories": [
+   "字彙選義",
+   "字詞搭配",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "exhausting",
+   "B": "bonds",
+   "C": "pressing",
+   "D": "harm",
+   "E": "plants",
+   "F": "supply",
+   "G": "viable",
+   "H": "consumes",
+   "I": "race",
+   "J": "concentrated"
+  },
+  "answer": "B",
+  "gloss": "（名詞）化學鍵",
+  "collocation": "forming strong chemical ___ that are difficult to break；chemical bonds（化學鍵）；form／break a bond（形成／打斷鍵結）；a strong bond between A and B（A 與 B 之間深厚的情誼）",
+  "explanation": "chemical plants（化工廠）是很常見的搭配，看到 chemical 後面的空格，很多人直接填 plants；可是鹽溶進水裡，不會形成一座工廠。bond 你可能在 the bond between parents and children（親子之間的情感連結）讀過，這一句用的是化學課的「化學鍵」chemical bonds。【作答線索】空格後的 that are difficult to break（很難打斷）是最直接的提示：能夠「形成」、又能夠「打斷」的，是鍵結；關係子句用 are，也告訴你空格是複數名詞。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g107p3_25",
+  "year": "（七）",
+  "passageId": "PCA-g107p3",
+  "blankNum": 25,
+  "categories": [
+   "字彙選義",
+   "詞性判斷",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "exhausting",
+   "B": "bonds",
+   "C": "pressing",
+   "D": "harm",
+   "E": "plants",
+   "F": "supply",
+   "G": "viable",
+   "H": "consumes",
+   "I": "race",
+   "J": "concentrated"
+  },
+  "answer": "E",
+  "gloss": "（名詞）工廠、廠房（desalination plant＝海水淡化廠）",
+  "collocation": "Marine life can get sucked into desalination ___ and killed there；a desalination plant（海水淡化廠）；a power plant（發電廠）；a nuclear power plant（核能電廠）",
+  "explanation": "選項裡的複數名詞只有 plants 和 bonds。plant 你熟的是「植物」，這一句又在講 marine life（海洋生物），「吸進淡化植物裡」說不通，於是有人改填 bonds；可是 bond 是連結、鍵結，不是能把魚吸進去的地方。plant 另一個很常用的意思是「工廠、廠房」，台灣新聞常說的核電廠，英文就是 nuclear power plant。【作答線索】get sucked into 後面要接一個能把東西吸進去的地方，空格後的 and killed there 又用 there 回指這個地方，可見空格是一個設施。desalination 放在名詞前面當修飾語，desalination plants 就是「海水淡化廠」。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g107p3_26",
+  "year": "（七）",
+  "passageId": "PCA-g107p3",
+  "blankNum": 26,
+  "categories": [
+   "字彙選義",
+   "同義呼應",
+   "詞性判斷",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "exhausting",
+   "B": "bonds",
+   "C": "pressing",
+   "D": "harm",
+   "E": "plants",
+   "F": "supply",
+   "G": "viable",
+   "H": "consumes",
+   "I": "race",
+   "J": "concentrated"
+  },
+  "answer": "J",
+  "gloss": "（形容詞）濃縮的、高濃度的",
+  "collocation": "What remains is a highly ___ brine；highly concentrated（濃度很高的）；concentrated orange juice（濃縮柳橙汁）；concentrate on（專心於）",
+  "explanation": "brine（鹽水、滷水）不認得，就只能看 highly 後面接哪個形容詞順，viable 常和 highly 連用（a highly viable plan），很容易填進來；可是 brine 是一種水，不是方法或計畫，談不上可不可行。concentrated 你熟的是 concentrate on（專心於），這裡的 concentrated 是形容詞「濃縮的、濃度高的」，濃縮果汁英文就叫 concentrated juice。【作答線索】本句定不了，要往後讀一句：Pumping this super-salty water back into the sea，this super-salty water（這種超鹹的水）回指的正是 brine。鹽分多、水少，就是「濃」。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在後一句 `Pumping this super-salty water back into the sea`（把這種超鹹的水抽回海裡）——後一句用 this super-salty water 回指前一句的 brine，可見剩下來的是鹽分極高的水，空格要填形容「濃度高」的 concentrated（濃縮的）。"
+ },
+ {
+  "id": "VPCA-g107p3_27",
+  "year": "（七）",
+  "passageId": "PCA-g107p3",
+  "blankNum": 27,
+  "categories": [
+   "詞性判斷",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "exhausting",
+   "B": "bonds",
+   "C": "pressing",
+   "D": "harm",
+   "E": "plants",
+   "F": "supply",
+   "G": "viable",
+   "H": "consumes",
+   "I": "race",
+   "J": "concentrated"
+  },
+  "answer": "D",
+  "gloss": "（動詞原形）傷害",
+  "collocation": "Pumping this super-salty water back into the sea can ___ local aquatic life；harm the environment（傷害環境）；do harm to（對……有害）",
+  "explanation": "can 後面要原形動詞，supply 和 harm 都放得進去。supply local aquatic life 讀起來像「供應給水中生物」，就有人選了它；可是這一段講的是環境代價，濃鹽水抽回海裡，帶給生物的是傷害，不是供給。harm 你多半當名詞用（do harm to），其實它也是及物動詞「傷害」。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g107p3_28",
+  "year": "（七）",
+  "passageId": "PCA-g107p3",
+  "blankNum": 28,
+  "categories": [
+   "字彙選義",
+   "詞性判斷",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "exhausting",
+   "B": "bonds",
+   "C": "pressing",
+   "D": "harm",
+   "E": "plants",
+   "F": "supply",
+   "G": "viable",
+   "H": "consumes",
+   "I": "race",
+   "J": "concentrated"
+  },
+  "answer": "A",
+  "gloss": "（動詞 V-ing）用盡、耗盡",
+  "collocation": "human beings are steadily ___ the fresh water available from other sources；exhaust resources／supplies（耗盡資源／存量）；be exhausted（筋疲力盡）；an exhausting day（累人的一天）",
+  "explanation": "選項裡 -ing 結尾的有 exhausting 和 pressing。exhausting 你一定看過，意思是「累人的」，are steadily exhausting 讀起來像「人類越來越累人」，於是改填 pressing，以為是人類在「擠壓」淡水；可是擠壓淡水和淡化變得有吸引力扯不上關係。【句構線索】空格後面直接接受詞 the fresh water available from other sources，形容詞後面不能帶受詞，所以這裡的 exhausting 是現在進行式 are exhausting 裡的動詞。exhaust 當動詞是「用盡、耗盡」。【作答線索】同一句前半說淡化看起來越來越有吸引力，as 帶出原因：其他來源的淡水漸漸用光了，人只好轉向海水。【一字多義】exhaust 的字源是「抽乾」：力氣抽乾了是 exhausted（筋疲力盡），資源抽乾了就是 exhaust resources。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g107p3_29",
+  "year": "（七）",
+  "passageId": "PCA-g107p3",
+  "blankNum": 29,
+  "categories": [
+   "語意連貫",
+   "字彙選義",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "exhausting",
+   "B": "bonds",
+   "C": "pressing",
+   "D": "harm",
+   "E": "plants",
+   "F": "supply",
+   "G": "viable",
+   "H": "consumes",
+   "I": "race",
+   "J": "concentrated"
+  },
+  "answer": "G",
+  "gloss": "（形容詞）可行的",
+  "collocation": "desalinating seawater is the only ___ means of providing water；a viable option／solution／alternative（可行的選擇／辦法／替代方案）；economically viable（在經濟上划得來的）",
+  "explanation": "viable 級數高，不少人不認得，改填 pressing，讀成「唯一迫切的方法」；可是迫切的是需求，不是方法。這一格要從前一句往下讀：human beings are steadily ___ the fresh water available from other sources，其他來源的淡水越來越少，到了中東、北非的鄉村地區，海水淡化就成了唯一「行得通」的辦法。【句構線索】the only ___ means of 是「冠詞 + 形容詞 + 名詞」，空格要修飾 means（方法），描述一個方法，最常說的就是它可不可行。【一字多義】viable 和 vital（攸關生死的）同源，都來自拉丁文的「生命」，原本指新生兒能夠存活，後來引申為方法「行得通」。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在前一句 `as human beings are steadily ___ the fresh water available from other sources`（隨著人類漸漸用盡其他來源的淡水）——前一句說其他水源正在減少，所以到了中東、北非的鄉村，海水淡化成了唯一行得通的供水方法，空格填 viable（可行的）。"
+ },
+ {
+  "id": "VPCA-g107p3_30",
+  "year": "（七）",
+  "passageId": "PCA-g107p3",
+  "blankNum": 30,
+  "categories": [
+   "字彙選義",
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "exhausting",
+   "B": "bonds",
+   "C": "pressing",
+   "D": "harm",
+   "E": "plants",
+   "F": "supply",
+   "G": "viable",
+   "H": "consumes",
+   "I": "race",
+   "J": "concentrated"
+  },
+  "answer": "I",
+  "gloss": "（名詞）競賽、競爭（the race is on to V＝各方競相……）",
+  "collocation": "Therefore, the ___ is on to develop a cheaper, cleaner, and more energy-efficient method；the race is on to + V（大家搶著……）；a race against time（和時間賽跑）",
+  "explanation": "race 你熟的是「賽跑、比賽」，可是 the ___ is on to develop 這種說法很少見，讀成「比賽在上面」，就不敢選，改填 supply，以為是「供應已經開始」；可是 supply 接不上後面的 to develop（供應去研發）。the race is on to do something 是新聞英文常見的說法，意思是大家搶著做某件事、看誰先做到，is on 是「正在進行」。【作答線索】Therefore 承接前一句：淡化是中東、北非鄉村唯一可行的供水辦法，需求這麼大，各方自然搶著開發更便宜、更乾淨、更節能的方法。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z104p3_21",
+  "year": "（八）",
+  "passageId": "PCA-z104p3",
+  "blankNum": 21,
+  "categories": [
+   "語意連貫",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "bonds",
+   "B": "captive",
+   "C": "recognizes",
+   "D": "address",
+   "E": "signature",
+   "F": "missing",
+   "G": "conduct",
+   "H": "conversation",
+   "I": "associates",
+   "J": "separated"
+  },
+  "answer": "H",
+  "gloss": "對話",
+  "collocation": "much like a ___；much like + N（很像…）；have a conversation with sb（和某人交談）",
+  "explanation": "只讀這半句，一連串聲音「像某種記號」似乎也通，signature 就容易誤選。【作答線索】a 後面要單數名詞；聲音從兩隻海豚身上各自發出、你來我往，像的是 conversation（對話）。captive 當名詞是「俘虜」，放進來講不通；address 當名詞前面要用 an。【文內驗證】下一句 We cannot be sure what the pair are discussing 說牠們在 discussing（討論），正好對上。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z104p3_22",
+  "year": "（八）",
+  "passageId": "PCA-z104p3",
+  "blankNum": 22,
+  "categories": [
+   "字彙選義",
+   "同義呼應",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "bonds",
+   "B": "captive",
+   "C": "recognizes",
+   "D": "address",
+   "E": "signature",
+   "F": "missing",
+   "G": "conduct",
+   "H": "conversation",
+   "I": "associates",
+   "J": "separated"
+  },
+  "answer": "E",
+  "gloss": "（名詞當形容詞用）專屬的、招牌的",
+  "collocation": "its own unique ___ whistle；signature + N（招牌的…、專屬的…）：signature whistle（專屬哨聲）、signature dish（招牌菜）、signature style（個人特色）",
+  "explanation": "空格在 whistle 前面，很多人先找形容詞，可是 captive、missing 放進來，「囚禁的哨聲」「失蹤的哨聲」都講不通；signature 記成「簽名」，讀成「簽名的哨聲」也不通，就跳過了。其實簽名人人不同、一看就知道是誰，所以 signature 放在名詞前面是「專屬的、招牌的」，像 signature dish（招牌菜）；名詞本來就能放在名詞前面當修飾語。【文內驗證】同段後面用 that companion’s distinct sound（那位同伴特有的聲音）改寫這種哨聲，Wells 又稱它們 “abstract names”（抽象的名字）：名字和簽名一樣，都代表一個人。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在後兩句 `copying that companion’s distinct sound`（模仿那位同伴特有的聲音）——後文用 distinct sound 改寫本句的哨聲，又說它們是 “abstract names”（抽象的名字），可見這種哨聲是每隻海豚專屬、能代表自己的聲音，填 signature（專屬的）。"
+ },
+ {
+  "id": "VPCA-z104p3_23",
+  "year": "（八）",
+  "passageId": "PCA-z104p3",
+  "blankNum": 23,
+  "categories": [
+   "句型結構",
+   "詞性判斷",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "bonds",
+   "B": "captive",
+   "C": "recognizes",
+   "D": "address",
+   "E": "signature",
+   "F": "missing",
+   "G": "conduct",
+   "H": "conversation",
+   "I": "associates",
+   "J": "separated"
+  },
+  "answer": "C",
+  "gloss": "認出、辨識",
+  "collocation": "a dolphin not only ___ the whistles of others；not only A but also B（A、B 形式要對稱：___ … mimics）；recognize + N（認出…）",
+  "explanation": "associates 字尾也有 -s，又是常見的動詞，容易誤選；但 associate 要說 associate A with B，這一句後面沒有 with。bond 當動詞是 bond with sb，也接不了。【句構線索】not only ___ … but also mimics them 前後對稱，要和 mimics 一樣用第三人稱單數動詞。至於語意，海豚要先認得同伴的哨聲，才模仿得出來，所以填 recognizes。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z104p3_24",
+  "year": "（八）",
+  "passageId": "PCA-z104p3",
+  "blankNum": 24,
+  "categories": [
+   "字詞搭配",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "bonds",
+   "B": "captive",
+   "C": "recognizes",
+   "D": "address",
+   "E": "signature",
+   "F": "missing",
+   "G": "conduct",
+   "H": "conversation",
+   "I": "associates",
+   "J": "separated"
+  },
+  "answer": "G",
+  "gloss": "（動詞）進行（研究）",
+  "collocation": "To ___ the study；conduct a study／survey／experiment（進行研究／調查／實驗）",
+  "explanation": "address 也是原形動詞，又有「處理」的意思，容易想成「處理這項研究」而誤選；但 address 接的是 a problem、an issue，沒有 address a study 的說法。【作答線索】To 表示目的，後面要原形動詞；study 是「研究」，後文講研究人員聽了哪些錄音，「進行研究」說 conduct a study。【延伸的字詞搭配】conduct a survey（做調查）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z104p3_25",
+  "year": "（八）",
+  "passageId": "PCA-z104p3",
+  "blankNum": 25,
+  "categories": [
+   "語意連貫",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "bonds",
+   "B": "captive",
+   "C": "recognizes",
+   "D": "address",
+   "E": "signature",
+   "F": "missing",
+   "G": "conduct",
+   "H": "conversation",
+   "I": "associates",
+   "J": "separated"
+  },
+  "answer": "B",
+  "gloss": "人工飼養的、圈養的",
+  "collocation": "four ___ dolphins living at a nearby aquarium；captive + 動物（人工飼養的…）：captive dolphins／animals；in captivity（在人工飼養的環境中）；反義 wild（野生的）",
+  "explanation": "four ___ dolphins 要填形容詞，captive、missing、separated 都帶一點「不在原處」的意思，「分開飼養的海豚」聽起來也合理。【作答線索】前一句的錄音來自 wild bottlenose dolphins（野生瓶鼻海豚），本句的海豚 living at a nearby aquarium（住在附近的水族館）；要和 wild 相對，就是 captive（人工飼養的）。【常見誤選】missing（失蹤的）和住在水族館矛盾；separated 沒有交代和誰分開，下一句分網隔開的是野生海豚，不是水族館這四隻。【一字多義】captive 常見於 hold sb captive（囚禁某人）；用在動物身上是「人工飼養的」。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在前一句 `of about 250 wild bottlenose dolphins`（大約 250 隻野生瓶鼻海豚）——前一句的錄音來自野生海豚，本句的海豚住在附近的水族館，兩相對照，要的是和 wild 相反的 captive（人工飼養的）。"
+ },
+ {
+  "id": "VPCA-z104p3_26",
+  "year": "（八）",
+  "passageId": "PCA-z104p3",
+  "blankNum": 26,
+  "categories": [
+   "語意連貫",
+   "句型結構"
+  ],
+  "options": {
+   "A": "bonds",
+   "B": "captive",
+   "C": "recognizes",
+   "D": "address",
+   "E": "signature",
+   "F": "missing",
+   "G": "conduct",
+   "H": "conversation",
+   "I": "associates",
+   "J": "separated"
+  },
+  "answer": "J",
+  "gloss": "（動詞過去分詞）分開的、隔開的",
+  "collocation": "when the two were ___ by the nets；be separated by + N（由…隔開）；be separated from（和…分開）",
+  "explanation": "captive 有「關著、囚禁」的意思，海豚又確實關在網子裡，看到 by the nets 容易誤選。不過「關在網子裡」英文要說 held captive，were captive by the nets 不成句；而且海豚關著，不會因此互相模仿哨聲，要呼喚同伴，得是兩隻海豚分開了。【作答線索】前一段最後一句說研究團隊把野生海豚分別放進不同的網子，讓牠們 hear but not see one another（聽得到、看不到彼此）。本句的 the nets 就是那些網子，網子做的事是把兩隻海豚隔開，所以填 separated（分開的）。【常見誤選】missing（失蹤的）也不通，兩隻海豚只是隔著網子，聽得到彼此，並沒有失蹤。【延伸的字詞搭配】be separated from（和…分開）。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在前一句 `held in individual nets, which allowed them to hear but not see one another`（分別放進不同的網子裡，讓牠們聽得到、卻看不到彼此）——前一段最後一句交代海豚分網隔開，本句的 the nets 就是那些網子；網子把兩隻海豚隔開，所以填 separated（分開的）。"
+ },
+ {
+  "id": "VPCA-z104p3_27",
+  "year": "（八）",
+  "passageId": "PCA-z104p3",
+  "blankNum": 27,
+  "categories": [
+   "詞性判斷",
+   "字彙選義",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "bonds",
+   "B": "captive",
+   "C": "recognizes",
+   "D": "address",
+   "E": "signature",
+   "F": "missing",
+   "G": "conduct",
+   "H": "conversation",
+   "I": "associates",
+   "J": "separated"
+  },
+  "answer": "I",
+  "gloss": "（名詞）夥伴、同伴",
+  "collocation": "males who were close ___；close associates（關係密切的夥伴）；business associates（生意夥伴）；associate 當動詞：associate A with B（把 A 和 B 聯想在一起）",
+  "explanation": "associate 你最熟的是動詞 associate A with B（把 A 和 B 聯想在一起），看到字尾 -s 就讀成第三人稱單數動詞，接在 were close 後面不通，於是改選同樣是名詞的 bonds。本句的 associates 是名詞「夥伴、同伴」，名詞字尾通常讀 /ət/，動詞讀 /eɪt/。【句構線索】close 是形容詞「親近的」，後面要一個指人的名詞讓它修飾；bonds 是「情誼」，公海豚本身不會是情誼。【作答線索】前半 between mothers and calves，後半 among males，兩組都是親近的夥伴；後面 friendly rather than hostile（友善而非敵意）也是同一個方向。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z104p3_28",
+  "year": "（八）",
+  "passageId": "PCA-z104p3",
+  "blankNum": 28,
+  "categories": [
+   "字詞搭配",
+   "詞性判斷",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "bonds",
+   "B": "captive",
+   "C": "recognizes",
+   "D": "address",
+   "E": "signature",
+   "F": "missing",
+   "G": "conduct",
+   "H": "conversation",
+   "I": "associates",
+   "J": "separated"
+  },
+  "answer": "F",
+  "gloss": "（形容詞）失蹤的、走失的",
+  "collocation": "a child or friend who has gone ___；go missing（走失、失蹤）；a missing child（走失的孩子）；be missing from（從…不見）",
+  "explanation": "missing 長得像 miss 的 V-ing，讀成「想念、錯過」接不上 has gone，容易改選同樣有「分開」意思的 separated。其實 missing 是形容詞「不見的、失蹤的」，go missing 是「走失」的固定說法；這裡的 go 是「變成」，後面接形容詞，英文沒有 go separated 的說法。【文內驗證】前一句說這種情形多半發生在海豚母子和親近的公海豚之間，本句拿人呼喚走失的孩子或朋友來比，正好對應。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z104p3_29",
+  "year": "（八）",
+  "passageId": "PCA-z104p3",
+  "blankNum": 29,
+  "categories": [
+   "字詞搭配",
+   "詞性判斷",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "bonds",
+   "B": "captive",
+   "C": "recognizes",
+   "D": "address",
+   "E": "signature",
+   "F": "missing",
+   "G": "conduct",
+   "H": "conversation",
+   "I": "associates",
+   "J": "separated"
+  },
+  "answer": "A",
+  "gloss": "（名詞）情誼、連結",
+  "collocation": "keeping social ___ strong；social bonds（人際情誼、社會關係）；keep + O + adj.（使…保持…）；bond with sb（和某人培養感情）",
+  "explanation": "associates 也是 -s 結尾的名詞，容易誤選；但 social associates 不是常見說法，「讓夥伴保持強韌」也講不通。【句構線索】keep + 受詞 + 形容詞（讓…保持…），空格是 keeping 的受詞。【作答線索】social 和 strong 一起看，要的是人際連結：social bonds（人際情誼），正好和 the immediate defense of resources（立即保衛資源）對比。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z104p3_30",
+  "year": "（八）",
+  "passageId": "PCA-z104p3",
+  "blankNum": 30,
+  "categories": [
+   "字彙選義",
+   "字詞搭配",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "bonds",
+   "B": "captive",
+   "C": "recognizes",
+   "D": "address",
+   "E": "signature",
+   "F": "missing",
+   "G": "conduct",
+   "H": "conversation",
+   "I": "associates",
+   "J": "separated"
+  },
+  "answer": "D",
+  "gloss": "（動詞）稱呼、叫喚（某人）",
+  "collocation": "identify themselves and ___ their friends by name；address sb by name（叫某人的名字）；address sb as + 稱謂（稱呼某人為…）；address a letter to sb（在信封上寫收件人是某人）",
+  "explanation": "address 你一看就想到名詞「地址」，放在 identify themselves and ___ their friends 裡講不通，就改選同樣是原形動詞的 conduct。conduct 接人是「帶領」（conduct visitors around a museum），但沒有 conduct sb by name 的說法。【一字多義】address 本義是「對準、指向」：對準某人說話就是「稱呼」，信對準的人寫在信封上就是地址；address sb by name 就是「叫某人的名字」。【句構線索】and 連接兩個動詞，兩個動詞共用前面的 can，所以要原形動詞，後面直接接受詞 their friends。【作答線索】identify themselves 是報上自己的名字，後半配上 by name，要的是叫朋友的名字，回到第一段 call one another by “name.” 講的事。",
+  "contextSpan": "篇章",
+  "contextNote": "線索在第一段 `scientists do believe that dolphins call one another by “name.”`（科學家確實相信海豚會叫彼此的「名字」）——全文一路講海豚用哨聲叫喚同伴，到結尾這一句，前半 identify themselves 是報上自己的名字，後半配上 by name，要的就是「叫朋友的名字」，填 address（稱呼、叫喚）。"
+ },
+ {
+  "id": "VPCA-z106p2_21",
+  "year": "（九）",
+  "passageId": "PCA-z106p2",
+  "blankNum": 21,
+  "categories": [
+   "詞性判斷",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "comfortable",
+   "B": "post",
+   "C": "stocked",
+   "D": "reach",
+   "E": "inclined",
+   "F": "swap",
+   "G": "sparked",
+   "H": "curiosity",
+   "I": "accessible",
+   "J": "reads"
+  },
+  "answer": "D",
+  "gloss": "（名詞）影響所及的範圍",
+  "collocation": "a movement with truly global ___；global reach（遍及全球的影響範圍）；within reach（伸手可及）／out of reach（拿不到）；expand one's reach（擴大影響範圍）",
+  "explanation": "reach 大家熟的是動詞「伸手拿、抵達」，看到 with truly global ___ 要名詞，常直接跳過它，去找 curiosity 這類一看就是名詞的字；可是 global curiosity 形容不了一場運動。【作答線索】reach 當名詞是「手伸出去碰得到的範圍」，引申為影響觸及的範圍，global reach 就是影響遍及全球。第一句的 could never have imagined 先交代了落差：一個人在露台上做的木箱，後來設到了世界各地。【文內驗證】第三段末句說 70 個國家登記的小圖書館超過五萬座，正是 global reach 的具體數字。【一字多義】within reach（伸手可及）也是名詞用法。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z106p2_22",
+  "year": "（九）",
+  "passageId": "PCA-z106p2",
+  "blankNum": 22,
+  "categories": [
+   "字彙選義",
+   "詞性判斷",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "comfortable",
+   "B": "post",
+   "C": "stocked",
+   "D": "reach",
+   "E": "inclined",
+   "F": "swap",
+   "G": "sparked",
+   "H": "curiosity",
+   "I": "accessible",
+   "J": "reads"
+  },
+  "answer": "B",
+  "gloss": "（名詞）柱子、樁",
+  "collocation": "He mounted the little house on a ___；mount A on B（把 A 裝在 B 上）；a fence post（籬笆樁）／a goalpost（球門柱）／a lamppost（路燈柱）",
+  "explanation": "post 學生先想到的是「貼文」或動詞「張貼、發文」，放進 mounted the little house on a ___ 讀不通，就轉去填 reach，以為 on a reach 是「放在伸手可及的地方」；可是表達這個意思要說 within reach，不說 on a reach。【作答線索】mount A on B 是「把 A 裝在 B 上」，on a ___ 要一個能把小屋架起來的實物。post 原本就是「柱子、樁」：籬笆的 fence post、路燈的 lamppost 都是這個意思。【文內驗證】前一句說這是玩具屋大小的小屋，同一句後半說它立在草坪上（stood it on his lawn）；小屋要立在草地上讓路人伸手拿書，底下就得有根柱子把它架高。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z106p2_23",
+  "year": "（九）",
+  "passageId": "PCA-z106p2",
+  "blankNum": 23,
+  "categories": [
+   "字詞搭配",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "comfortable",
+   "B": "post",
+   "C": "stocked",
+   "D": "reach",
+   "E": "inclined",
+   "F": "swap",
+   "G": "sparked",
+   "H": "curiosity",
+   "I": "accessible",
+   "J": "reads"
+  },
+  "answer": "G",
+  "gloss": "引發、促成",
+  "collocation": "That humble prototype ___ the founding of Little Free Library；spark + N（引發……）：spark a debate／spark interest in／spark a movement",
+  "explanation": "stocked 也是過去式、後面也能接受詞，字形和 sparked 差不多，掃過去容易填錯。【作答線索】主詞是原型，受詞是 the founding of LFL（LFL 的成立），中間要「促成」。spark 原本是火花，當動詞就是一件小事引出一件大事；stock 是「備貨」，接不上「成立」。【延伸的字詞搭配】spark a debate（引發爭論）、spark interest in（引起對……的興趣）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z106p2_24",
+  "year": "（九）",
+  "passageId": "PCA-z106p2",
+  "blankNum": 24,
+  "categories": [
+   "語意連貫",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "comfortable",
+   "B": "post",
+   "C": "stocked",
+   "D": "reach",
+   "E": "inclined",
+   "F": "swap",
+   "G": "sparked",
+   "H": "curiosity",
+   "I": "accessible",
+   "J": "reads"
+  },
+  "answer": "I",
+  "gloss": "容易取用的、方便使用的",
+  "collocation": "small, ___ book exchange boxes；be accessible to the public（對大眾開放）；easily accessible by public transportation（搭大眾運輸很方便到）；wheelchair accessible（輪椅可通行的）",
+  "explanation": "inclined 有「傾斜的」意思，有人想成斜屋頂的小書箱就填了它；可是 inclined 放在書箱前面，講不出書箱的用途。【作答線索】同一句說書箱設在住家附近，下一句說鄰居可以自由拿書、放書，書就在家門口、隨手拿得到，就是 accessible（容易取用的）。【延伸的字詞搭配】be accessible to the public（對大眾開放）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z106p2_25",
+  "year": "（九）",
+  "passageId": "PCA-z106p2",
+  "blankNum": 25,
+  "categories": [
+   "句型結構",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "comfortable",
+   "B": "post",
+   "C": "stocked",
+   "D": "reach",
+   "E": "inclined",
+   "F": "swap",
+   "G": "sparked",
+   "H": "curiosity",
+   "I": "accessible",
+   "J": "reads"
+  },
+  "answer": "F",
+  "gloss": "交換",
+  "collocation": "take a book, leave a book, or ___ one for another；swap A for B（拿 A 換 B）；swap seats with sb（和某人換座位）；a book swap（換書活動，名詞）",
+  "explanation": "post 也能當原形動詞，post one 讀起來像「貼出一本」，有人就填了它。【作答線索】三個動作並列在 are invited to 後面，空格要原形動詞；swap A for B 是「拿 A 換 B」，swap one for another 就是放一本、拿一本。post、reach 接 for another 都講不通。【延伸的字詞搭配】swap seats with someone（和某人換座位）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z106p2_26",
+  "year": "（九）",
+  "passageId": "PCA-z106p2",
+  "blankNum": 26,
+  "categories": [
+   "字詞搭配",
+   "句型結構",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "comfortable",
+   "B": "post",
+   "C": "stocked",
+   "D": "reach",
+   "E": "inclined",
+   "F": "swap",
+   "G": "sparked",
+   "H": "curiosity",
+   "I": "accessible",
+   "J": "reads"
+  },
+  "answer": "C",
+  "gloss": "（動詞過去分詞）備有、擺滿",
+  "collocation": "the box is kept in good shape and ___ with books；be stocked with（備有……、擺滿……）；a well-stocked library（藏書豐富的圖書館）；stock the shelves（把貨架補滿）",
+  "explanation": "很多人只認得名詞 stock（存貨、股票），沒想到它能當動詞，就轉去填同樣是 -ed 結尾的 sparked。【句構線索】and 前後要平行：前面是過去分詞 kept，空格也要過去分詞，兩者共用 is，書箱是承受動作的一方。【作答線索】書箱裡要放著適合社區的書，be stocked with 就是「備有、擺滿」；「書箱引發書」說不通。【延伸的字詞搭配】a well-stocked library（藏書豐富的圖書館）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z106p2_27",
+  "year": "（九）",
+  "passageId": "PCA-z106p2",
+  "blankNum": 27,
+  "categories": [
+   "句型結構",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "comfortable",
+   "B": "post",
+   "C": "stocked",
+   "D": "reach",
+   "E": "inclined",
+   "F": "swap",
+   "G": "sparked",
+   "H": "curiosity",
+   "I": "accessible",
+   "J": "reads"
+  },
+  "answer": "J",
+  "gloss": "（動詞）上面寫著",
+  "collocation": "a sign that ___ “Little Free Library.”；sign／note／label + reads + 文字（上面寫著……）；The thermometer reads 30 degrees.（溫度計顯示三十度）",
+  "explanation": "read 的主詞幾乎都是人，這一句的主詞卻是 a sign（牌子），牌子不會「讀」，很多人就覺得 reads 不可能，轉去填 post，想成「牌子上張貼著」。【句構線索】that 代替 a sign 當主詞，後面要動詞；主詞單數、講的是現在的狀態，要第三人稱單數現在式，選項裡合乎這個字形的只有 reads，post 的字形不對。【一字多義】read 用文字、標示、儀表當主詞時，意思是「上面寫著、顯示」：The sign reads “No Parking.”（牌子上寫著「禁止停車」）。英文把牌子看成「顯示出這幾個字」的東西，所以後面直接接文字，不需要介系詞。【文內驗證】空格後緊接著引號裡的 “Little Free Library.”，正是牌子上的字。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z106p2_28",
+  "year": "（九）",
+  "passageId": "PCA-z106p2",
+  "blankNum": 28,
+  "categories": [
+   "語意連貫",
+   "字詞搭配",
+   "句型結構"
+  ],
+  "options": {
+   "A": "comfortable",
+   "B": "post",
+   "C": "stocked",
+   "D": "reach",
+   "E": "inclined",
+   "F": "swap",
+   "G": "sparked",
+   "H": "curiosity",
+   "I": "accessible",
+   "J": "reads"
+  },
+  "answer": "E",
+  "gloss": "傾向於……的、比較想……的",
+  "collocation": "they have become more ___ to pick up a book；be inclined to + V（有意願、傾向於……）；feel inclined to + V（有點想……）；be less inclined to + V（比較不想……）",
+  "explanation": "comfortable 也常接在 more 後面，不少人憑「經過書箱會覺得比較自在」就填了它。問題在後面的 to pick up：comfortable 習慣接 with 或 V-ing（comfortable speaking English），要說「比較願意做某件事」，英文用 be inclined to + 原形動詞。【作答線索】下一句交代原因：吸引人的地方一部分是心理上的，其餘是方便（the rest is convenience）。這些都是讓人想去拿書的動機，講的是意願，不是心情自不自在。【怎麼判斷】incline 本來是「傾斜」，an incline 是斜坡；人的心意偏向某一邊，就是「傾向、有意」。【延伸的字詞搭配】I'm inclined to agree.（我傾向同意）。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在下一句 `Part of the appeal is simple ___; the rest is convenience.`（吸引人的地方，一部分是單純的心理因素，其餘是方便）——下一句交代路人拿書的原因，講的是動機，所以本句要說的是路人「比較想、比較願意」拿起書，填 inclined（傾向於……的），也正好接上後面的 to pick up a book。"
+ },
+ {
+  "id": "VPCA-z106p2_29",
+  "year": "（九）",
+  "passageId": "PCA-z106p2",
+  "blankNum": 29,
+  "categories": [
+   "語意連貫",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "comfortable",
+   "B": "post",
+   "C": "stocked",
+   "D": "reach",
+   "E": "inclined",
+   "F": "swap",
+   "G": "sparked",
+   "H": "curiosity",
+   "I": "accessible",
+   "J": "reads"
+  },
+  "answer": "H",
+  "gloss": "好奇心",
+  "collocation": "Part of the appeal is simple ___；out of curiosity（出於好奇）；satisfy one's curiosity（滿足好奇心）；pique one's curiosity（勾起好奇心）",
+  "explanation": "reach 也是名詞，有人把 simple reach 想成「隨手可及」而填了它；可是「隨手可及」正是後半句的 convenience，前半句要講另一個原因。【作答線索】分號前後對照，一個是心理上的原因、一個是實際上的原因；路過看到小書箱，想打開看看有什麼書，就是好奇。【延伸的字詞搭配】out of curiosity（出於好奇）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z106p2_30",
+  "year": "（九）",
+  "passageId": "PCA-z106p2",
+  "blankNum": 30,
+  "categories": [
+   "語意連貫",
+   "句型結構",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "comfortable",
+   "B": "post",
+   "C": "stocked",
+   "D": "reach",
+   "E": "inclined",
+   "F": "swap",
+   "G": "sparked",
+   "H": "curiosity",
+   "I": "accessible",
+   "J": "reads"
+  },
+  "answer": "A",
+  "gloss": "自在的、相處融洽的",
+  "collocation": "It gets people talking and more ___ with their neighbors；get + O + V-ing／adj（使……開始……／變得……）；be／feel comfortable with sb（和某人相處自在）；make yourself comfortable（別拘束）",
+  "explanation": "看到 more ___ with their neighbors，有人會填 accessible，想成「和鄰居更好接近」；可是 accessible 形容的是地方或東西容易到達、取得，不用在人和人相處的感覺上。【句構線索】get 後面接受詞 people，再接兩個用 and 並列的補語：talking（開始交談）和 more ___（變得更……），空格是形容詞。【作答線索】前一句說 Bol 也很自豪社區因此凝聚（bringing communities together），再往前一句，設置書箱的人說他們認識了更多鄰居。從認識、交談到互相幫忙（This leads to them helping each other），中間這一步就是和鄰居相處更自在。【常見誤選】inclined 後面接 to V，不接 with。【延伸的字詞搭配】feel comfortable with（和……在一起很自在）。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在前一句 `Bol, too, is proud of the way Little Free Library is bringing communities together.`（Bol 也很自豪，小小免費圖書館把社區的人凝聚在一起）——前一句說社區因此凝聚，Bol 的話接著說大家開始交談、和鄰居越來越熟，最後互相幫忙；能描述「和鄰居相處」這種感覺的形容詞是 comfortable（自在的）。"
+ },
+ {
+  "id": "VPCA-z107p2_21",
+  "year": "（十）",
+  "passageId": "PCA-z107p2",
+  "blankNum": 21,
+  "categories": [
+   "詞性判斷",
+   "字彙選義",
+   "句型結構"
+  ],
+  "options": {
+   "A": "fix",
+   "B": "coined",
+   "C": "transparent",
+   "D": "edge",
+   "E": "doubling",
+   "F": "vision",
+   "G": "posted",
+   "H": "process",
+   "I": "accessible",
+   "J": "security"
+  },
+  "answer": "H",
+  "gloss": "（動詞原形）處理（訊息）",
+  "collocation": "far faster than the brain can ___ or the eye can detect；process information／data（處理資訊／資料）；can + 原形動詞；名詞 process（過程）與動詞 process（處理）同形",
+  "explanation": "process 你最熟的是名詞「過程」，像 the learning process，看到 can 後面要接動詞，就把它跳過，改填同樣能當動詞的 fix 或 edge。可是「大腦能修理」「大腦能慢慢移動」，都和燈光閃得多快無關。process 名詞動詞同形，當動詞是「處理（資訊）」。【句構線索】can 後面接原形動詞，這一格又和 or 後面的 the eye can detect 對等，兩邊都是「主詞 + can + 原形動詞」。【作答線索】破折號裡講的是速度：燈光一秒閃幾百萬次，快到大腦來不及處理、眼睛也察覺不到，這種閃爍才能拿來傳資料。【延伸的字詞搭配】data processing（資料處理）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z107p2_22",
+  "year": "（十）",
+  "passageId": "PCA-z107p2",
+  "blankNum": 22,
+  "categories": [
+   "字彙選義",
+   "字詞搭配",
+   "句型結構"
+  ],
+  "options": {
+   "A": "fix",
+   "B": "coined",
+   "C": "transparent",
+   "D": "edge",
+   "E": "doubling",
+   "F": "vision",
+   "G": "posted",
+   "H": "process",
+   "I": "accessible",
+   "J": "security"
+  },
+  "answer": "B",
+  "gloss": "（動詞過去分詞）創造（新詞）",
+  "collocation": "The term was ___ by Harald Haas；coin a term／word／phrase（創造新詞、新說法）；be coined by + 人（由某人首創）",
+  "explanation": "coin 你認得的是名詞「硬幣」，coined 讀成「鑄成硬幣」，和主詞 The term 連不起來，於是改填 posted，當成「發表」。可是在演講裡說出一個新名詞，英文不說 post。【一字多義】coin 當動詞本來是「鑄造錢幣」，把原本沒有的錢幣造出來；用在語言上，就是「創造新字、新說法」：The word “selfie” was coined in Australia.（selfie 這個字是在澳洲創造出來的。）【句構線索】was ___ by 是被動語態，空格填過去分詞；The term 是創造出來的東西，by 後面接創造它的人。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z107p2_23",
+  "year": "（十）",
+  "passageId": "PCA-z107p2",
+  "blankNum": 23,
+  "categories": [
+   "字彙選義",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "fix",
+   "B": "coined",
+   "C": "transparent",
+   "D": "edge",
+   "E": "doubling",
+   "F": "vision",
+   "G": "posted",
+   "H": "process",
+   "I": "accessible",
+   "J": "security"
+  },
+  "answer": "F",
+  "gloss": "（名詞）願景、對未來的構想",
+  "collocation": "he shared his ___ of “wireless data from every light.”；share one's vision of／for（分享對……的願景）；a vision of the future（對未來的願景）",
+  "explanation": "vision 你最熟的是「視力」，放進演講內容裡講不通，有人就改填 process，以為 Haas 講的是傳資料的「過程」。可是引號裡「每一盞燈都能傳無線資料」在 2011 年還沒有實現，是 Haas 對未來的想像，不是一套步驟，所以填 vision（願景）。【延伸的字詞搭配】a person of vision（有遠見的人）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z107p2_24",
+  "year": "（十）",
+  "passageId": "PCA-z107p2",
+  "blankNum": 24,
+  "categories": [
+   "語意連貫",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "fix",
+   "B": "coined",
+   "C": "transparent",
+   "D": "edge",
+   "E": "doubling",
+   "F": "vision",
+   "G": "posted",
+   "H": "process",
+   "I": "accessible",
+   "J": "security"
+  },
+  "answer": "J",
+  "gloss": "（名詞）安全（防護）",
+  "collocation": "it offers tighter ___ for local networks；tight／tighter security（嚴密的安全防護）；network security（網路安全）；security 作不可數名詞，前面不加冠詞",
+  "explanation": "單看 tighter ___ for local networks，說不出「更嚴密的什麼」，容易挑一個看起來像優點的抽象名詞，例如 vision；可是 tighter vision 不是英文的說法，和網路也沒有關係。【作答線索】For one thing 表示這句講第一項優勢，答案要往後讀兩句才確定：能連上 Li-Fi 的只有房間裡的裝置，遠端的駭客 are shut out（進不來）。駭客進不來，講的就是網路安全。【句構線索】tight 形容防護「嚴密」，tight security 是新聞常見的說法：Security was tight at the airport.（機場戒備森嚴。）本句用比較級，意思是比 Wi-Fi 更嚴密；security 在這裡不可數，前面沒有冠詞。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在後兩句 `only devices inside the room can connect to a Li-Fi channel, so hackers in remote locations are shut out`（能連上 Li-Fi 頻道的只有房間裡的裝置，遠端的駭客也就進不來）——本句只說 Li-Fi 讓區域網路「更嚴密」，嚴密的是什麼，要讀到駭客進不來才確定：防的是入侵，講的是網路安全，填 security（安全）。"
+ },
+ {
+  "id": "VPCA-z107p2_25",
+  "year": "（十）",
+  "passageId": "PCA-z107p2",
+  "blankNum": 25,
+  "categories": [
+   "語意連貫",
+   "字彙選義",
+   "句型結構"
+  ],
+  "options": {
+   "A": "fix",
+   "B": "coined",
+   "C": "transparent",
+   "D": "edge",
+   "E": "doubling",
+   "F": "vision",
+   "G": "posted",
+   "H": "process",
+   "I": "accessible",
+   "J": "security"
+  },
+  "answer": "C",
+  "gloss": "透明的、透光的",
+  "collocation": "glass windows and other ___ surfaces；A and other + 複數名詞（A 和其他同類的東西）；transparent glass／plastic（透明玻璃／塑膠）",
+  "explanation": "空格夾在 other 和 surfaces 之間，要填形容詞。有人看到這些表面要 covered（遮起來），聯想到「碰得到的地方」而填 accessible；可是這一句的重點在光透不透得過。【作答線索】前一句說光線穿不透牆壁和門，訊號只會留在房間裡；要是有窗戶，光會從玻璃透出去，訊號也就傳到外面。所以要遮住的是光透得過的表面。【句構線索】A and other B 的句型裡，A 屬於 B 這一類：玻璃窗是這類表面的一種，玻璃最明顯的特性就是透明。反義字是 opaque（不透光的）。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在前一句 `light cannot pass through walls or doors`（光線穿不透牆壁或門）——光既然穿不過牆壁和門，能讓光透出房間的就只剩玻璃窗這一類的表面；本句要遮住的，就是光透得過的表面，填 transparent（透明的）。"
+ },
+ {
+  "id": "VPCA-z107p2_26",
+  "year": "（十）",
+  "passageId": "PCA-z107p2",
+  "blankNum": 26,
+  "categories": [
+   "字彙選義",
+   "同義呼應",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "fix",
+   "B": "coined",
+   "C": "transparent",
+   "D": "edge",
+   "E": "doubling",
+   "F": "vision",
+   "G": "posted",
+   "H": "process",
+   "I": "accessible",
+   "J": "security"
+  },
+  "answer": "D",
+  "gloss": "（名詞）優勢、勝過對手的地方",
+  "collocation": "Li-Fi's biggest ___ over Wi-Fi, however, is speed；have an edge over + 對手（比……占優勢）；a competitive edge（競爭優勢）；give sb an edge（讓某人占上風）",
+  "explanation": "edge 你認得的是「邊緣」，像 the edge of the table，放進來讀成「最大的邊緣」不通，就改填 security，以為最後又回到安全。可是 biggest security over Wi-Fi 不是英文的說法，冒號後面講的也是速度。這一格的 edge 是「優勢」，意思和 advantage 相同，常接 over：have an edge over sb（比某人占優勢）。【作答線索】本段第一句說 Li-Fi has several advantages over Wi-Fi，列出兩項之後，本句用 biggest 談到最大的一項：速度。edge over Wi-Fi 對應第一句的 advantages over Wi-Fi，正是文意選填常見的同義改寫。【延伸的字詞搭配】a competitive edge（競爭優勢）。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在本段第一句 `Li-Fi has several advantages over Wi-Fi`（Li-Fi 比起 Wi-Fi 有幾項優勢）——第一句先說 Li-Fi 比 Wi-Fi 有幾項優勢，接著一項一項列出安全、能在電磁敏感的場所使用；本句用 biggest 談到最大的一項，edge over Wi-Fi 就是把 advantages over Wi-Fi 換句話說，填 edge（優勢）。"
+ },
+ {
+  "id": "VPCA-z107p2_27",
+  "year": "（十）",
+  "passageId": "PCA-z107p2",
+  "blankNum": 27,
+  "categories": [
+   "字詞搭配",
+   "字彙選義",
+   "句型結構"
+  ],
+  "options": {
+   "A": "fix",
+   "B": "coined",
+   "C": "transparent",
+   "D": "edge",
+   "E": "doubling",
+   "F": "vision",
+   "G": "posted",
+   "H": "process",
+   "I": "accessible",
+   "J": "security"
+  },
+  "answer": "G",
+  "gloss": "（動詞過去分詞）隨時得到消息（keep sb posted＝讓某人隨時掌握最新情況）",
+  "collocation": "could keep drivers ___ on the weather and traffic conditions；keep sb posted (on／about sth)（隨時告訴某人最新情況）；keep + 受詞 + 過去分詞；keep sb informed／updated（讓某人掌握最新情況）",
+  "explanation": "post 你熟的是「張貼」「郵寄」和「上網發文」，keep drivers posted 讀成「把駕駛貼出來」，就改填 accessible，以為是讓駕駛「可以使用」天氣資訊。可是 keep drivers accessible 是讓駕駛聯絡得上，和天氣、路況接不起來。這裡的 post 是「告知最新消息」，keep sb posted 意思是讓某人隨時掌握最新情況：I'll keep you posted.（有新消息我再告訴你。）【句構線索】keep + 受詞 + 補語，補語說明受詞維持的狀態，像 keep the door open。drivers 是接收消息的一方，所以用過去分詞。天氣和路況隨時在變，keep … posted 正好表達「隨時更新」。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z107p2_28",
+  "year": "（十）",
+  "passageId": "PCA-z107p2",
+  "blankNum": 28,
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "fix",
+   "B": "coined",
+   "C": "transparent",
+   "D": "edge",
+   "E": "doubling",
+   "F": "vision",
+   "G": "posted",
+   "H": "process",
+   "I": "accessible",
+   "J": "security"
+  },
+  "answer": "I",
+  "gloss": "容易取得的、可以使用的",
+  "collocation": "local information would be easily ___ to visitors；be accessible to + 人（某人可以取得、使用）；easily accessible（容易取得的）",
+  "explanation": "看到 to visitors，有人想成「對遊客公開透明」而填 transparent，可是資訊透不透明，和 Li-Fi 讓觀光客受惠無關。【作答線索】since 說明 Tourists could benefit 的原因：有 LED 燈就能上網，在地資訊變得很容易「取得」。【延伸的字詞搭配】be accessible to the public（對大眾開放）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z107p2_29",
+  "year": "（十）",
+  "passageId": "PCA-z107p2",
+  "blankNum": 29,
+  "categories": [
+   "詞性判斷",
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "fix",
+   "B": "coined",
+   "C": "transparent",
+   "D": "edge",
+   "E": "doubling",
+   "F": "vision",
+   "G": "posted",
+   "H": "process",
+   "I": "accessible",
+   "J": "security"
+  },
+  "answer": "A",
+  "gloss": "（名詞）解決辦法",
+  "collocation": "smart lighting could even offer parents a quick ___ for their children's internet addiction；a quick fix（速效的解決辦法）；a fix for + 問題（……的解決辦法）",
+  "explanation": "fix 你熟的是動詞「修理」，看到 a quick 後面要接名詞，就把它跳過，改填 process，讀成「一個快速的過程」。可是冒號後面說的不是過程，而是一個辦法。fix 也是名詞，指問題的「解決辦法」，後面接 for；a quick fix 是常用的搭配，指一下子就能見效的辦法。【句構線索】a quick 後面要填名詞。【作答線索】冒號後面就是辦法的內容：家長把燈一關，孩子的網路也就斷了，一個動作就解決，正是 quick fix。【延伸的字詞搭配】There is no quick fix.（沒有一下子就能解決的辦法。）",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z107p2_30",
+  "year": "（十）",
+  "passageId": "PCA-z107p2",
+  "blankNum": 30,
+  "categories": [
+   "字彙選義",
+   "句型結構",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "fix",
+   "B": "coined",
+   "C": "transparent",
+   "D": "edge",
+   "E": "doubling",
+   "F": "vision",
+   "G": "posted",
+   "H": "process",
+   "I": "accessible",
+   "J": "security"
+  },
+  "answer": "E",
+  "gloss": "（動詞 V-ing）兼作、同時充當",
+  "collocation": "With 14 billion light bulbs potentially ___ as 14 billion transmitters；double as + 角色（兼作、同時充當）；With + 受詞 + V-ing（附帶狀況）",
+  "explanation": "有人看 potentially 就填形容詞 accessible，可是 accessible as transmitters 不是道地的說法，也說不出燈泡多了一種用途。double 你熟的是「加倍」，前後都是 14 billion，數量沒變，就不敢填。double as 是「兼作」：燈泡本來用來照明，還能兼當資料發射器。【句構線索】With + 受詞 + V-ing 表示附帶狀況，燈泡自己充當發射器，所以用 V-ing。例如 The sofa doubles as a bed.（沙發也可以當床。）",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g114p1_21",
+  "year": "（十一）",
+  "passageId": "PCA-g114p1",
+  "blankNum": 21,
+  "categories": [
+   "語意連貫",
+   "字彙選義",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "filed",
+   "B": "unprecedented",
+   "C": "hazard",
+   "D": "display",
+   "E": "movable",
+   "F": "emergence",
+   "G": "stationed",
+   "H": "short-lived",
+   "I": "adjust",
+   "J": "versions"
+  },
+  "answer": "E",
+  "gloss": "可以活動的、可移動的",
+  "collocation": "he proposed a signal that borrowed the ___ arms used on railways；movable arms（可以活動的號誌臂）；movable parts（活動零件）；a movable bridge（活動橋）；move（動詞）→ movable（形容詞）",
+  "explanation": "空格夾在 the 和名詞 arms 之間，要放形容詞。有人想到這是史上第一座交通號誌，就選 unprecedented，讀成「前所未有的號誌臂」；可是 used on railways 說的是鐵路上本來就有的號誌臂，談不上前所未有。【作答線索】冒號後面說，號誌臂水平伸出表示停，下降到 45 度角表示可以走。同一支臂在兩個位置之間來回，所以是「可以活動的」。【文內驗證】第三段的 `swinging arms`（擺動的號誌臂）是同一個意思。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g114p1_22",
+  "year": "（十一）",
+  "passageId": "PCA-g114p1",
+  "blankNum": 22,
+  "categories": [
+   "字彙選義",
+   "詞性判斷",
+   "句型結構",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "filed",
+   "B": "unprecedented",
+   "C": "hazard",
+   "D": "display",
+   "E": "movable",
+   "F": "emergence",
+   "G": "stationed",
+   "H": "short-lived",
+   "I": "adjust",
+   "J": "versions"
+  },
+  "answer": "G",
+  "gloss": "（動詞過去分詞）派駐、安排在某個位置",
+  "collocation": "a police officer was ___ beside the signal to operate it；be stationed + 地點（派駐在……）；be stationed abroad（派駐國外）；station guards at the gate（在大門安排警衛）；station 當名詞：a train station（火車站）、a police station（警察局）",
+  "explanation": "station 你最熟的是名詞「車站」，像 a train station、a police station，所以讀到 was ___ beside the signal，很多人想不到 stationed，反而去選同樣是 -ed 的 filed，以為警察是「列入名冊」放在號誌旁邊。可是 file 的對象是文件，不是人。【作答線索】句尾 to operate it 交代警察在那裡做什麼：號誌臂要有人扳動，所以要派一名警察守在旁邊。station 當動詞，意思是「把人派到某個位置上」，be stationed beside the signal 就是「派駐在號誌旁邊」。【句構線索】was 加過去分詞是被動語態，派人的是警方，警察是接受派遣的一方，所以用 stationed。【一字多義】station 的名詞本義是「固定的位置、崗位」，車站、警察局都是這樣的位置；當動詞，就是把人安排到這樣的位置上。He was stationed in Germany.（他派駐德國。）",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g114p1_23",
+  "year": "（十一）",
+  "passageId": "PCA-g114p1",
+  "blankNum": 23,
+  "categories": [
+   "語意連貫",
+   "字彙選義",
+   "句型結構"
+  ],
+  "options": {
+   "A": "filed",
+   "B": "unprecedented",
+   "C": "hazard",
+   "D": "display",
+   "E": "movable",
+   "F": "emergence",
+   "G": "stationed",
+   "H": "short-lived",
+   "I": "adjust",
+   "J": "versions"
+  },
+  "answer": "H",
+  "gloss": "短命的、維持不久的",
+  "collocation": "Knight’s signal, installed near London’s Westminster Bridge in December 1868, turned out to be ___；turn out to be + adj／N（結果是……）；a short-lived success（短暫的成功）；a short-lived fashion（一時的流行）；反義字 long-lived（長壽的、持久的）",
+  "explanation": "這一句單獨讀，unprecedented 也說得通：Knight 的號誌是史上第一座，說它「前所未有」好像沒錯。可是 turned out to be 的意思是「結果是……」，要看後來怎麼了，答案在下一句。【作答線索】下一句一開頭就用 Just a month later 交代時間：裝好才一個月，煤氣外洩，燈具爆炸，操作號誌的警察受傷；再下一句說計畫立刻喊停。從裝設到停用不過一個月，這套號誌的結果就是「維持不久」。【怎麼判斷】short-lived 是 short 加上 -lived（從 live 變來）組成的形容詞，字面是「活得短」，用在東西或事情上，就是存在的時間很短。unprecedented 說的是「從來沒有過」，講的是開始以前的事，和 turned out to be 要交代的結果接不起來。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在下一句 `Just a month later, a gas leak caused the lamps to explode`（才過一個月，煤氣外洩就讓燈具爆炸）——本句只說號誌裝在西敏橋附近，turned out to be 要交代的結果在下一句：裝好一個月就出事，再下一句計畫立刻喊停，可見這套號誌維持不久，填 short-lived（短命的、維持不久的）。"
+ },
+ {
+  "id": "VPCA-g114p1_24",
+  "year": "（十一）",
+  "passageId": "PCA-g114p1",
+  "blankNum": 24,
+  "categories": [
+   "字詞搭配",
+   "語意連貫",
+   "句型結構"
+  ],
+  "options": {
+   "A": "filed",
+   "B": "unprecedented",
+   "C": "hazard",
+   "D": "display",
+   "E": "movable",
+   "F": "emergence",
+   "G": "stationed",
+   "H": "short-lived",
+   "I": "adjust",
+   "J": "versions"
+  },
+  "answer": "C",
+  "gloss": "（名詞）危險、危害",
+  "collocation": "Deemed a public ___, the project was dropped at once；a public hazard（危害公共安全的東西）；a health hazard（危害健康的東西）；a fire hazard（容易引起火災的東西）；pose a hazard to（對……構成危險）；be deemed + N／adj（視為……）",
+  "explanation": "Deemed 是第六級的字，不少人看不懂，就從 a public ___ 去猜，選了 emergence，讀成「公開亮相」；可是「出現」看不出好壞，接不上後半句的 dropped at once（立刻喊停）。【作答線索】燈具爆炸、警察受傷之後，會讓當局立刻喊停的，是「危害公共安全的東西」。【句構線索】deem A (to be) B 是「把 A 看成 B」，做認定這個動作的是當局，計畫是接受認定的一方，所以用 Deemed。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g114p1_25",
+  "year": "（十一）",
+  "passageId": "PCA-g114p1",
+  "blankNum": 25,
+  "categories": [
+   "詞性判斷",
+   "語意連貫",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "filed",
+   "B": "unprecedented",
+   "C": "hazard",
+   "D": "display",
+   "E": "movable",
+   "F": "emergence",
+   "G": "stationed",
+   "H": "short-lived",
+   "I": "adjust",
+   "J": "versions"
+  },
+  "answer": "J",
+  "gloss": "（名詞複數）版本、仿照的款式",
+  "collocation": "In the early 1900s, ___ of Britain’s traffic lights appeared in big American cities；versions of + N（……的各種版本）；an earlier version（較早的版本）；a modern version of（……的現代版）；the latest version（最新版）",
+  "explanation": "有人看到後面的 appeared（出現），就選意思相近的 emergence，讀成「英國紅綠燈的出現，出現在美國大城市」，同一句裡就說了兩次「出現」。【句構線索】空格是句子的主詞，前面沒有冠詞，複數的 versions 不加冠詞正好。【作答線索】英國的紅綠燈傳到美國，各城市做出來的是仿照它的「版本」。【文內驗證】下一句說芝加哥用擺動的號誌臂，舊金山用紅綠燈，各地的做法不一樣，正是好幾種不同的版本。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g114p1_26",
+  "year": "（十一）",
+  "passageId": "PCA-g114p1",
+  "blankNum": 26,
+  "categories": [
+   "字彙選義",
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "filed",
+   "B": "unprecedented",
+   "C": "hazard",
+   "D": "display",
+   "E": "movable",
+   "F": "emergence",
+   "G": "stationed",
+   "H": "short-lived",
+   "I": "adjust",
+   "J": "versions"
+  },
+  "answer": "A",
+  "gloss": "（動詞過去式）提出申請（file a patent 申請專利）",
+  "collocation": "Across the country, inventors ___ patents for improvements on Knight’s ideas；file a patent（申請專利）；file a complaint（提出申訴）；file a lawsuit against（對……提起訴訟）；file for bankruptcy（申請破產）",
+  "explanation": "file 你認得的是名詞「檔案、文件夾」，或動詞「歸檔」，讀到 inventors ___ patents 覺得「把專利歸檔」不對，有人就改選 display，讀成發明家「展示」專利。可是這一段講的是 1900 年代初期的事，句子要用過去式，display 是原形；何況專利是向政府申請的權利，不是拿來展示的東西。【作答線索】句中的 improvements on Knight’s ideas（改良 Knight 的構想）說明這些發明家做出了新東西，要保護自己的發明，就得申請專利。file 在這裡是「正式提出」：把申請文件交給主管機關存檔，就是提出申請，所以 file a patent 是「申請專利」。【文內驗證】下一句舉出這些改良裡最重要的一項：Potts 發明的黃燈，文章稱它為 `A major breakthrough`。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g114p1_27",
+  "year": "（十一）",
+  "passageId": "PCA-g114p1",
+  "blankNum": 27,
+  "categories": [
+   "詞性判斷",
+   "字彙選義",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "filed",
+   "B": "unprecedented",
+   "C": "hazard",
+   "D": "display",
+   "E": "movable",
+   "F": "emergence",
+   "G": "stationed",
+   "H": "short-lived",
+   "I": "adjust",
+   "J": "versions"
+  },
+  "answer": "D",
+  "gloss": "（動詞）顯示",
+  "collocation": "Potts’ three-color system could ___ an added signal；display a message／a warning（顯示訊息／警告）；on display（展示中）；display 當名詞：a window display（櫥窗陳列）",
+  "explanation": "display 你多半當名詞記，像 on display（展示中），看到 could ___ 不太敢放它，有人改選原形的 adjust，讀成三色系統可以「調整」出一個新號誌；可是 adjust 是把原本就有的東西調一調，這個號誌是新加上去的（added）。【作答線索】could 後面接原形動詞；三色號誌多了一個顏色，就多了一個「顯示」給駕駛人看的號誌，也就是 proceed with caution（小心通行）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g114p1_28",
+  "year": "（十一）",
+  "passageId": "PCA-g114p1",
+  "blankNum": 28,
+  "categories": [
+   "字彙選義",
+   "語意連貫",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "filed",
+   "B": "unprecedented",
+   "C": "hazard",
+   "D": "display",
+   "E": "movable",
+   "F": "emergence",
+   "G": "stationed",
+   "H": "short-lived",
+   "I": "adjust",
+   "J": "versions"
+  },
+  "answer": "F",
+  "gloss": "（名詞）出現、興起",
+  "collocation": "with the ___ of self-driving cars；the emergence of + N（……的出現）；emerge（動詞：出現、浮現）；with the advent of + N（隨著……的到來）",
+  "explanation": "the ___ of 中間放名詞，有人想到自駕車有很多款式，就選 versions，讀成「隨著自駕車的各種版本」；可是這樣一來，句子沒有交代自駕車怎麼了，研究人員為什麼現在才開始（have begun to）說號誌不再需要，也就說不通。【作答線索】自駕車是最近才出現的新東西，研究人員因為它出現，才開始提出新看法，所以是 the emergence of self-driving cars（隨著自駕車出現）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g114p1_29",
+  "year": "（十一）",
+  "passageId": "PCA-g114p1",
+  "blankNum": 29,
+  "categories": [
+   "字詞搭配",
+   "語意連貫",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "filed",
+   "B": "unprecedented",
+   "C": "hazard",
+   "D": "display",
+   "E": "movable",
+   "F": "emergence",
+   "G": "stationed",
+   "H": "short-lived",
+   "I": "adjust",
+   "J": "versions"
+  },
+  "answer": "I",
+  "gloss": "調整",
+  "collocation": "cars approaching an intersection will automatically ___ their speed；adjust the speed／the volume（調整速度／音量）；adjust to + N（適應……）；adjustment（名詞：調整）",
+  "explanation": "will 後面要接原形動詞，選項裡的原形動詞有 adjust 和 display 兩個；有人想到儀表板會顯示車速，就選了 display。可是同一句後面說 so that they can pass through while keeping a safe distance，車子要順利通過路口、又和別的車保持距離，靠的是放慢或加快，不是把速度顯示出來。【作答線索】adjust their speed 就是「調整車速」。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g114p1_30",
+  "year": "（十一）",
+  "passageId": "PCA-g114p1",
+  "blankNum": 30,
+  "categories": [
+   "語意連貫",
+   "字彙選義",
+   "句型結構"
+  ],
+  "options": {
+   "A": "filed",
+   "B": "unprecedented",
+   "C": "hazard",
+   "D": "display",
+   "E": "movable",
+   "F": "emergence",
+   "G": "stationed",
+   "H": "short-lived",
+   "I": "adjust",
+   "J": "versions"
+  },
+  "answer": "B",
+  "gloss": "前所未有的",
+  "collocation": "In the near future, we may experience a form of traffic management that is truly ___!；unprecedented ＝ un-（不） + precedent（先例） + -ed；an unprecedented event（前所未有的事件）；on an unprecedented scale（規模空前）",
+  "explanation": "只看這一句，a form of traffic management that is truly ___ 放 short-lived 也說得過去，讀成「真的很短暫的交通管理方式」，不少人就選了它。可是這一句接在研究人員的看法後面，講的是這個看法如果實現會帶來什麼，要回頭看前兩句。【作答線索】前兩句說，自駕車出現以後，號誌可能不再需要，車子會自動調整車速通過路口。從 Knight 的號誌臂到 Potts 的三色燈，路口一直靠號誌管理，不用號誌的路口是從來沒有過的做法。【怎麼判斷】unprecedented 拆開是 un-（不）、precedent（先例）加 -ed，字面就是「沒有先例的」。至於 short-lived，說的是存在時間很短，研究人員講的是將來的新方式，文章沒有說它維持不久。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在前一句 `cars approaching an intersection will automatically ___ their speed so that they can pass through`（車子接近路口時會自動……車速，好順利通過）——本句接著前兩句研究人員的看法往下說：路口不再需要號誌，由車子自己控制速度通過，這是從來沒有過的交通管理方式，填 unprecedented（前所未有的）。"
+ },
+ {
+  "id": "VPCA-g110p3_21",
+  "year": "（十二）",
+  "passageId": "PCA-g110p3",
+  "blankNum": 21,
+  "categories": [
+   "詞性判斷",
+   "字彙選義",
+   "句型結構"
+  ],
+  "options": {
+   "A": "tastes",
+   "B": "locate",
+   "C": "rare",
+   "D": "accomplished",
+   "E": "pitches",
+   "F": "abandoned",
+   "G": "demand",
+   "H": "compose",
+   "I": "acquaintances",
+   "J": "mastered"
+  },
+  "answer": "D",
+  "gloss": "（形容詞）有成就的、造詣很高的",
+  "collocation": "he was also a highly ___ scientist and inventor；a highly accomplished + 人（成就非凡的……）；an accomplished pianist（技巧純熟的鋼琴家）；accomplish a task（完成任務，動詞）",
+  "explanation": "accomplished 長得像動詞 accomplish（完成）的過去式，很多人讀到 a highly ___ scientist 就不考慮它，改選 rare，讀成「非常難得的科學家」。可是 rare 前面很少加 highly，a highly rare scientist 不是英文的說法；而且 rare 修飾人時，重點在「少見」，不像 accomplished 直接說他造詣很高。【句構線索】空格夾在副詞 highly 和名詞 scientist 中間，要放形容詞。accomplish 的過去分詞早已當成形容詞用，意思是「有成就的、造詣很高的」，放在人的前面。【作答線索】前一句說他是偉大的政治家，本句用 Yet he was also 補上他在科學和發明上同樣出色。【一字多義】She is an accomplished violinist.（她是造詣很深的小提琴家。）",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g110p3_22",
+  "year": "（十二）",
+  "passageId": "PCA-g110p3",
+  "blankNum": 22,
+  "categories": [
+   "字詞搭配",
+   "語意連貫",
+   "句型結構"
+  ],
+  "options": {
+   "A": "tastes",
+   "B": "locate",
+   "C": "rare",
+   "D": "accomplished",
+   "E": "pitches",
+   "F": "abandoned",
+   "G": "demand",
+   "H": "compose",
+   "I": "acquaintances",
+   "J": "mastered"
+  },
+  "answer": "H",
+  "gloss": "作（曲）",
+  "collocation": "both Mozart and Beethoven went on to ___ music for；compose music for + N（為……作曲）；go on to + V（後來接著做……）；composer（作曲家）",
+  "explanation": "有人看到空格後面是 music，會選同樣是原形動詞的 locate，讀成「替這種樂器找到音樂」；可是莫札特和貝多芬是作曲家，他們和一件樂器的關係，是替它寫曲子。【句構線索】go on to 後面接原形動詞，意思是「後來接著做……」。【作答線索】compose music for 是「為……作曲」，介系詞 for 的受詞就是前面的 an instrument，也就是說，這兩位作曲家後來都替玻璃琴寫過曲子。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g110p3_23",
+  "year": "（十二）",
+  "passageId": "PCA-g110p3",
+  "blankNum": 23,
+  "categories": [
+   "字彙選義",
+   "同義呼應",
+   "詞性判斷",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "tastes",
+   "B": "locate",
+   "C": "rare",
+   "D": "accomplished",
+   "E": "pitches",
+   "F": "abandoned",
+   "G": "demand",
+   "H": "compose",
+   "I": "acquaintances",
+   "J": "mastered"
+  },
+  "answer": "E",
+  "gloss": "（名詞）音高",
+  "collocation": "hemispheres of glass, which varied in size and thickness so as to produce different ___；produce different pitches（發出高低不同的音）；a high／low pitch（高音／低音）；perfect pitch（絕對音感）；so as to + V（為了……）",
+  "explanation": "pitch 你最熟的是棒球的「投球」，想不到它和聲音有關；看到 different 後面要名詞，有人就選了常聽到的 different tastes，讀成「發出不同的味道」。可是玻璃半球是拿來演奏的，要發出的是聲音，不是味道。【句構線索】different 是形容詞，後面要接名詞，說「好幾種不同的」又要用複數，pitches 和 tastes 字形都合，pitches 在這裡是名詞複數。【作答線索】同一句說玻璃半球的大小、厚薄各不相同，so as to 交代這樣做的目的：發出不同的「什麼」。零件做成不同大小，為的是讓每一個發出高低不同的音，這正是 pitch 在音樂上的意思「音高」。【文內驗證】下一句說半球用油漆標上顏色，方便演奏的人找到 `the notes`（音符）的位置，一個半球一個音，音符講的正是一個個高低不同的音。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g110p3_24",
+  "year": "（十二）",
+  "passageId": "PCA-g110p3",
+  "blankNum": 24,
+  "categories": [
+   "語意連貫",
+   "字詞搭配",
+   "句型結構"
+  ],
+  "options": {
+   "A": "tastes",
+   "B": "locate",
+   "C": "rare",
+   "D": "accomplished",
+   "E": "pitches",
+   "F": "abandoned",
+   "G": "demand",
+   "H": "compose",
+   "I": "acquaintances",
+   "J": "mastered"
+  },
+  "answer": "B",
+  "gloss": "找出……的位置",
+  "collocation": "color-coded with paint to help the player ___ the notes；help + 受詞 + 原形動詞（幫助某人做……）；locate the source of + N（找出……的來源）；be located in + 地方（位於……）",
+  "explanation": "有人看到 the notes（音符）就想到作曲，選了 compose，讀成「幫演奏的人寫音符」；可是油漆塗上的顏色不會幫人作曲，只是一種標記。【作答線索】同一句的 color-coded 是「用顏色區分」，三十七個半球外表相似，塗上不同的顏色，演奏的人一看就知道哪個音在哪一個半球上，所以是「找到」音符的位置。【句構線索】help the player ___ 是 help + 受詞 + 原形動詞。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g110p3_25",
+  "year": "（十二）",
+  "passageId": "PCA-g110p3",
+  "blankNum": 25,
+  "categories": [
+   "語意連貫",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "tastes",
+   "B": "locate",
+   "C": "rare",
+   "D": "accomplished",
+   "E": "pitches",
+   "F": "abandoned",
+   "G": "demand",
+   "H": "compose",
+   "I": "acquaintances",
+   "J": "mastered"
+  },
+  "answer": "J",
+  "gloss": "（動詞過去式）精通、練熟",
+  "collocation": "He ___ it；master an instrument（精通一種樂器）；master a skill／a language（學會一種技能／語言）；master 當名詞：a master of + N（……的大師）",
+  "explanation": "He ___ it. 這一句很短，過去式的及物動詞放進去文法都通，最容易吸走學生的是 abandoned：放進去讀成「他放棄了這種樂器」，句子本身完全成立，有人還會想到最後一段說玻璃琴遭到淘汰。【作答線索】只看這一句分不出來，要往下讀。下一句用 After that 接著說，他把玻璃琴帶到派對和聚會上，演奏給朋友和熟人聽；如果他已經放棄，就不會再帶著它到處演奏，所以本句講的是他把這種樂器「練熟了」。至於最後一段的淘汰，那是 19 世紀音樂廳變大以後的事，和富蘭克林自己會不會彈無關。【延伸的字詞搭配】master 當動詞是「精通、學會」，常接 a skill、a language、an instrument；當名詞是「大師、高手」，像 a master of the piano（鋼琴大師）。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在下一句 `After that, he took it to parties and gatherings, where he played for his friends and ___`（之後，他帶著玻璃琴到派對和聚會上，演奏給朋友和……聽）——能帶著樂器到處演奏給別人聽，表示他已經彈得很好；本句如果說他放棄了這種樂器，下一句就接不下去。"
+ },
+ {
+  "id": "VPCA-g110p3_26",
+  "year": "（十二）",
+  "passageId": "PCA-g110p3",
+  "blankNum": 26,
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "tastes",
+   "B": "locate",
+   "C": "rare",
+   "D": "accomplished",
+   "E": "pitches",
+   "F": "abandoned",
+   "G": "demand",
+   "H": "compose",
+   "I": "acquaintances",
+   "J": "mastered"
+  },
+  "answer": "I",
+  "gloss": "（名詞）熟人、相識的人",
+  "collocation": "he played for his friends and ___；friends and acquaintances（朋友和熟人）；a casual acquaintance（泛泛之交）；make sb’s acquaintance（結識某人）",
+  "explanation": "acquaintances 是第四級的字，字又長，有人不認得，就不敢選它；有人看到 friends and ___ 要一個和 friends 並列的複數名詞，就選了同樣帶 -s 的 tastes，讀成「演奏給朋友和喜好聽」。可是 play for 後面要接聽演奏的人，和 friends 並列的也得是人。【作答線索】friends and acquaintances 是很常連用的一組，意思是「朋友和熟人」。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g110p3_27",
+  "year": "（十二）",
+  "passageId": "PCA-g110p3",
+  "blankNum": 27,
+  "categories": [
+   "字詞搭配",
+   "詞性判斷",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "tastes",
+   "B": "locate",
+   "C": "rare",
+   "D": "accomplished",
+   "E": "pitches",
+   "F": "abandoned",
+   "G": "demand",
+   "H": "compose",
+   "I": "acquaintances",
+   "J": "mastered"
+  },
+  "answer": "G",
+  "gloss": "（名詞）需求",
+  "collocation": "The armonica was in such great ___ that thousands were built and sold；be in great demand（需求很大、很搶手）；such + adj + N + that（如此……以致於……）；meet the demand（滿足需求）",
+  "explanation": "demand 你常見的是動詞「要求」，所以看到 in such great ___ 會猶豫，有人改選 tastes，讀成「品味很好」；可是英文沒有 in great tastes 這種說法，也說明不了為什麼賣出好幾千台。【句構線索】such great 後面要接名詞，demand 在這裡當名詞用，be in great demand 是「需求很大、很搶手」。【作答線索】that 子句說造了、賣了好幾千台，正是東西搶手的結果。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g110p3_28",
+  "year": "（十二）",
+  "passageId": "PCA-g110p3",
+  "blankNum": 28,
+  "categories": [
+   "字彙選義",
+   "詞性判斷",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "tastes",
+   "B": "locate",
+   "C": "rare",
+   "D": "accomplished",
+   "E": "pitches",
+   "F": "abandoned",
+   "G": "demand",
+   "H": "compose",
+   "I": "acquaintances",
+   "J": "mastered"
+  },
+  "answer": "A",
+  "gloss": "（名詞）喜好、品味",
+  "collocation": "But ___ in music changed；taste in music／clothes（對音樂／衣著的品味）；musical tastes（對音樂的喜好）；have good taste（品味很好）",
+  "explanation": "taste 你記的是「味道」，tastes 又帶著 -s，有人以為是動詞「嚐起來」，不敢放在句首；同樣帶 -s、又和音樂有關的 pitches 就容易吸走學生，讀成「音樂的音高改變了」，只看這一句，文法和意思好像都說得通。【句構線索】句子的動詞是 changed，空格是它前面的主詞，要放名詞；tastes 在這裡是名詞複數，taste in music 是「對音樂的喜好、品味」。【作答線索】只看本句分不出這兩個字，要往下讀。下一句說音樂從小廳堂搬進大型音樂廳，再下一句說評論者覺得玻璃琴聲音很美，只是聽不到，可見音高沒有改變；讓一件樂器退流行的，是大家對音樂的喜好。【文內驗證】上一段說玻璃琴大受歡迎，本段用 But 轉過來講沒落，大家的喜好一變，熱潮就退了，前後正好相反。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在後兩句 `Music was moving out of the relatively small halls of Mozart’s day into the large concert halls of the 19th century`（音樂從莫札特時代比較小的廳堂，移到 19 世紀的大型音樂廳）和 `the armonica sounded wonderful—but only when it could be heard`（玻璃琴的聲音很美，可惜只有在聽得到的時候才是如此）——改變的是大家聽音樂的場所和方式，玻璃琴的聲音本身沒有問題，可見音高沒有改變；本句的 But 承接上一段的大受歡迎，轉到沒落，讓一件樂器退流行的是大家對音樂的喜好，所以填 tastes，不填 pitches。"
+ },
+ {
+  "id": "VPCA-g110p3_29",
+  "year": "（十二）",
+  "passageId": "PCA-g110p3",
+  "blankNum": 29,
+  "categories": [
+   "語意連貫",
+   "字彙選義",
+   "句型結構"
+  ],
+  "options": {
+   "A": "tastes",
+   "B": "locate",
+   "C": "rare",
+   "D": "accomplished",
+   "E": "pitches",
+   "F": "abandoned",
+   "G": "demand",
+   "H": "compose",
+   "I": "acquaintances",
+   "J": "mastered"
+  },
+  "answer": "F",
+  "gloss": "（動詞過去分詞）放棄、淘汰",
+  "collocation": "By the early 19th century, it had largely been ___；be abandoned（遭到放棄、淘汰）；abandon a plan（放棄計畫）；abandon hope（放棄希望）；an abandoned house（廢棄的房子）",
+  "explanation": "it had largely been ___ 是過去完成式的被動語態，-ed 的選項放進去文法都通，最容易混淆的是 mastered：讀成「到 19 世紀初，玻璃琴大多已經有人練熟了」，單看這一句好像也說得通。【作答線索】要回頭讀前一句。So 表示結果，alas 是「唉、可惜」，fell out of favor 是「不再受到青睞」，三個線索都往壞的方向走，本句接在後面，講的是沒落的結果，也就是玻璃琴大致上遭到淘汰。【文內驗證】下一句用 Even so 轉一下，說今天偶爾還是有人演奏；正因為大多數人已經不用了，「還有人演奏」才需要用表示讓步的 Even so 來引出。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在前一句 `So, alas, Franklin’s marvelous invention fell out of favor.`（所以，可惜的是，富蘭克林這項了不起的發明終究不再受到青睞。）——fell out of favor 說玻璃琴不再受歡迎，alas 帶著惋惜的語氣，本句接著交代結果，所以是「大致上已經沒有人用了」；如果說它已經有人練熟，就和惋惜的語氣對不上。"
+ },
+ {
+  "id": "VPCA-g110p3_30",
+  "year": "（十二）",
+  "passageId": "PCA-g110p3",
+  "blankNum": 30,
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "tastes",
+   "B": "locate",
+   "C": "rare",
+   "D": "accomplished",
+   "E": "pitches",
+   "F": "abandoned",
+   "G": "demand",
+   "H": "compose",
+   "I": "acquaintances",
+   "J": "mastered"
+  },
+  "answer": "C",
+  "gloss": "罕見的、難得的",
+  "collocation": "the armonica is still played on ___ occasions today；on rare occasions（偶爾、難得有時候）＝ occasionally；on special occasions（在特別的場合）；a rare chance（難得的機會）",
+  "explanation": "有人知道 occasions 前面要放形容詞，會選 accomplished，讀成「在有成就的場合」；可是 accomplished 形容的是人或技藝，不能修飾場合。【作答線索】句首 Even so 承接前一句「大致上已經沒有人用」，玻璃琴已經很少人用，今天還有人演奏，也只是「難得有時候」，on rare occasions 就是 occasionally 的意思。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g108p1_21",
+  "year": "（十三）",
+  "passageId": "PCA-g108p1",
+  "blankNum": 21,
+  "categories": [
+   "語意連貫",
+   "詞性判斷",
+   "同義呼應"
+  ],
+  "options": {
+   "A": "tissue",
+   "B": "lacking",
+   "C": "sport",
+   "D": "specific",
+   "E": "entirely",
+   "F": "consists",
+   "G": "striking",
+   "H": "appearance",
+   "I": "signal",
+   "J": "capability"
+  },
+  "answer": "G",
+  "gloss": "（形容詞）醒目的、引人注目的",
+  "collocation": "Brilliant colors and stripes form ___ patterns on their bodies；a striking pattern／color／contrast（醒目的花紋／顏色／對比）；a striking resemblance（驚人的相似）",
+  "explanation": "striking 看起來是 strike（打擊、罷工）加 -ing，很多人以為它只能當動詞，不敢放在 patterns 前面，就改選同樣能修飾名詞的 specific，讀成「形成特定的花紋」。單看這一句，specific 也說得過去，所以要往下讀。【作答線索】下一句用 Yet 轉折，說這些花紋雖然 eye-catching（搶眼），其實能幫魚躲避危險；也就是說，本句講的必須是花紋「很顯眼」，這個轉折才成立。striking 在這裡是形容詞「醒目的、引人注目的」，和句首的 Brilliant colors 也前後一致。【文內驗證】下一句的 as eye-catching as these patterns are，正是 striking 的同義改寫。【一字多義】There is a striking difference between the two photos.（兩張照片有明顯的差別。）",
+  "contextSpan": "跨句",
+  "contextNote": "線索在下一句 `Yet as eye-catching as these patterns are, they actually help the fish hide from danger among roots and plants.`（不過，這些花紋雖然搶眼，其實能幫助魚躲在樹根和植物之間，避開危險。）——Yet 把話轉過來，本句講的必須是花紋「很顯眼」，轉折才說得通；單看本句，說成「特定的花紋」也讀得通，要靠下一句的 eye-catching 才能確定空格是「醒目的」。"
+ },
+ {
+  "id": "VPCA-g108p1_22",
+  "year": "（十三）",
+  "passageId": "PCA-g108p1",
+  "blankNum": 22,
+  "categories": [
+   "字彙選義",
+   "詞性判斷",
+   "句型結構"
+  ],
+  "options": {
+   "A": "tissue",
+   "B": "lacking",
+   "C": "sport",
+   "D": "specific",
+   "E": "entirely",
+   "F": "consists",
+   "G": "striking",
+   "H": "appearance",
+   "I": "signal",
+   "J": "capability"
+  },
+  "answer": "C",
+  "gloss": "（動詞）身上帶著、展示（顯眼的顏色或打扮）",
+  "collocation": "Young angelfish also tend to ___ colors different from those of the adults；sport + 顏色／花紋／打扮（身上帶著、亮出……）；sport a beard／a new haircut（留著鬍子／頂著新髮型）；tend to + 原形動詞（往往……）",
+  "explanation": "sport 你一定認得，可是腦中出現的是名詞「運動」，用這個意思讀 tend to ___ colors 完全接不起來，有人就改選同樣是原形動詞的 signal，讀成「幼魚往往顯示不同的顏色」。可是 signal 後面接的是要傳達的訊息，像 signal danger（示警），顏色本身不是訊息，signal colors 說不通。【作答線索】sport 也可以當動詞，意思是身上帶著、亮出某種顯眼的東西，常用來說打扮、毛色和花紋，sport colors 就是「身上是……的顏色」。本句講的還是顏色，只是對象換成幼魚：幼魚身上的顏色和成魚不同。【文內驗證】下一句的 this contrast between the young and the adults，指的就是本句講的幼魚和成魚顏色不同。【一字多義】The fans sported their team colors at the parade.（球迷在遊行時穿著球隊代表色的衣服。）",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g108p1_23",
+  "year": "（十三）",
+  "passageId": "PCA-g108p1",
+  "blankNum": 23,
+  "categories": [
+   "語意連貫",
+   "詞性判斷",
+   "句型結構"
+  ],
+  "options": {
+   "A": "tissue",
+   "B": "lacking",
+   "C": "sport",
+   "D": "specific",
+   "E": "entirely",
+   "F": "consists",
+   "G": "striking",
+   "H": "appearance",
+   "I": "signal",
+   "J": "capability"
+  },
+  "answer": "I",
+  "gloss": "（動詞原形）顯示、代表",
+  "collocation": "this contrast between the young and the adults may ___ their different social positions；signal + N（顯示、代表……）；signal that + 子句；may + 原形動詞；signal 當名詞：send a signal（發出訊號）",
+  "explanation": "signal 有人只認得名詞「訊號」，不敢放在 may 後面，改選同樣是原形動詞、意思又有「展示」的 sport，讀成「這種差別可能展示了牠們的地位」。可是 sport 的主詞要是身上帶著東西的人或動物，this contrast 只是一種差別。【句構線索】may 後面接原形動詞，後面又有受詞，空格是及物動詞。【作答線索】顏色是看得見的記號，科學家認為這種差別可能「顯示」幼魚和成魚在群體中的地位不同。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g108p1_24",
+  "year": "（十三）",
+  "passageId": "PCA-g108p1",
+  "blankNum": 24,
+  "categories": [
+   "字彙選義",
+   "語意連貫",
+   "同義呼應"
+  ],
+  "options": {
+   "A": "tissue",
+   "B": "lacking",
+   "C": "sport",
+   "D": "specific",
+   "E": "entirely",
+   "F": "consists",
+   "G": "striking",
+   "H": "appearance",
+   "I": "signal",
+   "J": "capability"
+  },
+  "answer": "A",
+  "gloss": "（名詞）（生物的）組織；dead tissue 指死掉的組織、死皮",
+  "collocation": "picking dead ___ off their bodies；dead tissue（死掉的組織）；muscle／lung tissue（肌肉／肺部組織）；pick A off B（把 A 從 B 上面啄下來、摘下來）；facial tissue（面紙）",
+  "explanation": "tissue 你最熟的意思是「面紙」，讀到 picking dead ___ off their bodies，「啄掉死的面紙」說不通，有人就改選 appearance，讀成「啄掉身上死去的外表」。可是 appearance 是外觀、樣子，不是能從身上啄下來的東西。【作答線索】tissue 在生物學上是「組織」，也就是構成身體的細胞群，dead tissue 就是死掉的組織，魚身上的死皮也算在內。前半句說神仙魚替其他魚當清潔工，要清掉的正是別的魚身上已經死掉的東西。【文內驗證】下一句 `What they remove, though, is not their food.` 的 What they remove，指的就是本句啄下來的東西，再下一句說牠們主要吃海綿和藻類，可見死掉的組織只是清掉，不是拿來吃的。【一字多義】Smoking can damage lung tissue.（抽菸會傷害肺部組織。）",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g108p1_25",
+  "year": "（十三）",
+  "passageId": "PCA-g108p1",
+  "blankNum": 25,
+  "categories": [
+   "字詞搭配",
+   "句型結構",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "tissue",
+   "B": "lacking",
+   "C": "sport",
+   "D": "specific",
+   "E": "entirely",
+   "F": "consists",
+   "G": "striking",
+   "H": "appearance",
+   "I": "signal",
+   "J": "capability"
+  },
+  "answer": "F",
+  "gloss": "（動詞第三人稱單數）由……組成",
+  "collocation": "their diet ___ mainly of sponge and algae；consist of + N（由……組成）；consist mainly of（主要由……組成）；be made up of／be composed of（由……組成）",
+  "explanation": "有人把空格當成「顯示」，選了 signal，讀成「牠們的飲食主要顯示出海綿和藻類」；可是主詞 their diet 是單數，現在式動詞要加 -s，signal 後面也是直接接受詞，不接 of。【作答線索】Instead 把話轉到牠們真正吃的東西，空格後的 of sponge and algae 列出飲食的內容，consist of 正是「由……組成」。consist 沒有被動用法，不能說 is consisted of。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g108p1_26",
+  "year": "（十三）",
+  "passageId": "PCA-g108p1",
+  "blankNum": 26,
+  "categories": [
+   "語意連貫",
+   "句型結構",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "tissue",
+   "B": "lacking",
+   "C": "sport",
+   "D": "specific",
+   "E": "entirely",
+   "F": "consists",
+   "G": "striking",
+   "H": "appearance",
+   "I": "signal",
+   "J": "capability"
+  },
+  "answer": "J",
+  "gloss": "能力",
+  "collocation": "has a special ___: it can change from female to male；have the capability to + V／of + V-ing（有做……的能力）；capability 比 ability 正式",
+  "explanation": "這種魚叫 blackspot angelfish（黑斑神仙魚），名字講的是身上的斑點，有人就選 appearance，讀成「有特殊的外觀」。可是冒號後面的 it can change from female to male 是在說明這個 special ___ 是什麼，講的是牠「能做什麼」，不是牠長什麼樣子。【句構線索】冒號後的句子用 can 補充說明前面的名詞，所以空格是「能力」。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g108p1_27",
+  "year": "（十三）",
+  "passageId": "PCA-g108p1",
+  "blankNum": 27,
+  "categories": [
+   "語意連貫",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "tissue",
+   "B": "lacking",
+   "C": "sport",
+   "D": "specific",
+   "E": "entirely",
+   "F": "consists",
+   "G": "striking",
+   "H": "appearance",
+   "I": "signal",
+   "J": "capability"
+  },
+  "answer": "D",
+  "gloss": "特定的、明確的",
+  "collocation": "it takes place for a ___ reason；for a specific reason（出於特定的原因）；at random（隨機地）；specific to + N（……特有的）",
+  "explanation": "第一段寫了不少顏色和花紋，有人就選 striking，讀成「出於驚人的原因」。可是本句前半說 the change does not happen at random（這種轉變不是隨機發生的），分號後面接的是相反的說法，和「隨機」相對的是「特定的、有明確原因的」。【文內驗證】接下來兩句交代群體的組成和雄魚的角色，下一段再說雄魚死了，最大的雌魚才開始改變，這就是那個特定的原因。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g108p1_28",
+  "year": "（十三）",
+  "passageId": "PCA-g108p1",
+  "blankNum": 28,
+  "categories": [
+   "字詞搭配",
+   "句型結構",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "tissue",
+   "B": "lacking",
+   "C": "sport",
+   "D": "specific",
+   "E": "entirely",
+   "F": "consists",
+   "G": "striking",
+   "H": "appearance",
+   "I": "signal",
+   "J": "capability"
+  },
+  "answer": "B",
+  "gloss": "（動詞 V-ing）缺少",
+  "collocation": "the group suddenly finds itself ___ a “security guard.”；find oneself + V-ing（發現自己處在……的狀態）；lack + N（缺少……，不加 of）；a lack of + N（名詞用法）；be lacking in + N（在……方面不足）",
+  "explanation": "很多人把 lack 記成 lack of，看到空格後面沒有 of，就不敢選它，改選同樣是 -ing 的 striking。striking 當動詞是「打擊」，「群體發現自己在打一位警衛」文法上說得過去，意思卻完全不通。【句構線索】find oneself + V-ing 是「發現自己處在……的狀態」；lack 當動詞直接接受詞，a lack of 才是名詞的用法。【作答線索】雄魚是負責保護雌魚的「警衛」，牠一死，群體就沒有警衛了。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g108p1_29",
+  "year": "（十三）",
+  "passageId": "PCA-g108p1",
+  "blankNum": 29,
+  "categories": [
+   "語意連貫",
+   "字詞搭配",
+   "同義呼應"
+  ],
+  "options": {
+   "A": "tissue",
+   "B": "lacking",
+   "C": "sport",
+   "D": "specific",
+   "E": "entirely",
+   "F": "consists",
+   "G": "striking",
+   "H": "appearance",
+   "I": "signal",
+   "J": "capability"
+  },
+  "answer": "H",
+  "gloss": "外觀、外表",
+  "collocation": "the largest female in the group begins to change in ___；change in appearance（外觀改變）；a change in size／color（體型／顏色的改變）；make an appearance（露面）",
+  "explanation": "讀到 begins to change，有人想到的是由雌變雄這種本事，就選了 capability，讀成「開始在能力上改變」。單看本句，這樣讀似乎也通，要往下讀才知道改變的是什麼。【作答線索】下一句說牠先是體型變大，一週後顏色由黃轉藍，體型和顏色都是看得見的外在特徵，所以本句講的是「外觀」開始改變；對待其他魚的方式變得像雄魚，是再後面一句的事。【句構線索】change in + N 表示「在……方面改變」，in appearance 就是「外表上」。【一字多義】appearance 也可以指「出現、露面」：The singer made a surprise appearance at the concert.（那位歌手在演唱會上意外現身。）",
+  "contextSpan": "跨句",
+  "contextNote": "線索在下一句 `First, she grows larger, and after a week her color starts to shift from yellow to blue.`（牠先是體型變大，一週之後，顏色開始從黃色轉成藍色。）——本句只說最大的雌魚開始在某方面改變，單看本句，說成「能力」上的改變好像也通；下一句列出的體型和顏色都是看得見的外在特徵，空格才能確定是「外觀」。"
+ },
+ {
+  "id": "VPCA-g108p1_30",
+  "year": "（十三）",
+  "passageId": "PCA-g108p1",
+  "blankNum": 30,
+  "categories": [
+   "詞性判斷",
+   "同義呼應"
+  ],
+  "options": {
+   "A": "tissue",
+   "B": "lacking",
+   "C": "sport",
+   "D": "specific",
+   "E": "entirely",
+   "F": "consists",
+   "G": "striking",
+   "H": "appearance",
+   "I": "signal",
+   "J": "capability"
+  },
+  "answer": "E",
+  "gloss": "（副詞）完全地",
+  "collocation": "She is now ___ male!；entirely male（完全是雄性）；entirely different（完全不同）；not entirely（不完全）",
+  "explanation": "有人看到 is now 後面空著，以為要填形容詞，就選了 striking，讀成「牠現在是醒目的雄魚」。可是 male 前面沒有 a，這裡的 male 是形容詞「雄性的」，不是名詞「雄魚」；修飾形容詞要用副詞。【文內驗證】前一句說黑色條紋出現，表示 the change is complete（轉變完成了），本句的「完全是雄性」說的正是同一件事。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g112p3_21",
+  "year": "（十四）",
+  "passageId": "PCA-g112p3",
+  "blankNum": 21,
+  "categories": [
+   "字詞搭配",
+   "語意連貫",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "rule",
+   "B": "sitting",
+   "C": "prosperous",
+   "D": "lends",
+   "E": "boom",
+   "F": "settled",
+   "G": "harmony",
+   "H": "unimaginable",
+   "I": "docked",
+   "J": "appetite"
+  },
+  "answer": "H",
+  "gloss": "難以想像的",
+  "collocation": "control of Zanzibar meant access to ___ wealth；unimaginable wealth／riches（難以想像的財富）；access to + N（取得……的管道）；beyond imagination（超乎想像）",
+  "explanation": "有人看到 wealth 就聯想到「繁榮」，選了 prosperous；可是 prosperous 形容的是城市、家庭、年代這些興旺起來的人或地方，wealth 本身已經是財富，說「繁榮的財富」意思重複，英文也不這樣搭配。【作答線索】前一句說桑吉巴如今以沙灘和棕櫚樹聞名，本句用 But 轉過來，說它過去的另一面：控制了這裡，就能取得「難以想像的」財富。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g112p3_22",
+  "year": "（十四）",
+  "passageId": "PCA-g112p3",
+  "blankNum": 22,
+  "categories": [
+   "語意連貫",
+   "代名詞／指示詞",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "rule",
+   "B": "sitting",
+   "C": "prosperous",
+   "D": "lends",
+   "E": "boom",
+   "F": "settled",
+   "G": "harmony",
+   "H": "unimaginable",
+   "I": "docked",
+   "J": "appetite"
+  },
+  "answer": "F",
+  "gloss": "（動詞過去式）定居",
+  "collocation": "In the 8th century, Persian merchants ___ here；settle + 地方副詞（在某地定居）；settle in／on + 地方（在……定居）；settle down（安頓下來）",
+  "explanation": "只讀這一句，Persian merchants ___ here 放 docked 好像也說得通：這一篇講的是航線和貿易，商人搭船過來，在這裡「靠岸」。可是 dock 說的是船停靠，上岸做完生意的人隨時可以離開，這和下一句接不起來。【作答線索】下一句 the communities they built 的 they 就是本句的波斯商人：他們在島上建立聚落，聚落又在接下來四百年發展成貿易據點，可見他們是留下來「定居」。【句構線索】空格後面只有地方副詞 here，沒有受詞，要放不及物動詞的過去式；settle 也常接 in 或 on，像 settle in a new city。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在下一句 `the communities they built grew into`（他們建立的聚落發展成……）——they 指的是本句的波斯商人；他們在島上建起聚落，聚落又在接下來四百年發展成貿易據點，可見他們是留下來定居，不是靠岸停留一下，所以填 settled，不填 docked。"
+ },
+ {
+  "id": "VPCA-g112p3_23",
+  "year": "（十四）",
+  "passageId": "PCA-g112p3",
+  "blankNum": 23,
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "rule",
+   "B": "sitting",
+   "C": "prosperous",
+   "D": "lends",
+   "E": "boom",
+   "F": "settled",
+   "G": "harmony",
+   "H": "unimaginable",
+   "I": "docked",
+   "J": "appetite"
+  },
+  "answer": "C",
+  "gloss": "繁榮的、興旺的",
+  "collocation": "the communities they built grew into ___ trading posts；grow into + N（發展成……）；a prosperous town／economy（繁榮的城鎮／經濟）；prosper（動詞：興盛）",
+  "explanation": "有人看到 grew into ___ trading posts，把 settled 當形容詞放進來，讀成「發展成有人定居的貿易據點」；可是這些聚落本來就有人住，用不著再說一次。【作答線索】grow into 表示由小變大，要填的是發展之後的樣子，也就是「繁榮的」貿易據點。【文內驗證】下一句說貿易為群島帶來 `both wealth and power`，正是繁榮的具體內容。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g112p3_24",
+  "year": "（十四）",
+  "passageId": "PCA-g112p3",
+  "blankNum": 24,
+  "categories": [
+   "詞性判斷",
+   "字彙選義",
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "rule",
+   "B": "sitting",
+   "C": "prosperous",
+   "D": "lends",
+   "E": "boom",
+   "F": "settled",
+   "G": "harmony",
+   "H": "unimaginable",
+   "I": "docked",
+   "J": "appetite"
+  },
+  "answer": "E",
+  "gloss": "（名詞）繁榮、榮景",
+  "collocation": "commerce in Zanzibar enjoyed a rapid ___；enjoy a boom（迎來一段榮景）；an economic boom（經濟繁榮）；a boom in + N（……的熱潮）；boom 當動詞：Business is booming.（生意興隆）",
+  "explanation": "boom 你最熟的是「轟」的一聲巨響，或是動詞的 Business is booming.，看到 a rapid ___ 不敢把它當名詞，有人就因為句尾講香料，選了 appetite。可是主詞是 commerce（商業），商業不會有「胃口」。【句構線索】enjoyed a rapid ___ 是「冠詞 + 形容詞 + 名詞」，空格要名詞；boom 長得像動詞，在這裡卻是名詞。boom 當「繁榮」用，一般認為和「轟的一聲」那種突然爆發的感覺有關。【作答線索】句尾 largely due to the spice trade 交代原因，香料貿易帶來的就是商業的「榮景」。【文內驗證】段尾說桑吉巴 `became one of the biggest trading centers in the world`，正是榮景的樣子。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g112p3_25",
+  "year": "（十四）",
+  "passageId": "PCA-g112p3",
+  "blankNum": 25,
+  "categories": [
+   "字彙選義",
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "rule",
+   "B": "sitting",
+   "C": "prosperous",
+   "D": "lends",
+   "E": "boom",
+   "F": "settled",
+   "G": "harmony",
+   "H": "unimaginable",
+   "I": "docked",
+   "J": "appetite"
+  },
+  "answer": "J",
+  "gloss": "渴求、強烈的需求",
+  "collocation": "Europeans’ enormous ___ for spices；an appetite for + N（對……的渴求）；a huge／growing appetite for（龐大／越來越大的需求）；lose one’s appetite（沒有食慾）",
+  "explanation": "appetite 你記的是「食慾、胃口」，覺得它不像在講香料之路這種大事，有人就改選 boom，讀成「香料熱潮」；可是 boom 後面接 in，不接 for，enormous boom for spices 不是英文的說法。【作答線索】appetite for + N 可以引申成「對某樣東西的強烈渴求」：歐洲人想要大量香料，才開闢出連接歐洲和遠東的香料之路。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g112p3_26",
+  "year": "（十四）",
+  "passageId": "PCA-g112p3",
+  "blankNum": 26,
+  "categories": [
+   "字彙選義",
+   "同義呼應",
+   "句型結構"
+  ],
+  "options": {
+   "A": "rule",
+   "B": "sitting",
+   "C": "prosperous",
+   "D": "lends",
+   "E": "boom",
+   "F": "settled",
+   "G": "harmony",
+   "H": "unimaginable",
+   "I": "docked",
+   "J": "appetite"
+  },
+  "answer": "B",
+  "gloss": "（現在分詞）位於、坐落於",
+  "collocation": "an archipelago ___ at the crossroads of the Spice Route；sit + 地方（位於……）；sit at the crossroads of（位在……的交會點）；a house sitting on a hill（坐落在山丘上的房子）",
+  "explanation": "sit 是「坐」，很少人想得到群島也會「坐」，有人就改選 settled，讀成「定居在交會點的群島」。可是 settle 說的是人在某地住下來，這一句要描述的是群島在哪裡；settled 當形容詞是「有人定居的」，後面接 at the crossroads 也不成話。docked 也放不進去，靠岸的是船，不是群島。【作答線索】sit 用在建築、城鎮、島嶼這類東西時，意思是「坐落、位於」，和第一段開頭的 Situated off the coast of Tanzania 是同一個意思，只是換了說法。【句構線索】sitting at …… 是省略了 which is 的分詞片語，修飾前面的 an archipelago；an archipelago 這一整串再補充說明 Zanzibar。sit 不接受詞，用主動的 V-ing。【一字多義】The old temple sits at the foot of the mountain.（那座老廟坐落在山腳下。）",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g112p3_27",
+  "year": "（十四）",
+  "passageId": "PCA-g112p3",
+  "blankNum": 27,
+  "categories": [
+   "語意連貫",
+   "句型結構",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "rule",
+   "B": "sitting",
+   "C": "prosperous",
+   "D": "lends",
+   "E": "boom",
+   "F": "settled",
+   "G": "harmony",
+   "H": "unimaginable",
+   "I": "docked",
+   "J": "appetite"
+  },
+  "answer": "I",
+  "gloss": "（動詞過去式）停靠、靠岸",
+  "collocation": "Hundreds of ships on the route ___ there；dock at／in + 港口（停靠在……）；dock 當名詞：碼頭（at the dock）",
+  "explanation": "有人會選 settled，覺得船到了這裡就「定下來」；可是 settle 說的是人住下來，主詞是 ships，船會停靠，但不會定居。【句構線索】骨架是 Hundreds of ships ___ there，主詞複數、後面沒有受詞，要放不及物動詞的過去式。【作答線索】做 bringing spices and goods for trade 這個動作的是那些船，船在這裡停靠，才能卸下貨物交易。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g112p3_28",
+  "year": "（十四）",
+  "passageId": "PCA-g112p3",
+  "blankNum": 28,
+  "categories": [
+   "字彙選義",
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "rule",
+   "B": "sitting",
+   "C": "prosperous",
+   "D": "lends",
+   "E": "boom",
+   "F": "settled",
+   "G": "harmony",
+   "H": "unimaginable",
+   "I": "docked",
+   "J": "appetite"
+  },
+  "answer": "A",
+  "gloss": "（名詞）統治",
+  "collocation": "Zanzibar has come under the ___ of the Portuguese, the Arabians, and then the British；come under the rule of + N（歸……統治）；under British rule（在英國統治下）；rule 當動詞：rule a country（統治國家）",
+  "explanation": "rule 你最先想到的是「規則」，用這個意思讀不通，有人就改選 harmony，讀成「在葡萄牙人、阿拉伯人和英國人的和諧之下」；可是這三方是一個接一個來的，不是一起相處。【作答線索】and then 交代先後，講的是桑吉巴先後歸誰「統治」。【文內驗證】同一句的 each leaving a mark on the place 說每一個統治者都留下了印記。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g112p3_29",
+  "year": "（十四）",
+  "passageId": "PCA-g112p3",
+  "blankNum": 29,
+  "categories": [
+   "語意連貫",
+   "同義呼應",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "rule",
+   "B": "sitting",
+   "C": "prosperous",
+   "D": "lends",
+   "E": "boom",
+   "F": "settled",
+   "G": "harmony",
+   "H": "unimaginable",
+   "I": "docked",
+   "J": "appetite"
+  },
+  "answer": "G",
+  "gloss": "和睦、和諧",
+  "collocation": "giving the islands a long history of religious ___；religious harmony（宗教和睦）；live in harmony with（和……和睦相處）；racial／social harmony（種族／社會和諧）",
+  "explanation": "只看這一句，a long history of religious ___ 放 rule 也說得通：前一句才講三個國家先後統治這裡，religious rule 讀成「長久的宗教統治」，好像接得上。可是本句講的是 the paths of various religions，各種宗教在這裡交會，重點是宗教和宗教之間的關係，不是哪一個宗教掌權。【作答線索】下一句說幾百年來，穆斯林和基督徒、佛教徒在這裡和平共處，peacefully 和 alongside 都說明不同宗教的信徒相處得好，所以這段歷史是「和睦」的歷史。【句構線索】religious 是形容詞，後面要接名詞；做 giving 這個動作的，是前面那件事：各種宗教在這裡交會。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在下一句 `For centuries, Muslims have lived peacefully alongside Christians and Buddhists there.`（幾百年來，穆斯林和基督徒、佛教徒在這裡和平共處。）——本句只說各種宗教在這裡交會，交會可能和平，也可能起衝突；下一句的 peacefully 和 alongside 才說明它們相處融洽，所以這段漫長的歷史是宗教之間的「和睦」，不是宗教的「統治」。"
+ },
+ {
+  "id": "VPCA-g112p3_30",
+  "year": "（十四）",
+  "passageId": "PCA-g112p3",
+  "blankNum": 30,
+  "categories": [
+   "字彙選義",
+   "句型結構",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "rule",
+   "B": "sitting",
+   "C": "prosperous",
+   "D": "lends",
+   "E": "boom",
+   "F": "settled",
+   "G": "harmony",
+   "H": "unimaginable",
+   "I": "docked",
+   "J": "appetite"
+  },
+  "answer": "D",
+  "gloss": "（動詞第三人稱單數）賦予、增添",
+  "collocation": "This unique blend of cultures, …… , ___ these jewels on the Indian Ocean an amazing charm；lend + 人／物 + N＝lend + N + to + 人／物（為……增添……）；lend charm／color／an air of mystery to（為……增添魅力／色彩／神祕感）；lend a hand（幫忙）",
+  "explanation": "lend 你記的是「借出」，像 lend money to a friend，想不通文化交融怎麼會把魅力「借」給島嶼，就不敢選它。其實 lend 有一個常見的引申義「為……增添、賦予」，像 The candles lent the room a warm glow.（燭光為房間添上溫暖的光。）【句構線索】把兩個逗號之間的 scented with …… in the air 遮起來，骨架是 This unique blend of cultures ___ these jewels …… an amazing charm：主詞是單數的 blend，空格後面接兩個受詞，是「給某物某樣東西」的句型，lend 正好可以這樣用；settled、docked 雖然也是動詞，卻不能接兩個受詞。【作答線索】這是全段的總結句：統治者的印記、宗教的交會、空氣裡的香料香味，合起來為群島「增添」遠遠超過海灘玩樂的魅力，也回應了第一段。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g113p2_21",
+  "year": "（十五）",
+  "passageId": "PCA-g113p2",
+  "blankNum": 21,
+  "categories": [
+   "字彙選義",
+   "語意連貫",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "survey",
+   "B": "picturesque",
+   "C": "captured",
+   "D": "inspiration",
+   "E": "chief",
+   "F": "filling",
+   "G": "splendor",
+   "H": "declared",
+   "I": "promising",
+   "J": "tales"
+  },
+  "answer": "G",
+  "gloss": "壯麗、壯觀",
+  "collocation": "brought the ___ of extraordinary landscapes before the eyes of the American public；the splendor of + 景物（……的壯麗）；natural splendor（大自然的壯麗景色）；bring sth before the eyes of sb（讓某人親眼看到……）",
+  "explanation": "splendor 是第六級的字，不少人不認得，就挑了認得的名詞 tales，讀成「把非凡景觀的故事帶到大眾眼前」。可是做這個動作的是 His vivid paintings（他生動的畫作），畫是用看的，不是用講的。【作答線索】before the eyes of the American public 是「讓大家親眼看到」，畫作讓人看到的是景觀本身的「壯麗」。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g113p2_22",
+  "year": "（十五）",
+  "passageId": "PCA-g113p2",
+  "blankNum": 22,
+  "categories": [
+   "字彙選義",
+   "句型結構",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "survey",
+   "B": "picturesque",
+   "C": "captured",
+   "D": "inspiration",
+   "E": "chief",
+   "F": "filling",
+   "G": "splendor",
+   "H": "declared",
+   "I": "promising",
+   "J": "tales"
+  },
+  "answer": "D",
+  "gloss": "靈感（的來源）",
+  "collocation": "with the landscape paintings of the British master J.M.W. Turner as his ___；with A as B（以 A 作為 B）；draw inspiration from（從……得到靈感）；a source of inspiration（靈感的來源）",
+  "explanation": "as his ___ 前面有 his，有人以為空格要放一個人，就挑了 chief，讀成「把 Turner 的畫當作他的長官」；可是畫不會是上司。【句構線索】with A as B 是「以 A 作為 B」，B 要說出 Turner 的風景畫對 Moran 的作用。【作答線索】一個從小只見過髒河的孩子，學著英國大師的風景畫開始作畫，這些畫就是他的「靈感來源」。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g113p2_23",
+  "year": "（十五）",
+  "passageId": "PCA-g113p2",
+  "blankNum": 23,
+  "categories": [
+   "字彙選義",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "survey",
+   "B": "picturesque",
+   "C": "captured",
+   "D": "inspiration",
+   "E": "chief",
+   "F": "filling",
+   "G": "splendor",
+   "H": "declared",
+   "I": "promising",
+   "J": "tales"
+  },
+  "answer": "I",
+  "gloss": "（形容詞）有前途的、大家看好的",
+  "collocation": "Soon the ___ young painter was hired as an illustrator；a promising young + 人（前途看好的年輕……）；a promising start（好的開始）；promise 當名詞：show promise（顯露潛力）",
+  "explanation": "promise 你記的是「答應、承諾」，「承諾的年輕畫家」讀不通，有人就改選 captured，讀成「遭俘虜的年輕畫家」。可是這一句說他 was hired as an illustrator（受聘為插畫家），和遭俘虜毫無關係。【作答線索】promising 當形容詞是「有前途的、大家看好的」。前一段說他十五歲就開始作畫，這一句又說他不久就受聘，下一句還升任首席，正是一位前途看好的年輕畫家。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g113p2_24",
+  "year": "（十五）",
+  "passageId": "PCA-g113p2",
+  "blankNum": 24,
+  "categories": [
+   "詞性判斷",
+   "字彙選義",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "survey",
+   "B": "picturesque",
+   "C": "captured",
+   "D": "inspiration",
+   "E": "chief",
+   "F": "filling",
+   "G": "splendor",
+   "H": "declared",
+   "I": "promising",
+   "J": "tales"
+  },
+  "answer": "E",
+  "gloss": "（形容詞）首席的、最高階的",
+  "collocation": "By age 34, he had been appointed its ___ illustrator；appoint sb (as) + 職位（任命某人擔任……）；chief executive（執行長）；chief editor（總編輯）；the chief reason（主要的原因）",
+  "explanation": "chief 你最熟的是名詞「首領、長官」，像 the chief of police（警察局長），所以讀到 its ___ illustrator，有人不敢把它放在另一個名詞前面，改選 promising，讀成「他獲任為雜誌看好的插畫家」。可是 appoint（任命）後面接的是職位，「看好」是別人的評價，不是可以任命的職位。【句構線索】chief 放在名詞前面是形容詞，意思是「首席的、最高階的」，chief illustrator 就是首席插畫家，和 chief executive（執行長）同一種用法。【文內驗證】前一句說他 `was hired as an illustrator at Scribner’s Monthly`，By age 34 把時間往後推，appointed 說的是升遷，從插畫家往上升，自然是「首席」插畫家。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g113p2_25",
+  "year": "（十五）",
+  "passageId": "PCA-g113p2",
+  "blankNum": 25,
+  "categories": [
+   "同義呼應",
+   "語意連貫",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "survey",
+   "B": "picturesque",
+   "C": "captured",
+   "D": "inspiration",
+   "E": "chief",
+   "F": "filling",
+   "G": "splendor",
+   "H": "declared",
+   "I": "promising",
+   "J": "tales"
+  },
+  "answer": "J",
+  "gloss": "（名詞複數）故事、敘述",
+  "collocation": "Langford’s ___ of its utterly fantastic sights；tales of + N（關於……的故事）；fairy tales（童話）；folk tales（民間故事）；tales of adventure（冒險故事）",
+  "explanation": "有人知道 Langford 參加過探險隊，就把有「調查」意思的 survey 填進來，讀成「Langford 對黃石奇景的調查」，單看這一句也說得通。可是前一句已經交代過 Langford 的作品：a story by Nathaniel P. Langford，他寫的是故事，不是調查報告。【作答線索】本句的 Langford’s ___ 指的就是前一句那個 story，空格要和 story 同義，tales（故事、敘述）正是同義改寫。後半句 made Moran eager to see this odd territory for himself 也說明 Moran 只讀過別人的描述，還沒親眼見過。【文內驗證】下一段的 the first US government ___ 是政府的正式考察，和 Langford 早先的探險故事是兩回事。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在前一句 `he was asked to illustrate The Wonders of Yellowstone, a story by Nathaniel P. Langford`（他受託替 Nathaniel P. Langford 寫的故事〈The Wonders of Yellowstone〉畫插圖）——Langford 寫的是一個 story，本句的 Langford’s ___ 就是這個故事講的內容，所以空格要和 story 同義，是 tales（故事），不是正式的考察。"
+ },
+ {
+  "id": "VPCA-g113p2_26",
+  "year": "（十五）",
+  "passageId": "PCA-g113p2",
+  "blankNum": 26,
+  "categories": [
+   "字彙選義",
+   "詞性判斷",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "survey",
+   "B": "picturesque",
+   "C": "captured",
+   "D": "inspiration",
+   "E": "chief",
+   "F": "filling",
+   "G": "splendor",
+   "H": "declared",
+   "I": "promising",
+   "J": "tales"
+  },
+  "answer": "A",
+  "gloss": "（名詞）實地勘測、考察",
+  "collocation": "Moran joined the first US government ___ of the Yellowstone region；a survey of + 地區（對……的實地勘測）；a geological survey（地質調查）；carry out a survey（進行調查）；survey 當動詞：survey the area（勘查這一帶）",
+  "explanation": "survey 你最常見的是「問卷調查」，看到 joined the first US government ___ 覺得「參加政府的問卷」不對勁，有人就改選 tales，讀成「參加了政府的第一批故事」；可是故事不能 join。也有人把 survey 當成動詞，不敢放在 government 後面。【句構線索】空格前有 the first，US government 當修飾語，後面接 of 片語，空格是單數名詞；survey 名詞、動詞同形，在這裡是名詞。【作答線索】survey of + 地區是「實地勘測、考察」，到現場測量地形、記錄景物。同行的有攝影師 Jackson，後面又說畫作、照片和 `the team’s findings`（考察隊的調查結果）一起送交國會，這些正是實地考察的成果。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g113p2_27",
+  "year": "（十五）",
+  "passageId": "PCA-g113p2",
+  "blankNum": 27,
+  "categories": [
+   "句型結構",
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "survey",
+   "B": "picturesque",
+   "C": "captured",
+   "D": "inspiration",
+   "E": "chief",
+   "F": "filling",
+   "G": "splendor",
+   "H": "declared",
+   "I": "promising",
+   "J": "tales"
+  },
+  "answer": "F",
+  "gloss": "（現在分詞）畫滿、裝滿",
+  "collocation": "He spent two weeks there, ___ his sketchbook with the landscape’s most stunning sights；spend + 時間 + V-ing（花時間做……）；fill A with B（用 B 把 A 裝滿）；be filled with（充滿）",
+  "explanation": "He spent two weeks there 已經是完整的句子，有人以為後面再接一個過去式就好，挑了 captured；可是兩個過去式中間沒有 and，句子多出一個動詞。【句構線索】spend + 時間 + V-ing 是「花時間做……」，做 filling 這個動作的是 Moran。【作答線索】fill A with B 是「用 B 把 A 填滿」，素描本畫滿了最壯觀的景色。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g113p2_28",
+  "year": "（十五）",
+  "passageId": "PCA-g113p2",
+  "blankNum": 28,
+  "categories": [
+   "字詞搭配",
+   "字彙選義",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "survey",
+   "B": "picturesque",
+   "C": "captured",
+   "D": "inspiration",
+   "E": "chief",
+   "F": "filling",
+   "G": "splendor",
+   "H": "declared",
+   "I": "promising",
+   "J": "tales"
+  },
+  "answer": "C",
+  "gloss": "（動詞過去式）激起（想像）、深深吸引",
+  "collocation": "These powerful images ___ the imagination of lawmakers；capture the imagination of sb（激起某人的想像、讓某人深深著迷）；capture sb’s attention／interest（吸引某人的注意／興趣）；capture a moment on camera（用相機捕捉一刻）",
+  "explanation": "capture 你學到的是「捕捉、俘虜」，像 capture a thief（抓到小偷），看到受詞是 the imagination（想像），覺得想像怎麼抓，有人就改選同樣是 -ed 的 declared，讀成「這些圖像宣布了議員的想像」；可是做宣布的應該是國會，圖像不會開口。【作答線索】capture the imagination of sb 是常見說法，意思是「激起某人的想像、讓人深深著迷」。議員看了畫和照片，才想像得出那裡的樣子。【文內驗證】下一句 `In March 1872, Congress made Yellowstone the world’s first national park.` 就是結果：圖像打動了議員，國會幾個月後就設立了國家公園。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-g113p2_29",
+  "year": "（十五）",
+  "passageId": "PCA-g113p2",
+  "blankNum": 29,
+  "categories": [
+   "語意連貫",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "survey",
+   "B": "picturesque",
+   "C": "captured",
+   "D": "inspiration",
+   "E": "chief",
+   "F": "filling",
+   "G": "splendor",
+   "H": "declared",
+   "I": "promising",
+   "J": "tales"
+  },
+  "answer": "B",
+  "gloss": "如畫的、景色優美的",
+  "collocation": "the public came to see the park as ___；see A as B（把 A 看成 B），B 可以是形容詞或名詞；come to + V（漸漸開始……）；a picturesque village（風景如畫的村莊）；picturesque scenery（如畫的風景）",
+  "explanation": "promising 和 picturesque 都是形容詞，放進 came to see the park as ___ 文法都通，有人讀成「大家開始覺得這座公園前景看好」，就選了 promising。可是本句的 however 是在和前一句對比：前一句說大家心中的黃石 harsh, wild（荒涼、蠻荒），地上的洞像地獄一樣冒出熱水和蒸氣；however 後面要說的是和這個可怕印象相反的樣子，「前景看好」和「荒涼可怕」並不相反。【作答線索】picturesque 和 picture 同源，原意是「像畫家會畫下來的」，也就是「美得像一幅畫」。改變大家看法的是 the painter’s work（畫家的作品），畫讓人看到的是景色，黃石也就從地獄般的荒地，變成風景如畫的地方。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在前一句 `Yellowstone in the popular imagination was a harsh, wild place`（一般人想像中的黃石是個荒涼的蠻荒之地）——本句用 however 轉過來，大家對黃石的看法要和 harsh, wild、hellish 相反，也就是「美」；改變看法的又是畫家的作品，畫讓人看到的是景色，所以是 picturesque（如畫的）。"
+ },
+ {
+  "id": "VPCA-g113p2_30",
+  "year": "（十五）",
+  "passageId": "PCA-g113p2",
+  "blankNum": 30,
+  "categories": [
+   "字詞搭配",
+   "句型結構",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "survey",
+   "B": "picturesque",
+   "C": "captured",
+   "D": "inspiration",
+   "E": "chief",
+   "F": "filling",
+   "G": "splendor",
+   "H": "declared",
+   "I": "promising",
+   "J": "tales"
+  },
+  "answer": "H",
+  "gloss": "（動詞過去分詞）正式宣布為、指定為",
+  "collocation": "areas that would later be officially ___ national parks or monuments；declare A (to be) B（宣布 A 為 B），被動是 A be declared B；declare war on（向……宣戰）；declare independence（宣布獨立）",
+  "explanation": "有人看到 be officially ___ 是被動語態，就挑同樣是 -ed 的 captured，讀成「後來正式遭到占領」；可是這些地方是 Moran 畫過的風景，沒有誰去占領它們。【句構線索】declare A B（宣布 A 為 B）改成被動語態是 A be declared B，空格後的 national parks or monuments 說明這些地方成了什麼。【作答線索】成為國家公園，要由政府正式宣布。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z110p1_21",
+  "year": "（十六）",
+  "passageId": "PCA-z110p1",
+  "blankNum": 21,
+  "categories": [
+   "語意連貫",
+   "代名詞／指示詞",
+   "句型結構"
+  ],
+  "options": {
+   "A": "presented",
+   "B": "symbolic",
+   "C": "bid",
+   "D": "draw",
+   "E": "unproven",
+   "F": "schedule",
+   "G": "massive",
+   "H": "streamlined",
+   "I": "investigated",
+   "J": "scale"
+  },
+  "answer": "G",
+  "gloss": "巨大的、龐大的",
+  "collocation": "Building a structure so ___ was no small task；a structure so massive＝so massive a structure（這麼巨大的建築）；no small task（不是一件容易的事）",
+  "explanation": "這一句很短，前後都沒有講大小的字，有人就挑了聽起來有分量的 symbolic，讀成「蓋一座這麼有象徵意義的建築」；也有人先看到後一句的一百多人喪命，往回想成工程風險高，填了 unproven。關鍵在 so：so 後面沒有接 that 子句，意思是「像前面說的那麼……」，要指回前文講過的特點。【作答線索】前一句說這座水壩是當時同類中最大的，講的是大小，所以填 massive（巨大的）。【句構線索】a structure so massive 把形容詞片語放在名詞後面，也可以寫成 so massive a structure。【文內驗證】後一句說工程動員了數千名工人，第三段也說這麼大的混凝土結構以前沒有人蓋過。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在前一句 `it was the largest of its kind at the time`（這座水壩是當時同類建築中最大的）——本句的 so 沒有接 that 子句，指的是「像前面說的那麼……」；前一句講的是大小，所以空格要填 massive（巨大的），說蓋一座這麼巨大的建築不是一件容易的事。"
+ },
+ {
+  "id": "VPCA-z110p1_22",
+  "year": "（十六）",
+  "passageId": "PCA-z110p1",
+  "blankNum": 22,
+  "categories": [
+   "語意連貫",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "presented",
+   "B": "symbolic",
+   "C": "bid",
+   "D": "draw",
+   "E": "unproven",
+   "F": "schedule",
+   "G": "massive",
+   "H": "streamlined",
+   "I": "investigated",
+   "J": "scale"
+  },
+  "answer": "I",
+  "gloss": "（動詞過去分詞）勘查、調查",
+  "collocation": "Black Canyon and nearby Boulder Canyon had been ___ for their potential to support a dam；investigate + N（調查、勘查）；the potential to + V（有……的條件、潛力）",
+  "explanation": "presented 也是 -ed 形，有人讀成「這兩個峽谷早就有人提出來當建壩地點」；可是這個意思要說 present A as B，這一句接的卻是 for their potential（看它們有沒有支撐水壩的條件），要先查看才知道。【作答線索】從 1900 年左右到 1928 年國會核准，中間二十多年都在評估，填 investigated（勘查）。【延伸的字詞搭配】investigate the cause of（調查……的原因）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z110p1_23",
+  "year": "（十六）",
+  "passageId": "PCA-z110p1",
+  "blankNum": 23,
+  "categories": [
+   "詞性判斷",
+   "字詞搭配",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "presented",
+   "B": "symbolic",
+   "C": "bid",
+   "D": "draw",
+   "E": "unproven",
+   "F": "schedule",
+   "G": "massive",
+   "H": "streamlined",
+   "I": "investigated",
+   "J": "scale"
+  },
+  "answer": "C",
+  "gloss": "（名詞）投標、標案",
+  "collocation": "which had submitted the winning ___；submit a bid（投標）；the winning bid（得標的標案）；bid for a contract（競標合約，動詞）",
+  "explanation": "bid 大家比較熟的是動詞「出價」，例如拍賣會上 bid for a painting，看到 the winning ___ 要名詞就跳過它，轉去試 schedule，讀成「提出得標的時程表」。可是 winning 形容的是參加競爭、最後勝出的東西，時程表不會互相比賽。【作答線索】同一句前半說合約交給了 Six Companies。政府的大型工程要公開招標，各家公司提出標價和條件，這份投標就是名詞 bid；勝出的那一份 the winning bid，合約就交給提出它的公司。【句構線索】bid 名詞、動詞同形，要先看懂這一句在講招標，才知道這裡是名詞。【一字多義】in a bid to + V 是「為了……而努力」：The city cut bus fares in a bid to attract more riders.（市政府調降公車票價，希望吸引更多乘客。）",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z110p1_24",
+  "year": "（十六）",
+  "passageId": "PCA-z110p1",
+  "blankNum": 24,
+  "categories": [
+   "語意連貫",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "presented",
+   "B": "symbolic",
+   "C": "bid",
+   "D": "draw",
+   "E": "unproven",
+   "F": "schedule",
+   "G": "massive",
+   "H": "streamlined",
+   "I": "investigated",
+   "J": "scale"
+  },
+  "answer": "E",
+  "gloss": "未經驗證的",
+  "collocation": "no concrete structure of this size had ever been built before, and the builders had to rely partly on ___ techniques；rely on + N（依靠……）；unproven = un- + proven（還沒有證明可行的）",
+  "explanation": "streamlined 也能放在 techniques 前面，有人讀成「只能依靠精簡過的技術」就填了。可是 and 前面說這麼大的混凝土結構從來沒有人蓋過，整句講的是工程的難處，「精簡」接不上。【作答線索】沒有前例，有些施工方法就沒有機會先試過，只能部分依靠還沒驗證的技術，填 unproven（未經驗證的）。【怎麼判斷】unproven 是 un- 加上 prove 的過去分詞 proven，意思是「還沒有證明可行的」。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z110p1_25",
+  "year": "（十六）",
+  "passageId": "PCA-z110p1",
+  "blankNum": 25,
+  "categories": [
+   "字彙選義",
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "presented",
+   "B": "symbolic",
+   "C": "bid",
+   "D": "draw",
+   "E": "unproven",
+   "F": "schedule",
+   "G": "massive",
+   "H": "streamlined",
+   "I": "investigated",
+   "J": "scale"
+  },
+  "answer": "A",
+  "gloss": "（動詞過去式）帶來、造成",
+  "collocation": "The extreme summer heat and the lack of facilities near the site also ___ tremendous difficulties；present a difficulty／problem／challenge（帶來困難、問題、挑戰）",
+  "explanation": "present 大家熟的是「贈送」和「報告」，這一句的主詞卻是酷熱和缺乏設施，這些情況不會送東西，也不會做報告，很多人就覺得 presented 不可能，轉去試 investigated 或 streamlined；可是「酷熱調查了困難」「缺乏設施精簡了困難」都講不通。【作答線索】present 原本是「擺到面前」，問題擺到面前，就是「帶來、造成」問題。前一句講技術還沒驗證，這一句用 also 再加一項：天氣和環境也帶來極大的困難；下一句再用 Nevertheless 轉回來，說工程還是提前完工。【延伸的字詞搭配】present a challenge（帶來挑戰）；意思相近的有 pose a problem（造成問題）。【一字多義】present 當形容詞是「出席的」（be present at the meeting），當名詞是「禮物」或「現在」（at present 目前）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z110p1_26",
+  "year": "（十六）",
+  "passageId": "PCA-z110p1",
+  "blankNum": 26,
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "presented",
+   "B": "symbolic",
+   "C": "bid",
+   "D": "draw",
+   "E": "unproven",
+   "F": "schedule",
+   "G": "massive",
+   "H": "streamlined",
+   "I": "investigated",
+   "J": "scale"
+  },
+  "answer": "F",
+  "gloss": "（名詞）預定的時程",
+  "collocation": "more than two years ahead of ___；ahead of schedule（比預定提早）／behind schedule（進度落後）／on schedule（照預定進度）",
+  "explanation": "有人只記得 schedule 是「課表、行程表」，覺得和水壩扯不上關係，轉去試 bid，讀成「比標案提早兩年多」；可是標案講的是價錢和條件，比不出完工的早晚。【作答線索】這一句用 Nevertheless 承接前面的困難，說工程不但完成了，還比預定早了兩年多，ahead of schedule 就是「比預定的時程提早」。【延伸的字詞搭配】behind schedule（進度落後）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z110p1_27",
+  "year": "（十六）",
+  "passageId": "PCA-z110p1",
+  "blankNum": 27,
+  "categories": [
+   "字彙選義",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "presented",
+   "B": "symbolic",
+   "C": "bid",
+   "D": "draw",
+   "E": "unproven",
+   "F": "schedule",
+   "G": "massive",
+   "H": "streamlined",
+   "I": "investigated",
+   "J": "scale"
+  },
+  "answer": "J",
+  "gloss": "（名詞）規模",
+  "collocation": "too plain and unremarkable for a project of such immense ___；of + 形容詞 + scale（……規模的）；on a large scale（大規模地）",
+  "explanation": "scale 大家熟的是「秤」和「刻度」，有人讀不通就填了 bid，讀成「標價這麼高的工程」；可是講標價要說 a bid of + 金額，也不用 immense 來形容。【作答線索】批評的人認為，以這麼龐大的工程來說，原本的設計太平淡；of such immense scale 就是「規模這麼龐大的」。【文內驗證】第一段說這座水壩是當時同類中最大的。【延伸的字詞搭配】large-scale（大規模的）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z110p1_28",
+  "year": "（十六）",
+  "passageId": "PCA-z110p1",
+  "blankNum": 28,
+  "categories": [
+   "語意連貫",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "presented",
+   "B": "symbolic",
+   "C": "bid",
+   "D": "draw",
+   "E": "unproven",
+   "F": "schedule",
+   "G": "massive",
+   "H": "streamlined",
+   "I": "investigated",
+   "J": "scale"
+  },
+  "answer": "H",
+  "gloss": "（動詞過去式）簡化、使簡潔流暢",
+  "collocation": "greatly ___ the dam’s look；streamline + N（使線條簡潔流暢、簡化）",
+  "explanation": "前一句說原本的設計太平淡，有人覺得應該改得更豐富，streamlined（精簡）方向相反，就改填 presented，讀成「大幅呈現水壩的外觀」；可是 greatly 修飾的是改變的程度，「大幅呈現」說不通。【作答線索】streamline 不只是刪減，還有「改成線條簡潔流暢的樣子」的意思，裝飾藝術風格正是以俐落的線條為特色。原本的設計太平淡，問題在沒有風格，不在東西太少；Kaufmann 把設計改得簡潔流暢，再配上裝飾藝術風格。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z110p1_29",
+  "year": "（十六）",
+  "passageId": "PCA-z110p1",
+  "blankNum": 29,
+  "categories": [
+   "語意連貫",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "presented",
+   "B": "symbolic",
+   "C": "bid",
+   "D": "draw",
+   "E": "unproven",
+   "F": "schedule",
+   "G": "massive",
+   "H": "streamlined",
+   "I": "investigated",
+   "J": "scale"
+  },
+  "answer": "B",
+  "gloss": "象徵性的",
+  "collocation": "The patterns he created are ___ and appear both ancient and modern；symbolic meaning（象徵意義）；be symbolic of（象徵……）；a symbolic gesture（象徵性的舉動）",
+  "explanation": "streamlined 和 massive 放進 The patterns he created are ___ 文法都通，有人想到裝飾藝術風格講究流線，就填了 streamlined；也有人想到圖案畫滿牆面和地板，填了 massive。可是這一句本身看不出圖案是什麼性質，線索在前一句。【作答線索】前一句說 True 以美洲原住民對雨、閃電、雲和動物的想像，作為圖像和色彩的依據。圖案既然取材自這些意象，每個圖案都代表大自然裡的某樣東西，所以是 symbolic（象徵性的）。流線講的是外形，大小講的是面積，都和前一句說的取材來源接不上。【延伸的字詞搭配】be symbolic of（象徵……）。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在前一句 `He based his images and colors on Native American visions of rain, lightning, clouds, and animals.`（他以美洲原住民對雨、閃電、雲和動物的想像，作為圖像和色彩的依據）——本句的 are ___ 文法上 streamlined、massive 也放得進去；前一句交代圖案取材自原住民的意象，每個圖案都代表大自然裡的某樣東西，所以填 symbolic（象徵性的）。"
+ },
+ {
+  "id": "VPCA-z110p1_30",
+  "year": "（十六）",
+  "passageId": "PCA-z110p1",
+  "blankNum": 30,
+  "categories": [
+   "字彙選義",
+   "同義呼應",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "presented",
+   "B": "symbolic",
+   "C": "bid",
+   "D": "draw",
+   "E": "unproven",
+   "F": "schedule",
+   "G": "massive",
+   "H": "streamlined",
+   "I": "investigated",
+   "J": "scale"
+  },
+  "answer": "D",
+  "gloss": "（動詞）吸引（人潮）",
+  "collocation": "continues to ___ crowds；draw crowds（吸引人潮）；draw attention to（引起對……的注意）",
+  "explanation": "draw 大家熟的是「畫」和「抽籤」，「水壩繼續畫人群」說不通，有人就轉去試 schedule，讀成「持續安排人潮來參觀」；可是 schedule 當動詞，受詞是會議、活動這類要排時間的事情（schedule a meeting），不接 crowds。【作答線索】同一句後半 attracting more than a million visitors a year（每年吸引超過一百萬名遊客）就是換句話說，draw crowds 是「吸引人潮」。【怎麼判斷】draw 的本義是「拉」，用在人身上就是把人吸引過來；draw the curtains（拉上窗簾）也是同一個「拉」。【延伸的字詞搭配】draw attention to（引起對……的注意）；名詞 a big draw 是「很吸引人的事物」。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z109p3_21",
+  "year": "（十七）",
+  "passageId": "PCA-z109p3",
+  "blankNum": 21,
+  "categories": [
+   "語意連貫",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "pride",
+   "B": "outsmarted",
+   "C": "umbrella",
+   "D": "aggressive",
+   "E": "spread",
+   "F": "distinguished",
+   "G": "possesses",
+   "H": "exclusive",
+   "I": "creation",
+   "J": "expresses"
+  },
+  "answer": "D",
+  "gloss": "好戰的、具攻擊性的",
+  "collocation": "the players make ___ gestures in unison；make a gesture（做出動作、手勢）；aggressive behavior（攻擊性的行為）",
+  "explanation": "distinguished 也是形容詞，有人把 distinguished gestures 想成「莊重的動作」；可是跺腳、轉眼珠、吐舌頭，和莊重扯不上關係。【作答線索】做這些動作的是球員，要表現的是嚇人的氣勢，所以動作是挑釁、具攻擊性的，填 aggressive。【文內驗證】前一句說他們喊的是 warlike chant（好戰的吟唱），後一句說這段表演要 intimidate the opposing side（震懾對手）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z109p3_22",
+  "year": "（十七）",
+  "passageId": "PCA-z109p3",
+  "blankNum": 22,
+  "categories": [
+   "句型結構",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "pride",
+   "B": "outsmarted",
+   "C": "umbrella",
+   "D": "aggressive",
+   "E": "spread",
+   "F": "distinguished",
+   "G": "possesses",
+   "H": "exclusive",
+   "I": "creation",
+   "J": "expresses"
+  },
+  "answer": "G",
+  "gloss": "擁有、具有",
+  "collocation": "No other international sports team ___ a pregame ritual as powerful as …；possess + N（擁有、具有……）；possess great courage（很有勇氣）；be possessed of（具有……，正式）",
+  "explanation": "expresses 也是第三人稱單數，有人看到主詞 No other international sports team 是單數，就把它填進來；可是「表達一個賽前儀式」講不通。【句構線索】選項裡 possesses 和 expresses 都合乎第三人稱單數現在式，所以要靠語意判斷。【作答線索】句子拿其他球隊的賽前儀式和全黑隊的哈卡比較：沒有其他球隊「擁有」這麼有氣勢的賽前儀式。possess 是比 have 正式的說法。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z109p3_23",
+  "year": "（十七）",
+  "passageId": "PCA-z109p3",
+  "blankNum": 23,
+  "categories": [
+   "語意連貫",
+   "字彙選義",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "pride",
+   "B": "outsmarted",
+   "C": "umbrella",
+   "D": "aggressive",
+   "E": "spread",
+   "F": "distinguished",
+   "G": "possesses",
+   "H": "exclusive",
+   "I": "creation",
+   "J": "expresses"
+  },
+  "answer": "C",
+  "gloss": "（名詞當修飾語）統稱的、涵蓋範圍廣的",
+  "collocation": "Many people regard it as an ___ term；an umbrella term for + N（……的統稱）；an umbrella organization（聯合組織、總會）；under the umbrella of（在……的統轄之下）",
+  "explanation": "很多人看到 umbrella 只想到「雨傘」，覺得放在 an ___ term 裡不像話，就轉去填 exclusive，把 an exclusive term 想成「專門的用語」；可是 exclusive 是「只限於某一部分的」，和下一句說的「涵蓋所有戰舞」正好相反。【作答線索】本句只說這是一個什麼樣的 term，下一句才交代這個字 covers all the Māori war dances（涵蓋所有的毛利戰舞）。一個字能涵蓋一整類東西，就是「統稱」；雨傘張開，底下可以站好幾個人，英文就用 umbrella term 表示包含很多種類的總稱。【句構線索】名詞可以放在另一個名詞前面當修飾語，像 a war dance；umbrella term 也是這個結構。【文內驗證】後面的 however 句說 haka 在毛利語中 simply means “dance,” not “war dance.”，對照的正是一般人把它當成戰舞的統稱，原意卻只是舞蹈。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在下一句 `In their minds, it covers all the Māori war dances traditionally used to frighten the enemy and prepare fighters for battle.`（在他們心裡，這個字涵蓋了所有的毛利戰舞，這些戰舞傳統上用來威嚇敵人，讓戰士做好作戰的準備）——本句只說這是一個什麼樣的 term，下一句才交代它涵蓋所有的毛利戰舞；能涵蓋一整類東西的是「統稱」，填 umbrella（統稱的），exclusive（只限於某一部分的）正好和 covers all 相反。"
+ },
+ {
+  "id": "VPCA-z109p3_24",
+  "year": "（十七）",
+  "passageId": "PCA-z109p3",
+  "blankNum": 24,
+  "categories": [
+   "句型結構",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "pride",
+   "B": "outsmarted",
+   "C": "umbrella",
+   "D": "aggressive",
+   "E": "spread",
+   "F": "distinguished",
+   "G": "possesses",
+   "H": "exclusive",
+   "I": "creation",
+   "J": "expresses"
+  },
+  "answer": "J",
+  "gloss": "表達",
+  "collocation": "a chant that ___ feelings or tells ancient stories；express feelings／emotions／opinions（表達感情、意見）；express oneself（表達自己的想法）",
+  "explanation": "possesses 也是第三人稱單數，有人覺得「帶有情感的吟唱」說得通就填了它；可是 possess 是擁有、具備，主詞多半是人或團體，吟唱的作用是把情感說出來。【句構線索】that 代替 a chant 當關係子句的主詞，和 or 後面的 tells 並列，要第三人稱單數現在式，outsmarted、spread 這類過去式不合。【作答線索】express feelings 正好和 tell stories 並列，是吟唱的兩種內容。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z109p3_25",
+  "year": "（十七）",
+  "passageId": "PCA-z109p3",
+  "blankNum": 25,
+  "categories": [
+   "語意連貫",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "pride",
+   "B": "outsmarted",
+   "C": "umbrella",
+   "D": "aggressive",
+   "E": "spread",
+   "F": "distinguished",
+   "G": "possesses",
+   "H": "exclusive",
+   "I": "creation",
+   "J": "expresses"
+  },
+  "answer": "H",
+  "gloss": "專屬的、只限於……的",
+  "collocation": "There are even some haka that are ___ to women；be exclusive to + N（只屬於……、只限……）；an exclusive interview（獨家專訪）；mutually exclusive（互相排斥的）",
+  "explanation": "前面幾句一直在講戰舞，有人順著「好戰」的印象把 aggressive 填進來；也有人把 are spread to women 讀成「傳給女性」。這兩種讀法都沒有接上前一句的意思。【作答線索】前一句先說很多哈卡要由男性表演，再說也有一些男女都能跳；本句用 even（甚至）再進一步，最自然的就是「只限女性」的哈卡：從只限男性、不分男女，到只限女性，三種情形剛好排成一列。exclusive 是「只屬於某一方的」，be exclusive to women 就是只有女性能跳。【怎麼判斷】哈卡給人的印象是戰士的舞蹈，even 帶出的只限女性的哈卡，正是最料想不到的一種。至於 aggressive toward，意思是「對……有敵意」，就算把 to 讀成這個意思，也和前一句講「誰可以跳」的話題接不上。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在前一句 `While many haka are meant to be performed by men, others are open to anyone, male or female.`（雖然很多哈卡是由男性表演的，也有一些不分男女，誰都可以跳）——前一句講的是誰可以跳哈卡：有的限男性，有的男女都行；本句用 even 再進一步，剩下的就是「只限女性」這一種，填 exclusive（只限於……的），be exclusive to women 就是只有女性能跳。"
+ },
+ {
+  "id": "VPCA-z109p3_26",
+  "year": "（十七）",
+  "passageId": "PCA-z109p3",
+  "blankNum": 26,
+  "categories": [
+   "字彙選義",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "pride",
+   "B": "outsmarted",
+   "C": "umbrella",
+   "D": "aggressive",
+   "E": "spread",
+   "F": "distinguished",
+   "G": "possesses",
+   "H": "exclusive",
+   "I": "creation",
+   "J": "expresses"
+  },
+  "answer": "B",
+  "gloss": "用計勝過、智取",
+  "collocation": "recounts how he ___ his enemies；outsmart + 人（用智謀勝過某人）；out- + 動詞／名詞／形容詞（在……方面勝過）：outrun（跑得比……快）、outnumber（數量上超過）、outsmart（用聰明勝過）",
+  "explanation": "distinguished 也是 -ed 結尾，有人想成酋長「分辨出」敵人；可是 distinguish 當「分辨」，通常要寫成 distinguish A from B，單單接 his enemies 意思不完整。【作答線索】這是酋長自己作的歌，主題是他怎麼對付敵人。outsmart 由 out- 和形容詞 smart 組成，out- 加在字前面表示「勝過」，outsmart 就是用聰明勝過對方。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z109p3_27",
+  "year": "（十七）",
+  "passageId": "PCA-z109p3",
+  "blankNum": 27,
+  "categories": [
+   "語意連貫",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "pride",
+   "B": "outsmarted",
+   "C": "umbrella",
+   "D": "aggressive",
+   "E": "spread",
+   "F": "distinguished",
+   "G": "possesses",
+   "H": "exclusive",
+   "I": "creation",
+   "J": "expresses"
+  },
+  "answer": "I",
+  "gloss": "（名詞）創作、作品",
+  "collocation": "The latter, a far more recent ___, was written specifically for the team；a recent creation（新近的作品）；the creation of + N（……的創造、設立）",
+  "explanation": "有人把 a far more recent pride 想成「球隊新的驕傲」；可是 pride 指的是驕傲的心情，要說「令人驕傲的東西」得寫成 the pride of the team 這類結構。【作答線索】The latter 指 Kapa o Pango，同一句說它是 2005 年專門替全黑隊寫的，新寫出來的作品就是 creation。【句構線索】空格夾在兩個逗號中間，是 The latter 的同位語，要單數名詞。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z109p3_28",
+  "year": "（十七）",
+  "passageId": "PCA-z109p3",
+  "blankNum": 28,
+  "categories": [
+   "字彙選義",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "pride",
+   "B": "outsmarted",
+   "C": "umbrella",
+   "D": "aggressive",
+   "E": "spread",
+   "F": "distinguished",
+   "G": "possesses",
+   "H": "exclusive",
+   "I": "creation",
+   "J": "expresses"
+  },
+  "answer": "F",
+  "gloss": "尊貴的、傑出的",
+  "collocation": "from the welcoming of ___ guests；distinguished guests（貴賓）；a distinguished career（傑出的經歷）；distinguish A from B（區分 A 和 B，動詞）",
+  "explanation": "distinguished 學生最熟的是動詞 distinguish（區分），看到 -ed 會當成過去分詞，覺得放在 guests 前面講不通，就改填 exclusive，以為 exclusive guests 是「特別邀請的客人」；可是 exclusive 多用來形容 club、interview 這類「只限少數人」的東西，很少直接形容客人。【作答線索】這一句列出表演哈卡的典禮場合，從迎接 ___ 客人，到生日、婚禮，再到酋長的葬禮；會用哈卡隆重迎接的，是身分尊貴的客人。【一字多義】能和一般人區分開來、與眾不同，就引申為「傑出的、尊貴的」：distinguished guests（貴賓）、a distinguished scientist（傑出的科學家）。【文內驗證】同一句後半的 others of high status（其他地位崇高的人），講的也是受人尊敬的身分。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z109p3_29",
+  "year": "（十七）",
+  "passageId": "PCA-z109p3",
+  "blankNum": 29,
+  "categories": [
+   "語意連貫",
+   "句型結構",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "pride",
+   "B": "outsmarted",
+   "C": "umbrella",
+   "D": "aggressive",
+   "E": "spread",
+   "F": "distinguished",
+   "G": "possesses",
+   "H": "exclusive",
+   "I": "creation",
+   "J": "expresses"
+  },
+  "answer": "E",
+  "gloss": "（動詞過去分詞）擴散、普及",
+  "collocation": "it has since ___ far beyond them；spread beyond／to + 地方、群體（擴散到……）；spread－spread－spread（三態同形）；the spread of + N（……的傳播，名詞）",
+  "explanation": "spread 三態同形，學生看到 has since 後面，常以為要找 -ed 結尾的字，就轉去填 outsmarted 或 distinguished；可是這兩個字都接不上 far beyond them。【句構線索】has 後面要過去分詞，spread 的過去分詞還是 spread，又能當名詞，字形看不出詞性，要先讀懂文意。【作答線索】Though 帶出讓步：表演哈卡傳統上只限於毛利社群，後半句講相反的情況，現在已經擴散到毛利社群以外。【文內驗證】下一句說毛利人和歐洲裔的紐西蘭人都以跳哈卡為榮。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z109p3_30",
+  "year": "（十七）",
+  "passageId": "PCA-z109p3",
+  "blankNum": 30,
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "pride",
+   "B": "outsmarted",
+   "C": "umbrella",
+   "D": "aggressive",
+   "E": "spread",
+   "F": "distinguished",
+   "G": "possesses",
+   "H": "exclusive",
+   "I": "creation",
+   "J": "expresses"
+  },
+  "answer": "A",
+  "gloss": "自豪、驕傲",
+  "collocation": "now take ___ in doing the haka；take pride in + N／V-ing（以……為榮）；pride oneself on + N／V-ing（以……自豪，動詞）；a source of pride（驕傲的來源）",
+  "explanation": "pride 學生最熟的是形容詞 proud，看到 take ___ in 不一定認得出名詞 pride；有人把它讀成 take part in（參加），就挑了 creation，想成「投入創作」，可是英文沒有 take creation in 這種說法。【作答線索】下一句說哈卡已經成為紐西蘭人最具代表性的象徵，大家的心情是驕傲；take pride in 就是「以……為榮」。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z107p3_21",
+  "year": "（十八）",
+  "passageId": "PCA-z107p3",
+  "blankNum": 21,
+  "categories": [
+   "字詞搭配",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "diminished",
+   "B": "account",
+   "C": "extensive",
+   "D": "mature",
+   "E": "raised",
+   "F": "impact",
+   "G": "convinced",
+   "H": "wild",
+   "I": "decline",
+   "J": "drew on"
+  },
+  "answer": "F",
+  "gloss": "（名詞）影響",
+  "collocation": "climate change is having an ___ on these “teeny tiny” creatures；have an impact on + N（對……產生影響）；the impact of A on B（A 對 B 的影響）",
+  "explanation": "account 也是母音開頭，不少人看到 having an ___ 就想到熟悉的 have an account（有帳戶），就填了它；可是「氣候變遷在小生物身上有帳戶」說不通。【作答線索】前一句說大型甲蟲因為棲地變熱而變小，本句說氣候變遷對這些生物「產生了……」，要填「影響」。have an impact on 是固定搭配，on 後面接受到影響的對象。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z107p3_22",
+  "year": "（十八）",
+  "passageId": "PCA-z107p3",
+  "blankNum": 22,
+  "categories": [
+   "字彙選義",
+   "語意連貫",
+   "句型結構"
+  ],
+  "options": {
+   "A": "diminished",
+   "B": "account",
+   "C": "extensive",
+   "D": "mature",
+   "E": "raised",
+   "F": "impact",
+   "G": "convinced",
+   "H": "wild",
+   "I": "decline",
+   "J": "drew on"
+  },
+  "answer": "E",
+  "gloss": "（動詞過去式）飼養、養育",
+  "collocation": "shrank when researchers ___ them in warmer-than-normal conditions；raise + 動物／孩子（飼養、養育）；raise cattle（養牛）；be born and raised in + 地方（在……出生長大）",
+  "explanation": "diminished 的意思是「使變小」，和同一句的 shrank 意思相近，很多人看到「甲蟲縮小」就填了它；可是 researchers diminished them 是「研究人員把甲蟲弄小」，拿結果當原因，整句話就失去意義了。【作答線索】raise 大家熟的是「舉起」「提高」，看到 warmer 又容易聯想到「把溫度調高」，可是空格後面的受詞 them 指的是甲蟲，不是溫度。raise 接動物或孩子，意思是「飼養、養育」，本句就是研究人員把甲蟲養在比平常溫暖的環境裡。【文內驗證】前一句說 Tseng 和學生找的是 laboratory studies（實驗室研究）；在實驗室裡控制溫度、把甲蟲養大，再看牠們長成多大，正是這類研究的做法。【一字多義】She was born and raised in Tainan.（她在台南出生長大。）raise money 則是「募款」。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z107p3_23",
+  "year": "（十八）",
+  "passageId": "PCA-z107p3",
+  "blankNum": 23,
+  "categories": [
+   "語意連貫",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "diminished",
+   "B": "account",
+   "C": "extensive",
+   "D": "mature",
+   "E": "raised",
+   "F": "impact",
+   "G": "convinced",
+   "H": "wild",
+   "I": "decline",
+   "J": "drew on"
+  },
+  "answer": "H",
+  "gloss": "野生的、在自然環境中生活的",
+  "collocation": "To see whether this pattern also held true for ___ populations；wild populations（野生族群）；hold true for + N（對……也成立）；in the wild（在野外，名詞用法）",
+  "explanation": "mature 也是形容詞，mature populations（成年的族群）放進來合乎文法，前一段又說甲蟲是在實驗室裡養大的，有人就想成「看看成年族群是不是也這樣」而填了它；可是實驗室裡量的本來就是長成以後的體型，換成成年族群，研究等於沒有往前推一步。【作答線索】this pattern 指上一段實驗室研究的結果：甲蟲養在比較溫暖的環境裡，體型就變小。實驗室的條件是人控制的，團隊接下來要確認的，是在大自然裡生活的甲蟲是不是也這樣，要的是和實驗室相對的 wild（野生的）。【文內驗證】下一句說館藏裡有數千隻 1800 年代末以來在當地採集（gathered locally）的蟲子，這些正是野外長大的甲蟲。【一字多義】wild 也能當名詞，in the wild 就是「在野外」。",
+  "contextSpan": "篇章",
+  "contextNote": "線索在前一段 `searching for laboratory studies on how temperature affects insects`（尋找探討溫度如何影響昆蟲的實驗室研究）——前一段的結果來自實驗室裡養大的甲蟲，本句要問的是同樣的模式在自然環境裡的族群身上成不成立，所以填 wild（野生的）；mature 雖然也能修飾 populations，卻和實驗室對照不起來。"
+ },
+ {
+  "id": "VPCA-z107p3_24",
+  "year": "（十八）",
+  "passageId": "PCA-z107p3",
+  "blankNum": 24,
+  "categories": [
+   "字詞搭配",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "diminished",
+   "B": "account",
+   "C": "extensive",
+   "D": "mature",
+   "E": "raised",
+   "F": "impact",
+   "G": "convinced",
+   "H": "wild",
+   "I": "decline",
+   "J": "drew on"
+  },
+  "answer": "C",
+  "gloss": "大量的、完整的",
+  "collocation": "From the eight species with the most ___ records；extensive records（大量而完整的紀錄）；extensive research（大量的研究）；extensive damage（大範圍的損害）",
+  "explanation": "mature 放在名詞前面也是形容詞，有人照中文「資料最成熟」去想，就填了它；可是英文的 mature 形容人、動物或市場「成熟」，不用來形容紀錄的多寡。【作答線索】研究人員要比較一百多年來的體型變化，當然挑標本最多、年代最連貫的物種來拍照，the most extensive records 就是「紀錄最多、最完整」。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z107p3_25",
+  "year": "（十八）",
+  "passageId": "PCA-z107p3",
+  "blankNum": 25,
+  "categories": [
+   "字彙選義",
+   "同義呼應",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "diminished",
+   "B": "account",
+   "C": "extensive",
+   "D": "mature",
+   "E": "raised",
+   "F": "impact",
+   "G": "convinced",
+   "H": "wild",
+   "I": "decline",
+   "J": "drew on"
+  },
+  "answer": "J",
+  "gloss": "利用、借助",
+  "collocation": "They also ___ climate data to track trends in rainfall；draw on + N（利用、借助經驗／資料／資源）；draw on years of experience（借助多年的經驗）",
+  "explanation": "raised 也是過去式，有人想到 raise a question（提出問題），把 raised climate data 讀成「提出氣候資料」就填了它；可是 raise 的「提出」只用在問題或議題，不用在資料。【作答線索】空格後面接 climate data，再接表示目的的 to track trends（為了追蹤趨勢），可見研究人員是拿氣候資料來用。draw 除了「畫」，還有「汲取」的意思，draw on 就是從某個來源取東西出來用。【文內驗證】同一段第一句的 turned to 也是「去找某個來源來用」，只是對象不同。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z107p3_26",
+  "year": "（十八）",
+  "passageId": "PCA-z107p3",
+  "blankNum": 26,
+  "categories": [
+   "字詞搭配",
+   "句型結構"
+  ],
+  "options": {
+   "A": "diminished",
+   "B": "account",
+   "C": "extensive",
+   "D": "mature",
+   "E": "raised",
+   "F": "impact",
+   "G": "convinced",
+   "H": "wild",
+   "I": "decline",
+   "J": "drew on"
+  },
+  "answer": "A",
+  "gloss": "（動詞過去分詞）縮小、減少",
+  "collocation": "five of the eight species had ___ in size over the past century；diminish in size／value／importance（大小／價值／重要性減少）",
+  "explanation": "raised 也是過去分詞，有人把 had raised in size 想成「體型有所增加」；可是 raise 是及物動詞，後面要接受詞，沒有 raised in size 的說法，何況「變大」也和整篇說的縮小相反。【作答線索】had ___ in size 要的是不及物、說明體型變化的動詞，diminish in size 就是「體型變小」。【文內驗證】第二段的 shrank 說的也是體型變小。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z107p3_27",
+  "year": "（十八）",
+  "passageId": "PCA-z107p3",
+  "blankNum": 27,
+  "categories": [
+   "詞性判斷",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "diminished",
+   "B": "account",
+   "C": "extensive",
+   "D": "mature",
+   "E": "raised",
+   "F": "impact",
+   "G": "convinced",
+   "H": "wild",
+   "I": "decline",
+   "J": "drew on"
+  },
+  "answer": "I",
+  "gloss": "（名詞）減少、下降",
+  "collocation": "showed a 20 percent ___ in the last 45 years；a 20 percent decline（下降兩成）；be on the decline（逐漸減少）；decline sharply（大幅下降，動詞）",
+  "explanation": "impact 也是名詞，有人照中文「受到兩成的影響」去想，就填了它；可是英文不說 a 20 percent impact，百分比後面要接 decline、increase 這類能說「多少」的變化。【作答線索】前一句說八種裡有五種變小，本句接著說最大的四種下降兩成。【句構線索】decline 可以當名詞也可以當動詞，這裡前面有 a 和 20 percent，是名詞。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z107p3_28",
+  "year": "（十八）",
+  "passageId": "PCA-z107p3",
+  "blankNum": 28,
+  "categories": [
+   "語意連貫",
+   "字彙選義",
+   "句型結構"
+  ],
+  "options": {
+   "A": "diminished",
+   "B": "account",
+   "C": "extensive",
+   "D": "mature",
+   "E": "raised",
+   "F": "impact",
+   "G": "convinced",
+   "H": "wild",
+   "I": "decline",
+   "J": "drew on"
+  },
+  "answer": "G",
+  "gloss": "確信的、深信的",
+  "collocation": "British biologist Alan Ronan Baudron, however, is ___；be convinced（確信）；be convinced that + 子句／be convinced of + N（確信……）；convincing（令人信服的）",
+  "explanation": "mature 也是形容詞，放在 is 後面合乎文法，有人讀成「Baudron 比較成熟」；也有人看到 is 後面常接 -ed，就從 diminished、raised 裡挑；可是「把 Baudron 縮小」「養大 Baudron」都不合常理。【作答線索】本句單看只知道 Baudron「是……的」，要回到前一句才知道在談什麼：有些生態學家對 Tseng 的發現持保留態度，因為還沒有人證明暖化就是真正的原因。however 表示 Baudron 的態度和他們相反，不保留就是相信，所以是 convinced。【文內驗證】下一句說他自己的研究記錄過魚類因為暖化而縮小，這正是他相信的根據。【句構線索】convinced 是過去分詞轉成的形容詞，說的是「人確信」；要說「令人信服的」，得用 convincing。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在前一句 `Some ecologists are cautious about Tseng’s findings`（有些生態學家對 Tseng 的發現持保留態度）——本句用 however 和前一句對比：有些人還不敢下定論，Baudron 卻相信暖化就是原因，所以填 convinced（確信的）。"
+ },
+ {
+  "id": "VPCA-z107p3_29",
+  "year": "（十八）",
+  "passageId": "PCA-z107p3",
+  "blankNum": 29,
+  "categories": [
+   "字彙選義",
+   "語意連貫",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "diminished",
+   "B": "account",
+   "C": "extensive",
+   "D": "mature",
+   "E": "raised",
+   "F": "impact",
+   "G": "convinced",
+   "H": "wild",
+   "I": "decline",
+   "J": "drew on"
+  },
+  "answer": "B",
+  "gloss": "（名詞）說法、解釋",
+  "collocation": "According to his ___, warmer temperatures lower the concentration of oxygen in the water；according to sb’s account（根據某人的說法）；give an account of（敘述、說明）；by all accounts（大家都說）",
+  "explanation": "account 大家熟的是「帳戶」（a bank account）和「帳號」，According to his account 讀成「根據他的帳戶」說不通，很多人就把它跳過，改填 impact，想成「根據他的影響」；可是 according to 後面要接資訊的來源，impact 不是資訊來源。【作答線索】逗號後面是一段因果解釋：溫度升高，水中的氧氣濃度就下降。這是 Baudron 對魚為什麼變小提出的解釋，account 在這裡就是「說法、解釋」。【一字多義】account 原本是「計算、清點」，算清楚收支是記帳，所以有了「帳戶」；把事情一五一十說清楚，就成了「敘述、說法」，give an account of the accident（說明事故的經過）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z107p3_30",
+  "year": "（十八）",
+  "passageId": "PCA-z107p3",
+  "blankNum": 30,
+  "categories": [
+   "句型結構",
+   "詞性判斷",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "diminished",
+   "B": "account",
+   "C": "extensive",
+   "D": "mature",
+   "E": "raised",
+   "F": "impact",
+   "G": "convinced",
+   "H": "wild",
+   "I": "decline",
+   "J": "drew on"
+  },
+  "answer": "D",
+  "gloss": "（動詞）成熟、發育完全",
+  "collocation": "fish burn energy faster and ___ at a smaller size；mature at + 年齡／體型（在……時成熟）；and 連接兩個平行的動詞；a mature adult（成年的個體，形容詞）",
+  "explanation": "很多人只認得形容詞 mature（成熟的），看到 and 前面是動詞 burn，就覺得 mature 放不進來，改填 decline，讀成「體型比較小時就衰退」；可是本句說的是魚長得比較小，不是走向衰弱，意思接不上。【句構線索】fish 後面有兩個動作用 and 連起來：burn energy faster 和 ___ at a smaller size，空格要和 burn 一樣用原形動詞。【作答線索】mature 當動詞是「成熟、發育完全」，mature at a smaller size 就是魚的體型還比較小，就已經發育成熟。當形容詞時，mature 前面要有 be、become 這類動詞，或是放在名詞前面。【文內驗證】句首的 As a result 交代這是前一句氧氣濃度下降帶來的結果。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z105p4_21",
+  "year": "（十九）",
+  "passageId": "PCA-z105p4",
+  "blankNum": 21,
+  "categories": [
+   "字彙選義",
+   "字詞搭配",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "silent",
+   "B": "corresponded",
+   "C": "bank",
+   "D": "artificial",
+   "E": "switch",
+   "F": "application",
+   "G": "chilling",
+   "H": "regulates",
+   "I": "wisdom",
+   "J": "detected"
+  },
+  "answer": "I",
+  "gloss": "（名詞）（conventional wisdom）一般的看法、普遍的觀念",
+  "collocation": "Conventional ___ holds that what sets a scream apart from other sounds；conventional wisdom（一般的看法、普遍的觀念）；conventional wisdom holds／says that + 子句（一般認為……）；contrary to conventional wisdom（和一般看法相反）",
+  "explanation": "wisdom 學生熟的是「智慧」，讀成「傳統的智慧認為……」覺得不對就跳過，改填 application，想成「一般的應用認為」；可是「應用」不會認為什麼，holds that 前面要一種看法。【作答線索】第三句用 however 指出，許多又大聲又尖銳的聲音並不讓人起雞皮疙瘩，可見這一句擺出的是一般人的看法，後面要修正它。conventional wisdom 就是「大家普遍相信的看法」，這裡的 wisdom 沒有「高明」的意思，反而常用來帶出未必對的觀念。【句構線索】Conventional 後面直接接名詞、沒有冠詞，要不可數名詞；bank、application、switch 當名詞都是單數可數，前面要有冠詞。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z105p4_22",
+  "year": "（十九）",
+  "passageId": "PCA-z105p4",
+  "blankNum": 22,
+  "categories": [
+   "字彙選義",
+   "詞性判斷",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "silent",
+   "B": "corresponded",
+   "C": "bank",
+   "D": "artificial",
+   "E": "switch",
+   "F": "application",
+   "G": "chilling",
+   "H": "regulates",
+   "I": "wisdom",
+   "J": "detected"
+  },
+  "answer": "C",
+  "gloss": "（名詞）（存放大量資料的）資料庫",
+  "collocation": "examined a ___ of sounds containing sentences；a bank of + 複數名詞（儲存起來的一大批……）；a data bank（資料庫）／a blood bank（血庫）／a food bank（食物銀行）",
+  "explanation": "bank 人人都認得是「銀行」，讀成「研究了一家聲音的銀行」覺得不通就跳過，有人想到手機的 app，改填 application；可是 application 以母音開頭，前面要用 an，句子講的也是研究用的材料，不是程式。【作答線索】要找出尖叫特別在哪裡，得先有一大批聲音可以比較；空格後面交代了內容，是 19 位成人說出或尖叫出來的句子，可見空格指的是「收集起來的一批聲音」。【一字多義】bank 的核心意思是「把東西集中存放的地方」：錢存在銀行，血存在 blood bank（血庫），資料存在 data bank（資料庫）。a bank of sounds 就是存了大量錄音的聲音資料庫。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z105p4_23",
+  "year": "（十九）",
+  "passageId": "PCA-z105p4",
+  "blankNum": 23,
+  "categories": [
+   "詞性判斷",
+   "字彙選義",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "silent",
+   "B": "corresponded",
+   "C": "bank",
+   "D": "artificial",
+   "E": "switch",
+   "F": "application",
+   "G": "chilling",
+   "H": "regulates",
+   "I": "wisdom",
+   "J": "detected"
+  },
+  "answer": "E",
+  "gloss": "（動詞）來回切換、轉換",
+  "collocation": "the loudness can ___ back and forth far faster, at 30 to 150 Hz；switch back and forth（來回切換）；switch between A and B（在 A 和 B 之間切換）；switch to + N（改用……、轉到……）",
+  "explanation": "switch 學生先想到的是名詞「開關」，在 can 後面看到它，以為詞性不合就跳過，改填同樣能當原形動詞的 bank；bank 當動詞是飛機轉彎時傾斜機身，左右擺動好像也說得上 back and forth，可是音量不會傾斜。【句構線索】can 後面要原形動詞，switch 和 bank 都有原形動詞的用法，光看字形分不出來。【作答線索】主詞是 the loudness（音量），back and forth（來回）加上 30 到 150 赫茲的速度，說的是音量在大與小之間不停地換來換去，switch back and forth（來回切換）正是這個意思。【文內驗證】前一句說一般說話的音量變化得很慢（changes only slowly），這一句用 by contrast 對照；第二句定義粗糙度的 how fast a sound changes in loudness，講的也是速度。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z105p4_24",
+  "year": "（十九）",
+  "passageId": "PCA-z105p4",
+  "blankNum": 24,
+  "categories": [
+   "語意連貫",
+   "同義呼應",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "silent",
+   "B": "corresponded",
+   "C": "bank",
+   "D": "artificial",
+   "E": "switch",
+   "F": "application",
+   "G": "chilling",
+   "H": "regulates",
+   "I": "wisdom",
+   "J": "detected"
+  },
+  "answer": "G",
+  "gloss": "令人毛骨悚然的、嚇人的",
+  "collocation": "to judge how ___ each scream sounded；judge how + adj + 主詞 + 動詞（判斷……有多……）；a chilling scream（令人毛骨悚然的尖叫）；send chills down one’s spine（讓人背脊發涼）",
+  "explanation": "chill 學生熟的是「寒冷」，chilling 讀成「冷冷的」就跳過；資料庫裡的尖叫又是錄下來的聲音，有人就想成受試者要判斷尖叫聽起來有多 artificial（不自然）。光看這一句，兩個字確實都放得進去。【作答線索】判斷的是自然不自然還是可不可怕，要看下一句：受試者評為最可怕（the scariest）的那些尖叫，幾乎都是粗糙度最高的。既然結果用「最可怕」來交代，受試者判斷的就是尖叫有多嚇人，填 chilling。【一字多義】chill 是「寒意」，chilling 是讓人背脊發冷的那種恐懼，a chilling scream 是形容尖叫很常見的說法；第一段的 raise goose bumps（起雞皮疙瘩）也是這種感覺。【文內驗證】同一段最後說大腦的恐懼中心（the brain’s fear center）也出現了活動。【句構線索】judge how 後面要形容詞；silent 字形合乎，可是尖叫不可能聽起來安靜。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在下一句 `Those rated the scariest almost always ___ with the highest levels of roughness.`（評為最可怕的那些尖叫，幾乎都……最高的粗糙度）——本句只說受試者判斷尖叫聽起來「有多……」，artificial 和 chilling 都放得進去；下一句用 scariest（最可怕的）交代判斷的結果，可見判斷的是尖叫有多嚇人，填 chilling（令人毛骨悚然的）。"
+ },
+ {
+  "id": "VPCA-z105p4_25",
+  "year": "（十九）",
+  "passageId": "PCA-z105p4",
+  "blankNum": 25,
+  "categories": [
+   "字詞搭配",
+   "句型結構"
+  ],
+  "options": {
+   "A": "silent",
+   "B": "corresponded",
+   "C": "bank",
+   "D": "artificial",
+   "E": "switch",
+   "F": "application",
+   "G": "chilling",
+   "H": "regulates",
+   "I": "wisdom",
+   "J": "detected"
+  },
+  "answer": "B",
+  "gloss": "相符、一致",
+  "collocation": "Those rated the scariest almost always ___ with the highest levels of roughness；correspond with／to + N（和……相符、對應）；correspond with sb（和某人通信）",
+  "explanation": "detected 和 corresponded 一樣是 -ed 結尾，有人想成「最可怕的尖叫幾乎都偵測出最高的粗糙度」就填了它；可是 detect 後面直接接受詞，不接 with，尖叫本身也不會偵測東西。【作答線索】Those 指受試者評為最可怕的那些尖叫，句子說的是兩組結果對得上：最可怕的那幾聲，正好也是粗糙度最高的那幾聲。correspond with 就是「和……相符、互相對應」。【句構線索】講的是做完的實驗，用過去式。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z105p4_26",
+  "year": "（十九）",
+  "passageId": "PCA-z105p4",
+  "blankNum": 26,
+  "categories": [
+   "句型結構",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "silent",
+   "B": "corresponded",
+   "C": "bank",
+   "D": "artificial",
+   "E": "switch",
+   "F": "application",
+   "G": "chilling",
+   "H": "regulates",
+   "I": "wisdom",
+   "J": "detected"
+  },
+  "answer": "H",
+  "gloss": "調節、控制",
+  "collocation": "the area that ___ our emotional and physiological reactions to danger；regulate + N（調節……）；regulate body temperature（調節體溫）／regulate traffic（管制交通）",
+  "explanation": "detected 也能直接接受詞，有人讀成「杏仁核偵測到我們的反應」；可是這一句用現在式 is 說明杏仁核一向的功能，關係子句用過去式不合，何況杏仁核是發動反應的地方，不是在一旁偵測。【句構線索】that 代替 the area 當關係子句的主詞，單數、現在式，動詞加 -s。【作答線索】面對危險時的情緒和生理反應，由這個區域負責調整，就是 regulate（調節）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z105p4_27",
+  "year": "（十九）",
+  "passageId": "PCA-z105p4",
+  "blankNum": 27,
+  "categories": [
+   "句型結構",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "silent",
+   "B": "corresponded",
+   "C": "bank",
+   "D": "artificial",
+   "E": "switch",
+   "F": "application",
+   "G": "chilling",
+   "H": "regulates",
+   "I": "wisdom",
+   "J": "detected"
+  },
+  "answer": "J",
+  "gloss": "（動詞過去分詞）察覺、偵測到",
+  "collocation": "As soon as a threat is ___；be + 過去分詞（被動語態）；detect a gas leak（察覺瓦斯外洩）／detect cancer early（及早發現癌症）",
+  "explanation": "chilling 也能接在 is 後面，有人讀成「威脅令人毛骨悚然的時候」就填了它；可是 As soon as（一……就……）要接一個發生的動作，不接一種狀態，腎上腺素是在察覺威脅的那一刻上升。【句構線索】a threat 是承受動作的一方，is 後面接過去分詞形成被動語態；corresponded 也是過去分詞，但 correspond 不及物，不能用被動。【作答線索】先察覺到威脅，身體才會動員，所以填 detected。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z105p4_28",
+  "year": "（十九）",
+  "passageId": "PCA-z105p4",
+  "blankNum": 28,
+  "categories": [
+   "語意連貫",
+   "同義呼應"
+  ],
+  "options": {
+   "A": "silent",
+   "B": "corresponded",
+   "C": "bank",
+   "D": "artificial",
+   "E": "switch",
+   "F": "application",
+   "G": "chilling",
+   "H": "regulates",
+   "I": "wisdom",
+   "J": "detected"
+  },
+  "answer": "D",
+  "gloss": "人工的、人造的",
+  "collocation": "the same quality turns up again and again in ___ sounds；artificial ↔ natural（人工的↔自然的）；artificial intelligence（人工智慧）／artificial sweeteners（人工甘味劑）",
+  "explanation": "chilling 是這一格最大的陷阱：前面才讀到尖叫令人毛骨悚然，「粗糙度一再出現在嚇人的聲音裡」聽起來很順。問題在句首的 Yet：前一句說自然說話時沒有粗糙度，Yet 帶出對比，這一句要講和自然說話相反的聲音；尖叫也是人自己發出的聲音，構不成這個對比。【作答線索】光看這一句，只知道粗糙度常出現在某一類聲音裡，是哪一類要看前後兩句：前一句的 natural speech（自然說話）是對比的一端；下一句舉的鬧鐘、汽車喇叭和火災警報器，都是機器發出的聲音。和 natural 相對、又能涵蓋這些聲音的，是 artificial（人工的）。【句構線索】in ___ sounds 要形容詞；silent 字形也合乎，可是「無聲的聲音」自相矛盾。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在前一句 `roughness is absent from natural speech`（自然說話時沒有粗糙度）和下一句 `The most aggravating alarm clocks, car horns, and fire alarms all possess high degrees of roughness.`（最讓人煩躁的鬧鐘、汽車喇叭和火災警報器，粗糙度都很高）——Yet 帶出和自然說話相反的一類聲音，下一句舉的又都是機器發出的聲音，所以填 artificial（人工的）。"
+ },
+ {
+  "id": "VPCA-z105p4_29",
+  "year": "（十九）",
+  "passageId": "PCA-z105p4",
+  "blankNum": 29,
+  "categories": [
+   "字彙選義",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "silent",
+   "B": "corresponded",
+   "C": "bank",
+   "D": "artificial",
+   "E": "switch",
+   "F": "application",
+   "G": "chilling",
+   "H": "regulates",
+   "I": "wisdom",
+   "J": "detected"
+  },
+  "answer": "F",
+  "gloss": "應用、用途",
+  "collocation": "One potential ___ of this research；an application of + N（……的應用）；practical applications（實際的用途）；apply A to B（把 A 應用在 B 上）",
+  "explanation": "application 學生最熟的是「申請（書）」，讀成「這項研究的一份申請」不通，有人就不敢選它，改填同樣是名詞的 switch，讀成「這項研究的一個轉變」；可是句子後半講的是把粗糙度加進警報聲，是拿研究結果來用，不是研究方向有了轉變。【作答線索】把研究結果用在生活上，就是 application（應用）。【句構線索】One potential ___ of this research 要單數名詞。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z105p4_30",
+  "year": "（十九）",
+  "passageId": "PCA-z105p4",
+  "blankNum": 30,
+  "categories": [
+   "語意連貫",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "silent",
+   "B": "corresponded",
+   "C": "bank",
+   "D": "artificial",
+   "E": "switch",
+   "F": "application",
+   "G": "chilling",
+   "H": "regulates",
+   "I": "wisdom",
+   "J": "detected"
+  },
+  "answer": "A",
+  "gloss": "安靜的、無聲的",
+  "collocation": "Electric cars, which are nearly ___；nearly silent（幾乎沒有聲音）；fall silent（安靜下來）；remain silent（保持沉默）",
+  "explanation": "artificial 也是形容詞，有人想到電動車是人造的機器，就填了它；可是 artificial 說不出電動車有什麼問題，汽車本來就是人造的，說它「幾乎是人工的」也不通。【作答線索】句子後半說要替電動車加上警示音，讓行人容易注意到；既然要加警示音，問題一定出在聲音：電動車開起來幾乎沒有聲音，所以填 silent。【延伸的字詞搭配】fall silent（安靜下來）、remain silent（保持沉默）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z102p2_21",
+  "year": "（二十）",
+  "passageId": "PCA-z102p2",
+  "blankNum": 21,
+  "categories": [
+   "字彙選義",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "believed",
+   "B": "selective",
+   "C": "pulled off",
+   "D": "transfer",
+   "E": "potential",
+   "F": "vast",
+   "G": "replicate",
+   "H": "struck",
+   "I": "properties",
+   "J": "microscopic"
+  },
+  "answer": "G",
+  "gloss": "複製、重現",
+  "collocation": "scientists have labored to ___ such beams in the lab；labor to + V（費盡心力……）；replicate an experiment（重做實驗）；replicate the results（重現實驗結果）",
+  "explanation": "transfer 也是原形動詞，接在 labored to 後面字形合得上，有人想成「把光束搬進實驗室」就填了它；可是這時牽引光束只出現在科幻影集裡，沒有東西可以搬。【作答線索】in the lab 說的是在實驗室裡動手做，科學家要把影集裡的光束照樣做出來，replicate 就是「複製、重現」。【文內驗證】第一段末句說他們做出了 a real-life “tractor beam”，正是重現的成果。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z102p2_22",
+  "year": "（二十）",
+  "passageId": "PCA-z102p2",
+  "blankNum": 22,
+  "categories": [
+   "字彙選義",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "believed",
+   "B": "selective",
+   "C": "pulled off",
+   "D": "transfer",
+   "E": "potential",
+   "F": "vast",
+   "G": "replicate",
+   "H": "struck",
+   "I": "properties",
+   "J": "microscopic"
+  },
+  "answer": "C",
+  "gloss": "成功做到（困難的事）",
+  "collocation": "a team … finally ___ the feat；pull off + N（成功完成困難的事）：pull off a feat／pull off a win／pull it off",
+  "explanation": "pull off 學生熟悉的是「脫下（衣服）」或「把車開到路邊」，放進 finally ___ the feat 讀不通，不少人就改填意思是「重現」的 replicate；可是 In 2013 交代的是過去的事，空格要過去式，replicate 是原形，字形不合。【作答線索】the feat 是「難事」，指前一句科學家多年來想做的事，也就是在實驗室裡重現牽引光束。努力了好幾年，2013 年終於（finally）做成，這裡要「成功完成一件困難的事」，pull off 正是這個意思。【文內驗證】下一句 They say they have created a real-life “tractor beam” 說他們做出了真實世界的牽引光束，就是做成的內容。【一字多義】pull off a win（拿下勝利）、pull off your shoes（脫掉鞋子）、pull off the road（把車開到路邊停下）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z102p2_23",
+  "year": "（二十）",
+  "passageId": "PCA-z102p2",
+  "blankNum": 23,
+  "categories": [
+   "語意連貫",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "believed",
+   "B": "selective",
+   "C": "pulled off",
+   "D": "transfer",
+   "E": "potential",
+   "F": "vast",
+   "G": "replicate",
+   "H": "struck",
+   "I": "properties",
+   "J": "microscopic"
+  },
+  "answer": "J",
+  "gloss": "微觀的、顯微鏡下才看得到的",
+  "collocation": "a beam of light that can attract objects, at least at a ___ level；at a microscopic level（在微觀的層次上）；on a microscopic scale（在顯微的尺度上）",
+  "explanation": "vast 也是形容詞，有人看到 level 想成「廣大的層次」就填了它；可是 at least（至少）是在替成果加上限度，說光束只在某個範圍內吸得動東西，「至少在廣大的層次上」和這個語氣對不上。【作答線索】要一個表示範圍極小的字，microscopic（微觀的）正合適。【文內驗證】第二段說光束照到的是 tiny particles（微小的粒子）。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z102p2_24",
+  "year": "（二十）",
+  "passageId": "PCA-z102p2",
+  "blankNum": 24,
+  "categories": [
+   "句型結構",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "believed",
+   "B": "selective",
+   "C": "pulled off",
+   "D": "transfer",
+   "E": "potential",
+   "F": "vast",
+   "G": "replicate",
+   "H": "struck",
+   "I": "properties",
+   "J": "microscopic"
+  },
+  "answer": "A",
+  "gloss": "（動詞過去分詞）認為、相信",
+  "collocation": "this is ___ to be the first time a light beam has been used to …；be believed to be（一般認為是……）；It is believed that + 子句（一般認為……）；be thought／said to be（一般認為／據說是……）",
+  "explanation": "struck 也是過去分詞，放在 is 後面字形合得上，有人只看字形就填了它；可是英文沒有 be struck to be 的說法。【句構線索】be believed to be 是「一般認為是……」，相信的人是誰不必交代，所以省掉，讓 this（Cizmar 團隊的成果）當主詞，重點就落在成果上。【作答線索】but 前面說用光操控微粒的技術早就有了，後面才說這項成果新在哪裡。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z102p2_25",
+  "year": "（二十）",
+  "passageId": "PCA-z102p2",
+  "blankNum": 25,
+  "categories": [
+   "句型結構",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "believed",
+   "B": "selective",
+   "C": "pulled off",
+   "D": "transfer",
+   "E": "potential",
+   "F": "vast",
+   "G": "replicate",
+   "H": "struck",
+   "I": "properties",
+   "J": "microscopic"
+  },
+  "answer": "H",
+  "gloss": "（動詞過去分詞）照射到、撞擊",
+  "collocation": "when tiny particles are ___ by a beam of light；be struck by（受到……撞擊、照到）；be struck by lightning（遭到雷擊）；be struck by an idea（突然想到一個點子）",
+  "explanation": "pulled off 也能放在 are 後面當過去分詞，有人想成「光束把粒子拉下來」就填了它；可是同一句後半說粒子 are pushed along（往前推），前面拉、後面推，意思矛盾。【作答線索】Ordinarily（通常）交代一般光束的情形：光照到粒子，就把粒子順著光前進的方向推出去。strike 是「撞擊」，光線打在東西上也用這個字，過去分詞 struck 是不規則變化。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z102p2_26",
+  "year": "（二十）",
+  "passageId": "PCA-z102p2",
+  "blankNum": 26,
+  "categories": [
+   "字詞搭配",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "believed",
+   "B": "selective",
+   "C": "pulled off",
+   "D": "transfer",
+   "E": "potential",
+   "F": "vast",
+   "G": "replicate",
+   "H": "struck",
+   "I": "properties",
+   "J": "microscopic"
+  },
+  "answer": "E",
+  "gloss": "（名詞）潛力",
+  "collocation": "it holds huge ___ for medical research；hold／have potential for + N（在……方面有潛力）；show great potential（很有潛力）；realize one's potential（發揮潛力）",
+  "explanation": "potential 大家熟的是形容詞「潛在的」，看到 huge 後面要名詞，有人就轉去填一看就是名詞的 properties；可是 property 是東西本身的性質，不說 huge properties for medical research。【作答線索】even though 先讓步，說技術離實際應用還遠，後半句再說它在醫學研究上很有前途。hold potential for 是「在……方面有潛力」，potential 在這裡當名詞。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z102p2_27",
+  "year": "（二十）",
+  "passageId": "PCA-z102p2",
+  "blankNum": 27,
+  "categories": [
+   "字彙選義",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "believed",
+   "B": "selective",
+   "C": "pulled off",
+   "D": "transfer",
+   "E": "potential",
+   "F": "vast",
+   "G": "replicate",
+   "H": "struck",
+   "I": "properties",
+   "J": "microscopic"
+  },
+  "answer": "B",
+  "gloss": "有選擇性的、挑選得很精準的",
+  "collocation": "the tractor beam is highly ___ in the particles it can attract；be selective in／about + N（在……上有所挑選）；be selective about friends（交朋友很挑）；selective breeding（選擇性育種）",
+  "explanation": "第一段說光束只在微觀的層次上吸得動東西，有人記得這一點就填了 microscopic；可是微小的是粒子，不是光束，highly microscopic 讀不通。【作答線索】In particular（尤其）把醫學潛力講得更具體：這道光束對吸得動哪些粒子很挑。be selective in 是「在……上有所挑選」。【文內驗證】下一句說它能從混合物中 single out（單獨挑出）某些粒子，正是 selective 的具體做法。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z102p2_28",
+  "year": "（二十）",
+  "passageId": "PCA-z102p2",
+  "blankNum": 28,
+  "categories": [
+   "字彙選義",
+   "同義呼應",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "believed",
+   "B": "selective",
+   "C": "pulled off",
+   "D": "transfer",
+   "E": "potential",
+   "F": "vast",
+   "G": "replicate",
+   "H": "struck",
+   "I": "properties",
+   "J": "microscopic"
+  },
+  "answer": "I",
+  "gloss": "特性、性質",
+  "collocation": "it can single out the ones that share certain ___；share certain properties（有某些共同的特性）；the properties of a substance（物質的特性）；chemical／physical properties（化學／物理性質）",
+  "explanation": "property 學生最熟的意思是「財產」，「擁有某些財產的粒子」講不通，有人就改填 potential，想成「具有某種潛力的粒子」；可是下一句說這些共同點是大小或成分，講的是粒子本身的樣子，和潛力無關。【作答線索】本句只說光束能從混合物中挑出 share certain ___ 的粒子，挑選的標準是什麼，要讀下一句才知道：共同的特點可能是大小，也可能是成分。大小、成分都是物質本身具有的特性，英文叫 property，這裡用複數。【文內驗證】下一句的 The shared feature 是 certain properties 的同義改寫，換成 feature 再說一次，接著舉出大小和成分。【一字多義】property 原本指「本身所有的東西」：人擁有的是財產（private property 私人財產），物質本身帶有的是性質（the chemical properties of water 水的化學性質）。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在下一句 `The shared feature might be size, for instance, or composition.`（共同的特點可能是大小，或是成分）——本句只說光束能挑出有某些共同點的粒子，下一句才說這些共同點是大小或成分。大小和成分是物質本身的性質，所以填 properties（特性、性質）。"
+ },
+ {
+  "id": "VPCA-z102p2_29",
+  "year": "（二十）",
+  "passageId": "PCA-z102p2",
+  "blankNum": 29,
+  "categories": [
+   "詞性判斷",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "believed",
+   "B": "selective",
+   "C": "pulled off",
+   "D": "transfer",
+   "E": "potential",
+   "F": "vast",
+   "G": "replicate",
+   "H": "struck",
+   "I": "properties",
+   "J": "microscopic"
+  },
+  "answer": "D",
+  "gloss": "（名詞）轉移、傳遞",
+  "collocation": "A ___ of energy takes place in the process；a transfer of + N（……的轉移）；heat transfer（熱傳遞）；a transfer of power（權力的移轉）；transfer A to B（把 A 轉移到 B，動詞）",
+  "explanation": "transfer 學生熟的是動詞「轉學、轉車」，看到 A ___ of energy 前面有冠詞，很多人沒想到它也能當名詞，就轉去填同樣是單數名詞的 potential，想成「能量的潛力」；可是 takes place 是「發生」，主詞要是一件事或一個過程，potential 是一種能力，不會「發生」。【句構線索】A ___ of energy 是「冠詞 + 名詞 + of + 名詞」，空格是這個主詞裡最主要的那個名詞，of energy 是修飾它的片語。transfer 的名詞和動詞同形，要看位置才分得出詞性。【作答線索】in the process 指用光束拉動物體的過程：光把能量傳給物體，物體吸收能量就會發熱，所以這一段接著說，能量轉移對微小的粒子無害，大型物體卻可能毀於產生的熱。",
+  "contextSpan": "句內"
+ },
+ {
+  "id": "VPCA-z102p2_30",
+  "year": "（二十）",
+  "passageId": "PCA-z102p2",
+  "blankNum": 30,
+  "categories": [
+   "語意連貫",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "believed",
+   "B": "selective",
+   "C": "pulled off",
+   "D": "transfer",
+   "E": "potential",
+   "F": "vast",
+   "G": "replicate",
+   "H": "struck",
+   "I": "properties",
+   "J": "microscopic"
+  },
+  "answer": "F",
+  "gloss": "巨大的、大量的",
+  "collocation": "Towing such an object would take a ___ amount of energy；a vast amount of + N（大量的……）；the vast majority of（絕大多數的）；a vast area（廣大的地區）",
+  "explanation": "前文一直在講微小的粒子，有人看到 amount of energy 就填了 microscopic，想成「需要的能量極少」；可是 such an object 指的是前一句的大型物體，拖動大東西不可能只要極少的能量。【作答線索】本句看不出物體有多大，要往前一句找 such an object 指什麼：anything as big as a spaceship（像太空船那麼大的東西）。拖動這麼大的東西，需要的能量一定很多，所以填 vast（巨大的、大量的）。【文內驗證】下一句 The resulting heat could destroy it 說產生的熱可能毀掉物體，能量要夠多，熱才會多到這個地步。【常見誤選】potential 也能放在 amount 前面當形容詞，可是 a potential amount of energy（可能的能量）講不出能量有多少。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在前一句 `That is harmless for tiny particles, but it would be a serious problem for anything as big as a spaceship.`（這對微小的粒子無害，但對像太空船那麼大的東西就是嚴重的問題）——本句的 such an object 指前一句像太空船那麼大的東西，拖動這種東西需要的能量很多，所以填 vast（大量的），不填表示極小的 microscopic。"
+ }
+]

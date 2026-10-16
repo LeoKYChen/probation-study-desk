@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g87-30-1/index.html
+Author: staresto-create ZZSH
+Title: 87 年學測克漏字第30題詳解（句型結構）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 87 年學測 ／ 第30題
+87 年學測 克漏字 第30題
+句型結構線索：句內
+On the floor 30 three dead chickens.
+(A)lay
+(B)laid
+(C)lied
+(D)lying
+答案：(A) lay
+題目編號：G87_30_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+這是地方副詞倒裝句：正常語序是「Three dead chickens lay on the floor」，因為地方副詞片語 On the floor 放在句首，主詞和動詞倒裝，動詞用 lay（lie 的過去式，表示「躺著、位於」，不及物動詞），時態配合整篇故事的過去式敘事；laid（lay 的過去式，是及物動詞「放置」，這裡不需要受詞，用法不合）、lied（lie 的過去式，意思是「說謊」，語意不合）、lying（現在分詞，不是限定動詞，不能單獨作倒裝句的主要動詞）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+lay、laid、lied、lying 這四個字是很容易混淆的一組，因為它們其實來自三個不同的動詞，中文又都能翻成「躺、放、說謊」。再加上這一句的語序不太一樣，很容易愣住。
+怎麼判斷
+先把語序看清楚：On the floor ___ three dead chickens.句首是表地方的介系詞片語 On the floor，主詞 three dead chickens 跑到動詞後面去了——這是倒裝。正常語序是 Three dead chickens ___ on the floor.（三隻死雞……在地板上。）還原之後就好判斷了。接著把兩個 lie 和一個 lay 分清楚，這是關鍵：第一組 lie－lay－lain 是「躺著、位於」，不及物，後面不接受詞；第二組 lay－laid－laid 是「放置、下（蛋）」，及物，當「放置」講時後面一定要有受詞（lay the book on the table 把書放在桌上）；第三組 lie－lied－lied 是「說謊」，也是不及物。本句的空格後面沒有受詞（three dead chickens 是主詞不是受詞），所以及物的 laid 先排除；語意是雞躺在地上，不是雞在說謊，所以 lied 也排除；lying 是分詞，不能單獨當一個句子的主要動詞。剩下 lay——它是 lie（躺）的過去式，正好符合這個故事的過去時態。順便對照兩個同型的倒裝句：89 年第 40 題 →的 there inside were two red-faced and excited children、88 年第 19 題 →的 There should be four more，都是把表地方或表存在的部分擺到前面、主詞挪到動詞後面。
+誘答選項
+laid：lay（放置）的過去式，及物，需要受詞，本句沒有。lied：lie（說謊）的過去式，語意完全不對。lying：現在分詞，可以當修飾語（the chickens lying on the floor 躺在地上的雞），但不能單獨當主要動詞，那樣整句就沒有動詞了。
+常考字詞與句型
+lie－lay－lain（躺、位於，不及物）、lay－laid－laid（放置、下蛋，及物）、lie－lied－lied（說謊）、lay eggs（下蛋）、lie on the floor（躺在地板上）、On the floor lay …（地板上躺著……，倒裝）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+There was once a man in Puerto Rico who had a wonderful parrot. The parrot was 21, there was no other bird like him in the whole world. He could learn to say any word-- 22 one. He could not say the name of his native town, Catano.
+The man 23 everything he could to teach the parrot to say "Catano," but he never 24. At first he was very gentle with the bird, but gradually he lost his 25. "You stupid bird! 26 can't you learn to say that one word? Say 'Catano' or I'll kill you!" But the parrot would not say it. Many times the man screamed, "Say 'Catano' or I'll kill you!" But the bird would not 27 the name. Finally the man gave up. He picked up the parrot and threw the bird into the chicken house.
+In the chicken house, there were four old chickens, waiting to be killed 28 Sunday's dinner. "You are even more stupid than the chickens," the man said as he was leaving. The next morning, the man went out to the chicken house. When he opened the door, he was 29 by what he saw. He could not believe his eyes and ears! On the floor 30 three dead chickens. The parrot was screaming at the fourth, "Say 'Catano' or I'll kill you!"
+中譯：波多黎各曾經有一個人養了一隻很棒的鸚鵡。這隻鸚鵡非常特別，全世界找不到第二隻像牠這樣的鳥。牠幾乎能學會說任何字——除了一個字例外，牠學不會說出自己家鄉的名字：卡塔諾。這個男人想盡辦法教鸚鵡說「卡塔諾」，但始終沒有成功。一開始他對這隻鳥很溫和，但漸漸地他失去了耐性。「你這隻笨鳥！你怎麼連這個字都學不會？說『卡塔諾』，不然我就殺了你！」但鸚鵡就是不肯說。這個男人好幾次都大吼：「說『卡塔諾』，不然我就殺了你！」但這隻鳥就是不肯說出這個名字。最後這個男人放棄了。他抓起鸚鵡，把牠丟進雞舍裡。雞舍裡有四隻老母雞，正等著被宰來當星期天的晚餐。「你比這些雞還笨。」男人離開時這麼說。隔天早上，這個男人到雞舍去。當他打開門時，眼前的景象讓他大吃一驚。他簡直不敢相信自己的眼睛和耳朵！地上躺著三隻死雞。鸚鵡正對著第四隻雞尖叫：「說『卡塔諾』，不然我就殺了你！」
+📋 內容大意
+A man in Puerto Rico owned a remarkable parrot that could pronounce almost any word, yet never the name of its home town, Catano.（敘事文）
+Gentle teaching turned to rage, and after threatening the bird again and again the man finally gave up and tossed it in with four old chickens awaiting slaughter.（敘事文）
+The next morning the sight inside the chicken house astonished him: three chickens dead on the floor, and the parrot screaming the same threat at the fourth.（敘事文）
+← 第29題回到87 年學測第31題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

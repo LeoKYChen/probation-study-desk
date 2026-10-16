@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g99-23-2/index.html
+Author: staresto-create ZZSH
+Title: 99 年學測克漏字第23題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 99 年學測 ／ 第23題
+99 年學測 克漏字 第23題
+字彙選義線索：句內答對率 39%
+答對率 39%：當年每 100 位考生，有 39 位答對。
+This higher water content also makes 23 easier for them to bruise.
+(A)such
+(B)much
+(C)that
+(D)it
+答案：(D) it
+題目編號：G99_23_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+make 後面的受詞位置放虛受詞 it，代替後面真正的受詞 for them to bruise，形成 make it + 形容詞 + for sb + to V 的句型；such、much、that 都無法擔任這個虛受詞。
+深入解析
+你可能會這樣想
+虛主詞你很熟——It is easy for me to answer this question. 但「虛受詞」你可能比較少碰到。本句 makes ___ easier for them to bruise 的真正受詞是後面那一長串 for them to bruise，因為太長，先用 it 占住受詞的位置。
+怎麼判斷
+makes 後面要有受詞，而這一句真正的受詞是 for them to bruise。英文語法習慣為盡快表達出句意重點，真受詞太長時就用 it 代替受詞，也就是虛受詞，真正的受詞移到後面。兩個句型並排看最清楚：It is easier for them to bruise.（虛主詞）；This makes it easier for them to bruise.（虛受詞）。虛主詞很常見，虛受詞比較少見，但道理相同。make、find、think、consider 後面都能這樣用：I find it hard to believe.（我覺得難以相信）、We think it necessary to act now.（我們認為現在有必要行動）。
+誘答選項
+such：當代名詞時指「這一類的東西」，要有前文提過的某類事物讓它代替，makes such easier 讀不出受詞到底是什麼，後面的 for them to bruise 也就接不上。much：意思是「許多、大量」，當代名詞指的是數量，填進去變成「使大量變得更容易」，句意不通。that：指前面已經提到的某件事，但這一句前面沒有哪一件事是要「變得更容易」的；而且英文裡能先占住受詞位置、再把真正的受詞 to 不定詞放到後面的字只有 it，劍橋 English Grammar Today 稱它為 anticipatory it，such、much、that 都沒有這個功能。
+常考字詞與句型
+make it + 形容詞 + for sb + to V（使某人做某事變得…）、find it hard to V（覺得難以…）、think it necessary to V（認為有必要…）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Onions can be divided into two categories: fresh onions and storage onions. Fresh onions are available 21 yellow, red and white throughout their season, March through August. They can be 22 by their thin, light-colored skin. Because they have a higher water content, they are typically sweeter and milder tasting than storage onions. This higher water content also makes 23 easier for them to bruise. With its delicate taste, the fresh onion is an ideal choice for salads and other lightly-cooked dishes.
+Storage onions, on the other hand, are available August through April. 24 fresh onions, they have multiple layers of thick, dark, papery skin. They also have an 25 flavor and a higher percentage of solids. For these reasons, storage onions are the best choice for spicy dishes that require longer cooking times or more flavor.
+中譯：洋蔥可分為兩大類：新鮮洋蔥和儲藏洋蔥。新鮮洋蔥在 3 月到 8 月的產季期間，有黃、紅、白等各種顏色可供選擇，可以透過薄而顏色淺的外皮來辨識。由於含水量較高，新鮮洋蔥口感通常比儲藏洋蔥更甜、更溫和，但也因此更容易碰傷。新鮮洋蔥味道細緻，很適合用來做沙拉或其他輕度烹調的料理。儲藏洋蔥則是 8 月到隔年 4 月供應，與新鮮洋蔥不同，它們有好幾層厚實、深色、如紙般的外皮，味道也更濃烈，固形物比例也較高。因此，儲藏洋蔥最適合用在需要長時間烹煮或口味較重的辛辣料理中。
+📋 內容大意
+Fresh onions, available from March through August, have a higher water content and milder taste, making them ideal for light cooking and salads.
+Storage onions have thicker skin and stronger flavor, which makes them better suited for long-cooked, highly seasoned dishes.
+← 第22題回到99 年學測第24題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

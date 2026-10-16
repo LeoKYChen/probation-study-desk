@@ -1,0 +1,44 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g86-38-3/index.html
+Author: staresto-create ZZSH
+Title: 86 年學測克漏字第38題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 86 年學測 ／ 第38題
+86 年學測 克漏字 第38題
+慣用語／片語線索：篇章
+But the young man who had made a fool of himself at the meeting was not on the list. 37 The young engineer swore that he had never heard the proposal made and rejected. 38 He was a victim of a bad listening habit that he didn't know he had.
+(A)The engineer was too young.
+(B)It took a whole month.
+(C)The boss was satisfied.
+(D)He was right.
+答案：(D) He was right.
+題目編號：G86_38_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+承接上文，這句證實年輕工程師說的是對的（他確實沒聽到，因為他有不良的聆聽習慣），呼應下一句「他是不良聆聽習慣的受害者」；其他選項（工程師太年輕／花了一個月／老闆很滿意）都與這裡的邏輯銜接不上。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+前一句那位工程師「發誓」自己沒聽過，你可能會覺得他只是在替自己辯解，於是往「他太年輕」或「老闆很滿意」那邊想。但下一句用了一個字，直接證明他說的是真的。
+怎麼判斷
+四個選項都是完整的句子，一樣要看它在段落裡的位置。前一句是 The young engineer swore that he had never heard the proposal made and rejected.（他發誓自己從沒聽過那個提案被提出又被否決。）後一句是 He was a victim of a bad listening habit that he didn't know he had.（他是一個不良聆聽習慣的受害者，而他自己並不知道有這個習慣。）關鍵在 victim（受害者）這個字——如果他是在說謊，就談不上「受害者」。所以中間這一句要做的是替他背書：他說的是真的，他真的沒聽到，因為耳朵接收了，卻沒有聽進去。填 He was right.
+誘答選項
+The engineer was too young.（那位工程師太年輕了）：年齡不是原因，下一句講的是聆聽習慣。It took a whole month.（花了整整一個月）：與時間長短無關。The boss was satisfied.（老闆很滿意）：與上下文接不上：前後兩句講的都是那位工程師有沒有聽到那個提案，與老闆滿不滿意無關。
+常考字詞與句型
+be a victim of（是……的受害者）、a bad habit（壞習慣）、listening habits（聆聽習慣）、hurt sb a lot（對某人傷害很大）、daily living（日常生活）、be right（說得對）。
+線索範圍說明：選項是完整句子，必須讀懂整段的對話走向或事件順序才選得出來
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The people in the room were tense. Five young engineers were sitting with their 31 . They were trying to settle details of an important new plant site for a major client. Suddenly one of the young engineers gave what he thought was a good solution 32 the problem. What he had to say was 33 by an uncomfortable silence. The boss then laughingly pointed out that the same proposal had been made and 34 some minutes before. The incident seemed funny 35 the time, but several months later it did not.
+After the project had been successfully finished, most of the engineers who had worked on it were 36 . But the young man who had made a fool of himself at the meeting was not on the list. 37 The young engineer swore that he had never heard the proposal made and rejected. 38 He was a victim of a bad listening habit that he didn't know he had.
+Bad listening habits can hurt you a lot in your daily living. Much of your success, both in your work and social life, 39 how you listen. A number of major industries and more than twenty leading colleges 40 . They have set up "listening clinics" and courses to find out what is wrong—and what to do about it.
+中譯：房間裡的氣氛相當緊繃。五位年輕工程師正和老闆坐在一起，努力敲定一個重要新廠址的細節，這個案子攸關一位重要客戶。突然，其中一位年輕工程師提出了他自認為很棒的解決方案。他說完後，迎來的卻是一陣尷尬的沉默。老闆隨後笑著指出，同樣的提案在幾分鐘前就已經有人提過，而且被否決了。這件事當下看起來挺有趣的，但幾個月後就不這麼好笑了。專案順利完成後，大多數參與的工程師都獲得了升遷，但那位在會議上出糗的年輕工程師卻不在名單之列。他發誓自己從未聽過那個提案被提出、又被否決。他是對的。他其實是自己都沒察覺到的不良聆聽習慣的受害者。不良的聆聽習慣，在日常生活中會對你造成很大的傷害。你在工作與社交生活中的許多成就，其實與你聆聽的方式息息相關。許多大型企業和二十多所頂尖大學已經開始正視這個問題，紛紛成立「聆聽診所」和相關課程，找出問題所在——以及該如何改善。
+📋 內容大意
+Five young engineers sat tensely with their manager, settling details of a new plant site for an important client.
+One engineer offered what he thought was a good solution and met an awkward silence. The manager noted the same idea had come up and been rejected minutes earlier.
+Months later most of the team moved up, but he alone was left off the list. Poor listening cost him, and now industries and colleges run listening clinics.
+← 第37題回到86 年學測第39題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

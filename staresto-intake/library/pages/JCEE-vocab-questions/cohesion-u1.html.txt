@@ -1,0 +1,112 @@
+Source: https://github.com/staresto-create/JCEE-vocab-questions/blob/7342ffeafc4870943b9531ec57e0c5b0c39acbe8/cohesion-u1.html
+Author: staresto-create ZZSH
+Title: 倒金字塔｜Questions Remain After Pentagon Releases UFO Files
+Noncommercial educational text only
+
+倒金字塔
+新聞報導把最重要的放最前面。這代表你從後面砍掉一整段，讀者照樣知道發生了什麼事——這一頁就是讓你自己動手驗證這件事。
+預覽模式：所有步驟、圖表、課文標記都已展開，進度不會存檔。學生拿到的一般連結不受影響。
+上次做到一半，已經幫你接回來了。重新開始
+ALL+ 互動英語 9 月號 Unit 1（p. 6） Questions Remain After Pentagon Releases UFO Files 全文 29 行
+第一步
+導言就是整篇的縮影上層：組織方式
+新聞的第一段叫導言（lead），任務是把 5W1H——who、what、when、where、why、how——盡量塞進去。下面是這篇的導言，第 1 到 6 行。點三個有底色的段落，看看各自交代了哪一項。
+The Pentagon has released 161 files about unidentified anomalous phenomena (UAPs), commonly known as UFOs. The release is part of a US government effort to share military reports about strange objects seen in the sky with the general public.
+已標出 0 / 3
+三項都標出來了。那麼——5W1H 裡有兩項，這篇導言完全沒有交代。是哪兩項？
+when 和 where
+who 和 what
+why 和 how
+when 和 who
+when 和 where。導言沒說是哪一天公布的，也沒說在哪裡。
+這不是作者漏掉。如果事件是一段持續進行的作為，而不是某一天發生的單一事件，時間和地點就不急著擠進導言，可以留到後文再補——這篇後面第 10 行才出現 off the US East Coast。
+另外三個為什麼排除：
+「who 和 what」——這兩項你剛剛才親手標出來（The Pentagon、has released 161 files…），最好排除的一個。
+「why 和 how」——why 你也標出來了（part of a US government effort…）。how 嚴格說沒有明講，但導言用 released 這個字已經交代了作法；真正一個字都沒碰到的是時間和地點。
+「when 和 who」——對了一半，所以最容易選。when 確實沒交代，但 who 在第 1 行就出現了。看到一半是對的就下筆，是選擇題最常見的失分方式。
+對你的用處：考卷問這篇「主要在講什麼」，答案幾乎一定在導言裡。導言是全篇的縮影，讀完它，你已經知道整則新聞在說什麼了。
+那後面兩段呢？
+第二步
+三段，重要性遞減上層：組織方式
+這篇分成三段：第 1–6 行導言、第 7–19 行、第 20–29 行。如果你只有時間讀一段，讀哪一段最划算？
+第一段，因為開頭就交代了事情
+第二段，因為那裡的案例最具體
+第三段，因為結論通常在最後
+三段都一樣，要全部讀完才知道
+第一段。這就是「倒金字塔」的意思：資訊由重到輕往下排，跟一般作文「鋪陳到最後才揭曉」剛好相反。
+第二段把導言的 161 files 展開——內容是什麼、兩個實際案例、專家怎麼說。第三段再往外一圈——各界反應、軍方後續。每一段都是在把導言的某一部分放大，不是在往前推進到新的結論。
+另外三個為什麼排除：
+「第二段，因為那裡的案例最具體」——具體不等於重要。案例是拿來把導言放大的，抽掉它，你還是知道五角大廈公布了檔案。
+「第三段，因為結論通常在最後」——那是作文的習慣，新聞剛好相反。第三段寫的是各界反應和軍方後續，版面不夠時它最先被砍。
+「三段都一樣，要全部讀完才知道」——聽起來最保險，但下一步你就會親手推翻它：從尾巴砍，核心不掉。
+那我來砍砍看
+第三步
+砍尾巴測試上層：怎麼驗證
+報紙版面不夠的時候，編輯會從最後一段開始砍。倒金字塔就是為了讓他砍得下去。自己試試看：按「砍掉」和「放回」，隨便什麼順序都可以，下面會告訴你剩下的內容還讀不讀得懂。
+三段都在，這是完整的報導。
+你剛才驗證的就是倒金字塔的定義。從尾巴砍，核心不掉；從頭砍，整則新聞就沒了。
+怎麼認出一篇是倒金字塔：試著把最後一段遮起來自問「我還知道發生什麼事嗎」。如果知道，就是倒金字塔。如果不知道——例如故事、論說文的結論段——那就不是，得換別的讀法。
+考卷上怎麼考：主旨題、標題題，答案都往導言找；細節題才往後面找。這也是為什麼新聞類的閱讀測驗，先讀第一段再看題目，比從頭讀到尾有效率。
+光說沒用，現在就練一題。這篇新聞的主旨最接近下面哪一句？
+The US military has made past reports of unexplained sightings available to the public.
+Navy pilots spotted a fast-moving object off the East Coast and lost it on radar.
+Experts say that natural weather effects and everyday objects explain most sightings.
+The Pentagon will keep collecting UAP reports in order to strengthen flight safety.
+第一句。先注意一件事：它一個字都沒有照抄課文。released 寫成 made available，files about UAPs 寫成 past reports of unexplained sightings，the general public 寫成 the public。反過來看，另外三句幾乎整句照抄原文。
+大考的正解通常就長這樣——換過字的改寫；誘答才照抄原文的字。如果你用「哪個選項跟文章長得最像就選哪個」，這一題保證選錯。這是這一頁最該帶走的一條。
+另外三個為什麼排除：三句都是真的，但都只是細節。
+「Navy pilots spotted…」在第 9 到 11 行，是第二段的其中一個案例。導言完全沒提到它——沒有進導言的東西，就不會是主旨。
+「Experts say that…」在第 15 到 17 行，是專家對案例的說明，同樣屬於第二段的細節層。
+「The Pentagon will keep collecting…」在第 25 到 27 行，是全篇最後一句。倒金字塔的資訊由重到輕往下排，最後一句是最先被砍掉的那一層——光憑位置就能刷掉它。這就是你剛才砍尾巴時驗證過的事。
+下一個
+第四步
+這篇讀起來為什麼是中性的上層：連帶的考點
+雜誌的 Reading Comprehension 第一題問這篇的語氣（tone）。先自己判斷：
+憤怒而帶有警告意味
+存疑而有所保留
+批判而語氣尖銳
+中立而重在提供訊息
+中立而重在提供訊息。判斷依據有三個，都看得見：
+一、兩面並陳。第 21 行 Some people support…，第 23 行 Others argue…。作者兩邊都寫，不選邊。這是新聞報導最明顯的中立訊號。
+二、把判斷讓給別人說。第 15 行 Experts say that…、第 25 行 The Pentagon says…。作者自己不下結論，只轉述。
+三、沒有帶情緒的形容詞。全篇的形容詞是 unidentified、unexplained、mysterious 這類描述狀態的字，沒有 shocking、terrible 這種帶評價的字。
+tone 題就是這樣判的：看作者有沒有站進來。沒有，就是中立。
+另外三個為什麼排除：
+「憤怒而帶有警告意味」和「批判而語氣尖銳」——這兩個一起排除：全篇沒有一句在指責誰，形容詞也全是描述狀態的字。作者連五角大廈拖了多久才公布都沒有評論。
+「存疑而有所保留」——這一個最容易選。標題寫 Questions Remain，第 24 到 25 行又寫 questions unanswered，讀起來很像作者在暗示他不相信官方說法。但請看清楚：留下疑問的是資料不足（第 18 到 19 行 due to limited data），而作者只是把這件事報導出來。
+要分清楚兩件事：文章報導的內容有疑點，和作者的語氣存疑。前者是新聞的內容，後者才是 tone。這是 tone 題最常設的陷阱——用文章裡的負面內容，去騙你判成負面的語氣。
+看支撐它的線索
+第五步
+撐住這個結構的線索下層：換字與回指
+倒金字塔是骨架，但讀者能一路跟著走，靠的是底下這些字在互相牽住。點任何一個有底色的字，同一條的字會一起亮起來。兩種顏色可以各自關掉。
+換字（青）
+回指（藍灰）
+線索
+點一個有底色的字
+青色是同一個概念的不同說法，藍灰是回頭指前面整件事的說法。
+那這些能拿來做什麼？
+第六步
+把一句話放回去
+這就是考卷上的篇章結構題。下面把第 18–19 行整句抽掉了，四個候選句只有一句放得進去。前面五步練的東西，全部用在這一題。
+… Experts say that natural weather effects and everyday objects such as balloons and drones account for most UAP sightings. （空格）
+The release has been met with mixed reactions. Some people support the government’s openness and say it helps reduce rumors. Others argue that the files still leave too many important questions unanswered. …
+However, a small number of cases remain unexplained due to limited data.
+Therefore, the government decided to release all the remaining files.
+In addition, experts confirmed that every sighting can now be fully explained.
+However, the Pentagon has refused to comment on any of the findings.
+四個線索同時指向同一句。
+一、方向。前一句說大部分解釋得了，空格必須轉折，所以 In addition 那句先出局——而且它說「每一件都能完全解釋」，跟第 24–25 行的 questions unanswered 直接打架。
+二、層級。這個空格在第二段的結尾，屬於細節層。Therefore, the government decided to release all the remaining files. 講的是政府的重大決定，那是導言層級的資訊——倒金字塔不會把這種份量的消息藏在第二段末尾。光憑位置就能刷掉它。
+三、詞彙鏈。答案裡的 unexplained 接得上第 2 行的 unidentified 和第 25 行的 unanswered。那條 un- 鏈少了中間這一環就斷了。
+四、後文。第三段講 mixed reactions，需要前面留下一個未解的疑問當理由。Pentagon 拒絕評論那句雖然也用了 However，但它引出的是「官方態度」，不是「還有疑問」，接不上。
+考卷上不會有底色，也不會有行號。但你剛才用的四個線索，每一則新聞都有。
+帶著走的五句話
+新聞的導言是全篇的縮影。它盡量塞進 5W1H；主旨題、標題題的答案幾乎一定在那裡。
+導言可以缺 when 和 where。持續進行的作為不是單一事件，時地留到後文補。缺項本身不代表寫得不完整。
+倒金字塔的驗證方法：遮住最後一段，還知道發生什麼事嗎。知道，就是倒金字塔；不知道，換別的讀法。
+中性語氣看三件事：有沒有兩面並陳、有沒有把判斷讓給受訪者、形容詞帶不帶評價。
+篇章結構題除了方向和詞彙鏈，還要看層級。份量太重的句子不會出現在段落末尾——這是倒金字塔額外送你的一個判斷依據。
+單字輪：把字拆成部件來記 →
+← 回讀法練習總表
+總表上有目前可以做的所有單元，還有你累積到現在的讀法工具。
+本題庫自己寫的部分（解析、中譯、分類、標註與編排）採用 CC BY-NC 4.0（姓名標示─非商業性）授權：可以分享，但須註明出處，不得用於商業用途。試題來源與完整說明請見使用與著作權。

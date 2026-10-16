@@ -1,0 +1,119 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/g89p2.html
+Author: staresto-create ZZSH
+Title: 89 學測閱讀測驗：美國郵政局的死信處理｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 89 學測
+89 學測閱讀測驗：美國郵政局的死信處理
+U.S. Postal Service's Handling of Dead Mail
+學測 89年第 44–47 題4 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段Sometimes it is impossible to deliver all the mail that arrives at the post office. Perhaps there is an inadequate or illegible address and there is no return address. The post office cannot just throw the mail away, so it becomes “dead mail.” Dead mail is sent to one of the U.S. Postal Service’s dead mail offices in Atlanta, New York, Philadelphia, St. Paul, and San Francisco. Seventy-five million pieces of mail can end up in these offices in one year.
+第 2 段The staff of the dead mail offices has a variety of ways to deal with all of these pieces of dead mail. First of all, they look for clues that can help them deliver the mail; they open packages in the hope that something inside will show where the package came from or is going to. Dead mail will also be listed on a computer so that people can call in and check to see if a missing item is there.
+第 3 段However, all of this mail cannot simply be stored forever; there is just too much of it. When a lot of dead mail has piled up, the dead mail offices hold public auctions. Every three months, the public is invited to the offices and bins containing items found in dead mail packages are sold to the highest bidder.
+題目
+44.Which of the following is NOT mentioned as a way to deal with dead mail?
+(A)To search for clues.
+(B)To throw dead mail away.
+(C)To open dead mail.
+(D)To list dead mail on a computer.
+45.The staff in a dead mail office may open a package in order to find ______.
+(A)some money
+(B)some missing objects
+(C)an address
+(D)a computer
+46.The passage indicates that dead mail auctions are held ______.
+(A)once a year
+(B)twice a year
+(C)three times a year
+(D)four times a year
+47.Which is the best title for the passage?
+(A)Dead Mail
+(B)Mail Auction
+(C)Unknown Mail
+(D)The Dead Mail Office
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+44
+(B)
+—
+—
+45
+(C)
+—
+—
+46
+(D)
+—
+—
+47
+(A)
+—
+—
+答對率：該屆逐題數據未公開
+每一題的依據句
+第 44 題 細節題 Supporting details
+第 1 段The post office cannot just throw the mail away
+第 1 段說郵局不能把郵件直接丟掉（cannot just throw the mail away），所以處理死信的方法不包括 (B)。其他三個選項都在第 2 段：找線索（look for clues），是 (A)；打開包裹，是 (C)；登錄在電腦上，是 (D)。
+第 45 題 細節題 Supporting details
+第 2 段they open packages in the hope that something inside will show where the package came from or is going to.
+原文 → 正確選項
+where the package came from or is going to → an address
+第 2 段說員工打開包裹，是希望裡面有東西能看出包裹從哪裡寄來、要寄到哪裡（where the package came from or is going to），也就是寄件人或收件人的地址，所以是 (C)。(B) 照抄 missing，原文的 missing item 是民眾打電話來查的遺失物品，不是員工拆包裹要找的東西；(D) 照抄 computer，電腦是用來登錄死信、方便民眾查詢的；(A) 錢，原文沒有提到。
+第 46 題 細節題 Supporting details
+第 3 段Every three months, the public is invited to the offices
+第 3 段說每三個月（Every three months）舉行一次拍賣，一年有 12 個月，所以一年舉行四次，是 (D)。(C) 把「每三個月」看成「一年三次」；(A)、(B) 的次數都太少。
+第 47 題 主旨題 Main idea
+依據句：全文要讀完整篇才能判斷，不在某一句裡。
+第 1 段說明什麼是死信、死信送到哪裡，第 2 段寫員工怎麼處理死信，第 3 段寫死信太多時的拍賣，每一段都圍繞著死信，所以最好的標題是 (A)。(B) 拍賣只在第 3 段，過於狹隘；(D) 死信辦公室是死信送去處理的地方，標題只談辦公室，等於只講第 2、3 段辦公室怎麼處理死信，沒有涵蓋第 1 段死信是怎麼來的，過於狹隘；(C) 文章談的是沒辦法投遞的郵件，不是來歷不明的郵件，偏離主題。
+錯誤選項：(B) 過於狹隘（只講第 3 段）；(C) 偏離主題；(D) 過於狹隘（只講第 2、3 段）
+逐段中譯
+第 1 段有時候，送到郵局的郵件沒辦法全部投遞出去。可能是地址寫得不完整或字跡無法辨認，又沒有寫寄件人地址。郵局不能把這些郵件直接丟掉，於是它們就成了「死信」。死信會送到美國郵政局設在亞特蘭大、紐約、費城、聖保羅和舊金山的其中一個死信辦公室。一年下來，最後送到這些辦公室的郵件可能多達七千五百萬件。
+第 2 段死信辦公室的員工有各種方法處理這些死信。首先，他們會找出能幫他們投遞郵件的線索；他們會打開包裹，希望裡面有東西能看出包裹是從哪裡寄來、要寄到哪裡。死信也會登錄在電腦上，民眾可以打電話來查詢，看看自己遺失的東西是不是在那裡。
+第 3 段不過，這些郵件不可能永遠存放下去，因為實在太多了。死信累積了很多的時候，死信辦公室就會舉行公開拍賣。每三個月，辦公室會開放民眾進來，把一箱箱從死信包裹裡找到的物品，賣給出價最高的人。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。沒有列出的段落，就是沒有主旨句，請對照「這一篇的文章結構」裡的綱要，找出那一段的重點。這一篇沒有一句話直接點出全文中心思想，怎麼從各段歸納，請看第 47 題（主旨題）的解析。
+第 2 段The staff of the dead mail offices has a variety of ways to deal with all of these pieces of dead mail.
+第 3 段When a lot of dead mail has piled up, the dead mail offices hold public auctions.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體說明文 Expository
+組織方式問題解決 Problem-Solution這一類怎麼辨識 →
+關鍵轉折詞PerhapssoFirst of allalsoHowever
+綱要
+(Sometimes) 郵局有些郵件因為地址不詳無法投遞，(so) 成了「死信」，郵局會把它們送到專門的死信辦公室。
+(The staff … has a variety of ways to deal with) 死信員工會尋找線索，(First of all) 打開包裹尋找寄件收件資訊，(will also be listed on a computer so that) 並列在電腦上供查詢。
+(However) 死信無法永久儲存因數量過多，(When a lot of dead mail has piled up) 大量累積時會舉行公開拍賣。
+(Every three months) 每三個月，公眾可購買死信包裹中的物品。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 3 個、參考字彙 3 個、字詞搭配 8 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+inadequate （詞彙表：adequate）[ɪˈnædəkwət]adj.不完整的、不足的四級第 1 段詞彙題考過 2 次：107 學測第 15 題（誘答）、104 指考第 4 題 inadequate（答案）
+variety[vəˈraɪəti]n.各種、種類（a variety of 各種的）三級第 2 段詞彙題考過 2 次：111 學測第 3 題（誘答）、86 推薦甄選第 5 題（答案）
+forever[fəˈrɛvɚ]adv.永遠三級第 3 段詞彙題考過 1 次：84 聯考第 1 題（誘答）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+illegible[ɪˈlɛʤəbəl]adj.字跡難以辨認的表外第 1 段
+auction[ˈɔkʃən]n.拍賣會五級第 3 段
+bidder （詞彙表：bid）[ˈbɪdɚ]n.出價的人（the highest bidder 出價最高的人）五級第 3 段
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+a return address寄件人地址第 1 段原文：there is no return address
+throw + N + away把……丟掉第 1 段原文：The post office cannot just throw the mail away
+end up in + 地方最後落到……第 1 段原文：can end up in these offices
+deal with + N處理……第 2 段原文：a variety of ways to deal with all of these pieces of dead mail
+in the hope that + 子句希望……第 2 段原文：in the hope that something inside will show
+pile up堆積起來第 3 段原文：When a lot of dead mail has piled up
+hold an auction舉辦拍賣會第 3 段原文：the dead mail offices hold public auctions
+the highest bidder出價最高的人第 3 段原文：sold to the highest bidder
+← 上一篇篇目一覽下一篇 →
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

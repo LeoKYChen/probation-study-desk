@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/gref-23-2/index.html
+Author: staresto-create ZZSH
+Title: 學測參考試卷克漏字第23題詳解（介系詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 學測參考試卷 ／ 第23題
+學測參考試卷 克漏字 第23題
+介系詞線索：句內
+This unique geographic location and frequent earthquake activity not only created an extremely diversified landscape and natural environment on Taiwan, but also resulted 23 the diverse traits of its offshore islands.
+(A)at
+(B)from
+(C)in
+(D)on
+答案：(C) in
+題目編號：GRef_23_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】result in 指「導致」，表示「造成了離島的多元特色」；from（result from 是「起因於」，方向相反）、at、on 都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個都是高頻介系詞，而 result 的中文「造成、導致」後面在中文裡不必接介系詞，只能靠有沒有把整組記起來。
+怎麼判斷
+四個選項都是介系詞，可見這一格考的是 result 跟哪一個搭配。整句是 This unique geographic location and frequent earthquake activity not only created ... but also resulted ___ the diverse traits of its offshore islands.（這獨特的地理位置與頻繁的地震活動，不只造就了……，也造成了離島的多樣特色。）空格後面是「造成的結果」，所以用 result in（導致、造成）。這一組一定要與 result from 一起記，兩者方向正好相反：result in + 結果（The accident resulted in three deaths. 這場意外造成三人死亡。）；result from + 原因（The accident resulted from careless driving. 這場意外起因於粗心駕駛。）。記法很簡單：in 指向後面的結果，from 指向後面的原因。再用句型驗算：not only ... but also ... 前後要對等，前面是 created（造就），後面也該是一個表「造成」的動詞，result in 完全吻合。
+誘答選項
+from：result from 意思對，但方向反了——離島的多樣特色是結果不是原因。at、on：兩個都不與 result 組成通行的說法。
+常考字詞與句型
+result in（導致）、result from（起因於）、lead to（導致）、bring about（帶來、造成）、not only … but also …（不只……而且……）、offshore islands（離島）。其中 result in 這一組考過 7 個年度，88 年第 28 題 →、90 年第 22 題 →、100 年第 25 題 →、102 年第 28 題 →、103 年第 25 題 →、109 年第 30 題 →都出現過；lead to 考過 7 個年度，88 年第 28 題 →、90 年第 22 題 →、94 年第 23 題 →、99 年第 26 題 →、108 年第 16 題 →、110 年第 19 題 →都出現過；bring about 考過 3 個年度，100 年第 25 題 →、101 年第 30 題 →都出現過；not only … but also … 考過 3 個年度，83 年第 14 題 →、86 年第 25 題 →都出現過；result from 考過 3 個年度，103 年第 25 題 →、108 年第 16 題 →都出現過。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Are you looking for a place where the waters are clear and the skies are blue, and countless stars cover the sky at night? Or would you like to 21 through remote and picturesque fishing villages? Then pack your bags and visit the offshore islands of Taiwan!
+Taiwan is located along the southeast coast of the Asian continent, on the line 22 the Euro-Asian and Philippine continental plates meet. This unique geographic location and frequent earthquake activity not only created an extremely diversified landscape and natural environment on Taiwan, but also resulted 23 the diverse traits of its offshore islands.
+The main offshore islands consist of Penghu, Green Island, Orchid Island, Kinmen, Mazu, Turtle Island and Little Liuqiu. 24 their locations, land characteristics, and human activity differ, each has its own unique scenery and culture. Therefore, each island offers something different for visitors. 25 you prefer to explore nature or history, or go shopping or sport fishing, you can do it all here!
+中譯：你是否正在尋找一個海水清澈、天空湛藍、夜晚繁星點點的地方？或者你想漫步穿越偏遠又如畫的漁村？那就打包行李，來造訪台灣的離島吧！台灣位於亞洲大陸東南沿岸，恰好在歐亞板塊與菲律賓板塊交會的線上。這種獨特的地理位置與頻繁的地震活動，不只造就了台灣極度多樣化的地貌與自然環境，也造成了各離島之間豐富多元的特色。台灣主要的離島包括澎湖、綠島、蘭嶼、金門、馬祖、龜山島與小琉球。由於它們的地理位置、地質特徵與人文活動各不相同，每座島嶼都有屬於自己獨特的風景與文化。因此，每座島嶼都能為遊客提供不同的體驗。無論你偏好探索自然還是歷史，或是想購物或從事海釣，在這裡通通都能實現！
+📋 內容大意
+Taiwan's offshore islands offer clear waters, blue skies, star-filled nights and remote, picturesque fishing villages.
+Taiwan lies along the southeast coast of Asia, on the line joining the Euro-Asian and Philippine plates. Frequent earthquakes have produced a highly varied landscape.
+Penghu, Green Island, Orchid Island, Kinmen, Mazu, Turtle Island and Little Liuqiu differ by location, land and human activity. Each offers its own scenery and culture.
+← 第22題回到學測參考試卷第24題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

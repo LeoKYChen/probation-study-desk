@@ -1,0 +1,144 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/p/g102p2.html
+Author: staresto-create ZZSH
+Title: 102 學測閱讀測驗：太空垃圾的問題｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 篇目一覽 ／ 102 學測
+102 學測閱讀測驗：太空垃圾的問題
+The Problem of Space Junk
+學測 102年第 45–48 題4 題
+先讀文章、作答下方的題目，再展開後面的「看答案、依據句與逐段中譯」和「這一篇的生字表」。也可以到互動練習線上作答，交卷後自動批改。
+文章
+第 1 段Space is where our future is—trips to the Moon, Mars and beyond. Most people would think that aside from comets and stars there is little else out there. But, since our space journey started we have left so much trash there that scientists are now concerned that if we don’t clean it up, we may all be in mortal danger.
+第 2 段The first piece of space junk was created in 1964, when the American satellite Vanguard I stopped operating and lost its connection with the ground center. However, since it kept orbiting around the Earth without any consequences, scientists became increasingly comfortable abandoning things that no longer served any useful purpose in space.
+第 3 段It is estimated that there are currently over 500,000 pieces of man-made trash orbiting the Earth at speeds of up to 17,500 miles per hour. The junk varies from tiny pieces of paint chipped off rockets to cameras, huge fuel tanks, and even odd items like the million-dollar tool kit that astronaut Heidemarie Stefanyshyn-Piper lost during a spacewalk.
+第 4 段The major problem with the space trash is that it may hit working satellites and damage traveling spacecraft. Moreover, pieces of junk may collide with each other and break into fragments which fall back to the Earth. To avoid this, scientists have devised several ways for clearing the sky. Ground stations have been built to monitor larger pieces of space trash to prevent them from crashing into working satellites or space shuttles. Future plans include a cooperative effort among many nations to stop littering in space and to clean up the trash already there.
+題目
+45.What was the first piece of man-made space trash?
+(A)A camera.
+(B)A tool kit.
+(C)A fuel tank.
+(D)A broken satellite.
+46.Why were scientists NOT concerned about space trash in the beginning?
+(A)It no longer served any useful purpose.
+(B)It was millions of miles away from the Earth.
+(C)It did not cause any problems.
+(D)It was regarded as similar to comets and stars.
+47.Which of the following statements is true about space junk?
+(A)It is huge, heavy machines.
+(B)It never changes position.
+(C)It floats slowly around the Earth.
+(D)It may cause problems for space shuttles.
+48.What has been done about the space trash problem?
+(A)Scientists have cleaned up most of the trash.
+(B)Large pieces of space trash are being closely watched.
+(C)Many nations have worked together to stop polluting space.
+(D)Ground stations are built to help store the trash properly in space.
+看答案、依據句與逐段中譯
+題號
+官方答案
+答對率
+鑑別度
+45
+(D)
+74%
+60
+46
+(C)
+51%
+9
+47
+(D)
+74%
+57
+48
+(B)
+36%
+44
+答對率與鑑別度出處：大考中心 102 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表
+每一題的依據句
+第 45 題 細節題 Supporting details
+第 2 段The first piece of space junk was created in 1964, when the American satellite Vanguard I stopped operating and lost its connection with the ground center.
+原文 → 正確選項
+stopped operating → broken
+第 2 段說第一件太空垃圾出現在 1964 年，是停止運作（stopped operating）、和地面失去聯繫的美國衛星先鋒一號，選項換成 a broken satellite。另外三個選項都照抄第 3 段：(A) 相機、(B) 工具箱、(C) 燃料箱是目前繞著地球的各種垃圾，不是第一件。
+第 46 題 細節題 Supporting details
+第 2 段However, since it kept orbiting around the Earth without any consequences, scientists became increasingly comfortable abandoning things that no longer served any useful purpose in space.
+原文 → 正確選項
+without any consequences → did not cause any problems
+第 2 段說先鋒一號一直繞著地球運行，沒有造成任何後果（without any consequences），科學家才越來越習慣把東西丟著不管，選項換成 did not cause any problems。(A) 照抄 no longer served any useful purpose，這是在說科學家丟掉的是什麼東西，不是他們不擔心的原因；(D) 照抄第 1 段的 comets and stars，那是一般人以為太空裡只有的東西，和科學家的想法無關；(B) 文章沒說垃圾離地球幾百萬英里。
+第 47 題 細節題（何者為是） Supporting details
+第 4 段The major problem with the space trash is that it may hit working satellites and damage traveling spacecraft.
+第 4 段to prevent them from crashing into working satellites or space shuttles.
+原文 → 正確選項
+damage traveling spacecraft → cause problems for space shuttles
+第 4 段說太空垃圾的主要問題是可能撞上衛星、損壞航行中的太空船（damage traveling spacecraft），地面站監測垃圾也是為了防止垃圾撞上太空梭，選項換成 may cause problems for space shuttles。(A) 照抄第 3 段的 huge，原文說垃圾小到油漆碎片、大到燃料箱都有，不全是巨大的機器；(C) 照抄 around the Earth，垃圾確實繞著地球運行，但第 3 段說速度最高每小時 17,500 英里，不是慢慢飄；(B) 垃圾一直繞著地球轉，位置當然會改變。
+第 48 題 細節題 Supporting details
+第 4 段Ground stations have been built to monitor larger pieces of space trash
+原文 → 正確選項
+monitor → closely watched
+題幹問的是已經做了什麼（What has been done），第 4 段只有地面站監測體積較大的垃圾是已經做到的（have been built），選項把 monitor 換成 closely watched。(C) 照抄 nations、(A) 照抄 clean：各國合作停止亂丟垃圾、清理已經在太空的垃圾，原文說是未來的計畫（Future plans），還沒做到；(D) 照抄 Ground stations，地面站是用來監測垃圾，不是在太空裡存放垃圾。
+逐段中譯
+第 1 段太空是人類未來的所在，我們要去月球、火星，還要去更遠的地方。大部分人會以為，除了彗星和星星，太空裡沒什麼別的東西。但是，自從人類開始探索太空，我們已經在那裡留下太多垃圾，多到科學家現在擔心，如果不清理乾淨，我們可能全都會有生命危險。
+第 2 段第一件太空垃圾出現在 1964 年：美國的先鋒一號衛星停止運作，和地面中心失去聯繫。不過，先鋒一號一直繞著地球運行，沒有造成任何後果，於是科學家越來越習慣把太空中不再有用的東西丟著不管。
+第 3 段據估計，目前有超過五十萬件人造垃圾以最高每小時 17,500 英里的速度繞著地球運行。這些垃圾大小不一，小到火箭上剝落的油漆碎片，大到相機、巨大的燃料箱，甚至還有奇特的東西，例如太空人 Heidemarie Stefanyshyn-Piper 太空漫步時弄丟的那個價值百萬美元的工具箱。
+第 4 段太空垃圾的主要問題是可能撞上運作中的衛星，損壞航行中的太空船。此外，垃圾之間可能互相碰撞，碎成碎片掉回地球。為了避免這種情形，科學家想出了幾種清理天空的方法。目前已經建立地面站，監測體積較大的太空垃圾，防止這些垃圾撞上運作中的衛星或太空梭。未來的計畫包括各國合作，停止在太空亂丟垃圾，並且清理已經在那裡的垃圾。
+全文中心思想與段落主旨句
+兩者都是 全文中心思想 段落主旨句
+藍底標示全文中心思想，底線標示段落主旨句，一句同時是兩者，就用藍底加底線。下面依段落列出這些句子。沒有列出的段落，就是沒有主旨句，請對照「這一篇的文章結構」裡的綱要，找出那一段的重點。
+第 1 段But, since our space journey started we have left so much trash there that scientists are now concerned that if we don’t clean it up, we may all be in mortal danger.
+第 3 段It is estimated that there are currently over 500,000 pieces of man-made trash orbiting the Earth at speeds of up to 17,500 miles per hour.
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+這一篇的文章結構
+文體說明文 Expository
+組織方式問題解決 Problem-Solution這一類怎麼辨識 →
+關鍵轉折詞ButsinceHoweversinceMoreoverTo avoid this
+綱要
+太空是人類的未來，(But) 人類已在太空留下大量垃圾，可能危及人類。
+1964 年失效的先鋒一號是第一件太空垃圾，(However, since) 因為沒造成問題，科學家越來越習慣丟棄。
+估計目前有超過五十萬件垃圾高速繞行地球，從油漆碎片到工具箱都有。
+主要問題是撞擊衛星與太空船，(Moreover) 碎片互撞後還會掉回地球。
+(To avoid this) 科學家設立地面站監測，未來希望各國合作停止亂丟並清理。
+括號裡是原文的轉折詞或關鍵字句，可以回文章找出它們的位置。綱要依內容分點，不一定和段落一一對應。
+這一篇的生字表 （關鍵字彙 12 個、參考字彙 7 個、字詞搭配 11 組）
+生字表分成三部分：關鍵字彙、參考字彙和字詞搭配。前兩部分的級數都依大考中心《高中英文參考詞彙表》（111 學年度起適用）。大考中心的考試說明寫到，學測的詞彙以第一到第五級為主，偶爾會用到第六級以上的字（〈學科能力測驗英文考科考試說明〉）。「關鍵字彙」是這一篇裡第三到第五級、而且在歷屆學測或指考詞彙題的選項裡出現過的字（答案和誘答都算）；每個字下面列出考過的題目，點題號可以到學測單字題庫或指考單字題庫作答，考的字形和這一篇不同時，題號後面寫出考的字形。「參考字彙」是其他比較難的字：詞彙題還沒考過的第五級字、第六級的字，以及詞彙表沒有收的字（標「表外」）。第一、二級的字比較基本，不列。字後面的中括號是 KK 音標（美式發音）。中文寫的是這個字在這一篇裡的意思，不是字典列的全部意思。文中的字形和詞彙表不一樣時，括號裡寫詞彙表收的字，查字典時查這個字。人名、地名這類專有名詞，詞彙表不收，這裡也不列。
+關鍵字彙 第三到第五級、詞彙題考過的字
+journey[ˈʤɝni]n.旅程、探索三級第 1 段詞彙題考過 1 次：105 學測第 1 題（誘答）
+orbit[ˈɔrbət]v.繞著……運行四級第 2 段詞彙題考過 1 次：100 指考第 6 題（答案）
+consequence[ˈkɑnsəkwəns]n.後果四級第 2 段詞彙題考過 1 次：98 學測第 15 題（答案）
+abandon[əˈbændən]v.丟棄、拋下四級第 2 段詞彙題考過 1 次：102 學測第 1 題 abandoned（誘答）
+estimate[ˈɛstəˌmeɪt]v.估計四級第 3 段詞彙題考過 6 次：105 學測第 12 題 estimated（誘答）、104 學測第 11 題（誘答）、99 指考第 9 題 estimated（誘答）、98 指考第 9 題 estimated（誘答）、91 學測第 10 題 estimated（誘答）、91 指考第 7 題 estimated（誘答）
+kit[kɪt]n.一套工具（tool kit 工具包）三級第 3 段詞彙題考過 1 次：110 學測第 9 題 kits（答案）
+fragment[ˈfrægmənt]n.碎片五級第 4 段詞彙題考過 1 次：110 指考第 10 題 fragments（誘答）
+monitor[ˈmɑnətɚ]v.監測、監控四級第 4 段詞彙題考過 2 次：107 學測第 3 題（誘答）、99 指考第 7 題 monitors（答案）
+crash[kræʃ]v.撞上、撞擊（crash into）三級第 4 段詞彙題考過 2 次：115 學測第 9 題（誘答）、91 學測補考第 6 題 crashed（誘答）
+cooperative[koʊˈɑpəˌreɪtɪv]adj.合作的四級第 4 段詞彙題考過 2 次：97 指考第 6 題（答案）、88 聯考第 10 題（誘答）
+litter[ˈlɪtɚ]v.亂丟垃圾三級第 4 段詞彙題考過 1 次：110 指考第 3 題（誘答）
+float[floʊt]v.漂浮、飄動三級第 47 題詞彙題考過 1 次：113 學測第 2 題 floating（誘答）
+參考字彙 詞彙題沒考過的五級字、六級字、詞彙表外的字
+comet[ˈkɑmət]n.彗星六級第 1 段
+mortal[ˈmɔrtəl]adj.致命的（in mortal danger 有生命危險）六級第 1 段
+astronaut[ˈæstrəˌnɔt]n.太空人六級第 3 段
+spacewalk[ˈspeɪsˌwɔk]n.太空漫步表外第 3 段
+spacecraft[ˈspeɪsˌkræft]n.太空船六級第 4 段
+collide[kəˈlaɪd]v.相撞（collide with）表外第 4 段
+shuttle[ˈʃʌtəl]n.太空梭（space shuttle）五級第 4 段
+字詞搭配 配對與接法
+「字詞搭配」是要整組記的說法，分兩種：一種是哪兩個字配在一起，例如 pose a serious risk（造成嚴重的風險）、in unison（齊聲），換成意思相近的字就不自然；另一種是這個字後面要接什麼，寫成公式，例如 be resistant to + N（對……有抵抗力）。公式裡的 + N 表示接名詞，+ V 接原形動詞，+ V-ing 接動名詞，sb 指人，sth 指事物，「時間」「地方」這類中文表示那裡要填的東西。名稱不必背，看得出這一條寫的是「配對」還是「接法」就夠了；記住搭配和接法，這個字你才用得出來，不會只是看得懂。一看就懂的組合和專有名詞不列。每一條寫的是查字典時的基本形，文中的寫法不同時，下面附上原文。
+aside from + N除了……之外第 1 段原文：aside from comets and stars
+clean up + N清除……第 1 段原文：if we don’t clean it up
+be in mortal danger有生命危險第 1 段原文：we may all be in mortal danger
+lose connection with + N和……失去聯繫第 2 段原文：lost its connection with the ground center
+serve a purpose發揮作用第 2 段原文：things that no longer served any useful purpose
+It is estimated that + 子句據估計……第 3 段
+vary from A to B從 A 到 B 都有第 3 段原文：The junk varies from tiny pieces of paint … to cameras
+collide with + N和……相撞第 4 段原文：pieces of junk may collide with each other
+break into fragments碎成碎片第 4 段
+devise a way想出辦法第 4 段原文：scientists have devised several ways
+prevent + N + from + V-ing防止……第 4 段原文：to prevent them from crashing into working satellites
+← 上一篇篇目一覽下一篇 →
+到互動練習作答這一篇 →
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

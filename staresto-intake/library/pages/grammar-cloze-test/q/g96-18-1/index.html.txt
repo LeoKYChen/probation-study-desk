@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g96-18-1/index.html
+Author: staresto-create ZZSH
+Title: 96 年學測克漏字第18題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 96 年學測 ／ 第18題
+96 年學測 克漏字 第18題
+字彙選義線索：句內答對率 82%
+答對率 82%：當年每 100 位考生，有 82 位答對。
+We supply everything, 18 waist-high tubs, shampoo, and towels.
+(A)concerning
+(B)showing
+(C)including
+(D)relating
+答案：(C) including
+題目編號：G96_18_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+現在分詞 including 表示「其中包括」，舉例列出所供應的物品；concerning（關於）、showing（展示）、relating（有關，要寫成 relating to 才成立）都不合。
+深入解析
+你可能會這樣想
+四個選項都是 -ing 結尾，你大概會先想「哪一個翻成中文最順」。concerning 和 relating 中文都是「關於、有關」，念起來好像都行；relating 尤其誘人，因為 relate 這個字太熟了。落差就在這裡：你腦中的 relating 是「有關的」這個意思，但 relate 表「有關」時一定要接 to（relate to），空格後面直接就是 waist-high tubs，to 根本沒出現；relate 另外還有及物用法，意思是「把……和……連起來」（relate sth to sth）或「敘述」（relate a story），填進去會變成「敘述浴缸、洗毛精和毛巾」，同樣講不通，所以這個選項先排除。這個方法和 97 年第 25 題 →一模一樣：那題的 off record 少了 the，也是還沒進到語意就先被文法刷掉。片語題先數一數冠詞和介系詞有沒有缺，常常一眼就能砍掉一個選項。
+怎麼判斷
+先看空格前後兩邊是什麼關係。前面是 everything（我們供應的一切），後面是 waist-high tubs, shampoo, and towels（浴缸、洗毛精、毛巾）。後面三樣不是「everything 所談論的主題」，而是 everything 裡面的成員 —— 這是「整體對部分」的關係。英文專門用來從整體裡舉出部分成員的字就是 including，劍橋詞典把它收在介系詞（preposition）底下，後面直接接名詞，不需要任何介系詞來牽。最熟的例子就是 Everyone came to the party, including my brother.（大家都來了，包括我弟弟。）everyone 是整體，my brother 是其中一員，和本題的句型完全相同。順帶把同一份考卷的第 27 題擺在一起看：那題考 ranging，兩題都是「這個 -ing 字後面該接什麼是固定的」—— including 後面直接接名詞，ranging 後面一定接 from...to...，形態像、規矩不同。這裡再往外拉一層，對你長期讀英文很有用。including 雖然長得像分詞，其實早就整個變成介系詞了（Greenbaum 與 Whitcut「Guide to English Usage」把這一批字列為已經轉成介系詞或連接詞的字）。這一類字分三個層次處理最省力。第一層是 according to、owing to、regardless of 這種已經黏成一組的，直接當成幾個字合起來的一個介系詞整組背下來（劍橋 English Grammar Today 的 Prepositions 條目），完全不必回頭分析它的分詞來源 —— 109 年第 29 題 →考的 owing to 就是這一層。第二層是 given、regarding、concerning 這種單獨一個字就當介系詞用的，同樣是認得這個字就夠了；given 和 considering 後面還可以接 that 子句，那時它就當連接詞用。90 年第 16 題 →考 given that Christmas is just a few weeks away（既然聖誕節再過幾個星期就到了），95 年第 18 題 →考 Regarding the extra money you want...（關於你這個月想多要的那筆錢），兩題的四個選項都故意排成分詞的各種形態嚇人，實際上只是在問你認不認得這個字 —— 這正是大量閱讀的人在這類題目上比較有利的地方。第三層要小心，它是真的得靠文法：including 和 included 意思相同、位置相反 —— including 擺在名詞前面，included 擺在名詞後面。劍橋詞典 included 詞條的例句 The fee covers everything, babysitter included.（費用包含一切，保母費也算在內）和本題的 We supply everything, including waist-high tubs... 說的是同一件事，只是前後對調。85 年第 25 題 →的四個選項是 including／included／being included／was including，考的正是這個「看位置」的判斷方式：空格在名詞前面，就只能用 including。
+誘答選項
+concerning（關於）：劍橋詞典也收它當介系詞，意思等於 about，所以它文法上確實可以直接接名詞，不能用「缺介系詞」刷掉，得靠語意。它接的名詞是「所談論的主題」，例如 information concerning the case（與此案有關的資訊）；本句後面三樣是 everything 的內容清單，不是主題，套不進去。showing（展示）：分詞的意義主詞會變成 we，還原成 and we show waist-high tubs...，變成「我們供應一切，並且展示浴缸」兩件事並排，everything 和那三樣東西之間的包含關係就沒人交代了。relating（有關的）：見上面，少了 to。
+常考字詞與句型
+including tax（含稅）、not including（不包含）、relating to（與……有關）、concerning（關於、有關）、supply sb with sth（提供某人某物）、normal operating hours（正常營業時間）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+All dogs deserve to look and feel their best. After a spa treatment at Happy Puppy, dogs come home 16 pampered and relaxed. At Happy Puppy, your dog can enjoy a half day of care and then be taken to the salon at naptime. Here all the dogs are given a bath using professional shampoo and conditioners in a massaging tub. Their relaxing bath will be 17 a full fluff dry and brush-out. When you arrive for pick-up, your dog will be well-exercised and beautiful.
+You can also bring your dog to Happy Puppy and wash it yourself. We supply everything, 18 waist-high tubs, shampoo, and towels. This service is available seven days a week during normal operating hours.
+19 Happy Puppy is a relatively new service, we benefit from more than 20 years of experience in breeding and caring for dogs. We are completely 20 to helping dogs enjoy a full and active life. Our well-trained staff will provide the best possible service for you and your dog.
+中譯：每隻狗都值得看起來、感覺起來最美好。在 Happy Puppy 做完美容護理後，狗狗回家時會感到備受呵護、放鬆自在。在 Happy Puppy，您的狗狗可以享受半天的照護，之後在午休時間被帶到美容沙龍。這裡的每隻狗都會在按摩浴缸中，使用專業洗毛精和潤絲精洗澡。放鬆的沐浴之後，緊接著就是全套的吹整和刷毛。當您來接狗狗時，牠會運動充足又漂漂亮亮的。您也可以帶狗狗來 Happy Puppy 自己動手洗。我們提供一切所需，包括及腰高的浴缸、洗毛精和毛巾。這項服務在正常營業時間內全年無休。雖然 Happy Puppy 是相對新的服務，我們卻擁有超過二十年的養狗與照顧經驗。我們全心致力於幫助狗狗享受充實而活躍的生活。我們訓練有素的員工將為您和您的狗狗提供最好的服務。
+📋 內容大意
+Happy Puppy offers dogs a half day of care and a salon visit at naptime, so they come home pampered and relaxed.
+Each dog is bathed with professional shampoo in a massaging tub, then fluff-dried and brushed out. Owners may also wash their own dogs there any day of the week.
+The business is new, but its staff has over twenty years of experience breeding and caring for dogs. They work to help every dog live an active life.
+← 第17題回到96 年學測第19題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

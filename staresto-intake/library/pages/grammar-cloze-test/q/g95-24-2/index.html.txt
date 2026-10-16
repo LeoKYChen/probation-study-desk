@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g95-24-2/index.html
+Author: staresto-create ZZSH
+Title: 95 年學測克漏字第24題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 95 年學測 ／ 第24題
+95 年學測 克漏字 第24題
+字彙選義線索：句內答對率 62%
+答對率 62%：當年每 100 位考生，有 62 位答對。
+The mark of heroes is not necessarily the result of their action, but 24 they are willing to do for others and for their chosen cause. 25 they fail, their determination lives on for others to follow.
+(A)what
+(B)who
+(C)those
+(D)where
+答案：(A) what
+題目編號：G95_24_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+what 引導名詞子句作主詞補語，「而是他們願意為他人做什麼」；who（指人，這裡指的是「什麼事」不是「誰」）、those（不構成這樣的主詞補語子句）、where（地方）都不合。
+深入解析
+你可能會這樣想
+what 一看到就想成疑問詞「什麼」，於是這個句子讀起來像在問問題。其實 what 更常見的用法是複合關係代名詞 ＝ 先行詞 + 關係代名詞，為方便理解可視為 what ＝ the thing(s) which／that，引導一個名詞子句，整包當名詞用。
+怎麼判斷
+數子句成分這個方法最可靠。空格後面是 they are willing to do for others，主詞 they 有了，動詞 are willing to do 也有了，可是 do 是及物動詞，它的受詞不見了。缺的那個受詞就是 what 本身。還原給自己看：they are willing to do something for others，把 something 抽出來換成 what 提到前面。再看整句的結構：The mark of heroes is not necessarily the result of their action, but ___ they are willing to do...。not A but B 把兩邊並列，A 的位置是 the result of their action（一個名詞片語），B 的位置就必須同樣是名詞性的東西，而且接在 be 動詞 is 後面當主詞補語。what 引導的名詞子句正好符合。同樣靠「數子句成分」定案的還有 97 年第 27 題 →、98 年第 23 題 →與 105 年第 21 題 →，是同一個判斷方式，值得整組一起練。
+誘答選項
+who 指人，但空格處要的是「他們願意做的事」不是「誰」；就算把 who 填進 do 後面那個空位，「他們願意為別人做誰」也講不通。those 是指示代名詞，後面要再接名詞或關係子句，湊不出一個完整的名詞子句。where 指地方，這句裡沒有任何地點的線索。
+常考字詞與句型
+be willing to V（願意做）、what matters（重要的是）、not A but B（不是 A 而是 B）、not necessarily（未必、不見得）、the mark of sth（……的特徵、標記）、a chosen cause（自己選定的志業）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+There are two kinds of heroes: heroes who shine in the face of great danger, who perform an 21 act in a difficult situation, and heroes who live an ordinary life like us, who do their work 22 by many of us, but who 23 a difference in the lives of others.
+Heroes are selfless people who perform extraordinary acts. The mark of heroes is not necessarily the result of their action, but 24 they are willing to do for others and for their chosen cause. 25 they fail, their determination lives on for others to follow. The glory lies not in the achievement but in the sacrifice.
+中譯：英雄有兩種：一種是在面對重大危險時挺身而出，在艱困情境中做出令人驚嘆之舉的英雄；另一種則是像我們一樣過著平凡生活的英雄，他們所做的事往往不被大多數人注意，卻切實地為他人的生命帶來改變。英雄是無私的人，他們做出超凡的行為。英雄的印記不一定在於行動的結果，而在於他們願意為他人及自己選擇的理念付出什麼。即使他們失敗了，他們的決心仍會延續下去，激勵他人繼續前行。榮耀不在於成就本身，而在於犧牲。
+📋 內容大意
+Heroes come in two kinds: those who act bravely in great danger, and those who live ordinary lives.
+The second kind work quietly, without praise, yet still change other people's lives.
+Heroism lies less in results than in the willingness to act for others. Even a failure leaves determination for others to follow.
+← 第23題回到95 年學測第25題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

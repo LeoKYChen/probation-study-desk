@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g87-38-2/index.html
+Author: staresto-create ZZSH
+Title: 87 年學測克漏字第38題詳解（分詞／動狀詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 87 年學測 ／ 第38題
+87 年學測 克漏字 第38題
+分詞／動狀詞線索：句內
+Laughter, too, has a beneficial effect on our immune system, 38 the production of white blood cells and increasing our resistance to infection.39 makes a difference to our appearance, too, when we relax our facial muscles!
+(A)encourages
+(B)encouraged
+(C)encouraging
+(D)to encourage
+答案：(C) encouraging
+題目編號：G87_38_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+現在分詞片語 encouraging，補充說明前面主要子句的結果／伴隨動作，表示「（笑）促進白血球的產生」；句子已經有主要動詞 has，不需要再用限定動詞 encourages；encouraged（過去分詞，被動，語意方向相反，應該是笑「促進」而非笑「被促進」）、to encourage（不定詞，不符合這個分詞構句結構）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項是 encourage 的四種形態，你會開始判斷這一串是分詞構句還是限定動詞、意義主詞是誰、要主動還是被動。其實不必想那麼遠——答案就寫在同一句話的後半段。
+怎麼判斷
+四個選項都是同一個動詞 encourage 的形態，可見這一格考的是形態。先把整句拉出來：Laughter, too, has a beneficial effect on our immune system, ___ the production of white blood cells and increasing our resistance to infection.注意逗號後面那一串的結尾：and increasing our resistance to infection——and 後面是 increasing，一個現在分詞。and 兩邊要對等，既然後面那一個是現在分詞，空格就照抄現在分詞，填 encouraging。這就是並列結構「照抄另一邊的形態」這個方法（同型：88 年第 23 題 →、95 年第 27 題 →、99 年第 27 題 →、100 年第 19 題 →）。用了這個方法，就完全不必去判斷分詞的主動被動——答案在 and 的另一邊。如果要驗算也很簡單：整句已經有主要動詞 has 了，逗號後面那兩串是補充說明笑所帶來的結果，還原成 and it encourages the production ... and increases our resistance ...。
+誘答選項
+encourages：限定動詞。句子已經有主要動詞 has，再放一個限定動詞而中間只用逗號隔開，會變成兩個句子沒有連接詞連接。encouraged：過去分詞表被動，方向錯了——是笑促進白血球的產生，不是笑被促進。to encourage：不定詞表目的，但這兩串講的是笑造成的結果，不是笑的目的；而且與 and 後面的 increasing 對不齊。
+常考字詞與句型
+have a beneficial effect on（對……有益）、encourage the production of（促進……的產生）、resistance to infection（對感染的抵抗力）、the immune system（免疫系統）、white blood cells（白血球）、increase（增加、提高）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Perhaps most of us are familiar with the saying "Laugh and the world 31 with you, weep and you weep alone."32 did you know that according to recent research, people are losing the art of laughter and it could have a 33 effect on our health? In 1930 we laughed on average for 19 minutes each day, but by 1980 it 34 to six minutes. Children, 35 , can see the funny side of things more often and may laugh up to 400 times a day.
+By exhaling air from the lungs in short 36 of laughter, breathing is quickened and heartbeats increased, which achieves 37 good as ten minutes on an exercise bike. Laughter, too, has a beneficial effect on our immune system, 38 the production of white blood cells and increasing our resistance to infection.39 makes a difference to our appearance, too, when we relax our facial muscles!
+Laughter 40 is the best medicine, so why not give yourself a treat? Have a good laugh today--and feel better for it.
+中譯：或許我們大多數人都聽過這句話：「你笑，全世界陪你笑；你哭，只有你獨自哭泣。」但你知道嗎，根據最近的研究，人們正逐漸失去笑的能力，而這可能對我們的健康造成嚴重的影響？1930 年，我們平均每天笑 19 分鐘，但到了 1980 年，這個數字降到只剩 6 分鐘。相較之下，孩子們更常看到事物有趣的一面，一天甚至可能笑到 400 次。透過短促的笑聲把肺裡的空氣呼出，呼吸會加快、心跳也會增加，好處相當於騎十分鐘健身腳踏車。笑對免疫系統也有益處，能增加白血球的產生，提高我們對感染的抵抗力。放鬆臉部肌肉時，笑也能讓我們的外表更好看！笑確實是最好的良藥，所以何不善待自己一下？今天就開懷大笑吧——你會感覺更好。
+📋 內容大意
+Research suggests that adults are laughing less than they once did, and this decline may carry real costs to health.
+Daily laughter fell from about nineteen minutes in 1930 to six minutes by 1980, while children may still laugh hundreds of times each day.
+Brief spells of laughter quicken breathing and heart rate, strengthen the immune system and relax the face, which is why laughter is often called the best medicine.
+← 第37題回到87 年學測第39題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

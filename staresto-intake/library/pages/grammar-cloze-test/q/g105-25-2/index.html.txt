@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g105-25-2/index.html
+Author: staresto-create ZZSH
+Title: 105 年學測克漏字第25題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 105 年學測 ／ 第25題
+105 年學測 克漏字 第25題
+字彙選義線索：句內答對率 46%
+答對率 46%：當年每 100 位考生，有 46 位答對。
+Well-trained examiners can usually detect lying with a high degree of 25 when they use a polygraph.
+(A)quantity
+(B)accuracy
+(C)possibility
+(D)emergency
+答案：(B) accuracy
+題目編號：G105_25_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「訓練有素的檢測員通常能以高度『準確性』偵測謊言」，accuracy（準確性）符合；quantity（數量）、possibility（可能性）、emergency（緊急情況）都不合。
+深入解析
+你可能會這樣想
+四個選項都是抽象名詞，擺進 a high degree of 後面文法上都通，所以文法幫不上忙 — 這也是答對率只有四成六的原因。其中 possibility 最容易讓人誤選，因為前面在講「偵測謊言」，感覺跟「可能性」沾得上邊。
+怎麼判斷
+先確認 with a high degree of 這個介系詞片語在修飾哪個動作：detect lying（偵測謊言）。「偵測」這件事要評價，評價的標準是「準不準」，不是「多不多」，也不是「有沒有可能」。真正決定答案的線索在下一句：However, because different people behave differently when lying, a polygraph test is by no means perfect.（然而，由於每個人說謊時的表現不同，測謊絕非完美。）However 標示前後對比，by no means perfect 是「絕不完美」— 既然後面否定掉的是「完美」，前面被拉高的那個特質就必須是同一件事，也就是「準確度」。這一步是本題最關鍵的判斷，也再一次說明：空格所在的句子讀完還不夠，一定要往下多讀一句。字的家族也順便記起來：accurate（準確的，形容詞）變成名詞是 accuracy（準確度），同一群的還有 exact（精確的）、precise（精準的）。
+誘答選項
+quantity（數量）— 測謊評價的是準不準，不是一次抓到幾個謊。possibility（可能性）— a high degree of possibility 讀起來像「可能性很高」，但這樣一來後面的 However 就轉折不起來，因為「可能性高」本來就不等於「準」，沒有東西可以被否定。emergency（緊急情況）— 與整段語意無關。
+常考字詞與句型
+with a high degree of accuracy（以高度的準確性）、accurate（準確的）、detect lying（偵測謊言）、tell a lie（說謊）、by no means（絕不、一點也不）、well-trained（訓練有素的）。其中 by no means 這一組考過 3 個年度，103 年第 20 題 →、107 年第 29 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+A polygraph machine, also known as a "lie detector," is a common part of criminal investigations. The instrument is used to measure 21 a person's body reacts to questions. The theory underlying it is that lying is stressful, and that this stress can be measured and recorded on a polygraph machine.
+When a person takes a polygraph test, four to six wires, called sensors, are 22 to different parts of his body. The sensors pick up signals from the person's blood pressure, pulse, and perspiration. 23 the process of questioning, all the signals are recorded on a single strip of moving paper. Once the questions are finished, the examiner analyzes the results to determine if the person tested 24 truthful.
+Well-trained examiners can usually detect lying with a high degree of 25 when they use a polygraph. However, because different people behave differently when lying, a polygraph test is by no means perfect.
+中譯：測謊機，又稱「謊言偵測器」，是刑事偵查中常見的工具。這項儀器用來測量一個人身體對問題的反應方式。其背後的理論是：說謊會造成壓力，而這種壓力可以透過測謊機測量並記錄下來。當受測者接受測謊時，會有四到六條稱為感應器的導線，連接到身體不同部位，這些感應器會擷取受測者血壓、脈搏和排汗的訊號。在整個問話過程中，所有訊號都會被記錄在一條移動中的紙帶上。問話結束後，測謊人員會分析結果，判斷受測者是否誠實。訓練有素的測謊人員在使用測謊機時，通常能相當準確地偵測出謊言。然而，由於每個人說謊時的反應不盡相同，測謊測試絕非完美無缺。
+📋 內容大意
+The polygraph, or lie detector, is a standard tool in criminal investigation and measures the body's reactions to questions.
+Four to six sensors are fixed to the body. They pick up blood pressure, pulse and sweat, and a moving strip of paper records every signal.
+The examiner then reads the record to judge truthfulness. Skilled examiners are usually reliable, but people behave differently when lying, so the test is far from perfect.
+← 第24題回到105 年學測第26題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

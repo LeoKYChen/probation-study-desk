@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g107-27-3/index.html
+Author: staresto-create ZZSH
+Title: 107 年學測克漏字第27題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 107 年學測 ／ 第27題
+107 年學測 克漏字 第27題
+字彙選義線索：句內答對率 85%
+答對率 85%：當年每 100 位考生，有 85 位答對。
+When a person is having a lucid dream, the person's body is 27 ; when a person daydreams, his/her body is awake.
+(A)apart
+(B)absent
+(C)alone
+(D)asleep
+答案：(D) asleep
+題目編號：G107_27_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意對比：清醒夢時「身體是睡著的」，對比後文白日夢時「身體是清醒的」，asleep（睡著的）符合這個對比；apart（分開的）、absent（缺席的）、alone（單獨的）都不合。
+深入解析
+你可能會這樣想
+這一格是 107 年學測克漏字十五格裡最容易的一格，不過值得順手把 a- 開頭這組形容詞整理出來。你可能會想：「睡著的」為什麼不用 sleeping？兩個字都對，差別在能放的位置不同。
+怎麼判斷
+分號後面已經把答案講白了：his/her body is awake（身體是清醒的）。前後兩半是刻意做的對比，awake 的相反就是 asleep。趁這一格建立一條規則：asleep、awake、alive、alone、afraid 這些 a- 開頭的形容詞不能放在名詞前面，只能放在 be、seem、feel 這類連綴動詞後面（劍橋 English Grammar Today）。所以我們說 The baby is asleep.（寶寶睡著了），不能說 the asleep baby；真要放到名詞前面，就得換成 the sleeping baby（睡著的寶寶）。這一格的空格正好在 is 後面，是這組字最標準的位置。
+誘答選項
+apart（分開地、相隔）、absent（缺席的）、alone（單獨的）三個字擺進去，都無法和後面的 awake 形成對比。alone 尤其要小心，它講的是「身邊沒有別人」，而不是「沒有意識」，跟做夢時的身體狀態無關。
+常考字詞與句型
+asleep（睡著的）、awake（醒著的）、alive（活著的）、alone（單獨的）、afraid（害怕的）、fall asleep（睡著）、stay awake（保持清醒）、the sleeping baby（睡著的寶寶，要放名詞前面就用 sleeping）、be immersed in（沉浸於……）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+You must have had this kind of experience: While in the middle of a normal dream, you suddenly realize that you are dreaming. This kind of dream is called a "lucid dream." The term "lucid" means clear; lucid dreamers know that they are dreaming and 26 they are dreaming of.
+It is different from daydreaming. When a person is having a lucid dream, the person's body is 27 ; when a person daydreams, his/her body is awake. Thus, daydreams are really just waking thoughts. In lucid dreams, however, we are completely immersed in the dream world.
+Yet, lucid dreaming is 28 just having a clear dream. It is your chance to play around with the extraordinary abilities buried in unused parts of your brain. 29 , it is a way for you to put the deepest areas of your brain to good use while you're sleeping. You can be an everyday Jane Doe or John Smith while awake but a superhero while sleeping, 30 who you are in real life. All the obstacles of reality can be set aside and you are able to accomplish tasks that you could never manage in waking reality.
+中譯：你一定有過這樣的經驗：在一場再普通不過的夢中，你突然意識到自己正在做夢。這種夢被稱為「清醒夢」。「清醒」（lucid）這個詞代表清楚明白；做清醒夢的人知道自己正在做夢，也清楚自己夢見的內容是什麼。這與「白日夢」不同：做清醒夢時，身體處於睡眠狀態；而做白日夢時，身體則是清醒的。因此，白日夢其實只是清醒時的思緒而已。然而，在清醒夢中，我們卻完全沉浸在夢境世界裡。不過，清醒夢的意義不只是擁有一場清晰的夢境而已，它更是一個讓你能盡情發揮大腦中未被開發區域裡潛藏的驚人能力的機會。換句話說，這是一種在睡眠期間，善用大腦最深層區域的方式。無論你在現實生活中是誰，清醒時你可能只是個平凡無奇的路人甲，但在夢中，你卻能成為超級英雄。現實中的種種阻礙都可以被拋在一旁，你能完成許多在清醒現實中永遠無法辦到的事。
+📋 內容大意
+A lucid dream is a dream in which the sleeper knows it is a dream. He can also recognize its contents.
+In daydreaming the body stays awake and the thoughts are waking thoughts. In lucid dreaming the body sleeps while the mind enters the dream world fully.
+Lucid dreaming lets you use parts of the brain you never normally reach. Whoever you are by day, at night you can do the impossible.
+← 第26題回到107 年學測第28題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

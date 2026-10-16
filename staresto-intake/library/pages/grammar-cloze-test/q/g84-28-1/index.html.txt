@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g84-28-1/index.html
+Author: staresto-create ZZSH
+Title: 84 年學測克漏字第28題詳解（連接詞／轉折詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 84 年學測 ／ 第28題
+84 年學測 克漏字 第28題
+連接詞／轉折詞線索：跨句
+The strongest encouragement to drink that young people receive, 28 , comes from advertisers.
+(A)furthermore
+(B)consequently
+(C)moreover
+(D)however
+答案：(D) however
+題目編號：G84_28_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+前面已經講了電視節目對年輕人飲酒的影響（第二個原因），這句話說「最強的鼓勵，然而，其實來自廣告商」，however 帶出一個轉折／新的重點（暗示比起前面提到的原因，廣告商的影響其實更關鍵）；furthermore／moreover 是順接累加、consequently 是因果，都不是這裡的轉折語氣。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+這一段是在列舉原因，前面已經講了兩個，所以你會直覺覺得第三個應該用累加的轉折詞，於是挑了 furthermore 或 moreover。但作者在這裡要做的不是再加一點，而是把重點整個轉過去。
+怎麼判斷
+四個選項都是轉折詞，可見這一格考的是這一句與前面的關係。先讀懂這一句：The strongest encouragement to drink that young people receive, ___, comes from advertisers.（年輕人所接受到最強烈的飲酒鼓勵，……，來自廣告商。）注意 the strongest（最強烈的）這個字——作者的意思是：前面講的社會慶典與電視節目都還不是關鍵，真正最有影響力的是廣告商。這是把前面兩點往下壓、把重點轉到第三點，所以用 however（然而）。如果用 furthermore 或 moreover，語氣會變成「這三點分量相同、再加一點」，the strongest 就沒有著落了。順便注意位置：這裡的 however 夾在主詞與動詞之間，兩邊各一個逗號——這是轉折詞很常見的擺法（同型：92 年第 21 題 →、93 年第 29 題 →、101 年第 18 題 →、102 年第 17 題 →、97 年第 30 題 →、105 年第 16 題 →）。
+誘答選項
+furthermore（此外）、moreover（此外）：兩個意思幾乎相同，依「同義的選項不可能只有一個對」可以一起砍掉；而且它們都是同向累加，與 the strongest 要表達的「這一點才是最關鍵」對不上。consequently（因此）：表因果，但前面兩個原因推不出「最強的鼓勵來自廣告商」這個結果。
+常考字詞與句型
+however（然而，可放句首、句中或句尾）、furthermore（此外）、consequently（因此）、sponsor an event（贊助活動）、an advertiser（廣告商）、the strongest encouragement（最強烈的鼓勵）。
+線索範圍說明：however 把重點從前面講的兩個原因，轉到真正最強的廣告商
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+America encourages its young people to drink. 21 , our society makes drinking a part of every celebration. Our personal celebrations, 22 weddings, promotions, graduations, and anniversaries, are 23 linked with drinking. 24 children can attend any family affair without seeing the adults enjoying their liquor. Drinking is part of our national celebrations as well. The Fourth of July means beer and New Year's Eve is an entire night dedicated to the proposition that everyone must get 25 .
+Secondly, the shows young people watch on television encourage them to drink. On 26 every soap opera, the characters drink casually and often. The rock videos young people watch over and over again feature alcohol, too. 27 on the videos sit in bars, nightclubs, and roadhouses. Drinking, the message goes, is cool.
+The strongest encouragement to drink that young people receive, 28 , comes from advertisers. Beer companies often sponsor the sports events young people watch. In addition, advertisements for liquor, on TV and in print, show situations that are 29 to the young. People hoist their glasses 30 they are sitting around ski lodges, sailing, dancing, or enjoying a football game. We may say we don't want our children to drink, but our messages say just the opposite.
+中譯：美國鼓勵年輕人喝酒。其一，我們的社會讓喝酒成為每個慶祝場合的一部分。我們個人的慶祝活動，例如婚禮、升遷、畢業典禮和週年紀念日，都與喝酒緊密相連。很少有孩子能在不看到大人喝酒的情況下參加家庭聚會。喝酒也是我們國家慶典的一部分。國慶日代表啤酒，跨年夜則整晚都在慶祝「每個人都必須喝醉」這個信念。第二，年輕人在電視上看的節目也鼓勵他們喝酒，幾乎每部肥皂劇裡，角色都輕鬆頻繁地喝酒。年輕人一再重複觀看的搖滾錄影帶裡也常出現酒精，影片人物坐在酒吧、夜店和路邊小酒館裡。這些影片傳達的訊息是：喝酒很酷。然而，年輕人受到最強烈的喝酒鼓勵，來自廣告商。啤酒公司經常贊助年輕人愛看的體育賽事。此外，電視和平面媒體上的酒類廣告，展示的情境對年輕人極具吸引力。人們在滑雪小屋、航海、跳舞或看足球賽時舉杯暢飲。我們可能會說不希望孩子喝酒，但我們傳遞的訊息卻恰恰相反。
+📋 內容大意
+American culture pushes its young toward alcohol by tying drink to every kind of celebration.
+Weddings, graduations and anniversaries all come with alcohol. Children see adults drinking at family events. National holidays are the same, from the Fourth of July to New Year's Eve.
+Television sends the same message. Soap operas show casual drinking, rock videos are set in bars, and drinking is made to look cool.
+Advertisers push hardest. They sponsor sports events and show happy scenes of skiing, sailing and dancing. Our messages tell children the opposite of what we say.
+← 第27題回到84 年學測第29題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g114-15-1/index.html
+Author: staresto-create ZZSH
+Title: 114 年學測克漏字第15題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 114 年學測 ／ 第15題
+114 年學測 克漏字 第15題
+字彙選義線索：跨句答對率 57%
+答對率 57%：當年每 100 位考生，有 57 位答對。
+The World Café was 15 created.
+(A)still
+(B)also
+(C)further
+(D)thus
+答案：(D) thus
+題目編號：G114_15_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「世界咖啡館『就此』誕生了」，thus（就此/因此）承接前面描述的整個過程，作為結果的總結；still（仍然）、also（也）、further（進一步）都不合。
+深入解析
+你可能會這樣想
+The World Café was ___ created. 四個選項都是副詞，塞進去讀起來都很順，所以你可能憑語感隨手挑一個。但這一格是本篇唯一線索在句子之外的題目：要判斷的不是這句話本身通不通，而是這句話和前面整段是什麼關係。
+怎麼判斷
+往前看整段的走向：下雨 → 擠進客廳 → 分小桌談 → 換桌 → 新想法不斷冒出來 → 形成一種新的協作形式。這一整串是「過程」，而 The World Café was ___ created 是這串過程的結果。表示結果的副詞就是 thus（因此、就此）。下一句 Since that rainy morning... 把時間切成「那天之後」，也印證這句是整件事的收尾。
+誘答選項
+still（仍然）表示狀態持續，但世界咖啡館是新誕生的，不是「仍然存在」；also（也）表示再追加一件事，可是前面並沒有提到「另一個東西也被創造出來」；further（進一步）需要前面已經有一個階段才談得上推進，本句是初次誕生。這三個都要求前文有特定鋪陳，而前文只有一條單純的因果線。
+常考字詞與句型
+thus（因此、就此）、and thus（因而）、thus far（到目前為止）、over the course of（在……的過程中）、in turn（接著、因而）、emerge from（從……浮現）。
+線索範圍說明：thus 承接前一句的討論過程，導出結果
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+In 1995, a group of business and academic leaders met at the home of Juanita Brown and David Isaacs in Mill Valley, California. None of them had any idea they were about to create a social innovation that 11 rapidly around the world.
+The group was supposed to have a large-circle discussion in their beautiful garden. Unfortunately, it started pouring. With their plan 12 by the rain, the two dozen participants squeezed into the living room. They broke into small, intimate table conversations, recording their insights on paper tablecloths. They periodically stopped their conversations to switch tables so the insights and ideas might 13 and deepen. As they moved from one table to another, they noticed new ideas emerging from the discussions. This in turn enriched subsequent rounds of conversation.
+Over the course of the morning, the innovative discussion process 14 a new form of collective effort that transformed the depth, scope, and quality of their discussion. The World Café was 15 created. Since that rainy morning in Mill Valley, the World Café approach has been applied to multi-group discussions and cooperative actions by businesses, industries, and educational institutions around the world.
+中譯：1995 年，一群商界與學界領袖在加州米爾谷的胡安妮塔·布朗與大衛·艾薩克斯家中聚會。他們誰也沒想到，自己即將創造出一項迅速風靡全球的社會創新。這群人原本打算在美麗的花園中，圍成一個大圈進行討論，不料卻突然下起傾盆大雨。原訂計畫被大雨打亂後，這二十多位與會者只好擠進客廳裡，分成幾組人馬，圍著小桌子展開親密的交談，並把彼此的想法寫在紙桌巾上。他們會定期停下交談、更換桌次，讓不同的想法與見解得以交流並深化。隨著他們從一桌移動到另一桌，他們注意到討論中不斷湧現出新的想法，這也讓後續一輪又一輪的對話變得更加豐富。就這樣，在整個上午的過程中，這種創新的討論方式，逐漸發展成一種全新形式的集體合作，徹底改變了他們討論的深度、廣度與品質。「世界咖啡館」討論法就此誕生。自從米爾谷那個下雨的早晨以來，「世界咖啡館」的方法已被廣泛應用於世界各地企業、產業與教育機構的多方討論與合作行動之中。
+📋 內容大意
+In 1995 business and academic leaders met at the Mill Valley home of Juanita Brown and David Isaacs. They did not know they were inventing something new.
+Heavy rain ruined their plan for a big circle discussion in the garden. Two dozen people crowded indoors and talked in small groups at tables.
+They changed tables from time to time, so ideas travelled and deepened. That morning produced the World Café, now used by businesses and schools worldwide.
+← 第14題回到114 年學測第16題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

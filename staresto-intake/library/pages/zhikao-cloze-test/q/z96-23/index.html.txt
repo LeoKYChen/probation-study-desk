@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z96-23/index.html
+Author: staresto-create ZZSH
+Title: 96 年指考克漏字第23題詳解（連接詞／轉折詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 96 年指考 ／ 第23題
+96 年指考 克漏字 第23題
+連接詞／轉折詞線索：跨句答對率 39%
+答對率 39%：當年每 100 位考生，有 39 位答對。
+Climate change may affect people's health both directly and indirectly. For instance, heat stress and other heat-related health problems are caused directly by very warm temperatures. 23 , human health can also be affected by ecological disturbances, changes in food and water supplies, as well as coastal flooding.
+(A)Suddenly
+(B)Previously
+(C)Exclusively
+(D)Indirectly
+答案：(D) Indirectly
+題目編號：Z96_23（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+Indirectly 意為「間接地」，與前一句的 directly 形成對照：高溫直接造成熱壓力等問題，人體健康也會間接受到生態擾動、糧食與水源變化的影響；Suddenly、Previously、Exclusively 都無法構成這組對照。
+深入解析
+你可能會這樣想
+四個選項都是 -ly 副詞，放在句首都像在承接上文，單看本句 human health can also be affected by … 似乎哪一個都讀得通。關鍵在前一句：這一格要的是與前一句 directly 相對的那個字。
+怎麼判斷
+線索是前一句的 directly：For instance, heat stress and other heat-related health problems are caused directly by very warm temperatures.（舉例來說，熱壓力等問題是高溫「直接」造成的）——既然前一句用了 directly，本句自然要用 Indirectly 來接另一半。而且本句句中還有 also（也會受影響），再次確認這是在補上另一種途徑。看到前一句有 directly、physically、economically 這類說明途徑或層面的副詞，下一句常常就是它的對照組。更上一層還有依據：再往前一句是 Climate change may affect people's health both directly and indirectly.（氣候變遷可能直接與間接地影響人體健康）——作者先總說 directly and indirectly，再分別展開。本句正是「間接」那一半，結構完全對稱。
+誘答選項
+Suddenly：「突然」，講的是速度與時間，與前一句的 directly 構不成對照，生態擾動、糧食與水源的變化也不是突然發生的事。Previously：「先前」，指時間順序，但本句說的是另一種影響途徑，不是更早發生的事。Exclusively：「只、專門」，若說人體健康「只」受生態擾動等因素影響，就與前一句「高溫直接造成」的說法相衝。
+常考字詞與句型
+directly／indirectly（直接地／間接地）、both A and B（既 A 又 B）、be affected by（受…影響）、ecological disturbances（生態擾動）。
+線索範圍說明：前一句 caused directly by very warm temperatures，本句 Indirectly 與之對照
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：96學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Average global temperature has increased by almost 1°F over the past century. Scientists expect it to increase an 21 2° to 6°F over the next one hundred years. This may not sound like much, but it could change the Earth's climate as 22 before.
+Climate change may affect people's health both directly and indirectly. For instance, heat stress and other heat-related health problems are caused directly by very warm temperatures. 23, human health can also be affected by ecological disturbances, changes in food and water supplies, as well as coastal flooding.
+How people and nature 24 climate change will determine how seriously it affects human health. Generally, poor people and poor countries are 25 probable to have the money and resources they need to cope with health problems due to climate change.
+中譯：過去一世紀以來，全球平均氣溫已上升將近華氏 1 度（不到攝氏 0.6 度）。科學家預期未來一百年氣溫還會再上升華氏 2 到 6 度（約攝氏 1.1 到 3.3 度）。這聽起來或許沒什麼大不了，但它可能會以前所未有的方式改變地球的氣候。氣候變遷可能直接或間接影響人類健康。例如，熱壓力及其他與高溫有關的健康問題就是由酷熱直接造成的。此外，人類健康也可能間接受到生態失衡、糧食與水資源供給改變，以及沿海洪患等因素影響。人與自然如何適應氣候變遷，將決定氣候變遷對人類健康影響的嚴重程度。整體而言，貧窮的人與貧窮的國家較不可能擁有足夠的金錢與資源，來應付因氣候變遷而產生的健康問題。
+📋 內容大意
+Global temperature has risen about one degree and may climb several more within a century.
+Warming harms health through heat itself and through disturbed food, water and coastal flooding.
+How people and nature meet the change decides the damage, and poorer countries can least afford it.
+← 第22題回到96 年指考第24題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

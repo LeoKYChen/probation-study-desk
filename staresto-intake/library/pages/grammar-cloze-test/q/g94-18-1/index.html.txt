@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g94-18-1/index.html
+Author: staresto-create ZZSH
+Title: 94 年學測克漏字第18題詳解（連接詞／轉折詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 94 年學測 ／ 第18題
+94 年學測 克漏字 第18題
+連接詞／轉折詞線索：句內答對率 63%
+答對率 63%：當年每 100 位考生，有 63 位答對。
+The famous film director Ang Lee recalls his father's disappointment with him when he was young. 18 a small child, he would pick up a broom and pretend to be playing guitar for the entertainment of family guests.
+(A)Since
+(B)For
+(C)To
+(D)As
+答案：(D) As
+題目編號：G94_18_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+As 在這裡表示「作為／當……的時候」（As a small child＝當他還是小孩的時候）；Since（自從／因為）、For（因為）、To（接名詞只表示方向或對象，接不出「當他還小的時候」的意思）都不合。
+深入解析
+你可能會這樣想
+看到 As 只想到「因為」或「當……的時候」，而這兩個意思後面都要接完整子句；一發現空格後面接的是 a small child 這個名詞，就把 As 排掉了。其實 as 也能當介系詞，後面直接接名詞。
+怎麼判斷
+先看四個選項的共同點：Since、For、As 都是既能當連接詞、又能當介系詞的短詞，可見這一格考的是「後面接的是名詞還是子句」。先數句子成分：空格後面是 a small child（名詞片語），逗號之後才是完整的主要子句 he would pick up a broom and pretend to be playing guitar。所以空格要的是一個能直接接名詞的字，不是連接詞。劍橋詞典的 as 條目把 as + 名詞列為介系詞用法，意思是「以……的身分」，收的例句正好就是 As a child, Miriam had lived in India.（她小時候在印度住過）。本句的 As a small child 就是這個用法，還原成完整子句是 When he was a small child。後面的 would pick up 表示「以前總是……」，正是回憶童年習慣的口吻，與「還是個小孩子的時候」互相支持。
+誘答選項
+Since：當「自從」時後面接的是時間起點（since 1990、since childhood），a small child 是人不是時間點；當「因為」時要接完整子句。For：當「因為」時是連接詞，要接子句；當介系詞時是「為了、給」，For a small child 會變成「對一個小孩來說」，與後面「他會拿起掃把假裝彈吉他」接不起來。To：後面接名詞時表示方向或對象，接不出「當他還小的時候」這個意思。
+常考字詞與句型
+as a child（在還是孩子的時候）、work as a waiter（當服務生）、regard A as B（把 A 視為 B）、pick up（拿起、順道學會）、pretend to V（假裝……）、be disappointed with sb（對某人失望）。其中 regard A as B 這一組考過 3 個年度，83 年第 29 題 →、107 年第 30 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Experts say that creativity by definition means going against the tradition and breaking the rules. To be creative, you must dare 16, and courageously express your own outlook and 17 what makes you unique. But does our society encourage children to break the rules? I'm afraid the answer is no.
+The famous film director Ang Lee recalls his father's disappointment with him when he was young. 18 a small child, he would pick up a broom and pretend to be playing guitar for the entertainment of family guests. Then, when he was studying film in college, he would exhaust himself just for a performance tour. His father, 19 always hoped that he would get a PhD and become a professor, 20 with a scoff: "What is all this nonsense?!"
+But it later turned out that it was exactly his courage to "rebel" and to express his own ideas that marks his films with distinct creativity.
+中譯：專家表示，創造力就其定義而言，意味著要違背傳統、打破常規。要有創造力，你必須敢於叛逆，並勇敢地表達自己獨特的觀點與特質。但我們的社會真的鼓勵孩子打破常規嗎？恐怕答案是否定的。知名導演李安曾回憶，年少時父親對他相當失望。當他還是個小孩子時，他會拿起掃把假裝彈吉他，只為了娛樂家中的賓客。後來，當他在大學主修電影時，他甚至會為了一場公演而累到筋疲力竭。他的父親一直希望他能拿到博士學位、成為一名教授，總是嗤之以鼻地說：「這些荒唐事到底是在做什麼？！」然而，事實證明，正是他敢於「叛逆」、勇於表達自己想法的勇氣，才成就了他電影中鮮明獨特的創造力。
+📋 內容大意
+Ang Lee's early rebellion against his father's traditional expectations allowed him to develop the unique creativity that defined his film career.（敘事文）
+← 第17題回到94 年學測第19題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

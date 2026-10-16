@@ -1,0 +1,1962 @@
+{
+ "100_1": {
+  "advPct": 11.1,
+  "blanks": 5,
+  "contentTokens": 54,
+  "levels": {
+   "1": 24,
+   "2": 14,
+   "3": 2,
+   "4": 4,
+   "5": 5,
+   "6": 1
+  },
+  "offList": 4,
+  "readLoad": 25.2,
+  "rlBand": 0,
+  "sentLen": 18.7,
+  "vcBand": 2,
+  "words": 126,
+  "year": "100年"
+ },
+ "100_2": {
+  "advPct": 7.0,
+  "blanks": 5,
+  "contentTokens": 57,
+  "levels": {
+   "1": 33,
+   "2": 11,
+   "3": 2,
+   "4": 7,
+   "5": 3,
+   "6": 1
+  },
+  "offList": 0,
+  "readLoad": 27.6,
+  "rlBand": 1,
+  "sentLen": 12.8,
+  "vcBand": 2,
+  "words": 138,
+  "year": "100年"
+ },
+ "100_3": {
+  "advPct": 10.3,
+  "blanks": 5,
+  "contentTokens": 58,
+  "levels": {
+   "1": 23,
+   "2": 19,
+   "3": 4,
+   "4": 5,
+   "5": 3,
+   "6": 3
+  },
+  "offList": 1,
+  "readLoad": 24.4,
+  "rlBand": 0,
+  "sentLen": 12.6,
+  "vcBand": 2,
+  "words": 122,
+  "year": "100年"
+ },
+ "101_1": {
+  "advPct": 9.3,
+  "blanks": 5,
+  "contentTokens": 54,
+  "levels": {
+   "1": 29,
+   "2": 9,
+   "3": 10,
+   "4": 1,
+   "5": 4,
+   "6": 1
+  },
+  "offList": 0,
+  "readLoad": 29.4,
+  "rlBand": 1,
+  "sentLen": 16.9,
+  "vcBand": 2,
+  "words": 147,
+  "year": "101年"
+ },
+ "101_2": {
+  "advPct": 3.1,
+  "blanks": 5,
+  "contentTokens": 65,
+  "levels": {
+   "1": 45,
+   "2": 11,
+   "3": 1,
+   "4": 6,
+   "5": 2,
+   "6": 0
+  },
+  "offList": 0,
+  "readLoad": 31.8,
+  "rlBand": 1,
+  "sentLen": 18.2,
+  "vcBand": 0,
+  "words": 159,
+  "year": "101年"
+ },
+ "101_3": {
+  "advPct": 4.7,
+  "blanks": 5,
+  "contentTokens": 43,
+  "levels": {
+   "1": 20,
+   "2": 9,
+   "3": 6,
+   "4": 5,
+   "5": 2,
+   "6": 0
+  },
+  "offList": 1,
+  "readLoad": 25.4,
+  "rlBand": 0,
+  "sentLen": 16.5,
+  "vcBand": 1,
+  "words": 127,
+  "year": "101年"
+ },
+ "102_1": {
+  "advPct": 2.9,
+  "blanks": 5,
+  "contentTokens": 70,
+  "levels": {
+   "1": 38,
+   "2": 15,
+   "3": 4,
+   "4": 8,
+   "5": 1,
+   "6": 1
+  },
+  "offList": 3,
+  "readLoad": 36.2,
+  "rlBand": 2,
+  "sentLen": 18.6,
+  "vcBand": 0,
+  "words": 181,
+  "year": "102年"
+ },
+ "102_2": {
+  "advPct": 3.8,
+  "blanks": 5,
+  "contentTokens": 53,
+  "levels": {
+   "1": 17,
+   "2": 22,
+   "3": 9,
+   "4": 3,
+   "5": 2,
+   "6": 0
+  },
+  "offList": 0,
+  "readLoad": 28.0,
+  "rlBand": 1,
+  "sentLen": 18.1,
+  "vcBand": 1,
+  "words": 140,
+  "year": "102年"
+ },
+ "102_3": {
+  "advPct": 1.3,
+  "blanks": 5,
+  "contentTokens": 77,
+  "levels": {
+   "1": 42,
+   "2": 21,
+   "3": 5,
+   "4": 6,
+   "5": 1,
+   "6": 0
+  },
+  "offList": 2,
+  "readLoad": 32.2,
+  "rlBand": 1,
+  "sentLen": 20.8,
+  "vcBand": 0,
+  "words": 161,
+  "year": "102年"
+ },
+ "103_1": {
+  "advPct": 3.6,
+  "blanks": 5,
+  "contentTokens": 56,
+  "levels": {
+   "1": 42,
+   "2": 7,
+   "3": 3,
+   "4": 2,
+   "5": 1,
+   "6": 1
+  },
+  "offList": 0,
+  "readLoad": 32.2,
+  "rlBand": 1,
+  "sentLen": 23.7,
+  "vcBand": 1,
+  "words": 161,
+  "year": "103年"
+ },
+ "103_2": {
+  "advPct": 13.4,
+  "blanks": 5,
+  "contentTokens": 67,
+  "levels": {
+   "1": 27,
+   "2": 17,
+   "3": 10,
+   "4": 3,
+   "5": 5,
+   "6": 4
+  },
+  "offList": 1,
+  "readLoad": 32.0,
+  "rlBand": 1,
+  "sentLen": 20.6,
+  "vcBand": 2,
+  "words": 160,
+  "year": "103年"
+ },
+ "103_3": {
+  "advPct": 5.4,
+  "blanks": 5,
+  "contentTokens": 56,
+  "levels": {
+   "1": 22,
+   "2": 23,
+   "3": 1,
+   "4": 6,
+   "5": 2,
+   "6": 1
+  },
+  "offList": 1,
+  "readLoad": 26.8,
+  "rlBand": 1,
+  "sentLen": 19.9,
+  "vcBand": 1,
+  "words": 134,
+  "year": "103年"
+ },
+ "104_1": {
+  "advPct": 6.3,
+  "blanks": 5,
+  "contentTokens": 63,
+  "levels": {
+   "1": 29,
+   "2": 18,
+   "3": 4,
+   "4": 8,
+   "5": 3,
+   "6": 1
+  },
+  "offList": 0,
+  "readLoad": 28.6,
+  "rlBand": 1,
+  "sentLen": 18.5,
+  "vcBand": 1,
+  "words": 143,
+  "year": "104年"
+ },
+ "104_2": {
+  "advPct": 10.6,
+  "blanks": 5,
+  "contentTokens": 66,
+  "levels": {
+   "1": 35,
+   "2": 16,
+   "3": 3,
+   "4": 4,
+   "5": 0,
+   "6": 7
+  },
+  "offList": 1,
+  "readLoad": 28.8,
+  "rlBand": 1,
+  "sentLen": 21.3,
+  "vcBand": 2,
+  "words": 144,
+  "year": "104年"
+ },
+ "104_3": {
+  "advPct": 6.0,
+  "blanks": 5,
+  "contentTokens": 67,
+  "levels": {
+   "1": 39,
+   "2": 16,
+   "3": 4,
+   "4": 2,
+   "5": 2,
+   "6": 2
+  },
+  "offList": 2,
+  "readLoad": 28.0,
+  "rlBand": 1,
+  "sentLen": 20.7,
+  "vcBand": 1,
+  "words": 140,
+  "year": "104年"
+ },
+ "105_1": {
+  "advPct": 12.0,
+  "blanks": 5,
+  "contentTokens": 75,
+  "levels": {
+   "1": 43,
+   "2": 13,
+   "3": 5,
+   "4": 4,
+   "5": 7,
+   "6": 2
+  },
+  "offList": 1,
+  "readLoad": 33.4,
+  "rlBand": 2,
+  "sentLen": 13.2,
+  "vcBand": 2,
+  "words": 167,
+  "year": "105年"
+ },
+ "105_2": {
+  "advPct": 7.6,
+  "blanks": 5,
+  "contentTokens": 79,
+  "levels": {
+   "1": 38,
+   "2": 16,
+   "3": 11,
+   "4": 7,
+   "5": 4,
+   "6": 2
+  },
+  "offList": 1,
+  "readLoad": 29.6,
+  "rlBand": 1,
+  "sentLen": 17.0,
+  "vcBand": 2,
+  "words": 148,
+  "year": "105年"
+ },
+ "105_3": {
+  "advPct": 5.7,
+  "blanks": 5,
+  "contentTokens": 87,
+  "levels": {
+   "1": 31,
+   "2": 36,
+   "3": 7,
+   "4": 7,
+   "5": 3,
+   "6": 2
+  },
+  "offList": 1,
+  "readLoad": 35.6,
+  "rlBand": 2,
+  "sentLen": 16.6,
+  "vcBand": 1,
+  "words": 178,
+  "year": "105年"
+ },
+ "106_1": {
+  "advPct": 8.1,
+  "blanks": 5,
+  "contentTokens": 86,
+  "levels": {
+   "1": 35,
+   "2": 21,
+   "3": 8,
+   "4": 5,
+   "5": 1,
+   "6": 6
+  },
+  "offList": 10,
+  "readLoad": 36.0,
+  "rlBand": 2,
+  "sentLen": 15.4,
+  "vcBand": 2,
+  "words": 180,
+  "year": "106年"
+ },
+ "106_2": {
+  "advPct": 8.0,
+  "blanks": 5,
+  "contentTokens": 75,
+  "levels": {
+   "1": 46,
+   "2": 16,
+   "3": 3,
+   "4": 4,
+   "5": 6,
+   "6": 0
+  },
+  "offList": 0,
+  "readLoad": 33.4,
+  "rlBand": 2,
+  "sentLen": 17.2,
+  "vcBand": 2,
+  "words": 167,
+  "year": "106年"
+ },
+ "106_3": {
+  "advPct": 5.6,
+  "blanks": 5,
+  "contentTokens": 89,
+  "levels": {
+   "1": 43,
+   "2": 24,
+   "3": 7,
+   "4": 9,
+   "5": 5,
+   "6": 0
+  },
+  "offList": 1,
+  "readLoad": 30.8,
+  "rlBand": 1,
+  "sentLen": 22.7,
+  "vcBand": 1,
+  "words": 154,
+  "year": "106年"
+ },
+ "107_1": {
+  "advPct": 15.4,
+  "blanks": 5,
+  "contentTokens": 78,
+  "levels": {
+   "1": 30,
+   "2": 19,
+   "3": 9,
+   "4": 7,
+   "5": 9,
+   "6": 3
+  },
+  "offList": 1,
+  "readLoad": 32.4,
+  "rlBand": 1,
+  "sentLen": 16.7,
+  "vcBand": 2,
+  "words": 162,
+  "year": "107年"
+ },
+ "107_2": {
+  "advPct": 11.4,
+  "blanks": 5,
+  "contentTokens": 79,
+  "levels": {
+   "1": 34,
+   "2": 17,
+   "3": 11,
+   "4": 7,
+   "5": 8,
+   "6": 1
+  },
+  "offList": 1,
+  "readLoad": 34.0,
+  "rlBand": 2,
+  "sentLen": 21.9,
+  "vcBand": 2,
+  "words": 170,
+  "year": "107年"
+ },
+ "107_3": {
+  "advPct": 1.2,
+  "blanks": 5,
+  "contentTokens": 81,
+  "levels": {
+   "1": 51,
+   "2": 15,
+   "3": 5,
+   "4": 1,
+   "5": 1,
+   "6": 0
+  },
+  "offList": 8,
+  "readLoad": 37.8,
+  "rlBand": 2,
+  "sentLen": 17.6,
+  "vcBand": 0,
+  "words": 189,
+  "year": "107年"
+ },
+ "108_1": {
+  "advPct": 3.4,
+  "blanks": 5,
+  "contentTokens": 87,
+  "levels": {
+   "1": 54,
+   "2": 17,
+   "3": 5,
+   "4": 5,
+   "5": 3,
+   "6": 0
+  },
+  "offList": 3,
+  "readLoad": 40.2,
+  "rlBand": 2,
+  "sentLen": 18.5,
+  "vcBand": 1,
+  "words": 201,
+  "year": "108年"
+ },
+ "108_2": {
+  "advPct": 12.5,
+  "blanks": 5,
+  "contentTokens": 88,
+  "levels": {
+   "1": 29,
+   "2": 25,
+   "3": 18,
+   "4": 3,
+   "5": 7,
+   "6": 4
+  },
+  "offList": 2,
+  "readLoad": 35.4,
+  "rlBand": 2,
+  "sentLen": 18.2,
+  "vcBand": 2,
+  "words": 177,
+  "year": "108年"
+ },
+ "108_3": {
+  "advPct": 7.0,
+  "blanks": 5,
+  "contentTokens": 86,
+  "levels": {
+   "1": 47,
+   "2": 20,
+   "3": 6,
+   "4": 6,
+   "5": 5,
+   "6": 1
+  },
+  "offList": 1,
+  "readLoad": 39.4,
+  "rlBand": 2,
+  "sentLen": 18.4,
+  "vcBand": 2,
+  "words": 197,
+  "year": "108年"
+ },
+ "109_1": {
+  "advPct": 6.0,
+  "blanks": 5,
+  "contentTokens": 100,
+  "levels": {
+   "1": 41,
+   "2": 27,
+   "3": 9,
+   "4": 6,
+   "5": 6,
+   "6": 0
+  },
+  "offList": 11,
+  "readLoad": 38.0,
+  "rlBand": 2,
+  "sentLen": 24.4,
+  "vcBand": 1,
+  "words": 190,
+  "year": "109年"
+ },
+ "109_2": {
+  "advPct": 7.9,
+  "blanks": 5,
+  "contentTokens": 101,
+  "levels": {
+   "1": 46,
+   "2": 28,
+   "3": 9,
+   "4": 7,
+   "5": 3,
+   "6": 5
+  },
+  "offList": 3,
+  "readLoad": 37.4,
+  "rlBand": 2,
+  "sentLen": 17.5,
+  "vcBand": 2,
+  "words": 187,
+  "year": "109年"
+ },
+ "109_3": {
+  "advPct": 5.7,
+  "blanks": 5,
+  "contentTokens": 70,
+  "levels": {
+   "1": 35,
+   "2": 12,
+   "3": 8,
+   "4": 10,
+   "5": 4,
+   "6": 0
+  },
+  "offList": 1,
+  "readLoad": 34.0,
+  "rlBand": 2,
+  "sentLen": 21.9,
+  "vcBand": 1,
+  "words": 170,
+  "year": "109年"
+ },
+ "110_1": {
+  "advPct": 2.3,
+  "blanks": 5,
+  "contentTokens": 87,
+  "levels": {
+   "1": 39,
+   "2": 19,
+   "3": 16,
+   "4": 10,
+   "5": 1,
+   "6": 1
+  },
+  "offList": 1,
+  "readLoad": 34.0,
+  "rlBand": 2,
+  "sentLen": 19.4,
+  "vcBand": 0,
+  "words": 170,
+  "year": "110年"
+ },
+ "110_2": {
+  "advPct": 7.8,
+  "blanks": 5,
+  "contentTokens": 77,
+  "levels": {
+   "1": 36,
+   "2": 24,
+   "3": 9,
+   "4": 1,
+   "5": 5,
+   "6": 1
+  },
+  "offList": 1,
+  "readLoad": 39.2,
+  "rlBand": 2,
+  "sentLen": 13.4,
+  "vcBand": 2,
+  "words": 196,
+  "year": "110年"
+ },
+ "110_3": {
+  "advPct": 14.3,
+  "blanks": 5,
+  "contentTokens": 91,
+  "levels": {
+   "1": 33,
+   "2": 22,
+   "3": 14,
+   "4": 8,
+   "5": 3,
+   "6": 10
+  },
+  "offList": 1,
+  "readLoad": 36.6,
+  "rlBand": 2,
+  "sentLen": 17.1,
+  "vcBand": 2,
+  "words": 183,
+  "year": "110年"
+ },
+ "110試辦考試_1": {
+  "advPct": 5.9,
+  "blanks": 5,
+  "contentTokens": 85,
+  "levels": {
+   "1": 42,
+   "2": 22,
+   "3": 6,
+   "4": 6,
+   "5": 4,
+   "6": 1
+  },
+  "offList": 4,
+  "readLoad": 39.2,
+  "rlBand": 2,
+  "sentLen": 20.1,
+  "vcBand": 1,
+  "words": 196,
+  "year": "110年試辦考試"
+ },
+ "110試辦考試_2": {
+  "advPct": 7.4,
+  "blanks": 5,
+  "contentTokens": 94,
+  "levels": {
+   "1": 41,
+   "2": 25,
+   "3": 11,
+   "4": 4,
+   "5": 7,
+   "6": 0
+  },
+  "offList": 6,
+  "readLoad": 37.0,
+  "rlBand": 2,
+  "sentLen": 17.3,
+  "vcBand": 2,
+  "words": 185,
+  "year": "110年試辦考試"
+ },
+ "111_1": {
+  "advPct": 4.3,
+  "blanks": 5,
+  "contentTokens": 92,
+  "levels": {
+   "1": 54,
+   "2": 19,
+   "3": 5,
+   "4": 9,
+   "5": 3,
+   "6": 1
+  },
+  "offList": 1,
+  "readLoad": 38.8,
+  "rlBand": 2,
+  "sentLen": 16.6,
+  "vcBand": 1,
+  "words": 194,
+  "year": "111年"
+ },
+ "111_2": {
+  "advPct": 8.1,
+  "blanks": 5,
+  "contentTokens": 111,
+  "levels": {
+   "1": 58,
+   "2": 27,
+   "3": 7,
+   "4": 7,
+   "5": 6,
+   "6": 3
+  },
+  "offList": 3,
+  "readLoad": 39.0,
+  "rlBand": 2,
+  "sentLen": 17.8,
+  "vcBand": 2,
+  "words": 195,
+  "year": "111年"
+ },
+ "111學測英文參考試卷_1": {
+  "advPct": 11.1,
+  "blanks": 5,
+  "contentTokens": 63,
+  "levels": {
+   "1": 31,
+   "2": 12,
+   "3": 7,
+   "4": 6,
+   "5": 5,
+   "6": 2
+  },
+  "offList": 0,
+  "readLoad": 32.2,
+  "rlBand": 1,
+  "sentLen": 16.6,
+  "vcBand": 2,
+  "words": 161,
+  "year": "111年學測英文參考試卷"
+ },
+ "112_1": {
+  "advPct": 3.4,
+  "blanks": 5,
+  "contentTokens": 117,
+  "levels": {
+   "1": 49,
+   "2": 33,
+   "3": 16,
+   "4": 12,
+   "5": 3,
+   "6": 1
+  },
+  "offList": 3,
+  "readLoad": 41.4,
+  "rlBand": 2,
+  "sentLen": 19.3,
+  "vcBand": 1,
+  "words": 207,
+  "year": "112年"
+ },
+ "112_2": {
+  "advPct": 16.9,
+  "blanks": 5,
+  "contentTokens": 89,
+  "levels": {
+   "1": 36,
+   "2": 19,
+   "3": 11,
+   "4": 4,
+   "5": 11,
+   "6": 4
+  },
+  "offList": 4,
+  "readLoad": 42.4,
+  "rlBand": 2,
+  "sentLen": 21.7,
+  "vcBand": 2,
+  "words": 212,
+  "year": "112年"
+ },
+ "113_1": {
+  "advPct": 4.1,
+  "blanks": 5,
+  "contentTokens": 98,
+  "levels": {
+   "1": 48,
+   "2": 23,
+   "3": 11,
+   "4": 11,
+   "5": 3,
+   "6": 1
+  },
+  "offList": 1,
+  "readLoad": 35.8,
+  "rlBand": 2,
+  "sentLen": 18.4,
+  "vcBand": 1,
+  "words": 179,
+  "year": "113年"
+ },
+ "113_2": {
+  "advPct": 5.0,
+  "blanks": 5,
+  "contentTokens": 121,
+  "levels": {
+   "1": 71,
+   "2": 25,
+   "3": 12,
+   "4": 4,
+   "5": 4,
+   "6": 2
+  },
+  "offList": 3,
+  "readLoad": 46.4,
+  "rlBand": 2,
+  "sentLen": 19.8,
+  "vcBand": 1,
+  "words": 232,
+  "year": "113年"
+ },
+ "114_1": {
+  "advPct": 11.8,
+  "blanks": 5,
+  "contentTokens": 85,
+  "levels": {
+   "1": 39,
+   "2": 24,
+   "3": 5,
+   "4": 7,
+   "5": 9,
+   "6": 1
+  },
+  "offList": 0,
+  "readLoad": 37.2,
+  "rlBand": 2,
+  "sentLen": 15.9,
+  "vcBand": 2,
+  "words": 186,
+  "year": "114年"
+ },
+ "114_2": {
+  "advPct": 6.5,
+  "blanks": 5,
+  "contentTokens": 93,
+  "levels": {
+   "1": 50,
+   "2": 20,
+   "3": 12,
+   "4": 2,
+   "5": 2,
+   "6": 4
+  },
+  "offList": 3,
+  "readLoad": 38.4,
+  "rlBand": 2,
+  "sentLen": 16.4,
+  "vcBand": 1,
+  "words": 192,
+  "year": "114年"
+ },
+ "115_1": {
+  "advPct": 2.8,
+  "blanks": 5,
+  "contentTokens": 106,
+  "levels": {
+   "1": 50,
+   "2": 23,
+   "3": 9,
+   "4": 5,
+   "5": 2,
+   "6": 1
+  },
+  "offList": 16,
+  "readLoad": 41.8,
+  "rlBand": 2,
+  "sentLen": 19.5,
+  "vcBand": 0,
+  "words": 209,
+  "year": "115年"
+ },
+ "115_2": {
+  "advPct": 8.5,
+  "blanks": 5,
+  "contentTokens": 106,
+  "levels": {
+   "1": 52,
+   "2": 21,
+   "3": 17,
+   "4": 4,
+   "5": 4,
+   "6": 5
+  },
+  "offList": 3,
+  "readLoad": 39.4,
+  "rlBand": 2,
+  "sentLen": 16.8,
+  "vcBand": 2,
+  "words": 197,
+  "year": "115年"
+ },
+ "83_1": {
+  "advPct": 0.0,
+  "blanks": 10,
+  "contentTokens": 55,
+  "levels": {
+   "1": 31,
+   "2": 19,
+   "3": 4,
+   "4": 1,
+   "5": 0,
+   "6": 0
+  },
+  "offList": 0,
+  "readLoad": 13.7,
+  "rlBand": 0,
+  "sentLen": 10.5,
+  "vcBand": 0,
+  "words": 137,
+  "year": "83年"
+ },
+ "83_2": {
+  "advPct": 9.4,
+  "blanks": 10,
+  "contentTokens": 53,
+  "levels": {
+   "1": 23,
+   "2": 13,
+   "3": 3,
+   "4": 9,
+   "5": 2,
+   "6": 3
+  },
+  "offList": 0,
+  "readLoad": 11.5,
+  "rlBand": 0,
+  "sentLen": 13.9,
+  "vcBand": 2,
+  "words": 115,
+  "year": "83年"
+ },
+ "84_1": {
+  "advPct": 2.8,
+  "blanks": 10,
+  "contentTokens": 109,
+  "levels": {
+   "1": 60,
+   "2": 26,
+   "3": 5,
+   "4": 10,
+   "5": 2,
+   "6": 1
+  },
+  "offList": 5,
+  "readLoad": 19.6,
+  "rlBand": 0,
+  "sentLen": 12.9,
+  "vcBand": 0,
+  "words": 196,
+  "year": "84年"
+ },
+ "84_2": {
+  "advPct": 4.3,
+  "blanks": 10,
+  "contentTokens": 92,
+  "levels": {
+   "1": 58,
+   "2": 16,
+   "3": 9,
+   "4": 3,
+   "5": 3,
+   "6": 1
+  },
+  "offList": 2,
+  "readLoad": 18.0,
+  "rlBand": 0,
+  "sentLen": 14.6,
+  "vcBand": 1,
+  "words": 180,
+  "year": "84年"
+ },
+ "85_1": {
+  "advPct": 2.3,
+  "blanks": 10,
+  "contentTokens": 44,
+  "levels": {
+   "1": 25,
+   "2": 9,
+   "3": 4,
+   "4": 2,
+   "5": 1,
+   "6": 0
+  },
+  "offList": 3,
+  "readLoad": 12.3,
+  "rlBand": 0,
+  "sentLen": 16.6,
+  "vcBand": 0,
+  "words": 123,
+  "year": "85年"
+ },
+ "85_2": {
+  "advPct": 4.4,
+  "blanks": 10,
+  "contentTokens": 45,
+  "levels": {
+   "1": 15,
+   "2": 20,
+   "3": 4,
+   "4": 4,
+   "5": 0,
+   "6": 2
+  },
+  "offList": 0,
+  "readLoad": 8.5,
+  "rlBand": 0,
+  "sentLen": 10.6,
+  "vcBand": 1,
+  "words": 85,
+  "year": "85年"
+ },
+ "86_1": {
+  "advPct": 0.0,
+  "blanks": 5,
+  "contentTokens": 46,
+  "levels": {
+   "1": 39,
+   "2": 5,
+   "3": 2,
+   "4": 0,
+   "5": 0,
+   "6": 0
+  },
+  "offList": 0,
+  "readLoad": 21.4,
+  "rlBand": 0,
+  "sentLen": 18.7,
+  "vcBand": 0,
+  "words": 107,
+  "year": "86年"
+ },
+ "86_2": {
+  "advPct": 1.8,
+  "blanks": 5,
+  "contentTokens": 56,
+  "levels": {
+   "1": 40,
+   "2": 11,
+   "3": 4,
+   "4": 0,
+   "5": 0,
+   "6": 1
+  },
+  "offList": 0,
+  "readLoad": 32.2,
+  "rlBand": 1,
+  "sentLen": 11.1,
+  "vcBand": 0,
+  "words": 161,
+  "year": "86年"
+ },
+ "86_3": {
+  "advPct": 0.0,
+  "blanks": 10,
+  "contentTokens": 85,
+  "levels": {
+   "1": 60,
+   "2": 16,
+   "3": 4,
+   "4": 5,
+   "5": 0,
+   "6": 0
+  },
+  "offList": 0,
+  "readLoad": 20.9,
+  "rlBand": 0,
+  "sentLen": 14.6,
+  "vcBand": 0,
+  "words": 209,
+  "year": "86年"
+ },
+ "87_1": {
+  "advPct": 0.0,
+  "blanks": 10,
+  "contentTokens": 79,
+  "levels": {
+   "1": 65,
+   "2": 4,
+   "3": 9,
+   "4": 0,
+   "5": 0,
+   "6": 0
+  },
+  "offList": 1,
+  "readLoad": 21.8,
+  "rlBand": 0,
+  "sentLen": 12.0,
+  "vcBand": 0,
+  "words": 218,
+  "year": "87年"
+ },
+ "87_2": {
+  "advPct": 2.8,
+  "blanks": 10,
+  "contentTokens": 72,
+  "levels": {
+   "1": 36,
+   "2": 15,
+   "3": 12,
+   "4": 4,
+   "5": 2,
+   "6": 0
+  },
+  "offList": 3,
+  "readLoad": 16.0,
+  "rlBand": 0,
+  "sentLen": 21.2,
+  "vcBand": 0,
+  "words": 160,
+  "year": "87年"
+ },
+ "88_1": {
+  "advPct": 4.8,
+  "blanks": 5,
+  "contentTokens": 42,
+  "levels": {
+   "1": 30,
+   "2": 4,
+   "3": 2,
+   "4": 3,
+   "5": 2,
+   "6": 0
+  },
+  "offList": 1,
+  "readLoad": 24.6,
+  "rlBand": 0,
+  "sentLen": 6.6,
+  "vcBand": 1,
+  "words": 123,
+  "year": "88年"
+ },
+ "88_2": {
+  "advPct": 1.7,
+  "blanks": 10,
+  "contentTokens": 58,
+  "levels": {
+   "1": 34,
+   "2": 15,
+   "3": 3,
+   "4": 4,
+   "5": 0,
+   "6": 1
+  },
+  "offList": 1,
+  "readLoad": 14.1,
+  "rlBand": 0,
+  "sentLen": 13.7,
+  "vcBand": 0,
+  "words": 141,
+  "year": "88年"
+ },
+ "88_3": {
+  "advPct": 1.4,
+  "blanks": 10,
+  "contentTokens": 70,
+  "levels": {
+   "1": 56,
+   "2": 9,
+   "3": 2,
+   "4": 1,
+   "5": 1,
+   "6": 0
+  },
+  "offList": 1,
+  "readLoad": 20.9,
+  "rlBand": 0,
+  "sentLen": 11.5,
+  "vcBand": 0,
+  "words": 209,
+  "year": "88年"
+ },
+ "89_1": {
+  "advPct": 0.0,
+  "blanks": 5,
+  "contentTokens": 38,
+  "levels": {
+   "1": 30,
+   "2": 3,
+   "3": 2,
+   "4": 3,
+   "5": 0,
+   "6": 0
+  },
+  "offList": 0,
+  "readLoad": 25.0,
+  "rlBand": 0,
+  "sentLen": 6.7,
+  "vcBand": 0,
+  "words": 125,
+  "year": "89年"
+ },
+ "89_2": {
+  "advPct": 4.3,
+  "blanks": 10,
+  "contentTokens": 92,
+  "levels": {
+   "1": 59,
+   "2": 20,
+   "3": 3,
+   "4": 6,
+   "5": 4,
+   "6": 0
+  },
+  "offList": 0,
+  "readLoad": 20.3,
+  "rlBand": 0,
+  "sentLen": 15.2,
+  "vcBand": 1,
+  "words": 203,
+  "year": "89年"
+ },
+ "89_3": {
+  "advPct": 0.0,
+  "blanks": 5,
+  "contentTokens": 29,
+  "levels": {
+   "1": 24,
+   "2": 3,
+   "3": 2,
+   "4": 0,
+   "5": 0,
+   "6": 0
+  },
+  "offList": 0,
+  "readLoad": 21.2,
+  "rlBand": 0,
+  "sentLen": 7.3,
+  "vcBand": 0,
+  "words": 106,
+  "year": "89年"
+ },
+ "89_4": {
+  "advPct": 0.0,
+  "blanks": 5,
+  "contentTokens": 80,
+  "levels": {
+   "1": 57,
+   "2": 8,
+   "3": 11,
+   "4": 3,
+   "5": 0,
+   "6": 0
+  },
+  "offList": 1,
+  "readLoad": 37.8,
+  "rlBand": 2,
+  "sentLen": 13.9,
+  "vcBand": 0,
+  "words": 189,
+  "year": "89年"
+ },
+ "90_1": {
+  "advPct": 2.8,
+  "blanks": 10,
+  "contentTokens": 72,
+  "levels": {
+   "1": 48,
+   "2": 11,
+   "3": 6,
+   "4": 2,
+   "5": 1,
+   "6": 1
+  },
+  "offList": 3,
+  "readLoad": 17.4,
+  "rlBand": 0,
+  "sentLen": 16.7,
+  "vcBand": 0,
+  "words": 174,
+  "year": "90年"
+ },
+ "91_1": {
+  "advPct": 7.7,
+  "blanks": 10,
+  "contentTokens": 91,
+  "levels": {
+   "1": 52,
+   "2": 21,
+   "3": 6,
+   "4": 5,
+   "5": 4,
+   "6": 3
+  },
+  "offList": 0,
+  "readLoad": 20.2,
+  "rlBand": 0,
+  "sentLen": 16.3,
+  "vcBand": 2,
+  "words": 202,
+  "year": "91年"
+ },
+ "91補考_1": {
+  "advPct": 0.0,
+  "blanks": 10,
+  "contentTokens": 73,
+  "levels": {
+   "1": 30,
+   "2": 31,
+   "3": 4,
+   "4": 7,
+   "5": 0,
+   "6": 0
+  },
+  "offList": 1,
+  "readLoad": 17.4,
+  "rlBand": 0,
+  "sentLen": 16.7,
+  "vcBand": 0,
+  "words": 174,
+  "year": "91年補考"
+ },
+ "92_1": {
+  "advPct": 14.5,
+  "blanks": 5,
+  "contentTokens": 55,
+  "levels": {
+   "1": 24,
+   "2": 15,
+   "3": 4,
+   "4": 4,
+   "5": 5,
+   "6": 3
+  },
+  "offList": 0,
+  "readLoad": 25.6,
+  "rlBand": 1,
+  "sentLen": 16.6,
+  "vcBand": 2,
+  "words": 128,
+  "year": "92年"
+ },
+ "92_2": {
+  "advPct": 5.0,
+  "blanks": 5,
+  "contentTokens": 40,
+  "levels": {
+   "1": 25,
+   "2": 6,
+   "3": 3,
+   "4": 3,
+   "5": 2,
+   "6": 0
+  },
+  "offList": 1,
+  "readLoad": 21.4,
+  "rlBand": 0,
+  "sentLen": 12.4,
+  "vcBand": 1,
+  "words": 107,
+  "year": "92年"
+ },
+ "92補考_1": {
+  "advPct": 3.0,
+  "blanks": 5,
+  "contentTokens": 67,
+  "levels": {
+   "1": 50,
+   "2": 6,
+   "3": 5,
+   "4": 3,
+   "5": 1,
+   "6": 1
+  },
+  "offList": 1,
+  "readLoad": 29.0,
+  "rlBand": 1,
+  "sentLen": 18.8,
+  "vcBand": 0,
+  "words": 145,
+  "year": "92年補考"
+ },
+ "92補考_2": {
+  "advPct": 4.1,
+  "blanks": 5,
+  "contentTokens": 73,
+  "levels": {
+   "1": 43,
+   "2": 6,
+   "3": 12,
+   "4": 6,
+   "5": 3,
+   "6": 0
+  },
+  "offList": 3,
+  "readLoad": 30.4,
+  "rlBand": 1,
+  "sentLen": 14.3,
+  "vcBand": 1,
+  "words": 152,
+  "year": "92年補考"
+ },
+ "93_1": {
+  "advPct": 5.3,
+  "blanks": 5,
+  "contentTokens": 57,
+  "levels": {
+   "1": 26,
+   "2": 16,
+   "3": 1,
+   "4": 8,
+   "5": 1,
+   "6": 2
+  },
+  "offList": 3,
+  "readLoad": 25.2,
+  "rlBand": 0,
+  "sentLen": 14.6,
+  "vcBand": 1,
+  "words": 126,
+  "year": "93年"
+ },
+ "93_2": {
+  "advPct": 11.9,
+  "blanks": 5,
+  "contentTokens": 42,
+  "levels": {
+   "1": 20,
+   "2": 7,
+   "3": 4,
+   "4": 4,
+   "5": 5,
+   "6": 0
+  },
+  "offList": 2,
+  "readLoad": 22.8,
+  "rlBand": 0,
+  "sentLen": 14.9,
+  "vcBand": 2,
+  "words": 114,
+  "year": "93年"
+ },
+ "93_3": {
+  "advPct": 5.5,
+  "blanks": 5,
+  "contentTokens": 55,
+  "levels": {
+   "1": 21,
+   "2": 15,
+   "3": 10,
+   "4": 5,
+   "5": 1,
+   "6": 2
+  },
+  "offList": 1,
+  "readLoad": 17.2,
+  "rlBand": 0,
+  "sentLen": 11.4,
+  "vcBand": 1,
+  "words": 86,
+  "year": "93年"
+ },
+ "94_1": {
+  "advPct": 1.6,
+  "blanks": 5,
+  "contentTokens": 63,
+  "levels": {
+   "1": 30,
+   "2": 14,
+   "3": 6,
+   "4": 11,
+   "5": 0,
+   "6": 1
+  },
+  "offList": 1,
+  "readLoad": 30.2,
+  "rlBand": 1,
+  "sentLen": 19.5,
+  "vcBand": 0,
+  "words": 151,
+  "year": "94年"
+ },
+ "94_2": {
+  "advPct": 8.6,
+  "blanks": 5,
+  "contentTokens": 70,
+  "levels": {
+   "1": 40,
+   "2": 12,
+   "3": 9,
+   "4": 3,
+   "5": 4,
+   "6": 2
+  },
+  "offList": 0,
+  "readLoad": 30.0,
+  "rlBand": 1,
+  "sentLen": 17.2,
+  "vcBand": 2,
+  "words": 150,
+  "year": "94年"
+ },
+ "94_3": {
+  "advPct": 1.9,
+  "blanks": 5,
+  "contentTokens": 54,
+  "levels": {
+   "1": 35,
+   "2": 14,
+   "3": 2,
+   "4": 0,
+   "5": 1,
+   "6": 0
+  },
+  "offList": 2,
+  "readLoad": 23.2,
+  "rlBand": 0,
+  "sentLen": 15.1,
+  "vcBand": 0,
+  "words": 116,
+  "year": "94年"
+ },
+ "95_1": {
+  "advPct": 0.0,
+  "blanks": 5,
+  "contentTokens": 69,
+  "levels": {
+   "1": 56,
+   "2": 10,
+   "3": 3,
+   "4": 0,
+   "5": 0,
+   "6": 0
+  },
+  "offList": 0,
+  "readLoad": 40.0,
+  "rlBand": 2,
+  "sentLen": 16.9,
+  "vcBand": 0,
+  "words": 200,
+  "year": "95年"
+ },
+ "95_2": {
+  "advPct": 2.4,
+  "blanks": 5,
+  "contentTokens": 41,
+  "levels": {
+   "1": 19,
+   "2": 14,
+   "3": 5,
+   "4": 2,
+   "5": 1,
+   "6": 0
+  },
+  "offList": 0,
+  "readLoad": 20.6,
+  "rlBand": 0,
+  "sentLen": 21.6,
+  "vcBand": 0,
+  "words": 103,
+  "year": "95年"
+ },
+ "95_3": {
+  "advPct": 4.0,
+  "blanks": 5,
+  "contentTokens": 75,
+  "levels": {
+   "1": 40,
+   "2": 19,
+   "3": 5,
+   "4": 8,
+   "5": 2,
+   "6": 1
+  },
+  "offList": 0,
+  "readLoad": 26.4,
+  "rlBand": 1,
+  "sentLen": 17.1,
+  "vcBand": 1,
+  "words": 132,
+  "year": "95年"
+ },
+ "96_1": {
+  "advPct": 2.5,
+  "blanks": 5,
+  "contentTokens": 79,
+  "levels": {
+   "1": 51,
+   "2": 10,
+   "3": 10,
+   "4": 3,
+   "5": 2,
+   "6": 0
+  },
+  "offList": 3,
+  "readLoad": 32.6,
+  "rlBand": 2,
+  "sentLen": 14.0,
+  "vcBand": 0,
+  "words": 163,
+  "year": "96年"
+ },
+ "96_2": {
+  "advPct": 5.6,
+  "blanks": 5,
+  "contentTokens": 54,
+  "levels": {
+   "1": 26,
+   "2": 13,
+   "3": 5,
+   "4": 5,
+   "5": 2,
+   "6": 1
+  },
+  "offList": 2,
+  "readLoad": 25.2,
+  "rlBand": 0,
+  "sentLen": 13.1,
+  "vcBand": 1,
+  "words": 126,
+  "year": "96年"
+ },
+ "96_3": {
+  "advPct": 4.5,
+  "blanks": 5,
+  "contentTokens": 66,
+  "levels": {
+   "1": 32,
+   "2": 18,
+   "3": 5,
+   "4": 7,
+   "5": 1,
+   "6": 2
+  },
+  "offList": 1,
+  "readLoad": 28.6,
+  "rlBand": 1,
+  "sentLen": 21.1,
+  "vcBand": 1,
+  "words": 143,
+  "year": "96年"
+ },
+ "97_1": {
+  "advPct": 5.6,
+  "blanks": 5,
+  "contentTokens": 71,
+  "levels": {
+   "1": 41,
+   "2": 14,
+   "3": 4,
+   "4": 4,
+   "5": 3,
+   "6": 1
+  },
+  "offList": 4,
+  "readLoad": 26.8,
+  "rlBand": 1,
+  "sentLen": 12.6,
+  "vcBand": 1,
+  "words": 134,
+  "year": "97年"
+ },
+ "97_2": {
+  "advPct": 1.6,
+  "blanks": 5,
+  "contentTokens": 61,
+  "levels": {
+   "1": 39,
+   "2": 13,
+   "3": 7,
+   "4": 1,
+   "5": 0,
+   "6": 1
+  },
+  "offList": 0,
+  "readLoad": 28.0,
+  "rlBand": 1,
+  "sentLen": 13.2,
+  "vcBand": 0,
+  "words": 140,
+  "year": "97年"
+ },
+ "97_3": {
+  "advPct": 7.0,
+  "blanks": 5,
+  "contentTokens": 43,
+  "levels": {
+   "1": 24,
+   "2": 10,
+   "3": 2,
+   "4": 4,
+   "5": 2,
+   "6": 1
+  },
+  "offList": 0,
+  "readLoad": 23.0,
+  "rlBand": 0,
+  "sentLen": 15.0,
+  "vcBand": 2,
+  "words": 115,
+  "year": "97年"
+ },
+ "98_1": {
+  "advPct": 5.8,
+  "blanks": 5,
+  "contentTokens": 52,
+  "levels": {
+   "1": 31,
+   "2": 13,
+   "3": 2,
+   "4": 2,
+   "5": 1,
+   "6": 2
+  },
+  "offList": 1,
+  "readLoad": 26.8,
+  "rlBand": 1,
+  "sentLen": 15.4,
+  "vcBand": 1,
+  "words": 134,
+  "year": "98年"
+ },
+ "98_2": {
+  "advPct": 0.0,
+  "blanks": 5,
+  "contentTokens": 43,
+  "levels": {
+   "1": 21,
+   "2": 10,
+   "3": 8,
+   "4": 3,
+   "5": 0,
+   "6": 0
+  },
+  "offList": 1,
+  "readLoad": 23.6,
+  "rlBand": 0,
+  "sentLen": 15.4,
+  "vcBand": 0,
+  "words": 118,
+  "year": "98年"
+ },
+ "98_3": {
+  "advPct": 3.9,
+  "blanks": 5,
+  "contentTokens": 51,
+  "levels": {
+   "1": 26,
+   "2": 8,
+   "3": 7,
+   "4": 7,
+   "5": 2,
+   "6": 0
+  },
+  "offList": 1,
+  "readLoad": 32.0,
+  "rlBand": 1,
+  "sentLen": 15.0,
+  "vcBand": 1,
+  "words": 160,
+  "year": "98年"
+ },
+ "99_1": {
+  "advPct": 5.5,
+  "blanks": 5,
+  "contentTokens": 73,
+  "levels": {
+   "1": 41,
+   "2": 17,
+   "3": 6,
+   "4": 3,
+   "5": 3,
+   "6": 1
+  },
+  "offList": 2,
+  "readLoad": 32.2,
+  "rlBand": 1,
+  "sentLen": 18.4,
+  "vcBand": 1,
+  "words": 161,
+  "year": "99年"
+ },
+ "99_2": {
+  "advPct": 10.0,
+  "blanks": 5,
+  "contentTokens": 70,
+  "levels": {
+   "1": 34,
+   "2": 9,
+   "3": 12,
+   "4": 7,
+   "5": 7,
+   "6": 0
+  },
+  "offList": 1,
+  "readLoad": 26.4,
+  "rlBand": 1,
+  "sentLen": 13.7,
+  "vcBand": 2,
+  "words": 132,
+  "year": "99年"
+ },
+ "99_3": {
+  "advPct": 7.1,
+  "blanks": 5,
+  "contentTokens": 98,
+  "levels": {
+   "1": 44,
+   "2": 12,
+   "3": 18,
+   "4": 14,
+   "5": 5,
+   "6": 2
+  },
+  "offList": 3,
+  "readLoad": 38.4,
+  "rlBand": 2,
+  "sentLen": 16.4,
+  "vcBand": 2,
+  "words": 192,
+  "year": "99年"
+ },
+ "99課綱學測參考用試卷_1": {
+  "advPct": 2.7,
+  "blanks": 5,
+  "contentTokens": 75,
+  "levels": {
+   "1": 29,
+   "2": 16,
+   "3": 5,
+   "4": 21,
+   "5": 1,
+   "6": 1
+  },
+  "offList": 2,
+  "readLoad": 29.4,
+  "rlBand": 1,
+  "sentLen": 16.9,
+  "vcBand": 0,
+  "words": 147,
+  "year": "99課綱學測參考用試卷"
+ },
+ "99課綱學測參考用試卷_2": {
+  "advPct": 2.0,
+  "blanks": 5,
+  "contentTokens": 102,
+  "levels": {
+   "1": 82,
+   "2": 14,
+   "3": 2,
+   "4": 2,
+   "5": 2,
+   "6": 0
+  },
+  "offList": 0,
+  "readLoad": 41.4,
+  "rlBand": 2,
+  "sentLen": 17.7,
+  "vcBand": 0,
+  "words": 207,
+  "year": "99課綱學測參考用試卷"
+ },
+ "99課綱學測參考用試卷_3": {
+  "advPct": 10.1,
+  "blanks": 5,
+  "contentTokens": 69,
+  "levels": {
+   "1": 32,
+   "2": 21,
+   "3": 5,
+   "4": 4,
+   "5": 2,
+   "6": 5
+  },
+  "offList": 0,
+  "readLoad": 29.2,
+  "rlBand": 1,
+  "sentLen": 13.7,
+  "vcBand": 2,
+  "words": 146,
+  "year": "99課綱學測參考用試卷"
+ },
+ "學測參考卷_1": {
+  "advPct": 2.7,
+  "blanks": 5,
+  "contentTokens": 74,
+  "levels": {
+   "1": 37,
+   "2": 12,
+   "3": 6,
+   "4": 9,
+   "5": 1,
+   "6": 1
+  },
+  "offList": 8,
+  "readLoad": 28.0,
+  "rlBand": 1,
+  "sentLen": 18.1,
+  "vcBand": 0,
+  "words": 140,
+  "year": ""
+ },
+ "學測參考卷_2": {
+  "advPct": 8.2,
+  "blanks": 5,
+  "contentTokens": 73,
+  "levels": {
+   "1": 34,
+   "2": 15,
+   "3": 11,
+   "4": 6,
+   "5": 2,
+   "6": 4
+  },
+  "offList": 1,
+  "readLoad": 31.6,
+  "rlBand": 1,
+  "sentLen": 18.1,
+  "vcBand": 2,
+  "words": 158,
+  "year": ""
+ },
+ "學測參考卷_3": {
+  "advPct": 9.5,
+  "blanks": 5,
+  "contentTokens": 63,
+  "levels": {
+   "1": 36,
+   "2": 10,
+   "3": 5,
+   "4": 5,
+   "5": 2,
+   "6": 4
+  },
+  "offList": 1,
+  "readLoad": 25.4,
+  "rlBand": 0,
+  "sentLen": 16.5,
+  "vcBand": 2,
+  "words": 127,
+  "year": ""
+ }
+}

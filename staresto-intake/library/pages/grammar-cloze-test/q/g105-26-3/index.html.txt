@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g105-26-3/index.html
+Author: staresto-create ZZSH
+Title: 105 年學測克漏字第26題詳解（句型結構）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 105 年學測 ／ 第26題
+105 年學測 克漏字 第26題
+句型結構線索：句內答對率 46%
+答對率 46%：當年每 100 位考生，有 46 位答對。
+Trade is driven by different production costs in different countries, making 26 cheaper for some countries to import goods rather than make them.
+(A)them
+(B)such
+(C)what
+(D)it
+答案：(D) it
+題目編號：G105_26_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+虛受詞 it，代替後面的真正受詞 to import goods（使進口貨物變得更便宜這件事）；them（不是指代特定的複數名詞）、such、what 都不合。
+深入解析
+你可能會這樣想
+你熟的是「虛主詞 it」：It is cheaper to import goods than to make them.（進口貨物比自己生產便宜。）這個句型你一定見過。但本題的 it 出現在 making 後面，位置是受詞不是主詞，就不會聯想到「虛主詞」 — 答對率只有四成六。
+怎麼判斷
+這是一句分詞構句，先還原成完整子句，還原完就通了。原句尾巴是 …, making {26} cheaper for some countries to import goods rather than make them，還原成 …, and this makes it cheaper for some countries to import goods rather than make them.（……而這使得某些國家進口貨物比自己生產便宜。）接著把 it 代表的內容放回原位試試看：makes to import goods cheaper for some countries — 動詞 make 後面卡著一長串不定詞當受詞，英文不接受這種頭重腳輕的排法，所以先擺一個 it 把受詞的位子占住，真正的內容 to import goods 移到句尾。劍橋 English Grammar Today 在「It」條把這種 it 稱為「空的（empty）受詞」，並說明它的功能是「預示（anticipate）」後面真正的主詞或受詞；台灣教學圈習慣叫「虛主詞、虛受詞」，講的是同一件事。這個句型請整組記起來：make、find、think、consider + it + 形容詞 + to V，例 I find it difficult to talk to her.（我覺得跟她講話很吃力。）跟本題結構一模一樣。至於為什麼連高分群考生也會在這一格失手（本題鑑別度偏低，D 值 31）：難處不在英文，而在「看不見」。逗號後面是分詞構句，主詞被省略；讀到 making 之前，你已經先消化了 Trade is driven by different production costs in different countries 這一長串經濟概念，注意力全花在讀懂內容上，很容易把 making it cheaper 整團當成語感滑過去，沒有停下來問一句「這個 it 指的是誰」。答錯的人多半不是不懂虛受詞，而是根本沒察覺這裡在考虛受詞。看到分詞構句就先還原成完整子句，用意正是逼自己把每個成分看清楚。
+誘答選項
+them 是代名詞，必須有明確的複數先行詞；句中最近的複數名詞是 countries 和 costs，代進去都講不通（而且句尾的 them 已經另有所指，指的是 goods）。such 不能單獨擺在這個位置當受詞。what 是關係詞或疑問詞，會帶出一整個子句，但後面的 cheaper for some countries to import goods 不是 what 帶得動的結構。
+常考字詞與句型
+make it + 形容詞 + to V（使做某事變得如何）、find it difficult to V（覺得做……很困難）、think it necessary to V（認為有必要做……）、rather than（而不是）、be driven by（受……驅動、由……推動）、production costs（生產成本）、a comparative advantage（比較利益）。其中 rather than 這一組考過 9 個年度，83 年第 30 題 →、88 年第 23 題 →、94 年第 25 題 →、98 年第 27 題 →、99 年第 20 題 →、103 年第 27 題 →、107 年第 16 題 →、107 年第 28 題 →、110 年試辦考試第 13 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+International trade is the exchange of goods and services between countries. Trade is driven by different production costs in different countries, making 26 cheaper for some countries to import goods rather than make them. A country is said to have a comparative advantage over another when it can produce a commodity more cheaply. This comparative advantage is 27 by key factors of production such as land, capital, and labor.
+While international trade has long been conducted in history, its economic, social, and political importance has been 28 in recent centuries. During the 1990s, international trade grew by nearly 8.6% each year. In the year 1990 alone, the growth in trade in services was as high as 19%. Today, all countries are involved in, and to varying degrees dependent on, trade with other countries.
+29 international trade, nations would be limited to the goods and services produced within their own borders. Trade is certainly a main 30 force for globalization. It is also the subject of many international agreements that aim to govern and facilitate international trade, such as those negotiated through the World Trade Organization (WTO).
+中譯：國際貿易是國與國之間商品與服務的交換。由於各國生產成本不同，貿易因此產生，這使得某些國家從國外進口商品，比自行生產更為划算。當一個國家能以更低成本生產某項商品時，就被稱為對其他國家擁有「比較利益」。這種比較利益取決於土地、資本、勞力等關鍵生產要素。雖然國際貿易早已存在於歷史之中，但其經濟、社會與政治上的重要性在近幾個世紀大幅提升。1990 年代，國際貿易每年成長近 8.6%，光是 1990 年，服務貿易的成長率就高達 19%。如今，世界各國都不同程度地參與並依賴與他國的貿易往來。若沒有國際貿易，各國就只能使用自己國境內生產的商品與服務。貿易無疑是推動全球化的一股主要力量，也是許多旨在規範與促進國際貿易的國際協議的核心議題，例如透過世界貿易組織（WTO）所談判達成的各項協定。
+📋 內容大意
+International trade relies on comparative advantage and cost differences among countries for producing goods and services.
+The economic and political significance of global trade has grown rapidly in modern history, creating widespread global interdependence.
+International trade drives globalization and is governed by key international agreements and organizations.
+← 第25題回到105 年學測第27題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

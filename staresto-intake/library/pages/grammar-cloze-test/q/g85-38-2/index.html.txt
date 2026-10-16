@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g85-38-2/index.html
+Author: staresto-create ZZSH
+Title: 85 年學測克漏字第38題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 85 年學測 ／ 第38題
+85 年學測 克漏字 第38題
+字彙選義線索：句內
+Human beings, too, 37 special devices to protect 38 .
+(A)himself
+(B)itself
+(C)themselves
+(D)yourselves
+答案：(C) themselves
+題目編號：G85_38_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+themselves 反身代名詞對應前面複數主詞 Human beings；himself（單數陽性）、itself（單數）、yourselves（第二人稱）都不匹配主詞。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是反身代名詞，長得都很像，如果沒回頭確認主詞是誰、是單數還是複數，很容易隨手挑一個。這一格只要找到主詞就結束了。
+怎麼判斷
+四個選項都是反身代名詞，可見這一格考的是它要跟哪一個主詞對應。先找主詞：Human beings, too, {37} special devices to protect ___。主詞是 Human beings（人類），是第三人稱複數，所以反身代名詞要用 themselves。反身代名詞的規則很單純：跟主詞的人稱與單複數對齊——I 配 myself、you 配 yourself／yourselves、he 配 himself、she 配 herself、it 配 itself、we 配 ourselves、they 配 themselves。再用語意驗算：那些特殊的裝置是用來保護人類自己的，保護的對象與主詞是同一群人，所以才用反身代名詞而不是 them。
+誘答選項
+himself：第三人稱單數陽性，與複數主詞對不上。itself：單數，而且指的是事物，人類是複數也是人。yourselves：第二人稱，但這一句講的是「人類」這個第三人稱的群體，不是在對讀者說話。
+常考字詞與句型
+protect oneself（保護自己）、help oneself（自行取用）、by oneself（獨自）、enjoy oneself（玩得愉快）、teach oneself（自學）、special devices（特殊的裝置）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+All forms of life have an instinctive urge to survive. Nature provides 31 with the means of survival. We have learned much about survival from 32 forms of animal life.
+Lizards, 33 can change the color of their skin and 34 the trees and leaves around them. 35 , they cannot be detected by other animals that threaten them. Nature provides other forms of protection 36 environmental dangers.
+Human beings, too, 37 special devices to protect 38 . Their skin is very 39 to temperature changes. 40 warm weather, sweating helps humans regulate their body temperature.
+中譯：所有生物都有求生的本能。大自然賦予生物求生的方法。我們從低等動物身上學到很多關於生存的知識。例如蜥蜴，牠們能改變皮膚顏色，融入周遭的樹木和樹葉，因此不會被威脅牠們的其他動物發現。大自然也提供其他形式的保護，讓生物免受環境危害。人類也有特殊的機制來保護自己。人類的皮膚對溫度變化非常敏感，在溫暖的天氣裡，流汗能幫助人類調節體溫。
+📋 內容大意
+Every living thing wants to survive, and nature gives each species ways to stay alive.
+A lizard can change skin color to match nearby trees and leaves, so predators cannot see the lizard.
+Human skin also feels temperature changes, and sweating helps cool the body.
+← 第37題回到85 年學測第39題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

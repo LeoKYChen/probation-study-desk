@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z106-16/index.html
+Author: staresto-create ZZSH
+Title: 106 年指考克漏字第16題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 106 年指考 ／ 第16題
+106 年指考 克漏字 第16題
+字彙選義線索：跨句答對率 51%
+答對率 51%：當年每 100 位考生，有 51 位答對。
+Imagine the infinite amount of reactions that a large organism such as human carries out every single day. 16 of these reactions are possible without enzymes.
+(A)Any
+(B)All
+(C)None
+(D)More
+答案：(C) None
+題目編號：Z106_16（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【字彙】None of these reactions are possible without enzymes，表示「這些反應『沒有一個』能在沒有酵素的情況下發生」，強調酵素的必要性。Any／All／More 語意都與後文強調酵素不可或缺的邏輯不符。
+深入解析
+你可能會這樣想
+前一句剛說每天要進行的反應多到數不清（the infinite amount of reactions），你的眼睛還停在「好多」這個印象上，看到 All 會覺得順理成章。四個選項 Any、All、None、More 都是數量詞，後面都接得了 of these reactions，文法上一個也刷不掉。
+怎麼判斷
+四個選項都是數量詞加 of，可見這一格考的不是形態，而是這一句到底在說多還是說少。定案的字是句尾的 without enzymes（在沒有酵素的情況下）。全篇的主軸是酵素不可或缺，所以這一句要說的是：沒有酵素，這些反應一個也不可能發生，也就是 None of these reactions are possible without enzymes。還原成完整的條件句驗算：If there were no enzymes, none of these reactions would be possible.（如果沒有酵素，這些反應沒有一個能發生。）再往下讀一句，Enzymes consist of various types of proteins that work to drive the chemical reactions，正是在解釋酵素怎麼推動反應，方向完全一致。答對率約五成，鑑別度 58，分的就是有沒有把 without 讀進去：只讀到前半句「無限多的反應」就停下來的人，會往數量很多的方向填。
+誘答選項
+All 讀起來是「沒有酵素這些反應全都能發生」，與下一句以及整篇的主軸正好相反。Any 在肯定句裡是「任何一個都」，方向與 All 相同；它要表達「一個也沒有」必須有 not 搭配，這就是 not … any 等於 no 的用法，把 not 拿掉就換不出否定的意思。More 是比較級，句中既沒有 than，也沒有拿來比的對象，而且「更多的反應」講的是數量增減，與「可不可能發生」是兩回事。
+常考字詞與句型
+none of + 複數名詞（…之中沒有一個）、not … any ＝ none（沒有任何一個）、carry out a reaction（進行反應）、an infinite amount of（多到數不清的）、separate A from B（使 A 有別於 B）、every single day（每一天，single 用來加強語氣）。
+線索範圍說明：None 承接全篇主軸：下一句起說明酵素如何啟動、加快反應，可見這些反應少不了酵素
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：106學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+One factor that separates a living thing from an inanimate object is the organism's ability to carry out chemical reactions that are crucial for its survival. Imagine the infinite amount of reactions that a large organism such as human carries out every single day. 16 of these reactions are possible without enzymes.
+Enzymes consist of various types of proteins that work to drive the chemical reactions 17 for certain types of nutrients to take effect. Enzymes can either launch a reaction or speed it up. In the absence of enzymes, reactants may take hundreds of years to convert into a usable product, if they are able to do so 18 . This is why enzymes are crucial in the sustenance of life on earth.
+Enzymes, 19 , do not always function perfectly. In 1902 Sir Archibald Garrod was the first to attribute a 20 to an enzyme defect, which he later referred to as an "inborn error of metabolism." Today, newborns are routinely screened for certain enzyme defects such as PKU (phenylketonuria) and galactosemia, an error in the handling of the sugar galactose.
+中譯：使生物體有別於無生命物體的其中一項因素，在於該生物體能夠進行維持其生存所必需的化學反應。試想像人類這樣的大型生物體，每天要進行的反應數量是多麼龐大。在沒有酵素的情況下，這些反應沒有一個能夠發生。酵素由多種蛋白質組成，其作用是推動某些營養素發揮效用所需的化學反應。酵素能夠啟動反應，也能加快反應速度。若缺乏酵素，反應物即使終究能夠轉化為可用的產物，也可能需要耗費數百年的時間。這正是酵素之所以對維持地球生命至關重要的原因。然而，酵素並不是每次都能完美運作。1902 年，阿奇博爾德．加羅德爵士首度將某種疾病歸因於酵素缺陷，他後來將此稱為「先天性代謝異常」。如今，新生兒會例行接受特定酵素缺陷的篩檢，例如苯酮尿症（PKU）以及一種在處理半乳糖這種糖分時出現異常的半乳糖血症。
+📋 內容大意
+Living things survive by carrying out countless chemical reactions, and enzymes make every one of them possible.
+These proteins start reactions or hurry them along, work that would otherwise take centuries.
+Enzymes can fail; such defects have been recognized since 1902, and babies are now screened for them.
+回到106 年指考第17題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

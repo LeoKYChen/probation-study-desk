@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g102-23-2/index.html
+Author: staresto-create ZZSH
+Title: 102 年學測克漏字第23題詳解（連接詞／轉折詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 102 年學測 ／ 第23題
+102 年學測 克漏字 第23題
+連接詞／轉折詞線索：句內答對率 61%
+答對率 61%：當年每 100 位考生，有 61 位答對。
+Many thousand-year-old coins often sell for no more than a few dollars because there are a lot of them around, 23 a 1913 Liberty Head Nickel may sell for over one million US dollars because there are only five in existence.
+(A)since
+(B)while
+(C)whether
+(D)if
+答案：(B) while
+題目編號：G102_23_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意對比：「許多千年古幣只值幾塊錢……而 1913 年自由女神鎳幣卻可能賣到超過一百萬美元」，while 在這裡表示對比「然而/而」；since（自從/因為）、whether（是否）、if（如果）都不合。
+深入解析
+你可能會這樣想
+while 這個字，你的印象大概只有「當…的時候」。把「當…的時候」代進去，句子會變成「當 1913 年自由女神鎳幣可能賣超過一百萬美元時」，時間關係完全說不通，於是你回頭去挑 since 或 if。
+怎麼判斷
+while 當連接詞有三個常見用法，要靠上下文分辨（劍橋 English Grammar Today）：一是時間「當…的時候」，二是讓步「雖然」，三是本題的對比「而、然而」，用來把兩件相反或差距很大的事並排比較。本句兩邊的差距極大：一邊是千年古幣只賣幾塊錢（因為存世量大），一邊是 1913 年的鎳幣可以賣超過一百萬美元（因為只剩五枚）。金額從 a few dollars 到 over one million US dollars，數量從 a lot of them 到 only five，兩組數字擺明是拿來對照的。這正是對比用法的 while。判斷方法很簡單：看到 while，先問「兩邊是同時發生，還是拿來比較」。兩邊各有各的原因、各有各的結果，而且方向相反，就是對比。
+誘答選項
+since（自從、既然）：當「既然」用時表原因，但本句兩邊各自已經有 because 帶出自己的原因，再加一個表原因的連接詞會讓邏輯打結。whether（是否、不論是否）：引導名詞子句或讓步子句，本句不是在問是非，也不是「不論…」。if（如果）：表條件。1913 年鎳幣賣到百萬是既成事實，不是假設。
+常考字詞與句型
+no more than（只有、不過）、in existence（現存的）、sell for（以…價格售出）、once in a while（偶爾）、a while ago（不久前）、worth a fortune（價值連城）。其中 no more than 這一組考過 3 個年度，91 年補考第 25 題 →、95 年第 28 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+For coin collectors who invest money in coins, the value of a coin is determined by various factors. First, scarcity is a major determinant. 21 a coin is, the more it is worth. Note, however, that rarity has little to do with the 22 of a coin. Many thousand-year-old coins often sell for no more than a few dollars because there are a lot of them around, 23 a 1913 Liberty Head Nickel may sell for over one million US dollars because there are only five in existence.
+Furthermore, the demand for a particular coin will also 24 influence coin values. Some coins may command higher prices because they are more popular with collectors. For example, a 1798 dime is much rarer than a 1916 dime, but the 25 sells for significantly more, simply because many more people collect early 20th century dimes than dimes from the 1700s.
+中譯：對投資錢幣的錢幣收藏家來說，一枚錢幣的價值取決於多項因素。首先，稀有度是決定價值的主要因素之一：一枚錢幣越稀有，價值就越高。不過要注意的是，稀有度與錢幣的年代並沒有太大關係——許多上千年歷史的古錢幣，往往因為市面上數量眾多，售價不過幾塊美金；然而，一枚 1913 年的自由女神頭像鎳幣，卻可能因為全球只剩五枚，而以超過一百萬美元的價格售出。此外，特定錢幣的市場需求也會大大影響其價值——有些錢幣因為受到收藏家的青睞，因此能賣出更高的價格。舉例來說，一枚 1798 年的一角硬幣，其稀有程度遠高於 1916 年的一角硬幣，但後者的售價卻明顯高出許多，原因只在於：收藏 20 世紀初一角硬幣的人，遠比收藏 1700 年代硬幣的人來得多。
+📋 內容大意
+For collectors who invest, several things set a coin's value. Scarcity matters most: the harder a coin is to find, the more it is worth.
+Rarity has little to do with how old a coin is. Old coins are often cheap, but a 1913 Liberty Head Nickel can sell for over a million dollars.
+Demand also counts. A 1798 dime is much rarer than a 1916 dime, yet the 1916 costs far more because more people collect it.
+← 第22題回到102 年學測第24題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

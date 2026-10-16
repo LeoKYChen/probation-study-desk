@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z93-30/index.html
+Author: staresto-create ZZSH
+Title: 93 年指考克漏字第30題詳解（連接詞／轉折詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 93 年指考 ／ 第30題
+93 年指考 克漏字 第30題
+連接詞／轉折詞線索：跨句答對率 66%
+答對率 66%：當年每 100 位考生，有 66 位答對。
+When outbreaks become widespread within a country, control can be extremely difficult. 30, government authorities usually undertake aggressive emergency control measures as soon as an outbreak is detected.
+(A)Instead
+(B)Therefore
+(C)By no means
+(D)On the contrary
+答案：(B) Therefore
+題目編號：Z93_30（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+正因為疫情擴散後控制困難，「因此」政府通常會積極採取緊急防疫措施，Therefore 表順接因果。Instead（取而代之）、By no means（絕不）、On the contrary（相反地）都不符合這裡的因果邏輯。
+深入解析
+你可能會這樣想
+四個選項都是轉折詞，位置一樣、形態一樣，你會憑中文挑一個。
+怎麼判斷
+這是邏輯勾環，線索一定要跨句才看得到。前一句是 When outbreaks become widespread within a country, control can be extremely difficult（疫情一旦在國內擴散，就極難控制）。空格這一句是 government authorities usually undertake aggressive emergency control measures as soon as an outbreak is detected（政府當局通常一偵測到疫情就立刻採取強力的緊急防控措施）。既然擴散之後很難控制，就得趁還沒擴散時趕快動手——前面是原因、後面是因應的做法，方向相同，所以用 Therefore（因此）。填進去讀成 Therefore, government authorities usually undertake aggressive emergency control measures。
+誘答選項
+Instead（反而、改為）是副詞，自己單獨站著、後面接逗號，形態上完全放得進去，容易被順手選走；但它要求前面那件事是被否定或被放棄的，而這一句並沒有推翻前一句，是順著它往下走。順帶把最常混淆的兩個一次分清楚：instead 是副詞，自己單獨用（I didn't go; I stayed home instead.）；instead of 是介系詞，後面一定要接名詞、代名詞或 V-ing（instead of going out）。柯林斯的 English Usage 特別提醒不可以寫成 instead to do sth。By no means（絕不）是否定用語，放在句首時主要子句要倒裝，本句沒有倒裝；On the contrary（正好相反）要求後面推翻前面，方向不對。
+常考字詞與句型
+therefore（因此）、instead（反而、改為，副詞自己單獨用）、instead of（而不是）、by no means + 主要子句倒裝（絕不）、on the contrary（正好相反）、undertake measures（採取措施）。
+線索範圍說明：Therefore 承接前一句「疫情擴散後難以控制」的結果
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：93學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Avian influenza, or "bird flu," is a contagious disease caused by viruses that normally infect only birds and, less commonly, pigs. 26 all bird species are thought to be susceptible to infection, domestic poultry flocks are especially vulnerable to infections that can rapidly reach epidemic proportions.
+Outbreaks of avian influenza 27 be devastating for the poultry industry and for farmers. For example, an outbreak of avian influenza in the USA in 1983–1984 resulted in the destruction of more than 17 million birds 28 nearly US$ 65 million. Economic consequences are often most serious in developing countries 29 poultry raising is an important source of income, and of food, for impoverished rural farmers and their families.
+When outbreaks become widespread within a country, control can be extremely difficult. 30, government authorities usually undertake aggressive emergency control measures as soon as an outbreak is detected.
+中譯：禽流感，俗稱「鳥類流感」，是一種由病毒引起的傳染病，這類病毒通常只感染鳥類，較少感染豬隻。儘管所有鳥類都被認為可能受到感染，家禽尤其容易受到感染，且疫情可能迅速演變成大規模流行。禽流感爆發可能對家禽產業與農民造成毀滅性打擊。舉例來說，1983 年至 1984 年間，美國一次禽流感疫情導致超過 1,700 萬隻鳥被撲殺，損失金額高達近 6,500 萬美元。在開發中國家，經濟衝擊往往最為嚴重，因為家禽養殖是當地貧困農民家庭重要的收入與糧食來源。一旦疫情在一國之內大規模蔓延，防疫工作將變得極為困難。因此，政府當局通常會在疫情一經偵測到，便立即採取積極的緊急防疫措施。
+📋 內容大意
+Bird flu is a contagious viral disease of birds, and poultry flocks suffer worst.
+Outbreaks ruin farmers: one in the United States destroyed millions of birds.
+Poor countries lose most, so governments act fast before an outbreak spreads.
+← 第29題回到93 年指考
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

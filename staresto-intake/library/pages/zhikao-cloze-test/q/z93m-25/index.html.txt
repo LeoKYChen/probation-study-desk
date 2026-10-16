@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z93m-25/index.html
+Author: staresto-create ZZSH
+Title: 93 年指考敏督利颱風受災地區考生補救考試克漏字第25題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 93 年指考敏督利颱風受災地區考生補救考試 ／ 第25題
+93 年指考敏督利颱風受災地區考生補救考試 克漏字 第25題
+字彙選義線索：句內
+The Festival __24__ the indigenous music and culture of New Orleans and Louisiana, so the music encompasses every style associated with the 25 and the state: blues, R&B, gospel, Cajun, Afro-Caribbean, folk, Latin, rock, rap, country, bluegrass and everything in between.
+(A)U.S.
+(B)city
+(C)world
+(D)nation
+答案：(B) city
+題目編號：Z93M_25（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+the city and the state（該城市與該州）呼應前文 New Orleans and Louisiana，表示音樂風格與紐奧良（城市）及路易斯安那（州）密切相關；U.S.／world／nation 範圍都不符合此處對應關係。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是地方或範圍的名詞，填哪一個讀起來好像都通；而且這一句前半剛提到 New Orleans and Louisiana，整篇又在講美國的爵士樂，很容易直接選 U.S. 或 nation，覺得「美國的曲風」講得通。
+怎麼判斷
+這一格與同一篇的第 22 題一樣靠並列結構定案，只是依據落在相反的那一邊。第一步，找對等連接詞：the ___ and the state 中間有 and。第二步，確定它連的是哪兩樣：兩邊各是一個「the + 名詞」，層級必須相同。第三步，依據在右——右邊已經寫出來的是 the state（這個州），左邊那一格就得是同一組行政層級裡的另一個單位。四個選項裡只有 city 與 state 是同一組（市與州）；U.S. 與 nation 是國家層級、world 是全世界，與 state 並列都高了一階，讀起來會變成「美國和這個州」，層級不對稱。第 22 題的依據在左（先看到 from the region 才推出 {22} the world），這一題的依據在右（先看到 the state 才推出 the city），兩題放在一起，正好把「依據可能在左也可能在右」演示完整。再用同句前半驗算：The Festival {24} the indigenous music and culture of New Orleans and Louisiana——New Orleans 是城市、Louisiana 是州，the city and the state 剛好一一對上。這裡還有一個值得記住的寫法：the city 不是隨便哪座城市，而是用一個比較概括的名詞把前面提過的 New Orleans 再指一次。看到「the + 名詞」而那個名詞前面沒有出現過，就往回找它指的是誰。
+誘答選項
+U.S.（美國）與 nation（國家）都是國家層級，與 the state 並列會大小不對等，而且這一句要說的是曲風與紐奧良、路易斯安那的關係，不是與整個美國的關係；world（世界）更大。首句已經把全篇的軸線立好——not only an American art form but also an international phenomenon，一邊是美國本土，一邊是國際。第 22 題那一格落在國際那一端（工藝家的來源），這一句落在本土那一端（曲風與紐奧良、路易斯安那的關係）。兩格分屬軸線的兩端，不要互相套用。
+常考字詞與句型
+the city and the state（該市與該州）、the + 概括名詞（回指前面提過的人事物）、be associated with（與……有關）、everything in between（介於兩者之間的一切）、contemporary（當代的）、style（曲風、風格）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Jazz is not only an American art form but also an international phenomenon. The New Orleans Jazz and Heritage Festival, also called Jazz Fest, is a 10-day cultural feast 21 thousands of musicians, cooks, and craftspeople welcome 500,000 visitors each year.
+The main events include unforgettable music on 12 stages, delicious Louisiana cuisine in two large food areas, and crafts artisans from the region and 22 the world purchasing and selling their works. The evening concerts 23 different locations during the 10-day Festival.
+The Festival 24 the indigenous music and culture of New Orleans and Louisiana, so the music encompasses every style associated with the 25 and the state: blues, R&B, gospel, Cajun, Afro-Caribbean, folk, Latin, rock, rap, country, bluegrass and everything in between. And of course there is lots of jazz, both contemporary and traditional.
+中譯：爵士樂不只是美國本土的藝術形式，更是一種國際性的現象。紐奧良爵士與傳統音樂節（又稱 Jazz Fest）是一場為期十天的文化盛宴，數以千計的音樂家、廚師與工藝家在此齊聚一堂，每年迎接 50 萬名遊客的到來。主要活動包括在 12 個舞台上演出的難忘音樂表演、兩大美食區供應的美味路易斯安那料理，以及來自當地及世界各地的工藝家們在此買賣自己的作品。這場為期十天的音樂節，晚間音樂會會在不同地點舉行。這個音樂節旨在慶祝紐奧良與路易斯安那當地的原生音樂與文化，因此音樂涵蓋了與這座城市及這個州相關的各種曲風：藍調、節奏藍調、福音、卡疆、非洲加勒比、民謠、拉丁、搖滾、饒舌、鄉村、藍草，以及介於這些曲風之間的一切音樂。當然，音樂節中還有大量的爵士樂，當代和傳統風格都有。
+📋 內容大意
+Jazz belongs to the world as well as America.
+New Orleans hosts a ten-day festival drawing half a million visitors each year.
+Twelve stages, Louisiana food and craft stalls celebrate the region's every musical style.
+← 第24題回到93 年指考敏督利颱風受災地區考生補救考試第26題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

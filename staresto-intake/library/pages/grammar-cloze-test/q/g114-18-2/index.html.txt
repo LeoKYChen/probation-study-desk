@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g114-18-2/index.html
+Author: staresto-create ZZSH
+Title: 114 年學測克漏字第18題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 114 年學測 ／ 第18題
+114 年學測 克漏字 第18題
+字彙選義線索：句內答對率 40%
+答對率 40%：當年每 100 位考生，有 40 位答對。
+Your brain doesn't know whether you are stationary or moving when these parts send conflicting information: One part of your balance-sensing system detects that your body is moving, but the other parts 18 .
+(A)aren't
+(B)won't
+(C)don't
+(D)haven't
+答案：(C) don't
+題目編號：G114_18_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+don't 代替 don't detect that your body is moving（省略重複部分），表示「平衡感應系統的一部分偵測到身體在動，但其他部分『沒有』」；aren't（be 動詞否定，前面用的是一般動詞 detect 不是 be 動詞）、won't（未來式否定）、haven't（現在完成式否定，前面是現在簡單式 detects）都不合。
+深入解析
+你可能會這樣想
+空格只有一個否定的助動詞，後面什麼都沒接，你會覺得句子好像沒寫完，於是憑感覺挑一個。其實這是英文很常見的「替代」用法（文法上叫 substitution）：用一個助動詞代替前面出現過的整串動詞，避免重複。這個說法很常見——Do you like it? — Yes, I do.，那個 do 代替的就是 like it。本句 but the other parts ___ 一模一樣，don't 代替的是 don't detect that your body is moving。
+怎麼判斷
+劍橋《English Grammar Today》的 Substitution 條目說明：do 可以用來代替一個動詞連同它後面所帶的成分；同一套文法書的 Ellipsis 條目把兩個概念分得很清楚——省略是「直接不寫出來」，替代是「用 do、so、not 這類字頂上去」。所以判斷只有一步：回頭找出它代替的是哪個動詞，時態與人稱就照那個動詞走。前半句是 One part of your balance-sensing system detects...，動詞是一般動詞 detects、現在簡單式；空格的主詞 the other parts 是複數，所以用 don't。
+誘答選項
+aren't 用在 be 動詞，可是前面的動詞是 detect 不是 be；haven't 用在現在完成式，前面卻是 detects（現在簡單式），時態對不上；won't 是未來式，但文章描述的是暈動症發生當下的生理狀況，不是將來才會發生的事。四個選項的差別完全取決於前面那個動詞是什麼，先找到它，答案就定了。
+常考字詞與句型
+Do you like it? — Yes, I do.（do 代替 like it）、So do I.（我也是）、Neither do I.（我也不是）、She liked it, but I didn't.（didn't 代替 didn't like it）、balance-sensing system（平衡感應系統）、detect（偵測）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+If you have ever been sick to your stomach on a rocking boat or a bumpy car ride, you know the discomfort of motion sickness. It can 16 suddenly, progressing from a feeling of uneasiness to a cold sweat. Soon, it can lead to dizziness, nausea, and vomiting.
+Motion sickness occurs when the signals your brain receives from your eyes, ears, and body 17 . Your brain doesn't know whether you are stationary or moving when these parts send conflicting information: One part of your balance-sensing system detects that your body is moving, but the other parts 18 . Your brain's confused reaction makes you feel sick. You may experience the discomfort from the motion of cars, boats, or amusement park rides. You may also get sick from playing video games, or looking through a microscope.
+You can take some 19 to help avoid the discomfort. If you are traveling, reserve seats where motion is felt the least, such as the front row of a car or forward cars of a train. Looking out into the distance from the vehicle can help 20 . You can also take medicine before your ride to avoid or reduce nausea and vomiting.
+中譯：如果你曾在搖晃的船上或顛簸的車程中感到反胃想吐，你一定明白暈動症有多麼不舒服。它可能突然發作，從一開始隱約的不適感，逐漸演變成冒冷汗，接著可能引發頭暈、噁心和嘔吐。暈動症的發生，是因為大腦從眼睛、耳朵和身體所接收到的訊號彼此不一致——當這些身體部位傳來相互矛盾的資訊時，大腦便無法判斷你究竟是靜止不動，還是正在移動：你身體的其中一套平衡感應系統偵測到身體正在移動，但其他部位卻沒有偵測到同樣的訊息。大腦因此感到混亂，這種混亂的反應正是讓你感到不適的原因。你可能會因為搭乘汽車、船隻或遊樂園設施而感到暈眩不適，也可能因為玩電子遊戲，或透過顯微鏡觀察物體而感到不舒服。你可以採取一些預防措施來避免這種不適感——如果你正在旅行，可以預訂晃動感受最小的座位，例如汽車前座或火車前段的車廂。將視線望向車外遠處，也有助於緩解不適。你也可以在搭乘交通工具前先服藥，以預防或減輕噁心和嘔吐的症狀。
+📋 內容大意
+Motion sickness is familiar to anyone who has felt ill on a rocking boat or bumpy car ride. It starts with unease and can end in vomiting.
+It arises when the signals from your eyes, ears and body conflict. One part of the balance system senses movement, the rest sense none, and the brain is confused.
+Video games and microscopes can bring it on too. Travelers can sit where motion is least, look far into the distance, or take medicine before the journey.
+← 第17題回到114 年學測第19題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

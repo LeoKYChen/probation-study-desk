@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z102-13/index.html
+Author: staresto-create ZZSH
+Title: 102 年指考克漏字第13題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 102 年指考 ／ 第13題
+102 年指考 克漏字 第13題
+字彙選義線索：句內答對率 54%
+答對率 54%：當年每 100 位考生，有 54 位答對。
+Another discovery about fish sounds is that not all fish are 13 "talkative."
+(A)merely
+(B)equally
+(C)officially
+(D)favorably
+答案：(B) equally
+題目編號：Z102_13（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【字彙】equally 修飾 talkative，表示「不是所有魚都『同樣』健談」，呼應後文「有些魚話多、有些話少」的對比。merely（只是）、officially（正式地）、favorably（有利地）都不符合文意。
+深入解析
+你可能會這樣想
+四個選項都是 -ly 結尾的副詞，形態上刷不掉，你只能一個一個放進去讀，挑一個順的。
+怎麼判斷
+四個選項都是副詞、都能修飾後面的形容詞 talkative，形態這條路斷掉，可見這一格考的是語意。關鍵在句首的 not all——「不是所有的魚都……」這個說法本身就在做比較：有的多、有的少。既然在比多少，空格要的就是一個講「程度相同」的字，也就是 equally（同等地、一樣地）。not all fish are equally talkative 的意思是「不是每一種魚都一樣多話」，緊接著的 Some species talk a lot, while others don't 正是在把這句話攤開來講。
+誘答選項
+merely（只是、只不過）是把程度往下壓（not merely 才是「不只是」），與比較多寡無關；officially（正式地、官方地）與 favorably（贊同地、順利地）在語意上都接不上 talkative。三個都是 -ly 副詞，形態吻合，容易被順手選走。
+常考字詞與句型
+equally（同等地、一樣地）、not all（不是所有的，屬部分否定）、talkative（多話的、健談的）、merely（只是、只不過）、keep silent（保持安靜）、a wide repertoire（豐富的曲目、多樣的本事）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：102學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The undersea world isn't as quiet as we thought, according to a New Zealand researcher. Fish can "talk" to each other and make a range of 11 by vibrating their swim bladder, an internal gas-filled organ used as a resonating chamber to produce or receive sound.
+Fish are believed to speak to each other for a number of reasons, such as to attract mates, scare off predators, or give directions to other fish. Damselfish, for example, have been found to make sounds to scare off 12 fish and even divers. Another discovery about fish sounds is that not all fish are 13 "talkative." Some species talk a lot, while others don't. The gurnard species has a wide vocal repertoire and keeps up a constant chatter. Codfish, 14 , usually keep silent, except when they are laying eggs.
+Any goldfish lover who hopes to strike up a conversation with their pet goldfish is 15 . Goldfish have excellent hearing, but they don't make any sound whatsoever. Their excellent hearing isn't associated with vocalization.
+中譯：根據一位紐西蘭研究者的說法，海底世界並不如我們想像的那麼安靜。魚類能藉由振動魚鰾（一種充滿氣體、可作為共鳴腔以發出或接收聲音的內部器官）互相「說話」，發出各種聲音。
+科學家相信魚類基於多種原因互相交談，例如吸引配偶、嚇阻掠食者，或為同類指路。舉例來說，人們發現雀鯛會發出聲音來嚇跑具威脅性的魚類，甚至潛水客。另一項關於魚類聲音的發現是，不是所有魚都同樣「健談」。有些魚種話很多，有些則不然。魴鮄（gurnard）的叫聲種類豐富，並不斷地發出聲響；相對地，鱈魚則通常保持沉默，除非在產卵時才會發聲。
+任何希望能和自己養的金魚聊聊天的愛好者，恐怕要失望了。金魚雖然聽力極佳，卻完全不會發出任何聲音；牠們優異的聽力並不與發聲能力相關。
+📋 內容大意
+The sea is noisier than we supposed: fish make sounds by vibrating the swim bladder.
+They call to attract mates, warn off enemies or guide other fish, though some species stay quiet.
+Goldfish are the extreme case, hearing beautifully yet never making a sound themselves.
+← 第12題回到102 年指考第14題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

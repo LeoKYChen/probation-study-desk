@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g95-28-3/index.html
+Author: staresto-create ZZSH
+Title: 95 年學測克漏字第28題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 95 年學測 ／ 第28題
+95 年學測 克漏字 第28題
+慣用語／片語線索：跨句答對率 48%
+答對率 48%：當年每 100 位考生，有 48 位答對。
+Baseball, on the other hand, seems more mental, like chess, and 27 those fans that prefer a quieter, more complicated game. 28 , professional football teams usually play no more than fourteen games a year.
+(A)In addition
+(B)As a result
+(C)In contrast
+(D)To some extent
+答案：(A) In addition
+題目編號：G95_28_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+前文列舉足球和棒球的差異，這句延續列舉另一個差異點（比賽場次），In addition（此外）承接繼續列舉；As a result（因此，不是因果關係）、In contrast（相反地，緊接著後面的 however 才是真正的對比詞）、To some extent（某種程度上）都不如 In addition 自然承接列舉。
+深入解析
+你可能會這樣想
+這一篇從頭到尾都在比較兩種運動，你讀得越進去，越容易覺得「這裡當然又是在對比」，於是直接選了 In contrast。這正是這題鑑別度只有 35 的原因——它不是難在字義，是難在你被整篇的對比框架帶著走，忘了先確認這一句自己在做什麼事。
+怎麼判斷
+答對率四成八。真正的線索是這篇文章的列舉鏈。第二段開頭是 To begin with（首先），最後一段開頭是 Finally（最後），中間這一段開頭的空格，位置就卡在「首先」與「最後」之間，它必須是列舉鏈的中間那一環，也就是「此外、再者」。In addition 正好是這個功能。看出 To begin with → ___ → Finally 這條鏈，這題就結束了。另一個佐證：空格所在的整句是 ___ , professional football teams usually play no more than fourteen games a year，講的只有足球一方，沒有把棒球拿來比。真正的對比出現在下一句 Baseball teams, however, play {29} every day for six months，however 才是那個對比詞。一個段落通常不會在段首與下一句接連放兩個表對比的轉折詞。
+誘答選項
+In contrast 是「相較之下」，如上所述，對比的工作已經由下一句的 however 做掉了。As a result 是「因此」，要求前後有因果，可是足球節奏快並不會「導致」它一年只打十四場。To some extent 是「某種程度上」，用來把話說軟、保留語氣，這裡並沒有要打折扣的意思。
+常考字詞與句型
+in addition（此外、再者）、in addition to sth（除了……之外還有）、as a result（因此）、as a result of sth（由於）、to some extent（在某種程度上）、no more than（只有、不超過）。其中 as a result 這一組考過 7 個年度，85 年第 35 題 →、87 年第 35 題 →、90 年第 22 題 →、99 課綱學測參考用試卷第 24 題 →、103 年第 25 題 →、108 年第 28 題 →都出現過；no more than 考過 3 個年度，91 年補考第 25 題 →、102 年第 23 題 →都出現過。
+線索範圍說明：In addition 累加前一句對兩種運動的比較
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Fans of professional baseball and football argue continually over which is America's favorite sport. Though the figures on attendance for each vary with every new season, certain 26 remain the same.
+To begin with, football is a quicker, more physical sport, and football fans enjoy the emotional involvement they feel while watching. Baseball, on the other hand, seems more mental, like chess, and 27 those fans that prefer a quieter, more complicated game.
+28 , professional football teams usually play no more than fourteen games a year. Baseball teams, however, play 29 every day for six months.
+Finally, football fans seem to love the half-time activities, the marching bands, and the pretty cheerleaders. 30 , baseball fans are more content to concentrate on the game's finer details and spend the breaks between innings filling out their own private scorecards.
+中譯：職業棒球與美式足球的球迷經常爭論哪一項運動才是美國人最愛的運動。雖然兩者的觀眾人數每季都有所變動，但某些論點始終不變。首先，美式足球節奏較快、對抗性也較強，足球迷享受觀賽時那種情緒投入的感覺。另一方面，棒球則顯得更需要動腦，像下棋一樣，吸引偏好較安靜、較複雜比賽的球迷。此外，職業美式足球隊一年通常只打不超過十四場比賽，然而，棒球隊卻幾乎每天都要打，持續整整六個月。最後，美式足球迷似乎特別喜愛中場表演、遊行樂隊和啦啦隊員。相較之下，棒球迷則更滿足於專注比賽的細節，並在局間休息時填寫自己的計分卡。
+📋 內容大意
+Fans argue endlessly over whether baseball or football is America's favorite sport. The same points return every season.
+Football is faster and more physical, and its fans enjoy the emotional involvement. Baseball is more mental, like chess, and suits fans who prefer a quieter game.
+Football teams play about fourteen games a year, while baseball runs daily for six months. Football crowds love the half-time show; baseball crowds study the details.
+← 第27題回到95 年學測第29題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

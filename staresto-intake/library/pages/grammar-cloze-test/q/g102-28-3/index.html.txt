@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g102-28-3/index.html
+Author: staresto-create ZZSH
+Title: 102 年學測克漏字第28題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 102 年學測 ／ 第28題
+102 年學測 克漏字 第28題
+慣用語／片語線索：句內答對率 66%
+答對率 66%：當年每 100 位考生，有 66 位答對。
+He later created a standard of measuring children's intelligence 28 the data he had collected from the French children he studied.
+(A)composed of
+(B)based on
+(C)resulting in
+(D)fighting against
+答案：(B) based on
+題目編號：G102_28_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】based on 指「根據/基於」；composed of（由……組成）、resulting in（導致）、fighting against（對抗）都不合。
+深入解析
+你可能會這樣想
+四個選項都是分詞形式，形狀一模一樣，很容易只憑「哪個唸起來順」來挑。resulting in（導致）看起來也接得上，因為前面剛講他「創造出一套標準」，感覺像是某種結果。
+怎麼判斷
+先確認空格那一塊在句子裡扮演什麼功能。主要動詞是 created，受詞是 a standard of measuring children's intelligence；空格開始的分詞片語是拿來修飾 a standard 的，說明這套標準是怎麼來的。還原成關係子句：a standard which was based on the data...（一套以那些資料為依據的標準）。再看空格後面接的是什麼：the data he had collected（他先前蒐集到的資料）。標準與資料之間的關係是「以資料為依據」，be based on 正是這個意思。表「以…為依據」時介系詞固定用 on；based in 是另一個意思，講的是公司或人設在哪個地方（The company is based in Toronto.），這一點要連著記。順帶注意 the data he had collected 用了過去完成式 had collected：蒐集資料在先，訂出標準在後，時間先後很清楚，也旁證了「標準建立在先前的資料之上」。
+誘答選項
+composed of（由…組成）：be composed of 講的是組成成分，一套標準不是「由資料組成」的，資料是依據，不是零件。resulting in（導致）：方向相反。resulting in 後面要接的是這套標準造成的結果，但 the data 是它的來源，不是它的結果。fighting against（對抗）：與資料對抗，語意完全不通。
+常考字詞與句型
+be based on（以…為依據、根據）、on the basis of（根據…）、base A on B（把 A 建立在 B 之上）、be composed of（由…組成）、result in（導致…）、fight against（對抗…）。其中 result in 這一組考過 7 個年度，88 年第 28 題 →、90 年第 22 題 →、100 年第 25 題 →、103 年第 25 題 →、109 年第 30 題 →、學測參考試卷第 22 題 →、學測參考試卷第 23 題 →都出現過；fight against 考過 3 個年度，83 年第 18 題 →、85 年第 36 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+French psychologist Alfred Binet (1859-1911) took a different approach from most other psychologists of his day: He was interested in the workings of the 26 mind rather than the nature of mental illness. He wanted to find a way to measure the ability to think and reason, apart from education in any particular field.
+In 1905 he developed a test in which he 27 children do tasks such as follow commands, copy patterns, name objects, and put things in order or arrange them properly. He later created a standard of measuring children's intelligence 28 the data he had collected from the French children he studied. If 70 percent of 8-year-olds could pass a particular test, then 29 on the test represented an 8-year-old's level of intelligence.
+From Binet's work, the phrase "intelligence quotient" ("IQ") entered the English vocabulary. The IQ is the ratio of "mental age" to chronological age times 100, with 100 30 the average. So, an 8-year-old who passes the 10-year-old's test would have an IQ of 10/8 times 100, or 125.
+中譯：法國心理學家阿爾弗雷德·比奈（1859-1911）採取了與同時代大多數心理學家截然不同的研究取向：他關注的是正常心智的運作方式，而非精神疾病的本質。他希望找到一種方法，能夠測量一個人思考與推理的能力，而不受特定領域教育程度的影響。1905 年，他開發出一套測驗，讓兒童完成諸如遵循指令、臨摹圖形、說出物品名稱，以及依序排列或正確擺放物品等任務。他後來根據對法國兒童所蒐集到的資料，制定出一套測量兒童智力的標準：如果有 70%的八歲兒童能通過某項測驗，那麼在該測驗中的成功表現，就代表了八歲兒童應有的智力水準。比奈的研究成果，讓「智商」（IQ）這個詞彙從此進入英語詞彙之中。智商是「心智年齡」與「實際年齡」的比值再乘以 100，其中 100 代表平均值。因此，一位通過十歲兒童測驗的八歲孩童，其智商即為 10 除以 8 再乘以 100，也就是 125。
+📋 內容大意
+Alfred Binet developed early standardized intelligence tests for children, establishing the foundation for modern IQ measurements.
+← 第27題回到102 年學測第29題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

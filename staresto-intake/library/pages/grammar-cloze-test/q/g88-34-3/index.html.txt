@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g88-34-3/index.html
+Author: staresto-create ZZSH
+Title: 88 年學測克漏字第34題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 88 年學測 ／ 第34題
+88 年學測 克漏字 第34題
+字彙選義線索：句內
+I couldn't remember him but I was too 34 to tell him.
+(A)exhausted
+(B)interested
+(C)frightened
+(D)embarrassed
+答案：(D) embarrassed
+題目編號：G88_34_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「我太尷尬了，不好意思告訴他（我不記得他）」，embarrassed（尷尬的）符合這種社交場景的心理狀態；exhausted（筋疲力竭的）、interested（感興趣的）、frightened（害怕的）都不符合這個「不好意思承認不記得對方」的語境。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+前面才剛講過 still had jetlag（還在時差裡），所以 exhausted（筋疲力竭）看起來很有根據——文章明明說了他很累。這一格的陷阱就在這裡：文章裡確實有這個線索，但它指向錯的方向。
+怎麼判斷
+四個選項都是描述情緒或狀態的形容詞，可見這一格考的是語意，而關鍵在 too ... to 這個句型。too ... to 的意思是「太……以致於不能」，所以空格填的那個狀態必須是「說不出口」的原因。整句是 I couldn't remember him but I was too ___ to tell him.（我想不起他是誰，但我太……而說不出口。）想不起對方是誰、卻不好意思承認——這是社交場合的尷尬，填 embarrassed。再回頭看那個陷阱：jetlag 確實讓他很累，但「累」不會讓人說不出「我不記得你了」這句話，兩者之間沒有因果。線索存在不代表它管這一格，填之前一定要用 too ... to 的因果關係驗算一次。
+誘答選項
+exhausted（筋疲力竭的）：見上，前文雖然埋了伏筆，但因果接不上。frightened（害怕的）：對方一路都很友善，還主動要請客，沒有讓人害怕的成分。interested（感興趣的）：太有興趣不會導致說不出口，語意完全反了。
+常考字詞與句型
+be too … to V（太……以致於不能）、be embarrassed to V（不好意思做……）、feel embarrassed about（為……感到尷尬）、be exhausted（筋疲力竭）、tell sb the truth（對某人說實話）、so friendly（如此友善）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+It was my first day in this beautiful tropical city. 31 I was walking to the beach, a stranger came up to me and tried to shake my hand. "Don't you remember me, my friend?" he said. But I couldn't 32 his face at all. I didn't know a soul in the city. I had just arrived by plane and still had jetlag. "I 33 you at the airport. I work there at the customs. How are you enjoying our beautiful city?" I couldn't remember him but I was too 34 to tell him. He was so friendly.
+35 he offered to take me to his uncle's seafood restaurant, just by the beach. I thanked him 36 but he insisted that we should go there for dinner. "You'll love the seafood there," he 37 me. "And it will be a dinner to remember."
+So we went to the restaurant and sat by a window 38 the bay. The dinner was great indeed, but the coffee they served was quite different. In fact, it tasted very strange...
+Anyway, it was not 39 10 o'clock the next morning that I finally woke up. But I had no idea where I was. All my money was 40 and my "friend" had even taken my watch and my shoes!
+中譯：這是我在這座美麗熱帶城市的第一天。當我走向海灘時，一個陌生人走過來想跟我握手。「朋友，你不記得我了嗎？」他說。但我完全想不起他的長相，我在這座城市裡誰也不認識，才剛搭飛機抵達，還在時差中。「我在機場見過你，我在海關工作。你喜歡我們這座美麗的城市嗎？」我雖然不記得他，但又不好意思說出來。他表現得非常友善，後來提議帶我去他叔叔開在海邊的海鮮餐廳。我婉謝了他，但他堅持我們應該一起去那裡吃晚餐。「你一定會愛上那裡的海鮮，」他向我保證，「那將會是一頓令人難忘的晚餐。」於是我們去了那間餐廳，坐在能眺望海灣的窗邊。晚餐確實很棒，但他們供應的咖啡味道很奇怪，事實上，嚐起來相當怪異……總之，一直到隔天早上十點左右我才終於清醒過來，但完全不知道自己身在何處。我所有的錢都不見了，我那位「朋友」甚至連我的手錶和鞋子都拿走了！
+📋 內容大意
+On my first day in a new tropical city, an overly friendly stranger approached me claiming to know me from the airport.（敘事文）
+The stranger insistently invited me to go to his uncle's restaurant by the beach for dinner.（敘事文）
+We went to the restaurant for dinner, but the coffee served at the end tasted very unusual.（敘事文）
+I woke up late the next morning only to discover that I had been robbed of my money, watch, and shoes.（敘事文）
+← 第33題回到88 年學測第35題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

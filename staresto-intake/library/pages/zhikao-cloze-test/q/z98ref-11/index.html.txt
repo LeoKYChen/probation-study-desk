@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z98ref-11/index.html
+Author: staresto-create ZZSH
+Title: 指考參考試卷（95 課綱適用，98 年施測）克漏字第11題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 指考參考試卷（95 課綱適用，98 年施測） ／ 第11題
+指考參考試卷（95 課綱適用，98 年施測） 克漏字 第11題
+字彙選義線索：句內
+One 11 of using fossil fuels is that it can generate large amounts of energy by the simple process of burning.
+(A)grace
+(B)source
+(C)problem
+(D)advantage
+答案：(D) advantage
+題目編號：Z98參_11（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+advantage（優點）表示使用化石燃料的一項優點是能透過簡單的燃燒過程產生大量能源；grace（恩典）、source（來源）、problem（問題）都不符合此處正面語意（後文才轉折談到缺點）。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+整篇一直在講化石燃料帶來的麻煩（vulnerable、pollution、risks），先入為主之下很容易覺得這一格要填 problem；source 也很誘人，因為「化石燃料是能源的來源」讀起來很順。
+怎麼判斷
+這一句的結構是 One ______ of using fossil fuels is that ...，be 動詞後面那個 that 子句就是空格的定義，把它讀完等於答案已經寫在紙上：it can generate large amounts of energy by the simple process of burning（燒一燒就能產生大量能源）。那是好處，所以填 advantage。這種「主詞裡有個空格、後面用 is that 把它解釋清楚」的句子，一律先跳到 that 子句去讀，比在四個選項之間猜快得多。全篇的走向也支持它：到第二段開頭才用 However 轉到缺點，前一句的 vulnerable 不能拿來決定這一格。
+誘答選項
+problem 方向相反，填進去會變成「問題是它能產生大量能源」，語意矛盾。source 的常見組合是 a source of energy（能源的來源），但這裡是 One ______ of using fossil fuels，of 後面接的是「使用」這個行為而不是能源本身，而且 source 也和 is that 這個定義句接不起來。grace（優雅、恩典）與這個語境無關。
+常考字詞與句型
+an advantage of + V-ing（做某事的優點）、The advantage is that ...（優點在於……）、a source of energy（能源的來源）、generate energy（產生能源）、fossil fuels（化石燃料）、by the simple process of + V-ing（藉由……這個簡單的過程）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Modern societies have become increasingly vulnerable in their dependence on fossil fuels such as coal and petroleum. One 11 of using fossil fuels is that it can generate large amounts of energy by the simple process of burning. 12 , fossil fuels are readily available and are currently plentiful.
+However, the burning of fossil fuels leads to the release of pollution into the atmosphere. Dependence on fossil fuels from unstable regions or countries creates energy security risks for dependent countries. Oil dependence 13 has led to monopolization, war, and socio-political instability.
+Most importantly, fossil fuels are considered non-renewable resources, which will eventually decline in production and become 14 , with serious consequences to societies that remain highly dependent on them. Fossil fuels are actually slowly forming continuously, but we are using them up 15 approximately 100,000 times faster than they are formed.
+中譯：現代社會對化石燃料（如煤和石油）的依賴，使其日益脆弱。使用化石燃料的一項優點，是它能透過燃燒這種簡單的過程產生大量能源。此外，化石燃料容易取得，目前供應也相當充足。然而，燃燒化石燃料會將污染物釋放到大氣中。依賴來自局勢不穩地區或國家的化石燃料，會為仰賴這些燃料的國家帶來能源安全上的風險。石油依賴尤其導致了壟斷、戰爭與社會政治動盪。最重要的是，化石燃料被視為不可再生資源，其產量終將逐漸減少並枯竭，對高度依賴這些資源的社會將造成嚴重後果。事實上，化石燃料確實持續緩慢地形成中，但我們消耗它們的速度，卻比它們形成的速度快了大約十萬倍。
+📋 內容大意
+Modern life depends heavily on fossil fuels, which burn easily and remain cheap and plentiful.
+Yet burning them pollutes the air, and relying on unstable suppliers brings war and insecurity.
+Above all they cannot be renewed, forming far more slowly than we consume them.
+回到指考參考試卷（95 課綱適用，98 年施測）第12題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g95-26-3/index.html
+Author: staresto-create ZZSH
+Title: 95 年學測克漏字第26題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 95 年學測 ／ 第26題
+95 年學測 克漏字 第26題
+字彙選義線索：句內答對率 45%
+答對率 45%：當年每 100 位考生，有 45 位答對。
+Though the figures on attendance for each vary with every new season, certain 26 remain the same.
+(A)agreements
+(B)arguments
+(C)accomplishments
+(D)arrangements
+答案：(B) arguments
+題目編號：G95_26_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+前文提及棒球迷與足球迷持續爭論（argue continually）哪種運動才是美國人的最愛，這句延續說明「雖然每季觀賽人數會有起伏，但支持各自運動的『論點』依然維持不變」，arguments（論點、主張）呼應前文的動詞 argue，最為契合；agreements（協議，前面是爭論不是達成共識）、accomplishments（成就）、arrangements（安排）都不合。
+深入解析
+你可能會這樣想
+argument 腦中只剩「爭吵」，於是看到 certain ___ remain the same 就覺得「某些爭吵維持不變」很奇怪，反而把正確答案排掉了。argument 另一個在閱讀文章裡更常出現的意思是「論點、理由、主張」（an argument for sth 支持某事的理由）。
+怎麼判斷
+答對率四成五，鑑別度只有 36，在同篇裡偏低——這題連讀懂文章的高分群考生也常失手，原因就在剛才那個既有印象：讀得越仔細、越覺得「爭吵不變」講不通的人，反而越容易改選別的。線索其實就在前一句的同一個字根上：Fans of professional baseball and football argue continually over which is America's favorite sport。動詞是 argue（爭論），空格要的名詞就是這場爭論裡雙方各自搬出來的「論點」。前半句又說 the figures on attendance for each vary with every new season（觀眾人數每季都在變），Though 把兩邊接成讓步關係：數字會變，但論點不變。接著整篇文章就一條一條列出這些論點（節奏快慢、動不動腦、賽季場次、中場活動），正好就是「論點」的內容。
+誘答選項
+agreements 是「協議、共識」，但前一句已經說清楚雙方在 argue，沒有達成共識。accomplishments 是「成就」，指已經做成的事，不是拿來辯論的理由。arrangements 是「安排」，跟這場辯論無關。
+常考字詞與句型
+an argument for sth（支持某事的論點）、put forward an argument（提出論點）、argue over sth（為某事爭論）、reach an agreement（達成協議）、a sense of accomplishment（成就感）、make arrangements for sth（為某事做安排）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Fans of professional baseball and football argue continually over which is America's favorite sport. Though the figures on attendance for each vary with every new season, certain 26 remain the same.
+To begin with, football is a quicker, more physical sport, and football fans enjoy the emotional involvement they feel while watching. Baseball, on the other hand, seems more mental, like chess, and 27 those fans that prefer a quieter, more complicated game.
+28 , professional football teams usually play no more than fourteen games a year. Baseball teams, however, play 29 every day for six months.
+Finally, football fans seem to love the half-time activities, the marching bands, and the pretty cheerleaders. 30 , baseball fans are more content to concentrate on the game's finer details and spend the breaks between innings filling out their own private scorecards.
+中譯：職業棒球與美式足球的球迷經常爭論哪一項運動才是美國人最愛的運動。雖然兩者的觀眾人數每季都有所變動，但某些論點始終不變。首先，美式足球節奏較快、對抗性也較強，足球迷享受觀賽時那種情緒投入的感覺。另一方面，棒球則顯得更需要動腦，像下棋一樣，吸引偏好較安靜、較複雜比賽的球迷。此外，職業美式足球隊一年通常只打不超過十四場比賽，然而，棒球隊卻幾乎每天都要打，持續整整六個月。最後，美式足球迷似乎特別喜愛中場表演、遊行樂隊和啦啦隊員。相較之下，棒球迷則更滿足於專注比賽的細節，並在局間休息時填寫自己的計分卡。
+📋 內容大意
+Fans argue endlessly over whether baseball or football is America's favorite sport. The same points return every season.
+Football is faster and more physical, and its fans enjoy the emotional involvement. Baseball is more mental, like chess, and suits fans who prefer a quieter game.
+Football teams play about fourteen games a year, while baseball runs daily for six months. Football crowds love the half-time show; baseball crowds study the details.
+← 第25題回到95 年學測第27題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

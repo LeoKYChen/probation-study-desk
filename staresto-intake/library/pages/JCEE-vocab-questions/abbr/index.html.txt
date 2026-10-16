@@ -1,0 +1,100 @@
+Source: https://github.com/staresto-create/JCEE-vocab-questions/blob/7342ffeafc4870943b9531ec57e0c5b0c39acbe8/abbr/index.html
+Author: staresto-create ZZSH
+Title: 簡寫對照表｜高中英文自學題庫
+Noncommercial educational text only
+
+Abbreviations
+簡寫對照表
+解析裡會用到一些簡寫，像 see + O + V-ing 這樣的公式，或是 sb、sth 這種代號。它們是為了把話講短，不是為了考你。這一頁把本題庫用到的簡寫一次列齊，看到不認得的回來查就好。
+01句型與搭配代號
+這一組用來寫句型公式。一個字母代表句子裡的一個位置，換成任何符合的字都成立。
+代號
+意思
+本題庫的例子
+S
+主詞
+S + V…, S + V…（兩個子句並列）
+V
+動詞
+used to V（過去經常）
+O
+受詞
+see + O + V-ing（看到某人正在做某事）
+OC
+受詞補語
+keep + O + OC（讓受詞保持某種狀態）
+N
+名詞
+be responsible for + N（為…負責）
+V-ing
+動名詞或現在分詞
+see + O + V-ing；動作正在進行中
+p.p.
+過去分詞
+By the time …, sb had p.p.（到…的時候，某人已經…）
+02人與物的代號
+這一組用來占住「某個人」「某個東西」的位置，讓你看得出句型的形狀。
+代號
+意思
+本題庫的例子
+sb
+某人
+protect sb from sth（保護某人免於…）
+sth
+某物、某件事
+同上；sb 是 somebody、sth 是 something
+A、B
+兩個並列的人或物
+between A and B、from A to B、regard A as B
+題目選項前面的 (A)(B)(C)(D) 是另一回事，那是選項的編號，不是這裡講的代號。
+03詞性標記
+單字題的字義欄用這一組標出詞性，寫法與一般英漢詞典相同。
+代號
+意思
+代號
+意思
+n.
+名詞
+adj.
+形容詞
+v.
+動詞
+adv.
+副詞
+vi.
+不及物動詞
+conj.
+連接詞
+vt.
+及物動詞
+aux.
+助動詞
+adj 也會出現在句型公式裡，代表形容詞的位置，例如 remain + adj（保持某種狀態）、make + O + adj（使…變得…）。是標詞性還是占位置，看它出現在哪裡就分得出來。
+04佔位代號與英文術語
+最後這一組，前兩個是純粹的佔位符號，後面幾個是解析裡會直接用到的英文詞。
+代號
+意思
+說明
+X、Y
+兩個沒有指名的東西
+用來講結構，例如 X's 名詞 of Y 這種名詞化的說法
+collocation
+字詞搭配
+跟中文的成語或詞語類似，字跟字的組合是固定的。看五個詞那一段 →
+colligation
+用法
+這個字後面固定要接什麼——介系詞、to V 或 that 子句。這個英文詞沒有通行的中譯，本題庫直接用英文。
+KK
+KK 音標
+單字題的字卡所標的音標系統
+GSAT
+學測
+學科能力測驗的英文名稱 General Scholastic Ability Test
+JCEE
+本題庫用來指指考
+這不是官方縮寫。JCEE 原本指的是 2002 年廢除的大學聯考（Joint College Entrance Examination）；指考的官方英文名稱是 Advanced Subjects Test。本題庫的網址名稱沿用 JCEE，這裡先說明清楚。
+← 回題庫首頁
+這幾個網站都是老師自己土法煉鋼做的，介面陽春、可能還有錯誤，請多包涵🙏
+發現問題歡迎透過各題庫內的 Google 表單回報，會盡量修正。
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫
+本題庫自己寫的部分（解析、中譯、分類、標註與編排）採用 CC BY-NC 4.0（姓名標示─非商業性）授權：可以分享，但須註明出處，不得用於商業用途。試題來源與完整說明請見使用與著作權。

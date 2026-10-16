@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g96-16-1/index.html
+Author: staresto-create ZZSH
+Title: 96 年學測克漏字第16題詳解（分詞／動狀詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 96 年學測 ／ 第16題
+96 年學測 克漏字 第16題
+分詞／動狀詞線索：句內答對率 38%
+答對率 38%：當年每 100 位考生，有 38 位答對。
+After a spa treatment at Happy Puppy, dogs come home 16 pampered and relaxed.
+(A)will feel
+(B)to feel
+(C)have felt
+(D)feeling
+答案：(D) feeling
+題目編號：G96_16_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+本句已有主要動詞 come，空格須填現在分詞 feeling 當補語，描述狗回家時的狀態；will feel 與 have felt 都是限定動詞，一句不能有兩個，to feel 表目的則語意不順。
+深入解析
+你可能會這樣想
+你看到空格就想填動詞，卻忘了句子已經有主要動詞 come。一個子句只能有一個限定動詞，要再多一個就得有連接詞或關係代名詞。
+怎麼判斷
+一個子句只能有一個限定動詞；要再出現第二個限定動詞，就得有連接詞或關係代名詞把它帶進來。本句的動詞是 come，句中沒有連接詞，空格就不能再放動詞，will feel 與 have felt 可排除。剩下 to feel 與 feeling，看這一格要表達什麼：狗回到家時處於什麼狀態，用現在分詞當補語。come home feeling great（帶著愉快的心情回家）、sit reading a book（坐著看書）、lie sleeping（躺著睡覺），常見的 He sat there watching TV. 也是這個結構。（例外：go／come 後面可以直接接原形動詞，如 Let's go see a movie.、Come visit us this summer.、I'll go check the mailbox. 這是美式口語把 go and see、come and visit 的 and 省略而來，正式寫作仍以 go and see 或 go to see 為主。）
+誘答選項
+will feel 與 have felt 都是限定動詞，會造成一句兩個動詞卻沒有連接詞；to feel 表目的，但被呵護是在美容店已經發生的事，不是回家的目的。
+常考字詞與句型
+come home feeling…（帶著某種心情回家）、sit／stand／lie + V-ing（坐著／站著／躺著做某事）、spend time doing（花時間做某事）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+All dogs deserve to look and feel their best. After a spa treatment at Happy Puppy, dogs come home 16 pampered and relaxed. At Happy Puppy, your dog can enjoy a half day of care and then be taken to the salon at naptime. Here all the dogs are given a bath using professional shampoo and conditioners in a massaging tub. Their relaxing bath will be 17 a full fluff dry and brush-out. When you arrive for pick-up, your dog will be well-exercised and beautiful.
+You can also bring your dog to Happy Puppy and wash it yourself. We supply everything, 18 waist-high tubs, shampoo, and towels. This service is available seven days a week during normal operating hours.
+19 Happy Puppy is a relatively new service, we benefit from more than 20 years of experience in breeding and caring for dogs. We are completely 20 to helping dogs enjoy a full and active life. Our well-trained staff will provide the best possible service for you and your dog.
+中譯：每隻狗都值得看起來、感覺起來最美好。在 Happy Puppy 做完美容護理後，狗狗回家時會感到備受呵護、放鬆自在。在 Happy Puppy，您的狗狗可以享受半天的照護，之後在午休時間被帶到美容沙龍。這裡的每隻狗都會在按摩浴缸中，使用專業洗毛精和潤絲精洗澡。放鬆的沐浴之後，緊接著就是全套的吹整和刷毛。當您來接狗狗時，牠會運動充足又漂漂亮亮的。您也可以帶狗狗來 Happy Puppy 自己動手洗。我們提供一切所需，包括及腰高的浴缸、洗毛精和毛巾。這項服務在正常營業時間內全年無休。雖然 Happy Puppy 是相對新的服務，我們卻擁有超過二十年的養狗與照顧經驗。我們全心致力於幫助狗狗享受充實而活躍的生活。我們訓練有素的員工將為您和您的狗狗提供最好的服務。
+📋 內容大意
+Happy Puppy offers dogs a half day of care and a salon visit at naptime, so they come home pampered and relaxed.
+Each dog is bathed with professional shampoo in a massaging tub, then fluff-dried and brushed out. Owners may also wash their own dogs there any day of the week.
+The business is new, but its staff has over twenty years of experience breeding and caring for dogs. They work to help every dog live an active life.
+回到96 年學測第17題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z107ref-18/index.html
+Author: staresto-create ZZSH
+Title: 指考參考試卷（107 學年度起適用）克漏字第18題詳解（時態／語態）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 指考參考試卷（107 學年度起適用） ／ 第18題
+指考參考試卷（107 學年度起適用） 克漏字 第18題
+時態／語態線索：句內
+By the time he was 23, he had already come up with the idea of what 18 the modern computer—the Turing machine.
+(A)would become
+(B)should become
+(C)could have become
+(D)had become
+答案：(A) would become
+題目編號：Z107參_18（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【過去的未來】would become 表示「未來將成為」，站在過去時間點描述後來成真的未來事件（此構想後來發展成現代電腦）。should become（應該成為）、could have become（本可能成為，暗示未實現）、had become（過去完成式，時序矛盾）都不合文意。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+空格前一個子句剛用過 had already come up with（過去完成式），對稱的慣性會讓你想再選一次同樣的形態，had become 於是讀起來特別順；句首的 By the time he was 23 又是過去完成式的典型訊號，更加深了這個念頭。
+怎麼判斷
+先看 what 在子句裡占哪個位置：the idea of what ______ the modern computer，what 是複合關係代名詞（等於 the thing that），它自己就是這個子句的主詞，所以空格填的必定是這個子句的動詞。接著把時間軸排出來：圖靈 23 歲那年（過去）想出了一個構想，那個構想是後來才發展成現代電腦的。站在過去往後看，用的是過去的未來，形態就是 would 加原形。可以拿間接引述來對照：He said he would come.（他說他會來），說的動作在過去，來的動作在那之後。填 would become，「後來會成為現代電腦的那個東西」，時間軸才對得上。
+誘答選項
+had become 方向剛好相反，它表示「在 23 歲之前就已經是現代電腦」，但現代電腦是後來的事，時間顛倒了。它之所以誘人，是因為前一個子句剛用過 had already come up with，形態一致讀起來很順，但那個過去完成式是在說「想出構想」比「23 歲」更早，與空格這一格要往後看的方向不同，不能照抄。should become 的 should 帶著建議或義務的口吻，這一句只是在敘述後來發生的事，沒有人在建議什麼。could have become 是「本來有可能成為，但實際上沒有」，與事實不符，同一段後面還寫著 Today, Turing machines are still used in theoretical computation.
+常考字詞與句型
+would + 原形（站在過去看未來，後來會……）、come up with（想出、提出）、by the time …（到……的時候）、what 等於 the thing that（複合關係代名詞）、could have + 過去分詞（本來有可能……但沒有）、be used in（用於……）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Alan Turing was one of the leading scientific geniuses of the 20th century. Many scholars consider him the father of modern computer science. He was also the man who cracked the 16 uncrackable Enigma code used by Nazi Germany. His code-breaking turned the tide of World War II and helped save two million lives. Nevertheless, 17 people have even heard his name.
+Turing displayed signs of high intelligence in math and science at a young age. By the time he was 23, he had already come up with the idea of what 18 the modern computer—the Turing machine. Today, Turing machines are still used in theoretical computation. He also proposed the now famous Turing test, used to determine whether a computer exhibits intelligent behavior equivalent to that of a human.
+The postwar era, however, was a disaster for Turing. He was gay, which was then a crime in Britain. 19 being hailed as one of the crucial figures in defeating the Nazis, Turing was convicted of "gross indecency." This 20 drove him to commit suicide in 1954, at the age of 41.
+Nearly 60 years after his death, Queen Elizabeth II granted Turing a formal pardon for his conviction, upon an online petition signed by prominent scientists and technology leaders around the world.
+中譯：艾倫·圖靈是二十世紀最傑出的科學天才之一，許多學者視他為現代電腦科學之父。他也是破解納粹德國所使用、據稱無法破解的「恩尼格瑪」密碼的人。他的解碼成就扭轉了第二次世界大戰的局勢，拯救了兩百萬條性命。然而，卻很少有人聽過他的名字。圖靈從小便在數學與科學方面展現高度的智慧。23 歲時，他已經構想出後來發展成現代電腦的概念——圖靈機。時至今日，圖靈機的概念仍應用於理論計算領域。他也提出了如今著名的「圖靈測試」，用來判斷電腦是否展現出與人類相當的智慧行為。然而，戰後時期對圖靈來說卻是一場災難。他是同性戀者，而這在當時的英國是一項罪行。儘管曾被譽為擊敗納粹的關鍵人物之一，圖靈卻因「嚴重猥褻罪」被定罪。這樣的屈辱最終促使他在 1954 年、41 歲時自殺身亡。在他過世將近 60 年後，在來自世界各地知名科學家與科技領袖連署請願下，英國女王伊莉莎白二世正式赦免了圖靈當年的罪行。
+📋 內容大意
+Alan Turing, called the father of computer science, broke the Enigma code and helped turn the Second World War.（敘事文）
+Gifted young, by twenty-three he had conceived the Turing machine, the idea behind modern computers.（敘事文）
+He also devised the Turing test, but postwar Britain convicted him for being gay.（敘事文）
+He took his own life in 1954, and a royal pardon came nearly sixty years later.（敘事文）
+← 第17題回到指考參考試卷（107 學年度起適用）第19題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

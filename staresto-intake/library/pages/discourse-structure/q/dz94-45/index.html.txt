@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dz94-45/index.html
+Author: staresto-create ZZSH
+Title: 指考 94年 篇章結構 第45題詳解（掌握段落內語句的連貫性與一致性）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 指考 94年 ／ 第45題
+指考 94年 篇章結構 第45題
+選文：出生序與智力（Birth Order and Intelligence）
+掌握段落內語句的連貫性與一致性線索：人稱代名詞主格、定冠詞 the、One… Another… Some… Others 句型答對率 61%
+(A)There are definitely two sides to this issue.這個議題確實有兩種立場。
+(B)Scores decreased as the family size increased and also with birth order.分數隨著家庭人數增加而下降，也隨著出生序愈後面而下降。
+(C)An intelligence test was administered to over 350,000 Dutch males when they turned 19 years of age.一項智力測驗施測於三十五萬名以上的荷蘭男性，時間是他們滿十九歲的時候。
+(D)On the other side are Rutherford and Sewell, who studied more than 10,000 American high school graduates.另一邊是 Rutherford 和 Sewell，他們研究了一萬多名美國高中畢業生。
+(E)Since then, the theory has been elaborated and even extended to explain the positive effect of birth order on intelligence.自那時起，這個理論持續被闡述，甚至被擴大用來解釋出生序對智力的正面效應。
+答案：(D) On the other side are Rutherford and Sewell, who studied more than 10,000 American high school graduates.
+題目編號：Dz94_45
+解析
+先看空格後面。 後面是 They show that the confluence model does not explain any relationship between birth order and intelligence that may exist in the American data.（他們指出，匯流模型無法解釋美國資料裡可能存在的關聯。）這一句有兩個懸空的地方：
+They 是誰？ 前一句在講生育間隔長短造成的差別，主詞不是人。
+the American data（美國的資料）是哪來的？ 用了定冠詞當作已知，可是前面提到的全是荷蘭的資料。
+D 一次補上兩個：Rutherford 和 Sewell 讓 They 有了對象，more than 10,000 American high school graduates（一萬多名美國高中畢業生）也讓「美國資料」有了來歷。On the other side 也正好和前面的 On one side 成對。
+如果你選了 E（自那時起，這個理論持續被闡述，甚至被擴大用來解釋出生序對智力的正面效應。）：E 也在講理論，話題不算離題。但 E 裡沒有任何人可以給 They 指，美國資料一樣沒有來歷；而且這一段的任務是分兩邊，E 是時間推移的敘述。
+【下次先看這裡】後面出現 They 卻找不到人，又冒出一個沒提過的資料來源，空格裡那一句要同時把人和資料帶出來。一次只補一半的選項就不是它。
+線索與數據
+線索種類人稱代名詞主格、定冠詞 the、One… Another… Some… Others 句型
+線索在哪後一句 They；the American data
+答對率61%
+鑑別度57
+本篇題型5選5・刪去法可收尾
+數據出處：本頁的答對率與鑑別度來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響。
+展開本題所在的整篇選文與中文翻譯
+本篇共 5 格、5選5；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+Many researchers have been interested in whether or not an individual’s birth order has an effect on intelligence. One of the first studies was carried out in the Netherlands during the early 1970s. 41 The test was called the “Raven,” which is similar to the I.Q. test. The researchers found a strong relationship between the birth order of the test takers and their scores on the Raven test. 42
+In 1975, Zajonc and Markus developed the confluence theory to explain the negative effect of birth order on intelligence involving the data from the Dutch. 43 However, Rutherford and Sewell in 1991 tested the theory and found no support for it. They concluded that birth order effects did not exist.
+44 On one side there are Zajonc and Markus, who state that birth order effects may be explained solely by family size and the spacing of births. With short birth intervals, increasing order of birth will be associated with lower intelligence levels. But with long birth intervals, this pattern may be reversed. 45On the other side are Rutherford and Sewell, who studied more than 10,000 American high school graduates. They show that the confluence model does not explain any relationship between birth order and intelligence that may exist in the American data. Up to date, there is no agreement between these opposing views. And such a debate may continue for years to come.
+中譯
+許多研究者一直很關心一個人的出生序會不會影響智力。最早的研究之一在一九七○年代初期於荷蘭進行。41 那項測驗叫做「瑞文氏測驗」（Raven），性質與智力測驗相近。研究者發現，受測者的出生序與他們在瑞文氏測驗上的分數之間有很強的關聯。42
+一九七五年，Zajonc 和 Markus 提出匯流理論，用荷蘭的那批資料來解釋出生序對智力的負面效應。43 然而，Rutherford 和 Sewell 在一九九一年檢驗這個理論，並未找到支持它的證據。他們的結論是，出生序效應並不存在。
+44 一邊是 Zajonc 和 Markus，他們主張出生序效應完全可以用家庭人數和生育間隔來解釋。生育間隔短的時候，出生序愈後面，智力水準愈低；但生育間隔長的時候，這個模式可能反過來。45 他們指出，匯流模型無法解釋美國資料中可能存在的任何出生序與智力的關聯。到目前為止，這兩派對立的看法仍沒有共識。這樣的爭論可能還會持續好些年。
+← 第44題回到互動練習
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

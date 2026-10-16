@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g96-29-3/index.html
+Author: staresto-create ZZSH
+Title: 96 年學測克漏字第29題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 96 年學測 ／ 第29題
+96 年學測 克漏字 第29題
+慣用語／片語線索：跨句答對率 38%
+答對率 38%：當年每 100 位考生，有 38 位答對。
+But 29, Rwanda is a symbol of the triumph of the human spirit over evil.
+(A)worst of all
+(B)for that matter
+(C)above all
+(D)at most
+答案：(C) above all
+題目編號：G96_29_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+above all 意為「最重要的是」，用來把本句提升到前面所列各項優點之上：盧安達最重要的意義在於它是人類精神戰勝邪惡的象徵；worst of all（最糟的是）語氣負面，for that matter（就此而言）、at most（至多）語意都不合。
+深入解析
+你可能會這樣想
+看到 But，你會自動去找語氣相反的東西，四個選項裡 worst of all（最糟的是）最像轉折，很容易就這樣選下去。你抓到 But 要轉方向，這個直覺對了一半——要轉的是重要性的層級，不是好壞。
+怎麼判斷
+先看前面幾句在講什麼：綠色山丘、宜人的氣候、國土小到兩週就逛得完，全是旅遊層面的優點，分量都不重。本句講的是 a symbol of the triumph of the human spirit over evil（人類精神戰勝邪惡的象徵），分量完全不同。作者要做的是把最後這一項抬到前面那些優點之上，用的就是 above all（最重要的是）。這裡的 But 不是「由好轉壞」，而是「小事講完了，重點在這裡」。往下再讀一句就能確認方向：Though it was once known to the world for the 1994 tribal conflict...（雖然曾以 1994 年的族群衝突為世人所知…），後面接的是走出傷痛、迎接訪客，語氣是上揚的，負面的 worst of all 接不上。連貫標記這一類的題目，判斷順序永遠是先讀前後句、確定邏輯關係，再挑標記，不要只看 But 就決定。一句記完：Sports and entertainment news get the most clicks from my classmates, but above all, they care about stories that affect their own future.（運動和娛樂新聞最能吸引我同學點閱，但最重要的是，他們在意的是會影響自己未來的報導。）〔情境取材自 108 指考作文題：青年對各類新聞的關注度〕
+誘答選項
+worst of all（最糟的是）語氣負面，與後文的正面評價相衝突；for that matter（就此而言、其實）用來補一個順帶提及的相關點，分量是往下不是往上；at most（至多）限定數量，這一格前後沒有任何數字。反義記一組：above all 往上抬，least of all（最不…、尤其不）往下壓。
+常考字詞與句型
+above all（最重要的是）、first of all（首先）、worst of all（最糟的是）、least of all（尤其不）、for that matter（就此而言）、at most（至多）、at least（至少）、the triumph of A over B（A 戰勝 B）。其中 above all 這一組考過 3 個年度，86 年第 29 題 →、94 年第 25 題 →都出現過。
+線索範圍說明：above all 用來把本句排在前面數句所列優點之上
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Whenever I set foot on the soil of Rwanda, a country in east-central Africa, I feel as if I have entered paradise: green hills, red earth, sparkling rivers and mountain lakes. Herds of goats and cows 26 enormous horns graze the lush green fields. Although located close to the equator, Rwanda's "thousand hills," 27 from 1,500 m to 2,500 m in height, ensure that the temperature is pleasant all year around. And being a tiny country, everything in Rwanda is 28 in a few hours and the interesting spots can be explored comfortably in a couple of weeks.
+But 29, Rwanda is a symbol of the triumph of the human spirit over evil. Though it was once known to the world for the 1994 tribal conflict that resulted in about one million deaths, Rwanda has 30 the mass killing. Now it is healing and prospering and greets visitors with open arms.
+中譯：每當我踏上盧安達——這個位於非洲中東部的國家——的土地時，我都感覺自己彷彿進入了天堂：翠綠的山丘、紅色的泥土、閃閃發光的河流與高山湖泊。成群長著巨大犄角的山羊和牛，在青翠的草地上吃草。雖然盧安達地處赤道附近，但它的「千丘之國」地形——海拔從 1500 公尺到 2500 公尺不等——確保了全年氣候宜人。身為一個小國，盧安達的景點在短短幾小時內就能走遍，境內有趣的地方也能在一兩週內從容探索完畢。但最重要的是，盧安達象徵著人類精神戰勝邪惡的力量。儘管它曾因 1994 年造成約一百萬人死亡的種族衝突而為世人所知，盧安達如今已挺過那場大屠殺，正逐漸療癒、日漸繁榮，並張開雙臂歡迎來訪的旅客。
+📋 內容大意
+Rwanda strikes the writer as paradise. There are green hills, red soil, bright rivers and mountain lakes, and fields grazed by goats and long-horned cattle.
+Its thousand hills rise from 1,500 to 2,500 meters, so the weather stays pleasant all year. The country is small enough to see in a couple of weeks.
+Rwanda also stands as a symbol of the human spirit overcoming evil. Once known only for the 1994 conflict and its million deaths, the country is now healing.
+← 第28題回到96 年學測第30題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

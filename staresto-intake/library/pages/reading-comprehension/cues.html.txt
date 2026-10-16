@@ -1,0 +1,345 @@
+Source: https://github.com/staresto-create/reading-comprehension/blob/80ab2474f58fde2e11a4804b84d2ee566e8ddd47/cues.html
+Author: staresto-create ZZSH
+Title: 如何看出前後文怎麼接起來：代名詞、換句話說、轉折、讓步和舉例｜閱讀測驗題庫
+Noncommercial educational text only
+
+閱讀測驗題庫 ／ 如何看出前後文怎麼接起來
+如何看出前後文怎麼接起來
+如何辨識文章的組織方式談的是整篇文章的各段怎麼安排；這一頁談的是更小的地方，句子和句子之間靠哪些字接起來。這些字讀的時候很容易滑過去，可是大考常靠它們出題：代名詞指的是誰、一個難字是什麼意思、正確選項換了什麼說法。每一節說明一種線索在做什麼、讀的時候怎麼認、作答時怎麼用，例句都取自大考文章，最後附大考歷屆試題，寫出那個字怎麼帶你找到答案、或排除錯誤選項。最後一節把這些線索合起來，解「把句子放回段落」的題目。
+代名詞指的是誰換個說法的名詞正確選項換句話說解釋的記號轉折和對比讓步舉例有保留的說法把句子放回段落
+大考怎麼看這件事
+大考中心〈學科能力測驗英文考科考試說明〉寫到，閱讀測驗評量考生「綜合運用詞彙（含慣用語），掌握語意、語法、語用以及篇章結構的知識，理解文意脈絡、擷取文章重要訊息，並加以分析、比較與推理的能力」。「理解文意脈絡」靠的就是這一頁談的線索：前一句和後一句怎麼接、換了說法的字指的是不是同一樣東西。考試說明的題例也有兩題直接考這件事，放在下面「換個說法的名詞」一節。
+大學入學考試中心〈學科能力測驗英文考科考試說明〉（115 學年度起適用）。大考中心公告頁
+代名詞指的是誰Pronouns
+it、they、this、that、so、such 這些字代替前面提過的人、東西、一件事或一個動作。
+這種線索在做什麼
+英文不喜歡一直重複同一個字，前面提過的人、東西或一件事，後面常用代名詞代替。讀到 it、they、them、this、that 的時候，要是不知道它指的是什麼，整句的意思就會讀錯。so、such 嚴格說來不是代名詞，但也是回頭指前面說過的事，找的方法一樣，所以放在這一節一起談。大考的指涉題問的就是這件事，題幹多半是 What does “...” refer to?，本題庫一共有 50 題。這一節談代名詞，下一節談換個說法的名詞。
+怎麼認
+it、they、them、its、their：指前面的人或東西，單數、複數要對得上。
+this、that、these、those：可以指一樣東西，也常指前面一整句、一整件事。例如 103 指考〈以基因改造蚊子對抗瘧疾〉第 3 段 And if that happens, the scientists are back where they started.（一旦發生這種情況，科學家就得從頭來過。），that 指的是前一句說的整個情況。
+do the same、do so：代替前面的動作。例如 107 學測〈白宮的歷史〉第 2 段 Abraham Lincoln did the same, but then the inaugural crowds became far too large for the White House to accommodate comfortably, and this also created a security issue.（林肯也照著這麼做，但是後來就職的人潮多到白宮容納不下，也造成了安全問題。），did the same 指前面說的傑佛遜開放白宮、歡迎民眾的做法。同一句後半的 this，指的又是人潮多到白宮容納不下這件事。
+so：用在 if so（如果是這樣），或接在 think、hope、believe、say 這類動詞後面（I think so），代替前面一整句話。這裡的 so 頂替的是一個子句，所以代回去的是一整句，不是一個名詞。例如 83 學測〈卡內基獎章：表彰英雄事蹟〉第 3 段 Sometimes these heroes are in need or are hurt. If so, they receive money as well as the Carnegie Medal.（有時候這些英雄生活困難或受了傷，這樣的話，他們除了卡內基獎章，還會得到一筆錢。），If so 就是 if these heroes are in need or are hurt。
+such：such 單獨用的時候，代替前面說過的身分或性質，最常見的是 as such（以這樣的身分、正因為是這樣）。和 so 一樣，such 頂替的是前面的一段話，所以要往前找，再把它代回去。例如 99 學測文意選填〈足球與團隊精神〉第 3 段 He understands his place in the team; he knows he is a member of society and must behave himself as such.（他懂得自己在團隊裡的位置，知道自己是社會的一份子，就必須以這樣的身分約束自己的言行。），as such 就是 as a member of society。這一格考的是 behave，答對率只有 35%。閱讀測驗裡也有，例如 103 指考〈比特幣簡介與使用須知〉第 5 段 Bitcoin is a new invention that is exploring ideas that have never been attempted before. As such, its future cannot be predicted by anyone.（比特幣是一項新的發明，正在探索前所未有的概念。正因為如此，沒有人能預測它的未來。），As such 是「正因為它是這樣的東西」，指前一句說比特幣是前所未有的新發明。such 加上名詞，也可以回頭指「前面說的那種」，例如 100 指考〈動物實驗的必要性與倫理爭議〉第 1 段 In an ideal world, people would not test medicines on animals. Such experiments are stressful and sometimes painful for animals, and expensive and time-consuming for people.（在理想的世界裡，人們不會拿動物來測試藥物。這種實驗對動物來說壓力很大，有時候還很痛苦；對人來說，又花錢又耗時間。），Such experiments 就是前一句說的拿動物測試藥物。不過 such 和後面的 that 連在一起用（such … that），是在強調「這麼……，所以……」，不是回頭指前面的事，例如 110 學測〈仙人掌的再生能源應用〉第 1 段 The prickly pear cactus is such a powerful symbol in Mexico that it occupies a prime spot on Mexico’s national flag.（仙人掌在墨西哥是極具分量的象徵，甚至占據墨西哥國旗上的顯要位置。），such a powerful symbol … that 是「象徵意義大到……」，後面的 that 接的是結果。至於 such as，後面接的是例子，是另一種用法，見舉例一節。
+one、another、others：代替前面提過的同一類東西。例如 106 學測〈畫家溫斯洛·霍默〉第 3 段 Others speak to more universal themes such as the primal relationship of humans to nature.（其他作品則觸及更普遍的主題，例如人和大自然之間最原始的關係。），Others 是他其他的作品，接著前一句的 Many of his works。ones 是 one 的複數，例如 96 指考〈安德魯·卡內基的生平與慈善〉第 3 段 He devoted himself to the replacement of wooden bridges with stronger iron ones and earned a fortune.（他全心投入，用更堅固的鐵橋取代木橋，賺了大錢。），iron ones 就是 iron bridges，ones 代替前面的 bridges。
+the former（前者）、the latter（後者）：前面先提兩樣東西，the former 指前一個，the latter 指後一個，要回頭對清楚是哪一個。例如 109 指考〈紐西蘭全黑隊與毛利哈卡舞〉第 3 段 Thanks to the All Blacks, two of the haka have become widely renowned: Ka Mate and Kapa o Pango. The former was composed by a Māori chief in the early 1800s about how he outsmarted his enemies.（因為全黑隊的關係，有兩支哈卡變得廣為人知：Ka Mate 和 Kapa o Pango。前者是一位毛利酋長在 1800 年代初創作的，內容是他怎麼智取敵人。），The former 是前一個 Ka Mate；同一段後面的 The latter 指後一個 Kapa o Pango，是 2005 年專門替全黑隊寫的。
+作答時怎麼用
+找代名詞指的是什麼，可以照這三個步驟：
+[1] 往前找。代名詞指的東西幾乎都在它前面，很少是後面才出現的字。
+[2] 對單複數，也對人和東西。them 要找複數，it 要找單數；動作是人做的，就要找人。
+[3] 代回原句檢查。把找到的字放回代名詞的位置，句子要讀得通、意思要合理。
+錯誤選項常是同一句裡、離代名詞很近的另一個名詞，只看位置就會選錯，所以第 [3] 步一定要做。
+考卷上怎麼考
+115 學測第 40 題（答對率 38%）
+What does “them” in the third paragraph refer to?
+(A) Stairs.
+(B) Confines.
+(C) Attackers.
+(D) Defenders.
+them 是複數，前面是 retreat up（往上退），要找一樣可以往上走的東西。往前找，同一段前面講的都是樓梯（the stairs），代回去是 retreat up the stairs（退到樓上），所以是 (A)。(C)、(D) 是人，「退到人的上面」說不通；(B) confines 在 them 後面才出現，代名詞不會指後面的字，代回去也接不上 retreat up。
+到互動練習作答這一篇 → 看原文與解析
+103 指考第 51 題（答對率 51%）
+What does “that” in the third paragraph refer to?
+(A) Some malaria parasites escaping from the ecosystems.
+(B) Malaria parasites becoming immune to the engineered bacterium.
+(C) Modified mosquitoes becoming more competitive than the wild ones.
+(D) Transmission of malaria being blocked from mosquitoes to humans.
+這裡的 that 指前一句整件事：要是有寄生蟲從這個機制漏網，下一代很可能產生抗性（become resistant to it）。代回去檢查：寄生蟲產生抗性，科學家就得從頭來過，前後說得通，所以是 (B)，選項把 resistant 換成 immune。(C) 照抄同一段的 competitive，可是改造蚊子更有競爭力是科學家想要的結果，做到了不會從頭來過；(D) 阻斷瘧疾傳給人是第 2 段的成果，也不會讓科學家從頭來過；(A) 照抄第 4 段的 ecosystems，原文說的是寄生蟲從這個機制漏網，不是從生態系逃走。
+到互動練習作答這一篇 → 看原文與解析
+100 指考第 45 題（答對率 74%）
+What does the word “so” in the first paragraph refer to?
+(A) To catch and keep small creatures.
+(B) To find a good material for the web.
+(C) To observe the behavior patterns of spiders.
+(D) To present a fantastic architecture by animals.
+In order to do so 的 do so 代替前一句的動作：蜘蛛網的主要功能是攔住並困住（intercept and hold）蒼蠅、蜜蜂這些飛行的獵物，讓蜘蛛有時間抓住。代回去是 In order to intercept and hold flying prey，後面接著說網絲要承受獵物撞上來的力量，前後說得通，所以是 (A)，選項把 flying prey 換成 small creatures。(D) 照抄第 1 段第一句的 architecture，那是開場的介紹，不是一個動作；(B) 照抄第 2 段的 material，網的材料是後面才談的；(C) 原文沒有提到觀察蜘蛛的行為。
+到互動練習作答這一篇 → 看原文與解析
+換個說法的名詞Synonyms and General Nouns
+同一樣東西，作者在後文換一個名詞來指它。
+這種線索在做什麼
+作者除了用代名詞，也常換一個名詞來指前面的東西，免得同一個字一再重複。換上的名詞有三種：同義詞，例如 hard hat 後面寫成 helmet、headgear；意思比較籠統的字，例如前面寫魚皮移植，後面只說 this pioneering procedure（這種開創性的療法）；比喻，例如把桑吉巴寫成 these jewels on the Indian Ocean（這幾顆印度洋上的珠寶）。
+大考中心〈學科能力測驗英文考科考試說明〉在閱讀測驗的題例裡，就收了兩題考這種寫法的題目（下面的 111 學測第 42 題、112 學測第 46 題），說明寫的是「本題評量考生能否利用上下文解讀文中以同義詞作為指代詞（anaphora）的篇章功能」，也說考生要「隨著各段文意發展掌握這些同義詞在篇章脈絡中所展現的語意連結功能（lexical cohesion）」。也就是說，讀的時候要一路認出，換了說法的名詞指的還是同一樣東西。
+怎麼認
+this、the 加上一個前面沒出現過的名詞，常是在指前面的東西。例如 106 學測〈狗狗認知測驗 Dognition〉第 2 段 Dr. Hare, one of the venture’s co-founders, says a dog’s intelligence can’t be described with a single number.（這家新創公司的共同創辦人之一 Hare 博士說，狗的智能沒辦法用單一數字描述。），the venture 指前一段那家剛成立的公司 Dognition。
+意思比較籠統的名詞：practice（做法、習俗）、procedure（程序、療法）、approach（做法）、tradition（傳統）、problem、issue。例如 107 指考〈斯瓦巴全球種子庫的爭議〉第 3 段 Yet, the highly centralized approach may not be able to help farmers cope with climate change, fifty or a hundred years from now.（然而，這種高度集中的做法，五十年或一百年後，可能沒辦法幫助農民因應氣候變遷。），the highly centralized approach 指前面說的，把種子集中在機構保存的做法。
+比喻：作者用一個形象的說法指同一樣東西，像 these jewels on the Indian Ocean。
+作答時怎麼用
+讀到一個沒見過的名詞前面加了 this 或 the，先往前找它換掉的是哪一個字，再看兩邊的意思對不對得上，例如 procedure（療法）對得上前面的 transplantation（移植手術）。要是題目問哪幾個字指同一樣東西，就把每一個字放回原文，看它指的是那樣東西本身，還是跟那樣東西有關的另一樣東西，例如安全帽上的配件、島上的聚落。
+考卷上怎麼考
+111 學測第 42 題（答對率 51%）
+Which of the following words are used in the passage to refer to the hard hat?
+a. tool b. code c. device d. helmet e. accessory f. headgear
+(A) a, b, d, e
+(B) a, c, d, f
+(C) c, d, e, f
+(D) a, d, e, f
+作者用了四個說法來指安全帽：第 1 段的 a helmet、the headgear、the number one safety tool，第 2 段的 a head protection device，所以是 (B)。b. code 是第 3 段的 color code（顏色標示），用來分辨工地上的人和他們的職務；e. accessory 是第 3 段說的，後來加裝在安全帽上的配件。這兩個字都和安全帽有關，可是指的不是安全帽本身，所以含有 b 或 e 的 (A)、(C)、(D) 都不對。
+到互動練習作答這一篇 → 看原文與解析
+112 學測第 46 題（答對率 43%）
+Which set of words is used in the passage to refer to Zanzibar?
+(A) islands, settlements, posts, crossroads
+(B) islands, posts, jewels, destination
+(C) archipelago, islands, jewels, destination
+(D) archipelago, settlements, paths, islands
+第 1 段先說桑吉巴是由幾座島嶼組成的群島（archipelago），下一句接著用 This popular beach destination（這個熱門的海灘勝地）指它；第 2 段說亞洲商人早就到過這些島嶼（the islands）；第 4 段最後用比喻 these jewels on the Indian Ocean 收尾，所以是 (C)。(A)、(B)、(D) 混進的 settlements、posts 是波斯商人在島上建立的聚落和貿易據點，crossroads 是第 3 段說桑吉巴位在香料之路的交會點（at the crossroads of the Spice Route），paths 是各種宗教在這裡交會的路徑，都不是桑吉巴本身。
+到互動練習作答這一篇 → 看原文與解析
+113 學測第 44 題（答對率 27%）
+What does “this pioneering procedure” in the second paragraph refer to?
+(A) 100% Fish’s mission.
+(B) Oddsson’s skin transplant.
+(C) A fundamental change in seafood business.
+(D) A new approach to protect the environment.
+this pioneering procedure 前面有 this，要往前找。前一句說 Oddsson 的魚皮移植（fish skin transplantation）是這個計畫的一部分；這一句說這種療法出自這項冰島的計畫（from which this pioneering procedure emerged）。procedure 在醫學上是手術、療法，對得上的是魚皮移植，所以是 (B)。(A) 計畫的任務、(C) 從根本改變漁業，指的都是計畫本身；療法是從計畫裡產生的，不是計畫。(D) 的 environment 呼應同一段的 environmental efficiency，講的也是整個計畫。
+到互動練習作答這一篇 → 看原文與解析
+正確選項換句話說Paraphrase
+正確選項多半把原文換一個說法，錯誤選項反而常照抄原文的字。
+這種線索在做什麼
+大考的正確選項很少照抄原文，通常把原文換一個說法：換成同義詞、換成反面的說法，或把一整句話濃縮成一個字。錯誤選項反而常照抄原文的字，讓人一看到熟悉的字就選下去。本題庫 959 題的解析裡，有 632 題指出錯誤選項照抄原文的字詞。所以作答時要對的是意思，不是字。
+怎麼認
+正確選項常見的換字方式：
+換成同義詞：wealthy 換成 rich，frugal 換成 economical（104 學測第 49 題，見下面）；rough ground 換成 uneven fields（112 學測第 40 題）。
+換成反面的說法：beyond the means of the majority（大部分人負擔不起）換成 too expensive for most people（106 學測第 55 題）。
+把一件事濃縮成一個字：「拿走一份、留下一份」濃縮成 exchanged（93 指考第 48 題，見下面）。
+作答時怎麼用
+先在原文找到答案所在的那一句，用自己的話把那一句的意思說一次，再去找意思相同的選項，不要找字一樣的選項。看到選項照抄原文的字，就要多檢查一步：抄來的字接上去的意思，和原文說的一不一樣。照抄的錯誤選項常見的錯法，是把甲的事情安到乙身上、把一部分說成全部，或接上文章沒說的事情，如何辨識文章的組織方式頁首的四種常見錯誤有詳細的說明。
+考卷上怎麼考
+104 學測第 49 題（答對率 56%）
+Which of the following best describes Cartier-Bresson’s family background?
+(A) His family was rich but was very economical.
+(B) His father went to Paris to open a textile factory.
+(C) His wealthy family went bankrupt and became poor.
+(D) His parents were very liberal in their ways of education.
+第 2 段說布列松家境富裕（wealthy），但父母很節儉（frugal），家裡常常「看起來好像」很窮。(A) 把 wealthy 換成 rich、frugal 換成 economical，意思和原文一樣，所以是 (A)。(B) 照抄 textile，原文只說父親經營紡織業發了財，沒說他去巴黎開工廠；(C) 照抄 poor，原文說的是看起來像很窮，不是真的破產；(D) 照抄第 3 段的 education，第 3 段說他反抗父母拘謹的教育方式，和開明正好相反。
+到互動練習作答這一篇 → 看原文與解析
+93 指考第 48 題（答對率 27%）
+It can be inferred from the passage that ______.
+(A) geocachers like to chase geese all over the world
+(B) one can learn to be a geocacher exclusively in Utah State
+(C) geocaching requires that items be exchanged among its participants
+(D) caches are spa products hidden in remote places throughout the world
+原文說地理藏寶靠榮譽制度運作：玩家拿走寶藏裡的東西，就要留下一份自己的寶藏。拿走一份、留下一份，等於參加的人彼此交換物品，(C) 把這個規則濃縮成 exchanged，所以是 (C)。另外三個選項都照抄原文的字：(A) 照抄 goose chase，原文借用 wild goose chase（白忙一場的搜尋）來形容這場尋寶遊戲，沒有人真的去追鵝；(B) 照抄 Utah，猶他州只是可以學地理藏寶的地方之一，exclusively（只能）把話說死了；(D) 照抄 spa products，只有那家度假村的寶藏裝的是 spa 用品。
+到互動練習作答這一篇 → 看原文與解析
+解釋的記號Definition Signals
+難字或特別的說法旁邊，作者常用標點或固定的說法直接解釋。
+這種線索在做什麼
+文章裡出現難字，或用了一個特別的說法，作者常在旁邊直接解釋，前面放一個記號。認得這些記號，難字的意思往往就寫在旁邊。大考的字義題（問 closest in meaning 或 What does … mean?）本題庫一共有 68 題，不少題的答案就靠這些記號推出來。
+怎麼認
+冒號（:）：後面解釋前面的說法，或列出內容。下面 113 學測第 40 題的 the blackened heart，解釋就在冒號後面。
+破折號（—）：一對破折號中間，常是前一個字的解釋。例如 93 指考〈新型戶外活動：地理藏寶〉第 1 段 Hikers looking for something a little different on their treks created a global hunting game, hiding “caches”—packs filled with goodies like CDs, photographs, and journals—in obscure places throughout the world.（一群健行的人想找點不一樣的樂趣，發明了一種全球性的尋寶遊戲，把「寶藏」藏在世界各地不起眼的地方，寶藏是一包包裝著 CD、照片、日記這類小東西的袋子。），兩個破折號中間就在解釋 caches 是什麼。
+括號：例如 84 學測〈電腦駭客與網路犯罪〉第 1 段 Breaking into the computer codes (known as 'hacking') of banks, large companies or even government departments is the latest game for super-intelligent teenagers.（破解銀行、大企業，甚至政府部門的電腦密碼（也就是所謂的「駭客入侵」），是超級聰明的青少年最新的遊戲。）。括號裡也常見 i.e.（也就是）。
+逗號隔開的同位語：名詞後面加逗號，再放一個名詞，說明前面那個名詞是什麼，像下面 106 學測第 54 題 a lasting British institution 後面的 the “tea break”。
+固定的說法：called（叫做）、known as（稱為）、refers to（指的是）、in other words（換句話說）、that is（也就是）。例如 91 學測補考〈民間故事的本質與價值〉第 2 段 A tall tale, in other words, is a story in which the truth has been exaggerated.（換句話說，誇張故事就是把事實誇大了的故事。）。meaning（意思是） 放在名詞後面，也是直接寫出意思，例如 105 學測〈日本的血型性格論〉第 4 段 In fact, this seems so common that the Japanese now have a term for it: bura-hara, meaning blood-type harassment.（事實上，這種情形似乎普遍到日本人已經為它造了一個詞：bura-hara，意思是「血型騷擾」。），bura-hara 是日文，後面的 meaning 直接說出它的意思。
+逗號加上 or（也就是）：名詞後面加逗號，再接 or 和另一個說法，這個 or 不是「或者」，是「也就是」，後面那個說法常比較好懂。例如 92 學測〈魔術的歷史演變〉第 1 段 A magician named Dedi of Dedsnefu was reported to have performed for the pharaoh, or the king.（據說有一位叫做 Dedi of Dedsnefu 的魔術師，曾經為法老，也就是國王表演。），不認得 pharaoh，看 or 後面的 the king 就知道是國王。又如 97 學測〈吼猴的行為與地域性〉第 1 段 Howler monkeys are named for the long loud cries, or howls, that they make every day.（吼猴的名字來自牠們每天發出的又長又響的叫聲，也就是吼聲。），howls 就是前面說的 the long loud cries。or 也可以反過來用，先寫一般的說法，再接專門的名稱，例如 100 學測綜合測驗第 16–20 題那一篇 Egyptians also built pyramids as tombs for their kings, or pharaohs.（埃及人也建造金字塔，當作國王，也就是法老的陵墓。）。這一句和 92 學測那一句正好相反：一句先寫 pharaoh 再解釋是國王，一句先寫 kings 再帶出專門的稱呼 pharaohs，兩種寫法裡的 or 都是「也就是」。要分辨的是列舉：同一段的 fight for food, mates, or territory（爭奪食物、配偶或地盤）列出三樣不同的東西，這個 or 才是「或者」。or 前後是同一樣東西的兩種說法，才是換個說法。
+作答時怎麼用
+遇到不認得的字，先別急著跳過，看它前後有沒有冒號、破折號、括號、同位語、逗號加上 or，或 called、in other words 這些說法。記號後面那一段話就是解釋，把它濃縮成一個詞，再去對選項。要是作者沒有直接解釋，再看前後句的轉折和例子，後面幾節會談。
+考卷上怎麼考
+113 學測第 40 題（答對率 70%）
+Why does the author use “the blackened heart” in paragraph 2 to describe Moran’s hometown?
+(A) The place was severely polluted.
+(B) The town was filled with darkened holes.
+(C) There were many evil-hearted industry owners.
+(D) The laborers mostly wore dark and dirty uniforms.
+the blackened heart 後面緊接著冒號，冒號後面就是解釋：大街是「又暗又難看的洞」，流經當地的河是一條髒水。工業革命把這個地方燻黑了，所以 blackened 指的是汙染嚴重，是 (A)。(B) 照抄冒號後面的 hole，可是「洞」是形容大街的比喻，不是真的有很多洞；(C) 照抄 heart，這裡的 heart 是「核心地帶」，不是人心；(D) 文章沒有提到工人的制服。
+到互動練習作答這一篇 → 看原文與解析
+106 學測第 54 題（答對率 57%）
+What does the phrase “a lasting British institution” in the first paragraph mean?
+(A) The most popular British organization.
+(B) A long-standing tradition in the UK.
+(C) The last tea company in London.
+(D) A well-established British business.
+a lasting British institution 後面加逗號，接著是同位語 the “tea break”，說明這項 institution 就是上午工作到一半喝茶休息的習慣。喝茶休息是一種一直沿用下來的習慣，lasting 是持久的，institution 在這裡指慣例，所以是 (B)。(A) 組織、(D) 企業，用的是 institution 另一個常見的意思「機構」，套不上 tea break；(C) 把 lasting 看成 last（最後的）。
+到互動練習作答這一篇 → 看原文與解析
+107 學測第 54 題（答對率 46%）
+Which of the following is closest in meaning to the word “undertones” in the first paragraph?
+(A) Consequences.
+(B) Vocals.
+(C) Whispers.
+(D) Messages.
+同一段前面已經用冒號解釋過這首搖籃曲的 message（訊息）：寶寶如果不停止哭鬧，惡魔就會把他吃掉。接著作者說，許多搖籃曲都有 dark undertones，指的就是這種藏在歌詞裡、令人不安的訊息，所以是 (D)。兩個破折號中間的 including those sung today（包括現在還在唱的）只是補充，跳過它，句子的主幹是 many lullabies have dark undertones。(A) 照抄同一段的 consequences，那是歌詞警告的後果；(B)、(C) 是從 tone 聯想到聲音，可是這裡講的是歌詞的意思。
+到互動練習作答這一篇 → 看原文與解析
+轉折和對比Contrast Signals
+but、however、yet 這類字表示後面的意思和前面相反或不同。
+這種線索在做什麼
+but、however、yet 這類字出現，表示後面要說的和前面相反，或至少不一樣。前後兩邊的意思相反，知道其中一邊，就推得出另一邊；不認得的字落在其中一邊，就用另一邊反推它的意思。轉折也常是重點所在：前面先說一般人的看法，轉折後面才是作者真正要說的。
+怎麼認
+轉折：but、however（不過）、yet（然而）、nevertheless（儘管如此）。例如 102 指考〈斯巴達松超級馬拉松的魅力〉第 4 段 However, the euphoria is fleeting.（不過，這種興奮很快就消失了。），見下面 102 指考第 50 題。
+取代：instead（反而）、instead of（而不是）、rather than（而不是）。例如 108 學測〈「腦中神曲」現象〉第 2 段 Earworms often take the form of song fragments rather than entire songs, and the song is usually a familiar one.（耳蟲常常是歌曲的片段，而不是整首歌，而且通常是熟悉的歌。），rather than 後面那一邊是作者否定的說法，選項要是寫成後面那一邊，就和原文說的相反。
+兩件事對比：while（而）、whereas（而）、unlike（不像）、in contrast（相較之下）、on the other hand（另一方面）。例如 94 指考〈全球超高建築競賽與杜拜塔〉第 2 段 While New York built skyscrapers because land was scarce, Dubai is doing it to get on the world map.（紐約蓋摩天大樓是因為土地不足，杜拜蓋摩天大樓，卻是為了讓自己登上世界地圖。）。on the other hand 常插在句子中間，前一句講一邊，這一句講另一邊，例如 110 學測〈護照的歷史〉第 2 段 In medieval Europe, on the other hand, travel documents were issued by local authorities, and generally contained a list of towns and cities which the document holder was permitted to enter or pass through.（另一方面，在中世紀的歐洲，旅行文件由地方當局核發，上面通常列出持有人可以進入或通過的城鎮。），前一句講伊斯蘭哈里發國用繳稅收據當護照，這一句講歐洲由地方當局發文件，兩邊對照。
+糾正前面的想法：actually（其實）、in fact（事實上）。前面先寫一般人的想法（many people think、a widely accepted belief），actually、in fact 後面才是真正的情況，也就是作者要說的重點。例如 108 學測〈除蟲炸彈的無效性〉第 1 段 Many people think these bug killers or pesticides will penetrate every place where the insects hide. Actually, quite the opposite is true.（很多人以為這些殺蟲劑能滲透到蟲子藏身的每個地方，事實上正好相反。），Actually 後面說的才是事實：害蟲一察覺藥霧，反而躲進牆壁裡。不過 in fact 也可能只是往同一個方向補充，例如 111 學測〈馬賽人的文化與傳統〉第 2 段 In fact, they are one of the few tribes that have retained most of their traditions.（事實上，馬賽人是少數保留了大部分傳統的部落之一。），前一句說馬賽人不理會政府要他們改變生活方式的勸說，這一句接著說他們保留了大部分傳統，意思是同一個方向，所以要看前後是相反還是同一個方向。
+less A and more B：與其說是 A，不如說是 B，A 和 B 的意思相對，見下面 115 學測第 45 題。
+注意 while 有兩種意思：放在兩件事中間對比，是「而」；表示「雖然」，就是讓步，見讓步一節。
+作答時怎麼用
+[1] 找出轉折字前後的兩邊。[2] 看清楚哪一邊是作者真正要說的，通常是轉折後面那一邊。[3] 字義題：不認得的字落在其中一邊，它的意思不是和另一邊相反（blip 對 rule），就是接著另一邊往下說（euphoria 接著 overjoyed）。
+考卷上怎麼考
+115 學測第 45 題（答對率 39%）
+Which of the following is closest in meaning to “a blip” in the last paragraph?
+(A) A temporary state.
+(B) An urgent need.
+(C) A critical decision.
+(D) An advanced system.
+less a rule and more a blip 是「與其說是規則，不如說是 blip」，blip 要和 rule（長久的規則）相對。下一句又說，經過幾百年的科技進步，我們又回到了古代的起點，北方朝上只維持了一段時間，所以 blip 是一時的現象，是 (A)。(B) 急迫的需要、(C) 關鍵的決定，都和 rule 構不成對比；(D) 的 advanced 和下一句的 technological advancements 字形相近，可是 blip 講的是這個慣例維持不久，和技術先不先進無關。
+到互動練習作答這一篇 → 看原文與解析
+102 指考第 50 題（答對率 37%）
+What does the euphoria is fleeting in the last paragraph mean?
+(A) The feeling of triumph will last forever.
+(B) The race is incomprehensibly difficult to finish.
+(C) The fatigue after the race is overwhelming.
+(D) The excitement of finishing the race is soon gone.
+euphoria 和 fleeting 兩個字都不常見，要從前後句推。前一句說完賽的跑者欣喜若狂（overjoyed），However 轉折以後說 the euphoria，euphoria 指的就是這種狂喜；轉折表示接下來的情況不一樣了，下一句果然說幾分鐘之內（Within a few minutes），關節和肌肉就開始僵硬。狂喜維持不了多久，所以 fleeting 是「短暫的」，答案是 (D)。(A) 和 fleeting 的意思相反；(C) 疲勞是下一句的內容，不是 euphoria 的意思；(B) 比賽很難跑完是第 3 段的內容，也不是這一句說的。
+到互動練習作答這一篇 → 看原文與解析
+94 指考第 47 題（答對率 37%）
+The main purpose for building the Dubai Tower is ______.
+(A) for people who are not scared of heights to work on the top floor
+(B) for the construction company to maintain its business
+(C) for the Arab world to honor its industrialization
+(D) for the city of Dubai to gain world fame
+while 把紐約和杜拜放在一起對比：紐約蓋摩天大樓是因為土地不足，杜拜卻是為了登上世界地圖（get on the world map）。對比的重點在後半句，營造公司總裁接著也說，就是為了形象（image）。登上世界地圖、打響形象，就是讓杜拜聞名全世界，所以是 (D)。(A) 照抄 work on the top floor，那是總裁的一句玩笑話；(B) 照抄 construction，原文提到營造公司，是為了引用總裁的話；(C) 照抄第 1 段的 honor，原文說的是替阿拉伯世界奪回擁有最高建築的榮耀，不是表揚工業化，而且第 3 段說正在工業化的是亞洲國家。
+到互動練習作答這一篇 → 看原文與解析
+讓步Concession
+although、though、while、despite 先承認一件事，主要子句才是作者要說的重點。
+這種線索在做什麼
+讓步就是先退一步：作者先承認一件事，接著說出他真正的看法，或他要強調的事實。although 子句裡說的也是事實，只是不是重點，重點在主要子句。大考兩邊都會考：問作者的看法或事情的主要原因，答案在主要子句；問到讓步子句裡那件事，也不能因為它不是重點就刪掉。
+怎麼認
+although（雖然）、though（雖然）、even though（雖然），後面接一個完整的句子。例如 90 學測〈大仲馬的傳奇人生與作品〉第 1 段 Even though they were written 150 years ago, Alexander Dumas’ action novels still excite millions of readers around the world, in close to a hundred languages.（大仲馬的動作小說雖然是 150 年前寫的，到現在仍然讓全世界幾百萬名讀者看得興奮不已，譯成的語言將近一百種。），主要子句常和 still、yet 一起出現，強調「儘管如此，還是…」。
+while（雖然）放在句首：例如 102 學測〈印度 Bindi 的文化意涵〉第 1 段 While it is generally taken as an indicator of their marital status, the practice is primarily related to the Hindu religion.（一般人通常把紅點看作已婚的記號，不過這個習俗主要和印度教有關。）。while 也可以表示兩件事對比（「而」），見轉折和對比一節；分辨的方法是看前後兩件事：一件承認、一件才是重點，就是讓步。
+despite（儘管）、in spite of（儘管），後面接名詞，不接句子，見下面 108 學測第 48 題。
+作答時怎麼用
+[1] 把讓步子句和主要子句分開，找出 although、while、despite 管到哪裡。[2] 題目問作者的看法、事情真正的原因，答案在主要子句。[3] 讓步子句裡的事情也是真的，題目問到它時，照樣可以當答案。
+考卷上怎麼考
+102 學測第 53 題（答對率 59%）
+Why did people in India start wearing a red dot on their forehead?
+(A) To indicate their social rank.
+(B) To show their religious belief.
+(C) To display their financial status.
+(D) To highlight their family background.
+While 子句先承認一般人把紅點看作已婚的記號，主要子句才說出重點：這個習俗主要（primarily）和印度教有關。題目問人們為什麼開始點紅點，要看主要子句，選項把 related to the Hindu religion 換成 show their religious belief，所以是 (B)。(A) 社會階級、(C) 經濟狀況、(D) 家世背景，文章都沒提；已婚的記號只是一般人的看法，選項裡也沒有。
+到互動練習作答這一篇 → 看原文與解析
+108 學測第 48 題（答對率 53%）
+Which is closest in meaning to the word “encroachment” in the last paragraph?
+(A) Invasion.
+(B) Appointment.
+(C) Objection.
+(D) Enrichment.
+Despite 先承認一件事：殖民勢力在文化和政治上的 encroachment 帶來威脅；主要子句再說：圖騰柱的雕刻藝術還是流傳了下來（has survived）。會對原住民文化構成威脅的，是外來勢力的侵入，所以 encroachment 最接近 (A) Invasion。(D) Enrichment 是使豐富，和「威脅」方向相反；(B) 任命、(C) 反對都談不上威脅，也和「儘管如此仍然流傳下來」接不起來。
+到互動練習作答這一篇 → 看原文與解析
+107 學測第 43 題（答對率 39%）
+Who initiated the construction of the White House?
+(A) John Adams.
+(B) James Hoban.
+(C) George Washington.
+(D) Thomas Jefferson.
+第 1 段最後說 Although President Washington oversaw the construction of the house, he never lived in it.（華盛頓總統雖然監督了白宮的興建，卻從來沒有住過。）主要子句的重點是華盛頓沒住過，可是這一題問的是誰發起興建，答案要看讓步子句和更前面的句子：1790 年華盛頓宣布聯邦政府要設在波多馬克河畔，籌備工作接著展開，他也監督了興建，所以是 (C)。(A) 亞當斯是下一句說的第一批住戶，搬進去不等於發起興建；(B) 霍本是贏得設計比賽的建築師，負責的是設計；(D) 傑佛遜到第 2 段才出現，是開放白宮讓民眾參觀的總統。這一題提醒的是：讓步子句不是重點，但說的仍然是事實。
+到互動練習作答這一篇 → 看原文與解析
+舉例Examples
+such as、for example、including 後面的例子，回頭說明前面那個字或那句話。
+這種線索在做什麼
+例子是最具體的線索。前面出現一個抽象的說法或難字，後面接著舉例，看這些例子有什麼共同點，就知道前面那個說法指的是什麼。反過來，讀到例子也要回頭找它在說明哪一句話。推論題、字義題都常靠例子推出答案。
+怎麼認
+such as（例如）、like（像是）、including（包括）：接在名詞後面，直接列出例子。
+for example（舉例來說）、for instance（舉例來說）：通常放在句首或句中，整句都是例子。
+Take … for example（以…為例）：例如 93 指考〈新型戶外活動：地理藏寶〉第 1 段 These days, even a walk in the woods can be transformed into an “extreme” sport. Take “geocaching,” for example.（現在，連在樹林裡散步都能變成一項「極限」運動，「地理藏寶」就是一個例子。），地理藏寶是用來說明前一句：連散步都能變成極限運動。
+作答時怎麼用
+[1] 找出例子在說明哪一個字或哪一句話。[2] 看例子的共同點，濃縮成一個詞，例如水資源有限的沙烏地阿拉伯，共同點是缺水。[3] 例子只是其中一個，選項要是把例子說成全部或唯一，就是以偏概全。
+考卷上怎麼考
+107 學測第 49 題（答對率 75%）
+Which of the following is closest in meaning to “arid” in the first paragraph?
+(A) Occupied.
+(B) Isolated.
+(C) Dry.
+(D) Remote.
+arid regions 後面接 such as Saudi Arabia，再補一句 where there are limited water resources（那裡水資源有限）。沙烏地阿拉伯這個例子，加上同一句說這些地區淡水供應不足，可見 arid 是缺水、乾旱，是 (C)。(A) 有人居住的、(B) 孤立的、(D) 偏遠的，都和缺水無關。
+到互動練習作答這一篇 → 看原文與解析
+107 指考第 43 題（答對率 59%）
+According to the passage, which of the following is an advantage of Li-Fi over Wi-Fi?
+(A) Li-Fi can be powered by radio and save more energy.
+(B) Li-Fi guides pedestrians in areas where vehicles cannot travel.
+(C) Li-Fi provides safer transmission of data during a power failure.
+(D) Li-Fi can be used in areas where Wi-Fi may interfere with radar signals.
+electromagnetic sensitive areas（對電磁敏感的地方）不好懂，後面的 such as 舉出機艙、醫院、核電廠，都是怕無線電干擾的地方；句末再說明原因：光線不會干擾無線電訊號（does not interfere with radio signals），而 Wi-Fi 用的是無線電波。所以 Li-Fi 可以用在 Wi-Fi 可能造成干擾的地方，是 (D)。(A) 照抄 radio，無線電波是 Wi-Fi 用的，Li-Fi 用的是 LED 燈的光；(C) 照抄第 3 段的 safer，那是說路燈讓人夜間走路更安全，而且停電時燈不亮，Li-Fi 也沒辦法傳輸；(B) 原文沒有說 Li-Fi 能替行人引路。
+到互動練習作答這一篇 → 看原文與解析
+96 指考第 54 題（答對率 36%）
+What can be inferred from the second paragraph of this passage?
+(A) Diamonds from Liberia are mostly conflict-free.
+(B) Most diamonds from Liberia are labeled correctly.
+(C) Diamonds in Liberia are still traded to support wars.
+(D) Diamonds from Liberia have been carefully investigated by the KPCS.
+such as Liberia 是「叛軍控制的地區」的例子：這些地區開採的鑽石走私到鄰國，再當作無衝突的鑽石出口。同一段第一句也說，戰爭大多結束了，衝突鑽石的問題卻沒有消失。賴比瑞亞既然是這種地區的例子，那裡的鑽石就仍然在交易、用來支持戰爭，所以是 (C)。(A) 照抄 conflict-free，那是走私鑽石冒充的標示，不是事實；(B) 走私出境、冒充無衝突的鑽石，標示並不正確；(D) 照抄第 3 段的 KPCS，原文沒有說 KPCS 仔細調查過賴比瑞亞的鑽石。
+到互動練習作答這一篇 → 看原文與解析
+有保留的說法Hedging
+may、most、usually、at least 這些字標出作者把話說到什麼程度。
+這種線索在做什麼
+作者說話常會留餘地：可能、大部分、通常、至少。選項要和原文說到同一個程度，才是對的。如何辨識文章的組織方式頁首談過「說法太過武斷」：文章說得有保留，選項卻把話說死。不過反過來也要小心，原文自己把話說死的時候，選項照樣寫 only，那就是對的。本題庫 959 題的正確選項裡，含 all、always、only、never、must 這類字的有 28 題，所以重點不是看到這些字就刪，而是回原文對程度。
+怎麼認
+可能：may、might、can、probably、likely。
+數量：some、many、most、a few。
+頻率：usually、often、sometimes、tend to、in most cases。例如 100 指考〈蜘蛛網的構造與絲線特性〉第 1 段 In order to do so, the threads of the web have to withstand the impact forces from large and heavy prey as well as environmental forces from wind and rain for at least a day in most cases.（為了做到這一點，蜘蛛網的絲必須承受又大又重的獵物撞上來的衝擊力，也要承受風雨等環境的力量，大多數情況下，至少要維持一天。）
+看起來、推測：seem、appear、suggest、perhaps、possibly。例如 109 指考〈馬里亞納海溝的深海汙染〉第 5 段 The Mariana Trench is many miles away from any industrial source. This suggests that these pollutants travel over long distances despite having been prohibited worldwide decades ago.（馬里亞納海溝離任何工業汙染源都有好幾英里遠。這表示，雖然這些汙染物幾十年前就已經在全球禁用，仍然能夠遠距離移動。），suggests 表示這是從證據推出來的看法，不是直接看到的事實，選項寫成已經證實（prove）就說過頭了。
+數字：at least（至少）、nearly（將近）、almost（幾乎）、about（大約）、more than（超過）。
+原文自己把話說死：only、all、never、the only。這時選項說得一樣死，才對得上。
+作答時怎麼用
+讀的時候把這些字圈起來。作答時拿選項的程度和原文對：原文說 in most cases，選項寫 usually 對得上，寫 always 就對不上；原文自己說 only，選項寫 only 也對得上。程度對得上，還要再看內容是不是同一件事。
+考卷上怎麼考
+100 指考第 47 題（答對率 43%）
+According to the passage, which statement is true about the silk threads?
+(A) They are all sticky and extendable.
+(B) They are usually strong enough to last for a day.
+(C) They remove harmful chemicals from insects.
+(D) They are made of rare plants in the environment.
+原文說網絲大多數情況下（in most cases）至少要維持一天（for at least a day）。(B) 把 in most cases 換成 usually，程度一樣，所以是 (B)。(A) 的 all 對不上：第 2 段說蜘蛛網用了兩種絲，只有捕獵螺旋那一種有彈性、塗了黏液，不是全部的絲都會黏、都能拉長；(D) 第 2 段的植物是固定絲繫住的地方，原文沒說絲是用稀有植物做的；(C) 原文沒有提到去除昆蟲身上的化學物質。
+到互動練習作答這一篇 → 看原文與解析
+94 學測第 48 題（答對率 28%）
+Which of the following is CORRECT about the earthquake in Bam?
+(A) About 50,000 people survived the earthquake.
+(B) Not many countries sent food and supplies to Bam.
+(C) The 2003 earthquake was the first one in its history.
+(D) The city of Bam would be deserted after the earthquake.
+原文說至少（At least）25,000 人喪生，將近（nearly）全城人口的三分之一。死亡的人將近三分之一，全城大約 75,000 人，活下來的大約三分之二，也就是 50,000 人左右；(A) 用 About，程度也保留了，所以是 (A)。(B) 照抄第 5 段的 supplies，原文說食物和物資來自世界各地；(C) 照抄 2003，原文說這是十多年來最嚴重的地震，可見以前也有地震；(D) 第 5 段說要把巴姆重建得比以前更堅固，不會把城市廢棄。
+到互動練習作答這一篇 → 看原文與解析
+93 學測第 45 題（答對率 31%）
+What reason do the major museums provide for not handing back the ancient objects?
+(A) Only in the leading museums can the objects be fully appreciated by the world.
+(B) It is better for those objects to remain at a certain place than to be moved around.
+(C) They need those well-known ancient objects to attract people from all over the world.
+(D) Ancient civilizations can only be admired if they are removed from their home countries.
+這一題正確選項本身就有 Only。原文說，全世界的人能充分欣賞古代文明，只因為（only … because）博物館讓大家看得到這些文物。原文自己說了 only，(A) 把 only 移到句首寫成 Only in the leading museums can…，程度和意思都和原文一樣，所以是 (A)。(D) 也有 only，可是內容對不上：原文說文物在各大博物館展出，古代文明才這麼受推崇，沒說非得離開原屬國才能受推崇；(C) 照抄 well-known，原文是說埃及文化因此出名，不是博物館需要有名的文物吸引人；(B) 照抄第 2 段的 remain，那是大英博物館館長的說法。
+到互動練習作答這一篇 → 看原文與解析
+把句子放回段落Sentence Insertion
+綜合用上面的線索，判斷一個句子放在哪一段，前後才接得起來。
+這種線索在做什麼
+大考閱讀測驗有時會給一個句子，問放在哪一段最合適，本題庫有 3 題。這種題目靠的就是前面幾節的線索：句子裡往前指的字、換個說法的字、舉例或轉折的字。下面三題正好各靠一種：往前指的 This design、換個說法的 almost nothing left、舉例的 One good example。
+怎麼認
+句子開頭是 This、These、Such 加名詞：前一句要有它指的東西（見代名詞指的是誰、換個說法的名詞）。
+句子裡有和某一段呼應的字，換了說法但意思相同（見正確選項換句話說）。
+句子開頭是 One good example、For example：前面要有它舉例說明的做法或主張（見舉例）。
+句子開頭是 However、But：前面要有相反的說法（見轉折和對比）。
+作答時怎麼用
+[1] 先圈出要放的句子裡往前指、往前接的字。[2] 逐段看，找哪一段的結尾或段中接得上。[3] 放進去以後，從前一句讀到這一句，再讀到下一段，意思要順，也不能和後面的內容衝突。
+考卷上怎麼考
+114 學測第 38 題（答對率 75%）
+Here is a sentence: “This design was adopted in later traffic light designs across the world.” Which paragraph is most suitable to have it as the final sentence?
+(A) Paragraph 1.
+(B) Paragraph 2.
+(C) Paragraph 3.
+(D) Paragraph 4.
+This design 往前指，前一句要剛好講完一個設計；later … across the world 表示這個設計後來世界各地都用。第 3 段最後一句是 Potts 的三色系統，今天的紅綠燈正是紅、黃、綠三色，接得上，所以是 (C)。(A) 第 1 段結尾講的是警察在旁邊操作號誌，而且第 2 段說這套號誌一個月後就停用了，談不上後來世界各地都採用；(B) 第 2 段結尾是英國禁用號誌；(D) 第 4 段講的是未來可能不再需要號誌，都接不上 later designs。
+到互動練習作答這一篇 → 看原文與解析
+113 學測第 46 題（答對率 69%）
+Here is a sentence: “Almost nothing of a fish is left for the trash bin.” Which paragraph is most suitable to have it as the final sentence?
+(A) Paragraph 1.
+(B) Paragraph 2.
+(C) Paragraph 3.
+(D) Paragraph 4.
+這一句靠換個說法的呼應：Almost nothing of a fish is left（一條魚幾乎沒有剩下什麼）呼應第 3 段的 almost 95% of a cod（幾乎用掉一條鱈魚的 95%）。第 3 段接著列舉魚皮、魚頭、魚骨和下腳料都派上了用場，最後接這一句正好收尾，所以是 (C)。(A) 第 1 段講 Oddsson 觸電、靠魚皮移植活下來，還沒談到怎麼利用整條魚；(B) 第 2 段只說計畫的目標是充分利用每一條魚，還沒列出各部位怎麼利用，接這一句太早；(D) 第 4 段講的是跨產業合作和鱈魚多創造的價值。
+到互動練習作答這一篇 → 看原文與解析
+109 指考第 51 題（答對率 56%）
+If the following sentences were to be included in the passage, which paragraph should they go to?
+One good example is that many teachers today are asking students to keep a learning portfolio, which is a purposeful collection of student works at different points of time in the semester. This portfolio exhibits students’ effort, progress, and achievements in one or more areas of the course.
+(A) Paragraph 2.
+(B) Paragraph 3.
+(C) Paragraph 4.
+(D) Paragraph 5.
+One good example 表示這兩句是一個例子，前面要有它說明的做法。例子說老師要學生建立學習歷程檔案，蒐集學期中不同時間點（at different points of time）的作品；第 4 段說各州重視學習過程，老師在學生學習過程的不同時間點（at different points）累積資料。學習歷程檔案正是第 4 段這個做法的例子，兩邊的 at different points 也對得上，所以是 (C)。(A) 第 2 段講的是電腦適性測驗；(B) 第 3 段講的是測驗的科目；(D) 第 5 段講的是評量的目的，都和在不同時間點蒐集作品接不上。
+到互動練習作答這一篇 → 看原文與解析
+← 回題庫首頁
+資料來源：學測 83–115 年、指考 91–110 年歷屆閱讀測驗（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
+🐛 回報錯誤

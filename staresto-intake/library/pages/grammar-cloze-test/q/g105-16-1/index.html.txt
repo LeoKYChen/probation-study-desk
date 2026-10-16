@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g105-16-1/index.html
+Author: staresto-create ZZSH
+Title: 105 年學測克漏字第16題詳解（連接詞／轉折詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 105 年學測 ／ 第16題
+105 年學測 克漏字 第16題
+連接詞／轉折詞線索：跨句答對率 83%
+答對率 83%：當年每 100 位考生，有 83 位答對。
+They asked for a ransom of $2,000 to return the boy. 16 , their plan quickly got out of control.
+(A)However
+(B)Otherwise
+(C)Furthermore
+(D)Accordingly
+答案：(A) However
+題目編號：G105_16_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+前文描述綁匪精心策劃綁架計畫、原本預期一切順利，這句「然而」轉折，計畫卻很快失控了，However（然而）符合這種「預期順利卻事與願違」的對比轉折；Accordingly（因此/於是）表順接因果，會變成「因為計畫了綁架，於是計畫就失控」，因果邏輯不通；Otherwise（否則）、Furthermore（此外）都不合。
+深入解析
+你可能會這樣想
+However 你早就背過「然而」，這一格對多數人不難，但仍有一群人會挑 Accordingly，原因是前一句剛講完綁匪「藏好人、開價 $2,000 要贖金」，讀起來像一連串動作正往下推，於是順手填了「於是、因此」。空格在句首、後面接逗號，這個位置放的是連接副詞（linking adjunct），它唯一的工作就是標示「這一句和前一句是什麼關係」（劍橋 English Grammar Today），所以判斷的依據不在這一句裡面，一定要往回讀一句。
+怎麼判斷
+把前後兩句並排看：前一句是綁匪的「計畫」（藏人、開價 $2,000 要贖金），後一句是 their plan quickly got out of control（他們的計畫很快就失控了）。計畫周全 vs 立刻失控，是「本來以為會這樣、結果卻那樣」的對比，要用轉折。驗算方式很簡單：試著用 but 把兩句接起來 — They asked for a ransom, but their plan quickly got out of control. 接得起來，就填 however。這裡可以對照你早就會的 but：but 是連接詞，把兩個子句接成一句；however 是副詞，前面要用句號或分號斷開，自己後面再加逗號。意思幾乎一樣，標點卻不一樣，這是寫作時很容易出錯的地方。
+誘答選項
+Accordingly（因此、於是）是順接因果，填進去會變成「因為他們開價要贖金，所以計畫就失控了」— 但開價本身不會導致失控，真正的原因（小孩太皮）要到下一句才登場，因果對不上。Otherwise（否則、不然）需要一個「不這麼做就會如何」的條件，前一句沒有這種假設。Furthermore（此外、而且）是再補一項同方向的訊息，但「計畫失控」不是綁架步驟的追加說明，方向相反。
+常考字詞與句型
+however（然而）、otherwise（否則、不然）、furthermore（此外、而且）、accordingly（因此、據此）、get out of control（失控）、ask for a ransom（索討贖金）、hold sb for ransom（挾持某人勒贖）、compensate for（彌補……）。
+線索範圍說明：However 轉折前一句綁匪的計畫
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Bill and Sam decided to kidnap the son of a banker to compensate for their business loss. They kidnapped the boy and hid him in a cave. They asked for a ransom of $2,000 to return the boy.
+16 , their plan quickly got out of control. Their young captive 17 to be a mischievous boy. He viewed the kidnapping as a wonderful camping trip. He demanded that his kidnappers play tiring games with him, such as riding Bill as a horse for nine miles. Bill and Sam were soon desperate and decided to 18 the little terror. They lowered the price to $1,500.
+Yet, knowing perfectly well 19 a troublemaker his son was, the father refused to give them any money. 20 , he asked the kidnappers to pay him $250 to take the boy back. To persuade the boy to return home, Bill and Sam had to tell him that his father was taking him bear-hunting. The kidnappers finally handed over the boy and $250 to the banker and fled town as quickly as they could.
+中譯：比爾和山姆決定綁架一位銀行家的兒子，藉此彌補他們生意上的損失。他們綁走了男孩，把他藏在一個山洞裡，並要求兩千美元的贖金才肯放人。然而，他們的計畫很快就失控了。這名年幼的人質原來是個調皮搗蛋的孩子，他把整場綁架當成一次美好的露營之旅，還要求綁匪陪他玩累人的遊戲，例如騎在比爾身上「當馬」走上九英里。比爾和山姆很快就束手無策，決定把這個小麻煩精送回去，並把贖金降到一千五百美元。然而，這位父親完全清楚自己兒子有多難搞，因此拒絕支付任何贖金。相反地，他還要求綁匪付他兩百五十美元，才願意把兒子接回去。為了說服男孩願意回家，比爾和山姆只好騙他說爸爸要帶他去獵熊。綁匪最終只好把男孩和兩百五十美元一起交給這位銀行家，然後盡快逃離小鎮。
+📋 內容大意
+Two men kidnapped a banker's son and held him for ransom to make up for financial losses.（敘事文）
+The kidnapped boy tormented his captors with exhausting games, forcing them to lower the ransom price out of desperation.（敘事文）
+The father demanded payment to take his troublemaking son back, leaving the kidnappers no choice but to pay him and flee.（敘事文）
+回到105 年學測第17題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

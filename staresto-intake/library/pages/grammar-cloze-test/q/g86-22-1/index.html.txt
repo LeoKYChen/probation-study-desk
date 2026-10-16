@@ -1,0 +1,40 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g86-22-1/index.html
+Author: staresto-create ZZSH
+Title: 86 年學測克漏字第22題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 86 年學測 ／ 第22題
+86 年學測 克漏字 第22題
+字彙選義線索：句內
+Climbing the most difficult mountains requires a very special mental condition. 21 the climber is doing something very difficult, everything that he or she sees, hears, or 22 must come together to help in the work of climbing.
+(A)points
+(B)says
+(C)walks
+(D)feels
+答案：(D) feels
+題目編號：G86_22_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+並列的感官動詞：看、聽、感覺，feels（感受到）符合這個並列結構；points（指）、says（說）、walks（走）都不是感官動詞，不符合並列邏輯。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是動詞，文法上擺進去都成句，所以很容易只看「唸起來順不順」。這一格要看的是它跟前面兩個動詞是不是同一類。
+怎麼判斷
+先看空格所在的結構：everything that he or she sees, hears, or ___。用 or 串起來的三個動詞是並列的，而並列有一個常被忽略的要求——不只文法形態要對等，語意的類別也要同一類。前面兩個是 sees（看到）與 hears（聽到），都是感官動詞，講的是身體接收到的訊息；第三個當然也該是感官動詞，填 feels（感覺到）。看、聽、感覺，這是很自然的一組。再用整段驗算：這一篇講的是攀登時感官與身體的整合，「他所看到、聽到、感覺到的一切都必須整合起來」正合文意。
+誘答選項
+says（說）：說話是輸出不是接收，與看、聽不同類。points（指）：肢體動作，也不是感官接收。walks（走）：同樣是動作；而且關係代名詞 that 代替的 everything 要當這個動詞的受詞，walk 雖然有及物用法（walk the dog 遛狗），「他所走的一切」仍然說不通。
+常考字詞與句型
+see／hear／feel（看、聽、感覺，常並列的三個感官動詞）、feel like V-ing（想要做……）、come together（整合起來）、everything that …（……的一切）、help in（有助於）、climb a mountain（爬山）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Climbing the most difficult mountains requires a very special mental condition. 21 the climber is doing something very difficult, everything that he or she sees, hears, or 22 must come together to help in the work of climbing.
+All of the parts of the body work together smoothly and quietly 23 each part feels what is happening in the other parts. There is no room for thinking about what time it is, or about how one looks. 24 thinking must focus on what is happening at that moment, and the mind and the body become one. Only by entering this quiet mental state 25 a climber really do his or her best.
+中譯：攀登最艱難的山峰，需要一種非常特殊的心理狀態。因為登山者正在做一件極度困難的事，他／她所看到、聽到或感受到的一切，都必須匯聚起來，協助他完成攀登的任務。身體的每個部位都協調合作、動作流暢而安靜，同時每個部位都感受得到其他部位正在發生的事。這時候完全沒有餘裕去想現在幾點，或自己看起來如何。此刻，思緒必須完全專注於當下正在發生的事，讓身心合而為一。唯有進入這種寧靜的心理狀態，登山者才能真正發揮出最佳表現。
+📋 內容大意
+Extreme mountain climbing demands total mental focus and physical harmony, uniting the mind and body in the present moment.
+← 第21題回到86 年學測第23題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z99-19/index.html
+Author: staresto-create ZZSH
+Title: 99 年指考克漏字第19題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 99 年指考 ／ 第19題
+99 年指考 克漏字 第19題
+字彙選義線索：句內答對率 39%
+答對率 39%：當年每 100 位考生，有 39 位答對。
+Called "Animals, Symbols of Power," the exhibit 19 animals that were used by kings and emperors throughout history to symbolize the greatness of their reigns.
+(A)examines
+(B)protects
+(C)represents
+(D)features
+答案：(D) features
+題目編號：Z99_19（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+feature 在此是動詞「以…為主角、展出」：這場名為「動物，權力的象徵」的展覽，展出歷代帝王用來象徵治世昌隆的動物；examines（檢視）、protects（保護）、represents（代表）語意都不合。
+深入解析
+你可能會這樣想
+feature 你大概只認得名詞「特色、特徵」（a special feature），可能沒注意過它當動詞的用法：以…為主要內容、由…擔綱演出。The film features a young Japanese actress.（這部片由一位年輕日本女星主演）／The exhibit features 15 animals.（這場展覽以十五件動物雕塑為主角）。
+怎麼判斷
+線索是主詞：主詞是 the exhibit（展覽），展覽能對動物做什麼？只能是「展出、以之為主題」。前一句 The 15 animals exhibited are reproductions of famous works（展出的十五件動物雕塑是名作的複製品）已經用了 exhibited，本句只是換個動詞再講一次。同一個字兩種詞性一起記：feature（名詞：特色）／feature（動詞：以…為主角）／be featured in（被報導）——本題庫 108 年第 15 題考的正是第三種。
+誘答選項
+examines：檢視、探討，用在展覽上是探討某個主題，這一句講的卻是展出了哪些作品，前一句也已經說這些動物是「展出的」複製品。protects：保護，這十五件「動物」是雕塑複製品，不是需要保護的生物。represents：描繪、象徵，主詞通常是一件作品（a statue represents...）；本句主詞是整個展覽，展覽與作品的關係是「展出、收錄」，前一句的 exhibited 就是這個意思。而且句子後半已經把象徵關係說清楚：是動物象徵王權（to symbolize the greatness of their reigns），不是展覽象徵動物。
+常考字詞與句型
+feature（以…為主角、展出）、a special feature（特色）、be featured in the media（被媒體報導）、an exhibit（展覽）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：99學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Signs asking visitors to keep their hands off the art are everywhere in the Louvre Museum, Paris. But one special sculpture gallery invites art lovers to allow their hands to 16 the works. The Louvre's Tactile Gallery, targeted at the blind and visually 17, is the only space in the museum where visitors can touch the sculptures, with no guards or alarms to stop them.
+Its latest exhibit is a 18 of sculpted lions, snakes, horses and eagles. The 15 animals exhibited are reproductions of famous works found elsewhere in the Louvre. Called "Animals, Symbols of Power," the exhibit 19 animals that were used by kings and emperors throughout history to symbolize the greatness of their reigns.
+The exhibit, opened in December 2008, 20 scheduled to run for about three years. During guided tours on the weekends, children can explore the art with blindfolds on.
+中譯：在巴黎羅浮宮，隨處可見提醒遊客「請勿觸摸展品」的告示。但有一個特別的雕塑藝廊，卻邀請藝術愛好者伸手觸摸展品。羅浮宮的「觸覺藝廊」專為視障與視覺受損人士設計，是館內唯一一處遊客可以觸摸雕塑、且沒有警衛或警報器阻止的空間。該藝廊最新的展覽是一系列獅子、蛇、馬與老鷹的雕塑收藏。展出的 15 件動物雕塑都是複製自羅浮宮其他地方著名作品的仿製品。這個名為「動物，權力的象徵」的展覽，呈現了歷史上國王與皇帝們用來象徵其統治偉大之處的動物形象。這項展覽於 2008 年 12 月開幕，預計展出約三年。週末的導覽行程中，孩童還能戴上眼罩來探索這些藝術品。
+📋 內容大意
+The Louvre's Tactile Gallery lets blind and partly sighted visitors handle sculptures freely.
+Its newest show gathers fifteen sculpted animals, all copies of famous works held elsewhere.
+Titled "Animals, Symbols of Power," it ran three years, with blindfolded children joining weekend tours.
+← 第18題回到99 年指考第20題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

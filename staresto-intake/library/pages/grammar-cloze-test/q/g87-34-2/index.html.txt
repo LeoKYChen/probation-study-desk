@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g87-34-2/index.html
+Author: staresto-create ZZSH
+Title: 87 年學測克漏字第34題詳解（時態／語態）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 87 年學測 ／ 第34題
+87 年學測 克漏字 第34題
+時態／語態線索：句內
+In 1930 we laughed on average for 19 minutes each day, but by 1980 it 34 to six minutes.
+(A)has been decreasing
+(B)was decreasing
+(C)should have decreased
+(D)had decreased
+答案：(D) had decreased
+題目編號：G87_34_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+過去完成式 had decreased，表示到 1980 年這個時間點之前，笑的時間已經（相對 1930 年）減少到六分鐘，是早於 1980 這個過去時間點之前已完成的動作；has been decreasing（現在完成進行式，時態不對）、was decreasing（過去進行式，不強調「已經減少到」這個完成結果）、should have decreased（表推測/建議語氣，不符合這裡陳述事實）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是 decrease 的時態變化，而「一直在減少」聽起來很符合語意，所以現在完成進行式看起來很誘人。這一格的答案由句子裡那個時間標記決定，不是由語感決定。
+怎麼判斷
+四個選項都是同一個動詞 decrease 的時態組合，可見這一格考的是時態，那就找句子裡的時間標記。整句是 In 1930 we laughed on average for 19 minutes each day, but by 1980 it ___ to six minutes.（1930 年我們平均每天笑十九分鐘，但到了 1980 年，這個數字已經……到六分鐘。）關鍵是 by 1980：by + 過去的時間點，意思是「到那個時候為止」，指的是在那個過去的時間點之前就已經完成的事，所以要用過去完成式，填 had decreased。可以對照 By the time I got there, he had left.（我到那裡的時候，他已經走了。）順便對照 92 年第 28 題 →：那一題的時間標記是 Since then（從那時起到現在），終點是此刻，所以用現在完成式。時間標記決定時態——先找那個標記，再決定用哪一種完成式。
+誘答選項
+has been decreasing：現在完成進行式，時間線的終點是現在；但本句的終點是 1980 年，不是此刻。was decreasing：過去進行式，強調當時正在減少的過程，但 by 1980 要的是「到那時為止已經減到六分鐘」這個結果。should have decreased：「本來應該減少（卻沒有）」，帶著與事實相反的責備語氣，與這句單純陳述數據的口吻完全不合。
+常考字詞與句型
+by + 過去時間 + 過去完成式（到……時已經……）、By the time …, sb had p.p.（到……的時候，某人已經……）、decrease to（減少到）、on average（平均而言）、each day（每天）、19 minutes（十九分鐘）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Perhaps most of us are familiar with the saying "Laugh and the world 31 with you, weep and you weep alone."32 did you know that according to recent research, people are losing the art of laughter and it could have a 33 effect on our health? In 1930 we laughed on average for 19 minutes each day, but by 1980 it 34 to six minutes. Children, 35 , can see the funny side of things more often and may laugh up to 400 times a day.
+By exhaling air from the lungs in short 36 of laughter, breathing is quickened and heartbeats increased, which achieves 37 good as ten minutes on an exercise bike. Laughter, too, has a beneficial effect on our immune system, 38 the production of white blood cells and increasing our resistance to infection.39 makes a difference to our appearance, too, when we relax our facial muscles!
+Laughter 40 is the best medicine, so why not give yourself a treat? Have a good laugh today--and feel better for it.
+中譯：或許我們大多數人都聽過這句話：「你笑，全世界陪你笑；你哭，只有你獨自哭泣。」但你知道嗎，根據最近的研究，人們正逐漸失去笑的能力，而這可能對我們的健康造成嚴重的影響？1930 年，我們平均每天笑 19 分鐘，但到了 1980 年，這個數字降到只剩 6 分鐘。相較之下，孩子們更常看到事物有趣的一面，一天甚至可能笑到 400 次。透過短促的笑聲把肺裡的空氣呼出，呼吸會加快、心跳也會增加，好處相當於騎十分鐘健身腳踏車。笑對免疫系統也有益處，能增加白血球的產生，提高我們對感染的抵抗力。放鬆臉部肌肉時，笑也能讓我們的外表更好看！笑確實是最好的良藥，所以何不善待自己一下？今天就開懷大笑吧——你會感覺更好。
+📋 內容大意
+Research suggests that adults are laughing less than they once did, and this decline may carry real costs to health.
+Daily laughter fell from about nineteen minutes in 1930 to six minutes by 1980, while children may still laugh hundreds of times each day.
+Brief spells of laughter quicken breathing and heart rate, strengthen the immune system and relax the face, which is why laughter is often called the best medicine.
+← 第33題回到87 年學測第35題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

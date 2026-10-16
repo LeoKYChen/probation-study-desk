@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g97-20-1/index.html
+Author: staresto-create ZZSH
+Title: 97 年學測克漏字第20題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 97 年學測 ／ 第20題
+97 年學測 克漏字 第20題
+字彙選義線索：句內答對率 83%
+答對率 83%：當年每 100 位考生，有 83 位答對。
+That is 20 green tea is so good for health.
+(A)whether
+(B)whenever
+(C)what
+(D)why
+答案：(D) why
+題目編號：G97_20_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】That is why... 固定句型「這就是為什麼……」，承接前文原因，帶出結果；whether（是否）、whenever（每當）、what（這裡是解釋「為什麼」不是「什麼」）都不合。
+深入解析
+你可能會這樣想
+That is ______ 這個開頭，最容易選錯的是 what，因為 what 這個字，你的印象就只有「什麼」，而 That is what... 也確實是常見句型。這一格要分辨的是：空格後面接的到底是「原因」還是「東西」。
+怎麼判斷
+把空格後面那一串單獨拿出來看缺不缺成分：green tea is so good for health 的主詞、動詞、補語全都齊了，一個名詞位置都不缺。what 進到子句裡一定要占一個名詞的位置——主詞、受詞或介系詞的受詞（它本身就等於 the thing that），這裡沒有空位給它，第一步就能刷掉。再看前後的邏輯：前面兩句講的是綠茶只乾燥不發酵、因此保留了有益的化學成分，這是「原因」；空格這一句 green tea is so good for health 是「結果」。前因後果，用 That is why（這就是為什麼）。順便把最常搞混的一組並排記起來：That is why + 結果；That is because + 原因。同一份考卷的第 27 題也在考 wh- 詞，那一題分的是「地方 vs 事物」，本題分的是「原因 vs 事物」，兩題可以對著看。
+誘答選項
+whether（是否）：引導的是「是不是」的問題，前文沒有任何待決定的疑問，That is whether... 在這裡講不通。whenever（每當）：引導時間子句，但前文給的是原因，不是時間點。what：理由如上，後面的子句不缺名詞位置，what 無處可放。
+常考字詞與句型
+that is why …（這就是為什麼）、That is because（那是因為，後接原因）、be good for health（對健康有益）、help retain sth（有助於保留某物）、be dried but not fermented（經乾燥但未發酵）、a possible allergic reaction（可能的過敏反應）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+What is so special about green tea? The Chinese and Indians 16 it for at least 4,000 years to treat everything from headache to depression. Researchers at recently concluded that a compound in green tea 17 the growth of cancer cells. Green tea is also helpful 18 infection and damaged immune function. The secret power of green tea is its richness in a powerful anti-oxidant.
+Green tea and black tea come from the same plant. Their 19 is in the processing. Green tea is dried but not fermented, and this shorter processing gives it a lighter flavor than black tea. It also helps retain the tea's beneficial chemicals. That is 20 green tea is so good for health.
+The only reported negative effect of drinking green tea is a possible allergic reaction and insomnia due to the caffeine it contains.
+中譯：綠茶到底有什麼特別之處？中國人和印度人使用綠茶至少已有四千年歷史，用來治療從頭痛到憂鬱症等各種病症。最近的研究人員發現，綠茶中的一種化合物能減緩癌細胞的生長。綠茶也有助於對抗感染和受損的免疫功能。綠茶的神奇力量來自於它富含強效抗氧化物。綠茶和紅茶其實來自同一種植物，兩者的差別在於加工方式。綠茶只經過乾燥而未經發酵，這樣較短的加工過程使它的味道比紅茶更清淡，也有助於保留茶葉中對健康有益的化學成分。這就是為什麼綠茶對健康這麼好。飲用綠茶唯一被報導的負面影響，是可能引發過敏反應，以及因所含咖啡因而導致失眠。
+📋 內容大意
+Green tea has been long used in traditional medicine and is proven by modern research to offer various health and medicinal benefits.
+Green tea retains its health-promoting chemicals and distinct flavor due to its minimal, non-fermented processing method.
+Despite its numerous benefits, green tea may cause mild side effects like caffeine-induced insomnia or allergic reactions in some individuals.
+← 第19題回到97 年學測第21題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

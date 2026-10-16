@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g101-18-1/index.html
+Author: staresto-create ZZSH
+Title: 101 年學測克漏字第18題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 101 年學測 ／ 第18題
+101 年學測 克漏字 第18題
+慣用語／片語線索：跨句答對率 57%
+答對率 57%：當年每 100 位考生，有 57 位答對。
+The entire island of Kizhi is, 18 , an outdoor museum of wooden architecture created in 1966.
+(A)in fact
+(B)once again
+(C)as usual
+(D)for instance
+答案：(A) in fact
+題目編號：G101_18_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「整座島嶼事實上是一座露天博物館」，in fact（事實上）符合這種補充強調說明；once again（再次）、as usual（照常）、for instance（例如）都不合。
+深入解析
+你可能會這樣想
+四個選項都是常見的轉折詞，插在 is 與 an outdoor museum 中間，代進去唸起來都不太卡。最多人猶豫的是 for instance，因為下一句馬上列出 windmills、boathouses、chapels 一大串，看起來就像在舉例。
+怎麼判斷
+先問前後兩句是什麼關係。前面兩句在講基日島的地理：長約 7 公里、寬 0.5 公里，周圍還有約 5,000 座島嶼。到了這一句，作者把整座島說成「一座露天博物館」——這座島當然不是真的蓋了一間博物館，而是「實際上等於」一座博物館。這種把前面的敘述再往前推一步、給一個更強或更精確說法的位置，用的就是 in fact（劍橋詞典：in fact 用來加強語氣，或指出與前面所說不同的情況；劍橋 English Grammar Today 另說它用來補上更詳細的資訊）。順帶注意它的位置：夾在 be 動詞 is 與主詞補語 an outdoor museum 之間，用兩個逗號夾住。轉折詞出現在句子中間非常常見，不要因為它沒放在句首就先排除。102 年第 17 題 →的 on the other hand 插在主詞與動詞之間，同樣是轉折詞放在句子中間的考法。
+誘答選項
+once again：再一次，前文必須已經發生過同一件事，本文沒有。as usual：一如往常，需要有慣例可以對照，本文也沒有。for instance：舉例來說，後面接的必須是前一句的例子；但這一句不是例子，而是對整座島的重新定義。真正的舉例出現在下一句 {19} windmills, boathouses, chapels…，不在這一句。
+常考字詞與句型
+in fact（事實上）、in reality（實際上）、once again（再一次）、as usual（一如往常）、for instance（舉例來說）、an outdoor museum（露天博物館）。
+線索範圍說明：in fact 承接前一句對島嶼的描述
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Kizhi is an island on Lake Onega in Karelia, Russia, with a beautiful collection of wooden churches and houses. It is one of the most popular tourist 16 in Russia and a United Nations Educational, Scientific, and Cultural Organization (UNESCO) World Heritage Site. The island is about 7 km long and 0.5 km wide. It is surrounded by about 5,000 other islands, some of 17 are just rocks sticking out of the ground.
+The entire island of Kizhi is, 18 , an outdoor museum of wooden architecture created in 1966. It contains many historically significant and beautiful wooden structures, 19 windmills, boathouses, chapels, fish houses, and homes.
+The jewel of the architecture is the 22-domed Transfiguration Church, built in the early 1700s. It is about 37 m tall, 20 it one of the tallest log structures in the world. The church was built with pine trees brought from the mainland, which was quite common for the 18th century.
+中譯：基日島位於俄羅斯卡累利阿共和國的奧涅加湖上，島上有一系列美麗的木造教堂與房屋，是俄羅斯最受歡迎的觀光景點之一，也是聯合國教科文組織（UNESCO）認定的世界遺產。這座島長約 7 公里、寬 0.5 公里，周圍環繞著約 5000 座其他島嶼，其中有些不過是露出地面的岩石。基日島整座島事實上就是一座建於 1966 年的木造建築露天博物館，收藏許多具有重要歷史價值的美麗木造建築，包括風車、船屋、小教堂、漁屋和住宅。建築中的瑰寶是建於 18 世紀初、擁有 22 座圓頂的變容教堂，高約 37 公尺，是全世界最高的木造建築之一。這座教堂是用從內陸運來的松木建造而成，這在 18 世紀是相當常見的做法。
+📋 內容大意
+Kizhi Island in Russia is a UNESCO World Heritage Site famous for its collection of wooden architecture.
+Created in 1966, the entire island operates as an outdoor museum featuring a wide variety of historic wooden buildings.
+The centerpiece of Kizhi is the 22-domed Transfiguration Church, one of the world's tallest log structures.
+← 第17題回到101 年學測第19題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

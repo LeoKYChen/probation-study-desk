@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g96-21-2/index.html
+Author: staresto-create ZZSH
+Title: 96 年學測克漏字第21題詳解（介系詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 96 年學測 ／ 第21題
+96 年學測 克漏字 第21題
+介系詞線索：句內答對率 15%
+答對率 15%：當年每 100 位考生，有 15 位答對。
+A new analysis of satellite-based data has given precisely the rate 21 which the country is losing size as it pushes northward against the Himalayas.
+(A)by
+(B)in
+(C)of
+(D)at
+答案：(D) at
+題目編號：G96_21_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+the rate at which 是固定結構：原句為 the country is losing size at a certain rate，介系詞 at 隨關係代名詞一起前移，成為 the rate at which…；by 與 in 都不是 rate 慣用的介系詞；of 雖然常與 rate 連用（the rate of growth），但那是 rate of + 名詞，of which 在這裡只會讀成「那個速度的國家」，接不上。
+重點：把關係子句還原成一句話，介系詞也就回到原位——the country is losing size at that rate，rate 前面用的是 at，所以寫成 the rate at which；by、in、of 都不是 rate 用的介系詞。
+延伸閱讀：介系詞放在關係代名詞前面（the rate at which） ↗
+深入解析
+你可能會這樣想
+看到 the rate 後面接著 which，你的第一個反應大概是「關係代名詞前面該擺哪個介系詞」，然後開始比 by、in、of 哪一個順。順序反了。這一格真正要問的是前面那個名詞 rate 平常配哪個介系詞——先知道 at a rate（以某種速度、以某種比率），關代前面該擺什麼才有得判斷。記憶裡沒有 at 這一格，怎麼推都是猜。
+怎麼判斷
+先把句子還原成兩句：A new analysis has given the rate.（一項新的分析給出了那個速度。）加上 The country is losing size at that rate.（這個國家正以那個速度縮小。）第二句的 at 本來就跟在句尾，改寫成關係子句時，at 和關係代名詞一起搬到前面，就成了 the rate at which…。這裡有一個很穩的驗算法：把 at which 拆回句尾唸一遍，唸得通就選對了。at 這一格屬於「配數值刻度」的那一組，一起記最省力：at a rate of two centimeters a year（以每年兩公分的速度）、at the age of 18（在十八歲時）。一句記完：My classmates skim the news at a rate of three headlines a minute, but few of them finish a whole report.（我同學一分鐘掃過三則標題，卻很少有人把一整篇報導讀完。）〔情境取材自 108 指考作文題：青年對各類新聞的關注度〕
+誘答選項
+by which（藉由…的方法）：rate 是刻度不是方法，還原成 losing size by that rate 唸不通。in which（在…之中）：後面要接空間、範圍或時期（the year in which…），速度不是可以待在裡面的東西。of which（…的）：會讀成「那個速度的國家」，語意錯位。by 與 in 都不是 rate 慣用的介系詞，of 則是用錯了位置（rate of growth 的 of 後面接的是 growth 這類名詞，不是關係子句）——關鍵不在關代怎麼配，在名詞自己帶的那個字。同義記一組：at a rate of ＝ at a speed of。
+常考字詞與句型
+at a rate of（以…的速度、比率）、at a speed of（以…的速度）、at the age of（在…歲時）、at a price of（以…的價格）、the rate at which（…的速度）、a trivial finding（微不足道的發現）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+India is shrinking. A new analysis of satellite-based data has given precisely the rate 21 which the country is losing size as it pushes northward against the Himalayas. According to the analysis, the 22 between India's southern and northern tips shrinks by 2 cm every year. As India's size decreases, the thickness of the Himalayas increases. 23 the shrinking continues, India will disappear in 200 million years. There would only be a vast mountain range along the southern coast of China.
+The Indian plate's 24 movement is not new. However, this cannot be treated as a trivial finding in science. A movement of 25 a few millimeters (mm) of the earth's crust is a sign of possible earthquakes. Such dangers are now obvious in India, where the movement of the plate continues.
+中譯：印度正在縮小。一項根據衛星資料的新分析，精確計算出印度在向北推擠喜馬拉雅山脈的過程中縮小的速度。根據這項分析，印度南北兩端之間的距離每年縮短 2 公分。隨著印度面積縮小，喜馬拉雅山的厚度則在增加。如果這種縮小持續下去，印度將在兩億年後消失，屆時只會剩下一片沿著中國南部海岸的廣大山脈。印度板塊的北移現象並不是新鮮事。然而，這在科學上不能被視為無關緊要的發現。地殼只要移動幾公釐，就可能是地震即將發生的徵兆。這樣的危險在印度已相當明顯，因為該板塊仍持續在移動。
+📋 內容大意
+Satellite data now shows precisely how quickly India is losing size as the plate pushes north into the Himalayas.
+The gap between the country's northern and southern tips closes by two centimeters a year, and the mountains grow thicker. India could vanish in 200 million years.
+The plate's motion is not new. But a shift of a few millimeters in the crust signals possible earthquakes, so the finding matters.
+← 第20題回到96 年學測第22題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

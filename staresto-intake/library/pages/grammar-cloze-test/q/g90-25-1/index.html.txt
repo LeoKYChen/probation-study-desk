@@ -1,0 +1,40 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g90-25-1/index.html
+Author: staresto-create ZZSH
+Title: 90 年學測克漏字第25題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 90 年學測 ／ 第25題
+90 年學測 克漏字 第25題
+慣用語／片語線索：句內
+It won't magically transport a student to school on time every day, but it just might make 25 a little easier.
+(A)to wake up
+(B)wake up
+(C)woke up
+(D)waking up
+答案：(D) waking up
+題目編號：G90_25_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+動名詞 waking up 作 make 的受詞（make + O + easier 句型），指「起床這件事」被形容詞 easier 修飾；to wake up（不定詞，不能這樣直接作受詞）、wake up（原形動詞，不能單獨作名詞性受詞）、woke up（過去式，不能作受詞）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是 wake up 的形態變化，你會直覺認為要判斷時態，於是在原形與過去式之間打轉。這一格其實不比時態，比的是「這個位置需要什麼樣的詞」。
+怎麼判斷
+先把句型認出來：make ___ a little easier，這是 make 加受詞加受詞補語（使……變得……），與同一篇第 19 題考的是同一個句型的兩半——第 19 題問你哪一個動詞能走這個句型，這一題問你句型中間那個受詞該長什麼樣子。受詞的位置只能放名詞或名詞性的東西，四個選項裡只有動名詞 waking up 是名詞性的，意思是「起床這件事」。掛鉤是 Do you mind my opening the window?（你介意我開窗嗎？）——動名詞當受詞。填進去讀一次：it just might make waking up a little easier（它或許能讓起床這件事變得輕鬆一點），正好呼應前半句「它不會像魔法一樣讓學子每天都準時到校」。
+誘答選項
+wake up：原形動詞。這個選項最誘人，因為 make 後面確實可以接原形——My mother made me clean my room.（我媽要我打掃房間。）但要看清楚位置：那個原形放在受詞後面的受詞補語位置，前面還有一個受詞 me；本題的空格放在受詞的位置，後面才是受詞補語 a little easier。同一個 make、兩種句型，差別只在空格落在哪一格，這一步看錯就會選成原形。woke up：過去式，是限定動詞，更不可能當受詞。to wake up：不定詞當受詞在文法上不是完全不行，但 make 這個句型的受詞位置不放不定詞；真要用不定詞，英文會改成虛受詞的寫法 make it easier to wake up，把 it 擺在受詞的位置、真正的不定詞挪到句尾。
+常考字詞與句型
+make it easier to V（使做……變得更容易）、mind V-ing（介意做……）、enjoy V-ing（喜歡做……）、wake up（起床、醒來）、get up early（早起）、a little easier（稍微容易一點）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+At times, it seems like there are not many things that we can give a student who has everything. But 16 that Christmas is just a few weeks away, 17 is a gift idea. Those who have an inclination for crazy technological advances aren't hard 18. One simple way is a few new items that might 19 life more enjoyable. They don't look too revolutionary, but you'd be surprised 20 they are capable of. The following is one of the items.
+21 a student who is never on time, there is the new Projection Alarm Clock. Many ordinary clocks are hard to read early in the morning, deceiving students of the correct time, 22 causing them to be late for school. Through a projector, this attractive radio-alarm-clock is able to display the time onto a wall, ceiling, or anywhere 23. The benefits include an easier visibility of the time, and an alarm that gets increasingly louder 24 turned off. It won't magically transport a student to school on time every day, but it just might make 25 a little easier.
+中譯：有時候，好像很難找到什麼東西送給一個什麼都不缺的學子。不過，既然聖誕節只剩幾星期就要到了，這裡有一個送禮的好點子。對於熱愛各種瘋狂科技新玩意的人來說，其實不難討他們歡心。一個簡單的方法，就是送一些能讓生活更有樂趣的新玩意兒。它們看起來或許不怎麼革命性，但它們的功能可能會讓你大吃一驚。以下就是其中一項產品。對於一個總是遲到的學子來說，這款全新的投影鬧鐘正合適。許多一般的鬧鐘在清晨時分很難看清楚，讓學子誤判時間，因而導致遲到。透過投影功能，這款吸睛的收音機投影鬧鐘能將時間投影到牆壁、天花板或任何其他地方。它的優點包括更容易看清時間，以及鬧鈴聲音會隨著時間經過而逐漸變大，直到被關掉為止。它當然不會像魔法一樣，讓學子每天都準時到校，但它或許能讓起床這件事變得稍微容易一點。
+📋 內容大意
+The Projection Alarm Clock offers an innovative gift solution to help chronically late students wake up on time.
+← 第24題回到90 年學測
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

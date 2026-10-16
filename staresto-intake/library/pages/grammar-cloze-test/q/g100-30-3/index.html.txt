@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g100-30-3/index.html
+Author: staresto-create ZZSH
+Title: 100 年學測克漏字第30題詳解（分詞／動狀詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 100 年學測 ／ 第30題
+100 年學測 克漏字 第30題
+分詞／動狀詞線索：句內答對率 76%
+答對率 76%：當年每 100 位考生，有 76 位答對。
+If we 30 surrounded by an unending abundance of diamonds, we probably wouldn't value them very much.
+(A)be
+(B)being
+(C)to be
+(D)were
+答案：(D) were
+題目編號：G100_30_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+第二型假設語氣（與現在事實相反），If 子句用過去式 were（假設語氣的 be 動詞正式書面多用 were，was 在現代英文也通行），主要子句用 wouldn't value；be（原形動詞，不合假設語氣時態）、being（現在分詞）、to be（不定詞）都不合。
+重點：與現在事實相反的假設用過去式；be 動詞在正式書面多用 were，was 在現代英文也通行，兩式都成立。
+延伸閱讀：假設語氣的 were 與 was ↗
+深入解析
+你可能會這樣想
+If 一出現，很多人直覺想到「條件句用現在式」，就挑了原形 be；也有人看到 surrounded 是過去分詞，想再補一個 being 湊出被動。真正的關卡是：這裡的 If 講的不是有可能發生的條件，而是與現在事實相反的假設。
+怎麼判斷
+先看主要子句：we probably wouldn't value them very much，用的是 would 加原形動詞——這是與現在事實相反的假設語氣的標準組合。主要子句出現 would、could、might 加原形，而且講的是與現在事實相反的假設時，If 子句就用過去式。語意也對得上：現實是鑽石很稀有（前一段整段都在講鑽石的供給），所以「身邊有取之不盡的鑽石」是與現在事實相反的想像。接著是這一題真正要考的：假設語氣的 be 動詞，正式書面多用 were。最常見的那一句就是最好的掛鉤——If I were you...（如果我是你…）。was 在現代英文也通行，110 學測第 25 題引的那句 If he was 就是；兩式都成立，考試作答時寫 were 比較保險。本句主詞是 we，用 were 也剛好符合一般文法。最後確認形式：空格後面的 surrounded 是過去分詞，were surrounded 合起來是被動語態「被…包圍」，整句是「如果我們被取之不盡的鑽石包圍著」。
+誘答選項
+be：原形動詞，If 子句需要有時態的動詞，原形不能單獨用。being：現在分詞，不能當子句的主要動詞。to be：不定詞，同樣不能當主要動詞，If 後面要接的是完整的子句。
+常考字詞與句型
+if I were you …（如果我是你）、an abundance of（大量的、豐富的…）、be surrounded by（被…包圍）、value sth（珍視某物）、find use for sth（覺得某物有用處）、carry a monetary value（具有金錢價值）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Which is more valuable? Water or diamonds? Water is more useful to mankind than diamonds, and yet 26 are costlier. Why? Called the diamond-water paradox, this is a classic problem posed to students of economics.
+The answer has to do with supply and demand. Being a rare natural resource, diamonds are 27 in supply. However, their demand is high because many people buy them to tell the world that they have money, 28 as conspicuous consumption in economics. In other words, the scarcity of goods is 29 causes humans to attribute value. If we 30 surrounded by an unending abundance of diamonds, we probably wouldn't value them very much.
+Hence, diamonds carry a higher monetary value than water, even though we find more use for water.
+中譯：何者更有價值？水還是鑽石？水對人類的用處遠大於鑽石，然而鑽石卻昂貴得多，這是為什麼呢？這個經典的經濟學問題被稱為「鑽石與水的悖論」，答案與供需有關。鑽石是稀有的天然資源，供給量有限；然而，鑽石的需求量卻很高，因為許多人購買鑽石是為了向世人展示自己的財力，這在經濟學上稱為「炫耀性消費」。換句話說，商品的稀有性正是人類賦予其價值的原因。如果我們身邊充斥著取之不盡的鑽石，我們大概就不會這麼珍視它們了。因此，儘管水對我們更有用處，鑽石的金錢價值卻遠高於水。
+📋 內容大意
+The diamond-water paradox highlights the economic puzzle of why useless diamonds cost more than essential water.
+Value is driven by scarcity and high demand related to social status rather than basic usefulness.
+Hence, scarcity gives diamonds a far higher monetary price than water despite water's greater utility.
+← 第29題回到100 年學測
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

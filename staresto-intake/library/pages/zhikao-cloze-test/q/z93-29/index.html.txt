@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z93-29/index.html
+Author: staresto-create ZZSH
+Title: 93 年指考克漏字第29題詳解（關係子句／疑問詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 93 年指考 ／ 第29題
+93 年指考 克漏字 第29題
+關係子句／疑問詞線索：句內答對率 43%
+答對率 43%：當年每 100 位考生，有 43 位答對。
+Economic consequences are often most serious in developing countries 29 poultry raising is an important source of income, and of food, for impoverished rural farmers and their families.
+(A)that
+(B)until
+(C)although
+(D)where
+答案：(D) where
+題目編號：Z93_29（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+where 引導形容詞子句修飾地方先行詞 developing countries，表示「在那些國家（養禽業是重要收入來源）」。that 通常不直接引導完整地方子句、until（直到）、although（雖然）都不符合這裡「修飾地點」的語法功能。
+深入解析
+你可能會這樣想
+四個選項裡有 that 也有 where，中文都能說成「那個」「那裡」，你會憑語感挑一個。
+怎麼判斷
+答對率四成三。關係詞的題目一律用同一個判斷方式：把先行詞代回子句裡，看它在子句裡變成什麼形式。這是關係代名詞的定義本身——它就是代替前面出現過的那個名詞，所以把名詞放回去，答案自己就出來了。先行詞是 developing countries（開發中國家），子句是 poultry raising is an important source of income（養禽是重要的收入來源）。把「開發中國家」代回去，句子要寫成 poultry raising is an important source of income in those countries——國家在子句裡是「在那些國家」這個地方副詞，前面得補一個介系詞 in，既不是主詞也不是受詞。代回去變成地方副詞的，就用關係副詞 where。填進去讀成 in developing countries where poultry raising is an important source of income。代回去長什麼樣就用哪一個：當主詞用 who 或 which、當受詞用 whom 或 which、變成所有格用 whose、變成地方副詞用 where、變成時間副詞用 when。
+誘答選項
+that 是關係代名詞，代回去要能直接當主詞或受詞，但這一句代回去是 in those countries，少不了那個 in，所以 that 接不上（真要用也得寫成 in which）；until（直到）與 although（雖然）是連接詞，填進去語意都不通。
+常考字詞與句型
+where（關係副詞，先行詞代回子句後變成地方副詞）、in which 等於 where（在其中）、whose（關係代名詞的所有格，代回子句後變成所有格）、a source of income（收入來源）、impoverished（貧困的）、rural（鄉村的）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：93學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Avian influenza, or "bird flu," is a contagious disease caused by viruses that normally infect only birds and, less commonly, pigs. 26 all bird species are thought to be susceptible to infection, domestic poultry flocks are especially vulnerable to infections that can rapidly reach epidemic proportions.
+Outbreaks of avian influenza 27 be devastating for the poultry industry and for farmers. For example, an outbreak of avian influenza in the USA in 1983–1984 resulted in the destruction of more than 17 million birds 28 nearly US$ 65 million. Economic consequences are often most serious in developing countries 29 poultry raising is an important source of income, and of food, for impoverished rural farmers and their families.
+When outbreaks become widespread within a country, control can be extremely difficult. 30, government authorities usually undertake aggressive emergency control measures as soon as an outbreak is detected.
+中譯：禽流感，俗稱「鳥類流感」，是一種由病毒引起的傳染病，這類病毒通常只感染鳥類，較少感染豬隻。儘管所有鳥類都被認為可能受到感染，家禽尤其容易受到感染，且疫情可能迅速演變成大規模流行。禽流感爆發可能對家禽產業與農民造成毀滅性打擊。舉例來說，1983 年至 1984 年間，美國一次禽流感疫情導致超過 1,700 萬隻鳥被撲殺，損失金額高達近 6,500 萬美元。在開發中國家，經濟衝擊往往最為嚴重，因為家禽養殖是當地貧困農民家庭重要的收入與糧食來源。一旦疫情在一國之內大規模蔓延，防疫工作將變得極為困難。因此，政府當局通常會在疫情一經偵測到，便立即採取積極的緊急防疫措施。
+📋 內容大意
+Bird flu is a contagious viral disease of birds, and poultry flocks suffer worst.
+Outbreaks ruin farmers: one in the United States destroyed millions of birds.
+Poor countries lose most, so governments act fast before an outbreak spreads.
+← 第28題回到93 年指考第30題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

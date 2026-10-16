@@ -1,0 +1,50 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z96-26/index.html
+Author: staresto-create ZZSH
+Title: 96 年指考克漏字第26題詳解（介系詞）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 96 年指考 ／ 第26題
+96 年指考 克漏字 第26題
+介系詞線索：句內答對率 23%
+答對率 23%：當年每 100 位考生，有 23 位答對。
+The entire country is mountainous, 26 a small strip of subtropical plains in the extreme south.
+(A)in terms of
+(B)as a part of
+(C)with the exception of
+(D)in accordance with
+答案：(C) with the exception of
+題目編號：Z96_26（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+with the exception of 意為「除…之外」，與 except for 同義：不丹全境都是山地，只有最南端一小條亞熱帶平原例外；in terms of（就…而言）、as a part of（作為…的一部分）、in accordance with（依照）語意都不合。
+重點：with the exception of 等於 except for，用來把例外從整體裡扣掉；同一組一起記：without exception（無一例外）、make an exception（破例）。
+延伸閱讀：with the exception of，先講全部，再扣掉例外 ↗
+深入解析
+你可能會這樣想
+exception 你認得名詞「例外」，卻不見得知道 with the exception of 是幾個字合起來當一個介系詞用，功能等同 except for。四個選項都是這種「多字介系詞」，長得像，差別全在它們表達的邏輯關係。
+怎麼判斷
+先確認空格的身分。逗號後面接的是名詞片語 a small strip of subtropical plains，不是完整子句，所以要填介系詞，四個選項句法上都過關，要靠邏輯關係決定。接著看主要子句在講什麼：The entire country is mountainous（全境都是山地）——The entire 宣告的是一個「全部」的敘述。一個句子既然說了「全部」，後面補的那一段自然是把例外扣掉。看到 entire、all、every、no one 這類涵蓋全體的字，就往「排除」的方向找。驗算法：把句子拆成兩句唸一遍——The entire country is mountainous. The small strip of plains in the south is the only exception.（全境都是山地，南端那一小條平原是唯一的例外。）拆得開，就是排除關係。同樣的邏輯 94 年第 25 題也考過一次，那一年給的是 except for，配的線索字是 virtually all；這一年換成 with the exception of，線索字換成 The entire。判斷方式一模一樣：先找宣告全體的那個字。
+誘答選項
+三個都是多字介系詞，錯在邏輯關係不同。in terms of 是「就…而言」，用來限定討論的角度（in terms of cost 就成本而言），本句不是在切換角度。as a part of 是「作為…的一部分」，會讀成「平原是山地的一部分」，但平原與山地正是相對的兩種地形，自相矛盾。in accordance with 是「依照」，後面接的是規定、法律或標準，一片平原不是可以依照的東西。
+常考字詞與句型
+with the exception of（除…之外）、except for（除…之外）、without exception（無一例外）、make an exception（破例）、in terms of（就…而言）、in accordance with（依照）。
+鑑別度分析：鑑別度 18，高低分群的差距不算大。本題答對率二成三，屬於難度偏高的題目——大考中心《選才電子報》第 307 期說明鑑別度時，就把答對率低的難題列為鑑別度偏低的原因之一：高、低分群考生在這類題目上的答對率差距不大，鑑別度的數值就會比較小。這一題比較像是不分程度的考生都停在同一處：四個選項都是多字介系詞，長得像，差別全在邏輯關係；with the exception of 要先認得它等於 except for，再看主要子句裡 The entire 宣告的「全部」，後面那一段才讀得出是把例外扣掉。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：96學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The Kingdom of Bhutan is a landlocked nation situated between India and China. The entire country is mountainous, 26 a small strip of subtropical plains in the extreme south. The elevation gain from the subtropical plains to the glacier-covered Himalayan heights exceeds 7,000 m.
+Its traditional 27 is based on forestry, animal husbandry and subsistence agriculture. However, these 28 less than 50% of the GDP now that Bhutan has become an exporter of hydroelectricity. Besides, cash crops and tourism are also 29.
+Bhutan is one of the most isolated nations in the world, 30 foreign influences and tourism regulated by the government to preserve its traditional Tibetan Buddhist culture. It is often described as the last surviving refuge of traditional Himalayan Buddhist culture.
+中譯：不丹王國是一個位於印度與中國之間的內陸國家。整個國家幾乎都是山地，除了最南端一小塊亞熱帶平原之外。從亞熱帶平原到冰河覆蓋的喜馬拉雅山高地，海拔落差超過 7,000 公尺。不丹傳統上以林業、畜牧業與自給農業為經濟基礎，但隨著不丹成為水力發電的出口國，這些傳統產業如今占 GDP 不到 50%。此外，經濟作物與觀光業也逐漸成為重要產業。不丹是世界上最與世隔絕的國家之一，政府對外來影響與觀光業都有嚴格管制，以保存其傳統的藏傳佛教文化。不丹常被形容為喜馬拉雅傳統佛教文化最後的庇護所。
+📋 內容大意
+Bhutan is a landlocked, almost entirely mountainous country lying between India and China.
+Forestry, herding and farming long supported it, but exported hydroelectricity now earns more.
+The government limits outside influence and tourism to preserve its Tibetan Buddhist culture.
+← 第25題回到96 年指考第27題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

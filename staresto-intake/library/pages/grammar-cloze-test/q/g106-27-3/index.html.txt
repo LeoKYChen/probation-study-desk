@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g106-27-3/index.html
+Author: staresto-create ZZSH
+Title: 106 年學測克漏字第27題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 106 年學測 ／ 第27題
+106 年學測 克漏字 第27題
+字彙選義線索：跨句答對率 28%
+答對率 28%：當年每 100 位考生，有 28 位答對。
+There is, however, a significant 27 between such beliefs and the actual effect of weather on people's performance at work.
+(A)gap
+(B)link
+(C)clue
+(D)ratio
+答案：(A) gap
+題目編號：G106_27_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+however 標示轉折，本句要說的是「一般人的認知」與「天氣對工作表現的實際影響」之間存在明顯落差，故用 gap；link（關聯）方向相反，clue（線索）、ratio（比例）語意不合。
+深入解析
+你可能會這樣想
+看到 between A and B，你的第一個反應大概是「這兩者有關聯」，於是選 link——但這一題的方向剛好相反，作者要說的是「兩者對不起來」。a gap between A and B 是「A 與 B 之間的落差」，正是研究文章最愛用的句型：先講大家怎麼想，再講事實如何，中間就是一道 gap。
+怎麼判斷
+作答線索在前一句 {26} , many people believe that bad weather can reduce productivity and efficiency.（許多人相信壞天氣會降低生產力與效率）。本句中間插了 however，句中的 such beliefs 也直接指回前一句的「相信」；既然有 however 標示轉折，接下來要說的必然是「事實不是這樣」，認知與實際之間就是一道落差，填 gap。看到 however、in fact、yet、on the contrary 這類連貫標記，先假設這一句要推翻前一句，再把選項填進去看語意方向對不對得上——這一步可以避免只看見 between A and B 就選「關聯」。文末 workers are actually most productive when the weather is lousy（天氣差的時候，工作者的產出反而最高）也印證了這道落差確實存在。
+誘答選項
+link 是「關聯」，若填進去會變成「認知與實際之間有明顯關聯」，與 however 自相矛盾；clue 是「線索」，不與 between 搭配成這種句型；ratio 是「比例」，用於數量對比（a ratio of 2 to 1），與抽象的認知落差無關。
+常考字詞與句型
+a gap between A and B（A 與 B 之間的落差）、bridge／close the gap（弭平落差）、the generation gap（代溝）、a link between A and B（A 與 B 的關聯）。
+線索範圍說明：however 與 such beliefs 都指向前一句 many people believe that bad weather can reduce productivity；gap 與 link 之爭全靠這個對比決定
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Research has proven that weather plays a part in our moods: Warmer temperatures and exposure to sunshine increase positive thinking, whereas cold, rainy days bring anxiety and fatigue. 26 , many people believe that bad weather can reduce productivity and efficiency.
+There is, however, a significant 27 between such beliefs and the actual effect of weather on people's performance at work. Using empirical data from laboratory experiments 28 observations of a mid-sized Japanese bank in real life, researchers find that weather conditions indeed influence a worker's focus. When the weather is bad, individuals tend to focus more on their work rather than thinking about activities they could 29 outside of work. But photos showing outdoor activities, such as sailing on a sunny day or walking in the woods, can greatly distract workers and thus 30 their productivity.
+The findings conclude that workers are actually most productive when the weather is lousy—and only if nothing reminds them of good weather.
+中譯：研究已經證實，天氣會影響我們的情緒：溫暖的氣溫和日照能提升正向思考，而寒冷、下雨的日子則會帶來焦慮與疲憊。因此，許多人認為壞天氣會降低工作效率與生產力。然而，這樣的想法與天氣對工作表現的實際影響之間，其實存在著明顯的落差。研究人員結合實驗室的實證數據以及對一家日本中型銀行的實地觀察，發現天氣狀況確實會影響員工的專注力。天氣不好時，人們往往更專注於工作，而不會分心想著下班後能做什麼活動。但顯示戶外活動的照片，例如晴天出海航行或在森林裡散步的畫面，卻會嚴重分散員工注意力，進而降低生產力。這項研究的結論是：員工在天氣糟糕時反而最有生產力——但前提是沒有任何事物提醒他們好天氣的存在。
+📋 內容大意
+Weather affects human mood, leading many to assume that bad weather hurts workplace productivity.
+Research reveals that bad weather actually improves focus and productivity by removing outdoor distractions.
+Workers achieve peak productivity during poor weather, provided they are not reminded of pleasant outdoor alternatives.
+← 第26題回到106 年學測第28題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

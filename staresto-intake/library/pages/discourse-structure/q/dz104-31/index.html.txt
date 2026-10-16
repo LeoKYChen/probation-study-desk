@@ -1,0 +1,66 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dz104-31/index.html
+Author: staresto-create ZZSH
+Title: 指考 104年 篇章結構 第31題詳解（掌握段落內語句的連貫性與一致性）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 指考 104年 ／ 第31題
+指考 104年 篇章結構 第31題
+選文：鋰電池的優點與缺點（The Lithium-Ion Battery）
+掌握段落內語句的連貫性與一致性線索：舉例、結論的位置提示詞、指示詞答對率 65%
+(A)The lithium-ion battery is also a low maintenance battery.鋰電池也是一種低保養的電池。
+(B)Despite its overall advantages, the lithium-ion battery has its drawbacks.儘管整體上有這些優勢，鋰電池仍有缺點。
+(C)New and enhanced chemical combinations are introduced every six months or so.大約每六個月就有新的、改良過的化學組合問世。
+(D)Attempts to develop rechargeable lithium-ion batteries failed due to memory problems.開發可充電鋰電池的嘗試曾因記憶問題而失敗。
+(E)That is, they carry more power in a smaller unit, helping to reduce overall weight and size.也就是說，它們用更小的體積裝進更多電力，有助於減少整體的重量與體積。
+(F)Another downside is the increase of the internal resistance that occurs with cycling and aging.另一個缺點是內阻會隨著充放電循環與老化而上升。
+答案：(E) That is, they carry more power in a smaller unit, helping to reduce overall weight and size.
+題目編號：Dz104_31
+解析
+先看空格前面。 前一句是 Lithium-ion batteries have nearly twice the energy density of traditional nickel cadmium batteries.（鋰電池的能量密度將近傳統鎳鎘電池的兩倍。）——energy density（能量密度）是一個專業說法。
+再看空格後面。 後面是 This feature has important implications for cellphones and computers, because it makes these items more portable for consumers.（這項特點對手機和電腦意義重大，因為它讓這些東西更方便攜帶。）從「能量密度是兩倍」到「更方便攜帶」，中間跳了一步：要先講到體積和重量。
+E 用 That is（也就是說）把專業說法換成白話：同樣的體積裝進更多電，所以整體更輕更小。這樣 portable（方便攜帶）才接得上。
+如果你選了 A（鋰電池也是一種低保養的電池。）：A 同樣是一句優點的總說。但後面那句是 This feature（這項特點，單數），指的必須是緊接在前面的那一項；空格若寫免保養，「更方便攜帶」就變成免保養帶來的好處，兩者對不上。而且 A 帶 also（也是），講的是另一項優點，可是這裡能量密度的好處都還沒講。
+【下次先看這裡】前一句出現專業名詞、後一句直接講好處，中間那一格通常是 That is、In other words 開頭的白話說明。
+線索與數據
+線索種類舉例、結論的位置提示詞、指示詞
+線索在哪兩側 That is；後句 This feature 為單數
+答對率65%
+鑑別度67
+本篇題型6選5・刪去法不收尾
+數據出處：本頁的答對率與鑑別度來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響。
+多出來的那一個：D
+(D)Attempts to develop rechargeable lithium-ion batteries failed due to memory problems.開發可充電鋰電池的嘗試曾因記憶問題而失敗。
+D 是六個選項裡唯一提到 memory（記憶）的，而第三段整段都在談記憶——字面上最貼近正文的一個。 但五格都放不進去：
+格
+那一格在等什麼
+D 為什麼不行
+31
+把「能量密度兩倍」換成體積與重量的說法
+D 與體積重量無關，後句的 This feature 也指不到一項特點
+共同點：第二段之後整篇在講「現在的鋰電池好在哪、差在哪」，D 講的是「以前做不出來」。時間點就不對。
+【下次先看這裡】一個選項和某一格用了同一個字，先看兩句站在同一邊還是相反邊。站相反邊的，很可能就是多出來的那一個。
+展開本題所在的整篇選文與中文翻譯
+本篇共 5 格、6選5；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+開場：鋰電池是什麼，用在哪些東西上
+Since the early 1990s, the lithium-ion battery has been the most suitable battery for portable electronic equipment. Today, they’re commonly used for cellphones, computers, tablets, digital cameras, and other devices.
+優點一：能量密度高——同樣體積裝得下更多電
+Lithium-ion batteries have nearly twice the energy density of traditional nickel cadmium batteries. 31That is, they carry more power in a smaller unit, helping to reduce overall weight and size. This feature has important implications for cellphones and computers, because it makes these items more portable for consumers. It also makes power tools easier to use and allows workers to use them for longer periods of time.
+32 Lithium-ion batteries retain no “memory” of their power capacity from previous charging cycles. Thus they require no scheduled cycling and can be fully re-fueled to their maximum capacity during each charging cycle. Other rechargeable battery types, in contrast, retain information from previous charging cycles, which wastes valuable storage space. Over time, this makes these rechargeable batteries hold less of a charge.
+33 It is fragile and requires a protection circuit to maintain safe operation. A high load could overheat the pack and safety might be jeopardized. 34 After 2-3 years of use, the pack often becomes unserviceable due to a large voltage drop caused by high internal resistance.
+It should be noted, however, that manufacturers are constantly making improvements on lithium-ion batteries. 35 With such rapid progress, the use of lithium-ion batteries will certainly expand further.
+中譯
+自一九九○年代初期以來，鋰電池一直是最適合可攜式電子設備的電池。今天，手機、電腦、平板、數位相機和其他裝置普遍都用它。
+鋰電池的能量密度將近傳統鎳鎘電池的兩倍。31 這個特點對手機和電腦有重要意義，因為它讓這些東西對消費者來說更便於攜帶。它也讓電動工具更好用，工人可以連續使用更長的時間。
+32 鋰電池不會「記住」前幾次充電循環的電量。因此它們不需要按表操課地充放電，每一次充電都能充回最大容量。相對地，其他可充電電池會保留前幾次充電循環的資訊，白白占掉寶貴的儲存空間。久而久之，這會使這些可充電電池能存的電愈來愈少。
+33 它很脆弱，需要一組保護電路才能安全運作。負載過高可能使電池組過熱，安全就有疑慮。34 使用二到三年之後，電池組往往因為內阻太高造成電壓大幅下降而不堪使用。
+不過要注意的是，製造商持續在改良鋰電池。35 進展如此快速，鋰電池的使用範圍必然會再擴大。
+回到互動練習第32題 →
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/gref-29-3/index.html
+Author: staresto-create ZZSH
+Title: 學測參考試卷克漏字第29題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 學測參考試卷 ／ 第29題
+學測參考試卷 克漏字 第29題
+字彙選義線索：句內
+If you take a 29 to a different time zone, caffeine can help you overcome jet lag.
+(A)break
+(B)flight
+(C)leave
+(D)travel
+答案：(B) flight
+題目編號：GRef_29_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「如果你搭『飛機』前往不同時區」，flight（班機）符合這種跨時區旅行的具體交通工具語境；break（休息）、leave（休假）、travel（旅行，作名詞不可數，不說 take a travel）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項擺進 take a ___ 都唸得通，而 travel（旅行）在講跨時區的句子裡看起來最貼切。這一格的證據在同一句後半那個專有的詞。
+怎麼判斷
+四個選項都是名詞，可見這一格考的是搭配與語意。先看句型：If you take a ___ to a different time zone（如果你搭……去到不同的時區）。再往後讀半句，明確的證據就出現了：caffeine can help you overcome jet lag（咖啡因可以幫你克服時差）。jet 就是噴射機——jet lag 這個字本身就指明了交通工具是飛機，所以填 flight，take a flight 就是「搭飛機」。下一句 Most hotels have coffee and tea service in the room for this very reason（正因如此，多數旅館房間裡都備有咖啡與茶）也印證這是長途飛行後的情境。
+誘答選項
+travel（旅行）：take a travel 不是通行的說法（要說 take a trip 或 go on a trip）；而且 travel 太籠統，配不上 jet lag 這個明確的線索。break（休息）：take a break 是「休息一下」，但休息不會讓人跨到不同時區。leave（假期）：take leave 是「請假」，不加冠詞 a，形態就不合；語意上請假也不等於移動到別的時區。
+常考字詞與句型
+take a flight（搭飛機）、take a trip（去旅行）、take a break（休息一下）、take leave（請假）、jet lag（時差）、a time zone（時區）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Tea and coffee contain caffeine, a substance that can make you active. 26 you do not feel fully engaged after you wake up in the morning, drinking coffee at breakfast can mean the 27 between a productive day and never arriving at work.
+Caffeine is also the main ingredient in many "diet pills." It boosts metabolism, thereby 28 the body to burn more calories. If you take a 29 to a different time zone, caffeine can help you overcome jet lag. Most hotels have coffee and tea service in the room for this very reason.
+Every individual handles caffeine differently. For some people, a single cup of coffee in the morning will make them feel nervous and 30 them up all night. Other people can down five cups and be perfectly calm.
+中譯：茶和咖啡都含有咖啡因，這種物質能讓人變得有活力。如果你早上起床後感覺還沒完全清醒，早餐時喝杯咖啡，可能就是「精神飽滿過完一天」跟「根本到不了辦公室」之間的關鍵差異。咖啡因也是許多「減肥藥」的主要成分，它能促進新陳代謝，進而讓身體燃燒更多卡路里。如果你要搭機前往不同時區，咖啡因也能幫助你克服時差。這正是為什麼大多數飯店房間裡都會提供咖啡與茶飲服務的原因。每個人對咖啡因的反應都不一樣：對某些人來說，早上喝一杯咖啡就會讓他們感到緊張、整晚睡不著；但也有些人可以連喝五杯，卻依然十分平靜。
+📋 內容大意
+Tea and coffee both contain caffeine, a substance that makes people alert.
+A morning cup can decide whether a day is productive. Caffeine is also the main ingredient of many diet pills, since it raises metabolism and helps the body burn more calories.
+Travelers use it against jet lag, which is why hotels provide coffee and tea. One cup leaves some people awake all night; others drink five and stay calm.
+← 第28題回到學測參考試卷第30題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

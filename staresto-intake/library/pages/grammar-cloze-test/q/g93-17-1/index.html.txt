@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g93-17-1/index.html
+Author: staresto-create ZZSH
+Title: 93 年學測克漏字第17題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 93 年學測 ／ 第17題
+93 年學測 克漏字 第17題
+字彙選義線索：跨句答對率 32%
+答對率 32%：當年每 100 位考生，有 32 位答對。
+The 16 male child had to have certain qualities. 17 was the ability to identify the belongings of his predecessor, or rather his previous self.
+(A)It
+(B)All
+(C)One
+(D)This
+答案：(C) One
+題目編號：G93_17_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+前一句提到 certain qualities（複數），本句以 One 開頭列出第一項，下一句再以 Another requirement 接續，構成 One… Another… 的列舉呼應；It、All、This 都無法與下一句的 Another 形成這組對稱。
+深入解析
+你可能會這樣想
+看到句首要填一個代名詞，你第一個想到的是 It（當虛主詞或指前句），或 This（指前面提過的事）。這兩個選項文法上都說得通，所以只看本句是選不出來的。
+怎麼判斷
+這一格要把前後三句連起來讀。前一句 The {16} male child had to have certain qualities.（這名男孩必須具備某些特質）——qualities 是複數；本句說其中一項是能認出前世自己的遺物；下一句 Another requirement was…（另一項條件是…）。One 與 Another 是英文列舉時固定的一組呼應，你一定見過這一句：To say is one thing; to do is another.（說是一回事，做是另一回事）。類似的句型：Of the two…, one…, the other…（兩者之中，一個…另一個…）；One…, another…, and still another…（一個…另一個…還有一個）；Some…, others…（有些…有些…）。遇到句首代名詞的空格，先往下掃一兩句，看到 another、the other、a second，前面那一格幾乎一定是 One。
+誘答選項
+It was the ability… 文法無誤，但 it 只是指稱，不帶「其中之一」的意思，與下一句的 Another 對不起來；All 語意錯誤——並不是所有特質都是「認出前世遺物」；This 指代前一句整體，同樣無法與 Another 對稱。
+常考字詞與句型
+one … another …（一項…另一項…再一項）、for one thing…, for another…（一來…二來…）、some…, others…（有些…有些…）。其中 one … another … 這一組考過 3 個年度，89 年第 22 題 →、92 年第 24 題 →都出現過。
+線索範圍說明：前一句 certain qualities 為複數，才能用 One…；下一句 Another requirement 構成 One–Another 的呼應鏈
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Whenever a Dalai Lama died, a search began for his reincarnation. The 16 male child had to have certain qualities. 17 was the ability to identify the belongings of his predecessor, or rather his previous self. Another requirement was 18 he should have large ears, upward-slanting eyes and eyebrows. Besides, one of his hands should bear a mark like a conch-shell. The successful candidate, usually 19 two or three, was then removed from his family to Lhasa to begin spiritual training for his future role. The Panchen Lamas were chosen in a similar way.
+The reincarnated leaders were always "discovered" in the households of lowly families 20 noble ones. This was to ensure that no single and powerful noble family could seize the title and pass it to the next generation.
+中譯：每當一位達賴喇嘛圓寂，尋找他轉世靈童的過程便隨即展開。這名男童必須具備特定的特質。其中之一是能夠指認出前一世所使用的物品。另一項條件是必須擁有大耳朵、上揚的眼睛與眉毛。此外，他其中一隻手上還必須帶有類似海螺的印記。雀屏中選的候選人通常才兩三歲，隨後便被帶離家人身邊前往拉薩，開始接受靈性訓練，為未來的角色做準備。班禪喇嘛的挑選方式也大致相同。這些轉世的領袖，向來都「發現」於地位低下的平民家庭，而非顯赫的貴族家庭之中，目的是為了確保沒有任何一個權貴家族能獨占這個頭銜，並將其傳給下一代。
+📋 內容大意
+The selection process for a reincarnated Dalai Lama required specific physical and spiritual signs, choosing children from humble families to prevent political consolidation.
+← 第16題回到93 年學測第18題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

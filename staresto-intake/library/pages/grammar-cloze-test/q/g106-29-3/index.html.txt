@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g106-29-3/index.html
+Author: staresto-create ZZSH
+Title: 106 年學測克漏字第29題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 106 年學測 ／ 第29題
+106 年學測 克漏字 第29題
+慣用語／片語線索：句內答對率 64%
+答對率 64%：當年每 100 位考生，有 64 位答對。
+When the weather is bad, individuals tend to focus more on their work rather than thinking about activities they could 29 outside of work.
+(A)break off
+(B)approve of
+(C)engage in
+(D)take over
+答案：(C) engage in
+題目編號：G106_29_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】engage in 固定片語「從事」，表示「思考下班後可能從事的活動」；break off（中斷）、approve of（贊成）、take over（接管）都不合。
+深入解析
+你可能會這樣想
+engage 你先想到的多半是「訂婚」（be engaged to sb）或電話占線、廁所有人的 engaged，所以看到 engage in 就不敢選。engage in 是「從事、參與」，其實就是 take part in（參加）和 participate in（參與）的同一組，只是語氣正式一些。把新詞掛在舊詞上就好記多了：take part in a contest（參加比賽）、participate in the discussion（參與討論）、engage in outdoor activities（從事戶外活動）。
+怎麼判斷
+先看空格前後。activities they could {29} outside of work，這是一個省略了關係代名詞的關係子句，還原成完整寫法是 activities that they could engage in outside of work（他們下班後可以從事的活動）。再把它拆成兩句更清楚：They could engage in the activities outside of work. + These are the activities.注意 in 留在 engage 後面、自己沒有受詞，這正是關係代名詞被省略之後常見的樣子，看到介系詞後面「少一個受詞」時要有警覺。
+誘答選項
+break off（中斷、突然停止）用在關係或談話，像 break off the negotiations（中斷談判）。approve of（贊成、認可）後面接的是你認可的做法或人。take over（接管、接手）後面接的是職務或公司。三個代進去都無法搭配 activities。
+常考字詞與句型
+engage in（從事、參與）、be engaged in（忙於、投入於）、take part in（參加）、participate in（參與）、break off（中斷、突然停止）、approve of（贊成、認可）、take over（接管、接手）、focus on（專注於）。其中 take part in 這一組考過 6 個年度，83 年第 26 題 →、85 年第 23 題 →、98 年第 28 題 →、101 年第 28 題 →、107 年第 18 題 →都出現過；participate in 考過 4 個年度，83 年第 26 題 →、98 年第 28 題 →、107 年第 18 題 →都出現過；take over 考過 4 個年度，97 年第 17 題 →、98 年第 29 題 →、110 年第 17 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Research has proven that weather plays a part in our moods: Warmer temperatures and exposure to sunshine increase positive thinking, whereas cold, rainy days bring anxiety and fatigue. 26 , many people believe that bad weather can reduce productivity and efficiency.
+There is, however, a significant 27 between such beliefs and the actual effect of weather on people's performance at work. Using empirical data from laboratory experiments 28 observations of a mid-sized Japanese bank in real life, researchers find that weather conditions indeed influence a worker's focus. When the weather is bad, individuals tend to focus more on their work rather than thinking about activities they could 29 outside of work. But photos showing outdoor activities, such as sailing on a sunny day or walking in the woods, can greatly distract workers and thus 30 their productivity.
+The findings conclude that workers are actually most productive when the weather is lousy—and only if nothing reminds them of good weather.
+中譯：研究已經證實，天氣會影響我們的情緒：溫暖的氣溫和日照能提升正向思考，而寒冷、下雨的日子則會帶來焦慮與疲憊。因此，許多人認為壞天氣會降低工作效率與生產力。然而，這樣的想法與天氣對工作表現的實際影響之間，其實存在著明顯的落差。研究人員結合實驗室的實證數據以及對一家日本中型銀行的實地觀察，發現天氣狀況確實會影響員工的專注力。天氣不好時，人們往往更專注於工作，而不會分心想著下班後能做什麼活動。但顯示戶外活動的照片，例如晴天出海航行或在森林裡散步的畫面，卻會嚴重分散員工注意力，進而降低生產力。這項研究的結論是：員工在天氣糟糕時反而最有生產力——但前提是沒有任何事物提醒他們好天氣的存在。
+📋 內容大意
+Weather affects human mood, leading many to assume that bad weather hurts workplace productivity.
+Research reveals that bad weather actually improves focus and productivity by removing outdoor distractions.
+Workers achieve peak productivity during poor weather, provided they are not reminded of pleasant outdoor alternatives.
+← 第28題回到106 年學測第30題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

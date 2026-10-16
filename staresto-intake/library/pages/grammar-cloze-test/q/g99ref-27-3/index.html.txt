@@ -1,0 +1,41 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g99ref-27-3/index.html
+Author: staresto-create ZZSH
+Title: 99 課綱學測參考用試卷克漏字第27題詳解（連接詞／轉折詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 99 課綱學測參考用試卷 ／ 第27題
+99 課綱學測參考用試卷 克漏字 第27題
+連接詞／轉折詞線索：句內
+Much of the reef system is protected, 27 conservationists have long worried that not enough was being done to safeguard the area.
+(A)but
+(B)for
+(C)or
+(D)so
+答案：(A) but
+題目編號：G99課綱學測參考用試卷_27_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意轉折：「這個珊瑚礁系統大部分受到保護，但是環保人士長期以來擔心保護不足夠」，but（但是）符合這個轉折；for（因為）、or（或者）、so（所以，這裡是轉折不是因果）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是對等連接詞，而這一段一直在介紹大堡礁，讀起來像在往下鋪陳，很容易挑 so。關鍵在前後兩半的方向是不是一致。
+怎麼判斷
+四個選項都是對等連接詞，可見這一格考的是前後兩半的關係。前半是 Much of the reef system is protected（大部分的礁區受到保護），後半是 conservationists have long worried that not enough was being done to safeguard the area（保育人士長期擔心保護做得不夠）。一邊說「有保護」、一邊說「擔心保護不夠」，方向相反，是轉折，填 but。再往後讀一句更確定：On April 3, 2010, their concerns came true.（2010 年四月三日，他們的擔憂成真。）——擔憂是真的有道理的，代表前面那個「有保護」確實不足以讓人放心。
+誘答選項
+so（所以）：因果。「受到保護，所以擔心保護不夠」自相矛盾。for（因為）：它引出的是前面那句話的理由，但「擔心保護不夠」不是「大部分受到保護」的原因。（for 的這個位置限制在題庫裡也考過：83 年第 20 題 →、91 年第 24 題 →。）or（或者）：提供另一個選擇，本句不是在二選一。
+常考字詞與句型
+but（但是）、safeguard an area（保護某個區域）、a conservationist（保育人士）、come true（成真）、be protected（受到保護）、off the east coast（在東岸外海）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Over the years, the Great Barrier Reef, off Australia's east coast, has grown to be 1,240 miles long. 26 up of 2,900 connected reefs, the area is home to thousands of plant and animal species. Much of the reef system is protected, 27 conservationists have long worried that not enough was being done to safeguard the area.
+On April 3, 2010, their concerns came true. A cargo ship, Shen Neng 1, left Australia for China, carrying 65,000 tons of coal. Five hours into its 28 , the vessel strayed from its shipping lane. It plowed through a protected reef, destroying everything in its path. The damage covered an area as large as five football fields.
+With more and more ships 29 the Great Barrier Reef, experts fear an even bigger accident is bound to happen. Fortunately, tougher rules are expected to 30 effect in July 2011. There are high hopes that these rules will prevent similar accidents from happening.
+中譯：多年來，澳洲東岸外海的大堡礁已成長至長達 1240 英里。這片由 2900 座相連珊瑚礁組成的區域，是數千種動植物的棲息地。雖然大堡礁的大部分區域都受到保護，但環保人士長期以來一直擔心，目前的保護措施仍然不足。2010 年 4 月 3 日，他們的擔憂成真了。一艘名為「神能一號」的貨輪，載著六萬五千噸煤炭從澳洲駛往中國。啟航五小時後，這艘船偏離了航道，直接撞進一片受保護的珊瑚礁，沿途所到之處無一倖免，受損範圍相當於五座足球場大小。隨著越來越多船隻經過大堡礁海域，專家擔心更嚴重的事故恐怕遲早會發生。所幸，更嚴格的新規定預計將於 2011 年 7 月生效，各界都期盼這些新規定能防止類似事故再次發生。
+📋 內容大意
+A major ship collision highlighted environmental threats to the Great Barrier Reef, prompting stricter maritime regulations to protect the area.
+← 第26題回到99 課綱學測參考用試卷第28題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

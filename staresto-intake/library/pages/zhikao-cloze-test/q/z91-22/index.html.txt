@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z91-22/index.html
+Author: staresto-create ZZSH
+Title: 91 年指考克漏字第22題詳解（句型結構）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 91 年指考 ／ 第22題
+91 年指考 克漏字 第22題
+句型結構線索：句內答對率 60%
+答對率 60%：當年每 100 位考生，有 60 位答對。
+Each of the six science Olympiads 22 its specific aims.
+(A)has
+(B)is
+(C)have
+(D)are
+答案：(A) has
+題目編號：Z91_22（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+Each of + 複數名詞，主詞中心語是單數的 each，動詞須用單數 has；不受介系詞片語裡的複數 Olympiads 影響。have／are 用於複數主詞，is 語意不合（此處需要「擁有」的動詞而非 be 動詞）。
+深入解析
+你可能會這樣想
+空格前面緊貼著 Olympiads（複數），耳朵一順就填了 have。這正是本題設下的陷阱：真正的主詞不是離空格最近的那個字。
+怎麼判斷
+先把主詞的中心語找出來。Each of the six science Olympiads 裡，主詞的中心語是 Each（每一個），of the six science Olympiads 只是介系詞片語，用來說明「從哪一群裡面挑出每一個」。Each 一次只看一個，所以是單數，動詞用第三人稱單數 has。One of my friends is a doctor. 是同一個道理：主詞是 One，不是 friends。再看語意：後面接 its specific aims（它自己的具體目標），要的是「擁有」，be 動詞塞不進去。鑑別度高達 61，這一題分開的正是兩種讀法：照最近的名詞走的人填複數，先找到中心語 Each 的人填單數。介系詞片語隔在主詞與動詞中間，是主詞與動詞一致常見的考法。
+誘答選項
+have：複數動詞，只有在主詞是 the six science Olympiads 時才對，但那是介系詞 of 的受詞。is：數對了，語意不對——這一句要說的是每一個奧林匹亞「有」自己的目標，不是「是」自己的目標。are：數與語意兩層都錯。
+常考字詞與句型
+each of + 複數名詞 + 單數動詞（其中的每一個……）、one of + 複數名詞 + 單數動詞（……當中的一個）、specific aims（具體的目標）、be three-fold（分成三方面）、most important of all（最重要的是）、all over the world（全世界）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：91學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+There are six international science Olympiads in the world. They are all organized with a simple intention—to 21 global understanding and mutual appreciation among young scientists in all countries. Each of the six science Olympiads 22 its specific aims.
+The aims of the International Mathematical Olympiad (IMO), for example, are three-fold. With arduous but interesting math problems, the first aim of the IMO is to discover, to encourage and, most important of all, to challenge 23 gifted young people all over the world. Secondly, it is by participating in any IMO contest that young mathematicians of all countries can foster friendly 24.
+Based upon its second aim, more international exchanges are encouraged and established. Any IMO contest brings not only young mathematicians together but also their instructors; 25, the IMO has its final aim to create opportunities for the exchange of information on math schedules and practice throughout the world.
+中譯：全世界共有六項國際科學奧林匹亞競賽，其創辦宗旨很單純——促進各國青年科學家之間的全球理解與相互欣賞。這六項科學奧林匹亞各有其特定目標。以國際數學奧林匹亞（IMO）為例，其目標有三：透過艱深卻有趣的數學題目，IMO 的首要目標是發掘、鼓勵，並且最重要的是挑戰全世界具有數學天賦的年輕人。其次，正是透過參與 IMO 競賽，各國的年輕數學家得以建立友誼。基於第二項目標，更多的國際交流因此被促成並建立。任何一屆 IMO 競賽不只讓年輕數學家齊聚一堂，也讓他們的指導老師相聚；因此，IMO 的最終目標便是為世界各地數學課程與教學實務的資訊交流創造機會。
+📋 內容大意
+Six international science Olympiads exist, all meant to build understanding among young scientists.
+Each pursues its own aims, and those of the International Mathematical Olympiad are threefold.
+It seeks to challenge gifted students, build friendships, and let teachers exchange teaching ideas.
+← 第21題回到91 年指考第23題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

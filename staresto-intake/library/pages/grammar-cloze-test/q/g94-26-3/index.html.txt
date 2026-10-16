@@ -1,0 +1,44 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g94-26-3/index.html
+Author: staresto-create ZZSH
+Title: 94 年學測克漏字第26題詳解（連接詞／轉折詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 94 年學測 ／ 第26題
+94 年學測 克漏字 第26題
+連接詞／轉折詞線索：句內答對率 42%
+答對率 42%：當年每 100 位考生，有 42 位答對。
+Animals are able to feel pain 26 they can use it for self-protection. 27, if you touch something hot and feel pain, you will learn from this 28 that you should not touch that item in the future.
+(A)although
+(B)because
+(C)when
+(D)so that
+答案：(D) so that
+題目編號：G94_26_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+這句說的是動物能感受疼痛的用處：能感受疼痛，牠們才能利用它來保護自己。so that（以便、好讓）引出目的，子句裡常配 can 這類助動詞，正好對上 they can use it；because（因為）文法上放得進去，但會把「能利用疼痛自保」說成動物會痛的原因，而整段接下來講的正是疼痛的用處（碰到燙的東西會痛，就學會以後別再碰；植物不需要學著避開某些東西，所以這種感覺對植物沒有必要）；although（雖然）方向相反，when（當……時）把目的換成了時間關係，都不合。
+深入解析
+你可能會這樣想
+答對率四成二。先看四個選項的共同點：都是從屬連接詞，後面都能接完整子句，形態上一個也排除不了，可見這一格考的不是形態，是兩個子句之間的邏輯關係，只能靠讀懂整段。最容易選錯的是 because——前一句才剛用 because 交代植物為什麼不會痛（because they are devoid of central nervous systems and brains），讀到這一句，很自然就想再用一次 because 來講動物為什麼會痛。
+怎麼判斷
+先抓這一句的核心：主詞是 Animals，主要動作是 are able to feel pain（能感受疼痛），空格後面的 they can use it for self-protection 講的是疼痛能拿來做什麼。這兩件事的關係是「有這個能力，為的是能拿它來自保」，也就是目的，用 so that（以便、好讓）。劍橋 English Grammar Today 說 so that 用來談目的，子句裡常配 can、would、will 這類助動詞（I'll go by car so that I can take more luggage.）；本句後半正好是 they can use it，形狀完全吻合。再往下讀可以驗算：下一句說，碰到燙的東西感到痛，就會學到以後別再碰那樣東西，講的是疼痛的用處；接著說植物不會移動，也不需要學著避開某些東西，so this sensation would be unnecessary（所以這種感覺對植物沒有必要），植物用不到，所以不需要。整段從這一句起談的都是疼痛有什麼用，填 so that 前後一致。至於前一句的 because，講的是生理上的原因（沒有中樞神經與大腦），本句換成講目的，兩句回答的是不同的問題。
+誘答選項
+because（因為）：文法上放得進去，但意思會變成「動物能感受疼痛，是因為牠們能拿疼痛來自保」，把疼痛的用處說成了疼痛的成因；照前一句的說法，會不會痛的成因在有沒有中樞神經與大腦，能拿疼痛來自保是有了痛覺之後的用處。although（雖然）：方向相反，會變成「動物能感受疼痛，雖然疼痛可以拿來自保」，前後沒有轉折可言。when（當……時）：讀起來像「動物在能利用疼痛自保的時候才會痛」，把目的換成了時間關係，與整篇的說明脈絡對不上。
+常考字詞與句型
+so that + 子句（以便……、好讓……）、in order to V（為了……）、be able to V（能夠……）、be devoid of（毫無、缺乏）、use A for B（把 A 用於 B）、experience pain（感受到疼痛）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Do plants have feelings? There is currently no reason to believe that plants experience pain, because they are devoid of central nervous systems and brains. Animals are able to feel pain 26 they can use it for self-protection. 27, if you touch something hot and feel pain, you will learn from this 28 that you should not touch that item in the future. On the other hand, plants cannot move 29 and do not need to learn to avoid certain things, so this sensation would be unnecessary.
+From a physiological standpoint, plants are completely different from animals. They cannot feel pain. Therefore, 30 animals' body parts, many fruits and vegetables can be harvested over and over again without dying.
+中譯：植物有感覺嗎？目前並沒有證據顯示植物會感受到疼痛，因為它們沒有中樞神經系統和大腦。動物能感受疼痛，這樣牠們才能利用疼痛來保護自己。舉例來說，如果你碰到滾燙的東西並感到疼痛，你會從這次經驗中學到，未來不該再碰觸那樣東西。相反地，植物無法自行移動，也不需要學習避開某些事物，因此這種感覺對植物而言是不必要的。從生理學角度來看，植物與動物完全不同，它們無法感受疼痛。因此，與動物的身體部位不同，許多水果和蔬菜可以一次又一次地被採收，而不會因此死亡。
+📋 內容大意
+Lacking a central nervous system and the need for self-protective mobility, plants do not experience pain like animals do.
+← 第25題回到94 年學測第27題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

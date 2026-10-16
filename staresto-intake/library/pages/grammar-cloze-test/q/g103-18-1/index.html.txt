@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g103-18-1/index.html
+Author: staresto-create ZZSH
+Title: 103 年學測克漏字第18題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 103 年學測 ／ 第18題
+103 年學測 克漏字 第18題
+字彙選義線索：句內答對率 68%
+答對率 68%：當年每 100 位考生，有 68 位答對。
+A few hours later, 18 traveler came down the road.
+(A)a
+(B)the
+(C)other
+(D)another
+答案：(D) another
+題目編號：G103_18_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「幾小時後，『另一位』旅人沿路而來」，another（另一位，不特指的另一個）符合；a（不太符合「再一個」的強調語意）、the（定冠詞，這是新出現的人物不是特指）、other（需要接複數名詞，不能直接接單數 traveler）都不合。
+深入解析
+你可能會這樣想
+你多半覺得 a traveler 也通——「幾小時後，一位旅人沿路而來」，中文唸起來完全沒問題，於是選了 a。這正是本題的陷阱所在：a 在文法上不算錯，卻漏掉了「又來了一個」這層意思。另一種可能是看到「其他的」就直接抓 other。
+怎麼判斷
+先用文法刷掉一半。other 後面要接複數名詞或不可數名詞（other travelers、other information），要接單數可數名詞就必須用 another（an 與 other 合起來）或 the other。題目裡的 traveler 是單數，other 直接排除。這兩句擺在一起看就清楚：I have two pens. One is red; the other is blue.（兩支中的另一支，特指）對照 I don't like this one. Show me another.（許多之中的另一個，不特指）。再從語境決定要 a 還是 another。前面已經出現過第一位旅人（a traveler asked him...），現在來的是同類型的第二位，屬於「再一個」，這正是 another 的功能。「重複」是貫串整篇的主軸：這位旅人 asked Aesop the same question、伊索 made the same request，全篇都在講同一件事再上演一次。用 a 只是單純引介一個新人物，接不上這條線。the 更不行：the 表示雙方都知道指的是哪一位，這位旅人第一次出場，讀的人無從指認。
+誘答選項
+a：文法通但語意弱，讀不出「又一位」的重複感。the：定冠詞用於已知或特指的對象，此處是新登場的人物。other：後面不能直接接單數可數名詞。
+常考字詞與句型
+another（再一個、另一個，後面接單數名詞）、the other（兩者中的另一個）、the others（其餘的全部）、one after another（一個接一個）、another two weeks（再兩個星期）、one another（彼此、互相）。其中 the others 這一組考過 3 個年度，89 年第 22 題 →、92 年第 24 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Aesop, the Greek writer of fables, was sitting by the roadside one day when a traveler asked him what sort of people lived in Athens. Aesop replied, "Tell me where you come from and what sort of people live there, and I'll tell you what sort of people you'll find in Athens." 16 , the man answered, "I come from Argos, and there the people are all friendly, generous, and warm-hearted. I love them." 17 this, Aesop answered, "I'm happy to tell you, my dear friend, that you'll find the people of Athens much the same."
+A few hours later, 18 traveler came down the road. He too stopped and asked Aesop the same question. 19 , Aesop made the same request. But frowning, the man answered, "I'm from Argos and there the people are unfriendly, 20 , and vicious. They're thieves and murderers, all of them." "Well, I'm afraid you'll find the people of Athens much the same," replied Aesop.
+中譯：伊索——這位希臘寓言作家——有一天坐在路邊，一位旅人問他雅典住著什麼樣的人。伊索回答：「告訴我你從哪裡來、那裡的人是什麼樣子，我就能告訴你在雅典會遇到什麼樣的人。」旅人笑著回答：「我來自阿爾戈斯，那裡的人都很友善、慷慨又熱情，我很愛他們。」聽到這話，伊索說：「親愛的朋友，我很高興告訴你，雅典人也跟他們差不多。」幾小時後，另一位旅人沿路而來，也停下腳步問了伊索同樣的問題。伊索又提出了同樣的要求。這位旅人卻皺著眉頭回答：「我來自阿爾戈斯，那裡的人不友善、刻薄又惡毒，全都是小偷和殺人犯。」伊索回答：「嗯，恐怕你在雅典遇到的人也差不多。」
+📋 內容大意
+A traveler from Argos praised his hometown, and Aesop assured him he would find the people of Athens equally friendly.（敘事文）
+A second traveler complained bitterly about Argos, leading Aesop to tell him he would encounter the same hostility in Athens.（敘事文）
+← 第17題回到103 年學測第19題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g95-22-2/index.html
+Author: staresto-create ZZSH
+Title: 95 年學測克漏字第22題詳解（分詞／動狀詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 95 年學測 ／ 第22題
+95 年學測 克漏字 第22題
+分詞／動狀詞線索：句內答對率 43%
+答對率 43%：當年每 100 位考生，有 43 位答對。
+There are two kinds of heroes: heroes who shine in the face of great danger, who perform an 21 act in a difficult situation, and heroes who live an ordinary life like us, who do their work 22 by many of us, but who 23 a difference in the lives of others.
+(A)noticing
+(B)noticeable
+(C)noticed
+(D)unnoticed
+答案：(D) unnoticed
+題目編號：G95_22_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+過去分詞 unnoticed 作補語，表示「默默無聞地做他們的工作」（work done unnoticed＝工作完成卻不被注意）；noticing（現在分詞，主動語意方向不合）、noticeable（形容詞「顯著的」，語意相反）、noticed（過去分詞被動，但語意相反，應該是「不被注意」而非「被注意」）都不合。
+深入解析
+你可能會這樣想
+看到空格後面接著 by many of us，你直覺會想「這是被動，所以填 noticed」，於是選成「被我們許多人注意到」。問題出在你只讀了空格後面那幾個字，沒把整句話讀完。
+怎麼判斷
+答對率四成三，鑑別度 60，這題分開的是「有沒有讀到 but」。整句是 heroes who live an ordinary life like us, who do their work ___ by many of us, but who {23} a difference in the lives of others。but 是轉折，前後必須一正一負。後半句 {23} a difference（帶來改變）明顯是正面的，那空格所在的前半句就必須是負面的——他們做事不被我們多數人注意，卻真的改變了別人的生命。整句的意思就靠這個 but 鎖死。再看 unnoticed 這個字本身：「朗文當代英語辭典」把它同時列為形容詞與副詞，最常見的搭配是 go unnoticed 與 pass unnoticed（不被注意、被忽略）。這裡的 do their work unnoticed 就是在描述 their work 所處的狀態，還原成 and their work is not noticed by many of us 就通了。
+誘答選項
+noticing 是主動的「注意到……的」，意義主詞會變成 heroes，「英雄注意著我們許多人」語意不通，而且後面接 by 也接不上。noticeable 是形容詞「顯眼的、明顯的」，方向與 but 的要求相反。noticed 方向同樣相反，它是「被注意到」，跟後面的 but 語意矛盾。三個誘答選項全部倒在同一個地方：沒看 but。
+常考字詞與句型
+go unnoticed（不被注意、被忽略）、pass unnoticed（悄悄過去而未被察覺）、escape one's notice（逃過某人的注意）、take notice of（注意到）、noticeable（顯眼的、明顯的）、notice sb doing sth（注意到某人正在做某事）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+There are two kinds of heroes: heroes who shine in the face of great danger, who perform an 21 act in a difficult situation, and heroes who live an ordinary life like us, who do their work 22 by many of us, but who 23 a difference in the lives of others.
+Heroes are selfless people who perform extraordinary acts. The mark of heroes is not necessarily the result of their action, but 24 they are willing to do for others and for their chosen cause. 25 they fail, their determination lives on for others to follow. The glory lies not in the achievement but in the sacrifice.
+中譯：英雄有兩種：一種是在面對重大危險時挺身而出，在艱困情境中做出令人驚嘆之舉的英雄；另一種則是像我們一樣過著平凡生活的英雄，他們所做的事往往不被大多數人注意，卻切實地為他人的生命帶來改變。英雄是無私的人，他們做出超凡的行為。英雄的印記不一定在於行動的結果，而在於他們願意為他人及自己選擇的理念付出什麼。即使他們失敗了，他們的決心仍會延續下去，激勵他人繼續前行。榮耀不在於成就本身，而在於犧牲。
+📋 內容大意
+Heroes come in two kinds: those who act bravely in great danger, and those who live ordinary lives.
+The second kind work quietly, without praise, yet still change other people's lives.
+Heroism lies less in results than in the willingness to act for others. Even a failure leaves determination for others to follow.
+← 第21題回到95 年學測第23題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z109-11/index.html
+Author: staresto-create ZZSH
+Title: 109 年指考克漏字第11題詳解（慣用語／片語）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 109 年指考 ／ 第11題
+109 年指考 克漏字 第11題
+慣用語／片語線索：句內答對率 60%
+答對率 60%：當年每 100 位考生，有 60 位答對。
+The Consumer Protection Commission, the current Consumer Protection Committee, 11 the supervisor and coordinator for the various consumer protection organizations that put this law into practice.
+(A)serves as
+(B)fights for
+(C)persists in
+(D)corresponds to
+答案：(A) serves as
+題目編號：Z109_11（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+serves as the supervisor and coordinator（擔任監督者與協調者的角色）表示消保會的職責是擔任各消保團體的監督與協調角色；fights for／persists in／corresponds to 都不符合此處語意。
+深入解析
+你可能會這樣想
+serve 你的印象大概是餐廳裡的上菜或服務，很難聯想到它可以用來講一個機關擔任什麼角色。serve as 是很常見的正式用法，意思是擔任、充當，後面接的是一個身分或功能。
+怎麼判斷
+先看空格後面接的是什麼：the supervisor and coordinator（監督者與協調者），這是一個身分。所以這一格要的是能接身分的動詞片語，serve as + 身分正好對上。這裡的 as 就是「以……的身分」那個 as，與 As a small child, he lived in India. 走的是同一條路：as 後面接名詞時是介系詞，表示身分或資格。
+誘答選項
+corresponds to 最誘人，因為它後面同樣接名詞，形態上完全通；但 correspond to 是「相當於、對應於」，講的是兩樣東西彼此對得上，代進去會變成消保會相當於監督者與協調者，把一個機關的職務寫成了某種對應關係，語意不對。fights for（為……而奮鬥）後面接的是目標或理想，不是職稱。persists in（堅持、固執於）後面接的是某件事，也不能接身分。鑑別度 54，分開的是有沒有先確認空格後面那一串是身分，而不是別的東西。
+常考字詞與句型
+serve as（擔任、充當）、correspond to（相當於、對應於）、fight for（為……而奮鬥）、persist in（堅持、固執於）、put sth into practice（把……付諸實行）、rights and interests（權益）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：109學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The Consumer Protection Act in Taiwan was enacted on January 11, 1994. The Act demonstrated the government's efforts to protect consumers' rights and interests. The Consumer Protection Commission, the current Consumer Protection Committee, 11 the supervisor and coordinator for the various consumer protection organizations that put this law into practice. In order to improve the well-being of consumers in Taiwan, the Committee advocates fair trade and 12 pricing for goods and services. The Committee also organizes educational programs to raise consumer awareness, and is active in assisting consumers involved in 13 with businesses or manufacturers.
+Since its establishment, the Consumer Protection Committee has taken measures that emphasize product safety and sanitation. These measures also ensure that all labels and advertisements 14 to regulations. In addition, the Committee collaborates with various international consumer protection organizations to respond to problems involving cross-border trade and business. 15 its regulatory power and administrative resources, the Committee plays a crucial role in protecting consumers in Taiwan.
+中譯：台灣的《消費者保護法》於 1994 年 1 月 11 日制定，展現出政府保障消費者權益的努力。消費者保護委員會（即現在的行政院消費者保護會）擔任各消費者保護組織的監督與協調者角色，負責推動這項法律的落實。為了提升台灣消費者的福祉，該委員會提倡公平交易與合理的商品及服務定價；委員會也舉辦教育宣導活動以提高消費者意識，並積極協助消費者處理與企業或製造商之間的糾紛。
+自成立以來，消保會採取了強調產品安全與衛生的各項措施，這些措施也確保所有標示與廣告都符合法規規定。此外，該委員會也與各國際消費者保護組織合作，共同因應跨國貿易與商業所涉及的問題。憑藉其管理權力與行政資源，消保會在保障台灣消費者權益上扮演著至關重要的角色。
+📋 內容大意
+Taiwan's 1994 Consumer Protection Act created a committee to oversee consumer bodies, promote fair trade and help aggrieved shoppers.
+It has since pushed product safety, checked labels and advertisements, and joined international partners on cross-border trade.
+回到109 年指考第12題 →
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

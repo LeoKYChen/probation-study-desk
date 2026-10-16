@@ -1,0 +1,45 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g99-20-1/index.html
+Author: staresto-create ZZSH
+Title: 99 年學測克漏字第20題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 99 年學測 ／ 第20題
+99 年學測 克漏字 第20題
+字彙選義線索：句內答對率 63%
+答對率 63%：當年每 100 位考生，有 63 位答對。
+With a DJ playing various kinds of music rather than just rap, and a mix of clothing labels designed more for taste and fashion than for a precise age, department stores have managed to appeal to successful middle-aged women 20 losing their younger customers.
+(A)in
+(B)while
+(C)after
+(D)without
+答案：(D) without
+題目編號：G99_20_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+without 表示「不會……」，表示「百貨公司成功吸引中年女性顧客，同時沒有失去年輕顧客」；in（不合）、while（當……同時，填進去等於承認年輕顧客流失了，與下一句「母女雙方需求都得到滿足」矛盾）、after（之後）都不合。
+深入解析
+你可能會這樣想
+空格後面是 losing，是動名詞；in、after、without 都是介系詞可以接動名詞，while 後面接動名詞也成立。形式上刷不掉任何一個，只能靠語意。while 最誘人，因為「一邊吸引中年女性，一邊…」唸起來很順。
+怎麼判斷
+先讀懂前半在說什麼：department stores have managed to appeal to successful middle-aged women（百貨公司成功吸引了中年女性顧客）。manage to 是「設法做到、好不容易做到」，語氣是正面的成果。再往下讀一句：They have created a shopping environment where the needs of both mother and daughter are satisfied.（打造出母女雙方需求都得到滿足的購物環境）。both mother and daughter——兩邊都要，一個都不能少。所以空格處要說的是「而且沒有失去年輕顧客」，without losing 就是「沒有失去」，一個否定的附帶結果。反過來看就更清楚：選 while 會變成「在失去年輕顧客的同時吸引了中年女性」，等於承認年輕客群流失了，與下一句「母女雙方都滿足」語意矛盾。這一題的關鍵不在文法，在有沒有往下多讀一句。
+誘答選項
+in：in doing sth 是「在做某事的過程中」，語意變成「在失去年輕顧客的過程中」，方向錯了。while：表示同時進行，同樣承認了「失去」這件事。after：之後，會變成先失去年輕顧客、再吸引中年女性，與下一句衝突。
+常考字詞與句型
+without V-ing（沒有做…就…）、manage to V（設法做到…）、rather than（而不是…）、a mix of（…的混搭）、lose customers（流失顧客）、middle-aged women（中年女性）。其中 rather than 這一組考過 9 個年度，83 年第 30 題 →、88 年第 23 題 →、94 年第 25 題 →、98 年第 27 題 →、103 年第 27 題 →、105 年第 26 題 →、107 年第 16 題 →、107 年第 28 題 →、110 年試辦考試第 13 題 →都出現過；manage to V 考過 4 個年度，86 年第 28 題 →、學測詞彙 91 年第 2 題、95 年第 16 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Anita was shopping with her mother and enjoying it. Interestingly, both of them 16 buying the same pair of jeans. According to a recent marketing study, young adults influence 88% of household clothing purchases. More often than not, those in their early twenties are the more 17 consumers. There isn't a brand or a trend that these young people are not aware of. That is why mothers who want to keep abreast of trends usually 18 the experts－their daughters. This tells the retailers of the world that if you want to get into a mother's 19 , you've got to win her daughter over first.
+With a DJ playing various kinds of music rather than just rap, and a mix of clothing labels designed more for taste and fashion than for a precise age, department stores have managed to appeal to successful middle-aged women 20 losing their younger customers. They have created a shopping environment where the needs of both mother and daughter are satisfied.
+中譯：安妮塔正和媽媽一起逛街購物，逛得很開心。有趣的是，她們倆最後竟然都買了同一件牛仔褲。根據最近一項行銷研究，年輕族群影響了 88%的家庭服飾購買決策。二十歲出頭的年輕人，往往是更具流行敏銳度的消費者，幾乎沒有任何品牌或潮流能逃過他們的注意。這也是為什麼想跟上潮流的媽媽們，通常會請教這方面的專家——也就是她們的女兒。這也告訴全球的零售商：想要打入媽媽的荷包，就得先贏得她們女兒的心。百貨公司播放各式各樣的音樂而不只是饒舌樂，服飾品牌的搭配也更講究品味與流行、而非特定年齡層，讓百貨公司得以同時吸引成功的中年女性，又不流失年輕顧客，成功打造出一個能同時滿足母女雙方需求的購物環境。
+📋 內容大意
+Young adult consumers heavily influence household clothing choices, making them a primary target for retailers trying to reach mothers.
+Department stores have adapted their environment and offerings to cater simultaneously to both middle-aged mothers and their daughters.
+← 第19題回到99 年學測第21題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

@@ -1,0 +1,44 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z93m-30/index.html
+Author: staresto-create ZZSH
+Title: 93 年指考敏督利颱風受災地區考生補救考試克漏字第30題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 93 年指考敏督利颱風受災地區考生補救考試 ／ 第30題
+93 年指考敏督利颱風受災地區考生補救考試 克漏字 第30題
+字彙選義線索：跨句
+Probability is the science of 30. It is among the fastest growing and most useful parts of today's mathematics.
+(A)sport
+(B)chance
+(C)future
+(D)weather
+答案：(B) chance
+題目編號：Z93M_30（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+the science of chance（機率的科學）指機率學研究的正是「或然性／機率」，呼應前文討論的猜測與可能性；sport／future／weather 都不符合機率學的定義語境。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+sport 與 weather 兩個選項都眼熟——這一篇前半在講美式足球、籃球和下雨，掃到選項時很容易覺得「剛剛看過」；future 也一樣，前面才出現過 how things will turn out in the future。但眼熟不等於正確，刻意從文章裡取用出現過的字來當誘答選項是常見的命題手法。
+怎麼判斷
+定案的依據就在前一句：The branch of mathematics that helps make our guesses more accurate is called probability.（這門幫助我們把猜測變得更準確的數學分支叫做機率。）既然上一句剛把這門學問命名為 probability，這一句 Probability is the science of ___ 就是在替它下定義，空格要填的是 probability 這門學問到底在研究什麼，也就是或然性、可能性——chance。這一篇還有一條值得注意的線：chance 在同一篇裡出現了三次，意思一路從具體滑向抽象。第一次是 a good chance of rain（很有可能下雨），講的是一件事的可能性；第二次是 the chances of overcoming that kind of lead are slim（扭轉那種領先差距的機會很渺茫），講的是勝算；第三次就是本題的 the science of chance，抽象成一整門學問要探討的東西。同一個字在一篇文章裡反覆出現時，回頭把前面幾次看一遍，往往就推得出這一次是什麼意思。
+誘答選項
+sport（運動）：文章拿球賽當例子，但機率不是研究運動的科學；weather（天氣）：下雨只是第一個例子，同樣不是這門學問的定義；future（未來）：前面確實提過未來，但機率研究的不是「未來」這個時間，是事情發生的可能性，兩者差一層。三個選項都是靠眼熟取勝，沒有一個接得上前一句的 probability。
+常考字詞與句型
+the science of chance（研究或然性的科學）、probability（機率、或然性）、by chance（偶然、碰巧）、a branch of + 學科（……的一個分支）、accurate（精準的）、among the fastest growing（成長最快的……之一）。
+線索範圍說明：chance 的抽象義由前一句把該學門命名為 probability 定案
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Which would you wear to a football game, a sweater or a raincoat? 26 the raincoat if you thought there was a good chance of rain. Which basketball team is more likely to win, one that is 30 points ahead at the half or its opponent? Teams have been known to come from 27 to win, but the chances of overcoming that kind of lead are slim.
+28 of us can be perfectly sure about how things will turn out in the future. But we can, and often do, think of the possibilities. We can try to guess 29 this or that might happen.
+In some cases mathematics can help make these guesses more accurate. The branch of mathematics that helps make our guesses more accurate is called probability. Probability is the science of 30. It is among the fastest growing and most useful parts of today's mathematics.
+中譯：去看一場美式足球賽，你會穿毛衣還是雨衣？如果你認為很有可能下雨，你或許就會選擇穿雨衣。哪一支籃球隊比較有可能獲勝——是上半場就領先 30 分的那一隊，還是它的對手？球隊確實有可能從落後大幅追分逆轉獲勝，但要扭轉這麼大的差距，機會其實相當渺茫。我們當中沒有人能夠完全確定未來會如何發展，但我們可以，也經常會去思考各種可能性。我們可以嘗試猜測這件事或那件事是否會發生。在某些情況下，數學能幫助我們讓這些猜測更加準確。這門幫助我們讓猜測更精準的數學分支，就叫做機率。機率是研究不確定性的科學，它是當今數學中發展最快、也最實用的領域之一。
+📋 內容大意
+Sensible choices, from clothing to sport, rest on judging what is likely to happen.
+Nobody can be certain about the future, yet we constantly weigh the possibilities.
+Mathematics sharpens such guesses, and that branch, probability, is among its most useful today.
+← 第29題回到93 年指考敏督利颱風受災地區考生補救考試
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

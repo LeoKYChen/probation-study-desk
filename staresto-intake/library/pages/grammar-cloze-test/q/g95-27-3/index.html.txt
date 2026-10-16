@@ -1,0 +1,48 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g95-27-3/index.html
+Author: staresto-create ZZSH
+Title: 95 年學測克漏字第27題詳解（句型結構）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 95 年學測 ／ 第27題
+95 年學測 克漏字 第27題
+句型結構線索：句內答對率 49%
+答對率 49%：當年每 100 位考生，有 49 位答對。
+Baseball, on the other hand, seems more mental, like chess, and 27 those fans that prefer a quieter, more complicated game. 28 , professional football teams usually play no more than fourteen games a year.
+(A)attracted
+(B)is attracted
+(C)attract
+(D)attracts
+答案：(D) attracts
+題目編號：G95_27_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+主詞 baseball 是單數，動詞需用單數 attracts；attracted（過去式，不合現在式描述通則的語境）、is attracted（被動，方向不合，應該是棒球「吸引」球迷不是棒球「被吸引」）、attract（複數動詞形式，不符合單數主詞）都不合。
+深入解析
+你可能會這樣想
+四個選項是同一個動詞 attract 的四種形態，很容易一頭栽進「該用哪個時態」的比較裡。其實這一題要先問的是更前面一步：空格在句子裡扮演什麼功能。
+怎麼判斷
+先把句型拆開來看，這一題的骨幹是：S + V1 + …… and ___V2___ + O2。對應到本句：Baseball（主詞）seems more mental, like chess（V1 與它的補語），and 之後就是空格，後面接 those fans that prefer a quieter, more complicated game（O2）。and 是對等連接詞，它連接的必須是同一層級、同一形態的兩個成分。空格後面帶著受詞 those fans，代表它要當動詞用；而 and 前面那個動詞是 seems——現在式、第三人稱單數。所以空格要照抄同一種形態，填 attracts。先問一件事：英文為什麼要用 and 並列，不乾脆寫成兩個完整的句子？答案是簡潔——主詞既然都是 Baseball，就沒有必要說兩次，把它提到前面共用，後面兩個動作用 and 接起來就好。這在文法上叫省略（ellipsis），省掉的是重複而且補得回來的部分（Halliday 與 Hasan「Cohesion in English」把省略列為銜接手段之一），While (he was) walking home 就是同一回事。用國中數學來看，這正是把公因式提出來：A（B＋C）＝AB＋AC，左邊比右邊短，英文寫的就是左邊那一形。既然如此，要檢查形態對不對，把它展開回去就好：and 兩邊共用同一個主詞 Baseball，把主詞分配進去，整句就還原成兩句——Baseball seems more mental, like chess. 與 Baseball attracts those fans that prefer a quieter, more complicated game.，兩句都要能單獨成立。分配出來的第二句主詞是單數的 Baseball、時態是現在式，動詞自然只能是 attracts。這個方法一次解決兩件事：拆得開，就確定 and 連的是兩個動詞而不是別的東西；拆開之後主詞一確定下來，該用什麼形態也就決定了。要提醒的是並不是每個 and 都拆得開——Tom and Mary are a good couple. 拆開就不成立，那代表 and 連的是一個整體，不是兩件事，這時候就不能照抄形態。這個「先確定主要動詞在哪裡」的思路，與 104 年第 18 題 →是一組對照：那一題的線索是「主詞後面插了分詞片語、句子還沒有動詞」，本題的線索是「and 兩邊要對稱」。同型的並列題還有 99 年第 27 題 →（助動詞後面兩個原形動詞並列）、100 年第 19 題 →（介系詞 by 後面三個動名詞並列），判斷方式完全一樣——先找出 and 前面那一個是什麼形態，後面就照抄。
+誘答選項
+is attracted：被動，方向反了——是棒球吸引球迷，不是棒球被球迷吸引。而且被動之後不能再接原本的受詞，空格後面明明還接著 those fans，一看到就該先刷掉。這個方法在學測反覆出現：主動的動詞後面找不到受詞才考慮被動，被動的後面卻還接著受詞就一定錯。attracted：過去式，但 and 前面的 seems 是現在式，兩邊形態對不上；整篇又都在講通則，時態也不合。attract：原形。主詞 Baseball 是單數，而且與 and 前面的 seems 形態不一致。
+常考字詞與句型
+V1 … and V2 …（對等連接詞兩邊形態要一致）、attract attention（吸引注意）、be attracted to sth（受……吸引）、a tourist attraction（觀光景點）、prefer A to B（偏好 A 勝過 B）、on the other hand（另一方面）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Fans of professional baseball and football argue continually over which is America's favorite sport. Though the figures on attendance for each vary with every new season, certain 26 remain the same.
+To begin with, football is a quicker, more physical sport, and football fans enjoy the emotional involvement they feel while watching. Baseball, on the other hand, seems more mental, like chess, and 27 those fans that prefer a quieter, more complicated game.
+28 , professional football teams usually play no more than fourteen games a year. Baseball teams, however, play 29 every day for six months.
+Finally, football fans seem to love the half-time activities, the marching bands, and the pretty cheerleaders. 30 , baseball fans are more content to concentrate on the game's finer details and spend the breaks between innings filling out their own private scorecards.
+中譯：職業棒球與美式足球的球迷經常爭論哪一項運動才是美國人最愛的運動。雖然兩者的觀眾人數每季都有所變動，但某些論點始終不變。首先，美式足球節奏較快、對抗性也較強，足球迷享受觀賽時那種情緒投入的感覺。另一方面，棒球則顯得更需要動腦，像下棋一樣，吸引偏好較安靜、較複雜比賽的球迷。此外，職業美式足球隊一年通常只打不超過十四場比賽，然而，棒球隊卻幾乎每天都要打，持續整整六個月。最後，美式足球迷似乎特別喜愛中場表演、遊行樂隊和啦啦隊員。相較之下，棒球迷則更滿足於專注比賽的細節，並在局間休息時填寫自己的計分卡。
+📋 內容大意
+Fans argue endlessly over whether baseball or football is America's favorite sport. The same points return every season.
+Football is faster and more physical, and its fans enjoy the emotional involvement. Baseball is more mental, like chess, and suits fans who prefer a quieter game.
+Football teams play about fourteen games a year, while baseball runs daily for six months. Football crowds love the half-time show; baseball crowds study the details.
+← 第26題回到95 年學測第28題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

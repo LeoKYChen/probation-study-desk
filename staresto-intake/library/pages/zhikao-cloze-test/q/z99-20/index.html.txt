@@ -1,0 +1,49 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z99-20/index.html
+Author: staresto-create ZZSH
+Title: 99 年指考克漏字第20題詳解（時態／語態）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 99 年指考 ／ 第20題
+99 年指考 克漏字 第20題
+時態／語態線索：句內答對率 17%
+答對率 17%：當年每 100 位考生，有 17 位答對。
+The exhibit, opened in December 2008, 20 scheduled to run for about three years.
+(A)is
+(B)being
+(C)has
+(D)having
+答案：(A) is
+題目編號：Z99_20（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+opened in December 2008 是插入的分詞片語，用來修飾主詞 The exhibit，句子仍缺一個限定動詞，故填 is，構成 be scheduled to（預定）；being 與 having 都是分詞，has 則會使語態變成主動而不合。
+重點：兩個逗號中間的 opened in December 2008 是分詞片語，用來修飾 The exhibit，不是這一句的動詞，所以真正的動詞還沒出現；being 與 having 是非限定形式，不能單獨當動詞，has 會變成主動的 has scheduled，語意不通。填 is 才組成 be scheduled to（預定）。
+延伸閱讀：限定動詞與非限定動詞——插入的分詞片語不是真正的動詞 ↗
+深入解析
+你可能會這樣想
+句子中間插了 opened in December 2008，你看到 opened 就當它是主要動詞，覺得句子已經完整，於是不知道空格要填什麼。這個分詞片語只是修飾主詞，等於 which was opened in December 2008。
+怎麼判斷
+讀英文句子，先抓兩樣東西：誰、怎麼了——主詞與動詞。這兩樣定了，其餘都是掛在上面的修飾語。先把句子切開看：[The exhibit], opened in December 2008, ___ scheduled to run for about three years. 方括號裡是主詞，緊接著兩個逗號夾住一段修飾語；把它遮掉，剩下 [The exhibit] ___ scheduled…，動詞該站的位置立刻現形。眼睛先撞到 opened 就把它當成動詞，是這一題最容易出的錯。主詞後面接逗號的句子都可以這樣處理：先確認逗號之間是不是修飾語（分詞片語、同位語、介系詞片語），是就遮掉。骨幹露出來之後，要填的是一個有時態的動詞。scheduled 在這裡是過去分詞——展覽是「被安排」的一方，所以要配 be 動詞構成 be scheduled to V（預定要…）。主詞 The exhibit 單數，全文用現在式敘述現況，因此填 is。這個結構很常見：The boy standing there is my brother.（站在那裡的男孩是我哥哥。）standing there 是修飾語，is 才是主要動詞。本題只多兩件事——修飾語換成過去分詞，是被動；而且用兩個逗號插在主詞與動詞中間，把兩者隔得比較開，更容易看走眼。
+誘答選項
+being 與 having 都是分詞、沒有時態，當不了主要動詞，填進去整句會變成一個沒有動詞的名詞片語。has 的問題不同：has scheduled 是主動語態，意思變成「展覽安排了某件事」，但展覽是被安排的一方，語態顛倒；要用 has，得寫成 has been scheduled 才通。這個方法在學測 104 年第 18 題也考過同一個概念：These movements, forming an exercise system, ___ one to effortlessly experience the vital life force, or the Qi energy, in one's body.——插入語換成現在分詞，遮掉之後要判斷的是主詞單複數（These movements 要配 allow）。學測 108 年第 17 題是第三種：However, many people, either refusing to accept the new date or not having heard about it, ___ to celebrate New Year’s Day on April 1.——插入語是兩個並列的分詞片語，遮掉之後要判斷的是主要動詞的時態（要配 continued）。本題遮掉之後要判斷的是語態。遮住插入語只是第一步，第二步永遠是問：這個主詞跟這個動詞，在數與語態上對得起來嗎？
+常考字詞與句型
+be scheduled to V（預定要）、be due to V（預計）、be set to V（即將）、run for（持續、上演）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：99學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Signs asking visitors to keep their hands off the art are everywhere in the Louvre Museum, Paris. But one special sculpture gallery invites art lovers to allow their hands to 16 the works. The Louvre's Tactile Gallery, targeted at the blind and visually 17, is the only space in the museum where visitors can touch the sculptures, with no guards or alarms to stop them.
+Its latest exhibit is a 18 of sculpted lions, snakes, horses and eagles. The 15 animals exhibited are reproductions of famous works found elsewhere in the Louvre. Called "Animals, Symbols of Power," the exhibit 19 animals that were used by kings and emperors throughout history to symbolize the greatness of their reigns.
+The exhibit, opened in December 2008, 20 scheduled to run for about three years. During guided tours on the weekends, children can explore the art with blindfolds on.
+中譯：在巴黎羅浮宮，隨處可見提醒遊客「請勿觸摸展品」的告示。但有一個特別的雕塑藝廊，卻邀請藝術愛好者伸手觸摸展品。羅浮宮的「觸覺藝廊」專為視障與視覺受損人士設計，是館內唯一一處遊客可以觸摸雕塑、且沒有警衛或警報器阻止的空間。該藝廊最新的展覽是一系列獅子、蛇、馬與老鷹的雕塑收藏。展出的 15 件動物雕塑都是複製自羅浮宮其他地方著名作品的仿製品。這個名為「動物，權力的象徵」的展覽，呈現了歷史上國王與皇帝們用來象徵其統治偉大之處的動物形象。這項展覽於 2008 年 12 月開幕，預計展出約三年。週末的導覽行程中，孩童還能戴上眼罩來探索這些藝術品。
+📋 內容大意
+The Louvre's Tactile Gallery lets blind and partly sighted visitors handle sculptures freely.
+Its newest show gathers fifteen sculpted animals, all copies of famous works held elsewhere.
+Titled "Animals, Symbols of Power," it ran three years, with blindfolded children joining weekend tours.
+← 第19題回到99 年指考
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

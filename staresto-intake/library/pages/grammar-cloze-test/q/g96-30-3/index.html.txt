@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g96-30-3/index.html
+Author: staresto-create ZZSH
+Title: 96 年學測克漏字第30題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 96 年學測 ／ 第30題
+96 年學測 克漏字 第30題
+字彙選義線索：句內答對率 27%
+答對率 27%：當年每 100 位考生，有 27 位答對。
+Though it was once known to the world for the 1994 tribal conflict that resulted in about one million deaths, Rwanda has 30 the mass killing.
+(A)survived
+(B)transformed
+(C)recovered
+(D)endangered
+答案：(A) survived
+題目編號：G96_30_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+survive 是及物動詞，直接接所經歷的災難，survive the mass killing 意為「從大屠殺中存活下來」；recover 表「康復、復原」時要接 from，transformed（轉變）、endangered（危及）語意也不合。
+深入解析
+你可能會這樣想
+survive + N（不加介系詞）。你背的是 survive ＝ 存活，要說「從那場災難中活下來」，中文有個「從」，就寫成 survive from——這是最常見的錯。它是及物動詞，後面直接接那場災難：Rwanda has survived the mass killing.（盧安達挺過了那場大屠殺。）
+怎麼判斷
+真正需要 from 的是 recover：recover from an illness（從疾病中康復）。兩個字都在講劫後，一個直接接受詞，一個要 from，一起記最省事。文內線索也很清楚：Though it (Rwanda) was once known to the world for the 1994 tribal conflict（雖然盧安達一度以 1994 年的部族衝突為世人所知）是讓步，下一句 Now it (Rwanda) is healing and prospering（如今正在復原、日漸繁榮）是印證——先挺過來，才談得上復原。survive 家族一起記：survivor（生還者）、survival（生存）。一句記完：The village school survived the earthquake, and classes started again a week later.（那所村裡的小學挺過了地震，一週後就復課了。）〔情境取材自 99 課綱參考試卷作文題：鄰國大地震寫信〕
+誘答選項
+transformed（使轉變）方向不對，填進去變成盧安達改造了那場屠殺；recovered 表「復原」時要接 from，這裡沒有 from；它的及物用法是「取回、恢復」（recover stolen goods、recover consciousness），填進去會變成「取回那場屠殺」，說不通；endangered 是「使…陷入危險」，填進去變成盧安達害那場屠殺陷入危險，說不通。
+常考字詞與句型
+survive the war／an accident（在戰爭／意外中生還，及物不加介系詞）、survive on（靠…維生）、recover from（從…康復）、be survived by（遺有…在世）、a survivor（生還者）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Whenever I set foot on the soil of Rwanda, a country in east-central Africa, I feel as if I have entered paradise: green hills, red earth, sparkling rivers and mountain lakes. Herds of goats and cows 26 enormous horns graze the lush green fields. Although located close to the equator, Rwanda's "thousand hills," 27 from 1,500 m to 2,500 m in height, ensure that the temperature is pleasant all year around. And being a tiny country, everything in Rwanda is 28 in a few hours and the interesting spots can be explored comfortably in a couple of weeks.
+But 29, Rwanda is a symbol of the triumph of the human spirit over evil. Though it was once known to the world for the 1994 tribal conflict that resulted in about one million deaths, Rwanda has 30 the mass killing. Now it is healing and prospering and greets visitors with open arms.
+中譯：每當我踏上盧安達——這個位於非洲中東部的國家——的土地時，我都感覺自己彷彿進入了天堂：翠綠的山丘、紅色的泥土、閃閃發光的河流與高山湖泊。成群長著巨大犄角的山羊和牛，在青翠的草地上吃草。雖然盧安達地處赤道附近，但它的「千丘之國」地形——海拔從 1500 公尺到 2500 公尺不等——確保了全年氣候宜人。身為一個小國，盧安達的景點在短短幾小時內就能走遍，境內有趣的地方也能在一兩週內從容探索完畢。但最重要的是，盧安達象徵著人類精神戰勝邪惡的力量。儘管它曾因 1994 年造成約一百萬人死亡的種族衝突而為世人所知，盧安達如今已挺過那場大屠殺，正逐漸療癒、日漸繁榮，並張開雙臂歡迎來訪的旅客。
+📋 內容大意
+Rwanda strikes the writer as paradise. There are green hills, red soil, bright rivers and mountain lakes, and fields grazed by goats and long-horned cattle.
+Its thousand hills rise from 1,500 to 2,500 meters, so the weather stays pleasant all year. The country is small enough to see in a couple of weeks.
+Rwanda also stands as a symbol of the human spirit overcoming evil. Once known only for the 1994 conflict and its million deaths, the country is now healing.
+← 第29題回到96 年學測
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

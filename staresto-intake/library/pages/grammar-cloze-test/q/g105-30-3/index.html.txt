@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g105-30-3/index.html
+Author: staresto-create ZZSH
+Title: 105 年學測克漏字第30題詳解（慣用語／片語）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 105 年學測 ／ 第30題
+105 年學測 克漏字 第30題
+慣用語／片語線索：句內答對率 30%
+答對率 30%：當年每 100 位考生，有 30 位答對。
+Trade is certainly a main 30 force for globalization.
+(A)driving
+(B)pulling
+(C)riding
+(D)bringing
+答案：(A) driving
+題目編號：G105_30_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+driving force 是字詞搭配，意為「推動力、原動力」，本句指貿易是全球化的主要推力；pulling、riding、bringing 都不與 force 構成這個固定說法。
+深入解析
+你可能會這樣想
+driving 這個字，你的印象大概就是「開車」，看到 a main ___ force 時，四個 -ing 都填得下去，於是憑感覺猜。這一格考的不是文法，純粹是「知不知道 driving force 這個字詞搭配」。
+怎麼判斷
+先看選項：四個都是 -ing 形，放在 force 前面在文法上都成立，可見這一題考的不是文法，而是字詞搭配。劍橋詞典把 driving force 收為獨立詞條，釋義是「促使某事發生的強大人物或事物」；Collins 的說明是「造成某事發生的主要因素」。中文即「推動力、原動力、主要推手」。drive 除了「駕駛」，更核心的意思是「驅動、推動」——drive the economy（帶動經濟）、drive change（推動改變），driving force 用的正是這個意思。作答線索在前一段末：Today, all countries are involved in, and to varying degrees dependent on, trade with other countries.（今日各國都參與國際貿易，並在不同程度上依賴與他國的貿易）；本句 Trade is certainly a main {30} force for globalization. 承接前文作結，說明貿易推動了全球化，故應填 driving。
+誘答選項
+pulling force 在物理上指「拉力」，不用於形容抽象的推動；riding force、bringing force 都不是英文的說法。這一類字詞搭配屬約定俗成的固定用法，難以由字面推得，宜將 driving force 整組記下，考試時它本身就是判斷答案的線索。
+常考字詞與句型
+a driving force（原動力、主要推手）、drive the economy／change（帶動經濟／推動改變）、a driving factor（推動因素）、a major force in…（…的一大力量）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+International trade is the exchange of goods and services between countries. Trade is driven by different production costs in different countries, making 26 cheaper for some countries to import goods rather than make them. A country is said to have a comparative advantage over another when it can produce a commodity more cheaply. This comparative advantage is 27 by key factors of production such as land, capital, and labor.
+While international trade has long been conducted in history, its economic, social, and political importance has been 28 in recent centuries. During the 1990s, international trade grew by nearly 8.6% each year. In the year 1990 alone, the growth in trade in services was as high as 19%. Today, all countries are involved in, and to varying degrees dependent on, trade with other countries.
+29 international trade, nations would be limited to the goods and services produced within their own borders. Trade is certainly a main 30 force for globalization. It is also the subject of many international agreements that aim to govern and facilitate international trade, such as those negotiated through the World Trade Organization (WTO).
+中譯：國際貿易是國與國之間商品與服務的交換。由於各國生產成本不同，貿易因此產生，這使得某些國家從國外進口商品，比自行生產更為划算。當一個國家能以更低成本生產某項商品時，就被稱為對其他國家擁有「比較利益」。這種比較利益取決於土地、資本、勞力等關鍵生產要素。雖然國際貿易早已存在於歷史之中，但其經濟、社會與政治上的重要性在近幾個世紀大幅提升。1990 年代，國際貿易每年成長近 8.6%，光是 1990 年，服務貿易的成長率就高達 19%。如今，世界各國都不同程度地參與並依賴與他國的貿易往來。若沒有國際貿易，各國就只能使用自己國境內生產的商品與服務。貿易無疑是推動全球化的一股主要力量，也是許多旨在規範與促進國際貿易的國際協議的核心議題，例如透過世界貿易組織（WTO）所談判達成的各項協定。
+📋 內容大意
+International trade relies on comparative advantage and cost differences among countries for producing goods and services.
+The economic and political significance of global trade has grown rapidly in modern history, creating widespread global interdependence.
+International trade drives globalization and is governed by key international agreements and organizations.
+← 第29題回到105 年學測
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

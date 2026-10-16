@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g100-27-3/index.html
+Author: staresto-create ZZSH
+Title: 100 年學測克漏字第27題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 100 年學測 ／ 第27題
+100 年學測 克漏字 第27題
+字彙選義線索：句內答對率 66%
+答對率 66%：當年每 100 位考生，有 66 位答對。
+Being a rare natural resource, diamonds are 27 in supply.
+(A)traded
+(B)weakened
+(C)limited
+(D)noticed
+答案：(C) limited
+題目編號：G100_27_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「鑽石供應『有限』」，limited（有限的）符合稀缺資源的語境；traded（被交易）、weakened（被削弱）、noticed（被注意到）都不合。
+深入解析
+你可能會這樣想
+四個選項都是過去分詞，代進去形狀一模一樣，只能靠語意判斷。traded 特別誘人，因為鑽石確實是被交易的商品，be traded 文法上也完全通。
+怎麼判斷
+決定性的線索就在同一句的開頭：Being a rare natural resource（因為是一種稀有的天然資源）。這是分詞構句表原因，還原成完整子句是 Since diamonds are a rare natural resource。既然稀有，供給當然是「有限的」，所以是 limited。下一句還有第二道保險：However, their demand is high（然而它們的需求很高）。However 要求前後相反——需求高，前面就必須是供給少。這一組「供給少、需求高」正是整篇要解釋的供需道理，也是後面 the scarcity of goods（商品的稀有性）的伏筆。順帶把 in supply 這個說法記起來：be limited in supply（供給有限）、be in short supply（供不應求），supply 在這裡是不可數名詞。
+誘答選項
+traded：被交易，文法通，但語意既接不上前半的「稀有」，也接不上後半 However 的轉折。weakened：被削弱，英文不用「弱」來形容供給，而且削弱講的是一個變化的過程，這裡說的是長期的狀態。noticed：被注意到，與供需完全無關。
+常考字詞與句型
+be limited in supply（供給有限）、be in short supply（供不應求）、supply and demand（供給與需求）、a natural resource（天然資源）、demand is high（需求量大）、Being a rare resource（身為一種稀有資源，分詞構句表原因）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Which is more valuable? Water or diamonds? Water is more useful to mankind than diamonds, and yet 26 are costlier. Why? Called the diamond-water paradox, this is a classic problem posed to students of economics.
+The answer has to do with supply and demand. Being a rare natural resource, diamonds are 27 in supply. However, their demand is high because many people buy them to tell the world that they have money, 28 as conspicuous consumption in economics. In other words, the scarcity of goods is 29 causes humans to attribute value. If we 30 surrounded by an unending abundance of diamonds, we probably wouldn't value them very much.
+Hence, diamonds carry a higher monetary value than water, even though we find more use for water.
+中譯：何者更有價值？水還是鑽石？水對人類的用處遠大於鑽石，然而鑽石卻昂貴得多，這是為什麼呢？這個經典的經濟學問題被稱為「鑽石與水的悖論」，答案與供需有關。鑽石是稀有的天然資源，供給量有限；然而，鑽石的需求量卻很高，因為許多人購買鑽石是為了向世人展示自己的財力，這在經濟學上稱為「炫耀性消費」。換句話說，商品的稀有性正是人類賦予其價值的原因。如果我們身邊充斥著取之不盡的鑽石，我們大概就不會這麼珍視它們了。因此，儘管水對我們更有用處，鑽石的金錢價值卻遠高於水。
+📋 內容大意
+The diamond-water paradox highlights the economic puzzle of why useless diamonds cost more than essential water.
+Value is driven by scarcity and high demand related to social status rather than basic usefulness.
+Hence, scarcity gives diamonds a far higher monetary price than water despite water's greater utility.
+← 第26題回到100 年學測第28題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

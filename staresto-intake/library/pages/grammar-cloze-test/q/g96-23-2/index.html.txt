@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g96-23-2/index.html
+Author: staresto-create ZZSH
+Title: 96 年學測克漏字第23題詳解（連接詞／轉折詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 96 年學測 ／ 第23題
+96 年學測 克漏字 第23題
+連接詞／轉折詞線索：句內答對率 61%
+答對率 61%：當年每 100 位考生，有 61 位答對。
+As India's size decreases, the thickness of the Himalayas increases. 23 the shrinking continues, India will disappear in 200 million years.
+(A)If
+(B)For
+(C)Unless
+(D)Though
+答案：(A) If
+題目編號：G96_23_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+條件句「如果收縮持續下去，印度將在兩億年後消失」，If 引導條件子句；For（因為）、Unless（除非，語意相反，應該是「如果持續」不是「除非持續」）、Though（雖然）都不合。
+深入解析
+你可能會這樣想
+Unless 是這題最漂亮的陷阱，因為 unless 這個字，你的印象只剩「除非」兩個字，而中文的「除非」在口語裡用得很鬆 ——「除非這個縮小繼續下去，印度會消失」念起來竟然有點像話。落差在於 unless 真正的意思是 if...not（如果不……），劍橋 English Grammar Today 直接把它解釋成 except if。只要把這個換算做出來，語意馬上垮。這題鑑別度高達 59，分開的正是「有沒有真的把 unless 換算成否定」這一個動作 —— 停在中文「除非」的人會覺得通，動手還原的人一秒就發現矛盾。
+怎麼判斷
+兩個選項都能搭條件句公式，就把兩個都還原一次，看哪一個講得通：If the shrinking continues 是「如果縮小持續下去，印度會消失」，成立；Unless the shrinking continues 等於 If the shrinking does not continue，是「如果縮小不再持續，印度反而會消失」，縮小停了卻消失，自己打自己，排除。另外還有一個形式線索可以先把範圍縮到兩個：主要子句是 India will disappear，用 will + 原形，配的就是最熟的條件句公式 —— If + 現在式，主要子句 will + 原形，像 If it rains tomorrow, I will stay home。四個選項裡只有 If 和 Unless 走這個公式，先留下這兩個，再用上面的還原把 Unless 刷掉，答案就定了。同一份考卷的第 19 題答案是 Although（讓步），而 Though 正是本題的誘答選項；兩題把「讓步」與「條件」分在兩邊考，擺在一起看，兩種關係的差別最清楚。
+誘答選項
+For（因為）：for 當連接詞時引出的是前面那句話的理由，它帶的子句要接在它所解釋的那句話後面；這裡空格在整句的最前面，後面又直接接主要子句 India will disappear，同一句裡找不到它要解釋的那句話，排除。Unless（除非）：見上面的還原。補一個語感：unless 通常搭「不做某事就會有壞結果」，像 You'll be late unless you hurry.（你不快點就會遲到。）Though（雖然）：讓步要求前後有衝突，但「縮小持續下去」和「印度會消失」是同一個方向的因果，順順地走下去，沒有可以讓步的地方。
+常考字詞與句型
+unless（除非，等於 if...not）、as long as（只要）、in case（以防、萬一）、on condition that（條件是……）、in 200 million years（兩億年後，in + 時間表示「……之後」）、continue to V／continue V-ing（繼續做某事）。其中 as long as 這一組考過 4 個年度，89 年第 24 題 →、98 年第 19 題 →、107 年第 21 題 →都出現過；in case 考過 3 個年度，85 年第 33 題 →、107 年第 21 題 →都出現過。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+India is shrinking. A new analysis of satellite-based data has given precisely the rate 21 which the country is losing size as it pushes northward against the Himalayas. According to the analysis, the 22 between India's southern and northern tips shrinks by 2 cm every year. As India's size decreases, the thickness of the Himalayas increases. 23 the shrinking continues, India will disappear in 200 million years. There would only be a vast mountain range along the southern coast of China.
+The Indian plate's 24 movement is not new. However, this cannot be treated as a trivial finding in science. A movement of 25 a few millimeters (mm) of the earth's crust is a sign of possible earthquakes. Such dangers are now obvious in India, where the movement of the plate continues.
+中譯：印度正在縮小。一項根據衛星資料的新分析，精確計算出印度在向北推擠喜馬拉雅山脈的過程中縮小的速度。根據這項分析，印度南北兩端之間的距離每年縮短 2 公分。隨著印度面積縮小，喜馬拉雅山的厚度則在增加。如果這種縮小持續下去，印度將在兩億年後消失，屆時只會剩下一片沿著中國南部海岸的廣大山脈。印度板塊的北移現象並不是新鮮事。然而，這在科學上不能被視為無關緊要的發現。地殼只要移動幾公釐，就可能是地震即將發生的徵兆。這樣的危險在印度已相當明顯，因為該板塊仍持續在移動。
+📋 內容大意
+Satellite data now shows precisely how quickly India is losing size as the plate pushes north into the Himalayas.
+The gap between the country's northern and southern tips closes by two centimeters a year, and the mountains grow thicker. India could vanish in 200 million years.
+The plate's motion is not new. But a shift of a few millimeters in the crust signals possible earthquakes, so the finding matters.
+← 第22題回到96 年學測第24題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

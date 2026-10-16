@@ -1,0 +1,54 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dz101-34/index.html
+Author: staresto-create ZZSH
+Title: 指考 101年 篇章結構 第34題詳解（掌握段落內語句的連貫性與一致性）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 指考 101年 ／ 第34題
+指考 101年 篇章結構 第34題
+選文：廣告與說服（All Advertising Persuades）
+掌握段落內語句的連貫性與一致性線索：One… Another… Some… Others 句型、語意對比答對率 57%
+(A)Political advertising is one example.政治廣告就是一個例子。
+(B)To put it another way, ads are communication designed to get someone to do something.換句話說，廣告是一種設計來讓人去做某件事的溝通。
+(C)Advertising can be the most important source of income for the media through which it is conducted.廣告可能是刊登它的媒體最重要的收入來源。
+(D)They differ from commercial ads in that political ads “sell” candidates rather than commercial goods.它們與商業廣告不同之處在於，政治廣告「賣」的是候選人，而不是商品。
+(E)Aside from campaign advertising, political advertising is also used to persuade people to support or oppose proposals.除了競選廣告之外，政治廣告也用來說服人支持或反對某些提案。
+(F)In addition to political parties, environmental groups and human rights organizations also buy advertising to persuade people to accept their way of thinking.除了政黨之外，環保團體與人權組織也買廣告，說服人接受他們的想法。
+答案：(E) Aside from campaign advertising, political advertising is also used to persuade people to support or oppose proposals.
+題目編號：Dz101_34
+解析
+先看空格前面。 前一句是布希的競選廣告。
+再看空格後面。 後面是 Critics of President Clinton’s health care plan used advertising to influence lawmakers and defeat the government’s plan.（批評柯林頓健保方案的人用廣告影響立法者、擊敗政府的方案。）這一個例子不是選舉，是政策。
+從選舉跳到政策，中間需要一句話把範圍拉開。E 的 Aside from campaign advertising（除了競選廣告之外）承接布希那個例子，proposals（提案）則帶出健保方案。
+如果你選了 F（除了政黨之外，環保團體與人權組織也買廣告，說服人接受他們的想法。）：F 同樣是「除了……之外」的句型，形式幾乎一樣。差別在換掉的是哪一項——F 換的是「誰在買廣告」（政黨換成環保團體），E 換的是「廣告用在哪裡」（選舉換成政策）。後面那個例子仍然在政治領域，換的是用途，所以是 E。
+【下次先看這裡】兩個選項都用「除了……之外」時，看後面的例子換掉的是哪一項：換人，還是換用途。
+線索與數據
+線索種類One… Another… Some… Others 句型、語意對比
+線索在哪後一句 Aside from…；選舉 ↔ 政策
+答對率57%
+鑑別度69
+本篇題型6選5・刪去法不收尾
+數據出處：本頁的答對率與鑑別度來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響。
+多出來的那一個：C
+(C)Advertising can be the most important source of income for the media through which it is conducted.廣告可能是刊登它的媒體最重要的收入來源。
+C 從頭到尾在講廣告，句子本身也完全正確——但全篇只談一件事：廣告怎麼說服人。 C 談的是廣告的錢從哪來、進了誰的口袋。五格沒有一格在等它。
+這一篇多出來的選項和 100 年指考那一篇不一樣。 那一篇的 B 切題卻無處可放；這裡的 C 是切面不同，看得出來。
+【下次先看這裡】先用一句話說出「這篇從頭到尾在回答什麼問題」。答的不是同一個問題，那一個就是多出來的。
+展開本題所在的整篇選文與中文翻譯
+本篇共 5 格、6選5；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+All advertising includes an attempt to persuade. 31 Even if an advertisement claims to be purely informational, it still has persuasion at its core. The ad informs the consumers with one purpose: to get the consumer to like the brand and, on that basis, to eventually buy the brand. Without this persuasive intent, communication about a product might be news, but it would not be advertising.
+Advertising can be persuasive communication not only about a product but also an idea or a person. 32 Although political ads are supposed to be concerned with the public welfare, they are paid for and they all have a persuasive intent. 33 A Bush campaign ad, for instance, did not ask anyone to buy anything, yet it attempted to persuade American citizens to view George Bush favorably. 34Aside from campaign advertising, political advertising is also used to persuade people to support or oppose proposals. Critics of President Clinton’s health care plan used advertising to influence lawmakers and defeat the government’s plan.
+35 For instance, the international organization Greenpeace uses advertising to get their message out. In the ads, they warn people about serious pollution problems and the urgency of protecting the environment. They, too, are selling something and trying to make a point.
+中譯
+所有的廣告都帶有說服的意圖。31 就算一則廣告聲稱自己純粹只是提供資訊，說服仍然是它的核心。廣告告訴消費者資訊，目的只有一個：讓消費者喜歡這個品牌，並在這個基礎上，最終買下這個品牌。少了這層說服的意圖，關於某項產品的訊息也許算是新聞，但不會是廣告。
+廣告可以是關於產品的說服性溝通，也可以是關於一個想法或一個人。32 政治廣告雖然照理說關切的是公共福祉，但它們是花錢買來的，而且全都帶有說服的意圖。33 舉例來說，布希的一則競選廣告並沒有要任何人買什麼東西，卻試圖說服美國民眾對布希抱持好感。34 反對柯林頓總統健保方案的人，就用廣告來影響立法者，讓政府的這項方案無法過關。
+35 舉例來說，國際組織綠色和平就利用廣告把自己的訊息傳出去。在廣告裡，他們警告大眾嚴重的污染問題，以及保護環境的迫切性。他們同樣在推銷某種東西，也在試圖表達一個主張。
+← 第33題回到互動練習第35題 →
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

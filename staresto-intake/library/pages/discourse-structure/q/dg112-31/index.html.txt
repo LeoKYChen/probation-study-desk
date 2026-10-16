@@ -1,0 +1,55 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dg112-31/index.html
+Author: staresto-create ZZSH
+Title: 學測 112年 篇章結構 第31題詳解（掌握篇章整體結構發展及段落與段落間的關係）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 學測 112年 ／ 第31題
+學測 112年 篇章結構 第31題
+選文：聯覺：聽見聲音的顏色（Synesthesia）
+掌握篇章整體結構發展及段落與段落間的關係線索：轉折詞答對率 41%
+(A)This consistency serves as a proof that synesthesia is real.這種一致性可作為聯覺確實存在的證據。
+(B)Meanwhile, environmental influences seem to shape a person’s synesthesia.另一方面，環境的影響似乎也會形塑一個人的聯覺。
+(C)People with synesthesia used to be accused of making their experiences up.有聯覺的人過去常被指責是自己編造這些經驗。
+(D)Some studies even show that people may all be synesthetic to some degree.有些研究甚至顯示，所有人可能都或多或少有聯覺。
+答案：(C) People with synesthesia used to be accused of making their experiences up.
+題目編號：Dg112_31
+解析
+先看空格的位置。 它在第三段的第一句。前面兩段一段用問句破題、一段給定義，從頭到尾沒有人對聯覺表示過懷疑。
+再看空格後面第一句。 後面是 In the early 1990s, however, scientists noticed that synesthetic colors do not change over time.（然而到了一九九〇年代初，科學家注意到聯覺產生的顏色不會隨時間改變。）however 表示語意轉折——要轉，前面得先有一個相反的立場。
+往下讀完整段：顏色不變、隔數月數年再問答案仍相同、最後腦部掃描提供最有力的支持。整段在數證據。既然結局是證明，開頭被轉掉的那個立場就是「不被相信」。
+C 講的正是這件事，used to（過去曾經）與後面的 In the early 1990s 前後成對。
+這題只有四成一的人答對：空格在段落第一句，前面隔著段落分界，往前找找不到；線索全在後面那個 however。四個選項又都在同一個話題上，光比對「有沒有關係」分不出來。
+如果你選了 A（這種一致性可作為聯覺確實存在的證據。）：A 也在講真實性，字面上的 real 更醒目。但 A 的 This consistency（這種一致性）必須指回前面剛提過的一致性，而空格前面是第二段結尾，講的是文字會在舌尖引發真實的味覺，沒有「一致」這回事。而且 A 已經是結論，後面的 however 就沒有東西可以轉。
+【下次先看這裡】空格在段首、後面第一句就有 however，先問「它要轉掉的是哪一種說法」。那種說法就在空格裡。
+線索與數據
+線索種類轉折詞
+線索在哪後一句 however
+答對率41%
+鑑別度47
+本篇題型4選4・刪去法可收尾
+數據出處：本頁的答對率與鑑別度來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響。
+展開本題所在的整篇選文與中文翻譯
+本篇共 4 格、4選4；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+破題：用連續設問把讀者帶進題目
+Have you ever thought of “coloring” the names of the days of the week? When you listen to someone speaking, do you see a rainbow of colors? Or perhaps Mozart’s music tastes like an apple pie to you? If so, it is very likely that you have synesthesia.
+定義：說明什麼是聯覺
+Synesthesia is a condition in which people’s senses intermix. In some cases, people with synesthesia may experience colors when they hear, read, or even think of letters and numbers. In others, words can trigger a real sensation of taste on their tongue.
+31People with synesthesia used to be accused of making their experiences up. In the early 1990s, however, scientists noticed that synesthetic colors do not change over time. When asked what color is evoked by a letter or number, synesthetic people would persistently give the same answer even if tested months or years apart. 32 The most compelling support, however, comes from brain scans, which show that color processing areas in the brain light up when these people listen to certain words.
+Is synesthesia genetically inherited or acquired after birth? Scientists agree that synesthesia has a genetic basis, because it frequently runs in families. But an actual synesthesia gene (or genes) has not been identified yet. 33 For example, the flavors people with taste-word synesthesia experience are usually childhood flavors, such as chocolate or strawberries. Also, people with color-music synesthesia more often than not have had early musical training.
+Once thought to be extremely rare, synesthesia is now found to affect about one to four percent of the population. 34 As is often observed, most of us tend to associate lower notes with darker colors and higher notes with brighter colors. Researchers further point out that in most people synesthesia is active only during the first months of their infancy, while this ability remains forever in certain individuals.
+中譯
+你有沒有想過要幫星期一到星期日「上色」？聽別人說話的時候，你會看見一片彩虹般的顏色嗎？或者，莫札特的音樂嘗起來像蘋果派？如果是這樣，你很可能有聯覺。
+聯覺是一種感官彼此交混的狀況。有些人有聯覺，在聽到、讀到、甚至只是想到字母和數字的時候，會經驗到顏色。另一些人則是文字會在舌頭上引發真實的味覺。
+31 不過在一九九○年代初期，科學家注意到聯覺產生的顏色不會隨時間改變。問他們某個字母或數字會引發什麼顏色，即使兩次測驗相隔數月甚至數年，有聯覺的人始終給出同樣的答案。32 不過最有力的支持來自腦部掃描：這些人聽到某些字詞時，腦中負責處理顏色的區域會亮起來。
+聯覺是遺傳來的，還是出生之後才有的？科學家同意聯覺有遺傳基礎，因為它常常在同一個家族裡出現。但真正的聯覺基因（或多個基因）目前還沒有找到。33 舉例來說，有「味覺—文字」聯覺的人嘗到的味道，通常是童年的味道，像巧克力或草莓。另外，有「顏色—音樂」聯覺的人，多半很小的時候就受過音樂訓練。
+聯覺一度被認為極為罕見，現在則發現大約百分之一到百分之四的人口有這種現象。34 常見的觀察是，我們多數人都傾向把較低的音和較暗的顏色連在一起，把較高的音和較亮的顏色連在一起。研究者進一步指出，多數人的聯覺只在嬰兒期的頭幾個月活躍，某些人身上這個能力則會一直保留下來。
+回到互動練習第32題 →
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

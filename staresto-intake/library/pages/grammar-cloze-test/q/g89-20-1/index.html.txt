@@ -1,0 +1,41 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g89-20-1/index.html
+Author: staresto-create ZZSH
+Title: 89 年學測克漏字第20題詳解（時態／語態）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 89 年學測 ／ 第20題
+89 年學測 克漏字 第20題
+時態／語態線索：句內
+I 20 to add 10 more pages.
+(A)told
+(B)was told
+(C)had told
+(D)had been telling
+答案：(B) was told
+題目編號：G89_20_1（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+被動語態過去式 was told，「我被告知要多加十頁」；told（主動，方向不對，應該是「被告知」不是「我告訴」）、had told（過去完成主動，方向也不對）、had been telling（過去完成進行，主動且時態過重）都不合。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都是 tell 的形態變化，你會先想時態，在過去式與過去完成式之間打轉；而 told 又是最短最眼熟的一個，很容易第一眼就選它。這一格真正要分的不是時態，是方向。
+怎麼判斷
+四個選項都是同一個動詞 tell 的形態與語態組合，可見這一格考的是形態，那就看空格後面接什麼。空格後面直接就是 to add 10 more pages，中間沒有任何受詞。這是決定性的線索：tell 主動用的時候一定要有人被告知，句型是 tell sb to do sth（tell him to wait 叫他等一下），受詞不能省。現在受詞不見了，只剩下 to add，代表原本的受詞已經被搬到主詞的位置去了，也就是被動——I was told to add 10 more pages.（我被要求再加十頁。）。這個方法與 92 年第 28 題 →是同一個判斷方式的兩面：那一題是主動的 has isolated 後面找不到受詞，這一題是主動的 told 後面找不到受詞，兩題都靠「主動卻沒有受詞」先刷掉主動選項。再用語意驗算：前一句說教授把報告退回來，動作是教授發出的，Sue 是承受的一方，被動完全合理。
+誘答選項
+told：主動，後面缺受詞；語意也變成「我告訴（某人）要加十頁」，把發話的人和被要求的人對調了。had told：過去完成式的主動，除了受詞一樣缺之外，過去完成式還需要另一個更晚的過去時間點當基準，本句沒有。had been telling：過去完成進行式，強調一段持續的動作，而「被要求加十頁」是教授退還報告時說的一句話，不是持續在做的事。
+常考字詞與句型
+be told to V（被要求做……）、tell sb to V（叫某人做……）、be asked to V（被要求做……）、add sth to sth（把某物加到……）、ten more pages（再多十頁）、a lot（很多）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Joe: I see you're busy right now, Sue. As soon as you 16 , I'd like to talk to you for a few minutes. Sue: It's O.K. Come on in.
+Joe: Oh, no, I don't want to interrupt you. I can wait. I'll come back 17 . Sue: I'm afraid it's going to be a long wait! I'm working 18 my history paper.
+Joe: History paper? I thought you'd finished it. 19 you turn it in on Friday? Sue: Uh-huh. But the professor just returned it to me. I 20 to add 10 more pages. Joe: Ten more pages! That's a lot. How are you going to do it? Sue: That's what I'm trying to figure out. Now what can I do for you?
+中譯：喬：我看妳現在很忙，蘇。等妳忙完，我想跟妳談幾分鐘。蘇：沒關係，進來吧。喬：喔，不用了，我不想打擾妳，我可以等，等一下再回來找妳。蘇：恐怕要等很久喔！我正在忙我的歷史報告。喬：歷史報告？我以為妳已經寫完了。妳不是星期五就交了嗎？蘇：嗯，是啊。但教授剛把報告退回給我，要我再多加十頁。喬：再加十頁！這也太多了吧。妳打算怎麼辦？蘇：這正是我在傷腦筋的地方。那你找我有什麼事嗎？
+📋 內容大意
+Sue explains to Joe that she must revise her history paper by adding ten more pages after her professor returned it.（敘事文）
+← 第19題回到89 年學測第21題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

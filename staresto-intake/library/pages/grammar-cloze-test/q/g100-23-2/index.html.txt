@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g100-23-2/index.html
+Author: staresto-create ZZSH
+Title: 100 年學測克漏字第23題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 100 年學測 ／ 第23題
+100 年學測 克漏字 第23題
+字彙選義線索：句內答對率 70%
+答對率 70%：當年每 100 位考生，有 70 位答對。
+The musical has been performed in more than nine languages, with more productions than any 23 musical.
+(A)one
+(B)thing
+(C)other
+(D)else
+答案：(C) other
+題目編號：G100_23_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】any other 用於比較句型中排除自身，「比任何其他音樂劇都有更多製作版本」；one／thing／else 都不合這個固定比較句型。
+深入解析
+你可能會這樣想
+any 後面該接什麼，很多人靠語感填；anything、anyone 唸久了，看到 any 就想接 thing 或 else。這一題考的其實是比較句型裡一條很小但沒有例外的規矩。
+怎麼判斷
+句子是 with more productions than any ______ musical——拿 MAMMA MIA! 和其他音樂劇比製作場次。問題來了：MAMMA MIA! 自己也是一齣音樂劇。如果只寫 more than any musical，等於說「它比任何一齣音樂劇都多」，那也包含它自己，邏輯上不成立，自己不可能比自己多。所以必須用 other 把自己排除掉：any other musical 就是「任何其他的音樂劇」。這是比較句型的規矩：同類相比時用「比較級加 any other 加單數名詞」，不同類相比才不必加 other。兩個例句擺在一起就很清楚：Tom is taller than any other boy in his class.（湯姆比班上任何其他男孩都高，湯姆本身是這個班的男生）／Tom is taller than any girl in his class.（湯姆和女生不同類，不必加 other）。順帶注意 any other 後面接的是單數名詞 musical，不是複數。
+誘答選項
+one：any one musical 是「任何一齣音樂劇」，同樣沒有把自己排除掉，而且 any one 強調的是「其中任一個」，語意重心不對。thing：musical 本身已經是名詞，前面不能再塞一個名詞。else：else 只能放在不定代名詞或疑問詞後面（anything else、who else），不能放在名詞 musical 前面。
+常考字詞與句型
+any other（任何其他的，後接單數名詞）、anything else（其他任何東西）、no other（沒有別的）、taller than any other boy（比任何其他男孩都高）、a production（一次製作演出）、worldwide popularity（在全球受歡迎的程度）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+On March 23, 1999, the musical MAMMA MIA! made its first public appearance in London. It 21 the kind of welcome it has been getting ever since. The audience went wild. They were literally out of their seats and singing and dancing in the aisles.
+MAMMA MIA! has become a 22 entertainment phenomenon. More than 30 million people all over the world have fallen in love with the characters, the story and the music. The musical has been performed in more than nine languages, with more productions than any 23 musical.
+Its worldwide popularity is mainly due to its theme music, which showcases ABBA's timeless songs in a fresh and vital way 24 retains the essence of both pop music and good musical theater. It has 25 so many people that a film version was also made. To no one's surprise, it has enjoyed similar popularity.
+中譯：1999 年 3 月 23 日，音樂劇《媽媽咪呀！》在倫敦首次公演。從那時起，它便一直受到同樣熱烈的歡迎。觀眾反應相當熱情，紛紛離開座位，在走道上又唱又跳。《媽媽咪呀！》已成為一股全球性的娛樂現象，全球超過三千萬人為劇中角色、劇情和音樂深深著迷。這齣音樂劇已用超過九種語言演出，製作場次比任何其他音樂劇都多。它之所以廣受歡迎，主要歸功於劇中的主題音樂，以清新而充滿活力的方式呈現 ABBA 樂團的經典歌曲，同時保留了流行音樂與優質音樂劇場的精髓。它吸引了如此多人，甚至因此拍成電影版，而電影版也毫不意外地同樣廣受歡迎。
+📋 內容大意
+The musical MAMMA MIA! opened in London on March 23, 1999. The audience left their seats and danced in the aisles.
+More than 30 million people around the world have come to love its characters, story and music. It has been staged in over nine languages.
+Its success rests on ABBA's songs, presented in a fresh way. A film version followed and was just as popular.
+← 第22題回到100 年學測第24題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

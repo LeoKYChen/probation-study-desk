@@ -1,0 +1,3325 @@
+[
+ {
+  "id": "z110",
+  "year": "110年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "妮基與她的娜娜雕像（Niki de Saint Phalle）",
+  "titleStatus": null,
+  "blankCount": 5,
+  "optionCount": 6,
+  "spec": "6選5",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "C"
+  ],
+  "blankRange": [
+   31,
+   35
+  ],
+  "options": {
+   "A": "The series is mostly composed of life-size dolls of women in various roles such as brides and new mothers.",
+   "B": "Work on the garden began in 1979, and it was officially opened to the public in May 1998.",
+   "C": "Many modern women artists create sculptures that have become iconic pieces of feminist movement.",
+   "D": "Through these joyful and powerful images of Nana, the artist sends a positive message to all women.",
+   "E": "Her rebelliousness created a series of conflicts with her family, which led to a nervous breakdown at age 23.",
+   "F": "Instead, the works focus on the elements of life experience, personality, and self-knowledge that the cards refer to."
+  },
+  "optionsZh": {
+   "A": "這個系列大多由真人大小的女性人偶構成，扮演新娘、新手媽媽等各種角色。",
+   "B": "這座園子一九七九年動工，一九九八年五月正式對外開放。",
+   "C": "許多當代女性藝術家創作出成為女性主義運動代表作的雕塑。",
+   "D": "透過這些歡欣而有力的娜娜形象，這位藝術家向所有女性傳達了正面的訊息。",
+   "E": "她的叛逆造成一連串與家人的衝突，並在二十三歲時導致精神崩潰。",
+   "F": "相反地，這些作品聚焦於那些牌所指涉的生命經驗、個性與自我認識。"
+  },
+  "paraLabels": [
+   "介紹人物：出身、與家庭的衝突，以及讓她成名的 Nana 系列",
+   "另一件代表作：塔羅公園長什麼樣，並澄清它跟算命無關",
+   "結尾：交代她的過世與一生評價"
+  ],
+  "marks": [
+   [
+    1,
+    "Saint Phalle’s sculptural park, “The Tarot Garden,” inspired by Tarot cards, is situated in the Italian province of Tuscany.",
+    "topic"
+   ],
+   [
+    0,
+    "and yet",
+    "trans"
+   ],
+   [
+    0,
+    "Fortunately",
+    "trans"
+   ],
+   [
+    1,
+    "however",
+    "trans"
+   ],
+   [
+    "F",
+    "Instead",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Niki de Saint Phalle, one of the most famous artists of the 20th century, was a French-American born in 1930. She was brought up in a very conservative family, and yet, she rejected the staid, conservative values of her family to pursue a career in painting. __31__ Fortunately, painting offered her an effective therapy and a way to develop as an artist. Her famous “Nana” series gained universal praise. It is a testimony to the glory of women. __32__ Some of these sculptures are very big, “so that men would look small next to them.” Saint Phalle used vivid colors in these works and her female subjects dance cheerfully and merrily. __33__",
+   "Saint Phalle’s sculptural park, “The Tarot Garden,” inspired by Tarot cards, is situated in the Italian province of Tuscany. __34__ The park contains sculptures of the symbols found on Tarot cards. The brightly colored combinations of buildings and sculptures reflect the metaphysical qualities represented by the 22 main tarot cards. The sculptures, however, have nothing to do with fortune telling. __35__",
+   "Saint Phalle passed away on May 21, 2002, in San Diego, California, at the age of 71. Her death meant the loss of a woman of diverse creative talents."
+  ],
+  "zhTranslation": [
+   "妮基・德・聖法勒是二十世紀最著名的藝術家之一，法裔美籍，一九三○年出生。她在非常保守的家庭長大，卻違抗家族那套古板保守的價值觀，走上繪畫這條路。__31__ 幸好，繪畫給了她有效的療癒，也給了她成為藝術家的路。她著名的「娜娜」系列廣受讚譽，那是女性榮光的見證。__32__ 這些雕塑有些非常巨大，「好讓男人站在旁邊顯得渺小」。聖法勒在這些作品裡用了鮮豔的色彩，作品中的女性歡快地舞動著。__33__",
+   "聖法勒以塔羅牌為靈感的雕塑公園「塔羅花園」，位於義大利的托斯卡尼省。__34__ 這座公園裡有塔羅牌上各種符號的雕塑。色彩鮮明的建築與雕塑相互組合，映照出二十二張塔羅大牌所代表的抽象意涵。不過，這些雕塑跟算命毫無關係。__35__",
+   "聖法勒於二○○二年五月二十一日在美國加州聖地牙哥過世，享年七十一歲。她的離世，代表世人失去了一位才華多元的女性創作者。"
+  ],
+  "unusedExplanation": {
+   "opt": "C",
+   "lead": "C 裡有 `women`（女性）、`sculptures`（雕塑）、`feminist`（女性主義），全篇的關鍵詞幾乎全中。但五格都放不進去：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "`Fortunately` 前面那件壞事",
+     "why": "C 不是壞事，也不是她個人的經歷"
+    },
+    {
+     "blank": 32,
+     "want": "Nana 系列是什麼形式的作品",
+     "why": "C 的主詞是別的藝術家，後句的 `these sculptures` 指不到 Nana"
+    },
+    {
+     "blank": 33,
+     "want": "第一段的收尾，把 Nana 的訊息說出來",
+     "why": "C 講的不是她的作品"
+    },
+    {
+     "blank": 34,
+     "want": "這座公園什麼時候做的",
+     "why": "C 沒有時間"
+    },
+    {
+     "blank": 35,
+     "want": "「不是算命，那是什麼」",
+     "why": "C 與塔羅牌無關"
+    }
+   ],
+   "summary": "**共同點：這一篇從頭到尾只講一個人——她的成長、她的 Nana 系列、她的塔羅公園、她的過世。C 講的是「許多當代女性藝術家」，鏡頭從一個人拉到一群人，而這篇文章沒有要往那個方向走。**",
+   "extra": [
+    "**這裡有一個值得記住的對照。** 在指考 100 年研究用試卷那一篇（社區菜園），第 32 格的答案正好就是一句「從一個人跨到一群人」的句子——因為那一篇第二段確實要從一位老太太談到全美國。**同樣型態的句子，在那篇是答案，在這篇是多出來的那一個。**"
+   ],
+   "takeaway": "「這句話寫得對不對」和「這篇文章要不要走這個方向」是兩件事。挑答案看的是第二件。"
+  },
+  "reading": [],
+  "flagNote": null,
+  "sourceFile": "指考_已完成資料_1-16份_補齊篇章結構答案.json",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 18,
+   "選項字數區間": "14-19",
+   "選項字數全距": 5,
+   "選項長度變異係數": "9.8%"
+  }
+ },
+ {
+  "id": "z109",
+  "year": "109年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "羅馬角鬥士的真實生活（The Life of Roman Gladiators）",
+  "titleStatus": null,
+  "blankCount": 5,
+  "optionCount": 6,
+  "spec": "6選5",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "B"
+  ],
+  "blankRange": [
+   31,
+   35
+  ],
+  "options": {
+   "A": "Gladiators were recruited from different sources.",
+   "B": "The origins of gladiators were obscure and mysterious.",
+   "C": "Recent research findings suggest that this name was likely literal.",
+   "D": "There is evidence to suggest that females also participated in gladiator contests.",
+   "E": "Gladiators fought for the entertainment of Rome’s rich and mighty, as well as for the public.",
+   "F": "Also, there was little sign of meat or dairy products in the diet of almost all of these professional fighters."
+  },
+  "optionsZh": {
+   "E": "角鬥士的搏鬥是為了娛樂羅馬的權貴，也為了娛樂一般民眾。",
+   "A": "角鬥士是從不同的來源招募來的。",
+   "D": "有證據顯示，女性也參加過角鬥比賽。",
+   "C": "近期的研究發現顯示，這個稱呼很可能就是字面上的意思。",
+   "F": "此外，這些職業鬥士幾乎每一位的飲食裡，都看不到什麼肉類或乳製品。",
+   "B": "角鬥士的來歷晦澀難解。"
+  },
+  "unusedExplanation": {
+   "opt": "B",
+   "lead": "B 只有八個字，句子乾淨，`origins`（來歷）也是全篇談得最多的東西之一。但五格都放不進去：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "他們為什麼要打給人看",
+     "why": "B 講來歷，不是觀眾"
+    },
+    {
+     "blank": 32,
+     "want": "來源清單前面的總說",
+     "why": "B 也講來源，但後面三句列得一清二楚，與「晦澀難解」方向相反"
+    },
+    {
+     "blank": 33,
+     "want": "第一次把女性講出來",
+     "why": "B 沒有提到女性"
+    },
+    {
+     "blank": 34,
+     "want": "把外號和證據接起來",
+     "why": "B 與外號、飲食都無關"
+    },
+    {
+     "blank": 35,
+     "want": "第二項飲食證據",
+     "why": "B 不是飲食"
+    }
+   ],
+   "summary": "**共同點：這一篇每一段都在給答案——是什麼人、從哪裡來、吃什麼，連骨頭都拿去化驗了。B 寫的卻是「來歷晦澀難解」。**",
+   "extra": [],
+   "takeaway": "一個選項說「無從得知」「眾說紛紜」，先看這篇文章的立場。整篇都在把事情講清楚的話，它多半就是多出來的那一個。"
+  },
+  "paraLabels": [
+   "破題：角鬥士是什麼人，羅馬人為什麼愛看",
+   "來源：這些人從哪裡來，其中也有女性",
+   "飲食：從「吃大麥的人」這個外號談他們吃什麼"
+  ],
+  "marks": [
+   [
+    0,
+    "Gladiators were combatants who fought against criminals, wild animals, and each other during the time of the Roman Empire.",
+    "topic"
+   ],
+   [
+    1,
+    "__32__",
+    "topic"
+   ],
+   [
+    2,
+    "__34__",
+    "topic"
+   ],
+   [
+    "F",
+    "Also",
+    "trans"
+   ],
+   [
+    2,
+    "In addition to",
+    "trans"
+   ],
+   [
+    2,
+    "but",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Gladiators were combatants who fought against criminals, wild animals, and each other during the time of the Roman Empire. They were armed with deadly weapons and in most cases fought till either one of them accepted defeat or was killed. __31__ Roman people enjoyed the sight of blood and violent death. They crowded into the arenas to watch gladiator games, just like we watch football, baseball, and tennis matches today.",
+   "__32__ Some were slaves bought from different lands under Roman control, and some were prisoners of war. Most of the others were volunteers, a group which once accounted for half of all gladiators. The majority of the gladiators were Thracians, Gauls, and Africans. These combatants were generally skilled fighters and were paid for their services. __33__ All of the fighters, both male and female, were well looked after by their owners and rewarded after winning fights.",
+   "Roman historians sometimes called gladiators hordearii, a Latin term which means “barley eaters” in English. __34__ Chemical analyses of the bones found in a gladiator graveyard indicated that the typical food eaten by gladiators was wheat, barley, and beans. __35__ In addition to a plant-heavy diet, gladiators drank plant ashes to fortify the body after physical exertion and to promote better bone healing. The diet that gladiators followed may be unconventional by modern athletic standards, but in the days of the Romans, this was the diet of heroes."
+  ],
+  "zhTranslation": [
+   "角鬥士是羅馬帝國時代的搏鬥者，對手是罪犯、野獸，也包括彼此。他們手持致命的武器，多數情況下要打到其中一方認輸或被殺死為止。__31__ 羅馬人喜歡看見血、看見激烈的死亡場面。他們擠進競技場觀賞角鬥比賽，就像我們今天看足球、棒球和網球比賽一樣。",
+   "__32__ 有些是從羅馬控制的各地買來的奴隸，有些是戰俘。其餘大多是自願加入的，這一群人一度占了所有角鬥士的一半。角鬥士多半是色雷斯人、高盧人和非洲人。這些搏鬥者一般都身手熟練，也因為出賽而領取報酬。__33__ 所有的鬥士，不分男女，都受到主人妥善照料，打贏之後還會得到獎賞。",
+   "羅馬史家有時稱角鬥士為 hordearii，這個拉丁文的意思是「吃大麥的人」。__34__ 在一處角鬥士墓地找到的骨頭經過化學分析，結果顯示角鬥士平常吃的是小麥、大麥和豆類。__35__ 除了以植物為主的飲食之外，角鬥士還會喝植物灰，用來在劇烈消耗體力之後強化身體，並幫助骨頭癒合得更好。以現代運動員的標準來看，角鬥士的這套飲食也許不太尋常，但在羅馬人的年代，這就是英雄的飲食。"
+  ],
+  "reading": [],
+  "flagNote": null,
+  "sourceFile": "指考_已完成資料_1-16份_補齊篇章結構答案.json",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 18,
+   "選項字數區間": "6-20",
+   "選項字數全距": 14,
+   "選項長度變異係數": "39.7%"
+  }
+ },
+ {
+  "id": "z109b",
+  "year": "109年補考",
+  "exam": "指考",
+  "examType": "補考",
+  "title": "古埃及由誰統治（Who Ruled Ancient Egypt）",
+  "titleStatus": null,
+  "blankCount": 5,
+  "optionCount": 6,
+  "spec": "6選5",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "D"
+  ],
+  "blankRange": [
+   31,
+   35
+  ],
+  "options": {
+   "A": "Under the vizier were local governors called nomarks.",
+   "B": "The Pharaoh, however, could not run the government all by himself.",
+   "C": "As a living god, the Pharaoh was given absolute control over his subjects.",
+   "D": "Governors of specific pieces of land were sometimes controlled by the vizier.",
+   "E": "It only changed when parts of Egypt were invaded or someone overthrew the government.",
+   "F": "Together with the Pharaoh, the viziers, and the nomarks, these officials and nobles governed the country."
+  },
+  "optionsZh": {
+   "C": "法老身為在世的神，對他的子民擁有絕對的控制權。",
+   "B": "不過，法老沒有辦法一個人治理整個國家。",
+   "A": "宰相底下是稱為 nomark 的地方首長。",
+   "F": "這些官員與貴族，連同法老、宰相和地方首長，共同治理著這個國家。",
+   "E": "只有在埃及部分地區遭到入侵，或是有人推翻政府的時候，這套方式才會改變。",
+   "D": "管理特定土地的首長有時受宰相管轄。"
+  },
+  "unusedExplanation": {
+   "opt": "D",
+   "lead": "D 的內容並沒有錯，用字也和這篇文章很接近——`governors`（首長）、`vizier`（宰相）、`land`（土地）。它是六個選項裡最像正解 A 的一個。但五格都放不進去：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "把「神的身分」換算成權力",
+     "why": "D 講的是地方首長，與法老的權力無關"
+    },
+    {
+     "blank": 32,
+     "want": "「法老一個人管不了」的轉折",
+     "why": "D 沒有轉折，也沒有提到法老"
+    },
+    {
+     "blank": 33,
+     "want": "宰相底下那一層人的名字",
+     "why": "最接近的一格，但 D 說「有時」受管轄，把一個層級講成偶發的事；也沒有 nomarks 這個名字，下一句的 nome 沒有來由"
+    },
+    {
+     "blank": 34,
+     "want": "歸納三層人的總結句",
+     "why": "D 只講到一層"
+    },
+    {
+     "blank": 35,
+     "want": "一貫之中唯一的例外",
+     "why": "D 與變動、時間都無關"
+    }
+   ],
+   "summary": "**共同點：這篇文章是一張由上而下的組織表——法老、宰相、地方首長、其他官員與祭司。每一格不是補上一層，就是把所有層總結一次。D 只是替其中一層加了一句「有時受某人管轄」的補充，哪一層都不需要它。**",
+   "extra": [],
+   "takeaway": "兩個選項長得很像的時候，比的不是誰的字面比較接近，而是誰把「下一句需要的東西」交出來了。"
+  },
+  "paraLabels": [
+   "開場：法老是誰——神的代理人，也是全國的主人",
+   "往下一層：法老管不完，底下有宰相和地方長官",
+   "再往下一層：其他官員與祭司，形成一個貴族階層",
+   "結尾：這套制度幾千年幾乎沒變，埃及才能長久"
+  ],
+  "marks": [
+   [
+    0,
+    "In ancient Egypt, the government was dominated by a single figure, the Pharaoh, who was considered the divine representative of gods on earth.",
+    "topic"
+   ],
+   [
+    1,
+    "__32__",
+    "topic"
+   ],
+   [
+    2,
+    "__34__",
+    "topic"
+   ],
+   [
+    3,
+    "In the several-thousand-year span of Egyptian history, the general method of governing was quite consistent.",
+    "topic"
+   ],
+   [
+    "B",
+    "however",
+    "trans"
+   ],
+   [
+    2,
+    "Since",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Every civilization is built upon rules and regulations. In ancient Egypt, the government was dominated by a single figure, the Pharaoh, who was considered the divine representative of gods on earth. __31__ He was the supreme ruler and owned all of Egypt, the land and all the people who lived there.",
+   "__32__ There was a hierarchy of rulers and leaders below him who ran different aspects of the government. The primary leader under the Pharaoh was named the vizier. The vizier was the “right-hand man” of the Pharaoh and had a status equivalent to that of a prime minister. __33__ They ruled over an area of land called a nome. A nome was like a state or province.",
+   "Other officials that reported to the Pharaoh were the army commander, chief treasurer, and the minister of public works. Since government and religion were inseparable in ancient Egypt, many of the officials were also priests and holy men. This group had a special status above the rest of the citizens, forming a kind of nobility. __34__",
+   "In the several-thousand-year span of Egyptian history, the general method of governing was quite consistent. __35__ The consistency of this governing system is what allowed Egypt to remain a prominent country for such a long time."
+  ],
+  "zhTranslation": [
+   "每一個文明都建立在規則與制度之上。在古埃及，政府由單一人物主導，那就是法老，他被視為眾神在人間的神聖代表。__31__ 他是至高無上的統治者，擁有整個埃及——土地，以及住在那片土地上的所有人。",
+   "__32__ 他底下有一整套統治者與領導者的層級，各自負責政府的不同面向。法老之下最主要的領導者稱為 vizier（宰相）。宰相是法老的「左右手」，地位相當於今天的首相。__33__ 他們管轄一塊稱為 nome 的土地。nome 就像是一個州或一個省。",
+   "其他向法老負責的官員包括軍隊統帥、財政大臣和公共工程大臣。由於古埃及的政治與宗教密不可分，許多官員同時也是祭司和聖職人員。這一群人的地位高於其他百姓，形成某種貴族階層。__34__",
+   "在埃及長達數千年的歷史裡，統治的整體方式相當一致。__35__ 正是這套統治制度的穩定，讓埃及能夠長時間維持大國的地位。"
+  ],
+  "reading": [],
+  "flagNote": null,
+  "sourceFile": "指考_已完成資料_1-16份_補齊篇章結構答案.json",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 18,
+   "選項字數區間": "8-16",
+   "選項字數全距": 8,
+   "選項長度變異係數": "20.2%"
+  }
+ },
+ {
+  "id": "z108",
+  "year": "108年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "哥白尼與他的禁書（Copernicus and His Banned Book）",
+  "titleStatus": null,
+  "blankCount": 5,
+  "optionCount": 6,
+  "spec": "6選5",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "A"
+  ],
+  "blankRange": [
+   31,
+   35
+  ],
+  "options": {
+   "A": "Meanwhile, Copernicus was a lifelong member of the Catholic Church.",
+   "B": "The book, however, wasn't published until two months before his death.",
+   "C": "If this act was an attempt to seek the Catholic Church's approval, it was of no use.",
+   "D": "This went against the philosophical and religious beliefs held during medieval times.",
+   "E": "Religious leader Martin Luther voiced his opposition to the sun-centered system model.",
+   "F": "In his spare time, Copernicus studied the stars and the planets, applying his math knowledge to the mysteries of the night sky."
+  },
+  "optionsZh": {
+   "F": "哥白尼利用閒暇研究星星與行星，把數學知識用在夜空的謎題上。",
+   "B": "不過，這本書一直到他過世前兩個月才出版。",
+   "D": "這與中世紀所持的哲學與宗教信仰相違背。",
+   "E": "宗教領袖馬丁路德公開表達他對日心說模型的反對。",
+   "C": "如果這個舉動是想爭取天主教會的認可，那並沒有用。",
+   "A": "同時，哥白尼終身是天主教會的一員。"
+  },
+  "unusedExplanation": {
+   "opt": "A",
+   "lead": "A 講的事情和全篇完全相容——他確實一輩子都是教會中人，而且全篇一再出現天主教會。但五格都放不進去：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "第一次交代他在觀星",
+     "why": "A 講的是宗教身分，後句的 `his observations` 指不到"
+    },
+    {
+     "blank": 32,
+     "want": "一五三○到一五四三年之間，這本書怎麼了",
+     "why": "A 沒有時間、沒有書"
+    },
+    {
+     "blank": 33,
+     "want": "他的主張和當時信仰是什麼關係",
+     "why": "A 是身分敘述，不是兩者的關係"
+    },
+    {
+     "blank": 34,
+     "want": "第一個公開反對的人",
+     "why": "A 不是反對者，後句的 `Other ministers` 接不上"
+    },
+    {
+     "blank": 35,
+     "want": "獻書給教宗到底有沒有用",
+     "why": "A 補的是身分，跳過了這一步"
+    }
+   ],
+   "summary": "**共同點：A 說的是真的，也和主題有關，但每一格要的都是「承接前後兩句」的一句話，A 只是加了一項事實，兩頭都沒接上。**",
+   "extra": [
+    "**一個現成的旁證**：學測 111 年參考試卷用同一篇文章改成 4 選 4，那一版的正文和四個選項裡都沒有這一句。"
+   ],
+   "takeaway": "「這句話是不是真的」和「這句話放不放得進去」是兩件事。挑答案只看第二件。"
+  },
+  "crossRef": {
+   "title": "順便對照：同一篇文章的兩種考法",
+   "lead": "學測 111 年參考卷的 Copernicus 一篇，和這一篇取自同一段文字，但改成了 4 選 4：",
+   "cols": [
+    "指考 108（本篇）",
+    "學測 111 參考卷"
+   ],
+   "rows": [
+    [
+     "規格",
+     "6 選 5",
+     "4 選 4"
+    ],
+    [
+     "段落",
+     "三段（第二段特別長）",
+     "四段（把本篇第二段拆成兩段）"
+    ],
+    [
+     "馬丁路德那一句",
+     "是第 34 格的答案",
+     "直接寫在正文裡，不設空格"
+    ],
+    [
+     "「終身是天主教徒」那一句",
+     "用不到的第六個選項",
+     "正文與選項都沒有"
+    ],
+    [
+     "刪去法",
+     "失效",
+     "有效"
+    ]
+   ],
+   "note": "**同樣一篇文章，多開一格、多放一個用不到的選項，作答方式就完全不同了。** 學測那一版可以填到最後一格靠刪去法收尾；這一版填完五格，手上還會剩一個選項，所以每一格都要自己站得住。"
+  },
+  "paraLabels": [
+   "生平：出身、求學與任職",
+   "研究與衝突：業餘觀星、著作完成，以及與當時信仰的正面對撞",
+   "結局：把書獻給教宗也沒用，最後遭禁三百年"
+  ],
+  "marks": [
+   [
+    2,
+    "Ironically, Copernicus had dedicated his work to Pope Paul III.",
+    "topic"
+   ],
+   [
+    "B",
+    "however",
+    "trans"
+   ],
+   [
+    2,
+    "Ironically",
+    "trans"
+   ],
+   [
+    1,
+    "as",
+    "trans",
+    "so to speak, ",
+    " a hundred"
+   ]
+  ],
+  "paras": [
+   "Copernicus, founder of modern astronomy, was born in 1473 to a well-to-do merchant family in Torun, Poland. He was sent off to attend university in Italy, studying mathematics and optics, and canon law. Returning from his studies abroad, Copernicus was appointed to an administrative position in the cathedral of Frauenburg. There he spent a sheltered and academic life for the rest of his days.",
+   "__31__ He made his observations from a tower situated on the protective wall around the cathedral. His observations were made with the “bare eyeball,” so to speak, as a hundred years were to pass before the invention of the telescope. In 1530, Copernicus completed his famous work De Revolutionibus, which later played a major role in changing the philosophical view of humankind’s place in the universe. __32__ Copernicus died in 1543 and was never to know what a stir his work would cause. In his book, he asserted that the Earth rotated on its axis once daily and traveled around the Sun once yearly. __33__ People then regarded the Earth as stationary, situated at the center of the universe, with the Sun and all the planets revolving around it. Copernicus’ theory challenged the long-held belief that God created the Heavens and the Earth, and could overturn the core values of the Catholic world. __34__ Other ministers quickly followed suit, saying of Copernicus, “This fool wants to turn the whole art of astronomy upside down.”",
+   "Ironically, Copernicus had dedicated his work to Pope Paul III. __35__ The Church ultimately banned De Revolutionibus, and the book remained on the list of forbidden reading material for nearly three centuries thereafter."
+  ],
+  "zhTranslation": [
+   "現代天文學的奠基者哥白尼，一四七三年出生於波蘭托倫一個家境富裕的商人家庭。他被送到義大利念大學，修習數學、光學和教會法（教會內部的法律）。結束國外的學業回來之後，哥白尼被派到弗勞恩堡的大教堂擔任行政職務。此後他就在那裡度過受到庇護、與學術為伍的餘生。",
+   "__31__ 他的觀測是在大教堂周圍防護牆上的一座塔樓進行的。可以說，他是用「肉眼」看的，因為望遠鏡要再過一百年才發明出來。一五三○年，哥白尼完成了他著名的《天體運行論》，這本書後來在改變人類看待自身在宇宙中位置的哲學觀上，扮演了重要的角色。__32__ 哥白尼於一五四三年過世，始終不知道他的著作會掀起多大的波瀾。他在書中主張，地球每天繞著地軸自轉一圈，每年繞太陽公轉一圈。__33__ 當時的人認為地球是靜止的，位在宇宙的中心，太陽和所有行星都繞著它轉。哥白尼的理論挑戰了長久以來「上帝創造天地」的信念，也可能顛覆天主教世界的核心價值。__34__ 其他教士很快跟進，說哥白尼「這個蠢材想把整個天文學徹底翻過來」。",
+   "諷刺的是，哥白尼把這部著作獻給了教宗保祿三世。__35__ 教會最終查禁了《天體運行論》，此後將近三個世紀，這本書一直留在禁書名單上。"
+  ],
+  "reading": [],
+  "flagNote": null,
+  "sourceFile": "指考_已完成資料_1-16份_補齊篇章結構答案.json",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 19,
+   "選項字數區間": "10-22",
+   "選項字數全距": 12,
+   "選項長度變異係數": "30.0%"
+  }
+ },
+ {
+  "id": "zref107",
+  "year": "107學年度起適用參考試卷",
+  "exam": "指考",
+  "examType": "參考試卷",
+  "title": "怪咖的正面特質（The Bright Side of Being Eccentric）",
+  "titleStatus": null,
+  "blankCount": 5,
+  "optionCount": 6,
+  "spec": "6選5",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "D"
+  ],
+  "blankRange": [
+   31,
+   35
+  ],
+  "options": {
+   "A": "Eccentrics are also found to be healthier.",
+   "B": "According to a recent study in England, eccentrics are more creative.",
+   "C": "Or it could be our best friend’s brother who wears shorts to a formal dance.",
+   "D": "People may have eccentric taste in clothes, or have eccentric hobbies.",
+   "E": "Psychologists also find that eccentric people do not follow conventions.",
+   "F": "Such personal traits are found to play an important role in boosting the body’s immune system."
+  },
+  "optionsZh": {
+   "B": "根據英國最近的一項研究，怪咖比較有創造力。",
+   "E": "心理學家也發現，怪咖不跟從常規。",
+   "A": "研究也發現怪咖比較健康。",
+   "F": "研究發現，這些個人特質對提升人體免疫系統有重要作用。",
+   "C": "也可能是我們最好的朋友的哥哥，穿著短褲去參加正式舞會。",
+   "D": "人們可能在衣著品味上很古怪，或者有古怪的嗜好。"
+  },
+  "unusedExplanation": {
+   "opt": "D",
+   "lead": "D 裡有 `eccentric`（古怪）、有 `hobbies`（嗜好），第二段出現過 hobbies，第四段也有 `crazy hobby`（瘋狂的嗜好）——**關鍵詞四處都對得上。** 但五格都放不進去：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "第一項正面特質",
+     "why": "D 講的是怎樣算古怪，不是好處"
+    },
+    {
+     "blank": 32,
+     "want": "第二項正面特質（不跟從常規）",
+     "why": "D 沒有轉到常規，也沒有 also 這類接續詞"
+    },
+    {
+     "blank": 33,
+     "want": "第三段的主題句：健康",
+     "why": "D 與健康無關"
+    },
+    {
+     "blank": 34,
+     "want": "從「特質」到「健康」中間缺的那一步",
+     "why": "D 不是機制，只是舉例說明什麼叫古怪"
+    },
+    {
+     "blank": 35,
+     "want": "身邊第二個具體的人",
+     "why": "D 的主詞是泛稱的 People，後句的 Their 指不到"
+    }
+   ],
+   "summary": "**共同點：第一段問的是「什麼樣的人叫怪咖」，第二段之後整篇問的是「當怪咖有什麼好處」。D 停在第一段那個問題上。**",
+   "extra": [],
+   "takeaway": "關鍵詞對得上，不代表放得進去。先看這一篇從哪一段開始換了問題，再問這個選項回答的是換之前還是換之後的那一個。"
+  },
+  "twinNote": "**這一篇與 103 年指考篇章結構完全同題**——選文逐段逐字相同，六個選項、五題答案、用不到的那一個（D）也一樣，屬官方整題回收。下面的解析與 103 年那一場共用。該場不公布答對率與鑑別度，103 年的統計只適用於 103 年那一場，不必套用到本篇。",
+  "paraLabels": [
+   "定義：什麼樣的人叫怪咖",
+   "優點一：更有創造力，也不在意別人怎麼看",
+   "優點二：更健康，連看醫生的次數都少很多",
+   "結尾：所以該多留意身邊的怪咖，並舉例說明"
+  ],
+  "marks": [
+   [
+    0,
+    "Eccentrics are people who have an unusual or odd personality, set of beliefs, or behavior pattern.",
+    "topic"
+   ],
+   [
+    1,
+    "Once considered socially unacceptable, eccentric people have been found to possess some positive characteristics.",
+    "gradient"
+   ],
+   [
+    2,
+    "__33__",
+    "topic"
+   ],
+   [
+    3,
+    "Psychologists therefore suggest that we pay attention to those who do not conform.",
+    "topic"
+   ],
+   [
+    1,
+    "So",
+    "trans"
+   ],
+   [
+    1,
+    "therefore",
+    "trans"
+   ],
+   [
+    3,
+    "therefore",
+    "trans"
+   ],
+   [
+    3,
+    "but",
+    "trans"
+   ],
+   [
+    3,
+    "because",
+    "trans"
+   ],
+   [
+    3,
+    "In fact",
+    "trans"
+   ],
+   [
+    2,
+    "due to",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Eccentrics are people who have an unusual or odd personality, set of beliefs, or behavior pattern. They may or may not comprehend the standards for normal behavior in their culture. They simply don’t care about the society’s disapproval of their habits or beliefs.",
+   "Once considered socially unacceptable, eccentric people have been found to possess some positive characteristics. __31__ They often have more curiosity about the world and, in many cases, are contentedly obsessed by hobbies and interests. __32__ They live in a world of their own and do not worry about what others think of them. So they are usually less restricted and therefore more carefree in forming new ideas.",
+   "__33__ Statistics show they visit their doctors less—about once in eight to nine years, which is 20 times less than the average person. This could be partly due to their innate traits such as humor and happiness. __34__ This may explain why eccentrics are, on the whole, healthier.",
+   "Psychologists therefore suggest that we pay attention to those who do not conform. It could be our aunt who has been raising pet lizards. __35__ Their crazy hobby or strange sense of humor is what keeps them going. Eccentric people may seem odd, but they will likely live a happier and healthier life because they enjoy what they are doing. In fact, many of history’s most brilliant minds have displayed some unusual behaviors and habits."
+  ],
+  "zhTranslation": [
+   "怪咖是指個性、信念或行為模式異於常人的人。他們可能懂、也可能不懂自己文化裡對於正常行為的標準。他們就是不在乎社會不認同自己的習慣或信念。",
+   "過去人們認為怪咖不見容於社會，如今研究卻發現他們具有一些正面特質。__31__ 他們對世界往往更有好奇心，而且很多時候會心滿意足地沉迷於自己的嗜好和興趣。__32__ 他們活在自己的世界裡，不擔心別人怎麼看自己。所以他們通常比較不受拘束，在形成新想法時也就更加自在。",
+   "__33__ 統計顯示，他們看醫生的次數比較少——大約八到九年才看一次，比一般人少二十倍。這可能有一部分要歸因於他們天生的特質，例如幽默和快樂。__34__ 這或許可以解釋，為什麼怪咖整體來說比較健康。",
+   "因此心理學家建議，我們應該多注意那些不隨俗的人。那可能是我們那位養寵物蜥蜴的阿姨。__35__ 他們那些瘋狂的嗜好或古怪的幽默感，正是支撐他們走下去的東西。怪咖看起來也許古怪，但他們很可能過得更快樂、更健康，因為他們享受自己正在做的事。事實上，歷史上許多最聰明的頭腦都表現過一些不尋常的行為和習慣。"
+  ],
+  "reading": [],
+  "flagNote": "本篇與 103 年指考篇章結構逐段逐字完全相同，屬官方整題回收。兩份試卷各自獨立收錄，練習時可互相對照。",
+  "sourceFile": "第六批_十年度總表_v2.json",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 20,
+   "選項字數區間": "7-16",
+   "選項字數全距": 9,
+   "選項長度變異係數": "26.0%"
+  }
+ },
+ {
+  "id": "z107",
+  "year": "107年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "麵包、鹽與法國大革命（Bread, Salt, and the French Revolution）",
+  "titleStatus": null,
+  "blankCount": 5,
+  "optionCount": 6,
+  "spec": "6選5",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "A"
+  ],
+  "blankRange": [
+   31,
+   35
+  ],
+  "options": {
+   "A": "External threats closely shaped the course of the Revolution.",
+   "B": "With the collapse of the royal family, calm was restored gradually.",
+   "C": "Meanwhile, peasants’ resentment against the gabelle was spreading.",
+   "D": "The common household could not afford to buy enough food to meet their basic needs.",
+   "E": "The anger quickly built up, culminating in the massive riots of the French Revolution in 1789.",
+   "F": "Specifically, bread and salt, two most essential elements in the French cuisine, were at the heart of the conflict."
+  },
+  "optionsZh": {
+   "F": "具體來說，麵包和鹽這兩樣法國飲食中最基本的東西，正是這場衝突的核心。",
+   "D": "一般家庭買不起足夠的食物來滿足基本需求。",
+   "C": "同時，農民對鹽稅（gabelle）的不滿正在蔓延。",
+   "E": "憤怒迅速累積，最後演變成一七八九年法國大革命的大規模暴動。",
+   "B": "隨著王室垮台，秩序逐漸恢復。",
+   "A": "外部的威脅深深左右了這場革命的走向。"
+  },
+  "unusedExplanation": {
+   "opt": "A",
+   "lead": "A 提到革命，也是一句像模像樣的歷史論斷。但五格都放不進去：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "把「食物」縮小到哪兩樣",
+     "why": "A 講的是外部威脅，不是食物"
+    },
+    {
+     "blank": 32,
+     "want": "麵包吃掉八成八工資之後，家庭變成什麼樣",
+     "why": "A 與家庭開銷無關"
+    },
+    {
+     "blank": 33,
+     "want": "第一次把鹽稅講出來",
+     "why": "A 沒有提到稅，後句的「這項稅」指不到"
+    },
+    {
+     "blank": 34,
+     "want": "憤怒爆發成哪一件事",
+     "why": "A 沒有事件、沒有年份"
+    },
+    {
+     "blank": 35,
+     "want": "`Yet` 前面那句「看似平息」",
+     "why": "A 不是平息，也不是結果"
+    }
+   ],
+   "summary": "**共同點：第一段第二句就把範圍收在「食物」上，第二、三段各講一樣，全篇沒有一處在談國外。A 講的是另一條線。**",
+   "extra": [],
+   "takeaway": "六個選項先拿去和第一段對一次。第一段已經說了這篇要談什麼，談別的那一個通常就是多出來的。"
+  },
+  "paraLabels": [
+   "破題：起因很多，但食物是關鍵——鎖定麵包和鹽",
+   "第一項：麵包——歉收讓價格吃掉工人幾乎全部的工資",
+   "第二項：鹽稅——主要課在窮人身上，逼出走私和高價",
+   "引爆：王室毫無感覺，憤怒累積成 1789 年的暴動",
+   "結尾：王室垮了，但麵包和鹽的問題並沒有結束"
+  ],
+  "marks": [
+   [
+    0,
+    "__31__",
+    "gradient"
+   ],
+   [
+    2,
+    "__33__",
+    "topic"
+   ],
+   [
+    4,
+    "Yet, the gabelle and the “bread question” remained among the most unsettling social and political issues throughout the Revolutionary and Napoleonic periods (1789-1815) and well beyond.",
+    "topic"
+   ],
+   [
+    0,
+    "However",
+    "trans"
+   ],
+   [
+    "F",
+    "Specifically",
+    "trans"
+   ],
+   [
+    1,
+    "however",
+    "trans"
+   ],
+   [
+    "C",
+    "Meanwhile",
+    "trans"
+   ],
+   [
+    2,
+    "while",
+    "trans"
+   ],
+   [
+    3,
+    "However",
+    "trans"
+   ],
+   [
+    3,
+    "thus",
+    "trans"
+   ],
+   [
+    4,
+    "Yet",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "The causes of the French Revolution are complex and still widely debated among historians. However, many scholars agree that food played an important role in the socio-political upheaval. __31__",
+   "A main component in the French daily meal, bread was often tied up with the national identity. Studies show that the average 18th-century French worker spent half his daily wage on bread. In 1788 and 1789, however, when the grain crops failed two years in a row, the price of bread shot up to 88 percent of his earnings. __32__ The great majority of the French population was starving. Some even resorted to theft or prostitution to stay alive.",
+   "__33__ Started in the 15th century, this tax on salt consumption was applied particularly to the poor, while the nobility and the privileged were exempted. The high rate and unequal distribution of the tax provoked widespread illegal dealing in salt by smugglers, leading to skyrocketing salt prices.",
+   "However, the royal court at Versailles was isolated from and indifferent to the escalating crisis. The desperate population thus blamed the ruling class for the famine and economic disturbances. __34__ The results include the storming of the Bastille, a medieval fortress and prison in Paris, and the eventual beheading of King Louis XVI and his wife, Marie Antoinette.",
+   "__35__ Yet, the gabelle and the “bread question” remained among the most unsettling social and political issues throughout the Revolutionary and Napoleonic periods (1789-1815) and well beyond."
+  ],
+  "zhTranslation": [
+   "法國大革命的成因複雜，史家至今仍爭論不休。不過許多學者同意，食物在這場社會與政治的動盪中扮演了重要角色。__31__",
+   "麵包是法國人日常飲食的主要部分，往往和民族認同綁在一起。研究顯示，十八世紀的法國工人平均要拿出半天的工資買麵包。然而在一七八八和一七八九年，穀物連續兩年歉收，麵包的價格飆漲到工人收入的百分之八十八。__32__ 絕大多數的法國人處於挨餓狀態。有些人甚至靠偷竊或賣身求生。",
+   "__33__ 這項對鹽課徵的消費稅始於十五世紀，特別針對窮人，貴族和特權階級則不必繳。稅率高又課得不公平，引發私鹽販子大規模的非法交易，鹽價因此一路飆升。",
+   "然而，凡爾賽的王室既與這場不斷惡化的危機隔絕，也對它漠不關心。走投無路的民眾於是把飢荒和經濟動盪都歸咎於統治階級。__34__ 後果包括攻陷巴士底獄——那是巴黎一座中世紀的堡壘兼監獄——以及路易十六和他的妻子瑪麗・安東妮最終被送上斷頭台。",
+   "__35__ 不過，鹽稅（gabelle）和「麵包問題」始終是革命時期與拿破崙時期（一七八九至一八一五年）以及其後很長一段時間裡，最令人不安的社會與政治議題之一。"
+  ],
+  "reading": [],
+  "flagNote": null,
+  "sourceFile": "指考_已完成資料_1-16份_補齊篇章結構答案.json",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 18,
+   "選項字數區間": "8-19",
+   "選項字數全距": 11,
+   "選項長度變異係數": "30.4%"
+  }
+ },
+ {
+  "id": "z106",
+  "year": "106年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "動物的再生能力（How Animals Regrow Body Parts）",
+  "titleStatus": null,
+  "blankCount": 5,
+  "optionCount": 6,
+  "spec": "6選5",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "B"
+  ],
+  "blankRange": [
+   31,
+   35
+  ],
+  "options": {
+   "A": "Scientists call this unidirectional regeneration.",
+   "B": "Humans aren’t completely without regenerative talents.",
+   "C": "The same thing happens for lobsters, salamanders, and many other animals.",
+   "D": "When it comes to regeneration, few animals can equal the magic of the planarian.",
+   "E": "This type of regeneration is demonstrated in a few animals, such as hydras and sea stars.",
+   "F": "They hope that this line of research will make regeneration possible in humans someday."
+  },
+  "optionsZh": {
+   "C": "龍蝦、蠑螈和許多其他動物也是一樣。",
+   "F": "他們希望這一系列研究有一天能讓人類也做到再生。",
+   "A": "科學家把這種情形稱為單向再生。",
+   "E": "這一類再生見於少數動物，例如水螅和海星。",
+   "D": "說到再生，很少有動物比得上渦蟲的神奇。",
+   "B": "人類並不是完全沒有再生的本事。"
+  },
+  "unusedExplanation": {
+   "opt": "B",
+   "lead": "B 只有六個字，句子乾淨，`regenerative`（再生的）也正是全篇的關鍵詞。但五格都放不進去：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "海星之外，還有哪些動物也做得到",
+     "why": "B 講的是人類；而且空格後的第二句就寫「但我們做不到」"
+    },
+    {
+     "blank": 32,
+     "want": "科學家研究的目的",
+     "why": "B 不是目的，也沒有 They 可以承接"
+    },
+    {
+     "blank": 33,
+     "want": "替「只往一個方向長」命名（與後句的雙向相對）",
+     "why": "B 沒有命名，也不是再生的分類"
+    },
+    {
+     "blank": 34,
+     "want": "這一類再生見於哪些動物",
+     "why": "B 講的是人類，後句講的是水螅"
+    },
+    {
+     "blank": 35,
+     "want": "第一次把渦蟲講出來",
+     "why": "B 沒有提到任何動物，後句的 `A single one` 指不到"
+    }
+   ],
+   "summary": "**共同點：全篇從頭到尾在比「動物做得到、人做不到」，B 站在相反的一邊。**",
+   "extra": [],
+   "takeaway": "一個選項用了全篇的關鍵詞，卻和正文站在相反的立場，那多半就是多出來的那一個。先問這一篇的立場是什麼，再看它站在哪一邊。"
+  },
+  "paraLabels": [
+   "對照組：人失去手腳只能裝義肢",
+   "反面對照：海星失去一隻腕足可以長回來",
+   "轉入主題：還有很多動物做得到，人做不到，所以科學家要研究",
+   "分類一：單向再生——長得回失去的部位，但斷下來的那截不會變成另一隻",
+   "分類二：雙向再生——切成幾塊就變成幾隻，以水螅為例",
+   "極端例子：渦蟲切成上百片都能長回，最後回到人類能不能做到"
+  ],
+  "marks": [
+   [
+    0,
+    "One of the most difficult things for a human to face is the loss of a limb.",
+    "topic"
+   ],
+   [
+    1,
+    "The situation is very different for a starfish.",
+    "topic"
+   ],
+   [
+    2,
+    "That’s why scientists are studying animals that can regrow body parts, that is, regenerate.",
+    "gradient"
+   ],
+   [
+    3,
+    "Many different kinds of animals show some form of regeneration.",
+    "topic"
+   ],
+   [
+    4,
+    "__34__",
+    "topic"
+   ],
+   [
+    5,
+    "__35__",
+    "topic"
+   ],
+   [
+    2,
+    "But",
+    "trans"
+   ],
+   [
+    2,
+    "That’s why",
+    "trans"
+   ],
+   [
+    3,
+    "however",
+    "trans"
+   ],
+   [
+    3,
+    "but",
+    "trans"
+   ],
+   [
+    3,
+    "on the other hand",
+    "trans"
+   ],
+   [
+    5,
+    "Because of",
+    "trans"
+   ],
+   [
+    2,
+    "that is",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "One of the most difficult things for a human to face is the loss of a limb. If a person loses an arm or a leg, he/she must be fitted with an artificial limb.",
+   "The situation is very different for a starfish. If a starfish loses an arm, it can grow a new one.",
+   "__31__ Snails can even regrow their heads—imagine what the world would be like if humans could do that. But we can’t. Nor can we grow new limbs or even fingers. That’s why scientists are studying animals that can regrow body parts, that is, regenerate. __32__",
+   "Many different kinds of animals show some form of regeneration. Most of them are, however, limited to the sort a lizard is capable of, like regrowing a lost tail. A cockroach can grow back a missing limb, but the limb itself can’t generate a new cockroach. __33__ Bidirectional regeneration, on the other hand, refers to a situation in which splitting of an animal will result in separate fully functional animals.",
+   "__34__ Cut a hydra in half, and you’ll get two hydras. Cut it into four pieces, and you’ll get four.",
+   "__35__ A single one can be cut into hundreds of pieces and each will grow back into a whole in a week or so. Because of this remarkable ability, one planarian can be created over and over, giving it a sort of immortality. Whether this phenomenon can be achieved in humans will likely require years of research."
+  ],
+  "zhTranslation": [
+   "對人來說，最難面對的事情之一就是失去一隻手或一條腿。一個人如果失去手臂或腿，就必須裝上義肢。",
+   "海星的情況卻大不相同。海星如果失去一隻腕足，可以長出新的。",
+   "__31__ 蝸牛甚至可以長回自己的頭——想像一下，如果人也做得到，這世界會變成什麼樣子。但我們做不到。我們也長不出新的四肢，連手指都長不回來。正因如此，科學家正在研究那些能夠長回身體部位、也就是能夠再生的動物。__32__",
+   "許多不同種類的動物都有某種形式的再生能力。不過，牠們多半只到蜥蜴那種程度，例如長回斷掉的尾巴。蟑螂可以長回失去的腳，但那隻腳本身沒辦法長出一隻新的蟑螂。__33__ 至於雙向再生，指的則是把一隻動物切開之後，會變成好幾隻各自功能完整的動物。",
+   "__34__ 把一隻水螅切成兩半，你會得到兩隻水螅。切成四塊，就會得到四隻。",
+   "__35__ 單單一隻，就能被切成好幾百塊，每一塊大約一個星期就會長回完整的一隻。因為這種驚人的能力，一隻渦蟲可以一再被複製出來，等於擁有某種不死的性質。這個現象能不能在人身上實現，恐怕還需要很多年的研究。"
+  ],
+  "reading": [],
+  "flagNote": null,
+  "sourceFile": "指考_已完成資料_1-16份_補齊篇章結構答案.json",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 22,
+   "選項字數區間": "5-16",
+   "選項字數全距": 11,
+   "選項長度變異係數": "37.8%"
+  }
+ },
+ {
+  "id": "z105",
+  "year": "105年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "加盟這門生意（What It Means to Buy a Franchise）",
+  "titleStatus": null,
+  "blankCount": 5,
+  "optionCount": 6,
+  "spec": "6選5",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "A"
+  ],
+  "blankRange": [
+   31,
+   35
+  ],
+  "options": {
+   "A": "Whether a franchise is profitable or not depends largely on the nature of the business.",
+   "B": "Research has shown that customers tend to choose a brand they recognize over one they don’t.",
+   "C": "A franchise comes with a built-in business formula including products, services, and even employee uniforms.",
+   "D": "Moreover, the franchisee is given no right to renew or extend the franchise after the term of the contract.",
+   "E": "The most famous example was Isaac Singer, who created franchises to distribute his sewing machines to larger areas.",
+   "F": "A franchise is a license issued by a large, usually well-known, company to an individual or a small business owner."
+  },
+  "optionsZh": {
+   "F": "加盟是一家大型、通常也頗有名氣的公司，發給個人或小企業主的一張授權。",
+   "E": "最有名的例子是 Isaac Singer，他建立加盟體系，把自己的縫紉機推廣到更大的地區。",
+   "C": "加盟附帶一套現成的營運公式，包含產品、服務，甚至員工制服。",
+   "B": "研究顯示，顧客傾向選擇自己認得的品牌，而不是不認得的。",
+   "D": "此外，合約期滿之後，加盟主沒有續約或延長的權利。",
+   "A": "加盟賺不賺錢，很大程度取決於行業的性質。"
+  },
+  "unusedExplanation": {
+   "opt": "A",
+   "lead": "A 的句子完整、說法也合理，讀起來像整篇的結論。但五格都放不進去：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "把 `license`（授權）第一次講出來的定義句",
+     "why": "A 沒有 license，後句的 `the license` 指不到"
+    },
+    {
+     "blank": 32,
+     "want": "時間線上的第一件事",
+     "why": "A 沒有年代、沒有人物"
+    },
+    {
+     "blank": 33,
+     "want": "「現成的營運模式」包含哪些東西",
+     "why": "A 講的是賺不賺錢，不是內容"
+    },
+    {
+     "blank": 34,
+     "want": "品牌名氣為什麼算好處",
+     "why": "A 沒有接上品牌，也不是優點"
+    },
+    {
+     "blank": 35,
+     "want": "費用之外的另一個缺點",
+     "why": "A 是中性判斷，不是缺點"
+    }
+   ],
+   "summary": "**共同點：全篇回答的是「加盟是什麼、有哪些優點、有哪些缺點」，A 回答的是「什麼情況下會賺錢」，換了一個問題。**",
+   "extra": [
+    "還有一個看得出來的地方：另外五個選項都在敘述一件事實，只有 A 是一句「要看情況」的判斷句（`Whether… depends largely on…`）。"
+   ],
+   "takeaway": "六個選項裡如果有一句是「要看情況而定」，先問這一篇有沒有在討論條件。沒有的話，它很可能就是多出來的那一個。"
+  },
+  "paraLabels": [
+   "定義：什麼是加盟，加盟主買到的到底是什麼",
+   "歷史：從十九世紀的勝家縫紉機到速食連鎖",
+   "優點：現成的營運模式、總部支援，還有品牌名氣",
+   "缺點一：開辦金和抽成很重，用麥當勞算給你看",
+   "缺點二：合約到期無權續約，地盤和創意也受限"
+  ],
+  "marks": [
+   [
+    0,
+    "__31__",
+    "gradient"
+   ],
+   [
+    1,
+    "The concept of the franchise dates back to the 19th century in the U.S.",
+    "topic"
+   ],
+   [
+    2,
+    "There are many advantages to investing in a franchise.",
+    "topic"
+   ],
+   [
+    3,
+    "Disadvantages include heavy start-up costs as well as ongoing royalty costs on the part of the franchisee.",
+    "topic"
+   ],
+   [
+    0,
+    "instead",
+    "trans"
+   ],
+   [
+    1,
+    "Then",
+    "trans"
+   ],
+   [
+    "D",
+    "Moreover",
+    "trans"
+   ],
+   [
+    "E",
+    "The most famous example",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Starting a business on one’s own can be quite challenging and costly. To reduce the risks involved in starting a business from scratch, many people buy a franchise instead. __31__ Under the license, the individual acquires the right to use the big company’s brand name and agrees to sell its products.",
+   "The concept of the franchise dates back to the 19th century in the U.S. __32__ Then, in the 1930s, Howard Johnson restaurants skyrocketed in popularity, paving the way for restaurant chains and the subsequent franchises that would define the unprecedented rise of the American fast-food industry.",
+   "There are many advantages to investing in a franchise. One of the benefits is the ready-made business operation. __33__ Depending on the franchise, the franchisor company may offer support in training and financial planning. Some even provide assistance with approved suppliers. To new business owners, the most recognized advantage of a franchise is perhaps the well-established brand name of the franchisor such as that of McDonald’s. __34__",
+   "Disadvantages include heavy start-up costs as well as ongoing royalty costs on the part of the franchisee. To take the McDonald’s example further, the estimated minimum cost for a franchisee to start a McDonald’s is US$500,000. And it has to pay an annual fee equivalent to 12% of its sales to McDonald’s.",
+   "__35__ Other disadvantages include lack of territory control or creativity with one’s own business."
+  ],
+  "zhTranslation": [
+   "自己開一家公司相當有挑戰性，成本也高。為了降低從零開始創業的風險，許多人改為買下一個加盟權。__31__ 依照這張授權，個人取得使用那家大公司品牌名稱的權利，並同意銷售它的產品。",
+   "加盟這個概念可以追溯到十九世紀的美國。__32__ 後來在一九三○年代，Howard Johnson 餐廳人氣暴漲，替連鎖餐廳鋪了路，也帶出後來的加盟體系——美國速食業前所未有的興起，正是由這些加盟體系形塑出來的。",
+   "投資加盟有許多好處。其中之一是現成的營運模式。__33__ 依加盟品牌而異，加盟總部可能提供訓練和財務規劃方面的支援。有些甚至協助引介經過認可的供應商。對新的業主來說，加盟最廣為人知的好處，也許是總部那個早已建立起來的品牌名稱，例如麥當勞。__34__",
+   "缺點包括加盟主要負擔沉重的開辦成本，以及持續支付的權利金。再以麥當勞為例，加盟主要開一家麥當勞，估計最少要五十萬美元，而且每年還必須付給麥當勞相當於營業額百分之十二的費用。",
+   "__35__ 其他缺點包括無法掌控自己的營業區域，也無法在自己的生意上發揮創意。"
+  ],
+  "reading": [],
+  "flagNote": null,
+  "sourceFile": "指考_已完成資料_1-16份_補齊篇章結構答案.json",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 18,
+   "選項字數區間": "15-20",
+   "選項字數全距": 5,
+   "選項長度變異係數": "11.4%"
+  }
+ },
+ {
+  "id": "z104",
+  "year": "104年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "鋰電池的優點與缺點（The Lithium-Ion Battery）",
+  "titleStatus": null,
+  "blankCount": 5,
+  "optionCount": 6,
+  "spec": "6選5",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "D"
+  ],
+  "blankRange": [
+   31,
+   35
+  ],
+  "options": {
+   "A": "The lithium-ion battery is also a low maintenance battery.",
+   "B": "Despite its overall advantages, the lithium-ion battery has its drawbacks.",
+   "C": "New and enhanced chemical combinations are introduced every six months or so.",
+   "D": "Attempts to develop rechargeable lithium-ion batteries failed due to memory problems.",
+   "E": "That is, they carry more power in a smaller unit, helping to reduce overall weight and size.",
+   "F": "Another downside is the increase of the internal resistance that occurs with cycling and aging."
+  },
+  "optionsZh": {
+   "E": "也就是說，它們用更小的體積裝進更多電力，有助於減少整體的重量與體積。",
+   "A": "鋰電池也是一種低保養的電池。",
+   "B": "儘管整體上有這些優勢，鋰電池仍有缺點。",
+   "F": "另一個缺點是內阻會隨著充放電循環與老化而上升。",
+   "C": "大約每六個月就有新的、改良過的化學組合問世。",
+   "D": "開發可充電鋰電池的嘗試曾因記憶問題而失敗。"
+  },
+  "unusedExplanation": {
+   "opt": "D",
+   "lead": "D 是六個選項裡唯一提到 `memory`（記憶）的，而第三段整段都在談記憶——**字面上最貼近正文的一個。** 但五格都放不進去：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "把「能量密度兩倍」換成體積與重量的說法",
+     "why": "D 與體積重量無關，後句的 This feature 也指不到一項特點"
+    },
+    {
+     "blank": 32,
+     "want": "第三段的主題句：免保養",
+     "why": "同樣有 memory，但 D 說栽在記憶問題，下一句說不留記憶，方向相反"
+    },
+    {
+     "blank": 33,
+     "want": "優點講完、轉向缺點的那一句",
+     "why": "D 不是轉折句，也沒有總說缺點"
+    },
+    {
+     "blank": 34,
+     "want": "第二個缺點，而且要帶出「內阻」",
+     "why": "D 講的是記憶，不是內阻"
+    },
+    {
+     "blank": 35,
+     "want": "改良的速度有多快",
+     "why": "D 講的是過去的失敗，和「這樣快速的進展」相反"
+    }
+   ],
+   "summary": "**共同點：第二段之後整篇在講「現在的鋰電池好在哪、差在哪」，D 講的是「以前做不出來」。時間點就不對。**",
+   "extra": [],
+   "takeaway": "一個選項和某一格用了同一個字，先看兩句站在同一邊還是相反邊。站相反邊的，很可能就是多出來的那一個。"
+  },
+  "paraLabels": [
+   "開場：鋰電池是什麼，用在哪些東西上",
+   "優點一：能量密度高——同樣體積裝得下更多電",
+   "優點二：免保養——沒有記憶效應，隨時充飽都可以",
+   "缺點：脆弱怕高溫，用久了內阻上升就報廢",
+   "結尾：廠商持續改良，用途還會再擴大"
+  ],
+  "marks": [
+   [
+    0,
+    "Since the early 1990s, the lithium-ion battery has been the most suitable battery for portable electronic equipment.",
+    "topic"
+   ],
+   [
+    1,
+    "Lithium-ion batteries have nearly twice the energy density of traditional nickel cadmium batteries.",
+    "topic"
+   ],
+   [
+    2,
+    "__32__",
+    "topic"
+   ],
+   [
+    3,
+    "__33__",
+    "topic"
+   ],
+   [
+    4,
+    "It should be noted, however, that manufacturers are constantly making improvements on lithium-ion batteries.",
+    "topic"
+   ],
+   [
+    "E",
+    "That is",
+    "trans"
+   ],
+   [
+    1,
+    "because",
+    "trans"
+   ],
+   [
+    2,
+    "Thus",
+    "trans"
+   ],
+   [
+    2,
+    "in contrast",
+    "trans"
+   ],
+   [
+    "B",
+    "Despite",
+    "trans"
+   ],
+   [
+    "F",
+    "Another",
+    "trans"
+   ],
+   [
+    4,
+    "however",
+    "trans"
+   ],
+   [
+    0,
+    "Today",
+    "trans"
+   ],
+   [
+    2,
+    "Over time",
+    "trans"
+   ],
+   [
+    3,
+    "due to",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Since the early 1990s, the lithium-ion battery has been the most suitable battery for portable electronic equipment. Today, they’re commonly used for cellphones, computers, tablets, digital cameras, and other devices.",
+   "Lithium-ion batteries have nearly twice the energy density of traditional nickel cadmium batteries. __31__ This feature has important implications for cellphones and computers, because it makes these items more portable for consumers. It also makes power tools easier to use and allows workers to use them for longer periods of time.",
+   "__32__ Lithium-ion batteries retain no “memory” of their power capacity from previous charging cycles. Thus they require no scheduled cycling and can be fully re-fueled to their maximum capacity during each charging cycle. Other rechargeable battery types, in contrast, retain information from previous charging cycles, which wastes valuable storage space. Over time, this makes these rechargeable batteries hold less of a charge.",
+   "__33__ It is fragile and requires a protection circuit to maintain safe operation. A high load could overheat the pack and safety might be jeopardized. __34__ After 2-3 years of use, the pack often becomes unserviceable due to a large voltage drop caused by high internal resistance.",
+   "It should be noted, however, that manufacturers are constantly making improvements on lithium-ion batteries. __35__ With such rapid progress, the use of lithium-ion batteries will certainly expand further."
+  ],
+  "zhTranslation": [
+   "自一九九○年代初期以來，鋰電池一直是最適合可攜式電子設備的電池。今天，手機、電腦、平板、數位相機和其他裝置普遍都用它。",
+   "鋰電池的能量密度將近傳統鎳鎘電池的兩倍。__31__ 這個特點對手機和電腦有重要意義，因為它讓這些東西對消費者來說更便於攜帶。它也讓電動工具更好用，工人可以連續使用更長的時間。",
+   "__32__ 鋰電池不會「記住」前幾次充電循環的電量。因此它們不需要按表操課地充放電，每一次充電都能充回最大容量。相對地，其他可充電電池會保留前幾次充電循環的資訊，白白占掉寶貴的儲存空間。久而久之，這會使這些可充電電池能存的電愈來愈少。",
+   "__33__ 它很脆弱，需要一組保護電路才能安全運作。負載過高可能使電池組過熱，安全就有疑慮。__34__ 使用二到三年之後，電池組往往因為內阻太高造成電壓大幅下降而不堪使用。",
+   "不過要注意的是，製造商持續在改良鋰電池。__35__ 進展如此快速，鋰電池的使用範圍必然會再擴大。"
+  ],
+  "reading": [],
+  "flagNote": null,
+  "sourceFile": "指考_已完成資料_1-16份_補齊篇章結構答案.json",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 19,
+   "選項字數區間": "9-17",
+   "選項字數全距": 8,
+   "選項長度變異係數": "22.8%"
+  }
+ },
+ {
+  "id": "z103",
+  "year": "103年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "怪咖的正面特質（The Bright Side of Being Eccentric）",
+  "titleStatus": null,
+  "blankCount": 5,
+  "optionCount": 6,
+  "spec": "6選5",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "D"
+  ],
+  "blankRange": [
+   31,
+   35
+  ],
+  "options": {
+   "A": "Eccentrics are also found to be healthier.",
+   "B": "According to a recent study in England, eccentrics are more creative.",
+   "C": "Or it could be our best friend’s brother who wears shorts to a formal dance.",
+   "D": "People may have eccentric taste in clothes, or have eccentric hobbies.",
+   "E": "Psychologists also find that eccentric people do not follow conventions.",
+   "F": "Such personal traits are found to play an important role in boosting the body’s immune system."
+  },
+  "optionsZh": {
+   "B": "根據英國最近的一項研究，怪咖比較有創造力。",
+   "E": "心理學家也發現，怪咖不跟從常規。",
+   "A": "研究也發現怪咖比較健康。",
+   "F": "研究發現，這些個人特質對提升人體免疫系統有重要作用。",
+   "C": "也可能是我們最好的朋友的哥哥，穿著短褲去參加正式舞會。",
+   "D": "人們可能在衣著品味上很古怪，或者有古怪的嗜好。"
+  },
+  "unusedExplanation": {
+   "opt": "D",
+   "lead": "D 裡有 `eccentric`（古怪）、有 `hobbies`（嗜好），第二段出現過 hobbies，第四段也有 `crazy hobby`（瘋狂的嗜好）——**關鍵詞四處都對得上。** 但五格都放不進去：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "第一項正面特質",
+     "why": "D 講的是怎樣算古怪，不是好處"
+    },
+    {
+     "blank": 32,
+     "want": "第二項正面特質（不跟從常規）",
+     "why": "D 沒有轉到常規，也沒有 also 這類接續詞"
+    },
+    {
+     "blank": 33,
+     "want": "第三段的主題句：健康",
+     "why": "D 與健康無關"
+    },
+    {
+     "blank": 34,
+     "want": "從「特質」到「健康」中間缺的那一步",
+     "why": "D 不是機制，只是舉例說明什麼叫古怪"
+    },
+    {
+     "blank": 35,
+     "want": "身邊第二個具體的人",
+     "why": "D 的主詞是泛稱的 People，後句的 Their 指不到"
+    }
+   ],
+   "summary": "**共同點：第一段問的是「什麼樣的人叫怪咖」，第二段之後整篇問的是「當怪咖有什麼好處」。D 停在第一段那個問題上。**",
+   "extra": [],
+   "takeaway": "關鍵詞對得上，不代表放得進去。先看這一篇從哪一段開始換了問題，再問這個選項回答的是換之前還是換之後的那一個。"
+  },
+  "paraLabels": [
+   "定義：什麼樣的人叫怪咖",
+   "優點一：更有創造力，也不在意別人怎麼看",
+   "優點二：更健康，連看醫生的次數都少很多",
+   "結尾：所以該多留意身邊的怪咖，並舉例說明"
+  ],
+  "marks": [
+   [
+    0,
+    "Eccentrics are people who have an unusual or odd personality, set of beliefs, or behavior pattern.",
+    "topic"
+   ],
+   [
+    1,
+    "Once considered socially unacceptable, eccentric people have been found to possess some positive characteristics.",
+    "gradient"
+   ],
+   [
+    2,
+    "__33__",
+    "topic"
+   ],
+   [
+    3,
+    "Psychologists therefore suggest that we pay attention to those who do not conform.",
+    "topic"
+   ],
+   [
+    1,
+    "So",
+    "trans"
+   ],
+   [
+    1,
+    "therefore",
+    "trans"
+   ],
+   [
+    3,
+    "therefore",
+    "trans"
+   ],
+   [
+    3,
+    "but",
+    "trans"
+   ],
+   [
+    3,
+    "because",
+    "trans"
+   ],
+   [
+    3,
+    "In fact",
+    "trans"
+   ],
+   [
+    2,
+    "due to",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Eccentrics are people who have an unusual or odd personality, set of beliefs, or behavior pattern. They may or may not comprehend the standards for normal behavior in their culture. They simply don’t care about the society’s disapproval of their habits or beliefs.",
+   "Once considered socially unacceptable, eccentric people have been found to possess some positive characteristics. __31__ They often have more curiosity about the world and, in many cases, are contentedly obsessed by hobbies and interests. __32__ They live in a world of their own and do not worry about what others think of them. So they are usually less restricted and therefore more carefree in forming new ideas.",
+   "__33__ Statistics show they visit their doctors less—about once in eight to nine years, which is 20 times less than the average person. This could be partly due to their innate traits such as humor and happiness. __34__ This may explain why eccentrics are, on the whole, healthier.",
+   "Psychologists therefore suggest that we pay attention to those who do not conform. It could be our aunt who has been raising pet lizards. __35__ Their crazy hobby or strange sense of humor is what keeps them going. Eccentric people may seem odd, but they will likely live a happier and healthier life because they enjoy what they are doing. In fact, many of history’s most brilliant minds have displayed some unusual behaviors and habits."
+  ],
+  "zhTranslation": [
+   "怪咖是指個性、信念或行為模式異於常人的人。他們可能懂、也可能不懂自己文化裡對於正常行為的標準。他們就是不在乎社會不認同自己的習慣或信念。",
+   "過去人們認為怪咖不見容於社會，如今研究卻發現他們具有一些正面特質。__31__ 他們對世界往往更有好奇心，而且很多時候會心滿意足地沉迷於自己的嗜好和興趣。__32__ 他們活在自己的世界裡，不擔心別人怎麼看自己。所以他們通常比較不受拘束，在形成新想法時也就更加自在。",
+   "__33__ 統計顯示，他們看醫生的次數比較少——大約八到九年才看一次，比一般人少二十倍。這可能有一部分要歸因於他們天生的特質，例如幽默和快樂。__34__ 這或許可以解釋，為什麼怪咖整體來說比較健康。",
+   "因此心理學家建議，我們應該多注意那些不隨俗的人。那可能是我們那位養寵物蜥蜴的阿姨。__35__ 他們那些瘋狂的嗜好或古怪的幽默感，正是支撐他們走下去的東西。怪咖看起來也許古怪，但他們很可能過得更快樂、更健康，因為他們享受自己正在做的事。事實上，歷史上許多最聰明的頭腦都表現過一些不尋常的行為和習慣。"
+  ],
+  "reading": [],
+  "flagNote": "本篇與「107 學年度起適用參考試卷」篇章結構逐段逐字完全相同，屬官方整題回收。兩份試卷各自獨立收錄。",
+  "sourceFile": "指考_已完成資料_1-16份_補齊篇章結構答案.json",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 20,
+   "選項字數區間": "7-16",
+   "選項字數全距": 9,
+   "選項長度變異係數": "26.0%"
+  }
+ },
+ {
+  "id": "z102",
+  "year": "102年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "一打十三個的由來（Why a Baker's Dozen Is Thirteen）",
+  "titleStatus": null,
+  "blankCount": 5,
+  "optionCount": 6,
+  "spec": "6選5",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "C"
+  ],
+  "blankRange": [
+   31,
+   35
+  ],
+  "options": {
+   "A": "Van Amsterdam awoke with a start.",
+   "B": "In walked an old woman wrapped in a long black shawl.",
+   "C": "The more he took from the baskets, the more they seemed to hold.",
+   "D": "From that day, everything went wrong in Van Amsterdam’s bakery.",
+   "E": "In great excitement, Van Amsterdam counted out twelve cookies—and one more.",
+   "F": "Staring at his unsold Saint Nicholas cookies, he prayed that Saint Nicholas could help him."
+  },
+  "optionsZh": {
+   "B": "走進來一位裹著黑色長披肩的老婦人。",
+   "D": "從那天起，Van Amsterdam 的麵包店樣樣不對勁。",
+   "F": "望著賣不出去的聖尼古拉餅乾，他祈求聖尼古拉幫幫他。",
+   "A": "Van Amsterdam 猛然驚醒。",
+   "E": "Van Amsterdam 滿心興奮地數出十二塊餅乾——再加一塊。",
+   "C": "他從籃子裡拿得愈多，籃子裡似乎就裝得愈多。"
+  },
+  "unusedExplanation": {
+   "opt": "C",
+   "lead": "C 是夢裡的畫面，句子漂亮，內容也完全符合這個故事。問題在於：**第五段已經寫過 `No matter how many presents Nicholas handed out, there were always more to give`（不管發出多少禮物，總是還有更多可以給）。** C 是同一件事的第二種說法。\n\n**這一篇的多餘選項和 100 年指考那一篇同型**——不是離題，是把已經講過的話再講一次。",
+   "rows": [],
+   "summary": "",
+   "extra": [],
+   "takeaway": "一個選項讀起來很美、內容也對，卻哪一格都放不進去時，回頭看看它講的是不是前面某一句已經說完的事。"
+  },
+  "paraLabels": [
+   "人物設定：一個絕不多給也絕不少給的老實麵包師",
+   "起衝突：老婦人上門，為了「一打是十二個還是十三個」鬧翻",
+   "轉壞：從那天起，店裡什麼都做不好",
+   "谷底：一年後生意做不下去，節日前一個客人也沒有",
+   "夢境：夢見聖尼古拉發禮物發不完，最後變成那個老婦人",
+   "頓悟：醒來想通——為什麼不多給一點？",
+   "化解：老婦人再度上門，這次他數了十二個，再加一個",
+   "結局：十三個算一打成了習俗，傳到其他城鎮"
+  ],
+  "marks": [
+   [
+    2,
+    "__32__",
+    "topic"
+   ],
+   [
+    1,
+    "But",
+    "trans",
+    "",
+    " the woman"
+   ],
+   [
+    1,
+    "but",
+    "trans",
+    "",
+    " she stopped"
+   ],
+   [
+    1,
+    "However",
+    "trans"
+   ],
+   [
+    1,
+    "Then",
+    "trans"
+   ],
+   [
+    3,
+    "Finally",
+    "trans"
+   ],
+   [
+    4,
+    "Then",
+    "trans"
+   ],
+   [
+    "D",
+    "From that day",
+    "trans"
+   ],
+   [
+    4,
+    "That night",
+    "trans"
+   ],
+   [
+    4,
+    "No matter how",
+    "trans"
+   ],
+   [
+    6,
+    "The next morning",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "In the Dutch colonial town later known as Albany, New York, there lived a baker, Van Amsterdam, who was as honest as he could be. He took great care to give his customers exactly what they paid for—not more and not less.",
+   "One Saint Nicholas Day morning, when the baker was just ready for business, the door of his shop flew open. __31__ She asked for a dozen of the baker’s Saint Nicholas cookies. Van Amsterdam counted out twelve cookies. But the woman insisted that a dozen is thirteen. Van Amsterdam was not a man to bear foolishness. He refused. The woman turned to go without the cookies but she stopped at the door, saying, “Van Amsterdam! However honest you may be, your heart is small and your fist is tight.” Then she was gone.",
+   "__32__ His bread rose too high or not at all. His pies were sour or too sweet. His cookies were burnt or doughy. His customers soon noticed the difference and slipped away.",
+   "A year passed. The baker grew poorer and poorer. Finally, on the day before Saint Nicholas Day, no customer came to his shop. __33__",
+   "That night, the baker had a dream. He saw Saint Nicholas pulling out gifts from his baskets for a crowd of happy children. No matter how many presents Nicholas handed out, there were always more to give. Then somehow, Saint Nicholas turned into the old woman with the long black shawl!",
+   "__34__ He suddenly realized that he always gave his customers exactly what they paid for, “But why not give more?”",
+   "The next morning, on Saint Nicholas Day, the baker rose early to make cookies. And to his surprise, the cookies were as fine as they could be. When he had just finished, the old woman appeared at his door again. She asked for a dozen of Van Amsterdam’s Saint Nicholas cookies. __35__",
+   "When people heard he counted thirteen as a dozen, he had more customers than ever and became wealthy. The practice then spread to other towns as a common custom."
+  ],
+  "zhTranslation": [
+   "在後來稱為紐約州奧本尼的那座荷蘭殖民小鎮上，住著一位名叫 Van Amsterdam 的麵包師傅，他誠實得不能再誠實。他非常用心，顧客付多少錢就給多少東西——不多也不少。",
+   "聖尼古拉節那天早上，麵包師傅才剛準備好要開門做生意，店門忽然被推開。__31__ 她要買一打師傅做的聖尼古拉餅乾。Van Amsterdam 數出十二塊餅乾。但那位婦人堅持一打是十三塊。Van Amsterdam 不是那種會容忍胡鬧的人。他拒絕了。婦人沒買餅乾就轉身要走，卻在門口停下，說：「Van Amsterdam！你再怎麼誠實，還是心胸狹小、出手小氣。」然後她就走了。",
+   "__32__ 他烤的麵包不是發過頭就是完全不發。派不是酸就是太甜。餅乾不是烤焦就是還沒熟。顧客很快就察覺不對勁，一個個溜走了。",
+   "一年過去了。師傅愈來愈窮。終於，在聖尼古拉節的前一天，他的店裡一個顧客也沒來。__33__",
+   "那天晚上，師傅做了一個夢。他看見聖尼古拉從籃子裡拿出禮物，發給一群開心的孩子。不管尼古拉發出多少禮物，籃子裡總是還有更多可以給。然後不知怎麼地，聖尼古拉變成了那位披著黑色長披肩的老婦人！",
+   "__34__ 他忽然明白，自己一直都是顧客付多少就給多少，「但為什麼不多給一點呢？」",
+   "隔天早上，聖尼古拉節當天，師傅一早起來做餅乾。令他意外的是，餅乾好得不能再好。他才剛做完，那位老婦人又出現在他門口。她要買一打 Van Amsterdam 的聖尼古拉餅乾。__35__",
+   "人們聽說他把十三塊算成一打，他的顧客比以前更多，也因此富裕起來。這個做法後來傳到其他城鎮，成為普遍的習俗。"
+  ],
+  "reading": [],
+  "flagNote": null,
+  "sourceFile": "指考_已完成資料_1-16份_補齊篇章結構答案.json",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 34,
+   "選項字數區間": "6-15",
+   "選項字數全距": 9,
+   "選項長度變異係數": "25.2%"
+  }
+ },
+ {
+  "id": "zref99",
+  "year": "99課綱參考試卷（102年施測）",
+  "exam": "指考",
+  "examType": "參考試卷",
+  "title": "社區菜園（Growing Your Own Food）",
+  "titleStatus": null,
+  "blankCount": 5,
+  "optionCount": 6,
+  "spec": "6選5",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "C"
+  ],
+  "blankRange": [
+   31,
+   35
+  ],
+  "options": {
+   "A": "As a newcomer to vegetable gardening, Mayberry is hardly alone.",
+   "B": "This year, some 43 million U.S. households will grow vegetables, fruit or herbs.",
+   "C": "Many of Mayberry’s neighbors have become healthy by eating organic vegetables.",
+   "D": "That is, a dollar invested in seeds and seedlings can yield more than $8 worth of produce.",
+   "E": "Along with dozens of her neighbors, Mayberry was planting cucumbers, carrots, onions and tomatoes.",
+   "F": "Still others see stretching and bending in the garden as a worthy supplement to huffing and puffing in the local gym."
+  },
+  "optionsZh": {
+   "E": "Mayberry 和數十位鄰居一起種下小黃瓜、胡蘿蔔、洋蔥和番茄。",
+   "A": "在種菜這件事上，新手 Mayberry 一點也不孤單。",
+   "B": "今年約有四千三百萬戶美國家庭會種蔬菜、水果或香草。",
+   "D": "也就是說，投入一美元的種子和幼苗，可以產出價值八美元以上的作物。",
+   "F": "還有些人把在園子裡伸展彎腰，看成上健身房氣喘吁吁之外的好補充。",
+   "C": "Mayberry 的許多鄰居因為吃有機蔬菜而變得健康。"
+  },
+  "unusedExplanation": {
+   "opt": "C",
+   "lead": "C 裡有 Mayberry、有 neighbors、有蔬菜、有健康——**全篇的關鍵詞它幾乎全中，是六個選項裡字面最像的一個。** 但五格都放不下：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "鄰居第一次出現，而且正在種菜",
+     "why": "C 的鄰居已經在吃菜了，菜還沒種"
+    },
+    {
+     "blank": 32,
+     "want": "從一個人跨到全國",
+     "why": "C 還停在 Mayberry 的鄰居"
+    },
+    {
+     "blank": 33,
+     "want": "一個驚人的數字",
+     "why": "C 沒有數字"
+    },
+    {
+     "blank": 34,
+     "want": "「金錢回報」到底有多少",
+     "why": "C 講的是健康，不是錢"
+    },
+    {
+     "blank": 35,
+     "want": "動機清單上缺的那一項",
+     "why": "C 講的是結果，不是動機"
+    }
+   ],
+   "summary": "**共同點：全篇問的是「為什麼開始種菜」，C 答的是「種菜以後怎麼樣了」。**",
+   "extra": [],
+   "takeaway": "關鍵詞重疊最多的那一個，常常正是多出來的。先問「這篇從頭到尾在回答什麼問題」，再看它答的是不是同一個問題。"
+  },
+  "twinNote": "**這一篇與 100 學年度研究用試卷（卷二）是同一組題目，選文有小幅改寫**——六個選項、五題答案、用不到的那一個（C）完全相同，但文字有五處不同，最要緊的是**第 33 格的位置**：本篇的空格在 `The numbers are truly impressive.` 之前，那一場在之後，而且那一場這一句沒有 `truly`。其餘三處是一個 `had` 與兩個逗號。兩場都不公布答對率與鑑別度。",
+  "paraLabels": [
+   "開場：用一位七十七歲、從沒挖過土的老太太開場",
+   "放大：她不是特例——不景氣讓全美各年齡層都在種菜，附上數字",
+   "原因：省錢、食安、運動紓壓，理由各式各樣"
+  ],
+  "marks": [
+   [
+    1,
+    "Across the country during this time of recession and economic anxiety, Americans of all ages are flocking into their gardens to grow their own food.",
+    "gradient"
+   ],
+   [
+    0,
+    "Yet",
+    "trans"
+   ],
+   [
+    "D",
+    "That is",
+    "trans"
+   ],
+   [
+    2,
+    "Others",
+    "trans"
+   ],
+   [
+    "F",
+    "Still others",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Helen Mayberry had never dug a hole in her life. She had never even had her hands in dirt, not even once, she claimed. Yet this spring, the 77-year-old retiree from Galena, Illinois, was getting down and dirty. __31__ Each of her neighbors had paid $25 for a 10-by-10 plot in a community garden taking shape on a donated acre of land in this community of about 3,300 in the northwestern tip of the state of Illinois.",
+   "__32__ Across the country during this time of recession and economic anxiety, Americans of all ages are flocking into their gardens to grow their own food. __33__ The numbers are truly impressive. And an estimated 21 percent of food gardeners will be first-timers like Mayberry.",
+   "When asked why they became enthusiastic about gardening, many of them cite the chilling effects of the recession, and the fact that gardening can reap financial rewards. __34__ Others voice concerns over the purity and safety of food and think planting in the backyard can ensure that only wholesome products wind up on the dinner table. __35__ And as gasoline prices rise again, garden work is seen as an economical vacation from stress. In a down economy, people turn the soil to save on food and gain on taste."
+  ],
+  "zhTranslation": [
+   "Helen Mayberry 這輩子從沒挖過洞。她說自己連一次都沒把手伸進泥土裡過。然而今年春天，這位來自伊利諾州加利納、七十七歲的退休人士，卻蹲下身子弄得一身泥。__31__ 她的每一位鄰居都付了二十五美元，在一塊捐出來的一英畝土地上取得十呎見方的一小塊地；這座社區菜園正在成形，而這個社區位於伊利諾州西北端，人口約三千三百人。",
+   "__32__ 在這段經濟衰退、人心不安的時期，全美各個年齡層的人都湧進自家園子種食物。__33__ 這些數字確實很可觀。而且估計有百分之二十一的種菜人，會像 Mayberry 一樣是頭一回下田。",
+   "問他們為什麼變得熱衷園藝，很多人提到經濟衰退帶來的寒意，以及種菜確實能帶來金錢上的回報。__34__ 另一些人則是擔心食物乾不乾淨、安不安全，認為在自家後院種植可以確保端上餐桌的都是好東西。__35__ 而隨著油價再度上漲，園藝工作成了一種既省錢又能紓壓的度假方式。在景氣低迷的時候，人們翻動土壤，省下伙食費，也換來好味道。"
+  ],
+  "reading": [],
+  "flagNote": "本篇與 100 學年度研究用試卷（卷二）篇章結構是同一組題目，選文有五處小幅改寫，屬官方整題回收。兩份試卷各自獨立收錄，練習時可互相對照。本場不公布答對率與鑑別度。",
+  "sourceFile": "第六批_十年度總表_v2.json",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 16,
+   "選項字數區間": "10-21",
+   "選項字數全距": 11,
+   "選項長度變異係數": "26.0%"
+  }
+ },
+ {
+  "id": "z101",
+  "year": "101年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "廣告與說服（All Advertising Persuades）",
+  "titleStatus": null,
+  "blankCount": 5,
+  "optionCount": 6,
+  "spec": "6選5",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "C"
+  ],
+  "blankRange": [
+   31,
+   35
+  ],
+  "options": {
+   "A": "Political advertising is one example.",
+   "B": "To put it another way, ads are communication designed to get someone to do something.",
+   "C": "Advertising can be the most important source of income for the media through which it is conducted.",
+   "D": "They differ from commercial ads in that political ads “sell” candidates rather than commercial goods.",
+   "E": "Aside from campaign advertising, political advertising is also used to persuade people to support or oppose proposals.",
+   "F": "In addition to political parties, environmental groups and human rights organizations also buy advertising to persuade people to accept their way of thinking."
+  },
+  "optionsZh": {
+   "B": "換句話說，廣告是一種設計來讓人去做某件事的溝通。",
+   "A": "政治廣告就是一個例子。",
+   "D": "它們與商業廣告不同之處在於，政治廣告「賣」的是候選人，而不是商品。",
+   "E": "除了競選廣告之外，政治廣告也用來說服人支持或反對某些提案。",
+   "F": "除了政黨之外，環保團體與人權組織也買廣告，說服人接受他們的想法。",
+   "C": "廣告可能是刊登它的媒體最重要的收入來源。"
+  },
+  "unusedExplanation": {
+   "opt": "C",
+   "lead": "C 從頭到尾在講廣告，句子本身也完全正確——**但全篇只談一件事：廣告怎麼說服人。** C 談的是廣告的錢從哪來、進了誰的口袋。五格沒有一格在等它。\n\n**這一篇多出來的選項和 100 年指考那一篇不一樣。** 那一篇的 B 切題卻無處可放；這裡的 C 是**切面不同**，看得出來。",
+   "rows": [],
+   "summary": "",
+   "extra": [],
+   "takeaway": "先用一句話說出「這篇從頭到尾在回答什麼問題」。答的不是同一個問題，那一個就是多出來的。"
+  },
+  "paraLabels": [
+   "核心主張：所有廣告都在說服，就算它看起來只是在提供資訊",
+   "例子一：政治廣告——賣的不是商品，是候選人和政策",
+   "例子二：環保與人權團體——他們也在賣東西"
+  ],
+  "marks": [
+   [
+    0,
+    "All advertising includes an attempt to persuade.",
+    "gradient"
+   ],
+   [
+    1,
+    "Advertising can be persuasive communication not only about a product but also an idea or a person.",
+    "topic"
+   ],
+   [
+    2,
+    "__35__",
+    "topic"
+   ],
+   [
+    "B",
+    "To put it another way",
+    "trans"
+   ],
+   [
+    0,
+    "Even if",
+    "trans"
+   ],
+   [
+    1,
+    "Although",
+    "trans"
+   ],
+   [
+    1,
+    "for instance",
+    "trans"
+   ],
+   [
+    1,
+    "yet",
+    "trans"
+   ],
+   [
+    "E",
+    "Aside from",
+    "trans"
+   ],
+   [
+    "F",
+    "In addition to",
+    "trans"
+   ],
+   [
+    2,
+    "For instance",
+    "trans"
+   ],
+   [
+    "D",
+    "rather than",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "All advertising includes an attempt to persuade. __31__ Even if an advertisement claims to be purely informational, it still has persuasion at its core. The ad informs the consumers with one purpose: to get the consumer to like the brand and, on that basis, to eventually buy the brand. Without this persuasive intent, communication about a product might be news, but it would not be advertising.",
+   "Advertising can be persuasive communication not only about a product but also an idea or a person. __32__ Although political ads are supposed to be concerned with the public welfare, they are paid for and they all have a persuasive intent. __33__ A Bush campaign ad, for instance, did not ask anyone to buy anything, yet it attempted to persuade American citizens to view George Bush favorably. __34__ Critics of President Clinton’s health care plan used advertising to influence lawmakers and defeat the government’s plan.",
+   "__35__ For instance, the international organization Greenpeace uses advertising to get their message out. In the ads, they warn people about serious pollution problems and the urgency of protecting the environment. They, too, are selling something and trying to make a point."
+  ],
+  "zhTranslation": [
+   "所有的廣告都帶有說服的意圖。__31__ 就算一則廣告聲稱自己純粹只是提供資訊，說服仍然是它的核心。廣告告訴消費者資訊，目的只有一個：讓消費者喜歡這個品牌，並在這個基礎上，最終買下這個品牌。少了這層說服的意圖，關於某項產品的訊息也許算是新聞，但不會是廣告。",
+   "廣告可以是關於產品的說服性溝通，也可以是關於一個想法或一個人。__32__ 政治廣告雖然照理說關切的是公共福祉，但它們是花錢買來的，而且全都帶有說服的意圖。__33__ 舉例來說，布希的一則競選廣告並沒有要任何人買什麼東西，卻試圖說服美國民眾對布希抱持好感。__34__ 反對柯林頓總統健保方案的人，就用廣告來影響立法者，讓政府的這項方案無法過關。",
+   "__35__ 舉例來說，國際組織綠色和平就利用廣告把自己的訊息傳出去。在廣告裡，他們警告大眾嚴重的污染問題，以及保護環境的迫切性。他們同樣在推銷某種東西，也在試圖表達一個主張。"
+  ],
+  "reading": [],
+  "flagNote": null,
+  "sourceFile": "指考_已完成資料_1-16份_補齊篇章結構答案.json",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 16,
+   "選項字數區間": "5-23",
+   "選項字數全距": 18,
+   "選項長度變異係數": "34.9%"
+  }
+ },
+ {
+  "id": "z100",
+  "year": "100年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "霸凌的連鎖反應（The Cycle of Bullying）",
+  "titleStatus": null,
+  "blankCount": 5,
+  "optionCount": 6,
+  "spec": "6選5",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "B"
+  ],
+  "blankRange": [
+   31,
+   35
+  ],
+  "options": {
+   "A": "Hitler, for example, is claimed to have been a victim of bullying in his childhood.",
+   "B": "Campus bullying is becoming a serious problem in some high schools in big cities.",
+   "C": "The friends and classmates of the bully and the victim may accept the violence as normal.",
+   "D": "Research indicates that bullying may form a chain reaction and the victim often becomes the bully.",
+   "E": "Psychologists have been puzzled by the inactivity of crowds and bystanders in urban centers when crimes occur in crowded places.",
+   "F": "The link between bullying and school violence has attracted increasing attention since the 1999 tragedy at a Colorado high school."
+  },
+  "optionsZh": {
+   "F": "自從一九九九年科羅拉多州一所高中的悲劇之後，霸凌與校園暴力的關聯愈來愈受到注意。",
+   "D": "研究指出，霸凌可能形成連鎖反應，受害者往往變成霸凌者。",
+   "A": "例如希特勒，據稱童年時曾是霸凌的受害者。",
+   "E": "心理學家一直對一件事感到困惑：都市裡人多的地方發生犯罪時，群眾和旁觀者卻不採取行動。",
+   "C": "霸凌者與被霸凌者的朋友和同學，可能會把這種暴力視為正常。",
+   "B": "校園霸凌在大城市的一些高中正成為嚴重問題。"
+  },
+  "unusedExplanation": {
+   "opt": "B",
+   "lead": "B 完全切題，句型也四平八穩，很像段首主題句。但五格都放不下：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "一個年份，好讓後面的「那一年」有著落",
+     "why": "B 沒有時間點"
+    },
+    {
+     "blank": 32,
+     "want": "「受害者變加害者」這條規律",
+     "why": "B 講的是嚴重程度"
+    },
+    {
+     "blank": 33,
+     "want": "一個具體的人",
+     "why": "B 沒有人"
+    },
+    {
+     "blank": 34,
+     "want": "一群提出主張的人",
+     "why": "B 沒有人"
+    },
+    {
+     "blank": 35,
+     "want": "「還有誰也變得麻木」",
+     "why": "B 沒有回答這個問題"
+    }
+   ],
+   "summary": "再看一件事：**全篇第一句就是 `The effect of bullying can be serious`（霸凌的後果可能很嚴重）。** B 說的是同一件事，換個說法而已——它不是離題，是**已經講過了**。",
+   "extra": [],
+   "takeaway": "一個選項讀起來很像主題句、卻哪一格都放不進去時，回頭看看第一段——它是不是把開頭已經說過的話再說一次。"
+  },
+  "paraLabels": [
+   "開場：霸凌的後果嚴重，卻幾乎沒人研究",
+   "例子：從 1999 年美國校園槍擊案看霸凌與校園暴力的關聯",
+   "循環：被霸凌的人往往變成霸凌者，希特勒被拿來當例子",
+   "擴散：受影響的不只當事人，旁觀的同學和整個社會也都變得麻木"
+  ],
+  "marks": [
+   [
+    0,
+    "The effect of bullying can be serious and even lead to tragedy.",
+    "topic"
+   ],
+   [
+    1,
+    "__31__",
+    "topic"
+   ],
+   [
+    2,
+    "__32__",
+    "gradient"
+   ],
+   [
+    3,
+    "In this sense, bullying affects not only the bullied but his friends and classmates and the whole society.",
+    "topic"
+   ],
+   [
+    "A",
+    "for example",
+    "trans"
+   ],
+   [
+    2,
+    "Although",
+    "trans"
+   ],
+   [
+    3,
+    "Since",
+    "trans"
+   ],
+   [
+    1,
+    "A year later",
+    "trans"
+   ],
+   [
+    3,
+    "In this sense",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "The effect of bullying can be serious and even lead to tragedy. Unfortunately, it is still a mostly unresearched area.",
+   "__31__ That year two shotgun-wielding students, both of whom had been identified as gifted and who had been bullied for years, killed 13 people, wounded 24 and then committed suicide. A year later an analysis by the US government found that bullying played a major role in more than two-thirds of the campus violence.",
+   "__32__ Numerous dictators and invaders throughout history have tried to justify their bullying behavior by claiming that they themselves were bullied. __33__ Although it is no justification for bullying, many of the worst humans in history have indeed been bullies and victims of bullying.",
+   "Since bullying is mostly ignored, it may provide an important clue in crowd behavior and passer-by behavior. __34__ Many of them have suggested bullying as one of the reasons of this decline in emotional sensitivity and acceptance of violence as normal. When someone is bullied, it is not only the bully and the victim who are becoming less sensitive to violence. __35__ In this sense, bullying affects not only the bullied but his friends and classmates and the whole society."
+  ],
+  "zhTranslation": [
+   "霸凌的影響可能很嚴重，甚至釀成悲劇。可惜的是，這仍然是一塊大致上沒人研究的領域。",
+   "__31__ 那一年，兩名持獵槍的學生殺死十三人、造成二十四人受傷，然後自殺；這兩人都曾被認定為資優生，也都被霸凌多年。一年後，美國政府的一份分析發現，三分之二以上的校園暴力事件，霸凌都扮演了主要角色。",
+   "__32__ 歷史上許多獨裁者和侵略者都曾試圖為自己的霸凌行為辯解，說他們自己也曾被霸凌。__33__ 這雖然不能作為霸凌的正當理由，但歷史上許多最壞的人，確實既是霸凌者，也是霸凌的受害者。",
+   "由於霸凌大多被忽視，它或許能為群眾行為和旁觀者行為提供重要線索。__34__ 其中許多人認為，霸凌是造成這種情緒敏感度下降、並把暴力視為正常的原因之一。當有人被霸凌，變得對暴力比較不敏感的，並不只是霸凌者和受害者而已。__35__ 從這個意義上看，霸凌影響的不只是被霸凌的人，還包括他的朋友、同學，以及整個社會。"
+  ],
+  "reading": [],
+  "flagNote": null,
+  "sourceFile": "指考_已完成資料_1-16份_補齊篇章結構答案.json",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 15,
+   "選項字數區間": "14-20",
+   "選項字數全距": 6,
+   "選項長度變異係數": "13.9%"
+  }
+ },
+ {
+  "id": "z99",
+  "year": "99年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "蟑螂什麼時候學得比較好（When Cockroaches Learn Best）",
+  "titleStatus": null,
+  "blankCount": 5,
+  "optionCount": 5,
+  "spec": "5選5",
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   35
+  ],
+  "options": {
+   "A": "When these insects moved toward a vanilla smell, on the other hand, they were punished with a taste of salt.",
+   "B": "This result thus shows that the time when they were trained decided the effect of their learning.",
+   "C": "They are often more active and tend to search for food during the night.",
+   "D": "They were also found to like sugar water, but not salt water.",
+   "E": "Cockroaches have the same problem!"
+  },
+  "optionsZh": {
+   "E": "蟑螂也有同樣的問題！",
+   "D": "研究也發現牠們喜歡糖水，不喜歡鹽水。",
+   "A": "另一方面，這些昆蟲若朝香草味移動，就會被鹽的味道處罰。",
+   "B": "這個結果因而顯示，受訓的時間決定了牠們學習的效果。",
+   "C": "牠們在夜間通常比較活躍，也傾向在夜間覓食。"
+  },
+  "paraLabels": [
+   "破題：用「你早上學不進去嗎」把讀者拉進來，再說蟑螂也一樣",
+   "實驗設計：先測出牠們愛香草，再用糖水訓練牠們改愛薄荷",
+   "實驗結果：晚上訓練記得住兩天，早上訓練很快就忘",
+   "結論：蟑螂晚上學得比較好，因為牠們本來就在晚上活動"
+  ],
+  "marks": [
+   [
+    2,
+    "__34__",
+    "topic"
+   ],
+   [
+    3,
+    "So, cockroaches learn better at night than they do in the morning.",
+    "gradient"
+   ],
+   [
+    1,
+    "Therefore",
+    "trans"
+   ],
+   [
+    "A",
+    "on the other hand",
+    "trans"
+   ],
+   [
+    2,
+    "However",
+    "trans"
+   ],
+   [
+    "B",
+    "thus",
+    "trans"
+   ],
+   [
+    3,
+    "So",
+    "trans",
+    "",
+    ", cockroaches"
+   ],
+   [
+    3,
+    "Because of",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Do you have trouble getting started in the morning? Do you have problems learning early in the day? If you do, you are not alone. __31__ They learn better at night than they do in the morning.",
+   "To investigate when cockroaches learn best, researchers at Vanderbilt University tested the insects for which odor (peppermint or vanilla) they preferred. Most cockroaches preferred the smell of vanilla to that of peppermint at all times. __32__ Therefore, the scientists trained the cockroaches to prefer the peppermint smell by rewarding the insects with a taste of sugar water when they approached a peppermint smell. __33__",
+   "When the cockroaches were trained at night, they remembered the new associations (peppermint = sugar water; vanilla = salt water) for up to 48 hours. However, if the cockroaches were trained in the morning, they quickly forgot which smell went with which water. __34__",
+   "So, cockroaches learn better at night than they do in the morning. __35__ Because of this, it is likely that information they gather at night will be more useful to them. These experiments provide some clues about the interactions between body rhythms, learning and memory."
+  ],
+  "zhTranslation": [
+   "你早上會不會很難進入狀況？你會不會在一天剛開始的時候學東西特別吃力？如果會，你不孤單。__31__ 牠們晚上學東西的效果比早上好。",
+   "為了研究蟑螂什麼時候學得最好，范德堡大學的研究人員測試這些昆蟲偏好哪一種氣味（薄荷或香草）。多數蟑螂在任何時間都比較喜歡香草味，不喜歡薄荷味。__32__ 因此，科學家訓練蟑螂改為偏好薄荷味：只要牠們靠近薄荷味，就給牠們嘗一口糖水當獎賞。__33__",
+   "蟑螂如果在夜間受訓，這些新的連結（薄荷＝糖水；香草＝鹽水）牠們可以記住長達四十八小時。但如果是在早上受訓，牠們很快就忘記哪一種氣味配哪一種水。__34__",
+   "所以，蟑螂晚上學東西的效果比早上好。__35__ 正因如此，牠們在夜間蒐集到的訊息，很可能對牠們比較有用。這些實驗為身體節律、學習與記憶之間的互動提供了一些線索。"
+  ],
+  "reading": [],
+  "flagNote": null,
+  "sourceFile": "指考_已完成資料_1-16份_補齊篇章結構答案.json",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 17,
+   "選項字數區間": "5-20",
+   "選項字數全距": 15,
+   "選項長度變異係數": "37.4%"
+  }
+ },
+ {
+  "id": "z98",
+  "year": "98年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "Whitney 交到朋友（Whitney Makes a Friend）",
+  "titleStatus": null,
+  "blankCount": 5,
+  "optionCount": 5,
+  "spec": "5選5",
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   35
+  ],
+  "options": {
+   "A": "For some reason, Whitney said something entirely different.",
+   "B": "Whitney smiled and stretched her hand out and a friendship was formed.",
+   "C": "She had no idea how she was going to make friends in this new environment.",
+   "D": "In her English Composition class, she was asked to share a little about herself.",
+   "E": "She never really wanted to be popular, but she did want to have someone to share secrets and laughs with."
+  },
+  "optionsZh": {
+   "E": "她從來不是真的想受歡迎，但她確實想要有個能分享祕密和歡笑的人。",
+   "C": "她完全不知道自己在這個新環境裡要怎麼交朋友。",
+   "D": "在英文作文課上，她被要求分享一點自己的事。",
+   "A": "不知為什麼，Whitney 說了完全不一樣的話。",
+   "B": "Whitney 微笑著伸出手，一段友誼就此形成。"
+  },
+  "paraLabels": [
+   "人物設定：害羞的女孩，整個高中都交不到朋友",
+   "處境：上大學前的不安——人生地不熟，一個認識的人都沒有",
+   "關鍵事件：作文課自我介紹，她說出的目標和別人都不一樣",
+   "回應：一個同學走過來伸出手，全場安靜",
+   "結尾：她學到的是——把想要的說出口，然後真的去做"
+  ],
+  "marks": [
+   [
+    0,
+    "There was a time when Whitney didn’t have a lot of friends.",
+    "topic"
+   ],
+   [
+    1,
+    "When it was time to go to college, Whitney was quite nervous.",
+    "topic"
+   ],
+   [
+    2,
+    "The first week of classes, something happened that changed Whitney’s life forever.",
+    "topic"
+   ],
+   [
+    4,
+    "Whitney learned the power of asking for what she wanted and taking action on that day.",
+    "gradient"
+   ],
+   [
+    "E",
+    "but",
+    "trans"
+   ],
+   [
+    0,
+    "though",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "There was a time when Whitney didn’t have a lot of friends. She was a bit shy and reserved. __31__ All through high school, though, she wasn’t able to make good friends or find companionship.",
+   "When it was time to go to college, Whitney was quite nervous. She was going to be rooming with someone she didn’t know and living in a town 300 miles away from home. There wouldn’t be a single person she knew in town. __32__",
+   "The first week of classes, something happened that changed Whitney’s life forever. __33__ She told everyone where she came from and all of the other ordinary details that students share in such situations. The final question for each student to answer was, “what is your goal for this class?” Most of the students said that they would like to get a good grade, pass the class or something similar. __34__ She said that her goal was to make just one good friend.",
+   "While most of the students sat in silence, one student came to Whitney and held out her hand and introduced herself. She asked if they could be friends. The whole room was silent. All eyes focused on Whitney and the hand extended just in front of her. __35__",
+   "Whitney learned the power of asking for what she wanted and taking action on that day."
+  ],
+  "zhTranslation": [
+   "曾經有一段時間，Whitney 沒有什麼朋友。她有點害羞、有點內向。__31__ 然而整個高中時期，她都沒能交到好朋友，也沒找到能作伴的人。",
+   "該上大學的時候，Whitney 相當緊張。她要和一個不認識的人同住一間寢室，還要住在離家三百英里遠的城鎮。那裡不會有任何一個她認識的人。__32__",
+   "開學第一週，發生了一件事，永遠改變了 Whitney 的人生。__33__ 她告訴大家自己從哪裡來，以及學生在這種場合會說的其他一般細節。每個學生要回答的最後一個問題是：「你這門課的目標是什麼？」多數學生說他們想拿到好成績、想通過這門課，或類似的話。__34__ 她說，她的目標只是交到一個好朋友。",
+   "多數學生都靜靜坐著的時候，有一個學生走向 Whitney，伸出手來自我介紹。她問她們能不能做朋友。整間教室鴉雀無聲。所有的目光都集中在 Whitney 身上，以及那隻就伸在她面前的手。__35__",
+   "就在那一天，Whitney 學到了說出自己想要什麼、並且採取行動的力量。"
+  ],
+  "reading": [],
+  "flagNote": null,
+  "sourceFile": "指考_已完成資料_1-16份_補齊篇章結構答案.json",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 21,
+   "選項字數區間": "8-20",
+   "選項字數全距": 12,
+   "選項長度變異係數": "28.4%"
+  }
+ },
+ {
+  "id": "zref95",
+  "year": "95課綱參考試卷（98年施測）",
+  "exam": "指考",
+  "examType": "參考試卷",
+  "title": "酸雨與撒石灰（Acid Rain and Liming）",
+  "titleStatus": null,
+  "blankCount": 5,
+  "optionCount": 5,
+  "spec": "5選5",
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   35
+  ],
+  "options": {
+   "A": "However, liming does permit fish to remain in a lake.",
+   "B": "Liming tends to be expensive and has to be done repeatedly.",
+   "C": "Different changes may take different lengths of time for ecosystems to recover.",
+   "D": "But the soil, lakes, streams, and forests that are continually acidified can take many years or even centuries to heal.",
+   "E": "Limestone or lime (a naturally occurring basic compound) can be added to acidic lakes to “cancel out” the acidity."
+  },
+  "optionsZh": {
+   "C": "不同的變化，生態系統要花的復原時間長短也不同。",
+   "D": "但持續遭到酸化的土壤、湖泊、溪流和森林，可能要好幾年、甚至好幾世紀才能復原。",
+   "E": "石灰石或石灰（一種天然的鹼性化合物）可以加進酸化的湖泊，把酸性「抵消」掉。",
+   "B": "撒石灰往往很花錢，而且必須一再進行。",
+   "A": "然而，撒石灰確實能讓魚留在湖裡。"
+  },
+  "paraLabels": [
+   "問題：酸雨改變土壤與水質，復原要多久差很多",
+   "補救：撒石灰只是治標，救得了魚，救不了整件事"
+  ],
+  "marks": [
+   [
+    0,
+    "__31__",
+    "topic"
+   ],
+   [
+    1,
+    "There are some things that people can do to bring back lakes and streams more quickly.",
+    "topic"
+   ],
+   [
+    0,
+    "For example",
+    "trans"
+   ],
+   [
+    "D",
+    "But",
+    "trans"
+   ],
+   [
+    1,
+    "but",
+    "trans"
+   ],
+   [
+    1,
+    "In addition",
+    "trans"
+   ],
+   [
+    "A",
+    "However",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Acid rain penetrates deeply into an ecosystem. It may change the chemistry of the soil and streams and may narrow—sometimes to nothing—the space where certain plants and animals can survive. __31__ For example, visibility might improve within days, and small or regular chemical changes in streams might improve within months. __32__",
+   "There are some things that people can do to bring back lakes and streams more quickly. __33__ This process, called liming, has been used only in Norway and Sweden, but not in other countries. __34__ It is considered at best a short-term remedy, not an effort to reduce or prevent pollution. In addition, it does not solve the broader problems of changes in the soil, forest health, materials damage, and risks to human health. __35__ It allows the native fish populations to survive until the acidity in the area decreases."
+  ],
+  "zhTranslation": [
+   "酸雨會深入一個生態系統。它可能改變土壤和溪流的化學性質，也可能壓縮某些動植物能夠存活的空間——有時候壓縮到完全消失。__31__ 舉例來說，能見度可能幾天之內就改善，溪流中小幅或規律的化學變化可能幾個月內就好轉。__32__",
+   "有些事情是人可以做的，能讓湖泊和溪流更快恢復。__33__ 這個做法稱為撒石灰，目前只有挪威和瑞典採用，其他國家沒有。__34__ 它頂多只能算是短期的補救，而不是減少或防止污染的努力。此外，它並不能解決土壤變化、森林健康、材料損害和人體健康風險這些更大的問題。__35__ 它讓當地原有的魚群能夠存活，直到該地區的酸度下降為止。"
+  ],
+  "reading": [],
+  "flagNote": null,
+  "sourceFile": "第六批_十年度總表_v2.json",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 13,
+   "選項字數區間": "10-20",
+   "選項字數全距": 10,
+   "選項長度變異係數": "29.3%"
+  }
+ },
+ {
+  "id": "z97",
+  "year": "97年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "巴黎的咖啡館（The Cafés of Paris）",
+  "titleStatus": null,
+  "blankCount": 5,
+  "optionCount": 5,
+  "spec": "5選5",
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   41,
+   45
+  ],
+  "options": {
+   "A": "When did the cafés in France start?",
+   "B": "Linger a bit and you will see that the Parisian stereotypes are still alive and well.",
+   "C": "Nowadays in Paris cafés still play the role of picture windows for observing contemporary life.",
+   "D": "These were like all-male clubs, with many functioning as centers of political life and discussion.",
+   "E": "Le Procope attracted Paris’s political and literary elite, and thus played an important part among the upper class."
+  },
+  "optionsZh": {
+   "A": "法國的咖啡館是什麼時候開始的？",
+   "E": "Le Procope 吸引了巴黎的政治與文學菁英，因而在上流社會占有重要地位。",
+   "D": "這些咖啡館像是清一色男性的俱樂部，許多還成為政治生活與討論的中心。",
+   "C": "如今在巴黎，咖啡館仍扮演著觀察當代生活的窗口。",
+   "B": "待久一點，你就會看到巴黎人的典型形象依然鮮活。"
+  },
+  "paraLabels": [
+   "開場：巴黎少不了咖啡館，它等於法國人的第二個客廳",
+   "歷史：從 1686 年最老的一家，講到二十世紀初的文人聚會",
+   "現在：今天的咖啡館仍是觀察巴黎人的窗口"
+  ],
+  "marks": [
+   [
+    0,
+    "It is impossible to imagine Paris without its cafés.",
+    "gradient"
+   ],
+   [
+    2,
+    "__44__",
+    "topic"
+   ],
+   [
+    "E",
+    "thus",
+    "trans"
+   ],
+   [
+    "C",
+    "Nowadays",
+    "trans"
+   ],
+   [
+    2,
+    "but",
+    "trans"
+   ],
+   [
+    1,
+    "By the end of the 18th century",
+    "trans"
+   ],
+   [
+    1,
+    "By the 1840s",
+    "trans"
+   ],
+   [
+    1,
+    "Around the turn of the 20th century",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "It is impossible to imagine Paris without its cafés. The city has some 12,000 cafés varying in size, grandeur, and significance. The cafés are like an extension of the French living room, a place to start and end the day, to gossip and debate.",
+   "__41__ The oldest café in Paris is Le Procope. It was opened in 1686 by Francesco Procopio dei Coltelli, the man who turned France into a coffee-drinking society. __42__ By the end of the 18th century, all of Paris was intoxicated with coffee and the city supported some 700 cafés. __43__ By the 1840s the number of cafés had grown to 3,000. The men who gathered in these cafés and set the theme of the times included journalists, playwrights and writers. Around the turn of the 20th century, the sidewalk cafés became the meeting halls for artists and literary figures.",
+   "__44__ The artists gathered at the café may not be as great as those of the past, but faces worth watching are just the same. __45__ You’ll see the old men in navy berets; ultra-thin, bronzed women with hair dyed bright orange; and schoolchildren sharing an afternoon chocolate with their mothers. The café in Paris has always been a place for seeing and being seen."
+  ],
+  "zhTranslation": [
+   "很難想像巴黎沒有咖啡館會是什麼樣子。這座城市大約有一萬兩千家咖啡館，大小、氣派程度與重要性各不相同。咖啡館就像法國人客廳的延伸，是一天的起點與終點，也是閒聊與辯論的地方。",
+   "__41__ 巴黎最老的咖啡館是 Le Procope，一六八六年由 Francesco Procopio dei Coltelli 開設，正是這個人讓法國變成一個喝咖啡的社會。__42__ 到十八世紀末，整個巴黎都為咖啡著迷，全城養得起大約七百家咖啡館。__43__ 到了一八四○年代，咖啡館的數量已成長到三千家。聚在這些咖啡館裡、為那個時代定調的人，包括記者、劇作家和作家。大約在二十世紀初，露天咖啡座成了藝術家與文人的聚會場所。",
+   "__44__ 聚在咖啡館的藝術家也許不如過去那些人偉大，但值得一看的面孔還是一樣多。__45__ 你會看見戴著深藍色貝雷帽的老人；瘦得不得了、皮膚曬成古銅色、頭髮染成亮橘色的女人；還有下午和媽媽分著喝一杯熱巧克力的學童。巴黎的咖啡館向來就是一個看人、也被人看的地方。"
+  ],
+  "reading": [],
+  "flagNote": null,
+  "sourceFile": "指考_已完成資料_1-16份_補齊篇章結構答案.json",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 17,
+   "選項字數區間": "7-18",
+   "選項字數全距": 11,
+   "選項長度變異係數": "26.5%"
+  }
+ },
+ {
+  "id": "z96",
+  "year": "96年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "日本的高齡就業（Japan's Aging Workforce）",
+  "titleStatus": null,
+  "blankCount": 5,
+  "optionCount": 5,
+  "spec": "5選5",
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   41,
+   45
+  ],
+  "options": {
+   "A": "The new policy could be a strain for employers.",
+   "B": "Therefore, aged Japanese are now being encouraged to work longer in life.",
+   "C": "And, unlike the U.S., Japan has no law against discrimination based on age.",
+   "D": "But by 2025, they won’t get any until they are 65.",
+   "E": "These people born between 1947 and 1949 make up 5.2 million members of the work force."
+  },
+  "optionsZh": {
+   "B": "因此，日本現在鼓勵高齡者多工作幾年。",
+   "D": "但到了二〇二五年，他們要等到六十五歲才領得到。",
+   "A": "這項新政策對雇主來說可能是一大負擔。",
+   "E": "這些一九四七到一九四九年間出生的人，在勞動力中占了五百二十萬人。",
+   "C": "而且，日本不像美國，沒有禁止年齡歧視的法律。"
+  },
+  "paraLabels": [
+   "問題：勞動力萎縮、年金維持不下去，所以要老人多工作幾年",
+   "對策與阻力：修法延後退休年齡，但企業不願配合，違反了也沒有罰則"
+  ],
+  "marks": [
+   [
+    1,
+    "__43__",
+    "topic"
+   ],
+   [
+    0,
+    "__41__",
+    "gradient"
+   ],
+   [
+    "B",
+    "Therefore",
+    "trans"
+   ],
+   [
+    "D",
+    "But",
+    "trans"
+   ],
+   [
+    0,
+    "What’s more",
+    "trans"
+   ],
+   [
+    0,
+    "while",
+    "trans"
+   ],
+   [
+    1,
+    "Consequently",
+    "trans"
+   ],
+   [
+    1,
+    "thus",
+    "trans"
+   ],
+   [
+    0,
+    "By so doing",
+    "trans"
+   ],
+   [
+    1,
+    "because of",
+    "trans"
+   ],
+   [
+    "C",
+    "unlike",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Japan is dealing with a problem that’s just starting to sweep the world—an aging population combined with a shrinking work force. __41__ By so doing, it is hoped that Japan’s government will save its increasingly burdened pension (i.e., payment received after retirement) system from going bankrupt. In 2000, the Japanese could get a full pension from the government at 60. __42__ What’s more, premiums paid by workers every month are set to rise while payouts they get after retirement fall.",
+   "To help workers to cope with this, Japan passed a law last year that requires companies by 2013 to raise their retirement age from 60 to 65 or rehire their retired workers. __43__ In a country where forced layoffs are a last resort, large companies traditionally have relied on retirement to reduce payrolls. They were just about to enjoy a big cut in personnel costs because of the mass retirement of Japan’s baby boomers. __44__ Consequently, there was much opposition from corporations to the new retirement law. Early signs suggest that large corporations will hesitate in raising their retirement ages. __45__ Violators of the new law would face only “administrative guidance,” not penalties. Such resistance is hurting the effectiveness of the policies, which may thus prolong the aging problem."
+  ],
+  "zhTranslation": [
+   "日本正在處理一個才剛開始席捲全世界的問題——人口老化，同時勞動力萎縮。__41__ 藉此，日本政府希望能讓負擔日益沉重的年金制度（也就是退休後領取的給付）免於破產。二○○○年時，日本人六十歲就可以從政府那裡領到全額年金。__42__ 此外，勞工每月繳的保費將調升，退休後領到的給付則將減少。",
+   "為了幫勞工因應這件事，日本去年通過一項法律，要求企業在二○一三年前把退休年齡從六十歲提高到六十五歲，或者把退休員工再僱用回來。__43__ 在一個把強制裁員當成最後手段的國家，大企業傳統上都是靠退休來縮減人事。日本嬰兒潮世代大量退休，本來正要讓這些企業大幅節省人事成本。__44__ 因此，企業界對這項新的退休法規有很多反對聲音。早期跡象顯示，大企業對於調高退休年齡會有所遲疑。__45__ 違反新法者只會受到「行政指導」，不會有罰則。這樣的抵制正在削弱政策的效果，也可能因此拖長老化問題。"
+  ],
+  "reading": [],
+  "flagNote": null,
+  "sourceFile": "指考_已完成資料_1-16份_補齊篇章結構答案.json",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 16,
+   "選項字數區間": "9-16",
+   "選項字數全距": 7,
+   "選項長度變異係數": "19.0%"
+  }
+ },
+ {
+  "id": "z95",
+  "year": "95年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "寫信與電子郵件（Letters and E-mail）",
+  "titleStatus": null,
+  "blankCount": 5,
+  "optionCount": 5,
+  "spec": "5選5",
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   41,
+   45
+  ],
+  "options": {
+   "A": "E-mail is different.",
+   "B": "The downside is, I might be less likely to say something deeper.",
+   "C": "The time and distance, as a matter of fact, influence the letter-writer.",
+   "D": "I can zap a message to Kenya whenever I want to, and it gets there almost in a second.",
+   "E": "I will also take more care with my style, trying to write in a way that is interesting and worth reading."
+  },
+  "optionsZh": {
+   "C": "事實上，時間和距離會影響寫信的人。",
+   "E": "我也會更講究文筆，努力寫得有意思、值得一讀。",
+   "A": "電子郵件不一樣。",
+   "D": "我可以隨時把訊息傳到肯亞，幾乎一秒就到。",
+   "B": "缺點是，我可能比較不會說出深入一點的話。"
+  },
+  "paraLabels": [
+   "一邊：寫信——距離和時間讓人慎重，寫的東西也比較深",
+   "另一邊：電子郵件——快又方便，所以寫得隨便，也留不住"
+  ],
+  "marks": [
+   [
+    0,
+    "The fact is that letter writing and e-mail are completely different processes.",
+    "thesis"
+   ],
+   [
+    0,
+    "__41__",
+    "topic"
+   ],
+   [
+    1,
+    "__43__",
+    "topic"
+   ],
+   [
+    1,
+    "because",
+    "trans"
+   ],
+   [
+    "B",
+    "The downside is",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Many people say that e-mail is just a faster way to deliver letters. The fact is that letter writing and e-mail are completely different processes. Handwritten or typed, letters travel in envelopes through actual space and take time getting from one place to another. __41__ If I am writing on paper to my brother in Kenya, I will be less likely to complain about the breakfast I had this morning. I will probably write about my relationships and some things that I’ve been thinking about. __42__ People tend to regard letters as important. My brother might save my letter; he might read it back to me years from now.",
+   "__43__ It is instant, traveling from point to point. If you don’t print it out, the message doesn’t physically exist. With e-mail, geography is no obstacle and time is not important. __44__ The ease of this kind of writing and sending probably makes for a different kind of communication. I can complain about the breakfast I had this morning or rattle on about friends and movies. That is because I am not so focused on style and profundity. __45__ My brother might glance at my mail, have a laugh, and then delete it."
+  ],
+  "zhTranslation": [
+   "很多人說電子郵件只是把信送得比較快的方式。事實上，寫信和電子郵件是完全不同的兩回事。不管是手寫還是打字，信件裝在信封裡穿過真實的空間，從一個地方到另一個地方需要時間。__41__ 如果我寫信給人在肯亞的弟弟，我比較不會去抱怨今天早上那頓早餐。我大概會寫我的人際關係，以及一些我最近在想的事。__42__ 人們往往把信看得很重要。我弟弟可能會留著我的信；他可能多年以後再讀給我聽。",
+   "__43__ 它是即時的，從一點傳到另一點。如果你不把它印出來，這則訊息在實體上並不存在。用電子郵件，地理不是障礙，時間也不重要。__44__ 這種書寫和寄送的方便，大概造就了另一種不同的溝通。我可以抱怨今天早上那頓早餐，或是沒完沒了地扯朋友和電影。那是因為我沒那麼在意文筆和深度。__45__ 我弟弟可能瞄一眼我的信，笑一笑，然後就刪掉。"
+  ],
+  "reading": [],
+  "flagNote": null,
+  "sourceFile": "指考_第5批資料_4份.json",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 19,
+   "選項字數區間": "3-21",
+   "選項字數全距": 18,
+   "選項長度變異係數": "47.3%"
+  }
+ },
+ {
+  "id": "z94",
+  "year": "94年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "出生序與智力（Birth Order and Intelligence）",
+  "titleStatus": null,
+  "blankCount": 5,
+  "optionCount": 5,
+  "spec": "5選5",
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   41,
+   45
+  ],
+  "options": {
+   "A": "There are definitely two sides to this issue.",
+   "B": "Scores decreased as the family size increased and also with birth order.",
+   "C": "An intelligence test was administered to over 350,000 Dutch males when they turned 19 years of age.",
+   "D": "On the other side are Rutherford and Sewell, who studied more than 10,000 American high school graduates.",
+   "E": "Since then, the theory has been elaborated and even extended to explain the positive effect of birth order on intelligence."
+  },
+  "optionsZh": {
+   "C": "一項智力測驗施測於三十五萬名以上的荷蘭男性，時間是他們滿十九歲的時候。",
+   "B": "分數隨著家庭人數增加而下降，也隨著出生序愈後面而下降。",
+   "E": "自那時起，這個理論持續被闡述，甚至被擴大用來解釋出生序對智力的正面效應。",
+   "A": "這個議題確實有兩種立場。",
+   "D": "另一邊是 Rutherford 和 Sewell，他們研究了一萬多名美國高中畢業生。"
+  },
+  "paraLabels": [
+   "起點：早期荷蘭的研究發現出生序與智力測驗分數有關",
+   "交鋒開始：一派提出理論解釋，另一派檢驗後說效應根本不存在",
+   "分成兩邊：各自的主張和依據，到現在沒有共識"
+  ],
+  "marks": [
+   [
+    0,
+    "One of the first studies was carried out in the Netherlands during the early 1970s.",
+    "topic"
+   ],
+   [
+    2,
+    "__44__",
+    "gradient"
+   ],
+   [
+    "E",
+    "Since then",
+    "trans"
+   ],
+   [
+    1,
+    "However",
+    "trans"
+   ],
+   [
+    2,
+    "On one side",
+    "trans"
+   ],
+   [
+    2,
+    "But",
+    "trans"
+   ],
+   [
+    "D",
+    "On the other side",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Many researchers have been interested in whether or not an individual’s birth order has an effect on intelligence. One of the first studies was carried out in the Netherlands during the early 1970s. __41__ The test was called the “Raven,” which is similar to the I.Q. test. The researchers found a strong relationship between the birth order of the test takers and their scores on the Raven test. __42__",
+   "In 1975, Zajonc and Markus developed the confluence theory to explain the negative effect of birth order on intelligence involving the data from the Dutch. __43__ However, Rutherford and Sewell in 1991 tested the theory and found no support for it. They concluded that birth order effects did not exist.",
+   "__44__ On one side there are Zajonc and Markus, who state that birth order effects may be explained solely by family size and the spacing of births. With short birth intervals, increasing order of birth will be associated with lower intelligence levels. But with long birth intervals, this pattern may be reversed. __45__ They show that the confluence model does not explain any relationship between birth order and intelligence that may exist in the American data. Up to date, there is no agreement between these opposing views. And such a debate may continue for years to come."
+  ],
+  "zhTranslation": [
+   "許多研究者一直很關心一個人的出生序會不會影響智力。最早的研究之一在一九七○年代初期於荷蘭進行。__41__ 那項測驗叫做「瑞文氏測驗」（Raven），性質與智力測驗相近。研究者發現，受測者的出生序與他們在瑞文氏測驗上的分數之間有很強的關聯。__42__",
+   "一九七五年，Zajonc 和 Markus 提出匯流理論，用荷蘭的那批資料來解釋出生序對智力的負面效應。__43__ 然而，Rutherford 和 Sewell 在一九九一年檢驗這個理論，並未找到支持它的證據。他們的結論是，出生序效應並不存在。",
+   "__44__ 一邊是 Zajonc 和 Markus，他們主張出生序效應完全可以用家庭人數和生育間隔來解釋。生育間隔短的時候，出生序愈後面，智力水準愈低；但生育間隔長的時候，這個模式可能反過來。__45__ 他們指出，匯流模型無法解釋美國資料中可能存在的任何出生序與智力的關聯。到目前為止，這兩派對立的看法仍沒有共識。這樣的爭論可能還會持續好些年。"
+  ],
+  "reading": [],
+  "flagNote": null,
+  "sourceFile": "指考_第5批資料_4份.json",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 19,
+   "選項字數區間": "8-20",
+   "選項字數全距": 12,
+   "選項長度變異係數": "28.8%"
+  }
+ },
+ {
+  "id": "z93",
+  "year": "93年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "中國傳統水墨畫的演變（Chinese Brush Painting）",
+  "titleStatus": null,
+  "blankCount": 5,
+  "optionCount": 5,
+  "spec": "5選5",
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   41,
+   45
+  ],
+  "options": {
+   "A": "Another genre commonly found in Chinese brush painting was flower-and-bird painting.",
+   "B": "However, the subject matters later expanded beyond religious themes.",
+   "C": "As a result, they have obtained more natural and richly varied colors.",
+   "D": "Its growth has inevitably reflected the changes of time.",
+   "E": "It then gradually developed into two separate styles."
+  },
+  "optionsZh": {
+   "D": "它的發展必然反映了時代的變遷。",
+   "B": "然而題材後來擴展到宗教之外。",
+   "E": "它接著逐漸發展出兩種不同的風格。",
+   "A": "水墨畫另一個常見的類別是花鳥畫。",
+   "C": "因此他們得到了更自然、更豐富多變的色彩。"
+  },
+  "paraLabels": [
+   "開場：六千多年的發展，隨著時代而變",
+   "演變：從宗教壁畫到歷史人物、山水、花鳥，題材一種接一種出現",
+   "近代：二十世紀後的調色技法，沿用到今天"
+  ],
+  "marks": [
+   [
+    0,
+    "__41__",
+    "gradient"
+   ],
+   [
+    1,
+    "__42__",
+    "topic"
+   ],
+   [
+    2,
+    "Since the turn of the 20th century, painters have often mixed several colors on one brush or mixed their colors with black inks.",
+    "topic"
+   ],
+   [
+    "B",
+    "However",
+    "trans"
+   ],
+   [
+    1,
+    "For example",
+    "trans"
+   ],
+   [
+    1,
+    "Besides",
+    "trans"
+   ],
+   [
+    "E",
+    "then",
+    "trans"
+   ],
+   [
+    "A",
+    "Another",
+    "trans"
+   ],
+   [
+    "C",
+    "As a result",
+    "trans"
+   ],
+   [
+    1,
+    "During the 1st century A.D.",
+    "trans"
+   ],
+   [
+    1,
+    "By the 4th century",
+    "trans"
+   ],
+   [
+    2,
+    "Since the turn of the 20th century",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Starting around 4,000 B.C., traditional Chinese brush painting has developed continuously over a period of more than six thousand years. __41__",
+   "During the 1st century A.D., the art of painting religious murals gradually gained in prominence, with the introduction of Buddhism to China and the consequent building of temples. __42__ For example, paintings of historical characters and stories of everyday life became extremely popular. Besides historical figures, landscape painting was also common in Chinese brush painting. By the 4th century, this particular type of painting had already established itself as an independent form of expression. __43__ The blue-and-green landscape used bright blue, green and red pigments derived from minerals to create a richly decorative style; the ink-and-wash landscape relied on vivid brushwork and various intensity of ink to express the artist’s conception of nature as well as his own emotions. __44__ A great many artists in the 9th century painted in this genre and their subject matters included a rich variety of flowers, fruits, birds, insects, and fish.",
+   "Since the turn of the 20th century, painters have often mixed several colors on one brush or mixed their colors with black inks. __45__ Such techniques have been widely adopted and further developed in the contemporary period."
+  ],
+  "zhTranslation": [
+   "中國傳統水墨畫大約起自西元前四千年，六千多年來持續發展。__41__",
+   "西元一世紀，隨著佛教傳入中國、寺廟隨之興建，宗教壁畫的藝術逐漸受到重視。__42__ 舉例來說，描繪歷史人物與日常生活故事的畫作變得非常盛行。除了歷史人物之外，山水畫在水墨畫中也很常見。到了四世紀，這一類畫作已經確立為一種獨立的表現形式。__43__ 青綠山水使用取自礦物的鮮明藍、綠與紅色顏料，形成裝飾性濃厚的風格；水墨山水則靠著生動的筆法和濃淡不一的墨色，表現畫家對自然的體會以及自身的情感。__44__ 九世紀有非常多畫家投入這個類別，題材涵蓋各式各樣的花卉、果實、飛鳥、昆蟲與魚。",
+   "二十世紀初以來，畫家常在同一枝筆上調和數種顏色，或把顏色與黑墨混合。__45__ 這些技法在當代已被廣泛採用，並進一步發展。"
+  ],
+  "reading": [],
+  "flagNote": null,
+  "sourceFile": "指考_第5批資料_4份.json",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 14,
+   "選項字數區間": "8-12",
+   "選項字數全距": 4,
+   "選項長度變異係數": "15.0%"
+  }
+ },
+ {
+  "id": "z93b",
+  "year": "93年敏督利颱風受災地區考生補救考試",
+  "exam": "指考",
+  "examType": "補考",
+  "title": "舊屋翻新的建築師（An Architect Who Renews Old Buildings）",
+  "titleStatus": null,
+  "blankCount": 5,
+  "optionCount": 5,
+  "spec": "5選5",
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   41,
+   45
+  ],
+  "options": {
+   "A": "She got to look at the fine old houses as well as the new houses being built.",
+   "B": "Architects make drawings and careful plans of everything they do.",
+   "C": "The word for what she does is rehabilitation.",
+   "D": "Then she went on to study architecture.",
+   "E": "That is precisely what Carrie does."
+  },
+  "optionsZh": {
+   "C": "她做的這件事，有一個詞叫做 rehabilitation（舊屋翻新）。",
+   "E": "Carrie 做的正是這件事。",
+   "A": "她因此得以看遍那些漂亮的老房子，也看到正在興建的新房子。",
+   "D": "後來她繼續去學建築。",
+   "B": "建築師會把要做的每一件事都畫成圖、仔細規劃。"
+  },
+  "paraLabels": [
+   "人物與工作：她做的是「舊屋翻新」，並說明城市為什麼需要",
+   "起點：小時候看老建築，大學送信時看遍新舊房子",
+   "養成：從藝術史轉到建築，畢業後進了翻修老屋的公司",
+   "結尾：當建築師不必是天才，關鍵是能在腦中看見完工的樣子"
+  ],
+  "marks": [
+   [
+    0,
+    "Carrie Jeffers is an architect whose job is making old buildings look like new.",
+    "gradient"
+   ],
+   [
+    3,
+    "The one talent needed is an ability to see in your mind what a building will look like when it’s finished.",
+    "topic"
+   ],
+   [
+    0,
+    "though",
+    "trans"
+   ],
+   [
+    "D",
+    "Then",
+    "trans"
+   ],
+   [
+    3,
+    "But",
+    "trans"
+   ],
+   [
+    2,
+    "because",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Architects design new buildings and oversee work when old buildings are renewed. Carrie Jeffers is an architect whose job is making old buildings look like new. __41__ In today’s cities, many old buildings are in need of repair. Sometimes bathrooms, kitchens, and electric wiring need replacing. Underneath, though, these houses are sturdy. If they could be fixed, many more people of the city would have good homes. __42__",
+   "As a young girl Carrie saw many beautiful old buildings and went to many museums. When Carrie was in college, she worked as a letter carrier in the small town of Newark, Ohio. __43__ One day she said to herself that she could make better houses than the new kind she saw going up.",
+   "Carrie studied art history in college. __44__ When she finished her studies, she found a job with a small company that mainly rehabilitates old houses in the city. She enjoyed working for the company because she got to do many different kinds of jobs.",
+   "__45__ But Carrie says you don’t have to be a great artist or even very good in math to be a good architect. The one talent needed is an ability to see in your mind what a building will look like when it’s finished."
+  ],
+  "zhTranslation": [
+   "建築師設計新建築，也在老建築翻修時監督工程。Carrie Jeffers 是一位建築師，她的工作是把老房子變得像新的一樣。__41__ 在今天的城市裡，許多老房子需要修繕。有時候浴室、廚房和電線需要更換。不過在那底下，這些房子其實很堅固。如果能修好，城裡就會有更多人擁有好住所。__42__",
+   "Carrie 小時候看過許多漂亮的老建築，也去過很多博物館。上大學的時候，她在俄亥俄州紐華克這個小鎮當郵差。__43__ 有一天她心想，自己能蓋出比眼前那些新房子更好的房子。",
+   "Carrie 大學讀的是藝術史。__44__ 學業結束後，她在一家小公司找到工作，那家公司主要做城裡老房子的翻新。她喜歡在那裡工作，因為有機會做很多不同種類的工作。",
+   "__45__ 但 Carrie 說，要當一個好的建築師，你不必是了不起的藝術家，數學也不必特別好。唯一需要的天分，是能在腦中看見一棟建築完工之後的樣子。"
+  ],
+  "reading": [],
+  "flagNote": null,
+  "sourceFile": "指考_第5批資料_4份.json",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 19,
+   "選項字數區間": "6-17",
+   "選項字數全距": 11,
+   "選項長度變異係數": "40.9%"
+  }
+ },
+ {
+  "id": "z92",
+  "year": "92年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "丟不掉的那隻狗（The Dog Who Kept Finding His Way Home）",
+  "titleStatus": null,
+  "blankCount": 5,
+  "optionCount": 5,
+  "spec": "5選5",
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   41,
+   45
+  ],
+  "options": {
+   "A": "But when I pulled into the driveway, there was the puppy.",
+   "B": "Hours later I called my daughter and asked if she saw Derek.",
+   "C": "One time, I even shouted at Derek when he unplugged my computer.",
+   "D": "Derek became part of our life and seemed to fit into our family routine.",
+   "E": "Without any experience in raising pets, my husband and I first felt reluctant but later gave in."
+  },
+  "optionsZh": {
+   "E": "我們夫妻倆完全沒有養寵物的經驗，一開始不太願意，後來還是讓步了。",
+   "D": "Derek 成了我們生活的一部分，似乎也融入了家裡的作息。",
+   "C": "有一次牠把我的電腦插頭拔掉，我甚至對牠大吼。",
+   "A": "但我把車開進自家車道時，那隻小狗就在那裡。",
+   "B": "幾個小時後，我打電話給女兒，問她有沒有看到 Derek。"
+  },
+  "paraLabels": [
+   "起因：女兒為了寫報告想養狗，家裡多了一隻大麥町",
+   "蜜月期：前兩個月一切美好，牠成了家裡的一份子",
+   "反轉：報告寫完後問題接連出現，「我」決定把狗丟掉",
+   "三次嘗試：星期五、星期六牠都自己走回家，星期天索性亂繞",
+   "結局：打電話回家才發現，迷路的是自己"
+  ],
+  "marks": [
+   [
+    1,
+    "The first two months were encouraging.",
+    "topic"
+   ],
+   [
+    2,
+    "But problems soon began after the science report.",
+    "topic"
+   ],
+   [
+    "E",
+    "but",
+    "trans"
+   ],
+   [
+    2,
+    "But",
+    "trans"
+   ],
+   [
+    2,
+    "Finally",
+    "trans"
+   ],
+   [
+    "A",
+    "But",
+    "trans"
+   ],
+   [
+    3,
+    "but",
+    "trans"
+   ],
+   [
+    3,
+    "So",
+    "trans"
+   ],
+   [
+    0,
+    "because",
+    "trans"
+   ],
+   [
+    3,
+    "The next day",
+    "trans"
+   ],
+   [
+    "B",
+    "Hours later",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Two years ago, when we just moved into town, my daughter Amy came to ask me whether she could keep a pet puppy, because she needed to write a science report on that topic. __41__ After several trips to pet shops, we finally decided on a Dalmatian and named him Derek.",
+   "The first two months were encouraging. __42__ When I cooked dinner, he would take a walk with our daughter; a few times, Derek miraculously found his way home when Amy got lost. To reward him, we allowed him to eat at the table or to sleep with us.",
+   "But problems soon began after the science report. Many times, the spoiled puppy ruined our meals. And I started to feel irritated when Derek licked my cheek at dawn. __43__ Finally, I thought it was time to get rid of the animal.",
+   "I remember it was a Friday afternoon. I drove around for 10 minutes and left Derek in a park. __44__ The next day, with the help of a map, I left the doggie 30 minutes away, but Derek beat me home again. So, on Sunday, I took him on a long drive, arbitrarily turning left and right and making U-turns. I did everything I could to throw off his sense of direction.",
+   "__45__ She said, “Yes. Derek is having dinner with me. Where are you?” “I was about to ask myself the same question,” I replied. “Put Derek on the phone. I need directions home.”"
+  ],
+  "zhTranslation": [
+   "兩年前我們才剛搬進鎮上，女兒 Amy 來問我可不可以養一隻小狗，因為她要寫一份以此為題的科學報告。__41__ 跑了幾趟寵物店之後，我們終於決定養一隻大麥町，取名 Derek。",
+   "頭兩個月令人欣慰。__42__ 我做晚飯的時候，牠會和女兒去散步；有幾次 Amy 迷路，Derek 竟然神奇地找到回家的路。為了獎賞牠，我們讓牠在餐桌上吃飯，也讓牠跟我們一起睡。",
+   "但科學報告寫完之後，問題很快就來了。這隻被寵壞的小狗好多次毀了我們的一餐。天剛亮 Derek 就來舔我的臉，我開始覺得煩躁。__43__ 最後我心想，該把這隻動物處理掉了。",
+   "我記得那是一個星期五下午。我開車繞了十分鐘，把 Derek 留在一座公園。__44__ 隔天，我靠著地圖，把這隻狗丟在三十分鐘車程外的地方，但 Derek 又比我先到家。所以星期天，我帶牠開了很長一段路，隨意左轉右轉、又迴轉。我用盡各種辦法，就是要打亂牠的方向感。",
+   "__45__ 她說：「有啊。Derek 正在跟我吃晚飯。你人在哪裡？」我回答：「我正想問我自己同樣的問題。讓 Derek 聽電話，我需要有人告訴我怎麼回家。」"
+  ],
+  "reading": [],
+  "flagNote": null,
+  "sourceFile": "第六批_十年度總表_v2.json",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 25,
+   "選項字數區間": "11-17",
+   "選項字數全距": 6,
+   "選項長度變異係數": "16.2%"
+  }
+ },
+ {
+  "id": "z91p1",
+  "year": "91年（第一篇）",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "虛構與非虛構（Fiction and Nonfiction）",
+  "titleStatus": null,
+  "blankCount": 5,
+  "optionCount": 5,
+  "spec": "5選5",
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   41,
+   45
+  ],
+  "options": {
+   "A": "Nothing is made up.",
+   "B": "History is nonfiction, too.",
+   "C": "But your trip through space would be fiction.",
+   "D": "You could write a story in which you fly to the moon.",
+   "E": "But fiction isn’t always different from the way things usually are."
+  },
+  "optionsZh": {
+   "E": "但虛構的東西未必和平常的樣子不一樣。",
+   "D": "你可以寫一個自己飛上月球的故事。",
+   "C": "但你的太空之旅會是虛構的。",
+   "A": "沒有任何東西是編的。",
+   "B": "歷史也是非虛構。"
+  },
+  "paraLabels": [
+   "定義一：什麼是虛構——可以很像真的，也可以很離奇",
+   "界線：虛構故事裡也可以有真東西，關鍵在哪一部分是編的",
+   "定義二：什麼是非虛構——全部都是真的，並舉例"
+  ],
+  "marks": [
+   [
+    1,
+    "Not everything in a fictional story has to be made up.",
+    "topic"
+   ],
+   [
+    2,
+    "Nonfiction, on the other hand, is all about true things.",
+    "topic"
+   ],
+   [
+    0,
+    "__41__",
+    "topic"
+   ],
+   [
+    "E",
+    "But",
+    "trans"
+   ],
+   [
+    "C",
+    "But",
+    "trans"
+   ],
+   [
+    2,
+    "on the other hand",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Fiction is the name we use for stories that are make-believe, such as Harry Potter or Alice in the Wonderland. __41__ It can be so close to the truth that it seems as real as something that happened to you this morning. Or, fiction can be as fantastic as the most unbelievable fairy tale.",
+   "Not everything in a fictional story has to be made up. __42__ You, of course, are real, and the moon is real, and many of the things that you could describe, such as the stars, the wind, and the pull of gravity, would be real. __43__ It would be a trip you took in your imagination.",
+   "Nonfiction, on the other hand, is all about true things. __44__ Someone’s biography is nonfiction; so is your autobiography. So are articles in your local newspaper, and school reports on science. __45__ Imagine writing history about the 1989 San Francisco earthquake, or a report about a high school sports team. An old proverb says, “Truth is stranger than fiction.” Do you think that’s true?"
+  ],
+  "zhTranslation": [
+   "我們把那些憑空編造的故事叫做虛構，例如《哈利波特》或《愛麗絲夢遊仙境》。__41__ 它可以貼近事實到彷彿就像今天早上發生在你身上的事一樣真實；也可以像最不可思議的童話那樣天馬行空。",
+   "虛構故事裡並不是每一件事都必須是編造的。__42__ 你當然是真的，月亮是真的，而你可能描述到的許多東西——例如星星、風、地心引力的拉力——也都是真的。__43__ 那會是一趟你在想像中完成的旅行。",
+   "另一方面，非虛構講的全是真實的事情。__44__ 某個人的傳記是非虛構，你的自傳也是。地方報紙上的文章是，學校的科學報告也是。__45__ 想想看，寫一篇關於一九八九年舊金山大地震的歷史，或是一篇關於高中運動隊伍的報導。有一句古老的諺語說：「真實比虛構更離奇。」你覺得這句話對嗎？"
+  ],
+  "reading": [],
+  "flagNote": "91 年指考篇章結構是兩篇（第一篇 41–45、第二篇 46–50），本題庫兩篇都收。",
+  "sourceFile": "第六批_十年度總表_v2.json",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 17,
+   "選項字數區間": "4-12",
+   "選項字數全距": 8,
+   "選項長度變異係數": "43.2%"
+  }
+ },
+ {
+  "id": "z91p2",
+  "year": "91年（第二篇）",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "雨刷的發明（The Invention of Windshield Wipers）",
+  "titleStatus": null,
+  "blankCount": 5,
+  "optionCount": 5,
+  "spec": "5選5",
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   46,
+   50
+  ],
+  "options": {
+   "A": "Her solution was simple.",
+   "B": "A year later, she received a patent for it.",
+   "C": "Its function of wiping rain was later considered and added.",
+   "D": "Instead, she paid much attention to the streetcar motorman.",
+   "E": "Wiping off the snow and ice by hands, however, seemed to be the only solution."
+  },
+  "optionsZh": {
+   "D": "她反而把注意力放在電車駕駛身上。",
+   "E": "然而，用手把雪和冰擦掉似乎是唯一的辦法。",
+   "A": "她的辦法很簡單。",
+   "C": "後來才想到並加上了刷雨的功能。",
+   "B": "一年後，她取得了這項裝置的專利。"
+  },
+  "paraLabels": [
+   "依時間順序講完一件發明：她在電車上看到什麼、當時只能怎麼處理、她想到的辦法、拿到專利、成為標準配備"
+  ],
+  "marks": [
+   [
+    0,
+    "Windshield wipers of a car were invented by Mary Anderson on a trip in New York City in 1903.",
+    "gradient"
+   ],
+   [
+    "D",
+    "Instead",
+    "trans"
+   ],
+   [
+    "E",
+    "however",
+    "trans"
+   ],
+   [
+    0,
+    "Because",
+    "trans"
+   ],
+   [
+    0,
+    "Even though",
+    "trans"
+   ],
+   [
+    "B",
+    "A year later",
+    "trans"
+   ],
+   [
+    0,
+    "By 1913",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Windshield wipers of a car were invented by Mary Anderson on a trip in New York City in 1903. While touring the city on a streetcar, Mary was not interested in the views on the streets. __46__ Repeatedly, the motorman had to get out of the streetcar to wipe off the snow and ice collected on the windshield. New York streetcar motormen at that time had tried various ways to solve this problem. __47__ Mary, sitting on her seat, quickly drew her device in her sketchbook. __48__ Mary’s device allowed the motorman to use a lever inside the streetcar to activate a swinging arm on the windshield to wipe off the snow and ice. Because the device was first designed for cold weather, it could be easily removed when warmer weather arrived. __49__ Even though her friends teased her about her awkward invention attached to a streetcar, Mary didn’t give in to peer pressure. __50__ By 1913, her invention became standard equipment on American cars. Windshield wipers save lives and make it easier to drive through storms."
+  ],
+  "zhTranslation": [
+   "汽車的雨刷是 Mary Anderson 在一九○三年一趟紐約市之行中發明的。搭電車遊覽這座城市的時候，Mary 對街上的景色沒有興趣。__46__ 駕駛得一再走出電車，把擋風玻璃上積的雪和冰擦掉。當時紐約的電車駕駛試過各種辦法解決這個問題。__47__ Mary 坐在座位上，很快就把她的裝置畫進素描本裡。__48__ Mary 的裝置讓駕駛可以在電車裡操作一根拉桿，帶動擋風玻璃上一支搖臂，把雪和冰刷掉。由於這個裝置一開始是為寒冷天氣設計的，天氣轉暖時可以輕易拆下來。__49__ 儘管朋友取笑她把這個古怪的發明裝在電車上，Mary 並沒有屈服於同儕壓力。__50__ 到了一九一三年，她的發明成為美國汽車的標準配備。雨刷挽救性命，也讓人在暴風雨中開車變得比較容易。"
+  ],
+  "reading": [],
+  "flagNote": "91 年指考篇章結構是兩篇（第一篇 41–45、第二篇 46–50），本題庫兩篇都收。本篇五個空格全落在同一段內。",
+  "sourceFile": "第六批_十年度總表_v2.json",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 15,
+   "選項字數區間": "4-15",
+   "選項字數全距": 11,
+   "選項長度變異係數": "37.2%"
+  }
+ },
+ {
+  "id": "zres100",
+  "year": "100年研究用試卷（卷二）",
+  "exam": "指考",
+  "examType": "研究用試卷",
+  "title": "社區菜園（Growing Your Own Food）",
+  "titleStatus": null,
+  "blankCount": 5,
+  "optionCount": 6,
+  "spec": "6選5",
+  "eliminationValid": false,
+  "unusedOptions": [
+   "C"
+  ],
+  "blankRange": [
+   31,
+   35
+  ],
+  "options": {
+   "A": "As a newcomer to vegetable gardening, Mayberry is hardly alone.",
+   "B": "This year, some 43 million U.S. households will grow vegetables, fruit or herbs.",
+   "C": "Many of Mayberry’s neighbors have become healthy by eating organic vegetables.",
+   "D": "That is, a dollar invested in seeds and seedlings can yield more than $8 worth of produce.",
+   "E": "Along with dozens of her neighbors, Mayberry was planting cucumbers, carrots, onions and tomatoes.",
+   "F": "Still others see stretching and bending in the garden as a worthy supplement to huffing and puffing in the local gym."
+  },
+  "optionsZh": {
+   "E": "Mayberry 和數十位鄰居一起種下小黃瓜、胡蘿蔔、洋蔥和番茄。",
+   "A": "在種菜這件事上，新手 Mayberry 一點也不孤單。",
+   "B": "今年約有四千三百萬戶美國家庭會種蔬菜、水果或香草。",
+   "D": "也就是說，投入一美元的種子和幼苗，可以產出價值八美元以上的作物。",
+   "F": "還有些人把在園子裡伸展彎腰，看成上健身房氣喘吁吁之外的好補充。",
+   "C": "Mayberry 的許多鄰居因為吃有機蔬菜而變得健康。"
+  },
+  "unusedExplanation": {
+   "opt": "C",
+   "lead": "C 裡有 Mayberry、有 neighbors、有蔬菜、有健康——**全篇的關鍵詞它幾乎全中，是六個選項裡字面最像的一個。** 但五格都放不下：",
+   "rows": [
+    {
+     "blank": 31,
+     "want": "鄰居第一次出現，而且正在種菜",
+     "why": "C 的鄰居已經在吃菜了，菜還沒種"
+    },
+    {
+     "blank": 32,
+     "want": "從一個人跨到全國",
+     "why": "C 還停在 Mayberry 的鄰居"
+    },
+    {
+     "blank": 33,
+     "want": "一個驚人的數字",
+     "why": "C 沒有數字"
+    },
+    {
+     "blank": 34,
+     "want": "「金錢回報」到底有多少",
+     "why": "C 講的是健康，不是錢"
+    },
+    {
+     "blank": 35,
+     "want": "動機清單上缺的那一項",
+     "why": "C 講的是結果，不是動機"
+    }
+   ],
+   "summary": "**共同點：全篇問的是「為什麼開始種菜」，C 答的是「種菜以後怎麼樣了」。**",
+   "extra": [],
+   "takeaway": "關鍵詞重疊最多的那一個，常常正是多出來的。先問「這篇從頭到尾在回答什麼問題」，再看它答的是不是同一個問題。"
+  },
+  "paraLabels": [
+   "人物開場：一輩子沒碰過土的 77 歲退休老太太，今春下田了",
+   "由個案轉全國：不景氣中全美各年齡層都在自己種菜，並以數字佐證",
+   "動機盤點：省錢、食安、運動、紓壓，四類理由並列收尾"
+  ],
+  "marks": [
+   [
+    1,
+    "Across the country during this time of recession and economic anxiety, Americans of all ages are flocking into their gardens to grow their own food.",
+    "gradient"
+   ],
+   [
+    0,
+    "Yet",
+    "trans"
+   ],
+   [
+    "D",
+    "That is",
+    "trans"
+   ],
+   [
+    2,
+    "Others",
+    "trans"
+   ],
+   [
+    "F",
+    "Still others",
+    "trans"
+   ]
+  ],
+  "paras": [
+   "Helen Mayberry had never dug a hole in her life. She never even had her hands in dirt, not even once, she claimed. Yet this spring, the 77-year-old retiree from Galena, Illinois, was getting down and dirty. __31__ Each of her neighbors had paid $25 for a 10-by-10 plot in a community garden taking shape on a donated acre of land, in this community of about 3,300 in the northwestern tip of the state of Illinois.",
+   "__32__ Across the country during this time of recession and economic anxiety, Americans of all ages are flocking into their gardens to grow their own food. The numbers are impressive. __33__ And an estimated 21 percent of food gardeners will be first-timers like Mayberry.",
+   "When asked why they became enthusiastic about gardening, many of them cite the chilling effects of the recession, and the fact that gardening can reap financial rewards. __34__ Others voice concerns over the purity and safety of food and think planting in the backyard can ensure that only wholesome products wind up on the dinner table. __35__ And as gasoline prices rise again, garden work is seen as an economical vacation from stress. In a down economy, people turn the soil to save on food, and gain on taste."
+  ],
+  "zhTranslation": [
+   "Helen Mayberry 這輩子從沒挖過洞。她說自己連一次都沒把手伸進泥土裡過。然而今年春天，這位來自伊利諾州加利納、七十七歲的退休人士，卻蹲下身子弄得一身泥。__31__ 她的每一位鄰居都付了二十五美元，在一塊捐出來的一英畝土地上取得十呎見方的一小塊地；這座社區菜園正在成形，而這個社區位於伊利諾州西北端，人口約三千三百人。",
+   "__32__ 在這段經濟衰退、人心不安的時期，全美各個年齡層的人都湧進自家園子種食物。這些數字很可觀。__33__ 而且估計有百分之二十一的種菜人，會像 Mayberry 一樣是頭一回下田。",
+   "問他們為什麼變得熱衷園藝，很多人提到經濟衰退帶來的寒意，以及種菜確實能帶來金錢上的回報。__34__ 另一些人則是擔心食物乾不乾淨、安不安全，認為在自家後院種植可以確保端上餐桌的都是好東西。__35__ 而隨著油價再度上漲，園藝工作成了一種既省錢又能紓壓的度假方式。在景氣低迷的時候，人們翻動土壤，省下伙食費，也換來好味道。"
+  ],
+  "reading": [],
+  "flagNote": "本篇出自大考中心 100 學年度研究用試卷（卷二），屬研究性質施測，成績不採計入學。卷二各大題配分與題數與同年度指考完全一致（詞彙 10／綜合測驗 10／文意選填 10／篇章結構 10／閱讀測驗 32），所以歸在指考類。原卷篇章結構大題標示「10 分」，但題型說明誤植為「各題答對得 1 分」，和大題配分、指考體例（5 題各 2 分）不符，本題庫依大題配分算成每題 2 分。另，本篇與「99 課綱參考試卷（102 年施測）」篇章結構是同一組題目，選文有五處小幅改寫，屬官方整題回收，練習時可互相對照。",
+  "sourceFile": "100英文研究用試卷卷二.pdf；答案出自 100英文研究用試卷-參考答案.pdf",
+  "internalNote": {
+   "_說明": "命題端量測，站上不顯示，供試題評論／審稿使用",
+   "還原後句數": 17,
+   "選項字數區間": "10-21",
+   "選項字數全距": 11,
+   "選項長度變異係數": "26.0%"
+  }
+ }
+]

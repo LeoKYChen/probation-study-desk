@@ -1,0 +1,1993 @@
+{
+  "meta": {
+    "examType": "混合題",
+    "examTypeEn": "mixed-format questions",
+    "scope": "僅學測有此題型（111學年度起指考改制為分科測驗，分科測驗不考英文）",
+    "totalSessions": 8,
+    "totalCells": 33,
+    "cellNote": "計題單位為作答格而非題號：111學測與115參考試卷第47題各含(A)(B)兩格、111參考試卷第50題表格含兩格，故八場共33格。",
+    "duplicateNote": "111學測與115參考試卷為同一題組，選文與題幹完全相同，僅可接受答案範圍與作答說明標示不同。本站分場收錄（同 passage-completion 指考91年兩篇皆收、107參獨立收錄之做法：做法一致並向讀者說明）。總格數33含此4格重複，站上須明白告知學生兩場共用同一題組，並以兩場評分標準差異作為對照素材。",
+    "builtSessions": 8,
+    "pendingSessions": [],
+    "gradingTiers": {
+      "2": "完全正確（包括選字及字形變化）",
+      "1": "字形錯誤或拼字錯誤",
+      "0": "空白、答案錯誤或與答案無關者"
+    },
+    "gradingSource": "大考中心非選擇題參考答案與評分原則（111學測版）",
+    "gradingNote": "111參考試卷所附評分原則措辭略異（2分「答案正確，語意完整」／1分「答案不完整或不完全正確，或因拼字錯誤造成語意不清者」）。差異僅在措辭，級距相同，故仍沿用本 meta，不逐場覆寫。",
+    "sourceNotice": "試題著作權屬財團法人大學入學考試中心基金會所有，本站僅供非營利教學使用。"
+  },
+  "passages": [
+    {
+      "id": "MX110T",
+      "year": 110,
+      "examLabel": "試辦考試",
+      "sessionName": "110試辦",
+      "title": "獅心王理查的贖金",
+      "topic": "英王 Richard I 因旗幟之辱被奧地利公爵擄獲索贖，白銀流向奧地利",
+      "layout": "single",
+      "points": 10,
+      "itemCount": 4,
+      "intro": null,
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": null,
+          "speaker": null,
+          "text": "Richard I was the king of England from 1189 to 1199. He was known as “Richard the Lionheart” because he was a brave warrior and was said to be afraid of nothing. After ascending the throne, Richard led an army to join the Third Crusade to recover Christian holy sites from the Muslims. He fought side by side with the Duke of Austria, Leopold V, and together they conquered the powerful fortress of Acre in 1191. However, when Richard reached the top of the castle to claim victory, he displayed only his own banner and not that of Duke Leopold, who was absent at the time. This was an insult too much for the duke to bear, so he placed a price on Richard's head.\n\nRichard was aware of the danger awaiting him on his way back to England after the war. However, he had no other choice but to cross through Austria, a land controlled by his unfriendly former ally. Richard traveled in disguise but was recognized and caught before reaching Vienna. Duke Leopold held Richard at Dürnstein, a castle on the bank of the Danube River. After a few months, Richard was handed over to the German Emperor Heinrich VI. A ransom of 35 tons of silver was demanded by the duke and the emperor to release Richard. That was a huge amount for England to pay.\n\nIn 1194, the ransom was paid and Richard was finally released, though the effort it took to raise the money affected people throughout England. The silver was split between the German Emperor and the Austrian Duke. The Austrians used it to improve the city walls of Vienna and some small towns in the east. It was also used to establish the Austrian mint and make silver coins. Until the 1960s, small amounts of the silver stemming from the ransom could still be found in Austrian 10 Schilling coins."
+        }
+      ],
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "八場中唯一的單篇連續文章（其餘為雙欄對照或多則發言）。第50題選項為獨立 (A)–(F)，非取自本文區塊。"
+    },
+    {
+      "id": "MX111R",
+      "year": 111,
+      "examLabel": "參考試卷",
+      "sessionName": "111參考試卷",
+      "title": "超級食物真的超級嗎",
+      "topic": "以羽衣甘藍與奇亞籽為例，質疑超級食物的健康宣稱",
+      "layout": "single",
+      "points": 10,
+      "itemCount": 5,
+      "intro": null,
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": null,
+          "speaker": null,
+          "text": "It is an appealing idea that some foods are unhealthy, some healthy, and some super-healthy. About 61% of British people reported buying foods because they were supposed superfoods, according to a 2014 survey. But what are superfoods? Are they really so good for our health?\n\nCurrently, kale is one of the coolest superfoods around. Kale, a very common vegetable, has grown in northern Europe, and plenty of other places, for thousands of years. Its nutrition is similar to that of cabbage, broccoli, and cauliflower. Is kale significantly better than other vegetables? Fans of superfoods like to list the things that kale contains a lot of, such as iron and vitamins, and point out what those things do (make red blood cells). But that doesn't mean your body gets superpowers if you eat more than you need, especially if you're already getting enough from other sources. It is like trying to make your car go faster by putting in more petrol. No good evidence shows that eating plenty of fruit and vegetables with kale is any better than eating plenty of them without.\n\n❶Another example is chia seeds. ❷One hundred grams of chia seeds contain about 17g of Omega-3s, about eight times as much as salmon. ❸However, the Omega-3s in chia seeds are different from the ones in fish. ❹Our body turns the chia kind into the fish kind very inefficiently, meaning that you will actually absorb less. ❺Nor is it easy to eat a full 100g of chia seeds, which contain 486 Calories, almost as much as a Big Mac. ❻So fish is definitely a good source of Omega-3 fatty acids for you, which help to protect against cardiovascular disease. ❼But there is little evidence to suggest the health benefits from chia seeds.\n\nIndeed, good nutrition helps the body fight against diseases. The truth, however, is that nutrition is fabulously complex, different for everybody and mostly mysterious. We know that if you eat a balanced diet with plenty of fruit and vegetables and do regular exercise, you don't need any superfood. And if you don't, no superfood will save you."
+        }
+      ],
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "八場中唯一含單選題與表格填空者，也是唯一一場5格（47／48／49／50兩格）。第三段句首的❶–❼為原卷標記，第48題作答需用到，顯示時不可移除。末段 if you don't 於原卷為粗體，為第49題線索。"
+    },
+    {
+      "id": "MX111",
+      "year": 111,
+      "examLabel": "學測",
+      "sessionName": "111學測",
+      "title": "奧林匹克難民代表團的兩位選手",
+      "topic": "Yusra Mardini 與 Popole Misenga 的奮鬥故事",
+      "layout": "two-column",
+      "points": 10,
+      "itemCount": 4,
+      "intro": "To support refugees and people facing crises around the world, the International Olympic Committee created the Refugee Olympic Team. Refugee athletes have been invited to compete in the Olympic Games since 2016. Here are two refugee athletes and their stories.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "Yusra Mardini",
+          "speaker": null,
+          "text": "Yusra Mardini is a swimmer who grew up in the war-torn country of Syria. Due to the unstable political situation there, Yusra sometimes had to train in pools under roofs that had been blown open by bombings.\n\nIn 2015 when she was just a 17-year-old, her house was destroyed in the civil war, so she decided to flee her home country. She managed to reach Turkey through Lebanon. From Turkey, she boarded a small boat that held 20 people and set sail into the deep waters of the Aegean Sea. But 30 minutes later, the engine stopped and the boat began to sink. Yusra dove into the cold water, and—with the help of her sister and two men—swam and pushed the boat for over three hours to reach the Greek island of Lesbos. They saved everyone aboard.\n\nYusra eventually settled in Germany and has since worked to inspire others to pursue their dreams. Her incredible story and superior swimming skills won her the opportunity to participate in the Olympic Games. She was a member of the Refugee Olympic Team for both the 2016 Rio Games and 2021 Tokyo Games."
+        },
+        {
+          "label": "Popole Misenga",
+          "speaker": null,
+          "text": "Popole Misenga was born in the Democratic Republic of the Congo. When he was nine, the country's civil war claimed the life of his mother and left him homeless. Escaping from the war zone, he wandered alone for a week in a rainforest before being rescued and taken to a center for displaced children in the capital, Kinshasa.\n\nThere, Popole discovered judo, from which he gained strength in body and mind. “Judo helped me by giving me serenity, discipline, commitment—everything,” he said. He trained hard and became a professional judoka. However, each time he lost a competition, his coaches would lock him in a cage for days, feeding him only coffee and bread. Finally, when he was cruelly abused for not winning medals at the 2013 World Championships in Brazil, he decided to seek protection.\n\nPopole was granted asylum in 2014 by Brazilian government and later continued judo training at a youth facility. He made his Olympic debut at Rio 2016. He also represented the Refugee Olympic Team in 2021 Tokyo Games."
+        }
+      ],
+      "sameItemSetAs": "MX115R",
+      "zhTranslation": null,
+      "source": [
+        "https://www.readersdigest.co.uk/inspire/life/everything-you-need-to-know-about-the-refugee-olympics-team",
+        "https://thebridge.in/tokyo-2020/heartbreaking-inspiring-stories-refugee-team-22167",
+        "https://www.teenvogue.com/story/yusra-mardini-syrian-refugee-olympics-2016-rio",
+        "https://www.indiatoday.in/fyi/story/woman-yusra-mardini-rio-olympic-syrian-refugee-boat-333865-2016-08-07",
+        "https://olympics.com/en/news/popole-misenga-represents-refugees-everywhere-at-tokyo-2020",
+        "https://www.aljazeera.com/sports/2021/7/27/popole-misenga-refugee-olympic-team-tokyo",
+        "https://edition.cnn.com/2017/08/21/sport/popole-misenga-refugee-judoka-rio-judo-world-championships/index.html"
+      ],
+      "internalNote": "本場僅至第49題，無第50題。本題組後為115參考試卷沿用（見 MX115R），兩場可接受答案範圍不同。原標115參考試卷、2026-08-03一度更正為111學測，最終確認兩場皆有此題組，各自獨立收錄。"
+    },
+    {
+      "id": "MX112",
+      "year": 112,
+      "examLabel": "學測",
+      "sessionName": "112學測",
+      "title": "植物肉漢堡的網路討論",
+      "topic": "GreenBurger 植物肉漢堡的消費者評價",
+      "layout": "posts",
+      "points": 10,
+      "itemCount": 4,
+      "intro": "Even if you're not a vegetarian, there's a good chance you've heard of plant-based meat. These meat substitutes are often advertised as beneficial for the environment. But do the customers really like them?\n\nRead the following chatroom discussions about GreenBurger, a product using alternative-meat patties.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "A",
+          "speaker": "Olivia",
+          "text": "That's a firm NO! I tried one when I was a prep cook for Next Level Burgers…tasted awful, just like mashed peas gone to rot."
+        },
+        {
+          "label": "B",
+          "speaker": "Smith",
+          "text": "I haven't tried them. I just don't see the point. They are heavily processed with more calories and sodium than meat and are more expensive too! Unless you are a strict vegetarian and eschew meat for ethical reasons, meat is surely a better deal."
+        },
+        {
+          "label": "C",
+          "speaker": "Mika",
+          "text": "Not really. It tastes too much like actual meat. If I wanted to eat a dead cow, I would go for real burgers. Being vegan means I try to stick to plant food. But this is just not something that will ever interest me."
+        },
+        {
+          "label": "D",
+          "speaker": "Thomas",
+          "text": "GreenBurger just tastes “beany” to me, so I think that whatever form it comes in, it works better in recipes that would usually contain beans, such as in a rice bowl (as ground meat substitute). That being said, I'm definitely a carnivore and prefer meat, but I don't see anything wrong with choosing one of the fakey-fakey meaty things once in a while—just for a change."
+        },
+        {
+          "label": "E",
+          "speaker": "Rico",
+          "text": "I finally tried one last week. It didn't taste that bad, but I was surprised to find it had 40 more calories than the meat version! Isn't it supposed to be a healthy choice?"
+        },
+        {
+          "label": "F",
+          "speaker": "Linda",
+          "text": "I liked it fine. I did NOT like the price, though. Hopefully that will come down. I'm trying to eat less beef."
+        },
+        {
+          "label": "G",
+          "speaker": "Ablo",
+          "text": "Yes! My whole family does. We've been mostly vegan 90% of the time for the last 6 years and we cannot thank GreenBurger enough! Especially when a burger craving hits…a GreenBurger does the trick. I've tried all kinds of vegan “burgers,” and GreenBurgers are closer to what I'm looking for. In fact, I can have them every day—vegan or not!"
+        },
+        {
+          "label": "H",
+          "speaker": "Alexander",
+          "text": "Well, they taste good if you add plenty of spices and sauces. Good for you? No, not at all. They're highly processed and contain no vegetables. They also contain a very large amount of processed coconut oil, which is even worse than lard. It's a killer for sure if eaten regularly. So why risk your life?"
+        }
+      ],
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "選文出處未見於官方公布資料。(D) Thomas 一則的 fakey-fakey 為 PDF 斷行還原，須核對紙本原卷。"
+    },
+    {
+      "id": "MX113",
+      "year": 113,
+      "examLabel": "學測",
+      "sessionName": "113學測",
+      "title": "動物的群體行為：寒鴉與烏龜蟻",
+      "topic": "寒鴉（jackdaws）與烏龜蟻（turtle ants）面對干擾時的群體反應",
+      "layout": "two-column",
+      "points": 10,
+      "itemCount": 4,
+      "intro": "Many animals are known to live and move in groups to secure food and avoid predators. Over the years, people have been curious about the way they deal with disturbances arising from the environment, and the operations underlying their responses as a group. Studies on jackdaws and turtle ants may provide some insights into the issue.",
+      "introEmphasis": ["disturbances"],
+      "blocks": [
+        {
+          "label": "Jackdaws",
+          "speaker": null,
+          "text": "Jackdaws are birds in the crow family often found in the English countryside. They are highly social birds and often travel in large flocks. Normally, the birds enjoy a smooth flight together as a group when “commuting” between two locations, such as from their nesting site to their feeding ground. However, if a predator (such as a fox) is present, the pattern of their flight will change immediately. Instead of paying attention to all the other members and following the group pattern, they now focus only on the birds within a fixed distance from them, based on information coming from other members. By doing so, the flock members are able to keep a safe distance between themselves, and thus avoid crashing into each other while they flee from the predator."
+        },
+        {
+          "label": "Turtle ants",
+          "speaker": null,
+          "text": "Turtle ants often live in the cavities of dead branches in American forests. They have evolved search strategies to link their food source to their nests. They travel entirely along tree branches and vines, laying down trails of pheromone (a chemical substance) behind them so that other ants can follow. The trails connect the ants' colonies and sources of food, forming a sort of communication network. However, since these trails can easily be broken by wind or rain, the ants have to find new paths to get around the broken points and reestablish the network. Often they have to work together to explore alternative routes many times before they finally settle on the most efficient one. By working collectively, the ants are able to improve the efficiency of their network and adapt to their ever-changing environment."
+        }
+      ],
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "前言中 disturbances 於原卷以粗體標示，為第50題作答線索，顯示時須保留粗體。"
+    },
+    {
+      "id": "MX114",
+      "year": 114,
+      "examLabel": "學測",
+      "sessionName": "114學測",
+      "title": "動物園存廢的論壇討論",
+      "topic": "動物園的保育、教育功能與動物權爭議",
+      "layout": "posts",
+      "points": 10,
+      "itemCount": 4,
+      "intro": "A zoo is a place where animals in captivity are put on display for humans to see. While early zoos put emphasis on displaying as many unusual creatures as possible, most modern zoos now focus on conservation and education. Still, many animal rights activists believe the cost of confining animals outweighs the benefits. What are your opinions? Feel free to share your ideas on this forum.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "A",
+          "speaker": "Amy",
+          "text": "Personally I'm against zoos, though I do understand some of the arguments why they should exist. I don't agree with caging animals for our entertainment."
+        },
+        {
+          "label": "B",
+          "speaker": "Ben",
+          "text": "What gives humans the right to capture, confine, or breed other species? Even if an animal is endangered, does that justify restricting its freedom?"
+        },
+        {
+          "label": "C",
+          "speaker": "Cathy",
+          "text": "Zoos are a tradition, and a visit to a zoo is a wholesome family activity. Wildlife encounters are unforgettable experiences for children and adults alike."
+        },
+        {
+          "label": "D",
+          "speaker": "Daniel",
+          "text": "To me, a zoo can be a good place for endangered species which have difficulty finding suitable mates in the wild."
+        },
+        {
+          "label": "E",
+          "speaker": "Eddie",
+          "text": "My childhood memory of a polar bear pacing back and forth in a very small space in a zoo keeps haunting me. Is it a good idea to keep animals in sites not suited to them?"
+        },
+        {
+          "label": "F",
+          "speaker": "Frank",
+          "text": "Well, if zoos are an inevitability, zoo keepers must provide the best possible conditions for the animals that live in captivity—to say the least!"
+        },
+        {
+          "label": "G",
+          "speaker": "George",
+          "text": "Zoos have an educational aspect to it. It's easier to learn about an animal by seeing them in person."
+        },
+        {
+          "label": "H",
+          "speaker": "Henry",
+          "text": "Most animals in zoos are not endangered, nor are they being prepared for release into natural habitats. In fact, it is nearly impossible to release captive-bred animals."
+        },
+        {
+          "label": "I",
+          "speaker": "Irene",
+          "text": "Fostering empathy…By seeing an animal up close, the public could be encouraged to be more sensitive and compassionate to a species that is facing extinction in the wild."
+        },
+        {
+          "label": "J",
+          "speaker": "Jack",
+          "text": "In making a case for or against zoos, both sides argue that they're saving animals. Whether or not zoos benefit the animal community, they certainly do make money. Like it or not, zoos will continue to exist as long as there is a demand for them."
+        }
+      ],
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "本場發言者達十人（A–J），為目前八場中選項數最多者。"
+    },
+    {
+      "id": "MX115",
+      "year": 115,
+      "examLabel": "學測",
+      "sessionName": "115學測",
+      "title": "奇幻部落的六家特色小店",
+      "topic": "台灣東部原住民部落 Wonder Village 的特色商店與新舊融合",
+      "layout": "cards",
+      "points": 10,
+      "itemCount": 4,
+      "intro": "Located along the sparkling coastline of the Pacific Ocean, Wonder Village is a famous indigenous district in eastern Taiwan. The historic village exhibits the traditional way of life of the tribe there. However, it does not live in the past. As numerous new restaurants and shops have sprung up in recent years, it has become not only a cultural center but also a unique commercial zone. The following six shops are examples of some of the specialty stores there.",
+      "introEmphasis": [],
+      "hasFigure": true,
+      "figureNote": "原卷在前言和商店介紹之間附了一張街區地圖，標出六家店的相對位置。本題庫沒有重畫這張圖，不影響作答（第49題只要比對商店介紹的內容）。",
+      "blocks": [
+        {
+          "label": "A",
+          "speaker": "Oh Eco",
+          "text": "Greatly concerned about the presence of fake “green” products on the market, Alice Bao decided to open this shop. She sells environmentally friendly items such as reusable bottles, bamboo toothbrushes, and soy candles. “Here everyone looks out for each other and the neighborhood,” she says. “There's a sense of community in the area.”"
+        },
+        {
+          "label": "B",
+          "speaker": "After Work",
+          "text": "Neighborhood beer lovers rejoiced when After Work moved in last summer. “We knew we were coming into a really cool neighborhood,” says co-owner Joey Ma. Aside from handcrafted beer, the menu boasts hand-made gourmet pizzas such as the Yummy Duck n' Cheese, loaded with roast duck and, yes, creamy delicious cheese. A truly unique blend!"
+        },
+        {
+          "label": "C",
+          "speaker": "Aroma Paradise",
+          "text": "The fragrances at this scent shop are largely customized to meet the individual shopper's taste. Owner Joseph Tang says he knew the idea would work well in this unique district: “Each store is one of a kind in Wonder Village,” he states. “Aroma Paradise wants to create a paradise for those who are looking for fragrance made for their special preferences.”"
+        },
+        {
+          "label": "D",
+          "speaker": "Something Different",
+          "text": "Looking for something unique? Yes, at this tiny antique store you can always find, as promised, something different. Open since 1996, the store features traditional-style home accessories, ranging from cabinets and chairs to picture frames and decorative mirrors."
+        },
+        {
+          "label": "E",
+          "speaker": "Beyond World",
+          "text": "Owner Foting Mayaw opened this boutique in what he calls “the most fascinating area in Taiwan.” The shop focuses on selling various “good goods” that showcase the skill and spirit of neighborhood artisans. From fashion items to rice snacks, it carries products only from local makers and small businesses owned by indigenous people."
+        },
+        {
+          "label": "F",
+          "speaker": "The Pinery",
+          "text": "This restaurant got its name from the pineapple farms that once populated the area. Indeed, the fruit appears in some innovative menu items (e.g., pineapple jam on the burger). “Wonder Village is much more than just a tourist destination,” says owner Carol Hon. “It is a place where the old meets the new: diverse, unique, and always full of surprises.”"
+        }
+      ],
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "商店名稱同時作為第49題的選項標籤（A–F），與112、114的發言者標籤用法一致。"
+    },
+    {
+      "id": "MX115R",
+      "year": 111,
+      "examLabel": "參考試卷",
+      "sessionName": "115參考試卷",
+      "title": "奧林匹克難民代表團的兩位選手",
+      "topic": "Yusra Mardini 與 Popole Misenga 的奮鬥故事",
+      "layout": "two-column",
+      "points": 10,
+      "itemCount": 4,
+      "intro": "To support refugees and people facing crises around the world, the International Olympic Committee created the Refugee Olympic Team. Refugee athletes have been invited to compete in the Olympic Games since 2016. Here are two refugee athletes and their stories.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "Yusra Mardini",
+          "speaker": null,
+          "text": "Yusra Mardini is a swimmer who grew up in the war-torn country of Syria. Due to the unstable political situation there, Yusra sometimes had to train in pools under roofs that had been blown open by bombings.\n\nIn 2015 when she was just a 17-year-old, her house was destroyed in the civil war, so she decided to flee her home country. She managed to reach Turkey through Lebanon. From Turkey, she boarded a small boat that held 20 people and set sail into the deep waters of the Aegean Sea. But 30 minutes later, the engine stopped and the boat began to sink. Yusra dove into the cold water, and—with the help of her sister and two men—swam and pushed the boat for over three hours to reach the Greek island of Lesbos. They saved everyone aboard.\n\nYusra eventually settled in Germany and has since worked to inspire others to pursue their dreams. Her incredible story and superior swimming skills won her the opportunity to participate in the Olympic Games. She was a member of the Refugee Olympic Team for both the 2016 Rio Games and 2021 Tokyo Games."
+        },
+        {
+          "label": "Popole Misenga",
+          "speaker": null,
+          "text": "Popole Misenga was born in the Democratic Republic of the Congo. When he was nine, the country's civil war claimed the life of his mother and left him homeless. Escaping from the war zone, he wandered alone for a week in a rainforest before being rescued and taken to a center for displaced children in the capital, Kinshasa.\n\nThere, Popole discovered judo, from which he gained strength in body and mind. “Judo helped me by giving me serenity, discipline, commitment—everything,” he said. He trained hard and became a professional judoka. However, each time he lost a competition, his coaches would lock him in a cage for days, feeding him only coffee and bread. Finally, when he was cruelly abused for not winning medals at the 2013 World Championships in Brazil, he decided to seek protection.\n\nPopole was granted asylum in 2014 by Brazilian government and later continued judo training at a youth facility. He made his Olympic debut at Rio 2016. He also represented the Refugee Olympic Team in 2021 Tokyo Games."
+        }
+      ],
+      "textVerified": true,
+      "sameItemSetAs": "MX111",
+      "zhTranslation": null,
+      "source": [
+        "https://www.readersdigest.co.uk/inspire/life/everything-you-need-to-know-about-the-refugee-olympics-team",
+        "https://thebridge.in/tokyo-2020/heartbreaking-inspiring-stories-refugee-team-22167",
+        "https://www.teenvogue.com/story/yusra-mardini-syrian-refugee-olympics-2016-rio",
+        "https://www.indiatoday.in/fyi/story/woman-yusra-mardini-rio-olympic-syrian-refugee-boat-333865-2016-08-07",
+        "https://olympics.com/en/news/popole-misenga-represents-refugees-everywhere-at-tokyo-2020",
+        "https://www.aljazeera.com/sports/2021/7/27/popole-misenga-refugee-olympic-team-tokyo",
+        "https://edition.cnn.com/2017/08/21/sport/popole-misenga-refugee-judoka-rio-judo-world-championships/index.html"
+      ],
+      "internalNote": "本篇與111學測為同一題組：115參考試卷沿用111學測混合題（參考試卷說明載明部分試題修改自歷年試題或研究用試題）。2026-08-03 以115參原卷（第10頁）逐句比對，選文與三題題幹與111學測完全相同，未做任何文字更動；差異僅在第47題作答說明將「一個單詞（word）」加粗體底線，以及可接受答案範圍較窄。故分場收錄，不合併。"
+    },
+    {
+      "id": "MX111G",
+      "year": 111,
+      "examLabel": "考試說明示範題",
+      "sessionName": "111考試說明",
+      "title": "四則徵才廣告",
+      "topic": "行銷人員、維修技師、記者編輯、導遊四則徵才廣告，以及兩名應徵者的選擇",
+      "layout": "ads",
+      "points": 10,
+      "itemCount": 5,
+      "notCounted": true,
+      "intro": null,
+      "introEmphasis": [],
+      "instructionNote": "第 1 至 5 題為題組，請閱讀下列四則徵才廣告後，將答案畫記或填寫在答題卷之作答區。",
+      "demoNote": "這一組題目取自大考中心《學科能力測驗英文考科考試說明（111 學年度起適用）》，是考試說明用來示範混合題的「例 2」，標明出自 108 年研究用試卷。它不是正式考試，也不是參考試卷，所以不算進本題庫的八場、33 格、80 分。題號照考試說明寫第 1 至 5 題。參考答案和每一題的「說明」都取自考試說明，交卷後列在每一格下面。",
+      "blocks": [
+        {
+          "label": "A",
+          "speaker": "MARKETING PROFESSIONALS",
+          "parts": [
+            {
+              "t": "p",
+              "x": "A major U.S. corporation in the health and nutrition industry has announced the opening of its direct sales division in Taiwan."
+            },
+            {
+              "t": "p",
+              "x": "The company offers the most lucrative compensation plan in the industry and has paid over 3.5 billion NTD in commissions in just 6 years in the U.S. We are a group of top earners.",
+              "i": [
+                "3.5 billion NTD in commissions"
+              ]
+            },
+            {
+              "t": "p",
+              "x": "Applicants should meet the following requirements:"
+            },
+            {
+              "t": "li",
+              "x": "(1) Hold R.O.C. citizenship"
+            },
+            {
+              "t": "li",
+              "x": "(2) Have a university degree and experiences in marketing"
+            },
+            {
+              "t": "li",
+              "x": "(3) Be ambitious, energetic, and willing to learn"
+            },
+            {
+              "t": "p",
+              "x": "If you believe you have what it takes to develop this business, please call (02) 2742-6996."
+            }
+          ]
+        },
+        {
+          "label": "B",
+          "speaker": "Service Technician",
+          "parts": [
+            {
+              "t": "p",
+              "x": "A local company requires a technician to repair and maintain electronic medical equipment."
+            },
+            {
+              "t": "p",
+              "x": "Applicants should possess a university degree in electronics. The selected candidate will undergo a training program to be conducted by our manufacturer's experienced technical personnel."
+            },
+            {
+              "t": "p",
+              "x": "If you are interested in the position, send your resume to P.O. box 594, Kaohsiung, 820. Or contact Ms. Chang at (07) 294-5078 for an interview."
+            }
+          ]
+        },
+        {
+          "label": "C",
+          "speaker": "Wanted: Reporters & Editors",
+          "parts": [
+            {
+              "t": "sub",
+              "x": "Qualifications:"
+            },
+            {
+              "t": "li",
+              "x": "➢ Strong command of English"
+            },
+            {
+              "t": "li",
+              "x": "➢ Ability to speak and read Chinese a must"
+            },
+            {
+              "t": "li",
+              "x": "➢ University degree"
+            },
+            {
+              "t": "li",
+              "x": "➢ Journalism education and/or experience a plus"
+            },
+            {
+              "t": "li",
+              "x": "◆ Flexible work hours (30 hours per week)"
+            },
+            {
+              "t": "li",
+              "x": "◆ Good work environment and great colleagues"
+            },
+            {
+              "t": "li",
+              "x": "◆ Health insurance and annual leave provided"
+            },
+            {
+              "t": "p",
+              "x": "Send résumé and work samples, if available, to Ms. Alice Wu at The Asia Post, alicewu@asiapost.com.tw."
+            }
+          ]
+        },
+        {
+          "label": "D",
+          "speaker": "Southeastern Travel Services",
+          "parts": [
+            {
+              "t": "sub",
+              "x": "OPENINGS"
+            },
+            {
+              "t": "sub",
+              "x": "TOUR GUIDES"
+            },
+            {
+              "t": "sub",
+              "x": "Duties:"
+            },
+            {
+              "t": "li",
+              "x": "• Conduct tours for foreign visitors."
+            },
+            {
+              "t": "li",
+              "x": "• Assist with travel and transportation arrangements."
+            },
+            {
+              "t": "sub",
+              "x": "Qualifications:"
+            },
+            {
+              "t": "p",
+              "x": "Pleasant attitude. High school diploma. Good proficiency in English. Outgoing personality."
+            },
+            {
+              "t": "p",
+              "x": "Call (04) 2723-2172 after 3:00 P.M. Ask for Gary Hu."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "legacy": "LG88",
+        "note": "這四則廣告是拿 88 學年度學測簡答題的四則徵才廣告改的：第一則加上大學學歷要求，第二則從外商改成本地公司，第四則把「外表端正」改成「態度親切」，電話號碼也換了。88 學測那一場收在簡答題練習區，問法不一樣，可以接著做，對照兩份廣告改了哪些地方。"
+      },
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "2026-10-08 第三十七場依考試說明 PDF（大考中心 file_pool 0J270523662171227536，第 16、17 頁）逐字建檔。原卷廣告 D 的 OPENINGS 後面有一列裝飾用星號，省略（同 legacy.json 的 textPolicy）。廣告 A 的 3.5 billion NTD in commissions 原卷為斜體。表格右欄前兩項 Strong command of English language、Chinese speaking and reading ability a must 和廣告 C 的寫法不同，原卷如此，照錄。不計入八場、33 格、80 分（notCounted）。選項沿用其他場的寫法，以選文各則（A–D）為選項。"
+    },
+    {
+      "id": "MXA95",
+      "year": 95,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（一）",
+      "title": "二語學習的腦部差異",
+      "topic": "早學者與晚學者使用大腦語言區的差異",
+      "layout": "two-column",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "Do children and adults learn a second language in the same way? To answer this question, Joy Hirsch, a neuroscientist in New York, studied the brains of two groups of bilingual people with an instrument called an MRI (magnetic resonance imaging). People from both groups were placed inside the scanner, which allowed Hirsch to see which parts of the brain were getting more blood and were more active. They were then asked to think about what they had done the day before, first in one language and then the other. They could not speak out loud, because any movement would disrupt the scanning. Hirsch looked specifically at two language centers in the brain—Broca’s area, believed to control speech production, and Wernicke’s area, thought to process meaning.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "Early learners",
+          "speaker": null,
+          "text": "Those in the first group had picked up a second language in childhood. Whichever language they were thinking in, the same part of Wernicke’s area became active, and in Broca’s area, too, one region served both languages. Hirsch believes that when language is first being programmed in young children, their brains may mix all languages together in a single area. How a child is taught may also play a part: mothers teach a baby to speak by using methods such as touch, sound, and sight."
+        },
+        {
+          "label": "Late learners",
+          "speaker": null,
+          "text": "In Wernicke’s area, people who came to a second language later in life showed the same pattern as the first group: one part handled both languages. Broca’s area told another story. There, they used a special part for their second language, near the one activated for their native tongue. According to Hirsch, once the programming of language in the brain is complete, a different part of the brain must take over a new language. It is also possible that adults simply acquire languages differently, since learning a language by sitting in a high school class is hardly like learning it at home as a baby."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 95 學測閱讀測驗第 53 至 56 題（閱讀測驗站可以找到原題），照 113 學測混合題寒鴉、烏龜蟻那一組的兩欄版面和題型出題，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百五十九場建檔。改編自 95 學測閱讀測驗（g95p4），照 113 學測混合題版面；四個分身與 Gemini 盲測，答案一致。"
+    },
+    {
+      "id": "MXA103",
+      "year": 103,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（二）",
+      "title": "大規模線上開放課程（MOOCs）",
+      "topic": "MOOCs 的優點與疑慮：九則討論區貼文",
+      "layout": "posts",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "A MOOC, or massive open online course, aims at providing large-scale interactive participation and open access via the web. Besides videos, readings, and problem sets, MOOCs offer user forums that help build a community for students, professors, and teaching assistants. Ever since 2011, when Professor Sebastian Thrun of Stanford University opened his artificial intelligence course to anyone and 160,000 students in more than 190 countries signed up, MOOCs have been shaking up the world of higher education. Would you take a MOOC? Share your thoughts on this forum.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "A",
+          "speaker": "Alan",
+          "text": "Count me in! Courses taught by professors at some of the best universities in the world, and they don't cost a cent? For cash-strapped students like me, that's hard to beat."
+        },
+        {
+          "label": "B",
+          "speaker": "Bella",
+          "text": "A brain is not a computer. We are not blank hard drives waiting to be filled with data. What I remember most from school is the teachers who cared about me, not the facts they taught."
+        },
+        {
+          "label": "C",
+          "speaker": "Chris",
+          "text": "Free online courses are a great way to increase the enrollment of students who could never afford a big-name university. All you need is Internet access."
+        },
+        {
+          "label": "D",
+          "speaker": "Diana",
+          "text": "One course for 160,000 people? That's a one-size-fits-all model. Every learner is different, and no single course can meet everyone's needs."
+        },
+        {
+          "label": "E",
+          "speaker": "Ethan",
+          "text": "There's a lot of excitement and fear around MOOCs right now. I'm not ready to pick a side yet. Let's see where they are in ten years."
+        },
+        {
+          "label": "F",
+          "speaker": "Fiona",
+          "text": "College is more than lectures. You make friends, join clubs, and learn to live on your own. Online students will miss out on all of that."
+        },
+        {
+          "label": "G",
+          "speaker": "Gary",
+          "text": "People say online learning is lonely, but the course I took had a busy forum. Students and teaching assistants answered each other's questions within minutes."
+        },
+        {
+          "label": "H",
+          "speaker": "Helen",
+          "text": "Watching videos is no substitute for asking a professor for help face to face. Real learning happens when you can raise your hand and get an answer right away."
+        },
+        {
+          "label": "I",
+          "speaker": "Ivan",
+          "text": "Learning from top professors without leaving home sounds wonderful on paper. But how many people actually finish? With no one keeping an eye on them, many students will simply drop out."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 103 學測閱讀測驗第 49 至 52 題（閱讀測驗站可以找到原題），照 114 學測混合題動物園論壇那一組的貼文版面和題型出題，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百五十九場建檔。改編自 103 學測閱讀測驗（g103p3），照 114 學測混合題版面；九則貼文為本題庫依原文論點撰寫。"
+    },
+    {
+      "id": "MXA-z108p3",
+      "year": 108,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（三）",
+      "title": "語言與嗅覺描述的文化差異",
+      "topic": "英語使用者與雨林狩獵採集族群（Maniq、Jahai）描述氣味的差異",
+      "layout": "two-column",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "Is talking about smell equally hard in every language? Researchers who compared English with Maniq and Jahai, two languages spoken by neighboring groups of hunter-gatherers, found a striking contrast. Interestingly, the contrast seems to have very little to do with what the human nose can actually do. The researchers suggest instead that people’s surroundings may play a significant role.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "English speakers",
+          "speaker": null,
+          "text": "In English, there is no straightforward way to talk about smell. Because the language lacks dedicated odor terminology, its speakers are often forced to fall back on odor sources such as “flowery” and “vanilla,” or on metaphors like “sweet” and “oriental,” in their descriptions of smell. Their noses are not to blame. According to a recent study, English speakers are capable of discriminating more than a trillion different odors. The gap, then, lies between what they can sense and what they can say. Many of them inhabit the post-industrial West and do not depend on smells to survive in their environment. This, the researchers believe, may explain why their language offers so few words for odors."
+        },
+        {
+          "label": "Rainforest hunter-gatherers",
+          "speaker": null,
+          "text": "The Maniq, a group of hunter-gatherers in southern Thailand, can describe smells using at least fifteen different terms. These words express nothing but smells and are not applicable across other sensory domains. The Jahai, a neighboring population, likewise have a dozen words for various odors. Both groups live in tropical rainforests that remain largely untouched by humans, so they are surrounded by smells at all times. To survive there, they evaluate their surroundings through their noses. Smell helps them identify animals worth hunting and recognize objects or events, such as spoiled food, that can pose a danger."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 108 指考閱讀測驗第 44 至 47 題（閱讀測驗站可以找到原題），照 113 學測混合題寒鴉、烏龜蟻那一組的兩欄版面和題型出題，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百五十九場建檔。改編自 z108p3；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-z101p1",
+      "year": 101,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（四）",
+      "title": "幽默的兩面：貶低式幽默與自貶式幽默",
+      "topic": "貶低式幽默（put-down humor）與自貶式幽默（hate-me humor）的對照",
+      "layout": "two-column",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "A good sense of humor is widely admired, and people who have one are often thought of as happy and socially confident. Yet humor is a double-edged sword. It can forge stronger relationships and help us cope with life, but it can also eat away at self-esteem and antagonize those around us. Its friendly side shows up in bonding humor. People who use bonding humor crack jokes and generally lighten the mood. They are perceived as being skilled at reducing the tension in uncomfortable situations. Their humor often draws on experiences that everyone in the group has shared, and sometimes they even laugh off their own misfortunes. The basic message behind their jokes is this: We’re all alike, the same things strike us as funny, and we’re all in this together. Other types of humor, however, show that being funny is not necessarily a sign of good social skills or well-being; in some cases, humor may actually take a toll on the way we relate to others.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "Put-Down Humor",
+          "speaker": null,
+          "text": "Put-down humor is an aggressive style that relies on teasing to criticize and manipulate others. Aimed at politicians, as it often is, it can be hilarious and largely harmless. In everyday life, however, it can do real damage. Picture someone telling a group of friends an embarrassing story about another friend. When challenged, the teaser may claim to be “just kidding” and thereby dodge responsibility. Though some people regard such humor as socially acceptable, it can wound the person on the receiving end and strain personal relationships."
+        },
+        {
+          "label": "Hate-Me Humor",
+          "speaker": null,
+          "text": "In hate-me humor, the joker becomes the butt of the joke for the amusement of others. Comedians John Belushi and Chris Farley relied on this style, and both suffered for their success in show business. In small doses, such self-mockery can be endearing. Routinely offering oneself up to be humiliated, though, erodes self-respect and fosters depression and anxiety."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 101 指考閱讀測驗第 36 至 39 題（閱讀測驗站可以找到原題），照 113 學測混合題寒鴉、烏龜蟻那一組的兩欄版面和題型出題，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百五十九場建檔。改編自 z101p1；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-g91bp4",
+      "year": 91,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（五）",
+      "title": "數位相機與底片相機",
+      "topic": "數位相機與傳統底片相機的優缺點對照",
+      "layout": "two-column",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "“I have a regular film camera, but I just don’t use it much,” said Ms. Lowery, a 23-year-old computer programmer. In many consumers’ minds, digital cameras have risen from mere gadgets to must-have items, and salespeople expect them to be popular gifts this holiday season. How do these newcomers compare with the film cameras most families still own?",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "Digital cameras",
+          "speaker": null,
+          "text": "Shoppers can choose from plenty of models, from simple $200 point-and-shoot snappers to $1,000 wonders loaded with every feature an advanced amateur could want. Beyond showing each shot instantly on a small color screen, these cameras can hold dozens, sometimes hundreds, of images, which can easily be printed at home or sent by e-mail. Going digital does involve extra costs—memory cards for storage and special paper for printing—yet many buyers have been willing to make the switch. “The prices have come down and the quality has gone up,” said Yossi Fogel at B & H Photo in New York. With a large memory card, he added, you can shoot and shoot and never worry about changing a roll. Households with digital cameras now make up only about 10 percent of the total, but that figure is certain to grow as manufacturers introduce more models whose quality matches that of film cameras. Soon, even professionals will use them."
+        },
+        {
+          "label": "Film cameras",
+          "speaker": null,
+          "text": "About 90 percent of American households still rely on film cameras, though film has its drawbacks. When Ms. Lowery got married last year, many of her pictures didn’t come out right, and the money she had spent on film for those shots was wasted. Film is also a burden on the road. “Who wants to travel with 30 rolls of film?” Fogel asked. A roll holds only so many pictures, and once it is used up, the photographer has to stop and put in a new one. “How many times have you missed a picture because you failed to reload the film?”"
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 91 學測補考閱讀測驗第 51 至 55 題（閱讀測驗站可以找到原題），照 113 學測混合題寒鴉、烏龜蟻那一組的兩欄版面和題型出題，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百五十九場建檔。改編自 g91bp4；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-z100p2",
+      "year": 100,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（六）",
+      "title": "動物實驗的論壇討論",
+      "topic": "動物實驗的必要性與倫理爭議：九則討論區貼文",
+      "layout": "posts",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "Each year, some 50 to 100 million animals are used in research worldwide, with mice and rats the most common. Europe, which already has the world's most restrictive laws on animal experiments, is now reforming them to bring down the number of animals in labs. Supporters call such testing vital to medicine; critics point to the stress and pain it causes. Where do you stand? Share your views on this forum.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "A",
+          "speaker": "Amanda",
+          "text": "Think how much medicine has learned from lab animals. Experiments on them have taught humanity a great deal and saved countless lives. As far as I'm concerned, the research has to go on."
+        },
+        {
+          "label": "B",
+          "speaker": "Brian",
+          "text": "Making animals go through painful procedures just to test a new drug? In an ideal world, nobody would do that, and I say we start behaving as if we lived in one."
+        },
+        {
+          "label": "C",
+          "speaker": "Carol",
+          "text": "The official figures are misleading. America reports only 1.1 million lab animals a year, but mice and rats aren't even counted there, despite being the animals labs rely on most."
+        },
+        {
+          "label": "D",
+          "speaker": "Derek",
+          "text": "I hate to think of lab mice in pain. Even so, there are still vast gaps in what doctors know, and until those gaps are bridged, we can't do without animal testing."
+        },
+        {
+          "label": "E",
+          "speaker": "Emma",
+          "text": "Researchers tend to publish only successful experiments. Results that don't fit the hypothesis get quietly shelved, so other labs end up repeating the same failed tests, and more animals die for nothing."
+        },
+        {
+          "label": "F",
+          "speaker": "Felix",
+          "text": "Sure, lab animals have helped scientists make some breakthroughs. Then again, every study costs a fortune and drags on for years. That money and time could do far more good somewhere else."
+        },
+        {
+          "label": "G",
+          "speaker": "Grace",
+          "text": "There's no question that animal research must continue. What Europe is doing makes sense, though: use as few animals as possible and turn to human tissue or computer models instead."
+        },
+        {
+          "label": "H",
+          "speaker": "Howard",
+          "text": "Europe already regulates animal research more closely than anywhere else, yet its scientists still use about 12 million animals a year. If even those rules can't prevent that, maybe it's time to end these experiments altogether."
+        },
+        {
+          "label": "I",
+          "speaker": "Iris",
+          "text": "Animal testing may well save lives, but before I take a side, I want honest numbers. Japan and China keep even less complete records than America, so nobody knows the real total."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 100 指考閱讀測驗第 40 至 43 題（閱讀測驗站可以找到原題），照 114 學測混合題動物園論壇那一組的貼文版面和題型出題，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百五十九場建檔。改編自 z100p2；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-g110tp3",
+      "year": 110,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（七）",
+      "title": "印度的單一時區之爭",
+      "topic": "維持單一時區還是改制：九則討論區貼文",
+      "layout": "posts",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "For decades, India's time zone has been a hotly debated issue. When time zones were officially set up in 1884, the country used two of them: Calcutta Time and Bombay Time. Indian Standard Time (IST) arrived in 1906, but the two older clocks stayed in use until 1948 and 1955 respectively. Today the whole country, 3,000 km wide, still lives by one clock. Should India stay with one time zone? Share your views on this forum.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "A",
+          "speaker": "Aarav",
+          "text": "One nation, one clock. Our single time zone may be a legacy of British rule, but it is also a sign of our unity. Splitting it would send the wrong message."
+        },
+        {
+          "label": "B",
+          "speaker": "Bina",
+          "text": "Here in the Northeast, the sun can rise as early as 4 a.m. in summer and set by 4 p.m. in winter. Hours of precious daylight slip away outside office hours."
+        },
+        {
+          "label": "C",
+          "speaker": "Chetan",
+          "text": "Think of all the trains and flights crossing this country every hour. Schedule them on two different clocks, and one mix-up over departure times could cost lives. Safety comes first."
+        },
+        {
+          "label": "D",
+          "speaker": "Divya",
+          "text": "When the sun sets before the workday ends, offices keep their lights on for hours and electricity consumption soars. Productivity suffers, too. A second time zone is long overdue."
+        },
+        {
+          "label": "E",
+          "speaker": "Esha",
+          "text": "I'm proud of what our shared clock means to us. Still, pride won't get kids to bed on time. Out west, where the sun sets late, children sleep less, and their schooling pays the price."
+        },
+        {
+          "label": "F",
+          "speaker": "Farhan",
+          "text": "Sure, the system has its flaws, and I've heard the Northeast's complaints. But picture resetting your watch every time you cross into another state. Two clocks would only breed confusion."
+        },
+        {
+          "label": "G",
+          "speaker": "Gita",
+          "text": "Our single clock is failing poor kids. Studies show that sleep deprivation from late sunsets hits them hardest, since their homes are often noisy and lack window shades or proper beds."
+        },
+        {
+          "label": "H",
+          "speaker": "Harish",
+          "text": "The government has turned down every request for more time zones, citing railway and flight safety. I wonder whether it will ever change its mind."
+        },
+        {
+          "label": "I",
+          "speaker": "Isha",
+          "text": "A second time zone would give the east back its lost daylight. Then again, rewriting every train and airline timetable sounds like a nightmare. Honestly, I'm still on the fence."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 110 年試辦考試閱讀測驗第 43 至 46 題（閱讀測驗站可以找到原題），照 114 學測混合題動物園論壇那一組的貼文版面和題型出題，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百五十九場建檔。改編自 g110tp3；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-z107p4",
+      "year": 107,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（八）",
+      "title": "斯瓦巴全球種子庫的爭議",
+      "topic": "種子庫保存作物多樣性的優點與疑慮：九則討論區貼文",
+      "layout": "posts",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "Built beneath a mountain on an Arctic island halfway between Norway and the North Pole, the Svalbard Global Seed Vault is meant to shield the world's crop diversity from catastrophe. Its seed samples come from almost every country on Earth. Yet a growing body of opinion holds that the world's faith in the Vault is misplaced. Is it really the best way to secure our food supply? Share your views on this forum.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "A",
+          "speaker": "Alice",
+          "text": "Seeds of the crops we depend on, backed up in one place under solid rock? That's exactly what we need. When farmers and scientists search for genes to improve today's crops, they'll know just where to look."
+        },
+        {
+          "label": "B",
+          "speaker": "Brian",
+          "text": "You can't box up diversity and store it in a single container, no matter how thick the walls are. Crops never stand still, and pests and diseases are always adapting."
+        },
+        {
+          "label": "C",
+          "speaker": "Carol",
+          "text": "The Vault isn't just storage. It's meant to help breed new varieties that can handle climate change and feed a rising population. I'd call that a smart investment."
+        },
+        {
+          "label": "D",
+          "speaker": "Derek",
+          "text": "According to new research, as much as 75 percent of global crop diversity lies outside the big seed banks. It's held by some of the world's most marginal farmers, not by institutions."
+        },
+        {
+          "label": "E",
+          "speaker": "Emma",
+          "text": "Locked deep under an Arctic mountain, those seeds are about as secure as seeds can be. Still, global warming will bring challenges that remain unforeseen, and no vault can prepare crops for what nobody sees coming."
+        },
+        {
+          "label": "F",
+          "speaker": "Fiona",
+          "text": "A seed bank can neither make up for the practical knowledge of farmers on the ground nor compete with their ingenuity. Seeds alone are not enough."
+        },
+        {
+          "label": "G",
+          "speaker": "Gavin",
+          "text": "This whole debate comes down to one question: should we work with communities in the fields or with institutions? Funding is so hard to find that we can't do both."
+        },
+        {
+          "label": "H",
+          "speaker": "Henry",
+          "text": "Sure, one vault won't solve every problem farmers face. But it already holds more than 860,000 samples, and if catastrophe strikes, that backup could make all the difference."
+        },
+        {
+          "label": "I",
+          "speaker": "Ivy",
+          "text": "The idea behind the Vault is a noble one. Yet fifty or a hundred years from now, will a single isolated vault really help farmers cope with climate change? I'm not convinced."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 107 指考閱讀測驗第 48 至 51 題（閱讀測驗站可以找到原題），照 114 學測混合題動物園論壇那一組的貼文版面和題型出題，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百五十九場建檔。改編自 z107p4；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-g99p3",
+      "year": 99,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（九）",
+      "title": "房屋交換的論壇討論",
+      "topic": "換屋旅行的好處與失竊、清潔等疑慮：八則討論區貼文",
+      "layout": "posts",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "No budget for a vacation? More and more travelers are trying home exchanges—swapping houses with strangers. Several websites now match up swappers, and HomeExchanges bills itself as the world's largest home exchange club, with some 28,000 listings and a 30% jump in membership this year. For an annual fee of usually less than US$100, members can browse apartments, villas, suburban homes, and farms around the world. Exchange sites suggest an agreement spelling out who shoulders which responsibilities if a problem arises. Would you give it a try? Share your thoughts on this forum.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "A",
+          "speaker": "Alice",
+          "text": "A free place to stay abroad? Sign me up! If the other family agrees to swap cars as well, I can skip the rental counter, too. That's a vacation my wallet can handle."
+        },
+        {
+          "label": "B",
+          "speaker": "Brian",
+          "text": "Hand my house keys to someone I've never met? No way. What if they wreck the furniture or walk off with my laptop? A cheap trip isn't worth that kind of gamble."
+        },
+        {
+          "label": "C",
+          "speaker": "Chloe",
+          "text": "Villas, farms, apartments all over the globe—the choices sound like a dream. Then I picture coming home to a sticky kitchen floor and a sink full of dirty dishes. My standards are strict, so I'll pass."
+        },
+        {
+          "label": "D",
+          "speaker": "David",
+          "text": "Relax. Nobody is going to fly across an ocean or drive 600 miles just to steal your TV. Besides, while your guests are sleeping in your bed, you're sleeping in theirs. Both sides have every reason to behave."
+        },
+        {
+          "label": "E",
+          "speaker": "Emma",
+          "text": "Curious how it works? Members join for a yearly fee, browse the listings, and make first contact by e-mail. Phone calls usually follow, and most pairs discuss the details at length."
+        },
+        {
+          "label": "F",
+          "speaker": "Frank",
+          "text": "That signed agreement the sites suggest? I suppose it's some comfort. Still, would it hold up in court? Comfort is not protection, so I'm sticking with hotels."
+        },
+        {
+          "label": "G",
+          "speaker": "Grace",
+          "text": "Swapping homes is hardly a new idea. The group Intervac has been arranging exchanges since 1953. What has changed is that more and more of the matching now happens online."
+        },
+        {
+          "label": "H",
+          "speaker": "Hannah",
+          "text": "Our biggest complaint from last summer's swap? The kitchen we came back to was far from sparkling. Annoying, yes. But will it sour me on future exchanges? Not a chance—we've already booked the next one."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 99 學測閱讀測驗第 49 至 52 題（閱讀測驗站可以找到原題），照 114 學測混合題動物園論壇那一組的貼文版面和題型出題，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百五十九場建檔。改編自 g99p3；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-g92p3",
+      "year": 92,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（十）",
+      "title": "醫學的三個分支",
+      "topic": "科學醫學、民俗醫學與信仰治療：三張卡片介紹三種治病的方式",
+      "layout": "cards",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "How have people tried to cure the sick over the centuries? Broadly speaking, there are three branches of medicine, and each one goes about healing in its own way.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "1",
+          "speaker": "Scientific Medicine",
+          "text": "Also known as “doctor medicine,” this branch is believed to date from the 4th century BC. Doctors in this tradition begin by observing sicknesses closely and searching for logical patterns. From there, they gain an understanding of the human body and decide which treatments are likely to help. Although this approach achieves remarkable results today, it probably did not cure many patients in the ancient world."
+        },
+        {
+          "label": "2",
+          "speaker": "Folk Medicine",
+          "text": "Also called “natural cures,” folk medicine is practiced by people with little formal schooling, who treat sicknesses with various herbs. Like trained doctors, these folk healers rely on observation and logic, but they are not so aware of it. They simply try one remedy after another until they hit on something that seems effective, and from then on they stick with it. Folk medicine was already flourishing long before scientific medicine came along, and in ancient times it cured more patients than its scientific rival did."
+        },
+        {
+          "label": "3",
+          "speaker": "Faith Healing",
+          "text": "Faith healing takes many forms. The cure may be as simple as touching a holy man and being healed immediately. At other times, a magician may make you a magic charm or say a spell over you. Some religious groups also run special healing shrines, a kind of “health spa” for the sick. There, visitors rest, get plenty of sleep, eat healthy food, drink water instead of wine, and exercise in various ways. They also talk with priests and pray to the gods. If you are feeling depressed or have been pushing yourself too hard, a stay at one of these places may be just what you need to feel better."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 92 學測閱讀測驗第 48 至 51 題（閱讀測驗站可以找到原題），照 115 學測混合題奇幻部落那一組的卡片版面出題，題型比照 113 學測，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百五十九場建檔。改編自 g92p3；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-g109p3",
+      "year": 109,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（十一）",
+      "title": "橄欖油的等級與保存",
+      "topic": "特級初榨、初榨、精製三種橄欖油的等級差異與保存須知",
+      "layout": "cards",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "Probably the most widely used oil in the kitchen, olive oil is made by crushing olives with stone or steel blades to release their oil. Not every bottle, however, offers the same quality. For years, olive oil tasters have used descriptive terms such as “pure” and “light” to evaluate the quality of olive oil. Now the International Olive Council (IOC) is seeking input on test methods, hoping to make the testing process more transparent and its results more accurate. It has also proposed redefining the term “olive oil” so that virgin and pure olive oil can be clearly told apart. Below is a guide to the three main grades, followed by some advice on storage.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "1",
+          "speaker": "Extra Virgin Olive Oil",
+          "text": "The finest grade comes from the first pressing of the olives and has a very low acidity rate, under 1%. To qualify as “extra virgin,” the oil must pass an official laboratory test as well as a sensory evaluation by a trained tasting panel. It has to be free from impurities. At the same time, it should exhibit some fruitiness, a pleasant bitter flavor, and a peppery sensation in the mouth."
+        },
+        {
+          "label": "2",
+          "speaker": "Virgin Olive Oil",
+          "text": "Ranked second, virgin olive oil is also made from the first pressing. Its acidity, however, is slightly higher, though still below 2%."
+        },
+        {
+          "label": "3",
+          "speaker": "Pure Olive Oil",
+          "text": "The cheapest of the three, pure olive oil is refined to strip away its impurities and then blended to improve its flavor. It is recommended for all-purpose cooking."
+        },
+        {
+          "label": "4",
+          "speaker": "Storage Tips",
+          "text": "Packaging and storage have an impact on quality, too. Olive oil spoils quickly when exposed to direct sunlight, so store it in the dark at 16-18°C. Moisture and oxygen speed up oxidation and thus shorten its shelf life. Plastic containers are a poor choice. They seldom provide adequate protection from light, heat, or moisture, and tiny particles in the plastic can leak into the oil, lowering its quality even further."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 109 學測閱讀測驗第 49 至 52 題（閱讀測驗站可以找到原題），照 115 學測混合題奇幻部落那一組的卡片版面出題，題型比照 113 學測，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百五十九場建檔。改編自 g109p3；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-g95p2",
+      "year": 95,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（十二）",
+      "title": "茶的歷史與三種茶",
+      "topic": "茶的傳播歷史，以及紅茶、綠茶、烏龍茶的製作方式",
+      "layout": "cards",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "Tea was the first brewed beverage. The Chinese emperor Shen Nung introduced the drink in 2737 B.C., and by A.D. 780, the writer Lu Yu could report that there were “tens of thousands” of teas. Around A.D. 800, Chinese tea arrived in Japan. Europe had to wait until the early 1600s, when trade opened up between Europe and the Far East; in those days, China was the main supplier of tea to the world. The picture changed in 1834, when tea cultivation began in India. From there, it spread to Sri Lanka, Thailand, Burma, and other parts of Southeast Asia, and today Java, South Africa, South America, and areas of the Caucasus produce tea as well. Tea is enjoyed worldwide as a refreshing and stimulating drink, and because so many people continue to drink its many varieties, it will probably remain the world’s most popular drink. The cards below introduce three main kinds.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "1",
+          "speaker": "Black Tea",
+          "text": "Most of the tea sold on the international market is black. Young leaves and leaf buds are picked on a clear, sunny day and allowed to dry in the sun for about an hour. After being lightly rolled, they spend some time in a fermentation room, where they take on their scent and red color. Next, they are heated several times. Finally, the leaves are dried in a basket over a charcoal fire."
+        },
+        {
+          "label": "2",
+          "speaker": "Green Tea",
+          "text": "Compared with black tea, green tea follows a far shorter process. Its leaves are heated in steam, rolled, and then dried."
+        },
+        {
+          "label": "3",
+          "speaker": "Oolong Tea",
+          "text": "Oolong tea goes through a process similar to that of black tea, but without the fermentation time."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 95 學測閱讀測驗第 45 至 48 題（閱讀測驗站可以找到原題），照 115 學測混合題奇幻部落那一組的卡片版面出題，題型比照 113 學測，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百五十九場建檔。改編自 g95p2；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-g114p2",
+      "year": 114,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（十三）",
+      "title": "恐怖電影的利弊",
+      "topic": "看恐怖電影可能帶來的好處與風險",
+      "layout": "two-column",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "With their zombies and serial killers, horror movies are too frightening to be fun for some people. Many others, though, enjoy a good fear spectacle and will line up to see the latest scary film. Given such varied tastes, new studies have begun to untangle the benefits and risks of these movies.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "Possible benefits",
+          "speaker": null,
+          "text": "One benefit centers on the idea of so-called “safe fear.” Viewers face the terror from the comfort of their own couch or a theater seat, far from any real danger. In such a controlled setting, these films may actually lessen the negative impact of fear on viewers and help them become tougher. Moreover, as people get absorbed in the story, they tend to see events from the characters’ perspective and unconsciously rehearse the plot. Researchers believe that this is how viewers pick up tips on handling real-world threats. Studies also suggest that the thrill and excitement of a scary film can be therapeutic, allowing people to release bottled-up emotions and feel a sense of relief once the movie is over. This probably explains why horror and pandemic thrillers were the most-watched films on digital movie apps during the COVID-19 pandemic."
+        },
+        {
+          "label": "Possible risks",
+          "speaker": null,
+          "text": "Researchers have also found, however, that horror movies can do harm to some viewers. People who are prone to anxiety may panic after watching a thriller. For those who have been through unpleasant experiences, the themes and images on screen may trigger trauma and make their symptoms worse. Sleep can suffer as well: the fear and anxiety that linger after the film may keep people awake all night, leaving them tired and irritable the next day. Specialists also warn that frightening films can be harmful to children. Kids under 14 who watch horror movies have a greater chance of developing anxiety in adulthood. Worse still, exposure to graphic violence and bloodshed can make them less sensitive to real-life violence and more accepting of aggression."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 114 學測閱讀測驗第 39 至 42 題（閱讀測驗站可以找到原題），照 113 學測混合題寒鴉、烏龜蟻那一組的兩欄版面和題型出題，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百六十場建檔。改編自 g114p2；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-g112p2",
+      "year": 112,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（十四）",
+      "title": "大象與茶園",
+      "topic": "印度阿薩姆茶園裡的亞洲象與茶農：排水溝的危險與大象友善茶認證",
+      "layout": "two-column",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "When you sip your morning tea, you are probably not aware that those leaves can mean injury, or even death, for the Asian elephants that roam India’s tea gardens. In the state of Assam, the animals and the people who grow tea share the same land, and the two sides need it for very different reasons.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "Elephants",
+          "speaker": null,
+          "text": "Because they use tea plantations as landmarks when finding their way through forests, the elephants almost inevitably have to cross the farms. Pregnant females, moreover, often treat tea-growing areas as safe shelters for giving birth, since fewer humans are around. Yet the farms hide a grave danger: the drainage trenches that run through them. Calves, still unused to rough ground, can all too easily tumble into one and get hurt, and once injured, they may be unable to climb back out. If a mother tries to dig her baby free, the thick mud can smother them both. Elephants are also known to resist leaving their sick or dying behind, so a whole herd may linger beside a trench holding a trapped calf for hours, unwilling to move on until all hope is gone."
+        },
+        {
+          "label": "The tea business",
+          "speaker": null,
+          "text": "Tea farms in Assam keep multiplying, eating into the elephants’ habitats and threatening their numbers. Since much of the forest land used for tea there is flat, growers must dig drainage trenches so that water does not accumulate and damage the shrubs. Is there a way for elephants to coexist with this prosperous business? An organization called Elephant Friendly Tea has taken the initiative to find one. It has set up a certification program to reward growers who take precautions to protect the animals, and it urges consumers to buy from such brands. So far, only smaller brands have earned the label, but the idea is catching on. The group believes that once people learn more about the risk tea poses to these endangered animals, they may be more motivated to choose elephant-friendly tea."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 112 學測閱讀測驗第 39 至 42 題（閱讀測驗站可以找到原題），照 113 學測混合題寒鴉、烏龜蟻那一組的兩欄版面和題型出題，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百六十場建檔。改編自 g112p2；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-g97p4",
+      "year": 97,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（十五）",
+      "title": "疼痛的預期與感受",
+      "topic": "預期疼痛和真的感受到疼痛時，大腦的反應",
+      "layout": "two-column",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "If you touch a hot stove, you know it’s going to hurt. Yet if you convince yourself beforehand that the pain won’t be so bad, you might not suffer as much. A recent study sheds light on this. Researchers worked with 10 volunteers, ages 24 to 46, each wearing a device that gave out 20-second-long pulses of heat to the right leg. The heat came at three levels, producing mild, moderate, or severe pain. During training, the volunteers would hear a tone, sit through a period of silence, and then feel a pulse. A day or two later, the real experiment began.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "Expecting pain",
+          "speaker": null,
+          "text": "Over the course of training, the volunteers learned to associate the length of the silent pause with the intensity of the upcoming heat pulse: the longer the wait, the stronger the pulse and the more severe the pain. Simply by timing the silence, they could tell whether mild, moderate, or severe pain was on its way. In the real experiment, the researchers found that as the volunteers expected higher levels of pain, the parts of the brain involved in learning, memory, emotion, and touch grew more active."
+        },
+        {
+          "label": "Feeling pain",
+          "speaker": null,
+          "text": "When the heat actually hit during the experiment, much the same regions came to life. In other words, the part of the brain that reacts to severe pain is largely the same part that reacts to the mere expectation of it. What a person anticipates can even shape how much a pulse seems to hurt. When volunteers expected only mild or moderate pain but then received severe pain, they reported feeling 28 percent less pain than when they expected severe pain and actually got it. The study thus emphasizes that pain has both physical and psychological elements. Understanding how it works in the mind and brain could eventually give doctors tools for helping patients cope with painful medical treatments."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 97 學測閱讀測驗第 53 至 56 題（閱讀測驗站可以找到原題），照 113 學測混合題寒鴉、烏龜蟻那一組的兩欄版面和題型出題，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百六十場建檔。改編自 g97p4；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-g108p4",
+      "year": 108,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（十六）",
+      "title": "除蟲彈的論壇討論",
+      "topic": "除蟲彈對床蝨效果有限、易燃與殘留毒性：九則討論區貼文",
+      "layout": "posts",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "Got itchy rashes from bug bites? Many people use “foggers,” or “bug bombs,” to clear the annoying crawlers out of their homes, trusting the pesticide to penetrate every place where the insects hide. Yet when Ohio State University researchers tested three commercially sold foggers on five groups of live bedbugs for two hours, the products had little—if any—effect. Would you set off a bug bomb at home? Share your thoughts on this forum.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "A",
+          "speaker": "Aiden",
+          "text": "These bites have left itchy rashes all over my arms. Tonight I'm setting off a bug bomb in every room, and those crawlers won't stand a chance."
+        },
+        {
+          "label": "B",
+          "speaker": "Bianca",
+          "text": "The fog is exactly what sends them running. The moment the pests sense the chemicals, they squeeze into the walls and other hideaways, and there's no getting at them after that."
+        },
+        {
+          "label": "C",
+          "speaker": "Carlos",
+          "text": "I can see the appeal of a mist that seeps into every hiding spot. But then I read about the Ohio State study: the foggers did next to nothing to the bedbugs. I'm done with foggers."
+        },
+        {
+          "label": "D",
+          "speaker": "Dmitri",
+          "text": "Bedbugs are harder to kill than you'd think. Even the ones that do come into contact with the mist could be resistant to the pesticide. So what's the point?"
+        },
+        {
+          "label": "E",
+          "speaker": "Eun-ji",
+          "text": "Nobody talks about the cleanup. The chemicals rain down on your counters, furniture, floors, and walls, leaving an oily, toxic film behind. With a toddler crawling around, that's far too dangerous for my family."
+        },
+        {
+          "label": "F",
+          "speaker": "Franco",
+          "text": "Yes, the gas is highly flammable, and yes, it might go up in flames if you're careless. Read the label, follow every step, and you'll be fine. I'll keep using bug bombs."
+        },
+        {
+          "label": "G",
+          "speaker": "Giulia",
+          "text": "Nothing beats fog, if you ask me. I'm sure it drifts under the bed and into every corner where those bugs hide. That's why I'm a fan."
+        },
+        {
+          "label": "H",
+          "speaker": "Hector",
+          "text": "I used to swear by foggers. That was before I learned the gas can ignite or even explode when the product is mishandled. These days, I treat a bug bomb as a last resort."
+        },
+        {
+          "label": "I",
+          "speaker": "Imani",
+          "text": "Bedbugs live in cracks and crevices, under sheets and mattresses, and deep in carpets. A cloud floating around the room will never get in there. Leave this one to the professionals."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 108 學測閱讀測驗第 53 至 56 題（閱讀測驗站可以找到原題），照 114 學測混合題動物園論壇那一組的貼文版面和題型出題，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百六十場建檔。改編自 g108p4；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-z98p3",
+      "year": 98,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（十七）",
+      "title": "孩子該不該當志工的論壇討論",
+      "topic": "兒童志願服務的意義與疑慮：八則討論區貼文",
+      "layout": "posts",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "Every year, millions of children around the globe lend a hand to their communities. This weekend, for example, nine-year-old Camille Mahlknecht and her neighbors in Agoura Hills, California, plan to pick up trash during their city's annual cleanup. Schools and parents, too, are contributing to a rise in youth service. But should kids really be spending their free time this way? Share your thoughts on this forum.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "A",
+          "speaker": "Amir",
+          "text": "After his grandmother died of a heart attack, ten-year-old Nathan White and five other boys jumped rope in shifts for two and a half hours, raising over US$1,200 for the American Heart Association. Who says kids can't make a difference?"
+        },
+        {
+          "label": "B",
+          "speaker": "Beatriz",
+          "text": "A few bags of litter won't keep a charity afloat. Let's be honest: it's adults' donations that pay the bills, not nine-year-olds with trash bags."
+        },
+        {
+          "label": "C",
+          "speaker": "Chen",
+          "text": "Plenty of schools offer community service activities these days. Some teachers link volunteer projects to classroom lessons; others make service work a requirement. I'm only passing along information here, not judging it."
+        },
+        {
+          "label": "D",
+          "speaker": "Dana",
+          "text": "Raising money for a good cause is admirable, no doubt. However, ten-year-olds should be focusing on their own schoolwork. Weekends are for homework and rest, not charity drives."
+        },
+        {
+          "label": "E",
+          "speaker": "Emeka",
+          "text": "During a recession, the call for money and other aid keeps growing, yet many charities see donations drop sharply. Together, kids put in thousands of volunteer hours a year, and that can fill in some of those gaps. That matters."
+        },
+        {
+          "label": "F",
+          "speaker": "Freya",
+          "text": "I used to think volunteering could wait until kids were older. Then I learned that those who start young are twice as likely to keep doing good deeds into adulthood. Now my daughter and I volunteer together."
+        },
+        {
+          "label": "G",
+          "speaker": "Gustavo",
+          "text": "Make service compulsory, as some teachers do, and it stops being volunteering in any real sense. Kids already have plenty on their plates. Let children be children."
+        },
+        {
+          "label": "H",
+          "speaker": "Hana",
+          "text": "Wissam, a twelve-year-old in Lebanon, putting on a play at an orphanage and bringing potted plants to seniors? That's heartwarming. Whether every child should do the same is another matter. I'm still on the fence."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 98 指考閱讀測驗第 44 至 47 題（閱讀測驗站可以找到原題），照 114 學測混合題動物園論壇那一組的貼文版面和題型出題，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百六十場建檔。改編自 z98p3；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-g105p1",
+      "year": 105,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（十八）",
+      "title": "日本血型性格論的論壇討論",
+      "topic": "血型決定性格的說法、各種應用與血型歧視：九則討論區貼文",
+      "layout": "posts",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "In Japan, many believe that blood type decides a person's temperament. Type As are thought to be sensitive perfectionists and good team players, though overly anxious; type Os, curious and generous but stubborn; type ABs, artistic yet unpredictable; and type Bs, cheerful but eccentric and selfish. Though there is no scientific evidence behind it, the belief turns up everywhere in books, magazines, and TV shows. Is it just a game, or does it go too far? Tell us what you think on this forum.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "A",
+          "speaker": "Arjun",
+          "text": "Smart companies use every tool they have. In 1990, Mitsubishi Electronics reportedly announced an all-AB team, citing “their ability to make plans.” Matching people to roles by blood type just makes sense."
+        },
+        {
+          "label": "B",
+          "speaker": "Brooke",
+          "text": "If it helped Japan's women's softball team win gold at the Beijing Olympics, why knock it? The team reportedly used blood types to customize training for each player. Results speak for themselves."
+        },
+        {
+          "label": "C",
+          "speaker": "Connor",
+          "text": "Sure, flipping through blood-type charts in magazines is a fun way to kill time. But kindergartens planning little kids' lessons around blood groups? That crosses a line."
+        },
+        {
+          "label": "D",
+          "speaker": "Darius",
+          "text": "Personality decided by what's in your veins? No study has ever backed that up. It's a horoscope in a lab coat, and too many people fall for it."
+        },
+        {
+          "label": "E",
+          "speaker": "Emiko",
+          "text": "Interesting tidbit: one former prime minister revealed in his profile that he was type A, while his rival was type B. Make of that what you will."
+        },
+        {
+          "label": "F",
+          "speaker": "Fatima",
+          "text": "Some call it harmless fun. Tell that to the kids bullied over their blood type, the couples torn apart, and the people passed over for jobs. That's discrimination, plain and simple."
+        },
+        {
+          "label": "G",
+          "speaker": "Greg",
+          "text": "I used to roll my eyes at blood-type talk. Then I read that type Os are curious, generous, and stubborn—that's me to a T. I'm a believer now."
+        },
+        {
+          "label": "H",
+          "speaker": "Hiroshi",
+          "text": "It even reaches politics. In 2011, a minister was forced to resign after only a week in office when his bad-tempered run-in with local authorities aired on TV. His excuse? Being type B. Give me a break."
+        },
+        {
+          "label": "I",
+          "speaker": "Isabela",
+          "text": "I'll admit the blood-type page in magazines is good for a laugh. That said, using it to hand out job assignments is a different story. Keep it out of the office."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 105 學測閱讀測驗第 41 至 44 題（閱讀測驗站可以找到原題），照 114 學測混合題動物園論壇那一組的貼文版面和題型出題，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百六十場建檔。改編自 g105p1；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-z103p4",
+      "year": 103,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（十九）",
+      "title": "基因改造蚊子的論壇討論",
+      "topic": "用基因改造蚊子防治瘧疾的期待與疑慮：九則討論區貼文",
+      "layout": "posts",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "Malaria is caused by a parasite that mosquitoes carry. To tackle it, researchers have genetically altered a bacterium inside these mosquitoes so that it releases compounds toxic to the parasite. The insects can then no longer infect humans. At the time this research was reported, an estimated 250 million people suffered from malaria each year and about one million died, many of them children, yet no effective or approved vaccine existed. Is genetic modification the answer, or are we moving too fast? Share your views on this forum.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "A",
+          "speaker": "Aisha",
+          "text": "A million deaths a year is a staggering toll. If engineered mosquitoes can stop the parasite in its tracks, I say release them as soon as it's safe. Every year we wait, more children die."
+        },
+        {
+          "label": "B",
+          "speaker": "Bruno",
+          "text": "We'd be setting genetically engineered organisms loose with no clear idea of their long-term effect on ecosystems. Environmental activists are right to worry."
+        },
+        {
+          "label": "C",
+          "speaker": "Chen",
+          "text": "The parasite has to be blocked completely. If even a few slip past this defense, their offspring will likely become resistant, and scientists will be back where they started. Count me out."
+        },
+        {
+          "label": "D",
+          "speaker": "Dominic",
+          "text": "What sold me is how precise this is. The compounds harm neither people nor the mosquitoes carrying them. Only the parasite dies, and that's exactly the kind of targeted weapon disease control needs."
+        },
+        {
+          "label": "E",
+          "speaker": "Esther",
+          "text": "Getting a bacterium to poison the parasite is a remarkable achievement. The catch? Lab mosquitoes will never replace wild ones unless they gain a competitive advantage. Until scientists solve that, I can't back this plan."
+        },
+        {
+          "label": "F",
+          "speaker": "Farid",
+          "text": "Nobody can say what these insects will do to human health decades from now. I'm not willing to take that gamble without an answer."
+        },
+        {
+          "label": "G",
+          "speaker": "Gabriela",
+          "text": "Granted, winning public approval won't happen overnight, and there's a long way to go. Even so, a method that leaves mosquitoes incapable of infecting anyone deserves our support."
+        },
+        {
+          "label": "H",
+          "speaker": "Hamza",
+          "text": "Scientists now want to genetically modify the world around us. Is that progress or arrogance? I can't decide, so I'll wait for more research before I take a stand."
+        },
+        {
+          "label": "I",
+          "speaker": "Ines",
+          "text": "Using these insects to wipe out a disease that kills so many children would be wonderful, no question. My problem is releasing lab-made creatures into nature before anyone understands the long-term consequences."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 103 指考閱讀測驗第 48 至 51 題（閱讀測驗站可以找到原題），照 114 學測混合題動物園論壇那一組的貼文版面和題型出題，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百六十場建檔。改編自 z103p4；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-g108p2",
+      "year": 108,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（二十）",
+      "title": "北美原住民的圖騰柱",
+      "topic": "北美西北海岸原住民的圖騰柱：五張卡片介紹迎賓柱、屋柱、紀念柱、墓葬柱與羞辱柱",
+      "layout": "cards",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "Totem poles in North America are tall posts carved with symbols or figures by the Aboriginal peoples of the Northwest Coast. Cut from large, straight trees and painted in vibrant colors, they are far more than unique works of art. For generations, these coastal communities have passed on their knowledge through oral traditions, and a totem pole was the customary way to tell the story of a particular family or clan. Despite the threats posed by the cultural and political encroachment of colonial forces, the art of totem pole carving has survived, and Aboriginal carvers still create totems today as symbols of cultural pride and clan kinship. Depending on where it was placed and the occasion it was carved for, a pole fell into one of several categories, five of which are described below.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "1",
+          "speaker": "Welcome Poles",
+          "text": "Welcome poles were put up on village beachfronts, where they greeted guests arriving by canoe."
+        },
+        {
+          "label": "2",
+          "speaker": "House Poles",
+          "text": "House poles were found inside the homes of high-ranking chiefs, and the family’s history was carefully carved into each one. Placed along the front or rear walls of the house, these poles did practical work as well: they helped hold up the main beam of the roof."
+        },
+        {
+          "label": "3",
+          "speaker": "Memorial Poles",
+          "text": "A memorial pole was erected in front of a house in memory of a deceased chief or a high-ranking clan member. Its carvings depicted the person’s accomplishments or family history."
+        },
+        {
+          "label": "4",
+          "speaker": "Mortuary Poles",
+          "text": "Mortuary poles were likewise raised to honor the dead, but they differed from memorial poles: a burial box sat at the top of the pole, and inside it lay the remains of the deceased."
+        },
+        {
+          "label": "5",
+          "speaker": "Shame Poles",
+          "text": "Shame poles are the one kind that can now be seen only in museums, whereas many examples of the other kinds can still be found in various locations along the west coast of North America. In the past, a chief would have such a pole carved to embarrass and ridicule another chief who had done something wrong. Once the wrong was made right, the pole was taken down."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 108 學測閱讀測驗第 45 至 48 題（閱讀測驗站可以找到原題），照 115 學測混合題奇幻部落那一組的卡片版面出題，題型比照 113 學測，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百六十場建檔。改編自 g108p2；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-z94p3",
+      "year": 94,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（二十一）",
+      "title": "企業進軍新市場的三類問題",
+      "topic": "企業進入新市場時遇到的政治／法律、經濟、文化三類問題，以可口可樂在印度和加拿大旅遊廣告為例",
+      "layout": "cards",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "When a company ventures into new markets, it will have to deal with all sorts of problems. Broadly speaking, these problems fall into six categories: cultural, economic, geographical, political/legal, religious, and technological. The cards below take a closer look at three of them.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "1",
+          "speaker": "Political and Legal Issues",
+          "text": "A company entering a foreign country is, in a sense, an alien in the local business climate, and that status can cause trouble. Coca-Cola learned this lesson in India, where it was told to either reveal its secret formula or leave the country. Coke chose to leave. Several years later, it was welcomed back, only to face harassment and constant interference from political activists."
+        },
+        {
+          "label": "2",
+          "speaker": "Economic Issues",
+          "text": "Economic problems can affect the very properties of a product. A company is therefore often forced to make adaptations to its goods so that they meet the needs of the local market. To handle such problems, the company should first assess how economically developed the market is. Useful measures include the level of revenue, the buying power of local consumers, and the state of the infrastructure. Indicators like these provide vital information for planning a marketing strategy."
+        },
+        {
+          "label": "3",
+          "speaker": "Cultural Factors",
+          "text": "For researchers studying new markets, cultural factors may well be the biggest challenge of all. Markets that share similarities on various grounds often turn out to be dissimilar when it comes to culture, and such differences can exist even within a single country. Travel advertising in Canada is a case in point: it is divided between English-speaking and French-speaking audiences. The pictures in ads for English speakers show a wife alone, whereas those for French speakers show a husband and wife together. The reason is that French-speaking Canadians are more strongly bound by family ties."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 94 指考閱讀測驗第 54 至 56 題（閱讀測驗站可以找到原題），照 115 學測混合題奇幻部落那一組的卡片版面出題，題型比照 113 學測，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百六十場建檔。改編自 z94p3；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-g107p4",
+      "year": 107,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（二十二）",
+      "title": "搖籃曲的作用",
+      "topic": "最早的巴比倫搖籃曲、寶寶回應的是什麼、歌詞的用處與對母親的意義：四張卡片",
+      "layout": "cards",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "Lullabies have been sung to infants for thousands of years. Yet what exactly do these songs do, and for whom? The four cards below look at what researchers have found.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "1",
+          "speaker": "A Lullaby from Babylon",
+          "text": "Some 4,000 years ago, someone in ancient Babylon wrote down what may be the first lullaby ever recorded. It is a rather threatening song. The baby is scolded for disturbing the house god with its crying and is warned of terrifying consequences: if the crying does not stop, a demon will eat the child. The baby may well have drifted off while listening, but the song’s message is far from comforting. In fact, the song may strike us as more frightening than sleep-inducing. And it is not alone: many lullabies, including those still sung today, carry dark undertones."
+        },
+        {
+          "label": "2",
+          "speaker": "What Babies Respond To",
+          "text": "Research has shown that lullabies, when used correctly, can soothe an infant and possibly even help it heal. What the baby is reacting to, however, is not the content of the song. Instead, it is the caregiver’s voice, together with the rhythm and melody of the music."
+        },
+        {
+          "label": "3",
+          "speaker": "What the Words Are For",
+          "text": "If babies are not responding to the words, what purpose do the words serve? Studies suggest that some lullabies give advice, as the Babylonian one does with its warning to stop crying. Quite a few others offer the singer a space to sing the unsung and say the unsayable. The lyrics of such songs can indeed be interpreted as a reflection of the caregiver’s emotions."
+        },
+        {
+          "label": "4",
+          "speaker": "A Song for the Mother",
+          "text": "Researchers believe that much of what lullabies do is help a mother vocalize her worries and concerns. A mother’s fear of losing her child makes particular sense, since the infant and toddler years are fragile ones. Because mother and child share a special physical bond during this period, mothers feel free to sing to their children about their own fears and anxieties. In this way, lullabies serve as therapy for the mother. The songs also seem to be trying to work a little magic, as if the mother were saying through her singing, “Sadness has already touched this house; there is no need to come by again.”"
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 107 學測閱讀測驗第 53 至 56 題（閱讀測驗站可以找到原題），照 115 學測混合題奇幻部落那一組的卡片版面出題，題型比照 113 學測，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百六十場建檔。改編自 g107p4；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-z109bp4",
+      "year": 109,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（二十三）",
+      "title": "金本位與布列敦森林體系",
+      "topic": "浮動匯率出現以前的兩套匯率制度：金本位與布列敦森林體系的運作和瓦解",
+      "layout": "two-column",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "In finance, an exchange rate is the rate at which one country’s currency is traded for the currency of another, and it is set according to the respective values of the two currencies. Today, exchange rates operate under the floating system that the Jamaica Agreement formalized in 1976: a currency’s value may rise or fall with the supply and demand of the foreign exchange market, and countries can also let their central banks determine their own rates. Before that, two earlier systems shaped how currencies were valued.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "The Gold Standard",
+          "speaker": null,
+          "text": "Before World War I, most currencies were valued according to the Gold Standard. Under this system, the paper money a government issued stood for a real quantity of gold that the government actually held. In the 1930s, for instance, Britain’s government owned roughly eight times as much gold as that of the U.S., so an ounce of gold was worth either 4.24 British pounds or 35 U.S. dollars. The difference in the price of gold became the exchange rate between the two currencies: one pound bought 8.25 dollars. The system began to break down during World War II, when European governments printed more money than they had in gold reserves to pay for military projects."
+        },
+        {
+          "label": "The Bretton Woods System",
+          "speaker": null,
+          "text": "The Bretton Woods System was set up after World War II, and the U.S. dollar was chosen as the international reserve currency for trade. Since every country knew how much gold a dollar was worth, nations based the value of their own currencies on the dollar. All of them were expected to maintain a fixed exchange rate, though they were permitted to change it in extraordinary times, such as a recession or a period of inflation. Unfortunately, the system could not keep pace with a fast-changing global economy. As the U.S. stepped up its military spending, foreign aid, and international investment in the 1960s, it no longer held enough gold to cover all the dollars circulating around the world. Other major currencies thus became more valuable and stable than the dollar, and the system was finally abolished in 1971."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 109 指考補考閱讀測驗第 48 至 51 題（閱讀測驗站可以找到原題），照 113 學測混合題寒鴉、烏龜蟻那一組的兩欄版面和題型出題，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百七十一場建檔。改編自 z109bp4；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-g99rp2",
+      "year": 102,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（二十四）",
+      "title": "加拿大、法國與義大利的親子關係",
+      "topic": "加拿大、法國、義大利三國父母的管教方式，以及子女眼中的父親和母親",
+      "layout": "two-column",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "Is the bond between parents and children the same from one country to another? To explore this question, a research team led by Professor Michel Claes surveyed 1,256 students in Canada, France, and Italy. The choice of countries was deliberate. French-Canadians were picked because they speak the same language as the French, originally came from France, and have certain values in common with them. Italy was included because it was considered to have similar, strong, and important family values.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "Canada",
+          "speaker": null,
+          "text": "The most important finding of the study was the difference between the Canadians and the other two groups. Canadian parents place great value on independence, and when disagreements arise, they are more willing to enter into discussions with their children. They are also more tolerant and exercise less control. Put simply, they are more lenient with their children than parents in France and Italy are. Claes explained this gap in terms of education. North America, he said, has its own democratic and educational values, which promote individualization; tolerance and understanding are favored there, while systems of control are rejected. As for emotional ties, Canadian children described their mothers as warm and open, and they reported strong bonds with their fathers as well."
+        },
+        {
+          "label": "France and Italy",
+          "speaker": null,
+          "text": "Italian parents, in contrast, are stricter and more demanding, while French parents fall somewhere in the middle. Claes traced this side of the picture to education as well. Italy, he observed, promotes respect for authority, control, and the need for permission. Describing their parents, Italian children, much like Canadian ones, saw their mothers as warm and open and felt deeply attached to their fathers. French children also spoke warmly of their mothers, but they viewed their fathers as more distant. In fact, French mothers appeared to be growing closer to their children over time, whereas fathers kept a certain distance and coldness."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 99 課綱學測參考試卷（102 年施測）閱讀測驗第 45 至 48 題（閱讀測驗站可以找到原題），照 113 學測混合題寒鴉、烏龜蟻那一組的兩欄版面和題型出題，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百七十一場建檔。改編自 g99rp2；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-z96p3",
+      "year": 96,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（二十五）",
+      "title": "衝突鑽石與金伯利進程",
+      "topic": "衝突鑽石（conflict diamonds）造成的問題，以及金伯利進程認證機制（KPCS）追蹤原鑽來源的做法",
+      "layout": "two-column",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "Conflict diamonds, sometimes called blood diamonds, are diamonds sold to fund the unlawful operations of rebel, military, and terrorist groups. The press pays little attention to the link between terror and diamonds, but at the time this article was written, the 2006 movie Blood Diamond, starring Leonardo DiCaprio, was expected to help make the issue more mainstream, if only temporarily. The two columns below look at the problem and at one international effort to solve it.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "The conflict diamond trade",
+          "speaker": null,
+          "text": "The countries hit hardest by conflict diamonds have been Sierra Leone, Angola, Liberia, and the Democratic Republic of Congo. In these places, groups in control of the local diamond trade have terrorized citizens and even killed them. Most of the wars there have since ended, or at least died down, yet the trade has not gone away. Diamonds mined in some rebel-held areas, such as Liberia, are being smuggled into neighboring countries and then exported as conflict-free stones. For most of us, it is hard to imagine what life is like in countries where diamonds are the source of so much chaos and suffering."
+        },
+        {
+          "label": "The KPCS",
+          "speaker": null,
+          "text": "To stop the sale of blood diamonds, countries in southern Africa with a legitimate diamond trade began a campaign in 2000 to track the origins of all rough diamonds. Their efforts resulted in the Kimberley Process Certification Scheme (KPCS), an international organization that aims to make the world free of conflict diamonds. The KPCS sets out to document and trace every rough diamond as it enters a participating country. Shippers are required to place the stones in sealed boxes and to provide enough detailed information about where they came from to prove that they did not originate in a conflict zone."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 96 指考閱讀測驗第 53 至 56 題（閱讀測驗站可以找到原題），照 113 學測混合題寒鴉、烏龜蟻那一組的兩欄版面和題型出題，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百七十一場建檔。改編自 z96p3；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-g102p3",
+      "year": 102,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（二十六）",
+      "title": "能量飲料與酒測的論壇討論",
+      "topic": "喝能量飲料會不會讓人酒測呈陽性：八則討論區貼文",
+      "layout": "posts",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "Police often rely on an alcohol breath test (ABT) to tell whether someone has been drinking and driving. In the United States, drivers aged 21 or older may not have a blood alcohol level above 0.08%, and those under 21 may not drive with any alcohol in their body. A “positive” result, one over the legal limit, allows the police to arrest the driver. Yet many drivers who failed the test have insisted that all they drank was a “non-alcoholic” energy drink. To test such claims, researchers in Missouri analyzed 27 popular energy drinks and gave volunteers an ABT one minute and 15 minutes after they finished a full can or bottle. Do you believe these drivers? Share your thoughts below.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "A",
+          "speaker": "Andre",
+          "text": "“Non-alcoholic” on a label doesn't mean zero. Lab results showed that all but one of the drinks had more than 0.005% alcohol. I'd give these drivers the benefit of the doubt."
+        },
+        {
+          "label": "B",
+          "speaker": "Bridget",
+          "text": "Come on. “It was just an energy drink” is the oldest trick in the book. I'm convinced most of these drivers had a few beers and are hoping nobody looks too closely."
+        },
+        {
+          "label": "C",
+          "speaker": "Callum",
+          "text": "Sure, these drinks contain a trace of alcohol. But enough for a breath test to pick up? I seriously doubt it. My bet is that these drivers had something much stronger."
+        },
+        {
+          "label": "D",
+          "speaker": "Deepika",
+          "text": "When volunteers were tested within a minute of finishing, the device detected alcohol for 11 of the 27 drinks. That's far too many to write off every one of these drivers as a liar."
+        },
+        {
+          "label": "E",
+          "speaker": "Esme",
+          "text": "Whether these drivers are lying or not, I honestly can't say. Without knowing exactly what each one drank and when, I won't side with either camp yet."
+        },
+        {
+          "label": "F",
+          "speaker": "Femi",
+          "text": "No drink registered on tests given 15 minutes after it was consumed. I doubt many drivers get tested that quickly, so I'm not buying the excuse."
+        },
+        {
+          "label": "G",
+          "speaker": "Greta",
+          "text": "My first reaction was to roll my eyes. Then I read that nine of the 27 drinks contained at least 0.096% alcohol. Now I think some of these drivers could be telling the truth."
+        },
+        {
+          "label": "H",
+          "speaker": "Hassan",
+          "text": "It's a clever experiment, and I'm glad someone ran it. My concern is that every drunk driver will now hide behind it, so I'd take their stories with a grain of salt."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 102 學測閱讀測驗第 49 至 52 題（閱讀測驗站可以找到原題），照 114 學測混合題動物園論壇那一組的貼文版面和題型出題，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百七十一場建檔。改編自 g102p3；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-g99rp4",
+      "year": 102,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（二十七）",
+      "title": "電玩與決策能力的論壇討論",
+      "topic": "動作電玩能不能讓人做決定更快更準：九則討論區貼文",
+      "layout": "posts",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "Video games have long been blamed for many of the world’s ills. Parents complain that violent games make children antisocial, shallow, and overweight, while educators fear that gaming is breeding a generation unable to sustain its concentration. At the time this report appeared, however, a new cognitive science study in Current Biology suggested that some action games might benefit players. Are video games as harmful as people say? Share your views on this forum.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "A",
+          "speaker": "Adebayo",
+          "text": "Finally, some good news for gamers! This study says action gamers make faster and more accurate decisions. I’m showing it to my mom next time she tells me to turn off my console."
+        },
+        {
+          "label": "B",
+          "speaker": "Bethany",
+          "text": "As a mother of two, I’ve watched violent games turn my boys moody and withdrawn, and they hardly leave the couch. No research will convince me those games are good for kids."
+        },
+        {
+          "label": "C",
+          "speaker": "Camila",
+          "text": "Faster decision-making sounds wonderful for my students. The thing is, half my class already can’t stay focused through a single lesson, and more gaming won’t fix that."
+        },
+        {
+          "label": "D",
+          "speaker": "Declan",
+          "text": "What impressed me most: non-gamers acquired faster reaction times after only 50 hours of training over a few weeks. Hardly a huge sacrifice! I’m downloading “Unreal Tournament” tonight."
+        },
+        {
+          "label": "E",
+          "speaker": "Elif",
+          "text": "Rather ironically, players of “The Sims 2,” a game where you organize an entire simulated world, saw no such benefit. If a game that demands so much planning can’t help, I doubt any game will."
+        },
+        {
+          "label": "F",
+          "speaker": "Felipe",
+          "text": "The precise reason for this effect is still unknown. Those who collect what they see and hear more efficiently do decide faster, but until someone explains the link to gaming, I’m reserving judgment."
+        },
+        {
+          "label": "G",
+          "speaker": "Gwen",
+          "text": "I used to side with the teachers who say games ruin concentration. Then I read that fast-moving titles like “Call of Duty 2” made players better decision-makers. Consider me a convert."
+        },
+        {
+          "label": "H",
+          "speaker": "Hyun-woo",
+          "text": "Here’s the science: our brains constantly calculate and refine probabilities, gathering small pieces of information until there’s enough to decide, say, whether to brake. I’m not taking sides; it’s simply fascinating."
+        },
+        {
+          "label": "I",
+          "speaker": "Ingrid",
+          "text": "Impressive as these results are, I won’t let my daughter spend her evenings on violent action games. Being a quick decision-maker matters far less to me than being a kind and healthy one."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 99 課綱學測參考試卷（102 年施測）閱讀測驗第 53 至 56 題（閱讀測驗站可以找到原題），照 114 學測混合題動物園論壇那一組的貼文版面和題型出題，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百七十一場建檔。改編自 g99rp4；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-z109bp2",
+      "year": 109,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（二十八）",
+      "title": "追風暴的論壇討論",
+      "topic": "追逐惡劣天氣的魅力與風險：九則討論區貼文",
+      "layout": "posts",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "Storm chasing is the pursuit of severe weather, from violent thunderstorms to tornadoes. Some chasers head out of curiosity or a taste for adventure; others go for scientific research or to capture footage for the news. In recent years, the hobby has surged in popularity, and amateurs with video cameras now race professionals for the most dramatic images. Is storm chasing worth the risk? Share your views on this forum.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "A",
+          "speaker": "Austin",
+          "text": "Nothing compares to watching a storm churn across the open plains. I chase for the sheer adventure of it, and every trip shows me something new about the raw power of nature."
+        },
+        {
+          "label": "B",
+          "speaker": "Bao",
+          "text": "For years I lived for the thrill of the chase—until the afternoon a downburst struck unexpectedly and pushed my car sideways across the road. My chasing days are over."
+        },
+        {
+          "label": "C",
+          "speaker": "Corinne",
+          "text": "Lightning is the one hazard nobody can outrun. You can map every route and check every radar image, and a bolt can still find you. No photo is worth that gamble."
+        },
+        {
+          "label": "D",
+          "speaker": "Deshawn",
+          "text": "Picture driving on slick roads through rain so heavy you can barely make out the hood of your car. For a chaser, that's a normal afternoon. How is that anyone's idea of fun?"
+        },
+        {
+          "label": "E",
+          "speaker": "Elena",
+          "text": "Most of us aren't professional meteorologists, but we're not reckless either. I've spent years studying the atmosphere and how storms form, and that knowledge is what makes chasing so rewarding."
+        },
+        {
+          "label": "F",
+          "speaker": "Fabian",
+          "text": "These days the back roads are packed with YouTubers hunting for views, each one trying to get closer than the last. Sooner or later, somebody is going to die for a viral clip."
+        },
+        {
+          "label": "G",
+          "speaker": "Gemma",
+          "text": "Satellite tracking, live data feeds, a weather station bolted to the roof, hail guards on the windows—and then thousands of miles behind the wheel for a brief glimpse of a storm. Count me out."
+        },
+        {
+          "label": "H",
+          "speaker": "Haruto",
+          "text": "Sure, you can drive all day and come home empty-handed. Even so, I wouldn't trade it for anything. One unforgettable storm makes up for a dozen quiet skies."
+        },
+        {
+          "label": "I",
+          "speaker": "Irene",
+          "text": "Chasing in the name of science, I can understand. Plenty of chasers, however, care nothing about research and are just after a rush. Frankly, they should stay home."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 109 指考補考閱讀測驗第 40 至 43 題（閱讀測驗站可以找到原題），照 114 學測混合題動物園論壇那一組的貼文版面和題型出題，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百七十一場建檔。改編自 z109bp2；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-z103p3",
+      "year": 103,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（二十九）",
+      "title": "比特幣的論壇討論",
+      "topic": "比特幣剛問世時的便利與風險：九則討論區貼文",
+      "layout": "posts",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "Bitcoin is an experimental, decentralized digital currency that lets users pay anyone, anywhere in the world, instantly. It runs on peer-to-peer technology with no central authority; that is, the network as a whole manages transactions and issues money. This discussion took place when Bitcoin was still a new invention. Would you give it a try? Share your thoughts on this forum.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "A",
+          "speaker": "Anika",
+          "text": "My cousin lives on the other side of the world, so a payment that reaches her in seconds, with no bank in the middle, sounds perfect. I’m signing up today."
+        },
+        {
+          "label": "B",
+          "speaker": "Bartek",
+          "text": "Once you hit send, there’s no undo button. A Bitcoin payment can’t be reversed, and you get your money back only if the receiver agrees to refund it. I’ll pass."
+        },
+        {
+          "label": "C",
+          "speaker": "Clara",
+          "text": "My biggest fear was losing money over a single typo. Then I learned the system detects such slips and usually won’t send money to an invalid address. I’m in."
+        },
+        {
+          "label": "D",
+          "speaker": "Desmond",
+          "text": "Paying anyone, anywhere, with no single authority in control is a brilliant idea. The trouble is, the price can soar or plunge within days. I’ll stay away until things settle down."
+        },
+        {
+          "label": "E",
+          "speaker": "Eva",
+          "text": "Every payment I made would be stored publicly on the network forever. Anyone could check my balance, and if my identity slipped out during a purchase, my whole history would be laid bare. No thanks."
+        },
+        {
+          "label": "F",
+          "speaker": "Finn",
+          "text": "Sure, it’s an experiment, and its future can’t be predicted. Still, Bitcoin becomes less experimental as more people use it, and I’d rather help it grow than watch from the sidelines."
+        },
+        {
+          "label": "G",
+          "speaker": "Gloria",
+          "text": "I like that nobody can tell who’s behind an address until the owner reveals it during a purchase. But if I paid the wrong person, only the receiver could choose to return my money. Not worth it."
+        },
+        {
+          "label": "H",
+          "speaker": "Hamid",
+          "text": "Jump in or stay out—it’s up to you. Just bear in mind that payments can’t be undone, so deal only with people you trust or businesses with an established reputation."
+        },
+        {
+          "label": "I",
+          "speaker": "Isla",
+          "text": "This is a currency exploring ideas that have never been attempted. Anything that experimental is a high-risk asset, and I have no money I can afford to lose. I’ll sit this one out."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 103 指考閱讀測驗第 44 至 47 題（閱讀測驗站可以找到原題），照 114 學測混合題動物園論壇那一組的貼文版面和題型出題，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百七十一場建檔。改編自 z103p3；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-g93p4",
+      "year": 93,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（三十）",
+      "title": "四本兒童讀物書評",
+      "topic": "四張卡片介紹四本兒童與青少年讀物：祖父病倒的男孩、喝了會永生的泉水、有錢人坐的餐桌、山脊另一邊的世界",
+      "layout": "cards",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "The four cards below introduce books for young readers, each with a brief summary of its story.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "1",
+          "speaker": "Everywhere",
+          "text": "Peanuts’ beloved grandfather has suffered a heart attack, and the boy is heartbroken at the thought of losing him. While the adults in the family attend to the sick man, Dooley keeps Peanuts company. Dooley tries to save Grandfather with a ritual he picked up from comic books: kill a turtle and trade its soul for the old man’s. With Dooley’s imaginative help, Peanuts discovers the healing power of hope and love."
+        },
+        {
+          "label": "2",
+          "speaker": "Tuck Everlasting",
+          "text": "The Tucks have come across a spring whose water grants eternal life. When a man learns their secret, he threatens to sell the water to the highest bidder. Mrs. Tuck kills him, and she is jailed and sentenced to be executed. Although her family knows she cannot be killed, they fear that their secret will be revealed once the attempt is made to carry out her sentence."
+        },
+        {
+          "label": "3",
+          "speaker": "The Table Where Rich People Sit",
+          "text": "Seated around an old kitchen table, a young girl calls a family meeting. She wants her parents to see that they ought to earn more money so they can have nicer things. When she points out that this is not the kind of table rich people would sit at, her parents respond by calculating the value of the desert hills, the blooming cactus, the calls of eagles, and one another’s company. Before long, she comes to realize that her poor family is rich in the things that truly matter. This, she concludes, is indeed a table where rich people sit."
+        },
+        {
+          "label": "4",
+          "speaker": "Beyond the Ridge",
+          "text": "There is no death, only a change of worlds. This is the reassurance the author offers his readers in a book based on the customs of the Plains Indians in America. Reading like a prayer, the book expresses specific beliefs about dying. It follows a woman whose long-dead mother calls her to go “beyond the ridge.” After a steep climb, she finds herself in an abundantly beautiful world, where the familiar faces of those who have gone that way before her are waiting."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 93 學測閱讀測驗第 52 至 55 題（閱讀測驗站可以找到原題），照 115 學測混合題奇幻部落那一組的卡片版面出題，題型比照 113 學測，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百七十一場建檔。改編自 g93p4；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-g97p3",
+      "year": 97,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（三十一）",
+      "title": "冰雕藝術的挑戰與應用",
+      "topic": "冰雕的難處與用途：四張卡片介紹挑選冰塊、大型冰塊、與時間賽跑，以及餐桌上的冰雕",
+      "layout": "cards",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "Turning a block of ice into a work of art is a difficult process. The sculptor has to begin with ice of the right quality, and once the carving starts, there is a race against time. The four cards below explain these challenges and look at how finished sculptures are used at the dinner table.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "1",
+          "speaker": "Choosing the Ice",
+          "text": "Ice must be carefully selected before it can be sculpted. The ideal material is pure, clean water with high clarity, and it should also contain a minimum of air bubbles. Crystal-clear blocks that weigh 140 kg and measure 100 cm × 50 cm × 25 cm are available from the Clinebell Company in Colorado."
+        },
+        {
+          "label": "2",
+          "speaker": "Going Big",
+          "text": "Much larger clear blocks are produced in Europe and Canada or harvested from a frozen river in Sweden. Giant blocks like these are put to use at large ice sculpting events, and they also serve as building material for ice hotels."
+        },
+        {
+          "label": "3",
+          "speaker": "Racing the Clock",
+          "text": "Another difficulty is time control. The temperature of the surroundings affects how quickly a piece must be completed before melting takes its toll. If the sculpting does not take place in a cold environment, the sculptor has to work fast to finish. The choice of tools matters as well: with power tools, some sculptures can be completed in as little as ten minutes. Sculptors also use razor-sharp chisels designed specifically for cutting ice. The best of these chisels are made in Japan, a country that, like China, has a long tradition of magnificent ice sculptures."
+        },
+        {
+          "label": "4",
+          "speaker": "Ice at the Table",
+          "text": "In some cuisines, especially in Asia, ice sculptures serve as decorations. When large restaurants or hotels hold a dinner party, they may use an ice sculpture to decorate the table. At a wedding banquet, for example, it is common to see a pair of ice-sculpted swans representing the union of the new couple."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 97 學測閱讀測驗第 49 至 52 題（閱讀測驗站可以找到原題），照 115 學測混合題奇幻部落那一組的卡片版面出題，題型比照 113 學測，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百七十一場建檔。改編自 g97p3；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    },
+    {
+      "id": "MXA-g111p3",
+      "year": 111,
+      "examLabel": "改編練習",
+      "sessionName": "改編練習（三十二）",
+      "title": "斑馬魚的再生能力",
+      "topic": "斑馬魚的自我修復能力：五張卡片介紹斑馬魚適合做實驗的條件、心臟與視力的再生、和人類相近的器官與基因、視網膜再生與 GABA 的研究，以及接下來的試驗",
+      "layout": "cards",
+      "points": 10,
+      "itemCount": 4,
+      "notCounted": true,
+      "intro": "Named for the dark stripes that run along their sides, zebrafish have long been a favorite test subject in research labs. Yet these little fish are valued for more than convenience: they may also hold clues to healing the human body. The five cards below explain why.",
+      "introEmphasis": [],
+      "blocks": [
+        {
+          "label": "1",
+          "speaker": "A Lab Favorite",
+          "text": "Only a few centimeters in length, zebrafish breed easily in captivity and grow rapidly. Their bodies are also transparent, which allows researchers to observe the fish’s organs with ease."
+        },
+        {
+          "label": "2",
+          "speaker": "Self-Healers",
+          "text": "Above all, zebrafish possess an extraordinary power to repair themselves. When part of the heart is removed, a zebrafish can grow the lost tissue back in a matter of weeks. Even after being blinded, the fish soon regains its sight."
+        },
+        {
+          "label": "3",
+          "speaker": "Shared Biology",
+          "text": "Recent studies show that humans and zebrafish have the same major organs and share 70 percent of their genes. What is more, 84 percent of the human genes involved in disease have a counterpart in the fish. Scientists therefore hope that solving the mystery of the zebrafish’s self-healing may one day enable humans to regenerate organs such as eyes, hearts, and spines."
+        },
+        {
+          "label": "4",
+          "speaker": "Restoring Sight",
+          "text": "Researchers at Vanderbilt University are particularly interested in how zebrafish rebuild the retina. Damage to the retina can leave a zebrafish blind, yet its vision returns within just three to four weeks. Since zebrafish retinas closely resemble human ones in both structure and cell types, the process, if replicated in humans, could lead to new treatments for blindness caused by retinal damage. To learn exactly how the regeneration works, the team studied GABA, a chemical messenger in the brain that reduces the activity of neurons. Lowering GABA levels in the fish was found to trigger retina regeneration, whereas a high concentration of GABA would suppress it. GABA, it seems, plays a key role in the fish’s recovery of sight."
+        },
+        {
+          "label": "5",
+          "speaker": "Next on the Agenda",
+          "text": "At the time these findings were reported, the team was beginning to test the GABA theory on mice. If it proves effective there, human trials will follow. And should the research succeed in people, some of the nearly 40 million blind people worldwide may one day have a tiny striped fish to thank."
+        }
+      ],
+      "demoNote": "這一組是本題庫的改編練習，不是大考中心的試題。文章改編自 111 學測閱讀測驗第 43 至 46 題（閱讀測驗站可以找到原題），照 115 學測混合題奇幻部落那一組的卡片版面出題，題型比照 113 學測，共四題、10 分。參考答案和解析都是本題庫寫的，不算進本題庫的八場、33 格、80 分。",
+      "zhTranslation": null,
+      "source": null,
+      "internalNote": "第三百七十一場建檔。改編自 g111p3；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂。"
+    }
+  ]
+}

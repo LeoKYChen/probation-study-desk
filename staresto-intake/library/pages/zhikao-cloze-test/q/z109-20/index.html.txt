@@ -1,0 +1,51 @@
+Source: https://github.com/staresto-create/zhikao-cloze-test/blob/9e28e42ed3645273e544b95e5517e1fc63182f76/q/z109-20/index.html
+Author: staresto-create ZZSH
+Title: 109 年指考克漏字第20題詳解（字彙選義）｜指考克漏字文法&轉折詞
+Noncommercial educational text only
+
+指考克漏字題庫 ／ 年度總覽 ／ 109 年指考 ／ 第20題
+109 年指考 克漏字 第20題
+字彙選義線索：句內答對率 21%
+答對率 21%：當年每 100 位考生，有 21 位答對。
+Chance 20 , however, may not be enough to make key discoveries like this.
+(A)alone
+(B)alike
+(C)above
+(D)ahead
+答案：(A) alone
+題目編號：Z109_20（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+alone 放在名詞之後表示「只、光靠」：然而光靠機運，未必足以促成這樣的重大發現；alike（相似地）、above（在上方）、ahead（在前方）語意都不合。
+重點：alone 放在名詞或代名詞後面表示「只、光靠」，等於 only，但位置在名詞之後，與 only 擺前面不同——Price alone is not a reliable indicator of quality.
+延伸閱讀：名詞後面的 alone，「光靠」 ↗
+深入解析
+你可能會這樣想
+alone 你記得的是「獨自」（She lives alone.），那個 alone 修飾動詞、放在句尾。本題的 alone 緊跟在名詞 Chance 後面，意思變成「只、光靠」，等於 only——但位置在名詞之後。
+怎麼判斷
+先抓骨幹。主詞是 Chance，主要動詞是 may not be enough，however 是插入的轉折詞。空格緊貼在主詞後面，前後沒有動詞可修飾，所以它修飾的是 Chance 這個名詞，要填的是一個能後位修飾名詞的字。alone 正是這一類：它放在名詞後面表示「唯獨、光是」，而且只能放後面，不能像 only 那樣挪到前面。Money alone can't buy happiness.（光靠錢買不到幸福。）／Time alone will tell.（唯有時間能證明。）驗算法：把 alone 換成 only 並移到句首唸一遍——Only chance may not be enough to make key discoveries like this.（光靠機運未必足以促成這樣的重大發現。）意思不變，代換成立，方向就對了。文意也對得上：本句用 however 轉折，前一句講的是偶然帶來的發現，下一句 The scientist must have a prepared and open mind（科學家必須有備而來、心胸開放）補上另一個必要條件——三句合起來就是「光有運氣不夠，還要有準備」。
+誘答選項
+三個選項都以 a- 開頭，字形接近，但放在 Chance 後面都講不通。alike 是「相似地、同樣地」，用來說兩者一樣（The twins dress alike.），本句沒有兩個對象可比。above 與 ahead 是方位副詞，一個表示上方、一個表示前方，都用來講位置或順序，機運沒有上下前後可言。分不出來時回到語意這一關：空格要的是「只有、光靠」，這三個都沒有這個意思。
+常考字詞與句型
+X alone（光靠 X）、Time alone will tell.（唯有時間能證明）、let alone（更不用說）、leave sb alone（別打擾某人）、alike（同樣地）、serendipity（機緣巧合的發現）。
+數據出處：本頁的答對率與鑑別度全部來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+這一年的官方統計：109學年度指定科目考試統計圖表 ↗（大考中心公告，內含「答對率及鑑別度表」，本頁數字即取自該表）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；可從統計資料總表 ↗找到該年度，也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Scientific discovery can take various forms. One of them is "serendipity," the luck of finding valuable things unintentionally. Serendipity was at work when Alexander Fleming discovered penicillin, the antibiotic miracle.
+Fleming had long been known for having an untidy laboratory. One morning in 1928, this 16 proved very fortunate. It was his first day coming back to work after a long vacation. Before the vacation, he 17 in the sink a number of petri dishes in which he had been growing bacteria. While he was sorting through the long 18 dishes of germs that morning, he observed that some of the dishes were contaminated with a fungus, which had ruined his experiment. He was about to 19 the dishes, but he noticed that in one dish, the bacteria had failed to grow in the area around the fungus. This accidental finding gave rise to subsequent research that led to the discovery of penicillin—a drug that has since saved millions of lives.
+Chance 20 , however, may not be enough to make key discoveries like this. The scientist must have a prepared and open mind to detect the importance of the unforeseen incident and to use it constructively.
+中譯：科學發現可能有各種不同的形式，其中之一便是「機緣巧合」（serendipity），也就是在無意間發現有價值事物的幸運。亞歷山大．弗萊明（Alexander Fleming）發現抗生素奇蹟「盤尼西林」的過程，正是機緣巧合發揮作用的例子。
+弗萊明長期以來以實驗室凌亂聞名。1928 年的某天早晨，這個雜亂的習慣卻證明是件幸運的事。那天是他長假結束後回來工作的第一天。在休假前，他曾將許多正在培養細菌的培養皿隨意堆放在水槽裡。當天早上，他在整理這些長時間乏人問津、佈滿細菌的培養皿時，發現其中有些已遭黴菌污染，實驗因而報廢。他正打算把這些培養皿丟棄，卻注意到其中一個培養皿裡，黴菌周圍的細菌竟然無法生長。這項意外的發現，後來促成了進一步的研究，最終導致盤尼西林的發現——這種藥物自此拯救了數百萬條生命。
+然而，光靠機緣巧合，或許還不足以促成像這樣的重大發現；科學家還必須擁有準備充分、開放的心態，才能察覺意外事件的重要性，並善加運用。
+📋 內容大意
+Some discoveries come by serendipity, when something valuable turns up while nobody is looking for it.
+Back from a holiday, Fleming saw that a fungus in his unwashed dishes had killed the bacteria around it.
+That accident produced penicillin, but only a prepared, open mind can turn such luck into discovery.
+← 第19題回到109 年指考
+到指考克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：91–110 年指考歷屆文法與轉折詞克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

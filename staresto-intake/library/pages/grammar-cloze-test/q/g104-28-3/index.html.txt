@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g104-28-3/index.html
+Author: staresto-create ZZSH
+Title: 104 年學測克漏字第28題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 104 年學測 ／ 第28題
+104 年學測 克漏字 第28題
+字彙選義線索：句內答對率 64%
+答對率 64%：當年每 100 位考生，有 64 位答對。
+Despite their great 28 , however, most domesticated apples can be traced back to a common ancestor, the wild apple of Central Asia, Malus sieversii.
+(A)variety
+(B)harvest
+(C)condition
+(D)discovery
+答案：(A) variety
+題目編號：G104_28_3（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「儘管品種『多樣』，大多數家化蘋果卻可以追溯到共同祖先」，variety（多樣性）呼應前文提到的 7000 種蘋果；harvest（收成）、condition（狀況）、discovery（發現）都不合。
+深入解析
+你可能會這樣想
+variety 你最熟的是片語 a variety of（各式各樣的），習慣把它當成一個整體記，反而對 variety 單獨當名詞時的意思沒把握。這裡前面是 their great，指的是「它們龐大的多樣性」。順帶把另一個常考義一起收進來：variety 也可以指「品種」，且是可數的，例 a new variety of rice（一個水稻新品種）—— 這一義跟本文的 7,000 different kinds 正好呼應。
+怎麼判斷
+Despite（儘管）表讓步，讓步句的兩邊必須「表面上互相矛盾」，所以只要看清楚後半句在說什麼，前面該填什麼就被鎖死了。後半句是 most domesticated apples can be traced back to a common ancestor（大多數人工栽培的蘋果都能追溯到同一個祖先），講的是「同一個源頭」。能跟「同源」形成反差的，只有「種類很多」。一多一少的張力，就是答案。再往回讀一句更確定：over 7,000 different kinds in existence（現存超過七千個品種）—— 空格是在把上一句的細節用一個抽象名詞概括起來。這種「上一句舉細節、下一句用抽象名詞概括」的手法在學測克漏字裡很常見，看到 their、this、such 這類回指前文的字，就要往回找它到底指什麼。
+誘答選項
+harvest（收成、收穫量）—— 這一句沒有在談產量；產量的數字要到全文最後一句才出現，而且那是在講今日的產業規模，不是這裡讓步的對象。condition（狀況、條件）—— their great condition 是「狀況良好」，跟「同源」構不成矛盾。discovery（發現）—— 文中沒有提到任何發現的過程。
+常考字詞與句型
+variety（多樣性；品種）、a variety of（各式各樣的）、a wide variety of（種類繁多的）、despite + 名詞（儘管……）、be traced back to（追溯到）、a common ancestor（共同祖先）、domesticated（馴化的、人工栽培的）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Nutritional products that can be collected from trees include fruits, nuts, seeds, leaves, and bark. Tree products have been an important part of diets for thousands of years, from early humans 26 fruits and nuts to the first cultivation of important trees, such as mango and apple.
+The apple is one of the world's most cultivated fruit trees, 27 over 7,000 different kinds in existence. Despite their great 28 , however, most domesticated apples can be traced back to a common ancestor, the wild apple of Central Asia, Malus sieversii. Apples have been grown for thousands of years in Asia and Europe, and 29 to North America by European colonists in the 17th century.
+Today, apples are 30 eaten the world over and form the basis for multi-million dollar industries. In 2005, at least 55 million tons of apples were grown worldwide, which generated a value of about $10 billion.
+中譯：能從樹木採集到的營養產品包括水果、堅果、種子、葉片和樹皮。數千年來，樹木產物一直是人類飲食中重要的一部分，從早期人類採集水果和堅果，到後來人類開始栽培芒果、蘋果等重要果樹。蘋果是世界上栽培最廣泛的果樹之一，目前已知的品種超過 7000 種。然而，儘管品種如此繁多，大多數人工栽培的蘋果，其實都能追溯回同一個祖先——原產於中亞的野生蘋果「新疆野蘋果」。蘋果在亞洲和歐洲已栽種了數千年，並於 17 世紀由歐洲殖民者引進北美洲。如今，蘋果已是全世界普遍食用的水果，並形成了價值數百萬美元的產業。2005 年，全球至少種植了 5500 萬噸蘋果，創造了約一百億美元的產值。
+📋 內容大意
+Trees have fed people for thousands of years. They give fruit, nuts, seeds, leaves and bark. Early humans picked food; later farmers grew mango and apple.
+The apple is one of the most widely grown fruit trees. More than 7,000 kinds exist, yet nearly all come from one wild ancestor in Central Asia.
+Apples grew in Asia and Europe for centuries. European colonists took them to North America in the 17th century, and today they support big industries.
+← 第27題回到104 年學測第29題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

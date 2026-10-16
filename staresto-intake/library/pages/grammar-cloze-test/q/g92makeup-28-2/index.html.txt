@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g92makeup-28-2/index.html
+Author: staresto-create ZZSH
+Title: 92 年學測補考克漏字第28題詳解（連接詞／轉折詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 92 年學測補考 ／ 第28題
+92 年學測補考 克漏字 第28題
+連接詞／轉折詞線索：句內
+The Amazons fight on 28 they seize the pupae of the raided nest.
+(A)and
+(B)but
+(C)after
+(D)until
+答案：(D) until
+題目編號：G92補考_28_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+語意「亞馬遜蟻持續戰鬥，直到牠們奪取蛹為止」，until（直到）符合；and／but 都不合，after（在……之後）語意方向也不合（應該是「戰鬥直到奪取」不是「奪取之後戰鬥」）。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+四個選項都能連接兩個動作，而 and（然後）讀起來最順——「戰鬥，然後奪走蛹」。但那樣就漏掉了 fight on 裡那個 on 的意思。
+怎麼判斷
+先看空格前面的動詞：The Amazons fight on ___ they seize the pupae（亞馬遜蟻持續戰鬥……牠們奪走蛹）。fight on 的 on 是「繼續下去」的意思（go on 繼續、carry on 持續、hold on 堅持下去），所以前半句強調的是戰鬥一直持續。既然是持續的動作，就需要一個終點，而表示「一直到……為止」的是 until，整句是「亞馬遜蟻持續戰鬥，直到牠們奪走了對方巢裡的蛹為止」。這一格與 90 年第 24 題 →是同一個用法——那裡是 an alarm that gets increasingly louder until it is turned off（鬧鈴越來越大聲，直到被關掉為止），兩題都是「一個持續的過程延續到某個終點」。（88 年第 39 題 →的 It was not until ... that ... 則是 until 的另一種考法，那是強調句型的一部分。）
+誘答選項
+and（然後）：只是把兩個動作並列，表達不出「持續到那一刻為止」的意思，也用不到 fight on 的 on。but（但是）：轉折，但奪走蛹正是牠們戰鬥的目的，方向一致。after（在……之後）：時間順序反了——應該是「戰鬥直到奪到蛹」，不是「奪到蛹之後才戰鬥」。
+常考字詞與句型
+fight on until（持續戰鬥直到）、go on（繼續）、carry on（持續進行）、seize（奪取、抓住）、pupae（蛹，pupa 的複數）、in time（終究、過了一段時間之後）。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Some species of ants keep slaves. Probably the best known for the practice is the large brownish-red Amazon ant. A slave raid starts with an assembly of the Amazon warriors outside their own nest. Then, almost 26 at a given signal, the group begins to march toward the colony 27.
+When the Amazons reach the nest of their intended victims, a fierce battle may take place. The Amazons fight on 28 they seize the pupae of the raided nest. They carry these back home. In time the pupae develop into adults and spend their lives working for the Amazons.
+The Amazons are completely dependent on their slaves 29 their sharp jaws, so well suited for fighting, are useless in taking care of larvae or for digging. Also, the masters become so lazy that, after a while, they lose their muscles, and they become too weak 30 to feed themselves. Finally, they become so unhealthy that they die.
+中譯：有些螞蟻物種會蓄養奴隸。這種行為最著名的例子，大概就是體型較大、呈棕紅色的亞馬遜蟻。一場奴隸襲擊行動，通常始於亞馬遜蟻戰士在自己巢穴外集結。接著，幾乎像是接收到某種訊號一樣，這群螞蟻開始朝著目標蟻群的巢穴前進。當亞馬遜蟻抵達牠們鎖定的受害蟻巢時，往往會爆發激烈的戰鬥。亞馬遜蟻奮戰的目的，是為了奪取被襲擊蟻巢裡的蛹，並將這些蛹帶回自己的巢穴。隨著時間過去，這些蛹會發育成成蟲，並終其一生為亞馬遜蟻工作。亞馬遜蟻完全依賴這些奴隸生存，因為牠們那雙非常適合戰鬥的銳利大顎，卻完全無法用來照顧幼蟲或挖掘巢穴。此外，這些「主人」也逐漸變得懶惰，久而久之，牠們的肌肉退化，甚至虛弱到無法自行進食。最終，牠們會變得極度不健康，走向死亡。
+📋 內容大意
+Several ant species keep slaves, the best known being the large brownish-red Amazon ant.
+Warriors gather outside their nest and march as though on a signal toward the colony. After a fierce battle they carry off the pupae, which later work for them.
+The Amazons depend entirely on these slaves, since their fighting jaws cannot tend larvae or dig. Growing lazy, they lose muscle, cannot feed themselves and die.
+← 第27題回到92 年學測補考第29題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

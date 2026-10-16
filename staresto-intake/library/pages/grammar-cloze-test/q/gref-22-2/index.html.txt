@@ -1,0 +1,43 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/gref-22-2/index.html
+Author: staresto-create ZZSH
+Title: 學測參考試卷克漏字第22題詳解（關係子句／疑問詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 學測參考試卷 ／ 第22題
+學測參考試卷 克漏字 第22題
+關係子句／疑問詞線索：句內
+Taiwan is located along the southeast coast of the Asian continent, on the line 22 the Euro-Asian and Philippine continental plates meet.
+(A)that
+(B)what
+(C)when
+(D)where
+答案：(D) where
+題目編號：GRef_22_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+關係副詞 where 引導地方子句，「歐亞板塊與菲律賓板塊交會的『線』」，where 修飾地方名詞 line；that、what、when 都不合這種地方關係子句的用法。
+深入解析
+本題大考中心未公布逐題答對率，以下不談數據，只談觀念。
+你可能會這樣想
+先行詞是 line（線），不是你熟悉的 place 或 country，所以「地方用 where」可能不會想到這條規則，反而選了最常用的 that。
+怎麼判斷
+先看空格前面：on the line ___ ——先行詞是 the line，指的是地理上的一條線（板塊交界線），性質上是一個「地方」。再數空格後面那個子句：the Euro-Asian and Philippine continental plates meet（歐亞板塊與菲律賓板塊交會）——主詞是兩個板塊、動詞是 meet，而 meet 在這裡是不及物的「交會」，不需要受詞，成分一個都不缺。既然不缺，that 就進不來：關係代名詞一定要在子句裡當主詞或受詞。剩下能用的是關係副詞 where——它本身不占成分，只代替一個表地方的介系詞片語。還原一次就清楚了：on the line, and the plates meet on that line（在那條線上，而兩個板塊在那條線上交會），把 on that line 換成 where。判斷方式相同的題目，題庫裡已經出現好幾次：83 年第 17 題 →、89 年第 25 題 →、92 年第 25 題 →、98 年第 23 題 →，全都是先行詞是地方、子句成分已滿。先行詞是不是典型的「地點」不重要，重要的是它在子句裡扮演什麼功能。
+誘答選項
+that：關係代名詞，成分已滿塞不進去。when：關係副詞，但要配時間的先行詞（the day when），而 line 不是時間。what：不能當關係代名詞，它前面不能有先行詞。
+常考字詞與句型
+the line where …（……的那條線）、the place where …（……的地方）、be located along（位於……沿線）、continental plates（大陸板塊）、a geographic location（地理位置）。其中 the place where … 這一組考過 5 個年度，83 年第 17 題 →、89 年第 25 題 →、91 年補考第 29 題 →、98 年第 23 題 →都出現過。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Are you looking for a place where the waters are clear and the skies are blue, and countless stars cover the sky at night? Or would you like to 21 through remote and picturesque fishing villages? Then pack your bags and visit the offshore islands of Taiwan!
+Taiwan is located along the southeast coast of the Asian continent, on the line 22 the Euro-Asian and Philippine continental plates meet. This unique geographic location and frequent earthquake activity not only created an extremely diversified landscape and natural environment on Taiwan, but also resulted 23 the diverse traits of its offshore islands.
+The main offshore islands consist of Penghu, Green Island, Orchid Island, Kinmen, Mazu, Turtle Island and Little Liuqiu. 24 their locations, land characteristics, and human activity differ, each has its own unique scenery and culture. Therefore, each island offers something different for visitors. 25 you prefer to explore nature or history, or go shopping or sport fishing, you can do it all here!
+中譯：你是否正在尋找一個海水清澈、天空湛藍、夜晚繁星點點的地方？或者你想漫步穿越偏遠又如畫的漁村？那就打包行李，來造訪台灣的離島吧！台灣位於亞洲大陸東南沿岸，恰好在歐亞板塊與菲律賓板塊交會的線上。這種獨特的地理位置與頻繁的地震活動，不只造就了台灣極度多樣化的地貌與自然環境，也造成了各離島之間豐富多元的特色。台灣主要的離島包括澎湖、綠島、蘭嶼、金門、馬祖、龜山島與小琉球。由於它們的地理位置、地質特徵與人文活動各不相同，每座島嶼都有屬於自己獨特的風景與文化。因此，每座島嶼都能為遊客提供不同的體驗。無論你偏好探索自然還是歷史，或是想購物或從事海釣，在這裡通通都能實現！
+📋 內容大意
+Taiwan's offshore islands offer clear waters, blue skies, star-filled nights and remote, picturesque fishing villages.
+Taiwan lies along the southeast coast of Asia, on the line joining the Euro-Asian and Philippine plates. Frequent earthquakes have produced a highly varied landscape.
+Penghu, Green Island, Orchid Island, Kinmen, Mazu, Turtle Island and Little Liuqiu differ by location, land and human activity. Each offers its own scenery and culture.
+← 第21題回到學測參考試卷第23題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

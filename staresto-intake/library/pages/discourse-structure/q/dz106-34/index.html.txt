@@ -1,0 +1,69 @@
+Source: https://github.com/staresto-create/discourse-structure/blob/cecde1d171d5bb9e2cc05964aef1f6d0819102e8/q/dz106-34/index.html
+Author: staresto-create ZZSH
+Title: 指考 106年 篇章結構 第34題詳解（掌握段落內語句的連貫性與一致性）｜篇章結構題庫
+Noncommercial educational text only
+
+篇章結構題庫 ／ 指考 106年 ／ 第34題
+指考 106年 篇章結構 第34題
+選文：動物的再生能力（How Animals Regrow Body Parts）
+掌握段落內語句的連貫性與一致性線索：指示詞、名詞首次出現答對率 70%
+(A)Scientists call this unidirectional regeneration.科學家把這種情形稱為單向再生。
+(B)Humans aren’t completely without regenerative talents.人類並不是完全沒有再生的本事。
+(C)The same thing happens for lobsters, salamanders, and many other animals.龍蝦、蠑螈和許多其他動物也是一樣。
+(D)When it comes to regeneration, few animals can equal the magic of the planarian.說到再生，很少有動物比得上渦蟲的神奇。
+(E)This type of regeneration is demonstrated in a few animals, such as hydras and sea stars.這一類再生見於少數動物，例如水螅和海星。
+(F)They hope that this line of research will make regeneration possible in humans someday.他們希望這一系列研究有一天能讓人類也做到再生。
+答案：(E) This type of regeneration is demonstrated in a few animals, such as hydras and sea stars.
+題目編號：Dz106_34
+解析
+先看空格前面。 上一段的最後一句剛把雙向再生定義完：切開之後會變成好幾隻功能完整的動物。
+再看空格後面。 後面是 Cut a hydra in half, and you’ll get two hydras.（把一隻水螅切成兩半，就會得到兩隻水螅。）水螅直接就出現了，前面卻沒有一句先提到牠。
+E 補上這一步：This type of regeneration（這一類再生）回指上一段的定義，such as hydras（例如水螅）則把水螅帶進來，下一句才接得上。
+如果你選了 D（說到再生，很少有動物比得上渦蟲的神奇。）：D 也是段落第一句常見的寫法。但 D 帶出來的是渦蟲，後面那句講的卻是水螅，兩邊對不上。
+【下次先看這裡】段首是空格、下一句直接用某個動物或某個名詞舉例，空格就是第一次把它講出來的那一句。
+線索與數據
+線索種類指示詞、名詞首次出現
+線索在哪兩側 This type of regeneration 回指上一段的定義；hydras ↔ 後句 a hydra
+答對率70%
+鑑別度57
+本篇題型6選5・刪去法不收尾
+數據出處：本頁的答對率與鑑別度來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響。
+多出來的那一個：B
+(B)Humans aren’t completely without regenerative talents.人類並不是完全沒有再生的本事。
+B 只有六個字，句子乾淨，regenerative（再生的）也正是全篇的關鍵詞。但五格都放不進去：
+格
+那一格在等什麼
+B 為什麼不行
+34
+這一類再生見於哪些動物
+B 講的是人類，後句講的是水螅
+共同點：全篇從頭到尾在比「動物做得到、人做不到」，B 站在相反的一邊。
+【下次先看這裡】一個選項用了全篇的關鍵詞，卻和正文站在相反的立場，那多半就是多出來的那一個。先問這一篇的立場是什麼，再看它站在哪一邊。
+展開本題所在的整篇選文與中文翻譯
+本篇共 5 格、6選5；粗體數字就是空格，本題那一格已標成紅色。
+原文用顏色標出整篇的骨架，本題那一格後面補上了正解那一句。仔細看會發現，好幾格的正解本身就是該段的主旨句；這個題型考的，正是能不能從前後文看出一段話缺的是哪一句主旨句。
+兩者都是全文中心思想段落主旨句轉折詞
+對照組：人失去手腳只能裝義肢
+One of the most difficult things for a human to face is the loss of a limb. If a person loses an arm or a leg, he/she must be fitted with an artificial limb.
+反面對照：海星失去一隻腕足可以長回來
+The situation is very different for a starfish. If a starfish loses an arm, it can grow a new one.
+31 Snails can even regrow their heads—imagine what the world would be like if humans could do that. But we can’t. Nor can we grow new limbs or even fingers. That’s why scientists are studying animals that can regrow body parts, that is, regenerate. 32
+Many different kinds of animals show some form of regeneration. Most of them are, however, limited to the sort a lizard is capable of, like regrowing a lost tail. A cockroach can grow back a missing limb, but the limb itself can’t generate a new cockroach. 33 Bidirectional regeneration, on the other hand, refers to a situation in which splitting of an animal will result in separate fully functional animals.
+分類二：雙向再生——切成幾塊就變成幾隻，以水螅為例
+34This type of regeneration is demonstrated in a few animals, such as hydras and sea stars. Cut a hydra in half, and you’ll get two hydras. Cut it into four pieces, and you’ll get four.
+35 A single one can be cut into hundreds of pieces and each will grow back into a whole in a week or so. Because of this remarkable ability, one planarian can be created over and over, giving it a sort of immortality. Whether this phenomenon can be achieved in humans will likely require years of research.
+中譯
+對人來說，最難面對的事情之一就是失去一隻手或一條腿。一個人如果失去手臂或腿，就必須裝上義肢。
+海星的情況卻大不相同。海星如果失去一隻腕足，可以長出新的。
+31 蝸牛甚至可以長回自己的頭——想像一下，如果人也做得到，這世界會變成什麼樣子。但我們做不到。我們也長不出新的四肢，連手指都長不回來。正因如此，科學家正在研究那些能夠長回身體部位、也就是能夠再生的動物。32
+許多不同種類的動物都有某種形式的再生能力。不過，牠們多半只到蜥蜴那種程度，例如長回斷掉的尾巴。蟑螂可以長回失去的腳，但那隻腳本身沒辦法長出一隻新的蟑螂。33 至於雙向再生，指的則是把一隻動物切開之後，會變成好幾隻各自功能完整的動物。
+34 把一隻水螅切成兩半，你會得到兩隻水螅。切成四塊，就會得到四隻。
+35 單單一隻，就能被切成好幾百塊，每一塊大約一個星期就會長回完整的一隻。因為這種驚人的能力，一隻渦蟲可以一再被複製出來，等於擁有某種不死的性質。這個現象能不能在人身上實現，恐怕還需要很多年的研究。
+← 第33題回到互動練習第35題 →
+到篇章結構線上作答 →
+← 回題庫首頁
+資料來源：學測 110 試辦–115 年、指考 91–110 年歷屆篇章結構（大考中心公布）
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

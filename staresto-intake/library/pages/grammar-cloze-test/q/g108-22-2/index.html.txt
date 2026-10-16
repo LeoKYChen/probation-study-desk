@@ -1,0 +1,47 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g108-22-2/index.html
+Author: staresto-create ZZSH
+Title: 108 年學測克漏字第22題詳解（分詞／動狀詞）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 108 年學測 ／ 第22題
+108 年學測 克漏字 第22題
+分詞／動狀詞線索：句內答對率 43%
+答對率 43%：當年每 100 位考生，有 43 位答對。
+The idea was developed when a Spanish designer travelling to the Philippines observed a traditional Filipino shirt 22 together with the fibers of pineapple leaves.
+(A)wove
+(B)weaving
+(C)woven
+(D)to weave
+答案：(C) woven
+題目編號：G108_22_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+過去分詞 woven 作補語，被動語意「被編織在一起」（襯衫是用鳳梨葉纖維編織而成的）；wove（過去式，這裡需要分詞不是限定動詞）、weaving（現在分詞，主動語意方向不合）、to weave（不定詞）都不合。
+深入解析
+你可能會這樣想
+看到 observed 後面接了 a traditional Filipino shirt，你可能直覺選 wove，覺得要用動詞。先數一下這個子句已經有幾個動詞：when 引導的子句主詞是 a Spanish designer，動詞是 observed，限定動詞已經有了，空格不能再放一個。
+怎麼判斷
+這是基本句型 see sb do 和 see sb doing 的長大版：I saw him cross the street.（我看到他穿越馬路，強調整個過程）、I saw him crossing the street.（我看到他正在穿越）。observe 和 see、hear、watch、notice 是同一類，除了原形動詞和現在分詞，還有第三種：受詞後面接過去分詞，表示「受詞被……」。例如 On television, we saw Nelson Mandela presented with a special prize.（我們在電視上看到曼德拉被頒發特別獎）（例句出自劍橋 English Grammar Today）。這一格也一樣：shirt 是被編織的，不是自己去編織別人，所以用過去分詞 woven。還原成完整子句就更清楚：she observed that a traditional Filipino shirt was woven together with the fibers of pineapple leaves.（她注意到一件傳統菲律賓襯衫是用鳳梨葉的纖維編織在一起的）。另外 weave 是不規則動詞，三態為 weave–wove–woven（劍橋詞典註明美式英文另收 weaved 這個形態，但本題的選項用的是 woven），認得 woven 這個字形本身就是這一格考的其中一項。
+誘答選項
+wove 是過去式，屬於限定動詞，這個位置已經有 observed，再放一個會變成一個子句裡有兩個動詞。weaving 是現在分詞，語意會變成襯衫主動在編織別的東西，方向不合。to weave 是不定詞，這類感官動詞的受詞補語不接 to V，就像我們說 I saw him cross，不會說 I saw him to cross。
+常考字詞與句型
+observe／see／hear／watch／notice + O + p.p.（看到、聽到某物被……）、weave–wove–woven（編織，三態變化）、be woven together（被編織在一起）、be made of／from（由……製成）、the fibers of（……的纖維）、travel to（前往……）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+The pineapple, a delicious tropical fruit, has been valued for centuries not only for its distinct and unique taste, but also for its miraculous health and medical benefits. But pineapples can also be a fashionable fruit: Pineapple leaves can 21 a substitute for leather.
+The idea was developed when a Spanish designer travelling to the Philippines observed a traditional Filipino shirt 22 together with the fibers of pineapple leaves. After five years of research, she created from pineapple leaves a material which, like real leather, can be used for making bags, shoes, and 23 textile products. It is an eco-friendly and biodegradable fiber.
+This eco-friendly leather has clear 24 for the environment, compared to real leather and synthetic leathers. It requires fewer chemicals, making it safer for the workers in factories. Its manufacture also leaves a smaller carbon footprint. In addition, the leftover material following the removal of fibers can even be used as a natural fertilizer back in the pineapple fields. 25 its low cost, this innovative material is already being used by many leading fashion companies to make their products.
+中譯：鳳梨是一種美味的熱帶水果，數百年來不只因其獨特的風味受人重視，其驚人的保健與醫療功效也備受推崇。但鳳梨其實還能成為一種時尚的水果：鳳梨葉能成為皮革的替代材料。這個想法的誕生，源於一位西班牙設計師到菲律賓旅行時，觀察到當地傳統襯衫是用鳳梨葉的纖維織成的。經過五年的研究，她成功用鳳梨葉開發出一種材質，能像真皮一樣用來製作包包、鞋子以及其他紡織產品，而且是一種環保、可生物分解的纖維。相較於真皮和人造皮革，這種環保皮革對環境有明顯的好處：它需要的化學品較少，讓工廠員工的工作環境更安全；製造過程留下的碳足跡也較小。此外，抽取纖維後剩餘的材料，還能拿回鳳梨田當作天然肥料使用。加上成本低廉，這項創新材質如今已被許多知名時尚品牌用來製作產品。
+📋 內容大意
+People have prized the pineapple for centuries for its taste and health benefits. Its leaves now make a fashionable substitute for leather.
+A Spanish designer in the Philippines saw a traditional shirt made from pineapple-leaf fiber. Five years of research turned the leaves into material for bags and shoes.
+It needs fewer chemicals than real or synthetic leather, so factory workers are safer. Leftover pulp feeds the fields, and its low cost attracts fashion companies.
+← 第21題回到108 年學測第23題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權

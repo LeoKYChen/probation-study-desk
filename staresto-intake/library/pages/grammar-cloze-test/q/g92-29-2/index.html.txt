@@ -1,0 +1,46 @@
+Source: https://github.com/staresto-create/grammar-cloze-test/blob/558329c05a567d2ba3b0b446b3c2e247b87f2d9c/q/g92-29-2/index.html
+Author: staresto-create ZZSH
+Title: 92 年學測克漏字第29題詳解（字彙選義）｜學測克漏字文法&轉折詞
+Noncommercial educational text only
+
+學測克漏字題庫 ／ 年度總覽 ／ 92 年學測 ／ 第29題
+92 年學測 克漏字 第29題
+字彙選義線索：句內答對率 61%
+答對率 61%：當年每 100 位考生，有 61 位答對。
+The animals there no longer had 29 with animals from other parts of the world.
+(A)confusion
+(B)marriage
+(C)contact
+(D)transaction
+答案：(C) contact
+題目編號：G92_29_2（已自動幫你填到回報表單裡）🚩 回報這題有問題
+解析
+【句型】have contact with 指「與……有接觸」；confusion（困惑）、marriage（婚姻）、transaction（交易）都不符合這個「接觸」的語境。
+深入解析
+你可能會這樣想
+四個選項是四個不同的名詞，中文意思差很遠，你會直覺往語意去想「動物之間會有什麼」。這樣想沒錯，但比語意更快的是先看 have ___ with 這個框架——四個名詞裡只有一個塞得進去，不必等到把語意想清楚。
+怎麼判斷
+四個選項是四個不同的名詞，文法上都放得進去，可見這一格考的是語意與搭配。先看框架：have ___ with animals from other parts of the world，也就是 have ___ with sb。contact 正是這個框架裡常見的字——have contact with（與……有往來、接觸），同一組還有 make contact with（取得聯繫）、lose contact with（失去聯絡）、come into contact with（接觸到）。再用前後文驗算：前一句說澳洲被廣闊的海洋隔絕，下一句說 They evolved separately（牠們各自演化），夾在中間的這一句要說的正是「不再與外界的動物往來」，no longer had contact with 把前後兩句串成一條線。這一題的鑑別度 48，分開的是有沒有把這一句放進前後文裡看，而不是單獨挑一個字義。
+誘答選項
+marriage（婚姻）：語意先不論，形式上就過不了關——marriage 搭的介系詞是 to 不是 with（her marriage to John 她與約翰的婚姻、be married to sb 與某人結婚），這個方法常常一眼就刷掉一個選項。confusion（困惑）：have confusion with 不是通行的說法，而且困惑是心裡的狀態，談不上與別的動物「有困惑」。transaction（交易）：指金錢或商業上的往來，用在動物身上不成立。
+常考字詞與句型
+have contact with（與……有往來）、make contact with（取得聯繫）、lose contact with（失去聯絡）、come into contact with（接觸到）、keep in touch with（保持聯絡）、be married to（與……結婚）。
+數據出處：本頁的答對率來自大考中心公布的官方統計，不是老師自行估算，也不是網路蒐集的印象值。
+官方統計總表：大考中心 · 學科能力測驗統計資料 ↗（各學年度統計圖表內含「答對率及鑑別度表」）
+名詞說明：大考中心《一起來認識學測與指考的試題答對率 ↗》、《一起來認識學測與指考的試題鑑別度 ↗》。
+最後核對日期：2026年7月。若連結失效，代表大考中心已調整該頁位置，數據本身不受影響；也歡迎用回報表單 ↗告訴我，我會更新連結。
+展開本題所在的整篇文章與中文翻譯
+兩者都是全文中心思想段落主旨句Abc轉折詞
+📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這一段在做什麼」（舉例？補充？延續前一段？），再用自己的話歸納出這一段的重點就可以了。
+Up to about 250 million years ago the world had just one huge super-continent called Pangaea. Animals were able to move and intermix with 26. About 200 million years ago this super-continent broke up into two continents: Laurasia and Gondwana. About 60 million years ago Gondwana broke up into 27 later became South America, Africa, Antarctica, India and Australia.
+Since then Australia 28 from the rest of the world by vast oceans. The animals there no longer had 29 with animals from other parts of the world. They evolved separately. As a result, about 95 % of Australia's mammals and 94 % of its frogs are found 30 else in the world. Australia has lots of very unusual animals.
+中譯：大約 2 億 5 千萬年前，地球上曾經只有一塊巨大的超級大陸，稱為「盤古大陸」。當時的動物可以自由移動，彼此交流混居。大約 2 億年前，這塊超級大陸分裂成兩塊：勞亞大陸和岡瓦納大陸。大約 6 千萬年前，岡瓦納大陸又進一步分裂，後來形成了南美洲、非洲、南極洲、印度和澳洲。自此之後，澳洲便被廣闊的海洋與世界其他地區隔絕開來，當地的動物再也無法與世界其他地方的動物有所接觸，於是牠們各自獨立演化。結果，澳洲有大約 95%的哺乳類動物和 94%的蛙類，是世界上其他地方都找不到的獨有物種。澳洲擁有許多非常獨特罕見的動物。
+📋 內容大意
+Until about 250 million years ago, all the land was one super-continent, Pangaea. Animals could move and mix freely.
+It later split into Laurasia and Gondwana. Gondwana then broke into Africa, South America, Antarctica, India and Australia.
+Wide oceans then kept Australia apart. Its animals developed alone, so most of its mammals and frogs live only there.
+← 第28題回到92 年學測第30題 →
+到學測克漏字線上作答 →
+← 回題庫首頁·🧩 五個詞：拼圖的規則
+資料來源：83–115 年學測歷屆克漏字（大考中心公布），分類依文法點手動整理
+© 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · 📖 使用與著作權
