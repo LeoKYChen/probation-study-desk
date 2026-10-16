@@ -38,7 +38,7 @@ const button=[
 ].join('');
 once(cell,button,'interactive week cells');
 once("$('historyContent').append(cell);}",
-  "$('historyContent').append(cell); $('returnToday').hidden=session?.date===today; $('weekPracticeHint').textContent=session?.date===today?'點選本週已過日期，可補做或接續該日練習；未到日期不可提前作答。':'目前補練 '+session.date+'：進度、草稿及自評均按當天保存。';",
+  "$('historyContent').append(cell);} $('returnToday').hidden=session?.date===today; $('weekPracticeHint').textContent=session?.date===today?'點選本週已過日期，可補做或接續該日練習；未到日期不可提前作答。':'目前補練 '+session.date+'：進度、草稿及自評均按當天保存。';",
   'week action status');
 once('function render(){const iso=isoTaipei();if(iso!==session.date){pause();loadToday();}',
      'function render(){const iso=isoTaipei();if(!selectedPracticeDate&&iso!==session.date){pause();loadToday();}',
