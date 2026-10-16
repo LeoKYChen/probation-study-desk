@@ -1,0 +1,69 @@
+name: QA Live Unified Study30 v2.5.4
+on:
+  push:
+    branches:
+      - feature/study30-v254-unified-acceptance-1151016
+    paths:
+      - .github/workflows/qa-study30-unified-live.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Chromium
+        run: |
+          npm install --prefix /tmp/study30-unified-live --no-save playwright@1.56.1
+          /tmp/study30-unified-live/node_modules/.bin/playwright install --with-deps chromium
+      - name: Validate published Cloudflare acceptance URL
+        env:
+          NODE_PATH: /tmp/study30-unified-live/node_modules
+        run: |
+          node <<'NODE'
+          const assert=require('node:assert/strict'),{chromium}=require('playwright'),fs=require('node:fs'),path=require('node:path'),os=require('node:os');
+          (async()=>{
+            const browser=await chromium.launch({headless:true});
+            const ctx=await browser.newContext({permissions:['clipboard-read','clipboard-write'],acceptDownloads:true,viewport:{width:390,height:844},locale:'zh-TW'});
+            const page=await ctx.newPage();page.setDefaultTimeout(15000);
+            const errs=[];page.on('pageerror',e=>errs.push(String(e)));
+            let n=0;async function check(name,fn){await fn();console.log('LIVE UNIFIED PASS',++n,name);}
+            const url='https://v254-unified-preview.probation-study30-test.pages.dev/';
+            try{
+              const response=await page.goto(url,{waitUntil:'domcontentloaded',timeout:60000});
+              await check('Cloudflare alias HTTP 200',async()=>assert.equal(response.status(),200));
+              await page.locator('#daily30AiFeedback').waitFor({state:'attached',timeout:20000});
+              await check('426 original questions and approved v2.5.4 title',async()=>{assert.equal(await page.evaluate('Study30QuestionSources.all.length'),426);assert.match(await page.title(),/v2\.5\.4/);});
+              await check('green-content fold in 3 sections',async()=>assert.equal(await page.locator('details.content-collapse').count(),3));
+              await check('weekly history uses accessible buttons',async()=>assert.equal(await page.locator('#historyContent button.day-cell').count(),7));
+              await check('AI and external links mounted exactly once',async()=>{for(const id of ['daily30CopyAi','daily30AiFeedback','daily30ExternalGuide','essayExternalGuide'])assert.equal(await page.locator('#'+id).count(),1);});
+              await page.locator('#essayEditor').evaluate(el=>el.open=true);
+              const id=await page.evaluate('Study30App.essayContext().questionId');
+              await page.locator('#essayFullAnswer').fill('公開統一驗收虛構答案：爭點、規範與涵攝');
+              await page.locator('#daily30CopyAi').click();
+              await check('Clipboard contains current question and draft',async()=>{const v=await page.evaluate('navigator.clipboard.readText()');assert(v.includes(id));assert(v.includes('公開統一驗收虛構答案'));});
+              const note='Cloudflare統一驗收：此為虛構評語，不涉及個人紀錄。';
+              await page.locator('#daily30AiFeedback').fill(note);
+              await check('AI feedback saved into independent Study30 record',async()=>{const v=await page.evaluate(id=>Object.values(JSON.parse(localStorage.getItem('probation-study30-v251:v1')).sessions).find(x=>Object.hasOwn(x.aiReviewTexts||{},id))?.aiReviewTexts[id],id);assert.equal(v,note);});
+              await page.reload({waitUntil:'domcontentloaded'});
+              await page.locator('#daily30AiFeedback').waitFor({state:'attached'});
+              await check('AI feedback remains after reload',async()=>assert.equal(await page.locator('#daily30AiFeedback').inputValue(),note));
+              const [download]=await Promise.all([page.waitForEvent('download'),page.locator('#export').click()]);
+              const file=path.join(os.tmpdir(),'unified-study30-cloudflare-check.json');await download.saveAs(file);
+              const backup=JSON.parse(fs.readFileSync(file,'utf8'));
+              await check('JSON backup contains the pasted AI text',async()=>assert(Object.values(backup.data.sessions).some(s=>s.aiReviewTexts?.[id]===note)));
+              await check('external links are grounded in approved domains',async()=>{
+                const hrefs=await page.locator('#daily30ExternalGuide a').evaluateAll(links=>links.map(a=>a.href));
+                assert(hrefs.length>=2);for(const href of hrefs){const host=new URL(href).hostname;assert(['shuati.tw','yamol.tw','google.com'].some(z=>host===z||host.endsWith('.'+z)));}
+              });
+              await page.waitForFunction(()=>document.querySelector('#offlineStatus')?.dataset.kind==='ready',null,{timeout:60000});
+              await check('offline bundle ready',async()=>assert.equal(await page.locator('#offlineStatus').getAttribute('data-kind'),'ready'));
+              await ctx.setOffline(true);await page.reload({waitUntil:'domcontentloaded',timeout:30000});
+              await check('offline keeps 426 questions and AI feedback',async()=>{assert.equal(await page.evaluate('Study30QuestionSources.all.length'),426);assert.equal(await page.locator('#daily30AiFeedback').inputValue(),note);});
+              await check('no uncaught JS errors',async()=>assert.deepEqual(errs,[]));
+              console.log('LIVE UNIFIED TOTAL',n,'PASS',url);
+            }finally{await browser.close();}
+          })().catch(e=>{console.error('LIVE UNIFIED FAIL',e);process.exit(1)});
+          NODE
