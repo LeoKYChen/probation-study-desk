@@ -1,0 +1,9 @@
+{
+  "name": "v27-stage3f-synthetic-court-ui",
+  "private": true,
+  "type": "commonjs",
+  "description": "Offline-only browser demo and Node test fixture; no live judicial data",
+  "scripts": {
+    "test": "node --test model.test.cjs"
+  }
+}
