@@ -1,0 +1,106 @@
+name: QA v2.5.4 AI Review (test branch only)
+on:
+  push:
+    branches:
+      - release/v254-ai-review-pwa-1151016
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install isolated Playwright browser
+        run: |
+          mkdir -p /tmp/v254-e2e
+          npm install --prefix /tmp/v254-e2e --no-save playwright@1.56.1
+          /tmp/v254-e2e/node_modules/.bin/playwright install --with-deps chromium
+      - name: Check offline asset list paths
+        run: |
+          node -e "const f=require('fs'),m=require('./offline-manifest.json');for(const a of m.assets){if(!f.existsSync(a.url))throw Error('Missing offline asset '+a.url);}console.log('Offline assets valid:',m.assets.length)"
+      - name: Run real HTTP Chrome browser integration test
+        env:
+          NODE_PATH: /tmp/v254-e2e/node_modules
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const os = require('os');
+          const path = require('path');
+          const http = require('http');
+          const assert = require('node:assert/strict');
+          const { chromium } = require('playwright');
+          const root = process.cwd();
+          const types = {'.html':'text/html;charset=utf-8','.js':'text/javascript;charset=utf-8','.json':'application/json;charset=utf-8','.css':'text/css;charset=utf-8','.svg':'image/svg+xml'};
+          const server = http.createServer((req,res)=>{
+            const pathname = decodeURIComponent(new URL(req.url,'http://localhost').pathname);
+            const file = path.resolve(root,'.'+(pathname.endsWith('/')?pathname+'index.html':pathname));
+            if(!file.startsWith(root+path.sep)){res.writeHead(403);res.end();return;}
+            fs.readFile(file,(err,bytes)=>{
+              if(err){res.writeHead(404);res.end('Not found');return;}
+              res.writeHead(200,{'Content-Type':types[path.extname(file)]||'application/octet-stream'});res.end(bytes);
+            });
+          });
+          (async ()=>{
+            await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+            const url='http://127.0.0.1:'+server.address().port+'/v2.5/';
+            const browser=await chromium.launch({headless:true});
+            const context=await browser.newContext({acceptDownloads:true,viewport:{width:390,height:844},permissions:['clipboard-read','clipboard-write'],locale:'zh-TW'});
+            const page=await context.newPage();
+            const errors=[];page.on('pageerror',e=>errors.push(String(e)));
+            page.on('dialog',async d=>d.accept());
+            const results=[];
+            async function check(label,fn){await fn();results.push(label);console.log('PASS',label);}
+            await page.goto(url,{waitUntil:'domcontentloaded',timeout:30000});
+            await page.waitForSelector('#ai-simple-feedback',{timeout:20000});
+            await check('Actual 426 question bank',async()=>assert.equal(await page.evaluate('Practice25.getQuestions().length'),426));
+            await check('Exactly one copy button & text field',async()=>{assert.equal(await page.locator('#ai-simple-copy').count(),1);assert.equal(await page.locator('#ai-simple-feedback').count(),1)});
+            const firstId=await page.evaluate('Practice25.getQuestion().id');
+            await page.locator('#issueInput').fill('測試答案：應確認程序與實體爭點，逐點涵攝。');
+            await page.locator('#ai-simple-copy').click();
+            await check('Native clipboard captures actual current question',async()=>{const v=await page.evaluate('navigator.clipboard.readText()');assert(v.includes('題目ID：'+firstId));assert(v.includes('測試答案：應確認'))});
+            const feedback='【AI批改測試】第一段應具體化法律規範。\n第二段仍須補上結論。';
+            await page.locator('#ai-simple-feedback').fill(feedback);
+            await check('Feedback writes to real browser localStorage',async()=>assert.equal(await page.evaluate(id=>JSON.parse(localStorage.getItem('probation-study-desk-v24'))[id].aiFeedback,firstId),feedback));
+            const secondId=await page.evaluate('Practice25.getQuestions().find(q=>q.id!==Practice25.getQuestion().id).id');
+            await page.evaluate(id=>Practice25.select(id),secondId);
+            await page.locator('#ai-simple-feedback').fill('第二題專屬AI回饋');
+            await page.evaluate(id=>Practice25.select(id),firstId);
+            await check('Different question feedback remains separate',async()=>assert.equal(await page.locator('#ai-simple-feedback').inputValue(),feedback));
+            await page.reload({waitUntil:'domcontentloaded'});await page.waitForSelector('#ai-simple-feedback');
+            await page.evaluate(id=>Practice25.select(id),firstId);
+            await check('Feedback survives native reload',async()=>assert.equal(await page.locator('#ai-simple-feedback').inputValue(),feedback));
+            const [download]=await Promise.all([page.waitForEvent('download'),page.locator('#exportButton').click()]);
+            await check('ROC date filename for complete backup',async()=>assert.match(download.suggestedFilename(),/^\d{3}年\d{2}月\d{2}日學習紀錄備份\.json$/));
+            const backupPath=path.join(os.tmpdir(),'v254-ai-feedback-qa.json');await download.saveAs(backupPath);
+            const dump=JSON.parse(fs.readFileSync(backupPath,'utf8'));
+            await check('Backup JSON includes originals and AI review',async()=>{assert.equal(dump.study[firstId].aiFeedback,feedback);assert(dump.study[firstId].issue.includes('測試答案'))});
+            await page.evaluate(()=>localStorage.setItem('probation-study-desk-v24','{}'));
+            await page.reload({waitUntil:'domcontentloaded'});await page.waitForSelector('#ai-simple-feedback');
+            await page.locator('#importFile').setInputFiles(backupPath);
+            await page.waitForFunction(([id,s])=>{try{return JSON.parse(localStorage.getItem('probation-study-desk-v24'))[id]?.aiFeedback===s}catch{return false}},[firstId,feedback],{timeout:15000});
+            await page.evaluate(id=>Practice25.select(id),firstId);
+            await check('Import JSON restores review',async()=>assert.equal(await page.locator('#ai-simple-feedback').inputValue(),feedback));
+            await check('426 navigation mappings',async()=>{const fail=await page.evaluate(()=>{let bad=[];for(const q of Practice25.getQuestions()){Practice25.select(q.id);if(Practice25.getQuestion().id!==q.id||!AISimpleReview254.buildPrompt(q,'測試答案').includes('題目ID：'+q.id))bad.push(q.id)}return bad});assert.deepEqual(fail,[])});
+            await check('Offline manifest lists new AI script',async()=>{const m=JSON.parse(fs.readFileSync('offline-manifest.json','utf8'));assert(m.assets.some(x=>x.url==='v2.5/ai-simple-review-v254.js'))});
+            await page.waitForFunction(()=>Boolean(navigator.serviceWorker&&navigator.serviceWorker.controller),{timeout:20000});
+            const snapshot=await page.evaluate(()=>new Promise((resolve,reject)=>{
+              const channel=new MessageChannel();
+              const timeout=setTimeout(()=>reject(Error('offline snapshot timeout')),150000);
+              channel.port1.onmessage=e=>{if(e.data.type==='done'){clearTimeout(timeout);resolve(e.data.state)}else if(e.data.type==='error'){clearTimeout(timeout);reject(Error(e.data.message))}};
+              navigator.serviceWorker.controller.postMessage({type:'download'},[channel.port2]);
+            }));
+            await check('Service worker snapshot contains new script',async()=>{
+              assert(snapshot.urls.some(x=>x.endsWith('/v2.5/ai-simple-review-v254.js')));
+            });
+            await context.setOffline(true);
+            await page.goto(url,{waitUntil:'domcontentloaded',timeout:30000});
+            await page.waitForSelector('#ai-simple-feedback',{timeout:15000});
+            await page.evaluate(id=>Practice25.select(id),firstId);
+            await check('Offline page retains AI feedback after reload',async()=>assert.equal(await page.locator('#ai-simple-feedback').inputValue(),feedback));
+            await context.setOffline(false);
+            console.log('PASSED',results.length,'real-browser checks. Page errors:',errors.slice(0,8));
+            await browser.close();
+          })().then(()=>{server.close()}).catch(e=>{console.error('QA FAILED:',e);server.close();process.exitCode=1});
+          NODE
