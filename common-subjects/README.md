@@ -1,4 +1,4 @@
-# 國考英文＋作文練習站 v0.3（116年觀護人）
+# 國考英文＋作文練習站 v0.4（116年觀護人）
 
 這是 `probation-study-desk` 的獨立共同科目模組，入口為 `common-subjects/index.html`。維持原 v2.5／v2.5.4 專業科目題庫及每日訓練不變。
 
@@ -40,3 +40,14 @@
 - 本功能以**連結形式**尊重作者與題目原權利人的著作權。專案未確認可供其他網站複製改編的明確授權，因此不搬入第三方題目。若未來要將題目實際併入本站，須先確認原作者及題目權利人的許可與使用條件。
 - 相關來源：[staresto-create](https://github.com/staresto-create) 與 [高中英文自學題庫](https://staresto-create.github.io/JCEE-vocab-questions/)。
 - 驗收：`node common-subjects/test-v02.cjs` 和 `node common-subjects/test-staresto.cjs`。
+
+## v0.4 新增 Staresto 每日基礎訓練（正式核准方案）
+
+- 新增 [每日英文主課程](./daily/)（路徑 `common-subjects/daily/index.html`），以原作者實際的學測正式試題、解析、中譯進行**站內作答**。
+- 首批匯入 **668 題、34 篇文章**：單字380、克漏字文法45、閱讀63、文意選填180。完整原作者題庫並未全部匯入。
+- 星期一與星期三以單字及字卡為主，星期二、五練文法，星期四閱讀，星期六文意選填，星期日集中複習到期錯題；平日約15–20分鐘、週末15–30分鐘。
+- 依初次正確率、最近作答及練習天數調整階段；當日選題固定，已安排但未完成的任務可在14日內接續。
+- 練習紀錄使用**全新、獨立** `psd-staresto-daily-v04` localStorage 鍵，不讀寫原 `psd-common-subjects-v1`、原有80題或作文內容，並可獨立匯出／匯入 JSON。
+- `daily/SOURCES.md` 記錄題庫來源、快照、原作者聲明、正式題目與原創解析的授權區別；原作者編輯成果不以 GPL 重新授權。
+- 自動檢查：`node common-subjects/daily/test-v04.cjs`、`node common-subjects/daily/test-ui-v04.cjs`；原 v0.2、v0.3 回歸測試照常執行。
+- 尚非完整離線 PWA、未與作者網站帳號或成績同步，也沒有商業授權或 AI 即時批改。
