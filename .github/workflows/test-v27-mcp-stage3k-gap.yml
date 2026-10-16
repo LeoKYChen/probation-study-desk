@@ -1,0 +1,60 @@
+name: v2.7 MCP stage 3k one remaining linked court decision
+
+on:
+  push:
+    branches:
+      - experiment/v27-mcp-stage3k
+    paths:
+      - 'experiments/v27-mcp-poc/stage3k_one_gap.py'
+      - '.github/workflows/test-v27-mcp-stage3k-gap.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  one-safe-link:
+    name: Verify the last eligible linked source without repeating prior six
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    env:
+      JUDICIAL_API_LIVE_ENABLED: 'false'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install minimal HTTP and HTML packages
+        run: python -m pip install 'httpx>=0.27,<0.29' 'beautifulsoup4>=4.12,<5' 'lxml>=5,<7'
+      - name: Check gap script and safeguards
+        run: |
+          python -m py_compile experiments/v27-mcp-poc/stage3k_one_gap.py
+          python experiments/v27-mcp-poc/stage3k_one_gap.py --mode selftest
+      - name: Read only one not-previously-checked official linked court page
+        run: timeout 250s python -u experiments/v27-mcp-poc/stage3k_one_gap.py --mode live
+      - name: Confirm no document contents or extra links persisted
+        if: always()
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          src=Path('experiments/v27-mcp-poc/stage3k_one_gap.py').read_text()
+          for require in ('missing=eligible[1]',
+                          '"prior_six_requeried":False',
+                          '"new_related_jid_saved":False',
+                          '"court_text_saved":False',
+                          '"juvenile_case_queried":False',
+                          'follow_redirects=False'):
+              assert require in src,require
+          assert 'status:404' in Path('services/v2.7-judgment/private-worker.mjs').read_text()
+          print('One new case only, no existing website or deployment modified')
+          PY
+      - name: Save only last gap decision, never the linked case number
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v27-stage3k-one-linked-history-gap
+          path: v27-mcp-stage3k-one-link-gap.json
+          if-no-files-found: warn
+          retention-days: 14
