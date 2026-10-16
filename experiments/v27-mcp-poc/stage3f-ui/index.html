@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'none'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>v2.7｜裁判來源狀態展示臺（純合成測試）</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<a href="#results" class="skip-link">跳至合成測試結果</a>
+<main class="container">
+<header class="site-header">
+  <div class="kicker"><span class="dot" aria-hidden="true"></span> v2.7 安全介面原型 / Stage 3f</div>
+  <div class="heading-row"><div><h1>裁判來源狀態展示臺</h1><p class="subtitle">用合成資料，演練「查得到」與「可以安全引用」之間的差別。</p></div><span class="demo-pill">純離線 · 模擬資料</span></div>
+  <div class="warning" role="note"><strong>這不是正式裁判檢索服務。</strong> 所有案例與核對結果均為合成示例，沒有連接司法院 API、MCP 或個案資料庫。<strong>「模擬已核對」不代表真實裁判已經官方確認。</strong></div>
+</header>
+<section class="metrics" aria-label="合成資料狀態概覽">
+  <div class="metric"><div class="metric-label">模擬已核對</div><div class="metric-value" id="metricConfirmed">—</div><small>點擊前仍需重驗</small></div>
+  <div class="metric"><div class="metric-label">待驗證</div><div class="metric-value" id="metricPending">—</div><small>無個案連結</small></div>
+  <div class="metric"><div class="metric-label">模擬撤除</div><div class="metric-value" id="metricWithdrawn">—</div><small>禁止再次提供</small></div>
+  <div class="metric"><div class="metric-label">無法查證</div><div class="metric-value" id="metricUnavailable">—</div><small>不等於不存在</small></div>
+</section>
+<div class="content-grid">
+<section aria-labelledby="resultsHeading" id="results">
+  <div class="section-heading"><div><div class="eyebrow">01 / 搜尋與狀態</div><h2 id="resultsHeading">合成檢索結果</h2></div><button id="resetButton" type="button" class="reset-button">還原全部示例</button></div>
+  <div class="filters"><label>模擬檢索主題<select id="topicFilter"><option value="all">全部主題</option><option value="竊盜">竊盜</option><option value="詐欺">詐欺</option><option value="偽造文書">偽造文書</option></select></label><label>來源狀態<select id="statusFilter"><option value="all">全部狀態</option><option value="confirmed">模擬已核對</option><option value="pending">待驗證</option><option value="withdrawn">模擬已撤除</option><option value="unavailable">無法查證</option></select></label></div>
+  <p id="resultsCount" class="results-count" role="status" aria-live="polite"></p>
+  <div id="resultCards" class="cards"></div>
+</section>
+<aside class="verification-panel" aria-labelledby="verifyHeading">
+  <div class="eyebrow">02 / 點擊當下的安全查核</div><h2 id="verifyHeading">模擬重新驗證</h2>
+  <p>點選左側「模擬點擊」後，在此選擇官方可能回傳的狀況，觀察是否封鎖個案連結。</p>
+  <div class="steps" aria-label="安全流程"><div><span class="step-num">1</span>只產生短效一次性憑證</div><div><span class="step-num">2</span>點擊時再次核對模擬狀態</div><div><span class="step-num">3</span>不確定或撤除則不提供個案連結</div></div>
+  <div class="demo-control"><label for="outcomeSelect">模擬「重新查證」的結果</label><select id="outcomeSelect"><option value="still_public">模擬：仍公開且可核對</option><option value="withdrawn">模擬：已撤除／不公開</option><option value="unavailable">模擬：官方無法回應</option></select><p class="microcopy">這是手動選擇的假結果，不會真正連線官網。</p></div>
+  <div id="verificationStatus" class="verification-status" role="status" aria-live="polite">請從左側選擇「模擬已核對」的案例開始。</div>
+  <button id="replayButton" type="button" class="replay-button" disabled>再使用相同憑證（模擬重放）</button>
+  <div class="rule"><h3>正式系統的安全原則</h3><p>若沒有可信的官方證據，就不能宣稱個別裁判仍公開，也不能憑過往快取認定裁判未撤除。</p><a href="https://judgment.judicial.gov.tw/FJUD/" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">司法院裁判書系統通用入口 ↗</a><small>此為唯一對外連結；本原型不提供任何個別裁判深連結。</small></div>
+</aside>
+</div>
+<footer><span>Stage 3f · 無真實案件、無裁判正文、無個人資料、無 API 金鑰、無資料上傳</span><span>開發驗收只適用於合成介面，不代表正式法遵審核。</span></footer>
+</main>
+<script src="./model.js" defer></script><script src="./app.js" defer></script>
+</body>
+</html>
