@@ -1,0 +1,81 @@
+name: v2.7 MCP stage 3l public court date and format diversity
+
+on:
+  push:
+    branches:
+      - experiment/v27-mcp-stage3l
+    paths:
+      - 'experiments/v27-mcp-poc/stage3l_format_diversity.py'
+      - '.github/workflows/test-v27-mcp-stage3l.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  dated-formats:
+    name: Four-year source checks, long-form text and PDF fail-closed classifications
+    runs-on: ubuntu-latest
+    timeout-minutes: 17
+    env:
+      JUDICIAL_API_LIVE_ENABLED: 'false'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Restrict third-party cached court documents to ephemeral runner
+        run: echo "MCP_TAIWAN_LEGAL_DB_HOME=$RUNNER_TEMP/v27-stage3l-cache" >> "$GITHUB_ENV"
+      - name: Fetch and verify exact reviewed third-party research revision
+        env:
+          UPSTREAM_SHA: ef677ad63c3206fc211a083fad8b1d9ef5015222
+        run: |
+          git init "$RUNNER_TEMP/legal-mcp"
+          git -C "$RUNNER_TEMP/legal-mcp" remote add origin https://github.com/lawchat-oss/mcp-taiwan-legal-db.git
+          git -C "$RUNNER_TEMP/legal-mcp" fetch --depth 1 origin "$UPSTREAM_SHA"
+          git -C "$RUNNER_TEMP/legal-mcp" checkout --detach FETCH_HEAD
+          test "$(git -C "$RUNNER_TEMP/legal-mcp" rev-parse HEAD)" = "$UPSTREAM_SHA"
+      - name: Install pinned public-research MCP in isolated CI
+        run: python -m pip install "$RUNNER_TEMP/legal-mcp"
+      - name: Verify offline four-year and long/PDF synthetic edge cases
+        run: |
+          python -m py_compile experiments/v27-mcp-poc/stage3l_format_diversity.py
+          python experiments/v27-mcp-poc/stage3l_format_diversity.py --mode selftest
+      - name: Bounded official HTML and pinned MCP comparison across four ROC years
+        run: timeout 930s python -u experiments/v27-mcp-poc/stage3l_format_diversity.py --mode live
+      - name: Check no source or actual court records were published to the website
+        if: always()
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          code=Path('experiments/v27-mcp-poc/stage3l_format_diversity.py').read_text()
+          required=(
+              'MAX_SEARCHES=4','MAX_CANDIDATE_PAGES=12',
+              'MAX_MCP_DOCS=8','LONG_BODY_CHARS=10000',
+              'no_real_jid_or_party_data_in_report','pdf_fulltext_verified',
+              'report["stage3_accepted"]=False','follow_redirects=False',
+              '"no_judgment_body_or_pdf_saved":True',
+          )
+          for guard in required:
+              if guard not in code:
+                  raise SystemExit("Missing stage3l bound: "+guard)
+          public=Path('development/v2.7')
+          assert public.is_dir()
+          sensitive=[str(p) for p in public.rglob('*') if p.is_file() and
+                     (p.suffix in {'.cjs','.mjs','.sql'} or
+                      p.name in {'.env','.dev.vars','judgments.json'})]
+          assert not sensitive,sensitive
+          worker=Path('services/v2.7-judgment/private-worker.mjs').read_text()
+          assert 'status:404' in worker
+          print('Isolated Stage3l, no official API secrets, no live court endpoint')
+          PY
+      - name: Archive counts, format flags and length comparisons only
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v27-mcp-stage3l-dated-court-format-probe
+          path: v27-mcp-stage3l-format-diversity.json
+          if-no-files-found: warn
+          retention-days: 14
