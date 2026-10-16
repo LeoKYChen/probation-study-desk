@@ -8,7 +8,7 @@ from collections import Counter,defaultdict
 from datetime import datetime, timezone
 from hashlib import sha256
 from pathlib import Path
-import json,re,unicodedata
+import html,json,re,unicodedata
 
 ROOT=Path(__file__).resolve().parents[2]
 HERE=Path(__file__).resolve().parent
@@ -26,7 +26,14 @@ def write(path,value):
  path.parent.mkdir(parents=True,exist_ok=True)
  path.write_text(json.dumps(value,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 def simpl(x):
- return re.sub(r"\s+"," ",unicodedata.normalize("NFKC",str(x or "")).casefold()).strip()
+ return re.sub(r"\s+"," ",unicodedata.normalize("NFKC",html.unescape(str(x or ""))).casefold()).strip()
+def source_alias(x):
+ # The original grammar pages identify G110_16_1, whereas v0.4 uses g110-16-1.
+ # Normalize separators and case, never merge records on source ID alone.
+ return re.sub(r"[^a-z0-9]","",simpl(x))
+def kind_category(q):
+ return {"vocab":"詞彙與字卡","grammar":"文法與克漏字",
+         "reading":"閱讀理解","completion":"文意選填"}.get(q.get("kind"),"")
 def norm_options(x):
  if isinstance(x,dict):return {str(k).upper():simpl(v) for k,v in x.items()}
  if isinstance(x,list):return {chr(65+i):simpl(v) for i,v in enumerate(x)}
@@ -144,7 +151,7 @@ def main():
  for row in index["records"]:
   det=shard_cache[row["shard"]][row["position"]]
   by_exact[signature(det)].append(row["id"])
-  by_source[simpl(row.get("sourceItemId"))].append(row["id"])
+  by_source[source_alias(row.get("sourceItemId"))].append(row["id"])
   yr=re.search(r"\d{2,3}",str(row.get("year") or ""))
   if yr:by_year[(row["type"],int(yr.group()))].append(row["id"])
  def similar_answer_choices(q,key):
@@ -160,9 +167,9 @@ def main():
   sheet=obj(OLD/filename)
   for q in sheet["questions"]:
    desired=legacy_signature(q)
-   ids=sorted(set(by_exact.get(desired,[])))
-   raw_id=simpl(q.get("sourceId"))
-   strong=sorted(set(k for k in by_source.get(raw_id,[]) if similar_answer_choices(q,k) and same_year(q,k)))
+   ids=sorted(set(k for k in by_exact.get(desired,[]) if row_index[k]["type"]==kind_category(q)))
+   raw_id=source_alias(q.get("sourceId"))
+   strong=sorted(set(k for k in by_source.get(raw_id,[]) if row_index[k]["type"]==kind_category(q) and similar_answer_choices(q,k) and same_year(q,k)))
    if len(ids)==1:
     match="EXACT";selected=ids[0];evidence=ids
    elif len(strong)==1:
