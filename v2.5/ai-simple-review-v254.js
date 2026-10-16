@@ -91,12 +91,22 @@
       var q = practice.getQuestion();
       if (!q || q.id !== shownId) { sync();return; }
       if (feedback.value === lastSaved) return;
+      // 原站的 patch 會先更動記憶體，再寫 localStorage；儲存失敗時必須回滾，避免切題後顯示未保存的資料。
+      var records = typeof practice.getRecords === 'function' ? practice.getRecords() : null;
+      var existed = records && Object.prototype.hasOwnProperty.call(records, q.id);
+      var previousRecord = existed ? records[q.id] : null;
       try {
         // 寫進既有426題的單題紀錄；現成完整備份自然包含這個欄位。
         practice.patch({[FIELD]:feedback.value});
         lastSaved = feedback.value;
         notice('已儲存本題AI批改結果',false);
-      } catch(e) { notice('儲存失敗，可能是此裝置空間不足；請先複製評語另存，勿關閉頁面。',true); }
+      } catch(e) {
+        if (records) {
+          if (existed) records[q.id] = previousRecord;
+          else delete records[q.id];
+        }
+        notice('儲存失敗，可能是此裝置空間不足；請先複製評語另存，勿關閉頁面。',true);
+      }
     });
     copy.addEventListener('click',async function(){
       var prompt;
