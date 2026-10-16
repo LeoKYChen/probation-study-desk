@@ -1,9 +1,9 @@
-name: Deploy v2.5.4 Study30 Preview (isolated)
+name: Deploy Unified Study30 v2.5.4 Acceptance (isolated)
 
 on:
   push:
     branches:
-      - feature/study30-v254-analytics
+      - feature/study30-v254-unified-acceptance-1151016
     paths:
       - study30-site.zip
       - .github/workflows/deploy-study30-cloudflare.yml
@@ -86,10 +86,31 @@ jobs:
           node --check study30-addons/patch-stage9-ai-links.cjs
           node --check study30-addons/test-stage9-ai-links.cjs
           node study30-addons/test-stage9-ai-links.cjs deploy-dist
+          # Apply the separately approved green UI/wording and safe week-backfill patches.
+          node study30-addons/patch-content-cleanup.cjs deploy-dist
+          node study30-addons/patch-week-practice.cjs deploy-dist
+          # Cache the FINAL combined bundle, including Stage9 JS and page refinements.
+          node study30-addons/install-offline.cjs deploy-dist
+          for script in deploy-dist/*.js; do node --check "$script"; done
+          node --check deploy-dist/sw.js
+          node study30-addons/test-content-cleanup.cjs deploy-dist
+          node study30-addons/test-week-behavior.cjs deploy-dist
+          node study30-addons/test-offline.cjs deploy-dist
+          node study30-addons/test-stage9-ai-links.cjs deploy-dist
+      - name: Install isolated Chromium for unified acceptance
+        run: |
+          npm install --prefix /tmp/daily30-unified --no-save playwright@1.56.1
+          /tmp/daily30-unified/node_modules/.bin/playwright install --with-deps chromium
+      - name: Test merged website in real browser before deploy
+        env:
+          NODE_PATH: /tmp/daily30-unified/node_modules
+        run: |
+          node study30-addons/test-stage9-browser.cjs deploy-dist
+          node study30-addons/test-unified-browser.cjs deploy-dist
 
       - name: Deploy to existing Cloudflare Pages project
         uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy deploy-dist --project-name=probation-study30-test --branch=v254-preview
+          command: pages deploy deploy-dist --project-name=probation-study30-test --branch=v254-unified-preview
