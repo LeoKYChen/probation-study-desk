@@ -1,0 +1,5739 @@
+{
+  "schema": "v04-to-v06-candidates",
+  "rows": [
+    {
+      "legacyId": "sv:V0091",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0091",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0091",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0092",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0092",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0092",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0093",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0093",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0093",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0094",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0094",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0094",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0095",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0095",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0095",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0096",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0096",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0096",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0097",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0097",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0097",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0098",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0098",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0098",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0099",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0099",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0099",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0100",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0100",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0100",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0101",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0101",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0101",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0102",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0102",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0102",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0103",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0103",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0103",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0104",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0104",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0104",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0105",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0105",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0105",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0106",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0106",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0106",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0107",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0107",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0107",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0108",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0108",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0108",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0109",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0109",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0109",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0110",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0110",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0110",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0111",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0111",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0111",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0112",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0112",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0112",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0113",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0113",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0113",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0114",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0114",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0114",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0115",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0115",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0115",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0116",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0116",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0116",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0117",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0117",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0117",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0118",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0118",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0118",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0119",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0119",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0119",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0120",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0120",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0120",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0121",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0121",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0121",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0122",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0122",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0122",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0123",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0123",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0123",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0124",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0124",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0124",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0125",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0125",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0125",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0126",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0126",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0126",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0127",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0127",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0127",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0128",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0128",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0128",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0129",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0129",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0129",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0130",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0130",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0130",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0131",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0131",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0131",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0132",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0132",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0132",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0133",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0133",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0133",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0134",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0134",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0134",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0135",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0135",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0135",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0151",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0151",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0151",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0152",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0152",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0152",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0153",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0153",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0153",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0154",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0154",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0154",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0155",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0155",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0155",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0156",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0156",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0156",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0157",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0157",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0157",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0158",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0158",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0158",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0159",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0159",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0159",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0160",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0160",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0160",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0161",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0161",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0161",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0162",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0162",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0162",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0163",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0163",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0163",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0164",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0164",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0164",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0165",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0165",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0165",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0181",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0181",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0181",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0182",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0182",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0182",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0183",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0183",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0183",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0184",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0184",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0184",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0185",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0185",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0185",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0186",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0186",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0186",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0187",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0187",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0187",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0188",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0188",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0188",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0189",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0189",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0189",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0190",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0190",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0190",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0191",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0191",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0191",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0192",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0192",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0192",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0193",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0193",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0193",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0194",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0194",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0194",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0195",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0195",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0195",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0196",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0196",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0196",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0197",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0197",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0197",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0198",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0198",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0198",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0199",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0199",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0199",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0200",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0200",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0200",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0201",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0201",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0201",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0202",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0202",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0202",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0203",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0203",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0203",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0204",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0204",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0204",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0205",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0205",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0205",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0206",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0206",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0206",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0207",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0207",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0207",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0208",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0208",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0208",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0209",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0209",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0209",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0210",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0210",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0210",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0211",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0211",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0211",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0212",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0212",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0212",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0213",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0213",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0213",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0214",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0214",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0214",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0215",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0215",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0215",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0216",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0216",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0216",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0217",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0217",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0217",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0218",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0218",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0218",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0219",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0219",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0219",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0220",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0220",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0220",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0221",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0221",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0221",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0222",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0222",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0222",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0223",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0223",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0223",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0224",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0224",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0224",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0225",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0225",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0225",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0226",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0226",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0226",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0227",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0227",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0227",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0228",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0228",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0228",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0229",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0229",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0229",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0230",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0230",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0230",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0231",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0231",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0231",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0232",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0232",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0232",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0233",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0233",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0233",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0234",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0234",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0234",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0235",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0235",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0235",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0236",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0236",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0236",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0237",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0237",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0237",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0238",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0238",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0238",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0239",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0239",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0239",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0240",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0240",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0240",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0241",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0241",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0241",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0242",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0242",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0242",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0243",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0243",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0243",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0244",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0244",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0244",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0245",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0245",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0245",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0246",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0246",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0246",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0247",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0247",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0247",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0248",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0248",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0248",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0249",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0249",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0249",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0250",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0250",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0250",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0251",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0251",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0251",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0252",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0252",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0252",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0253",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0253",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0253",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0254",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0254",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0254",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0255",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0255",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0255",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0256",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0256",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0256",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0257",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0257",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0257",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0258",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0258",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0258",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0259",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0259",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0259",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0260",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0260",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0260",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0261",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0261",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0261",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0262",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0262",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0262",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0263",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0263",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0263",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0264",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0264",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0264",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0265",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0265",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0265",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0266",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0266",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0266",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0267",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0267",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0267",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0268",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0268",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0268",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0269",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0269",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0269",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0270",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0270",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0270",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0271",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0271",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0271",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0272",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0272",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0272",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0273",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0273",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0273",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0274",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0274",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0274",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0275",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0275",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0275",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0276",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0276",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0276",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0277",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0277",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0277",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0278",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0278",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0278",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0279",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0279",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0279",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0280",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0280",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0280",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0281",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0281",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0281",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0282",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0282",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0282",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0283",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0283",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0283",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0284",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0284",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0284",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0285",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0285",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0285",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0286",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0286",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0286",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0287",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0287",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0287",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0288",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0288",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0288",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0289",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0289",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0289",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0290",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0290",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0290",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0291",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0291",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0291",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0292",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0292",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0292",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0293",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0293",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0293",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0294",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0294",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0294",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0295",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0295",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0295",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0296",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0296",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0296",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0297",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0297",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0297",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0298",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0298",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0298",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0299",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0299",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0299",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0300",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0300",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0300",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0301",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0301",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0301",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0302",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0302",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0302",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0303",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0303",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0303",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0304",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0304",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0304",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0305",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0305",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0305",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0306",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0306",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0306",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0307",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0307",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0307",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0308",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0308",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0308",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0309",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0309",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0309",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0310",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0310",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0310",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0311",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0311",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0311",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0312",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0312",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0312",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0313",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0313",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0313",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0314",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0314",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0314",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0315",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0315",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0315",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0316",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0316",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0316",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0317",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0317",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0317",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0318",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0318",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0318",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0319",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0319",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0319",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0320",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0320",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0320",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0321",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0321",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0321",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0322",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0322",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0322",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0323",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0323",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0323",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0324",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0324",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0324",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0325",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0325",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0325",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0326",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0326",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0326",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0327",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0327",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0327",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0328",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0328",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0328",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0329",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0329",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0329",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0330",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0330",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0330",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0331",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0331",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0331",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0332",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0332",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0332",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0333",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0333",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0333",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0334",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0334",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0334",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0335",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0335",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0335",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0336",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0336",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0336",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0337",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0337",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0337",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0338",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0338",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0338",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0339",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0339",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0339",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0340",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0340",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0340",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0341",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0341",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0341",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0342",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0342",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0342",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0343",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0343",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0343",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0344",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0344",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0344",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0345",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0345",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0345",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0346",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0346",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0346",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0347",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0347",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0347",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0348",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0348",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0348",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0349",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0349",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0349",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0350",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0350",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0350",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0351",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0351",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0351",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0352",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0352",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0352",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0353",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0353",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0353",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0354",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0354",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0354",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0355",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0355",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0355",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0356",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0356",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0356",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0357",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0357",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0357",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0358",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0358",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0358",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0359",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0359",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0359",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0360",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0360",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0360",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0361",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0361",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0361",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0362",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0362",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0362",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0363",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0363",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0363",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0364",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0364",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0364",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0365",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0365",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0365",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0366",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0366",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0366",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0367",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0367",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0367",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0368",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0368",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0368",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0369",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0369",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0369",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0370",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0370",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0370",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0371",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0371",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0371",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0372",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0372",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0372",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0373",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0373",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0373",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0374",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0374",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0374",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0375",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0375",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0375",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0376",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0376",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0376",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0377",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0377",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0377",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0378",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0378",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0378",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0379",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0379",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0379",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0380",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0380",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0380",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0381",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0381",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0381",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0382",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0382",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0382",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0383",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0383",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0383",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0384",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0384",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0384",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0385",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0385",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0385",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0386",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0386",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0386",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0387",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0387",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0387",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0388",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0388",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0388",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0389",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0389",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0389",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0390",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0390",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0390",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0391",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0391",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0391",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0392",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0392",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0392",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0393",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0393",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0393",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0394",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0394",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0394",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0395",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0395",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0395",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0396",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0396",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0396",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0397",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0397",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0397",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0398",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0398",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0398",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0399",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0399",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0399",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0400",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0400",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0400",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0401",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0401",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0401",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0402",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0402",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0402",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0403",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0403",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0403",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0404",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0404",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0404",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0405",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0405",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0405",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0406",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0406",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0406",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0407",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0407",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0407",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0408",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0408",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0408",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0409",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0409",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0409",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0410",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0410",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0410",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0411",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0411",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0411",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0412",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0412",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0412",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0413",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0413",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0413",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0414",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0414",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0414",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0415",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0415",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0415",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0416",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0416",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0416",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0417",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0417",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0417",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0418",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0418",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0418",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0419",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0419",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0419",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0420",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0420",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0420",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0421",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0421",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0421",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0422",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0422",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0422",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0423",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0423",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0423",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0424",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0424",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0424",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0425",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0425",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0425",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0426",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0426",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0426",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0427",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0427",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0427",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0428",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0428",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0428",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0429",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0429",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0429",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0430",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0430",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0430",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0431",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0431",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0431",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0432",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0432",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0432",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0433",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0433",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0433",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0434",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0434",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0434",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0435",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0435",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0435",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0436",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0436",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0436",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0437",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0437",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0437",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0438",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0438",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0438",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0439",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0439",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0439",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0440",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0440",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0440",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0441",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0441",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0441",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0442",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0442",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0442",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0443",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0443",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0443",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0444",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0444",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0444",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0445",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0445",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0445",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0446",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0446",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0446",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0447",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0447",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0447",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0448",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0448",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0448",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0449",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0449",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0449",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0450",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0450",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0450",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0451",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0451",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0451",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0452",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0452",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0452",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0453",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0453",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0453",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0454",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0454",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0454",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0455",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0455",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0455",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0456",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0456",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0456",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0457",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0457",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0457",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0458",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0458",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0458",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0459",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0459",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0459",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0460",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0460",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0460",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0461",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0461",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0461",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0462",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0462",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0462",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0463",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0463",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0463",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0464",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0464",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0464",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0465",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0465",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0465",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0466",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0466",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0466",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0467",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0467",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0467",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0468",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0468",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0468",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0469",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0469",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0469",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0470",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0470",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0470",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0471",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0471",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0471",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0472",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0472",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0472",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0473",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0473",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0473",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0474",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0474",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0474",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0475",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0475",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0475",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0476",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0476",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0476",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0477",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0477",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0477",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0478",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0478",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0478",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0479",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0479",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0479",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0480",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0480",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0480",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0481",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0481",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0481",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0482",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0482",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0482",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0483",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0483",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0483",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0484",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0484",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0484",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0485",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0485",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0485",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0486",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0486",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0486",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0487",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0487",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0487",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0488",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0488",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0488",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0489",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0489",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0489",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0490",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0490",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0490",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0491",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0491",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0491",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0492",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0492",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0492",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0493",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0493",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0493",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0494",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0494",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0494",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0495",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0495",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0495",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0496",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0496",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0496",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0497",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0497",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0497",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0498",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0498",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0498",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0499",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0499",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0499",
+      "candidates": []
+    },
+    {
+      "legacyId": "sv:V0500",
+      "legacyFile": "vocab.json",
+      "sourceId": "V0500",
+      "matchType": "EXACT",
+      "newId": "st:JCEE-vocab-questions:cards/cards_data.json:V0500",
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g110-16-1",
+      "legacyFile": "grammar-1.json",
+      "sourceId": "g110-16-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g110-17-1",
+      "legacyFile": "grammar-1.json",
+      "sourceId": "g110-17-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g110-18-1",
+      "legacyFile": "grammar-1.json",
+      "sourceId": "g110-18-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g110-19-1",
+      "legacyFile": "grammar-1.json",
+      "sourceId": "g110-19-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g110-20-1",
+      "legacyFile": "grammar-1.json",
+      "sourceId": "g110-20-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g111-11-1",
+      "legacyFile": "grammar-1.json",
+      "sourceId": "g111-11-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g111-12-1",
+      "legacyFile": "grammar-1.json",
+      "sourceId": "g111-12-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g111-13-1",
+      "legacyFile": "grammar-1.json",
+      "sourceId": "g111-13-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g111-14-1",
+      "legacyFile": "grammar-1.json",
+      "sourceId": "g111-14-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g111-15-1",
+      "legacyFile": "grammar-1.json",
+      "sourceId": "g111-15-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g112-11-1",
+      "legacyFile": "grammar-1.json",
+      "sourceId": "g112-11-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g112-12-1",
+      "legacyFile": "grammar-1.json",
+      "sourceId": "g112-12-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g112-13-1",
+      "legacyFile": "grammar-1.json",
+      "sourceId": "g112-13-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g112-14-1",
+      "legacyFile": "grammar-1.json",
+      "sourceId": "g112-14-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g112-15-1",
+      "legacyFile": "grammar-1.json",
+      "sourceId": "g112-15-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g113-11-1",
+      "legacyFile": "grammar-2.json",
+      "sourceId": "g113-11-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g113-12-1",
+      "legacyFile": "grammar-2.json",
+      "sourceId": "g113-12-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g113-13-1",
+      "legacyFile": "grammar-2.json",
+      "sourceId": "g113-13-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g113-14-1",
+      "legacyFile": "grammar-2.json",
+      "sourceId": "g113-14-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g113-15-1",
+      "legacyFile": "grammar-2.json",
+      "sourceId": "g113-15-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g114-11-1",
+      "legacyFile": "grammar-2.json",
+      "sourceId": "g114-11-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g114-12-1",
+      "legacyFile": "grammar-2.json",
+      "sourceId": "g114-12-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g114-13-1",
+      "legacyFile": "grammar-2.json",
+      "sourceId": "g114-13-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g114-14-1",
+      "legacyFile": "grammar-2.json",
+      "sourceId": "g114-14-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g114-15-1",
+      "legacyFile": "grammar-2.json",
+      "sourceId": "g114-15-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g115-11-1",
+      "legacyFile": "grammar-2.json",
+      "sourceId": "g115-11-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g115-12-1",
+      "legacyFile": "grammar-2.json",
+      "sourceId": "g115-12-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g115-13-1",
+      "legacyFile": "grammar-2.json",
+      "sourceId": "g115-13-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g115-14-1",
+      "legacyFile": "grammar-2.json",
+      "sourceId": "g115-14-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g115-15-1",
+      "legacyFile": "grammar-2.json",
+      "sourceId": "g115-15-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g107-16-1",
+      "legacyFile": "grammar-3.json",
+      "sourceId": "g107-16-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g107-17-1",
+      "legacyFile": "grammar-3.json",
+      "sourceId": "g107-17-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g107-18-1",
+      "legacyFile": "grammar-3.json",
+      "sourceId": "g107-18-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g107-19-1",
+      "legacyFile": "grammar-3.json",
+      "sourceId": "g107-19-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g107-20-1",
+      "legacyFile": "grammar-3.json",
+      "sourceId": "g107-20-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g108-16-1",
+      "legacyFile": "grammar-3.json",
+      "sourceId": "g108-16-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g108-17-1",
+      "legacyFile": "grammar-3.json",
+      "sourceId": "g108-17-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g108-18-1",
+      "legacyFile": "grammar-3.json",
+      "sourceId": "g108-18-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g108-19-1",
+      "legacyFile": "grammar-3.json",
+      "sourceId": "g108-19-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g108-20-1",
+      "legacyFile": "grammar-3.json",
+      "sourceId": "g108-20-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g109-16-1",
+      "legacyFile": "grammar-3.json",
+      "sourceId": "g109-16-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g109-17-1",
+      "legacyFile": "grammar-3.json",
+      "sourceId": "g109-17-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g109-18-1",
+      "legacyFile": "grammar-3.json",
+      "sourceId": "g109-18-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g109-19-1",
+      "legacyFile": "grammar-3.json",
+      "sourceId": "g109-19-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sg:g109-20-1",
+      "legacyFile": "grammar-3.json",
+      "sourceId": "g109-20-1",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg114_39",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg114_39",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg114_39",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg114_40",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg114_40",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg114_40",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg114_41",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg114_41",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg114_41",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg114_42",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg114_42",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg114_42",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg113_39",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg113_39",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg113_39",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg113_40",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg113_40",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg113_40",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg113_41",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg113_41",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg113_41",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg113_42",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg113_42",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg113_42",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg112_39",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg112_39",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg112_39",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg112_40",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg112_40",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg112_40",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg112_41",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg112_41",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg112_41",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg112_42",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg112_42",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg112_42",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg111_39",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg111_39",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg111_39",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg111_40",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg111_40",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg111_40",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg111_41",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg111_41",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg111_41",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg111_42",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg111_42",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg111_42",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg110_45",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg110_45",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg110_45",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg110_46",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg110_46",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg110_46",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg110_47",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg110_47",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg110_47",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg110_48",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg110_48",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg110_48",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg109_45",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg109_45",
+      "matchType": "AMBIGUOUS",
+      "newId": null,
+      "candidates": [
+        "st:reading-comprehension:gsat/items.json:Rg109_45",
+        "st:reading-comprehension:gsat/items.json:Rg115r_39"
+      ]
+    },
+    {
+      "legacyId": "sr:Rg109_46",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg109_46",
+      "matchType": "AMBIGUOUS",
+      "newId": null,
+      "candidates": [
+        "st:reading-comprehension:gsat/items.json:Rg109_46",
+        "st:reading-comprehension:gsat/items.json:Rg115r_40"
+      ]
+    },
+    {
+      "legacyId": "sr:Rg109_47",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg109_47",
+      "matchType": "AMBIGUOUS",
+      "newId": null,
+      "candidates": [
+        "st:reading-comprehension:gsat/items.json:Rg109_47",
+        "st:reading-comprehension:gsat/items.json:Rg115r_41"
+      ]
+    },
+    {
+      "legacyId": "sr:Rg109_48",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg109_48",
+      "matchType": "AMBIGUOUS",
+      "newId": null,
+      "candidates": [
+        "st:reading-comprehension:gsat/items.json:Rg109_48",
+        "st:reading-comprehension:gsat/items.json:Rg115r_42"
+      ]
+    },
+    {
+      "legacyId": "sr:Rg108_45",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg108_45",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg108_45",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg108_46",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg108_46",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg108_46",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg108_47",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg108_47",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg108_47",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg108_48",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg108_48",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg108_48",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg107_45",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg107_45",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg107_45",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg107_46",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg107_46",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg107_46",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg107_47",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg107_47",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg107_47",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg107_48",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg107_48",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg107_48",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg106_45",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg106_45",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg106_45",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg106_46",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg106_46",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg106_46",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg106_47",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg106_47",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg106_47",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg106_48",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg106_48",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg106_48",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg105_45",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg105_45",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg105_45",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg105_46",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg105_46",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg105_46",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg105_47",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg105_47",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg105_47",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg105_48",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg105_48",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg105_48",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg104_45",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg104_45",
+      "matchType": "AMBIGUOUS",
+      "newId": null,
+      "candidates": [
+        "st:reading-comprehension:gsat/items.json:Rg104_45",
+        "st:reading-comprehension:gsat/items.json:Rg107r_41"
+      ]
+    },
+    {
+      "legacyId": "sr:Rg104_46",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg104_46",
+      "matchType": "AMBIGUOUS",
+      "newId": null,
+      "candidates": [
+        "st:reading-comprehension:gsat/items.json:Rg104_46",
+        "st:reading-comprehension:gsat/items.json:Rg107r_42"
+      ]
+    },
+    {
+      "legacyId": "sr:Rg104_47",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg104_47",
+      "matchType": "AMBIGUOUS",
+      "newId": null,
+      "candidates": [
+        "st:reading-comprehension:gsat/items.json:Rg104_47",
+        "st:reading-comprehension:gsat/items.json:Rg107r_43"
+      ]
+    },
+    {
+      "legacyId": "sr:Rg104_48",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg104_48",
+      "matchType": "AMBIGUOUS",
+      "newId": null,
+      "candidates": [
+        "st:reading-comprehension:gsat/items.json:Rg104_48",
+        "st:reading-comprehension:gsat/items.json:Rg107r_44"
+      ]
+    },
+    {
+      "legacyId": "sr:Rg103_45",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg103_45",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg103_45",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg103_46",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg103_46",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg103_46",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg103_47",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg103_47",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg103_47",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg103_48",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg103_48",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg103_48",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg102_45",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg102_45",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg102_45",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg102_46",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg102_46",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg102_46",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg102_47",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg102_47",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg102_47",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg102_48",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg102_48",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg102_48",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg114_35",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg114_35",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg114_35",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg114_37",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg114_37",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg114_37",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg114_38",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg114_38",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg114_38",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg112_35",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg112_35",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg112_35",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg112_36",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg112_36",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg112_36",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg112_37",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg112_37",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg112_37",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg112_38",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg112_38",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg112_38",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg110_41",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg110_41",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg110_41",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg110_42",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg110_42",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg110_42",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg110_43",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg110_43",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg110_43",
+      "candidates": []
+    },
+    {
+      "legacyId": "sr:Rg110_44",
+      "legacyFile": "reading.json",
+      "sourceId": "Rg110_44",
+      "matchType": "EXACT",
+      "newId": "st:reading-comprehension:gsat/items.json:Rg110_44",
+      "candidates": []
+    },
+    {
+      "legacyId": "sp:Vy115_21",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy115_21",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy115_21"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy115_22",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy115_22",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy115_22"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy115_23",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy115_23",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy115_23"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy115_24",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy115_24",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy115_24"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy115_25",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy115_25",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy115_25"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy115_26",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy115_26",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy115_26"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy115_27",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy115_27",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy115_27"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy115_28",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy115_28",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy115_28"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy115_29",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy115_29",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy115_29"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy115_30",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy115_30",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy115_30"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy114_21",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy114_21",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy114_21"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy114_22",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy114_22",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy114_22"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy114_23",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy114_23",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy114_23"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy114_24",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy114_24",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy114_24"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy114_25",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy114_25",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy114_25"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy114_26",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy114_26",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy114_26"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy114_27",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy114_27",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy114_27"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy114_28",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy114_28",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy114_28"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy114_29",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy114_29",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy114_29"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy114_30",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy114_30",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy114_30"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy113_21",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy113_21",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy113_21"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy113_22",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy113_22",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy113_22"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy113_23",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy113_23",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy113_23"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy113_24",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy113_24",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy113_24"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy113_25",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy113_25",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy113_25"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy113_26",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy113_26",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy113_26"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy113_27",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy113_27",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy113_27"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy113_28",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy113_28",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy113_28"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy113_29",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy113_29",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy113_29"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy113_30",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy113_30",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy113_30"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy112_21",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy112_21",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy112_21"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy112_22",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy112_22",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy112_22"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy112_23",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy112_23",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy112_23"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy112_24",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy112_24",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy112_24"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy112_25",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy112_25",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy112_25"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy112_26",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy112_26",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy112_26"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy112_27",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy112_27",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy112_27"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy112_28",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy112_28",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy112_28"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy112_29",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy112_29",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy112_29"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy112_30",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy112_30",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy112_30"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy111r_21",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy111r_21",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy111r_21"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy111r_22",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy111r_22",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy111r_22"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy111r_23",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy111r_23",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy111r_23"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy111r_24",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy111r_24",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy111r_24"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy111r_25",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy111r_25",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy111r_25"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy111r_26",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy111r_26",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy111r_26"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy111r_27",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy111r_27",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy111r_27"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy111r_28",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy111r_28",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy111r_28"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy111r_29",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy111r_29",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy111r_29"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy111r_30",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy111r_30",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy111r_30"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy110_31",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy110_31",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy110_31"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy110_32",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy110_32",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy110_32"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy110_33",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy110_33",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy110_33"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy110_34",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy110_34",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy110_34"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy110_35",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy110_35",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy110_35"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy110_36",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy110_36",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy110_36"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy110_37",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy110_37",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy110_37"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy110_38",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy110_38",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy110_38"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy110_39",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy110_39",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy110_39"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy110_40",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy110_40",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy110_40"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy109_31",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy109_31",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy109_31"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy109_32",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy109_32",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy109_32"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy109_33",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy109_33",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy109_33"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy109_34",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy109_34",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy109_34"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy109_35",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy109_35",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy109_35"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy109_36",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy109_36",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy109_36"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy109_37",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy109_37",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy109_37"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy109_38",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy109_38",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy109_38"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy109_39",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy109_39",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy109_39"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy109_40",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy109_40",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy109_40"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy108_31",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy108_31",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy108_31"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy108_32",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy108_32",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy108_32"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy108_33",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy108_33",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy108_33"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy108_34",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy108_34",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy108_34"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy108_35",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy108_35",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy108_35"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy108_36",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy108_36",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy108_36"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy108_37",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy108_37",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy108_37"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy108_38",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy108_38",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy108_38"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy108_39",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy108_39",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy108_39"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy108_40",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy108_40",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy108_40"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy107_31",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy107_31",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy107_31"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy107_32",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy107_32",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy107_32"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy107_33",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy107_33",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy107_33"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy107_34",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy107_34",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy107_34"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy107_35",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy107_35",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy107_35"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy107_36",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy107_36",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy107_36"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy107_37",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy107_37",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy107_37"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy107_38",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy107_38",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy107_38"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy107_39",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy107_39",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy107_39"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy107_40",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy107_40",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy107_40"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy106_31",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy106_31",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy106_31"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy106_32",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy106_32",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy106_32"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy106_33",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy106_33",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy106_33"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy106_34",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy106_34",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy106_34"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy106_35",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy106_35",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy106_35"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy106_36",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy106_36",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy106_36"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy106_37",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy106_37",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy106_37"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy106_38",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy106_38",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy106_38"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy106_39",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy106_39",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy106_39"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy106_40",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy106_40",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy106_40"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy105_31",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy105_31",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy105_31"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy105_32",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy105_32",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy105_32"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy105_33",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy105_33",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy105_33"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy105_34",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy105_34",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy105_34"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy105_35",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy105_35",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy105_35"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy105_36",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy105_36",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy105_36"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy105_37",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy105_37",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy105_37"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy105_38",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy105_38",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy105_38"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy105_39",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy105_39",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy105_39"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy105_40",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy105_40",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy105_40"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy104_31",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy104_31",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy104_31"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy104_32",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy104_32",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy104_32"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy104_33",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy104_33",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy104_33"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy104_34",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy104_34",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy104_34"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy104_35",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy104_35",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy104_35"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy104_36",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy104_36",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy104_36"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy104_37",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy104_37",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy104_37"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy104_38",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy104_38",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy104_38"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy104_39",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy104_39",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy104_39"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy104_40",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy104_40",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy104_40"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy103_31",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy103_31",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy103_31"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy103_32",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy103_32",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy103_32"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy103_33",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy103_33",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy103_33"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy103_34",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy103_34",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy103_34"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy103_35",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy103_35",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy103_35"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy103_36",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy103_36",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy103_36"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy103_37",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy103_37",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy103_37"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy103_38",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy103_38",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy103_38"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy103_39",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy103_39",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy103_39"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy103_40",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy103_40",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy103_40"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy102_31",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy102_31",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy102_31"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy102_32",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy102_32",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy102_32"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy102_33",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy102_33",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy102_33"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy102_34",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy102_34",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy102_34"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy102_35",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy102_35",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy102_35"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy102_36",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy102_36",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy102_36"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy102_37",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy102_37",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy102_37"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy102_38",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy102_38",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy102_38"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy102_39",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy102_39",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy102_39"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy102_40",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy102_40",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy102_40"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy101_31",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy101_31",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy101_31"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy101_32",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy101_32",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy101_32"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy101_33",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy101_33",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy101_33"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy101_34",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy101_34",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy101_34"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy101_35",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy101_35",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy101_35"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy101_36",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy101_36",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy101_36"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy101_37",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy101_37",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy101_37"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy101_38",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy101_38",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy101_38"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy101_39",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy101_39",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy101_39"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy101_40",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy101_40",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy101_40"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy100_31",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy100_31",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy100_31"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy100_32",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy100_32",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy100_32"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy100_33",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy100_33",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy100_33"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy100_34",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy100_34",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy100_34"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy100_35",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy100_35",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy100_35"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy100_36",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy100_36",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy100_36"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy100_37",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy100_37",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy100_37"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy100_38",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy100_38",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy100_38"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy100_39",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy100_39",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy100_39"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy100_40",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy100_40",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy100_40"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy99_31",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy99_31",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy99_31"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy99_32",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy99_32",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy99_32"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy99_33",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy99_33",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy99_33"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy99_34",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy99_34",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy99_34"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy99_35",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy99_35",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy99_35"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy99_36",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy99_36",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy99_36"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy99_37",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy99_37",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy99_37"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy99_38",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy99_38",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy99_38"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy99_39",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy99_39",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy99_39"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy99_40",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy99_40",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy99_40"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy98_31",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy98_31",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy98_31"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy98_32",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy98_32",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy98_32"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy98_33",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy98_33",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy98_33"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy98_34",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy98_34",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy98_34"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy98_35",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy98_35",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy98_35"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy98_36",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy98_36",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy98_36"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy98_37",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy98_37",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy98_37"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy98_38",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy98_38",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy98_38"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy98_39",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy98_39",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy98_39"
+      ]
+    },
+    {
+      "legacyId": "sp:Vy98_40",
+      "legacyFile": "completion.json",
+      "sourceId": "Vy98_40",
+      "matchType": "UNMATCHED",
+      "newId": null,
+      "candidates": [
+        "st:passage-completion:gsat/items.json:Vy98_40"
+      ]
+    }
+  ],
+  "count": {
+    "EXACT": 435,
+    "UNMATCHED": 225,
+    "AMBIGUOUS": 8
+  },
+  "notice": "EXACT means exact normalized prompt/options/answer only; must still verify provenance before migration. No records transferred."
+}

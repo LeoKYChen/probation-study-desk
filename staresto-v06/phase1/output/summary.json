@@ -1,0 +1,52 @@
+{
+  "schema": "staresto-v06-phase1-v1",
+  "upstreamSnapshot": "2026-10-16",
+  "sourceFiles": 2089,
+  "jsonDatasets": 45,
+  "sourceCandidateRows": 4733,
+  "structurallyPrequalified": 2530,
+  "notYetCleared": 2203,
+  "allowedForProduction": 0,
+  "duplicateCandidateGroups": 0,
+  "duplicateExtraRows": 0,
+  "status": {
+    "暫緩納入": 2203,
+    "結構驗證通過・待內容及權利審核": 2530
+  },
+  "prequalifiedByCategory": {
+    "詞彙與字卡": 582,
+    "篇章結構": 135,
+    "文法與克漏字": 795,
+    "文意選填": 200,
+    "閱讀理解": 818
+  },
+  "examSourceTypes": {
+    "考試來源未確認": 904,
+    "正式題候選（來源待逐筆確認）": 2902,
+    "參考／試辦（另行核對）": 377,
+    "改編題（另行核對）": 550
+  },
+  "blockingReasons": {
+    "考試來源未確認": 904,
+    "參考／試辦（另行核對）": 330,
+    "改編題（另行核對）": 480,
+    "答案不在選項": 530,
+    "選項不足或數量異常": 507,
+    "非標準四選一題型，先獨立審查": 507,
+    "題幹不足": 6,
+    "篇章素材（非獨立試題）": 407,
+    "來源權利待確認": 269,
+    "原始試題依賴媒體": 41,
+    "需人工整理": 86,
+    "缺少篇章": 166,
+    "題組篇章未完整連結": 166,
+    "需要媒體": 13,
+    "相同選項": 7
+  },
+  "legacyMapping": {
+    "EXACT": 435,
+    "UNMATCHED": 225,
+    "AMBIGUOUS": 8
+  },
+  "warning": "All prequalified rows remain unpublished pending human quality and rights review. No daily plans or localStorage modified."
+}
