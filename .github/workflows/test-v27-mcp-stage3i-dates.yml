@@ -1,0 +1,55 @@
+name: v2.7 MCP stage 3i ten official date and case-identity checks
+
+on:
+  push:
+    branches:
+      - experiment/v27-mcp-stage3i
+    paths:
+      - 'experiments/v27-mcp-poc/stage3i_ten_official_dates.py'
+      - '.github/workflows/test-v27-mcp-stage3i-dates.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ten-case-metadata:
+    name: Verify ten official court/date identities, no text reread via MCP
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install minimal parser and HTTP packages, no MCP or API credentials
+        run: python -m pip install 'httpx>=0.27,<0.29' 'beautifulsoup4>=4.12,<5' 'lxml>=5,<7'
+      - name: Check metadata-only fixtures and syntax
+        run: |
+          python -m py_compile experiments/v27-mcp-poc/stage3i_ten_official_dates.py
+          python experiments/v27-mcp-poc/stage3i_ten_official_dates.py --mode selftest
+      - name: Check ten already-identified court/date metadata fields
+        run: timeout 400s python -u experiments/v27-mcp-poc/stage3i_ten_official_dates.py --mode live
+      - name: Verify no court document or private service published
+        if: always()
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          source=Path("experiments/v27-mcp-poc/stage3i_ten_official_dates.py").read_text()
+          assert "MAX_HTTP_GET=10" in source
+          assert "mcp_fulltext_rerun" in source
+          assert '"court_html_saved":False' in source
+          assert 'report["stage3_accepted"]=False' in source
+          assert 'status:404' in Path("services/v2.7-judgment/private-worker.mjs").read_text()
+          print("Stage3i court/date checking is research-only, not a deployed API")
+          PY
+      - name: Save only verified dates/identity flags, not judgment body
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v27-mcp-stage3i-ten-official-date-metadata
+          path: v27-stage3i-official-dates.json
+          if-no-files-found: warn
+          retention-days: 14
