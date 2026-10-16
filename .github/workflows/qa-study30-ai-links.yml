@@ -49,5 +49,13 @@ jobs:
           grep -n -A 5 -B 4 'window.Study30App=' deploy-dist/app.js | head -28
           grep -n -A 7 -B 6 'essayFullAnswer' deploy-dist/index.html | head -25
           node study30-addons/test-v254.cjs deploy-dist
+      - name: Install Chromium for real browser test
+        run: |
+          npm install --prefix /tmp/daily30-playwright --no-save playwright@1.56.1
+          /tmp/daily30-playwright/node_modules/.bin/playwright install --with-deps chromium
+      - name: Run Daily30 browser integration
+        env:
+          NODE_PATH: /tmp/daily30-playwright/node_modules
+        run: node study30-addons/test-stage9-browser.cjs deploy-dist
       - name: No deployment
         run: echo "Test branch only. Nothing deployed."
