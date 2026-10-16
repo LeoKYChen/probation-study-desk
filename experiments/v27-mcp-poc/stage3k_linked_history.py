@@ -167,6 +167,7 @@ def source_identity(html,jid):
 
 def choose_candidates(official_items,seen):
     eligible=[]
+    locally_seen=set()
     counters={"non_linked":0,"sensitive_or_unapproved":0,
               "duplicate_or_previously_checked":0,"eligible":0}
     for item in official_items:
@@ -177,10 +178,11 @@ def choose_candidates(official_items,seen):
             else:
                 counters["sensitive_or_unapproved"]+=1
             continue
-        if jid in seen or jid in KNOWN_ORIGINALS:
+        if jid in seen or jid in locally_seen or jid in KNOWN_ORIGINALS:
             counters["duplicate_or_previously_checked"]+=1
             continue
         eligible.append(jid)
+        locally_seen.add(jid)
     counters["eligible"]=len(eligible)
     # Diverse positions among the parent's listed links, without broad crawling.
     # The selected JIDs stay in process memory and are NOT serialized.
@@ -328,8 +330,13 @@ def selftest():
     assert classify_link({**x,"jid":"TPHV,114,家上,1,20251231,1"})[0] is None
     assert classify_link({**x,"url":"https://judgment.judicial.gov.tw.evil.test/FJUD/data.aspx"})[0] is None
     assert classify_link({**x,"url":x["url"]+"&next=https://evil.test"})[0] is None
-    selected,counters=choose_candidates([x,x,{"has_link":False,"jid":"","url":""}],set())
-    assert len(selected)==2 and counters["non_linked"]==1
+    second="TPHV,114,上易,124,20251230,1"
+    y={"has_link":True,"jid":second,
+       "url":"https://judgment.judicial.gov.tw/FJUD/data.aspx?"
+             +urlencode({"ty":"JD","id":second})}
+    selected,counters=choose_candidates([x,x,y,{"has_link":False,"jid":"","url":""}],set())
+    assert len(selected)==2 and len(set(selected))==2
+    assert counters["non_linked"]==1 and counters["duplicate_or_previously_checked"]==1
     selected,counters=choose_candidates([x],{safe})
     assert not selected and counters["duplicate_or_previously_checked"]==1
     assert history_source_url_ok(HISTORY_BASE+"ABC%2CDEF","ABC%2CDEF")
