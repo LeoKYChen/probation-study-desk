@@ -46,7 +46,12 @@ jobs:
           cp study30-addons/daily-essay-workbench.js deploy-dist/daily-essay-workbench.js
           node study30-addons/patch-v254.cjs deploy-dist
           cp study30-addons/v254-diagnostics.js deploy-dist/v254-diagnostics.js
-          for required in index.html style.css app.js review-core.js review-simulator.js essay.js essay-rubric-core.js essay-selfcheck.js essay-review.js essay-analytics.js weakness-priority.js source-main-questions.js source-related-questions.js question-sources.js data-health.js backup-import.js daily-essay-workbench.js v254-diagnostics.js; do
+          git fetch --depth=1 origin main
+          git show FETCH_HEAD:v2.5/shuati-links.js > deploy-dist/study30-shuati-links.js
+          git show FETCH_HEAD:v2.5/yamol-links.js > deploy-dist/study30-yamol-links.js
+          node study30-addons/patch-stage9-ai-links.cjs deploy-dist
+          cp study30-addons/ai-review-links.js deploy-dist/ai-review-links.js
+          for required in index.html style.css app.js review-core.js review-simulator.js essay.js essay-rubric-core.js essay-selfcheck.js essay-review.js essay-analytics.js weakness-priority.js source-main-questions.js source-related-questions.js question-sources.js data-health.js backup-import.js daily-essay-workbench.js v254-diagnostics.js study30-shuati-links.js study30-yamol-links.js ai-review-links.js; do
             test -s "deploy-dist/$required" || { echo "Missing: $required"; exit 1; }
           done
           for script in deploy-dist/*.js; do node --check "$script"; done
@@ -78,6 +83,9 @@ jobs:
           node --check study30-addons/patch-v254.cjs
           node --check study30-addons/test-v254.cjs
           node study30-addons/test-v254.cjs deploy-dist
+          node --check study30-addons/patch-stage9-ai-links.cjs
+          node --check study30-addons/test-stage9-ai-links.cjs
+          node study30-addons/test-stage9-ai-links.cjs deploy-dist
 
       - name: Deploy to existing Cloudflare Pages project
         uses: cloudflare/wrangler-action@v4
