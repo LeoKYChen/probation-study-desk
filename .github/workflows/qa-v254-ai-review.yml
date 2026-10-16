@@ -112,7 +112,7 @@ jobs:
             await page.locator('#ai-simple-feedback').fill('公開站隔離瀏覽器驗收評語');
             await check('PUBLIC Pages saves own feedback',async()=>{const q=await page.evaluate('Practice25.getQuestion().id');assert.equal(await page.evaluate(id=>JSON.parse(localStorage.getItem('probation-study-desk-v24'))[id].aiFeedback,q),'公開站隔離瀏覽器驗收評語')});
             const [publicDownload]=await Promise.all([page.waitForEvent('download'),page.locator('#exportButton').click()]);
-            await check('PUBLIC Pages backup filename uses ROC padded date',async()=>assert.match(publicDownload.suggestedFilename(),/^\\d{3}年\\d{2}月\\d{2}日學習紀錄備份\\.json$/));
+            await check('PUBLIC Pages backup filename uses ROC padded date',async()=>assert.match(publicDownload.suggestedFilename(),/^\d{3}年\d{2}月\d{2}日學習紀錄備份\.json$/));
             console.log('PASSED',results.length,'real-browser checks. Page errors:',errors.slice(0,8));
             await browser.close();
           })().then(()=>{server.close()}).catch(e=>{console.error('QA FAILED:',e);server.close();process.exitCode=1});
