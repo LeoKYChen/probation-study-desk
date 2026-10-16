@@ -1,0 +1,136 @@
+name: v2.7 MCP stage 3p official PDF usage and withdrawal planning
+
+on:
+  push:
+    branches:
+      - experiment/v27-mcp-stage3p
+    paths:
+      - 'experiments/v27-mcp-poc/stage3p-official-pdf-policy.cjs'
+      - 'experiments/v27-mcp-poc/stage3p-official-pdf-policy.test.cjs'
+      - '.github/workflows/test-v27-mcp-stage3p.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  official-pdf-rules:
+    name: Read-only offline official source and synthetic lifecycle policy checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      JUDICIAL_API_LIVE_ENABLED: 'false'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Static no-network and no-real-PDF gate
+        run: |
+          node --check experiments/v27-mcp-poc/stage3p-official-pdf-policy.cjs
+          node --check experiments/v27-mcp-poc/stage3p-official-pdf-policy.test.cjs
+          python3 - <<'PY'
+          from pathlib import Path
+          policy=Path("experiments/v27-mcp-poc/stage3p-official-pdf-policy.cjs").read_text()
+          test=Path("experiments/v27-mcp-poc/stage3p-official-pdf-policy.test.cjs").read_text()
+          for module in ('require("node:http")','require("node:https")',
+                         'require("fs")','require("node:fs")',
+                         'fetch(', 'process.env','child_process'):
+              assert module not in policy, f"unexpected runtime capability: {module}"
+          for guard in ('JDocFile','JAttFile','JFile',
+                        'same_jid_updated','withdrawn',
+                        'permissionToFetchPdf: false',
+                        'actualPurgeProven: false',
+                        'realPdfFullTextVerified: false',
+                        'stage3Accepted: false'):
+              assert guard in policy, f"missing policy gate: {guard}"
+          assert "TEST" in test and "SYNTHETIC" in test
+          assert "status:404" in Path(
+              "services/v2.7-judgment/private-worker.mjs").read_text()
+          assert Path("development/v2.7").is_dir()
+          print("Stage3p offline-only, official URLs are documentation/shape not HTTP requests")
+          PY
+      - name: Stage 3p source role, usage assumptions and deletion-lifecycle tests
+        run: node --test experiments/v27-mcp-poc/stage3p-official-pdf-policy.test.cjs
+      - name: Previous mock court security and disabled service regressions
+        run: |
+          node --test \
+            experiments/v27-mcp-poc/stage3d-link-only.test.cjs \
+            experiments/v27-mcp-poc/stage3e-click-recheck.test.cjs \
+            experiments/v27-mcp-poc/stage3f-ui/model.test.cjs \
+            experiments/v27-mcp-poc/stage3g-official-source-gate.test.cjs \
+            services/v2.7-judgment/*.test.cjs
+      - name: Enforce five new-file-only experiment boundary
+        run: |
+          git fetch --no-tags --depth=2 origin experiment/v27-mcp-stage3o
+          python3 - <<'PY'
+          import subprocess
+          changed=subprocess.check_output(
+              ["git","diff","--name-only","FETCH_HEAD","HEAD"],text=True).splitlines()
+          allowed={
+              "experiments/v27-mcp-poc/stage3p-official-pdf-policy.cjs",
+              "experiments/v27-mcp-poc/stage3p-official-pdf-policy.test.cjs",
+              "experiments/v27-mcp-poc/STAGE3P.md",
+              "experiments/v27-mcp-poc/STAGE3P_RESULT.md",
+              ".github/workflows/test-v27-mcp-stage3p.yml",
+          }
+          assert all(name in allowed for name in changed), changed
+          assert not any(name.startswith(("development/","services/"))
+                         for name in changed), changed
+          print("Changes restricted to isolated Stage3p branch files:",changed)
+          PY
+      - name: Write metadata-only checklist result
+        run: |
+          node - <<'JS'
+          const fs=require("node:fs");
+          const {
+            SOURCE_CATEGORIES,REPLICA_TARGETS,READINESS_CHECKS,
+            classifyPdfSource,assessPilotReadiness,simulateLifecycle
+          }=require("./experiments/v27-mcp-poc/stage3p-official-pdf-policy.cjs");
+          const source={
+            kind:"jdoc_primary_file",jfulltype:"file",
+            jfullpdf:"https://data.judicial.gov.tw/jdg/api/JDocFile/SYNTHETIC_ONLY.pdf"
+          };
+          const r=assessPilotReadiness({
+            source,planningDate:new Date("2026-10-16T18:00:00Z"),
+            assertions:Object.fromEntries(READINESS_CHECKS.map(k=>[k,true]))
+          });
+          if(r.permissionToFetchPdf||r.permissionToCallRealApi||r.stage3Accepted)
+            throw Error("offline source gate unexpectedly opened");
+          const withdrawal=simulateLifecycle({
+            event:"withdrawn",
+            acknowledgments:Object.fromEntries(REPLICA_TARGETS.map(k=>[k,true]))
+          });
+          if(withdrawal.actualPurgeProven||withdrawal.caseCanBeServedAgain)
+            throw Error("synthetic purge was misrepresented as real");
+          const out={
+            stage:"Stage3p official PDF intake/withdrawal policies, OFFLINE",
+            source_categories:SOURCE_CATEGORIES.length,
+            readiness_items:READINESS_CHECKS.length,
+            replica_targets:REPLICA_TARGETS.length,
+            documented_jdoc_file_shape_recognized:
+              classifyPdfSource(source).matchesDocumentedOfficialEndpointShape,
+            real_api_accessed:false,
+            real_pdf_downloads:0,
+            official_authorization_independently_verified:false,
+            real_pdf_verified:false,
+            official_withdrawal_received:false,
+            actual_case_data_purged:false,
+            live_individual_case_link_allowed:false,
+            website_modified:false,
+            stage3_accepted:false
+          };
+          fs.writeFileSync("stage3p-official-pdf-policy-summary.json",
+            JSON.stringify(out,null,2)+"\n");
+          console.log(JSON.stringify(out));
+          JS
+      - name: Save audit counters only, never real PDF data or URLs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v27-stage3p-official-pdf-policy-report
+          path: stage3p-official-pdf-policy-summary.json
+          if-no-files-found: warn
+          retention-days: 14
