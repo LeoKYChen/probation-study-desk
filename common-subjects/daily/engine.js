@@ -37,7 +37,7 @@ function stage(state){
  const entries=Object.values(state.progress).filter(x=>Array.isArray(x.attempts)&&x.attempts.length);
  const total=entries.length,correct=entries.filter(x=>x.attempts[0].correct).length;
  const active=new Set(entries.flatMap(x=>x.attempts.map(a=>a.date)).filter(Boolean)).size;
- const recentEntries=entries.flatMap(x=>x.attempts).slice(-60),ratio=recentEntries.length?recentEntries.filter(x=>x.correct).length/recentEntries.length:0;
+ const recentEntries=entries.flatMap(x=>x.attempts).sort((a,b)=>String(a.at||'').localeCompare(String(b.at||''))).slice(-60),ratio=recentEntries.length?recentEntries.filter(x=>x.correct).length/recentEntries.length:0;
  const level=total>=120&&active>=18&&ratio>=.8?3:total>=45&&active>=9&&ratio>=.7?2:1;
  return {level,attempted:total,activeDays:active,firstAccuracy:total?Math.round(100*correct/total):null,recentAccuracy:recentEntries.length?Math.round(100*ratio):null};
 }
@@ -88,7 +88,7 @@ function buildDay(bank,state,date){
  if(w===1){add('vocab','歷屆學測單字 · 8題','quiz',vocab(8),10);add('cards','單字記憶卡 · 5個','cards',cards(5),5)}
  if(w===2){add('grammar','學測克漏字 · 1組','quiz',group('grammar'),20)}
  if(w===3){add('cards','字彙記憶卡 · 10個','cards',cards(10),10);add('vocab','易混淆單字 · 4題','quiz',vocab(4),8)}
- if(w===4){add('reading','學測閱讀理解 · 1篇','quiz',group('reading'),25)}
+ if(w===4){add('reading','學測閱讀理解 · 1篇','quiz',group('reading'),20)}
  if(w===5){add('grammar','文法補強 · 克漏字1組','quiz',group('grammar'),20)}
  if(w===6){add('completion','學測文意選填 · 1篇','quiz',group('completion'),25)}
  if(w===0){const due=dueItems(bank,state,date).slice(0,10).map(q=>q.id);
