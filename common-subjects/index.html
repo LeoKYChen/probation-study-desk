@@ -4,7 +4,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#153c38">
 <meta name="description" content="116年司法特考三等觀護人共同科目：國文作文精修與英文練習。">
-<title>國考英文＋作文 v0.2｜觀護人練習臺</title>
+<title>國考英文＋作文 v0.3｜觀護人練習臺</title>
 <style>
 :root{--green:#164e42;--ink:#203831;--muted:#63746c;--line:#d8e4dc;--paper:#f5f7f3;--white:#fff;--soft:#e8f2ec}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Noto Sans TC",sans-serif}a{color:var(--green)}button,select,textarea,input{font:inherit}button{cursor:pointer}button:disabled{opacity:.5;cursor:not-allowed}button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #dba54b;outline-offset:2px}[hidden]{display:none!important}
@@ -14,9 +14,10 @@ main{max-width:1120px;margin:auto;padding:24px}.hero{display:grid;grid-template-
 footer{border-top:1px solid var(--line);padding:22px 0;margin-top:25px;color:var(--muted);font-size:.82rem}
 @media(max-width:750px){header .inner{padding:15px}main{padding:16px}.hero,.layout,.bottom{grid-template-columns:1fr}.panel{padding:16px}.stats{grid-template-columns:1fr}.rubric,.compare-grid{grid-template-columns:1fr}#essayText{min-height:270px}.tabs button{flex:1}}
 </style>
+<link rel="stylesheet" href="./staresto.css">
 </head>
 <body>
-<header><div class="inner"><a class="brand" href="../">觀護人練習臺<small>116年司法特考｜共同科目 v0.2</small></a><nav><a href="../">主站首頁</a><a href="../v2.5/">考古題練習</a></nav></div></header>
+<header><div class="inner"><a class="brand" href="../">觀護人練習臺<small>116年司法特考｜共同科目 v0.3</small></a><nav><a href="../">主站首頁</a><a href="../v2.5/">考古題練習</a></nav></div></header>
 <main>
 <section class="hero"><div><div class="eyebrow">Common Subjects · Pilot</div><h1>每天一點進步，<br>累積英文實力與作文文筆。</h1><p>作文保留原意、練習逐句精修；英文從基礎題型開始，累積錯題與解析。</p></div><aside class="hero-note"><strong>與 v2.5.4 分開儲存</strong><p>獨立練習模組，不讀寫原有342題專業題庫、每日任務或補強紀錄。請定期匯出備份。</p></aside></section>
 <nav class="tabs" aria-label="共同科目功能"><button id="tabEssay" class="active" type="button">✍ 國文作文</button><button id="tabEnglish" type="button">A+ 國考英文</button><button id="tabRecords" type="button">▤ 學習紀錄</button></nav>
@@ -33,11 +34,23 @@ footer{border-top:1px solid var(--line);padding:22px 0;margin-top:25px;color:var
   </div>
   <div class="panel"><h3>初稿與修訂稿對照</h3><p class="small">先按「儲存修訂版本」保存初稿，參考批改回饋修改後，就能對照前後差異。系統只顯示文字變化，不會把字數增加當成文筆進步。</p><div class="buttons"><label for="compareBase" style="flex:1;min-width:180px;margin:0">對照基準版本<select id="compareBase"><option value="">尚無版本</option></select></label><button class="btn" type="button" id="compareRefresh">更新對照</button></div><div class="compare-grid"><div><strong>原稿（選定的已存版本）</strong><pre id="compareOriginal" class="vpreview">尚未儲存任何版本</pre></div><div><strong>現在的草稿（修訂中）</strong><pre id="compareCurrent" class="vpreview">尚未開始寫作</pre></div></div><p class="small" id="compareSummary">儲存初稿後，就能開始比較。</p></div>
 </section>
-<section id="panelEnglish" hidden><h2>國考英文｜80題分級練習</h2><div class="panel"><div class="editor-bar"><h3>每日五題・循序漸進</h3><button class="btn primary" id="startDaily" type="button">開始今日五題</button></div><p id="dailySummary" class="small">每天固定選出五題，兼顧新題與需要加強的題目。</p><div id="dailyProgress" class="small" role="status"></div></div><div class="panel english-bar"><div><strong id="answered">0 / 80</strong><span class="small"> 已作答</span></div><div><label for="filter">題型／複習</label><select id="filter"><option value="all">全部</option><option value="daily">今日五題</option><option value="wrong">錯題／待加強</option><option value="vocab">單字</option><option value="grammar">文法</option><option value="reading">閱讀</option><option value="cloze">克漏字</option></select></div><div><label for="questionPick">題號</label><select id="questionPick"></select></div></div><div class="panel english-card"><div class="eyebrow" id="category"></div><h3 id="enQuestion"></h3><p id="passage" class="reading" hidden></p><div class="options" id="options"></div><div id="explanation" class="explain" hidden></div><div class="buttons"><button class="btn" id="prevQuestion">上一題</button><button class="btn" id="retryQuestion">重練本題</button><button class="btn primary" id="nextQuestion">下一題</button></div></div><p class="small">80題均為原創練習題（既有20題加新增60題），附翻譯與解析，不代表考選部歷屆題目或正式難度。點「重練本題」只清除目前顯示的答案，歷次作答紀錄仍保留。</p></section>
-<section id="panelRecords" hidden><h2>學習紀錄與備份</h2><div class="stats"><div class="stat"><strong id="draftsStat">0</strong><span>作文草稿</span></div><div class="stat"><strong id="versionsStat">0</strong><span>修訂版本</span></div><div class="stat"><strong id="englishStat">—</strong><span>英文各題首次作答正確率</span></div></div><div class="panel"><h3>英文練習概況</h3><p id="enHistoryStat" class="small">尚無作答紀錄</p><p class="small">答錯後重練不會刪除原有紀錄；正確率以每題首次作答計算，避免重練後虛增。</p></div><div class="panel"><h3>備份與還原</h3><p>備份僅包含本模組的作文、自評、回饋與英文作答，不會包含 v2.5.4 其他資料。</p><div class="buttons"><button class="btn primary" id="export">匯出 JSON</button><label class="btn" for="importFile" style="display:inline-block;margin:0">匯入 JSON</label><input type="file" accept=".json,application/json" id="importFile" hidden></div><p class="small">匯入會取代本模組資料，請先備份。不要把含私人文字的 JSON 上傳公開儲存庫。</p></div><div class="panel"><h3>最近作文</h3><div id="recent">尚無紀錄</div></div></section>
+<section id="panelEnglish" hidden><h2>國考英文｜80題分級練習</h2><div class="panel"><div class="editor-bar"><h3>每日五題・循序漸進</h3><button class="btn primary" id="startDaily" type="button">開始今日五題</button></div><p id="dailySummary" class="small">每天固定選出五題，兼顧新題與需要加強的題目。</p><div id="dailyProgress" class="small" role="status"></div></div><div class="panel english-bar"><div><strong id="answered">0 / 80</strong><span class="small"> 已作答</span></div><div><label for="filter">題型／複習</label><select id="filter"><option value="all">全部</option><option value="daily">今日五題</option><option value="wrong">錯題／待加強</option><option value="vocab">單字</option><option value="grammar">文法</option><option value="reading">閱讀</option><option value="cloze">克漏字</option></select></div><div><label for="questionPick">題號</label><select id="questionPick"></select></div></div><div class="panel english-card"><div class="eyebrow" id="category"></div><h3 id="enQuestion"></h3><p id="passage" class="reading" hidden></p><div class="options" id="options"></div><div id="explanation" class="explain" hidden></div><div class="buttons"><button class="btn" id="prevQuestion">上一題</button><button class="btn" id="retryQuestion">重練本題</button><button class="btn primary" id="nextQuestion">下一題</button></div></div><p class="small">80題均為原創練習題（既有20題加新增60題），附翻譯與解析，不代表考選部歷屆題目或正式難度。點「重練本題」只清除目前顯示的答案，歷次作答紀錄仍保留。</p><section class="panel" id="starestoPanel" aria-labelledby="starestoTitle">
+  <div class="ext-heading">
+    <div><div class="eyebrow">Staresto · 外部延伸題庫</div><h3 id="starestoTitle">學測／指考英文練習資源</h3>
+      <p class="small">依照本站錯題類型推薦額外練習。點擊後會到原作者的網站，不會複製試題或取得外站成績。</p></div>
+    <div><label for="resourceFilter">練習類型</label><select id="resourceFilter"><option value="all">全部資源</option><option value="vocab">單字與構詞</option><option value="grammar">文法與克漏字</option><option value="reading">閱讀與篇章</option></select></div>
+  </div>
+  <p class="ext-note" id="resourceRecommendation">完成本站英文題目後，這裡會提示需要補強的方向。</p>
+  <p class="small" id="resourceCount">尚未記錄外部練習。</p>
+  <div id="resourceCards" class="resources-grid"></div>
+  <p class="small">來源：<a href="https://github.com/staresto-create" target="_blank" rel="noopener noreferrer">staresto-create GitHub</a>。這些資源主要是高中英文與大學入學考試練習，並非司法特考官方題庫。「已完成」僅為自行記錄；本站不會取得外站答案、成績或個資。原始題目與解析著作權仍歸原權利人。</p>
+</section>
+</section>
+<section id="panelRecords" hidden><h2>學習紀錄與備份</h2><div class="stats"><div class="stat"><strong id="draftsStat">0</strong><span>作文草稿</span></div><div class="stat"><strong id="versionsStat">0</strong><span>修訂版本</span></div><div class="stat"><strong id="englishStat">—</strong><span>英文各題首次作答正確率</span></div></div><div class="panel"><h3>英文練習概況</h3><p id="enHistoryStat" class="small">尚無作答紀錄</p><p id="externalRecordsStat" class="small">外部延伸練習：0 次（手動記錄，不計入英文正確率）</p><p class="small">答錯後重練不會刪除原有紀錄；正確率以每題首次作答計算，避免重練後虛增。</p></div><div class="panel"><h3>備份與還原</h3><p>備份僅包含本模組的作文、自評、回饋與英文作答，不會包含 v2.5.4 其他資料。</p><div class="buttons"><button class="btn primary" id="export">匯出 JSON</button><label class="btn" for="importFile" style="display:inline-block;margin:0">匯入 JSON</label><input type="file" accept=".json,application/json" id="importFile" hidden></div><p class="small">匯入會取代本模組資料，請先備份。不要把含私人文字的 JSON 上傳公開儲存庫。</p></div><div class="panel"><h3>最近作文</h3><div id="recent">尚無紀錄</div></div></section>
 <footer>116年司法特考觀護人｜獨立測試版。資料僅儲存於目前瀏覽器；換裝置不會自動同步。<a href="../">返回主站</a></footer>
 </main>
 <script src="./english-v02.js"></script>
+<script src="./staresto-resources.js"></script>
 <script>
 (function(){
 'use strict';
@@ -83,12 +96,13 @@ var english=[
 ];
 /* Existing e0–e19 IDs never change: append new source data only. */
 if(Array.isArray(window.COMMON_SUBJECTS_EXTRA_ENGLISH))english.push(...window.COMMON_SUBJECTS_EXTRA_ENGLISH);
-function empty(){return {schema:SCHEMA,drafts:{},english:{},englishHistory:{},dailySelections:{}}}
+function empty(){return {schema:SCHEMA,drafts:{},english:{},englishHistory:{},dailySelections:{},externalPractice:{}}}
 function load(){try{var x=JSON.parse(localStorage.getItem(KEY)||'null');if(x&&x.schema===SCHEMA&&x.drafts&&x.english&&typeof x.drafts==='object'&&typeof x.english==='object'&&!Array.isArray(x.drafts)&&!Array.isArray(x.english))return x}catch(e){}return empty()}
 var state=load(),current='',debounce=null,selected=0,questionSet=[],remain=600,timer=null,deadline=0;
 function reconcile(){
  if(!state.englishHistory||typeof state.englishHistory!=='object'||Array.isArray(state.englishHistory))state.englishHistory={};
  if(!state.dailySelections||typeof state.dailySelections!=='object'||Array.isArray(state.dailySelections))state.dailySelections={};
+ if(!state.externalPractice||typeof state.externalPractice!=='object'||Array.isArray(state.externalPractice))state.externalPractice={};
  Object.entries(state.english).forEach(function(entry){
   var k=entry[0],v=entry[1];
   if(!/^e\d+$/.test(k)||!v||typeof v!=='object')return;
@@ -181,7 +195,7 @@ function records(){
  $('englishStat').textContent=hist.length?Math.round(firstGood/hist.length*100)+'%':'—';
  $('enHistoryStat').textContent='已練 '+hist.length+'／'+english.length+' 題｜累計作答 '+total+' 次｜最近一次仍答錯 '+needReview+' 題。';var host=$('recent');host.replaceChildren();var arr=Object.entries(state.drafts).filter(function(x){return x[1].text&&x[1].text.trim()}).sort(function(a,b){return String(b[1].updatedAt).localeCompare(String(a[1].updatedAt))}).slice(0,10);if(!arr.length){host.textContent='尚無作文紀錄';return}arr.forEach(function(x){var parts=x[0].split(':'),el=document.createElement('div');el.className='recent-item';el.textContent=(topics[Number(parts[1])]||['自主練習'])[0]+'｜'+(modes[parts[0]]||['練習'])[0]+'｜'+Array.from(x[1].text).length+'字';host.append(el)})}
 function exportJSON(){flush();var blob=new Blob([JSON.stringify(Object.assign({},state,{exportedAt:new Date().toISOString()}),null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='common-subjects-backup-'+new Date().toISOString().slice(0,10)+'.json';document.body.append(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(url)},1500);show('已產生備份檔，請妥善保存。')}
-function importJSON(event){var file=event.target.files&&event.target.files[0];if(!file)return;if(file.size>5*1024*1024){show('檔案超過 5MB。',true);return}var reader=new FileReader();reader.onload=function(){try{var x=JSON.parse(String(reader.result));if(!x||x.schema!==SCHEMA||!x.drafts||!x.english||typeof x.drafts!=='object'||typeof x.english!=='object'||Array.isArray(x.drafts)||Array.isArray(x.english))throw Error('備份格式不符');if(!confirm('匯入會取代本模組目前紀錄，建議先匯出原資料。確定繼續？'))return;state={schema:SCHEMA,drafts:x.drafts,english:x.english,englishHistory:x.englishHistory||{},dailySelections:x.dailySelections||{}};reconcile();save();current='';switchDraft();records();listQuestions();show('備份匯入完成。')}catch(e){show('匯入失敗：'+e.message,true)}finally{event.target.value=''}};reader.readAsText(file)}
+function importJSON(event){var file=event.target.files&&event.target.files[0];if(!file)return;if(file.size>5*1024*1024){show('檔案超過 5MB。',true);return}var reader=new FileReader();reader.onload=function(){try{var x=JSON.parse(String(reader.result));if(!x||x.schema!==SCHEMA||!x.drafts||!x.english||typeof x.drafts!=='object'||typeof x.english!=='object'||Array.isArray(x.drafts)||Array.isArray(x.english))throw Error('備份格式不符');if(!confirm('匯入會取代本模組目前紀錄，建議先匯出原資料。確定繼續？'))return;state={schema:SCHEMA,drafts:x.drafts,english:x.english,englishHistory:x.englishHistory||{},dailySelections:x.dailySelections||{},externalPractice:x.externalPractice||{}};reconcile();save();current='';switchDraft();records();listQuestions();show('備份匯入完成。')}catch(e){show('匯入失敗：'+e.message,true)}finally{event.target.value=''}};reader.readAsText(file)}
 topics.forEach(function(t,i){$('prompt').add(new Option(t[0],String(i)))});makeRubrics();
 $('mode').addEventListener('change',switchDraft);$('prompt').addEventListener('change',switchDraft);
 $('essayText').addEventListener('input',function(){$('count').textContent=Array.from(this.value).length;pending()});$('feedback').addEventListener('input',pending);$('nextGoal').addEventListener('input',pending);
@@ -193,8 +207,13 @@ $('startDaily').addEventListener('click',function(){$('filter').value='daily';se
 $('filter').addEventListener('change',listQuestions);$('questionPick').addEventListener('change',function(){selected=Number(this.value);renderQuestion()});$('prevQuestion').addEventListener('click',function(){move(-1)});$('nextQuestion').addEventListener('click',function(){move(1)});$('retryQuestion').addEventListener('click',function(){if(selected>=0){delete state.english['e'+selected];save();renderQuestion();renderDaily()}});
 $('export').addEventListener('click',exportJSON);$('importFile').addEventListener('change',importJSON);
 window.addEventListener('beforeunload',flush);document.addEventListener('visibilitychange',function(){if(document.hidden){flush();if(timer)pause()}});
+window.CommonSubjectsIntegration={
+ getData:function(){return {history:state.englishHistory,kinds:english.map(function(q){return q[0]}),externalPractice:state.externalPractice}},
+ mark:function(id,source){if(!Array.isArray(state.externalPractice[id]))state.externalPractice[id]=[];state.externalPractice[id].push({at:new Date().toISOString(),source:source});if(state.externalPractice[id].length>250)state.externalPractice[id].shift();save()}
+};
 switchDraft();tab('Essay');
 })();
 </script>
+<script src="./staresto-integration.js"></script>
 </body>
 </html>

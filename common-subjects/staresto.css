@@ -1,0 +1,13 @@
+.ext-heading{display:flex;flex-wrap:wrap;align-items:end;gap:16px;justify-content:space-between}
+.ext-heading>div:first-child{flex:1;min-width:220px}
+.ext-heading>div:last-child{min-width:180px}
+.ext-note{background:var(--soft);color:var(--ink);padding:13px 15px;border-radius:10px;margin:15px 0}
+.resources-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:15px 0}
+.ext-resource{border:1px solid var(--line);background:#fafdfa;border-radius:12px;padding:17px;min-width:0}
+.ext-resource h4{margin:0;font-size:1.02rem;line-height:1.4}
+.ext-resource p{font-size:.86rem;margin:8px 0}
+.ext-level{font-size:.75rem;font-weight:700;color:var(--green);margin-top:7px}
+.ext-actions{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.ext-actions a{text-decoration:none;display:inline-flex;align-items:center}
+.ext-actions .btn{font-size:.85rem;padding:8px 11px}
+@media(max-width:720px){.resources-grid{grid-template-columns:1fr}.ext-heading>div:last-child{flex:1;width:100%}}
