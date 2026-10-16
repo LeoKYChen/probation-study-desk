@@ -28,6 +28,8 @@ class Node{
  remove(){}select(){}scrollIntoView(){}
 }
 const KEY='psd-common-subjects-v1';
+const confirmQueue=[];
+
 function make(db={}){
  const nodes={};const get=id=>nodes[id]??(nodes[id]=new Node(id));get('mode').value='sentence';get('filter').value='all';
  const doc={getElementById:get,createElement:t=>new Node(t),body:new Node('body'),addEventListener(){},execCommand:()=>true};
@@ -35,7 +37,7 @@ function make(db={}){
  const win={addEventListener(){}};
  const Opt=function(label,value){return {text:label,value}};
  const ctx={document:doc,window:win,localStorage,Option:Opt,navigator:{},Intl,Date,Array,Object,Set,Math,Number,String,JSON,RegExp,
-  setTimeout:()=>1,clearTimeout(){},setInterval:()=>1,clearInterval(){},confirm:()=>true,
+  setTimeout:()=>1,clearTimeout(){},setInterval:()=>1,clearInterval(){},confirm:()=>confirmQueue.length?confirmQueue.shift():true,
   URL:{createObjectURL:()=> '#',revokeObjectURL(){}},Blob:class {},FileReader:class{}};
  vm.createContext(ctx);vm.runInContext(extra,ctx,{filename:'english-v02.js'});vm.runInContext(inline[0],ctx,{filename:'index.html:inline.js'});
  return {get,db,ctx};
@@ -82,4 +84,59 @@ for(let n=0;n<44;n++){many.get('essayText').value='修訂第'+n+'次';many.get('
 const saved=JSON.parse(many.db[KEY]).drafts['sentence:0'].versions;
 assert.equal(saved.length,40,'cap essay history');
 assert.equal(saved[0].text,'這是最初版本','preserve original despite version cap');
+// Independent two-step reset of essay and legacy 80-question progress, without touching v0.4.
+const SEPARATE='psd-staresto-daily-v04',OTHER='probation-specialty-progress';
+const seeded={
+ schema:KEY,
+ drafts:{'sentence:0':{text:'不能遺失的作文初稿',feedback:'批改回饋',versions:[{text:'原稿',date:'2026-10-01'}],self:{expression:4},nextAction:'改進結構',updatedAt:'2026-10-01'}},
+ english:{e0:{choice:1,correct:true,at:'2026-10-01'}},
+ englishHistory:{e0:[{choice:0,correct:false,at:'2026-09-30'},{choice:1,correct:true,at:'2026-10-01'}]},
+ dailySelections:{'2026-10-01':[1,2,3,4,5]},
+ externalPractice:{'vocab-gsat':[{at:'2026-10-01',source:'external'}]}
+};
+const db={[KEY]:JSON.stringify(seeded),[SEPARATE]:'STARESTO-PROGRESS-MUST-SURVIVE',[OTHER]:'SPECIALTY-MUST-SURVIVE'};
+const reset=make(db),rr=reset.get;reset.get('tabRecords').click();
+const initialBackup=db[KEY];
+confirmQueue.push(false);rr('clearEssayRecords').click();
+assert.equal(db[KEY],initialBackup,'essay cancel at first confirmation');
+confirmQueue.push(true,false);rr('clearEssayRecords').click();
+assert.equal(db[KEY],initialBackup,'essay cancel at second confirmation');
+confirmQueue.push(true,true);rr('clearEssayRecords').click();
+let cleared=JSON.parse(db[KEY]);
+assert.deepEqual(Object.keys(cleared.drafts),[],'clear all essay drafts and revisions');
+assert.equal(rr('essayText').value,'','clear essay editor without re-saving old text');
+assert.equal(rr('feedback').value,'','clear essay feedback');
+assert.equal(rr('nextGoal').value,'','clear essay improvement goal');
+assert.equal(rr('draftsStat').textContent,0,'essay stats refreshed');
+assert.deepEqual(cleared.english,seeded.english,'original 80 answers retained after essay clear');
+assert.deepEqual(cleared.englishHistory,seeded.englishHistory,'original 80 history retained');
+assert.deepEqual(cleared.dailySelections,seeded.dailySelections,'original 80 schedule retained');
+assert.deepEqual(cleared.externalPractice,seeded.externalPractice,'external practice retained');
+assert.equal(db[SEPARATE],'STARESTO-PROGRESS-MUST-SURVIVE','Staresto module untouched');
+assert.equal(db[OTHER],'SPECIALTY-MUST-SURVIVE','professional modules untouched');
+
+// After essay reset, freshly written essay should survive an original-English reset.
+rr('essayText').value='清除作文後新寫的內容';
+rr('essayText').fire('input');rr('saveVersion').click();
+const beforeEnglish=db[KEY];
+confirmQueue.push(false);rr('clearOriginalEnglish').click();
+assert.equal(db[KEY],beforeEnglish,'english cancel at first confirmation');
+confirmQueue.push(true,false);rr('clearOriginalEnglish').click();
+assert.equal(db[KEY],beforeEnglish,'english cancel at second confirmation');
+confirmQueue.push(true,true);rr('clearOriginalEnglish').click();
+cleared=JSON.parse(db[KEY]);
+assert.deepEqual(cleared.english,{},'remove original 80 answers');
+assert.deepEqual(cleared.englishHistory,{},'remove original 80 answer history');
+assert.ok(!cleared.dailySelections['2026-10-01'],'remove previous daily selections');
+assert.equal(cleared.drafts['sentence:0'].text,'清除作文後新寫的內容','essay preserved after english clear');
+assert.equal(cleared.drafts['sentence:0'].versions.length,1,'essay versions preserved');
+assert.equal(rr('englishStat').textContent,'—','English first-attempt stats cleared');
+assert.deepEqual(cleared.externalPractice,seeded.externalPractice,'external count preserved after english clear');
+assert.equal(db[SEPARATE],'STARESTO-PROGRESS-MUST-SURVIVE','Staresto remains isolated');
+assert.equal(db[OTHER],'SPECIALTY-MUST-SURVIVE','other study keys remain isolated');
+const restoredAfterReset=make(db);
+assert.equal(restoredAfterReset.get('essayText').value,'清除作文後新寫的內容','essay saved across reload');
+restoredAfterReset.get('tabEnglish').click();
+assert.equal(restoredAfterReset.get('answered').textContent,'0 / 80','original English progress empty on reload');
+
 console.log('PASS common-subjects v0.2: syntax, 80 questions, draft versions, comparison, retry history, daily five, old records');
