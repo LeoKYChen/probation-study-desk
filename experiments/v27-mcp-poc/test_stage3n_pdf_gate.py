@@ -204,7 +204,7 @@ class PDFGateFixtureTests(unittest.TestCase):
 
     def test_too_many_pages_denied_before_extraction(self):
         blob, refs = fixture(MAX_PAGES+1)
-        r = run(blob, refs[:MAX_PAGES])
+        r = run(blob, refs)
         self.assertEqual(r["reason"], "synthetic_reference_format_invalid")
         r = inspect_synthetic_pdf(blob, PROOF, expected_page_texts=None)
         self.assertEqual(r["reason"], "pdf_page_count_out_of_bounds")
