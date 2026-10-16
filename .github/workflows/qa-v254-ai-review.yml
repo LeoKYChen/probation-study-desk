@@ -100,6 +100,19 @@ jobs:
             await page.evaluate(id=>Practice25.select(id),firstId);
             await check('Offline page retains AI feedback after reload',async()=>assert.equal(await page.locator('#ai-simple-feedback').inputValue(),feedback));
             await context.setOffline(false);
+            // Verify actual GitHub Pages publication, isolated browser storage only.
+            const live='https://leokychen.github.io/probation-study-desk/v2.5/';
+            await page.goto(live,{waitUntil:'domcontentloaded',timeout:45000});
+            await page.waitForSelector('#ai-simple-feedback',{timeout:30000});
+            await check('PUBLIC Pages has 426 real questions',async()=>assert.equal(await page.evaluate('Practice25.getQuestions().length'),426));
+            await check('PUBLIC Pages offers AI copy and feedback UI',async()=>{assert.equal(await page.locator('#ai-simple-copy').count(),1);assert.equal(await page.locator('#ai-simple-feedback').count(),1)});
+            await page.locator('#issueInput').fill('公開站無個資驗收用答案');
+            await page.locator('#ai-simple-copy').click();
+            await check('PUBLIC Pages one-click copy works',async()=>assert((await page.evaluate('navigator.clipboard.readText()')).includes('公開站無個資驗收用答案')));
+            await page.locator('#ai-simple-feedback').fill('公開站隔離瀏覽器驗收評語');
+            await check('PUBLIC Pages saves own feedback',async()=>{const q=await page.evaluate('Practice25.getQuestion().id');assert.equal(await page.evaluate(id=>JSON.parse(localStorage.getItem('probation-study-desk-v24'))[id].aiFeedback,q),'公開站隔離瀏覽器驗收評語')});
+            const [publicDownload]=await Promise.all([page.waitForEvent('download'),page.locator('#exportButton').click()]);
+            await check('PUBLIC Pages backup filename uses ROC padded date',async()=>assert.match(publicDownload.suggestedFilename(),/^\\d{3}年\\d{2}月\\d{2}日學習紀錄備份\\.json$/));
             console.log('PASSED',results.length,'real-browser checks. Page errors:',errors.slice(0,8));
             await browser.close();
           })().then(()=>{server.close()}).catch(e=>{console.error('QA FAILED:',e);server.close();process.exitCode=1});
