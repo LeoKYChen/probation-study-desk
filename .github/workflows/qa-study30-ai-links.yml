@@ -1,0 +1,45 @@
+name: QA Daily30 v2.5.4 AI and External Links
+on:
+  push:
+    branches:
+      - feature/study30-v254-ai-shuati-yamol
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rebuild 30-minute site without deployment
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p deploy-dist
+          unzip -q study30-site.zip -d deploy-dist
+          node study30-addons/patch-stage3.cjs deploy-dist
+          cp study30-addons/essay-review.js deploy-dist/essay-review.js
+          node study30-addons/patch-stage4.cjs deploy-dist
+          cp study30-addons/essay-analytics.js deploy-dist/essay-analytics.js
+          node study30-addons/patch-stage5.cjs deploy-dist
+          cp study30-addons/weakness-priority.js deploy-dist/weakness-priority.js
+          git fetch --depth=1 origin main
+          git show FETCH_HEAD:v2.5/questions.js > deploy-dist/source-main-questions.js
+          git show FETCH_HEAD:v2.5/related-questions.js > deploy-dist/source-related-questions.js
+          node study30-addons/patch-stage6.cjs deploy-dist
+          cp study30-addons/question-sources.js deploy-dist/question-sources.js
+          cp study30-addons/data-health.js deploy-dist/data-health.js
+          node study30-addons/patch-stage7.cjs deploy-dist
+          cp study30-addons/backup-import.js deploy-dist/backup-import.js
+          node study30-addons/patch-stage8.cjs deploy-dist
+          cp study30-addons/daily-essay-workbench.js deploy-dist/daily-essay-workbench.js
+          node study30-addons/patch-v254.cjs deploy-dist
+          cp study30-addons/v254-diagnostics.js deploy-dist/v254-diagnostics.js
+          echo "=== App context snippets ==="
+          grep -n -A 10 -B 3 'function essayContext' deploy-dist/app.js | head -30
+          grep -n -A 5 -B 4 'window.Study30App=' deploy-dist/app.js | head -28
+          grep -n -A 7 -B 6 'essayFullAnswer' deploy-dist/index.html | head -25
+          node study30-addons/test-v254.cjs deploy-dist
+      - name: No deployment
+        run: echo "Test branch only. Nothing deployed."
