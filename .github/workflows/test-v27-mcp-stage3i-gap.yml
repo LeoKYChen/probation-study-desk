@@ -1,0 +1,68 @@
+name: v2.7 MCP stage 3i final district criminal source gap
+
+on:
+  push:
+    branches:
+      - experiment/v27-mcp-stage3i
+    paths:
+      - 'experiments/v27-mcp-poc/stage3i_one_gap.py'
+      - '.github/workflows/test-v27-mcp-stage3i-gap.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  one-public-case:
+    name: Seek one new court sample, never retest nine accepted source texts
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      JUDICIAL_API_LIVE_ENABLED: 'false'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Keep temporary MCP artifacts outside the public Git checkout
+        run: echo "MCP_TAIWAN_LEGAL_DB_HOME=$RUNNER_TEMP/v27-stage3i-gap-cache" >> "$GITHUB_ENV"
+      - name: Fetch pinned existing research-only MCP
+        env:
+          UPSTREAM_SHA: ef677ad63c3206fc211a083fad8b1d9ef5015222
+        run: |
+          git init "$RUNNER_TEMP/legal-mcp"
+          git -C "$RUNNER_TEMP/legal-mcp" remote add origin https://github.com/lawchat-oss/mcp-taiwan-legal-db.git
+          git -C "$RUNNER_TEMP/legal-mcp" fetch --depth 1 origin "$UPSTREAM_SHA"
+          git -C "$RUNNER_TEMP/legal-mcp" checkout --detach FETCH_HEAD
+          test "$(git -C "$RUNNER_TEMP/legal-mcp" rev-parse HEAD)" = "$UPSTREAM_SHA"
+      - name: Install pinned MCP
+        run: python -m pip install "$RUNNER_TEMP/legal-mcp"
+      - name: Check no real cases hardcoded beyond previous public findings
+        run: |
+          python -m py_compile experiments/v27-mcp-poc/stage3i_one_gap.py
+          python experiments/v27-mcp-poc/stage3i_one_gap.py --mode selftest
+      - name: Two restricted searches maximum for one missing public judgment
+        run: timeout 570s python -u experiments/v27-mcp-poc/stage3i_one_gap.py --mode live
+      - name: Ensure no public deployment
+        if: always()
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          text=Path("experiments/v27-mcp-poc/stage3i_one_gap.py").read_text()
+          assert "MAX_NEW_SEARCHES=2" in text
+          assert "MAX_NEW_OFFICIAL_GET=10" in text
+          assert "len(PRIOR)" in text
+          assert "report[\"stage3_accepted\"]=False" in text
+          assert "status:404" in Path("services/v2.7-judgment/private-worker.mjs").read_text()
+          print("Gap probe remains isolated from production v2.5/v2.7")
+          PY
+      - name: Retain source/status booleans, no judgment bodies
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v27-mcp-stage3i-final-gap-source-evidence
+          path: v27-mcp-stage3i-one-gap.json
+          if-no-files-found: warn
+          retention-days: 14
