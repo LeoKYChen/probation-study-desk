@@ -1,0 +1,72 @@
+name: v2.7 MCP stage 3m fixed public long-judgment fidelity
+
+on:
+  push:
+    branches:
+      - experiment/v27-mcp-stage3m
+    paths:
+      - 'experiments/v27-mcp-poc/stage3m_fixed_long.py'
+      - '.github/workflows/test-v27-mcp-stage3m.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  public-long:
+    name: Verify up to six previously located public long-text source candidates
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    env:
+      JUDICIAL_API_LIVE_ENABLED: 'false'
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Restrict third-party MCP storage to ephemeral GitHub runner
+        run: echo "MCP_TAIWAN_LEGAL_DB_HOME=$RUNNER_TEMP/v27-stage3m-cache" >> "$GITHUB_ENV"
+      - name: Retrieve exact previously tested research MCP revision
+        env:
+          UPSTREAM_SHA: ef677ad63c3206fc211a083fad8b1d9ef5015222
+        run: |
+          git init "$RUNNER_TEMP/legal-mcp"
+          git -C "$RUNNER_TEMP/legal-mcp" remote add origin https://github.com/lawchat-oss/mcp-taiwan-legal-db.git
+          git -C "$RUNNER_TEMP/legal-mcp" fetch --depth 1 origin "$UPSTREAM_SHA"
+          git -C "$RUNNER_TEMP/legal-mcp" checkout --detach FETCH_HEAD
+          test "$(git -C "$RUNNER_TEMP/legal-mcp" rev-parse HEAD)" = "$UPSTREAM_SHA"
+      - name: Install pinned research MCP only
+        run: python -m pip install "$RUNNER_TEMP/legal-mcp"
+      - name: Run source, long-body, date, case-number and PDF rejection fixtures
+        run: |
+          python -m py_compile experiments/v27-mcp-poc/stage3m_fixed_long.py
+          python experiments/v27-mcp-poc/stage3m_fixed_long.py --mode selftest
+      - name: Compare official court body and MCP for up to three qualifying long cases
+        run: timeout 710s python -u experiments/v27-mcp-poc/stage3m_fixed_long.py --mode live
+      - name: Require explicit research-only and no live website changes
+        if: always()
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          src=Path('experiments/v27-mcp-poc/stage3m_fixed_long.py').read_text()
+          for guard in ('MAX_OFFICIAL_GET=6','MAX_MCP_GET=3','MAX_BYTES=1_500_000',
+              'MIN_LONG_BODY_CHARS=LONG_BODY_CHARS',
+              'case_finality_proven','no_official_member_api_called',
+              '"stage3_accepted":False','follow_redirects=False',
+              'no_real_court_body_saved','no_individual_case_jids_or_urls_saved_to_report'):
+              assert guard in src,guard
+          assert Path('development/v2.7').is_dir()
+          assert 'status:404' in Path('services/v2.7-judgment/private-worker.mjs').read_text()
+          print('Stage3m isolated; no official API credentials or public court endpoint')
+          PY
+      - name: Retain metadata-only comparison statistics, not court contents
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v27-stage3m-fixed-public-long-results
+          path: v27-mcp-stage3m-known-long.json
+          if-no-files-found: warn
+          retention-days: 14
