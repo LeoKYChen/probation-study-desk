@@ -136,9 +136,14 @@ def inspect_synthetic_pdf(blob: bytes, proof: SyntheticProof, *,
         # Resource exhaustion and malicious parser input must be controlled by
         # an external sandbox in a future production process.
         extracted: list[str] = []
+        page_lines: list[frozenset[str]] = []
         total_chars = 0
         for page in reader.pages:
             text = page.extract_text(extraction_mode="plain") or ""
+            # Preserve page-local exact field and marker boundaries in memory.
+            # Substring checks would falsely accept CASE:<id>_WRONG as <id>.
+            lines = frozenset(normalized(line) for line in text.splitlines()
+                              if line.strip())
             content = normalized(text)
             if len(content) > MAX_CHARS_PER_PAGE:
                 return result("blocked", "one_page_text_exceeds_safety_cap",
@@ -151,6 +156,7 @@ def inspect_synthetic_pdf(blob: bytes, proof: SyntheticProof, *,
                 return result("blocked", "total_pdf_text_exceeds_safety_cap",
                               pages=pages, readable_pages=len(extracted))
             extracted.append(content)
+            page_lines.append(lines)
     except Exception:
         # Never expose parser exception text: it can include untrusted PDF
         # material or file offsets, and a bad document is not an empty ruling.
@@ -164,14 +170,14 @@ def inspect_synthetic_pdf(blob: bytes, proof: SyntheticProof, *,
         "MAIN HOLDING",
         "REASONS",
     )
-    first = extracted[0]
-    identity_ok = all(normalized(tag) in first for tag in tags)
+    identity_ok = all(normalized(tag) in page_lines[0] for tag in tags)
     if not identity_ok:
         return result("review", "first_page_case_date_or_court_unconfirmed",
                       pages=pages, readable_pages=pages)
 
     marker_ok = all(
-        extracted[i-1].count(normalized(f"PAGE:{i}/{pages}")) == 1
+        normalized(f"PAGE:{i}/{pages}") in page_lines[i-1]
+        and sum(line.startswith("PAGE:") for line in page_lines[i-1]) == 1
         for i in range(1, pages+1)
     )
     if not marker_ok:
