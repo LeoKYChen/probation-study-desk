@@ -1,0 +1,118 @@
+name: v2.7 MCP stage 3n synthetic PDF page fidelity and safety
+
+on:
+  push:
+    branches:
+      - experiment/v27-mcp-stage3n
+    paths:
+      - 'experiments/v27-mcp-poc/stage3n_pdf_gate.py'
+      - 'experiments/v27-mcp-poc/test_stage3n_pdf_gate.py'
+      - '.github/workflows/test-v27-mcp-stage3n.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  synthetic-pdf:
+    name: Offline synthetic PDF only, no actual Judicial Yuan documents
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    env:
+      JUDICIAL_API_LIVE_ENABLED: 'false'
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned in-memory PDF parser and synthetic PDF generator
+        run: python -m pip install 'pypdf==5.9.0' 'reportlab==4.4.9'
+      - name: Check Python syntax and synthetic-only guardrails
+        run: |
+          python -m py_compile experiments/v27-mcp-poc/stage3n_pdf_gate.py
+          python -m py_compile experiments/v27-mcp-poc/test_stage3n_pdf_gate.py
+          python3 - <<'PY'
+          from pathlib import Path
+          import ast
+          gate=Path("experiments/v27-mcp-poc/stage3n_pdf_gate.py")
+          source=gate.read_text()
+          tree=ast.parse(source)
+          forbidden={"httpx","requests","urllib","socket","subprocess","ftplib"}
+          imports=set()
+          for node in ast.walk(tree):
+              if isinstance(node,ast.Import):
+                  imports.update(x.name.split(".")[0] for x in node.names)
+              if isinstance(node,ast.ImportFrom) and node.module:
+                  imports.add(node.module.split(".")[0])
+              if isinstance(node,ast.Call) and isinstance(node.func,ast.Name):
+                  assert node.func.id not in {"open","eval","exec","compile"},node.func.id
+          assert not imports.intersection(forbidden),imports
+          for label in ("TEST_PDF_SYNTHETIC_", "real_official_pdf_fulltext_verified",
+                        "pdf_bytes_written_to_disk", "stage3_accepted"):
+              assert label in source,label
+          assert 'MAX_PDF_BYTES = 450_000' in source
+          assert 'MAX_PAGES = 12' in source
+          assert 'PdfReader(BytesIO(blob), strict=True)' in source
+          print("Stage3n PDF engine: no file writes, HTTP client or live court API")
+          PY
+      - name: Test synthetic valid PDF, missing pages, scans, interactive and encrypted variants
+        working-directory: experiments/v27-mcp-poc
+        run: python -m unittest -v test_stage3n_pdf_gate
+      - name: Verify existing synthetic court and private-service regression suites
+        run: |
+          node --version
+          node --test \
+            experiments/v27-mcp-poc/stage3d-link-only.test.cjs \
+            experiments/v27-mcp-poc/stage3e-click-recheck.test.cjs \
+            experiments/v27-mcp-poc/stage3f-ui/model.test.cjs \
+            experiments/v27-mcp-poc/stage3g-official-source-gate.test.cjs \
+            services/v2.7-judgment/*.test.cjs
+      - name: Verify no changes to existing v2.7 page or judgment service
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          root=Path("development/v2.7")
+          assert root.is_dir()
+          assert "status:404" in Path("services/v2.7-judgment/private-worker.mjs").read_text()
+          assert not any(root.rglob("stage3n_pdf_gate.py"))
+          assert not any(root.rglob("judgments.json"))
+          assert not any(root.rglob("*.pdf"))
+          print("Stage3n remains under experiments/ only; no production PDF upload endpoint")
+          PY
+      - name: Write metadata-only acceptance status (all prior steps successful)
+        working-directory: experiments/v27-mcp-poc
+        run: |
+          python - <<'PY'
+          import json
+          import unittest
+          from pathlib import Path
+          n=unittest.defaultTestLoader.loadTestsFromName("test_stage3n_pdf_gate").countTestCases()
+          assert n==40,f"unexpected test count: {n}"
+          report={
+            "stage":"Stage3n synthetic PDF safety / page-fidelity prototype",
+            "synthetic_pdf_unit_tests_passed":n,
+            "synthetic_pdf_unit_tests_failed":0,
+            "prior_regressions_passed":True,
+            "real_official_pdfs_downloaded":0,
+            "real_pdf_fulltext_verified":False,
+            "offline_mock_reference_only":True,
+            "ocr_verified":False,
+            "production_upload_or_download_endpoint_deployed":False,
+            "stage3_accepted":False
+          }
+          Path("stage3n-synthetic-pdf-test-summary.json").write_text(
+              json.dumps(report,ensure_ascii=False,indent=2)+"\n"
+          )
+          print(json.dumps(report))
+          PY
+      - name: Retain only synthetic-test metadata, no PDF bytes or court text
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v27-stage3n-synthetic-pdf-checks
+          path: experiments/v27-mcp-poc/stage3n-synthetic-pdf-test-summary.json
+          if-no-files-found: warn
+          retention-days: 14
