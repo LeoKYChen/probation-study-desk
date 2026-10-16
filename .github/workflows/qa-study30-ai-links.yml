@@ -57,5 +57,9 @@ jobs:
         env:
           NODE_PATH: /tmp/daily30-playwright/node_modules
         run: node study30-addons/test-stage9-browser.cjs deploy-dist
+      - name: Verify actual deployed Cloudflare preview site
+        env:
+          NODE_PATH: /tmp/daily30-playwright/node_modules
+        run: node study30-addons/test-stage9-public.cjs
       - name: No deployment
         run: echo "Test branch only. Nothing deployed."
