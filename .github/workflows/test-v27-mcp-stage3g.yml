@@ -1,0 +1,76 @@
+name: v2.7 MCP stage 3g official source feasibility
+
+on:
+  push:
+    branches:
+      - experiment/v27-mcp-stage3g
+    paths:
+      - 'experiments/v27-mcp-poc/stage3g_official_source_probe.py'
+      - 'experiments/v27-mcp-poc/stage3g-official-source-gate.cjs'
+      - 'experiments/v27-mcp-poc/stage3g-official-source-gate.test.cjs'
+      - '.github/workflows/test-v27-mcp-stage3g.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sources:
+    name: Official public routes and offline contract gate
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      JUDICIAL_API_LIVE_ENABLED: 'false'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install only public-source HTTP and HTML parsing dependencies
+        run: python -m pip install 'httpx>=0.27,<0.29' 'beautifulsoup4>=4.12,<5'
+      - name: Source probe offline safety and code syntax
+        run: |
+          python -m py_compile experiments/v27-mcp-poc/stage3g_official_source_probe.py
+          python experiments/v27-mcp-poc/stage3g_official_source_probe.py --mode selftest
+          node --check experiments/v27-mcp-poc/stage3g-official-source-gate.cjs
+      - name: Official source policy and prior synthetic regression tests
+        run: |
+          node --test \
+            experiments/v27-mcp-poc/stage3g-official-source-gate.test.cjs \
+            experiments/v27-mcp-poc/stage3f-ui/model.test.cjs \
+            experiments/v27-mcp-poc/stage3d-link-only.test.cjs \
+            experiments/v27-mcp-poc/stage3e-click-recheck.test.cjs \
+            services/v2.7-judgment/*.test.cjs
+      - name: Probe four public government URLs only, no authenticated API
+        run: timeout 210s python experiments/v27-mcp-poc/stage3g_official_source_probe.py --mode live
+      - name: Check no court source leaked into Pages or public endpoint
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          public=Path('development/v2.7')
+          assert public.is_dir()
+          bad=[str(p) for p in public.rglob('*') if p.is_file() and
+             (p.suffix in {'.cjs','.mjs','.sql'} or p.name in {'.env','.dev.vars','judgments.json'})]
+          assert not bad, bad
+          source=Path('experiments/v27-mcp-poc/stage3g_official_source_probe.py').read_text()
+          assert 'client.stream("GET"' in source
+          assert 'follow_redirects=False' in source
+          assert 'MAX_REQUESTS = 4' in source
+          assert '"no_api_credentials": True' in source
+          assert 'individual_case_links_approved"] = False' in source
+          assert 'status:404' in Path('services/v2.7-judgment/private-worker.mjs').read_text()
+          print("Stage3g does not call authenticated judicial API or deploy a court endpoint")
+          PY
+      - name: Save only official route reachability classifications
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v27-mcp-stage3g-official-origin-probe
+          path: v27-mcp-stage3g-origin-report.json
+          if-no-files-found: warn
+          retention-days: 14
