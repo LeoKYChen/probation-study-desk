@@ -25,6 +25,17 @@ def run():
  assert set(old["count"]).issubset({"EXACT","VERIFIED_SOURCE","VERIFIED_YEAR_OPTIONS","AMBIGUOUS","UNMATCHED"})
  assert sum(old["count"].values())==668
  assert len({q["legacyId"] for q in old["rows"]})==668
+ # Grammar v0.4 IDs g110-16-1 map to upstream G110_16_1 by ID + year
+ # + complete options + answer, never by coincidences in choices alone.
+ grammar=[q for q in old["rows"] if q["legacyFile"].startswith("grammar-")]
+ assert len(grammar)==45
+ assert all(q["matchType"] in ("EXACT","VERIFIED_SOURCE") for q in grammar),grammar[:3]
+ assert old["count"].get("VERIFIED_YEAR_OPTIONS",0)==0,"year/options-only evidence is insufficient"
+ by_old_id={q["legacyId"]:q for q in old["rows"]}
+ assert by_old_id["sg:g110-16-1"]["newId"]=="st:grammar-cloze-test:grammar_items.json:G110_16_1"
+ assert by_old_id["sp:Vy115_21"]["newId"]=="st:passage-completion:gsat/items.json:Vy115_21"
+ assert by_old_id["sr:Rg109_45"]["newId"]=="st:reading-comprehension:gsat/items.json:Rg109_45","do not merge duplicate reference year content"
+ assert not any(q["matchType"] in ("AMBIGUOUS","UNMATCHED") for q in old["rows"])
  assert len({q["newId"] for q in old["rows"] if q["newId"]})==sum(q["newId"] is not None for q in old["rows"]),"no two old IDs silently merge"
  assert dups["crossSourceGroupCount"]==len(dups["crossSourceGroups"])
  assert all((q["newId"] is None) if q["matchType"] in ("AMBIGUOUS","UNMATCHED") else isinstance(q["newId"],str) for q in old["rows"])
