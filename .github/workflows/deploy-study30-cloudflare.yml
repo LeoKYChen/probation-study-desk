@@ -96,6 +96,8 @@ jobs:
           node study30-addons/test-offline.cjs deploy-dist
           node --check study30-addons/test-content-cleanup.cjs
           node study30-addons/test-content-cleanup.cjs deploy-dist
+          node --check study30-addons/test-week-behavior.cjs
+          node study30-addons/test-week-behavior.cjs deploy-dist
 
       - name: Deploy to existing Cloudflare Pages project
         uses: cloudflare/wrangler-action@v4
