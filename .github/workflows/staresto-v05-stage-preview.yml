@@ -1,0 +1,43 @@
+name: Stage Staresto v0.5 read-only catalog preview
+on:
+  push:
+    branches:
+      - feature/staresto-v05-standardize-browser
+    paths:
+      - .github/workflows/staresto-v05-stage-preview.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  stage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v6
+      - name: Stage verified browser without altering main
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f staresto-intake/browser/data/index.json
+          test -f staresto-intake/browser/data/resources.json
+          test -f staresto-intake/browser/NOTICE.md
+          git fetch --no-tags origin feature/staresto-v05-catalog-preview
+          git worktree add --detach /tmp/staresto-catalog-preview origin/feature/staresto-v05-catalog-preview
+          dest=/tmp/staresto-catalog-preview/common-subjects/catalog
+          mkdir -p "$dest"
+          cp staresto-intake/browser/index.html "$dest/"
+          cp staresto-intake/browser/app.js "$dest/"
+          cp staresto-intake/browser/style.css "$dest/"
+          cp staresto-intake/browser/test_browser.cjs "$dest/"
+          cp staresto-intake/browser/NOTICE.md "$dest/"
+          cp staresto-intake/browser/REPORT.md "$dest/"
+          rm -rf "$dest/data"
+          cp -a staresto-intake/browser/data "$dest/data"
+          git -C /tmp/staresto-catalog-preview config user.name "github-actions[bot]"
+          git -C /tmp/staresto-catalog-preview config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C /tmp/staresto-catalog-preview add -- common-subjects/catalog
+          git -C /tmp/staresto-catalog-preview diff --cached --stat
+          git -C /tmp/staresto-catalog-preview commit -m "feat(common-subjects): stage tested Staresto v0.5 read-only catalog"
+          git -C /tmp/staresto-catalog-preview push origin HEAD:refs/heads/feature/staresto-v05-catalog-preview
