@@ -133,24 +133,54 @@ def main():
  accepted=[r for r in audited if not r["blocks"]]
  gatecount=Counter(r["status"] for r in audited)
  categories=Counter(r["category"] for r in accepted)
- # Create a conservative crosswalk. Never force or silently remap an ambiguous old answer.
- by_exact=defaultdict(list);by_source=defaultdict(list)
+ # Safely map previous 668 IDs using strongest available evidence.
+ # Never match solely by number, choices or source key. Each verified mapping
+ # must share the same answer and complete option set; year when applicable.
+ by_exact=defaultdict(list);by_source=defaultdict(list);by_year=defaultdict(list)
+ row_index={row["id"]:row for row in index["records"]}
  for row in index["records"]:
   det=shard_cache[row["shard"]][row["position"]]
   by_exact[signature(det)].append(row["id"])
   by_source[simpl(row.get("sourceItemId"))].append(row["id"])
+  yr=re.search(r"\d{2,3}",str(row.get("year") or ""))
+  if yr:by_year[(row["type"],int(yr.group()))].append(row["id"])
+ def similar_answer_choices(q,key):
+  det=shard_cache[row_index[key]["shard"]][row_index[key]["position"]]
+  if simpl(q.get("answer"))!=simpl(det.get("answer")):return False
+  return norm_options(q.get("options"))==norm_options(det.get("options"))
+ def same_year(q,key):
+  exp=str(q.get("year","")); actual=str(row_index[key].get("year",""))
+  x=re.search(r"\d{2,3}",exp);y=re.search(r"\d{2,3}",actual)
+  return bool(x and y and int(x.group())==int(y.group()))
  legacy=[];match_stats=Counter()
  for filename in LEGACY:
   sheet=obj(OLD/filename)
   for q in sheet["questions"]:
    desired=legacy_signature(q)
    ids=sorted(set(by_exact.get(desired,[])))
-   match="EXACT" if len(ids)==1 else "AMBIGUOUS" if len(ids)>1 else "UNMATCHED"
-   fallback=sorted(set(by_source.get(simpl(q.get("sourceId")),[])))
-   # Source identity by itself is insufficient to transfer personal answers.
+   raw_id=simpl(q.get("sourceId"))
+   strong=sorted(set(k for k in by_source.get(raw_id,[]) if similar_answer_choices(q,k) and same_year(q,k)))
+   if len(ids)==1:
+    match="EXACT";selected=ids[0];evidence=ids
+   elif len(strong)==1:
+    match="VERIFIED_SOURCE";selected=strong[0];evidence=strong
+   elif len(ids)>1:
+    match="AMBIGUOUS";selected=None;evidence=ids
+   elif len(strong)>1:
+    match="AMBIGUOUS";selected=None;evidence=strong
+   else:
+    expected= "文法與克漏字" if filename.startswith("grammar") else ""
+    poss=by_year.get((expected,int(q["year"])),[]) if expected and str(q.get("year","")).isdigit() else []
+    choices=[k for k in poss if similar_answer_choices(q,k)]
+    if len(choices)==1:
+     match="VERIFIED_YEAR_OPTIONS";selected=choices[0];evidence=choices
+    else:
+     match="AMBIGUOUS" if len(choices)>1 else "UNMATCHED"
+     selected=None
+     evidence=choices if choices else sorted(set(by_source.get(raw_id,[])))[:8]
    legacy.append({"legacyId":q["id"],"legacyFile":filename,"sourceId":q.get("sourceId"),
-                  "matchType":match,"newId":ids[0] if len(ids)==1 else None,
-                  "candidates":ids if len(ids)>1 else fallback[:6] if match=="UNMATCHED" else []})
+                  "matchType":match,"newId":selected,"candidates":evidence if not selected else [],
+                  "evidence":"same answer and four/ten options plus matching source ID and year" if match=="VERIFIED_SOURCE" else "same answer, choices and year: identity requires review" if match=="VERIFIED_YEAR_OPTIONS" else "full stem/options/answer match" if match=="EXACT" else "not verified"})
    match_stats[match]+=1
  assert len(legacy)==668,len(legacy)
  assert len(set(x["legacyId"] for x in legacy))==668
@@ -168,7 +198,7 @@ def main():
  write(OUTPUT/"summary.json",overview)
  write(OUTPUT/"candidates.json",audited)
  write(OUTPUT/"legacy-crosswalk.json",{"schema":"v04-to-v06-candidates","rows":legacy,"count":dict(match_stats),
-      "notice":"EXACT means exact normalized prompt/options/answer only; must still verify provenance before migration. No records transferred."})
+      "notice":"All mappings are candidates; EXACT is equal stem/options/answer, VERIFIED_SOURCE matches source ID/year/answer/options, VERIFIED_YEAR_OPTIONS is provisional and must be reviewed. No records transferred."})
  write(OUTPUT/"duplicate-review.json",{"groups":duplicates,"totalGroups":len(duplicates),"extraRows":dup_candidates})
  report=[
  "# Staresto v0.6｜第一階段題庫品質驗收報告","",
@@ -188,7 +218,7 @@ def main():
  for k,v in block_counts.most_common():report.append(f"| {k} | {v:,} |")
  report.extend(["","## 原 v0.4 學習進度相容性","",
  "| 對照狀態 | 題數 |","|---|---:|"])
- for k in ("EXACT","AMBIGUOUS","UNMATCHED"):report.append(f"| {k} | {match_stats[k]} |")
+ for k in ("EXACT","VERIFIED_SOURCE","VERIFIED_YEAR_OPTIONS","AMBIGUOUS","UNMATCHED"):report.append(f"| {k} | {match_stats[k]} |")
  report.extend(["",f"原 v0.4 668 題全部保留在原資料檔；目前僅建立 ID 對照候選，未執行學習紀錄移轉。",
  f"跨來源的完全相同題目群：{len(duplicates)} 組，額外候選紀錄 {dup_candidates} 筆，仍須人工核對。","",
  "## 下一輪待處理","",
