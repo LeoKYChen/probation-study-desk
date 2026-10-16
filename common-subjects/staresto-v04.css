@@ -1,0 +1,9 @@
+.st-v04{background:white;border:1px solid #d8e4dc;border-radius:16px;padding:20px;margin:16px 0}.st-v04 header{background:transparent;color:var(--ink);padding:0}.st-v04 .muted{font-size:.86rem;color:var(--muted)}
+.st-progress{height:10px;background:#e5ede8;border-radius:99px;overflow:hidden;margin:12px 0}.st-progress div{height:100%;background:var(--green);transition:width .2s}
+.st-meta{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.st-meta span{font-size:.8rem;background:#e9f4ee;color:#174c40;border-radius:99px;padding:3px 9px}
+.st-actions{display:flex;gap:9px;flex-wrap:wrap;margin:14px 0}.st-q{background:#f7faf8;border-radius:12px;padding:16px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.75}
+.st-q button{width:100%;text-align:left;background:#fff;border:1px solid #c7dacf;padding:12px;margin-top:8px;border-radius:10px;color:var(--ink)}.st-q button:disabled{opacity:.95;cursor:default}.st-q button.correct{background:#def2e5;border-color:#4b9d6c}.st-q button.wrong{background:#ffefe9;border-color:#b66c61}
+.st-translation{background:#ecf6ef;border-radius:9px;margin-top:12px;padding:12px;white-space:pre-wrap;overflow-wrap:anywhere}
+.st-v04 .st-summary{padding:12px;background:#edf5ee;border-radius:10px;margin:12px 0}
+.st-v04 .st-small{font-size:.82rem;color:var(--muted)}
+.st-v04 a{overflow-wrap:anywhere}
