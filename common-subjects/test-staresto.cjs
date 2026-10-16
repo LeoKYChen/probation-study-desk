@@ -12,6 +12,18 @@ for(const [i,c] of [js,records,english,inline[0]].entries())new vm.Script(c,{fil
 assert.ok(html.includes('./staresto-integration.js'),'integration loaded');
 assert.ok(html.includes('./staresto-resources.js'),'data loaded');
 assert.ok(html.includes('externalRecordsStat'),'record summary exists');
+const hiddenStart=html.indexOf('<div id="legacy80Practice" hidden aria-hidden="true">');
+const starestoExternal=html.indexOf('<section class="panel" id="starestoPanel"');
+const nextPanel=html.indexOf('<section id="panelRecords"');
+assert.ok(hiddenStart>0 && starestoExternal>hiddenStart && nextPanel>starestoExternal,
+  'legacy practice hidden before visible Staresto links and records');
+const legacyOnly=html.slice(hiddenStart,starestoExternal);
+for(const id of ['startDaily','answered','questionPick','options','nextQuestion','retryQuestion'])
+  assert.ok(legacyOnly.includes('id="'+id+'"'),'legacy UI still in DOM: '+id);
+assert.ok(legacyOnly.includes('</div>\n'),'hidden wrapper closed');
+assert.ok(!legacyOnly.includes('id="starestoPanel"'),'Staresto resources outside hidden wrapper');
+assert.ok(html.includes('href="./daily/"'),'v0.4 daily Staresto remains visible');
+assert.ok(html.includes('<section id="panelEssay"'),'essay module remains present');
 class Node{
  constructor(id=''){this.id=id;this.value='';this.textContent='';this.children=[];this.options=[];this.handlers={};this.style={};this.className='';this.hidden=false;this.disabled=false;this.classList={toggle(){},add(){}};}
  addEventListener(name,fn){(this.handlers[name]??=[]).push(fn);}
