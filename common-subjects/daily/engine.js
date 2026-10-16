@@ -79,7 +79,7 @@ function buildDay(bank,state,date){
  const existing=state.days[date];if(existing&&Array.isArray(existing.tasks))return existing;
  const lv=stage(state).level,w=weekday(date),excluded=new Set(),tasks=[];
  const usedGroups=Object.values(state.days).flatMap(d=>(d.tasks||[]).map(t=>t.group).filter(Boolean)).slice(-30);
- function add(key,title,kind,ids,minutes){ids.forEach(id=>excluded.add(id));if(ids.length)tasks.push(task(key,title,kind,ids,minutes))}
+ function add(key,title,kind,ids,minutes){ids.forEach(id=>excluded.add(id));if(ids.length){const t=task(key,title,kind,ids,minutes);t.group=bank.byId[ids[0]]?.group||null;tasks.push(t)}}
  function vocab(n){return stablePick(bank.kinds.vocab,n,date,lv,state,excluded)}
  function group(type){return pickGroup(bank,type,date,lv,state,excluded,usedGroups)}
  function cards(n){
