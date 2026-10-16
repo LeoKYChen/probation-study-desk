@@ -36,6 +36,14 @@ jobs:
           cp study30-addons/daily-essay-workbench.js deploy-dist/daily-essay-workbench.js
           node study30-addons/patch-v254.cjs deploy-dist
           cp study30-addons/v254-diagnostics.js deploy-dist/v254-diagnostics.js
+          git fetch --depth=1 origin main
+          git show FETCH_HEAD:v2.5/shuati-links.js > deploy-dist/study30-shuati-links.js
+          git show FETCH_HEAD:v2.5/yamol-links.js > deploy-dist/study30-yamol-links.js
+          node study30-addons/patch-stage9-ai-links.cjs deploy-dist
+          cp study30-addons/ai-review-links.js deploy-dist/ai-review-links.js
+          node --check deploy-dist/ai-review-links.js
+          node --check deploy-dist/app.js
+          node study30-addons/test-stage9-ai-links.cjs deploy-dist
           echo "=== App context snippets ==="
           grep -n -A 10 -B 3 'function essayContext' deploy-dist/app.js | head -30
           grep -n -A 5 -B 4 'window.Study30App=' deploy-dist/app.js | head -28
