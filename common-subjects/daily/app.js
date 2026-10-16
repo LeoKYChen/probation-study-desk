@@ -126,6 +126,19 @@ function download(){
  document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1200);
  notice('已產生本模組備份檔。');
 }
+function clearProgress(){
+ const first='確定清除 Staresto 每日英文的全部學習紀錄嗎？\n\n將刪除：每日任務、作答歷史、錯題複習、字卡與學習階段。\n\n此操作不影響國文作文、原創80題或其他練習站。請先用「匯出 JSON 備份」保留資料。';
+ if(!confirm(first))return;
+ if(!confirm('最後確認：清除後無法直接復原，確定要重新開始 Staresto 每日英文學習嗎？'))return;
+ const previous=state;
+ const fresh=E.defaultState();
+ E.buildDay(bank,fresh,today);
+ state=fresh;
+ if(!save()){state=previous;notice('清除失敗：無法寫入本機儲存空間，原本的紀錄仍保留。',true);return}
+ task=null;shownDate=today;index=0;revealed=false;
+ renderPlan();renderSummary();showIdle();
+ notice('已清除 Staresto 每日英文學習紀錄，今天的任務已重新建立。');
+}
 function importData(event){
  const f=event.target.files?.[0];if(!f)return;
  if(f.size>5e6){notice('備份超過5MB，請檢查來源。',true);return}
@@ -150,6 +163,7 @@ async function init(){
   $('prev').addEventListener('click',()=>{if(task&&index>0){index--;revealed=false;renderQuestion()}});
   $('next').addEventListener('click',()=>{if(task&&index<task.ids.length-1){index++;revealed=false;renderQuestion()}});
   $('backupBtn').addEventListener('click',download);$('importFile').addEventListener('change',importData);
+  $('clearProgressBtn').addEventListener('click',clearProgress);
  }catch(e){notice('來源資料載入或驗證失敗。沒有變更原有紀錄。'+e.message,true)}
 }
 if(!E){notice('練習引擎讀取失敗，請重新整理。',true);return}
