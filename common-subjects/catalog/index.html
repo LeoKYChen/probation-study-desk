@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#163d35">
+<meta name="description" content="Staresto 全站學習資源：標準化題庫索引、來源核對及完整檔案搜尋。">
+<title>Staresto 題庫總覽 v0.5｜觀護人練習臺</title>
+<link rel="stylesheet" href="./style.css">
+<script src="./app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">跳至內容</a>
+<header><div class="wrap head"><a class="brand" href="../../common-subjects/">共同科目練習臺</a><span>Staresto v0.5｜資源驗收版</span></div></header>
+<main class="wrap" id="main">
+<section class="hero">
+ <p class="eyebrow">SOURCE-ATTRIBUTED STUDY CATALOG</p>
+ <h1>Staresto 全站學習資源索引</h1>
+ <p>先了解有哪些題目與教材，再討論怎麼練習。本頁僅提供查找、來源與內容檢視，<strong>不會記錄作答或改動正式課程</strong>。</p>
+ <div class="stats" id="stats"><span>正在載入已核對資料……</span></div>
+</section>
+<div id="error" class="error" hidden role="alert"></div>
+<section class="panel" aria-label="搜尋與篩選">
+ <div class="tabs" role="group" aria-label="索引種類">
+  <button type="button" id="tabQuestion" aria-pressed="true">題目／教材項目</button>
+  <button type="button" id="tabResource" aria-pressed="false">全部來源檔案</button>
+ </div>
+ <div class="filters">
+  <label>關鍵字搜尋<input id="search" type="search" placeholder="例如：單字、110、passage、題號、來源" autocomplete="off"></label>
+  <label>題型<select id="typeFilter"><option value="">全部</option></select></label>
+  <label>資料檢核狀態<select id="statusFilter"><option value="">全部</option></select></label>
+  <label>來源專案<select id="sourceFilter"><option value="">全部</option></select></label>
+ </div>
+ <div class="overview"><span id="resultCount" aria-live="polite">查詢中…</span><button type="button" id="resetFilters" class="secondary">清除篩選</button></div>
+</section>
+<div class="layout">
+ <section class="panel" aria-label="搜尋結果">
+  <div id="results" class="results"></div>
+  <div class="pages"><button type="button" id="prevPage" class="secondary">上一頁</button><span id="pageStatus">—</span><button type="button" id="nextPage" class="secondary">下一頁</button></div>
+ </section>
+ <aside class="panel detail" aria-label="資料詳細資訊">
+  <h2>來源與內容檢視</h2>
+  <div id="detail" aria-live="polite"><p>請選擇左側一筆資料。</p></div>
+ </aside>
+</div>
+<footer>
+ <p><strong>著作權：</strong>題目來源及解析由 staresto-create ZZSH 整理；限非商業自學與教學且須註明出處。正式試題、參考／試辦試題及媒體可能有不同權利條件，請參考原作者頁面。</p>
+ <p>資料只讀、採鎖定來源版本；不與 Staresto v0.4 每日英文、國文作文或原創80題的儲存紀錄連動。</p>
+ <a href="https://github.com/staresto-create" target="_blank" rel="noopener noreferrer">原作者 GitHub ↗</a>
+</footer>
+</main>
+</body></html>
