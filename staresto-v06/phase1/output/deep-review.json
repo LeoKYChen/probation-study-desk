@@ -1,0 +1,35 @@
+{
+  "schema": "staresto-v06-phase1-deep-v1",
+  "checkedLegacyByType": {
+    "單字來源與答案": 380,
+    "文法原站頁面、題號與答案": 45,
+    "閱讀原題號、選項與答案": 63,
+    "文意選填原題號、選項與答案": 180
+  },
+  "totalChecked": 668,
+  "legacyCount": 668,
+  "unverifiedLegacyExamples": [],
+  "legacyIssues": 0,
+  "mixedFormat": {
+    "records": 166,
+    "passageCount": 41,
+    "association": {
+      "linkedToOriginalPassage": 166,
+      "hasOriginalTextBlock": 166
+    },
+    "byExamLabel": {
+      "試辦考試": 4,
+      "參考試卷": 9,
+      "學測": 20,
+      "考試說明示範題": 5,
+      "改編練習": 128
+    },
+    "missingExamples": []
+  },
+  "duplicateGroups": 77,
+  "duplicateGroupExamTypes": {
+    "參考／試辦（另行核對） + 正式題候選（來源待逐筆確認）": 72,
+    "參考／試辦（另行核對）": 5
+  },
+  "publishedAutomatically": false
+}
