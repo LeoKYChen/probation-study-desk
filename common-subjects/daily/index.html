@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#18463d">
+<meta name="description" content="116年觀護人英文基礎訓練：引用 Staresto 原站學測正式題庫，安排每日練習、錯題複習和分級學習。">
+<title>每日英文練習 v0.4｜116年觀護人練習臺</title>
+<link rel="stylesheet" href="./style.css">
+<script src="./engine.js" defer></script>
+<script src="./app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">跳至主要內容</a>
+<header><div class="bar"><a class="brand" href="../">觀護人練習臺 <span>／ 每日英文 v0.4</span></a><nav><a href="../">共同科目</a><a href="../../">首頁</a></nav></div></header>
+<main id="main">
+<section class="hero">
+ <div><div class="eyebrow">STARESTO · ENGLISH DAILY PRACTICE</div><h1>每天15分鐘，打好英文基礎。</h1>
+ <p>以學測歷屆單字、克漏字、閱讀和文意選填為學習材料；依作答紀錄推薦合適難度。這裡不安排司法特考實戰題。</p></div>
+ <div class="hero-card"><div>今天</div><strong id="dateText">讀取中…</strong><p id="phaseText">載入學習紀錄</p><small>平日約15–20分鐘，週末15–30分鐘；遇到較長文章可分次完成。</small></div>
+</section>
+<div id="status" class="status" role="status" aria-live="polite">正在載入授權題庫，請稍候…</div>
+<div id="app" hidden>
+<section class="stats" aria-label="英文學習概況">
+ <div><small>練習階段</small><strong id="stageStat">基礎期</strong><span id="stageDetail">依表現漸進調整</span></div>
+ <div><small>題目首次答對率</small><strong id="accuracyStat">—</strong><span id="accuracyDetail">初期不以分數評價能力</span></div>
+ <div><small>待複習</small><strong id="dueStat">0題</strong><span id="dueDetail">到期錯題會加入複習安排</span></div>
+ </section>
+<section class="plan panel">
+ <div class="panel-head"><div><div class="eyebrow">TODAY'S TASKS</div><h2>今日學習任務</h2></div><span class="pill" id="todayCount">0 / 0</span></div>
+ <p class="muted" id="planHint">完成作答後可查看解析；每次答案都會儲存在本裝置。</p>
+ <div id="taskList" class="task-list"></div>
+</section>
+<section class="panel backlog-panel" id="backlogPanel" hidden>
+ <h2>先前尚未完成的任務</h2>
+ <p class="muted">保留最近14天已建立的未完成任務，不強制補做。可以接續原題，也可以繼續今天的安排。</p>
+ <div id="backlogList" class="task-list"></div>
+</section>
+<section class="panel work" id="workPanel">
+ <div class="panel-head">
+  <div><div class="eyebrow" id="workEyebrow">PRACTICE</div><h2 id="workTitle">請先選擇任務</h2></div>
+  <span id="taskProgress" class="pill">0 / 0</span>
+ </div>
+ <div class="work-top"><span class="muted" id="taskDate"></span><div class="buttons"><button class="subtle" id="prev" type="button">上一題</button><button class="subtle" id="next" type="button">下一題</button></div></div>
+ <article id="questionArea" aria-live="polite">
+   <p class="muted">選擇今日任務，開始練習。</p>
+ </article>
+ <div class="source-foot" id="questionSource" hidden></div>
+</section>
+<section class="grid-two">
+<div class="panel">
+ <h2>這週該補什麼？</h2>
+ <p class="muted">僅根據本模組原題的作答狀況。自評字卡不混入選擇題正確率。</p>
+ <div id="weakList" class="weak-list">尚無學習資料。</div>
+</div>
+<div class="panel">
+ <h2>資料備份與還原</h2>
+ <p class="muted">紀錄只儲存在目前瀏覽器，不會自動同步到 v0.3 作文或舊英文題庫，也不會上傳 GitHub。</p>
+ <div class="buttons"><button class="primary" id="backupBtn" type="button">匯出 JSON 備份</button><label class="subtle file-label" for="importFile">匯入舊備份</label><input id="importFile" type="file" accept="application/json,.json" hidden></div>
+ <small>匯入此模組備份會取代本模組紀錄；不會覆寫既有80題或作文。建議每週匯出一次。</small>
+</div>
+</section>
+<section class="rights panel">
+ <h2>題庫來源及非商業使用聲明</h2>
+ <p>歷屆正式試題取材自大學入學考試；中譯、解析、分類及編排等衍生成果由 <a href="https://github.com/staresto-create" target="_blank" rel="noopener noreferrer">staresto-create ZZSH</a> 製作。本學習模組為非商業個人備考用途，保留來源、年度及原題號，並提供逐題原作者連結。</p>
+ <p>依原作者聲明，作者原創的中譯及解析可供學生和老師在非商業個人學習或課堂使用與分享，轉載應註明出處；不因此將其視為本站 GPL 程式碼。不同性質試卷、圖片與資料可能另有權利限制，因此本次僅匯入已檢核之正式試題與無須外部圖片的題目。</p>
+ <small>本頁沒有付費 API、廣告、商業服務或外站帳號整合。來源作品權利仍屬其各該權利人；詳見 <a href="./SOURCES.md">來源與資料使用紀錄</a>。原作者若認為有任何不適當的使用，請透過專案 Issue 反映，我們將檢查並調整。</small>
+</section>
+</div>
+</main>
+<footer>國考英文＋作文練習站 · Staresto 基礎英文模組 v0.4 ｜ <a href="../">返回作文與原80題練習</a></footer>
+</body></html>

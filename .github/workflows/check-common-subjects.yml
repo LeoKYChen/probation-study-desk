@@ -1,9 +1,10 @@
-name: Check common-subjects v0.3
+name: Check common-subjects v0.4
 on:
   push:
     branches:
       - feature/common-subjects-v02
       - feature/common-subjects-staresto-links
+      - feature/common-subjects-v04-staresto-native
     paths:
       - common-subjects/**
       - .github/workflows/check-common-subjects.yml
@@ -36,3 +37,7 @@ jobs:
           node --check common-subjects/staresto-integration.js
           node --check common-subjects/test-staresto.cjs
           node common-subjects/test-staresto.cjs
+          node --check common-subjects/daily/engine.js
+          node --check common-subjects/daily/app.js
+          node common-subjects/daily/test-v04.cjs
+          node common-subjects/daily/test-ui-v04.cjs
