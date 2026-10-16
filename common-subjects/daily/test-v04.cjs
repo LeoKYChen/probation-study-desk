@@ -1,7 +1,10 @@
 /* Regression and provenance checks for Staresto v0.4; run with Node >=22. */
 'use strict';
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
-const root=__dirname,E=require(path.join(root,'engine.js'));
+const root=__dirname;
+const engineSandbox={module:{exports:{}}};
+vm.runInNewContext(fs.readFileSync(path.join(root,'engine.js'),'utf8'),engineSandbox,{filename:'engine.js'});
+const E=engineSandbox.module.exports;
 const files=['vocab.json','grammar-1.json','grammar-2.json','grammar-3.json','reading.json','completion.json'];
 const sources=files.map(f=>JSON.parse(fs.readFileSync(path.join(root,f),'utf8')));
 const script=fs.readFileSync(path.join(root,'app.js'),'utf8');
