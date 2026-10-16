@@ -49,8 +49,8 @@
 | 對照狀態 | 題數 |
 |---|---:|
 | EXACT | 435 |
-| VERIFIED_SOURCE | 188 |
-| VERIFIED_YEAR_OPTIONS | 45 |
+| VERIFIED_SOURCE | 233 |
+| VERIFIED_YEAR_OPTIONS | 0 |
 | AMBIGUOUS | 0 |
 | UNMATCHED | 0 |
 
