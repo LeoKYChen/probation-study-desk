@@ -1,7 +1,9 @@
 /* Headless DOM smoke test for the v0.4 static website. */
 'use strict';
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
-const dir=__dirname,Engine=require(path.join(dir,'engine.js'));
+const dir=__dirname,engineSandbox={module:{exports:{}}};
+vm.runInNewContext(fs.readFileSync(path.join(dir,'engine.js'),'utf8'),engineSandbox,{filename:'engine.js'});
+const Engine=engineSandbox.module.exports;
 const app=fs.readFileSync(path.join(dir,'app.js'),'utf8');
 const blobs=['vocab.json','grammar-1.json','grammar-2.json','grammar-3.json','reading.json','completion.json']
  .reduce((a,name)=>(a[name]=JSON.parse(fs.readFileSync(path.join(dir,name),'utf8')),a),{});
