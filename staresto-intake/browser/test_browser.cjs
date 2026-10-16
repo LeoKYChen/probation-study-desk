@@ -34,7 +34,7 @@ vm.createContext(sandbox);vm.runInContext(code,sandbox,{filename:'app.js'});
 async function settle(){for(let i=0;i<10;i++)await new Promise(r=>setImmediate(r))}
 (async()=>{
  await settle();
- assert.equal(get('error').hidden,false===true?false:true,'error initial state remains hidden');
+ assert.equal(get('error').textContent,'','no load error');
  assert.ok(get('stats').children.length===4);
  assert.ok(get('results').children.length>0);
  assert.match(get('resultCount').textContent,/找到/);
