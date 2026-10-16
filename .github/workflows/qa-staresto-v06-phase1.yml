@@ -6,6 +6,7 @@ on:
     paths:
       - staresto-v06/phase1/audit.py
       - staresto-v06/phase1/test_audit.py
+      - staresto-v06/phase1/deep_review.py
       - .github/workflows/qa-staresto-v06-phase1.yml
   workflow_dispatch:
 
@@ -34,9 +35,10 @@ jobs:
       - name: Run source provenance, official-exam, rights and duplicate screening
         shell: bash
         run: |
-          python -m py_compile staresto-v06/phase1/audit.py staresto-v06/phase1/test_audit.py
+          python -m py_compile staresto-v06/phase1/audit.py staresto-v06/phase1/test_audit.py staresto-v06/phase1/deep_review.py
           python staresto-v06/phase1/audit.py
           python staresto-v06/phase1/test_audit.py
+          python staresto-v06/phase1/deep_review.py
       - name: Publish audit output ONLY to independent phase1 branch
         shell: bash
         run: |
