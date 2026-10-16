@@ -13,7 +13,7 @@ const server=http.createServer((req,res)=>{
 (async()=>{
  await new Promise(r=>server.listen(0,'127.0.0.1',r));
  const browser=await chromium.launch({headless:true}),context=await browser.newContext({acceptDownloads:true,permissions:['clipboard-read','clipboard-write'],viewport:{width:390,height:844},locale:'zh-TW'});
- const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(String(e)));
+ const page=await context.newPage();page.setDefaultTimeout(6000);const errors=[];page.on('pageerror',e=>errors.push(String(e)));
  const url='http://127.0.0.1:'+server.address().port+'/';
  let n=0;async function check(name,fn){await fn();console.log('PASS',++n,name);}
  await page.goto(url,{waitUntil:'domcontentloaded',timeout:30000});
@@ -46,4 +46,4 @@ const server=http.createServer((req,res)=>{
  await check('no runtime JavaScript exceptions',async()=>assert.deepEqual(errors,[]));
  console.log('PASSED',n,'Daily30 true-browser checks');
  await browser.close();
-})().then(()=>server.close()).catch(e=>{console.error('FAILED Daily30 browser:',e);server.close();process.exitCode=1});
+})().then(()=>server.close()).catch(e=>{console.error('FAILED Daily30 browser:',e);server.close();process.exit(1)});
