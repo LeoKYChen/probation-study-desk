@@ -85,7 +85,7 @@ def main():
  assert index["meta"]["normalizedRecords"]==4733
  repo_file={(x["repo"],x["path"]):x for x in manifest["files"]}
  shard_cache={};upstream_cache={};audited=[];block_counts=Counter();source_counts=Counter()
- fp=defaultdict(list)
+ fp=defaultdict(list);fp_all=defaultdict(list)
  audit_data=[]
  for row in index["records"]:
   rel=row["shard"];source_rel=row["sourcePath"]
@@ -120,8 +120,11 @@ def main():
    "published":False
   }
   audited.append(record)
+  if row["status"] not in ("篇章素材",) and (r.get("options") or {}) and r.get("answer") in (r.get("options") or {}) and len(simpl(r.get("stem")))>15:
+   fp_all[record["canonicalFingerprint"]].append(row["id"])
   if not issues:fp[record["canonicalFingerprint"]].append(row["id"])
  duplicates={sig:ids for sig,ids in fp.items() if len(ids)>1}
+ all_duplicates={sig:ids for sig,ids in fp_all.items() if len(ids)>1}
  dup_candidates=sum(len(ids)-1 for ids in duplicates.values())
  for record in audited:
   sig=record["canonicalFingerprint"]
@@ -190,6 +193,7 @@ def main():
   "structurallyPrequalified":len(accepted),"notYetCleared":len(audited)-len(accepted),
   "allowedForProduction":0,
   "duplicateCandidateGroups":len(duplicates),"duplicateExtraRows":dup_candidates,
+  "crossSourceDuplicateGroups":len(all_duplicates),
   "status":dict(gatecount),"prequalifiedByCategory":dict(categories),
   "examSourceTypes":dict(source_counts),
   "blockingReasons":dict(block_counts),"legacyMapping":dict(match_stats),
@@ -199,7 +203,8 @@ def main():
  write(OUTPUT/"candidates.json",audited)
  write(OUTPUT/"legacy-crosswalk.json",{"schema":"v04-to-v06-candidates","rows":legacy,"count":dict(match_stats),
       "notice":"All mappings are candidates; EXACT is equal stem/options/answer, VERIFIED_SOURCE matches source ID/year/answer/options, VERIFIED_YEAR_OPTIONS is provisional and must be reviewed. No records transferred."})
- write(OUTPUT/"duplicate-review.json",{"groups":duplicates,"totalGroups":len(duplicates),"extraRows":dup_candidates})
+ write(OUTPUT/"duplicate-review.json",{"groups":duplicates,"totalGroups":len(duplicates),"extraRows":dup_candidates,
+      "crossSourceGroups":all_duplicates,"crossSourceGroupCount":len(all_duplicates)})
  report=[
  "# Staresto v0.6｜第一階段題庫品質驗收報告","",
  "> 此報告僅分析來源資料。沒有建立正式 v0.6 作答題庫，也沒有讀取或修改任何使用者瀏覽器紀錄。","",
@@ -220,7 +225,7 @@ def main():
  "| 對照狀態 | 題數 |","|---|---:|"])
  for k in ("EXACT","VERIFIED_SOURCE","VERIFIED_YEAR_OPTIONS","AMBIGUOUS","UNMATCHED"):report.append(f"| {k} | {match_stats[k]} |")
  report.extend(["",f"原 v0.4 668 題全部保留在原資料檔；目前僅建立 ID 對照候選，未執行學習紀錄移轉。",
- f"跨來源的完全相同題目群：{len(duplicates)} 組，額外候選紀錄 {dup_candidates} 筆，仍須人工核對。","",
+ f"初步準入資料內的完全相同題目群：{len(duplicates)} 組、額外紀錄 {dup_candidates} 筆；全資料跨來源相同題幹與選項群：{len(all_duplicates)} 組（包含參考與試辦來源），須逐項核對。","",
  "## 下一輪待處理","",
  "1. 檢查篩選規則的誤判，特別是篇章題組、來源未明試題、參考／試辦、帶圖題。",
  "2. 人工核對來源權利、答案與解析，標記可發布題目，不能直接以機器通過取代人工複核。",
