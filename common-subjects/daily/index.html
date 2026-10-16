@@ -58,6 +58,12 @@
  <p class="muted">紀錄只儲存在目前瀏覽器，不會自動同步到 v0.3 作文或舊英文題庫，也不會上傳 GitHub。</p>
  <div class="buttons"><button class="primary" id="backupBtn" type="button">匯出 JSON 備份</button><label class="subtle file-label" for="importFile">匯入舊備份</label><input id="importFile" type="file" accept="application/json,.json" hidden></div>
  <small>匯入此模組備份會取代本模組紀錄；不會覆寫既有80題或作文。建議每週匯出一次。</small>
+ <div class="reset-area">
+  <h3>重新開始每日英文學習</h3>
+  <p class="muted">只清除本模組的每日任務、答題紀錄、字卡熟悉度、錯題與學習階段。清除後無法直接復原，請先匯出 JSON 備份。</p>
+  <button class="danger" type="button" id="clearProgressBtn">清除 Staresto 每日英文學習紀錄</button>
+  <small>不影響國文作文、原創80題、專業科目題庫，也不刪除本站題庫本身。</small>
+ </div>
 </div>
 </section>
 <section class="rights panel">
