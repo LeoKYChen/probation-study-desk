@@ -378,7 +378,7 @@ def selftest():
         '<div class="row"><div class="col-th">裁判字號</div><div class="col-td">111年度上字第123號</div></div>'
         '<div class="row"><div class="col-th">裁判日期</div><div class="col-td">民國111年12月23日</div></div>'
         '<div class="htmlcontent">臺灣高等法院民事判決111年度上字第123號主文理由'
-        +('合成測試不是真實裁判'*500)+'</div></div>'
+        +('合成測試不是真實裁判'*1400)+'</div></div>'
     ).encode("utf-8")
     jid="TPHV,111,上,123,20221223,1"
     assert source_identity(basic,jid,"臺灣高等法院","民事")["official_identity_passed"]
