@@ -77,4 +77,9 @@ assert.equal(refreshed.get('questionPick').options.length,10);
 const previous=make({[KEY]:JSON.stringify({schema:'psd-common-subjects-v1',drafts:{'sentence:0':{text:'舊版草稿',versions:[],feedback:'',self:{},nextAction:'',updatedAt:''}},english:{e0:{choice:0,correct:false,at:'2026-10-01'}}})});
 previous.get('tabRecords').click();assert.equal(previous.get('englishStat').textContent,'0%');
 assert.equal(previous.get('essayText').value,'舊版草稿');
+const many=make();many.get('essayText').value='這是最初版本';many.get('essayText').fire('input');many.get('saveVersion').click();
+for(let n=0;n<44;n++){many.get('essayText').value='修訂第'+n+'次';many.get('essayText').fire('input');many.get('saveVersion').click();}
+const saved=JSON.parse(many.db[KEY]).drafts['sentence:0'].versions;
+assert.equal(saved.length,40,'cap essay history');
+assert.equal(saved[0].text,'這是最初版本','preserve original despite version cap');
 console.log('PASS common-subjects v0.2: syntax, 80 questions, draft versions, comparison, retry history, daily five, old records');
