@@ -82,9 +82,18 @@ function buildDay(bank,state,date){
  function add(key,title,kind,ids,minutes){ids.forEach(id=>excluded.add(id));if(ids.length)tasks.push(task(key,title,kind,ids,minutes))}
  function vocab(n){return stablePick(bank.kinds.vocab,n,date,lv,state,excluded)}
  function group(type){return pickGroup(bank,type,date,lv,state,excluded,usedGroups)}
- function cards(n){const prefer=bank.kinds.vocab.filter(q=>attempts(state,q.id).length>0);
- const pool=prefer.length>=n?prefer:bank.kinds.vocab;
- return stablePick(pool,n,date+'-card',lv,state,new Set()).slice(0,n)}
+ function cards(n){
+ const all=bank.kinds.vocab;
+ const due=all.filter(q=>state.cards[q.id]&&state.cards[q.id].due<=date)
+   .sort((a,b)=>String(state.cards[a.id].due).localeCompare(String(state.cards[b.id].due))||a.id.localeCompare(b.id));
+ const familiar=all.filter(q=>attempts(state,q.id).length>0);
+ const chosen=[],seen=new Set();
+ function fill(arr){for(const q of arr){if(chosen.length>=n)break;if(!seen.has(q.id)){seen.add(q.id);chosen.push(q.id)}}}
+ fill(due);
+ fill(stablePick(familiar,n,date+'-card',lv,state,seen).map(id=>bank.byId[id]));
+ fill(stablePick(all,n,date+'-card-new',lv,state,seen).map(id=>bank.byId[id]));
+ return chosen;
+}
  if(w===1){add('vocab','歷屆學測單字 · 8題','quiz',vocab(8),10);add('cards','單字記憶卡 · 5個','cards',cards(5),5)}
  if(w===2){add('grammar','學測克漏字 · 1組','quiz',group('grammar'),20)}
  if(w===3){add('cards','字彙記憶卡 · 10個','cards',cards(10),10);add('vocab','易混淆單字 · 4題','quiz',vocab(4),8)}
