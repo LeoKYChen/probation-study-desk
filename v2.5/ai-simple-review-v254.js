@@ -47,7 +47,7 @@
   }
   function backupName(date) {
     var d = date || new Date();
-    return (d.getFullYear()-1911)+'年'+(d.getMonth()+1)+'月'+d.getDate()+'日學習紀錄備份.json';
+    return (d.getFullYear()-1911)+'年'+String(d.getMonth()+1).padStart(2,'0')+'月'+String(d.getDate()).padStart(2,'0')+'日學習紀錄備份.json';
   }
   var api = Object.freeze({buildPrompt:buildPrompt,validBank:validBank,backupName:backupName,field:FIELD});
   root.AISimpleReview254 = api;
