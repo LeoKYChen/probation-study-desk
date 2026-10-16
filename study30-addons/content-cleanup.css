@@ -1,0 +1,18 @@
+/* The approved cleanup keeps the original v2.5.4 colors and all functionality. */
+.content-collapse{margin:22px 0;border:1px solid var(--line,#dce4dc);border-radius:18px;background:var(--paper,#fff);overflow:hidden}
+.content-collapse>summary{cursor:pointer;list-style:none;font-size:1.22rem;font-weight:800;color:var(--green,#204436);padding:18px 22px;display:flex;align-items:center;justify-content:space-between}
+.content-collapse>summary::-webkit-details-marker{display:none}
+.content-collapse>summary::after{content:'＋';font-size:1.2rem}
+.content-collapse[open]>summary::after{content:'－'}
+.content-collapse>summary:focus-visible{outline:3px solid #317b64;outline-offset:-3px}
+.content-collapse-body{padding:0 12px 14px}
+.content-collapse-body>.essay-analytics-panel,.content-collapse-body>.data-health-panel,.content-collapse-body>.backup-import-panel{margin:0;border:0;box-shadow:none;padding:10px}
+.content-collapse-body>.essay-analytics-panel>.section-head h2,.content-collapse-body>.data-health-panel>h2,.content-collapse-body>.backup-import-panel>h2{position:absolute;clip:rect(0,0,0,0);width:1px;height:1px;overflow:hidden;white-space:nowrap}
+.week-practice-bar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:14px 0}
+.week-practice-bar p{margin:0}
+.week-practice-bar button[hidden]{display:none}
+#historyContent>.day-cell{font-family:inherit;min-width:0;cursor:pointer;min-height:74px;border:1px solid var(--line,#cddbd2);border-radius:12px;background:#fff;text-align:center;color:inherit;padding:10px 4px}
+#historyContent>.day-cell.selected{outline:3px solid #4a987d;outline-offset:0;background:#edf6f0}
+#historyContent>.day-cell:disabled{opacity:.45;cursor:not-allowed}
+#historyContent>.day-cell:focus-visible{outline:3px solid #14634a;outline-offset:2px}
+@media(max-width:680px){.content-collapse>summary{padding:15px}.content-collapse-body{padding:0 8px 10px}.week-practice-bar{gap:8px}#historyContent>.day-cell{padding:8px 2px;min-height:66px;font-size:.9rem}}
