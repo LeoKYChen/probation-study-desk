@@ -25,6 +25,8 @@ def run():
  assert set(old["count"]).issubset({"EXACT","VERIFIED_SOURCE","VERIFIED_YEAR_OPTIONS","AMBIGUOUS","UNMATCHED"})
  assert sum(old["count"].values())==668
  assert len({q["legacyId"] for q in old["rows"]})==668
+ assert len({q["newId"] for q in old["rows"] if q["newId"]})==sum(q["newId"] is not None for q in old["rows"]),"no two old IDs silently merge"
+ assert dups["crossSourceGroupCount"]==len(dups["crossSourceGroups"])
  assert all((q["newId"] is None) if q["matchType"] in ("AMBIGUOUS","UNMATCHED") else isinstance(q["newId"],str) for q in old["rows"])
  assert dups["totalGroups"]==len(dups["groups"])
  # Source training & catalog files remain the exact originals on branch.
