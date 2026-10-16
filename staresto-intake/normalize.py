@@ -198,8 +198,8 @@ def main():
        "hasPassage":passage_required,"hasMedia":media}
    if status in ("選擇題可核對","非選擇題可核對") and len(stem)>15:
     signature=json.dumps([
-     re.sub(r"\\s+"," ",stem).casefold(),
-     sorted((k,re.sub(r"\\s+"," ",val).casefold()) for k,val in options.items()),
+     re.sub(r"\s+"," ",stem).casefold(),
+     sorted((k,re.sub(r"\s+"," ",val).casefold()) for k,val in options.items()),
      letter or answer,yr],ensure_ascii=False,sort_keys=True)
     fingerprint=hashlib.sha256(signature.encode("utf-8")).hexdigest()
     if fingerprint in possible_dup:
