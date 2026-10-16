@@ -4,6 +4,14 @@ const BASE=new URL('./',self.location.href);
 const PREFIX='probation-offline-'+BASE.pathname+':';
 const CONTROL=PREFIX+'control', META=new URL('pwa/snapshot-state',BASE).href;
 const absolute=path=>new URL(path,BASE).href;
+// Keep the installed offline snapshot as a fallback, but refresh the daily study room when online.
+const NETWORK_FIRST=new Set(['daily-simulation/index.html','daily-simulation/app.js','daily-simulation/questions.json'].map(absolute));
+async function networkCopy(request){
+  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),7000);
+  try{const response=await fetch(request,{cache:'no-store',signal:controller.signal});return response.ok?response:null;}
+  catch{return null;}
+  finally{clearTimeout(timer);}
+}
 let downloading=false;
 async function state(){const r=await(await caches.open(CONTROL)).match(META);return r?r.json():null;}
 async function status(){const s=await state();if(!s)return null;const keys=new Set((await(await caches.open(s.cacheName)).keys()).map(r=>r.url));return s.urls.every(u=>keys.has(u))?s:null;}
@@ -50,6 +58,11 @@ self.addEventListener('fetch',e=>{
   const u=new URL(e.request.url);
   if(e.request.method!=='GET'||u.origin!==BASE.origin||!u.pathname.startsWith(BASE.pathname)||['sw.js','offline-manifest.json'].includes(u.pathname.slice(BASE.pathname.length)))return;
   e.respondWith((async()=>{
+    const clean=new URL(e.request.url);clean.search='';clean.hash='';
+    if(NETWORK_FIRST.has(clean.href)&&self.navigator?.onLine!==false){
+      const fresh=await networkCopy(e.request);
+      if(fresh)return fresh;
+    }
     const s=await state();
     if(s){u.search='';u.hash='';if(u.pathname.endsWith('/'))u.pathname+='index.html';const r=await(await caches.open(s.cacheName)).match(u.href);if(r)return r;}
     try{return await fetch(e.request);}catch{
