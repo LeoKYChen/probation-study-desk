@@ -136,6 +136,7 @@ assert.equal(db[SEPARATE],'STARESTO-PROGRESS-MUST-SURVIVE','Staresto remains iso
 assert.equal(db[OTHER],'SPECIALTY-MUST-SURVIVE','other study keys remain isolated');
 const restoredAfterReset=make(db);
 assert.equal(restoredAfterReset.get('essayText').value,'清除作文後新寫的內容','essay saved across reload');
+restoredAfterReset.get('tabEnglish').click();
 assert.equal(restoredAfterReset.get('answered').textContent,'0 / 80','original English progress empty on reload');
 
 console.log('PASS common-subjects v0.2: syntax, 80 questions, draft versions, comparison, retry history, daily five, old records');
