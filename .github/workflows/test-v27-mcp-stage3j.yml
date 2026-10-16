@@ -1,0 +1,69 @@
+name: v2.7 MCP stage 3j ten independent history-list checks
+
+on:
+  push:
+    branches:
+      - experiment/v27-mcp-stage3j
+    paths:
+      - 'experiments/v27-mcp-poc/stage3j_history_lists.py'
+      - '.github/workflows/test-v27-mcp-stage3j.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  history-source:
+    name: Audit ten public court appellate history lists, not finality
+    runs-on: ubuntu-latest
+    timeout-minutes: 17
+    env:
+      JUDICIAL_API_LIVE_ENABLED: 'false'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Use temporary MCP cache outside public repository
+        run: echo "MCP_TAIWAN_LEGAL_DB_HOME=$RUNNER_TEMP/v27-stage3j-cache" >> "$GITHUB_ENV"
+      - name: Fetch exact previously reviewed MCP SHA
+        env:
+          UPSTREAM_SHA: ef677ad63c3206fc211a083fad8b1d9ef5015222
+        run: |
+          git init "$RUNNER_TEMP/legal-mcp"
+          git -C "$RUNNER_TEMP/legal-mcp" remote add origin https://github.com/lawchat-oss/mcp-taiwan-legal-db.git
+          git -C "$RUNNER_TEMP/legal-mcp" fetch --depth 1 origin "$UPSTREAM_SHA"
+          git -C "$RUNNER_TEMP/legal-mcp" checkout --detach FETCH_HEAD
+          test "$(git -C "$RUNNER_TEMP/legal-mcp" rev-parse HEAD)" = "$UPSTREAM_SHA"
+      - name: Install pinned public research MCP
+        run: python -m pip install "$RUNNER_TEMP/legal-mcp"
+      - name: Validate syntax, source and history comparison safeguards
+        run: |
+          python -m py_compile experiments/v27-mcp-poc/stage3j_history_lists.py
+          python experiments/v27-mcp-poc/stage3j_history_lists.py --mode selftest
+      - name: Run ten limited public official history-list checks
+        run: timeout 890s python -u experiments/v27-mcp-poc/stage3j_history_lists.py --mode live
+      - name: Confirm no change to public website or court service
+        if: always()
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          code=Path("experiments/v27-mcp-poc/stage3j_history_lists.py").read_text()
+          assert 'MAX_HISTORY_ENTRIES=70' in code
+          assert 'out["stage3_accepted"]=False' in code
+          assert 'out["history_finality_accepted"]=False' in code
+          assert 'no_judgment_text_saved":True' in code
+          assert "get_judgment" in code and "GetJudHistory.ashx" in code
+          assert 'status:404' in Path("services/v2.7-judgment/private-worker.mjs").read_text()
+          print("Only research metadata, no deployed judgment endpoint")
+          PY
+      - name: Save only booleans and source-list counts, not descriptions
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v27-stage3j-official-history-list-audit
+          path: v27-mcp-stage3j-history-list-audit.json
+          if-no-files-found: warn
+          retention-days: 14
