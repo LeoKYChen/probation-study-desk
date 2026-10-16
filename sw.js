@@ -59,7 +59,7 @@ self.addEventListener('fetch',e=>{
   if(e.request.method!=='GET'||u.origin!==BASE.origin||!u.pathname.startsWith(BASE.pathname)||['sw.js','offline-manifest.json'].includes(u.pathname.slice(BASE.pathname.length)))return;
   e.respondWith((async()=>{
     const clean=new URL(e.request.url);clean.search='';clean.hash='';
-    if(NETWORK_FIRST.has(clean.href)){
+    if(NETWORK_FIRST.has(clean.href)&&self.navigator?.onLine!==false){
       const fresh=await networkCopy(e.request);
       if(fresh)return fresh;
     }
