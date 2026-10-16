@@ -48,7 +48,8 @@ _JID=re.compile(r"^[A-Z]{3,6}[VMA],\d{2,3},[^,]{1,15},[0-9A-Za-z-]+,\d{8},\d+$")
 
 
 def jid_is_eligible(jid,court_code,already):
-    if not isinstance(jid,str) or not _JID.fullmatch(jid) or jid in already:
+    if (not isinstance(jid,str) or not _JID.fullmatch(jid) or jid in already
+        or jid.startswith("KSY")):
         return False
     parts=jid.split(",")
     return parts[0]==court_code and 113<=int(parts[1])<=114
