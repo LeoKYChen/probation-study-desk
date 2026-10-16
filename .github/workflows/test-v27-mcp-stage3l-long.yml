@@ -1,0 +1,71 @@
+name: v2.7 MCP stage 3l bounded long-civil case gap
+
+on:
+  push:
+    branches:
+      - experiment/v27-mcp-stage3l
+    paths:
+      - 'experiments/v27-mcp-poc/stage3l_targeted_long.py'
+      - '.github/workflows/test-v27-mcp-stage3l-long.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  long-text:
+    name: At most two targeted public civil searches for 10000-char judgments
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      JUDICIAL_API_LIVE_ENABLED: 'false'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Keep cached data in ephemeral runner only
+        run: echo "MCP_TAIWAN_LEGAL_DB_HOME=$RUNNER_TEMP/v27-stage3l-long-cache" >> "$GITHUB_ENV"
+      - name: Fetch same reviewed upstream legal MCP revision
+        env:
+          UPSTREAM_SHA: ef677ad63c3206fc211a083fad8b1d9ef5015222
+        run: |
+          git init "$RUNNER_TEMP/legal-mcp"
+          git -C "$RUNNER_TEMP/legal-mcp" remote add origin https://github.com/lawchat-oss/mcp-taiwan-legal-db.git
+          git -C "$RUNNER_TEMP/legal-mcp" fetch --depth 1 origin "$UPSTREAM_SHA"
+          git -C "$RUNNER_TEMP/legal-mcp" checkout --detach FETCH_HEAD
+          test "$(git -C "$RUNNER_TEMP/legal-mcp" rev-parse HEAD)" = "$UPSTREAM_SHA"
+      - name: Install pinned research MCP only
+        run: python -m pip install "$RUNNER_TEMP/legal-mcp"
+      - name: Run bounded candidate and sensitive-case fixture tests
+        run: |
+          python -m py_compile experiments/v27-mcp-poc/stage3l_targeted_long.py
+          python experiments/v27-mcp-poc/stage3l_targeted_long.py --mode selftest
+      - name: Search two specific public civil cohorts for long-form judgments
+        run: timeout 600s python -u experiments/v27-mcp-poc/stage3l_targeted_long.py --mode live
+      - name: Check test isolation and no real deployment
+        if: always()
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          src=Path('experiments/v27-mcp-poc/stage3l_targeted_long.py').read_text()
+          for item in ('MAX_SEARCHES=2','MAX_DIRECT_GET=8','MAX_MCP_GET=2',
+                       'source_pdf_not_downloaded','no_case_identifier_saved_to_report',
+                       'long_text_subtest_accepted',
+                       'out["stage3_accepted"]=False','follow_redirects=False'):
+              assert item in src,item
+          public=Path('development/v2.7')
+          assert public.is_dir()
+          assert 'status:404' in Path('services/v2.7-judgment/private-worker.mjs').read_text()
+          print('Stage3l targeted long-form test remains fully isolated')
+          PY
+      - name: Store aggregate checks only, never judgment bodies
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v27-stage3l-long-form-targeted-gap
+          path: v27-mcp-stage3l-long-form-targeted.json
+          if-no-files-found: warn
+          retention-days: 14
