@@ -12,7 +12,7 @@ import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urlparse, urljoin, urlencode, parse_qs
+from urllib.parse import urlparse, urljoin, urlencode, parse_qs, unquote
 
 import httpx
 from bs4 import BeautifulSoup
@@ -156,7 +156,7 @@ async def one_case(label,jid,http,session):
     def official_history_origin(u):
         p=urlparse(u)
         return bool(is_official(u) and p.path=="/controls/GetJudHistory.ashx"
-                    and parse_qs(p.query).get("jid")==[key]
+                    and parse_qs(p.query).get("jid")==[unquote(key)]
                     and set(parse_qs(p.query))=={"jid"})
     raw,reason=await bounded_get(http,history_url,MAX_JSON,official_history_origin)
     if raw is None:
@@ -245,6 +245,9 @@ def selftest():
     assert history_key(b"<script>GetJudHistory.ashx?jid=ABCDE12345</script>")=="ABCDE12345"
     assert history_key(b"<script>no_history_here</script>") is None
     assert history_key(b"GetJudHistory.ashx?jid=%2fetc") is None
+    encoded="ABC%2CDEF"
+    p=urlparse(HISTORY_BASE+encoded)
+    assert parse_qs(p.query).get("jid")==[unquote(encoded)]
     data={"list":[{"desc":"民事第二審",
                    "href":"data.aspx?ty=JD&id=TPHV,114,上易,1030,20251231,2",
                    "red":0}]}
