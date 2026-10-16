@@ -35,6 +35,7 @@
 
 - 使用全新 `localStorage` 鍵 `psd-staresto-daily-v04`，**完全不讀取、搬移、更新** v0.1–v0.3 的 `psd-common-subjects-v1`、舊80題、作文草稿，也不影響主站題庫和每日任務。
 - 支援 v0.4 獨立 JSON 備份及還原。備份包含個人作答與學習行為，請勿上傳到公開 GitHub。
+- 支援「清除 Staresto 每日英文學習紀錄」：在備份／還原區使用，經兩次確認後，僅重新設定本模組的每日任務、作答、錯題、字卡與學習階段，並重新產生當天任務。操作無法直接復原，請先匯出備份。原本的作文、80題英文及其他題庫的儲存鍵不受影響。
 - 目前沒有外站登入、自動同步、付費 API 或完整 PWA 離線包；第一次開啟題庫需要網路。
 
 作者來源：[staresto-create GitHub](https://github.com/staresto-create)｜[原題庫首頁](https://staresto-create.github.io/JCEE-vocab-questions/)。
