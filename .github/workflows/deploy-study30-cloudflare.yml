@@ -1,9 +1,9 @@
-name: Deploy Study30 v2.5.4 Offline Preview
+name: Deploy Study30 v2.5.4 Content Cleanup Preview
 
 on:
   push:
     branches:
-      - feature/study30-v254-offline
+      - feature/study30-v254-content-cleanup
     paths:
       - study30-site.zip
       - .github/workflows/deploy-study30-cloudflare.yml
@@ -78,6 +78,14 @@ jobs:
           node --check study30-addons/patch-v254.cjs
           node --check study30-addons/test-v254.cjs
           node study30-addons/test-v254.cjs deploy-dist
+          node --check study30-addons/patch-content-cleanup.cjs
+          node --check study30-addons/patch-week-practice.cjs
+          node --check study30-addons/content-ui.js
+          node study30-addons/patch-content-cleanup.cjs deploy-dist
+          node study30-addons/patch-week-practice.cjs deploy-dist
+          node --check deploy-dist/app.js
+          node --check deploy-dist/question-sources.js
+          node --check deploy-dist/review-simulator.js
           node --check study30-addons/install-offline.cjs
           node --check study30-addons/offline-control.js
           node --check study30-addons/service-worker.template.js
@@ -86,10 +94,12 @@ jobs:
           node --check deploy-dist/offline-control.js
           node --check study30-addons/test-offline.cjs
           node study30-addons/test-offline.cjs deploy-dist
+          node --check study30-addons/test-content-cleanup.cjs
+          node study30-addons/test-content-cleanup.cjs deploy-dist
 
       - name: Deploy to existing Cloudflare Pages project
         uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy deploy-dist --project-name=probation-study30-test --branch=v254-offline-preview
+          command: pages deploy deploy-dist --project-name=probation-study30-test --branch=v254-content-preview
