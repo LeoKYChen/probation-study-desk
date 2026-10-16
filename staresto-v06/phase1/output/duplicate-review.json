@@ -1,5 +1,316 @@
 {
   "groups": {},
   "totalGroups": 0,
-  "extraRows": 0
+  "extraRows": 0,
+  "crossSourceGroups": {
+    "5404ccdc6e45e918902bc207867eece8697a385721ec1468d556d4e6dc41a142": [
+      "st:discourse-structure:zhikao/items.json:Dzref107_31",
+      "st:discourse-structure:zhikao/items.json:Dz103_31"
+    ],
+    "b5c4da017f483556d27cbee7bd660bcd36bb600be88790da75bcd13297b3692d": [
+      "st:discourse-structure:zhikao/items.json:Dzref107_32",
+      "st:discourse-structure:zhikao/items.json:Dz103_32"
+    ],
+    "f759552dd81cb8b26d9a7c108c74acde06f7109266831a0aa3f9cec4185dfdd7": [
+      "st:discourse-structure:zhikao/items.json:Dzref107_33",
+      "st:discourse-structure:zhikao/items.json:Dz103_33"
+    ],
+    "e226b450d0bb087d49da976182a01eaa4ff8c2755cac194753dcdf050d7c9482": [
+      "st:discourse-structure:zhikao/items.json:Dzref107_34",
+      "st:discourse-structure:zhikao/items.json:Dz103_34"
+    ],
+    "67c0153827ce061d57affa5306a94703f02a672962fcfdce665462ad7bc37f3e": [
+      "st:discourse-structure:zhikao/items.json:Dzref107_35",
+      "st:discourse-structure:zhikao/items.json:Dz103_35"
+    ],
+    "a8b677c54e9331a47e6ab013413fd094c73948e706cb2c744850828502377c93": [
+      "st:discourse-structure:zhikao/items.json:Dzref99_31",
+      "st:discourse-structure:zhikao/items.json:Dzres100_31"
+    ],
+    "eab9f354b32b5743f318151c9a4579658653e09f243f2d43885f290360e9faeb": [
+      "st:discourse-structure:zhikao/items.json:Dzref99_32",
+      "st:discourse-structure:zhikao/items.json:Dzres100_32"
+    ],
+    "8f5920a736379444ed369c21540ee3c2eff36167db30cd6b5c9c044e3865fea9": [
+      "st:discourse-structure:zhikao/items.json:Dzref99_33",
+      "st:discourse-structure:zhikao/items.json:Dzres100_33"
+    ],
+    "dca7ef621c31f6a4e06b39d6231f06b5c9128b5b8457d4aa8c6739497a93a1e3": [
+      "st:discourse-structure:zhikao/items.json:Dzref99_34",
+      "st:discourse-structure:zhikao/items.json:Dzres100_34"
+    ],
+    "5ae01aeca6638cf96d378ade8056a6479d25964b582121df6e7e3b02d30d84fd": [
+      "st:discourse-structure:zhikao/items.json:Dzref99_35",
+      "st:discourse-structure:zhikao/items.json:Dzres100_35"
+    ],
+    "f912468a2ed1bc4ad96f52c8919f2c7b16a4a2ea000035496e23c73a68827ccd": [
+      "st:passage-completion:zhikao/items.json:Vzref107_21",
+      "st:passage-completion:zhikao/items.json:Vz101_21"
+    ],
+    "38ae145092db0e678b62f904df3dc6dbb768fb2acc76a24fd169504862483b1d": [
+      "st:passage-completion:zhikao/items.json:Vzref107_22",
+      "st:passage-completion:zhikao/items.json:Vz101_22"
+    ],
+    "f8813423efb9e36473f4cd133af90fad13d9fcf97842f9462b75aa11a46f7fe0": [
+      "st:passage-completion:zhikao/items.json:Vzref107_23",
+      "st:passage-completion:zhikao/items.json:Vz101_23"
+    ],
+    "0b18bccd06c49c3e4b7abbdb62e9bb94b9185eb914bcf78b29086174b0d2957e": [
+      "st:passage-completion:zhikao/items.json:Vzref107_25",
+      "st:passage-completion:zhikao/items.json:Vz101_25"
+    ],
+    "c9c91f6db0a859ba088cedf0af84df7a7ff386e1f31e51baeb2c844306b63a23": [
+      "st:passage-completion:zhikao/items.json:Vzref107_26",
+      "st:passage-completion:zhikao/items.json:Vz101_26"
+    ],
+    "7233fa07aafb244149cea0997736ebe0f2c9ee50dea37c47a878d0bbf40b583c": [
+      "st:passage-completion:zhikao/items.json:Vzref107_27",
+      "st:passage-completion:zhikao/items.json:Vz101_27"
+    ],
+    "066e1dfb99d2c5bfbf2a1334f5be389aecf2a879159ef88d04036ed62c55053d": [
+      "st:passage-completion:zhikao/items.json:Vzref107_28",
+      "st:passage-completion:zhikao/items.json:Vz101_28"
+    ],
+    "0a1df54e38f05eeeb70303fbc6e66d32b224d0287bccdf536e3b2b26fd697b7e": [
+      "st:passage-completion:zhikao/items.json:Vzref107_29",
+      "st:passage-completion:zhikao/items.json:Vz101_29"
+    ],
+    "be462034c284d29b735b1d1ba63f6e8ba857cc24b348582b50b9f155dfe1ca9a": [
+      "st:reading-comprehension:gsat/items.json:Rg115r_35",
+      "st:reading-comprehension:gsat/items.json:Rg109_41"
+    ],
+    "02507aa79024c83bb6e17e41103db421e18e32082bc8bec4b1e28e0bba24fdbd": [
+      "st:reading-comprehension:gsat/items.json:Rg115r_36",
+      "st:reading-comprehension:gsat/items.json:Rg109_42"
+    ],
+    "f2b064ba79760400feff5367bdd3cb9ad859b19f3a7bffbd09a4760d708731fe": [
+      "st:reading-comprehension:gsat/items.json:Rg115r_37",
+      "st:reading-comprehension:gsat/items.json:Rg109_43"
+    ],
+    "7eff824d190d1eac673ae91248af70b4d046d1c1db548480676df10566d98b0d": [
+      "st:reading-comprehension:gsat/items.json:Rg115r_38",
+      "st:reading-comprehension:gsat/items.json:Rg109_44"
+    ],
+    "4c9a38aa7170b9171ce25acc7350d750db027ef38b79503fa4722994decf0e1c": [
+      "st:reading-comprehension:gsat/items.json:Rg115r_39",
+      "st:reading-comprehension:gsat/items.json:Rg109_45"
+    ],
+    "a8298458179cf9cc1fcdc17ed11ee48170e0d17f457383c052c15018d5f49a76": [
+      "st:reading-comprehension:gsat/items.json:Rg115r_40",
+      "st:reading-comprehension:gsat/items.json:Rg109_46"
+    ],
+    "94d2860511bad86bcc7c079b7c8e582f532ac5d934dd32f59bf669c29999f9ea": [
+      "st:reading-comprehension:gsat/items.json:Rg115r_41",
+      "st:reading-comprehension:gsat/items.json:Rg109_47"
+    ],
+    "89397e6c74c2c4d01c9c7f36645f3e6b45e1623a6466364f8c70951da46f80ad": [
+      "st:reading-comprehension:gsat/items.json:Rg115r_42",
+      "st:reading-comprehension:gsat/items.json:Rg109_48"
+    ],
+    "f14d27ef8ad089cfc363f01a9558d85ed6a04aa787af025ec63b1e7df7d312ce": [
+      "st:reading-comprehension:gsat/items.json:Rg115r_43",
+      "st:reading-comprehension:gsat/items.json:Rg111_43"
+    ],
+    "eb23645113c9449c3374e7ce71d99097facdd056fd4211b6b84cac7d892e97a5": [
+      "st:reading-comprehension:gsat/items.json:Rg115r_44",
+      "st:reading-comprehension:gsat/items.json:Rg111_44"
+    ],
+    "4755c91386f98a9763cfdbdc85ad79a9d565b316a1b7cdde915d61a7486d12ed": [
+      "st:reading-comprehension:gsat/items.json:Rg115r_45",
+      "st:reading-comprehension:gsat/items.json:Rg111_45"
+    ],
+    "4e5ad4a017b28a5e5387cd6aea22931a0be39b3de3ec2f239efd8aed57ce9195": [
+      "st:reading-comprehension:gsat/items.json:Rg115r_46",
+      "st:reading-comprehension:gsat/items.json:Rg111_46"
+    ],
+    "f9744d30c372fd30d43ee82b18e46c521f43150d041193861985b071b43de57c": [
+      "st:reading-comprehension:gsat/items.json:Rg111r_35",
+      "st:reading-comprehension:gsat/items.json:Rg102_41"
+    ],
+    "87ce9f055477226e3b9ab8ea04df72a23d0afcf361759fed811ef36c926dd790": [
+      "st:reading-comprehension:gsat/items.json:Rg111r_36",
+      "st:reading-comprehension:gsat/items.json:Rg102_42"
+    ],
+    "cc8666853d2314be3f6badf0987476108e6269e3acc23cd74efe4c56055ef90f": [
+      "st:reading-comprehension:gsat/items.json:Rg111r_38",
+      "st:reading-comprehension:gsat/items.json:Rg102_44"
+    ],
+    "2bc168bf33bf32bb7523be4d19c9a642e818c8ce94061385dcbb5d5e85dc4c84": [
+      "st:reading-comprehension:gsat/items.json:Rg111r_39",
+      "st:reading-comprehension:zhikao/items.json:Rz108_36"
+    ],
+    "ef4431da545b487db4eb76620c4fe20ceaeeef20c516d39bd989ed251e5ea533": [
+      "st:reading-comprehension:gsat/items.json:Rg111r_41",
+      "st:reading-comprehension:zhikao/items.json:Rz108_38"
+    ],
+    "290ceff5aa9677e7e4b66ff0f2a39409b7a206c7680407f64a5ce8206f549530": [
+      "st:reading-comprehension:gsat/items.json:Rg111r_42",
+      "st:reading-comprehension:zhikao/items.json:Rz108_39"
+    ],
+    "ec28ee62645e1bbe06aa52a0629ccc14bc81c7fdc1db06a084b998235ab28354": [
+      "st:reading-comprehension:gsat/items.json:Rg107r_41",
+      "st:reading-comprehension:gsat/items.json:Rg104_45"
+    ],
+    "9fc8a0af61c04ac960205c85730755b6ae1138c6f7d88fd8e4d8e212dbc52cba": [
+      "st:reading-comprehension:gsat/items.json:Rg107r_42",
+      "st:reading-comprehension:gsat/items.json:Rg104_46"
+    ],
+    "ced05d152ce2eae9c08c2e4be4d8c894dcfe03c55a5c416144a4d9ad893aa618": [
+      "st:reading-comprehension:gsat/items.json:Rg107r_43",
+      "st:reading-comprehension:gsat/items.json:Rg104_47"
+    ],
+    "dc52681941420149540f5f4f91ae2eebb68b047e6901dc4e486f434b46320955": [
+      "st:reading-comprehension:gsat/items.json:Rg107r_44",
+      "st:reading-comprehension:gsat/items.json:Rg104_48"
+    ],
+    "78f52aa0bdfa16942e95c29438dc71aa26dbc18d7491c43ca31c966ecc5e71fa": [
+      "st:reading-comprehension:gsat/items.json:Rg107r_45",
+      "st:reading-comprehension:gsat/items.json:Rg103_49"
+    ],
+    "2594891cb54f08639c67521c6d6c4ea1ed25f85ec6fe9658a2d1737fb78c9911": [
+      "st:reading-comprehension:gsat/items.json:Rg107r_46",
+      "st:reading-comprehension:gsat/items.json:Rg103_50"
+    ],
+    "e54c629fe09543c0ed5873410154efcb1257d30189be0765a3445d7df11a4ef6": [
+      "st:reading-comprehension:gsat/items.json:Rg107r_47",
+      "st:reading-comprehension:gsat/items.json:Rg103_51"
+    ],
+    "f5e3aa8513d519dccb35db8d46173eaf891d417bacaaff1b5b2ad20f2b9d2b3e": [
+      "st:reading-comprehension:gsat/items.json:Rg107r_49",
+      "st:reading-comprehension:gsat/items.json:Rg105_49"
+    ],
+    "ba499485ba7c0e12eb1157190d1656bd4a5e6820f229cf398e46b4fcee88b204": [
+      "st:reading-comprehension:gsat/items.json:Rg107r_50",
+      "st:reading-comprehension:gsat/items.json:Rg105_50"
+    ],
+    "82925748a202b5bc14bb55965748622156cb0aa769ede0b7f1e4f150f8de644d": [
+      "st:reading-comprehension:gsat/items.json:Rg107r_51",
+      "st:reading-comprehension:gsat/items.json:Rg105_51"
+    ],
+    "3b3e367f3975027e7467cc1d6ebd8a994d6741e25a1f79e3ff3b639b213d2a1b": [
+      "st:reading-comprehension:gsat/items.json:Rg107r_52",
+      "st:reading-comprehension:gsat/items.json:Rg105_52"
+    ],
+    "4fbceca24f379115c30cd93db902f0d80e75e3b386334a3971033d18ca2330bd": [
+      "st:reading-comprehension:gsat/items.json:Rg107r_53",
+      "st:reading-comprehension:gsat/items.json:Rg106_49"
+    ],
+    "cfb7cc92dae7a1cb362532d9ecbe0f35acadaf015d3920cd243be3d970eb1e26": [
+      "st:reading-comprehension:gsat/items.json:Rg107r_54",
+      "st:reading-comprehension:gsat/items.json:Rg106_50"
+    ],
+    "a5d5e6403b8e8ec66ee03cfc62c52db55ba682bd88108409700f30b81c127e2e": [
+      "st:reading-comprehension:gsat/items.json:Rg107r_55",
+      "st:reading-comprehension:gsat/items.json:Rg106_51"
+    ],
+    "170f1d7adfdeef39e4c8db845114a67f2e8de45b3c9ccb0cdb9f5a3e694f288a": [
+      "st:reading-comprehension:gsat/items.json:Rg107r_56",
+      "st:reading-comprehension:gsat/items.json:Rg106_52"
+    ],
+    "9a215d5b73700c00978d7af64a569cd9d45cec40dd314c0b69344c659931b94d": [
+      "st:reading-comprehension:zhikao/items.json:Rzref107_36",
+      "st:reading-comprehension:zhikao/items.json:Rz102_36"
+    ],
+    "b26ca126265f68c023ea7938049f867e25cbfdc9026311982c8832c7f118a7ef": [
+      "st:reading-comprehension:zhikao/items.json:Rzref107_37",
+      "st:reading-comprehension:zhikao/items.json:Rz102_37"
+    ],
+    "fe8ede6def00a698bfeaa4ba68e6a7d13462b3d24215c1dbaeddfa9c82005a63": [
+      "st:reading-comprehension:zhikao/items.json:Rzref107_38",
+      "st:reading-comprehension:zhikao/items.json:Rz102_38"
+    ],
+    "850832aeff6201b217711a51d3c7f92004478a6365c82c0e8274f1ec982d2143": [
+      "st:reading-comprehension:zhikao/items.json:Rzref107_40",
+      "st:reading-comprehension:zhikao/items.json:Rz104_36"
+    ],
+    "2a38ff06ec97bf571f2b163d6807575078118953a0c2555d9117fa72a2cd05e4": [
+      "st:reading-comprehension:zhikao/items.json:Rzref107_41",
+      "st:reading-comprehension:zhikao/items.json:Rz104_37"
+    ],
+    "62d88558879c9d0798377afa8b56e68b246b349477719377b6fd84be134850e5": [
+      "st:reading-comprehension:zhikao/items.json:Rzref107_42",
+      "st:reading-comprehension:zhikao/items.json:Rz104_38"
+    ],
+    "a19a0646e30ef63998a6d6cd2faf40418014c6bdb17fc91fc4e8ed3d6e948730": [
+      "st:reading-comprehension:zhikao/items.json:Rzref107_43",
+      "st:reading-comprehension:zhikao/items.json:Rz104_39"
+    ],
+    "61a40abf4c0b0141e2107a630a570efd666b01cde4ebcfec44a102b2494f0818": [
+      "st:reading-comprehension:zhikao/items.json:Rzref107_44",
+      "st:reading-comprehension:zhikao/items.json:Rz100_44"
+    ],
+    "5046b305e3f0e2545b288ef070f827e9c454dcb9b3d431ede301c4166ebb95e2": [
+      "st:reading-comprehension:zhikao/items.json:Rzref107_45",
+      "st:reading-comprehension:zhikao/items.json:Rz100_45"
+    ],
+    "7a74b4ab4a6cc556adff868478e3925a22dc9dffad306c43a47095f31f06c5dc": [
+      "st:reading-comprehension:zhikao/items.json:Rzref107_46",
+      "st:reading-comprehension:zhikao/items.json:Rz100_46"
+    ],
+    "f222addef1eba921b8e794e8e88187d889828aff8919a48ac86cd5e856c777ef": [
+      "st:reading-comprehension:zhikao/items.json:Rzref107_47",
+      "st:reading-comprehension:zhikao/items.json:Rz100_47"
+    ],
+    "66adc9086aabef35805c81a0d70b0f17e8e2838b1767ee61c3ab0babfeb30db4": [
+      "st:reading-comprehension:zhikao/items.json:Rzref107_48",
+      "st:reading-comprehension:zhikao/items.json:Rz103_48"
+    ],
+    "92986002b595beff4b0c1231d4b4c5d96ba0a3b1c79783570e96625952520380": [
+      "st:reading-comprehension:zhikao/items.json:Rzref107_49",
+      "st:reading-comprehension:zhikao/items.json:Rz103_49"
+    ],
+    "0db545db31ca092b25cb901a24ced7d9dd2c554ee3bb6ec48a85fe1f67ea7aa0": [
+      "st:reading-comprehension:zhikao/items.json:Rzref107_50",
+      "st:reading-comprehension:zhikao/items.json:Rz103_50"
+    ],
+    "536ce38cdccf51876fa5a202e14bc80683606b1915bd784f35128420022cbfd8": [
+      "st:reading-comprehension:zhikao/items.json:Rzref107_51",
+      "st:reading-comprehension:zhikao/items.json:Rz103_51"
+    ],
+    "efcd33c28fa8427f8a3a7e974bd71c571176e01437735887a8590ea1be46d873": [
+      "st:reading-comprehension:zhikao/items.json:Rzref99_47",
+      "st:reading-comprehension:zhikao/items.json:Rz96_56"
+    ],
+    "71ce9e53db856f196678e32e90344e23cc67773b81e50d28899af793871bad66": [
+      "st:zhikao-cloze-test:zhikao_grammar_items.json:Z101_12",
+      "st:zhikao-cloze-test:zhikao_grammar_items.json:Z107參_12"
+    ],
+    "506031814cf3eeaf695d9ac8b8423c1e1b74bc7f9fc0dd820886f64138c01444": [
+      "st:zhikao-cloze-test:zhikao_grammar_items.json:Z101_14",
+      "st:zhikao-cloze-test:zhikao_grammar_items.json:Z107參_14"
+    ],
+    "5331f27e1a2ad80fddf9d66c258ac09dea24a018ec4edbea3f0cae43cb54b6a1": [
+      "st:zhikao-cloze-test:zhikao_grammar_items.json:Z101_15",
+      "st:zhikao-cloze-test:zhikao_grammar_items.json:Z107參_15"
+    ],
+    "ec6dbbb2a508f5bb95214b0d98b35008b152c3bf0025d7c5560e5550770b48e9": [
+      "st:zhikao-cloze-test:zhikao_grammar_items.json:Z105_17",
+      "st:zhikao-cloze-test:zhikao_grammar_items.json:Z107參_17"
+    ],
+    "f60c241c2428596cea56f5e09169223a1382cb544958e9fc2ceeaecba1e83763": [
+      "st:zhikao-cloze-test:zhikao_grammar_items.json:Z105_18",
+      "st:zhikao-cloze-test:zhikao_grammar_items.json:Z107參_18"
+    ],
+    "c997ba50561b8f93bbb661ccb698412dc1f733bf81de3ae3917155b6cd3ffef0": [
+      "st:zhikao-cloze-test:zhikao_grammar_items.json:Z105_19",
+      "st:zhikao-cloze-test:zhikao_grammar_items.json:Z107參_19"
+    ],
+    "5b44ad14aefd74641b5c91dbc9450ff29fd9829b28071d5758840339314aae9a": [
+      "st:zhikao-cloze-test:zhikao_grammar_items.json:Z101_11",
+      "st:zhikao-cloze-test:zhikao_grammar_items.json:Z107參_11"
+    ],
+    "8a361be6639b81d37dcd57639aa23f04a7dd66f054e9c76f5e47b662691401b4": [
+      "st:zhikao-cloze-test:zhikao_grammar_items.json:Z101_13",
+      "st:zhikao-cloze-test:zhikao_grammar_items.json:Z107參_13"
+    ],
+    "f4a4d938c1853ca1a9b23aeb4e0c4e6a495cae7bf38be66f24528be42dceeba6": [
+      "st:zhikao-cloze-test:zhikao_grammar_items.json:Z105_16",
+      "st:zhikao-cloze-test:zhikao_grammar_items.json:Z107參_16"
+    ],
+    "e05e5208bff43a3274aa071a81ab93e78db13b6c7b0b0fcee74d6f162f3c2e93": [
+      "st:zhikao-cloze-test:zhikao_grammar_items.json:Z105_20",
+      "st:zhikao-cloze-test:zhikao_grammar_items.json:Z107參_20"
+    ]
+  },
+  "crossSourceGroupCount": 77
 }

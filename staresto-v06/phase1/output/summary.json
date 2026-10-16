@@ -9,6 +9,7 @@
   "allowedForProduction": 0,
   "duplicateCandidateGroups": 0,
   "duplicateExtraRows": 0,
+  "crossSourceDuplicateGroups": 77,
   "status": {
     "暫緩納入": 2203,
     "結構驗證通過・待內容及權利審核": 2530
