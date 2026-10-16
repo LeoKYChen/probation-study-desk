@@ -1,0 +1,78 @@
+name: v2.7 MCP stage 3f offline judicial provenance UI
+
+on:
+  push:
+    branches:
+      - experiment/v27-mcp-stage3f
+    paths:
+      - 'experiments/v27-mcp-poc/stage3f-ui/**'
+      - '.github/workflows/test-v27-mcp-stage3f.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  synthetic-ui:
+    name: Validate offline source-status UI and prior safety tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    env:
+      JUDICIAL_API_LIVE_ENABLED: 'false'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Check syntax and never invoke live court API
+        run: |
+          node --check experiments/v27-mcp-poc/stage3f-ui/model.js
+          node --check experiments/v27-mcp-poc/stage3f-ui/app.js
+          node --check experiments/v27-mcp-poc/stage3f-ui/model.test.cjs
+      - name: Run stage 3f UI, previous link-only and private-court regressions
+        run: |
+          node --test \
+            experiments/v27-mcp-poc/stage3f-ui/model.test.cjs \
+            experiments/v27-mcp-poc/stage3d-link-only.test.cjs \
+            experiments/v27-mcp-poc/stage3e-click-recheck.test.cjs \
+            services/v2.7-judgment/*.test.cjs
+      - name: Verify offline-only prototype and no public deployment
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from html.parser import HTMLParser
+
+          root=Path('experiments/v27-mcp-poc/stage3f-ui')
+          html=(root/'index.html').read_text(encoding='utf-8')
+          app=(root/'app.js').read_text(encoding='utf-8')
+          model=(root/'model.js').read_text(encoding='utf-8')
+          css=(root/'style.css').read_text(encoding='utf-8')
+          assert all([html,app,model,css])
+          class Auditor(HTMLParser):
+              def __init__(self):
+                  super().__init__();self.scripts=[];self.links=[]
+              def handle_starttag(self,tag,attrs):
+                  data=dict(attrs)
+                  if tag=='script':self.scripts.append(data.get('src'))
+                  if tag=='a':self.links.append(data.get('href'))
+          auditor=Auditor();auditor.feed(html)
+          assert auditor.scripts==['./model.js','./app.js']
+          public_urls=[x for x in auditor.links if x and not x.startswith('#')]
+          assert public_urls==['https://judgment.judicial.gov.tw/FJUD/']
+          assert 'connect-src' in html and "connect-src 'none'" in html
+          assert 'textContent' in app and 'replaceChildren' in app
+          for forbidden in ('fetch(', 'XMLHttpRequest', 'localStorage', 'sessionStorage',
+                            'JUDICIAL_API_PASSWORD', 'JUDICIAL_API_USER'):
+              assert forbidden not in app+model, forbidden
+          public=Path('development/v2.7')
+          assert public.is_dir()
+          bad=[p for p in public.rglob('*') if p.is_file() and
+               (p.suffix in {'.cjs','.mjs','.sql'} or p.name in
+                {'.env','.dev.vars','judgments.json'})]
+          assert not bad, bad
+          worker=Path('services/v2.7-judgment/private-worker.mjs').read_text()
+          assert 'status:404' in worker and 'Disabled:' in worker
+          print('Stage3f isolated: no real case link, API credentials or public endpoint')
+          PY
