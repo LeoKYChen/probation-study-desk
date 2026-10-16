@@ -1,0 +1,52 @@
+name: v2.7 MCP stage 3e click-time official link recheck
+
+on:
+  push:
+    branches:
+      - experiment/v27-mcp-stage3e
+    paths:
+      - 'experiments/v27-mcp-poc/stage3e-click-recheck.cjs'
+      - 'experiments/v27-mcp-poc/stage3e-click-recheck.test.cjs'
+      - '.github/workflows/test-v27-mcp-stage3e.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  mock-click:
+    name: One-time link ticket and click-time source guard
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    env:
+      JUDICIAL_API_LIVE_ENABLED: 'false'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Verify JavaScript syntax and isolation from public website
+        run: |
+          node --check experiments/v27-mcp-poc/stage3e-click-recheck.cjs
+          node --check experiments/v27-mcp-poc/stage3e-click-recheck.test.cjs
+          python3 - <<'PY'
+          from pathlib import Path
+          src=Path("experiments/v27-mcp-poc/stage3e-click-recheck.cjs").read_text()
+          for expression in ["globalThis.fetch(", "http.get(", "axios(", "localStorage", "sessionStorage", "node:https", "node:http"]:
+              if expression in src: raise SystemExit("Stage3e must remain offline: "+expression)
+          assert "randomBytes(24)" in src
+          assert "timingSafeEqual" in src
+          assert "TEST_JID_SYNTHETIC_" in src
+          public=Path("development/v2.7")
+          assert public.is_dir()
+          bad=[str(p) for p in public.rglob("*") if p.is_file() and
+               (p.suffix in {".cjs",".mjs",".sql"} or p.name in {".env",".dev.vars","judgments.json"})]
+          if bad: raise SystemExit("Private material in public Pages: "+str(bad))
+          assert "status:404" in Path("services/v2.7-judgment/private-worker.mjs").read_text()
+          print("Stage3e stays offline with no public route or real court data")
+          PY
+      - name: Test click-time security and existing court regressions
+        run: |
+          node --test experiments/v27-mcp-poc/stage3e-click-recheck.test.cjs experiments/v27-mcp-poc/stage3d-link-only.test.cjs services/v2.7-judgment/*.test.cjs
