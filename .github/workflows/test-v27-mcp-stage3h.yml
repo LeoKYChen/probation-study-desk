@@ -1,0 +1,73 @@
+name: v2.7 MCP stage 3h two-judgment structural difference diagnosis
+
+on:
+  push:
+    branches:
+      - experiment/v27-mcp-stage3h
+    paths:
+      - 'experiments/v27-mcp-poc/stage3h_diff_diagnostics.py'
+      - '.github/workflows/test-v27-mcp-stage3h.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  diagnosis:
+    name: Diagnose two known public judgment extraction differences
+    runs-on: ubuntu-latest
+    timeout-minutes: 13
+    env:
+      JUDICIAL_API_LIVE_ENABLED: 'false'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Isolate third-party cache from all websites
+        run: echo "MCP_TAIWAN_LEGAL_DB_HOME=$RUNNER_TEMP/v27-stage3h-cache" >> "$GITHUB_ENV"
+      - name: Check pinned upstream MCP revision
+        env:
+          UPSTREAM_SHA: ef677ad63c3206fc211a083fad8b1d9ef5015222
+        run: |
+          git init "$RUNNER_TEMP/legal-mcp"
+          git -C "$RUNNER_TEMP/legal-mcp" remote add origin https://github.com/lawchat-oss/mcp-taiwan-legal-db.git
+          git -C "$RUNNER_TEMP/legal-mcp" fetch --depth 1 origin "$UPSTREAM_SHA"
+          git -C "$RUNNER_TEMP/legal-mcp" checkout --detach FETCH_HEAD
+          test "$(git -C "$RUNNER_TEMP/legal-mcp" rev-parse HEAD)" = "$UPSTREAM_SHA"
+      - name: Install exact research MCP revision
+        run: python -m pip install "$RUNNER_TEMP/legal-mcp"
+      - name: Check self-test before live public sample
+        run: |
+          python -m py_compile experiments/v27-mcp-poc/stage3h_diff_diagnostics.py
+          python experiments/v27-mcp-poc/stage3h_diff_diagnostics.py --mode selftest
+      - name: Compare two public adult judgments, never retain text
+        run: timeout 620s python experiments/v27-mcp-poc/stage3h_diff_diagnostics.py --mode live
+      - name: Verify only a diagnostic script was added outside the live website
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path("experiments/v27-mcp-poc/stage3h_diff_diagnostics.py")
+          content=p.read_text()
+          assert "MAX_HTML_BYTES = 800_000" in content
+          assert '"stage3_accepted": False' in content
+          assert '"court_text_saved": False' in content
+          assert 'follow_redirects=False' in content
+          assert '"individual_links_approved": False' in content
+          assert "case_no" in content
+          assert "body_mcp_outline" in content
+          assert "get_judgment" in content
+          page=Path("services/v2.7-judgment/private-worker.mjs").read_text()
+          assert "status:404" in page
+          print("Stage3h remains research-only with no public judgment endpoint")
+          PY
+      - name: Archive counts/offsets only, no personal data
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v27-stage3h-judgment-difference-diagnostics
+          path: v27-mcp-stage3h-difference-diagnostics.json
+          if-no-files-found: warn
+          retention-days: 14
