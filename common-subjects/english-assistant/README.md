@@ -1,43 +1,42 @@
-# Staresto v0.6 — 連結式英文學習助手（第一階段測試版）
+# Staresto v0.6｜個人化英文學習助手
 
-這是使用者 2026-10-17 確認的**簡化版**，只負責安排 Staresto 原站學習任務、手動記錄成績、避免本站重排相同練習。不是把 Staresto 上千筆題目複製進本站。
+本版依使用者需求採用**原站練習、本站排課與保存紀錄**的輕量模式，不複製第三方考題、中文翻譯或解析，不重製大型英文題庫。以 116 年司法特考三等觀護人為目標，每天預計約 15–25 分鐘。
 
-入口：`common-subjects/english-assistant/index.html`。目前僅在獨立測試分支，不更新正式首頁或正式 GitHub Pages。
+**入口：** `common-subjects/english-assistant/index.html`；共同科目站 `common-subjects/index.html` 的英文主要入口已指向新版。
 
-## 第一階段完成項目
+## 已完成
 
-- 每日依臺北時間固定任務：每天單字（每組5題，挑至少6個不熟的字或搭配詞另記筆記），其他練習依星期安排。
-- 已依原作者公開資料查核並建立 **335 組穩定任務 ID**：
-  - 單字100組：依原站 `gsat/data.js` 真實題號產生 `#set-V...,...` 連結；正式學測、推薦甄選與補考**分別標示**。
-  - 克漏字與文法86組：原站 `q/` 的真實題號與 `#set-G...,...` 指定練習連結。
-  - 閱讀124篇：原站 `p/` 的真實文章識別碼、`#p=g115p1` 等互動練習連結。
-  - 文意選填25篇：確認 `gsat/passages.json` 正式試題的年度與文章名稱；因**沒有核實整篇直達連結**，提供原站首頁及人工選取指示。
-- 當日題單固定；已分配、已完成或按「已做過／找不到」排除的範圍，不再次作為新的任務分派。
-- 手動登記完成及選填答對題數；儲存到獨立的 `psd-staresto-link-coach-v06` localStorage 鍵，提供 JSON **匯出**。
-- 只連結原作者網站，不複製原題、解析或中譯，不讀取原站 cookies/成績、不執行外站腳本。
+- 每日固定從 Staresto 安排單字題，其他週課表為文法、閱讀、文意選填及弱項；已由原作者公開資料驗證並建立 **335 組穩定任務 ID**：單字100組、文法86組、閱讀124篇、文意選填25篇。
+- 原站單字及克漏字支援 `#set-<逐題ID>` 深連結，閱讀支援 `#p=<文章ID>`。文意選填只有已驗證文章與年度，仍須原站手動選擇；不宣稱自動跳篇。
+- 每日**6張新單字卡**、中文意思、詞性及本站自編英文例句；首批 **180 字（30 天）**。這些例句不是複製 Staresto 原文。
+- 按「記住了／還不熟」安排間隔複習（1、3、7、14、30、60天進度）；如果昨天尚未完成，未學的字仍會保留。生字可加入個人字庫，之後優先排入。
+- 當天任務固定；已安排、完成或手動排除的 Staresto 題目不會再當成新任務排入。特意複習的單字不算新字。
+- 開啟外站練習 → 返回本站手動登記答對題數；外站資料、分數不會自動讀取。
+- 使用 `psd-staresto-link-coach-v06` 獨立 localStorage 鍵儲存任務、單字及紀錄。提供 JSON 匯出及**合併式匯入**，匯入不主動刪除現有紀錄；沒有跨裝置即時同步。
+- 原創80題完整留在 `common-subjects/index.html` 原題庫和 `psd-common-subjects-v1` 本機紀錄，但題目、成績和刪除入口都隱藏。v0.4 舊版 668 題頁面與紀錄不刪除；使用者尚未開始舊版練習，因此不需要歷史移轉。
 
-## 已確認的原站行為
+## 重要限制
 
-依原作者公開儲存庫檔案查核：單字 `gsat/index.html`、文法 `grammar-cloze-test/index.html` 均有 `startFromSetHash` 解析題目 ID；閱讀 `reading-comprehension/index.html` 可解析 `#p=<文章ID>` 進入互動文章。這是**靜態原始碼核對，不等於已完成瀏覽器端操作測試**。
+1. **首批僅180個自編單字，約30天**。用盡後不虛構新字；可加入個人生字，後續需擴充詞庫。
+2. 不提供全自動讀取 Staresto 成績；同瀏覽器的不同網站也不能任意互讀彼此的學習紀錄。
+3. 本站不承諾可以控制原站隨機抽題；請從本站指定連結作答。原作者將來更新網址或題目 ID 時可能需要重新檢查。
+4. 不會讀取或匯入既有 v0.4 的668題作答紀錄。使用者已確認尚未做過舊題；如果日後有跨版本紀錄，仍要獨立核對。
+5. 手動備份適合本機保存或跨裝置移轉，不應將含個人練習紀錄的備份上傳到公開 GitHub。
 
-## 待驗收或後續擴充
+## 驗收
 
-1. 在實際瀏覽器、手機上確認 `#set` 與 `#p` 是否能正確開啟預期題目、計分及返回本站。
-2. 文意選填手動篩選步驟，尤其整篇模式，需實機確認。
-3. **跨版本去重尚不完整**：無法讀取 Staresto 外站練過哪些，也沒有自動移轉 v0.4 舊668題的作答紀錄；已經做過的範圍需按「換一份」，不能保證外站隨機題永不重複。
-4. 每日六張獨立單字卡、個人不熟字庫與間隔複習屬第二階段；目前只有在原站選題及筆記的指引。
-5. JSON 匯入、跨裝置資料移轉流程、趨勢統計屬第三階段；目前有匯出但沒有匯入。
-6. 未對外部署預覽，不更新 `main` 或共同科目首頁，不影響舊英文、作文、原創80題及專業科目資料。
+- `node common-subjects/english-assistant/test.cjs`：穩定題目 ID、無重複安排、完成登記、來源。
+- `node common-subjects/english-assistant/test-vocab.cjs`：180字、每日六字、到期複習、個人字庫、合併匯入、原創80題隱藏。
+- `node common-subjects/english-assistant/test-browser.cjs`：Playwright Chromium 實際開啟測試網頁，模擬單字翻牌、記憶評分、考題記分、重新整理、備份匯出／匯入、原創80題隱藏及資料隔離；須先安裝 Playwright Chromium。GitHub Actions 已設定自動執行。
+- `common-subjects/test-v02.cjs`、`common-subjects/test-staresto.cjs`、`daily/test-v04.cjs` 及 `daily/test-ui-v04.cjs` 持續進行舊版回歸檢查。
 
-## 原始來源
+## 原始網站
 
-- [Staresto 學測詞彙題庫](https://github.com/staresto-create/JCEE-vocab-questions/tree/main/gsat)：`data.js` 500筆（含學測、補考、推薦甄選），僅取題號與穩定 ID。
-- [Staresto 學測克漏字](https://github.com/staresto-create/grammar-cloze-test/tree/main/q)：各年度逐題頁公開的 ID。
-- [Staresto 閱讀](https://github.com/staresto-create/reading-comprehension/tree/main/p)：可互動選文的 `#p=` 識別碼。
-- [Staresto 文意選填](https://github.com/staresto-create/passage-completion/blob/main/gsat/passages.json)：僅取正式考試年度與篇名。
+Staresto 的公開教育資料由作者 staresto-create ZZSH 製作。本站只存放練習位置連結與自編詞卡；原題目、翻譯、解析的權利不因本專案程式碼授權而轉移。
 
-## 測試
+- https://staresto-create.github.io/JCEE-vocab-questions/gsat/
+- https://staresto-create.github.io/grammar-cloze-test/
+- https://staresto-create.github.io/reading-comprehension/
+- https://staresto-create.github.io/passage-completion/
 
-執行 `node common-subjects/english-assistant/test.cjs`，檢查 ID 不重複、年度分類、具體直達網址、完成後排除、每日題單固定、分數驗證及獨立儲存鍵；GitHub Actions 在 PR 執行。對原站的網頁互動仍須真人驗收。
-
-此版與全站題庫品質審查 PR #12 **各自獨立**，不得未經驗收就合併。
+全站題庫品質審查 PR #12 是獨立工作，不能因本連結型助手通過驗收，就推定第三方4,733筆題庫已取得全內容利用權利。
