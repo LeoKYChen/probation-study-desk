@@ -28,6 +28,11 @@ document.addEventListener('click',function(ev){
  if(!link||ev.defaultPrevented||ev.button!==0||ev.ctrlKey||ev.metaKey||ev.shiftKey||ev.altKey||link.hasAttribute('download'))return;
  let u;
  try{u=new URL(link.href,location.href);}catch{return;}
+ if(u.protocol==='http:'||u.protocol==='https:'){
+  ev.preventDefault();
+  window.alert('此處是 ZIP 完全離線模式。雲端 AI、來源連結與即時更新必須連網，請在線上正式網站開啟。');
+  return;
+ }
  if(u.protocol!=='file:')return;
  if(u.pathname.endsWith('/')){ev.preventDefault();u.pathname+='index.html';location.assign(u.href);}
 },true);
