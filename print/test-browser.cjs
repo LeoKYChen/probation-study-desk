@@ -19,7 +19,7 @@ const server=http.createServer((req,res)=>{
  try{
   const context=await browser.newContext({locale:'zh-TW',viewport:{width:390,height:844}});
   await context.addInitScript(data=>{
-   if(!/\\/print\\/(?:index\\.html)?$/.test(location.pathname))return;
+   if(!/\/print\/(?:index\.html)?$/.test(location.pathname))return;
    const x={
     'probation-study30-v251:v1':{version:1,sessions:{'2026-10-17':{date:'2026-10-17',essayDrafts:{'115-少年事件處理法-1':{template:'law',outline:['夜間詢問','程序保障','個案涵攝','救濟'],fullAnswer:'正式申論正文'}},aiReviewTexts:{'115-少年事件處理法-1':'AI原評語：應核對現行法條'}}}},
     'probation-study-desk-v24':{'115-少年事件處理法-1':{issue:'考古題完整答題',essayDrafts:{issues:'爭點'},updatedAt:'2026-10-17T12:00:00Z'}},
