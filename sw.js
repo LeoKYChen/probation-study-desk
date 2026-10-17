@@ -22,7 +22,9 @@ async function bytes(url){const controller=new AbortController(),timer=setTimeou
       // Accept exactly this same-origin, same-directory redirect, never arbitrary URLs.
       const requested=new URL(url),final=new URL(r.url);
       const expected=requested.pathname.endsWith('/index.html')
-        ?requested.pathname.slice(0,-'index.html'.length):null;
+        ?requested.pathname.slice(0,-'index.html'.length)
+        :requested.pathname.endsWith('.html')
+        ?requested.pathname.slice(0,-'.html'.length):null;
       if(!expected||final.origin!==requested.origin||final.pathname!==expected||
          final.search||final.hash||!final.pathname.startsWith(BASE.pathname))
         throw Error('離線下載遇到非預期轉址：'+requested.pathname);
