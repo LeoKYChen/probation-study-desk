@@ -1,0 +1,82 @@
+name: Verify and mirror GitHub Pages source to isolated Cloudflare preview
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+    paths:
+      - scripts/build-cloudflare-main-mirror.py
+      - .github/workflows/preview-main-cloudflare-mirror.yml
+      - docs/ONE_SOURCE_VERSION_POLICY.md
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-main-cloudflare-mirror
+  cancel-in-progress: true
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout the exact GitHub commit
+        uses: actions/checkout@v6
+
+      - name: Assemble and validate the same public website resources
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m py_compile scripts/build-cloudflare-main-mirror.py
+          python3 scripts/build-cloudflare-main-mirror.py
+          python3 - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          root=Path('.')
+          out=root/'cloudflare-main-mirror-dist'
+          manifest=json.loads((out/'mirror-manifest.json').read_text('utf-8'))
+          assert len(manifest['source_commit']) == 40
+          for name, expected in manifest['required_file_sha256'].items():
+              real=hashlib.sha256((root/name).read_bytes()).hexdigest()
+              copied=hashlib.sha256((out/name).read_bytes()).hexdigest()
+              assert real == copied == expected, name
+          page=(out/'index.html').read_text('utf-8')
+          assert 'v2.5/' in page and 'common-subjects/' in page
+          print('PASS: same tracked files, no separate Cloudflare application version')
+          PY
+
+      - name: Deploy ONLY isolated mirror branch (not production or old previews)
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy cloudflare-main-mirror-dist --project-name=probation-study30-test --branch=github-main-mirror
+
+      - name: Verify published mirror contains the same core bytes
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        shell: bash
+        run: |
+          set -euo pipefail
+          for item in index.html v2.5/index.html daily-simulation/questions.json common-subjects/index.html juvenile-news/issues.json mirror-manifest.json; do
+            ok=0
+            for attempt in 1 2 3 4 5 6; do
+              if curl --max-time 15 -fsSL "https://github-main-mirror.probation-study30-test.pages.dev/$item" -o /tmp/mirrored-response; then
+                if cmp -s "cloudflare-main-mirror-dist/$item" /tmp/mirrored-response; then
+                  ok=1
+                  break
+                fi
+              fi
+              sleep 8
+            done
+            if [ "$ok" -ne 1 ]; then
+              echo "Cloudflare byte parity could not be confirmed: $item"
+              exit 1
+            fi
+          done
+          echo "PASS: Cloudflare preview serves identical GitHub source files"
