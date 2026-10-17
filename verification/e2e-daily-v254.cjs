@@ -43,10 +43,15 @@ async function check(){
  assert.equal(await page.locator('#count').textContent(),String(data.questions.length));
  assert.equal(await page.locator('#answer').inputValue(),'驗收前既有答案','pre-existing answer should load');
  await page.locator('#answer').fill('新練習答案：爭點、涵攝、結論。');
+ await page.locator('#draftIssue').fill('爭點草稿：甲之程序保障');
+ await page.locator('#draftBasis').fill('法律草稿：少年事件處理法');
+ await page.locator('#draftAnalysis').fill('涵攝草稿：警方之詢問程序');
+ await page.locator('#draftConclusion').fill('結論草稿：須分別檢驗');
  await page.locator('#aiFeedback').fill('AI評語：法條論述得當，但應補上學理。');
  await page.waitForFunction(id=>{
    const r=JSON.parse(localStorage.getItem('probation-daily-github:records:v1')||'{}')[id];
-   return r?.answer.includes('新練習答案')&&r?.aiFeedback.includes('AI評語');
+   return r?.answer.includes('新練習答案')&&r?.aiFeedback.includes('AI評語')&&
+     r?.essayDrafts?.issues.includes('爭點草稿')&&r?.essayDrafts?.conclusion.includes('結論草稿');
  },q.id);
  await page.locator('#startTimer').click();
  await page.waitForFunction(()=>document.querySelector('#timer').textContent!=='30:00',null,{timeout:8000}).catch(async error=>{
@@ -58,6 +63,10 @@ async function check(){
  await page.reload();
  await page.locator('#questionList button[data-id]').first().waitFor();
  assert.equal(await page.locator('#answer').inputValue(),'新練習答案：爭點、涵攝、結論。');
+ assert.equal(await page.locator('#draftIssue').inputValue(),'爭點草稿：甲之程序保障');
+ assert.equal(await page.locator('#draftBasis').inputValue(),'法律草稿：少年事件處理法');
+ assert.equal(await page.locator('#draftAnalysis').inputValue(),'涵攝草稿：警方之詢問程序');
+ assert.equal(await page.locator('#draftConclusion').inputValue(),'結論草稿：須分別檢驗');
  assert.match(await page.locator('#timerStatus').textContent(),/倒數進行中/,'timer must persist after reload');
  await page.locator('#copyAI').click();
  await page.waitForFunction(()=>document.querySelector('#copyStatus').textContent.trim().length>0);
@@ -78,16 +87,33 @@ async function check(){
  await oldPage.waitForFunction(id=>(JSON.parse(localStorage.getItem('probation-daily-github:records:v1'))[id]||{}).answer==='由原每日題瀏覽頁更新的答案',q.id);
  const still=await page.evaluate(id=>JSON.parse(localStorage.getItem('probation-daily-github:records:v1'))[id].aiFeedback,q.id);
  assert.equal(still,'AI評語：法條論述得當，但應補上學理。','old daily page must preserve feedback');
+ assert.equal(await page.evaluate(id=>JSON.parse(localStorage.getItem('probation-daily-github:records:v1'))[id].essayDrafts.issues,q.id),'爭點草稿：甲之程序保障','old daily page must preserve four drafts');
+ const secondId=await page.locator('#questionList button[data-id]').nth(1).getAttribute('data-id');
+ await page.locator('#questionList button[data-id]').nth(1).click();
+ await page.locator('#draftIssue').fill('第二題才有的草稿');
+ await page.waitForFunction(id=>JSON.parse(localStorage.getItem('probation-daily-github:records:v1'))[id]?.essayDrafts?.issues==='第二題才有的草稿',secondId);
+ await page.locator('#questionList button[data-id="'+q.id+'"]').click();
+ assert.equal(await page.locator('#draftIssue').inputValue(),'爭點草稿：甲之程序保障','switching questions must preserve correct drafts');
+ const markdownPromise=page.waitForEvent('download');
+ await page.locator('#exportEssay').click();
+ const md=await markdownPromise;
+ assert.ok(md.suggestedFilename().endsWith('.md'),'must export Markdown file');
+ const mdText=fs.readFileSync(await md.path(),'utf8');
+ assert.ok(mdText.includes('## 四格草稿')&&mdText.includes('爭點草稿：甲之程序保障'));
+ assert.ok(mdText.includes('## 完整答案')&&mdText.includes('由原每日題瀏覽頁更新的答案'));
+ assert.ok(mdText.includes('AI評語：法條論述得當'));
  await oldPage.close();
  const downloadPromise=page.waitForEvent('download');
  await page.locator('#export').click();
  const downloaded=await downloadPromise;
  const readable=JSON.parse(fs.readFileSync(await downloaded.path(),'utf8'));
  assert.equal(readable.records[q.id].aiFeedback,still);
- const replacement={format:'probation-daily-github-records',schemaVersion:1,records:{[q.id]:{answer:'已還原的每日題答案',review:true,updatedAt:new Date().toISOString(),aiFeedback:'已還原的AI評語'}}};
+ assert.equal(readable.records[q.id].essayDrafts.basis,'法律草稿：少年事件處理法');
+ const replacement={format:'probation-daily-github-records',schemaVersion:1,records:{[q.id]:{answer:'已還原的每日題答案',essayDrafts:{issues:'還原的爭點草稿',basis:'',analysis:'',conclusion:''},review:true,updatedAt:new Date().toISOString(),aiFeedback:'已還原的AI評語'}}};
  await page.locator('#importFile').setInputFiles({name:'daily-backup.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(replacement))});
  await page.waitForFunction(id=>JSON.parse(localStorage.getItem('probation-daily-github:records:v1'))[id]?.answer==='已還原的每日題答案',q.id);
  assert.equal(await page.locator('#aiFeedback').inputValue(),'已還原的AI評語');
+ assert.equal(await page.locator('#draftIssue').inputValue(),'還原的爭點草稿');
  const deleteDownload=page.waitForEvent('download');
  await page.locator('#clear').click();
  await deleteDownload;
@@ -138,6 +164,9 @@ async function check(){
  await mobile.setViewportSize({width:390,height:844});
  await mobile.locator('#startTimer').click();
  assert.equal(await mobile.locator('#startTimer').isDisabled(),true,'mobile timer click must work');
+ assert.equal(await mobile.locator('#essayHeading').textContent(),'我的練習紀錄');
+ await mobile.locator('#draftIssue').fill('手機四格草稿測試');
+ await mobile.waitForFunction(id=>JSON.parse(localStorage.getItem('probation-daily-github:records:v1')||'{}')[id]?.essayDrafts?.issues==='手機四格草稿測試',q.id);
  await mobile.locator('#answer').fill('手機介面作答驗收');
  await mobile.waitForFunction(id=>JSON.parse(localStorage.getItem('probation-daily-github:records:v1')||'{}')[id]?.answer==='手機介面作答驗收',q.id);
  await mobile.locator('#aiFeedback').fill('手機批改評語');
