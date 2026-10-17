@@ -167,7 +167,7 @@ function promptFor(q,answer){
     '【完整答案結束】',
     '請使用繁體中文輸出可直接貼回練習網站的批改文字，不需JSON、程式碼或機器格式。'
   ];
-  return rubric.join('\\n\\n');
+  return rubric.join('\n\n');
 }
 async function copyAI(){
   flush();if(dirty){$('copyStatus').textContent='作答尚未保存；請先處理儲存問題。';return;}
