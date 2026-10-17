@@ -42,7 +42,7 @@ footer{border-top:1px solid var(--line);padding:22px 0;margin-top:25px;color:var
     <p id="essayCoachStatus" class="small" role="status">正在整理本機練習狀態……</p>
   </div>
   <div class="layout">
-    <div class="panel"><h3>選擇練習</h3><label for="mode">練習模式</label><select id="mode"><option value="sentence">句子精修｜10分鐘</option><option value="paragraph">段落深化｜15分鐘</option><option value="opening">開頭與結尾｜20分鐘</option><option value="full">完整作文｜依題型計時</option></select><label for="essayType">作文題型</label><select id="essayType"><option value="all">全部題目</option><option value="short">短文寫作（20分）</option><option value="long">長文寫作（60分）</option><option value="original">既有12題（原創練習）</option></select><label for="prompt">作文題目</label><select id="prompt"></select><div class="prompt"><h3 id="promptTitle"></h3><p id="promptBody"></p><p class="small" id="promptTip"></p><p class="small" id="promptMeta"></p><a class="small" id="promptSource" href="#" rel="noopener noreferrer" target="_blank" hidden>檢視原始試題來源／官方解析 ↗</a></div><div class="timer"><span>本次計時</span><strong id="clock">10:00</strong><button class="btn" id="timerToggle">開始</button><button class="btn" id="timerReset">重設</button></div><p class="small">含12題原創題與120題依歷屆命題核心改編的練習題；本站新編題幹，並非考選部或大考中心原卷。</p></div>
+    <div class="panel"><h3>選擇練習</h3><label for="mode">練習模式</label><select id="mode"><option value="sentence">句子精修｜10分鐘</option><option value="paragraph">段落深化｜15分鐘</option><option value="opening">開頭與結尾｜20分鐘</option><option value="full">完整作文｜依題型計時</option></select><label for="essayType">作文題型</label><select id="essayType"><option value="all">全部題目</option><option value="short">短文寫作（20分）</option><option value="long">長文寫作（60分）</option><option value="original">既有12題（原創練習）</option></select><label for="prompt">作文題目</label><select id="prompt"></select><div class="prompt"><h3 id="promptTitle"></h3><p id="promptBody"></p><p class="small" id="promptTip"></p><p class="small" id="promptMeta"></p><a class="small" id="promptSource" href="#" rel="noopener noreferrer" target="_blank" hidden>查看命題參考來源（可能為第三方轉錄） ↗</a></div><div class="timer"><span>本次計時</span><strong id="clock">10:00</strong><button class="btn" id="timerToggle">開始</button><button class="btn" id="timerReset">重設</button></div><p class="small">含12題原創題與120題依歷屆命題核心改編的練習題；本站新編題幹，並非考選部或大考中心原卷。</p></div>
     <div class="panel"><div class="editor-bar"><h3>我的作文</h3><span class="small"><span id="count">0</span> 字（含標點）</span></div><p class="small" id="saveStatus">本機自動保存</p><label for="essayText">作答區</label><textarea id="essayText" placeholder="先寫出真實經驗與觀點，不必刻意使用華麗詞藻。"></textarea><div class="buttons"><button class="btn" id="saveVersion">儲存修訂版本</button><button class="btn primary" id="copyReview">複製 AI 初次批改提示詞</button><button class="btn" id="copyRevision" type="button" disabled>複製訂正複核提示詞</button><button class="btn" id="clearEssay">清空草稿</button></div><p class="small">AI 批改需要自行貼到 ChatGPT；本站不會上傳文字或自動給正式考試分數。</p></div>
   </div>
   <div class="bottom">
@@ -249,7 +249,33 @@ function saveVersion(){flush();var d=draft();if(!d.text.trim()){show('請先輸�
 function version(){var i=$('version').value;return /^\d+$/.test(i)?(draft().versions||[])[Number(i)]:null}
 function viewVersion(){var v=version();if(!v){show('請先選擇版本。',true);return}$('versionPreview').textContent=v.text;$('versionPreview').hidden=false}
 function restore(){var v=version();if(!v)return;if(!confirm('要用這個版本覆蓋目前編輯器內容嗎？建議先儲存目前版本。'))return;$('essayText').value=v.text;$('count').textContent=Array.from(v.text).length;pending();renderCompare();updateRevisionButton();show('已還原至編輯器。')}
-function review(){flush();var t=$('essayText').value;if(!t.trim()){show('請先作答。',true);return}var i=Number($('prompt').value),m=$('mode').value,q=topics[i][2];var s='你是臺灣司法特考三等觀護人國文作文的學習用批改助教。請以繁體中文批改，非正式閱卷，模擬分數只供參考。\n請先獨立分析題幹的作答任務，再評閱我的原文；不要把原題改編來源當成唯一標準答案。\n練習模式：'+modes[m][0]+'\n題目：'+topics[i][0]+'\n題幹：'+topics[i][1];if(q)s+='\n題型：'+(q.type==='short'?'短文（20分）':'長文（60分）')+'\n作答要求：'+q.requirements+'\n改編來源：'+q.source.exam+'，'+q.source.section+'（新編題目，並非原卷試題）；來源：'+q.source.link+'\n核心訓練：'+q.skills.join('、');s+='\n請依序提供：①整體評語與模擬分數（僅限完整作文，未完成全文不得硬評整題）②題意掌握、論證層次、素材例證、結構、文句表達之具體評估③逐段指出錯誤、離題、跳躍及論述空白④優先改正的三項問題⑤必要的示範段落及可立即實行的重寫練習。短文另核對各項提問與字數限制；長文檢查全文的主題推進、反面思考與結尾。保留作者立意與個人經驗，不得捏造事例，不得只換華麗詞藻。如資訊不足請明說。\n\n我的作文：\n'+t;var baseline=(draft().versions||[])[0];if(baseline&&baseline.text!==t)s+='\n\n以下為先前保存的初稿，請比較是否改進，亦指出可能退步處：\n'+baseline.text;function fallback(){var a=document.createElement('textarea');a.value=s;a.style.position='fixed';a.style.left='-10000px';document.body.append(a);a.select();var success=document.execCommand('copy');a.remove();if(!success)throw Error('copy failed')}if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(s).then(function(){show('已複製，貼到 ChatGPT 批改。')}).catch(function(){try{fallback();show('已複製。')}catch(e){show('複製失敗，請手動選取文字。',true)}})}else try{fallback();show('已複製。')}catch(e){show('複製失敗，請手動選取文字。',true)}}
+function copyEssayText(s){
+ function fallback(){var a=document.createElement('textarea');a.value=s;a.style.position='fixed';a.style.left='-10000px';document.body.append(a);a.select();var success=document.execCommand('copy');a.remove();if(!success)throw Error('copy failed')}
+ function fail(){show('複製失敗，請手動選取作文內容。',true)}
+ if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(s).then(function(){show('已複製提示詞，請貼至你慣用的AI工具。')}).catch(function(){try{fallback();show('已複製。')}catch(e){fail()}})}
+ else try{fallback();show('已複製。')}catch(e){fail()}
+}
+function review(){
+ flush();var t=$('essayText').value;if(!t.trim()){show('請先作答。',true);return}
+ var i=Number($('prompt').value),m=$('mode').value,q=topics[i][2],n=Array.from(t).length;
+ var s='你是臺灣司法特考三等觀護人國文作文的學習批改助教。請以繁體中文回覆。這不是正式閱卷，模擬分數不代表考選部評分。\n請先獨立分析下列【新編題幹】的作答任務與可能歧義，不受命題來源或擬答預設限制，再批改全文。\n練習模式：'+modes[m][0]+'\n題目：'+topics[i][0]+'\n完整題幹：'+topics[i][1]+'\n本站計算文字字數（含標點）：'+n;
+ if(q)s+='\n題型：'+(q.type==='short'?'短文（20分）':'長文（60分）')+'\n作答要求：'+q.requirements+'\n改編來源：'+q.source.exam+'，'+q.source.section+'；考題改編而非原卷。來源：'+q.source.link+'\n核心能力：'+(q.skills||[]).join('、');
+ if(m==='full'&&q&&q.type==='short')s+='\n【練習參考配分，非官方標準】題旨與材料理解4、完整回應各項要求6、分析推論5、組織表達5，合計20。請逐項說明模擬分數；如未完成或材料不足，拒絕硬給總分。須核對題目是否有明訂字數，依題幹限制評估；勿將本站通用建議誤認為正式試題規範。';
+ else if(m==='full'&&q&&q.type==='long')s+='\n【練習參考配分，非官方標準】題旨立意15、論證深度15、事例與素材12、結構10、文句8，合計60。請逐項說明模擬分數；如未完成、明顯離題或論證不足，清楚說明，不得將草稿當完整文章。';
+ else s+='\n本次為局部寫作訓練，請只評估練習任務是否達成，不推估整份國考作文分數。';
+ s+='\n依序回答：①先列出題幹必答事項，指出可能的陷阱與切題方向。②整體評語及模擬分數（僅在足以評估完整作文時；依上述練習配分）。③逐段檢查立意、材料理解、推論依據、例證、段落連貫與文字，標示原句及問題原因。④指出最需要先處理的3個問題與優先次序。⑤示範修改最多2個關鍵段落並說明如何修改，不要代寫整篇；保留我的立場與真實經驗，不得捏造事例。⑥提供一次10至15分鐘、可立即實行的針對性訂正作業。遇到欠缺資料或不同合理觀點請說明。\n\n【我的作文】\n'+t;
+ var d=draft(),base=(d.versions||[])[0];
+ if(base&&base.text!==t)s+='\n\n【保存的初稿，請額外核對改寫進退】\n'+base.text;
+ copyEssayText(s);
+}
+function revisionReview(){
+ flush();var d=draft(),base=(d.versions||[])[0],t=$('essayText').value,q=topics[Number($('prompt').value)][2];
+ if(!base||!base.text||!t.trim()||base.text===t){show('請先儲存初稿，再修改文字，才能複核訂正成果。',true);return}
+ var s='請擔任臺灣國家考試國文作文學習用訂正複核助教，以繁體中文回覆。本次只驗收修訂品質，不是正式閱卷；勿把字數增加直接判定為進步。\n練習題目：'+topics[Number($('prompt').value)][0]+'\n完整題幹：'+topics[Number($('prompt').value)][1]+'\n練習方式：'+modes[$('mode').value][0]+(q?'\n題型：'+(q.type==='short'?'20分短文':'60分長文')+'\n作答要求：'+q.requirements:'')+'\n請依序：①先獨立確認題意與答題任務。②用「原稿問題→修訂位置→是否改善→仍需調整」比較，不可只讚美或只換辭藻。③檢查原本被指出的問題是否真正解決，並辨識新增的矛盾、離題或退步。④指出仍缺乏的推論、具體例證、承轉，並給至多2段必要示範。⑤提出下次15分鐘可執行的訂正目標。若不足以評估整篇，請勿給完整作文分數。不得捏造經驗或當成官方閱卷。\n\n【原稿】\n'+base.text+'\n\n【本次修訂稿】\n'+t;
+ if(d.feedback&&d.feedback.trim())s+='\n\n【上次AI／教師批改意見（由本人貼回，未必全都正確，請獨立檢驗）】\n'+d.feedback;
+ if(d.nextAction&&d.nextAction.trim())s+='\n\n【上次設定的改進目標】\n'+d.nextAction;
+ copyEssayText(s);
+}
 function self(){flush();var d=draft(),ratings={};['expression','reasoning','structure','meaning'].forEach(function(k){var x=Number($('rubric-'+k).value);if(x>=1&&x<=5)ratings[k]=x});d.self=ratings;d.updatedAt=new Date().toISOString();save();coachStats();show('自評已保存。')}
 function makeRubrics(){[['expression','文字表達'],['reasoning','論述深度'],['structure','文章層次'],['meaning','旨意詮釋']].forEach(function(r){var box=document.createElement('div'),l=document.createElement('label'),s=document.createElement('select');l.textContent=r[1];l.htmlFor='rubric-'+r[0];s.id='rubric-'+r[0];[['','未評估'],['1','1 需加強'],['2','2 略有不足'],['3','3 基本清楚'],['4','4 表現良好'],['5','5 表現扎實']].forEach(function(a){s.add(new Option(a[1],a[0]))});box.append(l,s);$('rubrics').append(box)})}
 function listQuestions(){
