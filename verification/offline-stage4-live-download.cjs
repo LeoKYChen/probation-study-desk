@@ -20,7 +20,7 @@ assert(base&&base.startsWith('https://'),'Provide a real HTTPS Cloudflare previe
     const text=document.querySelector('#offline-dialog [data-status]')?.textContent||'';
     if(text.includes('下載失敗')||text.includes('尚未備妥離線使用')||text.includes('上一份完整離線資料仍保留'))throw Error(text);
     return text.includes('已備妥');
-   },{timeout:180000});
+   },null,{timeout:180000});
   }catch(error){
    console.error('Live Cloudflare download status:',await page.locator('#offline-dialog [data-status]').textContent());
    throw error;
