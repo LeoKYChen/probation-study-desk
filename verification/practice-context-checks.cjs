@@ -71,8 +71,12 @@ module.exports=async function(browser,base){
    return review.all.length===1&&review.all[0].subject==='保安處分執行法'&&review.all[0].attempts===2&&diag.subjects.find(x=>x.subject==='刑事訴訟法').needsWork===0&&diag.subjects.find(x=>x.subject==='保安處分執行法').needsWork===1;
   }),true);
   // Sunday budgets and completed sessions must not reopen or erase records.
-  await page.evaluate(()=>{const key='probation-study30-v251:v1',data=JSON.parse(localStorage.getItem(key));data.sessions['2026-10-18']={...data.sessions['2026-10-17'],date:'2026-10-18',phase:1,mode:'30',remaining:580,elapsed:42,phaseTimeUsed:20};localStorage.setItem(key,JSON.stringify(data));});
-  await page.clock.setFixedTime(new Date('2026-10-18T12:00:00+08:00'));await page.reload();await page.waitForFunction(()=>window.Study30App);
+  const sunday=await page.evaluate(()=>{const data=JSON.parse(localStorage.getItem('probation-study30-v251:v1'));data.sessions['2026-10-18']={...data.sessions['2026-10-17'],date:'2026-10-18',phase:1,mode:'30',remaining:580,elapsed:42,phaseTimeUsed:20};return data;});
+  // Unload the Saturday app before changing the clock; its rollover interval must
+  // not overwrite an external test seed from an older in-memory session store.
+  await page.goto('about:blank');await page.clock.setFixedTime(new Date('2026-10-18T12:00:00+08:00'));
+  await page.addInitScript(data=>localStorage.setItem('probation-study30-v251:v1',JSON.stringify(data)),sunday);
+  await page.goto(new URL('professional/',base).href);await page.waitForFunction(()=>window.Study30App);
   await page.locator('#mode10').click();assert.equal((await read()).remaining,220);assert.equal((await read()).elapsed,42);
   await page.locator('#nextPhase').click();await page.locator('#mode30').click();assert.equal((await read()).finished,true);assert.equal((await read()).remaining,0);assert.equal((await read()).elapsed,42);
   assert.deepEqual(errors,[]);console.log('PASS practice context: timer switches preserve elapsed/drafts; subject ratings, causes, review/diagnostic attribution, backup retention, headings, Sunday/completion');
