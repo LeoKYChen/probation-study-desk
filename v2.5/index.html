@@ -345,8 +345,9 @@
     @media(max-width:600px) { .simulation-entry { padding:16px; gap:12px; } .simulation-link { width:100%; } }
 
     main>.focus-card{margin-bottom:14px;min-height:0}
-    .study-entry-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin-bottom:14px;align-items:stretch}
+    .study-entry-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:14px;align-items:stretch}
     .study-entry-grid>*{min-width:0;margin:0;padding:18px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
+    .study-entry-grid>[hidden]{display:none!important}
     .entry-card h2{font-size:1.05rem;margin:0 0 8px}.entry-card p{font-size:.85rem;color:var(--ink-soft);margin:6px 0 12px}
     .study-entry-grid .simulation-entry{display:flex;flex-direction:column;align-items:stretch;justify-content:space-between;background:#effaf8;gap:12px}
     .study-entry-grid .btn{white-space:normal;text-align:center;max-width:100%}
@@ -432,7 +433,7 @@
           <p>平日完成 1 題，控制在 25 分鐘內；待複習題隔日再看一次。</p>
         </article>
       <section class="study-entry-grid" aria-label="練習與複習入口">
-        <article class="entry-card"><h2>各科主動回憶</h2><p>108–115 年觀護人六科、190 道原題。可選原題、考點拆分或補充基礎。</p><p>固定提示、自我核對與回想式小結；進度獨立保存。</p><a class="btn primary" href="../active-recall/">開始主動回憶</a></article>
+        <article class="entry-card" hidden><h2>各科主動回憶</h2><p>108–115 年觀護人六科、190 道原題。可選原題、考點拆分或補充基礎。</p><p>固定提示、自我核對與回想式小結；進度獨立保存。</p><a class="btn primary" href="../active-recall/">開始主動回憶</a></article>
       <section class="simulation-entry" aria-labelledby="simulationHeading">
         <div><h2 id="simulationHeading">每日模擬題 · 30分鐘練習</h2><p>限時申論作答、一鍵複製 AI 批改、評語貼回保存，另設每日題獨立清除功能。</p><p id="simulationAccessNote">新練習區與原每日題庫頁面共用題目及作答紀錄；考古題紀錄不受影響。</p></div>
         <div class="simulation-actions">
@@ -1271,7 +1272,7 @@
 
     function renderQuestion() {
       const q = currentQuestion(); const state = entry();
-      $('recallCurrentLink').hidden = !q || q.examType !== '觀護人' || q.year < 108 || q.year > 115;
+      $('recallCurrentLink').hidden = true; // 備用模組：不顯示題目快速入口；保留網址與程式。
       if (q) $('recallCurrentLink').href = '../active-recall/?q=' + encodeURIComponent(q.id);
       if (!q) {
         $('pilotRulePanel').hidden = true;
