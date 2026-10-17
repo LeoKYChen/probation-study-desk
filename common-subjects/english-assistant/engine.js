@@ -103,7 +103,7 @@ function mergeBackup(current,incoming){
     if(!local||!remote)continue;
     const history=new Map();
     for(const row of [...(Array.isArray(remote.attempts)?remote.attempts:[]),...(Array.isArray(local.attempts)?local.attempts:[])]){
-      if(!row||!/^\\d{4}-\\d{2}-\\d{2}$/.test(String(row.date||"")))continue;
+      if(!row||!/^\d{4}-\d{2}-\d{2}$/.test(String(row.date||"")))continue;
       const prior=history.get(row.date);
       if(!prior||String(row.at||"")>=String(prior.at||""))history.set(row.date,row);
     }
