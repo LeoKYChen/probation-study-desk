@@ -161,6 +161,7 @@ const server=http.createServer((req,res)=>{
   await page.locator('#tasks .card').first().getByRole('button',{name:'我已完成',exact:true}).click();
   await page.reload();assert((await page.locator('#tasks .card').first().innerText()).includes('已記錄完成'));
   assert.equal(await raw(),seeded);assert.equal(await page.evaluate(()=>localStorage.getItem('other-module-sentinel')),'不更動');assert.deepEqual(errors,[]);
+  await require('./practice-context-checks.cjs')(browser,base);
   await ctx.close();console.log('PASS layout review:',engine,base,'7-subject drilldown, missing vs zero, rubric math, read-only month history, old drafts/versions, real-record forecast, equal cards/actions, ability colors, mobile layout');
  }
  }finally{await browser.close();server.close();}

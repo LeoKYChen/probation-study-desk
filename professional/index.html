@@ -10,8 +10,8 @@
   <script src="./source-main-questions.js" defer></script>
   <script src="./source-related-questions.js" defer></script>
   <script src="./question-sources.js" defer></script>
-  <script src="./review-core.js" defer></script>
-  <script src="./app.js" defer></script>
+  <script src="./practice-review.js" defer></script>
+  <script src="./practice-session.js" defer></script>
   <script src="./review-preview.js" defer></script>
   <script src="./essay.js" defer></script>
   <script src="./essay-rubric-core.js" defer></script>
@@ -24,13 +24,14 @@
   <script src="./data-health.js" defer></script>
   <script src="./backup-import.js" defer></script>
   <script src="./daily-essay-workbench.js" defer></script>
-  <script src="./v254-diagnostics.js" defer></script>
+  <script src="./practice-diagnostics.js" defer></script>
   <script src="./study30-shuati-links.js" defer></script>
   <script src="./study30-yamol-links.js" defer></script>
   <script src="./ai-review-links.js" defer></script>
   <link rel="stylesheet" href="./content-cleanup.css">
   <link rel="stylesheet" href="./layout-review.css">
   <link rel="stylesheet" href="./layout-followup.css">
+  <link rel="stylesheet" href="./practice-context.css">
   <meta name="theme-color" content="#214b75">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -108,6 +109,11 @@
           <textarea id="essayManualQuestion" rows="3" maxlength="10000" placeholder="請輸入或貼上你要練習的題目；這個欄位也會自動儲存。"></textarea></div>
       </details>
       <p id="essayWorkbenchLocationHint" class="tiny muted" hidden>「跟隨今日練習題」的申論草稿已移到上方「我的練習紀錄」。切換為其他科目，即可在此繼續自由練習。</p>
+      <div id="practiceSelfCheck" class="self-check" hidden>
+        <strong id="practiceRatingSubject">本題自評</strong>
+        <div class="ratings"><button type="button" data-practice-rating="mastered">能自行說明</button><button type="button" data-practice-rating="partial">還不完整</button><button type="button" data-practice-rating="review">需要再複習</button></div>
+        <div id="practiceErrorBox" class="error-box" hidden><label for="practiceErrorCause">需要補強的原因（選填）</label><select id="practiceErrorCause"><option value="">請選擇</option><option>概念不熟</option><option>爭點辨識</option><option>案例涵攝</option><option>申論架構</option><option>法條或資料待查證</option><option>其他</option></select></div>
+      </div>
       <div id="freeEssayWorkbenchSlot"></div>
       <details id="essayEditor" class="essay-editor" open><summary>申論作答與四格草稿</summary>
         <div class="essay-editor-body">
@@ -266,7 +272,7 @@
     </dialog>
 
   </main>
-  <script src="./layout-panels.js" defer></script>
+  <script src="./layout-panels-v2.js" defer></script>
   <div id="offlineStatus" class="offline-status" role="status" aria-live="polite" hidden></div>
   <script src="./offline-control.js" defer></script>
 </body>

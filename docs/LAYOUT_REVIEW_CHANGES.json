@@ -1,6 +1,6 @@
 {
   "base_commit": "056ee47da0ef2c49eb3aa685fc3448689189a74d",
-  "scope": "User-confirmed presentation review; independent preview only, no production merge authorization",
+  "scope": "User-confirmed presentation review and reported timer/subject-rating fixes; independent preview only, no production merge authorization",
   "files": [
     {
       "path": "common-subjects/catalog/index.html",
@@ -41,7 +41,7 @@
     {
       "path": "professional/index.html",
       "base_sha256": "115a1a32e125e7215c4336f4d079d434588308f7fff7fb69e53f446352dddf4b",
-      "sha256": "daf2ac18bbdadfe209e855dc7b71e3a0676f3194ac3db072ba169e25139f53eb",
+      "sha256": "1ea98801370e141f1323aef2bbc3117138352a9f6367d97f7bf9a11565cc841a",
       "reason": "Slides 2,8–17: remove marked prose, add chart/history hosts, group health under existing import panel. Follow-up slides 24–29 remove marked text, retain actual-record forecast, shorten 10-minute label. Keep four-grid drafts and full answer expanded by default; remove explanation only."
     },
     {
@@ -89,7 +89,7 @@
     {
       "path": "professional/sw.js",
       "base_sha256": "40e49a0b907e3db282d42743613f7756e205dba51705dfba7e8efac533400e99",
-      "sha256": "149965bc54fab56305b330c71de47e8a15245698d6ed71559daabc57be2064c9",
+      "sha256": "085923908121826355f3d023eba2798c48093349ccae3f9b618e512eee9d3f7d",
       "reason": "Refresh existing installed-viewer asset cache for changed UI, without altering storage keys."
     },
     {
@@ -97,6 +97,36 @@
       "base_sha256": "d564d94ae7a5249cd9ca7caa2ee480ddd4a541250e29b61a6f80c88f55ef0323",
       "sha256": "772a3fc26a744cde1decc63eacb336129d46b595e4879375625ca2cb9956412b",
       "reason": "Connected visits to changed common-subject pages use the current UI; retain installed snapshots."
+    },
+    {
+      "path": "professional/practice-session.js",
+      "base_sha256": null,
+      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.",
+      "sha256": "6d9e49851835a66ec0a639f27c132e34887d6de7c290f9a4d3674d7f91e8348e"
+    },
+    {
+      "path": "professional/practice-review.js",
+      "base_sha256": null,
+      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.",
+      "sha256": "34c09aaccd3e147a516649f2b08b4ffc659eaac345323c66fe24efedb9da8324"
+    },
+    {
+      "path": "professional/practice-diagnostics.js",
+      "base_sha256": null,
+      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.",
+      "sha256": "9ce8cfa946d7641fb2506f983fa52deb53b03364f767ee0a88c04ffa990696d5"
+    },
+    {
+      "path": "professional/layout-panels-v2.js",
+      "base_sha256": null,
+      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.",
+      "sha256": "38dd51421033fb19725091dd7fb3319aa04db12da941bf2e211e68ae16824545"
+    },
+    {
+      "path": "professional/practice-context.css",
+      "base_sha256": null,
+      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.",
+      "sha256": "4d5e3545376629d6cd34465bbb7544f3bd37cb6ec7f0a031fc0c84ca60e41157"
     }
   ]
 }

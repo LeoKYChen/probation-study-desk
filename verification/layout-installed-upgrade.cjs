@@ -34,6 +34,15 @@ const server=http.createServer((req,res)=>{
   assert.equal(await page.locator('#showMonthProgress').count(),1);assert.equal(await page.locator('#v254Radar .radar-value-item').count(),7);
   assert.equal(await page.evaluate(()=>localStorage.getItem('probation-study30-v251:v1')),before);
   assert.equal(await page.evaluate(()=>localStorage.getItem('other-module')),'保留');assert.deepEqual(errors,[],'no old-script/new-HTML error during cache upgrade');
-  console.log('PASS installed layout upgrade:',engine,'frozen main assets, mixed-cache compatibility, updated chart/calendar, unchanged records');
+  // Current app/core must execute after update, including on installed Safari.
+  assert.equal(await page.evaluate(()=>typeof Study30Review.attempts),'function');
+  await page.locator('#mode10').click();assert.equal(await page.locator('#mode10').getAttribute('aria-pressed'),'true');
+  await page.locator('#essayPracticeSubject').selectOption('心理學');
+  await page.locator('[data-practice-rating=partial]').click();
+  await page.locator('#practiceErrorCause').selectOption('概念不熟');
+  assert.equal(await page.evaluate(()=>Study30App.getEssayReviewData().sessions[Study30App.getEssayReviewData().today].rating),null,'free rating does not mutate daily');
+  assert.equal(await page.evaluate(()=>Study30Review.model(...(()=>{const {sessions,bank,today}=Study30App.getEssayReviewData();return [sessions,bank,today];})()).all[0].subject),'心理學');
+  assert.deepEqual(errors,[]);
+  console.log('PASS installed layout upgrade:' ,engine,'frozen main assets, mixed-cache compatibility, updated chart/calendar, unchanged records');
  }finally{if(ctx)await ctx.close();server.close();fs.rmSync(profile,{recursive:true,force:true});}
 })().catch(e=>{console.error(e);server.close();process.exitCode=1;});
