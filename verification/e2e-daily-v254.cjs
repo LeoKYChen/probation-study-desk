@@ -34,6 +34,7 @@ async function check(){
    if(location.origin!==args.origin)return;
    if(localStorage.getItem(args.dailyKey)===null)localStorage.setItem(args.dailyKey,JSON.stringify({[args.id]:args.record}));
    if(localStorage.getItem(args.studyKey)===null)localStorage.setItem(args.studyKey,JSON.stringify({sentinel:{issue:'保留原本考古題'}}));
+   if(localStorage.getItem('daily-reading-test:saved')===null)localStorage.setItem('daily-reading-test:saved',JSON.stringify([args.id]));
  },{origin,dailyKey:'probation-daily-github:records:v1',studyKey:'probation-study-desk-v24',id:q.id,record:oldRecord});
  const page=await context.newPage(),errors=[];
  page.on('pageerror',error=>errors.push(error.message));
@@ -73,9 +74,11 @@ async function check(){
  if(!IS_WEBKIT){
    const clipboard=await page.evaluate(()=>navigator.clipboard.readText());
    assert.ok(clipboard.includes('新練習答案'));
-   assert.ok(clipboard.includes(q.question));
+   assert.ok(clipboard.includes(await page.locator('#questionText').textContent()));
+   assert.ok(clipboard.includes('【本次每日模擬題】'));
+   assert.ok(!clipboard.includes('【原題】'));
    assert.ok(clipboard.includes('純學科題採整題評分'));
-   assert.ok(clipboard.includes('法律部分及非法律學科部分分別評分'));
+   assert.ok(clipboard.includes('按題目設問分別評分'));
  }
  const oldPage=await context.newPage();
  oldPage.on('pageerror',error=>errors.push('original daily page: '+error.message));
@@ -109,11 +112,22 @@ async function check(){
  const readable=JSON.parse(fs.readFileSync(await downloaded.path(),'utf8'));
  assert.equal(readable.records[q.id].aiFeedback,still);
  assert.equal(readable.records[q.id].essayDrafts.basis,'法律草稿：少年事件處理法');
- const replacement={format:'probation-daily-github-records',schemaVersion:1,records:{[q.id]:{answer:'已還原的每日題答案',essayDrafts:{issues:'還原的爭點草稿',basis:'',analysis:'',conclusion:''},review:true,updatedAt:new Date().toISOString(),aiFeedback:'已還原的AI評語'}}};
+ assert.ok(readable.saved.includes(q.id),'backup includes daily bookmarks');
+ assert.ok(readable.timers[q.id]?.deadline>Date.now(),'backup includes in-progress 30-minute timers');
+ const replacement={format:'probation-daily-github-records',schemaVersion:1,saved:[q.id,'additional-starred-id'],records:{[q.id]:{answer:'已還原的每日題答案',essayDrafts:{issues:'還原的爭點草稿',basis:'',analysis:'',conclusion:''},review:true,updatedAt:new Date().toISOString(),aiFeedback:'已還原的AI評語'}}};
  await page.locator('#importFile').setInputFiles({name:'daily-backup.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(replacement))});
  await page.waitForFunction(id=>JSON.parse(localStorage.getItem('probation-daily-github:records:v1'))[id]?.answer==='已還原的每日題答案',q.id);
  assert.equal(await page.locator('#aiFeedback').inputValue(),'已還原的AI評語');
  assert.equal(await page.locator('#draftIssue').inputValue(),'還原的爭點草稿');
+ assert.ok((await page.evaluate(()=>JSON.parse(localStorage.getItem('daily-reading-test:saved')))).includes('additional-starred-id'));
+ const partial={format:'probation-daily-github-records',schemaVersion:1,records:{[q.id]:{answer:'舊備份更新答案',review:true,updatedAt:new Date().toISOString()}}};
+ await page.locator('#importFile').setInputFiles({name:'older-daily-backup.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(partial))});
+ await page.waitForFunction(id=>{
+   const r=JSON.parse(localStorage.getItem('probation-daily-github:records:v1'))[id];
+   return r?.answer==='舊備份更新答案' && r?.aiFeedback==='已還原的AI評語' && r?.essayDrafts?.issues==='還原的爭點草稿';
+ },q.id);
+ assert.equal(await page.locator('#draftIssue').inputValue(),'還原的爭點草稿');
+ assert.ok((await page.evaluate(()=>JSON.parse(localStorage.getItem('daily-reading-test:saved')))).includes('additional-starred-id'),'older backup cannot delete bookmarks');
  const deleteDownload=page.waitForEvent('download');
  await page.locator('#clear').click();
  await deleteDownload;
@@ -152,7 +166,11 @@ async function check(){
      };
    });
    assert.ok(geometry.full<=geometry.viewport+2,'horizontal scroll at '+width+'px: '+JSON.stringify(geometry));
-   assert.ok(geometry.offline.top>=Math.max(...geometry.navLinks.map(x=>x.bottom))+8,'offline entry must have a separate row and breathing room at '+width+'px: '+JSON.stringify(geometry));
+   const navOverlap=geometry.navLinks.some(x=>geometry.offline.top<x.bottom-1&&geometry.offline.bottom>x.top+1&&geometry.offline.left<x.right+4&&geometry.offline.right>x.left-4);
+   assert.ok(!navOverlap,'offline entry must not overlap navigation at '+width+'px: '+JSON.stringify(geometry));
+   assert.ok(geometry.offline.right<=geometry.viewport+2,'offline entry stays inside viewport at '+width+'px');
+   const headerHeight=await mobile.locator('.site-header').evaluate(e=>e.getBoundingClientRect().height);
+   assert.ok(headerHeight<165,'navigation header should remain compact at '+width+'px: '+headerHeight);
    assert.deepEqual(geometry.labels,['匯出備份','匯入備份','清除紀錄'],'short labels match the mobile request');
    assert.ok(geometry.timer.every(x=>x.height<=65&&x.whiteSpace==='nowrap'),'timer buttons must stay single-line at '+width+'px: '+JSON.stringify(geometry.timer));
    assert.ok(geometry.backup.every(x=>x.height<=60&&x.whiteSpace==='nowrap'),'backup buttons must stay single-line at '+width+'px: '+JSON.stringify(geometry.backup));
