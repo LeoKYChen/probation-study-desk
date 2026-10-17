@@ -115,6 +115,82 @@ h1{font-size:clamp(25px,4vw,42px);font-weight:800;letter-spacing:.005em;line-hei
   .date-input-wrap{width:100%;min-width:0}
 }
 
+
+/* v2.5 正式主站風格：本區採 main/shared-ui.css 的實際設計色票。
+   --paper:#f5f5ef; --surface:#fff; --ink:#243b35; --muted:#68766f;
+   --line:#dde2d8; --green:#245b48; --teal-soft:#e8f0e9。 */
+:root{
+  color-scheme:light;
+  --bg:#f5f5ef;--bg-soft:#f6f8f2;--panel:#fff;--panel-2:#fff;
+  --line:#dde2d8;--text:#243b35;--muted:#68766f;
+  --accent:#245b48;--accent-deep:#245b48;--badge:#e8f0e9;
+}
+html,body{background:var(--bg);color:var(--text)}
+body{background:var(--bg);color:var(--text);line-height:1.7}
+.shell{width:min(100%,1120px);padding:30px 30px 24px;background:transparent;border:0;border-radius:0;box-shadow:none}
+header{padding:6px 0 24px;margin-bottom:24px;border-bottom:1px solid var(--line);align-items:center}
+h1{color:var(--text);font-size:clamp(28px,3.6vw,42px)}
+.pill{background:#245b48;color:#fff;border:1px solid #245b48;font-size:clamp(12px,1.6vw,15px);padding:7px 16px}
+.countdown{margin:0 0 20px;padding:20px 24px;border:1px solid #d6e4d7;border-radius:16px;background:#e8f0e9}
+.countdown-label{color:#51775f;font-size:15px;font-weight:700}
+.countdown-calendar{color:#68766f;font-size:14px}
+.countdown-value{color:#245b48;font-size:clamp(30px,4vw,46px)}
+.countdown[data-style="large"] .countdown-value{font-size:clamp(38px,5vw,62px)}
+.countdown[data-accent="emerald"] .countdown-value{color:#19764c}
+.countdown[data-accent="cream"] .countdown-value{color:#526457}
+.countdown-settings{border-top:1px solid #d1dbcf}
+.countdown-settings summary{color:#245b48}
+.countdown-settings summary:hover{color:#346b57}
+.countdown-settings summary:focus-visible{outline-color:#245b48}
+#countdown-form{padding-top:12px}
+.nav-list{display:grid;gap:14px}
+.nav-item{background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 8px 28px rgba(36,59,53,.05);overflow:hidden}
+.nav-link{padding:24px;gap:18px;border-radius:14px;grid-template-columns:52px minmax(0,1fr)}
+.nav-link:hover{background:#f6f8f2}
+.nav-icon{color:#245b48}
+.nav-title{color:#243b35;font-size:clamp(20px,2.65vw,27px);margin-bottom:4px}
+.nav-subtitle{color:#68766f;font-size:clamp(14px,1.65vw,17px)}
+.nav-link:focus-visible,.lab-link:focus-visible{outline:3px solid #245b48;outline-offset:2px}
+.lab{padding:0;margin-top:14px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 8px 28px rgba(36,59,53,.05)}
+.lab-link{padding:25px 24px;border-radius:14px}
+.lab-link:hover{background:#f6f8f2}
+.lab-link:hover .lab-title{color:#245b48}
+.lab-title{color:#243b35;font-size:clamp(21px,2.65vw,27px)}
+.lab-badge{background:#e8f0e9;color:#245b48;font-size:13px;border:1px solid #d6e4d7}
+.lab-description{color:#68766f;font-size:clamp(14px,1.65vw,17px);margin-top:8px}
+.footnote{color:#68766f;margin-bottom:24px;opacity:1}
+.field{color:#486358;font-size:14px;font-weight:600}
+.field input,.field select{background:#fff;color:#243b35;border:1px solid #c8d2c5}
+.date-input-wrap{background:#fff;border-color:#c8d2c5}
+.field .date-input-wrap #exam-date{background:transparent;color:#243b35;color-scheme:light}
+.field .date-input-wrap:focus-within,.field input:focus-visible,.field select:focus-visible{outline-color:#245b48}
+.form-note{color:#68766f}
+.save-button{color:#fff;background:#245b48;border-color:#245b48}
+.clear-button{color:#245b48;background:#fff;border:1px solid #9cb7a7}
+.form-actions button:focus-visible{outline-color:#245b48}
+@media(min-width:900px){
+  .shell{padding:40px 40px 18px}
+  .form-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .nav-link{min-height:124px}
+}
+@media(max-width:580px){
+  body{padding:8px}
+  .shell{padding:16px 12px 20px}
+  header{padding:5px 0 17px;margin-bottom:16px;gap:8px}
+  h1{font-size:clamp(23px,7vw,31px)}
+  .pill{padding:5px 11px}
+  .countdown{padding:16px;margin-bottom:14px}
+  .countdown[data-style="large"] .countdown-value{font-size:clamp(36px,10vw,49px)}
+  .nav-list{gap:11px}
+  .nav-link{grid-template-columns:30px minmax(0,1fr);padding:17px;gap:13px}
+  .nav-title{font-size:clamp(19px,5.5vw,24px)}
+  .nav-subtitle{font-size:14px}
+  .lab{margin-top:11px}
+  .lab-link{padding:20px 16px}
+  .lab-title{font-size:clamp(18px,5.4vw,23px)}
+  .lab-description{font-size:14px}
+}
+
 </style>
 </head>
 <body>
