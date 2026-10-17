@@ -22,7 +22,9 @@ for(const id of ['startDaily','answered','questionPick','options','nextQuestion'
   assert.ok(legacyOnly.includes('id="'+id+'"'),'legacy UI still in DOM: '+id);
 assert.ok(legacyOnly.includes('</div>\n'),'hidden wrapper closed');
 assert.ok(!legacyOnly.includes('id="starestoPanel"'),'Staresto resources outside hidden wrapper');
-assert.ok(html.includes('href="./daily/"'),'v0.4 daily Staresto remains visible');
+assert.ok(html.includes('href="./english-assistant/"'),'v0.6 link-based Staresto course is main entry');
+assert.ok(fs.existsSync(path.join(root,'daily','index.html')),'v0.4 archived daily course still exists');
+assert.ok(html.includes('id="legacy80ResetControls" hidden'),'original-80 reset remains hidden');
 assert.ok(html.includes('<section id="panelEssay"'),'essay module remains present');
 class Node{
  constructor(id=''){this.id=id;this.value='';this.textContent='';this.children=[];this.options=[];this.handlers={};this.style={};this.className='';this.hidden=false;this.disabled=false;this.classList={toggle(){},add(){}};}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Staresto 英文學習助手 v0.6｜第一階段</title>
+<meta name="theme-color" content="#174835">
+<style>
+:root{font-family:system-ui,"PingFang TC","Microsoft JhengHei",sans-serif;color:#1b352a;background:#f2f7f4}
+*{box-sizing:border-box}body{margin:0;line-height:1.65}a{color:#166747}
+.wrap{max-width:920px;padding:0 20px;margin:auto}header{background:#184535;color:white;padding:17px 0}header a{color:#fff;font-weight:700;text-decoration:none}
+header .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}header small{opacity:.8}
+.hero{padding:36px 0 22px}.hero h1{font-size:clamp(1.6rem,4vw,2.5rem);line-height:1.3;margin:0 0 12px}
+.eyebrow{font-weight:700;letter-spacing:.08em;color:#38705d;font-size:.83rem}.panel{background:white;border:1px solid #d4e4dc;border-radius:15px;padding:22px;margin-bottom:18px;box-shadow:0 3px 15px #1238}
+h2{font-size:1.3rem;margin:0}.sub,.muted{color:#547064;font-size:.94rem}.heading{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
+.card{background:#f8fbf9;border:1px solid #d7e8de;border-radius:12px;padding:17px;margin:14px 0}.card.done{background:#eff7f2}.card h3{margin:3px 0;font-size:1.1rem}.card p{margin:7px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:8px;border:1px solid #8eb1a0;background:white;color:#195740;padding:9px 13px;font:inherit;text-decoration:none;font-weight:650;cursor:pointer}
+.btn.primary{background:#176449;color:white;border-color:#176449}.btn:disabled{opacity:.5;cursor:not-allowed}.buttons{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.score{margin:12px 0;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.score input{width:70px;padding:8px;border:1px solid #aac3b6;border-radius:8px;font:inherit}.record{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-top:1px solid #dce9e1;padding:9px 0}
+.stats{display:flex;gap:16px}.stats span{background:#f1f8f3;padding:8px 15px;border-radius:8px}#alert{border-left:4px solid #b1643d;padding:12px;background:#fff9f1;margin-bottom:16px}
+footer{font-size:.85rem;color:#63786b;padding:8px 0 28px}@media(max-width:580px){.wrap{padding:0 15px}.panel{padding:16px}.buttons .btn{flex:1 1 160px}}
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:12px;margin:15px 0}.word-card{border:1px solid #d8e6dd;border-radius:10px;padding:14px;background:#f8fcf9}.word-card strong{font-size:1.25rem}.word-card .desc{margin:10px 0;padding:8px;background:white;border-radius:8px}.word-card .desc p{margin:5px 0}.word-card .small{font-size:.82rem;color:#5b7468}.word-card.done{background:#eaf5ee}.word-card .buttons .btn{font-size:.86rem;padding:6px 10px}.custom-form{display:grid;grid-template-columns:1fr 1fr 90px auto;gap:8px;margin-top:10px}.custom-form input{width:100%;min-width:0;padding:9px;border:1px solid #aac3b6;border-radius:8px;font:inherit}.notice-line{margin:7px 0;color:#476b59}@media(max-width:650px){.custom-form{grid-template-columns:1fr 1fr}.custom-form input:nth-child(3){grid-column:1}.custom-form button{grid-column:2}}[hidden]{display:none!important}
+</style><script src="./engine.js" defer></script><script src="./vocab.js" defer></script><script src="./app.js" defer></script></head>
+<body><header><div class="wrap"><a href="../">觀護人共同科目練習臺</a><small>Staresto v0.6｜獨立測試版</small></div></header>
+<main class="wrap">
+<section class="hero"><p class="eyebrow">116年觀護人英文 · 每天15–25分鐘</p><h1>今天練什麼，打開就知道。</h1>
+<p>每天固定背單字；其他題型依星期安排。直接前往 Staresto 原站，練完再回來記錄。</p>
+<strong id="todayDate"></strong>　<span id="dayLabel"></span></section>
+<div id="alert" role="alert" hidden></div>
+<section class="panel" id="vocabulary" aria-labelledby="wordTitle"><div class="heading"><h2 id="wordTitle">每日單字卡｜6個新字</h2><strong id="wordStatus">—</strong></div>
+<p class="sub">先看英文猜意思，再顯示中文及例句。完成後選「記住了」或「還不熟」，系統會安排間隔複習；重複複習不會被算成新的單字。</p>
+<div id="newWords" class="vocab-grid" aria-live="polite"></div>
+<h3>今日到期複習</h3><div id="reviewWords" class="vocab-grid" aria-live="polite"></div>
+<h3>加入我的生字</h3><p class="muted">在 Staresto 遇到不會的單字，可以自行加入；新加入的字詞會從下一份新字任務開始安排。</p>
+<div class="custom-form"><input id="personalTerm" aria-label="英文單字或片語" placeholder="英文單字或片語" maxlength="45"><input id="personalMeaning" aria-label="中文意思" placeholder="中文意思" maxlength="90"><input id="personalPos" aria-label="詞性（選填）" placeholder="詞性（選填）" maxlength="24"><button id="addPersonalWord" type="button" class="btn">加入字庫</button></div>
+<p id="wordSummary" class="notice-line" aria-live="polite"></p></section>
+<section class="panel"><div class="heading"><h2>今日任務</h2><strong id="progress">—</strong></div>
+<p class="sub">除了上方固定6張單字卡，也可透過 Staresto 的指定年度題組練習英文；不需要再另做大量站內題庫。</p>
+<div id="tasks"></div>
+<p class="muted">單字、文法可直接開啟指定題目組，閱讀可直接開啟指定互動文章；文意選填仍需依提示在原站選文章。<strong>不要使用隨機10題</strong>；若以前做過或原站找不到，按「換一份」。本站不會讀取原站作答紀錄。</p></section>
+<section class="panel"><div class="heading"><h2>學習紀錄</h2><div class="buttons"><button id="export" class="btn" type="button">匯出 JSON 備份</button><label class="btn" for="importFile">匯入 JSON（合併）</label><input id="importFile" type="file" accept=".json,application/json" hidden></div></div>
+<p class="muted"><span id="count">0</span> 個不同任務已完成；<span id="days">0</span> 個學習日</p>
+<div id="history"></div></section>
+<section class="panel"><h2>資料與使用說明</h2>
+<p>本頁只記錄自己登記的任務與成績，不抓取、複製或代答原站題目。資料保存在目前瀏覽器，不會跨裝置自動同步。匯入備份採合併方式，不會主動清除目前已保存的紀錄。</p>
+<p>使用<strong>獨立儲存鍵</strong>，不修改 v0.4 每日英文、v0.5 瀏覽器、原創80題、國文作文或專業科目紀錄；你目前尚未開始舊題練習，因此不進行舊紀錄移轉；若未來遇到做過的題目仍可按「換一份」。</p>
+<p>本站不保證原站所有年份都支援定位至指定題組。若找不到，請換一份而非誤記完成。定期備份，勿把含私人紀錄的 JSON 放到公開 GitHub。</p></section>
+<footer><a href="../">共同科目首頁</a> · <a href="https://staresto-create.github.io/JCEE-vocab-questions/" target="_blank" rel="noopener noreferrer">Staresto 原作者網站 ↗</a><p>本頁非 Staresto 官方產品。原題目及解析著作權歸原權利人。</p></footer>
+</main></body></html>
