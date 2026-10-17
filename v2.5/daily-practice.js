@@ -34,10 +34,14 @@ function updateDraftCount(){
   const count=DRAFT_FIELDS.reduce((n,[element])=>n+$(element).value.length,0);
   $('draftWordCount').textContent='草稿 '+count+' 字';
 }
+function hasWrittenRecord(r){
+  if(!r)return false;
+  return Boolean((r.answer||'').trim()||Object.values(draftsFor(r)).some(v=>typeof v==='string'&&v.trim()));
+}
 function updateSummary(){
   if(!bank)return;
   $('count').textContent=bank.questions.length;
-  $('written').textContent=bank.questions.filter(q=>(records[q.id]?.answer||'').trim()).length+' 題已有作答';
+  $('written').textContent=bank.questions.filter(q=>hasWrittenRecord(records[q.id])).length+' 題已有練習紀錄';
 }
 function title(q){return M.title(q);}
 function renderList(){
@@ -47,7 +51,7 @@ function renderList(){
     .sort((a,b)=>b.date.localeCompare(a.date)||a.id.localeCompare(b.id));
   $('matches').textContent='符合條件 '+list.length+' 題';
   $('questionList').innerHTML=list.map(q=>{
-    const r=records[q.id],s=r?.review?'★ 待複習':r?.answer.trim()?'✓ 已作答':'尚未作答';
+    const r=records[q.id],s=r?.review?'★ 待複習':r?.answer?.trim()?'✓ 已作答':hasWrittenRecord(r)?'✓ 已有草稿':'尚未作答';
     return '<button type="button" class="question-entry '+(q.id===current?'active':'')+'" data-id="'+esc(q.id)+'" aria-pressed="'+String(q.id===current)+'">'+
       '<small>'+esc(q.date)+' · '+esc(M.subject(q))+'</small><strong>'+esc(title(q))+'</strong><small>'+esc(s)+'</small></button>';
   }).join('')||'<p class="subtle">沒有符合條件的題目。</p>';
