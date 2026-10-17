@@ -1,0 +1,5 @@
+/* Small status strip only; original v2.5.4 appearance and study widgets remain unchanged. */
+.offline-status:not([hidden]){display:flex;justify-content:center;align-items:center;width:max-content;max-width:calc(100% - 24px);margin:16px auto;padding:8px 13px;font:600 .86rem/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Noto Sans TC",sans-serif;text-align:center;border:1px solid #ccdedb;border-radius:12px;background:#f0f8f6;color:#285c56}
+.offline-status[data-kind="warning"]{background:#fff6eb;border-color:#e7d0a4;color:#744b1e}
+.offline-status[data-kind="loading"]{background:#eef4f8;border-color:#cadbe7;color:#2a5270}
+@media(max-width:580px){.offline-status:not([hidden]){width:calc(100% - 24px);font-size:.8rem}}

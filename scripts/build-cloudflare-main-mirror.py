@@ -16,6 +16,7 @@ OUT = ROOT / "cloudflare-main-mirror-dist"
 ROOT_FILES = {
     ".nojekyll",
     "index.html",
+    "legacy-home.html",
     "offline.css",
     "offline.js",
     "offline-manifest.json",
@@ -27,6 +28,7 @@ ROOT_FILES = {
 }
 SITE_DIRS = {
     "v2.5",
+    "professional",
     "daily-simulation",
     "common-subjects",
     "juvenile-news",
@@ -41,6 +43,11 @@ SOURCE_ONLY = {"juvenile-news/source"}
 DENY_PARTS = {"node_modules", "__pycache__", ".git", ".github"}
 REQUIRED = (
     "index.html",
+    "professional/index.html",
+    "professional/app.js",
+    "professional/source-main-questions.js",
+    "professional/source-related-questions.js",
+    "professional/sw.js",
     "v2.5/index.html",
     "v2.5/questions.js",
     "v2.5/related-questions.js",
@@ -106,9 +113,10 @@ def main() -> None:
     metadata = {
         "repository": "LeoKYChen/probation-study-desk",
         "source_commit": commit,
-        "deployment_role": "isolated-cloudflare-preview-of-github-main",
+        "deployment_role": "isolated-cloudflare-preview-of-github-commit",
         "tracked_site_file_count": len(copied),
         "required_file_sha256": {path: sha256(OUT / path) for path in REQUIRED},
+        "file_sha256": {path: sha256(OUT / path) for path in sorted(copied)},
     }
     (OUT / "mirror-manifest.json").write_text(
         json.dumps(metadata, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"

@@ -46,7 +46,8 @@ jobs:
               copied=hashlib.sha256((out/name).read_bytes()).hexdigest()
               assert real == copied == expected, name
           page=(out/'index.html').read_text('utf-8')
-          assert 'v2.5/' in page and 'common-subjects/' in page
+          assert 'common-subjects/' in page
+          assert 'v2.5/' in page and 'professional/' in page
           print('PASS: same tracked files, no separate Cloudflare application version')
           PY
 
