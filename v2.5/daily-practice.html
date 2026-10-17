@@ -50,8 +50,18 @@
           <div><span class="timer-caption">申論作答時間</span><strong id="timer" class="timer" aria-live="off">30:00</strong><small id="timerStatus">尚未開始計時；也可自由練習。</small></div>
           <div class="timer-actions"><button id="startTimer" class="primary" type="button">開始30分鐘</button><button id="resetTimer" class="secondary" type="button">重新計時</button></div>
         </section>
-        <div class="answer-heading"><label for="answer">我的作答</label><span id="wordCount">0 字</span></div>
-        <textarea id="answer" maxlength="100000" spellcheck="false" placeholder="一、題目爭點&#10;二、法律或學理依據&#10;三、涵攝與實務應用&#10;四、結論"></textarea>
+        <section class="essay-workspace" aria-labelledby="essayHeading">
+          <div class="essay-workspace-heading"><div><h3 id="essayHeading">我的練習紀錄</h3><p>先用四格草稿整理題意，再撰寫完整答案；作答依題目自動保存。</p></div><span id="draftWordCount" aria-live="polite">草稿 0 字</span></div>
+          <div class="essay-draft-grid" aria-label="國考申論四格草稿">
+            <div class="essay-draft-field"><label for="draftIssue">一、題目爭點</label><textarea id="draftIssue" maxlength="100000" rows="5" placeholder="本題有哪些問題、設問與核心爭點？"></textarea></div>
+            <div class="essay-draft-field"><label for="draftBasis">二、法律或學理依據</label><textarea id="draftBasis" maxlength="100000" rows="5" placeholder="適用法條、法律要件或相關學說與理論。"></textarea></div>
+            <div class="essay-draft-field"><label for="draftAnalysis">三、涵攝與實務應用</label><textarea id="draftAnalysis" maxlength="100000" rows="5" placeholder="將題目事實與規範、學理連結並分析。"></textarea></div>
+            <div class="essay-draft-field"><label for="draftConclusion">四、結論</label><textarea id="draftConclusion" maxlength="100000" rows="5" placeholder="分別回應設問，提出結論。"></textarea></div>
+          </div>
+          <div class="answer-heading"><label for="answer">完整答案</label><span id="wordCount">0 字</span></div>
+          <textarea id="answer" maxlength="100000" spellcheck="false" placeholder="請將四格草稿整理為完整申論答案；原有作答內容將保留於此欄。"></textarea>
+          <div class="essay-workspace-actions"><button id="exportEssay" class="secondary" type="button">匯出本題申論 Markdown</button><span id="exportEssayStatus" class="subtle" role="status" aria-live="polite"></span></div>
+        </section>
         <div class="answer-actions"><label><input id="review" type="checkbox"> 加入待複習</label><span>作答自動儲存在本機</span></div>
         <section class="ai-panel" aria-label="AI批改">
           <h3>AI 申論批改</h3>
