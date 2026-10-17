@@ -20,6 +20,7 @@ jobs:
       - uses: actions/checkout@v6
         with:
           ref: feature/stage5-file-zip-offline-20261018
+          fetch-depth: 0
           persist-credentials: true
       - name: Generate deterministic local JS equivalents from original committed JSON
         shell: bash
