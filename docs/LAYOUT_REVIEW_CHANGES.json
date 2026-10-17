@@ -5,14 +5,14 @@
     {
       "path": "common-subjects/catalog/index.html",
       "base_sha256": "c3993bd106af356f064551ac490795cbefb3ee3b336f2014d38caa34fd083187",
-      "sha256": "ecfafab6ba3422c2a61387f164db219855ee74ec605b6d83feee9d65b22ae358",
-      "reason": "Shorten development-only introduction; keep source and attribution. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed."
+      "sha256": "822f178b65e55f6107c1669a47ee50de88f5d0de1aba2a5a499ce2b51ed6d92a",
+      "reason": "Shorten development-only introduction; keep source and attribution. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed. [Stage 5 QA] Conditional script content split so HTTPS PWA never prefetches file-only generated JS."
     },
     {
       "path": "common-subjects/daily/index.html",
       "base_sha256": "63f88c07844a9f3d99c738864cb385ea6d744bbb094bb70e7b6bbc9c1d030a1b",
-      "sha256": "8e95c5a1f643e43b22b68c70e65e84565bd1ffe0f2a3e67832d2eb91289e4b4b",
-      "reason": "Shorten development-version storage explanation; retain replace/backup warning. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed."
+      "sha256": "e6c92e59fe55a46332e5d154480030c7e55f394c2822f32d1853a60f40487c92",
+      "reason": "Shorten development-version storage explanation; retain replace/backup warning. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed. [Stage 5 QA] Conditional script content split so HTTPS PWA never prefetches file-only generated JS."
     },
     {
       "path": "common-subjects/english-assistant/index.html",
