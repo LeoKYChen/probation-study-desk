@@ -41,8 +41,8 @@
     {
       "path": "professional/index.html",
       "base_sha256": "115a1a32e125e7215c4336f4d079d434588308f7fff7fb69e53f446352dddf4b",
-      "sha256": "6d79e5c8120b69aba85e8d3b86a489c3a0c8509d13ec1d73a774b5cdd3ee2ef5",
-      "reason": "Slides 2,8–17: remove marked prose, add chart/history hosts, group health under existing import panel. Follow-up slides 24–29 remove marked text, retain actual-record forecast, shorten 10-minute label."
+      "sha256": "daf2ac18bbdadfe209e855dc7b71e3a0676f3194ac3db072ba169e25139f53eb",
+      "reason": "Slides 2,8–17: remove marked prose, add chart/history hosts, group health under existing import panel. Follow-up slides 24–29 remove marked text, retain actual-record forecast, shorten 10-minute label. Keep four-grid drafts and full answer expanded by default; remove explanation only."
     },
     {
       "path": "professional/layout-followup.css",
@@ -89,7 +89,7 @@
     {
       "path": "professional/sw.js",
       "base_sha256": "40e49a0b907e3db282d42743613f7756e205dba51705dfba7e8efac533400e99",
-      "sha256": "3fef113564372e00eb24eec42eb04a429d67c2e90c9dd8b7673025ea45224c67",
+      "sha256": "149965bc54fab56305b330c71de47e8a15245698d6ed71559daabc57be2064c9",
       "reason": "Refresh existing installed-viewer asset cache for changed UI, without altering storage keys."
     },
     {

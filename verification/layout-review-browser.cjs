@@ -30,12 +30,16 @@ const server=http.createServer((req,res)=>{
   assert.equal(await page.locator('#simCase').count(),0);
   assert((await page.locator('#simOutput').textContent()).includes('尚無已自評'));
   assert.equal(await page.locator('#mode10').innerText(),'10分鐘');
+  assert.equal(await page.locator('#essayEditor').getAttribute('open'),'','draft editor is expanded on entry');
+  for(let i=0;i<4;i++)assert.equal(await page.locator('#essayField'+i).isVisible(),true,'four-grid field visible on entry '+i);
+  assert.equal(await page.locator('#essayFullAnswer').isVisible(),true);
   assert.equal(await page.locator('.backup-import-panel').evaluate(n=>n.closest('.content-collapse').previousElementSibling.classList.contains('history')),true);
   // Seed canonical old fields, all rubric families, a real zero, and one missing subject.
   const seeded=await page.evaluate(()=>{
    const api=Study30App,{bank,today}=api.getEssayReviewData(),key='probation-study30-v251:v1';
    const stored=JSON.parse(localStorage.getItem(key)),session=stored.sessions[today];
    session.unknownField={preserve:true};session.essayAssessments={};
+   session.essayDrafts={...(session.essayDrafts||{}),[session.questionId]:{template:'law',outline:['保留第一格爭點','保留第二格規範','保留第三格涵攝','保留第四格結論'],fullAnswer:'保留完整申論答案'}};
    const subjects=Study30V254Diagnostics.SUBJECTS;
    for(const subject of subjects.filter(s=>s!=='諮商與輔導')){
     const type=Study30Rubric.subjectType(subject),rule=Study30Rubric.RULES[type],id='manual:2026-10-17:'+subject;
@@ -50,6 +54,11 @@ const server=http.createServer((req,res)=>{
   await page.reload();await page.waitForFunction(()=>window.Study30App);
   const raw=()=>page.evaluate(()=>localStorage.getItem('probation-study30-v251:v1'));
   assert.equal(await raw(),seeded);
+  for(let i=0;i<4;i++){
+   assert.equal(await page.locator('#essayField'+i).isVisible(),true,'old four-grid draft visible without expanding '+i);
+   assert.equal(await page.locator('#essayField'+i).inputValue(),['保留第一格爭點','保留第二格規範','保留第三格涵攝','保留第四格結論'][i]);
+  }
+  assert.equal(await page.locator('#essayFullAnswer').inputValue(),'保留完整申論答案');
   await diagnostics.locator(':scope > summary').click();
   assert.equal(await page.locator('#v254Radar .radar-dot').count(),6);
   assert.equal(await page.locator('#v254Radar .radar-area').count(),0,'missing subject must not close a polygon');
