@@ -1,0 +1,61 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const {chromium,webkit}=require('playwright');
+const html=path.resolve(__dirname,'../portable-dist/index.html');
+assert(fs.existsSync(html),'Run node portable/build-portable.cjs first');
+const source=fs.readFileSync(html,'utf8');
+assert(!/<script[^>]*src=/i.test(source));
+assert(!/href=["']https?:\/\//i.test(source),'Portable page must not require a CDN');
+const db=JSON.parse(source.match(/<script id="embedded-data" type="application\/json">([\s\S]*?)<\/script>/)[1]);
+assert.equal(db.past.length,426);assert.equal(db.daily.length,125);assert.equal(db.essays.length,132);
+const file='file://'+html;
+(async()=>{
+ const engine=process.env.PORTABLE_BROWSER==='webkit'?webkit:chromium;
+ const browser=await engine.launch({headless:true});
+ try{
+  const ctx=await browser.newContext({locale:'zh-TW',viewport:{width:390,height:844},acceptDownloads:true});
+  const errors=[],network=[];
+  await ctx.route(/^https?:/,route=>{network.push(route.request().url());route.abort();});
+  const page=await ctx.newPage();
+  page.on('pageerror',err=>errors.push(String(err)));
+  if(engine===chromium)await ctx.setOffline(true);
+  await page.goto(file,{waitUntil:'load'});
+  await page.locator('[data-mode=past]').waitFor();
+  assert.match(await page.locator('#count').innerText(),/426/);
+  const title=await page.locator('#title').innerText();
+  assert(title.length>6);
+  await page.locator('#issues').fill('斷網申論爭點');
+  await page.locator('#fullAnswer').fill('申論完整作答\n一、構成要件。\n二、涵攝。');
+  await page.locator('#save').click();
+  const raw=await page.evaluate(()=>{try{return localStorage.getItem('psd-portable-study-v1')}catch{return null}});
+  const downloadEvent=page.waitForEvent('download');
+  await page.locator('#export').click();
+  const dl=await downloadEvent, dest=path.join('/tmp','stage5-'+process.env.PORTABLE_BROWSER+'-'+Date.now()+'.json');
+  await dl.saveAs(dest);
+  const exported=JSON.parse(fs.readFileSync(dest,'utf8'));
+  assert.equal(exported.format,'psd-portable-study-v1');
+  const uids=Object.keys(exported.records);
+  assert.equal(uids.length,1,'expected a single saved question');
+  assert(exported.records[uids[0]].fullAnswer.includes('申論完整作答'));
+  await page.locator('[data-mode=daily]').click();
+  assert.match(await page.locator('#count').innerText(),/125/);
+  await page.locator('[data-mode=essay]').click();
+  assert.match(await page.locator('#count').innerText(),/132/);
+  await page.locator('[data-mode=news]').click();
+  assert.match(await page.locator('#count').innerText(),/篇/);
+  await page.reload({waitUntil:'load'});
+  const remembered=await page.locator('#fullAnswer').inputValue();
+  if(raw!==null){assert(remembered.includes('申論完整作答'),'localStorage supported but answer lost on reload');}
+  else{assert.match(await page.locator('#state').innerText(),/下載 JSON/);}
+  const fresh=await browser.newContext({locale:'zh-TW',viewport:{width:390,height:844},acceptDownloads:true});
+  const restored=await fresh.newPage();restored.on('dialog',d=>d.accept());
+  await restored.goto(file,{waitUntil:'load'});
+  await restored.locator('#import').setInputFiles({name:'offline-saved.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(exported))});
+  await restored.waitForFunction(()=>document.getElementById('state').textContent.includes('匯入完成'),null,{timeout:15000});
+  assert.match(await restored.locator('#fullAnswer').inputValue(),/申論完整作答/);
+  assert.deepEqual(network,[],'ZIP file opening must make no network requests');
+  assert.deepEqual(errors,[],'Offline app must not throw any JavaScript errors');
+  console.log('PASS '+process.env.PORTABLE_BROWSER+' file://: past426/daily125/essay132, no network, answer, download JSON, manual import, same-file reload with safe browser storage fallback');
+  await fresh.close();await ctx.close();
+ }finally{await browser.close();}
+})().catch(e=>{console.error(e);process.exitCode=1;});
