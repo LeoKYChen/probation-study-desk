@@ -1,0 +1,48 @@
+name: Deploy isolated study-home preview
+
+on:
+  push:
+    branches:
+      - preview/116-study-home-20261017
+    paths:
+      - previews/116-study-home/**
+      - .github/workflows/deploy-home-preview.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: study-home-preview
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - name: Verify independent static homepage
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s previews/116-study-home/index.html
+          python - <<'PY'
+          from pathlib import Path
+          from html.parser import HTMLParser
+          p=Path("previews/116-study-home/index.html")
+          data=p.read_text(encoding="utf-8")
+          for x in ['lang="zh-Hant"', 'Asia/Taipei', 'countdown-form', 'exam-date', 'psd-home-exam-countdown-v1', 'https://v254-unified-preview.probation-study30-test.pages.dev/', 'https://leokychen.github.io/probation-study-desk/common-subjects/', 'https://leokychen.github.io/probation-study-desk/daily-simulation/', 'https://leokychen.github.io/probation-study-desk/juvenile-news/', 'https://probation-legal-ai-test.pages.dev/']:
+            assert x in data,x
+          assert 'localStorage.clear(' not in data
+          class A(HTMLParser):
+            pass
+          A().feed(data)
+          print("Verified isolated preview HTML, five existing links and separate countdown storage key")
+          PY
+      - name: Deploy only dedicated branch preview (never production)
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy previews/116-study-home --project-name=probation-study30-test --branch=home-preview-20261017
