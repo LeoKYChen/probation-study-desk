@@ -5,6 +5,7 @@ on:
     branches: [release/cloudflare-main-sync-20261017]
     paths:
       - scripts/cloudflare-production-preflight.py
+      - scripts/cloudflare-release-control.py
       - .github/workflows/cloudflare-production-preflight.yml
   workflow_dispatch:
 
@@ -22,7 +23,14 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: python3 scripts/cloudflare-production-preflight.py
+      - name: Exercise production guard without deploying or rolling back
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: python3 scripts/cloudflare-release-control.py prepare --commit '${{ github.sha }}'
       - uses: actions/upload-artifact@v4
         with:
           name: cloudflare-production-read-only-inventory
-          path: cloudflare-production-preflight.json
+          path: |
+            cloudflare-production-preflight.json
+            cloudflare-production-before-release.json
