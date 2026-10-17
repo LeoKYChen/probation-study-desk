@@ -29,12 +29,33 @@ async function takeDownload(page,click){
  await new Promise(r=>server.listen(0,'127.0.0.1',r));
  const base='http://127.0.0.1:'+server.address().port, browser=await chromium.launch({headless:true});
  try{
+  // Reproduce a clean learner profile that only visited two daily questions.
+  const emptyCtx=await browser.newContext({viewport:{width:390,height:844},locale:'zh-TW'});
+  const untouched=await emptyCtx.newPage();
+  await untouched.goto(base+'/backup/');
+  const emptySessions={version:1,sessions:{
+   '2026-10-17':{date:'2026-10-17',mode:'30',questionId:'synthetic-Q1',phase:0,remaining:300,elapsed:0,notes:[],rating:null,finished:false},
+   '2026-10-16':{date:'2026-10-16',mode:'30',questionId:'synthetic-Q2',phase:0,remaining:300,elapsed:0,notes:[],rating:null,finished:false}
+  }};
+  await untouched.evaluate(input=>{
+   localStorage.setItem(input.key,JSON.stringify(input.sessions));
+   localStorage.setItem('probation-study-desk-v24','{}');
+  },{key,sessions:emptySessions});
+  await untouched.reload();
+  const emptySummary=await untouched.locator('#summary').innerText();
+  assert.match(emptySummary,/已儲存的學習／閱讀紀錄：0 筆/);
+  assert.match(emptySummary,/尚未開始的工作階段：2 筆/);
+  assert.match(await untouched.locator('#modules').innerText(),/空白儲存區（0 筆）/);
+  const zeroBundle=await takeDownload(untouched,()=>untouched.locator('#export').click());
+  assert.deepEqual(JSON.parse(zeroBundle.data[key]),emptySessions,'export must preserve empty sessions unchanged');
+  assert.equal(zeroBundle.data['probation-study-desk-v24'],'{}','an empty record map must be kept in backup');
+  await emptyCtx.close();
   const a=await browser.newContext({viewport:{width:390,height:844},locale:'zh-TW'});
   const page=await a.newPage();
   await page.goto(base+'/backup/');
   await page.evaluate(args=>{localStorage.setItem(args.key,JSON.stringify(args.first));localStorage.setItem(args.common,JSON.stringify({schema:args.common,drafts:{'full:12':{text:'一篇作文'}},english:{}}));}, {key,first,common});
   await page.reload();await page.locator('#export').waitFor();
-  assert.match(await page.locator('#summary').innerText(),/2 種學習資料/);
+  assert.match(await page.locator('#summary').innerText(),/已儲存的學習／閱讀紀錄：2 筆/);
   const bundle=await takeDownload(page,()=>page.locator('#export').click());
   assert.equal(bundle.format,'psd-unified-learning-backup');
   assert.equal(JSON.parse(bundle.data[key]).sessions['2026-10-17'].essayDrafts.Q1.fullAnswer,'Mac原答案');
