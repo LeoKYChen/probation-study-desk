@@ -96,7 +96,7 @@
     const data=getDraft(),template=TEMPLATES[data.template]||TEMPLATES.theory;
     const text=[`# 國考申論練習｜${ctx.subject||'自主練習'}`,'',`- 日期：${ctx.date}`,
       `- 題目：${ctx.questionHeading||'自選題'}`,`- 模板：${data.template==='law'?'法律科目':'學理科目'}`,
-      `- 來源：${ctx.manual?'使用者自選練習題':'本測試站既有觀護人考古題'}；非342題預測題庫`,'',
+      `- 來源：${ctx.manual?'使用者自選練習題':'既有觀護人考古題'}`,'',
       '## 本次題目','',mdSafe(ctx.manual?ctx.customPrompt:ctx.questionBody),'',
       ...template.flatMap((part,i)=>[`## ${part[0]}`,'',mdSafe(data.outline[i]),'']),
       '## 完整申論答案','',mdSafe(data.fullAnswer),'',

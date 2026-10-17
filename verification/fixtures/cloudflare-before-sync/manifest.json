@@ -20,12 +20,12 @@
     },
     {
       "name": "data-health.js",
-      "path": "professional/data-health.js",
+      "path": "verification/fixtures/cloudflare-before-sync/data-health.js",
       "sha256": "d6b66b3712dbd6baefaf858819cf69b80a27f477a86fd95d159863664ee89a51"
     },
     {
       "name": "essay-analytics.js",
-      "path": "professional/essay-analytics.js",
+      "path": "verification/fixtures/cloudflare-before-sync/essay-analytics.js",
       "sha256": "e563cbf70bf656729271c733defa965aca92bcc235dc2acbc0cdfc538296b03b"
     },
     {
@@ -45,7 +45,7 @@
     },
     {
       "name": "essay.js",
-      "path": "professional/essay.js",
+      "path": "verification/fixtures/cloudflare-before-sync/essay.js",
       "sha256": "edde057198d4fa3828ad9f7f1e12a0e609cae5861eca1979afd911eac0aa1716"
     },
     {

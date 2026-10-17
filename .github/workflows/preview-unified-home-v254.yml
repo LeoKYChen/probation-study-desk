@@ -47,6 +47,7 @@ jobs:
         run: |
           node verification/unified-browser.cjs cloudflare-main-mirror-dist
           node verification/unified-pwa-upgrade.cjs cloudflare-main-mirror-dist
+          node verification/layout-installed-upgrade.cjs cloudflare-main-mirror-dist
 
   integration:
     needs: webkit-installed-upgrade

@@ -1,0 +1,91 @@
+name: Layout review isolated preview
+
+on:
+  push:
+    branches: [ui/layout-review-20261017]
+  pull_request:
+    branches: [main]
+    paths:
+      - professional/**
+      - common-subjects/**
+      - sw.js
+      - verification/layout-*.cjs
+      - docs/LAYOUT_REVIEW*
+      - .github/workflows/preview-layout-review.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: layout-review-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  layout-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Validate sources, unchanged data and the exact public artifact
+        run: |
+          node verification/unified-integration.cjs
+          node verification/check-daily-v254.cjs
+          node common-subjects/test-v02.cjs
+          node common-subjects/test-staresto.cjs
+          node common-subjects/daily/test-v04.cjs
+          node common-subjects/daily/test-ui-v04.cjs
+          python3 scripts/build-cloudflare-main-mirror.py
+      - name: Install isolated acceptance browsers
+        run: |
+          npm install --prefix /tmp/layout-review-qa --no-save playwright@1.62.1
+          /tmp/layout-review-qa/node_modules/.bin/playwright install --with-deps chromium webkit
+      - name: Check layout, read-only history, rubric data and existing records
+        env:
+          NODE_PATH: /tmp/layout-review-qa/node_modules
+        run: |
+          for engine in chromium webkit; do
+            UNIFIED_BROWSER_ENGINE="$engine" node verification/layout-review-browser.cjs cloudflare-main-mirror-dist
+            UNIFIED_BROWSER_ENGINE="$engine" node verification/unified-browser.cjs cloudflare-main-mirror-dist
+            UNIFIED_BROWSER_ENGINE="$engine" node verification/cloudflare-migration.cjs cloudflare-main-mirror-dist
+            if [ "$engine" = chromium ]; then UNIFIED_BROWSER_ENGINE="$engine" node verification/layout-installed-upgrade.cjs cloudflare-main-mirror-dist; fi
+          done
+      - name: Guard dedicated preview against production and existing previews
+        if: github.event_name == 'push' && github.ref == 'refs/heads/ui/layout-review-20261017'
+        env:
+          CF_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json,os,urllib.request
+          alias='layout-review-20261017'
+          request=urllib.request.Request(
+              'https://api.cloudflare.com/client/v4/accounts/'+os.environ['CF_ACCOUNT_ID']+'/pages/projects/probation-study30-test',
+              headers={'Authorization':'Bearer '+os.environ['CF_API_TOKEN']})
+          with urllib.request.urlopen(request,timeout=30) as response:
+              data=json.load(response)
+          project=data['result']
+          assert data['success'] and project['name']=='probation-study30-test'
+          assert project['production_branch'] and project['production_branch']!=alias
+          assert alias not in {'main','github-main-mirror','home-preview-20261017','v254-unified-preview','unified-home-v254-20261017'}
+          print('PASS: isolated layout alias is separate from production and every existing preview')
+          PY
+      - name: Publish only the new layout preview
+        if: github.event_name == 'push' && github.ref == 'refs/heads/ui/layout-review-20261017'
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy cloudflare-main-mirror-dist --project-name=probation-study30-test --branch=layout-review-20261017 --commit-hash=${{ github.sha }}
+      - name: Verify preview bytes and live interactions
+        if: github.event_name == 'push' && github.ref == 'refs/heads/ui/layout-review-20261017'
+        env:
+          NODE_PATH: /tmp/layout-review-qa/node_modules
+          UNIFIED_TEST_URL: https://layout-review-20261017.probation-study30-test.pages.dev/
+        run: |
+          python3 scripts/verify-published-bytes.py cloudflare-main-mirror-dist "$UNIFIED_TEST_URL"
+          for engine in chromium webkit; do
+            UNIFIED_BROWSER_ENGINE="$engine" node verification/layout-review-browser.cjs cloudflare-main-mirror-dist
+          done

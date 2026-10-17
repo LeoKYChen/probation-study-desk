@@ -20,8 +20,8 @@
   if(!el)return;
   const count=state.total,complete=count===426&&state.primaryCount===374&&state.relatedCount===52&&!state.duplicates.length;
   el.textContent=complete?
-   '選題來源：原站 426 題（主要考古題 374＋相關類科 52）。':
-   '題庫載入狀態：共 '+count+' 題（主要 '+state.primaryCount+'＋相關 '+state.relatedCount+'）；與已核對的原站 426 題版本不同，請檢查來源或更新版次。342 題預測題庫未納入。';
+   '選題來源：原站 426 題。':
+   '題庫載入狀態：共 '+count+' 題（主要 '+state.primaryCount+'＋相關 '+state.relatedCount+'）；與已核對的原站 426 題版本不同，請檢查來源或更新版次。';
   el.dataset.complete=String(complete);
  }
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',show);else show();
