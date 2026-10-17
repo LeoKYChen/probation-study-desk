@@ -24,6 +24,107 @@ footer{border-top:1px solid var(--line);padding:22px 0;margin-top:25px;color:var
 .essay-question .timer button{margin:0;white-space:nowrap;min-width:0}
 .essay-controls select{width:100%;min-width:0}
 @media(max-width:700px){#panelEssay>.layout{grid-template-columns:1fr}.essay-question .timer{grid-template-columns:auto minmax(0,1fr)}.essay-question .timer strong{text-align:right}.essay-question .timer button{width:100%}}
+
+/* Mobile-only layout refinements. Existing scripts, IDs and storage stay unchanged. */
+.staresto-action-links {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:stretch;
+  gap:12px;
+  margin:14px 0;
+}
+.staresto-action-links > .btn {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:12px 18px;
+  text-align:center;
+  line-height:1.5;
+  text-decoration:none;
+  white-space:normal;
+}
+@media (max-width:700px) {
+  #panelEssay .essay-question .timer {
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:10px;
+    align-items:center;
+  }
+  #panelEssay .essay-question .timer > span {min-width:0}
+  #panelEssay .essay-question .timer strong {text-align:right;min-width:0}
+  #panelEssay .essay-question .timer > button {
+    width:100%;
+    min-width:0;
+    min-height:44px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+  }
+  #panelEssay .essay-action-buttons,
+  #panelEssay .version-action-buttons,
+  #panelEssay .compare-action-buttons {
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:10px;
+    align-items:stretch;
+  }
+  #panelEssay .essay-action-buttons > .btn {
+    display:flex;
+    min-width:0;
+    min-height:64px;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    line-height:1.45;
+    overflow-wrap:anywhere;
+  }
+  #panelEssay .version-action-buttons > .btn {
+    width:100%;
+    min-width:0;
+    min-height:44px;
+    text-align:center;
+  }
+  #panelEssay .compare-action-buttons > label {
+    min-width:0;
+    width:100%;
+    margin:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+  }
+  #panelEssay .compare-action-buttons #compareBase {
+    width:100%;
+    min-width:0;
+    min-height:44px;
+    margin-top:6px;
+  }
+  #panelEssay .compare-action-buttons #compareRefresh {
+    min-width:0;
+    width:100%;
+    height:44px;
+    align-self:end;
+    margin:0;
+    text-align:center;
+  }
+  #panelEnglish .staresto-action-links {
+    display:grid;
+    grid-template-columns:minmax(0,1fr);
+    gap:12px;
+    width:100%;
+    max-width:440px;
+  }
+  #panelEnglish .staresto-action-links > .btn {
+    width:100%;
+    min-width:0;
+    min-height:54px;
+    margin:0;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+  }
+}
+
 </style>
 <link rel="stylesheet" href="./staresto.css">
 <link rel="stylesheet" href="../professional/layout-followup.css">
@@ -55,21 +156,23 @@ footer{border-top:1px solid var(--line);padding:22px 0;margin-top:25px;color:var
   </div>
   <div class="layout">
     <aside class="panel essay-controls"><h3>選擇練習</h3><label for="mode">練習模式</label><select id="mode"><option value="sentence">句子精修｜10分鐘</option><option value="paragraph">段落深化｜15分鐘</option><option value="opening">開頭與結尾｜20分鐘</option><option value="full">完整作文｜依題型計時</option></select><label for="essayType">作文題型</label><select id="essayType"><option value="all">全部題目</option><option value="short">短文寫作（20分）</option><option value="long">長文寫作（60分）</option><option value="original">既有12題（原創練習）</option></select></aside><div class="essay-main"><section class="panel essay-question"><label for="prompt">作文題目</label><select id="prompt"></select><div class="prompt"><h3 id="promptTitle"></h3><p id="promptBody"></p><p class="small" id="promptTip"></p><p class="small" id="promptMeta"></p><a class="small" id="promptSource" href="#" rel="noopener noreferrer" target="_blank" hidden>查看命題參考來源（可能為第三方轉錄） ↗</a></div><div class="timer"><span>本次計時</span><strong id="clock">10:00</strong><button class="btn" id="timerToggle">開始</button><button class="btn" id="timerReset">重設</button></div><p class="small">含12題原創題與120題依歷屆命題核心改編的練習題；本站新編題幹，並非考選部或大考中心原卷。</p></section>
-    <div class="panel"><div class="editor-bar"><h3>我的作文</h3><span class="small"><span id="count">0</span> 字（含標點）</span></div><p class="small" id="saveStatus">本機自動保存</p><label for="essayText">作答區</label><textarea id="essayText" placeholder="先寫出真實經驗與觀點，不必刻意使用華麗詞藻。"></textarea><div class="buttons"><button class="btn" id="saveVersion">儲存修訂版本</button><button class="btn primary" id="copyReview">複製 AI 初次批改提示詞</button><button class="btn" id="copyRevision" type="button" disabled>複製訂正複核提示詞</button><button class="btn" id="clearEssay">清空草稿</button></div><p class="small">複製提示詞後，貼到你慣用的 AI 工具批改。</p></div></div>
+    <div class="panel"><div class="editor-bar"><h3>我的作文</h3><span class="small"><span id="count">0</span> 字（含標點）</span></div><p class="small" id="saveStatus">本機自動保存</p><label for="essayText">作答區</label><textarea id="essayText" placeholder="先寫出真實經驗與觀點，不必刻意使用華麗詞藻。"></textarea><div class="buttons essay-action-buttons"><button class="btn" id="saveVersion">儲存修訂版本</button><button class="btn primary" id="copyReview">複製 AI 初次批改提示詞</button><button class="btn" id="copyRevision" type="button" disabled>複製訂正複核提示詞</button><button class="btn" id="clearEssay">清空草稿</button></div><p class="small">複製提示詞後，貼到你慣用的 AI 工具批改。</p></div></div>
   </div>
   <div class="bottom">
-    <div class="panel"><h3>版本紀錄與回饋</h3><label for="version">儲存版本</label><select id="version"><option value="">尚無版本</option></select><div class="buttons"><button class="btn" id="viewVersion">檢視版本</button><button class="btn" id="restoreVersion">還原版本</button></div><pre id="versionPreview" class="vpreview" hidden></pre><label for="feedback">批改回饋</label><textarea id="feedback" placeholder="把 ChatGPT 提供的精修建議貼回來……"></textarea><button class="btn" id="saveFeedback">儲存回饋</button></div>
+    <div class="panel"><h3>版本紀錄與回饋</h3><label for="version">儲存版本</label><select id="version"><option value="">尚無版本</option></select><div class="buttons version-action-buttons"><button class="btn" id="viewVersion">檢視版本</button><button class="btn" id="restoreVersion">還原版本</button></div><pre id="versionPreview" class="vpreview" hidden></pre><label for="feedback">批改回饋</label><textarea id="feedback" placeholder="把 ChatGPT 提供的精修建議貼回來……"></textarea><button class="btn" id="saveFeedback">儲存回饋</button></div>
     <div class="panel"><h3>寫作自我檢查</h3><p class="small">依這次作文表現自評，作為下次練習的參考。</p><div id="rubrics" class="rubric"></div><label for="nextGoal">下次想改善的重點</label><input id="nextGoal" placeholder="例如：把抽象感受寫成具體經驗"><div class="buttons"><button class="btn" id="saveSelf">儲存自評</button></div></div>
   </div>
-  <div class="panel"><h3>初稿與修訂稿對照</h3><p class="small">先按「儲存修訂版本」保存初稿，參考批改回饋修改後，就能對照前後差異。</p><div class="buttons"><label for="compareBase" style="flex:1;min-width:180px;margin:0">對照基準版本<select id="compareBase"><option value="">尚無版本</option></select></label><button class="btn" type="button" id="compareRefresh">更新對照</button></div><div class="compare-grid"><div><strong>原稿（選定的已存版本）</strong><pre id="compareOriginal" class="vpreview">尚未儲存任何版本</pre></div><div><strong>現在的草稿（修訂中）</strong><pre id="compareCurrent" class="vpreview">尚未開始寫作</pre></div></div><p class="small" id="compareSummary">儲存初稿後，就能開始比較。</p></div>
+  <div class="panel"><h3>初稿與修訂稿對照</h3><p class="small">先按「儲存修訂版本」保存初稿，參考批改回饋修改後，就能對照前後差異。</p><div class="buttons compare-action-buttons"><label for="compareBase">對照基準版本<select id="compareBase"><option value="">尚無版本</option></select></label><button class="btn" type="button" id="compareRefresh">更新對照</button></div><div class="compare-grid"><div><strong>原稿（選定的已存版本）</strong><pre id="compareOriginal" class="vpreview">尚未儲存任何版本</pre></div><div><strong>現在的草稿（修訂中）</strong><pre id="compareCurrent" class="vpreview">尚未開始寫作</pre></div></div><p class="small" id="compareSummary">儲存初稿後，就能開始比較。</p></div>
 </section>
 <section id="panelEnglish" hidden>
 <div class="panel" style="border-color:#90bca4;background:#edf6f0">
 <div class="eyebrow">v0.6 · Staresto 個人化英文學習助手</div>
 <h2>每天6個新單字，再做一點 Staresto 練習</h2>
 <p>用15～25分鐘背單字、做指定年度題目，完成後手動登記成績。系統會保留紀錄、排除已做題目並安排到期單字複習。</p>
-<a href="./english-assistant/" class="btn primary" style="display:inline-block;text-decoration:none;padding:12px 18px">開啟今日英文學習任務 →</a>
-<a href="./catalog/" class="btn" style="display:inline-block;text-decoration:none;padding:12px 18px;margin-left:6px">查看 Staresto 資源索引 →</a>
+<div class="staresto-action-links">
+<a href="./english-assistant/" class="btn primary">開啟今日英文學習任務</a>
+<a href="./catalog/" class="btn">查看 Staresto 資源索引</a>
+</div>
 <p class="small">練習題目開啟於 Staresto 原作者網站。</p>
 </div>
 <!-- 原創80題僅暫時隱藏介面；保留題庫與既有本機紀錄以供未來恢復。 -->
