@@ -384,7 +384,7 @@ window.PSD_ESSAY_QUESTIONS = (window.PSD_ESSAY_QUESTIONS || []).concat([
     "score": 20,
     "title": "不說滿與不說清楚",
     "body": "在一場公開演講裡，甲刻意保留停頓讓聽眾思考，乙則省略關鍵資訊使人難以理解。兩人都宣稱運用了「留白」。請根據溝通目的與聽眾需求，分析兩種做法的差異，並提出判斷適當留白的標準。",
-    "requirements": "本站國考短文模擬：350字以內，建議25分鐘；須逐項回應設問。",
+    "requirements": "本站國考短文模擬：250字以內，建議25分鐘；須逐項回應設問。",
     "skills": [
       "區分審美節制與資訊缺失"
     ],
@@ -394,7 +394,8 @@ window.PSD_ESSAY_QUESTIONS = (window.PSD_ESSAY_QUESTIONS || []).concat([
       "year": 115,
       "section": "作文第一題（短文）：藝術留白的意義",
       "link": "https://lawplayer.com/exam/judicial-affairs-legal/115-chinese",
-      "status": "考選部官方年度試題查詢確認科目存在；作文題幹據第三方公開轉錄核對，官方原卷PDF尚未直接查閱"
+      "status": "考選部官方年度試題查詢確認科目存在；作文題幹據第三方公開轉錄核對，官方原卷PDF尚未直接查閱",
+      "officialListing": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=115120&y=2026"
     },
     "adaptation": "由公開考試命題核心及評分資料轉化成新情境、新作答任務；不是官方原卷題目。",
     "original": false
@@ -405,7 +406,7 @@ window.PSD_ESSAY_QUESTIONS = (window.PSD_ESSAY_QUESTIONS || []).concat([
     "score": 20,
     "title": "停頓如何改變對話",
     "body": "兩人爭執時，甲立刻回應使衝突升高，乙先停下來整理情緒，再清楚表達感受。請解釋「反應前的空隙」可能發揮哪些作用，並說明何時持續沉默反而造成問題。",
-    "requirements": "本站國考短文模擬：350字以內，建議25分鐘；須逐項回應設問。",
+    "requirements": "本站國考短文模擬：250字以內，建議25分鐘；須逐項回應設問。",
     "skills": [
       "心理調節與限度"
     ],
@@ -415,7 +416,8 @@ window.PSD_ESSAY_QUESTIONS = (window.PSD_ESSAY_QUESTIONS || []).concat([
       "year": 115,
       "section": "作文第一題（短文）：生活心理留白",
       "link": "https://lawplayer.com/exam/judicial-affairs-legal/115-chinese",
-      "status": "考選部官方年度試題查詢確認科目存在；作文題幹據第三方公開轉錄核對，官方原卷PDF尚未直接查閱"
+      "status": "考選部官方年度試題查詢確認科目存在；作文題幹據第三方公開轉錄核對，官方原卷PDF尚未直接查閱",
+      "officialListing": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=115120&y=2026"
     },
     "adaptation": "由公開考試命題核心及評分資料轉化成新情境、新作答任務；不是官方原卷題目。",
     "original": false
@@ -814,7 +816,8 @@ window.PSD_ESSAY_QUESTIONS = (window.PSD_ESSAY_QUESTIONS || []).concat([
       "year": 115,
       "section": "作文第二題（長文）：留白的力量",
       "link": "https://lawplayer.com/exam/judicial-affairs-legal/115-chinese",
-      "status": "考選部官方年度試題查詢確認科目存在；作文題幹據第三方公開轉錄核對，官方原卷PDF尚未直接查閱"
+      "status": "考選部官方年度試題查詢確認科目存在；作文題幹據第三方公開轉錄核對，官方原卷PDF尚未直接查閱",
+      "officialListing": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=115120&y=2026"
     },
     "adaptation": "由公開考試命題核心及評分資料轉化成新情境、新作答任務；不是官方原卷題目。",
     "original": false
@@ -835,7 +838,8 @@ window.PSD_ESSAY_QUESTIONS = (window.PSD_ESSAY_QUESTIONS || []).concat([
       "year": 115,
       "section": "作文第二題（長文）：留白的力量",
       "link": "https://lawplayer.com/exam/judicial-affairs-legal/115-chinese",
-      "status": "考選部官方年度試題查詢確認科目存在；作文題幹據第三方公開轉錄核對，官方原卷PDF尚未直接查閱"
+      "status": "考選部官方年度試題查詢確認科目存在；作文題幹據第三方公開轉錄核對，官方原卷PDF尚未直接查閱",
+      "officialListing": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=115120&y=2026"
     },
     "adaptation": "由公開考試命題核心及評分資料轉化成新情境、新作答任務；不是官方原卷題目。",
     "original": false
