@@ -37,6 +37,8 @@ jobs:
           assert 'localStorage.clear(' not in data
           assert data.count('class="tile course-tile"')==2
           assert data.count('class="tile explore-tile"')==3
+          assert '晚間學習室樣式參考' in data
+          assert 'date-input-wrap' in data
           assert data.index('課程學習') < data.index('練習與探索')
           explore=data[data.index('<nav class="explore-grid"'):]
           assert explore.index('法律 AI 實驗室') < explore.index('每日模擬') < explore.index('知識補給')
@@ -96,8 +98,10 @@ jobs:
                     const cg=getComputedStyle(document.querySelector('.course-grid'));
                     const eg=getComputedStyle(document.querySelector('.explore-grid'));
                     return {
-                      body:body.backgroundColor,text:body.color,course:course.backgroundColor,
-                      explore:explore.backgroundColor,colsCourse:cg.gridTemplateColumns.split(' ').length,
+                      body:body.backgroundColor,text:body.color,
+                      courseGradient:course.backgroundImage,courseRadius:course.borderRadius,
+                      explore:explore.backgroundColor,exploreAccent:explore.backgroundImage,
+                      exploreRadius:explore.borderRadius,colsCourse:cg.gridTemplateColumns.split(' ').length,
                       colsExplore:eg.gridTemplateColumns.split(' ').length,
                       cards:document.querySelectorAll('.tile').length,
                       headings:[...document.querySelectorAll('section.section h2')].map(n=>n.textContent.trim())
@@ -105,8 +109,11 @@ jobs:
                   });
                   assert.equal(design.body,'rgb(245, 245, 239)',kind+'/'+width+': not v2.5 paper color');
                   assert.equal(design.text,'rgb(36, 59, 53)',kind+'/'+width+': not v2.5 ink');
-                  assert.equal(design.course,'rgb(36, 91, 72)',kind+'/'+width+': wrong course green');
-                  assert.equal(design.explore,'rgb(226, 235, 229)',kind+'/'+width+': wrong exploration color');
+                  assert.match(design.courseGradient,/linear-gradient/,kind+'/'+width+': missing reading-room inspired course gradient');
+                  assert.equal(design.explore,'rgb(255, 255, 255)',kind+'/'+width+': reading-room card should be white');
+                  assert.match(design.exploreAccent,/linear-gradient/,kind+'/'+width+': missing green card accent');
+                  assert.equal(design.courseRadius,'14px',kind+'/'+width+': course card radius');
+                  assert.equal(design.exploreRadius,'14px',kind+'/'+width+': exploration card radius');
                   assert.equal(design.cards,5,kind+'/'+width+': expected 5 navigation cards');
                   assert.deepEqual(design.headings,['課程學習','練習與探索']);
                   assert.equal(design.colsCourse,width<=760?1:2,kind+'/'+width+': course grid count');
