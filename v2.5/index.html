@@ -404,6 +404,16 @@
     grid-column:1 / -1;
     margin-top:4px;
   }
+  /* Link baseline differed from native button text. Center the PDF label. */
+  .study-practice .topbar-tools > a.data-btn[href*="/print/"] {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    white-space:nowrap;
+    overflow-wrap:normal;
+    line-height:1.35;
+  }
 }
 </style>
 <link rel="manifest" href="../manifest.webmanifest"><meta name="theme-color" content="#102a43"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="../pwa/icon-180.png"><link rel="stylesheet" href="../offline.css"><script src="../offline.js" defer></script><script src="../file-compat.js" defer></script>
