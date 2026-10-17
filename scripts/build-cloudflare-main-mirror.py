@@ -28,6 +28,7 @@ ROOT_FILES = {
 }
 SITE_DIRS = {
     "backup",
+    "offline",
     "print",
     "v2.5",
     "professional",
@@ -45,6 +46,7 @@ SOURCE_ONLY = {"juvenile-news/source"}
 DENY_PARTS = {"node_modules", "__pycache__", ".git", ".github"}
 REQUIRED = (
     "index.html",
+    "offline/index.html",
     "print/index.html",
     "print/print-model.js",
     "print/app.js",
