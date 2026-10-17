@@ -11,7 +11,7 @@ assert(base&&base.startsWith('https://'),'Provide a real HTTPS Cloudflare previe
   const page=await context.newPage();
   await page.goto(base+'/offline/',{waitUntil:'load',timeout:30000});
   const button=page.locator('#offline-dialog [data-download]');
-  await button.waitFor({timeout:15000});
+  await button.waitFor({state:'attached',timeout:15000});
   await page.waitForFunction(()=>!document.querySelector('#offline-dialog [data-download]').disabled,{timeout:25000});
   await page.locator('.offline-entry').click();
   await button.click();
