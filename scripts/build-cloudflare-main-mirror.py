@@ -19,6 +19,7 @@ ROOT_FILES = {
     "legacy-home.html",
     "offline.css",
     "offline.js",
+    "file-compat.js",
     "offline-manifest.json",
     "manifest.webmanifest",
     "shared-ui.css",
