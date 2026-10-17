@@ -5,14 +5,14 @@
     {
       "path": "common-subjects/catalog/index.html",
       "base_sha256": "c3993bd106af356f064551ac490795cbefb3ee3b336f2014d38caa34fd083187",
-      "sha256": "822f178b65e55f6107c1669a47ee50de88f5d0de1aba2a5a499ce2b51ed6d92a",
-      "reason": "Shorten development-only introduction; keep source and attribution. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed. [Stage 5 QA] Conditional script content split so HTTPS PWA never prefetches file-only generated JS."
+      "sha256": "b55a66d5e6f1c8028fea589016037ea7fec7c6123dd4c64e8be066b478a50197",
+      "reason": "Shorten development-only introduction; keep source and attribution. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed. [Stage 5 QA] Conditional script content split so HTTPS PWA never prefetches file-only generated JS. [Stage5 final HTML parser fix] Keep functional real script tags while splitting only file-mode document.write strings."
     },
     {
       "path": "common-subjects/daily/index.html",
       "base_sha256": "63f88c07844a9f3d99c738864cb385ea6d744bbb094bb70e7b6bbc9c1d030a1b",
-      "sha256": "e6c92e59fe55a46332e5d154480030c7e55f394c2822f32d1853a60f40487c92",
-      "reason": "Shorten development-version storage explanation; retain replace/backup warning. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed. [Stage 5 QA] Conditional script content split so HTTPS PWA never prefetches file-only generated JS."
+      "sha256": "63b540cc0850cb74151dad626575d02d4f9e76abff92b7f7a98942d83fed9b53",
+      "reason": "Shorten development-version storage explanation; retain replace/backup warning. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed. [Stage 5 QA] Conditional script content split so HTTPS PWA never prefetches file-only generated JS. [Stage5 final HTML parser fix] Keep functional real script tags while splitting only file-mode document.write strings."
     },
     {
       "path": "common-subjects/english-assistant/index.html",
