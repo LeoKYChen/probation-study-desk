@@ -47,3 +47,25 @@
   .timer-actions button{font-size:13px}
   .backup-actions button{font-size:12px;padding-inline:3px}
 }
+
+/* v2.5.4 essay workbench: four independent outline cells + full written answer. */
+.essay-workspace{border-top:1px solid var(--border);margin:22px 0 0;padding-top:18px}
+.essay-workspace-heading{display:flex;align-items:start;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.essay-workspace-heading h3{font-size:19px;color:var(--navy);margin:0}
+.essay-workspace-heading p{font-size:12px;color:var(--muted);margin:3px 0 0}
+.essay-workspace-heading #draftWordCount{font-size:12px;color:var(--muted);white-space:nowrap;align-self:center}
+.essay-draft-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.essay-draft-field{min-width:0;background:#f7faf9;border:1px solid #dce8e4;border-radius:10px;padding:12px}
+.essay-draft-field label{font-size:13px;display:block;font-weight:750;color:var(--navy);margin:0 0 7px}
+.essay-draft-field textarea{min-height:150px;display:block;width:100%;background:white;padding:11px 12px;font-size:14px;line-height:1.75}
+.essay-workspace .answer-heading{margin-top:22px}
+.essay-workspace-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:12px 0 4px}
+.essay-workspace-actions button{min-height:44px;border-radius:8px;border:1px solid var(--border);background:#fff;padding:9px 15px;font-weight:650;white-space:normal}
+.essay-workspace-actions #exportEssayStatus{flex:1}
+@media(max-width:680px){
+  .essay-draft-grid{grid-template-columns:minmax(0,1fr);gap:10px}
+  .essay-draft-field{padding:11px}
+  .essay-draft-field textarea{min-height:118px;font-size:16px}
+  .essay-workspace-heading h3{font-size:18px}
+  .essay-workspace-actions button{width:100%}
+}

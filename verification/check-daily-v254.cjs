@@ -53,6 +53,14 @@ for(const path of ['v2.5/daily-practice.html','v2.5/daily-practice.css','v2.5/da
 assert.equal(assets.length,new Set(assets).size,'duplicate PWA assets');
 assert.ok(read('v2.5/index.html').includes('href="daily-practice.html"'));
 assert.ok(html.includes('href="../daily-simulation/"'),'舊每日題瀏覽連結必須保留');
+const draftIds=['draftIssue','draftBasis','draftAnalysis','draftConclusion','exportEssay'];
+for(const id of draftIds)assert.ok(html.includes('id="'+id+'"'),'missing essay workbench node '+id);
+assert.ok(html.includes('>我的練習紀錄</h3>'));
+assert.ok(script.includes('essayDrafts:readDrafts()'),'four essays should share daily records');
+const older={...newer,essayDrafts:{issues:'爭點',basis:'規範',analysis:'涵攝',conclusion:'結論'}};
+assert.equal(M.backup({format:'probation-daily-github-records',schemaVersion:1,records:{[sample.id]:older}})[sample.id].essayDrafts.conclusion,'結論');
+assert.equal(B.validate(B.create({},{[sample.id]:older})).daily[sample.id].essayDrafts.basis,'規範');
+
 assert.ok(script.includes("const KEY='probation-daily-github:records:v1'"),'必須共用原每日題儲存鍵');
 assert.ok(script.includes('persist({});records={};timers={};writeTimers()'),'只清每日題並重設計時');
 console.log('Daily v2.5.4 regression checks passed ('+d.count+' questions).');

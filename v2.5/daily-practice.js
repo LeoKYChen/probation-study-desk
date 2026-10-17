@@ -21,11 +21,27 @@ function loadTimers(){
 }
 function writeTimers(){try{sessionStorage.setItem(TIMER_KEY,JSON.stringify(timers));}catch{ /* Timer still works in this open page. */ }}
 function persist(next){if(!storageOK)throw Error('原本紀錄不可讀，為防止覆蓋已停止寫入');M.records(next);localStorage.setItem(KEY,JSON.stringify(next));}
+const DRAFT_FIELDS=[['draftIssue','issues','一、題目爭點'],['draftBasis','basis','二、法律或學理依據'],['draftAnalysis','analysis','三、涵攝與實務應用'],['draftConclusion','conclusion','四、結論']];
 function recordFor(id){return records[id]||{answer:'',review:false,updatedAt:''};}
+function readDrafts(){
+  return Object.fromEntries(DRAFT_FIELDS.map(([element,key])=>[key,$(element).value]));
+}
+function draftsFor(record){
+  const drafts=record?.essayDrafts;
+  return drafts&&typeof drafts==='object'&&!Array.isArray(drafts)?drafts:{};
+}
+function updateDraftCount(){
+  const count=DRAFT_FIELDS.reduce((n,[element])=>n+$(element).value.length,0);
+  $('draftWordCount').textContent='草稿 '+count+' 字';
+}
+function hasWrittenRecord(r){
+  if(!r)return false;
+  return Boolean((r.answer||'').trim()||Object.values(draftsFor(r)).some(v=>typeof v==='string'&&v.trim()));
+}
 function updateSummary(){
   if(!bank)return;
   $('count').textContent=bank.questions.length;
-  $('written').textContent=bank.questions.filter(q=>(records[q.id]?.answer||'').trim()).length+' 題已有作答';
+  $('written').textContent=bank.questions.filter(q=>hasWrittenRecord(records[q.id])).length+' 題已有練習紀錄';
 }
 function title(q){return M.title(q);}
 function renderList(){
@@ -35,7 +51,7 @@ function renderList(){
     .sort((a,b)=>b.date.localeCompare(a.date)||a.id.localeCompare(b.id));
   $('matches').textContent='符合條件 '+list.length+' 題';
   $('questionList').innerHTML=list.map(q=>{
-    const r=records[q.id],s=r?.review?'★ 待複習':r?.answer.trim()?'✓ 已作答':'尚未作答';
+    const r=records[q.id],s=r?.review?'★ 待複習':r?.answer?.trim()?'✓ 已作答':hasWrittenRecord(r)?'✓ 已有草稿':'尚未作答';
     return '<button type="button" class="question-entry '+(q.id===current?'active':'')+'" data-id="'+esc(q.id)+'" aria-pressed="'+String(q.id===current)+'">'+
       '<small>'+esc(q.date)+' · '+esc(M.subject(q))+'</small><strong>'+esc(title(q))+'</strong><small>'+esc(s)+'</small></button>';
   }).join('')||'<p class="subtle">沒有符合條件的題目。</p>';
@@ -46,7 +62,7 @@ function flush(){
   if(saveJob){clearTimeout(saveJob);saveJob=0;}
   const q=getQuestion();if(!q)return;
   const old=recordFor(current);
-  const candidate={...old,answer:$('answer').value,review:$('review').checked,aiFeedback:$('aiFeedback').value,updatedAt:new Date().toISOString(),questionSnapshot:M.signature(q)};
+  const candidate={...old,answer:$('answer').value,essayDrafts:readDrafts(),review:$('review').checked,aiFeedback:$('aiFeedback').value,updatedAt:new Date().toISOString(),questionSnapshot:M.signature(q)};
   try{
     persist({...records,[current]:candidate});
     records[current]=candidate;dirty=false;
@@ -72,16 +88,20 @@ function showQuestion(id){
   $('questionTitle').textContent=title(q);
   $('questionText').textContent=q.question;
   $('answer').value=record.answer||'';
+  const drafts=draftsFor(record);
+  for(const [element,key] of DRAFT_FIELDS)$(element).value=typeof drafts[key]==='string'?drafts[key]:'';
+  updateDraftCount();
   $('review').checked=!!record.review;
   $('aiFeedback').value=record.aiFeedback||'';
   $('wordCount').textContent=$('answer').value.length+' 字';
   $('saved').textContent=record.updatedAt?'已讀取既有作答':'尚未作答';
   $('copyStatus').textContent='';
+  $('exportEssayStatus').textContent='';
   $('feedbackStatus').textContent=record.aiFeedback?'已載入本題 AI 評語':'';
   $('issues').textContent=q.issues||'題庫未提供。';
   $('outline').textContent=q.outline||'題庫未提供。';
   $('browseSource').href='../daily-simulation/?subject='+encodeURIComponent(M.subject(q));
-  $('answer').setAttribute('aria-label','我的作答：'+title(q));
+  $('answer').setAttribute('aria-label','完整答案：'+title(q));
   if(record.questionSnapshot&&record.questionSnapshot!==M.signature(q)){
     notice('注意：本題題幹或參考內容曾更新，原答案與 AI 評語仍保留，請重新核對。');
   }
@@ -160,6 +180,40 @@ function download(data,name){
   const url=URL.createObjectURL(blob),a=document.createElement('a');
   a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();
   setTimeout(()=>URL.revokeObjectURL(url),1500);
+}
+function essayMarkdown(q,record){
+  const drafts=draftsFor(record),pieces=[
+    '# 每日模擬題｜'+title(q),
+    '',
+    '- 日期：'+q.date,
+    '- 科目：'+M.subject(q),
+    '- 題目 ID：'+q.id,
+    '',
+    '## 題目',
+    '',
+    q.question,
+    '',
+    '## 四格草稿'
+  ];
+  for(const [,key,label] of DRAFT_FIELDS)pieces.push('','### '+label,'',drafts[key]||'（尚未填寫）');
+  pieces.push('','## 完整答案','',record.answer||'（尚未填寫）');
+  if(record.aiFeedback?.trim())pieces.push('','## AI 批改結果','',record.aiFeedback);
+  return pieces.join('\n')+'\n';
+}
+function exportEssay(){
+  flush();
+  if(dirty){$('exportEssayStatus').textContent='作答尚未保存，請先處理儲存問題。';return;}
+  const q=getQuestion();if(!q)return;
+  const rec=recordFor(current);
+  const safeId=q.id.replace(/[^a-zA-Z0-9_-]/g,'_').slice(0,55);
+  const filename=q.date+'-'+safeId+'-申論練習紀錄.md';
+  try{
+    const url=URL.createObjectURL(new Blob([essayMarkdown(q,rec)],{type:'text/markdown;charset=utf-8'}));
+    const a=document.createElement('a');a.href=url;a.download=filename;
+    document.body.appendChild(a);a.click();a.remove();
+    setTimeout(()=>URL.revokeObjectURL(url),1500);
+    $('exportEssayStatus').textContent='已匯出本題 Markdown。';
+  }catch(error){$('exportEssayStatus').textContent='Markdown 匯出失敗：'+error.message;}
 }
 function backup(){return {format:'probation-daily-github-records',schemaVersion:1,exportedAt:new Date().toISOString(),records};}
 function exportBackup(){
@@ -246,6 +300,8 @@ $('reload').addEventListener('click',()=>load(true));
 $('startTimer').addEventListener('click',startTimer);
 $('resetTimer').addEventListener('click',resetTimer);
 $('answer').addEventListener('input',()=>{$('wordCount').textContent=$('answer').value.length+' 字';scheduleSave();});
+for(const [element] of DRAFT_FIELDS)$(element).addEventListener('input',()=>{updateDraftCount();scheduleSave();});
+$('exportEssay').addEventListener('click',exportEssay);
 $('review').addEventListener('change',scheduleSave);
 $('aiFeedback').addEventListener('input',scheduleSave);
 $('copyAI').addEventListener('click',copyAI);
