@@ -48,7 +48,7 @@
   if(type==='sessions')assert(isObj(parsed)&&parsed.version===1&&isObj(parsed.sessions),'專業科目紀錄格式不符');
   if(type==='common')assert(isObj(parsed)&&parsed.schema===key&&isObj(parsed.drafts)&&isObj(parsed.english),'作文紀錄格式不符');
   if(type==='english')assert(isObj(parsed)&&parsed.schema===key&&['days','completed','excluded','wordDays','wordProgress','customWords'].every(k=>parsed[k]===undefined||isObj(parsed[k])),'英文 v0.6 格式不符');
-  if(type==='oldenglish')assert(isObj(parsed)&&parsed.schema===key&&isObj(parsed.days)&&isObj(parsed.progress)&&isObj(parsed.cards),'舊英文格式不符');
+  if(type==='oldenglish')assert(isObj(parsed)&&parsed.schema==='psd-staresto-v04'&&isObj(parsed.days)&&isObj(parsed.progress)&&isObj(parsed.cards),'舊英文格式不符');
   if(type==='list')assert(Array.isArray(parsed)&&parsed.every(x=>typeof x==='string'&&x.length<300),'收藏或已讀清單格式不符');
   if(type==='font')assert(typeof parsed==='number'&&parsed>=10&&parsed<=40,'閱讀字級超出範圍');
   if(type==='setting')assert(isObj(parsed)&&(!own(parsed,'date')||typeof parsed.date==='string'),'考試倒數設定格式不符');
@@ -124,7 +124,7 @@
     const out=copy(local);
     const sections=kind==='common'?['drafts','english','englishHistory','dailySelections','externalPractice']:
        kind==='english'?['days','completed','excluded','wordDays','wordProgress','customWords']:
-       ['days','progress','cards'];
+       ['days','progress','cards','completedDays'];
     for(const section of sections)if(own(remote,section)){
      if(!own(out,section)){out[section]=copy(remote[section]);continue;}
      if(!isObj(out[section])||!isObj(remote[section])){if(!equal(out[section],remote[section]))conflict(key,[section],out[section],remote[section]);continue;}
