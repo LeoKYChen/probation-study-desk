@@ -9,7 +9,7 @@
 })(typeof window!=='undefined'?window:globalThis,function(){
  'use strict';
  const FORMAT='psd-unified-learning-backup',SCHEMA=1,CONFLICT_KEY='psd-unified-backup-conflicts-v1';
- const MAX_FILE=20*1024*1024,MAX_ITEMS=2000,MAX_CONFLICTS=3500;
+ const MAX_FILE=20*1024*1024,MAX_ITEMS=5000,MAX_CONFLICTS=3500;
  const modules=[
   {key:'probation-study30-v251:v1',name:'專業科目每日30分鐘',kind:'sessions'},
   {key:'probation-study-desk-v24',name:'426題考古題',kind:'records'},
@@ -167,7 +167,7 @@
    for(const [key,raw] of Object.entries(action.changes)){
     assert(allowed.has(key)&&typeof raw==='string','非支援的儲存項目');
     parseValue(key,raw);
-    storage.setItem(key,raw);done.push(key);
+    done.push(key);storage.setItem(key,raw);
     assert(storage.getItem(key)===raw,'瀏覽器沒有保存成功');
    }
   }catch(error){
