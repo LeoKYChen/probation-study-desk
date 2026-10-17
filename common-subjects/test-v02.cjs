@@ -67,6 +67,7 @@ f('prompt').value='72';f('prompt').fire('change');assert.equal(f('clock').textCo
 f('essayText').value='第二批草稿測試，不能覆蓋舊題。';f('essayText').fire('input');f('saveVersion').click();
 assert.match(JSON.parse(filterTest.db[KEY]).drafts['full:72'].text,/第二批草稿測試/);
 f('mode').value='sentence';f('mode').fire('change');assert.equal(f('clock').textContent,'10:00');
+f('prompt').value='12';f('prompt').fire('change');
 f('mode').value='full';f('mode').fire('change');assert.equal(f('clock').textContent,'25:00');
 f('prompt').value='32';f('prompt').fire('change');assert.equal(f('clock').textContent,'55:00');
 assert.equal(g('rubrics').children.length,4);
