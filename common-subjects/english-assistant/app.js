@@ -111,6 +111,17 @@ $("export").addEventListener("click",function(){
     setTimeout(()=>URL.revokeObjectURL(url),1500);
   }catch(err){notice("匯出備份失敗，請檢查瀏覽器權限。")}
 });
+$("importFile").addEventListener("change",async function(){
+  const file=this.files&&this.files[0];this.value="";
+  if(!file||readOnly)return;
+  try{
+    if(file.size>2*1024*1024)throw Error("檔案超過2MB；為保護瀏覽器資料，已取消匯入。");
+    const input=JSON.parse(await file.text());
+    const draft=core.mergeBackup(state,input);
+    if(!confirm("確認合併此 v0.6 備份？本站會保留既有任務、單字和作答紀錄；建議匯入前先匯出目前備份。"))return;
+    if(save(draft)){notice("已合併備份；現有資料未清除。");render()}
+  }catch(err){notice("未匯入備份："+String(err.message||err))}
+});
 $("addPersonalWord").addEventListener("click",function(){
   if(readOnly)return;
   try{
