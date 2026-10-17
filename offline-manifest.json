@@ -23,12 +23,6 @@
       "url": "backup/index.html"
     },
     {
-      "url": "backup/test-browser.cjs"
-    },
-    {
-      "url": "backup/test.cjs"
-    },
-    {
       "url": "backup/unified-core.js"
     },
     {
@@ -125,9 +119,6 @@
       "url": "common-subjects/catalog/style.css"
     },
     {
-      "url": "common-subjects/catalog/test_browser.cjs"
-    },
-    {
       "url": "common-subjects/daily/app.js"
     },
     {
@@ -155,12 +146,6 @@
       "url": "common-subjects/daily/style.css"
     },
     {
-      "url": "common-subjects/daily/test-ui-v04.cjs"
-    },
-    {
-      "url": "common-subjects/daily/test-v04.cjs"
-    },
-    {
       "url": "common-subjects/daily/vocab.json"
     },
     {
@@ -171,15 +156,6 @@
     },
     {
       "url": "common-subjects/english-assistant/index.html"
-    },
-    {
-      "url": "common-subjects/english-assistant/test-browser.cjs"
-    },
-    {
-      "url": "common-subjects/english-assistant/test-vocab.cjs"
-    },
-    {
-      "url": "common-subjects/english-assistant/test.cjs"
     },
     {
       "url": "common-subjects/english-assistant/vocab.js"
@@ -207,12 +183,6 @@
     },
     {
       "url": "common-subjects/staresto.css"
-    },
-    {
-      "url": "common-subjects/test-staresto.cjs"
-    },
-    {
-      "url": "common-subjects/test-v02.cjs"
     },
     {
       "url": "daily-simulation/app.js"
@@ -303,12 +273,6 @@
     },
     {
       "url": "print/style.css"
-    },
-    {
-      "url": "print/test-browser.cjs"
-    },
-    {
-      "url": "print/test.cjs"
     },
     {
       "url": "professional/ai-review-links.js"
