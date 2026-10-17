@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'none'; script-src 'none'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>v2.7｜分項驗收總表（研究用）</title>
+<style>
+  :root {font-family:system-ui,-apple-system,"Noto Sans TC","PingFang TC",sans-serif;color-scheme:light}
+  * {box-sizing:border-box}
+  body {margin:0;background:#f7f8fa;color:#142235;line-height:1.65}
+  main {max-width:1040px;margin:auto;padding:28px 16px 52px}
+  h1 {margin:0 0 12px;font-size:clamp(1.55rem,3vw,2rem)}
+  h2 {font-size:1.18rem;margin:24px 0 10px}
+  p {margin:0 0 12px}
+  .eyebrow {font-size:.82rem;font-weight:700;letter-spacing:.09em;color:#526073;margin-bottom:8px}
+  .intro,.section {background:white;border:1px solid #dce2e8;border-radius:12px;padding:22px;margin-top:15px}
+  .notice {border-left:4px solid #6b7685;padding:10px 14px;background:#f2f4f6;margin-top:14px}
+  .stats {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:16px}
+  .stat {border:1px solid #e2e7ec;border-radius:9px;padding:14px}
+  .stat strong {display:block;font-size:1.32rem;line-height:1.25}
+  .stat small {color:#596578}
+  .table-wrap {overflow-x:auto}
+  table {width:100%;border-collapse:collapse;font-size:.91rem;min-width:640px}
+  th {text-align:left;font-weight:700;background:#f2f5f8}
+  td,th {padding:11px 12px;border-bottom:1px solid #e0e6ec;vertical-align:top}
+  td:nth-child(2) {font-weight:650}
+  .pill {display:inline-block;border:1px solid #b7c2cf;border-radius:18px;padding:1px 9px;font-size:.78rem;font-weight:600;white-space:nowrap}
+  .pending {border-style:dashed}
+  .muted {color:#586578;font-size:.88rem}
+  a {color:#245b96;text-underline-offset:2px}
+  a:focus-visible {outline:3px solid #1d75cc;outline-offset:3px}
+  ul {padding-left:22px}
+  li {margin:6px 0}
+  footer {font-size:.85rem;color:#5b6678;margin-top:24px}
+  @media(max-width:600px){.stats{grid-template-columns:1fr}.intro,.section{padding:16px}}
+</style>
+</head>
+<body>
+<main>
+  <header class="intro">
+    <p class="eyebrow">STAGE 3Q · 隔離研究分支 · 2026-10-17</p>
+    <h1>v2.7｜功能分級驗收總表</h1>
+    <p>根據先前驗收紀錄整理各功能的已核對範圍與限制。這是離線審查頁面，<strong>不是已部署的 v2.7，也不是即時官網來源查核。</strong></p>
+    <div class="notice"><strong>目前不可上線個別裁判功能。</strong> 不得將「抽樣文字一致」解讀成「目前仍公開、裁判已確定、允許保存全文或提供個別連結」。</div>
+    <div class="stats" aria-label="既有驗收摘要">
+      <div class="stat"><strong>20／20</strong><small>法規指定抽樣；非現行法全庫保證</small></div>
+      <div class="stat"><strong>17 + 4</strong><small>函釋：17 全文、4 僅官方要旨</small></div>
+      <div class="stat"><strong>0</strong><small>已獨立驗證的真實裁判 PDF 全文</small></div>
+    </div>
+  </header>
+
+  <section class="section" aria-labelledby="category">
+    <h2 id="category">分項驗收與下一步</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">功能</th><th scope="col">既有成果</th><th scope="col">限制／阻擋</th><th scope="col">可採取的下一步</th></tr></thead>
+        <tbody>
+          <tr><td>法規檢索與歷史條文</td><td><span class="pill">20 件指定樣本通過</span></td><td>修正日不等於施行日；快照可能過時</td><td>進行獨立功能審查、現行法更新及法規版本處理</td></tr>
+          <tr><td>行政函釋</td><td><span class="pill">有限範圍通過</span> 17 件全文、4 件僅要旨</td><td>不得偽稱 21 件全文已驗；現行效力尚待查證</td><td>區分「官方全文／官方要旨／站方摘要」並標示效力未確認</td></tr>
+          <tr><td>憲法解釋與裁判</td><td><span class="pill">僅抽樣片段</span></td><td>個別片段命中 3／4；理由與意見書未全面核對</td><td>標示來源層級，維持有限範圍審查</td></tr>
+          <tr><td>立法沿革與理由</td><td><span class="pill">指定兩條法條</span></td><td>不能推論所有條文或施行日期</td><td>另行逐條建立可驗證的版本資料</td></tr>
+          <tr><td>公開裁判 HTML</td><td><span class="pill pending">當次文字擷取抽樣一致</span></td><td>現時公開、後續撤除及全文再利用仍未驗證</td><td>研究成果保留；不公開個案深連結或全文</td></tr>
+          <tr><td>歷審清單</td><td><span class="pill pending">10 件清單一致；7 件關聯裁判可回查</span></td><td>27 項歷審不是 27 件完整裁判，不能推論已確定</td><td>確定及完整上訴鏈獨立驗收</td></tr>
+          <tr><td>裁判 PDF</td><td><span class="pill pending">84 項離線合成測試</span></td><td>實際 PDF 原文、官方來源授權、逐頁獨立核對仍為零</td><td>保留全文未核實，不接入真實檔案</td></tr>
+          <tr><td>即時公開／更新／撤除</td><td><span class="pill pending">只有模擬測試</span></td><td>未建立可信 24 小時查核、實際清除與備份管理</td><td>完成可信來源及資料生命週期驗收前持續阻擋</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted">「抽樣通過」及「可進入獨立審查」不等於合併、部署或對外提供功能的許可。此頁內容固定，不自動更新。</p>
+  </section>
+
+  <section class="section">
+    <h2>裁判類別的安全顯示方式</h2>
+    <p><strong>目前統一採官方通用入口：</strong>若使用者想查個別裁判，請自行前往 <a href="https://judgment.judicial.gov.tw/FJUD/" rel="noopener noreferrer">司法院裁判書系統</a>。本站不提供未經核實的個案深連結、裁判全文或 PDF。</p>
+    <p><strong>推薦的 PDF 提示：</strong>「司法院可能提供 PDF；本站尚未獨立核對全文，請至官方系統確認。」</p>
+    <p><strong>推薦的函釋提示：</strong>「此件如僅有官方要旨，不得標示為原始公文全文；現行效力尚待查證。」</p>
+  </section>
+
+  <section class="section">
+    <h2>驗收證據及來源</h2>
+    <ul>
+      <li><a href="https://github.com/LeoKYChen/probation-study-desk/blob/experiment/v27-mcp-stage3q/experiments/v27-mcp-poc/STAGE1_ACCEPTANCE.md">法規階段</a>、<a href="https://github.com/LeoKYChen/probation-study-desk/blob/experiment/v27-mcp-stage3q/experiments/v27-mcp-poc/STAGE2_ACCEPTANCE.md">函釋階段</a></li>
+      <li><a href="https://github.com/LeoKYChen/probation-study-desk/blob/experiment/v27-mcp-stage3q/experiments/v27-mcp-poc/STAGE3B_FINDINGS.md">憲法／立法範圍</a>、<a href="https://github.com/LeoKYChen/probation-study-desk/blob/experiment/v27-mcp-stage3q/experiments/v27-mcp-poc/STAGE3M_RESULT.md">裁判 HTML</a>、<a href="https://github.com/LeoKYChen/probation-study-desk/blob/experiment/v27-mcp-stage3q/experiments/v27-mcp-poc/STAGE3K_RESULT.md">歷審關聯</a></li>
+      <li><a href="https://github.com/LeoKYChen/probation-study-desk/blob/experiment/v27-mcp-stage3q/experiments/v27-mcp-poc/STAGE3P_RESULT.md">PDF 官方規範、更新撤除及未上線事項</a></li>
+    </ul>
+  </section>
+  <footer>研究原型 · 不含真實裁判資料、不使用任何官方會員 API、不作個案確定或持續公開之保證。v2.5 與既有 v2.7 並未因本頁而修改。</footer>
+</main>
+</body>
+</html>
