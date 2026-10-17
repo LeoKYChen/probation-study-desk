@@ -62,6 +62,26 @@ const engine=process.env.TEST_BROWSER==='webkit'?webkit:chromium;
   await page.waitForFunction(()=>Object.values(JSON.parse(localStorage.getItem('probation-study-desk-v24')||'{}')).some(v=>String(v.issue||'').includes('ZIP斷網考古題涵攝測試')),null,{timeout:15000});
   await page.reload({waitUntil:'load'});
   assert.match(await page.locator('#issueInput').inputValue(),/ZIP斷網考古題涵攝測試/);
+  // Browser-native JSON download and fresh-profile import must work directly from file://.
+  const event=page.waitForEvent('download');
+  await page.locator('#exportButton').click();
+  const download=await event;
+  const exportFile=path.join('/tmp','stage5-original-v25-'+process.env.TEST_BROWSER+'.json');
+  await download.saveAs(exportFile);
+  const exported=JSON.parse(fs.readFileSync(exportFile,'utf8'));
+  assert.equal(exported.format,'probation-study-desk-sync','use the original v2.5 backup format');
+  assert(Object.values(exported.study).some(q=>String(q.issue||'').includes('ZIP斷網考古題涵攝測試')));
+  const clean=await browser.newContext({locale:'zh-TW',viewport:{width:390,height:844},acceptDownloads:true});
+  await clean.route(/^https?:/,r=>{requests.push(r.request().url());r.abort('internetdisconnected')});
+  const restorePage=await clean.newPage();
+  restorePage.on('dialog',d=>d.accept());
+  restorePage.on('pageerror',e=>errors.push(String(e)));
+  await restorePage.goto('file://'+path.join(root,'v2.5/index.html'),{waitUntil:'load'});
+  await restorePage.locator('#importFile').setInputFiles({name:'original-backup.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(exported))});
+  await restorePage.waitForFunction(()=>Object.values(JSON.parse(localStorage.getItem('probation-study-desk-v24')||'{}')).some(v=>String(v.issue||'').includes('ZIP斷網考古題涵攝測試')),null,{timeout:16000});
+  await restorePage.reload({waitUntil:'load'});
+  assert.match(await restorePage.locator('#issueInput').inputValue(),/ZIP斷網考古題涵攝測試/);
+  await clean.close();
   // Original v2.5 daily practice and common-subject daily English must load JSON offline.
   await page.goto('file://'+path.join(root,'v2.5/daily-practice.html'),{waitUntil:'load'});
   await page.waitForFunction(()=>document.querySelector('#count')?.textContent.includes('125'),null,{timeout:15000});
