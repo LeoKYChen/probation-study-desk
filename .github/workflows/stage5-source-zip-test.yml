@@ -1,0 +1,104 @@
+name: Stage 5 original GitHub ZIP file URL acceptance
+
+on:
+  push:
+    branches:
+      - feature/stage5-file-zip-offline-20261018
+    paths:
+      - file-compat.js
+      - file-data/**
+      - scripts/generate-file-data.cjs
+      - verification/stage5-file-zip-browser.cjs
+      - .github/workflows/stage5-source-zip-test.yml
+      - index.html
+      - professional/index.html
+      - common-subjects/**
+      - daily-simulation/**
+      - juvenile-news/**
+      - v2.5/**
+      - backup/**
+      - print/**
+  pull_request:
+    branches: [main]
+    paths:
+      - file-compat.js
+      - file-data/**
+      - scripts/generate-file-data.cjs
+      - verification/stage5-file-zip-browser.cjs
+      - .github/workflows/stage5-source-zip-test.yml
+      - index.html
+      - professional/index.html
+      - common-subjects/**
+      - daily-simulation/**
+      - juvenile-news/**
+      - v2.5/**
+      - backup/**
+      - print/**
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: stage5-original-github-zip-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  original-zip-file-url:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v6
+      - name: Verify generated sources and original five study entrances
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check file-compat.js
+          node --check scripts/generate-file-data.cjs
+          node --check juvenile-news/file-reader.js
+          node --check verification/stage5-file-zip-browser.cjs
+          node scripts/generate-file-data.cjs --check
+          python3 scripts/build-cloudflare-main-mirror.py
+          test -s cloudflare-main-mirror-dist/file-compat.js
+          cmp file-compat.js cloudflare-main-mirror-dist/file-compat.js
+          sha256sum professional/index.html common-subjects/index.html common-subjects/catalog/index.html common-subjects/daily/index.html common-subjects/english-assistant/index.html
+      - name: Reproduce GitHub Code Download ZIP from the committed repo (no special build)
+        shell: bash
+        run: |
+          set -euo pipefail
+          git archive --format=zip --output=/tmp/stage5-github-source.zip HEAD
+          mkdir -p /tmp/stage5-extracted
+          cd /tmp/stage5-extracted
+          unzip -q /tmp/stage5-github-source.zip
+          test -s index.html
+          test -s professional/index.html
+          test -s common-subjects/index.html
+          test -s daily-simulation/index.html
+          test -s juvenile-news/index.html
+          test -s file-data/daily.generated.js
+          test -s file-data/weekly.generated.js
+          test -s file-data/english.generated.js
+          test -s file-data/catalog.generated.js
+          echo "PASS plain GitHub source ZIP contains root index and all original study entrances"
+      - name: Install isolated Chromium and Safari WebKit
+        shell: bash
+        run: |
+          npm install --prefix /tmp/stage5-source-browser --no-save playwright@1.62.1
+          /tmp/stage5-source-browser/node_modules/.bin/playwright install --with-deps chromium webkit
+      - name: Chromium completely disconnected file URL browser test
+        env:
+          NODE_PATH: /tmp/stage5-source-browser/node_modules
+          TEST_BROWSER: chromium
+        run: node verification/stage5-file-zip-browser.cjs /tmp/stage5-extracted
+      - name: WebKit file URL browser test with all external network blocked
+        env:
+          NODE_PATH: /tmp/stage5-source-browser/node_modules
+          TEST_BROWSER: webkit
+        run: node verification/stage5-file-zip-browser.cjs /tmp/stage5-extracted
+      - name: Attach exact GitHub-source ZIP for user's isolated trial
+        uses: actions/upload-artifact@v4
+        with:
+          name: stage5-original-github-source-zip-test
+          path: /tmp/stage5-github-source.zip
+          if-no-files-found: error
+          retention-days: 14
