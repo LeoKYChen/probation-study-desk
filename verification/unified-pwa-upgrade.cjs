@@ -7,12 +7,13 @@ const root=path.resolve(process.argv[2]||'.');
 const fixture=path.join(__dirname,'fixtures/legacy-main-sw.js');
 const audit=JSON.parse(fs.readFileSync(path.join(__dirname,'../docs/MAIN_MIRROR_BYTE_AUDIT_20261017.json')));
 assert.equal(crypto.createHash('sha256').update(fs.readFileSync(fixture)).digest('hex'),audit.files.find(row=>row.file==='sw.js').expected,'fixture is the exact main baseline worker');
-let upgraded=false;
+let upgraded=false,failRoot=false;
 const types={'.html':'text/html;charset=utf-8','.js':'text/javascript;charset=utf-8','.css':'text/css;charset=utf-8','.json':'application/json;charset=utf-8','.webmanifest':'application/manifest+json'};
 const server=http.createServer((req,res)=>{
  const url=new URL(req.url,'http://localhost');let pathname=decodeURIComponent(url.pathname);
  if(pathname.startsWith('/probation-study-desk/'))pathname=pathname.slice('/probation-study-desk'.length);
  if(pathname.endsWith('/'))pathname+='index.html';
+ if(failRoot&&pathname==='/index.html'){res.writeHead(503).end('simulated homepage outage');return;}
  let file=path.resolve(root,'.'+pathname);
  if(!file.startsWith(root+path.sep)){res.writeHead(403).end();return;}
  if(!upgraded&&pathname==='/index.html')file=path.join(root,'legacy-home.html');
@@ -24,7 +25,7 @@ const server=http.createServer((req,res)=>{
  let context;const profiles=[];
  try{
   for(const prefix of ['/','/probation-study-desk/']){
-   upgraded=false;const base='http://127.0.0.1:'+server.address().port+prefix;
+   upgraded=false;failRoot=false;const base='http://127.0.0.1:'+server.address().port+prefix;
    const profile=fs.mkdtempSync(path.join(os.tmpdir(),'probation-pwa-upgrade-'));profiles.push(profile);
    context=await playwright[engine].launchPersistentContext(profile,{headless:true,...(process.env.BROWSER_EXECUTABLE?{executablePath:process.env.BROWSER_EXECUTABLE}:{}),viewport:{width:390,height:844},locale:'zh-TW',timezoneId:'Asia/Taipei'});
    const page=context.pages()[0]||await context.newPage();page.setDefaultTimeout(15000);
@@ -44,10 +45,10 @@ const server=http.createServer((req,res)=>{
     registration.active.postMessage({type:'download'},[channel.port2]);
    }));
    assert(snapshot.count>=75,'actual baseline manifest was downloaded');
-   await page.reload();assert.equal(await page.locator('a.tile').count(),0,'old snapshot is installed');
+   const oldResponse=await page.reload();assert.equal(await page.locator('a.tile').count(),0,'old snapshot is installed');
+   const cachedHome=await oldResponse.text();assert.equal(cachedHome,fs.readFileSync(path.join(root,'legacy-home.html'),'utf8'),'worker serves exact baseline home');
    const cachesBefore=await page.evaluate(()=>caches.keys());
-   const cachedHome=await page.evaluate(async name=>(await (await caches.open(name)).match(new URL('index.html',location.href))).text(),snapshot.cacheName);
-   assert(cachedHome.includes('id="subjects"'),'actual old home exists in snapshot');
+
    // WebKit network emulation cannot reliably reload a worker-controlled page.
    // Its online upgrade and exact stored cache contents are tested below.
    if(engine==='chromium'){await context.setOffline(true);await page.reload();assert.equal(await page.locator('#subjects .card').count()>0,true,'existing offline snapshot retained');await context.setOffline(false);}
@@ -59,9 +60,17 @@ const server=http.createServer((req,res)=>{
    assert.equal(await page.locator('a.tile').count(),5,'connected upgraded worker must show unified home instead of cached legacy home');
    const after=await page.evaluate(()=>Object.fromEntries(Object.keys(localStorage).map(key=>[key,localStorage.getItem(key)])));
    assert.deepEqual(after,before,'root upgrade preserves every stored value');
-   const retainedCache=await page.evaluate(async name=>{const cache=await caches.open(name);const response=await cache.match(new URL('index.html',location.href));return {home:response?await response.text():null,keys:await caches.keys(),urls:(await cache.keys()).map(r=>r.url),location:location.href};},snapshot.cacheName);
-   if(retainedCache.home===null)console.log('PWA_CACHE_DIAGNOSTIC',JSON.stringify({snapshot: snapshot.cacheName,...retainedCache}));
-   assert(retainedCache.home===cachedHome,'old snapshot is retained byte for byte');
+   const retainedSnapshot=await page.evaluate(()=>new Promise(async(resolve,reject)=>{
+    const registration=await navigator.serviceWorker.getRegistration(),channel=new MessageChannel();
+    const timer=setTimeout(()=>reject(Error('snapshot status timed out')),10000);
+    channel.port1.onmessage=({data})=>{clearTimeout(timer);channel.port1.close();if(data.type==='error')reject(Error(data.message));else resolve(data.state);};
+    registration.active.postMessage({type:'status'},[channel.port2]);
+   }));
+   assert.deepEqual(retainedSnapshot,snapshot,'worker verifies every old cached URL is still present');
+   failRoot=true;
+   const fallback=await page.reload();assert.equal(await fallback.text(),cachedHome,'on server failure actual worker returns exact old snapshot bytes');
+   assert.equal(await page.locator('a.tile').count(),0,'old snapshot remains usable without clearing records');
+   failRoot=false;await page.reload();assert.equal(await page.locator('a.tile').count(),5,'online recovery returns unified home');
    await page.goto(new URL('index.html?from=installed',base).href);assert.equal(await page.locator('a.tile').count(),5,'explicit index route also refreshes online');
    assert.equal(await page.locator('#countdown-date-caption').innerText(),'2027/08/14');
    // Root worker and nested professional worker coexist without deleting old caches.
