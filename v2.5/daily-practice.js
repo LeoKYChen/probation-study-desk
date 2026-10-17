@@ -86,7 +86,7 @@ function showQuestion(id){
     notice('注意：本題題幹或參考內容曾更新，原答案與 AI 評語仍保留，請重新核對。');
   }
   renderList();updateTimer();
-  window.scrollTo({top:0,behavior:'smooth'});
+  $('workspace').scrollIntoView({block:'start',behavior:'smooth'});
 }
 function formatSeconds(seconds){return String(Math.floor(seconds/60)).padStart(2,'0')+':'+String(seconds%60).padStart(2,'0');}
 function updateTimer(){
@@ -194,7 +194,7 @@ function clearRecords(){
   if(!exportBackup())return;
   if(!confirm('已啟動備份下載。請確認有保存下載檔案。\n確定清除每日模擬題全部學習紀錄？此操作無法自動復原。'))return;
   try{
-    persist({});records={};
+    persist({});records={};timers={};writeTimers();
     if(current){const id=current;current='';showQuestion(id);}else renderList();
     notice('每日模擬題作答與 AI 評語已清除；考古題及題庫未變更。');
   }catch(error){notice('清除失敗，原紀錄保留：'+error.message,true);}
