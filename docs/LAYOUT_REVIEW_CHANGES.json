@@ -23,8 +23,8 @@
     {
       "path": "common-subjects/index.html",
       "base_sha256": "d9b28afda56727a618a6043d3000b45ae4c0004353dc1d1dda7d02e879587c8f",
-      "sha256": "9e8c4e00034fce09c7ca59909e53e475ad283149b6d00129c474a0bf5ec9fcd3",
-      "reason": "Slides 4–7: remove callout/icons, widen topic and editor, repair timer layout; shorten development prose. Slide 19: remove records icon and make both visible stats fill the row. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed. [Mobile RWD seven-item review] Presentation-only CSS and centered labels; no storage, questions, or event handlers changed."
+      "sha256": "caf348b62102ed799b87b06fcc6db7a07fc1ca18df4539deb20d43a10c33396b",
+      "reason": "Slides 4–7: remove callout/icons, widen topic and editor, repair timer layout; shorten development prose. Slide 19: remove records icon and make both visible stats fill the row. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed. [Mobile RWD seven-item review] Presentation-only CSS and centered labels; no storage, questions, or event handlers changed. [Safari RWD measured height correction: 52px version selector and comparison button.]"
     },
     {
       "path": "professional/data-health.js",
