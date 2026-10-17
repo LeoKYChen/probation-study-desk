@@ -199,3 +199,64 @@ jobs:
             console.log('PASS: live HTTPS mobile countdown open, save, reload, modify, reset, existing record untouched, no overflow or JS errors');
           })().catch(e=>{console.error('FAIL live homepage countdown test',e);process.exit(1)});
           NODE
+
+      - name: Audit five live destination sites
+        env:
+          NODE_PATH: /tmp/home-preview-qa/node_modules
+        shell: bash
+        run: |
+          node <<'NODE'
+          const assert=require('node:assert/strict');
+          const {chromium}=require('playwright');
+          const destinations=[
+            ['專業科目','https://v254-unified-preview.probation-study30-test.pages.dev/'],
+            ['共同科目','https://leokychen.github.io/probation-study-desk/common-subjects/'],
+            ['法律 AI 實驗室','https://probation-legal-ai-test.pages.dev/'],
+            ['每日模擬','https://leokychen.github.io/probation-study-desk/daily-simulation/'],
+            ['知識補給','https://leokychen.github.io/probation-study-desk/juvenile-news/']
+          ];
+          (async()=>{
+            const browser=await chromium.launch({headless:true});
+            let failures=0;
+            try{
+              const context=await browser.newContext({viewport:{width:1280,height:800},locale:'zh-TW'});
+              const home=await context.newPage();
+              await home.goto('https://home-preview-20261017.probation-study30-test.pages.dev/',{waitUntil:'domcontentloaded'});
+              const links=await home.locator('a.tile').evaluateAll(nodes=>nodes.map(el=>({
+                href:el.href,label:el.innerText.trim(),target:el.target,rel:el.rel
+              })));
+              assert.equal(links.length,5);
+              for(const [label,url] of destinations){
+                const link=links.find(x=>x.href===url);
+                assert(link,'Missing homepage link: '+label);
+                assert.equal(link.target,'_blank',label+': should open in separate tab');
+                assert(link.rel.includes('noopener'),label+': missing noopener');
+                const target=await context.newPage();
+                let status='N/A',title='',textSize=0,finalUrl='',error='';
+                try{
+                  const response=await target.goto(url,{waitUntil:'domcontentloaded',timeout:30000});
+                  status=response?.status()??'NO_HTTP_RESPONSE';
+                  title=await target.title();
+                  finalUrl=target.url();
+                  await target.waitForTimeout(750);
+                  textSize=await target.locator('body').innerText().then(x=>x.trim().length).catch(()=>0);
+                  if(status!==200 || title.trim().length<2 || textSize<20){
+                    failures++;
+                    error='Non-200, missing page title or empty page body';
+                  }
+                }catch(e){failures++;error=String(e).slice(0,240)}
+                console.log('ENTRY_RESULT '+JSON.stringify({label,url,status,title,finalUrl,textSize,error}));
+                await target.close();
+              }
+              for(const label of ['專業科目','共同科目','每日模擬','知識補給','法律 AI 實驗室']){
+                const link=home.locator('a.tile').filter({hasText:label}).first();
+                const [popup]=await Promise.all([home.waitForEvent('popup',{timeout:10000}),link.click()]);
+                console.log('LINK_CLICK '+JSON.stringify({label,opened:popup.url()}));
+                await popup.close();
+              }
+              await context.close();
+            }finally{await browser.close()}
+            assert.equal(failures,0,failures+' destination entries failed live audit');
+            console.log('PASS: all five live entries reachable, nonempty, new-tab links, and no navigation regressions');
+          })().catch(e=>{console.error('ENTRY_AUDIT_FAILED',e);process.exit(1)});
+          NODE
