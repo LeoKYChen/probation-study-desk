@@ -30,3 +30,6 @@
 .essay-timer-actions button:last-child{background:#fff;color:#2d6657}
 .essay-timer-actions button:disabled{opacity:.5;cursor:default}
 @media(max-width:680px){.essay-draft-grid{grid-template-columns:minmax(0,1fr);gap:10px}.essay-draft-field{padding:11px}.essay-ai-panel{padding:14px}.essay-timer{align-items:stretch}.essay-timer-actions button{flex:1}.essay-export-actions button{width:100%}.answer-section .essay-draft-field textarea{min-height:110px}}
+
+/* Prevent 100% width textareas plus padding from overflowing narrow iPhone dialogs. */
+.answer-section textarea{box-sizing:border-box}
