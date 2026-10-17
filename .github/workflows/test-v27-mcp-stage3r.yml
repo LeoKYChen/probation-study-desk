@@ -1,0 +1,163 @@
+name: v2.7 MCP stage 3r law and interpretation source-tier offline UI
+
+on:
+  push:
+    branches:
+      - experiment/v27-mcp-stage3r
+    paths:
+      - 'experiments/v27-mcp-poc/stage3r-demo/**'
+      - 'experiments/v27-mcp-poc/STAGE3R.md'
+      - '.github/workflows/test-v27-mcp-stage3r.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  synthetic-source-ui:
+    name: Verify offline source levels, synthetic-only content and release blockers
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    env:
+      JUDICIAL_API_LIVE_ENABLED: 'false'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Check CommonJS scoping in the otherwise ESM application repository
+        run: |
+          node --version
+          node - <<'JS'
+          const fs = require('node:fs');
+          const path = './experiments/v27-mcp-poc/stage3r-demo/package.json';
+          if (JSON.parse(fs.readFileSync(path,'utf8')).type !== 'commonjs')
+            throw new Error('Stage3r UMD scope must be CommonJS under the ESM root');
+          for (const file of ['model.js','app.js','model.test.cjs']) {
+            if (!fs.existsSync('./experiments/v27-mcp-poc/stage3r-demo/'+file))
+              throw new Error('missing '+file);
+          }
+          console.log('Stage3r standalone package files found');
+          JS
+          node --check experiments/v27-mcp-poc/stage3r-demo/model.js
+          node --check experiments/v27-mcp-poc/stage3r-demo/app.js
+          node --check experiments/v27-mcp-poc/stage3r-demo/model.test.cjs
+      - name: Stage3r sourced-tier, date, abstract-only and offline HTML tests
+        working-directory: experiments/v27-mcp-poc/stage3r-demo
+        run: node --test --test-reporter=tap model.test.cjs | tee "$RUNNER_TEMP/stage3r-tests.log"
+      - name: Check previous immutable Stage3q no-deployment safety decisions
+        run: |
+          node --test --test-reporter=tap experiments/v27-mcp-poc/stage3q-readiness-ledger.test.cjs | tee "$RUNNER_TEMP/stage3q-tests.log"
+      - name: Independently verify static no network, fake IDs and official distinction
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import json
+          root=Path("experiments/v27-mcp-poc/stage3r-demo")
+          page=(root/"index.html").read_text(encoding="utf-8")
+          app=(root/"app.js").read_text(encoding="utf-8")
+          source=(root/"model.js").read_text(encoding="utf-8")
+          for item in ("connect-src 'none'", "form-action 'none'", "frame-src 'none'",
+                       "object-src 'none'", "script-src 'self'", "aria-pressed"):
+              assert item in page, item
+          for keyword in ("修正公布日", "施行日", "官方全文", "官方要旨",
+                          "本站摘要", "現行效力", "人工合成", "20", "17", "4"):
+              assert keyword in page, keyword
+          assert app.count("TEST_LAW_SYNTHETIC_")==2
+          assert app.count("TEST_INTERP_SYNTHETIC_")==3
+          for v in ("fetch(", "XMLHttpRequest", "WebSocket", "innerHTML",
+                    "insertAdjacentHTML", "window.open", "jspdf", "pdfmake"):
+              assert v not in app, v
+          assert "textContent" in app
+          assert "official_abstract_only" in source
+          assert "canPromoteSiteSummaryToOfficialAbstract: false" in source
+          assert "isCurrentValidityVerified: false" in source
+          assert "productionApproved: false" in source
+          assert "<form" not in page and "<iframe" not in page
+          for name in ["index.html","style.css","model.js","app.js","model.test.cjs",
+                       "package.json","README.md"]:
+              assert (root/name).is_file(),name
+          print("Offline UI verified: synthetic only, dates separated, no PDF or API")
+          PY
+      - name: Verify source acceptance scope and separate counts without re-fetching official law
+        run: |
+          node - <<'JS'
+          const assert=require('node:assert/strict');
+          const fs=require('node:fs');
+          const model=require('./experiments/v27-mcp-poc/stage3r-demo/model.js');
+          const {EVIDENCE,planReview}=require('./experiments/v27-mcp-poc/stage3q-readiness-ledger.cjs');
+          assert.equal(model.LIMITS.legislationSamplePassed,EVIDENCE.legislation.counts.sampleVerified);
+          assert.equal(model.LIMITS.interpretationFullTextChecked,EVIDENCE.interpretations.counts.sourceFullText);
+          assert.equal(model.LIMITS.interpretationAbstractOnly,EVIDENCE.interpretations.counts.officialAbstractOnly);
+          assert.match(fs.readFileSync('experiments/v27-mcp-poc/STAGE1_ACCEPTANCE.md','utf8'),/20\/20/);
+          const stage2=fs.readFileSync('experiments/v27-mcp-poc/STAGE2_ACCEPTANCE.md','utf8');
+          assert.match(stage2,/17\/21/);
+          assert.match(stage2,/4\/21/);
+          assert.equal(planReview({features:['law_lookup','interpretation_lookup'],
+            approvals:{allowProduction:true}}).canDeploy,false);
+          console.log('Prior scope kept separate: Stage1 20 sampled, Stage2 17 full + 4 abstract');
+          JS
+      - name: Assert no existing official site or private worker is changed
+        run: |
+          git fetch --no-tags --depth=2 origin experiment/v27-mcp-stage3q
+          python3 - <<'PY'
+          from pathlib import Path
+          import subprocess
+          files=subprocess.check_output(["git","diff","--name-only","FETCH_HEAD","HEAD"],
+                                        text=True).splitlines()
+          permitted_prefix="experiments/v27-mcp-poc/stage3r-demo/"
+          permitted_exact={
+              "experiments/v27-mcp-poc/STAGE3R.md",
+              "experiments/v27-mcp-poc/STAGE3R_RESULT.md",
+              ".github/workflows/test-v27-mcp-stage3r.yml",
+          }
+          assert all(x.startswith(permitted_prefix) or x in permitted_exact
+                     for x in files),files
+          assert "status:404" in Path("services/v2.7-judgment/private-worker.mjs").read_text()
+          assert Path("development/v2.7").is_dir()
+          print("Only new Stage3r files added to isolated branch:",files)
+          PY
+      - name: Save only isolated test counts, no law bodies or court text
+        run: |
+          node - <<'JS'
+          const fs=require('node:fs');
+          function counts(name) {
+            const text=fs.readFileSync(process.env.RUNNER_TEMP+'/'+name,'utf8');
+            const test=/# tests (\d+)/.exec(text), pass=/# pass (\d+)/.exec(text),
+                  fail=/# fail (\d+)/.exec(text);
+            if(!test||!pass||!fail) throw Error('Missing test runner totals '+name);
+            const a=[Number(test[1]),Number(pass[1]),Number(fail[1])];
+            if(a[0]!==a[1] || a[2]!==0) throw Error('Unexpected test failure '+name);
+            return a[0];
+          }
+          const newTests=counts('stage3r-tests.log');
+          const priorTests=counts('stage3q-tests.log');
+          const x={
+            stage:'Stage3r separate law and interpretation source-tier OFFLINE UI',
+            source_ui_unit_tests_passed:newTests,
+            previous_release_gate_tests_passed:priorTests,
+            all_tests_passed:newTests+priorTests,
+            prior_official_law_samples_requeried:0,
+            prior_official_interpretations_requeried:0,
+            synthetic_example_count:5,
+            real_law_or_interpretation_bodies_saved:0,
+            html_content_level_currently_official:false,
+            legal_effect_currently_verified:false,
+            pdf_export_feature_created:false,
+            website_or_cloudflare_modified:false,
+            production_approved:false,
+            stage3_accepted:false
+          };
+          fs.writeFileSync('stage3r-source-tier-summary.json',JSON.stringify(x,null,2)+'\n');
+          console.log(JSON.stringify(x));
+          JS
+      - name: Retain metadata-only UI checks for independent review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v27-stage3r-offline-law-and-interpretation-ui-checks
+          path: stage3r-source-tier-summary.json
+          if-no-files-found: warn
+          retention-days: 14
