@@ -38,7 +38,8 @@ jobs:
           assert data.count('class="tile course-tile"')==2
           assert data.count('class="tile explore-tile"')==3
           assert data.index('課程學習') < data.index('練習與探索')
-          assert data.index('法律 AI 實驗室') < data.index('每日模擬') < data.index('知識補給')
+          explore=data[data.index('<nav class="explore-grid"'):]
+          assert explore.index('法律 AI 實驗室') < explore.index('每日模擬') < explore.index('知識補給')
           class A(HTMLParser):
             pass
           A().feed(data)
