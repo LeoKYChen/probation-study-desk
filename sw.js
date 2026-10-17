@@ -6,7 +6,7 @@ const CONTROL=PREFIX+'control', META=new URL('pwa/snapshot-state',BASE).href;
 const absolute=path=>new URL(path,BASE).href;
 // Preserve installed snapshots as fallback; connected visits must see the unified home after upgrade.
 // Both directory and explicit index routes are used by existing installed apps.
-const NETWORK_FIRST=new Set(['','index.html','daily-simulation/index.html','daily-simulation/app.js','daily-simulation/questions.json','daily-simulation/practice.css','common-subjects/index.html','common-subjects/english-assistant/index.html','common-subjects/catalog/index.html','common-subjects/daily/index.html'].map(absolute));
+const NETWORK_FIRST=new Set(['','index.html','daily-simulation/index.html','daily-simulation/app.js','daily-simulation/questions.json','daily-simulation/practice.css','offline/index.html','print/index.html','backup/index.html','professional/index.html','juvenile-news/index.html','common-subjects/index.html','common-subjects/english-assistant/index.html','common-subjects/catalog/index.html','common-subjects/daily/index.html'].map(absolute));
 async function networkCopy(request){
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),7000);
   try{const response=await fetch(request,{cache:'no-store',signal:controller.signal});return response.ok?response:null;}
