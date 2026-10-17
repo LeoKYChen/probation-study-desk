@@ -1,0 +1,45 @@
+name: Check v2.5.4 Daily Practice
+
+on:
+  pull_request:
+    paths:
+      - 'v2.5/daily-practice.*'
+      - 'v2.5/index.html'
+      - 'v2.5/ai-simple-review-v254.js'
+      - 'daily-simulation/model.js'
+      - 'daily-simulation/questions.json'
+      - 'v2.5/backup-core.js'
+      - 'offline-manifest.json'
+      - 'verification/check-daily-v254.cjs'
+      - '.github/workflows/check-v254-daily.yml'
+  push:
+    branches:
+      - main
+      - 'feature/v254-daily-30min-ai-review'
+    paths:
+      - 'v2.5/daily-practice.*'
+      - 'v2.5/index.html'
+      - 'v2.5/ai-simple-review-v254.js'
+      - 'daily-simulation/model.js'
+      - 'daily-simulation/questions.json'
+      - 'v2.5/backup-core.js'
+      - 'offline-manifest.json'
+      - 'verification/check-daily-v254.cjs'
+      - '.github/workflows/check-v254-daily.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Syntax and regression
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - run: node --check v2.5/daily-practice.js
+      - run: node --check verification/check-daily-v254.cjs
+      - run: node verification/check-daily-v254.cjs
