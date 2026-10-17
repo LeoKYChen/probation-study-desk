@@ -94,6 +94,7 @@ assert.ok(browserScript.includes('essayDrafts:readDrafts()'),'daily modal persis
 assert.ok(browserScript.includes('aiFeedback:$(\'aiFeedback\').value'),'daily modal persists AI comments');
 assert.ok(browserScript.includes('text/markdown;charset=utf-8'),'daily modal exports UTF-8 markdown');
 assert.ok(browserScript.includes('const ENABLE_NEWS_READING=false;'),'news reading must stay disabled');
+assert.ok(read('sw.js').includes("'daily-simulation/practice.css'"),'online users must receive refreshed in-place workspace CSS');
 const inlineStart=browserScript.indexOf('function simulationQuestion(q){');
 const inlineEnd=browserScript.indexOf('async function copyAI(){',inlineStart);
 assert.ok(inlineStart>=0&&inlineEnd>inlineStart,'daily browser must include grading prompt');
