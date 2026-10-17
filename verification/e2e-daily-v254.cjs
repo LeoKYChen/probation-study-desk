@@ -223,6 +223,41 @@ async function check(){
  await mobile.locator('#aiFeedback').fill('手機批改評語');
  await mobile.waitForFunction(id=>JSON.parse(localStorage.getItem('probation-daily-github:records:v1')||'{}')[id]?.aiFeedback==='手機批改評語',q.id);
  assert.deepEqual(mobileErrors,[],'no uncaught mobile browser errors');
+ // Mobile Safari/Chromium must also support all features *inside* the evening-room modal.
+ const inlineMobile=await mobileContext.newPage(),inlineErrors=[];
+ inlineMobile.on('pageerror',error=>inlineErrors.push(error.message));
+ inlineMobile.on('dialog',dialog=>dialog.accept());
+ await inlineMobile.goto(origin+'/daily-simulation/',{waitUntil:'domcontentloaded'});
+ await inlineMobile.locator('[data-open="'+q.id+'"]').first().waitFor({timeout:30000});
+ await inlineMobile.locator('[data-open="'+q.id+'"]').first().click();
+ assert.ok(await inlineMobile.locator('#draftIssue').isVisible());
+ for(const width of [390,360,320]){
+   await inlineMobile.setViewportSize({width,height:844});
+   const geometry=await inlineMobile.evaluate(()=>{
+     const container=document.querySelector('#readerScroll');
+     const grid=document.querySelector('.essay-draft-grid');
+     const width=container.clientWidth;
+     const gridRect=grid.getBoundingClientRect(),containerRect=container.getBoundingClientRect();
+     return {viewport:document.documentElement.clientWidth,body:document.documentElement.scrollWidth,gridRight:gridRect.right,containerRight:containerRect.right,containerScroll:container.scrollWidth,containerClient:container.clientWidth,width};
+   });
+   assert.ok(geometry.body<=geometry.viewport+2,'evening-room mobile page overflows at '+width+': '+JSON.stringify(geometry));
+   assert.ok(geometry.gridRight<=geometry.containerRight+2,'four-grid exceeds mobile modal at '+width+': '+JSON.stringify(geometry));
+   assert.ok(geometry.containerScroll<=geometry.containerClient+3,'modal content horizontally scrolls at '+width+': '+JSON.stringify(geometry));
+ }
+ await inlineMobile.setViewportSize({width:390,height:844});
+ await inlineMobile.locator('#draftIssue').fill('晚間學習室手機版草稿');
+ await inlineMobile.locator('#answer').fill('晚間學習室手機版完整答案');
+ await inlineMobile.locator('#aiFeedback').fill('晚間學習室手機版 AI 評語');
+ await inlineMobile.waitForFunction(id=>{
+   const r=JSON.parse(localStorage.getItem('probation-daily-github:records:v1')||'{}')[id];
+   return r?.essayDrafts?.issues==='晚間學習室手機版草稿' && r?.answer==='晚間學習室手機版完整答案' && r?.aiFeedback==='晚間學習室手機版 AI 評語';
+ },q.id);
+ const mobileMarkdown=inlineMobile.waitForEvent('download');
+ await inlineMobile.locator('#exportEssay').click();
+ const mobileMd=await mobileMarkdown;
+ assert.ok(fs.readFileSync(await mobileMd.path(),'utf8').includes('晚間學習室手機版草稿'));
+ assert.deepEqual(inlineErrors,[],'no uncaught evening-room mobile errors');
+ await inlineMobile.close();
  await mobileContext.close();
  console.log((IS_WEBKIT?'WebKit':'Chromium')+' desktop + 390px touch-mobile browser acceptance passed: '+data.questions.length+' questions; old answer, timer, AI clipboard, shared page, backup/restore, clear and mobile layout.');
 }
