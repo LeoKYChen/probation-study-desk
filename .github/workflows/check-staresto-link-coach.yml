@@ -1,0 +1,22 @@
+name: Staresto v0.6 Link Coach QA
+on:
+  pull_request:
+    paths:
+      - 'common-subjects/english-assistant/**'
+      - '.github/workflows/check-staresto-link-coach.yml'
+  push:
+    branches:
+      - 'feature/staresto-v06-link-coach-phase1'
+    paths:
+      - 'common-subjects/english-assistant/**'
+      - '.github/workflows/check-staresto-link-coach.yml'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Node unit and static tests
+        run: node common-subjects/english-assistant/test.cjs
