@@ -9,7 +9,7 @@
   const dialog=document.createElement('dialog');dialog.id='offline-dialog';dialog.setAttribute('aria-labelledby','offline-title');
   dialog.innerHTML=`<div class="offline-heading"><h2 id="offline-title">手機／電腦離線使用</h2><button type="button" data-close aria-label="關閉離線設定">×</button></div>
   <p data-status role="status" aria-live="polite">正在檢查離線資料…</p><progress hidden aria-label="下載進度"></progress>
-  <p class="offline-detail">包含考古題、內建評分、342 題專題、主動回憶、晚間學習室及少年司法週報。外部連結與雲端 AI 需要網路。</p>
+  <p class="offline-detail">包括專業科目、426 題考古題、每日模擬題、國文作文與英文、少年司法週報、完整 JSON 備份及列印中心。外部連結與雲端 AI 仍需網路。</p>
   <div class="offline-actions"><button type="button" data-download disabled>下載離線資料</button><button type="button" data-reload hidden>重新開啟更新內容</button><button type="button" data-install hidden>安裝到主畫面</button></div>
   <h3>iPhone 安裝步驟</h3><ol><li>用 Safari 開啟本站。</li><li>分享 →「加入主畫面」。若有「作為網頁 App 開啟」，請開啟。</li><li>從主畫面圖示開啟，按「下載離線資料」，等候完成。</li><li>開飛航模式，關閉再開啟圖示，確認能看題與作答。</li></ol>
   <p class="offline-detail">下載時保持此頁開啟。離線內容以最後完整下載為準；連線後可按「更新離線資料」，完成後重新開啟。離線模式的「更新題庫」只讀取已下載版本。</p>

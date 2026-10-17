@@ -13,24 +13,73 @@
   setTimeout(()=>URL.revokeObjectURL(url),3500);
  }
  function current(){return core.storageSnapshot(localStorage);}
- function explain(storage){
-  const names=core.modules.map(m=>{
-   const raw=storage[m.key];let n=0;
-   if(raw!==undefined){const val=core.parseValue(m.key,raw);
-    if(m.kind==='records')n=Object.keys(val).length;
-    else if(m.kind==='sessions')n=Object.keys(val.sessions).length;
-    else if(m.kind==='common')n=Object.keys(val.drafts).length;
-    else if(m.kind==='english')n=Object.keys(val.completed||{}).length+Object.keys(val.wordProgress||{}).length;
-    else if(m.kind==='oldenglish')n=Object.keys(val.progress).length;
-    else if(m.kind==='list')n=val.length;else n=1;
+ // Read-only presentation counts. Never strip or rewrite blank sessions from JSON.
+ function meaningfulSession(s){
+  if(!s||typeof s!=='object'||Array.isArray(s))return false;
+  if(s.finished===true||Number(s.elapsed)>0||Number(s.skippedSeconds)>0||Number(s.phase)>0||
+     (s.rating!==null&&s.rating!==undefined&&s.rating!=='')||
+     (typeof s.errorCause==='string'&&s.errorCause.trim()))return true;
+  if(Array.isArray(s.notes)&&s.notes.some(x=>typeof x==='string'&&x.trim()))return true;
+  const drafts=s.essayDrafts;
+  if(drafts&&typeof drafts==='object'){
+   for(const draft of Object.values(drafts)){
+    if(!draft||typeof draft!=='object')continue;
+    if(typeof draft.fullAnswer==='string'&&draft.fullAnswer.trim())return true;
+    if(Array.isArray(draft.outline)&&draft.outline.some(x=>typeof x==='string'&&x.trim()))return true;
    }
-   return {name:m.name,available:raw!==undefined,count:n};
+  }
+  for(const key of ['essayCustomPrompts','aiReviewTexts']){
+   const items=s[key];
+   if(items&&typeof items==='object'&&Object.values(items).some(x=>typeof x==='string'&&x.trim()))return true;
+  }
+  if(s.essayAssessments&&typeof s.essayAssessments==='object'&&Object.values(s.essayAssessments).some(x=>x&&typeof x==='object'&&Object.keys(x).length))return true;
+  return false;
+ }
+ function explain(storage){
+  let progressCount=0,pendingCount=0,settingsCount=0;
+  const rows=core.modules.map(m=>{
+   const raw=storage[m.key];
+   if(raw===undefined)return {name:m.name,status:'此瀏覽器沒有資料'};
+   const val=core.parseValue(m.key,raw);
+   let count=0,pending=0,status='';
+   if(m.kind==='sessions'){
+    const sessions=Object.values(val.sessions).filter(x=>x&&typeof x==='object'&&!Array.isArray(x));
+    count=sessions.filter(meaningfulSession).length;
+    pending=sessions.length-count;
+    status=count+' 筆已開始／有作答紀錄'+(pending?'；'+pending+' 筆尚未開始的工作階段':'');
+   }else if(m.kind==='records'){
+    count=Object.keys(val).length;
+    status=count?count+' 筆已儲存紀錄':'空白儲存區（0 筆）';
+   }else if(m.kind==='common'){
+    count=Object.keys(val.drafts).length;
+    status=count?count+' 筆作文草稿':'空白儲存區（0 筆）';
+   }else if(m.kind==='english'){
+    count=Object.keys(val.completed||{}).length+Object.keys(val.wordProgress||{}).length;
+    status=count?count+' 項已儲存練習':'僅有初始設定（0 筆）';
+   }else if(m.kind==='oldenglish'){
+    count=Object.keys(val.progress).length;
+    status=count?count+' 項已儲存進度':'僅有初始設定（0 筆）';
+   }else if(m.kind==='list'){
+    count=val.length;
+    status=count?count+' 筆收藏／閱讀紀錄':'空白清單（0 筆）';
+   }else{
+    settingsCount++;
+    status='已儲存偏好設定（不計入學習紀錄）';
+   }
+   pendingCount+=pending;
+   if(m.kind!=='setting'&&m.kind!=='font')progressCount+=count;
+   return {name:m.name,status};
   });
   $('modules').replaceChildren();
-  for(const row of names){
-   const li=document.createElement('li');li.textContent=row.name+'：'+(row.available?row.count+' 筆／項':'此瀏覽器沒有資料');$('modules').append(li);
+  for(const row of rows){
+   const li=document.createElement('li');
+   li.textContent=row.name+'：'+row.status;
+   $('modules').append(li);
   }
-  $('summary').textContent='此網址目前可讀取 '+names.filter(x=>x.available).length+' 種學習資料。';
+  $('summary').textContent='已儲存的學習／閱讀紀錄：'+progressCount+' 筆／項。'+
+    (pendingCount?' 另有尚未開始的工作階段：'+pendingCount+' 筆。':'')+
+    (settingsCount?' 另有 '+settingsCount+' 項偏好設定。':'')+
+    ' 完整 JSON 仍會原樣保留所有儲存資料，包括空白工作階段和空物件。';
  }
  function refresh(){try{explain(current());$('export').disabled=false;}catch(e){tell('無法讀取現有紀錄：'+e.message,true);$('export').disabled=true;}}
  function clearPreview(){incoming=null;plan=null;$('preview').hidden=true;$('restore').disabled=true;$('confirmSafe').checked=false;$('confirmTabs').checked=false;$('importFile').value='';}

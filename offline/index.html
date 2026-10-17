@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="觀護人學習平台離線資料下載與使用指引：先下載題庫，斷網後練習，作答保存在本機。">
+<title>離線準備與作答｜觀護人學習平台</title>
+<link rel="stylesheet" href="../offline.css">
+<link rel="manifest" href="../manifest.webmanifest">
+<style>
+:root{font-family:system-ui,-apple-system,"Noto Sans TC","PingFang TC",sans-serif;color:#243d33;background:#f5f7f3}
+*{box-sizing:border-box}body{margin:0;line-height:1.8}
+header,main,footer{max-width:960px;margin:auto;padding:20px}
+header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid #dae3da}
+header a{color:#175c43}.panel{background:white;border:1px solid #d9e3dc;border-radius:12px;padding:20px 25px;margin:17px 0}
+h1{font-size:clamp(23px,4vw,35px);margin:16px 0 5px}h2{font-size:21px;margin:4px 0 8px}
+ul,ol{padding-left:1.6em}.links{display:flex;flex-wrap:wrap;gap:12px}
+.links a{background:#edf6ee;border:1px solid #bfd2c3;color:#18513c;border-radius:8px;padding:8px 14px;text-decoration:none}
+.notice{border-left:4px solid #527963;background:#edf3e9;padding:12px 16px}
+.small{color:#526b5a;font-size:14px}footer{color:#54695d;font-size:13px}
+@media(max-width:500px){.panel{padding:17px}header{align-items:flex-start}}
+</style>
+</head>
+<body>
+<header><a href="../">← 返回學習首頁</a><nav aria-label="離線準備工具"></nav></header>
+<main>
+<h1>離線閱讀、作答與保存</h1>
+<p>這一頁協助你<strong>先在有網路時下載學習所需檔案</strong>，之後在同一台手機或電腦斷網閱讀已下載的題目、撰寫答案；文字仍存於原本的瀏覽器紀錄。外部網站、雲端 AI 及更新最新題庫需要網路。</p>
+<section class="panel">
+<h2>① 先下載完整離線資料</h2>
+<p>點選上方的<strong>「離線使用」</strong>，再按<strong>「下載離線資料」</strong>。請等待所有檔案下載結束且顯示「離線已備妥」，不要中途關閉頁面。</p>
+<p>目前下載範圍包含：專業科目練習、426 題考古題、125 題每日模擬題、國文作文及英文題庫、少年司法週報、JSON 備份頁面及 A4 列印中心。</p>
+<p class="notice"><strong>特別提醒：</strong>離線資料不是你的私人答案備份。即使離線下載完成，也請定期在「完整學習紀錄備份」頁下載 JSON。瀏覽器網站資料若遭清除，題庫快取及私人答案可能一併消失。</p>
+</section>
+<section class="panel">
+<h2>② 飛航模式驗收</h2>
+<ol><li>先在線上完成下載；回到這個頁面確認顯示「離線已備妥」。</li><li>關閉 Wi-Fi 與行動數據（或開飛航模式）。</li><li>重新開啟同一網址，分別點開一個考古題、每日模擬題及國文作文。</li><li>實際輸入幾個測試字，確認頁面顯示「已儲存」。關閉後重新開啟，檢查文字仍在。</li><li>恢復連線後，再從本裝置下載一份 JSON 備份。</li></ol>
+<p class="small">離線快取屬於網站的 HTTPS 資料，不能保證在私人瀏覽模式、儲存空間不足、系統清理或更換瀏覽器後仍然存在。從 GitHub 與 Cloudflare 各自開啟時，需要各自下載，答案也不會自動互通。</p>
+</section>
+<section class="panel">
+<h2>③ 開啟已下載的學習區</h2>
+<div class="links"><a href="../professional/">專業科目30分鐘</a><a href="../v2.5/">426題考古題</a><a href="../daily-simulation/">每日模擬題</a><a href="../common-subjects/">國文作文與英文</a><a href="../juvenile-news/">少年司法週報</a><a href="../backup/">完整JSON備份</a><a href="../print/">A4列印與PDF</a></div>
+</section>
+<section class="panel">
+<h2>④ 更新與資料保護</h2>
+<p>恢復連線後，可以從離線設定重新下載最新版資料。下載若失敗，系統應繼續保留上一份已完成的離線快取，不會清除你的私人作答。離線不代表跨裝置同步；若換手機或切換網址，請用第二階段 JSON 備份安全合併。</p>
+<p class="small">第五階段的「下載 GitHub ZIP、解壓縮、雙擊即可完全離線使用」是另一種安裝方式，本階段不包含。</p>
+</section>
+</main>
+<footer>本工具在瀏覽器內處理快取與本機紀錄，不連接 Google Drive API。少年司法法律資料及練習內容離線後可能不是最新版本，法律適用前請重新核對現行法規。</footer>
+<script src="../offline.js" defer></script>
+</body>
+</html>

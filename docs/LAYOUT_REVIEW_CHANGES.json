@@ -95,8 +95,8 @@
     {
       "path": "sw.js",
       "base_sha256": "d564d94ae7a5249cd9ca7caa2ee480ddd4a541250e29b61a6f80c88f55ef0323",
-      "sha256": "772a3fc26a744cde1decc63eacb336129d46b595e4879375625ca2cb9956412b",
-      "reason": "Connected visits to changed common-subject pages use the current UI; retain installed snapshots."
+      "sha256": "c5c3ebb06a927a10a9bd6fa4d385b218097799b97488540de2bd31728b822d38",
+      "reason": "Cloudflare Pages canonically redirects /dir/index.html to /dir/ and /x.html to /x; allow only these exact same-origin HTML transformations while preserving atomic snapshots and rejecting other redirects."
     },
     {
       "path": "professional/practice-session.js",
