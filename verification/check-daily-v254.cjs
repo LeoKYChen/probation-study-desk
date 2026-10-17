@@ -31,10 +31,11 @@ const html=read('v2.5/daily-practice.html');
 new vm.Script(script,{filename:'v2.5/daily-practice.js'});
 const ids=[...script.matchAll(/\$\('([^']+)'\)/g)].map(m=>m[1]);
 for(const id of new Set(ids))assert.ok(html.includes('id="'+id+'"'),'missing UI node '+id);
-const matchStart=script.indexOf('function promptFor(q,answer){');
+const matchStart=script.indexOf('function simulationQuestion(q){');
 const matchEnd=script.indexOf('async function copyAI(){',matchStart);
 assert.ok(matchStart>=0&&matchEnd>matchStart);
-const promptFor=vm.runInNewContext('('+script.slice(matchStart,matchEnd).trim()+')',{AI:A,M});
+const functions=vm.runInNewContext('(()=>{'+script.slice(matchStart,matchEnd)+'; return {simulationQuestion,promptFor};})()', {M});
+const {simulationQuestion,promptFor}=functions;
 const law={...sample,id:'law',date:'2026-10-17',subject:'少年事件處理法',
  question:'分析少年事件處理法、刑法及刑事訴訟法的法律爭點。'};
 const mixed={...sample,id:'mixed',subject:'少年事件處理法',
@@ -42,11 +43,25 @@ const mixed={...sample,id:'mixed',subject:'少年事件處理法',
 assert.throws(()=>promptFor(law,''),/請先完成/);
 const lawText=promptFor(law,'法律爭點分析答案');
 assert.ok(lawText.includes(law.question)&&lawText.includes('法律爭點分析答案'));
-assert.ok(lawText.includes('整題統一評分')&&lawText.includes('不要另列各法律科目分數'));
+assert.ok(lawText.includes('整題統一評分')&&lawText.includes('不按法律科目拆分分數'));
+assert.ok(lawText.includes('【本次每日模擬題】')&&!lawText.includes('【原題】'));
+assert.ok(!lawText.includes('年度／科目：116年'),'no fabricated exam year');
+assert.ok(lawText.includes('\n\n'),'prompt uses actual newlines');
 const mixedText=promptFor(mixed,'學理與法律分析答案');
-assert.ok(mixedText.includes('非法律學科部分分別評分'));
+assert.ok(mixedText.includes('須按題目設問分別評分'));
 assert.ok(mixedText.includes('15分')&&mixedText.includes('10分'));
-assert.ok(!mixedText.includes('【參考考點（未獨立審定）】\n真實正解'),'未核對的來源不得冒充標準答案');
+assert.ok(!mixedText.includes('【參考考點（未獨立審定）】'),'not include unreviewed reference materials');
+const adapted=d.questions.find(q=>q.question.includes('- 原題：')&&q.question.includes('- 改編題'));
+assert.ok(adapted,'test needs a source-versus-adapted question');
+const adaptedPrompt=simulationQuestion(adapted);
+assert.ok(adaptedPrompt.length>40);
+assert.ok(!adaptedPrompt.includes('- 原題：'),'must not grade original exam statement');
+assert.ok(!adaptedPrompt.includes('- 改編來源'),'must not grade editorial metadata');
+assert.ok(promptFor(adapted,'模擬答案').includes(adaptedPrompt));
+const edited=d.questions.find(q=>q.question.startsWith('將其深化為')&&q.question.includes('改編後實例申論題題目'));
+assert.ok(edited);
+assert.ok(simulationQuestion(edited).startsWith('案例事實：'));
+assert.ok(!promptFor(edited,'案例作答').includes('四欄標準表格理論與個案處遇深度結合：'),'do not include editor preface');
 const manifest=JSON.parse(read('offline-manifest.json')),assets=manifest.assets.map(x=>x.url);
 for(const path of ['v2.5/daily-practice.html','v2.5/daily-practice.css','v2.5/daily-practice.js'])
  assert.ok(assets.includes(path),'missing PWA asset '+path);
@@ -57,6 +72,9 @@ const draftIds=['draftIssue','draftBasis','draftAnalysis','draftConclusion','exp
 for(const id of draftIds)assert.ok(html.includes('id="'+id+'"'),'missing essay workbench node '+id);
 assert.ok(html.includes('>我的練習紀錄</h3>'));
 assert.ok(script.includes('essayDrafts:readDrafts()'),'four essays should share daily records');
+assert.ok(script.includes('saved:currentSaved()'),'complete backup includes bookmarks');
+assert.ok(script.includes('timers:validateTimers(timers)'),'complete backup includes timers');
+assert.ok(script.includes('mergedRecord(next[id],record)'),'import preserves fields that old backups omit');
 const older={...newer,essayDrafts:{issues:'爭點',basis:'規範',analysis:'涵攝',conclusion:'結論'}};
 assert.equal(M.backup({format:'probation-daily-github-records',schemaVersion:1,records:{[sample.id]:older}})[sample.id].essayDrafts.conclusion,'結論');
 assert.equal(B.validate(B.create({},{[sample.id]:older})).daily[sample.id].essayDrafts.basis,'規範');

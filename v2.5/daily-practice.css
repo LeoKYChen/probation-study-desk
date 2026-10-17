@@ -69,3 +69,25 @@
   .essay-workspace-heading h3{font-size:18px}
   .essay-workspace-actions button{width:100%}
 }
+
+/* Compact navigation on desktop and mobile.
+   The shared offline.js appends its control into header nav. */
+.header-inner{display:grid;grid-template-columns:max-content minmax(0,1fr);align-items:center;column-gap:26px;row-gap:10px;padding:12px 20px}
+.header-inner .brand{white-space:nowrap}
+.site-header nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:8px 16px;min-width:0;width:100%;font-size:13px}
+.site-header nav a{line-height:1.55;overflow-wrap:normal;word-break:keep-all}
+.site-header nav .offline-entry{grid-column:auto;justify-self:auto;margin:0;padding:8px 12px;min-height:38px;line-height:1.5;font-size:13px}
+@media (max-width:780px){
+  .header-inner{grid-template-columns:minmax(0,1fr);gap:8px;padding:12px 16px 13px}
+  .header-inner .brand{white-space:normal}
+  .site-header nav{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:7px 13px;width:100%;font-size:13px}
+  .site-header nav a{min-width:0;overflow-wrap:normal;line-height:1.55;word-break:keep-all}
+  .site-header nav .offline-entry{
+    grid-column:auto;justify-self:auto;flex:0 0 auto;margin:0;
+    padding:7px 11px;min-height:36px
+  }
+}
+@media (max-width:350px){
+  .site-header nav{column-gap:10px;row-gap:6px;font-size:12px}
+  .site-header nav .offline-entry{font-size:12px;min-height:36px;padding:6px 9px}
+}
