@@ -205,13 +205,155 @@ button{cursor:pointer}
 }
 @media(prefers-reduced-motion:reduce){.tile{transition:none}}
 
+
+/* 晚間學習室 v2.5 主站：工作空間視覺進階版；保留既有 2+3 卡片與倒數功能 */
+html{scroll-behavior:smooth}
+body{background:#f5f5ef}
+.global-header{height:72px;background:#fafbf6;border-bottom:1px solid #dde2d8;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:0 max(22px,calc((100vw - 1440px)/2 + 30px))}
+.global-brand{display:flex;align-items:center;gap:12px;color:#243b35;font-size:19px;font-weight:800;text-decoration:none;white-space:nowrap}
+.global-brand-mark{width:41px;height:41px;display:grid;place-items:center;background:#245b48;color:#fff;border-radius:12px;font-size:19px}
+.header-caption{font-size:12px;font-weight:680;color:#68766f;border:1px solid #dde2d8;border-radius:99px;padding:6px 14px}
+.workspace-shell{display:grid;grid-template-columns:238px minmax(0,1fr);max-width:1440px;min-height:calc(100vh - 72px);margin:0 auto}
+.workspace-sidebar{position:sticky;top:0;align-self:start;display:flex;flex-direction:column;min-width:0;height:calc(100vh - 72px);min-height:550px;padding:27px 18px 23px;background:#eef1e7;border-right:1px solid #dde2d8}
+.sidebar-brand{display:flex;gap:10px;align-items:center;color:#243b35;font-size:18px;font-weight:740;line-height:1.3}
+.sidebar-brand-icon{display:grid;place-items:center;flex:0 0 42px;height:44px;background:#245b48;color:white;border-radius:11px;font-size:22px}
+.sidebar-brand small{display:block;font-size:9px;font-weight:650;color:#68766f;letter-spacing:1.1px;line-height:1.5;margin-top:5px}
+.sidebar-eyebrow{font-size:11px;font-weight:760;color:#68766f;letter-spacing:.08em;margin:35px 10px 14px}
+.sidebar-links{display:flex;flex-direction:column;gap:5px}
+.sidebar-links a{display:flex;align-items:center;gap:11px;padding:12px 13px;min-height:46px;border-radius:8px;color:#68766f;text-decoration:none;font-size:14px;font-weight:640;line-height:1.5}
+.sidebar-links a>span{font-size:17px;min-width:19px;color:#567e69}
+.sidebar-links a:hover{background:#dde6d8;color:#245b48}
+.sidebar-links a.is-current{background:#245b48;color:white}
+.sidebar-links a.is-current>span{color:white}
+.sidebar-links a:focus-visible,.global-brand:focus-visible{outline:3px solid #245b48;outline-offset:2px}
+.sidebar-divider{height:1px;margin:26px 10px;background:#dde2d8}
+.sidebar-note{margin-top:auto;padding:15px 10px 4px;color:#245b48;font-size:12px;line-height:1.7}
+.sidebar-note-indicator{display:inline-block;width:7px;height:7px;margin-right:9px;vertical-align:middle;border-radius:50%;background:#77b598}
+.sidebar-note small{display:block;margin-top:8px;color:#68766f;font-size:11px}
+.workspace-content{min-width:0}
+.workspace-topbar{height:70px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 30px;background:#fff;border-bottom:1px solid #dde2d8}
+.breadcrumb{display:flex;align-items:center;gap:13px;color:#68766f;font-size:12px;min-width:0}
+.breadcrumb strong{color:#243b35;font-weight:720}
+.breadcrumb-chevron{color:#9eb3a3;font-size:17px}
+.workspace-status{padding:6px 12px;border:1px solid #dde2d8;border-radius:999px;color:#68766f;background:#fff;font-size:12px;white-space:nowrap}
+.page{max-width:1180px;padding:30px 30px 24px}
+.page-header{border:0;display:block;padding:0;margin-bottom:22px}
+.page-header::before{display:none}
+.page-header h1{font-size:clamp(27px,3vw,35px);line-height:1.48;color:#243b35}
+.page-eyebrow,.hero-eyebrow{display:block;font-size:11px;color:#245b48;font-weight:760;letter-spacing:.085em;margin-bottom:4px}
+.page-intro{font-size:14px;color:#68766f;margin-top:7px;line-height:1.75}
+.countdown{min-height:250px;padding:29px 30px;background:#e8eee3;border:1px solid #dde2d8;border-radius:14px;box-shadow:none;margin-bottom:26px}
+.countdown::before{top:-74px;right:20px;width:275px;height:275px;border-color:rgba(36,91,72,.1)}
+.countdown-top,.countdown-value,.countdown-settings,.hero-eyebrow{max-width:calc(100% - 230px)}
+.countdown-label{letter-spacing:0}
+.countdown-value{font-weight:820}
+.countdown-settings summary{background:#fff;border-color:#cfddc8;min-height:44px}
+.countdown-settings[open]{max-width:100%}
+.countdown-settings[open] #countdown-form{max-width:700px}
+.countdown-calendar{background:rgba(255,255,255,.85)}
+.room-hero-art{position:absolute!important;z-index:0!important;top:0;right:14px;width:225px;height:240px;pointer-events:none;opacity:.88}
+.room-orb{position:absolute;border:1px solid rgba(36,91,72,.15);border-radius:50%}
+.room-orb-one{width:210px;height:210px;top:-40px;right:-30px}
+.room-orb-two{width:160px;height:160px;top:92px;right:20px}
+.room-paper-back{position:absolute;display:block;width:105px;height:128px;right:63px;top:66px;transform:rotate(13deg);background:#abc2a7;border-radius:5px;box-shadow:0 14px 25px rgba(36,59,53,.12)}
+.room-paper-front{position:absolute;display:flex;flex-direction:column;gap:13px;width:112px;height:139px;right:68px;top:66px;padding:17px 13px;background:#fcfcf6;border:1px solid #d9e2d1;border-radius:4px;transform:rotate(-8deg);box-shadow:0 9px 19px rgba(36,59,53,.1);color:#51775f}
+.room-paper-front>span{font-size:14px;font-weight:680}
+.room-paper-front i{display:block;height:2px;width:77px;background:#cbd8c5}
+.room-paper-front i+i{width:56px}
+.room-paper-front small{margin-top:auto;font-size:7px;letter-spacing:.05em}
+.room-spark{position:absolute;top:40px;right:33px;color:#8da785;font-size:27px}
+.section{margin-bottom:26px}
+.section h2{font-size:19px;font-weight:760;margin:0 0 14px}
+.course-grid,.explore-grid{gap:16px}
+.tile{justify-content:space-between;text-align:left;padding:23px;min-height:151px;box-shadow:0 8px 28px rgba(36,59,53,.05)}
+.course-tile{background:linear-gradient(135deg,#245b48,#346b57);color:white}
+.explore-tile{background:#fff;background-image:none}
+.explore-tile::before{content:"";position:absolute;left:0;top:17px;bottom:17px;width:4px;background:#86ad95;border-radius:0 3px 3px 0}
+.tile-copy{display:flex;flex-direction:column;align-items:flex-start;min-width:0}
+.tile-description{display:block;margin-top:9px;font-size:clamp(12px,1.22vw,14px);line-height:1.6;font-weight:500;opacity:.9}
+.explore-tile .tile-description{color:#68766f;opacity:1}
+.tile-arrow{flex:0 0 auto;align-self:flex-end;display:grid;place-items:center;width:25px;height:25px;border-radius:8px;color:inherit;opacity:.78;font-size:18px}
+.explore-tile .tile-arrow{background:#edf2e8;color:#245b48}
+.tile-title,.course-tile .tile-title{font-size:clamp(19px,2.05vw,27px);font-weight:780}
+.explore-tile .tile-title{font-size:clamp(18px,1.7vw,22px)}
+.footnote{max-width:1180px;margin:0 auto;padding:0 30px 22px;font-size:12px}
+@media(max-width:1050px){
+ .workspace-shell{grid-template-columns:206px minmax(0,1fr)}
+ .workspace-sidebar{padding:24px 13px 20px}
+ .page{padding:28px 24px 24px}
+ .workspace-topbar{padding:0 24px}
+ .course-grid,.explore-grid{gap:12px}
+ .tile{padding:19px}
+ .tile-description{font-size:12px}
+}
+@media(max-width:860px){
+ .workspace-shell{display:block;min-height:calc(100vh - 67px)}
+ .workspace-sidebar{display:none}
+ .global-header{height:67px;padding:0 18px}
+ .page{max-width:850px;margin:auto;padding:25px 20px 25px}
+ .workspace-topbar{height:58px;padding:0 20px}
+ .footnote{max-width:850px;padding:0 20px 22px}
+}
+@media(max-width:760px){
+ .global-brand{font-size:16px;gap:9px}
+ .global-brand-mark{width:35px;height:35px;border-radius:9px;font-size:17px}
+ .header-caption{padding:5px 9px;font-size:11px}
+ .workspace-topbar{height:50px}
+ .workspace-status{display:none}
+ .page{padding:22px 15px 22px}
+ .page-header{margin-bottom:18px}
+ .page-header h1{font-size:29px}
+ .page-intro{font-size:13px}
+ .countdown{padding:19px 18px;min-height:225px;margin-bottom:24px}
+ .countdown-top,.countdown-value,.countdown-settings,.hero-eyebrow{max-width:none}
+ .room-hero-art{opacity:.11;right:-35px;top:7px;transform:scale(.75);transform-origin:top right}
+ .countdown::before{right:-70px}
+ .countdown-settings[open] #countdown-form{max-width:100%}
+ .course-grid,.explore-grid{gap:12px}
+ .tile{min-height:112px;padding:19px;gap:8px}
+ .course-tile{min-height:115px}
+ .explore-tile{min-height:110px}
+ .tile-title,.course-tile .tile-title{font-size:23px}
+ .explore-tile .tile-title{font-size:21px}
+ .tile-description{font-size:12px;margin-top:6px}
+ .footnote{padding:0 15px 20px}
+}
+@media(max-width:350px){
+ .page-header h1{font-size:26px}
+ .tile{padding:15px}
+ .room-hero-art{display:none}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
 </style>
 </head>
 <body>
-
+<header class="global-header">
+  <a class="global-brand" href="#home" aria-label="返回觀護人學習平台頂端"><span class="global-brand-mark" aria-hidden="true">觀</span><span>觀護人學習平台</span></a>
+  <span class="header-caption">學習總覽</span>
+</header>
+<div class="workspace-shell" id="home">
+  <aside class="workspace-sidebar" aria-label="學習平台導覽">
+    <div class="sidebar-brand"><span class="sidebar-brand-icon" aria-hidden="true">▤</span><span>我的學習空間<small>READ. THINK. PRACTICE.</small></span></div>
+    <p class="sidebar-eyebrow">學習導覽</p>
+    <nav class="sidebar-links" aria-label="首頁區塊">
+      <a href="#countdown-card"><span aria-hidden="true">◷</span> 考試倒數</a>
+      <a href="#courses-heading" class="is-current"><span aria-hidden="true">▣</span> 課程學習</a>
+      <a href="#explore-heading"><span aria-hidden="true">✧</span> 練習與探索</a>
+    </nav>
+    <div class="sidebar-divider"></div>
+    <div class="sidebar-note"><span class="sidebar-note-indicator" aria-hidden="true"></span>每天練習，持續累積。<small>各學習模組維持獨立紀錄</small></div>
+  </aside>
+  <div class="workspace-content">
+    <div class="workspace-topbar">
+      <div class="breadcrumb"><span>觀護人學習</span><span class="breadcrumb-chevron">›</span><strong>學習總覽</strong></div>
+      <span class="workspace-status">我的練習空間</span>
+    </div>
 <main class="page">
-  <header class="page-header"><h1>觀護人學習平台</h1></header>
+  <header class="page-header"><div><span class="page-eyebrow">MY STUDY DESK</span><h1>觀護人學習平台</h1><p class="page-intro">把每天的閱讀、練習與思考，累積成前進的力量。</p></div></header>
   <section class="countdown" id="countdown-card" data-style="standard" data-accent="mint" aria-label="考試倒數日">
+    <div class="room-hero-art" aria-hidden="true"><span class="room-orb room-orb-one"></span><span class="room-orb room-orb-two"></span><span class="room-paper-back"></span><span class="room-paper-front"><span>學習札記</span><i></i><i></i><small>THINK · WRITE · REFLECT</small></span><span class="room-spark">✧</span></div>
+    <span class="hero-eyebrow">ONE STEP EVERY DAY</span>
     <div class="countdown-top">
       <span class="countdown-label" id="countdown-event-label">倒數日</span>
       <span class="countdown-calendar" id="countdown-date-caption"></span>
@@ -234,20 +376,22 @@ button{cursor:pointer}
   <section class="section" aria-labelledby="courses-heading">
     <h2 id="courses-heading">課程學習</h2>
     <nav class="course-grid" aria-label="課程學習入口">
-      <a class="tile course-tile" href="https://v254-unified-preview.probation-study30-test.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="專業科目：426題、每日30分鐘與申論練習（另開新分頁）"><span class="tile-title">專業科目</span></a>
-      <a class="tile course-tile" href="https://leokychen.github.io/probation-study-desk/common-subjects/" target="_blank" rel="noopener noreferrer" aria-label="共同科目：英文、國文作文及 Staresto 題庫（另開新分頁）"><span class="tile-title">共同科目</span></a>
+      <a class="tile course-tile" href="https://v254-unified-preview.probation-study30-test.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="專業科目：426題、每日30分鐘與申論練習（另開新分頁）"><span class="tile-copy"><span class="tile-title">專業科目</span><small class="tile-description">申論練習・考古題・每日30分鐘</small></span><span class="tile-arrow" aria-hidden="true">↗</span></a>
+      <a class="tile course-tile" href="https://leokychen.github.io/probation-study-desk/common-subjects/" target="_blank" rel="noopener noreferrer" aria-label="共同科目：英文、國文作文及 Staresto 題庫（另開新分頁）"><span class="tile-copy"><span class="tile-title">共同科目</span><small class="tile-description">英文・國文作文・題庫</small></span><span class="tile-arrow" aria-hidden="true">↗</span></a>
     </nav>
   </section>
   <section class="section" aria-labelledby="explore-heading">
     <h2 id="explore-heading">練習與探索</h2>
     <nav class="explore-grid" aria-label="練習與探索入口">
-      <a class="tile explore-tile" href="https://probation-legal-ai-test.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="法律 AI 實驗室，獨立測試站（另開新分頁）"><span class="tile-title">法律 AI 實驗室</span></a>
-      <a class="tile explore-tile" href="https://leokychen.github.io/probation-study-desk/daily-simulation/" target="_blank" rel="noopener noreferrer" aria-label="每日模擬，獨立管理作答紀錄（另開新分頁）"><span class="tile-title">每日模擬</span></a>
-      <a class="tile explore-tile" href="https://leokychen.github.io/probation-study-desk/juvenile-news/" target="_blank" rel="noopener noreferrer" aria-label="少年司法週報、學術研究及 CRC 知識補給（另開新分頁）"><span class="tile-title">知識補給</span></a>
+      <a class="tile explore-tile" href="https://probation-legal-ai-test.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="法律 AI 實驗室，獨立測試站（另開新分頁）"><span class="tile-copy"><span class="tile-title">法律 AI 實驗室</span><small class="tile-description">法規與函釋檢索</small></span><span class="tile-arrow" aria-hidden="true">↗</span></a>
+      <a class="tile explore-tile" href="https://leokychen.github.io/probation-study-desk/daily-simulation/" target="_blank" rel="noopener noreferrer" aria-label="每日模擬，獨立管理作答紀錄（另開新分頁）"><span class="tile-copy"><span class="tile-title">每日模擬</span><small class="tile-description">每日一題・反覆思考</small></span><span class="tile-arrow" aria-hidden="true">↗</span></a>
+      <a class="tile explore-tile" href="https://leokychen.github.io/probation-study-desk/juvenile-news/" target="_blank" rel="noopener noreferrer" aria-label="少年司法週報、學術研究及 CRC 知識補給（另開新分頁）"><span class="tile-copy"><span class="tile-title">知識補給</span><small class="tile-description">少年司法週報與研究</small></span><span class="tile-arrow" aria-hidden="true">↗</span></a>
     </nav>
   </section>
 </main>
 <p class="footnote">統一首頁測試版｜原系統與作答紀錄各自獨立；法律 AI 為獨立測試站。</p>
+  </div>
+</div>
 
 <script>
 (() => {
