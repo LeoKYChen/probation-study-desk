@@ -2,6 +2,7 @@
 (function(root){
  'use strict';
  const NS='http://www.w3.org/2000/svg';
+ const PALETTE=['#7651a3','#1d6c9c','#a65e11','#a13e62','#28705c','#735326','#435caa'];
  const node=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
  const svg=(tag,attrs,text)=>{const n=document.createElementNS(NS,tag);for(const [k,v] of Object.entries(attrs||{}))n.setAttribute(k,v);if(text!==undefined)n.textContent=text;return n;};
  function radar(host,axes,{title,onSelect,selected}={}){
@@ -10,7 +11,7 @@
   chart.append(svg('title',{},title));
   const point=(i,r)=>{const a=-Math.PI/2+2*Math.PI*i/axes.length;return [330+Math.cos(a)*r,270+Math.sin(a)*r];};
   const points=scale=>axes.map((_,i)=>point(i,155*scale).join(',')).join(' ');
-  for(const level of [.25,.5,.75,1]){
+  for(const level of [1,.75,.5,.25]){
    chart.append(svg('polygon',{points:points(level),class:'radar-grid'}));
    chart.append(svg('text',{x:336,y:270-155*level-3,class:'radar-scale'},String(level*100)));
   }
@@ -21,10 +22,10 @@
   if(!axes.every(valid))axes.forEach((a,i)=>{const next=(i+1)%axes.length;if(valid(a)&&valid(axes[next])){const p=point(i,155*a.value/100),q=point(next,155*axes[next].value/100);chart.append(svg('line',{x1:p[0],y1:p[1],x2:q[0],y2:q[1],class:'radar-segment'}));}});
   axes.forEach((a,i)=>{
    if(valid(a)){
-    const [x,y]=point(i,155*a.value/100),dot=svg('circle',{cx:x,cy:y,r:5,class:'radar-dot'});
+    const [x,y]=point(i,155*a.value/100),dot=svg('circle',{cx:x,cy:y,r:5,class:'radar-dot',style:'--axis-color:'+PALETTE[i%PALETTE.length]});
     dot.append(svg('title',{},a.label+'：'+a.value+'%'));chart.append(dot);
    }
-   const [x,rawY]=point(i,205),y=rawY-(i===0?24:0),text=svg('text',{x,y,'text-anchor':'middle',class:'radar-label'+(selected===a.label?' selected':'')});
+   const [x,rawY]=point(i,205),y=rawY-(i===0?24:0),text=svg('text',{x,y,'text-anchor':'middle',style:'--axis-color:'+PALETTE[i%PALETTE.length],class:'radar-label'+(selected===a.label?' selected':'')});
    const chunks=a.label.length>8?[a.label.slice(0,7),a.label.slice(7)]:[a.label];
    chunks.forEach((t,j)=>text.append(svg('tspan',{x,dy:j?19:0},t)));
    text.append(svg('tspan',{x,dy:21,class:'radar-value'},valid(a)?a.value+'%':'尚無資料'));
@@ -37,8 +38,9 @@
   });
   host.append(chart);
   const list=node('div',undefined,'radar-values');
-  for(const a of axes){
+  for(const [index,a] of axes.entries()){
    const item=node(onSelect?'button':'div',undefined,'radar-value-item');
+   item.style.setProperty('--axis-color',PALETTE[index%PALETTE.length]);
    item.append(node('span',a.label),node('strong',valid(a)?a.value+'%':'尚無資料'));
    if(onSelect){item.type='button';item.setAttribute('aria-pressed',String(selected===a.label));item.addEventListener('click',()=>onSelect(a.label));}
    list.append(item);

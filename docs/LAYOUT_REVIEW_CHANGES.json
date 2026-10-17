@@ -17,14 +17,14 @@
     {
       "path": "common-subjects/english-assistant/index.html",
       "base_sha256": "789c59675f5704659e3ba79260661980e6cc0260ddc49c3610f8da34e54d1c7c",
-      "sha256": "c9b67d28c44238b3b9f421a07c67042f58ed62d6eab5148b47b182101e4c0f54",
-      "reason": "Remove outdated personal-history assumption and development-version details."
+      "sha256": "22e1f3d752942087388e024740e3bed58b2a3d72ff6dd911f9fdcf1fd2d2a892",
+      "reason": "Remove outdated personal-history assumption and development-version details. Slides 20–22: merge history/usage panels, remove marked text and equalize action sizing."
     },
     {
       "path": "common-subjects/index.html",
       "base_sha256": "d9b28afda56727a618a6043d3000b45ae4c0004353dc1d1dda7d02e879587c8f",
-      "sha256": "e34d8baa54fdf7c4a155f168f064c19eb6809a95e1117cdbfe67d6a7b893d0ab",
-      "reason": "Slides 4–7: remove callout/icons, widen topic and editor, repair timer layout; shorten development prose."
+      "sha256": "cc5211dceb4cda87b03f891f5ccfa83a133b67101bcf53ea5e32b0fece0cb5b4",
+      "reason": "Slides 4–7: remove callout/icons, widen topic and editor, repair timer layout; shorten development prose. Slide 19: remove records icon and make both visible stats fill the row."
     },
     {
       "path": "professional/data-health.js",
@@ -41,13 +41,19 @@
     {
       "path": "professional/index.html",
       "base_sha256": "115a1a32e125e7215c4336f4d079d434588308f7fff7fb69e53f446352dddf4b",
-      "sha256": "41274573fd700a50252a5731b295775192639b32fa2aa294ef4e61c1609def75",
-      "reason": "Slides 2,8–17: remove marked prose, add chart/history hosts, group health under existing import panel."
+      "sha256": "6d79e5c8120b69aba85e8d3b86a489c3a0c8509d13ec1d73a774b5cdd3ee2ef5",
+      "reason": "Slides 2,8–17: remove marked prose, add chart/history hosts, group health under existing import panel. Follow-up slides 24–29 remove marked text, retain actual-record forecast, shorten 10-minute label."
+    },
+    {
+      "path": "professional/layout-followup.css",
+      "base_sha256": null,
+      "reason": "Slides 19,22–25,28: equal cards/actions, distinct accessible ability colors, compact schedule hint and full-width template selector.",
+      "sha256": "5aefb8315c6961ad3409abc60c1c95d09e5d0ea2172ee2c1953b45769b8bb3d8"
     },
     {
       "path": "professional/layout-panels.js",
       "base_sha256": null,
-      "sha256": "005664f2178d140ddd0bc7098f6561b3787589fedb6ab54371cbca147c3b8923",
+      "sha256": "8d5904c02ec63b3e4fef9b0cd5a4102fb713a5fc55d7e7382bbfb9c6221778b3",
       "reason": "New presentation URL avoids installed Safari reusing old scripts; fold diagnostics, group live health node, render charts from unchanged analytics models."
     },
     {
@@ -59,7 +65,7 @@
     {
       "path": "professional/learning-charts.js",
       "base_sha256": null,
-      "sha256": "534018f16e74ffa6f736fde34c454937d8c759fc5408453477c862347f24b508",
+      "sha256": "b43def3ad780780d6b61544c5e1e66aa57386c961164bd34e4f823b37910777d",
       "reason": "New read-only SVG chart and existing rubric aggregation helpers; missing values stay null."
     },
     {
@@ -75,9 +81,15 @@
       "reason": "Slide 3: simplify successful source count; preserve mismatch warning."
     },
     {
+      "path": "professional/review-preview.js",
+      "base_sha256": null,
+      "reason": "Slide 27 clarification: preview only the actual saved records and hypothetical reratings; no demo option or sample sessions, no storage writes.",
+      "sha256": "f6bc92cd9648749b29d054f1ca6cf470dd05aae6823f73c75c308b2da4689657"
+    },
+    {
       "path": "professional/sw.js",
       "base_sha256": "40e49a0b907e3db282d42743613f7756e205dba51705dfba7e8efac533400e99",
-      "sha256": "e2d540519f563a84648efd949923ec5a522161c236cd138531a58acae8ad142c",
+      "sha256": "3fef113564372e00eb24eec42eb04a429d67c2e90c9dd8b7673025ea45224c67",
       "reason": "Refresh existing installed-viewer asset cache for changed UI, without altering storage keys."
     },
     {

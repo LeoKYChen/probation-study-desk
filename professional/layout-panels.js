@@ -22,6 +22,8 @@
     if(health&&backup)backup.querySelector('h2').after(health);
     fold('.v254-panel','七科學習診斷與弱點追蹤');
     fold('.backup-import-panel','學習紀錄 JSON 匯入／還原');
+    const backupPanel=backup?.closest('.content-collapse'),progress=document.querySelector('.history');
+    if(backupPanel&&progress)progress.after(backupPanel);
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);
   else start();

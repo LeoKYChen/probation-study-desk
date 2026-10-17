@@ -26,6 +26,11 @@ const server=http.createServer((req,res)=>{
   assert.equal(await page.locator('#v254Radar .radar-value-item').count(),7);
   assert.equal(await page.locator('#v254Radar .radar-area').count(),0);
   assert.equal(await page.locator('.data-health-panel').evaluate(n=>n.closest('.backup-import-panel')!==null),true);
+  assert.equal(await page.locator('#simSource').count(),0);
+  assert.equal(await page.locator('#simCase').count(),0);
+  assert((await page.locator('#simOutput').textContent()).includes('尚無已自評'));
+  assert.equal(await page.locator('#mode10').innerText(),'10分鐘');
+  assert.equal(await page.locator('.backup-import-panel').evaluate(n=>n.closest('.content-collapse').previousElementSibling.classList.contains('history')),true);
   // Seed canonical old fields, all rubric families, a real zero, and one missing subject.
   const seeded=await page.evaluate(()=>{
    const api=Study30App,{bank,today}=api.getEssayReviewData(),key='probation-study30-v251:v1';
@@ -37,6 +42,7 @@ const server=http.createServer((req,res)=>{
     const scores=Object.fromEntries(rule.criteria.map((c,i)=>[c.id,subject==='刑法'?0:subject==='心理學'?(i===0?0:4):2]));
     session.essayAssessments[id]={version:1,rubric:type,subject,scores,issues:[],nextStep:''};
    }
+   stored.sessions['2026-10-16']={...structuredClone(session),date:'2026-10-16',questionId:bank.find(q=>q.subject==='心理學').id,rating:'review',essayAssessments:{},notes:[]};
    stored.sessions['2026-09-30']={...structuredClone(session),date:'2026-09-30',finished:true,notes:['九月已存速記'],essayDrafts:{past:{template:'law',outline:['九月已存爭點','','',''],fullAnswer:'九月完整答案'}},essayAssessments:{}};
    localStorage.setItem(key,JSON.stringify(stored));localStorage.setItem('other-module-sentinel','不更動');
    return localStorage.getItem(key);
@@ -65,6 +71,17 @@ const server=http.createServer((req,res)=>{
   assert.equal(await page.locator('#essayAbilityRadar .radar-value-item').count(),5);
   assert.equal(await page.locator('#essayAbilityRadar .radar-value-item strong').first().innerText(),'50%');
   assert.equal(await raw(),seeded,'charts and filters do not write storage');
+  await page.locator('#reviewSimulator').evaluate(n=>n.open=true);
+  await page.locator('#simDays').selectOption('1');await page.locator('#simPreview').click();
+  assert((await page.locator('#simOutput').innerText()).includes('心理學'));
+  assert(!(await page.locator('#reviewSimulator').innerText()).includes('範例資料'));
+  await page.locator('#simRerate').selectOption('mastered');await page.locator('#simRetry').click();
+  assert((await page.locator('#simNext').innerText()).includes('2026-10-25'));
+  assert.equal(await raw(),seeded,'forecast and hypothetical rerating are read-only');
+  const accents=await page.evaluate(()=>['.essay-review-panel','.content-collapse:has(.essay-analytics-panel)','.weakness-priority-panel','.content-collapse:has(.v254-panel)'].map(s=>getComputedStyle(document.querySelector(s)).borderLeftColor));
+  assert.equal(new Set(accents).size,4,'ability sections have distinct accents');
+  const axisColors=await page.locator('#v254Radar .radar-label').evaluateAll(nodes=>nodes.map(n=>getComputedStyle(n).fill));
+  assert.equal(new Set(axisColors).size,7,'subject axes have distinct colors');
   await page.locator('#showMonthProgress').click();
   assert.equal(await page.locator('#progressMonthGrid button').count(),31);
   assert.equal(await page.locator('#progressMonthGrid button:disabled').count(),14);
@@ -84,6 +101,10 @@ const server=http.createServer((req,res)=>{
   for(const width of [320,390,768,1440]){
    await page.setViewportSize({width,height:1000});await page.locator('#showMonthProgress').click();
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,'professional overflow '+width);
+   await page.locator('#essayEditor').evaluate(n=>n.open=true);
+   const selectBox=await page.locator('#essayTemplate').boundingBox(),labelBox=await page.locator('.essay-template-label').boundingBox();
+   assert(Math.abs(selectBox.width-labelBox.width)<2,'template select fills writing width '+width);
+   if(width===1440)assert.equal(await page.locator('#reviewScheduleHint').evaluate(n=>n.scrollWidth>n.clientWidth),false,'single-line schedule hint fits');
   }
   if(process.env.LAYOUT_SCREENSHOT_DIR){fs.mkdirSync(process.env.LAYOUT_SCREENSHOT_DIR,{recursive:true});await page.locator('#v254Subject').selectOption('心理學');await diagnostics.screenshot({path:path.join(process.env.LAYOUT_SCREENSHOT_DIR,engine+'-diagnostics.png')});await page.locator('#showMonthProgress').click();await page.locator('.history').screenshot({path:path.join(process.env.LAYOUT_SCREENSHOT_DIR,engine+'-month.png')});}
   // Compose, switch topic, switch back, reload: existing drafts and versions survive the new layout.
@@ -105,9 +126,33 @@ const server=http.createServer((req,res)=>{
    }
    if(width===1440){const controls=await page.locator('.essay-controls').boundingBox(),question=await page.locator('.essay-question').boundingBox(),editor=await page.locator('#essayText').boundingBox();assert(controls.x+controls.width<question.x);assert(editor.y>question.y+question.height);}
   }
+  await page.locator('#tabRecords').click();
+  assert.equal(await page.locator('#tabRecords').innerText(),'學習紀錄');
+  await page.setViewportSize({width:1440,height:1000});
+  const statBoxes=await page.locator('#panelRecords>.stats>.stat:visible').evaluateAll(nodes=>nodes.map(n=>({x:n.getBoundingClientRect().x,width:n.getBoundingClientRect().width,right:n.getBoundingClientRect().right})));
+  assert.equal(statBoxes.length,2);assert(Math.abs(statBoxes[0].width-statBoxes[1].width)<1);
+  const stats=await page.locator('#panelRecords>.stats').boundingBox();assert(Math.abs(statBoxes[1].right-(stats.x+stats.width))<1,'stats fill the row');
+  await page.locator('#tabEssay').click();
   assert.equal(await raw(),seeded);assert.equal(await page.evaluate(()=>localStorage.getItem('other-module-sentinel')),'不更動');assert.deepEqual(errors,[]);
   if(process.env.LAYOUT_SCREENSHOT_DIR){fs.mkdirSync(process.env.LAYOUT_SCREENSHOT_DIR,{recursive:true});await page.setViewportSize({width:1440,height:1000});await page.screenshot({path:path.join(process.env.LAYOUT_SCREENSHOT_DIR,engine+'-essay.png'),fullPage:true});}
-  await ctx.close();console.log('PASS layout review:',engine,base,'7-subject drilldown, missing vs zero, rubric math, read-only month history, old drafts/versions, mobile layout');
+  await page.goto(new URL('common-subjects/english-assistant/',base).href);
+  await page.locator('#tasks .card').first().waitFor();
+  assert.equal(await page.locator('#englishLearningRecords #history').count(),1);
+  assert.equal(await page.locator('#englishLearningRecords .usage-notes').count(),1);
+  assert(!(await page.locator('body').innerText()).includes('不要使用隨機10題'));
+  for(const width of [320,390,768,1440]){
+   await page.setViewportSize({width,height:1000});
+   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,'English assistant overflow '+width);
+   for(const row of await page.locator('#tasks .card>.buttons').all()){
+    const boxes=await row.locator('.btn').evaluateAll(nodes=>nodes.map(n=>({width:n.getBoundingClientRect().width,height:n.getBoundingClientRect().height})));
+    assert.equal(boxes.length,3);
+    for(const b of boxes){assert(Math.abs(b.width-boxes[0].width)<2,'equal action width '+width);assert(Math.abs(b.height-boxes[0].height)<2,'equal action height '+width);}
+   }
+  }
+  await page.locator('#tasks .card').first().getByRole('button',{name:'我已完成',exact:true}).click();
+  await page.reload();assert((await page.locator('#tasks .card').first().innerText()).includes('已記錄完成'));
+  assert.equal(await raw(),seeded);assert.equal(await page.evaluate(()=>localStorage.getItem('other-module-sentinel')),'不更動');assert.deepEqual(errors,[]);
+  await ctx.close();console.log('PASS layout review:',engine,base,'7-subject drilldown, missing vs zero, rubric math, read-only month history, old drafts/versions, real-record forecast, equal cards/actions, ability colors, mobile layout');
  }
  }finally{await browser.close();server.close();}
 })().catch(e=>{console.error(e);server.close();process.exitCode=1;});

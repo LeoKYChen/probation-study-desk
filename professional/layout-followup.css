@@ -1,0 +1,31 @@
+/* Follow-up slides 19–29: sizing, ability colors and a single records section. */
+.common-subjects-page #panelRecords>.stats{grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:18px}
+.english-assistant-page .usage-notes{border-top:1px solid #d4e4dc;margin-top:20px;padding-top:12px;font-size:.86rem;color:#547064}
+.english-assistant-page #tasks .card>.buttons{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;grid-auto-rows:1fr}
+.english-assistant-page #tasks .card>.buttons>.btn{width:100%;min-width:0;min-height:54px;padding:10px 8px;font-size:.88rem;text-align:center;white-space:normal;overflow-wrap:anywhere}
+.english-assistant-page #tasks .card>.buttons>span{grid-column:2/-1;align-self:center;text-align:center}
+.professional-page .essay-template-label select{max-width:none}
+.professional-page .essay-review-panel{background:#f2f7fd;border-color:#abc9e5;border-left:5px solid #2d6ba6}
+.professional-page .essay-review-panel .eyebrow,.professional-page .essay-review-panel h2{color:#245b8d}
+.professional-page #reviewScheduleHint{font-size:11.5px;line-height:1.65}
+.professional-page .content-collapse:has(.essay-analytics-panel){background:#fff8ed;border-color:#e2c79b;border-left:5px solid #b27220;--radar-accent:#a65e11;--radar-fill:#df9c353d}
+.professional-page .content-collapse:has(.essay-analytics-panel)>summary{color:#8a5314}
+.professional-page .weakness-priority-panel{background:#fff5f1;border-color:#e2beb2;border-left:5px solid #b25a42}
+.professional-page .weakness-priority-panel .eyebrow,.professional-page .weakness-priority-panel h2{color:#984d39}
+.professional-page .content-collapse:has(.v254-panel){background:#f7f3fd;border-color:#c9b9e4;border-left:5px solid #7651a3;--radar-accent:#7651a3;--radar-fill:#976bc43d}
+.professional-page .content-collapse:has(.v254-panel)>summary{color:#68478f}
+.professional-page .content-collapse-body>.essay-analytics-panel,.professional-page .content-collapse-body>.v254-panel{background:transparent}
+.professional-page .radar-area{fill:var(--radar-fill,#4c8ab43d);stroke:var(--radar-accent,#326d99)}
+.professional-page .radar-segment{stroke:var(--radar-accent,#326d99)}
+.professional-page .radar-dot{fill:var(--axis-color,var(--radar-accent,#326d99))}
+.professional-page .radar-label{fill:var(--axis-color,#29465a)}
+.professional-page .radar-grid{stroke:#b7b3c8}
+.professional-page polygon.radar-grid:nth-of-type(1){fill:#c9b7e02b}
+.professional-page polygon.radar-grid:nth-of-type(2){fill:#d4c6e63d}
+.professional-page polygon.radar-grid:nth-of-type(3){fill:#e3dbed66}
+.professional-page polygon.radar-grid:nth-of-type(4){fill:#f3eff8aa}
+.professional-page .radar-value-item{border-left:4px solid var(--axis-color,#7651a3)}
+.professional-page .radar-value-item strong{color:var(--axis-color,var(--radar-accent,#326d99))}
+.professional-page .sim-controls{grid-template-columns:minmax(0,300px)}
+@media(min-width:1100px){.professional-page #reviewScheduleHint{white-space:nowrap}}
+@media(max-width:600px){.common-subjects-page #panelRecords>.stats{grid-template-columns:1fr}.english-assistant-page #tasks .card>.buttons{grid-template-columns:minmax(0,1fr)}.english-assistant-page #tasks .card>.buttons>.btn{font-size:.9rem}.english-assistant-page #tasks .card>.buttons>span{grid-column:auto}}
