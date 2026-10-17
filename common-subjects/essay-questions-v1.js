@@ -15,8 +15,8 @@ window.PSD_ESSAY_QUESTIONS = [
       "exam": "112年司法特考三等國文",
       "year": 112,
       "section": "作文第一題（短文）：短文：普魯斯特與記憶材料",
-      "link": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=112120&y=2023",
-      "status": "已核對公開歷屆題意；官方年度檢索入口（原卷連結待逐題補對）"
+      "link": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=406&code=112130&q=1&s=0102&t=Q",
+      "status": "已核對考選部正式試卷PDF之命題核心（非原文轉錄）"
     },
     "adaptation": "取用正式試題的核心命題能力，情境及問法由本站重新編寫；不是原卷題目。",
     "original": false
@@ -36,8 +36,8 @@ window.PSD_ESSAY_QUESTIONS = [
       "exam": "112年司法特考三等國文",
       "year": 112,
       "section": "作文第一題（短文）：短文：記憶與反思",
-      "link": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=112120&y=2023",
-      "status": "已核對公開歷屆題意；官方年度檢索入口（原卷連結待逐題補對）"
+      "link": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=406&code=112130&q=1&s=0102&t=Q",
+      "status": "已核對考選部正式試卷PDF之命題核心（非原文轉錄）"
     },
     "adaptation": "取用正式試題的核心命題能力，情境及問法由本站重新編寫；不是原卷題目。",
     "original": false
@@ -57,8 +57,8 @@ window.PSD_ESSAY_QUESTIONS = [
       "exam": "113年司法特考三等國文",
       "year": 113,
       "section": "作文第一題（短文）：短文：《論語》各言其志",
-      "link": "https://www.3people.com.tw/%E9%87%8D%E8%A6%81%E8%80%83%E8%A8%8A/%E8%80%83%E5%8F%A4%E9%A1%8C/%E5%85%AC%E8%81%B7/%E5%8F%B8%E6%B3%95%E7%89%B9%E8%80%83/113/%E4%B8%89%E7%AD%89/%E5%9C%8B%E6%96%87%EF%BC%88%E4%BD%9C%E6%96%87%E8%88%87%E6%B8%AC%E9%A9%97%EF%BC%89.pdf",
-      "status": "公開完整歷屆試卷複本核對；非考選部直連"
+      "link": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=115&code=113120&q=1&s=0101&t=Q",
+      "status": "已核對考選部正式試卷PDF之命題核心（非原文轉錄）"
     },
     "adaptation": "取用正式試題的核心命題能力，情境及問法由本站重新編寫；不是原卷題目。",
     "original": false
@@ -78,8 +78,8 @@ window.PSD_ESSAY_QUESTIONS = [
       "exam": "113年司法特考三等國文",
       "year": 113,
       "section": "作文第一題（短文）：短文：《論語》各言其志",
-      "link": "https://www.3people.com.tw/%E9%87%8D%E8%A6%81%E8%80%83%E8%A8%8A/%E8%80%83%E5%8F%A4%E9%A1%8C/%E5%85%AC%E8%81%B7/%E5%8F%B8%E6%B3%95%E7%89%B9%E8%80%83/113/%E4%B8%89%E7%AD%89/%E5%9C%8B%E6%96%87%EF%BC%88%E4%BD%9C%E6%96%87%E8%88%87%E6%B8%AC%E9%A9%97%EF%BC%89.pdf",
-      "status": "公開完整歷屆試卷複本核對；非考選部直連"
+      "link": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=115&code=113120&q=1&s=0101&t=Q",
+      "status": "已核對考選部正式試卷PDF之命題核心（非原文轉錄）"
     },
     "adaptation": "取用正式試題的核心命題能力，情境及問法由本站重新編寫；不是原卷題目。",
     "original": false
@@ -99,8 +99,8 @@ window.PSD_ESSAY_QUESTIONS = [
       "exam": "114年司法特考三等國文",
       "year": 114,
       "section": "作文第一題（短文）：短文：旅人甲乙與J/P型",
-      "link": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=411&code=114120&q=1&s=0101&t=Q",
-      "status": "考選部官方試卷題意已核對"
+      "link": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=502&code=114120&q=1&s=0101&t=Q",
+      "status": "已核對考選部正式試卷PDF之命題核心（非原文轉錄）"
     },
     "adaptation": "取用正式試題的核心命題能力，情境及問法由本站重新編寫；不是原卷題目。",
     "original": false
@@ -120,8 +120,8 @@ window.PSD_ESSAY_QUESTIONS = [
       "exam": "114年司法特考三等國文",
       "year": 114,
       "section": "作文第一題（短文）：短文：按部就班與隨遇而安",
-      "link": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=411&code=114120&q=1&s=0101&t=Q",
-      "status": "考選部官方試卷題意已核對"
+      "link": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=502&code=114120&q=1&s=0101&t=Q",
+      "status": "已核對考選部正式試卷PDF之命題核心（非原文轉錄）"
     },
     "adaptation": "取用正式試題的核心命題能力，情境及問法由本站重新編寫；不是原卷題目。",
     "original": false
@@ -435,8 +435,8 @@ window.PSD_ESSAY_QUESTIONS = [
       "exam": "112年司法特考三等國文",
       "year": 112,
       "section": "作文第二題（長文）：長文：人生四大進路與理想圓滿",
-      "link": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=112120&y=2023",
-      "status": "已核對公開歷屆題意；官方年度檢索入口（原卷連結待逐題補對）"
+      "link": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=406&code=112130&q=1&s=0102&t=Q",
+      "status": "已核對考選部正式試卷PDF之命題核心（非原文轉錄）"
     },
     "adaptation": "取用正式試題的核心命題能力，情境及問法由本站重新編寫；不是原卷題目。",
     "original": false
@@ -456,8 +456,8 @@ window.PSD_ESSAY_QUESTIONS = [
       "exam": "112年司法特考三等國文",
       "year": 112,
       "section": "作文第二題（長文）：長文：人生四大進路與理想圓滿",
-      "link": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=112120&y=2023",
-      "status": "已核對公開歷屆題意；官方年度檢索入口（原卷連結待逐題補對）"
+      "link": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=406&code=112130&q=1&s=0102&t=Q",
+      "status": "已核對考選部正式試卷PDF之命題核心（非原文轉錄）"
     },
     "adaptation": "取用正式試題的核心命題能力，情境及問法由本站重新編寫；不是原卷題目。",
     "original": false
@@ -477,8 +477,8 @@ window.PSD_ESSAY_QUESTIONS = [
       "exam": "113年司法特考三等國文",
       "year": 113,
       "section": "作文第二題（長文）：長文：防微杜漸之我見",
-      "link": "https://www.3people.com.tw/%E9%87%8D%E8%A6%81%E8%80%83%E8%A8%8A/%E8%80%83%E5%8F%A4%E9%A1%8C/%E5%85%AC%E8%81%B7/%E5%8F%B8%E6%B3%95%E7%89%B9%E8%80%83/113/%E4%B8%89%E7%AD%89/%E5%9C%8B%E6%96%87%EF%BC%88%E4%BD%9C%E6%96%87%E8%88%87%E6%B8%AC%E9%A9%97%EF%BC%89.pdf",
-      "status": "公開完整歷屆試卷複本核對；非考選部直連"
+      "link": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=115&code=113120&q=1&s=0101&t=Q",
+      "status": "已核對考選部正式試卷PDF之命題核心（非原文轉錄）"
     },
     "adaptation": "取用正式試題的核心命題能力，情境及問法由本站重新編寫；不是原卷題目。",
     "original": false
@@ -498,8 +498,8 @@ window.PSD_ESSAY_QUESTIONS = [
       "exam": "113年司法特考三等國文",
       "year": 113,
       "section": "作文第二題（長文）：長文：防微杜漸之我見",
-      "link": "https://www.3people.com.tw/%E9%87%8D%E8%A6%81%E8%80%83%E8%A8%8A/%E8%80%83%E5%8F%A4%E9%A1%8C/%E5%85%AC%E8%81%B7/%E5%8F%B8%E6%B3%95%E7%89%B9%E8%80%83/113/%E4%B8%89%E7%AD%89/%E5%9C%8B%E6%96%87%EF%BC%88%E4%BD%9C%E6%96%87%E8%88%87%E6%B8%AC%E9%A9%97%EF%BC%89.pdf",
-      "status": "公開完整歷屆試卷複本核對；非考選部直連"
+      "link": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=115&code=113120&q=1&s=0101&t=Q",
+      "status": "已核對考選部正式試卷PDF之命題核心（非原文轉錄）"
     },
     "adaptation": "取用正式試題的核心命題能力，情境及問法由本站重新編寫；不是原卷題目。",
     "original": false
@@ -519,8 +519,8 @@ window.PSD_ESSAY_QUESTIONS = [
       "exam": "114年司法特考三等國文",
       "year": 114,
       "section": "作文第二題（長文）：長文：按部就班，還是隨遇而安",
-      "link": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=411&code=114120&q=1&s=0101&t=Q",
-      "status": "考選部官方試卷題意已核對"
+      "link": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=502&code=114120&q=1&s=0101&t=Q",
+      "status": "已核對考選部正式試卷PDF之命題核心（非原文轉錄）"
     },
     "adaptation": "取用正式試題的核心命題能力，情境及問法由本站重新編寫；不是原卷題目。",
     "original": false
@@ -540,8 +540,8 @@ window.PSD_ESSAY_QUESTIONS = [
       "exam": "114年司法特考三等國文",
       "year": 114,
       "section": "作文第二題（長文）：長文：按部就班，還是隨遇而安",
-      "link": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=411&code=114120&q=1&s=0101&t=Q",
-      "status": "考選部官方試卷題意已核對"
+      "link": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=502&code=114120&q=1&s=0101&t=Q",
+      "status": "已核對考選部正式試卷PDF之命題核心（非原文轉錄）"
     },
     "adaptation": "取用正式試題的核心命題能力，情境及問法由本站重新編寫；不是原卷題目。",
     "original": false
@@ -655,19 +655,19 @@ window.PSD_ESSAY_QUESTIONS = [
     "id": "essay-adapt-116-032",
     "type": "long",
     "score": 60,
-    "title": "期待如何塑造自我",
-    "body": "教師一句『你做得到』可能激勵學生，也可能讓他不敢承認自己的困難。請以『在他人的期待裡找到自己』為題，論述正負期待如何形塑行為，並說明人應如何回應他人的看法而保有自我判斷。",
+    "title": "人生為何需要縫隙",
+    "body": "一座森林裡的樹木過於密集，陽光無法抵達地面，幼苗因而難以生長；部分老樹倒下後，空出的地方反倒使新生命得到光照。請以「留白不是空白」為題，由這個自然現象聯想人生中的休息、空間或轉折。請寫出一段具體經歷，論述留白何以可能帶來新的成長，也思考留白是否存在界限。",
     "requirements": "模擬國考長文：篇幅不限，建議55分鐘；須完成立意、例證、論證與結論。",
     "skills": [
-      "分析他人期待的雙面性"
+      "以森林中的生存空間為引子作生命聯想，並反思限制"
     ],
     "difficulty": "中階",
     "source": {
       "exam": "113學年度學測國寫",
       "year": 113,
-      "section": "國寫第一大題（知性）：知性題：標籤與自我認同",
+      "section": "國寫第二大題（情意）：縫隙的聯想",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0O106352790519617185&xsmsid=0J066588036013658199",
-      "status": "大考中心官方命題特色說明核對"
+      "status": "大考中心官方試題特色／評分說明核對"
     },
     "adaptation": "取用正式試題的核心命題能力，情境及問法由本站重新編寫；不是原卷題目。",
     "original": false
