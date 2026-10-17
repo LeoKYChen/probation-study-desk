@@ -108,6 +108,34 @@ async function check(){
  await mobile.locator('#questionList button[data-id]').first().waitFor({timeout:30000});
  const dimensions=await mobile.evaluate(()=>({page:document.documentElement.scrollWidth,viewport:document.documentElement.clientWidth}));
  assert.ok(dimensions.page<=dimensions.viewport+2,'mobile must not overflow horizontally '+JSON.stringify(dimensions));
+ async function checkMobileControls(width){
+   await mobile.setViewportSize({width,height:844});
+   await mobile.locator('.site-header nav .offline-entry').waitFor({timeout:10000});
+   const geometry=await mobile.evaluate(()=>{
+     const $=selector=>document.querySelector(selector),rect=element=>{
+       const r=element.getBoundingClientRect(),style=getComputedStyle(element);
+       return {top:r.top,bottom:r.bottom,left:r.left,right:r.right,width:r.width,height:r.height,whiteSpace:style.whiteSpace,display:style.display};
+     };
+     return {
+       full:document.documentElement.scrollWidth,viewport:document.documentElement.clientWidth,
+       navLinks:[...document.querySelectorAll('.site-header nav a')].map(rect),
+       offline:rect($('.site-header nav .offline-entry')),
+       timer:[rect($('#startTimer')),rect($('#resetTimer'))],
+       backup:[rect($('#export')),rect($('#import')),rect($('#clear'))],
+       labels:[$('#export').textContent.trim(),$('#import').textContent.trim(),$('#clear').textContent.trim()]
+     };
+   });
+   assert.ok(geometry.full<=geometry.viewport+2,'horizontal scroll at '+width+'px: '+JSON.stringify(geometry));
+   assert.ok(geometry.offline.top>=Math.max(...geometry.navLinks.map(x=>x.bottom))+8,'offline entry must have a separate row and breathing room at '+width+'px: '+JSON.stringify(geometry));
+   assert.deepEqual(geometry.labels,['匯出備份','匯入備份','清除紀錄'],'short labels match the mobile request');
+   assert.ok(geometry.timer.every(x=>x.height<=65&&x.whiteSpace==='nowrap'),'timer buttons must stay single-line at '+width+'px: '+JSON.stringify(geometry.timer));
+   assert.ok(geometry.backup.every(x=>x.height<=60&&x.whiteSpace==='nowrap'),'backup buttons must stay single-line at '+width+'px: '+JSON.stringify(geometry.backup));
+   assert.ok(Math.abs(geometry.timer[0].top-geometry.timer[1].top)<=2,'timer actions must share a row at '+width+'px');
+   assert.ok(geometry.backup.every(x=>Math.abs(x.top-geometry.backup[0].top)<=2),'backup actions must share one row at '+width+'px');
+   assert.ok(geometry.backup.every(x=>x.right<=geometry.viewport+2),'backup actions must fit viewport at '+width+'px');
+ }
+ for(const width of [390,360,320])await checkMobileControls(width);
+ await mobile.setViewportSize({width:390,height:844});
  await mobile.locator('#startTimer').click();
  assert.equal(await mobile.locator('#startTimer').isDisabled(),true,'mobile timer click must work');
  await mobile.locator('#answer').fill('手機介面作答驗收');
