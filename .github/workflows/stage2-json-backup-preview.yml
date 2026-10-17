@@ -32,6 +32,8 @@ jobs:
     timeout-minutes: 18
     steps:
       - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}
       - name: Static syntax and safety tests
         shell: bash
         run: |
@@ -79,14 +81,14 @@ jobs:
           test -s cloudflare-main-mirror-dist/backup/unified-core.js
           node --check cloudflare-main-mirror-dist/backup/unified-core.js
       - name: Deploy dedicated preview only, never production
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/phase2/manual-json-backup-audit-20261017'
+        if: (github.event_name == 'push' && github.ref == 'refs/heads/phase2/manual-json-backup-audit-20261017') || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'phase2/manual-json-backup-audit-20261017' && github.event.pull_request.base.ref == 'main')
         uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy cloudflare-main-mirror-dist --project-name=probation-study30-test --branch=stage2-json-backup-preview
       - name: Verify preview page and files after deploy
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/phase2/manual-json-backup-audit-20261017'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/phase2/manual-json-backup-audit-20261017'
         shell: bash
         run: |
           set -euo pipefail
