@@ -31,6 +31,7 @@ jobs:
         shell: bash
         run: |
           node --check common-subjects/essay-questions-v1.js
+          node --check common-subjects/essay-questions-v2.js
           node --check common-subjects/english-v02.js
           node --check common-subjects/test-v02.cjs
           node common-subjects/test-v02.cjs
