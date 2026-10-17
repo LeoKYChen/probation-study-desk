@@ -6,6 +6,8 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const path=require('node:path');
 const root=path.resolve(process.argv[2]||'.');
+const dailyCount=JSON.parse(fs.readFileSync(path.join(root,'daily-simulation/questions.json'),'utf8')).questions.length;
+assert(dailyCount>=125,'Daily source lost canonical questions');
 const scheme='file://'+path.join(root,'index.html');
 const engine=process.env.TEST_BROWSER==='webkit'?webkit:chromium;
 (async()=>{
@@ -94,7 +96,7 @@ const engine=process.env.TEST_BROWSER==='webkit'?webkit:chromium;
   await clean.close();
   // Original v2.5 daily practice and common-subject daily English must load JSON offline.
   await page.goto('file://'+path.join(root,'v2.5/daily-practice.html'),{waitUntil:'load'});
-  await page.waitForFunction(()=>document.querySelector('#count')?.textContent.includes('125'),null,{timeout:15000});
+  await page.waitForFunction(count=>document.querySelector('#count')?.textContent.includes(String(count)),dailyCount,{timeout:15000});
   await page.goto('file://'+path.join(root,'common-subjects/daily/index.html'),{waitUntil:'load'});
   await page.locator('#app').waitFor({state:'visible',timeout:15000});
   // Source-attributed catalog shard lookups work without file:// fetch.
@@ -112,7 +114,7 @@ const engine=process.env.TEST_BROWSER==='webkit'?webkit:chromium;
   assert(page.url()===scheme,'offline must not navigate to remote AI');
   assert.equal(requests.length,0,'all file-mode operations should stay offline');
   assert.deepEqual(errors,[],'no original entry may throw a page error');
-  console.log('PASS original GitHub ZIP '+process.env.TEST_BROWSER+': homepage 5, professional, common essay write/reload, daily 125, juvenile weekly 11, v2.5 write/reload, extra practice, catalog, backup, offline AI guard');
+  console.log('PASS original GitHub ZIP '+process.env.TEST_BROWSER+': homepage 5, professional, common essay write/reload, daily '+dailyCount+', juvenile weekly 11, v2.5 write/reload, extra practice, catalog, backup, offline AI guard');
   await ctx.close();
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1});
