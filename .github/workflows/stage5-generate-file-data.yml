@@ -35,6 +35,8 @@ jobs:
           git add file-data/*.generated.js
           if ! git diff --cached --quiet; then
             git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'build(stage5): sync file URL data directly from canonical JSON'
-            git push origin HEAD:feature/stage5-file-zip-offline-20261018
           fi
+          # Push even if generated assets are unchanged: the main branch merge
+          # itself must be reflected in the reviewed PR history.
+          git push origin HEAD:feature/stage5-file-zip-offline-20261018
           git status --short
