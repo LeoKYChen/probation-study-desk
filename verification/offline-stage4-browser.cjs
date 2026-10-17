@@ -3,7 +3,9 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('n
 const {chromium,webkit}=require('playwright');
 const root=path.resolve(__dirname,'..'),prefix=process.env.TEST_OFFLINE_PREFIX||'';
 const mime={'.html':'text/html;charset=utf-8','.js':'text/javascript;charset=utf-8','.json':'application/json;charset=utf-8','.css':'text/css;charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.webmanifest':'application/manifest+json','.md':'text/markdown;charset=utf-8'};
+let dropNetwork=false;
 const server=http.createServer((req,res)=>{
+ if(dropNetwork){req.socket.destroy();return;}
  let sub=decodeURIComponent(new URL(req.url,'http://localhost').pathname).replace(/^\//,'');
  if(prefix&&sub.startsWith(prefix.replace(/^\//,'')+'/'))sub=sub.slice(prefix.replace(/^\//,'').length+1);
  if(!sub||sub.endsWith('/'))sub+='index.html';
@@ -33,7 +35,8 @@ async function scenario(engine,name){
  });
  assert(snapshot&&snapshot.count>=190,'all stage4 assets must be in offline snapshot');
  const initial=await page.evaluate(()=>JSON.stringify(Object.entries(localStorage)));
- await ctx.setOffline(true);
+ if(engine===webkit)dropNetwork=true;
+ else await ctx.setOffline(true);
  const past=await ctx.newPage();
  await past.goto(base+'/v2.5/',{waitUntil:'load',timeout:25000});
  await past.locator('#issueInput').waitFor({timeout:12000});
@@ -57,11 +60,12 @@ async function scenario(engine,name){
  const news=await ctx.newPage();await news.goto(base+'/juvenile-news/',{waitUntil:'load',timeout:25000});
  await news.locator('#root').waitFor();
  await news.waitForFunction(()=>document.querySelector('#root')?.textContent.length>30,{timeout:14000});
- await ctx.setOffline(false);
+ if(engine===webkit)dropNetwork=false;
+ else await ctx.setOffline(false);
  const after=await past.evaluate(()=>JSON.parse(localStorage.getItem('probation-study-desk-v24')));
  assert(Object.values(after).some(v=>String(v.issue||'').includes('第四階段離線申論原稿')));
  assert(after && Object.keys(after).length>0,'offline work must be retained after reconnect');
- console.log('PASS '+name+prefix+': '+snapshot.count+' cached assets; airplane-mode past essay, common essay, daily practice, professional, news, JSON backup and print pages; answer persistence');
+ console.log('PASS '+name+prefix+': '+snapshot.count+' cached assets; '+(engine===webkit?'server-network interruption':'actual browser airplane mode')+'; past essay, common essay, daily practice, professional, news, JSON backup and print pages; answer persistence');
  await ctx.close();
  }finally{await browser.close();}
 }
