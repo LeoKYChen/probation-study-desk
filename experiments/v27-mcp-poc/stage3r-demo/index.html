@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'none'; connect-src 'none'; frame-src 'none'; object-src 'none'; form-action 'none'; base-uri 'none'">
+<meta name="color-scheme" content="light">
+<title>v2.7 · 法規與函釋來源分級示範</title>
+<link rel="stylesheet" href="style.css">
+<script src="model.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<main class="wrap">
+  <header class="hero">
+    <div class="topline"><span class="eyebrow">V2.7 · STAGE 3R · OFFLINE</span><span class="env-tag">獨立研究版</span></div>
+    <h1>法規與函釋<br><span class="accent">來源分級顯示</span></h1>
+    <p class="intro">同一段法律文字，「官方全文」「官方要旨」和「本站摘要」的證明力不同。這個示範將來源、版本及效力資訊分開呈現，避免將未驗證內容誤認為現行法。</p>
+    <div class="disclaimer" role="note"><span aria-hidden="true">ⓘ</span><span><strong>本頁全部是人工合成記錄，非實際法條或函釋。</strong> 下方驗收數字來自先前指定樣本，並不代表這幾筆示範內容經官方核對；本頁無網路請求，也未接入正式 v2.7。</span></div>
+    <div class="metrics" aria-label="歷史抽樣驗收結果">
+      <div class="metric"><div class="metric-number">20<span>/20</span></div><div class="metric-caption">法規指定項目抽樣通過</div></div>
+      <div class="metric"><div class="metric-number">17<span>/21</span></div><div class="metric-caption">函釋官方全文已核對</div></div>
+      <div class="metric"><div class="metric-number">4<span>/21</span></div><div class="metric-caption">函釋僅官方要旨已核對</div></div>
+    </div>
+  </header>
+  <section class="section" aria-labelledby="samples-title">
+    <div class="section-head"><div><div class="eyebrow">SOURCE TRANSPARENCY</div><h2 id="samples-title">分層內容示範</h2><p class="description">點選類別查看不同來源等級；日期與文字皆為合成資料。</p></div></div>
+    <nav class="filters" aria-label="示範資料類別">
+      <button type="button" class="filter is-selected" data-filter="all" aria-pressed="true">全部資料</button>
+      <button type="button" class="filter" data-filter="law" aria-pressed="false">法規版本</button>
+      <button type="button" class="filter" data-filter="interpretation" aria-pressed="false">行政函釋</button>
+    </nav>
+    <div id="sample-count" class="small-count" aria-live="polite">讀取合成資料中…</div>
+    <div id="cards" class="cards" aria-live="polite"></div>
+    <noscript><p class="no-script">此離線示範需要啟用 JavaScript 才能切換合成資料；它不會連線到任何法院或法規網站。</p></noscript>
+  </section>
+  <section class="section explanation" aria-labelledby="rules-title">
+    <div class="eyebrow">INTERPRETATION RULES</div>
+    <h2 id="rules-title">三條不能省略的判斷</h2>
+    <div class="rules">
+      <div class="rule"><span class="rule-no">01</span><div><h3>修正公布日不等於施行日</h3><p>僅有修正日期，不足以判定某條文何時開始適用；另須查個別施行條款與過渡規定。</p></div></div>
+      <div class="rule"><span class="rule-no">02</span><div><h3>「官方要旨」不是「公文全文」</h3><p>原網站只公開要旨時，不能將要旨或本站自行整理的說明提升成官方全文。</p></div></div>
+      <div class="rule"><span class="rule-no">03</span><div><h3>來源核對不代表現行效力</h3><p>曾比對成功的快照會過期。法條的現行版本、函釋是否仍適用，都須再確認。</p></div></div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div><strong>Stage 3r · 研究用途</strong><p>沒有真實法規全文、函釋公文、個人資料、PDF 或裁判書。未經正式整合／來源驗證／授權，不具備正式站上線資格。</p></div>
+    <p>先前驗收範圍：<a href="https://github.com/LeoKYChen/probation-study-desk/blob/experiment/v27-mcp-stage3r/experiments/v27-mcp-poc/STAGE1_ACCEPTANCE.md" target="_blank" rel="noopener noreferrer">法規</a> · <a href="https://github.com/LeoKYChen/probation-study-desk/blob/experiment/v27-mcp-stage3r/experiments/v27-mcp-poc/STAGE2_ACCEPTANCE.md" target="_blank" rel="noopener noreferrer">函釋</a></p>
+  </footer>
+</main>
+</body>
+</html>
