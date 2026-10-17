@@ -16,7 +16,7 @@
   }
   function buildPrompt(q, answer) {
     if (!q || !q.id || !q.body || !q.subject) throw Error('目前題目資料不完整');
-    if (!String(answer || '').trim()) throw Error('請先在「我的爭點整理」完成作答');
+    if (!String(answer || '').trim()) throw Error('請先在「我的練習紀錄」的完整申論答案欄完成作答');
     var points = Array.isArray(q.points) ? q.points : [];
     var directions = Array.isArray(q.direction) ? q.direction : [];
     return [
