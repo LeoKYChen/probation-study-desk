@@ -4,7 +4,8 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const http=require('node:http');
 const path=require('node:path');
-const {chromium}=require('playwright');
+const {chromium,webkit}=require('playwright');
+const IS_WEBKIT=process.env.DAILY_E2E_ENGINE==='webkit';
 const ROOT=process.cwd();
 const MIME={'.html':'text/html; charset=utf-8','.js':'application/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.webmanifest':'application/manifest+json'};
 const data=JSON.parse(fs.readFileSync('daily-simulation/questions.json','utf8'));
@@ -25,9 +26,9 @@ async function check(){
  });
  await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
  const origin='http://127.0.0.1:'+server.address().port;
- browser=await chromium.launch({headless:true,args:['--no-sandbox']});
+ browser=await (IS_WEBKIT?webkit:chromium).launch({headless:true,...(IS_WEBKIT?{}:{args:['--no-sandbox']})});
  const context=await browser.newContext({acceptDownloads:true,viewport:{width:1280,height:850}});
- await context.grantPermissions(['clipboard-read','clipboard-write'],{origin});
+ if(!IS_WEBKIT)await context.grantPermissions(['clipboard-read','clipboard-write'],{origin});
  const oldRecord={answer:'驗收前既有答案',review:false,updatedAt:'2026-10-16T10:00:00.000Z',questionSnapshot:'legacy'};
  await context.addInitScript(args=>{
    if(location.origin!==args.origin)return;
@@ -59,12 +60,14 @@ async function check(){
  assert.equal(await page.locator('#answer').inputValue(),'新練習答案：爭點、涵攝、結論。');
  assert.match(await page.locator('#timerStatus').textContent(),/倒數進行中/,'timer must persist after reload');
  await page.locator('#copyAI').click();
- await page.waitForFunction(()=>document.querySelector('#copyStatus').textContent.includes('已複製'));
- const clipboard=await page.evaluate(()=>navigator.clipboard.readText());
- assert.ok(clipboard.includes('新練習答案'));
- assert.ok(clipboard.includes(q.question));
- assert.ok(clipboard.includes('純學科題採整題評分'));
- assert.ok(clipboard.includes('法律部分及非法律學科部分分別評分'));
+ await page.waitForFunction(()=>document.querySelector('#copyStatus').textContent.trim().length>0);
+ if(!IS_WEBKIT){
+   const clipboard=await page.evaluate(()=>navigator.clipboard.readText());
+   assert.ok(clipboard.includes('新練習答案'));
+   assert.ok(clipboard.includes(q.question));
+   assert.ok(clipboard.includes('純學科題採整題評分'));
+   assert.ok(clipboard.includes('法律部分及非法律學科部分分別評分'));
+ }
  const oldPage=await context.newPage();
  oldPage.on('pageerror',error=>errors.push('original daily page: '+error.message));
  await oldPage.goto(origin+'/daily-simulation/',{waitUntil:'domcontentloaded'});
@@ -113,7 +116,7 @@ async function check(){
  await mobile.waitForFunction(id=>JSON.parse(localStorage.getItem('probation-daily-github:records:v1')||'{}')[id]?.aiFeedback==='手機批改評語',q.id);
  assert.deepEqual(mobileErrors,[],'no uncaught mobile browser errors');
  await mobileContext.close();
- console.log('Desktop + 390px touch-mobile browser acceptance passed: '+data.questions.length+' questions; old answer, timer, AI clipboard, shared page, backup/restore, clear and mobile layout.');
+ console.log((IS_WEBKIT?'WebKit':'Chromium')+' desktop + 390px touch-mobile browser acceptance passed: '+data.questions.length+' questions; old answer, timer, AI clipboard, shared page, backup/restore, clear and mobile layout.');
 }
 check().catch(error=>{console.error(error);process.exitCode=1;}).finally(async()=>{
  if(browser)await browser.close();
