@@ -232,6 +232,8 @@ function planReview({ features, approvals, evidence, now, candidateLink } = {}) 
   return deepFreeze({
     status: ids.length===0 ? "no_scope_selected" :
       blocked.length ? "court_features_not_release_ready" :
+      (ids.length===1 && ids[0]==="official_court_portal") ?
+        "portal_only_no_integration" :
       "research_components_ready_for_separate_review_only",
     features:ids,
     reviewable, blocked,
