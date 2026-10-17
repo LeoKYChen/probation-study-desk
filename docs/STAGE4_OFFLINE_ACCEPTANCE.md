@@ -14,7 +14,7 @@
 - 將 `offline-manifest.json` 由原 75 個擴充至 **183 個**已發布資源（原有資源完整保留），納入專業科目、426題、125題每日模擬、共同科目、少年司法週報、JSON 備份及列印中心。
 - 在首頁側邊欄加入「離線閱讀與作答」，保留五個學習主入口。
 - 新增 `offline/index.html` 操作頁；沿用 `offline.js` 的既有下載／更新、進度、狀態、安裝主畫面按鈕。
-- 根目錄 Service Worker **維持原版檔案位元組不變**，原有的原子完整快照、下載失敗保留上一份快取和必要頁面的線上優先規則均保留。新增頁面於離線狀態從完整下載的快取取用；恢復連線後應主動按「更新離線資料」。
+- 根目錄 Service Worker 經實際 Cloudflare 測試發現必須精確修正：Cloudflare 將 `/dir/index.html` 轉成 `/dir/`、`/x.html` 轉成 `/x`，舊程式會把這些正常轉址誤判成下載失敗。現在**只接受同來源、相同路徑的這兩種標準 HTML 轉址**，其他轉址仍拒絕；原子完整快照、失敗時保留上一份快取、原有 localStorage 鍵與必要頁面的線上優先規則均保留。已更新 `docs/LAYOUT_REVIEW_CHANGES.json` 的來源雜湊，完成既有版面完整性驗收。
 - 修正原對話框「342 題專題」等不符合目前階段範圍的舊文案。
 
 ## 正確使用
@@ -38,4 +38,5 @@
 
 - `node verification/offline-stage4-check.cjs`：完整列表、確切檔案路徑、JSON、HTML 依賴、原子快照機制及五入口保留。
 - `verification/offline-stage4-browser.cjs`：實際 Chromium/WebKit 模擬手機「下載 → 飛航模式 → 考古題／國文作文作答 → 重新開頁答案存在 → 每日模擬／專業科目／少年週報／備份／列印中心離線可開」。
+- `verification/offline-stage4-live-download.cjs`：**使用真實 Cloudflare 測試網址**點擊下載，驗證全部 183 項檔案下載成功，真正切換離線後可開啟主動回憶並儲存／重開作文。先前因 Cloudflare HTML 轉址造成使用者下載失敗，已由本項測試抓出並修正。
 - Cloudflare 只部署 `stage4-offline-preview` **獨立分支**，並驗證其內容與該分支 HEAD 逐檔一致。正式部署必須另經使用者確認。
