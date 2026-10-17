@@ -41,7 +41,17 @@ const engine=process.env.TEST_BROWSER==='webkit'?webkit:chromium;
   await page.goto(scheme,{waitUntil:'load'});
   await page.locator('a[href="./daily-simulation/"]').click();
   assert.match(page.url(),/\/daily-simulation\/index\.html$/);
-  await page.waitForFunction(()=>document.querySelector('#cards')?.children.length>0,null,{timeout:20000});
+  try{await page.waitForFunction(()=>document.querySelector('#cards')?.children.length>0,null,{timeout:20000});}
+  catch(e){
+   console.log('FILE DAILY DIAGNOSTIC:',await page.evaluate(()=>({
+    href:location.href,compat:typeof window.PSDRegisterFileData,
+    loaded:Object.keys(window.PSDFileData||{}),
+    scripts:[...document.scripts].map(s=>s.src||s.textContent.slice(0,70)).slice(0,12),
+    notice:document.querySelector('#notice')?.textContent,
+    cards:document.querySelector('#cards')?.children.length
+   })), 'JS ERRORS:',errors.slice(-12));
+   throw e;
+  }
   const daily=await page.evaluate(()=>JSON.parse(localStorage.getItem('daily-reading-test:dataset')||'null'));
   // The app may store daily source lazily; the actual card count is the primary gate.
   assert((await page.locator('#cards').innerText()).length>20);
