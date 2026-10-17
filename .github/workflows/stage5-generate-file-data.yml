@@ -1,0 +1,36 @@
+name: Stage 5 rebuild file URL JSON mirrors (source-locked)
+
+on:
+  push:
+    branches:
+      - feature/stage5-file-zip-offline-20261018
+    paths:
+      - scripts/generate-file-data.cjs
+      - .github/workflows/stage5-generate-file-data.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-and-commit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: feature/stage5-file-zip-offline-20261018
+          persist-credentials: true
+      - name: Generate deterministic local JS equivalents from original committed JSON
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check scripts/generate-file-data.cjs
+          node scripts/generate-file-data.cjs --write
+          node scripts/generate-file-data.cjs --check
+          git add file-data/*.generated.js
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'build(stage5): sync file URL data directly from canonical JSON'
+            git push origin HEAD:feature/stage5-file-zip-offline-20261018
+          fi
+          git status --short
