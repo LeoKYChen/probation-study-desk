@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>完整學習紀錄備份｜觀護人學習平台</title>
+<meta name="description" content="將考古題、每日模擬題、作文與英文學習紀錄匯出為單一 JSON，安全合併還原。">
+<style>
+:root{font-family:system-ui,-apple-system,"Noto Sans TC","PingFang TC",sans-serif;color:#20352c;background:#f6f6f0}
+*{box-sizing:border-box}body{margin:0;line-height:1.75}
+header,main,footer{max-width:940px;margin:0 auto;padding:20px}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid #cbd7cd}
+a{color:#205641}main{padding-top:35px}h1{font-size:clamp(24px,4vw,35px);margin:0 0 9px}h2{font-size:21px;margin:0 0 10px}
+h3{font-size:17px}.muted{color:#53695b}
+.card{padding:24px;border:1px solid #d2dfd5;background:white;border-radius:14px;margin-bottom:18px}
+button,.file-label{font:inherit;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:9px 16px;border-radius:8px;border:1px solid #7c9a87;background:#f2f7f3;color:#214b34}
+button.primary,.file-label.primary{background:#245b48;color:white;border-color:#245b48}
+button:disabled{opacity:.55;cursor:not-allowed}.actions{display:flex;flex-wrap:wrap;gap:12px;margin:15px 0}
+.note{font-size:14px;background:#f3f5ed;border-left:3px solid #7d937e;padding:10px 14px}
+input[type=file]{max-width:100%}input[type=checkbox]{width:18px;height:18px;vertical-align:middle;margin-right:7px}
+.check{display:block;padding:8px 0}.tableWrap{max-width:100%;overflow:auto}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{border-bottom:1px solid #e0e7e0;text-align:left;padding:9px}
+#message{background:#eaf3ea;padding:12px 15px;border-radius:8px;min-height:49px;white-space:pre-wrap}
+#message[data-error="1"]{background:#fff1e9;color:#7d381e}
+#source{overflow-wrap:anywhere}
+footer{color:#607267;font-size:13px}ul{columns:2;max-width:780px;padding-left:24px}
+@media(max-width:600px){ul{columns:1}.card{padding:17px}header{flex-wrap:wrap}}
+</style>
+</head>
+<body>
+<header><strong>觀護人學習平台</strong><a href="../">← 返回學習首頁</a></header>
+<main>
+<h1>完整學習紀錄備份</h1>
+<p class="muted">一份 JSON 保存本網站目前瀏覽器中的練習紀錄，再由你自行上傳私人 Google Drive；換裝置時匯入即可。不要求帳號、不連接 Google Drive，也不會將答案送到伺服器。</p>
+<div class="card">
+<h2>① 下載這台裝置的紀錄</h2>
+<p id="summary">正在檢查資料…</p>
+<ul id="modules" aria-label="本瀏覽器有紀錄的學習模組"></ul>
+<div class="actions"><button id="export" class="primary" type="button">下載完整學習紀錄 JSON</button><button id="refresh" type="button">重新檢查</button></div>
+<p class="note"><strong>重要：</strong>請先回到各練習頁面，確認最新文字顯示已儲存，並關閉正在編輯的其他分頁，再按下載。此頁只能讀取<strong>目前網址</strong>的紀錄；GitHub Pages 與 Cloudflare 是不同網址，需分別下載後再手動合併。進行中的分頁計時（sessionStorage）不保證能由這一頁備份。</p>
+</div>
+<div class="card">
+<h2>② 在另一台裝置匯入</h2>
+<p>先從 Google Drive 把 JSON 下載到這台裝置。選擇檔案後會顯示預覽；<strong>預覽不會修改任何原有紀錄</strong>。</p>
+<label class="file-label primary" for="importFile">選擇完整備份 JSON</label>
+<input id="importFile" type="file" accept=".json,application/json" aria-label="選擇完整備份 JSON">
+<section id="preview" hidden aria-label="匯入預覽">
+<h3>匯入資料預覽</h3>
+<p id="source"></p>
+<div class="tableWrap"><table><thead><tr><th>學習模組</th><th>處理方式</th><th>新增</th><th>衝突版本</th></tr></thead><tbody id="previewTable"></tbody></table></div>
+<p class="note" id="conflicts"></p>
+<h3>匯入前保護</h3>
+<div class="actions"><button type="button" id="backupBefore">先下載這台裝置的保護備份</button></div>
+<label class="check"><input id="confirmSafe" type="checkbox">我已確認匯入前備份檔實際儲存在裝置上。</label>
+<label class="check"><input id="confirmTabs" type="checkbox">我已關閉其他正在作答的網站分頁，避免舊內容重新覆蓋。</label>
+<div class="actions"><button id="restore" type="button" class="primary" disabled>確認安全合併還原</button></div>
+</section>
+</div>
+<div class="card">
+<h2>③ 保留兩台裝置的不同答案</h2>
+<p>遇到相同題目或同一天的不同版本，系統<strong>不會自動覆蓋原答案</strong>。這台裝置的原紀錄保留，備份中的不同版本會另存成「衝突紀錄」，以免消失。你可以下載衝突版本檔自行保存、比較；目前不會自動替你選擇哪一份比較好。</p>
+<div class="actions"><button type="button" id="downloadConflicts">下載衝突版本 JSON</button></div>
+</div>
+<p id="message" role="status" aria-live="polite">此功能僅在你的瀏覽器中處理檔案。</p>
+</main>
+<footer>個人作答、筆記與 AI 評語可能含私人資料；請只上傳到你的私人 Google Drive，勿上傳公開 GitHub 或分享公開連結。這個頁面不支援舊模組單獨 JSON 直接合併，舊檔請仍從原模組匯入。</footer>
+<script src="./unified-core.js"></script><script src="./app.js"></script>
+</body>
+</html>
