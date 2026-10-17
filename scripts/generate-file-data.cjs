@@ -28,7 +28,13 @@ for(const [group,filenames] of Object.entries(groups)){
   assert(fs.statSync(path.join(root,name)).isFile(),'Source JSON missing '+name);
   data[name]=JSON.parse(fs.readFileSync(path.join(root,name),'utf8'));
  }
- if(group==='daily')assert.equal(data['daily-simulation/questions.json'].questions.length,125);
+ if(group==='daily'){
+  const questions=data['daily-simulation/questions.json'].questions;
+  assert(Array.isArray(questions)&&questions.length>=125,'Daily simulation unexpectedly lost original questions');
+  assert.equal(new Set(questions.map(q=>q.id)).size,questions.length,'Daily simulation contains duplicate question IDs');
+  assert(questions.every(q=>q.id&&typeof q.question==='string'&&q.question.trim()),'Daily simulation is missing question text or IDs');
+  console.log('Source-locked daily questions:',questions.length);
+ }
  if(group==='weekly')assert(data['juvenile-news/issues.json'].issues.length>0);
  const blob=JSON.stringify(data).replace(/</g,'\\u003c').replace(/\u2028/g,'\\u2028').replace(/\u2029/g,'\\u2029');
  const script='/* GENERATED from committed JSON; do not hand-edit. */\n'+
