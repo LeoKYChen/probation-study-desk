@@ -5,26 +5,26 @@
     {
       "path": "common-subjects/catalog/index.html",
       "base_sha256": "c3993bd106af356f064551ac490795cbefb3ee3b336f2014d38caa34fd083187",
-      "sha256": "ec43d988d51e4ae7c18caa59bd359ccb8fc539c7750b66f931547afb791cc9e7",
-      "reason": "Shorten development-only introduction; keep source and attribution."
+      "sha256": "ecfafab6ba3422c2a61387f164db219855ee74ec605b6d83feee9d65b22ae358",
+      "reason": "Shorten development-only introduction; keep source and attribution. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed."
     },
     {
       "path": "common-subjects/daily/index.html",
       "base_sha256": "63f88c07844a9f3d99c738864cb385ea6d744bbb094bb70e7b6bbc9c1d030a1b",
-      "sha256": "f161df6df54b5ba2d694be75a0024d25703798a93a69cca61d0bd037f53f360b",
-      "reason": "Shorten development-version storage explanation; retain replace/backup warning."
+      "sha256": "8e95c5a1f643e43b22b68c70e65e84565bd1ffe0f2a3e67832d2eb91289e4b4b",
+      "reason": "Shorten development-version storage explanation; retain replace/backup warning. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed."
     },
     {
       "path": "common-subjects/english-assistant/index.html",
       "base_sha256": "789c59675f5704659e3ba79260661980e6cc0260ddc49c3610f8da34e54d1c7c",
-      "sha256": "22e1f3d752942087388e024740e3bed58b2a3d72ff6dd911f9fdcf1fd2d2a892",
-      "reason": "Remove outdated personal-history assumption and development-version details. Slides 20–22: merge history/usage panels, remove marked text and equalize action sizing."
+      "sha256": "57758e5ec85e58e5f0529ba1e37d4d540a6da7b6e5e95602a89251a9d5bfff3f",
+      "reason": "Remove outdated personal-history assumption and development-version details. Slides 20–22: merge history/usage panels, remove marked text and equalize action sizing. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed."
     },
     {
       "path": "common-subjects/index.html",
       "base_sha256": "d9b28afda56727a618a6043d3000b45ae4c0004353dc1d1dda7d02e879587c8f",
-      "sha256": "cc5211dceb4cda87b03f891f5ccfa83a133b67101bcf53ea5e32b0fece0cb5b4",
-      "reason": "Slides 4–7: remove callout/icons, widen topic and editor, repair timer layout; shorten development prose. Slide 19: remove records icon and make both visible stats fill the row."
+      "sha256": "9f4f402248100f1beba84f36dd9ddece7076e27e5a05c2d7ed4a8460b570d9b8",
+      "reason": "Slides 4–7: remove callout/icons, widen topic and editor, repair timer layout; shorten development prose. Slide 19: remove records icon and make both visible stats fill the row. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed."
     },
     {
       "path": "professional/data-health.js",
@@ -41,8 +41,8 @@
     {
       "path": "professional/index.html",
       "base_sha256": "115a1a32e125e7215c4336f4d079d434588308f7fff7fb69e53f446352dddf4b",
-      "sha256": "1ea98801370e141f1323aef2bbc3117138352a9f6367d97f7bf9a11565cc841a",
-      "reason": "Slides 2,8–17: remove marked prose, add chart/history hosts, group health under existing import panel. Follow-up slides 24–29 remove marked text, retain actual-record forecast, shorten 10-minute label. Keep four-grid drafts and full answer expanded by default; remove explanation only."
+      "sha256": "8346e5efa487226a497300ebcf685cb2c71bd6e9553311d16b09f6decbe0dd98",
+      "reason": "Slides 2,8–17: remove marked prose, add chart/history hosts, group health under existing import panel. Follow-up slides 24–29 remove marked text, retain actual-record forecast, shorten 10-minute label. Keep four-grid drafts and full answer expanded by default; remove explanation only. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed."
     },
     {
       "path": "professional/layout-followup.css",
