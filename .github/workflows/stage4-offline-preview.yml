@@ -1,0 +1,101 @@
+name: Stage 4 offline reading writing and safe cache preview
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - offline/**
+      - sw.js
+      - offline.js
+      - offline-manifest.json
+      - index.html
+      - scripts/build-cloudflare-main-mirror.py
+      - verification/offline-stage4-*
+      - .github/workflows/stage4-offline-preview.yml
+  push:
+    branches:
+      - feature/stage4-offline-reading-writing-20261017
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: stage4-offline-preview
+  cancel-in-progress: true
+
+jobs:
+  validate-and-publish-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 23
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}
+      - name: Validate atomic snapshot resources and essential scripts
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check sw.js
+          node --check offline.js
+          node --check verification/offline-stage4-check.cjs
+          node --check verification/offline-stage4-browser.cjs
+          node verification/offline-stage4-check.cjs
+          python3 scripts/build-cloudflare-main-mirror.py
+          test -s cloudflare-main-mirror-dist/offline/index.html
+          cmp offline-manifest.json cloudflare-main-mirror-dist/offline-manifest.json
+          cmp sw.js cloudflare-main-mirror-dist/sw.js
+      - name: Install isolated browser engines
+        shell: bash
+        run: |
+          npm install --prefix /tmp/stage4-browser --no-save playwright@1.62.1
+          /tmp/stage4-browser/node_modules/.bin/playwright install --with-deps chromium webkit
+      - name: Airplane-mode Chromium with original and GitHub Pages subpaths
+        shell: bash
+        env:
+          NODE_PATH: /tmp/stage4-browser/node_modules
+        run: |
+          node verification/offline-stage4-browser.cjs
+          TEST_OFFLINE_PREFIX=/probation-study-desk node verification/offline-stage4-browser.cjs
+      - name: Airplane-mode Safari engine WebKit
+        shell: bash
+        env:
+          NODE_PATH: /tmp/stage4-browser/node_modules
+          TEST_OFFLINE_ENGINE: webkit
+        run: |
+          node verification/offline-stage4-browser.cjs
+      - name: Publish Cloudflare stage4 preview only
+        if: (github.event_name == 'push' && github.ref == 'refs/heads/feature/stage4-offline-reading-writing-20261017') || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'feature/stage4-offline-reading-writing-20261017' && github.event.pull_request.base.ref == 'main')
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy cloudflare-main-mirror-dist --project-name=probation-study30-test --branch=stage4-offline-preview
+      - name: Verify preview exact GitHub commit and required files
+        if: (github.event_name == 'push' && github.ref == 'refs/heads/feature/stage4-offline-reading-writing-20261017') || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'feature/stage4-offline-reading-writing-20261017' && github.event.pull_request.base.ref == 'main')
+        shell: bash
+        env:
+          EXPECTED_SHA: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}
+        run: |
+          set -euo pipefail
+          BASE=https://stage4-offline-preview.probation-study30-test.pages.dev
+          good=0
+          for i in $(seq 1 15); do
+            if curl -fsSL --max-time 15 "$BASE/mirror-manifest.json" -o /tmp/stage4-manifest; then
+              if python3 - <<'PY'
+          import json,os
+          from pathlib import Path
+          data=json.loads(Path('/tmp/stage4-manifest').read_text())
+          assert data['source_commit']==os.environ['EXPECTED_SHA']
+          PY
+              then good=1;break;fi
+            fi
+            sleep 7
+          done
+          test "$good" = 1 || { echo "Stage 4 preview commit mismatch"; exit 1; }
+          for file in index.html offline/index.html sw.js offline.js offline-manifest.json; do
+            curl -fsSL --max-time 15 "$BASE/$file" -o /tmp/stage4-live
+            cmp "cloudflare-main-mirror-dist/$file" /tmp/stage4-live || { echo "Incorrect live file: $file"; exit 1; }
+          done
+          echo "PASS isolated Stage4 Cloudflare preview is byte-identical to approved test commit"
