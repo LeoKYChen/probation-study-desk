@@ -81,4 +81,16 @@ assert.equal(B.validate(B.create({},{[sample.id]:older})).daily[sample.id].essay
 
 assert.ok(script.includes("const KEY='probation-daily-github:records:v1'"),'必須共用原每日題儲存鍵');
 assert.ok(script.includes('persist({});records={};timers={};writeTimers()'),'只清每日題並重設計時');
+// Daily browsing page must link to the existing four-draft/AI/MD workspace for the same question.
+const browserHtml=read('daily-simulation/index.html');
+const browserScript=read('daily-simulation/app.js');
+new vm.Script(browserScript,{filename:'daily-simulation/app.js'});
+assert.ok(browserHtml.includes('id="practiceLink"'),'daily reader needs an essay workspace entry point');
+assert.ok(browserHtml.includes('href="../v2.5/daily-practice.html"'),'daily hero needs an essay workspace entry point');
+assert.ok(browserScript.includes("encodeURIComponent(q.id)"),'question link must target the same question ID');
+assert.ok(script.includes("new URLSearchParams(window.location.search).get('question')"),'essay workspace must accept per-question deep links');
+assert.ok(script.includes("bank.questions.some(q=>q.id===requestedQuestion)"),'deep link ID must exist in loaded bank');
+assert.ok(browserScript.includes('const ENABLE_NEWS_READING=false;'),'news reading must remain disabled');
+assert.ok(script.includes("const KEY='probation-daily-github:records:v1'"),'daily browser and essay workspace must share storage');
+
 console.log('Daily v2.5.4 regression checks passed ('+d.count+' questions).');

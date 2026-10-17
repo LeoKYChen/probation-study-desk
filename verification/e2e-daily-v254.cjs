@@ -105,6 +105,17 @@ async function check(){
  assert.ok(mdText.includes('## 四格草稿')&&mdText.includes('爭點草稿：甲之程序保障'));
  assert.ok(mdText.includes('## 完整答案')&&mdText.includes('由原每日題瀏覽頁更新的答案'));
  assert.ok(mdText.includes('AI評語：法條論述得當'));
+ // Browse -> open the exact same daily question in the existing four-draft workspace.
+ const href=await oldPage.locator('#practiceLink').getAttribute('href');
+ assert.equal(new URL(href,origin+'/daily-simulation/').searchParams.get('question'),q.id);
+ const deepLinkPage=await context.newPage();
+ deepLinkPage.on('pageerror',error=>errors.push('deep link: '+error.message));
+ await deepLinkPage.goto(new URL(href,origin+'/daily-simulation/').href,{waitUntil:'domcontentloaded'});
+ await deepLinkPage.locator('#questionList button[data-id="'+q.id+'"][aria-pressed="true"]').waitFor({timeout:30000});
+ assert.equal(await deepLinkPage.locator('#answer').inputValue(),'由原每日題瀏覽頁更新的答案');
+ assert.equal(await deepLinkPage.locator('#draftIssue').inputValue(),'爭點草稿：甲之程序保障');
+ assert.equal(await deepLinkPage.locator('#aiFeedback').inputValue(),'AI評語：法條論述得當，但應補上學理。');
+ await deepLinkPage.close();
  await oldPage.close();
  const downloadPromise=page.waitForEvent('download');
  await page.locator('#export').click();
