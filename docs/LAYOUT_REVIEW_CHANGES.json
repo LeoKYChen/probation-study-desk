@@ -95,8 +95,8 @@
     {
       "path": "sw.js",
       "base_sha256": "d564d94ae7a5249cd9ca7caa2ee480ddd4a541250e29b61a6f80c88f55ef0323",
-      "sha256": "772a3fc26a744cde1decc63eacb336129d46b595e4879375625ca2cb9956412b",
-      "reason": "Connected visits to changed common-subject pages use the current UI; retain installed snapshots."
+      "sha256": "fbc5dcee49a5131d974de7168b7de84a8f9236aef14c4afd6fddcee1e77feb3b",
+      "reason": "Existing atomic offline snapshots and online cache policy remain intact; allow only Cloudflare Pages same-origin /index.html -> / canonical redirects so the real published offline download does not fail."
     },
     {
       "path": "professional/practice-session.js",
