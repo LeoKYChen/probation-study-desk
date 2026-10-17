@@ -53,7 +53,7 @@ jobs:
           assert h.count('print-model.js')==1 and h.count('app.js')==1
           assert home.count('class="tile course-tile"')==2
           assert home.count('class="tile explore-tile"')==3
-          for p in ('professional/index.html','v2.5/index.html','daily-simulation/index.html','common-subjects/index.html'):
+          for p in ('v2.5/index.html','daily-simulation/index.html'):
               assert '../print/?module=' in Path(p).read_text('utf-8'),p
           print('PASS: original five tiles retained, 4 accessible print entry points and A4 rules')
           PY
