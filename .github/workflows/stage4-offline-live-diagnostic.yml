@@ -1,0 +1,39 @@
+name: Stage 4 production-like Cloudflare redirect diagnostics
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - .github/workflows/stage4-offline-live-diagnostic.yml
+      - sw.js
+      - offline-manifest.json
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+      - name: Check direct Cloudflare URLs and each indexed HTML
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json,urllib.request,urllib.error
+          from concurrent.futures import ThreadPoolExecutor
+          base='https://stage4-offline-preview.probation-study30-test.pages.dev/'
+          names=[x['url'] for x in json.load(open('offline-manifest.json'))['assets'] if x['url'].endswith('/index.html')]
+          names+=['offline-manifest.json','sw.js','active-recall/bank.js']
+          def probe(name):
+            req=urllib.request.Request(base+name,headers={'User-Agent':'Stage4-offline-debug'})
+            try:
+              with urllib.request.urlopen(req,timeout=18) as r:
+                data=r.read()
+                return (name, r.status, r.url.replace(base,'/'),len(data),r.headers.get('content-type','?'))
+            except Exception as e:
+              return (name,'ERROR',str(e),'','')
+          with ThreadPoolExecutor(max_workers=8) as pool:
+            for row in pool.map(probe,names):
+              print('LIVE URL CHECK:',*row,flush=True)
+          PY
