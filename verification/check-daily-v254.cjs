@@ -81,16 +81,26 @@ assert.equal(B.validate(B.create({},{[sample.id]:older})).daily[sample.id].essay
 
 assert.ok(script.includes("const KEY='probation-daily-github:records:v1'"),'必須共用原每日題儲存鍵');
 assert.ok(script.includes('persist({});records={};timers={};writeTimers()'),'只清每日題並重設計時');
-// Daily browsing page must link to the existing four-draft/AI/MD workspace for the same question.
+// The evening room embeds the full four-grid + AI + MD workspace, not a redirect.
 const browserHtml=read('daily-simulation/index.html');
 const browserScript=read('daily-simulation/app.js');
 new vm.Script(browserScript,{filename:'daily-simulation/app.js'});
-assert.ok(browserHtml.includes('id="practiceLink"'),'daily reader needs an essay workspace entry point');
-assert.ok(browserHtml.includes('href="../v2.5/daily-practice.html"'),'daily hero needs an essay workspace entry point');
-assert.ok(browserScript.includes("encodeURIComponent(q.id)"),'question link must target the same question ID');
-assert.ok(script.includes("new URLSearchParams(window.location.search).get('question')"),'essay workspace must accept per-question deep links');
-assert.ok(script.includes("bank.questions.some(q=>q.id===requestedQuestion)"),'deep link ID must exist in loaded bank');
-assert.ok(browserScript.includes('const ENABLE_NEWS_READING=false;'),'news reading must remain disabled');
-assert.ok(script.includes("const KEY='probation-daily-github:records:v1'"),'daily browser and essay workspace must share storage');
+for(const id of ['draftIssue','draftBasis','draftAnalysis','draftConclusion','answer','copyAI','aiFeedback','exportEssay','timer','startTimer','resetTimer'])
+ assert.ok(browserHtml.includes('id="'+id+'"'),'missing inline field '+id);
+assert.ok(!browserHtml.includes('id="practiceLink"'),'no redirect-only flow');
+assert.ok(browserScript.includes("KEY='probation-daily-github:records:v1'"),'inline editor shares the stable daily record key');
+assert.ok(browserScript.includes("const TIMER_KEY='probation-daily-30min:session:v1'"),'same timer session key');
+assert.ok(browserScript.includes('essayDrafts:readDrafts()'),'daily modal persists four drafts');
+assert.ok(browserScript.includes('aiFeedback:$(\'aiFeedback\').value'),'daily modal persists AI comments');
+assert.ok(browserScript.includes('text/markdown;charset=utf-8'),'daily modal exports UTF-8 markdown');
+assert.ok(browserScript.includes('const ENABLE_NEWS_READING=false;'),'news reading must stay disabled');
+assert.ok(read('sw.js').includes("'daily-simulation/practice.css'"),'online users must receive refreshed in-place workspace CSS');
+const inlineStart=browserScript.indexOf('function simulationQuestion(q){');
+const inlineEnd=browserScript.indexOf('async function copyAI(){',inlineStart);
+assert.ok(inlineStart>=0&&inlineEnd>inlineStart,'daily browser must include grading prompt');
+const inlineFns=vm.runInNewContext('(()=>{'+browserScript.slice(inlineStart,inlineEnd)+'; return {simulationQuestion,promptFor};})()',{M});
+assert.equal(inlineFns.promptFor(law,'法律爭點分析答案'),promptFor(law,'法律爭點分析答案'),'both pages must use identical law rubric');
+assert.equal(inlineFns.promptFor(mixed,'學理與法律分析答案'),promptFor(mixed,'學理與法律分析答案'),'both pages must use identical cross-subject rubric');
+assert.equal(inlineFns.simulationQuestion(adapted),simulationQuestion(adapted),'both pages must display the same adapted essay prompt');
 
 console.log('Daily v2.5.4 regression checks passed ('+d.count+' questions).');

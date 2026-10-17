@@ -82,11 +82,30 @@ async function check(){
  }
  const oldPage=await context.newPage();
  oldPage.on('pageerror',error=>errors.push('original daily page: '+error.message));
+ oldPage.on('dialog',dialog=>dialog.accept());
  await oldPage.goto(origin+'/daily-simulation/',{waitUntil:'domcontentloaded'});
  await oldPage.locator('[data-open]').first().waitFor({timeout:30000});
  await oldPage.locator('[data-open="'+q.id+'"]').first().click();
  assert.equal(await oldPage.locator('#answer').inputValue(),'新練習答案：爭點、涵攝、結論。');
+ assert.equal(await oldPage.locator('#draftIssue').inputValue(),'爭點草稿：甲之程序保障');
+ assert.equal(await oldPage.locator('#aiFeedback').inputValue(),'AI評語：法條論述得當，但應補上學理。');
  await oldPage.locator('#answer').fill('由原每日題瀏覽頁更新的答案');
+ await oldPage.locator('#draftBasis').fill('法律草稿：少年事件處理法');
+ await oldPage.locator('#draftAnalysis').fill('涵攝草稿：警方之詢問程序');
+ await oldPage.locator('#draftConclusion').fill('結論草稿：須分別檢驗');
+ await oldPage.waitForFunction(id=>{
+   const record=JSON.parse(localStorage.getItem('probation-daily-github:records:v1')||'{}')[id];
+   return record?.essayDrafts?.conclusion==='結論草稿：須分別檢驗' && record?.aiFeedback?.startsWith('AI評語');
+ },q.id);
+ await oldPage.locator('#startTimer').click();
+ assert.equal(await oldPage.locator('#startTimer').isDisabled(),true);
+ await oldPage.locator('#copyAI').click();
+ await oldPage.waitForFunction(()=>document.querySelector('#copyStatus').textContent.trim().length>0);
+ if(!IS_WEBKIT){
+   const promptText=await oldPage.evaluate(()=>navigator.clipboard.readText());
+   assert.ok(promptText.includes('由原每日題瀏覽頁更新的答案')&&promptText.includes('【本次每日模擬題】'));
+   assert.ok(promptText.includes('法律／實務依據無法查證時標示待確認'));
+ }
  await oldPage.waitForFunction(id=>(JSON.parse(localStorage.getItem('probation-daily-github:records:v1'))[id]||{}).answer==='由原每日題瀏覽頁更新的答案',q.id);
  const still=await page.evaluate(id=>JSON.parse(localStorage.getItem('probation-daily-github:records:v1'))[id].aiFeedback,q.id);
  assert.equal(still,'AI評語：法條論述得當，但應補上學理。','old daily page must preserve feedback');
@@ -105,17 +124,20 @@ async function check(){
  assert.ok(mdText.includes('## 四格草稿')&&mdText.includes('爭點草稿：甲之程序保障'));
  assert.ok(mdText.includes('## 完整答案')&&mdText.includes('由原每日題瀏覽頁更新的答案'));
  assert.ok(mdText.includes('AI評語：法條論述得當'));
- // Browse -> open the exact same daily question in the existing four-draft workspace.
- const href=await oldPage.locator('#practiceLink').getAttribute('href');
- assert.equal(new URL(href,origin+'/daily-simulation/').searchParams.get('question'),q.id);
- const deepLinkPage=await context.newPage();
- deepLinkPage.on('pageerror',error=>errors.push('deep link: '+error.message));
- await deepLinkPage.goto(new URL(href,origin+'/daily-simulation/').href,{waitUntil:'domcontentloaded'});
- await deepLinkPage.locator('#questionList button[data-id="'+q.id+'"][aria-pressed="true"]').waitFor({timeout:30000});
- assert.equal(await deepLinkPage.locator('#answer').inputValue(),'由原每日題瀏覽頁更新的答案');
- assert.equal(await deepLinkPage.locator('#draftIssue').inputValue(),'爭點草稿：甲之程序保障');
- assert.equal(await deepLinkPage.locator('#aiFeedback').inputValue(),'AI評語：法條論述得當，但應補上學理。');
- await deepLinkPage.close();
+ // Markdown exports directly from the browsing page without leaving it.
+ const inlineDownload=oldPage.waitForEvent('download');
+ await oldPage.locator('#exportEssay').click();
+ const inlineMd=await inlineDownload;
+ assert.ok(inlineMd.suggestedFilename().endsWith('.md'));
+ const inlineText=fs.readFileSync(await inlineMd.path(),'utf8');
+ assert.ok(inlineText.includes('## 四格草稿')&&inlineText.includes('爭點草稿：甲之程序保障'));
+ assert.ok(inlineText.includes('## 完整答案')&&inlineText.includes('由原每日題瀏覽頁更新的答案'));
+ assert.ok(inlineText.includes('AI評語：法條論述得當'));
+ await oldPage.locator('#next').click();
+ assert.notEqual(await oldPage.locator('#readerMeta').textContent(),q.date+' · '+q.subject,'next question navigation should work');
+ await oldPage.locator('#draftIssue').fill('另一題的四格草稿');
+ await oldPage.locator('#previous').click();
+ assert.equal(await oldPage.locator('#draftIssue').inputValue(),'爭點草稿：甲之程序保障','returning to question restores its own draft');
  await oldPage.close();
  const downloadPromise=page.waitForEvent('download');
  await page.locator('#export').click();
@@ -201,6 +223,41 @@ async function check(){
  await mobile.locator('#aiFeedback').fill('手機批改評語');
  await mobile.waitForFunction(id=>JSON.parse(localStorage.getItem('probation-daily-github:records:v1')||'{}')[id]?.aiFeedback==='手機批改評語',q.id);
  assert.deepEqual(mobileErrors,[],'no uncaught mobile browser errors');
+ // Mobile Safari/Chromium must also support all features *inside* the evening-room modal.
+ const inlineMobile=await mobileContext.newPage(),inlineErrors=[];
+ inlineMobile.on('pageerror',error=>inlineErrors.push(error.message));
+ inlineMobile.on('dialog',dialog=>dialog.accept());
+ await inlineMobile.goto(origin+'/daily-simulation/',{waitUntil:'domcontentloaded'});
+ await inlineMobile.locator('[data-open="'+q.id+'"]').first().waitFor({timeout:30000});
+ await inlineMobile.locator('[data-open="'+q.id+'"]').first().click();
+ assert.ok(await inlineMobile.locator('#draftIssue').isVisible());
+ for(const width of [390,360,320]){
+   await inlineMobile.setViewportSize({width,height:844});
+   const geometry=await inlineMobile.evaluate(()=>{
+     const container=document.querySelector('#readerScroll');
+     const grid=document.querySelector('.essay-draft-grid');
+     const width=container.clientWidth;
+     const gridRect=grid.getBoundingClientRect(),containerRect=container.getBoundingClientRect();
+     return {viewport:document.documentElement.clientWidth,body:document.documentElement.scrollWidth,gridRight:gridRect.right,containerRight:containerRect.right,containerScroll:container.scrollWidth,containerClient:container.clientWidth,width};
+   });
+   assert.ok(geometry.body<=geometry.viewport+2,'evening-room mobile page overflows at '+width+': '+JSON.stringify(geometry));
+   assert.ok(geometry.gridRight<=geometry.containerRight+2,'four-grid exceeds mobile modal at '+width+': '+JSON.stringify(geometry));
+   assert.ok(geometry.containerScroll<=geometry.containerClient+3,'modal content horizontally scrolls at '+width+': '+JSON.stringify(geometry));
+ }
+ await inlineMobile.setViewportSize({width:390,height:844});
+ await inlineMobile.locator('#draftIssue').fill('晚間學習室手機版草稿');
+ await inlineMobile.locator('#answer').fill('晚間學習室手機版完整答案');
+ await inlineMobile.locator('#aiFeedback').fill('晚間學習室手機版 AI 評語');
+ await inlineMobile.waitForFunction(id=>{
+   const r=JSON.parse(localStorage.getItem('probation-daily-github:records:v1')||'{}')[id];
+   return r?.essayDrafts?.issues==='晚間學習室手機版草稿' && r?.answer==='晚間學習室手機版完整答案' && r?.aiFeedback==='晚間學習室手機版 AI 評語';
+ },q.id);
+ const mobileMarkdown=inlineMobile.waitForEvent('download');
+ await inlineMobile.locator('#exportEssay').click();
+ const mobileMd=await mobileMarkdown;
+ assert.ok(fs.readFileSync(await mobileMd.path(),'utf8').includes('晚間學習室手機版草稿'));
+ assert.deepEqual(inlineErrors,[],'no uncaught evening-room mobile errors');
+ await inlineMobile.close();
  await mobileContext.close();
  console.log((IS_WEBKIT?'WebKit':'Chromium')+' desktop + 390px touch-mobile browser acceptance passed: '+data.questions.length+' questions; old answer, timer, AI clipboard, shared page, backup/restore, clear and mobile layout.');
 }
