@@ -1,0 +1,136 @@
+name: v2.7 MCP stage 3t documented official legal field mapping
+
+on:
+  push:
+    branches:
+      - experiment/v27-mcp-stage3t
+    paths:
+      - 'experiments/v27-mcp-poc/stage3t/**'
+      - 'experiments/v27-mcp-poc/STAGE3T.md'
+      - '.github/workflows/test-v27-mcp-stage3t.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  documented-fields:
+    name: Official documented fields, two bounded public label probes, fail closed
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    env:
+      JUDICIAL_API_LIVE_ENABLED: 'false'
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Compile scripts and check exact bounded public destinations
+        run: |
+          node --check experiments/v27-mcp-poc/stage3t/official-field-mapper.cjs
+          node --check experiments/v27-mcp-poc/stage3t/official-field-mapper.test.cjs
+          python -m py_compile experiments/v27-mcp-poc/stage3t/public-label-probe.py
+          python experiments/v27-mcp-poc/stage3t/public-label-probe.py --mode selftest
+          python3 - <<'PY'
+          from pathlib import Path
+          script=Path('experiments/v27-mcp-poc/stage3t/public-label-probe.py').read_text()
+          mapper=Path('experiments/v27-mcp-poc/stage3t/official-field-mapper.cjs').read_text()
+          for denied in ('requests.', 'selenium', 'playwright', 'Auth/JList', 'Auth/JDoc',
+                         'judgment.judicial.gov.tw', 'get_judgment', 'KSY',
+                         'mcp_server.server'):
+              assert denied not in script,denied
+          for required in ('MAX_BYTES = 280_000','TIMEOUT_SECONDS = 15',
+                           'NoRedirect','Content-Type','checked_utc',
+                           'any_real_statute_xml_downloaded', 'stage3_accepted'):
+              assert required in script,required
+          for banned in ('fetch(', 'require("node:https")', 'process.env',
+                         'readFileSync(', 'writeFileSync(', 'axios('):
+              assert banned not in mapper,banned
+          assert 'status:404' in Path('services/v2.7-judgment/private-worker.mjs').read_text()
+          assert Path('development/v2.7').is_dir()
+          print('Stage3t bounded public MOJ pages, no real court/API or filesystem writing')
+          PY
+      - name: Run official field standard mapping and unsafe promotion tests
+        run: |
+          node --test --test-reporter=tap experiments/v27-mcp-poc/stage3t/official-field-mapper.test.cjs | tee "$RUNNER_TEMP/stage3t-tests.log"
+      - name: Independently probe two ordinary official page LABELS only
+        run: |
+          timeout 70s python -u experiments/v27-mcp-poc/stage3t/public-label-probe.py --mode live
+      - name: Verify historical source evidence, no changes to existing site
+        run: |
+          node - <<'JS'
+          const fs=require('node:fs'),assert=require('node:assert/strict');
+          const b='experiments/v27-mcp-poc/';
+          assert.match(fs.readFileSync(b+'STAGE1_ACCEPTANCE.md','utf8'),/20\/20/);
+          const s2=fs.readFileSync(b+'STAGE2_ACCEPTANCE.md','utf8');
+          assert.match(s2,/17\/21/);assert.match(s2,/4\/21/);
+          const {planReview}=require('./'+b+'stage3q-readiness-ledger.cjs');
+          assert.equal(planReview({features:['law_lookup','interpretation_lookup'],
+            approvals:{officialSchemaChecked:true}}).canDeploy,false);
+          const mapper=require('./'+b+'stage3t/official-field-mapper.cjs');
+          assert.equal(mapper.summary().exactOfficialXmlTagNamesValidatedFromDownload,false);
+          console.log('Official standard field names recognized, XML shape still unknown');
+          JS
+          git fetch --no-tags --depth=2 origin experiment/v27-mcp-stage3s
+          python3 - <<'PY'
+          import subprocess
+          paths=subprocess.check_output(['git','diff','--name-only','FETCH_HEAD','HEAD'],
+               text=True).splitlines()
+          allowed={
+              '.github/workflows/test-v27-mcp-stage3t.yml',
+              'experiments/v27-mcp-poc/STAGE3T.md',
+              'experiments/v27-mcp-poc/STAGE3T_RESULT.md',
+              'experiments/v27-mcp-poc/stage3t/official-field-mapper.cjs',
+              'experiments/v27-mcp-poc/stage3t/official-field-mapper.test.cjs',
+              'experiments/v27-mcp-poc/stage3t/public-label-probe.py'
+          }
+          assert set(paths).issubset(allowed),paths
+          print('Stage3t isolated changes:',paths)
+          PY
+      - name: Save only test counts and limited source-response metadata
+        run: |
+          node - <<'JS'
+          const fs=require('node:fs');
+          const x=fs.readFileSync(process.env.RUNNER_TEMP+'/stage3t-tests.log','utf8');
+          const tests=/# tests (\d+)/.exec(x),passes=/# pass (\d+)/.exec(x),
+                fails=/# fail (\d+)/.exec(x);
+          if(!tests||!passes||!fails||+tests[1]!==+passes[1]||+fails[1]!==0)
+            throw Error('Stage3t contract tests did not pass');
+          const p=JSON.parse(fs.readFileSync('stage3t-public-page-labels-summary.json','utf8'));
+          if(p.public_pages_attempted!==2 || p.stage3_accepted!==false)
+            throw Error('Unexpected live source scope');
+          const a={
+            stage:'Stage3t real official government data standard plus bounded public page LABELS',
+            mapping_tests_passed:+passes[1], mapping_tests_failed:+fails[1],
+            ordinary_public_pages_attempted:p.public_pages_attempted,
+            visible_labels_confirmed_cases:p.records.filter(r=>r.status==='labels_visible_only').length,
+            inaccessible_or_unverified_cases:p.records.filter(r=>r.status!=='labels_visible_only').length,
+            official_xml_payload_downloaded:false,
+            official_xml_tag_names_verified:false,
+            current_law_effect_verified:false,
+            interpretation_current_effect_verified:false,
+            old_20_law_and_21_interpretation_samples_retested:false,
+            real_pdf_downloaded:false,
+            deployed_to_website:false,
+            stage3_accepted:false
+          };
+          fs.writeFileSync('stage3t-documentary-mapping-summary.json',
+             JSON.stringify(a,null,2)+'\n');
+          console.log(JSON.stringify(a));
+          JS
+      - name: Keep only public metadata counts; never official original texts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v27-stage3t-official-field-and-public-label-report
+          path: |
+            stage3t-public-page-labels-summary.json
+            stage3t-documentary-mapping-summary.json
+          if-no-files-found: warn
+          retention-days: 14
