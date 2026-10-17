@@ -37,7 +37,9 @@ jobs:
           assert 'localStorage.clear(' not in data
           assert data.count('class="tile course-tile"')==2
           assert data.count('class="tile explore-tile"')==3
-          assert '晚間學習室樣式參考' in data
+          assert '晚間學習室 v2.5 主站' in data
+          assert 'workspace-sidebar' in data and 'workspace-topbar' in data
+          assert 'room-hero-art' in data
           assert 'date-input-wrap' in data
           assert data.index('課程學習') < data.index('練習與探索')
           explore=data[data.index('<nav class="explore-grid"'):]
@@ -100,8 +102,12 @@ jobs:
                     return {
                       body:body.backgroundColor,text:body.color,
                       courseGradient:course.backgroundImage,courseRadius:course.borderRadius,
-                      explore:explore.backgroundColor,exploreAccent:explore.backgroundImage,
-                      exploreRadius:explore.borderRadius,colsCourse:cg.gridTemplateColumns.split(' ').length,
+                      explore:explore.backgroundColor,exploreAccent:getComputedStyle(document.querySelector('.explore-tile'),'::before').backgroundColor,
+                      exploreRadius:explore.borderRadius,
+                      sidebar:getComputedStyle(document.querySelector('.workspace-sidebar')).display,
+                      topbar:getComputedStyle(document.querySelector('.workspace-topbar')).backgroundColor,
+                      hero:getComputedStyle(document.querySelector('.countdown')).backgroundColor,
+                      colsCourse:cg.gridTemplateColumns.split(' ').length,
                       colsExplore:eg.gridTemplateColumns.split(' ').length,
                       cards:document.querySelectorAll('.tile').length,
                       headings:[...document.querySelectorAll('section.section h2')].map(n=>n.textContent.trim())
@@ -111,7 +117,10 @@ jobs:
                   assert.equal(design.text,'rgb(36, 59, 53)',kind+'/'+width+': not v2.5 ink');
                   assert.match(design.courseGradient,/linear-gradient/,kind+'/'+width+': missing reading-room inspired course gradient');
                   assert.equal(design.explore,'rgb(255, 255, 255)',kind+'/'+width+': reading-room card should be white');
-                  assert.match(design.exploreAccent,/linear-gradient/,kind+'/'+width+': missing green card accent');
+                  assert.equal(design.exploreAccent,'rgb(134, 173, 149)',kind+'/'+width+': missing reading-room card accent');
+                  assert.equal(design.hero,'rgb(232, 238, 227)',kind+'/'+width+': reading-room pale hero');
+                  assert.equal(design.topbar,'rgb(255, 255, 255)',kind+'/'+width+': reading-room white topbar');
+                  assert.equal(design.sidebar,width<=860?'none':'flex',kind+'/'+width+': sidebar responsive state');
                   assert.equal(design.courseRadius,'14px',kind+'/'+width+': course card radius');
                   assert.equal(design.exploreRadius,'14px',kind+'/'+width+': exploration card radius');
                   assert.equal(design.cards,5,kind+'/'+width+': expected 5 navigation cards');
