@@ -12,7 +12,7 @@ const INDEX=Object.fromEntries(BANK.map(w=>[w.id,w]));
 function own(x){return x&&typeof x==="object"&&!Array.isArray(x)?x:{}}
 function prepare(state){state.wordDays=own(state.wordDays);state.wordProgress=own(state.wordProgress);state.customWords=own(state.customWords);}
 function getWord(state,id){return INDEX[id]||own(state.customWords)[id]||null}
-function getAll(state){return BANK.concat(Object.values(own(state.customWords)));}
+function getAll(state){return Object.values(own(state.customWords)).concat(BANK);}
 function addCustomWord(state,term,meaning,pos=""){
   prepare(state);
   term=String(term||"").trim().replace(/\s+/g," ").toLowerCase();
