@@ -182,6 +182,18 @@
     .direction-note { margin: 11px 0 0; color: #7c5c18; font-size: .76rem; }
     [hidden] { display: none !important; }
     .answer-area { margin-top: 26px; }
+    .essay-workspace-description { margin: 0 0 16px; color: var(--ink-soft); font-size: .84rem; line-height: 1.75; }
+    #draftWordCount { display: block; margin-top: 6px; font-size: .76rem; font-weight: 700; color: var(--teal); }
+    .essay-draft-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-bottom: 22px; }
+    .essay-draft-field { min-width: 0; }
+    .essay-draft-field label, .essay-answer-label { display: block; margin-bottom: 8px; font-size: .86rem; font-weight: 800; color: var(--ink); }
+    .essay-draft-field textarea { width: 100%; min-height: 145px; padding: 12px 14px; }
+    .essay-answer-label { margin-top: 4px; }
+    .save-status[data-error="true"] { color: #b5443c; }
+    @media (max-width: 740px) {
+      .essay-draft-grid { grid-template-columns: minmax(0, 1fr); }
+      .essay-draft-field textarea { min-height: 125px; }
+    }
     .answer-title { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
     .answer-title strong { font-size: .96rem; }
     .answer-title span { color: var(--ink-soft); font-size: .76rem; }
@@ -545,8 +557,16 @@
               <div id="crimeRelatedContents"></div>
             </details>
             <div class="answer-area">
-              <div class="answer-title"><strong>我的爭點整理</strong><span id="wordCount">0 字</span></div>
-              <textarea id="issueInput" placeholder="建議依序寫：&#10;一、核心爭點&#10;二、法規範／理論基礎&#10;三、涵攝與正反論證&#10;四、結論"></textarea>
+              <div class="answer-title"><strong>我的練習紀錄</strong><span id="wordCount">0 字</span></div>
+              <p class="essay-workspace-description">先用四格草稿整理爭點，再撰寫完整答案。四格草稿、答案與貼回的 AI 評語都依題目自動保存於此裝置。<span id="draftWordCount" aria-live="polite">草稿 0 字</span></p>
+              <div class="essay-draft-grid" aria-label="國考申論四格草稿">
+                <div class="essay-draft-field"><label for="draftIssue">一、題目爭點</label><textarea id="draftIssue" maxlength="100000" rows="5" placeholder="本題有哪些問題、設問與核心爭點？"></textarea></div>
+                <div class="essay-draft-field"><label for="draftBasis">二、法律或學理依據</label><textarea id="draftBasis" maxlength="100000" rows="5" placeholder="適用法條、法律要件或相關學說與理論。"></textarea></div>
+                <div class="essay-draft-field"><label for="draftAnalysis">三、涵攝與實務應用</label><textarea id="draftAnalysis" maxlength="100000" rows="5" placeholder="連結題目事實、正反論證及實務運用。"></textarea></div>
+                <div class="essay-draft-field"><label for="draftConclusion">四、結論</label><textarea id="draftConclusion" maxlength="100000" rows="5" placeholder="逐一回應題目要求，寫出明確結論。"></textarea></div>
+              </div>
+              <label class="essay-answer-label" for="issueInput">完整申論答案</label>
+              <textarea id="issueInput" placeholder="請在此撰寫完整申論答案；上方四格草稿不會覆蓋原有答案。"></textarea>
               <div class="save-status" id="saveStatus" aria-live="polite"></div>
             </div>
             <section class="direction-box" id="directionPanel" aria-labelledby="directionTitle" hidden>
@@ -1277,6 +1297,7 @@
         $('flagButton').disabled = true;
         $('hintButton').disabled = true;
         updateWordCount();
+        window.dispatchEvent(new Event('practice25:render'));
         return;
       }
       issueInput.disabled = false;
@@ -1492,6 +1513,7 @@
     init();
     registerModelTools();
   </script>
+  <script src="essay-workspace25.js"></script>
   <script src="crime-topics.js"></script>
   <script src="topic-rubrics.js"></script>
   <script src="all-topics.js"></script>
