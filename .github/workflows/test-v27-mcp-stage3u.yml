@@ -1,0 +1,146 @@
+name: v2.7 MCP stage 3u bounded official XML structure probe
+
+on:
+  push:
+    branches:
+      - experiment/v27-mcp-stage3u
+    paths:
+      - 'experiments/v27-mcp-poc/stage3u/**'
+      - 'experiments/v27-mcp-poc/STAGE3U.md'
+      - '.github/workflows/test-v27-mcp-stage3u.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  safe-xml-prefix:
+    name: Synthetic parser tests plus one HEAD-gated public XML prefix inquiry
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    env:
+      JUDICIAL_API_LIVE_ENABLED: 'false'
+      PYTHONDONTWRITEBYTECODE: '1'
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify read-only script and synthetic fixture checks
+        run: |
+          python -m py_compile experiments/v27-mcp-poc/stage3u/xml-prefix-probe.py
+          python -m py_compile experiments/v27-mcp-poc/stage3u/test_xml_prefix_probe.py
+          python experiments/v27-mcp-poc/stage3u/xml-prefix-probe.py --mode selftest
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('experiments/v27-mcp-poc/stage3u/xml-prefix-probe.py').read_text()
+          for required in (
+              'MAX_WHOLE_BYTES = 8 * 1024 * 1024',
+              'PREFIX_BYTES = 12 * 1024',
+              'TIMEOUT_SECONDS = 9',
+              'MAX_WHOLE_BYTES','NoRedirect',
+              'request_metadata("HEAD"','request_metadata("GET"',
+              'xml_document_complete', 'stat_modified_equals_promulgation',
+              'stage3_accepted'
+          ):
+              assert required in p,required
+          for forbidden in (
+              'requests.get', 'selenium', 'playwright',
+              'Auth/JList', 'Auth/JDoc', 'judgment.judicial.gov.tw',
+              'get_judgment', 'KSY', 'zipfile.ZipFile', 'tarfile.open',
+              'ET.fromstring', 'BeautifulSoup'
+          ):
+              assert forbidden not in p,forbidden
+          assert 'status:404' in Path('services/v2.7-judgment/private-worker.mjs').read_text()
+          assert Path('development/v2.7').is_dir()
+          print('Stage3u no bulk data, no PDF, no authenticated judicial API')
+          PY
+      - name: Run all synthetic safe-parser, DTD and bounded network mock tests
+        working-directory: experiments/v27-mcp-poc/stage3u
+        run: |
+          python -m unittest -v test_xml_prefix_probe 2>&1 | tee "$RUNNER_TEMP/stage3u-tests.log"
+      - name: Do at most one official HEAD and one conditional <=12 KiB data GET
+        working-directory: experiments/v27-mcp-poc/stage3u
+        run: |
+          timeout 38s python xml-prefix-probe.py --mode live
+      - name: Preserve Stage 3t field-contract scope and isolated branch file list
+        run: |
+          node - <<'JS'
+          const assert=require('node:assert/strict');
+          const fs=require('node:fs');
+          const r=fs.readFileSync('experiments/v27-mcp-poc/STAGE3T_RESULT.md','utf8');
+          assert.match(r,/49／49/);
+          const s2=fs.readFileSync('experiments/v27-mcp-poc/STAGE2_ACCEPTANCE.md','utf8');
+          assert.match(s2,/17\/21/);
+          assert.match(s2,/4\/21/);
+          const gate=require('./experiments/v27-mcp-poc/stage3q-readiness-ledger.cjs');
+          assert.equal(gate.planReview({features:['law_lookup','interpretation_lookup'],
+                approvals:{xmlVerified:true}}).canDeploy,false);
+          console.log('Prior scope retained, no production release authorized');
+          JS
+          git fetch --no-tags --depth=2 origin experiment/v27-mcp-stage3t
+          python - <<'PY'
+          import subprocess
+          files=subprocess.check_output(
+              ['git','diff','--name-only','FETCH_HEAD','HEAD'],text=True).splitlines()
+          accepted={
+              'experiments/v27-mcp-poc/stage3u/xml-prefix-probe.py',
+              'experiments/v27-mcp-poc/stage3u/test_xml_prefix_probe.py',
+              'experiments/v27-mcp-poc/STAGE3U.md',
+              'experiments/v27-mcp-poc/STAGE3U_RESULT.md',
+              '.github/workflows/test-v27-mcp-stage3u.yml',
+          }
+          assert set(files).issubset(accepted),files
+          print('Stage3u only five new isolated files:',files)
+          PY
+      - name: Write unambiguous test and XML inspection metadata only
+        working-directory: experiments/v27-mcp-poc/stage3u
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import re
+          from pathlib import Path
+          raw=Path(os.environ['RUNNER_TEMP'],'stage3u-tests.log').read_text()
+          result=re.search(r'Ran (\d+) tests',raw)
+          assert result and 'OK' in raw and 'FAILED' not in raw, 'test suite failed'
+          r=json.loads(Path('stage3u-xml-source-structure-summary.json').read_text())
+          assert r['xml_document_complete'] is False
+          assert r['full_dataset_downloaded'] is False
+          assert r['stage3_accepted'] is False
+          assert r['bytes_inspected'] <= 12*1024
+          metadata={
+              'stage':'Stage3u bounded official XML source structure probe',
+              'synthetic_xml_prefix_tests_passed':int(result.group(1)),
+              'synthetic_xml_prefix_tests_failed':0,
+              'head_code':r['head_code'],
+              'head_content_length':r['head_content_length'],
+              'reason':r['reason'],
+              'xml_prefix_structure_observed_only':r['xml_prefix_structure_observed'],
+              'xml_shallow_element_names':r['shallow_tag_names'],
+              'official_xml_full_document_verified':False,
+              'actual_xml_field_values_verified':False,
+              'full_law_dataset_downloaded':False,
+              'original_20_laws_and_21_interpretations_rechecked':False,
+              'real_pdf_downloads':0,
+              'stage3_accepted':False,
+              'production_deployed':False
+          }
+          Path('stage3u-aggregate-only.json').write_text(
+              json.dumps(metadata,ensure_ascii=False,indent=2)+'\n',
+              encoding='utf-8')
+          print(json.dumps(metadata,ensure_ascii=False))
+          PY
+      - name: Keep metadata-only artifacts, no raw XML bytes or legal text
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v27-stage3u-public-raw-xml-prefix-metadata-only
+          path: |
+            experiments/v27-mcp-poc/stage3u/stage3u-xml-source-structure-summary.json
+            experiments/v27-mcp-poc/stage3u/stage3u-aggregate-only.json
+          if-no-files-found: warn
+          retention-days: 14
