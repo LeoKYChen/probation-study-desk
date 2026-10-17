@@ -16,7 +16,17 @@ async function networkCopy(request){
 let downloading=false;
 async function state(){const r=await(await caches.open(CONTROL)).match(META);return r?r.json():null;}
 async function status(){const s=await state();if(!s)return null;const keys=new Set((await(await caches.open(s.cacheName)).keys()).map(r=>r.url));return s.urls.every(u=>keys.has(u))?s:null;}
-async function bytes(url){const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),25000);try{const r=await fetch(url,{cache:'no-store',signal:controller.signal});if(!r.ok||r.redirected)throw Error('下載失敗：'+new URL(url).pathname);return {r,b:await r.arrayBuffer()};}finally{clearTimeout(timer);}}
+async function bytes(url){const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),25000);try{const r=await fetch(url,{cache:'no-store',signal:controller.signal});if(!r.ok)throw Error('下載失敗：'+new URL(url).pathname);
+    if(r.redirected){
+      // Cloudflare Pages canonically redirects /dir/index.html to /dir/.
+      // Accept exactly this same-origin, same-directory redirect, never arbitrary URLs.
+      const requested=new URL(url),final=new URL(r.url);
+      const expected=requested.pathname.endsWith('/index.html')
+        ?requested.pathname.slice(0,-'index.html'.length):null;
+      if(!expected||final.origin!==requested.origin||final.pathname!==expected||
+         final.search||final.hash||!final.pathname.startsWith(BASE.pathname))
+        throw Error('離線下載遇到非預期轉址：'+requested.pathname);
+    }return {r,b:await r.arrayBuffer()};}finally{clearTimeout(timer);}}
 async function download(port){
   if(downloading)throw Error('另一個頁面正在下載，請稍後再試。');
   downloading=true;let stage;
