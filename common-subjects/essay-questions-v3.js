@@ -368,8 +368,7 @@ window.PSD_ESSAY_QUESTIONS = (window.PSD_ESSAY_QUESTIONS || []).concat([
       "year": 115,
       "section": "作文第一題／第二題（美食排序與臺灣美食名片）",
       "link": "https://yamol.tw/exam-%E7%84%A1%E5%B9%B4%E5%BA%A6%2B%2B115%2B%E5%A4%96%E4%BA%A4%E3%80%81%E5%9C%8B%E9%9A%9B%E7%B6%93%E6%BF%9F%E5%95%86%E5%8B%99%E3%80%81%E6%B0%91%E8%88%AA%E7%89%B9%E7%A8%AE%E8%80%83%E8%A9%A6_%E4%B8%89%E7%AD%89_%E5%90%84%E9%A1%9E%E7%A7%91%E7%B5%84%EF%BC%9A%E5%9C%8B%E6%96%87%EF%BC%88%E4%BD%9C%E6%96%87%E8%88%87-144515.htm",
-      "officialListing": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=115130&y=2026",
-      "status": "公開第三方逐題轉錄核對；官方原卷PDF直連仍待確認，官方考試代碼亦待複核"
+      "status": "作文題意已據公開第三方轉錄核對；官方原卷PDF及考試檢索代碼尚待逐一確認"
     },
     "adaptation": "以國家考試作文的設問能力與材料核心，重新編寫情境與作答任務，不是官方原題。",
     "original": false
@@ -390,8 +389,7 @@ window.PSD_ESSAY_QUESTIONS = (window.PSD_ESSAY_QUESTIONS || []).concat([
       "year": 115,
       "section": "作文第一題／第二題（美食排序與臺灣美食名片）",
       "link": "https://yamol.tw/exam-%E7%84%A1%E5%B9%B4%E5%BA%A6%2B%2B115%2B%E5%A4%96%E4%BA%A4%E3%80%81%E5%9C%8B%E9%9A%9B%E7%B6%93%E6%BF%9F%E5%95%86%E5%8B%99%E3%80%81%E6%B0%91%E8%88%AA%E7%89%B9%E7%A8%AE%E8%80%83%E8%A9%A6_%E4%B8%89%E7%AD%89_%E5%90%84%E9%A1%9E%E7%A7%91%E7%B5%84%EF%BC%9A%E5%9C%8B%E6%96%87%EF%BC%88%E4%BD%9C%E6%96%87%E8%88%87-144515.htm",
-      "officialListing": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=115130&y=2026",
-      "status": "公開第三方逐題轉錄核對；官方原卷PDF直連仍待確認，官方考試代碼亦待複核"
+      "status": "作文題意已據公開第三方轉錄核對；官方原卷PDF及考試檢索代碼尚待逐一確認"
     },
     "adaptation": "以國家考試作文的設問能力與材料核心，重新編寫情境與作答任務，不是官方原題。",
     "original": false
@@ -808,8 +806,7 @@ window.PSD_ESSAY_QUESTIONS = (window.PSD_ESSAY_QUESTIONS || []).concat([
       "year": 115,
       "section": "作文第一題／第二題（美食排序與臺灣美食名片）",
       "link": "https://yamol.tw/exam-%E7%84%A1%E5%B9%B4%E5%BA%A6%2B%2B115%2B%E5%A4%96%E4%BA%A4%E3%80%81%E5%9C%8B%E9%9A%9B%E7%B6%93%E6%BF%9F%E5%95%86%E5%8B%99%E3%80%81%E6%B0%91%E8%88%AA%E7%89%B9%E7%A8%AE%E8%80%83%E8%A9%A6_%E4%B8%89%E7%AD%89_%E5%90%84%E9%A1%9E%E7%A7%91%E7%B5%84%EF%BC%9A%E5%9C%8B%E6%96%87%EF%BC%88%E4%BD%9C%E6%96%87%E8%88%87-144515.htm",
-      "officialListing": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=115130&y=2026",
-      "status": "公開第三方逐題轉錄核對；官方原卷PDF直連仍待確認，官方考試代碼亦待複核"
+      "status": "作文題意已據公開第三方轉錄核對；官方原卷PDF及考試檢索代碼尚待逐一確認"
     },
     "adaptation": "以國家考試作文的設問能力與材料核心，重新編寫情境與作答任務，不是官方原題。",
     "original": false
@@ -830,8 +827,7 @@ window.PSD_ESSAY_QUESTIONS = (window.PSD_ESSAY_QUESTIONS || []).concat([
       "year": 115,
       "section": "作文第一題／第二題（美食排序與臺灣美食名片）",
       "link": "https://yamol.tw/exam-%E7%84%A1%E5%B9%B4%E5%BA%A6%2B%2B115%2B%E5%A4%96%E4%BA%A4%E3%80%81%E5%9C%8B%E9%9A%9B%E7%B6%93%E6%BF%9F%E5%95%86%E5%8B%99%E3%80%81%E6%B0%91%E8%88%AA%E7%89%B9%E7%A8%AE%E8%80%83%E8%A9%A6_%E4%B8%89%E7%AD%89_%E5%90%84%E9%A1%9E%E7%A7%91%E7%B5%84%EF%BC%9A%E5%9C%8B%E6%96%87%EF%BC%88%E4%BD%9C%E6%96%87%E8%88%87-144515.htm",
-      "officialListing": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=115130&y=2026",
-      "status": "公開第三方逐題轉錄核對；官方原卷PDF直連仍待確認，官方考試代碼亦待複核"
+      "status": "作文題意已據公開第三方轉錄核對；官方原卷PDF及考試檢索代碼尚待逐一確認"
     },
     "adaptation": "以國家考試作文的設問能力與材料核心，重新編寫情境與作答任務，不是官方原題。",
     "original": false
