@@ -1,7 +1,12 @@
 /* Headless DOM smoke test for the v0.4 static website. */
 'use strict';
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
-const dir=__dirname,engineSandbox={module:{exports:{}}};
+// Fix the fixture to a known Friday; never depend on the calendar date of CI execution.
+class FixedFridayDate extends Date {
+ constructor(...args){super(...(args.length?args:['2026-10-16T10:00:00+08:00']))}
+ static now(){return new Date('2026-10-16T10:00:00+08:00').getTime()}
+}
+const dir=__dirname,engineSandbox={module:{exports:{}},Date:FixedFridayDate,Intl};
 vm.runInNewContext(fs.readFileSync(path.join(dir,'engine.js'),'utf8'),engineSandbox,{filename:'engine.js'});
 const Engine=engineSandbox.module.exports;
 const app=fs.readFileSync(path.join(dir,'app.js'),'utf8');
@@ -25,7 +30,7 @@ const storage={getItem:key=>records[key]??null,setItem:(key,val)=>records[key]=v
 const confirmQueue=[];
 const ctx={window:{StarestoDailyEngine:Engine},document:doc,localStorage:storage,
  fetch:async url=>({ok:!!blobs[url.replace('./','')],json:async()=>blobs[url.replace('./','')]}),
- Intl,Date,Math,Number,Object,String,JSON,Set,Array,RegExp,Promise,
+ Intl,Date:FixedFridayDate,Math,Number,Object,String,JSON,Set,Array,RegExp,Promise,
  setTimeout:()=>1,clearTimeout(){},URL:{createObjectURL:()=> '#',revokeObjectURL(){}},Blob:class {},
  confirm:()=>confirmQueue.length?confirmQueue.shift():false,FileReader:class{},console};
 vm.createContext(ctx);vm.runInContext(app,ctx,{filename:'app.js'});
