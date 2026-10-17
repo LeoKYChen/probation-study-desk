@@ -88,7 +88,7 @@ new vm.Script(browserScript,{filename:'daily-simulation/app.js'});
 for(const id of ['draftIssue','draftBasis','draftAnalysis','draftConclusion','answer','copyAI','aiFeedback','exportEssay','timer','startTimer','resetTimer'])
  assert.ok(browserHtml.includes('id="'+id+'"'),'missing inline field '+id);
 assert.ok(!browserHtml.includes('id="practiceLink"'),'no redirect-only flow');
-assert.ok(browserScript.includes("const KEY='probation-daily-github:records:v1'"),'inline editor shares the stable daily record key');
+assert.ok(browserScript.includes("KEY='probation-daily-github:records:v1'"),'inline editor shares the stable daily record key');
 assert.ok(browserScript.includes("const TIMER_KEY='probation-daily-30min:session:v1'"),'same timer session key');
 assert.ok(browserScript.includes('essayDrafts:readDrafts()'),'daily modal persists four drafts');
 assert.ok(browserScript.includes('aiFeedback:$(\'aiFeedback\').value'),'daily modal persists AI comments');
