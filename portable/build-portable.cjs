@@ -54,7 +54,7 @@ for(const kind of ['past','daily','essays','news']){
 }
 const safeJson=JSON.stringify(database).replace(/</g,'\\u003c');
 let template=read('portable/study-shell.html');
-const source=read('portable/study-app.js').replace(/<\\/script/gi,'<\\\\/script');
+const source=read('portable/study-app.js');
 assert(template.includes('__EMBEDDED_DATA__')&&template.includes('__EMBEDDED_APP__'));
 template=template.replace('__EMBEDDED_DATA__',safeJson).replace('__EMBEDDED_APP__',source);
 assert(!/__EMBEDDED_(?:DATA|APP)__/.test(template));
