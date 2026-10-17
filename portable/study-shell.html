@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>觀護人學習平台｜完全離線 ZIP 版</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Noto Sans TC","PingFang TC",sans-serif;--ink:#203a33;--muted:#52695d;--green:#245b48;--line:#cedbd1;background:#f6f7f2;color:var(--ink)}
+*{box-sizing:border-box}body{margin:0;line-height:1.75}button,select,input,textarea{font:inherit}
+button{cursor:pointer;border:1px solid #9bb4a3;background:#edf4ed;color:#204936;border-radius:9px;min-height:42px;padding:9px 15px}
+button.primary{background:#245b48;color:#fff;border-color:#245b48}
+button:disabled{opacity:.55;cursor:not-allowed}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #d49b43;outline-offset:2px}
+header,main,footer{max-width:1080px;margin:0 auto;padding:20px}
+header{border-bottom:1px solid var(--line)}h1{font-size:clamp(24px,4vw,35px);margin:0}h2{font-size:20px;margin:0 0 8px}h3{font-size:16px;margin:15px 0 8px}
+.intro,.muted{color:var(--muted)}.eyebrow{color:#52675f;text-transform:uppercase;letter-spacing:.12em;font-size:12px;font-weight:800}
+.panel{padding:20px 24px;border:1px solid var(--line);background:white;border-radius:14px;margin:16px 0}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.row>*{max-width:100%}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+nav button{min-width:148px}nav button[aria-pressed=true]{background:var(--green);color:#fff}
+label{display:block;font-weight:700;margin:10px 0 5px}select,input[type=search]{border:1px solid #9bb4a3;border-radius:8px;padding:9px 10px;background:white;color:var(--ink)}
+#search{min-width:min(100%,260px);flex:1}textarea{display:block;width:100%;min-height:150px;resize:vertical;border:1px solid #a7b9ad;border-radius:10px;padding:11px 14px;line-height:1.75;white-space:pre-wrap}
+#fullAnswer{min-height:260px}.question{white-space:pre-wrap;overflow-wrap:anywhere;background:#f5f7f3;border-left:4px solid #82a993;padding:16px}
+.reference{white-space:pre-wrap;background:#eef3ef;padding:16px;border-radius:8px}
+#resultList{max-height:230px;overflow:auto;border:1px solid var(--line);border-radius:10px;margin:12px 0;padding:5px}
+#resultList button{border:0;border-bottom:1px solid #ebefeb;background:white;text-align:left;display:block;width:100%;border-radius:0;padding:8px 11px}
+#resultList button[aria-current=true]{background:#e4f0e6;font-weight:800}
+#resultList button:hover{background:#edf5ef}
+.status{padding:12px 15px;background:#ebf3ed;border-radius:8px;white-space:pre-wrap;word-break:break-word}
+.status.error{background:#fff0e8;color:#8a3e2e}
+.note{background:#f8f3e7;border-left:3px solid #ad8c53;padding:13px 16px}
+small{font-size:13px}footer{color:#58695f;font-size:13px}
+@media(max-width:680px){.grid{grid-template-columns:1fr}header,main,footer{padding:16px}.panel{padding:17px}nav button{min-width:0;flex:1}}
+@media print{@page{size:A4;margin:17mm}header,.control,.status,footer,#resultList,nav{display:none!important}main{padding:0}.panel{border:none;margin:0;padding:0}.question{background:none;border:0;padding:0}textarea{border:0;overflow:visible;min-height:0;height:auto;page-break-inside:auto}}
+</style>
+</head><body>
+<header>
+<div class="eyebrow">JUST ONE SESSION A DAY · PORTABLE EDITION</div>
+<h1>觀護人學習平台｜完全離線版</h1>
+<p class="intro">單一 HTML，無須網路、伺服器、安裝程式或帳號。原題與已保存答案不會傳送出去。</p>
+</header>
+<main>
+<section class="panel">
+<h2>本機資料安全</h2>
+<p class="note"><strong>重要：</strong>瀏覽器對 <code>file://</code> 的儲存政策不一致。即使畫面顯示已自動儲存，也請每次練習後按<strong>「下載練習紀錄 JSON」</strong>。清除瀏覽器資料、搬動 HTML 或換瀏覽器，可能使自動儲存無法恢復。此版與 GitHub／Cloudflare 正式站的資料不會自動同步。</p>
+<div class="row control">
+<button class="primary" id="export" type="button">下載練習紀錄 JSON</button>
+<label for="import" style="margin:0">匯入此離線版 JSON</label><input type="file" id="import" accept=".json,application/json">
+<button id="print" type="button">列印／另存 PDF</button>
+</div>
+<p id="state" class="status" role="status" aria-live="polite">準備中…</p>
+</section>
+<section class="panel">
+<h2>學習區</h2>
+<nav class="row control" aria-label="學習模式">
+<button type="button" data-mode="past" aria-pressed="true">426 題考古題</button>
+<button type="button" data-mode="daily" aria-pressed="false">125 題每日模擬</button>
+<button type="button" data-mode="essay" aria-pressed="false">132 題國文作文</button>
+<button type="button" data-mode="news" aria-pressed="false">少年司法週報</button>
+</nav>
+<div class="row control" style="margin-top:12px">
+<label for="subject" style="margin:0">科目</label>
+<select id="subject"><option value="">全部科目</option></select>
+<label for="search" style="margin:0">搜尋</label><input type="search" id="search" placeholder="題目、考點、年份" autocomplete="off">
+</div>
+<p id="count" class="muted" aria-live="polite"></p>
+<div id="resultList" class="control" role="group" aria-label="選擇題目"></div>
+</section>
+<section class="panel" id="practice">
+<div class="row control" style="justify-content:space-between"><button id="prev" type="button">← 上一題</button><span id="position"></span><button id="next" type="button">下一題 →</button></div>
+<h2 id="title">題目載入中</h2>
+<p id="meta" class="muted"></p>
+<h3>題幹</h3><div id="stem" class="question"></div>
+<div id="editor">
+<h3>申論作答與整理</h3>
+<p class="muted">四格架構與完整答案分開保存。此處不連接任何 AI，題庫參考內容不等於正式閱卷結果。</p>
+<div class="grid">
+<div><label for="issues">① 爭點辨識</label><textarea id="issues" placeholder="界定題意、拆解主要爭點"></textarea></div>
+<div><label for="basis">② 法規／理論依據</label><textarea id="basis" placeholder="法律條文、學理或實務見解"></textarea></div>
+<div><label for="analysis">③ 涵攝論證</label><textarea id="analysis" placeholder="結合題幹事實分析"></textarea></div>
+<div><label for="conclusion">④ 結論</label><textarea id="conclusion" placeholder="逐項回應問題"></textarea></div>
+</div>
+<label for="fullAnswer">完整申論／作文答案</label><textarea id="fullAnswer" placeholder="直接開始作答，約 350 字至不限字數依題目要求"></textarea>
+<label for="feedback">訂正與回饋筆記（自行輸入）</label><textarea id="feedback" placeholder="整理上次錯誤、修正方向"></textarea>
+<div class="row control" style="margin:12px 0">
+<button type="button" id="save" class="primary">立即保存</button>
+<button type="button" id="showReference">顯示／隱藏題庫參考重點</button>
+<button type="button" id="copy">複製目前答案</button>
+</div>
+<div id="reference" class="reference" hidden></div>
+</div>
+</section>
+</main>
+<footer>資料來源沿用 GitHub 專案內現有題庫；此離線版不連線更新法規、題目或新聞。法律資料可能過時，實務適用前應至官方來源核對。此版使用單獨的本機紀錄格式；正式站原紀錄請另外保留第二階段 JSON 備份。</footer>
+<script id="embedded-data" type="application/json">__EMBEDDED_DATA__</script>
+<script>__EMBEDDED_APP__</script>
+</body></html>
