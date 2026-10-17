@@ -48,7 +48,10 @@ async function check(){
    return r?.answer.includes('新練習答案')&&r?.aiFeedback.includes('AI評語');
  },q.id);
  await page.locator('#startTimer').click();
- await page.waitForTimeout(1300);
+ await page.waitForFunction(()=>document.querySelector('#timer').textContent!=='30:00',null,{timeout:8000}).catch(async error=>{
+   const snapshot=await page.evaluate(()=>({timer:document.querySelector('#timer').textContent,status:document.querySelector('#timerStatus').textContent,session:sessionStorage.getItem('probation-daily-30min:session:v1')}));
+   throw Error('timer did not move: '+JSON.stringify(snapshot)+'; page errors='+JSON.stringify(errors)+'; '+error.message);
+ });
  let running=await page.locator('#timer').textContent();
  assert.ok(running!=='30:00','timer must count down');
  await page.reload();
