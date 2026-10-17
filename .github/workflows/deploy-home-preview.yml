@@ -260,3 +260,91 @@ jobs:
             console.log('PASS: all five live entries reachable, nonempty, new-tab links, and no navigation regressions');
           })().catch(e=>{console.error('ENTRY_AUDIT_FAILED',e);process.exit(1)});
           NODE
+
+      - name: Smoke test learning module functions
+        env:
+          NODE_PATH: /tmp/home-preview-qa/node_modules
+        shell: bash
+        run: |
+          node <<'NODE'
+          const {chromium}=require('playwright');
+          const urls={
+            professional:'https://v254-unified-preview.probation-study30-test.pages.dev/',
+            common:'https://leokychen.github.io/probation-study-desk/common-subjects/',
+            daily:'https://leokychen.github.io/probation-study-desk/daily-simulation/',
+            weekly:'https://leokychen.github.io/probation-study-desk/juvenile-news/',
+            legal:'https://probation-legal-ai-test.pages.dev/'
+          };
+          (async()=>{
+            const browser=await chromium.launch({headless:true});
+            const findings=[];
+            for(const [name,url] of Object.entries(urls)){
+              const ctx=await browser.newContext({acceptDownloads:true,locale:'zh-TW',timezoneId:'Asia/Taipei'});
+              const page=await ctx.newPage();
+              const errors=[];
+              page.on('pageerror',e=>errors.push(String(e)));
+              const row={name,status:'pending',url,checks:{},errors};
+              try{
+                const response=await page.goto(url,{waitUntil:'domcontentloaded',timeout:30000});
+                await page.waitForTimeout(name==='daily'||name==='weekly'?1800:800);
+                row.title=await page.title();
+                row.http=response?.status();
+                row.checks.content=await page.locator('body').innerText().then(s=>s.trim().length>70);
+                if(name==='professional'){
+                  row.checks.practiceControls=await page.getByText('30分鐘',{exact:false}).count()>0;
+                  row.checks.timer=await page.locator('#timer').count()>0 || await page.getByText('倒數',{exact:false}).count()>0;
+                  row.checks.backupExport=await page.getByText('匯出',{exact:false}).count()>0;
+                  row.checks.serviceWorker=await page.evaluate(async()=>{
+                    if(!('serviceWorker' in navigator))return 'unsupported';
+                    await new Promise(resolve=>setTimeout(resolve,1300));
+                    const regs=await navigator.serviceWorker.getRegistrations();
+                    return regs.map(r=>({scope:r.scope,active:r.active?.state,script:r.active?.scriptURL}));
+                  });
+                  if(row.checks.serviceWorker.length){
+                    try{
+                      await page.waitForTimeout(1200);
+                      await ctx.setOffline(true);
+                      await page.reload({waitUntil:'domcontentloaded',timeout:9000});
+                      row.checks.offlineReload=true;
+                    }catch(e){row.checks.offlineReload=false;row.checks.offlineError=String(e).slice(0,160)}
+                    finally{await ctx.setOffline(false)}
+                  }else{row.checks.offlineReload='not verified: service worker absent'}
+                }
+                if(name==='common'){
+                  row.checks.essayTab=await page.locator('#tabEssay').count()===1;
+                  row.checks.englishTab=await page.locator('#tabEnglish').count()===1;
+                  row.checks.starestoAssistant=await page.locator('a[href="./english-assistant/"]').count()>0;
+                  await page.locator('#tabEnglish').click();
+                  row.checks.englishPanel=await page.locator('#panelEnglish').isVisible();
+                  await page.locator('#tabEssay').click();
+                  row.checks.essayPanel=await page.locator('#panelEssay').isVisible();
+                  row.checks.export=await page.locator('#export').count()===1;
+                }
+                if(name==='daily'){
+                  row.checks.practicePane=await page.locator('#reader').count()===1;
+                  row.checks.backup=await page.locator('#export').count()===1;
+                  row.checks.aiClipboard=await page.locator('#copyAI').count()===1;
+                  row.checks.questionCount=await page.locator('#total').innerText().catch(()=>'unknown');
+                  row.checks.visibleCards=await page.locator('#cards .document-card').count();
+                }
+                if(name==='weekly'){
+                  const r=await page.evaluate(async()=>{const r=await fetch('./issues.json');return {http:r.status,textSize:(await r.text()).length}});
+                  row.checks.issues=r;
+                  row.checks.readingContent=await page.locator('body').innerText().then(t=>t.includes('少年司法'));
+                }
+                if(name==='legal'){
+                  row.checks.legalSearchUI=(await page.locator('input,textarea,button').count())>2;
+                  row.checks.hasPublicLawTerm=await page.locator('body').innerText().then(t=>t.includes('法規')||t.includes('函釋'));
+                  row.checks.actualRetrieval='not tested (avoid remote analysis calls)';
+                }
+                row.status=row.http===200&&row.checks.content?'page-pass':'page-fail';
+              }catch(e){row.status='error';row.fail=String(e).slice(0,450)}
+              finally{await ctx.close()}
+              findings.push(row);
+              console.log('MODULE_QA '+JSON.stringify(row));
+            }
+            await browser.close();
+            console.log('MODULE_QA_SUMMARY '+JSON.stringify({pagesReachable:findings.filter(x=>x.status==='page-pass').length,total:findings.length,offline:findings.find(x=>x.name==='professional')?.checks.offlineReload}));
+            if(findings.some(x=>x.status!=='page-pass'))process.exit(1);
+          })().catch(e=>{console.error(e);process.exit(1)});
+          NODE
