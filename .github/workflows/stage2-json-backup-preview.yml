@@ -89,3 +89,42 @@ jobs:
             test "$pass" = 1 || { echo "Preview was not byte-identical: $file"; exit 1; }
           done
           echo "PASS isolated preview matches GitHub test branch source"
+
+  verify-live-preview:
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+    needs: verify-and-preview
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: Confirm staged Cloudflare pages and commit identity
+        shell: bash
+        env:
+          EXPECTED_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          BASE=https://stage2-json-backup-preview.probation-study30-test.pages.dev
+          ready=0
+          for attempt in $(seq 1 20); do
+            if curl -fsSL --max-time 15 "$BASE/mirror-manifest.json" -o /tmp/stage2-live-manifest; then
+              if python3 - <<'PY'
+          import json,os
+          from pathlib import Path
+          d=json.loads(Path('/tmp/stage2-live-manifest').read_text())
+          assert d['source_commit']==os.environ['EXPECTED_SHA'], (d['source_commit'],os.environ['EXPECTED_SHA'])
+          PY
+              then
+                ready=1
+                break
+              fi
+            fi
+            sleep 8
+          done
+          test "$ready" = 1 || { echo "Isolated preview not yet serving the same GitHub commit"; exit 1; }
+          for file in backup/index.html backup/unified-core.js backup/app.js; do
+            curl -fsSL --max-time 15 "$BASE/$file" -o /tmp/stage2-live-asset
+            cmp -s "$file" /tmp/stage2-live-asset || { echo "Live asset differs: $file"; exit 1; }
+          done
+          echo "PASS: isolated preview serves this PR's exact source; production unchanged"
