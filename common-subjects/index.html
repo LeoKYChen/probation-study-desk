@@ -204,13 +204,53 @@ function renderCompare(){
  $('compareSummary').textContent=a.join('')===b.join('')?'目前內容與基準版本相同；請根據批改意見修訂。':
  '基準 '+a.length+'字 → 現稿 '+b.length+'字（'+(b.length-a.length>=0?'+':'')+(b.length-a.length)+'字）。第'+(j+1)+'字附近開始有差異；請觀察是否更具體、更通順、更有層次。';
 }
-function switchDraft(){flush();current=$('mode').value+':'+$('prompt').value;var i=Number($('prompt').value),d=draft(),q=topics[i][2];$('promptTitle').textContent=topics[i][0];$('promptBody').textContent=topics[i][1];$('promptTip').textContent=modes[$('mode').value][2]+(q?'｜'+q.requirements:'');$('promptMeta').textContent=q?'【歷屆試題改編／非官方原題】'+q.source.exam+'｜'+q.source.section+'｜'+q.source.status+'｜'+q.difficulty:'既有原創練習題（非歷屆試題改編）';$('promptSource').hidden=!q;if(q)$('promptSource').href=q.source.link;$('essayText').value=d.text||'';$('feedback').value=d.feedback||'';$('nextGoal').value=d.nextAction||'';['expression','reasoning','structure','meaning'].forEach(function(k){$('rubric-'+k).value=String((d.self||{})[k]||'')});$('count').textContent=Array.from($('essayText').value).length;renderVersions();resetTimer();$('saveStatus').textContent='本機自動保存'}
-function saveVersion(){flush();var d=draft();if(!d.text.trim()){show('請先輸入文字。',true);return}d.versions=Array.isArray(d.versions)?d.versions:[];d.versions.push({date:new Date().toISOString(),text:d.text,self:{...(d.self||{})},feedback:d.feedback||''});if(d.versions.length>40)d.versions.splice(1,1);save();renderVersions();show('修訂版本已保存。')}
+function essayHasWork(i){
+ return Object.keys(modes).some(function(m){var d=state.drafts[m+':'+i];return !!(d&&((d.text&&d.text.trim())||(Array.isArray(d.versions)&&d.versions.length)))});
+}
+function essayFullRecords(){
+ return topics.map(function(t,i){return {i:i,type:t[2]&&t[2].type,d:state.drafts['full:'+i]}}).filter(function(x){return !!(x.type&&x.d&&x.d.text&&x.d.text.trim())});
+}
+function reviseCandidates(){
+ return Object.entries(state.drafts).map(function(entry){var parts=entry[0].split(':'),i=Number(parts[1]),d=entry[1]||{},rub=Object.values(d.self||{});return {i:i,mode:parts[0],d:d,low:rub.some(function(x){return Number(x)>0&&Number(x)<=2})}})
+ .filter(function(x){return modes[x.mode]&&Number.isInteger(x.i)&&topics[x.i]&&x.d&&x.d.text&&x.d.text.trim()&&Array.isArray(x.d.versions)&&x.d.versions.length&&!!((x.d.feedback&&x.d.feedback.trim())||(x.d.nextAction&&x.d.nextAction.trim())||x.low)})
+ .sort(function(a,b){var av=a.d.versions.length<2?1:0,bv=b.d.versions.length<2?1:0;if(bv!==av)return bv-av;return String(b.d.updatedAt||'').localeCompare(String(a.d.updatedAt||''))});
+}
+function coachStats(){
+ var full=essayFullRecords(),short=full.filter(function(x){return x.type==='short'}).length,long=full.filter(function(x){return x.type==='long'}).length;
+ var revisit=reviseCandidates(),labels={expression:'文字表達',reasoning:'論述深度',structure:'文章層次',meaning:'旨意詮釋'};
+ var weak=Object.keys(labels).map(function(k){return {name:labels[k],n:Object.values(state.drafts).filter(function(d){var x=Number(((d||{}).self||{})[k]);return x>0&&x<=2}).length}}).filter(function(x){return x.n>0}).sort(function(a,b){return b.n-a.n});
+ $('essayCoachStatus').textContent='完整模式已有草稿：短文'+short+'題、長文'+long+'題｜可訂正'+revisit.length+'篇'+(weak.length?'｜自評待加強：'+weak.slice(0,2).map(function(x){return x.name+' '+x.n}).join('、'):'｜尚無1–2分自評紀錄')+'。未寫完或未批改不等於已達標。';
+}
+function freshEssay(type){
+ var a=topics.map(function(t,i){return {i:i,q:t[2]}}).filter(function(x){return x.q&&x.q.type===type});
+ return a.find(function(x){return !essayHasWork(x.i)})||a.sort(function(a,b){var x=(state.drafts['full:'+a.i]||{}).updatedAt||'',y=(state.drafts['full:'+b.i]||{}).updatedAt||'';return x.localeCompare(y)})[0];
+}
+function pickEssay(){
+ flush();var step=$('essayCoachStage').value||'short',record=null,pick=null;
+ if(step==='revise'){
+  record=reviseCandidates()[0];
+  if(!record){show('目前沒有已存初稿且有回饋、改進目標或低分自評的文章。先寫作、保存初稿，再貼回批改意見。',true);return}
+  pick={i:record.i};$('mode').value=record.mode;
+ }else{
+  var kind=step;
+  if(step==='check'){var full=essayFullRecords(),short=full.filter(function(x){return x.type==='short'}).length,long=full.filter(function(x){return x.type==='long'}).length;kind=short<=long?'short':'long'}
+  pick=freshEssay(kind);$('mode').value='full';
+ }
+ if(!pick){show('沒有符合條件的題目。',true);return}
+ $('essayType').value='all';listEssay();$('prompt').value=String(pick.i);switchDraft();
+ show('已選「'+topics[pick.i][0]+'」'+(step==='revise'?'；請先看前次回饋，再修改。':'；請先作答再批改。'));
+}
+function updateRevisionButton(){
+ var d=current&&state.drafts[current],base=d&&d.versions&&d.versions[0],t=$('essayText').value;
+ $('copyRevision').disabled=!(base&&base.text&&t.trim()&&base.text!==t);
+}
+function switchDraft(){flush();current=$('mode').value+':'+$('prompt').value;var i=Number($('prompt').value),d=draft(),q=topics[i][2];$('promptTitle').textContent=topics[i][0];$('promptBody').textContent=topics[i][1];$('promptTip').textContent=modes[$('mode').value][2]+(q?'｜'+q.requirements:'');$('promptMeta').textContent=q?'【歷屆試題改編／非官方原題】'+q.source.exam+'｜'+q.source.section+'｜'+q.source.status+'｜'+q.difficulty:'既有原創練習題（非歷屆試題改編）';$('promptSource').hidden=!q;if(q)$('promptSource').href=q.source.link;$('essayText').value=d.text||'';$('feedback').value=d.feedback||'';$('nextGoal').value=d.nextAction||'';['expression','reasoning','structure','meaning'].forEach(function(k){$('rubric-'+k).value=String((d.self||{})[k]||'')});$('count').textContent=Array.from($('essayText').value).length;renderVersions();resetTimer();$('saveStatus').textContent='本機自動保存';updateRevisionButton();coachStats()}
+function saveVersion(){flush();var d=draft();if(!d.text.trim()){show('請先輸入文字。',true);return}d.versions=Array.isArray(d.versions)?d.versions:[];d.versions.push({date:new Date().toISOString(),text:d.text,self:{...(d.self||{})},feedback:d.feedback||''});if(d.versions.length>40)d.versions.splice(1,1);save();renderVersions();updateRevisionButton();coachStats();show('修訂版本已保存。')}
 function version(){var i=$('version').value;return /^\d+$/.test(i)?(draft().versions||[])[Number(i)]:null}
 function viewVersion(){var v=version();if(!v){show('請先選擇版本。',true);return}$('versionPreview').textContent=v.text;$('versionPreview').hidden=false}
-function restore(){var v=version();if(!v)return;if(!confirm('要用這個版本覆蓋目前編輯器內容嗎？建議先儲存目前版本。'))return;$('essayText').value=v.text;$('count').textContent=Array.from(v.text).length;pending();renderCompare();show('已還原至編輯器。')}
+function restore(){var v=version();if(!v)return;if(!confirm('要用這個版本覆蓋目前編輯器內容嗎？建議先儲存目前版本。'))return;$('essayText').value=v.text;$('count').textContent=Array.from(v.text).length;pending();renderCompare();updateRevisionButton();show('已還原至編輯器。')}
 function review(){flush();var t=$('essayText').value;if(!t.trim()){show('請先作答。',true);return}var i=Number($('prompt').value),m=$('mode').value,q=topics[i][2];var s='你是臺灣司法特考三等觀護人國文作文的學習用批改助教。請以繁體中文批改，非正式閱卷，模擬分數只供參考。\n請先獨立分析題幹的作答任務，再評閱我的原文；不要把原題改編來源當成唯一標準答案。\n練習模式：'+modes[m][0]+'\n題目：'+topics[i][0]+'\n題幹：'+topics[i][1];if(q)s+='\n題型：'+(q.type==='short'?'短文（20分）':'長文（60分）')+'\n作答要求：'+q.requirements+'\n改編來源：'+q.source.exam+'，'+q.source.section+'（新編題目，並非原卷試題）；來源：'+q.source.link+'\n核心訓練：'+q.skills.join('、');s+='\n請依序提供：①整體評語與模擬分數（僅限完整作文，未完成全文不得硬評整題）②題意掌握、論證層次、素材例證、結構、文句表達之具體評估③逐段指出錯誤、離題、跳躍及論述空白④優先改正的三項問題⑤必要的示範段落及可立即實行的重寫練習。短文另核對各項提問與字數限制；長文檢查全文的主題推進、反面思考與結尾。保留作者立意與個人經驗，不得捏造事例，不得只換華麗詞藻。如資訊不足請明說。\n\n我的作文：\n'+t;var baseline=(draft().versions||[])[0];if(baseline&&baseline.text!==t)s+='\n\n以下為先前保存的初稿，請比較是否改進，亦指出可能退步處：\n'+baseline.text;function fallback(){var a=document.createElement('textarea');a.value=s;a.style.position='fixed';a.style.left='-10000px';document.body.append(a);a.select();var success=document.execCommand('copy');a.remove();if(!success)throw Error('copy failed')}if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(s).then(function(){show('已複製，貼到 ChatGPT 批改。')}).catch(function(){try{fallback();show('已複製。')}catch(e){show('複製失敗，請手動選取文字。',true)}})}else try{fallback();show('已複製。')}catch(e){show('複製失敗，請手動選取文字。',true)}}
-function self(){flush();var d=draft(),ratings={};['expression','reasoning','structure','meaning'].forEach(function(k){var x=Number($('rubric-'+k).value);if(x>=1&&x<=5)ratings[k]=x});d.self=ratings;d.updatedAt=new Date().toISOString();save();show('自評已保存。')}
+function self(){flush();var d=draft(),ratings={};['expression','reasoning','structure','meaning'].forEach(function(k){var x=Number($('rubric-'+k).value);if(x>=1&&x<=5)ratings[k]=x});d.self=ratings;d.updatedAt=new Date().toISOString();save();coachStats();show('自評已保存。')}
 function makeRubrics(){[['expression','文字表達'],['reasoning','論述深度'],['structure','文章層次'],['meaning','旨意詮釋']].forEach(function(r){var box=document.createElement('div'),l=document.createElement('label'),s=document.createElement('select');l.textContent=r[1];l.htmlFor='rubric-'+r[0];s.id='rubric-'+r[0];[['','未評估'],['1','1 需加強'],['2','2 略有不足'],['3','3 基本清楚'],['4','4 表現良好'],['5','5 表現扎實']].forEach(function(a){s.add(new Option(a[1],a[0]))});box.append(l,s);$('rubrics').append(box)})}
 function listQuestions(){
  var f=$('filter').value;questionSet=[];
@@ -262,9 +302,9 @@ function importJSON(event){var file=event.target.files&&event.target.files[0];if
 function listEssay(){var typ=$('essayType').value||'all',before=$('prompt').value;$('prompt').replaceChildren();topics.forEach(function(t,i){var q=t[2];if(typ==='original'&&q||typ==='short'&&(!q||q.type!=='short')||typ==='long'&&(!q||q.type!=='long'))return;var label=q?(q.type==='short'?'短文':'長文')+'｜'+q.id+'｜'+t[0]:'原創｜'+String(i+1).padStart(2,'0')+'｜'+t[0];$('prompt').add(new Option(label,String(i)))});if(Array.from($('prompt').options).some(function(x){return x.value===before}))$('prompt').value=before;else if($('prompt').options.length)$('prompt').value=$('prompt').options[0].value}
 listEssay();makeRubrics();
 $('mode').addEventListener('change',switchDraft);$('prompt').addEventListener('change',switchDraft);$('essayType').addEventListener('change',function(){listEssay();switchDraft()});
-$('essayText').addEventListener('input',function(){$('count').textContent=Array.from(this.value).length;pending()});$('feedback').addEventListener('input',pending);$('nextGoal').addEventListener('input',pending);
+$('essayText').addEventListener('input',function(){$('count').textContent=Array.from(this.value).length;pending();updateRevisionButton()});$('feedback').addEventListener('input',pending);$('nextGoal').addEventListener('input',pending);
 $('compareBase').addEventListener('change',renderCompare);$('compareRefresh').addEventListener('click',function(){flush();renderCompare()});
-$('saveVersion').addEventListener('click',saveVersion);$('viewVersion').addEventListener('click',viewVersion);$('restoreVersion').addEventListener('click',restore);$('copyReview').addEventListener('click',review);$('clearEssay').addEventListener('click',function(){if(confirm('確定清空目前草稿？已存修訂版本仍會保留。')){$('essayText').value='';$('count').textContent='0';pending()}});$('saveFeedback').addEventListener('click',function(){flush();show('回饋已保存。')});$('saveSelf').addEventListener('click',self);
+$('saveVersion').addEventListener('click',saveVersion);$('viewVersion').addEventListener('click',viewVersion);$('restoreVersion').addEventListener('click',restore);$('copyReview').addEventListener('click',review);$('copyRevision').addEventListener('click',revisionReview);$('essayCoachPick').addEventListener('click',pickEssay);$('clearEssay').addEventListener('click',function(){if(confirm('確定清空目前草稿？已存修訂版本仍會保留。')){$('essayText').value='';$('count').textContent='0';pending();updateRevisionButton()}});$('saveFeedback').addEventListener('click',function(){flush();coachStats();show('回饋已保存。')});$('saveSelf').addEventListener('click',self);
 $('timerToggle').addEventListener('click',toggleTimer);$('timerReset').addEventListener('click',resetTimer);
 ['Essay','English','Records'].forEach(function(s){$('tab'+s).addEventListener('click',function(){tab(s)})});
 $('startDaily').addEventListener('click',function(){$('filter').value='daily';selected=-1;listQuestions();$('panelEnglish').scrollIntoView({block:'start',behavior:'smooth'})});
