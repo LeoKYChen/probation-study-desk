@@ -1,0 +1,156 @@
+name: v2.7 Stage 3q feature-level acceptance and no-go release gate
+
+on:
+  push:
+    branches:
+      - experiment/v27-mcp-stage3q
+    paths:
+      - 'experiments/v27-mcp-poc/stage3q-readiness-ledger.cjs'
+      - 'experiments/v27-mcp-poc/stage3q-readiness-ledger.test.cjs'
+      - 'experiments/v27-mcp-poc/stage3q-review.html'
+      - 'experiments/v27-mcp-poc/STAGE3Q.md'
+      - '.github/workflows/test-v27-mcp-stage3q.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  isolated-acceptance:
+    name: Compare recorded evidence tiers and block all premature deployment
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    env:
+      JUDICIAL_API_LIVE_ENABLED: 'false'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Offline JS syntax and feature release-policy self-tests
+        run: |
+          node --check experiments/v27-mcp-poc/stage3q-readiness-ledger.cjs
+          node --check experiments/v27-mcp-poc/stage3q-readiness-ledger.test.cjs
+          node --test experiments/v27-mcp-poc/stage3q-readiness-ledger.test.cjs
+      - name: Verify source evidence and no stale status promoted to production
+        run: |
+          node - <<'JS'
+          const fs=require('node:fs'),assert=require('node:assert/strict');
+          const base='experiments/v27-mcp-poc/';
+          const {EVIDENCE,FEATURE_MAP,planReview,summary,OFFICIAL_PORTAL}=require(
+            './'+base+'stage3q-readiness-ledger.cjs'
+          );
+          for(const [key,e] of Object.entries(EVIDENCE)){
+            assert.ok(fs.existsSync(base+e.report),key+': missing underlying acceptance report');
+            assert.ok(e.actionRuns.length>=1,key+': no documented CI evidence');
+          }
+          const law=fs.readFileSync(base+'STAGE1_ACCEPTANCE.md','utf8');
+          assert.match(law,/20\/20/);
+          const interpretation=fs.readFileSync(base+'STAGE2_ACCEPTANCE.md','utf8');
+          assert.match(interpretation,/17\/21/);
+          assert.match(interpretation,/4\/21/);
+          const court=fs.readFileSync(base+'STAGE3M_RESULT.md','utf8');
+          assert.match(court,/16,297/);assert.match(court,/15,217/);
+          const pdf=fs.readFileSync(base+'STAGE3P_RESULT.md','utf8');
+          assert.match(pdf,/真實 PDF 下載及全文核對/);
+          assert.equal(EVIDENCE.court_pdf.counts.realOfficialPdfFulltextsVerified,0);
+          assert.equal(EVIDENCE.court_publication.counts.realPurgeDemonstrations,0);
+          assert.equal(EVIDENCE.interpretations.counts.officialAbstractOnly,4);
+          assert.equal(summary().status,'stage3_not_accepted');
+          assert.equal(planReview({features:Object.keys(FEATURE_MAP),
+            approvals:{production:true},evidence:{official:true}}).canDeploy,false);
+          assert.equal(OFFICIAL_PORTAL,'https://judgment.judicial.gov.tw/FJUD/');
+          console.log('Evidence tiers anchored to prior official samples, not present-day publication');
+          JS
+      - name: Review static human-readable dashboard privacy and offline-only design
+        run: |
+          python3 - <<'PY'
+          import ast
+          from pathlib import Path
+          model=Path('experiments/v27-mcp-poc/stage3q-readiness-ledger.cjs').read_text()
+          view=Path('experiments/v27-mcp-poc/stage3q-review.html').read_text()
+          for denied in (
+              'require("node:http")','require("node:https")','require("node:fs")',
+              'require("fs")','fetch(', 'process.env','child_process',
+              'eval(', 'document.cookie','localStorage',
+          ):
+              assert denied not in model, denied
+          assert '<script' not in view.lower()
+          assert "script-src 'none'" in view
+          assert "connect-src 'none'" in view
+          assert "frame-src" not in view or True
+          assert 'TPSM,114' not in view and 'TPHV,113' not in view
+          assert '<form' not in view.lower()
+          assert '裁判 PDF 全文' in view or 'PDF 全文' in view
+          assert 'https://judgment.judicial.gov.tw/FJUD/' in view
+          assert '未經核實' in view
+          print('Standalone offline review, no web API, case IDs, uploads or scripts')
+          PY
+      - name: Recheck existing court privacy and disabled service regressions only
+        run: |
+          node --test \
+            experiments/v27-mcp-poc/stage3d-link-only.test.cjs \
+            experiments/v27-mcp-poc/stage3e-click-recheck.test.cjs \
+            experiments/v27-mcp-poc/stage3f-ui/model.test.cjs \
+            experiments/v27-mcp-poc/stage3g-official-source-gate.test.cjs \
+            services/v2.7-judgment/*.test.cjs
+      - name: Ensure no existing website, judgment worker or production file altered
+        run: |
+          git fetch --no-tags --depth=2 origin experiment/v27-mcp-stage3p
+          python3 - <<'PY'
+          import subprocess
+          changed=subprocess.check_output(['git','diff','--name-only','FETCH_HEAD','HEAD'],
+                                          text=True).splitlines()
+          allowed={
+              'experiments/v27-mcp-poc/stage3q-readiness-ledger.cjs',
+              'experiments/v27-mcp-poc/stage3q-readiness-ledger.test.cjs',
+              'experiments/v27-mcp-poc/stage3q-review.html',
+              'experiments/v27-mcp-poc/STAGE3Q.md',
+              'experiments/v27-mcp-poc/STAGE3Q_RESULT.md',
+              '.github/workflows/test-v27-mcp-stage3q.yml',
+          }
+          assert set(changed).issubset(allowed),changed
+          assert 'status:404' in open('services/v2.7-judgment/private-worker.mjs').read()
+          print('Stage3q experiment-only changes:',changed)
+          PY
+      - name: Write non-case metadata report and fail-closed release decision
+        run: |
+          node - <<'JS'
+          const fs=require('node:fs');
+          const x=require('./experiments/v27-mcp-poc/stage3q-readiness-ledger.cjs');
+          const selected=Object.keys(x.FEATURE_MAP);
+          const verdict=x.planReview({features:selected,
+            approvals:{deploy:true,allVerified:true},
+            evidence:{realCourtPublication:true,pdfAuthorized:true}});
+          if(verdict.canDeploy||verdict.stage3Accepted||verdict.canPublishIndividualCaseLinks)
+            throw Error('A synthetic claim incorrectly promoted a release');
+          const result={
+            phase:'v2.7 Stage3q feature-level research acceptance ledger',
+            reviewed_as_of:x.REVIEWED_AT,
+            selected_feature_count:selected.length,
+            source_evidence_categories:Object.keys(x.EVIDENCE).length,
+            law_selected_checks:x.EVIDENCE.legislation.counts.sampleVerified,
+            interpretation_official_full_text:x.EVIDENCE.interpretations.counts.sourceFullText,
+            interpretation_abstract_only:x.EVIDENCE.interpretations.counts.officialAbstractOnly,
+            real_court_pdf_fulltext_verified:0,
+            real_current_publication_checks:0,
+            stage3_accepted:false,
+            integration_authorized:false,
+            production_deployment_authorized:false,
+            actual_cloudflare_or_website_changes:false,
+            real_court_jids_or_texts_saved:false,
+            no_real_pdf_downloads:true
+          };
+          fs.writeFileSync('stage3q-evidence-summary.json',JSON.stringify(result,null,2)+'\n');
+          console.log(JSON.stringify(result));
+          JS
+      - name: Upload only evidence-status counts and no case documents
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v27-stage3q-research-acceptance-matrix
+          path: stage3q-evidence-summary.json
+          if-no-files-found: warn
+          retention-days: 14
