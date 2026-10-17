@@ -78,7 +78,48 @@ function replacePreviouslyStudied(state,date,id,at=new Date().toISOString()){
   else day.tasks.splice(idx,1);
   return next;
 }
+/* Merge a manually imported v0.6 backup without deleting current progress. */
+function mergeBackup(current,incoming){
+  if(!incoming||typeof incoming!=="object"||Array.isArray(incoming)||incoming.schema!==STORAGE_KEY)throw Error("備份格式或版本不符，未匯入");
+  for(const key of ["days","completed","excluded","wordDays","wordProgress","customWords"]){
+    if(incoming[key]!==undefined&&(!incoming[key]||typeof incoming[key]!=="object"||Array.isArray(incoming[key])))
+      throw Error("備份欄位格式不符："+key);
+  }
+  const a=normalize(current),b=normalize(incoming),out=createState();
+  const combine=(old,remote)=>Object.assign(Object.create(null),remote,old);
+  out.days=combine(a.days,b.days);
+  out.excluded=combine(a.excluded,b.excluded);
+  out.wordDays=combine(a.wordDays,b.wordDays);
+  out.customWords=combine(a.customWords,b.customWords);
+  const completed=combine(a.completed,b.completed);
+  for(const id of Object.keys(b.completed)){
+    const mine=a.completed[id],other=b.completed[id];
+    if(mine&&other&&String(other.at||"")>String(mine.at||""))completed[id]=other;
+  }
+  out.completed=completed;
+  out.wordProgress=combine(a.wordProgress,b.wordProgress);
+  for(const id of Object.keys(b.wordProgress)){
+    const local=a.wordProgress[id],remote=b.wordProgress[id];
+    if(!local||!remote)continue;
+    const history=new Map();
+    for(const row of [...(Array.isArray(remote.attempts)?remote.attempts:[]),...(Array.isArray(local.attempts)?local.attempts:[])]){
+      if(!row||!/^\\d{4}-\\d{2}-\\d{2}$/.test(String(row.date||"")))continue;
+      const prior=history.get(row.date);
+      if(!prior||String(row.at||"")>=String(prior.at||""))history.set(row.date,row);
+    }
+    const attempts=[...history.values()].sort((x,y)=>String(x.date).localeCompare(String(y.date))).slice(-80);
+    let streak=0,due="",learnedAt=attempts[0]?.date||String(local.learnedAt||remote.learnedAt||"");
+    const intervals=[1,1,3,7,14,30,60];
+    for(const row of attempts){
+      streak=row.known?Math.min(streak+1,6):0;
+      const next=new Date(row.date+"T00:00:00Z");next.setUTCDate(next.getUTCDate()+(row.known?intervals[streak]:1));
+      due=next.toISOString().slice(0,10);
+    }
+    out.wordProgress[id]=attempts.length?{learnedAt,streak,due,attempts}:local;
+  }
+  return out;
+}
 function recent(state){return Object.values(state.completed).sort((a,b)=>String(b.at).localeCompare(String(a.at)))}
 function getUnit(id){return byId[id]||null}
-return {STORAGE_KEY,SOURCES,today,weekday,createState,normalize,units,getUnit,planDay,markDone,replacePreviouslyStudied,recent};
+return {STORAGE_KEY,SOURCES,today,weekday,createState,normalize,mergeBackup,units,getUnit,planDay,markDone,replacePreviouslyStudied,recent};
 });
