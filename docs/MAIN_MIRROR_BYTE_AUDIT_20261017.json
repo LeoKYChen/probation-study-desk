@@ -1,0 +1,866 @@
+{
+  "base": "https://github-main-mirror.probation-study30-test.pages.dev/",
+  "source_commit": "e88ecf5a378db0a70aff98238ecd6da80a4b8ea3",
+  "checked": 143,
+  "passed": 143,
+  "files": [
+    {
+      "file": "offline-manifest.json",
+      "match": true,
+      "expected": "34a0956daaf473dad1190e00d10ff42b0702380d834ed38662ede6b2071cfca9",
+      "actual": "34a0956daaf473dad1190e00d10ff42b0702380d834ed38662ede6b2071cfca9"
+    },
+    {
+      "file": "index.html",
+      "match": true,
+      "expected": "cc21e5d4b2c587295b00f2252f425d56dd114e37a4a39b980c5cf1ff4c1cb116",
+      "actual": "cc21e5d4b2c587295b00f2252f425d56dd114e37a4a39b980c5cf1ff4c1cb116"
+    },
+    {
+      "file": "offline.css",
+      "match": true,
+      "expected": "2cfa3f994c3a8631cae7580f4421eff562dcf451ba38d796002d1805ec2799cf",
+      "actual": "2cfa3f994c3a8631cae7580f4421eff562dcf451ba38d796002d1805ec2799cf"
+    },
+    {
+      "file": "offline.js",
+      "match": true,
+      "expected": "22aaa84d9d69bf8ccea9261143ed1a593b594861a3aed1462745db9baac49447",
+      "actual": "22aaa84d9d69bf8ccea9261143ed1a593b594861a3aed1462745db9baac49447"
+    },
+    {
+      "file": ".nojekyll",
+      "match": true,
+      "expected": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "actual": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "file": "mirror-manifest.json",
+      "match": true,
+      "expected": "1770d42f5991d149b173bfae2123cfb775148837888a776f24d3ecf97e0afc40",
+      "actual": "1770d42f5991d149b173bfae2123cfb775148837888a776f24d3ecf97e0afc40"
+    },
+    {
+      "file": "manifest.webmanifest",
+      "match": true,
+      "expected": "b5ba29d2892f16f809aeb770502bf1a72aa38029415faeed9d1d205508b9de83",
+      "actual": "b5ba29d2892f16f809aeb770502bf1a72aa38029415faeed9d1d205508b9de83"
+    },
+    {
+      "file": "sw.js",
+      "match": true,
+      "expected": "aa5d8a4b0a12a8bc6604086151520c7b13fb49e191f723852648824bb71e57c2",
+      "actual": "aa5d8a4b0a12a8bc6604086151520c7b13fb49e191f723852648824bb71e57c2"
+    },
+    {
+      "file": "shared-ui.css",
+      "match": true,
+      "expected": "f4ddd9a2219d44f6bcbea08ead809d4d0dcb89abc4f297fcecfec325fb91f667",
+      "actual": "f4ddd9a2219d44f6bcbea08ead809d4d0dcb89abc4f297fcecfec325fb91f667"
+    },
+    {
+      "file": "daily-simulation/index.html",
+      "match": true,
+      "expected": "2e0ffc4667ae53d5ed629b98cf4336b64c70461cc6bec60b2fa7de4e13576571",
+      "actual": "2e0ffc4667ae53d5ed629b98cf4336b64c70461cc6bec60b2fa7de4e13576571"
+    },
+    {
+      "file": "daily-simulation/practice.css",
+      "match": true,
+      "expected": "8d2d66b5c37801d5939a411b60824609a4539a90594a02cf1bb1c3b3ccf42532",
+      "actual": "8d2d66b5c37801d5939a411b60824609a4539a90594a02cf1bb1c3b3ccf42532"
+    },
+    {
+      "file": "daily-simulation/questions.json",
+      "match": true,
+      "expected": "d0195571727142c89c4d637d10cb9feceb3e2bf7982b50d5a9c43d932d45b53b",
+      "actual": "d0195571727142c89c4d637d10cb9feceb3e2bf7982b50d5a9c43d932d45b53b"
+    },
+    {
+      "file": "daily-simulation/reading.css",
+      "match": true,
+      "expected": "356941f30be0c74ca97a29c263f1b18a93f92459f10603ab23110693d2ec38f1",
+      "actual": "356941f30be0c74ca97a29c263f1b18a93f92459f10603ab23110693d2ec38f1"
+    },
+    {
+      "file": "daily-simulation/documents.json",
+      "match": true,
+      "expected": "bbc0ad4a6e4ecc98c2f8653e72812889b7c329594224ec8268bfd4242fba2f15",
+      "actual": "bbc0ad4a6e4ecc98c2f8653e72812889b7c329594224ec8268bfd4242fba2f15"
+    },
+    {
+      "file": "daily-simulation/news.js",
+      "match": true,
+      "expected": "3ac48f179a917733b9982459f207290c84dd94f19a7585e514ea5aed5abcd30c",
+      "actual": "3ac48f179a917733b9982459f207290c84dd94f19a7585e514ea5aed5abcd30c"
+    },
+    {
+      "file": "daily-simulation/model.js",
+      "match": true,
+      "expected": "4a49452ea722d16e7fe59b5b61f5409e532500187ce5edaea47aae046317d6eb",
+      "actual": "4a49452ea722d16e7fe59b5b61f5409e532500187ce5edaea47aae046317d6eb"
+    },
+    {
+      "file": "daily-simulation/app.js",
+      "match": true,
+      "expected": "ba2448de9e1e127a38d5a6b9445c7c9bd3c0950778f9b325ee97c3fc212e40b9",
+      "actual": "ba2448de9e1e127a38d5a6b9445c7c9bd3c0950778f9b325ee97c3fc212e40b9"
+    },
+    {
+      "file": "active-recall/recall.css",
+      "match": true,
+      "expected": "e807488ac6a6f816faca1dad9dfa2b6e55f2bbb3cd454c7d7758b439c4c67fb9",
+      "actual": "e807488ac6a6f816faca1dad9dfa2b6e55f2bbb3cd454c7d7758b439c4c67fb9"
+    },
+    {
+      "file": "active-recall/index.html",
+      "match": true,
+      "expected": "61eaeeffb8e1807c70c93bd7c442304214e9529ba486c47f02483e742e1f483d",
+      "actual": "61eaeeffb8e1807c70c93bd7c442304214e9529ba486c47f02483e742e1f483d"
+    },
+    {
+      "file": "active-recall/bank.js",
+      "match": true,
+      "expected": "1e047109b6104c234a93f8fc7c4115d88e09fa82f2a6d5bdc451fab55ae2a683",
+      "actual": "1e047109b6104c234a93f8fc7c4115d88e09fa82f2a6d5bdc451fab55ae2a683"
+    },
+    {
+      "file": "active-recall/recall.js",
+      "match": true,
+      "expected": "8a77a5f9ab2d7b83f9c8d67c2665f9cdb3b9d9b15998ab74c77e1696f526ad5e",
+      "actual": "8a77a5f9ab2d7b83f9c8d67c2665f9cdb3b9d9b15998ab74c77e1696f526ad5e"
+    },
+    {
+      "file": "active-recall/ai-pack.js",
+      "match": true,
+      "expected": "7a270c29468b63e1b570afcc2b31a7e1c33480c9eb89a184201d2c846a97b23c",
+      "actual": "7a270c29468b63e1b570afcc2b31a7e1c33480c9eb89a184201d2c846a97b23c"
+    },
+    {
+      "file": "common-subjects/essay-questions-v1.js",
+      "match": true,
+      "expected": "2f8f9047daccab13bf62dbbf720ea6851475831c7e894470dc8d881a6a13df11",
+      "actual": "2f8f9047daccab13bf62dbbf720ea6851475831c7e894470dc8d881a6a13df11"
+    },
+    {
+      "file": "common-subjects/index.html",
+      "match": true,
+      "expected": "d9b28afda56727a618a6043d3000b45ae4c0004353dc1d1dda7d02e879587c8f",
+      "actual": "d9b28afda56727a618a6043d3000b45ae4c0004353dc1d1dda7d02e879587c8f"
+    },
+    {
+      "file": "common-subjects/README.md",
+      "match": true,
+      "expected": "b039b401fae8a935c6c937c300c29375d0e8a244eaf82bdf574e5402d19edb57",
+      "actual": "b039b401fae8a935c6c937c300c29375d0e8a244eaf82bdf574e5402d19edb57"
+    },
+    {
+      "file": "common-subjects/staresto-resources.js",
+      "match": true,
+      "expected": "eabcc6c5d548783f32c43ccc2a0473fbe17240459da4f850d9383ac69be9052f",
+      "actual": "eabcc6c5d548783f32c43ccc2a0473fbe17240459da4f850d9383ac69be9052f"
+    },
+    {
+      "file": "common-subjects/essay-questions-v2.js",
+      "match": true,
+      "expected": "7ac69d46bc4c59308b4dc4eb425f35cdd180767d976e4206bc9e15b24f540ec3",
+      "actual": "7ac69d46bc4c59308b4dc4eb425f35cdd180767d976e4206bc9e15b24f540ec3"
+    },
+    {
+      "file": "common-subjects/staresto-integration.js",
+      "match": true,
+      "expected": "1f994f480ffa76aed80941810e99de7fcc0837c8333e2cefe3da74e7c32650c4",
+      "actual": "1f994f480ffa76aed80941810e99de7fcc0837c8333e2cefe3da74e7c32650c4"
+    },
+    {
+      "file": "common-subjects/staresto.css",
+      "match": true,
+      "expected": "dbbc51d8dab501fce78211eb602c9c390b0e854f209098a2074ab79d18a60b1c",
+      "actual": "dbbc51d8dab501fce78211eb602c9c390b0e854f209098a2074ab79d18a60b1c"
+    },
+    {
+      "file": "common-subjects/essay-questions-v3.js",
+      "match": true,
+      "expected": "c2588c80510e67d426a2c366c80e8ab77b121871431c639414e4220dea15e4fd",
+      "actual": "c2588c80510e67d426a2c366c80e8ab77b121871431c639414e4220dea15e4fd"
+    },
+    {
+      "file": "common-subjects/english-v02.js",
+      "match": true,
+      "expected": "bdb780f554e61eadf2b84f4fdf05b89834c2808715ec8be2df88d693afbb3820",
+      "actual": "bdb780f554e61eadf2b84f4fdf05b89834c2808715ec8be2df88d693afbb3820"
+    },
+    {
+      "file": "common-subjects/catalog/index.html",
+      "match": true,
+      "expected": "c3993bd106af356f064551ac490795cbefb3ee3b336f2014d38caa34fd083187",
+      "actual": "c3993bd106af356f064551ac490795cbefb3ee3b336f2014d38caa34fd083187"
+    },
+    {
+      "file": "common-subjects/catalog/REPORT.md",
+      "match": true,
+      "expected": "b822a23c6c5366fadd99ea1a7e4a51147169973596c430c6295e48c68d8c46d5",
+      "actual": "b822a23c6c5366fadd99ea1a7e4a51147169973596c430c6295e48c68d8c46d5"
+    },
+    {
+      "file": "common-subjects/catalog/style.css",
+      "match": true,
+      "expected": "88f370a2d460a758ebfbf1448b6473589a254afda4ae38e9d20d2ca7a9ed3a06",
+      "actual": "88f370a2d460a758ebfbf1448b6473589a254afda4ae38e9d20d2ca7a9ed3a06"
+    },
+    {
+      "file": "common-subjects/catalog/NOTICE.md",
+      "match": true,
+      "expected": "3b8d41935e4d05bba1c61bd1e29f2958046eea1988753e87f17d97524c981546",
+      "actual": "3b8d41935e4d05bba1c61bd1e29f2958046eea1988753e87f17d97524c981546"
+    },
+    {
+      "file": "common-subjects/catalog/app.js",
+      "match": true,
+      "expected": "65c3f8ace4573b0ce7fec617baac9f6f8ce506a52d04d3b7941dcd4a9e12edc6",
+      "actual": "65c3f8ace4573b0ce7fec617baac9f6f8ce506a52d04d3b7941dcd4a9e12edc6"
+    },
+    {
+      "file": "common-subjects/catalog/data/report.json",
+      "match": true,
+      "expected": "c5abd4279d41ad8ede515e71ea9f1697dfd1c396a35cc0e31c42b4790480ec23",
+      "actual": "c5abd4279d41ad8ede515e71ea9f1697dfd1c396a35cc0e31c42b4790480ec23"
+    },
+    {
+      "file": "common-subjects/catalog/data/resources.json",
+      "match": true,
+      "expected": "eb3e2b22d876a907a48b9ece3489d71a71c0be351641cf2c9698c7c4c45621de",
+      "actual": "eb3e2b22d876a907a48b9ece3489d71a71c0be351641cf2c9698c7c4c45621de"
+    },
+    {
+      "file": "common-subjects/catalog/data/index.json",
+      "match": true,
+      "expected": "7a3c1f58ce14998fb63aab5b10fe36b025c2ca884c9d2b1aa77a610d58fa753a",
+      "actual": "7a3c1f58ce14998fb63aab5b10fe36b025c2ca884c9d2b1aa77a610d58fa753a"
+    },
+    {
+      "file": "common-subjects/catalog/data/shards/essay-prompts/data/prompts.json",
+      "match": true,
+      "expected": "df3148e6805b38236b9d57a006183fb45db4afa3782c19e6d92e09c791004947",
+      "actual": "df3148e6805b38236b9d57a006183fb45db4afa3782c19e6d92e09c791004947"
+    },
+    {
+      "file": "common-subjects/catalog/data/shards/grammar-cloze-test/grammar_items.json",
+      "match": true,
+      "expected": "959e94b843d7fa631e9c4628b8833ed014e34af620f83911b54d336be2053195",
+      "actual": "959e94b843d7fa631e9c4628b8833ed014e34af620f83911b54d336be2053195"
+    },
+    {
+      "file": "common-subjects/catalog/data/shards/grammar-cloze-test/adapt/passages.json",
+      "match": true,
+      "expected": "e186575d4f1112face906bf8047be8153f1a7ebea2a1d675d074214ef031c58e",
+      "actual": "e186575d4f1112face906bf8047be8153f1a7ebea2a1d675d074214ef031c58e"
+    },
+    {
+      "file": "common-subjects/catalog/data/shards/grammar-cloze-test/adapt/items.json",
+      "match": true,
+      "expected": "b2882b68716c8da99e372c2f9dc58ebd7a45e882348d1ba904eee8c45e46339e",
+      "actual": "b2882b68716c8da99e372c2f9dc58ebd7a45e882348d1ba904eee8c45e46339e"
+    },
+    {
+      "file": "common-subjects/catalog/data/shards/passage-completion/adapt/passages.json",
+      "match": true,
+      "expected": "c396546297b626ca0582c753cabc692982dfc2056d21aea7116a1e50045eb118",
+      "actual": "c396546297b626ca0582c753cabc692982dfc2056d21aea7116a1e50045eb118"
+    },
+    {
+      "file": "common-subjects/catalog/data/shards/passage-completion/adapt/items.json",
+      "match": true,
+      "expected": "9c19e2c759393112138ca9726619a36d7ce9622e0fa1449c7410dfd3ee1a9ccc",
+      "actual": "9c19e2c759393112138ca9726619a36d7ce9622e0fa1449c7410dfd3ee1a9ccc"
+    },
+    {
+      "file": "common-subjects/catalog/data/shards/passage-completion/gsat/passages.json",
+      "match": true,
+      "expected": "7c9dda54564f99a3fe3fb6215e96a611bc147b91b7c136d3580419cfe016a2fc",
+      "actual": "7c9dda54564f99a3fe3fb6215e96a611bc147b91b7c136d3580419cfe016a2fc"
+    },
+    {
+      "file": "common-subjects/catalog/data/shards/passage-completion/gsat/items.json",
+      "match": true,
+      "expected": "e15730d666c1c4ee112971fdb9e9775bd9a5a74a6b6769bf93e0fe00ab101484",
+      "actual": "e15730d666c1c4ee112971fdb9e9775bd9a5a74a6b6769bf93e0fe00ab101484"
+    },
+    {
+      "file": "common-subjects/catalog/data/shards/passage-completion/zhikao/passages.json",
+      "match": true,
+      "expected": "5c16377d40929cebd20316704780f4b9b0b2b1f1e65209bf9358fd91180a5926",
+      "actual": "5c16377d40929cebd20316704780f4b9b0b2b1f1e65209bf9358fd91180a5926"
+    },
+    {
+      "file": "common-subjects/catalog/data/shards/passage-completion/zhikao/items.json",
+      "match": true,
+      "expected": "f53c7c21fb8bfacb2a4d7e2c6de864acb5cbdf1fcbc2059f3a5c0e786a044dc5",
+      "actual": "f53c7c21fb8bfacb2a4d7e2c6de864acb5cbdf1fcbc2059f3a5c0e786a044dc5"
+    },
+    {
+      "file": "common-subjects/catalog/data/shards/JCEE-vocab-questions/translate/quiz_items.json",
+      "match": true,
+      "expected": "0e3b10315835ca2b0df017e676cd9384cb03f3767c25540a3ae0248be767aa2a",
+      "actual": "0e3b10315835ca2b0df017e676cd9384cb03f3767c25540a3ae0248be767aa2a"
+    },
+    {
+      "file": "common-subjects/catalog/data/shards/JCEE-vocab-questions/translate/adapt/quiz_items.json",
+      "match": true,
+      "expected": "3caad7a620bc709b8c3d24c4bc56bf58f03bd3d8f977f9c407dce8d33d3c96f2",
+      "actual": "3caad7a620bc709b8c3d24c4bc56bf58f03bd3d8f977f9c407dce8d33d3c96f2"
+    },
+    {
+      "file": "common-subjects/catalog/data/shards/JCEE-vocab-questions/cards/cards_data.json",
+      "match": true,
+      "expected": "344a54a9738448eb9bc95a01d9e044f396e67611a189bce82ef4dfa6f4c05e45",
+      "actual": "344a54a9738448eb9bc95a01d9e044f396e67611a189bce82ef4dfa6f4c05e45"
+    },
+    {
+      "file": "common-subjects/catalog/data/shards/reading-comprehension/gsat/passages.json",
+      "match": true,
+      "expected": "a80b59567962306f882ccc967bd24ebd0f86fc540b00bae1cb179a699e9f762f",
+      "actual": "a80b59567962306f882ccc967bd24ebd0f86fc540b00bae1cb179a699e9f762f"
+    },
+    {
+      "file": "common-subjects/catalog/data/shards/reading-comprehension/gsat/items.json",
+      "match": true,
+      "expected": "b83656f31795b40ed312165bed7b0701cad4abd3df83ae054249a2d8b8379013",
+      "actual": "b83656f31795b40ed312165bed7b0701cad4abd3df83ae054249a2d8b8379013"
+    },
+    {
+      "file": "common-subjects/catalog/data/shards/reading-comprehension/zhikao/passages.json",
+      "match": true,
+      "expected": "b430939000bbaeae09f725c17d1dd2ebb94e32ed087c9ef05be62cb7cd02e8d4",
+      "actual": "b430939000bbaeae09f725c17d1dd2ebb94e32ed087c9ef05be62cb7cd02e8d4"
+    },
+    {
+      "file": "common-subjects/catalog/data/shards/reading-comprehension/zhikao/items.json",
+      "match": true,
+      "expected": "2c0c42e7101354553f703818c6d526323196b2cf27c2a43fac25422a18e5009e",
+      "actual": "2c0c42e7101354553f703818c6d526323196b2cf27c2a43fac25422a18e5009e"
+    },
+    {
+      "file": "common-subjects/catalog/data/shards/zhikao-cloze-test/zhikao_grammar_items.json",
+      "match": true,
+      "expected": "48c19f89283d44f46415cfcae831936e05d381fc997531b513bde7b2b4e424be",
+      "actual": "48c19f89283d44f46415cfcae831936e05d381fc997531b513bde7b2b4e424be"
+    },
+    {
+      "file": "common-subjects/catalog/data/shards/discourse-structure/adapt/passages.json",
+      "match": true,
+      "expected": "4c62a67d2744c26218c27907d165c13b8d572307a3888bb7c4c197daee9d6119",
+      "actual": "4c62a67d2744c26218c27907d165c13b8d572307a3888bb7c4c197daee9d6119"
+    },
+    {
+      "file": "common-subjects/catalog/data/shards/discourse-structure/adapt/items.json",
+      "match": true,
+      "expected": "7e0dcc028c641b65bf76faf5478e71981d769661ca6006cddd196c3ffe1cba5e",
+      "actual": "7e0dcc028c641b65bf76faf5478e71981d769661ca6006cddd196c3ffe1cba5e"
+    },
+    {
+      "file": "common-subjects/catalog/data/shards/discourse-structure/gsat/passages.json",
+      "match": true,
+      "expected": "0f54bc51e4d3b2538621f288aeb34db97920fee0da79f3ee2918e979fdbb312f",
+      "actual": "0f54bc51e4d3b2538621f288aeb34db97920fee0da79f3ee2918e979fdbb312f"
+    },
+    {
+      "file": "common-subjects/catalog/data/shards/discourse-structure/gsat/items.json",
+      "match": true,
+      "expected": "2aa84ba968955378afc0f2c738377f756d1c3502560b9411c62497123f64048d",
+      "actual": "2aa84ba968955378afc0f2c738377f756d1c3502560b9411c62497123f64048d"
+    },
+    {
+      "file": "common-subjects/catalog/data/shards/discourse-structure/zhikao/passages.json",
+      "match": true,
+      "expected": "27853e2c56c7482c3aa4727232085161e2874dfc1a5879d90f5d98a4ddcbfccc",
+      "actual": "27853e2c56c7482c3aa4727232085161e2874dfc1a5879d90f5d98a4ddcbfccc"
+    },
+    {
+      "file": "common-subjects/catalog/data/shards/discourse-structure/zhikao/items.json",
+      "match": true,
+      "expected": "f39dcd133930bb76f6c1905fa86961389c8f05ac8c1285ff7ae85ae9c4876d8c",
+      "actual": "f39dcd133930bb76f6c1905fa86961389c8f05ac8c1285ff7ae85ae9c4876d8c"
+    },
+    {
+      "file": "common-subjects/catalog/data/shards/mixed-format/items.json",
+      "match": true,
+      "expected": "cfc421f1fdb19a85b5d3d5755946633cdbc210425d5f5aa325bcbf96a3233a5a",
+      "actual": "cfc421f1fdb19a85b5d3d5755946633cdbc210425d5f5aa325bcbf96a3233a5a"
+    },
+    {
+      "file": "common-subjects/english-assistant/index.html",
+      "match": true,
+      "expected": "789c59675f5704659e3ba79260661980e6cc0260ddc49c3610f8da34e54d1c7c",
+      "actual": "789c59675f5704659e3ba79260661980e6cc0260ddc49c3610f8da34e54d1c7c"
+    },
+    {
+      "file": "common-subjects/english-assistant/vocab.js",
+      "match": true,
+      "expected": "79d9df1b51d9937042c21b987a3f35b586c70f2cea81a834d13a2e1730d75e47",
+      "actual": "79d9df1b51d9937042c21b987a3f35b586c70f2cea81a834d13a2e1730d75e47"
+    },
+    {
+      "file": "common-subjects/english-assistant/README.md",
+      "match": true,
+      "expected": "c34dc6b13f682221fff85e8c81cf36f4b2c15de0b66eecfc8c427fedbb35e711",
+      "actual": "c34dc6b13f682221fff85e8c81cf36f4b2c15de0b66eecfc8c427fedbb35e711"
+    },
+    {
+      "file": "common-subjects/english-assistant/engine.js",
+      "match": true,
+      "expected": "bb5d832afd16cb83bc72c0811b03b71ff008f4cc2c3dcf909ceb72375a7edf83",
+      "actual": "bb5d832afd16cb83bc72c0811b03b71ff008f4cc2c3dcf909ceb72375a7edf83"
+    },
+    {
+      "file": "common-subjects/english-assistant/app.js",
+      "match": true,
+      "expected": "00c9ce10c0fa088c090c8ca27c38b3948a8ed9ae35ae23bb8d4b57db61d4505a",
+      "actual": "00c9ce10c0fa088c090c8ca27c38b3948a8ed9ae35ae23bb8d4b57db61d4505a"
+    },
+    {
+      "file": "common-subjects/daily/index.html",
+      "match": true,
+      "expected": "63f88c07844a9f3d99c738864cb385ea6d744bbb094bb70e7b6bbc9c1d030a1b",
+      "actual": "63f88c07844a9f3d99c738864cb385ea6d744bbb094bb70e7b6bbc9c1d030a1b"
+    },
+    {
+      "file": "common-subjects/daily/SOURCES.md",
+      "match": true,
+      "expected": "86064cf3748ee7482b325f8bd1395ce1113f52328381570db5df1cd881e727fd",
+      "actual": "86064cf3748ee7482b325f8bd1395ce1113f52328381570db5df1cd881e727fd"
+    },
+    {
+      "file": "common-subjects/daily/reading.json",
+      "match": true,
+      "expected": "eae98f4778b7164ba03ce2f97433fc954fb981e802a3cd9332ef6c0ed99bdcfd",
+      "actual": "eae98f4778b7164ba03ce2f97433fc954fb981e802a3cd9332ef6c0ed99bdcfd"
+    },
+    {
+      "file": "common-subjects/daily/grammar-1.json",
+      "match": true,
+      "expected": "ffde8bc85366c2f62f2e02bffc909922b94b3c2a639a79b89309b6c33a3d9d65",
+      "actual": "ffde8bc85366c2f62f2e02bffc909922b94b3c2a639a79b89309b6c33a3d9d65"
+    },
+    {
+      "file": "common-subjects/daily/grammar-2.json",
+      "match": true,
+      "expected": "146785c700e5eb8d718e8fdb369dfd1f8b0869819c32e6b7e6f9423a3427610e",
+      "actual": "146785c700e5eb8d718e8fdb369dfd1f8b0869819c32e6b7e6f9423a3427610e"
+    },
+    {
+      "file": "common-subjects/daily/grammar-3.json",
+      "match": true,
+      "expected": "303d288b0f16e2f4882203637f1cec9610ef751400be4acec4d2ff6359f3ef63",
+      "actual": "303d288b0f16e2f4882203637f1cec9610ef751400be4acec4d2ff6359f3ef63"
+    },
+    {
+      "file": "common-subjects/daily/style.css",
+      "match": true,
+      "expected": "7be0318692ce510c0bb57ca709bb8049a1e47cd15f7665825f93cc7e8ba4c354",
+      "actual": "7be0318692ce510c0bb57ca709bb8049a1e47cd15f7665825f93cc7e8ba4c354"
+    },
+    {
+      "file": "common-subjects/daily/vocab.json",
+      "match": true,
+      "expected": "f0a4f128bb699345bb0a6ed0920415d1b03649c365ea126392e2e4438a7f0e95",
+      "actual": "f0a4f128bb699345bb0a6ed0920415d1b03649c365ea126392e2e4438a7f0e95"
+    },
+    {
+      "file": "common-subjects/daily/engine.js",
+      "match": true,
+      "expected": "27c07c2a491488e92658bc5f466b1389a107c7ffa91dcd2681f5b04a81e45ca2",
+      "actual": "27c07c2a491488e92658bc5f466b1389a107c7ffa91dcd2681f5b04a81e45ca2"
+    },
+    {
+      "file": "common-subjects/daily/completion.json",
+      "match": true,
+      "expected": "777e5c386244fd432d1517c4b9121e316d3d4729aeb804204f966ebe39f26a1a",
+      "actual": "777e5c386244fd432d1517c4b9121e316d3d4729aeb804204f966ebe39f26a1a"
+    },
+    {
+      "file": "common-subjects/daily/app.js",
+      "match": true,
+      "expected": "89b57dc29165d728dc81e9e01e8d14054de5b6abb10fb6344571b8efa07d1ae9",
+      "actual": "89b57dc29165d728dc81e9e01e8d14054de5b6abb10fb6344571b8efa07d1ae9"
+    },
+    {
+      "file": "pwa/icon-192.png",
+      "match": true,
+      "expected": "2776aaedd2361ab8e3d80a455b4594b2bb36a7e6054801da3e67c3edab7996f8",
+      "actual": "2776aaedd2361ab8e3d80a455b4594b2bb36a7e6054801da3e67c3edab7996f8"
+    },
+    {
+      "file": "pwa/icon-180.png",
+      "match": true,
+      "expected": "f8bec6529f90345ebdf86b442f02157c39573e698a9d5d936aa79471b1674cd3",
+      "actual": "f8bec6529f90345ebdf86b442f02157c39573e698a9d5d936aa79471b1674cd3"
+    },
+    {
+      "file": "pwa/icon-512.png",
+      "match": true,
+      "expected": "bc748d742056946f6f7ff98684eb195a92e8426e74269d6cf0360e233c22a5d1",
+      "actual": "bc748d742056946f6f7ff98684eb195a92e8426e74269d6cf0360e233c22a5d1"
+    },
+    {
+      "file": "v2.5/answer-calibration-status.json",
+      "match": true,
+      "expected": "bc206001c1722cef08a8cfd6fa9de8275c7fafeb242aaf25024aca8bcf9e1bcd",
+      "actual": "bc206001c1722cef08a8cfd6fa9de8275c7fafeb242aaf25024aca8bcf9e1bcd"
+    },
+    {
+      "file": "v2.5/note-references.js",
+      "match": true,
+      "expected": "96003d9526b99fb595d9efad166145239c181e9f7321c95203adabf54ce3a8dd",
+      "actual": "96003d9526b99fb595d9efad166145239c181e9f7321c95203adabf54ce3a8dd"
+    },
+    {
+      "file": "v2.5/pilot-coverage.json",
+      "match": true,
+      "expected": "f2fd552a5581c1db0335b781af3027480d1a670718acbab15116bcc6b92aab03",
+      "actual": "f2fd552a5581c1db0335b781af3027480d1a670718acbab15116bcc6b92aab03"
+    },
+    {
+      "file": "v2.5/shuati-link-status.json",
+      "match": true,
+      "expected": "ac97e0fa7688dd46801763c4ea3af0f7ea6726289c565af6001aa21cf6fa6a85",
+      "actual": "ac97e0fa7688dd46801763c4ea3af0f7ea6726289c565af6001aa21cf6fa6a85"
+    },
+    {
+      "file": "v2.5/extension25.css",
+      "match": true,
+      "expected": "e106353aadc2efdda1d161022d4165f3e1b328cf10701218d04a7b34c8f06145",
+      "actual": "e106353aadc2efdda1d161022d4165f3e1b328cf10701218d04a7b34c8f06145"
+    },
+    {
+      "file": "v2.5/study-map.css",
+      "match": true,
+      "expected": "63c26aa78bcbee7849071a36ca6998d14b3ebdf713b9fa6f92853f2bed723e6a",
+      "actual": "63c26aa78bcbee7849071a36ca6998d14b3ebdf713b9fa6f92853f2bed723e6a"
+    },
+    {
+      "file": "v2.5/clear-records.js",
+      "match": true,
+      "expected": "09dbf30421c623ea84e6e0929ea2158a7390ba21b7003ce5d01ea6a22992b7ad",
+      "actual": "09dbf30421c623ea84e6e0929ea2158a7390ba21b7003ce5d01ea6a22992b7ad"
+    },
+    {
+      "file": "v2.5/index.html",
+      "match": true,
+      "expected": "071f10bb0a685d2324eace5915aeb6660a25c684328e07634ef7f4fd3daa2b75",
+      "actual": "071f10bb0a685d2324eace5915aeb6660a25c684328e07634ef7f4fd3daa2b75"
+    },
+    {
+      "file": "v2.5/pending-pilots-data.js",
+      "match": true,
+      "expected": "0f9eced48c8354a694393221c336f9b722db619f4d469b5bc401aa338f828d78",
+      "actual": "0f9eced48c8354a694393221c336f9b722db619f4d469b5bc401aa338f828d78"
+    },
+    {
+      "file": "v2.5/essay-workspace25.js",
+      "match": true,
+      "expected": "4be53ac73ff6cc7d261f15492825e241f846a30ce31162e71e3904463da8e945",
+      "actual": "4be53ac73ff6cc7d261f15492825e241f846a30ce31162e71e3904463da8e945"
+    },
+    {
+      "file": "v2.5/legal-pilots.js",
+      "match": true,
+      "expected": "77803459bc1666f1484074d6c4296aa8fd67bb01fc1162ae917b2cd38847d8bd",
+      "actual": "77803459bc1666f1484074d6c4296aa8fd67bb01fc1162ae917b2cd38847d8bd"
+    },
+    {
+      "file": "v2.5/note-review.json",
+      "match": true,
+      "expected": "4f87a4773f508b444d9ffcebc56fc9f56a767ae84374d2a9e8a35f83bbf1fa46",
+      "actual": "4f87a4773f508b444d9ffcebc56fc9f56a767ae84374d2a9e8a35f83bbf1fa46"
+    },
+    {
+      "file": "v2.5/questions.js",
+      "match": true,
+      "expected": "c34932502e54eabeae277905268bd54826e311f52ede76120bf5478f89c348b4",
+      "actual": "c34932502e54eabeae277905268bd54826e311f52ede76120bf5478f89c348b4"
+    },
+    {
+      "file": "v2.5/topic-practice.js",
+      "match": true,
+      "expected": "b4f37128b25547b68b9dfc1112494d316ff2d20b1fd4b2639ac4e46b8bef65be",
+      "actual": "b4f37128b25547b68b9dfc1112494d316ff2d20b1fd4b2639ac4e46b8bef65be"
+    },
+    {
+      "file": "v2.5/study-map-data.js",
+      "match": true,
+      "expected": "c6d42bf8e277e11140987e90fb2cb6bfc3ff2748a0de4cd6394df22fbc3bb55e",
+      "actual": "c6d42bf8e277e11140987e90fb2cb6bfc3ff2748a0de4cd6394df22fbc3bb55e"
+    },
+    {
+      "file": "v2.5/full-pilots.js",
+      "match": true,
+      "expected": "3004ad09dea58b4c549173dcdb71493d10c8f8b086980191c7e772fec6295b93",
+      "actual": "3004ad09dea58b4c549173dcdb71493d10c8f8b086980191c7e772fec6295b93"
+    },
+    {
+      "file": "v2.5/yamol-links.js",
+      "match": true,
+      "expected": "61c009eb0bcae45fca295a904354a2e6f9d8ee8966cfad9cfa9bece54364a5a9",
+      "actual": "61c009eb0bcae45fca295a904354a2e6f9d8ee8966cfad9cfa9bece54364a5a9"
+    },
+    {
+      "file": "v2.5/review25.js",
+      "match": true,
+      "expected": "c50170561bdc0d7976ed0e2f3a648ff8173c7c213953516d8d82eaf20dc2ddb6",
+      "actual": "c50170561bdc0d7976ed0e2f3a648ff8173c7c213953516d8d82eaf20dc2ddb6"
+    },
+    {
+      "file": "v2.5/crime-topics.js",
+      "match": true,
+      "expected": "f490c9b3663448379c883d20cc6eb91c6d0078daf6e7a9fe1d3c32f99a27f005",
+      "actual": "f490c9b3663448379c883d20cc6eb91c6d0078daf6e7a9fe1d3c32f99a27f005"
+    },
+    {
+      "file": "v2.5/ai-simple-review-v254.js",
+      "match": true,
+      "expected": "3e7f3c7c43a20ea761224436aa19dc8c1ff0791e5cc602da7a7468b79319aab5",
+      "actual": "3e7f3c7c43a20ea761224436aa19dc8c1ff0791e5cc602da7a7468b79319aab5"
+    },
+    {
+      "file": "v2.5/related-questions.js",
+      "match": true,
+      "expected": "acfec60e521b4dde78596e6468a7936f7061cd6d54f463ee4754fc554d47482b",
+      "actual": "acfec60e521b4dde78596e6468a7936f7061cd6d54f463ee4754fc554d47482b"
+    },
+    {
+      "file": "v2.5/backup-io.js",
+      "match": true,
+      "expected": "a510c7267e2ec857f3a15b1ab965e9eaadf64b379e3f1e6b3bdef6e5d27cb4b8",
+      "actual": "a510c7267e2ec857f3a15b1ab965e9eaadf64b379e3f1e6b3bdef6e5d27cb4b8"
+    },
+    {
+      "file": "v2.5/daily-practice.html",
+      "match": true,
+      "expected": "521ddd2fc05528790c91326bf78559d5b9784641620b73a36876d67be10b9a2c",
+      "actual": "521ddd2fc05528790c91326bf78559d5b9784641620b73a36876d67be10b9a2c"
+    },
+    {
+      "file": "v2.5/README.md",
+      "match": true,
+      "expected": "f48f19dfeca2642323845d96dcac1dc4e4304de99d280570fca5132e1303e079",
+      "actual": "f48f19dfeca2642323845d96dcac1dc4e4304de99d280570fca5132e1303e079"
+    },
+    {
+      "file": "v2.5/content-standards.js",
+      "match": true,
+      "expected": "0a2b5b3fcd6328e13640486381aee2d0175440eee6bca1f83b307016277b8f7f",
+      "actual": "0a2b5b3fcd6328e13640486381aee2d0175440eee6bca1f83b307016277b8f7f"
+    },
+    {
+      "file": "v2.5/topic-rubrics.js",
+      "match": true,
+      "expected": "c9d473611546cea94885b51378f09ca9527528be9d42b70c6bb2208a0d014fa5",
+      "actual": "c9d473611546cea94885b51378f09ca9527528be9d42b70c6bb2208a0d014fa5"
+    },
+    {
+      "file": "v2.5/backup-io-direct.js",
+      "match": true,
+      "expected": "a510c7267e2ec857f3a15b1ab965e9eaadf64b379e3f1e6b3bdef6e5d27cb4b8",
+      "actual": "a510c7267e2ec857f3a15b1ab965e9eaadf64b379e3f1e6b3bdef6e5d27cb4b8"
+    },
+    {
+      "file": "v2.5/daily-practice.js",
+      "match": true,
+      "expected": "d745d1e620a4e594aaba6f8d8e536872f5b00792a7e4d43d6e61508d9ad60f4d",
+      "actual": "d745d1e620a4e594aaba6f8d8e536872f5b00792a7e4d43d6e61508d9ad60f4d"
+    },
+    {
+      "file": "v2.5/yamol-ui.js",
+      "match": true,
+      "expected": "ecee906417edf972c366823af6a98657f05411525f36122a3c312d932b7325e2",
+      "actual": "ecee906417edf972c366823af6a98657f05411525f36122a3c312d932b7325e2"
+    },
+    {
+      "file": "v2.5/rubrics.js",
+      "match": true,
+      "expected": "cb8fd047ce9c7475255e85eb737117fdb064ae9153f1aa6174f0c2973391c0d9",
+      "actual": "cb8fd047ce9c7475255e85eb737117fdb064ae9153f1aa6174f0c2973391c0d9"
+    },
+    {
+      "file": "v2.5/daily-practice.css",
+      "match": true,
+      "expected": "b6e5602d3cbe60d4f1ddeb73769aa5ac186b81f0ce7d48c87f3c936b018dd9a1",
+      "actual": "b6e5602d3cbe60d4f1ddeb73769aa5ac186b81f0ce7d48c87f3c936b018dd9a1"
+    },
+    {
+      "file": "v2.5/answer-calibrations.js",
+      "match": true,
+      "expected": "494095189dc98599f19b604cae9c083fa02168799ecbb7560953c44b24140e67",
+      "actual": "494095189dc98599f19b604cae9c083fa02168799ecbb7560953c44b24140e67"
+    },
+    {
+      "file": "v2.5/all-topic-diagnostics.js",
+      "match": true,
+      "expected": "27f779ec1cd632350899eca1b26e530543b42c93ed954cb94dbdfe20f1fff1d9",
+      "actual": "27f779ec1cd632350899eca1b26e530543b42c93ed954cb94dbdfe20f1fff1d9"
+    },
+    {
+      "file": "v2.5/all-topics.js",
+      "match": true,
+      "expected": "0304d307b4e84852c842eb6c7faff665c1b495b7eaf8d65149927119afab4043",
+      "actual": "0304d307b4e84852c842eb6c7faff665c1b495b7eaf8d65149927119afab4043"
+    },
+    {
+      "file": "v2.5/pending-pilots.js",
+      "match": true,
+      "expected": "a2dac17879745ea671c45840e90dfbff9625c705ac04248559acdcc080031547",
+      "actual": "a2dac17879745ea671c45840e90dfbff9625c705ac04248559acdcc080031547"
+    },
+    {
+      "file": "v2.5/print-study.js",
+      "match": true,
+      "expected": "f50f19a6cfa909d0d6f5571518b923ebde25ef516ee976f6a0b8a43f045d2b09",
+      "actual": "f50f19a6cfa909d0d6f5571518b923ebde25ef516ee976f6a0b8a43f045d2b09"
+    },
+    {
+      "file": "v2.5/backup-core.js",
+      "match": true,
+      "expected": "2ee9a97b72b160322445adbc97dbf87eef6657ddafd2ef5acd080f95c634c637",
+      "actual": "2ee9a97b72b160322445adbc97dbf87eef6657ddafd2ef5acd080f95c634c637"
+    },
+    {
+      "file": "v2.5/shuati-links.js",
+      "match": true,
+      "expected": "61a42d76e3f73428cd149e4786e9a729d382bc929732302d47d9f2f3dfd06839",
+      "actual": "61a42d76e3f73428cd149e4786e9a729d382bc929732302d47d9f2f3dfd06839"
+    },
+    {
+      "file": "v2.5/grade-reference.js",
+      "match": true,
+      "expected": "9a939fbeb12fd004a2774bc15dc14debbbdd39d2adb2d8db15138e266559c067",
+      "actual": "9a939fbeb12fd004a2774bc15dc14debbbdd39d2adb2d8db15138e266559c067"
+    },
+    {
+      "file": "v2.5/study-map.js",
+      "match": true,
+      "expected": "f173c87809124282da51019106be507f311e7dc236996080dc474119618502e2",
+      "actual": "f173c87809124282da51019106be507f311e7dc236996080dc474119618502e2"
+    },
+    {
+      "file": "v2.5/reference-notes/review.html",
+      "match": true,
+      "expected": "b8dabffc07399f88853d85d2fe38227aeb142b4c076c17052a501aae251b199a",
+      "actual": "b8dabffc07399f88853d85d2fe38227aeb142b4c076c17052a501aae251b199a"
+    },
+    {
+      "file": "v2.5/reference-notes/procedure-115.md",
+      "match": true,
+      "expected": "8b9f984e372543fea13bb37e176555abe073b050581dcec298dbb5d92e5f60fa",
+      "actual": "8b9f984e372543fea13bb37e176555abe073b050581dcec298dbb5d92e5f60fa"
+    },
+    {
+      "file": "v2.5/reference-notes/security-115.md",
+      "match": true,
+      "expected": "bfaa93cd552f3c4f7dc4f667937be5dd2751c89da1d303251318d385c2119727",
+      "actual": "bfaa93cd552f3c4f7dc4f667937be5dd2751c89da1d303251318d385c2119727"
+    },
+    {
+      "file": "v2.5/reference-notes/juvenile.md",
+      "match": true,
+      "expected": "562dd3223098ad3c7bc71d0ef4d297c7ac53ecab0d397b01543c65ca58e7a64f",
+      "actual": "562dd3223098ad3c7bc71d0ef4d297c7ac53ecab0d397b01543c65ca58e7a64f"
+    },
+    {
+      "file": "v2.5/reference-notes/procedure.md",
+      "match": true,
+      "expected": "c527ce3f675aa5384be1995aa39d82045595355c96c2388cb61ee057424ddaf9",
+      "actual": "c527ce3f675aa5384be1995aa39d82045595355c96c2388cb61ee057424ddaf9"
+    },
+    {
+      "file": "v2.5/reference-notes/juvenile-115.md",
+      "match": true,
+      "expected": "8a21cda949b9de7a58fe001526f1f4725f73ad963f9205ef8bbb9337b1023fdc",
+      "actual": "8a21cda949b9de7a58fe001526f1f4725f73ad963f9205ef8bbb9337b1023fdc"
+    },
+    {
+      "file": "v2.5/reference-notes/security.md",
+      "match": true,
+      "expected": "190c82dcf848d62094ad1d7b53a015d16d117c48668d7fae251c07ca5a175919",
+      "actual": "190c82dcf848d62094ad1d7b53a015d16d117c48668d7fae251c07ca5a175919"
+    },
+    {
+      "file": "dongdong-time/index.html",
+      "match": true,
+      "expected": "ffa750862981e8cbd25a35a77f45da014b9e9f206a657488b458f1958f1a57db",
+      "actual": "ffa750862981e8cbd25a35a77f45da014b9e9f206a657488b458f1958f1a57db"
+    },
+    {
+      "file": "dongdong-time/questions.json",
+      "match": true,
+      "expected": "5f06491b33e6df2e93c8ff3f835ce5e738d2408ae29d4bd1fa7787a8879d8819",
+      "actual": "5f06491b33e6df2e93c8ff3f835ce5e738d2408ae29d4bd1fa7787a8879d8819"
+    },
+    {
+      "file": "dongdong-time/style.css",
+      "match": true,
+      "expected": "fc81aa77d17a79bc9c4fae73a85ad242bfefddf5f553e6a9e8497618ae106193",
+      "actual": "fc81aa77d17a79bc9c4fae73a85ad242bfefddf5f553e6a9e8497618ae106193"
+    },
+    {
+      "file": "dongdong-time/app.js",
+      "match": true,
+      "expected": "6c3a223296e8a7161a4fbb542daa9c30bd9111d3ac96f425609d74ededb203e8",
+      "actual": "6c3a223296e8a7161a4fbb542daa9c30bd9111d3ac96f425609d74ededb203e8"
+    },
+    {
+      "file": "juvenile-news/v25-entry.js",
+      "match": true,
+      "expected": "9d9c16d12b9a627dbaade523c9fb1e7339761ee69486b509de1f58f032acc3cf",
+      "actual": "9d9c16d12b9a627dbaade523c9fb1e7339761ee69486b509de1f58f032acc3cf"
+    },
+    {
+      "file": "juvenile-news/index.html",
+      "match": true,
+      "expected": "1e0a277b1e5a18689e3c792d790f041c87fbb5464526a78ec5bb36c03b1dea81",
+      "actual": "1e0a277b1e5a18689e3c792d790f041c87fbb5464526a78ec5bb36c03b1dea81"
+    },
+    {
+      "file": "juvenile-news/README.md",
+      "match": true,
+      "expected": "df5c48a46a3db5bc29f738713c6f2ed4036ac4510f511b41537b7146bebd2b91",
+      "actual": "df5c48a46a3db5bc29f738713c6f2ed4036ac4510f511b41537b7146bebd2b91"
+    },
+    {
+      "file": "juvenile-news/issues.json",
+      "match": true,
+      "expected": "9870f0de2587aac6430d376935aee81ec6127bdcaed63743a648fca7124d892c",
+      "actual": "9870f0de2587aac6430d376935aee81ec6127bdcaed63743a648fca7124d892c"
+    },
+    {
+      "file": "juvenile-news/favicon.svg",
+      "match": true,
+      "expected": "e6d2e59b7b5bbb0342e0fb496dfc262decbfe4426bbb7b047aec8d467d1dc6f7",
+      "actual": "e6d2e59b7b5bbb0342e0fb496dfc262decbfe4426bbb7b047aec8d467d1dc6f7"
+    },
+    {
+      "file": "juvenile-news/assets/index-DWXubpQf.js",
+      "match": true,
+      "expected": "ffe49aea778f60da3c4f5bed1595b8544041539396a773e2eebb79ee2e79a4c2",
+      "actual": "ffe49aea778f60da3c4f5bed1595b8544041539396a773e2eebb79ee2e79a4c2"
+    },
+    {
+      "file": "juvenile-news/assets/index-C3DwA6oz.js",
+      "match": true,
+      "expected": "77cd2c7fce5271b2c9a096c23a4ea80c6238984c4e82828d1baf4a532cc2d90c",
+      "actual": "77cd2c7fce5271b2c9a096c23a4ea80c6238984c4e82828d1baf4a532cc2d90c"
+    },
+    {
+      "file": "juvenile-news/assets/index-JfbeKn1C.css",
+      "match": true,
+      "expected": "b239cbd05f76db54940db4ea91b65c80c32145ecee05cedefb1180b7ff763c3a",
+      "actual": "b239cbd05f76db54940db4ea91b65c80c32145ecee05cedefb1180b7ff763c3a"
+    },
+    {
+      "file": "juvenile-news/assets/index-DhehFTxG.css",
+      "match": true,
+      "expected": "2ed17e92585fe8b39461205c2d7743517fc73c733694ead681f7c0f528e0ff66",
+      "actual": "2ed17e92585fe8b39461205c2d7743517fc73c733694ead681f7c0f528e0ff66"
+    }
+  ]
+}

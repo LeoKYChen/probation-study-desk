@@ -44,3 +44,7 @@
 - 鏡像發布成功：證明該 Cloudflare **新測試網址** 與特定 GitHub commit 的核心檔案一致，不代表另一個 v2.5.4 測試站被更新。
 - 正式切換之前，先確認備份及回復方法，保留當前 GitHub commit 和 Cloudflare 專用分支。
 - 此 PR 不修改任何使用者資料或既有 URL；若預覽失敗，停止鏡像的 Actions 工作流程即可，不必改動原有正式站。
+
+## 獨立整合驗收分支
+
+五入口首頁與 v2.5.4 的整合方案、來源雜湊、測試及正式切換批准事項，見 [UNIFIED_HOME_V254_ACCEPTANCE.md](UNIFIED_HOME_V254_ACCEPTANCE.md)。main 鏡像基線全包 143 檔核對結果見 `MAIN_MIRROR_BYTE_AUDIT_20261017.json`。本分支尚未正式切換。

@@ -1,0 +1,122 @@
+name: Isolated five-entry home and v254 integration
+
+on:
+  push:
+    branches: [test/unify-home-v254-20261017]
+  pull_request:
+    branches: [main]
+    paths:
+      - index.html
+      - sw.js
+      - verification/fixtures/**
+      - legacy-home.html
+      - professional/**
+      - scripts/build-cloudflare-main-mirror.py
+      - scripts/verify-published-bytes.py
+      - verification/unified-*.cjs
+      - docs/V254_INTEGRATION_PROVENANCE.json
+      - .github/workflows/preview-unified-home-v254.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: isolated-unified-home-v254-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  webkit-installed-upgrade:
+    name: macOS WebKit installed-cache upgrade
+    runs-on: macos-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Build the exact static integration artifact
+        run: python3 scripts/build-cloudflare-main-mirror.py
+      - name: Install the same WebKit test runtime validated on macOS locally
+        run: |
+          npm install --prefix /tmp/unified-home-macos-qa --no-save playwright@1.62.1
+          /tmp/unified-home-macos-qa/node_modules/.bin/playwright install webkit
+      - name: Verify Safari-engine operation, retained snapshots and browser restart
+        env:
+          NODE_PATH: /tmp/unified-home-macos-qa/node_modules
+          UNIFIED_BROWSER_ENGINE: webkit
+        run: |
+          node verification/unified-browser.cjs cloudflare-main-mirror-dist
+          node verification/unified-pwa-upgrade.cjs cloudflare-main-mirror-dist
+
+  integration:
+    needs: webkit-installed-upgrade
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Verify provenance, question IDs and original storage namespaces
+        run: |
+          node verification/unified-integration.cjs
+          node verification/check-daily-v254.cjs
+          for script in professional/*.js; do node --check "$script"; done
+      - name: Build the same tracked static files for both hosts
+        run: |
+          python3 scripts/build-cloudflare-main-mirror.py
+          python3 -m py_compile scripts/verify-published-bytes.py
+      - name: Install isolated browser
+        run: |
+          npm install --prefix /tmp/unified-home-qa --no-save playwright@1.56.1
+          /tmp/unified-home-qa/node_modules/.bin/playwright install --with-deps chromium webkit
+      - name: Chromium and WebKit operation plus Chromium installed-cache upgrade
+        env:
+          NODE_PATH: /tmp/unified-home-qa/node_modules
+        run: |
+          for engine in chromium webkit; do
+            UNIFIED_BROWSER_ENGINE="$engine" node verification/unified-browser.cjs cloudflare-main-mirror-dist
+            # WebKit installed-cache upgrade is required separately on macOS.
+            if [ "$engine" = chromium ]; then
+              UNIFIED_BROWSER_ENGINE="$engine" node verification/unified-pwa-upgrade.cjs cloudflare-main-mirror-dist
+            fi
+          done
+      - name: Guard new preview alias against Cloudflare production branch
+        if: github.event_name == 'push' && github.ref == 'refs/heads/test/unify-home-v254-20261017'
+        env:
+          CF_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request
+          alias='unified-home-v254-20261017'
+          request=urllib.request.Request(
+              'https://api.cloudflare.com/client/v4/accounts/'+os.environ['CF_ACCOUNT_ID']+'/pages/projects/probation-study30-test',
+              headers={'Authorization':'Bearer '+os.environ['CF_API_TOKEN']})
+          with urllib.request.urlopen(request,timeout=30) as response:
+              data=json.load(response)
+          assert data['success'] and data['result']['name']=='probation-study30-test'
+          production=data['result']['production_branch']
+          assert production and production!=alias, 'Preview must never be the production branch'
+          assert alias not in {'github-main-mirror','v254-unified-preview','home-preview-20261017'}
+          print('PASS: dedicated integration alias is separate from production and existing previews')
+          PY
+      - name: Deploy only the new independent integration preview
+        if: github.event_name == 'push' && github.ref == 'refs/heads/test/unify-home-v254-20261017'
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy cloudflare-main-mirror-dist --project-name=probation-study30-test --branch=unified-home-v254-20261017
+      - name: Verify every published byte
+        if: github.event_name == 'push' && github.ref == 'refs/heads/test/unify-home-v254-20261017'
+        run: python3 scripts/verify-published-bytes.py cloudflare-main-mirror-dist https://unified-home-v254-20261017.probation-study30-test.pages.dev/
+      - name: Repeat functional acceptance on the published preview
+        if: github.event_name == 'push' && github.ref == 'refs/heads/test/unify-home-v254-20261017'
+        env:
+          NODE_PATH: /tmp/unified-home-qa/node_modules
+          UNIFIED_TEST_URL: https://unified-home-v254-20261017.probation-study30-test.pages.dev/
+        run: |
+          for engine in chromium webkit; do
+            UNIFIED_BROWSER_ENGINE="$engine" node verification/unified-browser.cjs cloudflare-main-mirror-dist
+          done
