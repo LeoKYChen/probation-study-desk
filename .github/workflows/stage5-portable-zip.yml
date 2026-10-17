@@ -40,7 +40,7 @@ jobs:
           python3 - <<'PY'
           from pathlib import Path
           html=Path('portable-dist/index.html').read_text('utf-8')
-          assert len(html)>500_000
+          assert len(html.encode('utf-8'))>500_000
           assert '<script id="embedded-data" type="application/json">' in html
           assert 'src="http' not in html and 'href="http' not in html
           assert 'file://' in html and '下載練習紀錄 JSON' in html
