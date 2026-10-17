@@ -25,7 +25,7 @@ jobs:
           import json,urllib.request,urllib.error
           from concurrent.futures import ThreadPoolExecutor
           base='https://stage4-offline-preview.probation-study30-test.pages.dev/'
-          names=[x['url'] for x in json.load(open('offline-manifest.json'))['assets'] if x['url'].endswith('/index.html')]
+          names=[x['url'] for x in json.load(open('offline-manifest.json'))['assets'] if x['url'].endswith('.html')]
           names+=['offline-manifest.json','sw.js','active-recall/bank.js']
           def probe(name):
             req=urllib.request.Request(base+name,headers={'User-Agent':'Stage4-offline-debug'})
