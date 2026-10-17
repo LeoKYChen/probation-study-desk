@@ -56,6 +56,20 @@ jobs:
           HTMLParser().feed(h)
           print('PASS backup UI links and 2+3 entrance unchanged')
           PY
+      - name: Install browser for end-to-end backup verification
+        shell: bash
+        run: |
+          npm install --prefix /tmp/stage2-backup-browser --no-save playwright@1.56.1
+          /tmp/stage2-backup-browser/node_modules/.bin/playwright install --with-deps chromium
+
+      - name: Mac-to-phone JSON roundtrip in real browser (synthetic data)
+        shell: bash
+        env:
+          NODE_PATH: /tmp/stage2-backup-browser/node_modules
+        run: |
+          set -euo pipefail
+          node backup/test-browser.cjs
+
       - name: Build same source website into isolated preview
         shell: bash
         run: |
