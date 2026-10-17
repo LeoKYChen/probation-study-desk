@@ -5,6 +5,18 @@ import json
 import unittest
 from unittest.mock import patch
 
+# The CLI file intentionally carries a hyphen; load it explicitly so both
+# direct CLI execution and patching its own transport are tested.
+import importlib.util
+import sys
+from pathlib import Path
+_spec = importlib.util.spec_from_file_location(
+    "xml_prefix_probe", Path(__file__).with_name("xml-prefix-probe.py")
+)
+_module = importlib.util.module_from_spec(_spec)
+sys.modules[_spec.name] = _module
+_spec.loader.exec_module(_module)
+
 from xml_prefix_probe import (
     SOURCE, MAX_WHOLE_BYTES, PREFIX_BYTES,
     approved_url, base, inspect_prefix, live, selftest
