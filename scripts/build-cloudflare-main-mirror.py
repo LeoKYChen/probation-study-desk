@@ -113,7 +113,7 @@ def main() -> None:
     metadata = {
         "repository": "LeoKYChen/probation-study-desk",
         "source_commit": commit,
-        "deployment_role": "isolated-cloudflare-preview-of-github-commit",
+        "deployment_role": "github-main-static-site",
         "tracked_site_file_count": len(copied),
         "required_file_sha256": {path: sha256(OUT / path) for path in REQUIRED},
         "file_sha256": {path: sha256(OUT / path) for path in sorted(copied)},

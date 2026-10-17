@@ -1,0 +1,95 @@
+name: Synchronize approved Cloudflare production from GitHub main
+
+on:
+  push:
+    branches: [main, release/cloudflare-main-sync-20261017]
+  pull_request:
+    branches: [main]
+    paths:
+      - index.html
+      - professional/**
+      - scripts/**
+      - verification/cloudflare-migration.cjs
+      - verification/check-cloudflare-release.py
+      - verification/fixtures/cloudflare-before-sync/**
+      - .github/workflows/sync-cloudflare-production.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cloudflare-production-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  validate-and-sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Build and check the identical static website
+        run: |
+          python3 verification/check-cloudflare-release.py
+          python3 scripts/build-cloudflare-main-mirror.py
+          node verification/unified-integration.cjs cloudflare-main-mirror-dist
+          node verification/check-daily-v254.cjs
+      - name: Install isolated acceptance browsers
+        run: |
+          npm install --prefix /tmp/cloudflare-production-qa --no-save playwright@1.62.1
+          /tmp/cloudflare-production-qa/node_modules/.bin/playwright install --with-deps chromium webkit
+      - name: Test real legacy app upgrade and local rollback with synthetic records
+        env:
+          NODE_PATH: /tmp/cloudflare-production-qa/node_modules
+        run: |
+          for engine in chromium webkit; do
+            UNIFIED_BROWSER_ENGINE="$engine" node verification/cloudflare-migration.cjs cloudflare-main-mirror-dist
+            UNIFIED_BROWSER_ENGINE="$engine" node verification/unified-browser.cjs cloudflare-main-mirror-dist
+          done
+      - name: Capture exact current production for recovery
+        id: capture
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: python3 scripts/cloudflare-release-control.py prepare --commit '${{ github.sha }}'
+      - name: Recheck production has not changed since recovery capture
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: python3 scripts/cloudflare-release-control.py recheck --commit '${{ github.sha }}'
+      - name: Publish only the approved main production branch
+        id: publish
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy cloudflare-main-mirror-dist --project-name=probation-study30-test --branch=main --commit-hash=${{ github.sha }}
+      - name: Verify every live production byte
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: python3 scripts/verify-published-bytes.py cloudflare-main-mirror-dist https://probation-study30-test.pages.dev/
+      - name: Repeat functionality on the actual production URL with isolated test records
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        env:
+          NODE_PATH: /tmp/cloudflare-production-qa/node_modules
+          UNIFIED_TEST_URL: https://probation-study30-test.pages.dev/
+        run: |
+          for engine in chromium webkit; do
+            UNIFIED_BROWSER_ENGINE="$engine" node verification/unified-browser.cjs cloudflare-main-mirror-dist
+          done
+      - name: Restore only this run's failed production release
+        if: failure() && github.event_name == 'push' && github.ref == 'refs/heads/main' && (steps.publish.outcome == 'success' || steps.publish.outcome == 'failure')
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: python3 scripts/cloudflare-release-control.py rollback --commit '${{ github.sha }}'
+      - name: Preserve recovery identity (no personal data or credentials)
+        if: always() && steps.capture.outcome == 'success'
+        uses: actions/upload-artifact@v4
+        with:
+          name: cloudflare-production-recovery-${{ github.run_id }}
+          path: cloudflare-production-before-release.json

@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#21463d">
+  <meta name="description" content="116年觀護人考試，每日30分鐘：主動回想、考古題練習、申論架構、錯題整理。">
+  <title>每日30分鐘｜觀護人練習臺 v2.5.3 分科切換測試版</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./source-main-questions.js" defer></script>
+  <script src="./source-related-questions.js" defer></script>
+  <script src="./question-sources.js" defer></script>
+  <script src="./review-core.js" defer></script>
+  <script src="./app.js" defer></script>
+  <script src="./review-simulator.js" defer></script>
+  <script src="./essay.js" defer></script>
+  <script src="./essay-rubric-core.js" defer></script>
+  <script src="./essay-selfcheck.js" defer></script>
+  <script src="./essay-review.js" defer></script>
+  <script src="./essay-analytics.js" defer></script>
+  <script src="./weakness-priority.js" defer></script>
+  <script src="./data-health.js" defer></script>
+  <script src="./backup-import.js" defer></script>
+  <script src="./daily-essay-workbench.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳至今日任務</a>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="https://leokychen.github.io/probation-study-desk/"><span class="brand-icon">觀</span><span>觀護人練習臺<small>116年考試｜每日30分鐘</small></span></a>
+      <span class="version">v2.5.3 分科切換版</span>
+    </div>
+  </header>
+  <main id="main" class="layout">
+    <div class="intro">
+      <div><p class="eyebrow">JUST ONE SESSION A DAY</p><h1>今天，專心30分鐘。</h1><p>一科、一題、四個步驟。保留你已經有的考古題；不另外啟用英語或少年法提醒。</p></div>
+      <a class="plain-link" href="https://leokychen.github.io/probation-study-desk/v2.5/">回原本考古題練習臺 ↗</a>
+    </div>
+    <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+    <section class="summary-grid" aria-label="學習概況">
+      <div class="stat"><span>本週完成</span><strong id="weeklyCount">0 / 7</strong><small>按台灣時間計算</small></div>
+      <div class="stat"><span>累計專注時間</span><strong id="minuteCount">0 分</strong><small>實際計時，不含跳過</small></div>
+      <div class="stat"><span>到期待複習</span><strong id="reviewCount">0 題</strong><small>依自評及複習期限</small></div>
+    </section>
+    <p id="questionSourceSummary" class="question-source-summary" role="status" aria-live="polite">確認原站題庫載入狀態中…</p>
+    <section class="daily-card" aria-labelledby="todayHeading">
+      <div class="daily-head"><div><p class="eyebrow" id="todayDate">讀取中</p><h2 id="todayHeading">今日學習任務</h2><p id="todayDescription" class="muted"></p></div><span class="status" id="sessionStatus">尚未開始</span></div>
+      <div class="mode-line" aria-label="訓練時間設定"><span>今日訓練時間</span><div class="segmented"><button id="mode30" type="button" aria-pressed="true">30分鐘</button><button id="mode10" type="button" aria-pressed="false">10分鐘快速版</button></div></div>
+      <ol id="phases" class="phases" aria-label="學習步驟"></ol>
+      <div class="timer-panel"><div><p class="timer-label" id="phaseLabel">準備開始</p><div id="timer" class="timer" role="timer" aria-live="off">05:00</div><p class="muted tiny">切換分頁時自動暫停，以免虛增練習時間。</p></div><div class="timer-actions"><button type="button" class="primary" id="toggleTimer">開始計時</button><button type="button" class="secondary" id="nextPhase">完成此步驟</button></div></div>
+    </section>
+    <section class="workspace" aria-labelledby="workTitle"><div class="section-head"><div><p class="eyebrow" id="subjectLabel">考古題</p><h2 id="workTitle">今日練習題</h2></div><a id="originalSource" href="https://leokychen.github.io/probation-study-desk/v2.5/" target="_blank" rel="noopener noreferrer" class="plain-link">原題來源 ↗</a></div>
+      <div id="sourceWarning" class="warning">本題為練習素材，參考架構不等於官方標準答案。涉及現行法及修法，應另核對最新官方法規。</div>
+      <div class="question" id="questionText"></div>
+      <div class="prompt-box"><strong id="promptTitle">請先自行回想</strong><p id="promptText"></p></div>
+      <section class="daily-essay-panel" id="dailyEssayPanel" aria-labelledby="dailyEssayHeading">
+        <h3 id="dailyEssayHeading">我的練習紀錄</h3>
+        <p class="tiny muted">此處直接沿用下方「國考申論答題工作區」的四格草稿、完整答案及 Markdown 匯出。作答按題目獨立保存，切換自由練習科目不會覆蓋今日草稿。</p>
+        <div id="dailyEssayWorkbenchSlot"></div>
+        <div id="dailyEssayLocationHint" hidden><p class="tiny muted">申論編輯器目前正在下方自由練習其他科目。</p><button id="dailyEssayResume" type="button" class="secondary">切回今日題目作答</button></div>
+        <details class="daily-quick-notes"><summary>原本的逐步驟速記（已保留，不會刪除）</summary>
+          <label class="answer-label" for="answer">本步驟速記 <span id="answerStatus" class="muted">輸入後自動保存於本機</span></label>
+          <textarea id="answer" rows="8" placeholder="不用寫完完整申論，先寫出自己的爭點、核心理論或法條以及分析。"></textarea>
+        </details>
+      </section>
+      <details id="referencePanel"><summary>我已經作答，查看原題附帶的參考方向</summary><div id="referenceContent"></div><p class="tiny muted">這是既有練習臺資料，不代表最新法規或官方評分。</p></details>
+      <div id="selfCheck" class="self-check"><strong>今天的自評</strong><p class="muted">依自己能否不看提示說出核心考點選擇；不是國考分數。</p><div class="ratings"><button type="button" data-rating="mastered">能自行說明</button><button type="button" data-rating="partial">還不完整</button><button type="button" data-rating="review">需要再複習</button></div></div>
+      <div id="errorBox" class="error-box" hidden><label for="errorCause">需要補強的原因（選填）</label><select id="errorCause"><option value="">請選擇</option><option value="概念不熟">概念不熟</option><option value="爭點辨識">爭點辨識</option><option value="案例涵攝">案例涵攝</option><option value="申論架構">申論架構</option><option value="法條或資料待查證">法條或資料待查證</option><option value="其他">其他</option></select></div>
+      <div class="links"><a href="https://leokychen.github.io/probation-study-desk/active-recall/">主動回憶專區 ↗</a><a href="https://leokychen.github.io/probation-study-desk/daily-simulation/">每日申論模擬題 ↗</a><a href="https://leokychen.github.io/probation-study-desk/v2.5/">完整考古題 ↗</a></div>
+    </section>
+    <section class="essay-lab" id="essayLab" aria-labelledby="essayHeading">
+      <div class="section-head"><div><p class="eyebrow">ESSAY PRACTICE · SUBJECT SWITCH TEST</p><h2 id="essayHeading">國考申論答題工作區</h2></div><span class="insight-note">作答草稿 · 分科架構</span></div>
+      <p class="muted">可以跟隨今日題目，也能切換科目進行獨立申論練習。<strong>科目切換僅影響下方申論草稿及自評</strong>，不會變更上方每日任務、計時或間隔複習紀錄。</p>
+      <div class="essay-subject-picker">
+        <label for="essayPracticeSubject">申論練習科目（可隨時切換）</label>
+        <select id="essayPracticeSubject">
+          <option value="today">跟隨今日練習題</option>
+          <option value="心理學">心理學</option>
+          <option value="諮商與輔導">諮商與輔導</option>
+          <option value="犯罪學">犯罪學</option>
+          <option value="少年事件處理法">少年事件處理法</option>
+          <option value="刑法">刑法</option>
+          <option value="刑事訴訟法">刑事訴訟法</option>
+          <option value="保安處分執行法">保安處分執行法</option>
+        </select>
+        <p class="tiny muted" id="essaySubjectNotice" role="status" aria-live="polite">各科草稿與自評獨立保存，同一日期切回原科目即可接續。</p>
+      </div>
+      <div class="essay-meta"><span id="essaySubject">讀取今日科目中…</span><span id="essayQuestion">讀取今日題目中…</span></div>
+      <details class="essay-source" id="essaySource"><summary>查看本次申論練習題目</summary>
+        <p id="essayQuestionBody" class="essay-question-body"></p>
+        <a id="essayQuestionSource" class="plain-link" href="https://leokychen.github.io/probation-study-desk/v2.5/" target="_blank" rel="noopener noreferrer" hidden>檢視題目來源 ↗</a>
+        <div id="essayManualQuestionBox" hidden><label for="essayManualQuestion">自行輸入本次申論題目（題庫未找到該科題目時使用）</label>
+          <textarea id="essayManualQuestion" rows="3" maxlength="10000" placeholder="請輸入或貼上你要練習的題目；這個欄位也會自動儲存。"></textarea></div>
+      </details>
+      <p id="essayWorkbenchLocationHint" class="tiny muted" hidden>「跟隨今日練習題」的申論草稿已移到上方「我的練習紀錄」。切換為其他科目，即可在此繼續自由練習。</p>
+      <div id="freeEssayWorkbenchSlot"></div>
+      <details id="essayEditor" class="essay-editor"><summary>展開申論作答與草稿</summary>
+        <div class="essay-editor-body">
+          <label class="essay-template-label" for="essayTemplate">作答架構類型
+            <select id="essayTemplate"><option value="law">法律科目：爭點、規範、涵攝、結論</option><option value="theory">學理科目：概念、理論、應用、結論</option></select>
+          </label>
+          <p class="tiny muted">依題目科目自動建議模板，可以手動切換；切換只改提示文字，不會刪除已寫草稿。模板是寫作引導，並非標準答案或法條查核。</p>
+          <div class="essay-outline" id="essayOutline">
+            <div class="essay-field"><label id="essayLabel0" for="essayField0">一、審題與爭點</label><p id="essayHint0" class="essay-hint"></p><textarea id="essayField0" data-essay-field="0" rows="3" placeholder="先列出重點…"></textarea></div>
+            <div class="essay-field"><label id="essayLabel1" for="essayField1">二、適用知識</label><p id="essayHint1" class="essay-hint"></p><textarea id="essayField1" data-essay-field="1" rows="3" placeholder="整理核心知識…"></textarea></div>
+            <div class="essay-field"><label id="essayLabel2" for="essayField2">三、分析應用</label><p id="essayHint2" class="essay-hint"></p><textarea id="essayField2" data-essay-field="2" rows="3" placeholder="結合題幹分析…"></textarea></div>
+            <div class="essay-field"><label id="essayLabel3" for="essayField3">四、結論</label><p id="essayHint3" class="essay-hint"></p><textarea id="essayField3" data-essay-field="3" rows="3" placeholder="簡潔回應題目…"></textarea></div>
+          </div>
+          <div class="essay-full-answer"><label for="essayFullAnswer">完整申論答案（選填，可將架構整理成連貫文字）</label><textarea id="essayFullAnswer" rows="10" placeholder="在此將上方的重點寫成正式申論答案。未寫完也會自動保存。"></textarea></div>
+          <div class="essay-bottom"><div class="essay-save-status" id="essaySaveStatus" role="status" aria-live="polite">等待載入草稿…</div><span id="essayCharCount" class="tiny muted">0 字元</span></div>
+          <div class="essay-actions"><button id="essayExport" type="button" class="secondary">匯出本題申論 Markdown</button></div>
+          <p class="tiny muted">草稿自動保存於此網站的本機學習紀錄，並包含在「匯出本模組紀錄 JSON」備份中。清除當天／全部紀錄時，對應草稿也會刪除。<strong>本階段未提供 AI 批改或342題預測題匯入。</strong></p>
+        </div>
+      </details>
+    </section>
+    <section class="rubric-lab" id="rubricLab" aria-labelledby="rubricHeading">
+      <div class="section-head"><div><p class="eyebrow">ESSAY SELF-ASSESSMENT · STAGE 2</p><h2 id="rubricHeading">國考申論自評表</h2></div><span class="insight-note">主觀自評 · 非官方閱卷</span></div>
+      <p class="muted">自評規準會跟隨上方選擇的申論練習科目，自行檢查答題品質；<strong>不是AI判分，也不代表實際國考得分</strong>。請先完成草稿，再客觀逐項檢核。</p>
+      <details class="rubric-editor" id="rubricEditor"><summary>展開申論自評與失分原因</summary>
+        <div class="rubric-body">
+          <p id="rubricQuestion" class="rubric-question"></p>
+          <div class="rubric-summary"><div><span>目前評量規準</span><strong id="rubricType">依科目自動判定</strong></div><div><span>填寫進度</span><strong id="rubricProgress">0／4</strong></div></div>
+          <p class="tiny muted">每項依0～4級自評，按權重換算為練習參考分數。若內容或法規尚未查證，不宜選擇最高級；不適用的內容請依題意判斷並留下改善事項。</p>
+          <div id="rubricCriteria" class="rubric-criteria"></div>
+          <div class="rubric-score" id="rubricScore" role="status">完成全部準則後才顯示自評分數</div>
+          <fieldset class="rubric-issues"><legend>本題需要補強的部分（可複選）</legend><div id="rubricIssues" class="rubric-issue-list"></div></fieldset>
+          <label class="rubric-next-label" for="rubricNextStep">下次最重要的改善目標（選填）</label>
+          <textarea id="rubricNextStep" rows="3" maxlength="3000" placeholder="例如：將刑法構成要件逐一涵攝；核對法條版本；補寫犯罪學理論比較。"></textarea>
+          <p class="rubric-stale" id="rubricStale" hidden>自評後申論草稿已修改，建議重新檢核各項分數。</p>
+          <button class="secondary rubric-confirm" id="rubricConfirmReview" type="button">已重新檢核，更新自評時間</button>
+          <p id="rubricSaveStatus" class="rubric-save-status" role="status" aria-live="polite">等待載入自評…</p>
+          <p class="tiny muted">自評與改善目標會自動儲存在原有學習紀錄，並包含在JSON匯出備份。<strong>此階段不自動改動原有三段式自評、錯題清單或間隔複習日期</strong>，弱點串接會在第三階段開發。目前仍不提供JSON匯入還原，請勿刪除重要紀錄。</p>
+        </div>
+      </details>
+    </section>
+    <section class="review-dashboard" aria-labelledby="reviewHeading">
+      <div class="section-head"><div><p class="eyebrow">SMART REVIEW · YOUR OWN RATINGS</p><h2 id="reviewHeading">智慧複習與弱點分析</h2></div><span class="insight-note">依自評推算，非 AI 閱卷</span></div>
+      <div class="insight-stats"><div><span>到期待複習</span><strong id="dueCount">0 題</strong></div><div><span>已自評題目</span><strong id="assessedCount">0 題</strong></div><div><span>自評可自行說明</span><strong id="masteryRate">—</strong></div></div>
+      <div class="review-columns">
+        <div><h3>待複習題目</h3><p class="muted tiny">答「需要再複習」隔1天、答「還不完整」隔3天、答「能自行說明」隔7天再複習；連續掌握會逐步延長間隔。</p><div id="dueList" class="review-list"></div></div>
+        <div><h3>接下來的複習</h3><p class="muted tiny">到期時間按台灣日期計算；不會額外發送提醒或增加每日30分鐘。</p><div id="upcomingList" class="review-list"></div></div>
+      </div>
+      <div class="review-columns lower"><div><h3>科目掌握情形</h3><div id="subjectInsights" class="insights-list"></div></div><div><h3>需要補強的考點</h3><div id="topicInsights" class="insights-list"></div></div></div>
+      <details id="reviewSimulator" class="review-simulator">
+        <summary>模擬間隔複習到期（不更動學習紀錄）</summary>
+        <p class="muted">可預覽未來日期、到期題目、當日推薦與再次自評後的新排程。<strong>僅在此區塊演算，不修改手機日期、實際作答、計時或學習紀錄。</strong></p>
+        <div class="sim-controls">
+          <label for="simSource">測試資料來源<select id="simSource"><option value="demo">獨立示範資料（建議先試）</option><option value="mine">我的學習紀錄（唯讀預覽）</option></select></label>
+          <label id="simCaseLabel" for="simCase">示範間隔<select id="simCase"><option value="review">需要再複習 → 1天</option><option value="partial">還不完整 → 3天</option><option value="first">首次能自行說明 → 7天</option><option value="second">連續掌握 → 14天</option><option value="third">再次掌握 → 30天</option></select></label>
+          <label for="simDays">預覽幾天後<select id="simDays"><option value="0">今天（尚未到期）</option><option value="1">1天後</option><option value="3">3天後</option><option value="4">4天後</option><option value="5">5天後</option><option value="6">6天後</option><option value="7">7天後</option><option value="14">14天後</option><option value="30">30天後</option><option value="31">31天後</option></select></label>
+        </div>
+        <div class="sim-buttons"><button id="simPreview" class="secondary" type="button">查看到期與推薦結果</button><button id="simNextEligible" class="secondary" type="button" hidden>跳到下次可推薦日</button></div>
+        <div id="simOutput" class="sim-output" role="status" aria-live="polite">選擇示範間隔及日期後，點選「查看到期與推薦結果」。</div>
+        <div id="simRerateArea" class="sim-rerate" hidden>
+          <label for="simRerate">假設在模擬日期再次作答，自評為<select id="simRerate"><option value="mastered">能自行說明</option><option value="partial">還不完整</option><option value="review">需要再複習</option></select></label>
+          <button id="simRetry" class="secondary" type="button">模擬重答後的下次複習日</button>
+          <div id="simNext" class="sim-next" aria-live="polite"></div>
+        </div>
+        <p class="tiny muted">這是規則演算測試，不會建立正式練習紀錄。平日只優先推薦當天科目的到期題；週日可跨科。到期不代表一定當天推薦，完整結果請看下方說明。</p>
+      </details>
+      <p class="tiny muted">考點名稱由歷屆試題標題整理；統計依你在本訓練臺實際作過的題目及自評，不代表完整考綱覆蓋率。未作答的題目不列入掌握率。週日優先安排到期題；平日則優先安排當日科目的到期題。</p>
+    </section>
+    <section class="essay-review-panel" aria-labelledby="essayReviewHeading">
+      <div class="section-head"><div><p class="eyebrow">ESSAY REVIEW · STAGE 3</p><h2 id="essayReviewHeading">申論弱點連動複習</h2></div><span class="insight-note">不影響上方每日任務</span></div>
+      <p class="muted">依已完成的申論自評自動排程：低於60分隔1天、60至79分或有待補強項目隔3天、80分以上且無待補強項目隔7天；連續於不同日期掌握，延長至14及30天。<strong>這是個人自評排程，不是國考成績。</strong></p>
+      <p id="essayReviewSummary" class="essay-review-summary">讀取申論複習紀錄中…</p>
+      <div class="review-columns"><div><h3>到期申論題</h3><div id="essayReviewDue" class="review-list"></div></div><div><h3>接下來的申論複習</h3><div id="essayReviewUpcoming" class="review-list"></div></div>
+      <p id="essayReviewStatus" class="muted tiny" role="status" aria-live="polite">按「開啟這題申論複習」只會切換下方申論工作區；上方每日科目、題目、計時及原有間隔複習不變。</p>
+    </section>
+    <section class="essay-analytics-panel" aria-labelledby="essayAnalyticsHeading">
+  <div class="section-head"><div><p class="eyebrow">ESSAY ANALYTICS · STAGE 4</p><h2 id="essayAnalyticsHeading">申論能力成長統計</h2></div><span class="insight-note">僅讀取本機自評紀錄</span></div>
+  <p class="muted tiny">統計來自個人主觀自評，並非正式國考成績，也不代表不同題目難度相同。未完整評分的草稿不納入統計。</p>
+  <div class="essay-analytics-filters"><label>時間範圍 <select id="essayAnalyticsDays"><option value="7">最近7天</option><option value="30" selected>最近30天</option><option value="all">全部紀錄</option></select></label><label>申論科目 <select id="essayAnalyticsSubject"><option value="all">全部科目</option><option>心理學</option><option>諮商與輔導</option><option>犯罪學</option><option>少年事件處理法</option><option>刑法</option><option>刑事訴訟法</option><option>保安處分執行法</option></select></label></div>
+  <p id="essayAnalyticsSummary" class="essay-review-summary" role="status" aria-live="polite">讀取申論自評統計中…</p>
+  <div class="essay-analytics-grid">
+    <div><h3>各科自評概況</h3><div id="essayAnalyticsSubjects"></div><h3>同題跨日複習比較</h3><p id="essayAnalyticsNote" class="muted"></p></div>
+    <div><h3>近期每日平均自評</h3><div id="essayAnalyticsTrend"></div></div>
+    <div><h3>常見失分原因</h3><ol id="essayAnalyticsWeaknesses"></ol></div>
+    <div><h3>自評較弱指標</h3><ol id="essayAnalyticsCriteria"></ol></div>
+  </div>
+</section>
+    <section class="weakness-priority-panel" aria-labelledby="weaknessPriorityHeading">
+ <div class="section-head"><div><p class="eyebrow">REVIEW PRIORITIES · STAGE 5</p><h2 id="weaknessPriorityHeading">今日弱點優先建議</h2></div><span class="insight-note">依現有自評推算</span></div>
+ <p class="muted tiny">優先考量到期、低分、同一失分原因重複出現與今日科目；不代表AI批改或國考正式評分。建議只供自主選題，不改動任何複習排程。</p>
+ <p class="essay-review-summary" id="weaknessPrioritySummary" role="status" aria-live="polite">正在分析已保存的申論自評…</p>
+ <div id="weaknessPriorityList" class="weakness-priority-list"></div>
+ <div id="weaknessPriorityFallback" class="weakness-priority-fallback"></div>
+ <p id="weaknessPriorityStatus" class="muted tiny" role="status" aria-live="polite"></p>
+</section>
+    <section class="data-health-panel" aria-labelledby="dataHealthHeading"><h2 id="dataHealthHeading">學習紀錄健康檢查</h2><p class="muted tiny">本頁只讀取每日30分鐘模組在此瀏覽器的資料，不上傳、不修改原紀錄。重要資料請定期按下方「匯出本模組紀錄 JSON」備份。</p><p id="dataHealthSummary" role="status" aria-live="polite">檢查儲存狀態中…</p></section>
+    <section class="backup-import-panel" aria-labelledby="backupImportHeading">
+  <h2 id="backupImportHeading">學習紀錄 JSON 匯入／還原</h2>
+  <p class="muted">僅處理本測試站「每日30分鐘」的紀錄，不讀取或覆寫原本 v2.5 的資料。支援既有 v2.5.1～v2.5.3 的每日30分鐘 JSON 備份。</p>
+  <label class="backup-import-label" for="importBackupFile">選擇先前匯出的 JSON 備份檔</label>
+  <input type="file" id="importBackupFile" accept=".json,application/json">
+  <fieldset class="backup-mode"><legend>資料處理方式</legend>
+    <label><input type="radio" name="importMode" value="merge" checked> 合併（建議）：保留目前所有日期，只補入備份中不存在的日期；相同日期不覆蓋</label>
+    <label><input type="radio" name="importMode" value="replace"> 完整還原：以備份取代所有現有日期（高風險）</label>
+  </fieldset>
+  <p id="importPreview" class="backup-import-preview">選擇檔案後可預覽備份日期、草稿及自評筆數。</p>
+  <button type="button" id="downloadBeforeImport" class="secondary">先匯出目前紀錄（安全備份）</button>
+  <label class="backup-import-agree"><input type="checkbox" id="importBackupConfirmed"> 我已確認目前紀錄的 JSON 備份已下載保存</label>
+  <label for="importConfirm">若選「完整還原」，請輸入「完整還原」</label>
+  <input type="text" id="importConfirm" placeholder="完整還原" autocomplete="off" spellcheck="false">
+  <button type="button" id="importExecute" class="primary" disabled>執行匯入／還原</button>
+  <p id="importStatus" class="muted tiny" role="status" aria-live="polite">尚未讀取備份。</p>
+  <p class="muted tiny">提醒：只處理你在此裝置選擇的本機檔案，不會上傳至伺服器；實際匯入後會重新整理網頁。</p>
+</section>
+    <section class="history" aria-labelledby="historyTitle"><div class="section-head"><div><p class="eyebrow">KEEP THE PROGRESS</p><h2 id="historyTitle">本週進度</h2></div><div class="history-actions"><button id="export" class="secondary" type="button">匯出本模組紀錄 JSON</button><button id="openClearRecords" class="danger-outline" type="button">清除學習紀錄</button></div></div><div id="historyContent" class="history-content"></div><p class="tiny muted">僅使用獨立的 study30 本機紀錄，不讀寫或覆蓋 v2.5 原有作答。不同裝置不會自動同步，請定期匯出備份。</p></section>
+    <dialog id="clearRecordsDialog" class="clear-dialog" aria-labelledby="clearRecordsTitle" aria-describedby="clearRecordsDescription">
+      <form id="clearRecordsForm" method="dialog">
+        <h2 id="clearRecordsTitle">清除學習紀錄</h2>
+        <p id="clearRecordsDescription" class="muted">僅清除本測試站「每日30分鐘」的紀錄；不會影響原本 v2.5 考古題、主動回憶或模擬題的作答。</p>
+        <fieldset class="clear-options"><legend>選擇清除範圍</legend>
+          <label><input type="radio" name="clearScope" value="today" checked><span><strong>只清除今天</strong><small>重新開始今日計時、草稿及自評，保留其他日期。</small></span></label>
+          <label><input type="radio" name="clearScope" value="all"><span><strong>清除全部日期</strong><small>重設累計時間、完成天數、錯題及所有草稿。</small></span></label>
+        </fieldset>
+        <div class="warning">清除後無法由網站復原。建議先下載 JSON 備份，備份不會因清除而自動消失。</div>
+        <button id="backupBeforeClear" class="secondary" type="button">先匯出備份 JSON</button>
+        <label class="clear-confirm-label" for="clearConfirmation">確認操作：請輸入「清除」</label>
+        <input id="clearConfirmation" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="輸入：清除" aria-describedby="clearConfirmationHint" required>
+        <p id="clearConfirmationHint" class="tiny muted">輸入正確後才能按下清除按鈕。</p>
+        <div class="clear-actions"><button id="cancelClearRecords" class="secondary" type="button">取消</button><button id="confirmClearRecords" class="danger" type="submit" disabled>確認清除</button></div>
+      </form>
+    </dialog>
+    <footer>這是 v2.5.3 第二階段獨立測試模組，尚未併入正式入口。原站題庫與學習紀錄不受影響。</footer>
+  </main>
+</body>
+</html>
