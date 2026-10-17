@@ -98,7 +98,22 @@ async function check(){
  assert.equal(Object.keys(left.daily).length,0);
  assert.equal(Object.keys(left.timer).length,0);
  assert.deepEqual(errors,[],'no uncaught browser page errors');
- console.log('Browser acceptance passed: '+data.questions.length+' questions; old answer, timer, AI clipboard, shared page, export/import and daily-only clear.');
+ const mobileContext=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true,deviceScaleFactor:3});
+ const mobile=await mobileContext.newPage(),mobileErrors=[];
+ mobile.on('pageerror',e=>mobileErrors.push(e.message));
+ await mobile.goto(origin+'/v2.5/daily-practice.html',{waitUntil:'domcontentloaded'});
+ await mobile.locator('#questionList button[data-id]').first().waitFor({timeout:30000});
+ const dimensions=await mobile.evaluate(()=>({page:document.documentElement.scrollWidth,viewport:document.documentElement.clientWidth}));
+ assert.ok(dimensions.page<=dimensions.viewport+2,'mobile must not overflow horizontally '+JSON.stringify(dimensions));
+ await mobile.locator('#startTimer').click();
+ assert.equal(await mobile.locator('#startTimer').isDisabled(),true,'mobile timer click must work');
+ await mobile.locator('#answer').fill('手機介面作答驗收');
+ await mobile.waitForFunction(id=>JSON.parse(localStorage.getItem('probation-daily-github:records:v1')||'{}')[id]?.answer==='手機介面作答驗收',q.id);
+ await mobile.locator('#aiFeedback').fill('手機批改評語');
+ await mobile.waitForFunction(id=>JSON.parse(localStorage.getItem('probation-daily-github:records:v1')||'{}')[id]?.aiFeedback==='手機批改評語',q.id);
+ assert.deepEqual(mobileErrors,[],'no uncaught mobile browser errors');
+ await mobileContext.close();
+ console.log('Desktop + 390px touch-mobile browser acceptance passed: '+data.questions.length+' questions; old answer, timer, AI clipboard, shared page, backup/restore, clear and mobile layout.');
 }
 check().catch(error=>{console.error(error);process.exitCode=1;}).finally(async()=>{
  if(browser)await browser.close();
