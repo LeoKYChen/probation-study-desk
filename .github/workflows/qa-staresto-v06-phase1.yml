@@ -1,0 +1,51 @@
+name: QA Staresto v0.6 phase1 quality gate
+on:
+  push:
+    branches:
+      - feature/staresto-v06-phase1-quality-gate
+    paths:
+      - staresto-v06/phase1/audit.py
+      - staresto-v06/phase1/test_audit.py
+      - staresto-v06/phase1/deep_review.py
+      - .github/workflows/qa-staresto-v06-phase1.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Import frozen full-source corpus into isolated workspace
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch --no-tags origin refs/heads/data/staresto-full-catalog-20261016:refs/remotes/origin/data/staresto-full-catalog-20261016
+          git worktree add --detach /tmp/staresto-upstream origin/data/staresto-full-catalog-20261016
+          mkdir -p staresto-intake
+          cp -a /tmp/staresto-upstream/staresto-intake/library staresto-intake/library
+      - name: Run source provenance, official-exam, rights and duplicate screening
+        shell: bash
+        run: |
+          python -m py_compile staresto-v06/phase1/audit.py staresto-v06/phase1/test_audit.py staresto-v06/phase1/deep_review.py
+          python staresto-v06/phase1/audit.py
+          python staresto-v06/phase1/test_audit.py
+          python staresto-v06/phase1/deep_review.py
+      - name: Publish audit output ONLY to independent phase1 branch
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- staresto-v06/phase1/output
+          if ! git diff --cached --quiet; then
+            git commit -m "data(v0.6 phase1): verified quality gate and v0.4 ID crosswalk"
+            git push origin HEAD:refs/heads/feature/staresto-v06-phase1-quality-gate
+          fi
