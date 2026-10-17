@@ -23,3 +23,19 @@ jobs:
         run: |
           node common-subjects/english-assistant/test.cjs
           node common-subjects/english-assistant/test-vocab.cjs
+
+  browser:
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install isolated browser-test dependency
+        run: npm install --no-save --no-package-lock playwright@1.56.1
+      - name: Install Chromium for acceptance tests
+        run: npx playwright install --with-deps chromium
+      - name: Run real-browser acceptance
+        run: node common-subjects/english-assistant/test-browser.cjs
