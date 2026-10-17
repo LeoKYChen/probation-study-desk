@@ -195,6 +195,8 @@ function clearRecords(){
   if(!confirm('已啟動備份下載。請確認有保存下載檔案。\n確定清除每日模擬題全部學習紀錄？此操作無法自動復原。'))return;
   try{
     persist({});records={};timers={};writeTimers();
+    // Clearing daily study also discards the old pre-import snapshot on this origin.
+    try{localStorage.removeItem('daily-reading-test:before-import');}catch{}
     if(current){const id=current;current='';showQuestion(id);}else renderList();
     notice('每日模擬題作答與 AI 評語已清除；考古題及題庫未變更。');
   }catch(error){notice('清除失敗，原紀錄保留：'+error.message,true);}
