@@ -1,0 +1,146 @@
+name: Stage 2 unified JSON backup safety and isolated preview
+
+on:
+  push:
+    branches:
+      - phase2/manual-json-backup-audit-20261017
+    paths:
+      - backup/**
+      - index.html
+      - scripts/build-cloudflare-main-mirror.py
+      - .github/workflows/stage2-json-backup-preview.yml
+  pull_request:
+    branches:
+      - main
+    paths:
+      - backup/**
+      - index.html
+      - scripts/build-cloudflare-main-mirror.py
+      - .github/workflows/stage2-json-backup-preview.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: stage2-json-backup-preview
+  cancel-in-progress: true
+
+jobs:
+  verify-and-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}
+      - name: Static syntax and safety tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check backup/unified-core.js
+          node --check backup/app.js
+          node --check backup/test.cjs
+          node backup/test.cjs
+          python3 - <<'PY'
+          from pathlib import Path
+          from html.parser import HTMLParser
+          h=Path('backup/index.html').read_text(encoding='utf-8')
+          home=Path('index.html').read_text(encoding='utf-8')
+          assert './backup/' in home
+          assert 'backup/unified-core.js' not in home
+          assert h.count('id="importFile"')==1
+          assert h.count('id="confirmSafe"')==1
+          assert './unified-core.js' in h and './app.js' in h
+          assert 'Google Drive' in h
+          assert home.count('class="tile course-tile"')==2
+          assert home.count('class="tile explore-tile"')==3
+          HTMLParser().feed(h)
+          print('PASS backup UI links and 2+3 entrance unchanged')
+          PY
+      - name: Install browser for end-to-end backup verification
+        shell: bash
+        run: |
+          npm install --prefix /tmp/stage2-backup-browser --no-save playwright@1.56.1
+          /tmp/stage2-backup-browser/node_modules/.bin/playwright install --with-deps chromium
+
+      - name: Mac-to-phone JSON roundtrip in real browser (synthetic data)
+        shell: bash
+        env:
+          NODE_PATH: /tmp/stage2-backup-browser/node_modules
+        run: |
+          set -euo pipefail
+          node backup/test-browser.cjs
+
+      - name: Build same source website into isolated preview
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/build-cloudflare-main-mirror.py
+          test -s cloudflare-main-mirror-dist/backup/index.html
+          test -s cloudflare-main-mirror-dist/backup/unified-core.js
+          node --check cloudflare-main-mirror-dist/backup/unified-core.js
+      - name: Deploy dedicated preview only, never production
+        if: (github.event_name == 'push' && github.ref == 'refs/heads/phase2/manual-json-backup-audit-20261017') || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'phase2/manual-json-backup-audit-20261017' && github.event.pull_request.base.ref == 'main')
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy cloudflare-main-mirror-dist --project-name=probation-study30-test --branch=stage2-json-backup-preview
+      - name: Verify preview page and files after deploy
+        if: github.event_name == 'push' && github.ref == 'refs/heads/phase2/manual-json-backup-audit-20261017'
+        shell: bash
+        run: |
+          set -euo pipefail
+          for file in index.html backup/index.html backup/unified-core.js backup/app.js; do
+            pass=0
+            for attempt in 1 2 3 4 5 6; do
+              if curl -fsSL --max-time 20 "https://stage2-json-backup-preview.probation-study30-test.pages.dev/$file" -o /tmp/stage2-actual &&
+                cmp -s "cloudflare-main-mirror-dist/$file" /tmp/stage2-actual; then
+                pass=1
+                break
+              fi
+              sleep 7
+            done
+            test "$pass" = 1 || { echo "Preview was not byte-identical: $file"; exit 1; }
+          done
+          echo "PASS isolated preview matches GitHub test branch source"
+
+  verify-live-preview:
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+    needs: verify-and-preview
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: Confirm staged Cloudflare pages and commit identity
+        shell: bash
+        env:
+          EXPECTED_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          BASE=https://stage2-json-backup-preview.probation-study30-test.pages.dev
+          ready=0
+          for attempt in $(seq 1 20); do
+            if curl -fsSL --max-time 15 "$BASE/mirror-manifest.json" -o /tmp/stage2-live-manifest; then
+              if python3 - <<'PY'
+          import json,os
+          from pathlib import Path
+          d=json.loads(Path('/tmp/stage2-live-manifest').read_text())
+          assert d['source_commit']==os.environ['EXPECTED_SHA'], (d['source_commit'],os.environ['EXPECTED_SHA'])
+          PY
+              then
+                ready=1
+                break
+              fi
+            fi
+            sleep 8
+          done
+          test "$ready" = 1 || { echo "Isolated preview not yet serving the same GitHub commit"; exit 1; }
+          for file in backup/index.html backup/unified-core.js backup/app.js; do
+            curl -fsSL --max-time 15 "$BASE/$file" -o /tmp/stage2-live-asset
+            cmp -s "$file" /tmp/stage2-live-asset || { echo "Live asset differs: $file"; exit 1; }
+          done
+          echo "PASS: isolated preview serves this PR's exact source; production unchanged"

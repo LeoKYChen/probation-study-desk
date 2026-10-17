@@ -27,6 +27,7 @@ ROOT_FILES = {
     "favicon.svg",
 }
 SITE_DIRS = {
+    "backup",
     "v2.5",
     "professional",
     "daily-simulation",
