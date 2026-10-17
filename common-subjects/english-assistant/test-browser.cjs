@@ -63,6 +63,23 @@ async function main(){
   const exported=JSON.parse(content);
   assert.equal(exported.wordProgress['core-evidence'].attempts.length,1);
   assert.ok(exported.customWords['mine-resilience']);
+  // Restore and merge a second-device backup. Neither earlier practice nor legacy keys may disappear.
+  const remote={schema:'psd-staresto-link-coach-v06',days:{},completed:{
+   'gsat-reading-114-1':{id:'gsat-reading-114-1',date:'2026-10-12',type:'reading',correct:2,total:4,at:'2026-10-12T12:00:00Z'}
+  },excluded:{},wordDays:{},wordProgress:{},customWords:{
+    'mine-courage':{id:'mine-courage',term:'courage',meaning:'勇氣',pos:'n.',example:''}
+  }};
+  page.once('dialog',d=>d.accept());
+  await page.locator('#importFile').setInputFiles({
+   name:'remote-backup.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(remote))
+  });
+  await page.waitForFunction(()=>Boolean(JSON.parse(localStorage.getItem('psd-staresto-link-coach-v06')).customWords['mine-courage']));
+  const merged=await page.evaluate(()=>JSON.parse(localStorage.getItem('psd-staresto-link-coach-v06')));
+  assert.ok(merged.customWords['mine-resilience'],'local personal words must survive import');
+  assert.ok(merged.customWords['mine-courage'],'remote personal words must be merged');
+  assert.equal(Object.keys(merged.completed).length,2,'local and imported completed tasks both retained');
+  assert.equal(merged.wordProgress['core-evidence'].attempts.length,1,'local flashcard record retained');
+  assert.equal(await page.evaluate(()=>localStorage.getItem('psd-common-subjects-v1')),'PRESERVE-ORIGINAL80');
   await page.goto(address+'/common-subjects/',{waitUntil:'domcontentloaded'});
   await page.locator('#tabEnglish').click();
   assert.equal(await page.locator('#legacy80Practice').isVisible(),false);
