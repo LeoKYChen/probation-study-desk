@@ -17,6 +17,15 @@ const state=e.createState(),day='2026-10-17',p=e.planDay(state,day),p2=e.planDay
 assert.strictEqual(p,p2,'same-day plan never reshuffled');
 assert.ok(p.tasks.some(t=>t.type==='vocab'),'vocabulary is scheduled daily');
 assert.ok(p.tasks.some(t=>t.type==='completion'),'Saturday has completion');
+assert.equal(e.units.length,335,'verified manifest has 335 distinct resource ranges');
+assert.equal(new Set(e.units.map(x=>x.id)).size,e.units.length,'all resource IDs distinct');
+assert.match(e.getUnit('gsat-vocab-115-1-5').url,/#set-V0491,V0492,V0493,V0494,V0495/,'exact vocabulary question IDs');
+assert.match(e.getUnit('gsat-grammar-115-1').url,/#set-G115_11_1,G115_12_1,G115_13_1,G115_14_1,G115_15_1/,'actual grammar question IDs');
+assert.match(e.getUnit('gsat-reading-115-1').url,/#p=g115p1$/,'direct reading passage deep-link');
+assert.equal(e.getUnit('gsat-completion-115-1').mode,'manual','unverified passage deep-link must not be claimed');
+assert.equal(e.getUnit('gsat-vocab-83-1-5-recommend').title.includes('推薦甄選'),true,'older recommendations are not official GSAT');
+for(const unit of e.units){assert.match(unit.url,/^https:\\/\\/staresto-create\\.github\\.io\\//);assert.ok(unit.instructions&&unit.title);}
+
 const first=p.tasks[0].id;
 assert.throws(()=>e.markDone(state,day,first,{correct:9,total:5}),/有效/);
 assert.equal(e.markDone(state,day,first,{correct:3,total:5}).correct,3);
@@ -36,7 +45,7 @@ const all=e.createState(),seen=new Set(),seenVocab=new Set();
 for(let i=0;i<85;i++){
   const d=new Date(Date.UTC(2026,9,17+i)).toISOString().slice(0,10);
   const today=e.planDay(all,d);
-  assert.ok(today.tasks.some(t=>t.type==='vocab')=== (seenVocab.size<66),'new vocab until remaining units exhausted');
+  assert.ok(today.tasks.some(t=>t.type==='vocab')=== (seenVocab.size<e.units.filter(x=>x.type==='vocab').length),'new vocab until remaining units exhausted');
   for(const t of today.tasks)assert.ok(!seen.has(t.id),'never reschedule a prior unit: '+t.id);
   for(const t of today.tasks){seen.add(t.id);if(t.type==='vocab')seenVocab.add(t.id)}
 }
