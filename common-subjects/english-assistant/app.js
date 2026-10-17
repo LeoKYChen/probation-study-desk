@@ -1,7 +1,7 @@
 /* Isolated Staresto resource-link study coach, phase 1. */
 (function(){
 "use strict";
-const core=window.StarestoLinkCoach;if(!core)return;
+const core=window.StarestoLinkCoach,words=window.StarestoVocabulary;if(!core||!words)return;
 const $=id=>document.getElementById(id),el=(tag,t,cls)=>{const x=document.createElement(tag);if(t!==undefined)x.textContent=String(t);if(cls)x.className=cls;return x};
 const date=core.today(),labels=["星期日・本週複習","星期一・單字","星期二・文法","星期三・單字","星期四・閱讀","星期五・弱點補強","星期六・文意選填"];
 let state=core.createState(),readOnly=false;
@@ -19,6 +19,45 @@ function save(draft){
 }
 function clone(){return JSON.parse(JSON.stringify(state))}
 function btn(text,style,fn){const b=el("button",text,"btn "+(style||""));b.type="button";b.disabled=readOnly;b.addEventListener("click",fn);return b}
+function renderWord(id,host,mode){
+  const item=words.getWord(state,id);if(!item)return;
+  const progress=state.wordProgress[id],todayRecord=(progress?.attempts||[]).find(x=>x.date===date);
+  const card=el("article",undefined,"word-card"+(todayRecord?" done":""));
+  card.append(el("strong",item.term),el("span","  "+(item.pos||""),"small"));
+  const desc=el("div",undefined,"desc");
+  desc.hidden=!todayRecord;
+  desc.append(el("p","中文："+item.meaning));
+  if(item.example)desc.append(el("p","例句："+item.example));
+  else desc.append(el("p","這是自行加入的生字，請嘗試自己造句。","small"));
+  card.append(desc);
+  const actions=el("div",undefined,"buttons");
+  if(!todayRecord){
+    actions.append(btn("顯示中文與例句","",function(){desc.hidden=false;this.disabled=true}));
+    actions.append(btn("記住了","",function(){
+      try{const draft=clone();words.rate(draft,date,id,true);if(save(draft)){notice("");render()}}
+      catch(err){notice(err.message)}
+    }));
+    actions.append(btn("還不熟","",function(){
+      try{const draft=clone();words.rate(draft,date,id,false);if(save(draft)){notice("");render()}}
+      catch(err){notice(err.message)}
+    }));
+  }else actions.append(el("span",todayRecord.known?"✓ 記住了，依間隔排複習":"↻ 還不熟，明天再練","small"));
+  card.append(actions);host.append(card);
+}
+function renderWords(){
+  const plan=state.wordDays[date]||{new:[],review:[]};
+  const done=id=>(state.wordProgress[id]?.attempts||[]).some(x=>x.date===date);
+  const newly=plan.new||[],revision=plan.review||[];
+  const newDone=newly.filter(done).length,reviewDone=revision.filter(done).length;
+  $("wordStatus").textContent="新字 "+newDone+"/"+newly.length+" · 複習 "+reviewDone+"/"+revision.length;
+  const n=$("newWords"),r=$("reviewWords");n.replaceChildren();r.replaceChildren();
+  if(!newly.length)n.append(el("p","基礎單字庫已用完。可加入自己的生字，後續仍會依到期日安排複習。","muted"));
+  for(const id of newly)renderWord(id,n,"new");
+  if(!revision.length)r.append(el("p","今天尚無到期單字。練完今天的新字後，系統會安排之後的複習。","muted"));
+  for(const id of revision)renderWord(id,r,"review");
+  const summary=words.stats(state,date);
+  $("wordSummary").textContent="單字紀錄："+summary.known+" 字 · 熟練（至少連續記住3次）："+summary.mastered+" 字 · 自訂生字："+summary.custom+" 字 · 首批字庫："+summary.bank+" 字";
+}
 function renderTask(day,ref,host){
   const u=core.getUnit(ref.id);if(!u)return;
   const result=state.completed[u.id],card=el("article",undefined,"card"+(result?" done":""));
@@ -51,6 +90,7 @@ function renderTask(day,ref,host){
   card.append(actions);host.append(card);
 }
 function render(){
+  renderWords();
   $("todayDate").textContent=date;$("dayLabel").textContent=labels[core.weekday(date)];
   const tasks=state.days[date]?.tasks||[],done=tasks.filter(x=>state.completed[x.id]).length;
   $("progress").textContent=done+"／"+tasks.length+" 項已完成";
@@ -71,7 +111,23 @@ $("export").addEventListener("click",function(){
     setTimeout(()=>URL.revokeObjectURL(url),1500);
   }catch(err){notice("匯出備份失敗，請檢查瀏覽器權限。")}
 });
+$("addPersonalWord").addEventListener("click",function(){
+  if(readOnly)return;
+  try{
+    const draft=clone(),added=words.addCustomWord(draft,$("personalTerm").value,$("personalMeaning").value,$("personalPos").value);
+    if(save(draft)){
+      $("personalTerm").value="";$("personalMeaning").value="";$("personalPos").value="";
+      notice("已將「"+added.term+"」加入個人字庫，明天起優先排入新單字。");
+      render();
+    }
+  }catch(err){notice(err.message)}
+});
 load();
-if(!readOnly&&!state.days[date]){const draft=clone();core.planDay(draft,date);save(draft)}
+if(!readOnly&&(!state.days[date]||!state.wordDays[date])){
+  const draft=clone();
+  if(!draft.days[date])core.planDay(draft,date);
+  if(!draft.wordDays[date])words.plan(draft,date);
+  save(draft);
+}
 render();
 })();
