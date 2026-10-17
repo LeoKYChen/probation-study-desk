@@ -34,6 +34,7 @@ const server=http.createServer((req,res)=>{
    for(const [label,target] of [['專業科目','professional/'],['共同科目','common-subjects/'],['每日模擬','daily-simulation/'],['知識補給','juvenile-news/']]){
     const [popup]=await Promise.all([page.waitForEvent('popup'),page.locator('a.tile').filter({hasText:label}).click()]);await popup.waitForLoadState('domcontentloaded');assert.equal(popup.url(),new URL(target,base).href);await popup.close();
    }
+   await page.setViewportSize({width:390,height:844});
    await page.goto(new URL('professional/',base).href);await page.waitForFunction(()=>window.Study30QuestionSources?.all?.length===426);
    const key='probation-study30-v251:v1';
    // Seed an existing old session, then confirm startup/save leaves it intact.

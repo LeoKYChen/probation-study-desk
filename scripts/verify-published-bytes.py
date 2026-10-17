@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Compare every artifact byte at one explicitly supplied preview URL. Never writes remotely."""
-import argparse, concurrent.futures, hashlib, json, time, urllib.request
+import argparse, concurrent.futures, hashlib, json, subprocess, time
 from pathlib import Path
 
 def main():
@@ -18,17 +18,19 @@ def main():
         if name!='mirror-manifest.json':
             assert hashlib.sha256(expected).hexdigest()==paths[name],name
         last=None
-        for attempt in range(4):
+        for attempt in range(6):
             try:
-                request=urllib.request.Request(args.url.rstrip('/')+'/'+name,headers={'Cache-Control':'no-cache'})
-                with urllib.request.urlopen(request,timeout=25) as response:
-                    actual=response.read()
+                response=subprocess.run(
+                    ['curl','--fail','--silent','--show-error','--location',
+                     '--max-time','25',args.url.rstrip('/')+'/'+name],
+                    check=True,capture_output=True)
+                actual=response.stdout
                 if actual==expected:
                     return name
                 last='bytes differ'
             except Exception as error:
-                last=str(error)
-            time.sleep(3)
+                last=error.stderr.decode('utf-8',errors='replace') if isinstance(error,subprocess.CalledProcessError) else str(error)
+            time.sleep(5)
         raise RuntimeError(name+': '+str(last))
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
         checked=list(pool.map(check,[*paths,'mirror-manifest.json']))
