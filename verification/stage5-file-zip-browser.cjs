@@ -71,7 +71,22 @@ const engine=process.env.TEST_BROWSER==='webkit'?webkit:chromium;
   assert.match(page.url(),/\/v2\.5\/index\.html$/);
   await page.locator('#issueInput').waitFor({timeout:15000});
   await page.locator('#issueInput').fill('ZIP斷網考古題涵攝測試');
-  await page.waitForFunction(()=>Object.values(JSON.parse(localStorage.getItem('probation-study-desk-v24')||'{}')).some(v=>String(v.issue||'').includes('ZIP斷網考古題涵攝測試')),null,{timeout:15000});
+  try{
+   await page.waitForFunction(()=>Object.values(JSON.parse(localStorage.getItem('probation-study-desk-v24')||'{}')).some(v=>String(v.issue||'').includes('ZIP斷網考古題涵攝測試')),null,{timeout:25000});
+  }catch(error){
+   const diagnostics=await page.evaluate(()=>{
+    const key='probation-study-desk-v24';
+    try{
+     const raw=localStorage.getItem(key)||'{}';
+     const entries=Object.entries(JSON.parse(raw));
+     return {url:location.href,storedEntries:entries.length,hasAnswer:entries.some(([,r])=>String(r.issue||'').includes('ZIP斷網考古題涵攝測試')),
+       text:document.getElementById('issueInput')?.value,save:document.getElementById('saveStatus')?.textContent,
+       current:window.Practice25?.getQuestion()?.id,practiceBound:!!window.Practice25,storageLength:raw.length};
+    }catch(e){return {error:String(e),url:location.href}};
+   });
+   console.error('ZIP V2.5 STORAGE DIAGNOSTICS:',diagnostics,'PAGE ERRORS:',errors);
+   throw error;
+  }
   await page.reload({waitUntil:'load'});
   assert.match(await page.locator('#issueInput').inputValue(),/ZIP斷網考古題涵攝測試/);
   // Browser-native JSON download and fresh-profile import must work directly from file://.
