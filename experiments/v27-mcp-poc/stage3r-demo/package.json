@@ -1,0 +1,9 @@
+{
+  "name": "v27-stage3r-offline-source-tiers",
+  "version": "0.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "test": "node --test model.test.cjs"
+  }
+}
