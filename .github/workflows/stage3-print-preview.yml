@@ -1,0 +1,115 @@
+name: Stage 3 A4 essay print and PDF isolated preview
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - print/**
+      - index.html
+      - professional/index.html
+      - v2.5/index.html
+      - daily-simulation/index.html
+      - common-subjects/index.html
+      - scripts/build-cloudflare-main-mirror.py
+      - .github/workflows/stage3-print-preview.yml
+  push:
+    branches:
+      - feature/stage3-essay-a4-print-preview-20261017
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: stage3-a4-print-preview
+  cancel-in-progress: true
+
+jobs:
+  verify-and-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}
+      - name: Test read-only print model and source correctness
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check print/print-model.js
+          node --check print/app.js
+          node --check print/test.cjs
+          node --check print/test-browser.cjs
+          node print/test.cjs
+          python3 - <<'PY'
+          from pathlib import Path
+          h=Path('print/index.html').read_text('utf-8')
+          css=Path('print/style.css').read_text('utf-8')
+          home=Path('index.html').read_text('utf-8')
+          assert '@page{size:A4' in css
+          assert '.print-sheet' in css and 'break-after:page' in css
+          assert './print/' in home
+          assert h.count('print-model.js')==1 and h.count('app.js')==1
+          assert home.count('class="tile course-tile"')==2
+          assert home.count('class="tile explore-tile"')==3
+          for p in ('v2.5/index.html','daily-simulation/index.html'):
+              assert '../print/?module=' in Path(p).read_text('utf-8'),p
+          print('PASS: original five tiles retained, 4 accessible print entry points and A4 rules')
+          PY
+      - name: Install isolated Chromium
+        shell: bash
+        run: |
+          npm install --prefix /tmp/stage3-print-browser --no-save playwright@1.62.1
+          /tmp/stage3-print-browser/node_modules/.bin/playwright install --with-deps chromium webkit
+      - name: Browser PDF and A4 print acceptance using only synthetic data
+        shell: bash
+        env:
+          NODE_PATH: /tmp/stage3-print-browser/node_modules
+        run: |
+          set -euo pipefail
+          node print/test-browser.cjs
+          TEST_PATH_PREFIX=/probation-study-desk node print/test-browser.cjs
+          TEST_BROWSER=webkit node print/test-browser.cjs
+      - name: Reproducible Cloudflare mirror build and SHA checks
+        shell: bash
+        run: |
+          python3 scripts/build-cloudflare-main-mirror.py
+          test -s cloudflare-main-mirror-dist/print/index.html
+          test -s cloudflare-main-mirror-dist/print/style.css
+          cmp print/index.html cloudflare-main-mirror-dist/print/index.html
+          cmp print/print-model.js cloudflare-main-mirror-dist/print/print-model.js
+      - name: Deploy only isolated Cloudflare preview, never production
+        if: (github.event_name == 'push' && github.ref == 'refs/heads/feature/stage3-essay-a4-print-preview-20261017') || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'feature/stage3-essay-a4-print-preview-20261017' && github.event.pull_request.base.ref == 'main')
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy cloudflare-main-mirror-dist --project-name=probation-study30-test --branch=stage3-a4-print-preview
+      - name: Verify staged live files and exact commit
+        if: (github.event_name == 'push' && github.ref == 'refs/heads/feature/stage3-essay-a4-print-preview-20261017') || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'feature/stage3-essay-a4-print-preview-20261017' && github.event.pull_request.base.ref == 'main')
+        shell: bash
+        env:
+          EXPECTED_SHA: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}
+        run: |
+          set -euo pipefail
+          BASE=https://stage3-a4-print-preview.probation-study30-test.pages.dev
+          ready=0
+          for attempt in $(seq 1 12); do
+            if curl -fsSL --max-time 15 "$BASE/mirror-manifest.json" -o /tmp/stage3-manifest; then
+              if python3 - <<'PY'
+          import json,os
+          from pathlib import Path
+          d=json.loads(Path('/tmp/stage3-manifest').read_text('utf-8'))
+          assert d['source_commit']==os.environ['EXPECTED_SHA']
+          PY
+              then ready=1;break;fi
+            fi
+            sleep 8
+          done
+          test "$ready" = 1 || { echo "Stage3 preview is not publishing the exact source commit"; exit 1; }
+          for f in index.html print/index.html print/style.css print/app.js print/print-model.js; do
+            curl -fsSL --max-time 15 "$BASE/$f" -o /tmp/stage3-page
+            cmp "$f" /tmp/stage3-page || exit 1
+          done
+          echo "PASS: stage3 isolated URL serves identical GitHub test branch resources"

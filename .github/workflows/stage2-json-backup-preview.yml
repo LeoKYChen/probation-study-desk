@@ -107,7 +107,7 @@ jobs:
           echo "PASS isolated preview matches GitHub test branch source"
 
   verify-live-preview:
-    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'phase2/manual-json-backup-audit-20261017'
     needs: verify-and-preview
     runs-on: ubuntu-latest
     timeout-minutes: 5
