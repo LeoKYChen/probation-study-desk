@@ -46,3 +46,58 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy previews/116-study-home --project-name=probation-study30-test --branch=home-preview-20261017
+      - name: Install browser for live countdown verification
+        shell: bash
+        run: |
+          npm install --prefix /tmp/home-preview-qa --no-save playwright@1.56.1
+          /tmp/home-preview-qa/node_modules/.bin/playwright install --with-deps chromium
+      - name: Verify live mobile interactions and record isolation
+        env:
+          NODE_PATH: /tmp/home-preview-qa/node_modules
+        shell: bash
+        run: |
+          node <<'NODE'
+          const assert=require('node:assert/strict');
+          const {chromium}=require('playwright');
+          (async()=>{
+            const browser=await chromium.launch({headless:true});
+            const context=await browser.newContext({viewport:{width:390,height:844},locale:'zh-TW',timezoneId:'Asia/Taipei'});
+            const page=await context.newPage();
+            const errors=[];
+            page.on('pageerror',e=>errors.push(String(e)));
+            const url='https://home-preview-20261017.probation-study30-test.pages.dev/';
+            const res=await page.goto(url,{waitUntil:'domcontentloaded',timeout:45000});
+            assert.equal(res.status(),200);
+            assert.match(await page.title(),/觀護人學習平台/);
+            assert.equal(await page.locator('#countdown-value').innerText(),'尚未設定考試日期');
+            await page.evaluate(()=>localStorage.setItem('probation-study30-v251:v1','KEEP_UNCHANGED_TEST'));
+            await page.locator('#countdown-settings summary').click();
+            assert.equal(await page.locator('#countdown-settings').evaluate(el=>el.open),true);
+            await page.locator('#event-name').fill('觀護人測試考試');
+            await page.locator('#exam-date').fill('2027-08-14');
+            await page.locator('#countdown-style').selectOption('large');
+            await page.locator('#countdown-accent').selectOption('emerald');
+            await page.getByRole('button',{name:'儲存設定'}).click();
+            assert.match(await page.locator('#countdown-value').innerText(),/^\d+ 天$/);
+            assert.equal(await page.locator('#countdown-event-label').innerText(),'距離觀護人測試考試');
+            let stored=await page.evaluate(()=>JSON.parse(localStorage.getItem('psd-home-exam-countdown-v1')));
+            assert.equal(stored.date,'2027-08-14');
+            await page.reload({waitUntil:'domcontentloaded'});
+            assert.match(await page.locator('#countdown-value').innerText(),/^\d+ 天$/);
+            assert.equal(await page.locator('#countdown-event-label').innerText(),'距離觀護人測試考試');
+            await page.locator('#countdown-settings summary').click();
+            await page.locator('#exam-date').fill('2028-08-12');
+            await page.getByRole('button',{name:'儲存設定'}).click();
+            stored=await page.evaluate(()=>JSON.parse(localStorage.getItem('psd-home-exam-countdown-v1')));
+            assert.equal(stored.date,'2028-08-12');
+            await page.locator('#countdown-settings summary').click();
+            await page.getByRole('button',{name:'清除倒數'}).click();
+            assert.equal(await page.locator('#countdown-value').innerText(),'尚未設定考試日期');
+            assert.equal(await page.evaluate(()=>localStorage.getItem('probation-study30-v251:v1')),'KEEP_UNCHANGED_TEST');
+            assert.equal(await page.evaluate(()=>localStorage.getItem('psd-home-exam-countdown-v1')),null);
+            assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=document.documentElement.clientWidth),true);
+            assert.deepEqual(errors,[]);
+            await browser.close();
+            console.log('PASS: live HTTPS mobile countdown open, save, reload, modify, reset, existing record untouched, no overflow or JS errors');
+          })().catch(e=>{console.error('FAIL live homepage countdown test',e);process.exit(1)});
+          NODE
