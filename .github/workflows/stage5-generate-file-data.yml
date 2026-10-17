@@ -25,6 +25,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          git fetch origin main
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' merge --no-edit -m 'chore(stage5): bring latest source JSON from main into ZIP testing branch' origin/main
           node --check scripts/generate-file-data.cjs
           node scripts/generate-file-data.cjs --write
           node scripts/generate-file-data.cjs --check
