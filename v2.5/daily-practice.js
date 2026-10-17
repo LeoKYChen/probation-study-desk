@@ -8,6 +8,8 @@ const KEY='probation-daily-github:records:v1';
 const DATA_KEY='daily-reading-test:dataset';
 const SAVED_KEY='daily-reading-test:saved';
 const TIMER_KEY='probation-daily-30min:session:v1';
+// Optional deep link from the browsing page. Only IDs in the loaded question bank are accepted.
+const requestedQuestion=new URLSearchParams(window.location.search).get('question')||'';
 const $=id=>document.getElementById(id);
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let bank=null,records={},current='',storageOK=true,dirty=false,saveJob=0,timers={};
@@ -367,7 +369,8 @@ async function load(force=false){
     $('subject').value=subjects.includes(oldSubject)?oldSubject:'';
     renderList();
     const first=bank.questions.slice().sort((a,b)=>b.date.localeCompare(a.date)||a.id.localeCompare(b.id))[0];
-    current='';showQuestion(previous&&bank.questions.some(q=>q.id===previous)?previous:first.id);
+    const target=(previous&&bank.questions.some(q=>q.id===previous)?previous:'')||(requestedQuestion&&bank.questions.some(q=>q.id===requestedQuestion)?requestedQuestion:'')||first.id;
+    current='';showQuestion(target);
     notice('已載入 '+bank.questions.length+' 題（'+source+'）。兩個每日模擬題頁面共用同一份學習紀錄。');
   }catch(error){notice('每日模擬題載入失敗：'+error.message,true);}
   finally{$('reload').disabled=false;}
