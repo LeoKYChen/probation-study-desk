@@ -33,10 +33,15 @@ function plan(state,date){
     if(d>date)continue;
     for(const id of day.new||[]){assigned.add(id);if(!state.wordProgress[id]&&!pending.includes(id)&&getWord(state,id))pending.push(id)}
   }
-  const todayNew=pending.slice(0,6);
+  // Reserve up to two places for newly added personal words; remaining slots first
+  // carry over unfinished cards from previous days, then fill with fresh core words.
+  const todayNew=[];
+  const mine=Object.values(state.customWords).filter(w=>!assigned.has(w.id)&&!state.wordProgress[w.id]).slice(0,2);
+  mine.forEach(w=>todayNew.push(w.id));
+  for(const id of pending){if(todayNew.length>=6)break;if(!todayNew.includes(id))todayNew.push(id)}
   for(const w of getAll(state)){
     if(todayNew.length>=6)break;
-    if(!assigned.has(w.id)&&!state.wordProgress[w.id])todayNew.push(w.id);
+    if(!assigned.has(w.id)&&!state.wordProgress[w.id]&&!todayNew.includes(w.id))todayNew.push(w.id);
   }
   const due=Object.entries(state.wordProgress)
     .filter(([id,p])=>getWord(state,id)&&p&&p.due<=date&&!(p.attempts||[]).some(a=>a.date===date)&&!todayNew.includes(id))
