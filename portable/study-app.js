@@ -131,7 +131,7 @@ async function importJson(event){
   if(data.format!==FORMAT||data.schemaVersion!==1||!isObj(data.records)||!Array.isArray(data.conflicts)||
      Object.keys(data.records).length>3000||!safeObj(data))throw Error('只接受本離線版匯出的安全 JSON（非正式網站備份格式）');
   for(const [id,record] of Object.entries(data.records))
-   if(!/^(past|daily|essay|news):[a-zA-Z0-9._:-]+$/.test(id)||!validRecord(record))throw Error('紀錄格式錯誤：'+id);
+   if((!/^(past|daily|essay|news):.+$/u.test(id)||id.length>350)||!validRecord(record))throw Error('紀錄格式錯誤：'+id);
   clearTimeout(saveTimer);if(dirty)capture();
   if(!confirm('匯入前請先下載目前這份 JSON 備份。\n接下來只新增缺少的紀錄；不同答案將保留本機版本並另外保存衝突紀錄。確定已備份並繼續？'))return;
   const merged=copy(saved),seen=new Set(merged.conflicts.map(JSON.stringify));
