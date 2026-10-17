@@ -87,6 +87,24 @@ async function main(){
   assert.equal(await page.locator('#legacy80ResetControls').isVisible(),false);
   assert.equal(await page.locator('#legacy80Stats').isVisible(),false);
   assert.deepEqual(errors,[],'no unexpected browser JS runtime errors');
+  // Verify the public Staresto sites actually honor their documented deep-link routes.
+  const sourcePage=await context.newPage();
+  sourcePage.on('dialog',d=>d.dismiss());
+  await sourcePage.goto('https://staresto-create.github.io/JCEE-vocab-questions/gsat/#set-V0491,V0492,V0493,V0494,V0495|Staresto%20v0.6',{
+   waitUntil:'domcontentloaded',timeout:45000
+  });
+  await sourcePage.waitForFunction(()=>typeof session!=='undefined'&&session&&Array.isArray(session.list)&&session.list.length===5,{timeout:20000});
+  assert.deepEqual(await sourcePage.evaluate(()=>session.list),['V0491','V0492','V0493','V0494','V0495'],'upstream vocabulary exact set');
+  await sourcePage.goto('https://staresto-create.github.io/grammar-cloze-test/#set-G115_11_1,G115_12_1,G115_13_1,G115_14_1,G115_15_1|Staresto%20v0.6',{
+   waitUntil:'domcontentloaded',timeout:45000
+  });
+  await sourcePage.waitForFunction(()=>typeof singleQueue!=='undefined'&&Array.isArray(singleQueue)&&singleQueue.length===5,{timeout:20000});
+  assert.deepEqual(await sourcePage.evaluate(()=>singleQueue.map(x=>x.id)),['G115_11_1','G115_12_1','G115_13_1','G115_14_1','G115_15_1'],'upstream grammar exact set');
+  await sourcePage.goto('https://staresto-create.github.io/reading-comprehension/#p=g115p1',{
+   waitUntil:'domcontentloaded',timeout:45000
+  });
+  await sourcePage.waitForFunction(()=>typeof curPid!=='undefined'&&curPid==='g115p1'&&document.getElementById('practiceView')?.style.display==='block',{timeout:20000});
+  await sourcePage.close();
   await context.close();
   console.log('PASS browser acceptance: 6 flashcards, scoring, reload, original-80 hidden, legacy localStorage isolated, backup download');
  }finally{if(browser)await browser.close();await new Promise(ok=>server.close(ok))}
