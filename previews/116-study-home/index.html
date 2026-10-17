@@ -1,166 +1,275 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#050505">
-  <meta name="description" content="116年觀護人學習平台統一首頁預覽：專業科目、共同科目、每日模擬題、少年司法知識補給及臺灣法律AI實驗室。">
-  <title>觀護人學習平台｜統一首頁測試版</title>
-  <style>
-    :root { color-scheme: dark; font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; }
-    *,*::before,*::after { box-sizing:border-box; }
-    html { min-height:100%; background:#050505; }
-    body { margin:0; min-height:100vh; padding:20px; color:#f8f9fa; background:#050505; }
-    .shell { width:min(100%,960px); margin:0 auto; padding:34px 32px 30px; border:1px solid #292929; border-radius:31px; background:#030303; }
-    header { display:flex; align-items:center; justify-content:space-between; gap:14px; margin-bottom:12px; }
-    h1,h2,p { margin:0; }
-    h1 { font-size:clamp(25px,4vw,44px); font-weight:800; letter-spacing:.005em; line-height:1.36; }
-    .pill { display:inline-block; flex:none; border-radius:999px; padding:5px 15px; background:#05371e; color:#28b975; font-size:clamp(13px,2.3vw,21px); font-weight:750; line-height:1.35; }
-    .nav-list { margin:0; padding:0; list-style:none; }
-    .nav-item { border-bottom:1px solid #202020; }
-    .nav-link { display:grid; grid-template-columns:52px minmax(0,1fr); align-items:center; gap:18px; padding:31px 4px 33px; border-radius:12px; color:inherit; text-decoration:none; transition:background-color .15s ease; }
-    .nav-link:hover { background:#101314; }
-    .nav-link:focus-visible, .lab-link:focus-visible { outline:3px solid #47d999; outline-offset:3px; }
-    .nav-icon { width:32px; height:32px; margin-left:0; color:#a5a5a5; stroke:currentColor; fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
-    .nav-title { display:block; margin-bottom:8px; font-size:clamp(21px,3.35vw,35px); font-weight:790; line-height:1.35; letter-spacing:.01em; }
-    .nav-subtitle { display:block; color:#a2a2a2; font-size:clamp(14px,2.3vw,23px); line-height:1.6; letter-spacing:.005em; }
-    .lab { padding:34px 4px 3px; }
-    .lab-link { display:block; padding:0; border-radius:10px; color:inherit; text-decoration:none; }
-    .lab-link:hover .lab-title { color:#d6f7e6; }
-    .lab-title-row { display:flex; align-items:center; justify-content:space-between; gap:12px; }
-    .lab-title { font-size:clamp(20px,3vw,30px); font-weight:790; line-height:1.4; }
-    .lab-badge { display:inline-block; flex:none; border-radius:999px; padding:5px 13px; background:#262626; color:#e4e4e4; font-size:clamp(12px,2vw,18px); font-weight:730; white-space:nowrap; }
-    .lab-description { margin-top:22px; font-size:clamp(14px,2.3vw,22px); line-height:1.65; color:#a2a2a2; }
-    .footnote { width:min(100%,960px); margin:15px auto 0; text-align:center; color:#888; font-size:12px; line-height:1.65; }
-    @media (max-width:580px) {
-      body { padding:10px; }
-      .shell { padding:22px 20px 23px; border-radius:23px; }
-      header { align-items:flex-start; margin-bottom:8px; }
-      h1 { max-width:calc(100% - 72px); }
-      .pill { margin-top:3px; padding:4px 11px; }
-      .nav-link { grid-template-columns:30px minmax(0,1fr); gap:16px; padding:25px 0 26px; }
-      .nav-icon { width:27px; height:27px; }
-      .nav-title { margin-bottom:5px; }
-      .nav-subtitle { overflow-wrap:anywhere; }
-      .lab { padding:26px 0 4px; }
-      .lab-title-row { gap:9px; }
-      .lab-description { margin-top:17px; }
-    }
-    @media (prefers-reduced-motion:reduce) { .nav-link { transition:none; } }
-  
-html,body{background:#173f3b;color:#f4fbf8}
-.shell{background:#153632;border-color:#2c5a55}
-.nav-item{border-color:#2c5a55}
-.nav-link:hover{background:#204a46}
-.nav-subtitle,.lab-description{color:#bfd5cf}
-.nav-icon{color:#d4e9e2}
-.lab-badge{background:#294f4b;color:#f0faf6}
-.pill{background:#18462a;color:#7cf39c}
-.footnote{color:#d1e4de}
-.countdown{margin:0 0 6px;padding:14px 18px;border:1px solid #2c5a55;border-radius:18px;background:rgba(255,255,255,.04)}
-.countdown-top{display:flex;align-items:center;justify-content:space-between;gap:12px;color:#bfd5cf;font-size:14px}
-.countdown-value{display:block;font-size:clamp(21px,3vw,30px);font-weight:800;color:#8de2a7;line-height:1.4}
-.countdown-hint{margin-top:6px;min-height:1.3em;color:#bfd5cf;font-size:13px}
-.date-form{margin-top:13px;padding:14px;background:#12302d;border:1px solid #2c5a55;border-radius:12px}
-.date-form[hidden]{display:none}
-.date-form label{display:block;margin-bottom:7px;font-size:14px;font-weight:700}
-.date-form-row{display:flex;flex-wrap:wrap;align-items:center;gap:9px}
-.date-form input{min-height:42px;max-width:100%;padding:8px 10px;border:1px solid #a3c9ba;border-radius:9px;font:inherit;font-size:16px;background:#f9fffb;color:#1a342a;color-scheme:light}
-.date-btn{min-height:39px;padding:7px 13px;border:1px solid #2c5a55;border-radius:10px;background:#204a46;color:#f4fbf8;font:inherit;font-size:14px;font-weight:700;cursor:pointer}
-.date-btn.primary{background:#8de2a7;border-color:#8de2a7;color:#103320}
-.date-btn:focus-visible,.date-form input:focus-visible{outline:3px solid #8de2a7;outline-offset:2px}
-#date-message{margin-top:7px;color:#bfd5cf;font-size:12px}
-@media(max-width:580px){.countdown{padding:12px 14px;border-radius:14px}}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#173f3b">
+<meta name="description" content="觀護人學習平台統一首頁預覽">
+<title>觀護人學習平台｜統一首頁測試版</title>
+<style>
+:root{
+  color-scheme:dark;
+  font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  --bg:#173f3b;
+  --bg-soft:#204a46;
+  --panel:#153632;
+  --panel-2:#12302d;
+  --line:#2c5a55;
+  --text:#f4fbf8;
+  --muted:#bfd5cf;
+  --accent:#8de2a7;
+  --accent-deep:#1f6f3a;
+  --badge:#294f4b;
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{min-height:100%;background:linear-gradient(180deg,var(--bg),#102c29)}
+body{margin:0;min-height:100vh;padding:20px;color:var(--text)}
+.shell{width:min(100%,960px);margin:0 auto;padding:34px 32px 28px;border:1px solid var(--line);border-radius:31px;background:linear-gradient(180deg,var(--panel),var(--panel-2));box-shadow:0 18px 50px rgba(0,0,0,.22)}
+header{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:18px}
+h1,h2,p{margin:0}
+h1{font-size:clamp(25px,4vw,42px);font-weight:800;letter-spacing:.005em;line-height:1.34}
+.pill{display:inline-block;flex:none;border-radius:999px;padding:6px 15px;background:#18462a;color:#7cf39c;font-size:clamp(13px,2.2vw,20px);font-weight:750;line-height:1.35}
+.countdown{margin:0 0 6px;padding:14px 18px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.04)}
+.countdown-label{display:block;color:var(--muted);font-size:14px;line-height:1.5;margin-bottom:4px}
+.countdown-value{display:block;font-size:clamp(21px,3vw,30px);font-weight:800;line-height:1.35;color:var(--accent)}
+.nav-list{margin:0;padding:0;list-style:none}
+.nav-item{border-bottom:1px solid var(--line)}
+.nav-link{display:grid;grid-template-columns:52px minmax(0,1fr);align-items:center;gap:18px;padding:29px 4px 31px;border-radius:12px;color:inherit;text-decoration:none;transition:background-color .15s ease}
+.nav-link:hover{background:rgba(255,255,255,.05)}
+.nav-link:focus-visible,.lab-link:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.nav-icon{width:32px;height:32px;color:#d4e9e2;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.nav-title{display:block;margin-bottom:8px;font-size:clamp(21px,3.35vw,35px);font-weight:790;line-height:1.35;letter-spacing:.01em}
+.nav-subtitle{display:block;color:var(--muted);font-size:clamp(14px,2.3vw,23px);line-height:1.6;letter-spacing:.005em}
+.lab{padding:32px 4px 3px}
+.lab-link{display:block;padding:0;border-radius:10px;color:inherit;text-decoration:none}
+.lab-link:hover .lab-title{color:#dffcef}
+.lab-title-row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.lab-title{font-size:clamp(20px,3vw,30px);font-weight:790;line-height:1.4}
+.lab-badge{display:inline-block;flex:none;border-radius:999px;padding:5px 13px;background:var(--badge);color:#f0faf6;font-size:clamp(12px,2vw,18px);font-weight:730;white-space:nowrap}
+.lab-description{margin-top:18px;font-size:clamp(14px,2.3vw,22px);line-height:1.65;color:var(--muted)}
+.footnote{width:min(100%,960px);margin:15px auto 0;text-align:center;color:#d1e4de;font-size:12px;line-height:1.65;opacity:.82}
+@media(max-width:580px){
+  body{padding:10px}
+  .shell{padding:22px 20px 23px;border-radius:23px}
+  header{margin-bottom:14px}
+  h1{max-width:calc(100% - 78px)}
+  .pill{margin-top:3px;padding:4px 11px}
+  .countdown{padding:12px 14px;border-radius:14px}
+  .nav-link{grid-template-columns:30px minmax(0,1fr);gap:16px;padding:25px 0 26px}
+  .nav-icon{width:27px;height:27px}
+  .nav-title{margin-bottom:5px}
+  .nav-subtitle{overflow-wrap:anywhere}
+  .lab{padding:26px 0 4px}
+  .lab-title-row{gap:9px}
+  .lab-description{margin-top:15px}
+}
+
+.countdown-top{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.countdown-calendar{color:#a8cabe;font-size:13px;font-variant-numeric:tabular-nums}
+.countdown[data-style="large"] .countdown-value{font-size:clamp(36px,6vw,58px);letter-spacing:.01em}
+.countdown[data-accent="emerald"] .countdown-value{color:#45ee99}
+.countdown[data-accent="cream"] .countdown-value{color:#f1eee1}
+.countdown-settings{margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}
+.countdown-settings summary{display:inline-flex;align-items:center;gap:7px;list-style:none;cursor:pointer;border-radius:8px;padding:7px 2px;color:#ddf8e7;font-size:14px;font-weight:600}
+.countdown-settings summary::-webkit-details-marker{display:none}
+.countdown-settings summary:hover{color:#a3f0bc}
+.countdown-settings summary:focus-visible{outline:2px solid #a4fac2;outline-offset:2px}
+#countdown-form{padding-top:9px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.field{display:flex;flex-direction:column;gap:7px;min-width:0;color:var(--muted);font-size:13px;font-weight:500}
+.field input,.field select{width:100%;min-width:0;border:1px solid #537d71;border-radius:10px;padding:11px 12px;background:#e9f5ed;color:#15382d;font:inherit;font-size:16px;color-scheme:light}
+.field input:focus-visible,.field select:focus-visible{outline:3px solid #67d8a0;outline-offset:2px}
+.form-note{margin-top:12px;color:#b9d7c9;font-size:12px;line-height:1.6}
+.form-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.form-actions button{min-height:44px;border-radius:10px;padding:10px 18px;font:inherit;font-size:14px;font-weight:700;cursor:pointer}
+.save-button{background:#a1eabc;color:#0e3a27;border:1px solid #a1eabc}
+.clear-button{background:transparent;color:#e9f5ee;border:1px solid #6c9988}
+.form-actions button:hover{filter:brightness(1.07)}
+.form-actions button:focus-visible{outline:3px solid #a1eabc;outline-offset:2px}
+@media(max-width:580px){.form-grid{grid-template-columns:1fr}}
+
+@media(prefers-reduced-motion:reduce){.nav-link{transition:none}}
 </style>
 </head>
 <body>
-  <main class="shell">
-    <header>
-      <h1>觀護人學習平台</h1>
-      <span class="pill">主力</span>
-    </header>
-    
-<section class="countdown" aria-label="考試倒數日">
- <div class="countdown-top"><span>距離考試</span><button class="date-btn" id="date-edit" type="button" aria-expanded="false" aria-controls="date-form">設定日期</button></div>
- <strong class="countdown-value" id="days-left" aria-live="polite">尚未設定</strong>
- <p class="countdown-hint" id="exam-date-description">選擇考試日期後，即會每天自動倒數。</p>
- <form class="date-form" id="date-form" hidden>
-  <label for="date-input">考試日期</label>
-  <div class="date-form-row"><input type="date" required id="date-input"><button class="date-btn primary" type="submit">儲存日期</button><button class="date-btn" id="date-cancel" type="button">取消</button></div>
-  <p id="date-message" role="status"></p>
- </form>
-</section>
-    <nav aria-label="觀護人學習平台功能入口">
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link" href="https://v254-unified-preview.probation-study30-test.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="前往 v2.5.4 專業科目練習統一測試站（另開新分頁）">
-            <svg class="nav-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="m2 10 10-5 10 5-10 5L2 10Z"/><path d="M6 12v6c0 2 3 4 6 4s6-2 6-4v-6"/><path d="M22 10v7"/></svg>
-            <span><span class="nav-title">專業科目練習</span><span class="nav-subtitle">426題、每日30分鐘、申論練習、離線功能</span></span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://leokychen.github.io/probation-study-desk/common-subjects/" target="_blank" rel="noopener noreferrer" aria-label="前往共同科目英文與國文練習（另開新分頁）">
-            <svg class="nav-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5h12M10 3v2m5 0c-.3 6-4 11-9 13"/><path d="M6 9c2 4 5 7 9 9"/><path d="m14 21 4-10 4 10m-7-3h6"/></svg>
-            <span><span class="nav-title">共同科目練習</span><span class="nav-subtitle">英文、國文作文、Staresto 題庫</span></span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://leokychen.github.io/probation-study-desk/daily-simulation/" target="_blank" rel="noopener noreferrer" aria-label="前往每日模擬題現有網站（另開新分頁）">
-            <svg class="nav-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="4" y="3" width="15" height="18" rx="2"/><path d="M8 2v3m7-3v3M7 9h8M8 13h3M8 17h2"/><path d="m14 18 5-5 2 2-5 5-3 1 1-3Z"/></svg>
-            <span><span class="nav-title">每日模擬題</span><span class="nav-subtitle">依另一對話需求整合，獨立管理作答紀錄</span></span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://leokychen.github.io/probation-study-desk/juvenile-news/" target="_blank" rel="noopener noreferrer" aria-label="前往少年司法知識補給週報（另開新分頁）">
-            <svg class="nav-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 6a9 9 0 0 0-9-2v15a9 9 0 0 1 9 2m0-15a9 9 0 0 1 9-2v15a9 9 0 0 0-9 2M12 6v15"/><path d="M6 8h3m-3 3h3m6-3h3m-3 3h3"/></svg>
-            <span><span class="nav-title">少年司法知識補給</span><span class="nav-subtitle">少年司法週報、學術研究、CRC及國際規範</span></span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <section class="lab" aria-label="獨立實驗室">
-      <a class="lab-link" href="https://probation-legal-ai-test.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="前往 v2.7 臺灣法律 AI 獨立實驗室（另開新分頁）">
-        <div class="lab-title-row">
-          <h2 class="lab-title">臺灣法律 AI 實驗室</h2>
-          <span class="lab-badge">獨立測試</span>
+<main class="shell">
+  <header>
+    <h1>觀護人學習平台</h1>
+    <span class="pill">主力</span>
+  </header>
+
+  <section class="countdown" id="countdown-card" data-style="standard" data-accent="mint" aria-label="考試倒數日">
+    <div class="countdown-top">
+      <span class="countdown-label" id="countdown-event-label">考試倒數</span>
+      <span class="countdown-calendar" id="countdown-date-caption"></span>
+    </div>
+    <p class="countdown-value" id="countdown-value" role="status" aria-live="polite">尚未設定考試日期</p>
+    <details class="countdown-settings" id="countdown-settings">
+      <summary>設定倒數日 <span aria-hidden="true">✎</span></summary>
+      <form id="countdown-form" autocomplete="off">
+        <div class="form-grid">
+          <label class="field">
+            <span>名稱（可自行修改）</span>
+            <input id="event-name" name="name" type="text" maxlength="24" placeholder="例如：觀護人考試" value="觀護人考試">
+          </label>
+          <label class="field">
+            <span>考試日期（必填）</span>
+            <input id="exam-date" name="examDate" type="date" required min="2000-01-01" max="2100-12-31">
+          </label>
+          <label class="field">
+            <span>顯示樣式</span>
+            <select id="countdown-style" name="style">
+              <option value="standard">簡潔顯示</option>
+              <option value="large">大字倒數</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>數字配色</span>
+            <select id="countdown-accent" name="accent">
+              <option value="mint">淺綠</option>
+              <option value="emerald">翠綠</option>
+              <option value="cream">米白</option>
+            </select>
+          </label>
         </div>
-        <p class="lab-description">法規、函釋、裁判檢索及法律 AI 分析，不影響正式學習系統。</p>
-      </a>
-    </section>
-  </main>
-  <p class="footnote">統一首頁測試版｜倒數日期只存於目前瀏覽器，不讀取或移轉其他學習紀錄。</p>
+        <p class="form-note" id="settings-message">倒數以臺灣日期計算，設定只儲存在目前瀏覽器，不會影響作答紀錄。</p>
+        <div class="form-actions">
+          <button class="save-button" type="submit">儲存設定</button>
+          <button class="clear-button" id="reset-countdown" type="button">清除倒數</button>
+        </div>
+      </form>
+    </details>
+  </section>
+
+  <nav aria-label="觀護人學習平台功能入口">
+    <ul class="nav-list">
+      <li class="nav-item"><a class="nav-link" href="https://v254-unified-preview.probation-study30-test.pages.dev/" target="_blank" rel="noopener noreferrer"><svg class="nav-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="m2 10 10-5 10 5-10 5L2 10Z"/><path d="M6 12v6c0 2 3 4 6 4s6-2 6-4v-6"/><path d="M22 10v7"/></svg><span><span class="nav-title">專業科目練習</span><span class="nav-subtitle">426題、每日30分鐘、申論練習、離線功能</span></span></a></li>
+      <li class="nav-item"><a class="nav-link" href="https://leokychen.github.io/probation-study-desk/common-subjects/" target="_blank" rel="noopener noreferrer"><svg class="nav-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5h12M10 3v2m5 0c-.3 6-4 11-9 13"/><path d="M6 9c2 4 5 7 9 9"/><path d="m14 21 4-10 4 10m-7-3h6"/></svg><span><span class="nav-title">共同科目練習</span><span class="nav-subtitle">英文、國文作文、Staresto 題庫</span></span></a></li>
+      <li class="nav-item"><a class="nav-link" href="https://leokychen.github.io/probation-study-desk/daily-simulation/" target="_blank" rel="noopener noreferrer"><svg class="nav-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="4" y="3" width="15" height="18" rx="2"/><path d="M8 2v3m7-3v3M7 9h8M8 13h3M8 17h2"/><path d="m14 18 5-5 2 2-5 5-3 1 1-3Z"/></svg><span><span class="nav-title">每日模擬題</span><span class="nav-subtitle">依另一對話需求整合，獨立管理作答紀錄</span></span></a></li>
+      <li class="nav-item"><a class="nav-link" href="https://leokychen.github.io/probation-study-desk/juvenile-news/" target="_blank" rel="noopener noreferrer"><svg class="nav-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 6a9 9 0 0 0-9-2v15a9 9 0 0 1 9 2m0-15a9 9 0 0 1 9-2v15a9 9 0 0 0-9 2M12 6v15"/><path d="M6 8h3m-3 3h3m6-3h3m-3 3h3"/></svg><span><span class="nav-title">少年司法知識補給</span><span class="nav-subtitle">少年司法週報、學術研究、CRC及國際規範</span></span></a></li>
+    </ul>
+  </nav>
+
+  <section class="lab" aria-label="獨立實驗室">
+    <a class="lab-link" href="https://probation-legal-ai-test.pages.dev/" target="_blank" rel="noopener noreferrer">
+      <div class="lab-title-row">
+        <h2 class="lab-title">臺灣法律 AI 實驗室</h2>
+        <span class="lab-badge">獨立測試</span>
+      </div>
+      <p class="lab-description">法規、函釋、裁判檢索及法律 AI 分析，不影響正式學習系統。</p>
+    </a>
+  </section>
+</main>
+<p class="footnote">統一首頁測試版｜僅提供既有站點入口，不保存、讀取或移轉學習紀錄。</p>
 
 <script>
 (() => {
-const KEY='probation-study-home-exam-date-v1';
-const $=id=>document.getElementById(id);
-const value=$('days-left'),hint=$('exam-date-description'),edit=$('date-edit'),form=$('date-form'),input=$('date-input'),cancel=$('date-cancel'),message=$('date-message');
-const clock=new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit'});
-let exam=null,canSave=true;
-function valid(s){
- if(!/^\d{4}-\d{2}-\d{2}$/.test(s||''))return false;
- const [y,m,d]=s.split('-').map(Number),v=new Date(Date.UTC(y,m-1,d));
- return y>=1900&&y<=2100&&v.getUTCFullYear()===y&&v.getUTCMonth()===m-1&&v.getUTCDate()===d;
-}
-function taipeiToday(){
- const x=Object.fromEntries(clock.formatToParts(new Date()).filter(v=>['year','month','day'].includes(v.type)).map(v=>[v.type,Number(v.value)]));
- return Date.UTC(x.year,x.month-1,x.day);
-}
-function draw(){
- if(!exam){value.textContent='尚未設定';hint.textContent='選擇考試日期後，即會每天自動倒數。';edit.textContent='設定日期';return;}
- const [y,m,d]=exam.split('-').map(Number),n=Math.round((Date.UTC(y,m-1,d)-taipeiToday())/86400000);
- value.textContent=n>0?n+' 天':n===0?'就是今天！':'已過 '+(-n)+' 天';
- hint.textContent='考試日期：'+exam.replace(/-/g,'/');
- edit.textContent='修改日期';
-}
-function close(){form.hidden=true;edit.setAttribute('aria-expanded','false');message.textContent='';}
-edit.addEventListener('click',()=>{if(!form.hidden){close();return;}input.value=exam||'';form.hidden=false;edit.setAttribute('aria-expanded','true');input.focus();});
-cancel.addEventListener('click',close);
-form.addEventListener('submit',e=>{e.preventDefault();if(!valid(input.value)){message.textContent='請選擇有效的日期。';return;}exam=input.value;try{localStorage.setItem(KEY,exam);}catch{canSave=false;}draw();close();if(!canSave)hint.textContent+='（瀏覽器無法保存設定）';});
-try{const s=localStorage.getItem(KEY);if(valid(s))exam=s;}catch{canSave=false;}
-draw();
-setInterval(draw,60000);
-document.addEventListener('visibilitychange',()=>{if(!document.hidden)draw();});
+  'use strict';
+  // 本模組與練習站不同，僅使用下列唯一儲存鍵。
+  const STORE_KEY = 'psd-home-exam-countdown-v1';
+  const card = document.getElementById('countdown-card');
+  const value = document.getElementById('countdown-value');
+  const eventLabel = document.getElementById('countdown-event-label');
+  const dateCaption = document.getElementById('countdown-date-caption');
+  const settings = document.getElementById('countdown-settings');
+  const form = document.getElementById('countdown-form');
+  const nameInput = document.getElementById('event-name');
+  const dateInput = document.getElementById('exam-date');
+  const styleInput = document.getElementById('countdown-style');
+  const accentInput = document.getElementById('countdown-accent');
+  const message = document.getElementById('settings-message');
+  const validStyle = new Set(['standard','large']);
+  const validAccent = new Set(['mint','emerald','cream']);
+  let config = null;
+
+  function parseCivilDate(input) {
+    if (typeof input !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(input)) return null;
+    const [year,month,day] = input.split('-').map(Number);
+    if (year < 2000 || year > 2100) return null;
+    const d = new Date(Date.UTC(year,month - 1,day));
+    if (d.getUTCFullYear() !== year || d.getUTCMonth() !== month - 1 || d.getUTCDate() !== day) return null;
+    return {year,month,day,serial: Date.UTC(year,month - 1,day) / 86400000};
+  }
+
+  function todayTaipei() {
+    const parts = new Intl.DateTimeFormat('en-US', {
+      timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit'
+    }).formatToParts(new Date());
+    const data = Object.fromEntries(parts.map(part => [part.type,part.value]));
+    return Date.UTC(Number(data.year),Number(data.month) - 1,Number(data.day)) / 86400000;
+  }
+
+  function normalize(raw) {
+    if (!raw || !parseCivilDate(raw.date)) return null;
+    return {
+      date:raw.date,
+      name:typeof raw.name === 'string' ? raw.name.trim().slice(0,24) || '觀護人考試' : '觀護人考試',
+      style:validStyle.has(raw.style) ? raw.style : 'standard',
+      accent:validAccent.has(raw.accent) ? raw.accent : 'mint'
+    };
+  }
+
+  function render() {
+    card.dataset.style = config?.style || 'standard';
+    card.dataset.accent = config?.accent || 'mint';
+    if (!config) {
+      eventLabel.textContent = '考試倒數';
+      dateCaption.textContent = '';
+      value.textContent = '尚未設定考試日期';
+      return;
+    }
+    const exam = parseCivilDate(config.date);
+    const days = exam.serial - todayTaipei();
+    eventLabel.textContent = `距離${config.name}`;
+    dateCaption.textContent = `${exam.year}/${String(exam.month).padStart(2,'0')}/${String(exam.day).padStart(2,'0')}`;
+    if (days > 0) value.textContent = `${days} 天`;
+    else if (days === 0) value.textContent = '就是今天！';
+    else value.textContent = `已結束 ${Math.abs(days)} 天`;
+  }
+
+  function fill() {
+    nameInput.value = config?.name || '觀護人考試';
+    dateInput.value = config?.date || '';
+    styleInput.value = config?.style || 'standard';
+    accentInput.value = config?.accent || 'mint';
+  }
+
+  try { config = normalize(JSON.parse(localStorage.getItem(STORE_KEY) || 'null')); }
+  catch { config = null; }
+  fill();
+  render();
+
+  form.addEventListener('submit',event => {
+    event.preventDefault();
+    const next = normalize({date:dateInput.value,name:nameInput.value,
+      style:styleInput.value,accent:accentInput.value});
+    if (!next) {message.textContent = '請填入有效日期（2000年至2100年）。';return;}
+    try {
+      localStorage.setItem(STORE_KEY,JSON.stringify(next));
+      config = next;
+      render();
+      settings.open = false;
+      message.textContent = '倒數以臺灣日期計算，設定只儲存在目前瀏覽器，不會影響作答紀錄。';
+    } catch {
+      config = next;
+      render();
+      message.textContent = '已更新本次畫面，但瀏覽器無法儲存設定；重新開啟後可能需要重設。';
+    }
+  });
+
+  document.getElementById('reset-countdown').addEventListener('click',() => {
+    try {localStorage.removeItem(STORE_KEY);}
+    catch {message.textContent = '瀏覽器無法清除已儲存設定。';return;}
+    config = null;
+    fill();
+    render();
+    settings.open = false;
+  });
+  // 開啟頁面後即使跨過午夜，也會自動重新計算；返回分頁時即時更新。
+  setInterval(render,60000);
+  window.addEventListener('focus',render);
+  window.addEventListener('pageshow',render);
+  document.addEventListener('visibilitychange',() => {if (!document.hidden) render();});
 })();
 </script>
 </body>
