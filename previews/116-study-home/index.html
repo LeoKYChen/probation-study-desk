@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#050505">
   <meta name="description" content="116年觀護人學習平台統一首頁預覽：專業科目、共同科目、每日模擬題、少年司法知識補給及臺灣法律AI實驗室。">
-  <title>116年觀護人學習平台｜統一首頁測試版</title>
+  <title>觀護人學習平台｜統一首頁測試版</title>
   <style>
     :root { color-scheme: dark; font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; }
     *,*::before,*::after { box-sizing:border-box; }
@@ -47,20 +47,55 @@
       .lab-description { margin-top:17px; }
     }
     @media (prefers-reduced-motion:reduce) { .nav-link { transition:none; } }
-  </style>
+  
+html,body{background:#173f3b;color:#f4fbf8}
+.shell{background:#153632;border-color:#2c5a55}
+.nav-item{border-color:#2c5a55}
+.nav-link:hover{background:#204a46}
+.nav-subtitle,.lab-description{color:#bfd5cf}
+.nav-icon{color:#d4e9e2}
+.lab-badge{background:#294f4b;color:#f0faf6}
+.pill{background:#18462a;color:#7cf39c}
+.footnote{color:#d1e4de}
+.countdown{margin:0 0 6px;padding:14px 18px;border:1px solid #2c5a55;border-radius:18px;background:rgba(255,255,255,.04)}
+.countdown-top{display:flex;align-items:center;justify-content:space-between;gap:12px;color:#bfd5cf;font-size:14px}
+.countdown-value{display:block;font-size:clamp(21px,3vw,30px);font-weight:800;color:#8de2a7;line-height:1.4}
+.countdown-hint{margin-top:6px;min-height:1.3em;color:#bfd5cf;font-size:13px}
+.date-form{margin-top:13px;padding:14px;background:#12302d;border:1px solid #2c5a55;border-radius:12px}
+.date-form[hidden]{display:none}
+.date-form label{display:block;margin-bottom:7px;font-size:14px;font-weight:700}
+.date-form-row{display:flex;flex-wrap:wrap;align-items:center;gap:9px}
+.date-form input{min-height:42px;max-width:100%;padding:8px 10px;border:1px solid #a3c9ba;border-radius:9px;font:inherit;font-size:16px;background:#f9fffb;color:#1a342a;color-scheme:light}
+.date-btn{min-height:39px;padding:7px 13px;border:1px solid #2c5a55;border-radius:10px;background:#204a46;color:#f4fbf8;font:inherit;font-size:14px;font-weight:700;cursor:pointer}
+.date-btn.primary{background:#8de2a7;border-color:#8de2a7;color:#103320}
+.date-btn:focus-visible,.date-form input:focus-visible{outline:3px solid #8de2a7;outline-offset:2px}
+#date-message{margin-top:7px;color:#bfd5cf;font-size:12px}
+@media(max-width:580px){.countdown{padding:12px 14px;border-radius:14px}}
+</style>
 </head>
 <body>
   <main class="shell">
     <header>
-      <h1>116年觀護人學習平台</h1>
+      <h1>觀護人學習平台</h1>
       <span class="pill">主力</span>
     </header>
+    
+<section class="countdown" aria-label="考試倒數日">
+ <div class="countdown-top"><span>距離考試</span><button class="date-btn" id="date-edit" type="button" aria-expanded="false" aria-controls="date-form">設定日期</button></div>
+ <strong class="countdown-value" id="days-left" aria-live="polite">尚未設定</strong>
+ <p class="countdown-hint" id="exam-date-description">選擇考試日期後，即會每天自動倒數。</p>
+ <form class="date-form" id="date-form" hidden>
+  <label for="date-input">考試日期</label>
+  <div class="date-form-row"><input type="date" required id="date-input"><button class="date-btn primary" type="submit">儲存日期</button><button class="date-btn" id="date-cancel" type="button">取消</button></div>
+  <p id="date-message" role="status"></p>
+ </form>
+</section>
     <nav aria-label="觀護人學習平台功能入口">
       <ul class="nav-list">
         <li class="nav-item">
           <a class="nav-link" href="https://v254-unified-preview.probation-study30-test.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="前往 v2.5.4 專業科目練習統一測試站（另開新分頁）">
             <svg class="nav-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="m2 10 10-5 10 5-10 5L2 10Z"/><path d="M6 12v6c0 2 3 4 6 4s6-2 6-4v-6"/><path d="M22 10v7"/></svg>
-            <span><span class="nav-title">v2.5.4 專業科目練習</span><span class="nav-subtitle">426題、每日30分鐘、申論練習、離線功能</span></span>
+            <span><span class="nav-title">專業科目練習</span><span class="nav-subtitle">426題、每日30分鐘、申論練習、離線功能</span></span>
           </a>
         </li>
         <li class="nav-item">
@@ -86,13 +121,47 @@
     <section class="lab" aria-label="獨立實驗室">
       <a class="lab-link" href="https://probation-legal-ai-test.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="前往 v2.7 臺灣法律 AI 獨立實驗室（另開新分頁）">
         <div class="lab-title-row">
-          <h2 class="lab-title">v2.7 臺灣法律 AI 實驗室</h2>
+          <h2 class="lab-title">臺灣法律 AI 實驗室</h2>
           <span class="lab-badge">獨立測試</span>
         </div>
         <p class="lab-description">法規、函釋、裁判檢索及法律 AI 分析，不影響正式學習系統。</p>
       </a>
     </section>
   </main>
-  <p class="footnote">統一首頁測試版｜僅提供既有站點入口，不保存、讀取或移轉學習紀錄。</p>
+  <p class="footnote">統一首頁測試版｜倒數日期只存於目前瀏覽器，不讀取或移轉其他學習紀錄。</p>
+
+<script>
+(() => {
+const KEY='probation-study-home-exam-date-v1';
+const $=id=>document.getElementById(id);
+const value=$('days-left'),hint=$('exam-date-description'),edit=$('date-edit'),form=$('date-form'),input=$('date-input'),cancel=$('date-cancel'),message=$('date-message');
+const clock=new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit'});
+let exam=null,canSave=true;
+function valid(s){
+ if(!/^\d{4}-\d{2}-\d{2}$/.test(s||''))return false;
+ const [y,m,d]=s.split('-').map(Number),v=new Date(Date.UTC(y,m-1,d));
+ return y>=1900&&y<=2100&&v.getUTCFullYear()===y&&v.getUTCMonth()===m-1&&v.getUTCDate()===d;
+}
+function taipeiToday(){
+ const x=Object.fromEntries(clock.formatToParts(new Date()).filter(v=>['year','month','day'].includes(v.type)).map(v=>[v.type,Number(v.value)]));
+ return Date.UTC(x.year,x.month-1,x.day);
+}
+function draw(){
+ if(!exam){value.textContent='尚未設定';hint.textContent='選擇考試日期後，即會每天自動倒數。';edit.textContent='設定日期';return;}
+ const [y,m,d]=exam.split('-').map(Number),n=Math.round((Date.UTC(y,m-1,d)-taipeiToday())/86400000);
+ value.textContent=n>0?n+' 天':n===0?'就是今天！':'已過 '+(-n)+' 天';
+ hint.textContent='考試日期：'+exam.replace(/-/g,'/');
+ edit.textContent='修改日期';
+}
+function close(){form.hidden=true;edit.setAttribute('aria-expanded','false');message.textContent='';}
+edit.addEventListener('click',()=>{if(!form.hidden){close();return;}input.value=exam||'';form.hidden=false;edit.setAttribute('aria-expanded','true');input.focus();});
+cancel.addEventListener('click',close);
+form.addEventListener('submit',e=>{e.preventDefault();if(!valid(input.value)){message.textContent='請選擇有效的日期。';return;}exam=input.value;try{localStorage.setItem(KEY,exam);}catch{canSave=false;}draw();close();if(!canSave)hint.textContent+='（瀏覽器無法保存設定）';});
+try{const s=localStorage.getItem(KEY);if(valid(s))exam=s;}catch{canSave=false;}
+draw();
+setInterval(draw,60000);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)draw();});
+})();
+</script>
 </body>
 </html>
