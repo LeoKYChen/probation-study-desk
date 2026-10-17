@@ -89,6 +89,8 @@ jobs:
           # Apply the separately approved green UI/wording and safe week-backfill patches.
           node study30-addons/patch-content-cleanup.cjs deploy-dist
           node study30-addons/patch-week-practice.cjs deploy-dist
+          # Hide backup study tools only in public navigation; preserve their URLs and data.
+          node study30-addons/hide-optional-navigation.cjs deploy-dist
           # Cache the FINAL combined bundle, including Stage9 JS and page refinements.
           node study30-addons/install-offline.cjs deploy-dist
           for script in deploy-dist/*.js; do node --check "$script"; done
