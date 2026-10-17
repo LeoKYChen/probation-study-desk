@@ -92,7 +92,7 @@ jobs:
                   if(width===390){
                     await page.locator('#exam-date').fill('2027-08-14');
                     await page.locator('.save-button').click();
-                    assert.match(await page.locator('#countdown-value').innerText(),/^\\d+ 天$/);
+                    assert.match(await page.locator('#countdown-value').innerText(),/^[0-9]+ 天$/);
                     await page.reload({waitUntil:'domcontentloaded'});
                     assert.equal(await page.locator('#countdown-date-caption').innerText(),'2027/08/14');
                   }
