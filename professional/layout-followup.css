@@ -29,3 +29,23 @@
 .professional-page .sim-controls{grid-template-columns:minmax(0,300px)}
 @media(min-width:1100px){.professional-page #reviewScheduleHint{white-space:nowrap}}
 @media(max-width:600px){.common-subjects-page #panelRecords>.stats{grid-template-columns:1fr}.english-assistant-page #tasks .card>.buttons{grid-template-columns:minmax(0,1fr)}.english-assistant-page #tasks .card>.buttons>.btn{font-size:.9rem}.english-assistant-page #tasks .card>.buttons>span{grid-column:auto}}
+
+/* Isolated mobile RWD review: equal-width week/month progress controls. */
+@media (max-width:680px) {
+  .professional-page .progress-switch {
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    width:100%;
+    gap:10px;
+  }
+  .professional-page .progress-switch > button {
+    width:100%;
+    min-width:0;
+    min-height:44px;
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+  }
+}
