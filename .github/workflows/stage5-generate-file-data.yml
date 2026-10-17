@@ -30,6 +30,7 @@ jobs:
           node --check scripts/generate-file-data.cjs
           node scripts/generate-file-data.cjs --write
           node scripts/generate-file-data.cjs --check
+          sha256sum professional/index.html common-subjects/index.html common-subjects/catalog/index.html common-subjects/daily/index.html common-subjects/english-assistant/index.html
           git add file-data/*.generated.js
           if ! git diff --cached --quiet; then
             git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'build(stage5): sync file URL data directly from canonical JSON'
