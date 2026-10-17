@@ -1,0 +1,139 @@
+name: v2.7 MCP stage 3s law/interpretation source-to-UI contract
+
+on:
+  push:
+    branches:
+      - experiment/v27-mcp-stage3s
+    paths:
+      - 'experiments/v27-mcp-poc/stage3s/**'
+      - 'experiments/v27-mcp-poc/STAGE3S.md'
+      - '.github/workflows/test-v27-mcp-stage3s.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-ui-contract:
+    name: Offline source proofs, legal-date separation and abstract-only mapping
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    env:
+      JUDICIAL_API_LIVE_ENABLED: 'false'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Reject live IO and insecure fixture promotion
+        run: |
+          node --check experiments/v27-mcp-poc/stage3s/source-contract.cjs
+          node --check experiments/v27-mcp-poc/stage3s/source-contract.test.cjs
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('experiments/v27-mcp-poc/stage3s/source-contract.cjs')
+          code=p.read_text()
+          for forbidden in (
+              'require("node:http")','require("node:https")',
+              'require("node:fs")','require("fs")','require("node:child_process")',
+              'fetch(', 'axios', 'XMLHttpRequest', 'process.env',
+              'eval(', 'new Function('
+          ):
+              assert forbidden not in code,forbidden
+          for necessary in (
+              'sourceVersion','commencementOn','promulgatedOn',
+              'transitionalRule','official_abstract_only',
+              'originalDocumentComplete','legalEffectLabel',
+              'canServeProduction: false','stage3Accepted: false',
+              'realOfficialRetrievalValidated: false',
+              'https://fixtures.stage3s.invalid'
+          ):
+              assert necessary in code,necessary
+          assert 'status:404' in Path('services/v2.7-judgment/private-worker.mjs').read_text()
+          assert Path('development/v2.7').is_dir()
+          print('Stage3s offline source-to-UI schema: no court network or production writes')
+          PY
+      - name: Stage3s source-to-UI provenance, digest, dates, tiers and forged flag tests
+        run: |
+          node --test --test-reporter=tap experiments/v27-mcp-poc/stage3s/source-contract.test.cjs | tee "$RUNNER_TEMP/stage3s-contract-tests.log"
+      - name: Prove historical Stage 1/2 evidence unchanged and no release rights gained
+        run: |
+          node - <<'JS'
+          const fs=require('node:fs'),assert=require('node:assert/strict');
+          const p='./experiments/v27-mcp-poc/';
+          const law=fs.readFileSync(p+'STAGE1_ACCEPTANCE.md','utf8');
+          const interp=fs.readFileSync(p+'STAGE2_ACCEPTANCE.md','utf8');
+          const old=fs.readFileSync(p+'STAGE3R_RESULT.md','utf8');
+          assert.match(law,/20\/20/);
+          assert.match(interp,/17\/21/);
+          assert.match(interp,/4\/21/);
+          assert.match(old,/126／126/);
+          const c=require(p+'stage3s/source-contract.cjs');
+          const ui=require(p+'stage3r-demo/model.js');
+          const gate=require(p+'stage3q-readiness-ledger.cjs');
+          assert.equal(c.schemaReview().realOfficialRetrievalValidated,false);
+          assert.equal(c.schemaReview().releasesAuthorized,false);
+          const data=Object.values(c.FIXTURES).map(c.toStage3rModelInput);
+          assert.equal(ui.listView(data,'all').count,4);
+          assert.equal(ui.listView(data,'law').count,2);
+          assert.equal(ui.listView(data,'interpretation').count,2);
+          assert.equal(gate.planReview({features:['law_lookup','interpretation_lookup'],
+            approvals:{stage3sPassed:true,deploy:true}}).canDeploy,false);
+          console.log('Stage3s maps four synthetic records to Stage3r with zero official release rights');
+          JS
+      - name: Ensure only new isolated experiments and workflow were added
+        run: |
+          git fetch --no-tags --depth=2 origin experiment/v27-mcp-stage3r
+          python3 - <<'PY'
+          import subprocess
+          paths=subprocess.check_output(
+              ['git','diff','--name-only','FETCH_HEAD','HEAD'],text=True).splitlines()
+          acceptable={
+              'experiments/v27-mcp-poc/stage3s/source-contract.cjs',
+              'experiments/v27-mcp-poc/stage3s/source-contract.test.cjs',
+              'experiments/v27-mcp-poc/STAGE3S.md',
+              'experiments/v27-mcp-poc/STAGE3S_RESULT.md',
+              '.github/workflows/test-v27-mcp-stage3s.yml'
+          }
+          assert set(paths).issubset(acceptable),paths
+          print('Stage3s changes only:', paths)
+          PY
+      - name: Write safe aggregate test record without legal document bodies
+        run: |
+          node - <<'JS'
+          const fs=require('node:fs');
+          const text=fs.readFileSync(process.env.RUNNER_TEMP+'/stage3s-contract-tests.log','utf8');
+          const m=/# tests (\d+)/.exec(text), p=/# pass (\d+)/.exec(text),
+                f=/# fail (\d+)/.exec(text);
+          if(!m||!p||!f||Number(m[1])!==Number(p[1])||Number(f[1])!==0)
+            throw Error('Stage3s tests not all passed');
+          const c=require('./experiments/v27-mcp-poc/stage3s/source-contract.cjs');
+          const report={
+            stage:'Stage3s law and interpretation source-to-UI offline synthetic contract',
+            newly_executed_tests:Number(m[1]), passed:Number(p[1]), failed:Number(f[1]),
+            synthetic_fixture_records:c.schemaReview().syntheticFixtureCount,
+            real_official_source_responses_downloaded:0,
+            previous_20_law_cases_retested:0,
+            previous_21_interpretation_cases_retested:0,
+            stage3r_ui_files_edited:false,
+            current_law_authenticated:false,
+            current_interpretation_effect_authenticated:false,
+            actual_production_release_allowed:false,
+            pdf_export_developed:false,
+            website_and_cloudflare_unchanged:true,
+            stage3_accepted:false
+          };
+          fs.writeFileSync('stage3s-source-to-ui-summary.json',
+              JSON.stringify(report,null,2)+'\n');
+          console.log(JSON.stringify(report));
+          JS
+      - name: Upload only research metadata summary, no source or court documents
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v27-stage3s-source-to-ui-contract-checks
+          path: stage3s-source-to-ui-summary.json
+          if-no-files-found: warn
+          retention-days: 14
