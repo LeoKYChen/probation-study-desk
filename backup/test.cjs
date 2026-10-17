@@ -20,7 +20,7 @@ function legalReadOnly(){
  const oldValue=s.map.get(key);
  const backup=core.collect(s,'https://local.test');
  assert.equal(backup.sourceOrigin,'https://local.test');
- assert.equal(core.validate(JSON.parse(JSON.stringify(backup))),backup);
+ assert.deepEqual(core.validate(JSON.parse(JSON.stringify(backup))),backup);
  assert.equal(s.writes.length,0);assert.equal(s.map.get(key),oldValue);
  assert.throws(()=>core.validate(env({[key]:'not-json'})),/JSON/);
  assert.throws(()=>core.validate({...backup,data:{unapproved:'{}'}}),/未支援/);
