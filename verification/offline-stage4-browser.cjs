@@ -5,7 +5,7 @@ const root=path.resolve(__dirname,'..'),prefix=process.env.TEST_OFFLINE_PREFIX||
 const mime={'.html':'text/html;charset=utf-8','.js':'text/javascript;charset=utf-8','.json':'application/json;charset=utf-8','.css':'text/css;charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.webmanifest':'application/manifest+json','.md':'text/markdown;charset=utf-8'};
 let dropNetwork=false;
 const server=http.createServer((req,res)=>{
- if(dropNetwork){req.socket.destroy();return;}
+ if(dropNetwork){res.writeHead(503,{'content-type':'text/plain','cache-control':'no-store'}).end('origin unavailable');return;}
  let sub=decodeURIComponent(new URL(req.url,'http://localhost').pathname).replace(/^\//,'');
  if(prefix&&sub.startsWith(prefix.replace(/^\//,'')+'/'))sub=sub.slice(prefix.replace(/^\//,'').length+1);
  if(!sub||sub.endsWith('/'))sub+='index.html';
@@ -65,7 +65,7 @@ async function scenario(engine,name){
  const after=await past.evaluate(()=>JSON.parse(localStorage.getItem('probation-study-desk-v24')));
  assert(Object.values(after).some(v=>String(v.issue||'').includes('第四階段離線申論原稿')));
  assert(after && Object.keys(after).length>0,'offline work must be retained after reconnect');
- console.log('PASS '+name+prefix+': '+snapshot.count+' cached assets; '+(engine===webkit?'server-network interruption':'actual browser airplane mode')+'; past essay, common essay, daily practice, professional, news, JSON backup and print pages; answer persistence');
+ console.log('PASS '+name+prefix+': '+snapshot.count+' cached assets; '+(engine===webkit?'simulated origin outage (all network responses HTTP 503)':'actual browser airplane mode')+'; past essay, common essay, daily practice, professional, news, JSON backup and print pages; answer persistence');
  await ctx.close();
  }finally{await browser.close();}
 }
