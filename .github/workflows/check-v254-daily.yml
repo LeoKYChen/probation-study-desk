@@ -11,6 +11,7 @@ on:
       - 'v2.5/backup-core.js'
       - 'offline-manifest.json'
       - 'verification/check-daily-v254.cjs'
+      - 'verification/e2e-daily-v254.cjs'
       - '.github/workflows/check-v254-daily.yml'
   push:
     branches:
@@ -43,3 +44,16 @@ jobs:
       - run: node --check v2.5/daily-practice.js
       - run: node --check verification/check-daily-v254.cjs
       - run: node verification/check-daily-v254.cjs
+
+  browser:
+    name: Chromium functional acceptance
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - run: npm install --no-save --no-package-lock playwright@1.56.1
+      - run: npx playwright install --with-deps chromium
+      - run: node verification/e2e-daily-v254.cjs
