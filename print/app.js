@@ -95,6 +95,8 @@
   }catch(e){message('讀取失敗，沒有變更任何學習紀錄：'+e.message,true);}
   finally{$('reload').disabled=false;}
  }
+ const fromLink=new URLSearchParams(location.search).get('module');
+ if(['study30','past','daily','common'].includes(fromLink))$('module').value=fromLink;
  $('module').addEventListener('change',showList);
  $('search').addEventListener('input',showList);
  for(const id of ['includeFeedback','includeReview','includeRevision'])$(id).addEventListener('change',()=>{
