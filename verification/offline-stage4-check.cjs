@@ -6,7 +6,7 @@ assert.equal(manifest.schemaVersion,1);
 assert(Array.isArray(manifest.assets)&&manifest.assets.length>=170,'stage4 must include all modern study resources');
 const urls=manifest.assets.map(x=>x.url),names=new Set(urls);
 assert.equal(names.size,urls.length,'no duplicate cache URLs');
-assert(urls.every(p=>!(/\\.(cjs|ts|tsx|py)$/i.test(p))),'unpublished source or browser tests must not be requested by offline downloader');
+assert(urls.every(p=>!(/\.(cjs|ts|tsx|py)$/i.test(p))),'unpublished source or browser tests must not be requested by offline downloader');
 const required=[
  'index.html','offline/index.html','offline.js','offline.css',
  'professional/index.html','professional/app.js','professional/question-sources.js','professional/essay.js','professional/source-main-questions.js','professional/source-related-questions.js',
