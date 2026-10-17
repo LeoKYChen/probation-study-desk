@@ -8,6 +8,8 @@ on:
     paths:
       - index.html
       - professional/**
+      - common-subjects/**
+      - verification/layout-review-browser.cjs
       - scripts/**
       - verification/cloudflare-migration.cjs
       - verification/check-cloudflare-release.py
@@ -47,6 +49,7 @@ jobs:
           for engine in chromium webkit; do
             UNIFIED_BROWSER_ENGINE="$engine" node verification/cloudflare-migration.cjs cloudflare-main-mirror-dist
             UNIFIED_BROWSER_ENGINE="$engine" node verification/unified-browser.cjs cloudflare-main-mirror-dist
+            UNIFIED_BROWSER_ENGINE="$engine" node verification/layout-review-browser.cjs cloudflare-main-mirror-dist
           done
       - name: Capture exact current production for recovery
         id: capture
@@ -80,6 +83,7 @@ jobs:
         run: |
           for engine in chromium webkit; do
             UNIFIED_BROWSER_ENGINE="$engine" node verification/unified-browser.cjs cloudflare-main-mirror-dist
+            UNIFIED_BROWSER_ENGINE="$engine" node verification/layout-review-browser.cjs cloudflare-main-mirror-dist
           done
       - name: Restore only this run's failed production release
         if: failure() && github.event_name == 'push' && github.ref == 'refs/heads/main' && (steps.publish.outcome == 'success' || steps.publish.outcome == 'failure')

@@ -1,0 +1,155 @@
+{
+  "commit": "056ee47da0ef2c49eb3aa685fc3448689189a74d",
+  "files": [
+    {
+      "name": "ai-review-links.js",
+      "path": "professional/ai-review-links.js",
+      "sha256": "3887497a7e57e691ecba8a03414c33bc3833ff4a47538e339a587f1244fc6658"
+    },
+    {
+      "name": "source-main-questions.js",
+      "path": "professional/source-main-questions.js",
+      "sha256": "c34932502e54eabeae277905268bd54826e311f52ede76120bf5478f89c348b4"
+    },
+    {
+      "name": "index.html",
+      "path": "verification/fixtures/layout-before-review/index.html",
+      "sha256": "115a1a32e125e7215c4336f4d079d434588308f7fff7fb69e53f446352dddf4b"
+    },
+    {
+      "name": "offline.css",
+      "path": "professional/offline.css",
+      "sha256": "b2f32be0a2899782070054476d61318bbb26e4f88bd0ca412921e3b8939e285c"
+    },
+    {
+      "name": "content-cleanup.css",
+      "path": "professional/content-cleanup.css",
+      "sha256": "55cc56d149ed2e90ff89aa35061cfb8e304c18c3ff69871181da2ce57905b6b0"
+    },
+    {
+      "name": "offline-control.js",
+      "path": "professional/offline-control.js",
+      "sha256": "ec146e88d38a6353847bf876838acdb9f09c49e836ac378ba76313a6620746da"
+    },
+    {
+      "name": "icon-192.png",
+      "path": "professional/icon-192.png",
+      "sha256": "cf4bf45a7461e99c6061a32e15211e33a95af66fce8472b3605f4b42bdbc942f"
+    },
+    {
+      "name": "review-simulator.js",
+      "path": "professional/review-simulator.js",
+      "sha256": "bdfcfd641a5ad0cb7a549fc21caeaf63a518c79483815d7ce000832958e18aac"
+    },
+    {
+      "name": "essay-review.js",
+      "path": "professional/essay-review.js",
+      "sha256": "7fe28bd7b2fef4ca1b2a8a8d85d6e911dbdf5440550057871793a960af5066eb"
+    },
+    {
+      "name": "daily-essay-workbench.js",
+      "path": "professional/daily-essay-workbench.js",
+      "sha256": "f1e9eda8191f732eb8c39acf1402e49ca5b12d89830b7d767a1c01c7d20b6996"
+    },
+    {
+      "name": "icon-180.png",
+      "path": "professional/icon-180.png",
+      "sha256": "40aeeb78c8af497716ab05d83f3288b5fc462c6f49b8ab62da376ce557a96a80"
+    },
+    {
+      "name": "essay-selfcheck.js",
+      "path": "professional/essay-selfcheck.js",
+      "sha256": "6bb68901eaeff014658885e9d22fc5a02f2ebb2dbb7e8e9290b722526bf7d26d"
+    },
+    {
+      "name": "essay.js",
+      "path": "verification/fixtures/cloudflare-before-sync/essay.js",
+      "sha256": "edde057198d4fa3828ad9f7f1e12a0e609cae5861eca1979afd911eac0aa1716"
+    },
+    {
+      "name": "source-related-questions.js",
+      "path": "professional/source-related-questions.js",
+      "sha256": "acfec60e521b4dde78596e6468a7936f7061cd6d54f463ee4754fc554d47482b"
+    },
+    {
+      "name": "essay-analytics.js",
+      "path": "verification/fixtures/cloudflare-before-sync/essay-analytics.js",
+      "sha256": "e563cbf70bf656729271c733defa965aca92bcc235dc2acbc0cdfc538296b03b"
+    },
+    {
+      "name": "question-sources.js",
+      "path": "verification/fixtures/layout-before-review/question-sources.js",
+      "sha256": "3e0f19833aa992873180cab573cd3b056f9d59c811ae56fc01d4e637be00320b"
+    },
+    {
+      "name": "v254-diagnostics.js",
+      "path": "verification/fixtures/layout-before-review/v254-diagnostics.js",
+      "sha256": "33933abd61ba698f52c1798f68255250273fce21e179604d14264d8eef55ea16"
+    },
+    {
+      "name": "backup-import.js",
+      "path": "professional/backup-import.js",
+      "sha256": "d05071d36dd4c09f5bc4367ef98c4f1d4ded9a80fdf105f5c01c446552c820cc"
+    },
+    {
+      "name": "style.css",
+      "path": "professional/style.css",
+      "sha256": "68fef3541d9fa122f00d8690220712f2bc13507b64d595143e3f5b752ba17e0f"
+    },
+    {
+      "name": "weakness-priority.js",
+      "path": "professional/weakness-priority.js",
+      "sha256": "514d8af95890c7189ebe4744c60884a8e58a56db9631e5f4946f4f1cd415055f"
+    },
+    {
+      "name": "study30-shuati-links.js",
+      "path": "professional/study30-shuati-links.js",
+      "sha256": "61a42d76e3f73428cd149e4786e9a729d382bc929732302d47d9f2f3dfd06839"
+    },
+    {
+      "name": "review-core.js",
+      "path": "professional/review-core.js",
+      "sha256": "40663170c4d5749e710aad865fa414a22a41b1b884aeda0ea7d19831e710e48b"
+    },
+    {
+      "name": "data-health.js",
+      "path": "verification/fixtures/cloudflare-before-sync/data-health.js",
+      "sha256": "d6b66b3712dbd6baefaf858819cf69b80a27f477a86fd95d159863664ee89a51"
+    },
+    {
+      "name": "manifest.webmanifest",
+      "path": "professional/manifest.webmanifest",
+      "sha256": "0052031da6b0fddff6d9ce0b250da378d3fb01decbadd4bd2cfaa7c9f2139636"
+    },
+    {
+      "name": "study30-yamol-links.js",
+      "path": "professional/study30-yamol-links.js",
+      "sha256": "61c009eb0bcae45fca295a904354a2e6f9d8ee8966cfad9cfa9bece54364a5a9"
+    },
+    {
+      "name": "content-ui.js",
+      "path": "verification/fixtures/layout-before-review/content-ui.js",
+      "sha256": "93fb93d59e3b2952dd4c07c89eb636999debc8af197b4a55218e2e84d9652ba7"
+    },
+    {
+      "name": "essay-rubric-core.js",
+      "path": "professional/essay-rubric-core.js",
+      "sha256": "a4a1f53893f998f5575eedc8756621778312ab798bda0e7bb02af53314ca19d6"
+    },
+    {
+      "name": "app.js",
+      "path": "professional/app.js",
+      "sha256": "175c010dfc151fed458ec6479dbbd7f2020ee550fcbc5c4697fdfbd4ecbc875a"
+    },
+    {
+      "name": "sw.js",
+      "path": "verification/fixtures/layout-before-review/sw.js",
+      "sha256": "40e49a0b907e3db282d42743613f7756e205dba51705dfba7e8efac533400e99"
+    },
+    {
+      "name": "icon-512.png",
+      "path": "professional/icon-512.png",
+      "sha256": "cd5bd6018f7140af6b42b33845c6ea2658617b103a5c0340c106d8447f7407ed"
+    }
+  ]
+}

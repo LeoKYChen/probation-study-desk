@@ -29,7 +29,7 @@
   el.textContent='已保存 '+report.days+' 天、申論草稿 '+report.drafts+' 筆、申論自評 '+report.assessments+
     ' 筆；估計資料量約 '+units+' KiB（以 UTF-16 保守估算，不代表實際儲存額度）。'+
     (report.needsBackup?' 紀錄已累積較多，請儘快匯出 JSON 備份。':
-     ' 建議定期備份；目前仍需最後階段才能匯入還原。');
+     ' 可使用本區的 JSON 匯入／還原。');
  }
  function init(){render();root.addEventListener('study30:render',render);root.addEventListener('study30:essay-assessed',render);}
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();

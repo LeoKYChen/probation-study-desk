@@ -1,0 +1,132 @@
+{
+  "base_commit": "056ee47da0ef2c49eb3aa685fc3448689189a74d",
+  "scope": "User-confirmed presentation review and reported timer/subject-rating fixes; independent preview only, no production merge authorization",
+  "files": [
+    {
+      "path": "common-subjects/catalog/index.html",
+      "base_sha256": "c3993bd106af356f064551ac490795cbefb3ee3b336f2014d38caa34fd083187",
+      "sha256": "ec43d988d51e4ae7c18caa59bd359ccb8fc539c7750b66f931547afb791cc9e7",
+      "reason": "Shorten development-only introduction; keep source and attribution."
+    },
+    {
+      "path": "common-subjects/daily/index.html",
+      "base_sha256": "63f88c07844a9f3d99c738864cb385ea6d744bbb094bb70e7b6bbc9c1d030a1b",
+      "sha256": "f161df6df54b5ba2d694be75a0024d25703798a93a69cca61d0bd037f53f360b",
+      "reason": "Shorten development-version storage explanation; retain replace/backup warning."
+    },
+    {
+      "path": "common-subjects/english-assistant/index.html",
+      "base_sha256": "789c59675f5704659e3ba79260661980e6cc0260ddc49c3610f8da34e54d1c7c",
+      "sha256": "22e1f3d752942087388e024740e3bed58b2a3d72ff6dd911f9fdcf1fd2d2a892",
+      "reason": "Remove outdated personal-history assumption and development-version details. Slides 20–22: merge history/usage panels, remove marked text and equalize action sizing."
+    },
+    {
+      "path": "common-subjects/index.html",
+      "base_sha256": "d9b28afda56727a618a6043d3000b45ae4c0004353dc1d1dda7d02e879587c8f",
+      "sha256": "cc5211dceb4cda87b03f891f5ccfa83a133b67101bcf53ea5e32b0fece0cb5b4",
+      "reason": "Slides 4–7: remove callout/icons, widen topic and editor, repair timer layout; shorten development prose. Slide 19: remove records icon and make both visible stats fill the row."
+    },
+    {
+      "path": "professional/data-health.js",
+      "base_sha256": "d6b66b3712dbd6baefaf858819cf69b80a27f477a86fd95d159863664ee89a51",
+      "sha256": "023d54f85afe3d726ba19ede73835b4a507f00b32206c54b40e558c90a9e7c50",
+      "reason": "Remove obsolete claim that restore is not yet available; retain error and capacity warnings."
+    },
+    {
+      "path": "professional/essay.js",
+      "base_sha256": "edde057198d4fa3828ad9f7f1e12a0e609cae5861eca1979afd911eac0aa1716",
+      "sha256": "ccc7e2a9e91b49be44f13af5a98a2f2a53ce874ad5d56a0ffa109f676d6c7304",
+      "reason": "Remove outdated predicted-bank development note from exported source label."
+    },
+    {
+      "path": "professional/index.html",
+      "base_sha256": "115a1a32e125e7215c4336f4d079d434588308f7fff7fb69e53f446352dddf4b",
+      "sha256": "1ea98801370e141f1323aef2bbc3117138352a9f6367d97f7bf9a11565cc841a",
+      "reason": "Slides 2,8–17: remove marked prose, add chart/history hosts, group health under existing import panel. Follow-up slides 24–29 remove marked text, retain actual-record forecast, shorten 10-minute label. Keep four-grid drafts and full answer expanded by default; remove explanation only."
+    },
+    {
+      "path": "professional/layout-followup.css",
+      "base_sha256": null,
+      "reason": "Slides 19,22–25,28: equal cards/actions, distinct accessible ability colors, compact schedule hint and full-width template selector.",
+      "sha256": "5aefb8315c6961ad3409abc60c1c95d09e5d0ea2172ee2c1953b45769b8bb3d8"
+    },
+    {
+      "path": "professional/layout-panels.js",
+      "base_sha256": null,
+      "sha256": "8d5904c02ec63b3e4fef9b0cd5a4102fb713a5fc55d7e7382bbfb9c6221778b3",
+      "reason": "New presentation URL avoids installed Safari reusing old scripts; fold diagnostics, group live health node, render charts from unchanged analytics models."
+    },
+    {
+      "path": "professional/layout-review.css",
+      "base_sha256": null,
+      "sha256": "e3f7dd99178b69e823dac20632cf80fa4d84bc603bf1898e88402b640225807a",
+      "reason": "Responsive radar, drilldown, calendar and collapsible-panel layout."
+    },
+    {
+      "path": "professional/learning-charts.js",
+      "base_sha256": null,
+      "sha256": "b43def3ad780780d6b61544c5e1e66aa57386c961164bd34e4f823b37910777d",
+      "reason": "New read-only SVG chart and existing rubric aggregation helpers; missing values stay null."
+    },
+    {
+      "path": "professional/progress-calendar.js",
+      "base_sha256": null,
+      "sha256": "4db6c3d89a69bda0857aca9e871ae37a50c956da976219335b0ba08dc021f5ff",
+      "reason": "New read-only monthly history; dates never create sessions or rewrite drafts."
+    },
+    {
+      "path": "professional/question-sources.js",
+      "base_sha256": "3e0f19833aa992873180cab573cd3b056f9d59c811ae56fc01d4e637be00320b",
+      "sha256": "e913fb64dcc51d58c5d670eb1f98b27abcaf2e78b0f337190c6e030d51e40e3c",
+      "reason": "Slide 3: simplify successful source count; preserve mismatch warning."
+    },
+    {
+      "path": "professional/review-preview.js",
+      "base_sha256": null,
+      "reason": "Slide 27 clarification: preview only the actual saved records and hypothetical reratings; no demo option or sample sessions, no storage writes.",
+      "sha256": "f6bc92cd9648749b29d054f1ca6cf470dd05aae6823f73c75c308b2da4689657"
+    },
+    {
+      "path": "professional/sw.js",
+      "base_sha256": "40e49a0b907e3db282d42743613f7756e205dba51705dfba7e8efac533400e99",
+      "sha256": "085923908121826355f3d023eba2798c48093349ccae3f9b618e512eee9d3f7d",
+      "reason": "Refresh existing installed-viewer asset cache for changed UI, without altering storage keys."
+    },
+    {
+      "path": "sw.js",
+      "base_sha256": "d564d94ae7a5249cd9ca7caa2ee480ddd4a541250e29b61a6f80c88f55ef0323",
+      "sha256": "772a3fc26a744cde1decc63eacb336129d46b595e4879375625ca2cb9956412b",
+      "reason": "Connected visits to changed common-subject pages use the current UI; retain installed snapshots."
+    },
+    {
+      "path": "professional/practice-session.js",
+      "base_sha256": null,
+      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.",
+      "sha256": "a82df6e9dc73cd9bdb16f6c25f872109aa63e5cfdf32606166133499ad0f0395"
+    },
+    {
+      "path": "professional/practice-review.js",
+      "base_sha256": null,
+      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.",
+      "sha256": "68534129ef5d51e8765b55e1c6578453f50179cc3f98c8c11142f1ad829083a9"
+    },
+    {
+      "path": "professional/practice-diagnostics.js",
+      "base_sha256": null,
+      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.",
+      "sha256": "9ce8cfa946d7641fb2506f983fa52deb53b03364f767ee0a88c04ffa990696d5"
+    },
+    {
+      "path": "professional/layout-panels-v2.js",
+      "base_sha256": null,
+      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.",
+      "sha256": "38dd51421033fb19725091dd7fb3319aa04db12da941bf2e211e68ae16824545"
+    },
+    {
+      "path": "professional/practice-context.css",
+      "base_sha256": null,
+      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.",
+      "sha256": "4d5e3545376629d6cd34465bbb7544f3bd37cb6ec7f0a031fc0c84ca60e41157"
+    }
+  ]
+}
