@@ -25,7 +25,9 @@ function renderTask(day,ref,host){
   card.append(el("small",u.type==="vocab"?"每日固定｜學6個新單字":"當日主要題型"));
   card.append(el("h3",u.title));card.append(el("p",u.instructions));
   const actions=el("div",undefined,"buttons"),link=el("a","前往 Staresto 練習 ↗","btn primary");
-  link.href=core.SOURCES[u.type].url;link.target="_blank";link.rel="noopener noreferrer";actions.append(link);
+  link.href=u.url||core.SOURCES[u.type].url;link.target="_blank";link.rel="noopener noreferrer";
+  link.textContent=u.mode==="manual"?"前往原站選這一篇 ↗":"直接開啟指定練習 ↗";
+  actions.append(link);
   if(result){actions.append(el("span","✓ 已記錄完成"+(result.correct!==null?"，"+result.correct+"/"+result.total+" 題":"")))}
   else{
     const score=el("div",undefined,"score"),correct=el("input"),total=el("input");
