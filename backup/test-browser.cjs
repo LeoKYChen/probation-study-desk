@@ -87,7 +87,7 @@ async function takeDownload(page,click){
   const exportedConflicts=await takeDownload(phone,()=>phone.locator('#downloadConflicts').click());
   assert.equal(exportedConflicts.entries.length,1);
   await phone.reload();
-  assert.match(await phone.locator('#summary').innerText(),/2 種學習資料/);
+  assert.match(await phone.locator('#summary').innerText(),/已儲存的學習／閱讀紀錄：3 筆/);
   console.log('PASS browser: Mac→phone JSON transfer, roundtrip reload, conflict archive, local-only file download, mobile viewport');
   await a.close();await b.close();
  }finally{await browser.close();server.close();}
