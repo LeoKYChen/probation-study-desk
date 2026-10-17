@@ -29,13 +29,13 @@ const restored=e.normalize(JSON.parse(JSON.stringify(seeded)));
 assert.equal(e.planDay(restored,'2026-10-01').tasks[0].id,'gsat-vocab-111-1-5','preserve existing day list');
 e.planDay(restored,'2026-10-19');
 assert.ok(!restored.days['2026-10-19'].tasks.some(x=>['gsat-vocab-112-1-5','gsat-vocab-111-1-5'].includes(x.id)));
-const all=e.createState(),seen=new Set();
+const all=e.createState(),seen=new Set(),seenVocab=new Set();
 for(let i=0;i<85;i++){
   const d=new Date(Date.UTC(2026,9,17+i)).toISOString().slice(0,10);
   const today=e.planDay(all,d);
-  assert.ok(today.tasks.some(t=>t.type==='vocab')=== (seen.size<66),'new vocab until remaining units exhausted');
+  assert.ok(today.tasks.some(t=>t.type==='vocab')=== (seenVocab.size<66),'new vocab until remaining units exhausted');
   for(const t of today.tasks)assert.ok(!seen.has(t.id),'never reschedule a prior unit: '+t.id);
-  for(const t of today.tasks)seen.add(t.id);
+  for(const t of today.tasks){seen.add(t.id);if(t.type==='vocab')seenVocab.add(t.id)}
 }
 for(const source of Object.values(e.SOURCES))assert.match(source.url,/^https:\/\/staresto-create\.github\.io\//);
 assert.doesNotMatch(app,/localStorage\.(?:removeItem|clear)\s*\(/,'do not delete browser data');
