@@ -19,7 +19,7 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 22
     steps:
       - uses: actions/checkout@v6
       - name: Verify independent static homepage
@@ -50,7 +50,61 @@ jobs:
         shell: bash
         run: |
           npm install --prefix /tmp/home-preview-qa --no-save playwright@1.56.1
-          /tmp/home-preview-qa/node_modules/.bin/playwright install --with-deps chromium
+          /tmp/home-preview-qa/node_modules/.bin/playwright install --with-deps chromium webkit
+      - name: Verify mobile input bounding boxes in WebKit and Chromium
+        env:
+          NODE_PATH: /tmp/home-preview-qa/node_modules
+        shell: bash
+        run: |
+          node <<'NODE'
+          const assert=require('node:assert/strict');
+          const {chromium,webkit}=require('playwright');
+          (async()=>{
+            const url='https://home-preview-20261017.probation-study30-test.pages.dev/';
+            for(const [kind,engine] of [['chromium',chromium],['webkit',webkit]]){
+              const browser=await engine.launch({headless:true});
+              try{
+                for(const width of [320,375,390,430,580,768,1024]){
+                  const context=await browser.newContext({viewport:{width,height:844},locale:'zh-TW',timezoneId:'Asia/Taipei'});
+                  const page=await context.newPage();
+                  const errors=[];
+                  page.on('pageerror',e=>errors.push(String(e)));
+                  const response=await page.goto(url,{waitUntil:'domcontentloaded',timeout:45000});
+                  assert.equal(response.status(),200);
+                  await page.locator('#countdown-settings summary').click();
+                  const m=await page.evaluate(()=>{
+                    const box=s=>document.querySelector(s).getBoundingClientRect();
+                    const card=box('.countdown');
+                    return {
+                      pageOverflow:document.documentElement.scrollWidth>document.documentElement.clientWidth,
+                      cardLeft:card.left,cardRight:card.right,
+                      fields:['#event-name','.date-input-wrap','#exam-date','#countdown-style','#countdown-accent','.save-button','.clear-button'].map(selector=>{
+                        const x=box(selector);return {selector,left:x.left,right:x.right,width:x.width};
+                      })
+                    };
+                  });
+                  assert.equal(m.pageOverflow,false,`${kind}/${width}: page overflow`);
+                  for(const x of m.fields){
+                    assert(x.width>0,`${kind}/${width}: invisible ${x.selector}`);
+                    assert(x.left>=m.cardLeft-1&&x.right<=m.cardRight+1,
+                      `${kind}/${width}: ${x.selector} overflows the card: ${JSON.stringify(x)}`);
+                  }
+                  if(width===390){
+                    await page.locator('#exam-date').fill('2027-08-14');
+                    await page.locator('.save-button').click();
+                    assert.match(await page.locator('#countdown-value').innerText(),/^\\d+ 天$/);
+                    await page.reload({waitUntil:'domcontentloaded'});
+                    assert.equal(await page.locator('#countdown-date-caption').innerText(),'2027/08/14');
+                  }
+                  assert.deepEqual(errors,[],`${kind}/${width}: script errors`);
+                  console.log('PASS form layout',kind,width,'px');
+                  await context.close();
+                }
+              }finally{await browser.close();}
+            }
+          })().catch(e=>{console.error('FAIL mobile layout regression',e);process.exit(1)});
+          NODE
+
       - name: Verify live mobile interactions and record isolation
         env:
           NODE_PATH: /tmp/home-preview-qa/node_modules
