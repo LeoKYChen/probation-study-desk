@@ -25,7 +25,31 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  webkit-installed-upgrade:
+    name: macOS WebKit installed-cache upgrade
+    runs-on: macos-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Build the exact static integration artifact
+        run: python3 scripts/build-cloudflare-main-mirror.py
+      - name: Install the same WebKit test runtime validated on macOS locally
+        run: |
+          npm install --prefix /tmp/unified-home-macos-qa --no-save playwright@1.62.1
+          /tmp/unified-home-macos-qa/node_modules/.bin/playwright install webkit
+      - name: Verify Safari-engine operation, retained snapshots and browser restart
+        env:
+          NODE_PATH: /tmp/unified-home-macos-qa/node_modules
+          UNIFIED_BROWSER_ENGINE: webkit
+        run: |
+          node verification/unified-browser.cjs cloudflare-main-mirror-dist
+          node verification/unified-pwa-upgrade.cjs cloudflare-main-mirror-dist
+
   integration:
+    needs: webkit-installed-upgrade
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -46,13 +70,16 @@ jobs:
         run: |
           npm install --prefix /tmp/unified-home-qa --no-save playwright@1.56.1
           /tmp/unified-home-qa/node_modules/.bin/playwright install --with-deps chromium webkit
-      - name: Chromium and WebKit acceptance plus existing PWA upgrade
+      - name: Chromium and WebKit operation plus Chromium installed-cache upgrade
         env:
           NODE_PATH: /tmp/unified-home-qa/node_modules
         run: |
           for engine in chromium webkit; do
             UNIFIED_BROWSER_ENGINE="$engine" node verification/unified-browser.cjs cloudflare-main-mirror-dist
-            UNIFIED_BROWSER_ENGINE="$engine" node verification/unified-pwa-upgrade.cjs cloudflare-main-mirror-dist
+            # WebKit installed-cache upgrade is required separately on macOS.
+            if [ "$engine" = chromium ]; then
+              UNIFIED_BROWSER_ENGINE="$engine" node verification/unified-pwa-upgrade.cjs cloudflare-main-mirror-dist
+            fi
           done
       - name: Guard new preview alias against Cloudflare production branch
         if: github.event_name == 'push' && github.ref == 'refs/heads/test/unify-home-v254-20261017'
