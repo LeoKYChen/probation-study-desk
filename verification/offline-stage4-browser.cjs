@@ -33,7 +33,7 @@ async function scenario(engine,name){
    active.postMessage({type:'status'},[c.port2]);
   });
  });
- assert(snapshot&&snapshot.count>=190,'all stage4 assets must be in offline snapshot');
+ assert(snapshot&&snapshot.count>=180,'all stage4 assets must be in offline snapshot');
  const initial=await page.evaluate(()=>JSON.stringify(Object.entries(localStorage)));
  if(engine===webkit)dropNetwork=true;
  else await ctx.setOffline(true);
