@@ -89,6 +89,32 @@ h1{font-size:clamp(25px,4vw,42px);font-weight:800;letter-spacing:.005em;line-hei
 @media(max-width:580px){.form-grid{grid-template-columns:1fr}}
 
 @media(prefers-reduced-motion:reduce){.nav-link{transition:none}}
+
+/* 第二輪：Safari 原生日期控制項的尺寸限制，勿修改其他學習模組 */
+.shell, .countdown, .countdown-settings, #countdown-form,
+.form-grid, .field, .date-input-wrap, .form-actions {min-inline-size:0;max-inline-size:100%;box-sizing:border-box}
+.form-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.field{min-width:0;width:100%;max-width:100%;overflow-wrap:anywhere}
+.field input,.field select{display:block;inline-size:100%;min-inline-size:0;max-inline-size:100%;box-sizing:border-box;margin:0}
+/* 外框放在可控制寬度的容器，由 iOS Safari 只負責內層日期選擇器。 */
+.date-input-wrap{display:flex;align-items:stretch;inline-size:100%;min-inline-size:0;max-inline-size:100%;overflow:hidden;border:1px solid #537d71;border-radius:10px;background:#e9f5ed}
+.field .date-input-wrap #exam-date{display:block;flex:1 1 0%;inline-size:0;min-inline-size:0;max-inline-size:100%;box-sizing:border-box;min-height:43px;margin:0;padding:11px 12px;border:0;border-radius:0;background:transparent;color:#15382d;line-height:1.35;color-scheme:light}
+.field .date-input-wrap:focus-within{outline:3px solid #67d8a0;outline-offset:2px}
+.field .date-input-wrap #exam-date:focus-visible{outline:none}
+#exam-date::-webkit-date-and-time-value{min-inline-size:0;max-inline-size:100%;text-align:start}
+#exam-date::-webkit-calendar-picker-indicator{flex:0 0 auto;margin:0}
+.countdown-settings summary{min-height:44px;max-width:100%;touch-action:manipulation}
+.form-actions button{max-width:100%;box-sizing:border-box;touch-action:manipulation}
+.nav-link,.lab-link{min-width:0;touch-action:manipulation}
+.nav-title,.lab-title{overflow-wrap:anywhere}
+@media(max-width:580px){
+  .form-grid{grid-template-columns:minmax(0,1fr);gap:14px}
+  .form-actions{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+  .form-actions button{width:100%;min-width:0;min-height:46px}
+  .countdown-settings{min-width:0}
+  .date-input-wrap{width:100%;min-width:0}
+}
+
 </style>
 </head>
 <body>
@@ -114,7 +140,7 @@ h1{font-size:clamp(25px,4vw,42px);font-weight:800;letter-spacing:.005em;line-hei
           </label>
           <label class="field">
             <span>考試日期（必填）</span>
-            <input id="exam-date" name="examDate" type="date" required min="2000-01-01" max="2100-12-31">
+            <span class="date-input-wrap"><input id="exam-date" name="examDate" type="date" required min="2000-01-01" max="2100-12-31"></span>
           </label>
           <label class="field">
             <span>顯示樣式</span>
