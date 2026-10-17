@@ -233,11 +233,45 @@ function exportEssay(){
     $('exportEssayStatus').textContent='已匯出本題 Markdown。';
   }catch(error){$('exportEssayStatus').textContent='Markdown 匯出失敗：'+error.message;}
 }
-function backup(){return {format:'probation-daily-github-records',schemaVersion:1,exportedAt:new Date().toISOString(),records};}
+function savedList(value){
+  if(!Array.isArray(value)||value.length>3000||!value.every(x=>typeof x==='string'&&x.length<300))throw Error('題目收藏資料格式不符');
+  return [...new Set(value)];
+}
+function currentSaved(){return savedList(JSON.parse(localStorage.getItem(SAVED_KEY)||'[]'));}
+function validateTimers(input){
+  if(!input||typeof input!=='object'||Array.isArray(input)||Object.keys(input).length>3000)throw Error('計時資料格式不符');
+  const clean={};
+  for(const [key,timer] of Object.entries(input)){
+    if(typeof key!=='string'||key.length>300||!timer||typeof timer!=='object'||!Number.isFinite(timer.deadline))throw Error('計時資料格式不符');
+    if(timer.deadline>Date.now()&&timer.deadline<Date.now()+31*60*1000)clean[key]={deadline:timer.deadline};
+  }
+  return clean;
+}
+function backup(){
+  return {
+    format:'probation-daily-github-records',schemaVersion:1,exportedAt:new Date().toISOString(),
+    records, saved:currentSaved(),timers:validateTimers(timers),
+    scope:'每日模擬題紀錄（題目來源仍由公開 questions.json 讀取）'
+  };
+}
 function exportBackup(){
   flush();if(dirty){notice('仍有未儲存的編輯，請先複製重要內容。',true);return false;}
-  try{download(backup(),'daily-simulation-records-'+new Date().toISOString().slice(0,10)+'.json');notice('已啟動每日模擬題備份下載；考古題不包含在這份檔案。');return true;}
-  catch(error){notice('備份下載失敗：'+error.message,true);return false;}
+  try{
+    const data=backup();
+    M.backup(data); // Validate the exact file before downloading.
+    download(data,'daily-simulation-records-'+new Date().toISOString().slice(0,10)+'.json');
+    notice('已匯出每日題備份：'+Object.keys(records).length+' 筆練習紀錄、'+data.saved.length+' 題收藏及進行中的計時。');
+    return true;
+  }catch(error){notice('備份下載失敗：'+error.message,true);return false;}
+}
+function mergedRecord(existing,incoming){
+  if(!existing)return incoming;
+  const result={...existing,...incoming};
+  if(existing.essayDrafts||incoming.essayDrafts){
+    result.essayDrafts={...(existing.essayDrafts||{}),...(incoming.essayDrafts||{})};
+  }
+  // Legacy backups may omit AI feedback; never delete a newer field just because it is absent.
+  return result;
 }
 async function importBackup(){
   const input=$('importFile'),file=input.files?.[0];if(!file)return;
@@ -245,16 +279,48 @@ async function importBackup(){
     if(file.size>4*1024*1024)throw Error('檔案超過4MB');
     if(!storageOK)throw Error('既有紀錄無法安全讀取，暫停匯入');
     flush();if(dirty)throw Error('有未儲存的編輯，請先處理');
-    const incoming=M.backup(JSON.parse(await file.text()));
+    const parsed=JSON.parse(await file.text());
+    const incoming=M.backup(parsed); // Works with legacy daily JSON or full v2.5 backup.
     const count=Object.keys(incoming).length;
-    if(!count)throw Error('備份沒有每日模擬題作答紀錄');
-    if(!confirm('將匯入 '+count+' 筆每日模擬題紀錄。同題以匯入的答案為主，先保留目前本機備份；考古題不受影響。確定繼續？'))return;
-    localStorage.setItem('daily-reading-test:before-import',JSON.stringify(records));
-    const next={...records,...incoming};
-    persist(next);records=next;
-    if(current){const id=current;current='';showQuestion(id);}else renderList();
-    notice('已匯入 '+count+' 筆紀錄，原每日模擬題頁面也可讀取。');
-  }catch(error){notice('匯入失敗，原紀錄未主動覆蓋：'+error.message,true);}
+    const sourceHasSaved=parsed.format==='probation-daily-github-records'&&Object.prototype.hasOwnProperty.call(parsed,'saved');
+    const sourceHasTimers=parsed.format==='probation-daily-github-records'&&Object.prototype.hasOwnProperty.call(parsed,'timers');
+    const importedSaved=sourceHasSaved?savedList(parsed.saved):[];
+    const importedTimers=sourceHasTimers?validateTimers(parsed.timers):{};
+    if(!count&&!importedSaved.length&&!Object.keys(importedTimers).length)throw Error('備份沒有每日模擬題紀錄或收藏');
+    const existingSaved=currentSaved(),existingTimers={...timers};
+    const next={...records};
+    for(const [id,record] of Object.entries(incoming))next[id]=mergedRecord(next[id],record);
+    M.records(next); // Validate merged shape, not just incoming file.
+    const nextSaved=savedList([...existingSaved,...importedSaved]);
+    const nextTimers={...existingTimers,...importedTimers};
+    const withDrafts=Object.values(incoming).filter(r=>r.essayDrafts&&Object.values(r.essayDrafts).some(v=>typeof v==='string'&&v.trim())).length;
+    const withFeedback=Object.values(incoming).filter(r=>r.aiFeedback?.trim()).length;
+    const description='將匯入 '+count+' 筆每日模擬題紀錄（含四格草稿 '+withDrafts+' 題、AI 評語 '+withFeedback+' 題）'
+      +(sourceHasSaved?'、收藏 '+importedSaved.length+' 題':'；此舊版備份未包含收藏')
+      +'。相同題目以匯入資料更新，未包含的舊欄位保留，其他考古題不受影響。是否繼續？';
+    if(!confirm(description))return;
+    // Stage the exact pre-import state; revert all keys if any step fails.
+    const keys=[KEY,SAVED_KEY,TIMER_KEY],stores=[localStorage,localStorage,sessionStorage];
+    const previous=keys.map((key,i)=>stores[i].getItem(key));
+    const original={records,saved:existingSaved,timers:existingTimers};
+    try{
+      localStorage.setItem('daily-reading-test:before-import',JSON.stringify(records));
+      localStorage.setItem(KEY,JSON.stringify(next));
+      localStorage.setItem(SAVED_KEY,JSON.stringify(nextSaved));
+      sessionStorage.setItem(TIMER_KEY,JSON.stringify(nextTimers));
+      // Read back immediately to catch truncation, corruption and unexpected storage failures.
+      const checked=M.records(JSON.parse(localStorage.getItem(KEY)));
+      const checkedSaved=savedList(JSON.parse(localStorage.getItem(SAVED_KEY)));
+      if(JSON.stringify(checked)!==JSON.stringify(next)||JSON.stringify(checkedSaved)!==JSON.stringify(nextSaved))throw Error('寫入後資料核對不一致');
+      records=next;timers=nextTimers;
+      if(current){const id=current;current='';showQuestion(id);}else renderList();
+      notice('已完整驗證並還原：'+count+' 筆每日題紀錄；包含四格草稿、AI 評語及備份內的收藏資料。');
+    }catch(error){
+      keys.forEach((key,i)=>{try{if(previous[i]===null)stores[i].removeItem(key);else stores[i].setItem(key,previous[i]);}catch{}});
+      records=original.records;timers=original.timers;
+      throw Error('還原未完成，已嘗試回復匯入前紀錄：'+error.message);
+    }
+  }catch(error){notice('匯入失敗：'+error.message,true);}
   finally{input.value='';}
 }
 function clearRecords(){
