@@ -30,6 +30,7 @@ jobs:
       - name: Validate standalone website
         shell: bash
         run: |
+          node --check common-subjects/essay-questions-v1.js
           node --check common-subjects/english-v02.js
           node --check common-subjects/test-v02.cjs
           node common-subjects/test-v02.cjs

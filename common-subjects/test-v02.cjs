@@ -9,9 +9,11 @@ const assert=require('node:assert/strict');
 const root=__dirname;
 const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
 const extra=fs.readFileSync(path.join(root,'english-v02.js'),'utf8');
+const essayBank=fs.readFileSync(path.join(root,'essay-questions-v1.js'),'utf8');
 const inline=[...html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)].map(m=>m[1]).filter(Boolean);
 assert.equal(inline.length,1,'one inline script');
 new vm.Script(extra,{filename:'english-v02.js'});
+new vm.Script(essayBank,{filename:'essay-questions-v1.js'});
 new vm.Script(inline[0],{filename:'index.html:inline.js'});
 const ids=[...html.matchAll(/\sid="([^"]+)"/g)].map(m=>m[1]);
 assert.equal(new Set(ids).size,ids.length,'unique IDs');
@@ -39,11 +41,26 @@ function make(db={}){
  const ctx={document:doc,window:win,localStorage,Option:Opt,navigator:{},Intl,Date,Array,Object,Set,Math,Number,String,JSON,RegExp,
   setTimeout:()=>1,clearTimeout(){},setInterval:()=>1,clearInterval(){},confirm:()=>confirmQueue.length?confirmQueue.shift():true,
   URL:{createObjectURL:()=> '#',revokeObjectURL(){}},Blob:class {},FileReader:class{}};
- vm.createContext(ctx);vm.runInContext(extra,ctx,{filename:'english-v02.js'});vm.runInContext(inline[0],ctx,{filename:'index.html:inline.js'});
+ vm.createContext(ctx);vm.runInContext(extra,ctx,{filename:'english-v02.js'});vm.runInContext(essayBank,ctx,{filename:'essay-questions-v1.js'});vm.runInContext(inline[0],ctx,{filename:'index.html:inline.js'});
  return {get,db,ctx};
 }
 const a=make(),g=a.get;
-assert.equal(g('prompt').options.length,12);
+assert.equal(g('prompt').options.length,52,'12 legacy + 40 sourced adaptations');
+assert.equal(a.ctx.window.PSD_ESSAY_QUESTIONS.filter(x=>x.type==='short').length,20);
+assert.equal(a.ctx.window.PSD_ESSAY_QUESTIONS.filter(x=>x.type==='long').length,20);
+assert.equal(new Set(a.ctx.window.PSD_ESSAY_QUESTIONS.map(x=>x.id)).size,40,'stable unique IDs');
+assert.ok(a.ctx.window.PSD_ESSAY_QUESTIONS.every(x=>x.source.link.startsWith('https://') && x.source.section && x.source.status));
+const filterTest=make(),f=filterTest.get;
+f('essayType').value='short';f('essayType').fire('change');assert.equal(f('prompt').options.length,20);
+f('essayType').value='long';f('essayType').fire('change');assert.equal(f('prompt').options.length,20);
+f('essayType').value='original';f('essayType').fire('change');assert.equal(f('prompt').options.length,12);
+assert.equal(f('prompt').options[0].value,'0','legacy indices do not change');
+f('essayType').value='all';f('essayType').fire('change');assert.equal(f('prompt').options.length,52);
+f('prompt').value='12';f('prompt').fire('change');assert.match(f('promptMeta').textContent,/歷屆試題改編/);
+assert.equal(f('promptSource').hidden,false);
+assert.match(f('clock').textContent,/10:00/);
+f('mode').value='full';f('mode').fire('change');assert.equal(f('clock').textContent,'25:00');
+f('prompt').value='32';f('prompt').fire('change');assert.equal(f('clock').textContent,'55:00');
 assert.equal(g('rubrics').children.length,4);
 g('essayText').value='法律系畢業後，我轉入陌生的領域。';g('essayText').fire('input');g('saveVersion').click();
 let data=JSON.parse(a.db[KEY]);assert.equal(data.drafts['sentence:0'].versions.length,1);
