@@ -24,7 +24,7 @@ assert.match(e.getUnit('gsat-grammar-115-1').url,/#set-G115_11_1,G115_12_1,G115_
 assert.match(e.getUnit('gsat-reading-115-1').url,/#p=g115p1$/,'direct reading passage deep-link');
 assert.equal(e.getUnit('gsat-completion-115-1').mode,'manual','unverified passage deep-link must not be claimed');
 assert.equal(e.getUnit('gsat-vocab-83-1-5-recommend').title.includes('推薦甄選'),true,'older recommendations are not official GSAT');
-for(const unit of e.units){assert.match(unit.url,/^https:\\/\\/staresto-create\\.github\\.io\\//);assert.ok(unit.instructions&&unit.title);}
+for(const unit of e.units){assert.ok(unit.url.startsWith('https://staresto-create.github.io/'));assert.ok(unit.instructions&&unit.title);}
 
 const first=p.tasks[0].id;
 assert.throws(()=>e.markDone(state,day,first,{correct:9,total:5}),/有效/);
