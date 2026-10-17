@@ -108,3 +108,13 @@ jobs:
             cmp "cloudflare-main-mirror-dist/$file" /tmp/stage4-live || { echo "Incorrect live file: $file"; exit 1; }
           done
           echo "PASS isolated Stage4 Cloudflare preview is byte-identical to approved test commit"
+
+      - name: Real Cloudflare download-button test, then disconnected reload
+        if: (github.event_name == 'push' && github.ref == 'refs/heads/feature/stage4-offline-reading-writing-20261017') || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'feature/stage4-offline-reading-writing-20261017' && github.event.pull_request.base.ref == 'main')
+        shell: bash
+        env:
+          NODE_PATH: /tmp/stage4-browser/node_modules
+          STAGE4_BASE_URL: https://stage4-offline-preview.probation-study30-test.pages.dev
+        run: |
+          set -euo pipefail
+          node verification/offline-stage4-live-download.cjs
