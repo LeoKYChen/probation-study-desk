@@ -1,6 +1,8 @@
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),http=require('node:http'),path=require('node:path');
-const {chromium}=require('playwright');
+const playwright=require('playwright');
+const engine=process.env.UNIFIED_BROWSER_ENGINE||'chromium';
+assert(['chromium','webkit'].includes(engine));
 const root=path.resolve(process.argv[2]||'.'),remote=process.env.UNIFIED_TEST_URL;
 const types={'.html':'text/html;charset=utf-8','.js':'text/javascript;charset=utf-8','.css':'text/css;charset=utf-8','.json':'application/json;charset=utf-8','.webmanifest':'application/manifest+json'};
 const server=http.createServer((req,res)=>{
@@ -12,12 +14,14 @@ const server=http.createServer((req,res)=>{
 });
 (async()=>{
  if(!remote)await new Promise(r=>server.listen(0,'127.0.0.1',r));
- const browser=await chromium.launch({headless:true,...(process.env.BROWSER_EXECUTABLE?{executablePath:process.env.BROWSER_EXECUTABLE}:{})});
+ const browser=await playwright[engine].launch({headless:true,...(process.env.BROWSER_EXECUTABLE?{executablePath:process.env.BROWSER_EXECUTABLE}:{})});
  try{
   const bases=remote?[remote]:['http://127.0.0.1:'+server.address().port+'/','http://127.0.0.1:'+server.address().port+'/probation-study-desk/'];
   for(const base of bases){
-   const ctx=await browser.newContext({viewport:{width:390,height:844},locale:'zh-TW',timezoneId:'Asia/Taipei',permissions:['clipboard-read','clipboard-write'],acceptDownloads:true});
-   const page=await ctx.newPage(),errors=[],bad=[];page.setDefaultTimeout(10000);
+   const ctx=await browser.newContext({viewport:{width:390,height:844},locale:'zh-TW',timezoneId:'Asia/Taipei',...(engine==='chromium'?{permissions:['clipboard-read','clipboard-write']}:{}),acceptDownloads:true});
+   await ctx.addInitScript(()=>{const clipboard=navigator.clipboard;if(clipboard?.writeText){const nativeWrite=clipboard.writeText.bind(clipboard);clipboard.writeText=text=>{window.__testCopyPayload=text;return nativeWrite(text);};}});
+   const page=await ctx.newPage(),errors=[],bad=[];page.setDefaultTimeout(15000);
+   page.on('dialog',async dialog=>{await dialog.dismiss();});
    page.on('pageerror',e=>errors.push(String(e)));
    page.on('response',r=>{if(r.url().startsWith(base)&&r.status()>=400)bad.push(r.status()+' '+r.url());});
    assert.equal((await page.goto(base)).status(),200);
@@ -47,7 +51,9 @@ const server=http.createServer((req,res)=>{
    await page.locator('#answer').fill('每日練習保存測試');
    await page.locator('#essayEditor').evaluate(n=>n.open=true);
    await page.locator('#essayFullAnswer').fill('整合測試答案：爭點、規範、涵攝、結論。');
-   await page.locator('#daily30CopyAi').click();assert((await page.evaluate(()=>navigator.clipboard.readText())).includes('整合測試答案'));
+   await page.locator('#daily30CopyAi').click();
+   if(engine==='chromium')assert((await page.evaluate(()=>navigator.clipboard.readText())).includes('整合測試答案'));
+   else {assert((await page.evaluate(()=>window.__testCopyPayload)).includes('整合測試答案'));await page.waitForFunction(()=>/已複製|請從跳出/.test(document.querySelector('#daily30AiStatus').textContent));}
    await page.locator('#daily30AiFeedback').fill('整合測試：補充法律效果。');
    await page.locator('#toggleTimer').click();await page.waitForTimeout(1200);await page.locator('#toggleTimer').click();
    assert((await page.evaluate(key=>Object.values(JSON.parse(localStorage.getItem(key)).sessions).some(s=>s.elapsed>0),key)));
@@ -65,7 +71,7 @@ const server=http.createServer((req,res)=>{
    assert.equal(await page.evaluate(()=>localStorage.getItem('unrelated-module-sentinel')),'不得修改');
    assert.equal(await page.evaluate(()=>localStorage.getItem('probation-study-desk-v24')),retained);
    assert.deepEqual(errors,[]);assert.deepEqual(bad,[]);
-   console.log('PASS browser:',base,'five entries, responsive countdown, 426 questions, timer, drafts/AI reload, old sessions/keys, old pages');
+   console.log('PASS browser:',engine,base,'five entries, responsive countdown, 426 questions, timer, drafts/AI reload, old sessions/keys, old pages');
    await ctx.close();
   }
  }finally{await browser.close();server.close();}

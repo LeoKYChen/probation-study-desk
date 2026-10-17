@@ -7,6 +7,8 @@ on:
     branches: [main]
     paths:
       - index.html
+      - sw.js
+      - verification/fixtures/**
       - legacy-home.html
       - professional/**
       - scripts/build-cloudflare-main-mirror.py
@@ -43,11 +45,15 @@ jobs:
       - name: Install isolated browser
         run: |
           npm install --prefix /tmp/unified-home-qa --no-save playwright@1.56.1
-          /tmp/unified-home-qa/node_modules/.bin/playwright install --with-deps chromium
-      - name: Test root and GitHub project paths with synthetic records
+          /tmp/unified-home-qa/node_modules/.bin/playwright install --with-deps chromium webkit
+      - name: Chromium and WebKit acceptance plus existing PWA upgrade
         env:
           NODE_PATH: /tmp/unified-home-qa/node_modules
-        run: node verification/unified-browser.cjs cloudflare-main-mirror-dist
+        run: |
+          for engine in chromium webkit; do
+            UNIFIED_BROWSER_ENGINE="$engine" node verification/unified-browser.cjs cloudflare-main-mirror-dist
+            UNIFIED_BROWSER_ENGINE="$engine" node verification/unified-pwa-upgrade.cjs cloudflare-main-mirror-dist
+          done
       - name: Guard new preview alias against Cloudflare production branch
         if: github.event_name == 'push' && github.ref == 'refs/heads/test/unify-home-v254-20261017'
         env:
@@ -83,4 +89,7 @@ jobs:
         env:
           NODE_PATH: /tmp/unified-home-qa/node_modules
           UNIFIED_TEST_URL: https://unified-home-v254-20261017.probation-study30-test.pages.dev/
-        run: node verification/unified-browser.cjs cloudflare-main-mirror-dist
+        run: |
+          for engine in chromium webkit; do
+            UNIFIED_BROWSER_ENGINE="$engine" node verification/unified-browser.cjs cloudflare-main-mirror-dist
+          done

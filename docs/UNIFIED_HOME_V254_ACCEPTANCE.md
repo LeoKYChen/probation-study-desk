@@ -28,7 +28,7 @@ PR #29 已合併；[Actions run 39021111891](https://github.com/LeoKYChen/probat
 
 `node verification/unified-integration.cjs`：來源雜湊、426 題唯一 ID、與 main 題庫相同、五入口、原儲存鍵、完整靜態依賴。
 
-`node verification/unified-browser.cjs`：Chromium 在網站根目錄及 `/probation-study-desk/` 路徑進行測試，涵蓋 320/390/768/1440 寬度、倒數設定重開、四個站內入口新分頁、426 題載入、計時、步驟速記、完整申論與 AI 評語重開保存、舊 session 與其他儲存鍵保留、原首頁及 v2.5 仍可開啟。
+`node verification/unified-browser.cjs`：Chromium 與 WebKit 在網站根目錄及 `/probation-study-desk/` 路徑進行測試，涵蓋 320/390/768/1440 寬度、倒數設定重開、四個站內入口新分頁、426 題載入、計時、步驟速記、完整申論與 AI 評語重開保存、舊 session 與其他儲存鍵保留、原首頁及 v2.5 仍可開啟。
 
 `node verification/check-daily-v254.cjs`：原有每日模擬 125 題回歸。
 
@@ -40,7 +40,22 @@ PR #29 已合併；[Actions run 39021111891](https://github.com/LeoKYChen/probat
 2. 核准合併此 PR：因 main 是 GitHub Pages 正式來源，合併會使 GitHub 正式首頁更新；現有 main 鏡像工作流程也會同步更新其專用鏡像。**本回合不合併**。
 3. 指定並核准 Cloudflare 正式網址及部署規則；本 PR 不改任何既有 Cloudflare 正式站或舊預覽。也不自動停用舊站。
 4. 確認跨網址紀錄各自保存的限制，以及既有資料留存方式。原資料留在原 origin，本回合不作跨站搬移。
-5. 正式更新前另驗收原已安裝使用者的 PWA/快取升級行為，避免舊離線快照仍顯示舊首頁；不以新 origin 的乾淨測試宣稱已通過此項。
+5. 已加入舊版 worker、實際舊快取下載與合成紀錄的更新測試；正式更新前仍由使用者在自己的裝置確認重開首頁與歷史答案。測試引擎不能代替實際 iPhone／Safari 主畫面 App 驗收。
 6. 確認回復方案：保留基線 main SHA、舊首頁、現有 v254 與首頁測試站；若正式驗收失敗，回復程式部署，個人 localStorage 不清除。
 
-未驗證範圍：使用者實際裝置與真實歷史資料、Safari/WebKit、GitHub Pages 線上整合版本（尚未合併）、正式 Cloudflare 切換與原已安裝 PWA 更新。外部法律 AI、考選部、Shuati、Yamol 的服務行為不納入本次新功能驗收。
+未驗證範圍：使用者實際裝置與真實歷史資料、實際 Safari／iPhone 主畫面 App、GitHub Pages 線上整合版本（尚未合併）、正式 Cloudflare 切換。外部法律 AI、考選部、Shuati、Yamol 的服務行為不納入本次新功能驗收。
+
+
+## 追加驗收：既有快取更新及 WebKit
+
+問題已重現：原根目錄 worker 與 main 完全相同，首頁採既有快照優先；只換根目錄 HTML 無法使已有快取的使用者看到五入口首頁。
+
+修正僅在 `sw.js` 將首頁的目錄路徑及 `index.html` 加入原有的線上優先清單。維持既有逾時與快取回退，不刪除 CacheStorage 或 localStorage，不增加離線下載功能；舊離線快照仍保留。更新 worker 完成後，重新開啟連線首頁可讀到整合版；這不是要求清除網站資料。
+
+`verification/unified-pwa-upgrade.cjs` 使用可核對 SHA-256 的 main 舊版 worker fixture、逐位元組保留的舊首頁，以及既有下載流程建立實際舊快照（78 個資源）。以獨立持久化瀏覽器設定檔測試網站根目錄和 GitHub 專案子路徑，驗證更新後的五入口首頁、含查詢字串的 index 路徑、原儲存值完全保留、舊快照首頁位元組保留、根目錄與 professional worker 範圍共存，以及關閉瀏覽器後重新開啟仍保留紀錄。所有資料均為合成資料，從未存取使用者實際瀏覽器設定檔。
+
+WebKit 的暫時瀏覽環境曾在 worker 替換後無法保留快取內容；改用符合已安裝情境的獨立持久化設定檔進行驗收，避免將暫時環境差異誤認為作答資料遺失。
+
+一般 WebKit 驗收檢查複製指令的內容與成功／備援提示，不宣稱驗證 macOS／iPhone 的系統剪貼簿。Chromium 另驗證實際複製結果。CI 在兩個引擎都通過一般操作與舊快取更新測試後，才發布同一個獨立整合測試別名；發布後再跑兩引擎功能測試及全檔位元組比對。最終結果以本 PR 最新 Checks 為準。
+
+WebKit 自動化切換斷線後重新載入受 worker 控制的頁面會回報引擎內部錯誤，因此不宣稱通過 WebKit 飛航模式重載；其線上升級與舊快取內容保留另作驗證。Chromium 保留既有快照斷線重載檢查。此限制不擴展本次為離線功能開發。
