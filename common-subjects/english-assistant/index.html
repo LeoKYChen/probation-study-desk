@@ -35,11 +35,11 @@ footer{font-size:.85rem;color:#63786b;padding:8px 0 28px}@media(max-width:580px)
 <p class="sub">除了上方固定6張單字卡，也可透過 Staresto 的指定年度題組練習英文；不需要再另做大量站內題庫。</p>
 <div id="tasks"></div>
 <p class="muted">單字、文法可直接開啟指定題目組，閱讀可直接開啟指定互動文章；文意選填仍需依提示在原站選文章。<strong>不要使用隨機10題</strong>；若以前做過或原站找不到，按「換一份」。本站不會讀取原站作答紀錄。</p></section>
-<section class="panel"><div class="heading"><h2>學習紀錄</h2><button id="export" class="btn" type="button">匯出 JSON 備份</button></div>
+<section class="panel"><div class="heading"><h2>學習紀錄</h2><div class="buttons"><button id="export" class="btn" type="button">匯出 JSON 備份</button><label class="btn" for="importFile">匯入 JSON（合併）</label><input id="importFile" type="file" accept=".json,application/json" hidden></div></div>
 <p class="muted"><span id="count">0</span> 個不同任務已完成；<span id="days">0</span> 個學習日</p>
 <div id="history"></div></section>
 <section class="panel"><h2>資料與使用說明</h2>
-<p>本頁只記錄自己登記的任務與成績，不抓取、複製或代答原站題目。資料保存在目前瀏覽器，不會跨裝置自動同步。</p>
+<p>本頁只記錄自己登記的任務與成績，不抓取、複製或代答原站題目。資料保存在目前瀏覽器，不會跨裝置自動同步。匯入備份採合併方式，不會主動清除目前已保存的紀錄。</p>
 <p>使用<strong>獨立儲存鍵</strong>，不修改 v0.4 每日英文、v0.5 瀏覽器、原創80題、國文作文或專業科目紀錄；你目前尚未開始舊題練習，因此不進行舊紀錄移轉；若未來遇到做過的題目仍可按「換一份」。</p>
 <p>本站不保證原站所有年份都支援定位至指定題組。若找不到，請換一份而非誤記完成。定期備份，勿把含私人紀錄的 JSON 放到公開 GitHub。</p></section>
 <footer><a href="../">共同科目首頁</a> · <a href="https://staresto-create.github.io/JCEE-vocab-questions/" target="_blank" rel="noopener noreferrer">Staresto 原作者網站 ↗</a><p>本頁非 Staresto 官方產品。原題目及解析著作權歸原權利人。</p></footer>
