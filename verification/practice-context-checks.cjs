@@ -53,6 +53,11 @@ module.exports=async function(browser,base){
   }
   for(const width of [320,390,768,1440]){await page.setViewportSize({width,height:1000});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,'practice UI overflow '+width);}
   await page.locator('#essayPracticeSubject').selectOption('today');assert.equal(await page.locator('#practiceSelfCheck').isVisible(),false);
+  assert.equal(await page.evaluate(()=>{
+   const {bank,today}=Study30App.getEssayReviewData(),q=bank.find(x=>x.subject==='心理學');
+   const make=(dailyTime,freeTime)=>Study30Review.model({[today]:{questionId:q.id,rating:'mastered',ratingUpdatedAt:dailyTime,practiceRatings:{one:{questionId:q.id,subject:'心理學',rating:'review',updatedAt:freeTime}}}},bank,today).all[0];
+   return make('2026-10-17T10:00:00Z','2026-10-17T09:00:00Z').rating==='mastered'&&make('2026-10-17T09:00:00Z','2026-10-17T10:00:00Z').rating==='review';
+  }),true,'same-day daily/free edits use the latest explicit self-rating timestamp');
   // Shrinking an already-used phase clamps at zero without losing time when enlarged.
   await page.evaluate(()=>{const key='probation-study30-v251:v1',data=JSON.parse(localStorage.getItem(key)),s=data.sessions['2026-10-17'];s.phase=0;s.mode='30';s.remaining=100;s.elapsed=200;delete s.phaseTimeUsed;localStorage.setItem(key,JSON.stringify(data));});
   await page.reload();await page.waitForFunction(()=>window.Study30App);

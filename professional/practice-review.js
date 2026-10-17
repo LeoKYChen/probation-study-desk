@@ -45,12 +45,12 @@
         day.set(String(id),{date,id:String(id),q,rating,cause:typeof cause==='string'?cause:'',subject,explicit});
       };
       const q=questions.get(String(item.questionId));
-      if(q)add(item.questionId,item.rating,item.errorCause,canonicalSubject(q),false);
-      const values=item.practiceRatings&&typeof item.practiceRatings==='object'&&!Array.isArray(item.practiceRatings)?Object.values(item.practiceRatings):[];
-      values.sort((a,b)=>String(a?.updatedAt||'').localeCompare(String(b?.updatedAt||'')));
-      for(const row of values){
-        if(row&&typeof row==='object')add(row.questionId,row.rating,row.errorCause,row.subject,true);
-      }
+      const values=[];
+      if(q)values.push({id:item.questionId,rating:item.rating,cause:item.errorCause,subject:canonicalSubject(q),explicit:false,time:item.ratingUpdatedAt||''});
+      const practice=item.practiceRatings&&typeof item.practiceRatings==='object'&&!Array.isArray(item.practiceRatings)?Object.values(item.practiceRatings):[];
+      for(const row of practice)if(row&&typeof row==='object')values.push({id:row.questionId,rating:row.rating,cause:row.errorCause,subject:row.subject,explicit:true,time:row.updatedAt||''});
+      values.sort((a,b)=>String(a.time).localeCompare(String(b.time)));
+      for(const row of values)add(row.id,row.rating,row.cause,row.subject,row.explicit);
       result.push(...day.values());
     }
     return result;
