@@ -49,6 +49,57 @@ function make(db={}){
  return {get,db,ctx};
 }
 const a=make(),g=a.get;
+// Learning loop: use existing drafts only; no new storage schema/API.
+const coached=make(),cp=coached.get;
+assert.match(cp('essayCoachStatus').textContent,/短文0題、長文0題/);
+assert.equal(cp('copyRevision').disabled,true,'no revision without initial saved version');
+cp('essayCoachStage').value='short';cp('essayCoachPick').click();
+assert.equal(cp('prompt').value,'12','suggest first unseen short');
+assert.equal(cp('mode').value,'full','guided practice selects full essay mode');
+cp('essayText').value='初稿：我先確認短文題目的設問，再依材料作答。';cp('essayText').fire('input');
+cp('saveVersion').click();
+assert.equal(cp('copyRevision').disabled,true,'saved first draft is not yet revised');
+assert.match(cp('essayCoachStatus').textContent,/短文1題、長文0題/);
+let clipboard='';
+coached.ctx.navigator.clipboard={writeText:function(s){clipboard=s;return Promise.resolve()}};
+cp('copyReview').click();
+assert.match(clipboard,/題旨與材料理解4/,'short rubric is 20-point practice rubric');
+assert.match(clipboard,/這不是正式閱卷/);
+assert.match(clipboard,/初稿：我先確認/);
+cp('feedback').value='問題：缺乏具體例證，承轉不足。';cp('feedback').fire('input');
+cp('nextGoal').value='補充一個可信的例子';cp('nextGoal').fire('input');
+cp('saveFeedback').click();
+cp('essayText').value='修訂：先區分題目要求，再提出具體例證及結論。';cp('essayText').fire('input');
+assert.equal(cp('copyRevision').disabled,false,'revision eligible only after initial draft differs');
+cp('copyRevision').click();
+assert.match(clipboard,/【原稿】/);
+assert.match(clipboard,/【本次修訂稿】/);
+assert.match(clipboard,/缺乏具體例證/);
+assert.match(clipboard,/補充一個可信的例子/);
+assert.match(clipboard,/不可只讚美或只換辭藻/);
+cp('essayCoachStage').value='revise';cp('essayCoachPick').click();
+assert.equal(cp('prompt').value,'12','revisit flagged essay without losing draft');
+assert.match(cp('essayText').value,/修訂：/);
+cp('essayCoachStage').value='long';cp('essayCoachPick').click();
+assert.equal(cp('prompt').value,'32','suggest first unseen long');
+cp('essayText').value='一篇長文必須包含論點、材料、推演及反思。';cp('essayText').fire('input');
+cp('copyReview').click();
+assert.match(clipboard,/題旨立意15/,'long rubric uses 60 points');
+cp('essayCoachStage').value='short';cp('essayCoachPick').click();
+assert.equal(cp('prompt').value,'13','unseen short preferred over already written question');
+cp('essayCoachStage').value='check';cp('essayCoachPick').click();
+assert.equal(cp('mode').value,'full','stage check remains per-question practice, not fake complete exam');
+assert.equal(Object.keys(coached.db).length,1,'coach persists only to existing common-subjects key');
+// Existing localStorage backup restores prior data alongside the new view.
+const historical=make({[KEY]:JSON.stringify({
+ schema:KEY,drafts:{'full:12':{text:'已完成的舊短文',versions:[{date:'2026-10-01',text:'舊初稿'}],feedback:'先補強論據',self:{reasoning:2},nextAction:'補強推論',updatedAt:'2026-10-01'}},
+ english:{}
+})});
+historical.get('essayCoachStage').value='revise';
+historical.get('essayCoachPick').click();
+assert.equal(historical.get('prompt').value,'12','old draft remains selectable');
+assert.match(historical.get('essayCoachStatus').textContent,/論述深度 1/);
+
 assert.equal(g('prompt').options.length,132,'12 legacy + 120 sourced adaptations');
 assert.equal(a.ctx.window.PSD_ESSAY_QUESTIONS.filter(x=>x.type==='short').length,60);
 assert.equal(a.ctx.window.PSD_ESSAY_QUESTIONS.filter(x=>x.type==='long').length,60);

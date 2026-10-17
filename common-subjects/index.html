@@ -4,34 +4,50 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#153c38">
 <meta name="description" content="116年司法特考三等觀護人共同科目：國文作文精修與英文練習。">
-<title>國考英文＋作文 v0.4｜觀護人練習臺</title>
+<title>國考英文＋作文 v0.5｜觀護人練習臺</title>
 <style>
 :root{--green:#164e42;--ink:#203831;--muted:#63746c;--line:#d8e4dc;--paper:#f5f7f3;--white:#fff;--soft:#e8f2ec}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Noto Sans TC",sans-serif}a{color:var(--green)}button,select,textarea,input{font:inherit}button{cursor:pointer}button:disabled{opacity:.5;cursor:not-allowed}button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #dba54b;outline-offset:2px}[hidden]{display:none!important}
 header{background:#133d35;color:#fff}header .inner{max-width:1120px;margin:auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.brand{font-weight:800;color:#fff;text-decoration:none;font-size:1.1rem}.brand small{display:block;font-size:.75rem;font-weight:400;color:#cfdfd8}header nav{display:flex;gap:20px}header nav a{color:#fff;text-decoration:none;font-size:.92rem}
 main{max-width:1120px;margin:auto;padding:24px}.hero{display:grid;grid-template-columns:1.5fr 1fr;gap:24px;padding:20px 0 28px;align-items:center}.eyebrow{font-size:.76rem;letter-spacing:.12em;color:var(--green);font-weight:800;text-transform:uppercase}h1{font-size:clamp(1.8rem,4vw,2.7rem);margin:6px 0 10px;line-height:1.3}h2{font-size:1.45rem;margin:0 0 14px}h3{font-size:1.05rem;margin:0 0 12px}p{margin:6px 0 14px;color:var(--muted)}.hero-note{border-radius:15px;background:var(--soft);padding:22px}.hero-note strong{color:var(--green)}
 .tabs{display:flex;gap:10px;margin-bottom:20px;flex-wrap:wrap}.tabs button{background:white;border:1px solid var(--line);border-radius:12px;padding:11px 18px;font-weight:700;color:var(--ink)}.tabs button.active{background:var(--green);color:#fff}.layout{display:grid;grid-template-columns:minmax(260px,.75fr) minmax(0,1.6fr);gap:18px;align-items:start}.bottom{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}.panel{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;margin-bottom:16px;box-shadow:0 5px 20px #15483309}.panel h2,.panel h3{color:var(--ink)}label{display:block;font-weight:700;font-size:.88rem;margin:10px 0 6px}input:not([type=file]),select,textarea{width:100%;border:1px solid #c4d5cb;border-radius:10px;background:#fff;padding:10px;color:var(--ink)}textarea{resize:vertical;min-height:130px}#essayText{min-height:350px;line-height:1.95}.prompt{border-radius:12px;background:var(--soft);padding:16px;margin-top:14px}.prompt h3{margin-bottom:8px}.prompt p{margin:0}.btn{background:#fff;border:1px solid #a8c1b3;border-radius:10px;padding:10px 14px;color:var(--green);font-weight:700}.btn.primary{background:var(--green);color:#fff;border-color:var(--green)}.buttons{display:flex;flex-wrap:wrap;gap:9px;margin:12px 0}.muted,.small{color:var(--muted);font-size:.86rem}.timer{display:flex;align-items:center;flex-wrap:wrap;gap:12px;padding-top:15px}.timer strong{font-size:1.6rem;font-variant-numeric:tabular-nums}.editor-bar{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}.editor-bar h3{margin:0}.vpreview{white-space:pre-wrap;border-radius:10px;padding:14px;background:var(--soft);max-height:250px;overflow:auto}.rubric{display:grid;grid-template-columns:1fr 1fr;gap:12px}.rubric label{margin:0}.rubric select{margin-top:5px}.alert{padding:12px 15px;background:#e5f4ea;border-radius:10px;margin-bottom:15px}.english-bar{display:flex;align-items:end;gap:15px;flex-wrap:wrap}.english-bar>div{flex:1;min-width:140px}.english-card h3{font-size:1.2rem}.reading{white-space:pre-wrap;background:#f1f5f3;padding:16px;border-radius:10px}.options{display:grid;gap:10px}.option{display:block;text-align:left;background:#fafdfa;border:1px solid var(--line);padding:12px;border-radius:10px}.option.good{background:#def5e7;border-color:#459a6a}.option.bad{background:#fff0ec;border-color:#c97565}.explain{margin-top:16px;white-space:pre-wrap;border-left:4px solid #4b9278;padding:13px;background:#f1f8f4}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.stat{background:#fff;border:1px solid var(--line);border-radius:13px;padding:18px}.stat strong{display:block;font-size:1.55rem;color:var(--green)}.recent-item{padding:10px 0;border-bottom:1px solid var(--line)}.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.compare-grid strong{display:block;margin-bottom:8px}.compare-grid .vpreview{margin:8px 0 0;min-height:125px;max-height:380px;line-height:1.8;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;font-size:.94rem}
-.reset-controls{border-top:1px solid var(--line);margin-top:22px;padding-top:18px}.reset-controls h3{margin:0 0 10px}[hidden]{display:none!important}.reset-option{border:1px solid var(--line);padding:13px;border-radius:11px;margin:10px 0;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.reset-option>div{flex:1;min-width:170px}.reset-option p{margin:3px 0}.btn.destructive{color:#9b392d;background:#fff8f5;border-color:#c67b6b}.btn.destructive:hover{background:#ffe8e2}
+.coach-controls{display:flex;gap:12px;align-items:end;flex-wrap:wrap}.coach-controls label{flex:1;min-width:240px}.coach-controls button{margin-bottom:0}.coach-controls select{margin-top:5px}.reset-controls{border-top:1px solid var(--line);margin-top:22px;padding-top:18px}.reset-controls h3{margin:0 0 10px}[hidden]{display:none!important}.reset-option{border:1px solid var(--line);padding:13px;border-radius:11px;margin:10px 0;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.reset-option>div{flex:1;min-width:170px}.reset-option p{margin:3px 0}.btn.destructive{color:#9b392d;background:#fff8f5;border-color:#c67b6b}.btn.destructive:hover{background:#ffe8e2}
 footer{border-top:1px solid var(--line);padding:22px 0;margin-top:25px;color:var(--muted);font-size:.82rem}
 @media(max-width:750px){header .inner{padding:15px}main{padding:16px}.hero,.layout,.bottom{grid-template-columns:1fr}.panel{padding:16px}.stats{grid-template-columns:1fr}.rubric,.compare-grid{grid-template-columns:1fr}#essayText{min-height:270px}.tabs button{flex:1}}
 </style>
 <link rel="stylesheet" href="./staresto.css">
 </head>
 <body>
-<header><div class="inner"><a class="brand" href="../">觀護人練習臺<small>116年司法特考｜共同科目 v0.4</small></a><nav><a href="../">主站首頁</a><a href="../v2.5/">考古題練習</a></nav></div></header>
+<header><div class="inner"><a class="brand" href="../">觀護人練習臺<small>116年司法特考｜共同科目 v0.5</small></a><nav><a href="../">主站首頁</a><a href="../v2.5/">考古題練習</a></nav></div></header>
 <main>
 <section class="hero"><div><div class="eyebrow">Common Subjects · Pilot</div><h1>每天一點進步，<br>累積英文實力與作文文筆。</h1><p>作文保留原意、練習逐句精修；英文從基礎題型開始，累積錯題與解析。</p></div><aside class="hero-note"><strong>與 v2.5.4 分開儲存</strong><p>獨立練習模組，不讀寫原有342題專業題庫、每日任務或補強紀錄。請定期匯出備份。</p></aside></section>
 <nav class="tabs" aria-label="共同科目功能"><button id="tabEssay" class="active" type="button">✍ 國文作文</button><button id="tabEnglish" type="button">A+ 國考英文</button><button id="tabRecords" type="button">▤ 學習紀錄</button></nav>
 <div id="notice" class="alert" role="status" hidden></div>
 <section id="panelEssay">
   <h2>國文作文｜先寫清楚，再寫深入</h2>
+  <div class="panel" id="essayCoach">
+    <h3>兩週循環練習｜從寫作到訂正</h3>
+    <p class="small">依你的本機草稿及手動自評協助選題，不傳送作答、不假裝AI自動判斷程度。每兩週至少一篇短文、一篇長文，再回練弱點；考前提高限時練習頻率。</p>
+    <div class="coach-controls">
+      <label for="essayCoachStage">這次要做什麼
+        <select id="essayCoachStage">
+          <option value="short">短文｜理解材料與精確回答</option>
+          <option value="long">長文｜立意、例證與論證</option>
+          <option value="revise">訂正｜回到有回饋或待改進的文章</option>
+          <option value="check">階段驗收｜優先選尚未作答的題型</option>
+        </select>
+      </label>
+      <button type="button" id="essayCoachPick" class="btn primary">依本機紀錄選題</button>
+    </div>
+    <p id="essayCoachStatus" class="small" role="status">正在整理本機練習狀態……</p>
+  </div>
   <div class="layout">
-    <div class="panel"><h3>選擇練習</h3><label for="mode">練習模式</label><select id="mode"><option value="sentence">句子精修｜10分鐘</option><option value="paragraph">段落深化｜15分鐘</option><option value="opening">開頭與結尾｜20分鐘</option><option value="full">完整作文｜90分鐘</option></select><label for="essayType">作文題型</label><select id="essayType"><option value="all">全部題目</option><option value="short">短文寫作（20分）</option><option value="long">長文寫作（60分）</option><option value="original">既有12題（原創練習）</option></select><label for="prompt">作文題目</label><select id="prompt"></select><div class="prompt"><h3 id="promptTitle"></h3><p id="promptBody"></p><p class="small" id="promptTip"></p><p class="small" id="promptMeta"></p><a class="small" id="promptSource" href="#" rel="noopener noreferrer" target="_blank" hidden>檢視原始試題來源／官方解析 ↗</a></div><div class="timer"><span>本次計時</span><strong id="clock">10:00</strong><button class="btn" id="timerToggle">開始</button><button class="btn" id="timerReset">重設</button></div><p class="small">皆為原創模擬題，並非考選部正式題目。</p></div>
-    <div class="panel"><div class="editor-bar"><h3>我的作文</h3><span class="small"><span id="count">0</span> 字（含標點）</span></div><p class="small" id="saveStatus">本機自動保存</p><label for="essayText">作答區</label><textarea id="essayText" placeholder="先寫出真實經驗與觀點，不必刻意使用華麗詞藻。"></textarea><div class="buttons"><button class="btn" id="saveVersion">儲存修訂版本</button><button class="btn primary" id="copyReview">複製 ChatGPT 批改指令</button><button class="btn" id="clearEssay">清空草稿</button></div><p class="small">AI 批改需要自行貼到 ChatGPT；本站不會上傳文字或自動給正式考試分數。</p></div>
+    <div class="panel"><h3>選擇練習</h3><label for="mode">練習模式</label><select id="mode"><option value="sentence">句子精修｜10分鐘</option><option value="paragraph">段落深化｜15分鐘</option><option value="opening">開頭與結尾｜20分鐘</option><option value="full">完整作文｜依題型計時</option></select><label for="essayType">作文題型</label><select id="essayType"><option value="all">全部題目</option><option value="short">短文寫作（20分）</option><option value="long">長文寫作（60分）</option><option value="original">既有12題（原創練習）</option></select><label for="prompt">作文題目</label><select id="prompt"></select><div class="prompt"><h3 id="promptTitle"></h3><p id="promptBody"></p><p class="small" id="promptTip"></p><p class="small" id="promptMeta"></p><a class="small" id="promptSource" href="#" rel="noopener noreferrer" target="_blank" hidden>查看命題參考來源（可能為第三方轉錄） ↗</a></div><div class="timer"><span>本次計時</span><strong id="clock">10:00</strong><button class="btn" id="timerToggle">開始</button><button class="btn" id="timerReset">重設</button></div><p class="small">含12題原創題與120題依歷屆命題核心改編的練習題；本站新編題幹，並非考選部或大考中心原卷。</p></div>
+    <div class="panel"><div class="editor-bar"><h3>我的作文</h3><span class="small"><span id="count">0</span> 字（含標點）</span></div><p class="small" id="saveStatus">本機自動保存</p><label for="essayText">作答區</label><textarea id="essayText" placeholder="先寫出真實經驗與觀點，不必刻意使用華麗詞藻。"></textarea><div class="buttons"><button class="btn" id="saveVersion">儲存修訂版本</button><button class="btn primary" id="copyReview">複製 AI 初次批改提示詞</button><button class="btn" id="copyRevision" type="button" disabled>複製訂正複核提示詞</button><button class="btn" id="clearEssay">清空草稿</button></div><p class="small">AI 批改需要自行貼到 ChatGPT；本站不會上傳文字或自動給正式考試分數。</p></div>
   </div>
   <div class="bottom">
     <div class="panel"><h3>版本紀錄與回饋</h3><label for="version">儲存版本</label><select id="version"><option value="">尚無版本</option></select><div class="buttons"><button class="btn" id="viewVersion">檢視版本</button><button class="btn" id="restoreVersion">還原版本</button></div><pre id="versionPreview" class="vpreview" hidden></pre><label for="feedback">批改回饋</label><textarea id="feedback" placeholder="把 ChatGPT 提供的精修建議貼回來……"></textarea><button class="btn" id="saveFeedback">儲存回饋</button></div>
-    <div class="panel"><h3>寫作自我檢查</h3><p class="small">此為個人練習紀錄，不是國考成績。</p><div id="rubrics" class="rubric"></div><label for="nextGoal">下次想改善的重點</label><input id="nextGoal" placeholder="例如：把抽象感受寫成具體經驗"><div class="buttons"><button class="btn" id="saveSelf">儲存自評</button></div></div>
+    <div class="panel"><h3>寫作自我檢查</h3><p class="small">此為手動自評紀錄，不是國考成績；低分項目會用於回練提示。</p><div id="rubrics" class="rubric"></div><label for="nextGoal">下次想改善的重點</label><input id="nextGoal" placeholder="例如：把抽象感受寫成具體經驗"><div class="buttons"><button class="btn" id="saveSelf">儲存自評</button></div></div>
   </div>
   <div class="panel"><h3>初稿與修訂稿對照</h3><p class="small">先按「儲存修訂版本」保存初稿，參考批改回饋修改後，就能對照前後差異。系統只顯示文字變化，不會把字數增加當成文筆進步。</p><div class="buttons"><label for="compareBase" style="flex:1;min-width:180px;margin:0">對照基準版本<select id="compareBase"><option value="">尚無版本</option></select></label><button class="btn" type="button" id="compareRefresh">更新對照</button></div><div class="compare-grid"><div><strong>原稿（選定的已存版本）</strong><pre id="compareOriginal" class="vpreview">尚未儲存任何版本</pre></div><div><strong>現在的草稿（修訂中）</strong><pre id="compareCurrent" class="vpreview">尚未開始寫作</pre></div></div><p class="small" id="compareSummary">儲存初稿後，就能開始比較。</p></div>
 </section>
@@ -188,13 +204,79 @@ function renderCompare(){
  $('compareSummary').textContent=a.join('')===b.join('')?'目前內容與基準版本相同；請根據批改意見修訂。':
  '基準 '+a.length+'字 → 現稿 '+b.length+'字（'+(b.length-a.length>=0?'+':'')+(b.length-a.length)+'字）。第'+(j+1)+'字附近開始有差異；請觀察是否更具體、更通順、更有層次。';
 }
-function switchDraft(){flush();current=$('mode').value+':'+$('prompt').value;var i=Number($('prompt').value),d=draft(),q=topics[i][2];$('promptTitle').textContent=topics[i][0];$('promptBody').textContent=topics[i][1];$('promptTip').textContent=modes[$('mode').value][2]+(q?'｜'+q.requirements:'');$('promptMeta').textContent=q?'【歷屆試題改編／非官方原題】'+q.source.exam+'｜'+q.source.section+'｜'+q.source.status+'｜'+q.difficulty:'既有原創練習題（非歷屆試題改編）';$('promptSource').hidden=!q;if(q)$('promptSource').href=q.source.link;$('essayText').value=d.text||'';$('feedback').value=d.feedback||'';$('nextGoal').value=d.nextAction||'';['expression','reasoning','structure','meaning'].forEach(function(k){$('rubric-'+k).value=String((d.self||{})[k]||'')});$('count').textContent=Array.from($('essayText').value).length;renderVersions();resetTimer();$('saveStatus').textContent='本機自動保存'}
-function saveVersion(){flush();var d=draft();if(!d.text.trim()){show('請先輸入文字。',true);return}d.versions=Array.isArray(d.versions)?d.versions:[];d.versions.push({date:new Date().toISOString(),text:d.text,self:{...(d.self||{})},feedback:d.feedback||''});if(d.versions.length>40)d.versions.splice(1,1);save();renderVersions();show('修訂版本已保存。')}
+function essayHasWork(i){
+ return Object.keys(modes).some(function(m){var d=state.drafts[m+':'+i];return !!(d&&((d.text&&d.text.trim())||(Array.isArray(d.versions)&&d.versions.length)))});
+}
+function essayFullRecords(){
+ return topics.map(function(t,i){return {i:i,type:t[2]&&t[2].type,d:state.drafts['full:'+i]}}).filter(function(x){return !!(x.type&&x.d&&x.d.text&&x.d.text.trim())});
+}
+function reviseCandidates(){
+ return Object.entries(state.drafts).map(function(entry){var parts=entry[0].split(':'),i=Number(parts[1]),d=entry[1]||{},rub=Object.values(d.self||{});return {i:i,mode:parts[0],d:d,low:rub.some(function(x){return Number(x)>0&&Number(x)<=2})}})
+ .filter(function(x){return modes[x.mode]&&Number.isInteger(x.i)&&topics[x.i]&&x.d&&x.d.text&&x.d.text.trim()&&Array.isArray(x.d.versions)&&x.d.versions.length&&!!((x.d.feedback&&x.d.feedback.trim())||(x.d.nextAction&&x.d.nextAction.trim())||x.low)})
+ .sort(function(a,b){var av=a.d.versions.length<2?1:0,bv=b.d.versions.length<2?1:0;if(bv!==av)return bv-av;return String(b.d.updatedAt||'').localeCompare(String(a.d.updatedAt||''))});
+}
+function coachStats(){
+ var full=essayFullRecords(),short=full.filter(function(x){return x.type==='short'}).length,long=full.filter(function(x){return x.type==='long'}).length;
+ var revisit=reviseCandidates(),labels={expression:'文字表達',reasoning:'論述深度',structure:'文章層次',meaning:'旨意詮釋'};
+ var weak=Object.keys(labels).map(function(k){return {name:labels[k],n:Object.values(state.drafts).filter(function(d){var x=Number(((d||{}).self||{})[k]);return x>0&&x<=2}).length}}).filter(function(x){return x.n>0}).sort(function(a,b){return b.n-a.n});
+ $('essayCoachStatus').textContent='完整模式已有草稿：短文'+short+'題、長文'+long+'題｜可訂正'+revisit.length+'篇'+(weak.length?'｜自評待加強：'+weak.slice(0,2).map(function(x){return x.name+' '+x.n}).join('、'):'｜尚無1–2分自評紀錄')+'。未寫完或未批改不等於已達標。';
+}
+function freshEssay(type){
+ var a=topics.map(function(t,i){return {i:i,q:t[2]}}).filter(function(x){return x.q&&x.q.type===type});
+ return a.find(function(x){return !essayHasWork(x.i)})||a.sort(function(a,b){var x=(state.drafts['full:'+a.i]||{}).updatedAt||'',y=(state.drafts['full:'+b.i]||{}).updatedAt||'';return x.localeCompare(y)})[0];
+}
+function pickEssay(){
+ flush();var step=$('essayCoachStage').value||'short',record=null,pick=null;
+ if(step==='revise'){
+  record=reviseCandidates()[0];
+  if(!record){show('目前沒有已存初稿且有回饋、改進目標或低分自評的文章。先寫作、保存初稿，再貼回批改意見。',true);return}
+  pick={i:record.i};$('mode').value=record.mode;
+ }else{
+  var kind=step;
+  if(step==='check'){var full=essayFullRecords(),short=full.filter(function(x){return x.type==='short'}).length,long=full.filter(function(x){return x.type==='long'}).length;kind=short<=long?'short':'long'}
+  pick=freshEssay(kind);$('mode').value='full';
+ }
+ if(!pick){show('沒有符合條件的題目。',true);return}
+ $('essayType').value='all';listEssay();$('prompt').value=String(pick.i);switchDraft();
+ show('已選「'+topics[pick.i][0]+'」'+(step==='revise'?'；請先看前次回饋，再修改。':'；請先作答再批改。'));
+}
+function updateRevisionButton(){
+ var d=current&&state.drafts[current],base=d&&d.versions&&d.versions[0],t=$('essayText').value;
+ $('copyRevision').disabled=!(base&&base.text&&t.trim()&&base.text!==t);
+}
+function switchDraft(){flush();current=$('mode').value+':'+$('prompt').value;var i=Number($('prompt').value),d=draft(),q=topics[i][2];$('promptTitle').textContent=topics[i][0];$('promptBody').textContent=topics[i][1];$('promptTip').textContent=modes[$('mode').value][2]+(q?'｜'+q.requirements:'');$('promptMeta').textContent=q?'【歷屆試題改編／非官方原題】'+q.source.exam+'｜'+q.source.section+'｜'+q.source.status+'｜'+q.difficulty:'既有原創練習題（非歷屆試題改編）';$('promptSource').hidden=!q;if(q)$('promptSource').href=q.source.link;$('essayText').value=d.text||'';$('feedback').value=d.feedback||'';$('nextGoal').value=d.nextAction||'';['expression','reasoning','structure','meaning'].forEach(function(k){$('rubric-'+k).value=String((d.self||{})[k]||'')});$('count').textContent=Array.from($('essayText').value).length;renderVersions();resetTimer();$('saveStatus').textContent='本機自動保存';updateRevisionButton();coachStats()}
+function saveVersion(){flush();var d=draft();if(!d.text.trim()){show('請先輸入文字。',true);return}d.versions=Array.isArray(d.versions)?d.versions:[];d.versions.push({date:new Date().toISOString(),text:d.text,self:{...(d.self||{})},feedback:d.feedback||''});if(d.versions.length>40)d.versions.splice(1,1);save();renderVersions();updateRevisionButton();coachStats();show('修訂版本已保存。')}
 function version(){var i=$('version').value;return /^\d+$/.test(i)?(draft().versions||[])[Number(i)]:null}
 function viewVersion(){var v=version();if(!v){show('請先選擇版本。',true);return}$('versionPreview').textContent=v.text;$('versionPreview').hidden=false}
-function restore(){var v=version();if(!v)return;if(!confirm('要用這個版本覆蓋目前編輯器內容嗎？建議先儲存目前版本。'))return;$('essayText').value=v.text;$('count').textContent=Array.from(v.text).length;pending();renderCompare();show('已還原至編輯器。')}
-function review(){flush();var t=$('essayText').value;if(!t.trim()){show('請先作答。',true);return}var i=Number($('prompt').value),m=$('mode').value,q=topics[i][2];var s='你是臺灣司法特考三等觀護人國文作文的學習用批改助教。請以繁體中文批改，非正式閱卷，模擬分數只供參考。\n請先獨立分析題幹的作答任務，再評閱我的原文；不要把原題改編來源當成唯一標準答案。\n練習模式：'+modes[m][0]+'\n題目：'+topics[i][0]+'\n題幹：'+topics[i][1];if(q)s+='\n題型：'+(q.type==='short'?'短文（20分）':'長文（60分）')+'\n作答要求：'+q.requirements+'\n改編來源：'+q.source.exam+'，'+q.source.section+'（新編題目，並非原卷試題）；來源：'+q.source.link+'\n核心訓練：'+q.skills.join('、');s+='\n請依序提供：①整體評語與模擬分數（僅限完整作文，未完成全文不得硬評整題）②題意掌握、論證層次、素材例證、結構、文句表達之具體評估③逐段指出錯誤、離題、跳躍及論述空白④優先改正的三項問題⑤必要的示範段落及可立即實行的重寫練習。短文另核對各項提問與字數限制；長文檢查全文的主題推進、反面思考與結尾。保留作者立意與個人經驗，不得捏造事例，不得只換華麗詞藻。如資訊不足請明說。\n\n我的作文：\n'+t;var baseline=(draft().versions||[])[0];if(baseline&&baseline.text!==t)s+='\n\n以下為先前保存的初稿，請比較是否改進，亦指出可能退步處：\n'+baseline.text;function fallback(){var a=document.createElement('textarea');a.value=s;a.style.position='fixed';a.style.left='-10000px';document.body.append(a);a.select();var success=document.execCommand('copy');a.remove();if(!success)throw Error('copy failed')}if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(s).then(function(){show('已複製，貼到 ChatGPT 批改。')}).catch(function(){try{fallback();show('已複製。')}catch(e){show('複製失敗，請手動選取文字。',true)}})}else try{fallback();show('已複製。')}catch(e){show('複製失敗，請手動選取文字。',true)}}
-function self(){flush();var d=draft(),ratings={};['expression','reasoning','structure','meaning'].forEach(function(k){var x=Number($('rubric-'+k).value);if(x>=1&&x<=5)ratings[k]=x});d.self=ratings;d.updatedAt=new Date().toISOString();save();show('自評已保存。')}
+function restore(){var v=version();if(!v)return;if(!confirm('要用這個版本覆蓋目前編輯器內容嗎？建議先儲存目前版本。'))return;$('essayText').value=v.text;$('count').textContent=Array.from(v.text).length;pending();renderCompare();updateRevisionButton();show('已還原至編輯器。')}
+function copyEssayText(s){
+ function fallback(){var a=document.createElement('textarea');a.value=s;a.style.position='fixed';a.style.left='-10000px';document.body.append(a);a.select();var success=document.execCommand('copy');a.remove();if(!success)throw Error('copy failed')}
+ function fail(){show('複製失敗，請手動選取作文內容。',true)}
+ if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(s).then(function(){show('已複製提示詞，請貼至你慣用的AI工具。')}).catch(function(){try{fallback();show('已複製。')}catch(e){fail()}})}
+ else try{fallback();show('已複製。')}catch(e){fail()}
+}
+function review(){
+ flush();var t=$('essayText').value;if(!t.trim()){show('請先作答。',true);return}
+ var i=Number($('prompt').value),m=$('mode').value,q=topics[i][2],n=Array.from(t).length;
+ var s='你是臺灣司法特考三等觀護人國文作文的學習批改助教。請以繁體中文回覆。這不是正式閱卷，模擬分數不代表考選部評分。\n請先獨立分析下列【新編題幹】的作答任務與可能歧義，不受命題來源或擬答預設限制，再批改全文。\n練習模式：'+modes[m][0]+'\n題目：'+topics[i][0]+'\n完整題幹：'+topics[i][1]+'\n本站計算文字字數（含標點）：'+n;
+ if(q)s+='\n題型：'+(q.type==='short'?'短文（20分）':'長文（60分）')+'\n作答要求：'+q.requirements+'\n改編來源：'+q.source.exam+'，'+q.source.section+'；考題改編而非原卷。來源：'+q.source.link+'\n核心能力：'+(q.skills||[]).join('、');
+ if(m==='full'&&q&&q.type==='short')s+='\n【練習參考配分，非官方標準】題旨與材料理解4、完整回應各項要求6、分析推論5、組織表達5，合計20。請逐項說明模擬分數；如未完成或材料不足，拒絕硬給總分。須核對題目是否有明訂字數，依題幹限制評估；勿將本站通用建議誤認為正式試題規範。';
+ else if(m==='full'&&q&&q.type==='long')s+='\n【練習參考配分，非官方標準】題旨立意15、論證深度15、事例與素材12、結構10、文句8，合計60。請逐項說明模擬分數；如未完成、明顯離題或論證不足，清楚說明，不得將草稿當完整文章。';
+ else s+='\n本次為局部寫作訓練，請只評估練習任務是否達成，不推估整份國考作文分數。';
+ s+='\n依序回答：①先列出題幹必答事項，指出可能的陷阱與切題方向。②整體評語及模擬分數（僅在足以評估完整作文時；依上述練習配分）。③逐段檢查立意、材料理解、推論依據、例證、段落連貫與文字，標示原句及問題原因。④指出最需要先處理的3個問題與優先次序。⑤示範修改最多2個關鍵段落並說明如何修改，不要代寫整篇；保留我的立場與真實經驗，不得捏造事例。⑥提供一次10至15分鐘、可立即實行的針對性訂正作業。遇到欠缺資料或不同合理觀點請說明。\n\n【我的作文】\n'+t;
+ var d=draft(),base=(d.versions||[])[0];
+ if(base&&base.text!==t)s+='\n\n【保存的初稿，請額外核對改寫進退】\n'+base.text;
+ copyEssayText(s);
+}
+function revisionReview(){
+ flush();var d=draft(),base=(d.versions||[])[0],t=$('essayText').value,q=topics[Number($('prompt').value)][2];
+ if(!base||!base.text||!t.trim()||base.text===t){show('請先儲存初稿，再修改文字，才能複核訂正成果。',true);return}
+ var s='請擔任臺灣國家考試國文作文學習用訂正複核助教，以繁體中文回覆。本次只驗收修訂品質，不是正式閱卷；勿把字數增加直接判定為進步。\n練習題目：'+topics[Number($('prompt').value)][0]+'\n完整題幹：'+topics[Number($('prompt').value)][1]+'\n練習方式：'+modes[$('mode').value][0]+(q?'\n題型：'+(q.type==='short'?'20分短文':'60分長文')+'\n作答要求：'+q.requirements:'')+'\n請依序：①先獨立確認題意與答題任務。②用「原稿問題→修訂位置→是否改善→仍需調整」比較，不可只讚美或只換辭藻。③檢查原本被指出的問題是否真正解決，並辨識新增的矛盾、離題或退步。④指出仍缺乏的推論、具體例證、承轉，並給至多2段必要示範。⑤提出下次15分鐘可執行的訂正目標。若不足以評估整篇，請勿給完整作文分數。不得捏造經驗或當成官方閱卷。\n\n【原稿】\n'+base.text+'\n\n【本次修訂稿】\n'+t;
+ if(d.feedback&&d.feedback.trim())s+='\n\n【上次AI／教師批改意見（由本人貼回，未必全都正確，請獨立檢驗）】\n'+d.feedback;
+ if(d.nextAction&&d.nextAction.trim())s+='\n\n【上次設定的改進目標】\n'+d.nextAction;
+ copyEssayText(s);
+}
+function self(){flush();var d=draft(),ratings={};['expression','reasoning','structure','meaning'].forEach(function(k){var x=Number($('rubric-'+k).value);if(x>=1&&x<=5)ratings[k]=x});d.self=ratings;d.updatedAt=new Date().toISOString();save();coachStats();show('自評已保存。')}
 function makeRubrics(){[['expression','文字表達'],['reasoning','論述深度'],['structure','文章層次'],['meaning','旨意詮釋']].forEach(function(r){var box=document.createElement('div'),l=document.createElement('label'),s=document.createElement('select');l.textContent=r[1];l.htmlFor='rubric-'+r[0];s.id='rubric-'+r[0];[['','未評估'],['1','1 需加強'],['2','2 略有不足'],['3','3 基本清楚'],['4','4 表現良好'],['5','5 表現扎實']].forEach(function(a){s.add(new Option(a[1],a[0]))});box.append(l,s);$('rubrics').append(box)})}
 function listQuestions(){
  var f=$('filter').value;questionSet=[];
@@ -246,9 +328,9 @@ function importJSON(event){var file=event.target.files&&event.target.files[0];if
 function listEssay(){var typ=$('essayType').value||'all',before=$('prompt').value;$('prompt').replaceChildren();topics.forEach(function(t,i){var q=t[2];if(typ==='original'&&q||typ==='short'&&(!q||q.type!=='short')||typ==='long'&&(!q||q.type!=='long'))return;var label=q?(q.type==='short'?'短文':'長文')+'｜'+q.id+'｜'+t[0]:'原創｜'+String(i+1).padStart(2,'0')+'｜'+t[0];$('prompt').add(new Option(label,String(i)))});if(Array.from($('prompt').options).some(function(x){return x.value===before}))$('prompt').value=before;else if($('prompt').options.length)$('prompt').value=$('prompt').options[0].value}
 listEssay();makeRubrics();
 $('mode').addEventListener('change',switchDraft);$('prompt').addEventListener('change',switchDraft);$('essayType').addEventListener('change',function(){listEssay();switchDraft()});
-$('essayText').addEventListener('input',function(){$('count').textContent=Array.from(this.value).length;pending()});$('feedback').addEventListener('input',pending);$('nextGoal').addEventListener('input',pending);
+$('essayText').addEventListener('input',function(){$('count').textContent=Array.from(this.value).length;pending();updateRevisionButton()});$('feedback').addEventListener('input',pending);$('nextGoal').addEventListener('input',pending);
 $('compareBase').addEventListener('change',renderCompare);$('compareRefresh').addEventListener('click',function(){flush();renderCompare()});
-$('saveVersion').addEventListener('click',saveVersion);$('viewVersion').addEventListener('click',viewVersion);$('restoreVersion').addEventListener('click',restore);$('copyReview').addEventListener('click',review);$('clearEssay').addEventListener('click',function(){if(confirm('確定清空目前草稿？已存修訂版本仍會保留。')){$('essayText').value='';$('count').textContent='0';pending()}});$('saveFeedback').addEventListener('click',function(){flush();show('回饋已保存。')});$('saveSelf').addEventListener('click',self);
+$('saveVersion').addEventListener('click',saveVersion);$('viewVersion').addEventListener('click',viewVersion);$('restoreVersion').addEventListener('click',restore);$('copyReview').addEventListener('click',review);$('copyRevision').addEventListener('click',revisionReview);$('essayCoachPick').addEventListener('click',pickEssay);$('clearEssay').addEventListener('click',function(){if(confirm('確定清空目前草稿？已存修訂版本仍會保留。')){$('essayText').value='';$('count').textContent='0';pending();updateRevisionButton()}});$('saveFeedback').addEventListener('click',function(){flush();coachStats();show('回饋已保存。')});$('saveSelf').addEventListener('click',self);
 $('timerToggle').addEventListener('click',toggleTimer);$('timerReset').addEventListener('click',resetTimer);
 ['Essay','English','Records'].forEach(function(s){$('tab'+s).addEventListener('click',function(){tab(s)})});
 $('startDaily').addEventListener('click',function(){$('filter').value='daily';selected=-1;listQuestions();$('panelEnglish').scrollIntoView({block:'start',behavior:'smooth'})});
