@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'common-subjects/english-assistant/**'
+      - 'common-subjects/index.html'
       - '.github/workflows/check-staresto-link-coach.yml'
   push:
     branches:
@@ -19,4 +20,6 @@ jobs:
         with:
           node-version: '24'
       - name: Node unit and static tests
-        run: node common-subjects/english-assistant/test.cjs
+        run: |
+          node common-subjects/english-assistant/test.cjs
+          node common-subjects/english-assistant/test-vocab.cjs
