@@ -8,7 +8,7 @@ const page=fs.readFileSync(path.join(__dirname,'index.html'),'utf8');
 const app=fs.readFileSync(path.join(__dirname,'app.js'),'utf8');
 new vm.Script(app,{filename:'app.js'});
 assert.match(page,/每天固定背單字/);
-assert.match(page,/舊668題的作答歷程/);
+assert.match(page,/不修改 v0\.4 每日英文/,'ensure legacy records are explicitly protected');
 assert.match(page,/engine\.js/);
 assert.equal(e.STORAGE_KEY,'psd-staresto-link-coach-v06');
 assert.equal(e.today(new Date('2026-10-17T15:59:00Z')),'2026-10-17');
