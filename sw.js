@@ -5,7 +5,7 @@ const PREFIX='probation-offline-'+BASE.pathname+':';
 const CONTROL=PREFIX+'control', META=new URL('pwa/snapshot-state',BASE).href;
 const absolute=path=>new URL(path,BASE).href;
 // Keep the installed offline snapshot as a fallback, but refresh the daily study room when online.
-const NETWORK_FIRST=new Set(['daily-simulation/index.html','daily-simulation/app.js','daily-simulation/questions.json'].map(absolute));
+const NETWORK_FIRST=new Set(['daily-simulation/index.html','daily-simulation/app.js','daily-simulation/questions.json','daily-simulation/practice.css'].map(absolute));
 async function networkCopy(request){
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),7000);
   try{const response=await fetch(request,{cache:'no-store',signal:controller.signal});return response.ok?response:null;}
