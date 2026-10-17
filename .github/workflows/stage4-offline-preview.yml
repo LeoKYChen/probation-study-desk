@@ -46,6 +46,15 @@ jobs:
           test -s cloudflare-main-mirror-dist/offline/index.html
           cmp offline-manifest.json cloudflare-main-mirror-dist/offline-manifest.json
           cmp sw.js cloudflare-main-mirror-dist/sw.js
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          dist=Path('cloudflare-main-mirror-dist')
+          assets=json.loads(Path('offline-manifest.json').read_text())['assets']
+          missing=[x['url'] for x in assets if not (dist/x['url']).is_file()]
+          assert not missing, 'Offline manifest references unpublished files: '+', '.join(missing)
+          print('PASS: every offline cache asset is actually published by the Cloudflare mirror')
+          PY
       - name: Install isolated browser engines
         shell: bash
         run: |
