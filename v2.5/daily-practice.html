@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#102a43">
+<meta name="description" content="觀護人 v2.5.4 每日模擬題：30分鐘申論練習、一鍵複製AI批改、評語保存。">
+<title>每日模擬題 30 分鐘練習｜觀護人練習臺 v2.5.4</title>
+<link rel="stylesheet" href="daily-practice.css">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../pwa/icon-180.png">
+<link rel="stylesheet" href="../offline.css">
+<script src="../daily-simulation/model.js" defer></script>
+<script src="ai-simple-review-v254.js" defer></script>
+<script src="daily-practice.js" defer></script>
+<script src="../offline.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="./">觀護人練習臺 <span>v2.5.4</span></a>
+    <nav aria-label="主要導覽"><a href="./">考古題練習</a><a href="../daily-simulation/">每日題庫與參考資料</a></nav>
+  </div>
+</header>
+<main>
+  <section class="intro">
+    <div>
+      <p class="eyebrow">DAILY SIMULATION</p>
+      <h1>每日模擬題 · 30 分鐘申論練習</h1>
+      <p>先依題意完成作答，再交由 AI 輔助批改。舊題庫瀏覽頁照常保留；兩處共用同一份題庫與本機作答紀錄。</p>
+    </div>
+    <div class="summary"><strong id="count">—</strong><span>目前收錄題目</span><small id="written">—</small></div>
+  </section>
+  <div id="notice" role="status" aria-live="polite" class="notice">正在讀取每日模擬題……</div>
+  <div class="layout">
+    <aside class="question-panel" aria-label="每日模擬題選題">
+      <div class="panel-heading"><h2>選擇練習題</h2><button id="reload" type="button">更新題庫</button></div>
+      <label for="subject">科目</label><select id="subject"><option value="">全部科目</option></select>
+      <label for="search">搜尋考點、日期或題目</label><input id="search" type="search" placeholder="例如：少年、2026-10-15">
+      <p class="subtle" id="matches">讀取中……</p>
+      <div id="questionList" class="question-list" aria-label="選題清單"></div>
+    </aside>
+    <section class="practice-panel" aria-label="申論作答區">
+      <div id="empty" class="empty">請先從左側選擇一題開始練習。</div>
+      <div id="workspace" hidden>
+        <div class="question-top"><span id="meta"></span><span id="saved" role="status" aria-live="polite"></span></div>
+        <h2 id="questionTitle"></h2>
+        <div id="questionText" class="question-text"></div>
+        <section class="timer-area" aria-label="30分鐘作答計時">
+          <div><span class="timer-caption">申論作答時間</span><strong id="timer" class="timer" aria-live="off">30:00</strong><small id="timerStatus">尚未開始計時；也可自由練習。</small></div>
+          <div class="timer-actions"><button id="startTimer" class="primary" type="button">開始30分鐘</button><button id="resetTimer" class="secondary" type="button">重新計時</button></div>
+        </section>
+        <div class="answer-heading"><label for="answer">我的作答</label><span id="wordCount">0 字</span></div>
+        <textarea id="answer" maxlength="100000" spellcheck="false" placeholder="一、題目爭點&#10;二、法律或學理依據&#10;三、涵攝與實務應用&#10;四、結論"></textarea>
+        <div class="answer-actions"><label><input id="review" type="checkbox"> 加入待複習</label><span>作答自動儲存在本機</span></div>
+        <section class="ai-panel" aria-label="AI批改">
+          <h3>AI 申論批改</h3>
+          <p>複製本題與你的作答，貼到 ChatGPT。純法律跨科題合併評分；法律與學科混合題依設問分別評分。</p>
+          <button id="copyAI" class="primary full" type="button">一鍵複製 AI 批改</button>
+          <p id="copyStatus" class="subtle" role="status" aria-live="polite"></p>
+          <label for="aiFeedback">AI 批改結果（將 ChatGPT 的完整評語貼回保存）</label>
+          <textarea id="aiFeedback" maxlength="80000" rows="8" placeholder="貼上 AI 評語後，將自動保存於本題的原有每日模擬題紀錄。"></textarea>
+          <p id="feedbackStatus" class="subtle" role="status" aria-live="polite"></p>
+        </section>
+        <details class="references">
+          <summary>作答後查看參考爭點與架構</summary>
+          <h3>核心爭點</h3><div id="issues" class="reference-text"></div>
+          <h3>參考答題架構</h3><div id="outline" class="reference-text"></div>
+          <p><a id="browseSource" href="../daily-simulation/">前往原每日模擬題頁面，查看完整四欄表與相關資料 →</a></p>
+          <small>參考內容可能尚待核對；請勿視為官方標準答案。</small>
+        </details>
+      </div>
+    </section>
+  </div>
+  <section class="backup-panel" aria-label="每日模擬題紀錄管理">
+    <div><h2>每日模擬題紀錄</h2><p>本練習區與原每日題頁面共用作答及待複習紀錄；與考古題紀錄分開。清除前請先備份。</p></div>
+    <div class="backup-actions">
+      <button id="export" type="button">匯出每日題備份</button>
+      <button id="import" type="button">匯入每日題備份</button>
+      <button id="clear" class="danger" type="button">清除每日題學習紀錄</button>
+      <input id="importFile" type="file" accept=".json,application/json" hidden>
+    </div>
+  </section>
+  <footer>AI 批改為學習用途，不等於國家考試實際閱卷。複製、保存及計時不需 API；送往 ChatGPT 批改需要網路，且請勿貼入個人機密資料。</footer>
+</main>
+</body>
+</html>
