@@ -14,7 +14,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "112年司法特考三等國文",
       "year": 112,
-      "section": "短文：普魯斯特與記憶材料",
+      "section": "作文第一題（短文）：短文：普魯斯特與記憶材料",
       "link": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=112120&y=2023",
       "status": "已核對公開歷屆題意；官方年度檢索入口（原卷連結待逐題補對）"
     },
@@ -35,7 +35,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "112年司法特考三等國文",
       "year": 112,
-      "section": "短文：記憶與反思",
+      "section": "作文第一題（短文）：短文：記憶與反思",
       "link": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=112120&y=2023",
       "status": "已核對公開歷屆題意；官方年度檢索入口（原卷連結待逐題補對）"
     },
@@ -56,7 +56,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "113年司法特考三等國文",
       "year": 113,
-      "section": "短文：《論語》各言其志",
+      "section": "作文第一題（短文）：短文：《論語》各言其志",
       "link": "https://www.3people.com.tw/%E9%87%8D%E8%A6%81%E8%80%83%E8%A8%8A/%E8%80%83%E5%8F%A4%E9%A1%8C/%E5%85%AC%E8%81%B7/%E5%8F%B8%E6%B3%95%E7%89%B9%E8%80%83/113/%E4%B8%89%E7%AD%89/%E5%9C%8B%E6%96%87%EF%BC%88%E4%BD%9C%E6%96%87%E8%88%87%E6%B8%AC%E9%A9%97%EF%BC%89.pdf",
       "status": "公開完整歷屆試卷複本核對；非考選部直連"
     },
@@ -77,7 +77,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "113年司法特考三等國文",
       "year": 113,
-      "section": "短文：《論語》各言其志",
+      "section": "作文第一題（短文）：短文：《論語》各言其志",
       "link": "https://www.3people.com.tw/%E9%87%8D%E8%A6%81%E8%80%83%E8%A8%8A/%E8%80%83%E5%8F%A4%E9%A1%8C/%E5%85%AC%E8%81%B7/%E5%8F%B8%E6%B3%95%E7%89%B9%E8%80%83/113/%E4%B8%89%E7%AD%89/%E5%9C%8B%E6%96%87%EF%BC%88%E4%BD%9C%E6%96%87%E8%88%87%E6%B8%AC%E9%A9%97%EF%BC%89.pdf",
       "status": "公開完整歷屆試卷複本核對；非考選部直連"
     },
@@ -98,7 +98,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "114年司法特考三等國文",
       "year": 114,
-      "section": "短文：旅人甲乙與J/P型",
+      "section": "作文第一題（短文）：短文：旅人甲乙與J/P型",
       "link": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=411&code=114120&q=1&s=0101&t=Q",
       "status": "考選部官方試卷題意已核對"
     },
@@ -119,7 +119,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "114年司法特考三等國文",
       "year": 114,
-      "section": "短文：按部就班與隨遇而安",
+      "section": "作文第一題（短文）：短文：按部就班與隨遇而安",
       "link": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=411&code=114120&q=1&s=0101&t=Q",
       "status": "考選部官方試卷題意已核對"
     },
@@ -140,7 +140,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "112學年度學測國寫",
       "year": 112,
-      "section": "知性題：三明治與福爾摩斯華生",
+      "section": "國寫第一大題（知性）：知性題：三明治與福爾摩斯華生",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0N107292232944198982&xsmsid=0J066588036013658199",
       "status": "大考中心官方命題特色說明核對"
     },
@@ -161,7 +161,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "112學年度學測國寫",
       "year": 112,
-      "section": "知性題：計算與隨興態度",
+      "section": "國寫第一大題（知性）：知性題：計算與隨興態度",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0N107292232944198982&xsmsid=0J066588036013658199",
       "status": "大考中心官方命題特色說明核對"
     },
@@ -182,7 +182,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "112學年度學測國寫",
       "year": 112,
-      "section": "情意題：花草樹木氣味記憶",
+      "section": "國寫第二大題（情意）：情意題：花草樹木氣味記憶",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0N107292232944198982&xsmsid=0J066588036013658199",
       "status": "大考中心官方命題特色說明核對"
     },
@@ -203,7 +203,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "112學年度學測國寫",
       "year": 112,
-      "section": "情意題：氣味與童年記憶",
+      "section": "國寫第二大題（情意）：情意題：氣味與童年記憶",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0N107292232944198982&xsmsid=0J066588036013658199",
       "status": "大考中心官方命題特色說明核對"
     },
@@ -224,7 +224,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "113學年度學測國寫",
       "year": 113,
-      "section": "知性題：標籤現象",
+      "section": "國寫第一大題（知性）：知性題：標籤現象",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0O106352790519617185&xsmsid=0J066588036013658199",
       "status": "大考中心官方命題特色說明核對"
     },
@@ -245,7 +245,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "113學年度學測國寫",
       "year": 113,
-      "section": "知性題：標籤與自我認同",
+      "section": "國寫第一大題（知性）：知性題：標籤與自我認同",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0O106352790519617185&xsmsid=0J066588036013658199",
       "status": "大考中心官方命題特色說明核對"
     },
@@ -266,7 +266,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "114學年度學測國寫",
       "year": 114,
-      "section": "知性題：擬社會互動",
+      "section": "國寫第一大題（知性）：知性題：擬社會互動",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0P115549170130272725&xsmsid=0J066588036013658199",
       "status": "大考中心官方評分原則核對"
     },
@@ -287,7 +287,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "114學年度學測國寫",
       "year": 114,
-      "section": "知性題：擬社會互動",
+      "section": "國寫第一大題（知性）：知性題：擬社會互動",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0P115549170130272725&xsmsid=0J066588036013658199",
       "status": "大考中心官方評分原則核對"
     },
@@ -308,7 +308,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "114學年度學測國寫",
       "year": 114,
-      "section": "情意題：52赫茲鯨魚",
+      "section": "國寫第二大題（情意）：情意題：52赫茲鯨魚",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0P115549170130272725&xsmsid=0J066588036013658199",
       "status": "大考中心官方評分原則核對"
     },
@@ -329,7 +329,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "114學年度學測國寫",
       "year": 114,
-      "section": "情意題：52赫茲鯨魚",
+      "section": "國寫第二大題（情意）：情意題：52赫茲鯨魚",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0P115549170130272725&xsmsid=0J066588036013658199",
       "status": "大考中心官方評分原則核對"
     },
@@ -350,7 +350,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "115學年度學測國寫",
       "year": 115,
-      "section": "知性題：臉與倫理責任",
+      "section": "國寫第一大題（知性）：知性題：臉與倫理責任",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0Q111549146884050217&xsmsid=0J066588036013658199",
       "status": "大考中心官方評分原則核對"
     },
@@ -371,7 +371,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "115學年度學測國寫",
       "year": 115,
-      "section": "知性題：倫理責任與承擔",
+      "section": "國寫第一大題（知性）：知性題：倫理責任與承擔",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0Q111549146884050217&xsmsid=0J066588036013658199",
       "status": "大考中心官方評分原則核對"
     },
@@ -392,7 +392,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "115學年度學測國寫",
       "year": 115,
-      "section": "情意題：隔在我們之間的種種",
+      "section": "國寫第二大題（情意）：情意題：隔在我們之間的種種",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0Q111549146884050217&xsmsid=0J066588036013658199",
       "status": "大考中心官方評分原則核對"
     },
@@ -413,7 +413,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "115學年度學測國寫",
       "year": 115,
-      "section": "情意題：人際隔閡與回應",
+      "section": "國寫第二大題（情意）：情意題：人際隔閡與回應",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0Q111549146884050217&xsmsid=0J066588036013658199",
       "status": "大考中心官方評分原則核對"
     },
@@ -434,7 +434,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "112年司法特考三等國文",
       "year": 112,
-      "section": "長文：人生四大進路與理想圓滿",
+      "section": "作文第二題（長文）：長文：人生四大進路與理想圓滿",
       "link": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=112120&y=2023",
       "status": "已核對公開歷屆題意；官方年度檢索入口（原卷連結待逐題補對）"
     },
@@ -455,7 +455,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "112年司法特考三等國文",
       "year": 112,
-      "section": "長文：人生四大進路與理想圓滿",
+      "section": "作文第二題（長文）：長文：人生四大進路與理想圓滿",
       "link": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=112120&y=2023",
       "status": "已核對公開歷屆題意；官方年度檢索入口（原卷連結待逐題補對）"
     },
@@ -476,7 +476,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "113年司法特考三等國文",
       "year": 113,
-      "section": "長文：防微杜漸之我見",
+      "section": "作文第二題（長文）：長文：防微杜漸之我見",
       "link": "https://www.3people.com.tw/%E9%87%8D%E8%A6%81%E8%80%83%E8%A8%8A/%E8%80%83%E5%8F%A4%E9%A1%8C/%E5%85%AC%E8%81%B7/%E5%8F%B8%E6%B3%95%E7%89%B9%E8%80%83/113/%E4%B8%89%E7%AD%89/%E5%9C%8B%E6%96%87%EF%BC%88%E4%BD%9C%E6%96%87%E8%88%87%E6%B8%AC%E9%A9%97%EF%BC%89.pdf",
       "status": "公開完整歷屆試卷複本核對；非考選部直連"
     },
@@ -497,7 +497,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "113年司法特考三等國文",
       "year": 113,
-      "section": "長文：防微杜漸之我見",
+      "section": "作文第二題（長文）：長文：防微杜漸之我見",
       "link": "https://www.3people.com.tw/%E9%87%8D%E8%A6%81%E8%80%83%E8%A8%8A/%E8%80%83%E5%8F%A4%E9%A1%8C/%E5%85%AC%E8%81%B7/%E5%8F%B8%E6%B3%95%E7%89%B9%E8%80%83/113/%E4%B8%89%E7%AD%89/%E5%9C%8B%E6%96%87%EF%BC%88%E4%BD%9C%E6%96%87%E8%88%87%E6%B8%AC%E9%A9%97%EF%BC%89.pdf",
       "status": "公開完整歷屆試卷複本核對；非考選部直連"
     },
@@ -518,7 +518,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "114年司法特考三等國文",
       "year": 114,
-      "section": "長文：按部就班，還是隨遇而安",
+      "section": "作文第二題（長文）：長文：按部就班，還是隨遇而安",
       "link": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=411&code=114120&q=1&s=0101&t=Q",
       "status": "考選部官方試卷題意已核對"
     },
@@ -539,7 +539,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "114年司法特考三等國文",
       "year": 114,
-      "section": "長文：按部就班，還是隨遇而安",
+      "section": "作文第二題（長文）：長文：按部就班，還是隨遇而安",
       "link": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=411&code=114120&q=1&s=0101&t=Q",
       "status": "考選部官方試卷題意已核對"
     },
@@ -560,7 +560,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "112學年度學測國寫",
       "year": 112,
-      "section": "知性題：福爾摩斯與華生選擇",
+      "section": "國寫第一大題（知性）：知性題：福爾摩斯與華生選擇",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0N107292232944198982&xsmsid=0J066588036013658199",
       "status": "大考中心官方命題特色說明核對"
     },
@@ -581,7 +581,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "112學年度學測國寫",
       "year": 112,
-      "section": "知性題：算計與隨興",
+      "section": "國寫第一大題（知性）：知性題：算計與隨興",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0N107292232944198982&xsmsid=0J066588036013658199",
       "status": "大考中心官方命題特色說明核對"
     },
@@ -602,7 +602,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "112學年度學測國寫",
       "year": 112,
-      "section": "情意題：花草樹木的氣味記憶",
+      "section": "國寫第二大題（情意）：情意題：花草樹木的氣味記憶",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0N107292232944198982&xsmsid=0J066588036013658199",
       "status": "大考中心官方命題特色說明核對"
     },
@@ -623,7 +623,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "112學年度學測國寫",
       "year": 112,
-      "section": "情意題：氣味與情感記憶",
+      "section": "國寫第二大題（情意）：情意題：氣味與情感記憶",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0N107292232944198982&xsmsid=0J066588036013658199",
       "status": "大考中心官方命題特色說明核對"
     },
@@ -644,7 +644,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "113學年度學測國寫",
       "year": 113,
-      "section": "知性題：標籤現象",
+      "section": "國寫第一大題（知性）：知性題：標籤現象",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0O106352790519617185&xsmsid=0J066588036013658199",
       "status": "大考中心官方命題特色說明核對"
     },
@@ -665,7 +665,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "113學年度學測國寫",
       "year": 113,
-      "section": "知性題：標籤與自我認同",
+      "section": "國寫第一大題（知性）：知性題：標籤與自我認同",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0O106352790519617185&xsmsid=0J066588036013658199",
       "status": "大考中心官方命題特色說明核對"
     },
@@ -686,7 +686,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "114學年度學測國寫",
       "year": 114,
-      "section": "知性題：擬社會互動",
+      "section": "國寫第一大題（知性）：知性題：擬社會互動",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0P115549170130272725&xsmsid=0J066588036013658199",
       "status": "大考中心官方評分原則核對"
     },
@@ -707,7 +707,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "114學年度學測國寫",
       "year": 114,
-      "section": "知性題：擬社會互動",
+      "section": "國寫第一大題（知性）：知性題：擬社會互動",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0P115549170130272725&xsmsid=0J066588036013658199",
       "status": "大考中心官方評分原則核對"
     },
@@ -728,7 +728,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "114學年度學測國寫",
       "year": 114,
-      "section": "情意題：52赫茲鯨魚",
+      "section": "國寫第二大題（情意）：情意題：52赫茲鯨魚",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0P115549170130272725&xsmsid=0J066588036013658199",
       "status": "大考中心官方評分原則核對"
     },
@@ -749,7 +749,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "114學年度學測國寫",
       "year": 114,
-      "section": "情意題：52赫茲鯨魚",
+      "section": "國寫第二大題（情意）：情意題：52赫茲鯨魚",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0P115549170130272725&xsmsid=0J066588036013658199",
       "status": "大考中心官方評分原則核對"
     },
@@ -770,7 +770,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "115學年度學測國寫",
       "year": 115,
-      "section": "知性題：臉與倫理責任",
+      "section": "國寫第一大題（知性）：知性題：臉與倫理責任",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0Q111549146884050217&xsmsid=0J066588036013658199",
       "status": "大考中心官方評分原則核對"
     },
@@ -791,7 +791,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "115學年度學測國寫",
       "year": 115,
-      "section": "知性題：逃避或承擔責任",
+      "section": "國寫第一大題（知性）：知性題：逃避或承擔責任",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0Q111549146884050217&xsmsid=0J066588036013658199",
       "status": "大考中心官方評分原則核對"
     },
@@ -812,7 +812,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "115學年度學測國寫",
       "year": 115,
-      "section": "情意題：隔在我們之間的種種",
+      "section": "國寫第二大題（情意）：情意題：隔在我們之間的種種",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0Q111549146884050217&xsmsid=0J066588036013658199",
       "status": "大考中心官方評分原則核對"
     },
@@ -833,7 +833,7 @@ window.PSD_ESSAY_QUESTIONS = [
     "source": {
       "exam": "115學年度學測國寫",
       "year": 115,
-      "section": "情意題：人際隔閡與同理",
+      "section": "國寫第二大題（情意）：情意題：人際隔閡與同理",
       "link": "https://www.ceec.edu.tw/xcepaper/cont?sid=0Q111549146884050217&xsmsid=0J066588036013658199",
       "status": "大考中心官方評分原則核對"
     },
