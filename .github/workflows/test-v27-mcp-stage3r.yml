@@ -47,6 +47,9 @@ jobs:
       - name: Stage3r sourced-tier, date, abstract-only and offline HTML tests
         working-directory: experiments/v27-mcp-poc/stage3r-demo
         run: node --test --test-reporter=tap model.test.cjs | tee "$RUNNER_TEMP/stage3r-tests.log"
+      - name: Smoke-test actual synthetic category filter buttons using offline mock DOM
+        working-directory: experiments/v27-mcp-poc/stage3r-demo
+        run: node dom-smoke.cjs
       - name: Check previous immutable Stage3q no-deployment safety decisions
         run: |
           node --test --test-reporter=tap experiments/v27-mcp-poc/stage3q-readiness-ledger.test.cjs | tee "$RUNNER_TEMP/stage3q-tests.log"
