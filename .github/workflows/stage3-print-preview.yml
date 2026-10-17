@@ -61,7 +61,7 @@ jobs:
         shell: bash
         run: |
           npm install --prefix /tmp/stage3-print-browser --no-save playwright@1.62.1
-          /tmp/stage3-print-browser/node_modules/.bin/playwright install --with-deps chromium
+          /tmp/stage3-print-browser/node_modules/.bin/playwright install --with-deps chromium webkit
       - name: Browser PDF and A4 print acceptance using only synthetic data
         shell: bash
         env:
@@ -69,6 +69,8 @@ jobs:
         run: |
           set -euo pipefail
           node print/test-browser.cjs
+          TEST_PATH_PREFIX=/probation-study-desk node print/test-browser.cjs
+          TEST_BROWSER=webkit node print/test-browser.cjs
       - name: Reproducible Cloudflare mirror build and SHA checks
         shell: bash
         run: |
