@@ -1,0 +1,91 @@
+name: Stage 2 unified JSON backup safety and isolated preview
+
+on:
+  push:
+    branches:
+      - phase2/manual-json-backup-audit-20261017
+    paths:
+      - backup/**
+      - index.html
+      - scripts/build-cloudflare-main-mirror.py
+      - .github/workflows/stage2-json-backup-preview.yml
+  pull_request:
+    branches:
+      - main
+    paths:
+      - backup/**
+      - index.html
+      - scripts/build-cloudflare-main-mirror.py
+      - .github/workflows/stage2-json-backup-preview.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: stage2-json-backup-preview
+  cancel-in-progress: true
+
+jobs:
+  verify-and-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v6
+      - name: Static syntax and safety tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check backup/unified-core.js
+          node --check backup/app.js
+          node --check backup/test.cjs
+          node backup/test.cjs
+          python3 - <<'PY'
+          from pathlib import Path
+          from html.parser import HTMLParser
+          h=Path('backup/index.html').read_text(encoding='utf-8')
+          home=Path('index.html').read_text(encoding='utf-8')
+          assert './backup/' in home
+          assert 'backup/unified-core.js' not in home
+          assert h.count('id="importFile"')==1
+          assert h.count('id="confirmSafe"')==1
+          assert './unified-core.js' in h and './app.js' in h
+          assert 'Google Drive' in h
+          assert home.count('class="tile course-tile"')==2
+          assert home.count('class="tile explore-tile"')==3
+          HTMLParser().feed(h)
+          print('PASS backup UI links and 2+3 entrance unchanged')
+          PY
+      - name: Build same source website into isolated preview
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/build-cloudflare-main-mirror.py
+          test -s cloudflare-main-mirror-dist/backup/index.html
+          test -s cloudflare-main-mirror-dist/backup/unified-core.js
+          node --check cloudflare-main-mirror-dist/backup/unified-core.js
+      - name: Deploy dedicated preview only, never production
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/phase2/manual-json-backup-audit-20261017'
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy cloudflare-main-mirror-dist --project-name=probation-study30-test --branch=stage2-json-backup-preview
+      - name: Verify preview page and files after deploy
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/phase2/manual-json-backup-audit-20261017'
+        shell: bash
+        run: |
+          set -euo pipefail
+          for file in index.html backup/index.html backup/unified-core.js backup/app.js; do
+            pass=0
+            for attempt in 1 2 3 4 5 6; do
+              if curl -fsSL --max-time 20 "https://stage2-json-backup-preview.probation-study30-test.pages.dev/$file" -o /tmp/stage2-actual &&
+                cmp -s "cloudflare-main-mirror-dist/$file" /tmp/stage2-actual; then
+                pass=1
+                break
+              fi
+              sleep 7
+            done
+            test "$pass" = 1 || { echo "Preview was not byte-identical: $file"; exit 1; }
+          done
+          echo "PASS isolated preview matches GitHub test branch source"
