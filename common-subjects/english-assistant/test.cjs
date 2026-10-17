@@ -1,6 +1,9 @@
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
-const e=require('./engine.js');
+const engineCode=fs.readFileSync(path.join(__dirname,'engine.js'),'utf8');
+const engineCtx={module:{exports:{}},exports:{},Intl,Date,Array,Object,Set,Math,Number,String,JSON,RegExp};
+vm.runInNewContext(engineCode,engineCtx,{filename:'engine.js'});
+const e=engineCtx.module.exports;
 const page=fs.readFileSync(path.join(__dirname,'index.html'),'utf8');
 const app=fs.readFileSync(path.join(__dirname,'app.js'),'utf8');
 new vm.Script(app,{filename:'app.js'});
