@@ -17,11 +17,11 @@ function today(now=new Date()){
   return p.year+"-"+p.month+"-"+p.day;
 }
 function weekday(date){return new Date(date+"T00:00:00Z").getUTCDay()}
-function createState(){return {schema:STORAGE_KEY,days:{},completed:{},excluded:{}}}
+function createState(){return {schema:STORAGE_KEY,days:{},completed:{},excluded:{},wordDays:{},wordProgress:{},customWords:{}}}
 function plain(x){return x&&typeof x==="object"&&!Array.isArray(x)?x:{}}
 function normalize(value){
   if(!value||value.schema!==STORAGE_KEY)return createState();
-  return {schema:STORAGE_KEY,days:plain(value.days),completed:plain(value.completed),excluded:plain(value.excluded)};
+  return {schema:STORAGE_KEY,days:plain(value.days),completed:plain(value.completed),excluded:plain(value.excluded),wordDays:plain(value.wordDays),wordProgress:plain(value.wordProgress),customWords:plain(value.customWords)};
 }
 /* Source-ID manifest, 2026-10-17, links only. No copied prompts, explanations or answer data.
  * Vocab: staresto-create/JCEE-vocab-questions gsat/data.js @ cb12bce44779906c7331a22e342e1e4bc8db9db7.
