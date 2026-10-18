@@ -12,3 +12,21 @@ main{max-width:1140px;margin:auto;padding:28px 18px 70px}.hero{padding:15px 0 12
 .plan-list{display:grid;gap:10px;margin-top:16px}.day{border:1px solid #e0e8de;border-radius:10px;padding:12px 15px}.day h3{margin:0;font-size:15px;display:flex;justify-content:space-between}.day h3 small{font-weight:400;color:#6a806e}.day p{margin:7px 0 0;font-size:14px}.day.empty{background:#f9faf7;color:#748479}#planSummary{font-size:14px;font-weight:700;color:#355b42}footer{font-size:12px;text-align:center;color:#68796c;padding:24px;border-top:1px solid #d7e1d6}
 @media(max-width:700px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.fields{grid-template-columns:1fr}.card{padding:17px}.site-header{flex-wrap:wrap}.lesson-edit{width:100%}.lesson-edit label.title{flex:1;min-width:110px}.lesson-edit label.minutes{width:74px}.lesson-name{flex-basis:100%}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+
+/* 等寬按鈕與桌面科目設定 */
+.lesson-edit{display:grid;grid-template-columns:minmax(0,1.6fr) repeat(2,minmax(0,1fr));gap:8px;width:min(100%,530px);align-items:end}
+.lesson-edit label.title,.lesson-edit label.minutes{width:auto;min-width:0}
+.lesson-edit input{font-size:16px}
+.lesson-actions{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.lesson-actions button{width:100%;min-width:0;min-height:48px;line-height:1.4;text-align:center;white-space:normal;font-weight:750}
+.settings-full{grid-column:1/-1;border-top:1px solid #e1eae0;padding-top:12px;min-width:0}
+.settings-full h3{font-size:17px;margin:4px 0 7px}
+.subject-rules,.fixed-days{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.subject-rule,.fixed-day{display:flex;align-items:center;gap:9px;padding:10px;border:1px solid #e0e9e0;border-radius:9px;background:#f9fbf8}
+.subject-rule .include{display:flex;align-items:center;gap:7px;flex:1;min-width:0;font-size:14px;overflow-wrap:anywhere}
+.subject-rule .include input{width:18px;height:18px;min-width:18px}
+.subject-rule .weight{flex:0 0 95px;display:flex;gap:5px;align-items:center;font-size:13px}
+.subject-rule select,.fixed-day select{min-height:40px;min-width:0;max-width:100%;border:1px solid #b8cbbc;border-radius:7px;background:#fff;color:#233b34}
+.subject-rule select{width:53px}
+.fixed-day span{width:32px;font-weight:750}.fixed-day select{flex:1}
+@media(max-width:700px){.subject-rules,.fixed-days{grid-template-columns:1fr}.lesson-edit{width:100%;grid-template-columns:minmax(0,1.4fr) repeat(2,minmax(0,1fr))}.lesson-edit label.title,.lesson-edit label.minutes{width:auto;flex:auto;min-width:0}}
