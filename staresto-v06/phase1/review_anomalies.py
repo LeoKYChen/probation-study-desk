@@ -39,7 +39,22 @@ def answer_option_diagnosis(raw, normalized):
     target_answer = normalized.get("answer")
     raw_in_source = str(raw_answer) in source_keys if raw_answer is not None else False
     target_in_target = str(target_answer) in target_keys if target_answer is not None else False
-    if raw_answer is None:
+    missing_keys = sorted(set(source_keys) - set(target_keys))
+    from audit import simpl
+    prefix_matches = (
+        isinstance(source_opts, dict) and isinstance(target_opts, dict)
+        and all(k in source_opts and simpl(source_opts[k]) == simpl(target_opts[k])
+                for k in target_keys)
+    )
+    truncated_twelve = (
+        source_keys == [chr(x) for x in range(65, 77)]
+        and target_keys == [chr(x) for x in range(65, 75)]
+        and str(raw_answer) in ("K", "L")
+        and str(target_answer) == str(raw_answer)
+    )
+    if truncated_twelve:
+        reason = "來源12選項被截為10選項（K／L缺漏）"
+    elif raw_answer is None:
         reason = "原始答案欄位未確認"
     elif raw_in_source and not target_in_target:
         reason = "來源選項可對上答案，標準化資料待查"
@@ -54,6 +69,9 @@ def answer_option_diagnosis(raw, normalized):
         "normalizedOptionKeys": target_keys,
         "rawAnswerInOriginalKeys": raw_in_source,
         "normalizedAnswerInNormalizedKeys": target_in_target,
+        "missingOptionKeys": missing_keys,
+        "retainedOptionContentMatchesOriginal": prefix_matches,
+        "detectedTwelveOptionTruncation": truncated_twelve,
         "diagnostic": reason,
     }
 
@@ -194,7 +212,8 @@ def main():
     ]
     for diagnosis, count in Counter(x["diagnostic"] for x in standard_diagnostics).most_common():
         lines.append("| " + diagnosis + " | " + str(count) + " |")
-    lines += ["", "| 原始題號 | 原始答案鍵 | 標準化答案鍵 | 診斷 |",
+    lines += ["", "來源選項 A～L 若僅保留 A～J，必須恢復 K／L 的來源文字及題組上下文；此輪**只提供修正候選證據，尚未修改既有題庫**。",
+              "", "| 原始題號 | 原始答案鍵 | 標準化答案鍵 | 診斷 |",
               "|---|---|---|---|"]
     for x in standard_diagnostics:
         lines.append("| " + x["sourceItemId"] + " | " + str(x["rawAnswer"]) + " | "
