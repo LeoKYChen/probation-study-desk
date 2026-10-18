@@ -1,0 +1,33 @@
+name: One-time ZIP bridge regeneration
+on:
+  push:
+    branches: [feature/lecture-planner-20261018]
+permissions:
+  contents: write
+jobs:
+  regenerate:
+    if: startsWith(github.event.head_commit.message, 'build(zip): regenerate')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/lecture-planner-20261018
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Generate ZIP bridge from existing source-locked JSON
+        run: |
+          node scripts/generate-file-data.cjs --write
+          node scripts/generate-file-data.cjs --check
+      - name: Commit generated data only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add file-data/*.generated.js
+          if git diff --cached --quiet; then
+            echo "All generated data already matches source JSON"
+          else
+            git commit -m "build(zip): update generated offline JSON bridges"
+            git push origin HEAD:feature/lecture-planner-20261018
+          fi
