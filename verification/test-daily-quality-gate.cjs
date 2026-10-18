@@ -33,7 +33,7 @@ test('valid new question appended without touching any of 132 legacy records',()
  assert.equal(good.ready.length,1);
  assert.equal(good.proposedDataset.count,133);
  assert.equal(good.proposedDataset.questions.at(-1).id,'qa-new-criminology-20261019');
- assert.deepEqual(good.proposedDataset.questions.slice(0,132),initial.questions);
+ assert.equal(JSON.stringify(good.proposedDataset.questions.slice(0,132)),JSON.stringify(initial.questions),'legacy questions remain byte-equivalent after cross-runtime serialization');
  assert.equal(good.proposedDataset.updatedAt,'2026-10-18T12:00:00.000Z');
 });
 test('unchanged replay remains idempotent',()=>{
