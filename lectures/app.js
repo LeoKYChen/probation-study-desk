@@ -2,7 +2,7 @@
   'use strict';
   const core=window.PSDLectureCore, $=id=>document.getElementById(id);
   const make=(tag,txt,cls)=>{const e=document.createElement(tag);if(txt!==undefined)e.textContent=String(txt);if(cls)e.className=cls;return e;};
-  const minutes=n=>n>=60?(Math.floor(n/60)+' 小時'+(n%60?' '+n%60+' 分':''): ''):n+' 分鐘';
+  const minutes=n=>n>=60?Math.floor(n/60)+' 小時'+(n%60?' '+n%60+' 分':''):n+' 分鐘';
   let state=core.empty(),canSave=true,draft=null;
   function tell(text,bad=false){$('message').textContent=text;$('message').dataset.error=bad?'1':'0';}
   function save(next){
