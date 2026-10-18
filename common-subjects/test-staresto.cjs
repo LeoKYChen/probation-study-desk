@@ -28,7 +28,7 @@ assert.match(html, /id="starestoPanel"[^>]*hidden aria-hidden="true"/, 'embedded
 assert.match(html, /id="starestoExternalRecords"[^>]*hidden aria-hidden="true"/, 'manual external tracking UI hidden');
 assert.match(html, /id="starestoExternalOnly"[^>]*aria-labelledby="starestoExternalOnlyTitle"/, 'simple external link panel shown');
 const externalPanelStart=html.indexOf('id="starestoExternalOnly"');
-const primary=html.slice(externalPanelStart,html.indexOf('</div>',externalPanelStart)+6);
+const primary=html.slice(externalPanelStart,html.indexOf('<!-- 原創80題',externalPanelStart));
 assert.ok(externalPanelStart>=0 && primary.includes('href="https://staresto-create.github.io/JCEE-vocab-questions/"'), 'original-site root URL exists in visible card');
 assert.ok(primary.includes('target="_blank" rel="noopener noreferrer"'), 'external link opens securely');
 assert.ok(html.includes('href="./english-assistant/"'), 'hidden assistant link retained for later restoration');
