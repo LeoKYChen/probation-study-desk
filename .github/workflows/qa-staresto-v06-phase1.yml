@@ -47,10 +47,12 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python -m py_compile staresto-v06/phase1/audit.py staresto-v06/phase1/test_audit.py staresto-v06/phase1/deep_review.py
+          python -m py_compile staresto-v06/phase1/audit.py staresto-v06/phase1/test_audit.py staresto-v06/phase1/deep_review.py staresto-v06/phase1/review_anomalies.py staresto-v06/phase1/test_anomalies.py
           python staresto-v06/phase1/audit.py
           python staresto-v06/phase1/test_audit.py
           python staresto-v06/phase1/deep_review.py
+          python staresto-v06/phase1/review_anomalies.py
+          python staresto-v06/phase1/test_anomalies.py
       - name: Verify existing v0.4 engine regressions (date-independent)
         shell: bash
         run: |
