@@ -27,10 +27,10 @@ assert.match(html, /id="starestoIntegratedEntry"[^>]*hidden aria-hidden="true"/,
 assert.match(html, /id="starestoPanel"[^>]*hidden aria-hidden="true"/, 'embedded resource recommendations hidden');
 assert.match(html, /id="starestoExternalRecords"[^>]*hidden aria-hidden="true"/, 'manual external tracking UI hidden');
 assert.match(html, /id="starestoExternalOnly"[^>]*aria-labelledby="starestoExternalOnlyTitle"/, 'simple external link panel shown');
-const primary=html.match(/<div class="panel" id="starestoExternalOnly"[\\s\\S]*?<\\/div>/);
-assert.ok(primary, 'original-site panel exists');
-assert.match(primary[0], /href="https:\\/\\/staresto-create\\.github\\.io\\/JCEE-vocab-questions\\/"/, 'original-site root URL');
-assert.match(primary[0], /target="_blank" rel="noopener noreferrer"/, 'external links open securely');
+const externalPanelStart=html.indexOf('id="starestoExternalOnly"');
+const primary=html.slice(externalPanelStart,html.indexOf('</div>',externalPanelStart)+6);
+assert.ok(externalPanelStart>=0 && primary.includes('href="https://staresto-create.github.io/JCEE-vocab-questions/"'), 'original-site root URL exists in visible card');
+assert.ok(primary.includes('target="_blank" rel="noopener noreferrer"'), 'external link opens securely');
 assert.ok(html.includes('href="./english-assistant/"'), 'hidden assistant link retained for later restoration');
 assert.ok(fs.existsSync(path.join(root,'daily','index.html')),'v0.4 archived daily course still exists');
 assert.ok(html.includes('id="legacy80ResetControls" hidden'),'original-80 reset remains hidden');
