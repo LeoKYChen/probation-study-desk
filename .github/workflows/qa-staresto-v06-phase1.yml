@@ -60,7 +60,16 @@ jobs:
           node common-subjects/daily/test-v04.cjs
       - name: On PRs require committed reports to match generated evidence
         if: github.event_name == 'pull_request'
-        run: git diff --exit-code -- staresto-v06/phase1/output
+        shell: bash
+        run: |
+          set -euo pipefail
+          git diff --exit-code -- staresto-v06/phase1/output
+          # git diff alone misses newly generated UNTRACKED outputs.
+          if [[ -n "$(git status --porcelain --untracked-files=all -- staresto-v06/phase1/output)" ]]; then
+            git status --short --untracked-files=all -- staresto-v06/phase1/output
+            echo "Generated report outputs differ from committed evidence."
+            exit 1
+          fi
       - name: Archive audit evidence without publishing questions
         uses: actions/upload-artifact@v4
         with:
