@@ -53,6 +53,21 @@
 - [**列印／PDF 中心**](https://leokychen.github.io/probation-study-desk/print/)：整理已儲存的申論與作文，使用瀏覽器原生列印功能另存 PDF。
 - [**離線閱讀與作答**](https://leokychen.github.io/probation-study-desk/offline/)：在線上先下載指定資源快照，再於相同網站來源進行支援範圍內的離線學習。
 
+### v2.5 第一階段介面調整（2026-10-18）
+
+為簡化練習畫面，v2.5 考古題練習臺已將以下兩個**顯示區塊暫時隱藏**，並非刪除功能或資料：
+
+| 介面項目 | 目前狀態 | 保留項目 |
+| --- | --- | --- |
+| 考科重點地圖內的「查看完整重點整理、章節優先順序與來源」 | 暫時隱藏展開區塊 | 原始考點文字、章節資料、考點分類及既有歷屆試題連結 |
+| 「補強清單」 | 暫時隱藏清單區塊 | 本機作答紀錄、逐點核對、誤判回饋、補強標記及既有計算程式 |
+
+- **原有的考科重點地圖仍為文字／列表式介面**；本階段**沒有**開發 Obsidian 式節點關聯圖。
+- 既有練習、評分、資料備份與還原流程維持原狀；隱藏不會自動清空任何瀏覽器紀錄。
+- 為遵守歷史首頁的完整性驗證，`legacy-home.html` 原有「查看補強清單」捷徑仍保留，但目標 v2.5 頁面上的清單已隱藏。
+- 維護者可於 `v2.5/study-map.js` 將 `SHOW_FULL_NOTES` 設為 `true`，以及於 `v2.5/review25.js` 將 `SHOW_REVIEW_LIST` 設為 `true`，分別恢復顯示。
+- 此調整由 [PR #40](https://github.com/LeoKYChen/probation-study-desk/pull/40) 合併至 `main`；當日 [GitHub Pages 部署](https://github.com/LeoKYChen/probation-study-desk/actions/runs/39141678593) 與 [Cloudflare 正式同步流程](https://github.com/LeoKYChen/probation-study-desk/actions/runs/39141679062) 均顯示成功。後續部署狀態仍應以 [GitHub Actions](https://github.com/LeoKYChen/probation-study-desk/actions) 最新紀錄為準。
+
 ### AI 在本站扮演的角色
 
 本站的「一鍵複製 AI 批改」是**提示詞工作流**：複製題幹、個人答案與批改規則，使用者自行貼到 ChatGPT 等工具取得回饋，再把評語貼回本站保存。這**不是本站直接呼叫 AI API 的自動閱卷**，也不代表 AI 回答已完成法規或實務見解查核。對外貼送內容前，請自行刪除敏感資料。
