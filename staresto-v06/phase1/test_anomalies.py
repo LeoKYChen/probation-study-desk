@@ -31,6 +31,12 @@ def main():
     assert len({q["id"] for q in choice}) == len(choice)
     assert all(q["manualReviewRequired"] and q["published"] is False for q in choice)
     assert all(q["sourcePath"] == "passage-completion/zhikao/items.json" for q in choice)
+    assert all(q["detectedTwelveOptionTruncation"] is True for q in choice)
+    assert all(q["missingOptionKeys"] == ["K", "L"] for q in choice)
+    assert all(q["rawAnswer"] == q["normalizedAnswer"] and q["rawAnswer"] in ("K", "L") for q in choice)
+    assert all(q["rawOptionKeys"] == list("ABCDEFGHIJKL") for q in choice)
+    assert all(q["normalizedOptionKeys"] == list("ABCDEFGHIJ") for q in choice)
+    assert all(q["retainedOptionContentMatchesOriginal"] for q in choice)
     assert sum(audit["bySourcePath"].values()) == len(rows)
     assert sum(audit["overlap"].values()) == len(rows)
     assert audit["flagCounts"][ANSWER_FLAG] == summary["blockingReasons"][ANSWER_FLAG]
