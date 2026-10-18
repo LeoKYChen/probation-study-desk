@@ -70,6 +70,7 @@ var DailyQuestionQualityGate = (function () {
     var header=['理論／方法','理論／方法說明','核心概念','少年個案應用'];
     for(var h=0;h<4;h++)if(q.theoryTable[0][h].trim()!==header[h])return '理論與個案表標題不相容';
     if(!text(q.sourceReference))return '原試題出處欄位空白：應標明原創或經核實的改編來源';
+    if(q.warnings!==undefined&&!Array.isArray(q.warnings))return 'warnings 欄位必須是陣列';
     var badWarnings=(q.warnings||[]).filter(function(w){
       return /(?:解析失敗|來源輪替科目未能唯一辨識|待分類|缺少獨立|缺少答題|來源科目未能直接確認)/.test(w);
     });
@@ -83,6 +84,11 @@ var DailyQuestionQualityGate = (function () {
         return '題源宣稱改編自官方考古題，但沒有原卷 PDF／原卷檔案連結；須人工核實';
     }
     return '';
+  }
+  function sourceKey(q){
+    if(!q||!text(q.sourceDocumentId)||q.sourceQuestionIndex===undefined||
+       q.sourceQuestionIndex===null||text(String(q.sourceQuestionIndex))==='')return '';
+    return text(q.sourceDocumentId)+'#'+String(q.sourceQuestionIndex).trim();
   }
   function addIssue(target,q,index,code,description){
     target.push({index:index,id:text(q&&q.id),code:code,reason:description});
@@ -126,12 +132,21 @@ var DailyQuestionQualityGate = (function () {
       var bad=shapeProblem(q);
       if(bad){addIssue(report.blocked,q,i,'SHAPE_OR_CONTENT',bad);continue;}
       var fingerprint=canonical(q.question);
-      var exact=null,close=null;
+      var exact=null,close=null,sourceConflict=null;
+      var importSourceKey=sourceKey(q);
       for(var j=0;j<seen.length;j++){
         var candidate=seen[j],existingFp=canonical(candidate.question);
+        if(importSourceKey&&sourceKey(candidate)===importSourceKey){
+          sourceConflict=candidate;
+          if(fingerprint!==existingFp)break;
+        }
         if(fingerprint&&fingerprint===existingFp){exact=candidate;break;}
         if(fingerprint.length>=150&&existingFp.length>=150&&
            fingerprint.slice(0,120)===existingFp.slice(0,120))close=candidate;
+      }
+      if(sourceConflict){
+        addIssue(report.blocked,q,i,'SOURCE_SLOT_CONFLICT','同一來源文件段落已被不同 ID 收錄：'+sourceConflict.id);
+        continue;
       }
       if(exact){
         addIssue(report.blocked,q,i,'EXACT_DUPLICATE','與已存在題目重複：'+exact.id);
