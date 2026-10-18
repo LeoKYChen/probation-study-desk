@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#245b48">
+<meta name="description" content="觀護人學習平台函授課程與進度自動調整；不需帳號、無需付費AI。">
+<title>函授學習管理｜觀護人學習平台</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">← 觀護人學習平台</a><span>函授學習管理</span><a href="../backup/">完整備份中心 ↗</a></header>
+<main>
+  <section class="hero">
+    <p class="eyebrow">SELF-PACED LEARNING</p>
+    <h1>函授學習管理</h1>
+    <p>把課程進度記清楚，落後時重新安排，不另外增加每天的讀書時間。</p>
+    <p class="notice">此功能與既有考古題、每日30分鐘練習及弱點診斷分開記錄；不會修改原有學習紀錄。資料只存在目前瀏覽器，跨裝置請使用完整 JSON 備份中心。</p>
+  </section>
+  <p id="message" role="status" aria-live="polite"></p>
+  <section class="stats" aria-label="函授學習概況">
+    <article><span>已完成／總堂數</span><strong id="lessonStat">0／0</strong></article>
+    <article><span>總觀看完成率</span><strong id="percentStat">—</strong></article>
+    <article><span>剩餘課程時數</span><strong id="remainingStat">0 分鐘</strong></article>
+    <article><span>預計完課日</span><strong id="forecastStat">—</strong></article>
+  </section>
+  <section class="card" aria-labelledby="addTitle">
+    <div class="section-title"><h2 id="addTitle">新增函授課程</h2><span>一口氣建立整門課的堂次</span></div>
+    <form id="courseForm" class="fields">
+      <label>科目 <select id="courseSubject" required></select></label>
+      <label>課程名稱 <input id="courseName" maxlength="100" required placeholder="例如：心理學總複習"></label>
+      <label>總堂數 <input id="courseCount" type="number" min="1" max="120" required value="10"></label>
+      <label>每堂分鐘數 <input id="courseDuration" type="number" min="1" max="1440" required value="120"></label>
+      <button class="primary" type="submit">新增課程與堂次</button>
+    </form>
+    <p class="hint">各堂時長可在建立後個別修改，觀看進度也可按分鐘填寫。</p>
+  </section>
+  <section class="card" aria-labelledby="progressTitle">
+    <div class="section-title"><h2 id="progressTitle">我的函授進度</h2><span>逐堂記錄已看分鐘數</span></div>
+    <div id="courseList" class="course-list"><p>目前尚未新增課程。</p></div>
+  </section>
+  <section class="card" aria-labelledby="settingTitle">
+    <div class="section-title"><h2 id="settingTitle">讀書時間與完課目標</h2><span>每週時數有上限，不自動加班</span></div>
+    <form id="settingsForm" class="fields">
+      <label>平日每天可讀書（分鐘）<input id="weekdayMinutes" type="number" min="0" max="1440" required></label>
+      <label>週末每天可讀書（分鐘）<input id="weekendMinutes" type="number" min="0" max="1440" required></label>
+      <label>每天預留原有練習／複習（分鐘）<input id="reserveMinutes" type="number" min="0" max="1440" required></label>
+      <label>考試日期（選填）<input id="examDate" type="date" min="2000-01-01" max="2100-12-31"></label>
+      <label>考前預留複習天數<input id="reviewDays" type="number" min="0" max="365" required></label>
+      <button class="primary" type="submit">儲存時間設定</button>
+    </form>
+    <p id="timeNote" class="hint"></p>
+    <p id="riskNote" class="risk" role="status"></p>
+  </section>
+  <section class="card" aria-labelledby="planTitle">
+    <div class="section-title"><h2 id="planTitle">函授進度自動調整</h2><span>按尚未完成的分鐘數重新分配</span></div>
+    <p class="hint">系統以今天起連續7天為範圍排程，先扣除每天預留的原有練習時間。每堂函授可拆成多個時段；沒有時數就不硬塞課程。調整後須按確認才會儲存。</p>
+    <p id="lateNote" class="late-note"></p>
+    <div class="actions">
+      <button type="button" class="primary" id="previewButton">預覽新進度安排</button>
+      <button type="button" id="confirmButton" disabled>確認採用這份計畫</button>
+    </div>
+    <div id="planSummary" aria-live="polite"></div>
+    <div id="planList" class="plan-list"></div>
+  </section>
+</main>
+<footer>資料不會自動同步手機與電腦。若尚未確認備份成功，請勿清除瀏覽器網站資料。所有課程時長與考試日期均由使用者自行設定。</footer>
+<script src="./core.js"></script><script src="./app.js"></script>
+</body></html>
