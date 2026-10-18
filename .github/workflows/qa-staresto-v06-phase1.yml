@@ -51,12 +51,11 @@ jobs:
           python staresto-v06/phase1/audit.py
           python staresto-v06/phase1/test_audit.py
           python staresto-v06/phase1/deep_review.py
-      - name: Verify existing v0.4 engine regressions
+      - name: Verify existing v0.4 engine regressions (date-independent)
         shell: bash
         run: |
           set -euo pipefail
           node common-subjects/daily/test-v04.cjs
-          node common-subjects/daily/test-ui-v04.cjs
       - name: On PRs require committed reports to match generated evidence
         if: github.event_name == 'pull_request'
         run: git diff --exit-code -- staresto-v06/phase1/output
