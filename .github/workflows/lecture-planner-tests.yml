@@ -26,7 +26,7 @@ jobs:
           node backup/test.cjs
 
   regenerate-source-locked-zip:
-    if: github.event_name == 'push' && startsWith(github.event.head_commit.message, 'build(zip): regenerate')
+    if: "github.event_name == 'push' && startsWith(github.event.head_commit.message, 'build(zip): regenerate')"
     runs-on: ubuntu-latest
     permissions:
       contents: write
