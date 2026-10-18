@@ -1,7 +1,10 @@
 'use strict';
 const assert=require('node:assert/strict');
-const core=require('./core.js');
-const backup=require('../backup/unified-core.js');
+const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
+// package.json 設為 type:module；用 VM 執行瀏覽器 UMD 檔並取得其 CommonJS export。
+function load(file){const scope={module:{exports:{}}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,file),'utf8'),scope,{filename:file});return scope.module.exports;}
+const core=load('./core.js');
+const backup=load('../backup/unified-core.js');
 function fake(seed={}){
  const items=new Map(Object.entries(seed));
  return {items,getItem(k){return items.has(k)?items.get(k):null;},setItem(k,v){items.set(k,String(v));},removeItem(k){items.delete(k);}};
