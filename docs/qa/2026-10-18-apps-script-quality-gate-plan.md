@@ -78,3 +78,13 @@ const candidateJson = JSON.stringify(report.proposedDataset, null, 2);
 ## 5. 下一步
 
 取得現行 Apps Script `syncDailyResources` 及 MD 擷取／GitHub 發布相關函式，再對照既有欄位接入 QA 版、以合成 Google Docs 測試冪等及錯誤回復。通過後才提出正式版合併與上線建議；原有 342 題持續停用，第三階段每週學習建議仍照原計畫保留。
+
+
+## 6. QA 執行結果（已完成）
+
+- **[GitHub Actions #39125397914](https://github.com/LeoKYChen/probation-study-desk/actions/runs/39125397914)**：`daily-prepublish-validation` 成功，所有步驟 `success`。
+- 新增品質閘門的 22 項回歸測試全數通過，包含 132 題既有資料不變、合法新題加總、空批次與錯誤配分擋下、編輯文字漏入、跨星期科目錯誤、相同 ID 異文阻擋、同 ID 同內容重跑冪等、全文重複阻擋、疑似重複轉人工複核、同來源同段落 ID 衝突、沒有官方原卷 URL 的改編宣稱、單批部分失敗不允許部分發布等。
+- 舊有 `verification/qa-daily-cleanup-20261018.cjs`、`verification/check-daily-v254.cjs`、`backup/test.cjs`、`print/test.cjs` 全數通過。
+- 首輪 [#39125357038](https://github.com/LeoKYChen/probation-study-desk/actions/runs/39125357038) 測試因 Node VM 不同 realm 的陣列原型比對失敗；修正為跨執行環境 JSON 序列化一致性比對，**僅修改測試程式，無正式功能修改**。最新重跑成功。
+- GitHub Actions 工作流程只包含讀取、Node 測試及說明，未包含正式 Apps Script 或 GitHub 題庫發布動作。
+- **狀態判定：獨立匯入前品質閘門程式與測試通過；正式 Apps Script 尚未整合，因此未完成現場同步驗收。**
