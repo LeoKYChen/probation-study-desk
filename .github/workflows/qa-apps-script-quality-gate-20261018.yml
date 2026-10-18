@@ -1,0 +1,48 @@
+name: QA Apps Script daily import quality gate
+on:
+  push:
+    branches: [feat/daily-import-quality-gate-20261018]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  daily-prepublish-validation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Enforce QA-only scope and original source unchanged
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE=36c50370a115ce1bea0c74f5b630f9ea8cda6cbe
+          git merge-base --is-ancestor "$BASE" HEAD
+          git diff --name-only "$BASE" HEAD | sort >/tmp/actual
+          printf '%s\n' \
+            '.github/workflows/qa-apps-script-quality-gate-20261018.yml' \
+            'docs/qa/2026-10-18-apps-script-quality-gate-plan.md' \
+            'integrations/apps-script/daily-quality-gate.gs' \
+            'verification/test-daily-quality-gate.cjs' | sort >/tmp/expected
+          diff -u /tmp/expected /tmp/actual
+          git diff --quiet "$BASE" HEAD -- daily-simulation/questions.json daily-simulation/app.js daily-simulation/model.js
+          echo "PASS: only isolated Apps Script candidate, documentation, and tests added"
+      - name: Execute all new import quality gate tests on existing 132-item corpus
+        run: |
+          set -euo pipefail
+          node --check verification/test-daily-quality-gate.cjs
+          node verification/test-daily-quality-gate.cjs
+      - name: Regression - no new loss of legacy answers or backup compatibility
+        run: |
+          set -euo pipefail
+          node verification/qa-daily-cleanup-20261018.cjs
+          node verification/check-daily-v254.cjs
+          node backup/test.cjs
+          node print/test.cjs
+      - name: No publishing, no credential use
+        run: |
+          echo "PASS: this QA workflow contains no GitHub PUT, Google Drive write, Apps Script deployment, or production release steps"
