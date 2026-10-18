@@ -33,8 +33,24 @@ jobs:
       - name: Install isolated headless Chromium
         run: |
           npm install --prefix /tmp/json-stability-qa --no-save playwright@1.62.1
-          /tmp/json-stability-qa/node_modules/.bin/playwright install --with-deps chromium
-      - name: Actual browser download import conflict and reload
+          /tmp/json-stability-qa/node_modules/.bin/playwright install --with-deps chromium webkit
+      - name: Actual Chromium browser download import conflict and reload
         env:
           NODE_PATH: /tmp/json-stability-qa/node_modules
         run: node backup/test-browser.cjs
+      - name: Actual WebKit browser download import conflict and reload
+        env:
+          NODE_PATH: /tmp/json-stability-qa/node_modules
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          src=Path('backup/test-browser.cjs').read_text()
+          old_import="const {chromium}=require('playwright');"
+          old_launch="browser=await chromium.launch({headless:true})"
+          assert old_import in src and old_launch in src
+          src=src.replace(old_import,"const {chromium,webkit}=require('playwright');",1).replace(old_launch,"browser=await webkit.launch({headless:true})",1)
+          Path('backup/test-browser-webkit.tmp.cjs').write_text(src)
+          PY
+          node backup/test-browser-webkit.tmp.cjs
