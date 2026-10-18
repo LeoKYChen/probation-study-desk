@@ -30,3 +30,6 @@ main{max-width:1140px;margin:auto;padding:28px 18px 70px}.hero{padding:15px 0 12
 .subject-rule select{width:53px}
 .fixed-day span{width:32px;font-weight:750}.fixed-day select{flex:1}
 @media(max-width:700px){.subject-rules,.fixed-days{grid-template-columns:1fr}.lesson-edit{width:100%;grid-template-columns:minmax(0,1.4fr) repeat(2,minmax(0,1fr))}.lesson-edit label.title,.lesson-edit label.minutes{width:auto;flex:auto;min-width:0}}
+
+/* 切換排課方式與自訂科目時，尊重 hidden 語意（優先於表單 flex）。 */
+[hidden]{display:none!important}
