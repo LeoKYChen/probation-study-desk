@@ -30,3 +30,13 @@ python staresto-v06/phase1/deep_review.py
 ```
 
 需先在工作目錄提供唯讀 `staresto-intake/library` 快照，工作流程會自動完成。成果只提交回 `feature/staresto-v06-phase1-quality-gate`，不合併到正式 `main`。
+
+## 2026-10-18：第三輪防護加強（未發布）
+
+- 來源索引不再僅靠陣列 position：對照原始資料的 `id`，字典型資料則保留原始字典 key 作為獨立來源題號；缺號與題號不一致一律暫緩，並在 `sourceIdentityChecks` 留存統計。
+- 品質測試另確認無法核對來源 ID 的題目不得結構放行、668 題候選對照與原有六份題檔一致，並執行 v0.4 引擎既有單元測試。**這並非真實使用者 localStorage 移轉驗收。**
+- GitHub Actions 在 `pull_request -> main` 上執行唯讀驗收；審查報告先留存為 Artifact。只有本獨立分支收到人工提交的 push 且 QA 通過時，另一個受限寫入權限的 job 才可更新本分支的審查輸出；`main` 不會因本流程被寫入。
+- 已知既有 `test-ui-v04.cjs` 採固定「星期五」斷言，會隨執行日期發生不相關失敗，故目前不放入本分支的自動 QA；其日期固定化及完整瀏覽器資料保護測試仍屬後續工作。
+- `main` 在此分支建立後已有大量更新；後續合併之前必須同步 `main`，並重新確認正式站與 Cloudflare 的發布流程。
+
+上述措施只修補第一階段驗收流程，不代表已完成逐題內容／權利審查，也沒有啟用 v0.6 題庫或轉換任何學習紀錄。
