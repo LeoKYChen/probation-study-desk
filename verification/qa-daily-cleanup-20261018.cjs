@@ -27,6 +27,8 @@ const subjectAffected=new Set([
 '2026-10-10-1','2026-10-09-1','2026-10-08-1','2026-10-07-1',
 '2026-10-05-1','2026-10-03-1','2026-10-02-1','2026-10-01-1'
 ]);
+const reclassified=new Set(['gd-18e4a385b49554f72b2b81c2-1','md-094f607017a4c228ae9d','md-bab48699b38af31ad9f4-q3379f52e716d','md-72a1394cb70929359dd9-qb93a7f42f20c']);
+for(const id of reclassified)subjectAffected.add(id);
 const bodyAffected=new Set(['gd-340e261ace95b3fcc1308076-1','gd-ba9f24246d37253d4b1af9b2-1']);
 const ctx={window:{}};vm.runInNewContext(fs.readFileSync('daily-simulation/model.js','utf8'),ctx,{timeout:3000});
 const M=ctx.window.PracticeModel;
@@ -38,6 +40,11 @@ for(let i=0;i<132;i++){
   if(k==='subject'&&subjectAffected.has(a.id)){
    assert.notEqual(b.subject,a.subject,a.id+' expected subject cleanup');
    assert(!/[\r\n]/.test(b.subject));
+  }else if(k==='warnings'&&reclassified.has(a.id)){
+   assert(Array.isArray(b.warnings));
+   const preserved=a.warnings.filter(w=>!w.includes('待分類')&&!w.includes('來源未提供輪替科目')&&!w.includes('來源輪替科目未能唯一辨識'));
+   assert.deepEqual(b.warnings.slice(0,-1),preserved,'existing nonclassification warnings preserved '+a.id);
+   assert(b.warnings.at(-1).includes('依現有題幹暫定分類為「'+b.subject+'」')&&b.warnings.at(-1).includes('尚待核對原始文件'));
   }else if(k==='question'&&bodyAffected.has(a.id)){
    assert.notEqual(b.question,a.question,a.id+' expected editor cleanup');
    assert(b.question.startsWith('案例事實：'));
@@ -51,13 +58,13 @@ for(let i=0;i<132;i++){
   assert.equal(M.signature(a),M.signature(b),'subject cleanup must not change question snapshot '+a.id);
  }
 }
-assert.equal(subjectIds.length,22);
+assert.equal(subjectIds.length,26);
 assert.equal(questionIds.length,2);
 assert.deepEqual(subjectIds.slice().sort(),[...subjectAffected].sort());
 assert.deepEqual(questionIds.slice().sort(),[...bodyAffected].sort());
-assert.equal(curr.questions.filter(q=>q.subject==='待分類').length,4,'unresolved classifications remain explicitly flagged');
+assert.equal(curr.questions.filter(q=>q.subject==='待分類').length,0,'all four provisionally classified, without attesting original source');
 assert.equal(curr.questions.filter(q=>q.subject.includes('\n原試題出處：')).length,0);
 assert.deepEqual(curr.templates,orig.templates);
 assert.deepEqual(curr.diagnostics,orig.diagnostics);
 assert.equal(curr.updatedAt,orig.updatedAt,'do not fake a production sync event');
-console.log('PASS isolated QA: 132 original IDs and all source/rubric/review fields preserved; 22 subject metadata fixes, 2 editor-preface extractions; 4 intentionally unclassified; no other data changes');
+console.log('PASS isolated QA: 132 original IDs, all source/rubric/review fields preserved; 26 subject updates (4 provisional), 2 editor-preface extractions, 4 explicit source-verification notices; no other data changes');
