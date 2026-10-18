@@ -43,7 +43,9 @@ def item_collection(blob):
  if not isinstance(blob,dict):return []
  for name in ("items","questions","prompts"):
   if isinstance(blob.get(name),list):return [q for q in blob[name] if isinstance(q,dict)]
- if isinstance(blob.get("q"),dict):return [q for q in blob["q"].values() if isinstance(q,dict)]
+ if isinstance(blob.get("q"),dict):
+  # Dictionary keys are authoritative IDs even when values have no id field.
+  return [dict(q,_sourceKey=key) for key,q in blob["q"].items() if isinstance(q,dict)]
  if isinstance(blob.get("p"),list):return [q for q in blob["p"] if isinstance(q,dict)]
  return []
 def check_exam(row,raw,source_path):
@@ -54,9 +56,20 @@ def check_exam(row,raw,source_path):
  if ("正式考試" in attrs or raw.get("t") in ("學測","指考","大學聯考") or raw.get("exam") in ("學測","指考","大學聯考") or source_path=="grammar-cloze-test/grammar_items.json" or source_path=="zhikao-cloze-test/zhikao_grammar_items.json"):
   return "正式題候選（來源待逐筆確認）"
  return "考試來源未確認"
+def source_identity(row,raw):
+ # Check index record ID against independent source ID, never just position.
+ original=raw.get("id") or raw.get("_sourceKey") or raw.get("sourceItemId")
+ if original is None or str(original).strip()=="":return "UNVERIFIABLE",None
+ expected=source_alias(row.get("sourceItemId"))
+ if not expected:return "MISMATCH",str(original)
+ return ("MATCH" if source_alias(original)==expected else "MISMATCH"),str(original)
+
 def record_problem(row,full,raw,source_path):
  errors=[]
- if row["status"]=="篇章素材":return ["篇章素材（非獨立試題）"]
+ identity,_=source_identity(row,raw)
+ if identity=="MISMATCH":errors.append("索引題號與原始來源題號不一致")
+ elif identity=="UNVERIFIABLE":errors.append("來源缺少可獨立核對的原始題號")
+ if row["status"]=="篇章素材":return sorted(set(errors+["篇章素材（非獨立試題）"]))
  if not full.get("stem") or len(simpl(full["stem"]))<9:errors.append("題幹不足")
  opts=full.get("options") or {}
  if not isinstance(opts,dict) or not (4<=len(opts)<=10):errors.append("選項不足或數量異常")
@@ -109,6 +122,7 @@ def main():
   all_src=upstream_cache[source_rel]
   if row["position"]>=len(all_src):raise AssertionError("Index beyond original source "+source_rel)
   raw=all_src[row["position"]]
+  identity,original_id=source_identity(row,raw)
   issues=record_problem(row,r,raw,source_rel)
   exam_status=check_exam(row,raw,source_rel)
   source_counts[exam_status]+=1
@@ -117,6 +131,7 @@ def main():
   state="結構驗證通過・待內容及權利審核" if not issues else "暫緩納入"
   record={
    "id":row["id"],"category":row["type"],"source":row["source"],
+    "sourceIdentityCheck":identity,"originalSourceId":original_id,
    "sourcePath":source_rel,"sourceItemId":row["sourceItemId"],
    "year":row.get("year"),"exam":row.get("exam"),
    "examDesignation":exam_status,
@@ -204,6 +219,7 @@ def main():
   "status":dict(gatecount),"prequalifiedByCategory":dict(categories),
   "examSourceTypes":dict(source_counts),
   "blockingReasons":dict(block_counts),"legacyMapping":dict(match_stats),
+  "sourceIdentityChecks":dict(Counter(r["sourceIdentityCheck"] for r in audited)),
   "warning":"All prequalified rows remain unpublished pending human quality and rights review. No daily plans or localStorage modified."
  }
  write(OUTPUT/"summary.json",overview)
@@ -222,6 +238,7 @@ def main():
  f"| 自動檢查暫緩納入 | {len(audited)-len(accepted):,} |",
  f"| 正式發布題目 | 0 |","",
  "以上是來源候選*紀錄*數，不代表互不重複的考題數；內容正確性與使用權利尚未人工逐題驗收。",
+  "來源 ID 若無法獨立驗證，或與索引題號不一致，均不得列為結構通過題目。",
  "即使結構完整，沒有經審定的題目仍不進入每日課表。","",
  "## 結構候選類型","",
  "| 類型 | 筆數 |","|---|---:|"]
