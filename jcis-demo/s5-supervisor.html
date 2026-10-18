@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'none'; img-src data:; object-src 'none'; form-action 'none'; base-uri 'none'">
+<title>JCIS 主管個案總覽｜虛構資料展示</title>
+<style>
+:root{font-family:system-ui,-apple-system,"PingFang TC",sans-serif;color:#202b43;background:#f5f7fc}
+*{box-sizing:border-box}body{margin:0}button,input{font:inherit}button{cursor:pointer}a{color:#435bc8}
+header{background:#182742;color:#fff;padding:17px max(20px,calc((100% - 1110px)/2));display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.brand{background:#5168de;border-radius:12px;padding:10px 13px;font-weight:900;font-size:22px}
+header strong{font-size:17px}header small{display:block;font-size:12px;color:#c0cee5}header a{color:#dce3fc;margin-left:auto;font-size:13px}
+main{max-width:1110px;margin:auto;padding:20px 16px 60px}
+.notice{background:#fff6e1;border:1px solid #efdca8;border-radius:14px;padding:14px 17px;font-size:13px;line-height:1.65;color:#805616}
+h1{font-size:clamp(22px,4vw,30px);margin:25px 0 4px}p{line-height:1.65}.subtitle{color:#6d7890;font-size:14px;margin:0 0 22px}
+.metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.metric{border:1px solid #e1e6f3;background:white;border-radius:13px;padding:18px}
+.metric small{display:block;color:#687894;font-size:12px}.metric b{display:block;font-size:28px;margin-top:8px}
+.layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:15px;margin-top:18px}
+.card{background:white;border:1px solid #e1e6f3;border-radius:15px;padding:18px;margin-bottom:14px;min-width:0}
+h2{font-size:18px;margin:0 0 12px}.item{width:100%;display:block;border:1px solid #e4e8f2;background:#fff;text-align:left;padding:12px;border-radius:10px;margin:8px 0;color:#263554}
+.item.active{border:2px solid #5269df;background:#f1f3ff}.item span{display:block;font-size:12px;color:#7c8ba4;margin-top:4px}
+input{border:1px solid #cfd8e8;border-radius:10px;padding:11px;width:100%;font-size:14px}
+.section{background:#f8faff;padding:13px;border-radius:10px;margin:9px 0;border:1px solid #e8edf7}
+.section strong{display:block;font-size:14px}.section small{color:#687891}.section p{font-size:13px;margin:6px 0;color:#46556c}
+.tag{display:inline-block;padding:4px 9px;border-radius:30px;background:#ebf0fc;color:#4358ad;font-size:12px;font-weight:700}
+.info{font-size:14px;margin:7px 0;color:#46556b;overflow-wrap:anywhere}.info b{color:#243858}
+.empty{color:#7f8aa0;font-size:13px}.footer{color:#8490a6;font-size:12px;line-height:1.7}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #87a0fa;outline-offset:2px}
+@media(max-width:780px){header{padding:14px}header a{width:100%;margin-left:0}.layout{grid-template-columns:1fr}.people{display:grid;grid-template-columns:1fr 1fr;gap:8px}.item{margin:0}.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}.metric{padding:11px}.metric b{font-size:23px}.card{padding:14px}}
+@media(max-width:440px){.people{grid-template-columns:1fr 1fr}.item{padding:10px}.item span{font-size:11px}.metric small{font-size:11px}}
+</style></head>
+<body><header><div class="brand">J</div><div><strong>JCIS｜主管個案總覽</strong><small>先查閱完整卷宗，再進行列管、評估或處遇審核</small></div><a href="./">← 返回 JCIS 儀錶板</a></header>
+<main>
+<div class="notice"><strong>公開純展示：</strong>僅有六名虛構少年，不需真正登入，也沒有後端資料庫、儲存或任何正式審核功能。此頁用來確認主管能否看見完整個案脈絡，不代表跨轄區或跨機關的正式權限。請勿輸入真實少年資料。</div>
+<h1>主管不只是核定者，也應能查閱卷宗</h1>
+<p class="subtitle">請點選左側少年，查看少年主檔、受理、列管、風險評估與訪查紀錄。手機會將個案清單排在卷宗上方。</p>
+<div class="metrics"><div class="metric"><small>虛構少年主檔</small><b id="jcount">6</b></div><div class="metric"><small>示範列管案件</small><b id="ccount">6</b></div><div class="metric"><small>示範訪查紀錄</small><b id="vcount">0</b></div></div>
+<div class="layout">
+ <aside class="card"><h2>個案查閱清單</h2><input aria-label="搜尋虛構少年" id="search" placeholder="搜尋代號或編號" autocomplete="off"><div id="people" class="people"></div></aside>
+ <div id="dossier" aria-label="主管個案卷宗"><div class="card">請選擇一名虛構少年查看卷宗。</div></div>
+</div><p class="footer">JCIS Supervisor Demo｜本公開網頁不具有 S2–S5 真正的身分驗證、案件權限、核定或處遇資料保存功能。實際開發版仍只供本機虛構資料測試。</p>
+</main>
+<script>
+const demoData={"juveniles":[{"id":"J-0001","name":"少年甲","age":16,"gender":"男","school":"示範中學","family":"有主要照顧者；需要親職溝通支持","education":"規律就學，出缺席待持續追蹤","needs":["家庭溝通","課後支持"]},{"id":"J-0002","name":"少年乙","age":15,"gender":"女","school":"示範高中","family":"與家人同住","education":"在學，參與社團活動","needs":["學習輔導"]},{"id":"J-0003","name":"少年丙","age":17,"gender":"男","school":"示範職校","family":"照顧資源待連結","education":"職涯探索階段","needs":["社福資源","職涯協助"]},{"id":"J-0004","name":"少年丁","age":14,"gender":"男","school":"示範國中","family":"親屬提供照顧","education":"出席情形持續改善","needs":["學校支持","情緒支持"]},{"id":"J-0005","name":"少年戊","age":16,"gender":"女","school":"示範高中","family":"家庭支持穩定","education":"在學情形穩定","needs":["生涯探索"]},{"id":"J-0006","name":"少年己","age":15,"gender":"男","school":"示範中學","family":"親職支持待評估","education":"需跨專業教育支持","needs":["學習輔導","家庭支持"]}],"intakes":[{"id":"I-001","juvenileId":"J-0001","date":"2026-08-01","source":"示範轉介","summary":"經模擬業務受理，評估支持需求","status":"已受理"},{"id":"I-002","juvenileId":"J-0002","date":"2026-08-05","source":"示範轉介","summary":"就學及生活支持需求","status":"已受理"},{"id":"I-003","juvenileId":"J-0003","date":"2026-08-08","source":"示範轉介","summary":"職涯及家庭服務需求","status":"已受理"},{"id":"I-004","juvenileId":"J-0004","date":"2026-08-12","source":"示範轉介","summary":"學校適應及支持服務需求","status":"已受理"},{"id":"I-005","juvenileId":"J-0005","date":"2026-08-20","source":"示範諮詢","summary":"提供資訊與諮詢，未申請列管","status":"未列管"},{"id":"I-006","juvenileId":"J-0006","date":"2026-09-01","source":"示範轉介","summary":"初步需求訪談與列管審查","status":"已受理"},{"id":"I-007","juvenileId":"J-0001","date":"2026-10-01","source":"示範再受理","summary":"新的獨立受理事項，建立第二次管理案件","status":"已受理"}],"managementCases":[{"id":"M-001","juvenileId":"J-0001","status":"closed","started":"2026-08-02","closed":"2026-09-20","officer":"示範承辦 A","basis":"僅供流程測試","purpose":"學校適應支持"},{"id":"M-002","juvenileId":"J-0001","status":"active","started":"2026-10-02","closed":null,"officer":"示範承辦 A","basis":"僅供流程測試","purpose":"家庭與就學支持"},{"id":"M-003","juvenileId":"J-0002","status":"active","started":"2026-08-06","closed":null,"officer":"示範承辦 B","basis":"僅供流程測試","purpose":"就學支持"},{"id":"M-004","juvenileId":"J-0003","status":"active","started":"2026-08-10","closed":null,"officer":"示範承辦 C","basis":"僅供流程測試","purpose":"家庭／職涯支持"},{"id":"M-005","juvenileId":"J-0004","status":"active","started":"2026-08-15","closed":null,"officer":"示範承辦 B","basis":"僅供流程測試","purpose":"學習環境支持"},{"id":"M-006","juvenileId":"J-0006","status":"review","started":null,"closed":null,"officer":"示範承辦 C","basis":"尚待人工審查","purpose":"就學／家庭支持"}],"assessments":[{"id":"A-001","caseId":"M-001","date":"2026-08-04","status":"approved","level":"medium","version":"DEMO-0.1","reviewer":"示範複核 A","reason":"僅作為歷史範例，不代表正式評估結果"},{"id":"A-002","caseId":"M-001","date":"2026-09-16","status":"approved","level":"low","version":"DEMO-0.1","reviewer":"示範複核 A","reason":"歷史複評結果：原列管案件其後結案"},{"id":"A-003","caseId":"M-002","date":"2026-10-03","status":"approved","level":"high","version":"DEMO-0.1","reviewer":"示範複核 A","reason":"模擬經人工核定，僅用於高風險列表演示"},{"id":"A-004","caseId":"M-003","date":"2026-08-08","status":"approved","level":"low","version":"DEMO-0.1","reviewer":"示範複核 B","reason":"模擬核定結果"},{"id":"A-005","caseId":"M-004","date":"2026-08-12","status":"approved","level":"high","version":"DEMO-0.1","reviewer":"示範複核 C","reason":"模擬經人工核定"},{"id":"A-006","caseId":"M-004","date":"2026-10-10","status":"draft","level":"low","version":"DEMO-0.1","reviewer":null,"reason":"新複評仍為草稿，不得覆蓋前次已核定高風險"},{"id":"A-007","caseId":"M-005","date":"2026-08-16","status":"approved","level":"medium","version":"DEMO-0.1","reviewer":"示範複核 B","reason":"模擬核定結果"},{"id":"A-008","caseId":"M-006","date":"2026-09-04","status":"draft","level":"high","version":"DEMO-0.1","reviewer":null,"reason":"待列管審核與評估複核，不得進入高風險名單"}],"contacts":[{"id":"C-001","caseId":"M-002","date":"2026-10-07","kind":"面談","officer":"示範承辦 A","summary":"討論家庭溝通支持與後續追蹤","next":"2026-10-21"},{"id":"C-002","caseId":"M-002","date":"2026-10-14","kind":"電話聯繫","officer":"示範承辦 A","summary":"確認下次支持服務安排","next":"2026-10-21"},{"id":"C-003","caseId":"M-003","date":"2026-10-03","kind":"校園聯繫","officer":"示範承辦 B","summary":"就學狀況追蹤","next":"2026-11-01"},{"id":"C-004","caseId":"M-004","date":"2026-10-12","kind":"家訪","officer":"示範承辦 C","summary":"評估可用家庭支持資源","next":"2026-10-26"},{"id":"C-005","caseId":"M-005","date":"2026-10-05","kind":"面談","officer":"示範承辦 B","summary":"情緒支持與學習安排","next":"2026-10-25"},{"id":"C-006","caseId":"M-001","date":"2026-09-18","kind":"結案面談","officer":"示範承辦 A","summary":"模擬確認結案條件","next":null}]};
+(function(){
+'use strict';
+const d=demoData,el=id=>document.getElementById(id);
+let selected=d.juveniles[0]?.id||'';
+const risk={high:'高',medium:'中',low:'低'},label={active:'列管中',review:'審查中',closed:'已結案',rejected:'不予列管'};
+function elt(tag,className,text){const n=document.createElement(tag);if(className)n.className=className;if(text!==undefined)n.textContent=String(text);return n;}
+function info(parent,title,value){const p=elt('p','info');const b=elt('b',null,title+'：');p.appendChild(b);p.appendChild(document.createTextNode(value||'尚未記載'));parent.appendChild(p);}
+function section(parent,title){const c=elt('section','card');c.appendChild(elt('h2',null,title));parent.appendChild(c);return c;}
+function entry(parent,heading,details){const x=elt('div','section');x.appendChild(elt('strong',null,heading));details.forEach(t=>x.appendChild(elt('p',null,t)));parent.appendChild(x);}
+function renderPeople(){
+ const q=el('search').value.trim().toLowerCase(),list=el('people');list.replaceChildren();
+ d.juveniles.filter(j=>[j.id,j.name,j.school].some(v=>v.toLowerCase().includes(q))).forEach(j=>{
+  const b=elt('button','item'+(j.id===selected?' active':''));b.type='button';b.setAttribute('aria-pressed',String(j.id===selected));
+  b.appendChild(elt('strong',null,j.name+' · '+j.id));b.appendChild(elt('span',null,j.school));
+  b.addEventListener('click',()=>{selected=j.id;renderPeople();renderDossier();});list.appendChild(b);
+ });
+ if(!list.children.length)list.appendChild(elt('p','empty','沒有符合的虛構主檔'));
+}
+function renderDossier(){
+ const root=el('dossier');root.replaceChildren();const j=d.juveniles.find(x=>x.id===selected);if(!j)return;
+ const cs=d.managementCases.filter(c=>c.juvenileId===j.id),ids=new Set(cs.map(c=>c.id));
+ const intakes=d.intakes.filter(i=>i.juvenileId===j.id), assessments=d.assessments.filter(a=>ids.has(a.caseId)),visits=d.contacts.filter(x=>ids.has(x.caseId));
+ let c=section(root,'少年主檔｜'+j.name+'（'+j.id+'）');c.appendChild(elt('span','tag','主管可查閱 · 僅示範'));
+ info(c,'年齡／性別',j.age+' 歲／'+j.gender);info(c,'學校／就學',j.school+'；'+j.education);info(c,'家庭與照顧',j.family);info(c,'支持需求',(j.needs||[]).join('、'));
+ c=section(root,'受理來源與摘要（'+intakes.length+'）');
+ intakes.forEach(i=>entry(c,i.id+' · '+i.date,[i.source,i.summary,'狀態：'+i.status]));
+ if(!intakes.length)c.appendChild(elt('p','empty','尚無受理紀錄'));
+ c=section(root,'列管歷程（'+cs.length+'）');
+ cs.forEach(x=>entry(c,x.id+' · '+(label[x.status]||x.status),['承辦人：'+x.officer,'管理目的：'+x.purpose,'申請依據：'+x.basis,'列管：'+(x.started||'—')+'，結案：'+(x.closed||'—')]));
+ if(!cs.length)c.appendChild(elt('p','empty','無列管紀錄；不代表有高風險'));
+ c=section(root,'人工評估及複評歷程（'+assessments.length+'）');
+ assessments.forEach(x=>entry(c,x.id+' · '+x.date,[x.status==='approved'?'已核定':'草稿未核定','等級：'+risk[x.level]+'；核定：'+(x.reviewer||'無'),'說明：'+x.reason]));
+ if(!assessments.length)c.appendChild(elt('p','empty','尚無示範評估'));
+ c=section(root,'訪查／服務接觸歷程（'+visits.length+'）');
+ visits.forEach(x=>entry(c,x.id+' · '+x.date,[x.kind+' · '+x.officer,x.summary,'下次：'+(x.next||'未安排')]));
+ if(!visits.length)c.appendChild(elt('p','empty','尚無既有訪查紀錄'));
+ c=section(root,'S5 處遇計畫與追蹤（尚未建立）');
+ c.appendChild(elt('p','empty','公開頁面不連線真正的 S5 資料庫，故不顯示私人處遇計畫；真正的本機版可建立草稿、主管核定、保存訪查及複查日期。'));
+}
+el('jcount').textContent=d.juveniles.length;el('ccount').textContent=d.managementCases.length;el('vcount').textContent=d.contacts.length;
+el('search').addEventListener('input',renderPeople);renderPeople();renderDossier();
+})();
+</script></body></html>
