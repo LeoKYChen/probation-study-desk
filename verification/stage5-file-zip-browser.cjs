@@ -22,7 +22,7 @@ const engine=process.env.TEST_BROWSER==='webkit'?webkit:chromium;
   page.on('pageerror',e=>errors.push(String(e)));
   page.on('dialog',d=>d.accept());
   await page.goto(scheme,{waitUntil:'load',timeout:30000});
-  assert.equal(await page.locator('.tile').count(),5,'original 5 home entrances retained');
+  assert.equal(await page.locator('.tile').count(),6,'three course + three exploration entrances retained');
   assert.match(await page.title(),/觀護人/);
   assert(await page.locator('#psd-file-warning').count()===1,'ZIP storage warning visible');
   // First tile: original professional study30, not a new duplicate website.
