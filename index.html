@@ -99,7 +99,7 @@ button{cursor:pointer}
 }
 @media(prefers-reduced-motion:reduce){.tile{transition:none}}
 
-/* 晚間學習室樣式參考：保留投影片確認的 2+3 入口、倒數及原生日期框。 */
+/* 晚間學習室樣式參考：保留投影片確認的 3+3 入口、倒數及原生日期框。 */
 :root{
   --room-hero:#e8eee3;
   --room-surface:#fff;
@@ -206,7 +206,7 @@ button{cursor:pointer}
 @media(prefers-reduced-motion:reduce){.tile{transition:none}}
 
 
-/* 晚間學習室 v2.5 主站：工作空間視覺進階版；保留既有 2+3 卡片與倒數功能 */
+/* 晚間學習室 v2.5 主站：工作空間視覺進階版；保留既有 3+3 卡片與倒數功能 */
 html{scroll-behavior:smooth}
 body{background:#f5f5ef}
 .global-header{height:72px;background:#fafbf6;border-bottom:1px solid #dde2d8;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:0 max(22px,calc((100vw - 1440px)/2 + 30px))}
@@ -325,6 +325,31 @@ body{background:#f5f5ef}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
+
+/* 課程學習三張卡片，與探索區分開維持一致的主卡樣式。 */
+.course-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}
+.course-grid>.tile.course-tile{
+  display:flex;min-width:0;width:100%;height:100%;min-height:150px;
+  align-items:center;justify-content:space-between;
+  padding:22px;border:1px solid #245b48;border-radius:14px;
+  background:linear-gradient(135deg,#245b48,#346b57);color:#fff;
+  box-shadow:0 8px 28px rgba(36,59,53,.05);
+}
+.course-grid>.tile.course-tile .tile-copy{flex:1 1 auto;min-width:0}
+.course-grid>.tile.course-tile .tile-title{font-size:clamp(19px,2.05vw,27px);font-weight:780;color:#fff}
+.course-grid>.tile.course-tile .tile-description{font-size:clamp(12px,1.22vw,14px);color:#fff;opacity:.9}
+.course-grid>.tile.course-tile .tile-arrow{
+  flex:0 0 25px;align-self:flex-end;width:25px;height:25px;
+  display:grid;place-items:center;font-size:18px;color:#fff;opacity:.78;
+}
+@media(max-width:1150px) and (min-width:761px){
+  .course-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:760px){
+  .course-grid{grid-template-columns:minmax(0,1fr)}
+  .course-grid>.tile.course-tile{min-height:128px;padding:20px}
+  .course-grid>.tile.course-tile .tile-title{font-size:clamp(22px,6vw,27px)}
+}
 </style>
 <script src="./file-compat.js" defer></script>
 </head>
@@ -340,6 +365,7 @@ body{background:#f5f5ef}
     <nav class="sidebar-links" aria-label="首頁區塊">
       <a href="#countdown-card"><span aria-hidden="true">◷</span> 考試倒數</a>
       <a href="#courses-heading" class="is-current"><span aria-hidden="true">▣</span> 課程學習</a>
+      <a href="./lectures/"><span aria-hidden="true">▤</span> 函授學習管理</a>
       <a href="#explore-heading"><span aria-hidden="true">✧</span> 練習與探索</a>
       <a href="./backup/"><span aria-hidden="true">⬇</span> 學習紀錄備份</a>
       <a href="./print/"><span aria-hidden="true">▤</span> 申論列印／PDF</a>
@@ -382,6 +408,7 @@ body{background:#f5f5ef}
     <nav class="course-grid" aria-label="課程學習入口">
       <a class="tile course-tile" href="./professional/" target="_blank" rel="noopener noreferrer" aria-label="專業科目：426題、每日30分鐘與申論練習（另開新分頁）"><span class="tile-copy"><span class="tile-title">專業科目</span><small class="tile-description">申論練習・考古題・每日30分鐘</small></span><span class="tile-arrow" aria-hidden="true">↗</span></a>
       <a class="tile course-tile" href="./common-subjects/" target="_blank" rel="noopener noreferrer" aria-label="共同科目：英文、國文作文及 Staresto 題庫（另開新分頁）"><span class="tile-copy"><span class="tile-title">共同科目</span><small class="tile-description">英文・國文作文・題庫</small></span><span class="tile-arrow" aria-hidden="true">↗</span></a>
+      <a class="tile course-tile" href="./lectures/" target="_blank" rel="noopener noreferrer" aria-label="函授學習管理：堂次記錄、剩餘時數與進度自動調整（另開新分頁）"><span class="tile-copy"><span class="tile-title">函授學習管理</span><small class="tile-description">堂次記錄・剩餘時數・進度自動調整</small></span><span class="tile-arrow" aria-hidden="true">↗</span></a>
     </nav>
   </section>
   <section class="section" aria-labelledby="explore-heading">

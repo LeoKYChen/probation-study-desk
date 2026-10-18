@@ -51,7 +51,7 @@ jobs:
           assert '.print-sheet' in css and 'break-after:page' in css
           assert './print/' in home
           assert h.count('print-model.js')==1 and h.count('app.js')==1
-          assert home.count('class="tile course-tile"')==2
+          assert home.count('class="tile course-tile"')==3
           assert home.count('class="tile explore-tile"')==3
           for p in ('v2.5/index.html','daily-simulation/index.html'):
               assert '../print/?module=' in Path(p).read_text('utf-8'),p

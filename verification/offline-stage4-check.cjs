@@ -36,8 +36,10 @@ for(const file of urls.filter(x=>x.endsWith('.html'))){
 }
 const home=fs.readFileSync(path.join(root,'index.html'),'utf8');
 assert(home.includes('href="./offline/"'),'offline entry should be visible in sidebar');
-assert.equal((home.match(/class="tile /g)||[]).length,5,'do not change the five approved study tiles');
+assert.equal((home.match(/class="tile course-tile"/g)||[]).length,3,'keep three equal course entries');
+assert.equal((home.match(/class="tile explore-tile"/g)||[]).length,3,'keep three exploration entries');
+assert.equal((home.match(/class="tile /g)||[]).length,6,'keep exactly six approved study tiles');
 const sw=fs.readFileSync(path.join(root,'sw.js'),'utf8');
 assert(sw.includes("PREFIX+'snapshot:'")&&sw.includes("port.postMessage({type:'done',state:next})"),'preserve atomic completed downloads');
 assert(!sw.includes('localStorage.'),'the SW may not modify browser answers');
-console.log('PASS stage4: '+urls.length+' local assets and HTML dependencies, correct JSON, atomic SW, five entrances preserved');
+console.log('PASS stage4: '+urls.length+' local assets and HTML dependencies, correct JSON, atomic SW, six entrances preserved');

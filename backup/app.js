@@ -59,6 +59,9 @@
    }else if(m.kind==='oldenglish'){
     count=Object.keys(val.progress).length;
     status=count?count+' 項已儲存進度':'僅有初始設定（0 筆）';
+   }else if(m.kind==='lectures'){
+    count=val.lessons.length;
+    status=val.courses.length+' 門函授課程、'+count+' 堂（已完成 '+val.lessons.filter(x=>x.watchedMinutes===x.durationMinutes).length+' 堂）';
    }else if(m.kind==='list'){
     count=val.length;
     status=count?count+' 筆收藏／閱讀紀錄':'空白清單（0 筆）';

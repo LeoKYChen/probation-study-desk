@@ -1,0 +1,36 @@
+.calendar-section{margin-top:20px;padding:16px;border:1px solid #d7e3d9;border-radius:12px;background:#fcfdfb}
+.calendar-toolbar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.calendar-toolbar h3{margin:0;color:#245b48;font-size:18px}
+.calendar-controls{display:flex;align-items:center;gap:9px}
+.calendar-controls button{min-height:38px;width:40px;padding:0;font-size:22px}
+.calendar-controls strong{min-width:92px;text-align:center;font-size:15px}
+.calendar-weekdays,.calendar-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px}
+.calendar-weekdays{padding:4px 0 7px;text-align:center;color:#6f8274;font-weight:750;font-size:13px}
+.calendar-cell{padding:7px 5px;min-width:0;min-height:94px;border:1px solid #e3eae3;background:#fff;border-radius:8px;text-align:left;display:flex;flex-direction:column;align-items:stretch;gap:4px}
+.calendar-cell .date{font-size:13px;font-weight:750;color:#445b4c}
+.calendar-cell .minutes{font-size:11px;line-height:1.3;font-variant-numeric:tabular-nums;color:#346b55}
+.calendar-cell .calendar-subject{font-size:11px;line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#2d5543}
+.calendar-cell.has-plan{background:#eaf4eb;border-color:#b8d2bf}
+.calendar-cell.is-today .date{color:#08704c;text-decoration:underline}
+.calendar-cell[aria-pressed="true"]{outline:3px solid #32775a;outline-offset:-2px}
+.calendar-cell.no-plan{background:#f7f8f5;color:#8e978c}
+.calendar-cell .no-plan-text{font-size:11px;color:#8b968b}
+.calendar-blank{min-height:65px}
+.calendar-details{margin-top:12px;background:#f2f6ef;border-radius:9px;padding:13px 15px;color:#2d5543;font-size:14px}
+.calendar-details h4{margin:0 0 6px;font-size:16px}
+.calendar-details p{margin:6px 0}
+.calendar-details ul{margin:7px 0 0;padding-left:20px}
+.daily-details{margin-top:14px}
+.daily-details summary{cursor:pointer;font-weight:750;color:#245b48;padding:7px 3px}
+@media(max-width:700px){
+.calendar-section{padding:11px}
+.calendar-weekdays,.calendar-grid{gap:3px}
+.calendar-cell{min-height:74px;border-radius:6px;padding:5px 3px;gap:3px}
+.calendar-cell .date{font-size:12px}
+.calendar-cell .minutes,.calendar-cell .calendar-subject,.calendar-cell .no-plan-text{font-size:10px}
+.calendar-toolbar h3{font-size:16px}
+}
+@media(max-width:380px){
+.calendar-cell{min-height:68px}
+.calendar-cell .calendar-subject{font-size:9px}
+}
