@@ -1,0 +1,51 @@
+name: QA daily simulation metadata cleanup 20261018
+on:
+  push:
+    branches: [fix/daily-question-metadata-20261018]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  question-data-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Verify no production JS, UI, config or user storage code changed
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE=b07f531df991d5c2065c3ce6d6a3050fc4d7a38a
+          git merge-base --is-ancestor "$BASE" HEAD
+          git diff --name-only "$BASE" HEAD | sort >/tmp/actual
+          printf '%s\n' \
+            '.github/workflows/qa-daily-question-cleanup-20261018.yml' \
+            'daily-simulation/questions.json' \
+            'verification/check-daily-v254.cjs' \
+            'verification/qa-daily-cleanup-20261018.cjs' | sort >/tmp/expected
+          diff -u /tmp/expected /tmp/actual
+          echo "PASS: no application JavaScript, UI, release workflow, or production storage code changed"
+      - name: Check JavaScript syntax and exact question changes
+        run: |
+          set -euo pipefail
+          node --check verification/check-daily-v254.cjs
+          node --check verification/qa-daily-cleanup-20261018.cjs
+          node verification/qa-daily-cleanup-20261018.cjs
+      - name: Run regression suite for original daily study app and existing user records
+        run: |
+          set -euo pipefail
+          node verification/check-daily-v254.cjs
+          node backup/test.cjs
+          node print/test.cjs
+      - name: Verify deployable mirror builds and daily question count is 132
+        run: |
+          set -euo pipefail
+          python3 scripts/build-cloudflare-main-mirror.py
+          node verification/unified-integration.cjs cloudflare-main-mirror-dist
+          cmp daily-simulation/questions.json cloudflare-main-mirror-dist/daily-simulation/questions.json
+          echo "PASS: deploy artifact is complete and matches isolated QA content"
