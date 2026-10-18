@@ -6,7 +6,7 @@ permissions:
   contents: write
 jobs:
   regenerate:
-    if: startsWith(github.event.head_commit.message, 'build(zip): regenerate')
+    if: "startsWith(github.event.head_commit.message, 'build(zip): regenerate')"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
