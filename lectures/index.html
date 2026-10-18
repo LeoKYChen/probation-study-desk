@@ -47,7 +47,7 @@
       <label>平日每天可讀書（分鐘）<input id="weekdayMinutes" type="number" min="0" max="1440" required></label>
       <label>週末每天可讀書（分鐘）<input id="weekendMinutes" type="number" min="0" max="1440" required></label>
       <label>每天預留原有練習／複習（分鐘）<input id="reserveMinutes" type="number" min="0" max="1440" required></label>
-      <label>考試日期（選填）<input id="examDate" type="date" min="2000-01-01" max="2100-12-31"></label>
+      <label class="date-field">考試日期（選填）<input id="examDate" type="date" min="2000-01-01" max="2100-12-31"></label>
       <label>考前預留複習天數<input id="reviewDays" type="number" min="0" max="365" required></label>
       <label>排課方式 <select id="strategy"><option value="sequential">依序完課（原有方式）</option><option value="rotate">每日輪替一科</option><option value="weighted">依各科權重均衡分配</option><option value="fixed">每週固定科目</option></select></label>
       <label>預排範圍 <select id="planDays"><option value="7">7天</option><option value="30">30天（月曆）</option><option value="60">60天</option><option value="90">90天</option></select></label>
@@ -77,6 +77,6 @@
     <details class="daily-details"><summary>展開全部每日函授安排</summary><div id="planList" class="plan-list"></div></details>
   </section>
 </main>
-<footer>資料不會自動同步手機與電腦。若尚未確認備份成功，請勿清除瀏覽器網站資料。所有課程時長與考試日期均由使用者自行設定。</footer>
+<footer><p>函授資料僅儲存在目前瀏覽器，手機與電腦不會自動同步。</p><p>清除網站資料前，請先完成備份。課程時長與考試日期由你自行設定。</p></footer>
 <script src="./core.js"></script><script src="./app.js"></script>
 </body></html>
