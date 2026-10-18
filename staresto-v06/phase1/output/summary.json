@@ -48,5 +48,8 @@
     "EXACT": 435,
     "VERIFIED_SOURCE": 233
   },
+  "sourceIdentityChecks": {
+    "MATCH": 4733
+  },
   "warning": "All prequalified rows remain unpublished pending human quality and rights review. No daily plans or localStorage modified."
 }
