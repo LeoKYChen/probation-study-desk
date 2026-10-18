@@ -128,4 +128,26 @@ test('script never mutates caller datasets',()=>{
  assert.equal(JSON.stringify(s),textBefore);
  assert.equal(JSON.stringify(initial),pristine);
 });
-console.log('PASS all daily import quality gate regression tests (19 cases)');
+test('same source document section under different IDs blocked',()=>{
+ const one=newItem('qa-source-one');one.sourceDocumentId='synthetic-google-doc-id';one.sourceQuestionIndex=1;
+ const two=newItem('qa-source-two');two.sourceDocumentId='synthetic-google-doc-id';two.sourceQuestionIndex=1;
+ two.question+='額外內容';
+ const r=G.inspect(initial,[one,two]);
+ assert(r.blocked.some(x=>x.code==='SOURCE_SLOT_CONFLICT'));
+ assert.equal(r.proposedDataset,null);
+});
+test('different sections in same source document may contain different questions',()=>{
+ const one=newItem('qa-section-one');one.sourceDocumentId='synthetic-google-doc-id';one.sourceQuestionIndex=1;
+ const two=newItem('qa-section-two');two.sourceDocumentId='synthetic-google-doc-id';two.sourceQuestionIndex=2;
+ two.question='申論題（25分）。少年乙於家庭關係緊張時有逃學及社交退縮情形，曾多次依循同儕建議參與網路詐騙活動。請使用一般緊張理論與標籤理論，分析可能的偏差學習與情緒因應機制，並提出少年保護官應如何評估與設計社區處遇，避免將個案行為直接等同人格特質。';
+ const r=G.inspect(initial,[one,two]);
+ assert.equal(r.canPublish,true);
+ assert.equal(r.ready.length,2);
+});
+test('malformed warnings field blocks safely without thrown exception',()=>{
+ const bad=newItem('qa-bad-warnings');bad.warnings='待分類';
+ const r=G.inspect(initial,[bad]);
+ assert.equal(r.canPublish,false);
+ assert(r.blocked.some(x=>x.reason.includes('warnings')));
+});
+console.log('PASS all daily import quality gate regression tests (22 cases)');
