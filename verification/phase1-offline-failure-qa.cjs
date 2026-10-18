@@ -63,7 +63,12 @@ async function scenario(name,engine){
   assert.equal(await cached.evaluate(()=>localStorage.getItem('phase1-qa-sentinel')),value);
   if(name==='chromium')await ctx.setOffline(false);
   await download.click();
-  await page.waitForFunction(()=>document.querySelector('#offline-dialog [data-status]')?.textContent.includes('已備妥'),{timeout:180000});
+  // A previously displayed "ready" status is not evidence the retry finished.
+  await page.waitForFunction(()=>{
+    const b=document.querySelector('#offline-dialog [data-download]');
+    const status=document.querySelector('#offline-dialog [data-status]')?.textContent||'';
+    return b&&!b.disabled&&status.includes('已備妥');
+  },null,{timeout:180000});
   const retry=await snapshot(page);
   assert(retry&&retry.cacheName!==before.cacheName&&retry.count>=180,'retry update failed');
   assert.equal(await page.evaluate(()=>localStorage.getItem('phase1-qa-sentinel')),value);
