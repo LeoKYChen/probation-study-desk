@@ -1,0 +1,22 @@
+name: Lecture planner tests
+on:
+  push:
+    branches: [feature/lecture-planner-20261018]
+  pull_request:
+    paths:
+      - 'lectures/**'
+      - 'backup/**'
+      - 'index.html'
+      - 'offline-manifest.json'
+jobs:
+  lecture-tests:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate lecture scheduling and backups
+        run: node lectures/test.cjs
