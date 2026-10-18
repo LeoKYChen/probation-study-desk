@@ -58,7 +58,7 @@ assert.ok(adaptedPrompt.length>40);
 assert.ok(!adaptedPrompt.includes('- 原題：'),'must not grade original exam statement');
 assert.ok(!adaptedPrompt.includes('- 改編來源'),'must not grade editorial metadata');
 assert.ok(promptFor(adapted,'模擬答案').includes(adaptedPrompt));
-const edited=d.questions.find(q=>q.question.startsWith('將其深化為')&&q.question.includes('改編後實例申論題題目'));
+const edited={...sample,id:'synthetic-editorial-test',question:'將其深化為純合成測試案例。\n三、改編後實例申論題題目\n【改編模擬申論題】\n案例事實：少年甲為純合成測試對象，並無真實事件。請分析其程序保障。（25 分）\n四、'};
 assert.ok(edited);
 assert.ok(simulationQuestion(edited).startsWith('案例事實：'));
 assert.ok(!promptFor(edited,'案例作答').includes('四欄標準表格理論與個案處遇深度結合：'),'do not include editor preface');
