@@ -95,5 +95,5 @@ legalReadOnly();mergeAcrossDevices();rollback();stalePrevention();
 assert.throws(()=>core.validate(env({'psd-common-subjects-v1':'{"schema":"psd-common-subjects-v1","drafts":{"__proto__":{"evil":true}},"english":{}}'})),/格式|不安全/);
 assert.throws(()=>core.validate(env({[essay]:'{' })),/JSON/);
 assert.throws(()=>core.collect(mock({[key]:'{' }),'x'),/JSON/);
-assert.equal(core.modules.length,13);
+assert.equal(core.modules.length,14); // 原有13模組 + 函授課程管理
 console.log('PASS unified JSON backup core: read-only export, schema validation, cross-device merge, alternate versions, idempotency, staleness guard, rollback');
