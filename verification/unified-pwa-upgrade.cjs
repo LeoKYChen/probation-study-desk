@@ -57,7 +57,7 @@ const server=http.createServer((req,res)=>{
    await page.evaluate(async()=>{const registration=await navigator.serviceWorker.getRegistration();await registration.update();});
    await page.waitForFunction(()=>window.__upgradeControllerChanged,null,{timeout:30000});
    await page.reload();
-   assert.equal(await page.locator('a.tile').count(),5,'connected upgraded worker must show unified home instead of cached legacy home');
+   assert.equal(await page.locator('a.tile').count(),6,'connected upgraded worker must show unified home instead of cached legacy home');
    const after=await page.evaluate(()=>Object.fromEntries(Object.keys(localStorage).map(key=>[key,localStorage.getItem(key)])));
    assert.deepEqual(after,before,'root upgrade preserves every stored value');
    const retainedSnapshot=await page.evaluate(()=>new Promise(async(resolve,reject)=>{
@@ -70,8 +70,8 @@ const server=http.createServer((req,res)=>{
    failRoot=true;
    const fallback=await page.reload();assert.equal(await fallback.text(),cachedHome,'on server failure actual worker returns exact old snapshot bytes');
    assert.equal(await page.locator('a.tile').count(),0,'old snapshot remains usable without clearing records');
-   failRoot=false;await page.reload();assert.equal(await page.locator('a.tile').count(),5,'online recovery returns unified home');
-   await page.goto(new URL('index.html?from=installed',base).href);assert.equal(await page.locator('a.tile').count(),5,'explicit index route also refreshes online');
+   failRoot=false;await page.reload();assert.equal(await page.locator('a.tile').count(),6,'online recovery returns unified home');
+   await page.goto(new URL('index.html?from=installed',base).href);assert.equal(await page.locator('a.tile').count(),6,'explicit index route also refreshes online');
    assert.equal(await page.locator('#countdown-date-caption').innerText(),'2027/08/14');
    // Root worker and nested professional worker coexist without deleting old caches.
    await page.goto(new URL('professional/',base).href);
@@ -82,11 +82,11 @@ const server=http.createServer((req,res)=>{
    for(const name of cachesBefore)assert(state.caches.includes(name),'unrelated/legacy cache retained: '+name);
    assert.equal(state.main,before['probation-study-desk-v24']);assert.equal(state.extra,before['another-module-record']);
    assert.deepEqual(state.oldSession,JSON.parse(before['probation-study30-v251:v1']).sessions['2026-01-01']);
-   await page.goto(base);assert.equal(await page.locator('a.tile').count(),5,'nested worker does not take over root home');
+   await page.goto(base);assert.equal(await page.locator('a.tile').count(),6,'nested worker does not take over root home');
    await context.close();
    context=await playwright[engine].launchPersistentContext(profile,{headless:true,...(process.env.BROWSER_EXECUTABLE?{executablePath:process.env.BROWSER_EXECUTABLE}:{}),viewport:{width:390,height:844},locale:'zh-TW',timezoneId:'Asia/Taipei'});
    const reopened=context.pages()[0]||await context.newPage();await reopened.goto(base);
-   assert.equal(await reopened.locator('a.tile').count(),5,'upgraded home survives a browser restart');
+   assert.equal(await reopened.locator('a.tile').count(),6,'upgraded home survives a browser restart');
    const reopenedData=await reopened.evaluate(()=>({main:localStorage.getItem('probation-study-desk-v24'),extra:localStorage.getItem('another-module-record'),oldSession:JSON.parse(localStorage.getItem('probation-study30-v251:v1')).sessions['2026-01-01']}));
    assert.equal(reopenedData.main,state.main);assert.equal(reopenedData.extra,state.extra);assert.deepEqual(reopenedData.oldSession,state.oldSession);
    console.log('PASS existing-PWA upgrade:',engine,base,'actual baseline snapshot',snapshot.count,'files; five-entry online home; all old records/caches retained; root and professional scopes coexist; browser restart preserved records');
