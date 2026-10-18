@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PDF 安全測試｜觀護人學習臺 QA</title>
+<style>
+body{font:16px/1.7 system-ui,-apple-system,"Noto Sans TC",sans-serif;margin:0;background:#f5f7f3;color:#213d30}
+main{max-width:650px;margin:38px auto;padding:24px;background:#fff;border:1px solid #cbdacf;border-radius:14px}
+button,a.go{display:inline-block;border:0;border-radius:7px;background:#215b46;color:#fff;padding:12px 18px;text-decoration:none;font:inherit;margin:9px 9px 9px 0}
+button:disabled{opacity:.6}small{color:#476556}#state{white-space:pre-wrap;border-left:3px solid #527963;padding:12px;background:#ecf4ee}
+</style>
+</head>
+<body><main>
+<h1>iPhone PDF 安全測試</h1>
+<p>此入口只提供給 <strong>qa-print-20261018</strong> 獨立測試站，用來建立兩篇完全虛構的作文及一則舊稿。它不讀取、也不清除任何正式站資料。</p>
+<p>按下後，才會將假作文寫入此 QA 網域的瀏覽器儲存空間。若此 QA 網域已有其他國文作文紀錄，則拒絕覆蓋。</p>
+<button id="seed" type="button">建立兩篇純假作文</button>
+<a id="printLink" class="go" href="./?module=common">前往 PDF 列印測試</a>
+<p id="state" role="status" aria-live="polite">尚未建立測試資料。</p>
+<small>僅測試用內容；不包含真人、個案資料或司法案件資訊。請勿在正式版匯入假資料。</small>
+</main>
+<script>
+(()=>{
+"use strict";
+const output=document.getElementById("state"),button=document.getElementById("seed");
+const host="qa-print-20261018.probation-study30-test.pages.dev";
+if(location.hostname!==host||location.protocol!=="https:"){
+ button.disabled=true;
+ output.textContent="安全防護：此頁只能在指定的 HTTPS QA 測試網址建立假資料。";
+ return;
+}
+const key="psd-common-subjects-v1",tag="QA_PDF_20261018";
+button.onclick=()=>{
+ try{
+  const old=localStorage.getItem(key);
+  if(old!==null){
+   if(old.includes(tag)){output.textContent="已存在本次測試作文，沒有覆蓋。請前往 PDF 列印測試。";return;}
+   output.textContent="本 QA 網址已有其他作文資料。為保障原資料，停止寫入，不覆蓋任何紀錄。";return;
+  }
+  const obj={schema:key,drafts:{
+   "full:12":{text:"QA_PDF_20261018｜這是一篇虛構作文的完整本文，用於測試 iPhone 上的 A4 預覽與 PDF 文字顯示。\n\n第二段測試標點：、，。！？以及換行。",feedback:"純測試評語：請檢查字體與段落。",versions:[{text:"QA_PDF_20261018｜純測試舊稿版本",date:"2026-10-18T01:00:00Z"}],nextAction:"純測試訂正目標"},
+   "full:13":{text:"QA_PDF_20261018｜第二篇假作文，驗證一次勾選多篇及分頁。"}
+  },english:{}};
+  const raw=JSON.stringify(obj);
+  localStorage.setItem(key,raw);
+  if(localStorage.getItem(key)!==raw)throw Error("儲存核對失敗");
+  output.textContent="已建立兩篇純假作文。請點選「前往 PDF 列印測試」，勾選兩篇並產生紙本預覽。";
+ }catch(e){output.textContent="無法建立測試紀錄： "+e.message;}
+};
+})();
+</script>
+</body></html>
