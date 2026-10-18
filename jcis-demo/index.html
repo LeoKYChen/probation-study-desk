@@ -12,6 +12,31 @@
 @media(max-width:1130px){.metrics{grid-template-columns:repeat(2,1fr)}.grid-cards{grid-template-columns:repeat(2,1fr)}.cols{grid-template-columns:1fr}.global-search input{width:160px}}@media(max-width:790px){.sidebar{position:fixed;z-index:10;transform:translateX(-100%);transition:transform .2s;box-shadow:12px 0 25px #11254230}.sidebar.open{transform:translateX(0)}.mobile-menu{display:block}.topbar{padding:0 16px}.content{padding:20px 14px 34px}.alert-strip{padding:11px 15px}.breadcrumbs span{display:none}.demo-pill{display:none}.global-search input{width:130px}.grid-cards{grid-template-columns:1fr}.info-grid,.twocol{grid-template-columns:1fr}.page-head{align-items:flex-start;flex-direction:column}.metrics{gap:10px}.metric{padding:16px}.metric .m-num{font-size:25px}}
 
 </style>
+
+
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="主選單">
+      <div class="brand"><div class="brand-icon">J</div><div><strong>JCIS</strong><small>少年個案整合暨分級管理</small></div></div>
+      <div class="side-note"><span class="dot"></span> 公開唯讀測試 <small>虛構資料・非正式系統</small></div>
+      <nav id="nav" class="side-nav"></nav>
+      <div class="side-footer">單一主檔 · 歷程可查 · 人工核定 <span>PUBLIC DEMO 2026.10</span></div>
+    </aside>
+    <div class="main-shell">
+      <header class="topbar">
+        <button class="mobile-menu" id="menu-button" aria-label="開啟或收合主選單">☰</button>
+        <div class="breadcrumbs"><strong id="page-title">總覽儀錶板</strong><span>／ 2026 模擬情境</span></div>
+        <div class="top-actions"><label class="global-search"><span aria-hidden="true">⌕</span><input id="global-search" autocomplete="off" placeholder="搜尋少年代號或案件編號…" aria-label="全站搜尋虛構少年代號或案件編號" /></label><span class="demo-pill">● 完全虛構資料</span></div>
+      </header>
+      <div class="alert-strip"><strong>JCIS 公開唯讀展示：</strong>此頁只有 6 名完全虛構少年，提供手機及電腦查看主檔、列管及評估介面。<strong>不含 S2.2 的真正登入、寫入、權限或 SQLite 功能。</strong>沒有真實個案、正式核定或外部資料介接，請勿輸入真實少年資料。</div>
+      <main id="content" class="content" tabindex="-1"><section class="panel" style="padding:24px"><h1>JCIS 展示頁載入中</h1><p>若這段文字持續顯示，代表瀏覽器未能執行展示程式。請重新整理或使用 Safari／Chrome 開啟本頁。</p></section></main>
+      <footer class="footer">JCIS 公開唯讀展示 · 僅供介面測試 · 與私人開發用 S2.2 本機資料庫完全分離 · 非任何機關正式系統。</footer>
+    </div>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- DOM 已建立後才初始化虛構資料與展示介面，避免 Safari 空白畫面 -->
   <script>
 /* S1 演示資料集：完全虛構，不得輸入或替換為真實少年資料。 */
 (function (root) {
@@ -98,7 +123,7 @@ function riskStatus(c){
  if(!a)return bar('none','尚無已核定評估');
  return bar(a.level||'none',`${levels[a.level]||'未分級'}（核定）`);
 }
-function title(t,p){return `<div class="page-head"><div><h1>${esc(t)}</h1><p>${esc(p)}</p></div><span class="demo-label">S1 · UI 展示</span></div>`}
+function title(t,p){return `<div class="page-head"><div><h1>${esc(t)}</h1><p>${esc(p)}</p></div><span class="demo-label">唯讀公開展示</span></div>`}
 function panel(t,content,hint='',action=''){return `<section class="panel"><div class="panel-head"><div><h2>${esc(t)}</h2>${hint?`<p>${esc(hint)}</p>`:''}</div>${action}</div><div class="panel-body">${content}</div></section>`}
 function metric(label,value,subtitle,ico){return `<article class="metric"><span class="m-dot" aria-hidden="true">${ico}</span><div class="m-title">${esc(label)}</div><div class="m-num">${esc(value)}</div><div class="m-info">${esc(subtitle)}</div></article>`}
 function table(cols,rows,empty='沒有符合條件的示範資料'){
@@ -175,26 +200,5 @@ render();
 })();
 
 </script>
-</head>
-<body>
-  <div class="app-shell">
-    <aside class="sidebar" aria-label="主選單">
-      <div class="brand"><div class="brand-icon">J</div><div><strong>JCIS</strong><small>少年個案整合暨分級管理</small></div></div>
-      <div class="side-note"><span class="dot"></span> 公開唯讀測試 <small>虛構資料・非正式系統</small></div>
-      <nav id="nav" class="side-nav"></nav>
-      <div class="side-footer">單一主檔 · 歷程可查 · 人工核定 <span>PUBLIC DEMO 2026.10</span></div>
-    </aside>
-    <div class="main-shell">
-      <header class="topbar">
-        <button class="mobile-menu" id="menu-button" aria-label="開啟或收合主選單">☰</button>
-        <div class="breadcrumbs"><strong id="page-title">總覽儀錶板</strong><span>／ 2026 模擬情境</span></div>
-        <div class="top-actions"><label class="global-search"><span aria-hidden="true">⌕</span><input id="global-search" autocomplete="off" placeholder="搜尋少年代號或案件編號…" aria-label="全站搜尋虛構少年代號或案件編號" /></label><span class="demo-pill">● 完全虛構資料</span></div>
-      </header>
-      <div class="alert-strip"><strong>JCIS 公開唯讀展示：</strong>此頁只有 6 名完全虛構少年，提供手機及電腦查看主檔、列管及評估介面。<strong>不含 S2.2 的真正登入、寫入、權限或 SQLite 功能。</strong>沒有真實個案、正式核定或外部資料介接，請勿輸入真實少年資料。</div>
-      <main id="content" class="content" tabindex="-1"></main>
-      <footer class="footer">JCIS 公開唯讀展示 · 僅供介面測試 · 與私人開發用 S2.2 本機資料庫完全分離 · 非任何機關正式系統。</footer>
-    </div>
-  </div>
-  <div id="toast" class="toast" role="status" aria-live="polite"></div>
 </body>
 </html>
