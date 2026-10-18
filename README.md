@@ -34,17 +34,18 @@
 
 ## 網站入口與功能
 
-首頁採用五大入口，另保留原有練習模組與輔助工具。
+首頁設有三個課程學習入口（專業科目、共同科目、函授管理）及三個練習探索入口，並保留原有學習模組與輔助工具。
 
 | 入口 | 功能重點 | 網址 |
 | --- | --- | --- |
 | **專業科目練習** | 30 分鐘練習、考古題、四格申論草稿、答案保存、參考核對、弱點分析及複習規劃 | [進入專業科目](https://leokychen.github.io/probation-study-desk/professional/) |
 | **共同科目** | 國文作文、改寫訂正、英文單字與題型練習、學習紀錄 | [進入共同科目](https://leokychen.github.io/probation-study-desk/common-subjects/) |
+| **函授學習管理** | 登錄課程堂次、觀看進度及依科目自訂7至90天學習排程 | [進入函授管理](https://leokychen.github.io/probation-study-desk/lectures/) |
 | **每日模擬題／晚間學習室** | 依科目選題、計時、四格草稿、完整申論、AI 批改提示詞、閱讀資料 | [進入晚間學習室](https://leokychen.github.io/probation-study-desk/daily-simulation/) |
 | **少年司法週報** | 少年司法、CRC、研究與制度動態；依期別查閱、搜尋、收藏及閱讀 | [閱讀少年司法週報](https://leokychen.github.io/probation-study-desk/juvenile-news/) |
 | **法律 AI（外部實驗服務）** | 法律檢索與 AI 分析的獨立測試入口；不屬於本站的內建自動閱卷功能 | [前往法律 AI 測試站](https://probation-legal-ai-test.pages.dev/) |
 
-### 函授學習管理（新增測試功能）
+### 函授學習管理
 
 - [**函授學習管理**](lectures/)：建立函授堂次、逐堂記錄觀看分鐘與剩餘時數，依每日可用時間與既有練習預留時段，**預覽7／30／60／90天課表與月曆**，確認後才更新，落後時可重新計算。可使用「依序完課、每日輪替一科、依科目權重分配、固定星期科目」四種排課方式，並可自訂考科名稱及停排特定科目。
 - 函授課程為**使用者自行登錄**，網站不讀取函授業者帳號、影片或購買資訊；無需付費 AI、無後端帳號同步。跨裝置請使用[完整 JSON 備份中心](backup/)。
@@ -58,6 +59,21 @@
 - [**完整 JSON 備份中心**](https://leokychen.github.io/probation-study-desk/backup/)：匯出本機學習紀錄，手動移轉、預覽及處理匯入衝突。
 - [**列印／PDF 中心**](https://leokychen.github.io/probation-study-desk/print/)：整理已儲存的申論與作文，使用瀏覽器原生列印功能另存 PDF。
 - [**離線閱讀與作答**](https://leokychen.github.io/probation-study-desk/offline/)：在線上先下載指定資源快照，再於相同網站來源進行支援範圍內的離線學習。
+
+### v2.5 第一階段介面調整（2026-10-18）
+
+為簡化練習畫面，v2.5 考古題練習臺已將以下兩個**顯示區塊暫時隱藏**，並非刪除功能或資料：
+
+| 介面項目 | 目前狀態 | 保留項目 |
+| --- | --- | --- |
+| 考科重點地圖內的「查看完整重點整理、章節優先順序與來源」 | 暫時隱藏展開區塊 | 原始考點文字、章節資料、考點分類及既有歷屆試題連結 |
+| 「補強清單」 | 暫時隱藏清單區塊 | 本機作答紀錄、逐點核對、誤判回饋、補強標記及既有計算程式 |
+
+- **原有的考科重點地圖仍為文字／列表式介面**；本階段**沒有**開發 Obsidian 式節點關聯圖。
+- 既有練習、評分、資料備份與還原流程維持原狀；隱藏不會自動清空任何瀏覽器紀錄。
+- 為遵守歷史首頁的完整性驗證，`legacy-home.html` 原有「查看補強清單」捷徑仍保留，但目標 v2.5 頁面上的清單已隱藏。
+- 維護者可於 `v2.5/study-map.js` 將 `SHOW_FULL_NOTES` 設為 `true`，以及於 `v2.5/review25.js` 將 `SHOW_REVIEW_LIST` 設為 `true`，分別恢復顯示。
+- 此調整由 [PR #40](https://github.com/LeoKYChen/probation-study-desk/pull/40) 合併至 `main`；當日 [GitHub Pages 部署](https://github.com/LeoKYChen/probation-study-desk/actions/runs/39141678593) 與 [Cloudflare 正式同步流程](https://github.com/LeoKYChen/probation-study-desk/actions/runs/39141679062) 均顯示成功。後續部署狀態仍應以 [GitHub Actions](https://github.com/LeoKYChen/probation-study-desk/actions) 最新紀錄為準。
 
 ### AI 在本站扮演的角色
 
