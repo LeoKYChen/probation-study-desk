@@ -23,7 +23,8 @@
   {key:'jj-bookmarks',name:'少年司法週報收藏',kind:'list'},
   {key:'jj-read',name:'少年司法週報已讀',kind:'list'},
   {key:'jj-font',name:'少年司法週報字級',kind:'font'},
-  {key:'psd-home-exam-countdown-v1',name:'考試倒數設定',kind:'setting'}
+  {key:'psd-home-exam-countdown-v1',name:'考試倒數設定',kind:'setting'},
+  {key:'psd-lecture-planner-v1',name:'函授課程及排程',kind:'lectures'}
  ];
  const names=Object.fromEntries(modules.map(x=>[x.key,x]));
  const allowed=new Set([...modules.map(x=>x.key),CONFLICT_KEY]);
@@ -52,6 +53,12 @@
   if(type==='list')assert(Array.isArray(parsed)&&parsed.every(x=>typeof x==='string'&&x.length<300),'收藏或已讀清單格式不符');
   if(type==='font')assert(typeof parsed==='number'&&parsed>=10&&parsed<=40,'閱讀字級超出範圍');
   if(type==='setting')assert(isObj(parsed)&&(!own(parsed,'date')||typeof parsed.date==='string'),'考試倒數設定格式不符');
+  if(type==='lectures'){
+   assert(isObj(parsed)&&parsed.schema===1&&isObj(parsed.settings)&&Array.isArray(parsed.courses)&&Array.isArray(parsed.lessons)&&parsed.courses.length<=300&&parsed.lessons.length<=5000,'函授管理資料格式不符');
+   const cids=new Set(),lids=new Set();
+   for(const course of parsed.courses){assert(isObj(course)&&typeof course.id==='string'&&typeof course.name==='string'&&typeof course.subject==='string'&&!cids.has(course.id),'函授課程內容不正確');cids.add(course.id);}
+   for(const lesson of parsed.lessons){assert(isObj(lesson)&&typeof lesson.id==='string'&&typeof lesson.courseId==='string'&&cids.has(lesson.courseId)&&!lids.has(lesson.id)&&Number.isInteger(lesson.durationMinutes)&&lesson.durationMinutes>0&&lesson.durationMinutes<=1440&&Number.isInteger(lesson.watchedMinutes)&&lesson.watchedMinutes>=0&&lesson.watchedMinutes<=lesson.durationMinutes,'函授堂次內容不正確');lids.add(lesson.id);}
+  }
   if(type==='conflicts')assert(isObj(parsed)&&parsed.schema===CONFLICT_KEY&&Array.isArray(parsed.entries)&&parsed.entries.length<=MAX_CONFLICTS,'衝突版本保存格式不符');
   return parsed;
  }
@@ -88,6 +95,7 @@
   if(type==='oldenglish')return Object.keys(value.progress).length;
   if(type==='list')return value.length;
   if(type==='records')return Object.keys(value).length;
+  if(type==='lectures')return value.lessons.length;
   return 1;
  }
  function plan(current,bundle){
@@ -118,6 +126,20 @@
     return local;
    }
    if(kind==='list')return [...new Set([...local,...remote])];
+   if(kind==='lectures'){
+    const out=copy(local);
+    for(const section of ['courses','lessons']){
+     const have=new Map(out[section].map(x=>[x.id,x]));
+     for(const row of remote[section]){
+      if(!have.has(row.id)){out[section].push(copy(row));have.set(row.id,row);}
+      else if(!equal(have.get(row.id),row))conflict(key,[section,row.id],have.get(row.id),row);
+     }
+    }
+    if(!equal(out.settings,remote.settings))conflict(key,['settings'],out.settings,remote.settings);
+    if(!out.plan&&remote.plan)out.plan=copy(remote.plan);
+    else if(remote.plan&&!equal(out.plan,remote.plan))conflict(key,['plan'],out.plan,remote.plan);
+    return out;
+   }
    if(kind==='records')return mapMerge(key,[],local,remote);
    if(kind==='sessions')return {...copy(local),sessions:mapMerge(key,['sessions'],local.sessions,remote.sessions)};
    if(kind==='common'||kind==='english'||kind==='oldenglish'){
