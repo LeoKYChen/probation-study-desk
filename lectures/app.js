@@ -3,7 +3,8 @@
   const core=window.PSDLectureCore, $=id=>document.getElementById(id);
   const make=(tag,txt,cls)=>{const e=document.createElement(tag);if(txt!==undefined)e.textContent=String(txt);if(cls)e.className=cls;return e;};
   const minutes=n=>n>=60?Math.floor(n/60)+' 小時'+(n%60?' '+n%60+' 分':''):n+' 分鐘';
-  let state=core.empty(),canSave=true,draft=null;
+  let state=core.empty(),canSave=true,draft=null,draftSettings=null;
+  let monthCursor=core.todayTaipei().slice(0,7),selectedDate=core.todayTaipei();
   function tell(text,bad=false){$('message').textContent=text;$('message').dataset.error=bad?'1':'0';}
   function save(next){
     if(!canSave){tell('原資料尚未能安全讀取；請先保存備份再處理。',true);return false;}
@@ -11,7 +12,7 @@
       const valid=core.normalize(next),raw=JSON.stringify(valid);
       localStorage.setItem(core.KEY,raw);
       if(localStorage.getItem(core.KEY)!==raw)throw Error('瀏覽器未回存資料');
-      state=valid;draft=null;render();return true;
+      state=valid;draft=null;draftSettings=null;render();return true;
     }catch(e){tell('儲存失敗：'+e.message+'。原本學習紀錄未主動清除。',true);return false;}
   }
   function init(){
@@ -23,6 +24,11 @@
       document.querySelectorAll('form input,form select,form button,#previewButton,#confirmButton').forEach(e=>e.disabled=true);
     }
     for(const sub of core.SUBJECTS){const option=make('option',sub);option.value=sub;$('courseSubject').append(option);}
+    const other=make('option','＋ 自訂其他考科');other.value='__custom__';$('courseSubject').append(other);
+    $('courseSubject').addEventListener('change',()=>{$('customSubjectWrap').hidden=$('courseSubject').value!=='__custom__';$('customSubject').required=!$('customSubjectWrap').hidden;});
+    $('strategy').addEventListener('change',showStrategyFields);
+    $('prevMonth').addEventListener('click',()=>moveMonth(-1));
+    $('nextMonth').addEventListener('click',()=>moveMonth(1));
     $('courseForm').addEventListener('submit',onAdd);
     $('settingsForm').addEventListener('submit',onSettings);
     $('previewButton').addEventListener('click',onPreview);
@@ -33,20 +39,15 @@
     event.preventDefault();
     try{
       const id='c'+Date.now().toString(36)+'_'+Math.random().toString(36).slice(2,9);
-      const next=core.addCourse(state,$('courseSubject').value,$('courseName').value,$('courseCount').value,$('courseDuration').value,id);
-      if(save(next)){$('courseName').value='';tell('已新增函授課程，可以逐堂記錄觀看進度。');}
+      const subject=$('courseSubject').value==='__custom__'?$('customSubject').value.trim():$('courseSubject').value;
+      const next=core.addCourse(state,subject,$('courseName').value,$('courseCount').value,$('courseDuration').value,id);
+      if(save(next)){$('courseName').value='';$('customSubject').value='';tell('已新增函授課程，可以逐堂記錄觀看進度。');}
     }catch(e){tell(e.message,true);}
   }
   function onSettings(event){
     event.preventDefault();
     try{
-      const next=core.normalize(state);
-      for(const k of ['weekdayMinutes','weekendMinutes','reserveMinutes','reviewDays']){
-        const val=Number($(k).value);
-        if(!Number.isInteger(val))throw Error('讀書時數請輸入整數');
-        next.settings[k]=val;
-      }
-      next.settings.examDate=$('examDate').value||'';
+      const next=readSettings();
       next.plan=state.plan;
       if(save(next))tell('讀書時間已儲存。如需調整既定排程，請先預覽再確認。');
     }catch(e){tell('設定錯誤：'+e.message,true);}
@@ -54,7 +55,9 @@
   function onPreview(){
     if(!canSave)return;
     try{
-      draft=core.schedule(state,core.todayTaipei());
+      const proposed=readSettings();
+      draftSettings=proposed.settings;
+      draft=core.schedule(proposed,core.todayTaipei(),proposed.settings.planDays);
       $('confirmButton').disabled=false;
       renderPlan(draft,true);
       tell('已計算新計畫，尚未修改原本排程。請確認後再儲存。');
@@ -63,8 +66,9 @@
   function onConfirm(){
     if(!draft||!canSave)return;
     const next=core.normalize(state);
+    next.settings=draftSettings;
     next.plan=draft;
-    if(save(next))tell('已確認並保存7天函授進度計畫。之後完成課程可隨時重新排程。');
+    if(save(next))tell('已確認並保存'+next.settings.planDays+'天函授進度計畫。之後完成課程可隨時重新排程。');
   }
   function summary(){
     const courses=state.courses,lessons=state.lessons,total=lessons.reduce((n,l)=>n+l.durationMinutes,0);
@@ -122,7 +126,8 @@
       }
       submit.addEventListener('click',()=>change(false));
       complete.addEventListener('click',()=>change(true));
-      edit.append(title.wrap,duration.wrap,watchedField.wrap,submit,complete);
+      const actions=make('div',undefined,'lesson-actions');actions.append(submit,complete);
+      edit.append(title.wrap,duration.wrap,watchedField.wrap,actions);
       row.append(name,edit);group.append(row);
     }
     const remove=make('button','刪除此課程及全部堂次','course-delete');remove.type='button';
@@ -158,6 +163,10 @@
   function render(){
     for(const k of ['weekdayMinutes','weekendMinutes','reserveMinutes','reviewDays'])$(k).value=state.settings[k];
     $('examDate').value=state.settings.examDate;
+    $('strategy').value=state.settings.strategy;
+    $('planDays').value=String(state.settings.planDays);
+    $('maxSubjectsPerDay').value=String(state.settings.maxSubjectsPerDay);
+    renderRuleEditors();showStrategyFields();
     $('confirmButton').disabled=!draft;
     summary();renderCourses();renderPlan(draft||state.plan,!!draft);
   }
