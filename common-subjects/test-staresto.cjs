@@ -22,7 +22,16 @@ for(const id of ['startDaily','answered','questionPick','options','nextQuestion'
   assert.ok(legacyOnly.includes('id="'+id+'"'),'legacy UI still in DOM: '+id);
 assert.ok(legacyOnly.includes('</div>\n'),'hidden wrapper closed');
 assert.ok(!legacyOnly.includes('id="starestoPanel"'),'Staresto resources outside hidden wrapper');
-assert.ok(html.includes('href="./english-assistant/"'),'v0.6 link-based Staresto course is main entry');
+// Current policy: original Staresto website is the only visible user entry.
+assert.match(html, /id="starestoIntegratedEntry"[^>]*hidden aria-hidden="true"/, 'integrated assistant links hidden');
+assert.match(html, /id="starestoPanel"[^>]*hidden aria-hidden="true"/, 'embedded resource recommendations hidden');
+assert.match(html, /id="starestoExternalRecords"[^>]*hidden aria-hidden="true"/, 'manual external tracking UI hidden');
+assert.match(html, /id="starestoExternalOnly"[^>]*aria-labelledby="starestoExternalOnlyTitle"/, 'simple external link panel shown');
+const primary=html.match(/<div class="panel" id="starestoExternalOnly"[\\s\\S]*?<\\/div>/);
+assert.ok(primary, 'original-site panel exists');
+assert.match(primary[0], /href="https:\\/\\/staresto-create\\.github\\.io\\/JCEE-vocab-questions\\/"/, 'original-site root URL');
+assert.match(primary[0], /target="_blank" rel="noopener noreferrer"/, 'external links open securely');
+assert.ok(html.includes('href="./english-assistant/"'), 'hidden assistant link retained for later restoration');
 assert.ok(fs.existsSync(path.join(root,'daily','index.html')),'v0.4 archived daily course still exists');
 assert.ok(html.includes('id="legacy80ResetControls" hidden'),'original-80 reset remains hidden');
 assert.ok(html.includes('<section id="panelEssay"'),'essay module remains present');
