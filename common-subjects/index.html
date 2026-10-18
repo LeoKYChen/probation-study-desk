@@ -167,7 +167,8 @@ footer{border-top:1px solid var(--line);padding:22px 0;margin-top:25px;color:var
   <div class="panel"><h3>初稿與修訂稿對照</h3><p class="small">先按「儲存修訂版本」保存初稿，參考批改回饋修改後，就能對照前後差異。</p><div class="buttons compare-action-buttons"><label for="compareBase">對照基準版本<select id="compareBase"><option value="">尚無版本</option></select></label><button class="btn" type="button" id="compareRefresh">更新對照</button></div><div class="compare-grid"><div><strong>原稿（選定的已存版本）</strong><pre id="compareOriginal" class="vpreview">尚未儲存任何版本</pre></div><div><strong>現在的草稿（修訂中）</strong><pre id="compareCurrent" class="vpreview">尚未開始寫作</pre></div></div><p class="small" id="compareSummary">儲存初稿後，就能開始比較。</p></div>
 </section>
 <section id="panelEnglish" hidden>
-<div class="panel" style="border-color:#90bca4;background:#edf6f0">
+<!-- Staresto v0.6 integration remains installed but hidden while the user chooses original-site use only. -->
+<div class="panel" id="starestoIntegratedEntry" hidden aria-hidden="true" style="border-color:#90bca4;background:#edf6f0">
 <div class="eyebrow">v0.6 · Staresto 個人化英文學習助手</div>
 <h2>每天6個新單字，再做一點 Staresto 練習</h2>
 <p>用15～25分鐘背單字、做指定年度題目，完成後手動登記成績。系統會保留紀錄、排除已做題目並安排到期單字複習。</p>
@@ -177,10 +178,19 @@ footer{border-top:1px solid var(--line);padding:22px 0;margin-top:25px;color:var
 </div>
 <p class="small">練習題目開啟於 Staresto 原作者網站。</p>
 </div>
+<div class="panel" id="starestoExternalOnly" aria-labelledby="starestoExternalOnlyTitle">
+  <div class="eyebrow">Staresto · 原作者網站</div>
+  <h2 id="starestoExternalOnlyTitle">英文練習請前往 Staresto 原站</h2>
+  <p>目前僅提供前往原作者網站的連結。本站不整合題目、安排 Staresto 練習，也不讀取原站的作答紀錄。</p>
+  <div class="staresto-action-links">
+    <a class="btn primary" href="https://staresto-create.github.io/JCEE-vocab-questions/" target="_blank" rel="noopener noreferrer">前往 Staresto 原站 ↗</a>
+  </div>
+  <p class="small">原站提供學測、指考等英文學習資源；這些資源不是司法特考官方題庫。</p>
+</div>
 <!-- 原創80題僅暫時隱藏介面；保留題庫與既有本機紀錄以供未來恢復。 -->
 <div id="legacy80Practice" hidden aria-hidden="true">
 <h2>原創80題｜附加練習（非每日主課程）</h2><div class="panel"><div class="editor-bar"><h3>每日五題・循序漸進</h3><button class="btn primary" id="startDaily" type="button">開始今日五題</button></div><p id="dailySummary" class="small">每天固定選出五題，兼顧新題與需要加強的題目。</p><div id="dailyProgress" class="small" role="status"></div></div><div class="panel english-bar"><div><strong id="answered">0 / 80</strong><span class="small"> 已作答</span></div><div><label for="filter">題型／複習</label><select id="filter"><option value="all">全部</option><option value="daily">今日五題</option><option value="wrong">錯題／待加強</option><option value="vocab">單字</option><option value="grammar">文法</option><option value="reading">閱讀</option><option value="cloze">克漏字</option></select></div><div><label for="questionPick">題號</label><select id="questionPick"></select></div></div><div class="panel english-card"><div class="eyebrow" id="category"></div><h3 id="enQuestion"></h3><p id="passage" class="reading" hidden></p><div class="options" id="options"></div><div id="explanation" class="explain" hidden></div><div class="buttons"><button class="btn" id="prevQuestion">上一題</button><button class="btn" id="retryQuestion">重練本題</button><button class="btn primary" id="nextQuestion">下一題</button></div></div><p class="small">80題均為原創練習題（既有20題加新增60題），附翻譯與解析，不代表考選部歷屆題目或正式難度。點「重練本題」只清除目前顯示的答案，歷次作答紀錄仍保留。</p></div>
-<section class="panel" id="starestoPanel" aria-labelledby="starestoTitle">
+<section class="panel" id="starestoPanel" aria-labelledby="starestoTitle" hidden aria-hidden="true">
   <div class="ext-heading">
     <div><div class="eyebrow">Staresto · 外部延伸題庫</div><h3 id="starestoTitle">學測／指考英文練習資源</h3>
       <p class="small">依照本站錯題類型推薦額外練習。點擊後會到原作者的網站，不會複製試題或取得外站成績。</p></div>
@@ -192,7 +202,7 @@ footer{border-top:1px solid var(--line);padding:22px 0;margin-top:25px;color:var
   <p class="small">來源：<a href="https://github.com/staresto-create" target="_blank" rel="noopener noreferrer">staresto-create GitHub</a>。這些資源主要是高中英文與大學入學考試練習，並非司法特考官方題庫。「已完成」僅為自行記錄；本站不會取得外站答案、成績或個資。原始題目與解析著作權仍歸原權利人。</p>
 </section>
 </section>
-<section id="panelRecords" hidden><h2>學習紀錄與備份</h2><div class="stats"><div class="stat"><strong id="draftsStat">0</strong><span>作文草稿</span></div><div class="stat"><strong id="versionsStat">0</strong><span>修訂版本</span></div><div class="stat" id="legacy80Stats" hidden aria-hidden="true"><strong id="englishStat">—</strong><span>英文各題首次作答正確率</span></div></div><div class="panel"><h3>外部英文練習紀錄</h3><p id="enHistoryStat" class="small" hidden aria-hidden="true">尚無作答紀錄</p><p id="externalRecordsStat" class="small">外部延伸練習：0 次（手動記錄，不計入英文正確率）</p></div><div class="panel"><h3>備份與還原</h3><p>備份僅包含本模組的作文、自評、回饋與英文作答，不會包含 v2.5.4 其他資料。</p><div class="buttons"><button class="btn primary" id="export">匯出 JSON</button><label class="btn" for="importFile" style="display:inline-block;margin:0">匯入 JSON</label><input type="file" accept=".json,application/json" id="importFile" hidden></div><p class="small">匯入會取代本模組資料，請先備份。不要把含私人文字的 JSON 上傳公開儲存庫。</p>
+<section id="panelRecords" hidden><h2>學習紀錄與備份</h2><div class="stats"><div class="stat"><strong id="draftsStat">0</strong><span>作文草稿</span></div><div class="stat"><strong id="versionsStat">0</strong><span>修訂版本</span></div><div class="stat" id="legacy80Stats" hidden aria-hidden="true"><strong id="englishStat">—</strong><span>英文各題首次作答正確率</span></div></div><div class="panel" id="starestoExternalRecords" hidden aria-hidden="true"><h3>外部英文練習紀錄</h3><p id="enHistoryStat" class="small" hidden aria-hidden="true">尚無作答紀錄</p><p id="externalRecordsStat" class="small">外部延伸練習：0 次（手動記錄，不計入英文正確率）</p></div><div class="panel"><h3>備份與還原</h3><p>備份僅包含本模組的作文、自評、回饋與英文作答，不會包含 v2.5.4 其他資料。</p><div class="buttons"><button class="btn primary" id="export">匯出 JSON</button><label class="btn" for="importFile" style="display:inline-block;margin:0">匯入 JSON</label><input type="file" accept=".json,application/json" id="importFile" hidden></div><p class="small">匯入會取代本模組資料，請先備份。不要把含私人文字的 JSON 上傳公開儲存庫。</p>
 <div class="reset-controls" aria-label="分別清除學習紀錄">
 <h3>清除個別學習紀錄</h3>
 <p class="small">先匯出 JSON 備份，再清除。清除作文紀錄須經過兩次確認，清除後無法直接復原。</p>
