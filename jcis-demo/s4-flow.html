@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-Hant"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer"><meta name="robots" content="noindex,nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'">
+<title>JCIS S4｜風險需求評估複核流程（虛構示範）</title>
+<style>
+:root{font-family:system-ui,-apple-system,"PingFang TC","Noto Sans TC",sans-serif;color:#17233d;background:#f5f7fc}
+*{box-sizing:border-box}body{margin:0}header{background:#162643;color:white;padding:16px max(18px,calc((100% - 1040px)/2));display:flex;gap:13px;align-items:center;flex-wrap:wrap}
+header .logo{background:#5367da;padding:12px 15px;border-radius:12px;font-size:20px;font-weight:900}
+header strong{display:block;font-size:18px}header small{color:#bac7e5}header a{margin-left:auto;color:#e1e7ff;font-size:13px;text-decoration:none}
+a{color:#3855c5}main{max-width:1040px;margin:auto;padding:22px 18px 52px}h1{font-size:clamp(23px,4vw,30px);margin:24px 0 6px}
+p{line-height:1.7}.intro{color:#687994;font-size:14px}.notice{border:1px solid #efdbab;background:#fff7e5;color:#7c5612;padding:15px;border-radius:13px;font-size:13px;line-height:1.7}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.card{background:#fff;border:1px solid #e0e6f2;border-radius:16px;padding:20px;margin-top:17px;box-shadow:0 5px 24px #263a670a}
+.metric{border:1px solid #e6eaf3;border-radius:12px;padding:14px}.metric span{display:block;color:#667891;font-size:12px}.metric strong{display:block;font-size:18px;margin-top:6px;overflow-wrap:anywhere}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:21px 0}.step{border:1px solid #e0e7f4;border-radius:12px;background:#fafbff;padding:13px 9px;font-size:13px;text-align:center;color:#667590}.step strong{display:block;color:#33415d}.step.on{border:2px solid #4d6dde;background:#eff2ff}
+label{display:block;font-weight:700;font-size:13px;margin-top:10px}select{font:inherit;display:block;margin-top:7px;border:1px solid #ccd5e4;border-radius:10px;padding:12px;width:100%;background:white;color:#192946}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:17px}button{border:0;border-radius:10px;background:#415ed2;color:white;padding:12px 17px;font:inherit;font-size:14px;font-weight:760;cursor:pointer}
+button.secondary{background:#eaf0fd;color:#3e57af}button.warn{background:#fdeeea;color:#b1443c}button.ok{background:#176c68}button:disabled{opacity:.36;cursor:not-allowed}
+button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #83a1f0;outline-offset:3px}
+#message{color:#2e4275;font-weight:750;font-size:15px}.history{list-style:none;padding:0}.history li{border-left:3px solid #cbd2f7;padding:9px 0 9px 14px;margin:8px 0;font-size:13px}.history small{display:block;color:#7989a5;margin-top:4px}
+h2{font-size:19px}.explain{font-size:13px;color:#697994}.footer{font-size:12px;color:#8390a7;line-height:1.7;padding:15px 0}
+@media(max-width:700px){main{padding:15px 12px 34px}header{padding:13px 15px}header a{margin-left:0;width:100%}.grid,.steps{grid-template-columns:1fr 1fr}.metric:last-child{grid-column:span 2}.actions button{flex:1 1 40%;padding:12px 9px;font-size:13px}.card{padding:16px}}
+</style></head><body>
+<header><div class="logo">J</div><div><strong>JCIS｜S4 評估及人工複核</strong><small>虛構模擬 · 手機／電腦皆可操作</small></div><a href="./">← 返回儀錶板</a></header>
+<main>
+<div class="notice"><strong>這是公開的純模擬示範。</strong>只使用虛構少年甲、假想列管案及前端記憶體，不連線 API、不用真實帳號、不保存任何資訊。擬議等級並非經驗證的風險評估工具，也不代表法定認定。請勿輸入真實少年資料。</div>
+<h1>風險及需求評估、主管核定、重新複評</h1>
+<p class="intro">試試先將風險擬議為「高」，完成主管核定，再提出一次「低」的複評。你會看到等級更新，但列管狀態不會自行結案。</p>
+<section class="card" aria-labelledby="status-heading">
+ <h2 id="status-heading">示範少年甲｜模擬列管案件 M-DEMO-01</h2>
+ <div class="grid">
+  <div class="metric"><span>列管狀態（由 S3 獨立管理）</span><strong id="listing">列管中</strong></div>
+  <div class="metric"><span>本次評估流程</span><strong id="status">尚未建稿</strong></div>
+  <div class="metric"><span>最新經主管核定等級</span><strong id="approved-level">未核定</strong></div>
+ </div>
+ <div class="steps">
+  <div id="step-draft" class="step on"><strong>① 草稿</strong>承辦人工擬議</div>
+  <div id="step-pending" class="step"><strong>② 送審</strong>只供主管查閱</div>
+  <div id="step-returned" class="step"><strong>③ 退回／修訂</strong>留下每次歷程</div>
+  <div id="step-approved" class="step"><strong>④ 核定／複評</strong>生效但不結案</div>
+ </div>
+ <label>承辦人擬議風險等級（非電腦計分）
+  <select id="proposed" aria-label="人工擬議等級"><option value="high">高（虛構擬議）</option><option value="medium">中（虛構擬議）</option><option value="low">低（虛構擬議）</option></select>
+ </label>
+ <p id="message" aria-live="polite">先建立一份評估草稿。</p>
+ <div class="actions">
+  <button id="draft">承辦｜建立草稿</button>
+  <button id="submit" disabled>承辦｜送主管複核</button>
+  <button id="return" class="warn" disabled>主管｜退回補正</button>
+  <button id="revise" class="secondary" disabled>承辦｜完成修訂</button>
+  <button id="approve" class="ok" disabled>主管｜人工核定</button>
+  <button id="next" class="secondary" disabled>承辦｜建立下一次複評</button>
+  <button id="reset" class="secondary">重設模擬</button>
+ </div>
+</section>
+<section class="card">
+ <h2>目前已核定評估（不覆蓋舊紀錄）</h2>
+ <ol id="approved-history" class="history"><li>尚無已核定的評估。</li></ol>
+ <h2>完整模擬操作歷程</h2>
+ <ol id="history" class="history"><li>尚未建立評估草稿。</li></ol>
+ <p class="explain">注意：送審及退回中的「擬議高風險」不可視為正式高風險；只有主管核定會變動「最新核定」欄位。等級降低並不等於解除列管。重新整理本頁就會重設所有操作。</p>
+</section>
+<footer class="footer">JCIS S4 純展示｜非正式司法或社政系統。本機私人 S4 功能有 Session、角色權限及 SQLite；本公開頁完全沒有這些功能，不能真正儲存、核定或辦理個案。</footer>
+</main>
+<script>
+(function(){
+'use strict';
+var state='new',count=1,proposed='high',approved=[],events=[];
+var names={new:'尚未建稿',draft:'草稿（未核定）',pending:'待主管複核',returned:'已退回待修訂',approved:'主管已核定'};
+var labels={high:'高',medium:'中',low:'低'};
+function by(id){return document.getElementById(id);}
+function entry(action,who){events.push({number:count,action:action,who:who,level:labels[proposed]});}
+function li(parent,main,sub){var node=document.createElement('li');node.textContent=main;var small=document.createElement('small');small.textContent=sub;node.appendChild(small);by(parent).appendChild(node);}
+function render(){
+ by('status').textContent=names[state];by('listing').textContent='列管中（不會因等級自動變更）';
+ by('approved-level').textContent=approved.length?labels[approved[approved.length-1].level]+'（人工核定）':'未核定';
+ by('proposed').disabled=!['new','draft','returned'].includes(state);by('proposed').value=proposed;
+ by('draft').disabled=state!=='new';by('submit').disabled=state!=='draft';
+ by('return').disabled=state!=='pending';by('approve').disabled=state!=='pending';
+ by('revise').disabled=state!=='returned';by('next').disabled=state!=='approved';
+ ['draft','pending','returned','approved'].forEach(function(n){by('step-'+n).classList.toggle('on',n===(state==='new'?'draft':state));});
+ var descriptions={new:'先由承辦人建立草稿。',draft:'目前只有擬議等級；高風險名單不會因此變動。',pending:'主管必須人工複核；不能自動核定。',returned:'主管退回，承辦人應修訂再送審。',approved:'已核定並新增歷史；案件仍列管中，可再次複評。'};
+ by('message').textContent=descriptions[state];
+ by('approved-history').replaceChildren();by('history').replaceChildren();
+ if(!approved.length)li('approved-history','尚無已核定評估。','擬議不會自動列入已核定名單');
+ approved.forEach(function(e){li('approved-history','第 '+e.number+' 次複評：'+labels[e.level]+'（已核定）','示範主管人工複核；之前紀錄保留');});
+ if(!events.length)li('history','尚未建立評估草稿。','尚無任何決定');
+ events.forEach(function(e,i){li('history','步驟 '+(i+1)+'｜第 '+e.number+' 次評估：'+e.action+'（擬議'+e.level+'）',e.who+'｜僅瀏覽器模擬');});
+}
+by('proposed').addEventListener('change',function(e){if(['new','draft','returned'].includes(state)){proposed=e.target.value;}});
+by('draft').addEventListener('click',function(){if(state!=='new')return;state='draft';entry('建立草稿','示範承辦');render();});
+by('submit').addEventListener('click',function(){if(state!=='draft')return;state='pending';entry('送交主管複核','示範承辦');render();});
+by('return').addEventListener('click',function(){if(state!=='pending')return;state='returned';entry('退回補正（未核定）','示範主管');render();});
+by('revise').addEventListener('click',function(){if(state!=='returned')return;state='draft';entry('完成修訂並保留歷史','示範承辦');render();});
+by('approve').addEventListener('click',function(){if(state!=='pending')return;state='approved';approved.push({number:count,level:proposed});entry('人工核定後生效','示範主管');render();});
+by('next').addEventListener('click',function(){if(state!=='approved')return;count++;state='draft';entry('建立下一次複評草稿','示範承辦');render();});
+by('reset').addEventListener('click',function(){state='new';count=1;proposed='high';approved=[];events=[];render();});
+render();
+})();
+</script>
+</body></html>
