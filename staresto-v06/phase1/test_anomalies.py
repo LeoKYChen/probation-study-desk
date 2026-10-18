@@ -25,6 +25,12 @@ def main():
     assert all(r["answerFlag"] or r["optionsFlag"] for r in rows)
     assert sum(audit["byDiagnosis"].values()) == len(rows)
     assert sum(audit["byCategory"].values()) == len(rows)
+    choice = audit["choiceAnswerDiagnostics"]
+    assert len(choice) == audit["byDiagnosis"].get("選擇題格式需人工查核", 0)
+    assert sum(audit["choiceAnswerDiagnosticCounts"].values()) == len(choice)
+    assert len({q["id"] for q in choice}) == len(choice)
+    assert all(q["manualReviewRequired"] and q["published"] is False for q in choice)
+    assert all(q["sourcePath"] == "passage-completion/zhikao/items.json" for q in choice)
     assert sum(audit["bySourcePath"].values()) == len(rows)
     assert sum(audit["overlap"].values()) == len(rows)
     assert audit["flagCounts"][ANSWER_FLAG] == summary["blockingReasons"][ANSWER_FLAG]
