@@ -35,11 +35,13 @@ jobs:
       - name: Install mobile-browser test engine
         run: |
           npm install --prefix /tmp/lecture-browser --no-save playwright@1.62.1
-          /tmp/lecture-browser/node_modules/.bin/playwright install --with-deps chromium
+          /tmp/lecture-browser/node_modules/.bin/playwright install --with-deps chromium webkit
       - name: Verify phone layout and calendar interactions
         env:
           NODE_PATH: /tmp/lecture-browser/node_modules
-        run: node lectures/test-browser.cjs
+        run: |
+          node lectures/test-browser.cjs
+          node lectures/test-ui.cjs
       - name: Build isolated identical static preview
         run: |
           python3 scripts/build-cloudflare-main-mirror.py
