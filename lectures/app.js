@@ -91,7 +91,10 @@
     const chosen=$('strategy').value;
     $('fixedDaysArea').hidden=chosen!=='fixed';
     $('subjectLimitWrap').hidden=chosen!=='weighted';
-    for(const row of $('subjectRules').querySelectorAll('.weight select'))row.disabled=chosen!=='weighted';
+    for(const row of $('subjectRules').querySelectorAll('.weight')){
+      row.hidden=chosen!=='weighted';
+      row.querySelector('select').disabled=chosen!=='weighted';
+    }
   }
   function readSettings(){
     const next=core.normalize(state);
