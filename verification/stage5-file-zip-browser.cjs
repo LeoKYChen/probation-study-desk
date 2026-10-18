@@ -7,6 +7,7 @@ const fs=require('node:fs');
 const path=require('node:path');
 const root=path.resolve(process.argv[2]||'.');
 const dailyCount=JSON.parse(fs.readFileSync(path.join(root,'daily-simulation/questions.json'),'utf8')).questions.length;
+const weeklyCount=JSON.parse(fs.readFileSync(path.join(root,'juvenile-news/issues.json'),'utf8')).issues.length;
 assert(dailyCount>=125,'Daily source lost canonical questions');
 const scheme='file://'+path.join(root,'index.html');
 const engine=process.env.TEST_BROWSER==='webkit'?webkit:chromium;
@@ -58,12 +59,12 @@ const engine=process.env.TEST_BROWSER==='webkit'?webkit:chromium;
   // The app may store daily source lazily; the actual card count is the primary gate.
   assert((await page.locator('#cards').innerText()).length>20);
   const recordReader=page.locator('#reader');
-  // Original weekly reader: file-scheme fallback with canonical 11 historical issues.
+  // Original weekly reader: file-scheme fallback with canonical source issue count.
   await page.goto(scheme,{waitUntil:'load'});
   await page.locator('a[href="./juvenile-news/"]').click();
   assert.match(page.url(),/\/juvenile-news\/index\.html$/);
   await page.locator('#root select').waitFor({timeout:15000});
-  assert.equal(await page.locator('#root select option').count(),11);
+  assert.equal(await page.locator('#root select option').count(),weeklyCount);
   assert.match(await page.locator('#root').innerText(),/少年司法週報/);
   // Original v2.5 exam entry: 426 canonical questions.
   await page.goto(scheme,{waitUntil:'load'});
