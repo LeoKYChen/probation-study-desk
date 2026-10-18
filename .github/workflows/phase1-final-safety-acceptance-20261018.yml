@@ -1,0 +1,78 @@
+name: Phase 1 final safety acceptance (isolated)
+on:
+  push:
+    branches: [test/phase1-final-acceptance-20261018]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  phase1-final-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Confirm production source unmodified
+        run: |
+          set -euo pipefail
+          BASE=57055ee27e8698245fb39fc9b2a3212c15203af1
+          git merge-base --is-ancestor "$BASE" HEAD
+          test "$(git diff --name-only "$BASE" HEAD)" = ".github/workflows/phase1-final-safety-acceptance-20261018.yml"
+          echo "PASS: no production static, question bank, data model, or release script modified"
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Check release controls using fake Cloudflare transport
+        run: |
+          set -euo pipefail
+          python3 verification/check-cloudflare-release.py
+          python3 scripts/build-cloudflare-main-mirror.py
+          node verification/unified-integration.cjs cloudflare-main-mirror-dist
+          node verification/check-daily-v254.cjs
+      - name: Validate backup restoration print and complete offline assets
+        run: |
+          set -euo pipefail
+          node backup/test.cjs
+          node print/test.cjs
+          node verification/offline-stage4-check.cjs
+          node --check sw.js
+          node --check offline.js
+      - name: Install isolated Chromium and WebKit
+        run: |
+          npm install --prefix /tmp/phase1-final-qa --no-save playwright@1.62.1
+          /tmp/phase1-final-qa/node_modules/.bin/playwright install --with-deps chromium webkit
+      - name: Backup and print in both browser engines
+        env:
+          NODE_PATH: /tmp/phase1-final-qa/node_modules
+        run: |
+          set -euo pipefail
+          node backup/test-browser.cjs
+          node print/test-browser.cjs
+          TEST_PATH_PREFIX=/probation-study-desk node print/test-browser.cjs
+          TEST_BROWSER=webkit node print/test-browser.cjs
+      - name: Upgrade rollback and browser stability on both engines
+        env:
+          NODE_PATH: /tmp/phase1-final-qa/node_modules
+        run: |
+          set -euo pipefail
+          for engine in chromium webkit; do
+            UNIFIED_BROWSER_ENGINE="$engine" node verification/cloudflare-migration.cjs cloudflare-main-mirror-dist
+            UNIFIED_BROWSER_ENGINE="$engine" node verification/unified-browser.cjs cloudflare-main-mirror-dist
+          done
+      - name: Offline synthetic answer persistence on both engines
+        env:
+          NODE_PATH: /tmp/phase1-final-qa/node_modules
+        run: |
+          set -euo pipefail
+          node verification/offline-stage4-browser.cjs
+          TEST_OFFLINE_PREFIX=/probation-study-desk node verification/offline-stage4-browser.cjs
+          TEST_OFFLINE_ENGINE=webkit node verification/offline-stage4-browser.cjs
+      - name: Final artifact provenance integrity
+        run: |
+          set -euo pipefail
+          cmp sw.js cloudflare-main-mirror-dist/sw.js
+          cmp offline-manifest.json cloudflare-main-mirror-dist/offline-manifest.json
+          cmp backup/unified-core.js cloudflare-main-mirror-dist/backup/unified-core.js
+          cmp print/print-model.js cloudflare-main-mirror-dist/print/print-model.js
+          echo "PASS: final source/compiled mirror provenance, no production write or deployment"
