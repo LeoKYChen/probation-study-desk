@@ -1,0 +1,47 @@
+name: Phase 1 offline interrupted update fault injection
+on:
+  push:
+    branches: [test/phase1-offline-failure-20261018]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline-failure-safety:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Ensure no production implementation changed
+        run: |
+          set -euo pipefail
+          BASE=57055ee27e8698245fb39fc9b2a3212c15203af1
+          git merge-base --is-ancestor "$BASE" HEAD
+          git diff --name-only "$BASE" HEAD | sort >/tmp/actual
+          printf '%s\n' '.github/workflows/phase1-offline-failure-20261018.yml' 'verification/phase1-offline-failure-qa.cjs' | sort >/tmp/expected
+          diff -u /tmp/expected /tmp/actual
+          echo "PASS: only isolated test script and workflow added"
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Static safety and fault test syntax
+        run: |
+          set -euo pipefail
+          node --check sw.js
+          node --check verification/phase1-offline-failure-qa.cjs
+          node verification/offline-stage4-check.cjs
+          node backup/test.cjs
+      - name: Install headless Chromium and WebKit
+        run: |
+          npm install --prefix /tmp/phase1-sw-fault --no-save playwright@1.62.1
+          /tmp/phase1-sw-fault/node_modules/.bin/playwright install --with-deps chromium webkit
+      - name: Force failed offline update and verify old-cache/data recovery in both browsers
+        env:
+          NODE_PATH: /tmp/phase1-sw-fault/node_modules
+        run: node verification/phase1-offline-failure-qa.cjs
+      - name: Verify service worker implementation is byte-identical to main
+        run: |
+          set -euo pipefail
+          test "$(git show 57055ee27e8698245fb39fc9b2a3212c15203af1:sw.js | sha256sum | awk '{print $1}')" = "$(sha256sum sw.js | awk '{print $1}')"
+          echo "PASS: original SW unchanged; no deployment, no user data"
