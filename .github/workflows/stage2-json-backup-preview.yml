@@ -53,10 +53,10 @@ jobs:
           assert h.count('id="confirmSafe"')==1
           assert './unified-core.js' in h and './app.js' in h
           assert 'Google Drive' in h
-          assert home.count('class="tile course-tile"')==2
+          assert home.count('class="tile course-tile"')==3
           assert home.count('class="tile explore-tile"')==3
           HTMLParser().feed(h)
-          print('PASS backup UI links and 2+3 entrance unchanged')
+          print('PASS backup UI links and 3+3 entrance unchanged')
           PY
       - name: Install browser for end-to-end backup verification
         shell: bash
