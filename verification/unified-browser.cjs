@@ -27,7 +27,7 @@ const server=http.createServer((req,res)=>{
    assert.equal((await page.goto(base)).status(),200);
    await page.evaluate(()=>{localStorage.setItem('probation-study-desk-v24','{"legacy-sentinel":{"answer":"原考古題答案","done":true}}');localStorage.setItem('unrelated-module-sentinel','不得修改');});
    const retained=await page.evaluate(()=>localStorage.getItem('probation-study-desk-v24'));
-   assert.equal(await page.locator('a.tile').count(),5);
+   assert.equal(await page.locator('a.tile.course-tile').count(),3);assert.equal(await page.locator('a.tile.explore-tile').count(),3);assert.equal(await page.locator('a.tile').count(),6);
    for(const width of [320,390,768,1440]){
     await page.setViewportSize({width,height:900});await page.locator('#countdown-settings').evaluate(n=>n.open=true);
     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,'home overflow '+width);
@@ -71,7 +71,7 @@ const server=http.createServer((req,res)=>{
    assert.equal(await page.evaluate(()=>localStorage.getItem('unrelated-module-sentinel')),'不得修改');
    assert.equal(await page.evaluate(()=>localStorage.getItem('probation-study-desk-v24')),retained);
    assert.deepEqual(errors,[]);assert.deepEqual(bad,[]);
-   console.log('PASS browser:',engine,base,'five entries, responsive countdown, 426 questions, timer, drafts/AI reload, old sessions/keys, old pages');
+   console.log('PASS browser:',engine,base,'six entries, responsive countdown, 426 questions, timer, drafts/AI reload, old sessions/keys, old pages');
    await ctx.close();
   }
  }finally{await browser.close();server.close();}
