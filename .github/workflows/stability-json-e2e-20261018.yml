@@ -1,0 +1,38 @@
+name: Phase 1 JSON backup browser acceptance (isolated)
+on:
+  push:
+    branches:
+      - test/stability-json-e2e-20261018
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  json-backup-acceptance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+      - name: Verify test branch originates from approved release
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD^)" = "57055ee27e8698245fb39fc9b2a3212c15203af1"
+          test "$(git diff --name-only HEAD^ HEAD)" = ".github/workflows/stability-json-e2e-20261018.yml"
+          echo "PASS: only the isolated acceptance workflow differs from main"
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: JSON backup unit and safety tests (synthetic data only)
+        run: |
+          node --check backup/unified-core.js
+          node --check backup/app.js
+          node --check backup/test.cjs
+          node backup/test.cjs
+      - name: Install isolated headless Chromium
+        run: |
+          npm install --prefix /tmp/json-stability-qa --no-save playwright@1.62.1
+          /tmp/json-stability-qa/node_modules/.bin/playwright install --with-deps chromium
+      - name: Actual browser download import conflict and reload
+        env:
+          NODE_PATH: /tmp/json-stability-qa/node_modules
+        run: node backup/test-browser.cjs
