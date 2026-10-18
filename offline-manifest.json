@@ -254,6 +254,18 @@
       "url": "juvenile-news/v25-entry.js"
     },
     {
+      "url": "lectures/app.js"
+    },
+    {
+      "url": "lectures/core.js"
+    },
+    {
+      "url": "lectures/index.html"
+    },
+    {
+      "url": "lectures/style.css"
+    },
+    {
       "url": "manifest.webmanifest"
     },
     {
