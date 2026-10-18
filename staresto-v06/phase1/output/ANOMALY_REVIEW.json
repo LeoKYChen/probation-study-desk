@@ -40,7 +40,7 @@
     "tableFill": 4
   },
   "choiceAnswerDiagnosticCounts": {
-    "來源選項可對上答案，標準化資料待查": 23
+    "來源12選項被截為10選項（K／L缺漏）": 23
   },
   "choiceAnswerDiagnostics": [
     {
@@ -77,7 +77,13 @@
       ],
       "rawAnswerInOriginalKeys": true,
       "normalizedAnswerInNormalizedKeys": false,
-      "diagnostic": "來源選項可對上答案，標準化資料待查",
+      "missingOptionKeys": [
+        "K",
+        "L"
+      ],
+      "retainedOptionContentMatchesOriginal": true,
+      "detectedTwelveOptionTruncation": true,
+      "diagnostic": "來源12選項被截為10選項（K／L缺漏）",
       "manualReviewRequired": true,
       "published": false
     },
@@ -115,7 +121,13 @@
       ],
       "rawAnswerInOriginalKeys": true,
       "normalizedAnswerInNormalizedKeys": false,
-      "diagnostic": "來源選項可對上答案，標準化資料待查",
+      "missingOptionKeys": [
+        "K",
+        "L"
+      ],
+      "retainedOptionContentMatchesOriginal": true,
+      "detectedTwelveOptionTruncation": true,
+      "diagnostic": "來源12選項被截為10選項（K／L缺漏）",
       "manualReviewRequired": true,
       "published": false
     },
@@ -153,7 +165,13 @@
       ],
       "rawAnswerInOriginalKeys": true,
       "normalizedAnswerInNormalizedKeys": false,
-      "diagnostic": "來源選項可對上答案，標準化資料待查",
+      "missingOptionKeys": [
+        "K",
+        "L"
+      ],
+      "retainedOptionContentMatchesOriginal": true,
+      "detectedTwelveOptionTruncation": true,
+      "diagnostic": "來源12選項被截為10選項（K／L缺漏）",
       "manualReviewRequired": true,
       "published": false
     },
@@ -191,7 +209,13 @@
       ],
       "rawAnswerInOriginalKeys": true,
       "normalizedAnswerInNormalizedKeys": false,
-      "diagnostic": "來源選項可對上答案，標準化資料待查",
+      "missingOptionKeys": [
+        "K",
+        "L"
+      ],
+      "retainedOptionContentMatchesOriginal": true,
+      "detectedTwelveOptionTruncation": true,
+      "diagnostic": "來源12選項被截為10選項（K／L缺漏）",
       "manualReviewRequired": true,
       "published": false
     },
@@ -229,7 +253,13 @@
       ],
       "rawAnswerInOriginalKeys": true,
       "normalizedAnswerInNormalizedKeys": false,
-      "diagnostic": "來源選項可對上答案，標準化資料待查",
+      "missingOptionKeys": [
+        "K",
+        "L"
+      ],
+      "retainedOptionContentMatchesOriginal": true,
+      "detectedTwelveOptionTruncation": true,
+      "diagnostic": "來源12選項被截為10選項（K／L缺漏）",
       "manualReviewRequired": true,
       "published": false
     },
@@ -267,7 +297,13 @@
       ],
       "rawAnswerInOriginalKeys": true,
       "normalizedAnswerInNormalizedKeys": false,
-      "diagnostic": "來源選項可對上答案，標準化資料待查",
+      "missingOptionKeys": [
+        "K",
+        "L"
+      ],
+      "retainedOptionContentMatchesOriginal": true,
+      "detectedTwelveOptionTruncation": true,
+      "diagnostic": "來源12選項被截為10選項（K／L缺漏）",
       "manualReviewRequired": true,
       "published": false
     },
@@ -305,7 +341,13 @@
       ],
       "rawAnswerInOriginalKeys": true,
       "normalizedAnswerInNormalizedKeys": false,
-      "diagnostic": "來源選項可對上答案，標準化資料待查",
+      "missingOptionKeys": [
+        "K",
+        "L"
+      ],
+      "retainedOptionContentMatchesOriginal": true,
+      "detectedTwelveOptionTruncation": true,
+      "diagnostic": "來源12選項被截為10選項（K／L缺漏）",
       "manualReviewRequired": true,
       "published": false
     },
@@ -343,7 +385,13 @@
       ],
       "rawAnswerInOriginalKeys": true,
       "normalizedAnswerInNormalizedKeys": false,
-      "diagnostic": "來源選項可對上答案，標準化資料待查",
+      "missingOptionKeys": [
+        "K",
+        "L"
+      ],
+      "retainedOptionContentMatchesOriginal": true,
+      "detectedTwelveOptionTruncation": true,
+      "diagnostic": "來源12選項被截為10選項（K／L缺漏）",
       "manualReviewRequired": true,
       "published": false
     },
@@ -381,7 +429,13 @@
       ],
       "rawAnswerInOriginalKeys": true,
       "normalizedAnswerInNormalizedKeys": false,
-      "diagnostic": "來源選項可對上答案，標準化資料待查",
+      "missingOptionKeys": [
+        "K",
+        "L"
+      ],
+      "retainedOptionContentMatchesOriginal": true,
+      "detectedTwelveOptionTruncation": true,
+      "diagnostic": "來源12選項被截為10選項（K／L缺漏）",
       "manualReviewRequired": true,
       "published": false
     },
@@ -419,7 +473,13 @@
       ],
       "rawAnswerInOriginalKeys": true,
       "normalizedAnswerInNormalizedKeys": false,
-      "diagnostic": "來源選項可對上答案，標準化資料待查",
+      "missingOptionKeys": [
+        "K",
+        "L"
+      ],
+      "retainedOptionContentMatchesOriginal": true,
+      "detectedTwelveOptionTruncation": true,
+      "diagnostic": "來源12選項被截為10選項（K／L缺漏）",
       "manualReviewRequired": true,
       "published": false
     },
@@ -457,7 +517,13 @@
       ],
       "rawAnswerInOriginalKeys": true,
       "normalizedAnswerInNormalizedKeys": false,
-      "diagnostic": "來源選項可對上答案，標準化資料待查",
+      "missingOptionKeys": [
+        "K",
+        "L"
+      ],
+      "retainedOptionContentMatchesOriginal": true,
+      "detectedTwelveOptionTruncation": true,
+      "diagnostic": "來源12選項被截為10選項（K／L缺漏）",
       "manualReviewRequired": true,
       "published": false
     },
@@ -495,7 +561,13 @@
       ],
       "rawAnswerInOriginalKeys": true,
       "normalizedAnswerInNormalizedKeys": false,
-      "diagnostic": "來源選項可對上答案，標準化資料待查",
+      "missingOptionKeys": [
+        "K",
+        "L"
+      ],
+      "retainedOptionContentMatchesOriginal": true,
+      "detectedTwelveOptionTruncation": true,
+      "diagnostic": "來源12選項被截為10選項（K／L缺漏）",
       "manualReviewRequired": true,
       "published": false
     },
@@ -533,7 +605,13 @@
       ],
       "rawAnswerInOriginalKeys": true,
       "normalizedAnswerInNormalizedKeys": false,
-      "diagnostic": "來源選項可對上答案，標準化資料待查",
+      "missingOptionKeys": [
+        "K",
+        "L"
+      ],
+      "retainedOptionContentMatchesOriginal": true,
+      "detectedTwelveOptionTruncation": true,
+      "diagnostic": "來源12選項被截為10選項（K／L缺漏）",
       "manualReviewRequired": true,
       "published": false
     },
@@ -571,7 +649,13 @@
       ],
       "rawAnswerInOriginalKeys": true,
       "normalizedAnswerInNormalizedKeys": false,
-      "diagnostic": "來源選項可對上答案，標準化資料待查",
+      "missingOptionKeys": [
+        "K",
+        "L"
+      ],
+      "retainedOptionContentMatchesOriginal": true,
+      "detectedTwelveOptionTruncation": true,
+      "diagnostic": "來源12選項被截為10選項（K／L缺漏）",
       "manualReviewRequired": true,
       "published": false
     },
@@ -609,7 +693,13 @@
       ],
       "rawAnswerInOriginalKeys": true,
       "normalizedAnswerInNormalizedKeys": false,
-      "diagnostic": "來源選項可對上答案，標準化資料待查",
+      "missingOptionKeys": [
+        "K",
+        "L"
+      ],
+      "retainedOptionContentMatchesOriginal": true,
+      "detectedTwelveOptionTruncation": true,
+      "diagnostic": "來源12選項被截為10選項（K／L缺漏）",
       "manualReviewRequired": true,
       "published": false
     },
@@ -647,7 +737,13 @@
       ],
       "rawAnswerInOriginalKeys": true,
       "normalizedAnswerInNormalizedKeys": false,
-      "diagnostic": "來源選項可對上答案，標準化資料待查",
+      "missingOptionKeys": [
+        "K",
+        "L"
+      ],
+      "retainedOptionContentMatchesOriginal": true,
+      "detectedTwelveOptionTruncation": true,
+      "diagnostic": "來源12選項被截為10選項（K／L缺漏）",
       "manualReviewRequired": true,
       "published": false
     },
@@ -685,7 +781,13 @@
       ],
       "rawAnswerInOriginalKeys": true,
       "normalizedAnswerInNormalizedKeys": false,
-      "diagnostic": "來源選項可對上答案，標準化資料待查",
+      "missingOptionKeys": [
+        "K",
+        "L"
+      ],
+      "retainedOptionContentMatchesOriginal": true,
+      "detectedTwelveOptionTruncation": true,
+      "diagnostic": "來源12選項被截為10選項（K／L缺漏）",
       "manualReviewRequired": true,
       "published": false
     },
@@ -723,7 +825,13 @@
       ],
       "rawAnswerInOriginalKeys": true,
       "normalizedAnswerInNormalizedKeys": false,
-      "diagnostic": "來源選項可對上答案，標準化資料待查",
+      "missingOptionKeys": [
+        "K",
+        "L"
+      ],
+      "retainedOptionContentMatchesOriginal": true,
+      "detectedTwelveOptionTruncation": true,
+      "diagnostic": "來源12選項被截為10選項（K／L缺漏）",
       "manualReviewRequired": true,
       "published": false
     },
@@ -761,7 +869,13 @@
       ],
       "rawAnswerInOriginalKeys": true,
       "normalizedAnswerInNormalizedKeys": false,
-      "diagnostic": "來源選項可對上答案，標準化資料待查",
+      "missingOptionKeys": [
+        "K",
+        "L"
+      ],
+      "retainedOptionContentMatchesOriginal": true,
+      "detectedTwelveOptionTruncation": true,
+      "diagnostic": "來源12選項被截為10選項（K／L缺漏）",
       "manualReviewRequired": true,
       "published": false
     },
@@ -799,7 +913,13 @@
       ],
       "rawAnswerInOriginalKeys": true,
       "normalizedAnswerInNormalizedKeys": false,
-      "diagnostic": "來源選項可對上答案，標準化資料待查",
+      "missingOptionKeys": [
+        "K",
+        "L"
+      ],
+      "retainedOptionContentMatchesOriginal": true,
+      "detectedTwelveOptionTruncation": true,
+      "diagnostic": "來源12選項被截為10選項（K／L缺漏）",
       "manualReviewRequired": true,
       "published": false
     },
@@ -837,7 +957,13 @@
       ],
       "rawAnswerInOriginalKeys": true,
       "normalizedAnswerInNormalizedKeys": false,
-      "diagnostic": "來源選項可對上答案，標準化資料待查",
+      "missingOptionKeys": [
+        "K",
+        "L"
+      ],
+      "retainedOptionContentMatchesOriginal": true,
+      "detectedTwelveOptionTruncation": true,
+      "diagnostic": "來源12選項被截為10選項（K／L缺漏）",
       "manualReviewRequired": true,
       "published": false
     },
@@ -875,7 +1001,13 @@
       ],
       "rawAnswerInOriginalKeys": true,
       "normalizedAnswerInNormalizedKeys": false,
-      "diagnostic": "來源選項可對上答案，標準化資料待查",
+      "missingOptionKeys": [
+        "K",
+        "L"
+      ],
+      "retainedOptionContentMatchesOriginal": true,
+      "detectedTwelveOptionTruncation": true,
+      "diagnostic": "來源12選項被截為10選項（K／L缺漏）",
       "manualReviewRequired": true,
       "published": false
     },
@@ -913,7 +1045,13 @@
       ],
       "rawAnswerInOriginalKeys": true,
       "normalizedAnswerInNormalizedKeys": false,
-      "diagnostic": "來源選項可對上答案，標準化資料待查",
+      "missingOptionKeys": [
+        "K",
+        "L"
+      ],
+      "retainedOptionContentMatchesOriginal": true,
+      "detectedTwelveOptionTruncation": true,
+      "diagnostic": "來源12選項被截為10選項（K／L缺漏）",
       "manualReviewRequired": true,
       "published": false
     }
