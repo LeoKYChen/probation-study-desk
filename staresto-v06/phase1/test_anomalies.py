@@ -42,7 +42,7 @@ def main():
     assert actual["both"] == audit["overlap"].get("同時出現", 0)
     assert actual["answer"] == audit["overlap"].get("只有答案警示", 0)
     assert actual["options"] == audit["overlap"].get("只有選項警示", 0)
-    assert all(r["diagnosis"] == "疑似非選擇題格式警示" for r in rows
+    assert all(r["diagnosis"] == "非標準類別或混合題格式警示" for r in rows
                if r["category"] in ("英文作文", "中譯英", "混合題"))
     print("PASS anomaly triage: records preserved, overlapping flags accounted for, zero auto-release")
 
