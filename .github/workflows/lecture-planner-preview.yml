@@ -3,6 +3,14 @@ on:
   push:
     branches:
       - feature/lecture-planner-20261018
+  pull_request:
+    branches: [main]
+    paths:
+      - 'lectures/**'
+      - 'backup/**'
+      - 'index.html'
+      - 'scripts/build-cloudflare-main-mirror.py'
+      - '.github/workflows/lecture-planner-preview.yml'
   workflow_dispatch:
 
 permissions:
@@ -13,7 +21,7 @@ concurrency:
 
 jobs:
   validate-and-preview:
-    if: github.repository == 'LeoKYChen/probation-study-desk'
+    if: github.repository == 'LeoKYChen/probation-study-desk' && (github.event_name != 'pull_request' || (github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'feature/lecture-planner-20261018'))
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
