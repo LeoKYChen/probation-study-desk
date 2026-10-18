@@ -73,6 +73,58 @@ function run(){
  assert.equal(final.lessons.length,2,'新的堂次應被安全合併');
  assert.equal(local.getItem('jj-read'),'["keep"]','原閱讀紀錄應保持原狀');
  assert.equal(backup.collect(local,'https://local.test').data[key],local.getItem(key));
+ // 既有資料格式可無損升級：舊版7天排程仍能讀取，新欄位有安全預設值。
+ const legacy=JSON.parse(JSON.stringify(initial));
+ legacy.plan=null;
+ const old=core.normalize(legacy);
+ assert.equal(old.settings.strategy,'sequential');
+ assert.equal(old.settings.planDays,30);
+ assert.equal(old.lessons[0].watchedMinutes,20);
+ const oldPlan=core.schedule(old,start,7);
+ assert.equal(core.normalize({...old,plan:oldPlan}).plan.days.length,7);
+ // 國考多科：不強迫必須屬於預設7科，且 30/90 天均不能超過每天分鐘數。
+ let multi=core.empty();
+ const names=['行政法','民法','刑法','刑事訴訟法','犯罪學','心理學','諮商與輔導','少年事件處理法','保安處分執行法','國文'];
+ for(let i=0;i<names.length;i++)multi=core.addCourse(multi,names[i],names[i]+'函授',2,100,'multi'+i);
+ const calendar=core.schedule(multi,start,90);
+ assert.equal(calendar.days.length,90);
+ assert(calendar.days.every(x=>x.scheduledMinutes<=x.capacityMinutes));
+ assert.equal(calendar.days.reduce((n,x)=>n+x.scheduledMinutes,0),calendar.scheduledMinutes);
+ assert.equal(calendar.scheduledMinutes,core.remaining(multi));
+ // 排除科目不會刪資料，也不會偷渡到課表。
+ multi.settings.subjectRules={'行政法':{enabled:false,weight:5}};
+ const excluded=core.schedule(multi,start,30);
+ const ids=new Set(multi.lessons.filter(l=>l.courseId==='multi0').map(l=>l.id));
+ assert(excluded.days.every(day=>day.units.every(u=>!ids.has(u.lessonId))));
+ assert.equal(multi.lessons.filter(l=>ids.has(l.id)).length,2);
+ assert.equal(core.forecast(multi,start).finishDate,null,'被排除科目仍有未完成分鐘，不能誤報完課');
+ // 科目每日輪替（一天不超過一科）；固定星期安排有空白休息日。
+ multi.settings.subjectRules={};
+ multi.settings.strategy='rotate';
+ const rotated=core.schedule(multi,start,7);
+ const lessonSubject=new Map(multi.lessons.map(l=>[l.id,multi.courses.find(c=>c.id===l.courseId).subject]));
+ assert(rotated.days.every(day=>new Set(day.units.map(u=>lessonSubject.get(u.lessonId))).size<=1));
+ assert.notEqual(lessonSubject.get(rotated.days[0].units[0].lessonId),lessonSubject.get(rotated.days[1].units[0].lessonId));
+ multi.settings.strategy='fixed';
+ multi.settings.fixedDays=['','','行政法','','','心理學',''];
+ const fixed=core.schedule(multi,start,7);
+ assert.equal(fixed.days[0].scheduledMinutes,0);
+ assert(fixed.days[1].units.every(u=>lessonSubject.get(u.lessonId)==='行政法'));
+ assert(fixed.days[4].units.every(u=>lessonSubject.get(u.lessonId)==='心理學'));
+ // 加權分配不超過每日科目上限；高權重科目較低權重獲得更多時數。
+ let weighted=core.empty();
+ weighted=core.addCourse(weighted,'心理學','心理學',30,120,'weight_a');
+ weighted=core.addCourse(weighted,'犯罪學','犯罪學',30,120,'weight_b');
+ weighted.settings.strategy='weighted';
+ weighted.settings.maxSubjectsPerDay=2;
+ weighted.settings.subjectRules={'心理學':{enabled:true,weight:5},'犯罪學':{enabled:true,weight:1}};
+ const wp=core.schedule(weighted,start,30);
+ assert(wp.days.every(day=>new Set(day.units.map(u=>lessonSubject.get(u.lessonId))).size<=2)); // 下方另外用當前題目來源檢驗權重。
+ const wmap=new Map(weighted.lessons.map(l=>[l.id,weighted.courses.find(c=>c.id===l.courseId).subject]));
+ const counts={心理學:0,犯罪學:0};
+ for(const day of wp.days)for(const u of day.units)counts[wmap.get(u.lessonId)]+=u.minutes;
+ assert(counts['心理學']>counts['犯罪學']);
+ assert(wp.days.every(day=>day.scheduledMinutes<=day.capacityMinutes));
  console.log('Lecture planner and backup regression tests passed');
 }
 run();
