@@ -1,0 +1,79 @@
+name: Phase 1 isolated offline PWA QA 20261018
+on:
+  push:
+    branches: [test/phase1-offline-pwa-20261018]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: phase1-offline-qa-20261018
+  cancel-in-progress: false
+jobs:
+  offline-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Verify identical source and no production changes
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE=57055ee27e8698245fb39fc9b2a3212c15203af1
+          git merge-base --is-ancestor "$BASE" HEAD
+          test "$(git diff --name-only "$BASE" HEAD)" = ".github/workflows/stability-offline-pwa-qa-20261018.yml"
+          echo "PASS: production source is unchanged; only isolated test workflow added"
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Validate offline cache and original study resources
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check sw.js
+          node --check offline.js
+          node --check verification/offline-stage4-check.cjs
+          node --check verification/offline-stage4-browser.cjs
+          node verification/offline-stage4-check.cjs
+          python3 scripts/build-cloudflare-main-mirror.py
+          cmp offline-manifest.json cloudflare-main-mirror-dist/offline-manifest.json
+          cmp sw.js cloudflare-main-mirror-dist/sw.js
+          python3 - <<'PY'
+          from pathlib import Path
+          import json
+          dist=Path("cloudflare-main-mirror-dist")
+          assets=json.loads(Path("offline-manifest.json").read_text())["assets"]
+          assert len(assets)==184, f"Unexpected offline assets: {len(assets)}"
+          missing=[x["url"] for x in assets if not (dist/x["url"]).is_file()]
+          assert not missing, f"Missing published files: {missing}"
+          print("PASS: 184 offline assets exist in deployable mirror")
+          PY
+      - name: Install Chromium and WebKit for isolated browser acceptance
+        run: |
+          npm install --prefix /tmp/stability-offline-qa --no-save playwright@1.62.1
+          /tmp/stability-offline-qa/node_modules/.bin/playwright install --with-deps chromium webkit
+      - name: Offline reload and synthetic answer preservation on Chromium
+        env:
+          NODE_PATH: /tmp/stability-offline-qa/node_modules
+        run: |
+          node verification/offline-stage4-browser.cjs
+          TEST_OFFLINE_PREFIX=/probation-study-desk node verification/offline-stage4-browser.cjs
+      - name: Offline-origin failure and synthetic answer preservation on WebKit
+        env:
+          NODE_PATH: /tmp/stability-offline-qa/node_modules
+          TEST_OFFLINE_ENGINE: webkit
+        run: node verification/offline-stage4-browser.cjs
+      - name: Deploy isolated Cloudflare test alias only
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy cloudflare-main-mirror-dist --project-name=probation-study30-test --branch=qa-offline-20261018 --commit-hash=${{ github.sha }}
+      - name: Verify all live isolated QA bytes
+        run: python3 scripts/verify-published-bytes.py cloudflare-main-mirror-dist https://qa-offline-20261018.probation-study30-test.pages.dev/
+      - name: Verify real HTTPS download, offline use and reload with synthetic record
+        env:
+          NODE_PATH: /tmp/stability-offline-qa/node_modules
+          STAGE4_BASE_URL: https://qa-offline-20261018.probation-study30-test.pages.dev
+        run: node verification/offline-stage4-live-download.cjs
