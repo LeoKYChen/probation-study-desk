@@ -12,7 +12,7 @@ SPECIAL = {"英文作文", "中譯英", "混合題"}
 NON_CHOICE_ANSWER_TYPES = {
     "fill", "short", "longAnswer", "tableFill", "multi", "sentenceNumber",
 }
-REVIEW_STATES = ("疑似非選擇題格式警示", "選擇題格式需人工查核", "題型不明需人工查核")
+REVIEW_STATES = ("非標準類別或混合題格式警示", "選擇題格式需人工查核", "題型不明需人工查核")
 
 
 def classify(row, raw):
@@ -26,6 +26,36 @@ def classify(row, raw):
 
 def option_count(value):
     return len(value) if isinstance(value, (dict, list)) else 0
+
+
+def answer_option_diagnosis(raw, normalized):
+    source_opts = raw.get("options") if "options" in raw else raw.get("o")
+    source_keys = sorted(str(k) for k in source_opts.keys()) if isinstance(source_opts, dict) else (
+        [chr(65 + i) for i in range(len(source_opts))] if isinstance(source_opts, list) else []
+    )
+    target_opts = normalized.get("options")
+    target_keys = sorted(str(k) for k in target_opts.keys()) if isinstance(target_opts, dict) else []
+    raw_answer = raw.get("answer") if raw.get("answer") is not None else raw.get("answerKey")
+    target_answer = normalized.get("answer")
+    raw_in_source = str(raw_answer) in source_keys if raw_answer is not None else False
+    target_in_target = str(target_answer) in target_keys if target_answer is not None else False
+    if raw_answer is None:
+        reason = "原始答案欄位未確認"
+    elif raw_in_source and not target_in_target:
+        reason = "來源選項可對上答案，標準化資料待查"
+    elif not raw_in_source:
+        reason = "原始答案鍵亦未對上原始選項，須查原卷"
+    else:
+        reason = "其他選項／答案對應問題"
+    return {
+        "rawAnswer": str(raw_answer) if raw_answer is not None else None,
+        "normalizedAnswer": str(target_answer) if target_answer is not None else None,
+        "rawOptionKeys": source_keys,
+        "normalizedOptionKeys": target_keys,
+        "rawAnswerInOriginalKeys": raw_in_source,
+        "normalizedAnswerInNormalizedKeys": target_in_target,
+        "diagnostic": reason,
+    }
 
 
 def main():
@@ -47,6 +77,7 @@ def main():
     answer_type_counts = Counter()
     flag_counts = Counter()
     overlap = Counter()
+    standard_diagnostics = []
     records = []
     for r in flagged:
         ix = by_id[r["id"]]
@@ -67,6 +98,12 @@ def main():
         has_option_flag = OPTION_FLAG in r["blocks"]
         classification = classify(r, raw)
         answer_type = str(raw.get("answerType") or "未標記")
+        if classification == REVIEW_STATES[1]:
+            detail = answer_option_diagnosis(raw, normalized)
+            standard_diagnostics.append({
+                "id": r["id"], "sourcePath": src, "sourceItemId": r["sourceItemId"],
+                **detail, "manualReviewRequired": True, "published": False
+            })
         by_class[classification] += 1
         by_category[r["category"]] += 1
         by_source[src] += 1
@@ -114,6 +151,8 @@ def main():
         "byCategory": dict(by_category),
         "bySourcePath": dict(by_source),
         "byRawAnswerType": dict(answer_type_counts),
+        "choiceAnswerDiagnosticCounts": dict(Counter(x["diagnostic"] for x in standard_diagnostics)),
+        "choiceAnswerDiagnostics": standard_diagnostics,
         "examplesByDiagnosis": {
             state: [x["id"] for x in records if x["diagnosis"] == state][:15]
             for state in REVIEW_STATES
@@ -144,17 +183,28 @@ def main():
         lines.append("| " + key + " | " + str(count) + " |")
     lines += [
         "", "## 判讀原則", "",
-        "- 「疑似非選擇題格式警示」表示原始資料標示混合題、作文、中譯英或非單選作答型態；**不是證明警示必然誤判**。",
+        "- 「非標準類別或混合題格式警示」包括作文、中譯英及混合題；混合題也包含少數單選題，不能將 507 筆全部認作非選擇題或已證實誤判。",
         "- 「選擇題格式需人工查核」表示原題類別通常具有選項，應優先查閱原始卷面、選項字母及答案來源；**不能直接認定答案錯誤**。",
         "- 每筆詳列來源路徑、原題 ID、原始與標準化選項數、作答型態、警示組合及人工審查需求；完整清單見 ANOMALY_REVIEW.json。",
         "- 不因分流結果修改原有 668 題、localStorage 或正式發布資格；正式發布數維持 0。",
         "- 後續人工審核需核對原卷題型、原作者原檔、評分型態、篇章及權利，逐筆標明已確證的原因。",
+        "", "## 選擇題 23 筆：原始選項及答案欄位診斷", "",
+        "本表只比對鍵值是否存在，不證明原卷答案是否正確；不會自動修復或發布。",
+        "", "| 診斷 | 筆數 |", "|---|---:|",
     ]
+    for diagnosis, count in Counter(x["diagnostic"] for x in standard_diagnostics).most_common():
+        lines.append("| " + diagnosis + " | " + str(count) + " |")
+    lines += ["", "| 原始題號 | 原始答案鍵 | 標準化答案鍵 | 診斷 |",
+              "|---|---|---|---|"]
+    for x in standard_diagnostics:
+        lines.append("| " + x["sourceItemId"] + " | " + str(x["rawAnswer"]) + " | "
+                     + str(x["normalizedAnswer"]) + " | " + x["diagnostic"] + " |")
     (OUTPUT / "ANOMALY_REVIEW.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print("ANOMALY_REVIEW_SUMMARY", json.dumps({
         "unique": len(records), "flagCounts": dict(flag_counts),
         "overlap": dict(overlap), "byDiagnosis": dict(by_class),
         "byCategory": dict(by_category),
+        "choiceDiagnostics": dict(Counter(x["diagnostic"] for x in standard_diagnostics)),
         "releaseApproved": 0,
     }, ensure_ascii=False), flush=True)
 
