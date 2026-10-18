@@ -59,7 +59,7 @@ button{cursor:pointer}
 .section{margin-top:0;margin-bottom:38px}
 .section h2{margin:0 0 16px;color:#62796e;font-size:clamp(17px,1.65vw,20px);font-weight:760;line-height:1.4}
 .course-grid,.explore-grid{display:grid;min-width:0;gap:22px}
-.course-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.course-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 .explore-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
 .tile{display:flex;align-items:center;justify-content:center;min-width:0;padding:24px 16px;text-align:center;transition:transform .16s ease,box-shadow .16s ease,background-color .16s ease;overflow-wrap:anywhere}
 .tile:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(36,59,53,.12)}
@@ -325,6 +325,10 @@ body{background:#f5f5ef}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
+.lecture-entry{margin:14px 0 0;padding:13px 16px;border:1px solid #d6e1d7;background:#f8fbf7;border-radius:11px;font-size:14px;color:#62766b}
+.lecture-entry a{color:#245b48;font-weight:750;text-decoration:none}
+.lecture-entry a:hover{text-decoration:underline}
+@media(max-width:760px){.lecture-entry span{display:block;margin-top:3px}}
 </style>
 <script src="./file-compat.js" defer></script>
 </head>
@@ -340,6 +344,7 @@ body{background:#f5f5ef}
     <nav class="sidebar-links" aria-label="首頁區塊">
       <a href="#countdown-card"><span aria-hidden="true">◷</span> 考試倒數</a>
       <a href="#courses-heading" class="is-current"><span aria-hidden="true">▣</span> 課程學習</a>
+      <a href="./lectures/"><span aria-hidden="true">▤</span> 函授學習管理</a>
       <a href="#explore-heading"><span aria-hidden="true">✧</span> 練習與探索</a>
       <a href="./backup/"><span aria-hidden="true">⬇</span> 學習紀錄備份</a>
       <a href="./print/"><span aria-hidden="true">▤</span> 申論列印／PDF</a>
@@ -382,8 +387,8 @@ body{background:#f5f5ef}
     <nav class="course-grid" aria-label="課程學習入口">
       <a class="tile course-tile" href="./professional/" target="_blank" rel="noopener noreferrer" aria-label="專業科目：426題、每日30分鐘與申論練習（另開新分頁）"><span class="tile-copy"><span class="tile-title">專業科目</span><small class="tile-description">申論練習・考古題・每日30分鐘</small></span><span class="tile-arrow" aria-hidden="true">↗</span></a>
       <a class="tile course-tile" href="./common-subjects/" target="_blank" rel="noopener noreferrer" aria-label="共同科目：英文、國文作文及 Staresto 題庫（另開新分頁）"><span class="tile-copy"><span class="tile-title">共同科目</span><small class="tile-description">英文・國文作文・題庫</small></span><span class="tile-arrow" aria-hidden="true">↗</span></a>
-      <a class="tile course-tile" href="./lectures/" target="_blank" rel="noopener noreferrer" aria-label="函授學習管理：課程進度記錄及自動調整（另開新分頁）"><span class="tile-copy"><span class="tile-title">函授學習管理</span><small class="tile-description">課程進度・自動重新排程</small></span><span class="tile-arrow" aria-hidden="true">↗</span></a>
     </nav>
+    <p class="lecture-entry"><a href="./lectures/" target="_blank" rel="noopener noreferrer">🎬 函授學習管理 →</a><span>　堂次記錄・剩餘時數・進度自動調整</span></p>
   </section>
   <section class="section" aria-labelledby="explore-heading">
     <h2 id="explore-heading">練習與探索</h2>
