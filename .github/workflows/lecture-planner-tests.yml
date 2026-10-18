@@ -19,4 +19,8 @@ jobs:
         with:
           node-version: '22'
       - name: Validate lecture scheduling and backups
-        run: node lectures/test.cjs
+        run: |
+          node --check lectures/core.js
+          node --check lectures/app.js
+          node lectures/test.cjs
+          node backup/test.cjs
