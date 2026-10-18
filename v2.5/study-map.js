@@ -1,5 +1,6 @@
 (() => {
  'use strict';
+ const SHOW_FULL_NOTES=false; // 改為 true 可恢復完整重點整理區塊。
  const data=window.STUDY_MAP_DATA, host=document.getElementById('studyMap');
  let subjectIndex=data.findIndex(s=>s.subject==='犯罪學'), topicIndex=0, mode='groups', lastQuestion=null;
  const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
@@ -94,7 +95,7 @@
     detail.append(row);
    });
   }
-  if(topics.length){const original=el('details',undefined,'map-original');original.append(el('summary','查看完整重點整理、章節優先順序與來源'),markdown(s.text));host.append(original);}
+  if(SHOW_FULL_NOTES&&topics.length){const original=el('details',undefined,'map-original');original.append(el('summary','查看完整重點整理、章節優先順序與來源'),markdown(s.text));host.append(original);}
   host.append(el('p','選單已收錄刑事訴訟法、少年事件處理法與保安處分執行法的完整考點筆記；刑訴與保安共用官方試卷，分科閱讀。','map-muted'));
  }
  window.studyMapQuestionChanged=()=>{
