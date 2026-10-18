@@ -26,6 +26,9 @@ const server=http.createServer((req,res)=>{
    const page=await context.newPage();
    const errors=[];page.on('pageerror',e=>errors.push(e.message));
    await page.goto('http://127.0.0.1:'+server.address().port+'/lectures/');
+   assert.equal(await page.locator('#customSubjectWrap').isVisible(),false,'custom subject must start hidden');
+   assert.equal(await page.locator('#fixedDaysArea').isVisible(),false,'fixed-day controls must start hidden');
+   assert.equal(await page.locator('#subjectLimitWrap').isVisible(),false,'weighted controls must start hidden');
    await page.selectOption('#courseSubject','心理學');
    await page.fill('#courseName','心理學函授');
    await page.fill('#courseCount','2');
@@ -42,12 +45,15 @@ const server=http.createServer((req,res)=>{
    await actions.locator('button').nth(1).click();
    assert.match(await page.locator('#lessonStat').innerText(),/1／2/);
    await page.selectOption('#courseSubject','__custom__');
+   assert.equal(await page.locator('#customSubjectWrap').isVisible(),true);
    await page.fill('#customSubject','行政法');
    await page.fill('#courseName','行政法總複習');
    await page.fill('#courseCount','4');
    await page.fill('#courseDuration','120');
    await page.locator('#courseForm button[type=submit]').click();
    await page.selectOption('#strategy','weighted');
+   assert.equal(await page.locator('#subjectLimitWrap').isVisible(),true);
+   assert.equal(await page.locator('#fixedDaysArea').isVisible(),false);
    await page.selectOption('#planDays','30');
    await page.selectOption('#maxSubjectsPerDay','2');
    const rule=page.locator('.subject-rule').filter({hasText:'行政法'});
