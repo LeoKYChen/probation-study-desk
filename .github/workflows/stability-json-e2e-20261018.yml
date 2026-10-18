@@ -12,12 +12,14 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
       - name: Verify test branch originates from approved release
         shell: bash
         run: |
           set -euo pipefail
-          test "$(git rev-parse HEAD^)" = "57055ee27e8698245fb39fc9b2a3212c15203af1"
-          test "$(git diff --name-only HEAD^ HEAD)" = ".github/workflows/stability-json-e2e-20261018.yml"
+          git merge-base --is-ancestor 57055ee27e8698245fb39fc9b2a3212c15203af1 HEAD
+          test "$(git diff --name-only 57055ee27e8698245fb39fc9b2a3212c15203af1 HEAD)" = ".github/workflows/stability-json-e2e-20261018.yml"
           echo "PASS: only the isolated acceptance workflow differs from main"
       - uses: actions/setup-node@v6
         with:
