@@ -26,6 +26,7 @@ jobs:
           printf '%s\n' \
             '.github/workflows/qa-daily-question-cleanup-20261018.yml' \
             'daily-simulation/questions.json' \
+            'docs/qa/2026-10-18-daily-question-cleanup-batch1.md' \
             'verification/check-daily-v254.cjs' \
             'verification/qa-daily-cleanup-20261018.cjs' | sort >/tmp/expected
           diff -u /tmp/expected /tmp/actual
