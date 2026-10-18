@@ -52,6 +52,7 @@ REQUIRED = (
     "lectures/core.js",
     "lectures/app.js",
     "lectures/style.css",
+    "lectures/calendar.css",
     "offline/index.html",
     "print/index.html",
     "print/print-model.js",
