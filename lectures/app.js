@@ -44,6 +44,77 @@
       if(save(next)){$('courseName').value='';$('customSubject').value='';tell('已新增函授課程，可以逐堂記錄觀看進度。');}
     }catch(e){tell(e.message,true);}
   }
+  function knownSubjects(){
+    return [...new Set(state.courses.map(c=>c.subject))];
+  }
+  function renderRuleEditors(){
+    const subjects=knownSubjects(),picker=$('courseSubject');
+    const old=picker.value;
+    // 已新增的自訂科目也能重複使用，不需重新輸入。
+    picker.querySelectorAll('[data-added-subject]').forEach(x=>x.remove());
+    const other=picker.querySelector('[value="__custom__"]');
+    for(const sub of subjects){
+      if(core.SUBJECTS.includes(sub))continue;
+      const o=make('option',sub);o.value=sub;o.dataset.addedSubject='1';
+      picker.insertBefore(o,other);
+    }
+    picker.value=[...picker.options].some(o=>o.value===old)?old:core.SUBJECTS[0];
+    $('customSubjectWrap').hidden=picker.value!=='__custom__';
+    $('customSubject').required=!$('customSubjectWrap').hidden;
+    const rules=$('subjectRules');rules.replaceChildren();
+    for(const subject of subjects){
+      const r=state.settings.subjectRules[subject]||{enabled:true,weight:1};
+      const line=make('div',undefined,'subject-rule');line.dataset.subject=subject;
+      const label=make('label',undefined,'include'),checked=make('input');
+      checked.type='checkbox';checked.checked=r.enabled;checked.setAttribute('aria-label','將 '+subject+' 排入函授計畫');
+      label.append(checked,make('span',subject));
+      const w=make('label',undefined,'weight'),select=make('select');
+      for(let n=1;n<=5;n++){const opt=make('option',String(n));opt.value=String(n);select.append(opt);}
+      select.value=String(r.weight);select.setAttribute('aria-label',subject+' 重要程度');
+      w.append(make('span','重要程度'),select);
+      line.append(label,w);rules.append(line);
+    }
+    if(!subjects.length)rules.append(make('p','請先新增至少一門函授課程，才能設定科目權重。','hint'));
+    const names=['週日','週一','週二','週三','週四','週五','週六'];
+    const fixed=$('fixedDays');fixed.replaceChildren();
+    for(let i=0;i<7;i++){
+      const box=make('label',undefined,'fixed-day');
+      box.append(make('span',names[i]));
+      const sel=make('select');sel.dataset.dayIndex=String(i);
+      const blank=make('option','不排函授');blank.value='';sel.append(blank);
+      for(const sub of subjects){const opt=make('option',sub);opt.value=sub;sel.append(opt);}
+      sel.value=state.settings.fixedDays[i]||'';
+      box.append(sel);fixed.append(box);
+    }
+  }
+  function showStrategyFields(){
+    const chosen=$('strategy').value;
+    $('fixedDaysArea').hidden=chosen!=='fixed';
+    $('subjectLimitWrap').hidden=chosen!=='weighted';
+    for(const row of $('subjectRules').querySelectorAll('.weight select'))row.disabled=chosen!=='weighted';
+  }
+  function readSettings(){
+    const next=core.normalize(state);
+    for(const key of ['weekdayMinutes','weekendMinutes','reserveMinutes','reviewDays']){
+      if($(key).value.trim()==='')throw Error('讀書時數與複習天數不可留空');
+      const n=Number($(key).value);
+      if(!Number.isInteger(n))throw Error('讀書時數請輸入整數');
+      next.settings[key]=n;
+    }
+    next.settings.examDate=$('examDate').value||'';
+    next.settings.strategy=$('strategy').value;
+    next.settings.planDays=Number($('planDays').value);
+    next.settings.maxSubjectsPerDay=Number($('maxSubjectsPerDay').value);
+    next.settings.subjectRules=Object.create(null);
+    for(const row of $('subjectRules').querySelectorAll('.subject-rule')){
+      next.settings.subjectRules[row.dataset.subject]={
+        enabled:row.querySelector('.include input').checked,
+        weight:Number(row.querySelector('.weight select').value)
+      };
+    }
+    next.settings.fixedDays=Array.from($('fixedDays').querySelectorAll('select')).map(e=>e.value);
+    return core.normalize(next);
+  }
   function onSettings(event){
     event.preventDefault();
     try{
