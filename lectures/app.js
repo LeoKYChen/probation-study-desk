@@ -214,9 +214,70 @@
     if(!state.courses.length){root.append(make('p','目前尚未新增函授課程。'));return;}
     for(const course of state.courses)root.append(courseBlock(course));
   }
+  function moveMonth(n){
+    const [year,month]=monthCursor.split('-').map(Number);
+    const first=new Date(Date.UTC(year,month-1+n,1));
+    monthCursor=first.toISOString().slice(0,7);
+    selectedDate=monthCursor+'-01';
+    renderCalendar(draft||state.plan);
+  }
+  function renderCalendarDetails(plan){
+    const box=$('calendarDetails');box.replaceChildren();
+    const title=make('h4',selectedDate);box.append(title);
+    if(!plan){box.append(make('p','尚未有預排計畫；先按「預覽新進度安排」。'));return;}
+    const day=plan.days.find(x=>x.date===selectedDate);
+    if(!day){
+      box.append(make('p','此日期未包含在目前的'+plan.days.length+'天預排範圍。可將預排天數改為30、60或90天後重新預覽。'));
+      return;
+    }
+    box.append(make('p','函授可用 '+minutes(day.capacityMinutes)+'；預排 '+minutes(day.scheduledMinutes)+'。'));
+    if(!day.units.length){box.append(make('p','本日未安排函授課程（可能是休息、固定科目未設定，或已完成待排課程）。'));return;}
+    const courseById=new Map(state.courses.map(c=>[c.id,c])),lessonById=new Map(state.lessons.map(l=>[l.id,l]));
+    const ul=make('ul');
+    for(const u of day.units){
+      const lesson=lessonById.get(u.lessonId),course=lesson&&courseById.get(lesson.courseId);
+      ul.append(make('li',(course?course.subject+'｜'+course.name+'｜'+lesson.title:'已移除堂次')+'：'+minutes(u.minutes)));
+    }
+    box.append(ul);
+  }
+  function renderCalendar(plan){
+    const grid=$('calendarGrid');grid.replaceChildren();
+    const [year,month]=monthCursor.split('-').map(Number);
+    $('calendarMonth').textContent=year+'年'+month+'月';
+    const offset=(new Date(Date.UTC(year,month-1,1)).getUTCDay()+6)%7;
+    const count=new Date(Date.UTC(year,month,0)).getUTCDate();
+    for(let i=0;i<offset;i++){const spacer=make('span',undefined,'calendar-blank');spacer.setAttribute('aria-hidden','true');grid.append(spacer);}
+    const byDate=new Map((plan?.days||[]).map(x=>[x.date,x]));
+    const courseById=new Map(state.courses.map(c=>[c.id,c])),lessonById=new Map(state.lessons.map(l=>[l.id,l]));
+    for(let d=1;d<=count;d++){
+      const date=monthCursor+'-'+String(d).padStart(2,'0'),data=byDate.get(date);
+      const cell=make('button',undefined,'calendar-cell'+(data?.scheduledMinutes?' has-plan':' no-plan')+(date===core.todayTaipei()?' is-today':''));
+      cell.type='button';cell.setAttribute('aria-pressed',String(selectedDate===date));
+      cell.append(make('span',String(d),'date'));
+      let description='未納入預排範圍';
+      if(data){
+        if(data.scheduledMinutes){
+          const subjects=[...new Set(data.units.map(u=>{
+            const lesson=lessonById.get(u.lessonId);
+            return lesson?courseById.get(lesson.courseId)?.subject||'':null;
+          }).filter(Boolean))];
+          cell.append(make('span',minutes(data.scheduledMinutes),'minutes'));
+          cell.append(make('span',subjects.join('／'),'calendar-subject'));
+          description=subjects.join('、')+'，預排 '+minutes(data.scheduledMinutes);
+        }else{
+          cell.append(make('span','無函授','no-plan-text'));
+          description='本日無函授安排';
+        }
+      }else cell.append(make('span','未預排','no-plan-text'));
+      cell.setAttribute('aria-label',date+'：'+description);
+      cell.addEventListener('click',()=>{selectedDate=date;renderCalendar(plan);});
+      grid.append(cell);
+    }
+    renderCalendarDetails(plan);
+  }
   function renderPlan(plan,preview){
     const output=$('planList');output.replaceChildren();
-    if(!plan){$('planSummary').textContent='尚未建立函授計畫。';return;}
+    if(!plan){$('planSummary').textContent='尚未建立函授計畫。';renderCalendar(null);return;}
     $('planSummary').textContent=(preview?'預覽（尚未儲存）':'已儲存計畫')+'｜本次排入 '+minutes(plan.scheduledMinutes||0)+'，剩餘 '+minutes(plan.unscheduledMinutes||0)+' 尚待後續排程。';
     const courseById=new Map(state.courses.map(c=>[c.id,c])),lessonById=new Map(state.lessons.map(l=>[l.id,l]));
     for(const d of plan.days){
@@ -230,6 +291,7 @@
       }
       output.append(day);
     }
+    renderCalendar(plan);
   }
   function render(){
     for(const k of ['weekdayMinutes','weekendMinutes','reserveMinutes','reviewDays'])$(k).value=state.settings[k];
