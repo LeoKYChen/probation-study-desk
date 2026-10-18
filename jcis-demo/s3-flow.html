@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src data:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'">
+<title>JCIS S3｜列管流程體驗（完全虛構）</title>
+<style>
+:root{font-family:system-ui,-apple-system,"PingFang TC","Noto Sans TC",sans-serif;color:#18243b;background:#f5f7fc}
+*{box-sizing:border-box}body{margin:0}a{color:#3e55c7}button{font:inherit;cursor:pointer}button:disabled{cursor:not-allowed;opacity:.37}button:focus-visible,a:focus-visible{outline:3px solid #7595f6;outline-offset:3px}
+.header{background:#172542;color:white;padding:16px max(20px,calc((100% - 1040px)/2));display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.logo{border-radius:12px;padding:10px 13px;background:#516be2;font-weight:900;font-size:20px}
+.header small{color:#bdc7df}.header strong{display:block;font-size:18px}.header a{margin-left:auto;color:#d4defe;font-size:13px;text-decoration:none}
+main{max-width:1040px;margin:auto;padding:24px 18px 54px}
+.notice{background:#fff7e5;border:1px solid #efdcaa;padding:16px;border-radius:14px;color:#815916;font-size:14px;line-height:1.7}
+h1{font-size:clamp(23px,4vw,30px);letter-spacing:-.5px;margin:26px 0 8px}p{line-height:1.7}.subtitle{color:#65758e;margin-top:0;font-size:14px}
+.card{background:white;border:1px solid #e3e8f3;border-radius:16px;box-shadow:0 5px 23px #273c6508;padding:22px;margin-top:17px}
+.tag{display:inline-block;border-radius:100px;padding:5px 11px;font-size:12px;font-weight:800;background:#ebeeff;color:#344eaf}
+.statgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:18px}
+.stat{border:1px solid #e9edf5;border-radius:12px;padding:14px;min-width:0}.stat small{display:block;color:#697991;font-size:12px;margin-bottom:6px}.stat strong{font-size:17px;overflow-wrap:anywhere}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:22px}.step{padding:15px 8px;text-align:center;font-size:13px;border:1px solid #e3e8f3;border-radius:12px;background:#fafbfe;color:#68768e}.step strong{display:block;color:#344159;margin-bottom:4px}.step.on{border:2px solid #526ae8;background:#eef1ff}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}.btn{padding:12px 16px;border:0;border-radius:10px;background:#3e59d6;color:white;font-weight:750;font-size:14px}.btn.reject{background:#fff0ef;color:#ab3b39}.btn.close{background:#176b66}.btn.reset{background:#eef1f7;color:#3a4b67}
+.status{font-weight:850;font-size:18px;color:#293a61;line-height:1.5}.caption{font-size:13px;color:#64748b;margin-top:7px}
+.log{padding:0;list-style:none}.log li{border-left:3px solid #c7d0fa;padding:10px 0 10px 16px;margin-left:4px;font-size:14px;line-height:1.5}.log li b{color:#3b4bc0}.log li span{display:block;color:#728099;font-size:12px;margin-top:4px}
+.footer{color:#8994a8;font-size:12px;margin-top:24px;line-height:1.6}
+@media(max-width:700px){.header{padding:14px 17px}.header a{margin-left:0;width:100%}.statgrid{grid-template-columns:1fr 1fr}.stat:last-child{grid-column:span 2}.steps{grid-template-columns:1fr 1fr}.actions .btn{flex:1 1 45%;font-size:13px;padding:12px 9px}.card{padding:17px}main{padding:14px 12px 38px}}
+</style>
+</head>
+<body>
+<header class="header">
+ <div class="logo">J</div><div><strong>JCIS｜S3 列管流程體驗</strong><small>虛構案件 · 手機／電腦操作展示</small></div>
+ <a href="./">← 返回 JCIS 儀錶板</a>
+</header>
+<main>
+ <div class="notice"><strong>公開純模擬頁面：</strong>按鈕只切換瀏覽器畫面，不送出資料、不需要帳號，也不會保存、核准或處理任何真正的少年個案。以下代號、權限及決定全屬虛構。請勿輸入真實資料。</div>
+ <h1>從受理到列管、結案</h1>
+ <p class="subtitle">依序點選示範按鈕，觀察承辦人與主管的工作分工。列管決定不等於高風險認定。</p>
+ <section class="card" aria-labelledby="summary-title">
+  <span class="tag">DEMO · NO DATABASE</span>
+  <h2 id="summary-title">示範少年甲｜列管流程</h2>
+  <div class="statgrid">
+   <div class="stat"><small>少年主檔</small><strong>J-DEMO-01</strong></div>
+   <div class="stat"><small>受理及列管案號</small><strong id="case-number">I-DEMO-01 / M-DEMO-01</strong></div>
+   <div class="stat"><small>目前列管狀態</small><strong id="case-status">已受理、尚未送審</strong></div>
+  </div>
+  <div class="steps" aria-label="示範業務流程">
+   <div id="step-intake" class="step on"><strong>① 受理</strong>建立受理紀錄</div>
+   <div id="step-review" class="step"><strong>② 送審</strong>承辦提出申請</div>
+   <div id="step-active" class="step"><strong>③ 核定</strong>主管決定列管</div>
+   <div id="step-final" class="step"><strong>④ 結案</strong>保留全部歷程</div>
+  </div>
+  <p id="case-message" class="status" aria-live="polite">先由承辦人提出列管申請。</p>
+  <p class="caption">所有狀態只存在此頁的記憶體；重新整理就恢復初始畫面。</p>
+  <div class="actions">
+   <button id="apply" class="btn">承辦｜送交審查</button>
+   <button id="approve" class="btn" disabled>主管｜核定列管</button>
+   <button id="reject" class="btn reject" disabled>主管｜不予列管</button>
+   <button id="close" class="btn close" disabled>主管｜解除列管／結案</button>
+   <button id="reopen" class="btn" disabled>新的受理｜另開一案</button>
+   <button id="reset" class="btn reset">重設示範</button>
+  </div>
+ </section>
+ <section class="card" aria-labelledby="history-title">
+  <h2 id="history-title">作業歷程（模擬，不可作為正式核定紀錄）</h2>
+  <ol id="history" class="log"><li>尚未送審；等待承辦人提出申請。</li></ol>
+ </section>
+ <p class="footer">JCIS · 未經實務、法遵及資安審查之虛構流程展示。真正的 S3 登入、主管核定與 SQLite 操作，只存在私人本機開發環境，未部署至本公開網站。</p>
+</main>
+<script>
+(function(){
+ 'use strict';
+ var count=1,status='intake',history=[];
+ var names={intake:'已受理、尚未送審',review:'審查中',active:'已核定列管',rejected:'不予列管',closed:'解除列管／已結案'};
+ function pad(i){return String(i).padStart(2,'0');}
+ function el(id){return document.getElementById(id);}
+ function log(action,actor){history.push({number:'M-DEMO-'+pad(count),action:action,actor:actor});}
+ function render(){
+  el('case-number').textContent='I-DEMO-'+pad(count)+' / M-DEMO-'+pad(count);
+  el('case-status').textContent=names[status];
+  var desc={intake:'先由承辦人提出列管申請。',review:'等待主管逐案審核；不能自動列管或分級。',active:'主管已核定列管；不代表高風險。',rejected:'此次未列管；仍保留歷程。',closed:'此次列管已結案；可從新受理另開一案。'};
+  el('case-message').textContent=desc[status];
+  el('apply').disabled=status!=='intake';
+  el('approve').disabled=status!=='review';
+  el('reject').disabled=status!=='review';
+  el('close').disabled=status!=='active';
+  el('reopen').disabled=status!=='closed'&&status!=='rejected';
+  ['intake','review','active','final'].forEach(function(s){el('step-'+s).classList.remove('on');});
+  el('step-'+(status==='rejected'||status==='closed'?'final':status)).classList.add('on');
+  var list=el('history');list.replaceChildren();
+  if(!history.length){var empty=document.createElement('li');empty.textContent='尚未送審；等待承辦人提出申請。';list.appendChild(empty);}
+  history.forEach(function(item,index){var li=document.createElement('li'),b=document.createElement('b'),sub=document.createElement('span');b.textContent=item.number+' · '+item.action;sub.textContent='第 '+(index+1)+' 步 · '+item.actor+'（純模擬）';li.appendChild(b);li.appendChild(sub);list.appendChild(li);});
+ }
+ el('apply').addEventListener('click',function(){if(status!=='intake')return;status='review';log('提出列管申請','示範承辦');render();});
+ el('approve').addEventListener('click',function(){if(status!=='review')return;status='active';log('人工核定列管','示範主管');render();});
+ el('reject').addEventListener('click',function(){if(status!=='review')return;status='rejected';log('不予列管（保留理由與歷程）','示範主管');render();});
+ el('close').addEventListener('click',function(){if(status!=='active')return;status='closed';log('核定結案','示範主管');render();});
+ el('reopen').addEventListener('click',function(){if(status!=='closed'&&status!=='rejected')return;count++;status='intake';log('另一次新受理，舊案歷程保留','示範承辦');render();});
+ el('reset').addEventListener('click',function(){count=1;status='intake';history=[];render();});
+ render();
+})();
+</script>
+</body></html>
