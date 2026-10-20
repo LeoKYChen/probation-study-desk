@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>考科知識關聯圖｜第二、三階段獨立測試版</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+<header class="site-head">
+  <div class="brand"><span class="mark">◈</span><div><div class="eyebrow">PROBATION STUDY DESK · EXPERIMENTAL</div><strong>考科知識關聯圖</strong></div></div>
+  <div class="head-actions"><span class="test-badge">第二／第三階段測試版</span><a href="https://leokychen.github.io/probation-study-desk/v2.5/" target="_blank" rel="noopener noreferrer">返回正式站 ↗</a></div>
+</header>
+<main>
+  <section class="intro">
+    <div><span class="kicker">從考科看見考點之間的結構</span><h1>不只整理知識，<em>也看見它們如何連結。</em></h1>
+      <p>每個圓點代表一個考科、命題分類或歷屆題次。點選節點檢視出處，已精確對應既有題庫的題目可直接開啟作答。</p>
+    </div>
+    <div class="intro-meta"><div><strong id="subjectStat">—</strong><small>顯示考科</small></div><div><strong id="topicStat">—</strong><small>命題分類</small></div><div><strong id="questionStat">—</strong><small>題次節點</small></div></div>
+  </section>
+  <section class="workspace">
+    <div class="graph-main">
+      <div class="toolbar">
+        <label>檢視範圍<select id="subjectSelect" aria-label="選擇考科"></select></label>
+        <label class="searchbox">尋找考點<input id="search" type="search" autocomplete="off" placeholder="例如：曝險少年、搜索、110年"></label>
+        <button id="reset" type="button" class="subtle">重設</button>
+      </div>
+      <div class="graph-frame">
+        <div class="graph-top"><div class="legend"><span><i class="dot subject"></i>考科</span><span><i class="dot topic"></i>命題分類</span><span><i class="dot question"></i>歷屆題次</span></div><div id="graphStatus" class="graph-status" role="status">正在讀取既有題庫…</div></div>
+        <svg id="graph" viewBox="0 0 1100 760" role="img" aria-label="可拖曳、縮放及點選節點的考科關聯圖">
+          <g id="viewport"><g id="links"></g><g id="nodes"></g></g>
+        </svg>
+        <div class="graph-footer">
+          <span>拖曳空白處移動視角 · 拖曳節點調整位置 · 滾輪縮放 · 點擊節點查看內容</span>
+          <div class="zoom"><button id="zoomOut" type="button" aria-label="縮小">−</button><span id="zoomLabel">100%</span><button id="zoomIn" type="button" aria-label="放大">＋</button><button id="zoomReset" type="button">置中</button></div>
+        </div>
+      </div>
+      <div id="notices" class="note">連線只表示既有資料的「分類隸屬」及「題次對應」，不代表法律爭點必然相同，也不構成新的法律解釋。</div>
+    </div>
+    <aside class="detail" aria-label="節點詳細資料">
+      <div class="detail-head"><span class="detail-eyebrow">NODE EXPLORER</span><span class="stage-tag">資料來源：既有重點整理</span></div>
+      <div id="detailContent" aria-live="polite"><h2>選擇一個節點</h2><p>從左側關聯圖點選考科、分類或考古題，查看命題內容與題源。</p></div>
+    </aside>
+  </section>
+  <section class="method"><h2>測試版功能與限制</h2><div class="method-grid">
+    <div><span class="step">02 / KNOWLEDGE MAP</span><h3>互動關聯圖</h3><p>以原有考科及命題分類為節點，可平移、縮放、拖曳、搜尋、切換考科與跨科題源檢視。</p></div>
+    <div><span class="step">03 / EXAM CONNECTION</span><h3>直接連回練習</h3><p>展示既有整理中的年度與題次；僅在題庫「年度＋題號＋對應科目」精確匹配時開啟正式站作答。</p></div>
+    <div><span class="step">SCOPE / CAUTION</span><h3>不自動推導跨科法律關係</h3><p>跨科僅顯示明確來源鏈結及共用題庫識別碼；內容歸類仍屬學習整理，法規、實務與歷屆題出處仍應複核。</p></div>
+  </div></section>
+</main>
+<footer>獨立測試環境，不寫入學習紀錄，也不修改正式站的題庫及評分資料。<a href="https://github.com/LeoKYChen/probation-study-desk" target="_blank" rel="noopener noreferrer">專案原始碼 ↗</a></footer>
+</div>
+<script src="../v2.5/study-map-data.js"></script>
+<script src="../v2.5/questions.js"></script>
+<script src="../v2.5/related-questions.js"></script>
+<script src="graph-model.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

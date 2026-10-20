@@ -1,0 +1,68 @@
+name: Independent knowledge graph phase 2 and 3 preview
+
+on:
+  push:
+    branches: [test/knowledge-graph-20261020]
+    paths:
+      - knowledge-graph-preview/**
+      - .github/workflows/knowledge-graph-preview.yml
+  pull_request:
+    branches: [main]
+    paths:
+      - knowledge-graph-preview/**
+      - .github/workflows/knowledge-graph-preview.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: independent-knowledge-graph-test-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+
+      - name: Verify model and frontend syntax
+        run: |
+          node --check knowledge-graph-preview/graph-model.js
+          node --check knowledge-graph-preview/app.js
+          node --check knowledge-graph-preview/browser-smoke.cjs
+          node --test knowledge-graph-preview/model.test.cjs knowledge-graph-preview/real-data.test.cjs
+
+      - name: Verify original shared source files and independent path
+        run: |
+          test -s v2.5/study-map-data.js
+          test -s v2.5/questions.js
+          test -s v2.5/related-questions.js
+          test -s knowledge-graph-preview/index.html
+          grep -Fq '../v2.5/study-map-data.js' knowledge-graph-preview/index.html
+          grep -Fq '../v2.5/questions.js' knowledge-graph-preview/index.html
+          grep -Fq '../v2.5/related-questions.js' knowledge-graph-preview/index.html
+          ! grep -Eq 'localStorage.setItem|localStorage.removeItem' knowledge-graph-preview/app.js
+
+      - name: Start isolated static server on localhost
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/knowledge-graph-server.log 2>&1 &
+          echo $! > /tmp/knowledge-graph-server.pid
+          sleep 2
+          curl --fail --silent --show-error http://127.0.0.1:8765/knowledge-graph-preview/ > /dev/null
+
+      - name: Install isolated Chromium for desktop and mobile acceptance
+        run: |
+          npm install --prefix /tmp/knowledge-graph-qa --no-save playwright@1.56.1
+          /tmp/knowledge-graph-qa/node_modules/.bin/playwright install --with-deps chromium
+
+      - name: Verify graph functionality at localhost preview path
+        env:
+          NODE_PATH: /tmp/knowledge-graph-qa/node_modules
+          KNOWLEDGE_GRAPH_URL: http://127.0.0.1:8765/knowledge-graph-preview/
+        run: node knowledge-graph-preview/browser-smoke.cjs
