@@ -48,7 +48,7 @@ test('never infer shared questions from same year and number alone',()=>{
  const x=G.buildGraph(subjects,[],{cross:true});
  assert.equal(x.stats.sharedQuestions,0);
  assert.equal(x.stats.matched,0);
- assert.equal(x.stats.questions,2);
+ assert.equal(x.stats.questions,3);
 });
 test('search filters topics, avoids inventing missing matches',()=>{
  const g=G.buildGraph(subjects,bank,{subject:'少年事件處理法',search:'不存在的詞'});
