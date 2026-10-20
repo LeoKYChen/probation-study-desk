@@ -1,6 +1,6 @@
 # 考科知識關聯圖｜第二、第三階段獨立測試版
 
-> **測試分支**：test/knowledge-graph-20261020。本目錄為獨立靜態預覽網站，**不修改正式站 v2.5**，不存取或寫入使用者的作答紀錄。
+> **測試分支**：test/knowledge-graph-20261020。本目錄為獨立路徑的靜態預覽網站，**不修改正式站 v2.5 的程式與資料**，不存取或寫入使用者的作答紀錄。
 
 ## 測試範圍
 
@@ -13,11 +13,11 @@
 
 graph-model.js 對應的是「考點資料原始分類」及「題庫精確匹配」，不是法律實體知識圖譜，亦非考選部官方考點標籤。原有重點整理中仍有題次尚未新增至作答題庫；這些題次僅可查閱摘要與來源，不提供虛構的作答連結。不能用相同年度／題號就視為不同科目題目相同。
 
-此測試版不新增或修改原題庫、正式站評分準則、本機儲存鍵或任何既有使用者紀錄。資料僅在部署工作流程中複製到預覽靜態資料夾，前端唯讀使用。
+此測試版不新增或修改原題庫、正式站評分準則、本機儲存鍵或任何既有使用者紀錄。資料直接以相對路徑讀取既有 v2.5 靜態題庫，前端唯讀使用，不重複儲存題庫。
 
 ## 本機測試
 
-執行 node --test knowledge-graph-preview/model.test.cjs，並分別對 graph-model.js 及 app.js 執行 node --check。部署工作流程另執行瀏覽器版 smoke test 和遠端預覽驗證。
+執行 node --test knowledge-graph-preview/model.test.cjs，並分別對 graph-model.js 及 app.js 執行 node --check。CI 使用 localhost 靜態網站執行 Chromium 桌面與手機 smoke test；通過後才合併到 GitHub Pages 的獨立測試路徑。
 
 ## 驗收重點
 
@@ -27,5 +27,7 @@ graph-model.js 對應的是「考點資料原始分類」及「題庫精確匹�
 4. 只有原題庫精確匹配才出現作答連結；來源 URL 只接受已提供的 HTTPS 連結。
 5. 跨科連線只採同一題庫 ID，尚未核定的法律實質跨科關係不畫線。
 6. 正式站 v2.5 的資料及功能不受測試版影響。
+
+測試版網址：https://leokychen.github.io/probation-study-desk/knowledge-graph-preview/ （合併至 main 並完成 GitHub Pages 部署後生效）
 
 正式站網址：https://leokychen.github.io/probation-study-desk/v2.5/
