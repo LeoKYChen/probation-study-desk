@@ -53,7 +53,7 @@ function validate(data){
    date(a.eventDate,a.id+'.eventDate',true);
    date(a.checkedAt,a.id+'.checkedAt',true);
    const unverified=a.sourceStatus==='unverified';
-   assert(a.sourceStatus===undefined||unverified,'invalid sourceStatus');
+   assert(a.sourceStatus===undefined||a.sourceStatus===null||unverified,'invalid sourceStatus');
    assert(a.url===null||typeof a.url==='string'&&/^https?:\/\/\S+$/i.test(a.url),'invalid source URL');
    if(!unverified){
     assert(a.url!==null,'verified article missing source URL: '+a.id);
