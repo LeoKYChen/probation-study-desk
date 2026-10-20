@@ -42,9 +42,11 @@ jobs:
         run: |
           test -s v2.5/study-map-data.js
           test -s v2.5/questions.js
+          test -s v2.5/related-questions.js
           test -s knowledge-graph-preview/index.html
           grep -Fq '../v2.5/study-map-data.js' knowledge-graph-preview/index.html
           grep -Fq '../v2.5/questions.js' knowledge-graph-preview/index.html
+          grep -Fq '../v2.5/related-questions.js' knowledge-graph-preview/index.html
           ! grep -Eq 'localStorage.setItem|localStorage.removeItem' knowledge-graph-preview/app.js
 
       - name: Start isolated static server on localhost
