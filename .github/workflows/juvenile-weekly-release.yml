@@ -8,6 +8,8 @@ on:
       - juvenile-news/source/public/issues.json
       - file-data/weekly.generated.js
       - scripts/weekly-sync.cjs
+      - scripts/weekly-import.cjs
+      - verification/weekly-import.test.cjs
       - scripts/weekly-verify-live.cjs
       - verification/weekly-sync.test.cjs
       - .github/workflows/juvenile-weekly-release.yml
@@ -18,6 +20,8 @@ on:
       - juvenile-news/source/public/issues.json
       - file-data/weekly.generated.js
       - scripts/weekly-sync.cjs
+      - scripts/weekly-import.cjs
+      - verification/weekly-import.test.cjs
       - scripts/weekly-verify-live.cjs
       - verification/weekly-sync.test.cjs
       - .github/workflows/juvenile-weekly-release.yml
@@ -40,7 +44,7 @@ jobs:
         with:
           node-version: '24'
       - name: Test data integrity and history-preservation rules
-        run: node --test verification/weekly-sync.test.cjs
+        run: node --test verification/weekly-sync.test.cjs verification/weekly-import.test.cjs
       - name: Rebuild only weekly mirrors and validate their content
         run: |
           node scripts/weekly-sync.cjs --write
