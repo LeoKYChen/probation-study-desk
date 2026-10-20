@@ -13,6 +13,13 @@ const {chromium}=require('playwright');
       await page.locator('#graph .graph-node').first().waitFor({timeout:15000});
       assert((await page.locator('#graph .graph-node').count())>15,'real data graph must render');
       assert.equal(await page.locator('#subjectSelect').inputValue(),'少年事件處理法');
+      const labels=await page.locator('#subjectSelect option').allTextContents();
+      assert.equal(labels.length,8,'seven professional subjects plus cross subject option');
+      for(const excluded of ['國文','法學知識與英文','社會工作概論']){
+        assert(!labels.includes(excluded),'excluded option: '+excluded);
+        assert.equal(await page.locator('#graph .graph-node.subject[data-node-id="subject:'+excluded+'"]').count(),0);
+      }
+
       await page.locator('#subjectSelect').selectOption('刑法');
       assert((await page.locator('#graph .graph-node.topic').count())>0);
       await page.locator('#subjectSelect').selectOption('cross');
