@@ -33,3 +33,15 @@ test('real criminal and correction subjects share only original question IDs',()
    assert(bank.some(q=>q.id===id),'shared link must be backed by an exact ID');
  }
 });
+
+test('only seven professional subjects are included in preview',()=>{
+ const names=Array.from(G.visibleSubjects(subjects),s=>s.subject);
+ assert.equal(names.length,7);
+ for(const excluded of ['國文','法學知識與英文','社會工作概論']){
+  assert(!names.includes(excluded));
+  assert.equal(G.buildGraph(subjects,bank,{subject:excluded}).stats.subjects,0);
+ }
+ for(const subject of ['心理學','刑法','犯罪學','諮商與輔導','刑事訴訟法','少年事件處理法','保安處分執行法']){
+  assert(names.includes(subject));
+ }
+});
