@@ -1,0 +1,100 @@
+name: Independent knowledge graph phase 2 and 3 preview
+
+on:
+  push:
+    branches: [test/knowledge-graph-20261020]
+    paths:
+      - knowledge-graph-preview/**
+      - .github/workflows/knowledge-graph-preview.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: independent-knowledge-graph-test
+  cancel-in-progress: true
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+
+      - name: Verify model and frontend syntax
+        run: |
+          node --check knowledge-graph-preview/graph-model.js
+          node --check knowledge-graph-preview/app.js
+          node --check knowledge-graph-preview/browser-smoke.cjs
+          node --test knowledge-graph-preview/model.test.cjs
+
+      - name: Package independent preview from tracked source files
+        run: |
+          set -euo pipefail
+          mkdir -p knowledge-graph-release/data
+          cp knowledge-graph-preview/index.html knowledge-graph-release/index.html
+          cp knowledge-graph-preview/styles.css knowledge-graph-release/styles.css
+          cp knowledge-graph-preview/graph-model.js knowledge-graph-release/graph-model.js
+          cp knowledge-graph-preview/app.js knowledge-graph-release/app.js
+          cp v2.5/study-map-data.js knowledge-graph-release/data/study-map-data.js
+          cp v2.5/questions.js knowledge-graph-release/data/questions.js
+          test -s knowledge-graph-release/data/study-map-data.js
+          test -s knowledge-graph-release/data/questions.js
+
+      - name: Guard preview branch and Cloudflare production
+        env:
+          CF_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json,os,urllib.request
+          alias='knowledge-graph-v1'
+          assert os.environ.get('GITHUB_REF')=='refs/heads/test/knowledge-graph-20261020'
+          req=urllib.request.Request('https://api.cloudflare.com/client/v4/accounts/'+os.environ['CF_ACCOUNT_ID']+'/pages/projects/probation-study30-test',
+            headers={'Authorization':'Bearer '+os.environ['CF_API_TOKEN']})
+          with urllib.request.urlopen(req,timeout=30) as response:
+            doc=json.load(response)
+          assert doc['success'] and doc['result']['name']=='probation-study30-test'
+          assert doc['result']['production_branch']!=alias,'preview cannot be production branch'
+          print('PASS: independent preview alias; production untouched')
+          PY
+
+      - name: Deploy to isolated Cloudflare preview branch only
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy knowledge-graph-release --project-name=probation-study30-test --branch=knowledge-graph-v1
+
+      - name: Verify remote published bytes and HTTPS preview
+        run: |
+          python3 - <<'PY'
+          import hashlib, pathlib, time, urllib.request
+          base='https://knowledge-graph-v1.probation-study30-test.pages.dev/'
+          files=['index.html','styles.css','graph-model.js','app.js','data/study-map-data.js','data/questions.js']
+          for name in files:
+            local=pathlib.Path('knowledge-graph-release')/name
+            digest=hashlib.sha256(local.read_bytes()).digest()
+            for attempt in range(12):
+              try:
+                with urllib.request.urlopen(base+name,timeout=20) as reply:
+                  remote=reply.read()
+                assert hashlib.sha256(remote).digest()==digest,'content changed after deployment: '+name
+                break
+              except Exception:
+                if attempt==11: raise
+                time.sleep(5)
+            print('PASS byte parity',name)
+          print('PASS preview:',base)
+          PY
+
+      - name: Browser smoke test on desktop and mobile
+        run: |
+          npm install --prefix /tmp/knowledge-graph-qa --no-save playwright@1.56.1
+          /tmp/knowledge-graph-qa/node_modules/.bin/playwright install --with-deps chromium
+          NODE_PATH=/tmp/knowledge-graph-qa/node_modules KNOWLEDGE_GRAPH_URL=https://knowledge-graph-v1.probation-study30-test.pages.dev/ node knowledge-graph-preview/browser-smoke.cjs
