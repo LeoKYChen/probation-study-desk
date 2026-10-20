@@ -1,0 +1,86 @@
+name: Juvenile weekly independent sync and publication verification
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - juvenile-news/issues.json
+      - juvenile-news/source/public/issues.json
+      - file-data/weekly.generated.js
+      - scripts/weekly-sync.cjs
+      - scripts/weekly-verify-live.cjs
+      - verification/weekly-sync.test.cjs
+      - .github/workflows/juvenile-weekly-release.yml
+  pull_request:
+    branches: [main]
+    paths:
+      - juvenile-news/issues.json
+      - juvenile-news/source/public/issues.json
+      - file-data/weekly.generated.js
+      - scripts/weekly-sync.cjs
+      - scripts/weekly-verify-live.cjs
+      - verification/weekly-sync.test.cjs
+      - .github/workflows/juvenile-weekly-release.yml
+  workflow_dispatch:
+
+concurrency:
+  group: juvenile-weekly-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate weekly archive and deterministic mirrors
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Test data integrity and history-preservation rules
+        run: node --test verification/weekly-sync.test.cjs
+      - name: Rebuild only weekly mirrors and validate their content
+        run: |
+          node scripts/weekly-sync.cjs --write
+          node scripts/weekly-sync.cjs --check
+      - name: Show only weekly artifacts that would be synchronized
+        run: git status --short -- juvenile-news/source/public/issues.json file-data/weekly.generated.js
+
+  synchronize:
+    name: Synchronize weekly artifacts to main (not the rest of the site)
+    if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/main'
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 2
+          persist-credentials: true
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Reject accidental deletion of historical issues and synchronize
+        run: |
+          node scripts/weekly-sync.cjs --write --base HEAD^
+          node scripts/weekly-sync.cjs --check
+      - name: Commit only the two weekly mirrors if needed
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add -- juvenile-news/source/public/issues.json file-data/weekly.generated.js
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'build(weekly): synchronize web source and offline reader from canonical JSON'
+            git push origin HEAD:main
+          else
+            echo 'Weekly mirrors already match; no new commit needed.'
+          fi
+      - name: Confirm real GitHub Pages publication of canonical JSON
+        env:
+          WEEKLY_PUBLISH_ATTEMPTS: '36'
+        run: node scripts/weekly-verify-live.cjs
