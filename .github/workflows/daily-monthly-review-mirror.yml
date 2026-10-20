@@ -1,0 +1,35 @@
+name: Monthly pending question file-data mirror
+on:
+  push:
+    branches:
+      - feat/daily-pending-monthly-review-20261020
+    paths:
+      - daily-simulation/questions.json
+      - .github/workflows/daily-monthly-review-mirror.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Validate and rebuild offline mirrors
+        run: |
+          set -euo pipefail
+          node --check daily-simulation/app.js
+          node --check daily-simulation/review-policy.js
+          node verification/check-daily-v254.cjs
+          node scripts/generate-file-data.cjs --write
+          git add file-data/daily.generated.js
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'build(daily): mirror 148 practice questions into offline JSON bridge'
+            git push origin HEAD:feat/daily-pending-monthly-review-20261020
+          fi
