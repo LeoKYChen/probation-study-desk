@@ -61,3 +61,20 @@ test('reject arbitrary, javascript and non-HTTPS question URLs',()=>{
  assert.equal(G.safeUrl('http://example.com/'),'');
  assert.equal(G.safeUrl('https://law.moj.gov.tw/'), 'https://law.moj.gov.tw/');
 });
+
+test('excluded general and social work subjects never enter graph',()=>{
+ const extras=[
+  {subject:'國文',topics:[{label:'寫作',rows:[{year:115,no:1}]}]},
+  {subject:'法學知識與英文',topics:[{label:'英文',rows:[{year:115,no:2}]}]},
+  {subject:'社會工作概論',topics:[{label:'社會工作',rows:[{year:115,no:3}]}]}
+ ];
+ assert.deepEqual(Array.from(G.EXCLUDED),extras.map(x=>x.subject));
+ const list=G.visibleSubjects([...subjects,...extras]);
+ assert.equal(list.length,subjects.length);
+ for(const s of extras){
+  assert.equal(G.buildGraph([...subjects,...extras],bank,{subject:s.subject}).stats.subjects,0);
+ }
+ const cross=G.buildGraph([...subjects,...extras],bank,{cross:true});
+ assert.equal(cross.stats.subjects,4);
+ assert(!cross.nodes.some(n=>extras.some(s=>n.subject===s.subject)));
+});
