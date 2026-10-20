@@ -6,13 +6,18 @@ on:
     paths:
       - knowledge-graph-preview/**
       - .github/workflows/knowledge-graph-preview.yml
+  pull_request:
+    branches: [main]
+    paths:
+      - knowledge-graph-preview/**
+      - .github/workflows/knowledge-graph-preview.yml
   workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: independent-knowledge-graph-test
+  group: independent-knowledge-graph-test-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -31,70 +36,31 @@ jobs:
           node --check knowledge-graph-preview/graph-model.js
           node --check knowledge-graph-preview/app.js
           node --check knowledge-graph-preview/browser-smoke.cjs
-          node --test knowledge-graph-preview/model.test.cjs
+          node --test knowledge-graph-preview/model.test.cjs knowledge-graph-preview/real-data.test.cjs
 
-      - name: Package independent preview from tracked source files
+      - name: Verify original shared source files and independent path
         run: |
-          set -euo pipefail
-          mkdir -p knowledge-graph-release/data
-          cp knowledge-graph-preview/index.html knowledge-graph-release/index.html
-          cp knowledge-graph-preview/styles.css knowledge-graph-release/styles.css
-          cp knowledge-graph-preview/graph-model.js knowledge-graph-release/graph-model.js
-          cp knowledge-graph-preview/app.js knowledge-graph-release/app.js
-          cp v2.5/study-map-data.js knowledge-graph-release/data/study-map-data.js
-          cp v2.5/questions.js knowledge-graph-release/data/questions.js
-          test -s knowledge-graph-release/data/study-map-data.js
-          test -s knowledge-graph-release/data/questions.js
+          test -s v2.5/study-map-data.js
+          test -s v2.5/questions.js
+          test -s knowledge-graph-preview/index.html
+          grep -Fq '../v2.5/study-map-data.js' knowledge-graph-preview/index.html
+          grep -Fq '../v2.5/questions.js' knowledge-graph-preview/index.html
+          ! grep -Eq 'localStorage.setItem|localStorage.removeItem' knowledge-graph-preview/app.js
 
-      - name: Guard preview branch and Cloudflare production
-        env:
-          CF_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      - name: Start isolated static server on localhost
         run: |
-          python3 - <<'PY'
-          import json,os,urllib.request
-          alias='knowledge-graph-v1'
-          assert os.environ.get('GITHUB_REF')=='refs/heads/test/knowledge-graph-20261020'
-          req=urllib.request.Request('https://api.cloudflare.com/client/v4/accounts/'+os.environ['CF_ACCOUNT_ID']+'/pages/projects/probation-study30-test',
-            headers={'Authorization':'Bearer '+os.environ['CF_API_TOKEN']})
-          with urllib.request.urlopen(req,timeout=30) as response:
-            doc=json.load(response)
-          assert doc['success'] and doc['result']['name']=='probation-study30-test'
-          assert doc['result']['production_branch']!=alias,'preview cannot be production branch'
-          print('PASS: independent preview alias; production untouched')
-          PY
+          python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/knowledge-graph-server.log 2>&1 &
+          echo $! > /tmp/knowledge-graph-server.pid
+          sleep 2
+          curl --fail --silent --show-error http://127.0.0.1:8765/knowledge-graph-preview/ > /dev/null
 
-      - name: Deploy to isolated Cloudflare preview branch only
-        uses: cloudflare/wrangler-action@v4
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy knowledge-graph-release --project-name=probation-study30-test --branch=knowledge-graph-v1
-
-      - name: Verify remote published bytes and HTTPS preview
-        run: |
-          python3 - <<'PY'
-          import hashlib, pathlib, time, urllib.request
-          base='https://knowledge-graph-v1.probation-study30-test.pages.dev/'
-          files=['index.html','styles.css','graph-model.js','app.js','data/study-map-data.js','data/questions.js']
-          for name in files:
-            local=pathlib.Path('knowledge-graph-release')/name
-            digest=hashlib.sha256(local.read_bytes()).digest()
-            for attempt in range(12):
-              try:
-                with urllib.request.urlopen(base+name,timeout=20) as reply:
-                  remote=reply.read()
-                assert hashlib.sha256(remote).digest()==digest,'content changed after deployment: '+name
-                break
-              except Exception:
-                if attempt==11: raise
-                time.sleep(5)
-            print('PASS byte parity',name)
-          print('PASS preview:',base)
-          PY
-
-      - name: Browser smoke test on desktop and mobile
+      - name: Install isolated Chromium for desktop and mobile acceptance
         run: |
           npm install --prefix /tmp/knowledge-graph-qa --no-save playwright@1.56.1
           /tmp/knowledge-graph-qa/node_modules/.bin/playwright install --with-deps chromium
-          NODE_PATH=/tmp/knowledge-graph-qa/node_modules KNOWLEDGE_GRAPH_URL=https://knowledge-graph-v1.probation-study30-test.pages.dev/ node knowledge-graph-preview/browser-smoke.cjs
+
+      - name: Verify graph functionality at localhost preview path
+        env:
+          NODE_PATH: /tmp/knowledge-graph-qa/node_modules
+          KNOWLEDGE_GRAPH_URL: http://127.0.0.1:8765/knowledge-graph-preview/
+        run: node knowledge-graph-preview/browser-smoke.cjs
