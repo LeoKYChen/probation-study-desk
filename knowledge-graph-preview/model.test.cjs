@@ -1,7 +1,10 @@
 'use strict';
 const test=require('node:test');
 const assert=require('node:assert/strict');
-const G=require('./graph-model.js');
+const fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
+const sandbox={};sandbox.globalThis=sandbox;
+vm.runInNewContext(fs.readFileSync(path.join(__dirname,'graph-model.js'),'utf8'),sandbox);
+const G=sandbox.KnowledgeGraphModel;
 const subjects=[
  {subject:'少年事件處理法',practiceSubject:'少年事件處理法',topics:[
   {label:'曝險少年',count:1,rows:[{year:115,no:1,keywords:'行政輔導先行',core:'曝險少年',secondary:'少年輔導委員會',sourceUrl:'https://wwwq.moex.gov.tw/source'}]}
