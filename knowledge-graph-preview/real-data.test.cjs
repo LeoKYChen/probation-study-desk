@@ -7,7 +7,8 @@ const G=modelCtx.KnowledgeGraphModel;
 const dataCtx={window:{}};
 vm.runInNewContext(fs.readFileSync(path.join(dir,'v2.5/study-map-data.js'),'utf8'),dataCtx);
 vm.runInNewContext(fs.readFileSync(path.join(dir,'v2.5/questions.js'),'utf8'),dataCtx);
-const subjects=dataCtx.window.STUDY_MAP_DATA, bank=dataCtx.window.QUESTION_BANK;
+vm.runInNewContext(fs.readFileSync(path.join(dir,'v2.5/related-questions.js'),'utf8'),dataCtx);
+const subjects=dataCtx.window.STUDY_MAP_DATA, bank=[...dataCtx.window.QUESTION_BANK,...dataCtx.window.RELATED_QUESTION_BANK];
 test('real source file shapes and original subjects',()=>{
  assert(subjects.length>=10);
  assert(bank.length>=400);
