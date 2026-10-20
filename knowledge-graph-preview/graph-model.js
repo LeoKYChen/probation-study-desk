@@ -6,6 +6,8 @@
 })(typeof globalThis==='object'?globalThis:this,function(){
   'use strict';
   const CROSS=['少年事件處理法','刑法','刑事訴訟法','保安處分執行法'];
+  const EXCLUDED=['國文','法學知識與英文','社會工作概論'];
+  const visibleSubjects=subjects=>(subjects||[]).filter(s=>s&&!EXCLUDED.includes(s.subject));
   const text=x=>String(x==null?'':x).trim();
   const safeUrl=value=>/^https:\/\/[^/\s]+(?:\/|$)/i.test(text(value))?text(value):'';
   const normNo=n=>text(n);
@@ -32,8 +34,9 @@
   function buildGraph(subjects,bank,options){
     options=options||{};
     const cross=Boolean(options.cross);
-    const chosen=cross?(subjects||[]).filter(s=>CROSS.includes(s.subject)):
-      (subjects||[]).filter(s=>s.subject===(options.subject||'少年事件處理法'));
+    const allowed=visibleSubjects(subjects);
+    const chosen=cross?allowed.filter(s=>CROSS.includes(s.subject)):
+      allowed.filter(s=>s.subject===(options.subject||'少年事件處理法'));
     const query=text(options.search).toLocaleLowerCase('zh-Hant');
     const maxTopics=options.maxTopics|| (cross?10:26);
     const maxRowsPerTopic=options.maxRowsPerTopic|| (cross?2:3);
@@ -88,5 +91,5 @@
       sharedQuestions:sharedQuestions.length,hiddenTopics,hiddenRows},
       cross,query,chosenSubjects:chosen.map(s=>s.subject)};
   }
-  return {CROSS,findQuestion,buildGraph,safeUrl,mappedRow};
+  return {CROSS,EXCLUDED,visibleSubjects,findQuestion,buildGraph,safeUrl,mappedRow};
 });
