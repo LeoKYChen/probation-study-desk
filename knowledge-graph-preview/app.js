@@ -1,7 +1,7 @@
 /* Isolated SVG relationship graph. No storage writes, no external libraries. */
 (function(){
 'use strict';
-const data=window.STUDY_MAP_DATA||[],bank=[...(window.QUESTION_BANK||[]),...(window.RELATED_QUESTION_BANK||[])],M=window.KnowledgeGraphModel;
+const M=window.KnowledgeGraphModel,data=M?M.visibleSubjects(window.STUDY_MAP_DATA||[]):[],bank=[...(window.QUESTION_BANK||[]),...(window.RELATED_QUESTION_BANK||[])];
 const $=id=>document.getElementById(id);
 const ns='http://www.w3.org/2000/svg',W=1100,H=760;
 const svg=$('graph'),viewport=$('viewport'),linkHost=$('links'),nodeHost=$('nodes');
