@@ -3,7 +3,7 @@ const assert=require('node:assert/strict');
 const {chromium}=require('playwright');
 (async()=>{
   const url=process.env.KNOWLEDGE_GRAPH_URL;
-  if(!/^https:\/\/[a-z0-9.-]+\/$/i.test(url||''))throw new Error('Explicit HTTPS preview URL required');
+  if(!/^http:\/\/127\.0\.0\.1:\d+\/knowledge-graph-preview\/$/.test(url||''))throw new Error('Local isolated preview URL required');
   const browser=await chromium.launch({headless:true});
   try{
     for(const viewport of [{width:1440,height:900},{width:390,height:844}]){
