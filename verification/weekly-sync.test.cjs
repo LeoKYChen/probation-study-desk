@@ -35,3 +35,19 @@ test('historical issue loss is blocked, preserving append-only archive',()=>{
  const a=fixture();const b=fixture();b.issues[0].id='weekly-2026-10-21';b.issues[0].date='2026-10-21';
  assert.throws(()=>guardHistory(a,b),/historical issue removal blocked/);
 });
+
+test('2026-10-18 style records with verified sources and check dates are accepted',()=>{
+ const d=fixture();
+ const a=d.issues[0].items[0];
+ a.url='https://example.org/research';
+ a.checkedAt='2026-10-18';
+ a.sourceStatus='verified';
+ assert.equal(validate(d).articles,1);
+});
+test('verified record requires both public source URL and review date',()=>{
+ const d=fixture();
+ const a=d.issues[0].items[0];
+ a.sourceStatus='verified';
+ a.url='https://example.org/research';
+ assert.throws(()=>validate(d),/verified article missing check date/);
+});
