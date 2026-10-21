@@ -1,0 +1,69 @@
+/* Approved visual theme: 溫暖圓體 × 霧藍書房. Presentation only; no record migration. */
+@font-face{font-family:StudyRound;src:url('./study-round.woff') format('woff');font-style:normal;font-weight:400;font-display:swap}
+@media screen{
+:root{--study-font:StudyRound,'PingFang TC','Microsoft JhengHei',sans-serif;--study-blue:#315b7c;--study-ink:#233544;--study-muted:#586c7b;--study-paper:#f3f6f9;--study-soft:#e3ecf3;--study-line:#c8d4df;--ink:#233544;--ink-muted:#586c7b;--ink-soft:#586c7b;--muted:#586c7b;--green:#315b7c;--green2:#e3ecf3;--green-dark:#274b67;--paper:#f3f6f9;--cream:#e3ecf3;--surface:#fff;--white:#fff;--line:#c8d4df;--border:#c8d4df;--navy:#315b7c;--navy-2:#416e90;--teal:#315b7c;--teal-soft:#e3ecf3;--room-hero:#e3ecf3;--room-surface:#fff;--room-border:#c8d4df;--room-shadow:none;--shadow:none;--radius:4px;--serif:var(--study-font)}
+html,body{font-family:var(--study-font);background:var(--study-paper);color:var(--study-ink)}
+body :is(button,input,select,textarea,h1,h2,h3,h4,summary,.brand,.study-brand,.markdown,.reader,.question,.question-body,.tile-title){font-family:var(--study-font)}
+body :is(h1,h2,h3,h4,.brand,.study-brand,.tile-title){font-weight:400}
+body :is(button,input,select,textarea){accent-color:var(--study-blue)}
+body :is(button,.btn,.primary,.secondary,input:not([type=checkbox]):not([type=radio]),select,textarea){border-radius:4px}
+body :is(.panel,.card,.document-card,.featured-card,.compact-card,.workspace,.daily-card,.history,.stat,.review-dashboard,.storage25,.extension25,.point25){box-shadow:none;border-radius:4px}
+body :is(.global-header,.study-header,.topbar){background:#fff;color:var(--study-ink);border-bottom:1px solid var(--study-line)}
+body :is(.global-brand,.study-brand,.topbar .brand,.topbar h1){color:var(--study-ink)}
+body :is(.global-brand-mark,.study-brand-mark,.sidebar-brand-icon,.brand-icon){background:var(--study-blue);color:#fff;border-radius:3px}
+body :is(.brand small,.topbar .brand p,.topbar .version){color:var(--study-muted)}
+body :is(.version,.study-test-label){border-color:var(--study-line)}
+body .workspace-sidebar{background:var(--study-paper);border-right:1px solid var(--study-line)}
+body :is(.workspace-topbar,.workspace-status,.breadcrumb,.sidebar-links a,.sidebar-eyebrow,.sidebar-note){color:var(--study-muted)}
+body .workspace-topbar{background:transparent;border-bottom:1px solid var(--study-line)}
+body .sidebar-links a.is-current{background:var(--study-blue);color:#fff;border-radius:3px}
+body .sidebar-links a:hover{background:var(--study-soft);color:var(--study-blue)}
+body :is(.sidebar-brand,.sidebar-brand small){color:var(--study-ink)}
+body .sidebar-note-indicator{background:var(--study-blue);box-shadow:none}
+body .page-header::before{display:none}
+body .page-header{border-bottom:0;padding-bottom:0;margin-bottom:30px}
+body .page-header h1{color:var(--study-ink);font-size:clamp(30px,4.4vw,52px);line-height:1.5}
+body :is(.page-eyebrow,.hero-eyebrow){color:var(--study-blue)}
+body :is(.page-intro,.footnote){color:var(--study-muted)}
+body .countdown{background:transparent;border:0;border-top:3px solid var(--study-blue);border-bottom:1px solid var(--study-line);padding:23px 0;border-radius:0;box-shadow:none}
+body :is(.room-hero-art,.countdown::before){display:none}
+body :is(.countdown-label,.countdown-value){color:var(--study-blue);font-weight:400}
+body .countdown-calendar{background:var(--study-soft);border-color:var(--study-line);color:var(--study-muted)}
+body .countdown-settings summary{background:#fff;color:var(--study-blue);border-color:var(--study-line);border-radius:3px}
+body #countdown-form{border-color:var(--study-line);box-shadow:none;border-radius:4px}
+body :is(.field input,.field select){border-color:var(--study-line)}
+body .save-button{background:var(--study-blue);color:white}
+body .clear-button{background:#fff;color:var(--study-blue);border-color:var(--study-line)}
+body .section h2{color:var(--study-ink);font-weight:400}
+body .section h2::before{display:none}
+body .tile{border:0;border-top:1px solid var(--study-line);border-bottom:1px solid var(--study-line);border-radius:0;background:transparent;background-image:none;box-shadow:none;color:var(--study-ink);transition:background .15s;min-height:128px}
+body .tile:hover{transform:none;background:var(--study-soft);box-shadow:none;border-color:var(--study-blue)}
+body .tile :is(.tile-description,.tile-arrow){color:var(--study-muted)}
+body .tile-title{font-size:clamp(22px,2.5vw,29px);font-weight:400}
+body .tile-arrow{background:none;border:0}
+body.professional-page .timer-panel{background:var(--study-soft);border-radius:4px}
+body.professional-page :is(.question,.prompt-box){border-color:var(--study-blue)}
+body.professional-page :is(.daily-card,.workspace,.history){border-top:2px solid var(--study-blue)}
+body.professional-page .segmented button[aria-pressed=true]{box-shadow:none}
+body.study-reading .sidebar{background:var(--study-soft);color:var(--study-muted)}
+body.study-reading :is(.hero,.sidebar .avatar){background:var(--study-soft);color:var(--study-ink)}
+body.study-reading :is(.hero h1,.hero p,.brand,.reader h1,.markdown h1,.markdown h2,.markdown h3){color:var(--study-ink)}
+body.study-reading :is(.hero-art,.hero::before,.hero::after){display:none}
+body.study-reading :is(.document-card,.featured-card,.compact-card){background:#fff;border-color:var(--study-line)}
+body.study-reading .markdown{line-height:2;color:var(--study-ink)}
+body.study-reading .markdown a{color:var(--study-blue)}
+body.study-reading .question-body{background:#fff}
+body :focus-visible{outline:3px solid #9a6b29;outline-offset:3px}
+@media(max-width:760px){body .tile{min-height:100px}body .countdown{padding:20px 0}body .page-header h1{font-size:clamp(28px,8vw,37px)}}
+@media(prefers-reduced-motion:reduce){body .tile{transition:none}}
+}
+
+@media screen{
+body .page .course-grid>.tile.course-tile{background:transparent;border:0;border-top:1px solid var(--study-line);border-bottom:1px solid var(--study-line);border-radius:0;box-shadow:none;color:var(--study-ink)}
+body .page .course-grid>.tile.course-tile:hover{background:var(--study-soft)}
+body .page .course-grid>.tile.course-tile .tile-title{color:var(--study-ink);font-weight:400}
+body .page .course-grid>.tile.course-tile .tile-description{color:var(--study-muted)}
+body .page .course-grid>.tile.course-tile .tile-arrow{background:none;color:var(--study-blue)}
+body .page .explore-tile::before,body .page .countdown::before{display:none}
+body .page .tile .tile-title{font-weight:400}
+}
