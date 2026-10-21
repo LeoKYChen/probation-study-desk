@@ -133,6 +133,9 @@
           <div class="essay-bottom"><div class="essay-save-status" id="essaySaveStatus" role="status" aria-live="polite">等待載入草稿…</div><span id="essayCharCount" class="tiny muted">0 字元</span></div>
           <div class="essay-actions"><button id="essayExport" type="button" class="secondary">匯出本題申論 Markdown</button></div>
 <section id="daily30AiPanel" class="daily30-ai" aria-label="AI批改文字">
+<label for="daily30AiMode"><strong>批改方式</strong></label>
+<select id="daily30AiMode" aria-label="選擇 AI 批改方式"><option value="full">完整申論批改</option><option value="direction">答題方向批改（四格草稿／大綱）</option></select>
+<p class="tiny muted">答題方向批改優先檢查四格草稿，不因尚未寫成完整答案而給低分。</p>
 <button id="daily30CopyAi" class="primary" type="button">一鍵複製AI批改</button>
 <label for="daily30AiFeedback"><strong>AI批改結果</strong>（直接貼上ChatGPT完整評語）</label>
 <textarea id="daily30AiFeedback" rows="8" placeholder="把ChatGPT批改完成的文字直接貼回來，自動保存到本題每日30分鐘學習紀錄。"></textarea>
