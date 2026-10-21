@@ -1,6 +1,6 @@
 /* v2.5.4 preview-only PWA service worker. This template is compiled by install-offline.cjs. */
 'use strict';
-const CACHE_PREFIX='study30-v254-offline-'+new URL(self.registration.scope).pathname+'-',CACHE=CACHE_PREFIX+'layout-review-20261017-v5';
+const CACHE_PREFIX='study30-v254-offline-'+new URL(self.registration.scope).pathname+'-',CACHE=CACHE_PREFIX+'mobile-duration-cache-refresh-20261021-v6';
 const ASSETS=["./practice-session.js","./practice-review.js","./practice-diagnostics.js","./layout-panels-v2.js","./practice-context.css","./layout-followup.css","./review-preview.js","./layout-panels.js","./learning-charts.js","./layout-review.css","./progress-calendar.js","./","./ai-review-links.js","./app.js","./backup-import.js","./content-cleanup.css","./content-ui.js","./daily-essay-workbench.js","./data-health.js","./essay-analytics.js","./essay-review.js","./essay-rubric-core.js","./essay-selfcheck.js","./essay.js","./icon-180.png","./icon-192.png","./icon-512.png","./index.html","./manifest.webmanifest","./offline-control.js","./offline.css","./question-sources.js","./review-core.js","./review-simulator.js","./source-main-questions.js","./source-related-questions.js","./study30-shuati-links.js","./study30-yamol-links.js","./style.css","./v254-diagnostics.js","./weakness-priority.js"];
 const scope=self.registration.scope;
 const urls=ASSETS.map(a=>new URL(a,scope).href);
