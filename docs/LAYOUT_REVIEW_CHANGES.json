@@ -47,8 +47,8 @@
     {
       "path": "professional/layout-followup.css",
       "base_sha256": null,
-      "reason": "Slides 19,22–25,28: equal cards/actions, distinct accessible ability colors, compact schedule hint and full-width template selector. [Mobile RWD seven-item review] Presentation-only CSS and centered labels; no storage, questions, or event handlers changed.",
-      "sha256": "9894d387f586a47a175f7dd964ecf5aba1437d2086a2561aec660b62ec3b7d0e"
+      "reason": "Slides 19,22–25,28: equal cards/actions, distinct accessible ability colors, compact schedule hint and full-width template selector. [Mobile RWD seven-item review] Presentation-only CSS and centered labels; no storage, questions, or event handlers changed. [2026-10-21 mobile study card] Present 30/10-minute duration buttons as equal-width columns only below 680px; original study runtime unchanged.",
+      "sha256": "4f96ce2b059aa51fc6f003406214fc030da102296ad0f04fd6ab30873e17ffd6"
     },
     {
       "path": "professional/layout-panels.js",
