@@ -41,7 +41,7 @@
     {
       "path": "professional/index.html",
       "base_sha256": "115a1a32e125e7215c4336f4d079d434588308f7fff7fb69e53f446352dddf4b",
-      "sha256": "57589f45832c223bca1e3b0372dc4cf32f4c0db40e47114e6b0c24b87a44bd05",
+      "sha256": "49370465a4b7cc14b8488bd38e80c76da5c2592a08447d7ac61ba0894f4eff2c",
       "reason": "Slides 2,8–17: remove marked prose, add chart/history hosts, group health under existing import panel. Follow-up slides 24–29 remove marked text, retain actual-record forecast, shorten 10-minute label. Keep four-grid drafts and full answer expanded by default; remove explanation only. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22 AI practice] Add optional answer-direction review selector; keep existing full-answer mode, record keys and source bank intact."
     },
     {
@@ -89,7 +89,7 @@
     {
       "path": "professional/sw.js",
       "base_sha256": "40e49a0b907e3db282d42743613f7756e205dba51705dfba7e8efac533400e99",
-      "sha256": "0634f185393b3571bfff610c6b659e3e1a869d7dab6ec4eae8d11f2aba1c6742",
+      "sha256": "faddfd244c3a8f3357fcc9490774f9d58d3fd42336b031a825371f87500d2ab7",
       "reason": "Refresh existing installed-viewer asset cache for changed UI, without altering storage keys. [2026-10-21] Rotate cache version after mobile duration CSS update, so previously installed Safari PWAs fetch a fresh layout on service-worker activation.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22] Bump offline cache to refresh AI review mode script for installed apps."
     },
     {
@@ -135,10 +135,10 @@
       "reason": "套用已確認之溫暖圓體與霧藍書房視覺；保留既有操作與資料鍵。"
     },
     {
-      "path": "professional/ai-review-links.js",
-      "base_sha256": "3887497a7e57e691ecba8a03414c33bc3833ff4a47538e339a587f1244fc6658",
+      "path": "professional/ai-review-links-direction.js",
+      "base_sha256": null,
       "sha256": "e8ed96dbbeb3f34dfcad670fcb87aeb616f9e95064845b86872d65c184830939",
-      "reason": "[2026-10-22 answer-direction review] Add non-scored outline diagnostic prompt; retain original full-essay prompt and AI feedback storage. User text remains local until copied."
+      "reason": "[2026-10-22 AI directions] Versioned script builds optional non-scored outline diagnostic prompts while keeping frozen ai-review-links.js and user-record keys untouched."
     }
   ]
 }
