@@ -80,6 +80,15 @@ async function check(){
    assert.ok(clipboard.includes('純學科題採整題評分'));
    assert.ok(clipboard.includes('按題目設問分別評分'));
  }
+ await page.locator('#aiReviewMode').selectOption('direction');
+ await page.locator('#copyAI').click();
+ await page.waitForFunction(()=>document.querySelector('#copyStatus').textContent.includes('答題方向'));
+ if(!IS_WEBKIT){const outlineClipboard=await page.evaluate(()=>navigator.clipboard.readText());
+   assert.ok(outlineClipboard.includes('【我的答題方向／四格草稿】'));
+   assert.ok(outlineClipboard.includes('爭點草稿：甲之程序保障'));
+   assert.ok(!outlineClipboard.includes('【本次完整答案】'));
+ }
+ await page.locator('#aiReviewMode').selectOption('full');
  const oldPage=await context.newPage();
  oldPage.on('pageerror',error=>errors.push('original daily page: '+error.message));
  oldPage.on('dialog',dialog=>dialog.accept());
@@ -106,6 +115,15 @@ async function check(){
    assert.ok(promptText.includes('由原每日題瀏覽頁更新的答案')&&promptText.includes('【本次每日模擬題】'));
    assert.ok(promptText.includes('法律／實務依據無法查證時標示待確認'));
  }
+ await oldPage.locator('#aiReviewMode').selectOption('direction');
+ await oldPage.locator('#copyAI').click();
+ await oldPage.waitForFunction(()=>document.querySelector('#copyStatus').textContent.includes('答題方向'));
+ if(!IS_WEBKIT){const outline=await oldPage.evaluate(()=>navigator.clipboard.readText());
+   assert.ok(outline.includes('【我的答題方向／四格草稿】'));
+   assert.ok(outline.includes('爭點草稿：甲之程序保障'));
+   assert.ok(!outline.includes('【本次完整答案】'));
+ }
+ await oldPage.locator('#aiReviewMode').selectOption('full');
  await oldPage.waitForFunction(id=>(JSON.parse(localStorage.getItem('probation-daily-github:records:v1'))[id]||{}).answer==='由原每日題瀏覽頁更新的答案',q.id);
  const still=await page.evaluate(id=>JSON.parse(localStorage.getItem('probation-daily-github:records:v1'))[id].aiFeedback,q.id);
  assert.equal(still,'AI評語：法條論述得當，但應補上學理。','old daily page must preserve feedback');
