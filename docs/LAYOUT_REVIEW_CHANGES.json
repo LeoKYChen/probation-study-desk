@@ -89,14 +89,14 @@
     {
       "path": "professional/sw.js",
       "base_sha256": "40e49a0b907e3db282d42743613f7756e205dba51705dfba7e8efac533400e99",
-      "sha256": "085923908121826355f3d023eba2798c48093349ccae3f9b618e512eee9d3f7d",
-      "reason": "Refresh existing installed-viewer asset cache for changed UI, without altering storage keys."
+      "sha256": "b94aeb8457cd9c76c5210d8aca7f5bb5c2e9a444a20af64530c9d3e4471b3ba7",
+      "reason": "Refresh existing installed-viewer asset cache for changed UI, without altering storage keys. [2026-10-21] Rotate cache version after mobile duration CSS update, so previously installed Safari PWAs fetch a fresh layout on service-worker activation."
     },
     {
       "path": "sw.js",
       "base_sha256": "d564d94ae7a5249cd9ca7caa2ee480ddd4a541250e29b61a6f80c88f55ef0323",
-      "sha256": "c5c3ebb06a927a10a9bd6fa4d385b218097799b97488540de2bd31728b822d38",
-      "reason": "Cloudflare Pages canonically redirects /dir/index.html to /dir/ and /x.html to /x; allow only these exact same-origin HTML transformations while preserving atomic snapshots and rejecting other redirects."
+      "sha256": "7cf6aca605795979faafc9eb23cf5672ec386f454c64ad8dad94055a9b07f86a",
+      "reason": "Cloudflare Pages canonically redirects /dir/index.html to /dir/ and /x.html to /x; allow only these exact same-origin HTML transformations while preserving atomic snapshots and rejecting other redirects. [2026-10-21] When root service worker controls professional paths, fetch training HTML and CSS online first; keep existing offline snapshots as fallback."
     },
     {
       "path": "professional/practice-session.js",
