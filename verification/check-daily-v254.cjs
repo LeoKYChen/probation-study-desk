@@ -11,6 +11,17 @@ evaluate('v2.5/backup-core.js');
 evaluate('v2.5/ai-simple-review-v254.js');
 const M=root.PracticeModel,B=root.Backup25,A=root.AISimpleReview254;
 assert.ok(M&&B&&A);
+const outlineQuestion={id:'outline-smoke',body:'請就少年案件分析程序保障與處遇措施。',subject:'少年事件處理法',year:114,questionNo:1,title:'自編測試題'};
+const outlineText=A.buildPrompt(outlineQuestion,'一、程序保障\n二、個案處遇','direction');
+assert.ok(outlineText.includes('【我的答題方向／四格草稿】')&&outlineText.includes('一、程序保障'));
+assert.ok(outlineText.includes('不提供百分制分數')&&!outlineText.includes('模擬總分（若無可靠依據可不給分）'));
+assert.throws(()=>A.buildPrompt(outlineQuestion,'','direction'),/請先填寫四格草稿/);
+assert.ok(A.buildPrompt(outlineQuestion,'完整答案').includes('【我的答案】'),'default AI full grading is compatible');
+const professional={};vm.runInNewContext(read('professional/ai-review-links.js'),{window:professional,document:{readyState:'loading',addEventListener(){}}},{filename:'professional/ai-review-links.js'});
+const guided=professional.Study30GuidedReview.prompt(outlineQuestion,{questionId:'outline-smoke'},'一、確認程序','direction');
+assert.ok(guided.includes('【我的答題方向／四格草稿】')&&guided.includes('不給百分制模擬成績'));
+assert.ok(professional.Study30GuidedReview.prompt(outlineQuestion,{},'完整申論').includes('爭點掌握（30分）'));
+assert.ok(read('professional/index.html').includes('id="daily30AiMode"'),'professional review selector missing');
 const d=M.dataset(JSON.parse(read('daily-simulation/questions.json')));
 assert.equal(d.questions.length,d.count);
 assert.ok(d.questions.length>0);
@@ -47,6 +58,10 @@ assert.ok(lawText.includes('整題統一評分')&&lawText.includes('不按法律
 assert.ok(lawText.includes('【本次每日模擬題】')&&!lawText.includes('【原題】'));
 assert.ok(!lawText.includes('年度／科目：116年'),'no fabricated exam year');
 assert.ok(lawText.includes('\n\n'),'prompt uses actual newlines');
+const outlineDaily=promptFor(law,'程序保障及處遇方向','direction');
+assert.ok(outlineDaily.includes('【我的答題方向／四格草稿】')&&outlineDaily.includes('不給百分制模擬分數'));
+assert.ok(!outlineDaily.includes('模擬得分（如適用）'));
+assert.ok(html.includes('id="aiReviewMode"'),'daily review mode selector missing');
 const mixedText=promptFor(mixed,'學理與法律分析答案');
 assert.ok(mixedText.includes('須按題目設問分別評分'));
 assert.ok(mixedText.includes('15分')&&mixedText.includes('10分'));
@@ -101,6 +116,8 @@ assert.ok(inlineStart>=0&&inlineEnd>inlineStart,'daily browser must include grad
 const inlineFns=vm.runInNewContext('(()=>{'+browserScript.slice(inlineStart,inlineEnd)+'; return {simulationQuestion,promptFor};})()',{M});
 assert.equal(inlineFns.promptFor(law,'法律爭點分析答案'),promptFor(law,'法律爭點分析答案'),'both pages must use identical law rubric');
 assert.equal(inlineFns.promptFor(mixed,'學理與法律分析答案'),promptFor(mixed,'學理與法律分析答案'),'both pages must use identical cross-subject rubric');
+assert.equal(inlineFns.promptFor(law,'方向草稿','direction'),promptFor(law,'方向草稿','direction'),'daily modules must share the same outline rubric');
+assert.ok(browserHtml.includes('id="aiReviewMode"'),'daily browser review mode selector missing');
 assert.equal(inlineFns.simulationQuestion(adapted),simulationQuestion(adapted),'both pages must display the same adapted essay prompt');
 
 console.log('Daily v2.5.4 regression checks passed ('+d.count+' questions).');
