@@ -17,7 +17,7 @@ assert.ok(outlineText.includes('【我的答題方向／四格草稿】')&&outli
 assert.ok(outlineText.includes('不提供百分制分數')&&!outlineText.includes('模擬總分（若無可靠依據可不給分）'));
 assert.throws(()=>A.buildPrompt(outlineQuestion,'','direction'),/請先填寫四格草稿/);
 assert.ok(A.buildPrompt(outlineQuestion,'完整答案').includes('【我的答案】'),'default AI full grading is compatible');
-const professional={};vm.runInNewContext(read('professional/ai-review-links.js'),{window:professional,document:{readyState:'loading',addEventListener(){}}},{filename:'professional/ai-review-links.js'});
+const professional={};vm.runInNewContext(read('professional/ai-review-links-direction.js'),{window:professional,document:{readyState:'loading',addEventListener(){}}},{filename:'professional/ai-review-links.js'});
 const guided=professional.Study30GuidedReview.prompt(outlineQuestion,{questionId:'outline-smoke'},'一、確認程序','direction');
 assert.ok(guided.includes('【我的答題方向／四格草稿】')&&guided.includes('不給百分制模擬成績'));
 assert.ok(professional.Study30GuidedReview.prompt(outlineQuestion,{},'完整申論').includes('爭點掌握（30分）'));
