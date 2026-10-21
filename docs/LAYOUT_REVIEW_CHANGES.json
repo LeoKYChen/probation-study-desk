@@ -89,14 +89,14 @@
     {
       "path": "professional/sw.js",
       "base_sha256": "40e49a0b907e3db282d42743613f7756e205dba51705dfba7e8efac533400e99",
-      "sha256": "2b769acc49fcc62ab1bb9e274b7829f2e95bddb3c3911b883825aa8594a6656c",
-      "reason": "Refresh existing installed-viewer asset cache for changed UI, without altering storage keys. [2026-10-21] Rotate cache version after mobile duration CSS update, so previously installed Safari PWAs fetch a fresh layout on service-worker activation.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。"
+      "sha256": "0634f185393b3571bfff610c6b659e3e1a869d7dab6ec4eae8d11f2aba1c6742",
+      "reason": "Refresh existing installed-viewer asset cache for changed UI, without altering storage keys. [2026-10-21] Rotate cache version after mobile duration CSS update, so previously installed Safari PWAs fetch a fresh layout on service-worker activation.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22] Bump offline cache to refresh AI review mode script for installed apps."
     },
     {
       "path": "sw.js",
       "base_sha256": "d564d94ae7a5249cd9ca7caa2ee480ddd4a541250e29b61a6f80c88f55ef0323",
-      "sha256": "c24756e940950b13b4e5e75ea920b2ef96d0d0b663ebe626ea3e2a6e38f33efd",
-      "reason": "Cloudflare Pages canonically redirects /dir/index.html to /dir/ and /x.html to /x; allow only these exact same-origin HTML transformations while preserving atomic snapshots and rejecting other redirects. [2026-10-21] When root service worker controls professional paths, fetch training HTML and CSS online first; keep existing offline snapshots as fallback.；套用溫暖圓體與霧藍書房。"
+      "sha256": "6334e5522a93fc8f46fd9c456c8308a7bdd4f4b9af1dd8ab5b467056d20e8683",
+      "reason": "Cloudflare Pages canonically redirects /dir/index.html to /dir/ and /x.html to /x; allow only these exact same-origin HTML transformations while preserving atomic snapshots and rejecting other redirects. [2026-10-21] When root service worker controls professional paths, fetch training HTML and CSS online first; keep existing offline snapshots as fallback.；套用溫暖圓體與霧藍書房。 [2026-10-22] Network-first changed AI review pages and scripts to avoid stale mixed-version offline snapshots."
     },
     {
       "path": "professional/practice-session.js",
