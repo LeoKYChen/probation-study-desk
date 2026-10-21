@@ -5,26 +5,26 @@
     {
       "path": "common-subjects/catalog/index.html",
       "base_sha256": "c3993bd106af356f064551ac490795cbefb3ee3b336f2014d38caa34fd083187",
-      "sha256": "b55a66d5e6f1c8028fea589016037ea7fec7c6123dd4c64e8be066b478a50197",
-      "reason": "Shorten development-only introduction; keep source and attribution. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed. [Stage 5 QA] Conditional script content split so HTTPS PWA never prefetches file-only generated JS. [Stage5 final HTML parser fix] Keep functional real script tags while splitting only file-mode document.write strings."
+      "sha256": "9b8bf08ee34ee77d0837486cbd564f0488a63c1c9adc5e9637c805c9694b28fc",
+      "reason": "Shorten development-only introduction; keep source and attribution. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed. [Stage 5 QA] Conditional script content split so HTTPS PWA never prefetches file-only generated JS. [Stage5 final HTML parser fix] Keep functional real script tags while splitting only file-mode document.write strings.；套用溫暖圓體與霧藍書房。"
     },
     {
       "path": "common-subjects/daily/index.html",
       "base_sha256": "63f88c07844a9f3d99c738864cb385ea6d744bbb094bb70e7b6bbc9c1d030a1b",
-      "sha256": "63b540cc0850cb74151dad626575d02d4f9e76abff92b7f7a98942d83fed9b53",
-      "reason": "Shorten development-version storage explanation; retain replace/backup warning. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed. [Stage 5 QA] Conditional script content split so HTTPS PWA never prefetches file-only generated JS. [Stage5 final HTML parser fix] Keep functional real script tags while splitting only file-mode document.write strings."
+      "sha256": "24c6d47536042612a5ecd2b55a004af367c628465d1f25440463041faa554256",
+      "reason": "Shorten development-version storage explanation; retain replace/backup warning. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed. [Stage 5 QA] Conditional script content split so HTTPS PWA never prefetches file-only generated JS. [Stage5 final HTML parser fix] Keep functional real script tags while splitting only file-mode document.write strings.；套用溫暖圓體與霧藍書房。"
     },
     {
       "path": "common-subjects/english-assistant/index.html",
       "base_sha256": "789c59675f5704659e3ba79260661980e6cc0260ddc49c3610f8da34e54d1c7c",
-      "sha256": "57758e5ec85e58e5f0529ba1e37d4d540a6da7b6e5e95602a89251a9d5bfff3f",
-      "reason": "Remove outdated personal-history assumption and development-version details. Slides 20–22: merge history/usage panels, remove marked text and equalize action sizing. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed."
+      "sha256": "6163134216a1dbe181a1406e6ab5bb1945af8d51021c79201b0284e34fd00acd",
+      "reason": "Remove outdated personal-history assumption and development-version details. Slides 20–22: merge history/usage panels, remove marked text and equalize action sizing. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed.；套用溫暖圓體與霧藍書房。"
     },
     {
       "path": "common-subjects/index.html",
       "base_sha256": "d9b28afda56727a618a6043d3000b45ae4c0004353dc1d1dda7d02e879587c8f",
-      "sha256": "caf348b62102ed799b87b06fcc6db7a07fc1ca18df4539deb20d43a10c33396b",
-      "reason": "Slides 4–7: remove callout/icons, widen topic and editor, repair timer layout; shorten development prose. Slide 19: remove records icon and make both visible stats fill the row. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed. [Mobile RWD seven-item review] Presentation-only CSS and centered labels; no storage, questions, or event handlers changed. [Safari RWD measured height correction: 52px version selector and comparison button.]"
+      "sha256": "a3d1e33f26d85ef6c667806a7db117ab5cbbd5b66edc4bcfacaea5dfa0944143",
+      "reason": "Slides 4–7: remove callout/icons, widen topic and editor, repair timer layout; shorten development prose. Slide 19: remove records icon and make both visible stats fill the row. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed. [Mobile RWD seven-item review] Presentation-only CSS and centered labels; no storage, questions, or event handlers changed. [Safari RWD measured height correction: 52px version selector and comparison button.]；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。"
     },
     {
       "path": "professional/data-health.js",
@@ -41,8 +41,8 @@
     {
       "path": "professional/index.html",
       "base_sha256": "115a1a32e125e7215c4336f4d079d434588308f7fff7fb69e53f446352dddf4b",
-      "sha256": "8346e5efa487226a497300ebcf685cb2c71bd6e9553311d16b09f6decbe0dd98",
-      "reason": "Slides 2,8–17: remove marked prose, add chart/history hosts, group health under existing import panel. Follow-up slides 24–29 remove marked text, retain actual-record forecast, shorten 10-minute label. Keep four-grid drafts and full answer expanded by default; remove explanation only. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed."
+      "sha256": "7d02185e4926bc28259a834aef8a49700495b66b130a5c223e027f0ee74f6e6c",
+      "reason": "Slides 2,8–17: remove marked prose, add chart/history hosts, group health under existing import panel. Follow-up slides 24–29 remove marked text, retain actual-record forecast, shorten 10-minute label. Keep four-grid drafts and full answer expanded by default; remove explanation only. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。"
     },
     {
       "path": "professional/layout-followup.css",
@@ -89,14 +89,14 @@
     {
       "path": "professional/sw.js",
       "base_sha256": "40e49a0b907e3db282d42743613f7756e205dba51705dfba7e8efac533400e99",
-      "sha256": "b94aeb8457cd9c76c5210d8aca7f5bb5c2e9a444a20af64530c9d3e4471b3ba7",
-      "reason": "Refresh existing installed-viewer asset cache for changed UI, without altering storage keys. [2026-10-21] Rotate cache version after mobile duration CSS update, so previously installed Safari PWAs fetch a fresh layout on service-worker activation."
+      "sha256": "2b769acc49fcc62ab1bb9e274b7829f2e95bddb3c3911b883825aa8594a6656c",
+      "reason": "Refresh existing installed-viewer asset cache for changed UI, without altering storage keys. [2026-10-21] Rotate cache version after mobile duration CSS update, so previously installed Safari PWAs fetch a fresh layout on service-worker activation.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。"
     },
     {
       "path": "sw.js",
       "base_sha256": "d564d94ae7a5249cd9ca7caa2ee480ddd4a541250e29b61a6f80c88f55ef0323",
-      "sha256": "7cf6aca605795979faafc9eb23cf5672ec386f454c64ad8dad94055a9b07f86a",
-      "reason": "Cloudflare Pages canonically redirects /dir/index.html to /dir/ and /x.html to /x; allow only these exact same-origin HTML transformations while preserving atomic snapshots and rejecting other redirects. [2026-10-21] When root service worker controls professional paths, fetch training HTML and CSS online first; keep existing offline snapshots as fallback."
+      "sha256": "c24756e940950b13b4e5e75ea920b2ef96d0d0b663ebe626ea3e2a6e38f33efd",
+      "reason": "Cloudflare Pages canonically redirects /dir/index.html to /dir/ and /x.html to /x; allow only these exact same-origin HTML transformations while preserving atomic snapshots and rejecting other redirects. [2026-10-21] When root service worker controls professional paths, fetch training HTML and CSS online first; keep existing offline snapshots as fallback.；套用溫暖圓體與霧藍書房。"
     },
     {
       "path": "professional/practice-session.js",
@@ -127,6 +127,12 @@
       "base_sha256": null,
       "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.",
       "sha256": "4d5e3545376629d6cd34465bbb7544f3bd37cb6ec7f0a031fc0c84ca60e41157"
+    },
+    {
+      "path": "index.html",
+      "base_sha256": "42167acdf90476d5b9c7555711b492ed3c4a5f0e42385c33b5226d151929e01f",
+      "sha256": "a331ed6e5d71f9cbc7b8d2591951e1f83d63d21b0dee5ba8ae1b26d0b44045b6",
+      "reason": "套用已確認之溫暖圓體與霧藍書房視覺；保留既有操作與資料鍵。"
     }
   ]
 }
