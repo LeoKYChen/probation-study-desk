@@ -57,6 +57,9 @@
   <section class="essay-ai-panel" aria-label="AI申論批改">
     <h2>AI 申論批改</h2>
     <p>完成答案後，一鍵複製題幹、作答與批改規則，貼至 ChatGPT。法律正確性在批改時檢查；未查明的法源必須標示待確認。</p>
+    <label for="aiReviewMode">批改方式</label>
+<select id="aiReviewMode" aria-label="選擇 AI 批改方式"><option value="full">完整申論批改</option><option value="direction">答題方向批改（四格草稿／大綱）</option></select>
+<p>答題方向模式優先檢查四格草稿，不以完整作文的標準評分。</p>
     <button id="copyAI" type="button">一鍵複製 AI 批改</button>
     <p id="copyStatus" role="status" aria-live="polite"></p>
     <label for="aiFeedback">AI 批改結果（將 ChatGPT 的完整評語貼回保存）</label>
