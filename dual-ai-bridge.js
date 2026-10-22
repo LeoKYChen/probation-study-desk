@@ -23,7 +23,7 @@
     const id=nonce();
     const popup=root.open(TARGET_URL+'#psd-bridge='+id,'_blank');
     if(!popup)fail('瀏覽器阻擋新視窗，請允許彈出視窗後再試');
-    active={id,popup,payload:safe,onResult,finished:false,transferred:false};
+    active={id,popup,payload:safe,onResult,finished:false,transferred:false,pending:false};
     root.setTimeout(()=>{if(active?.id===id&&!active.transferred){active=null;root.alert('雙 AI 工作臺沒有完成連線。請檢查新視窗是否被封鎖，再重新操作。');}},60000);
     return true;
   }
@@ -35,13 +35,15 @@
     }else if(d.kind==='created'){a.transferred=true;}
     else if(d.kind==='save-error'&&!a.transferred){root.alert('雙 AI 工作臺無法建立任務：'+String(d.message||'儲存失敗').slice(0,160));active=null;}
     else if(d.kind==='return'){
-      if(!a.transferred||a.finished||typeof d.text!=='string'||!d.text.trim()||d.text.length>100000)return;
+      if(!a.transferred||a.finished||a.pending||typeof d.text!=='string'||!d.text.trim()||d.text.length>100000)return;
       try{
         if(!root.confirm('是否將雙 AI 審查意見寫回原始練習紀錄？既有答案及舊評語會保留。'))return;
+        a.pending=true;
         await a.onResult(d.text);
         a.finished=true;
         a.popup.postMessage({protocol:PROTOCOL,kind:'saved',nonce:a.id},TARGET_ORIGIN);
       }catch(e){
+        a.pending=false;
         a.popup.postMessage({protocol:PROTOCOL,kind:'save-error',nonce:a.id,message:String(e?.message||e).slice(0,180)},TARGET_ORIGIN);
       }
     }
