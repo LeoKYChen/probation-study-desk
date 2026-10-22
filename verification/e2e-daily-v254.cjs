@@ -285,6 +285,46 @@ async function check(){
  assert.deepEqual(inlineErrors,[],'no uncaught evening-room mobile errors');
  await inlineMobile.close();
  await mobileContext.close();
+
+ // Exam v2.5: verify dual AI button, handoff metadata, guarded append and mobile fit.
+ const examPage=await context.newPage(),examErrors=[];
+ examPage.on('pageerror',error=>examErrors.push(error.message));
+ await examPage.goto(origin+'/v2.5/',{waitUntil:'domcontentloaded'});
+ await examPage.locator('#ai-simple-dual').waitFor({timeout:30000});
+ await examPage.locator('#issueInput').fill('考古題完整答案：程序保障、要件、涵攝與結論');
+ await examPage.locator('#ai-simple-feedback').fill('既有 AI 評語，必須保留');
+ await examPage.evaluate(()=>{window.PSDDualAI.start=({payload,onResult})=>{window.__examDual={payload,onResult};return true;};});
+ await examPage.locator('#ai-simple-dual').click();
+ const handoff=await examPage.evaluate(()=>window.__examDual?.payload);
+ assert.ok(handoff?.documentText.includes('考古題完整答案')&&handoff.documentText.includes('【原題】'));
+ assert.ok(handoff?.title.startsWith('考古題｜')&&handoff.instruction.includes('互相指出'));
+ await examPage.evaluate(()=>window.__examDual.onResult('雙 AI 新評語：需核對法源'));
+ const after=await examPage.evaluate(()=>{
+   const id=window.Practice25.getQuestion().id;
+   return JSON.parse(localStorage.getItem('probation-study-desk-v24'))[id];
+ });
+ assert.ok(after.issue.includes('考古題完整答案'),'dual AI must preserve original essay');
+ assert.ok(after.aiFeedback.includes('既有 AI 評語')&&after.aiFeedback.includes('雙 AI 新評語'),'append, never overwrite prior feedback');
+ assert.ok((await examPage.locator('#ai-simple-feedback').inputValue()).includes('雙 AI 新評語'));
+ await examPage.locator('#ai-simple-dual').click();
+ await examPage.locator('#issueInput').fill('答案已更改，舊審查不得覆寫');
+ const stale=await examPage.evaluate(async()=>{
+   try{await window.__examDual.onResult('錯配的舊意見');return 'accepted';}
+   catch(e){return String(e.message);}
+ });
+ assert.match(stale,/作答或草稿已變更/);
+ assert.ok(!(await examPage.locator('#ai-simple-feedback').inputValue()).includes('錯配的舊意見'));
+ await examPage.locator('#ai-simple-mode').selectOption('direction');
+ await examPage.locator('#draftIssue').fill('四格草稿的程序爭點');
+ await examPage.locator('#ai-simple-dual').click();
+ const outlineHandoff=await examPage.evaluate(()=>window.__examDual?.payload);
+ assert.ok(outlineHandoff.documentText.includes('四格草稿的程序爭點'));
+ assert.ok(outlineHandoff.instruction.includes('不給百分制分數'));
+ await examPage.setViewportSize({width:390,height:844});
+ const dualRect=await examPage.locator('#ai-simple-dual').boundingBox();
+ assert.ok(dualRect&&dualRect.x>=0&&dualRect.x+dualRect.width<=392,'mobile dual AI button must fit viewport');
+ assert.deepEqual(examErrors,[],'no exam review JavaScript errors');
+ await examPage.close();
  console.log((IS_WEBKIT?'WebKit':'Chromium')+' desktop + 390px touch-mobile browser acceptance passed: '+data.questions.length+' questions; old answer, timer, AI clipboard, shared page, backup/restore, clear and mobile layout.');
 }
 check().catch(error=>{console.error(error);process.exitCode=1;}).finally(async()=>{
