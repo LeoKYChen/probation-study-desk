@@ -101,6 +101,7 @@
     var copy = DOC.getElementById('ai-simple-copy');
     var feedback = DOC.getElementById('ai-simple-feedback');
     var status = DOC.getElementById('ai-simple-status');
+    root.AIPromptCustom?.mount({button:copy,modeElement:modeSelector,getMode:function(){return modeSelector.value;},getSubject:function(){return practice.getQuestion()?.subject||'';}});
     var shownId = null, lastSaved = '';
     function notice(t,isError) { status.textContent=t;status.dataset.error=isError?'true':'false'; }
     function sync() {
@@ -142,7 +143,9 @@
         var drafts = [['draftIssue','一、題目爭點'],['draftBasis','二、法律或學理依據'],['draftAnalysis','三、涵攝與實務應用'],['draftConclusion','四、結論']]
           .map(function(field){var el=DOC.getElementById(field[0]);return el && el.value.trim() ? field[1]+'\n'+el.value.trim() : '';}).filter(Boolean).join('\n\n');
         var content = mode === 'direction' ? (drafts || answer.value) : answer.value;
-        prompt=buildPrompt(practice.getQuestion(),content,mode);
+        var q=practice.getQuestion();
+        prompt=buildPrompt(q,content,mode);
+        if(root.AIPromptCustom)prompt=root.AIPromptCustom.enhance(prompt,{mode:mode,subject:q.subject});
       }
       catch(e){ notice(e.message,true); return; }
       try {
