@@ -15,7 +15,7 @@ let store,engine,current=null,currentId=null,baseline=null,preferences={subjects
 const uid=()=>crypto.randomUUID?.()||Array.from(crypto.getRandomValues(new Uint8Array(16)),x=>x.toString(16).padStart(2,'0')).join('');
 function report(text,bad=false) { $('status').textContent=text;$('status').classList.toggle('error',bad); }
 const canonical=s=>s.startsWith('犯罪學')?'犯罪學':s==='諮商與矯正輔導'?'諮商與輔導':s;
-const questions=[...(globalThis.QUESTION_BANK||[]),...(globalThis.RELATED_QUESTION_BANK||[])].map(q=>({id:q.id,subject:canonical(q.subject),body:q.body,title:q.title,topicKey:q.subject+'｜'+q.title,sourceUrl:q.sourceUrl||'',sourceLabel:(q.source||'題源未確認')+'｜'+q.year+'年｜'+(q.examType||q.examTypes?.join('／')||'考試類別未記載')+'｜第'+q.questionNo+'題（沿用原題庫標示，未於本次重新查核）'}));
+const questions=[...(globalThis.QUESTION_BANK||[]),...(globalThis.RELATED_QUESTION_BANK||[]),...(globalThis.POLICE_ORIGINAL_QUESTION_BANK||[])].map(q=>({id:q.id,subject:canonical(q.subject),body:q.body,title:q.title,topicKey:q.subject+'｜'+q.title,sourceUrl:q.sourceUrl||'',sourceLabel:(q.source||'題源未確認')+'｜'+q.year+'年｜'+(q.examType||q.examTypes?.join('／')||'考試類別未記載')+'｜第'+q.questionNo+'題（沿用原題庫標示，未於本次重新查核）'}));
 // Composite subjects keep their original names; no invented split into individual questions.
 for(const q of questions) if(isSupportedSubject(q.subject)&&!SUBJECTS.includes(q.subject)) SUBJECTS.push(q.subject);
 function wrap(id,fn) { $(id).addEventListener('click',async()=>{const b=$(id);if(b.disabled)return;b.disabled=true;try{await action(fn);}finally{b.disabled=false;}}); }
