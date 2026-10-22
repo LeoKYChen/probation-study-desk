@@ -11,6 +11,7 @@
  const FORMAT='psd-unified-learning-backup',SCHEMA=1,CONFLICT_KEY='psd-unified-backup-conflicts-v1';
  const MAX_FILE=20*1024*1024,MAX_ITEMS=5000,MAX_CONFLICTS=3500;
  const modules=[
+  {key:'psd-ai-custom-rules-v1',name:'自訂AI批改提示詞',kind:'prompts'},
   {key:'probation-study30-v251:v1',name:'專業科目每日30分鐘',kind:'sessions'},
   {key:'probation-study-desk-v24',name:'426題考古題',kind:'records'},
   {key:'probation-study-desk-v3',name:'舊版考古題 v3',kind:'records'},
@@ -45,6 +46,14 @@
   let parsed;
   try{parsed=JSON.parse(raw)}catch{throw Error('「'+(names[key]?.name||'衝突版本')+'」的 JSON 無法讀取');}
   assert(safe(parsed),'「'+(names[key]?.name||'衝突版本')+'」存在不安全的資料');
+  if(type==='prompts'){
+   assert(isObj(parsed)&&parsed.format==='probation-ai-prompt-settings'&&parsed.schemaVersion===1&&Array.isArray(parsed.entries)&&parsed.entries.length<=80,'自訂提示詞格式不符');
+   const ids=new Set();
+   for(const entry of parsed.entries){
+    assert(isObj(entry)&&['full','direction'].includes(entry.mode)&&typeof entry.subject==='string'&&entry.subject.length<=80&&typeof entry.text==='string'&&entry.text.trim().length>0&&entry.text.length<=6000,'自訂提示詞內容不符');
+    const id=entry.mode+'::'+entry.subject;assert(!ids.has(id),'自訂提示詞範圍重複');ids.add(id);
+   }
+  }
   if(type==='records')assert(isObj(parsed),'題目紀錄必須為物件');
   if(type==='sessions')assert(isObj(parsed)&&parsed.version===1&&isObj(parsed.sessions),'專業科目紀錄格式不符');
   if(type==='common')assert(isObj(parsed)&&parsed.schema===key&&isObj(parsed.drafts)&&isObj(parsed.english),'作文紀錄格式不符');
@@ -121,6 +130,15 @@
    return output;
   }
   function mergeRecord(key,local,remote,kind){
+   if(kind==='prompts'){
+    const out=copy(local),have=new Map(out.entries.map(x=>[x.mode+'::'+x.subject,x]));
+    for(const entry of remote.entries){
+     const id=entry.mode+'::'+entry.subject;
+     if(!have.has(id)){out.entries.push(copy(entry));have.set(id,entry);}
+     else if(!equal(have.get(id),entry))conflict(key,['entries',id],have.get(id),entry);
+    }
+    assert(out.entries.length<=80,'合併後提示詞設定超過上限');return out;
+   }
    if(kind==='font'||kind==='setting'){
     if(!equal(local,remote))conflict(key,[],local,remote);
     return local;
