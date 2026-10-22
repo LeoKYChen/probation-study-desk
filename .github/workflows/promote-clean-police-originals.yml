@@ -54,12 +54,14 @@ jobs:
           assert len(data['unapprovedQuestions'])==31
           print(json.dumps(data,ensure_ascii=False,indent=2))
           PY
+      - name: Preserve 31 excluded question IDs and reasons for subsequent review
+        run: cp police-exams/output/promotion-report.json police-exams/review-backlog.json
       - name: Commit only approved original question bodies to development branch
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add police-exams/questions.approved.js
+          git add police-exams/questions.approved.js police-exams/review-backlog.json
           if ! git diff --cached --quiet; then
             git commit -m "data: include 80 additional strict PDF-text-matched 108-114 official police originals"
             git push origin HEAD:feat/police-past-papers-108-115-originals
