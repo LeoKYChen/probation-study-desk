@@ -109,6 +109,7 @@
       '<p class="ai-simple-mode-help">答題方向模式優先使用上方四格草稿；不評字數、不給百分制分數。</p>'+ 
       '<button class="btn primary" id="ai-simple-copy" type="button">一鍵複製AI批改</button>'+
       '<button class="btn" id="ai-simple-dual" type="button">送交雙 AI 交叉審查</button>'+
+      '<button class="btn" id="ai-simple-export-dual" type="button">複製題目與答案供雙 AI 匯入（手機備援）</button>'+
       '<label for="ai-simple-feedback"><strong>AI批改結果</strong>（請直接貼上ChatGPT的完整評語）</label>'+
       '<textarea id="ai-simple-feedback" rows="8" placeholder="在ChatGPT取得批改結果後，貼在這裡，系統會保存到本題學習紀錄。"></textarea>'+
       '<p id="ai-simple-status" role="status" aria-live="polite"></p>';
@@ -116,7 +117,7 @@
     var style = DOC.createElement('style');
     style.textContent = '#ai-simple-review{margin:18px 0;padding:17px;border:1px solid #b9e1de;background:#f2faf9;border-radius:12px}'+
       '#ai-simple-mode{display:block;width:100%;min-height:44px;margin:0 0 6px}#ai-simple-review .ai-simple-mode-help{font-size:.82rem;margin:0 0 12px;color:#496c70}'+
-      '#ai-simple-copy,#ai-simple-dual{width:100%;min-height:48px;margin-bottom:10px;white-space:normal}#ai-simple-dual{margin-bottom:15px}#ai-simple-review label{display:block;font-size:.88rem;margin-bottom:7px}'+
+      '#ai-simple-copy,#ai-simple-dual,#ai-simple-export-dual{width:100%;min-height:48px;margin-bottom:10px;white-space:normal}#ai-simple-export-dual{margin-bottom:15px}#ai-simple-review label{display:block;font-size:.88rem;margin-bottom:7px}'+
       '#ai-simple-feedback{min-height:160px;width:100%;line-height:1.75;white-space:pre-wrap}'+
       '#ai-simple-status{font-size:.78rem;color:#106b65;min-height:20px;margin:7px 0 0}'+
       '#ai-simple-status[data-error="true"]{color:#b5443c}';
@@ -124,6 +125,7 @@
     var modeSelector = DOC.getElementById('ai-simple-mode');
     var copy = DOC.getElementById('ai-simple-copy');
     var dual = DOC.getElementById('ai-simple-dual');
+    var exportDual = DOC.getElementById('ai-simple-export-dual');
     var feedback = DOC.getElementById('ai-simple-feedback');
     var status = DOC.getElementById('ai-simple-status');
     root.AIPromptCustom?.mount({button:copy,modeElement:modeSelector,getMode:function(){return modeSelector.value;},getSubject:function(){return practice.getQuestion()?.subject||'';}});
@@ -139,6 +141,7 @@
       feedback.disabled = !nextId;
       copy.disabled = !nextId;
       dual.disabled = !nextId;
+      exportDual.disabled = !nextId;
       notice(text?'已載入本題AI批改結果':'',false);
     }
     feedback.addEventListener('input',function(){
@@ -186,6 +189,30 @@
         if(ok) notice('已用相容方式複製批改指令。',false);
         else { root.prompt('請手動複製以下完整批改指令：',prompt);notice('請在跳出的視窗手動複製批改指令。',true); }
       }
+    });
+    exportDual.addEventListener('click',async function(){
+      try{
+        var q=practice.getQuestion(),mode=modeSelector.value==='direction'?'direction':'full';
+        if(!q)throw Error('請先選擇考古題');
+        var content=mode==='direction'?reviewContentFromRecord({issue:answer.value,essayDrafts:{
+          issues:DOC.getElementById('draftIssue')?.value||'',basis:DOC.getElementById('draftBasis')?.value||'',
+          analysis:DOC.getElementById('draftAnalysis')?.value||'',conclusion:DOC.getElementById('draftConclusion')?.value||''
+        }},mode):answer.value;
+        practice.flush();
+        if(reviewContentFromRecord(practice.getState(q.id),mode)!==content)throw Error('作答或草稿未能儲存，請先備份');
+        var payload=buildDualReviewPayload(q,content,mode,root.AIPromptCustom);
+        var serialized=JSON.stringify({format:'psd-dual-ai-import-v1',payload:payload});
+        try{
+          if(!root.navigator?.clipboard?.writeText)throw Error('clipboard unavailable');
+          await root.navigator.clipboard.writeText(serialized);
+          notice('已複製本題及答案。請到雙 AI 工作臺展開「題目未自動帶入？手動匯入」，貼上並按匯入。',false);
+        }catch(_){
+          var box=DOC.getElementById('ai-simple-handoff-text');
+          if(!box){box=DOC.createElement('textarea');box.id='ai-simple-handoff-text';box.readOnly=true;box.rows=5;box.style.width='100%';box.style.marginBottom='12px';status.after(box);}
+          box.value=serialized;box.focus();box.select();
+          notice('瀏覽器無法自動複製。請長按下方文字選取全部並複製，再到雙 AI 工作臺手動匯入。',true);
+        }
+      }catch(e){notice(e.message||'無法匯出交接資料',true);}
     });
     dual.addEventListener('click',function(){
       var q=practice.getQuestion(),mode=modeSelector.value==='direction'?'direction':'full';
