@@ -57,6 +57,32 @@ const fs=require('node:fs/promises'),http=require('node:http'),path=require('nod
   assert.deepEqual(layout.map(x=>x.text),['開始任務','稍後處理']);
   assert.equal(layout[0].width,layout[1].width);assert.equal(layout[0].height,layout[1].height);assert.equal(layout[0].top,layout[1].top);assert.equal(layout[0].bottom,layout[1].bottom);
   assert(layout.every(x=>x.nowrap==='nowrap'&&!x.overflow),'task buttons stay on one line at '+width);
+  const mobile=await p.evaluate(()=>{
+    const rect=selector=>{const r=document.querySelector(selector).getBoundingClientRect();return {left:r.left,right:r.right,width:r.width,height:r.height};};
+    const rows=[...document.querySelectorAll('.subject-row>.check')];
+    const spans=[...document.querySelectorAll('#import-legacy span')];
+    return {
+      lecture:rect('#refresh-lectures'),save:rect('#save-preferences'),backup:rect('.backup-actions'),
+      rows:rows.map(el=>({text:el.textContent,nowrap:getComputedStyle(el).whiteSpace,overflow:el.scrollWidth>el.clientWidth})),
+      importParts:spans.map(el=>({text:el.textContent,overflow:el.scrollWidth>el.clientWidth})),
+      shortcutLinks:[...document.querySelectorAll('.study-shortcuts a')].map(el=>({href:el.getAttribute('href'),visible:el.getBoundingClientRect().width>0})),
+      overflow:document.documentElement.scrollWidth>innerWidth
+    };
+  });
+  assert.equal(mobile.overflow,false,'page must not horizontally overflow at '+width);
+  assert(Math.abs(mobile.lecture.width-mobile.backup.width)<2,'lecture button matches backup row width at '+width);
+  assert(Math.abs(mobile.lecture.left-mobile.backup.left)<2,'lecture button aligns with backup row at '+width);
+  assert(Math.abs(mobile.save.right-mobile.backup.right)<2,'subject save button right-aligns with backup row at '+width);
+  assert(Math.abs(mobile.save.left-mobile.backup.left)<2,'subject save button left-aligns with backup row at '+width);
+  assert.deepEqual(mobile.shortcutLinks.map(x=>x.href),['../v2.5/','../daily-simulation/']);
+  assert(mobile.shortcutLinks.every(x=>x.visible),'exam and daily shortcuts remain visible at '+width);
+  assert.deepEqual(mobile.importParts.map(x=>x.text),['預覽並匯入','舊紀錄']);
+  assert(mobile.importParts.every(x=>!x.overflow),'import label does not split characters at '+width);
+  if(width<=600){
+    assert(mobile.rows.every(x=>x.nowrap==='nowrap'&&!x.overflow),'subject names never wrap or overflow at '+width);
+    assert(mobile.lecture.height>=88,'lecture button matches backup tile height at '+width);
+  }
+
  }
  assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);assert.deepEqual(external,[],'no external requests even with stale cloud configuration');assert.deepEqual(errors,[]);
  console.log('PASS local-only browser: no account/cloud requests; answer → feedback → correction; offline reload; no sync queue; JSON manual transfer; Markdown history; lecture-topic mapping/completion/portable snapshot; custom intervals/time budget; legacy notebook conversion/idempotency; 426 questions; mobile width.');
