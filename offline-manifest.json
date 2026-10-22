@@ -233,6 +233,9 @@
       "url": "dongdong-time/style.css"
     },
     {
+      "url": "dual-ai-bridge.js"
+    },
+    {
       "url": "file-compat.js"
     },
     {
@@ -297,6 +300,9 @@
     },
     {
       "url": "police-exams/catalog.json"
+    },
+    {
+      "url": "police-exams/index.html"
     },
     {
       "url": "police-exams/questions.approved.js"
