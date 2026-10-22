@@ -20,6 +20,7 @@ ROOT_FILES = {
     "offline.css",
     "offline.js",
     "file-compat.js",
+    "ai-prompt-customizer.js",
     "offline-manifest.json",
     "manifest.webmanifest",
     "shared-ui.css",
@@ -75,6 +76,7 @@ REQUIRED = (
     "juvenile-news/issues.json",
     "sw.js",
     "offline-manifest.json",
+    "ai-prompt-customizer.js",
 )
 
 def allowed(path: str) -> bool:
