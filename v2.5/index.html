@@ -1543,8 +1543,8 @@ const requested=new URLSearchParams(location.search); const picked=requested.get
 if(picked)window.Practice25.select(picked);
 if(requested.has('review')){const fold=[...document.querySelectorAll('details')].find(n=>n.querySelector('summary')?.textContent==='補強清單');if(fold){fold.open=true;fold.scrollIntoView();}}
 </script><script src="backup-io-direct.js"></script><script src="print-study.js"></script><script src="clear-records.js"></script><script>document.addEventListener("click",function(event){const a=event.target.closest("a");if(!a)return;const href=a.getAttribute("href")||"";if(href.startsWith("reference-notes/"))a.href="https://leokychen.github.io/probation-study-desk/v2.5/"+href;});</script><script src="../ai-prompt-customizer.js"></script>
-<script src="../dual-ai-bridge.js?v=20261022-3"></script>
-<script src="ai-simple-review-v254.js?v=20261022-3"></script></body>
+<script src="../dual-ai-bridge.js"></script>
+<script src="ai-simple-review-v254.js"></script></body>
 </html>
 
 
