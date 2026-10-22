@@ -128,12 +128,12 @@ def unnumbered_pdf_question_paragraphs(text: str) -> list[str]:
     """Fallback for old MOEX fonts where displayed 一、二、 are absent from PDF text.
     Never synthesize a heading: each candidate is marked for manual PDF visual review.
     """
-    blocks = re.split(r"\\n[ \\t]*\\n", text)
+    blocks = re.split(r"\n[ \t]*\n", text)
     notice = next((i for i, b in enumerate(blocks) if "※注意" in b and "不必抄題" in b), None)
     if notice is None:
         return []
     chunks = []
-    tail = re.compile(r"（\\s*25\\s*分\\s*）")
+    tail = re.compile(r"（\s*25\s*分\s*）")
     for block in blocks[notice + 1:]:
         endings = list(tail.finditer(block))
         if not endings:
@@ -150,8 +150,8 @@ def unnumbered_pdf_question_paragraphs(text: str) -> list[str]:
                 # Unparsed tail is a material ambiguity and must not be silently discarded.
                 portions.append(block[start:])
         for portion in portions:
-            portion = re.sub(r"(?m)^\\s*(?:代號|頁次)[:：][^\\n]*", "", portion)
-            portion = portion.replace("\\f", "").strip()
+            portion = re.sub(r"(?m)^\s*(?:代號|頁次)[:：][^\n]*", "", portion)
+            portion = portion.replace("\f", "").strip()
             if portion and ("25 分" in portion or "共25 分" in portion):
                 chunks.append(portion)
     return chunks
