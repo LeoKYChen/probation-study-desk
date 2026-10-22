@@ -7,3 +7,28 @@
 .desk-tabs>a{display:flex;align-items:center;justify-content:center;min-width:0;min-height:56px;margin:0;padding:10px 6px;border:1px solid var(--line);border-radius:7px;background:#edf2f5;color:var(--blue);text-align:center;text-decoration:none;line-height:1.35;white-space:nowrap}
 .desk-tabs>a:hover{background:#e1ebf1;border-color:var(--blue)}
 @media(max-width:600px){.desk-tabs{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.desk-tabs>a{min-height:60px;font-size:clamp(13px,3.8vw,16px)}}
+
+/* Mobile settings: stable touch targets and two-row subject entries. */
+.study-shortcuts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px;padding:0;border:0}
+.study-shortcuts>a{display:flex;justify-content:center;align-items:center;gap:5px;min-width:0;min-height:52px;padding:10px 6px;border:1px solid #9fb8c6;border-radius:9px;background:#fffefb;text-decoration:none;text-align:center;font-size:clamp(13px,3.5vw,16px);font-weight:650;line-height:1.4;white-space:nowrap}
+#refresh-lectures{display:block;width:100%;min-height:88px;margin:12px 0 22px;padding:12px 14px;text-align:center}
+#save-preferences{display:block;width:100%;min-height:60px;margin:18px 0 0;text-align:center}
+.subject-row>.check{min-width:0}
+.subject-row>.check input{flex:0 0 20px}
+.subject-row>.subject-scope{min-width:0}
+.subject-row>.weight{min-width:0}
+.backup-actions>button{min-width:0;overflow-wrap:normal;word-break:keep-all;line-height:1.45;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:10px 8px}
+.backup-actions>button span{display:block;white-space:nowrap}
+@media(max-width:600px){
+ .subject-row{grid-template-columns:minmax(0,1fr) 82px;column-gap:12px;row-gap:0;padding:12px 0;align-items:center}
+ .subject-row>.check{grid-column:1/-1;display:flex;align-items:center;gap:9px;margin:0 0 4px;font-size:clamp(12px,3.5vw,15px);white-space:nowrap;letter-spacing:-.15px}
+ .subject-row>.subject-scope{grid-column:1;font-size:13px;white-space:nowrap}
+ .subject-row>.weight{grid-column:2;grid-row:2;width:100%;height:44px}
+ .backup-actions{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .backup-actions>button{height:88px;font-size:clamp(13px,3.5vw,16px)}
+}
+@media(max-width:350px){
+ .subject-row{grid-template-columns:minmax(0,1fr) 70px;column-gap:8px}
+ .subject-row>.check{font-size:12px;letter-spacing:-.3px}
+ .study-shortcuts>a{font-size:12px}
+}
