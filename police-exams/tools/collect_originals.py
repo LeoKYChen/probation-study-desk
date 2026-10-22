@@ -133,7 +133,7 @@ def unnumbered_pdf_question_paragraphs(text: str) -> list[str]:
     if notice is None:
         return []
     chunks = []
-    tail = re.compile(r"（\s*25\s*分\s*）")
+    tail = re.compile(r"（\s*(?:每小題\s*\d+\s*分\s*[，,]\s*共\s*)?25\s*分\s*）")
     for block in blocks[notice + 1:]:
         endings = list(tail.finditer(block))
         if not endings:
