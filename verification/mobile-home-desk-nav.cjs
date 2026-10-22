@@ -29,7 +29,7 @@ const server=http.createServer((req,res)=>{
       assert.equal(await page.locator('#workspace-sidebar').isVisible(),false,'drawer starts closed '+width);
       await toggle.click();
       assert.equal(await toggle.getAttribute('aria-expanded'),'true');
-      assert(await page.locator('#workspace-sidebar').isVisible(),'drawer opens '+width);
+      await page.locator('#workspace-sidebar').waitFor({state:'visible'});assert(await page.locator('#workspace-sidebar').isVisible(),'drawer opens '+width);
       assert.equal(await page.locator('#workspace-sidebar').evaluate(el=>el.inert),false);
       await page.locator('#mobile-nav-close').click();
       await page.locator('#workspace-sidebar').waitFor({state:'hidden'});assert.equal(await page.locator('#workspace-sidebar').isVisible(),false,'close control closes '+width);
