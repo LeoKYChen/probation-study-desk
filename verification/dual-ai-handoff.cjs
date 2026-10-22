@@ -43,5 +43,18 @@ const event=(kind,nonce=token,origin='https://leokychen.github.io',source=popup,
  assert.ok(desk.includes('id="open-dual-ai"')&&desk.includes('../dual-ai-bridge.js'));
  assert.ok(read('daily-simulation/app.js').includes('target.answer!==savedAnswer'));
  assert.ok(read('study-desk/app.js').includes('r.id===revisionId&&r.text===sourceText'));
+ // Concurrent messages must never create duplicate feedback entries.
+ let finishSave,writeCount=0;
+ const delayed=new Promise(resolve=>{finishSave=resolve;});
+ assert.equal(win.PSDDualAI.start({payload:{title:'第二題',instruction:'檢查',documentText:'第二份答案'},onResult:async()=>{writeCount++;await delayed;}}),true);
+ await listeners.message(event('ready'));
+ await listeners.message(event('created'));
+ const firstWrite=listeners.message(event('return',token,undefined,undefined,'評語一'));
+ await listeners.message(event('return',token,undefined,undefined,'評語一'));
+ assert.equal(writeCount,1,'ignore concurrent duplicate return messages');
+ finishSave();
+ await firstWrite;
+ await listeners.message(event('return',token,undefined,undefined,'評語一'));
+ assert.equal(writeCount,1,'ignore repeated return after acknowledgement');
  console.log('PASS: origin, popup nonce, source identity, user confirmation, result binding, and both practice entries');
 })().catch(e=>{console.error(e);process.exitCode=1;});
