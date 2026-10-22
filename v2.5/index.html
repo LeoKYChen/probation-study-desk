@@ -671,6 +671,8 @@
   </dialog>
   <script src="questions.js"></script>
   <script src="related-questions.js"></script>
+  <script src="../police-exams/questions.approved.js"></script>
+  <script src="../police-exams/approved-loader.js"></script>
   <script src="rubrics.js"></script>
   <script src="legal-pilots.js"></script>
   <script src="full-pilots.js"></script>
@@ -688,7 +690,7 @@
     const subjects = [
       '少年事件處理法', '刑法', '刑法與少年事件處理法',
       '刑事訴訟法與保安處分執行法', '犯罪學', '犯罪學與再犯預測',
-      '犯罪學概要', '心理學', '心理測驗', '諮商與輔導', '諮商與矯正輔導'
+      '犯罪學概要', '犯罪學與犯罪預防', '心理學', '心理測驗', '諮商與輔導', '諮商與矯正輔導', '刑法與刑事訴訟法'
     ];
 
     const sharedExamTypes = {
@@ -708,8 +710,8 @@
           : [question.examType || '觀護人']
       )
     }));
-    const questionBank = [...baseQuestions, ...(window.RELATED_QUESTION_BANK || [])];
-    const examTypes = ['全部類科','觀護人','監獄官','監所管理員','薦任升等（矯正）','家事調查官','心理測驗員','心理輔導員'];
+    const questionBank = [...baseQuestions, ...(window.RELATED_QUESTION_BANK || []), ...(window.POLICE_ORIGINAL_QUESTION_BANK || [])];
+    const examTypes = ['全部類科','觀護人','監獄官','監所管理員','薦任升等（矯正）','家事調查官','心理測驗員','心理輔導員','一般警察人員考試三等犯罪防治人員預防組','警察人員考試三等犯罪防治人員預防組'];
 
     const scoreDefs = [
       ['issue', '爭點掌握', '題目要求、行為人與子爭點', 30],
