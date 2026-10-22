@@ -69,6 +69,11 @@ async function check(){
  assert.equal(await page.locator('#draftAnalysis').inputValue(),'涵攝草稿：警方之詢問程序');
  assert.equal(await page.locator('#draftConclusion').inputValue(),'結論草稿：須分別檢驗');
  assert.match(await page.locator('#timerStatus').textContent(),/倒數進行中/,'timer must persist after reload');
+ await page.locator('.ai-custom-editor summary').click();
+ await page.locator('.ai-custom-editor select').selectOption('');
+ await page.locator('.ai-custom-editor textarea').fill('請優先分析題目設問，指出答題邏輯不一致處。');
+ await page.locator('.ai-custom-editor button').filter({hasText:'儲存此組合'}).click();
+ assert.match(await page.locator('.ai-custom-editor [role="status"]').textContent(),/已儲存/);
  await page.locator('#copyAI').click();
  await page.waitForFunction(()=>document.querySelector('#copyStatus').textContent.trim().length>0);
  if(!IS_WEBKIT){
@@ -79,6 +84,7 @@ async function check(){
    assert.ok(!clipboard.includes('【原題】'));
    assert.ok(clipboard.includes('純學科題採整題評分'));
    assert.ok(clipboard.includes('按題目設問分別評分'));
+   assert.ok(clipboard.includes('請優先分析題目設問，指出答題邏輯不一致處。'));
  }
  await page.locator('#aiReviewMode').selectOption('direction');
  await page.locator('#copyAI').click();
@@ -98,6 +104,7 @@ async function check(){
  assert.equal(await oldPage.locator('#answer').inputValue(),'新練習答案：爭點、涵攝、結論。');
  assert.equal(await oldPage.locator('#draftIssue').inputValue(),'爭點草稿：甲之程序保障');
  assert.equal(await oldPage.locator('#aiFeedback').inputValue(),'AI評語：法條論述得當，但應補上學理。');
+ assert.ok(await oldPage.locator('.ai-custom-editor').count(),'editor should be shared across daily pages');
  await oldPage.locator('#answer').fill('由原每日題瀏覽頁更新的答案');
  await oldPage.locator('#draftBasis').fill('法律草稿：少年事件處理法');
  await oldPage.locator('#draftAnalysis').fill('涵攝草稿：警方之詢問程序');
@@ -114,6 +121,7 @@ async function check(){
    const promptText=await oldPage.evaluate(()=>navigator.clipboard.readText());
    assert.ok(promptText.includes('由原每日題瀏覽頁更新的答案')&&promptText.includes('【本次每日模擬題】'));
    assert.ok(promptText.includes('法律／實務依據無法查證時標示待確認'));
+   assert.ok(promptText.includes('請優先分析題目設問，指出答題邏輯不一致處。'),'settings persist across same-origin daily modules');
  }
  await oldPage.locator('#aiReviewMode').selectOption('direction');
  await oldPage.locator('#copyAI').click();
