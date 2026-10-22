@@ -145,4 +145,28 @@ assert.equal(inlineFns.promptFor(law,'方向草稿','direction'),promptFor(law,'
 assert.ok(browserHtml.includes('id="aiReviewMode"'),'daily browser review mode selector missing');
 assert.equal(inlineFns.simulationQuestion(adapted),simulationQuestion(adapted),'both pages must display the same adapted essay prompt');
 
+
+// Exam-question dual AI handoff uses the original 426-question records, not daily practice.
+new vm.Script(read('v2.5/ai-simple-review-v254.js'),{filename:'v2.5/ai-simple-review-v254.js'});
+const examHtml=read('v2.5/index.html');
+assert.ok(examHtml.includes('<script src="../dual-ai-bridge.js"></script>'),'exam page must load dual AI bridge');
+assert.ok(examHtml.indexOf('dual-ai-bridge.js')<examHtml.lastIndexOf('ai-simple-review-v254.js'),'bridge must load before review UI');
+assert.ok(read('v2.5/ai-simple-review-v254.js').includes('id="ai-simple-dual"'),'exam review button must be present');
+assert.ok(read('offline-manifest.json').includes('"url": "dual-ai-bridge.js"'),'offline snapshot must include shared bridge');
+assert.ok(read('sw.js').includes("'dual-ai-bridge.js'"),'network-first bridge must not remain stale');
+const exam={id:'114-test',body:'少年甲之程序保障為何？',subject:'少年事件處理法',year:114,questionNo:2,title:'少年程序保障',examTypes:['觀護人'],points:['程序保障'],direction:['確認程序']};
+const draft={issue:'原答案',essayDrafts:{issues:'確認事件類型',basis:'法律依據',analysis:'涵攝',conclusion:'結論'}};
+const direction=A.reviewContentFromRecord(draft,'direction');
+assert.ok(direction.includes('一、題目爭點\\n確認事件類型')&&direction.includes('四、結論\\n結論'));
+assert.equal(A.reviewContentFromRecord(draft,'full'),'原答案');
+const payload=A.buildDualReviewPayload(exam,'作答內容','full',C);
+assert.ok(payload.title.includes('114年')&&payload.title.includes('第2題'));
+assert.ok(payload.documentText.includes('【原題】')&&payload.documentText.includes(exam.body)&&payload.documentText.includes('作答內容'));
+assert.ok(payload.instruction.includes('兩位 AI')&&payload.instruction.includes('互相指出'));
+assert.ok(A.buildDualReviewPayload(exam,direction,'direction',C).instruction.includes('不給百分制分數'));
+assert.throws(()=>A.buildDualReviewPayload(exam,'x'.repeat(51000),'full',C),/長度限制/);
+assert.equal(A.appendDualFeedback('原有評語','新雙 AI 評語').includes('原有評語\\n\\n---\\n\\n【雙 AI'),true);
+assert.throws(()=>A.appendDualFeedback('原有評語',''),/空白/);
+assert.throws(()=>A.appendDualFeedback('x'.repeat(79990),'新評語'),/80,000/);
+
 console.log('Daily v2.5.4 regression checks passed ('+d.count+' questions).');
