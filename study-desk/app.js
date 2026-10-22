@@ -193,6 +193,36 @@ async function setup() {
  wrap('save-recall',()=>edit(()=>{const content=$('recall').value.trim();if(!current.correctedAt||!content)throw Error('請完成訂正後，再寫下獨立回想');const rating=$('rating').value;current.recalls.push({id:uid(),at:now(),text:content,rating,intervalDays:intervals(preferences.reviewIntervals)[rating]});current.due=nextReview(rating,new Date(),preferences.reviewIntervals);$('recall').value='';}));
  wrap('export-note',async()=>{await flush();if(!current)throw Error('請先選題');download(today()+'_備考筆記.md',markdown(current),'text/markdown;charset=utf-8');});
  wrap('copy-prompt',async()=>{await flush();if(!current?.answer.trim())throw Error('請先作答');const prompt=globalThis.AIPromptCustom.enhance('請以繁體中文批改下列'+(current.mode==='short'?'短練習，不評完整申論分數':'申論')+'。先辨識題意，再指出一項具體缺口，提示我自行訂正。不得杜撰法條或考古題來源。\n科目：'+current.subject+'\n題源：'+current.question.sourceLabel+'\n題目：'+current.question.body+'\n我的答案：'+current.answer,{subject:current.subject,mode:current.mode==='short'?'direction':'full'});await navigator.clipboard.writeText(prompt);report('已複製題目、作答與批改提示詞。');});
+ wrap('open-dual-ai',()=>{
+    if(!currentId||!current)throw Error('請先開始一道練習題');
+    const answer=$('answer').value;
+    if(!answer.trim())throw Error('請先作答，再送交雙 AI 審查');
+    const revision=[...current.revisions].reverse().find(r=>r.text===answer);
+    if(!revision)throw Error('請先按「保存作答版本」，確保雙 AI 評語能對應不變的答案版本');
+    const id=currentId,revisionId=revision.id,sourceText=answer;
+    const instruction=globalThis.AIPromptCustom.enhance(
+      '請擔任臺灣司法特考三等觀護人申論題批改助教。依實際題意及科目檢查爭點、規範／學理、涵攝、結構；先辨識題源有無查證，再以具體理由提出缺漏、誤解及引導訂正的問題。短練習只評答題方向，不給完整申論分數。法條、裁判、研究與國考題次不能杜撰，未驗證須註明。',
+      {subject:current.subject,mode:current.mode==='short'?'direction':'full'});
+    const documentText=['【科目】'+current.subject,'【題源（僅沿用原紀錄，並非已查證）】'+current.question.sourceLabel,'【題目】'+current.question.body,'【本次已保存的作答版本】'+revisionId,'【我的答案】'+answer].join('\n\n');
+    globalThis.PSDDualAI.start({payload:{title:'觀護人申論｜'+current.question.title,instruction,documentText},onResult:async review=>{
+      await flush();
+      await store.update(state=>{
+        assertLearningEpoch(state,currentEpoch);
+        const record=state.records[id];
+        if(!record||record.deleted||record.value?.kind!=='attempt'||!record.value.revisions.some(r=>r.id===revisionId&&r.text===sourceText))throw Error('原始作答版本不存在或已變更，為避免錯配未自動寫入');
+        const value=clone(record.value);
+        value.feedback.push({id:uid(),source:'雙 AI 協作工作臺（交叉審查）',date:today(),revision:revisionId,text:review,unverified:true});
+        value.updatedAt=now();
+        engine.queue(state,id,value);
+      });
+      if(currentId===id){
+        const updated=(await store.read()).records[id].value;
+        current=clone(updated);baseline=clone(updated);paintAttempt();
+      }
+      await refresh();
+      report('雙 AI 意見已附加至原本的作答版本，標示為待查證，舊紀錄保留。');
+    }});
+  });
  wrap('export-backup',exportBackup);
  $('choose-backup').addEventListener('click',()=>$('import-backup').click());
  $('clear-learning').addEventListener('click',()=>{$('clear-confirm-text').value='';$('clear-confirm').disabled=true;$('clear-dialog').showModal();});
