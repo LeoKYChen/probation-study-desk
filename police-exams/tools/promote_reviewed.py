@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Explicit human review receipts -> approved browser bank. No implicit approval."""
+"""Explicit source review receipts -> approved browser bank. No implicit approval."""
 import argparse
 import hashlib
 import json
@@ -21,7 +21,7 @@ def approve(candidate_path, receipt_path, destination):
             raise ValueError("Unknown question: "+qid)
         q=candidates[qid]
         if proof.get("reviewedAgainstOfficialPdf") is not True or not proof.get("reviewer") or not proof.get("checkedAt"):
-            raise ValueError("Manual PDF comparison evidence missing for "+qid)
+            raise ValueError("Explicit PDF source comparison evidence missing for "+qid)
         if proof.get("pdfSha256")!=q["paperSha256"] or proof.get("textSha256")!=q["textSha256"]:
             raise ValueError("Source changed after approval: "+qid)
         if sha256(q["body"].encode("utf-8"))!=q["textSha256"]:
@@ -31,13 +31,14 @@ def approve(candidate_path, receipt_path, destination):
         if q["sourceKind"]!="candidate-original-unreviewed" or q["verified"] is not False:
             raise ValueError("Unexpected candidate verification state")
         approved={**q,"sourceKind":"official-original","verified":True,
-                 "humanReview":{"reviewer":proof["reviewer"],"checkedAt":proof["checkedAt"],
-                               "basis":"逐字核對考選部官方PDF"}}
-        approved["guidanceNote"]="原題依考選部PDF人工核對；本站解析及AI批改均非考選部標準答案。"
+                 "sourceReview":{"reviewer":proof["reviewer"],"checkedAt":proof["checkedAt"],
+                               "reviewMethod":proof.get("reviewMethod","官方PDF文字與版面比對"),
+                               "basis":"核對考選部官方PDF；如為AI核對須明示非真人複核"}}
+        approved["guidanceNote"]="原題依考選部PDF文字層與視覺版面核對，核對者與方法另記錄；本站解析及AI批改均非考選部標準答案。"
         selected.append(approved)
     selected.sort(key=lambda q:(q["year"],q["officialSubject"],q["questionNo"]))
     # JS JSON serialization preserves the text, including original line breaks.
-    body=("/* Only manual-PDF-verified official past paper questions. */\n"
+    body=("/* Only individually PDF-source-reviewed official past paper questions. */\n"
           "window.POLICE_ORIGINAL_QUESTION_BANK = "+json.dumps(selected,ensure_ascii=False,indent=2)+";\n")
     Path(destination).parent.mkdir(parents=True, exist_ok=True)
     Path(destination).write_text(body,encoding="utf-8")
