@@ -46,6 +46,13 @@ class OfficialPaperTests(unittest.TestCase):
         self.assertEqual(questions[1]["body"],"二、請比較理論A、理論B，並舉例說明。（25 分）")
         self.assertEqual(questions[1]["sourceKind"],"candidate-original-unreviewed")
         self.assertFalse(questions[1]["verified"])
+    def test_general_police_header_never_matches_police(self):
+        police=next(x for x in CATALOG["subjects"] if x["key"]=="criminology_prevention")
+        fake=("115年公務人員考試試題\\n考 試 別：一般警察人員考試\\n"
+              "等 別：三等考試\\n類科組別：犯罪防治人員預防組\\n"
+              "科 目：犯罪學與犯罪預防\\n" + "考題內容"*100)
+        self.assertIn("警察考試別未核對",validate_header(fake,115,police))
+
     def test_short_or_wrong_year_not_passed(self):
         sp=next(x for x in CATALOG["subjects"] if x["key"]=="counseling")
         self.assertTrue(validate_header("110年考試/一般警察人員/犯罪防治人員預防組/諮商與輔導",115,sp))
