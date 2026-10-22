@@ -90,6 +90,14 @@
     "114:criminal_law_procedure": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114060&q=1&s=0604&t=Q",
     "114:psychology": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114060&q=1&s=0809&t=Q",
     "114:counseling": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114060&q=1&s=0810&t=Q",
-    "114:criminology_prevention": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=505&code=114060&q=1&s=1202&t=Q"
+    "114:criminology_prevention": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=505&code=114060&q=1&s=1202&t=Q",
+    "113:criminal_law_procedure": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=303&code=113060&q=1&s=0604&t=Q",
+    "113:counseling": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=303&code=113060&q=1&s=0804&t=Q",
+    "113:psychology": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=303&code=113060&q=1&s=0806&t=Q",
+    "113:criminology_prevention": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=505&code=113060&q=1&s=1110&t=Q",
+    "112:criminal_law_procedure": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112070&q=1&s=0901&t=Q",
+    "112:counseling": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112070&q=1&s=1009&t=Q",
+    "112:psychology": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112070&q=1&s=1011&t=Q",
+    "112:criminology_prevention": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=505&code=112070&q=1&s=1410&t=Q"
   }
 }
