@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>108–115警察特考四科原題｜觀護人學習平臺</title><link rel="stylesheet" href="../assets/study-theme.css">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif;color:#253e50;background:#f3f6f7;line-height:1.65}
+header,main,footer{max-width:1020px;margin:auto;padding:16px clamp(16px,4vw,32px)}
+nav{display:flex;gap:15px;flex-wrap:wrap}a{color:#315b7c}h1{font-size:clamp(1.5rem,4vw,2.2rem);line-height:1.3}
+small,.muted{color:#60788a}.lead{max-width:850px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:18px 0}
+.card{background:#fff;border:1px solid #dce5e9;border-radius:14px;padding:16px;box-shadow:0 3px 14px #28495d09}
+.count{font-size:1.5rem;font-weight:750;display:block}label{font-weight:650}
+.filters{display:flex;flex-wrap:wrap;gap:12px;margin:15px 0}.filters label{display:flex;gap:8px;align-items:center}
+select{background:white;border:1px solid #ccd9e0;border-radius:9px;padding:10px;font:inherit;max-width:100%;min-height:44px}
+.table{overflow-x:auto;background:white;border:1px solid #dce5e9;border-radius:14px}
+table{border-collapse:collapse;width:100%;min-width:700px}th,td{padding:12px;text-align:left;border-bottom:1px solid #e7edef;vertical-align:top}
+th{background:#f0f5f7;font-size:.83rem}.state{font-size:.8rem;border-radius:8px;background:#eef2f5;padding:4px 9px;display:inline-block}
+.state.good{color:#165b48;background:#e1f2ea}.notice{background:white;border-left:4px solid #7395aa;padding:16px;margin:18px 0;border-radius:8px}
+button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #d1a54c;outline-offset:2px}
+</style></head><body>
+<header><nav aria-label="導覽"><a href="../">← 學習平臺</a><a href="../v2.5/">考古題練習臺</a><a href="../study-desk/">備考書桌</a></nav></header>
+<main><p class="muted">OFFICIAL PAST PAPERS · SOURCE AUDIT</p><h1>警察預防組｜108–115年四科原題</h1>
+<p class="lead">完全遵循原有學習平臺：<strong>考選部原題逐字收錄</strong>，保留試題年度、正式考試名稱、科目、題號、配分及官方原卷。只有逐題核對完成的原題才會顯示在原本的 v2.5 練習臺；AI 改編題一律不計入。</p>
+<div class="grid" role="group" aria-label="題庫核對概況">
+<div class="card"><span class="muted">目標年度</span><span class="count">108–115</span><small>8個年度</small></div>
+<div class="card"><span class="muted">指定科目</span><span class="count">4</span><small>跨2種考試別</small></div>
+<div class="card"><span class="muted">年度 × 科目</span><span class="count">32</span><small>待逐卷查核，不代表32份已取得</small></div>
+<div class="card"><span class="muted">已核對原題</span><span class="count" id="approved-count">0</span><small>僅計實際核准上線題目</small></div>
+</div>
+<div class="notice">刷題王、阿摩、四格草稿、完整申論、AI 批改及作答保存等功能，沿用 <a href="../v2.5/">現有考古題練習臺</a>。刷題王與阿摩未核實逐題直達網址時，僅提供搜尋而不虛構連結。</div>
+<div class="filters"><label>年度 <select id="year-filter"><option value="">全部年度</option></select></label><label>科目 <select id="subject-filter"><option value="">全部四科</option></select></label></div>
+<div class="table"><table><thead><tr><th>年度</th><th>考試別</th><th>官方科目</th><th>已核對原題</th><th>官方來源</th></tr></thead><tbody id="items"></tbody></table></div>
+<p class="muted">注意：有官方來源連結不等於已逐字收錄。「尚未定位原卷」也不等於當年未設該科，須回考選部年度目錄確認。</p>
+</main><footer class="muted"><a href="https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx" target="_blank" rel="noopener noreferrer">考選部考畢試題查詢平臺</a> · 本頁不傳送使用者作答或學習紀錄</footer>
+<script src="./questions.approved.js"></script><script src="./approved-loader.js"></script>
+<script>
+(async function(){
+const $=id=>document.getElementById(id);
+try{
+ const response=await fetch('./catalog.json',{cache:'no-store'});if(!response.ok)throw Error('無法讀取科目目錄');
+ const data=await response.json(),approved=window.PolicePastPaperIntegration?.approved||[];
+ $('approved-count').textContent=String(approved.length);
+ for(const y of data.years){const o=document.createElement('option');o.value=y.year;o.textContent=y.year+'年';$('year-filter').append(o)}
+ for(const s of data.subjects){const o=document.createElement('option');o.value=s.key;o.textContent=s.subject;$('subject-filter').append(o)}
+ function cell(row,value){const c=document.createElement('td');c.textContent=value;row.append(c);return c}
+ function render(){
+  $('items').replaceChildren();
+  for(const y of data.years)for(const s of data.subjects){
+   if($('year-filter').value&&Number($('year-filter').value)!==y.year)continue;
+   if($('subject-filter').value&&$('subject-filter').value!==s.key)continue;
+   const r=document.createElement('tr');cell(r,y.year+'年');cell(r,s.examName+'三等犯罪防治人員預防組');cell(r,s.subject);
+   const count=approved.filter(q=>q.year===y.year&&q.officialSubject===s.subject&&q.examName===s.examName).length;
+   const stat=document.createElement('td'),b=document.createElement('span');b.className='state'+(count?' good':'');b.textContent=count?('已核對 '+count+' 題'):'尚未逐題核對';stat.append(b);r.append(stat);
+   const t=document.createElement('td'),a=document.createElement('a');
+   const direct=data.knownPaperUrls[y.year+':'+s.key];a.href=direct||y.catalogUrl;
+   a.target='_blank';a.rel='noopener noreferrer';a.textContent=direct?'考選部原卷 ↗':'官方年度目錄 ↗';t.append(a);r.append(t);$('items').append(r);
+  }
+ }
+ $('year-filter').addEventListener('change',render);$('subject-filter').addEventListener('change',render);render();
+}catch(e){$('items').textContent='來源索引讀取失敗，請重新整理或由考選部查詢：'+e.message;}
+})();
+</script></body></html>
