@@ -94,6 +94,7 @@
      const ctx=api.essayContext();
      return {ctx,id:ctx?.questionId||null,q:findQuestion(ctx?.questionId)};
    }
+   root.AIPromptCustom?.mount({button:copy,modeElement:$('daily30AiMode'),getMode:()=>$('daily30AiMode')?.value,getSubject:()=>{const x=current();return x.q?.subject||x.ctx?.subject||'';}});
    function refresh(){
      const {id,q}=current();
      if(id!==currentId){
@@ -124,7 +125,7 @@
      }).filter(Boolean).join('\n\n');
      const answer=mode==='direction'?(directionDraft||full||notes):(full||parts.join('\n\n')||notes);
      let content;
-     try{content=prompt(q,ctx,answer,mode);}catch(e){$('daily30AiStatus').textContent=e.message;return;}
+     try{content=prompt(q,ctx,answer,mode);if(root.AIPromptCustom)content=root.AIPromptCustom.enhance(content,{mode,subject:q?.subject||ctx?.subject||''});}catch(e){$('daily30AiStatus').textContent=e.message;return;}
      try{await navigator.clipboard.writeText(content);$('daily30AiStatus').textContent=mode==='direction'?'已複製題目及答題方向，請貼到ChatGPT診斷':'已複製完整題目及作答，請貼到ChatGPT批改';}
      catch{const temp=document.createElement('textarea');temp.value=content;temp.style.position='fixed';temp.style.left='-9999px';document.body.append(temp);temp.select();let ok=false;try{ok=document.execCommand('copy');}catch{}temp.remove();if(!ok)root.prompt('請複製下列AI批改指令',content);$('daily30AiStatus').textContent=ok?'已複製批改指令':'請從跳出視窗複製指令';}
    });

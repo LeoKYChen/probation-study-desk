@@ -197,7 +197,7 @@ async function copyAI(){
   const directionText=DRAFT_FIELDS.map(([,key,label])=>String(drafts[key]||'').trim()?label+'\n'+String(drafts[key]).trim():'').filter(Boolean).join('\n\n');
   const submitted=mode==='direction'?(directionText||$('answer').value):$('answer').value;
   let prompt;
-  try{prompt=promptFor(q,submitted,mode);}
+  try{prompt=promptFor(q,submitted,mode);if(window.AIPromptCustom)prompt=window.AIPromptCustom.enhance(prompt,{mode,subject:M.subject(q)});}
   catch(error){$('copyStatus').textContent=error.message;return;}
   try{
     if(!navigator.clipboard?.writeText)throw Error('clipboard unavailable');
@@ -217,6 +217,7 @@ async function copyAI(){
     }
   }
 }
+window.AIPromptCustom?.mount({button:$('copyAI'),modeElement:$('aiReviewMode'),getMode:()=>$('aiReviewMode')?.value,getSubject:()=>{const q=getQuestion();return q?M.subject(q):'';}});
 function download(data,name){
   const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json;charset=utf-8'});
   const url=URL.createObjectURL(blob),a=document.createElement('a');
