@@ -1,0 +1,141 @@
+{
+  "approvedTotal": 96,
+  "newlyApproved": 0,
+  "newByYear": {},
+  "rejected": {
+    "embedded image or glyph": 4,
+    "already approved": 96,
+    "PDF private-use glyph requires visual correction": 4,
+    "paper has audit warnings": 12,
+    "multi-page PDF": 8,
+    "not four numbered questions": 3
+  },
+  "currentlyUnapproved": 31,
+  "unapprovedQuestions": [
+    {
+      "id": "police-108-psychology-1",
+      "reason": "embedded image or glyph"
+    },
+    {
+      "id": "police-108-psychology-2",
+      "reason": "embedded image or glyph"
+    },
+    {
+      "id": "police-108-psychology-3",
+      "reason": "embedded image or glyph"
+    },
+    {
+      "id": "police-108-psychology-4",
+      "reason": "embedded image or glyph"
+    },
+    {
+      "id": "police-109-counseling-4",
+      "reason": "PDF private-use glyph requires visual correction"
+    },
+    {
+      "id": "police-110-criminal_law_procedure-1",
+      "reason": "multi-page PDF"
+    },
+    {
+      "id": "police-110-criminal_law_procedure-2",
+      "reason": "multi-page PDF"
+    },
+    {
+      "id": "police-110-criminal_law_procedure-3",
+      "reason": "multi-page PDF"
+    },
+    {
+      "id": "police-110-criminal_law_procedure-4",
+      "reason": "multi-page PDF"
+    },
+    {
+      "id": "police-110-psychology-1",
+      "reason": "paper has audit warnings"
+    },
+    {
+      "id": "police-110-psychology-2",
+      "reason": "paper has audit warnings"
+    },
+    {
+      "id": "police-110-psychology-3",
+      "reason": "paper has audit warnings"
+    },
+    {
+      "id": "police-110-psychology-4",
+      "reason": "paper has audit warnings"
+    },
+    {
+      "id": "police-111-psychology-2",
+      "reason": "PDF private-use glyph requires visual correction"
+    },
+    {
+      "id": "police-111-psychology-3",
+      "reason": "PDF private-use glyph requires visual correction"
+    },
+    {
+      "id": "police-111-psychology-4",
+      "reason": "PDF private-use glyph requires visual correction"
+    },
+    {
+      "id": "police-112-criminal_law_procedure-1",
+      "reason": "paper has audit warnings"
+    },
+    {
+      "id": "police-112-criminal_law_procedure-2",
+      "reason": "paper has audit warnings"
+    },
+    {
+      "id": "police-112-criminal_law_procedure-3",
+      "reason": "paper has audit warnings"
+    },
+    {
+      "id": "police-112-criminal_law_procedure-4",
+      "reason": "paper has audit warnings"
+    },
+    {
+      "id": "police-113-criminal_law_procedure-1",
+      "reason": "paper has audit warnings"
+    },
+    {
+      "id": "police-113-criminal_law_procedure-2",
+      "reason": "paper has audit warnings"
+    },
+    {
+      "id": "police-113-criminal_law_procedure-3",
+      "reason": "paper has audit warnings"
+    },
+    {
+      "id": "police-113-criminal_law_procedure-4",
+      "reason": "paper has audit warnings"
+    },
+    {
+      "id": "police-114-counseling-1",
+      "reason": "multi-page PDF"
+    },
+    {
+      "id": "police-114-counseling-2",
+      "reason": "multi-page PDF"
+    },
+    {
+      "id": "police-114-counseling-3",
+      "reason": "multi-page PDF"
+    },
+    {
+      "id": "police-114-counseling-4",
+      "reason": "multi-page PDF"
+    },
+    {
+      "id": "police-114-criminal_law_procedure-1",
+      "reason": "not four numbered questions"
+    },
+    {
+      "id": "police-114-criminal_law_procedure-2",
+      "reason": "not four numbered questions"
+    },
+    {
+      "id": "police-114-criminal_law_procedure-3",
+      "reason": "not four numbered questions"
+    }
+  ],
+  "approvalScope": "Single-page, exact-PDF-text, no embedded images, no missing numerals"
+}
