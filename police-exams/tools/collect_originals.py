@@ -114,9 +114,11 @@ def validate_header(text: str, year: int, spec: dict) -> list[str]:
         errors.append("等別未核對")
     if "犯罪防治人員" not in flat or "預防組" not in flat:
         errors.append("類科未核對")
-    if squish(spec["examName"]) not in flat:
+    # Compare the EXAM FIELD, not substring (「一般警察人員考試」contains 「警察人員考試」).
+    exam_match = re.search(r"考試別[:：](一般警察人員考試|警察人員考試)", flat[:500])
+    if not exam_match or exam_match.group(1) != spec["examName"]:
         errors.append("警察考試別未核對")
-    if spec["subject"] not in flat:
+    if "科目：" + spec["subject"] not in flat[:600] and "科目:" + spec["subject"] not in flat[:600]:
         errors.append("官方科目未核對")
     if len(text.strip()) < 150:
         errors.append("PDF文字過少，疑似影像試卷")
