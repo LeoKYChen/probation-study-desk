@@ -65,7 +65,15 @@
   function validBank(p) {
     if (!p || typeof p.getQuestions !== 'function') return false;
     var a = p.getQuestions();
-    return Array.isArray(a) && a.length === EXPECTED_COUNT && new Set(a.map(q=>q.id)).size === EXPECTED_COUNT;
+    var legacy = [...(root.QUESTION_BANK || []), ...(root.RELATED_QUESTION_BANK || [])];
+    var extension = root.PolicePastPaperIntegration?.approved || [];
+    if (!Array.isArray(a) || legacy.length !== EXPECTED_COUNT || !Array.isArray(extension)) return false;
+    var legacyIds = new Set(legacy.map(q=>q.id));
+    if (legacyIds.size !== EXPECTED_COUNT) return false;
+    if (extension.some(q => q?.sourceKind !== 'official-original' || q?.verified !== true)) return false;
+    var expected = EXPECTED_COUNT + extension.length;
+    if (a.length !== expected || new Set(a.map(q=>q.id)).size !== expected) return false;
+    return legacy.every(q=>a.some(item=>item.id===q.id)) && extension.every(q=>a.some(item=>item.id===q.id));
   }
   function backupName(date) {
     var d = date || new Date();
