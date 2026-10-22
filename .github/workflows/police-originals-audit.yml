@@ -40,6 +40,35 @@ jobs:
           else
             python police-exams/tools/collect_originals.py --out police-exams/output
           fi
+      - name: Diagnostic official catalogue structure
+        shell: bash
+        run: |
+          python - <<'PY'
+          import requests, json, bs4
+          rows=[]
+          for y,code in [(108,'108070'),(112,'112070'),(114,'114060'),(115,'115060')]:
+            u=f'https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e={code}&y={y+1911}'
+            try:
+              r=requests.get(u,timeout=20)
+              r.encoding=r.apparent_encoding
+              soup=bs4.BeautifulSoup(r.text,'html.parser')
+              candidates=soup.find_all(string=lambda v:bool(v and '犯罪防治人員' in str(v)))
+              sample=[]
+              for candidate in candidates[:6]:
+                p=candidate.parent
+                parents=[]
+                for ancestor in [p,*list(p.parents)[:4]]:
+                  parents.append({'tag':ancestor.name,'class':ancestor.get('class'),'id':ancestor.get('id'),
+                                  'text':ancestor.get_text(' ',strip=True)[:220],
+                                  'anchors':[{'title':x.get_text(' ',strip=True),'url':x.get('href','')[:200]} for x in ancestor.find_all('a',limit=4)]})
+                sample.append(parents)
+              rows.append({'year':y,'code':r.status_code,'candidateCount':len(candidates),'candidates':sample})
+            except Exception as e:rows.append({'year':y,'error':repr(e)})
+          from pathlib import Path
+          Path('police-exams/output').mkdir(exist_ok=True,parents=True)
+          Path('police-exams/output/catalog-diagnostic.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2),encoding='utf-8')
+          print('Wrote diagnostic catalogue structure.')
+          PY
       - name: Upload candidate questions and audit for human verification
         if: always()
         uses: actions/upload-artifact@v4
