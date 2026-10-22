@@ -124,15 +124,51 @@ def validate_header(text: str, year: int, spec: dict) -> list[str]:
         errors.append("PDF文字過少，疑似影像試卷")
     return errors
 
+def unnumbered_pdf_question_paragraphs(text: str) -> list[str]:
+    """Fallback for old MOEX fonts where displayed 一、二、 are absent from PDF text.
+    Never synthesize a heading: each candidate is marked for manual PDF visual review.
+    """
+    blocks = re.split(r"\\n[ \\t]*\\n", text)
+    notice = next((i for i, b in enumerate(blocks) if "※注意" in b and "不必抄題" in b), None)
+    if notice is None:
+        return []
+    chunks = []
+    tail = re.compile(r"（\\s*25\\s*分\\s*）")
+    for block in blocks[notice + 1:]:
+        endings = list(tail.finditer(block))
+        if not endings:
+            continue
+        if len(endings) == 1:
+            portions = [block]
+        else:
+            portions = []
+            start = 0
+            for match in endings:
+                portions.append(block[start:match.end()])
+                start = match.end()
+            if block[start:].strip():
+                # Unparsed tail is a material ambiguity and must not be silently discarded.
+                portions.append(block[start:])
+        for portion in portions:
+            portion = re.sub(r"(?m)^\\s*(?:代號|頁次)[:：][^\\n]*", "", portion)
+            portion = portion.replace("\\f", "").strip()
+            if portion and ("25 分" in portion or "共25 分" in portion):
+                chunks.append(portion)
+    return chunks
+
 def extract_questions(text: str, year: int, spec: dict, url: str, pdf_hash: str):
     matches = list(QUESTION_START.finditer(text))
+    recovered = unnumbered_pdf_question_paragraphs(text) if not matches else []
     questions = []
     warnings = []
-    for i, match in enumerate(matches):
-        n = match.group(1)
-        # Examine all following content until the next top-level question.
-        end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
-        segment = text[match.start():end]
+    if recovered:
+        warnings.append("PDF文字層漏掉題號（畫面上可見），候選原文尚待對照PDF補正題號。")
+    for i in range(len(matches) if matches else len(recovered)):
+        match = matches[i] if matches else None
+        n = match.group(1) if match else None
+        # For conventional PDFs, preserve source text, never paraphrase.
+        end = matches[i + 1].start() if match and i + 1 < len(matches) else len(text)
+        segment = text[match.start():end] if match else recovered[i]
         lines = []
         for line in segment.splitlines():
             if line == "\f" or HEADER_LINE.search(line.strip()):
@@ -141,7 +177,7 @@ def extract_questions(text: str, year: int, spec: dict, url: str, pdf_hash: str)
         body = "\n".join(lines).strip()
         number = i + 1
         expected = NUMERALS[i:i + 1]
-        if n != expected:
+        if match and n != expected:
             warnings.append(f"題序不連續：第{number}筆為{n}")
         if len(body) < 25:
             warnings.append(f"第{number}題文字太短")
