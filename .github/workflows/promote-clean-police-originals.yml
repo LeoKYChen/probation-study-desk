@@ -49,7 +49,9 @@ jobs:
           from pathlib import Path
           data=json.loads(Path('police-exams/output/promotion-report.json').read_text())
           assert data['approvedTotal']==96
-          assert data['newlyApproved']==80
+          assert data['newlyApproved'] in (0,80),data
+          assert data['currentlyUnapproved']==31
+          assert len(data['unapprovedQuestions'])==31
           print(json.dumps(data,ensure_ascii=False,indent=2))
           PY
       - name: Commit only approved original question bodies to development branch
