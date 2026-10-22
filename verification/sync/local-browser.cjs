@@ -47,6 +47,13 @@ const fs=require('node:fs/promises'),http=require('node:http'),path=require('nod
  await p.locator('[data-attempt-id="'+migrated+'"] button').click();await p.waitForFunction(()=>document.querySelector('#answer').value==='舊模組申論內容');assert.match(await p.locator('#milestones').textContent(),/已作答：—/);assert.match(await p.locator('#feedback-list').textContent(),/舊模組評語/);assert.equal(await p.evaluate(()=>localStorage.getItem('probation-study30-v251:v1')),oldRaw);
  await p.locator('#import-legacy').click();await saved(p,'import-legacy');assert.equal(await p.getByRole('button',{name:/整理為可接續筆記/}).count(),0,'repeat import retains conversion receipt');
  assert.equal(await p.evaluate(()=>globalThis.QUESTION_BANK.length+globalThis.RELATED_QUESTION_BANK.length),426);
+ for(const width of [320,375,393,600,1000]){
+  await p.setViewportSize({width,height:900});
+  const layout=await p.locator('.task-actions > button').evaluateAll(es=>es.map(e=>{const r=e.getBoundingClientRect(),s=getComputedStyle(e);return {text:e.textContent,width:r.width,height:r.height,top:r.top,bottom:r.bottom,nowrap:s.whiteSpace,overflow:e.scrollWidth>e.clientWidth};}));
+  assert.deepEqual(layout.map(x=>x.text),['開始任務','稍後處理']);
+  assert.equal(layout[0].width,layout[1].width);assert.equal(layout[0].height,layout[1].height);assert.equal(layout[0].top,layout[1].top);assert.equal(layout[0].bottom,layout[1].bottom);
+  assert(layout.every(x=>x.nowrap==='nowrap'&&!x.overflow),'task buttons stay on one line at '+width);
+ }
  assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);assert.deepEqual(external,[],'no external requests even with stale cloud configuration');assert.deepEqual(errors,[]);
  console.log('PASS local-only browser: no account/cloud requests; answer → feedback → correction; offline reload; no sync queue; JSON manual transfer; Markdown history; lecture-topic mapping/completion/portable snapshot; custom intervals/time budget; legacy notebook conversion/idempotency; 426 questions; mobile width.');
  }finally{for(const context of contexts)await context.close();await browser.close();await new Promise(r=>server.close(r));}
