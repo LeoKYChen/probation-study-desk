@@ -30,6 +30,8 @@ jobs:
         run: python -m unittest discover -s police-exams/tools -p 'test_*.py' -v
       - name: Frontend original-only loader tests
         run: node police-exams/tools/approved-loader.test.cjs
+      - name: Existing practice features integration test
+        run: node police-exams/tools/integration.test.cjs
       - name: Collect only official PDFs to review candidates
         shell: bash
         run: |
