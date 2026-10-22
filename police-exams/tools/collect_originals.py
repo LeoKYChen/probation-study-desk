@@ -186,13 +186,6 @@ def collect(output: Path, only_year: int | None = None):
             catalogue_error = None
         for spec in CATALOG["subjects"]:
             key = spec["key"]
-            if year in {x["year"] for x in CATALOG.get("noCategoryListedInCatalogue", [])}:
-                report.append({"year":year,"subject":spec["subject"],
-                    "examName":spec["examName"],"catalogUrl":entry["catalogUrl"],
-                    "sourceUrl":None,"status":"category_not_listed_in_official_catalogue",
-                    "questionCount":0,"errors":["考選部本年度目錄未列出犯罪防治人員預防組；勿自行補卷"],
-                    "catalogueError":catalogue_error,"candidateUrls":0})
-                continue
             seed = CATALOG["knownPaperUrls"].get(f"{year}:{key}")
             # Never guess a PDF URL; look up explicitly verified URL or catalogue links.
             sources = ([seed] if seed else []) + discovered.get(key, [])
