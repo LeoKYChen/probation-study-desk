@@ -47,16 +47,16 @@
       root.localStorage.setItem('psd-dual-ai-ack:'+a.id,JSON.stringify({nonce:a.id,ok:false,message,createdAt:Date.now()}));
     }
   }
-  root.addEventListener('message',event=>{
+  root.addEventListener('message',async event=>{
     const a=active,d=event.data;
     if(!a||event.origin!==TARGET_ORIGIN||event.source!==a.popup||!d||d.protocol!==PROTOCOL||d.nonce!==a.id)return;
     if(d.kind==='ready'&&!a.transferred){
       a.popup.postMessage({protocol:PROTOCOL,kind:'create',nonce:a.id,payload:a.payload},TARGET_ORIGIN);
     }else if(d.kind==='created'){a.transferred=true;root.localStorage.removeItem('psd-dual-ai-handoff:'+a.id);}
     else if(d.kind==='save-error'&&!a.transferred){root.alert('雙 AI 工作臺無法建立任務：'+String(d.message||'儲存失敗').slice(0,160));active=null;}
-    else if(d.kind==='return')receiveReview(a,d.text);
+    else if(d.kind==='return')await receiveReview(a,d.text);
   });
-  root.addEventListener('storage',event=>{
+  root.addEventListener('storage',async event=>{
     const a=active;if(!a)return;
     if(event.key==='psd-dual-ai-handoff:'+a.id&&!event.newValue){a.transferred=true;return;}
     if(event.key!=='psd-dual-ai-return:'+a.id||!event.newValue)return;
@@ -64,7 +64,7 @@
       const d=JSON.parse(event.newValue);
       if(d.nonce!==a.id||typeof d.createdAt!=='number'||Math.abs(Date.now()-d.createdAt)>120000)return;
       a.transferred=true;
-      receiveReview(a,d.text);
+      await receiveReview(a,d.text);
     }catch{}
   });
   root.PSDDualAI={start};
