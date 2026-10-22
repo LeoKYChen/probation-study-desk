@@ -207,6 +207,10 @@ def collect(output: Path, only_year: int | None = None):
                         attempted.append(";".join(problems) + ":" + url)
                         continue  # wrong category, shared exam, or wrong PDF
                     paperhash = sha256(pdf)
+                    # Review-only PDF snapshot in short-lived workflow artifact; never a production asset.
+                    original_dir = output / "official-pdf-for-review"
+                    original_dir.mkdir(parents=True, exist_ok=True)
+                    (original_dir / f"{year}-{key}.pdf").write_bytes(pdf)
                     qs, warnings = extract_questions(extracted, year, spec, url, paperhash)
                     row["sourceUrl"] = url
                     row["errors"] = warnings
