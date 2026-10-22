@@ -25,7 +25,7 @@ assert.equal(windows.PolicePastPaperIntegration.rejected.length,0,'no approved q
 assert.equal(new Set([...windows.QUESTION_BANK,...windows.RELATED_QUESTION_BANK,...windows.POLICE_ORIGINAL_QUESTION_BANK].map(q=>q.id)).size,522,'original ID collisions absent');
 for(const q of windows.POLICE_ORIGINAL_QUESTION_BANK){
  assert.equal(q.sourceKind,'official-original');assert.equal(q.verified,true);assert(q.year>=108&&q.year<=115);
- assert(q.sourceReview.reviewer.includes('非真人閱卷'),'AI provenance must remain explicit');
+ assert(q.sourceReview.reviewer.includes('非真人') && q.sourceReview.reviewer.includes('ChatGPT'),'AI provenance must remain explicit');
  assert(q.body.length>20,'original body must be present');
 }
 const groups={};for(const q of windows.POLICE_ORIGINAL_QUESTION_BANK)groups[q.officialSubject]=(groups[q.officialSubject]||0)+1;
