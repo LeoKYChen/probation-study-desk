@@ -25,6 +25,23 @@ test('weak-topic priority stays within balanced subject selection and reasons ar
  const p=prefs();p.learnedTopics=['normal','weak'];p.weakTopics=['weak'];const qs=[{...q,id:'a',topicKey:'normal'},{...q,id:'b',topicKey:'weak'}],s=emptyState();const opts={date:new Date('2026-10-22T00:00:00Z')};const first=recommend(s,qs,p,[],opts);assert.equal(first.question.id,'b');assert.deepEqual(first,recommend(s,qs,p,[],opts));assert.equal(first.audit.selectedId,'b');assert.equal(first.audit.excluded.scopeUnknown,0);
 });
 
+
+test('selection audit explains subject balance before weakness priority without changing learned scope',()=>{
+ const p=prefs();p.learnedTopics=['normal','weak'];p.weakTopics=['weak'];
+ const qs=[{...q,id:'a',topicKey:'normal'},{...q,id:'b',topicKey:'weak'}],s=emptyState();
+ const result=recommend(s,qs,p,[],{date:new Date('2026-10-22T00:00:00Z')});
+ assert.equal(result.audit.rulesVersion,3);
+ assert.equal(result.question.id,'b');
+ assert.equal(result.audit.topEligible[0].questionId,'b');
+ assert.equal(result.audit.topEligible[0].explicitWeakTopic,true);
+ assert.equal(result.audit.topEligible[0].normalizedSubjectLoad,0);
+ assert.match(result.reason,/權重1/);
+ assert.deepEqual(result,recommend(s,qs,p,[],{date:new Date('2026-10-22T00:00:00Z')}));
+ const excluded=recommend(s,qs,{...p,learnedTopics:['normal']},[],{date:new Date('2026-10-22T00:00:00Z')});
+ assert.equal(excluded.question.id,'a','weak flag must not bypass unlearned scope');
+ assert.equal(excluded.audit.excluded.scopeUnknown,1);
+});
+
 test('legacy essay conversion is deterministic, leaves source intact and does not invent completion',async()=>{
  const {convertibleAttempts}=await import('../../study-desk/legacy.js');
  const snapshot={kind:'legacy',origin:'https://example.test',key:'probation-study30-v251:v1',oldId:'2026-10-22',data:{essayDrafts:{psych:{fullAnswer:'原始申論',outline:['提綱'],updatedAt:'2026-10-22T01:00:00Z'}},aiReviewTexts:{psych:'原有評語'}}};

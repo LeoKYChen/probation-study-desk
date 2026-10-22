@@ -4,7 +4,7 @@ import {SUBJECTS,isSupportedSubject,today,now,attempts,recommend,newAttempt,mark
 import {intervals,topicScope,validateMapping,readLectures,planLimits,validatePreferences} from './planning.js';
 import {legacyRecords,convertibleAttempts} from './legacy.js';
 import {clearedLearningState,assertLearningEpoch} from './reset.js';
-import {confirmedWeaknesses,weaknessStats,validateWeaknessCategory} from './weakness.js';
+import {confirmedWeaknesses,weaknessStats,weaknessTrends,recallTrajectory,validateWeaknessCategory} from './weakness.js';
 let currentEpoch=null;
 class DeskRecords extends LocalRecords {
  constructor(store){super(store,{uuid:uid});}
@@ -88,19 +88,37 @@ function renderWeaknessBoard(state){
  $('weakness-summary').textContent=stats.total
    ?'共 '+stats.total+' 項人工確認的訂正；'+stats.categories.map(x=>x.label+' '+x.count).join('、')+'。AI 評語不會自動納入。'
    :'尚未建立人工確認的訂正。AI 批改意見不會自動算成弱點。';
+ const trends=$('weakness-trends');trends.replaceChildren();
+ const recurring=weaknessTrends(attempts(state)).filter(x=>x.recurring);
+ if(!recurring.length)text('p','目前尚無跨不同題目的同類錯誤紀錄。',trends);
+ for(const g of recurring.slice(0,12)){
+  const row=text('div','',trends);row.className='note';
+  text('strong',g.subject+'｜'+g.label+'｜'+g.distinctQuestions+' 道不同題目',row);
+  text('p','共有 '+g.correctedAttempts+' 份已訂正作答；這是重複的錯誤類型，不等於同一知識點。',row);
+ }
+ const trajectories=$('recall-trends');trajectories.replaceChildren();
+ const corrected=attempts(state).filter(a=>a.corrections?.length).map(a=>({attempt:a,trajectory:recallTrajectory(a)}))
+  .filter(x=>x.trajectory.count>0).sort((a,b)=>b.attempt.updatedAt.localeCompare(a.attempt.updatedAt));
+ if(!corrected.length)text('p','尚無訂正後的回想自評。',trajectories);
+ for(const item of corrected.slice(0,12)){
+  const row=text('div','',trajectories);row.className='note';
+  text('strong',item.attempt.subject+'｜'+item.attempt.question.title,row);
+  text('p',item.trajectory.label,row);
+  button('查看這份作答',row,()=>loadAttempt(item.attempt.id));
+ }
  const board=$('weakness-board');board.replaceChildren();
  for(const item of all.slice(0,30)){
   const row=text('div','',board);row.className='note';
   text('strong',item.subject+'｜'+item.label,row);
   text('p',item.gap,row);
-  text('p','題目：'+(item.question.title||'自選題')+(item.due?'｜下次回想 '+item.due:'')+(item.lastRecall?'｜最近自評 '+({again:'尚不會',hint:'需要提示',independent:'可獨立說明'}[item.lastRecall]||'未知'):'｜尚未回想'),row);
+  text('p','題目：'+(item.question.title||'自選題')+(item.due?'｜下次回想 '+item.due:''),row);
   button('回到原題訂正／再練',row,()=>loadAttempt(item.attemptId));
  }
  if(all.length>30)text('p','僅顯示最近 30 項；完整紀錄保存在下方筆記及 JSON 備份中。',board);
 }
 async function refresh() {
  const state=await store.read();for(const row of $('subjects').children){const label=row.querySelector('.subject-scope');if(label)label.textContent='已學主題：'+questions.filter(q=>q.subject===row.dataset.subject&&topicScope(q,preferences,lectureData).learned).length;} recommendation=recommend(state,questions,preferences,skipped,{lectures:lectureData});
- $('recommendation-audit').textContent=['已納入考科：'+(recommendation.audit.enabledSubjects.join('、')||'尚未啟用'), '符合已學範圍的候選題：'+recommendation.audit.learnedCandidates+'題', '進度尚未確認而排除：'+recommendation.audit.excluded.scopeUnknown+'題', '本次時間預算：'+recommendation.audit.minutes+'分鐘；主要任務約'+recommendation.mainMinutes+'分鐘', '先接續未完成題，再處理到期回想；新題兼顧各科權重、間隔與你標記的弱點。', '推薦理由：'+recommendation.reason].join('\n');
+ $('recommendation-audit').textContent=['已納入考科：'+(recommendation.audit.enabledSubjects.join('、')||'尚未啟用'), '符合已學範圍的候選題：'+recommendation.audit.learnedCandidates+'題', '進度尚未確認而排除：'+recommendation.audit.excluded.scopeUnknown+'題', '本次時間預算：'+recommendation.audit.minutes+'分鐘；主要任務約'+recommendation.mainMinutes+'分鐘', '推薦規則：'+recommendation.audit.rankingPolicy.join(' → '), '新題候選比較（前3題）：'+(recommendation.audit.topEligible.map((x,i)=>(i+1)+'. '+x.subject+'／'+x.questionId+'；已練'+x.subjectPracticeCount+'題、權重'+x.subjectWeight+'、負荷比'+x.normalizedSubjectLoad.toFixed(2)+'、'+(x.explicitWeakTopic?'本人標記弱點':'未標記弱點')).join('；')||'無符合條件的題目'), '推薦理由：'+recommendation.reason].join('\n');
  if(!same(state.records['settings/recommendation-audit']?.value,recommendation.audit))await engine.save('settings/recommendation-audit',recommendation.audit);
  $('recommendation').textContent=(recommendation.attempt?.question.title||recommendation.question?.title||'先確認進度')+'｜'+recommendation.reason+(recommendation.mainMinutes?'（本次約'+recommendation.mainMinutes+'分鐘）':'');
  $('start-recommended').disabled=recommendation.type==='empty';

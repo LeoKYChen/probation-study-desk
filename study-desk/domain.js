@@ -22,11 +22,21 @@ export function recommend(state,questions,preferences,skipped=[],context={}) {
   const eligible=questions.filter(q=>enabled.includes(q.subject)&&q.topicKey&&scope.get(q.id).learned&&!skipped.includes(q.id));
   const questionLast=q=>practiced.filter(a=>a.question.id===q.id).map(a=>a.updatedAt).sort().at(-1)||'';
   eligible.sort((a,b)=>counts[a.subject]/(preferences.subjects[a.subject].weight||1)-counts[b.subject]/(preferences.subjects[b.subject].weight||1)||recent[a.subject].localeCompare(recent[b.subject])||Number(preferences.weakTopics?.includes(b.topicKey)||false)-Number(preferences.weakTopics?.includes(a.topicKey)||false)||questionLast(a).localeCompare(questionLast(b))||a.id.localeCompare(b.id));
-  const audit={rulesVersion:2,date:day,minutes,reviewLimit,enabledSubjects:enabled,learnedCandidates:eligible.length,excluded:{disabled:questions.filter(q=>!enabled.includes(q.subject)).length,scopeUnknown:questions.filter(q=>enabled.includes(q.subject)&&!scope.get(q.id).learned).length,skipped:skipped.length}};
+  const candidateFactors=q=>({
+    questionId:q.id,subject:q.subject,subjectPracticeCount:counts[q.subject]||0,
+    subjectWeight:preferences.subjects[q.subject]?.weight||1,
+    normalizedSubjectLoad:(counts[q.subject]||0)/(preferences.subjects[q.subject]?.weight||1),
+    subjectLastPracticed:recent[q.subject]||'',explicitWeakTopic:!!preferences.weakTopics?.includes(q.topicKey),
+    questionLastPracticed:questionLast(q),scopeBasis:scope.get(q.id)?.basis||''
+  });
+  const audit={rulesVersion:3,date:day,minutes,reviewLimit,enabledSubjects:enabled,learnedCandidates:eligible.length,
+   rankingPolicy:['未完成作答優先','已到期回想優先','新題先比較考科已練題數／考科權重','再比較考科最近練習時間','再考慮本人標記的弱點','再比較該題最近練習時間','最後按題目ID穩定排序'],
+   topEligible:eligible.slice(0,3).map(candidateFactors),
+   excluded:{disabled:questions.filter(q=>!enabled.includes(q.subject)).length,scopeUnknown:questions.filter(q=>enabled.includes(q.subject)&&!scope.get(q.id).learned).length,skipped:skipped.length}};
   let result;
   if(unfinished[0])result={type:'resume',attempt:unfinished[0],reason:'接續尚未'+(unfinished[0].answeredAt?'訂正':'作答')+'的練習'};
   else if(due[0])result={type:'review',attempt:due[0],reason:'這一題已到再次回想日期'};
-  else if(eligible[0])result={type:'new',question:eligible[0],reason:scope.get(eligible[0].id).basis+'；兼顧各科權重、間隔及本人標記的弱點。題源沿用原題庫標示。'};
+  else if(eligible[0]){const f=candidateFactors(eligible[0]);result={type:'new',question:eligible[0],reason:f.scopeBasis+'；本考科已練'+f.subjectPracticeCount+'題、權重'+f.subjectWeight+'（比值'+f.normalizedSubjectLoad.toFixed(2)+'）；'+(f.explicitWeakTopic?'此題已由本人標記優先補強':'此題未標記優先補強')+'。先平衡考科練習量，再比較最近練習與弱點標記；題源沿用原題庫標示。'};}
   else result={type:'empty',reason:'尚無符合已學主題的題目。請確認進度、手動選題，或先登錄自選題。'};
   const mainMinutes=result.type==='empty'?0:result.type==='review'?Math.min(10,minutes):Math.min(result.attempt?.minutes||30,minutes);
   const available=Math.max(0,minutes-mainMinutes),maxExtra=Math.min(reviewLimit,Math.floor(available/5));
