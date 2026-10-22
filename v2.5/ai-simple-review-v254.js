@@ -107,7 +107,8 @@
     section.innerHTML = '<label for="ai-simple-mode"><strong>批改方式</strong></label>'+ 
       '<select id="ai-simple-mode"><option value="full">完整申論批改</option><option value="direction">答題方向批改（草稿／大綱）</option></select>'+ 
       '<p class="ai-simple-mode-help">答題方向模式優先使用上方四格草稿；不評字數、不給百分制分數。</p>'+ 
-      '<button class="btn primary" id="ai-simple-copy" type="button">一鍵複製AI批改</button>'+\n      '<button class="btn" id="ai-simple-dual" type="button">送交雙 AI 交叉審查</button>'+
+      '<button class="btn primary" id="ai-simple-copy" type="button">一鍵複製AI批改</button>'+
+      '<button class="btn" id="ai-simple-dual" type="button">送交雙 AI 交叉審查</button>'+
       '<label for="ai-simple-feedback"><strong>AI批改結果</strong>（請直接貼上ChatGPT的完整評語）</label>'+
       '<textarea id="ai-simple-feedback" rows="8" placeholder="在ChatGPT取得批改結果後，貼在這裡，系統會保存到本題學習紀錄。"></textarea>'+
       '<p id="ai-simple-status" role="status" aria-live="polite"></p>';
@@ -121,7 +122,8 @@
       '#ai-simple-status[data-error="true"]{color:#b5443c}';
     DOC.head.appendChild(style);
     var modeSelector = DOC.getElementById('ai-simple-mode');
-    var copy = DOC.getElementById('ai-simple-copy');\n    var dual = DOC.getElementById('ai-simple-dual');
+    var copy = DOC.getElementById('ai-simple-copy');
+    var dual = DOC.getElementById('ai-simple-dual');
     var feedback = DOC.getElementById('ai-simple-feedback');
     var status = DOC.getElementById('ai-simple-status');
     root.AIPromptCustom?.mount({button:copy,modeElement:modeSelector,getMode:function(){return modeSelector.value;},getSubject:function(){return practice.getQuestion()?.subject||'';}});
@@ -135,7 +137,8 @@
       feedback.value = text;
       lastSaved = text;
       feedback.disabled = !nextId;
-      copy.disabled = !nextId;\n      dual.disabled = !nextId;
+      copy.disabled = !nextId;
+      dual.disabled = !nextId;
       notice(text?'已載入本題AI批改結果':'',false);
     }
     feedback.addEventListener('input',function(){
