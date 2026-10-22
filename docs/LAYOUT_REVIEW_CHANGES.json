@@ -131,8 +131,8 @@
     {
       "path": "index.html",
       "base_sha256": "42167acdf90476d5b9c7555711b492ed3c4a5f0e42385c33b5226d151929e01f",
-      "sha256": "a331ed6e5d71f9cbc7b8d2591951e1f83d63d21b0dee5ba8ae1b26d0b44045b6",
-      "reason": "套用已確認之溫暖圓體與霧藍書房視覺；保留既有操作與資料鍵。"
+      "sha256": "47dc7af89b7507e91578b543b82168ee74d644647aecb570a5162fcd4a63c536",
+      "reason": "套用已確認之溫暖圓體與霧藍書房視覺；保留既有操作與資料鍵。2026-10-22依使用者部署正式站指示，僅於側欄新增備考書桌入口；六個既有主卡片與原資料鍵不變。"
     },
     {
       "path": "professional/ai-review-links-direction.js",

@@ -95,5 +95,18 @@ legalReadOnly();mergeAcrossDevices();rollback();stalePrevention();
 assert.throws(()=>core.validate(env({'psd-common-subjects-v1':'{"schema":"psd-common-subjects-v1","drafts":{"__proto__":{"evil":true}},"english":{}}'})),/格式|不安全/);
 assert.throws(()=>core.validate(env({[essay]:'{' })),/JSON/);
 assert.throws(()=>core.collect(mock({[key]:'{' }),'x'),/JSON/);
-assert.equal(core.modules.length,14); // 原有13模組 + 函授課程管理
+assert.equal(core.modules.length,15); // 加入自訂AI提示詞設定
 console.log('PASS unified JSON backup core: read-only export, schema validation, cross-device merge, alternate versions, idempotency, staleness guard, rollback');
+
+const promptKey='psd-ai-custom-rules-v1';
+const prompts=entries=>JSON.stringify({format:'probation-ai-prompt-settings',schemaVersion:1,entries});
+const rule={mode:'full',subject:'心理學',text:'先引導訂正'};
+const promptStorage=mock({[promptKey]:prompts([rule])});
+const promptBundle=env({[promptKey]:prompts([{...rule,text:'保留差異'}, {mode:'direction',subject:'',text:'不要評分'}])});
+const promptPlan=core.plan(core.storageSnapshot(promptStorage),promptBundle);
+assert.equal(promptPlan.conflicts.length,1);core.apply(promptStorage,promptPlan);
+assert.equal(JSON.parse(promptStorage.getItem(promptKey)).entries.length,2);
+assert.equal(JSON.parse(promptStorage.getItem(promptKey)).entries[0].text,rule.text);
+assert.equal(core.collect(promptStorage,'https://test').data[promptKey],promptStorage.getItem(promptKey));
+assert.throws(()=>core.validate(env({[promptKey]:prompts([rule,rule])})),/重複/);
+console.log('PASS custom AI rules: complete backup, merge distinct scopes, retain conflicting versions');
