@@ -152,6 +152,7 @@ const examHtml=read('v2.5/index.html');
 assert.ok(examHtml.includes('<script src="../dual-ai-bridge.js"></script>'),'exam page must load dual AI bridge');
 assert.ok(examHtml.indexOf('dual-ai-bridge.js')<examHtml.lastIndexOf('ai-simple-review-v254.js'),'bridge must load before review UI');
 assert.ok(read('v2.5/ai-simple-review-v254.js').includes('id="ai-simple-dual"'),'exam review button must be present');
+assert.ok(read('v2.5/ai-simple-review-v254.js').includes('id="ai-simple-export-dual"'),'iOS manual dual AI export button must be present');
 const exam={id:'114-test',body:'少年甲之程序保障為何？',subject:'少年事件處理法',year:114,questionNo:2,title:'少年程序保障',examTypes:['觀護人'],points:['程序保障'],direction:['確認程序']};
 const draft={issue:'原答案',essayDrafts:{issues:'確認事件類型',basis:'法律依據',analysis:'涵攝',conclusion:'結論'}};
 const direction=A.reviewContentFromRecord(draft,'direction');
