@@ -123,9 +123,9 @@ const engine=process.env.TEST_BROWSER==='webkit'?webkit:chromium;
   await page.goto('file://'+path.join(root,'backup/index.html'),{waitUntil:'load'});
   await page.locator('#export').waitFor();
   assert.match(await page.locator('#summary').innerText(),/學習|紀錄/);
-  // Cloud AI cannot operate offline; clicking it must explain instead of loading network.
+  // External AI service does not run offline; its link must not navigate the current file-mode tab.
   await page.goto(scheme,{waitUntil:'load'});
-  const remote=page.locator('a[href="https://probation-legal-ai-test.pages.dev/"]');
+  const remote=page.locator('a[href="https://leokychen.github.io/multi-ai-review-desk/"]');
   assert.equal(await remote.count(),1);
   await remote.click();
   assert(page.url()===scheme,'offline must not navigate to remote AI');
