@@ -2,7 +2,7 @@ import unittest
 from pathlib import Path
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from collect_originals import discover, extract_questions, validate_header, valid_url, CATALOG
+from collect_originals import discover, extract_questions, unnumbered_pdf_question_paragraphs, validate_header, valid_url, CATALOG
 
 EXAM="115060"
 PAPER="https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115060&c=402&s=0804&q=1"
@@ -52,6 +52,35 @@ class OfficialPaperTests(unittest.TestCase):
               "等 別：三等考試\\n類科組別：犯罪防治人員預防組\\n"
               "科 目：犯罪學與犯罪預防\\n" + "考題內容"*100)
         self.assertIn("警察考試別未核對",validate_header(fake,115,police))
+
+    def test_unnumbered_pdf_110_psychology(self):
+        """Some older exam PDFs render 一、二、 visibly but omit their glyph in text extraction."""
+        source = ("※注意：禁止使用電子計算器。\n不必抄題，作答時請將試題題號及答案依照順序寫在試卷上。\n\n"
+                  "請試述心理學者對影響遺忘的原因有那些不同看法？（25 分）\n\n"
+                  "在社會心理學領域，團體迷思是一個重要議題。請說明其意義、因素與對策。（25 分）\n\n"
+                  "請試述下列名詞之意涵：（每小題5 分，共25 分）\n"
+                  "implicit memory\nPremack principle\nhallucination vs. delusion\n"
+                  "antisocial personality disorder\nnature vs. nurture\n\n"
+                  "根據 Freud 的心理分析理論，請列舉至少 10 種防衛機制，並分述之。（25 分）")
+        sp=next(x for x in CATALOG["subjects"] if x["key"]=="psychology")
+        qs,warnings=extract_questions(source,110,sp,PAPER,"hash")
+        self.assertEqual(len(qs),4)
+        self.assertEqual(qs[2]["body"].count("nature vs. nurture"),1)
+        self.assertFalse(qs[0]["verified"])
+        self.assertTrue(any("漏掉題號" in w for w in warnings))
+        self.assertFalse(qs[0]["body"].startswith("一、"),"Do not synthesize characters not extracted from PDF")
+    def test_unnumbered_two_page_113_criminal_law(self):
+        source = ("※注意：不必抄題，作答時請將試題題號及答案依照順序寫在試卷上。\n\n"
+                  "甲乙丙共同為犯罪行為，請討論甲乙丙三人可能成立的罪名及各自責任。（25 分）\n\n"
+                  "甲酒後駕車肇事逃逸，請詳細分析相關刑事責任及各行為階段。（25 分）\n\n"
+                  "甲在警局拒絕夜間詢問且等待辯護人，請判斷自白是否具證據能力。（25 分）\n\f\n"
+                  "代號：30160-30360\n頁次：2-2\n"
+                  "甲缺席審判，法院判決後提出上訴。請討論上訴第三審有無理由。（25 分）")
+        sp=next(x for x in CATALOG["subjects"] if x["key"]=="criminal_law_procedure")
+        qs,warnings=extract_questions(source,113,sp,PAPER,"hash")
+        self.assertEqual(len(qs),4)
+        self.assertNotIn("代號：",qs[3]["body"])
+        self.assertTrue(any("漏掉題號" in w for w in warnings))
 
     def test_short_or_wrong_year_not_passed(self):
         sp=next(x for x in CATALOG["subjects"] if x["key"]=="counseling")
