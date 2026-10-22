@@ -17,7 +17,9 @@ const fs=require('node:fs/promises'),http=require('node:http'),path=require('nod
  await p.locator('#manual-picker').evaluate(el=>el.open=true);await p.locator('#subject').selectOption({label:'心理學'});await p.locator('#start-selected').click();await p.locator('#editor').waitFor({state:'visible'});
  await p.locator('#answer').fill('原始答案：我把信度與效度混淆。');await p.locator('#submit-answer').click();await saved(p,'submit-answer');await p.locator('#checked').click();await saved(p,'checked');
  await p.locator('#editor > details').first().evaluate(el=>el.open=true);await p.locator('#feedback-source').fill('人工核對');await p.locator('#feedback-text').fill('請區分測量一致性與效度證據。');await p.locator('#add-feedback').click();await saved(p,'add-feedback');
- await p.locator('#gap').fill('區分信度與效度');await p.locator('#correction').fill('一致性不等於解釋已有適當效度證據。');await p.locator('#correct').click();await saved(p,'correct');
+ await p.locator('#gap-category').selectOption('norm');await p.locator('#gap').fill('區分信度與效度');await p.locator('#correction').fill('一致性不等於解釋已有適當效度證據。');await p.locator('#correct').click();await saved(p,'correct');
+ assert.match(await p.locator('#weakness-summary').textContent(),/法規／理論知識 1/);
+ assert.match(await p.locator('#weakness-board').textContent(),/區分信度與效度/);
  assert.match(await p.locator('#milestones').textContent(),/已訂正：✓/);
  const backupEvent=p.waitForEvent('download');await p.locator('#export-backup').click();const backup=await backupEvent;const bytes=await fs.readFile(await backup.path());const data=JSON.parse(bytes);assert.equal(Object.keys(data.state.outbox).length,0,'local edits do not accumulate cloud operations');assert(Object.values(data.state.records).some(r=>r.value.answer==='原始答案：我把信度與效度混淆。'));
  await p.evaluate(async()=>{await navigator.serviceWorker.ready;});await p.reload();await p.waitForFunction(()=>document.querySelector('#status').textContent.includes('本機書桌已開啟'));await p.locator('#notes button').first().click();await p.locator('#editor').waitFor({state:'visible'});
