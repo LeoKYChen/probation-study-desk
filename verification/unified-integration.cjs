@@ -20,7 +20,7 @@ assert.equal(hash('professional/source-main-questions.js'),hash('v2.5/questions.
 assert.equal(hash('professional/source-related-questions.js'),hash('v2.5/related-questions.js'));
 const home=read('index.html');assert.equal((home.match(/class="tile course-tile"/g)||[]).length,3);assert.equal((home.match(/class="tile explore-tile"/g)||[]).length,3);assert.equal((home.match(/class="tile /g)||[]).length,6);
 for(const target of ['./professional/','./common-subjects/','./daily-simulation/','./juvenile-news/','./legacy-home.html','./v2.5/'])assert(home.includes('href="'+target+'"'),target);
-assert(home.includes('https://probation-legal-ai-test.pages.dev/'));
+assert(home.includes('https://leokychen.github.io/multi-ai-review-desk/'));assert(home.includes('雙 AI 協作工作臺'));
 assert(home.includes("'psd-home-exam-countdown-v1'"));
 assert(read('professional/app.js').includes("'probation-study30-v251:v1'"));
 assert(!home.includes('localStorage.clear('));
