@@ -40,7 +40,7 @@ export function markdown(a) {
  const lines=['# '+a.subject+'｜備考書桌','',a.question.body,'','來源：'+(a.question.sourceLabel||'使用者自選題，來源未查核'),a.question.sourceUrl||'','','## 目前作答','',a.answer||'（尚未作答）'];
  for(const r of a.revisions||[]) lines.push('','## 作答版本 '+r.at,'',r.text);
  for(const f of a.feedback||[]) lines.push('','## 回饋｜'+f.source+'｜'+f.date,(f.unverified?'待查證':'由使用者標記已核對'),'','對應答案版本：'+f.revision,'',f.text);
- for(const c of a.corrections||[]) lines.push('','## 訂正｜'+c.at,'','缺口：'+c.gap,'',c.text);
+ for(const c of a.corrections||[]) lines.push('','## 訂正｜'+c.at,'','人工確認的缺口類別：'+(c.category||'舊紀錄未分類'),'','缺口：'+c.gap,'',c.text);
  for(const r of a.recalls||[]) lines.push('','## 再次回想｜'+r.at,'',r.text,'','自評：'+r.rating+(r.intervalDays?'；當次設定間隔：'+r.intervalDays+'天':''));
  if(a.due)lines.push('','下次回想日期：'+a.due);
  return lines.join('\n');
