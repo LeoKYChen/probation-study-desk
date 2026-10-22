@@ -211,6 +211,8 @@
           var combined=appendDualFeedback(target[FIELD],reviewText);
           var next=Object.assign({},records);
           next[id]=Object.assign({},target,{[FIELD]:combined,updatedAt:new Date().toISOString()});
+          // Commit to persistent storage before replacing the in-memory records; quota failures must not look saved.
+          root.localStorage.setItem(key,JSON.stringify(next));
           practice.replaceRecords(next);
           if(practice.getQuestion()?.id===id){
             feedback.value=combined;
