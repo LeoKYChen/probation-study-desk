@@ -158,7 +158,7 @@ async function copyAI(){
   const directionText=DRAFT_FIELDS.map(([,key,label])=>String(drafts[key]||'').trim()?label+'\n'+String(drafts[key]).trim():'').filter(Boolean).join('\n\n');
   const submitted=mode==='direction'?(directionText||$('answer').value):$('answer').value;
   let prompt;
-  try{prompt=promptFor(q,submitted,mode);}
+  try{prompt=promptFor(q,submitted,mode);if(window.AIPromptCustom)prompt=window.AIPromptCustom.enhance(prompt,{mode,subject:M.subject(q)});}
   catch(error){$('copyStatus').textContent=error.message;return;}
   try{
     if(!navigator.clipboard?.writeText)throw Error('clipboard unavailable');
@@ -179,6 +179,7 @@ async function copyAI(){
   }
 }
 
+window.AIPromptCustom?.mount({button:$('copyAI'),modeElement:$('aiReviewMode'),getMode:()=>$('aiReviewMode')?.value,getSubject:()=>{const q=data?.questions.find(item=>item.id===current);return q?M.subject(q):'';}});
 function essayMarkdown(q,record){
   const drafts=draftsFor(record),pieces=[
     '# 每日模擬題｜'+M.title(q),
