@@ -350,6 +350,19 @@ body{background:#f5f5ef}
   .course-grid>.tile.course-tile{min-height:128px;padding:20px}
   .course-grid>.tile.course-tile .tile-title{font-size:clamp(22px,6vw,27px)}
 }
+
+/* 手機導覽：保留桌面側欄，窄螢幕改以按鈕開啟，不遮擋主內容。 */
+.mobile-nav-toggle,.mobile-nav-close,.sidebar-scrim{display:none}
+@media(max-width:860px){
+  .mobile-nav-toggle{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:78px;min-height:44px;padding:8px 12px;background:#fff;border:1px solid #c8d4df;border-radius:5px;color:#315b7c;font-size:15px;white-space:nowrap}
+  .workspace-sidebar{display:flex;position:fixed;top:0;bottom:0;left:0;z-index:101;width:min(320px,85vw);height:100dvh;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:18px 18px 24px;background:#f3f6f9;transform:translateX(-102%);visibility:hidden;pointer-events:none;transition:transform .2s ease,visibility .2s}
+  .mobile-nav-open .workspace-sidebar{transform:translateX(0);visibility:visible;pointer-events:auto}
+  .sidebar-scrim:not([hidden]){display:block;position:fixed;inset:0;z-index:100;width:100%;height:100%;padding:0;border:0;border-radius:0;background:#152938a6;cursor:pointer}
+  .mobile-nav-close{display:inline-flex;align-items:center;gap:8px;align-self:flex-end;min-height:44px;padding:8px 10px;margin:0 0 16px;background:#fff;border:1px solid #c8d4df;border-radius:5px;color:#315b7c}
+  body.mobile-nav-open{overflow:hidden}
+}
+@media(max-width:760px){.header-caption{display:none}}
+@media(prefers-reduced-motion:reduce){.workspace-sidebar{transition:none}}
 </style>
 <script src="./file-compat.js" defer></script>
 <link rel="stylesheet" href="assets/study-theme.css">
@@ -357,10 +370,13 @@ body{background:#f5f5ef}
 <body>
 <header class="global-header">
   <a class="global-brand" href="#home" aria-label="返回觀護人學習平台頂端"><span class="global-brand-mark" aria-hidden="true">觀</span><span>觀護人學習平台</span></a>
+  <button class="mobile-nav-toggle" id="mobile-nav-toggle" type="button" aria-controls="workspace-sidebar" aria-expanded="false" aria-label="開啟學習導覽"><span aria-hidden="true">☰</span><span>導覽</span></button>
   <span class="header-caption">學習總覽</span>
 </header>
+<button type="button" id="sidebar-scrim" class="sidebar-scrim" aria-label="關閉學習導覽" hidden></button>
 <div class="workspace-shell" id="home">
-  <aside class="workspace-sidebar" aria-label="學習平台導覽">
+  <aside class="workspace-sidebar" id="workspace-sidebar" aria-label="學習平台導覽">
+    <button class="mobile-nav-close" id="mobile-nav-close" type="button" aria-label="關閉學習導覽">✕ <span>關閉導覽</span></button>
     <div class="sidebar-brand"><span class="sidebar-brand-icon" aria-hidden="true">▤</span><span>我的學習空間<small>READ. THINK. PRACTICE.</small></span></div>
     <p class="sidebar-eyebrow">學習導覽</p>
     <nav class="sidebar-links" aria-label="首頁區塊">
@@ -429,7 +445,41 @@ body{background:#f5f5ef}
 <script>
 (() => {
   'use strict';
-  // 本模組與練習站不同，僅使用下列唯一儲存鍵。
+  const sidebar=document.getElementById('workspace-sidebar');
+  const toggle=document.getElementById('mobile-nav-toggle');
+  const closeButton=document.getElementById('mobile-nav-close');
+  const scrim=document.getElementById('sidebar-scrim');
+  const mobile=window.matchMedia('(max-width:860px)');
+  function close(restoreFocus=false){
+    document.body.classList.remove('mobile-nav-open');
+    scrim.hidden=true;
+    toggle.setAttribute('aria-expanded','false');
+    toggle.setAttribute('aria-label','開啟學習導覽');
+    sidebar.inert=mobile.matches;
+    if(restoreFocus&&mobile.matches)toggle.focus();
+  }
+  function open(){
+    if(!mobile.matches)return;
+    sidebar.inert=false;
+    scrim.hidden=false;
+    document.body.classList.add('mobile-nav-open');
+    toggle.setAttribute('aria-expanded','true');
+    toggle.setAttribute('aria-label','關閉學習導覽');
+    closeButton.focus();
+  }
+  toggle.addEventListener('click',()=>document.body.classList.contains('mobile-nav-open')?close(true):open());
+  closeButton.addEventListener('click',()=>close(true));
+  scrim.addEventListener('click',()=>close(true));
+  sidebar.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>close(false)));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&document.body.classList.contains('mobile-nav-open'))close(true)});
+  mobile.addEventListener('change',()=>close(false));
+  close();
+})();
+</script>
+<script>
+(() => {
+  'use strict';
+  // 本模組與練習站不同，僅使用下列唯一儲存鍵.
   const STORE_KEY = 'psd-home-exam-countdown-v1';
   const card = document.getElementById('countdown-card');
   const value = document.getElementById('countdown-value');
