@@ -47,15 +47,6 @@
       "url": "common-subjects/catalog/data/resources.json"
     },
     {
-      "url": "common-subjects/catalog/data/shards/JCEE-vocab-questions/cards/cards_data.json"
-    },
-    {
-      "url": "common-subjects/catalog/data/shards/JCEE-vocab-questions/translate/adapt/quiz_items.json"
-    },
-    {
-      "url": "common-subjects/catalog/data/shards/JCEE-vocab-questions/translate/quiz_items.json"
-    },
-    {
       "url": "common-subjects/catalog/data/shards/discourse-structure/adapt/items.json"
     },
     {
@@ -84,6 +75,15 @@
     },
     {
       "url": "common-subjects/catalog/data/shards/grammar-cloze-test/grammar_items.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/shards/JCEE-vocab-questions/cards/cards_data.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/shards/JCEE-vocab-questions/translate/adapt/quiz_items.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/shards/JCEE-vocab-questions/translate/quiz_items.json"
     },
     {
       "url": "common-subjects/catalog/data/shards/mixed-format/items.json"
@@ -239,16 +239,13 @@
       "url": "index.html"
     },
     {
-      "url": "juvenile-news/README.md"
-    },
-    {
       "url": "juvenile-news/assets/index-C3DwA6oz.js"
     },
     {
-      "url": "juvenile-news/assets/index-DWXubpQf.js"
+      "url": "juvenile-news/assets/index-DhehFTxG.css"
     },
     {
-      "url": "juvenile-news/assets/index-DhehFTxG.css"
+      "url": "juvenile-news/assets/index-DWXubpQf.js"
     },
     {
       "url": "juvenile-news/assets/index-JfbeKn1C.css"
@@ -261,6 +258,9 @@
     },
     {
       "url": "juvenile-news/issues.json"
+    },
+    {
+      "url": "juvenile-news/README.md"
     },
     {
       "url": "juvenile-news/v25-entry.js"
@@ -293,6 +293,15 @@
       "url": "offline/index.html"
     },
     {
+      "url": "police-exams/approved-loader.js"
+    },
+    {
+      "url": "police-exams/catalog.json"
+    },
+    {
+      "url": "police-exams/questions.approved.js"
+    },
+    {
       "url": "print/app.js"
     },
     {
@@ -305,10 +314,10 @@
       "url": "print/style.css"
     },
     {
-      "url": "professional/ai-review-links.js"
+      "url": "professional/ai-review-links-direction.js"
     },
     {
-      "url": "professional/ai-review-links-direction.js"
+      "url": "professional/ai-review-links.js"
     },
     {
       "url": "professional/app.js"
@@ -443,9 +452,6 @@
       "url": "shared-ui.css"
     },
     {
-      "url": "v2.5/README.md"
-    },
-    {
       "url": "v2.5/ai-simple-review-v254.js"
     },
     {
@@ -525,6 +531,9 @@
     },
     {
       "url": "v2.5/questions.js"
+    },
+    {
+      "url": "v2.5/README.md"
     },
     {
       "url": "v2.5/reference-notes/juvenile-115.md"
