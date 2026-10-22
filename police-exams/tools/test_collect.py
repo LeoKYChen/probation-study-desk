@@ -34,10 +34,10 @@ class OfficialPaperTests(unittest.TestCase):
 等 別：三等考試
 類科組別：犯罪防治人員預防組
 科 目：諮商與輔導
-一、請說明甲問題？並論述乙問題。（25 分）
+一、請詳細說明甲問題的核心概念及法律依據？並論述乙問題的具體理由及實務運用。（25 分）
 二、請比較理論A、理論B，並舉例說明。（25 分）
 三、請從少年最佳利益分析，分別回答（一）及（二）。（25 分）
-四、請就跨機關合作提出實際做法。（25 分）"""
+四、請就跨機關合作提出具體可行的實際做法，並分析可能遇到的程序或專業倫理限制。（25 分）"""
         sp=next(x for x in CATALOG["subjects"] if x["key"]=="counseling")
         self.assertFalse(validate_header(source,115,sp))
         questions,warnings=extract_questions(source,115,sp,PAPER,"hash")
