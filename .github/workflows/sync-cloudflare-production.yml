@@ -51,6 +51,13 @@ jobs:
             UNIFIED_BROWSER_ENGINE="$engine" node verification/unified-browser.cjs cloudflare-main-mirror-dist
             UNIFIED_BROWSER_ENGINE="$engine" node verification/layout-review-browser.cjs cloudflare-main-mirror-dist
           done
+      - name: Verify mobile drawer and equal-sized study-desk navigation
+        env:
+          NODE_PATH: /tmp/cloudflare-production-qa/node_modules
+        run: |
+          for engine in chromium webkit; do
+            UNIFIED_BROWSER_ENGINE="$engine" node verification/mobile-home-desk-nav.cjs cloudflare-main-mirror-dist
+          done
       - name: Capture exact current production for recovery
         id: capture
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
