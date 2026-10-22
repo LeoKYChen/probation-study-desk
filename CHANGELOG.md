@@ -18,7 +18,7 @@
 ### 調整與修正
 
 - **備考書桌手機版**：調整考科名稱、操作按鈕與練習捷徑的響應式版面。[相關提交](https://github.com/LeoKYChen/probation-study-desk/commit/0d07acf25ad29b9b4681b92497493bf8687cbdf4)
-- **雙 AI 回饋保護**：避免重複回傳覆寫或重複附加回饋；處理 iPhone 上的題目交接與回傳問題。[重複回傳修正](https://github.com/LeoKYChen/probation-study-desk/commit/e0773b88b2e82bad48c24481f42a81f4e113c138)／[iPhone 修正](https://github.com/LeoKYChen/probation-study-desk/commit/eeebd4276c4fbcf9fdb2d5b75a986dc294f69267)
+- **雙 AI 回饋保護**：避免重複回傳覆寫或重複附加回饋；處理 iPhone 上的題目交接與回傳問題。[重複回傳修正](https://github.com/LeoKYChen/probation-study-desk/commit/e0773b88b2e82bad48c24481f42a81f4e113c138)／[iPhone 修正](https://github.com/LeoKYChen/probation-study-desk/commit/eeebd4276c23cb2e1aaa3c7626c322823eb44f54)
 - **主頁入口**：整合備考書桌與外部雙 AI 協作入口，保留舊練習模組；功能入口與瀏覽器學習資料不會因連結而自動合併。
 
 ### 尚須留意
