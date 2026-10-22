@@ -31,7 +31,7 @@
     return true;
   }
   async function receiveReview(a,text){
-    if(!a||a.finished||a.pending||typeof text!=='string'||!text.trim()||text.length>100000)return;
+    if(!a||!a.transferred||a.finished||a.pending||typeof text!=='string'||!text.trim()||text.length>100000)return;
     try{
       if(!root.confirm('是否將雙 AI 審查意見寫回原始練習紀錄？既有答案及舊評語會保留。'))return;
       a.pending=true;
