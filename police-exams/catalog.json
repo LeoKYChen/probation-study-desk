@@ -110,18 +110,10 @@
     "111:criminal_law_procedure": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111070&q=1&s=0901&t=Q",
     "111:counseling": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111070&q=1&s=1003&t=Q",
     "111:psychology": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111070&q=1&s=1005&t=Q",
-    "111:criminology_prevention": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=505&code=111070&q=1&s=1310&t=Q"
-  },
-  "noCategoryListedInCatalogue": [
-    {
-      "year": 110,
-      "examNames": [
-        "一般警察人員考試",
-        "警察人員考試"
-      ],
-      "category": "犯罪防治人員預防組",
-      "source": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=110070&y=2021",
-      "note": "考選部110年本考試年度清單沒有犯罪防治人員預防組；須人工覆核清單後定案，無法推定當年應有試卷"
-    }
-  ]
+    "111:criminology_prevention": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=505&code=111070&q=1&s=1310&t=Q",
+    "110:psychology": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=110070&q=1&s=1011&t=Q",
+    "110:counseling": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=110070&q=1&s=1009&t=Q",
+    "110:criminal_law_procedure": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=110070&q=1&s=0901&t=Q",
+    "110:criminology_prevention": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=505&code=110070&q=1&s=1410&t=Q"
+  }
 }
