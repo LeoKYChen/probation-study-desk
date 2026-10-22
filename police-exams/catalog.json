@@ -115,5 +115,11 @@
     "110:counseling": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=110070&q=1&s=1009&t=Q",
     "110:criminal_law_procedure": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=110070&q=1&s=0901&t=Q",
     "110:criminology_prevention": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=505&code=110070&q=1&s=1410&t=Q"
+  },
+  "catalogueAudit": {
+    "source": "official MOEX examination search listing and PDF header checks",
+    "status": "all 32 source PDFs located; individual question verification staged",
+    "updatedAt": "2026-10-23",
+    "questionCountsUnreviewedUntilApproved": true
   }
 }
