@@ -18,7 +18,7 @@
   function start({payload,onResult}){
     if(typeof onResult!=='function')fail('沒有設定回寫目標');
     const safe=validPayload(payload);
-    if(active&&!active.finished)fail('已有一項雙 AI 審查連線進行中，請先完成或重新整理');
+    if(active&&!active.finished&&!root.confirm('已有一項尚未回傳的雙 AI 任務。改為送出新的題目後，舊視窗將無法自動回寫。確定繼續？'))return false;
     if(!root.confirm('即將另開雙 AI 工作臺並傳送本題題幹及作答。工作臺會儲存於瀏覽器，實際呼叫模型時資料會傳給你選擇的 AI 服務。確認送出？'))return false;
     const id=nonce();
     const popup=root.open(TARGET_URL+'#psd-bridge='+id,'_blank');
@@ -33,6 +33,7 @@
     if(d.kind==='ready'&&!a.transferred){
       a.popup.postMessage({protocol:PROTOCOL,kind:'create',nonce:a.id,payload:a.payload},TARGET_ORIGIN);
     }else if(d.kind==='created'){a.transferred=true;}
+    else if(d.kind==='save-error'&&!a.transferred){root.alert('雙 AI 工作臺無法建立任務：'+String(d.message||'儲存失敗').slice(0,160));active=null;}
     else if(d.kind==='return'){
       if(!a.transferred||a.finished||typeof d.text!=='string'||!d.text.trim()||d.text.length>100000)return;
       try{
