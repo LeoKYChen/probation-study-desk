@@ -4,6 +4,7 @@ import {SUBJECTS,isSupportedSubject,today,now,attempts,recommend,newAttempt,mark
 import {intervals,topicScope,validateMapping,readLectures,planLimits,validatePreferences} from './planning.js';
 import {legacyRecords,convertibleAttempts} from './legacy.js';
 import {clearedLearningState,assertLearningEpoch} from './reset.js';
+import {confirmedWeaknesses,weaknessStats,validateWeaknessCategory} from './weakness.js';
 let currentEpoch=null;
 class DeskRecords extends LocalRecords {
  constructor(store){super(store,{uuid:uid});}
@@ -82,6 +83,21 @@ function describeQuestion() {
  $('topic-scope').textContent=q?topicScope(q,preferences,lectureData).basis:'';
  $('save-topic-lesson').disabled=!q||!lectureData;
 }
+function renderWeaknessBoard(state){
+ const all=confirmedWeaknesses(attempts(state)),stats=weaknessStats(all);
+ $('weakness-summary').textContent=stats.total
+   ?'共 '+stats.total+' 項人工確認的訂正；'+stats.categories.map(x=>x.label+' '+x.count).join('、')+'。AI 評語不會自動納入。'
+   :'尚未建立人工確認的訂正。AI 批改意見不會自動算成弱點。';
+ const board=$('weakness-board');board.replaceChildren();
+ for(const item of all.slice(0,30)){
+  const row=text('div','',board);row.className='note';
+  text('strong',item.subject+'｜'+item.label,row);
+  text('p',item.gap,row);
+  text('p','題目：'+(item.question.title||'自選題')+(item.due?'｜下次回想 '+item.due:'')+(item.lastRecall?'｜最近自評 '+({again:'尚不會',hint:'需要提示',independent:'可獨立說明'}[item.lastRecall]||'未知'):'｜尚未回想'),row);
+  button('回到原題訂正／再練',row,()=>loadAttempt(item.attemptId));
+ }
+ if(all.length>30)text('p','僅顯示最近 30 項；完整紀錄保存在下方筆記及 JSON 備份中。',board);
+}
 async function refresh() {
  const state=await store.read();for(const row of $('subjects').children){const label=row.querySelector('.subject-scope');if(label)label.textContent='已學主題：'+questions.filter(q=>q.subject===row.dataset.subject&&topicScope(q,preferences,lectureData).learned).length;} recommendation=recommend(state,questions,preferences,skipped,{lectures:lectureData});
  $('recommendation-audit').textContent=['已納入考科：'+(recommendation.audit.enabledSubjects.join('、')||'尚未啟用'), '符合已學範圍的候選題：'+recommendation.audit.learnedCandidates+'題', '進度尚未確認而排除：'+recommendation.audit.excluded.scopeUnknown+'題', '本次時間預算：'+recommendation.audit.minutes+'分鐘；主要任務約'+recommendation.mainMinutes+'分鐘', '先接續未完成題，再處理到期回想；新題兼顧各科權重、間隔與你標記的弱點。', '推薦理由：'+recommendation.reason].join('\n');
@@ -90,6 +106,7 @@ async function refresh() {
  $('start-recommended').disabled=recommendation.type==='empty';
  $('due-list').textContent=recommendation.due.length?'另有到期複習：'+recommendation.due.map(a=>a.subject+' '+a.question.title).join('；'):'';
  if(recommendation.deferredReviews)$('due-list').textContent+=' 另有'+recommendation.deferredReviews+'題到期，因時間或題數限制暫緩。';
+ renderWeaknessBoard(state);
  $('notes').replaceChildren();
  const notes=attempts(state).sort((a,b)=>b.updatedAt.localeCompare(a.updatedAt));
  if(!notes.length)text('p','第一份作答會留在這裡。',$('notes'));
@@ -120,7 +137,8 @@ function paintAttempt() {
  $('editor').hidden=false;$('practice-title').textContent=current.subject+'｜'+current.question.title;$('question-body').textContent=current.question.body;$('source-label').textContent=current.question.sourceLabel||'自選題，來源未查核';
  $('answer').value=current.answer;$('mode').value=current.mode;$('minutes').value=current.minutes;
  $('answer-hint').textContent=/刑|少年|保安|法學/.test(current.subject)?'可按「爭點、規範、涵攝、結論」作答。':'可按「概念、理論、應用、結論」作答。';
- $('gap').value='';$('correction').value='';$('recall').value='';renderHistory();
+ $('gap').value='';$('correction').value='';$('recall').value='';$('gap-category').value='issue';$('track-weak-topic').checked=false;
+ $('track-weak-topic').disabled=!current.question.topicKey;renderHistory();
 }
 function renderHistory() {
  $('milestones').textContent=['已作答：'+(current.answeredAt?'✓':'—'),'已核對：'+(current.checkedAt?'✓':'—'),'已訂正：'+(current.correctedAt?'✓':'—')].join('　');
@@ -189,7 +207,18 @@ async function setup() {
  wrap('submit-answer',()=>edit(()=>{if(!current.answer.trim())throw Error('請先寫下答案');current.revisions.push({id:uid(),text:current.answer,at:now()});current.answeredAt=now();}));
  wrap('checked',()=>edit(()=>{if(!current.answeredAt)throw Error('請先保存作答版本');current.checkedAt=now();}));
  wrap('add-feedback',()=>edit(()=>{const content=$('feedback-text').value.trim(),revision=$('feedback-revision').value;if(!content||!current.revisions.some(r=>r.id===revision))throw Error('請填寫回饋，並選擇已保存的答案版本');if(!/^\d{4}-\d{2}-\d{2}$/.test($('feedback-date').value))throw Error('請填取得日期');current.feedback.push({id:uid(),source:$('feedback-source').value.trim()||'來源／模型未知',date:$('feedback-date').value,revision,text:content,unverified:$('feedback-unverified').checked});$('feedback-text').value='';}));
- wrap('correct',()=>edit(()=>{if(!current.checkedAt)throw Error('請先完成作答與核對');const gap=$('gap').value.trim(),content=$('correction').value.trim();if(!gap||!content)throw Error('請填寫具體缺口與訂正內容');current.corrections.push({id:uid(),gap,text:content,at:now(),revision:current.revisions.at(-1)?.id,feedbackIds:current.feedback.map(f=>f.id)});current.correctedAt=now();current.due=nextReview('again',new Date(),preferences.reviewIntervals);$('gap').value='';$('correction').value='';}));
+ wrap('correct',async()=>{
+  const category=validateWeaknessCategory($('gap-category').value);
+  const flag=$('track-weak-topic').checked;
+  const topicKey=current?.question.topicKey;
+  if(flag&&!topicKey)throw Error('自選題尚無題庫主題鍵，請先取消優先主題勾選；分類與訂正仍可保存');
+  await edit(()=>{if(!current.checkedAt)throw Error('請先完成作答與核對');const gap=$('gap').value.trim(),content=$('correction').value.trim();if(!gap||!content)throw Error('請填寫具體缺口與訂正內容');current.corrections.push({id:uid(),gap,category,text:content,at:now(),revision:current.revisions.at(-1)?.id,feedbackIds:current.feedback.map(f=>f.id),confirmedBy:'user'});current.correctedAt=now();current.due=nextReview('again',new Date(),preferences.reviewIntervals);$('gap').value='';$('correction').value='';});
+  if(flag&&topicKey&&!preferences.weakTopics?.includes(topicKey)){
+    const next=clone(preferences);next.weakTopics=[...(next.weakTopics||[]),topicKey];
+    await engine.save('settings/preferences',next);preferences=next;await refresh();
+    report('已保存人工確認的訂正與弱點分類；此主題列入後續選題參考。');
+  }
+});
  wrap('save-recall',()=>edit(()=>{const content=$('recall').value.trim();if(!current.correctedAt||!content)throw Error('請完成訂正後，再寫下獨立回想');const rating=$('rating').value;current.recalls.push({id:uid(),at:now(),text:content,rating,intervalDays:intervals(preferences.reviewIntervals)[rating]});current.due=nextReview(rating,new Date(),preferences.reviewIntervals);$('recall').value='';}));
  wrap('export-note',async()=>{await flush();if(!current)throw Error('請先選題');download(today()+'_備考筆記.md',markdown(current),'text/markdown;charset=utf-8');});
  wrap('copy-prompt',async()=>{await flush();if(!current?.answer.trim())throw Error('請先作答');const prompt=globalThis.AIPromptCustom.enhance('請以繁體中文批改下列'+(current.mode==='short'?'短練習，不評完整申論分數':'申論')+'。先辨識題意，再指出一項具體缺口，提示我自行訂正。不得杜撰法條或考古題來源。\n科目：'+current.subject+'\n題源：'+current.question.sourceLabel+'\n題目：'+current.question.body+'\n我的答案：'+current.answer,{subject:current.subject,mode:current.mode==='short'?'direction':'full'});await navigator.clipboard.writeText(prompt);report('已複製題目、作答與批改提示詞。');});
