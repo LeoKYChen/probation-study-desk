@@ -53,7 +53,7 @@ def promote(output_dir: Path, approved_js: Path):
     approved = {q["id"]: q for q in existing}
     if len(approved) != len(existing):
         raise ValueError("Existing approved bank duplicate")
-    added, rejected = [], Counter()
+    added, rejected, unapproved = [], Counter(), []
     for paper in catalog["papers"]:
         year = paper["year"]
         subject = paper["subject"]
@@ -66,19 +66,23 @@ def promote(output_dir: Path, approved_js: Path):
         )
         if not allowed_review_paper(paper):
             rejected["paper has audit warnings"] += len(records)
+            unapproved.extend({"id": q["id"], "reason": "paper has audit warnings"} for q in records)
             continue
         if len(records) != 4:
             rejected["not four numbered questions"] += len(records)
+            unapproved.extend({"id": q["id"], "reason": "not four numbered questions"} for q in records)
             continue
         file = output_dir / "official-pdf-for-review" / f"{year}-{spec['key']}.pdf"
         pdf_data = file.read_bytes()
         doc = fitz.open(stream=pdf_data, filetype="pdf")
         if len(doc) != 1:
             rejected["multi-page PDF"] += len(records)
+            unapproved.extend({"id": q["id"], "reason": "multi-page PDF"} for q in records)
             doc.close()
             continue
         if doc[0].get_images(full=True):
             rejected["embedded image or glyph"] += len(records)
+            unapproved.extend({"id": q["id"], "reason": "embedded image or glyph"} for q in records)
             doc.close()
             continue
         doc_text = doc[0].get_text(sort=True)
@@ -107,9 +111,15 @@ def promote(output_dir: Path, approved_js: Path):
             elif any(marker in body for marker in ("代號：","頁次：","座號：")):
                 reason = "header/footer contaminated body"
             elif q["id"] in approved:
+                prior = approved[q["id"]]
+                for field in ("body", "paperSha256", "textSha256", "examName", "officialSubject", "questionNo", "sourceUrl"):
+                    if prior[field] != q[field]:
+                        raise ValueError(f"Previously approved original changed for {q['id']} field={field}")
                 reason = "already approved"
             if reason:
                 rejected[reason] += 1
+                if reason != "already approved":
+                    unapproved.append({"id": q["id"], "reason": reason})
                 continue
             # No rewording or reshaping the official text.
             approved[q["id"]] = {
@@ -123,10 +133,12 @@ def promote(output_dir: Path, approved_js: Path):
                 "guidanceNote": "考選部官方原題（PDF文字層精確比對，AI檢視、非真人核稿）；答題解析非考選部標準答案。"
             }
             added.append(q["id"])
-    if len(added) != 80:
-        raise ValueError(f"Expected exactly 80 new independently source-matched items; got {len(added)}. Rejected: {dict(rejected)}")
+    if len(added) not in (0, 80):
+        raise ValueError(f"Unexpected approval delta: {len(added)}. Rejected: {dict(rejected)}")
     if len(approved) != 96:
         raise ValueError("Total approved expected 96, found "+str(len(approved)))
+    if len(unapproved) != 31:
+        raise ValueError(f"Expected 31 explicitly unapproved PDF candidates, got {len(unapproved)}")
     ordered = sorted(approved.values(), key=lambda q:(q["year"],q["officialSubject"],q["questionNo"],q["id"]))
     content = ("/* Official original exam text, with explicit PDF source review provenance. */\n"
                "window.POLICE_ORIGINAL_QUESTION_BANK = "+json.dumps(ordered,ensure_ascii=False,indent=2)+";\n")
@@ -134,9 +146,11 @@ def promote(output_dir: Path, approved_js: Path):
     (output_dir/"promotion-report.json").write_text(json.dumps({
         "approvedTotal":len(ordered),"newlyApproved":len(added),
         "newByYear":dict(sorted(Counter(int(id.split("-")[1]) for id in added).items())),
-        "rejected":dict(rejected),"approvalScope":"Single-page, exact-PDF-text, no embedded images, no missing numerals"
+        "rejected":dict(rejected), "currentlyUnapproved":len(unapproved),
+        "unapprovedQuestions":sorted(unapproved,key=lambda x:x["id"]),
+        "approvalScope":"Single-page, exact-PDF-text, no embedded images, no missing numerals"
     },ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print("Promoted 80 strict-source-matched original questions; 16 previous retained; total 96. Exclusions:",dict(rejected))
+    print(f"Approved 96 strict-source-matched original questions, newly added {len(added)}, pending {len(unapproved)}; exclusions:",dict(rejected))
 
 
 if __name__=="__main__":
