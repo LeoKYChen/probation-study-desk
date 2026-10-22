@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="晚間學習室：每日模擬題、申論作答與參考架構。"><title>晚間學習室｜觀護人練習臺 v2.5</title><link rel="stylesheet" href="reading.css"><link rel="stylesheet" href="practice.css"><script src="../file-compat.js"></script><script>if(location.protocol==='file:')document.write('<scr'+'ipt src="../file-data/daily.generated.js"></scr'+'ipt>');</script><script src="model.js" defer></script><script src="review-policy.js" defer></script><script src="news.js" defer></script><script src="../ai-prompt-customizer.js" defer></script>
-<script src="app.js" defer></script><link rel="stylesheet" href="../shared-ui.css">
+<script src="../dual-ai-bridge.js" defer></script><script src="app.js" defer></script><link rel="stylesheet" href="../shared-ui.css">
 <link rel="manifest" href="../manifest.webmanifest"><meta name="theme-color" content="#315b7c"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="../pwa/icon-180.png"><link rel="stylesheet" href="../offline.css"><script src="../offline.js" defer></script><link rel="stylesheet" href="../assets/study-theme.css">
 </head>
 <body class="study-reading">
@@ -61,7 +61,7 @@
     <label for="aiReviewMode">批改方式</label>
 <select id="aiReviewMode" aria-label="選擇 AI 批改方式"><option value="full">完整申論批改</option><option value="direction">答題方向批改（四格草稿／大綱）</option></select>
 <p>答題方向模式優先檢查四格草稿，不以完整作文的標準評分。</p>
-    <button id="copyAI" type="button">一鍵複製 AI 批改</button>
+    <button id="copyAI" type="button">一鍵複製 AI 批改</button><button id="openDualAI" type="button">送交雙 AI 交叉審查</button>
     <p id="copyStatus" role="status" aria-live="polite"></p>
     <label for="aiFeedback">AI 批改結果（將 ChatGPT 的完整評語貼回保存）</label>
     <textarea id="aiFeedback" maxlength="80000" rows="7" placeholder="將 AI 評語貼在這裡，會自動儲存到本題。"></textarea>

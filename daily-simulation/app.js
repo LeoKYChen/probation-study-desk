@@ -179,6 +179,36 @@ async function copyAI(){
   }
 }
 
+function openDualAIReview(){
+  if(!save()){$('copyStatus').textContent='本題尚未成功保存，請先備份作答。';return;}
+  const q=data?.questions.find(item=>item.id===current);
+  if(!q)return;
+  const mode=$('aiReviewMode')?.value==='direction'?'direction':'full';
+  const drafts=readDrafts();
+  const directionText=DRAFT_FIELDS.map(([,key,label])=>String(drafts[key]||'').trim()?label+'\n'+String(drafts[key]).trim():'').filter(Boolean).join('\n\n');
+  const answer=mode==='direction'?(directionText||$('answer').value):$('answer').value;
+  if(!answer.trim()){$('copyStatus').textContent='請先填寫答案或答題方向，再送交雙 AI。';return;}
+  const id=q.id,savedAnswer=$('answer').value,questionSignature=M.signature(q);
+  const instruction=window.AIPromptCustom?.enhance(
+    '你是臺灣司法特考三等觀護人申論學習助教。兩位 AI 先各自依題意辨識各設問，檢查爭點、法律或相關學理、涵攝、結構與遺漏，再彼此指出具體錯誤及修正理由。應標明查證狀態、保持合理分歧；不得捏造考古題出處、法條、裁判或研究。'+(mode==='direction'?'僅評四格草稿／答題方向，不給百分制分數或以完整答案標準扣分。':'如無可信配分僅給文字評語，無法驗證來源時明示限制。'),
+    {mode,subject:M.subject(q)})||'請獨立批改本次練習，再互相檢查並修正。';
+  const documentText=['【題目類型】非官方每日模擬題','【科目】'+M.subject(q),'【題目日期】'+q.date,'【題目 ID】'+id,'【來源標示，尚未核對官方原卷】'+(q.sourceReference||'未提供'),'【本次題幹】'+simulationQuestion(q),'【我的'+(mode==='direction'?'答題方向':'完整答案')+'】'+answer].join('\n\n');
+  try{window.PSDDualAI.start({payload:{title:'每日模擬｜'+M.title(q),instruction,documentText},onResult:async reviewText=>{
+    if(current===id&&$('reader').open&&!save())throw Error('目前頁面的作答未保存，請先另行備份');
+    const stored=M.records(JSON.parse(localStorage.getItem(KEY)||'{}'));
+    const target=stored[id];
+    if(!target||target.answer!==savedAnswer||target.questionSnapshot!==questionSignature)throw Error('題目或作答已變更，為避免錯配，已停止自動回寫；請在工作臺匯出 MD 保存');
+    const oldFeedback=typeof target.aiFeedback==='string'?target.aiFeedback:'';
+    const combined=(oldFeedback?oldFeedback+'\n\n---\n\n':'')+reviewText;
+    if(combined.length>80000)throw Error('評語超過原本 80,000 字元的欄位上限，請從工作臺下載 MD 手動整理');
+    const next={...stored,[id]:{...target,aiFeedback:combined,updatedAt:new Date().toISOString()}};
+    persist(next);records=next;
+    if(current===id&&$('reader').open){$('aiFeedback').value=combined;$('feedbackStatus').textContent='六階段雙 AI 意見已附加，待人工核對來源';}
+    notify('雙 AI 交叉意見已附加到原題，舊評語與答案保持不變。');
+  }});$('copyStatus').textContent='已開啟雙 AI 工作臺，完成六階段審查後可回傳本題。';}
+  catch(e){$('copyStatus').textContent=e.message;}
+}
+
 window.AIPromptCustom?.mount({button:$('copyAI'),modeElement:$('aiReviewMode'),getMode:()=>$('aiReviewMode')?.value,getSubject:()=>{const q=data?.questions.find(item=>item.id===current);return q?M.subject(q):'';}});
 function essayMarkdown(q,record){
   const drafts=draftsFor(record),pieces=[
@@ -219,7 +249,7 @@ function download(d,name){const url=URL.createObjectURL(new Blob([JSON.stringify
 document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.docOpen)ReadingNews.open(b.dataset.docOpen);else if(b.dataset.docSave)ReadingNews.mark(b.dataset.docSave,'saved');else if(b.dataset.docRead)ReadingNews.mark(b.dataset.docRead,'read');else if(b.dataset.open)openQuestion(b.dataset.open);else if(b.dataset.save)toggleSaved(b.dataset.save);else if(b.dataset.tab)choose(b.dataset.tab);else if(b.dataset.subject!==undefined)choose(ReadingNews.isReading(state.tab)?state.tab:'全部題目',b.dataset.subject);});
 $('search').oninput=()=>{state.query=$('search').value.trim();render();};$('date').onchange=()=>{state.date=$('date').value;render();};$('reviewMonth').onchange=()=>{state.reviewMonth=$('reviewMonth').value;render();};$('sort').onchange=()=>{state.sort=$('sort').value;render();};$('clearFilters').onclick=()=>{Object.assign(state,{tab:ReadingNews.isReading(state.tab)?'晚間摘要／新聞':'全部題目',subject:'',date:'',query:'',sort:'newest'});$('search').value='';$('sort').value='newest';render();};
 $('refresh').onclick=()=>ReadingNews.isReading(state.tab)?ReadingNews.load():load(true);$('start').onclick=()=>{if(ReadingNews.isReading(state.tab)){const d=ReadingNews.latest();if(d)ReadingNews.open(d.id);return;}const q=[...data.questions].sort((a,b)=>b.date.localeCompare(a.date)||a.id.localeCompare(b.id))[0];openQuestion(q.id);};$('menu').onclick=()=>menu(false);$('scrim').onclick=()=>menu();document.addEventListener('keydown',e=>{if(e.key==='Escape')menu();});
-$('close').onclick=()=>$('reader').close();$('reader').addEventListener('close',()=>document.body.classList.remove('modal-open'));$('reader').addEventListener('click',e=>{if(e.target===$('reader'))$('reader').close();});$('bookmark').onclick=()=>toggleSaved(current);$('answer').oninput=save;$('review').onchange=save;for(const [field] of DRAFT_FIELDS)$(field).oninput=save;$('aiFeedback').oninput=save;$('copyAI').onclick=copyAI;$('exportEssay').onclick=exportEssay;$('startTimer').onclick=startTimer;$('resetTimer').onclick=resetTimer;document.addEventListener('visibilitychange',()=>{if(!document.hidden&&current&&$('reader').open)updateTimer();});setInterval(()=>{if(current&&$('reader').open)updateTimer();},1000);
+$('close').onclick=()=>$('reader').close();$('reader').addEventListener('close',()=>document.body.classList.remove('modal-open'));$('reader').addEventListener('click',e=>{if(e.target===$('reader'))$('reader').close();});$('bookmark').onclick=()=>toggleSaved(current);$('answer').oninput=save;$('review').onchange=save;for(const [field] of DRAFT_FIELDS)$(field).oninput=save;$('aiFeedback').oninput=save;$('copyAI').onclick=copyAI;$('openDualAI').onclick=openDualAIReview;$('exportEssay').onclick=exportEssay;$('startTimer').onclick=startTimer;$('resetTimer').onclick=resetTimer;document.addEventListener('visibilitychange',()=>{if(!document.hidden&&current&&$('reader').open)updateTimer();});setInterval(()=>{if(current&&$('reader').open)updateTimer();},1000);
 for(const [id,delta] of [['previous',-1],['next',1]])$(id).onclick=()=>{const list=visible(),i=list.findIndex(q=>q.id===current),q=list[i+delta];if(q)openQuestion(q.id);};
 $('export').onclick=()=>{if($('reader').open&&!save())return;download({format:'probation-daily-github-records',schemaVersion:1,exportedAt:new Date().toISOString(),records},'daily-simulation-records-'+new Date().toISOString().slice(0,10)+'.json');notify('已匯出每日學習室的每日模擬題作答，可匯回 v2.5；收藏不包含在作答備份。');};
 $('import').onclick=()=>$('upload').click();$('upload').onchange=async()=>{try{const file=$('upload').files[0];if(!file)return;if(file.size>4*1024*1024)throw Error('檔案超過4MB');const incoming=M.backup(JSON.parse(await file.text())),n=Object.keys(incoming).length;if(!n)throw Error('備份中沒有每日模擬題作答');const matched=Object.keys(incoming).filter(id=>data.questions.some(q=>q.id===id)).length;if(!confirm(`匯入 ${n} 筆每日模擬題作答，其中 ${matched} 筆對應目前題庫。同題以備份內容為主，現有紀錄先保留一份備份。考古題紀錄不匯入此每日學習室。是否繼續？`))return;if($('reader').open&&!save())throw Error('目前作答尚未成功保存，請先備份文字');localStorage.setItem('daily-reading-test:before-import',JSON.stringify(records));const next={...records,...incoming};persist(next);records=next;render();if(current&&$('reader').open)openQuestion(current);notify(`已匯入 ${n} 筆每日模擬題作答；${matched} 筆對應目前題庫。其餘紀錄也保留於匯出檔。`);}catch(e){notify('匯入未完成：'+e.message);}finally{$('upload').value='';}};
