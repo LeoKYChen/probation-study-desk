@@ -79,9 +79,10 @@ def discover(html: str, base: str, exam_code: str) -> dict[str, str]:
             if info["examKind"] != current_group:
                 continue
             key = info["key"]
-            if key in selected and selected[key] != url:
-                raise ValueError("同年度、同類科與科目出現衝突原卷：" + key)
-            selected[key] = url
+            # Shared papers may be linked in multiple groups. Probe PDF headers later.
+            links = selected.setdefault(key, [])
+            if url not in links:
+                links.append(url)
     return selected
 
 def fetch(session: requests.Session, url: str, binary: bool = False):
@@ -184,31 +185,42 @@ def collect(output: Path, only_year: int | None = None):
         for spec in CATALOG["subjects"]:
             key = spec["key"]
             seed = CATALOG["knownPaperUrls"].get(f"{year}:{key}")
-            # Seed only explicitly grounded official source; never manufacture c/s params.
-            url = discovered.get(key) or seed
+            # Never guess a PDF URL; look up explicitly verified URL or catalogue links.
+            sources = ([seed] if seed else []) + discovered.get(key, [])
+            sources = list(dict.fromkeys(x for x in sources if x))
             row = {"year": year, "subject": spec["subject"],
                    "examName": spec["examName"], "catalogUrl": entry["catalogUrl"],
-                   "sourceUrl": url, "status": "unresolved", "questionCount": 0,
-                   "errors": [], "catalogueError": catalogue_error}
-            if not url:
+                   "sourceUrl": None, "status": "unresolved", "questionCount": 0,
+                   "errors": [], "catalogueError": catalogue_error,
+                   "candidateUrls": len(sources)}
+            if not sources:
                 row["errors"].append("官方目錄尚未辨識該類科原卷（不是確認未設考科）")
                 report.append(row)
                 continue
-            try:
-                pdf = fetch(session, url, binary=True)
-                extracted = paper_text(pdf)
-                problems = validate_header(extracted, year, spec)
-                paperhash = sha256(pdf)
-                qs, warnings = extract_questions(extracted, year, spec, url, paperhash)
-                row["errors"] = problems + warnings
-                row["pdfSha256"] = paperhash
-                row["questionCount"] = len(qs)
-                row["status"] = "extracted_pending_review" if not row["errors"] else "manual_resolution_required"
-                if qs:
-                    all_questions.extend(qs)
-            except Exception as exc:
-                row["errors"].append(str(exc))
+            attempted = []
+            for url in sources:
+                try:
+                    pdf = fetch(session, url, binary=True)
+                    extracted = paper_text(pdf)
+                    problems = validate_header(extracted, year, spec)
+                    if problems:
+                        attempted.append(";".join(problems) + ":" + url)
+                        continue  # wrong category, shared exam, or wrong PDF
+                    paperhash = sha256(pdf)
+                    qs, warnings = extract_questions(extracted, year, spec, url, paperhash)
+                    row["sourceUrl"] = url
+                    row["errors"] = warnings
+                    row["pdfSha256"] = paperhash
+                    row["questionCount"] = len(qs)
+                    row["status"] = "extracted_pending_review" if not warnings else "manual_resolution_required"
+                    if qs:
+                        all_questions.extend(qs)
+                    break
+                except Exception as exc:
+                    attempted.append(str(exc) + ":" + url)
+            if row["sourceUrl"] is None:
                 row["status"] = "fetch_or_extract_failed"
+                row["errors"] = attempted[:8] or ["所有官方原卷候選均不符"]
             report.append(row)
     # Machine extracted text never ships to production bank without review.
     (output / "candidates.json").write_text(json.dumps(all_questions, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
