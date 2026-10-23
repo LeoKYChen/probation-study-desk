@@ -45,7 +45,7 @@ async function takeDownload(page,click){
   await untouched.reload();
   const emptySummary=await untouched.locator('#summary').innerText();
   assert.match(emptySummary,/已儲存的學習／閱讀紀錄：0 筆/);
-  assert.match(emptySummary,/尚未開始的工作階段：2 筆/);
+  assert.doesNotMatch(emptySummary,/尚未開始的工作階段：2 筆/);
   assert.doesNotMatch(await untouched.locator('#modules').innerText(),/空白儲存區|舊版考古題/);
   const mobileLayout=await untouched.evaluate(()=>{
    const controls=['#export','#refresh','label[for="importFile"]','#downloadConflicts'];
@@ -58,6 +58,23 @@ async function takeDownload(page,click){
   assert.deepEqual(JSON.parse(zeroBundle.data[key]),emptySessions,'export must preserve empty sessions unchanged');
   assert.equal(zeroBundle.data['probation-study-desk-v24'],'{}','an empty record map must be kept in backup');
   assert.equal(JSON.parse(zeroBundle.data['probation-study-desk-v3'])['old-Q1'].issue,'歷史答案','hidden legacy records must still be backed up');
+  // Only after explicit backup, confirmations and typed word does a reset become available.
+  await untouched.evaluate(()=>localStorage.setItem('jj-font','18'));
+  await untouched.reload();
+  assert.equal(await untouched.locator('#clearLearning').isDisabled(),true);
+  await takeDownload(untouched,()=>untouched.locator('#clearBackupBefore').click());
+  await untouched.locator('#clearBackupConfirmed').check();
+  await untouched.locator('#clearTabsConfirmed').check();
+  await untouched.locator('#clearTyped').fill('清除');
+  assert.equal(await untouched.locator('#clearLearning').isEnabled(),true);
+  untouched.on('dialog',dialog=>dialog.accept());
+  await untouched.locator('#clearLearning').click();
+  const cleared=await untouched.evaluate(k=>({old:localStorage.getItem(k),legacy:localStorage.getItem('probation-study-desk-v24'),font:localStorage.getItem('jj-font')}),key);
+  assert.equal(cleared.old,null);
+  assert.equal(cleared.legacy,null);
+  assert.equal(cleared.font,'18');
+  assert.match(await untouched.locator('#message').innerText(),/已清除/);
+  assert.equal(await untouched.locator('#clearLearning').isDisabled(),true);
   await emptyCtx.close();
   const a=await browser.newContext({viewport:{width:390,height:844},locale:'zh-TW'});
   const page=await a.newPage();
@@ -97,7 +114,16 @@ async function takeDownload(page,click){
   assert.equal(exportedConflicts.entries.length,1);
   await phone.reload();
   assert.match(await phone.locator('#summary').innerText(),/已儲存的學習／閱讀紀錄：3 筆/);
-  console.log('PASS browser: Mac→phone JSON transfer, roundtrip reload, conflict archive, local-only file download, mobile viewport');
+  const safeExport=await takeDownload(phone,()=>phone.locator('#clearBackupBefore').click());
+  assert(safeExport.data[key],'clear backup must contain saved answers');
+  await phone.locator('#clearBackupConfirmed').check();
+  await phone.locator('#clearTabsConfirmed').check();
+  await phone.locator('#clearTyped').fill('清除');
+  await phone.locator('#clearLearning').click();
+  assert.equal(await phone.evaluate(k=>localStorage.getItem(k),key),null);
+  assert.equal(await phone.evaluate(k=>localStorage.getItem(k),archive),null);
+  assert.match(await phone.locator('#message').innerText(),/已清除/);
+  console.log('PASS browser: mobile backup/import, legacy hidden, confirmed local clearing, conflict removal and preservation');
   await a.close();await b.close();
  }finally{await browser.close();server.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;server.close()});
