@@ -11,7 +11,8 @@ const server=http.createServer((req,res)=>{
  if(!upgraded){const data=oldFiles.get(name);res.writeHead(data?200:404,headers).end(data||'missing fixture');return;}
  // Upgraded service worker also caches shared same-origin resources outside /professional/.
  const pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname);
- const rel=pathname.startsWith('/professional/')?'professional/'+pathname.slice('/professional/'.length):
+ const rel=pathname==='/professional/'?'professional/index.html':
+   pathname.startsWith('/professional/')?'professional/'+pathname.slice('/professional/'.length):
    (pathname.startsWith('/assets/')||pathname.startsWith('/police-exams/')||pathname==='/ai-prompt-customizer.js')?pathname.slice(1):null;
  if(!rel){res.writeHead(403).end('outside allowed fixtures');return;}
  const file=path.resolve(root,rel);
