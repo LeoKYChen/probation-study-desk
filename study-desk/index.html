@@ -18,7 +18,28 @@
 <section id="settings"><p class="eyebrow">PROGRESS / BACKUP</p><h2>進度與資料保存</h2><p>勾選要練習的考科，再於選題區確認已學主題，或把主題對應到已看完的函授堂次。看完課程不會直接被判定為掌握。</p><p id="lecture-status" role="status"></p><button id="refresh-lectures" class="secondary">更新函授進度並保存備份快照</button>
 <div class="columns"><label>這次可用時間（分鐘）<input id="planning-minutes" type="number" min="5" max="240" value="30"></label><label>最多搭配複習題數<input id="review-limit" type="number" min="0" max="5" value="2"></label></div>
 <h3>再次回想的間隔</h3><div class="columns"><label>尚不會（天）<input id="interval-again" type="number" min="1" max="365" value="1"></label><label>需要提示（天）<input id="interval-hint" type="number" min="1" max="365" value="3"></label><label>可獨立說明（天）<input id="interval-independent" type="number" min="1" max="365" value="7"></label></div><p class="muted">設定只適用於之後的新訂正與新回想，不改動既有到期日期。</p><div id="subjects"></div><button id="save-preferences">儲存考科設定</button><p><a href="../lectures/">查看函授管理</a> · <a href="../backup/">原有完整備份中心</a></p>
-<div class="backup-actions"><button id="export-backup" class="secondary">匯出書桌 JSON</button><button id="choose-backup" class="secondary" aria-controls="import-backup">匯入書桌 JSON</button><button id="import-legacy" class="secondary"><span>預覽並匯入</span><span>舊紀錄</span></button><button id="clear-learning" class="secondary danger">清除學習紀錄</button></div><input id="import-backup" type="file" accept=".json,application/json" hidden><p class="muted">書桌 JSON包含書桌內已保存的內容；舊模組須先匯入。匯入會保存快照供備份與回看，目前不會自動寫回原模組。</p>
+<div class="backup-actions"><button id="export-backup" class="secondary">匯出書桌 JSON</button><button id="choose-backup" class="secondary" aria-controls="import-backup">匯入書桌 JSON</button><button id="import-legacy" class="secondary"><span>預覽並匯入</span><span>舊紀錄</span></button><button id="clear-learning" class="secondary danger">清除學習紀錄</button></div><details id="cloud-settings"><summary>跨裝置同步（選用測試功能）</summary>
+<p class="muted">不登入時，現有書桌維持原樣。登入後以帳號分開保存，修改先留在本機，再嘗試同步到指定的 Supabase 專案。不同裝置需使用同一個帳號及相同雲端專案。尚未完成真實手機及正式帳號驗收。</p>
+<p class="muted">登入不會自動上傳原本的未登入紀錄。請先匯出 JSON，之後再自行決定是否複製。禁止上傳可識別少年個案、公務秘密或機密卷證。</p>
+<p id="cloud-status" role="status" aria-live="polite">尚未啟用雲端同步；此裝置的紀錄保持本機保存。</p>
+<div id="cloud-login">
+<label>Supabase Project URL<input id="cloud-url" type="url" placeholder="https://your-project.supabase.co" autocomplete="url"></label>
+<label>Supabase Publishable key（公開金鑰，非管理金鑰）<input id="cloud-key" type="text" placeholder="sb_publishable_…" autocomplete="off"></label>
+<button id="cloud-save-config" type="button" class="secondary">儲存公開連線設定</button>
+<label>登入 Email<input id="cloud-email" type="email" autocomplete="email" placeholder="you@example.com"></label>
+<button id="cloud-send-code" type="button" class="secondary">寄送 Email 驗證碼</button>
+<label>信箱收到的驗證碼<input id="cloud-code" inputmode="numeric" pattern="[0-9]*" maxlength="8" autocomplete="one-time-code"></label>
+<label class="check"><input id="cloud-consent" type="checkbox">我瞭解：登入後，帳號書桌資料將上傳至我指定的雲端專案，未登入書桌仍保留且不會自動移轉。</label>
+<button id="cloud-verify" type="button">驗證並開啟帳號書桌</button>
+</div>
+<div id="cloud-connected" hidden>
+<p class="muted">已進入帳號書桌。系統會在有網路時定期嘗試同步；遇到衝突必須手動選擇接續版本，雙方紀錄都會保留。</p>
+<div class="cloud-actions"><button id="cloud-sync-now" type="button">立即同步</button><button id="cloud-copy-guest" type="button" class="secondary">複製本機舊書桌至帳號（不覆寫）</button><button id="cloud-logout" type="button" class="secondary">登出，返回本機書桌</button></div>
+</div>
+<div class="cloud-actions"><button id="cloud-backup-guest" type="button" class="secondary">下載原本未登入書桌的 JSON 備份</button></div>
+<p class="muted">每個帳號的離線資料分開保存。帳號同步時暫停「清除學習紀錄」，避免誤以為只清本機就能刪除雲端。網路中斷時請勿清除瀏覽器網站資料。</p>
+</details>
+<input id="import-backup" type="file" accept=".json,application/json" hidden><p class="muted">書桌 JSON包含書桌內已保存的內容；舊模組須先匯入。匯入會保存快照供備份與回看，目前不會自動寫回原模組。</p>
 <dialog id="clear-dialog" aria-labelledby="clear-title" aria-describedby="clear-description"><h2 id="clear-title">清除學習紀錄</h2><p id="clear-description">將清除此瀏覽器「備考書桌」的作答、回饋、訂正、回想、已學／弱點標記、堂次對應及匯入的快照與版本紀錄。考科、權重、時間及複習間隔設定會保留；不會清除函授管理或其他舊模組的原始資料。</p><p>清除後無法直接復原；若要保留紀錄，請先下載 JSON 備份。</p><label>請輸入「清除」確認<input id="clear-confirm-text" type="text" autocomplete="off" placeholder="清除"></label><div class="actions"><button id="clear-backup" class="secondary">先下載備份</button><button id="clear-cancel" class="secondary">取消</button><button id="clear-confirm" class="danger" disabled>確定清除</button></div></dialog>
 <p class="muted">目前採本機保存，換裝置時請手動匯出／匯入 JSON。清除瀏覽器網站資料前，請先下載備份。</p></section>
-</main><footer>先回想，再核對；把訂正留給下一次的自己。<br>本機保存版：無需註冊帳號；跨裝置請手動匯出／匯入備份。</footer><script src="../backup/unified-core.js"></script><script src="../lectures/core.js"></script><script src="../professional/source-main-questions.js"></script><script src="../professional/source-related-questions.js"></script><script src="../police-exams/questions.approved.js"></script><script src="../police-exams/approved-loader.js"></script><script src="../ai-prompt-customizer.js"></script><script src="../dual-ai-bridge.js"></script><script type="module" src="app.js"></script></body></html>
+</main><footer>先回想，再核對；把訂正留給下一次的自己。<br>預設本機保存；可選擇登入測試跨裝置同步，仍建議定期下載 JSON 備份。</footer><script src="../backup/unified-core.js"></script><script src="../lectures/core.js"></script><script src="../professional/source-main-questions.js"></script><script src="../professional/source-related-questions.js"></script><script src="../police-exams/questions.approved.js"></script><script src="../police-exams/approved-loader.js"></script><script src="../ai-prompt-customizer.js"></script><script src="../dual-ai-bridge.js"></script><script type="module" src="app.js"></script></body></html>
