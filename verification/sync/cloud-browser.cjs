@@ -101,7 +101,8 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   assert.match(await a.locator('#notes').textContent(),/心理學/);
   await a.waitForFunction(()=>document.querySelector('#answer').value==='在另一部裝置接續修改。');
   assert.equal(await a.locator('#answer').inputValue(),'在另一部裝置接續修改。');
-  // A partially written correction must survive an incoming remote update.
+  // A partially written correction and unsaved study settings must survive an incoming remote update.
+  await a.locator('[data-subject="心理學"] .enabled').check();
   await a.locator('#gap').fill('我正在整理的新缺口');
   await b.locator('#answer').fill('電腦第二次修改。');
   await b.locator('#save').click();
@@ -110,6 +111,7 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   await a.locator('#cloud-sync-now').click();
   await a.waitForFunction(()=>document.querySelector('#cloud-status').textContent.includes('同步完成'));
   assert.equal(await a.locator('#gap').inputValue(),'我正在整理的新缺口','unsent editor notes must never be cleared');
+  assert.equal(await a.locator('[data-subject="心理學"] .enabled').isChecked(),true,'unsaved preferences must not be reset by polling');
   assert.match(await a.locator('#status').textContent(),/未送出的文字/);
   await a.locator('#gap').clear();
   // Offline edits must stay queued until connectivity returns.
