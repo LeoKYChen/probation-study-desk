@@ -2,7 +2,7 @@ name: Synchronize approved Cloudflare production from GitHub main
 
 on:
   push:
-    branches: [main, release/cloudflare-main-sync-20261017]
+    branches: [main]
   pull_request:
     branches: [main]
     paths:
