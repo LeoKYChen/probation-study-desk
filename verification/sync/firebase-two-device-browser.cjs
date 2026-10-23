@@ -131,15 +131,13 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   const journalBefore=await b.evaluate(()=>{
    window.PSDLocalJournal.note('jj-read');
    window.PSDLocalJournal.note('desk');
-   const marker='psd-firebase-local-journal-v1:synthetic-project:synthetic-user-id';
-   return localStorage.getItem(marker);
+   return JSON.stringify(window.PSDLocalJournal.snapshot());
   });
   assert(journalBefore.includes('jj-read')&&journalBefore.includes('desk'),'sync journal contains only module identifiers');
   assert(!journalBefore.includes('電腦完成的訂正'),'sync journal never contains answer text');
   await preview(b);await apply(b);
   const journalAfter=await b.evaluate(()=>{
-   const marker='psd-firebase-local-journal-v1:synthetic-project:synthetic-user-id';
-   return JSON.parse(localStorage.getItem(marker)).entries;
+   return window.PSDLocalJournal.snapshot().entries;
   });
   assert.equal(Object.keys(journalAfter).length,0,'successful sync acknowledges queued metadata');
   await preview(a);await apply(a);
