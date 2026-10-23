@@ -8,9 +8,17 @@ import {prepare,commit} from '../cloud-sync/whole-site-core.mjs';
 
 const core=window.PSDUnifiedBackup;
 const $=id=>document.getElementById(id);
-const CFG='psd-firebase-public-web-config-v1';
+const CFG='psd-firebase-public-web-config-v1',BOUND='psd-firebase-local-data-bound-v1';
 let connection=null,plan=null,adapter=null,cloudUser=null,snapshotSaved=false,busy=false;
 const safeLabel=e=>e instanceof Error?e.message:String(e);
+function assertIdentity(){
+ if(!cloudUser || !connection)throw Error('請先登入');
+ let bound;
+ try{bound=JSON.parse(localStorage.getItem(BOUND)||'null');}
+ catch{throw Error('此裝置帳號綁定資料已損壞；請先保留完整 JSON 備份，不可繼續同步');}
+ if(bound && (bound.uid!==cloudUser.uid||bound.projectId!==connection.projectId))
+  throw Error('此瀏覽器的學習資料曾與另一個 Google 帳號／Firebase 專案同步。為防止混入不同使用者的答案，已阻止切換後同步。請先分別備份，再改用其他瀏覽器設定檔或清理測試環境。');
+}
 function status(message,bad=false){
  const el=$('firebase-status');el.textContent=message;el.dataset.error=bad?'1':'0';
 }
@@ -68,6 +76,7 @@ async function connect(){
  const user=await connection.login();
  if(!user)throw Error('沒有取得 Google 登入資訊');
  cloudUser=user;adapter=connection.adapter();
+ assertIdentity();
  localStorage.setItem(CFG,JSON.stringify(config));
  $('firebase-user').textContent='已登入：'+user.email+'（'+connection.projectId+'）';
  plan=null;snapshotSaved=false;
@@ -82,6 +91,7 @@ $('firebase-signout').addEventListener('click',()=>perform(async()=>{
 }));
 $('firebase-preview-btn').addEventListener('click',()=>perform(async()=>{
  if(!adapter||!cloudUser)throw Error('請先用 Google 帳號登入');
+ assertIdentity();
  if(!navigator.onLine)throw Error('離線中，無法讀取雲端最新版本');
  const local=core.storageSnapshot(localStorage);
  const docs=await adapter.readAll();
@@ -96,11 +106,14 @@ $('firebase-backup').addEventListener('click',()=>perform(async()=>{
 }));
 $('firebase-apply').addEventListener('click',()=>perform(async()=>{
  if(!plan||!adapter)throw Error('請先預覽差異');
+ assertIdentity();
  if(!snapshotSaved||!$('firebase-confirm').checked)throw Error('請先下載、實際檢查 JSON 備份，關閉其他作答分頁並勾選確認');
  if(!navigator.onLine)throw Error('需要連線才能確認最新雲端版本');
  if(!confirm('確認執行本次合併？原始資料已另外備份；遇衝突會將本機差異封存，雲端版本保持為主要紀錄。'))return;
  const result=await commit(core,localStorage,adapter,plan);
- saveShadow(result.shadow);plan=null;snapshotSaved=false;
+ saveShadow(result.shadow);
+ localStorage.setItem(BOUND,JSON.stringify({uid:cloudUser.uid,projectId:connection.projectId}));
+ plan=null;snapshotSaved=false;
  $('firebase-preview').replaceChildren();$('firebase-confirm').checked=false;
  status('本次同步完成：上傳 '+result.uploaded+' 類、更新本機 '+result.downloaded+' 類，版本差異 '+result.conflicts+' 類。請重新開啟各學習模組檢查，不要清除原始 JSON。');
 }));
