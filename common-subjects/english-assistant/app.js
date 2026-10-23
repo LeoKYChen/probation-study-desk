@@ -14,7 +14,7 @@ function load(){
 }
 function save(draft){
   if(readOnly)return false;
-  try{localStorage.setItem(core.STORAGE_KEY,JSON.stringify(draft));state=draft;return true}
+  try{localStorage.setItem(core.STORAGE_KEY,JSON.stringify(draft));state=draft;window.PSDLocalJournal?.note(core.STORAGE_KEY);return true}
   catch(err){readOnly=true;notice("無法儲存學習紀錄。可能是瀏覽器儲存被阻擋或空間不足；操作未保存。");render();return false}
 }
 function clone(){return JSON.parse(JSON.stringify(state))}
