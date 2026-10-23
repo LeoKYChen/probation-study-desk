@@ -171,6 +171,7 @@ export class CloudDeskUI {
  }
  async logout() {
   if(!this.active)return;
+  if(this.running)await this.running;
   await this.beforeSwitch();
   clearTimeout(this.delay);this.delay=null;
   // Keep the account IndexedDB namespace and its unsent outbox on this device.
