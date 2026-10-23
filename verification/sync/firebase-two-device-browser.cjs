@@ -134,6 +134,14 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   await a.waitForFunction(()=>document.querySelector('#firebase-user').textContent.includes('study@example.test'));
   assert.equal(trace.length,writesBeforeReload,'restoring a prior login must not upload without explicit consent');
   assert.equal(await readDesk(a),'電腦完成的訂正','reloading an opted-in account cannot erase local answer');
+  await a.locator('#firebase-signout').click();
+  await a.waitForFunction(()=>document.querySelector('#firebase-user').textContent.includes('未登入'));
+  assert.equal(await a.evaluate(()=>localStorage.getItem('psd-firebase-restore-login-v1')),null);
+  const previousWrites=trace.length;
+  await a.reload();
+  await a.waitForFunction(()=>document.querySelector('#firebase-user').textContent.includes('未登入'));
+  assert.equal(trace.length,previousWrites,'signing out must disable account restoration and automatic uploads');
+  assert.equal(await readDesk(a),'電腦完成的訂正','logout must not erase guest study desk');
   assert.equal(outside.length,0,'synthetic transport never contacts real Firebase');
   assert.deepEqual(errors,[]);
   console.log('PASS Firebase whole-site UI: consent, both JSON backups, 15 modules + IndexedDB, two devices');
