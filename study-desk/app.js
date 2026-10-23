@@ -25,7 +25,17 @@ function text(tag,value,parent) {const el=document.createElement(tag);el.textCon
 function button(label,parent,fn) {const b=text('button',label,parent);b.type='button';b.addEventListener('click',async()=>{if(b.disabled)return;b.disabled=true;try{await action(fn);}finally{b.disabled=false;}});return b;}
 async function openNamespace(name) {
  if(engine) await flush();
- store?.close();store=await IDBStore.open(name);engine=new DeskRecords(store);current=null;currentId=null;baseline=null;
+ store?.close();store=await IDBStore.open(name);
+ // Metadata-only signal AFTER IndexedDB transaction succeeds; no answers in journal.
+ if(name==='guest'){
+  const update=store.update.bind(store);
+  store.update=async function(change){
+   const result=await update(change);
+   window.PSDLocalJournal?.note('desk');
+   return result;
+  };
+ }
+ engine=new DeskRecords(store);current=null;currentId=null;baseline=null;
  const initial=await store.read();currentEpoch=initial.clearedEpoch||null;
  preferences=validatePreferences(initial.records['settings/preferences']?.value || {subjects:{},learnedTopics:[]});
  $('editor').hidden=true;$('question-body').textContent='從今日任務或手動選題開始。';$('practice-title').textContent='作答與訂正';$('source-label').textContent='';
