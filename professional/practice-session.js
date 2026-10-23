@@ -27,7 +27,8 @@
   const hash = text => {let n=2166136261;for(const c of text){n^=c.charCodeAt(0);n=Math.imul(n,16777619);}return n>>>0;};
   const examIsProbation = q => String(q.examType||'').includes('觀護人') || (Array.isArray(q.examTypes)&&q.examTypes.includes('觀護人'));
   const candidateSubject = (q,target) => {
-    const names=[normalSubject(q.subject),normalSubject(q.subjectGroup)];
+    // Cross-subject official papers retain their original subject, yet can be practiced in either mapped exam subject.
+    const names=[q.subject,q.subjectGroup,...(Array.isArray(q.mappedSubjects)?q.mappedSubjects:[])].map(normalSubject);
     return names.some(name => name===target || (name==='刑事訴訟法與保安處分執行法'&&['刑事訴訟法','保安處分執行法'].includes(target)));
   };
   const pool = target => BANK.filter(q=>candidateSubject(q,target));
