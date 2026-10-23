@@ -3,7 +3,7 @@
   "officialSourceRule": "考選部PDF為唯一原題內容／題號／配分最終依據；LawPlayer僅為次級定位索引，不可直接匯入網頁整理題幹",
   "referenceHomepage": "https://lawplayer.com/exam/crime-prevention#system",
   "referencePurpose": "協助找出原PDF抽取漏題號、跨頁、特殊配分、特殊字元的可能分界；不新增任何題目文字",
-  "officialCandidateBacklogCount": 31,
+  "officialCandidateBacklogCount": 28,
   "sourcePages": [
     {
       "year": 108,
@@ -65,8 +65,8 @@
       "year": 114,
       "key": "criminal_law_procedure",
       "url": "https://lawplayer.com/exam/crime-prevention/114-criminal-law-procedure",
-      "status": "specific-paper-found",
-      "finding": "考選部原卷實為3道大題，配分50、25、25；先前要求一律4題的閘門過度嚴格，應以原卷實際題數為準。"
+      "status": "source-resolved-official-pdf",
+      "finding": "已回考選部原卷驗證3題（50、25、25分）並接入原題庫；LawPlayer為題數交叉檢索，不是正式試題來源。"
     }
   ],
   "questionCrossChecks": [
@@ -209,22 +209,27 @@
       "questionId": "police-114-counseling-4",
       "originalFlag": "multi-page PDF",
       "secondaryLookupKey": "114:counseling"
-    },
-    {
-      "questionId": "police-114-criminal_law_procedure-1",
-      "originalFlag": "not four numbered questions",
-      "secondaryLookupKey": "114:criminal_law_procedure"
-    },
-    {
-      "questionId": "police-114-criminal_law_procedure-2",
-      "originalFlag": "not four numbered questions",
-      "secondaryLookupKey": "114:criminal_law_procedure"
-    },
-    {
-      "questionId": "police-114-criminal_law_procedure-3",
-      "originalFlag": "not four numbered questions",
-      "secondaryLookupKey": "114:criminal_law_procedure"
     }
   ],
-  "updatedAt": "2026-10-23"
+  "updatedAt": "2026-10-23",
+  "resolvedUsingOfficialPdf": [
+    {
+      "year": 114,
+      "key": "criminal_law_procedure",
+      "questionIds": [
+        "police-114-criminal_law_procedure-1",
+        "police-114-criminal_law_procedure-2",
+        "police-114-criminal_law_procedure-3"
+      ],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114060&q=1&s=0604&t=Q",
+      "originalQuestionCount": 3,
+      "points": [
+        50,
+        25,
+        25
+      ],
+      "review": "考選部官方PDF兩頁檢視並核對文字層及SHA256；LawPlayer僅協助察覺三題、非四題",
+      "reviewedBy": "AI輔助原PDF檢查，非人工正式審稿"
+    }
+  ]
 }
