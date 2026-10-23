@@ -15,7 +15,7 @@ const $=id=>document.getElementById(id);
 const CFG='psd-firebase-public-web-config-v1',BOUND='psd-firebase-local-data-bound-v1',RESTORE='psd-firebase-restore-login-v1';
 let connection=null,plan=null,deskPlan=null,adapter=null,deskAdapter=null,deskStore=null,cloudUser=null,busy=false;
 let backedUp={modules:false,desk:false};
-let scanning=false;
+let scanning=false,journalPreview=null;
 const safeLabel=e=>e instanceof Error?e.message:String(e);
 function assertIdentity(){
  if(!cloudUser || !connection)throw Error('請先登入');
@@ -57,6 +57,7 @@ async function scanLocalPending(){
  }finally{scanning=false;}
 }
 window.addEventListener('storage',()=>{void scanLocalPending()});
+window.addEventListener('psd:local-change',()=>{void scanLocalPending()});
 window.addEventListener('online',()=>{void scanLocalPending()});
 window.addEventListener('offline',()=>{void scanLocalPending()});
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)void scanLocalPending()});
@@ -112,7 +113,7 @@ function renderPlan(){
  $('firebase-preview').append(deskText);
 }
 function invalidatePreview(){
- plan=null;deskPlan=null;backedUp={modules:false,desk:false};
+ plan=null;deskPlan=null;journalPreview=null;backedUp={modules:false,desk:false};
  $('firebase-preview').replaceChildren();
  $('firebase-confirm').checked=false;
  $('firebase-apply').disabled=true;
@@ -169,6 +170,7 @@ $('firebase-preview-btn').addEventListener('click',()=>perform(async()=>{
  if(!adapter||!cloudUser)throw Error('請先用 Google 帳號登入');
  assertIdentity();
  if(!navigator.onLine)throw Error('離線中，無法讀取雲端最新版本');
+ journalPreview=window.PSDLocalJournal?.snapshot()||null;
  const local=core.storageSnapshot(localStorage);
  const docs=await adapter.readAll();
  plan=await prepare(core,local,docs,readShadow());
@@ -200,6 +202,9 @@ $('firebase-apply').addEventListener('click',()=>perform(async()=>{
  // If desk sync fails, the legacy modules already completed safely; preview again to resume.
  const deskResult=await commitDesk(deskStore,deskAdapter,deskPlan);
  saveDeskShadow(deskResult.shadow);
+ // A later tab edit gets a new token and is never cleared by this acknowledgement.
+ window.PSDLocalJournal?.acknowledge(journalPreview);
+ journalPreview=null;
  localStorage.setItem(BOUND,JSON.stringify({uid:cloudUser.uid,projectId:connection.projectId}));
  plan=null;deskPlan=null;backedUp={modules:false,desk:false};
  $('firebase-preview').replaceChildren();$('firebase-confirm').checked=false;
