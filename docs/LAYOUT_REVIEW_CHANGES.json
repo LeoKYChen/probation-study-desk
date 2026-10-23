@@ -53,8 +53,8 @@
     {
       "path": "professional/layout-panels.js",
       "base_sha256": null,
-      "sha256": "7f66fc9a8ba8450f22bf040a0d3c35adc73a0c48f8d401996b7397a0d4785821",
-      "reason": "New presentation URL avoids installed Safari reusing old scripts; fold diagnostics, group live health node, render charts from unchanged analytics models.；2026-10-23 手機標示精簡及完整題庫資訊校正"
+      "sha256": "b1cdccbcf1ab6fb8408b55da5cfde4b880867070d243c88a9328fa47ddbe8536",
+      "reason": "New presentation URL avoids installed Safari reusing old scripts; fold diagnostics, group live health node, render charts from unchanged analytics models.；2026-10-23 手機標示精簡及完整題庫資訊校正 [2026-10-23 553 題一致性] 納入跨科原題並維持原有紀錄鍵。"
     },
     {
       "path": "professional/layout-review.css",
@@ -113,14 +113,14 @@
     {
       "path": "professional/practice-diagnostics.js",
       "base_sha256": null,
-      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.",
-      "sha256": "9ce8cfa946d7641fb2506f983fa52deb53b03364f767ee0a88c04ffa990696d5"
+      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved. [2026-10-23 553 題一致性] 納入跨科原題並維持原有紀錄鍵。",
+      "sha256": "04939a9d8ce66d0c7235ea51659fd4ef0104259b9ff3b64817e65b306253cf2d"
     },
     {
       "path": "professional/layout-panels-v2.js",
       "base_sha256": null,
-      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.；2026-10-23 手機標示精簡及完整題庫資訊校正",
-      "sha256": "7b202ce6ac6d90bd8f27f4ee4da2ac954eca2ef4bca4a8bbd0ab64810b9627d2"
+      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.；2026-10-23 手機標示精簡及完整題庫資訊校正 [2026-10-23 553 題一致性] 納入跨科原題並維持原有紀錄鍵。",
+      "sha256": "2babc9ef78fde7fcc6ae29cdc1c87b897e2545c8d8ac9734684b599c6a27b5c5"
     },
     {
       "path": "professional/practice-context.css",
@@ -139,6 +139,12 @@
       "base_sha256": null,
       "sha256": "4d8a33afbd2ad66de9199a885a3e07c2e83b4e6ada16af73dc7dfa08b4b8ab9b",
       "reason": "[2026-10-22 AI directions] Versioned script builds optional non-scored outline diagnostic prompts while keeping frozen ai-review-links.js and user-record keys untouched. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources.；2026-10-23 手機標示精簡及完整題庫資訊校正"
+    },
+    {
+      "path": "professional/essay-review.js",
+      "base_sha256": null,
+      "sha256": "95da30d58d9ce461f27ab146093bca8588e9fd2f1b4bc65c7800ab69a9304386",
+      "reason": "[2026-10-23 553 題一致性] 延續原有申論複習功能，支援警察原題跨科映射。"
     }
   ]
 }
