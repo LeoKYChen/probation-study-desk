@@ -86,3 +86,10 @@ python police-exams/tools/promote_reviewed.py --candidates candidates.json --rec
 - 110年刑法與刑事訴訟法、114年諮商與輔導：可藉網頁的分題來尋找官方PDF跨頁邊界，但不得直接拷貝整理後的網站題幹。
 
 LawPlayer **只作為找卷與辨識抽取缺陷的參考，不作為正式題庫直接來源**。既有127道已核對原題不更動；原先28道疑義已逐題比對考選部官方PDF修復，直到PDF逐字、附圖、子題及配分全數比對完成。
+
+## 2026-10-23 配分資料結構化與部署保護
+
+- 保留原本 **127 道原題的題幹、題號、穩定 ID、PDF 來源及 SHA256 不變**。原本 31 題已有 `officialPoints`，其餘 96 題從已收錄的官方題幹明示分數補入：其中 95 題的末尾明列 25 分，111 年心理學第 1 題明列 8＋12 分，合計 20 分。
+- 整合測試以官方 `catalog.json` 核對 32 個年度／科目原卷 URL，逐卷確認題號與配分合計為 **100 分**，並確認 114 年刑法與刑事訴訟法為三大題（50／25／25 分）。這是**資料與文字一致性檢查，不等於真人重新校稿或考選部提供標準答案**。
+- `offline-manifest.json` 與 Cloudflare 鏡像 `REQUIRED` 同時保護 **`dual-ai-bridge.js`** 及警察原題的 `index.html`／`catalog.json`／`questions.approved.js`／`approved-loader.js`，避免與整理分支 PR #74 合併時只保留其中一方資產。
+- `Police 127 Originals Browser Acceptance` 新增相關離線與鏡像腳本變更的驗收觸發條件。尚須以最終 head commit 的 GitHub Actions、兩種瀏覽器、真實離線與正式版本比對結果，判斷能否由 Draft 進入合併審查。
