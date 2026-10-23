@@ -22,6 +22,13 @@ table{border-collapse:collapse;width:100%;font-size:14px}th,td{border-bottom:1px
 #message{background:#eaf3ea;padding:12px 15px;border-radius:8px;min-height:49px;white-space:pre-wrap}
 #message[data-error="1"]{background:#fff1e9;color:#7d381e}
 #source{overflow-wrap:anywhere}
+.danger-button{border-color:#ae624e;background:#fff7f3;color:#783c2d;font-weight:700}
+.danger-button:disabled{opacity:.55}
+.danger-caption{color:#805042;font-size:14px}
+.clear-input{display:block;width:100%;max-width:340px;font:inherit;min-height:48px;border:1px solid #b5c6b7;border-radius:8px;padding:9px 12px}
+.clear-input:focus-visible,.file-label:focus-visible{outline:3px solid #367a61;outline-offset:3px}
+#clearSummary{font-size:14px;color:#526757}
+
 .file-hint{font-size:13px;color:#53695b;margin:6px 0 0;overflow-wrap:anywhere}
 #importFile{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 footer{color:#607267;font-size:13px}ul{columns:2;max-width:780px;padding-left:24px}
@@ -68,6 +75,20 @@ footer{color:#607267;font-size:13px}ul{columns:2;max-width:780px;padding-left:24
 <h2>③ 保留兩台裝置的不同答案</h2>
 <p>遇到相同題目或同一天的不同版本，系統<strong>不會自動覆蓋原答案</strong>。這台裝置的原紀錄保留，備份中的不同版本會另存成「衝突紀錄」，以免消失。你可以下載衝突版本檔自行保存、比較；目前不會自動替你選擇哪一份比較好。</p>
 <div class="actions"><button type="button" id="downloadConflicts">下載衝突版本 JSON</button></div>
+</div>
+<div class="card" aria-labelledby="clearTitle">
+<h2 id="clearTitle">④ 清除學習紀錄</h2>
+<p class="danger-caption">只清除<strong>目前網站網址、這台裝置</strong>的學習與閱讀紀錄，不會清除其他網址或其他裝置，也不會刪除網站題庫。</p>
+<p>將清除考古題答案、每日練習、模擬題、作文／英文學習進度、週報收藏與已讀、舊版紀錄和不同答案衝突版本；函授會清除<strong>已看分鐘數及已確認課表</strong>，保留課程、堂次、時間設定與排課規則。考試倒數、閱讀字級、自訂 AI 批改提示詞及自訂單字仍保留。</p>
+<p class="note">備考書桌使用獨立的資料庫，請在「備考書桌」頁面使用其清除功能。本頁不會清除該處紀錄；瀏覽器其他分頁中尚未儲存的文字也不受本頁控制。</p>
+<p id="clearSummary" aria-live="polite">正在確認可清除項目…</p>
+<div class="actions"><button type="button" id="clearBackupBefore">先下載清除前完整備份 JSON</button></div>
+<label class="check"><input id="clearBackupConfirmed" type="checkbox">我已確認下載的備份檔確實保存在裝置上。</label>
+<label class="check"><input id="clearTabsConfirmed" type="checkbox">我已關閉其他正在練習或編輯的本站分頁。</label>
+<label for="clearTyped">請輸入「清除」以確認這次操作：</label>
+<input class="clear-input" id="clearTyped" type="text" maxlength="2" autocomplete="off" placeholder="輸入清除">
+<div class="actions"><button type="button" id="clearLearning" class="danger-button" disabled>確認清除這台裝置的學習紀錄</button></div>
+<p class="danger-caption">此操作不能直接復原；如有需要，應以事先下載的完整備份匯入恢復。</p>
 </div>
 <p id="message" role="status" aria-live="polite">此功能僅在你的瀏覽器中處理檔案。</p>
 </main>
