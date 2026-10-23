@@ -27,7 +27,7 @@
     <div class="filter-panel"><div class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" aria-label="搜尋題目與參考內容" placeholder="搜尋案例、考點或理論，例如：標籤、榮格…"></div><div class="selects"><select id="date" aria-label="篩選日期"><option value="">所有日期</option></select><select id="sort" aria-label="排序"><option value="newest">由新到舊</option><option value="oldest">由舊到新</option></select></div></div>
     <div class="tag-row" id="tags"></div><div class="result-info"><span id="resultCount">正在載入…</span><button id="clearFilters">清除篩選</button></div><div class="document-grid" id="cards"></div>
    </section>
-   <section class="backup-panel" id="backupPanel"><div><h2>把練習留下來</h2><p>支援 v2.5 備份；匯入時只取每日模擬題紀錄。不同網址的本機紀錄須手動匯入。</p></div><div class="backup-actions"><button id="export">匯出練習紀錄</button><a href="../print/?module=daily">列印／PDF</a><button id="import">匯入 v2.5 備份</button><button id="clearRecords" class="danger">清除全部每日練習紀錄</button><input id="upload" type="file" accept=".json,application/json" hidden></div></section>
+   <section class="backup-panel" id="backupPanel"><div><h2>把練習留下來</h2><p>支援 v2.5 備份；匯入時只取每日模擬題紀錄。不同網址的本機紀錄須手動匯入。</p></div><div class="backup-actions"><button id="export" type="button">匯出練習紀錄</button><a href="../print/?module=daily">列印／PDF</a><button id="import" type="button">匯入 v2.5 備份</button><button id="clearRecords" class="danger" type="button">清除全部每日練習紀錄</button><input id="upload" type="file" accept=".json,application/json" hidden></div><p id="clearRecordsStatus" class="backup-status" role="status" aria-live="polite"></p></section>
    <footer class="page-footer"><div>每天寫一點，讓理解累積。</div><span>本頁直接提供四格草稿、30分鐘練習、一鍵複製 AI 批改與 MD 匯出</span></footer>
   </div>
  </main>

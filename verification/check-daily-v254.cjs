@@ -142,6 +142,13 @@ const inlineFns=vm.runInNewContext('(()=>{'+browserScript.slice(inlineStart,inli
 assert.equal(inlineFns.promptFor(law,'法律爭點分析答案'),promptFor(law,'法律爭點分析答案'),'both pages must use identical law rubric');
 assert.equal(inlineFns.promptFor(mixed,'學理與法律分析答案'),promptFor(mixed,'學理與法律分析答案'),'both pages must use identical cross-subject rubric');
 assert.equal(inlineFns.promptFor(law,'方向草稿','direction'),promptFor(law,'方向草稿','direction'),'daily modules must share the same outline rubric');
+// iPhone backup actions should remain a balanced four-item grid with local clear feedback.
+assert.ok(browserHtml.includes('id="clearRecordsStatus"'),'daily page must show clear feedback beside its buttons');
+assert.ok(browserScript.includes("function clearRecordsMessage("),'daily clear action must report result in-place');
+const mobileCss=read('daily-simulation/practice.css');
+assert.ok(mobileCss.includes('grid-template-columns:repeat(2,minmax(0,1fr))'),'mobile backup buttons should be two equal-width columns');
+assert.ok(mobileCss.includes('.backup-actions>a'),'print/PDF link must receive the same box styling as buttons');
+assert.ok(read('dual-ai-bridge.js').includes("safe.title"),'handoff must confirm the exact selected question title');
 assert.ok(browserHtml.includes('id="aiReviewMode"'),'daily browser review mode selector missing');
 assert.equal(inlineFns.simulationQuestion(adapted),simulationQuestion(adapted),'both pages must display the same adapted essay prompt');
 
