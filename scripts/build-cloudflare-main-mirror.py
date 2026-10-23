@@ -81,6 +81,11 @@ REQUIRED = (
     "sw.js",
     "offline-manifest.json",
     "ai-prompt-customizer.js",
+    "dual-ai-bridge.js",
+    "police-exams/index.html",
+    "police-exams/catalog.json",
+    "police-exams/questions.approved.js",
+    "police-exams/approved-loader.js",
 )
 
 def allowed(path: str) -> bool:
