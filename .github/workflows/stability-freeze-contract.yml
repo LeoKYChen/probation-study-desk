@@ -1,0 +1,33 @@
+name: Stability freeze contract (non-deploying)
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  frozen-site-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Check approved A-N freeze, critical files, mirrors and hidden UI
+        env:
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          if [ -n "$PR_BASE_SHA" ]; then
+            python3 scripts/check-stability-contract.py --base "$PR_BASE_SHA"
+          else
+            python3 scripts/check-stability-contract.py
+          fi
+      - name: Verify stable original question-bank compatibility
+        run: node verification/unified-integration.cjs .
