@@ -1,4 +1,5 @@
-import {LocalRecords,validateState,same,FORMAT} from '../cloud-sync/core.js';
+import {SyncEngine,validateState,same,FORMAT} from '../cloud-sync/core.js';
+import {setupCloudUI} from './cloud-ui.js';
 import {IDBStore} from '../cloud-sync/idb.js';
 import {SUBJECTS,isSupportedSubject,today,now,attempts,recommend,newAttempt,markdown,nextReview} from './domain.js';
 import {intervals,topicScope,validateMapping,readLectures,planLimits,validatePreferences} from './planning.js';
@@ -6,12 +7,12 @@ import {legacyRecords,convertibleAttempts} from './legacy.js';
 import {clearedLearningState,assertLearningEpoch} from './reset.js';
 import {confirmedWeaknesses,weaknessStats,weaknessTrends,recallTrajectory,validateWeaknessCategory} from './weakness.js';
 let currentEpoch=null;
-class DeskRecords extends LocalRecords {
- constructor(store){super(store,{uuid:uid});}
- queue(state,id,value,deleted=false){assertLearningEpoch(state,currentEpoch);return super.queue(state,id,value,deleted);}
+class DeskRecords extends SyncEngine {
+ constructor(store,{cloud=false}={}){super(store,{uuid:uid});this.cloud=cloud;}
+ queue(state,id,value,deleted=false){assertLearningEpoch(state,currentEpoch);super.queue(state,id,value,deleted);if(!this.cloud)delete state.outbox[id];}
 }
 const $=id=>document.getElementById(id), clone=v=>structuredClone(v);
-let store,engine,current=null,currentId=null,baseline=null,preferences={subjects:{},learnedTopics:[]},timer,saveTail=Promise.resolve(),skipped=[],recommendation,lectureData=null,lectureSource=null;
+let store,engine,cloudControl,current=null,currentId=null,baseline=null,preferences={subjects:{},learnedTopics:[]},timer,saveTail=Promise.resolve(),skipped=[],recommendation,lectureData=null,lectureSource=null;
 const uid=()=>crypto.randomUUID?.()||Array.from(crypto.getRandomValues(new Uint8Array(16)),x=>x.toString(16).padStart(2,'0')).join('');
 function report(text,bad=false) { $('status').textContent=text;$('status').classList.toggle('error',bad); }
 const canonical=s=>s.startsWith('犯罪學')?'犯罪學':s==='諮商與矯正輔導'?'諮商與輔導':s;
@@ -19,18 +20,20 @@ const questions=[...(globalThis.QUESTION_BANK||[]),...(globalThis.RELATED_QUESTI
 // Composite subjects keep their original names; no invented split into individual questions.
 for(const q of questions) if(isSupportedSubject(q.subject)&&!SUBJECTS.includes(q.subject)) SUBJECTS.push(q.subject);
 function wrap(id,fn) { $(id).addEventListener('click',async()=>{const b=$(id);if(b.disabled)return;b.disabled=true;try{await action(fn);}finally{b.disabled=false;}}); }
-async function action(fn) {try{await fn();}catch(e){report(e.message,true);}}
+async function action(fn) {try{await fn();cloudControl?.scheduleSync();}catch(e){report(e.message,true);}}
 function download(name,data,type) { const url=URL.createObjectURL(new Blob([data],{type})),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000); }
 function text(tag,value,parent) {const el=document.createElement(tag);el.textContent=value;parent.append(el);return el;}
 function button(label,parent,fn) {const b=text('button',label,parent);b.type='button';b.addEventListener('click',async()=>{if(b.disabled)return;b.disabled=true;try{await action(fn);}finally{b.disabled=false;}});return b;}
-async function openNamespace(name) {
+async function openNamespace(name,{cloud=false}={}) {
  if(engine) await flush();
- store?.close();store=await IDBStore.open(name);engine=new DeskRecords(store);current=null;currentId=null;baseline=null;
+ store?.close();store=await IDBStore.open(name);engine=new DeskRecords(store,{cloud});current=null;currentId=null;baseline=null;
  const initial=await store.read();currentEpoch=initial.clearedEpoch||null;
  preferences=validatePreferences(initial.records['settings/preferences']?.value || {subjects:{},learnedTopics:[]});
  $('editor').hidden=true;$('question-body').textContent='從今日任務或手動選題開始。';$('practice-title').textContent='作答與訂正';$('source-label').textContent='';
- $('account').textContent='此裝置的本機書桌';
- await loadLectureProgress();await refresh(); renderPreferences();renderQuestionOptions();report('本機書桌已開啟，資料保存在此瀏覽器。');
+ $('account').textContent=cloud?'帳號書桌｜資料先存此裝置':'此裝置的本機書桌';
+ $('clear-learning').disabled=cloud;
+ $('clear-learning').title=cloud?'帳號同步中禁止直接清除，避免遠端資料重新出現。可先登出，再處理本機資料。':'';
+ await loadLectureProgress();await refresh(); renderPreferences();renderQuestionOptions();report(cloud?'帳號書桌已開啟；作答先存本機，再與雲端同步。':'本機書桌已開啟，資料保存在此瀏覽器。');
 }
 function renderPreferences() {
  const rule=intervals(preferences.reviewIntervals),limits=planLimits(preferences);
@@ -180,13 +183,14 @@ async function persist() {
    engine.queue(s,target,value);
    return target;
  });
- currentId=savedId;current=value;baseline=clone(value);$('save-status').textContent='已存此裝置';
+ currentId=savedId;current=value;baseline=clone(value);$('save-status').textContent='已存此裝置';cloudControl?.scheduleSync();
 }
 async function flush() {clearTimeout(timer);timer=null;await saveTail;if(current){formToCurrent();await persist();}}
 function scheduleSave(){clearTimeout(timer);timer=setTimeout(()=>{timer=null;saveTail=saveTail.then(async()=>{formToCurrent();await persist();}).catch(e=>report(e.message,true));},400);}
 async function edit(fn) {await flush();if(!current)throw Error('請先開始一題');fn();await persist();renderHistory();await refresh();}
 async function exportBackup() {await flush();await loadLectureProgress();const snapshot=lectureSnapshot();if(snapshot)await engine.save('settings/lecture-progress',snapshot);const s=await store.read();download(today()+'_備考書桌.json',JSON.stringify({format:FORMAT,schemaVersion:1,exportedAt:now(),state:s},null,2),'application/json');}
 async function clearLearning() {
+ if(engine?.cloud)throw Error('雲端帳號模式不允許直接清除；請先匯出帳號備份並登出。');
  if($('clear-confirm-text').value!=='清除')return;
  // Drain pending autosaves before replacing the namespace atomically.
  await flush();
@@ -200,6 +204,18 @@ async function clearLearning() {
 }
 async function setup() {
  await openNamespace('guest');
+ cloudControl=setupCloudUI({
+  getStore:()=>store,getEngine:()=>engine,
+  openAccount:id=>openNamespace('account/'+id,{cloud:true}),
+  openGuest:()=>openNamespace('guest'),beforeSwitch:flush,report,
+  afterSync:async()=>{
+   const s=await store.read();
+   currentEpoch=s.clearedEpoch||null;
+   preferences=validatePreferences(s.records['settings/preferences']?.value||{subjects:{},learnedTopics:[]});
+   await loadLectureProgress();renderPreferences();renderQuestionOptions();await refresh();
+  }
+ });
+ await cloudControl.init();
  $('feedback-date').value=today();
  $('subject').addEventListener('change',fillQuestions);$('question').addEventListener('change',describeQuestion);
  $('learned-topic').addEventListener('change',()=>action(async()=>{const q=selectedQuestion();if(!q)return;const next=clone(preferences);next.learnedTopics=next.learnedTopics.filter(x=>x!==q.topicKey);if($('learned-topic').checked)next.learnedTopics.push(q.topicKey);await engine.save('settings/preferences',next);preferences=next;describeQuestion();await refresh();}));
