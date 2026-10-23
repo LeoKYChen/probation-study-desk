@@ -22,6 +22,7 @@ assert.equal(x.QUESTION_BANK.length,1,'legacy bank must remain unchanged');
 assert.equal(x.RELATED_QUESTION_BANK.length,1);
 x=run([{...original,verified:false},{...original,sourceKind:'adapted'}]);
 assert.equal(x.POLICE_ORIGINAL_QUESTION_BANK.length,0,'unreviewed/rewritten stems must not appear');
+assert.equal(x.PolicePastPaperIntegration.rejected[0].reason,'not source-verified','an AI source check must not be described as manual verification');
 x=run([{...original,examName:'警察人員考試'},{...original,officialSubject:'社會科學研究法'}]);
 assert.equal(x.POLICE_ORIGINAL_QUESTION_BANK.length,0,'other exam/subject excluded');
 x=run([original,original]);
