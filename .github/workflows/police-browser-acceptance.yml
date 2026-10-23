@@ -1,0 +1,45 @@
+name: Police 127 Originals Browser Acceptance
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - feat/police-past-papers-108-115-originals
+    paths:
+      - 'verification/e2e-police-originals.cjs'
+      - 'police-exams/questions.approved.js'
+      - 'police-exams/approved-loader.js'
+      - 'v2.5/index.html'
+      - 'v2.5/ai-simple-review-v254.js'
+      - 'v2.5/essay-workspace25.js'
+      - 'print/index.html'
+      - 'print/app.js'
+      - '.github/workflows/police-browser-acceptance.yml'
+permissions:
+  contents: read
+jobs:
+  browser:
+    name: ${{ matrix.browser }} official originals v2.5
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Playwright
+        run: |
+          npm install --no-save --ignore-scripts playwright
+          npx playwright install --with-deps ${{ matrix.browser }}
+      - name: Validate verified original IDs and full existing practice structure
+        run: |
+          node --check verification/e2e-police-originals.cjs
+          node police-exams/tools/approved-loader.test.cjs
+          node police-exams/tools/integration.test.cjs
+      - name: Test official originals through existing browser workflows
+        env:
+          POLICE_E2E_ENGINE: ${{ matrix.browser }}
+        run: node verification/e2e-police-originals.cjs
