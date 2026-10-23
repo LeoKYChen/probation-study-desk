@@ -33,8 +33,7 @@ test('whitelist blocks unknown data and question answers themselves never enter 
  assert.equal(journal.note('my-secret-api-key'),false);
  assert.equal(journal.note('my-juvenile-case-details'),false);
  assert.equal(journal.note('psd-staresto-link-coach-v06'),true);
- const key=api.keyOf(api.account(s));
- const raw=s.getItem(key);
+ const raw=JSON.stringify(journal.snapshot());
  assert(raw.includes('psd-staresto-link-coach-v06'));
  assert(!raw.includes('my-secret'));
 });
@@ -66,14 +65,16 @@ test('explicit logout disables tracking and account switching never reuses old o
  bind(s,'firebase_user_a');
  assert.equal(journal.snapshot().entries['jj-bookmarks'],'x');
 });
-test('corrupt queue fails closed without deleting original source data',()=>{
+test('corrupt queue slots are ignored without deleting original source data',()=>{
  const s=storage();bind(s);
  const key=api.keyOf(api.account(s));
- s.setItem(key,'{not json}');
- const journal=api.create(s,{token:()=> 'safe-token'});
+ s.setItem(key+'jj-read:other-tab-123','{not json}');
+ const journal=api.create(s,{tabId:'own-tab-123',token:()=> 'safe-token'});
+ assert.equal(journal.snapshot().slots.length,0);
  assert(journal.note('desk'));
  assert.equal(journal.snapshot().entries.desk,'safe-token');
  assert.equal(journal.note('__proto__'),false);
+ assert.equal(s.getItem(key+'jj-read:other-tab-123'),'{not json}','corrupted source is not silently overwritten');
 });
 
 test('two tabs writing different modules keep both queue markers without shared-key overwrite',()=>{
