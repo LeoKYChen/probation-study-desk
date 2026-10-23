@@ -230,6 +230,7 @@
    const value=parseValue(row.key,baseline[row.key]);
    let next=null;
    if(row.kind==='lectures'){
+    if(!value.lessons.some(lesson=>lesson.watchedMinutes>0)&&!value.plan)continue;
     const v=copy(value);
     v.lessons=v.lessons.map(lesson=>({...lesson,watchedMinutes:0}));
     v.plan=null;
