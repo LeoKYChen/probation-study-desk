@@ -126,6 +126,26 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   assert([...records.values()].some(r=>r.value?.answer==='電腦離線補充答案。'),'queued edit reaches cloud after reconnect');
   await a.locator('#cloud-sync-now').click();
   await a.waitForFunction(()=>document.querySelector('#answer').value==='電腦離線補充答案。');
+  // Two devices edit the same revision offline. Both versions must survive.
+  await a.context().setOffline(true);
+  await b.context().setOffline(true);
+  await a.locator('#answer').fill('手機並行修改，版本甲。');
+  await a.locator('#save').click();
+  await b.locator('#answer').fill('電腦並行修改，版本乙。');
+  await b.locator('#save').click();
+  await a.context().setOffline(false);
+  await a.locator('#cloud-sync-now').click();
+  await a.waitForFunction(()=>document.querySelector('#cloud-status').textContent.includes('同步完成'));
+  await b.context().setOffline(false);
+  await b.locator('#cloud-sync-now').click();
+  await b.waitForFunction(()=>document.querySelector('#conflicts').textContent.includes('同一紀錄有兩個版本'));
+  assert.match(await b.locator('#conflicts').textContent(),/手機並行修改，版本甲/);
+  assert.match(await b.locator('#conflicts').textContent(),/電腦並行修改，版本乙/);
+  await b.locator('#conflicts button').first().click();
+  await b.waitForFunction(()=>document.querySelector('#status').textContent.includes('差異已處理'));
+  await b.locator('#cloud-sync-now').click();
+  await b.waitForFunction(()=>document.querySelector('#cloud-status').textContent.includes('同步完成'));
+  assert([...records.keys()].some(id=>id.startsWith('conflict/')&&id.endsWith('/meta')),'both variants are archived for audit');
   await a.locator('#cloud-logout').click();
   await a.waitForFunction(()=>document.querySelector('#account').textContent==='此裝置的本機書桌');
   assert.match(await a.locator('#notes').textContent(),/心理學/);
