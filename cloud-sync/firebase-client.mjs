@@ -14,6 +14,19 @@ export function validateFirebaseConfig(value) {
   throw Error('Firebase 公開設定格式不符，請從 Firebase Console 複製 Web app config');
  return Object.fromEntries(fields.map(key=>[key,value[key].trim()]));
 }
+// Firestore IDs must not be "." or "..", nor contain slashes.
+export function encodeDocumentId(key){
+ if(typeof key!=='string'||!key||key.length>400)throw Error('同步資料鍵不符');
+ return 'k~'+encodeURIComponent(key);
+}
+export function decodeDocumentId(id){
+ if(typeof id!=='string'||!id.startsWith('k~'))throw Error('雲端文件識別碼格式不符');
+ try{
+  const key=decodeURIComponent(id.slice(2));
+  if(encodeDocumentId(key)!==id)throw Error('雲端文件識別碼不是標準編碼');
+  return key;
+ }catch{throw Error('雲端文件識別碼編碼不符')}
+}
 const SDK='https://www.gstatic.com/firebasejs/12.18.0/';
 let modules;
 async function sdk() {
@@ -51,15 +64,13 @@ export async function openFirebase(publicConfig){
   const base=fs.collection(db,'users',u.uid,type);
   // Prefix encoded keys to avoid Firestore's forbidden "."/".." document IDs.
   // This branch has never deployed a Firebase backend; no migration is needed.
-  function keyPath(key){return fs.doc(base,'k~'+encodeURIComponent(key));}
+  function keyPath(key){return fs.doc(base,encodeDocumentId(key));}
   return {
    async readAll(){
     const snap=await fs.getDocsFromServer(base);
     const result=Object.create(null);
     for(const item of snap.docs){
-     let key;
-     if(!item.id.startsWith('k~'))throw Error('雲端文件識別碼格式不符；為避免漏同步已停止');
-     try{key=decodeURIComponent(item.id.slice(2))}catch{throw Error('雲端文件識別碼編碼不符')}
+     const key=decodeDocumentId(item.id);
      if(Object.prototype.hasOwnProperty.call(result,key))throw Error('雲端資料鍵重複');
      result[key]=item.data();
     }
