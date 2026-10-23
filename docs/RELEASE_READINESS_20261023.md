@@ -3,6 +3,37 @@
 > 追蹤：[穩定版 PR #78](https://github.com/LeoKYChen/probation-study-desk/pull/78) 與 [凍結 Issue #77](https://github.com/LeoKYChen/probation-study-desk/issues/77)。
 > **本文件是發布候選驗收紀錄，不是已正式發布的聲明。**
 
+## 2026-10-23 最新狀態更新（後續於本文歷史快照）
+
+> **本節優先於下方 PR 尚未合併的歷史敘述。** 舊驗收紀錄依原日期保留，不能直接拿舊版候選 SHA 的成功紀錄當作新主分支已驗收。
+
+| 項目 | 目前可核實狀態 | 待補證據 |
+| --- | --- | --- |
+| 目前 `main` | 截至本次盤點，最新程式提交 [`a9191d342bca04b15a4237645d7533856078eb22`](https://github.com/LeoKYChen/probation-study-desk/commit/a9191d342bca04b15a4237645d7533856078eb22) | 正式發版前再次鎖定當時 `main` 的最新 SHA |
+| A–N 功能凍結 | [PR #78](https://github.com/LeoKYChen/probation-study-desk/pull/78) 已合併；保留主要功能、停開新功能、保留歷史回復基準 | 實際手機與正式網址驗收 |
+| 警察特考原題 | [PR #71](https://github.com/LeoKYChen/probation-study-desk/pull/71) 已合併；原 426 題不覆蓋，新增 127 題，v2.5／書桌合計 553 題 | [32 卷仍待人工校稿](../police-exams/reviews/OFFICIAL_32_PAPER_CHECKLIST.md)，不能宣稱全部人工驗證 |
+| Cloudflare 部署 | [`sync-cloudflare-production.yml`](../.github/workflows/sync-cloudflare-production.yml) 已在 `main` 設定正式發布僅手動 `workflow_dispatch`＋`RELEASE` | 需確認 Actions 最新作業結果、正式 deployment SHA 與 rollback 對應 |
+| GitHub Pages／Cloudflare | 沒有經本次直接現網核對可證明兩站完全一致的資料 | 以各站實際網址與 Actions／Cloudflare 控制臺分別驗證 |
+| CI | 目前讀取最新 SHA 的 PR workflow runs 與 combined statuses 未回傳可用檢查結果；**不能據此推定成功或失敗** | 需至 [Actions](https://github.com/LeoKYChen/probation-study-desk/actions) 逐項核查最新 SHA 的執行紀錄 |
+| GitHub Tag／Release | 目前無可靠清單可證實目標名稱未使用，且本次**未**建立 Tag 或 Release | 發版前開啟 [Tags](https://github.com/LeoKYChen/probation-study-desk/tags) 與 [Releases](https://github.com/LeoKYChen/probation-study-desk/releases) 人工比對 |
+
+### 維護階段的發版決策
+
+主要功能已進入**凍結與穩定維護階段**；可以準備版本說明，但**不應因程式功能大致完成就跳過發版門檻**。現階段僅執行必要修復、既有新聞更新與題源覆核，不重新啟用已暫停的雲端同步／實驗介面。
+
+**尚未完成的發版必要關卡：**（1）最新 SHA 的完整 CI；（2）iPhone Safari 與電腦主要功能；（3）本人在各正式網域匯出 JSON 並確認非空，另用合成資料測試匯入；（4）GitHub Pages 與 Cloudflare 正式部署、資產與回復點；（5）Tags／Releases 名稱核對；（6）發版文字清楚披露警察 32 卷未完成人工核稿。**真人題源校稿不得因建立 GitHub Release 被勾為已完成**。
+
+### 發布前最後原則
+
+- 正式發布以核實過的 commit 為準；`a9191d…` 僅是此輪盤點到的 `main`，不是預先核定的發版標籤。
+- GitHub Pages 可能因合併文件／程式而依既有管線更新；Cloudflare 須另外人工核准發布。**不得因已合併主分支，就認定 Cloudflare 已同步**。
+- 保留 `archive/stability-baseline-20261023` 供程式碼回復；使用者私人 `localStorage`、`IndexedDB` 學習資料仍須自行匯出 JSON，Git tag 和 Release 無法取代。
+- 若上述檢查未完成，保留 `[Unreleased]` 狀態並更新 [Issue #72](https://github.com/LeoKYChen/probation-study-desk/issues/72)；不要標成正式穩定 Release。
+
+---
+
+### 以下第 1–4 節為 PR #78 合併前的歷史驗收快照
+
 ## 1. 已確認基準與 CI 證據
 
 | 項目 | 證據 | 結果 |
