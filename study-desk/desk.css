@@ -32,3 +32,10 @@
  .subject-row>.check{font-size:12px;letter-spacing:-.3px}
  .study-shortcuts>a{font-size:12px}
 }
+
+#cloud-settings{margin-top:26px;padding:18px;border:1px solid var(--line);border-radius:14px;background:#f5f8f9}
+#cloud-status{padding:10px 14px;background:#e6eef1;border-radius:9px;overflow-wrap:anywhere}
+.cloud-actions{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
+.cloud-actions button{flex:1 1 175px}
+#cloud-consent{margin-top:15px}
+@media(max-width:600px){.cloud-actions{display:grid;grid-template-columns:minmax(0,1fr)}.cloud-actions button{width:100%}}
