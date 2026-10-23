@@ -1,5 +1,5 @@
 {
-  "approvedTotal": 96,
+  "approvedTotal": 99,
   "newlyApproved": 0,
   "newByYear": {},
   "rejected": {
@@ -8,9 +8,9 @@
     "PDF private-use glyph requires visual correction": 4,
     "paper has audit warnings": 12,
     "multi-page PDF": 8,
-    "not four numbered questions": 3
+    "not four numbered questions": 0
   },
-  "currentlyUnapproved": 31,
+  "currentlyUnapproved": 28,
   "unapprovedQuestions": [
     {
       "id": "police-108-psychology-1",
@@ -123,19 +123,23 @@
     {
       "id": "police-114-counseling-4",
       "reason": "multi-page PDF"
-    },
-    {
-      "id": "police-114-criminal_law_procedure-1",
-      "reason": "not four numbered questions"
-    },
-    {
-      "id": "police-114-criminal_law_procedure-2",
-      "reason": "not four numbered questions"
-    },
-    {
-      "id": "police-114-criminal_law_procedure-3",
-      "reason": "not four numbered questions"
     }
   ],
-  "approvalScope": "Single-page, exact-PDF-text, no embedded images, no missing numerals"
+  "approvalScope": "Single-page, exact-PDF-text, no embedded images, no missing numerals",
+  "resolved114CriminalLawProcedure": {
+    "questionIds": [
+      "police-114-criminal_law_procedure-1",
+      "police-114-criminal_law_procedure-2",
+      "police-114-criminal_law_procedure-3"
+    ],
+    "source": "考選部114年一般警察人員考試刑法與刑事訴訟法官方PDF",
+    "officialQuestionCount": 3,
+    "officialPointDistribution": [
+      50,
+      25,
+      25
+    ],
+    "pdfSha256": "1bb7d66914c10445ef3f95df92d82f36d9b095597e6f6b4420813cc5a795d109",
+    "review": "AI輔助PDF兩頁版面與原文字校核"
+  }
 }

@@ -1,4 +1,4 @@
-/* Official original exam text, with explicit PDF source review provenance. */
+/* Only PDF-source-reviewed official exam questions. */
 window.POLICE_ORIGINAL_QUESTION_BANK = [
   {
     "id": "police-108-criminal_law_procedure-1",
@@ -2387,6 +2387,117 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
     }
+  },
+  {
+    "id": "police-114-criminal_law_procedure-1",
+    "year": 114,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "刑法與刑事訴訟法",
+    "subject": "刑法與刑事訴訟法",
+    "mappedSubjects": [
+      "刑法",
+      "刑事訴訟法"
+    ],
+    "questionNo": 1,
+    "questionType": "申論題",
+    "officialPoints": 50,
+    "title": "114年｜刑法與刑事訴訟法｜第1題",
+    "body": "一、公務員甲因投資失敗，欠下鉅額債務，某日知悉經營貴金屬鑑定的好友\n  乙，正好於家中保管客戶A 的高價金屬，甲告訴乙，該貴金屬依照A 的\n  經營模式一定有保險，不如想出一個方法，對A 謊稱該批貴金屬遭人搶\n  劫，實際上由甲變賣，利益兩人均分，對A 來說也不會有太多損失。乙\n  告訴甲，可以將該批貴金屬拿一些出來，客戶應該不會發現，但謊稱整\n  批被搶走，很難說得過去。兩人商議後，同意由乙取出部分貴金屬（市\n  價約新臺幣200 萬元）藉由甲的人脈關係賣出，獲取金額由乙拿六成，\n  甲拿四成。因為在交易市場中，買家丙私下辨識出該貴金屬為A 所有，\n  且甲無法交代貴金屬來源，實際賣得總價只有50 萬，甲、乙依兩人約定\n  朋分贓款。\n  數月後甲仍需錢孔急，甲到乙的辦公室向乙借錢，稱討債公司揚言，若\n  不還錢，將加害甲的家人。乙考慮數日後，仍拒絕借錢給甲。另一方面，\n  乙心中確實不忍甲的家人遭受危難，乙將甲約至辦公室，對甲婉轉說明\n  自己手上也沒有多餘現金可供週轉，無法借錢給甲。乙以有要事處理為\n  由要外出一趟，離開辦公室前將家中存放貴金屬之保險箱的鑰匙放置桌\n  上，心想如果甲識得該鑰匙並且能夠使用鑰匙拿走貴金屬，也算幫甲一\n  個忙。甲果然認得該鑰匙為乙家中保險箱鑰匙，趁辦公室四下無人，甲\n  將鑰匙放進口袋後即離開。當天夜裡，甲攜帶鑰匙潛入乙的家中，開啟\n  保險箱並將裡面所存放之A 的貴金屬一掃而空。試問甲、乙的行為依刑\n  法如何評價？（50 分）",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114060&q=1&s=0604&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "1bb7d66914c10445ef3f95df92d82f36d9b095597e6f6b4420813cc5a795d109",
+    "textSha256": "d35b3829413a26fdf80e0c5fb9bd0415418272e41297f80caf006cf4b2e5d0ec",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部官方PDF雙頁文字及視覺比對；非真人審核）",
+      "checkedAt": "2026-10-23",
+      "page": 1,
+      "reviewMethod": "官方PDF第1頁兩題、第2頁一題；核實題號、50/25/25分及整段原文與SHA256",
+      "basis": "官方原PDF為唯一文字權威；LawPlayer僅輔助察覺題數不是四題"
+    },
+    "guidanceNote": "官方原卷第1頁兩題、第2頁一題；題幹依PDF文字層及畫面比對。AI輔助核對，非人工正式審稿。"
+  },
+  {
+    "id": "police-114-criminal_law_procedure-2",
+    "year": 114,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "刑法與刑事訴訟法",
+    "subject": "刑法與刑事訴訟法",
+    "mappedSubjects": [
+      "刑法",
+      "刑事訴訟法"
+    ],
+    "questionNo": 2,
+    "questionType": "申論題",
+    "officialPoints": 25,
+    "title": "114年｜刑法與刑事訴訟法｜第2題",
+    "body": "二、警察在例行巡邏時，發現前科累累，甫出獄的張三神情可疑地在雜貨店\n  門口張頭探腦，於是向前盤查，因而發現其攜帶有槍枝，並以現行犯逮\n  捕張三。逮捕後，警察搜索張三隨身攜帶的背包，發現有毒品。請問，\n  警察所發現的槍枝及毒品，有無證據能力？應如何判斷？（25 分）",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114060&q=1&s=0604&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "1bb7d66914c10445ef3f95df92d82f36d9b095597e6f6b4420813cc5a795d109",
+    "textSha256": "f28d2c9f01b16dcd5161feb73db8a7222e9f6e29094d1612668a79b5103e87bf",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部官方PDF雙頁文字及視覺比對；非真人審核）",
+      "checkedAt": "2026-10-23",
+      "page": 1,
+      "reviewMethod": "官方PDF第1頁兩題、第2頁一題；核實題號、50/25/25分及整段原文與SHA256",
+      "basis": "官方原PDF為唯一文字權威；LawPlayer僅輔助察覺題數不是四題"
+    },
+    "guidanceNote": "官方原卷第1頁兩題、第2頁一題；題幹依PDF文字層及畫面比對。AI輔助核對，非人工正式審稿。"
+  },
+  {
+    "id": "police-114-criminal_law_procedure-3",
+    "year": 114,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "刑法與刑事訴訟法",
+    "subject": "刑法與刑事訴訟法",
+    "mappedSubjects": [
+      "刑法",
+      "刑事訴訟法"
+    ],
+    "questionNo": 3,
+    "questionType": "申論題",
+    "officialPoints": 25,
+    "title": "114年｜刑法與刑事訴訟法｜第3題",
+    "body": "三、地方檢察署檢察官張三對於李四的案件提起公訴，法院諭知無罪判決，\n  張三不服，提起上訴。後張三調任高等檢察署，該案件輪分至張三，由\n  其辦理。請問，張三是否應迴避？（25 分）",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114060&q=1&s=0604&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "1bb7d66914c10445ef3f95df92d82f36d9b095597e6f6b4420813cc5a795d109",
+    "textSha256": "83463aca4fd7675a2c7202b1cb132f15dad35c90ca92c4b17d3c4b4abaaad070",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部官方PDF雙頁文字及視覺比對；非真人審核）",
+      "checkedAt": "2026-10-23",
+      "page": 2,
+      "reviewMethod": "官方PDF第1頁兩題、第2頁一題；核實題號、50/25/25分及整段原文與SHA256",
+      "basis": "官方原PDF為唯一文字權威；LawPlayer僅輔助察覺題數不是四題"
+    },
+    "guidanceNote": "官方原卷第1頁兩題、第2頁一題；題幹依PDF文字層及畫面比對。AI輔助核對，非人工正式審稿。"
   },
   {
     "id": "police-114-psychology-1",
