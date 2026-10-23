@@ -12,6 +12,8 @@ on:
       - 'police-exams/catalog.json'
       - 'police-exams/tools/integration.test.cjs'
       - 'police-exams/tools/approved-loader.test.cjs'
+      - 'offline-manifest.json'
+      - 'scripts/build-cloudflare-main-mirror.py'
       - 'v2.5/index.html'
       - 'v2.5/ai-simple-review-v254.js'
       - 'v2.5/essay-workspace25.js'
