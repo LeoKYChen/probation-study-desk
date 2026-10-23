@@ -44,10 +44,11 @@ export async function openFirebase(publicConfig){
  const username=()=>auth.currentUser?.email||'';
  const user=()=>auth.currentUser;
  const signOut=()=>authLib.signOut(auth);
- function adapter(){
+ function adapter(type='modules'){
+  if(!['modules','desk'].includes(type))throw Error('不支援的雲端資料區');
   const u=auth.currentUser;
   if(!u)throw Error('請先登入 Google 帳號');
-  const base=fs.collection(db,'users',u.uid,'modules');
+  const base=fs.collection(db,'users',u.uid,type);
   function keyPath(key){return fs.doc(base,encodeURIComponent(key));}
   return {
    async readAll(){
