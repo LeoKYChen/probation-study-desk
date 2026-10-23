@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "test": "node --test core.test.mjs planning.test.mjs sql.test.mjs subjects.test.mjs firebase.test.mjs firebase-desk.test.mjs",
-    "test:browser": "node local-browser.cjs"
+    "test:browser": "node local-browser.cjs && node firebase-browser.cjs"
   },
   "devDependencies": {
     "@electric-sql/pglite": "0.5.11",
