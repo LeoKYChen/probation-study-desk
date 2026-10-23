@@ -65,6 +65,7 @@ jobs:
         run: |
           set -euo pipefail
           gh release view "$RELEASE_TAG" --json tagName,isDraft,isPrerelease,url,targetCommitish
-          REMOTE_SHA=$(git ls-remote --tags origin "refs/tags/${RELEASE_TAG}" | awk '{print $1}')
-          test "$REMOTE_SHA" = "$RELEASE_SHA"
-          echo "Published and verified release ${RELEASE_TAG} at ${REMOTE_SHA}."
+          git fetch --no-tags origin "refs/tags/${RELEASE_TAG}:refs/tags/${RELEASE_TAG}"
+          ACTUAL_SHA=$(git rev-parse "${RELEASE_TAG}^{commit}")
+          test "$ACTUAL_SHA" = "$RELEASE_SHA"
+          echo "Published and verified release ${RELEASE_TAG} at ${ACTUAL_SHA}."
