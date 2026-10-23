@@ -7,6 +7,8 @@ on:
       - "backup/**"
       - "verification/sync/firebase*.mjs"
       - "verification/sync/firebase*.cjs"
+      - "offline-manifest.json"
+      - "scripts/build-cloudflare-main-mirror.py"
       - ".github/workflows/firebase-journal-contract.yml"
 
 permissions:
@@ -32,3 +34,25 @@ jobs:
             verification/sync/firebase-desk.test.mjs
       - name: Existing whole-site JSON backup regression tests
         run: node backup/test.cjs
+      - name: Check every offline asset and HTML dependency
+        run: node verification/offline-stage4-check.cjs
+      - name: Validate Cloudflare mirror includes the public ESM sync files
+        run: |
+          python3 scripts/build-cloudflare-main-mirror.py
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path('cloudflare-main-mirror-dist')
+          manifest=json.loads(Path('offline-manifest.json').read_text('utf-8'))
+          missing=[asset['url'] for asset in manifest['assets'] if not (root/asset['url']).is_file()]
+          assert not missing, 'Offline resources missing from mirror: '+', '.join(missing)
+          for required in (
+            'backup/firebase-ui.mjs',
+            'cloud-sync/firebase-client.mjs',
+            'cloud-sync/whole-site-core.mjs',
+            'cloud-sync/whole-desk-core.mjs',
+            'cloud-sync/local-journal.js',
+          ):
+            assert (root/required).is_file(), f'Missing Firebase public client: {required}'
+          print('PASS offline snapshot assets and Cloudflare browser ESM resources')
+          PY
