@@ -19,6 +19,7 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
  const browser=await chromium.launch({headless:true,executablePath:process.env.BROWSER_EXECUTABLE||chromium.executablePath(),args:['--no-sandbox','--disable-dev-shm-usage']});
  const contexts=[],errors=[],outside=[];
  const cloud={modules:new Map(),desk:new Map()},trace=[];
+ let failDeskWriteOnce=false;
  const mockModule=[
   'export function validateFirebaseConfig(x) {',
   " if(!x || !x.apiKey || !x.authDomain || !x.projectId || !x.appId)throw Error('設定格式不符');",
@@ -42,6 +43,7 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   const values=cloud[data.type];
   if(data.op==='read')return Object.fromEntries(values);
   if(data.op!=='write')throw Error('unsupported test operation');
+  if(data.type==='desk'&&failDeskWriteOnce){failDeskWriteOnce=false;throw Error('模擬書桌網路中斷');}
   const last=values.get(data.key),rev=last?.revision||0;
   if(rev!==data.expected)throw Error('另一裝置已更新');
   values.set(data.key,{revision:rev+1,raw:data.raw});
@@ -129,11 +131,30 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   await preview(a);await apply(a);
   assert.deepEqual(await a.evaluate(()=>JSON.parse(localStorage.getItem('jj-read'))),['手機初稿','電腦新增']);
   assert.equal(await readDesk(a),'電腦完成的訂正');
+
+  // Simulate a partial commit: module upload succeeds while desk upload
+  // fails. The UI must discard stale approvals and force a fresh preview.
+  await a.evaluate(()=>localStorage.setItem('jj-read',JSON.stringify(['手機初稿','電腦新增','中斷前新閱讀'])));
+  await writeDesk(a,'網路中斷前的新訂正');
+  await preview(a);
+  await download(a,'#firebase-backup');
+  await download(a,'#firebase-backup-desk');
+  await a.locator('#firebase-confirm').check();
+  failDeskWriteOnce=true;
+  await a.locator('#firebase-apply').click();
+  await a.waitForFunction(()=>document.querySelector('#firebase-status').textContent.includes('模擬書桌網路中斷'));
+  assert.equal(await a.locator('#firebase-apply').isDisabled(),true,'partial sync invalidates the prior approval');
+  assert.equal(await a.locator('#firebase-preview').locator('li').count(),0,'old preview is cleared after partial commit');
+  assert.equal(await readDesk(a),'網路中斷前的新訂正','local answer remains even if cloud desk write fails');
+  assert.equal(JSON.parse(cloud.modules.get('jj-read').raw).includes('中斷前新閱讀'),true);
+  await preview(a);await apply(a);
+  assert.equal(JSON.parse(cloud.modules.get('jj-read').raw).includes('中斷前新閱讀'),true);
+  assert.equal(JSON.parse(cloud.desk.get('attempt/study-test').raw).value.answer,'網路中斷前的新訂正');
   const writesBeforeReload=trace.length;
   await a.reload();
   await a.waitForFunction(()=>document.querySelector('#firebase-user').textContent.includes('study@example.test'));
   assert.equal(trace.length,writesBeforeReload,'restoring a prior login must not upload without explicit consent');
-  assert.equal(await readDesk(a),'電腦完成的訂正','reloading an opted-in account cannot erase local answer');
+  assert.equal(await readDesk(a),'網路中斷前的新訂正','reloading an opted-in account cannot erase local answer');
   await a.locator('#firebase-signout').click();
   await a.waitForFunction(()=>document.querySelector('#firebase-user').textContent.includes('未登入'));
   assert.equal(await a.evaluate(()=>localStorage.getItem('psd-firebase-restore-login-v1')),null);
@@ -141,7 +162,7 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   await a.reload();
   await a.waitForFunction(()=>document.querySelector('#firebase-user').textContent.includes('未登入'));
   assert.equal(trace.length,previousWrites,'signing out must disable account restoration and automatic uploads');
-  assert.equal(await readDesk(a),'電腦完成的訂正','logout must not erase guest study desk');
+  assert.equal(await readDesk(a),'網路中斷前的新訂正','logout must not erase guest study desk');
   assert.equal(outside.length,0,'synthetic transport never contacts real Firebase');
   assert.deepEqual(errors,[]);
   console.log('PASS Firebase whole-site UI: consent, both JSON backups, 15 modules + IndexedDB, two devices');
