@@ -43,6 +43,20 @@ async function main(){
    if(localStorage.getItem('probation-study-desk-v24')===null)
      localStorage.setItem('probation-study-desk-v24',JSON.stringify({'legacy-sentinel':{issue:'既有答案必須保留'}}));
   },{origin});
+  // Exercise the independent official-source catalogue in the real browser, including review provenance.
+  const catalogue=await context.newPage();
+  catalogue.on('pageerror',error=>errors.push(error.message));
+  await catalogue.goto(origin+'/police-exams/',{waitUntil:'domcontentloaded'});
+  await catalogue.waitForFunction(()=>document.querySelector('#approved-count')?.textContent==='127',{timeout:30000});
+  assert.equal(await catalogue.locator('#items tr').count(),32,'all 32 year-subject official papers appear');
+  assert((await catalogue.locator('main').textContent()).includes('尚未經真人逐題校稿'),'AI checking must not be described as human proofreading');
+  await catalogue.locator('#year-filter').selectOption('114');
+  assert.equal(await catalogue.locator('#items tr').count(),4,'114 has four official subject papers');
+  await catalogue.locator('#subject-filter').selectOption('criminal_law_procedure');
+  assert.equal(await catalogue.locator('#items tr').count(),1);
+  assert((await catalogue.locator('#items tr').textContent()).includes('AI核對 3 題'),'114 criminal/procedure has exactly three official questions');
+  assert((await catalogue.locator('#items tr a').getAttribute('href')).startsWith('https://wwwq.moex.gov.tw/exam/'));
+  await catalogue.close();
   const page=await context.newPage();
   page.on('pageerror',error=>errors.push(error.message));
   await page.goto(origin+'/v2.5/?q='+encodeURIComponent(reviewId),{waitUntil:'domcontentloaded'});
