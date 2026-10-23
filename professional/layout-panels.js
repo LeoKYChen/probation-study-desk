@@ -63,7 +63,7 @@
  }
  function render(){
   renderDiagnostics();renderEssay();
-  const summary=$('questionSourceSummary');if(summary?.dataset.complete==='true')summary.textContent='選題來源：原站 426 題。';
+  const summary=$('questionSourceSummary');if(summary?.dataset.complete==='true')summary.textContent='選題來源：專業科目練習題庫；完整考古題請至練習臺。';
   const health=$('dataHealthSummary');if(health)health.textContent=health.textContent.replace('建議定期備份；目前仍需最後階段才能匯入還原。','可使用本區的 JSON 匯入／還原。');
  }
  function start(){
