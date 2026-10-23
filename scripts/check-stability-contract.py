@@ -45,6 +45,29 @@ def main():
         if file.is_file() and item["literal"] not in file.read_text(encoding="utf-8"):
             errors.append("Previously hidden UI restored without a route decision: " + item["path"])
 
+    # A referenced script must be available on both hosted and offline versions.
+    # Parse the simple Python constant collections, rather than substring-checking
+    # the builder (a stray comment should never satisfy this contract).
+    import ast
+    builder = root / "scripts/build-cloudflare-main-mirror.py"
+    if builder.is_file():
+        assignments = {}
+        for node in ast.parse(builder.read_text(encoding="utf-8")).body:
+            if isinstance(node, ast.Assign):
+                for target in node.targets:
+                    if isinstance(target, ast.Name) and target.id in ("ROOT_FILES", "REQUIRED"):
+                        assignments[target.id] = ast.literal_eval(node.value)
+        for name in ("ROOT_FILES", "REQUIRED"):
+            if "dual-ai-bridge.js" not in assignments.get(name, ()):
+                errors.append("Cloudflare builder missing dual AI bridge in " + name)
+    else:
+        errors.append("Cloudflare mirror builder missing")
+    manifest = root / "offline-manifest.json"
+    if manifest.is_file():
+        entry_set = {e["url"] for e in json.loads(manifest.read_text(encoding="utf-8"))["assets"]}
+        if "dual-ai-bridge.js" not in entry_set:
+            errors.append("Offline manifest missing dual AI bridge")
+
     # Advisories make paused/archived changes visible for human review; they are
     # never an automatic delete, or a ban on important correctness/security fixes.
     warnings = []
