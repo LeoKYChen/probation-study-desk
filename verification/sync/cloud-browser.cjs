@@ -28,10 +28,13 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   const body=request.postDataJSON()||{};
   const scope=request.headers()['authorization']==='Bearer other-access'?secondary:primary;
   const operations=scope.operations;
+  if(request.headers()['authorization']==='Bearer broken-access' && url.pathname.startsWith('/rest/v1/rpc/')){
+   await route.fulfill({status:404,headers,body:JSON.stringify({message:'RPC function missing in this test project'})});return;
+  }
   if(url.pathname==='/auth/v1/otp')result={};
   else if(url.pathname==='/auth/v1/verify'){
-   const alternate=body.email==='alternate@example.test';
-   result={user:{id:alternate?otherUser:user,email:body.email},access_token:alternate?'other-access':'integration-access',refresh_token:'integration-refresh',expires_in:3600};
+   const alternate=body.email==='alternate@example.test',broken=body.email==='broken@example.test';
+   result={user:{id:alternate?otherUser:user,email:body.email},access_token:broken?'broken-access':alternate?'other-access':'integration-access',refresh_token:'integration-refresh',expires_in:3600};
   } else if(url.pathname==='/auth/v1/logout')result={};
   else if(url.pathname==='/rest/v1/rpc/psd_sync_push'){
    const op=body.p_operation;
@@ -171,6 +174,16 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   await a.locator('#notes button').first().click();
   await a.waitForFunction(()=>document.querySelector('#answer').value==='手機原本的答案，尚未移轉。');
   assert.equal(await a.locator('#answer').inputValue(),'手機原本的答案，尚未移轉。','original guest work remains unchanged');
+  // An OTP by itself must not switch out of guest when the project has no sync RPC.
+  await a.locator('#cloud-email').fill('broken@example.test');
+  await a.locator('#cloud-send-code').click();
+  await a.waitForFunction(()=>document.querySelector('#cloud-status').textContent.includes('驗證碼已請求'));
+  await a.locator('#cloud-code').fill('123456');
+  await a.locator('#cloud-consent').check();
+  await a.locator('#cloud-verify').click();
+  await a.waitForFunction(()=>document.querySelector('#cloud-status').textContent.includes('雲端資料庫尚未準備好'));
+  assert.equal(await a.locator('#account').textContent(),'此裝置的本機書桌');
+  assert.match(await a.locator('#notes').textContent(),/心理學/,'failed backend preflight preserves guest work');
   await login(a,'alternate@example.test');
   assert.equal(await a.locator('#notes button').count(),0,'another account has no access to the first user answers');
   assert.match(await a.locator('#lecture-status').textContent(),/此帳號尚無函授進度快照/,'another account cannot see first users course snapshot or shared browser data');
