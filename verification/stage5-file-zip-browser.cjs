@@ -77,6 +77,13 @@ const engine=process.env.TEST_BROWSER==='webkit'?webkit:chromium;
   await page.waitForURL(/\/v2\.5\/index\.html$/,{timeout:15000});
   assert.match(page.url(),/\/v2\.5\/index\.html$/);
   await page.locator('#issueInput').waitFor({timeout:15000});
+  // When the police-originals extension is present, offline ZIP must retain all 426 legacy
+  // questions and expose exactly 127 additional source-reviewed originals.
+  const policeOfflineCount=fs.existsSync(path.join(root,'police-exams/questions.approved.js'))?127:0;
+  await page.waitForFunction(count=>{
+    const questions=window.Practice25?.getQuestions?.();
+    return questions?.length===count&&(count===426||questions.some(q=>q.id==='police-114-criminal_law_procedure-1'));
+  },426+policeOfflineCount,{timeout:15000});
   await page.locator('#issueInput').fill('ZIP斷網考古題涵攝測試');
   try{
    await page.waitForFunction(()=>Object.values(JSON.parse(localStorage.getItem('probation-study-desk-v24')||'{}')).some(v=>String(v.issue||'').includes('ZIP斷網考古題涵攝測試')),null,{timeout:25000});
