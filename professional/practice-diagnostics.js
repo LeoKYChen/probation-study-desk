@@ -11,7 +11,7 @@
   const clean=s=>String(s||'').replace(/[（(].*?[）)]/g,'').trim();
   function subjectsOf(q){
     if(!q)return [];
-    const names=[clean(q.subjectGroup),clean(q.subject)];
+    const names=[q.subjectGroup,q.subject,...(Array.isArray(q.mappedSubjects)?q.mappedSubjects:[])].map(clean);
     const ret=new Set();
     for(const s of names){
       if(SUBJECTS.includes(s))ret.add(s);
