@@ -63,3 +63,17 @@ python police-exams/tools/promote_reviewed.py --candidates candidates.json --rec
 
 - [考選部考畢試題查詢平臺](https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx)
 - 逐年官方目錄請見 `catalog.json`；官方PDF見來源`sourceUrl`。
+
+## LawPlayer 次級題源交叉檢索（2026-10-23）
+
+已研究使用者提供的 [法律人 LawPlayer 犯罪防治人員考古題](https://lawplayer.com/exam/crime-prevention#system)，並於 [`lawplayer-crosscheck.json`](./lawplayer-crosscheck.json) 將**31道待核對題目逐題對應至9個年度科目索引**。已找到8個年度科目的獨立網頁，108年心理學暫以已核實的跨考試科目索引定位，未假設未確認的獨立頁網址存在。
+
+重要發現：
+
+- 110年心理學：網頁將官方4大題合併顯示為1題。不能依網頁顯示「1題」就覆寫官方原題數。
+- 112及113年刑法與刑事訴訟法：網頁也出現多道原題被合併，且內文夾帶官方PDF頁碼。
+- 114年刑法與刑事訴訟法：官方確為**3大題，分別50、25、25分**；先前「應有4題」的通用假設不適用，修復時不得把50分題任意拆為兩道。
+- 109年諮商與輔導、111年心理學：網頁可輔助定位特殊子題字元，但真正字形、配分仍需回考選部原卷視覺核對。
+- 110年刑法與刑事訴訟法、114年諮商與輔導：可藉網頁的分題來尋找官方PDF跨頁邊界，但不得直接拷貝整理後的網站題幹。
+
+LawPlayer **只作為找卷與辨識抽取缺陷的參考，不作為正式題庫直接來源**。既有96道已核對原題不更動；31道仍屬待核對，直到PDF逐字、附圖、子題及配分全數比對完成。
