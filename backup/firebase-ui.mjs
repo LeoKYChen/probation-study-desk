@@ -11,7 +11,7 @@ import {FORMAT} from '../cloud-sync/core.js';
 
 const core=window.PSDUnifiedBackup;
 const $=id=>document.getElementById(id);
-const CFG='psd-firebase-public-web-config-v1',BOUND='psd-firebase-local-data-bound-v1';
+const CFG='psd-firebase-public-web-config-v1',BOUND='psd-firebase-local-data-bound-v1',RESTORE='psd-firebase-restore-login-v1';
 let connection=null,plan=null,deskPlan=null,adapter=null,deskAdapter=null,deskStore=null,cloudUser=null,busy=false;
 let backedUp={modules:false,desk:false};
 const safeLabel=e=>e instanceof Error?e.message:String(e);
@@ -99,6 +99,7 @@ async function connect(){
  cloudUser=user;adapter=connection.adapter();deskAdapter=connection.adapter('desk');
  assertIdentity();
  localStorage.setItem(CFG,JSON.stringify(config));
+ localStorage.setItem(RESTORE,'yes');
  $('firebase-user').textContent='已登入：'+user.email+'（'+connection.projectId+'）';
  plan=null;deskPlan=null;backedUp={modules:false,desk:false};
  status('已登入。尚未上傳任何學習紀錄。請先按「預覽差異」。');
@@ -106,6 +107,7 @@ async function connect(){
 $('firebase-login').addEventListener('click',()=>perform(connect));
 $('firebase-signout').addEventListener('click',()=>perform(async()=>{
  if(connection)await connection.signOut();
+ localStorage.removeItem(RESTORE); // Sign-out stays guest on the next visit.
  connection=null;adapter=null;deskAdapter=null;cloudUser=null;plan=null;deskPlan=null;backedUp={modules:false,desk:false};
  deskStore?.close();deskStore=null;
  $('firebase-user').textContent='未登入';$('firebase-preview').replaceChildren();
@@ -165,7 +167,7 @@ $('firebase-apply').disabled=true;
 // Restore a previously opted-in Firebase identity, without fetching any user
 // learning records or uploading automatically. Guests never load the SDK.
 async function restoreSession(){
- if(!localStorage.getItem(BOUND))return;
+ if(!localStorage.getItem(BOUND)||localStorage.getItem(RESTORE)!=='yes')return;
  const raw=localStorage.getItem(CFG);if(!raw)return;
  try{
   const config=validateFirebaseConfig(JSON.parse(raw));
