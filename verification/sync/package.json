@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test core.test.mjs planning.test.mjs sql.test.mjs subjects.test.mjs firebase.test.mjs firebase-desk.test.mjs firebase-client.test.mjs",
+    "test": "node --test core.test.mjs planning.test.mjs sql.test.mjs subjects.test.mjs firebase.test.mjs firebase-desk.test.mjs firebase-client.test.mjs firebase-pending.test.mjs",
     "test:browser": "node local-browser.cjs && node firebase-browser.cjs && node firebase-two-device-browser.cjs"
   },
   "devDependencies": {
