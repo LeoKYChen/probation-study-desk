@@ -17,6 +17,10 @@ let backedUp={modules:false,desk:false};
 const safeLabel=e=>e instanceof Error?e.message:String(e);
 function assertIdentity(){
  if(!cloudUser || !connection)throw Error('請先登入');
+ // A second tab may have signed out or changed users after this preview.
+ // Never send one account's local study records using another auth session.
+ if(connection.user()?.uid!==cloudUser.uid)
+  throw Error('Google 登入帳號已變更，請重新登入並重新檢視所有學習紀錄');
  let bound;
  try{bound=JSON.parse(localStorage.getItem(BOUND)||'null');}
  catch{throw Error('此裝置帳號綁定資料已損壞；請先保留完整 JSON 備份，不可繼續同步');}
@@ -73,6 +77,12 @@ function renderPlan(){
  deskText.textContent='備考書桌 IndexedDB：'+deskCount+' 筆；上傳 '+deskPlan.statuses.filter(x=>x.status==='upload').length+'、下載 '+deskPlan.statuses.filter(x=>x.status==='download').length+'、版本差異 '+deskPlan.conflicts;
  $('firebase-preview').append(deskText);
 }
+function invalidatePreview(){
+ plan=null;deskPlan=null;backedUp={modules:false,desk:false};
+ $('firebase-preview').replaceChildren();
+ $('firebase-confirm').checked=false;
+ $('firebase-apply').disabled=true;
+}
 function lock(locked){
  busy=locked;
  for(const id of ['firebase-login','firebase-signout','firebase-preview-btn','firebase-apply','firebase-backup','firebase-backup-desk'])
@@ -82,7 +92,12 @@ async function perform(fn){
  if(busy)return;
  lock(true);
  try{await fn();}
- catch(e){status('操作未完成：'+safeLabel(e)+'。某些雲端項目可能已寫入；原始 JSON 備份及本機紀錄應保留，請重新預覽確認，不要重複盲目上傳。',true);}
+ catch(e){
+  // Some writes may have completed before a remote conflict; never allow a
+  // second click on the stale plan to replay writes or create extra archives.
+  invalidatePreview();
+  status('操作未完成：'+safeLabel(e)+'。雲端可能有部分資料已寫入，已清除舊預覽。請先保留本機原稿、重新預覽並確認兩份備份，再重試。',true);
+ }
  finally{lock(false);$('firebase-apply').disabled=!plan;}
 }
 async function connect(){
@@ -114,6 +129,7 @@ $('firebase-signout').addEventListener('click',()=>perform(async()=>{
  status('已登出。此瀏覽器的原始學習紀錄沒有刪除。');
 }));
 $('firebase-preview-btn').addEventListener('click',()=>perform(async()=>{
+ invalidatePreview();
  if(!adapter||!cloudUser)throw Error('請先用 Google 帳號登入');
  assertIdentity();
  if(!navigator.onLine)throw Error('離線中，無法讀取雲端最新版本');
