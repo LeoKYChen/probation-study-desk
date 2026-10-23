@@ -774,7 +774,7 @@
         }
       });
     }
-    if (!localStorage.getItem(storageKey)) localStorage.setItem(storageKey, JSON.stringify(saved));
+    if (!localStorage.getItem(storageKey)) localStorage.setItem(storageKey, JSON.stringify(saved));window.PSDLocalJournal?.note(storageKey);
     let currentYear = years[0] || 115;
     let currentSubject = subjects[0];
     let currentExamType = examTypes[0];
@@ -796,7 +796,7 @@
     }
     function updateEntry(patch) {
       saved[currentId] = { ...entry(), ...patch, updatedAt:new Date().toISOString() };
-      localStorage.setItem(storageKey, JSON.stringify(saved));
+      localStorage.setItem(storageKey, JSON.stringify(saved));window.PSDLocalJournal?.note(storageKey);
       updateStats();window.dispatchEvent(new Event('practice25:changed'));
     }
     function currentQuestion() { return questionBank.find(q => q.id === currentId); }
@@ -903,7 +903,7 @@
         });
         saved = merged;
       }
-      localStorage.setItem(storageKey, JSON.stringify(saved));
+      localStorage.setItem(storageKey, JSON.stringify(saved));window.PSDLocalJournal?.note(storageKey);
       pendingImport = null;
       render();
       showToast(mode === 'replace' ? '已匯入並取代；原資料亦已備份' : '學習紀錄已合併');
@@ -1526,7 +1526,7 @@
 
     window.Practice25={getRecords:()=>saved,getState:entry,getQuestion:currentQuestion,getQuestions:()=>questionBank,patch:updateEntry,render,
       flush:()=>{clearTimeout(saveTimer);if(currentQuestion()&&issueInput.value!==entry().issue)updateEntry({issue:issueInput.value});},
-      replaceRecords:records=>{const focused=document.activeElement===issueInput,start=issueInput.selectionStart,end=issueInput.selectionEnd;saved=records;localStorage.setItem(storageKey,JSON.stringify(saved));render();if(focused){issueInput.focus();issueInput.setSelectionRange(start,end);}},
+      replaceRecords:records=>{const focused=document.activeElement===issueInput,start=issueInput.selectionStart,end=issueInput.selectionEnd;saved=records;localStorage.setItem(storageKey,JSON.stringify(saved));window.PSDLocalJournal?.note(storageKey);render();if(focused){issueInput.focus();issueInput.setSelectionRange(start,end);}},
       select:id=>{const q=questionBank.find(q=>q.id===id);if(!q)return;currentId=id;currentYear=q.year;currentSubject=q.subject;currentExamType='全部類科';refreshYearSelect();refreshSubjectSelect();render();}};
     window.addEventListener('storage',event=>{if(event.key===storageKey&&event.newValue){try{saved=JSON.parse(event.newValue);render();}catch{}}});
     init();
