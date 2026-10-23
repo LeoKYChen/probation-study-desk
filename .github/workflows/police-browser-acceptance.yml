@@ -12,6 +12,8 @@ on:
       - 'police-exams/catalog.json'
       - 'police-exams/tools/integration.test.cjs'
       - 'police-exams/tools/approved-loader.test.cjs'
+      - 'police-exams/tools/verify_official_pdf_hashes.cjs'
+      - 'police-exams/tools/verify_official_pdf_hashes.test.cjs'
       - 'offline-manifest.json'
       - 'scripts/build-cloudflare-main-mirror.py'
       - 'v2.5/index.html'
@@ -25,28 +27,31 @@ permissions:
   contents: read
 jobs:
   browser:
-    name: ${{ matrix.browser }} official originals v2.5
+    name: Chromium and WebKit official originals v2.5
     runs-on: ubuntu-latest
     timeout-minutes: 18
-    strategy:
-      fail-fast: false
-      matrix:
-        browser: [chromium, webkit]
+    # Image includes both browsers and Linux dependencies. Match the npm client
+    # version exactly; avoids repeated apt/browser downloads hanging WebKit jobs.
+    container:
+      image: mcr.microsoft.com/playwright:v1.62.1-noble
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
         with:
-          node-version: '22'
-      - name: Install Playwright
-        run: |
-          npm install --no-save --ignore-scripts playwright
-          npx playwright install --with-deps ${{ matrix.browser }}
-      - name: Validate verified original IDs and full existing practice structure
+          node-version: '24'
+      - name: Install matching Playwright client only
+        run: npm install --no-save --ignore-scripts --no-audit playwright@1.62.1
+      - name: Validate official IDs, source hashes and existing practice structure
         run: |
           node --check verification/e2e-police-originals.cjs
           node police-exams/tools/approved-loader.test.cjs
           node police-exams/tools/integration.test.cjs
-      - name: Test official originals through existing browser workflows
+          node police-exams/tools/verify_official_pdf_hashes.test.cjs
+      - name: Test Chromium official originals and persisted answers
         env:
-          POLICE_E2E_ENGINE: ${{ matrix.browser }}
+          POLICE_E2E_ENGINE: chromium
+        run: node verification/e2e-police-originals.cjs
+      - name: Test WebKit official originals and persisted answers
+        env:
+          POLICE_E2E_ENGINE: webkit
         run: node verification/e2e-police-originals.cjs
