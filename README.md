@@ -18,7 +18,8 @@
 | [每日模擬題／晚間學習室](daily-simulation/) | 分科選題、計時、申論練習、AI 批改提示詞與閱讀資料 |
 | [少年司法週報](juvenile-news/) | 少年司法、CRC、國際標準、法制、研究與制度動態 |
 | [主動回憶](active-recall/) | 先自行回想，再檢視參考要點 |
-| [116 年觀護人專題練習](dongdong-time/) | 獨立題庫；收錄數量不代表逐題已完成內容驗收 |
+| [116 年觀護人專題練習](dongdong-time/) | 既有題庫保留，新增內容暫停；收錄不等於逐題驗收 |
+| [警察特考 108–115 年原題](police-exams/) | 指定四科、32 份官方原卷的 127 題 AI 輔助來源比對題；v2.5／備考書桌可載入，真人逐卷校稿尚未完成 |
 
 其他工具：[完整 JSON 備份](backup/) · [列印／PDF](print/) · [離線閱讀](offline/) · [雙 AI 協作工作臺（外部網站）](https://leokychen.github.io/multi-ai-review-desk/)
 
@@ -32,11 +33,11 @@
 
 ## 穩定版凍結決策（2026-10-23）
 
-使用者已核定 A–N 功能路線：核心練習、備考書桌、少年司法週報、AI 批改交接及備份／離線維持既有服務；部分題庫和雲端同步暫停，知識關聯圖及舊版 UI 封存，v2.7 法律檢索與 JCIS 分離處理。**警察特考歷屆官方原題收錄是目前唯一持續開發的內容路線**，但仍須核對官方原卷、題目 ID 與既有紀錄相容性。
+使用者已核定 A–N 功能路線：核心練習、備考書桌、少年司法週報、AI 批改交接及備份／離線維持既有服務；部分題庫和雲端同步暫停，知識關聯圖及舊版 UI 封存，v2.7 法律檢索與 JCIS 分離處理。**警察特考歷屆官方原題是本輪唯一特許擴充的題庫範圍**。2026-10-23 已將其 127 題整合到 `main`（[PR #71](https://github.com/LeoKYChen/probation-study-desk/pull/71) 已合併）；原有 426 題 ID 保留，v2.5 與備考書桌合計可載入 **553 題**，但 `professional/` 仍為原有 426 題。**32 份試卷仍待真人逐卷核稿**，現階段的 AI／官方 PDF 來源比對不得視為人工驗收。
 
 詳見 [穩定版凍結及安全整併計畫](docs/STABILITY_FREEZE_20261023.md)與 [決策 Issue #77](https://github.com/LeoKYChen/probation-study-desk/issues/77)。凍結前 `main` 的可追溯還原點是 `archive/stability-baseline-20261023`；**此分支不包含使用者瀏覽器中的私人學習紀錄**。任何程式合併、部署及 Release 仍須獨立完成 CI 與人工驗收。
 
-## 2026-10-22 的功能狀態
+## 使用中的功能界線與注意事項（截至 2026-10-23）
 
 - **備考書桌採本機保存**：作答版本與回想等記錄主要存於瀏覽器 IndexedDB；跨裝置自動雲端同步目前暫緩。不同裝置需由使用者手動備份／匯入。
 - **不同模組不會自動合併紀錄**：從舊練習頁面接入書桌，需要使用者確認匯入，並保留來源及版本差異。
@@ -45,7 +46,7 @@
 - **考科重點地圖尚非 Obsidian 式關聯圖**：原有 v2.5 版是文字／列表介面；「完整重點整理」展開區和「補強清單」目前暫時隱藏視覺呈現，未刪除相關原始資料。
 - **題庫品質需分級理解**：題目已收錄、程式測試通過、官方題源核對、法規正確性及國考申論品質驗收，不是同一件事。
 
-上述為已讀取儲存庫文件與截至本日近期提交後的整理；**部署是否已反映特定提交，仍應核對 [GitHub Actions](https://github.com/LeoKYChen/probation-study-desk/actions) 和實際網頁**。細節及歷史功能調整見 [CHANGELOG](CHANGELOG.md)。
+上述為主分支程式及文件盤點，**不代表 GitHub Pages／Cloudflare 均已部署到相同版本**。Cloudflare 正式發布須依 [手動部署與驗收規範](docs/RELEASE_READINESS_20261023.md) 另行操作；發布結果須核對 [GitHub Actions](https://github.com/LeoKYChen/probation-study-desk/actions) 與實際網站。詳情見 [CHANGELOG](CHANGELOG.md)。
 
 ## 學習資料、隱私與備份
 
@@ -74,16 +75,18 @@ npm run build
 - [備考書桌使用與測試說明](study-desk/README.md)
 - [變更紀錄：CHANGELOG](CHANGELOG.md)
 - [GitHub Release 發布與回復指引](docs/RELEASE_PROCESS.md)
+- [2026-10-23 穩定版部署、驗收與未完成事項](docs/RELEASE_READINESS_20261023.md)
+- [32 份官方原卷人工核稿清單](police-exams/reviews/OFFICIAL_32_PAPER_CHECKLIST.md)
 - [2026-10-22 整理前 README 完整快照](docs/README_ARCHIVE_2026-10-22.md)
 
 如欲回報程式錯誤、功能建議或題庫勘誤，請至 [GitHub Issues](https://github.com/LeoKYChen/probation-study-desk/issues)，盡可能附頁面、重現步驟、題目年度與可核實的來源。對於未核對的考古題、法條、判決、研究或 AI 引據，不應標示為已驗收。
 
 ## 版本與授權
 
-**全站正式版本**將依 [發布指引](docs/RELEASE_PROCESS.md) 的驗收程序，以日期式名稱規劃；本次文件重整**尚未建立新的 GitHub Release**。子模組的 `v2.5`、`v2.5.4` 是既有功能／介面名稱，不等於全站 Release。
+**全站正式版本**將依 [發布指引](docs/RELEASE_PROCESS.md) 的驗收程序，以日期式名稱規劃。**本次穩定化文件更新不建立 Tag 或 GitHub Release**；實際已發布版本以 [Releases](https://github.com/LeoKYChen/probation-study-desk/releases) 與 [Tags](https://github.com/LeoKYChen/probation-study-desk/tags) 為準。子模組的 `v2.5`、`v2.5.4` 不等於全站 Release。
 
 本專案中可合法授權的原創程式碼以 [LICENSE](LICENSE)（GPL-3.0-only）為準。政府試題、新聞、學術文獻、外部教材和第三方圖片不會因收錄於此儲存庫而自動適用相同授權，須依各自原始來源確認。
 
 ---
 
-維護者：[LeoKYChen](https://github.com/LeoKYChen) · [儲存庫](https://github.com/LeoKYChen/probation-study-desk) · **文件整理：2026-10-22**
+維護者：[LeoKYChen](https://github.com/LeoKYChen) · [儲存庫](https://github.com/LeoKYChen/probation-study-desk) · **文件更新：2026-10-23**
