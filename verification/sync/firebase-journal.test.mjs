@@ -8,7 +8,8 @@ vm.runInNewContext(js,box,{filename:'local-journal.js'});
 const api=box.module.exports;
 function storage(){
  const m=new Map();
- return {m,getItem:k=>m.get(k)??null,setItem:(k,v)=>m.set(k,String(v)),removeItem:k=>m.delete(k)};
+ return {m,get length(){return m.size},key:i=>[...m.keys()][i]??null,
+  getItem:k=>m.get(k)??null,setItem:(k,v)=>m.set(k,String(v)),removeItem:k=>m.delete(k)};
 }
 const bind=(s,uid='firebase_user_a')=>{
  s.setItem('psd-firebase-local-data-bound-v1',JSON.stringify({uid,projectId:'test-project-1'}));
@@ -73,4 +74,53 @@ test('corrupt queue fails closed without deleting original source data',()=>{
  assert(journal.note('desk'));
  assert.equal(journal.snapshot().entries.desk,'safe-token');
  assert.equal(journal.note('__proto__'),false);
+});
+
+test('two tabs writing different modules keep both queue markers without shared-key overwrite',()=>{
+ const s=storage();bind(s);
+ let seq=0;
+ const a=api.create(s,{tabId:'phone-tab-123',token:()=>String(++seq)});
+ const b=api.create(s,{tabId:'laptop-tab-456',token:()=>String(++seq)});
+ assert(a.note('jj-read'));
+ assert(b.note('desk'));
+ const view=a.snapshot();
+ assert.equal(view.slots.length,2);
+ assert.equal(view.entries['jj-read'],'1');
+ assert.equal(view.entries.desk,'2');
+ assert(a.acknowledge(view));
+ assert.equal(b.snapshot().slots.length,0);
+});
+test('same module edited in two tabs keeps the later write after preview acknowledgement',()=>{
+ const s=storage();bind(s);
+ let seq=0;
+ const a=api.create(s,{tabId:'phone-tab-123',token:()=>String(++seq)});
+ const b=api.create(s,{tabId:'laptop-tab-456',token:()=>String(++seq)});
+ assert(a.note('jj-read'));
+ const preview=a.snapshot();
+ assert(b.note('jj-read'));
+ assert(a.acknowledge(preview));
+ const current=b.snapshot();
+ assert.equal(current.slots.length,1,'second tab slot is not cleared by first tab acknowledgement');
+ assert.equal(current.slots[0].token,'2');
+ assert.equal(current.slots[0].module,'jj-read');
+});
+test('local edits made after snapshot in same tab stay queued',()=>{
+ const s=storage();bind(s);
+ let seq=0;
+ const a=api.create(s,{tabId:'phone-tab-123',token:()=>String(++seq)});
+ assert(a.note('desk'));
+ const snapshot=a.snapshot();
+ assert(a.note('desk'));
+ assert.equal(a.acknowledge(snapshot),false);
+ assert.equal(a.snapshot().entries.desk,'2');
+});
+test('bad or expired entries never inject arbitrary content into queue snapshot',()=>{
+ const s=storage();bind(s);
+ const id=api.keyOf(api.account(s));
+ s.setItem(id+'jj-read:phone-tab-123',JSON.stringify({version:2,module:'jj-read',token:{answer:'secret'}}));
+ s.setItem(id+'unknown:phone-tab-123',JSON.stringify({version:2,module:'unknown',token:'valid'}));
+ const a=api.create(s,{tabId:'laptop-tab-456',token:()=> 'safe'});
+ assert.equal(a.snapshot().slots.length,0);
+ assert(a.note('desk'));
+ assert.equal(a.snapshot().slots.length,1);
 });
