@@ -185,6 +185,27 @@ async function persist() {
  });
  currentId=savedId;current=value;baseline=clone(value);$('save-status').textContent='已存此裝置';cloudControl?.scheduleSync();
 }
+function reconcileVisibleAttempt(state) {
+ if(!current || !currentId)return;
+ if(state.conflicts[currentId]){
+  report('這題在不同裝置有版本差異，原本作答仍在本機。請至「我的筆記」檢視後決定接續版本。',true);
+  return;
+ }
+ const saved=state.records[currentId];
+ if(!saved || saved.deleted || saved.value?.kind!=='attempt')return;
+ if(same(saved.value,baseline))return;
+ // Autosave and the correction/feedback forms are independent: never repaint while
+ // someone is typing or has an unsent analysis/correction in another field.
+ const dirty=timer || $('answer').value!==current.answer ||
+   $('mode').value!==current.mode || Number($('minutes').value)!==current.minutes ||
+   ['feedback-text','gap','correction','recall'].some(id=>$(id).value.trim());
+ if(dirty){
+  report('已取得另一裝置的新版本，但這頁仍有未送出的文字；為避免覆蓋編輯內容，請先保存或複製，再重新開啟這題。',true);
+  return;
+ }
+ current=clone(saved.value);baseline=clone(saved.value);paintAttempt();
+ report('已讀取另一裝置更新的作答版本；本頁沒有未保存內容。');
+}
 async function flush() {clearTimeout(timer);timer=null;await saveTail;if(current){formToCurrent();await persist();}}
 function scheduleSave(){clearTimeout(timer);timer=setTimeout(()=>{timer=null;saveTail=saveTail.then(async()=>{formToCurrent();await persist();}).catch(e=>report(e.message,true));},400);}
 async function edit(fn) {await flush();if(!current)throw Error('請先開始一題');fn();await persist();renderHistory();await refresh();}
@@ -213,6 +234,7 @@ async function setup() {
    currentEpoch=s.clearedEpoch||null;
    preferences=validatePreferences(s.records['settings/preferences']?.value||{subjects:{},learnedTopics:[]});
    await loadLectureProgress();renderPreferences();renderQuestionOptions();await refresh();
+   reconcileVisibleAttempt(s);
   }
  });
  await cloudControl.init();
