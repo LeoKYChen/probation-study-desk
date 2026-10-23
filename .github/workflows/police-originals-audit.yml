@@ -32,6 +32,8 @@ jobs:
         run: node police-exams/tools/approved-loader.test.cjs
       - name: Existing practice features integration test
         run: node police-exams/tools/integration.test.cjs
+      - name: Test official PDF fingerprint verification gates
+        run: node police-exams/tools/verify_official_pdf_hashes.test.cjs
       - name: Collect only official PDFs to review candidates
         shell: bash
         run: |
@@ -39,6 +41,14 @@ jobs:
             python police-exams/tools/collect_originals.py --year "${{ inputs.year }}" --out police-exams/output
           else
             python police-exams/tools/collect_originals.py --out police-exams/output
+          fi
+      - name: Compare freshly downloaded PDF SHA256 with 127 approved original questions
+        shell: bash
+        run: |
+          if [ -n "${{ inputs.year }}" ]; then
+            node police-exams/tools/verify_official_pdf_hashes.cjs police-exams/output/audit.json --year "${{ inputs.year }}"
+          else
+            node police-exams/tools/verify_official_pdf_hashes.cjs police-exams/output/audit.json
           fi
       - name: Diagnostic official catalogue structure
         shell: bash
