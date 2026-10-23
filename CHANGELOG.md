@@ -4,7 +4,26 @@
 
 版本規範、驗收與發布方式參見 [Release 維護指引](docs/RELEASE_PROCESS.md)。子模組內的 `v2.5`、`v2.5.4` 等名稱，不直接代表整個網站的 Release 版本。
 
-## [Unreleased] — 截至 2026-10-22 的主分支整理
+## 2026-10-23 — 進入功能凍結與維護階段（已合併程式，非 GitHub Release）
+
+### 方向與發布安全
+
+- **A–N 功能路線凍結**：維持核心備考、備考書桌、雙 AI 交接、少年司法週報、主動回憶、列印／備份／離線等既有功能；暫停 116 年獨立專題題庫新增、Staresto 擴充與雲端同步；知識關聯圖、舊 UI 實驗封存，法律檢索及 JCIS 移至獨立專案追蹤。參見 [Issue #77](https://github.com/LeoKYChen/probation-study-desk/issues/77)、[PR #78（已合併）](https://github.com/LeoKYChen/probation-study-desk/pull/78)。
+- **保留回復基準**：`archive/stability-baseline-20261023` 保存凍結時的公開程式碼提交（不含私人學習紀錄）；新增非部署型功能與資料相容檢查。
+- **Cloudflare 受控發布**：原主線 push 改以建置與測試為主；正式發布需要在 `main` 人工觸發 `workflow_dispatch` 並明確輸入 `RELEASE`，才會執行 production publish，GitHub Pages 仍可能循既有流程發布。**這些保護已合併為程式設定，不代表本次曾觸發 Cloudflare 正式發布或完成現網驗收。** 參見 [工作流程](.github/workflows/sync-cloudflare-production.yml) 與 [驗收紀錄](docs/RELEASE_READINESS_20261023.md)。
+
+### 題庫與相容性
+
+- **108–115 年警察特考指定四科原題整合**：32 份官方試卷、127 道以 AI 輔助官方 PDF 來源比對的原題，透過 [PR #71（已合併）](https://github.com/LeoKYChen/probation-study-desk/pull/71) 進入主分支；既有 426 題 ID 不變，v2.5 與備考書桌可載入共 **553 題**，`professional/` 仍為原 426 題。參見 [題庫說明](police-exams/README.md)。
+- **重要品質界線**：32 份原卷仍待真人逐卷校稿，包含 9 份高關注試卷／31 題優先複查；程式「已核准載入」及 AI 比對不是逐題人工驗收，不得宣稱已有官方標準答案或人工校稿完成。參見 [人工校稿清單](police-exams/reviews/OFFICIAL_32_PAPER_CHECKLIST.md)。
+- **離線、鏡像及部署保護**：新增警察題庫及 `dual-ai-bridge.js` 必要資產檢查，修正 CI 瀏覽器測試及手機交接相關流程，保護既有 ZIP／PWA／Cloudflare 相容性。合併提交可見 [程式紀錄](https://github.com/LeoKYChen/probation-study-desk/commits/main/)。
+
+### 待完成
+
+- 正式 Release 的既有 Tags／Releases 名稱、候選提交 SHA、所有 Actions、GitHub Pages／Cloudflare 當前線上版本、iPhone Safari 實機以及個人 JSON 匯出還原，仍需逐項核實；見 [Issue #72](https://github.com/LeoKYChen/probation-study-desk/issues/72)。
+- 不把「程式碼已合併」「CI 檢查成功」「真人核稿完成」「正式網站同步」「已建立 GitHub Release」混為一談。
+
+## [Unreleased] — 2026-10-22 歷史整理（非正式 Release）
 
 以下紀錄的是已可在 `main` 追溯的變更，**尚未將這批功能宣告成全站正式穩定 Release**。
 
