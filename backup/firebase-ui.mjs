@@ -82,7 +82,7 @@ async function perform(fn){
  if(busy)return;
  lock(true);
  try{await fn();}
- catch(e){status('操作未完成：'+safeLabel(e)+'。原本網站資料仍應保留，請先確認 JSON 備份。',true);}
+ catch(e){status('操作未完成：'+safeLabel(e)+'。某些雲端項目可能已寫入；原始 JSON 備份及本機紀錄應保留，請重新預覽確認，不要重複盲目上傳。',true);}
  finally{lock(false);$('firebase-apply').disabled=!plan;}
 }
 async function connect(){
@@ -138,6 +138,9 @@ $('firebase-apply').addEventListener('click',()=>perform(async()=>{
  if(!backedUp.modules||!backedUp.desk||!$('firebase-confirm').checked)throw Error('請先下載並檢查舊模組及備考書桌兩份 JSON 備份，關閉其他作答分頁並確認');
  if(!navigator.onLine)throw Error('需要連線才能確認最新雲端版本');
  if(!confirm('確認執行本次合併？原始資料已另外備份；遇衝突會將本機差異封存，雲端版本保持為主要紀錄。'))return;
+ // Bind the shared browser origin BEFORE the first upload, so a failed
+ // second stage cannot later leak the first user's data to another account.
+ localStorage.setItem(BOUND,JSON.stringify({uid:cloudUser.uid,projectId:connection.projectId}));
  const result=await commit(core,localStorage,adapter,plan);
  saveShadow(result.shadow);
  // If desk sync fails, the legacy modules already completed safely; preview again to resume.
