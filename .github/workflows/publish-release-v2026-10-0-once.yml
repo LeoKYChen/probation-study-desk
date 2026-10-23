@@ -1,0 +1,71 @@
+name: Publish pinned v2026.10.0 GitHub Release once
+
+# One-off, repository-scoped release of the already-reviewed 2026-10-23 main snapshot.
+# This workflow never deploys GitHub Pages or Cloudflare. It refuses to overwrite an
+# existing tag/release and always pins the release to the exact audited source commit.
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/publish-release-v2026-10-0-once.yml
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    name: Publish immutable source snapshot
+    if: github.repository == 'LeoKYChen/probation-study-desk'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      RELEASE_TAG: v2026.10.0
+      RELEASE_SHA: b924bd6e2ef12c18275e4fbf446e5ca1f7f643d1
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - name: Checkout full repository history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Refuse unexpected repository state or existing version
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REF" = refs/heads/main
+          git cat-file -e "${RELEASE_SHA}^{commit}"
+          git merge-base --is-ancestor "$RELEASE_SHA" "$GITHUB_SHA"
+          git cat-file -p "$RELEASE_SHA" | head -n 1 | grep -q '^tree '
+          test -f docs/releases/v2026.10.0.md
+          if git ls-remote --exit-code --tags origin "refs/tags/${RELEASE_TAG}" >/dev/null 2>&1; then
+            echo "::error::Tag ${RELEASE_TAG} already exists; refusing to overwrite."
+            exit 1
+          fi
+          if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            echo "::error::GitHub Release ${RELEASE_TAG} already exists; refusing to overwrite."
+            exit 1
+          fi
+          echo "Releasing existing main ancestor ${RELEASE_SHA} as ${RELEASE_TAG}."
+
+      - name: Create GitHub Release for exact source commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release create "$RELEASE_TAG" \
+            --target "$RELEASE_SHA" \
+            --title "觀護人學習平臺 v2026.10.0｜首次全站版本" \
+            --notes-file docs/releases/v2026.10.0.md \
+            --latest
+
+      - name: Verify tag and release commit match
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release view "$RELEASE_TAG" --json tagName,isDraft,isPrerelease,url,targetCommitish
+          git fetch --no-tags origin "refs/tags/${RELEASE_TAG}:refs/tags/${RELEASE_TAG}"
+          ACTUAL_SHA=$(git rev-parse "${RELEASE_TAG}^{commit}")
+          test "$ACTUAL_SHA" = "$RELEASE_SHA"
+          echo "Published and verified release ${RELEASE_TAG} at ${ACTUAL_SHA}."
