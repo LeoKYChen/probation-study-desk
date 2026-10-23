@@ -51,9 +51,17 @@ function renderPreferences() {
 }
 function selectedQuestion() {return questions.find(q=>q.id===$('question').value);}
 function renderQuestionOptions() {
- const previous=$('subject').value;
- $('subject').replaceChildren();for(const s of SUBJECTS){const o=text('option',s,$('subject'));o.value=s;}if(SUBJECTS.includes(previous))$('subject').value=previous;
+ const previous=$('subject').value,previousQuestion=$('question').value,previousLesson=$('topic-lesson').value;
+ $('subject').replaceChildren();for(const subject of SUBJECTS){const o=text('option',subject,$('subject'));o.value=subject;}
+ if(SUBJECTS.includes(previous))$('subject').value=previous;
  fillQuestions();
+ // A background cloud pull may rerender questions. Never reset an unsaved
+ // manual choice to the first question just because another device synced.
+ if([...$('question').options].some(o=>o.value===previousQuestion)){
+  $('question').value=previousQuestion;describeQuestion();
+  if([...$('topic-lesson').options].some(o=>o.value===previousLesson))
+   $('topic-lesson').value=previousLesson;
+ }
 }
 function fillQuestions() {
  $('question').replaceChildren();for(const q of questions.filter(q=>q.subject===$('subject').value)){const o=text('option',q.title,$('question'));o.value=q.id;}
