@@ -774,7 +774,7 @@
         }
       });
     }
-    if (!localStorage.getItem(storageKey)) localStorage.setItem(storageKey, JSON.stringify(saved));window.PSDLocalJournal?.note(storageKey);
+    if (!localStorage.getItem(storageKey)) {localStorage.setItem(storageKey, JSON.stringify(saved));window.PSDLocalJournal?.note(storageKey);}
     let currentYear = years[0] || 115;
     let currentSubject = subjects[0];
     let currentExamType = examTypes[0];
