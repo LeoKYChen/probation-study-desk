@@ -8,7 +8,7 @@ const paper=read('v2.5/index.html');
 const sourceCatalogue=read('police-exams/index.html');
 assert(sourceCatalogue.includes('AI 輔助核對原題') && sourceCatalogue.includes('尚未經真人逐題校稿'), 'catalogue must disclose review method');
 assert(sourceCatalogue.includes('已定位32份考選部官方原卷'), 'catalogue must report actual 32 official papers');
-assert(sourceCatalogue.includes('尚未正式上線'), 'draft PR must not be presented as deployed');
+assert(sourceCatalogue.includes('邊做題、邊覆核') && sourceCatalogue.includes('僅完成作答不自動代表已逐字核稿'), 'live catalogue must support progressive source verification without false human sign-off');
 const desk=read('study-desk/index.html'),deskApp=read('study-desk/app.js');
 for(const id of ['shuatiQuestionLink','yamolQuestionLink','draftIssue','draftBasis','draftAnalysis','draftConclusion','issueInput','sourceLink','scoreRows'])
   assert(paper.includes('id="'+id+'"'),'existing practice feature missing: '+id);
