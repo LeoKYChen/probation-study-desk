@@ -87,6 +87,7 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   const b=await device();await login(b);
   assert.match(await b.locator('#notes').textContent(),/心理學/);
   await b.locator('#notes button').first().click();
+  await b.waitForFunction(()=>document.querySelector('#answer').value==='手機原本的答案，尚未移轉。');
   assert.equal(await b.locator('#answer').inputValue(),'手機原本的答案，尚未移轉。');
   await b.locator('#answer').fill('在另一部裝置接續修改。');
   await b.locator('#save').click();
@@ -96,11 +97,13 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   await a.waitForFunction(()=>document.querySelector('#cloud-status').textContent.includes('同步完成'));
   assert.match(await a.locator('#notes').textContent(),/心理學/);
   await a.locator('#notes button').first().click();
+  await a.waitForFunction(()=>document.querySelector('#answer').value==='在另一部裝置接續修改。');
   assert.equal(await a.locator('#answer').inputValue(),'在另一部裝置接續修改。');
   await a.locator('#cloud-logout').click();
   await a.waitForFunction(()=>document.querySelector('#account').textContent==='此裝置的本機書桌');
   assert.match(await a.locator('#notes').textContent(),/心理學/);
   await a.locator('#notes button').first().click();
+  await a.waitForFunction(()=>document.querySelector('#answer').value==='手機原本的答案，尚未移轉。');
   assert.equal(await a.locator('#answer').inputValue(),'手機原本的答案，尚未移轉。','original guest work remains unchanged');
   assert.deepEqual(pageErrors,[]);
   console.log('cloud-browser: opt-in, migration, two-device sync and logout verified with synthetic account');
