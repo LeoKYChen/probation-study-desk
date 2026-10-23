@@ -13,7 +13,7 @@
    return 'https://www.google.com/search?q='+encodeURIComponent('site:'+site+' '+String(q?.year||'')+' '+String(q?.subject||'')+' '+excerpt);
  }
  function guide(q,provider){
-   if(!q||typeof q.id!=='string')return {url:null,label:'本題無對應原始考古題',status:'none',detail:'尚未選取原站426題中的題目'};
+   if(!q||typeof q.id!=='string')return {url:null,label:'本題無對應原始考古題',status:'none',detail:'尚未選取專業科目練習題庫中的題目'};
    const shuati=provider==='shuati';
    const record=shuati?root.SHUATI_LINKS?.[q.id]:root.YAMOL_LINKS?.[q.id];
    const host=shuati?'shuati.tw':'yamol.tw';
