@@ -45,7 +45,14 @@ async function takeDownload(page,click){
   const emptySummary=await untouched.locator('#summary').innerText();
   assert.match(emptySummary,/已儲存的學習／閱讀紀錄：0 筆/);
   assert.match(emptySummary,/尚未開始的工作階段：2 筆/);
-  assert.match(await untouched.locator('#modules').innerText(),/空白儲存區（0 筆）/);
+  assert.doesNotMatch(await untouched.locator('#modules').innerText(),/空白儲存區|舊版考古題/);
+  const mobileLayout=await untouched.evaluate(()=>{
+   const controls=['#export','#refresh','label[for="importFile"]','#downloadConflicts'];
+   const boxes=controls.map(q=>{const b=document.querySelector(q).getBoundingClientRect();return{x:b.x,y:b.y,width:b.width,height:b.height};});
+   return {boxes,overflow:document.documentElement.scrollWidth-innerWidth};
+  });
+  assert.equal(mobileLayout.overflow<=1,true,'backup mobile must not overflow viewport');
+  assert(mobileLayout.boxes.every(b=>Math.abs(b.x-mobileLayout.boxes[0].x)<=1&&Math.abs(b.width-mobileLayout.boxes[0].width)<=1&&b.height>=50),'backup mobile buttons must align with the same width and touch height');
   const zeroBundle=await takeDownload(untouched,()=>untouched.locator('#export').click());
   assert.deepEqual(JSON.parse(zeroBundle.data[key]),emptySessions,'export must preserve empty sessions unchanged');
   assert.equal(zeroBundle.data['probation-study-desk-v24'],'{}','an empty record map must be kept in backup');
