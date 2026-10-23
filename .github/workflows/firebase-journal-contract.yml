@@ -1,0 +1,34 @@
+name: Firebase sync contract (no deployment)
+
+on:
+  pull_request:
+    paths:
+      - "cloud-sync/**"
+      - "backup/**"
+      - "verification/sync/firebase*.mjs"
+      - "verification/sync/firebase*.cjs"
+      - ".github/workflows/firebase-journal-contract.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  offline-sync-contract:
+    name: Firebase offline data safety
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Unit-test storage, account isolation and conflict handling
+        run: |
+          node --test \
+            verification/sync/firebase-journal.test.mjs \
+            verification/sync/firebase-pending.test.mjs \
+            verification/sync/firebase-client.test.mjs \
+            verification/sync/firebase.test.mjs \
+            verification/sync/firebase-desk.test.mjs
+      - name: Existing whole-site JSON backup regression tests
+        run: node backup/test.cjs
