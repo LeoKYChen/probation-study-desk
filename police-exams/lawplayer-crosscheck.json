@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "officialSourceRule": "考選部PDF為唯一原題內容／題號／配分最終依據；LawPlayer僅為次級定位索引，不可直接匯入網頁整理題幹",
+  "referenceHomepage": "https://lawplayer.com/exam/crime-prevention#system",
+  "referencePurpose": "協助找出原PDF抽取漏題號、跨頁、特殊配分、特殊字元的可能分界；不新增任何題目文字",
+  "officialCandidateBacklogCount": 31,
+  "sourcePages": [
+    {
+      "year": 108,
+      "key": "psychology",
+      "url": "https://lawplayer.com/exam/subject/psychology",
+      "status": "subject-index-only",
+      "finding": "網站列有108年心理學四題，但未核實該年度試卷的獨立頁面；須回考選部PDF核對附圖與題號。"
+    },
+    {
+      "year": 109,
+      "key": "counseling",
+      "url": "https://lawplayer.com/exam/crime-prevention/109-counseling-guidance",
+      "status": "specific-paper-found",
+      "finding": "頁面可定位第4題五個子題，補查PDF特殊字元的版面表示。"
+    },
+    {
+      "year": 110,
+      "key": "psychology",
+      "url": "https://lawplayer.com/exam/crime-prevention/110-psychology",
+      "status": "specific-paper-found",
+      "finding": "網站將四道各25分題目錯誤合併為一題；不得以網頁題數或題號作為原題標準。"
+    },
+    {
+      "year": 110,
+      "key": "criminal_law_procedure",
+      "url": "https://lawplayer.com/exam/crime-prevention/110-criminal-law-procedure",
+      "status": "specific-paper-found",
+      "finding": "頁面有4題，可輔助定位跨頁續題，但須刪除考選部原卷頁碼雜訊並逐字核對。"
+    },
+    {
+      "year": 111,
+      "key": "psychology",
+      "url": "https://lawplayer.com/exam/crime-prevention/111-psychology",
+      "status": "specific-paper-found",
+      "finding": "網站分成4題，其中子題出現特殊字元；確認附帶分數與子題標號須依官方PDF版面。"
+    },
+    {
+      "year": 112,
+      "key": "criminal_law_procedure",
+      "url": "https://lawplayer.com/exam/crime-prevention/112-criminal-law-procedure",
+      "status": "specific-paper-found",
+      "finding": "網站將四道各25分的題目合併一筆；不可照抄網站題數。"
+    },
+    {
+      "year": 113,
+      "key": "criminal_law_procedure",
+      "url": "https://lawplayer.com/exam/crime-prevention/113-criminal-law-procedure",
+      "status": "specific-paper-found",
+      "finding": "網站將多道題目合併一筆並含跨頁頁碼；僅供尋找分界，須對原卷核定。"
+    },
+    {
+      "year": 114,
+      "key": "counseling",
+      "url": "https://lawplayer.com/exam/crime-prevention/114-counseling-guidance",
+      "status": "specific-paper-found",
+      "finding": "網站有4道完整大題供定位跨頁分界，但最後文字仍須核對官方PDF。"
+    },
+    {
+      "year": 114,
+      "key": "criminal_law_procedure",
+      "url": "https://lawplayer.com/exam/crime-prevention/114-criminal-law-procedure",
+      "status": "specific-paper-found",
+      "finding": "考選部原卷實為3道大題，配分50、25、25；先前要求一律4題的閘門過度嚴格，應以原卷實際題數為準。"
+    }
+  ],
+  "questionCrossChecks": [
+    {
+      "questionId": "police-108-psychology-1",
+      "originalFlag": "embedded image or glyph",
+      "secondaryLookupKey": "108:psychology"
+    },
+    {
+      "questionId": "police-108-psychology-2",
+      "originalFlag": "embedded image or glyph",
+      "secondaryLookupKey": "108:psychology"
+    },
+    {
+      "questionId": "police-108-psychology-3",
+      "originalFlag": "embedded image or glyph",
+      "secondaryLookupKey": "108:psychology"
+    },
+    {
+      "questionId": "police-108-psychology-4",
+      "originalFlag": "embedded image or glyph",
+      "secondaryLookupKey": "108:psychology"
+    },
+    {
+      "questionId": "police-109-counseling-4",
+      "originalFlag": "PDF private-use glyph requires visual correction",
+      "secondaryLookupKey": "109:counseling"
+    },
+    {
+      "questionId": "police-110-criminal_law_procedure-1",
+      "originalFlag": "multi-page PDF",
+      "secondaryLookupKey": "110:criminal_law_procedure"
+    },
+    {
+      "questionId": "police-110-criminal_law_procedure-2",
+      "originalFlag": "multi-page PDF",
+      "secondaryLookupKey": "110:criminal_law_procedure"
+    },
+    {
+      "questionId": "police-110-criminal_law_procedure-3",
+      "originalFlag": "multi-page PDF",
+      "secondaryLookupKey": "110:criminal_law_procedure"
+    },
+    {
+      "questionId": "police-110-criminal_law_procedure-4",
+      "originalFlag": "multi-page PDF",
+      "secondaryLookupKey": "110:criminal_law_procedure"
+    },
+    {
+      "questionId": "police-110-psychology-1",
+      "originalFlag": "paper has audit warnings",
+      "secondaryLookupKey": "110:psychology"
+    },
+    {
+      "questionId": "police-110-psychology-2",
+      "originalFlag": "paper has audit warnings",
+      "secondaryLookupKey": "110:psychology"
+    },
+    {
+      "questionId": "police-110-psychology-3",
+      "originalFlag": "paper has audit warnings",
+      "secondaryLookupKey": "110:psychology"
+    },
+    {
+      "questionId": "police-110-psychology-4",
+      "originalFlag": "paper has audit warnings",
+      "secondaryLookupKey": "110:psychology"
+    },
+    {
+      "questionId": "police-111-psychology-2",
+      "originalFlag": "PDF private-use glyph requires visual correction",
+      "secondaryLookupKey": "111:psychology"
+    },
+    {
+      "questionId": "police-111-psychology-3",
+      "originalFlag": "PDF private-use glyph requires visual correction",
+      "secondaryLookupKey": "111:psychology"
+    },
+    {
+      "questionId": "police-111-psychology-4",
+      "originalFlag": "PDF private-use glyph requires visual correction",
+      "secondaryLookupKey": "111:psychology"
+    },
+    {
+      "questionId": "police-112-criminal_law_procedure-1",
+      "originalFlag": "paper has audit warnings",
+      "secondaryLookupKey": "112:criminal_law_procedure"
+    },
+    {
+      "questionId": "police-112-criminal_law_procedure-2",
+      "originalFlag": "paper has audit warnings",
+      "secondaryLookupKey": "112:criminal_law_procedure"
+    },
+    {
+      "questionId": "police-112-criminal_law_procedure-3",
+      "originalFlag": "paper has audit warnings",
+      "secondaryLookupKey": "112:criminal_law_procedure"
+    },
+    {
+      "questionId": "police-112-criminal_law_procedure-4",
+      "originalFlag": "paper has audit warnings",
+      "secondaryLookupKey": "112:criminal_law_procedure"
+    },
+    {
+      "questionId": "police-113-criminal_law_procedure-1",
+      "originalFlag": "paper has audit warnings",
+      "secondaryLookupKey": "113:criminal_law_procedure"
+    },
+    {
+      "questionId": "police-113-criminal_law_procedure-2",
+      "originalFlag": "paper has audit warnings",
+      "secondaryLookupKey": "113:criminal_law_procedure"
+    },
+    {
+      "questionId": "police-113-criminal_law_procedure-3",
+      "originalFlag": "paper has audit warnings",
+      "secondaryLookupKey": "113:criminal_law_procedure"
+    },
+    {
+      "questionId": "police-113-criminal_law_procedure-4",
+      "originalFlag": "paper has audit warnings",
+      "secondaryLookupKey": "113:criminal_law_procedure"
+    },
+    {
+      "questionId": "police-114-counseling-1",
+      "originalFlag": "multi-page PDF",
+      "secondaryLookupKey": "114:counseling"
+    },
+    {
+      "questionId": "police-114-counseling-2",
+      "originalFlag": "multi-page PDF",
+      "secondaryLookupKey": "114:counseling"
+    },
+    {
+      "questionId": "police-114-counseling-3",
+      "originalFlag": "multi-page PDF",
+      "secondaryLookupKey": "114:counseling"
+    },
+    {
+      "questionId": "police-114-counseling-4",
+      "originalFlag": "multi-page PDF",
+      "secondaryLookupKey": "114:counseling"
+    },
+    {
+      "questionId": "police-114-criminal_law_procedure-1",
+      "originalFlag": "not four numbered questions",
+      "secondaryLookupKey": "114:criminal_law_procedure"
+    },
+    {
+      "questionId": "police-114-criminal_law_procedure-2",
+      "originalFlag": "not four numbered questions",
+      "secondaryLookupKey": "114:criminal_law_procedure"
+    },
+    {
+      "questionId": "police-114-criminal_law_procedure-3",
+      "originalFlag": "not four numbered questions",
+      "secondaryLookupKey": "114:criminal_law_procedure"
+    }
+  ],
+  "updatedAt": "2026-10-23"
+}
