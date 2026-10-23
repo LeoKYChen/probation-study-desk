@@ -3,7 +3,7 @@
 ## 2026-10-23 跨裝置同步測試分支（尚未發布）
 - 分支：`feature/study-desk-cloud-sync-20261023`；目前不代表正式網站已啟用。
 - 在「進度與資料保存 → 跨裝置同步（選用測試功能）」填入 Supabase 測試專案的 Project URL 與 `sb_publishable_` 公開金鑰，使用 Email OTP 登入。不同裝置使用同一專案及同一帳號。
-- 未登入時仍為 `guest` 本機書桌。登入後使用 `account/<user UUID>` 獨立 IndexedDB 命名空間；**不自動複製 guest**，需明確按「複製本機舊書桌至帳號」，原 guest 保留且可下載 JSON 備份。
+- 未登入時仍為 `guest` 本機書桌。登入後使用 `account/<專案網域>/<user UUID>` 獨立 IndexedDB 命名空間；**不自動複製 guest**，需明確按「複製本機舊書桌至帳號」，原 guest 保留且可下載 JSON 備份。
 - 帳號作答先保存本機，再同步；新增離線佇列、定期重試、版本衝突留存與人工選擇。推薦稽核不雲端同步；帳號模式禁止直接清除學習紀錄以免誤認雲端資料已刪除。
 - 考古題練習臺與每日模擬題尚未接入全站自動同步；舊模組仍透過使用者主動匯入書桌。
 - 測試：`npm --prefix verification/sync test`、`npm --prefix verification/sync run test:browser`。模擬測試不代表真實 Supabase、Email OTP、Safari 或正式網址驗收通過。
