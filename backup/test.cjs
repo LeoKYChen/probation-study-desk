@@ -1,7 +1,8 @@
 // No external dependencies. Tests use synthetic data only, never actual user records.
 'use strict';
 const assert=require('node:assert/strict');
-const core=require('./unified-core.js');
+require('./unified-core.js');
+const core=globalThis.PSDUnifiedBackup;
 const key='probation-study30-v251:v1',essay='psd-common-subjects-v1',en='psd-staresto-link-coach-v06',old='psd-staresto-daily-v04';
 function mock(seed={},opts={}){
  const map=new Map(Object.entries(seed)),writes=[];
