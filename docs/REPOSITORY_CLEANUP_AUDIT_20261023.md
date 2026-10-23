@@ -52,3 +52,9 @@ python3 verification/check-cloudflare-release.py
 ## 回復方式
 
 若驗收發現錯誤，暫停合併此 PR，或從 `816e6d9363bcced8b5a61a0f9541572bb1bad38f` 還原三個檔案；不要強制重設 `main`，以 PR 方式復原即可。
+## 本次清理時發現的 Cloudflare 正式鏡像缺漏
+
+- PR #74 重新執行的 `Synchronize approved Cloudflare production from GitHub main` 先通過檔案稽核與鏡像建置，卻在 `verification/unified-browser.cjs` 遇到 `404 .../dual-ai-bridge.js`，造成瀏覽器驗收失敗。
+- 根因：`scripts/build-cloudflare-main-mirror.py` 的 `ROOT_FILES` 白名單沒有包含現行網站引用的 `dual-ai-bridge.js`；這是既有建置腳本缺漏，與移除三個週報重複副本無因果關係。
+- 在本 PR 補上 `ROOT_FILES`、`REQUIRED` 的 `dual-ai-bridge.js`，並將其納入 `scripts/audit-repository.py --check-phase1` 必要檔檢核。Cloudflare 鏡像才可供跨頁雙 AI 交接功能正常載入。
+- 這只是依可重現錯誤完成的來源修正；必須等待最新提交的瀏覽器 CI 重新通過，才可評估合併，不能把「修正已提交」當成「正式站已修復」。
