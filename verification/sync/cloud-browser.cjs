@@ -105,6 +105,12 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   await a.locator('#cloud-sync-now').click();
   await a.waitForFunction(()=>document.querySelector('#cloud-status').textContent.includes('同步完成'));
   assert([...records.entries()].some(([id,r])=>id.startsWith('attempt/')&&r.value.answer==='手機原本的答案，尚未移轉。'));
+  // Background pulls must not silently reset the manually selected question.
+  await a.locator('#manual-picker').evaluate(el=>el.open=true);
+  await a.locator('#subject').selectOption({label:'心理學'});
+  assert((await a.locator('#question option').count())>1,'psychology bank has multiple questions');
+  await a.locator('#question').selectOption({index:1});
+  const selectedQuestion=await a.locator('#question').inputValue();
   // Keep the first device's editor open while a remote edit arrives.
   await a.locator('#notes button').first().click();
   await a.waitForFunction(()=>document.querySelector('#answer').value==='手機原本的答案，尚未移轉。');
@@ -123,6 +129,7 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   assert.match(await a.locator('#notes').textContent(),/心理學/);
   await a.waitForFunction(()=>document.querySelector('#answer').value==='在另一部裝置接續修改。');
   assert.equal(await a.locator('#answer').inputValue(),'在另一部裝置接續修改。');
+  assert.equal(await a.locator('#question').inputValue(),selectedQuestion,'manual question selection must survive cloud polling');
   // A partially written correction and unsaved study settings must survive an incoming remote update.
   await a.locator('[data-subject="心理學"] .enabled').check();
   await a.locator('#gap').fill('我正在整理的新缺口');
