@@ -253,6 +253,15 @@ $('close').onclick=()=>$('reader').close();$('reader').addEventListener('close',
 for(const [id,delta] of [['previous',-1],['next',1]])$(id).onclick=()=>{const list=visible(),i=list.findIndex(q=>q.id===current),q=list[i+delta];if(q)openQuestion(q.id);};
 $('export').onclick=()=>{if($('reader').open&&!save())return;download({format:'probation-daily-github-records',schemaVersion:1,exportedAt:new Date().toISOString(),records},'daily-simulation-records-'+new Date().toISOString().slice(0,10)+'.json');notify('已匯出每日學習室的每日模擬題作答，可匯回 v2.5；收藏不包含在作答備份。');};
 $('import').onclick=()=>$('upload').click();$('upload').onchange=async()=>{try{const file=$('upload').files[0];if(!file)return;if(file.size>4*1024*1024)throw Error('檔案超過4MB');const incoming=M.backup(JSON.parse(await file.text())),n=Object.keys(incoming).length;if(!n)throw Error('備份中沒有每日模擬題作答');const matched=Object.keys(incoming).filter(id=>data.questions.some(q=>q.id===id)).length;if(!confirm(`匯入 ${n} 筆每日模擬題作答，其中 ${matched} 筆對應目前題庫。同題以備份內容為主，現有紀錄先保留一份備份。考古題紀錄不匯入此每日學習室。是否繼續？`))return;if($('reader').open&&!save())throw Error('目前作答尚未成功保存，請先備份文字');localStorage.setItem('daily-reading-test:before-import',JSON.stringify(records));const next={...records,...incoming};persist(next);records=next;render();if(current&&$('reader').open)openQuestion(current);notify(`已匯入 ${n} 筆每日模擬題作答；${matched} 筆對應目前題庫。其餘紀錄也保留於匯出檔。`);}catch(e){notify('匯入未完成：'+e.message);}finally{$('upload').value='';}};
-$('clearRecords').onclick=()=>{const n=Object.keys(records).length;if(!n){notify('每日學習室目前沒有作答紀錄。');return;}if(!confirm(`清除每日學習室全部 ${n} 筆作答與待複習標記？考古題練習紀錄不受影響。清除前會先下載一份備份。`))return;download({format:'probation-daily-github-records',schemaVersion:1,exportedAt:new Date().toISOString(),records},'daily-records-before-clear.json');try{persist({});records={};render();if(current&&$('reader').open)openQuestion(current);notify('每日學習室作答已清除。收藏仍保留；請確認剛才下載的備份。');}catch(e){notify('未完成清除：'+e.message);}};
+function clearRecordsMessage(message,isError=false){const el=$('clearRecordsStatus');el.textContent=message;el.classList.toggle('error',isError);notify(message);}
+$('clearRecords').onclick=()=>{const n=Object.keys(records).length;
+ if(!n){clearRecordsMessage('目前沒有可清除的每日模擬題作答紀錄（收藏與其他模組不在此範圍）。');return;}
+ if(!confirm(`確定清除每日學習室的 ${n} 筆作答與待複習標記？考古題及備考書桌不受影響。清除前會先下載 JSON 備份。`)){clearRecordsMessage('已取消清除，現有練習紀錄保持不變。');return;}
+ try{
+  download({format:'probation-daily-github-records',schemaVersion:1,exportedAt:new Date().toISOString(),records},'daily-records-before-clear.json');
+  persist({});records={};render();if(current&&$('reader').open)openQuestion(current);
+  clearRecordsMessage('已清除每日模擬題作答紀錄；收藏仍保留。請確認 JSON 備份已下載。');
+ }catch(e){clearRecordsMessage('未完成清除，原有紀錄保留：'+e.message,true);}
+};
 window.addEventListener('storage',e=>{if(e.key===KEY){try{records=M.records(JSON.parse(e.newValue||'{}'));render();if(current&&$('reader').open)openQuestion(current);}catch{notify('另一分頁的紀錄格式不符，未套用。');}}});
 if(ENABLE_NEWS_READING)ReadingNews.init(render).then(()=>{const id=initialParams.get('document');if(id){state.tab='全部閱讀資料';state.subject='';render();ReadingNews.open(id);}});load();

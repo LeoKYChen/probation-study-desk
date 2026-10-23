@@ -142,6 +142,13 @@ const inlineFns=vm.runInNewContext('(()=>{'+browserScript.slice(inlineStart,inli
 assert.equal(inlineFns.promptFor(law,'法律爭點分析答案'),promptFor(law,'法律爭點分析答案'),'both pages must use identical law rubric');
 assert.equal(inlineFns.promptFor(mixed,'學理與法律分析答案'),promptFor(mixed,'學理與法律分析答案'),'both pages must use identical cross-subject rubric');
 assert.equal(inlineFns.promptFor(law,'方向草稿','direction'),promptFor(law,'方向草稿','direction'),'daily modules must share the same outline rubric');
+// iPhone backup actions should remain a balanced four-item grid with local clear feedback.
+assert.ok(browserHtml.includes('id="clearRecordsStatus"'),'daily page must show clear feedback beside its buttons');
+assert.ok(browserScript.includes("function clearRecordsMessage("),'daily clear action must report result in-place');
+const mobileCss=read('daily-simulation/practice.css');
+assert.ok(mobileCss.includes('grid-template-columns:repeat(2,minmax(0,1fr))'),'mobile backup buttons should be two equal-width columns');
+assert.ok(mobileCss.includes('.backup-actions>a'),'print/PDF link must receive the same box styling as buttons');
+assert.ok(read('dual-ai-bridge.js').includes("safe.title"),'handoff must confirm the exact selected question title');
 assert.ok(browserHtml.includes('id="aiReviewMode"'),'daily browser review mode selector missing');
 assert.equal(inlineFns.simulationQuestion(adapted),simulationQuestion(adapted),'both pages must display the same adapted essay prompt');
 
@@ -152,6 +159,7 @@ const examHtml=read('v2.5/index.html');
 assert.ok(examHtml.includes('<script src="../dual-ai-bridge.js"></script>'),'exam page must load dual AI bridge');
 assert.ok(examHtml.indexOf('dual-ai-bridge.js')<examHtml.lastIndexOf('ai-simple-review-v254.js'),'bridge must load before review UI');
 assert.ok(read('v2.5/ai-simple-review-v254.js').includes('id="ai-simple-dual"'),'exam review button must be present');
+assert.ok(read('v2.5/ai-simple-review-v254.js').includes('id="ai-simple-export-dual"'),'iOS manual dual AI export button must be present');
 const exam={id:'114-test',body:'少年甲之程序保障為何？',subject:'少年事件處理法',year:114,questionNo:2,title:'少年程序保障',examTypes:['觀護人'],points:['程序保障'],direction:['確認程序']};
 const draft={issue:'原答案',essayDrafts:{issues:'確認事件類型',basis:'法律依據',analysis:'涵攝',conclusion:'結論'}};
 const direction=A.reviewContentFromRecord(draft,'direction');
