@@ -32,3 +32,12 @@ test('pending detector does not mutate original snapshots',async()=>{
  await pendingChanges(core,current,desk);
  assert.deepEqual({current,desk},original);
 });
+
+test('locally missing previously-synced records show as differences; never delete cloud',async()=>{
+ const shadow={['jj-read']:{hash:await fingerprint(JSON.stringify(['old'])),revision:2}};
+ const deskShadow={'attempt/old':{hash:await fingerprint(JSON.stringify({value:{kind:'attempt',answer:'old'},deleted:false})),revision:1}};
+ const result=await pendingChanges(core,{}, {records:{}}, shadow, deskShadow);
+ assert.equal(result.modules,1);
+ assert.equal(result.desk,1);
+ assert.equal(result.total,2);
+});
