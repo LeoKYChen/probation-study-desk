@@ -13,17 +13,26 @@ export async function pendingChanges(core,localStorageState,deskState,modulesSha
  let modules=0,desk=0,knownModule=0,knownDesk=0;
  for(const key of supported){
   const raw=localStorageState?.[key];
-  if(raw===undefined)continue;
   const baseline=modulesShadow?.[key];
+  if(raw===undefined){
+   // We do not automatically delete remote data; this counts as a difference
+   // which must be resolved through explicit preview.
+   if(typeof baseline?.hash==='string')modules++;
+   continue;
+  }
   if(typeof baseline?.hash==='string')knownModule++;
   if((await fingerprint(raw))!==baseline?.hash)modules++;
  }
- for(const [id,record] of Object.entries(deskState?.records||{})){
+ const currentRecords=deskState?.records||{};
+ for(const [id,record] of Object.entries(currentRecords)){
   if(ignoreDesk(id))continue;
   const baseline=deskShadow?.[id];
   if(typeof baseline?.hash==='string')knownDesk++;
   if((await fingerprint(deskCanonical(record)))!==baseline?.hash)desk++;
  }
+ for(const [id,baseline] of Object.entries(deskShadow||{}))
+  if(!ignoreDesk(id)&&!own(currentRecords,id)&&typeof baseline?.hash==='string')
+   desk++;
  return {modules,desk,total:modules+desk,knownModule,knownDesk,
   status:(knownModule||knownDesk)?'has-baseline':'first-sync'};
 }
