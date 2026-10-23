@@ -107,8 +107,18 @@ export class CloudDeskUI {
   if(!/^[0-9]{6,8}$/.test(code))throw Error('驗證碼格式不符');
   const t=this.makeTransport();
   await t.verify(this.pendingEmail,code);
+  // A valid OTP is insufficient: make sure this project actually installed
+  // the private tables and authenticated sync RPC before switching namespaces.
+  try {
+   const probe=await t.pull(0);
+   if(!probe || !Array.isArray(probe.changes) || typeof probe.more!=='boolean')
+    throw Error('雲端同步 API 格式不符');
+  } catch(error){
+   try {await t.logout();}catch{}
+   throw Error('帳號已驗證，但雲端資料庫尚未準備好：'+message(error));
+  }
   this.transport=t;
-  // The user's confirmed OTP action is the explicit opt-in. Guest records are never auto-copied.
+  // Explicit OTP consent opts in; guest records never auto-copy.
   localStorage.setItem(ENABLED_KEY,'yes');
   await this.enterAccount();
  }
@@ -192,6 +202,9 @@ export class CloudDeskUI {
   if(!this.active)return;
   if(this.running)await this.running;
   await this.beforeSwitch();
+  const saved=await this.getStore().read();
+  const outstanding=Object.keys(saved.outbox).length,conflicts=Object.keys(saved.conflicts).length;
+  if((outstanding||conflicts) && !confirm('此帳號尚有 '+outstanding+' 筆未上傳、'+conflicts+' 筆版本差異。登出後資料仍留在這部裝置，但其他裝置暫時看不到。確定要登出嗎？'))return;
   clearTimeout(this.delay);this.delay=null;
   // Keep the account IndexedDB namespace and its unsent outbox on this device.
   try {await this.transport?.logout();}catch {sessionStorage.removeItem(sessionKey(this.config.url));}
