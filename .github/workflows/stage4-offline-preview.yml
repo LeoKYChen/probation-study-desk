@@ -38,6 +38,8 @@ jobs:
       - uses: actions/checkout@v6
         with:
           ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}
+      - name: Trust this ephemeral CI checkout in the Playwright container
+        run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - name: Validate atomic snapshot resources and essential scripts
         shell: bash
         run: |

@@ -36,6 +36,8 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: '24'
+      - name: Trust this ephemeral CI checkout in the Playwright container
+        run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - name: Build and audit identical static mirror without deploying
         run: |
           python3 verification/check-cloudflare-release.py
