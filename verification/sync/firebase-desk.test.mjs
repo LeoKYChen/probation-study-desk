@@ -68,3 +68,23 @@ test('cloud version changes before CAS, no loss of local answer',async()=>{
  await assert.rejects(commitDesk(local,cloud.api,plan),/另一裝置已更新/);
  assert.equal((await local.read()).records['attempt/demo'].value.answer,'此裝置');
 });
+
+test('derived recommendation audit remains local and is not uploaded',async()=>{
+ const cloud=backend(),guest=new MemoryStore(emptyState());
+ await guest.update(s=>{
+  s.records['settings/recommendation-audit']={value:{kind:'local-audit',summary:'only the local UI needs this'},revision:0,deleted:false};
+  s.records['attempt/answer']={value:{kind:'attempt',answer:'真正的考生作答'},revision:0,deleted:false};
+ });
+ const run=await sync(guest,cloud);
+ assert.equal(run.result.uploaded,1);
+ assert(!cloud.docs['settings/recommendation-audit']);
+ assert.equal((await guest.read()).records['settings/recommendation-audit'].value.summary,'only the local UI needs this');
+});
+test('malformed remote attempt is rejected without mutating guest IndexedDB',async()=>{
+ const cloud=backend(),guest=new MemoryStore(emptyState());
+ await add(guest,'attempt/answer','原本的本機答卷');
+ const before=await guest.read();
+ cloud.docs['attempt/answer']={revision:1,raw:JSON.stringify({value:{kind:'attempt',answer:'remote'},deleted:'not-a-boolean'})};
+ await assert.rejects(prepareDesk(await guest.read(),await cloud.api.readAll()),/雲端版本/);
+ assert.deepEqual(await guest.read(),before);
+});
