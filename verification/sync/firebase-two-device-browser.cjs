@@ -128,7 +128,20 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   assert.equal(await readDesk(b),'手機第一版作答');
   await b.evaluate(()=>localStorage.setItem('jj-read',JSON.stringify(['手機初稿','電腦新增'])));
   await writeDesk(b,'電腦完成的訂正');
+  const journalBefore=await b.evaluate(()=>{
+   window.PSDLocalJournal.note('jj-read');
+   window.PSDLocalJournal.note('desk');
+   const marker='psd-firebase-local-journal-v1:synthetic-project:synthetic-user-id';
+   return localStorage.getItem(marker);
+  });
+  assert(journalBefore.includes('jj-read')&&journalBefore.includes('desk'),'sync journal contains only module identifiers');
+  assert(!journalBefore.includes('電腦完成的訂正'),'sync journal never contains answer text');
   await preview(b);await apply(b);
+  const journalAfter=await b.evaluate(()=>{
+   const marker='psd-firebase-local-journal-v1:synthetic-project:synthetic-user-id';
+   return JSON.parse(localStorage.getItem(marker)).entries;
+  });
+  assert.equal(Object.keys(journalAfter).length,0,'successful sync acknowledges queued metadata');
   await preview(a);await apply(a);
   assert.deepEqual(await a.evaluate(()=>JSON.parse(localStorage.getItem('jj-read'))),['手機初稿','電腦新增']);
   assert.equal(await readDesk(a),'電腦完成的訂正');
