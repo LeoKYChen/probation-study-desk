@@ -50,8 +50,8 @@ for(const q of windows.POLICE_ORIGINAL_QUESTION_BANK){
  const key=q.year+':'+subjectKey;
  assert.equal(q.sourceUrl, officialCatalog.knownPaperUrls[key], 'official URL mismatch: '+q.id);
  assert(Number.isInteger(q.officialPoints)&&q.officialPoints>0, 'explicit original point value missing: '+q.id);
- const bodyPoints=[...q.body.matchAll(/[\\(（]\\s*(\\d{1,3})\\s*分\\s*[\\)）]/g)].map(m=>Number(m[1]));
- if(bodyPoints.length===1) assert.equal(q.officialPoints,bodyPoints[0], 'point value differs from original stem: '+q.id);
+ const bodyPoints=[...q.body.matchAll(/[（(]\s*(\d{1,3})\s*分\s*[）)]/g)].map(m=>Number(m[1]));
+ if(bodyPoints.length>=1) assert.equal(q.officialPoints,bodyPoints.reduce((a,b)=>a+b,0),'point values differ from official stem: '+q.id);
  if(bodyPoints.length>1 && q.id==='police-111-psychology-1')
    assert.equal(q.officialPoints,20,'111 psychology first question must total 8+12 points');
  const previous=officialPapers.get(key)||{count:0,sum:0};
