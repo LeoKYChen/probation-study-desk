@@ -86,7 +86,7 @@
    const past=[...legacyPast,...approvedPolice];
    const essays=window.PSD_ESSAY_QUESTIONS||[];
    if(legacyPast.length!==426)errors.push('原有考古題題庫目前載入 '+legacyPast.length+' 題，預期426題；請重新整理，以免題幹不完整。');
-   if(approvedPolice.length!==99)errors.push('警察預防組核准原題目前載入 '+approvedPolice.length+' 題，預期99題；請確認離線資料已更新。');
+   if(approvedPolice.length!==127)errors.push('警察預防組核准原題目前載入 '+approvedPolice.length+' 題，預期127題；請確認離線資料已更新。');
    if(new Set(past.map(q=>q.id)).size!==past.length)errors.push('題庫識別碼重複，為避免作答錯配請勿列印。');
    if(essays.length!==120)errors.push('國文作文改編題庫目前 '+essays.length+' 題，預期120題；請重新整理。');
    if(daily.length&&daily.length!==125)errors.push('每日模擬題目前讀取 '+daily.length+' 題，可能與原題庫不同。');
