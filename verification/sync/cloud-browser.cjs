@@ -84,6 +84,9 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   await a.locator('#cloud-sync-now').click();
   await a.waitForFunction(()=>document.querySelector('#cloud-status').textContent.includes('同步完成'));
   assert([...records.entries()].some(([id,r])=>id.startsWith('attempt/')&&r.value.answer==='手機原本的答案，尚未移轉。'));
+  // Keep the first device's editor open while a remote edit arrives.
+  await a.locator('#notes button').first().click();
+  await a.waitForFunction(()=>document.querySelector('#answer').value==='手機原本的答案，尚未移轉。');
   const b=await device();await login(b);
   assert.match(await b.locator('#notes').textContent(),/心理學/);
   await b.locator('#notes button').first().click();
@@ -96,9 +99,19 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   await a.locator('#cloud-sync-now').click();
   await a.waitForFunction(()=>document.querySelector('#cloud-status').textContent.includes('同步完成'));
   assert.match(await a.locator('#notes').textContent(),/心理學/);
-  await a.locator('#notes button').first().click();
   await a.waitForFunction(()=>document.querySelector('#answer').value==='在另一部裝置接續修改。');
   assert.equal(await a.locator('#answer').inputValue(),'在另一部裝置接續修改。');
+  // A partially written correction must survive an incoming remote update.
+  await a.locator('#gap').fill('我正在整理的新缺口');
+  await b.locator('#answer').fill('電腦第二次修改。');
+  await b.locator('#save').click();
+  await b.locator('#cloud-sync-now').click();
+  await b.waitForFunction(()=>document.querySelector('#cloud-status').textContent.includes('同步完成'));
+  await a.locator('#cloud-sync-now').click();
+  await a.waitForFunction(()=>document.querySelector('#cloud-status').textContent.includes('同步完成'));
+  assert.equal(await a.locator('#gap').inputValue(),'我正在整理的新缺口','unsent editor notes must never be cleared');
+  assert.match(await a.locator('#status').textContent(),/未送出的文字/);
+  await a.locator('#gap').clear();
   await a.locator('#cloud-logout').click();
   await a.waitForFunction(()=>document.querySelector('#account').textContent==='此裝置的本機書桌');
   assert.match(await a.locator('#notes').textContent(),/心理學/);
