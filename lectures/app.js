@@ -12,7 +12,7 @@
       const valid=core.normalize(next),raw=JSON.stringify(valid);
       localStorage.setItem(core.KEY,raw);
       if(localStorage.getItem(core.KEY)!==raw)throw Error('瀏覽器未回存資料');
-      state=valid;draft=null;draftSettings=null;render();return true;
+      state=valid;draft=null;draftSettings=null;window.PSDLocalJournal?.note(core.KEY);render();return true;
     }catch(e){tell('儲存失敗：'+e.message+'。原本學習紀錄未主動清除。',true);return false;}
   }
   function init(){
