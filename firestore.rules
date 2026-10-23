@@ -23,6 +23,15 @@ service cloud.firestore {
         && request.resource.data.revision == resource.data.revision + 1;
       allow delete: if false;
     }
+    // Per-record data for the separate study-desk IndexedDB namespace.
+    match /users/{uid}/desk/{recordId} {
+      allow read: if owns(uid);
+      allow create: if owns(uid) && validModule()
+        && request.resource.data.revision == 1;
+      allow update: if owns(uid) && validModule()
+        && request.resource.data.revision == resource.data.revision + 1;
+      allow delete: if false;
+    }
     match /{any=**} {
       allow read, write: if false;
     }
