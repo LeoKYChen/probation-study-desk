@@ -40,7 +40,7 @@ async function takeDownload(page,click){
   await untouched.evaluate(input=>{
    localStorage.setItem(input.key,JSON.stringify(input.sessions));
    localStorage.setItem('probation-study-desk-v24','{}');
-   localStorage.setItem('probation-study-desk-v3',JSON.stringify({'old-Q1':{issue:'歷史答案'}}));
+   localStorage.setItem('probation-study-desk-v2',JSON.stringify({'old-Q1':{issue:'歷史答案'}}));
   },{key,sessions:emptySessions});
   await untouched.reload();
   const emptySummary=await untouched.locator('#summary').innerText();
@@ -57,7 +57,7 @@ async function takeDownload(page,click){
   const zeroBundle=await takeDownload(untouched,()=>untouched.locator('#export').click());
   assert.deepEqual(JSON.parse(zeroBundle.data[key]),emptySessions,'export must preserve empty sessions unchanged');
   assert.equal(zeroBundle.data['probation-study-desk-v24'],'{}','an empty record map must be kept in backup');
-  assert.equal(JSON.parse(zeroBundle.data['probation-study-desk-v3'])['old-Q1'].issue,'歷史答案','hidden legacy records must still be backed up');
+  assert.equal(JSON.parse(zeroBundle.data['probation-study-desk-v2'])['old-Q1'].issue,'歷史答案','hidden legacy records must still be backed up');
   // Only after explicit backup, confirmations and typed word does a reset become available.
   await untouched.evaluate(()=>localStorage.setItem('jj-font','18'));
   await untouched.reload();
