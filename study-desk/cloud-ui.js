@@ -133,6 +133,8 @@ export class CloudDeskUI {
  async syncNow(showError=false) {
   if(!this.active || !this.transport)throw Error('尚未登入雲端書桌');
   if(this.running)return this.running;
+  this.status('正在同步，請勿關閉或清除網站資料…');
+  $('cloud-sync-now').disabled=true;
   this.running=(async()=>{
    clearTimeout(this.delay);this.delay=null;
    await this.beforeSwitch();
@@ -144,7 +146,7 @@ export class CloudDeskUI {
    let pending='';try{const s=await this.getStore().read();pending='；待上傳 '+Object.keys(s.outbox).length+'筆';}catch{}
    this.status('尚未同步：'+message(e)+pending+'。資料已先存本機，連線恢復後可重試。',true);
    if(showError)this.report('雲端同步未完成：'+message(e)+'；本機作答仍保留。',true);
-  }).finally(()=>{this.running=null;});
+  }).finally(()=>{this.running=null;this.controls();});
   return this.running;
  }
  async guestState() {
