@@ -112,6 +112,18 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   assert.equal(await a.locator('#gap').inputValue(),'我正在整理的新缺口','unsent editor notes must never be cleared');
   assert.match(await a.locator('#status').textContent(),/未送出的文字/);
   await a.locator('#gap').clear();
+  // Offline edits must stay queued until connectivity returns.
+  await b.context().setOffline(true);
+  await b.locator('#answer').fill('電腦離線補充答案。');
+  await b.locator('#save').click();
+  await b.waitForFunction(()=>document.querySelector('#cloud-status').textContent.includes('離線中'));
+  assert.notEqual([...records.values()].find(r=>r.value?.kind==='attempt')?.value.answer,'電腦離線補充答案。','offline edits are not sent');
+  await b.context().setOffline(false);
+  await b.locator('#cloud-sync-now').click();
+  await b.waitForFunction(()=>document.querySelector('#cloud-status').textContent.includes('同步完成'));
+  assert([...records.values()].some(r=>r.value?.answer==='電腦離線補充答案。'),'queued edit reaches cloud after reconnect');
+  await a.locator('#cloud-sync-now').click();
+  await a.waitForFunction(()=>document.querySelector('#answer').value==='電腦離線補充答案。');
   await a.locator('#cloud-logout').click();
   await a.waitForFunction(()=>document.querySelector('#account').textContent==='此裝置的本機書桌');
   assert.match(await a.locator('#notes').textContent(),/心理學/);
