@@ -33,6 +33,14 @@ const server=http.createServer((req,res)=>{
    await page.fill('#courseName','心理學函授');
    await page.fill('#courseCount','2');
    await page.fill('#courseDuration','180');
+   if(width<=700){
+    for(const [formId,fieldId] of [['#courseForm','#courseName'],['#settingsForm','#weekdayMinutes']]){
+     const button=await page.locator(formId+' button[type=submit]').boundingBox();
+     const field=await page.locator(fieldId).boundingBox();
+     assert(button&&field&&Math.abs(button.x-field.x)<=1&&Math.abs(button.width-field.width)<=1&&button.height>=50,
+      'mobile form submit must align with input '+formId);
+    }
+   }
    await page.locator('#courseForm button[type=submit]').click();
    assert.match(await page.locator('#lessonStat').innerText(),/0／2/);
    const actions=page.locator('.lesson-actions').first();

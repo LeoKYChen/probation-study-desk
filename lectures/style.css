@@ -69,3 +69,21 @@ footer p+p{margin-top:5px}
  .lesson-edit label{font-size:12px}
  .lesson-edit input{padding:8px 6px}
 }
+
+/* 手機課程管理：主要送出按鈕與輸入框同寬，保持一致的點擊高度。 */
+@media (max-width:700px){
+  .fields > button[type="submit"]{
+    grid-column:1 / -1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    min-width:0;
+    min-height:52px;
+    margin:0;
+    padding:12px 16px;
+    text-align:center;
+    white-space:normal;
+    line-height:1.5;
+  }
+}

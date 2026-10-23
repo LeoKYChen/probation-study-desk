@@ -37,13 +37,17 @@
         const prev=history.get(id);
         const interval=rating==='mastered'&&prev?.rating==='mastered'?(prev.interval>=14?30:14):ratings[rating];
         const q=questions.get(id),manual=id.startsWith('manual:');
+        const mappedSubjects=Array.isArray(q?.mappedSubjects)?q.mappedSubjects:[];
+        // Keep official subject in the record but navigate to an actual practice subject.
+        const practiceSubject=['心理學','諮商與輔導','犯罪學','少年事件處理法','刑法','刑事訴訟法','保安處分執行法'].includes(subject)?subject:
+          (mappedSubjects.includes(todaySubject)?todaySubject:mappedSubjects[0]||'');
         const label=String(entry.questionHeading||q?.title||`自主練習｜${subject||'科目待辨識'}`).slice(0,120);
-        history.set(id,{id,subject,topic:label,score,rating,interval,date:day,due:addDays(day,interval),
+        history.set(id,{id,subject,practiceSubject,mappedSubjects,topic:label,score,rating,interval,date:day,due:addDays(day,interval),
           issues:entry.issues.slice(),nextStep:String(entry.nextStep||''),attempts:(prev?.attempts||0)+1,
-          canOpen:!!subject&&(manual||!!q),manual});
+          canOpen:!!practiceSubject&&(manual||!!q),manual});
       }
     }
-    const all=[...history.values()].map(r=>({...r,daysUntil:index(r.due)-index(today),todayMatch:r.subject===todaySubject}));
+    const all=[...history.values()].map(r=>({...r,daysUntil:index(r.due)-index(today),todayMatch:r.subject===todaySubject||r.mappedSubjects.includes(todaySubject)}));
     const sort=(a,b)=>a.daysUntil-b.daysUntil||Number(b.todayMatch)-Number(a.todayMatch)||a.date.localeCompare(b.date)||a.id.localeCompare(b.id);
     const due=all.filter(r=>r.daysUntil<=0).sort(sort),upcoming=all.filter(r=>r.daysUntil>0).sort(sort);
     return {all,due,upcoming,incomplete};
@@ -73,7 +77,7 @@
         if(r.nextStep)item.append(mk('p','改善目標：'+r.nextStep,'muted tiny'));
         const button=mk('button','開啟這題申論複習','secondary');button.type='button';button.disabled=!r.canOpen;
         button.title=r.canOpen?'不更動上方每日任務、計時與自評':'題目來源或科目無法辨識，暫不能開啟';
-        button.addEventListener('click',()=>{if(api.openEssayReview(r.id,r.subject)){
+        button.addEventListener('click',()=>{if(api.openEssayReview(r.id,r.practiceSubject)){
           $('essayEditor').open=true;$('essaySource').open=true;
           $('essayLab').scrollIntoView({block:'start',behavior:'smooth'});
           $('essayReviewStatus').textContent=`已開啟「${r.subject}」申論複習。完成新答案及自評後，系統會重新計算複習日期。`;

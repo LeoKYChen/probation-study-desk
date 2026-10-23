@@ -41,7 +41,8 @@
       const day=new Map(),add=(id,rating,cause,subject,explicit)=>{
         const q=questions.get(String(id));if(!q||!ratings.has(rating))return;
         const canonical=canonicalSubject(q);
-        if(explicit&&subject!==canonical&&!(canonical==='刑事訴訟法與保安處分執行法'&&['刑事訴訟法','保安處分執行法'].includes(subject)))return;
+        const mapped=Array.isArray(q.mappedSubjects)?q.mappedSubjects:[];
+        if(explicit&&subject!==canonical&&!mapped.includes(subject)&&!(canonical==='刑事訴訟法與保安處分執行法'&&['刑事訴訟法','保安處分執行法'].includes(subject)))return;
         day.set(String(id),{date,id:String(id),q,rating,cause:typeof cause==='string'?cause:'',subject,explicit});
       };
       const q=questions.get(String(item.questionId));
@@ -62,7 +63,7 @@
       const interval=nextInterval(item.rating,previous);
       history.set(key,{id,title:String(q.title||'歷屆題'),subject,explicitSubject:item.explicit,topic:topic(q),
         date,rating:item.rating,interval,due:addDays(date,interval),attempts:(previous?.attempts||0)+1,
-        cause:item.cause,sourceUrl:q.sourceUrl||''});
+        cause:item.cause,sourceUrl:q.sourceUrl||'',mappedSubjects:Array.isArray(q.mappedSubjects)?q.mappedSubjects.slice():[]});
     }
     const all = Array.from(history.values()).map(r => ({...r, daysUntil: dateIndex(r.due) - dateIndex(now)}));
     const urgency = r => r.rating === 'review' ? 0 : r.rating === 'partial' ? 1 : 2;
@@ -89,7 +90,7 @@
   }
   function chooseDue(sessions, bank, date, target, sunday) {
     const result = model(sessions, bank, date);
-    const available = sunday ? result.due : result.due.filter(r => r.subject === target || (r.subject === '刑事訴訟法與保安處分執行法' && ['刑事訴訟法', '保安處分執行法'].includes(target)));
+    const available = sunday ? result.due : result.due.filter(r => r.subject === target || r.mappedSubjects.includes(target) || (r.subject === '刑事訴訟法與保安處分執行法' && ['刑事訴訟法', '保安處分執行法'].includes(target)));
     return available[0]?.id || null;
   }
   root.Study30Review = { attempts, model, topic, canonicalSubject, nextInterval, addDays, dateIndex, chooseDue };

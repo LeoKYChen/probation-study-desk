@@ -34,6 +34,8 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: '24'
+      - name: Validate all 553 professional practice questions and subject mappings
+        run: node police-exams/tools/integration.test.cjs
       - name: Build the exact static integration artifact
         run: python3 scripts/build-cloudflare-main-mirror.py
       - name: Install the same WebKit test runtime validated on macOS locally

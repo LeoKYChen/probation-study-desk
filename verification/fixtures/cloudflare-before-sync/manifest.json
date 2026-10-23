@@ -30,7 +30,7 @@
     },
     {
       "name": "essay-review.js",
-      "path": "professional/essay-review.js",
+      "path": "verification/fixtures/layout-before-review/essay-review.js",
       "sha256": "7fe28bd7b2fef4ca1b2a8a8d85d6e911dbdf5440550057871793a960af5066eb"
     },
     {
