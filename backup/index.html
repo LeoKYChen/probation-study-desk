@@ -39,10 +39,10 @@ footer{color:#607267;font-size:13px}ul{columns:2;max-width:780px;padding-left:24
 <header><strong>觀護人學習平台</strong><a href="../">← 返回學習首頁</a></header>
 <main>
 <h1>完整學習紀錄備份</h1>
-<p class="muted">一份 JSON 保存本網站目前瀏覽器中的練習紀錄，再由你自行上傳私人 Google Drive；換裝置時匯入即可。不要求帳號、不連接 Google Drive，也不會將答案送到伺服器。</p>
+<p class="muted">手動 JSON 備份功能仍可不登入、不上傳資料，並可自行保存至私人 Google Drive。下方另有<strong>選用的 Firebase 測試同步</strong>，只有本人登入並確認後才會上傳支援的學習資料。</p>
 <div class="card" id="firebase-hub">
 <h2>測試版｜Google Firebase 多裝置同步</h2>
-<p class="muted">預定全站同步基礎。此測試版先涵蓋下列 <strong>15 類既有 localStorage 學習資料</strong>；備考書桌 IndexedDB 與其他未列入備份清單的資料尚未接通，因此不得宣稱全站已完成。沒有登入或確認時，既有備份及練習功能完全不變。</p>
+<p class="muted">預定全站同步基礎。此測試版涵蓋<strong>15 類既有 localStorage 模組及備考書桌 IndexedDB</strong>。其他未列入白名單的資料及背景自動同步尚未接通，仍不得宣稱全站已完全上線。沒有登入或確認時，既有備份及練習功能完全不變。</p>
 <p class="note">使用 Firebase Spark 免費方案，需自行建立 Firebase 專案並設定 Google 登入及 Firestore 規則。此頁使用公開 Web config，不需要雲端管理金鑰。**不可上傳可識別少年個案、公務機密或私人敏感卷證。**</p>
 <div class="firebase-grid">
 <label>Firebase projectId<input id="firebase-project" placeholder="your-project-id" autocomplete="off"></label>
@@ -52,11 +52,11 @@ footer{color:#607267;font-size:13px}ul{columns:2;max-width:780px;padding-left:24
 </div>
 <div class="actions"><button id="firebase-login" type="button" class="primary">以 Google 帳號登入</button><button id="firebase-signout" type="button">登出</button></div>
 <p id="firebase-user" class="muted">未登入</p>
-<div class="actions"><button id="firebase-preview-btn" type="button">預覽 15 類學習資料差異</button></div>
+<div class="actions"><button id="firebase-preview-btn" type="button">預覽網站學習資料及備考書桌差異</button></div>
 <p id="firebase-scope" class="muted">尚未預覽。此階段不會自動上傳任何資料。</p>
 <ul id="firebase-preview" aria-label="雲端差異預覽"></ul>
-<div class="actions"><button id="firebase-backup" type="button">下載完整學習紀錄 JSON（同步前）</button></div>
-<label class="check"><input type="checkbox" id="firebase-confirm">我已檢查備份檔實際存在，也已關閉其他正在作答的網站分頁；同意依預覽結果保留版本後合併。</label>
+<div class="actions"><button id="firebase-backup" type="button">① 下載舊模組完整 JSON 備份</button><button id="firebase-backup-desk" type="button">② 下載備考書桌 JSON 備份</button></div>
+<label class="check"><input type="checkbox" id="firebase-confirm">我已確認兩份 JSON 備份均已下載並實際保存，也已關閉其他正在作答的網站分頁；同意依預覽結果保留版本後合併。</label>
 <div class="actions"><button id="firebase-apply" type="button" class="primary" disabled>確認合併並同步</button></div>
 <p id="firebase-status" role="status" aria-live="polite">尚未連接 Firebase，所有資料仍儲存於此裝置。</p>
 <p class="muted">iPhone Safari 可能阻擋 Google 彈出式登入；暫未啟用跨網站重導向登入。首次同步前，仍請在不同網域及裝置各自匯出原始 JSON 備份。</p>
