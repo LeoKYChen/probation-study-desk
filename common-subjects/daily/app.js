@@ -8,7 +8,7 @@ const files=['vocab.json','grammar-1.json','grammar-2.json','grammar-3.json','re
 let bank,state,today,shownDate,task=null,index=0,revealed=false;
 function notice(msg,error){const x=$('status');x.hidden=false;x.textContent=msg;x.className=error?'status error':'status';if(!error)setTimeout(()=>{if(x.textContent===msg)x.hidden=true},4200)}
 function load(){try{return E.normalize(JSON.parse(localStorage.getItem(STORE)||'null'))}catch(_){return E.defaultState()}}
-function save(){try{localStorage.setItem(STORE,JSON.stringify(state));return true}catch(e){notice('本機儲存失敗，請先保留作答並檢查儲存空間。',true);return false}}
+function save(){try{localStorage.setItem(STORE,JSON.stringify(state));window.PSDLocalJournal?.note(STORE);return true}catch(e){notice('本機儲存失敗，請先保留作答並檢查儲存空間。',true);return false}}
 function taskDone(t,date){return E.completed(state,date,t)}
 function sumDone(plan,date){return plan.tasks.reduce((n,t)=>n+taskDone(t,date),0)}
 function sumSize(plan){return plan.tasks.reduce((n,t)=>n+t.ids.length,0)}
