@@ -19,7 +19,7 @@
     if(typeof onResult!=='function')fail('沒有設定回寫目標');
     const safe=validPayload(payload);
     if(active&&!active.finished&&!root.confirm('已有一項尚未回傳的雙 AI 任務。改為送出新的題目後，舊視窗將無法自動回寫。確定繼續？'))return false;
-    if(!root.confirm('即將另開雙 AI 工作臺並傳送本題題幹及作答。工作臺會儲存於瀏覽器，實際呼叫模型時資料會傳給你選擇的 AI 服務。確認送出？'))return false;
+    if(!root.confirm('本次準備送審：\n'+safe.title+'\n\n請確認這就是目前正在練習的題目。工作臺會儲存題幹與答案於瀏覽器，實際呼叫模型時資料會傳給你選擇的 AI 服務。確認送出？'))return false;
     const id=nonce();
     const handoffKey='psd-dual-ai-handoff:'+id;
     try{root.localStorage.setItem(handoffKey,JSON.stringify({nonce:id,payload:safe,createdAt:Date.now()}));}
