@@ -1,62 +1,23 @@
-name: Promote 115 police original past papers after source review
+name: Archived police source gate - 115 source-hash promotion
 on:
-  push:
-    branches:
-      - feat/police-past-papers-108-115-originals
-    paths:
-      - 'police-exams/reviews/115-ai-visual-reviewed-hashes.json'
-      - '.github/workflows/promote-115-police-originals.yml'
   workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
 jobs:
-  promote-reviewed-originals:
+  audit-approved-bank-only:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
-        with:
-          persist-credentials: true
-          ref: feat/police-past-papers-108-115-originals
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - name: Install official PDF extraction tools
-        run: python -m pip install --disable-pip-version-check 'requests>=2.32,<3' 'beautifulsoup4>=4.12,<5' 'pymupdf>=1.24,<2'
-      - name: Run extraction and original-only gate tests
+      - name: Confirm archived partial import cannot replace consolidated bank
         run: |
-          python -m unittest discover -s police-exams/tools -p 'test_*.py' -v
           node police-exams/tools/approved-loader.test.cjs
-      - name: Collect 115 official original candidates with PDF identity checks
-        run: |
-          python police-exams/tools/collect_originals.py --year 115 --out police-exams/output
+          node police-exams/tools/integration.test.cjs
           python - <<'PY'
           import json
           from pathlib import Path
-          audit=json.loads(Path('police-exams/output/audit.json').read_text())
-          qs=json.loads(Path('police-exams/output/candidates.json').read_text())
-          assert len(qs)==16,f'Expected 16 original questions, found {len(qs)}'
-          assert len(audit['papers'])==4
-          assert all(r['status']=='extracted_pending_review' and not r['errors'] for r in audit['papers'])
-          assert len({q['id'] for q in qs})==16
-          print('PASS: 4 source-PDF exam papers, 16 numbered question text candidates, no extraction warnings')
+          text=Path('police-exams/questions.approved.js').read_text('utf-8')
+          items=json.loads(text.split('window.POLICE_ORIGINAL_QUESTION_BANK = ',1)[1].rsplit(';',1)[0])
+          assert len(items)==127,'Only the consolidated 127-question bank is valid'
+          assert len({q['id'] for q in items})==127
+          print('Archived initial-batch workflow is read-only. No historical partial-bank rewrite.')
           PY
-      - name: Promote only previously reviewed content and re-test JS syntax
-        run: |
-          python police-exams/tools/promote_reviewed.py --candidates police-exams/output/candidates.json --receipts police-exams/reviews/115-ai-visual-reviewed-hashes.json --out police-exams/questions.approved.js
-          node --check police-exams/questions.approved.js
-          node police-exams/tools/approved-loader.test.cjs
-          grep -q 'police-115-psychology-1' police-exams/questions.approved.js
-          grep -q 'police-115-criminology_prevention-4' police-exams/questions.approved.js
-      - name: Commit official originals only on development branch
-        shell: bash
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add police-exams/questions.approved.js
-          if ! git diff --cached --quiet; then
-            git commit -m "data: add 16 source-reviewed 115 original police prevention exam questions"
-            git push origin HEAD:feat/police-past-papers-108-115-originals
-          else
-            echo "No approved original change needed."
-          fi
