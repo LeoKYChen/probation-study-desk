@@ -9,7 +9,7 @@ import {confirmedWeaknesses,weaknessStats,weaknessTrends,recallTrajectory,valida
 let currentEpoch=null;
 class DeskRecords extends SyncEngine {
  constructor(store,{cloud=false}={}){super(store,{uuid:uid});this.cloud=cloud;}
- queue(state,id,value,deleted=false){assertLearningEpoch(state,currentEpoch);super.queue(state,id,value,deleted);if(!this.cloud)delete state.outbox[id];}
+ queue(state,id,value,deleted=false){assertLearningEpoch(state,currentEpoch);super.queue(state,id,value,deleted);if(!this.cloud || id==='settings/recommendation-audit')delete state.outbox[id];}
 }
 const $=id=>document.getElementById(id), clone=v=>structuredClone(v);
 let store,engine,cloudControl,current=null,currentId=null,baseline=null,preferences={subjects:{},learnedTopics:[]},timer,saveTail=Promise.resolve(),skipped=[],recommendation,lectureData=null,lectureSource=null;
