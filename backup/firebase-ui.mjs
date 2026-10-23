@@ -32,8 +32,12 @@ function assertIdentity(){
 // Read only. No background Firebase writes or reads; safe on Spark free quota.
 async function scanLocalPending(){
  const el=$('firebase-pending');
- if(!cloudUser||!connection||!localStorage.getItem(BOUND)){
+ if(!cloudUser||!connection){
   el.textContent='訪客模式：紀錄只存這部裝置；無需登入或連線。';
+  return;
+ }
+ if(!localStorage.getItem(BOUND)){
+  el.textContent='已登入 Google，但尚未完成首次同步。請先預覽、下載兩份備份並親自確認；不會自行上傳。';
   return;
  }
  if(scanning||document.hidden)return;
