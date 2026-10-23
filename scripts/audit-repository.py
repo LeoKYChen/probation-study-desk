@@ -27,6 +27,7 @@ REQUIRED = (
     "v2.5/questions.js",
     "professional/source-main-questions.js",
     "offline-manifest.json",
+    "dual-ai-bridge.js",
 )
 
 
