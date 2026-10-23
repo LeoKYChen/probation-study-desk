@@ -39,7 +39,7 @@
   let store=blank(),session=null,running=false,lastTickMs=0,canSave=true,selectedPracticeDate=null;
   const say = message=>{$('notice').textContent=message;$('notice').hidden=false;};
   function load(){try{const raw=localStorage.getItem(KEY);if(raw){const parsed=JSON.parse(raw);if(parsed?.version===1&&parsed.sessions&&typeof parsed.sessions==='object'&&!Array.isArray(parsed.sessions))store=parsed;else throw Error('版本不符');}}catch(e){canSave=false;say('無法讀取30分鐘紀錄，未覆寫原資料。本次可練習，但離開前務必匯出備份。');}}
-  function persist(){if(!canSave)return;try{localStorage.setItem(KEY,JSON.stringify(store));}catch(e){canSave=false;say('目前瀏覽器無法保存30分鐘紀錄。請使用「匯出本模組紀錄 JSON」備份。');}}
+  function persist(){if(!canSave)return;try{localStorage.setItem(KEY,JSON.stringify(store));window.PSDLocalJournal?.note(KEY);}catch(e){canSave=false;say('目前瀏覽器無法保存30分鐘紀錄。請使用「匯出本模組紀錄 JSON」備份。');}}
   const priorRecords = () => Object.entries(store.sessions).sort(([a],[b])=>b.localeCompare(a));
   function newestRatingById(){const result=new Map();for(const [date,s] of priorRecords()){if(s?.questionId&&!result.has(s.questionId)&&s.rating)result.set(s.questionId,{rating:s.rating,date});}return result;}
   function reviewCandidate(target,iso){const ratings=newestRatingById();const eligible=pool(target).filter(q=>{const r=ratings.get(q.id);return r?.rating==='review'&&dayIndex(iso)-dayIndex(r.date)>=3;});return eligible.sort((a,b)=>dayIndex(ratings.get(a.id).date)-dayIndex(ratings.get(b.id).date))[0]||null;}
@@ -213,11 +213,13 @@
       if(scope==='all'){
         // Deleting only our namespaced key avoids changing any existing v2.5 data.
         localStorage.removeItem(KEY);
+        window.PSDLocalJournal?.note(KEY);
         store=blank();
       }else{
         const next={...store,sessions:{...store.sessions}};
         delete next.sessions[isoTaipei()];
         localStorage.setItem(KEY,JSON.stringify(next));
+        window.PSDLocalJournal?.note(KEY);
         store=next;
       }
     }catch(error){
@@ -307,7 +309,7 @@
   const prev=session.aiReviewTexts, prevTime=session.updatedAt;
   session.aiReviewTexts={...(prev||{}),[id]:text};
   session.updatedAt=new Date().toISOString();
-  try { localStorage.setItem(KEY,JSON.stringify(store)); }
+  try { localStorage.setItem(KEY,JSON.stringify(store));window.PSDLocalJournal?.note(KEY); }
   catch(e){session.aiReviewTexts=prev;session.updatedAt=prevTime;throw e;}
 }
 function readAiReview(id) {
