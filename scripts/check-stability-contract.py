@@ -68,6 +68,24 @@ def main():
         if "dual-ai-bridge.js" not in entry_set:
             errors.append("Offline manifest missing dual AI bridge")
 
+    # Deployment is intentionally a separate manual approval from merging main.
+    # Main pushes and pull requests still run tests; neither may publish.
+    production_workflow = root / ".github/workflows/sync-cloudflare-production.yml"
+    if production_workflow.is_file():
+        wf = production_workflow.read_text(encoding="utf-8")
+        manual_guard = (
+            "github.event_name == 'workflow_dispatch' && "
+            "github.ref == 'refs/heads/main' && inputs.confirm_release == 'RELEASE'"
+        )
+        if "workflow_dispatch:" not in wf or "confirm_release:" not in wf:
+            errors.append("Cloudflare publication requires workflow_dispatch approval input")
+        if wf.count(manual_guard) != 6:
+            errors.append("All six Cloudflare production steps must require manual approval")
+        if "github.event_name == 'push' && github.ref == 'refs/heads/main'" in wf:
+            errors.append("Unexpected push-triggered Cloudflare publication guard")
+    else:
+        errors.append("Cloudflare production workflow missing")
+
     # Advisories make paused/archived changes visible for human review; they are
     # never an automatic delete, or a ban on important correctness/security fixes.
     warnings = []
