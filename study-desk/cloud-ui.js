@@ -2,6 +2,7 @@
  * Tokens live only in sessionStorage; the public project configuration is not a secret.
  */
 import {IDBStore} from '../cloud-sync/idb.js';
+import {same} from '../cloud-sync/core.js';
 import {SupabaseTransport,validateConfig} from '../cloud-sync/supabase.js';
 
 const CONFIG_KEY='psd-sync-public-config-v1';
@@ -36,7 +37,7 @@ export class CloudDeskUI {
   $('cloud-verify').disabled=this.active;
  }
  configFromForm() {
-  return validateConfig({url:$('cloud-url').value.trim(),key:$('cloud-key').value.trim()});
+  return validateConfig({url:$('cloud-url').value.trim().replace(/\/+$/,''),key:$('cloud-key').value.trim()});
  }
  saveConfig() {
   const next=this.configFromForm();
@@ -160,11 +161,20 @@ export class CloudDeskUI {
  }
  async copyGuest() {
   if(!this.active)throw Error('請先登入雲端帳號');
-  const source=await this.guestState(),number=count(source);
-  if(!number){this.status('此裝置的未登入書桌沒有可移轉的紀錄。');return;}
-  if(!confirm('要將此裝置的 '+number+' 筆未登入書桌紀錄複製到目前帳號嗎？原資料不刪除；同 ID 的不同版本只封存，不會覆寫。建議先下載原裝置備份。'))return;
+  const source=await this.guestState(),account=await this.getStore().read();
+  const incoming={};
+  for(const [id,rec] of Object.entries(source.records)) {
+   if(id==='settings/recommendation-audit')continue; // derived local display metadata
+   const current=account.records[id];
+   if(current&&current.deleted===rec.deleted&&same(current.value,rec.value))continue;
+   const archived=Object.values(account.records).some(r=>r.value?.originalId===id && r.value?.record?.deleted===rec.deleted && same(r.value.record.value,rec.value));
+   if(!archived)incoming[id]=rec;
+  }
+  const number=Object.keys(incoming).length;
+  if(!number){this.status('原裝置書桌沒有新的可複製紀錄；既有資料與已封存版本均保留。');return;}
+  if(!confirm('要將此裝置的 '+number+' 筆尚未複製的書桌紀錄加入目前帳號嗎？原資料不刪除；同 ID 差異只封存，不覆寫。建議先下載原裝置備份。'))return;
   await this.beforeSwitch();
-  await this.getEngine().importRecords(source.records);
+  await this.getEngine().importRecords(incoming);
   await this.afterSync();
   this.status('已複製到帳號的本機資料區；原裝置紀錄保留。連線後會上傳，版本差異請至「我的筆記」查看。');
   this.scheduleSync(100);
