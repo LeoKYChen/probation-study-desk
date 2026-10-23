@@ -64,6 +64,13 @@
 - 新增快速、無 Firebase 金鑰也無部署權限的 `Firebase sync contract (no deployment)` CI：執行離線佇列、版本衝突、帳號隔離及 JSON 備份回歸測試。
 - **尚未完成全站背景自動上傳**。本機變更通知只是準備工作，必須在安全模型驗收與使用者明確授權後才可啟用實際雲端上傳。
 
+## 離線與跨網域資源完整性
+
+- 新增的 Firebase 公開 JavaScript／ES module 介面已加入 `offline-manifest.json`，包含備份中心 `firebase-ui.mjs`、Firebase 公開客戶端、同步比對核心、IndexedDB 工具及離線日誌。
+- Cloudflare 隔離鏡像建置新增「僅允許 `cloud-sync/` 靜態 `.js`／`.mjs`」規則：允許公用前端模組，仍阻擋 `schema.sql`、內部測試及管理憑證。**這不是將私人作答或 Firebase 管理金鑰打包進網站。**
+- Firebase CDN 需要連線才能首次下載並登入；沒有網路時仍能使用已備妥的本機學習及離線資源，**不宣稱離線狀態可以完成雲端同步**。
+- 獨立 Firebase CI 另檢查離線資源、HTML 引用及 Cloudflare 鏡像一致性，防止新頁面參照部署站上找不到的 JavaScript。
+
 ## 3. Firebase Spark 測試專案（由帳號擁有人在 Firebase Console 操作）
 
 1. 至 https://console.firebase.google.com 建立 **Spark** 免費專案。按畫面確認免費方案，不開啟 Blaze，也不綁卡；若跳出須付費的提示，先不要繼續。
