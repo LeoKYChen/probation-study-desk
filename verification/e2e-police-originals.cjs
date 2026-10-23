@@ -49,7 +49,7 @@ async function main(){
   await catalogue.goto(origin+'/police-exams/',{waitUntil:'domcontentloaded'});
   await catalogue.waitForFunction(()=>document.querySelector('#approved-count')?.textContent==='127',{timeout:30000});
   assert.equal(await catalogue.locator('#items tr').count(),32,'all 32 year-subject official papers appear');
-  assert((await catalogue.locator('main').textContent()).includes('尚未經真人逐題校稿'),'AI checking must not be described as human proofreading');
+  assert((await catalogue.locator('main').textContent()).includes('尚未完成全部題目的真人逐字校稿'),'AI checking must not be described as human proofreading');
   await catalogue.locator('#year-filter').selectOption('114');
   assert.equal(await catalogue.locator('#items tr').count(),4,'114 has four official subject papers');
   await catalogue.locator('#subject-filter').selectOption('criminal_law_procedure');

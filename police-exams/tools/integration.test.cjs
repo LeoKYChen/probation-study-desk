@@ -6,7 +6,7 @@ const {createHash}=require('node:crypto');
 const read=path=>fs.readFileSync(path,'utf8');
 const paper=read('v2.5/index.html');
 const sourceCatalogue=read('police-exams/index.html');
-assert(sourceCatalogue.includes('AI 輔助核對原題') && sourceCatalogue.includes('尚未經真人逐題校稿'), 'catalogue must disclose review method');
+assert(sourceCatalogue.includes('AI 輔助核對原題') && sourceCatalogue.includes('尚未完成全部題目的真人逐字校稿'), 'catalogue must disclose review method');
 assert(sourceCatalogue.includes('已定位32份考選部官方原卷'), 'catalogue must report actual 32 official papers');
 assert(sourceCatalogue.includes('邊做題、邊覆核') && sourceCatalogue.includes('僅完成作答不自動代表已逐字核稿'), 'live catalogue must support progressive source verification without false human sign-off');
 const desk=read('study-desk/index.html'),deskApp=read('study-desk/app.js');
