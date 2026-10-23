@@ -27,7 +27,66 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  validate-pr-in-browser-image:
+    if: github.event_name == 'pull_request' && github.head_ref != 'feature/stage4-offline-reading-writing-20261017'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    # PR test never deploys a preview; dedicated Stage4 feature-branch publishing stays unchanged.
+    container:
+      image: mcr.microsoft.com/playwright:v1.62.1-noble
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}
+      - name: Validate atomic snapshot resources and essential scripts
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check sw.js
+          node --check offline.js
+          node --check verification/offline-stage4-check.cjs
+          node --check verification/offline-stage4-browser.cjs
+          node verification/offline-stage4-check.cjs
+          python3 scripts/build-cloudflare-main-mirror.py
+          test -s cloudflare-main-mirror-dist/offline/index.html
+          cmp offline-manifest.json cloudflare-main-mirror-dist/offline-manifest.json
+          cmp sw.js cloudflare-main-mirror-dist/sw.js
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          dist=Path('cloudflare-main-mirror-dist')
+          assets=json.loads(Path('offline-manifest.json').read_text())['assets']
+          missing=[x['url'] for x in assets if not (dist/x['url']).is_file()]
+          assert not missing, 'Offline manifest references unpublished files: '+', '.join(missing)
+          print('PASS: every offline cache asset is actually published by the Cloudflare mirror')
+          PY
+      - name: Install matching Playwright client (browsers are preinstalled)
+        shell: bash
+        run: npm install --prefix /tmp/stage4-browser --no-save --ignore-scripts --no-audit playwright@1.62.1
+      - name: Verify blank sessions are not counted as completed study
+        shell: bash
+        env:
+          NODE_PATH: /tmp/stage4-browser/node_modules
+        run: |
+          node --check backup/app.js
+          node backup/test.cjs
+          node backup/test-browser.cjs
+      - name: Airplane-mode Chromium with original and GitHub Pages subpaths
+        shell: bash
+        env:
+          NODE_PATH: /tmp/stage4-browser/node_modules
+        run: |
+          node verification/offline-stage4-browser.cjs
+          TEST_OFFLINE_PREFIX=/probation-study-desk node verification/offline-stage4-browser.cjs
+      - name: Airplane-mode Safari engine WebKit
+        shell: bash
+        env:
+          NODE_PATH: /tmp/stage4-browser/node_modules
+          TEST_OFFLINE_ENGINE: webkit
+        run: |
+          node verification/offline-stage4-browser.cjs
   validate-and-publish-preview:
+    if: github.event_name != 'pull_request' || github.head_ref == 'feature/stage4-offline-reading-writing-20261017'
     runs-on: ubuntu-latest
     timeout-minutes: 23
     steps:

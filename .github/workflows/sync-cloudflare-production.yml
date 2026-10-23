@@ -24,7 +24,38 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  validate-pr-in-browser-image:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    # PR checks use preinstalled browsers; push/main keeps the original guarded release flow.
+    container:
+      image: mcr.microsoft.com/playwright:v1.62.1-noble
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Build and audit identical static mirror without deploying
+        run: |
+          python3 verification/check-cloudflare-release.py
+          python3 scripts/build-cloudflare-main-mirror.py
+          node verification/unified-integration.cjs cloudflare-main-mirror-dist
+          node verification/check-daily-v254.cjs
+      - name: Install only matching Playwright JavaScript client
+        run: npm install --prefix /tmp/cloudflare-production-qa --no-save --ignore-scripts --no-audit playwright@1.62.1
+      - name: Test migration, rollback, and layouts in Chromium and WebKit
+        env:
+          NODE_PATH: /tmp/cloudflare-production-qa/node_modules
+        run: |
+          for engine in chromium webkit; do
+            UNIFIED_BROWSER_ENGINE="$engine" node verification/cloudflare-migration.cjs cloudflare-main-mirror-dist
+            UNIFIED_BROWSER_ENGINE="$engine" node verification/unified-browser.cjs cloudflare-main-mirror-dist
+            UNIFIED_BROWSER_ENGINE="$engine" node verification/layout-review-browser.cjs cloudflare-main-mirror-dist
+            UNIFIED_BROWSER_ENGINE="$engine" node verification/mobile-home-desk-nav.cjs cloudflare-main-mirror-dist
+          done
   validate-and-sync:
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
