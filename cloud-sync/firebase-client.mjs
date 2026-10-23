@@ -27,7 +27,7 @@ export function decodeDocumentId(id){
   return key;
  }catch{throw Error('雲端文件識別碼編碼不符')}
 }
-const SDK='https://www.gstatic.com/firebasejs/12.18.0/';
+const SDK='https://www.gstatic.com/firebasejs/12.19.0/';
 let modules;
 async function sdk() {
  if(!modules)modules=Promise.all([
