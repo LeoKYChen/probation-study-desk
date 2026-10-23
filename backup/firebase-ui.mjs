@@ -8,12 +8,14 @@ import {prepare,commit} from '../cloud-sync/whole-site-core.mjs';
 import {prepareDesk,commitDesk} from '../cloud-sync/whole-desk-core.mjs';
 import {IDBStore} from '../cloud-sync/idb.js';
 import {FORMAT} from '../cloud-sync/core.js';
+import {pendingChanges} from '../cloud-sync/pending-detection.mjs';
 
 const core=window.PSDUnifiedBackup;
 const $=id=>document.getElementById(id);
 const CFG='psd-firebase-public-web-config-v1',BOUND='psd-firebase-local-data-bound-v1',RESTORE='psd-firebase-restore-login-v1';
 let connection=null,plan=null,deskPlan=null,adapter=null,deskAdapter=null,deskStore=null,cloudUser=null,busy=false;
 let backedUp={modules:false,desk:false};
+let scanning=false;
 const safeLabel=e=>e instanceof Error?e.message:String(e);
 function assertIdentity(){
  if(!cloudUser || !connection)throw Error('請先登入');
@@ -27,6 +29,34 @@ function assertIdentity(){
  if(bound && (bound.uid!==cloudUser.uid||bound.projectId!==connection.projectId))
   throw Error('此瀏覽器的學習資料曾與另一個 Google 帳號／Firebase 專案同步。為防止混入不同使用者的答案，已阻止切換後同步。請先分別備份，再改用其他瀏覽器設定檔或清理測試環境。');
 }
+// Read only. No background Firebase writes or reads; safe on Spark free quota.
+async function scanLocalPending(){
+ const el=$('firebase-pending');
+ if(!cloudUser||!connection||!localStorage.getItem(BOUND)){
+  el.textContent='訪客模式：紀錄只存這部裝置；無需登入或連線。';
+  return;
+ }
+ if(scanning||document.hidden)return;
+ scanning=true;
+ try{
+  assertIdentity();
+  const guest=await IDBStore.open('guest');
+  let state;
+  try{state=await guest.read();}finally{guest.close();}
+  const result=await pendingChanges(core,core.storageSnapshot(localStorage),state,readShadow(),readDeskShadow());
+  el.textContent=result.total
+   ?'此裝置有 '+result.modules+' 類模組及 '+result.desk+' 筆書桌紀錄與上次成功同步不同；'+
+    (navigator.onLine?'請按「預覽」確認合併。':'目前離線，資料已留在此裝置，恢復網路後可確認同步。')
+   :'此裝置目前沒有相對於上次成功同步的本機變更；不代表其他裝置沒有新紀錄。';
+ }catch(e){
+  el.textContent='目前無法檢查待同步資料：'+safeLabel(e)+'。原本的本機紀錄仍保留。';
+ }finally{scanning=false;}
+}
+window.addEventListener('storage',()=>{void scanLocalPending()});
+window.addEventListener('online',()=>{void scanLocalPending()});
+window.addEventListener('offline',()=>{void scanLocalPending()});
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)void scanLocalPending()});
+window.setInterval(()=>{if(cloudUser&&!document.hidden)void scanLocalPending()},30000);
 function status(message,bad=false){
  const el=$('firebase-status');el.textContent=message;el.dataset.error=bad?'1':'0';
 }
@@ -118,6 +148,7 @@ async function connect(){
  $('firebase-user').textContent='已登入：'+user.email+'（'+connection.projectId+'）';
  plan=null;deskPlan=null;backedUp={modules:false,desk:false};
  status('已登入。尚未上傳任何學習紀錄。請先按「預覽差異」。');
+ void scanLocalPending();
 }
 $('firebase-login').addEventListener('click',()=>perform(connect));
 $('firebase-signout').addEventListener('click',()=>perform(async()=>{
@@ -127,6 +158,7 @@ $('firebase-signout').addEventListener('click',()=>perform(async()=>{
  deskStore?.close();deskStore=null;
  $('firebase-user').textContent='未登入';$('firebase-preview').replaceChildren();
  status('已登出。此瀏覽器的原始學習紀錄沒有刪除。');
+ void scanLocalPending();
 }));
 $('firebase-preview-btn').addEventListener('click',()=>perform(async()=>{
  invalidatePreview();
@@ -168,6 +200,7 @@ $('firebase-apply').addEventListener('click',()=>perform(async()=>{
  plan=null;deskPlan=null;backedUp={modules:false,desk:false};
  $('firebase-preview').replaceChildren();$('firebase-confirm').checked=false;
  status('本次同步完成：舊模組上傳 '+result.uploaded+' 類、更新本機 '+result.downloaded+' 類；書桌上傳 '+deskResult.uploaded+' 筆、更新本機 '+deskResult.downloaded+' 筆；合計差異 '+(result.conflicts+deskResult.conflicts)+'。請重新開啟練習頁檢查，不要清除 JSON。');
+ void scanLocalPending();
 }));
 try{
  const saved=JSON.parse(localStorage.getItem(CFG)||'null');
@@ -199,6 +232,7 @@ async function restoreSession(){
   adapter=connection.adapter();deskAdapter=connection.adapter('desk');
   $('firebase-user').textContent='已登入：'+user.email+'（'+connection.projectId+'）';
   status('已恢復 Google 帳號。資料仍保留在本機，尚未執行雲端同步；需要預覽後確認。');
+  void scanLocalPending();
  }catch(error){
   connection=null;cloudUser=null;adapter=null;deskAdapter=null;
   status('無法自動恢復同步登入：'+safeLabel(error)+'。本機資料仍可正常使用。',true);
