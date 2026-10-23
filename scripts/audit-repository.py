@@ -40,7 +40,7 @@ def sha256(path):
 
 def audit(repo):
     output = subprocess.check_output(["git", "ls-files", "-z"], cwd=repo)
-    paths = sorted(p.decode("utf-8") for p in output.split(b"\\0") if p)
+    paths = sorted(p.decode("utf-8") for p in output.split(b"\0") if p)
     hashes, groups = {}, defaultdict(list)
     for name in paths:
         file = repo / name
