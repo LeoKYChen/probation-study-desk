@@ -18,29 +18,36 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
  const base='http://127.0.0.1:'+server.address().port;
  const browser=await chromium.launch({headless:true,executablePath:process.env.BROWSER_EXECUTABLE||chromium.executablePath(),args:['--no-sandbox','--disable-dev-shm-usage']});
  const contexts=[],pageErrors=[];
- const user='11111111-1111-4111-8111-111111111111',records=new Map(),operations=new Map(),events=[];
+ const user='11111111-1111-4111-8111-111111111111',otherUser='22222222-2222-4222-8222-222222222222';
+ const primary={records:new Map(),operations:new Map(),events:[]},secondary={records:new Map(),operations:new Map(),events:[]};
+ const {records,events}=primary;
  async function cloudRoute(route) {
   const request=route.request(),url=new URL(request.url()),headers={'Access-Control-Allow-Origin':'*','Access-Control-Allow-Headers':'apikey,content-type,authorization','Access-Control-Allow-Methods':'POST,OPTIONS','Content-Type':'application/json'};
   if(request.method()==='OPTIONS'){await route.fulfill({status:204,headers,body:''});return;}
   let result={},status=200;
   const body=request.postDataJSON()||{};
+  const scope=request.headers()['authorization']==='Bearer other-access'?secondary:primary;
+  const operations=scope.operations;
   if(url.pathname==='/auth/v1/otp')result={};
-  else if(url.pathname==='/auth/v1/verify')result={user:{id:user,email:body.email},access_token:'integration-access',refresh_token:'integration-refresh',expires_in:3600};
+  else if(url.pathname==='/auth/v1/verify'){
+   const alternate=body.email==='alternate@example.test';
+   result={user:{id:alternate?otherUser:user,email:body.email},access_token:alternate?'other-access':'integration-access',refresh_token:'integration-refresh',expires_in:3600};
+  } else if(url.pathname==='/auth/v1/logout')result={};
   else if(url.pathname==='/rest/v1/rpc/psd_sync_push'){
    const op=body.p_operation;
    if(operations.has(op.opId))result=operations.get(op.opId);
    else {
-    const prior=records.get(op.id);
+    const prior=scope.records.get(op.id);
     if((prior?.revision||0)!==op.baseRevision)result={status:'conflict',record:prior};
     else {
      const record={revision:(prior?.revision||0)+1,value:op.value,deleted:op.deleted};
-     records.set(op.id,record);events.push({id:op.id,...record,sequence:events.length+1});
+     scope.records.set(op.id,record);scope.events.push({id:op.id,...record,sequence:scope.events.length+1});
      result={status:'ok',record};
     }
     operations.set(op.opId,result);
    }
   }else if(url.pathname==='/rest/v1/rpc/psd_sync_pull'){
-   const changes=events.filter(e=>e.sequence>body.p_after);
+   const changes=scope.events.filter(e=>e.sequence>body.p_after);
    result={changes:changes.slice(0,200),more:changes.length>200};
   }else {status=404;result={message:'unexpected stub route '+url.pathname};}
   await route.fulfill({status,headers,body:JSON.stringify(result)});
@@ -54,11 +61,11 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   await page.waitForFunction(()=>document.querySelector('#status').textContent.includes('本機書桌已開啟'));
   return page;
  }
- async function login(p) {
+ async function login(p,email='study@example.test') {
   await p.locator('#cloud-settings').evaluate(el=>el.open=true);
   await p.locator('#cloud-url').fill('https://psdtest.supabase.co');
   await p.locator('#cloud-key').fill('sb_publishable_integration');
-  await p.locator('#cloud-email').fill('study@example.test');
+  await p.locator('#cloud-email').fill(email);
   await p.locator('#cloud-send-code').click();
   await p.waitForFunction(()=>document.querySelector('#cloud-status').textContent.includes('驗證碼已請求'));
   await p.locator('#cloud-code').fill('123456');
@@ -68,6 +75,11 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
  }
  try {
   const a=await device();
+  await a.evaluate(()=>{
+   const core=globalThis.PSDLectureCore;
+   const data=core.addCourse(core.empty(),'心理學','此裝置的函授課程',1,60,'local-lecture');
+   localStorage.setItem(core.KEY,JSON.stringify(data));
+  });
   assert.equal(await a.locator('#cloud-connected').isHidden(),true);
   await a.locator('#manual-picker').evaluate(el=>el.open=true);
   await a.locator('#subject').selectOption({label:'心理學'});
@@ -77,7 +89,13 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   await a.locator('#save').click();
   await a.waitForFunction(()=>document.querySelector('#save-status').textContent.includes('已存此裝置'));
   await login(a);
+  assert.match(await a.locator('#lecture-status').textContent(),/此帳號尚無函授進度快照/,'shared localStorage lectures must not leak into account');
   assert.equal([...records.keys()].some(id=>id.startsWith('attempt/')),false,'logging in must not upload guest answers');
+  await a.locator('#refresh-lectures').click();
+  await a.waitForFunction(()=>document.querySelector('#lecture-status').textContent.includes('此帳號已保存的函授快照'));
+  await a.locator('#cloud-sync-now').click();
+  await a.waitForFunction(()=>document.querySelector('#cloud-status').textContent.includes('同步完成'));
+  assert(primary.records.has('settings/lecture-progress'),'shared lecture data requires explicit import');
   assert.equal(await a.locator('#notes button').count(),0,'new account namespace must not silently inherit guest data');
   await a.locator('#cloud-copy-guest').click();
   await a.waitForFunction(()=>document.querySelector('#notes').textContent.includes('心理學'));
@@ -89,6 +107,7 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   await a.waitForFunction(()=>document.querySelector('#answer').value==='手機原本的答案，尚未移轉。');
   const b=await device();await login(b);
   assert.match(await b.locator('#notes').textContent(),/心理學/);
+  assert.match(await b.locator('#lecture-status').textContent(),/此帳號已保存的函授快照/,'same account shares imported course snapshot');
   await b.locator('#notes button').first().click();
   await b.waitForFunction(()=>document.querySelector('#answer').value==='手機原本的答案，尚未移轉。');
   assert.equal(await b.locator('#answer').inputValue(),'手機原本的答案，尚未移轉。');
@@ -152,6 +171,12 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   await a.locator('#notes button').first().click();
   await a.waitForFunction(()=>document.querySelector('#answer').value==='手機原本的答案，尚未移轉。');
   assert.equal(await a.locator('#answer').inputValue(),'手機原本的答案，尚未移轉。','original guest work remains unchanged');
+  await login(a,'alternate@example.test');
+  assert.equal(await a.locator('#notes button').count(),0,'another account has no access to the first user answers');
+  assert.match(await a.locator('#lecture-status').textContent(),/此帳號尚無函授進度快照/,'another account cannot see first users course snapshot or shared browser data');
+  assert.equal(secondary.records.size,0,'account switch does not upload previous users records');
+  await a.locator('#cloud-logout').click();
+  await a.waitForFunction(()=>document.querySelector('#account').textContent==='此裝置的本機書桌');
   assert.deepEqual(pageErrors,[]);
   console.log('cloud-browser: opt-in, migration, two-device sync and logout verified with synthetic account');
  }finally{
