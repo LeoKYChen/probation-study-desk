@@ -21,7 +21,7 @@ async function sdk() {
   import(/* @vite-ignore */ SDK+'firebase-app.js'),
   import(/* @vite-ignore */ SDK+'firebase-auth.js'),
   import(/* @vite-ignore */ SDK+'firebase-firestore.js')
- ]);
+ ]).catch(error=>{modules=null;throw error;}); // Network recovery must allow retry.
  return modules;
 }
 export async function openFirebase(publicConfig){
@@ -49,14 +49,17 @@ export async function openFirebase(publicConfig){
   const u=auth.currentUser;
   if(!u)throw Error('請先登入 Google 帳號');
   const base=fs.collection(db,'users',u.uid,type);
-  function keyPath(key){return fs.doc(base,encodeURIComponent(key));}
+  // Prefix encoded keys to avoid Firestore's forbidden "."/".." document IDs.
+  // This branch has never deployed a Firebase backend; no migration is needed.
+  function keyPath(key){return fs.doc(base,'k~'+encodeURIComponent(key));}
   return {
    async readAll(){
     const snap=await fs.getDocsFromServer(base);
     const result=Object.create(null);
     for(const item of snap.docs){
      let key;
-     try{key=decodeURIComponent(item.id)}catch{continue}
+     if(!item.id.startsWith('k~'))throw Error('雲端文件識別碼格式不符；為避免漏同步已停止');
+     try{key=decodeURIComponent(item.id.slice(2))}catch{throw Error('雲端文件識別碼編碼不符')}
      if(Object.prototype.hasOwnProperty.call(result,key))throw Error('雲端資料鍵重複');
      result[key]=item.data();
     }
