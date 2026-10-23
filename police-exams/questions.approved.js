@@ -32,7 +32,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-108-criminal_law_procedure-2",
@@ -66,7 +67,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-108-criminal_law_procedure-3",
@@ -100,7 +102,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-108-criminal_law_procedure-4",
@@ -134,7 +137,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-108-psychology-1",
@@ -311,7 +315,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-108-criminology_prevention-2",
@@ -344,7 +349,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-108-criminology_prevention-3",
@@ -377,7 +383,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-108-criminology_prevention-4",
@@ -410,7 +417,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-108-counseling-1",
@@ -443,7 +451,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-108-counseling-2",
@@ -476,7 +485,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-108-counseling-3",
@@ -509,7 +519,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-108-counseling-4",
@@ -542,7 +553,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-109-criminal_law_procedure-1",
@@ -576,7 +588,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-109-criminal_law_procedure-2",
@@ -610,7 +623,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-109-criminal_law_procedure-3",
@@ -644,7 +658,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-109-criminal_law_procedure-4",
@@ -678,7 +693,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-109-psychology-1",
@@ -711,7 +727,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-109-psychology-2",
@@ -744,7 +761,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-109-psychology-3",
@@ -777,7 +795,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-109-psychology-4",
@@ -810,7 +829,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-109-criminology_prevention-1",
@@ -843,7 +863,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-109-criminology_prevention-2",
@@ -876,7 +897,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-109-criminology_prevention-3",
@@ -909,7 +931,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-109-criminology_prevention-4",
@@ -942,7 +965,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-109-counseling-1",
@@ -975,7 +999,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-109-counseling-2",
@@ -1008,7 +1033,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-109-counseling-3",
@@ -1041,7 +1067,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-109-counseling-4",
@@ -1402,7 +1429,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-110-criminology_prevention-2",
@@ -1435,7 +1463,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-110-criminology_prevention-3",
@@ -1468,7 +1497,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-110-criminology_prevention-4",
@@ -1501,7 +1531,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-110-counseling-1",
@@ -1534,7 +1565,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-110-counseling-2",
@@ -1567,7 +1599,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-110-counseling-3",
@@ -1600,7 +1633,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-110-counseling-4",
@@ -1633,7 +1667,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-111-criminal_law_procedure-1",
@@ -1667,7 +1702,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-111-criminal_law_procedure-2",
@@ -1701,7 +1737,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-111-criminal_law_procedure-3",
@@ -1735,7 +1772,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-111-criminal_law_procedure-4",
@@ -1769,7 +1807,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-111-psychology-1",
@@ -1802,7 +1841,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 20
   },
   {
     "id": "police-111-psychology-2",
@@ -1943,7 +1983,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-111-criminology_prevention-2",
@@ -1976,7 +2017,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-111-criminology_prevention-3",
@@ -2009,7 +2051,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-111-criminology_prevention-4",
@@ -2042,7 +2085,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-111-counseling-1",
@@ -2075,7 +2119,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-111-counseling-2",
@@ -2108,7 +2153,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-111-counseling-3",
@@ -2141,7 +2187,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-111-counseling-4",
@@ -2174,7 +2221,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-112-criminal_law_procedure-1",
@@ -2355,7 +2403,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-112-psychology-2",
@@ -2388,7 +2437,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-112-psychology-3",
@@ -2421,7 +2471,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-112-psychology-4",
@@ -2454,7 +2505,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-112-criminology_prevention-1",
@@ -2487,7 +2539,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-112-criminology_prevention-2",
@@ -2520,7 +2573,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-112-criminology_prevention-3",
@@ -2553,7 +2607,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-112-criminology_prevention-4",
@@ -2586,7 +2641,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-112-counseling-1",
@@ -2619,7 +2675,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-112-counseling-2",
@@ -2652,7 +2709,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-112-counseling-3",
@@ -2685,7 +2743,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-112-counseling-4",
@@ -2718,7 +2777,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-113-criminal_law_procedure-1",
@@ -2899,7 +2959,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-113-psychology-2",
@@ -2932,7 +2993,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-113-psychology-3",
@@ -2965,7 +3027,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-113-psychology-4",
@@ -2998,7 +3061,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-113-criminology_prevention-1",
@@ -3031,7 +3095,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-113-criminology_prevention-2",
@@ -3064,7 +3129,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-113-criminology_prevention-3",
@@ -3097,7 +3163,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-113-criminology_prevention-4",
@@ -3130,7 +3197,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-113-counseling-1",
@@ -3163,7 +3231,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-113-counseling-2",
@@ -3196,7 +3265,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-113-counseling-3",
@@ -3229,7 +3299,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-113-counseling-4",
@@ -3262,7 +3333,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-114-criminal_law_procedure-1",
@@ -3406,7 +3478,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-114-psychology-2",
@@ -3439,7 +3512,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-114-psychology-3",
@@ -3472,7 +3546,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-114-psychology-4",
@@ -3505,7 +3580,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-114-criminology_prevention-1",
@@ -3538,7 +3614,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-114-criminology_prevention-2",
@@ -3571,7 +3648,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-114-criminology_prevention-3",
@@ -3604,7 +3682,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-114-criminology_prevention-4",
@@ -3637,7 +3716,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-114-counseling-1",
@@ -3815,7 +3895,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對",
       "basis": "核對考選部官方PDF；如為AI核對須明示非真人複核"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-115-criminal_law_procedure-2",
@@ -3849,7 +3930,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對",
       "basis": "核對考選部官方PDF；如為AI核對須明示非真人複核"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-115-criminal_law_procedure-3",
@@ -3883,7 +3965,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對",
       "basis": "核對考選部官方PDF；如為AI核對須明示非真人複核"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-115-criminal_law_procedure-4",
@@ -3917,7 +4000,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對",
       "basis": "核對考選部官方PDF；如為AI核對須明示非真人複核"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-115-psychology-1",
@@ -3950,7 +4034,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對",
       "basis": "核對考選部官方PDF；如為AI核對須明示非真人複核"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-115-psychology-2",
@@ -3983,7 +4068,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對",
       "basis": "核對考選部官方PDF；如為AI核對須明示非真人複核"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-115-psychology-3",
@@ -4016,7 +4102,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對",
       "basis": "核對考選部官方PDF；如為AI核對須明示非真人複核"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-115-psychology-4",
@@ -4049,7 +4136,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對",
       "basis": "核對考選部官方PDF；如為AI核對須明示非真人複核"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-115-criminology_prevention-1",
@@ -4082,7 +4170,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對",
       "basis": "核對考選部官方PDF；如為AI核對須明示非真人複核"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-115-criminology_prevention-2",
@@ -4115,7 +4204,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對",
       "basis": "核對考選部官方PDF；如為AI核對須明示非真人複核"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-115-criminology_prevention-3",
@@ -4148,7 +4238,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對",
       "basis": "核對考選部官方PDF；如為AI核對須明示非真人複核"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-115-criminology_prevention-4",
@@ -4181,7 +4272,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對",
       "basis": "核對考選部官方PDF；如為AI核對須明示非真人複核"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-115-counseling-1",
@@ -4214,7 +4306,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對",
       "basis": "核對考選部官方PDF；如為AI核對須明示非真人複核"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-115-counseling-2",
@@ -4247,7 +4340,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對",
       "basis": "核對考選部官方PDF；如為AI核對須明示非真人複核"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-115-counseling-3",
@@ -4280,7 +4374,8 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對",
       "basis": "核對考選部官方PDF；如為AI核對須明示非真人複核"
-    }
+    },
+    "officialPoints": 25
   },
   {
     "id": "police-115-counseling-4",
@@ -4313,6 +4408,7 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對",
       "basis": "核對考選部官方PDF；如為AI核對須明示非真人複核"
-    }
+    },
+    "officialPoints": 25
   }
 ];
