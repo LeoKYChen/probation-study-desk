@@ -150,6 +150,7 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   // fails. The UI must discard stale approvals and force a fresh preview.
   await a.evaluate(()=>localStorage.setItem('jj-read',JSON.stringify(['手機初稿','電腦新增','中斷前新閱讀'])));
   await writeDesk(a,'網路中斷前的新訂正');
+  await a.evaluate(()=>{window.PSDLocalJournal.note('jj-read');window.PSDLocalJournal.note('desk');});
   const traceBeforeScan=trace.length;
   await a.evaluate(()=>window.dispatchEvent(new Event('online')));
   await a.waitForFunction(()=>document.querySelector('#firebase-pending').textContent.includes('此裝置有'));
@@ -163,9 +164,13 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   await a.waitForFunction(()=>document.querySelector('#firebase-status').textContent.includes('模擬書桌網路中斷'));
   assert.equal(await a.locator('#firebase-apply').isDisabled(),true,'partial sync invalidates the prior approval');
   assert.equal(await a.locator('#firebase-preview').locator('li').count(),0,'old preview is cleared after partial commit');
+  const pendingAfterFailure=await a.evaluate(()=>window.PSDLocalJournal.snapshot().entries);
+  assert('desk' in pendingAfterFailure,'failed cloud write does not clear pending offline work');
+  assert('jj-read' in pendingAfterFailure,'partial success does not prematurely acknowledge whole-site queue');
   assert.equal(await readDesk(a),'網路中斷前的新訂正','local answer remains even if cloud desk write fails');
   assert.equal(JSON.parse(cloud.modules.get('jj-read').raw).includes('中斷前新閱讀'),true);
   await preview(a);await apply(a);
+  assert.equal(Object.keys(await a.evaluate(()=>window.PSDLocalJournal.snapshot().entries)).length,0,'retry acknowledges metadata after both stages succeed');
   await a.evaluate(()=>window.dispatchEvent(new Event('online')));
   await a.waitForFunction(()=>document.querySelector('#firebase-pending').textContent.includes('沒有相對於上次成功同步的本機變更'));
   assert.equal(JSON.parse(cloud.modules.get('jj-read').raw).includes('中斷前新閱讀'),true);
