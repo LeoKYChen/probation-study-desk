@@ -162,3 +162,28 @@ try{
  status('原本的 Firebase 公開設定無效，請重新輸入。',true);
 }
 $('firebase-apply').disabled=true;
+// Restore a previously opted-in Firebase identity, without fetching any user
+// learning records or uploading automatically. Guests never load the SDK.
+async function restoreSession(){
+ if(!localStorage.getItem(BOUND))return;
+ const raw=localStorage.getItem(CFG);if(!raw)return;
+ try{
+  const config=validateFirebaseConfig(JSON.parse(raw));
+  connection=await openFirebase(config);
+  const user=connection.user();
+  if(!user){
+   connection=null;cloudUser=null;
+   status('已有本裝置的帳號紀錄，但目前未登入 Google；仍可免登入使用，或手動登入後再預覽同步。');
+   return;
+  }
+  cloudUser=user;
+  assertIdentity();
+  adapter=connection.adapter();deskAdapter=connection.adapter('desk');
+  $('firebase-user').textContent='已登入：'+user.email+'（'+connection.projectId+'）';
+  status('已恢復 Google 帳號。資料仍保留在本機，尚未執行雲端同步；需要預覽後確認。');
+ }catch(error){
+  connection=null;cloudUser=null;adapter=null;deskAdapter=null;
+  status('無法自動恢復同步登入：'+safeLabel(error)+'。本機資料仍可正常使用。',true);
+ }
+}
+restoreSession();
