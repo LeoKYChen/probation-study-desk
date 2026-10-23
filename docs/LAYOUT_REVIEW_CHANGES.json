@@ -53,8 +53,8 @@
     {
       "path": "professional/layout-panels.js",
       "base_sha256": null,
-      "sha256": "8d5904c02ec63b3e4fef9b0cd5a4102fb713a5fc55d7e7382bbfb9c6221778b3",
-      "reason": "New presentation URL avoids installed Safari reusing old scripts; fold diagnostics, group live health node, render charts from unchanged analytics models."
+      "sha256": "7f66fc9a8ba8450f22bf040a0d3c35adc73a0c48f8d401996b7397a0d4785821",
+      "reason": "New presentation URL avoids installed Safari reusing old scripts; fold diagnostics, group live health node, render charts from unchanged analytics models.；2026-10-23 手機標示精簡及完整題庫資訊校正"
     },
     {
       "path": "professional/layout-review.css",
@@ -77,8 +77,8 @@
     {
       "path": "professional/question-sources.js",
       "base_sha256": "3e0f19833aa992873180cab573cd3b056f9d59c811ae56fc01d4e637be00320b",
-      "sha256": "e913fb64dcc51d58c5d670eb1f98b27abcaf2e78b0f337190c6e030d51e40e3c",
-      "reason": "Slide 3: simplify successful source count; preserve mismatch warning."
+      "sha256": "69ee2f5670c2ffd7c824479bbcd8b162830e84a690c7af2d3ecba551df8a0f0c",
+      "reason": "Slide 3: simplify successful source count; preserve mismatch warning.；2026-10-23 手機標示精簡及完整題庫資訊校正"
     },
     {
       "path": "professional/review-preview.js",
@@ -101,8 +101,8 @@
     {
       "path": "professional/practice-session.js",
       "base_sha256": null,
-      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.",
-      "sha256": "a82df6e9dc73cd9bdb16f6c25f872109aa63e5cfdf32606166133499ad0f0395"
+      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.；2026-10-23 手機標示精簡及完整題庫資訊校正",
+      "sha256": "dfe480de953a173cf24d7b2556064cd7e2f06efafcd8b61f9f1f50ccb11c3462"
     },
     {
       "path": "professional/practice-review.js",
@@ -119,8 +119,8 @@
     {
       "path": "professional/layout-panels-v2.js",
       "base_sha256": null,
-      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.",
-      "sha256": "38dd51421033fb19725091dd7fb3319aa04db12da941bf2e211e68ae16824545"
+      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.；2026-10-23 手機標示精簡及完整題庫資訊校正",
+      "sha256": "7b202ce6ac6d90bd8f27f4ee4da2ac954eca2ef4bca4a8bbd0ab64810b9627d2"
     },
     {
       "path": "professional/practice-context.css",
@@ -131,14 +131,14 @@
     {
       "path": "index.html",
       "base_sha256": "42167acdf90476d5b9c7555711b492ed3c4a5f0e42385c33b5226d151929e01f",
-      "sha256": "636710fa1624dab43a1c58038c598e5cac1ac67ca23da654b6c760101b88ef48",
-      "reason": "套用已確認之溫暖圓體與霧藍書房視覺；保留既有操作與資料鍵。2026-10-22依使用者部署正式站指示，僅於側欄新增備考書桌入口；六個既有主卡片與原資料鍵不變。 [2026-10-22 homepage replacement] 經使用者確認，將「法律 AI 實驗室」首頁入口替換為獨立雙 AI 協作工作臺；保留三張探索卡片與其他學習功能、資料鍵不變。 2026-10-22 修復手機側欄隱藏：新增可開啟／關閉導覽（含鍵盤及遮罩），不改學習資料。"
+      "sha256": "77a7a248808c6fefc60ce45457faf90e5a036cd90922f6f8689c1b2830b2759c",
+      "reason": "套用已確認之溫暖圓體與霧藍書房視覺；保留既有操作與資料鍵。2026-10-22依使用者部署正式站指示，僅於側欄新增備考書桌入口；六個既有主卡片與原資料鍵不變。 [2026-10-22 homepage replacement] 經使用者確認，將「法律 AI 實驗室」首頁入口替換為獨立雙 AI 協作工作臺；保留三張探索卡片與其他學習功能、資料鍵不變。 2026-10-22 修復手機側欄隱藏：新增可開啟／關閉導覽（含鍵盤及遮罩），不改學習資料。；2026-10-23 手機標示精簡及完整題庫資訊校正"
     },
     {
       "path": "professional/ai-review-links-direction.js",
       "base_sha256": null,
-      "sha256": "1478fc2195be14daaa7b60e3256a69423b2d814ee60b19b7a915c285ab91283a",
-      "reason": "[2026-10-22 AI directions] Versioned script builds optional non-scored outline diagnostic prompts while keeping frozen ai-review-links.js and user-record keys untouched. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources."
+      "sha256": "4d8a33afbd2ad66de9199a885a3e07c2e83b4e6ada16af73dc7dfa08b4b8ab9b",
+      "reason": "[2026-10-22 AI directions] Versioned script builds optional non-scored outline diagnostic prompts while keeping frozen ai-review-links.js and user-record keys untouched. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources.；2026-10-23 手機標示精簡及完整題庫資訊校正"
     }
   ]
 }

@@ -99,7 +99,7 @@
     if(obj(d.pointFeedback))sections.push(section('我的逐點核對筆記',Object.entries(d.pointFeedback).map(([k,v])=>k+'：'+(typeof v==='string'?v:JSON.stringify(v))).join('\n'),'review'));
     if(populated(d.aiFeedback))sections.push(section('AI 批改評語（自行貼入，非官方評分）',d.aiFeedback,'feedback'));
     if(!anyText(sections))continue;
-    records.push({uid:'past:'+id,category:'past',categoryLabel:'426 題考古題',title:q?.title||id,
+    records.push({uid:'past:'+id,category:'past',categoryLabel:'考古題練習',title:q?.title||id,
      meta:q?[q.year+' 年',q.subject,q.examType||''].filter(Boolean).join(' · '):id+'（舊題號／尚未核對）',
      question:q?.body||'（題庫找不到這個舊題號，請至原題庫核對題幹。）',
      source:q?.source||'',sections,updatedAt:d.updatedAt||'',recordId:id});

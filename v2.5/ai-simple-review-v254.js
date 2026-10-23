@@ -117,7 +117,7 @@
       '<p class="ai-simple-mode-help">答題方向模式優先使用上方四格草稿；不評字數、不給百分制分數。</p>'+ 
       '<button class="btn primary" id="ai-simple-copy" type="button">一鍵複製AI批改</button>'+
       '<button class="btn" id="ai-simple-dual" type="button">送交雙 AI 交叉審查</button>'+
-      '<button class="btn" id="ai-simple-export-dual" type="button">複製題目與答案供雙 AI 匯入（手機備援）</button>'+
+      '<button class="btn" id="ai-simple-export-dual" type="button">複製題目與答案供雙 AI 匯入</button>'+
       '<label for="ai-simple-feedback"><strong>AI批改結果</strong>（請直接貼上ChatGPT的完整評語）</label>'+
       '<textarea id="ai-simple-feedback" rows="8" placeholder="在ChatGPT取得批改結果後，貼在這裡，系統會保存到本題學習紀錄。"></textarea>'+
       '<p id="ai-simple-status" role="status" aria-live="polite"></p>';

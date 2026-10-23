@@ -353,7 +353,7 @@ function clearRecords(){
   flush();if(dirty){notice('作答尚未成功保存，暫停清除。',true);return;}
   const n=Object.keys(records).length;
   if(!n){notice('每日模擬題目前沒有需要清除的作答紀錄。');return;}
-  if(!confirm('即將清除 '+n+' 筆「每日模擬題」作答、AI評語與待複習標記；426題考古題不會刪除。是否先下載備份？'))return;
+  if(!confirm('即將清除 '+n+' 筆「每日模擬題」作答、AI評語與待複習標記；考古題練習紀錄不會刪除。是否先下載備份？'))return;
   if(!exportBackup())return;
   if(!confirm('已啟動備份下載。請確認有保存下載檔案。\n確定清除每日模擬題全部學習紀錄？此操作無法自動復原。'))return;
   try{

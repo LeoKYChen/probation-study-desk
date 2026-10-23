@@ -22,8 +22,14 @@ table{border-collapse:collapse;width:100%;font-size:14px}th,td{border-bottom:1px
 #message{background:#eaf3ea;padding:12px 15px;border-radius:8px;min-height:49px;white-space:pre-wrap}
 #message[data-error="1"]{background:#fff1e9;color:#7d381e}
 #source{overflow-wrap:anywhere}
+.file-hint{font-size:13px;color:#53695b;margin:6px 0 0;overflow-wrap:anywhere}
+#importFile{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 footer{color:#607267;font-size:13px}ul{columns:2;max-width:780px;padding-left:24px}
-@media(max-width:600px){ul{columns:1}.card{padding:17px}header{flex-wrap:wrap}}
+@media(max-width:600px){
+ ul{columns:1}.card{padding:17px}header{flex-wrap:wrap}
+ .actions{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+ .actions>button,.file-label{display:flex;width:100%;min-width:0;min-height:52px;padding:11px 14px;align-items:center;justify-content:center;text-align:center;line-height:1.45}
+}
 </style>
 <script src="../file-compat.js" defer></script>
 <link rel="stylesheet" href="../assets/study-theme.css">
@@ -36,7 +42,7 @@ footer{color:#607267;font-size:13px}ul{columns:2;max-width:780px;padding-left:24
 <div class="card">
 <h2>① 下載這台裝置的紀錄</h2>
 <p id="summary">正在檢查資料…</p>
-<ul id="modules" aria-label="本瀏覽器有紀錄的學習模組"></ul>
+<ul id="modules" aria-label="本瀏覽器實際有學習進度的模組"></ul>
 <div class="actions"><button id="export" class="primary" type="button">下載完整學習紀錄 JSON</button><button id="refresh" type="button">重新檢查</button></div>
 <p class="note"><strong>重要：</strong>請先回到各練習頁面，確認最新文字顯示已儲存，並關閉正在編輯的其他分頁，再按下載。此頁只能讀取<strong>目前網址</strong>的紀錄；GitHub Pages 與 Cloudflare 是不同網址，需分別下載後再手動合併。進行中的分頁計時（sessionStorage）不保證能由這一頁備份。</p>
 </div>
@@ -45,6 +51,7 @@ footer{color:#607267;font-size:13px}ul{columns:2;max-width:780px;padding-left:24
 <p>先從 Google Drive 把 JSON 下載到這台裝置。選擇檔案後會顯示預覽；<strong>預覽不會修改任何原有紀錄</strong>。</p>
 <label class="file-label primary" for="importFile">選擇完整備份 JSON</label>
 <input id="importFile" type="file" accept=".json,application/json" aria-label="選擇完整備份 JSON">
+<p class="file-hint" id="importFileName" role="status" aria-live="polite">尚未選取檔案</p>
 <section id="preview" hidden aria-label="匯入預覽">
 <h3>匯入資料預覽</h3>
 <p id="source"></p>

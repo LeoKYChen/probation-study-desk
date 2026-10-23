@@ -35,44 +35,53 @@
   if(s.essayAssessments&&typeof s.essayAssessments==='object'&&Object.values(s.essayAssessments).some(x=>x&&typeof x==='object'&&Object.keys(x).length))return true;
   return false;
  }
+ // The list shows only current, non-empty learning activity. Legacy keys stay in the actual JSON backup.
+ const visibleKeys=new Set([
+  'psd-ai-custom-rules-v1','probation-study30-v251:v1','probation-study-desk-v24',
+  'probation-daily-github:records:v1','daily-reading-test:saved',
+  'psd-common-subjects-v1','psd-staresto-link-coach-v06',
+  'jj-bookmarks','jj-read','psd-lecture-planner-v1'
+ ]);
  function explain(storage){
-  let progressCount=0,pendingCount=0,settingsCount=0;
-  const rows=core.modules.map(m=>{
+  let progressCount=0,pendingCount=0;
+  const rows=[];
+  for(const m of core.modules){
+   if(!visibleKeys.has(m.key))continue;
    const raw=storage[m.key];
-   if(raw===undefined)return {name:m.name,status:'此瀏覽器沒有資料'};
+   if(raw===undefined)continue;
    const val=core.parseValue(m.key,raw);
    let count=0,pending=0,status='';
-   if(m.kind==='sessions'){
+   if(m.kind==='prompts'){
+    count=val.entries.length;
+    status=count+' 組自訂批改提示詞';
+   }else if(m.kind==='sessions'){
     const sessions=Object.values(val.sessions).filter(x=>x&&typeof x==='object'&&!Array.isArray(x));
     count=sessions.filter(meaningfulSession).length;
     pending=sessions.length-count;
     status=count+' 筆已開始／有作答紀錄'+(pending?'；'+pending+' 筆尚未開始的工作階段':'');
    }else if(m.kind==='records'){
     count=Object.keys(val).length;
-    status=count?count+' 筆已儲存紀錄':'空白儲存區（0 筆）';
+    status=count+' 筆已儲存紀錄';
    }else if(m.kind==='common'){
-    count=Object.keys(val.drafts).length;
-    status=count?count+' 筆作文草稿':'空白儲存區（0 筆）';
+    const drafts=Object.keys(val.drafts||{}).length;
+    const english=Object.keys(val.english||{}).length;
+    count=drafts+english;
+    status=drafts+' 筆作文草稿、'+english+' 項英文資料';
    }else if(m.kind==='english'){
     count=Object.keys(val.completed||{}).length+Object.keys(val.wordProgress||{}).length;
-    status=count?count+' 項已儲存練習':'僅有初始設定（0 筆）';
-   }else if(m.kind==='oldenglish'){
-    count=Object.keys(val.progress).length;
-    status=count?count+' 項已儲存進度':'僅有初始設定（0 筆）';
+    status=count+' 項已儲存練習';
    }else if(m.kind==='lectures'){
     count=val.lessons.length;
     status=val.courses.length+' 門函授課程、'+count+' 堂（已完成 '+val.lessons.filter(x=>x.watchedMinutes===x.durationMinutes).length+' 堂）';
    }else if(m.kind==='list'){
     count=val.length;
-    status=count?count+' 筆收藏／閱讀紀錄':'空白清單（0 筆）';
-   }else{
-    settingsCount++;
-    status='已儲存偏好設定（不計入學習紀錄）';
+    status=count+' 筆收藏／閱讀紀錄';
    }
+   if(count===0&&pending===0)continue;
+   if(m.kind!=='prompts')progressCount+=count;
    pendingCount+=pending;
-   if(m.kind!=='setting'&&m.kind!=='font')progressCount+=count;
-   return {name:m.name,status};
-  });
+   rows.push({name:m.name,status});
+  }
   $('modules').replaceChildren();
   for(const row of rows){
    const li=document.createElement('li');
@@ -80,12 +89,12 @@
    $('modules').append(li);
   }
   $('summary').textContent='已儲存的學習／閱讀紀錄：'+progressCount+' 筆／項。'+
-    (pendingCount?' 另有尚未開始的工作階段：'+pendingCount+' 筆。':'')+
-    (settingsCount?' 另有 '+settingsCount+' 項偏好設定。':'')+
-    ' 完整 JSON 仍會原樣保留所有儲存資料，包括空白工作階段和空物件。';
+   (pendingCount?' 另有尚未開始的工作階段：'+pendingCount+' 筆。':'')+
+   (!rows.length?'目前沒有已開始的學習紀錄。':'')+
+   ' 下方只列出有內容的現行學習模組；完整 JSON 仍保留可識別的舊版資料、設定與空白工作階段，避免意外遺失。';
  }
  function refresh(){try{explain(current());$('export').disabled=false;}catch(e){tell('無法讀取現有紀錄：'+e.message,true);$('export').disabled=true;}}
- function clearPreview(){incoming=null;plan=null;$('preview').hidden=true;$('restore').disabled=true;$('confirmSafe').checked=false;$('confirmTabs').checked=false;$('importFile').value='';}
+ function clearPreview(){incoming=null;plan=null;$('preview').hidden=true;$('restore').disabled=true;$('confirmSafe').checked=false;$('confirmTabs').checked=false;$('importFile').value='';$('importFileName').textContent='尚未選取檔案';}
  $('export').addEventListener('click',()=>{
   try{const data=core.collect(localStorage,location.origin);
    download(data,'觀護人學習平台-完整紀錄-'+stamp()+'.json');
@@ -96,6 +105,7 @@
   incoming=null;plan=null;$('preview').hidden=true;$('restore').disabled=true;
   $('confirmSafe').checked=false;$('confirmTabs').checked=false;
   const file=this.files&&this.files[0];
+  $('importFileName').textContent=file?'已選擇：'+file.name:'尚未選取檔案';
   if(!file)return;
   if(file.size>20*1024*1024){tell('檔案超過20MB，沒有改動任何學習紀錄。',true);return;}
   try{

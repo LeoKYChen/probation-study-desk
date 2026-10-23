@@ -13,7 +13,7 @@
  const modules=[
   {key:'psd-ai-custom-rules-v1',name:'自訂AI批改提示詞',kind:'prompts'},
   {key:'probation-study30-v251:v1',name:'專業科目每日30分鐘',kind:'sessions'},
-  {key:'probation-study-desk-v24',name:'426題考古題',kind:'records'},
+  {key:'probation-study-desk-v24',name:'考古題學習紀錄',kind:'records'},
   {key:'probation-study-desk-v3',name:'舊版考古題 v3',kind:'records'},
   {key:'probation-study-desk-v2',name:'舊版考古題 v2',kind:'records'},
   {key:'probation-daily-github:records:v1',name:'每日模擬題',kind:'records'},
