@@ -60,10 +60,15 @@ function fillQuestions() {
 }
 async function loadLectureProgress() {
  try {
-  const live=readLectures(localStorage,globalThis.PSDLectureCore);
-  const saved=(await store.read()).records['settings/lecture-progress']?.value;
-  lectureData=live || (saved?globalThis.PSDLectureCore.normalize(saved.data):null);lectureSource=live?{origin:location.origin,live:true}:saved||null;
-  $('lecture-status').textContent=lectureData?(live?'目前網址的函授紀錄':'使用備份中的函授快照（可能較舊）')+'：'+lectureData.courses.length+'門課／'+lectureData.lessons.length+'堂；只有本人確認對應的已完課主題會納入推薦。':'尚無函授紀錄；仍可手動確認已學主題。';
+  // localStorage belongs to the browser origin, not to the authenticated user.
+  // In account mode only the current account's saved snapshot is trusted.
+  const live=engine?.cloud?null:readLectures(localStorage,globalThis.PSDLectureCore);
+  const saved=(await store.read()).records['settings/lecture-progress'];
+  const snapshot=saved&&!saved.deleted?saved.value:null;
+  lectureData=live || (snapshot?globalThis.PSDLectureCore.normalize(snapshot.data):null);
+  lectureSource=live?{origin:location.origin,live:true}:snapshot||null;
+  const label=live?'目前網址的函授紀錄':engine?.cloud?'此帳號已保存的函授快照':'使用備份中的函授快照（可能較舊）';
+  $('lecture-status').textContent=lectureData?label+'：'+lectureData.courses.length+'門課／'+lectureData.lessons.length+'堂；只有本人確認對應的已完課主題會納入推薦。':engine?.cloud?'此帳號尚無函授進度快照；可手動確認已學主題，或按下方按鈕確認匯入此裝置的函授紀錄。':'尚無函授紀錄；仍可手動確認已學主題。';
  } catch(error) {lectureData=null;lectureSource=null;$('lecture-status').textContent='函授進度無法讀取：'+error.message+'。請先至函授管理檢查；未採用舊快照。';}
 }
 function lectureSnapshot() {return lectureData?{data:{...clone(lectureData),plan:null},capturedAt:lectureSource?.live?now():lectureSource?.capturedAt||null,origin:lectureSource?.origin||location.origin}:null;}
@@ -257,7 +262,23 @@ async function setup() {
   next.planning={minutes:Number($('planning-minutes').value),reviewLimit:Number($('review-limit').value)};planLimits(next);
   await engine.save('settings/preferences',next);preferences=next;preferencesFormDirty=false;updateRecallLabels();await refresh();report('考科、時間預算與複習間隔已保存；原有到期日期維持原樣。');
  });
- wrap('refresh-lectures',async()=>{await loadLectureProgress();const snapshot=lectureSnapshot();if(snapshot)await engine.save('settings/lecture-progress',snapshot);describeQuestion();await refresh();report(snapshot?'函授進度及備份快照已更新。':'尚無有效函授資料，可手動確認已學主題。');});
+ wrap('refresh-lectures',async()=>{
+  if(engine.cloud){
+   // The browser's shared lecture manager is deliberately outside account isolation.
+   // Require a fresh user decision before importing it into the cloud account.
+   const live=readLectures(localStorage,globalThis.PSDLectureCore);
+   if(live){
+    if(!confirm('此裝置的函授管理紀錄並非帳號專屬。確定將這 '+live.courses.length+' 門課、'+live.lessons.length+' 堂課的進度複製到目前登入的雲端帳號嗎？原本的函授管理不會被修改。'))return;
+    lectureData=live;lectureSource={origin:location.origin,live:true};
+    await engine.save('settings/lecture-progress',lectureSnapshot());
+   } else await loadLectureProgress();
+  }else await loadLectureProgress();
+  const snapshot=lectureSnapshot();
+  if(!engine.cloud && snapshot)await engine.save('settings/lecture-progress',snapshot);
+  if(engine.cloud)await loadLectureProgress();
+  describeQuestion();await refresh();
+  report(snapshot?'函授進度及備份快照已更新。':'尚無有效函授資料，可手動確認已學主題。');
+ });
  wrap('save-topic-lesson',async()=>{
   const q=selectedQuestion();if(!q)throw Error('請先選題');const mapping=validateMapping(q,$('topic-lesson').value,lectureData),next=clone(preferences);next.topicLessons={...next.topicLessons,[q.topicKey]:mapping};
   await store.update(s=>{engine.queue(s,'settings/preferences',next);engine.queue(s,'settings/lecture-progress',lectureSnapshot());});preferences=next;describeQuestion();await refresh();report('堂次與主題的對應已確認；完課後才會依此納入已學範圍。');
