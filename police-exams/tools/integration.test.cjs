@@ -12,6 +12,10 @@ const desk=read('study-desk/index.html'),deskApp=read('study-desk/app.js');
 for(const id of ['shuatiQuestionLink','yamolQuestionLink','draftIssue','draftBasis','draftAnalysis','draftConclusion','issueInput','sourceLink','scoreRows'])
   assert(paper.includes('id="'+id+'"'),'existing practice feature missing: '+id);
 assert(paper.includes('AI') && paper.includes('批改'),'AI review controls retained');
+const aiReview=read('v2.5/ai-simple-review-v254.js');
+assert(aiReview.includes('ai-simple-export-dual'),'main mobile dual-AI manual handoff must remain available');
+assert(aiReview.includes('psd-dual-ai-import-v1'),'mobile handoff export format must not regress');
+assert(aiReview.includes('PolicePastPaperIntegration') && aiReview.includes('legacyIds'),'expanded original-paper bank validation must remain available');
 assert(paper.includes('../police-exams/questions.approved.js'));
 assert(paper.includes('../police-exams/approved-loader.js'));
 assert(paper.indexOf('approved-loader.js')<paper.indexOf('const questionBank ='),'gate executes before the question list');
