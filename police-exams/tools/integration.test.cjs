@@ -41,6 +41,28 @@ const special=windows.POLICE_ORIGINAL_QUESTION_BANK.filter(q=>q.year===114&&q.of
 assert.equal(special.length,3,'official 114 criminal-law/procedure has three questions');
 assert.equal(special.map(q=>q.officialPoints).join(','),'50,25,25');
 assert.equal(windows.QUESTION_BANK.length+windows.RELATED_QUESTION_BANK.length,426);
+const officialCatalog=JSON.parse(read('police-exams/catalog.json'));
+const officialSubjectKeys=new Map(officialCatalog.subjects.map(s=>[s.subject,s.key]));
+const officialPapers=new Map();
+for(const q of windows.POLICE_ORIGINAL_QUESTION_BANK){
+ const subjectKey=officialSubjectKeys.get(q.officialSubject);
+ assert(subjectKey, 'unknown official subject: '+q.id);
+ const key=q.year+':'+subjectKey;
+ assert.equal(q.sourceUrl, officialCatalog.knownPaperUrls[key], 'official URL mismatch: '+q.id);
+ assert(Number.isInteger(q.officialPoints)&&q.officialPoints>0, 'explicit original point value missing: '+q.id);
+ const bodyPoints=[...q.body.matchAll(/[\\(（]\\s*(\\d{1,3})\\s*分\\s*[\\)）]/g)].map(m=>Number(m[1]));
+ if(bodyPoints.length===1) assert.equal(q.officialPoints,bodyPoints[0], 'point value differs from original stem: '+q.id);
+ if(bodyPoints.length>1 && q.id==='police-111-psychology-1')
+   assert.equal(q.officialPoints,20,'111 psychology first question must total 8+12 points');
+ const previous=officialPapers.get(key)||{count:0,sum:0};
+ officialPapers.set(key,{count:previous.count+1,sum:previous.sum+q.officialPoints});
+}
+assert.equal(Object.keys(officialCatalog.knownPaperUrls).length,32, '32 official paper source URLs expected');
+assert.equal(officialPapers.size,32,'32 year/subject paper groups expected');
+for(const [key,paper] of officialPapers){
+ assert.equal(paper.sum,100,'per-paper official points must total 100: '+key);
+ assert.equal(paper.count,key==='114:criminal_law_procedure'?3:4,'official question count: '+key);
+}
 const assets=JSON.parse(read('offline-manifest.json')).assets.map(x=>x.url);
 const requiredPoliceFiles=['police-exams/questions.approved.js','police-exams/approved-loader.js','police-exams/catalog.json','police-exams/index.html'];
 const mirror=read('scripts/build-cloudflare-main-mirror.py');
