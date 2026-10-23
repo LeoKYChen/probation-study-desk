@@ -115,7 +115,7 @@ export class CloudDeskUI {
   const id=this.transport?.session?.user?.id;
   if(!/^[0-9a-f-]{36}$/i.test(id||''))throw Error('登入帳號識別碼不符');
   await this.beforeSwitch();
-  await this.openAccount(id);
+  await this.openAccount(new URL(this.config.url).hostname+'/'+id);
   this.active=true;
   this.controls();
   $('account').textContent='帳號書桌｜資料先存此裝置';
