@@ -19,6 +19,9 @@ export async function prepareDesk(local,documents,shadow={},uuid=()=>crypto.rand
  const statuses=[],uploads=Object.create(null),changes=Object.create(null),archive=Object.create(null);
  const ids=new Set([...Object.keys(local.records),...Object.keys(documents)]);
  for(const id of ids){
+  // Recommendation audit is locally derived display metadata, not user work.
+  // Keep it in guest IndexedDB and the original JSON backup, not in Firestore.
+  if(id==='settings/recommendation-audit')continue;
   validateId(id);
   const mine=local.records[id],remote=documents[id]===undefined?null:assertRemoteDoc(documents[id],id);
   const theirs=remote?fromRaw(remote.raw,id):null;
@@ -74,6 +77,7 @@ export async function commitDesk(store,adapter,plan){
  });
  const updated=await store.read(),shadow=Object.create(null);
  for(const [id,rec] of Object.entries(updated.records)){
+  if(id==='settings/recommendation-audit')continue;
   const revision=remoteVersions[id]||plan.cloud[id]?.revision;
   if(Number.isSafeInteger(revision))
    shadow[id]={revision,hash:await fingerprint(canonical(rec))};
