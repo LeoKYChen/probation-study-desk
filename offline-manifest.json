@@ -29,10 +29,34 @@
       "url": "backup/app.js"
     },
     {
+      "url": "backup/firebase-ui.mjs"
+    },
+    {
       "url": "backup/index.html"
     },
     {
       "url": "backup/unified-core.js"
+    },
+    {
+      "url": "cloud-sync/core.js"
+    },
+    {
+      "url": "cloud-sync/firebase-client.mjs"
+    },
+    {
+      "url": "cloud-sync/idb.js"
+    },
+    {
+      "url": "cloud-sync/local-journal.js"
+    },
+    {
+      "url": "cloud-sync/pending-detection.mjs"
+    },
+    {
+      "url": "cloud-sync/whole-desk-core.mjs"
+    },
+    {
+      "url": "cloud-sync/whole-site-core.mjs"
     },
     {
       "url": "common-subjects/catalog/app.js"
