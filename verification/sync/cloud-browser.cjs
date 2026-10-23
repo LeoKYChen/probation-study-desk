@@ -17,7 +17,7 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
  await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
  const base='http://127.0.0.1:'+server.address().port;
  const browser=await chromium.launch({headless:true,executablePath:process.env.BROWSER_EXECUTABLE||chromium.executablePath(),args:['--no-sandbox','--disable-dev-shm-usage']});
- const contexts=[],pageErrors=[];
+ const contexts=[],pageErrors=[],dialogMessages=[];
  const user='11111111-1111-4111-8111-111111111111',otherUser='22222222-2222-4222-8222-222222222222';
  const primary={records:new Map(),operations:new Map(),events:[]},secondary={records:new Map(),operations:new Map(),events:[]};
  const {records,events}=primary;
@@ -59,7 +59,7 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   const context=await browser.newContext({viewport:{width:390,height:844}});contexts.push(context);
   await context.route('https://psdtest.supabase.co/**',cloudRoute);
   const page=await context.newPage();page.on('pageerror',e=>pageErrors.push(e.message));
-  page.on('dialog',d=>d.accept());
+  page.on('dialog',d=>{dialogMessages.push(d.message());d.accept();});
   await page.goto(base+'/study-desk/');
   await page.waitForFunction(()=>document.querySelector('#status').textContent.includes('本機書桌已開啟'));
   return page;
@@ -195,6 +195,23 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   assert.equal(await a.locator('#notes button').count(),0,'another account has no access to the first user answers');
   assert.match(await a.locator('#lecture-status').textContent(),/此帳號尚無函授進度快照/,'another account cannot see first users course snapshot or shared browser data');
   assert.equal(secondary.records.size,0,'account switch does not upload previous users records');
+  // Account-specific offline work must survive sign-out and upload after reauthentication.
+  await a.context().setOffline(true);
+  await a.locator('#manual-picker').evaluate(el=>el.open=true);
+  await a.locator('#subject').selectOption({label:'心理學'});
+  await a.locator('#start-selected').click();
+  await a.locator('#editor').waitFor({state:'visible'});
+  await a.locator('#answer').fill('第二帳號斷網時寫下的答案。');
+  await a.locator('#save').click();
+  await a.waitForFunction(()=>document.querySelector('#save-status').textContent.includes('已存此裝置'));
+  assert.equal(secondary.records.size,0,'offline work must not reach another account or cloud before reconnect');
+  await a.locator('#cloud-logout').click();
+  await a.waitForFunction(()=>document.querySelector('#account').textContent==='此裝置的本機書桌');
+  assert(dialogMessages.some(x=>x.includes('未上傳')&&x.includes('登出')),'logout must warn about pending upload');
+  await a.context().setOffline(false);
+  await login(a,'alternate@example.test');
+  assert([...secondary.records.values()].some(r=>r.value?.answer==='第二帳號斷網時寫下的答案。'),'account outbox survives logout and resumes on next login');
+  assert.equal([...primary.records.values()].some(r=>r.value?.answer==='第二帳號斷網時寫下的答案。'),false,'offline account B must never upload to A');
   await a.locator('#cloud-logout').click();
   await a.waitForFunction(()=>document.querySelector('#account').textContent==='此裝置的本機書桌');
   assert.deepEqual(pageErrors,[]);
