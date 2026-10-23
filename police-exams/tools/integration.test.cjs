@@ -42,7 +42,13 @@ assert.equal(special.length,3,'official 114 criminal-law/procedure has three que
 assert.equal(special.map(q=>q.officialPoints).join(','),'50,25,25');
 assert.equal(windows.QUESTION_BANK.length+windows.RELATED_QUESTION_BANK.length,426);
 const assets=JSON.parse(read('offline-manifest.json')).assets.map(x=>x.url);
-for(const a of ['police-exams/questions.approved.js','police-exams/approved-loader.js','police-exams/catalog.json'])
+const requiredPoliceFiles=['police-exams/questions.approved.js','police-exams/approved-loader.js','police-exams/catalog.json','police-exams/index.html'];
+const mirror=read('scripts/build-cloudflare-main-mirror.py');
+const requiredMirror=mirror.match(/REQUIRED = \(([\s\S]*?)\n\)/)?.[1] || '';
+assert(mirror.includes('"police-exams",'),'the mirror must allow the official paper directory');
+for(const a of [...requiredPoliceFiles,'dual-ai-bridge.js']){
  assert(assets.includes(a),'offline source missing: '+a);
+ assert(requiredMirror.includes('"'+a+'"'),'Cloudflare mirror must enforce the required file: '+a);
+}
 assert.equal(assets.length,new Set(assets).size);
 console.log('PASS: 426 legacy preserved + 127 PDF-source-reviewed police originals; all original practice controls retained.');
