@@ -68,15 +68,30 @@ export async function prepare(core,local,docs,shadow={}) {
     // Concurrent/first-device discrepancy: keep cloud primary; preserve local in archive.
     conflicted[key]=mine;status.push({key,name,status:'conflict'});
   }
-  // Existing version archives themselves are never simply replaced. Merge
-  // both stores and archive the local originals using the proven backup logic.
+  // Use the verified manual-backup merger to combine independent record IDs
+  // and keep differences in its version archive. Even list/setting conflicts
+  // must preserve the entire local version: a set union alone is not a backup.
   const remoteArchive=cloud[core.CONFLICT_KEY];
   const toMerge=Object.create(null);
   for(const [key,raw] of Object.entries(conflicted))toMerge[key]=raw;
   if(local[core.CONFLICT_KEY])toMerge[core.CONFLICT_KEY]=local[core.CONFLICT_KEY];
   if(Object.keys(toMerge).length) {
     const merger=core.plan(cloud,envelope(core,toMerge,'local-differences'));
-    if(merger.changes[core.CONFLICT_KEY])next[core.CONFLICT_KEY]=merger.changes[core.CONFLICT_KEY];
+    for(const key of Object.keys(conflicted))if(merger.changes[key]){
+      next[key]=merger.changes[key];
+      uploads[key]={raw:next[key],expected:docs[key].revision};
+    }
+    const archival=merger.changes[core.CONFLICT_KEY]||remoteArchive;
+    const parsed=archival?core.parseValue(core.CONFLICT_KEY,archival):{schema:core.CONFLICT_KEY,entries:[]};
+    const seen=new Set(parsed.entries.map(x=>JSON.stringify(x)));
+    for(const [key,raw] of Object.entries(conflicted)){
+      const record={key,path:[],existing:JSON.parse(cloud[key]),incoming:JSON.parse(raw)};
+      const encoded=JSON.stringify(record);
+      if(!seen.has(encoded)){parsed.entries.push(record);seen.add(encoded);}
+    }
+    const updated=JSON.stringify(parsed);
+    core.parseValue(core.CONFLICT_KEY,updated);
+    next[core.CONFLICT_KEY]=updated;
   }
   if(next[core.CONFLICT_KEY]!==remoteArchive && next[core.CONFLICT_KEY]!==undefined)
     uploads[core.CONFLICT_KEY]={raw:next[core.CONFLICT_KEY],expected:docs[core.CONFLICT_KEY]?.revision||0};
