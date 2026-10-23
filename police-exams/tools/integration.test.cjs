@@ -2,6 +2,7 @@
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const vm=require('node:vm');
+const {createHash}=require('node:crypto');
 const read=path=>fs.readFileSync(path,'utf8');
 const paper=read('v2.5/index.html');
 const sourceCatalogue=read('police-exams/index.html');
@@ -38,6 +39,8 @@ for(const q of windows.POLICE_ORIGINAL_QUESTION_BANK){
  assert.equal(q.sourceKind,'official-original');assert.equal(q.verified,true);assert(q.year>=108&&q.year<=115);
  assert(q.sourceReview.reviewer.includes('非真人') && q.sourceReview.reviewer.includes('ChatGPT'),'AI provenance must remain explicit');
  assert(q.body.length>20,'original body must be present');
+ assert.equal(createHash('sha256').update(q.body,'utf8').digest('hex'),q.textSha256,
+   'immutable source text hash mismatch: '+q.id);
 }
 const groups={};for(const q of windows.POLICE_ORIGINAL_QUESTION_BANK)groups[q.officialSubject]=(groups[q.officialSubject]||0)+1;
 assert.equal(Object.keys(groups).length,4);assert(Object.values(groups).every(n=>n>=4));
@@ -58,8 +61,9 @@ for(const q of windows.POLICE_ORIGINAL_QUESTION_BANK){
  if(bodyPoints.length>=1) assert.equal(q.officialPoints,bodyPoints.reduce((a,b)=>a+b,0),'point values differ from official stem: '+q.id);
  if(bodyPoints.length>1 && q.id==='police-111-psychology-1')
    assert.equal(q.officialPoints,20,'111 psychology first question must total 8+12 points');
- const previous=officialPapers.get(key)||{count:0,sum:0};
- officialPapers.set(key,{count:previous.count+1,sum:previous.sum+q.officialPoints});
+ const previous=officialPapers.get(key)||{count:0,sum:0,paperSha256:q.paperSha256};
+ assert.equal(previous.paperSha256,q.paperSha256,'mixed official PDF files within the same paper: '+key);
+ officialPapers.set(key,{count:previous.count+1,sum:previous.sum+q.officialPoints,paperSha256:q.paperSha256});
 }
 assert.equal(Object.keys(officialCatalog.knownPaperUrls).length,32, '32 official paper source URLs expected');
 assert.equal(officialPapers.size,32,'32 year/subject paper groups expected');
