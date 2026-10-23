@@ -11,6 +11,12 @@ const $=id=>document.getElementById(id);
 const count=s=>Object.keys(s.records||{}).filter(id=>!s.records[id].deleted).length;
 function sessionKey(url) {return 'psd-sync-session:'+new URL(url).hostname;}
 function message(error) {return error instanceof Error?error.message:String(error);}
+function accountLabel(user) {
+ const email=typeof user?.email==='string'?user.email:'';
+ const split=email.lastIndexOf('@');
+ if(split>0)return email.slice(0,Math.min(2,split))+'***'+email.slice(split);
+ return String(user?.id||'').slice(0,8);
+}
 function backup(data) {
  const file=new Blob([JSON.stringify({format:'psd-study-desk-v1',schemaVersion:1,exportedAt:new Date().toISOString(),state:data},null,2)],{type:'application/json'});
  const url=URL.createObjectURL(file),a=document.createElement('a');
@@ -129,7 +135,7 @@ export class CloudDeskUI {
   await this.openAccount(new URL(this.config.url).hostname+'/'+id);
   this.active=true;
   this.controls();
-  $('account').textContent='帳號書桌｜資料先存此裝置';
+  $('account').textContent='帳號書桌｜'+accountLabel(this.transport.session.user);
   this.status('已登入。正在讀取帳號資料；原本未登入的書桌保留在此裝置。');
   await this.syncNow(false);
  }
