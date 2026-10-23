@@ -1,80 +1,23 @@
-name: Promote strict source-matched 108-114 police originals
+name: Archived police source gate - 108–114 single-page source promotion
 on:
-  push:
-    branches:
-      - feat/police-past-papers-108-115-originals
-    paths:
-      - 'police-exams/tools/promote_clean_single_page.py'
-      - 'police-exams/tools/integration.test.cjs'
-      - '.github/workflows/promote-clean-police-originals.yml'
   workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
 jobs:
-  strict-source-promotion:
+  audit-approved-bank-only:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
-        with:
-          persist-credentials: true
-          ref: feat/police-past-papers-108-115-originals
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - name: Install official PDF tools
-        run: python -m pip install --disable-pip-version-check 'requests>=2.32,<3' 'beautifulsoup4>=4.12,<5' 'pymupdf>=1.24,<2'
-      - name: Verify extractor tests
-        run: python -m unittest discover -s police-exams/tools -p 'test_*.py' -v
-      - name: Extract 108–115 exact-text review candidates and original PDFs
+      - name: Confirm archived partial import cannot replace consolidated bank
         run: |
-          python police-exams/tools/collect_originals.py --out police-exams/output
-          python - <<'PY'
-          import json
-          from pathlib import Path
-          audit=json.loads(Path('police-exams/output/audit.json').read_text('utf-8'))
-          assert len(audit['papers'])==32
-          for p in audit['papers']:
-            assert p['sourceUrl'] and p['pdfSha256'],f"Missing actual official PDF: {p['year']} {p['subject']}"
-          print('PASS: all 32 official PDF originals retrieved and hashed')
-          PY
-      - name: Strict source and visual-review exclusions before promotion
-        run: |
-          python police-exams/tools/promote_clean_single_page.py --out police-exams/output --bank police-exams/questions.approved.js
-          node --check police-exams/questions.approved.js
           node police-exams/tools/approved-loader.test.cjs
           node police-exams/tools/integration.test.cjs
           python - <<'PY'
           import json
           from pathlib import Path
-          data=json.loads(Path('police-exams/output/promotion-report.json').read_text())
-          assert data['approvedTotal'] in (96,99)
-          assert data['newlyApproved'] in (0,80),data
-          assert data['currentlyUnapproved'] in (31,28)
-          assert len(data['unapprovedQuestions'])==data['currentlyUnapproved']
-          print(json.dumps(data,ensure_ascii=False,indent=2))
+          text=Path('police-exams/questions.approved.js').read_text('utf-8')
+          items=json.loads(text.split('window.POLICE_ORIGINAL_QUESTION_BANK = ',1)[1].rsplit(';',1)[0])
+          assert len(items)==127,'Only the consolidated 127-question bank is valid'
+          assert len({q['id'] for q in items})==127
+          print('Archived initial-batch workflow is read-only. No historical partial-bank rewrite.')
           PY
-      - name: Preserve 31 excluded question IDs and reasons for subsequent review
-        run: cp police-exams/output/promotion-report.json police-exams/review-backlog.json
-      - name: Commit only approved original question bodies to development branch
-        shell: bash
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add police-exams/questions.approved.js police-exams/review-backlog.json
-          if ! git diff --cached --quiet; then
-            git commit -m "data: include 80 additional strict PDF-text-matched 108-114 official police originals"
-            git push origin HEAD:feat/police-past-papers-108-115-originals
-          else
-            echo "No approved originals changed."
-          fi
-      - name: Upload audit/report for excluded and retained papers
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: police-source-approval-audit-${{ github.run_id }}
-          path: |
-            police-exams/output/audit.json
-            police-exams/output/promotion-report.json
-          retention-days: 14
-          if-no-files-found: warn
