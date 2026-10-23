@@ -21,6 +21,8 @@
       !Number.isInteger(q.year) || q.year<108 || q.year>115 ? 'outside years' :
       !Number.isInteger(q.questionNo) || q.questionNo<1 ? 'invalid number' :
       typeof q.body!=='string' || q.body.length<20 ? 'missing original body' :
+      !Number.isInteger(q.officialPoints) || q.officialPoints<1 || q.officialPoints>100 ? 'invalid official points' :
+      !q.sourceReview || typeof q.sourceReview.reviewer!=='string' || !q.sourceReview.reviewer.trim() || typeof q.sourceReview.reviewMethod!=='string' || !q.sourceReview.reviewMethod.trim() ? 'missing review provenance' :
       typeof q.sourceUrl!=='string' || !/^https:\/\/wwwq\.moex\.gov\.tw\/exam\/wHandExamQandA_File\.ashx\?/.test(q.sourceUrl) ? 'invalid official URL' :
       q.sourceKind!=='official-original' || q.verified!==true ? 'not source-verified' :
       !/^[0-9a-f]{64}$/.test(q.paperSha256||'') || !/^[0-9a-f]{64}$/.test(q.textSha256||'') ? 'missing evidence hash' :
