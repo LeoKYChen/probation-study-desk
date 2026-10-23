@@ -115,6 +115,7 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   await connect(a);await preview(a);
   assert.equal(trace.length,0,'preview must not upload data');
   await apply(a);
+  await a.waitForFunction(()=>document.querySelector('#firebase-pending').textContent.includes('沒有相對於上次成功同步的本機變更'));
   assert(cloud.modules.has('jj-read'));
   assert(cloud.desk.has('attempt/study-test'));
   assert(!cloud.modules.has('unrelated-local-token'),'unknown keys must never upload');
@@ -136,6 +137,10 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   // fails. The UI must discard stale approvals and force a fresh preview.
   await a.evaluate(()=>localStorage.setItem('jj-read',JSON.stringify(['手機初稿','電腦新增','中斷前新閱讀'])));
   await writeDesk(a,'網路中斷前的新訂正');
+  const traceBeforeScan=trace.length;
+  await a.evaluate(()=>window.dispatchEvent(new Event('online')));
+  await a.waitForFunction(()=>document.querySelector('#firebase-pending').textContent.includes('此裝置有'));
+  assert.equal(trace.length,traceBeforeScan,'background local change detection must not call Firestore');
   await preview(a);
   await download(a,'#firebase-backup');
   await download(a,'#firebase-backup-desk');
@@ -148,6 +153,8 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   assert.equal(await readDesk(a),'網路中斷前的新訂正','local answer remains even if cloud desk write fails');
   assert.equal(JSON.parse(cloud.modules.get('jj-read').raw).includes('中斷前新閱讀'),true);
   await preview(a);await apply(a);
+  await a.evaluate(()=>window.dispatchEvent(new Event('online')));
+  await a.waitForFunction(()=>document.querySelector('#firebase-pending').textContent.includes('沒有相對於上次成功同步的本機變更'));
   assert.equal(JSON.parse(cloud.modules.get('jj-read').raw).includes('中斷前新閱讀'),true);
   assert.equal(JSON.parse(cloud.desk.get('attempt/study-test').raw).value.answer,'網路中斷前的新訂正');
   const writesBeforeReload=trace.length;
