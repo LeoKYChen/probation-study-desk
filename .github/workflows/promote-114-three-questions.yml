@@ -1,64 +1,23 @@
-name: Review and promote actual 114 three-question police paper
+name: Archived police source gate - 114 original three-question exception
 on:
-  push:
-    branches:
-      - feat/police-past-papers-108-115-originals
-    paths:
-      - 'police-exams/tools/promote_114_three_questions.py'
-      - '.github/workflows/promote-114-three-questions.yml'
   workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
 jobs:
-  verify-official-three:
+  audit-approved-bank-only:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: feat/police-past-papers-108-115-originals
-          persist-credentials: true
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - name: Install MOEX PDF helpers
-        run: python -m pip install --disable-pip-version-check 'requests>=2.32,<3' 'beautifulsoup4>=4.12,<5' 'pymupdf>=1.24,<2'
-      - name: Fetch official 114 four-course PDFs and audit
+      - name: Confirm archived partial import cannot replace consolidated bank
         run: |
-          python police-exams/tools/collect_originals.py --year 114 --out police-exams/output
-          python - <<'PY'
-          import json
-          from pathlib import Path
-          audit=json.loads(Path('police-exams/output/audit.json').read_text('utf-8'))
-          assert len(audit['papers'])==4
-          q=next(x for x in audit['papers'] if x['subject']=='刑法與刑事訴訟法')
-          assert q['questionCount']==3,q
-          assert q['sourceUrl'].startswith('https://wwwq.moex.gov.tw/'),q
-          print('PASS: official 114 criminal/procedure original contains 3 substantive questions')
-          PY
-      - name: Compare official two PDF pages and approve original 50/25/25 question text
-        run: |
-          python police-exams/tools/promote_114_three_questions.py
-          node --check police-exams/questions.approved.js
           node police-exams/tools/approved-loader.test.cjs
           node police-exams/tools/integration.test.cjs
           python - <<'PY'
           import json
           from pathlib import Path
-          b=json.loads(Path('police-exams/review-backlog.json').read_text('utf-8'))
-          assert b['approvedTotal']==99,b
-          assert b['currentlyUnapproved']==28,b
-          assert len(b['unapprovedQuestions'])==28,b
-          assert b['resolved114CriminalLawProcedure']['officialPointDistribution']==[50,25,25]
+          text=Path('police-exams/questions.approved.js').read_text('utf-8')
+          items=json.loads(text.split('window.POLICE_ORIGINAL_QUESTION_BANK = ',1)[1].rsplit(';',1)[0])
+          assert len(items)==127,'Only the consolidated 127-question bank is valid'
+          assert len({q['id'] for q in items})==127
+          print('Archived initial-batch workflow is read-only. No historical partial-bank rewrite.')
           PY
-      - name: Commit strictly verified source originals and their corrected backlog
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add police-exams/questions.approved.js police-exams/review-backlog.json
-          if ! git diff --cached --quiet; then
-            git commit -m "data: restore 114 official criminal-law three originals (50/25/25)"
-            git push origin HEAD:feat/police-past-papers-108-115-originals
-          else
-            echo "Official 114 three-question paper already approved."
-          fi
