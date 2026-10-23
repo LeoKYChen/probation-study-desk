@@ -41,8 +41,8 @@
     {
       "path": "professional/index.html",
       "base_sha256": "115a1a32e125e7215c4336f4d079d434588308f7fff7fb69e53f446352dddf4b",
-      "sha256": "d787e46311858b3c11d0e25cd4e890edd7f1683ee730aa8ebfd6e66f9769d7d8",
-      "reason": "Slides 2,8–17: remove marked prose, add chart/history hosts, group health under existing import panel. Follow-up slides 24–29 remove marked text, retain actual-record forecast, shorten 10-minute label. Keep four-grid drafts and full answer expanded by default; remove explanation only. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22 AI practice] Add optional answer-direction review selector; keep existing full-answer mode, record keys and source bank intact. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources."
+      "sha256": "1c673839811d295c0010d9b07d461b238450eee48392c7ebc39acbdd2a29f4dd",
+      "reason": "Slides 2,8–17: remove marked prose, add chart/history hosts, group health under existing import panel. Follow-up slides 24–29 remove marked text, retain actual-record forecast, shorten 10-minute label. Keep four-grid drafts and full answer expanded by default; remove explanation only. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22 AI practice] Add optional answer-direction review selector; keep existing full-answer mode, record keys and source bank intact. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。"
     },
     {
       "path": "professional/layout-followup.css",
@@ -77,20 +77,20 @@
     {
       "path": "professional/question-sources.js",
       "base_sha256": "3e0f19833aa992873180cab573cd3b056f9d59c811ae56fc01d4e637be00320b",
-      "sha256": "69ee2f5670c2ffd7c824479bbcd8b162830e84a690c7af2d3ecba551df8a0f0c",
-      "reason": "Slide 3: simplify successful source count; preserve mismatch warning.；2026-10-23 手機標示精簡及完整題庫資訊校正"
+      "sha256": "dcbfb334f16b95abadb912977dc1105b224f80aca781974305608168667bb08c",
+      "reason": "Slide 3: simplify successful source count; preserve mismatch warning.；2026-10-23 手機標示精簡及完整題庫資訊校正 [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。"
     },
     {
       "path": "professional/review-preview.js",
       "base_sha256": null,
-      "reason": "Slide 27 clarification: preview only the actual saved records and hypothetical reratings; no demo option or sample sessions, no storage writes.",
-      "sha256": "f6bc92cd9648749b29d054f1ca6cf470dd05aae6823f73c75c308b2da4689657"
+      "reason": "Slide 27 clarification: preview only the actual saved records and hypothetical reratings; no demo option or sample sessions, no storage writes. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。",
+      "sha256": "a42c36dd01b54467ad9d1ebed9d5a001889f2295c6d66228a9c072bc0e3c92d5"
     },
     {
       "path": "professional/sw.js",
       "base_sha256": "40e49a0b907e3db282d42743613f7756e205dba51705dfba7e8efac533400e99",
-      "sha256": "e7e00f08db046712ef453cb6b71fa7eb670668f9f7e9af28d7fb7eaae5c8699d",
-      "reason": "Refresh existing installed-viewer asset cache for changed UI, without altering storage keys. [2026-10-21] Rotate cache version after mobile duration CSS update, so previously installed Safari PWAs fetch a fresh layout on service-worker activation.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22] Bump offline cache to refresh AI review mode script for installed apps. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources."
+      "sha256": "564e50e7400b9ba3844e184c82589827294a176ab765cc35e7070568ac766b07",
+      "reason": "Refresh existing installed-viewer asset cache for changed UI, without altering storage keys. [2026-10-21] Rotate cache version after mobile duration CSS update, so previously installed Safari PWAs fetch a fresh layout on service-worker activation.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22] Bump offline cache to refresh AI review mode script for installed apps. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。"
     },
     {
       "path": "sw.js",
@@ -101,14 +101,14 @@
     {
       "path": "professional/practice-session.js",
       "base_sha256": null,
-      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.；2026-10-23 手機標示精簡及完整題庫資訊校正",
-      "sha256": "dfe480de953a173cf24d7b2556064cd7e2f06efafcd8b61f9f1f50ccb11c3462"
+      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.；2026-10-23 手機標示精簡及完整題庫資訊校正 [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。",
+      "sha256": "768c67b79ed5b9e7b33a747944e1baf98eab8104bf0fd9504af0b98c7a1bfbde"
     },
     {
       "path": "professional/practice-review.js",
       "base_sha256": null,
-      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.",
-      "sha256": "68534129ef5d51e8765b55e1c6578453f50179cc3f98c8c11142f1ad829083a9"
+      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。",
+      "sha256": "8394a7ff9f3a4507276012419b016d0b47eeb6d7ce8b44df1da092430696a815"
     },
     {
       "path": "professional/practice-diagnostics.js",
