@@ -1,12 +1,6 @@
 name: Read-only Cloudflare production inventory
 
 on:
-  push:
-    branches: [release/cloudflare-main-sync-20261017]
-    paths:
-      - scripts/cloudflare-production-preflight.py
-      - scripts/cloudflare-release-control.py
-      - .github/workflows/cloudflare-production-preflight.yml
   workflow_dispatch:
 
 permissions:
