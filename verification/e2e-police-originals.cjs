@@ -62,6 +62,7 @@ async function main(){
   await page.goto(origin+'/v2.5/?q='+encodeURIComponent(reviewId),{waitUntil:'domcontentloaded'});
   await page.waitForFunction(id=>window.Practice25?.getQuestion()?.id===id,reviewId,{timeout:30000});
   await page.locator('#ai-simple-dual').waitFor({state:'visible',timeout:30000});
+  assert(await page.locator('#ai-simple-export-dual').isVisible(),'latest main mobile manual dual-AI handoff must survive police merge');
   assert.equal(await page.evaluate(()=>window.Practice25.getQuestions().length),553);
   assert.equal((await page.locator('#bankCount').textContent()).trim(),'553');
   assert.equal(await page.locator('#questionBody').textContent(),selected.body);
