@@ -2,13 +2,19 @@
 (function(){
 'use strict';
 const E=window.StarestoDailyEngine,STORE='psd-staresto-daily-v04',$=id=>document.getElementById(id);
+function notifyOffline(key){
+ if(window.PSDLocalJournal){window.PSDLocalJournal.note(key);return;}
+ // Only connected users load the small notifier; guests use no Firebase code.
+ try{if(localStorage.getItem('psd-firebase-restore-login-v1')!=='yes')return;}catch{return;}
+ import('../../cloud-sync/local-journal.js').then(()=>window.PSDLocalJournal?.note(key)).catch(()=>{});
+}
 const node=(tag,text,cls)=>{let e=document.createElement(tag);if(text!==undefined)e.textContent=String(text);if(cls)e.className=cls;return e};
 const names={vocab:'單字',grammar:'文法／克漏字',reading:'閱讀理解',completion:'文意選填'};
 const files=['vocab.json','grammar-1.json','grammar-2.json','grammar-3.json','reading.json','completion.json'];
 let bank,state,today,shownDate,task=null,index=0,revealed=false;
 function notice(msg,error){const x=$('status');x.hidden=false;x.textContent=msg;x.className=error?'status error':'status';if(!error)setTimeout(()=>{if(x.textContent===msg)x.hidden=true},4200)}
 function load(){try{return E.normalize(JSON.parse(localStorage.getItem(STORE)||'null'))}catch(_){return E.defaultState()}}
-function save(){try{localStorage.setItem(STORE,JSON.stringify(state));window.PSDLocalJournal?.note(STORE);return true}catch(e){notice('本機儲存失敗，請先保留作答並檢查儲存空間。',true);return false}}
+function save(){try{localStorage.setItem(STORE,JSON.stringify(state));notifyOffline(STORE);return true}catch(e){notice('本機儲存失敗，請先保留作答並檢查儲存空間。',true);return false}}
 function taskDone(t,date){return E.completed(state,date,t)}
 function sumDone(plan,date){return plan.tasks.reduce((n,t)=>n+taskDone(t,date),0)}
 function sumSize(plan){return plan.tasks.reduce((n,t)=>n+t.ids.length,0)}
