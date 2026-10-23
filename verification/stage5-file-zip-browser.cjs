@@ -29,12 +29,14 @@ const engine=process.env.TEST_BROWSER==='webkit'?webkit:chromium;
   assert(await page.locator('#psd-file-warning').count()===1,'ZIP storage warning visible');
   // First tile: original professional study30, not a new duplicate website.
   await page.locator('a[href="./professional/"]').click();
+  await page.waitForURL(/\/professional\/index\.html$/,{timeout:15000});
   assert.match(page.url(),/\/professional\/index\.html$/);
   await page.locator('#todayHeading').waitFor({timeout:15000});
   assert((await page.locator('#todayHeading').innerText()).length>0);
   // Practice entrance: existing common-subjects (essay), retaining its original storage.
   await page.goto(scheme,{waitUntil:'load'});
   await page.locator('a[href="./common-subjects/"]').click();
+  await page.waitForURL(/\/common-subjects\/index\.html$/,{timeout:15000});
   assert.match(page.url(),/\/common-subjects\/index\.html$/);
   await page.locator('#essayText').waitFor({timeout:15000});
   await page.locator('#essayText').fill('ZIP原始網站離線作文測試');
@@ -44,6 +46,7 @@ const engine=process.env.TEST_BROWSER==='webkit'?webkit:chromium;
   // Original daily-simulation JSON fetch is bridged to canonical generated JS.
   await page.goto(scheme,{waitUntil:'load'});
   await page.locator('a[href="./daily-simulation/"]').click();
+  await page.waitForURL(/\/daily-simulation\/index\.html$/,{timeout:15000});
   assert.match(page.url(),/\/daily-simulation\/index\.html$/);
   try{await page.waitForFunction(()=>document.querySelector('#cards')?.children.length>0,null,{timeout:20000});}
   catch(e){
@@ -63,6 +66,7 @@ const engine=process.env.TEST_BROWSER==='webkit'?webkit:chromium;
   // Original weekly reader: file-scheme fallback with every canonical historical issue.
   await page.goto(scheme,{waitUntil:'load'});
   await page.locator('a[href="./juvenile-news/"]').click();
+  await page.waitForURL(/\/juvenile-news\/index\.html$/,{timeout:15000});
   assert.match(page.url(),/\/juvenile-news\/index\.html$/);
   await page.locator('#root select').waitFor({timeout:15000});
   assert.equal(await page.locator('#root select option').count(),weeklyCount);
@@ -70,6 +74,7 @@ const engine=process.env.TEST_BROWSER==='webkit'?webkit:chromium;
   // Original v2.5 exam entry: 426 canonical questions.
   await page.goto(scheme,{waitUntil:'load'});
   await page.locator('a[href="./v2.5/"]').click();
+  await page.waitForURL(/\/v2\.5\/index\.html$/,{timeout:15000});
   assert.match(page.url(),/\/v2\.5\/index\.html$/);
   await page.locator('#issueInput').waitFor({timeout:15000});
   await page.locator('#issueInput').fill('ZIP斷網考古題涵攝測試');
