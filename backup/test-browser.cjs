@@ -40,6 +40,7 @@ async function takeDownload(page,click){
   await untouched.evaluate(input=>{
    localStorage.setItem(input.key,JSON.stringify(input.sessions));
    localStorage.setItem('probation-study-desk-v24','{}');
+   localStorage.setItem('probation-study-desk-v3',JSON.stringify({'old-Q1':{issue:'歷史答案'}}));
   },{key,sessions:emptySessions});
   await untouched.reload();
   const emptySummary=await untouched.locator('#summary').innerText();
@@ -56,6 +57,7 @@ async function takeDownload(page,click){
   const zeroBundle=await takeDownload(untouched,()=>untouched.locator('#export').click());
   assert.deepEqual(JSON.parse(zeroBundle.data[key]),emptySessions,'export must preserve empty sessions unchanged');
   assert.equal(zeroBundle.data['probation-study-desk-v24'],'{}','an empty record map must be kept in backup');
+  assert.equal(JSON.parse(zeroBundle.data['probation-study-desk-v3'])['old-Q1'].issue,'歷史答案','hidden legacy records must still be backed up');
   await emptyCtx.close();
   const a=await browser.newContext({viewport:{width:390,height:844},locale:'zh-TW'});
   const page=await a.newPage();
