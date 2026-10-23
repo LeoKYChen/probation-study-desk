@@ -12,7 +12,8 @@ const fs=require('node:fs/promises'),http=require('node:http'),path=require('nod
  async function saved(page,id){await page.waitForFunction(id=>!document.getElementById(id).disabled,id);}
  try{
  const a=await device(),p=a.page;
- assert.equal(await p.locator('#cloud-settings').count(),0,'no login or cloud configuration controls');
+ assert.equal(await p.locator('#cloud-settings').count(),1,'cloud controls are opt-in and do not auto-connect');
+ assert.equal(await p.locator('#cloud-connected').isHidden(),true,'guest remains local only');
  assert.equal(await p.locator('#account').textContent(),'此裝置的本機書桌');
  await p.locator('#manual-picker').evaluate(el=>el.open=true);await p.locator('#subject').selectOption({label:'心理學'});await p.locator('#start-selected').click();await p.locator('#editor').waitFor({state:'visible'});
  await p.locator('#answer').fill('原始答案：我把信度與效度混淆。');await p.locator('#submit-answer').click();await saved(p,'submit-answer');await p.locator('#checked').click();await saved(p,'checked');
