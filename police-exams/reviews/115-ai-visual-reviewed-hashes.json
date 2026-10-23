@@ -1,0 +1,130 @@
+{
+  "police-115-psychology-1": {
+    "reviewedAgainstOfficialPdf": true,
+    "reviewer": "ChatGPT（官方PDF影像逐卷核對、候選題幹與原卷文字層逐題比對；非真人閱卷）",
+    "checkedAt": "2026-10-23",
+    "pdfSha256": "3e7fc6281d272e10e2092ef5b96c56cba8ca1d9ff774930935f1a54f19d25da9",
+    "textSha256": "49cba761ea4b309373b7aabdf0c43fe9f0a40aff9252eebc0a587671a56112f0",
+    "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對"
+  },
+  "police-115-psychology-2": {
+    "reviewedAgainstOfficialPdf": true,
+    "reviewer": "ChatGPT（官方PDF影像逐卷核對、候選題幹與原卷文字層逐題比對；非真人閱卷）",
+    "checkedAt": "2026-10-23",
+    "pdfSha256": "3e7fc6281d272e10e2092ef5b96c56cba8ca1d9ff774930935f1a54f19d25da9",
+    "textSha256": "173a69266f1fd32c28606609135ef0af5ae7c6623b438561e72477f0df0c5ae9",
+    "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對"
+  },
+  "police-115-psychology-3": {
+    "reviewedAgainstOfficialPdf": true,
+    "reviewer": "ChatGPT（官方PDF影像逐卷核對、候選題幹與原卷文字層逐題比對；非真人閱卷）",
+    "checkedAt": "2026-10-23",
+    "pdfSha256": "3e7fc6281d272e10e2092ef5b96c56cba8ca1d9ff774930935f1a54f19d25da9",
+    "textSha256": "d9a68d32bcd52cebf3636f34f69958611c4e7fb28aa60ff2d230aaecee468a35",
+    "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對"
+  },
+  "police-115-psychology-4": {
+    "reviewedAgainstOfficialPdf": true,
+    "reviewer": "ChatGPT（官方PDF影像逐卷核對、候選題幹與原卷文字層逐題比對；非真人閱卷）",
+    "checkedAt": "2026-10-23",
+    "pdfSha256": "3e7fc6281d272e10e2092ef5b96c56cba8ca1d9ff774930935f1a54f19d25da9",
+    "textSha256": "914787e2a492417fbb89b6e743037a60cdf33db79c2908fad0cb103a6d2214ca",
+    "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對"
+  },
+  "police-115-counseling-1": {
+    "reviewedAgainstOfficialPdf": true,
+    "reviewer": "ChatGPT（官方PDF影像逐卷核對、候選題幹與原卷文字層逐題比對；非真人閱卷）",
+    "checkedAt": "2026-10-23",
+    "pdfSha256": "95aa9e33cc4ff78317f52ecdef3664b5b7b08da04034806722b8392c555d2cfa",
+    "textSha256": "a36c5b3fe28f2287da7d28bbc953de9b3e58935967674e5832114fe5976c231d",
+    "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對"
+  },
+  "police-115-counseling-2": {
+    "reviewedAgainstOfficialPdf": true,
+    "reviewer": "ChatGPT（官方PDF影像逐卷核對、候選題幹與原卷文字層逐題比對；非真人閱卷）",
+    "checkedAt": "2026-10-23",
+    "pdfSha256": "95aa9e33cc4ff78317f52ecdef3664b5b7b08da04034806722b8392c555d2cfa",
+    "textSha256": "fd5af95f7fb371ead3df03bec5898c69108de2eb8c8931602a2f63157af4f7b1",
+    "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對"
+  },
+  "police-115-counseling-3": {
+    "reviewedAgainstOfficialPdf": true,
+    "reviewer": "ChatGPT（官方PDF影像逐卷核對、候選題幹與原卷文字層逐題比對；非真人閱卷）",
+    "checkedAt": "2026-10-23",
+    "pdfSha256": "95aa9e33cc4ff78317f52ecdef3664b5b7b08da04034806722b8392c555d2cfa",
+    "textSha256": "17f9c1077a2475be745d06f1543a0d3b155d229d09dbea5d352949bc16da6d85",
+    "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對"
+  },
+  "police-115-counseling-4": {
+    "reviewedAgainstOfficialPdf": true,
+    "reviewer": "ChatGPT（官方PDF影像逐卷核對、候選題幹與原卷文字層逐題比對；非真人閱卷）",
+    "checkedAt": "2026-10-23",
+    "pdfSha256": "95aa9e33cc4ff78317f52ecdef3664b5b7b08da04034806722b8392c555d2cfa",
+    "textSha256": "465132fdf4ab93fd90deac9a6e1d75b3f587f9a4ed435f77a3e7091f84f40cd2",
+    "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對"
+  },
+  "police-115-criminal_law_procedure-1": {
+    "reviewedAgainstOfficialPdf": true,
+    "reviewer": "ChatGPT（官方PDF影像逐卷核對、候選題幹與原卷文字層逐題比對；非真人閱卷）",
+    "checkedAt": "2026-10-23",
+    "pdfSha256": "73d5693d95cc3a106b1b42efde1a14f9ec63a3bb2dd6510058d4d3dde601d8ab",
+    "textSha256": "88fe484859560b3ffac7b2bf8b2e6257a551d2fc08b92e026a2350bc8e3a48d1",
+    "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對"
+  },
+  "police-115-criminal_law_procedure-2": {
+    "reviewedAgainstOfficialPdf": true,
+    "reviewer": "ChatGPT（官方PDF影像逐卷核對、候選題幹與原卷文字層逐題比對；非真人閱卷）",
+    "checkedAt": "2026-10-23",
+    "pdfSha256": "73d5693d95cc3a106b1b42efde1a14f9ec63a3bb2dd6510058d4d3dde601d8ab",
+    "textSha256": "02390a0ce0d798e648fa8e973c1ea5655ebcffe8eb6dfe7834031916633b5804",
+    "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對"
+  },
+  "police-115-criminal_law_procedure-3": {
+    "reviewedAgainstOfficialPdf": true,
+    "reviewer": "ChatGPT（官方PDF影像逐卷核對、候選題幹與原卷文字層逐題比對；非真人閱卷）",
+    "checkedAt": "2026-10-23",
+    "pdfSha256": "73d5693d95cc3a106b1b42efde1a14f9ec63a3bb2dd6510058d4d3dde601d8ab",
+    "textSha256": "b754f2cf61870f975ca9fd02492cfa1180618ecb79615d397230eeb392553831",
+    "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對"
+  },
+  "police-115-criminal_law_procedure-4": {
+    "reviewedAgainstOfficialPdf": true,
+    "reviewer": "ChatGPT（官方PDF影像逐卷核對、候選題幹與原卷文字層逐題比對；非真人閱卷）",
+    "checkedAt": "2026-10-23",
+    "pdfSha256": "73d5693d95cc3a106b1b42efde1a14f9ec63a3bb2dd6510058d4d3dde601d8ab",
+    "textSha256": "a22694f4e969d661be819e8c7e9a6a705489419b3befc632ed4f785a4d418dd3",
+    "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對"
+  },
+  "police-115-criminology_prevention-1": {
+    "reviewedAgainstOfficialPdf": true,
+    "reviewer": "ChatGPT（官方PDF影像逐卷核對、候選題幹與原卷文字層逐題比對；非真人閱卷）",
+    "checkedAt": "2026-10-23",
+    "pdfSha256": "265f05b2101516f839f425e4bfa0253875ffda35a6d9f941e077121925c23562",
+    "textSha256": "0af4a5e39c4bed0e759afe0078df4882e36d0e6a356edf942469cca271860ab2",
+    "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對"
+  },
+  "police-115-criminology_prevention-2": {
+    "reviewedAgainstOfficialPdf": true,
+    "reviewer": "ChatGPT（官方PDF影像逐卷核對、候選題幹與原卷文字層逐題比對；非真人閱卷）",
+    "checkedAt": "2026-10-23",
+    "pdfSha256": "265f05b2101516f839f425e4bfa0253875ffda35a6d9f941e077121925c23562",
+    "textSha256": "487ccbed7d88966d0b6e3af41e46ed24fd7f1e8af41c803c2987e72cc48f57f8",
+    "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對"
+  },
+  "police-115-criminology_prevention-3": {
+    "reviewedAgainstOfficialPdf": true,
+    "reviewer": "ChatGPT（官方PDF影像逐卷核對、候選題幹與原卷文字層逐題比對；非真人閱卷）",
+    "checkedAt": "2026-10-23",
+    "pdfSha256": "265f05b2101516f839f425e4bfa0253875ffda35a6d9f941e077121925c23562",
+    "textSha256": "82e3fae9c77303983f67b0bc3c5aa214f3b8c54274629e9ab82306328699fe2f",
+    "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對"
+  },
+  "police-115-criminology_prevention-4": {
+    "reviewedAgainstOfficialPdf": true,
+    "reviewer": "ChatGPT（官方PDF影像逐卷核對、候選題幹與原卷文字層逐題比對；非真人閱卷）",
+    "checkedAt": "2026-10-23",
+    "pdfSha256": "265f05b2101516f839f425e4bfa0253875ffda35a6d9f941e077121925c23562",
+    "textSha256": "9079a899b1e2fde0abbeb827346a34eca1bfa3691a0cb4fcf7beca6a77b80c7a",
+    "reviewMethod": "官方PDF已渲染檢視；完整題幹按原卷PDF文字層與SHA256核對"
+  }
+}

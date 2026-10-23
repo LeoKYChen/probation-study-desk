@@ -31,6 +31,7 @@ ROOT_FILES = {
 }
 SITE_DIRS = {
     "study-desk",
+    "police-exams",
     "cloud-sync",
     "backup",
     "lectures",
@@ -81,6 +82,10 @@ REQUIRED = (
     "offline-manifest.json",
     "ai-prompt-customizer.js",
     "dual-ai-bridge.js",
+    "police-exams/index.html",
+    "police-exams/catalog.json",
+    "police-exams/questions.approved.js",
+    "police-exams/approved-loader.js",
 )
 
 def allowed(path: str) -> bool:
@@ -89,6 +94,11 @@ def allowed(path: str) -> bool:
         return False
     if not parts or any(part in DENY_PARTS for part in parts):
         return False
+    if parts[0] == "police-exams":
+        return path in {
+            "police-exams/index.html", "police-exams/catalog.json",
+            "police-exams/questions.approved.js", "police-exams/approved-loader.js",
+        }
     if len(parts) == 1:
         return path in ROOT_FILES
     if "/".join(parts[:2]) in SOURCE_ONLY:

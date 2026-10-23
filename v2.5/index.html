@@ -444,6 +444,7 @@
           <p class="eyebrow">本週主軸</p>
           <h2>先抓爭點，再補法條與涵攝</h2>
           <p>平日完成 1 題，控制在 25 分鐘內；待複習題隔日再看一次。</p>
+          <p><a href="../police-exams/">查看警察預防組108–115年四科官方原題收錄與來源 ↗</a></p>
         </article>
       <section class="study-entry-grid" aria-label="練習與複習入口">
         <article class="entry-card" hidden><h2>各科主動回憶</h2><p>108–115 年觀護人六科、190 道原題。可選原題、考點拆分或補充基礎。</p><p>固定提示、自我核對與回想式小結；進度獨立保存。</p><a class="btn primary" href="../active-recall/">開始主動回憶</a></article>
@@ -561,6 +562,7 @@
                 <div id="yamolPartLinks"></div>
               </div>
             </div>
+            <p class="source-note"><a href="../police-exams/">查看108–115年警察預防組四科的官方原卷收錄進度 ↗</a></p>
             <p class="source-note">題目來源：<a id="sourceLink" href="#" target="_blank" rel="noreferrer">考選部考畢試題 PDF</a>。考點與答題方向屬練習用整理；呈現流程參考<a href="https://www.shuati.tw/" target="_blank" rel="noreferrer">刷題王</a>的逐題解析與申論批改概念。</p>
             <section class="point-box" aria-labelledby="pointTitle">
               <h3 id="pointTitle">考點拆分</h3>
@@ -671,6 +673,8 @@
   </dialog>
   <script src="questions.js"></script>
   <script src="related-questions.js"></script>
+  <script src="../police-exams/questions.approved.js"></script>
+  <script src="../police-exams/approved-loader.js"></script>
   <script src="rubrics.js"></script>
   <script src="legal-pilots.js"></script>
   <script src="full-pilots.js"></script>
@@ -688,7 +692,7 @@
     const subjects = [
       '少年事件處理法', '刑法', '刑法與少年事件處理法',
       '刑事訴訟法與保安處分執行法', '犯罪學', '犯罪學與再犯預測',
-      '犯罪學概要', '心理學', '心理測驗', '諮商與輔導', '諮商與矯正輔導'
+      '犯罪學概要', '犯罪學與犯罪預防', '心理學', '心理測驗', '諮商與輔導', '諮商與矯正輔導', '刑法與刑事訴訟法'
     ];
 
     const sharedExamTypes = {
@@ -708,8 +712,8 @@
           : [question.examType || '觀護人']
       )
     }));
-    const questionBank = [...baseQuestions, ...(window.RELATED_QUESTION_BANK || [])];
-    const examTypes = ['全部類科','觀護人','監獄官','監所管理員','薦任升等（矯正）','家事調查官','心理測驗員','心理輔導員'];
+    const questionBank = [...baseQuestions, ...(window.RELATED_QUESTION_BANK || []), ...(window.POLICE_ORIGINAL_QUESTION_BANK || [])];
+    const examTypes = ['全部類科','觀護人','監獄官','監所管理員','薦任升等（矯正）','家事調查官','心理測驗員','心理輔導員','一般警察人員考試三等犯罪防治人員預防組','警察人員考試三等犯罪防治人員預防組'];
 
     const scoreDefs = [
       ['issue', '爭點掌握', '題目要求、行為人與子爭點', 30],

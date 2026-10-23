@@ -1,0 +1,81 @@
+name: Restore 28 official police PDF originals
+on:
+  push:
+    branches:
+      - feat/police-past-papers-108-115-originals
+    paths:
+      - 'police-exams/tools/promote_pdf_visual_28.py'
+      - '.github/workflows/promote-pdf-visual-originals.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  crosscheck-source-pages:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/police-past-papers-108-115-originals
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install official PDF extractors
+        run: python -m pip install --disable-pip-version-check 'requests>=2.32,<3' 'beautifulsoup4>=4.12,<5' 'pymupdf>=1.24,<2'
+      - name: Verify original-only candidate extraction
+        run: python -m unittest discover -s police-exams/tools -p 'test_*.py' -v
+      - name: Fetch and source-audit all 32 official papers
+        run: |
+          python police-exams/tools/collect_originals.py --out police-exams/output
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          audit=json.loads(Path('police-exams/output/audit.json').read_text('utf-8'))
+          records=json.loads(Path('police-exams/output/candidates.json').read_text('utf-8'))
+          assert len(audit['papers'])==32
+          assert len(records)==127, f"Expected 127 exact-source candidate question divisions, found {len(records)}"
+          assert all(r['sourceUrl'] and r['pdfSha256'] for r in audit['papers'])
+          assert len({q['id'] for q in records})==127
+          print('PASS: 32 official PDFs and 127 candidate question source records.')
+          PY
+      - name: Verify original PDF pages and restore 28 missing visible numerals
+        run: |
+          python police-exams/tools/promote_pdf_visual_28.py --out police-exams/output
+          node --check police-exams/questions.approved.js
+          node police-exams/tools/approved-loader.test.cjs
+          node police-exams/tools/integration.test.cjs
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          r=json.loads(Path('police-exams/output/restoration-report.json').read_text('utf-8'))
+          pending=json.loads(Path('police-exams/review-backlog.json').read_text('utf-8'))
+          assert r['newOriginals']==28 and r['approvedTotal']==127
+          assert len(r['sourceEvidence'])==28 and r['remaining']==0
+          assert pending['approvedTotal']==127 and pending['currentlyUnapproved']==0
+          assert len(pending['resolvedByVisualOriginalPdf'])==28
+          assert pending['unapprovedQuestions']==[]
+          print('PASS: 127 official originals, 28 visually restored from MOEX PDFs, 0 unresolved source candidates.')
+          PY
+      - name: Commit verified originals, evidence and outstanding-status ledger
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add police-exams/questions.approved.js police-exams/review-backlog.json police-exams/lawplayer-crosscheck.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: restore 28 original police questions from exact official PDF visual evidence"
+            git push origin HEAD:feat/police-past-papers-108-115-originals
+          else
+            echo "All verified originals already present; no change needed."
+          fi
+      - name: Upload source audit (no user records)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: police-pdf-visual-source-audit-${{ github.run_id }}
+          path: |
+            police-exams/output/audit.json
+            police-exams/output/restoration-report.json
+          retention-days: 14
+          if-no-files-found: warn

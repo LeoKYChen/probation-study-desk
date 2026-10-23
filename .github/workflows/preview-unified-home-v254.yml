@@ -49,7 +49,46 @@ jobs:
           node verification/unified-pwa-upgrade.cjs cloudflare-main-mirror-dist
           node verification/layout-installed-upgrade.cjs cloudflare-main-mirror-dist
 
+  integration-pr:
+    if: github.event_name == 'pull_request'
+    needs: webkit-installed-upgrade
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    # Prebuilt browsers avoid install --with-deps stalling until 20m cancellation.
+    container:
+      image: mcr.microsoft.com/playwright:v1.62.1-noble
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Trust isolated GitHub checkout owned by the host runner
+        run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
+      - name: Verify original IDs, storage namespaces and stability freeze
+        run: |
+          node verification/unified-integration.cjs
+          node verification/check-daily-v254.cjs
+          python3 scripts/check-stability-contract.py
+          for script in professional/*.js; do node --check "$script"; done
+      - name: Build identical static assets for both hosts
+        run: |
+          python3 scripts/build-cloudflare-main-mirror.py
+          python3 -m py_compile scripts/verify-published-bytes.py
+      - name: Install matching Playwright JavaScript client only
+        run: npm install --prefix /tmp/unified-home-qa --no-save --ignore-scripts --no-audit playwright@1.62.1
+      - name: Test Chromium and WebKit, including cached-app upgrade
+        env:
+          NODE_PATH: /tmp/unified-home-qa/node_modules
+        run: |
+          for engine in chromium webkit; do
+            UNIFIED_BROWSER_ENGINE="$engine" node verification/unified-browser.cjs cloudflare-main-mirror-dist
+            if [ "$engine" = chromium ]; then
+              UNIFIED_BROWSER_ENGINE="$engine" node verification/unified-pwa-upgrade.cjs cloudflare-main-mirror-dist
+            fi
+          done
+
   integration:
+    if: github.event_name != 'pull_request'
     needs: webkit-installed-upgrade
     runs-on: ubuntu-latest
     timeout-minutes: 20

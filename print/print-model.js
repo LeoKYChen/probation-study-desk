@@ -97,6 +97,7 @@
      sections.push(section('本站練習參考評估（非官方）',notes,'review'));
     }
     if(obj(d.pointFeedback))sections.push(section('我的逐點核對筆記',Object.entries(d.pointFeedback).map(([k,v])=>k+'：'+(typeof v==='string'?v:JSON.stringify(v))).join('\n'),'review'));
+    if(populated(d.aiFeedback))sections.push(section('AI 批改評語（自行貼入，非官方評分）',d.aiFeedback,'feedback'));
     if(!anyText(sections))continue;
     records.push({uid:'past:'+id,category:'past',categoryLabel:'426 題考古題',title:q?.title||id,
      meta:q?[q.year+' 年',q.subject,q.examType||''].filter(Boolean).join(' · '):id+'（舊題號／尚未核對）',

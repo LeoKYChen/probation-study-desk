@@ -49,6 +49,16 @@ def main():
     # Parse the simple Python constant collections, rather than substring-checking
     # the builder (a stray comment should never satisfy this contract).
     import ast
+    # These assets become mandatory only after police originals are introduced.
+    # Main's frozen release (without police-exams/) remains valid and unchanged.
+    police_assets = (
+        "police-exams/index.html",
+        "police-exams/catalog.json",
+        "police-exams/questions.approved.js",
+        "police-exams/approved-loader.js",
+    )
+    police_bank_introduced = any((root / rel).exists() for rel in police_assets)
+    assignments = {}
     builder = root / "scripts/build-cloudflare-main-mirror.py"
     if builder.is_file():
         assignments = {}
@@ -63,10 +73,20 @@ def main():
     else:
         errors.append("Cloudflare mirror builder missing")
     manifest = root / "offline-manifest.json"
+    entry_set = set()
     if manifest.is_file():
         entry_set = {e["url"] for e in json.loads(manifest.read_text(encoding="utf-8"))["assets"]}
         if "dual-ai-bridge.js" not in entry_set:
             errors.append("Offline manifest missing dual AI bridge")
+
+    if police_bank_introduced:
+        for rel in police_assets:
+            if not (root / rel).is_file():
+                errors.append("Introduced police-original bank missing static file: " + rel)
+            if rel not in assignments.get("REQUIRED", ()):
+                errors.append("Cloudflare mirror must require police-original file: " + rel)
+            if rel not in entry_set:
+                errors.append("Offline manifest must cache police-original file: " + rel)
 
     # Deployment is intentionally a separate manual approval from merging main.
     # Main pushes and pull requests still run tests; neither may publish.
@@ -109,6 +129,7 @@ def main():
         "critical_paths_checked": len(policy.get("criticalPaths", [])),
         "mirror_pairs_checked": len(policy.get("identicalMirrors", [])),
         "hidden_invariants_checked": len(policy.get("hiddenInvariants", [])),
+        "police_assets_checked": len(police_assets) if police_bank_introduced else 0,
         "advisories": warnings,
         "errors": errors,
         "ok": not errors,

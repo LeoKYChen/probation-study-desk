@@ -1,0 +1,259 @@
+{
+  "approvedTotal": 127,
+  "newlyApproved": 0,
+  "newByYear": {},
+  "rejected": {
+    "embedded image or glyph": 4,
+    "already approved": 96,
+    "PDF private-use glyph requires visual correction": 4,
+    "paper has audit warnings": 12,
+    "multi-page PDF": 8,
+    "not four numbered questions": 0
+  },
+  "currentlyUnapproved": 0,
+  "unapprovedQuestions": [],
+  "approvalScope": "Single-page, exact-PDF-text, no embedded images, no missing numerals",
+  "resolved114CriminalLawProcedure": {
+    "questionIds": [
+      "police-114-criminal_law_procedure-1",
+      "police-114-criminal_law_procedure-2",
+      "police-114-criminal_law_procedure-3"
+    ],
+    "source": "考選部114年一般警察人員考試刑法與刑事訴訟法官方PDF",
+    "officialQuestionCount": 3,
+    "officialPointDistribution": [
+      50,
+      25,
+      25
+    ],
+    "pdfSha256": "1bb7d66914c10445ef3f95df92d82f36d9b095597e6f6b4420813cc5a795d109",
+    "review": "AI輔助PDF兩頁版面與原文字校核"
+  },
+  "resolvedByVisualOriginalPdf": [
+    {
+      "id": "police-108-psychology-1",
+      "page": 1,
+      "pdfSha256": "ecbd21789b5a18d83d519e34b1b220333371b4ae7c9d7e8ae00b18095396a6dc",
+      "candidateTextSha256": "28d379d4a3e6dab4b587acb6e37a75e50211d94ec9e722c54840639df9534ca4",
+      "verifiedTextSha256": "6b78f580b576b3ae5c3a8e6cd54ae71c91c107b1e5357c29b8833b15f02802be",
+      "restoration": "依原PDF影像恢復五個圖片形式的小題序號"
+    },
+    {
+      "id": "police-108-psychology-2",
+      "page": 1,
+      "pdfSha256": "ecbd21789b5a18d83d519e34b1b220333371b4ae7c9d7e8ae00b18095396a6dc",
+      "candidateTextSha256": "8e8db58d203ead7e3fe2d10d4ba72dfbe549f5d1db6c1bfa64c10f594a75297b",
+      "verifiedTextSha256": "8e8db58d203ead7e3fe2d10d4ba72dfbe549f5d1db6c1bfa64c10f594a75297b",
+      "restoration": "跨頁官方PDF版面與原題號核對"
+    },
+    {
+      "id": "police-108-psychology-3",
+      "page": 1,
+      "pdfSha256": "ecbd21789b5a18d83d519e34b1b220333371b4ae7c9d7e8ae00b18095396a6dc",
+      "candidateTextSha256": "256b9597bd3709daa4b0822d827d7a71a5af2848f76b89a75d372885a8558412",
+      "verifiedTextSha256": "256b9597bd3709daa4b0822d827d7a71a5af2848f76b89a75d372885a8558412",
+      "restoration": "跨頁官方PDF版面與原題號核對"
+    },
+    {
+      "id": "police-108-psychology-4",
+      "page": 1,
+      "pdfSha256": "ecbd21789b5a18d83d519e34b1b220333371b4ae7c9d7e8ae00b18095396a6dc",
+      "candidateTextSha256": "3fa72198bb76294c7a7f731ca3c2f40ab56ece908d6c09c18eb7f95832370324",
+      "verifiedTextSha256": "3fa72198bb76294c7a7f731ca3c2f40ab56ece908d6c09c18eb7f95832370324",
+      "restoration": "跨頁官方PDF版面與原題號核對"
+    },
+    {
+      "id": "police-109-counseling-4",
+      "page": 1,
+      "pdfSha256": "f93f942a4c3794c952d2c139ce506b0090c5f415239c4bd977e3e37bc01725d7",
+      "candidateTextSha256": "7002afd1e9c52541caa583b022e5a2dab589d809e9922c9e46c2ad55e99368d0",
+      "verifiedTextSha256": "2409c6d5e1615c617c44395a18f57cd053e0ad9f79d2eff50b1f2141909b4aea",
+      "restoration": "依原PDF影像恢復私用字型分項序號"
+    },
+    {
+      "id": "police-110-criminal_law_procedure-1",
+      "page": 1,
+      "pdfSha256": "3b2692c10383cb70c55a6949fb2d24bae2dabf92b0b15a204c4f010a51f5d59f",
+      "candidateTextSha256": "51bb0564bd0635e591d108658a856b0cbd2c1223418010d35526caf2cdc4f1a0",
+      "verifiedTextSha256": "51bb0564bd0635e591d108658a856b0cbd2c1223418010d35526caf2cdc4f1a0",
+      "restoration": "跨頁官方PDF版面與原題號核對"
+    },
+    {
+      "id": "police-110-criminal_law_procedure-2",
+      "page": 1,
+      "pdfSha256": "3b2692c10383cb70c55a6949fb2d24bae2dabf92b0b15a204c4f010a51f5d59f",
+      "candidateTextSha256": "bc70289eb0a0f5ef6cdc86d8012a552a3c0f182e090a9c57d10ca71023b2fdac",
+      "verifiedTextSha256": "bc70289eb0a0f5ef6cdc86d8012a552a3c0f182e090a9c57d10ca71023b2fdac",
+      "restoration": "跨頁官方PDF版面與原題號核對"
+    },
+    {
+      "id": "police-110-criminal_law_procedure-3",
+      "page": 1,
+      "pdfSha256": "3b2692c10383cb70c55a6949fb2d24bae2dabf92b0b15a204c4f010a51f5d59f",
+      "candidateTextSha256": "ca9e6eb822dd4f3e1e04798e4d43a46d67824f2b0debf3a8370c93b60809612d",
+      "verifiedTextSha256": "c2fa8eceeb2d7d4d7092af5b662d00f00412a4f6739fcdacbbb034de9717dd55",
+      "restoration": "剔除原PDF跨頁頁碼雜訊"
+    },
+    {
+      "id": "police-110-criminal_law_procedure-4",
+      "page": 2,
+      "pdfSha256": "3b2692c10383cb70c55a6949fb2d24bae2dabf92b0b15a204c4f010a51f5d59f",
+      "candidateTextSha256": "ad7bb498aba2e2e6a226f93904f356e51b7c47fbeb416052a6fc93e3b214fc00",
+      "verifiedTextSha256": "ad7bb498aba2e2e6a226f93904f356e51b7c47fbeb416052a6fc93e3b214fc00",
+      "restoration": "跨頁官方PDF版面與原題號核對"
+    },
+    {
+      "id": "police-110-psychology-1",
+      "page": 1,
+      "pdfSha256": "f59cb4559cbb98e111304a772eaaa49dc3009e453ff3bee00caf60b508c6db8d",
+      "candidateTextSha256": "83c6e0387004104d02ca7548ce8840dc24da57f7745a6296e4ec8438c02b20fd",
+      "verifiedTextSha256": "10c7c16e2dbc02384404c8c3d0fd3da0f52b2b6f40144826e34a86cd975351c7",
+      "restoration": "依官方PDF影像補回文字層遺失的題號"
+    },
+    {
+      "id": "police-110-psychology-2",
+      "page": 1,
+      "pdfSha256": "f59cb4559cbb98e111304a772eaaa49dc3009e453ff3bee00caf60b508c6db8d",
+      "candidateTextSha256": "e043a8933ff96e311cbcac7dde09469c8d526b396aac08a7888f39ec71d96e67",
+      "verifiedTextSha256": "9676802aaee62ef46db0f09a71baa95e25500f666c8a8cb68637d6e8f0a0a859",
+      "restoration": "依官方PDF影像補回文字層遺失的題號"
+    },
+    {
+      "id": "police-110-psychology-3",
+      "page": 1,
+      "pdfSha256": "f59cb4559cbb98e111304a772eaaa49dc3009e453ff3bee00caf60b508c6db8d",
+      "candidateTextSha256": "1c4141879f380d40061a5080b893e8feff5eff6b3171b5bd0f32548b8ed65d8b",
+      "verifiedTextSha256": "a42decb8b098cf8be9531712fd8e8ea35f9c36da12454327cea645870d53a354",
+      "restoration": "依官方PDF影像補回文字層遺失的題號；依原PDF影像恢復私用字型分項序號"
+    },
+    {
+      "id": "police-110-psychology-4",
+      "page": 1,
+      "pdfSha256": "f59cb4559cbb98e111304a772eaaa49dc3009e453ff3bee00caf60b508c6db8d",
+      "candidateTextSha256": "dc8f869b0e78af4ac702a992fcb02d089aae5180d5f8c505df0c92ec6e71ef6a",
+      "verifiedTextSha256": "a49c11c63e3f9fc68a1df202cf81237702c1ea4f37c353bf7e6fc6cfb3045eb9",
+      "restoration": "依官方PDF影像補回文字層遺失的題號"
+    },
+    {
+      "id": "police-111-psychology-2",
+      "page": 1,
+      "pdfSha256": "4b5a3db56716799aa7e120616b3317c325c863646266d1d0ab56e79f2e5bdbc1",
+      "candidateTextSha256": "11fe7a62f37d6d0c31aee61f5efe5778640e555fb55cf6f1b90df953d7280116",
+      "verifiedTextSha256": "4f746b64e21ed4c0e16ca7af50511e8ed5679869d0c1f5f023ff9ab94c72d5cb",
+      "restoration": "依原PDF影像恢復私用字型分項序號"
+    },
+    {
+      "id": "police-111-psychology-3",
+      "page": 1,
+      "pdfSha256": "4b5a3db56716799aa7e120616b3317c325c863646266d1d0ab56e79f2e5bdbc1",
+      "candidateTextSha256": "76de749c7af4dc1151d1036bad755d7a4faa19a9d08bc7a9af7a013ca8e395c6",
+      "verifiedTextSha256": "5999494a2647765af222a39b1e141f2e468e539ba2914a19e68bf431a8a6245a",
+      "restoration": "依原PDF影像恢復私用字型分項序號"
+    },
+    {
+      "id": "police-111-psychology-4",
+      "page": 1,
+      "pdfSha256": "4b5a3db56716799aa7e120616b3317c325c863646266d1d0ab56e79f2e5bdbc1",
+      "candidateTextSha256": "b4a3d3f2a29033627b6c63857aab97e9419b2caee441273d6295a5bc6f94252b",
+      "verifiedTextSha256": "3ac46f8d2350a635fc0cb71c0d9ec9aac3643fdc2c9be24854c1134a01bd8714",
+      "restoration": "依原PDF影像恢復私用字型分項序號"
+    },
+    {
+      "id": "police-112-criminal_law_procedure-1",
+      "page": 1,
+      "pdfSha256": "4207105c900185670e4f96e6030b5f2611aea438460b326a60a8c5e4045fb28d",
+      "candidateTextSha256": "a5cecf28d4772b121431bd785e8d594c266f83817d9e7b3762280b1e820dea5e",
+      "verifiedTextSha256": "80092cc32f6d8bf35125de788d0399d3560e3abec8c67037b9e771ad62f5395d",
+      "restoration": "依官方PDF影像補回文字層遺失的題號"
+    },
+    {
+      "id": "police-112-criminal_law_procedure-2",
+      "page": 1,
+      "pdfSha256": "4207105c900185670e4f96e6030b5f2611aea438460b326a60a8c5e4045fb28d",
+      "candidateTextSha256": "b542e16c67f9ab5ba48fe8d6a924beceb82d802174679a63337d25f29733f859",
+      "verifiedTextSha256": "987a0b49ad4d23c550967a34981d1c87a2125ac88598c23524b2c96d5dda4397",
+      "restoration": "依官方PDF影像補回文字層遺失的題號"
+    },
+    {
+      "id": "police-112-criminal_law_procedure-3",
+      "page": 1,
+      "pdfSha256": "4207105c900185670e4f96e6030b5f2611aea438460b326a60a8c5e4045fb28d",
+      "candidateTextSha256": "d3f2d5e3fd89ff811744250fbafdf1e278746740f5af60d8eedeef9865c4ddf6",
+      "verifiedTextSha256": "be997f6ba03d72121f1ab4623fe7e985650fdf8fe31e8749a3d69267142555de",
+      "restoration": "依官方PDF影像補回文字層遺失的題號"
+    },
+    {
+      "id": "police-112-criminal_law_procedure-4",
+      "page": 2,
+      "pdfSha256": "4207105c900185670e4f96e6030b5f2611aea438460b326a60a8c5e4045fb28d",
+      "candidateTextSha256": "1d1e09ab3e259847e47b79959bf7617fbc7108309c803891f624b538ede8580d",
+      "verifiedTextSha256": "8b6f111f70951a6a6cef1ceb6dd987108826daddca5d9da936b38f7ceb0cee5d",
+      "restoration": "剔除第四題前方的原卷頁碼；依官方PDF影像補回文字層遺失的題號"
+    },
+    {
+      "id": "police-113-criminal_law_procedure-1",
+      "page": 1,
+      "pdfSha256": "b661f39f25cc461c0c4f676e97f508636e83b2842fbcbf1924a0293a88b27f76",
+      "candidateTextSha256": "2783b5b6e174abf80c13889a793e63f76b407a5358060269498a57fe2c41a7c0",
+      "verifiedTextSha256": "baddb53b31177b4171341cbed5e133c1b753f1a399de24009c6e15b2f51ec3be",
+      "restoration": "依官方PDF影像補回文字層遺失的題號"
+    },
+    {
+      "id": "police-113-criminal_law_procedure-2",
+      "page": 1,
+      "pdfSha256": "b661f39f25cc461c0c4f676e97f508636e83b2842fbcbf1924a0293a88b27f76",
+      "candidateTextSha256": "75b721067ef7564b521a7b9beafbd3c77c5bb687661df6c4b53110c07c4492ea",
+      "verifiedTextSha256": "b21e3726ef8d03e191dfe88818bb62f180d1dd4f6456dfde429a3a78d4339cce",
+      "restoration": "依官方PDF影像補回文字層遺失的題號"
+    },
+    {
+      "id": "police-113-criminal_law_procedure-3",
+      "page": 1,
+      "pdfSha256": "b661f39f25cc461c0c4f676e97f508636e83b2842fbcbf1924a0293a88b27f76",
+      "candidateTextSha256": "e641d44a6153fd30444ccab89f498d20629bca96954a09e2dc88ba157b71173e",
+      "verifiedTextSha256": "6b23bd387da76c1c2ddcc6f583b902fd49b610d270e29f862aeac70f5390ae3c",
+      "restoration": "依官方PDF影像補回文字層遺失的題號"
+    },
+    {
+      "id": "police-113-criminal_law_procedure-4",
+      "page": 2,
+      "pdfSha256": "b661f39f25cc461c0c4f676e97f508636e83b2842fbcbf1924a0293a88b27f76",
+      "candidateTextSha256": "e300b1986bd028c2e116adc84789ce9b1e77996e789bebf125daf0c07149ac6f",
+      "verifiedTextSha256": "39b746e44f8db87298a4e44ad864dd8a58718a5f763d73c94e9617a8b2289ebd",
+      "restoration": "剔除第四題前方的原卷頁碼；依官方PDF影像補回文字層遺失的題號"
+    },
+    {
+      "id": "police-114-counseling-1",
+      "page": 1,
+      "pdfSha256": "47de0823b786a9824c18ea609fae2697915d6f89d1b0256298ac3a5956ef8e7c",
+      "candidateTextSha256": "974a7321c1925f6003d9fe72c079ab95b68bcef33a289ca5cf41d768d62eff0c",
+      "verifiedTextSha256": "0ced6fd38d69f0a566013950b280069788fbc0986c5aa6b75b7f84862d8f251f",
+      "restoration": "依原PDF影像恢復私用字型分項序號"
+    },
+    {
+      "id": "police-114-counseling-2",
+      "page": 1,
+      "pdfSha256": "47de0823b786a9824c18ea609fae2697915d6f89d1b0256298ac3a5956ef8e7c",
+      "candidateTextSha256": "2d0503a60dc4045dba635770b87bfe3084028a400511ad35ef7db84bc306d5f5",
+      "verifiedTextSha256": "3c1ebe0bc3f03186cc6f2eab2b6f46564612b5c531f6d707ecf4128e2040f86a",
+      "restoration": "依原PDF影像恢復私用字型分項序號"
+    },
+    {
+      "id": "police-114-counseling-3",
+      "page": 1,
+      "pdfSha256": "47de0823b786a9824c18ea609fae2697915d6f89d1b0256298ac3a5956ef8e7c",
+      "candidateTextSha256": "8b2170a8853b9e8b6615caedb94f6ba9b4f561ba9a786624441fcab2d873ee67",
+      "verifiedTextSha256": "0f5ba9c8e6aee0b6e4c367a284f32e61c78fed8a3e1f38488b8598f5ef8b8ad7",
+      "restoration": "依原PDF影像恢復私用字型分項序號"
+    },
+    {
+      "id": "police-114-counseling-4",
+      "page": 2,
+      "pdfSha256": "47de0823b786a9824c18ea609fae2697915d6f89d1b0256298ac3a5956ef8e7c",
+      "candidateTextSha256": "eea27ecf4a1c174baa75d5e7340fd3130735ffe98aaa2a9554a5c05360d7ca3a",
+      "verifiedTextSha256": "8f3638549b180f6bcc37e0e8c414bc9ffb0fc89b486fae99c3921f342f64710f",
+      "restoration": "依原PDF影像恢復私用字型分項序號"
+    }
+  ],
+  "reviewLimit": "AI source visual/text PDF proof, not a human copy-edit"
+}

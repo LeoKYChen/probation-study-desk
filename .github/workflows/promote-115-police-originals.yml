@@ -1,0 +1,23 @@
+name: Archived police source gate - 115 source-hash promotion
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit-approved-bank-only:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Confirm archived partial import cannot replace consolidated bank
+        run: |
+          node police-exams/tools/approved-loader.test.cjs
+          node police-exams/tools/integration.test.cjs
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          text=Path('police-exams/questions.approved.js').read_text('utf-8')
+          items=json.loads(text.split('window.POLICE_ORIGINAL_QUESTION_BANK = ',1)[1].rsplit(';',1)[0])
+          assert len(items)==127,'Only the consolidated 127-question bank is valid'
+          assert len({q['id'] for q in items})==127
+          print('Archived initial-batch workflow is read-only. No historical partial-bank rewrite.')
+          PY

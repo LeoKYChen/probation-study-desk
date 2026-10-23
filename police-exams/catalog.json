@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "scope": "108–115年警察特考犯罪防治人員預防組四科官方歷屆原題",
+  "years": [
+    {
+      "year": 108,
+      "examCode": "108070",
+      "catalogUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=108070&y=2019"
+    },
+    {
+      "year": 109,
+      "examCode": "109070",
+      "catalogUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=109070&y=2020"
+    },
+    {
+      "year": 110,
+      "examCode": "110070",
+      "catalogUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=110070&y=2021"
+    },
+    {
+      "year": 111,
+      "examCode": "111070",
+      "catalogUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=111070&y=2022"
+    },
+    {
+      "year": 112,
+      "examCode": "112070",
+      "catalogUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=112070&y=2023"
+    },
+    {
+      "year": 113,
+      "examCode": "113060",
+      "catalogUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=113060&y=2024"
+    },
+    {
+      "year": 114,
+      "examCode": "114060",
+      "catalogUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=114060&y=2025"
+    },
+    {
+      "year": 115,
+      "examCode": "115060",
+      "catalogUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=115060&y=2026"
+    }
+  ],
+  "subjects": [
+    {
+      "key": "psychology",
+      "examKind": "general",
+      "examName": "一般警察人員考試",
+      "subject": "心理學",
+      "mappedSubjects": [
+        "心理學"
+      ]
+    },
+    {
+      "key": "counseling",
+      "examKind": "general",
+      "examName": "一般警察人員考試",
+      "subject": "諮商與輔導",
+      "mappedSubjects": [
+        "諮商與輔導"
+      ]
+    },
+    {
+      "key": "criminal_law_procedure",
+      "examKind": "general",
+      "examName": "一般警察人員考試",
+      "subject": "刑法與刑事訴訟法",
+      "mappedSubjects": [
+        "刑法",
+        "刑事訴訟法"
+      ]
+    },
+    {
+      "key": "criminology_prevention",
+      "examKind": "police",
+      "examName": "警察人員考試",
+      "subject": "犯罪學與犯罪預防",
+      "mappedSubjects": [
+        "犯罪學"
+      ]
+    }
+  ],
+  "knownPaperUrls": {
+    "115:psychology": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=401&code=115060&q=1&s=0803&t=Q",
+    "115:counseling": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=402&code=115060&q=1&s=0804&t=Q",
+    "115:criminal_law_procedure": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=402&code=115060&q=1&s=0604&t=Q",
+    "115:criminology_prevention": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=205&code=115060&q=1&s=1102&t=Q",
+    "114:criminal_law_procedure": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114060&q=1&s=0604&t=Q",
+    "114:psychology": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114060&q=1&s=0809&t=Q",
+    "114:counseling": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114060&q=1&s=0810&t=Q",
+    "114:criminology_prevention": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=505&code=114060&q=1&s=1202&t=Q",
+    "113:criminal_law_procedure": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=303&code=113060&q=1&s=0604&t=Q",
+    "113:counseling": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=303&code=113060&q=1&s=0804&t=Q",
+    "113:psychology": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=303&code=113060&q=1&s=0806&t=Q",
+    "113:criminology_prevention": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=505&code=113060&q=1&s=1110&t=Q",
+    "112:criminal_law_procedure": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112070&q=1&s=0901&t=Q",
+    "112:counseling": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112070&q=1&s=1009&t=Q",
+    "112:psychology": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112070&q=1&s=1011&t=Q",
+    "112:criminology_prevention": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=505&code=112070&q=1&s=1410&t=Q",
+    "108:criminal_law_procedure": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=303&code=108070&q=1&s=0901&t=Q",
+    "108:counseling": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=303&code=108070&q=1&s=1008&t=Q",
+    "108:psychology": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=303&code=108070&q=1&s=1010&t=Q",
+    "108:criminology_prevention": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=505&code=108070&q=1&s=1411&t=Q",
+    "109:criminal_law_procedure": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=109070&q=1&s=0801&t=Q",
+    "109:counseling": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=109070&q=1&s=0903&t=Q",
+    "109:psychology": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=109070&q=1&s=0905&t=Q",
+    "109:criminology_prevention": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=505&code=109070&q=1&s=1211&t=Q",
+    "111:criminal_law_procedure": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111070&q=1&s=0901&t=Q",
+    "111:counseling": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111070&q=1&s=1003&t=Q",
+    "111:psychology": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111070&q=1&s=1005&t=Q",
+    "111:criminology_prevention": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=505&code=111070&q=1&s=1310&t=Q",
+    "110:psychology": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=110070&q=1&s=1011&t=Q",
+    "110:counseling": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=110070&q=1&s=1009&t=Q",
+    "110:criminal_law_procedure": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=110070&q=1&s=0901&t=Q",
+    "110:criminology_prevention": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=505&code=110070&q=1&s=1410&t=Q"
+  },
+  "catalogueAudit": {
+    "source": "official MOEX examination search listing and PDF header checks",
+    "status": "all 32 source PDFs located; individual question verification staged",
+    "updatedAt": "2026-10-23",
+    "questionCountsUnreviewedUntilApproved": true
+  }
+}

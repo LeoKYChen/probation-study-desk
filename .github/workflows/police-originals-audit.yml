@@ -1,0 +1,93 @@
+name: Police original past papers audit (108-115)
+on:
+  workflow_dispatch:
+    inputs:
+      year:
+        description: "Limit to one ROC year; leave empty for all 108-115"
+        required: false
+        type: string
+  push:
+    branches:
+      - feat/police-past-papers-108-115-originals
+    paths:
+      - 'police-exams/catalog.json'
+      - 'police-exams/tools/**'
+      - '.github/workflows/police-originals-audit.yml'
+permissions:
+  contents: read
+jobs:
+  collect-audit-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 24
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install extraction libraries
+        run: python -m pip install --disable-pip-version-check 'requests>=2.32,<3' 'beautifulsoup4>=4.12,<5' 'pymupdf>=1.24,<2'
+      - name: Unit tests
+        run: python -m unittest discover -s police-exams/tools -p 'test_*.py' -v
+      - name: Frontend original-only loader tests
+        run: node police-exams/tools/approved-loader.test.cjs
+      - name: Existing practice features integration test
+        run: node police-exams/tools/integration.test.cjs
+      - name: Test official PDF fingerprint verification gates
+        run: node police-exams/tools/verify_official_pdf_hashes.test.cjs
+      - name: Collect only official PDFs to review candidates
+        shell: bash
+        run: |
+          if [ -n "${{ inputs.year }}" ]; then
+            python police-exams/tools/collect_originals.py --year "${{ inputs.year }}" --out police-exams/output
+          else
+            python police-exams/tools/collect_originals.py --out police-exams/output
+          fi
+      - name: Compare freshly downloaded PDF SHA256 with 127 approved original questions
+        shell: bash
+        run: |
+          if [ -n "${{ inputs.year }}" ]; then
+            node police-exams/tools/verify_official_pdf_hashes.cjs police-exams/output/audit.json --year "${{ inputs.year }}"
+          else
+            node police-exams/tools/verify_official_pdf_hashes.cjs police-exams/output/audit.json
+          fi
+      - name: Diagnostic official catalogue structure
+        shell: bash
+        run: |
+          python - <<'PY'
+          import requests, json, bs4
+          rows=[]
+          for y,code in [(108,'108070'),(112,'112070'),(114,'114060'),(115,'115060')]:
+            u=f'https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e={code}&y={y+1911}'
+            try:
+              r=requests.get(u,timeout=20)
+              r.encoding=r.apparent_encoding
+              soup=bs4.BeautifulSoup(r.text,'html.parser')
+              candidates=soup.find_all(string=lambda v:bool(v and '犯罪防治人員' in str(v)))
+              sample=[]
+              for candidate in candidates[:6]:
+                p=candidate.parent
+                parents=[]
+                for ancestor in [p,*list(p.parents)[:4]]:
+                  parents.append({'tag':ancestor.name,'class':ancestor.get('class'),'id':ancestor.get('id'),
+                                  'text':ancestor.get_text(' ',strip=True)[:220],
+                                  'anchors':[{'title':x.get_text(' ',strip=True),'url':x.get('href','')[:200]} for x in ancestor.find_all('a',limit=4)]})
+                sample.append(parents)
+              rows.append({'year':y,'code':r.status_code,'candidateCount':len(candidates),'candidates':sample})
+            except Exception as e:rows.append({'year':y,'error':repr(e)})
+          from pathlib import Path
+          Path('police-exams/output').mkdir(exist_ok=True,parents=True)
+          Path('police-exams/output/catalog-diagnostic.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2),encoding='utf-8')
+          print('Wrote diagnostic catalogue structure.')
+          PY
+      - name: Upload candidate questions and audit for human verification
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: police-past-papers-candidates-${{ github.run_id }}
+          path: police-exams/output/
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Never publish unreviewed text
+        run: |
+          test ! -f police-exams/questions.approved.js || grep -q 'POLICE_ORIGINAL_QUESTION_BANK' police-exams/questions.approved.js
+          echo "Audit outputs are artifacts only. No auto-commit, deployment, or publication."
