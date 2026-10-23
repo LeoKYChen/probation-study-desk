@@ -39,6 +39,14 @@
 .monthly-pending[hidden]{display:none!important}.monthly-pending>div{flex:1;min-width:260px}.monthly-pending h2{font-size:19px;color:#253e56;margin:0 0 6px}.monthly-pending p{font-size:13px;line-height:1.6;color:#50647d;margin:5px 0}.monthly-pending label{font-size:13px;color:#344d63;font-weight:700}.monthly-pending select{min-height:40px;border:1px solid #b4c2d0;border-radius:8px;padding:8px;background:white;color:#273f50}.review-flag{margin:0 13px 14px;font-size:12px;line-height:1.6;color:#795a38;padding:10px;background:#fff7e9;border-radius:8px;border:1px solid #eddcc4}
 @media(max-width:680px){.monthly-pending{padding:14px}.monthly-pending select{width:100%}}
 
+/* Daily backup actions: four equal desktop cells, two balanced rows on phones. */
+.backup-panel .backup-actions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;align-items:stretch;width:100%}
+.backup-panel .backup-actions>button,.backup-panel .backup-actions>a{display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:100%;min-width:0;min-height:70px;margin:0;padding:11px 8px;border:1px solid var(--line,#c8d4df);border-radius:9px;text-align:center;text-decoration:none;color:var(--green,#315b7c);font-size:13px;font-weight:650;line-height:1.4;white-space:normal;overflow-wrap:anywhere;background:#f8fbfd}
+.backup-panel .backup-actions>.danger{border-color:#bd8480;color:#a3473d;background:#fff6f3}
+.backup-panel .backup-status{flex:0 0 100%;width:100%;max-width:none;margin:0;color:#375d76;font-size:13px;line-height:1.65}
+.backup-panel .backup-status.error{color:#a3473d}
+@media(max-width:680px){.backup-panel .backup-actions{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.backup-panel .backup-actions>button,.backup-panel .backup-actions>a{min-height:82px;padding:12px 7px;font-size:clamp(12px,3.5vw,14px)}}
+
 /* Mobile: keep both essay-timer actions the same width without wrapping text. */
 @media (max-width:680px){
   .essay-timer-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;width:100%;min-width:0}
