@@ -8,7 +8,7 @@ function mock(seed={},opts={}){
  const map=new Map(Object.entries(seed)),writes=[];
  return {map,writes,getItem(k){if(opts.readFail)throw Error('read denied');return map.has(k)?map.get(k):null},
  setItem(k,v){if(opts.failKey===k)throw Error('quota denied');map.set(k,String(v));writes.push(k)},
- removeItem(k){map.delete(k)}};
+ removeItem(k){if(opts.removeFailKey===k)throw Error('remove denied');map.delete(k)}};
 }
 const stringify=JSON.stringify;
 function env(s){return{format:core.FORMAT,schemaVersion:1,exportedAt:'2026-10-17T00:00:00.000Z',sourceOrigin:'https://other-origin.test',data:s}}
@@ -110,3 +110,72 @@ assert.equal(JSON.parse(promptStorage.getItem(promptKey)).entries[0].text,rule.t
 assert.equal(core.collect(promptStorage,'https://test').data[promptKey],promptStorage.getItem(promptKey));
 assert.throws(()=>core.validate(env({[promptKey]:prompts([rule,rule])})),/重複/);
 console.log('PASS custom AI rules: complete backup, merge distinct scopes, retain conflicting versions');
+
+function clearOnlyLearningProgress(){
+ const lectureKey='psd-lecture-planner-v1',countdown='psd-home-exam-countdown-v1',promptKey='psd-ai-custom-rules-v1';
+ const lecture={schema:1,settings:{weekdayMinutes:60,weekendMinutes:240,reserveMinutes:30},
+  courses:[{id:'a',name:'心理學',subject:'心理學'}],
+  lessons:[{id:'a_1',courseId:'a',title:'第1堂',durationMinutes:120,watchedMinutes:45}],plan:{previous:'test'}};
+ const words={schema:en,days:{Monday:{done:true}},completed:{'test':true},excluded:{'skip':true},wordDays:{today:5},wordProgress:{card:1},customWords:{keep:'自訂單字'}};
+ const custom=JSON.stringify({format:'probation-ai-prompt-settings',schemaVersion:1,entries:[{mode:'full',subject:'',text:'保留'}]});
+ const initial={
+  [key]:sessions({'2026-10-23':{date:'2026-10-23',notes:['進度'],elapsed:10}}),
+  'probation-study-desk-v3':JSON.stringify({'Q-1':{text:'作答'}}),
+  'probation-study-desk-v2':JSON.stringify({'Q-old':{text:'舊答案'}}),
+  'probation-study-desk-v24':JSON.stringify({'Q-other':{text:'內容'}}),
+  'probation-daily-github:records:v1':JSON.stringify({'daily':{text:'每天答案'}}),
+  [essay]:common({'draft':{text:'作文'}}),
+  [en]:JSON.stringify(words),
+  [lectureKey]:JSON.stringify(lecture),
+  'jj-read':JSON.stringify(['post']),
+  [core.CONFLICT_KEY]:JSON.stringify({schema:core.CONFLICT_KEY,entries:[]}),
+  [promptKey]:custom,
+  [countdown]:JSON.stringify({date:'2027-08-01'}),
+  'jj-font':'18',
+  'unrelated-site-key':'keep-untouched'
+ };
+ const storage=mock(initial),original=core.collect(storage,'https://original.example');
+ const preview=core.previewClear(storage);
+ assert.equal(storage.writes.length,0,'preview must not write');
+ assert(preview.items.some(x=>x.key===lectureKey));
+ assert(preview.items.some(x=>x.key===core.CONFLICT_KEY));
+ const count=core.applyClear(storage,preview);
+ assert.equal(count,preview.items.length);
+ for(const k of [key,'probation-study-desk-v3','probation-study-desk-v2','probation-study-desk-v24','probation-daily-github:records:v1','jj-read',core.CONFLICT_KEY])
+  assert.equal(storage.getItem(k),null,k+' should be absent');
+ const keptLecture=JSON.parse(storage.getItem(lectureKey));
+ assert.equal(keptLecture.lessons[0].watchedMinutes,0);
+ assert.equal(keptLecture.plan,null);
+ assert.deepEqual(keptLecture.courses,lecture.courses);
+ assert.deepEqual(keptLecture.settings,lecture.settings);
+ const keptWords=JSON.parse(storage.getItem(en));
+ assert.deepEqual(keptWords.customWords,words.customWords);
+ assert.deepEqual(keptWords.excluded,words.excluded);
+ assert.deepEqual(keptWords.days,{});
+ assert.equal(JSON.parse(storage.getItem(essay)).drafts.draft,undefined);
+ assert.equal(storage.getItem(promptKey),custom);
+ assert.equal(storage.getItem(countdown),initial[countdown]);
+ assert.equal(storage.getItem('jj-font'),'18');
+ assert.equal(storage.getItem('unrelated-site-key'),'keep-untouched');
+ const restored=core.plan(core.storageSnapshot(storage),original);
+ core.apply(storage,restored);
+ assert.equal(JSON.parse(storage.getItem(key)).sessions['2026-10-23'].elapsed,10);
+ assert.equal(JSON.parse(storage.getItem('probation-study-desk-v3'))['Q-1'].text,'作答');
+ assert.equal(JSON.parse(storage.getItem(en)).completed.test,true);
+}
+function clearRejectsStaleAndRollsBack(){
+ const s=mock({'probation-study-desk-v24':JSON.stringify({one:{x:1}}),'jj-read':JSON.stringify(['a'])});
+ const plan=core.previewClear(s);
+ s.setItem('jj-read',JSON.stringify(['new']));
+ assert.throws(()=>core.applyClear(s,plan),/資料已變更/);
+ assert(s.getItem('probation-study-desk-v24')!==null);
+ const broken=mock({'probation-study-desk-v24':JSON.stringify({one:{x:1}}),'jj-read':JSON.stringify(['a'])},{removeFailKey:'jj-read'});
+ const baseline=core.storageSnapshot(broken);
+ assert.throws(()=>core.applyClear(broken,core.previewClear(broken)),/恢復|備份/);
+ assert.deepEqual(core.storageSnapshot(broken),baseline);
+ const empty=mock({});
+ assert.equal(core.previewClear(empty).items.length,0);
+ assert.equal(core.applyClear(empty,core.previewClear(empty)),0);
+}
+clearOnlyLearningProgress();clearRejectsStaleAndRollsBack();
+console.log('PASS safe local clearing: explicit scope, preserved settings, backup restoration, stale guard and rollback');
