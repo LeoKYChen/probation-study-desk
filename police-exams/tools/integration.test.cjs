@@ -81,4 +81,45 @@ for(const a of [...requiredPoliceFiles,'dual-ai-bridge.js']){
  assert(requiredMirror.includes('"'+a+'"'),'Cloudflare mirror must enforce the required file: '+a);
 }
 assert.equal(assets.length,new Set(assets).size);
-console.log('PASS: 426 legacy preserved + 127 PDF-source-reviewed police originals; all original practice controls retained.');
+// Study 30-minute practice must now use the SAME 553 unique question IDs as v2.5 and the study desk.
+const professionalPage=read('professional/index.html');
+for(const asset of ['../police-exams/questions.approved.js','../police-exams/approved-loader.js','./question-sources.js']){
+ assert(professionalPage.includes('<script src="'+asset+'" defer></script>'),'daily professional module missing '+asset);
+}
+assert(professionalPage.indexOf('approved-loader.js')<professionalPage.indexOf('question-sources.js'),'only loader-accepted police originals may enter 30-minute bank');
+const professionalDoc={readyState:'loading',addEventListener(){}};
+const professionalVM={window:windows,document:professionalDoc};
+vm.runInNewContext(read('professional/question-sources.js'),professionalVM,{filename:'professional/question-sources.js'});
+const total=windows.Study30QuestionSources;
+assert.equal(total.total,553,'professional timed exercise must load 553 original questions');
+assert.equal(total.policeCount,127);
+assert.equal(total.legacyTotal,426);
+assert.equal(total.complete,true);
+assert.equal(new Set(total.all.map(q=>q.id)).size,553,'no duplicate IDs in 30-minute study bank');
+for(const q of windows.QUESTION_BANK)assert(total.all.some(row=>row.id===q.id),'old question ID lost: '+q.id);
+vm.runInNewContext(read('professional/practice-review.js'),professionalVM,{filename:'professional/practice-review.js'});
+vm.runInNewContext(read('professional/practice-session.js'),professionalVM,{filename:'professional/practice-session.js'});
+const matcher=windows.Study30Planner.candidateSubject,review=windows.Study30Review;
+assert.equal(typeof matcher,'function');
+const police=windows.POLICE_ORIGINAL_QUESTION_BANK;
+const expectedMapped=new Map([['心理學',32],['諮商與輔導',32],['犯罪學',32],['刑法',31],['刑事訴訟法',31]]);
+for(const [subject,num] of expectedMapped){
+ const selected=police.filter(q=>matcher(q,subject));
+ assert.equal(selected.length,num,'incorrect mapped police questions for '+subject);
+}
+const mixedLaw=police.find(q=>q.officialSubject==='刑法與刑事訴訟法');
+assert(mixedLaw&&matcher(mixedLaw,'刑法')&&matcher(mixedLaw,'刑事訴訟法'));
+assert(!matcher(mixedLaw,'保安處分執行法'),'unrelated subject must not receive mixed law question');
+const record={'2026-10-20':{date:'2026-10-20',practiceRatings:{law:{
+ questionId:mixedLaw.id,subject:'刑法',rating:'review',errorCause:'尚需練習',updatedAt:'2026-10-20T01:00:00Z'
+}}}};
+const reviewModel=review.model(record,total.all,'2026-10-23');
+assert.equal(reviewModel.due.length,1,'cross-subject rated original must be accepted');
+assert.equal(reviewModel.due[0].id,mixedLaw.id);
+for(const subject of ['刑法','刑事訴訟法'])assert.equal(review.chooseDue(record,total.all,'2026-10-23',subject,false),mixedLaw.id,'cross-subject spaced repetition missing '+subject);
+assert.equal(review.chooseDue(record,total.all,'2026-10-23','心理學',false),null);
+const nestedWorker=read('professional/sw.js');
+for(const asset of ['../police-exams/questions.approved.js','../police-exams/approved-loader.js'])assert(nestedWorker.includes('"'+asset+'"'),'offline practice must include '+asset);
+assert(nestedWorker.includes('553q'),'PWA cache version must rotate on 553-question rollout');
+
+console.log('PASS: 426 legacy preserved + 127 PDF-source-reviewed police originals; professional 30-minute review now includes all 553 question IDs.');
