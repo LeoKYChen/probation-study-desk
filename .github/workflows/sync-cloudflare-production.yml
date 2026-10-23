@@ -32,6 +32,8 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: '24'
+      - name: Audit first-phase duplicate cleanup and required assets
+        run: python3 scripts/audit-repository.py --check-phase1 > /tmp/repository-cleanup-audit.json
       - name: Build and check the identical static website
         run: |
           python3 verification/check-cloudflare-release.py
