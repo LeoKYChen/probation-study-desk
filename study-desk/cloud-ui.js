@@ -126,6 +126,13 @@ export class CloudDeskUI {
  scheduleSync(ms=1200) {
   if(!this.active || !this.transport)return;
   clearTimeout(this.delay);
+  if(!navigator.onLine){
+   this.getStore().read().then(state=>{
+    if(this.active && !navigator.onLine)
+     this.status('離線中：已保存在此裝置，待上傳 '+Object.keys(state.outbox).length+'筆。連線恢復後會嘗試同步。');
+   }).catch(()=>{});
+   return;
+  }
   this.delay=setTimeout(()=>{
    this.delay=null;
    if(navigator.onLine)this.syncNow(false).catch(()=>{});
@@ -161,6 +168,8 @@ export class CloudDeskUI {
  }
  async copyGuest() {
   if(!this.active)throw Error('請先登入雲端帳號');
+  if(this.running)await this.running;
+  await this.beforeSwitch();
   const source=await this.guestState(),account=await this.getStore().read();
   const incoming={};
   for(const [id,rec] of Object.entries(source.records)) {
