@@ -1,7 +1,10 @@
-/* Offline-first, metadata-only journal of local learning writes.
- * Never stores an answer, AI response, auth token or raw record in the queue.
- * The persisted localStorage/IndexedDB data is the source of truth, NOT this
- * best-effort queue. This module does not import Firebase or make requests.
+/* Metadata-only, offline-first journal of local learning writes.
+ * Each open page owns a DISTINCT localStorage slot per module, so simultaneous
+ * browser tabs never read/modify/write the same queue key. No answer, note,
+ * auth token, raw record or Firebase SDK is stored/imported here.
+ *
+ * This is a best-effort notification channel, NOT an atomic upload queue.
+ * SHA-256 comparison against actual local data remains authoritative.
  */
 (function(root,factory){
  'use strict';
@@ -10,10 +13,9 @@
  if(root&&root.document)root.PSDLocalJournal=api.browser(root);
 })(typeof window!=='undefined'?window:globalThis,function(){
  'use strict';
- const PREFIX='psd-firebase-local-journal-v1:',
+ const PREFIX='psd-firebase-local-journal-v2:',
   BOUND='psd-firebase-local-data-bound-v1',
-  RESTORE='psd-firebase-restore-login-v1',
-  MAX_EVENTS=16;
+  RESTORE='psd-firebase-restore-login-v1';
  const SUPPORTED=new Set([
   'psd-ai-custom-rules-v1',
   'probation-study30-v251:v1',
@@ -37,51 +39,72 @@
   return v&&typeof v.uid==='string'&&/^[a-zA-Z0-9_-]{5,160}$/.test(v.uid)
     &&typeof v.projectId==='string'&&/^[a-z0-9][a-z0-9-]{2,100}$/.test(v.projectId)?v:null;
  }
- function keyOf(a){return PREFIX+a.projectId+':'+a.uid}
- function read(storage,a) {
-  try{
-   const v=JSON.parse(storage.getItem(keyOf(a))||'null');
-   if(v?.version!==1||!v.entries||typeof v.entries!=='object'||Array.isArray(v.entries))
-    return Object.create(null);
-   const result=Object.create(null);
-   for(const [k,token] of Object.entries(v.entries))
-    if(SUPPORTED.has(k)&&typeof token==='string'&&token.length<=110)result[k]=token;
-   return result;
-  }catch{return Object.create(null)}
- }
+ function keyOf(a){return PREFIX+a.projectId+':'+a.uid+':'}
+ const validSlot=/^[a-zA-Z0-9_-]{6,110}$/;
  function create(storage,{token=()=>Math.random().toString(36).slice(2)+Date.now().toString(36),
+  tabId='tab-'+Math.random().toString(36).slice(2)+Date.now().toString(36),
   signal=()=>{}}={}) {
+  if(!validSlot.test(tabId))throw Error('無效的本機分頁標記');
+  function slotKey(a,module){return keyOf(a)+encodeURIComponent(module)+':'+tabId;}
   function snapshot(){
-   const a=account(storage);
-   return a?{key:keyOf(a),entries:read(storage,a)}:null;
+   const a=account(storage);if(!a)return null;
+   const prefix=keyOf(a),entries=Object.create(null),slots=[];
+   try{
+    // enumerate existing *individual* slots. Avoid a shared JSON index whose
+    // updates can be lost when two independent tabs write at the same time.
+    for(let i=0;i<storage.length;i++){
+     const key=storage.key(i);
+     if(typeof key!=='string'||!key.startsWith(prefix))continue;
+     const remainder=key.slice(prefix.length),colon=remainder.lastIndexOf(':');
+     if(colon<1)continue;
+     const suffix=remainder.slice(colon+1);
+     if(!validSlot.test(suffix))continue;
+     let module;
+     try{module=decodeURIComponent(remainder.slice(0,colon))}catch{continue}
+     if(!SUPPORTED.has(module)||encodeURIComponent(module)!==remainder.slice(0,colon))continue;
+     let record;
+     try{record=JSON.parse(storage.getItem(key)||'null')}catch{continue}
+     if(record?.version!==2||record.module!==module||
+       typeof record.token!=='string'||record.token.length>110||!record.token)continue;
+     entries[module]=record.token;
+     slots.push({key,module,token:record.token});
+    }
+    return {key:prefix,entries,slots};
+   }catch{
+    // If the browser blocks storage enumeration, do not claim work was synced.
+    return {key:prefix,entries:Object.create(null),slots:[],unavailable:true};
+   }
   }
-  function note(module) {
+  function note(module){
    if(!SUPPORTED.has(module))return false;
    const a=account(storage);if(!a)return false;
    try{
-    const entries=read(storage,a);
     const id=String(token());
     if(!id||id.length>110)return false;
-    entries[module]=id;
-    const items=Object.entries(entries);
-    if(items.length>MAX_EVENTS)for(const [k] of items.slice(0,items.length-MAX_EVENTS))delete entries[k];
-    storage.setItem(keyOf(a),JSON.stringify({version:1,entries}));
+    storage.setItem(slotKey(a,module),JSON.stringify({version:2,module,token:id}));
     signal();return true;
    }catch{return false}
   }
   function acknowledge(previous){
-   const current=snapshot();
-   if(!current||!previous||previous.key!==current.key)return false;
-   try{
-    const entries=current.entries;
-    let changed=false;
-    for(const [k,old] of Object.entries(previous.entries||{})){
-     if(own(entries,k)&&entries[k]===old){delete entries[k];changed=true;}
-    }
-    if(changed)storage.setItem(current.key,JSON.stringify({version:1,entries}));
-    if(changed)signal();
-    return changed;
-   }catch{return false}
+   const a=account(storage);
+   if(!a||!previous||previous.key!==keyOf(a)||previous.unavailable)return false;
+   if(!Array.isArray(previous.slots))return false;
+   let changed=false;
+   for(const row of previous.slots){
+    if(!row||typeof row.key!=='string'||typeof row.module!=='string'||typeof row.token!=='string'||
+       !SUPPORTED.has(row.module)||!row.key.startsWith(keyOf(a))||
+       row.key!==keyOf(a)+encodeURIComponent(row.module)+':'+row.key.slice(row.key.lastIndexOf(':')+1))
+      continue;
+    try{
+     const record=JSON.parse(storage.getItem(row.key)||'null');
+     if(record?.version===2&&record.module===row.module&&record.token===row.token){
+      storage.removeItem(row.key);
+      changed=true;
+     }
+    }catch{}
+   }
+   if(changed)signal();
+   return changed;
   }
   return {note,snapshot,acknowledge};
  }
@@ -91,11 +114,11 @@
    try{root.dispatchEvent(new Event('psd:local-change'))}catch{}
    try{
     if(!channel&&typeof root.BroadcastChannel==='function')channel=new root.BroadcastChannel('psd-learning-changes-v1');
-    channel?.postMessage({type:'changed'}); // No user data or keys.
+    channel?.postMessage({type:'changed'}); // Never send identifiers or content.
    }catch{}
   }
-  const api=create(root.localStorage,{token:()=>root.crypto?.randomUUID?.()||Math.random().toString(36).slice(2),signal});
-  return api;
+  const secureId=()=>root.crypto?.randomUUID?.()||'tab-'+Math.random().toString(36).slice(2)+Date.now().toString(36);
+  return create(root.localStorage,{tabId:secureId(),token:secureId,signal});
  }
  return {SUPPORTED,account,keyOf,create,browser};
 });
