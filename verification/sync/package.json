@@ -1,8 +1,16 @@
 {
- "name":"psd-sync-verification",
- "private":true,
- "type":"module",
- "scripts":{"test":"node --test core.test.mjs planning.test.mjs sql.test.mjs subjects.test.mjs","test:browser":"node local-browser.cjs"},
- "devDependencies":{"@electric-sql/pglite":"0.5.11","playwright":"1.62.1"},
- "engines":{"node":">=24"}
+  "name": "psd-sync-verification",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test core.test.mjs planning.test.mjs sql.test.mjs subjects.test.mjs firebase.test.mjs",
+    "test:browser": "node local-browser.cjs"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.11",
+    "playwright": "1.62.1"
+  },
+  "engines": {
+    "node": ">=24"
+  }
 }
