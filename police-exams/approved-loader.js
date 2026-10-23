@@ -22,7 +22,7 @@
       !Number.isInteger(q.questionNo) || q.questionNo<1 ? 'invalid number' :
       typeof q.body!=='string' || q.body.length<20 ? 'missing original body' :
       typeof q.sourceUrl!=='string' || !/^https:\/\/wwwq\.moex\.gov\.tw\/exam\/wHandExamQandA_File\.ashx\?/.test(q.sourceUrl) ? 'invalid official URL' :
-      q.sourceKind!=='official-original' || q.verified!==true ? 'not manually verified' :
+      q.sourceKind!=='official-original' || q.verified!==true ? 'not source-verified' :
       !/^[0-9a-f]{64}$/.test(q.paperSha256||'') || !/^[0-9a-f]{64}$/.test(q.textSha256||'') ? 'missing evidence hash' :
       currentIds.has(q.id) || seen.has(q.id) ? 'duplicate ID' : null;
     if(reason){rejected.push({id:q?.id||'(unknown)',reason});continue;}
