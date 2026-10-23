@@ -27,6 +27,7 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   'export async function openFirebase(config) {',
   ' return {',
   '  projectId:config.projectId,',
+  "  user(){return {uid:'synthetic-user-id',email:'study@example.test'}},",
   "  async login(){return {uid:'synthetic-user-id',email:'study@example.test'}},",
   '  async signOut(){},',
   "  adapter(type='modules'){return {",
@@ -128,6 +129,11 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   await preview(a);await apply(a);
   assert.deepEqual(await a.evaluate(()=>JSON.parse(localStorage.getItem('jj-read'))),['手機初稿','電腦新增']);
   assert.equal(await readDesk(a),'電腦完成的訂正');
+  const writesBeforeReload=trace.length;
+  await a.reload();
+  await a.waitForFunction(()=>document.querySelector('#firebase-user').textContent.includes('study@example.test'));
+  assert.equal(trace.length,writesBeforeReload,'restoring a prior login must not upload without explicit consent');
+  assert.equal(await readDesk(a),'電腦完成的訂正','reloading an opted-in account cannot erase local answer');
   assert.equal(outside.length,0,'synthetic transport never contacts real Firebase');
   assert.deepEqual(errors,[]);
   console.log('PASS Firebase whole-site UI: consent, both JSON backups, 15 modules + IndexedDB, two devices');
