@@ -32,6 +32,7 @@ async function openNamespace(name,{cloud=false}={}) {
  $('editor').hidden=true;$('question-body').textContent='從今日任務或手動選題開始。';$('practice-title').textContent='作答與訂正';$('source-label').textContent='';
  $('account').textContent=cloud?'帳號書桌｜資料先存此裝置':'此裝置的本機書桌';
  $('clear-learning').disabled=cloud;
+ $('refresh-lectures').textContent=cloud?'匯入此裝置函授進度至帳號（需確認）':'更新函授進度並保存備份快照';
  $('clear-learning').title=cloud?'帳號同步中禁止直接清除，避免遠端資料重新出現。可先登出，再處理本機資料。':'';
  await loadLectureProgress();await refresh(); renderPreferences();renderQuestionOptions();report(cloud?'帳號書桌已開啟；作答先存本機，再與雲端同步。':'本機書桌已開啟，資料保存在此瀏覽器。');
 }
