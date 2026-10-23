@@ -2,7 +2,9 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {createRequire} from 'node:module';
 import {prepare,commit,assertFits} from '../../cloud-sync/whole-site-core.mjs';
-const require=createRequire(import.meta.url),core=require('../../backup/unified-core.js');
+const require=createRequire(import.meta.url);
+require('../../backup/unified-core.js');
+const core=globalThis.PSDUnifiedBackup;
 function storage(seed={}){
  const map=new Map(Object.entries(seed));
  return {getItem:k=>map.has(k)?map.get(k):null,setItem:(k,v)=>map.set(k,String(v)),
