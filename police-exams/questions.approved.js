@@ -1,4 +1,4 @@
-/* Only PDF-source-reviewed official exam questions. */
+/* Source-verified official MOEX original questions. */
 window.POLICE_ORIGINAL_QUESTION_BANK = [
   {
     "id": "police-108-criminal_law_procedure-1",
@@ -134,6 +134,150 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
+    }
+  },
+  {
+    "id": "police-108-psychology-1",
+    "year": 108,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "心理學",
+    "subject": "心理學",
+    "mappedSubjects": [
+      "心理學"
+    ],
+    "questionNo": 1,
+    "title": "108年｜心理學｜第1題",
+    "body": "一、請解釋下面專有詞彙在心理學中的意涵：（每小題5 分，共25 分）\n   ㈠鏡像神經元（mirror neurons）\n   ㈡坎-巴二氏理論（Cannon-Bard theory）\n   ㈢組集作用（chunking）\n   ㈣社會性散漫（social loafing）\n   ㈤效標效度（criterion validity）",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=303&code=108070&q=1&s=1010&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "ecbd21789b5a18d83d519e34b1b220333371b4ae7c9d7e8ae00b18095396a6dc",
+    "textSha256": "6b78f580b576b3ae5c3a8e6cd54ae71c91c107b1e5357c29b8833b15f02802be",
+    "guidanceNote": "考選部原題：依PDF視覺與文字層恢復缺字、跨頁雜訊。AI輔助核稿，非官方標準答案。",
+    "officialPoints": 25,
+    "questionType": "申論題",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部PDF版面及文字層來源核對；非真人審稿）",
+      "checkedAt": "2026-10-23",
+      "page": 1,
+      "reviewMethod": "依原PDF影像恢復五個圖片形式的小題序號；PDF同頁題幹逐字比對與雙SHA256確認",
+      "basis": "唯考選部原卷為題幹依據；LawPlayer僅為檢索線索"
+    }
+  },
+  {
+    "id": "police-108-psychology-2",
+    "year": 108,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "心理學",
+    "subject": "心理學",
+    "mappedSubjects": [
+      "心理學"
+    ],
+    "questionNo": 2,
+    "title": "108年｜心理學｜第2題",
+    "body": "二、由上而下的處理歷程（top-down processing）與由下而上的處理歷程\n    （bottom-up processing）有何不同？請分別就物體辨識、工作記憶及語\n  言理解等心理範疇，舉例說明之。（25 分）",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=303&code=108070&q=1&s=1010&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "ecbd21789b5a18d83d519e34b1b220333371b4ae7c9d7e8ae00b18095396a6dc",
+    "textSha256": "8e8db58d203ead7e3fe2d10d4ba72dfbe549f5d1db6c1bfa64c10f594a75297b",
+    "guidanceNote": "考選部原題：依PDF視覺與文字層恢復缺字、跨頁雜訊。AI輔助核稿，非官方標準答案。",
+    "officialPoints": 25,
+    "questionType": "申論題",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部PDF版面及文字層來源核對；非真人審稿）",
+      "checkedAt": "2026-10-23",
+      "page": 1,
+      "reviewMethod": "跨頁官方PDF版面與原題號核對；PDF同頁題幹逐字比對與雙SHA256確認",
+      "basis": "唯考選部原卷為題幹依據；LawPlayer僅為檢索線索"
+    }
+  },
+  {
+    "id": "police-108-psychology-3",
+    "year": 108,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "心理學",
+    "subject": "心理學",
+    "mappedSubjects": [
+      "心理學"
+    ],
+    "questionNo": 3,
+    "title": "108年｜心理學｜第3題",
+    "body": "三、請闡述運用處罰（punishment）防止兒童行為不當的學習原理、使用處\n  罰時應注意的事項、以及處罰可能造成的負面影響。（25 分）",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=303&code=108070&q=1&s=1010&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "ecbd21789b5a18d83d519e34b1b220333371b4ae7c9d7e8ae00b18095396a6dc",
+    "textSha256": "256b9597bd3709daa4b0822d827d7a71a5af2848f76b89a75d372885a8558412",
+    "guidanceNote": "考選部原題：依PDF視覺與文字層恢復缺字、跨頁雜訊。AI輔助核稿，非官方標準答案。",
+    "officialPoints": 25,
+    "questionType": "申論題",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部PDF版面及文字層來源核對；非真人審稿）",
+      "checkedAt": "2026-10-23",
+      "page": 1,
+      "reviewMethod": "跨頁官方PDF版面與原題號核對；PDF同頁題幹逐字比對與雙SHA256確認",
+      "basis": "唯考選部原卷為題幹依據；LawPlayer僅為檢索線索"
+    }
+  },
+  {
+    "id": "police-108-psychology-4",
+    "year": 108,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "心理學",
+    "subject": "心理學",
+    "mappedSubjects": [
+      "心理學"
+    ],
+    "questionNo": 4,
+    "title": "108年｜心理學｜第4題",
+    "body": "四、請舉例說明情緒對訊息處理、決策判斷、及思考與行動傾向的影響。（25 分）",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=303&code=108070&q=1&s=1010&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "ecbd21789b5a18d83d519e34b1b220333371b4ae7c9d7e8ae00b18095396a6dc",
+    "textSha256": "3fa72198bb76294c7a7f731ca3c2f40ab56ece908d6c09c18eb7f95832370324",
+    "guidanceNote": "考選部原題：依PDF視覺與文字層恢復缺字、跨頁雜訊。AI輔助核稿，非官方標準答案。",
+    "officialPoints": 25,
+    "questionType": "申論題",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部PDF版面及文字層來源核對；非真人審稿）",
+      "checkedAt": "2026-10-23",
+      "page": 1,
+      "reviewMethod": "跨頁官方PDF版面與原題號核對；PDF同頁題幹逐字比對與雙SHA256確認",
+      "basis": "唯考選部原卷為題幹依據；LawPlayer僅為檢索線索"
     }
   },
   {
@@ -900,6 +1044,334 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
     }
   },
   {
+    "id": "police-109-counseling-4",
+    "year": 109,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "諮商與輔導",
+    "subject": "諮商與輔導",
+    "mappedSubjects": [
+      "諮商與輔導"
+    ],
+    "questionNo": 4,
+    "title": "109年｜諮商與輔導｜第4題",
+    "body": "四、請試述下列名詞之意涵：（每小題5 分，共25 分）\n  ㈠貝克所提出的「認知三角」\n  ㈡「初層次同理心」與「高層次同理心」\n  ㈢阿德勒所提出的「家庭星座」與「社會興趣」\n  ㈣家族治療大師Bowen 所提出的「自我分化」\n  ㈤「系統減敏感法」及「洪水法」",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=109070&q=1&s=0903&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "f93f942a4c3794c952d2c139ce506b0090c5f415239c4bd977e3e37bc01725d7",
+    "textSha256": "2409c6d5e1615c617c44395a18f57cd053e0ad9f79d2eff50b1f2141909b4aea",
+    "guidanceNote": "考選部原題：依PDF視覺與文字層恢復缺字、跨頁雜訊。AI輔助核稿，非官方標準答案。",
+    "officialPoints": 25,
+    "questionType": "申論題",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部PDF版面及文字層來源核對；非真人審稿）",
+      "checkedAt": "2026-10-23",
+      "page": 1,
+      "reviewMethod": "依原PDF影像恢復私用字型分項序號；PDF同頁題幹逐字比對與雙SHA256確認",
+      "basis": "唯考選部原卷為題幹依據；LawPlayer僅為檢索線索"
+    }
+  },
+  {
+    "id": "police-110-criminal_law_procedure-1",
+    "year": 110,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "刑法與刑事訴訟法",
+    "subject": "刑法與刑事訴訟法",
+    "mappedSubjects": [
+      "刑法",
+      "刑事訴訟法"
+    ],
+    "questionNo": 1,
+    "title": "110年｜刑法與刑事訴訟法｜第1題",
+    "body": "一、甲女某日獨自於戶外郊遊，行經一個陌生僻靜之處，突然見到A 男在該\n  地形跡鬼祟，頓時心生警覺，立即加快腳步要離開，沒想到A 卻叫住她\n  「不要跑」，甲聞言大驚更是用盡全力快跑，卻見A 從後面追過來，甲於\n  是掏出隨身攜帶的防狼辣椒噴霧，朝A 的臉部噴去，造成A 的臉部皮膚\n  發炎及眼睛結膜炎，但事實上A 是當地地主，只是要告誡甲不要進入其\n  私人土地，試分析甲的行為在刑法上應如何評價。（25 分）",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=110070&q=1&s=0901&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "3b2692c10383cb70c55a6949fb2d24bae2dabf92b0b15a204c4f010a51f5d59f",
+    "textSha256": "51bb0564bd0635e591d108658a856b0cbd2c1223418010d35526caf2cdc4f1a0",
+    "guidanceNote": "考選部原題：依PDF視覺與文字層恢復缺字、跨頁雜訊。AI輔助核稿，非官方標準答案。",
+    "officialPoints": 25,
+    "questionType": "申論題",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部PDF版面及文字層來源核對；非真人審稿）",
+      "checkedAt": "2026-10-23",
+      "page": 1,
+      "reviewMethod": "跨頁官方PDF版面與原題號核對；PDF同頁題幹逐字比對與雙SHA256確認",
+      "basis": "唯考選部原卷為題幹依據；LawPlayer僅為檢索線索"
+    }
+  },
+  {
+    "id": "police-110-criminal_law_procedure-2",
+    "year": 110,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "刑法與刑事訴訟法",
+    "subject": "刑法與刑事訴訟法",
+    "mappedSubjects": [
+      "刑法",
+      "刑事訴訟法"
+    ],
+    "questionNo": 2,
+    "title": "110年｜刑法與刑事訴訟法｜第2題",
+    "body": "二、甲與其父親A 不和已久，離家租屋居住多年，某日收到醫院告知，A 因\n  嚴重中風被送到醫院，但由於甲認為自己已與家中斷絕一切關係，此事\n  與他無關，並未前往醫院，而是選擇置之不理，A 由於中風已達不能自\n  理之程度，且無其他親人，只有鄰居B 熱心協助送醫並經常前來探視，\n  試分析甲之行為在刑法上如何予以評價。（25 分）",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=110070&q=1&s=0901&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "3b2692c10383cb70c55a6949fb2d24bae2dabf92b0b15a204c4f010a51f5d59f",
+    "textSha256": "bc70289eb0a0f5ef6cdc86d8012a552a3c0f182e090a9c57d10ca71023b2fdac",
+    "guidanceNote": "考選部原題：依PDF視覺與文字層恢復缺字、跨頁雜訊。AI輔助核稿，非官方標準答案。",
+    "officialPoints": 25,
+    "questionType": "申論題",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部PDF版面及文字層來源核對；非真人審稿）",
+      "checkedAt": "2026-10-23",
+      "page": 1,
+      "reviewMethod": "跨頁官方PDF版面與原題號核對；PDF同頁題幹逐字比對與雙SHA256確認",
+      "basis": "唯考選部原卷為題幹依據；LawPlayer僅為檢索線索"
+    }
+  },
+  {
+    "id": "police-110-criminal_law_procedure-3",
+    "year": 110,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "刑法與刑事訴訟法",
+    "subject": "刑法與刑事訴訟法",
+    "mappedSubjects": [
+      "刑法",
+      "刑事訴訟法"
+    ],
+    "questionNo": 3,
+    "title": "110年｜刑法與刑事訴訟法｜第3題",
+    "body": "三、甲接獲曾向伊購買毒品的乙的來電，要購買第三級毒品愷他命。甲以現\n  時手上沒貨，且最近警察查緝很緊，不願出貨為由拒絕。乙表示要出比\n  市場行情高三倍的價錢購買，請甲看在老客戶面子上，一定要賣他。甲\n  被乙說動，表示願向別人調貨。雙方約定某日當面交錢交貨。甲聯絡丙，\n  願意以市場行情高兩倍價錢向其調貨，甲因而順利拿到毒品。隨後，甲\n  依約跟乙見面交貨，旋為埋伏員警當場查獲。事實上，乙因持有毒品被\n  員警查獲，受員警指示要配合警方辦案，無論如何一定要將甲約出，乙\n  本無購買毒品之意。甲也不是第一次因毒品案被警查獲。甲被提起公訴。\n  審判時，甲聲請傳喚證人乙到庭對質詰問，法院迭次傳喚、拘提乙無著\n  落，致均未能踐行詰問乙之程序。甲以警方辦案有違法之處及乙未到庭\n  對質詰問為由，請求法院為無罪判決。試問法院應如何判斷甲請求之合\n   法性。（25 分）",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=110070&q=1&s=0901&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "3b2692c10383cb70c55a6949fb2d24bae2dabf92b0b15a204c4f010a51f5d59f",
+    "textSha256": "c2fa8eceeb2d7d4d7092af5b662d00f00412a4f6739fcdacbbb034de9717dd55",
+    "guidanceNote": "考選部原題：依PDF視覺與文字層恢復缺字、跨頁雜訊。AI輔助核稿，非官方標準答案。",
+    "officialPoints": 25,
+    "questionType": "申論題",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部PDF版面及文字層來源核對；非真人審稿）",
+      "checkedAt": "2026-10-23",
+      "page": 1,
+      "reviewMethod": "剔除原PDF跨頁頁碼雜訊；PDF同頁題幹逐字比對與雙SHA256確認",
+      "basis": "唯考選部原卷為題幹依據；LawPlayer僅為檢索線索"
+    }
+  },
+  {
+    "id": "police-110-criminal_law_procedure-4",
+    "year": 110,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "刑法與刑事訴訟法",
+    "subject": "刑法與刑事訴訟法",
+    "mappedSubjects": [
+      "刑法",
+      "刑事訴訟法"
+    ],
+    "questionNo": 4,
+    "title": "110年｜刑法與刑事訴訟法｜第4題",
+    "body": "四、甲因販賣毒品被警方逮捕，乙向甲購買毒品也一併被查獲。員警向甲提\n  示一份通訊監察錄音譯文，內載乙向甲購買毒品的通話內容。甲對該譯\n  文內容未表示異議。針對該譯文內容所載交易暗語，員警在譯文內加註\n  解釋文字，經員警詢問甲是否正確，甲也清楚交代，皆有筆錄為證。其\n  後，員警詢問乙時，提示一張甲的照片，要乙確認是否即為向其購買毒\n  品的人。乙表示確為其人，因甲乙曾數次當面毒品交易，經乙於筆錄上\n  簽名確認。甲被提起公訴。審判時，甲抗辯員警提示通訊監察錄音譯文，\n  要求伊陳述，顯有誘導詢問之實，又提示甲的照片要求乙確認，亦有誤\n  導乙之嫌。試問法院應如何判斷甲抗辯之合法性。（25 分）",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=110070&q=1&s=0901&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "3b2692c10383cb70c55a6949fb2d24bae2dabf92b0b15a204c4f010a51f5d59f",
+    "textSha256": "ad7bb498aba2e2e6a226f93904f356e51b7c47fbeb416052a6fc93e3b214fc00",
+    "guidanceNote": "考選部原題：依PDF視覺與文字層恢復缺字、跨頁雜訊。AI輔助核稿，非官方標準答案。",
+    "officialPoints": 25,
+    "questionType": "申論題",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部PDF版面及文字層來源核對；非真人審稿）",
+      "checkedAt": "2026-10-23",
+      "page": 2,
+      "reviewMethod": "跨頁官方PDF版面與原題號核對；PDF同頁題幹逐字比對與雙SHA256確認",
+      "basis": "唯考選部原卷為題幹依據；LawPlayer僅為檢索線索"
+    }
+  },
+  {
+    "id": "police-110-psychology-1",
+    "year": 110,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "心理學",
+    "subject": "心理學",
+    "mappedSubjects": [
+      "心理學"
+    ],
+    "questionNo": 1,
+    "title": "110年｜心理學｜第1題",
+    "body": "一、請試述心理學者對影響遺忘的原因有那些不同看法？（25 分）",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=110070&q=1&s=1011&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "f59cb4559cbb98e111304a772eaaa49dc3009e453ff3bee00caf60b508c6db8d",
+    "textSha256": "10c7c16e2dbc02384404c8c3d0fd3da0f52b2b6f40144826e34a86cd975351c7",
+    "guidanceNote": "考選部原題：依PDF視覺與文字層恢復缺字、跨頁雜訊。AI輔助核稿，非官方標準答案。",
+    "officialPoints": 25,
+    "questionType": "申論題",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部PDF版面及文字層來源核對；非真人審稿）",
+      "checkedAt": "2026-10-23",
+      "page": 1,
+      "reviewMethod": "依官方PDF影像補回文字層遺失的題號；PDF同頁題幹逐字比對與雙SHA256確認",
+      "basis": "唯考選部原卷為題幹依據；LawPlayer僅為檢索線索"
+    }
+  },
+  {
+    "id": "police-110-psychology-2",
+    "year": 110,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "心理學",
+    "subject": "心理學",
+    "mappedSubjects": [
+      "心理學"
+    ],
+    "questionNo": 2,
+    "title": "110年｜心理學｜第2題",
+    "body": "二、在社會心理學領域，團體迷思（groupthink）是一個很重要的議題。請試\n  述何謂團體迷思？那些因素會導致團體迷思？團體迷思的表現方式有\n  那些？如何回應團體迷思的現象？（25 分）",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=110070&q=1&s=1011&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "f59cb4559cbb98e111304a772eaaa49dc3009e453ff3bee00caf60b508c6db8d",
+    "textSha256": "9676802aaee62ef46db0f09a71baa95e25500f666c8a8cb68637d6e8f0a0a859",
+    "guidanceNote": "考選部原題：依PDF視覺與文字層恢復缺字、跨頁雜訊。AI輔助核稿，非官方標準答案。",
+    "officialPoints": 25,
+    "questionType": "申論題",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部PDF版面及文字層來源核對；非真人審稿）",
+      "checkedAt": "2026-10-23",
+      "page": 1,
+      "reviewMethod": "依官方PDF影像補回文字層遺失的題號；PDF同頁題幹逐字比對與雙SHA256確認",
+      "basis": "唯考選部原卷為題幹依據；LawPlayer僅為檢索線索"
+    }
+  },
+  {
+    "id": "police-110-psychology-3",
+    "year": 110,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "心理學",
+    "subject": "心理學",
+    "mappedSubjects": [
+      "心理學"
+    ],
+    "questionNo": 3,
+    "title": "110年｜心理學｜第3題",
+    "body": "三、請試述下列名詞之意涵：（每小題5 分，共25 分）\n    ㈠implicit memory\n   ㈡Premack principle\n    ㈢hallucination vs. delusion\n    ㈣antisocial personality disorder\n    ㈤nature vs. nurture",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=110070&q=1&s=1011&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "f59cb4559cbb98e111304a772eaaa49dc3009e453ff3bee00caf60b508c6db8d",
+    "textSha256": "a42decb8b098cf8be9531712fd8e8ea35f9c36da12454327cea645870d53a354",
+    "guidanceNote": "考選部原題：依PDF視覺與文字層恢復缺字、跨頁雜訊。AI輔助核稿，非官方標準答案。",
+    "officialPoints": 25,
+    "questionType": "申論題",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部PDF版面及文字層來源核對；非真人審稿）",
+      "checkedAt": "2026-10-23",
+      "page": 1,
+      "reviewMethod": "依官方PDF影像補回文字層遺失的題號；依原PDF影像恢復私用字型分項序號；PDF同頁題幹逐字比對與雙SHA256確認",
+      "basis": "唯考選部原卷為題幹依據；LawPlayer僅為檢索線索"
+    }
+  },
+  {
+    "id": "police-110-psychology-4",
+    "year": 110,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "心理學",
+    "subject": "心理學",
+    "mappedSubjects": [
+      "心理學"
+    ],
+    "questionNo": 4,
+    "title": "110年｜心理學｜第4題",
+    "body": "四、根據Freud 的心理分析理論，產生防衛機制的原因為何？與適應行為有\n  何關係？又根據該理論，請列舉至少10 種防衛機制，並分述之。（25 分）",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=110070&q=1&s=1011&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "f59cb4559cbb98e111304a772eaaa49dc3009e453ff3bee00caf60b508c6db8d",
+    "textSha256": "a49c11c63e3f9fc68a1df202cf81237702c1ea4f37c353bf7e6fc6cfb3045eb9",
+    "guidanceNote": "考選部原題：依PDF視覺與文字層恢復缺字、跨頁雜訊。AI輔助核稿，非官方標準答案。",
+    "officialPoints": 25,
+    "questionType": "申論題",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部PDF版面及文字層來源核對；非真人審稿）",
+      "checkedAt": "2026-10-23",
+      "page": 1,
+      "reviewMethod": "依官方PDF影像補回文字層遺失的題號；PDF同頁題幹逐字比對與雙SHA256確認",
+      "basis": "唯考選部原卷為題幹依據；LawPlayer僅為檢索線索"
+    }
+  },
+  {
     "id": "police-110-criminology_prevention-1",
     "year": 110,
     "examName": "警察人員考試",
@@ -1333,6 +1805,114 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
     }
   },
   {
+    "id": "police-111-psychology-2",
+    "year": 111,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "心理學",
+    "subject": "心理學",
+    "mappedSubjects": [
+      "心理學"
+    ],
+    "questionNo": 2,
+    "title": "111年｜心理學｜第2題",
+    "body": "二、車禍經常引來人群駐足圍觀，警察就近初步了解車禍發生時，目擊者的\n  見聞。但目擊者們對於事發現場的說詞往往各有自己的版本，讓人難以\n  置信他們是在同一現場。這牽涉到人的記憶。\n  ㈠請詳述記憶提取的心理歷程。（10 分）\n  ㈡請列出至少五個影響現場目擊者證詞正確性的因素，並詳加說明。（15 分）",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111070&q=1&s=1005&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "4b5a3db56716799aa7e120616b3317c325c863646266d1d0ab56e79f2e5bdbc1",
+    "textSha256": "4f746b64e21ed4c0e16ca7af50511e8ed5679869d0c1f5f023ff9ab94c72d5cb",
+    "guidanceNote": "考選部原題：依PDF視覺與文字層恢復缺字、跨頁雜訊。AI輔助核稿，非官方標準答案。",
+    "officialPoints": 25,
+    "questionType": "申論題",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部PDF版面及文字層來源核對；非真人審稿）",
+      "checkedAt": "2026-10-23",
+      "page": 1,
+      "reviewMethod": "依原PDF影像恢復私用字型分項序號；PDF同頁題幹逐字比對與雙SHA256確認",
+      "basis": "唯考選部原卷為題幹依據；LawPlayer僅為檢索線索"
+    }
+  },
+  {
+    "id": "police-111-psychology-3",
+    "year": 111,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "心理學",
+    "subject": "心理學",
+    "mappedSubjects": [
+      "心理學"
+    ],
+    "questionNo": 3,
+    "title": "111年｜心理學｜第3題",
+    "body": "三、人們通常會有一些小違規，都不希望被警察開罰單。依據以下理論，請\n  詳細解析各情境中的用路人是怎樣的心理歷程或狀態？\n  （每小題10 分，共30 分）\n    ㈠自我歸因論（self-attribution theory）：小明駕駛汽車違法紅燈右轉，被\n   警察攔下來，小明不斷求情。\n   ㈡動機論（theory of motivation）：阿丸努力將摩托車停入禁止停車的紅\n   線之內，警察來開罰單時，阿丸辯稱並非將摩托車停在紅線路段上。\n   ㈢防衛機轉（defense mechanism）：在應二段式左轉的十字路口，摩托車\n   騎士阿苙直接左轉，被警察攔下來，阿苙卻兇悍不饒人。",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111070&q=1&s=1005&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "4b5a3db56716799aa7e120616b3317c325c863646266d1d0ab56e79f2e5bdbc1",
+    "textSha256": "5999494a2647765af222a39b1e141f2e468e539ba2914a19e68bf431a8a6245a",
+    "guidanceNote": "考選部原題：依PDF視覺與文字層恢復缺字、跨頁雜訊。AI輔助核稿，非官方標準答案。",
+    "officialPoints": 30,
+    "questionType": "申論題",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部PDF版面及文字層來源核對；非真人審稿）",
+      "checkedAt": "2026-10-23",
+      "page": 1,
+      "reviewMethod": "依原PDF影像恢復私用字型分項序號；PDF同頁題幹逐字比對與雙SHA256確認",
+      "basis": "唯考選部原卷為題幹依據；LawPlayer僅為檢索線索"
+    }
+  },
+  {
+    "id": "police-111-psychology-4",
+    "year": 111,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "心理學",
+    "subject": "心理學",
+    "mappedSubjects": [
+      "心理學"
+    ],
+    "questionNo": 4,
+    "title": "111年｜心理學｜第4題",
+    "body": "四、在當今社群媒體或交友軟體盛行，網路交友或情感詐騙經常是由高富帥\n  的頭貼開始，接續著噓寒問暖的體貼，而令中高齡婦女經常成為詐騙集\n   團騙財的對象。這其中，「強制說服」（coercive persuasion）扮演了重要\n  角色。請詳細說明：\n  ㈠「強制說服」的定義與內涵。（10 分）\n  ㈡詐騙集團各使用了那些方式、如何對自己的員工、對詐騙對象進行強\n    制說服？（15 分）",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111070&q=1&s=1005&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "4b5a3db56716799aa7e120616b3317c325c863646266d1d0ab56e79f2e5bdbc1",
+    "textSha256": "3ac46f8d2350a635fc0cb71c0d9ec9aac3643fdc2c9be24854c1134a01bd8714",
+    "guidanceNote": "考選部原題：依PDF視覺與文字層恢復缺字、跨頁雜訊。AI輔助核稿，非官方標準答案。",
+    "officialPoints": 25,
+    "questionType": "申論題",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部PDF版面及文字層來源核對；非真人審稿）",
+      "checkedAt": "2026-10-23",
+      "page": 1,
+      "reviewMethod": "依原PDF影像恢復私用字型分項序號；PDF同頁題幹逐字比對與雙SHA256確認",
+      "basis": "唯考選部原卷為題幹依據；LawPlayer僅為檢索線索"
+    }
+  },
+  {
     "id": "police-111-criminology_prevention-1",
     "year": 111,
     "examName": "警察人員考試",
@@ -1594,6 +2174,154 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
+    }
+  },
+  {
+    "id": "police-112-criminal_law_procedure-1",
+    "year": 112,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "刑法與刑事訴訟法",
+    "subject": "刑法與刑事訴訟法",
+    "mappedSubjects": [
+      "刑法",
+      "刑事訴訟法"
+    ],
+    "questionNo": 1,
+    "title": "112年｜刑法與刑事訴訟法｜第1題",
+    "body": "一、甲、乙為同事，在公司常因意見不合而有爭執。某日乙又在甲的辦公室\n  裡質疑甲製作的業績報告造假，甲聞言一時暴怒，基於殺害乙之故意，\n  拿起桌上菸灰缸便朝乙頭部敲打，致乙頭部當場血流如注。當甲欲再抓\n  住乙、準備繼續毆打乙時，正巧甲的秘書敲門欲進入甲的辦公室，聽見\n  其內聲響，便大聲呼喊甲的名字。甲聽見秘書之呼叫聲後，突然意識到\n  可能被捕坐牢，即殺意全消，遂放開乙，自行走出辦公室外，向秘書說\n  明乙已受傷，請秘書打電話叫救護車來，乙送醫急救後倖存。試問甲之\n  刑事責任為何？（25 分）",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112070&q=1&s=0901&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "4207105c900185670e4f96e6030b5f2611aea438460b326a60a8c5e4045fb28d",
+    "textSha256": "80092cc32f6d8bf35125de788d0399d3560e3abec8c67037b9e771ad62f5395d",
+    "guidanceNote": "考選部原題：依PDF視覺與文字層恢復缺字、跨頁雜訊。AI輔助核稿，非官方標準答案。",
+    "officialPoints": 25,
+    "questionType": "申論題",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部PDF版面及文字層來源核對；非真人審稿）",
+      "checkedAt": "2026-10-23",
+      "page": 1,
+      "reviewMethod": "依官方PDF影像補回文字層遺失的題號；PDF同頁題幹逐字比對與雙SHA256確認",
+      "basis": "唯考選部原卷為題幹依據；LawPlayer僅為檢索線索"
+    }
+  },
+  {
+    "id": "police-112-criminal_law_procedure-2",
+    "year": 112,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "刑法與刑事訴訟法",
+    "subject": "刑法與刑事訴訟法",
+    "mappedSubjects": [
+      "刑法",
+      "刑事訴訟法"
+    ],
+    "questionNo": 2,
+    "title": "112年｜刑法與刑事訴訟法｜第2題",
+    "body": "二、甲、乙、丙三人平日遊手好閒、無正當職業，一日因缺錢花用，謀議三\n  人共同詐騙富商A 之金錢。隨後則依三人計畫，由甲先與A 交好，謀取\n   A 之信任，再由甲為A 介紹乙，謊稱乙是投資理財專家。隨後乙則與A\n  見面，向A 推銷理財方案，聲稱獲利極高，建議A 拿出大筆資金委由乙\n  代為投資。丙則向平日在公園一起聊天的遊民以1000 元之代價，收購其\n  郵局存摺、提款卡及提款密碼。丙取得上述遊民之帳戶資料後，乙則交\n  代A 將投資款項匯入該帳戶。不料A 其實並未受騙，反而僅匯款1000\n  元至乙指定之帳戶，並同時報警處理，使該帳戶遭凍結。試問依中華民\n  國刑法之規定，甲、乙、丙三人之刑責為何？（25 分）",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112070&q=1&s=0901&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "4207105c900185670e4f96e6030b5f2611aea438460b326a60a8c5e4045fb28d",
+    "textSha256": "987a0b49ad4d23c550967a34981d1c87a2125ac88598c23524b2c96d5dda4397",
+    "guidanceNote": "考選部原題：依PDF視覺與文字層恢復缺字、跨頁雜訊。AI輔助核稿，非官方標準答案。",
+    "officialPoints": 25,
+    "questionType": "申論題",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部PDF版面及文字層來源核對；非真人審稿）",
+      "checkedAt": "2026-10-23",
+      "page": 1,
+      "reviewMethod": "依官方PDF影像補回文字層遺失的題號；PDF同頁題幹逐字比對與雙SHA256確認",
+      "basis": "唯考選部原卷為題幹依據；LawPlayer僅為檢索線索"
+    }
+  },
+  {
+    "id": "police-112-criminal_law_procedure-3",
+    "year": 112,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "刑法與刑事訴訟法",
+    "subject": "刑法與刑事訴訟法",
+    "mappedSubjects": [
+      "刑法",
+      "刑事訴訟法"
+    ],
+    "questionNo": 3,
+    "title": "112年｜刑法與刑事訴訟法｜第3題",
+    "body": "三、A 在民宅販毒予B。B 某日向警察自首並告發A，提供A 手機門號給警\n  方。警察持通信紀錄調取票，向電信業者調取A 手機門號之基地台位\n  置歷史紀錄，研判A 經常出入某地區，惟不知A 之確切居住地址。其\n  後，警方依內政部警政署刑事警察局訂定之「執行M 化定位勤務作業\n  流程」，使用「M 化偵查網路系統」（即「M 化車」），到該地區周邊測點\n  定位A 手機位置，一番比對後，研判A 居住在某棟建物。經過一段時\n  間秘密監視，警察判斷A 在該民宅內販毒，於是持法院核發之搜索票\n  入內搜索及拘提A。請分析M 化車偵測取得之A 手機位置資訊有無證\n  據能力。（25 分）",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112070&q=1&s=0901&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "4207105c900185670e4f96e6030b5f2611aea438460b326a60a8c5e4045fb28d",
+    "textSha256": "be997f6ba03d72121f1ab4623fe7e985650fdf8fe31e8749a3d69267142555de",
+    "guidanceNote": "考選部原題：依PDF視覺與文字層恢復缺字、跨頁雜訊。AI輔助核稿，非官方標準答案。",
+    "officialPoints": 25,
+    "questionType": "申論題",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部PDF版面及文字層來源核對；非真人審稿）",
+      "checkedAt": "2026-10-23",
+      "page": 1,
+      "reviewMethod": "依官方PDF影像補回文字層遺失的題號；PDF同頁題幹逐字比對與雙SHA256確認",
+      "basis": "唯考選部原卷為題幹依據；LawPlayer僅為檢索線索"
+    }
+  },
+  {
+    "id": "police-112-criminal_law_procedure-4",
+    "year": 112,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "刑法與刑事訴訟法",
+    "subject": "刑法與刑事訴訟法",
+    "mappedSubjects": [
+      "刑法",
+      "刑事訴訟法"
+    ],
+    "questionNo": 4,
+    "title": "112年｜刑法與刑事訴訟法｜第4題",
+    "body": "四、被告被控貪污罪，委任律師A 擔任辯護人。檢察官訊問被告時，A 陪同\n在場，並用自己手機記錄檢察官問題及擬訂日後之辯護策略。檢察官以\n法律未賦予A 陪同訊問在場之筆記權，禁止A 繼續製作筆記，並要求A\n刪除手機中已記錄之訊問細節。A 拒絕，檢察官遂命令法警扣押A 之手\n機。試問：A 於被告訊問中有無筆記權？對於檢察官之作為，A 如何救\n濟？（25 分）",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112070&q=1&s=0901&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "4207105c900185670e4f96e6030b5f2611aea438460b326a60a8c5e4045fb28d",
+    "textSha256": "8b6f111f70951a6a6cef1ceb6dd987108826daddca5d9da936b38f7ceb0cee5d",
+    "guidanceNote": "考選部原題：依PDF視覺與文字層恢復缺字、跨頁雜訊。AI輔助核稿，非官方標準答案。",
+    "officialPoints": 25,
+    "questionType": "申論題",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部PDF版面及文字層來源核對；非真人審稿）",
+      "checkedAt": "2026-10-23",
+      "page": 2,
+      "reviewMethod": "剔除第四題前方的原卷頁碼；依官方PDF影像補回文字層遺失的題號；PDF同頁題幹逐字比對與雙SHA256確認",
+      "basis": "唯考選部原卷為題幹依據；LawPlayer僅為檢索線索"
     }
   },
   {
@@ -1990,6 +2718,154 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
+    }
+  },
+  {
+    "id": "police-113-criminal_law_procedure-1",
+    "year": 113,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "刑法與刑事訴訟法",
+    "subject": "刑法與刑事訴訟法",
+    "mappedSubjects": [
+      "刑法",
+      "刑事訴訟法"
+    ],
+    "questionNo": 1,
+    "title": "113年｜刑法與刑事訴訟法｜第1題",
+    "body": "一、甲向A 借錢簽賭，對A 一再催討心生不滿，遂以新臺幣（下同）2 萬元\n  收買乙傷害A，乙同意並夥同丙於白天強押A 上車，載到人跡罕至的產\n  業道路後，共同持棍棒傷害A。乙臨走時起意搜刮A 身上財物，A 因遭\n  痛打，不敢抵抗，乙得款6800 元，並與丙分贓。當甲得知A 被押走後，\n  趁機打電話給A 的女兒B，表示A 遭人綁架，若不依指示匯300 萬元到\n  指定帳戶內，歹徒會對A 斷手斷腳。B 擔心A 遭遇不測，立即籌款匯入。\n   A 則於傍晚時分自己步行回家。問：甲、乙、丙之刑責為何？（25 分）",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=303&code=113060&q=1&s=0604&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "b661f39f25cc461c0c4f676e97f508636e83b2842fbcbf1924a0293a88b27f76",
+    "textSha256": "baddb53b31177b4171341cbed5e133c1b753f1a399de24009c6e15b2f51ec3be",
+    "guidanceNote": "考選部原題：依PDF視覺與文字層恢復缺字、跨頁雜訊。AI輔助核稿，非官方標準答案。",
+    "officialPoints": 25,
+    "questionType": "申論題",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部PDF版面及文字層來源核對；非真人審稿）",
+      "checkedAt": "2026-10-23",
+      "page": 1,
+      "reviewMethod": "依官方PDF影像補回文字層遺失的題號；PDF同頁題幹逐字比對與雙SHA256確認",
+      "basis": "唯考選部原卷為題幹依據；LawPlayer僅為檢索線索"
+    }
+  },
+  {
+    "id": "police-113-criminal_law_procedure-2",
+    "year": 113,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "刑法與刑事訴訟法",
+    "subject": "刑法與刑事訴訟法",
+    "mappedSubjects": [
+      "刑法",
+      "刑事訴訟法"
+    ],
+    "questionNo": 2,
+    "title": "113年｜刑法與刑事訴訟法｜第2題",
+    "body": "二、甲向朋友乙借車，於毒品藥性發作而不能安全駕駛的狀態下開車上路。因\n  體內藥性發生作用，逆向行駛猛烈撞擊機車騎士A，A 因而人車倒地當\n  場死亡。甲下車察看，見A 沒有動靜，擔心施用毒品肇事遭警查獲，又\n  見四下無人，棄車逃離現場躲進巷弄內，並撥打電話給乙，稱自己發生交\n  通事故，要乙到現場將車開走，乙請B 駕車一同前往，不知情的B 讓乙\n  下車後隨即離開，乙見A 已無氣息，迅速開走自己的汽車。事後，甲在\n  法庭上辯稱：「當時不知道A 已死亡」。問：甲、乙之刑責為何？（25 分）",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=303&code=113060&q=1&s=0604&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "b661f39f25cc461c0c4f676e97f508636e83b2842fbcbf1924a0293a88b27f76",
+    "textSha256": "b21e3726ef8d03e191dfe88818bb62f180d1dd4f6456dfde429a3a78d4339cce",
+    "guidanceNote": "考選部原題：依PDF視覺與文字層恢復缺字、跨頁雜訊。AI輔助核稿，非官方標準答案。",
+    "officialPoints": 25,
+    "questionType": "申論題",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部PDF版面及文字層來源核對；非真人審稿）",
+      "checkedAt": "2026-10-23",
+      "page": 1,
+      "reviewMethod": "依官方PDF影像補回文字層遺失的題號；PDF同頁題幹逐字比對與雙SHA256確認",
+      "basis": "唯考選部原卷為題幹依據；LawPlayer僅為檢索線索"
+    }
+  },
+  {
+    "id": "police-113-criminal_law_procedure-3",
+    "year": 113,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "刑法與刑事訴訟法",
+    "subject": "刑法與刑事訴訟法",
+    "mappedSubjects": [
+      "刑法",
+      "刑事訴訟法"
+    ],
+    "questionNo": 3,
+    "title": "113年｜刑法與刑事訴訟法｜第3題",
+    "body": "三、A 販賣安非他命被警察查獲。A 在警局接受員警B 詢問時，拒絕夜間詢\n  問，並表達要等候辯護人C 到場。C 在另一件偵查中羈押審查案件結束\n  後，於晚上10 時抵達警局。B 見C 甚為疲累，心想可能無法久待，決\n  定故意拖延警詢，擬等C 離開才進行警詢。C 多次詢問何時開始警詢，\n   B 始終以忙碌他案為由，虛與委蛇。C 久候至凌晨2 時10 分，因警方未\n  開始詢問而離去。B 見狀，旋於凌晨2 時30 分告知A 可以製作筆錄，\n  遂開始詢問A，取得A 之自白。請分析A 自白有無證據能力。（25 分）",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=303&code=113060&q=1&s=0604&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "b661f39f25cc461c0c4f676e97f508636e83b2842fbcbf1924a0293a88b27f76",
+    "textSha256": "6b23bd387da76c1c2ddcc6f583b902fd49b610d270e29f862aeac70f5390ae3c",
+    "guidanceNote": "考選部原題：依PDF視覺與文字層恢復缺字、跨頁雜訊。AI輔助核稿，非官方標準答案。",
+    "officialPoints": 25,
+    "questionType": "申論題",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部PDF版面及文字層來源核對；非真人審稿）",
+      "checkedAt": "2026-10-23",
+      "page": 1,
+      "reviewMethod": "依官方PDF影像補回文字層遺失的題號；PDF同頁題幹逐字比對與雙SHA256確認",
+      "basis": "唯考選部原卷為題幹依據；LawPlayer僅為檢索線索"
+    }
+  },
+  {
+    "id": "police-113-criminal_law_procedure-4",
+    "year": 113,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "刑法與刑事訴訟法",
+    "subject": "刑法與刑事訴訟法",
+    "mappedSubjects": [
+      "刑法",
+      "刑事訴訟法"
+    ],
+    "questionNo": 4,
+    "title": "113年｜刑法與刑事訴訟法｜第4題",
+    "body": "四、家住恆春的A，在「臉書」刊登販售自用小客車之廣告，並張貼「一手\n車」、「公里數5 萬」及「全車原板件」等不實訊息，致B 陷於錯誤，而\n交付83 萬元購買該車，雙方在臺中取車。B 買後發覺受騙，向臺中警方\n報案，經臺中地方檢察署檢察官起訴，臺中地方法院判決A 成立加重詐\n欺罪。A 不服判決，上訴臺灣高等法院臺中分院（下稱臺中高分院）。臺\n中高分院指定7 月27 日上午9 時20 分為審判期日，傳票有合法送達A。\n審判當日清晨，適逢強烈颱風從恆春半島觸陸，屏東縣、高雄市及臺南市\n均經該縣市政府宣布停止上班及上課，屏東客運全面停駛，高鐵與臺鐵則\n正常營運。A 認為屏東縣既已宣布停止上班、上課，且北上交通困難，遂\n電話聯繫臺中高分院，表示不便到庭。然法院以當天臺鐵北上列車仍正常\n行駛為由，認颱風來襲未造成A 無法準時到庭之交通障礙。臺中高分院\n遂在A 缺席下調查證據並審判，後續則維持一審判決，駁回A 之上訴。\nA 擬對二審判決上訴，請分析其上訴第三審有無理由。（25 分）",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=303&code=113060&q=1&s=0604&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "b661f39f25cc461c0c4f676e97f508636e83b2842fbcbf1924a0293a88b27f76",
+    "textSha256": "39b746e44f8db87298a4e44ad864dd8a58718a5f763d73c94e9617a8b2289ebd",
+    "guidanceNote": "考選部原題：依PDF視覺與文字層恢復缺字、跨頁雜訊。AI輔助核稿，非官方標準答案。",
+    "officialPoints": 25,
+    "questionType": "申論題",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部PDF版面及文字層來源核對；非真人審稿）",
+      "checkedAt": "2026-10-23",
+      "page": 2,
+      "reviewMethod": "剔除第四題前方的原卷頁碼；依官方PDF影像補回文字層遺失的題號；PDF同頁題幹逐字比對與雙SHA256確認",
+      "basis": "唯考選部原卷為題幹依據；LawPlayer僅為檢索線索"
     }
   },
   {
@@ -2761,6 +3637,150 @@ window.POLICE_ORIGINAL_QUESTION_BANK = [
       "checkedAt": "2026-10-23",
       "reviewMethod": "官方PDF單頁/無附圖/題號連續；整題原文存在於PDF文字層；檢驗雙SHA256；AI檢視逐年試卷縮圖",
       "basis": "自動嚴格比對與AI視覺檢視；不代表真人核稿或考選部答案"
+    }
+  },
+  {
+    "id": "police-114-counseling-1",
+    "year": 114,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "諮商與輔導",
+    "subject": "諮商與輔導",
+    "mappedSubjects": [
+      "諮商與輔導"
+    ],
+    "questionNo": 1,
+    "title": "114年｜諮商與輔導｜第1題",
+    "body": "一、你正在進行犯罪防治輔導，一位當事人因長期職場霸凌而陷入報復的強\n  烈情緒，並已開始思考極端行為。請運用羅傑斯（Carl Rogers）個人中\n  心治療的三大核心條件（一致性、無條件的正向關懷與接納、精確的同\n  理心理解），依序說明：㈠你如何解讀這三大條件在理論上的核心意義？\n  ㈡你會如何將這三項條件具體運用於與該當事人的輔導過程中，協助其\n  處理情緒、重建自尊，並降低其偏差風險？㈢在每項核心條件的說明中，\n  各舉出一個輔導人員與當事人之間的具體對話實例，以展現該核心條件\n  在實際輔導過程中的運用。（25 分）",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114060&q=1&s=0810&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "47de0823b786a9824c18ea609fae2697915d6f89d1b0256298ac3a5956ef8e7c",
+    "textSha256": "0ced6fd38d69f0a566013950b280069788fbc0986c5aa6b75b7f84862d8f251f",
+    "guidanceNote": "考選部原題：依PDF視覺與文字層恢復缺字、跨頁雜訊。AI輔助核稿，非官方標準答案。",
+    "officialPoints": 25,
+    "questionType": "申論題",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部PDF版面及文字層來源核對；非真人審稿）",
+      "checkedAt": "2026-10-23",
+      "page": 1,
+      "reviewMethod": "依原PDF影像恢復私用字型分項序號；PDF同頁題幹逐字比對與雙SHA256確認",
+      "basis": "唯考選部原卷為題幹依據；LawPlayer僅為檢索線索"
+    }
+  },
+  {
+    "id": "police-114-counseling-2",
+    "year": 114,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "諮商與輔導",
+    "subject": "諮商與輔導",
+    "mappedSubjects": [
+      "諮商與輔導"
+    ],
+    "questionNo": 2,
+    "title": "114年｜諮商與輔導｜第2題",
+    "body": "二、研究發現，反社會型人格障礙（antisocial personality disorder, ASPD）與\n  多種犯罪行為存在顯著關聯，這在犯罪防治領域具有重要意義。根據診\n  斷準則，反社會型人格障礙可從兩大面向加以界定與評估：人格功能的\n   典型減損情況（認同感identity、自我指向self-direction、同理心empathy、\n  親密感intimacy），以及病態人格特質。請詳細回答：㈠從四大人格功能\n  的減損角度，分析反社會型人格障礙者的典型表現。㈡請依據五大病態\n  人格特質的領域，闡述反社會型人格障礙者的特徵表現。（25 分）",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114060&q=1&s=0810&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "47de0823b786a9824c18ea609fae2697915d6f89d1b0256298ac3a5956ef8e7c",
+    "textSha256": "3c1ebe0bc3f03186cc6f2eab2b6f46564612b5c531f6d707ecf4128e2040f86a",
+    "guidanceNote": "考選部原題：依PDF視覺與文字層恢復缺字、跨頁雜訊。AI輔助核稿，非官方標準答案。",
+    "officialPoints": 25,
+    "questionType": "申論題",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部PDF版面及文字層來源核對；非真人審稿）",
+      "checkedAt": "2026-10-23",
+      "page": 1,
+      "reviewMethod": "依原PDF影像恢復私用字型分項序號；PDF同頁題幹逐字比對與雙SHA256確認",
+      "basis": "唯考選部原卷為題幹依據；LawPlayer僅為檢索線索"
+    }
+  },
+  {
+    "id": "police-114-counseling-3",
+    "year": 114,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "諮商與輔導",
+    "subject": "諮商與輔導",
+    "mappedSubjects": [
+      "諮商與輔導"
+    ],
+    "questionNo": 3,
+    "title": "114年｜諮商與輔導｜第3題",
+    "body": "三、警察工作具高度壓力與風險，維護警察人員的心理健康對其執勤效能與\n  生活品質就顯得格外重要。假設你是警察局「心理輔導室」的主任，需\n   設計一套針對警察人員特殊需求的正念減壓課程（mindfulness-based\n     stress  reduction, MBSR ）。請依序回答下列問題：㈠何謂正念\n  （mindfulness）？請說明其核心概念與原理，以及為何正念練習適合用\n  於警察人員的情緒管理與壓力調適。㈡請詳細說明正念減壓課程中的\n  「身體掃描冥想」（body scan meditation）的執行步驟和具體技巧。㈢請\n  設計一個完整、具體且符合警察工作特性的八週正念減壓課程大綱，內\n  容應包含每週的主題與目標、課程內容與活動介紹等。（25 分）",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114060&q=1&s=0810&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "47de0823b786a9824c18ea609fae2697915d6f89d1b0256298ac3a5956ef8e7c",
+    "textSha256": "0f5ba9c8e6aee0b6e4c367a284f32e61c78fed8a3e1f38488b8598f5ef8b8ad7",
+    "guidanceNote": "考選部原題：依PDF視覺與文字層恢復缺字、跨頁雜訊。AI輔助核稿，非官方標準答案。",
+    "officialPoints": 25,
+    "questionType": "申論題",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部PDF版面及文字層來源核對；非真人審稿）",
+      "checkedAt": "2026-10-23",
+      "page": 1,
+      "reviewMethod": "依原PDF影像恢復私用字型分項序號；PDF同頁題幹逐字比對與雙SHA256確認",
+      "basis": "唯考選部原卷為題幹依據；LawPlayer僅為檢索線索"
+    }
+  },
+  {
+    "id": "police-114-counseling-4",
+    "year": 114,
+    "examName": "一般警察人員考試",
+    "examLevel": "三等考試",
+    "examType": "犯罪防治人員預防組",
+    "examTypes": [
+      "一般警察人員考試三等犯罪防治人員預防組"
+    ],
+    "officialSubject": "諮商與輔導",
+    "subject": "諮商與輔導",
+    "mappedSubjects": [
+      "諮商與輔導"
+    ],
+    "questionNo": 4,
+    "title": "114年｜諮商與輔導｜第4題",
+    "body": "四、警察人員常須處理有自我傷害風險的當事人，這需要專業的溝通技巧，\n  更需具備有效的心理支持能力。辯證行為治療（dialectical behavior\n     therapy, DBT）提供了四項核心技巧，可有效應用於此類危機處理。假設\n  你是接受過DBT 訓練的警察心理輔導員，請回答：㈠說明DBT 四大核\n  心技巧的基本概念和主要內涵，並解釋為何這些技巧適合用於處理自我\n  傷害危機。㈡針對每項DBT 核心技巧，具體提出兩個實用的策略或方法。\n   （25 分）",
+    "points": [],
+    "direction": [],
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114060&q=1&s=0810&t=Q",
+    "source": "考選部官方考畢試題",
+    "sourceKind": "official-original",
+    "verified": true,
+    "paperSha256": "47de0823b786a9824c18ea609fae2697915d6f89d1b0256298ac3a5956ef8e7c",
+    "textSha256": "8f3638549b180f6bcc37e0e8c414bc9ffb0fc89b486fae99c3921f342f64710f",
+    "guidanceNote": "考選部原題：依PDF視覺與文字層恢復缺字、跨頁雜訊。AI輔助核稿，非官方標準答案。",
+    "officialPoints": 25,
+    "questionType": "申論題",
+    "sourceReview": {
+      "reviewer": "ChatGPT（考選部PDF版面及文字層來源核對；非真人審稿）",
+      "checkedAt": "2026-10-23",
+      "page": 2,
+      "reviewMethod": "依原PDF影像恢復私用字型分項序號；PDF同頁題幹逐字比對與雙SHA256確認",
+      "basis": "唯考選部原卷為題幹依據；LawPlayer僅為檢索線索"
     }
   },
   {
