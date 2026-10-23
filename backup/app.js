@@ -37,7 +37,7 @@
  }
  // The list shows only current, non-empty learning activity. Legacy keys stay in the actual JSON backup.
  const visibleKeys=new Set([
-  'probation-study30-v251:v1','probation-study-desk-v24',
+  'probation-study30-v251:v1','probation-study-desk-v24','probation-study-desk-v3',
   'probation-daily-github:records:v1','daily-reading-test:saved',
   'psd-common-subjects-v1','psd-staresto-link-coach-v06',
   'jj-bookmarks','jj-read','psd-lecture-planner-v1'
