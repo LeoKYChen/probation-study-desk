@@ -27,6 +27,13 @@ export function decodeDocumentId(id){
   return key;
  }catch{throw Error('雲端文件識別碼編碼不符')}
 }
+// An adapter is tied to the original Google uid. A second tab may sign out
+// or switch accounts while Firestore reads or CAS transactions are in flight.
+export function assertCurrentUser(expectedUid,currentUser){
+ if(typeof expectedUid!=='string'||!expectedUid||
+    !currentUser||currentUser.uid!==expectedUid)
+  throw Error('Google 帳號在同步期間已變更；請重新登入並重新預覽，原有答案不會自動上傳');
+}
 const SDK='https://www.gstatic.com/firebasejs/12.19.0/';
 let modules;
 async function sdk() {
@@ -65,9 +72,12 @@ export async function openFirebase(publicConfig){
   // Prefix encoded keys to avoid Firestore's forbidden "."/".." document IDs.
   // This branch has never deployed a Firebase backend; no migration is needed.
   function keyPath(key){return fs.doc(base,encodeDocumentId(key));}
+  function assertOwner(){assertCurrentUser(u.uid,auth.currentUser)}
   return {
    async readAll(){
+    assertOwner();
     const snap=await fs.getDocsFromServer(base);
+    assertOwner();
     const result=Object.create(null);
     for(const item of snap.docs){
      const key=decodeDocumentId(item.id);
@@ -77,15 +87,22 @@ export async function openFirebase(publicConfig){
     return result;
    },
    async compareAndSet(key,raw,expected){
+    assertOwner();
     const ref=keyPath(key);
     return fs.runTransaction(db,async transaction=>{
+     assertOwner();
      const snap=await transaction.get(ref);
+     assertOwner();
      const revision=snap.exists()?snap.data().revision:0;
      if(revision!==expected)throw Error('另一裝置已更新「'+key+'」，請重新預覽同步');
      const next=revision+1;
+     assertOwner();
      transaction.set(ref,{revision:next,raw,updatedAt:fs.serverTimestamp()});
      return next;
-    },{maxAttempts:2});
+    },{maxAttempts:2}).then(next=>{
+     assertOwner();
+     return next;
+    });
    }
   };
  }
