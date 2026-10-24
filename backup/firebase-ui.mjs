@@ -16,7 +16,7 @@ const $=id=>document.getElementById(id);
 const CFG='psd-firebase-public-web-config-v1',BOUND='psd-firebase-local-data-bound-v1',RESTORE='psd-firebase-restore-login-v1';
 let connection=null,plan=null,deskPlan=null,adapter=null,deskAdapter=null,deskStore=null,cloudUser=null,busy=false;
 let backedUp={modules:false,desk:false};
-let scanning=false,journalPreview=null;
+let scanning=false,journalPreview=null,preparedConfig=null;
 const safeLabel=e=>e instanceof Error?e.message:String(e);
 $('firebase-check-device').addEventListener('click',()=>{
  const list=$('firebase-device-report');
@@ -137,8 +137,9 @@ function invalidatePreview(){
 }
 function lock(locked){
  busy=locked;
- for(const id of ['firebase-login','firebase-signout','firebase-preview-btn','firebase-apply','firebase-backup','firebase-backup-desk'])
+ for(const id of ['firebase-prepare','firebase-login','firebase-signout','firebase-preview-btn','firebase-apply','firebase-backup','firebase-backup-desk'])
   $(id).disabled=locked;
+ if(!locked)$('firebase-login').disabled=!connection||!preparedConfig;
 }
 async function perform(fn){
  if(busy)return;
@@ -152,15 +153,34 @@ async function perform(fn){
  }
  finally{lock(false);$('firebase-apply').disabled=!plan;}
 }
-async function connect(){
- const config=validateFirebaseConfig({
+function configFromForm(){
+ return validateFirebaseConfig({
   apiKey:$('firebase-api').value.trim(),
   projectId:$('firebase-project').value.trim(),
   authDomain:$('firebase-auth-domain').value.trim(),
   appId:$('firebase-app-id').value.trim()
  });
- // A public Web config does not grant database access; Firestore rules do.
- connection=await openFirebase(config);
+}
+async function prepareLogin(){
+ // SDK initialization may be slow; it must never consume the popup click.
+ // Preparation touches only public Firebase configuration and Auth state.
+ invalidatePreview();
+ deskStore?.close();deskStore=null;
+ connection=null;preparedConfig=null;adapter=null;deskAdapter=null;cloudUser=null;
+ $('firebase-user').textContent='未登入';
+ const config=configFromForm();
+ const ready=await openFirebase(config);
+ connection=ready;
+ preparedConfig=JSON.stringify(config);
+ status('登入環境已準備完成。請另外按「② 以 Google 帳號登入」，才會開啟 Google 視窗；尚未讀取或上傳任何學習答案。');
+}
+async function connect(){
+ if(!connection||!preparedConfig)throw Error('請先按「① 準備 Google 登入環境」');
+ const config=configFromForm();
+ if(preparedConfig!==JSON.stringify(config))
+  throw Error('Firebase 設定在準備後已變更；請重新按「① 準備 Google 登入環境」');
+ // Must call login() synchronously within this second, real user click.
+ // No SDK import, authStateReady(), or setPersistence await before popup.
  const user=await connection.login();
  if(!user)throw Error('沒有取得 Google 登入資訊');
  cloudUser=user;adapter=connection.adapter();deskAdapter=connection.adapter('desk');
@@ -172,11 +192,12 @@ async function connect(){
  status('已登入。尚未上傳任何學習紀錄。請先按「預覽差異」。');
  void scanLocalPending();
 }
+$('firebase-prepare').addEventListener('click',()=>perform(prepareLogin));
 $('firebase-login').addEventListener('click',()=>perform(connect));
 $('firebase-signout').addEventListener('click',()=>perform(async()=>{
  if(connection)await connection.signOut();
  localStorage.removeItem(RESTORE); // Sign-out stays guest on the next visit.
- connection=null;adapter=null;deskAdapter=null;cloudUser=null;plan=null;deskPlan=null;backedUp={modules:false,desk:false};
+ connection=null;preparedConfig=null;adapter=null;deskAdapter=null;cloudUser=null;plan=null;deskPlan=null;backedUp={modules:false,desk:false};
  deskStore?.close();deskStore=null;
  $('firebase-user').textContent='未登入';$('firebase-preview').replaceChildren();
  status('已登出。此瀏覽器的原始學習紀錄沒有刪除。');
@@ -247,10 +268,12 @@ async function restoreSession(){
  try{
   const config=validateFirebaseConfig(JSON.parse(raw));
   connection=await openFirebase(config);
+  preparedConfig=JSON.stringify(config);
+  $('firebase-login').disabled=false;
   const user=connection.user();
   if(!user){
-   connection=null;cloudUser=null;
-   status('已有本裝置的帳號紀錄，但目前未登入 Google；仍可免登入使用，或手動登入後再預覽同步。');
+   cloudUser=null;
+   status('此裝置的 Google 登入已失效，請親自按「② 以 Google 帳號登入」重新驗證；不會自動上傳任何學習資料。');
    return;
   }
   cloudUser=user;
@@ -260,7 +283,8 @@ async function restoreSession(){
   status('已恢復 Google 帳號。資料仍保留在本機，尚未執行雲端同步；需要預覽後確認。');
   void scanLocalPending();
  }catch(error){
-  connection=null;cloudUser=null;adapter=null;deskAdapter=null;
+  connection=null;preparedConfig=null;cloudUser=null;adapter=null;deskAdapter=null;
+  $('firebase-login').disabled=true;
   status('無法自動恢復同步登入：'+safeLabel(error)+'。本機資料仍可正常使用。',true);
  }
 }
