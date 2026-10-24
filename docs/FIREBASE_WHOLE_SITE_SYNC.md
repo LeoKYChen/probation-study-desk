@@ -116,6 +116,16 @@ npm --prefix verification/firebase-rules install --no-audit --no-fund
 - 以上上限是控制 Firebase Spark 免費額度及減少意外大量請求的**開發版保護**，不是聲稱 Firebase 本身只能有 1,000 筆資料。現階段仍無實際線上 Firebase 專案可供驗收，**最新 GitHub Actions 結果仍待查核**。
 - 尚未完成的功能：受保護模組剩餘寫入鉤子、真實 Google/Firebase Auth、iPhone/Mac 跨裝置、背景同步的離線重試及可取消操作；不得把 Draft 當成可正式使用。
 
+## 本輪：CI 觸發與多分頁無損同步檢查
+
+- **驗證方式**：除了 PR 觸發，兩個 Firebase 安全工作流程已加入 `push`（僅 `feature/firebase-whole-site-sync` 開發分支）及 `workflow_dispatch`；均使用 `contents: read`，不含合併或生產部署權限。若 GitHub 未啟動 Actions，須在 PR 的 Checks／Actions 檢查狀態，不能將「有測試檔案」當作「已執行通過」。
+- **GitHub 端靜態核對結果**：已比對 Firestore `modules` 白名單和 `backup/unified-core.js`，確認目前為 15 類正式學習模組及一類衝突封存（16 個文件 ID），沒有多餘項目。這不等同 Rules Emulator 編譯或行動裝置驗收。
+- **備考書桌低寫入改進**：當差異預覽不需要下載／建立衝突封存時，同步不再額外改寫 IndexedDB；降低重新觸發本機待同步標記的機率。
+- **容量保護補強**：合併時也計入將來生成的 `import/` 衝突封存，若雲端總數將超過 1,000 筆便在寫入前拒絕；不會先寫入一半後讓下次預覽超限。
+- **衝突封存完整性**：對同一次預覽中碰巧重複的隨機封存 ID 也拒絕操作，不能默默覆蓋另一份不同的原始作答。
+- 新增單元測試涵蓋上述情境，並新增 Firestore 模擬器「本人可列出自己的模組、他人與匿名使用者不能列出」驗證，以符合前端 `readAll()` 真實使用方式。
+- **尚未取得最新工作流程成功結果**；仍須執行 Firebase Rules Emulator、全套 browser E2E，及真正 Firebase Spark／iPhone／Mac 驗收。
+
 ## 4. 尚未完成的發布阻擋
 
 - [ ] 真實 Firebase Auth + Firestore 雙裝置整合測試；Firestore Rules Emulator 自動測試已加入 CI，**通過狀態仍待最新工作流程確認**
