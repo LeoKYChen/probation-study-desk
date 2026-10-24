@@ -67,7 +67,8 @@ footer{color:#607267;font-size:13px}ul{columns:2;max-width:780px;padding-left:24
 <div class="actions"><button id="firebase-check-device" type="button">檢查這台裝置的同步環境（免登入）</button></div>
 <p class="muted">只檢查本機瀏覽器功能與連線，不讀取作答內容、不連接 Firebase。檢查通過不代表 Google 登入或雲端權限已驗收。</p>
 <ul id="firebase-device-report" aria-label="本裝置同步環境檢查結果" role="status" aria-live="polite"></ul>
-<div class="actions"><button id="firebase-login" type="button" class="primary">以 Google 帳號登入</button><button id="firebase-signout" type="button">登出</button></div>
+<p class="muted">Google 登入採兩步驟，避免手機瀏覽器因等待載入 Firebase SDK 而阻擋登入視窗。先準備登入環境，再親自按下 Google 登入；這兩步都不會上傳學習紀錄。</p>
+<div class="actions"><button id="firebase-prepare" type="button">① 準備 Google 登入環境（不讀取答案）</button><button id="firebase-login" type="button" class="primary" disabled>② 以 Google 帳號登入</button><button id="firebase-signout" type="button">登出</button></div>
 <p id="firebase-user" class="muted">未登入</p>
 <p id="firebase-pending" class="muted" role="status" aria-live="polite">訪客模式：紀錄只存這部裝置；無需登入或連線。</p>
 <div class="actions"><button id="firebase-preview-btn" type="button">預覽網站學習資料及備考書桌差異</button></div>
