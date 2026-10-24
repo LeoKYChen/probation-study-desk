@@ -12,9 +12,14 @@ function load(){
     if(raw){const obj=JSON.parse(raw);if(obj.schema!==core.STORAGE_KEY)throw Error("版本不符");state=core.normalize(obj)}
   }catch(err){readOnly=true;notice("無法讀取既有 v0.6 學習紀錄；為避免覆蓋，已停用修改。請先保存瀏覽器資料。")}
 }
+function notifyOffline(key){
+ if(window.PSDLocalJournal){window.PSDLocalJournal.note(key);return;}
+ try{if(localStorage.getItem('psd-firebase-restore-login-v1')!=='yes')return;}catch{return;}
+ import('../../cloud-sync/local-journal.js').then(()=>window.PSDLocalJournal?.note(key)).catch(()=>{});
+}
 function save(draft){
   if(readOnly)return false;
-  try{localStorage.setItem(core.STORAGE_KEY,JSON.stringify(draft));state=draft;return true}
+  try{localStorage.setItem(core.STORAGE_KEY,JSON.stringify(draft));state=draft;notifyOffline(core.STORAGE_KEY);return true}
   catch(err){readOnly=true;notice("無法儲存學習紀錄。可能是瀏覽器儲存被阻擋或空間不足；操作未保存。");render();return false}
 }
 function clone(){return JSON.parse(JSON.stringify(state))}

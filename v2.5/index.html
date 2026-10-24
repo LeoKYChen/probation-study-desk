@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#315b7c">
   <meta name="description" content="觀護人108至115年考古題練習臺：官方逐字題目、考點拆分、作答方向與本機系統初評。">
   <title>考古題練習｜觀護人練習臺 v2.5</title>
+  <script src="../cloud-sync/local-journal.js"></script>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23102a43'/%3E%3Cpath d='M17 18h30v7H17zm0 12h30v7H17zm0 12h19v7H17z' fill='%2365d6d0'/%3E%3Ccircle cx='46' cy='46' r='8' fill='%23f6c85f'/%3E%3C/svg%3E">
   <style>
     :root {
@@ -773,7 +774,7 @@
         }
       });
     }
-    if (!localStorage.getItem(storageKey)) localStorage.setItem(storageKey, JSON.stringify(saved));
+    if (!localStorage.getItem(storageKey)) {localStorage.setItem(storageKey, JSON.stringify(saved));window.PSDLocalJournal?.note(storageKey);}
     let currentYear = years[0] || 115;
     let currentSubject = subjects[0];
     let currentExamType = examTypes[0];
@@ -795,7 +796,7 @@
     }
     function updateEntry(patch) {
       saved[currentId] = { ...entry(), ...patch, updatedAt:new Date().toISOString() };
-      localStorage.setItem(storageKey, JSON.stringify(saved));
+      localStorage.setItem(storageKey, JSON.stringify(saved));window.PSDLocalJournal?.note(storageKey);
       updateStats();window.dispatchEvent(new Event('practice25:changed'));
     }
     function currentQuestion() { return questionBank.find(q => q.id === currentId); }
@@ -902,7 +903,7 @@
         });
         saved = merged;
       }
-      localStorage.setItem(storageKey, JSON.stringify(saved));
+      localStorage.setItem(storageKey, JSON.stringify(saved));window.PSDLocalJournal?.note(storageKey);
       pendingImport = null;
       render();
       showToast(mode === 'replace' ? '已匯入並取代；原資料亦已備份' : '學習紀錄已合併');
@@ -1525,7 +1526,7 @@
 
     window.Practice25={getRecords:()=>saved,getState:entry,getQuestion:currentQuestion,getQuestions:()=>questionBank,patch:updateEntry,render,
       flush:()=>{clearTimeout(saveTimer);if(currentQuestion()&&issueInput.value!==entry().issue)updateEntry({issue:issueInput.value});},
-      replaceRecords:records=>{const focused=document.activeElement===issueInput,start=issueInput.selectionStart,end=issueInput.selectionEnd;saved=records;localStorage.setItem(storageKey,JSON.stringify(saved));render();if(focused){issueInput.focus();issueInput.setSelectionRange(start,end);}},
+      replaceRecords:records=>{const focused=document.activeElement===issueInput,start=issueInput.selectionStart,end=issueInput.selectionEnd;saved=records;localStorage.setItem(storageKey,JSON.stringify(saved));window.PSDLocalJournal?.note(storageKey);render();if(focused){issueInput.focus();issueInput.setSelectionRange(start,end);}},
       select:id=>{const q=questionBank.find(q=>q.id===id);if(!q)return;currentId=id;currentYear=q.year;currentSubject=q.subject;currentExamType='全部類科';refreshYearSelect();refreshSubjectSelect();render();}};
     window.addEventListener('storage',event=>{if(event.key===storageKey&&event.newValue){try{saved=JSON.parse(event.newValue);render();}catch{}}});
     init();

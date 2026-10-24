@@ -23,7 +23,7 @@ function loadTimers(){
   try{const v=JSON.parse(sessionStorage.getItem(TIMER_KEY)||'{}');if(v&&typeof v==='object'&&!Array.isArray(v))timers=v;}catch{timers={};}
 }
 function writeTimers(){try{sessionStorage.setItem(TIMER_KEY,JSON.stringify(timers));}catch{ /* Timer still works in this open page. */ }}
-function persist(next){if(!storageOK)throw Error('原本紀錄不可讀，為防止覆蓋已停止寫入');M.records(next);localStorage.setItem(KEY,JSON.stringify(next));}
+function persist(next){if(!storageOK)throw Error('原本紀錄不可讀，為防止覆蓋已停止寫入');M.records(next);localStorage.setItem(KEY,JSON.stringify(next));window.PSDLocalJournal?.note(KEY);}
 const DRAFT_FIELDS=[['draftIssue','issues','一、題目爭點'],['draftBasis','basis','二、法律或學理依據'],['draftAnalysis','analysis','三、涵攝與實務應用'],['draftConclusion','conclusion','四、結論']];
 function recordFor(id){return records[id]||{answer:'',review:false,updatedAt:''};}
 function readDrafts(){
@@ -331,7 +331,7 @@ async function importBackup(){
     try{
       localStorage.setItem('daily-reading-test:before-import',JSON.stringify(records));
       localStorage.setItem(KEY,JSON.stringify(next));
-      localStorage.setItem(SAVED_KEY,JSON.stringify(nextSaved));
+      localStorage.setItem(SAVED_KEY,JSON.stringify(nextSaved));window.PSDLocalJournal?.note(KEY);window.PSDLocalJournal?.note(SAVED_KEY);
       sessionStorage.setItem(TIMER_KEY,JSON.stringify(nextTimers));
       // Read back immediately to catch truncation, corruption and unexpected storage failures.
       const checked=M.records(JSON.parse(localStorage.getItem(KEY)));

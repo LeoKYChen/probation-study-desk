@@ -37,6 +37,14 @@ footer{color:#607267;font-size:13px}ul{columns:2;max-width:780px;padding-left:24
  .actions{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
  .actions>button,.file-label{display:flex;width:100%;min-width:0;min-height:52px;padding:11px 14px;align-items:center;justify-content:center;text-align:center;line-height:1.45}
 }
+#firebase-hub .firebase-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+#firebase-hub label{display:block;font-weight:600;color:#315343}
+#firebase-hub input:not([type=checkbox]){display:block;width:100%;padding:10px;min-width:0;border:1px solid #bdcec3;border-radius:8px;font:inherit}
+#firebase-preview{columns:1;max-height:420px;overflow:auto}
+#firebase-status{padding:12px 15px;background:#eef5ef;border-radius:8px;white-space:pre-wrap}
+#firebase-status[data-error="1"]{background:#fff2ee;color:#8f3326}
+#firebase-cleared-warning[hidden]{display:none!important}
+@media(max-width:600px){#firebase-hub .firebase-grid{grid-template-columns:1fr}}
 </style>
 <script src="../file-compat.js" defer></script>
 <link rel="stylesheet" href="../assets/study-theme.css">
@@ -46,6 +54,34 @@ footer{color:#607267;font-size:13px}ul{columns:2;max-width:780px;padding-left:24
 <main>
 <h1>完整學習紀錄備份</h1>
 <p class="muted">一份 JSON 保存本網站目前瀏覽器中的練習紀錄，再由你自行上傳私人 Google Drive；換裝置時匯入即可。不要求帳號、不連接 Google Drive，也不會將答案送到伺服器。</p>
+<p class="muted">手動 JSON 備份功能仍可不登入、不上傳資料，並可自行保存至私人 Google Drive。下方另有<strong>選用的 Firebase 測試同步</strong>，只有本人登入並確認後才會上傳支援的學習資料。</p>
+<div class="card" id="firebase-hub">
+<h2>測試版｜Google Firebase 多裝置同步</h2>
+<p class="muted">預定全站同步基礎。此測試版涵蓋<strong>15 類既有 localStorage 模組及備考書桌 IndexedDB</strong>。其他未列入白名單的資料及背景自動同步尚未接通，仍不得宣稱全站已完全上線。沒有登入或確認時，既有備份及練習功能完全不變。</p>
+<p class="note">使用 Firebase Spark 免費方案，需自行建立 Firebase 專案並設定 Google 登入及 Firestore 規則。此頁使用公開 Web config，不需要雲端管理金鑰。<strong>不可上傳可識別少年個案、公務機密或私人敏感卷證。</strong> Firestore 是由 Google 託管的資料庫，不是端對端加密的私人保險箱。請先確認資料可以合法存入私人雲端；若不確定，請保持免登入本機模式。</p>
+<div class="firebase-grid">
+<label>Firebase projectId<input id="firebase-project" placeholder="your-project-id" autocomplete="off"></label>
+<label>apiKey（公開 Web 金鑰）<input id="firebase-api" placeholder="AIza..." autocomplete="off"></label>
+<label>authDomain<input id="firebase-auth-domain" placeholder="your-project-id.firebaseapp.com" autocomplete="off"></label>
+<label>appId<input id="firebase-app-id" placeholder="1:...:web:..." autocomplete="off"></label>
+</div>
+<div class="actions"><button id="firebase-check-device" type="button">檢查這台裝置的同步環境（免登入）</button></div>
+<p class="muted">只檢查本機瀏覽器功能與連線，不讀取作答內容、不連接 Firebase。檢查通過不代表 Google 登入或雲端權限已驗收。</p>
+<ul id="firebase-device-report" aria-label="本裝置同步環境檢查結果" role="status" aria-live="polite"></ul>
+<p class="muted">Google 登入採兩步驟，避免手機瀏覽器因等待載入 Firebase SDK 而阻擋登入視窗。先準備登入環境，再親自按下 Google 登入；這兩步都不會上傳學習紀錄。</p>
+<div class="actions"><button id="firebase-prepare" type="button">① 準備 Google 登入環境（不讀取答案）</button><button id="firebase-login" type="button" class="primary" disabled>② 以 Google 帳號登入</button><button id="firebase-signout" type="button">登出</button></div>
+<p id="firebase-user" class="muted">未登入</p>
+<p id="firebase-pending" class="muted" role="status" aria-live="polite">訪客模式：紀錄只存這部裝置；無需登入或連線。</p>
+<div class="actions"><button id="firebase-preview-btn" type="button">預覽網站學習資料及備考書桌差異</button></div>
+<p id="firebase-scope" class="muted">尚未預覽。此階段不會自動上傳任何資料。</p>
+<ul id="firebase-preview" aria-label="雲端差異預覽"></ul>
+<div class="actions"><button id="firebase-backup" type="button">① 下載舊模組完整 JSON 備份</button><button id="firebase-backup-desk" type="button">② 下載備考書桌 JSON 備份</button></div>
+<label class="check" id="firebase-cleared-warning" hidden><input type="checkbox" id="firebase-restore-cleared">這台裝置曾清除本機學習紀錄，但雲端舊答案不會因此刪除。我明確同意：本次手動同步可能把已清除的舊答案下載回這台裝置；如不願恢復，請勿勾選或進行同步。</label>
+<label class="check"><input type="checkbox" id="firebase-confirm">我已確認兩份 JSON 備份已實際保存、其他作答分頁已關閉，而且待同步資料不含可識別少年個案或不得上傳的公務資訊；同意依預覽結果保留版本後合併。</label>
+<div class="actions"><button id="firebase-apply" type="button" class="primary" disabled>確認合併並同步</button></div>
+<p id="firebase-status" role="status" aria-live="polite">尚未連接 Firebase，所有資料仍儲存於此裝置。</p>
+<p class="muted">iPhone Safari 可能阻擋 Google 彈出式登入；暫未啟用跨網站重導向登入。首次同步前，仍請在不同網域及裝置各自匯出原始 JSON 備份。</p>
+</div>
 <div class="card">
 <h2>① 下載這台裝置的紀錄</h2>
 <p id="summary">正在檢查資料…</p>
@@ -78,7 +114,7 @@ footer{color:#607267;font-size:13px}ul{columns:2;max-width:780px;padding-left:24
 </div>
 <div class="card" aria-labelledby="clearTitle">
 <h2 id="clearTitle">④ 清除學習紀錄</h2>
-<p class="danger-caption">只清除<strong>目前網站網址、這台裝置</strong>的學習與閱讀紀錄，不會清除其他網址或其他裝置，也不會刪除網站題庫。</p>
+<p class="danger-caption">只清除<strong>目前網站網址、這台裝置</strong>的學習與閱讀紀錄，不會清除其他網址、其他裝置或 Firebase 雲端已上傳的答案，也不會刪除網站題庫。<strong>日後手動同步可能把雲端舊答案重新下載；系統會另行要求明確同意。</strong></p>
 <p>將清除考古題答案、每日練習、模擬題、作文／英文學習進度、週報收藏與已讀、舊版紀錄和不同答案衝突版本；函授會清除<strong>已看分鐘數及已確認課表</strong>，保留課程、堂次、時間設定與排課規則。考試倒數、閱讀字級、自訂 AI 批改提示詞及自訂單字仍保留。</p>
 <p class="note">備考書桌使用獨立的資料庫，請在「備考書桌」頁面使用其清除功能。本頁不會清除該處紀錄；瀏覽器其他分頁中尚未儲存的文字也不受本頁控制。</p>
 <p id="clearSummary" aria-live="polite">正在確認可清除項目…</p>
@@ -93,6 +129,6 @@ footer{color:#607267;font-size:13px}ul{columns:2;max-width:780px;padding-left:24
 <p id="message" role="status" aria-live="polite">此功能僅在你的瀏覽器中處理檔案。</p>
 </main>
 <footer>個人作答、筆記與 AI 評語可能含私人資料；請只上傳到你的私人 Google Drive，勿上傳公開 GitHub 或分享公開連結。這個頁面不支援舊模組單獨 JSON 直接合併，舊檔請仍從原模組匯入。</footer>
-<script src="./unified-core.js"></script><script src="./app.js"></script>
+<script src="./unified-core.js"></script><script src="../cloud-sync/local-clear-guard.js"></script><script src="./app.js"></script><script src="../cloud-sync/local-journal.js"></script><script type="module" src="./firebase-ui.mjs"></script>
 </body>
 </html>

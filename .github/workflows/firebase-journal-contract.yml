@@ -1,0 +1,83 @@
+name: Firebase sync contract (no deployment)
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/firebase-whole-site-sync]
+    paths:
+      - "cloud-sync/**"
+      - "backup/**"
+      - "study-desk/**"
+      - "firestore.rules"
+      - "firebase.emulator.json"
+      - "verification/firebase-rules/**"
+      - "verification/sync/firebase*.mjs"
+      - "verification/sync/firebase*.cjs"
+      - "offline-manifest.json"
+      - "scripts/build-cloudflare-main-mirror.py"
+      - ".github/workflows/firebase-journal-contract.yml"
+      - ".github/workflows/firebase-rules-emulator.yml"
+  pull_request:
+    paths:
+      - "cloud-sync/**"
+      - "backup/**"
+      - "study-desk/**"
+      - "firestore.rules"
+      - "firebase.emulator.json"
+      - "verification/firebase-rules/**"
+      - "verification/sync/firebase*.mjs"
+      - "verification/sync/firebase*.cjs"
+      - "offline-manifest.json"
+      - "scripts/build-cloudflare-main-mirror.py"
+      - ".github/workflows/firebase-journal-contract.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  offline-sync-contract:
+    name: Firebase offline data safety
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Guard against corrupted/duplicated Firestore rules
+        run: node verification/firebase-rules/preflight.cjs
+      - name: Unit-test storage, account isolation and conflict handling
+        run: |
+          node --test \
+            verification/sync/firebase-journal.test.mjs \
+            verification/sync/firebase-pending.test.mjs \
+            verification/sync/firebase-readiness.test.mjs \
+            verification/sync/firebase-clear-guard.test.mjs \
+            verification/sync/firebase-client.test.mjs \
+            verification/sync/firebase.test.mjs \
+            verification/sync/firebase-desk.test.mjs
+      - name: Existing whole-site JSON backup regression tests
+        run: node backup/test.cjs
+      - name: Check every offline asset and HTML dependency
+        run: node verification/offline-stage4-check.cjs
+      - name: Validate Cloudflare mirror includes the public ESM sync files
+        run: |
+          python3 scripts/build-cloudflare-main-mirror.py
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path('cloudflare-main-mirror-dist')
+          manifest=json.loads(Path('offline-manifest.json').read_text('utf-8'))
+          missing=[asset['url'] for asset in manifest['assets'] if not (root/asset['url']).is_file()]
+          assert not missing, 'Offline resources missing from mirror: '+', '.join(missing)
+          for required in (
+            'backup/firebase-ui.mjs',
+            'cloud-sync/firebase-client.mjs',
+            'cloud-sync/whole-site-core.mjs',
+            'cloud-sync/whole-desk-core.mjs',
+            'cloud-sync/local-journal.js',
+            'cloud-sync/local-clear-guard.js',
+          ):
+            assert (root/required).is_file(), f'Missing Firebase public client: {required}'
+          print('PASS offline snapshot assets and Cloudflare browser ESM resources')
+          PY

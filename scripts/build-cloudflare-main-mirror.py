@@ -90,7 +90,9 @@ REQUIRED = (
 
 def allowed(path: str) -> bool:
     parts = PurePosixPath(path).parts
-    if parts and parts[0] == "cloud-sync" and not path.endswith(".js"):
+    # The browser uses public ESM client modules for optional Firebase sync.
+    # Include only static JS/ESM; exclude schema.sql, tests, credentials and docs.
+    if parts and parts[0] == "cloud-sync" and not path.endswith((".js", ".mjs")):
         return False
     if not parts or any(part in DENY_PARTS for part in parts):
         return False

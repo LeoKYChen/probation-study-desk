@@ -1,0 +1,57 @@
+name: Firebase Firestore security rules (emulator only)
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/firebase-whole-site-sync]
+    paths:
+      - "cloud-sync/**"
+      - "backup/**"
+      - "firestore.rules"
+      - "firebase.emulator.json"
+      - "verification/firebase-rules/**"
+      - "verification/sync/firebase*.mjs"
+      - "verification/sync/firebase*.cjs"
+      - "offline-manifest.json"
+      - "scripts/build-cloudflare-main-mirror.py"
+      - ".github/workflows/firebase-journal-contract.yml"
+      - ".github/workflows/firebase-rules-emulator.yml"
+  pull_request:
+    paths:
+      - "firestore.rules"
+      - "firebase.emulator.json"
+      - "verification/firebase-rules/**"
+      - ".github/workflows/firebase-rules-emulator.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  emulator-rules:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+      - name: Set up Node 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Java for Firestore emulator
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - name: Install pinned emulator dependencies (no Google credentials)
+        run: npm --prefix verification/firebase-rules install --no-audit --no-fund
+      - name: Test authorization and anti-overwrite rules in isolated emulator
+        env:
+          FIREBASE_CLI_DISABLE_TELEMETRY: "1"
+          CI: "true"
+        run: |
+          ./verification/firebase-rules/node_modules/.bin/firebase emulators:exec \
+            --only firestore \
+            --project demo-psd-rules \
+            --config firebase.emulator.json \
+            --non-interactive \
+            "node verification/firebase-rules/run.cjs"
