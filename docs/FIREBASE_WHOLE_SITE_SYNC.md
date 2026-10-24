@@ -118,13 +118,21 @@ npm --prefix verification/firebase-rules install --no-audit --no-fund
 
 ## 本輪：CI 觸發與多分頁無損同步檢查
 
-- **驗證方式**：除了 PR 觸發，兩個 Firebase 安全工作流程已加入 `push`（僅 `feature/firebase-whole-site-sync` 開發分支）及 `workflow_dispatch`；均使用 `contents: read`，不含合併或生產部署權限。若 GitHub 未啟動 Actions，須在 PR 的 Checks／Actions 檢查狀態，不能將「有測試檔案」當作「已執行通過」。
+- **驗證方式**：除了 PR 觸發，兩個 Firebase 安全工作流程已加入 `push`（僅 `feature/firebase-whole-site-sync` 開發分支）及 `workflow_dispatch`；均使用 `contents: read`，不含合併或生產部署權限。**注意：GitHub 官方規定 `workflow_dispatch` 必須先存在預設分支才能從 Actions 手動執行。目前 PR 保持 Draft、尚未合併，不能把已寫入手動觸發設定視為可立即點選執行。**若 GitHub 未啟動 Actions，須在 PR 的 Checks／Actions 檢查狀態，不能將「有測試檔案」當作「已執行通過」。
 - **GitHub 端靜態核對結果**：已比對 Firestore `modules` 白名單和 `backup/unified-core.js`，確認目前為 15 類正式學習模組及一類衝突封存（16 個文件 ID），沒有多餘項目。這不等同 Rules Emulator 編譯或行動裝置驗收。
 - **備考書桌低寫入改進**：當差異預覽不需要下載／建立衝突封存時，同步不再額外改寫 IndexedDB；降低重新觸發本機待同步標記的機率。
 - **容量保護補強**：合併時也計入將來生成的 `import/` 衝突封存，若雲端總數將超過 1,000 筆便在寫入前拒絕；不會先寫入一半後讓下次預覽超限。
 - **衝突封存完整性**：對同一次預覽中碰巧重複的隨機封存 ID 也拒絕操作，不能默默覆蓋另一份不同的原始作答。
 - 新增單元測試涵蓋上述情境，並新增 Firestore 模擬器「本人可列出自己的模組、他人與匿名使用者不能列出」驗證，以符合前端 `readAll()` 真實使用方式。
 - **尚未取得最新工作流程成功結果**；仍須執行 Firebase Rules Emulator、全套 browser E2E，及真正 Firebase Spark／iPhone／Mac 驗收。
+
+## 本輪：裝置同步環境自我檢查
+
+- 在備份中心的選用 Firebase 測試區，新增 **「檢查這台裝置的同步環境（免登入）」** 按鈕。檢查 HTTPS 安全來源、localStorage 是否可讀取資料數量、IndexedDB 介面、SHA-256 指紋所需 Web Crypto／TextEncoder，以及目前是否可連線。
+- 自我檢查程式位於 `cloud-sync/readiness.mjs`，**只讀取 localStorage 的筆數屬性，完全不讀取答案值、不開啟 IndexedDB、不寫入資料，也不載入 Firebase SDK 或發出網路請求**。可在訪客模式執行，無須綁卡或登入。
+- 新增 `verification/sync/firebase-readiness.test.mjs`，檢查正常、離線、瀏覽器禁止儲存、不安全網頁與缺少 Web Crypto 的情境，並納入 Firebase 快速 CI 與離線資源清單。
+- 已使用目前 GitHub 版本的 `cloud-sync/readiness.mjs` 執行獨立 JavaScript 模擬測試，確認唯讀與各項失敗判定；另對 `cloud-sync/firebase-client.mjs` 的 UID、CAS、預覽上限執行模擬測試。**這並非真正 iPhone Safari 或 Firestore Emulator 測試，也不代表 Google 登入或雲端安全規則已驗證。**
+- 正式 GitHub Actions 仍未查得最新確認成功結果；在開發分支維持 Draft，不合併、不部署正式網站。
 
 ## 4. 尚未完成的發布阻擋
 
