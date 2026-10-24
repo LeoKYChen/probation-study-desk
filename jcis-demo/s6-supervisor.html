@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-Hant"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'">
+<title>JCIS S6｜主管工作臺（虛構流程展示）</title>
+<style>
+:root{font-family:system-ui,-apple-system,"PingFang TC",sans-serif;color:#18243b;background:#f4f6fb}
+*{box-sizing:border-box}body{margin:0}a{color:#475bc1}button{font:inherit;cursor:pointer}button:disabled{opacity:.35;cursor:not-allowed}
+button:focus-visible,a:focus-visible{outline:3px solid #8ca0f0;outline-offset:3px}
+header{background:#172744;color:white;padding:16px max(18px,calc((100% - 1100px)/2));display:flex;flex-wrap:wrap;align-items:center;gap:13px}
+.logo{padding:11px 15px;border-radius:12px;background:#536bdf;font-weight:900;font-size:19px}
+header strong{display:block;font-size:18px}header small{display:block;color:#c8d3ea;font-size:12px}
+header a{margin-left:auto;color:#d8e2ff;font-size:13px}
+main{max-width:1100px;margin:auto;padding:20px 16px 56px}
+.warning{background:#fff7e8;border:1px solid #f0dbb3;color:#765018;border-radius:14px;padding:14px 18px;font-size:13px;line-height:1.7}
+h1{font-size:clamp(23px,5vw,31px);margin:23px 0 7px}h2{font-size:18px;margin:0 0 12px}
+.caption{font-size:13px;color:#667894;line-height:1.7;margin:0 0 12px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:11px}
+.stat,.panel{border:1px solid #dfe6f4;background:white;border-radius:15px;padding:17px}
+.stat small{font-size:12px;color:#647690;display:block;min-height:30px}.stat strong{font-size:28px}
+.columns{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:15px}.panel{min-width:0}
+.row{border-bottom:1px solid #edf0f8;padding:11px 0;font-size:14px;line-height:1.5}
+.row:last-child{border-bottom:0}.row b{display:block}.row small{color:#71819b;display:block}
+.chip{display:inline-block;border-radius:50px;background:#fdf0df;color:#8b5e1b;padding:4px 9px;font-size:12px}
+.btn{background:#455fd4;color:white;padding:11px 15px;border:0;border-radius:10px;font-size:14px;font-weight:800}
+.btn.secondary{background:#e7ecfa;color:#3b4bb1}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 7px}
+button.reset{background:#f0f2f8;color:#3c4a65}
+.muted{color:#748199;font-size:12px}
+footer{font-size:12px;color:#7b889f;margin-top:20px;line-height:1.7}
+@media(max-width:700px){main{padding:13px 12px 32px}header{padding:14px}header a{width:100%;margin-left:0}.stats{grid-template-columns:repeat(2,1fr)}.columns{grid-template-columns:1fr}.stat{padding:14px}.stat small{min-height:0}.stat strong{font-size:25px}.panel{padding:15px}.actions .btn{flex:1 1 45%}}
+</style></head><body>
+<header><div class="logo">J</div><div><strong>JCIS｜S6 主管工作臺</strong><small>工作清單 · 服務活動量 · 督導意見展示</small></div><a href="./s5-supervisor.html">← 回到主管個案卷宗</a></header>
+<main>
+<div class="warning"><b>僅限公開虛構展示：</b>以下數字及督導示範都不是正式業務紀錄。按鈕只改變目前瀏覽器畫面，不連線 API、不需登入、也不儲存資料。不能輸入或操作真正的少年資料。</div>
+<h1>主管工作臺</h1><p class="caption">讓主管能同時了解待核定、逾期追蹤、承辦案件分布與督導工作。服務活動數量不等於處遇成效。</p>
+<div class="stats">
+ <div class="stat"><small>列管中（虛構樣本）</small><strong>4</strong></div>
+ <div class="stat"><small>待審列管／評估</small><strong>0</strong></div>
+ <div class="stat"><small>示範逾期追蹤任務</small><strong>2</strong></div>
+ <div class="stat"><small>主管待辦事項</small><strong id="open-count">1</strong></div>
+</div>
+<div class="columns">
+ <section class="panel"><h2>待辦與逾期追蹤（示意）</h2>
+  <div class="row"><b>列管案件 M-002｜學校支持</b><small>示範複查：2026-10-20</small><span class="chip">已逾期示例</span></div>
+  <div class="row"><b>列管案件 M-003｜服務連結</b><small>示範下次追蹤：2026-10-18</small><span class="chip">已逾期示例</span></div>
+  <p class="muted">這兩項只是 S6 畫面展示用的假想提醒，並非已經存在 SQLite 的訪查紀錄，也不會自動傳送提醒。</p>
+ </section>
+ <section class="panel"><h2>承辦工作量（取自示範列管案件）</h2>
+  <div class="row"><b>示範承辦 A</b><small>列管中 1 件</small></div>
+  <div class="row"><b>示範承辦 B</b><small>列管中 2 件</small></div>
+  <div class="row"><b>示範承辦 C</b><small>列管中 1 件，舊版示範審查中 1 件（非 S3 正式送審）</small></div>
+  <p class="muted">只計數，不評比人員績效或個案難度。</p>
+ </section>
+ <section class="panel"><h2>主管督導意見（純記憶體模擬）</h2>
+  <div class="row"><b>示範案件 M-002</b>
+   <small>主管督導：「示範請承辦確認就學支持並追蹤。」</small>
+   <small id="note-status">狀態：待處理 · 期限：2026-10-30</small>
+  </div>
+  <div class="actions"><button id="resolve" class="btn">主管｜標示處理完成</button>
+   <button id="reopen" class="btn secondary" disabled>重新新增一筆示範督導待辦</button>
+   <button id="reset" class="btn reset">重設畫面</button></div>
+  <p id="message" aria-live="polite" class="caption">督導原文保持不變；完成操作只會新增一筆模擬歷程。</p>
+  <div id="events" class="row"><small>示範督導紀錄已建立（純模擬）。</small></div>
+ </section>
+ <section class="panel"><h2>服務活動量與成果的區別</h2>
+  <div class="row"><b>訪查與支持活動</b><small>能以系統紀錄彙整活動次數及執行情形</small></div>
+  <div class="row"><b>少年實質處遇成效</b><small>仍需事先設定適當指標、觀察期間、基準與資料品質，不能直接從活動次數推論</small></div>
+  <p class="muted">這個公開頁不使用真實少年服務資料，也不產生再犯預測。</p>
+ </section>
+</div>
+<footer>JCIS S6 · 2026 年虛構功能展示。私人本機版有 Session、主管權限、SQLite 督導歷程與資料過濾；本公開站全部沒有，請勿作為正式核定或督導。</footer>
+</main>
+<script>
+(function(){
+ 'use strict';
+ let status='open',events=['示範督導紀錄已建立（純模擬）'];
+ const el=id=>document.getElementById(id);
+ function render(){
+  el('note-status').textContent='狀態：'+(status==='open'?'待處理 · 期限：2026-10-30':'處理完成（純模擬）');
+  el('open-count').textContent=status==='open'?'1':'0';
+  el('resolve').disabled=status!=='open';el('reopen').disabled=status!=='resolved';
+  el('message').textContent=status==='open'?'可標示這筆示範督導事項已完成。':'已新增完成歷程；督導原文未被修改。';
+  el('events').replaceChildren();events.forEach((txt)=>{const small=document.createElement('small');small.textContent=txt;el('events').appendChild(small);});
+ }
+ el('resolve').addEventListener('click',()=>{if(status!=='open')return;status='resolved';events.push('示範主管標示處理完成（純模擬）');render();});
+ el('reopen').addEventListener('click',()=>{if(status!=='resolved')return;status='open';events.push('示範重新新增一筆督導待辦（非修改舊筆）');render();});
+ el('reset').addEventListener('click',()=>{status='open';events=['示範督導紀錄已建立（純模擬）'];render();});
+ render();
+})();
+</script></body></html>
