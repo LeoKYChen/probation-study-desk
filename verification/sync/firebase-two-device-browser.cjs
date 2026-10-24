@@ -201,6 +201,34 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   await a.waitForFunction(()=>document.querySelector('#firebase-user').textContent.includes('未登入'));
   assert.equal(trace.length,previousWrites,'signing out must disable account restoration and automatic uploads');
   assert.equal(await readDesk(a),'網路中斷前的新訂正','logout must not erase guest study desk');
+
+  // Clearing only this site's local learning records does not delete already
+  // uploaded Firestore documents. A later login MUST NOT silently resurrect
+  // those answers without a second explicit, separately worded opt-in.
+  const clearBackup=await download(a,'#clearBackupBefore');
+  assert.equal(clearBackup.format,'psd-unified-learning-backup');
+  await a.locator('#clearBackupConfirmed').check();
+  await a.locator('#clearTabsConfirmed').check();
+  await a.locator('#clearTyped').fill('清除');
+  await a.locator('#clearLearning').click();
+  await a.waitForFunction(()=>localStorage.getItem('jj-read')===null);
+  const mark=await a.evaluate(()=>localStorage.getItem('psd-firebase-local-clear-guard-v1'));
+  assert(mark&&mark.includes('"schema":1'),'clear intent must survive a page reload');
+  const beforeGuard=trace.length;
+  await a.reload();
+  assert.equal(await a.evaluate(()=>localStorage.getItem('psd-firebase-local-clear-guard-v1')),mark);
+  await connect(a);
+  await a.locator('#firebase-preview-btn').click();
+  await a.waitForFunction(()=>document.querySelector('#firebase-status').textContent.includes('曾清除學習紀錄'));
+  assert.equal(trace.length,beforeGuard,'blocked preview never writes to the cloud');
+  assert.equal(await a.evaluate(()=>localStorage.getItem('jj-read')),null,'old cloud answer was not silently restored');
+  assert.equal(await a.locator('#firebase-cleared-warning').isVisible(),true);
+  await a.locator('#firebase-restore-cleared').check();
+  await preview(a);
+  await apply(a);
+  assert.deepEqual(await a.evaluate(()=>JSON.parse(localStorage.getItem('jj-read'))),['手機初稿','電腦新增','中斷前新閱讀']);
+  assert.equal(await a.evaluate(()=>localStorage.getItem('psd-firebase-local-clear-guard-v1')),null,'guard only cleared after explicit successful restoration');
+  assert.equal(trace.length,beforeGuard,'restoring previously cloud-stored data needs no extra upload');
   assert.equal(outside.length,0,'synthetic transport never contacts real Firebase');
   assert.deepEqual(errors,[]);
   console.log('PASS Firebase whole-site UI: consent, both JSON backups, 15 modules + IndexedDB, two devices');
