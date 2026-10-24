@@ -1,7 +1,7 @@
 'use strict';
 // Two browser contexts with a synthetic cloud transport; no real OAuth / Firebase.
 const assert=require('node:assert/strict');
-const {chromium}=require('playwright');
+const {chromium,webkit}=require('playwright');
 const http=require('node:http'),fs=require('node:fs/promises'),path=require('node:path');
 (async()=>{
  const root=path.resolve(__dirname,'../..');
@@ -16,7 +16,11 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
  });
  await new Promise(r=>server.listen(0,'127.0.0.1',r));
  const base='http://127.0.0.1:'+server.address().port;
- const browser=await chromium.launch({headless:true,executablePath:process.env.BROWSER_EXECUTABLE||chromium.executablePath(),args:['--no-sandbox','--disable-dev-shm-usage']});
+ const engine=process.env.PSD_BROWSER_ENGINE==='webkit'?webkit:chromium;
+ const options={headless:true};
+ if(process.env.BROWSER_EXECUTABLE)options.executablePath=process.env.BROWSER_EXECUTABLE;
+ if(engine===chromium)options.args=['--no-sandbox','--disable-dev-shm-usage'];
+ const browser=await engine.launch(options);
  const contexts=[],errors=[],outside=[];
  const cloud={modules:new Map(),desk:new Map()},trace=[];
  let failDeskWriteOnce=false;
