@@ -5,7 +5,9 @@ import {randomUUID} from 'node:crypto';
 import {FORMAT,LocalRecords,MemoryStore,validateState} from '../../cloud-sync/core.js';
 
 const require=createRequire(import.meta.url);
-const backup=require('../../backup/unified-core.js');
+// The UMD file installs PSDUnifiedBackup on globalThis under Node's ESM package mode.
+const loaded=require('../../backup/unified-core.js');
+const backup=globalThis.PSDUnifiedBackup || loaded;
 const KEY='probation-study-desk-v3';
 function storage(initial={}) {
   const values=new Map(Object.entries(initial));
