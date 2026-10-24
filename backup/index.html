@@ -50,6 +50,9 @@ footer{color:#607267;font-size:13px}ul{columns:2;max-width:780px;padding-left:24
 <label>authDomain<input id="firebase-auth-domain" placeholder="your-project-id.firebaseapp.com" autocomplete="off"></label>
 <label>appId<input id="firebase-app-id" placeholder="1:...:web:..." autocomplete="off"></label>
 </div>
+<div class="actions"><button id="firebase-check-device" type="button">檢查這台裝置的同步環境（免登入）</button></div>
+<p class="muted">只檢查本機瀏覽器功能與連線，不讀取作答內容、不連接 Firebase。檢查通過不代表 Google 登入或雲端權限已驗收。</p>
+<ul id="firebase-device-report" aria-label="本裝置同步環境檢查結果" role="status" aria-live="polite"></ul>
 <div class="actions"><button id="firebase-login" type="button" class="primary">以 Google 帳號登入</button><button id="firebase-signout" type="button">登出</button></div>
 <p id="firebase-user" class="muted">未登入</p>
 <p id="firebase-pending" class="muted" role="status" aria-live="polite">訪客模式：紀錄只存這部裝置；無需登入或連線。</p>
