@@ -3,7 +3,7 @@
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const {initializeTestEnvironment,assertSucceeds,assertFails}=require('@firebase/rules-unit-testing');
-const {doc,getDoc,setDoc,updateDoc,deleteDoc,serverTimestamp}=require('firebase/firestore');
+const {collection,getDocs,doc,getDoc,setDoc,updateDoc,deleteDoc,serverTimestamp}=require('firebase/firestore');
 (async()=>{
  const env=await initializeTestEnvironment({
   projectId:'demo-psd-rules',
@@ -26,6 +26,10 @@ const {doc,getDoc,setDoc,updateDoc,deleteDoc,serverTimestamp}=require('firebase/
   await assertFails(setDoc(doc(alice,'users/user-alice/desk/without-prefix'),create));
   await assertFails(setDoc(doc(alice,'users/user-alice/desk/k~attempt%ZZinvalid'),create));
   await assertSucceeds(setDoc(a,create));
+  const ownCollection=await assertSucceeds(getDocs(collection(alice,'users/user-alice/modules')));
+  assert.equal(ownCollection.docs.length,1,'owner may safely list its own module records');
+  await assertFails(getDocs(collection(bob,'users/user-alice/modules')));
+  await assertFails(getDocs(collection(guest,'users/user-alice/modules')));
   const owned=await assertSucceeds(getDoc(a));
   assert.equal(owned.data().revision,1);
   assert.equal(owned.data().raw,create.raw);
