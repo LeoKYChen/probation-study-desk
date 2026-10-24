@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {MemoryStore,emptyState} from '../../cloud-sync/core.js';
-import {prepareDesk,commitDesk} from '../../cloud-sync/whole-desk-core.mjs';
+import {prepareDesk,commitDesk,MAX_DESK_PREVIEW_DOCS} from '../../cloud-sync/whole-desk-core.mjs';
 function backend(){
  const docs=Object.create(null);
  return {docs,api:{
@@ -87,4 +87,27 @@ test('malformed remote attempt is rejected without mutating guest IndexedDB',asy
  cloud.docs['attempt/answer']={revision:1,raw:JSON.stringify({value:{kind:'attempt',answer:'remote'},deleted:'not-a-boolean'})};
  await assert.rejects(prepareDesk(await guest.read(),await cloud.api.readAll()),/雲端版本/);
  assert.deepEqual(await guest.read(),before);
+});
+
+test('oversized study-desk merges stop before Firestore writes or local mutation',async()=>{
+ const cloud=backend(),guest=new MemoryStore(emptyState());
+ for(let i=0;i<=MAX_DESK_PREVIEW_DOCS;i++){
+  const id='attempt/'+i;
+  guest.state.records[id]={value:{kind:'attempt',answer:'small synthetic answer'},deleted:false,revision:0};
+ }
+ const original=await guest.read();
+ await assert.rejects(
+  prepareDesk(await guest.read(),await cloud.api.readAll()),
+  /備考書桌待合併紀錄超過/
+ );
+ assert.equal(Object.keys(cloud.docs).length,0);
+ assert.deepEqual(await guest.read(),original);
+});
+test('study-desk supports exactly the maximum verified count',async()=>{
+ const cloud=backend(),guest=new MemoryStore(emptyState());
+ for(let i=0;i<MAX_DESK_PREVIEW_DOCS;i++)
+  guest.state.records['attempt/'+i]={value:{kind:'attempt',answer:'synthetic'},deleted:false,revision:0};
+ const plan=await prepareDesk(await guest.read(),await cloud.api.readAll());
+ assert.equal(Object.keys(plan.uploads).length,MAX_DESK_PREVIEW_DOCS);
+ assert.equal(Object.keys(cloud.docs).length,0,'preview must never upload');
 });
