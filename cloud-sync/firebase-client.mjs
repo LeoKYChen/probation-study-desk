@@ -87,6 +87,23 @@ export function createUserScopedAdapter(fs,db,auth,type='modules'){
   }
  };
 }
+/**
+ * Popup sign-in must be entered directly from a trusted click. Keep the
+ * signInWithPopup call ahead of every await: mobile WebKit user activation
+ * may expire during network/SDK/persistence work.
+ */
+export function createPopupLogin(auth,authLib){
+ return async function login(){
+  try {await authLib.signInWithPopup(auth,new authLib.GoogleAuthProvider());}
+  catch(e){
+   if(['auth/popup-blocked','auth/operation-not-supported-in-this-environment',
+      'auth/cancelled-popup-request'].includes(e.code))
+    throw Error('此瀏覽器阻擋 Google 登入視窗。請改用桌面瀏覽器或設定同站登入後再測試 iPhone；暫不使用可能受 Safari 限制的跨網域重新導向');
+   throw e;
+  }
+  return auth.currentUser;
+ };
+}
 const SDK='https://www.gstatic.com/firebasejs/12.19.0/';
 let modules;
 async function sdk() {
@@ -107,16 +124,7 @@ export async function openFirebase(publicConfig){
  // the user's subsequent popup click handler. Delays can lose Safari's
  // short-lived user-activation grant.
  await authLib.setPersistence(auth,authLib.browserLocalPersistence);
- async function login(){
-  try {await authLib.signInWithPopup(auth,new authLib.GoogleAuthProvider());}
-  catch(e){
-   if(['auth/popup-blocked','auth/operation-not-supported-in-this-environment',
-      'auth/cancelled-popup-request'].includes(e.code))
-    throw Error('此瀏覽器阻擋 Google 登入視窗。請改用桌面瀏覽器或設定同站登入後再測試 iPhone；暫不使用可能受 Safari 限制的跨網域重新導向');
-   throw e;
-  }
-  return auth.currentUser;
- }
+ const login=createPopupLogin(auth,authLib);
  const username=()=>auth.currentUser?.email||'';
  const user=()=>auth.currentUser;
  const signOut=()=>authLib.signOut(auth);
