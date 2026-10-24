@@ -24,6 +24,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "24"
+      - name: Guard against corrupted/duplicated Firestore rules
+        run: node verification/firebase-rules/preflight.cjs
       - name: Unit-test storage, account isolation and conflict handling
         run: |
           node --test \
