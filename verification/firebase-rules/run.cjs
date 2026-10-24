@@ -22,7 +22,9 @@ const {doc,getDoc,setDoc,updateDoc,deleteDoc,serverTimestamp}=require('firebase/
   await assertFails(getDoc(b));
   await assertFails(setDoc(b,create));
   await assertFails(setDoc(doc(alice,'users/user-alice/modules/without-prefix'),create));
+  await assertFails(setDoc(doc(alice,'users/user-alice/modules/k~unapproved-module'),create));
   await assertFails(setDoc(doc(alice,'users/user-alice/desk/without-prefix'),create));
+  await assertFails(setDoc(doc(alice,'users/user-alice/desk/k~attempt%ZZinvalid'),create));
   await assertSucceeds(setDoc(a,create));
   const owned=await assertSucceeds(getDoc(a));
   assert.equal(owned.data().revision,1);
