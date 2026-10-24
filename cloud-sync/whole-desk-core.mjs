@@ -56,6 +56,12 @@ export async function prepareDesk(local,documents,shadow={},uuid=()=>crypto.rand
   archive[archiveId]=saved;uploads[archiveId]={raw:archivedRaw,expected:0};
   changes[id]=theirs;statuses.push({id,status:'conflict'});
  }
+ // Conflict archives are additional immutable cloud docs. Even if the
+ // original ID union fits, creating archives must not exceed the next preview
+ // boundary; otherwise a partly synced device could become unusable.
+ const futureDocs=new Set([...Object.keys(documents),...Object.keys(uploads)]);
+ if(futureDocs.size>MAX_DESK_PREVIEW_DOCS)
+  throw Error('合併後備考書桌雲端紀錄將超過 '+MAX_DESK_PREVIEW_DOCS+' 筆，已停止以避免部分寫入；請保留原始 JSON 並改用分批同步方案');
  return {uploads,changes,archive,statuses,baseline:structuredClone(local),cloud:documents,
    conflicts:statuses.filter(x=>x.status==='conflict').length};
 }
@@ -71,14 +77,22 @@ export async function commitDesk(store,adapter,plan){
   assertFits(item.raw,id);
   remoteVersions[id]=await adapter.compareAndSet(id,item.raw,item.expected);
  }
- await store.update(state=>{
-  if(JSON.stringify(state)!==JSON.stringify(plan.baseline))
-   throw Error('同步期間仍有其他分頁寫入書桌，未改動本機，請重新預覽');
-  for(const [id,rec] of Object.entries(plan.changes))
-   state.records[id]={value:structuredClone(rec.value),deleted:rec.deleted,revision:0};
-  for(const [id,rec] of Object.entries(plan.archive))
-   state.records[id]={value:structuredClone(rec.value),deleted:false,revision:0};
- });
+ if(Object.keys(plan.changes).length||Object.keys(plan.archive).length){
+  await store.update(state=>{
+   if(JSON.stringify(state)!==JSON.stringify(plan.baseline))
+    throw Error('同步期間仍有其他分頁寫入書桌，未改動本機，請重新預覽');
+   for(const [id,rec] of Object.entries(plan.changes))
+    state.records[id]={value:structuredClone(rec.value),deleted:rec.deleted,revision:0};
+   for(const [id,rec] of Object.entries(plan.archive))
+    state.records[id]={value:structuredClone(rec.value),deleted:false,revision:0};
+  });
+ }else{
+  // Upload-only and no-op exchanges must NOT rewrite all guest IndexedDB
+  // records (or generate a new offline-dirty event in study-desk/app.js).
+  const latest=await store.read();
+  if(JSON.stringify(latest)!==JSON.stringify(plan.baseline))
+   throw Error('同步期間仍有其他分頁寫入書桌，請重新預覽');
+ }
  const updated=await store.read(),shadow=Object.create(null);
  for(const [id,rec] of Object.entries(updated.records)){
   if(id==='settings/recommendation-audit')continue;
