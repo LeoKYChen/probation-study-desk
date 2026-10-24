@@ -39,6 +39,9 @@ export function assertCurrentUser(expectedUid,currentUser){
  * the entire read and transaction path can be tested without real credentials.
  * The browser never passes a UID from user-supplied form fields.
  */
+// Bound per collection so one mistaken preview cannot unexpectedly consume the
+// daily free Firestore document reads on an oversized account.
+export const MAX_REMOTE_PREVIEW_DOCS=1000;
 export function createUserScopedAdapter(fs,db,auth,type='modules'){
  if(!['modules','desk'].includes(type))throw Error('不支援的雲端資料區');
  const uid=auth?.currentUser?.uid;
@@ -49,8 +52,14 @@ export function createUserScopedAdapter(fs,db,auth,type='modules'){
  return {
   async readAll(){
    assertOwner();
-   const snap=await fs.getDocsFromServer(base);
+   // Read at most 1001 documents to detect overflow, without silently
+   // truncating the data or proceeding to an unsafe partial merge.
+   const snap=await fs.getDocsFromServer(
+    fs.query(base,fs.limit(MAX_REMOTE_PREVIEW_DOCS+1))
+   );
    assertOwner();
+   if(snap.docs.length>MAX_REMOTE_PREVIEW_DOCS)
+    throw Error('雲端學習資料超過單次預覽上限 '+MAX_REMOTE_PREVIEW_DOCS+' 筆。已停止，請保留 JSON 備份並改用分批同步方案');
    const result=Object.create(null);
    for(const item of snap.docs){
     const key=decodeDocumentId(item.id);
