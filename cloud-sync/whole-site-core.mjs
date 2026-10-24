@@ -109,17 +109,22 @@ export async function prepare(core,local,docs,shadow={}) {
  * only remaining copy. After a conflict, caller must re-preview and retry.
  * Upload adapter compareAndSet returns the new integer revision.
  */
-export async function commit(core,storage,adapter,plan) {
+export async function commit(core,storage,adapter,plan,assertCurrent=()=>{}) {
+  // Synchronous caller guard: recheck consent/identity around asynchronous IO.
+  assertCurrent();
   const before=core.storageSnapshot(storage);
   for(const key of new Set([...Object.keys(before),...Object.keys(plan.baseline)]))
     if(before[key]!==plan.baseline[key])throw Error('本機紀錄在預覽後已修改，請重新檢視；未寫入雲端');
   const revisions=Object.create(null);
   const entries=Object.entries(plan.uploads).sort(([a],[b])=>(a===ARCHIVE?-1:b===ARCHIVE?1:0));
   for(const [key,op] of entries){
+    assertCurrent();
     assertFits(op.raw,key);
     revisions[key]=await adapter.compareAndSet(key,op.raw,op.expected);
+    assertCurrent();
   }
   // Only now change localStorage, using the existing rollback + stale guard.
+  assertCurrent();
   core.apply(storage,{changes:plan.localChanges,baseline:plan.baseline});
   const shadow=Object.create(null);
   for(const [key,raw] of Object.entries(plan.next)){

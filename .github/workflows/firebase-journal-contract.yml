@@ -7,6 +7,7 @@ on:
     paths:
       - "cloud-sync/**"
       - "backup/**"
+      - "study-desk/**"
       - "firestore.rules"
       - "firebase.emulator.json"
       - "verification/firebase-rules/**"
@@ -20,6 +21,7 @@ on:
     paths:
       - "cloud-sync/**"
       - "backup/**"
+      - "study-desk/**"
       - "firestore.rules"
       - "firebase.emulator.json"
       - "verification/firebase-rules/**"

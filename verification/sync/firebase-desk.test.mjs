@@ -160,3 +160,29 @@ test('two different conflicts cannot silently share one immutable archive ID',as
  assert.deepEqual(await guest.read(),original,'both original drafts must remain intact');
  assert.equal(Object.keys(cloud.docs).length,2,'no conflict archive was uploaded');
 });
+
+test('clear while upload is pending stops desk restoration',async()=>{
+ const guest=new MemoryStore(emptyState()),cloud=backend();
+ await add(guest,'attempt/local','synthetic-local');
+ cloud.docs['attempt/remote']={revision:1,raw:JSON.stringify({value:{answer:'synthetic-cloud'},deleted:false})};
+ const plan=await prepareDesk(await guest.read(),await cloud.api.readAll());
+ let cleared=false;
+ const adapter={compareAndSet:async(...args)=>{
+  const revision=await cloud.api.compareAndSet(...args);cleared=true;return revision;
+ }};
+ await assert.rejects(commitDesk(guest,adapter,plan,()=>{
+  if(cleared)throw Error('清除狀態已變更');
+ }),/清除狀態已變更/);
+ assert.equal((await guest.read()).records['attempt/remote'],undefined);
+});
+test('recheck clear intent inside the IndexedDB update callback after waiting for its transaction',async()=>{
+ const guest=new MemoryStore(emptyState()),cloud=backend();
+ cloud.docs['attempt/remote']={revision:1,raw:JSON.stringify({value:{answer:'synthetic-cloud'},deleted:false})};
+ const plan=await prepareDesk(await guest.read(),await cloud.api.readAll());
+ let cleared=false;
+ const store={read:()=>guest.read(),update:fn=>{cleared=true;return guest.update(fn);}};
+ await assert.rejects(commitDesk(store,cloud.api,plan,()=>{
+  if(cleared)throw Error('清除狀態已變更');
+ }),/清除狀態已變更/);
+ assert.deepEqual((await guest.read()).records,{});
+});

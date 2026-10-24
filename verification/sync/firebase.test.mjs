@@ -95,3 +95,17 @@ test('unknown storage keys stay local, and other accounts are not mixed into the
  assert.equal(Object.hasOwn(cloud.docs,'unrelated-secret-token'),false);
  assert.equal(a.getItem('unrelated-secret-token'),'no-sync');
 });
+
+test('clear during an awaited cloud write stops subsequent writes and local restoration',async()=>{
+ const local=storage({'jj-bookmarks':'["synthetic-local"]','jj-font':'18'}),cloud=backend();
+ cloud.docs['jj-read']={revision:1,raw:'["synthetic-cloud"]'};
+ const plan=await prepare(core,local.snapshot(),await cloud.adapter.readAll());
+ let cleared=false,writes=0;
+ const adapter={compareAndSet:async(...args)=>{
+  writes++;const revision=await cloud.adapter.compareAndSet(...args);cleared=true;return revision;
+ }};
+ const assertCurrent=()=>{if(cleared)throw Error('清除狀態已變更');};
+ await assert.rejects(commit(core,local,adapter,plan,assertCurrent),/清除狀態已變更/);
+ assert.equal(writes,1,'an in-flight request may complete; no further upload is allowed');
+ assert.equal(local.getItem('jj-read'),null,'cloud answers must not be restored');
+});

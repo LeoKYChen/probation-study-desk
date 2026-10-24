@@ -23,7 +23,7 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
  const browser=await engine.launch(options);
  const contexts=[],errors=[],outside=[];
  const cloud={modules:new Map(),desk:new Map()},trace=[];
- let failDeskWriteOnce=false;
+ let failDeskWriteOnce=false,afterWriteOnce=null;
  const mockModule=[
   'export function validateFirebaseConfig(x) {',
   " if(!x || !x.apiKey || !x.authDomain || !x.projectId || !x.appId)throw Error('設定格式不符');",
@@ -56,6 +56,7 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   if(rev!==data.expected)throw Error('另一裝置已更新');
   values.set(data.key,{revision:rev+1,raw:data.raw});
   trace.push({type:data.type,key:data.key,revision:rev+1});
+  if(afterWriteOnce){const action=afterWriteOnce;afterWriteOnce=null;await action();}
   return rev+1;
  }
  async function device(){
@@ -257,6 +258,33 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   await c.waitForFunction(()=>document.querySelector('#firebase-status').textContent.includes('曾清除學習紀錄'));
   assert.equal(trace.length,cloudBeforeDeskRestore,'desk clearing cannot trigger hidden cloud upload or restore');
   assert.equal(await c.evaluate(()=>localStorage.getItem('psd-firebase-local-clear-guard-v1')),deskClearGuard);
+  // Clear from a real second tab while the first tab awaits a CAS response.
+  // Empty-before/empty-after records defeat a snapshot-only stale check.
+  const d=await device();
+  await d.evaluate(()=>localStorage.setItem('jj-bookmarks','["synthetic-race-upload"]'));
+  await connect(d);await preview(d);
+  const clearingTab=await d.context().newPage();
+  await clearingTab.goto(base+'/backup/');
+  await download(d,'#firebase-backup');await download(d,'#firebase-backup-desk');
+  await d.locator('#firebase-confirm').check();
+  const beforeRace=trace.length;
+  let raceMarker;
+  afterWriteOnce=async()=>{
+   raceMarker=await clearingTab.evaluate(()=>{
+    const marker=window.PSDLocalClearGuard.mark(localStorage);
+    for(const {key} of window.PSDUnifiedBackup.modules)localStorage.removeItem(key);
+    return marker;
+   });
+  };
+  await d.locator('#firebase-apply').click();
+  await d.waitForFunction(()=>document.querySelector('#firebase-status').textContent.includes('同步期間本機清除紀錄'));
+  assert.equal(trace.length,beforeRace+1,'only the already in-flight CAS may finish');
+  assert.equal(await d.evaluate(()=>localStorage.getItem('jj-read')),null,'no old module answers restored after concurrent clear');
+  assert.equal(await readDesk(d),undefined,'no desk download starts after concurrent clear');
+  assert.equal(await d.evaluate(()=>localStorage.getItem('psd-firebase-local-clear-guard-v1')),raceMarker,'new warning survives failed sync');
+  assert.equal(await d.locator('#firebase-apply').isDisabled(),true,'stale approval discarded');
+  await d.locator('#firebase-preview-btn').click();
+  await d.waitForFunction(()=>document.querySelector('#firebase-status').textContent.includes('曾清除學習紀錄'));
   assert.equal(outside.length,0,'synthetic transport never contacts real Firebase');
   assert.deepEqual(errors,[]);
   console.log('PASS Firebase whole-site UI: consent, both JSON backups, 15 modules + IndexedDB, two devices');

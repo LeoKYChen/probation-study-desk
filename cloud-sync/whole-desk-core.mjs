@@ -66,8 +66,10 @@ export async function prepareDesk(local,documents,shadow={},uuid=()=>crypto.rand
  return {uploads,changes,archive,statuses,baseline:structuredClone(local),cloud:documents,
    conflicts:statuses.filter(x=>x.status==='conflict').length};
 }
-export async function commitDesk(store,adapter,plan){
+export async function commitDesk(store,adapter,plan,assertCurrent=()=>{}){
+ assertCurrent();
  const before=await store.read();
+ assertCurrent();
  if(JSON.stringify(before)!==JSON.stringify(plan.baseline))
   throw Error('書桌紀錄在預覽後已變更，請停止同步並重新預覽');
  const remoteVersions=Object.create(null);
@@ -75,11 +77,16 @@ export async function commitDesk(store,adapter,plan){
  // must never be able to erase the last known unique local answer.
  const entries=Object.entries(plan.uploads).sort(([a],[b])=>(a.startsWith('import/')?-1:b.startsWith('import/')?1:0));
  for(const [id,item] of entries){
+  assertCurrent();
   assertFits(item.raw,id);
   remoteVersions[id]=await adapter.compareAndSet(id,item.raw,item.expected);
+  assertCurrent();
  }
  if(Object.keys(plan.changes).length||Object.keys(plan.archive).length){
+  assertCurrent();
   await store.update(state=>{
+   // The transaction may wait behind another tab clearing an already empty DB.
+   assertCurrent();
    if(JSON.stringify(state)!==JSON.stringify(plan.baseline))
     throw Error('同步期間仍有其他分頁寫入書桌，未改動本機，請重新預覽');
    for(const [id,rec] of Object.entries(plan.changes))
@@ -94,7 +101,9 @@ export async function commitDesk(store,adapter,plan){
   if(JSON.stringify(latest)!==JSON.stringify(plan.baseline))
    throw Error('同步期間仍有其他分頁寫入書桌，請重新預覽');
  }
+ assertCurrent();
  const updated=await store.read(),shadow=Object.create(null);
+ assertCurrent();
  for(const [id,rec] of Object.entries(updated.records)){
   if(id==='settings/recommendation-audit')continue;
   const revision=remoteVersions[id]||plan.cloud[id]?.revision;

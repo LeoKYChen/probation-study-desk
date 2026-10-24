@@ -258,10 +258,19 @@ $('firebase-apply').addEventListener('click',()=>perform(async()=>{
  // Bind the shared browser origin BEFORE the first upload, so a failed
  // second stage cannot later leak the first user's data to another account.
  localStorage.setItem(BOUND,JSON.stringify({uid:cloudUser.uid,projectId:connection.projectId}));
- const result=await commit(core,localStorage,adapter,plan);
+ // Capture this operation's token, rather than mutable preview state which
+ // another tab's storage event can invalidate while a request is in flight.
+ const assertCurrent=()=>{
+  assertIdentity();
+  if(currentClearGuard()!==cleared)
+   throw Error('同步期間本機清除紀錄的狀態已改變，已停止同步，請重新預覽');
+ };
+ const result=await commit(core,localStorage,adapter,plan,assertCurrent);
+ assertCurrent();
  saveShadow(result.shadow);
  // If desk sync fails, the legacy modules already completed safely; preview again to resume.
- const deskResult=await commitDesk(deskStore,deskAdapter,deskPlan);
+ const deskResult=await commitDesk(deskStore,deskAdapter,deskPlan,assertCurrent);
+ assertCurrent();
  saveDeskShadow(deskResult.shadow);
  if(cleared)window.PSDLocalClearGuard.acknowledge(localStorage,cleared);
  $('firebase-restore-cleared').checked=false;

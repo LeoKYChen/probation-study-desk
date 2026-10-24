@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - "backup/**"
+      - "study-desk/**"
       - "cloud-sync/**"
       - "verification/sync/firebase-browser.cjs"
       - "verification/sync/firebase-two-device-browser.cjs"
@@ -13,6 +14,7 @@ on:
     branches: [feature/firebase-whole-site-sync]
     paths:
       - "backup/**"
+      - "study-desk/**"
       - "cloud-sync/**"
       - "verification/sync/firebase-browser.cjs"
       - "verification/sync/firebase-two-device-browser.cjs"
