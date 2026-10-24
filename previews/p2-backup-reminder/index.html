@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>P2 預覽｜7 天備份提醒</title>
+<style>
+:root{color-scheme:light;font-family:system-ui,"Noto Sans TC","PingFang TC",sans-serif;color:#273d4b;background:#f5f7f7}
+*{box-sizing:border-box}body{margin:0;padding:25px 16px}main{max-width:770px;margin:auto}.tag{color:#526d87;font-weight:700;letter-spacing:.05em}.panel{border-radius:17px;background:#fff;border:1px solid #d8e3ea;padding:20px;margin-top:18px;box-shadow:0 4px 13px #273d4b0a}h1{font-size:clamp(1.5rem,4vw,2rem)}.small{font-size:.88rem;color:#667881}.row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.sub{border-top:1px solid #e4e9ec;margin-top:20px;padding-top:18px}button{border:1px solid #aebfcb;border-radius:10px;background:#f4f8fb;color:#21475d;padding:10px 14px;font-size:1rem;cursor:pointer}button.primary{background:#315b7c;color:#fff;border-color:#315b7c}button:focus-visible{outline:3px solid #f5b553}button:hover{filter:brightness(.96)}.alert{background:#f5eddc;border:1px solid #e6cf9f;border-radius:12px;padding:15px;margin-top:16px}.good{color:#276647}.warn{color:#8b5529}label{font-weight:600}input{min-height:40px;width:84px;border:1px solid #bbcbd3;border-radius:8px;padding:6px;font:inherit}.hint{border-left:4px solid #86aac1;padding-left:12px;margin:18px 0}
+</style></head><body><main>
+<p class="tag">PROTOTYPE · P2 · 僅獨立預覽</p>
+<h1>備份提醒怎麼顯示？</h1>
+<p class="small">本頁不連接任何正式作答資料、不呼叫 API、不儲存或上傳個人備份。下方是可互動的「合成日期」示範；不會更動正式網站。</p>
+<div class="panel"><div class="row"><h2>7 天備份檢查</h2><label>模擬今天日期 <input id="days" type="number" min="0" max="365" value="8" aria-label="距離上次備份的天數"></label></div>
+<p class="hint">提醒以「使用者確認檔案已保存」為準，不以按下下載鍵就宣稱備份成功。不同備份範圍分別計算。</p>
+<section class="sub" data-scope="desk"><div class="row"><div><strong>備考書桌（IndexedDB）</strong><p class="small">使用書桌專用 JSON 匯出，不包含在舊版完整備份中心</p></div><span id="desk-status"></span></div><div id="desk-reminder" class="alert" role="status"></div><p class="row"><button data-action="download" data-scope="desk">模擬下載已啟動</button><button data-action="confirm" data-scope="desk" class="primary">我已確認保存</button><button data-action="snooze" data-scope="desk">稍後提醒</button></p></section>
+<section class="sub" data-scope="legacy"><div class="row"><div><strong>其他練習模組（localStorage）</strong><p class="small">v2.5、專業科目、函授、每日模擬等現有備份範圍</p></div><span id="legacy-status"></span></div><div id="legacy-reminder" class="alert" role="status"></div><p class="row"><button data-action="download" data-scope="legacy">模擬下載已啟動</button><button data-action="confirm" data-scope="legacy" class="primary">我已確認保存</button><button data-action="snooze" data-scope="legacy">稍後提醒</button></p></section>
+<p class="small">正式版規格：提醒不能遮蔽作答，不能把兩個模組的完成狀態合併，也不跨網域推定同步。</p></div>
+<p class="small">核定紀錄：GitHub Issue #91。這是純前端概念預覽，未經主站 iPhone／Safari 實測，尚無正式導入授權。</p>
+</main><script>
+(() => {
+ 'use strict';
+ const state={desk:{age:8,dismissed:false,downloadStarted:false},legacy:{age:8,dismissed:false,downloadStarted:false}};
+ const $=id=>document.getElementById(id);
+ function draw(scope){
+  const s=state[scope],status=$(scope+'-status'),tip=$(scope+'-reminder');
+  const overdue=s.age>7 && !s.dismissed;
+  status.textContent=overdue?'需備份':s.dismissed?'已延後':'尚在提醒期限內';
+  status.className=overdue?'warn':'good';
+  tip.hidden=!overdue;
+  tip.textContent='距離上次確認備份 '+s.age+' 天；請由原模組匯出 JSON，下載後自行確認檔案已保存。';
+  if(s.downloadStarted&&!s.dismissed&&!overdue){tip.hidden=false;tip.textContent='下載已啟動，但這不等於檔案已確認保存。';}
+ }
+ function drawAll(){for(const x of Object.keys(state))draw(x);}
+ $('days').addEventListener('input',event=>{const n=Number(event.target.value);if(!Number.isInteger(n)||n<0||n>365)return;for(const scope of Object.keys(state)){state[scope].age=n;state[scope].dismissed=false;state[scope].downloadStarted=false;}drawAll();});
+ document.querySelectorAll('[data-action]').forEach(b=>b.addEventListener('click',()=>{
+  const scope=b.dataset.scope,s=state[scope];
+  switch(b.dataset.action){
+   case 'download':s.downloadStarted=true;break;
+   case 'confirm':s.age=0;s.dismissed=false;s.downloadStarted=false;break;
+   case 'snooze':s.dismissed=true;break;
+  }
+  draw(scope);
+ }));
+ drawAll();
+})();
+</script></body></html>
