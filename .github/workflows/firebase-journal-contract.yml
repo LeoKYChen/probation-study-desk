@@ -20,6 +20,9 @@ on:
     paths:
       - "cloud-sync/**"
       - "backup/**"
+      - "firestore.rules"
+      - "firebase.emulator.json"
+      - "verification/firebase-rules/**"
       - "verification/sync/firebase*.mjs"
       - "verification/sync/firebase*.cjs"
       - "offline-manifest.json"
