@@ -1,0 +1,42 @@
+name: Firebase two-device browser safety (synthetic, no deployment)
+
+on:
+  pull_request:
+    paths:
+      - "backup/**"
+      - "cloud-sync/**"
+      - "verification/sync/firebase-browser.cjs"
+      - "verification/sync/firebase-two-device-browser.cjs"
+      - "verification/sync/package.json"
+      - ".github/workflows/firebase-browser-contract.yml"
+  push:
+    branches: [feature/firebase-whole-site-sync]
+    paths:
+      - "backup/**"
+      - "cloud-sync/**"
+      - "verification/sync/firebase-browser.cjs"
+      - "verification/sync/firebase-two-device-browser.cjs"
+      - "verification/sync/package.json"
+      - ".github/workflows/firebase-browser-contract.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  two-device-contract:
+    name: Chromium no-network two-device acceptance
+    runs-on: ubuntu-latest
+    timeout-minutes: 16
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Install isolated pinned browser test dependencies
+        run: npm --prefix verification/sync install --no-audit --no-fund
+      - name: Install isolated Chromium
+        run: ./verification/sync/node_modules/.bin/playwright install --with-deps chromium
+      - name: Guest backup, no Firebase SDK or cloud before explicit opt-in
+        run: node verification/sync/firebase-browser.cjs
+      - name: Two-device synthetic cloud, consent, backup, conflict and offline recovery
+        run: node verification/sync/firebase-two-device-browser.cjs
