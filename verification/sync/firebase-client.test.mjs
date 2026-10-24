@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {encodeDocumentId,decodeDocumentId,validateFirebaseConfig} from '../../cloud-sync/firebase-client.mjs';
+import {encodeDocumentId,decodeDocumentId,validateFirebaseConfig,assertCurrentUser} from '../../cloud-sync/firebase-client.mjs';
 test('Firestore document IDs are reversible even for dotted and slashed keys',()=>{
  for(const key of ['.','..','attempt/1234','settings/preferences','jj-read','topic:2026','import/a%2Fb']){
   const encoded=encodeDocumentId(key);
@@ -23,4 +23,12 @@ test('Firebase accepts only public web app configuration with an official projec
  assert.deepEqual(validateFirebaseConfig(good),good);
  assert.throws(()=>validateFirebaseConfig({...good,authDomain:'attacker.example'}),/設定格式/);
  assert.throws(()=>validateFirebaseConfig({...good,apiKey:'sb_secret_foo'}),/設定格式/);
+});
+
+test('Firebase adapter requires the same current uid before and after async operations',()=>{
+ assert.doesNotThrow(()=>assertCurrentUser('firebase-user-A',{uid:'firebase-user-A'}));
+ for(const changed of [null,undefined,{uid:'firebase-user-B'},{uid:''},{email:'example@test.invalid'}]){
+  assert.throws(()=>assertCurrentUser('firebase-user-A',changed),/帳號在同步期間已變更/);
+ }
+ assert.throws(()=>assertCurrentUser('',{uid:'firebase-user-A'}),/帳號在同步期間已變更/);
 });
