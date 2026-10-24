@@ -99,6 +99,14 @@ npm --prefix verification/firebase-rules install --no-audit --no-fund
 
 **模擬器測試結果與真實 Firebase 驗收不同。** 通過模擬器只能證明在測試情境下權限規則符合預期；實際網域授權、iOS Safari Google 登入、Spark 配額與兩部裝置同步仍需另行驗收。
 
+## 本輪補強：帳號切換防護及文件識別碼限制
+
+- `cloud-sync/firebase-client.mjs` 將 Firestore 存取封裝為可用合成帳號測試的 `createUserScopedAdapter`。在讀取請求前後及寫入交易各階段檢查最新 Google UID，帳號被另一分頁登出／切換時不再繼續原操作。
+- `verification/sync/firebase-client.test.mjs` 模擬跨帳號變更、交易讀取中登出、revision CAS、非法集合與非標準識別碼；不要求真正 Firebase 專案。
+- Firestore Rules 建立文件時增加 `k~` 識別碼前綴限制，與前端 `encodeDocumentId()` 一致。模擬器另測試拒絕不合法的 `modules` 與 `desk` 文件 ID。
+- **注意：只有文件 ID 前綴的初步格式限制；用戶端另有完整編碼驗證。** 真實 Firestore、Google OAuth、iPhone 與跨網域測試仍未完成，不把模擬器測試當作線上驗收。
+- 這批提交目前未查得對應的 GitHub Actions 工作流程結果；應視為**已提交、待執行驗收**，而不是已通過。
+
 ## 4. 尚未完成的發布阻擋
 
 - [ ] 真實 Firebase Auth + Firestore 雙裝置整合測試；Firestore Rules Emulator 自動測試已加入 CI，**通過狀態仍待最新工作流程確認**
