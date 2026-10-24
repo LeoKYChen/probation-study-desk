@@ -47,6 +47,9 @@
       "url": "cloud-sync/idb.js"
     },
     {
+      "url": "cloud-sync/local-clear-guard.js"
+    },
+    {
       "url": "cloud-sync/local-journal.js"
     },
     {
