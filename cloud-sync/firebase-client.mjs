@@ -34,6 +34,50 @@ export function assertCurrentUser(expectedUid,currentUser){
     !currentUser||currentUser.uid!==expectedUid)
   throw Error('Google 帳號在同步期間已變更；請重新登入並重新預覽，原有答案不會自動上傳');
 }
+/**
+ * A Firestore adapter fixed to one authenticated UID. Exported separately so
+ * the entire read and transaction path can be tested without real credentials.
+ * The browser never passes a UID from user-supplied form fields.
+ */
+export function createUserScopedAdapter(fs,db,auth,type='modules'){
+ if(!['modules','desk'].includes(type))throw Error('不支援的雲端資料區');
+ const uid=auth?.currentUser?.uid;
+ if(!uid)throw Error('請先登入 Google 帳號');
+ const base=fs.collection(db,'users',uid,type);
+ function assertOwner(){assertCurrentUser(uid,auth.currentUser)}
+ function keyPath(key){return fs.doc(base,encodeDocumentId(key));}
+ return {
+  async readAll(){
+   assertOwner();
+   const snap=await fs.getDocsFromServer(base);
+   assertOwner();
+   const result=Object.create(null);
+   for(const item of snap.docs){
+    const key=decodeDocumentId(item.id);
+    if(Object.prototype.hasOwnProperty.call(result,key))throw Error('雲端資料鍵重複');
+    result[key]=item.data();
+   }
+   return result;
+  },
+  async compareAndSet(key,raw,expected){
+   assertOwner();
+   const ref=keyPath(key);
+   const next=await fs.runTransaction(db,async transaction=>{
+    assertOwner();
+    const snap=await transaction.get(ref);
+    assertOwner();
+    const revision=snap.exists()?snap.data().revision:0;
+    if(revision!==expected)throw Error('另一裝置已更新「'+key+'」，請重新預覽同步');
+    const incremented=revision+1;
+    assertOwner();
+    transaction.set(ref,{revision:incremented,raw,updatedAt:fs.serverTimestamp()});
+    return incremented;
+   },{maxAttempts:2});
+   assertOwner();
+   return next;
+  }
+ };
+}
 const SDK='https://www.gstatic.com/firebasejs/12.19.0/';
 let modules;
 async function sdk() {
@@ -65,46 +109,7 @@ export async function openFirebase(publicConfig){
  const user=()=>auth.currentUser;
  const signOut=()=>authLib.signOut(auth);
  function adapter(type='modules'){
-  if(!['modules','desk'].includes(type))throw Error('不支援的雲端資料區');
-  const u=auth.currentUser;
-  if(!u)throw Error('請先登入 Google 帳號');
-  const base=fs.collection(db,'users',u.uid,type);
-  // Prefix encoded keys to avoid Firestore's forbidden "."/".." document IDs.
-  // This branch has never deployed a Firebase backend; no migration is needed.
-  function keyPath(key){return fs.doc(base,encodeDocumentId(key));}
-  function assertOwner(){assertCurrentUser(u.uid,auth.currentUser)}
-  return {
-   async readAll(){
-    assertOwner();
-    const snap=await fs.getDocsFromServer(base);
-    assertOwner();
-    const result=Object.create(null);
-    for(const item of snap.docs){
-     const key=decodeDocumentId(item.id);
-     if(Object.prototype.hasOwnProperty.call(result,key))throw Error('雲端資料鍵重複');
-     result[key]=item.data();
-    }
-    return result;
-   },
-   async compareAndSet(key,raw,expected){
-    assertOwner();
-    const ref=keyPath(key);
-    return fs.runTransaction(db,async transaction=>{
-     assertOwner();
-     const snap=await transaction.get(ref);
-     assertOwner();
-     const revision=snap.exists()?snap.data().revision:0;
-     if(revision!==expected)throw Error('另一裝置已更新「'+key+'」，請重新預覽同步');
-     const next=revision+1;
-     assertOwner();
-     transaction.set(ref,{revision:next,raw,updatedAt:fs.serverTimestamp()});
-     return next;
-    },{maxAttempts:2}).then(next=>{
-     assertOwner();
-     return next;
-    });
-   }
-  };
+  return createUserScopedAdapter(fs,db,auth,type);
  }
  return {login,signOut,user,username,adapter,projectId:cfg.projectId};
 }
