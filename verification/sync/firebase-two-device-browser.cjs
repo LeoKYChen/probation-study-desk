@@ -246,6 +246,12 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   assert(deskClearGuard,'desk clear must leave a durable cloud-restoration warning');
   const cloudBeforeDeskRestore=trace.length;
   await c.goto(base+'/backup/');
+  // This independent device has not signed in before; the public Web config
+  // was only in the earlier form and must be re-entered after navigation.
+  await c.locator('#firebase-project').fill('synthetic-project');
+  await c.locator('#firebase-api').fill('AIzaFakePublicFirebaseBrowserTestOnly000000');
+  await c.locator('#firebase-auth-domain').fill('synthetic-project.firebaseapp.com');
+  await c.locator('#firebase-app-id').fill('1:123456:web:abcdef');
   await connect(c);
   await c.locator('#firebase-preview-btn').click();
   await c.waitForFunction(()=>document.querySelector('#firebase-status').textContent.includes('曾清除學習紀錄'));
