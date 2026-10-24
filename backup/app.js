@@ -3,7 +3,7 @@
  'use strict';
  const core=window.PSDUnifiedBackup;
  const $=id=>document.getElementById(id);
- let incoming=null,plan=null;
+ let incoming=null,plan=null,clearPlan=null,clearBackupRequested=false;
  const stamp=()=>new Date().toISOString().replaceAll(':','-').replaceAll('.','-');
  const tell=(msg,error=false)=>{const n=$('message');n.textContent=msg;n.dataset.error=error?'1':'0';};
  function download(data,name){
@@ -35,44 +35,52 @@
   if(s.essayAssessments&&typeof s.essayAssessments==='object'&&Object.values(s.essayAssessments).some(x=>x&&typeof x==='object'&&Object.keys(x).length))return true;
   return false;
  }
+ // The list shows only current, non-empty learning activity. Legacy keys stay in the actual JSON backup.
+ const visibleKeys=new Set([
+  'probation-study30-v251:v1','probation-study-desk-v24','probation-study-desk-v3',
+  'probation-daily-github:records:v1','daily-reading-test:saved',
+  'psd-common-subjects-v1','psd-staresto-link-coach-v06',
+  'jj-bookmarks','jj-read','psd-lecture-planner-v1'
+ ]);
  function explain(storage){
-  let progressCount=0,pendingCount=0,settingsCount=0;
-  const rows=core.modules.map(m=>{
+  let progressCount=0;
+  const rows=[];
+  for(const m of core.modules){
+   if(!visibleKeys.has(m.key))continue;
    const raw=storage[m.key];
-   if(raw===undefined)return {name:m.name,status:'此瀏覽器沒有資料'};
+   if(raw===undefined)continue;
    const val=core.parseValue(m.key,raw);
    let count=0,pending=0,status='';
-   if(m.kind==='sessions'){
+   if(m.kind==='prompts'){
+    count=val.entries.length;
+    status=count+' 組自訂批改提示詞';
+   }else if(m.kind==='sessions'){
     const sessions=Object.values(val.sessions).filter(x=>x&&typeof x==='object'&&!Array.isArray(x));
     count=sessions.filter(meaningfulSession).length;
     pending=sessions.length-count;
     status=count+' 筆已開始／有作答紀錄'+(pending?'；'+pending+' 筆尚未開始的工作階段':'');
    }else if(m.kind==='records'){
     count=Object.keys(val).length;
-    status=count?count+' 筆已儲存紀錄':'空白儲存區（0 筆）';
+    status=count+' 筆已儲存紀錄';
    }else if(m.kind==='common'){
-    count=Object.keys(val.drafts).length;
-    status=count?count+' 筆作文草稿':'空白儲存區（0 筆）';
+    const drafts=Object.keys(val.drafts||{}).length;
+    const english=Object.keys(val.english||{}).length;
+    count=drafts+english;
+    status=drafts+' 筆作文草稿、'+english+' 項英文資料';
    }else if(m.kind==='english'){
     count=Object.keys(val.completed||{}).length+Object.keys(val.wordProgress||{}).length;
-    status=count?count+' 項已儲存練習':'僅有初始設定（0 筆）';
-   }else if(m.kind==='oldenglish'){
-    count=Object.keys(val.progress).length;
-    status=count?count+' 項已儲存進度':'僅有初始設定（0 筆）';
+    status=count+' 項已儲存練習';
    }else if(m.kind==='lectures'){
-    count=val.lessons.length;
-    status=val.courses.length+' 門函授課程、'+count+' 堂（已完成 '+val.lessons.filter(x=>x.watchedMinutes===x.durationMinutes).length+' 堂）';
+    count=val.lessons.filter(x=>x.watchedMinutes>0).length;
+    status=val.courses.length+' 門函授課程、'+val.lessons.length+' 堂（已有觀看進度 '+count+' 堂）';
    }else if(m.kind==='list'){
     count=val.length;
-    status=count?count+' 筆收藏／閱讀紀錄':'空白清單（0 筆）';
-   }else{
-    settingsCount++;
-    status='已儲存偏好設定（不計入學習紀錄）';
+    status=count+' 筆收藏／閱讀紀錄';
    }
-   pendingCount+=pending;
-   if(m.kind!=='setting'&&m.kind!=='font')progressCount+=count;
-   return {name:m.name,status};
-  });
+   if(count===0&&!(m.kind==='lectures'&&val.courses.length))continue;
+   if(m.kind!=='prompts')progressCount+=count;
+   rows.push({name:m.name,status});
+  }
   $('modules').replaceChildren();
   for(const row of rows){
    const li=document.createElement('li');
@@ -80,12 +88,39 @@
    $('modules').append(li);
   }
   $('summary').textContent='已儲存的學習／閱讀紀錄：'+progressCount+' 筆／項。'+
-    (pendingCount?' 另有尚未開始的工作階段：'+pendingCount+' 筆。':'')+
-    (settingsCount?' 另有 '+settingsCount+' 項偏好設定。':'')+
-    ' 完整 JSON 仍會原樣保留所有儲存資料，包括空白工作階段和空物件。';
+   (!rows.length?' 目前沒有已開始的學習紀錄。':'')+
+   ' 只顯示有實際學習內容或已建立的函授課程；完整 JSON 仍保留舊版資料、設定與尚未開始的工作階段。';
  }
- function refresh(){try{explain(current());$('export').disabled=false;}catch(e){tell('無法讀取現有紀錄：'+e.message,true);$('export').disabled=true;}}
- function clearPreview(){incoming=null;plan=null;$('preview').hidden=true;$('restore').disabled=true;$('confirmSafe').checked=false;$('confirmTabs').checked=false;$('importFile').value='';}
+ function updateClearReady(){
+  $('clearLearning').disabled=!clearPlan||!clearPlan.items.length||!clearBackupRequested||
+   !$('clearBackupConfirmed').checked||!$('clearTabsConfirmed').checked||
+   $('clearTyped').value.trim()!=='清除';
+ }
+ function refreshClear(){
+  clearBackupRequested=false;
+  $('clearBackupConfirmed').checked=false;
+  $('clearTabsConfirmed').checked=false;
+  $('clearTyped').value='';
+  try{
+   clearPlan=core.previewClear(localStorage);
+   $('clearSummary').textContent=clearPlan.items.length
+    ?'本裝置目前有 '+clearPlan.items.length+' 個可清除的學習紀錄區（可能包含空白初始化資料）。'
+    :'本裝置目前沒有需要清除的學習紀錄。';
+   $('clearBackupBefore').disabled=!clearPlan.items.length;
+  }catch(e){
+   clearPlan=null;
+   $('clearSummary').textContent='無法檢查可清除項目：'+e.message;
+   $('clearBackupBefore').disabled=true;
+   tell('請先檢查或另行備份無法辨識的學習資料；已阻止清除。',true);
+  }
+  updateClearReady();
+ }
+ function refresh(){
+  try{explain(current());$('export').disabled=false;}
+  catch(e){tell('無法讀取現有紀錄：'+e.message,true);$('export').disabled=true;}
+  refreshClear();
+ }
+ function clearPreview(){incoming=null;plan=null;$('preview').hidden=true;$('restore').disabled=true;$('confirmSafe').checked=false;$('confirmTabs').checked=false;$('importFile').value='';$('importFileName').textContent='尚未選取檔案';}
  $('export').addEventListener('click',()=>{
   try{const data=core.collect(localStorage,location.origin);
    download(data,'觀護人學習平台-完整紀錄-'+stamp()+'.json');
@@ -96,6 +131,7 @@
   incoming=null;plan=null;$('preview').hidden=true;$('restore').disabled=true;
   $('confirmSafe').checked=false;$('confirmTabs').checked=false;
   const file=this.files&&this.files[0];
+  $('importFileName').textContent=file?'已選擇：'+file.name:'尚未選取檔案';
   if(!file)return;
   if(file.size>20*1024*1024){tell('檔案超過20MB，沒有改動任何學習紀錄。',true);return;}
   try{
@@ -146,6 +182,28 @@
    download(data,'觀護人學習平台-衝突版本-'+stamp()+'.json');
    tell('已要求下載衝突版本檔。此檔包含另一份答案，請妥善保存。');
   }catch(e){tell('無法匯出衝突版本：'+e.message,true)}
+ });
+ $('clearBackupBefore').addEventListener('click',()=>{
+  if(!clearPlan||!clearPlan.items.length)return;
+  try{
+   download(core.collect(localStorage,location.origin),'觀護人學習平台-清除前完整備份-'+stamp()+'.json');
+   clearBackupRequested=true;
+   updateClearReady();
+   tell('已要求下載清除前備份。請在裝置的下載檔案中確認保存，再勾選確認框。');
+  }catch(e){clearBackupRequested=false;updateClearReady();tell('無法匯出清除前備份，已阻止清除：'+e.message,true);}
+ });
+ for(const id of ['clearBackupConfirmed','clearTabsConfirmed','clearTyped']){
+  $(id).addEventListener(id==='clearTyped'?'input':'change',updateClearReady);
+ }
+ $('clearLearning').addEventListener('click',()=>{
+  if($('clearLearning').disabled||!clearPlan||!clearBackupRequested)return;
+  if(!window.confirm('確定清除目前網址、這台裝置的學習與閱讀紀錄？操作後不能直接復原；請確認備份檔已保存。'))return;
+  try{
+   const count=core.applyClear(localStorage,clearPlan);
+   clearPreview();
+   refresh();
+   tell('已清除 '+count+' 個本機學習紀錄區。設定及保留的課程資料不受影響；如需還原請使用清除前備份。');
+  }catch(e){refreshClear();tell('已停止清除：'+e.message,true);}
  });
  $('refresh').addEventListener('click',refresh);
  refresh();

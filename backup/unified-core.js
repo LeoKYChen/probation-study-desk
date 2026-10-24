@@ -13,8 +13,8 @@
  const modules=[
   {key:'psd-ai-custom-rules-v1',name:'自訂AI批改提示詞',kind:'prompts'},
   {key:'probation-study30-v251:v1',name:'專業科目每日30分鐘',kind:'sessions'},
-  {key:'probation-study-desk-v24',name:'426題考古題',kind:'records'},
-  {key:'probation-study-desk-v3',name:'舊版考古題 v3',kind:'records'},
+  {key:'probation-study-desk-v24',name:'考古題學習紀錄',kind:'records'},
+  {key:'probation-study-desk-v3',name:'考古題練習臺（v2.5）',kind:'records'},
   {key:'probation-study-desk-v2',name:'舊版考古題 v2',kind:'records'},
   {key:'probation-daily-github:records:v1',name:'每日模擬題',kind:'records'},
   {key:'daily-reading-test:saved',name:'每日模擬題收藏',kind:'list'},
@@ -220,5 +220,75 @@
   }
   return done.length;
  }
- return {FORMAT,SCHEMA,CONFLICT_KEY,modules,collect,validate,storageSnapshot,parseValue,plan,apply};
+
+ // Clearing learning progress is deliberately distinct from a full site reset.
+ const clearKinds=new Set(['sessions','records','common','english','oldenglish','list','lectures']);
+ function previewClear(storage){
+  const baseline=storageSnapshot(storage),changes=Object.create(null),items=[];
+  for(const row of modules){
+   if(!clearKinds.has(row.kind)||!own(baseline,row.key))continue;
+   const value=parseValue(row.key,baseline[row.key]);
+   let next=null;
+   if(row.kind==='lectures'){
+    if(!value.lessons.some(lesson=>lesson.watchedMinutes>0)&&!value.plan)continue;
+    const v=copy(value);
+    v.lessons=v.lessons.map(lesson=>({...lesson,watchedMinutes:0}));
+    v.plan=null;
+    next=JSON.stringify(v);
+   }else if(row.kind==='common'){
+    const v=copy(value);
+    for(const section of ['drafts','english','englishHistory','dailySelections','externalPractice'])
+     if(own(v,section))v[section]={};
+    next=JSON.stringify(v);
+   }else if(row.kind==='english'){
+    const v=copy(value);
+    for(const section of ['days','completed','wordDays','wordProgress'])
+     if(own(v,section))v[section]={};
+    next=JSON.stringify(v);
+   }else if(row.kind==='oldenglish'){
+    const v=copy(value);
+    for(const section of ['days','progress','completedDays'])
+     if(own(v,section))v[section]={};
+    next=JSON.stringify(v);
+   }
+   if(next===baseline[row.key])continue;
+   if(next!==null)parseValue(row.key,next);
+   changes[row.key]=next;
+   items.push({key:row.key,name:row.name,kind:row.kind});
+  }
+  if(own(baseline,CONFLICT_KEY)){
+   parseValue(CONFLICT_KEY,baseline[CONFLICT_KEY]);
+   changes[CONFLICT_KEY]=null;
+   items.push({key:CONFLICT_KEY,name:'不同答案衝突版本',kind:'conflicts'});
+  }
+  return {baseline,changes,items};
+ }
+ function applyClear(storage,action){
+  assert(isObj(action)&&isObj(action.changes)&&isObj(action.baseline),'清除計畫格式不符');
+  const now=storageSnapshot(storage);
+  for(const key of allowed)
+   assert(now[key]===action.baseline[key],'清除前資料已變更，請重新檢查後再操作');
+  const permitted=new Set(modules.filter(m=>clearKinds.has(m.kind)).map(m=>m.key));
+  permitted.add(CONFLICT_KEY);
+  const changed=[];
+  try{
+   for(const [key,raw] of Object.entries(action.changes)){
+    assert(permitted.has(key)&&own(action.baseline,key),'清除範圍含不支援的項目');
+    if(raw!==null){assert(typeof raw==='string','清除計畫格式不符');parseValue(key,raw);}
+    changed.push(key);
+    if(raw===null)storage.removeItem(key);
+    else storage.setItem(key,raw);
+    assert(storage.getItem(key)===raw,'瀏覽器未能完成清除');
+   }
+  }catch(e){
+   let rolledBack=true;
+   for(const key of changed.reverse()){
+    try{storage.setItem(key,action.baseline[key]);}
+    catch{rolledBack=false;}
+   }
+   throw Error((rolledBack?'已嘗試恢復清除前紀錄。':'部分資料可能無法恢復，請使用清除前備份。')+' 原因：'+e.message);
+  }
+  return changed.length;
+ }
+ return {FORMAT,SCHEMA,CONFLICT_KEY,modules,collect,validate,storageSnapshot,parseValue,plan,apply,previewClear,applyClear};
 });

@@ -39,7 +39,7 @@ const server=http.createServer((req,res)=>{
     const [popup]=await Promise.all([page.waitForEvent('popup'),page.locator('a.tile').filter({hasText:label}).click()]);await popup.waitForLoadState('domcontentloaded');assert.equal(popup.url(),new URL(target,base).href);await popup.close();
    }
    await page.setViewportSize({width:390,height:844});
-   await page.goto(new URL('professional/',base).href);await page.waitForFunction(()=>window.Study30QuestionSources?.all?.length===426);
+   await page.goto(new URL('professional/',base).href);await page.waitForFunction(()=>window.Study30QuestionSources?.all?.length===553);
    const key='probation-study30-v251:v1';
    // Seed an existing old session, then confirm startup/save leaves it intact.
    const legacySession={date:'2026-01-01',questionId:'legacy-sentinel',notes:['既有專業練習答案'],customField:'必須保留'};
@@ -71,7 +71,7 @@ const server=http.createServer((req,res)=>{
    assert.equal(await page.evaluate(()=>localStorage.getItem('unrelated-module-sentinel')),'不得修改');
    assert.equal(await page.evaluate(()=>localStorage.getItem('probation-study-desk-v24')),retained);
    assert.deepEqual(errors,[]);assert.deepEqual(bad,[]);
-   console.log('PASS browser:',engine,base,'six entries, responsive countdown, 426 questions, timer, drafts/AI reload, old sessions/keys, old pages');
+   console.log('PASS browser:',engine,base,'six entries, responsive countdown, 553 questions, timer, drafts/AI reload, old sessions/keys, old pages');
    await ctx.close();
   }
  }finally{await browser.close();server.close();}

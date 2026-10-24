@@ -75,7 +75,7 @@ const server=http.createServer((req,res)=>{
    assert.equal(await page.locator('#countdown-date-caption').innerText(),'2027/08/14');
    // Root worker and nested professional worker coexist without deleting old caches.
    await page.goto(new URL('professional/',base).href);
-   await page.waitForFunction(()=>window.Study30QuestionSources?.all?.length===426);
+   await page.waitForFunction(()=>window.Study30QuestionSources?.all?.length===553);
    await page.waitForFunction(()=>document.querySelector('#offlineStatus')?.dataset.kind==='ready',null,{timeout:40000});
    const state=await page.evaluate(async()=>({scope:(await navigator.serviceWorker.getRegistration()).scope,caches:await caches.keys(),main:localStorage.getItem('probation-study-desk-v24'),extra:localStorage.getItem('another-module-record'),oldSession:JSON.parse(localStorage.getItem('probation-study30-v251:v1')).sessions['2026-01-01']}));
    assert.equal(state.scope,new URL('professional/',base).href,'nested worker scope');

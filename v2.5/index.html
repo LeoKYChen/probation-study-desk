@@ -753,7 +753,7 @@
     const productionKey = 'probation-study-desk-v3';
     const legacyKey = 'probation-study-desk-v2';
     const appVersion = 'github-v2.5-focused-20261008';
-    const questionBankVersion = '426q-20260930';
+    const questionBankVersion = `bank-${questionBank.length}q-20261023`; // 匯出快照註記實際載入題數；舊備份仍以 schemaVersion 判定相容性
     function parseStored(value) {
       try { return JSON.parse(value || '{}'); } catch (_) { return {}; }
     }
