@@ -17,6 +17,7 @@ const CFG='psd-firebase-public-web-config-v1',BOUND='psd-firebase-local-data-bou
 let connection=null,plan=null,deskPlan=null,adapter=null,deskAdapter=null,deskStore=null,cloudUser=null,busy=false;
 let backedUp={modules:false,desk:false};
 let scanning=false,journalPreview=null,preparedConfig=null,clearGuardPreview=null;
+let approvedClearMarker=null;
 const safeLabel=e=>e instanceof Error?e.message:String(e);
 function currentClearGuard(){
  if(!window.PSDLocalClearGuard)throw Error('缺少本機清除紀錄防護元件，已停止 Firebase 同步');
@@ -24,14 +25,28 @@ function currentClearGuard(){
  $('firebase-cleared-warning').hidden=!marker;
  return marker;
 }
+function revokeClearedRestore(){
+ approvedClearMarker=null;
+ $('firebase-restore-cleared').checked=false;
+}
+$('firebase-restore-cleared').addEventListener('change',()=>{
+ // Consent is specific to the clear the user is reviewing, never a blanket
+ // opt-in for future clears. Same-tab changes do not emit storage events.
+ approvedClearMarker=null;
+ try{if($('firebase-restore-cleared').checked)approvedClearMarker=currentClearGuard();}
+ catch(e){revokeClearedRestore();invalidatePreview();status(safeLabel(e),true);}
+});
 function approveClearedRestore(){
  const marker=currentClearGuard();
- if(marker&&!$('firebase-restore-cleared').checked)
+ if(marker&&(!$('firebase-restore-cleared').checked||approvedClearMarker!==marker)){
+  revokeClearedRestore();
   throw Error('這台裝置曾清除學習紀錄。雲端可能仍有舊答案；如確定要恢復，請另勾選「同意恢復雲端舊答案」再重新預覽');
+ }
  return marker;
 }
 window.addEventListener('storage',event=>{
- if(event.key===window.PSDLocalClearGuard?.KEY){
+ if(event.key===window.PSDLocalClearGuard?.KEY||event.key===null){
+  revokeClearedRestore();
   try{currentClearGuard();}catch(e){status(safeLabel(e),true)}
   invalidatePreview();
  }
@@ -180,6 +195,7 @@ function configFromForm(){
  });
 }
 async function prepareLogin(){
+ revokeClearedRestore();
  // SDK initialization may be slow; it must never consume the popup click.
  // Preparation touches only public Firebase configuration and Auth state.
  invalidatePreview();
@@ -213,6 +229,7 @@ async function connect(){
 $('firebase-prepare').addEventListener('click',()=>perform(prepareLogin));
 $('firebase-login').addEventListener('click',()=>perform(connect));
 $('firebase-signout').addEventListener('click',()=>perform(async()=>{
+ revokeClearedRestore();
  if(connection)await connection.signOut();
  localStorage.removeItem(RESTORE); // Sign-out stays guest on the next visit.
  connection=null;preparedConfig=null;adapter=null;deskAdapter=null;cloudUser=null;plan=null;deskPlan=null;backedUp={modules:false,desk:false};
@@ -264,6 +281,8 @@ $('firebase-apply').addEventListener('click',()=>perform(async()=>{
   assertIdentity();
   if(currentClearGuard()!==cleared)
    throw Error('同步期間本機清除紀錄的狀態已改變，已停止同步，請重新預覽');
+  if(cleared&&(!$('firebase-restore-cleared').checked||approvedClearMarker!==cleared))
+   throw Error('恢復雲端舊答案的同意已撤回，已停止同步，請重新預覽');
  };
  const result=await commit(core,localStorage,adapter,plan,assertCurrent);
  assertCurrent();
@@ -273,7 +292,7 @@ $('firebase-apply').addEventListener('click',()=>perform(async()=>{
  assertCurrent();
  saveDeskShadow(deskResult.shadow);
  if(cleared)window.PSDLocalClearGuard.acknowledge(localStorage,cleared);
- $('firebase-restore-cleared').checked=false;
+ revokeClearedRestore();
  currentClearGuard();
  // A later tab edit gets a new token and is never cleared by this acknowledgement.
  window.PSDLocalJournal?.acknowledge(journalPreview);

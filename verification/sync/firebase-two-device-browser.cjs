@@ -258,6 +258,47 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   await c.waitForFunction(()=>document.querySelector('#firebase-status').textContent.includes('曾清除學習紀錄'));
   assert.equal(trace.length,cloudBeforeDeskRestore,'desk clearing cannot trigger hidden cloud upload or restore');
   assert.equal(await c.evaluate(()=>localStorage.getItem('psd-firebase-local-clear-guard-v1')),deskClearGuard);
+  // Restoration consent belongs to one clear token, not every later clear.
+  await c.locator('#firebase-restore-cleared').check();
+  await preview(c);
+  await c.evaluate(()=>window.PSDLocalClearGuard.mark(localStorage));
+  await c.locator('#firebase-preview-btn').click();
+  await c.waitForFunction(()=>!document.querySelector('#firebase-preview-btn').disabled);
+  assert.match(await c.locator('#firebase-status').textContent(),/曾清除學習紀錄/,'a new same-tab clear requires fresh consent');
+  assert.equal(await c.locator('#firebase-restore-cleared').isChecked(),false,'old consent checkbox is reset');
+  assert.equal(await c.locator('#firebase-apply').isDisabled(),true);
+  assert.equal(await c.evaluate(()=>localStorage.getItem('jj-read')),null);
+  assert.equal(await readDesk(c),undefined);
+  await c.locator('#firebase-restore-cleared').check();
+  await preview(c);
+  const secondClearTab=await c.context().newPage();
+  await secondClearTab.goto(base+'/backup/');
+  await secondClearTab.evaluate(()=>window.PSDLocalClearGuard.mark(localStorage));
+  await c.waitForFunction(()=>document.querySelector('#firebase-apply').disabled);
+  assert.equal(await c.locator('#firebase-restore-cleared').isChecked(),false,'a cross-tab clear also revokes the prior consent');
+  await c.locator('#firebase-preview-btn').click();
+  await c.waitForFunction(()=>!document.querySelector('#firebase-preview-btn').disabled);
+  assert.match(await c.locator('#firebase-status').textContent(),/曾清除學習紀錄/);
+  assert.equal(trace.length,cloudBeforeDeskRestore,'revoked consent never uploads any data');
+  // Revoking consent while a request is pending must stop later restoration.
+  await c.evaluate(()=>localStorage.setItem('jj-font','18'));
+  await c.locator('#firebase-restore-cleared').check();
+  await preview(c);
+  await download(c,'#firebase-backup');await download(c,'#firebase-backup-desk');
+  await c.locator('#firebase-confirm').check();
+  const beforeRevoke=trace.length;
+  const consentMarker=await c.evaluate(()=>localStorage.getItem('psd-firebase-local-clear-guard-v1'));
+  afterWriteOnce=async()=>{await c.locator('#firebase-restore-cleared').uncheck();};
+  await c.locator('#firebase-apply').click();
+  await c.waitForFunction(()=>document.querySelector('#firebase-status').textContent.includes('同意已撤回'));
+  assert.equal(trace.length,beforeRevoke+1,'revocation stops later writes after the in-flight response');
+  assert.equal(await c.evaluate(()=>localStorage.getItem('jj-read')),null,'revocation blocks module restoration');
+  assert.equal(await readDesk(c),undefined,'revocation blocks desk restoration');
+  assert.equal(await c.evaluate(()=>localStorage.getItem('psd-firebase-local-clear-guard-v1')),consentMarker,'revocation preserves the clear warning');
+  assert.equal(await c.locator('#firebase-apply').isDisabled(),true);
+  await c.locator('#firebase-restore-cleared').check();
+  await preview(c);await apply(c);
+  assert.equal(await c.evaluate(()=>localStorage.getItem('psd-firebase-local-clear-guard-v1')),null,'fresh consent and both backups allow explicit restoration');
   // Clear from a real second tab while the first tab awaits a CAS response.
   // Empty-before/empty-after records defeat a snapshot-only stale check.
   const d=await device();
