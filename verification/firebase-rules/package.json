@@ -1,0 +1,14 @@
+{
+  "name": "psd-firebase-firestore-rules-tests",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Only local Firebase emulator; no production projects or credentials",
+  "scripts": {
+    "test:rules": "node run.cjs"
+  },
+  "dependencies": {
+    "@firebase/rules-unit-testing": "5.0.2",
+    "firebase": "12.19.0",
+    "firebase-tools": "15.34.1"
+  }
+}
