@@ -53,6 +53,9 @@
       "url": "cloud-sync/pending-detection.mjs"
     },
     {
+      "url": "cloud-sync/readiness.mjs"
+    },
+    {
       "url": "cloud-sync/whole-desk-core.mjs"
     },
     {
