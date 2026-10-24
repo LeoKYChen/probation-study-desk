@@ -1,6 +1,21 @@
 name: Firebase Firestore security rules (emulator only)
 
 on:
+  workflow_dispatch:
+  push:
+    branches: [feature/firebase-whole-site-sync]
+    paths:
+      - "cloud-sync/**"
+      - "backup/**"
+      - "firestore.rules"
+      - "firebase.emulator.json"
+      - "verification/firebase-rules/**"
+      - "verification/sync/firebase*.mjs"
+      - "verification/sync/firebase*.cjs"
+      - "offline-manifest.json"
+      - "scripts/build-cloudflare-main-mirror.py"
+      - ".github/workflows/firebase-journal-contract.yml"
+      - ".github/workflows/firebase-rules-emulator.yml"
   pull_request:
     paths:
       - "firestore.rules"
