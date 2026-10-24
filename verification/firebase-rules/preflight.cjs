@@ -23,8 +23,8 @@ assert.equal(count(/allow create:\s*if owns\(uid\) && validRecordId\(/g),1,'desk
 assert.equal(count(/allow update:\s*if owns\(uid\) && validRecordId\(/g),1,'desk update requires canonical ID');
 assert.equal(count(/allow create:\s*if owns\(uid\) && validModuleId\(/g),1,'modules create require allowlist');
 assert.equal(count(/allow update:\s*if owns\(uid\) && validModuleId\(/g),1,'modules update require allowlist');
-require('../../backup/unified-core.js');
-const allowed=[...globalThis.PSDUnifiedBackup.modules.map(x=>x.key),globalThis.PSDUnifiedBackup.CONFLICT_KEY];
+const unified=require('../../backup/unified-core.js');
+const allowed=[...unified.modules.map(x=>x.key),unified.CONFLICT_KEY];
 assert.equal(allowed.length,16,'expected 15 modules and one conflict archive');
 for(const key of allowed)assert(rules.includes("'k~"+encodeURIComponent(key)+"'"),'missing cloud allowlist key: '+key);
 assert.equal((rules.match(/'k~[^']+'/g)||[]).length,16,'no extra cloud module IDs');
