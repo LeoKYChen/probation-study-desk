@@ -49,6 +49,7 @@ jobs:
           node --test \
             verification/sync/firebase-journal.test.mjs \
             verification/sync/firebase-pending.test.mjs \
+            verification/sync/firebase-readiness.test.mjs \
             verification/sync/firebase-client.test.mjs \
             verification/sync/firebase.test.mjs \
             verification/sync/firebase-desk.test.mjs
