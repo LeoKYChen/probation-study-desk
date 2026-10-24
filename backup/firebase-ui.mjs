@@ -4,8 +4,8 @@
  * Covers 15 allowlisted localStorage modules and study-desk guest IndexedDB.
  */
 import {openFirebase,validateFirebaseConfig} from '../cloud-sync/firebase-client.mjs';
-import {prepare,commit} from '../cloud-sync/whole-site-core.mjs';
-import {prepareDesk,commitDesk} from '../cloud-sync/whole-desk-core.mjs';
+import {prepare,commit,assertModulePreviewCurrent} from '../cloud-sync/whole-site-core.mjs';
+import {prepareDesk,commitDesk,assertDeskPreviewCurrent} from '../cloud-sync/whole-desk-core.mjs';
 import {IDBStore} from '../cloud-sync/idb.js';
 import {FORMAT} from '../cloud-sync/core.js';
 import {pendingChanges} from '../cloud-sync/pending-detection.mjs';
@@ -272,9 +272,7 @@ $('firebase-apply').addEventListener('click',()=>perform(async()=>{
  if(!backedUp.modules||!backedUp.desk||!$('firebase-confirm').checked)throw Error('請先下載並檢查舊模組及備考書桌兩份 JSON 備份，關閉其他作答分頁並確認');
  if(!navigator.onLine)throw Error('需要連線才能確認最新雲端版本');
  if(!confirm('確認執行本次合併？原始資料已另外備份；遇衝突會將本機差異封存，雲端版本保持為主要紀錄。'))return;
- // Bind the shared browser origin BEFORE the first upload, so a failed
- // second stage cannot later leak the first user's data to another account.
- localStorage.setItem(BOUND,JSON.stringify({uid:cloudUser.uid,projectId:connection.projectId}));
+ const modulePlan=plan,studyDeskPlan=deskPlan;
  // Capture this operation's token, rather than mutable preview state which
  // another tab's storage event can invalidate while a request is in flight.
  const assertCurrent=()=>{
@@ -284,11 +282,18 @@ $('firebase-apply').addEventListener('click',()=>perform(async()=>{
   if(cleared&&(!$('firebase-restore-cleared').checked||approvedClearMarker!==cleared))
    throw Error('恢復雲端舊答案的同意已撤回，已停止同步，請重新預覽');
  };
- const result=await commit(core,localStorage,adapter,plan,assertCurrent);
+ // Check BOTH local stores before binding or any cloud write. Desk reads
+ // yield to other tabs, so recheck modules after that await as well.
+ await assertDeskPreviewCurrent(deskStore,studyDeskPlan,assertCurrent);
+ assertModulePreviewCurrent(core,localStorage,modulePlan);
+ assertCurrent();
+ // Bind before the first upload; a later partial failure cannot mix accounts.
+ localStorage.setItem(BOUND,JSON.stringify({uid:cloudUser.uid,projectId:connection.projectId}));
+ const result=await commit(core,localStorage,adapter,modulePlan,assertCurrent);
  assertCurrent();
  saveShadow(result.shadow);
  // If desk sync fails, the legacy modules already completed safely; preview again to resume.
- const deskResult=await commitDesk(deskStore,deskAdapter,deskPlan,assertCurrent);
+ const deskResult=await commitDesk(deskStore,deskAdapter,studyDeskPlan,assertCurrent);
  assertCurrent();
  saveDeskShadow(deskResult.shadow);
  if(cleared)window.PSDLocalClearGuard.acknowledge(localStorage,cleared);

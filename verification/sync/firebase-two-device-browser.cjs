@@ -326,6 +326,49 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   assert.equal(await d.locator('#firebase-apply').isDisabled(),true,'stale approval discarded');
   await d.locator('#firebase-preview-btn').click();
   await d.waitForFunction(()=>document.querySelector('#firebase-status').textContent.includes('曾清除學習紀錄'));
+  // A desk edit after preview must abort the WHOLE sync before modules upload.
+  const e=await device();
+  await e.evaluate(()=>localStorage.setItem('jj-font','20'));
+  await connect(e);await preview(e);
+  await download(e,'#firebase-backup');await download(e,'#firebase-backup-desk');
+  await writeDesk(e,'synthetic-draft-after-backup');
+  const beforeStaleDesk=trace.length;
+  await e.locator('#firebase-confirm').check();
+  await e.locator('#firebase-apply').click();
+  await e.waitForFunction(()=>document.querySelector('#firebase-status').textContent.includes('書桌紀錄在預覽後已變更'));
+  assert.equal(trace.length,beforeStaleDesk,'stale desk preview must prevent all module uploads');
+  assert.equal(await e.evaluate(()=>localStorage.getItem('jj-read')),null,'stale desk prevents module downloads too');
+  assert.equal(await e.evaluate(()=>localStorage.getItem('psd-firebase-local-data-bound-v1')),null,'a rejected preflight must not bind a new device');
+  assert.equal(await readDesk(e),'synthetic-draft-after-backup','the newer desk draft survives');
+  assert.equal(await e.locator('#firebase-apply').isDisabled(),true);
+  await preview(e);
+  await download(e,'#firebase-backup');await download(e,'#firebase-backup-desk');
+  await e.locator('#firebase-confirm').check();
+  await e.evaluate(async()=>{
+   const {IDBStore}=await import('/cloud-sync/idb.js');
+   // Deterministically edit localStorage during the asynchronous desk preflight.
+   document.querySelector('#firebase-apply').addEventListener('click',()=>{
+    const original=IDBStore.prototype.read;
+    IDBStore.prototype.read=async function(){
+     IDBStore.prototype.read=original;
+     const state=await original.call(this);
+     localStorage.setItem('jj-font','22');
+     return state;
+    };
+   },{once:true,capture:true});
+  });
+  await e.locator('#firebase-apply').click();
+  await e.waitForFunction(()=>document.querySelector('#firebase-status').textContent.includes('本機紀錄在預覽後已修改'));
+  assert.equal(trace.length,beforeStaleDesk,'module edits during desk preflight also stop every upload');
+  assert.equal(await e.evaluate(()=>localStorage.getItem('jj-read')),null);
+  assert.equal(await e.evaluate(()=>localStorage.getItem('jj-font')),'22','new module edits survive');
+  assert.equal(await readDesk(e),'synthetic-draft-after-backup');
+  await preview(e);await apply(e);
+  const afterRetry=await e.evaluate(async()=>{
+   const {IDBStore}=await import('/cloud-sync/idb.js');const store=await IDBStore.open('guest');
+   try{return JSON.stringify(await store.read());}finally{store.close();}
+  });
+  assert(afterRetry.includes('synthetic-draft-after-backup'),'fresh preview preserves the newer draft in the conflict archive');
   assert.equal(outside.length,0,'synthetic transport never contacts real Firebase');
   assert.deepEqual(errors,[]);
   console.log('PASS Firebase whole-site UI: consent, both JSON backups, 15 modules + IndexedDB, two devices');

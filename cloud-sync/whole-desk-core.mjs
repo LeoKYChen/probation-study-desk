@@ -66,12 +66,16 @@ export async function prepareDesk(local,documents,shadow={},uuid=()=>crypto.rand
  return {uploads,changes,archive,statuses,baseline:structuredClone(local),cloud:documents,
    conflicts:statuses.filter(x=>x.status==='conflict').length};
 }
-export async function commitDesk(store,adapter,plan,assertCurrent=()=>{}){
+// Read-only: callers can reject a stale desk before starting module writes.
+export async function assertDeskPreviewCurrent(store,plan,assertCurrent=()=>{}){
  assertCurrent();
  const before=await store.read();
  assertCurrent();
  if(JSON.stringify(before)!==JSON.stringify(plan.baseline))
   throw Error('書桌紀錄在預覽後已變更，請停止同步並重新預覽');
+}
+export async function commitDesk(store,adapter,plan,assertCurrent=()=>{}){
+ await assertDeskPreviewCurrent(store,plan,assertCurrent);
  const remoteVersions=Object.create(null);
  // Save alternate versions before writing primary records; a partial failure
  // must never be able to erase the last known unique local answer.

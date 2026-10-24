@@ -104,6 +104,12 @@ export async function prepare(core,local,docs,shadow={}) {
   const count=status.reduce((n,x)=>n+(x.status==='conflict'),0);
   return {uploads,localChanges,status,conflicts:count,baseline:structuredClone(local),cloud:docs,next};
 }
+// Shared read-only preflight for the whole-site UI and the actual commit.
+export function assertModulePreviewCurrent(core,storage,plan){
+  const before=core.storageSnapshot(storage);
+  for(const key of new Set([...Object.keys(before),...Object.keys(plan.baseline)]))
+    if(before[key]!==plan.baseline[key])throw Error('本機紀錄在預覽後已修改，請重新檢視；未寫入雲端');
+}
 /**
  * Writes are deliberately sequential (archive first) to avoid overwriting the
  * only remaining copy. After a conflict, caller must re-preview and retry.
@@ -112,9 +118,7 @@ export async function prepare(core,local,docs,shadow={}) {
 export async function commit(core,storage,adapter,plan,assertCurrent=()=>{}) {
   // Synchronous caller guard: recheck consent/identity around asynchronous IO.
   assertCurrent();
-  const before=core.storageSnapshot(storage);
-  for(const key of new Set([...Object.keys(before),...Object.keys(plan.baseline)]))
-    if(before[key]!==plan.baseline[key])throw Error('本機紀錄在預覽後已修改，請重新檢視；未寫入雲端');
+  assertModulePreviewCurrent(core,storage,plan);
   const revisions=Object.create(null);
   const entries=Object.entries(plan.uploads).sort(([a],[b])=>(a===ARCHIVE?-1:b===ARCHIVE?1:0));
   for(const [key,op] of entries){
