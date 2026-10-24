@@ -7,6 +7,7 @@
 import {validateId,validateValue,validateState} from './core.js';
 import {assertFits,fingerprint,assertRemoteDoc} from './whole-site-core.mjs';
 
+export const MAX_DESK_PREVIEW_DOCS=1000;
 const has=(obj,key)=>Object.prototype.hasOwnProperty.call(obj,key);
 const canonical=record=>JSON.stringify({value:record.value,deleted:record.deleted});
 function fromRaw(raw,id){
@@ -18,6 +19,9 @@ export async function prepareDesk(local,documents,shadow={},uuid=()=>crypto.rand
  validateState(local);
  const statuses=[],uploads=Object.create(null),changes=Object.create(null),archive=Object.create(null);
  const ids=new Set([...Object.keys(local.records),...Object.keys(documents)]);
+ const count=[...ids].filter(id=>id!=='settings/recommendation-audit').length;
+ if(count>MAX_DESK_PREVIEW_DOCS)
+  throw Error('備考書桌待合併紀錄超過 '+MAX_DESK_PREVIEW_DOCS+' 筆，本次已停止以避免超出 Firebase 免費額度；請先下載原始 JSON，待支援分批同步');
  for(const id of ids){
   // Recommendation audit is locally derived display metadata, not user work.
   // Keep it in guest IndexedDB and the original JSON backup, not in Firestore.
