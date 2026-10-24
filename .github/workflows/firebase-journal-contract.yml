@@ -50,6 +50,7 @@ jobs:
             verification/sync/firebase-journal.test.mjs \
             verification/sync/firebase-pending.test.mjs \
             verification/sync/firebase-readiness.test.mjs \
+            verification/sync/firebase-clear-guard.test.mjs \
             verification/sync/firebase-client.test.mjs \
             verification/sync/firebase.test.mjs \
             verification/sync/firebase-desk.test.mjs
@@ -73,6 +74,7 @@ jobs:
             'cloud-sync/whole-site-core.mjs',
             'cloud-sync/whole-desk-core.mjs',
             'cloud-sync/local-journal.js',
+            'cloud-sync/local-clear-guard.js',
           ):
             assert (root/required).is_file(), f'Missing Firebase public client: {required}'
           print('PASS offline snapshot assets and Cloudflare browser ESM resources')
