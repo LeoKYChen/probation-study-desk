@@ -103,8 +103,11 @@ export async function openFirebase(publicConfig){
  const app=apps.getApps().find(a=>a.name===name)||apps.initializeApp(cfg,name);
  const auth=authLib.getAuth(app),db=fs.getFirestore(app);
  await auth.authStateReady();
+ // Finish persistence setup during explicit SDK preparation, never inside
+ // the user's subsequent popup click handler. Delays can lose Safari's
+ // short-lived user-activation grant.
+ await authLib.setPersistence(auth,authLib.browserLocalPersistence);
  async function login(){
-  await authLib.setPersistence(auth,authLib.browserLocalPersistence);
   try {await authLib.signInWithPopup(auth,new authLib.GoogleAuthProvider());}
   catch(e){
    if(['auth/popup-blocked','auth/operation-not-supported-in-this-environment',
