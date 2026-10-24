@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {encodeDocumentId,decodeDocumentId,validateFirebaseConfig,assertCurrentUser,createUserScopedAdapter} from '../../cloud-sync/firebase-client.mjs';
+import {encodeDocumentId,decodeDocumentId,validateFirebaseConfig,assertCurrentUser,createUserScopedAdapter,MAX_REMOTE_PREVIEW_DOCS} from '../../cloud-sync/firebase-client.mjs';
 test('Firestore document IDs are reversible even for dotted and slashed keys',()=>{
  for(const key of ['.','..','attempt/1234','settings/preferences','jj-read','topic:2026','import/a%2Fb']){
   const encoded=encodeDocumentId(key);
@@ -37,8 +37,14 @@ function mockedSdk({readDocs=[],existing=null,onRead=()=>{},onGet=()=>{}}={}){
  const writes=[],refs=[];
  const fs={
   collection(_db,...path){return path.join('/')},
+  query(base,constraint){return {base,constraint}},
+  limit(n){return {max:n}},
   doc(base,id){const ref={base,id};refs.push(ref);return ref},
-  async getDocsFromServer(){await onRead();return {docs:readDocs}},
+  async getDocsFromServer(query){
+   await onRead(query);
+   const max=query?.constraint?.max??Number.MAX_SAFE_INTEGER;
+   return {docs:readDocs.slice(0,max)};
+  },
   async runTransaction(_db,fn){
    let staged=null;
    const transaction={
@@ -87,4 +93,26 @@ test('Firestore adapter rejects other collections and malformed remote IDs',asyn
  assert.throws(()=>createUserScopedAdapter(fake.fs,{},auth,'admins'),/不支援/);
  const adapter=createUserScopedAdapter(fake.fs,{},auth);
  await assert.rejects(adapter.readAll(),/識別碼/);
+});
+
+test('Firebase remote preview is bounded by a query limit and refuses partial merges',async()=>{
+ const auth={currentUser:{uid:'google-owner'}};
+ const docs=Array.from({length:MAX_REMOTE_PREVIEW_DOCS+1},(_,i)=>({
+  id:encodeDocumentId('attempt/'+String(i).padStart(4,'0')),data:()=>({raw:'[]',revision:1})
+ }));
+ let maximum=null;
+ const fake=mockedSdk({readDocs:docs,onRead:async query=>{maximum=query?.constraint?.max}});
+ const adapter=createUserScopedAdapter(fake.fs,{},auth,'desk');
+ await assert.rejects(adapter.readAll(),/超過單次預覽上限/);
+ assert.equal(maximum,MAX_REMOTE_PREVIEW_DOCS+1);
+ assert.equal(fake.writes.length,0);
+});
+test('Firebase preview succeeds at the exact quota-aware collection boundary',async()=>{
+ const auth={currentUser:{uid:'google-owner'}};
+ const docs=Array.from({length:MAX_REMOTE_PREVIEW_DOCS},(_,i)=>({
+  id:encodeDocumentId('attempt/'+String(i).padStart(4,'0')),data:()=>({raw:'[]',revision:1})
+ }));
+ const fake=mockedSdk({readDocs:docs});
+ const result=await createUserScopedAdapter(fake.fs,{},auth,'desk').readAll();
+ assert.equal(Object.keys(result).length,MAX_REMOTE_PREVIEW_DOCS);
 });
