@@ -47,7 +47,8 @@ export async function prepareDesk(local,documents,shadow={},uuid=()=>crypto.rand
   // as a new immutable archive document before changing the local main record.
   const archiveId='import/'+uuid();
   validateId(archiveId);
-  if(has(documents,archiveId)||has(local.records,archiveId))throw Error('保留版本識別碼重複，請重試');
+  if(has(documents,archiveId)||has(local.records,archiveId)||has(archive,archiveId))
+   throw Error('保留版本識別碼重複，請重試；原有本機答案仍保留');
   const saved={value:{originalId:id,record:{value:structuredClone(mine.value),deleted:mine.deleted},
     importedAt:new Date().toISOString(),source:'firebase-conflict'},deleted:false};
   validateValue(saved.value);
