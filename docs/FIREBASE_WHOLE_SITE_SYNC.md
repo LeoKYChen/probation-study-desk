@@ -107,6 +107,15 @@ npm --prefix verification/firebase-rules install --no-audit --no-fund
 - **注意：只有文件 ID 前綴的初步格式限制；用戶端另有完整編碼驗證。** 真實 Firestore、Google OAuth、iPhone 與跨網域測試仍未完成，不把模擬器測試當作線上驗收。
 - 這批提交目前未查得對應的 GitHub Actions 工作流程結果；應視為**已提交、待執行驗收**，而不是已通過。
 
+## 本輪：規則重建、資料量上限與來源一致性
+
+- 修復前一版 `firestore.rules` 存在的**不完整函式與重複規則區塊**；已完整重建使用者隔離、版本遞增、不可刪除、欄位驗證及大小限制。增加 `verification/firebase-rules/preflight.cjs`，及早攔截結構不完整的權限規則。**此靜態檢查不等於 Security Rules Emulator 編譯通過。**
+- `modules` 文件 ID 從單純 `k~` 前綴，進一步限制為既有 **15 類學習模組加 1 類衝突保留檔**。快速 CI 會直接比對 `backup/unified-core.js` 的白名單；避免網站模組清單變更時，前端和 Firestore 權限規則不一致。
+- `desk` 文件 ID 限制使用標準大寫百分比編碼（例如 `%2F`），拒絕無效轉義（例如 `%ZZ`），並加入模擬器拒絕測試。
+- Firebase Firestore 讀取使用 `limit(1001)`；最多接受 **1,000 筆完整文件**，第 1,001 筆出現即停止預覽，不會以不完整資料執行合併。書桌本機＋雲端待合併 ID 聯集也以 1,000 筆為上限，超過就要求保留 JSON 備份，等待正式分批同步設計。
+- 以上上限是控制 Firebase Spark 免費額度及減少意外大量請求的**開發版保護**，不是聲稱 Firebase 本身只能有 1,000 筆資料。現階段仍無實際線上 Firebase 專案可供驗收，**最新 GitHub Actions 結果仍待查核**。
+- 尚未完成的功能：受保護模組剩餘寫入鉤子、真實 Google/Firebase Auth、iPhone/Mac 跨裝置、背景同步的離線重試及可取消操作；不得把 Draft 當成可正式使用。
+
 ## 4. 尚未完成的發布阻擋
 
 - [ ] 真實 Firebase Auth + Firestore 雙裝置整合測試；Firestore Rules Emulator 自動測試已加入 CI，**通過狀態仍待最新工作流程確認**
