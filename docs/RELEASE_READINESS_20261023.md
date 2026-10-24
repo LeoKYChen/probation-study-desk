@@ -1,7 +1,25 @@
 # 穩定版發布前驗收紀錄｜2026-10-23
 
 > 追蹤：[穩定版 PR #78](https://github.com/LeoKYChen/probation-study-desk/pull/78) 與 [凍結 Issue #77](https://github.com/LeoKYChen/probation-study-desk/issues/77)。
-> **本文件是發布候選驗收紀錄，不是已正式發布的聲明。**
+> **歷史文件提示：** 下文多數內容是 2026-10-23 正式發布前的快照。`v2026.10.0` 已於當日建立 [GitHub Release](https://github.com/LeoKYChen/probation-study-desk/releases/tag/v2026.10.0)（固定 SHA `b924bd6e2ef12c18275e4fbf446e5ca1f7f643d1`）；請優先閱讀以下 2026-10-24 新驗收紀錄。舊檢核清單保留作歷史證據，不應再讀成當前發版狀態。
+
+## 2026-10-24｜v2026.10.0 發布後使用者 iPhone 驗收更新
+
+2026-10-24，使用者回報以下五項 iPhone 實機操作**全部通過**：
+
+1. 首頁與選單正常；
+2. 備考書桌可選題、儲存答案；
+3. 考古題可顯示、練習；
+4. 雙 AI 交接正常；
+5. 少年司法週報可閱讀。
+
+**驗收等級：使用者回報通過（5/5），非獨立完整 E2E 驗收。** 使用者尚未提供測試網站 URL、瀏覽器／iOS 版本、部署 SHA；2026-10-24 `main` 已有新的程式提交，不能因此斷言實測的是固定 `v2026.10.0` 的位元組版本。
+
+詳情及未完成的 JSON 匯出還原、桌面／Safari、離線／列印、雙 AI 回傳防護、32 份官方原卷人工校對及雙網域部署核對，見 [本次驗收詳表](acceptance/v2026.10.0-iphone-2026-10-24.md)與 [Issue #72](https://github.com/LeoKYChen/probation-study-desk/issues/72)。**不將舊版「iPhone Safari 與電腦全功能」整項改標為通過**，維持剩餘待辦。
+
+---
+
+### 以下為 2026-10-23 發布前歷史紀錄
 
 ## 2026-10-23 最新狀態更新（後續於本文歷史快照）
 
