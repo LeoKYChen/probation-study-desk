@@ -81,9 +81,27 @@
 6. 第二部裝置用**同一 Firebase Project、同一 Google 帳號**登入；第一次在該網址同步仍須預覽並確認合併。完成合成資料驗證後才考慮實際資料。
 7. Firestore Spark 免費配額非無限制；例如免費儲存 1 GiB、每日 50,000 次文件讀取、20,000 次寫入。**本專案目前沒有部署與實測產生的 Firestore 費用紀錄**。
 
+## Firestore 權限測試：不需綁卡的本機模擬器
+
+本輪新增 `firebase.emulator.json`、`verification/firebase-rules/run.cjs`、`verification/firebase-rules/package.json` 及 `.github/workflows/firebase-rules-emulator.yml`。GitHub Actions 使用 `demo-psd-rules` 本機專案 ID，**沒有實際 Google 帳號、私人案例資料、Firebase 管理金鑰或正式環境部署權限**。
+
+模擬器會驗證：匿名帳號不能讀取、其他 UID 不得讀寫、使用者只能存取自己的 `modules`／`desk` 路徑、建立版本必須為 1、更新必須遞增 1、不能額外增加欄位、更新時間必須使用伺服器時間、不允許刪除、過大的文件會遭拒絕。
+
+想在有 Node 與 Java 21 的電腦重跑：
+
+```bash
+npm --prefix verification/firebase-rules install --no-audit --no-fund
+./verification/firebase-rules/node_modules/.bin/firebase emulators:exec \
+  --only firestore --project demo-psd-rules \
+  --config firebase.emulator.json --non-interactive \
+  "node verification/firebase-rules/run.cjs"
+```
+
+**模擬器測試結果與真實 Firebase 驗收不同。** 通過模擬器只能證明在測試情境下權限規則符合預期；實際網域授權、iOS Safari Google 登入、Spark 配額與兩部裝置同步仍需另行驗收。
+
 ## 4. 尚未完成的發布阻擋
 
-- [ ] 真實 Firebase Auth + Firestore 雙裝置整合測試及 Firestore Rules Emulator 權限拒絕測試
+- [ ] 真實 Firebase Auth + Firestore 雙裝置整合測試；Firestore Rules Emulator 自動測試已加入 CI，**通過狀態仍待最新工作流程確認**
 - [ ] iPhone Safari／Mac 瀏覽器、GitHub Pages／Cloudflare 各網域登入及重新登入
 - [ ] 多網域各自本機資料、跨帳號隔離與切換、離線回復、資料量過大、故障回復
 - [ ] 15 類白名單外的模組與 sessionStorage 問題逐一盤點，決定是否需要新格式
