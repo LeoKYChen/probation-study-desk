@@ -92,6 +92,13 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   return data;
  }
  async function connect(page){
+  assert.equal(await page.locator('#firebase-login').isDisabled(),true,'popup must be disabled until SDK preparation');
+  const writesBeforePrepare=trace.length;
+  await page.locator('#firebase-prepare').click();
+  await page.locator('#firebase-login').waitFor({state:'visible'});
+  await page.waitForFunction(()=>!document.querySelector('#firebase-login').disabled);
+  assert.equal(trace.length,writesBeforePrepare,'SDK preparation must not upload learning records');
+  assert.equal(await page.locator('#firebase-user').textContent(),'未登入','SDK preparation does not sign in');
   await page.locator('#firebase-login').click();
   await page.waitForFunction(()=>document.querySelector('#firebase-user').textContent.includes('study@example.test'));
  }
