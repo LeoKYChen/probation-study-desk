@@ -144,3 +144,19 @@ test('no-op and upload-only sync do not rewrite guest IndexedDB',async()=>{
  assert.equal(result.uploaded,0);
  assert.equal(writes,0,'unchanged cloud data does not trigger another local save');
 });
+
+test('two different conflicts cannot silently share one immutable archive ID',async()=>{
+ const cloud=backend(),guest=new MemoryStore(emptyState());
+ for(const id of ['attempt/one','attempt/two']){
+  cloud.docs[id]={revision:1,raw:JSON.stringify({value:{kind:'attempt',answer:'雲端版本'},deleted:false})};
+  guest.state.records[id]={value:{kind:'attempt',answer:'本機重要原稿'},deleted:false,revision:0};
+ }
+ const original=await guest.read();
+ const repeatedId=()=> '00000000-0000-4000-8000-000000000001';
+ await assert.rejects(
+  prepareDesk(await guest.read(),await cloud.api.readAll(),{},repeatedId),
+  /保留版本識別碼重複/
+ );
+ assert.deepEqual(await guest.read(),original,'both original drafts must remain intact');
+ assert.equal(Object.keys(cloud.docs).length,2,'no conflict archive was uploaded');
+});
