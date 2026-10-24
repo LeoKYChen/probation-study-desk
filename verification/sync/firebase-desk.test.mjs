@@ -117,7 +117,7 @@ test('conflict archives cannot push cloud above the 1000-record preview limit',a
  for(let i=0;i<MAX_DESK_PREVIEW_DOCS;i++){
   const id='attempt/'+i;
   cloud.docs[id]={revision:1,raw:JSON.stringify({value:{kind:'attempt',answer:'雲端版本'},deleted:false})};
-  guest.state.records[id]={revision:0,value:{kind:'attempt',answer:'本機不同版本'},deleted:false};
+  guest.state.records[id]={revision:0,value:{kind:'attempt',answer:i===0?'本機不同版本':'雲端版本'},deleted:false};
  }
  const local=await guest.read();
  await assert.rejects(
