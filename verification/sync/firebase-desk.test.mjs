@@ -111,3 +111,36 @@ test('study-desk supports exactly the maximum verified count',async()=>{
  assert.equal(Object.keys(plan.uploads).length,MAX_DESK_PREVIEW_DOCS);
  assert.equal(Object.keys(cloud.docs).length,0,'preview must never upload');
 });
+
+test('conflict archives cannot push cloud above the 1000-record preview limit',async()=>{
+ const cloud=backend(),guest=new MemoryStore(emptyState());
+ for(let i=0;i<MAX_DESK_PREVIEW_DOCS;i++){
+  const id='attempt/'+i;
+  cloud.docs[id]={revision:1,raw:JSON.stringify({value:{kind:'attempt',answer:'雲端版本'},deleted:false})};
+  guest.state.records[id]={revision:0,value:{kind:'attempt',answer:'本機不同版本'},deleted:false};
+ }
+ const local=await guest.read();
+ await assert.rejects(
+  prepareDesk(local,await cloud.api.readAll(),{},()=> '00000000-0000-4000-8000-000000000001'),
+  /合併後備考書桌雲端紀錄將超過/
+ );
+ assert.equal(Object.keys(cloud.docs).length,MAX_DESK_PREVIEW_DOCS,'cloud records are untouched');
+ assert.deepEqual(await guest.read(),local,'local conflicting answer remains intact');
+});
+test('no-op and upload-only sync do not rewrite guest IndexedDB',async()=>{
+ const cloud=backend(),guest=new MemoryStore(emptyState());
+ await add(guest,'attempt/noop','保留本機原稿');
+ let writes=0;
+ const wrapper={
+  read:()=>guest.read(),
+  update:fn=>{writes++;return guest.update(fn);}
+ };
+ const first=await prepareDesk(await wrapper.read(),await cloud.api.readAll());
+ const sent=await commitDesk(wrapper,cloud.api,first);
+ assert.equal(sent.uploaded,1);
+ assert.equal(writes,0,'initial upload does not rewrite answers');
+ const repeat=await prepareDesk(await wrapper.read(),await cloud.api.readAll(),sent.shadow);
+ const result=await commitDesk(wrapper,cloud.api,repeat);
+ assert.equal(result.uploaded,0);
+ assert.equal(writes,0,'unchanged cloud data does not trigger another local save');
+});
