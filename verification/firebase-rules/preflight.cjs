@@ -23,7 +23,11 @@ assert.equal(count(/allow create:\s*if owns\(uid\) && validRecordId\(/g),1,'desk
 assert.equal(count(/allow update:\s*if owns\(uid\) && validRecordId\(/g),1,'desk update requires canonical ID');
 assert.equal(count(/allow create:\s*if owns\(uid\) && validModuleId\(/g),1,'modules create require allowlist');
 assert.equal(count(/allow update:\s*if owns\(uid\) && validModuleId\(/g),1,'modules update require allowlist');
-const unified=require('../../backup/unified-core.js');
+// The repository root is ESM (`type: module`). This browser IIFE places
+// its API on globalThis when required as ESM; CommonJS builds return it.
+const loaded=require('../../backup/unified-core.js');
+const unified=Array.isArray(loaded?.modules)?loaded:globalThis.PSDUnifiedBackup;
+assert(unified&&Array.isArray(unified.modules),'unified backup contract did not load');
 const allowed=[...unified.modules.map(x=>x.key),unified.CONFLICT_KEY];
 assert.equal(allowed.length,16,'expected 15 modules and one conflict archive');
 for(const key of allowed)assert(rules.includes("'k~"+encodeURIComponent(key)+"'"),'missing cloud allowlist key: '+key);
