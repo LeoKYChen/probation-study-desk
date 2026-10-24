@@ -9,6 +9,7 @@ import {prepareDesk,commitDesk} from '../cloud-sync/whole-desk-core.mjs';
 import {IDBStore} from '../cloud-sync/idb.js';
 import {FORMAT} from '../cloud-sync/core.js';
 import {pendingChanges} from '../cloud-sync/pending-detection.mjs';
+import {checkReadiness} from '../cloud-sync/readiness.mjs';
 
 const core=window.PSDUnifiedBackup;
 const $=id=>document.getElementById(id);
@@ -17,6 +18,22 @@ let connection=null,plan=null,deskPlan=null,adapter=null,deskAdapter=null,deskSt
 let backedUp={modules:false,desk:false};
 let scanning=false,journalPreview=null;
 const safeLabel=e=>e instanceof Error?e.message:String(e);
+$('firebase-check-device').addEventListener('click',()=>{
+ const list=$('firebase-device-report');
+ list.replaceChildren();
+ const report=checkReadiness(window);
+ for(const result of report.checks){
+  const item=document.createElement('li');
+  item.textContent=(result.ok?'✓ ':'需處理：')+result.name+'：'+
+    (result.ok?'可用':'尚未通過')+'。'+result.detail;
+  list.append(item);
+ }
+ const summary=document.createElement('li');
+ summary.textContent=report.ready
+  ?'本機環境檢查已通過；尚須另行驗證 Google 登入及 Firestore 權限，且不會自動上傳。'
+  :'這部裝置尚有未符合的項目；原始學習紀錄不受檢查影響，也不會因此上傳。';
+ list.append(summary);
+});
 function assertIdentity(){
  if(!cloudUser || !connection)throw Error('請先登入');
  // A second tab may have signed out or changed users after this preview.
