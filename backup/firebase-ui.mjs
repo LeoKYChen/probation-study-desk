@@ -16,8 +16,26 @@ const $=id=>document.getElementById(id);
 const CFG='psd-firebase-public-web-config-v1',BOUND='psd-firebase-local-data-bound-v1',RESTORE='psd-firebase-restore-login-v1';
 let connection=null,plan=null,deskPlan=null,adapter=null,deskAdapter=null,deskStore=null,cloudUser=null,busy=false;
 let backedUp={modules:false,desk:false};
-let scanning=false,journalPreview=null,preparedConfig=null;
+let scanning=false,journalPreview=null,preparedConfig=null,clearGuardPreview=null;
 const safeLabel=e=>e instanceof Error?e.message:String(e);
+function currentClearGuard(){
+ if(!window.PSDLocalClearGuard)throw Error('缺少本機清除紀錄防護元件，已停止 Firebase 同步');
+ const marker=window.PSDLocalClearGuard.read(localStorage);
+ $('firebase-cleared-warning').hidden=!marker;
+ return marker;
+}
+function approveClearedRestore(){
+ const marker=currentClearGuard();
+ if(marker&&!$('firebase-restore-cleared').checked)
+  throw Error('這台裝置曾清除學習紀錄。雲端可能仍有舊答案；如確定要恢復，請另勾選「同意恢復雲端舊答案」再重新預覽');
+ return marker;
+}
+window.addEventListener('storage',event=>{
+ if(event.key===window.PSDLocalClearGuard?.KEY){
+  try{currentClearGuard();}catch(e){status(safeLabel(e),true)}
+  invalidatePreview();
+ }
+});
 $('firebase-check-device').addEventListener('click',()=>{
  const list=$('firebase-device-report');
  list.replaceChildren();
@@ -130,7 +148,7 @@ function renderPlan(){
  $('firebase-preview').append(deskText);
 }
 function invalidatePreview(){
- plan=null;deskPlan=null;journalPreview=null;backedUp={modules:false,desk:false};
+ plan=null;deskPlan=null;journalPreview=null;clearGuardPreview=null;backedUp={modules:false,desk:false};
  $('firebase-preview').replaceChildren();
  $('firebase-confirm').checked=false;
  $('firebase-apply').disabled=true;
@@ -205,6 +223,7 @@ $('firebase-signout').addEventListener('click',()=>perform(async()=>{
 }));
 $('firebase-preview-btn').addEventListener('click',()=>perform(async()=>{
  invalidatePreview();
+ const cleared=approveClearedRestore();
  if(!adapter||!cloudUser)throw Error('請先用 Google 帳號登入');
  assertIdentity();
  if(!navigator.onLine)throw Error('離線中，無法讀取雲端最新版本');
@@ -214,6 +233,8 @@ $('firebase-preview-btn').addEventListener('click',()=>perform(async()=>{
  plan=await prepare(core,local,docs,readShadow());
  deskStore?.close();deskStore=await IDBStore.open('guest');
  deskPlan=await prepareDesk(await deskStore.read(),await deskAdapter.readAll(),readDeskShadow());
+ if(currentClearGuard()!==cleared)throw Error('預覽期間其他分頁已清除學習紀錄，請重新確認是否恢復雲端舊答案');
+ clearGuardPreview=cleared;
  backedUp={modules:false,desk:false};
  renderPlan();
  status('差異預覽完成。這一步沒有修改本機，也沒有上傳。請先下載本機 JSON，再確認操作。');
@@ -228,6 +249,8 @@ $('firebase-backup-desk').addEventListener('click',()=>perform(async()=>{
 }));
 $('firebase-apply').addEventListener('click',()=>perform(async()=>{
  if(!plan||!deskPlan||!adapter||!deskAdapter||!deskStore)throw Error('請先預覽整個網站的資料差異');
+ const cleared=approveClearedRestore();
+ if(cleared!==clearGuardPreview)throw Error('預覽後本機清除紀錄的狀態已改變，請重新預覽');
  assertIdentity();
  if(!backedUp.modules||!backedUp.desk||!$('firebase-confirm').checked)throw Error('請先下載並檢查舊模組及備考書桌兩份 JSON 備份，關閉其他作答分頁並確認');
  if(!navigator.onLine)throw Error('需要連線才能確認最新雲端版本');
@@ -240,6 +263,9 @@ $('firebase-apply').addEventListener('click',()=>perform(async()=>{
  // If desk sync fails, the legacy modules already completed safely; preview again to resume.
  const deskResult=await commitDesk(deskStore,deskAdapter,deskPlan);
  saveDeskShadow(deskResult.shadow);
+ if(cleared)window.PSDLocalClearGuard.acknowledge(localStorage,cleared);
+ $('firebase-restore-cleared').checked=false;
+ currentClearGuard();
  // A later tab edit gets a new token and is never cleared by this acknowledgement.
  window.PSDLocalJournal?.acknowledge(journalPreview);
  journalPreview=null;
@@ -260,6 +286,7 @@ try{
  status('原本的 Firebase 公開設定無效，請重新輸入。',true);
 }
 $('firebase-apply').disabled=true;
+try{currentClearGuard()}catch(e){status('清除紀錄的安全標記異常：'+safeLabel(e),true)}
 // Restore a previously opted-in Firebase identity, without fetching any user
 // learning records or uploading automatically. Guests never load the SDK.
 async function restoreSession(){
