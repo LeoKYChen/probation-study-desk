@@ -232,21 +232,25 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
 
   // The study desk has its own independent IndexedDB clearing operation.
   // It must set the SAME persistent warning used by the backup centre.
-  await a.goto(base+'/study-desk/');
-  await a.waitForFunction(()=>document.querySelector('#status').textContent.includes('本機書桌已開啟'));
-  await a.locator('#clear-learning').click();
-  await a.locator('#clear-confirm-text').fill('清除');
-  await a.locator('#clear-confirm').click();
-  await a.waitForFunction(()=>document.querySelector('#status').textContent.includes('已清除本機備考書桌'));
-  const deskClearGuard=await a.evaluate(()=>localStorage.getItem('psd-firebase-local-clear-guard-v1'));
+  // Use a new, isolated browser store: the minimal transport-only attempt
+  // payload used earlier is not a full valid study-desk domain record.
+  const c=await device();
+  await c.goto(base+'/study-desk/');
+  await c.waitForFunction(()=>document.querySelector('#status')?.textContent.includes('本機書桌已開啟'),null,{timeout:15000})
+   .catch(async e=>{throw Error('無法啟動獨立備考書桌：'+(await c.locator('#status').textContent())+'；'+errors.slice(-3).join(' / '),{cause:e})});
+  await c.locator('#clear-learning').click();
+  await c.locator('#clear-confirm-text').fill('清除');
+  await c.locator('#clear-confirm').click();
+  await c.waitForFunction(()=>document.querySelector('#status').textContent.includes('已清除本機備考書桌'));
+  const deskClearGuard=await c.evaluate(()=>localStorage.getItem('psd-firebase-local-clear-guard-v1'));
   assert(deskClearGuard,'desk clear must leave a durable cloud-restoration warning');
   const cloudBeforeDeskRestore=trace.length;
-  await a.goto(base+'/backup/');
-  await a.waitForFunction(()=>document.querySelector('#firebase-user').textContent.includes('study@example.test'));
-  await a.locator('#firebase-preview-btn').click();
-  await a.waitForFunction(()=>document.querySelector('#firebase-status').textContent.includes('曾清除學習紀錄'));
+  await c.goto(base+'/backup/');
+  await connect(c);
+  await c.locator('#firebase-preview-btn').click();
+  await c.waitForFunction(()=>document.querySelector('#firebase-status').textContent.includes('曾清除學習紀錄'));
   assert.equal(trace.length,cloudBeforeDeskRestore,'desk clearing cannot trigger hidden cloud upload or restore');
-  assert.equal(await a.evaluate(()=>localStorage.getItem('psd-firebase-local-clear-guard-v1')),deskClearGuard);
+  assert.equal(await c.evaluate(()=>localStorage.getItem('psd-firebase-local-clear-guard-v1')),deskClearGuard);
   assert.equal(outside.length,0,'synthetic transport never contacts real Firebase');
   assert.deepEqual(errors,[]);
   console.log('PASS Firebase whole-site UI: consent, both JSON backups, 15 modules + IndexedDB, two devices');
