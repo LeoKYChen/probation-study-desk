@@ -1,6 +1,6 @@
 'use strict';
 const assert=require('node:assert/strict');
-const {chromium}=require('playwright'),http=require('node:http'),fs=require('node:fs/promises'),path=require('node:path');
+const {chromium,webkit}=require('playwright'),http=require('node:http'),fs=require('node:fs/promises'),path=require('node:path');
 (async()=>{
  const root=path.resolve(__dirname,'../..');
  const server=http.createServer(async(req,res)=>{
@@ -15,8 +15,11 @@ const {chromium}=require('playwright'),http=require('node:http'),fs=require('nod
  });
  await new Promise(r=>server.listen(0,'127.0.0.1',r));
  const base='http://127.0.0.1:'+server.address().port;
- const browser=await chromium.launch({headless:true,executablePath:process.env.BROWSER_EXECUTABLE||chromium.executablePath(),
-  args:['--no-sandbox','--disable-dev-shm-usage']});
+ const engine=process.env.PSD_BROWSER_ENGINE==='webkit'?webkit:chromium;
+ const options={headless:true};
+ if(process.env.BROWSER_EXECUTABLE)options.executablePath=process.env.BROWSER_EXECUTABLE;
+ if(engine===chromium)options.args=['--no-sandbox','--disable-dev-shm-usage'];
+ const browser=await engine.launch(options);
  const context=await browser.newContext({viewport:{width:390,height:844},acceptDownloads:true});
  const page=await context.newPage(),errors=[],outside=[];
  page.on('pageerror',e=>errors.push(e.message));
