@@ -199,10 +199,13 @@
   if($('clearLearning').disabled||!clearPlan||!clearBackupRequested)return;
   if(!window.confirm('確定清除目前網址、這台裝置的學習與閱讀紀錄？操作後不能直接復原；請確認備份檔已保存。'))return;
   try{
+   if(!window.PSDLocalClearGuard)throw Error('缺少雲端恢復防護，為避免日後同步帶回已清除資料，已停止清除');
+   // Persist before destructive clear; if it fails, never erase any answers.
+   window.PSDLocalClearGuard.mark(localStorage);
    const count=core.applyClear(localStorage,clearPlan);
    clearPreview();
    refresh();
-   tell('已清除 '+count+' 個本機學習紀錄區。設定及保留的課程資料不受影響；如需還原請使用清除前備份。');
+   tell('已清除 '+count+' 個本機學習紀錄區。雲端舊答案未刪除；下次雲端同步必須另外確認是否恢復。請保留清除前備份。');
   }catch(e){refreshClear();tell('已停止清除：'+e.message,true);}
  });
  $('refresh').addEventListener('click',refresh);
