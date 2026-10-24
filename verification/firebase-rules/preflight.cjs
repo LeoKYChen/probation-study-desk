@@ -15,11 +15,19 @@ for(const scope of ['modules/{moduleId}','desk/{recordId}'])
  assert.equal(rules.split('match /users/{uid}/'+scope+' {').length-1,1,'exactly one user collection: '+scope);
 assert.equal(count(/function\s+owns\s*\(/g),1,'exactly one authentication helper');
 assert.equal(count(/function\s+validRecordId\s*\(/g),1,'exactly one document id helper');
+assert.equal(count(/function\s+validModuleId\s*\(/g),1,'exactly one module allowlist helper');
 assert.equal(count(/function\s+validSyncDocument\s*\(/g),1,'exactly one payload helper');
 assert.equal(count(/allow delete:\s*if false;/g),2,'disable deletion for both collections');
 assert.equal(count(/allow read:\s*if owns\(uid\);/g),2,'only owner may read collections');
-assert.equal(count(/allow create:\s*if owns\(uid\) && validRecordId\(/g),2,'only owner may create');
-assert.equal(count(/allow update:\s*if owns\(uid\) && validRecordId\(/g),2,'only owner may update');
+assert.equal(count(/allow create:\s*if owns\(uid\) && validRecordId\(/g),1,'desk create requires canonical ID');
+assert.equal(count(/allow update:\s*if owns\(uid\) && validRecordId\(/g),1,'desk update requires canonical ID');
+assert.equal(count(/allow create:\s*if owns\(uid\) && validModuleId\(/g),1,'modules create require allowlist');
+assert.equal(count(/allow update:\s*if owns\(uid\) && validModuleId\(/g),1,'modules update require allowlist');
+require('../../backup/unified-core.js');
+const allowed=[...globalThis.PSDUnifiedBackup.modules.map(x=>x.key),globalThis.PSDUnifiedBackup.CONFLICT_KEY];
+assert.equal(allowed.length,16,'expected 15 modules and one conflict archive');
+for(const key of allowed)assert(rules.includes("'k~"+encodeURIComponent(key)+"'"),'missing cloud allowlist key: '+key);
+assert.equal((rules.match(/'k~[^']+'/g)||[]).length,16,'no extra cloud module IDs');
 assert(rules.includes("request.resource.data.keys().hasOnly(['raw', 'revision', 'updatedAt'])"),
  'reject unexpected Firestore fields');
 assert(rules.includes('request.resource.data.updatedAt == request.time'),'use server timestamp');
