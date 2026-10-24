@@ -15,6 +15,29 @@ service cloud.firestore {
         && id.matches("^k~([A-Za-z0-9_.!~*'()-]|%[0-9A-F]{2})+$");
     }
 
+    // Existing unified backup is the authority for this exact 15-module
+    // allowlist plus its conflict archive. Never accept unrelated cloud docs.
+    function validModuleId(id) {
+      return id in [
+        'k~psd-ai-custom-rules-v1',
+        'k~probation-study30-v251%3Av1',
+        'k~probation-study-desk-v24',
+        'k~probation-study-desk-v3',
+        'k~probation-study-desk-v2',
+        'k~probation-daily-github%3Arecords%3Av1',
+        'k~daily-reading-test%3Asaved',
+        'k~psd-common-subjects-v1',
+        'k~psd-staresto-link-coach-v06',
+        'k~psd-staresto-daily-v04',
+        'k~jj-bookmarks',
+        'k~jj-read',
+        'k~jj-font',
+        'k~psd-home-exam-countdown-v1',
+        'k~psd-lecture-planner-v1',
+        'k~psd-unified-backup-conflicts-v1'
+      ];
+    }
+
     function validSyncDocument() {
       return request.resource.data.keys().hasAll(['raw', 'revision', 'updatedAt'])
         && request.resource.data.keys().hasOnly(['raw', 'revision', 'updatedAt'])
@@ -26,9 +49,9 @@ service cloud.firestore {
 
     match /users/{uid}/modules/{moduleId} {
       allow read: if owns(uid);
-      allow create: if owns(uid) && validRecordId(moduleId)
+      allow create: if owns(uid) && validModuleId(moduleId)
         && validSyncDocument() && request.resource.data.revision == 1;
-      allow update: if owns(uid) && validRecordId(moduleId)
+      allow update: if owns(uid) && validModuleId(moduleId)
         && validSyncDocument() && request.resource.data.revision == resource.data.revision + 1;
       allow delete: if false;
     }
