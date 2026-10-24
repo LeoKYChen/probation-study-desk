@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {encodeDocumentId,decodeDocumentId,validateFirebaseConfig,assertCurrentUser,createUserScopedAdapter,MAX_REMOTE_PREVIEW_DOCS} from '../../cloud-sync/firebase-client.mjs';
+import {encodeDocumentId,decodeDocumentId,validateFirebaseConfig,assertCurrentUser,createUserScopedAdapter,createPopupLogin,MAX_REMOTE_PREVIEW_DOCS} from '../../cloud-sync/firebase-client.mjs';
 test('Firestore document IDs are reversible even for dotted and slashed keys',()=>{
  for(const key of ['.','..','attempt/1234','settings/preferences','jj-read','topic:2026','import/a%2Fb']){
   const encoded=encodeDocumentId(key);
@@ -115,4 +115,31 @@ test('Firebase preview succeeds at the exact quota-aware collection boundary',as
  const fake=mockedSdk({readDocs:docs});
  const result=await createUserScopedAdapter(fake.fs,{},auth,'desk').readAll();
  assert.equal(Object.keys(result).length,MAX_REMOTE_PREVIEW_DOCS);
+});
+
+test('Google popup begins synchronously within user click without awaiting SDK state',async()=>{
+ const calls=[],auth={currentUser:{uid:'synthetic-user'}};
+ const authLib={
+  GoogleAuthProvider:class GoogleAuthProvider {},
+  signInWithPopup(_auth,provider){
+   calls.push('popup-started-now');
+   assert.equal(_auth,auth);
+   assert.equal(provider.constructor.name,'GoogleAuthProvider');
+   return Promise.resolve({user:auth.currentUser});
+  }
+ };
+ const login=createPopupLogin(auth,authLib);
+ const future=login();
+ assert.deepEqual(calls,['popup-started-now'],'opening the popup must be synchronous before the first await');
+ assert.equal((await future).uid,'synthetic-user');
+});
+test('Google popup blocks are reported without falling back to unsafe redirect',async()=>{
+ const auth={currentUser:null};
+ const authLib={
+  GoogleAuthProvider:class GoogleAuthProvider {},
+  signInWithPopup(){
+   return Promise.reject(Object.assign(Error('blocked'),{code:'auth/popup-blocked'}));
+  }
+ };
+ await assert.rejects(createPopupLogin(auth,authLib)(),/阻擋 Google 登入視窗/);
 });
