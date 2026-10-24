@@ -200,13 +200,18 @@ async function clearLearning() {
  if($('clear-confirm-text').value!=='清除')return;
  // Drain pending autosaves before replacing the namespace atomically.
  await flush();
+ if(!window.PSDLocalClearGuard)
+  throw Error('缺少清除後雲端恢復防護；已停止清除以保留原始答案');
+ // Make the durable warning visible to the backup centre BEFORE removing
+ // IndexedDB drafts. If saving the warning fails, no original draft is erased.
+ window.PSDLocalClearGuard.mark(localStorage);
  const epoch=uid();
  await store.update(s=>Object.assign(s,clearedLearningState(s,epoch)));
  current=null;currentId=null;baseline=null;currentEpoch=epoch;skipped=[];
  const s=await store.read();preferences=validatePreferences(s.records['settings/preferences']?.value||{subjects:{},learnedTopics:[]});
  $('editor').hidden=true;$('answer').value='';$('question-body').textContent='從今日任務或手動選題開始。';$('practice-title').textContent='作答與訂正';$('source-label').textContent='';
  await loadLectureProgress();renderPreferences();describeQuestion();await refresh();
- $('clear-dialog').close();report('已清除本機備考書桌的學習紀錄；設定與舊模組原始資料均保留。');
+ $('clear-dialog').close();report('已清除本機備考書桌學習紀錄；原始備份及其他模組仍保留。若雲端有舊答案，下次同步須另行同意恢復。');
 }
 async function setup() {
  await openNamespace('guest');
