@@ -134,6 +134,16 @@ npm --prefix verification/firebase-rules install --no-audit --no-fund
 - 已使用目前 GitHub 版本的 `cloud-sync/readiness.mjs` 執行獨立 JavaScript 模擬測試，確認唯讀與各項失敗判定；另對 `cloud-sync/firebase-client.mjs` 的 UID、CAS、預覽上限執行模擬測試。**這並非真正 iPhone Safari 或 Firestore Emulator 測試，也不代表 Google 登入或雲端安全規則已驗證。**
 - 正式 GitHub Actions 仍未查得最新確認成功結果；在開發分支維持 Draft，不合併、不部署正式網站。
 
+## 本輪：Google 登入使用者手勢及雙引擎驗收（2026-10-24）
+
+- 發現舊版在同一次 Google 登入按鍵事件中，先 `await openFirebase()` 載入 CDN SDK、`await authStateReady()`、`await setPersistence()` 後才呼叫 `signInWithPopup()`，手機 Safari 的短暫使用者啟動權限可能早已消失。
+- 修正為 **① 準備 Google 登入環境（載入 SDK／設定 persistence）**、**② 以 Google 帳號登入（在新的直接點擊事件內立即呼叫 popup）**。準備階段不讀取或寫入學習資料；若在兩步之間修改 Firebase 公開設定，將拒絕登入並要求重新準備。從先前主動登入狀態恢復時，也會先準備再容許重新點擊登入。
+- `verification/sync/firebase-two-device-browser.cjs` 增加 `navigator.userActivation.isActive` 檢查；模擬 Google 登入必須發生在真實瀏覽器點擊事件內，不能經過不必要的非同步等待。
+- 新增獨立 `.github/workflows/firebase-browser-contract.yml`（無部署、無 Google 帳密、無實際 Firestore），測試訪客不連線、手動備份、雙裝置模擬同步、更新衝突、離線佇列、部分失敗和再次確認。
+- **Chromium 真實瀏覽器合成雙裝置測試已在 GitHub Actions 成功執行**：`40070875119`，含 2 支端對端腳本。另追加 Safari WebKit 引擎的兩支相同腳本，**仍待對應最新工作流程確認結果**。WebKit 模擬不等於實際 iOS Safari。
+- 原有 44 項 Firebase 單元測試、Firestore Security Rules Emulator、離線與備份檢查均曾於前版完整通過；上述新版登入流程仍須看最新 CI。Firebase Spark 真實授權網域、OAuth 授權及 iPhone／Mac 跨裝置尚未驗收。
+- PR 仍為 Draft；沒有合併 `main`、沒有發布正式網站、沒有打開自動學習資料上傳。
+
 ## 4. 尚未完成的發布阻擋
 
 - [ ] 真實 Firebase Auth + Firestore 雙裝置整合測試；Firestore Rules Emulator 自動測試已加入 CI，**通過狀態仍待最新工作流程確認**
