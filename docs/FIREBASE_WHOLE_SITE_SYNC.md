@@ -145,6 +145,24 @@ npm --prefix verification/firebase-rules install --no-audit --no-fund
 - 新版 46 項 Firebase 單元測試、Firestore Security Rules Emulator、離線與備份檢查均已在 GitHub Actions 執行通過；最終 Chromium／WebKit 瀏覽器測試仍以對應最新工作流程結果為準。Firebase Spark 真實授權網域、OAuth 授權及 iPhone／Mac 跨裝置尚未驗收。
 - PR 仍為 Draft；沒有合併 `main`、沒有發布正式網站、沒有打開自動學習資料上傳。
 
+## 本輪：清除後防止雲端舊答案無聲恢復（2026-10-24）
+
+### 清除本機 ≠ 刪除雲端
+
+- 已確認原有 `backup/app.js` 的「清除學習紀錄」只清除同一網域本機允許的資料。Firestore 規則禁止客戶端直接刪除文件，因此**清除本機紀錄後，雲端既有答案仍然存在**；再次同步會可能重新下載。
+- 新增 `cloud-sync/local-clear-guard.js`，在備份中心清除 `localStorage`、或備考書桌清除 `IndexedDB` 的**破壞性操作之前**，寫入 `psd-firebase-local-clear-guard-v1` 安全標記。標記只包含版本、時間、隨機識別碼，**不含答案內容**，也不納入 Firebase 的 15 類同步白名單。
+- 若安全標記無法保存，清除操作停止，避免留下「本機已刪除、但無法識別是否意圖恢復」的狀態。若後續清除失敗，安全標記可以保留（以保守方式阻止意外復原）。
+- `backup/firebase-ui.mjs` 檢查標記；若存在，使用者須額外勾選「**我明確同意恢復雲端舊答案**」，再預覽兩份備份及確認合併。預覽後另一分頁若又清除資料，原同意及預覽會失效；只有完整手動同步成功，才移除該次標記。
+- `study-desk/app.js` 的獨立「清除學習紀錄」也接上同一標記，並更新兩個頁面的提醒文字。**目前沒有提供從介面直接清除 Firebase 雲端的功能**；不要把本機清除誤認為雲端刪除。
+- 限制：警示標記保存在該網域的本機 `localStorage`。直接使用瀏覽器功能**清除整個網站資料**時，連標記本身也可能被刪除；其他尚未接入防護的獨立模組清除流程亦不保證能建立標記。故真實 Firebase 登入前仍應先備份，並依實際預覽審慎確認。
+
+### 驗證紀錄
+
+- `verification/sync/firebase-clear-guard.test.mjs` 新增 4 項安全標記單元測試：唯讀、不含答案、重複清除使舊標記失效、儲存失敗時中止。已納入 **Firebase sync contract**；GitHub Actions `40079303332` 顯示 **50/50 單元測試通過**及 **209 個離線資源通過**。
+- `verification/sync/firebase-two-device-browser.cjs` 新增從備份中心清除後的拒絕無聲恢復／明確同意恢復，並新增**備考書桌獨立清除後返回備份中心**的阻擋測試。
+- Chromium 與 Safari WebKit 四支合成雙裝置／訪客瀏覽器腳本在 GitHub Actions `40079934050` **全部通過**。同期備考書桌原有回歸流程 `40079934047`、Firestore 權限模擬器 `40079934144` 亦成功。此為模擬瀏覽器與合成雲端，不等同真實 iPhone／Mac 加 Firebase OAuth。
+- 所有變更仍限 Draft PR #84；`main` 未合併、正式網站未部署、沒有自動雲端上傳。
+
 ## 4. 尚未完成的發布阻擋
 
 - [ ] 真實 Firebase Auth + Firestore 雙裝置整合測試；Firestore Rules Emulator 自動測試已加入 CI，**通過狀態仍待最新工作流程確認**
