@@ -2,3 +2,22 @@
 input,select{display:block;width:100%;min-height:44px;border:1px solid #c8d2c5;border-radius:8px;padding:10px 12px;background:#fff;color:var(--ink);font-size:15px;margin:8px 0 14px}.picker{margin-bottom:26px}.picker-title,.selection-meta,.active-title{display:flex;justify-content:space-between;gap:16px;align-items:center}.picker-title h2{margin:0 0 16px}.subject-buttons{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 20px}.subject-buttons button{font-size:13px}.subject-buttons button[aria-pressed=true]{background:var(--green);color:white}.filters{display:grid;grid-template-columns:1.4fr .8fr 1fr 1.2fr;gap:14px}.selection-meta{align-items:start}.selection-meta button{flex-shrink:0}.source-help{border-top:1px solid var(--line);padding-top:16px;margin-top:16px;font-size:13px}.active-title{margin:30px 0 16px}.active-title h2{margin:0}.active-title .pill{font-size:12px;max-width:320px}.parent-question{background:#fff;border:1px solid var(--line);padding:16px 22px;border-radius:12px;margin-bottom:20px}.parent-question p{white-space:pre-wrap}.parent-question #basis-links{font-size:13px}#question-heading{white-space:pre-wrap}#answer-panel>input{margin-bottom:16px}#attempt-log p{white-space:pre-wrap;font-size:14px}.intro #coverage{color:var(--green);font-size:13px}@media(max-width:800px){.filters{grid-template-columns:1fr 1fr}.subject-buttons{display:grid;grid-template-columns:1fr 1fr}.subject-buttons button{padding:10px 6px;font-size:12px}.picker-title,.selection-meta,.active-title{display:block}.selection-meta button{width:100%}.picker-title .pill{display:inline-block;margin-bottom:10px}.active-title .pill{display:inline-block;margin-top:8px}.search-label{grid-column:1/-1}.page-heading>.actions{margin-top:14px}.intro{margin-top:24px}}@media(max-width:390px){.filters{grid-template-columns:1fr}.search-label{grid-column:auto}}
 
 .ai-pack{margin-top:22px;padding:20px;background:#eef3e9;border:1px solid var(--line);border-radius:12px}.ai-pack p{font-size:14px}.ai-pack textarea{max-height:320px}.ai-pack .button-link{background:white}
+
+/* Keep the AI practice handoff actions full-width and aligned on phones. */
+@media (max-width: 800px) {
+  .ai-pack .actions {
+    flex-direction: column;
+  }
+
+  .ai-pack .actions > button,
+  .ai-pack .actions > .button-link {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
