@@ -75,6 +75,7 @@ footer{color:#607267;font-size:13px}ul{columns:2;max-width:780px;padding-left:24
 <p id="firebase-scope" class="muted">尚未預覽。此階段不會自動上傳任何資料。</p>
 <ul id="firebase-preview" aria-label="雲端差異預覽"></ul>
 <div class="actions"><button id="firebase-backup" type="button">① 下載舊模組完整 JSON 備份</button><button id="firebase-backup-desk" type="button">② 下載備考書桌 JSON 備份</button></div>
+<label class="check" id="firebase-cleared-warning" hidden><input type="checkbox" id="firebase-restore-cleared">這台裝置曾清除本機學習紀錄，但雲端舊答案不會因此刪除。我明確同意：本次手動同步可能把已清除的舊答案下載回這台裝置；如不願恢復，請勿勾選或進行同步。</label>
 <label class="check"><input type="checkbox" id="firebase-confirm">我已確認兩份 JSON 備份已實際保存、其他作答分頁已關閉，而且待同步資料不含可識別少年個案或不得上傳的公務資訊；同意依預覽結果保留版本後合併。</label>
 <div class="actions"><button id="firebase-apply" type="button" class="primary" disabled>確認合併並同步</button></div>
 <p id="firebase-status" role="status" aria-live="polite">尚未連接 Firebase，所有資料仍儲存於此裝置。</p>
@@ -112,7 +113,7 @@ footer{color:#607267;font-size:13px}ul{columns:2;max-width:780px;padding-left:24
 </div>
 <div class="card" aria-labelledby="clearTitle">
 <h2 id="clearTitle">④ 清除學習紀錄</h2>
-<p class="danger-caption">只清除<strong>目前網站網址、這台裝置</strong>的學習與閱讀紀錄，不會清除其他網址或其他裝置，也不會刪除網站題庫。</p>
+<p class="danger-caption">只清除<strong>目前網站網址、這台裝置</strong>的學習與閱讀紀錄，不會清除其他網址、其他裝置或 Firebase 雲端已上傳的答案，也不會刪除網站題庫。<strong>日後手動同步可能把雲端舊答案重新下載；系統會另行要求明確同意。</strong></p>
 <p>將清除考古題答案、每日練習、模擬題、作文／英文學習進度、週報收藏與已讀、舊版紀錄和不同答案衝突版本；函授會清除<strong>已看分鐘數及已確認課表</strong>，保留課程、堂次、時間設定與排課規則。考試倒數、閱讀字級、自訂 AI 批改提示詞及自訂單字仍保留。</p>
 <p class="note">備考書桌使用獨立的資料庫，請在「備考書桌」頁面使用其清除功能。本頁不會清除該處紀錄；瀏覽器其他分頁中尚未儲存的文字也不受本頁控制。</p>
 <p id="clearSummary" aria-live="polite">正在確認可清除項目…</p>
@@ -127,6 +128,6 @@ footer{color:#607267;font-size:13px}ul{columns:2;max-width:780px;padding-left:24
 <p id="message" role="status" aria-live="polite">此功能僅在你的瀏覽器中處理檔案。</p>
 </main>
 <footer>個人作答、筆記與 AI 評語可能含私人資料；請只上傳到你的私人 Google Drive，勿上傳公開 GitHub 或分享公開連結。這個頁面不支援舊模組單獨 JSON 直接合併，舊檔請仍從原模組匯入。</footer>
-<script src="./unified-core.js"></script><script src="./app.js"></script><script src="../cloud-sync/local-journal.js"></script><script type="module" src="./firebase-ui.mjs"></script>
+<script src="./unified-core.js"></script><script src="../cloud-sync/local-clear-guard.js"></script><script src="./app.js"></script><script src="../cloud-sync/local-journal.js"></script><script type="module" src="./firebase-ui.mjs"></script>
 </body>
 </html>
