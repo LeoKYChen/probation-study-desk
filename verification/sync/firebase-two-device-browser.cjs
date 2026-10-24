@@ -229,6 +229,24 @@ const http=require('node:http'),fs=require('node:fs/promises'),path=require('nod
   assert.deepEqual(await a.evaluate(()=>JSON.parse(localStorage.getItem('jj-read'))),['手機初稿','電腦新增','中斷前新閱讀']);
   assert.equal(await a.evaluate(()=>localStorage.getItem('psd-firebase-local-clear-guard-v1')),null,'guard only cleared after explicit successful restoration');
   assert.equal(trace.length,beforeGuard,'restoring previously cloud-stored data needs no extra upload');
+
+  // The study desk has its own independent IndexedDB clearing operation.
+  // It must set the SAME persistent warning used by the backup centre.
+  await a.goto(base+'/study-desk/');
+  await a.waitForFunction(()=>document.querySelector('#status').textContent.includes('本機書桌已開啟'));
+  await a.locator('#clear-learning').click();
+  await a.locator('#clear-confirm-text').fill('清除');
+  await a.locator('#clear-confirm').click();
+  await a.waitForFunction(()=>document.querySelector('#status').textContent.includes('已清除本機備考書桌'));
+  const deskClearGuard=await a.evaluate(()=>localStorage.getItem('psd-firebase-local-clear-guard-v1'));
+  assert(deskClearGuard,'desk clear must leave a durable cloud-restoration warning');
+  const cloudBeforeDeskRestore=trace.length;
+  await a.goto(base+'/backup/');
+  await a.waitForFunction(()=>document.querySelector('#firebase-user').textContent.includes('study@example.test'));
+  await a.locator('#firebase-preview-btn').click();
+  await a.waitForFunction(()=>document.querySelector('#firebase-status').textContent.includes('曾清除學習紀錄'));
+  assert.equal(trace.length,cloudBeforeDeskRestore,'desk clearing cannot trigger hidden cloud upload or restore');
+  assert.equal(await a.evaluate(()=>localStorage.getItem('psd-firebase-local-clear-guard-v1')),deskClearGuard);
   assert.equal(outside.length,0,'synthetic transport never contacts real Firebase');
   assert.deepEqual(errors,[]);
   console.log('PASS Firebase whole-site UI: consent, both JSON backups, 15 modules + IndexedDB, two devices');
