@@ -1,47 +1,21 @@
-// Firebase Spark: deploy this as Cloud Firestore rules before real testing.
-// Authenticated users can access only their own 15 supported module documents.
-// No anonymous reads, no cross-user reads, no deletes, no Admin key in browser.
+// Firebase Spark: install these rules before testing any real account.
+// Private per-user Firebase study records; no anonymous or cross-user access.
+// No browser Admin credentials, no document deletes and no wildcard grants.
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
     function owns(uid) {
       return request.auth != null && request.auth.uid == uid;
     }
-    // Browser client encodes each record ID as "k~" plus URL-escaped key.
-    // Block malformed IDs that would make a whole-collection read fail.
+
+    // Firebase client stores only canonical encodeURIComponent-prefixed IDs.
+    // Disallow malformed percent escapes that crash full collection reads.
     function validRecordId(id) {
-      return id.matches('^k~.+
-        && request.resource.data.keys().hasOnly(['raw', 'revision', 'updatedAt'])
-        && request.resource.data.raw is string
-        && request.resource.data.raw.size() <= 850000
-        && request.resource.data.revision is int
-        && request.resource.data.updatedAt == request.time;
+      return id.size() <= 1202
+        && id.matches("^k~([A-Za-z0-9_.!~*'()-]|%[0-9A-F]{2})+$");
     }
-    match /users/{uid}/modules/{moduleId} {
-      allow read: if owns(uid);
-      allow create: if owns(uid) && validRecordId(moduleId) && validModule()
-        && request.resource.data.revision == 1;
-      allow update: if owns(uid) && validModule()
-        && request.resource.data.revision == resource.data.revision + 1;
-      allow delete: if false;
-    }
-    // Per-record data for the separate study-desk IndexedDB namespace.
-    match /users/{uid}/desk/{recordId} {
-      allow read: if owns(uid);
-      allow create: if owns(uid) && validRecordId(recordId) && validModule()
-        && request.resource.data.revision == 1;
-      allow update: if owns(uid) && validModule()
-        && request.resource.data.revision == resource.data.revision + 1;
-      allow delete: if false;
-    }
-    match /{any=**} {
-      allow read, write: if false;
-    }
-  }
-}
-);
-    }
-    function validModule() {
+
+    function validSyncDocument() {
       return request.resource.data.keys().hasAll(['raw', 'revision', 'updatedAt'])
         && request.resource.data.keys().hasOnly(['raw', 'revision', 'updatedAt'])
         && request.resource.data.raw is string
@@ -49,23 +23,25 @@ service cloud.firestore {
         && request.resource.data.revision is int
         && request.resource.data.updatedAt == request.time;
     }
+
     match /users/{uid}/modules/{moduleId} {
       allow read: if owns(uid);
-      allow create: if owns(uid) && validModule()
-        && request.resource.data.revision == 1;
-      allow update: if owns(uid) && validModule()
-        && request.resource.data.revision == resource.data.revision + 1;
+      allow create: if owns(uid) && validRecordId(moduleId)
+        && validSyncDocument() && request.resource.data.revision == 1;
+      allow update: if owns(uid) && validRecordId(moduleId)
+        && validSyncDocument() && request.resource.data.revision == resource.data.revision + 1;
       allow delete: if false;
     }
-    // Per-record data for the separate study-desk IndexedDB namespace.
+
     match /users/{uid}/desk/{recordId} {
       allow read: if owns(uid);
-      allow create: if owns(uid) && validModule()
-        && request.resource.data.revision == 1;
-      allow update: if owns(uid) && validModule()
-        && request.resource.data.revision == resource.data.revision + 1;
+      allow create: if owns(uid) && validRecordId(recordId)
+        && validSyncDocument() && request.resource.data.revision == 1;
+      allow update: if owns(uid) && validRecordId(recordId)
+        && validSyncDocument() && request.resource.data.revision == resource.data.revision + 1;
       allow delete: if false;
     }
+
     match /{any=**} {
       allow read, write: if false;
     }
