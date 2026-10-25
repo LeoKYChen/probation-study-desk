@@ -54,4 +54,9 @@ const variant=w.gradeFullPilot('乙受託持有禮金，抽出1200元據為己�
 assert.equal(variant.evidence[0].status,'evidence','占／佔 variants count as the same term');
 const article=w.gradeFullPilot('依第78條之1應執行原無期徒刑，更犯之8月刑併執行之。',bank.find(x=>x.id==='監獄官-115-刑法與少年事件處理法-2'));
 assert.equal(article.evidence[2].status,'evidence','78之1 matches 第78條之1');
+// Related-bank questions store their exam classes in examTypes; pilot links must never print "undefined".
+const topic=fs.readFileSync(path.join(v25,'topic-practice.js'),'utf8');
+assert(/q\.examType\|\|\(q\.examTypes\|\|\[\]\)\.join\('／'\)/.test(topic),'pilot links fall back to examTypes');
+assert(bank.every(q=>q.examType||q.examTypes?.length),'every question has an exam class label');
+assert(html.includes('.topic-actions.pilot-links { display: grid;'),'pilot links use an equal-width grid');
 console.log('all-subject pilots: '+bank.length+' questions, '+added+' added');

@@ -213,6 +213,6 @@
   coverage.style.overflowX='auto';coverage.appendChild(table);
   const pilotGroups=new Map();
   for(const [id,rubric] of Object.entries(window.FULL_PILOT_RUBRICS||{})){const q=byId.get(id);if(!q)continue;if(!pilotGroups.has(q.subject))pilotGroups.set(q.subject,[]);pilotGroups.get(q.subject).push({q,rubric});}
-  for(const [subject,items] of pilotGroups){const group=document.createElement('details'),summary=document.createElement('summary'),actions=document.createElement('div');summary.textContent=subject+'｜'+items.length+'題';actions.className='topic-actions';for(const {q,rubric} of items)actions.appendChild(button(`${q.examType} ${q.year}年 第${q.questionNo}題｜${rubric.title}`,()=>original(q)));group.appendChild(summary);group.appendChild(actions);$('legalPilotLinks').appendChild(group);} 
+  for(const [subject,items] of pilotGroups){const group=document.createElement('details'),summary=document.createElement('summary'),actions=document.createElement('div');summary.textContent=subject+'｜'+items.length+'題';actions.className='topic-actions pilot-links';for(const {q,rubric} of items)actions.appendChild(button(`${q.examType||(q.examTypes||[]).join('／')||'相關類科'} ${q.year}年 第${q.questionNo}題｜${rubric.title}`,()=>original(q)));group.appendChild(summary);group.appendChild(actions);$('legalPilotLinks').appendChild(group);} 
   refreshTopics(); window.renderCrimeRelated();
 })();
