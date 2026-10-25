@@ -773,7 +773,17 @@
         }
       });
     }
-    if (!localStorage.getItem(storageKey)) localStorage.setItem(storageKey, JSON.stringify(saved));
+    // localStorage is shared with other sites on this origin; a full quota must never fail silently.
+    let storageWarned = false;
+    function persistRecords(records) {
+      try { localStorage.setItem(storageKey, JSON.stringify(records)); storageWarned = false; return true; }
+      catch (error) {
+        if (!storageWarned) showToast('瀏覽器儲存空間不足或被封鎖，作答尚未保存。請先複製答案或到備份中心匯出 JSON。');
+        storageWarned = true;
+        return false;
+      }
+    }
+    try { if (!localStorage.getItem(storageKey)) persistRecords(saved); } catch {}
     let currentYear = years[0] || 115;
     let currentSubject = subjects[0];
     let currentExamType = examTypes[0];
@@ -795,7 +805,7 @@
     }
     function updateEntry(patch) {
       saved[currentId] = { ...entry(), ...patch, updatedAt:new Date().toISOString() };
-      localStorage.setItem(storageKey, JSON.stringify(saved));
+      persistRecords(saved);
       updateStats();window.dispatchEvent(new Event('practice25:changed'));
     }
     function currentQuestion() { return questionBank.find(q => q.id === currentId); }
@@ -888,9 +898,10 @@
     }
     function applyImport(mode) {
       if (!pendingImport) return;
+      let next;
       if (mode === 'replace') {
         exportBackup('before-import-replace');
-        saved = { ...pendingImport.records };
+        next = { ...pendingImport.records };
       } else {
         const merged = { ...saved };
         Object.entries(pendingImport.records).forEach(([id, incoming]) => {
@@ -900,9 +911,11 @@
           const currentTime = Date.parse(current?.updatedAt || '') || 0;
           if (!currentTime || incomingTime >= currentTime) merged[id] = incoming;
         });
-        saved = merged;
+        next = merged;
       }
-      localStorage.setItem(storageKey, JSON.stringify(saved));
+      // Keep the current records when the import cannot be stored, so nothing looks imported but is lost on reload.
+      if (!persistRecords(next)) { showToast('匯入未完成：瀏覽器儲存空間不足，原紀錄未變更'); return; }
+      saved = next;
       pendingImport = null;
       render();
       showToast(mode === 'replace' ? '已匯入並取代；原資料亦已備份' : '學習紀錄已合併');
@@ -980,7 +993,7 @@
         updateWordCount();
         $('saveStatus').textContent = '儲存中…';
         clearTimeout(saveTimer);
-        saveTimer = setTimeout(() => $('saveStatus').textContent = '已自動儲存在此裝置', 350);
+        saveTimer = setTimeout(() => $('saveStatus').textContent = storageWarned ? '尚未保存：儲存空間不足，請先備份答案' : '已自動儲存在此裝置', 350);
       });
       adjustRows.addEventListener('input', event => {
         const key = event.target.dataset.adjust;
