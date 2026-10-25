@@ -33,11 +33,13 @@ const NODE_TEST=[
 const runs=[
   ...NODE.map(f=>[process.execPath,[f]]),
   ...NODE_TEST.map(f=>[process.execPath,['--test',f]]),
+  // Also guards the reviewed-layout ledger (docs/LAYOUT_REVIEW_CHANGES.json), which pins files such as sw.js.
+  [process.execPath,['verification/unified-integration.cjs','.']],
   ['python3',['scripts/check-stability-contract.py']]
 ];
 const failed=[];
 for(const [cmd,args] of runs){
-  const label=args[args.length-1];
+  const label=args.filter(a=>a!=='.'&&a!=='--test').pop();
   const r=spawnSync(cmd,args,{cwd:root,encoding:'utf8',maxBuffer:64*1024*1024});
   if(r.status===0)console.log('PASS '+label);
   else{failed.push(label);console.log('FAIL '+label+'\n'+((r.stdout||'')+(r.stderr||'')||String(r.error)).trim().split('\n').slice(-20).join('\n'));}

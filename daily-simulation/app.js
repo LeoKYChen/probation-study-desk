@@ -193,13 +193,15 @@ function openDualAIReview(){
     '你是臺灣司法特考三等觀護人申論學習助教。兩位 AI 先各自依題意辨識各設問，檢查爭點、法律或相關學理、涵攝、結構與遺漏，再彼此指出具體錯誤及修正理由。應標明查證狀態、保持合理分歧；不得捏造考古題出處、法條、裁判或研究。'+(mode==='direction'?'僅評四格草稿／答題方向，不給百分制分數或以完整答案標準扣分。':'如無可信配分僅給文字評語，無法驗證來源時明示限制。'),
     {mode,subject:M.subject(q)})||'請獨立批改本次練習，再互相檢查並修正。';
   const documentText=['【題目類型】非官方每日模擬題','【科目】'+M.subject(q),'【題目日期】'+q.date,'【題目 ID】'+id,'【來源標示，尚未核對官方原卷】'+(q.sourceReference||'未提供'),'【本次題幹】'+simulationQuestion(q),'【我的'+(mode==='direction'?'答題方向':'完整答案')+'】'+answer].join('\n\n');
-  const context={id,answer:window.PSDDualAI.hash(savedAnswer),question:window.PSDDualAI.hash(questionSignature)};
+  const context={id,answer:dualHash(savedAnswer),question:dualHash(questionSignature)};
   try{window.PSDDualAI.start({payload:{title:'每日模擬｜'+M.title(q),instruction,documentText},onResult:reviewText=>writeDualReview(context,reviewText),resume:{scope:'daily-simulation',context}});$('copyStatus').textContent='已開啟雙 AI 工作臺，完成六階段審查後可回傳本題。';}
   catch(e){$('copyStatus').textContent=e.message;}
 }
 // Shared by the live return and by a return that arrives after this page was reopened.
+// An installed offline snapshot may still serve the previous bridge without hash(); compare full text then.
+function dualHash(text){return window.PSDDualAI?.hash?window.PSDDualAI.hash(text):text;}
 async function writeDualReview(context,reviewText){
-  const id=context?.id,hash=window.PSDDualAI.hash;
+  const id=context?.id,hash=dualHash;
   if(current===id&&$('reader').open&&!save())throw Error('目前頁面的作答未保存，請先另行備份');
   const stored=M.records(JSON.parse(localStorage.getItem(KEY)||'{}'));
   const target=stored[id];

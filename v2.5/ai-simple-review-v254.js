@@ -236,18 +236,20 @@
         var state=practice.getState(q.id);
         if(reviewContentFromRecord(state,mode)!==content)throw Error('作答或四格草稿尚未成功保存，請先備份後重試');
         payload=buildDualReviewPayload(q,content,mode,root.AIPromptCustom);
-        var context={id:q.id,mode:mode,content:root.PSDDualAI.hash(content)};
+        var context={id:q.id,mode:mode,content:dualHash(content)};
         var opened=root.PSDDualAI.start({payload:payload,onResult:function(reviewText){return writeDualReview(context,reviewText);},resume:{scope:'v2.5',context:context}});
         if(opened)notice('已開啟雙 AI 工作臺；完成審查後可將評語附加回原題',false);
       }catch(e){notice(e.message||'無法開啟雙 AI 審查',true);}
     });
+    // An installed offline snapshot may still serve the previous bridge without hash(); compare full text then.
+    function dualHash(text){return root.PSDDualAI&&root.PSDDualAI.hash?root.PSDDualAI.hash(text):text;}
     // Shared by the live return and by a return that arrives after this page was reopened.
     async function writeDualReview(context,reviewText){
       var id=context&&context.id,mode=context&&context.mode==='direction'?'direction':'full';
       // Always re-read storage: the user may have switched questions or edited a record in another tab.
       var key='probation-study-desk-v24',records=JSON.parse(root.localStorage.getItem(key)||'{}');
       var target=records[id];
-      if(!target||root.PSDDualAI.hash(reviewContentFromRecord(target,mode))!==context.content)
+      if(!target||dualHash(reviewContentFromRecord(target,mode))!==context.content)
         throw Error('原題作答或草稿已變更，為避免評語錯配已停止回寫；請從工作臺匯出 MD 保存');
       var combined=appendDualFeedback(target[FIELD],reviewText);
       var next=Object.assign({},records);

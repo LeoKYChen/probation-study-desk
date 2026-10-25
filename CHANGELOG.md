@@ -10,7 +10,7 @@
 - **每日題庫快取移出 localStorage**：v2.5 每日模擬與每日學習室改用 Cache Storage 保存上次讀取的題庫，並刪除舊的 localStorage 副本，釋出共用空間；離線時仍可讀取，列印頁同步支援。
 - **雙 AI 回傳可補寫回**：原練習頁重新整理或被 iPhone Safari 關閉後，重新開啟時會詢問是否寫回已完成的評語（一週內有效）；以指紋比對答案，答案已改則不寫入。需搭配雙 AI 工作臺 v0.16。
 - **備份中心顯示本機儲存空間用量**，用量達 80% 時提醒先備份。
-- **開發流程**：移除根目錄過時的週報開發檔（`tsconfig.json`、`vite.config.ts`、`page.tsx` 等）；根目錄 `vite build` 曾會清空 `docs/`。週報改在 `juvenile-news/source` 編譯。新增 `npm test`（25 項免安裝檢查）、題庫複本一致性檢查，以及 `All checks` 彙總 CI。
+- **開發流程**：移除根目錄過時的週報開發檔（`tsconfig.json`、`vite.config.ts`、`page.tsx` 等）；根目錄 `vite build` 曾會清空 `docs/`。週報改在 `juvenile-news/source` 編譯。新增 `npm test`（26 項免安裝檢查）、題庫複本一致性檢查，以及 `All checks` 彙總 CI。
 
 ## 2026-10-23 — 進入功能凍結與維護階段（已合併程式，非 GitHub Release）
 
