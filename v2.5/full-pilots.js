@@ -294,12 +294,13 @@ const psychChapters={
 '監所管理員-109-犯罪學概要-2':['11-2-freud-and-the-psychodynamic-perspective']};
 for(const [id,chapters] of Object.entries(psychChapters))R[id].sources=chapters.map(chapter=>({title:'OpenStax Psychology 2e：'+chapter,url:'https://openstax.org/books/psychology-2e/pages/'+chapter,checkedAt}));
 window.FULL_PILOT_RUBRICS=R;
+window.FULL_PILOT_SOURCES=S;
 window.gradeFullPilot=(answer,q)=>{
 if(window.LEGAL_PILOT_RUBRICS[q.id])return window.gradeLegalPilot(answer,q);
 const r=R[q.id];if(!r)return null;
 const text=String(answer||''),units=text.split(/[。；！？\n]+/).map(s=>s.trim()).filter(Boolean),paragraphs=text.split(/\n+/).filter(s=>s.trim());
 const warnings=[];
-for(const [pattern,hint] of [...commonErrors,...(localErrors[q.id]||[])]){const hit=units.find(s=>new RegExp(pattern,'i').test(norm(s))&&!/(?:錯誤說法|不能說|不應說|並非說|此說不正確)/.test(s));if(hit)warnings.push(hint+' 原句：'+hit);}
+for(const [pattern,hint] of [...commonErrors,...(localErrors[q.id]||[]),...(r.errors||[]).map(e=>[e.pattern,e.hint])]){const hit=units.find(s=>new RegExp(pattern,'i').test(norm(s))&&!/(?:錯誤說法|不能說|不應說|並非說|此說不正確)/.test(s));if(hit)warnings.push(hint+' 原句：'+hit);}
 let evidence=r.criteria.map(row=>{const candidates=(r.sessions?[...units,...paragraphs]:units).filter(s=>row.groups.every(g=>g.some(t=>norm(s).includes(norm(t)))));const hit=candidates.find(s=>prose(s)&&explanatory.test(s));return {...row,status:hit?'evidence':candidates.length?'partial':'missing',evidence:hit||candidates[0]||'',ratio:hit?1:0};});
 const substantive=units.some(s=>prose(s)&&explanatory.test(s))&&evidence.some(e=>e.ratio);
 if(r.numeric&&substantive)warnings.push(...numbersCheck(r.numeric,units));
@@ -326,7 +327,7 @@ for(const k of Object.keys(scores))scores[k]=Math.round(scores[k]);
 const covered=evidence.filter(e=>e.ratio>0).length;
 if(covered){const heads=(text.match(/(?:^|\n)\s*(?:[一二三四五六七八九十]+、|\d+[.、]|[（(][一二三\d]+[）)])/g)||[]).length;scores.structure=Math.round(Math.min(20,Math.min(8,heads*2)+Math.min(6,Math.max(0,paragraphs.length-1)*2)+(/綜上|結論|因此|故/.test(text)?6:0))*Math.min(1,covered/3));}
 if(warnings.length)evidence=evidence.map(e=>({...e,status:'manual'}));
-return {scores:warnings.length?null:scores,total:warnings.length?null:Object.values(scores).reduce((a,b)=>a+b,0),method:'all-subject-pilot-v2',rubricVersion:version,legalVersion:r.legalVersion,checkedAt,answer:text,characters:norm(text).length,evidence,warnings,manualReview:warnings.length>0,
+return {scores:warnings.length?null:scores,total:warnings.length?null:Object.values(scores).reduce((a,b)=>a+b,0),method:'all-subject-pilot-v2',rubricVersion:r.version||version,legalVersion:r.legalVersion,checkedAt:r.checkedAt||checkedAt,answer:text,characters:norm(text).length,evidence,warnings,manualReview:warnings.length>0,
 confidence:'文字規則試評；數字只反映已辨識要點與結構，不是正確率或官方分數，尚未經專家答案集校準。',strengths:evidence.filter(e=>e.status==='evidence').slice(0,4).map(e=>'已辨識：'+e.label),improvements:[...warnings,...evidence.filter(e=>e.status!=='evidence').slice(0,4).map(e=>e.hint)].slice(0,6),createdAt:new Date().toISOString()};
 };
 })();
