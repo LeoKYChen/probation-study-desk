@@ -14,11 +14,11 @@
 <p>從<strong>目前網站、目前瀏覽器已儲存的紀錄</strong>選取題目，整理成黑白 A4 紙本。可單題列印，也可一次選取多題；使用瀏覽器列印視窗選擇「儲存為 PDF」。這個頁面只讀取資料，<strong>不修改任何練習紀錄</strong>。</p>
 <div class="card">
 <h2>① 選擇題目</h2>
-<div class="controls">
+<div class="controls field-row">
 <label for="module">學習區</label><select id="module"><option value="all">全部練習</option><option value="study30">專業科目每日30分鐘</option><option value="past">考古題（含警察預防組原題）</option><option value="daily">每日模擬題</option><option value="common">國文作文</option></select>
 <label for="search">搜尋</label><input id="search" type="search" placeholder="題目、科目、日期" autocomplete="off">
 </div>
-<div class="controls"><button type="button" id="selectVisible">勾選目前清單</button><button type="button" id="selectNone">全部取消</button><span id="count" class="small" aria-live="polite"></span></div>
+<div class="controls button-row"><button type="button" id="selectVisible">勾選目前清單</button><button type="button" id="selectNone">全部取消</button><span id="count" class="small" aria-live="polite"></span></div>
 <div id="recordList" role="group" aria-label="選擇已儲存的申論練習"></div>
 <p class="small">一次最多選取 30 題，避免手機或瀏覽器列印時過度耗用記憶體。未作答的題目不會出現在清單。</p>
 </div>
@@ -28,7 +28,7 @@
 <label class="option"><input id="includeReview" type="checkbox" checked>包含自評與訂正目標</label>
 <label class="option"><input id="includeRevision" type="checkbox" checked>包含已保存的修訂版本</label>
 <p class="small">原題、四格草稿及完整答案會一併排入；實際沒有填寫的段落不會印出。AI 評分、自我評量並非正式國家考試閱卷結果。</p>
-<div class="controls"><button id="preview" class="primary" type="button">產生紙本預覽</button><button id="print" type="button" disabled>列印／儲存 PDF</button></div>
+<div class="controls button-row"><button id="preview" class="primary" type="button">產生紙本預覽</button><button id="print" type="button" disabled>列印／儲存 PDF</button></div>
 <p class="small">Mac：列印視窗選擇「PDF → 儲存為 PDF」；Windows：選擇「Microsoft Print to PDF」或「Save as PDF」。手機依瀏覽器及系統選擇列印、分享或另存 PDF。此功能不會把檔案上傳到網站。</p>
 </div>
 <p id="notice" role="status" aria-live="polite">正在讀取題庫及本機練習紀錄…</p>
