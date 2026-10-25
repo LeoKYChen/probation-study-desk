@@ -4,6 +4,12 @@
 
 版本規範、驗收與發布方式參見 [Release 維護指引](docs/RELEASE_PROCESS.md)。子模組內的 `v2.5`、`v2.5.4` 等名稱，不直接代表整個網站的 Release 版本。
 
+## 2026-10-25 — 字型瘦身
+
+- 圓體字型（jf open 粉圓 2.1，OFL）拆成兩個 WOFF2：`study-round-core.woff2`（網站實際用到的約 4,000 字，763KB）與 `study-round-rest.woff2`（其餘約 8,000 字，1.5MB，只在頁面出現這些字時才下載）。首次開啟網站的字型下載量由 2.9MB 降為約 0.76MB，畫面與原本逐像素相同。
+- 依 OFL 保留名稱規定，刪減後的字型改名為「StudyRound Subset」，保留版權與授權資訊（`assets/OFL-Huninn.txt`）。
+- 原 `study-round.woff` 保留，因凍結的 `sw.js`、`professional/sw.js` 仍列出它。新增文字含有罕用字後，可執行 `scripts/build-font-subsets.py` 重新產生。
+
 ## 2026-10-25 — 移除未使用的舊檔案
 
 - 刪除沒有任何頁面引用的舊檔：`upload/`（14 個舊複本，部分已與正式版不同）、根目錄的 `questions.js`、`related-questions.js`、`yamol-links.js`、`yamol-ui.js`（正式版在 `v2.5/`），以及週報舊打包產物 `index (1).html`、`index-DWXubpQf.js`、`index-JfbeKn1C.css`（正式版在 `juvenile-news/`）。經使用者確認，這些舊網址不再提供。

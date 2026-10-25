@@ -20,7 +20,10 @@
       "url": "ai-prompt-customizer.js"
     },
     {
-      "url": "assets/study-round.woff"
+      "url": "assets/study-round-core.woff2"
+    },
+    {
+      "url": "assets/study-round-rest.woff2"
     },
     {
       "url": "assets/study-theme.css"
