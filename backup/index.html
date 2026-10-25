@@ -21,6 +21,7 @@ input[type=file]{max-width:100%}input[type=checkbox]{width:18px;height:18px;vert
 table{border-collapse:collapse;width:100%;font-size:14px}th,td{border-bottom:1px solid #e0e7e0;text-align:left;padding:9px}
 #message{background:#eaf3ea;padding:12px 15px;border-radius:8px;min-height:49px;white-space:pre-wrap}
 #message[data-error="1"]{background:#fff1e9;color:#7d381e}
+#storageUsage[data-error="true"]{color:#7d381e;font-weight:600}
 #source{overflow-wrap:anywhere}
 .danger-button{border-color:#ae624e;background:#fff7f3;color:#783c2d;font-weight:700}
 .danger-button:disabled{opacity:.55}
@@ -50,6 +51,7 @@ footer{color:#607267;font-size:13px}ul{columns:2;max-width:780px;padding-left:24
 <h2>① 下載這台裝置的紀錄</h2>
 <p id="summary">正在檢查資料…</p>
 <ul id="modules" aria-label="本瀏覽器實際有學習進度的模組"></ul>
+<p id="storageUsage" class="note" role="status" aria-live="polite"></p>
 <div class="actions"><button id="export" class="primary" type="button">下載完整學習紀錄 JSON</button><button id="refresh" type="button">重新檢查</button></div>
 <p class="note"><strong>重要：</strong>請先回到各練習頁面，確認最新文字顯示已儲存，並關閉正在編輯的其他分頁，再按下載。此頁只能讀取<strong>目前網址</strong>的紀錄；GitHub Pages 與 Cloudflare 是不同網址，需分別下載後再手動合併。進行中的分頁計時（sessionStorage）不保證能由這一頁備份。</p>
 </div>

@@ -37,9 +37,7 @@
 可視變動範圍執行的本機測試範例（不保證涵蓋全站所有功能）：
 
 ~~~bash
-npm install
-npm run check
-npm run build
+npm test
 node backup/test.cjs
 node print/test.cjs
 node lectures/test.cjs
@@ -48,7 +46,7 @@ npm --prefix verification/sync test
 npm --prefix verification/sync run test:browser
 ~~~
 
-注意：`npm run build` 主要處理 React／Vite 部分，**不會單獨產出整站所有靜態模組**。測試清單須依實際影響範圍及 CI 的最新設計增減；不應為了建立 Release 而忽略失敗。
+注意：`npm test` 只涵蓋不需瀏覽器的檢查；週報 React 原始碼若有修改，另在 `juvenile-news/source` 執行 `npm run check` 與 `npm run build`。測試清單須依實際影響範圍及 CI 的最新設計增減；不應為了建立 Release 而忽略失敗。
 
 ## 3. 正式發布操作（人工）
 

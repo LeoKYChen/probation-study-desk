@@ -59,15 +59,24 @@
 
 ## 開發與文件
 
-本專案主要是 HTML／CSS／JavaScript 靜態頁面；少年司法週報另採 React、TypeScript 與 Vite。原始程式、相容資料及離線資源分散於多個模組，**單純執行 `npm run build` 並不會建立完整網站**。
+本專案主要是 HTML／CSS／JavaScript 靜態頁面，**網站本身不需要打包**：GitHub Pages 直接發布 `main` 的檔案。少年司法週報另採 React、TypeScript 與 Vite，原始碼在 `juvenile-news/source/`。
 
 ~~~bash
 git clone https://github.com/LeoKYChen/probation-study-desk.git
 cd probation-study-desk
+npm test        # 不需安裝套件；執行全部不需瀏覽器的檢查
+~~~
+
+只有修改少年司法週報的 React 原始碼時才需要編譯，且必須在 `juvenile-news/source` 資料夾內執行；**不要在根目錄執行 `vite build`**，以免覆蓋根目錄的 `docs/` 文件：
+
+~~~bash
+cd juvenile-news/source
 npm install
 npm run check
-npm run build
+npm run build   # 產物在 juvenile-news/source/docs/，確認後再複製到 juvenile-news/
 ~~~
+
+每週新增週報不必編譯，請依 [週報說明](juvenile-news/README.md) 使用 `scripts/weekly-import.cjs`。瀏覽器端到端測試（`verification/*browser*.cjs`、`e2e-*.cjs`）需另行安裝 Playwright，由 GitHub Actions 執行。
 
 維護與驗收文件：
 

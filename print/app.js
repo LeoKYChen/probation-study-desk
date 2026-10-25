@@ -14,6 +14,8 @@
    if(!Array.isArray(data.questions))throw Error('每日題庫格式不符');
    return data.questions;
   }catch(error){
+   // Daily pages now cache the bank in Cache Storage; localStorage holds only copies from older versions.
+   try{const r=await(await caches.open('psd-daily-dataset-v1')).match(new URL('../daily-simulation/questions.json',location.href).href);if(r){const cache=await r.json();if(Array.isArray(cache.questions))return cache.questions;}}catch{}
    const raw=localStorage.getItem('daily-reading-test:dataset');
    if(raw){try{
     const cache=JSON.parse(raw);
