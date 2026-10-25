@@ -236,28 +236,32 @@
         var state=practice.getState(q.id);
         if(reviewContentFromRecord(state,mode)!==content)throw Error('作答或四格草稿尚未成功保存，請先備份後重試');
         payload=buildDualReviewPayload(q,content,mode,root.AIPromptCustom);
-        var id=q.id,expectedContent=content;
-        var opened=root.PSDDualAI.start({payload:payload,onResult:async function(reviewText){
-          // Always re-read storage: the user may have switched questions or edited a record in another tab.
-          var key='probation-study-desk-v24',records=JSON.parse(root.localStorage.getItem(key)||'{}');
-          var target=records[id];
-          if(!target||reviewContentFromRecord(target,mode)!==expectedContent)
-            throw Error('原題作答或草稿已變更，為避免評語錯配已停止回寫；請從工作臺匯出 MD 保存');
-          var combined=appendDualFeedback(target[FIELD],reviewText);
-          var next=Object.assign({},records);
-          next[id]=Object.assign({},target,{[FIELD]:combined,updatedAt:new Date().toISOString()});
-          // Commit to persistent storage before replacing the in-memory records; quota failures must not look saved.
-          root.localStorage.setItem(key,JSON.stringify(next));
-          practice.replaceRecords(next);
-          if(practice.getQuestion()?.id===id){
-            feedback.value=combined;
-            lastSaved=combined;
-            notice('雙 AI 評語已附加至本題；請人工核對法源與考點',false);
-          }
-        }});
+        var context={id:q.id,mode:mode,content:root.PSDDualAI.hash(content)};
+        var opened=root.PSDDualAI.start({payload:payload,onResult:function(reviewText){return writeDualReview(context,reviewText);},resume:{scope:'v2.5',context:context}});
         if(opened)notice('已開啟雙 AI 工作臺；完成審查後可將評語附加回原題',false);
       }catch(e){notice(e.message||'無法開啟雙 AI 審查',true);}
     });
+    // Shared by the live return and by a return that arrives after this page was reopened.
+    async function writeDualReview(context,reviewText){
+      var id=context&&context.id,mode=context&&context.mode==='direction'?'direction':'full';
+      // Always re-read storage: the user may have switched questions or edited a record in another tab.
+      var key='probation-study-desk-v24',records=JSON.parse(root.localStorage.getItem(key)||'{}');
+      var target=records[id];
+      if(!target||root.PSDDualAI.hash(reviewContentFromRecord(target,mode))!==context.content)
+        throw Error('原題作答或草稿已變更，為避免評語錯配已停止回寫；請從工作臺匯出 MD 保存');
+      var combined=appendDualFeedback(target[FIELD],reviewText);
+      var next=Object.assign({},records);
+      next[id]=Object.assign({},target,{[FIELD]:combined,updatedAt:new Date().toISOString()});
+      // Commit to persistent storage before replacing the in-memory records; quota failures must not look saved.
+      root.localStorage.setItem(key,JSON.stringify(next));
+      practice.replaceRecords(next);
+      if(practice.getQuestion()?.id===id){
+        feedback.value=combined;
+        lastSaved=combined;
+        notice('雙 AI 評語已附加至本題；請人工核對法源與考點',false);
+      }
+    }
+    if(root.PSDDualAI?.resume)root.PSDDualAI.resume('v2.5',writeDualReview);
     root.addEventListener('practice25:render', sync);
     root.addEventListener('backup25:applied',function(){shownId=null;sync();});
     root.addEventListener('storage',function(e){if(e.key==='probation-study-desk-v24'){shownId=null;sync();}});

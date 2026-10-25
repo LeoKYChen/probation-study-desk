@@ -364,6 +364,13 @@ function clearRecords(){
     notice('每日模擬題作答與 AI 評語已清除；考古題及題庫未變更。');
   }catch(error){notice('清除失敗，原紀錄保留：'+error.message,true);}
 }
+// The 600k-character bank used to be cached in localStorage, crowding out answers on this shared origin.
+const DATASET_CACHE='psd-daily-dataset-v1',DATASET_URL=new URL('../daily-simulation/questions.json',location.href).href;
+async function cacheDataset(d){try{await(await caches.open(DATASET_CACHE)).put(DATASET_URL,new Response(JSON.stringify(d),{headers:{'Content-Type':'application/json'}}));localStorage.removeItem(DATA_KEY);}catch{}}
+async function cachedDataset(){
+  try{const r=await(await caches.open(DATASET_CACHE)).match(DATASET_URL);if(r)return M.dataset(await r.json());}catch{}
+  const raw=localStorage.getItem(DATA_KEY);return raw?M.dataset(JSON.parse(raw)):null;
+}
 async function fetchDataset(){
   const ctl=new AbortController(),timeout=setTimeout(()=>ctl.abort(),15000);
   try{
@@ -376,12 +383,12 @@ async function load(force=false){
   $('reload').disabled=true;
   try{
     let next,source='正式每日題庫';
-    try{next=await fetchDataset();try{localStorage.setItem(DATA_KEY,JSON.stringify(next));}catch{}}
+    try{next=await fetchDataset();cacheDataset(next);}
     catch(error){
       if(force)throw error;
-      const cached=localStorage.getItem(DATA_KEY);
+      const cached=await cachedDataset();
       if(!cached)throw error;
-      next=M.dataset(JSON.parse(cached));source='上次讀取的本機題庫';
+      next=cached;source='上次讀取的本機題庫';
     }
     if(dirty)flush();
     if(dirty)throw Error('作答尚未保存，無法切換題庫');

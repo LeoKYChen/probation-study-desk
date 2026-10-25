@@ -6,7 +6,7 @@ const code=read('dual-ai-bridge.js');
 new vm.Script(code,{filename:'dual-ai-bridge.js'});
 const messages=[],alerts=[],timers=[],listeners={};
 const popup={postMessage:(d,origin)=>messages.push({d,origin})};
-const store=new Map();const localStorage={getItem:k=>store.get(k)||null,setItem:(k,v)=>store.set(k,String(v)),removeItem:k=>store.delete(k)};
+const store=new Map();const localStorage={getItem:k=>store.get(k)||null,setItem:(k,v)=>store.set(k,String(v)),removeItem:k=>store.delete(k),key:i=>[...store.keys()][i]??null,get length(){return store.size;}};
 let confirmations=0,opened='';
 const win={
  crypto:require('node:crypto').webcrypto,
@@ -45,8 +45,8 @@ const event=(kind,nonce=token,origin='https://leokychen.github.io',source=popup,
  const daily=read('daily-simulation/index.html'),desk=read('study-desk/index.html');
  assert.ok(daily.includes('id="openDualAI"')&&daily.includes('../dual-ai-bridge.js'));
  assert.ok(desk.includes('id="open-dual-ai"')&&desk.includes('../dual-ai-bridge.js'));
- assert.ok(read('daily-simulation/app.js').includes('target.answer!==savedAnswer'));
- assert.ok(read('study-desk/app.js').includes('r.id===revisionId&&r.text===sourceText'));
+ assert.ok(read('daily-simulation/app.js').includes('hash(target.answer)!==context.answer'));
+ assert.ok(read('study-desk/app.js').includes('r.id===revisionId&&globalThis.PSDDualAI.hash(r.text)===text'));
  // Concurrent messages must never create duplicate feedback entries.
  let finishSave,writeCount=0;
  const delayed=new Promise(resolve=>{finishSave=resolve;});
@@ -74,5 +74,34 @@ const event=(kind,nonce=token,origin='https://leokychen.github.io',source=popup,
  assert.equal(iosText,'iOS 工作臺六階段批改');
  assert.equal(JSON.parse(localStorage.getItem('psd-dual-ai-ack:'+iosToken)).ok,true);
  assert.equal(localStorage.getItem('psd-dual-ai-return:'+iosToken),null,'successful return clears temporary feedback');
+ // Reopened page: the original tab was reloaded or discarded, so only the stored pending record remains.
+ assert.equal(win.PSDDualAI.start({payload:{title:'重開題目',instruction:'檢查',documentText:'答案'},onResult:async()=>{throw Error('old closure must not run');},resume:{scope:'daily-simulation',context:{id:'q1',answer:win.PSDDualAI.hash('答案')}}}),true);
+ const lostToken=opened.split('#psd-bridge=')[1];
+ assert.equal(JSON.parse(localStorage.getItem('psd-dual-ai-pending:'+lostToken)).context.id,'q1');
+ localStorage.setItem('psd-dual-ai-return:'+lostToken,JSON.stringify({nonce:lostToken,createdAt:Date.now()-30*60*1000,text:'三十分鐘後才回傳的評語'}));
+ const reopened={...win,setTimeout:fn=>{reopenedTimers.push(fn);return 1;},addEventListener:(type,fn)=>{reopenedListeners[type]=fn;}};
+ const reopenedTimers=[],reopenedListeners={};
+ vm.runInNewContext(code,{window:reopened,console});
+ let recovered=null;
+ reopened.PSDDualAI.resume('daily-simulation',async(context,text)=>{recovered={context,text};});
+ for(const fn of reopenedTimers.splice(0))await fn();
+ assert.equal(recovered,null,'another tab leaves the write-back to the original page while it is still open');
+ const age=key=>{const p=JSON.parse(localStorage.getItem(key));p.aliveAt=Date.now()-60000;localStorage.setItem(key,JSON.stringify(p));};
+ age('psd-dual-ai-pending:'+lostToken);
+ await reopenedListeners.storage({key:'psd-dual-ai-return:'+lostToken,newValue:localStorage.getItem('psd-dual-ai-return:'+lostToken)});
+ assert.deepEqual(JSON.parse(JSON.stringify(recovered)),{context:{id:'q1',answer:win.PSDDualAI.hash('答案')},text:'三十分鐘後才回傳的評語'},'reopened page writes the late review back');
+ assert.equal(JSON.parse(localStorage.getItem('psd-dual-ai-ack:'+lostToken)).ok,true);
+ assert.equal(localStorage.getItem('psd-dual-ai-pending:'+lostToken),null,'pending record cleared after write-back');
+ assert.equal(localStorage.getItem('psd-dual-ai-return:'+lostToken),null);
+ // A failed recovery reports back to the workbench instead of retrying forever.
+ assert.equal(win.PSDDualAI.start({payload:{title:'已改答案',instruction:'檢查',documentText:'答案'},onResult:async()=>{},resume:{scope:'daily-simulation',context:{id:'q2'}}}),true);
+ const changedToken=opened.split('#psd-bridge=')[1];
+ localStorage.setItem('psd-dual-ai-return:'+changedToken,JSON.stringify({nonce:changedToken,createdAt:Date.now(),text:'評語'}));
+ age('psd-dual-ai-pending:'+changedToken);
+ reopened.PSDDualAI.resume('daily-simulation',async()=>{throw Error('題目或作答已變更');});
+ for(const fn of reopenedTimers.splice(0))await fn();
+ assert.equal(JSON.parse(localStorage.getItem('psd-dual-ai-ack:'+changedToken)).ok,false);
+ assert.equal(localStorage.getItem('psd-dual-ai-pending:'+changedToken),null);
+ assert.notEqual(win.PSDDualAI.hash('答案'),win.PSDDualAI.hash('答案 '),'hash detects edited answers');
   console.log('PASS: origin, popup nonce, source identity, user confirmation, result binding, and both practice entries');
 })().catch(e=>{console.error(e);process.exitCode=1;});

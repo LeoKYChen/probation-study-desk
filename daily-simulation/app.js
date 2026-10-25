@@ -193,20 +193,24 @@ function openDualAIReview(){
     '你是臺灣司法特考三等觀護人申論學習助教。兩位 AI 先各自依題意辨識各設問，檢查爭點、法律或相關學理、涵攝、結構與遺漏，再彼此指出具體錯誤及修正理由。應標明查證狀態、保持合理分歧；不得捏造考古題出處、法條、裁判或研究。'+(mode==='direction'?'僅評四格草稿／答題方向，不給百分制分數或以完整答案標準扣分。':'如無可信配分僅給文字評語，無法驗證來源時明示限制。'),
     {mode,subject:M.subject(q)})||'請獨立批改本次練習，再互相檢查並修正。';
   const documentText=['【題目類型】非官方每日模擬題','【科目】'+M.subject(q),'【題目日期】'+q.date,'【題目 ID】'+id,'【來源標示，尚未核對官方原卷】'+(q.sourceReference||'未提供'),'【本次題幹】'+simulationQuestion(q),'【我的'+(mode==='direction'?'答題方向':'完整答案')+'】'+answer].join('\n\n');
-  try{window.PSDDualAI.start({payload:{title:'每日模擬｜'+M.title(q),instruction,documentText},onResult:async reviewText=>{
-    if(current===id&&$('reader').open&&!save())throw Error('目前頁面的作答未保存，請先另行備份');
-    const stored=M.records(JSON.parse(localStorage.getItem(KEY)||'{}'));
-    const target=stored[id];
-    if(!target||target.answer!==savedAnswer||target.questionSnapshot!==questionSignature)throw Error('題目或作答已變更，為避免錯配，已停止自動回寫；請在工作臺匯出 MD 保存');
-    const oldFeedback=typeof target.aiFeedback==='string'?target.aiFeedback:'';
-    const combined=(oldFeedback?oldFeedback+'\n\n---\n\n':'')+reviewText;
-    if(combined.length>80000)throw Error('評語超過原本 80,000 字元的欄位上限，請從工作臺下載 MD 手動整理');
-    const next={...stored,[id]:{...target,aiFeedback:combined,updatedAt:new Date().toISOString()}};
-    persist(next);records=next;
-    if(current===id&&$('reader').open){$('aiFeedback').value=combined;$('feedbackStatus').textContent='六階段雙 AI 意見已附加，待人工核對來源';}
-    notify('雙 AI 交叉意見已附加到原題，舊評語與答案保持不變。');
-  }});$('copyStatus').textContent='已開啟雙 AI 工作臺，完成六階段審查後可回傳本題。';}
+  const context={id,answer:window.PSDDualAI.hash(savedAnswer),question:window.PSDDualAI.hash(questionSignature)};
+  try{window.PSDDualAI.start({payload:{title:'每日模擬｜'+M.title(q),instruction,documentText},onResult:reviewText=>writeDualReview(context,reviewText),resume:{scope:'daily-simulation',context}});$('copyStatus').textContent='已開啟雙 AI 工作臺，完成六階段審查後可回傳本題。';}
   catch(e){$('copyStatus').textContent=e.message;}
+}
+// Shared by the live return and by a return that arrives after this page was reopened.
+async function writeDualReview(context,reviewText){
+  const id=context?.id,hash=window.PSDDualAI.hash;
+  if(current===id&&$('reader').open&&!save())throw Error('目前頁面的作答未保存，請先另行備份');
+  const stored=M.records(JSON.parse(localStorage.getItem(KEY)||'{}'));
+  const target=stored[id];
+  if(!target||hash(target.answer)!==context.answer||hash(target.questionSnapshot)!==context.question)throw Error('題目或作答已變更，為避免錯配，已停止自動回寫；請在工作臺匯出 MD 保存');
+  const oldFeedback=typeof target.aiFeedback==='string'?target.aiFeedback:'';
+  const combined=(oldFeedback?oldFeedback+'\n\n---\n\n':'')+reviewText;
+  if(combined.length>80000)throw Error('評語超過原本 80,000 字元的欄位上限，請從工作臺下載 MD 手動整理');
+  const next={...stored,[id]:{...target,aiFeedback:combined,updatedAt:new Date().toISOString()}};
+  persist(next);records=next;
+  if(current===id&&$('reader').open){$('aiFeedback').value=combined;$('feedbackStatus').textContent='六階段雙 AI 意見已附加，待人工核對來源';}
+  notify('雙 AI 交叉意見已附加到原題，舊評語與答案保持不變。');
 }
 
 window.AIPromptCustom?.mount({button:$('copyAI'),modeElement:$('aiReviewMode'),getMode:()=>$('aiReviewMode')?.value,getSubject:()=>{const q=data?.questions.find(item=>item.id===current);return q?M.subject(q):'';}});
@@ -243,8 +247,15 @@ function exportEssay(){
  }catch(error){$('exportEssayStatus').textContent='Markdown 匯出失敗：'+error.message;}
 }
 
+// The 600k-character bank used to be cached in localStorage, crowding out answers on this shared origin.
+const DATASET_CACHE='psd-daily-dataset-v1',DATASET_URL=new URL('questions.json',location.href).href;
+async function cacheDataset(d){try{await(await caches.open(DATASET_CACHE)).put(DATASET_URL,new Response(JSON.stringify(d),{headers:{'Content-Type':'application/json'}}));localStorage.removeItem(DATA);}catch{}}
+async function cachedDataset(){
+  try{const r=await(await caches.open(DATASET_CACHE)).match(DATASET_URL);if(r)return M.dataset(await r.json());}catch{}
+  const raw=localStorage.getItem(DATA);return raw?M.dataset(JSON.parse(raw)):null;
+}
 async function readJSON(url){const r=await fetch(url,{cache:'no-store',signal:AbortSignal.timeout(15000)});if(!r.ok)throw Error('HTTP '+r.status);return M.dataset(await r.json());}
-async function load(live=false){if(loading)return;loading=true;$('refresh').disabled=true;$('refresh').textContent='正在讀取…';try{if(live){const next=await readJSON('./questions.json');data=next;source='手動更新的正式題庫';try{localStorage.setItem(DATA,JSON.stringify(data));}catch{}}else{try{data=await readJSON('./questions.json');source='正式每日題庫';}catch(e){const cached=localStorage.getItem(DATA);if(!cached)throw e;data=M.dataset(JSON.parse(cached));source='上次成功讀取的題庫';}}render();if(live)notify('已重新讀取 '+data.count+' 題；最新題目日期：'+(data.questions.reduce((latest,q)=>q.date>latest?q.date:latest,'')||'未提供')+'。原作答保留。');if(current&&$('reader').open)openQuestion(current);}catch(e){notify((live?'無法取得正式站新題庫，保留目前題目與作答。':'載入題庫失敗，請重新整理。')+' '+e.message);}finally{loading=false;$('refresh').disabled=false;$('refresh').textContent='↻ 更新題庫';}}
+async function load(live=false){if(loading)return;loading=true;$('refresh').disabled=true;$('refresh').textContent='正在讀取…';try{if(live){const next=await readJSON('./questions.json');data=next;source='手動更新的正式題庫';cacheDataset(data);}else{try{data=await readJSON('./questions.json');source='正式每日題庫';cacheDataset(data);}catch(e){const cached=await cachedDataset();if(!cached)throw e;data=cached;source='上次成功讀取的題庫';}}render();if(live)notify('已重新讀取 '+data.count+' 題；最新題目日期：'+(data.questions.reduce((latest,q)=>q.date>latest?q.date:latest,'')||'未提供')+'。原作答保留。');if(current&&$('reader').open)openQuestion(current);}catch(e){notify((live?'無法取得正式站新題庫，保留目前題目與作答。':'載入題庫失敗，請重新整理。')+' '+e.message);}finally{loading=false;$('refresh').disabled=false;$('refresh').textContent='↻ 更新題庫';}}
 function download(d,name){const url=URL.createObjectURL(new Blob([JSON.stringify(d,null,2)],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
 document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.docOpen)ReadingNews.open(b.dataset.docOpen);else if(b.dataset.docSave)ReadingNews.mark(b.dataset.docSave,'saved');else if(b.dataset.docRead)ReadingNews.mark(b.dataset.docRead,'read');else if(b.dataset.open)openQuestion(b.dataset.open);else if(b.dataset.save)toggleSaved(b.dataset.save);else if(b.dataset.tab)choose(b.dataset.tab);else if(b.dataset.subject!==undefined)choose(ReadingNews.isReading(state.tab)?state.tab:'全部題目',b.dataset.subject);});
 $('search').oninput=()=>{state.query=$('search').value.trim();render();};$('date').onchange=()=>{state.date=$('date').value;render();};$('reviewMonth').onchange=()=>{state.reviewMonth=$('reviewMonth').value;render();};$('sort').onchange=()=>{state.sort=$('sort').value;render();};$('clearFilters').onclick=()=>{Object.assign(state,{tab:ReadingNews.isReading(state.tab)?'晚間摘要／新聞':'全部題目',subject:'',date:'',query:'',sort:'newest'});$('search').value='';$('sort').value='newest';render();};
@@ -265,3 +276,4 @@ $('clearRecords').onclick=()=>{const n=Object.keys(records).length;
 };
 window.addEventListener('storage',e=>{if(e.key===KEY){try{records=M.records(JSON.parse(e.newValue||'{}'));render();if(current&&$('reader').open)openQuestion(current);}catch{notify('另一分頁的紀錄格式不符，未套用。');}}});
 if(ENABLE_NEWS_READING)ReadingNews.init(render).then(()=>{const id=initialParams.get('document');if(id){state.tab='全部閱讀資料';state.subject='';render();ReadingNews.open(id);}});load();
+window.PSDDualAI?.resume('daily-simulation',writeDualReview);

@@ -251,25 +251,28 @@ async function setup() {
       '請擔任臺灣司法特考三等觀護人申論題批改助教。依實際題意及科目檢查爭點、規範／學理、涵攝、結構；先辨識題源有無查證，再以具體理由提出缺漏、誤解及引導訂正的問題。短練習只評答題方向，不給完整申論分數。法條、裁判、研究與國考題次不能杜撰，未驗證須註明。',
       {subject:current.subject,mode:current.mode==='short'?'direction':'full'});
     const documentText=['【科目】'+current.subject,'【題源（僅沿用原紀錄，並非已查證）】'+current.question.sourceLabel,'【題目】'+current.question.body,'【本次已保存的作答版本】'+revisionId,'【我的答案】'+answer].join('\n\n');
-    globalThis.PSDDualAI.start({payload:{title:'觀護人申論｜'+current.question.title,instruction,documentText},onResult:async review=>{
-      await flush();
-      await store.update(state=>{
-        assertLearningEpoch(state,currentEpoch);
-        const record=state.records[id];
-        if(!record||record.deleted||record.value?.kind!=='attempt'||!record.value.revisions.some(r=>r.id===revisionId&&r.text===sourceText))throw Error('原始作答版本不存在或已變更，為避免錯配未自動寫入');
-        const value=clone(record.value);
-        value.feedback.push({id:uid(),source:'雙 AI 協作工作臺（交叉審查）',date:today(),revision:revisionId,text:review,unverified:true});
-        value.updatedAt=now();
-        engine.queue(state,id,value);
-      });
-      if(currentId===id){
-        const updated=(await store.read()).records[id].value;
-        current=clone(updated);baseline=clone(updated);paintAttempt();
-      }
-      await refresh();
-      report('雙 AI 意見已附加至原本的作答版本，標示為待查證，舊紀錄保留。');
-    }});
+    const context={id,revisionId,text:globalThis.PSDDualAI.hash(sourceText)};
+    globalThis.PSDDualAI.start({payload:{title:'觀護人申論｜'+current.question.title,instruction,documentText},onResult:review=>writeDualReview(context,review),resume:{scope:'study-desk',context}});
   });
+ // Shared by the live return and by a return that arrives after this page was reopened.
+ async function writeDualReview({id,revisionId,text},review){
+   await flush();
+   await store.update(state=>{
+     assertLearningEpoch(state,currentEpoch);
+     const record=state.records[id];
+     if(!record||record.deleted||record.value?.kind!=='attempt'||!record.value.revisions.some(r=>r.id===revisionId&&globalThis.PSDDualAI.hash(r.text)===text))throw Error('原始作答版本不存在或已變更，為避免錯配未自動寫入');
+     const value=clone(record.value);
+     value.feedback.push({id:uid(),source:'雙 AI 協作工作臺（交叉審查）',date:today(),revision:revisionId,text:review,unverified:true});
+     value.updatedAt=now();
+     engine.queue(state,id,value);
+   });
+   if(currentId===id){
+     const updated=(await store.read()).records[id].value;
+     current=clone(updated);baseline=clone(updated);paintAttempt();
+   }
+   await refresh();
+   report('雙 AI 意見已附加至原本的作答版本，標示為待查證，舊紀錄保留。');
+ }
  wrap('export-backup',exportBackup);
  $('choose-backup').addEventListener('click',()=>$('import-backup').click());
  $('clear-learning').addEventListener('click',()=>{$('clear-confirm-text').value='';$('clear-confirm').disabled=true;$('clear-dialog').showModal();});
@@ -281,6 +284,7 @@ async function setup() {
  wrap('import-legacy',async()=>{const records=await legacyRecords(localStorage,location.origin);if(!confirm('此網址找到'+Object.keys(records).length+'筆舊模組快照。匯入後可在書桌查看及備份；不會寫回舊模組。是否繼續？'))return;await engine.importRecords(records);await refresh();report('舊模組快照已匯入；原有資料保持完整。');});
  document.addEventListener('visibilitychange',()=>{if(document.hidden)action(flush);else action(async()=>{await loadLectureProgress();describeQuestion();await refresh();});});
  window.addEventListener('beforeunload',e=>{if(timer){e.preventDefault();e.returnValue='';}});
+ globalThis.PSDDualAI?.resume('study-desk',writeDualReview);
  if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>report('離線資源快取未完成；草稿仍保存於此裝置。',true));
 }
 setup().catch(e=>report('書桌無法開啟：'+e.message,true));

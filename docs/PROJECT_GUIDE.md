@@ -55,13 +55,12 @@
 ~~~bash
 git clone https://github.com/LeoKYChen/probation-study-desk.git
 cd probation-study-desk
-npm install
-npm run dev
-npm run check
-npm run build
+npm test                      # 全部不需瀏覽器的檢查，免安裝套件
+# 只有修改週報 React 原始碼時：
+cd juvenile-news/source && npm install && npm run check && npm run build
 ~~~
 
-執行根目錄的 Vite build **不會一次產生所有靜態頁面**；發布時必須保留各模組、資料檔、相對路徑、離線資源和相容檔。參考測試：
+網站本身不需打包；週報的 Vite 設定只放在 `juvenile-news/source/`，產物在該資料夾的 `docs/`，確認後再複製到 `juvenile-news/`。發布時必須保留各模組、資料檔、相對路徑、離線資源和相容檔。個別測試：
 
 ~~~bash
 node common-subjects/test-v02.cjs

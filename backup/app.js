@@ -115,7 +115,21 @@
   }
   updateClearReady();
  }
+ // localStorage (~5 MB, counted in UTF-16) is shared by every page on this origin, including the dual-AI workbench.
+ const STORAGE_LIMIT=5*1024*1024;
+ function showUsage(){
+  const box=$('storageUsage');
+  try{
+   const items=[];let total=0;
+   for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i),size=(k.length+(localStorage.getItem(k)||'').length)*2;total+=size;items.push([k,size]);}
+   const mb=n=>(n/1048576).toFixed(n<104858?2:1)+' MB',share=Math.round(total/STORAGE_LIMIT*100);
+   const top=items.sort((a,b)=>b[1]-a[1]).slice(0,3).filter(([,size])=>size>51200).map(([k,size])=>k+'（'+mb(size)+'）');
+   box.textContent='本機儲存空間（與本網址其他頁面及雙 AI 工作臺共用，上限約 5 MB）：已用約 '+mb(total)+'，約 '+share+'%。'+(top.length?'占用最多：'+top.join('、')+'。':'')+(share>=80?' 空間快滿了，作答可能存不進去；請先下載備份，再清除不需要的紀錄。':'');
+   box.dataset.error=share>=80?'true':'false';
+  }catch{box.textContent='無法讀取本機儲存空間用量。';}
+ }
  function refresh(){
+  showUsage();
   try{explain(current());$('export').disabled=false;}
   catch(e){tell('無法讀取現有紀錄：'+e.message,true);$('export').disabled=true;}
   refreshClear();
