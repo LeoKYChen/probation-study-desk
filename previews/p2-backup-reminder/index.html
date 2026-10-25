@@ -7,34 +7,47 @@
 <p class="tag">PROTOTYPE · P2 · 僅獨立預覽</p>
 <h1>備份提醒怎麼顯示？</h1>
 <p class="small">本頁不連接任何正式作答資料、不呼叫 API、不儲存或上傳個人備份。下方是可互動的「合成日期」示範；不會更動正式網站。</p>
-<div class="panel"><div class="row"><h2>7 天備份檢查</h2><label>模擬今天日期 <input id="days" type="number" min="0" max="365" value="8" aria-label="距離上次備份的天數"></label></div>
-<p class="hint">提醒以「使用者確認檔案已保存」為準，不以按下下載鍵就宣稱備份成功。不同備份範圍分別計算。</p>
-<section class="sub" data-scope="desk"><div class="row"><div><strong>備考書桌（IndexedDB）</strong><p class="small">使用書桌專用 JSON 匯出，不包含在舊版完整備份中心</p></div><span id="desk-status"></span></div><div id="desk-reminder" class="alert" role="status"></div><p class="row"><button data-action="download" data-scope="desk">模擬下載已啟動</button><button data-action="confirm" data-scope="desk" class="primary">我已確認保存</button><button data-action="snooze" data-scope="desk">稍後提醒</button></p></section>
-<section class="sub" data-scope="legacy"><div class="row"><div><strong>其他練習模組（localStorage）</strong><p class="small">v2.5、專業科目、函授、每日模擬等現有備份範圍</p></div><span id="legacy-status"></span></div><div id="legacy-reminder" class="alert" role="status"></div><p class="row"><button data-action="download" data-scope="legacy">模擬下載已啟動</button><button data-action="confirm" data-scope="legacy" class="primary">我已確認保存</button><button data-action="snooze" data-scope="legacy">稍後提醒</button></p></section>
+<div class="panel"><div class="row"><h2>7 天備份檢查</h2><label>模擬經過天數（第 0 天已備份） <input id="days" type="number" min="0" max="365" value="8" aria-label="距離上次備份的天數"></label></div>
+<p id="validation" role="alert"></p><p class="hint">提醒以「使用者確認檔案已保存」為準，不以按下下載鍵就宣稱備份成功。不同備份範圍分別計算。滿 7 天開始提醒；稍後提醒只延至下一個模擬日。重新整理會重設示範，不代表正式備份紀錄。</p>
+<section class="sub" data-scope="desk"><div class="row"><div><strong>備考書桌（IndexedDB）</strong><p class="small">使用書桌專用 JSON 匯出，不包含在舊版完整備份中心</p></div><span id="desk-status"></span></div><div id="desk-reminder" class="alert" role="status"></div><p class="row"><button data-action="download" data-scope="desk">模擬下載已啟動</button><button data-action="confirm" data-scope="desk" class="primary">我已確認保存</button><button data-action="snooze" data-scope="desk">稍後提醒（1 天）</button><button data-action="unknown" data-scope="desk">模擬從未備份</button></p></section>
+<section class="sub" data-scope="legacy"><div class="row"><div><strong>其他練習模組（localStorage）</strong><p class="small">v2.5、專業科目、函授、每日模擬等現有備份範圍</p></div><span id="legacy-status"></span></div><div id="legacy-reminder" class="alert" role="status"></div><p class="row"><button data-action="download" data-scope="legacy">模擬下載已啟動</button><button data-action="confirm" data-scope="legacy" class="primary">我已確認保存</button><button data-action="snooze" data-scope="legacy">稍後提醒（1 天）</button><button data-action="unknown" data-scope="legacy">模擬從未備份</button></p></section>
 <p class="small">正式版規格：提醒不能遮蔽作答，不能把兩個模組的完成狀態合併，也不跨網域推定同步。</p></div>
 <p class="small">核定紀錄：GitHub Issue #91。這是純前端概念預覽，未經主站 iPhone／Safari 實測，尚無正式導入授權。</p>
 </main><script>
 (() => {
  'use strict';
- const state={desk:{age:8,dismissed:false,downloadStarted:false},legacy:{age:8,dismissed:false,downloadStarted:false}};
+ let day=8;
+ const fresh=()=>({confirmedDay:0,snoozedUntil:null,downloadStarted:false});
+ const state={desk:fresh(),legacy:fresh()};
  const $=id=>document.getElementById(id);
  function draw(scope){
   const s=state[scope],status=$(scope+'-status'),tip=$(scope+'-reminder');
-  const overdue=s.age>7 && !s.dismissed;
-  status.textContent=overdue?'需備份':s.dismissed?'已延後':'尚在提醒期限內';
-  status.className=overdue?'warn':'good';
-  tip.hidden=!overdue;
-  tip.textContent='距離上次確認備份 '+s.age+' 天；請由原模組匯出 JSON，下載後自行確認檔案已保存。';
-  if(s.downloadStarted&&!s.dismissed&&!overdue){tip.hidden=false;tip.textContent='下載已啟動，但這不等於檔案已確認保存。';}
+  const age=s.confirmedDay===null?null:day-s.confirmedDay;
+  const due=age===null||age>=7;
+  const snoozed=due&&s.snoozedUntil!==null&&day<s.snoozedUntil;
+  status.textContent=snoozed?'已延後至第 '+s.snoozedUntil+' 天':due?'需備份':'已確認保存；距今 '+age+' 天';
+  status.className=due?'warn':'good';
+  tip.hidden=!due||snoozed;
+  tip.textContent=(age===null?'尚無已確認保存的備份':('距離上次確認備份 '+age+' 天'))+'；請由原模組匯出 JSON，下載後自行確認檔案已保存。';
+  if(s.downloadStarted){tip.hidden=false;tip.textContent+=' 下載已啟動，但這不等於檔案已確認保存。';}
  }
  function drawAll(){for(const x of Object.keys(state))draw(x);}
- $('days').addEventListener('input',event=>{const n=Number(event.target.value);if(!Number.isInteger(n)||n<0||n>365)return;for(const scope of Object.keys(state)){state[scope].age=n;state[scope].dismissed=false;state[scope].downloadStarted=false;}drawAll();});
+ $('days').addEventListener('input',event=>{
+  const input=event.target,n=Number(input.value);
+  if(input.value.trim()===''||!Number.isInteger(n)||n<0||n>365){
+   input.setAttribute('aria-invalid','true');$('validation').textContent='請輸入 0 到 365 的整數；目前示範狀態未改變。';return;
+  }
+  input.removeAttribute('aria-invalid');$('validation').textContent='';
+  if(n<day){for(const scope of Object.keys(state))state[scope]=fresh();}
+  day=n;drawAll();
+ });
  document.querySelectorAll('[data-action]').forEach(b=>b.addEventListener('click',()=>{
   const scope=b.dataset.scope,s=state[scope];
   switch(b.dataset.action){
    case 'download':s.downloadStarted=true;break;
-   case 'confirm':s.age=0;s.dismissed=false;s.downloadStarted=false;break;
-   case 'snooze':s.dismissed=true;break;
+   case 'confirm':s.confirmedDay=day;s.snoozedUntil=null;s.downloadStarted=false;break;
+   case 'snooze':s.snoozedUntil=day+1;s.downloadStarted=false;break;
+   case 'unknown':s.confirmedDay=null;s.snoozedUntil=null;s.downloadStarted=false;break;
   }
   draw(scope);
  }));
