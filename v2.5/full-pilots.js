@@ -327,7 +327,7 @@ for(const k of Object.keys(scores))scores[k]=Math.round(scores[k]);
 const covered=evidence.filter(e=>e.ratio>0).length;
 if(covered){const heads=(text.match(/(?:^|\n)\s*(?:[一二三四五六七八九十]+、|\d+[.、]|[（(][一二三\d]+[）)])/g)||[]).length;scores.structure=Math.round(Math.min(20,Math.min(8,heads*2)+Math.min(6,Math.max(0,paragraphs.length-1)*2)+(/綜上|結論|因此|故/.test(text)?6:0))*Math.min(1,covered/3));}
 if(warnings.length)evidence=evidence.map(e=>({...e,status:'manual'}));
-return {scores:warnings.length?null:scores,total:warnings.length?null:Object.values(scores).reduce((a,b)=>a+b,0),method:'all-subject-pilot-v2',rubricVersion:version,legalVersion:r.legalVersion,checkedAt,answer:text,characters:norm(text).length,evidence,warnings,manualReview:warnings.length>0,
+return {scores:warnings.length?null:scores,total:warnings.length?null:Object.values(scores).reduce((a,b)=>a+b,0),method:'all-subject-pilot-v2',rubricVersion:r.version||version,legalVersion:r.legalVersion,checkedAt:r.checkedAt||checkedAt,answer:text,characters:norm(text).length,evidence,warnings,manualReview:warnings.length>0,
 confidence:'文字規則試評；數字只反映已辨識要點與結構，不是正確率或官方分數，尚未經專家答案集校準。',strengths:evidence.filter(e=>e.status==='evidence').slice(0,4).map(e=>'已辨識：'+e.label),improvements:[...warnings,...evidence.filter(e=>e.status!=='evidence').slice(0,4).map(e=>e.hint)].slice(0,6),createdAt:new Date().toISOString()};
 };
 })();

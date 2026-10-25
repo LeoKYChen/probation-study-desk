@@ -489,7 +489,7 @@
           <div class="topic-frequency" id="crimeFrequency" aria-live="polite"></div>
           <p class="topic-note" id="crimeScope"></p>
           <p class="topic-note">頻率僅計本題庫108–115年題目，以試卷來源與題號去重；每題在同一考點只計一次。主題相關不代表同一理論，頻率不代表下次必考。</p>
-          <details><summary>全科試評：11科 × 每科10題，共110題</summary><p class="topic-note">每題保留完整原題，附參考來源、答題要點與四項試評理由。法律題依現行法；計算、任選概念與方案題另檢查結果或要求。數字只表示已辨識的論述線索，未經專家答案集校準。</p><div id="legalPilotLinks"></div></details>
+          <details><summary>全科試評：11科全部426題</summary><p class="topic-note">每題保留完整原題，附參考來源、答題要點與四項試評理由。法律題依現行法；計算、任選概念與方案題另檢查結果或要求。數字只表示已辨識的論述線索，未經專家答案集校準。原110題為2026-10-02版；其餘316題於2026-10-25補齊，沿用各題參考答案與來源，同樣待人工覆核。</p><div id="legalPilotLinks"></div></details>
           <details><summary>各科內容診斷覆蓋與限制</summary><div id="contentCoverageTable"></div><p class="topic-note">「內容診斷」指有來源的指定概念準則，不代表原題全解或正確率已校準。其餘考點保留題幹要求檢查；法律練習一律以現行法；舊題修法差異另提示，計算與臨床診斷不以文字命中替代驗證。</p></details><div class="topic-cards" id="crimeTopicCards"></div>
         </div>
       </details>
@@ -686,6 +686,7 @@
   <script src="yamol-ui.js"></script>
   <script src="pending-pilots.js"></script>
   <script src="grade-reference.js"></script>
+  <script src="full-pilots-all.js"></script>
   
   
   <script>
@@ -1159,8 +1160,8 @@
     }
 
     function gradeBaseAnswer(answer, question) {
-      if(window.PENDING_PILOT_RUBRICS?.[question.id]) return window.gradePendingPilot(answer,question);
       if(window.FULL_PILOT_RUBRICS?.[question.id]) return window.gradeFullPilot(answer,question);
+      if(window.PENDING_PILOT_RUBRICS?.[question.id]) return window.gradePendingPilot(answer,question);
       const pilotRubric = window.PILOT_RUBRICS?.[question.id];
       if (pilotRubric) return gradeWithPilotRubric(answer, question, pilotRubric);
       const compact = answer.replace(/\s/g, '');
@@ -1374,7 +1375,7 @@
       $('developerReferences').value = rule.references || '';
       $('developerNotes').value = rule.notes || '';
       const fullRule = window.FULL_PILOT_RUBRICS?.[question.id];
-      const draftRule = window.PENDING_PILOT_RUBRICS?.[question.id];
+      const draftRule = fullRule ? null : window.PENDING_PILOT_RUBRICS?.[question.id];
       const oldRule = window.PILOT_RUBRICS?.[question.id];
       $('pilotRuleStatus').textContent = draftRule ? '專屬試作規則：參考答案已補齊，完整校準待覆核（自動參考分數待覆核）' : fullRule ? '專屬試作規則：已建立（仍待人工覆核，非官方標準）' : oldRule ? '專屬試作規則：舊版已建立，待校準' : '專屬試作規則：待建立；目前使用通用初評。個人補充不代表專屬規則已完成。';
       const legal=window.FULL_PILOT_RUBRICS?.[question.id] || draftRule;
@@ -1470,7 +1471,7 @@
       const states = Object.entries(saved).filter(([id]) => knownIds.has(id)).map(([,state]) => state);
       const done = states.filter(x => x.done);
       const review = states.filter(x => x.review).length;
-      const totals = Object.entries(saved).filter(([id,state]) => knownIds.has(id) && state.done && !(window.PENDING_PILOT_RUBRICS?.[id] && state.scoreSource !== 'adjusted') && !(state.assessment?.total === null && state.scoreSource !== 'adjusted')).map(([,state]) => Object.values(state.scores || {}).reduce((a,b) => a + Number(b || 0), 0));
+      const totals = Object.entries(saved).filter(([id,state]) => knownIds.has(id) && state.done && !(window.PENDING_PILOT_RUBRICS?.[id] && !window.FULL_PILOT_RUBRICS?.[id] && state.scoreSource !== 'adjusted') && !(state.assessment?.total === null && state.scoreSource !== 'adjusted')).map(([,state]) => Object.values(state.scores || {}).reduce((a,b) => a + Number(b || 0), 0));
       $('doneCount').textContent = `${done.length} 題`;
       $('reviewCount').textContent = `${review} 題`;
       $('averageScore').textContent = totals.length ? `${(totals.reduce((a,b) => a+b, 0) / totals.length).toFixed(0)} 分` : '—';
