@@ -4,7 +4,11 @@
 
 版本規範、驗收與發布方式參見 [Release 維護指引](docs/RELEASE_PROCESS.md)。子模組內的 `v2.5`、`v2.5.4` 等名稱，不直接代表整個網站的 Release 版本。
 
-## 2026-10-25 — 儲存空間與雙 AI 回傳穩定化（PR #98，尚未合併）
+## 2026-10-25 — 移除未使用的舊檔案
+
+- 刪除沒有任何頁面引用的舊檔：`upload/`（14 個舊複本，部分已與正式版不同）、根目錄的 `questions.js`、`related-questions.js`、`yamol-links.js`、`yamol-ui.js`（正式版在 `v2.5/`），以及週報舊打包產物 `index (1).html`、`index-DWXubpQf.js`、`index-JfbeKn1C.css`（正式版在 `juvenile-news/`）。經使用者確認，這些舊網址不再提供。
+
+## 2026-10-25 — 儲存空間與雙 AI 回傳穩定化（PR #98，已合併）
 
 - **儲存空間已滿不再靜默遺失作答**：v2.5 練習臺寫入失敗時提示備份，狀態列改為「尚未保存」；匯入 JSON 先寫入成功才替換紀錄。
 - **每日題庫快取移出 localStorage**：v2.5 每日模擬與每日學習室改用 Cache Storage 保存上次讀取的題庫，並刪除舊的 localStorage 副本，釋出共用空間；離線時仍可讀取，列印頁同步支援。
