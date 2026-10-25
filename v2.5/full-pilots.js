@@ -294,12 +294,13 @@ const psychChapters={
 '監所管理員-109-犯罪學概要-2':['11-2-freud-and-the-psychodynamic-perspective']};
 for(const [id,chapters] of Object.entries(psychChapters))R[id].sources=chapters.map(chapter=>({title:'OpenStax Psychology 2e：'+chapter,url:'https://openstax.org/books/psychology-2e/pages/'+chapter,checkedAt}));
 window.FULL_PILOT_RUBRICS=R;
+window.FULL_PILOT_SOURCES=S;
 window.gradeFullPilot=(answer,q)=>{
 if(window.LEGAL_PILOT_RUBRICS[q.id])return window.gradeLegalPilot(answer,q);
 const r=R[q.id];if(!r)return null;
 const text=String(answer||''),units=text.split(/[。；！？\n]+/).map(s=>s.trim()).filter(Boolean),paragraphs=text.split(/\n+/).filter(s=>s.trim());
 const warnings=[];
-for(const [pattern,hint] of [...commonErrors,...(localErrors[q.id]||[])]){const hit=units.find(s=>new RegExp(pattern,'i').test(norm(s))&&!/(?:錯誤說法|不能說|不應說|並非說|此說不正確)/.test(s));if(hit)warnings.push(hint+' 原句：'+hit);}
+for(const [pattern,hint] of [...commonErrors,...(localErrors[q.id]||[]),...(r.errors||[]).map(e=>[e.pattern,e.hint])]){const hit=units.find(s=>new RegExp(pattern,'i').test(norm(s))&&!/(?:錯誤說法|不能說|不應說|並非說|此說不正確)/.test(s));if(hit)warnings.push(hint+' 原句：'+hit);}
 let evidence=r.criteria.map(row=>{const candidates=(r.sessions?[...units,...paragraphs]:units).filter(s=>row.groups.every(g=>g.some(t=>norm(s).includes(norm(t)))));const hit=candidates.find(s=>prose(s)&&explanatory.test(s));return {...row,status:hit?'evidence':candidates.length?'partial':'missing',evidence:hit||candidates[0]||'',ratio:hit?1:0};});
 const substantive=units.some(s=>prose(s)&&explanatory.test(s))&&evidence.some(e=>e.ratio);
 if(r.numeric&&substantive)warnings.push(...numbersCheck(r.numeric,units));
