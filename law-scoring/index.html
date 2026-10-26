@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>法律評分參考｜觀護人練習臺</title><meta name="description" content="依司法官／律師二試評分要點改寫的法律申論自評：先作答，再逐列對照爭點、換算四項分數。"><link rel="stylesheet" href="../shared-ui.css"><link rel="stylesheet" href="style.css"><script src="data.js" defer></script><script src="app.js" defer></script><link rel="manifest" href="../manifest.webmanifest"><meta name="theme-color" content="#315b7c"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="../pwa/icon-180.png"><link rel="stylesheet" href="../offline.css"><script src="../offline.js" defer></script><link rel="stylesheet" href="../assets/study-theme.css">
+</head>
+<body>
+<header class="study-header"><div class="study-header-inner"><a class="study-brand" href="../v2.5/"><span class="study-brand-mark" aria-hidden="true">觀</span>觀護人練習臺</a><span class="study-test-label">試作・法律評分參考</span><nav aria-label="主要導覽"><a href="../v2.5/">考古題練習</a><a href="./" aria-current="page">法律評分參考</a></nav></div></header>
+<main>
+<p class="eyebrow" id="q-exam"></p>
+<h1 id="q-title"></h1>
+<p class="notice">學習用自評工具，<strong>不是考選部或觀護人考試的官方評分</strong>。評分要點為改寫摘要，分數只反映你勾選的涵蓋程度。紀錄只存在目前瀏覽器。</p>
+
+<section class="card" aria-labelledby="facts-heading">
+<h2 id="facts-heading">題目</h2>
+<p id="q-facts"></p>
+<p><strong>要求：</strong><span id="q-task"></span></p>
+<p class="small muted" id="q-source"></p>
+</section>
+
+<section class="card" aria-labelledby="answer-heading">
+<h2 id="answer-heading">一、先作答</h2>
+<label for="answer" class="small muted">寫完整答案或詳細大綱。至少 50 字才能展開評分要點。</label>
+<textarea id="answer" maxlength="20000"></textarea>
+<div class="row"><span id="count" class="small muted"></span><button id="unlock" class="primary" type="button">我寫完了，展開評分要點</button></div>
+</section>
+
+<section id="points" hidden>
+<section class="card" aria-labelledby="points-heading">
+<h2 id="points-heading" tabindex="-1">二、逐列對照評分要點</h2>
+<p class="small muted" id="overview"></p>
+<table>
+<thead><tr><th scope="col">罪名與爭點</th><th scope="col" class="check">有檢討</th><th scope="col" class="check">寫出不同見解</th><th scope="col" class="check">有涵攝／個人見解</th></tr></thead>
+<tbody id="rows"></tbody>
+</table>
+</section>
+
+<section class="card" aria-labelledby="org-heading">
+<h2 id="org-heading">三、架構與競合</h2>
+<div id="organize"></div>
+</section>
+
+<section class="card" aria-labelledby="score-heading">
+<h2 id="score-heading">四、自評參考分數</h2>
+<div class="scores" id="score"></div>
+<p class="total">合計 <strong id="total">0</strong>／100</p>
+<p class="small muted">換算方式：爭點＝有檢討的列數比例；法規與見解＝爭議列寫出不同見解的比例，加上條文引用；涵攝＝有涵攝的列數比例；架構＝第三部分勾選比例。</p>
+</section>
+
+<section class="card" aria-labelledby="notes-heading">
+<h2 id="notes-heading">五、閱卷委員提醒</h2>
+<ol class="notes" id="notes"></ol>
+</section>
+
+<section class="card" aria-labelledby="ai-heading">
+<h2 id="ai-heading">六、請 AI 逐列對照</h2>
+<p class="small muted">複製題目、評分要點與你的答案，貼到 ChatGPT、Claude 等 AI 對話。網站不會自動傳送資料。</p>
+<div class="row"><button id="copy-ai" class="primary" type="button">複製 AI 批改文字</button><button id="reset" class="secondary" type="button">清除勾選紀錄</button></div>
+<details id="ai-fallback"><summary class="small">無法複製時，展開手動選取</summary><textarea id="ai-text" readonly aria-label="AI 批改文字"></textarea></details>
+</section>
+</section>
+<p id="status" role="status" aria-live="polite" class="small"></p>
+</main>
+</body>
+</html>
