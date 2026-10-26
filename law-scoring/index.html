@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>申論評分參考｜觀護人練習臺</title><meta name="description" content="108–115 年觀護人六科申論題評分要點：先作答，再逐列對照、換算自評分數，並可複製 AI 批改文字。"><link rel="stylesheet" href="../shared-ui.css"><link rel="stylesheet" href="style.css"><script src="data.js" defer></script><script src="app.js" defer></script><link rel="manifest" href="../manifest.webmanifest"><meta name="theme-color" content="#315b7c"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="../pwa/icon-180.png"><link rel="stylesheet" href="../offline.css"><script src="../offline.js" defer></script><link rel="stylesheet" href="../assets/study-theme.css">
+</head>
+<body>
+<header class="study-header"><div class="study-header-inner"><a class="study-brand" href="../v2.5/"><span class="study-brand-mark" aria-hidden="true">觀</span>觀護人練習臺</a><span class="study-test-label">申論評分參考</span><nav aria-label="主要導覽"><a href="../v2.5/">考古題練習</a><a href="./" aria-current="page">申論評分參考</a></nav></div></header>
+<main>
+<div class="wrap">
+  <div class="top">
+    <div>
+      <p class="kicker">108–115 年觀護人申論題・六科 190 題</p>
+      <h1>申論評分參考</h1>
+      <p class="lede">先作答，再逐列對照評分要點並換算自評分數。評分框架參考司律二試閱卷委員意見，法律題的評分要點為 AI 草擬、已核對現行法；學科題標示出處、待對照講義。<strong>都不是官方評分</strong>。</p>
+    </div>
+    <span class="badge-test">學習用・非官方評分</span>
+  </div>
+
+  <div class="top" style="margin-top:8px">
+    <div class="picker">
+      <label for="subject-select">科目<select id="subject-select"></select></label>
+      <label for="question-select">題目<select id="question-select"></select></label>
+    </div>
+    <label class="dev-toggle"><input type="checkbox" id="dev-mode">開發者模式（編輯補充與核定）</label>
+  </div>
+
+  <div class="grid">
+    <div class="main">
+      <section class="sheet" aria-labelledby="q-heading">
+        <p class="kicker" id="q-exam"></p>
+        <h2 id="q-heading"></h2>
+        <div class="meta" id="q-meta"></div>
+        <p class="question" id="q-body" style="margin-top:12px"></p>
+        <p class="small muted" style="margin:10px 0 0"><a id="q-src" target="_blank" rel="noopener">考選部原卷 PDF ↗</a></p>
+      </section>
+
+      <section class="sheet" aria-labelledby="ans-heading">
+        <h2 id="ans-heading">一、先作答</h2>
+        <label for="answer" class="small muted">寫完整答案或詳細大綱，至少 50 字才能展開評分要點。</label>
+        <textarea id="answer" maxlength="20000"></textarea>
+        <div class="row-actions"><span id="count" class="small muted"></span><button class="btn primary" id="unlock" type="button">我寫完了，展開評分要點</button></div>
+      </section>
+
+      <div id="locked" class="locked">評分要點在作答後才會出現，先試著自己寫寫看。</div>
+
+      <div id="graded" hidden style="display:flex;flex-direction:column;gap:20px">
+        <section class="sheet" aria-labelledby="pts-heading">
+          <h2 id="pts-heading" tabindex="-1">二、逐列對照評分要點</h2>
+          <p class="small muted" id="overview"></p>
+          <div class="table-scroll"><table><thead id="thead"></thead><tbody id="rows"></tbody></table></div>
+        </section>
+        <section class="sheet" aria-labelledby="org-heading">
+          <h2 id="org-heading">三、架構檢核</h2>
+          <div class="checklist" id="organize"></div>
+        </section>
+        <section class="sheet" aria-labelledby="pit-heading">
+          <h2 id="pit-heading">四、預測的常見失分</h2>
+          <p class="small muted">觀護人考試沒有公布閱卷意見，以下依司律閱卷委員常見指正與本題特性推估。</p>
+          <ol class="pit" id="pitfalls"></ol>
+        </section>
+        <section class="sheet" aria-labelledby="ai-heading">
+          <h2 id="ai-heading">五、請 AI 逐列對照</h2>
+          <p class="small muted">複製題目、評分要點與你的答案，貼到 ChatGPT、Claude 等 AI 對話。頁面不會自動傳送任何資料。</p>
+          <div class="row-actions" style="justify-content:flex-start"><button class="btn primary" id="copy-ai" type="button">複製 AI 批改文字</button><button class="btn ghost" id="copy-dev" type="button" hidden>複製開發者修改（JSON）</button></div>
+          <textarea id="copy-fallback" readonly hidden aria-label="無法自動複製時，請手動選取這段文字" style="min-height:120px;margin-top:10px"></textarea>
+        </section>
+      </div>
+    </div>
+
+    <aside class="side" aria-label="自評分數">
+      <section class="sheet">
+        <p class="kicker">自評參考分數</p>
+        <div class="score-total"><strong id="total">0</strong><span class="muted">／100</span><span class="bonus-total" id="bonus-total"></span></div>
+        <div class="bars" id="bars"></div>
+        <p class="small muted" style="margin:12px 0 0" id="score-note"></p>
+      </section>
+      <section class="sheet">
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+        <div class="confirm" id="reset-area"><button class="btn danger" id="reset" type="button">清除本題勾選</button></div>
+      </section>
+    </aside>
+  </div>
+</div>
+</main>
+</body>
+</html>

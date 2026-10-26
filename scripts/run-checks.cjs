@@ -10,6 +10,7 @@ const NODE=[
   'verification/practice-context-checks.cjs',
   'verification/all-subject-pilots.cjs',
   'verification/study-desk-weakness.cjs',
+  'verification/law-scoring.cjs',
   'lectures/test.cjs',
   'backup/test.cjs',
   'print/test.cjs',

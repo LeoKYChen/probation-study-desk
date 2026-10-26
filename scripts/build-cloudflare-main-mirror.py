@@ -43,6 +43,7 @@ SITE_DIRS = {
     "common-subjects",
     "juvenile-news",
     "active-recall",
+    "law-scoring",
     "dongdong-time",
     "study30",
     "pwa",
