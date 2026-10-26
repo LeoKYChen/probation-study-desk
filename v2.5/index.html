@@ -421,7 +421,7 @@
 </style>
 <link rel="manifest" href="../manifest.webmanifest"><meta name="theme-color" content="#315b7c"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="../pwa/icon-180.png"><link rel="stylesheet" href="../offline.css"><script src="../offline.js" defer></script><script src="../file-compat.js" defer></script>
 <link rel="stylesheet" href="../assets/study-theme.css">
-</head>
+<style>.subject-wrap.select-grid{grid-template-columns:minmax(0,1fr)}.subject-wrap.select-grid>div{min-width:0}.subject-wrap.select-grid select{min-width:0;width:100%}.trial-version-panel{padding:16px;border:1px solid #c6d6ce;border-radius:12px;background:#f5faf7;margin:18px 0}.trial-version-panel select{max-width:100%;margin:8px 0}.trial-version-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.trial-version-columns section{min-width:0;padding:12px;background:#fff;border:1px solid #dbe4de;border-radius:8px}.trial-version-columns a{overflow-wrap:anywhere}.trial-version-columns li{margin:7px 0}.trial-version-columns p{line-height:1.8}.trial-version-columns h4{font-size:1rem} @media(max-width:900px){.trial-version-columns{grid-template-columns:1fr}}</style></head>
 <body class="study-practice"><header class="study-header"><div class="study-header-inner"><a class="study-brand" href="../"><span class="study-brand-mark" aria-hidden="true">觀</span>觀護人練習臺</a><span class="study-test-label">v2.5</span><nav aria-label="主要導覽"><a href="../">首頁</a><a href="../v2.5/" aria-current="page">考古題練習</a><a href="https://leokychen.github.io/probation-study-desk/daily-simulation/">晚間學習室</a></nav></div></header>
   <div class="app-shell">
     <header class="topbar">
@@ -549,6 +549,7 @@
           <div class="question-content">
             <h2 id="questionTitle"></h2><p><a id="recallCurrentLink" class="btn" href="../active-recall/" hidden>先做本題主動回憶 →</a></p>
             <div class="question-body" id="questionBody"></div>
+<section id="trialVersionPanel" class="trial-version-panel" hidden><label for="trialVersionSelect">查看試評版本</label> <select id="trialVersionSelect"><option value="original">原有版本</option><option value="supplement">補充版本</option></select><p id="trialVersionDescription" class="topic-note"></p><p id="trialVersionStatus" class="topic-note" role="status" aria-live="polite"></p><details id="trialCompare"><summary>查看兩版的要點與來源</summary><div id="trialCompareContent"></div></details><p><a href="probation-trial-review.html" target="_blank" rel="noopener">查看觀護人190題清單</a></p></section>
             <div class="hint-external" id="shuatiGuide" hidden>
               <div class="hint-external-copy"><strong>刷題王解題引導</strong><span id="shuatiLinkStatus">以新分頁開啟；可能需要登入或 VIP。</span></div>
               <div class="hint-external-actions">
@@ -690,6 +691,9 @@
   <script src="pending-pilots.js"></script>
   <script src="grade-reference.js"></script>
   <script src="full-pilots-all.js"></script>
+  <script src="probation-trial-data.js"></script>
+  <script src="probation-trial.js"></script>
+  <script src="trial-versions.js"></script>
   
   
   <script>
@@ -1163,6 +1167,7 @@
     }
 
     function gradeBaseAnswer(answer, question) {
+      if(window.TrialVersions.provider(entry(question.id))==='supplement' && window.PROBATION_TRIAL_RUBRICS?.[question.id]) return window.gradeProbationTrial(answer,question);
       if(window.FULL_PILOT_RUBRICS?.[question.id]) return window.gradeFullPilot(answer,question);
       if(window.PENDING_PILOT_RUBRICS?.[question.id]) return window.gradePendingPilot(answer,question);
       const pilotRubric = window.PILOT_RUBRICS?.[question.id];
@@ -1257,7 +1262,8 @@
 
     function saveSystemAssessment(assessment,markDone) {
       const old=entry();
-      updateEntry({...(assessment.scores?{scores:assessment.scores}:{}), assessment,
+      const versionSaved=window.TrialVersions.available(currentId)?window.TrialVersions.save({...old,questionId:currentId},assessment):{assessment};
+      updateEntry({...(assessment.scores?{scores:assessment.scores}:{}), ...versionSaved,
         assessmentHistory:[...(old.assessmentHistory||[]),...(old.assessment?[{...old.assessment,previousScores:old.scores,previousScoreSource:old.scoreSource}]:[])],
         scoreSource:'system',done:markDone||old.done,review:assessment.total===null||assessment.total<60||old.review});
     }
@@ -1356,7 +1362,7 @@
         const li = document.createElement('li'); li.textContent = point; $('pointList').appendChild(li);
       });
       $('directionList').innerHTML = '';
-      const legalPilot=window.FULL_PILOT_RUBRICS?.[q.id] || window.PENDING_PILOT_RUBRICS?.[q.id];
+      const legalPilot=window.TrialVersions.rubric(q.id,entry(q.id));
       (legalPilot?.calibration ? ['【逐題參考答案】', ...legalPilot.calibration.referenceParagraphs, '【待覆核事項】', ...legalPilot.calibration.openIssues] : legalPilot?legalPilot.criteria.map(row=>row.hint+'（'+row.section+'）'):q.direction).forEach(item => {
         const li = document.createElement('li'); li.textContent = item; $('directionList').appendChild(li);
       });
@@ -1377,11 +1383,11 @@
       $('developerTerms').value = parseDeveloperTerms(rule.requiredTerms || []).join('、');
       $('developerReferences').value = rule.references || '';
       $('developerNotes').value = rule.notes || '';
-      const fullRule = window.FULL_PILOT_RUBRICS?.[question.id];
+      const fullRule = window.TrialVersions.provider(entry(question.id))==='supplement' ? (window.PROBATION_TRIAL_RUBRICS?.[question.id] || window.FULL_PILOT_RUBRICS?.[question.id]) : window.FULL_PILOT_RUBRICS?.[question.id];
       const draftRule = fullRule ? null : window.PENDING_PILOT_RUBRICS?.[question.id];
       const oldRule = window.PILOT_RUBRICS?.[question.id];
       $('pilotRuleStatus').textContent = draftRule ? '專屬試作規則：參考答案已補齊，完整校準待覆核（自動參考分數待覆核）' : fullRule ? '專屬試作規則：已建立（仍待人工覆核，非官方標準）' : oldRule ? '專屬試作規則：舊版已建立，待校準' : '專屬試作規則：待建立；目前使用通用初評。個人補充不代表專屬規則已完成。';
-      const legal=window.FULL_PILOT_RUBRICS?.[question.id] || draftRule;
+      const legal=fullRule || draftRule;
       if(legal){
         const panel=$('pilotRulePanel');panel.hidden=false;panel.open=false;
         $('scoreMode').textContent=legal.draft?'2.5 · 自動參考分數':legal.legalVersion?'現行法逐題試評':'全科逐題試評';
@@ -1442,10 +1448,10 @@
       $('scoreConfidence').textContent = state.assessment?.confidence || '尚未判定';
       renderFeedback('scoreStrengths', state.assessment?.strengths || ['尚未進行系統判定。']);
       renderFeedback('scoreImprovements', state.assessment?.improvements || ['先寫下你的爭點與作答骨架。']);
-      const legal=window.FULL_PILOT_RUBRICS?.[currentQuestion()?.id] || window.PENDING_PILOT_RUBRICS?.[currentQuestion()?.id];
+      const legal=window.TrialVersions.rubric(currentQuestion()?.id,entry());
       const assessment=state.assessment;
       if(legal && state.scoreSource!=='adjusted') {
-        const fresh=['current-law-pilot-v1','all-subject-pilot-v2','pending-310-checklist-v1','reference-310-v2.5'].includes(assessment?.method)&&assessment.rubricVersion===legal.version&&assessment.answer===state.issue;
+        const fresh=['current-law-pilot-v1','all-subject-pilot-v2','pending-310-checklist-v1','reference-310-v2.5','probation-190-trial-v1'].includes(assessment?.method)&&assessment.rubricVersion===legal.version&&assessment.answer===state.issue;
         const blocked=!fresh||assessment.total===null;
         if(blocked){$('totalScore').textContent='—';scoreDefs.forEach(([key,,,max])=>{$(`value-${key}`).textContent=`— / ${max}`;$(`fill-${key}`).style.width='0%';});$('scoreLevel').textContent=fresh?'需人工覆核':'待逐題試評';$('scoreMessage').textContent=fresh&&legal.draft?'已依本題答案綱要完成文字線索檢核；來源、涵攝與異說仍待覆核，暫不給參考分數。':fresh?'已辨識到需覆核語句，暫不給參考分數；先修正後重新試評。':'舊紀錄保留。請重新判定，取得本題準則的試評結果。';}
         else {$('scoreLevel').textContent='練習參考分數';$('scoreMessage').textContent='僅反映規則辨識的要點與結構，請依下方逐項理由覆核。';}
@@ -1477,7 +1483,7 @@
       const totals = Object.entries(saved).filter(([id,state]) => knownIds.has(id) && state.done && !(window.PENDING_PILOT_RUBRICS?.[id] && !window.FULL_PILOT_RUBRICS?.[id] && state.scoreSource !== 'adjusted') && !(state.assessment?.total === null && state.scoreSource !== 'adjusted')).map(([,state]) => Object.values(state.scores || {}).reduce((a,b) => a + Number(b || 0), 0));
       $('doneCount').textContent = `${done.length} 題`;
       $('reviewCount').textContent = `${review} 題`;
-      $('averageScore').textContent = totals.length ? `${(totals.reduce((a,b) => a+b, 0) / totals.length).toFixed(0)} 分` : '—';
+      const trialKey=window.TrialVersions.available(currentQuestion()?.id)?window.TrialVersions.provider(entry()):'original';const trialAverage=window.TrialVersions.average(saved,knownIds,trialKey);$('averageScore').textContent=trialAverage===null?'—':String(trialAverage);$('averageScore').previousElementSibling.textContent=window.TrialVersions.providers[trialKey].label+'平均線索分';
     }
 
     function updateWordCount() { $('wordCount').textContent = `${issueInput.value.replace(/\s/g, '').length} 字`; }
@@ -1565,7 +1571,7 @@ if(picked)window.Practice25.select(picked);
 if(requested.has('review')){const fold=[...document.querySelectorAll('details')].find(n=>n.querySelector('summary')?.textContent==='補強清單');if(fold){fold.open=true;fold.scrollIntoView();}}
 </script><script src="backup-io-direct.js"></script><script src="print-study.js"></script><script src="clear-records.js"></script><script>document.addEventListener("click",function(event){const a=event.target.closest("a");if(!a)return;const href=a.getAttribute("href")||"";if(href.startsWith("reference-notes/"))a.href="https://leokychen.github.io/probation-study-desk/v2.5/"+href;});</script><script src="../ai-prompt-customizer.js"></script>
 <script src="../dual-ai-bridge.js"></script>
-<script src="ai-simple-review-v254.js"></script></body>
+<script src="ai-simple-review-v254.js"></script><script src="probation-trial-ui.js"></script></body>
 </html>
 
 

@@ -95,8 +95,8 @@
     {
       "path": "sw.js",
       "base_sha256": "d564d94ae7a5249cd9ca7caa2ee480ddd4a541250e29b61a6f80c88f55ef0323",
-      "sha256": "fbbe5eebf343ba4642e9d06bfddbfd5ac7bd64f8aa50b88223e01ece3c135b42",
-      "reason": "Cloudflare Pages canonically redirects /dir/index.html to /dir/ and /x.html to /x; allow only these exact same-origin HTML transformations while preserving atomic snapshots and rejecting other redirects. [2026-10-21] When root service worker controls professional paths, fetch training HTML and CSS online first; keep existing offline snapshots as fallback.；套用溫暖圓體與霧藍書房。 [2026-10-22] Network-first changed AI review pages and scripts to avoid stale mixed-version offline snapshots. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-26 週報快取修復] 僅將少年司法週報頁面、JSON與離線 ZIP 週報鏡像加入連線優先讀取清單；離線時維持既有快照作為備援，未更改題庫、作答資料鍵或資料內容。"
+      "sha256": "0a6799e4228a0bc7c80480fb85d5d65156aa88e5a529e3a6bdbb735f5d297b90",
+      "reason": "Cloudflare Pages canonically redirects /dir/index.html to /dir/ and /x.html to /x; allow only these exact same-origin HTML transformations while preserving atomic snapshots and rejecting other redirects. [2026-10-21] When root service worker controls professional paths, fetch training HTML and CSS online first; keep existing offline snapshots as fallback.；套用溫暖圓體與霧藍書房。 [2026-10-22] Network-first changed AI review pages and scripts to avoid stale mixed-version offline snapshots. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-26 週報快取修復] 僅將少年司法週報頁面、JSON與離線 ZIP 週報鏡像加入連線優先讀取清單；離線時維持既有快照作為備援，未更改題庫、作答資料鍵或資料內容。 [2026-10-26 雙版試評] 將考古題目錄入口及雙版試評資產加入連線優先清單，避免已安裝手機版繼續顯示舊頁；離線快照及個人紀錄保持原機制。"
     },
     {
       "path": "professional/practice-session.js",
