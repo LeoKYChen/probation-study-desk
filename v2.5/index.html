@@ -189,6 +189,8 @@
     .essay-draft-field label, .essay-answer-label { display: block; margin-bottom: 8px; font-size: .86rem; font-weight: 800; color: var(--ink); }
     .essay-draft-field textarea { width: 100%; min-height: 145px; padding: 12px 14px; }
     .essay-answer-label { margin-top: 4px; }
+    .practice-result-url-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+    .practice-result-url-row input { flex: 1 1 230px; min-width: 0; min-height: 44px; padding: 9px 12px; border: 1px solid var(--line); border-radius: 10px; background: #fff; color: var(--ink); }
     .save-status[data-error="true"] { color: #b5443c; }
     @media (max-width: 740px) {
       .essay-draft-grid { grid-template-columns: minmax(0, 1fr); }
@@ -588,6 +590,11 @@
               <label class="essay-answer-label" for="issueInput">完整申論答案</label>
               <textarea id="issueInput" placeholder="請在此撰寫完整申論答案；上方四格草稿不會覆蓋原有答案。"></textarea>
               <div class="save-status" id="saveStatus" aria-live="polite"></div>
+              <label class="essay-answer-label" for="practiceResultUrl">我的作答連結</label>
+              <div class="practice-result-url-row">
+                <input id="practiceResultUrl" type="url" maxlength="2048" inputmode="url" autocomplete="url" placeholder="貼上 Google Drive、Notion 或其他頁面的網址">
+                <a id="openPracticeResultUrl" class="btn" target="_blank" rel="noopener noreferrer" hidden>開啟連結</a>
+              </div>
             </div>
             <section class="direction-box" id="directionPanel" aria-labelledby="directionTitle" hidden>
               <h3 id="directionTitle">建議答題方向</h3>
@@ -817,6 +824,21 @@
       updateStats();window.dispatchEvent(new Event('practice25:changed'));
     }
     function currentQuestion() { return questionBank.find(q => q.id === currentId); }
+    function cleanPracticeResultUrl(raw) {
+      const value = String(raw || '').trim();
+      if (!value) return '';
+      try {
+        const parsed = new URL(value);
+        return ['https:', 'http:'].includes(parsed.protocol) && parsed.hostname ? parsed.href : null;
+      } catch { return null; }
+    }
+    function renderPracticeResultUrl(value) {
+      const safe = cleanPracticeResultUrl(value);
+      const link = $('openPracticeResultUrl');
+      link.hidden = !safe;
+      if (safe) link.href = safe;
+      else link.removeAttribute('href');
+    }
     function availableYears(examType) {
       return [...new Set(questionBank
         .filter(q => examType === '全部類科' || q.examTypes.includes(examType))
@@ -995,6 +1017,19 @@
         document.querySelectorAll('.chip').forEach(x => x.classList.toggle('active', x === btn));
         renderList();
       }));
+      $('practiceResultUrl').addEventListener('change', () => {
+        const field = $('practiceResultUrl');
+        const url = cleanPracticeResultUrl(field.value);
+        if (url === null) {
+          showToast('請貼上完整的 http:// 或 https:// 網址');
+          field.value = entry().practiceResultUrl || '';
+          return;
+        }
+        field.value = url;
+        updateEntry({ practiceResultUrl:url });
+        renderPracticeResultUrl(url);
+        showToast(storageWarned ? '網址尚未儲存，請先備份重要資料' : '作答連結已儲存');
+      });
       issueInput.addEventListener('input', () => {
         updateEntry({ issue: issueInput.value, scores:{ issue:0, rule:0, analysis:0, structure:0 }, assessment:null, scoreSource:null, done:false });
         renderScore(); renderList();
@@ -1332,6 +1367,9 @@
         $('directionPanel').hidden = true;
         issueInput.value = '';
         issueInput.disabled = true;
+        $('practiceResultUrl').value = '';
+        $('practiceResultUrl').disabled = true;
+        renderPracticeResultUrl('');
         $('completeButton').disabled = true;
         $('prevButton').disabled = true;
         $('nextButton').disabled = true;
@@ -1342,6 +1380,7 @@
         return;
       }
       issueInput.disabled = false;
+      $('practiceResultUrl').disabled = false;
       $('completeButton').disabled = false;
       $('prevButton').disabled = false;
       $('nextButton').disabled = false;
@@ -1369,6 +1408,8 @@
       $('directionNote').textContent = legalPilot?.draft ? '逐題參考答案已補齊，更新日2026-10-04。這是AI整理的答案綱要；來源支持範圍、異說及待覆核事項逐題列示，尚未通過獨立專業人工審閱，2.5提供自動參考分數，仍須人工核對。' : legalPilot ? (legalPilot.legalVersion?'依現行法查核日 ':'參考資料查核日 ')+legalPilot.checkedAt+'。'+legalPilot.changeNote+' 以上為參考要點，不是官方唯一答案。' : /刑法|訴訟法|少年事件處理法/.test(q.subject)?'本題一律以現行法練習。原有方向尚未逐題更新，請核對現行法與修法差異；原題年度僅作出處。':q.guidanceNote;
       $('directionPanel').hidden = !state.done;
       issueInput.value = state.issue || '';
+      $('practiceResultUrl').value = state.practiceResultUrl || '';
+      renderPracticeResultUrl(state.practiceResultUrl || '');
       $('flagButton').classList.toggle('flagged', state.review);
       $('flagButton').textContent = state.review ? '★' : '☆';
       $('flagButton').setAttribute('aria-pressed', state.review ? 'true' : 'false');
