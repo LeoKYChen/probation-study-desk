@@ -6,7 +6,10 @@ const CONTROL=PREFIX+'control', META=new URL('pwa/snapshot-state',BASE).href;
 const absolute=path=>new URL(path,BASE).href;
 // Preserve installed snapshots as fallback; connected visits must see the unified home after upgrade.
 // Both directory and explicit index routes are used by existing installed apps.
-const NETWORK_FIRST=new Set(['assets/study-theme.css','assets/study-round.woff','shared-ui.css','ai-prompt-customizer.js','','index.html','daily-simulation/index.html','daily-simulation/app.js','daily-simulation/questions.json','daily-simulation/practice.css','v2.5/index.html','v2.5/ai-simple-review-v254.js','v2.5/daily-practice.html','v2.5/daily-practice.js','professional/ai-review-links.js','professional/ai-review-links-direction.js','professional/','professional/index.html','professional/style.css','professional/layout-followup.css','common-subjects/index.html','common-subjects/english-assistant/index.html','common-subjects/catalog/index.html','common-subjects/daily/index.html'].map(absolute));
+const NETWORK_FIRST=new Set(['assets/study-theme.css','assets/study-round.woff','shared-ui.css','ai-prompt-customizer.js','','index.html','daily-simulation/index.html','daily-simulation/app.js','daily-simulation/questions.json','daily-simulation/practice.css','v2.5/index.html','v2.5/ai-simple-review-v254.js','v2.5/daily-practice.html','v2.5/daily-practice.js','professional/ai-review-links.js','professional/ai-review-links-direction.js','professional/','professional/index.html','professional/style.css','professional/layout-followup.css','common-subjects/index.html','common-subjects/english-assistant/index.html','common-subjects/catalog/index.html','common-subjects/daily/index.html',
+  // Weekly updates must bypass an older downloaded PWA snapshot while online.
+  'juvenile-news/','juvenile-news/index.html','juvenile-news/issues.json',
+  'file-data/weekly.generated.js'].map(absolute));
 async function networkCopy(request){
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),7000);
   try{const response=await fetch(request,{cache:'no-store',signal:controller.signal});return response.ok?response:null;}
