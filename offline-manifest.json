@@ -600,6 +600,21 @@
     },
     {
       "url": "v2.5/yamol-ui.js"
+    },
+    {
+      "url": "v2.5/probation-trial-data.js"
+    },
+    {
+      "url": "v2.5/probation-trial.js"
+    },
+    {
+      "url": "v2.5/trial-versions.js"
+    },
+    {
+      "url": "v2.5/probation-trial-ui.js"
+    },
+    {
+      "url": "v2.5/probation-trial-review.html"
     }
   ]
 }
