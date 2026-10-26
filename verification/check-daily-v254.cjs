@@ -42,6 +42,11 @@ assert.ok(outlineText.includes('【我的答題方向／四格草稿】')&&outli
 assert.ok(outlineText.includes('不提供百分制分數')&&!outlineText.includes('模擬總分（若無可靠依據可不給分）'));
 assert.throws(()=>A.buildPrompt(outlineQuestion,'','direction'),/請先填寫四格草稿/);
 assert.ok(A.buildPrompt(outlineQuestion,'完整答案').includes('【我的答案】'),'default AI full grading is compatible');
+const lawFull=A.buildPrompt({...outlineQuestion,subject:'刑法與少年事件處理法'},'完整答案');
+assert.ok(lawFull.includes('事實涵攝與法律論證35分')&&lawFull.includes('【法律科目閱卷檢核')&&lawFull.includes('逐罪、分三階層')&&lawFull.includes('程序題：'),'law subjects use the law rubric and examiner checklist');
+const psyFull=A.buildPrompt({...outlineQuestion,subject:'心理學'},'完整答案');
+assert.ok(psyFull.includes('爭點掌握30分')&&!psyFull.includes('【法律科目閱卷檢核'),'non-law subjects keep the general rubric');
+assert.ok(!A.buildPrompt({...outlineQuestion,subject:'刑法'},'方向','direction').includes('【法律科目閱卷檢核'),'direction mode is not graded against the full-answer checklist');
 const professional={};vm.runInNewContext(read('professional/ai-review-links-direction.js'),{window:professional,document:{readyState:'loading',addEventListener(){}}},{filename:'professional/ai-review-links.js'});
 const guided=professional.Study30GuidedReview.prompt(outlineQuestion,{questionId:'outline-smoke'},'一、確認程序','direction');
 assert.ok(guided.includes('【我的答題方向／四格草稿】')&&guided.includes('不給百分制模擬成績'));
