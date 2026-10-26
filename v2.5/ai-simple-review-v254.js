@@ -122,7 +122,14 @@
     if(combined.length>80000)throw Error('本題累計評語超過 80,000 字元，請先從雙 AI 工作臺匯出 MD 備份');
     return combined;
   }
-  var api = Object.freeze({buildPrompt:buildPrompt,validBank:validBank,backupName:backupName,field:FIELD,reviewContentFromRecord:reviewContentFromRecord,buildDualReviewPayload:buildDualReviewPayload,appendDualFeedback:appendDualFeedback});
+  // 觀護人六科 108–115 年申論題已建立評分要點（law-scoring/），其他類科尚未收錄。
+  var SCORING_SUBJECTS = ['少年事件處理法','刑法','刑事訴訟法與保安處分執行法','犯罪學','心理學','諮商與輔導'];
+  function scoringHref(q) {
+    var types = Array.isArray(q && q.examTypes) ? q.examTypes : [q && q.examType];
+    if (!q || !q.id || types.indexOf('觀護人') < 0 || SCORING_SUBJECTS.indexOf(q.subject) < 0 || !(q.year >= 108 && q.year <= 115)) return null;
+    return '../law-scoring/#' + encodeURIComponent(q.id);
+  }
+  var api = Object.freeze({scoringHref:scoringHref,buildPrompt:buildPrompt,validBank:validBank,backupName:backupName,field:FIELD,reviewContentFromRecord:reviewContentFromRecord,buildDualReviewPayload:buildDualReviewPayload,appendDualFeedback:appendDualFeedback});
   root.AISimpleReview254 = api;
   if (!DOC) return;
   function init() {
@@ -135,6 +142,7 @@
     section.innerHTML = '<label for="ai-simple-mode"><strong>批改方式</strong></label>'+ 
       '<select id="ai-simple-mode"><option value="full">完整申論批改</option><option value="direction">答題方向批改（草稿／大綱）</option></select>'+ 
       '<p class="ai-simple-mode-help">答題方向模式優先使用上方四格草稿；不評字數、不給百分制分數。</p>'+ 
+      '<a id="ai-simple-scoring" href="../law-scoring/" hidden>先自己對照：本題評分要點 →</a>'+
       '<button class="btn primary" id="ai-simple-copy" type="button">一鍵複製AI批改</button>'+
       '<button class="btn" id="ai-simple-dual" type="button">送交雙 AI 交叉審查</button>'+
       '<button class="btn" id="ai-simple-export-dual" type="button">複製題目與答案供雙 AI 匯入</button>'+
@@ -148,6 +156,7 @@
       '#ai-simple-copy,#ai-simple-dual,#ai-simple-export-dual{width:100%;min-height:48px;margin-bottom:10px;white-space:normal}#ai-simple-export-dual{margin-bottom:15px}#ai-simple-review label{display:block;font-size:.88rem;margin-bottom:7px}'+
       '#ai-simple-feedback{min-height:160px;width:100%;line-height:1.75;white-space:pre-wrap}'+
       '#ai-simple-status{font-size:.78rem;color:#106b65;min-height:20px;margin:7px 0 0}'+
+      '#ai-simple-scoring{display:flex;align-items:center;min-height:44px;margin:0 0 12px;padding:8px 12px;border:1px dashed #6aa7a2;border-radius:10px;color:#0f5f5a;font-weight:700;text-decoration:none;background:#fff}#ai-simple-scoring[hidden]{display:none}'+
       '#ai-simple-status[data-error="true"]{color:#b5443c}';
     DOC.head.appendChild(style);
     var modeSelector = DOC.getElementById('ai-simple-mode');
@@ -156,6 +165,7 @@
     var exportDual = DOC.getElementById('ai-simple-export-dual');
     var feedback = DOC.getElementById('ai-simple-feedback');
     var status = DOC.getElementById('ai-simple-status');
+    var scoring = DOC.getElementById('ai-simple-scoring');
     root.AIPromptCustom?.mount({button:copy,modeElement:modeSelector,getMode:function(){return modeSelector.value;},getSubject:function(){return practice.getQuestion()?.subject||'';}});
     var shownId = null, lastSaved = '';
     function notice(t,isError) { status.textContent=t;status.dataset.error=isError?'true':'false'; }
@@ -163,6 +173,9 @@
       var q = practice.getQuestion(), nextId = q && q.id || null;
       if (shownId === nextId) return;
       shownId = nextId;
+      var href = scoringHref(q);
+      scoring.hidden = !href;
+      if (href) scoring.href = href;
       var text = nextId ? (practice.getState(nextId)[FIELD] || '') : '';
       feedback.value = text;
       lastSaved = text;

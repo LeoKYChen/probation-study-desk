@@ -32,3 +32,12 @@ for(const s of [...LAW,...THEORY])assert(bySubject[s]>=31,'subject coverage '+s)
 const html=fs.readFileSync(path.join(root,'law-scoring/index.html'),'utf8');
 assert(html.includes('非官方評分')&&!html.includes('fonts.googleapis'),'disclaimer present and no external fonts for offline use');
 console.log('PASS law-scoring: '+D.questions.length+' questions, '+Object.keys(bySubject).length+' subjects');
+// 考古題練習頁的入口：觀護人六科題目都能連到存在的評分要點，其他類科不顯示連結。
+const r={};vm.runInNewContext(fs.readFileSync(path.join(root,'v2.5/ai-simple-review-v254.js'),'utf8'),{window:r,globalThis:r},{filename:'ai-simple-review-v254.js'});
+const bank={};for(const f of ['v2.5/questions.js','v2.5/related-questions.js'])vm.runInNewContext(fs.readFileSync(path.join(root,f),'utf8'),{window:bank,globalThis:bank},{filename:f});
+const linked=[...bank.QUESTION_BANK,...bank.RELATED_QUESTION_BANK].map(q=>[q,r.AISimpleReview254.scoringHref(q)]).filter(([,h])=>h);
+assert.equal(linked.length,D.questions.length,'every scoring entry is linked from the practice page');
+for(const [q,h] of linked)assert(ids.has(decodeURIComponent(h.split('#')[1]))&&h.startsWith('../law-scoring/#'),'link target exists '+q.id);
+assert.equal(r.AISimpleReview254.scoringHref({id:'x',subject:'刑法',year:114,examType:'監獄官'}),null,'other exam types are not linked');
+assert(fs.readFileSync(path.join(root,'v2.5/index.html'),'utf8').includes('href="../law-scoring/"'),'practice page nav links the scoring page');
+console.log('PASS law-scoring links: '+linked.length+' practice questions');

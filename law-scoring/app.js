@@ -21,7 +21,8 @@ function persist(){ try { localStorage.setItem(KEY, JSON.stringify(store)); } ca
 const $ = id => document.getElementById(id);
 function el(tag, attrs, text){ const n=document.createElement(tag); for(const k in (attrs||{})){ if(k==='class') n.className=attrs[k]; else n.setAttribute(k,attrs[k]); } if(text!=null) n.textContent=text; return n; }
 function say(t){ $('status').textContent=t; }
-let current = DATA.questions.find(q=>q.id===store.__current) || DATA.questions[0];
+function fromHash(){ let id=''; try{ id=decodeURIComponent(location.hash.slice(1)); }catch(e){} return DATA.questions.find(q=>q.id===id); }
+let current = fromHash() || DATA.questions.find(q=>q.id===store.__current) || DATA.questions[0];
 let dev = !!store.__dev;
 function noteOf(q,s,i){ return String(s.devNotes[i]!=null?s.devNotes[i]:(q.rows[i].devNote||'')).trim(); }
 function approvedOf(q,s,i){ return s.approved[i]!=null?!!s.approved[i]:!!q.rows[i].approved; }
@@ -63,6 +64,7 @@ function renderPicker(){
 function render(){
   renderPicker();
   store.__current=current.id;
+  if(decodeURIComponent(location.hash.slice(1))!==current.id){ try{ history.replaceState(null,'','#'+encodeURIComponent(current.id)); }catch(e){} }
   const q=current, s=st(q);
   $('q-exam').textContent=q.exam+'／'+q.subject+'・第 '+q.no+' 題（'+q.points+' 分）';
   $('q-heading').textContent=q.title;
@@ -179,6 +181,7 @@ function copy(text, ok){
   try { navigator.clipboard.writeText(text).then(()=>{ fb.hidden=true; say(ok); }, manual); } catch(e){ manual(); }
 }
 
+window.addEventListener('hashchange',()=>{ const q=fromHash(); if(q&&q!==current){ current=q; render(); } });
 $('subject-select').addEventListener('change',e=>{ current=DATA.questions.find(q=>q.subject===e.target.value); persist(); render(); });
 $('question-select').addEventListener('change',e=>{ current=DATA.questions.find(q=>q.id===e.target.value); persist(); render(); window.scrollTo({top:0}); });
 $('answer').addEventListener('input',()=>{ st(current).answer=$('answer').value; persist(); syncCount(); });
