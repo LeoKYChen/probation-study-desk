@@ -12,6 +12,7 @@ const NODE=[
   'verification/study-desk-weakness.cjs',
   'verification/law-scoring.cjs',
   'lectures/test.cjs',
+  'lectures/test-learning.cjs',
   'backup/test.cjs',
   'print/test.cjs',
   'common-subjects/test-v02.cjs',

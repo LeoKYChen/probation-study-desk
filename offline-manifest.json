@@ -293,6 +293,9 @@
       "url": "lectures/index.html"
     },
     {
+      "url": "lectures/learning.css"
+    },
+    {
       "url": "lectures/style.css"
     },
     {
@@ -518,10 +521,10 @@
       "url": "v2.5/extension25.css"
     },
     {
-      "url": "v2.5/full-pilots.js"
+      "url": "v2.5/full-pilots-all.js"
     },
     {
-      "url": "v2.5/full-pilots-all.js"
+      "url": "v2.5/full-pilots.js"
     },
     {
       "url": "v2.5/grade-reference.js"
@@ -549,6 +552,18 @@
     },
     {
       "url": "v2.5/print-study.js"
+    },
+    {
+      "url": "v2.5/probation-trial-data.js"
+    },
+    {
+      "url": "v2.5/probation-trial-review.html"
+    },
+    {
+      "url": "v2.5/probation-trial-ui.js"
+    },
+    {
+      "url": "v2.5/probation-trial.js"
     },
     {
       "url": "v2.5/questions.js"
@@ -608,25 +623,13 @@
       "url": "v2.5/topic-rubrics.js"
     },
     {
+      "url": "v2.5/trial-versions.js"
+    },
+    {
       "url": "v2.5/yamol-links.js"
     },
     {
       "url": "v2.5/yamol-ui.js"
-    },
-    {
-      "url": "v2.5/probation-trial-data.js"
-    },
-    {
-      "url": "v2.5/probation-trial.js"
-    },
-    {
-      "url": "v2.5/trial-versions.js"
-    },
-    {
-      "url": "v2.5/probation-trial-ui.js"
-    },
-    {
-      "url": "v2.5/probation-trial-review.html"
     }
   ]
 }
