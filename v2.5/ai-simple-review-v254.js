@@ -123,10 +123,15 @@
     return combined;
   }
   // 觀護人六科 108–115 年申論題已建立評分要點（law-scoring/），其他類科尚未收錄。
-  var SCORING_SUBJECTS = ['少年事件處理法','刑法','刑事訴訟法與保安處分執行法','犯罪學','心理學','諮商與輔導'];
+  var SCORING_SUBJECTS = {
+    '觀護人': ['少年事件處理法','刑法','刑事訴訟法與保安處分執行法','犯罪學','心理學','諮商與輔導'],
+    '監獄官': ['刑法與少年事件處理法','犯罪學與再犯預測','諮商與矯正輔導'],
+    '薦任升等（矯正）': ['刑法','心理測驗','犯罪學','諮商與輔導']
+  };
   function scoringHref(q) {
     var types = Array.isArray(q && q.examTypes) ? q.examTypes : [q && q.examType];
-    if (!q || !q.id || types.indexOf('觀護人') < 0 || SCORING_SUBJECTS.indexOf(q.subject) < 0 || !(q.year >= 108 && q.year <= 115)) return null;
+    var covered = types.some(function (t) { return Object.prototype.hasOwnProperty.call(SCORING_SUBJECTS, t) && SCORING_SUBJECTS[t].indexOf(q.subject) >= 0; });
+    if (!q || !q.id || !covered || !(q.year >= 108 && q.year <= 115)) return null;
     return '../law-scoring/#' + encodeURIComponent(q.id);
   }
   var api = Object.freeze({scoringHref:scoringHref,buildPrompt:buildPrompt,validBank:validBank,backupName:backupName,field:FIELD,reviewContentFromRecord:reviewContentFromRecord,buildDualReviewPayload:buildDualReviewPayload,appendDualFeedback:appendDualFeedback});

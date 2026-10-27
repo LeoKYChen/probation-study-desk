@@ -9,6 +9,8 @@ const absolute=path=>new URL(path,BASE).href;
 const NETWORK_FIRST=new Set(['lectures/','lectures/index.html','lectures/core.js','lectures/app.js','lectures/learning.css','backup/unified-core.js','assets/study-theme.css','assets/study-round.woff','shared-ui.css','ai-prompt-customizer.js','','index.html','daily-simulation/index.html','daily-simulation/app.js','daily-simulation/questions.json','daily-simulation/practice.css','v2.5/','v2.5/index.html','v2.5/probation-trial-review.html','v2.5/probation-trial-data.js','v2.5/probation-trial.js','v2.5/trial-versions.js','v2.5/probation-trial-ui.js','v2.5/ai-simple-review-v254.js','v2.5/daily-practice.html','v2.5/daily-practice.js','professional/ai-review-links.js','professional/ai-review-links-direction.js','professional/','professional/index.html','professional/style.css','professional/layout-followup.css','common-subjects/index.html','common-subjects/english-assistant/index.html','common-subjects/catalog/index.html','common-subjects/daily/index.html',
   // Weekly updates must bypass an older downloaded PWA snapshot while online.
   'juvenile-news/','juvenile-news/index.html','juvenile-news/issues.json',
+  // Scoring points grow in batches; online visits must not keep an older snapshot.
+  'law-scoring/','law-scoring/index.html','law-scoring/app.js','law-scoring/data.js','law-scoring/style.css',
   'file-data/weekly.generated.js'].map(absolute));
 async function networkCopy(request){
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),7000);

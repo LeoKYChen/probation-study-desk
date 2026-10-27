@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="zh-Hant">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>申論評分參考｜觀護人練習臺</title><meta name="description" content="108–115 年觀護人六科申論題評分要點：先作答，再逐列對照、換算自評分數，並可複製 AI 批改文字。"><link rel="stylesheet" href="../shared-ui.css"><link rel="stylesheet" href="style.css"><script src="data.js" defer></script><script src="app.js" defer></script><link rel="manifest" href="../manifest.webmanifest"><meta name="theme-color" content="#315b7c"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="../pwa/icon-180.png"><link rel="stylesheet" href="../offline.css"><script src="../offline.js" defer></script><link rel="stylesheet" href="../assets/study-theme.css">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>申論評分參考｜觀護人練習臺</title><meta name="description" content="觀護人、監獄官、薦任升等（矯正）申論題評分要點：先作答，再逐列對照、換算自評分數，並可複製 AI 批改文字。"><link rel="stylesheet" href="../shared-ui.css"><link rel="stylesheet" href="style.css"><script src="data.js" defer></script><script src="app.js" defer></script><link rel="manifest" href="../manifest.webmanifest"><meta name="theme-color" content="#315b7c"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="../pwa/icon-180.png"><link rel="stylesheet" href="../offline.css"><script src="../offline.js" defer></script><link rel="stylesheet" href="../assets/study-theme.css">
 </head>
 <body>
 <header class="study-header"><div class="study-header-inner"><a class="study-brand" href="../v2.5/"><span class="study-brand-mark" aria-hidden="true">觀</span>觀護人練習臺</a><span class="study-test-label">申論評分參考</span><nav aria-label="主要導覽"><a href="../v2.5/">考古題練習</a><a href="./" aria-current="page">申論評分參考</a></nav></div></header>
@@ -8,7 +8,7 @@
 <div class="wrap">
   <div class="top">
     <div>
-      <p class="kicker">108–115 年觀護人申論題・六科 190 題</p>
+      <p class="kicker">觀護人、監獄官、薦任升等（矯正）申論題・350 題</p>
       <h1>申論評分參考</h1>
       <p class="lede">先作答，再逐列對照評分要點並換算自評分數。評分框架參考司律二試閱卷委員意見，法律題的評分要點為 AI 草擬、已核對現行法；學科題標示出處、待對照講義。<strong>都不是官方評分</strong>。</p>
     </div>
@@ -17,6 +17,7 @@
 
   <div class="top" style="margin-top:8px">
     <div class="picker">
+      <label for="exam-select">類科<select id="exam-select"></select></label>
       <label for="subject-select">科目<select id="subject-select"></select></label>
       <label for="question-select">題目<select id="question-select"></select></label>
     </div>
@@ -54,7 +55,7 @@
         </section>
         <section class="sheet" aria-labelledby="pit-heading">
           <h2 id="pit-heading">四、預測的常見失分</h2>
-          <p class="small muted">觀護人考試沒有公布閱卷意見，以下依司律閱卷委員常見指正與本題特性推估。</p>
+          <p class="small muted">這些考試都沒有公布閱卷意見，以下依司律閱卷委員常見指正與本題特性推估。</p>
           <ol class="pit" id="pitfalls"></ol>
         </section>
         <section class="sheet" aria-labelledby="ai-heading">
