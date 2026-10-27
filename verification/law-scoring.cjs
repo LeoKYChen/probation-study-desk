@@ -9,14 +9,17 @@ const KINDS=['essay','case','proc','theory'];
 // 各類科收錄的科目與最低題數；法律科目已核對現行法，學科待對照教材。
 const COVER={'觀護人':{少年事件處理法:31,刑法:31,刑事訴訟法與保安處分執行法:31,犯罪學:31,心理學:31,諮商與輔導:31},
   '監獄官':{刑法與少年事件處理法:32,犯罪學與再犯預測:32,諮商與矯正輔導:32},
-  '薦任升等（矯正）':{刑法:16,心理測驗:16,犯罪學:16,諮商與輔導:16}};
-const LAW=['少年事件處理法','刑法','刑事訴訟法與保安處分執行法','刑法與少年事件處理法'];
+  '薦任升等（矯正）':{刑法:16,心理測驗:16,犯罪學:16,諮商與輔導:16},
+  '犯罪防治人員預防組':{刑法與刑事訴訟法:31,心理學:32,犯罪學與犯罪預防:32,諮商與輔導:32},
+  '心理測驗員、心理輔導員、家事調查官':{少年事件處理法:28,心理學:24},
+  '監所管理員':{犯罪學概要:24}};
+const LAW=['少年事件處理法','刑法','刑事訴訟法與保安處分執行法','刑法與少年事件處理法','刑法與刑事訴訟法'];
 const ids=new Set(),bySubject={};
 for(const q of D.questions){
   assert(!ids.has(q.id),'duplicate id '+q.id);ids.add(q.id);
   const key=q.examType+'／'+q.subject;bySubject[key]=(bySubject[key]||0)+1;
   assert(COVER[q.examType]&&COVER[q.examType][q.subject],q.id+' exam type and subject are covered');
-  assert(['觀護','矯正'].includes(q.focus),q.id+' focus');
+  assert(['觀護','矯正','犯罪防治','司法'].includes(q.focus),q.id+' focus');
   assert(KINDS.includes(q.kind),q.id+' kind');
   for(const k of ['exam','subject','title','overview','body','check'])assert(typeof q[k]==='string'&&q[k].trim(),q.id+' missing '+k);
   assert(Number.isInteger(q.year)&&Number.isInteger(q.no),q.id+' year/no');
@@ -42,11 +45,13 @@ assert(html.includes('非官方評分')&&!html.includes('fonts.googleapis'),'dis
 console.log('PASS law-scoring: '+D.questions.length+' questions, '+Object.keys(bySubject).length+' subjects');
 // 考古題練習頁的入口：已收錄的題目都能連到存在的評分要點，其他類科不顯示連結。
 const r={};vm.runInNewContext(fs.readFileSync(path.join(root,'v2.5/ai-simple-review-v254.js'),'utf8'),{window:r,globalThis:r},{filename:'ai-simple-review-v254.js'});
-const bank={};for(const f of ['v2.5/questions.js','v2.5/related-questions.js'])vm.runInNewContext(fs.readFileSync(path.join(root,f),'utf8'),{window:bank,globalThis:bank},{filename:f});
-const linked=[...bank.QUESTION_BANK,...bank.RELATED_QUESTION_BANK].map(q=>[q,r.AISimpleReview254.scoringHref(q)]).filter(([,h])=>h);
+const bank={};for(const f of ['v2.5/questions.js','v2.5/related-questions.js','police-exams/questions.approved.js','police-exams/approved-loader.js'])vm.runInNewContext(fs.readFileSync(path.join(root,f),'utf8'),{window:bank,globalThis:bank},{filename:f});
+const linked=[...bank.QUESTION_BANK,...bank.RELATED_QUESTION_BANK,...bank.POLICE_ORIGINAL_QUESTION_BANK].map(q=>[q,r.AISimpleReview254.scoringHref(q)]).filter(([,h])=>h);
 assert.equal(linked.length,D.questions.length,'every scoring entry is linked from the practice page');
 for(const [q,h] of linked)assert(ids.has(decodeURIComponent(h.split('#')[1]))&&h.startsWith('../law-scoring/#'),'link target exists '+q.id);
-assert.equal(r.AISimpleReview254.scoringHref({id:'x',subject:'刑法',year:114,examType:'監所管理員'}),null,'other exam types are not linked');
+assert.equal(D.questions.length,553,'every essay question on the site has scoring points');
+assert.equal(r.AISimpleReview254.scoringHref({id:'x',subject:'刑法',year:114,examType:'監所管理員'}),null,'subjects outside an exam type are not linked');
 assert.equal(r.AISimpleReview254.scoringHref({id:'x',subject:'心理學',year:114,examType:'監獄官'}),null,'subjects outside an exam type are not linked');
+assert.equal(r.AISimpleReview254.scoringHref({id:'x',subject:'刑法',year:114,examType:'律師'}),null,'unknown exam types are not linked');
 assert(fs.readFileSync(path.join(root,'v2.5/index.html'),'utf8').includes('href="../law-scoring/"'),'practice page nav links the scoring page');
 console.log('PASS law-scoring links: '+linked.length+' practice questions');
