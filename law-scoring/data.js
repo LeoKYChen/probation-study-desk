@@ -1,4 +1,4 @@
-/* 申論評分參考｜觀護人 108–115 年六科申論題評分要點。由 AI 草擬，開發者可修改 devNote 與 approved 欄位。 */
+/* 申論評分參考｜觀護人、監獄官、薦任升等（矯正）申論題評分要點。由 AI 草擬，開發者可修改 devNote 與 approved 欄位。 */
 window.LawScoringData = {
  "checkedOn": "2026-10-26",
  "lawDataset": "全國法規資料庫 2026-10-16 版",
@@ -86,7 +86,9 @@ window.LawScoringData = {
     "把少年法院處理寫成必經程序。"
    ],
    "body": "108 年 6 月 19 日由總統公告施行之新修正少年事件處理法乃依同心圓理論，而對曝險少年採「行政輔導先行，以司法為後盾」之作法，請依新修正規定，對其立法理由及具體規範詳予說明。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0617&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0617&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "108-少年事件處理法-2",
@@ -167,7 +169,9 @@ window.LawScoringData = {
     "把禁戒、治療寫成獨立的保護處分種類，而非附隨處分。"
    ],
    "body": "依 108 年 6 月 19 日總統公告施行之新修正少年事件處理法（下稱本法）之規定，少年法院依其審理之結果認為係屬毋需移送檢察官之少年保護事件時，其可為如何之處置，請依本法規定詳予說明。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0617&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0617&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "108-少年事件處理法-3",
@@ -239,7 +243,9 @@ window.LawScoringData = {
     "引用施行細則舊條次而未核對現行條次。"
    ],
    "body": "對於少年犯罪之刑事追訴，依現行少年事件處理法有何限制規定，是否有例外之情形，請詳予說明。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0617&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0617&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "108-少年事件處理法-4",
@@ -311,7 +317,9 @@ window.LawScoringData = {
     "漏掉緩起訴與不起訴的塗銷情形。"
    ],
    "body": "請依 108 年 6 月 19 日由總統公告施行之新修正少年事件處理法第 83 條之 1，關於塗銷少年前案紀錄及有關資料之規定，就下列問題，詳予說明：（一）少年法院於何情形下，應通知保存少年前案紀錄及有關資料之機關、機構及團體，將少年之前案紀錄及有關資料予以塗銷？（12 分）（二）本條所謂「前案紀錄及有關資料」，其範圍為何？其與少年及兒童保護事件執行辦法第 31 條所規定應通知各保存少年前科紀錄及有關資料之機關（構）塗銷之範圍有無不同？（8 分）（三）本條所謂「塗銷」，目前之實務作法為何？（5 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0617&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0617&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "109-少年事件處理法-1",
@@ -394,7 +402,9 @@ window.LawScoringData = {
     "漏掉收容的最後手段性。"
    ],
    "body": "少年事件處理有數項原則，其中一者為社區處遇優先原則，其意涵為何？試申論之。（25分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0617&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0617&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "109-少年事件處理法-2",
@@ -464,7 +474,9 @@ window.LawScoringData = {
     "忽略少年拒絕晤談的原因評估與比例原則。"
    ],
    "body": "少年保護官對於保護管束執行期間的少年，發現其因身心問題而有定期接受專業諮商之必要，而法院亦無心理輔導員之配置時，少年保護官可否命少年定期前往其他機構（如社會局、醫院等）與諮商師或醫師等專業人士晤談，其依據為何？如少年拒不接受晤談，少年保護官可否依此對少年寄發勸導書？（25分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0617&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0617&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "109-少年事件處理法-3",
@@ -546,7 +558,9 @@ window.LawScoringData = {
     "漏掉第 55 條的替代途徑。"
    ],
    "body": "小明為受保護管束少年，於保護管束期間規避執行，拒行報到，其後並無故遷移他處，行蹤不明，經觀護人聲請協尋，並經尋獲。經訊問後認為該小明有可能再行逃逸規避執行，此時能否暫時收容，各有正反意見，試申述之？（25分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0617&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0617&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "109-少年事件處理法-4",
@@ -620,7 +634,9 @@ window.LawScoringData = {
     "忽略 24 小時護送與約束工具限制。"
    ],
    "body": "少年事件仍在警方調查中，在移送法院之前，少年經警方合法通知無正當理由不到場之情況下，是否得報請少年法庭法官核發同行書，將少年同行到場？（25分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0617&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0617&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "110-少年事件處理法-1",
@@ -707,7 +723,9 @@ window.LawScoringData = {
     "混淆戊「受理時」與「繫屬後」已滿 20 歲的不同處理。"
    ],
    "body": "甲觸犯刑罰法律時為 11 歲；乙觸犯刑罰法律時為 13 歲；丙觸犯刑罰法律時為 17 歲；丁觸犯刑罰法律時為 17 歲，發覺時已滿 18 歲；戊觸犯刑罰法律時為 17 歲，但檢察官偵查終結時已滿 20 歲。試說明甲、乙、丙、丁、戊上開觸犯刑罰法律之行為，是否均須移送少年法院處理？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0507&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0507&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "110-少年事件處理法-2",
@@ -778,7 +796,9 @@ window.LawScoringData = {
     "直接寫撤銷改感化教育（第 55 條第 4 項只適用保護管束）。"
    ],
    "body": "訓誡及假日生活輔導之執行主體及方法為何？少年無正當理由拒到院執行，應如何處置？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0507&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0507&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "110-少年事件處理法-3",
@@ -852,7 +872,9 @@ window.LawScoringData = {
     "漏掉免除執行的規定。"
    ],
    "body": "依少年事件處理法之規定，說明保護管束之種類有幾種？執行年限有何不同？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0507&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0507&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "110-少年事件處理法-4",
@@ -926,7 +948,9 @@ window.LawScoringData = {
     "漏掉毒品條例對少年的特別規定。"
    ],
    "body": "試先說明何謂行政先行原則，進而說明少年甲持刀預備殺人、少年乙施用第三級毒品 K 他命、少年丙經常逃學逃家等三種情形是否均有該原則之適用？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0507&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0507&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "111-少年事件處理法-1",
@@ -999,7 +1023,9 @@ window.LawScoringData = {
     "比較只寫一兩點，沒有涵蓋目的、要件、期間。"
    ],
    "body": "少年刑事被告於案件審理中如精神狀態顯有缺陷而有危害公共安全之虞時，請分別說明以下：法院能否依少年事件處理法第 42 條第 2 項第 2 款規定令入相當處所實施治療或依刑事訴訟法第 121 條之 1 規定令入司法精神醫院等處所施以暫行安置？（15 分）並請說明少年事件處理法第 42 條第 2 項第 2 款規定治療處分與刑事訴訟法暫行安置處分之異同。（10 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0507&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0507&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "111-少年事件處理法-2",
@@ -1071,7 +1097,9 @@ window.LawScoringData = {
     "解釋內容只寫結論，沒有理由。"
    ],
    "body": "大法官於 110 年 7 月 16 日就《少年事件被害人到庭陳述意見案》作成釋字第 805 號解釋，請分別說明以下：該解釋文之內容。（20 分）於該解釋後，少年相關法規就通知被害人到庭部分有何因應規定？（5 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0507&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0507&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "111-少年事件處理法-3",
@@ -1145,7 +1173,9 @@ window.LawScoringData = {
     "沒有連結緘默權。"
    ],
    "body": "請說明修復式司法於少年事件之應用上，若少年堅持不道歉或對話會否造成不利益。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0507&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0507&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "111-少年事件處理法-4",
@@ -1217,7 +1247,9 @@ window.LawScoringData = {
     "忽略變更安置處所這個較輕的選項。"
    ],
    "body": "請說明少年若拒絕接受或不服從安置機構之輔導時，安置機構得採取那些作為？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0507&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0507&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "112-少年事件處理法-1",
@@ -1302,7 +1334,9 @@ window.LawScoringData = {
     "忽略約束工具與護送時限。"
    ],
    "body": "民國 112 年 6 月 21 日總統公布施行之新修正少年事件處理法（以下簡稱本法），其中為落實憲法第 8 條對人身自由之保障，及本法係為維護少年健全自我成長所設置之特殊保護制度，暨兒童權利公約第 40 條關於少年司法之正當法律程序要求，明定有關少年有觸犯刑罰法律之行為之事件，在司法警察機關移送少年法院前，得對少年實施同行、逕行同行等強制處分程序，請依新修正規定，對其立法理由及具體規範詳予說明。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0507&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0507&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "112-少年事件處理法-2",
@@ -1377,7 +1411,9 @@ window.LawScoringData = {
     "漏掉第 18 條第 7 項物品處理。"
    ],
    "body": "王 OO 係民國 97 年 5 月 11 日出生，明知愷他命（以下簡稱 K 他命）、硝甲西泮均係毒品危害防制條例第 2 條第 2 項第 3 款所列管之第三級毒品，依法不得施用，竟基於施用 K 他命、硝甲西泮之犯意，於 112 年 7月 1 日 14 時許，在新北市中和區 O 路 O 段 O 號之友人住處，以將 K 他命粉末摻入香菸內再點火吸食，又將毒品咖啡包混入蠻牛飲料後飲用等方式，施用 K 他命、硝甲西泮各乙次，嗣於 112 年 7 月 2 日 11 時 48 分許，在新北市中和區 O 路 O 段 O 號前，員警見王 OO 形跡可疑乃上前盤查，當場查獲含硝甲西泮成分之毒品咖啡包 1 包（驗餘淨重 1.3822 公克），經警於同日 12 時 53 分許採集其尿液送驗結果，檢出 K 他命呈陽性反應，始供承上情。試問：（25 分）（一）王 OO 先後所為，是否屬於現行少年事件處理法第 3 條第 1 項所定應處理之情形？（二）司法警察官於執行職務時，知王 OO 有上述情形，應如何處理？（三）司法警察機關如何處理採集之尿液及查獲之毒品咖啡包？",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0507&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0507&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "112-少年事件處理法-3",
@@ -1449,7 +1485,9 @@ window.LawScoringData = {
     "漏掉塗銷效果。"
    ],
    "body": "對於少年犯罪之緩刑宣告與成年人犯罪者，少年事件處理法有何不同之規定？（20 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0507&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0507&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "112-少年事件處理法-4",
@@ -1521,7 +1559,9 @@ window.LawScoringData = {
     "忽略資源整合會議。"
    ],
    "body": "少年法院為保護處分裁定前，認有必要時，得徵詢適當之機關（構）、學校、團體或個人之意見，並得召開協調、諮詢或整合符合少年所需之福利服務、安置輔導、衛生醫療、就學、職業訓練、就業服務、家庭處遇計畫或其他資源與服務措施之相關會議（少年事件處理法第 42 條第 5 項規定）。試問：新北市政府少年輔導委員會如對有施用第三級毒品 K 他命、硝甲西泮等曝險行為之少年王 OO 進行輔導後，經評估認由少年法院處理，始能保障少年健全之自我成長，敘明理由並檢具輔導相關紀錄、有關資料及證據，請求少年法院處理，如果您是少年調查官，如何依少年事件處理法第 19 條、第 42 條第 5 項及少年法院與相關機關處理少年事件聯繫辦法等規定進行少年需保護性之評估？（30 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0507&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0507&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "113-少年事件處理法-1",
@@ -1610,7 +1650,9 @@ window.LawScoringData = {
     "把少年刑事政策等同於不處罰。"
    ],
    "body": "少年毫無疑問地，和成年人一樣具有實施犯罪的能力，但少年年齡較輕，身心尚未成熟，社會經驗不足，人格尚在形成，為保護少年健全自我成長，調整其成長環境，並矯治其性格，對少年犯不宜採取和成年犯一樣的刑事政策。試論述對少年犯之刑事政策，應具有那些獨特性質？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0506&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0506&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "113-少年事件處理法-2",
@@ -1693,7 +1735,9 @@ window.LawScoringData = {
     "把準用寫成一律適用刑事訴訟法。"
    ],
    "body": "少年事件處理法第 1 條之 1 規定：「少年保護事件及少年刑事案件之處理，依本法之規定。本法未規定者，於與少年保護事件、少年刑事案件性質不相違反之範圍內，準用其他法律。」試論述本條立法例採「準用」之方式，而非一體「適用」，其立法理由為何？試舉例說明可「準用」，其他法律之規定為何？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0506&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0506&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "113-少年事件處理法-3",
@@ -1766,7 +1810,9 @@ window.LawScoringData = {
     "把塗銷理解為銷毀。"
    ],
    "body": "校園發生國中學生遭同校學生刺死案，引發被害人家屬提出廢除少年前案塗銷紀錄等訴求。試問少年事件處理法引入有關少年前案塗銷之規定，立法意旨為何？目前可能修正之動向為何？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0506&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0506&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "113-少年事件處理法-4",
@@ -1840,7 +1886,9 @@ window.LawScoringData = {
     "漏掉強制輔佐。"
    ],
    "body": "15 歲少年甲與 13 歲少年乙，共同基於不法所有意圖，分持西瓜刀、鋁棒至巷口之超商內，以刀架住店員脖子之方式，至使店員無法抗拒，而強取收銀機內之現金新臺幣一萬餘元。試問少年法院（庭）對少年甲與少年乙應如何進行後續程序？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0506&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0506&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "114-少年事件處理法-1",
@@ -1913,7 +1961,9 @@ window.LawScoringData = {
     "結論模糊，沒有明確回答基準時點。"
    ],
    "body": "少年刑事案件之某甲假釋後付保護管束，假釋期間，因其成年後另涉性侵害案件而經法院定應執行刑確定，並經法務部重新核准假釋在案，嗣經地方法院裁定假釋中付保護管束，保護管束期間因而延長。請說明某甲前案紀錄認定塗銷之時間應以少年刑事案件保護管束期滿，抑或定應執行刑後保護管束期滿為基準？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0507&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0507&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "114-少年事件處理法-2",
@@ -1985,7 +2035,9 @@ window.LawScoringData = {
     "沒有交代不公開原則的目的。"
    ],
    "body": "少年保護事件審理時，對於那些人得在場及得不令在場，請分別依少年事件處理法相關規定說明之。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0507&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0507&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "114-少年事件處理法-3",
@@ -2060,7 +2112,9 @@ window.LawScoringData = {
     "漏掉丙已滿 20 歲的特殊程序。"
    ],
    "body": "少年甲 10 歲、乙 12 歲、丙 14 歲，三人於 2019 年共同竊盜一輛機車，迨 2025 年三人均被查獲時，甲已滿 16 歲、乙已滿 18 歲、丙已滿 20 歲，請說明甲、乙、丙三人是否均須移送少年法院（庭）。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0507&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0507&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "114-少年事件處理法-4",
@@ -2136,7 +2190,9 @@ window.LawScoringData = {
     "沒有回答同時查獲時如何處理。"
    ],
    "body": "請問少年甲先後施用第二級毒品依托咪酯及第三級毒品愷他命，兩行為均被警方同時查獲後，警察應如何移送處理？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0507&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0507&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "115-少年事件處理法-1",
@@ -2231,7 +2287,9 @@ window.LawScoringData = {
    "srcLabel": "法源（已核對現行法）",
    "year": 115,
    "body": "2019 年修正少年事件處理法，乃為呼應司法院釋字第 664 號解釋及兒童權利公約保護兒童及少年之意旨，縮減原有曝險事由範圍且去除其虞犯之身分標籤，改以關注其是否處於犯罪邊緣而曝露於危險之中事由，而有調整保護必要作為是否由司法介入條件，並以「曝險少年」稱之，且繼而建置少年輔導委員會行政輔導先行機制。試論述少年輔導委員會在處理曝險少年時，應兼具之主要角色功能為何？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0507&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0507&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "115-少年事件處理法-2",
@@ -2316,7 +2374,9 @@ window.LawScoringData = {
     "把急迫情況擴張適用到詢問陪同。"
    ],
    "body": "員警乙偵辦某件擄人勒贖案，發現 16 歲少年甲涉有重嫌。某日欲前往甲住處查訪時，發現甲攜帶行李欲遠行，經員警乙表明身分後甲仍企圖離開現場。員警乙認情況急迫，便當場將甲帶回分局偵辦，且在未通知甲之法定代理人或其他適當之人到場，即對甲進行詢問。試依少年事件處理法及相關程序法規，論述本案員警乙處理之適法性？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0507&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0507&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "115-少年事件處理法-3",
@@ -2387,7 +2447,9 @@ window.LawScoringData = {
     "立法理由沒有連結國際規範。"
    ],
    "body": "我國少年事件處理法之修正增訂第 18 條之 8，規定對少年原則上不得使用約束工具，除非有使用約束工具之必要。試論述現行少年事件處理法對於可使用約束工具之要件及其立法理由為何？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0507&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0507&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "115-少年事件處理法-4",
@@ -2461,7 +2523,9 @@ window.LawScoringData = {
     "忽略家庭功能不彰的福利介入。"
    ],
    "body": "13 歲少年因家庭功能不彰，常在外流蕩，以致施用 K 他命（或稱愷他命）成癮，某日在公園內施用 K 他命為警查獲。試問法令上對 13 歲少年施用 K 他命，如何進行後續程序處理？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0507&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0507&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "108-刑法-1",
@@ -2535,7 +2599,9 @@ window.LawScoringData = {
     "另論拋下廠房的背信或勞基法問題，偏離題目。"
    ],
    "body": "彰化市民甲為廣東深圳市之臺商，因逢美中貿易所生之關稅摩擦，工廠產品滯銷致周轉不靈，為支付積欠工人之薪資，竟摹擬仿真製作面額分別為 20、50 及 100 圓之人民幣各一批，並持以充作薪資交付予不知情之員工。翌月，甲自知即將東窗事發，乃斷然拋下深圳之廠房及設備急忙返臺。試問：甲之行為應如何處斷？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0601&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0601&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "108-刑法-2",
@@ -2613,7 +2679,9 @@ window.LawScoringData = {
     "沒有說明治療半年是否屬重傷。"
    ],
    "body": "甲心儀某酒店公關小姐乙，陸續砸大錢苦苦追求，卻僅換得乙之冷嘲熱諷，報復心驅使下，甲明知自己染有淋病，竟於某夜持萬能鑰匙開啟乙住處大門，進入臥室趁其酒醉不醒之際對乙為性交。就此，乙原僅身感不適而未知緣由，就診皮膚科後方知染上性病，至少須持續治療半年始可痊癒，經調閱監視器發現甲之行徑後，憤而報警提告。試問：甲應為其所為負何刑責？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0601&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0601&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "108-刑法-3",
@@ -2687,7 +2755,9 @@ window.LawScoringData = {
     "忽略乙的超速失控對歸責的影響。"
    ],
    "body": "甲酒駕經緩起訴處分確定後，某夜，眾多酒友為其設宴慶祝，宴畢，甲自認飲酒已作節制，雖有微酣感但應不致超標，遂不聽友人勸告駕車上路。途中，逢大雨視線不良，甲因專心於察看有無酒測攔檢致疏未開啟車前大燈，對向駕車之乙急於返家超速疾駛（速限 70 公里／小時，乙車速逾 1 百公里），由於路面多處嚴重積水，乙車打滑失控衝過雙黃線而闖入甲車車道，甲來不及反應之際兩車已然對撞。乙當場死亡，甲則重傷於駕駛座上，經警員酒測，甲吐氣所含之酒精濃度為每公升 0.35 毫克。試問：甲上述之酒駕肇事行為應如何處斷？（本案有關車輛之沒收與否無須討論）（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0601&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0601&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "108-刑法-4",
@@ -2764,7 +2834,9 @@ window.LawScoringData = {
     "漏掉兒少權法第 112 條加重。"
    ],
    "body": "丁為富二代之 17 歲少年，因父親罹癌住院，每日憂心不已而守候徘徊於癌症病房外，甲、乙（均成年）與 16 歲之中輟生丙，平日游手好閒，\n三人以偷騙維生，見丁無知可欺，乃輪番遊說，誆稱有治癌神效之牛樟芝萃取液，可廉價售予丁，丁雖欠缺醫藥專業知識，惟聽聞牛樟芝之報導，因心繫父親病況，信以為真，乃承諾以 30 萬元購買甲等所售予之特效藥一箱。事實上，甲、乙、丙三人所交付者為浸泡白蘿蔔之發酵液體，無絲毫功效可言，由於丁係以 ATM 轉帳方式付款，因輸入帳號時發生錯誤，雖已完成出帳程序卻將款項轉入某第三人帳戶中，甲、乙、丙則未取得分文。試問：甲、乙、丙之刑責如何？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0601&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0601&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "109-刑法-1",
@@ -2840,7 +2912,9 @@ window.LawScoringData = {
     "把奪回自己財物論以強盜。"
    ],
    "body": "甲、乙兩人為健身房教練，某日甲走進員工休息室，發現乙偷偷用萬能鑰匙打開甲的置物櫃，並將置物櫃內的皮夾拿走，在乙關上置物櫃之際，甲大聲吼叫「你偷拿什麼東西？」乙嚇了一跳拔腿就跑。甲從後追乙，在追上乙時立刻撲上去，將乙撲倒，乙反手抵抗，甲隨手拿起手邊的啞鈴朝乙的手臂打下去，造成乙的手臂骨折，甲在乙疼痛無法行動時，奪回自己的皮夾。試問甲之行為如何論罪？（25分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0601&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0601&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "109-刑法-2",
@@ -2918,7 +2992,9 @@ window.LawScoringData = {
     "漏掉加重強盜的事由。"
    ],
    "body": "甲男、乙女兩人曾經為鄰居，某日夜間甲侵入乙家偷竊，於翻箱倒櫃之際，驚動了乙，甲遂持螺絲起子攻擊乙，乙被打到頭部而陷入昏迷，甲繼續找尋財物，後來在抽屜中發現10萬元現金，甲在離去前，見乙仍昏迷，竟起意性侵（性交）乙得逞，然後拿走現金離去。乙清醒後，向警察報案。試問，甲之行為如何論罪？（25分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0601&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0601&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "109-刑法-3",
@@ -3006,7 +3082,9 @@ window.LawScoringData = {
     "沒有區分故意重傷與傷害致重傷。"
    ],
    "body": "甲男凌晨時分開車回家，遇到警察乙臨檢執行酒測。乙攔下甲車，要求甲吹氣進行酒精濃度檢驗。甲認為自己只吃了薑母鴨，沒有喝酒，竟被警察攔下而心生不爽，拒絕接受測試。乙見甲拒絕酒測，立即開啟攝影機要進行錄影蒐證，甲見狀，憤而動手毆打乙的臉部數拳，孰料乙的左眼亦遭揮擊受傷，經治療後，左眼視力僅存0.1，且僅能視及眼前50公分內景物。試問甲之行為應如何論罪？（25分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0601&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0601&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "109-刑法-4",
@@ -3082,7 +3160,9 @@ window.LawScoringData = {
     "丙的身分犯參與沒有引用第 31 條。"
    ],
    "body": "甲男為某市政府負責新建焚化爐工程招標案之公務員，A 廠商負責人乙為了得標，遂找機會認識甲，並帶甲前往酒店接受性招待。性招待完畢後，乙提出將給付甲新臺幣30萬元，以事先得知工程底價、評選委員名單與其他廠商的競價企劃內容。甲男心動，告知女友丙此情，並請求丙代為聯繫乙，且透過丙收受現金30萬元，再由丙將裝有底價、評選委員名單與其他競價廠商企劃內容之信封交給乙。試問甲、丙之行為應如何論罪？（25分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0601&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0601&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "110-刑法-1",
@@ -3159,7 +3239,9 @@ window.LawScoringData = {
     "沒有處理行使與詐欺的競合。"
    ],
    "body": "甲為遊覽車業者，明知在疫情期間因無營業，公司員工 A、B、C 均已離職，竟未經前開三人之同意，任意剪貼影印前所取得派車單內前開三人之身分證影本，並盜刻其印章，蓋於自行製作之在職證明及靠行合約書上，以證明三人尚任職於該公司，向政府機關申請紓困補助，經政府機關審核通過後撥下補助款。一週後甲聽聞政府即將解封，可以出團，遂向好友乙借了五十萬元。乙惟恐無憑證，便製作內容無虛假（借款時間、金額、償還日期均如實）之借貸契約，並模仿甲的簽名。請問甲、乙之行為是否成立犯罪？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0503&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0503&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "110-刑法-2",
@@ -3244,7 +3326,9 @@ window.LawScoringData = {
     "對 A 另論殺人未遂造成重複評價。"
    ],
    "body": "甲因女友乙遭前男友 A 跟蹤騷擾而氣憤不已，乙為證明自己與 A 無瓜葛，唆使甲教訓痛打 A 一頓，不料甲與 A 見面時，見 A 開名車戴名錶，打消打 A 之念頭，反而恐嚇 A 交付十萬元作為賠償，否則將向 A 公司上級檢舉 A 性騷擾乙一事。A 為息事寧人，將錢交付予甲，但心仍有未甘，天天打電話騷擾乙。乙找來甲交待甲一定要依其指示殺了 A。某日甲持改造式手槍埋伏在 A 上班地方樓下電梯口，打電話約 A 下樓，俟電梯門一開步出一人，甲以為是 A 就開槍，未料是其他樓層的人先走出電梯而中槍，幸緊急救護未死，A 也毫髮無傷。請問甲、乙之行為如何論斷？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0503&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0503&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "110-刑法-3",
@@ -3319,7 +3403,9 @@ window.LawScoringData = {
     "漏掉配偶頂替的減免規定。"
    ],
    "body": "甲遇紅燈停車，遭後方未保持適當距離之乙騎摩托車撞上，甲車並無大礙，但乙因車輛倒地雙腿擦挫傷，路人 A 見狀迅速打電話叫警察及救護車，甲認為不是自己之問題，且為了趕上班，心想乙已有人救助，未等待警方到場處理，並未獲得乙同意，也未留下日後可供聯繫之資料，即逕自離開現場。警察 B 到場後聞到乙滿身酒氣，測得其呼氣酒測值為0.23，又見其無法走直線，語無倫次，遂移送地檢署。B 根據路人拍攝涉嫌甲之車牌後循線找到甲之住處，甲不在家，甲妻丙以為甲闖禍，向 B表示當天開車者是她，B 遂將丙移送地檢署。試問甲、乙、丙之行為依刑法如何評價？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0503&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0503&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "110-刑法-4",
@@ -3393,7 +3479,9 @@ window.LawScoringData = {
     "把延燒鄰居論為數罪。"
    ],
    "body": "甲、乙為男女朋友，因分手爭吵。甲打電話到乙家告訴乙之母親，限當天乙出面解決，否則放火燒乙家。乙置之不理，甲遂將自家瓦斯桶拉到乙家公寓樓梯間，大喊要乙一起玉石俱焚，以瓦斯管將液化石油氣從前陽臺導入乙房子內，待液化石油氣蓄積瀰漫房間達爆炸界限，即於房門附近，以打火機點火引爆液化石油氣，瞬間產生氣爆並引發火勢，窗戶玻璃受氣爆產生之壓力波及而破碎損壞，家具燒燬，並波及樓上鄰居房屋，幸因民眾發現瓦斯氣爆旋即報案，經消防隊趕赴現場及時撲滅火勢，人員無傷。請問甲之行為如何論斷？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0503&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0503&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "111-刑法-1",
@@ -3467,7 +3555,9 @@ window.LawScoringData = {
     "直接以違反規定就論罪，不談歸責。"
    ],
    "body": "甲擔任 A 市政府環境保護局 B 區清潔隊隊員，負責駕駛資源回收車。行為當日，甲駕駛資源回收車搭載同區清潔隊隊員乙進行資源回收，在收集完起點的資源回收物之後，甲即駕車搭載乙前往下一個預定的回收地點。依清潔隊工作安全相關規定，收集資源回收物品時，除車廂以外不得載人，收集資源回收物完畢後，清潔隊員應進入資源回收車廂內乘坐，且於車輛行駛期間不得站立於車後踏板上。乙為便宜行事，乃循其與甲歷來工作之慣行，不進入車內卻攀附站立後車廂後方之車後踏板上，並且大聲叫甲快點開車，不然會來不及。甲雖從後照鏡看到乙攀附站立於後車廂後方踏板上，但仍將車輛駛向下一預定地點。途中於狹窄路段會車及轉彎時，乙因車輛晃動與離心力影響，從所站踏板上跌落，頭部嚴重撞擊地面，雖經送醫，仍因顱內出血不治死亡。試問：依照我國現行刑法規定，甲之行為應如何論罪？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0503&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0503&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "111-刑法-2",
@@ -3543,7 +3633,9 @@ window.LawScoringData = {
     "漏掉誤想防衛。"
    ],
    "body": "甲常於所住社區餵流浪狗，所經之處均有流浪狗成群跟隨，但也因狗群排泄物造成環境髒亂，附近居民對甲均十分不滿。其中，賃居附近的大學生乙更曾數次在甲餵狗群時與甲發生嚴重口角，每次均幾乎與甲互毆，幸賴旁人勸阻而未釀更嚴重衝突。甲之後乃於餵流浪狗時攜帶球棒防身。行為當日晚間，乙自外騎機車返租屋處，持機車大鎖正欲鎖車，又見甲在餵流浪狗，乃上前痛斥並要甲快滾。甲大怒，高舉球棒大吼要乙走開。此時乙因認甲持球棒可能傷害自己，也要甲放下球棒，並快步上前靠近甲，徒手欲奪球棒。甲見乙伸手欲奪球棒，同時又看到乙另一手持機車大鎖，且想起先前數次吵架積怨，乃持球棒使盡全身力氣對乙頭部重擊一次，乙因此立刻倒地不起。乙受重擊後頭部骨折、顱內也大量出血，經送醫始免一死。試問：依我國現行刑法規定，甲之行為應如何論罪？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0503&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0503&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "111-刑法-3",
@@ -3606,7 +3698,9 @@ window.LawScoringData = {
     "討論出境未遂，但甲已打消念頭。"
    ],
    "body": "A 國籍的國際知名演員甲女與我國籍知名演員乙男在民國（以下同）107年 1 月以盛大婚禮結婚後定居我國，並於同年 12 月生一女丙。甲與乙均對丙疼愛有加。然甲與同住之乙之父母、姊妹因語言和文化差異屢在溝通上摩擦衝突，同時也無法適應我國氣候與社會，且因 109 年起發生新冠疫情後，甲長期無法回 A 國探親，極為想念家鄉親友。111 年 1 月間，甲因故與乙大吵後，趁乙及其家人外出購物時，帶丙離開住所投宿同國籍朋友住處。甲原本考慮購買機票帶丙離境前往 A 國，但是隔日在原生家庭家人及朋友勸說下很快打消念頭，並將自己與丙所在與聯絡方式通知乙，與乙保持分居狀態大約 2 個月。此一期間，乙雖無法與甲、丙見面，但是可打電話或以視訊方式與丙通話。其後甲、乙進行離婚訴訟，乙乃對甲逕自帶丙投宿友人家，不使其與丙見面的行為提起告訴。試問：依我國現行刑法規定，甲之行為應如何論罪？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0503&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0503&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "111-刑法-4",
@@ -3681,7 +3775,9 @@ window.LawScoringData = {
     "沒有判斷詐欺的財產損害。"
    ],
    "body": "甲並無擔任藝人經紀人的任何經驗與能力，民國（以下同）110 年 1 月見 A 國籍藝人乙男隻身到我國發展，並在網路上徵求經紀人，甲乃以一人分飾經紀團隊多名成員之方式透過網路聯絡、接近乙。甲以自己名義出面與乙相見並熟識後，進一步使乙誤認未曾謀面之其他各個實際上由甲扮演之角色可助其在我國演藝圈發展，乃與甲簽訂經紀契約，約定由甲擔任乙之經紀人。其後，甲為進一步對乙之行為加以操控，於 110 年3 月得知乙與一般女性交往後，乃透過甲扮演之經紀公司員工「丙」聯絡乙，且以要乙對公司效忠為由，要求乙依指定之姿勢、角度與性器反應，拍攝裸露性器的自慰影片，再將影片檔案存於隨身碟交付甲，由甲轉交公司高層。「丙」並揚言若乙不從，將對其演藝活動全面封殺。乙為求在我國演藝圈發展，無奈僅能依上述指示拍攝影片，並將檔案存於隨身碟交付甲。其後乙因演藝事業全無進展，乃報警處理。試問：依我國現行刑法規定，甲之行為應如何論罪？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0503&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0503&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "112-刑法-1",
@@ -3756,7 +3852,9 @@ window.LawScoringData = {
     "漏掉聚眾鬥毆致死的規定。"
    ],
    "body": "甲因與某夜店保安 A、B 發生衝突感覺受辱，乃透過不在場之司機乙以電話聯絡甲之員工丙到場為甲出氣。接獲通知後，丙自行決定以通訊軟體糾集甲、乙均不認識之網友到場助陣，網友們經輾轉通知約 10 餘人到場。不知何原因丙突然以現場之不鏽鋼立柱攻擊 A、B，致 A、B 受傷。甲與其餘在場 10 餘人見狀，群情激動，與夜店內之其他多名保安人員爆發多波肢體衝突，到場處理之警員 C 在混亂中傷重死亡。試分析甲、乙、丙之刑事責任。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0503&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0503&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "112-刑法-2",
@@ -3834,7 +3932,9 @@ window.LawScoringData = {
     "沒有處理甲提供證件的共犯責任。"
    ],
    "body": "甲與乙為婚外情男女朋友。乙每日通勤上班均購買鐵路局員工眷屬優惠之半價車票。某日經列車長丙查票，乙遂出示甲交給她的員工通勤乘車證、工作證影本予丙查驗，並謊稱其為甲之配偶 A，並在空白紙張上書寫 A 之個人資料及署名。甲為掩護乙之真實身分，於警局製作警詢筆錄時，謊稱：「我將鐵路局員工通勤乘車證、工作證影印交給我老婆 A 使用，因 A 不慎遺失，而遭人撿走冒用 A 身分，我不知道是何人冒用。」試分析甲、乙刑事責任。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0503&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0503&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "112-刑法-3",
@@ -3910,7 +4010,9 @@ window.LawScoringData = {
     "甲第一次唆使驗傷（未成功）是否另成罪沒有處理。"
    ],
    "body": "甲之妻 A 攜帶兩名幼子到甲與其婚外情對象乙共同租屋處找甲，然在該租屋門口遭甲之友人丙阻攔。事後甲、乙看見丙手上有舊傷，雖知 A 幾無出手抓傷丙之可能，仍共同心生陷害 A 之故意，先由甲唆使丙到醫院驗傷。由於醫院拒絕開具診斷證明書，甲臨時決定再唆使丙用電腦軟體自行製作診斷證明書。之後，由乙偕同丙到某警察局申告 A 抓傷其手臂，提出傷害罪告訴。心有不安的丙在 A 收到警局通知書詢問案情前即撤回傷害罪告訴。試分析甲、乙、丙之刑事責任。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0503&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0503&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "112-刑法-4",
@@ -3986,7 +4088,9 @@ window.LawScoringData = {
     "把人格特質當成減輕責任事由。"
    ],
    "body": "甲有部分反社會人格特質，但未達反社會人格疾患診斷標準，在適當環境中，仍能維持一定自我控制力遵守規範。某日，甲在路上看到 A 年邁可欺，決定要洗劫 A。當甲把 A 踹倒搶走 A 的小皮包後，失望的發現皮包內空無一物。為了洩憤，數度以腳踹擊 A 的頭部和臉部，也對 A 身體進行數次踩踏，並吐口水。直到被路人發現，甲才停止對 A 的襲擊。最後 A 傷重送醫不治死亡。試分析甲之刑事責任。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0503&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0503&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "113-刑法-1",
@@ -4072,7 +4176,9 @@ window.LawScoringData = {
     "把乙論為間接正犯。"
    ],
    "body": "船長甲駕駛我國籍遠洋漁船至公海上作業，船員 A 因操作起網機致漁網嚴重破損而遭甲責罵，甲也發現值班中的 A 在船艙內喝酒，經勸導而起爭執，甲怒斥 A：「下次看見喝酒，殺了餵魚！」，乙則在一旁竊喜。某日，不懷好意的乙趁甲午睡時將空酒瓶放在桌上，製造 A 喝酒的假象，甲睡醒後認為 A 又於值班時喝酒，當場怒不可遏而起殺機，A 見甲持槍，遂抱浮球躍入海中，甲見狀駕船衝撞 A，欲置其於死地，但湧起的波浪卻將浮球沖開，致無法直接撞及。甲知道附近沒有其他船隻，A 無獲救希望，仍駕船離去，A 死於海上。試問甲、乙的刑責為何？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0502&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0502&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "113-刑法-2",
@@ -4147,7 +4253,9 @@ window.LawScoringData = {
     "把剝奪行動自由與擄人勒贖重複評價。"
    ],
    "body": "A 女將賓士車違停在路邊，想到後面的土地公廟拜拜即回來，讓八歲的兒子 B 留在車上等待，在汽車沒有熄火與上鎖下就下車。甲此時路過觀察，發現車門可打開，立刻坐上車開走，才發現坐在後座的 B 專心低頭滑手機，竟以活埋恐嚇 B 配合，此時心想不如撈一筆，遂將車開到產業道路，逼 B 說出父母的手機號碼，撥打電話給 A，要 A 準備新臺幣（下同）500 萬現金並依指示放在某定點，否則準備收屍。A 報警，在家屬要求甲降低金額時，承辦的警員乙財迷心竅，打電話給 A 且訛稱歹徒，表示願意將金額降為 100 萬元，告知更改置放現金的地點。在家屬未交付任何現金前，甲獲知警察已介入調查，於是將 B 載至人煙稀少處再趕下車，B 安全回到家。依刑法規定，甲、乙的刑責為何？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0502&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0502&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "113-刑法-3",
@@ -4223,7 +4331,9 @@ window.LawScoringData = {
     "把飆車論以酒駕或其他不相干條文。"
    ],
    "body": "甲是賽車迷，所屬的自用小客車因交通違規遭吊扣，看見 A 於社交軟體張貼製作假車牌之廣告，即透過通訊軟體與 A 聯繫，以新臺幣 1 萬 2 千元之代價要求 A 偽造兩面其指定的車牌號碼，再將偽造車牌懸掛於上述自用小客車之車身。某日，甲邀乙等共四人於凌晨開車競速，沿路燃放煙火取樂，並以前後或併排或逆向飆車之方法，超速競駛於供公眾往來通行之道路上，乙因為車速過快失控自撞電線桿，猛烈撞擊導致車體零件散落一地，終因傷重不治死亡。試問甲的刑責為何？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0502&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0502&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "113-刑法-4",
@@ -4300,7 +4410,9 @@ window.LawScoringData = {
     "沒收沒有討論比例原則。"
    ],
    "body": "甲於晚上與友人喝酒餐聚，回家後倒頭大睡，睡了 6 小時後起床聽聞 A想搭臺鐵北上，自告奮勇稱願意開車搭載 A 前往車站，途中超車駛入對向車道，卻不慎擦撞迎面而來的騎士 B 女，B 人車倒地。甲下車看見 B僅受皮肉傷且能自行站立扶起機車，因趕著送 A 到車站，即匆忙開車離開，回到家時看見警察已在門口等候，警察對甲實施酒測，測得吐氣酒精濃度值為每公升 0.28 毫克。數日後，B 因腦部受創出現植物人狀態，甲在庭上辯稱：事發前晚有喝酒，但睡醒後沒有任何宿醉感或頭昏現象，且當下僅看見 B 受輕傷。試問甲的刑責為何？甲駕駛的車輛是否得沒收之？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0502&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0502&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "114-刑法-1",
@@ -4392,7 +4504,9 @@ window.LawScoringData = {
    "srcLabel": "法源（已核對現行法）",
    "year": 114,
    "body": "甲於網路上販售一款宣稱有減肥功效的軟糖，有些消費者反映食用後身體不適，甲仍繼續販賣。在朋友乙推薦下，丙購買一盒放置在客廳茶几上。某日，丙外出，委託乙照顧丙 6 歲兒子 A。在乙未注意下，A 大量食用該軟糖。A 食用後逐漸出現呼吸困難與抽搐等急性中毒症狀。乙見此狀，因害怕被追究責任迅速離去。數小時後，丙回家發現 A 倒臥在地，緊急送醫後，A 仍不治死亡。法醫鑑定表示，依據現有醫學證據，若能即時給予適當醫療處置，A 死亡結果發生的風險將顯著降低。試依據中華民國刑法之規定分析甲、乙前述行為可能涉及的刑事責任。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0503&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0503&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "114-刑法-2",
@@ -4469,7 +4583,9 @@ window.LawScoringData = {
     "丙的境外外國人適用沒有引用第 8 條。"
    ],
    "body": "甲在泰國發送預錄的網路語音電話，假冒檢察官向臺灣境內的居民謊稱其銀行帳戶涉及洗錢，要求將資金轉移到安全帳戶以進行資金清查。短時間內，已有多名受害人受騙。甲詐騙時所使用的受害者個人資料是由16 歲高中學生乙，以論件計價的方式販賣給甲。乙雖擅長透過資訊安全漏洞從網路上取得他人個人資料，但對於該詐騙系統的具體運作方式並不十分清楚。丙為居住於美國的美國公民，被甲聘用處理金流，購買國外加密貨幣以隱匿甲犯罪所得流向。試依據中華民國刑法分析甲、乙、丙前述行為可能涉及的刑事責任。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0503&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0503&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "114-刑法-3",
@@ -4544,7 +4660,9 @@ window.LawScoringData = {
     "把乙的引介直接論為收賄。"
    ],
    "body": "某市環保局局長甲與任職該市勞工局的妻子乙育有一子 A。B 公司負責人丙向甲承諾協助其子 A 免試進入該市某明星私立高中就學，並提供 A獎學金，以換取甲協助 B 公司於某水源保護區大飯店開發案之環評順利通過。甲指示下屬降低水質保護的考量，使 B 公司開發案順利通過環評審查。甲也與乙商量，利用乙個人人脈為丙引介該市主管旅館業的觀光局官員認識，藉此讓 B 公司順利取得旅館業登記證。試依據中華民國刑法分析甲、乙、丙前述行為可能涉及的刑事責任。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0503&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0503&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "114-刑法-4",
@@ -4632,7 +4750,9 @@ window.LawScoringData = {
     "沒有討論 C 死亡的歸責。"
    ],
    "body": "約十餘名幫派分子聚集於一間座落於市區交通樞紐道路旁的夜店門口，在甲命令下叫囂、占據車道，以及阻擋出入口，致使該夜店與周邊商家的顧客驚恐走避。見到警方到場後，甲反而透過網路直播號召更多人前來圍堵警車與推倒交通錐。警員 A 在維持交通秩序時，遭幫派分子乙揮拳擊中臉部，導致其鼻樑流血，其他幫派分子鼓譟說：「打得好！就該這樣！」面對被群眾阻塞的車道，急著送哮喘孩童 B 就醫的丙，以及急著趕時間出國搭機的丁、戊三人共同決意開車衝入人群，強行開闢一條通路。未料，丙車被攔下，丙、丁、戊因執意通行，隨即與甲、乙等幫派分子爆發激烈肢體衝突，混亂中被捲入群毆的路人 C，於參與群毆時受到驚嚇，導致心臟病發死亡。試分析甲、乙、丙、丁、戊前述行為可能涉及的刑事責任。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0503&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0503&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "115-刑法-1",
@@ -4721,7 +4841,9 @@ window.LawScoringData = {
     "論甲毀損罪。"
    ],
    "body": "甲覬覦 A 家中某一名貴花瓶，某日得知乙承攬 A 家中的清潔工作，甲以科技工具生成 A 委託甲維護該花瓶的資料，甲將該資料交給乙，並約定乙須在三日內將該花瓶交付甲以完成 A 交辦事項。乙半信半疑，但仍按甲指示在期限內將花瓶交給甲。事實上 A 在乙到住家清潔時，總會將名貴花瓶的真品藏起來，在屋內擺放的只是仿造的膺品，沒有什麼價值。乙將花瓶的膺品交給甲後，甲也未詳查，將花瓶放置於車後行李箱，不料在開車途中，甲被後車追撞，花瓶碎裂，試問甲、乙的行為依刑法如何論處？（35 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0503&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0503&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "115-刑法-2",
@@ -4796,7 +4918,9 @@ window.LawScoringData = {
     "漏掉「已盡力防止」的中止規定。"
    ],
    "body": "甲想殺 A，將 A 對大豆有致死過敏性休克風險之資訊告知 A 的管家乙，並唆使乙將 A 除去。某日乙在烹煮完畢後，果然將大豆磨成粉末置入 A的餐飲中，乙的行為被 A 的配偶丙發現。但丙為早日取得 A 的財產，竟沒有任何阻止乙的行為。直至 A 因食物過敏痛苦不堪，丙心生悔意，開車載 A 赴醫，不料在赴醫途中於停等紅燈時，後車因剎車失靈，追撞丙車，A 在後座被該肇事車輛夾擊，當場死亡。試問甲、乙、丙的行為依刑法如何論處？（35 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0503&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0503&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "115-刑法-3",
@@ -4871,7 +4995,9 @@ window.LawScoringData = {
     "漏掉重製的加重規定。"
    ],
    "body": "甲與 A 為戀人，甲平日喜歡將兩人的性行為過程，在 A 不知情的情形下，攝影留存，供自己觀看。某日甲在攝錄時，為 A 發現，甲於是將過往攝錄兩人性行為的影片全部交出給 A 觀覽，A 抱怨自己的身形不美卻被甲拍下來，甲聽後選出一個影片檔案，其餘皆在 A 的面前刪除，且保證沒有備份資料。甲在該僅存的影片，將兩人的頭像分別加工為知名動漫人物，並刻意將 A 的身形以軟體程式修飾成極端完美比例後，將影像傳給 A，A 將該加工的影片存放於自己的電腦。某日甲使用 A 的電腦時，突然想看該加工影片，經 A 告知檔案解密密碼後，甲未告知 A，將該影片存入自己的隨身碟，試問甲的行為依刑法如何論處？（30 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0503&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0503&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "108-刑事訴訟法與保安處分執行法-1",
@@ -4952,7 +5078,9 @@ window.LawScoringData = {
     "漏掉緊急搜索與事後陳報。"
    ],
    "body": "某分局員警甲與乙接獲線報在丙民宅家中有人聚眾賭博，遂前往查緝並當場查獲證物賭具及賭資 5 萬多元，員警未於實施後 3 日內報告該管檢察署檢察官及法院。檢方偵辦之後，認為民宅主人丙有抽頭行為，依賭博罪嫌將丙及其他賭客起訴。法官在審理時發現員警甲與乙在無搜索票情況下，就直接進行搜索，事後在分局內才要求丙簽下「自願搜索同意書」，試問：（一）無票搜索的種類包含那些？（10 分）（二）員警甲與乙在無票搜索情形下，事後要求丙簽署「自願搜索同意書」的行為是否合法？（5 分）（三）若是員警查獲證物為手槍 2 把及子彈 10 發而非賭具及賭資，乃屬案情重大者，但因係違法搜索取得的證據，法院是否一概不得採為證據？（10 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0611&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0611&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "108-刑事訴訟法與保安處分執行法-2",
@@ -5023,7 +5151,9 @@ window.LawScoringData = {
     "忽略對質詰問權。"
    ],
    "body": "我國與泰國雖然沒有簽署刑事司法互助協定，但是我國刑事警察局與泰國警方通力合作，在曼谷破獲以臺灣人為主的詐騙機房，主要是假冒電信局及公安詐騙臺灣與大陸民眾，全案經泰國的司法單位已經偵查完畢，將臺籍犯嫌交由我國警方押解回臺繼續偵審。試問：（一）何謂傳聞法則？（5 分）（二）被告以外之人在泰國警察機關詢問時所為陳述，能否依我國刑事訴訟法傳聞法則例外相關規定，判斷有無證據能力？（20 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0611&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0611&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "108-刑事訴訟法與保安處分執行法-3",
@@ -5093,7 +5223,9 @@ window.LawScoringData = {
     "漏掉負責處理的主體。"
    ],
    "body": "保安處分執行法第 26 條規定於民國 100 年 1 月 10 日修正及同年 3 月 8 日施行，對於執行完畢之受處分人應於「執行完畢之次日午前釋放」修正為「應於執行完畢之當日午前釋放」。（一）試問其立法修正理由為何？（10 分）（二）對於釋放之受處分人保護事項之預行策劃與酌給內容為何？（15 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0611&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0611&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "108-刑事訴訟法與保安處分執行法-4",
@@ -5163,7 +5295,9 @@ window.LawScoringData = {
     "沒有提出逃匿時的正確處理方式。"
    ],
    "body": "甲為性侵害案件之假釋出獄人，假釋期間付保護管束，經執行檢察官依性侵害犯罪防治法第 20 條第 3 項規定，施以宵禁並輔以電子腳鐐，屢次違規，於保護管束期間再犯竊盜及毒品案經起訴後，某日以電話通知觀護人電子腳鐐脫落後即逃匿無蹤，檢察官以最速件報請撤銷假釋，惟撤銷假釋行政程序冗長，緩不濟急，檢察官恐其四處流竄，再犯性侵案件造成社會不安，促請警方協助追蹤。試問，保安處分執行法第 66 條所稱之「必要時，得限制受保護管束之人之自由」，應如何解釋及適用為適當？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0611&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0611&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "109-刑事訴訟法與保安處分執行法-1",
@@ -5242,7 +5376,9 @@ window.LawScoringData = {
     "漏掉科刑辯論。"
    ],
    "body": "檢察官以被告甲意圖販賣而持有第二級毒品安非他命的罪嫌提起公訴，案件經準備程序確認於審判期日進行之相關程序、步驟。其中，包括（A）調查甲被告偵查中的自白筆錄、（B）法官訊問甲被告案件經過、（C）檢辯雙方對甲被告進行交互詰問、（D）被告甲請求給予改過機會盼從輕量刑、（E）調查被告甲的前科、素行及相關經歷。試請說明依法前揭各項程序進行之順序及理由。（25分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0611&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0611&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "109-刑事訴訟法與保安處分執行法-2",
@@ -5315,7 +5451,9 @@ window.LawScoringData = {
     "漏掉可信性與必要性兩要件。"
    ],
    "body": "某被告甲性侵害犯罪經檢察官提起公訴，法庭審理中被告辯護人聲請傳喚被害人進行證據調查。然檢察官主張本件性侵害案件被害人於醫院驗傷時，於社工人員等陪同詳細描述受害經過並作成警詢筆錄，若於審理程序須再次重複陳述受害細節、揭露隱私等，恐對其身心形成鉅大煎熬與折磨。試問法庭審理就被害人的供述，應如何進行證據調查？（25分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0611&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0611&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "109-刑事訴訟法與保安處分執行法-3",
@@ -5385,7 +5523,9 @@ window.LawScoringData = {
     "把監護當成刑罰。"
    ],
    "body": "某法院審理殺人案件過程採納鑑定人意見，認被告犯罪時處於思覺失調症狀致不能辨識其行為違法，依刑法第 19 條第 1 項規定判決無罪，並依同法第 87 條第 1 項之規定，諭知令入相當處所施以監護之處分。若被告自認其身體健康、精神正常並無監護處分必要，試問被告可否就本件無罪判決提出訴訟救濟？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0611&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0611&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "109-刑事訴訟法與保安處分執行法-4",
@@ -5455,7 +5595,9 @@ window.LawScoringData = {
     "忽略簡易程序的程序保障。"
    ],
    "body": "甲酗酒成癮，某日酒後駕車遇警攔查，當場測得吐氣酒精濃度達每公升0.65 毫克而遭偵辦。甲於偵查中自白犯罪，且有酒精濃度測定紀錄，另依醫院評估已達酒精成癮依賴，故檢察官向該管第一審地方法院簡易庭聲請簡易判決處刑，並請求於刑之執行前令入相當處所施以禁戒。試問法院可否就禁戒處分逕以簡易判決處刑？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0611&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0611&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "110-刑事訴訟法與保安處分執行法-1",
@@ -5526,7 +5668,9 @@ window.LawScoringData = {
     "沒有補償被告防禦權的措施。"
    ],
    "body": "強制性交犯罪之被害人 A 主張審判程序到庭接受詰問，將因身心壓力無法為完全之陳述，故要求以司法警察調查中之陳述筆錄作為證據（下稱警詢筆錄）。試問，為保障本案被告公平審判之基本權利，法院於審判期日應如何進行「警詢筆錄」之證據調查？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0518&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0518&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "110-刑事訴訟法與保安處分執行法-2",
@@ -5597,7 +5741,9 @@ window.LawScoringData = {
     "沒有說明相牽連案件。"
    ],
    "body": "甲夫、乙妻共同經營風景區民宿，甲夫為免遭受取締，關說公務員 A，盼 A 於寒、暑假旅遊旺季時不要取締，並約定依時節分兩次各交付新臺幣（下同）50,000 元。案經檢察官偵查終結，先就甲夫寒假交付 50,000元部分，以違背職務行賄罪提起公訴。然第一審審理過程，檢察官又以乙妻亦涉本項犯罪，追加起訴其違背職務行賄行為。法院審理結果認為甲夫寒、暑假兩次交付行為皆構成犯罪，但認為檢察官追加起訴乙妻部分有犯罪不能證明之情形。試問法院應如何諭知本項判決？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0518&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0518&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "110-刑事訴訟法與保安處分執行法-3",
@@ -5668,7 +5814,9 @@ window.LawScoringData = {
     "沒有提出較小侵害手段。"
    ],
    "body": "保安處分執行法第 25 條規定：「受處分人發受書信，應加檢查。書信內容有妨害保安處分處所紀律者，得分別情形，不許發受，或其刪除後，再行發受。」現受處分人甲預計出版個人人生體悟、隨想，擬將相關內容整理成書信寄給機構外之友人。試問保安處分執行機關實施書信檢查，以及相關「有礙紀律」不許發送或刪除的正當性？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0518&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0518&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "110-刑事訴訟法與保安處分執行法-4",
@@ -5739,7 +5887,9 @@ window.LawScoringData = {
     "忽略陳述意見與辯護權。"
    ],
    "body": "某甲犯強制性交罪在監執行，執行期間接受身心治療及輔導教育，惟經評估其犯罪狀況具固定行為模式，且多次鑑定再犯危險性皆偏向中高級。現檢察官向法院聲請對於某甲施以刑後強制治療，要求其於有期徒刑執行完畢後入相當處所，且至其再犯危險顯著降低為止，另執行期間應每年鑑定、評估有無停止治療之必要。試問強制治療的法律意義，以及法院裁定如何保障被告權益方符正當程序？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0518&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0518&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "111-刑事訴訟法與保安處分執行法-1",
@@ -5811,7 +5961,9 @@ window.LawScoringData = {
     "忽略救濟途徑。"
    ],
    "body": "甲參加友人慶生餐會、把酒言歡，心想隔日公司業務推廣行程仍需駕車拜訪客戶，故貪圖方便開車返家。途中，甲精神不濟擦撞對向來車，並撞斷電線桿，發出巨響。嗣後，路人打 110 電話報案，A 警前來處理聞到車內明顯怪味，疑甲有酒駕之嫌疑要求其接受吐氣酒精檢測。然而，甲假借各種理由拒絕配合酒測，若 A 警違反其意願將其移至醫療機構，藉由抽血採樣實施酒精濃度檢驗，試問：A 警就本項採檢應如何實施相關程序？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0517&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0517&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "111-刑事訴訟法與保安處分執行法-2",
@@ -5882,7 +6034,9 @@ window.LawScoringData = {
     "救濟途徑寫錯或沒寫。"
    ],
    "body": "被告甲因涉犯毒品案件經警逮捕到案，其委任 A 律師於警察詢問中陪同在場，並且勤作筆記。過程中，警察認為相關偵訊內容可能涉及他案偵辦以及他人隱私，乃要求 A 律師應交出筆記簿不准帶離。A 律師雖提出異議卻不被接受，見現場狀況「形勢比人強」則未再爭執，配合完成本項筆錄製作。稍後，A 律師不服本項筆錄製作，請說明理由其應如何進行救濟？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0517&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0517&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "111-刑事訴訟法與保安處分執行法-3",
@@ -5953,7 +6107,9 @@ window.LawScoringData = {
     "沒有討論「依檢察官指示」的問題。"
    ],
    "body": "甲與友人及 A 女於 KTV 包廂內飲酒唱歌，惟友人不勝酒力嘔吐於 A 女身上，甲見狀以協助為由跟隨 A 女進入洗手間，並藉 A 女酒醉矇矓誤其為男友而行猥褻行為。法院審理過程，甲誠心道歉、同意賠償，並承諾不再連絡 A 女等事項因而達成和解，另亦審酌其犯罪手段與情節，且為初犯亦無前科，因而諭知：「甲犯乘機猥褻處有期徒刑貳年，緩刑伍年。緩刑期內付保護管束，並應依檢察官之指示，於一定期限內向 A 女支付賠償金新臺幣叁拾萬元。」試問法院有關本項諭知賠償以及保護管束之適法性？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0517&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0517&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "111-刑事訴訟法與保安處分執行法-4",
@@ -6025,7 +6181,9 @@ window.LawScoringData = {
     "引用修法前「至再犯危險顯著降低為止」作為現行規定。"
    ],
    "body": "被告甲因強制猥褻罪，經法院判處有期徒刑 2 年，並令其入相當處所施以治療確定。現甲強制治療經執行完畢、復入監執行有期徒刑亦已屆滿，然甲經監獄治療評估會議認有再犯危險決議不通過，檢察官亦認有繼續治療之必要，法院乃未經詢問甲之意見隨即裁定繼續強制治療。請依據憲法正當性的說理，說明本項法院裁定之合法性以及強制治療應有的規範內涵？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0517&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0517&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "112-刑事訴訟法與保安處分執行法-1",
@@ -6087,7 +6245,9 @@ window.LawScoringData = {
     "把管轄錯誤寫成不受理。"
    ],
    "body": "甲為 A 保健食品公司代表人，明知由乙所拍攝之小草益生菌膠囊照片及所製成之廣告圖片，均屬乙享有著作財產權之著作，未經乙之同意或授權，不得重製及公開傳輸。詎甲在公司上網時看到乙之前開著作，遂加以重製並上傳至 A 公司網站，藉以行銷 A 公司之益生菌產品。甲之住居所在新竹市，A 公司設在桃園市，乙之住居所在臺中市，乙外出在臺南市上網瀏覽時發現 A 公司盜用其照片，擬對 A 公司及其負責人甲提出侵害著作權之告訴。請論述：（25 分）（一）何地之法院對本案有管轄權？（二）如乙就地向臺南地方檢察署提出告訴，檢察官應如何處理？如檢察官向臺南地方法院起訴，法院應如何處理？（三）如乙回到家後才向臺中地方檢察署提出告訴，檢察官應如何處理？如檢察官向臺中地方法院起訴，法院應如何處理？",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0518&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0518&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "112-刑事訴訟法與保安處分執行法-2",
@@ -6159,7 +6319,9 @@ window.LawScoringData = {
     "漏掉扣押的要件。"
    ],
    "body": "甲在其所經營之「丁丁書店」內，設有限制級書刊專區，在進入專區前有牌示寫著：「限年滿十八歲以上之會員進入」，專區書架上有部分漫畫書以透明塑膠封套套住，不讓人翻閱，封套上均貼有「限制，未滿十八歲之人不得租買」之字樣。某日有管區派出所警員乙身著便服喬裝顧客進入書店，走進限制級書刊專區，見有封套之漫畫書即予拆封數本翻閱，認其內容有客觀上足以刺激或滿足性慾，並引起一般人羞恥或厭惡感，屬猥褻書刊，遂將架上所有有封套之漫畫書均予查扣。嗣後警方以甲涉有刑法第 235 條第 1 項之公然陳列猥褻圖畫供人觀覽罪嫌，將案件移送地方檢察署偵辦，檢察官也根據查扣之猥褻漫畫書及其他證據對甲提起公訴。法院審理時，甲抗辯扣案之漫畫書係警察違法搜索所獲之證據，請論述：（25 分）（一）警員乙之行為是否爲搜索？是否合法？（二）查扣之漫畫書是否具有證據能力？",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0518&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0518&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "112-刑事訴訟法與保安處分執行法-3",
@@ -6229,7 +6391,9 @@ window.LawScoringData = {
     "漏掉「拘束人身自由」的要件。"
    ],
    "body": "甲因涉嫌重傷害未遂罪，經檢察官提起公訴。法院以甲罹有「思覺失調症」以及「酒精使用障礙症」，於實施犯罪行為時，確已因精神障礙致不能辨識其行為違法或欠缺依其辨識而行為之能力，依刑法第 19 條第 1 項規定，應屬不罰，而為無罪之諭知。又經評估後，法院以被告甲為預防被告未來因精神疾病影響而再為類似犯行，並避免因其疾病而對個人、家庭及社會造成難以預期之危害，且能使其獲得適當之治療處遇，並依刑法第 87 條第 1 項、第 3 項前段，刑事訴訟法第 301 條第 2 項規定，裁定令入相當處所，施以監護 4 年，以收個人治療及社會防衛之效。俟裁定確定後，檢察官送當地醫院執行。請論述：（25 分）（一）我國刑法在「刑罰」之外，另設有「保安處分」，請說明保安處分之設置目的、主要內容及功能為何？（二）甲因本案於裁判確定前受羈押日數共 175 天，是否可折抵監護處分日數？",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0518&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0518&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "112-刑事訴訟法與保安處分執行法-4",
@@ -6301,7 +6465,9 @@ window.LawScoringData = {
     "引用性侵害防治法舊條次。"
    ],
    "body": "甲為性侵害案件之假釋出獄人，假釋期間付保護管束，經執行檢察官依性侵害犯罪防治法第 34 條第 5 款及第 7 款規定，施以宵禁並輔以科技設備監控（即俗稱電子腳鐐）。惟甲於保護管束期間再犯竊盜及持有二級毒品案經起訴後，於某日以電話通知觀護人電子腳鐐脫落後即逃匿無蹤。請論述：檢察官及執行保護管束者應有何作為？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0518&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0518&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "113-刑事訴訟法與保安處分執行法-1",
@@ -6372,7 +6538,9 @@ window.LawScoringData = {
     "沒有處理證據能力。"
    ],
    "body": "甲某日與友人乙、丙等人去 KTV 唱歌，三人飲酒作樂後，甲開車載乙、丙兩人回家途中，正好碰到警察丁在馬路上攔停車輛，檢查駕駛人有無酒駕，甲酒氣甚重，但仍配合酒測，酒測後發現甲吐氣所含酒精濃度已超過每公升 0.25 毫克，丁立即以酒駕現行犯逮捕甲，現場雖無其他異狀，丁仍以附帶搜索為依據，當場直接強制翻弄丙隨身攜帶的手提袋，在其中發現毒品 10 克。請問丁搜索丙手提袋之行為是否合法？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0515&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0515&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "113-刑事訴訟法與保安處分執行法-2",
@@ -6443,7 +6611,9 @@ window.LawScoringData = {
     "忽略第三人不知情時的沒收依據。"
    ],
    "body": "甲為地方法院法官，涉嫌收受酒駕被告乙所提供之 20 萬元，故意在一審判決乙酒駕無罪。此事爆發之後，檢察官已先行扣押乙所提供之 20 萬元，並起訴甲犯違背職務受賄罪，一審法院認定甲有罪，並諭知沒收 20萬元犯罪所得。上訴至二審法院後，二審法院調查發現乙提供之賄賂不只有 20 萬，還另外提供甲之親密友人丙黃金項鍊一條（惟丙不知甲、乙間賄賂情事），請問二審法院得否於檢察官未聲請之情況下，逕依職權裁定命丙參與二審訴訟程序？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0515&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0515&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "113-刑事訴訟法與保安處分執行法-3",
@@ -6514,7 +6684,9 @@ window.LawScoringData = {
     "沒有連結一罪不二罰。"
    ],
    "body": "大法官於司法院釋字第 812 號解釋認定「強制工作」違憲，其中理由之\n一為強制工作牴觸「明顯區隔原則」，試說明明顯區隔原則之憲法法理基礎、判斷方法以及何以強制工作牴觸明顯區隔原則。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0515&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0515&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "113-刑事訴訟法與保安處分執行法-4",
@@ -6584,7 +6756,9 @@ window.LawScoringData = {
     "沒有回答「得否」的明確結論。"
    ],
    "body": "甲長期酗酒而犯故意毀損罪，經被害人合法告訴，檢察官起訴甲後，法院於審判程序中，認為甲所涉犯之毀損罪，其犯罪事實尚待釐清，但因甲酗酒成癮，且有強烈再犯毀損罪之虞，有立即宣告禁戒處分之緊急必要性，法院得否於本案判決前，先行以裁定宣告禁戒處分？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0515&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0515&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "114-刑事訴訟法與保安處分執行法-1",
@@ -6656,7 +6830,9 @@ window.LawScoringData = {
     "忽略補強證據。"
    ],
    "body": "甲公務員承辦都市更新計畫為能加速市容更新以及地域發展，提高容積獎勵促進地主、住戶、建設公司等各方意見整合。過程中，因利益分配事項有所爭議，遭檢舉甲收受建設公司 A 員賄款並洩漏相關招標資訊，以利該建設公司取得標案。稍後，檢察官偵查階段傳喚 A 作證，告以若其供述得以追訴甲犯罪，將依法請求法院予以免刑處分。然而，A 經檢察官作成不利甲之偵訊筆錄後，於法庭審理時推翻先前供詞，並稱當時供述乃受檢察官予以免刑處分的影響。試問依實務見解說明、評述 A 供述筆錄之證據能力？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0516&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0516&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "114-刑事訴訟法與保安處分執行法-2",
@@ -6727,7 +6903,9 @@ window.LawScoringData = {
     "忽略辯護權保護。"
    ],
    "body": "甲警偵辦詐欺案件執行 ATM 巡邏勤務，查獲某 A 同時使用多張金融卡提款，經帶回勤務處所進行警詢過程，其委任辯護人 B 到場陪同警詢，仍認 A 乃幫詐團提領現金的「車手」，故將其移送地檢署偵辦。檢察官複訊後認尚有其他被告尚未到案，且懷疑 B 律師事務所持有相關被告間往來之文書及電磁紀錄。試問檢察官應如何實施執行本項文書及電磁紀錄蒐證保全？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0516&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0516&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "114-刑事訴訟法與保安處分執行法-3",
@@ -6798,7 +6976,9 @@ window.LawScoringData = {
     "漏掉釋字第 812 號。"
    ],
    "body": "我國刑事法採刑罰與保安處分雙軌之立法體制，立法者就具有社會危險性之犯罪行為人，除就其犯罪行為依法處以刑罰外，另就其反社會人格或危險性格，施以各種保安處分以期改善、矯治其偏差性格，維護社會大眾之安全。試問，依據現行憲法正當法律程序的論理，說明落實區隔保安處分與刑罰執行之要件？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0516&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0516&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "114-刑事訴訟法與保安處分執行法-4",
@@ -6869,7 +7049,9 @@ window.LawScoringData = {
     "沒有連結死刑案件的特殊性。"
    ],
    "body": "我國憲法判決指摘：「為避免錯誤冤抑，並力求法院所為死刑判決之事實認定確無合理懷疑，其法律理由充分、正當，從而確保死刑之科處於個案確為符合罪責原則之最後必要手段，尤應保障死刑案件之被告於刑事調查、偵查及審判程序，均得有效行使其訴訟上防禦權」。試問依據本項正當法律程序之論據，我國有關偵查階段程序規範為何？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0516&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0516&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "115-刑事訴訟法與保安處分執行法-1",
@@ -6949,7 +7131,9 @@ window.LawScoringData = {
     "漏掉陳述意見程序。"
    ],
    "body": "甲犯竊盜與傷害罪，遭法院於同一判決中分別判處有期徒刑一年七月與\n八月，並定應執行刑二年。如在服刑中發現甲於前案判決確定前另犯三個詐欺罪，並分別遭法院判處有期徒刑一年確定。試問：法院應於何範圍內更定應執行刑？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0516&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0516&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "115-刑事訴訟法與保安處分執行法-2",
@@ -7020,7 +7204,9 @@ window.LawScoringData = {
     "沒有說明想像競合的不可分性。"
    ],
    "body": "甲持偽造之文書犯詐欺罪，經地方法院認定二罪應依刑法第 55 條規定以偽造文書罪處斷。如甲僅對偽造文書罪提起上訴，請附理由說明：二審法院可否對詐欺罪一併依職權審理？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0516&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0516&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "115-刑事訴訟法與保安處分執行法-3",
@@ -7090,7 +7276,9 @@ window.LawScoringData = {
     "沒有連結社區照護。"
    ],
    "body": "在保安處分執行制度中，轉銜會議應由誰召開？其功能為何？試說明之。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0516&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0516&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "115-刑事訴訟法與保安處分執行法-4",
@@ -7163,7 +7351,9 @@ window.LawScoringData = {
     "只回答明確性或比例原則其中一題。"
    ],
    "body": "刑法第 91 條之 1 之「再犯危險」是否符合法律明確性原則？強制治療未明文最長期限，是否符合比例原則？試說明之。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0516&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0516&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "108-犯罪學-1",
@@ -7233,7 +7423,9 @@ window.LawScoringData = {
     "混淆日常活動理論與生活方式理論。"
    ],
    "body": "在探討犯罪被害相當重要的理論是由美國犯罪學者 Lawrence Cohen 和Marcus Felson 在 1979 年首先提出的「日常生活理論（Routine ActivityTheory）」。而此一理論提及犯罪的發生，必須在特定的時空因素的聚合下，才可能發生。請問其理論所提及之 3 項時空因素所指為何？請詳述其各項內涵。（15 分）並請以此一理論之 3 項要素，來解釋家庭暴力案件何以發生。（10 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0802&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0802&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "108-犯罪學-2",
@@ -7303,7 +7495,9 @@ window.LawScoringData = {
     "漏掉觀護工作在三級預防的位置。"
    ],
    "body": "每一項犯罪問題的發生，都會讓社會、國家付出鉅大的成本，所以如何讓犯罪不再發生或減少發生是一項重要的課題。學者 Brantingham 及Faust 藉公 共 衛 生 疾 病預 防 模 式（ Public Health Model of DiseasePrevention）提出目標導向之公共衛生犯罪預防模式，其理論內涵是如何架構應用在犯罪預防工作上？請詳述之。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0802&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0802&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "108-犯罪學-3",
@@ -7374,7 +7568,9 @@ window.LawScoringData = {
     "把有被害人的犯罪（如詐欺）當成無被害者犯罪。"
    ],
    "body": "請說明學者貝道（Hugo Adam Bedau）針對無被害者犯罪之概念，其所提出之 4 種特性所指為何？請詳述之。（16 分）並請以其特性舉出 3 種符合無被害者犯罪概念之犯罪類型，詳細說明之。（9 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0802&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0802&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "108-犯罪學-4",
@@ -7444,7 +7640,9 @@ window.LawScoringData = {
     "沒有比較兩種觀點。"
    ],
    "body": "有關犯罪之意涵，常會隨著時空因素及社會環境的變遷而有不同的定義，請分別以法律學及社會學上之觀點來說明犯罪之概念。（10 分）另學者 Larry J. Siegel 針對犯罪學之研究，提出其希望能達到 3 項目標，此3 項目標所指為何？請詳述之。（15 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0802&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0802&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "109-犯罪學-1",
@@ -7514,7 +7712,9 @@ window.LawScoringData = {
     "把差別接觸與差別機會理論混淆。"
    ],
    "body": "有關古代有「孟母三遷」的故事及現今社會上父母親讓孩子跨區就讀明星國中或考取明星高中的社會現象，請以美國犯罪社會學家蘇哲蘭（Edwin H. Sutherland）在1939年所提出的差別接觸理論（DifferentialAssociation Theory）內容觀點，來說明父母親對學習環境不佳的憂心。請詳加說明之。（25分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0801&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0801&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "109-犯罪學-2",
@@ -7584,7 +7784,9 @@ window.LawScoringData = {
     "預防策略沒有對應四要素。"
    ],
    "body": "家庭因素在少年犯罪行為上具有關鍵性之影響，早已為學界研究所證實，請舉出5種影響少年犯罪行為產生之家庭層面因素。並請以美國犯罪學家赫胥（Travis Hirschi）所提出的社會控制理論（Social Control Theory）之論點來說明如何有效預防少年犯罪？請詳加說明之。（25分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0801&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0801&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "109-犯罪學-3",
@@ -7655,7 +7857,9 @@ window.LawScoringData = {
     "沒有說明對中止犯罪的解釋。"
    ],
    "body": "在犯罪學的發展研究歷程中，發展犯罪學相關理論的產生即在瞭解為何有些人會犯罪？又為何有些犯罪人會中止犯罪？而其中的生命歷程理論（Life Course Theory）及潛在特質理論（Latent Trait Theory）即來解釋此一現象，請說明此2種理論其各別之觀點，並加以說明其彼此主張之差異性為何？（25分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0801&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0801&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "109-犯罪學-4",
@@ -7725,7 +7929,9 @@ window.LawScoringData = {
     "混淆重複被害與被害者促發。"
    ],
    "body": "在犯罪被害相關研究中發現，有某些人因其個人特性是很容易「重複被害」（Repeat Victimization），導致於成為所謂的「慢性被害人」（ChronicVictims），在1996年學者 David Finklhor 及 Nancy Asdigian 提出3項說明容易導致成為「慢性被害人」個人特徵所指為何？另請舉出2種生活中會發生「重複被害」犯罪型態，並說明其重複被害之原因為何？（25分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0801&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0801&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "110-犯罪學-1",
@@ -7795,7 +8001,9 @@ window.LawScoringData = {
     "沒有說明政治結構的作用。"
    ],
    "body": "請以 R. Quinney 在 1970 年代提出「犯罪的社會事實論」（theory of socialrealityofcrime）為例，說明「犯罪」在社會與政治結構中產生的過程？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0701&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0701&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "110-犯罪學-2",
@@ -7866,7 +8074,9 @@ window.LawScoringData = {
     "防治對策空泛。"
    ],
    "body": "集體效能論（collective efficacy）如何說明社區與暴力犯罪的關係？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0701&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0701&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "110-犯罪學-3",
@@ -7937,7 +8147,9 @@ window.LawScoringData = {
     "沒有說明降低再犯的原理。"
    ],
    "body": "請說明「支持問責圈」（Circles of Support and Accountability, CoSA）的運作模式，及其如何使高風險的性犯罪者重新適應社會的原理。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0701&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0701&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "110-犯罪學-4",
@@ -8007,7 +8219,9 @@ window.LawScoringData = {
     "把人格障礙等同犯罪原因。"
    ],
    "body": "請說明反社會人格障礙與犯罪之關係。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0701&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0701&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "111-犯罪學-1",
@@ -8078,7 +8292,9 @@ window.LawScoringData = {
     "忽略取締數據受執法強度影響。"
    ],
    "body": "立法院於今年 1 月 24 日三讀刑法及道路交通管理處罰條例酒駕相關條文修正案，提高酒駕處罰、延長酒駕累犯紀錄至 10 年，並新增公路主管機關得公布酒駕累犯姓名、照片及違法事實等規定。據苗栗縣警察局統計顯示，酒駕新制上路後，全縣今年 4 月 1 日到 6 月 24 日取締酒駕件數 325 件，較去年同期的 288 件有增無減。請以理性選擇理論說明此現象之可能原因。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0701&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0701&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "111-犯罪學-2",
@@ -8148,7 +8364,9 @@ window.LawScoringData = {
     "挑戰只列名稱沒有說明。"
    ],
    "body": "20 世紀犯罪學理論的蓬勃發展，在犯罪解釋上提供了許多可行的解釋，但卻也呈現支離破碎、混亂，互不相讓的局面。因此在 1980 年代開始在犯罪學界出現理論整合的討論與發展。然而理論整合同時也面臨許多問題與挑戰，請說明犯罪學理論整合的問題與挑戰。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0701&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0701&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "111-犯罪學-3",
@@ -8220,7 +8438,9 @@ window.LawScoringData = {
     "沒有提出適度監督的結論。"
    ],
    "body": "父母親對於子女的監控不足或過度都可能造成負面的影響，請各別以一犯罪學理論說明監控不足與過度可能造成的負面影響。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0701&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0701&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "111-犯罪學-4",
@@ -8292,7 +8512,9 @@ window.LawScoringData = {
     "把兩理論視為相同。"
    ],
    "body": "幫派副文化理論與中立化理論對於偏差青少年成年後是否繼續犯罪有什麼不同的解釋？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0701&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0701&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "112-犯罪學-1",
@@ -8363,7 +8585,9 @@ window.LawScoringData = {
     "相同處寫成相異處。"
    ],
    "body": "犯罪古典學派的思想家及理論家邊沁（Jeremy Bentham，1748-1832）對於是非善惡的論述原則為何？其對於人類行為需受懲罰的標準何在？其思想對於犯罪人處遇的見解，與當前實證主義對犯罪人矯正的理念相同之處為何？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0701&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0701&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "112-犯罪學-2",
@@ -8433,7 +8657,9 @@ window.LawScoringData = {
     "預防建議空泛。"
    ],
    "body": "犯罪被害理論中，生活模式理論（Lifestyle Theory）和日常活動理論（Routine Activities Theory）都頗能解釋犯罪被害問題。請以此二理論分別分析當前臺灣社會經常出現的網路性侵害被害問題，並請提出預防建議。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0701&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0701&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "112-犯罪學-3",
@@ -8503,7 +8729,9 @@ window.LawScoringData = {
     "對策沒有對應理論。"
    ],
    "body": "根據法務部統計資料，以洗錢防制法起訴人數來說，民國 109 年到 111年有很重大的變化，女性被起訴人數 111 年大約是 109 年的 7.97 倍，男性 111 年大約是 109 年的 12.45 倍。假設這樣的數字與近年詐欺案件非常盛行有關，請以一般化犯罪理論（A General Theory of Crime）解析當前詐欺犯罪行為的成因及預防對策。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0701&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0701&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "112-犯罪學-4",
@@ -8574,7 +8802,9 @@ window.LawScoringData = {
     "防治對策沒有連結制度。"
    ],
    "body": "近年來不論重大暴力犯罪人或性侵害加害人有相當比例具有明顯的精神障礙、精神疾病或人格障礙（人格疾患）。請從犯罪心理學理論論述分析前述問題造成暴力犯罪之原因，並提出防治對策作法。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0701&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0701&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "113-犯罪學-1",
@@ -8644,7 +8874,9 @@ window.LawScoringData = {
     "沒有舉例。"
    ],
    "body": "試說明 Bandura（1977）所提攻擊行為之被激起因素。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0701&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0701&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "113-犯罪學-2",
@@ -8714,7 +8946,9 @@ window.LawScoringData = {
     "沒有說明社會心理缺陷。"
    ],
    "body": "請說明 Colvin（2000）所提差別壓迫（Differential Coercion）理論之主要內涵。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0701&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0701&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "113-犯罪學-3",
@@ -8784,7 +9018,9 @@ window.LawScoringData = {
     "只列名詞沒有說明。"
    ],
    "body": "請說明犯罪行為發生之個人、家庭、社區與社會風險因素，並列舉二個研究案例加以說明。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0701&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0701&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "113-犯罪學-4",
@@ -8855,7 +9091,9 @@ window.LawScoringData = {
     "誇大與犯罪的關聯。"
    ],
    "body": "請以精神疾病診斷準則手冊（DSM-5）說明思覺失調症（Schizophrenia）之症狀，並說明其與犯罪之關聯性。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0701&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0701&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "114-犯罪學-1",
@@ -8926,7 +9164,9 @@ window.LawScoringData = {
     "只介紹不說明成因。"
    ],
    "body": "青少年犯罪是犯罪學關注的重要議題。請分別從「社會結構學派」（Social Structure Theories）與「社會控制學派」（Social Control Theories）的觀點，各舉一個具代表性的理論，說明這兩個學派如何解釋青少年產生偏差行為或犯罪的原因；並根據各自的理論觀點，提出相應的防治對策。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0701&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0701&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "114-犯罪學-2",
@@ -8997,7 +9237,9 @@ window.LawScoringData = {
     "沒有連結觀護實務。"
    ],
    "body": "在少年及成年犯的矯治與再犯預防工作中，再犯風險評估扮演著核心角色。請詳細說明靜態風險因素與動態風險因素的內涵及差異，並闡述這些因素對於觀護人實施矯治處遇與再犯預防的重要性。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0701&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0701&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "114-犯罪學-3",
@@ -9068,7 +9310,9 @@ window.LawScoringData = {
     "只寫優勢不寫挑戰。"
    ],
    "body": "修復式司法（Restorative Justice）已成為當代刑事司法制度中的一項重要發展方向。請說明修復式司法的核心理念與主要目標，並從犯罪矯正實務的角度，特別是從觀護人的角色，分析其可能帶來的優勢與所面臨的挑戰。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0701&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0701&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "114-犯罪學-4",
@@ -9138,7 +9382,9 @@ window.LawScoringData = {
     "只寫懲罰不寫處遇。"
    ],
    "body": "藥物濫用是少年犯罪問題中的一大挑戰。請運用生物心理社會模式（Biopsychosocial Model）來詮釋少年藥物濫用之成因，並針對青少年特性，提出觀護人可採行的具體預防與處遇策略。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0701&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0701&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "115-犯罪學-1",
@@ -9209,7 +9455,9 @@ window.LawScoringData = {
     "沒有比較兩者成因差異。"
    ],
    "body": "請說明犯罪學者 Terrie Moffitt 發展犯罪學理論中，「少男終身持續犯（Life-course persistent males, LCP）」與「少男中止犯（adolescence-limitedmales, AL）」（2018）在總人口中的比例，並分析兩者在成因上（如神經認知缺陷、成熟鴻溝（Maturity Gap）等）的差異。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0701&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0701&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "115-犯罪學-2",
@@ -9300,7 +9548,9 @@ window.LawScoringData = {
    ],
    "year": 115,
    "body": "何謂 RNR（Risk-Need-Responsivity）評估模型？請具體列出其中的「四大核心風險（Big Four）」，並說明「回應性（Responsivity）」原則如何應用於犯罪人之處遇，以因應其身心障礙或學習風格之差異。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0701&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0701&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "115-犯罪學-3",
@@ -9370,7 +9620,9 @@ window.LawScoringData = {
     "因子只列名稱沒有說明。"
    ],
    "body": "在量刑或處遇調查評估時，有那些關鍵的「風險因子」與「保護因子」，可科學且具體地評估犯罪人的社會復歸可能性？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0701&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0701&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "115-犯罪學-4",
@@ -9442,7 +9694,9 @@ window.LawScoringData = {
     "仍以逃學逃家為曝險事由。"
    ],
    "body": "2023 年施行之少年事件處理法「行政先行」機制之具體流程為何？請闡述此項制度變革如何具體落實司法院釋字第 664 號關於保障少年人格權及人身自由之憲法精神？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0701&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0701&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "108-心理學-1",
@@ -9512,7 +9766,9 @@ window.LawScoringData = {
     "忽略成分間可能不一致。"
    ],
    "body": "態度的組成有那些成分？試以抽菸為例，抽菸態度的可能成分為何？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0904&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0904&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "108-心理學-2",
@@ -9583,7 +9839,9 @@ window.LawScoringData = {
     "忽略實證爭議。"
    ],
    "body": "Friedman 和 Rosenman（1974）研究提出 A 型性格（Type A personality）和 B 型性格（Type B personality）；Eysenck（1988）、Temoshok（1990）及 Temoshok、Dreher（1992）提出 C 型性格（Type C personality），請說明何謂 A 型性格、B 型性格及 C 型性格？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0904&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0904&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "108-心理學-3",
@@ -9654,7 +9912,9 @@ window.LawScoringData = {
     "混淆人際吸引與從眾。"
    ],
    "body": "何謂人際吸引（interpersonal attraction）？人際吸引的影響要素為何？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0904&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0904&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "108-心理學-4",
@@ -9724,7 +9984,9 @@ window.LawScoringData = {
     "忽略告知同意。"
    ],
    "body": "測驗的使用應注意那些事項，請說明之。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0904&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0904&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "109-心理學-1",
@@ -9795,7 +10057,9 @@ window.LawScoringData = {
     "學者寫錯。"
    ],
    "body": "流體智力（fluid intelligence）與晶體智力（crystallized intelligence）的差異為何？兩者在個體人生全程發展之消長及意涵為何？並請論述對個體職涯發展之可能影響。（25分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0905&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0905&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "109-心理學-2",
@@ -9865,7 +10129,9 @@ window.LawScoringData = {
     "忽略暴力循環理論。"
    ],
    "body": "受虐婦女症候群（battered-women syndrome）係指婦女因受到配偶或情人在身體、性或情感方面虐待而導致的一種病理和心理狀態（此一情境也可能發生在男性伴侶身上）。這種症候群有時會被用來作為辯護受虐者殺死配偶或情人之正當理由。請說明 Seligman 的習得無助感（learnedhelplessness）理論，並以該理論來闡釋受虐婦女症候群。（25分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0905&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0905&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "109-心理學-3",
@@ -9935,7 +10201,9 @@ window.LawScoringData = {
     "把網路成癮寫成正式診斷。"
    ],
    "body": "現實生活中成癮（addiction）隨處可見，如藥物、酒精等物質成癮；而時至今日「網路成癮」是一普遍存在的議題，網路成癮者對網路產生過度依賴現象，超時的網路使用（如網路遊戲），嚴重影響生活。試述壓力與成癮的關聯，及成癮之生理、心理歷程。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0905&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0905&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "109-心理學-4",
@@ -10015,7 +10283,9 @@ window.LawScoringData = {
     "忽略青少年常模。"
    ],
    "body": "信效度為心理測驗品質的展現。假設你想選定一份憂鬱量表來瞭解青少年個案之憂鬱程度，你會希望測驗能有那些信效度證據，方具有選用條件？請提出兩項信度證據、三項效度證據，並說明該證據所展現之測驗品質意涵。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0905&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0905&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "110-心理學-1",
@@ -10085,7 +10355,9 @@ window.LawScoringData = {
     "忽略文化因素對判斷的影響。"
    ],
    "body": "何謂心智異常？判斷心智異常的標準有那些？心理衡鑑是評估心智異常的方法，有那些心理衡鑑的方法可以應用，試論述每一個方法。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0809&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0809&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "110-心理學-2",
@@ -10155,7 +10427,9 @@ window.LawScoringData = {
     "混淆 Beck 與 Ellis。"
    ],
    "body": "世界衛生組織（WHO）提出在 2020 年憂鬱症是全世界三大需要重視的疾病之一，而有憂鬱症狀的青少年人數也逐年在攀升。針對憂鬱症的病理機制，艾瑞．貝克（Aaron T. Beck）的認知治療理論及塞利格曼（MartinSeligman）的歸因風格都有所說明，試述他們的論點，並以此說明認知治療的方式。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0809&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0809&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "110-心理學-3",
@@ -10235,7 +10509,9 @@ window.LawScoringData = {
     "沒有連結題目情境。"
    ],
    "body": "在 COVID-19 的疫情變化下，人們的情緒跟著起伏不定，而此起伏可能影響身心健康。情緒也如同濾鏡般，讓人對事物有不同的感受和判斷。情緒的動態與多層次，提供我們分析人的行為。試以情緒的四個元素說明情緒的運作特性。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0809&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0809&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "110-心理學-4",
@@ -10305,7 +10581,9 @@ window.LawScoringData = {
     "漏掉三個層次。"
    ],
    "body": "柯伯格（Lawrence Kohlberg）利用人們對道德兩難故事的判斷，提出道德發展的六個階段，試述此六個階段，並各以一實例解說之。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0809&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0809&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "111-心理學-1",
@@ -10375,7 +10653,9 @@ window.LawScoringData = {
     "比較面向不完整。"
    ],
    "body": "請比較「常模參照測驗」（norm-referenced test）與「標準參照測驗」（Criterion-Referenced Testing）在分數計算、結果解釋以及使用的目的上有何差異？並請舉實例說明之。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0803&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0803&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "111-心理學-2",
@@ -10445,7 +10725,9 @@ window.LawScoringData = {
     "缺少實例。"
    ],
    "body": "何謂「體質─壓力模型」（diathesis-stress model）？該模型如何解釋心理異常的成因？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0803&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0803&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "111-心理學-3",
@@ -10515,7 +10797,9 @@ window.LawScoringData = {
     "混淆去個人化與社會懈怠。"
    ],
    "body": "何謂社會情境中的「去個人化」（Deindividuation）現象？又「去個人化」會對個體行動產生何種影響？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0803&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0803&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "111-心理學-4",
@@ -10585,7 +10869,9 @@ window.LawScoringData = {
     "把遺傳因素當作環境因素。"
    ],
    "body": "請問過去研究發現那些物理的、生理的、心理的及社會文化的環境因素會影響到兒童的智力發展？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0803&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0803&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "112-心理學-1",
@@ -10656,7 +10942,9 @@ window.LawScoringData = {
     "把抑制當成適應性策略。"
    ],
    "body": "情緒調節是個體面對生活壓力時重要的因應方式，學者依據情緒調節歷程模式（Process model of emotion regulation），分類出適應性與非適應性的情緒調節策略，請說明其內容。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0803&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0803&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "112-心理學-2",
@@ -10726,7 +11014,9 @@ window.LawScoringData = {
     "混淆 IPT 與心理動力治療。"
    ],
    "body": "人際關係影響個體的心理健康，許多心理病理症狀與人際關係的變化有關。根據人際心理治療學派的主張，有那四項人際議題會影響個體的心理健康？（20 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0803&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0803&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "112-心理學-3",
@@ -10796,7 +11086,9 @@ window.LawScoringData = {
     "沒有連結成年問題。"
    ],
    "body": "童年逆境經驗（Adverse Childhood Experiences, ACEs）會造成個體成年之後的諸多問題，例如情緒障礙或是問題行為。請說明童年逆境經驗有那些類型？以及造成成年之後相關問題的生理神經及心理機制。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0803&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0803&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "112-心理學-4",
@@ -10866,7 +11158,9 @@ window.LawScoringData = {
     "推論理由少於四項。"
    ],
    "body": "請就下面案例的心理測驗與評估內容回答相關問題。個案 A，男性 45 歲，偷竊女性內褲，因有監視器證據而被警察以竊盜罪移送法辦，心理測驗報告如下：行為觀察與相關會談資料：個案已婚育有兩個孩子，會談時重複提到自己的懊悔，在提及過往用安非他命、偷看洗澡、偷內衣褲的事件時，個案認為可能與安非他命的副作用及高中打群架時腦部受撞擊有關。學業與工作史：高職畢業，國中及高職時成績落於中等位置，20 歲左右開始從事汽車修車師傅至今。智力測驗（WAIS-IV）分數如下：全量表智商=52（0.1%），語文理解=59（0.3%），知覺推理=52（0.1%），工作記憶=68（2%），處理速度=50（百分等級<0.1）。次能力比較：各項能力差異達顯著，工作記憶為自身相對強項，知覺推理、處理速度為自身相對弱項。施測時因個案無法正確背出十二生肖，故以算術分測驗替代數字序列分測驗。請問：（每小題 15 分，共 30 分）（一）個案的會談資料及智力測驗結果是否符合精神疾病診斷手冊（DSM-5）腦傷（Traumatic Brain Injury）之診斷？理由為何？（二）請整合上述個案的會談資料及心理測驗結果，推論出個案目前的心理狀態，並舉出至少四項理由。",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0803&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0803&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "113-心理學-1",
@@ -10937,7 +11231,9 @@ window.LawScoringData = {
     "避免方法只寫一項。"
    ],
    "body": "人類的記憶具有建構性，即「建構性記憶」（constructive memory），請以巴特利（Frederic Bartlett）的「鬼的戰爭」實驗，說明建構性記憶的特性。另一方面記憶也有再建構性，此現象在目擊證人的證詞中尤為重要，請說明如何避免記憶的再建構性。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0805&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0805&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "113-心理學-2",
@@ -11007,7 +11303,9 @@ window.LawScoringData = {
     "混淆可得性與代表性捷思。"
    ],
    "body": "康納曼（Daniel Kahneman）以快思慢想來描述人們的二種思考模式，試說明這二種模式在處理日常生活事件的現象，並以此來解釋人們出現的可得性捷思的認知偏誤。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0805&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0805&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "113-心理學-3",
@@ -11077,7 +11375,9 @@ window.LawScoringData = {
     "把成功智力與多元智能混淆。"
    ],
    "body": "史騰伯格（Robert J. Sternberg）針對傳統智力理論未涉及解決生活實際問題的現象，而提出成功智力的觀點，試述成功智力的理論，並以此理論說明對 AI 世代下青少年應用的可能性。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0805&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0805&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "113-心理學-4",
@@ -11147,7 +11447,9 @@ window.LawScoringData = {
     "應用空泛。"
    ],
    "body": "幸福感被認為是人們心理健康狀態的重要指標之一，塞利格曼（MartinSeligman）提出「積極富能（Flourishing）」為幸福感指標，且以五個向度來定義「積極富能」，試闡述這五個向度及其在促進青少年心理健康可能的應用。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0805&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0805&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "114-心理學-1",
@@ -11217,7 +11519,9 @@ window.LawScoringData = {
     "改進方法沒有對應問題。"
    ],
    "body": "請詳述心理測驗中的「信度（reliability）」與「效度（validity）」的概念，並舉例說明一項測驗在信度高但效度低的情況下，可能帶來那些問題？又該如何改進此測驗？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0805&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0805&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "114-心理學-2",
@@ -11299,7 +11603,9 @@ window.LawScoringData = {
     "混淆群體極化與團體迷思。"
    ],
    "body": "團體決策過程中，結果常出現「團體比個人決策更極端」的現象。請運用相關社會心理學概念（如群體極化、從眾、去個人化等），來解釋造成此現象的心理歷程，並舉一個真實或模擬的例子加以說明。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0805&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0805&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "114-心理學-3",
@@ -11370,7 +11676,9 @@ window.LawScoringData = {
     "把功能固著與心向混為一談。"
    ],
    "body": "請回想生活中曾遇過的「卡關」經驗（如解不開的生活難題、資源受限等），並以「功能固著（functional fixedness）」概念說明此困境中的慣性思維。再提出兩項策略能幫助突破固著、提升創造力。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0805&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0805&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "114-心理學-4",
@@ -11450,7 +11758,9 @@ window.LawScoringData = {
     "預防策略沒有對應抗拒期。"
    ],
    "body": "請說明「一般適應症候群（General Adaptation Syndrome, GAS）」的三個階段，並以「長期照顧病重親人所帶來的壓力」為例，描述個體可能經歷的身心反應。最後，請根據 GAS 模型，說明可採取那些心理學策略以預防個體進入耗竭階段（exhaustion stage）。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0805&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0805&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "115-心理學-1",
@@ -11521,7 +11831,9 @@ window.LawScoringData = {
     "沒有談司法心理工作。"
    ],
    "body": "心理學認為人格形成同時受到先天與後天因素影響。請比較 Freud 的精神分析論（Psychoanalysis）及 Goldberg 的五大人格特質（Big FivePersonality Traits）理論對人格形成的觀點，並分析兩種理論對司法心理工作的影響。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0805&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0805&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "115-心理學-2",
@@ -11592,7 +11904,9 @@ window.LawScoringData = {
     "沒有具體評估方法。"
    ],
    "body": "近年司法實務中，部分犯罪行為人主張其犯罪係因家庭成長經驗、人格特質或社會環境所致。請回答下列問題：（25 分）（一）請以生物、心理、社會三個層面分析犯罪行為形成歷程。（二）司法心理評估應如何避免「單一因素歸因」？",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0805&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0805&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "115-心理學-3",
@@ -11663,7 +11977,9 @@ window.LawScoringData = {
     "矯正方法沒有對應理論。"
    ],
    "body": "17 歲的阿宏瞞著父母偷騎機車上學，為了趕時間不僅沒戴安全帽還一路超速、闖紅燈，最後被交通警察攔下開單。被開單時，阿宏心裡憤憤不平地想：「別人都這樣騎也沒事，我技術這麼好，運氣怎麼可能這麼差，還被開單？」請問阿宏的這種心理，最符合心理學家艾爾肯（Elkind）所提出的那一種青少年認知特徵？請提出兩種心理學的理論與相應的矯正方法以矯正阿宏的不當認知行為。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0805&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0805&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "115-心理學-4",
@@ -11733,7 +12049,9 @@ window.LawScoringData = {
     "處遇策略沒有對應理論。"
    ],
    "body": "請從 Bandura 的社會學習理論、Bronfenbrenner 的生態系統理論及 Erikson的心理社會發展理論三種觀點，分析科技媒體如何影響青少年心理發展，並提出處遇策略。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0805&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0805&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "108-諮商與輔導-1",
@@ -11803,7 +12121,9 @@ window.LawScoringData = {
     "定義只寫「優點」。"
    ],
    "body": "優勢中心取向的諮商與心理治療在近年來頗受到重視。請問，何謂優勢？優勢中心取向諮商的目標與諮商重點為何？應用於司法或矯正體系中的成人個案，需注意那些重要原則？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0909&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0909&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "108-諮商與輔導-2",
@@ -11883,7 +12203,9 @@ window.LawScoringData = {
     "因子名稱錯誤。"
    ],
    "body": "團體心理治療是助人工作的重要方式之一，學者 Yalom 曾提出團體心理治療的重要療效因子，共十一項，請列舉其中至少五項，並舉例說明如何呈現於一般的治療團體中。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0909&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0909&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "108-諮商與輔導-3",
@@ -11953,7 +12275,9 @@ window.LawScoringData = {
     "每階段少於兩項。"
    ],
    "body": "一般而言，助人歷程模式大致可分為探索、洞察、行動三個階段，請問這三個階段包括那些經常使用的諮商技巧。請在三個階段中各舉出兩個技巧，並舉實例說明如何使用該項技巧。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0909&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0909&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "108-諮商與輔導-4",
@@ -12023,7 +12347,9 @@ window.LawScoringData = {
     "沒有說明分數意涵。"
    ],
    "body": "人格特質與情緒的衡鑑，為輔導與諮商工作中的必備能力。請說明下列兩種測驗的測量內容向度及涵意。（一）大五人格測驗（Big Five Personality Inventory）（13 分）（二）貝克憂鬱量表（Beck Depression Inventory）（12 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0909&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0909&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "109-諮商與輔導-1",
@@ -12094,7 +12420,9 @@ window.LawScoringData = {
     "沒有比較處理方式。"
    ],
    "body": "焦慮是人類的重要情緒之一，試比較 Freud、存在主義取向所主張之焦慮的意義及其因應或處理方式。（25分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0908&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0908&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "109-諮商與輔導-2",
@@ -12164,7 +12492,9 @@ window.LawScoringData = {
     "混淆重鬱症與持續性憂鬱症。"
    ],
    "body": "依據 DSM-5，憂鬱症的診斷需符合那些標準？（25分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0908&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0908&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "109-諮商與輔導-3",
@@ -12234,7 +12564,9 @@ window.LawScoringData = {
     "把兩者都寫成「回顧童年」。"
    ],
    "body": "敘事治療及精神分析取向似乎都會與個案談早期經驗。請比較兩個學派在治療技術上的差異。（25分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0908&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0908&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "109-諮商與輔導-4",
@@ -12305,7 +12637,9 @@ window.LawScoringData = {
     "把分化等同疏離。"
    ],
    "body": "「自我分化」（self-differentiation）是家庭諮商中的重要概念，請問此概念係由誰所提出？意義為何？你的自我分化程度，若以0分代表分化程度最低，100分代表分化程度最高，你會給自己打幾分？請說明理由，可舉例說明。（25分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0908&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0908&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "110-諮商與輔導-1",
@@ -12377,7 +12711,9 @@ window.LawScoringData = {
     "沒有依子題配分作答。"
    ],
    "body": "覺察（Awareness）是許多諮商理論與模式的重要概念與能力之一，（一）請分別論述心理動力取向與存在主義取向對覺察的觀點；（15 分）（二）並據以比較兩個取向的觀點之差異。（15 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0810&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0810&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "110-諮商與輔導-2",
@@ -12459,7 +12795,9 @@ window.LawScoringData = {
     "忽略安全評估。"
    ],
    "body": "多元文化能力（Multicultural Competence）是諮商輔導的核心基本能力之\n一，請簡介及說明多元文化能力的四個基本要素，再以「遭受家庭暴力的受害女性」為對象，論述前述多元文化能力的實務應用。（35 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0810&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0810&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "110-諮商與輔導-3",
@@ -12539,7 +12877,9 @@ window.LawScoringData = {
     "沒有處理雙重角色。"
    ],
    "body": "性別平等教育法第 25 條第 2 項：「學校、主管機關或其他權責機關為性騷擾或性霸凌事件之懲處時，應命行為人接受心理輔導之處置，並得命其為下列一款或數款之處置：（略）」。請論述諮商輔導人員依前述法規對高中以下學生行為人從事心理諮商輔導時，所涉及的倫理與法律議題及因應。（35 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0810&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0810&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "111-諮商與輔導-1",
@@ -12609,7 +12949,9 @@ window.LawScoringData = {
     "沒有回應受歧視議題。"
    ],
    "body": "請依弗蘭克（Viktor E. Frankl）「意義治療法」（Logotherapy）的理念與技巧，設計一份「化解高風險家庭孩子的成長困擾與被歧視」之個別輔導計畫。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0804&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0804&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "111-諮商與輔導-2",
@@ -12679,7 +13021,9 @@ window.LawScoringData = {
     "沒有舉例。"
    ],
    "body": "輔導青少年族群時，依其特質要運用那些諮商技巧以增強案主的自我覺察？青少年矯治犯罪部分，與那些專業團體合作最為有效？請舉例說明。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0804&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0804&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "111-諮商與輔導-3",
@@ -12749,7 +13093,9 @@ window.LawScoringData = {
     "沒有舉例。"
    ],
    "body": "個別諮商時，若有人或機構需要「個案的諮商資料」，要考慮到那些因素才能做最適當的處理，並請舉例說明。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0804&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0804&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "111-諮商與輔導-4",
@@ -12819,7 +13165,9 @@ window.LawScoringData = {
     "忽略反移情。"
    ],
    "body": "諮商員的「自我覺察」（Self-awareness）對諮商與輔導的成效有何影響？要如何自我改善？請舉例說明。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0804&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0804&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "112-諮商與輔導-1",
@@ -12890,7 +13238,9 @@ window.LawScoringData = {
     "沒有合法替代方案。"
    ],
    "body": "觸犯槍砲彈藥刀械管制條例及涉及故意傷害罪被判刑 3 年的甲男，在諮商中向你透露他想越獄去探望因車禍受重傷的母親，並請你不要告訴他人。請說明你將如何處理這種情況與進行個案諮商的方法。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0804&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0804&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "112-諮商與輔導-2",
@@ -12963,7 +13313,9 @@ window.LawScoringData = {
     "輔導只寫「同理」。"
    ],
    "body": "性平三法內涵為何？高三青少年乙女向你投訴國小五年級時導師見其駝背，假好心幫她矯正姿勢，冷不防把手伸進衣服，摸她胸部與私處，感覺痛苦至今，請問此事件應適用何法規處置？身為觀護人或輔導員有那些輔導處遇方式？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0804&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0804&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "112-諮商與輔導-3",
@@ -13033,7 +13385,9 @@ window.LawScoringData = {
     "處遇沒有分層。"
    ],
    "body": "網路霸凌事件層出不窮，最近調查發現近半數（47.0%）青少年曾經涉入網路霸凌事件，國中三年級的 A 女在諮商中表示在網路中被班上強悍的B 女霸凌，甚至要大家「取消掉與她的好友關係」、「讓她一個朋友都沒有」、「一起孤立她，別跟她講話」，甚至洩漏她的個資，這些網路的霸凌訊息無情的襲擊 A 女，甚至使其有輕生的念頭。身為觀護人的你請提出常見的網路霸凌成因、行為、受害者身心影響與對此案件的處遇策略。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0804&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0804&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "112-諮商與輔導-4",
@@ -13113,7 +13467,9 @@ window.LawScoringData = {
     "六次活動缺技巧。"
    ],
    "body": "Corey 將團體諮商歷程分為那幾個階段？請分別說明各個階段的主要內涵，並以青少年霸凌防治團體治療計畫（六次團體）為例，列出名稱、輔導重點及各個階段可使用的諮商技巧。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0804&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0804&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "113-諮商與輔導-1",
@@ -13183,7 +13539,9 @@ window.LawScoringData = {
     "沒有說明預防犯罪的機制。"
    ],
    "body": "何謂中途輟學學生？「生涯輔導」對中途輟學學生是非常重要的輔導策略，諮商的重點及技巧主要為何？可達到預防犯罪的效果為何？可以合作的專業團隊為何？（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0807&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0807&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "113-諮商與輔導-2",
@@ -13263,7 +13621,9 @@ window.LawScoringData = {
     "混淆家庭諮商與未成年人的保密規範。"
    ],
    "body": "「輔導與諮商專業倫理」中，對於以下 5 項範疇的規範為何？（一）當事人的最佳利益（二）個案研究（三）解釋輔導與諮商資料（四）家庭諮商（五）未成年人諮商（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0807&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0807&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "113-諮商與輔導-3",
@@ -13333,7 +13693,9 @@ window.LawScoringData = {
     "把外化寫成推卸責任。"
    ],
    "body": "面對非自願個案的諮商時，如何運用「敘事治療法」的諮商技巧？並舉\n一實例說明之。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0807&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0807&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "113-諮商與輔導-4",
@@ -13403,7 +13765,9 @@ window.LawScoringData = {
     "沒有實例。"
    ],
    "body": "阿德勒的「個體心理學」主張：「每個人都有不同程度的自卑感，因為我們都想讓自己更優秀。」自卑與優秀之間如何平衡及互補？個體如何克服自身缺陷，而非因缺陷而失去自我價值？請舉一實例說明之。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0807&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0807&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "114-諮商與輔導-1",
@@ -13474,7 +13838,9 @@ window.LawScoringData = {
     "把 SFBT 寫成探究原因。"
    ],
    "body": "請試述三項「焦點解決短期治療」的基本假設及治療目標。（15 分）若面對一位不願意去上學的青少年，你會如何使用「奇蹟問句」及「量尺問句」技術來進行輔導？（10 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0807&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0807&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "114-諮商與輔導-2",
@@ -13554,7 +13920,9 @@ window.LawScoringData = {
     "只定義沒有說明影響。"
    ],
    "body": "Aaron T. Beck 創建的認知治療認為心理問題的根源來自於錯誤的思考、從不當的前提或錯誤訊息進行推論或無法區分想像和真實等，因此有情緒困難的人常會出現某些認知扭曲方式。請先試述下列四種認知扭曲方式：「獨斷的推論」、「誇大與貶低」、「個人化」、「標籤化和錯誤標籤化」，再以一位易出現逞凶鬥狠行為或情緒的 16 歲少年為例，說明各認知扭曲方式如何造成其不適當的情緒或行為。（20 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0807&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0807&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "114-諮商與輔導-3",
@@ -13636,7 +14004,9 @@ window.LawScoringData = {
     "沒有定義。"
    ],
    "body": "請試述「網路／數位性別暴力」之定義，並請寫出五項青少年常見「網路／數位性別暴力」行為類型及做法。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0807&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0807&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "114-諮商與輔導-4",
@@ -13706,7 +14076,9 @@ window.LawScoringData = {
     "只寫 OARS。"
    ],
    "body": "動機式晤談認為想要改變個案長期形成的問題，就要協助個案產生改變的動機，因此動機式晤談重視採用五個策略以提高改變動機，及六個方法以強化對改變的承諾。請試述提高改變動機的五個策略及強化對改變的承諾的六個方法，並分別舉例說明之。（30 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0807&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0807&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "115-諮商與輔導-1",
@@ -13786,7 +14158,9 @@ window.LawScoringData = {
     "實例沒有對應概念。"
    ],
    "body": "包溫（Murray Bowen）的家庭系統理論強調，聯繫家庭成員的人際關係與情緒模式具有跨世代的傳遞性，因此透過「跨三代」的家族史分析，最能深入剖析家庭動力。包溫的理論架構共包含八個核心概念。請從這\n八個核心概念中任選五個，先分別敘述其理論意涵，接著針對每個概念，舉出一個具體的家庭互動實例來加以說明。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0807&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0807&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "115-諮商與輔導-2",
@@ -13856,7 +14230,9 @@ window.LawScoringData = {
     "治療目標少於三個。"
    ],
    "body": "少年事件處理法中的「少年」正處於自我認同與心靈發展的關鍵轉折期。請以榮格（Carl Jung）的分析心理學為基礎，回答下列問題：首先，請結合青少年階段的心理發展特徵，具體闡述「集體潛意識」（collectiveunconscious）、「原型」（archetype）與「個體化」（individuation）這三個核心概念的意涵。接著，請說明榮格學派會如何詮釋青少年的曝險行為，並據此論述該學派對曝險少年的治療目標為何（請至少列舉並詳細說明\n三個具體的治療目標）。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0807&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0807&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "115-諮商與輔導-3",
@@ -13936,7 +14312,9 @@ window.LawScoringData = {
     "因子名稱錯誤。"
    ],
    "body": "亞隆（Irvin Yalom）所提出的 11 項團體療效因子，被視為促進團體成員產生積極改變的核心機制。假設你是一位心理輔導員，正準備為 10 名曾使用依托咪酯毒品（俗稱喪屍煙彈）的 15 至 18 歲青少年，規劃一個為期八週（每週 90 分鐘）的小團體輔導。請從亞隆的 11 項團體療效因子中，挑選你認為最適合應用於此成癮青少年團體的五項因子，分別說明其核心概念，並詳細論述為何這五項因子特別契合此團體的設計需求。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0807&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0807&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
   },
   {
    "id": "115-諮商與輔導-4",
@@ -14006,8 +14384,10484 @@ window.LawScoringData = {
     "概念化只寫定義沒有功能。"
    ],
    "body": "個案概念化（case conceptualization）與紀錄撰寫是助人工作者的核心專業能力。請回答下列問題：首先，請具體說明何謂「個案概念化」，並闡述其在整體輔導歷程中具備那些關鍵功能。其次，請詳細解釋常見的「SOAP」輔導紀錄格式中，S（主觀資料）、O（客觀資料）、A（評估）、P（處遇計畫）四個向度各自代表的內涵與應包含之資訊。最後，請假想你正在輔導一位 30 歲的詐騙集團車手，請直接運用 SOAP 格式，完整撰寫一篇該次晤談的輔導紀錄範例。（25 分）",
-   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0807&q=1"
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0807&q=1",
+   "examType": "觀護人",
+   "focus": "觀護"
+  },
+  {
+   "id": "監獄官-108-刑法與少年事件處理法-1",
+   "kind": "case",
+   "label": "刑法與少年事件處理法",
+   "exam": "108 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 1,
+   "year": 108,
+   "points": 30,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "警察經同意進入住宅查找逃犯",
+   "overview": "測驗違法搜索罪與侵入住宅罪的構成要件，以及被害人同意的效果。",
+   "rows": [
+    {
+     "group": "甲",
+     "point": "第 307 條違法搜索罪",
+     "detail": "甲未持搜索票，但丙同意其進入查看；自願同意是否使搜索「依法令」，或屬阻卻構成要件的同意。",
+     "articles": [
+      "刑法第 307 條",
+      "刑事訴訟法第 131 條之 1"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "第 306 條侵入住宅罪",
+     "detail": "丙開門並讓甲進入，經住居權人同意，不屬「無故」侵入。",
+     "articles": [
+      "刑法第 306 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "同意的有效性",
+     "detail": "同意是否出於自願（公務員身分壓力），影響構成要件或違法性的判斷。",
+     "articles": [
+      "刑法第 307 條"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款",
+    "先判斷有無同意，再判斷同意的效果"
+   ],
+   "pitfalls": [
+    "直接認定違法搜索而忽略同意。",
+    "把同意放在罪責層次。",
+    "漏掉侵入住宅罪的「無故」要件。"
+   ],
+   "body": "警察甲認為因為販賣海洛因在逃亡中的乙在丙的住宅，因此上門按鈴。丙開門回應，甲出示服務證件說明身分，並且表示要看乙是否在丙的屋裡。丙讓甲進入丙的住宅，甲進入丙的住宅，不過，並沒有發現乙。請問，根據刑法，甲的行為刑責如何？（30 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=113&s=0604&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-108-刑法與少年事件處理法-2",
+   "kind": "case",
+   "label": "刑法與少年事件處理法",
+   "exam": "108 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 2,
+   "year": 108,
+   "points": 30,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "樓梯間紙箱被清潔人員回收",
+   "overview": "測驗竊盜罪的他人動產與構成要件錯誤，以及在公共空間堆放物品的評價。",
+   "rows": [
+    {
+     "group": "乙",
+     "point": "第 320 條竊盜罪：客觀要件",
+     "detail": "紙箱仍屬甲所有且在甲持有範圍，屬他人動產。",
+     "articles": [
+      "刑法第 320 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "乙",
+     "point": "構成要件錯誤",
+     "detail": "乙誤認紙箱是住戶不要的廢棄物，欠缺竊取他人動產的故意，阻卻故意。",
+     "articles": [
+      "刑法第 13 條"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "乙",
+     "point": "不法所有意圖",
+     "detail": "無償送交回收，是否有為自己或第三人不法所有的意圖。",
+     "articles": [
+      "刑法第 320 條第 1 項"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "堆放紙箱",
+     "detail": "其他住戶仍可側身通過，未致生往來危險，不成立第 185 條；屬行政管理問題。",
+     "articles": [
+      "刑法第 185 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款",
+    "甲、乙分論"
+   ],
+   "pitfalls": [
+    "直接認定乙竊盜既遂。",
+    "忽略構成要件錯誤。",
+    "對甲論以公共危險罪。"
+   ],
+   "body": "甲在自己住宅所在的大樓樓層樓梯間擺放紙箱，其他的住戶與清潔人員可以側身通過。清潔人員乙在進行打掃工作時認為前述紙箱是住戶不要的，而把紙箱取走並且帶到慈善團體設立的回收場無償回收。請問，根據刑法，甲、乙的行為刑責如何？（30 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=113&s=0604&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-108-刑法與少年事件處理法-3",
+   "kind": "essay",
+   "label": "刑法與少年事件處理法",
+   "exam": "108 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 3,
+   "year": 108,
+   "points": 20,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "少年保護事件調查程序的主導者",
+   "overview": "測驗少年保護事件的程序主導者是少年法院與少年調查官，而非檢察官。",
+   "rows": [
+    {
+     "group": "結論",
+     "point": "說法錯誤",
+     "detail": "少年保護事件由少年法院依職權調查，檢察官並非程序主導者。",
+     "articles": [
+      "第 3 條第 1 項",
+      "第 19 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "理由",
+     "point": "少年調查官先行調查",
+     "detail": "少年法院接受移送後，應先由少年調查官調查少年的行為、品格、家庭與環境並提出報告。",
+     "articles": [
+      "第 19 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "理由",
+     "point": "法院職權調查與檢察官的角色",
+     "detail": "法官或調查官得傳喚少年及法定代理人；檢察官只在第 27 條移送後的少年刑事案件主導偵查。",
+     "articles": [
+      "第 21 條第 1 項",
+      "第 27 條",
+      "第 67 條"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "依題目所問分段作答，先寫結論再說理由",
+    "條文引用到條、項、款",
+    "結論扣回少年健全自我成長（第 1 條）與保護優先"
+   ],
+   "pitfalls": [
+    "把少年保護事件當成刑事偵查。",
+    "漏掉少年調查官的角色。",
+    "沒有區分保護事件與刑事案件。"
+   ],
+   "body": "「少年保護事件的調查程序，檢察官是程序的主導者。」請根據少年事件處理法分析並且說明，這樣的說法是否正確？（20 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=113&s=0604&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-108-刑法與少年事件處理法-4",
+   "kind": "essay",
+   "label": "刑法與少年事件處理法",
+   "exam": "108 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 4,
+   "year": 108,
+   "points": 20,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "僅依調查官報告認定犯罪並裁定保護處分",
+   "overview": "測驗少年調查官報告不得作為認定事實唯一證據，以及保護處分應經審理程序。",
+   "rows": [
+    {
+     "group": "規範",
+     "point": "調查報告不得為唯一證據",
+     "detail": "少年調查官調查之結果，不得採為認定事實之唯一證據。",
+     "articles": [
+      "第 19 條第 2 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "規範",
+     "point": "保護處分須經審理",
+     "detail": "保護處分應於開始審理後，依審理結果以裁定諭知。",
+     "articles": [
+      "第 30 條",
+      "第 42 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "結論",
+     "point": "乙的作法不合法",
+     "detail": "僅憑調查報告認定竊盜並裁定保護處分，違反證據法則與程序保障。",
+     "articles": [
+      "第 19 條第 2 項"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "依題目所問分段作答，先寫結論再說理由",
+    "條文引用到條、項、款",
+    "結論扣回少年健全自我成長（第 1 條）與保護優先"
+   ],
+   "pitfalls": [
+    "認為調查報告即可作為唯一證據。",
+    "漏掉開始審理程序。",
+    "沒有連結程序保障。"
+   ],
+   "body": "甲（15 歲）因為普通竊盜罪遭警察移送少年法院，少年法院法官乙根據少年調查官丙的調查報告，認為甲有實行普通竊盜罪並且據此作成保護處分措施的裁定。請問，根據少年事件處理法，乙的作法是否合法？（20 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=113&s=0604&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-109-刑法與少年事件處理法-1",
+   "kind": "case",
+   "label": "刑法與少年事件處理法",
+   "exam": "109 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 1,
+   "year": 109,
+   "points": 35,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "取走放在門口準備送人的舊電視",
+   "overview": "測驗他人動產的判斷（拋棄物）、反面構成要件錯誤與不能未遂。",
+   "rows": [
+    {
+     "group": "乙",
+     "point": "電視是否仍為他人動產",
+     "detail": "甲雖有送人的打算，但尚未完成拋棄的意思表示，仍有所有權與持有；若認為已拋棄則屬無主物。",
+     "articles": [
+      "刑法第 320 條第 1 項"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "乙",
+     "point": "若仍為他人動產：竊盜既遂",
+     "detail": "乙認識是他人的電視仍搬走，具故意與不法所有意圖；內心掙扎顯示有違法性認識。",
+     "articles": [
+      "刑法第 320 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "乙",
+     "point": "若已為無主物：不能未遂",
+     "detail": "乙誤以為是他人動產（反面構成要件錯誤），實際無被害法益，依第 26 條判斷是否無危險而不罰。",
+     "articles": [
+      "刑法第 26 條",
+      "刑法第 320 條第 3 項"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款",
+    "先判斷電視的法律狀態，再分別推論"
+   ],
+   "pitfalls": [
+    "沒有討論拋棄的時點。",
+    "把「掙扎」當成阻卻故意。",
+    "忽略不能未遂。"
+   ],
+   "body": "甲因為購買全新的 4K 電視機而把原先放在客廳的舊電視機放到門口。當甲進入屋內打算寫「請自取」牌子時，乙路過看到放在門口的電視機，想說正好缺電視機，儘管內心有「偷拿別人電視機是不對的」的掙扎，還是把電視機搬回家。試問，乙之行為是否具有可罰性？（35分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=112&s=0604&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-109-刑法與少年事件處理法-2",
+   "kind": "case",
+   "label": "刑法與少年事件處理法",
+   "exam": "109 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 2,
+   "year": 109,
+   "points": 25,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "證人向檢察事務官說謊",
+   "overview": "測驗偽證罪的主體、場合與具結要件，以及其他可能罪名。",
+   "rows": [
+    {
+     "group": "丙",
+     "point": "第 168 條偽證罪的場合要件",
+     "detail": "偽證限於審判時或檢察官偵查時；檢察事務官受檢察官指揮詢問，是否屬「檢察官偵查時」，實務多採否定。",
+     "articles": [
+      "刑法第 168 條"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "丙",
+     "point": "具結要件",
+     "detail": "丙未經具結，不構成偽證。",
+     "articles": [
+      "刑法第 168 條"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "丙",
+     "point": "其他罪名",
+     "detail": "單純否認看見，不屬藏匿或使犯人隱避；亦非誣告，結論不罰。",
+     "articles": [
+      "刑法第 164 條第 1 項",
+      "刑法第 169 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款"
+   ],
+   "pitfalls": [
+    "把檢察事務官等同檢察官。",
+    "漏掉具結要件。",
+    "誤論使犯人隱避。"
+   ],
+   "body": "甲因為毀損罪案件而遭偵辦。偵查中，檢察事務官乙對證人丙提問：「是否有看到甲的毀損行為？」丙和甲為高中同學且非常要好，雖親眼看見甲之毀損犯行，卻仍回答：「沒有看到。」試問，丙之行為是否具有可罰性？（25分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=112&s=0604&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-109-刑法與少年事件處理法-3",
+   "kind": "essay",
+   "label": "刑法與少年事件處理法",
+   "exam": "109 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 3,
+   "year": 109,
+   "points": 20,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "選任非律師為少年輔佐人",
+   "overview": "測驗輔佐人的選任與非律師輔佐人的同意制度。",
+   "rows": [
+    {
+     "group": "規範",
+     "point": "得隨時選任輔佐人",
+     "detail": "少年、法定代理人或現在保護少年之人得隨時選任輔佐人。",
+     "articles": [
+      "第 31 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "規範",
+     "point": "非律師輔佐人須經同意",
+     "detail": "選任非律師為輔佐人者，應得少年法院之同意；不是只能選任律師。",
+     "articles": [
+      "第 31 條之 1"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "結論",
+     "point": "法院理由錯誤",
+     "detail": "法院以「只能選任律師」駁回不正確；應審酌丙是否適合並決定是否同意。",
+     "articles": [
+      "第 31 條之 1"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "依題目所問分段作答，先寫結論再說理由",
+    "條文引用到條、項、款",
+    "結論扣回少年健全自我成長（第 1 條）與保護優先"
+   ],
+   "pitfalls": [
+    "認為只能選任律師。",
+    "漏掉法院同意制度。",
+    "沒有回答法院決定是否正確。"
+   ],
+   "body": "甲（15歲）涉嫌實行普通傷害罪而開啟少年保護事件程序。調查中，甲的父親乙找朋友丙擔任甲的輔佐人，丙法律系畢業後在私立高中擔任公民老師。少年法院收到乙提出選任丙擔任甲輔佐人的聲請，以在調查中僅能選任律師擔任少年的輔佐人而駁回前述乙的聲請。試問，依照少年事件處理法，少年法院的決定是否正確？（20分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=112&s=0604&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-109-刑法與少年事件處理法-4",
+   "kind": "essay",
+   "label": "刑法與少年事件處理法",
+   "exam": "109 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 4,
+   "year": 109,
+   "points": 20,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "安置輔導期滿後聲請延長",
+   "overview": "測驗安置輔導的期間、延長的聲請人與時點。",
+   "rows": [
+    {
+     "group": "規範",
+     "point": "安置輔導期間",
+     "detail": "安置輔導為二月以上二年以下。",
+     "articles": [
+      "第 55 條之 2 第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "規範",
+     "point": "延長的聲請人與時點",
+     "detail": "安置輔導期滿，少年保護官、安置機構、少年、法定代理人等認有必要者，得聲請延長，以一次為限，不得逾二年。",
+     "articles": [
+      "第 55 條之 2 第 3 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "結論",
+     "point": "乙為適格聲請人",
+     "detail": "乙為法定代理人，屬得聲請之人，法院應開啟審查；多次逃跑亦可考慮撤銷安置改感化教育。",
+     "articles": [
+      "第 55 條之 2 第 3 項、第 5 項"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "依題目所問分段作答，先寫結論再說理由",
+    "條文引用到條、項、款",
+    "結論扣回少年健全自我成長（第 1 條）與保護優先"
+   ],
+   "pitfalls": [
+    "認為法定代理人不得聲請。",
+    "漏掉延長次數與期間限制。",
+    "沒有提到撤銷改感化教育的替代。"
+   ],
+   "body": "甲（16歲）因為竊盜罪遭少年法院裁定並執行安置輔導，因而被送入社會福利機構接受輔導。甲多次逃跑且不配合輔導計畫，二年之後，甲的父親乙據此認甲有繼續安置在機構中接受輔導的必要，並向少年法院聲請對甲延長執行安置輔導期間。試問，依照少年事件處理法，少年法院是否應根據乙的聲請開啟審查程序？（20分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=112&s=0604&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-110-刑法與少年事件處理法-1",
+   "kind": "case",
+   "label": "刑法與少年事件處理法",
+   "exam": "110 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 1,
+   "year": 110,
+   "points": 30,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "持鐵鎚打破車窗探頭入內即被捕",
+   "overview": "測驗竊盜著手的認定、加重竊盜事由與毀損的競合。",
+   "rows": [
+    {
+     "group": "甲",
+     "point": "著手的判斷",
+     "detail": "打破車窗探頭入內，已對車內財物的持有造成直接危險，屬著手竊盜。",
+     "articles": [
+      "刑法第 320 條第 3 項"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "加重竊盜事由",
+     "detail": "攜帶兇器（鐵鎚）、毀越安全設備（車窗）是否該當；汽車是否屬第 321 條的安全設備。",
+     "articles": [
+      "刑法第 321 條第 1 項第 2 款、第 3 款、第 2 項"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "毀損罪",
+     "detail": "打破車窗致令不堪用，成立毀損。",
+     "articles": [
+      "刑法第 354 條"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "競合",
+     "detail": "毀損與加重竊盜未遂的關係（吸收或想像競合）。",
+     "articles": [
+      "刑法第 55 條"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款"
+   ],
+   "pitfalls": [
+    "把打破車窗前的準備當成著手。",
+    "漏掉加重事由。",
+    "沒有處理毀損的競合。"
+   ],
+   "body": "甲攜帶鐵鎚於夜間行經繁華的商業區，見停放路邊之名貴私人跑車一輛，乃決意侵入該車竊取財物。隨後甲以鐵鎚打破駕駛座車窗，剛探頭入內時，就被行經該處的巡邏員警發現而逮捕。試問，依照刑法之規定，甲之行為應如何論罪？（30 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=114&s=0506&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-110-刑法與少年事件處理法-2",
+   "kind": "case",
+   "label": "刑法與少年事件處理法",
+   "exam": "110 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 2,
+   "year": 110,
+   "points": 30,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "隱瞞兇宅並說謊出售房屋",
+   "overview": "測驗詐欺罪的詐術（作為與不作為）、財產損害的判斷。",
+   "rows": [
+    {
+     "group": "甲",
+     "point": "詐術",
+     "detail": "丙詢問時甲答「否」，屬積極說謊的作為詐術；公告未揭露屬不作為詐術的爭點。",
+     "articles": [
+      "刑法第 339 條第 1 項"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "陷於錯誤與處分",
+     "detail": "丙因誤信非兇宅而支付三百萬元。",
+     "articles": [
+      "刑法第 339 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "財產損害",
+     "detail": "若依兇宅行情三百萬元交易，丙是否受有損害；以個別財產損害說或整體財產說判斷。",
+     "articles": [
+      "刑法第 339 條第 1 項"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "結論",
+     "detail": "成立詐欺取財既遂或否定，依所採見解說明。",
+     "articles": [
+      "刑法第 339 條"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款"
+   ],
+   "pitfalls": [
+    "只討論不作為詐術。",
+    "沒有討論財產損害。",
+    "結論模糊。"
+   ],
+   "body": "甲以貸款方式購買一棟透天厝之後，其配偶乙因故自殺於該屋內。甲迅速為乙辦完後事後一週，因不堪貸款負荷，欲將該房屋脫手，乃打聽附近兇宅行情後以自己名義張貼公告，其內容僅有「屋齡淺、屋況佳，脫手變現」及售價新臺幣（以下同）三百萬元。再經二週，丙看到公告而與甲聯繫表示欲購買該房屋。甲與丙交涉後，於簽約時，丙詢問該房屋是否為半年內曾有自殺或兇殺案之兇宅？甲答否。丙因此支付三百萬元予甲並將該房屋移轉登記至自己名下。丙搬入後不久，偶然自從事不動產仲介業之鄰居口中得知其所購房屋最近有人在內自殺，否則行情至少有六百萬元，乃憤而向檢察官提起詐欺罪告訴。試問，依照刑法之規定，甲之行為應如何論罪？（30 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=114&s=0506&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-110-刑法與少年事件處理法-3",
+   "kind": "essay",
+   "label": "刑法與少年事件處理法",
+   "exam": "110 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 3,
+   "year": 110,
+   "points": 20,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "不付審理確定後類推重新審理",
+   "overview": "測驗重新審理的要件與聲請人，以及不付審理裁定能否類推適用。",
+   "rows": [
+    {
+     "group": "規範",
+     "point": "重新審理的對象",
+     "detail": "條文規範的是「不付保護處分」確定後的重新審理，聲請人為被害人或其法定代理人，法院亦得依職權為之。",
+     "articles": [
+      "第 64 條之 2 第 1 項、第 3 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "爭點",
+     "point": "不付審理能否類推",
+     "detail": "不付審理與不付保護處分性質相近，是否得類推適用；需考量少年法安定性與不利益變更。",
+     "articles": [
+      "第 64 條之 2"
+     ],
+     "bonus": "可補充實務或學說對類推適用的見解。",
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "期間",
+     "point": "一年期間限制",
+     "detail": "重新審理於裁定確定後經過一年者不得為之。",
+     "articles": [
+      "第 64 條之 2 第 4 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "結論",
+     "point": "提出個人見解",
+     "detail": "說明採肯定或否定說及理由。",
+     "articles": [
+      "第 1 條"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "依題目所問分段作答，先寫結論再說理由",
+    "條文引用到條、項、款",
+    "結論扣回少年健全自我成長（第 1 條）與保護優先"
+   ],
+   "pitfalls": [
+    "沒有區分不付審理與不付保護處分。",
+    "漏掉一年期間。",
+    "沒有提出結論。"
+   ],
+   "body": "16 歲之少年甲因有觸犯強盜罪之嫌疑，經警察移送少年法院，少年法院調查過程中，甲矢口否認犯罪。法院因查無相關證據可認定甲有被移送之事實，於是作成不付審理之裁定，並告確定。其後，警察就同一強盜事件，循線發現另有少年乙、丙共同參與對被害人之強盜行為，乃將乙、丙移送少年法院。法院調查時，乙、丙在法庭上陳述甲才是本件強盜行為的主謀，且行為時在現場指揮與把風，法院再傳喚甲到庭作證與對質後，甲始承認確實有參與強盜行為之計畫與實行。因此，法院乃類推適用少年事件處理法第 64 條之 2 第 1 項第 2 款規定，裁定重新審理。試問，依照少年事件處理法，詳述法院之裁定是否適法？（20 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=114&s=0506&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-110-刑法與少年事件處理法-4",
+   "kind": "essay",
+   "label": "刑法與少年事件處理法",
+   "exam": "110 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 4,
+   "year": 110,
+   "points": 20,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "拒絕執行告誡處分時能否核發同行書",
+   "overview": "測驗告誡處分的執行與拒絕時的處理途徑。",
+   "rows": [
+    {
+     "group": "規範",
+     "point": "告誡屬轉介處分",
+     "detail": "不付審理並告誡，由少年調查官執行。",
+     "articles": [
+      "第 29 條第 1 項第 1 款、第 2 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "規範",
+     "point": "拒絕執行時的途徑",
+     "detail": "無正當理由拒絕接受第 29 條第 1 項處分，得聲請核發勸導書，無效者得留置觀察。",
+     "articles": [
+      "第 55 條之 3"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "爭點",
+     "point": "同行書的適用範圍",
+     "detail": "同行書規定於調查審理程序的傳喚不到場，用於執行階段是否適法有爭議。",
+     "articles": [
+      "第 22 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "結論",
+     "point": "提出結論",
+     "detail": "多數見解認應依勸導書與留置觀察程序處理，不宜逕以同行書強制。",
+     "articles": [
+      "第 55 條之 3"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "依題目所問分段作答，先寫結論再說理由",
+    "條文引用到條、項、款",
+    "結論扣回少年健全自我成長（第 1 條）與保護優先"
+   ],
+   "pitfalls": [
+    "直接認定同行書合法。",
+    "漏掉勸導書與留置觀察。",
+    "沒有說明同行書的適用階段。"
+   ],
+   "body": "少年甲因涉犯刑法上竊盜罪，經檢察官移送少年法院。少年法院基於少年調查官調查結果，認為情節輕微而無進行審理之必要，因此裁定不付審理並施以告誡處分。惟該裁定確定後，甲即無正當理由拒絕到院執行，法院乃對甲核發同行書，強制少年到場接受告誡。試問，依據現行少年事件處理法，法院核發同行書之處理是否適法？（20 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=114&s=0506&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-111-刑法與少年事件處理法-1",
+   "kind": "case",
+   "label": "刑法與少年事件處理法",
+   "exam": "111 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 1,
+   "year": 111,
+   "points": 40,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "在咖啡店誤拿他人同款筆電",
+   "overview": "測驗構成要件錯誤阻卻竊盜故意，以及發現後繼續持有的評價。",
+   "rows": [
+    {
+     "group": "乙",
+     "point": "取走時：構成要件錯誤",
+     "detail": "乙誤認是自己的筆電，欠缺竊取他人動產的故意與不法所有意圖，不成立竊盜。",
+     "articles": [
+      "刑法第 13 條",
+      "刑法第 320 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "乙",
+     "point": "過失不罰",
+     "detail": "竊盜無過失犯處罰規定。",
+     "articles": [
+      "刑法第 12 條第 2 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "乙",
+     "point": "發現後繼續持有",
+     "detail": "若發現後占為己有，屬侵占自己持有他人之物或侵占脫離持有物，視持有基礎判斷。",
+     "articles": [
+      "刑法第 335 條第 1 項",
+      "刑法第 337 條"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "乙",
+     "point": "結論",
+     "detail": "取走時不罰；發現後的處置決定是否另成立侵占。",
+     "articles": [
+      "刑法第 335 條"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款",
+    "依時序分取走時與發現後"
+   ],
+   "pitfalls": [
+    "直接論竊盜。",
+    "忽略發現後的侵占問題。",
+    "把錯誤放在違法性層次。"
+   ],
+   "body": "甲在咖啡店以筆記型電腦工作，因為接電話而離開座位。坐在隔壁桌、剛剛從洗手間回座的乙發現約會時間已經遲到，急忙之下誤將甲的筆記型電腦拿走並離開咖啡店。後來，乙在手提包裡發現自己的同款筆記型電腦。請問，根據刑法，乙之行為是否具有可罰性？（40 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=112&s=0506&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-111-刑法與少年事件處理法-2",
+   "kind": "essay",
+   "label": "刑法與少年事件處理法",
+   "exam": "111 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 2,
+   "year": 111,
+   "points": 20,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "詐術締婚罪的確定裁判是否須在故意範圍內",
+   "overview": "測驗客觀處罰條件的概念。",
+   "rows": [
+    {
+     "group": "結論",
+     "point": "說法錯誤",
+     "detail": "婚姻無效或撤銷之確定裁判屬客觀處罰條件，不在故意的認識範圍。",
+     "articles": [
+      "刑法第 238 條"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "理由",
+     "point": "客觀處罰條件的意義",
+     "detail": "不屬構成要件，不需行為人認識，僅作為處罰的前提條件。",
+     "articles": [
+      "刑法第 238 條"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "理由",
+     "point": "與故意的關係",
+     "detail": "行為人故意只需及於以詐術締結無效或得撤銷之婚姻。",
+     "articles": [
+      "刑法第 13 條"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "依題目所問分段作答，先寫結論再說理由",
+    "條文引用到條、項、款",
+    "結論扣回少年健全自我成長（第 1 條）與保護優先"
+   ],
+   "pitfalls": [
+    "認為確定裁判須在故意範圍內。",
+    "沒有說明客觀處罰條件。",
+    "混淆構成要件與處罰條件。"
+   ],
+   "body": "刑法第 238 條：「以詐術締結無效或得撤銷之婚姻，因而致婚姻無效之裁判或撤銷婚姻之裁判確定者，處三年以下有期徒刑。」主觀上，行為人的故意須及於「婚姻無效或撤銷婚姻之確定裁判」。請問，這樣的說法是否正確？（20 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=112&s=0506&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-111-刑法與少年事件處理法-3",
+   "kind": "essay",
+   "label": "刑法與少年事件處理法",
+   "exam": "111 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 3,
+   "year": 111,
+   "points": 20,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "涉犯第 227 條第 1 項的少年未選任輔佐人即受詢問",
+   "overview": "測驗強制輔佐的要件。",
+   "rows": [
+    {
+     "group": "前提",
+     "point": "所涉罪名的刑度",
+     "detail": "對未滿十四歲之人性交，最輕本刑三年以上有期徒刑。",
+     "articles": [
+      "刑法第 227 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "規範",
+     "point": "應指定輔佐人",
+     "detail": "犯最輕本刑三年以上有期徒刑之罪，未經選任輔佐人者，少年法院應指定適當之人輔佐少年。",
+     "articles": [
+      "第 31 條第 2 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "結論",
+     "point": "未指定即詢問不合法",
+     "detail": "少年法院應先指定輔佐人；並應通知法定代理人陪同、告知權利。",
+     "articles": [
+      "第 31 條第 2 項",
+      "第 3 條之 1",
+      "第 3 條之 2"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "依題目所問分段作答，先寫結論再說理由",
+    "條文引用到條、項、款",
+    "結論扣回少年健全自我成長（第 1 條）與保護優先"
+   ],
+   "pitfalls": [
+    "漏掉強制輔佐。",
+    "罪名刑度判斷錯誤。",
+    "沒有回答是否合法。"
+   ],
+   "body": "甲（16 歲）涉嫌實行刑法第 227 條第 1 項之行為。少年法院對甲開啟保護事件程序，調查中，甲沒有選任輔佐人。少年法院對甲詢問。請問，根據少年事件處理法，少年法院的行為是否合法？（20 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=112&s=0506&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-111-刑法與少年事件處理法-4",
+   "kind": "essay",
+   "label": "刑法與少年事件處理法",
+   "exam": "111 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 4,
+   "year": 111,
+   "points": 20,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "已確定可罰性但處分種類未定",
+   "overview": "測驗交付觀察與資源整合會議。",
+   "rows": [
+    {
+     "group": "規範",
+     "point": "交付觀察",
+     "detail": "為決定應為何種保護處分，得裁定將少年交付少年調查官六月以內期間之觀察，並提出報告。",
+     "articles": [
+      "第 44 條第 1 項、第 3 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "規範",
+     "point": "交付適當機關觀察",
+     "detail": "得將少年交付適當之機關、學校、團體或個人觀察，受少年調查官指導。",
+     "articles": [
+      "第 44 條第 2 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "規範",
+     "point": "徵詢意見與資源會議",
+     "detail": "裁定前得徵詢意見、召開整合資源會議。",
+     "articles": [
+      "第 42 條第 5 項"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "依題目所問分段作答，先寫結論再說理由",
+    "條文引用到條、項、款",
+    "結論扣回少年健全自我成長（第 1 條）與保護優先"
+   ],
+   "pitfalls": [
+    "漏掉交付觀察。",
+    "觀察期間寫錯。",
+    "沒有連結少年教養需求。"
+   ],
+   "body": "甲（15 歲）涉嫌實行刑法第 321 條第 1 項的加重竊盜罪。少年法院確定甲有可罰性，但應採取何種保護處分措施以滿足甲的教養需求還無法確定。請問，根據少年事件處理法，少年法院接下來應該如何決定？（20 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=112&s=0506&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-112-刑法與少年事件處理法-1",
+   "kind": "case",
+   "label": "刑法與少年事件處理法",
+   "exam": "112 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 1,
+   "year": 112,
+   "points": 30,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "夜間打獵誤將同伴當成山豬射殺",
+   "overview": "測驗不等價客體錯誤與過失致死。",
+   "rows": [
+    {
+     "group": "甲",
+     "point": "殺人罪的故意",
+     "detail": "甲以為是山豬，對「人」欠缺殺人故意，屬不等價客體錯誤，阻卻殺人故意。",
+     "articles": [
+      "刑法第 13 條",
+      "刑法第 271 條"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "第 276 條過失致死",
+     "detail": "夜間視線不佳且明知有同伴脫隊，未確認目標即開槍，違反注意義務。",
+     "articles": [
+      "刑法第 276 條"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "對山豬的評價",
+     "detail": "野生動物非他人財物，不成立毀損未遂；野保法另論。",
+     "articles": [
+      "刑法第 354 條"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款"
+   ],
+   "pitfalls": [
+    "把不等價客體錯誤當成不重要錯誤。",
+    "漏掉過失致死。",
+    "忽略注意義務的具體說明。"
+   ],
+   "body": "甲與多位朋友相約，持合法獵槍深夜至山中打獵。其中友人乙因頭燈故障，半途脫隊，其他人不以為意，繼續尋找獵物。後來，甲見遠處叢林中有一對粉紅色的光點閃爍，以為是山豬的眼睛，心想機不可失，趕緊舉槍朝光點處射擊，沒想到卻使乙中彈身亡。原來，乙脫隊後找了一支小手電筒照明，回到山上欲與其他人會合，但手電筒的光線經乙的眼鏡折射後，反射出粉紅色光，甲所看見的山豬眼睛，實際上是乙戴在臉上的眼鏡。試問甲之行為在刑法上應如何評價？（30 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=112&s=0506&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-112-刑法與少年事件處理法-2",
+   "kind": "case",
+   "label": "刑法與少年事件處理法",
+   "exam": "112 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 2,
+   "year": 112,
+   "points": 30,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "員警填寫較輕違規事實",
+   "overview": "測驗公務員登載不實、圖利罪的要件。",
+   "rows": [
+    {
+     "group": "甲",
+     "point": "第 213 條公務員登載不實",
+     "detail": "明知違規事實為紅燈右轉，卻登載為未按鳴喇叭，屬登載不實於職務上所掌公文書。",
+     "articles": [
+      "刑法第 213 條"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "足以生損害",
+     "detail": "使國家罰鍰收入與交通秩序受影響，足以生損害於公眾。",
+     "articles": [
+      "刑法第 213 條"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "圖利罪",
+     "detail": "明知違背法令使乙獲得少繳罰鍰的利益；與登載不實的競合。",
+     "articles": [
+      "刑法第 131 條",
+      "貪污治罪條例"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款"
+   ],
+   "pitfalls": [
+    "漏掉「足以生損害」。",
+    "圖利罪沒有判斷「因而獲得利益」。",
+    "沒有處理競合。"
+   ],
+   "body": "員警甲在執行交通違規取締任務時，攔下紅燈右轉的機車騎士乙，發現乙是熟識的鄰居阿伯。乙的違規事實依法應裁處新臺幣（下同）600 至1,800 元罰鍰，但甲其實不想對乙開單，只是既已將乙攔停，眾目睽睽之下直接放乙走又不好看，於是在製作舉發違反道路交通管理事件通知單（俗稱「紅單」）時，於違規事實欄位填寫處罰較輕的「未依規定按鳴喇叭」，僅裁處乙罰鍰 300 元。試問甲之行為在刑法上應如何評價？（30 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=112&s=0506&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-112-刑法與少年事件處理法-3",
+   "kind": "essay",
+   "label": "刑法與少年事件處理法",
+   "exam": "112 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 3,
+   "year": 112,
+   "points": 20,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "調查程序終結時的裁定種類",
+   "overview": "測驗調查終結時少年法院可為的各種裁定。",
+   "rows": [
+    {
+     "group": "裁定",
+     "point": "移送檢察官",
+     "detail": "觸犯刑罰法律且符合第 27 條第 1 項、第 2 項情形。",
+     "articles": [
+      "第 27 條"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "裁定",
+     "point": "不付審理",
+     "detail": "無付保護處分之原因或不應付審理；或情節輕微並為轉介處分。",
+     "articles": [
+      "第 28 條",
+      "第 29 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "裁定",
+     "point": "開始審理",
+     "detail": "認為應付審理者，應為開始審理之裁定。",
+     "articles": [
+      "第 30 條"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "附隨",
+     "point": "修復措施",
+     "detail": "不付審理前得轉介修復或使少年道歉、悔過、賠償。",
+     "articles": [
+      "第 29 條第 3 項"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "依題目所問分段作答，先寫結論再說理由",
+    "條文引用到條、項、款",
+    "結論扣回少年健全自我成長（第 1 條）與保護優先"
+   ],
+   "pitfalls": [
+    "漏掉開始審理裁定。",
+    "把審理後的處分也列進來。",
+    "沒有區分第 28 條與第 29 條。"
+   ],
+   "body": "少年法院在調查程序終結時，可能作出那些種類的裁定？（20 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=112&s=0506&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-112-刑法與少年事件處理法-4",
+   "kind": "essay",
+   "label": "刑法與少年事件處理法",
+   "exam": "112 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 4,
+   "year": 112,
+   "points": 20,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "少年被裁定進入少年觀護所的情形",
+   "overview": "測驗收容、留置觀察與羈押三種進入少年觀護所的情形。",
+   "rows": [
+    {
+     "group": "調查審理中",
+     "point": "收容",
+     "detail": "不能責付或責付顯不適當時，命收容於少年觀護所，期間有限制。",
+     "articles": [
+      "第 26 條第 1 項第 2 款",
+      "第 26 條之 2"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "執行中",
+     "point": "留置觀察",
+     "detail": "保護管束違反應遵守事項不服從勸導二次以上；或拒絕轉介、訓誡、安置處分經勸導無效，留置觀察五日內。",
+     "articles": [
+      "第 55 條第 3 項",
+      "第 55 條之 3"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "刑事案件",
+     "point": "羈押",
+     "detail": "少年被告非有不得已不得羈押，羈押於少年觀護所。",
+     "articles": [
+      "第 71 條第 1 項、第 2 項"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "依題目所問分段作答，先寫結論再說理由",
+    "條文引用到條、項、款",
+    "結論扣回少年健全自我成長（第 1 條）與保護優先"
+   ],
+   "pitfalls": [
+    "漏掉留置觀察。",
+    "漏掉少年刑事案件的羈押。",
+    "收容期間寫錯。"
+   ],
+   "body": "依現行少年事件處理法之規定，在那些情況下，少年會被裁定住進少年觀護所中？（20 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=112&s=0506&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-113-刑法與少年事件處理法-1",
+   "kind": "essay",
+   "label": "刑法與少年事件處理法",
+   "exam": "113 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 1,
+   "year": 113,
+   "points": 30,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "少年時緩刑期間成年後另犯他罪能否再宣告緩刑",
+   "overview": "測驗緩刑要件中的「未曾受有期徒刑以上刑之宣告」與緩刑期滿效果。",
+   "rows": [
+    {
+     "group": "規範",
+     "point": "緩刑要件",
+     "detail": "未曾因故意犯罪受有期徒刑以上刑之宣告，或前案執行完畢五年內未再受宣告。",
+     "articles": [
+      "刑法第 74 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "規範",
+     "point": "緩刑期滿的效果",
+     "detail": "緩刑期滿未經撤銷，刑之宣告失其效力；期滿前宣告仍有效。",
+     "articles": [
+      "刑法第 76 條"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "適用",
+     "point": "緩刑期滿前不符要件",
+     "detail": "後案於前案緩刑期滿前審判，前案宣告仍存在，原則上不符第 74 條第 1 項第 1 款。",
+     "articles": [
+      "刑法第 74 條第 1 項"
+     ],
+     "bonus": "可補充實務見解並核對出處。",
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "少年特別規定",
+     "point": "少年前案的影響",
+     "detail": "少年刑之宣告執行完畢視為未曾犯罪僅限公權資格；塗銷規定不改變緩刑要件判斷。",
+     "articles": [
+      "第 78 條第 2 項",
+      "第 83 條之 1"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "依題目所問分段作答，先寫結論再說理由",
+    "條文引用到條、項、款",
+    "結論扣回少年健全自我成長（第 1 條）與保護優先"
+   ],
+   "pitfalls": [
+    "把少年前案當然排除。",
+    "漏掉緩刑期滿的效果。",
+    "沒有明確回答可否。"
+   ],
+   "body": "被告甲先前因故意犯罪之少年刑事案件，經少年法院（庭）判處有期徒刑 2 年，緩刑 5 年確定，甲成年後於緩刑期間另犯他罪，請問後案法院於緩刑期滿前，可否為緩刑之宣告？（30 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=113&s=0505&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-113-刑法與少年事件處理法-2",
+   "kind": "case",
+   "label": "刑法與少年事件處理法",
+   "exam": "113 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 2,
+   "year": 113,
+   "points": 30,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "以深偽合成影像進行感情詐騙",
+   "overview": "測驗加重詐欺的「電腦合成不實影像」事由。",
+   "rows": [
+    {
+     "group": "甲",
+     "point": "詐欺取財",
+     "detail": "以虛構美女與母親生病施用詐術，使乙交付 60 萬元。",
+     "articles": [
+      "刑法第 339 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "加重事由",
+     "detail": "以電腦合成或其他科技方法製作他人不實影像、聲音犯之；合成的虛構人物是否屬「他人」影像，需說明見解。",
+     "articles": [
+      "刑法第 339 條之 4 第 1 項第 4 款"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "接續犯與罪數",
+     "detail": "陸續詐得屬接續一罪。",
+     "articles": [
+      "刑法第 339 條之 4"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款"
+   ],
+   "pitfalls": [
+    "只論普通詐欺。",
+    "漏掉第 4 款。",
+    "罪數未說明。"
+   ],
+   "body": "甲、乙均為 30 歲男子，都在同一家公司工作。某日，甲在員工餐廳用餐中與乙閒聊，意外得知乙單身多年一直想要結交異性朋友，甲以可介紹美女為理由取得乙的通訊方式。當日晚上，甲以深偽技術（Deepfake）製作合成美女影像與聲音邀約乙視訊，乙以為視訊中的美女為真，當下即墜入情網，並開啟每日視訊熱戀模式。一個月後，甲所冒充之美女在視訊中以母親生重病，已無錢給母親治病為由，陸續從乙處詐得新臺幣60 萬元，請問甲之行為在刑法上構成什麼罪？（30 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=113&s=0505&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-113-刑法與少年事件處理法-3",
+   "kind": "essay",
+   "label": "刑法與少年事件處理法",
+   "exam": "113 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 3,
+   "year": 113,
+   "points": 20,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "性影像恐嚇事件的命遵守事項",
+   "overview": "測驗少年法院於責付時命少年遵守事項的規定。",
+   "rows": [
+    {
+     "group": "前提",
+     "point": "事件類型",
+     "detail": "以性影像恐嚇取財，屬以性影像觸犯第 346 條的事件。",
+     "articles": [
+      "第 26 條第 3 項",
+      "刑法第 346 條"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "遵守事項",
+     "point": "禁止危害與接近",
+     "detail": "禁止對被害人實施危害、恐嚇騷擾接觸跟蹤、無正當理由接近其住居所學校等。",
+     "articles": [
+      "第 26 條第 3 項第 1 款"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "遵守事項",
+     "point": "性影像相關",
+     "detail": "禁止重製散布性影像；提出或交付性影像；移除或申請刪除已上傳的性影像；其他危害被害人事項。",
+     "articles": [
+      "第 26 條第 3 項第 2 款至第 5 款"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "準用",
+     "point": "被害人保護規定",
+     "detail": "準用犯罪被害人權益保障法相關規定。",
+     "articles": [
+      "第 26 條第 4 項"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "依題目所問分段作答，先寫結論再說理由",
+    "條文引用到條、項、款",
+    "結論扣回少年健全自我成長（第 1 條）與保護優先"
+   ],
+   "pitfalls": [
+    "只列一般禁止接近事項。",
+    "漏掉性影像的移除與交付。",
+    "條項引用錯誤。"
+   ],
+   "body": "國二生甲與外校國三生乙經由網路遊戲結識，網聊幾次後，甲建議裸聊，乙禁不住對方一再要求，在 2024 年 7 月 1 日某時同意視訊裸聊，沒想到竟遭甲側錄存檔，並威脅匯款 2 萬元到指定帳號，不然就要將乙的影片散布到網路上。乙當下告知父母，報案後經少年事件程序進行處理。請問本案除有涉及到兒童及少年性剝削防制條例第 36 條第 2、3 項外，少年法院（庭）認有必要時，得命少年於事件終結確定前遵守那些事項？（20 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=113&s=0505&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-113-刑法與少年事件處理法-4",
+   "kind": "essay",
+   "label": "刑法與少年事件處理法",
+   "exam": "113 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 4,
+   "year": 113,
+   "points": 20,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "告誡與訓誡的定義",
+   "overview": "測驗兩種處分的性質、程序與執行者。",
+   "rows": [
+    {
+     "group": "告誡",
+     "point": "不付審理的轉介處分",
+     "detail": "情節輕微以不付審理為適當時，裁定不付審理並告誡，由少年調查官執行。",
+     "articles": [
+      "第 29 條第 1 項第 1 款、第 2 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "訓誡",
+     "point": "保護處分",
+     "detail": "審理後諭知訓誡，由法官指明不良行為、曉諭應遵守事項並得命立悔過書，並得予假日生活輔導。",
+     "articles": [
+      "第 42 條第 1 項第 1 款",
+      "第 50 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "比較",
+     "point": "差異",
+     "detail": "程序階段、性質、執行者與附隨處分不同。",
+     "articles": [
+      "第 29 條",
+      "第 50 條"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "依題目所問分段作答，先寫結論再說理由",
+    "條文引用到條、項、款",
+    "結論扣回少年健全自我成長（第 1 條）與保護優先"
+   ],
+   "pitfalls": [
+    "把兩者混為一談。",
+    "漏掉執行者。",
+    "沒有比較。"
+   ],
+   "body": "請說明少年事件處理法中「告誡」與「訓誡」之定義。（20 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=113&s=0505&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-114-刑法與少年事件處理法-1",
+   "kind": "case",
+   "label": "刑法與少年事件處理法",
+   "exam": "114 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 1,
+   "year": 114,
+   "points": 25,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "限制出境後躲到深山經通緝",
+   "overview": "測驗脫逃罪的主體與自我藏匿不罰。",
+   "rows": [
+    {
+     "group": "甲",
+     "point": "第 161 條脫逃罪",
+     "detail": "脫逃罪主體須為依法逮捕、拘禁之人；甲僅受限制出境，未被逮捕拘禁。",
+     "articles": [
+      "刑法第 161 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "藏匿自己",
+     "detail": "藏匿犯人罪的客體是他人，犯人自己藏匿不罰。",
+     "articles": [
+      "刑法第 164 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "結論",
+     "detail": "躲在深山不成立犯罪；程序上依通緝處理。",
+     "articles": [
+      "刑法第 161 條"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款"
+   ],
+   "pitfalls": [
+    "把限制出境當成拘禁。",
+    "論以藏匿犯人罪。",
+    "沒有明確結論。"
+   ],
+   "body": "甲涉犯竊盜罪，經檢察官偵查後，諭知限制出境，未料甲返家後躲至深山，經檢察官合法傳喚後未再出庭接受偵訊，並被發布通緝，請問甲躲在深山行為成立何罪？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=114&s=0506&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-114-刑法與少年事件處理法-2",
+   "kind": "case",
+   "label": "刑法與少年事件處理法",
+   "exam": "114 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 2,
+   "year": 114,
+   "points": 25,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "警察放走酒駕的好友之子",
+   "overview": "測驗公務員縱放人犯罪的要件與使犯人隱避罪。",
+   "rows": [
+    {
+     "group": "甲",
+     "point": "第 163 條縱放",
+     "detail": "縱放罪客體為「職務上依法逮捕、拘禁之人」；乙是否已被逮捕是關鍵。",
+     "articles": [
+      "刑法第 163 條第 1 項"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "若未逮捕：使犯人隱避",
+     "detail": "乙為酒駕現行犯，甲讓其離開以免受追訴，可能成立使犯人隱避；並檢討公務員假借職務的加重。",
+     "articles": [
+      "刑法第 164 條第 1 項",
+      "刑法第 134 條"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "乙",
+     "point": "酒駕罪",
+     "detail": "吐氣酒精濃度 0.8 毫克，成立酒駕罪。",
+     "articles": [
+      "刑法第 185 條之 3 第 1 項第 1 款"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款"
+   ],
+   "pitfalls": [
+    "未判斷是否已逮捕就論縱放。",
+    "漏掉使犯人隱避。",
+    "忽略乙的酒駕罪。"
+   ],
+   "body": "警察甲發現乙騎機車且路徑蛇行，乃將乙攔下並進行吐氣酒測，測量數值為每公升 0.8 毫克，甲認出乙為其好友丙之子，希望乙能免受刑事訴追，便要乙立即離開現場。請問甲成立何罪？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=114&s=0506&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-114-刑法與少年事件處理法-3",
+   "kind": "essay",
+   "label": "刑法與少年事件處理法",
+   "exam": "114 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 3,
+   "year": 114,
+   "points": 25,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "無再犯危險卻諭知安置輔導",
+   "overview": "測驗保護處分的比例原則與需保護性判斷。",
+   "rows": [
+    {
+     "group": "規範",
+     "point": "保護處分的種類",
+     "detail": "訓誡、保護管束、安置輔導、感化教育。",
+     "articles": [
+      "第 42 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "判斷",
+     "point": "需保護性與比例原則",
+     "detail": "應依少年需保護性選擇最小侵害且有效的處分；無再犯危險時，安置輔導屬過度介入。",
+     "articles": [
+      "第 1 條",
+      "第 42 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "判斷",
+     "point": "過渡性教育措施",
+     "detail": "執行過渡性教育措施的處所屬安置輔導的類型之一，並非另一種處分。",
+     "articles": [
+      "第 42 條第 1 項第 3 款"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "結論",
+     "point": "作法不當",
+     "detail": "應考慮訓誡或不付保護處分等較輕措施。",
+     "articles": [
+      "第 41 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "依題目所問分段作答，先寫結論再說理由",
+    "條文引用到條、項、款",
+    "結論扣回少年健全自我成長（第 1 條）與保護優先"
+   ],
+   "pitfalls": [
+    "把過渡性教育措施當成獨立處分。",
+    "沒有連結需保護性。",
+    "沒有明確結論。"
+   ],
+   "body": "甲（16 歲）因涉嫌實行普通傷害罪而開啟少年保護事件程序。少年法院依法調查事實後認為：甲乃一時情緒激動，雖有成長過程中的心理發展問題，但應無再犯危險。少年法院據此對甲宣告安置福利教養機構，並執行過渡性教育措施；請問，根據少年事件處理法，少年法院的作法是否正確？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=114&s=0506&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-114-刑法與少年事件處理法-4",
+   "kind": "essay",
+   "label": "刑法與少年事件處理法",
+   "exam": "114 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 4,
+   "year": 114,
+   "points": 25,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "法定代理人經少年調查官傳喚無故不到",
+   "overview": "測驗少年調查官的傳喚權與同行書的核發。",
+   "rows": [
+    {
+     "group": "規範",
+     "point": "調查官的傳喚",
+     "detail": "少年調查官得傳喚少年、法定代理人到場，通知書由調查官簽名並記載無故不到得強制同行。",
+     "articles": [
+      "第 21 條第 1 項、第 3 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "處理",
+     "point": "請求法官核發同行書",
+     "detail": "法定代理人經合法傳喚無正當理由不到場，法官得依職權或依少年調查官請求發同行書。",
+     "articles": [
+      "第 22 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "執行",
+     "point": "同行書的執行",
+     "detail": "同行書由執達員、司法警察執行，並注意身體及名譽。",
+     "articles": [
+      "第 23 條第 1 項、第 2 項"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "依題目所問分段作答，先寫結論再說理由",
+    "條文引用到條、項、款",
+    "結論扣回少年健全自我成長（第 1 條）與保護優先"
+   ],
+   "pitfalls": [
+    "認為調查官可自行核發同行書。",
+    "漏掉合法傳喚的要件。",
+    "沒有處理執行。"
+   ],
+   "body": "甲（15 歲）涉嫌實行普通竊盜罪，少年法院依法對甲開啟少年保護事件程序。少年調查官乙為了掌握甲的學習和成長背景，對甲的父親丙發出通知書以傳喚丙到場，未料丙竟無故不到場；請問，根據少年事件處理法，為了調查事實，乙應如何處理？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=114&s=0506&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-115-刑法與少年事件處理法-1",
+   "kind": "case",
+   "label": "刑法與少年事件處理法",
+   "exam": "115 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 1,
+   "year": 115,
+   "points": 25,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "深夜加油站五人攔車包夾",
+   "overview": "測驗妨害秩序罪的「公眾得出入之場所」與危害公共秩序的判斷。",
+   "rows": [
+    {
+     "group": "甲、丙等",
+     "point": "第 150 條的構成要件",
+     "detail": "在公眾得出入之場所聚集三人以上下手實施強暴；加油站屬公眾得出入場所。",
+     "articles": [
+      "刑法第 150 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲、丙等",
+     "point": "是否須危害公共秩序",
+     "detail": "深夜現場無其他民眾，僅針對特定人的私人糾紛，是否已波及公共安寧秩序，實務多要求有外溢危險。",
+     "articles": [
+      "刑法第 150 條第 1 項"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲、丙等",
+     "point": "強制罪",
+     "detail": "以包夾攔停、拉扯車門妨害乙自由離去，成立強制罪。",
+     "articles": [
+      "刑法第 304 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲、丙等",
+     "point": "共同正犯與競合",
+     "detail": "五人有犯意聯絡；說明強制罪與妨害秩序罪的關係。",
+     "articles": [
+      "刑法第 28 條",
+      "刑法第 55 條"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款"
+   ],
+   "pitfalls": [
+    "只看人數就論第 150 條。",
+    "漏掉強制罪。",
+    "沒有討論危害公共秩序的要件。"
+   ],
+   "body": "甲男與乙女為前男女朋友，甲男因不滿乙女提出分手並另結新歡，心生怨恨。甲男於民國 114 年 11 月 10 日凌晨 2 時許，得知乙女行蹤後，夥同丙男等 4 人，在市區某 24 小時營業之加油站旁，駕駛兩輛私家車前後夾擊，強行將乙女駕駛之車輛攔停。過程中，甲男下車狂敲乙女車窗，並大聲辱罵、喝令乙女下車談判情感糾紛；丙男等 4 人則站在車旁拉扯車門把手、猛踹車輪，並輪流對乙女車輛猛閃遠光燈及按喇叭，以此現場人數與車輛包夾之優勢，使乙女驚恐萬分，既無法前後駛離，亦不敢下車，以此方式妨害乙女自由離去之權利。因時值深夜，加油站內除 1 名員工在營業廳內，並無其他民眾與車輛。請說明甲男及丙男等共 5 人是否成立《刑法》第 150 條第 1 項後段之在公眾得出入之場所聚集 3 人以上下手實施強暴罪。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=116&s=0506&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-115-刑法與少年事件處理法-2",
+   "kind": "essay",
+   "label": "刑法與少年事件處理法",
+   "exam": "115 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 2,
+   "year": 115,
+   "points": 25,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "無期徒刑假釋中再犯撤銷後的殘餘刑期",
+   "overview": "測驗撤銷假釋的要件與殘刑的計算。此題涉及近年修法，殘刑計算請以最新條文核對。",
+   "rows": [
+    {
+     "group": "撤銷假釋",
+     "point": "應撤銷的情形",
+     "detail": "假釋中因故意更犯罪，受逾六月有期徒刑之宣告確定者，撤銷其假釋；本題傷害罪八月，應撤銷。",
+     "articles": [
+      "刑法第 78 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "撤銷效果",
+     "point": "出獄日數不算入刑期",
+     "detail": "假釋撤銷後，出獄日數不算入刑期內。",
+     "articles": [
+      "刑法第 78 條第 4 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "殘刑計算",
+     "point": "無期徒刑的殘餘刑期",
+     "detail": "舊法規定無期徒刑撤銷假釋後執行殘刑滿二十五年再接續他刑；現行第 79 條之 1 已無該項規定，應核對最新修法內容作答。",
+     "articles": [
+      "刑法第 79 條之 1"
+     ],
+     "bonus": "殘刑計算方式待確認，請以最新法規核對。",
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "他刑",
+     "point": "傷害罪刑期的接續",
+     "detail": "殘刑與傷害罪八月的執行順序與合併計算。",
+     "articles": [
+      "刑法第 79 條之 1 第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "依題目所問分段作答，先寫結論再說理由",
+    "條文引用到條、項、款",
+    "結論扣回少年健全自我成長（第 1 條）與保護優先"
+   ],
+   "pitfalls": [
+    "未判斷撤銷假釋的要件。",
+    "直接套用舊法二十五年規定而未核對現行法。",
+    "漏掉傷害罪的執行。"
+   ],
+   "body": "甲因犯殺人罪，經法院判處無期徒刑確定，入監執行 25 年後，始獲准假釋出獄。嗣於假釋期間內，甲因故意更犯傷害罪，經法院判處有期徒刑8 個月確定，並依法撤銷其假釋。請依現行刑法規定，說明本案甲之假釋遭撤銷後，其應執行之殘餘刑期。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=116&s=0506&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-115-刑法與少年事件處理法-3",
+   "kind": "essay",
+   "label": "刑法與少年事件處理法",
+   "exam": "115 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 3,
+   "year": 115,
+   "points": 25,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "外國少年以驅逐出境代替處分的救濟",
+   "overview": "測驗驅逐出境裁定的要件、程序與抗告。",
+   "rows": [
+    {
+     "group": "要件",
+     "point": "得以驅逐出境代之",
+     "detail": "外國少年受轉介處分、保護處分、緩刑或假釋期內交付保護管束者，少年法院得裁定以驅逐出境代之。",
+     "articles": [
+      "第 83 條之 3 第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "程序",
+     "point": "聲請與陳述意見",
+     "detail": "得由少年調查官或少年保護官聲請；裁定前應予少年、法定代理人陳述意見之機會。",
+     "articles": [
+      "第 83 條之 3 第 2 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "救濟",
+     "point": "抗告",
+     "detail": "對於裁定得提起抗告，並準用抗告的相關規定，抗告期間十日。",
+     "articles": [
+      "第 83 條之 3 第 3 項",
+      "第 61 條",
+      "第 64 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "執行",
+     "point": "執行機關",
+     "detail": "驅逐出境由司法警察機關執行。",
+     "articles": [
+      "第 83 條之 3 第 4 項"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "依題目所問分段作答，先寫結論再說理由",
+    "條文引用到條、項、款",
+    "結論扣回少年健全自我成長（第 1 條）與保護優先"
+   ],
+   "pitfalls": [
+    "漏掉陳述意見程序。",
+    "救濟寫成上訴。",
+    "抗告期間寫錯。"
+   ],
+   "body": "外國少年受轉介處分、保護處分等，經少年法院裁定以驅逐出境代之者，請說明其救濟規定為何。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=116&s=0506&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-115-刑法與少年事件處理法-4",
+   "kind": "essay",
+   "label": "刑法與少年事件處理法",
+   "exam": "115 年司法特考三等監獄官",
+   "subject": "刑法與少年事件處理法",
+   "no": 4,
+   "year": 115,
+   "points": 25,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "受移送的少年法院能否再移送",
+   "overview": "測驗少年保護事件的移送與再移送禁止。",
+   "rows": [
+    {
+     "group": "規範",
+     "point": "移送要件",
+     "detail": "經調查認為由其他有管轄權之少年法院處理可使少年受更適當之保護者，得裁定移送。",
+     "articles": [
+      "第 15 條"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "規範",
+     "point": "受移送法院不得再行移送",
+     "detail": "條文明定受移送之法院不得再行移送。",
+     "articles": [
+      "第 15 條"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "結論",
+     "point": "D 院不得再移送 G 院",
+     "detail": "即使少年實際生活於 G 院轄區，D 院仍不得再移送，應自行處理；可透過資源連結或囑託調查補足。",
+     "articles": [
+      "第 15 條",
+      "第 16 條"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "依題目所問分段作答，先寫結論再說理由",
+    "條文引用到條、項、款",
+    "結論扣回少年健全自我成長（第 1 條）與保護優先"
+   ],
+   "pitfalls": [
+    "認為可再移送。",
+    "漏掉「更適當之保護」要件。",
+    "沒有提出替代處理方式。"
+   ],
+   "body": "少年甲、乙、丙涉及保護事件，原由Ａ地方法院少年法庭受理。Ａ地方法院少年法庭法官查得少年甲、乙、丙戶籍均在Ｃ縣為Ｄ地方法院少年法庭所管轄，遂裁定將少年 3 人移送至Ｄ地方法院少年法庭審理。Ｄ地方法院少年法庭收案後法官調查發現，這 3 名少年及其法定代理人實際上長期居住、就學於Ｇ地方法院少年法庭所管轄的Ｆ市，與Ｃ縣毫無實質生活連結，且 3 名少年與其法定代理人均具狀聲請移轉管轄至Ｇ地方法院少年法庭。請說明Ｄ地方法院少年法庭法官是否可再將甲、乙、丙3 人裁定移送至Ｇ地方法院少年法庭。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=116&s=0506&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-108-犯罪學與再犯預測-1",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "108 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 1,
+   "year": 108,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "犯罪生物學理論的論點與偏重生物因素的問題",
+   "overview": "測驗實證學派生物學理論的主要論點與其社會風險。",
+   "rows": [
+    {
+     "group": "論點",
+     "point": "天生犯罪人與體型論",
+     "detail": "Lombroso 隔代遺傳與生來犯罪人；Sheldon 體型論。",
+     "articles": [
+      "Lombroso (1876)",
+      "Sheldon (1949)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "論點",
+     "point": "遺傳與神經生理",
+     "detail": "家族、雙生子、領養研究；神經傳導物質、腦功能與自律神經。",
+     "articles": [
+      "Mednick et al. (1984)",
+      "Raine (2013)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "負面問題",
+     "point": "決定論與標籤化",
+     "detail": "忽略社會因素，易形成對特定群體的歧視與標籤。",
+     "articles": [
+      "Lombroso (1876)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "負面問題",
+     "point": "優生學與人權風險",
+     "detail": "可能導向強制絕育、預防性拘禁等侵害人權的政策。",
+     "articles": [
+      "Raine (2013)"
+     ],
+     "bonus": "可補充現代生物社會整合觀點。",
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "只寫 Lombroso。",
+    "沒有談社會負面問題。",
+    "把生物因素當成唯一原因。"
+   ],
+   "body": "犯罪實證學派始於犯罪生物學理論（Biological Theories）的論點，對於解釋個體之犯罪行為，犯罪生物學理論提供那些論點？偏重於生物學犯罪原因論，將可能為社會帶來那些負向問題？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=113&s=0803&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-108-犯罪學與再犯預測-2",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "108 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 2,
+   "year": 108,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "功能不健全家庭類型與破壞家庭穩定的因素",
+   "overview": "測驗家庭與犯罪的關係。具體分類請以教材為準。",
+   "rows": [
+    {
+     "group": "類型",
+     "point": "破碎家庭與衝突家庭",
+     "detail": "父母離異、死亡、分居；長期爭吵與家庭暴力。",
+     "articles": [
+      "Glueck & Glueck (1950)"
+     ],
+     "bonus": "分類名稱請以講義核對。",
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "類型",
+     "point": "管教失當與犯罪家庭",
+     "detail": "管教過嚴過鬆或不一致；父母有犯罪或物質濫用。",
+     "articles": [
+      "Farrington (2003)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "穩定性因素",
+     "point": "經濟與結構因素",
+     "detail": "失業、貧窮、搬遷頻繁、單親負荷。",
+     "articles": [
+      "Farrington (2003)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "穩定性因素",
+     "point": "關係與照顧因素",
+     "detail": "親子依附薄弱、監督不足、虐待疏忽。",
+     "articles": [
+      "Hirschi (1969)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "類型與因素混為一談。",
+    "只列名稱。",
+    "沒有連結犯罪。"
+   ],
+   "body": "家庭是個體人格養成之主要機構（Primary Institution）；因此，家庭功能不足與個體犯罪關係極為密切，其中尤以功能不健全之家庭及破壞家庭穩定性為然。試問：功能不健全之家庭類型為何？而破壞家庭穩定性之因素又為何？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=113&s=0803&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-108-犯罪學與再犯預測-3",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "108 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 3,
+   "year": 108,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "早期犯罪預測的優缺點",
+   "overview": "測驗以兒童為對象的早期預測研究的評價。",
+   "rows": [
+    {
+     "group": "背景",
+     "point": "代表研究",
+     "detail": "Glueck 夫婦社會預測表等。",
+     "articles": [
+      "Glueck & Glueck (1950)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "優點",
+     "point": "早期介入",
+     "detail": "及早辨識高風險兒童並提供預防資源。",
+     "articles": [
+      "Glueck & Glueck (1950)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "缺點",
+     "point": "誤判與標籤",
+     "detail": "偽陽性高，可能造成標籤化與自我應驗。",
+     "articles": [
+      "Becker (1963)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "缺點",
+     "point": "倫理與方法問題",
+     "detail": "預測因子穩定性、文化差異、隱私與人權疑慮。",
+     "articles": [
+      "Farrington (2003)"
+     ],
+     "bonus": "可補充現代風險評估的改進。",
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "只寫優點。",
+    "沒有提到偽陽性。",
+    "漏掉代表研究。"
+   ],
+   "body": "自 1920 年代開始，犯罪學家對於以兒童為研究對象之早期犯罪預測極為盛行，研究成果備受推崇，惟仍受當時許多反對之聲浪。試問：早期犯罪預測具有那些優、缺點？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=113&s=0803&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-108-犯罪學與再犯預測-4",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "108 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 4,
+   "year": 108,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "CB = f(P × E) 的意義與再犯預測應用",
+   "overview": "測驗犯罪行為是人格與環境交互作用的函數，以及在再犯預測的運用。",
+   "rows": [
+    {
+     "group": "意義",
+     "point": "人與環境的交互作用",
+     "detail": "犯罪行為（CB）是個人特質（P）與環境（E）交互作用的函數，源自 Lewin 的行為公式。",
+     "articles": [
+      "Lewin (1936)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "意涵",
+     "point": "整合觀點",
+     "detail": "避免單一因素歸因，兼顧個人與情境。",
+     "articles": [
+      "Lewin (1936)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "再犯預測",
+     "point": "個人因素",
+     "detail": "靜態與動態個人風險（前科、反社會認知）。",
+     "articles": [
+      "Andrews & Bonta"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "再犯預測",
+     "point": "環境因素",
+     "detail": "出獄後的家庭、就業、同儕、居住等情境；整合評估提高準確度。",
+     "articles": [
+      "Andrews & Bonta"
+     ],
+     "bonus": "可補充 RNR 模式的連結。",
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "只解釋公式字面。",
+    "沒有連結再犯預測。",
+    "忽略交互作用。"
+   ],
+   "body": "犯罪學或犯罪心理學研究領域中，公式 CB = f (P * E)代表之意義為何？若再縮小研究範疇，從再犯預測觀點而言，此公式可提供吾人如何準確地解釋個體之再犯罪？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=113&s=0803&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-109-犯罪學與再犯預測-1",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "109 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 1,
+   "year": 109,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "Goldstein 毒品與犯罪的三大模式",
+   "overview": "測驗毒品與暴力犯罪關係的三種解釋。",
+   "rows": [
+    {
+     "group": "模式",
+     "point": "心理藥物模式",
+     "detail": "藥物作用使人興奮、易怒或判斷力下降而犯罪；或戒斷造成的情緒。",
+     "articles": [
+      "Goldstein (1985)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "模式",
+     "point": "經濟動機模式",
+     "detail": "為取得昂貴毒品而從事財產犯罪。",
+     "articles": [
+      "Goldstein (1985)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "模式",
+     "point": "組織系統模式",
+     "detail": "毒品市場運作中的地盤爭奪、債務糾紛與暴力。",
+     "articles": [
+      "Goldstein (1985)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "應用",
+     "point": "對刑事政策的意涵",
+     "detail": "分別對應治療、經濟支持與市場打擊等對策。",
+     "articles": [
+      "Goldstein (1985)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "三模式內容混淆。",
+    "沒有舉例。",
+    "漏掉政策意涵。"
+   ],
+   "body": "為釐清毒品使用和犯罪行為之因果關聯，學者 Goldstein（1985）曾提出\n三大解釋模式，分別為心理藥物模式（The psychopharmacological model）、經濟動機模式（Economic motivation model）、組織系統模式（The systemicmodel），請分別說明其內涵。（25分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=112&s=0802&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-109-犯罪學與再犯預測-2",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "109 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 2,
+   "year": 109,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "再犯風險動態因素的意涵、因子與研究",
+   "overview": "測驗動態風險因素的定義與代表研究。",
+   "rows": [
+    {
+     "group": "意涵",
+     "point": "可改變的風險因素",
+     "detail": "可透過處遇改變的犯因性需求，是處遇目標。",
+     "articles": [
+      "Andrews & Bonta"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "分類",
+     "point": "穩定與急性動態因素",
+     "detail": "穩定動態（反社會態度、同儕）；急性動態（情緒崩潰、物質使用、接近被害人）。",
+     "articles": [
+      "Hanson & Harris (2000)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "重要因子",
+     "point": "核心動態因子",
+     "detail": "反社會認知、反社會同儕、物質濫用、家庭婚姻、學校工作、休閒。",
+     "articles": [
+      "Andrews & Bonta"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "研究",
+     "point": "研究發現",
+     "detail": "統合分析顯示動態因子對再犯有預測力且改變後再犯降低。",
+     "articles": [
+      "Gendreau, Little & Goggin (1996)"
+     ],
+     "bonus": "研究數據請以講義核對。",
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "把前科列為動態因子。",
+    "沒有穩定與急性之分。",
+    "沒有研究依據。"
+   ],
+   "body": "請說明犯罪行為再犯風險之動態因素（dynamic factor）意涵與重要因子，並列舉學者專家之研究發現說明。（25分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=112&s=0802&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-109-犯罪學與再犯預測-3",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "109 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 3,
+   "year": 109,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "Athens 觀點分析殺童案件",
+   "overview": "測驗前置、誘發因素與情境詮釋。學者理論內容請以教材為準。",
+   "rows": [
+    {
+     "group": "前置因素",
+     "point": "背景條件",
+     "detail": "加害人的成長經驗、暴力化歷程、精神狀態與壓力源。",
+     "articles": [
+      "Athens (1997)"
+     ],
+     "bonus": "理論內容請以講義核對。",
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "誘發因素",
+     "point": "觸發事件",
+     "detail": "衝突、挫折、被拒絕或經濟危機等直接觸發事件。",
+     "articles": [
+      "Athens (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "情境詮釋",
+     "point": "行為人如何解讀情境",
+     "detail": "行為人對情境的詮釋（如受挑釁、無路可走）決定是否採取暴力。",
+     "articles": [
+      "Athens (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "案例",
+     "point": "國內案例",
+     "detail": "以近年國內殺童案例說明三要素，並注意去識別化。",
+     "articles": [
+      "Athens (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "三要素混淆。",
+    "案例沒有對應要素。",
+    "渲染案例細節。"
+   ],
+   "body": "試依學者 Athens（1997）之觀點，說明殺童案件之前置因素（antecedentfactors）、誘發因素（precipitating factors）與情境詮釋（interpretation ofsituation）之內涵，並舉近年國內案例說明。（25分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=112&s=0802&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-109-犯罪學與再犯預測-4",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "109 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 4,
+   "year": 109,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "RANT 毒品犯風險與需求分流工具",
+   "overview": "測驗 RANT 的內涵與應用。",
+   "rows": [
+    {
+     "group": "內涵",
+     "point": "風險與需求兩向度",
+     "detail": "評估犯罪風險（再犯可能）與臨床需求（物質依賴程度）。",
+     "articles": [
+      "Marlowe (2012)"
+     ],
+     "bonus": "工具內容請以講義核對。",
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "分類",
+     "point": "四象限分流",
+     "detail": "高風險高需求、高風險低需求、低風險高需求、低風險低需求，對應不同監督與治療強度。",
+     "articles": [
+      "Marlowe (2012)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "應用",
+     "point": "應用範疇",
+     "detail": "毒品法庭、緩起訴附命戒癮、社區處遇的分流。",
+     "articles": [
+      "Marlowe (2012)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "原理",
+     "point": "與 RNR 的連結",
+     "detail": "依風險原則配置處遇強度，避免低風險者過度介入。",
+     "articles": [
+      "Andrews & Bonta"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "只寫風險不寫需求。",
+    "四象限寫錯。",
+    "沒有應用範疇。"
+   ],
+   "body": "請說明毒品犯再犯風險與醫療需求分流的評估工具「the Risk and NeedsTriage」（簡稱 RANT）之內涵及其應用範疇。（25分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=112&s=0802&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-110-犯罪學與再犯預測-1",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "110 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 1,
+   "year": 110,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "Sampson 與 Laub 持續與中止犯罪的生命史研究",
+   "overview": "測驗年齡階段非正式社會控制理論與追蹤研究發現。",
+   "rows": [
+    {
+     "group": "研究",
+     "point": "追蹤至 70 歲",
+     "detail": "追蹤 Glueck 夫婦的少年犯樣本至老年。",
+     "articles": [
+      "Laub & Sampson (2003)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "影響因素",
+     "point": "轉捩點",
+     "detail": "婚姻、就業、從軍等轉捩點提供非正式社會控制與日常結構。",
+     "articles": [
+      "Laub & Sampson (2003)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "研究發現",
+     "point": "中止是普遍的",
+     "detail": "多數人隨年齡中止犯罪，早期風險不能完全預測成年軌跡。",
+     "articles": [
+      "Laub & Sampson (2003)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "研究發現",
+     "point": "人的能動性",
+     "detail": "個人選擇與身分轉變在中止中的作用。",
+     "articles": [
+      "Laub & Sampson (2003)"
+     ],
+     "bonus": "可補充對矯正的意涵。",
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "漏掉轉捩點。",
+    "說成早期決定論。",
+    "沒有研究發現。"
+   ],
+   "body": "Sampson 和 Laub 之 持續 犯罪 與 中 止 犯 罪 的 生 命 史 理 論（ SharedBeginnings, Divergent Lives：Delinquent Boys to Age 70, 2003），其犯罪影響因素及研究發現之內涵為何？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=114&s=0702&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-110-犯罪學與再犯預測-2",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "110 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 2,
+   "year": 110,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "偏差行為漏斗效應與無被害者犯罪特性",
+   "overview": "測驗犯罪與偏差行為的關係。學者理論內容請以教材為準。",
+   "rows": [
+    {
+     "group": "漏斗效應",
+     "point": "偏差到犯罪的篩選",
+     "detail": "大量偏差行為中，只有部分被定義為犯罪並進入司法程序，逐層篩減。",
+     "articles": [
+      "Douglas & Waksler (1982)"
+     ],
+     "bonus": "理論內容請以講義核對。",
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "無被害者犯罪",
+     "point": "特性",
+     "detail": "雙方合意、無明確被害人、缺乏報案、執法困難。",
+     "articles": [
+      "Clinard & Quinney (1973)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "關係",
+     "point": "犯罪與偏差的差異",
+     "detail": "偏差範圍廣、犯罪是法律定義的部分偏差；兩者界線隨社會變動。",
+     "articles": [
+      "Clinard & Quinney (1973)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "兩理論混為一談。",
+    "沒有說明犯罪與偏差關係。",
+    "特性列舉不足。"
+   ],
+   "body": "請就 Douglas 和 Waksler（1982）之偏差行為之漏斗效應以及 Clinard 和Quinney（1973）之無被害者犯罪特性之見解內涵，分別說明犯罪與偏差行為之關係。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=114&s=0702&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-110-犯罪學與再犯預測-3",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "110 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 3,
+   "year": 110,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "靜態風險因素的內涵與重要因子",
+   "overview": "測驗靜態風險因素的定義與代表因子。",
+   "rows": [
+    {
+     "group": "內涵",
+     "point": "不可改變的歷史因素",
+     "detail": "用於長期再犯風險分類，不能作為處遇目標。",
+     "articles": [
+      "Andrews & Bonta"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "因子",
+     "point": "犯罪史",
+     "detail": "前科次數、初犯年齡、暴力史、違反監督紀錄。",
+     "articles": [
+      "Hanson & Thornton (2000)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "因子",
+     "point": "人口與發展因素",
+     "detail": "性別、年齡、早期偏差、兒少時期安置經驗。",
+     "articles": [
+      "Andrews & Bonta"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "限制",
+     "point": "靜態因素的限制",
+     "detail": "無法反映處遇改變，需搭配動態因素。",
+     "articles": [
+      "Hanson & Harris (2000)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "把態度列為靜態因子。",
+    "沒有說明限制。",
+    "因子不足。"
+   ],
+   "body": "請就各種研究再犯風險因素類型之靜態風險因素，分別說明其內涵及重要因子。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=114&s=0702&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-110-犯罪學與再犯預測-4",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "110 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 4,
+   "year": 110,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "MnSOST-R 與 SONAR 性罪犯評估工具",
+   "overview": "測驗兩種性罪犯風險工具的內容。量表項目請以教材為準。",
+   "rows": [
+    {
+     "group": "MnSOST-R",
+     "point": "內容",
+     "detail": "明尼蘇達州發展的精算工具，包含犯罪史、機構表現（處遇完成、物質使用）等項目。",
+     "articles": [
+      "Epperson et al. (1998)"
+     ],
+     "bonus": "項目請以講義核對。",
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "SONAR",
+     "point": "內容",
+     "detail": "加拿大發展，包含穩定動態（親密關係缺陷、社會影響、對性侵的態度、性自我調節、一般自我調節）與急性因素。",
+     "articles": [
+      "Hanson & Harris (2000)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "比較",
+     "point": "靜態與動態",
+     "detail": "MnSOST-R 偏重靜態與歷史；SONAR 重視可改變的動態因素。",
+     "articles": [
+      "Hanson & Harris (2000)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "兩工具內容混淆。",
+    "沒有比較。",
+    "項目寫錯。"
+   ],
+   "body": "美國明尼蘇達州之性罪犯篩選評估表（MnSOST-R）及加拿大法務部之SONAR 量表，均為性罪犯之再犯風險評估工具，請就其內容說明之。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=114&s=0702&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-111-犯罪學與再犯預測-1",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "111 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 1,
+   "year": 111,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "幫派吸收少年的原因與 Thornberry 的觀點",
+   "overview": "測驗少年加入幫派的推拉因素與三種模式。",
+   "rows": [
+    {
+     "group": "原因",
+     "point": "幫派吸收少年",
+     "detail": "少年刑度較輕、易受控制、擴張勢力。",
+     "articles": [
+      "Thornberry et al. (1993)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "原因",
+     "point": "少年加入",
+     "detail": "尋求保護、歸屬感、金錢、地位、家庭功能不彰。",
+     "articles": [
+      "Thornberry et al. (1993)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "Thornberry",
+     "point": "三種模式",
+     "detail": "選擇模式（原本就偏差者加入）、促進模式（加入後犯罪增加）、強化模式（兩者兼具）；研究支持促進或強化。",
+     "articles": [
+      "Thornberry et al. (1993)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "防治",
+     "point": "對策",
+     "detail": "早期預防、出幫協助、學校與社區合作。",
+     "articles": [
+      "Thornberry et al. (1993)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "三模式寫錯。",
+    "只寫少年加入原因。",
+    "沒有對策。"
+   ],
+   "body": "近年來，幫派組織為了擴張其規模與勢力，將觸角深入校園或街頭，吸收年輕族群為生力軍。請分別說明幫派吸收少年及少年加入的原因為何？並就學者宋貝利（Thornberry）的看法，說明少年加入幫派與犯罪之關係為何？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=112&s=0702&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-111-犯罪學與再犯預測-2",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "111 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 2,
+   "year": 111,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "標籤理論與 Finckenauer 的 4D 策略",
+   "overview": "測驗標籤理論內涵與其刑事政策。",
+   "rows": [
+    {
+     "group": "理論",
+     "point": "初級與次級偏差",
+     "detail": "初級偏差未被標籤；被標籤後形成偏差自我概念的次級偏差。",
+     "articles": [
+      "Lemert (1951)",
+      "Becker (1963)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "4D",
+     "point": "除罪化與轉向",
+     "detail": "將輕微行為除罪；以轉向方案避開正式司法。",
+     "articles": [
+      "Finckenauer (1984)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "4D",
+     "point": "正當程序與去機構化",
+     "detail": "保障程序權利；以社區處遇取代機構收容。",
+     "articles": [
+      "Finckenauer (1984)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "應用",
+     "point": "我國的體現",
+     "detail": "少年事件處理法行政先行、轉介處分、塗銷前案。",
+     "articles": [
+      "少年事件處理法第 18 條",
+      "少年事件處理法第 83 條之 1"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "4D 少寫。",
+    "沒有區分初級與次級偏差。",
+    "沒有實際應用。"
+   ],
+   "body": "標籤理論（Labeling Theory）盛行於 1960 年代中期至 1970 年代中期，其被廣泛地應用在解釋不同犯罪及偏差行為的形成過程上，也被廣泛地應用在刑事司法的政策上。請具體說明標籤理論及學者 Finckenauer（1984）提出之 4D 策略的主要內涵為何？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=112&s=0702&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-111-犯罪學與再犯預測-3",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "111 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 3,
+   "year": 111,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "RNR 模式與 RNR 模擬工具",
+   "overview": "測驗 RNR 三原則與模擬工具的分類方式。工具內容請以教材為準。",
+   "rows": [
+    {
+     "group": "RNR",
+     "point": "三原則",
+     "detail": "風險原則、需求原則、回應性原則。",
+     "articles": [
+      "Andrews & Bonta (2010)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "RNR",
+     "point": "犯因性需求",
+     "detail": "Central Eight 中可改變的需求。",
+     "articles": [
+      "Andrews & Bonta (2010)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "模擬工具",
+     "point": "用途",
+     "detail": "依個案風險與需求配對適合的處遇方案並分類處遇強度。",
+     "articles": [
+      "Taxman et al."
+     ],
+     "bonus": "工具內容請以講義核對。",
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "模擬工具",
+     "point": "分類方式",
+     "detail": "依方案主要目標（如犯罪思考、物質濫用、生活技能）分類並評估方案品質。",
+     "articles": [
+      "Taxman et al."
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "三原則寫錯。",
+    "沒有說明模擬工具。",
+    "忽略犯因性需求。"
+   ],
+   "body": "加拿大學者 Andrews 及 Bonta 在 2010 年提出「RNR」模式，此模式可以明確識別犯罪者與犯罪有關「犯罪基因需求」；依據此模式所發展出來之 RNR 模擬工具（RNR Simulation Tool），是新近再犯風險評估工具的\n一種，主要應用在犯罪者處遇及監督需求的評估，以有效減少犯罪人之再犯風險。請說明 RNR 模式之主要內涵為何？RNR 模擬工具主要透過那些專案，來針對犯罪人所需的處遇強度進行分類？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=112&s=0702&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-111-犯罪學與再犯預測-4",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "111 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 4,
+   "year": 111,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "再犯預測在刑事司法與刑事政策的功用",
+   "overview": "測驗再犯預測的實務價值。",
+   "rows": [
+    {
+     "group": "刑事司法",
+     "point": "各階段決策",
+     "detail": "偵查起訴（緩起訴）、量刑、假釋審查、監督強度分級。",
+     "articles": [
+      "Andrews & Bonta"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "刑事司法",
+     "point": "處遇規劃",
+     "detail": "依風險分配資源、擬定個別處遇計畫。",
+     "articles": [
+      "Andrews & Bonta"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "刑事政策",
+     "point": "資源配置與評估",
+     "detail": "評估政策成效、規劃矯正與社區資源。",
+     "articles": [
+      "Gottfredson (1987)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "限制",
+     "point": "倫理與準確性",
+     "detail": "偽陽性與歧視疑慮，需透明與定期驗證。",
+     "articles": [
+      "Gottfredson (1987)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "只寫假釋。",
+    "沒有政策面。",
+    "忽略限制。"
+   ],
+   "body": "再犯預測在刑事司法實務與刑事政策上均具有重要的意義，也有非常廣泛的實務應用價值。請說明再犯預測在刑事司法實務及刑事政策上的功用為何？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=112&s=0702&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-112-犯罪學與再犯預測-1",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "112 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 1,
+   "year": 112,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "再犯預測的意涵與依時間的類型",
+   "overview": "測驗再犯預測的定義與在刑事程序中的分類。分類名稱請以教材為準。",
+   "rows": [
+    {
+     "group": "意涵",
+     "point": "定義",
+     "detail": "以統計或臨床方法估計犯罪人未來再犯可能性。",
+     "articles": [
+      "Gottfredson (1987)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "類型",
+     "point": "審判前與量刑預測",
+     "detail": "偵查、起訴、量刑階段的預測。",
+     "articles": [
+      "Gottfredson (1987)"
+     ],
+     "bonus": "分類名稱請以講義核對。",
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "類型",
+     "point": "矯正與假釋預測",
+     "detail": "入監分類、假釋審查的預測。",
+     "articles": [
+      "Gottfredson (1987)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "類型",
+     "point": "社區處遇預測",
+     "detail": "保護管束期間的風險監控。",
+     "articles": [
+      "Gottfredson (1987)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "定義不清。",
+    "類型不完整。",
+    "沒有連結程序。"
+   ],
+   "body": "請說明再犯預測之意涵為何？又再犯預測研究，在刑事司法程序中，依預測時間的不同，可分為那幾種類型？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=112&s=0702&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-112-犯罪學與再犯預測-2",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "112 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 2,
+   "year": 112,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "Walters 的八種犯罪思考型態",
+   "overview": "測驗犯罪思考型態的內容。",
+   "rows": [
+    {
+     "group": "型態",
+     "point": "自我安慰與切斷",
+     "detail": "以外在因素合理化犯罪；以簡單語句切斷顧慮。",
+     "articles": [
+      "Walters (1990)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "型態",
+     "point": "特權感與權力導向",
+     "detail": "認為自己有權得到想要的；以控制他人取得權力感。",
+     "articles": [
+      "Walters (1990)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "型態",
+     "point": "感傷與超樂觀",
+     "detail": "以偶爾善行抵銷罪行；認為不會被抓。",
+     "articles": [
+      "Walters (1990)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "型態",
+     "point": "認知怠惰與不連貫",
+     "detail": "思考懶散、輕率；行為與意圖前後不一致。",
+     "articles": [
+      "Walters (1990)"
+     ],
+     "bonus": "可補充 PICTS 量表。",
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "少於八種。",
+    "名稱錯誤。",
+    "沒有說明內容。"
+   ],
+   "body": "在犯罪心理學的研究發現，認為許多犯罪人都具有犯罪思考型態（criminal thinking patterns）。學者 Walters（1990）更近一步建構出八種犯罪人思考型態，請說明其內容為何？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=112&s=0702&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-112-犯罪學與再犯預測-3",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "112 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 3,
+   "year": 112,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "Groth 強制性交犯三類型與 Static-99",
+   "overview": "測驗強暴犯動機分類與 Static-99 內容。",
+   "rows": [
+    {
+     "group": "Groth",
+     "point": "三種類型",
+     "detail": "憤怒型、權力型、虐待型。",
+     "articles": [
+      "Groth (1979)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "Static-99",
+     "point": "性質",
+     "detail": "加拿大發展的十項靜態精算量表。",
+     "articles": [
+      "Hanson & Thornton (2000)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "Static-99",
+     "point": "項目",
+     "detail": "年齡、與親密伴侶同居經驗、非性暴力、過去性犯罪、量刑次數、非接觸性性犯罪、陌生被害人、非親屬被害人、男性被害人等。",
+     "articles": [
+      "Hanson & Thornton (2000)"
+     ],
+     "bonus": "項目請以講義核對。",
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "限制",
+     "point": "只有靜態因素",
+     "detail": "無法反映處遇改變，需搭配動態工具。",
+     "articles": [
+      "Hanson & Thornton (2000)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "三類型寫錯。",
+    "Static-99 項目不完整。",
+    "沒有說明限制。"
+   ],
+   "body": "學者 Groth（1979）在研究觀察 500 名強制性交犯後，依犯罪動機區分為三類，請說明此三種類型為何？又國外有許多性罪犯再犯評估量表，請說明加拿大的靜態因素九九評估表（Static-99）的主要內容。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=112&s=0702&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-112-犯罪學與再犯預測-4",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "112 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 4,
+   "year": 112,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "美國假釋再犯預測的三個發展階段",
+   "overview": "測驗假釋預測的發展脈絡。階段劃分請以教材為準。",
+   "rows": [
+    {
+     "group": "第一階段",
+     "point": "臨床判斷",
+     "detail": "依專業人員經驗判斷。",
+     "articles": [
+      "Burgess (1928)"
+     ],
+     "bonus": "階段劃分請以講義核對。",
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "第二階段",
+     "point": "精算預測",
+     "detail": "Burgess 等發展的統計預測表。",
+     "articles": [
+      "Burgess (1928)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "第三階段",
+     "point": "整合性評估",
+     "detail": "結合靜態與動態因素的結構化評估。",
+     "articles": [
+      "Andrews & Bonta"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "借鏡",
+     "point": "我國參考",
+     "detail": "假釋審查透明化與風險評估工具。",
+     "articles": [
+      "刑法第 77 條"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "階段順序錯誤。",
+    "沒有我國借鏡。",
+    "忽略動態因素。"
+   ],
+   "body": "近年來社會矚目案件受刑人假釋議題受到各方關注，其他國家對假釋問題處理的發展脈絡值得仿效，以作為我國政策參考。請以美國為例，說明假釋犯再犯預測發展期程的三階段為何？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=112&s=0702&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-113-犯罪學與再犯預測-1",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "113 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 1,
+   "year": 113,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "表現型與工具型殺人",
+   "overview": "測驗殺人動機分類與其限制。",
+   "rows": [
+    {
+     "group": "表現型",
+     "point": "情緒性殺人",
+     "detail": "源於憤怒、衝突的情緒爆發，殺人本身是目的。",
+     "articles": [
+      "Block (1977)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "工具型",
+     "point": "目的性殺人",
+     "detail": "為達其他目的（如取財）而殺人，具計畫性。",
+     "articles": [
+      "Block (1977)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "缺點",
+     "point": "分類的限制",
+     "detail": "多數案件兼具兩種動機，二分法過於簡化。",
+     "articles": [
+      "Bushman & Anderson (2001)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "應用",
+     "point": "偵查與處遇",
+     "detail": "有助於側寫與處遇方向。",
+     "articles": [
+      "Block (1977)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "兩類定義混淆。",
+    "沒有談缺點。",
+    "沒有舉例。"
+   ],
+   "body": "請說明表現型殺人（expressive killing）與工具型殺人（instrumental killing）之差異？此種分類缺點為何？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=113&s=0702&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-113-犯罪學與再犯預測-2",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "113 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 2,
+   "year": 113,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "被害人特質論、生活方式論與危險地區論",
+   "overview": "測驗三種被害理論對高被害風險的解釋。",
+   "rows": [
+    {
+     "group": "被害人特質論",
+     "point": "被害者促發",
+     "detail": "被害人的行為或特質促發加害。",
+     "articles": [
+      "Wolfgang (1958)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "生活方式論",
+     "point": "生活方式與暴露",
+     "detail": "生活方式增加與加害者接觸機會。",
+     "articles": [
+      "Hindelang, Gottfredson & Garofalo (1978)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "危險地區論",
+     "point": "居住在高犯罪區域",
+     "detail": "即使生活方式謹慎，仍因環境暴露而高風險。",
+     "articles": [
+      "Stark (1987)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "評析",
+     "point": "避免責怪被害人",
+     "detail": "說明理論的限制。",
+     "articles": [
+      "Wolfgang (1958)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "三理論混淆。",
+    "沒有評析。",
+    "責怪被害人。"
+   ],
+   "body": "請根據被害人特質論（victim precipitation theory）、生活方式論（life styletheory）、危險地區論（deviance place theory），說明為何有些被害人之犯罪被害機率比較高？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=113&s=0702&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-113-犯罪學與再犯預測-3",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "113 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 3,
+   "year": 113,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "以 RNR 擬訂無期徒刑受刑人個別處遇計畫",
+   "overview": "測驗 RNR 在個案上的應用。",
+   "rows": [
+    {
+     "group": "風險",
+     "point": "評估風險等級",
+     "detail": "隨機殺人、待業、離婚、社會支持薄弱，需高強度處遇與監督。",
+     "articles": [
+      "Andrews & Bonta"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "需求",
+     "point": "犯因性需求",
+     "detail": "反社會認知、敵意、就業、社會連結；輕度憂鬱屬回應性與健康議題。",
+     "articles": [
+      "Andrews & Bonta"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "回應性",
+     "point": "處遇方式",
+     "detail": "認知行為處遇；配合憂鬱症治療與個別化方式。",
+     "articles": [
+      "Andrews & Bonta"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "計畫",
+     "point": "具體計畫",
+     "detail": "入監評估、心理治療、技能訓練、家庭聯繫、定期再評估。",
+     "articles": [
+      "監獄行刑法"
+     ],
+     "bonus": "可補充監獄個別處遇計畫的法源。",
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "沒有逐一對應三原則。",
+    "把憂鬱當成犯因性需求。",
+    "計畫不具體。"
+   ],
+   "body": "受刑人 A，男性，年 30 歲，待業中，離婚，無子女，父母年長且早已離異，罹患輕度憂鬱症，無藥酒癮問題，因街頭隨機殺人觸犯殺人罪，判處無期徒刑。請說明犯罪風險－需求－回應模型（risk-need-responsivitymodel，RNR）如何運用在擬訂其收容監獄時的個別處遇計畫中。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=113&s=0702&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-113-犯罪學與再犯預測-4",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "113 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 4,
+   "year": 113,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "反毒策略中的友善接納環境與理論支持",
+   "overview": "測驗以犯罪學理論支持去污名化政策。",
+   "rows": [
+    {
+     "group": "理論",
+     "point": "標籤理論",
+     "detail": "污名化使施用者被排斥，強化偏差身分。",
+     "articles": [
+      "Becker (1963)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "理論",
+     "point": "復歸性羞恥",
+     "detail": "譴責行為但接納個人，促進復歸。",
+     "articles": [
+      "Braithwaite (1989)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "理論",
+     "point": "社會鍵與社會支持",
+     "detail": "家庭與社會連結降低再犯。",
+     "articles": [
+      "Hirschi (1969)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "研究",
+     "point": "實證支持",
+     "detail": "減害與治療優先政策的研究證據。",
+     "articles": [
+      "新世代反毒策略"
+     ],
+     "bonus": "研究出處請以講義核對。",
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "只寫政策不寫理論。",
+    "理論與策略沒有對應。",
+    "沒有研究依據。"
+   ],
+   "body": "新世代反毒策略及行動綱領之多項策略中提及為隱性施用毒品個案、毒品戒癮者及其家庭建立友善接納環境，請說明上述所提策略有無犯罪學理論或研究可以支持？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=113&s=0702&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-114-犯罪學與再犯預測-1",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "114 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 1,
+   "year": 114,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "Jeffery 生物社會學習理論與 CPTED",
+   "overview": "測驗理論主張與 CPTED 的優缺點。",
+   "rows": [
+    {
+     "group": "理論",
+     "point": "生物社會學習理論",
+     "detail": "行為是生物有機體與環境交互作用的學習結果；改變環境可改變行為。",
+     "articles": [
+      "Jeffery (1971)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "CPTED",
+     "point": "優點",
+     "detail": "以環境設計（自然監控、通道控制、領域感、維護）預防犯罪，成本效益高。",
+     "articles": [
+      "Jeffery (1971)",
+      "Crowe (2000)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "CPTED",
+     "point": "限制",
+     "detail": "犯罪轉移、忽略犯罪根本原因、隱私與社會排除疑慮。",
+     "articles": [
+      "Crowe (2000)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "理論與 CPTED 混淆。",
+    "只寫優點。",
+    "CPTED 要素不清。"
+   ],
+   "body": "環境犯罪學的興起，使得傳統犯罪學中強調「犯罪原因探究」的研究重心，逐漸轉移至對犯罪發生之「情境與環境」的理解，並進而影響近代的犯罪預防學理發展。1971 年，傑佛利（Jeffery）在《藉由環境設計預防犯罪》（Crime Prevention Through Environmental Design, CPTED）一書中，提出生物社會學習理論（Bio-social Learning Theory）以解釋犯罪行為的發生機制。請說明生物社會學習理論的基本主張，並分析 CPTED 犯罪預防理論的優點與限制。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=114&s=0702&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-114-犯罪學與再犯預測-2",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "114 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 2,
+   "year": 114,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "Bandura 與 Akers 學習理論差異及詐欺犯罪",
+   "overview": "測驗兩學習理論的差異與應用。",
+   "rows": [
+    {
+     "group": "Bandura",
+     "point": "社會學習",
+     "detail": "觀察學習、示範、替代增強、自我效能。",
+     "articles": [
+      "Bandura (1977)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "Akers",
+     "point": "差別增強",
+     "detail": "差別接觸、定義、差別增強、模仿；以操作制約解釋犯罪持續。",
+     "articles": [
+      "Akers (1985)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "差異",
+     "point": "比較",
+     "detail": "Bandura 重認知與觀察；Akers 重增強歷程並整合差別接觸。",
+     "articles": [
+      "Akers (1985)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "應用",
+     "point": "詐欺成因與預防",
+     "detail": "同儕引介、獲利增強、合理化；預防：降低報酬、提高查獲、宣導與替代機會。",
+     "articles": [
+      "Akers (1985)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "兩理論混淆。",
+    "沒有應用到詐欺。",
+    "預防策略空泛。"
+   ],
+   "body": "班杜拉（Bandura）的社會學習理論（Social Learning Theory）與艾克斯（Akers）的差別增強理論（Differential Reinforcement Theory）均提及犯罪是藉由學習而來，然而兩者雖然有共同的理論核心，但仍存在不同的理論內涵，請就兩個理論來說明其中的差異性為何？並且依理論內涵來解釋我國近年日益嚴重的詐欺犯罪成因與預防策略。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=114&s=0702&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-114-犯罪學與再犯預測-3",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "114 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 3,
+   "year": 114,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "精神障礙者暴力犯罪成因與監護處分的預防學理",
+   "overview": "測驗理論解釋與監護處分的特別預防功能。",
+   "rows": [
+    {
+     "group": "成因",
+     "point": "症狀與共病",
+     "detail": "受威脅控制妄想、未治療、物質濫用。",
+     "articles": [
+      "APA, DSM-5 (2013)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "成因",
+     "point": "社會因素",
+     "detail": "社會支持薄弱、照護斷層。",
+     "articles": [
+      "Engel (1977)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "監護處分",
+     "point": "法律依據",
+     "detail": "因第 19 條不罰或減輕，有再犯或危害公共安全之虞者施以監護。",
+     "articles": [
+      "刑法第 19 條",
+      "刑法第 87 條"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "預防學理",
+     "point": "特別預防與社會防衛",
+     "detail": "以治療降低再犯，兼顧社會安全；每年評估有無繼續必要。",
+     "articles": [
+      "刑法第 87 條第 4 項"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "把精神疾病直接等同暴力。",
+    "漏掉監護要件。",
+    "沒有預防學理。"
+   ],
+   "body": "精神障礙者可能因特定因素而犯下暴力犯罪，請提出相關犯罪理論來說明精神障礙者的暴力犯罪成因，根據刑法第 19 條、87 條規定，對於精神障礙犯罪者可處以監護處分，請說明我國對於精神障礙犯罪者的監護處分之犯罪預防學理。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=114&s=0702&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-114-犯罪學與再犯預測-4",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "114 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 4,
+   "year": 114,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "藥物濫用者再犯風險評估的面向與社區應用",
+   "overview": "測驗評估面向、核心指標與我國實務。",
+   "rows": [
+    {
+     "group": "面向",
+     "point": "犯罪風險與成癮需求",
+     "detail": "犯罪史與成癮嚴重度兩向度。",
+     "articles": [
+      "Marlowe (2012)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "指標",
+     "point": "核心指標",
+     "detail": "初次使用年齡、使用頻率、戒治失敗史、同儕、家庭支持、就業。",
+     "articles": [
+      "Andrews & Bonta"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "發展",
+     "point": "臨床到結構化",
+     "detail": "由臨床判斷發展為結構化整合工具。",
+     "articles": [
+      "Andrews & Bonta"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "我國實務",
+     "point": "社區處遇應用",
+     "detail": "緩起訴附命戒癮、保護管束尿液採驗密度分級。",
+     "articles": [
+      "毒品危害防制條例"
+     ],
+     "bonus": "實務工具請以講義核對。",
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "只寫成癮面向。",
+    "指標不具體。",
+    "沒有我國實務。"
+   ],
+   "body": "藥物濫用者的再犯風險評估已從傳統的臨床判斷模式發展至今日的整合性風險評估工具。請說明藥物濫用者再犯風險評估的主要面向與核心指標，並說明我國再犯風險評估在社區處遇中的應用實務。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=114&s=0702&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-115-犯罪學與再犯預測-1",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "115 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 1,
+   "year": 115,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "犯罪中止的關鍵因子與聚焦中止的處遇活動",
+   "overview": "測驗中止理論與矯正機構的處遇活動。",
+   "rows": [
+    {
+     "group": "關鍵因子",
+     "point": "社會連結與轉捩點",
+     "detail": "婚姻、就業等非正式社會控制。",
+     "articles": [
+      "Laub & Sampson (2003)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "關鍵因子",
+     "point": "認知與身分轉變",
+     "detail": "重寫自我敘事（救贖腳本）、希望感與能動性。",
+     "articles": [
+      "Maruna (2001)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "關鍵因子",
+     "point": "動機與人力社會資本",
+     "detail": "改變動機、技能、社會資源。",
+     "articles": [
+      "Maguire & Raynor (2006)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "處遇活動",
+     "point": "聚焦中止的活動",
+     "detail": "建立親社會關係、就業準備、家庭修復、優勢導向計畫。",
+     "articles": [
+      "Bucklen (2021)"
+     ],
+     "bonus": "具體活動請以講義核對。",
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "只寫一位學者。",
+    "處遇活動不具體。",
+    "沒有連結中止。"
+   ],
+   "body": "學者 Maguire and Raynor（2006）認為犯罪中止（desistance）是一個人從犯罪人到守法公民的轉變過程，Sampson and Laub 以及 Maruna 也都提出犯罪中止的論述。試論述由這些學者之見解所歸納出的影響犯罪中止關鍵因子有那些？此外，矯正機構可以依 Bucklen（2021）所列舉的「聚焦於中止犯罪」（desistance-focused）之刑事司法處遇活動有那些？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=116&s=0702&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-115-犯罪學與再犯預測-2",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "115 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 2,
+   "year": 115,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "犯罪腳本與汽車竊盜分析",
+   "overview": "測驗 Cornish 犯罪腳本概念與情境預防。",
+   "rows": [
+    {
+     "group": "定義",
+     "point": "犯罪腳本",
+     "detail": "把犯罪拆解為一連串步驟（準備、進入、實行、離開），每步都有決策點。",
+     "articles": [
+      "Cornish (1994)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "分析",
+     "point": "竊車遊樂腳本",
+     "detail": "選擇目標、進入車輛、發動、駕駛遊樂、棄車。",
+     "articles": [
+      "Cornish (1994)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "對策",
+     "point": "對應預防",
+     "detail": "加強停車場監控、防盜鎖與晶片鑰匙、追蹤系統、棄車熱點巡邏。",
+     "articles": [
+      "Clarke (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "只寫定義。",
+    "腳本步驟不完整。",
+    "對策沒有對應步驟。"
+   ],
+   "body": "學者 Cornish（1994）以理性選擇理論為基礎，並運用認知心理學的腳本概念發展出「犯罪腳本」一說。試問：何謂犯罪腳本（crime scripts）？並試以 Cornish 對竊車遊樂案件為例，描述汽車竊盜案件的犯罪腳本分析，及其可以發展出來的相對應預防對策。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=116&s=0702&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-115-犯罪學與再犯預測-3",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "115 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 3,
+   "year": 115,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "各國再犯預測研究特性與假釋預測研究設計",
+   "overview": "測驗研究特性與研究設計步驟。",
+   "rows": [
+    {
+     "group": "特性",
+     "point": "代表研究",
+     "detail": "Burgess 點數法、Glueck 社會預測表、Schiedt 研究、我國研究。",
+     "articles": [
+      "Burgess (1928)",
+      "Glueck & Glueck (1950)"
+     ],
+     "bonus": "特性請以講義核對。",
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "設計",
+     "point": "樣本與追蹤",
+     "detail": "選取假釋者樣本、定義再犯、設定追蹤期間。",
+     "articles": [
+      "Gottfredson (1987)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "設計",
+     "point": "變項與分析",
+     "detail": "蒐集靜態動態變項、建構與驗證模型（ROC、交叉驗證）。",
+     "articles": [
+      "Gottfredson (1987)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "倫理",
+     "point": "可行性與倫理",
+     "detail": "資料取得、個資保護、避免歧視。",
+     "articles": [
+      "Gottfredson (1987)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "只寫特性。",
+    "研究設計不具體。",
+    "忽略驗證。"
+   ],
+   "body": "美國學者 Burgess 及 Glueck 夫婦、德國學者 Schiedt 與我國的再犯預測研究，可歸納出那些特性？若研究者欲進行假釋再犯預測之研究，宜如何規劃具可行性的研究設計與實施步驟？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=116&s=0702&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-115-犯罪學與再犯預測-4",
+   "kind": "theory",
+   "label": "犯罪學與再犯預測",
+   "exam": "115 年司法特考三等監獄官",
+   "subject": "犯罪學與再犯預測",
+   "no": 4,
+   "year": 115,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "修復式正義的三種實務型態與監獄方案",
+   "overview": "測驗修復式正義的型態與矯正階段的應用。",
+   "rows": [
+    {
+     "group": "型態",
+     "point": "被害人與加害人調解",
+     "detail": "雙方在調解者協助下對話。",
+     "articles": [
+      "Zehr (1990)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "型態",
+     "point": "家庭團體會議",
+     "detail": "邀請雙方家庭與支持者參與。",
+     "articles": [
+      "Braithwaite (1989)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "型態",
+     "point": "修復圈",
+     "detail": "社區成員共同參與討論。",
+     "articles": [
+      "Pranis"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "監獄方案",
+     "point": "矯正階段型態",
+     "detail": "被害人影響方案、加害人道歉信、修復對話、社區服務。",
+     "articles": [
+      "法務部修復式司法方案"
+     ],
+     "bonus": "方案名稱請以講義核對。",
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定核心概念或理論，再依題目子題分段",
+    "理論、學者與量表內容正確",
+    "結論扣回矯正處遇或再犯預防"
+   ],
+   "pitfalls": [
+    "三型態寫錯。",
+    "監獄方案不具體。",
+    "把修復等同和解賠償。"
+   ],
+   "body": "刑事司法體系下的修復式正義（restorative justice）可在偵查、起訴、審判及矯正等不同階段中實施，不論在那一階段實施，實務型態主要有那\n三類型？為了提升監獄的處遇效能，近年監獄中的修復式方案型態有那些？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=116&s=0702&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-108-諮商與矯正輔導-1",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "108 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 1,
+   "year": 108,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "Beck 認知三層次：以走私犯為例",
+   "overview": "測驗核心信念、中介信念、自動想法與三者關聯。",
+   "rows": [
+    {
+     "group": "核心信念",
+     "point": "最深層的基本信念",
+     "detail": "如「我必須靠冒險才能翻身」。",
+     "articles": [
+      "Beck, J. S. (2011)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "中介信念",
+     "point": "態度、規則與假設",
+     "detail": "如「只要不被抓到就沒關係」「規則是給笨人遵守的」。",
+     "articles": [
+      "Beck, J. S. (2011)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "自動想法",
+     "point": "情境中自動浮現的想法",
+     "detail": "如「這次一定沒問題」。",
+     "articles": [
+      "Beck, J. S. (2011)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "關聯",
+     "point": "層次結構圖",
+     "detail": "核心信念影響中介信念，再於情境中引發自動想法，進而影響情緒與行為；需畫出示意圖。",
+     "articles": [
+      "Beck, J. S. (2011)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "三層次混淆。",
+    "走私犯例子不具體。",
+    "沒有畫出或說明關聯。"
+   ],
+   "body": "根據認知療法之父艾瑞．貝克（Aaron T. Beck）對人性本質的看法，人們的認知組織架構分成基模的核心信念、中介信念、自動想法等三種層次。請以走私犯為例，分別舉例並解釋基模的核心信念、中介信念、自動想法的意涵。接續，請解釋並畫出上述三個不同層次的認知結構間的關聯性為何？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=113&s=0808&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-108-諮商與矯正輔導-2",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "108 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 2,
+   "year": 108,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "假釋前團體的獨特力量與療效因子",
+   "overview": "測驗團體的獨特力量與 Yalom 療效因子的應用。",
+   "rows": [
+    {
+     "group": "獨特力量",
+     "point": "團體的特性",
+     "detail": "真實社會縮影、同儕支持、多元回饋、經濟性、練習新行為的安全場域。",
+     "articles": [
+      "Corey (2016)"
+     ],
+     "bonus": "獨特力量的條列請以講義核對。",
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "療效因子",
+     "point": "五項療效因子",
+     "detail": "灌注希望、普同感、傳遞資訊、人際學習、團體凝聚力等。",
+     "articles": [
+      "Yalom & Leszcz (2005)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "應用",
+     "point": "對假釋者的助益",
+     "detail": "準備出獄生活、處理焦慮、練習求職與人際技巧、建立支持網絡。",
+     "articles": [
+      "Yalom & Leszcz (2005)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "獨特力量與療效因子混淆。",
+    "數量不足五項。",
+    "沒有連結假釋者。"
+   ],
+   "body": "張監獄官將帶領一個成員為即將假釋的 10 人團體。若從團體的獨特力量及療效因子的觀點來看，請問這個團體對於假釋犯有何種助益？請分別列出並論述五個團體的獨特力量與五個療效因子。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=113&s=0808&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-108-諮商與矯正輔導-3",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "108 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 3,
+   "year": 108,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "酒精使用障礙症的症狀與戒斷反應",
+   "overview": "測驗 DSM-5 酒精使用障礙症準則與戒斷症狀。",
+   "rows": [
+    {
+     "group": "定義",
+     "point": "酒精使用障礙症",
+     "detail": "問題性飲酒模式造成臨床顯著損害，12 個月內符合 11 項中至少 2 項；6 項以上為重度。",
+     "articles": [
+      "APA, DSM-5 (2013)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "症狀",
+     "point": "六項症狀",
+     "detail": "喝得比預期多、想減量卻失敗、花大量時間、渴求、無法履行責任、人際問題仍持續、放棄活動、危險情境飲酒、明知有害仍喝、耐受性、戒斷。",
+     "articles": [
+      "APA, DSM-5 (2013)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "戒斷",
+     "point": "五項戒斷症狀",
+     "detail": "自律神經亢進、手抖、失眠、噁心嘔吐、短暫幻覺、精神運動激動、焦慮、癲癇發作。",
+     "articles": [
+      "APA, DSM-5 (2013)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "症狀與戒斷混淆。",
+    "數量不足。",
+    "嚴重度切截寫錯。"
+   ],
+   "body": "什麼是酒精使用障礙症？對於重度酒精使用障礙症的診斷，患者會出現\n六項或以上的症狀，請寫出六項酒精使用障礙症的症狀。接續，請列出\n五項酒精戒斷反應症狀。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=113&s=0808&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-108-諮商與矯正輔導-4",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "108 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 4,
+   "year": 108,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "人格障礙症、行為規範障礙與反社會型人格障礙症",
+   "overview": "測驗三種診斷的定義與 ASPD 準則。",
+   "rows": [
+    {
+     "group": "人格障礙症",
+     "point": "定義",
+     "detail": "偏離文化期待且持久、僵化的內在經驗與行為模式，造成痛苦或功能損害。",
+     "articles": [
+      "APA, DSM-5 (2013)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "行為規範障礙",
+     "point": "定義",
+     "detail": "兒童青少年反覆侵犯他人權利或違反主要社會規範。",
+     "articles": [
+      "APA, DSM-5 (2013)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "ASPD",
+     "point": "定義",
+     "detail": "15 歲起漠視侵犯他人權利；滿 18 歲且 15 歲前有行為規範障礙證據。",
+     "articles": [
+      "APA, DSM-5 (2013)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "ASPD",
+     "point": "五項準則",
+     "detail": "不遵守法律、欺騙、衝動、易怒攻擊、不顧安全、不負責任、缺乏悔意。",
+     "articles": [
+      "APA, DSM-5 (2013)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "ASPD 年齡要件寫錯。",
+    "三種診斷混淆。",
+    "準則不足五項。"
+   ],
+   "body": "請依序解釋「人格障礙症」（personality disorder）、「行為規範障礙」（conduct disorder），以及「反社會型人格障礙症」（antisocial personalitydisorder）。接續，請列出反社會型人格障礙症的五項行為診斷準則。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=113&s=0808&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-109-諮商與矯正輔導-1",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "109 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 1,
+   "year": 109,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "動機式晤談與跨理論模式",
+   "overview": "測驗 MI 原理策略與改變五階段。",
+   "rows": [
+    {
+     "group": "MI",
+     "point": "原理",
+     "detail": "表達同理、發展不一致、與抗拒共舞、支持自我效能。",
+     "articles": [
+      "Miller & Rollnick (2002)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "MI",
+     "point": "策略",
+     "detail": "開放式問句、肯定、反映、摘要、引發改變語句。",
+     "articles": [
+      "Miller & Rollnick (2002)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "跨理論模式",
+     "point": "五階段",
+     "detail": "懼思期、沉思期、準備期、行動期、維持期。",
+     "articles": [
+      "Prochaska & DiClemente (1982)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "應用",
+     "point": "矯正機關",
+     "detail": "依階段調整策略，避免對懼思期個案直接說教。",
+     "articles": [
+      "Prochaska & DiClemente (1982)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "階段名稱錯誤。",
+    "MI 原理與策略混淆。",
+    "沒有矯正應用。"
+   ],
+   "body": "對於矯正機關中缺乏改變動機的案主，如何使用米勒與羅尼克（Miller &Rollnick）所提出的「動機式晤談」（motivational interviewing）原理與策略來協助其提高改變動機？波洽斯卡（Prochaska）等學者所提出之跨理論模式又如何描述案主在諮商歷程中會經歷那五個改變的階段？（25分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=112&s=0909&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-109-諮商與矯正輔導-2",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "109 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 2,
+   "year": 109,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "Meichenbaum 認知行為矯治與壓力免疫訓練",
+   "overview": "測驗 CBM 原理與 SIT 在藥物濫用者的應用。",
+   "rows": [
+    {
+     "group": "CBM",
+     "point": "原理",
+     "detail": "改變自我對話（內在語言）以改變行為。",
+     "articles": [
+      "Meichenbaum (1977)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "SIT",
+     "point": "三階段",
+     "detail": "概念化階段、技巧獲得與預演、應用與持續。",
+     "articles": [
+      "Meichenbaum (1985)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "應用",
+     "point": "藥物濫用者",
+     "detail": "辨識高風險情境、放鬆與因應技巧、拒絕技巧演練、復發預防。",
+     "articles": [
+      "Marlatt & Gordon (1985)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "SIT 階段寫錯。",
+    "沒有應用到藥物濫用。",
+    "把 CBM 等同 Beck。"
+   ],
+   "body": "梅肯鮑姆（Meichenbaum）的認知行為矯治（cognitive behavior modification）的治療原理為何？如何應用其所發展的壓力免疫訓練（stress inoculationtraining）來幫助藥物濫用者使其對壓力產生有效因應並預防其復發？（25分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=112&s=0909&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-109-諮商與矯正輔導-3",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "109 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 3,
+   "year": 109,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "焦點解決短期諮商在矯正機關的應用",
+   "overview": "測驗 SFBT 的優勢、歷程與技術。",
+   "rows": [
+    {
+     "group": "優勢",
+     "point": "矯正場域特色",
+     "detail": "短期、重視優勢與例外、合作關係，降低非自願個案抗拒。",
+     "articles": [
+      "de Shazer (1985)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "歷程",
+     "point": "諮商歷程",
+     "detail": "建立關係、設定目標、找例外、評量進展、給予回饋與任務。",
+     "articles": [
+      "de Shazer (1985)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "技術",
+     "point": "主要技術",
+     "detail": "奇蹟問句、例外問句、量尺問句、因應問句、讚美。",
+     "articles": [
+      "de Shazer (1988)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "只列技術。",
+    "沒有矯正優勢。",
+    "歷程不清。"
+   ],
+   "body": "焦點解決短期諮商應用於矯正機關收容人之行為改變有何優勢或特色？其諮商的歷程與諮商技術為何？（25分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=112&s=0909&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-109-諮商與矯正輔導-4",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "109 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 4,
+   "year": 109,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "團體前準備、計畫書與各階段領導者任務",
+   "overview": "測驗團體規劃與領導者任務。",
+   "rows": [
+    {
+     "group": "準備",
+     "point": "團體前工作",
+     "detail": "評估需求、篩選成員、說明知情同意、行政協調。",
+     "articles": [
+      "Corey (2016)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "計畫書",
+     "point": "內涵",
+     "detail": "理念、目標、對象、次數時間、單元內容、評估方式。",
+     "articles": [
+      "Corey (2016)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "各階段任務",
+     "point": "初始到結束",
+     "detail": "建立信任規範；處理抗拒衝突；促進深入工作；整合學習與結束追蹤。",
+     "articles": [
+      "Corey (2016)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "計畫書要素不足。",
+    "階段任務不清。",
+    "沒有篩選成員。"
+   ],
+   "body": "團體諮商具有經濟性、真實性與提供多元回饋性等優點，而成為矯正機構常使用的處遇策略。在進行團體諮商時，雖然不同團體在團體的發展上各有其獨特性，但其發展歷程亦有其相似之處。試述團體形成之前領導者應作的準備工作，團體計畫書的內涵，以及團體發展各階段中領導者的主要任務。（25分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=112&s=0909&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-110-諮商與矯正輔導-1",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "110 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 1,
+   "year": 110,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "藥物濫用者個案概念化",
+   "overview": "測驗概念化的理由與認知治療概念化的問題。",
+   "rows": [
+    {
+     "group": "理由",
+     "point": "為何概念化",
+     "detail": "整合資料、形成假設、引導目標與介入、預測阻礙。",
+     "articles": [
+      "Beck, J. S. (2011)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "問題",
+     "point": "認知概念化內容",
+     "detail": "當前問題與診斷、促發因素、早期經驗、核心信念、中介信念、補償策略、自動想法。",
+     "articles": [
+      "Beck, J. S. (2011)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "應用",
+     "point": "藥物濫用",
+     "detail": "用藥相關信念（允許性信念、預期信念）與高風險情境。",
+     "articles": [
+      "Beck et al. (1993)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "只寫定義。",
+    "概念化內容不完整。",
+    "沒有用藥信念。"
+   ],
+   "body": "請說明非法藥物濫用者諮商時，為何要進行個案概念化？一般說來，認知治療認為前述的個案概念化應該包括那些問題？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=114&s=0811&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-110-諮商與矯正輔導-2",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "110 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 2,
+   "year": 110,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "少年犯罪三級預防與有效方案特徵",
+   "overview": "測驗三級預防的對象、目標、時間點與有效方案特徵。",
+   "rows": [
+    {
+     "group": "初級",
+     "point": "對象與目標",
+     "detail": "一般少年，防止偏差發生；平時。",
+     "articles": [
+      "Brantingham & Faust (1976)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "次級",
+     "point": "對象與目標",
+     "detail": "高風險少年，早期辨識介入；偏差初現時。",
+     "articles": [
+      "Brantingham & Faust (1976)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "三級",
+     "point": "對象與目標",
+     "detail": "已觸法少年，防止再犯；處遇與復歸階段。",
+     "articles": [
+      "Brantingham & Faust (1976)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "有效方案",
+     "point": "特徵",
+     "detail": "符合 RNR、認知行為取向、家庭參與、多系統、實證評估。",
+     "articles": [
+      "Lipsey (2009)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "三級對象混淆。",
+    "沒有時間點。",
+    "有效特徵空泛。"
+   ],
+   "body": "就公共衛生中常見的三級預防模式說明少年犯罪預防之每一層級實施的對象、目標與時間點。其次，就成功或有效的少年犯罪預防與處遇方案所具有的特徵，詳加說明。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=114&s=0811&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-110-諮商與矯正輔導-3",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "110 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 3,
+   "year": 110,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "性侵害犯強制治療團體的要項",
+   "overview": "測驗性罪犯團體治療的內容。",
+   "rows": [
+    {
+     "group": "要項",
+     "point": "認知扭曲與責任承擔",
+     "detail": "辨識合理化、承擔責任。",
+     "articles": [
+      "Marshall et al. (2006)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "要項",
+     "point": "被害人同理",
+     "detail": "理解被害人的傷害。",
+     "articles": [
+      "Marshall et al. (2006)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "要項",
+     "point": "再犯預防",
+     "detail": "辨識犯罪循環、高風險情境、因應計畫。",
+     "articles": [
+      "Laws (1989)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "要項",
+     "point": "性偏好與好生活",
+     "detail": "性衝動管理、親密關係與社交技巧、好生活模式。",
+     "articles": [
+      "Ward & Brown (2004)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "要項不足。",
+    "沒有再犯預防。",
+    "只寫懲罰。"
+   ],
+   "body": "請就性侵害犯刑中強制治療時，為協助降低再犯風險，實施的團體諮商常會包括那些要項？請詳述之。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=114&s=0811&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-110-諮商與矯正輔導-4",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "110 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 4,
+   "year": 110,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "人際心理治療的四類人際問題與喪親受刑人",
+   "overview": "測驗 IPT 四個問題領域及喪親的輔導。",
+   "rows": [
+    {
+     "group": "四類",
+     "point": "哀傷、角色爭執、角色轉換、人際缺陷",
+     "detail": "說明各類的內容。",
+     "articles": [
+      "Klerman et al. (1984)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "喪親",
+     "point": "屬哀傷問題",
+     "detail": "親人逝世屬哀傷（複雜性哀傷）。",
+     "articles": [
+      "Klerman et al. (1984)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "輔導策略",
+     "point": "處理哀傷",
+     "detail": "促進哀悼、重建與逝者關係、建立新支持；監所可安排告別儀式或宗教協助。",
+     "articles": [
+      "Klerman et al. (1984)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "四類寫錯。",
+    "喪親歸類錯誤。",
+    "輔導策略沒有連結監所。"
+   ],
+   "body": "由 Gerald Kleman 所創立的人際心理治療論被認為是治療憂鬱症相當有效的諮商理論。此理論認為一個人的憂鬱症肇因於那四類人際問題？請詳述之。其次，親人逝世的受刑人所遭遇的人際問題是那一類，請就其輔導策略說明之。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=114&s=0811&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-111-諮商與矯正輔導-1",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "111 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 1,
+   "year": 111,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "抗拒與非自願的差異及不同學派的處理",
+   "overview": "測驗兩種現象的區別與精神分析、個人中心的觀點。",
+   "rows": [
+    {
+     "group": "差異",
+     "point": "抗拒與非自願",
+     "detail": "非自願指被迫前來、缺乏意願；抗拒指治療中對改變的防衛。",
+     "articles": [
+      "Corey (2017)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "精神分析",
+     "point": "抗拒的成因",
+     "detail": "潛意識防衛，避免焦慮內容浮現；以解釋處理。",
+     "articles": [
+      "Freud"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "個人中心",
+     "point": "抗拒的成因",
+     "detail": "缺乏安全與接納的關係；以真誠、同理、無條件積極關懷處理。",
+     "articles": [
+      "Rogers (1957)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "策略",
+     "point": "深化關係",
+     "detail": "說明角色、尊重自主、找共同目標。",
+     "articles": [
+      "Trotter (2015)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "兩者混為一談。",
+    "只寫一學派。",
+    "策略空泛。"
+   ],
+   "body": "在機構收容人的輔導過程中，經常會出現「抗拒」（resistance）或「非自願」（reluctance）的情事，請陳述這兩者之差異，並針對精神分析學派及個人中心學派，分別說明上述現象的出現因何所致，並對於如何深化關係說明你的策略運用。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=112&s=0805&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-111-諮商與矯正輔導-2",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "111 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 2,
+   "year": 111,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "行為規範障礙症狀與 Bowen 取向處遇",
+   "overview": "測驗 CD 症狀與多世代家族治療的應用。",
+   "rows": [
+    {
+     "group": "症狀",
+     "point": "四大類",
+     "detail": "攻擊人或動物、破壞財物、欺騙或偷竊、嚴重違反規範。",
+     "articles": [
+      "APA, DSM-5 (2013)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "Bowen",
+     "point": "評估",
+     "detail": "家系圖、三角關係、分化程度、多世代傳遞。",
+     "articles": [
+      "Bowen (1978)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "處遇",
+     "point": "策略",
+     "detail": "提升父母自我分化、去三角化、重建家庭溝通、連結社區資源。",
+     "articles": [
+      "Bowen (1978)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "症狀不完整。",
+    "Bowen 概念錯誤。",
+    "處遇不具體。"
+   ],
+   "body": "近年少年犯罪原因多元，其中以情緒障礙所占比例偏高，另也被診斷於其兒童期有「行為規範障礙」（conduct disorder）。請說明「行為規範障礙」的行為症狀，並根據 Bowen 多世代家族治療理論，設計一套適合此少年身心發展需要的處遇策略，以幫助其復歸社會。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=112&s=0805&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-111-諮商與矯正輔導-3",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "111 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 3,
+   "year": 111,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "Teyber 與 Holmes 人際歷程取向治療",
+   "overview": "測驗理論背景、介入重點與犯案動機概念化。理論內容請以教材為準。",
+   "rows": [
+    {
+     "group": "背景",
+     "point": "理論基礎",
+     "detail": "整合依附理論、客體關係與人際取向，重視早期關係模式。",
+     "articles": [
+      "Teyber & Holmes (2017)"
+     ],
+     "bonus": "理論內容請以講義核對。",
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "介入",
+     "point": "重點",
+     "detail": "以治療關係為矯正性情緒經驗、處理此時此地的歷程、辨識重複的人際模式。",
+     "articles": [
+      "Teyber & Holmes (2017)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "概念化",
+     "point": "犯案動機",
+     "detail": "早期被忽視或受虐形成的不安全依附與人際模式，促成犯罪行為。",
+     "articles": [
+      "Teyber & Holmes (2017)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "只寫背景。",
+    "介入不具體。",
+    "概念化沒有連結早期經驗。"
+   ],
+   "body": "許多收容人因早期生命經驗的影響而誤入歧途，請詳述 Tyber 與 Holmes（2017）「人際歷程取向治療」（Interpersonal process in therapy）理論背景，及介入策略重點，並概念化收容人的犯案動機。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=112&s=0805&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-111-諮商與矯正輔導-4",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "111 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 4,
+   "year": 111,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "以選擇理論設計青少年收容人八次團體",
+   "overview": "測驗選擇理論的人性觀、介入策略與團體設計。",
+   "rows": [
+    {
+     "group": "人性觀",
+     "point": "五種基本需求",
+     "detail": "生存、愛與隸屬、權力、自由、樂趣；人可以選擇自己的行為。",
+     "articles": [
+      "Glasser (1998)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "介入",
+     "point": "WDEP",
+     "detail": "想要什麼、正在做什麼、評估、計畫。",
+     "articles": [
+      "Wubbolding (2000)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "團體",
+     "point": "八次設計",
+     "detail": "目標與各次主題（認識需求、整體行為、評估、計畫、承諾、回顧）。",
+     "articles": [
+      "Wubbolding (2000)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "五需求寫錯。",
+    "沒有 WDEP。",
+    "八次內容不具體。"
+   ],
+   "body": "請以「選擇理論」（Choice theory）為青少年收容人設計八次團體，設計內容涵蓋說明此理論基本精神與人性觀，介入策略，並以上述的理念規劃團體目標與八次諮商歷程。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=112&s=0805&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-112-諮商與矯正輔導-1",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "112 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 1,
+   "year": 112,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "優勢中心諮商與傳統諮商的差異及矯正應用",
+   "overview": "測驗後現代優勢取向的特色與歷程。",
+   "rows": [
+    {
+     "group": "差異",
+     "point": "焦點不同",
+     "detail": "傳統重病理與缺陷；優勢取向重資源、能力與未來。",
+     "articles": [
+      "Saleebey (1992)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "矯正特色",
+     "point": "優勢與問責",
+     "detail": "結合好生活模式，提升動機與合作。",
+     "articles": [
+      "Ward & Brown (2004)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "歷程",
+     "point": "諮商歷程",
+     "detail": "建立關係、優勢評估、設定目標、運用優勢行動、追蹤。",
+     "articles": [
+      "Saleebey (1992)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "只寫差異。",
+    "沒有矯正特色。",
+    "歷程不清。"
+   ],
+   "body": "後現代取向心理諮商中的優勢中心諮商（strength-centered counseling）與傳統心理諮商的差異為何？將優勢中心諮商應用於矯正機構有何特色？其諮商的歷程為何？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=112&s=0805&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-112-諮商與矯正輔導-2",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "112 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 2,
+   "year": 112,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "Trotter 非自願個案有效實務原則",
+   "overview": "測驗四個面向與舉例。",
+   "rows": [
+    {
+     "group": "原則",
+     "point": "角色澄清",
+     "detail": "說明工作者角色、權力與可協商範圍。",
+     "articles": [
+      "Trotter (2015)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "原則",
+     "point": "親社會示範與增強",
+     "detail": "示範與增強親社會行為。",
+     "articles": [
+      "Trotter (2015)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "原則",
+     "point": "合作式問題解決",
+     "detail": "以個案定義的問題共同擬定目標。",
+     "articles": [
+      "Trotter (2015)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "原則",
+     "point": "關係",
+     "detail": "真誠、同理、樂觀的工作關係；每項原則都需舉例。",
+     "articles": [
+      "Trotter (2015)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "四面向少寫。",
+    "沒有舉例。",
+    "把角色澄清寫成威脅。"
+   ],
+   "body": "矯正機關的案主往往缺乏改變動機，讓矯正輔導工作可能產生很多的困難。針對在矯正機構中非自願個案工作的模式，請採用克里斯．察特（Chris Trotter）所提出的有效能實務工作原則四面向舉例說明，並詳述之。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=112&s=0805&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-112-諮商與矯正輔導-3",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "112 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 3,
+   "year": 112,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "提升收容人情緒管理的計畫",
+   "overview": "測驗情緒管理理念與方案設計。",
+   "rows": [
+    {
+     "group": "理念",
+     "point": "情緒觀",
+     "detail": "情緒是訊號，可被覺察、理解與調節。",
+     "articles": [
+      "Gross (1998)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "方式",
+     "point": "提升途徑",
+     "detail": "情緒辨識、認知重評、放鬆訓練、衝突處理技巧。",
+     "articles": [
+      "Gross (1998)",
+      "Novaco (1975)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "計畫",
+     "point": "計畫內容",
+     "detail": "目標、對象、次數、單元內容與評估。",
+     "articles": [
+      "Novaco (1975)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "只寫理念。",
+    "方案不具體。",
+    "沒有評估。"
+   ],
+   "body": "情緒管理是監所中很重要的議題，如果想提升收容人情緒管理能力，降低監所衝突與問題的發生，應從那些方式進行提升收容人情緒管理的目標，並請詳述你對情緒的想法和理念、預計進行的計畫方式及計畫內容。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=112&s=0805&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-112-諮商與矯正輔導-4",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "112 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 4,
+   "year": 112,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "以生涯理論設計出獄前八次團體",
+   "overview": "測驗生涯理論與團體設計。",
+   "rows": [
+    {
+     "group": "理論",
+     "point": "選定理論",
+     "detail": "如 Super 生涯發展、Holland 類型論或認知訊息處理。",
+     "articles": [
+      "Super (1980)",
+      "Holland (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "目標",
+     "point": "團體目標",
+     "detail": "自我探索、職業資訊、生涯決策、求職準備、面對標籤。",
+     "articles": [
+      "Super (1980)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "設計",
+     "point": "八次內容",
+     "detail": "各次主題與活動，並連結更生保護與就業服務。",
+     "articles": [
+      "更生保護法"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "理論與團體設計脫節。",
+    "八次內容不具體。",
+    "忽略出獄者標籤議題。"
+   ],
+   "body": "在矯正機構中，收容人面對出獄是開心又有壓力的事件，請針對他們設計八次封閉性小團體，以收容人出獄後的生涯為目標，一個生涯理論為基礎，詳述你選擇的生涯理論內容、團體目標及各次團體的內容。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=112&s=0805&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-113-諮商與矯正輔導-1",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "113 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 1,
+   "year": 113,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "三學派對抗拒的觀點與處理",
+   "overview": "測驗精神分析、行為、個人中心三學派。",
+   "rows": [
+    {
+     "group": "精神分析",
+     "point": "觀點與處理",
+     "detail": "潛意識防衛；以解釋與分析處理。",
+     "articles": [
+      "Freud"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "行為治療",
+     "point": "觀點與處理",
+     "detail": "抗拒是不適當增強或技巧不足；調整增強與目標。",
+     "articles": [
+      "Corey (2017)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "個人中心",
+     "point": "觀點與處理",
+     "detail": "關係不安全；以核心條件處理。",
+     "articles": [
+      "Rogers (1957)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "三學派混淆。",
+    "只寫觀點不寫處理。",
+    "沒有舉例。"
+   ],
+   "body": "不同學派對於諮商歷程中個案出現抗拒的看法不同，試從精神分析學派、行為治療學派、個人中心學派，分別論述各學派對於抗拒的觀點及處理作法。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=113&s=0808&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-113-諮商與矯正輔導-2",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "113 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 2,
+   "year": 113,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "暴力代間傳遞與介入技術",
+   "overview": "測驗社會學習與 Bowen 的觀點及技術。",
+   "rows": [
+    {
+     "group": "社會學習",
+     "point": "觀點",
+     "detail": "觀察父母暴力並獲得增強而學習。",
+     "articles": [
+      "Bandura (1977)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "Bowen",
+     "point": "觀點",
+     "detail": "情緒歷程與分化程度跨代傳遞。",
+     "articles": [
+      "Bowen (1978)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "技術",
+     "point": "行為學派",
+     "detail": "角色扮演、行為演練、增強非暴力行為。",
+     "articles": [
+      "Bandura (1977)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "技術",
+     "point": "家族治療學派",
+     "detail": "家系圖、去三角化。",
+     "articles": [
+      "Bowen (1978)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "兩觀點混淆。",
+    "技術沒有對應學派。",
+    "配分分配不當。"
+   ],
+   "body": "社會學習理論和 Bowen 多世代家族系統理論對於暴力代間傳遞現象的觀點為何？（15 分）試舉一個行為學派和家族治療學派的諮商技術，說明如何介入處理暴力行為？（10 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=113&s=0808&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-113-諮商與矯正輔導-3",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "113 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 3,
+   "year": 113,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "酒癮者的改變階段特色與提升動機技術",
+   "overview": "測驗跨理論模式應用與 MI 技術。",
+   "rows": [
+    {
+     "group": "階段",
+     "point": "各階段特色",
+     "detail": "懼思期否認問題；沉思期矛盾；準備期計畫減量；行動期戒酒；維持期防復發。",
+     "articles": [
+      "Prochaska & DiClemente (1982)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "技術",
+     "point": "提升動機",
+     "detail": "決策平衡、反映式傾聽、引發改變語句。",
+     "articles": [
+      "Miller & Rollnick (2002)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "應用",
+     "point": "矯正情境",
+     "detail": "依各階段調整：懼思期不說教、沉思期處理矛盾、行動與維持期安排復發預防與出監銜接。",
+     "articles": [
+      "Prochaska & DiClemente (1982)",
+      "Marlatt & Gordon (1985)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "階段特色沒有用酒癮舉例。",
+    "技術少於兩個。",
+    "階段順序錯誤。"
+   ],
+   "body": "Prochaska 和 Diclemente 提出成癮行為的改變歷程模式，試以酒癮者個案為例，說明於改變歷程各階段，酒癮者可能出現的特色為何？（15 分）並舉出兩個提升酒癮個案改變動機的諮商技術。（10 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=113&s=0808&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-113-諮商與矯正輔導-4",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "113 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 4,
+   "year": 113,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "Yalom 療效因子與運用",
+   "overview": "測驗療效因子並選五項說明運用。",
+   "rows": [
+    {
+     "group": "因子",
+     "point": "十一項療效因子",
+     "detail": "灌注希望、普同感、傳遞資訊、利他、原生家庭矯正性重現、社交技巧、模仿、人際學習、凝聚力、宣洩、存在因子。",
+     "articles": [
+      "Yalom & Leszcz (2005)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "運用",
+     "point": "選五項說明",
+     "detail": "每項說明在團體中如何促成改變。",
+     "articles": [
+      "Yalom & Leszcz (2005)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "矯正",
+     "point": "收容人團體",
+     "detail": "如普同感降低羞恥、利他提升價值感、凝聚力支撐出監準備；注意戒護與保密限制。",
+     "articles": [
+      "Yalom & Leszcz (2005)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "十一項不完整。",
+    "運用不具體。",
+    "因子名稱錯誤。"
+   ],
+   "body": "Irvin Yalom 提出團體有效的治療因子為何？（10 分）請選擇五個團體治療因子，說明如何運用該治療因子幫助團體成員在團體內產生改變？（15 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=113&s=0808&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-114-諮商與矯正輔導-1",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "114 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 1,
+   "year": 114,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "Adler 學派在矯正機關的運用",
+   "overview": "測驗 Adler 學派的優勢、歷程與技術。",
+   "rows": [
+    {
+     "group": "優勢",
+     "point": "矯正特色",
+     "detail": "重視社會興趣與責任、鼓勵、生活型態分析。",
+     "articles": [
+      "Adler (1927)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "歷程",
+     "point": "四階段",
+     "detail": "建立關係、評估生活型態、洞察、再定向。",
+     "articles": [
+      "Dreikurs"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "技術",
+     "point": "常用技術",
+     "detail": "鼓勵、早期回憶、彷彿技術、按鈕技術、逮到自己。",
+     "articles": [
+      "Mosak & Maniacci"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "歷程階段寫錯。",
+    "技術不足。",
+    "沒有矯正特色。"
+   ],
+   "body": "阿德勒（Adler）學派運用於矯正機關中收容人行為改變之優勢與特色，並說明其諮商歷程與常用技術為何？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=114&s=0808&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-114-諮商與矯正輔導-2",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "114 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 2,
+   "year": 114,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "創傷知情觀點下的監獄官工作",
+   "overview": "測驗創傷知情原則與預防再創傷。",
+   "rows": [
+    {
+     "group": "原則",
+     "point": "創傷知情 4R",
+     "detail": "了解創傷、辨識徵兆、回應、避免再創傷。",
+     "articles": [
+      "SAMHSA (2014)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "原則",
+     "point": "六大原則",
+     "detail": "安全、信任透明、同儕支持、合作、賦權、文化敏感。",
+     "articles": [
+      "SAMHSA (2014)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "應用",
+     "point": "監所實務",
+     "detail": "降低觸發（搜身、隔離）、預告程序、穩定化技巧、兼顧管理與心理安全。",
+     "articles": [
+      "SAMHSA (2014)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "監獄官",
+     "point": "自我照顧",
+     "detail": "替代性創傷與督導支持。",
+     "articles": [
+      "SAMHSA (2014)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "原則不完整。",
+    "只談受刑人不談管理。",
+    "忽略監獄官自我照顧。"
+   ],
+   "body": "監獄官與受刑人互動的過程中，常面臨情緒壓力與高風險情境，而受刑人也可能帶有複雜創傷經驗。請從創傷知情（Trauma-Informed）觀點出發，分析監獄官在工作中應如何理解並因應受刑人的創傷反應，以預防再創傷（re-traumatization），並維持有效管理與心理安全。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=114&s=0808&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-114-諮商與矯正輔導-3",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "114 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 3,
+   "year": 114,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "以自我認同為目標的團體設計",
+   "overview": "測驗團體理念、目標與處理抗拒情緒。",
+   "rows": [
+    {
+     "group": "理念",
+     "point": "設計理念",
+     "detail": "標籤理論與敘事取向，重建正向身分。",
+     "articles": [
+      "Becker (1963)",
+      "White & Epston (1990)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "目標",
+     "point": "團體與單元目標",
+     "detail": "認識標籤、探索價值與優勢、重寫故事、規劃未來。",
+     "articles": [
+      "White & Epston (1990)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "帶領",
+     "point": "處理抗拒與情緒",
+     "detail": "接納、反映、立即性、團體規範與安全。",
+     "articles": [
+      "Corey (2016)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "理念與目標脫節。",
+    "單元目標不具體。",
+    "沒有處理抗拒。"
+   ],
+   "body": "在監所中，許多受刑人面臨社會標籤與自我價值的問題。若欲設計一個以「自我認同」為目標的團體輔導，請說明此團體的主要設計理念、團體目標與單元目標，以及帶領者應如何處理可能出現的抗拒與情緒議題。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=114&s=0808&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-114-諮商與矯正輔導-4",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "114 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 4,
+   "year": 114,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "三級預防應用於酒癮犯",
+   "overview": "測驗三級預防的對象、目標與活動。",
+   "rows": [
+    {
+     "group": "初級",
+     "point": "對象與活動",
+     "detail": "一般受刑人；酒害教育、宣導。",
+     "articles": [
+      "Brantingham & Faust (1976)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "次級",
+     "point": "對象與活動",
+     "detail": "高風險飲酒者；篩檢（如 AUDIT）、短期介入。",
+     "articles": [
+      "Babor et al. (2001)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "三級",
+     "point": "對象與活動",
+     "detail": "酒癮者；戒癮治療、團體、復發預防、出獄銜接。",
+     "articles": [
+      "Marlatt & Gordon (1985)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "三級對象混淆。",
+    "活動不具體。",
+    "沒有連結再犯。"
+   ],
+   "body": "酒癮問題與再犯風險密切相關，請說明三級預防模式？並將其應用於酒癮犯者的每一層級工作，內容應包含實施對象、目標與可辦理的活動內容。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=114&s=0808&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-115-諮商與矯正輔導-1",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "115 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 1,
+   "year": 115,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "成癮團體中「你沒用過毒」的挑戰與移情",
+   "overview": "測驗從移情觀點解讀與回應。",
+   "rows": [
+    {
+     "group": "解讀",
+     "point": "移情",
+     "detail": "成員把對權威或過去被誤解的經驗投射到帶領者。",
+     "articles": [
+      "Freud",
+      "Yalom & Leszcz (2005)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "解讀",
+     "point": "團體歷程",
+     "detail": "也可能是轉換階段的挑戰與信任測試。",
+     "articles": [
+      "Corey (2016)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "回應",
+     "point": "處理方式",
+     "detail": "不防衛、承認經驗差異、反映感受、邀請團體回應、運用立即性。",
+     "articles": [
+      "Yalom & Leszcz (2005)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "反思",
+     "point": "反移情",
+     "detail": "帶領者覺察自身情緒反應。",
+     "articles": [
+      "Corey et al."
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "防衛或爭辯。",
+    "沒有移情解讀。",
+    "忽略團體歷程。"
+   ],
+   "body": "以藥酒癮收容人為成員對象的團體諮商中，成員挑戰團體帶領者：「你又沒有用過毒，你怎麼會了解我們？」身為團體帶領者，從移情（transference）的觀點，你要如何解讀此現象，以及如何回應處理？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=116&s=0808&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-115-諮商與矯正輔導-2",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "115 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 2,
+   "year": 115,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "Adler 學派少年不適應行為的目標與介入",
+   "overview": "測驗 Dreikurs 錯誤目標與評估線索。",
+   "rows": [
+    {
+     "group": "目標",
+     "point": "四種錯誤目標",
+     "detail": "尋求注意、爭取權力、報復、表現無能。",
+     "articles": [
+      "Dreikurs (1964)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "線索",
+     "point": "評估方式",
+     "detail": "大人的感受、糾正後少年的反應。",
+     "articles": [
+      "Dreikurs (1964)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "介入",
+     "point": "行為當下處理",
+     "detail": "忽略不當注意、避免權力爭奪、不報復、鼓勵；事後討論與自然邏輯後果。",
+     "articles": [
+      "Dreikurs (1964)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "目標寫錯。",
+    "漏掉評估線索。",
+    "介入沒有對應目標。"
+   ],
+   "body": "阿德勒學派認為，少年的不適應行為目標為何？並說明評估這些不適應行為目的的線索有那些，以及行為當下如何介入處理？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=116&s=0808&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-115-諮商與矯正輔導-3",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "115 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 3,
+   "year": 115,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "以表達性治療進行受刑人家庭支持方案",
+   "overview": "測驗方案設計。",
+   "rows": [
+    {
+     "group": "對象",
+     "point": "介入對象",
+     "detail": "受刑人與家屬（含子女）。",
+     "articles": [
+      "Malchiodi (2005)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "目標",
+     "point": "方案目標",
+     "detail": "修復關係、表達情感、建立出獄後支持。",
+     "articles": [
+      "Malchiodi (2005)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "理念",
+     "point": "表達性治療",
+     "detail": "藝術、戲劇、音樂等非語言表達降低防衛。",
+     "articles": [
+      "Malchiodi (2005)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "活動",
+     "point": "活動內容",
+     "detail": "家庭繪畫、信件與錄音、家庭日、親子共讀。",
+     "articles": [
+      "法務部矯正署家庭支持方案"
+     ],
+     "bonus": "方案名稱請以講義核對。",
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "只寫理念。",
+    "活動不具體。",
+    "忽略子女。"
+   ],
+   "body": "家庭支持是受刑人日後賦歸社會與預防再犯重要的因素。若以表達性治療進行受刑人家庭支持方案，請詳述其介入對象、目標、理念與活動內容。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=116&s=0808&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "監獄官-115-諮商與矯正輔導-4",
+   "kind": "theory",
+   "label": "諮商與矯正輔導",
+   "exam": "115 年司法特考三等監獄官",
+   "subject": "諮商與矯正輔導",
+   "no": 4,
+   "year": 115,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "自傷自殺高風險判斷與系統合作",
+   "overview": "測驗風險評估項目與合作機制。",
+   "rows": [
+    {
+     "group": "判斷",
+     "point": "風險項目",
+     "detail": "自殺意念與計畫、過去企圖、精神疾病、絕望感、重大失落、入監初期、判決前後。",
+     "articles": [
+      "WHO (2007)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "判斷",
+     "point": "保護因子",
+     "detail": "家庭支持、宗教、治療參與。",
+     "articles": [
+      "WHO (2007)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "合作",
+     "point": "機制與作法",
+     "detail": "戒護、衛生、教化、心理師分工；篩檢、通報、觀察、轉介、事後追蹤。",
+     "articles": [
+      "監獄行刑法"
+     ],
+     "bonus": "法規條次請以講義核對。",
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，技巧或方案具體",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "只列風險不列保護。",
+    "沒有系統分工。",
+    "忽略入監初期高風險。"
+   ],
+   "body": "矯正機關中受刑人的自傷自殺議題常帶來高度壓力，也往往需要各單位系統合作。請說明自殺自傷高風險之判斷項目，以及系統合作之機制與作法。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=116&s=0808&q=1",
+   "examType": "監獄官",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-108-刑法-1",
+   "kind": "case",
+   "label": "刑法",
+   "exam": "108 年公務人員薦任升官等考試（矯正）",
+   "subject": "刑法",
+   "no": 1,
+   "year": 108,
+   "points": 25,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "誤刺兄弟後呼叫救護車",
+   "overview": "測驗客體錯誤、殺人未遂與準中止未遂。",
+   "rows": [
+    {
+     "group": "甲",
+     "point": "第 271 條殺人未遂：客體錯誤",
+     "detail": "誤認丙為乙屬等價客體錯誤，不阻卻對丙的殺人故意；丙未死，成立殺人未遂。",
+     "articles": [
+      "刑法第 271 條第 2 項",
+      "刑法第 25 條"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "中止：是否出於己意",
+     "detail": "發現刺錯人而放棄，是「目的落空」的障礙未遂，還是己意中止。",
+     "articles": [
+      "刑法第 27 條第 1 項"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "準中止：盡力防止",
+     "detail": "丙未死係乙送醫所致，非甲的防止行為；甲已叫救護車，是否「已盡力」為防止行為。",
+     "articles": [
+      "刑法第 27 條第 1 項後段"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款"
+   ],
+   "pitfalls": [
+    "把客體錯誤當打擊錯誤。",
+    "漏掉第 27 條後段。",
+    "己意與盡力兩個要件沒有分開檢討。"
+   ],
+   "body": "甲欲殺乙，持水果刀守在乙家附近，發現乙單獨出門，遂用刀猛刺乙，乙倒於血泊中。甲趨前查看，驚見倒地者乃貌似乙的兄弟丙，遂立即電召救護車。救護車未到前，聽聞喊叫聲的乙衝出，駕車將丙送醫，丙雖然傷勢不輕，但倖得不死。試問甲的可罰性？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108170&c=218&s=0508&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-108-刑法-2",
+   "kind": "case",
+   "label": "刑法",
+   "exam": "108 年公務人員薦任升官等考試（矯正）",
+   "subject": "刑法",
+   "no": 2,
+   "year": 108,
+   "points": 25,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "闖紅燈引起後車跟隨肇事",
+   "overview": "測驗過失致死的因果關係與客觀歸責、第三人自我負責。",
+   "rows": [
+    {
+     "group": "甲",
+     "point": "第 276 條過失致死：注意義務違反",
+     "detail": "闖紅燈違反交通規則，製造不容許風險。",
+     "articles": [
+      "刑法第 276 條",
+      "刑法第 14 條"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "結果歸責",
+     "detail": "乙的獨立過失介入，是否屬第三人自我負責而中斷歸責；或為闖紅燈可預見的典型風險。",
+     "articles": [
+      "刑法第 276 條"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "乙",
+     "point": "第 276 條過失致死",
+     "detail": "乙應注意自身燈號而未注意，成立過失致死。",
+     "articles": [
+      "刑法第 276 條"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款"
+   ],
+   "pitfalls": [
+    "只用條件說認定因果。",
+    "漏論乙的刑責。",
+    "把甲論為故意。"
+   ],
+   "body": "甲開車闖越紅燈，使得駕駛在其後的乙誤為燈號已經轉為綠燈，因而尾隨甲闖越紅燈，導致撞擊行經路口的腳踏車騎士丙，丙當場死亡。試問甲的可罰性？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108170&c=218&s=0508&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-108-刑法-3",
+   "kind": "case",
+   "label": "刑法",
+   "exam": "108 年公務人員薦任升官等考試（矯正）",
+   "subject": "刑法",
+   "no": 3,
+   "year": 108,
+   "points": 25,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "假冒醫師身分讓被害人同意離去",
+   "overview": "測驗過失傷害與肇事逃逸罪的「逃逸」。",
+   "rows": [
+    {
+     "group": "甲",
+     "point": "第 284 條過失傷害",
+     "detail": "駕駛不慎撞傷乙，成立過失傷害（告訴乃論）。",
+     "articles": [
+      "刑法第 284 條"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "第 185 條之 4 肇事逃逸",
+     "detail": "以詐術取得被害人同意離去，是否仍屬「逃逸」；本罪保護確認肇事者身分的利益，冒用他人身分使身分無從確認。",
+     "articles": [
+      "刑法第 185 條之 4 第 1 項"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "冒用名片",
+     "detail": "出示他人真實名片非偽造文書；另行檢討是否有其他罪。",
+     "articles": [
+      "刑法第 210 條"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款"
+   ],
+   "pitfalls": [
+    "以「被害人同意」直接否定逃逸。",
+    "沒有說明本罪保護法益。",
+    "漏掉過失傷害。"
+   ],
+   "body": "甲駕駛汽車不慎，撞倒等待紅燈的機車騎士乙。乙受到輕傷，尚能自主行動。甲誆稱自己是婦產科醫師某丙，必須趕赴醫院接生，並掏出先前某丙給他的名片給乙，乙因此同意甲離去。試問甲的可罰性？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108170&c=218&s=0508&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-108-刑法-4",
+   "kind": "case",
+   "label": "刑法",
+   "exam": "108 年公務人員薦任升官等考試（矯正）",
+   "subject": "刑法",
+   "no": 4,
+   "year": 108,
+   "points": 25,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "兄長資助正當防衛的弟弟出國",
+   "overview": "測驗藏匿人犯罪的「犯人」與親屬減免。",
+   "rows": [
+    {
+     "group": "甲",
+     "point": "第 164 條使之隱避",
+     "detail": "提供旅費使乙出逃，屬使之隱避。",
+     "articles": [
+      "刑法第 164 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "「犯人」是否包含正當防衛者",
+     "detail": "乙的行為依第 23 條不罰，是否仍為「犯人」：以客觀上犯罪成立為準，或以偵查中被告即足。",
+     "articles": [
+      "刑法第 164 條第 1 項",
+      "刑法第 23 條"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "親屬減免",
+     "detail": "甲為乙的二親等血親，圖利犯人而犯第 164 條，減輕或免除其刑。",
+     "articles": [
+      "刑法第 167 條"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款"
+   ],
+   "pitfalls": [
+    "漏掉「犯人」的爭議。",
+    "把第 167 條寫成不罰。",
+    "忽略乙行為已阻卻違法。"
+   ],
+   "body": "甲的弟弟乙，某日遭黑道角頭丙的現在不法侵害。為避免遭到丙殺害，乙使用必要的防衛手段反擊，導致丙死亡。事後，檢察官著手調查此案，將乙當作涉嫌殺人的偵案被告。曾經誣陷入獄的甲，因不信司法調查的公正，並擔心乙遭受丙所屬黑幫的報復，提供乙旅費逃至菲律賓。試問甲的可罰性？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108170&c=218&s=0508&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-110-刑法-1",
+   "kind": "case",
+   "label": "刑法",
+   "exam": "110 年公務人員薦任升官等考試（矯正）",
+   "subject": "刑法",
+   "no": 1,
+   "year": 110,
+   "points": 25,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "中槍逃跑闖紅燈被撞死",
+   "overview": "測驗殺人行為與死亡結果的歸責。",
+   "rows": [
+    {
+     "group": "甲",
+     "point": "第 271 條殺人：構成要件",
+     "detail": "甲有殺人故意並射擊乙。",
+     "articles": [
+      "刑法第 271 條"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "死亡結果的歸責",
+     "detail": "被害人逃跑闖紅燈是否屬被害人自陷風險或典型逃避反應；歸責成立則殺人既遂，否則殺人未遂。",
+     "articles": [
+      "刑法第 271 條第 1 項、第 2 項"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "因果歷程偏離",
+     "detail": "若認可歸責，再檢討因果歷程重大偏離是否影響故意。",
+     "articles": [
+      "刑法第 13 條"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款"
+   ],
+   "pitfalls": [
+    "只用條件說。",
+    "忽略被害人逃避行為的特性。",
+    "沒有寫出既遂與未遂兩種結論。"
+   ],
+   "body": "甲基於殺害乙的念頭，持槍射擊乙，乙中彈受到輕傷，一路驚慌奔逃，顧不得紅燈亮起，試圖闖過路口，卻被疾駛而來的卡車撞死。請問甲的刑事責任如何？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110170&c=124&s=0505&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-110-刑法-2",
+   "kind": "case",
+   "label": "刑法",
+   "exam": "110 年公務人員薦任升官等考試（矯正）",
+   "subject": "刑法",
+   "no": 2,
+   "year": 110,
+   "points": 25,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "推倒車友保護重機",
+   "overview": "測驗緊急避難的利益衡量與避難過當。",
+   "rows": [
+    {
+     "group": "甲",
+     "point": "第 277 條傷害：構成要件",
+     "detail": "推倒乙使其受傷，至少有未必故意。",
+     "articles": [
+      "刑法第 277 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "第 24 條緊急避難",
+     "detail": "財產危難屬可避難的法益，但以他人身體保全自己財產，利益衡量不符，非「不得已」。",
+     "articles": [
+      "刑法第 24 條第 1 項"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "避難過當",
+     "detail": "避難過當得減輕或免除其刑。",
+     "articles": [
+      "刑法第 24 條第 1 項但書"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款"
+   ],
+   "pitfalls": [
+    "直接認定阻卻違法。",
+    "沒有做利益衡量。",
+    "漏掉避難過當。"
+   ],
+   "body": "甲見到其所有價值百萬的重機即將倒下，為防止重機摔壞，情急之下將車友乙推倒在地，讓重機倒在乙身上，造成乙多處挫傷，而重機只有些微掉漆。請問甲的刑事責任如何？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110170&c=124&s=0505&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-110-刑法-3",
+   "kind": "case",
+   "label": "刑法",
+   "exam": "110 年公務人員薦任升官等考試（矯正）",
+   "subject": "刑法",
+   "no": 3,
+   "year": 110,
+   "points": 25,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "網路謊稱同業用化學原料",
+   "overview": "測驗妨害信用罪與誹謗罪。",
+   "rows": [
+    {
+     "group": "甲",
+     "point": "第 313 條妨害信用",
+     "detail": "散布不實流言損害乙的經濟信用；以網際網路為之，得加重其刑至二分之一。",
+     "articles": [
+      "刑法第 313 條第 1 項、第 2 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "第 310 條加重誹謗",
+     "detail": "指摘乙的商品，是否同時貶損乙個人名譽。",
+     "articles": [
+      "刑法第 310 條第 2 項"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "競合",
+     "detail": "一行為觸犯數罪，想像競合從一重處斷。",
+     "articles": [
+      "刑法第 55 條"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款"
+   ],
+   "pitfalls": [
+    "漏掉第 313 條第 2 項。",
+    "只論誹謗。",
+    "沒有處理競合。"
+   ],
+   "body": "甲經營飲料店，見到隔壁乙經營的飲料店生意比自己好，因此在設為公開的社群網站個人網頁上謊稱，乙販賣的手搖飲都是使用化學原料調製而成，導致乙的生意一落千丈。請問甲的刑事責任如何？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110170&c=124&s=0505&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-110-刑法-4",
+   "kind": "case",
+   "label": "刑法",
+   "exam": "110 年公務人員薦任升官等考試（矯正）",
+   "subject": "刑法",
+   "no": 4,
+   "year": 110,
+   "points": 25,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "擅入同事計程車找回錢包",
+   "overview": "測驗取回自己財物、使用竊盜與侵入罪的客體。",
+   "rows": [
+    {
+     "group": "甲",
+     "point": "竊盜：取回自己的錢包",
+     "detail": "錢包為甲所有，不是他人動產，不成立竊盜。",
+     "articles": [
+      "刑法第 320 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "擅用車鑰匙",
+     "detail": "暫時使用、無不法所有意圖，屬不罰的使用竊盜。",
+     "articles": [
+      "刑法第 320 條第 1 項"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "第 306 條侵入住宅",
+     "detail": "計程車不屬住宅、建築物或附連圍繞之土地，不成立。",
+     "articles": [
+      "刑法第 306 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款"
+   ],
+   "pitfalls": [
+    "論以竊盜錢包。",
+    "把汽車類推為住宅。",
+    "忽略不法所有意圖。"
+   ],
+   "body": "計程車司機甲懷疑同事乙偷竊自己的錢包，未經乙的同意，持乙的車鑰匙，擅自進入乙所有的計程車搜尋錢包，經過一番尋找，果然找到錢包。請問甲的刑事責任如何？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110170&c=124&s=0505&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-112-刑法-1",
+   "kind": "case",
+   "label": "刑法",
+   "exam": "112 年公務人員薦任升官等考試（矯正）",
+   "subject": "刑法",
+   "no": 1,
+   "year": 112,
+   "points": 25,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "丟噴霧罐砸鸚鵡卻砸中飼主",
+   "overview": "測驗打擊錯誤與毀損罪未遂不罰。",
+   "rows": [
+    {
+     "group": "乙",
+     "point": "對 X 的毀損",
+     "detail": "乙有毀損的未必故意；X 未被擊中，第 354 條毀損未遂不罰。",
+     "articles": [
+      "刑法第 354 條",
+      "刑法第 25 條第 2 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "乙",
+     "point": "打擊錯誤",
+     "detail": "砸中甲，屬打擊錯誤；具體符合說下，對甲另論過失。",
+     "articles": [
+      "刑法第 13 條"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "乙",
+     "point": "第 284 條過失傷害",
+     "detail": "四下無人而未注意屋內有人走出，是否違反注意義務。",
+     "articles": [
+      "刑法第 284 條"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款"
+   ],
+   "pitfalls": [
+    "把動物當人論傷害。",
+    "論毀損未遂。",
+    "打擊錯誤與客體錯誤混淆。"
+   ],
+   "body": "甲在家門口飼養了一隻鸚鵡 X。由於甲家門外經常有鴿子來大便，弄髒甲停在路旁的機車及安全帽，甲每每高聲咒罵道「該死的鴿子」，遂使 X學會了這句話。一日，員警乙巡邏經過甲家，恰好 X 大叫「該死的鴿子」，因「鴿子」也是警察人員的代稱，乙頓時大怒，見四下無人，抱持砸死X 也在所不惜的心態，拿起隨身攜帶的辣椒水噴霧罐朝 X 扔去，X 閃開未被擲中，卻砸中後方剛好從屋內走出來的甲，造成甲右眼瘀青。試問乙上述行為在刑法上應如何評價？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112170&c=124&s=0505&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-112-刑法-2",
+   "kind": "case",
+   "label": "刑法",
+   "exam": "112 年公務人員薦任升官等考試（矯正）",
+   "subject": "刑法",
+   "no": 2,
+   "year": 112,
+   "points": 25,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "遙控器開鐵捲門入店後放棄",
+   "overview": "測驗加重竊盜要件、著手時點與中止未遂。",
+   "rows": [
+    {
+     "group": "甲",
+     "point": "加重要件",
+     "detail": "打烊店面非「有人居住之建築物」；以遙控器開門非「毀越」，不構成第 321 條。",
+     "articles": [
+      "刑法第 321 條第 1 項第 1 款、第 2 款"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "竊盜著手",
+     "detail": "進入店內端詳收銀機，已對財物有密接行為，屬著手。",
+     "articles": [
+      "刑法第 320 條第 3 項"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "中止未遂",
+     "detail": "甲知警車不是追自己，仍放棄，屬出於己意中止。",
+     "articles": [
+      "刑法第 27 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "第 306 條侵入建築物",
+     "detail": "無故侵入他人建築物，與竊盜未遂想像競合。",
+     "articles": [
+      "刑法第 306 條第 1 項",
+      "刑法第 55 條"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款"
+   ],
+   "pitfalls": [
+    "把開遙控器當毀越。",
+    "著手時點沒有說理。",
+    "把外在因素一律當成障礙未遂。"
+   ],
+   "body": "甲缺錢花用，想起曾在某飲料店打工，該店週日打烊後店員會將現金留在收銀機內，等店長週一到店內收取，遂決定鋌而走險。甲知店員習慣將鐵捲門遙控器藏在何處，故在某個週日午夜前往該店面，順利找到遙控器、開啟鐵捲門，進入後再將鐵捲門放下。當甲正端詳著收銀機，思考要設法撬開還是整台抱走時，聽到外面一陣警車鳴笛聲呼嘯而過。甲雖知警車是在追緝其他車輛，應未注意到鐵捲門內的動態，但仍感到膽戰心驚，經過一番天人交戰後，決定罷手離去。試問甲上述行為在刑法上應如何評價？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112170&c=124&s=0505&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-112-刑法-3",
+   "kind": "case",
+   "label": "刑法",
+   "exam": "112 年公務人員薦任升官等考試（矯正）",
+   "subject": "刑法",
+   "no": 3,
+   "year": 112,
+   "points": 25,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "公務員收下民眾的珍珠奶茶",
+   "overview": "測驗職務上收受賄賂的對價關係與社會相當性。",
+   "rows": [
+    {
+     "group": "甲",
+     "point": "職務上行為",
+     "detail": "核發謄本屬職務行為；依裁量提前核發未違背職務。",
+     "articles": [
+      "刑法第 121 條",
+      "貪污治罪條例第 5 條第 1 項第 3 款"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "對價關係與社會相當性",
+     "detail": "事後致謝的低價飲料是否具對價關係，或屬社交禮儀範圍。",
+     "articles": [
+      "刑法第 121 條"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "科長指示",
+     "detail": "依上級指示收下，是否影響故意或違法性。",
+     "articles": [
+      "刑法第 21 條第 2 項"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款"
+   ],
+   "pitfalls": [
+    "只寫第 121 條沒有貪污治罪條例。",
+    "不談對價關係。",
+    "忽略情節輕微的減輕（貪污治罪條例第 12 條）。"
+   ],
+   "body": "甲任職於戶政事務所，遇民眾乙申辦英文戶籍謄本，依規定應於六個工作天內核發，但乙再三拜託，表示後天即將出國，希望最晚隔天就要拿到。適因天候不佳，洽公民眾少，甲評估手邊案量，告知乙 3 小時後可取件，下不為例。3 小時後，乙果然依約來取件，並帶了 6 杯珍珠奶茶（每杯市價新臺幣 60 元），表示要慰勞甲及機關同仁的辛勞。甲原本不肯收，但科長丙見狀，認為民眾辛苦提過來，堅辭不收未免太不近人情，指示甲收下。試問甲上述行為是否成立刑法瀆職罪章中的何種犯罪？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112170&c=124&s=0505&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-112-刑法-4",
+   "kind": "case",
+   "label": "刑法",
+   "exam": "112 年公務人員薦任升官等考試（矯正）",
+   "subject": "刑法",
+   "no": 4,
+   "year": 112,
+   "points": 25,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "轉交禮金時抽出部分充作自己的",
+   "overview": "測驗侵占罪的持有與易持有為所有。",
+   "rows": [
+    {
+     "group": "乙",
+     "point": "第 335 條侵占：持有他人之物",
+     "detail": "受託轉交紅包，乙持有甲的現金。",
+     "articles": [
+      "刑法第 335 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "乙",
+     "point": "易持有為所有",
+     "detail": "抽出 1200 元充作自己禮金，屬易持有為所有的侵占行為。",
+     "articles": [
+      "刑法第 335 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "乙",
+     "point": "業務或公務侵占",
+     "detail": "轉交禮金非乙的業務或公務，不成立第 336 條。",
+     "articles": [
+      "刑法第 336 條"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款"
+   ],
+   "pitfalls": [
+    "論竊盜。",
+    "論公務侵占。",
+    "忽略「持有」要件。"
+   ],
+   "body": "甲為某公務機關科長，因無法出席科員 X 的婚宴，將禮金新臺幣（下同）3200 元放在紅包袋中，交給會出席婚宴的科員乙，請其轉交給新人。乙遂將甲的紅包袋中的 1200 元抽出，放入自己另外準備的 2000 元紅包袋中，充作自己送給 X 的禮金。試問乙上述行為在刑法上應如何評價？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112170&c=124&s=0505&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-114-刑法-1",
+   "kind": "case",
+   "label": "刑法",
+   "exam": "114 年公務人員薦任升官等考試（矯正）",
+   "subject": "刑法",
+   "no": 1,
+   "year": 114,
+   "points": 25,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "被害人倒地後持續重擊頭部",
+   "overview": "測驗正當防衛的現在性、防衛過當與挑唆防衛。",
+   "rows": [
+    {
+     "group": "甲",
+     "point": "第一次反擊",
+     "detail": "乙持開山刀揮砍為現在不法侵害，甲以大鎖反擊屬正當防衛；甲回店叫囂是否屬挑唆而限制防衛權。",
+     "articles": [
+      "刑法第 23 條"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "乙倒地後的重擊",
+     "detail": "乙倒地、背對爬行，侵害已過去，持續重擊 20 多下為事後防衛，不適用第 23 條，亦非防衛過當。",
+     "articles": [
+      "刑法第 23 條但書"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "第 271 條殺人",
+     "detail": "重擊頭部要害 20 多下，至少有殺人未必故意，成立殺人既遂。",
+     "articles": [
+      "刑法第 271 條第 1 項",
+      "刑法第 13 條第 2 項"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款"
+   ],
+   "pitfalls": [
+    "把全部行為一併評價。",
+    "把事後防衛寫成防衛過當。",
+    "論傷害致死而不檢討殺人故意。"
+   ],
+   "body": "甲於 2025 年 7 月間偕同友人至海產熱炒餐廳聚餐，因故與鄰桌客人乙發生口角，甲於聚餐結束返家後心有不甘，又騎機車回到前開餐廳門口對乙叫囂，乙衝至門口取出攜帶於身上的開山刀對甲頸部氣管部位猛力揮砍，甲先閃躲後持機車大鎖毆打乙作為反擊，乙因酒精影響氣力不濟，在持刀揮空後，即因踩空倒地，此時甲仍逼近乙並對乙之頭部以機車大鎖重擊一下，乙被毆打之後背對甲爬行欲離開現場，但甲仍在背後對乙之頭部要害繼續以機車大鎖重擊 20 多下，導致乙因顱內嚴重出血當場死亡。請問甲之刑責為何？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114160&c=124&s=0507&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-114-刑法-2",
+   "kind": "case",
+   "label": "刑法",
+   "exam": "114 年公務人員薦任升官等考試（矯正）",
+   "subject": "刑法",
+   "no": 2,
+   "year": 114,
+   "points": 25,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "撞倒被害人載走意圖性侵後未送醫",
+   "overview": "測驗強制性交致死、不作為殺人與遺棄。",
+   "rows": [
+    {
+     "group": "甲",
+     "point": "強制性交未遂與加重結果",
+     "detail": "以撞擊為強制手段已著手強制性交，死亡由撞擊所致，成立第 226 條強制性交致死（基本罪未遂亦適用）。",
+     "articles": [
+      "刑法第 221 條第 2 項",
+      "刑法第 226 條第 1 項"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "不作為殺人",
+     "detail": "前行為產生保證人地位；但需確認未送醫與死亡間的假設因果關係（題目只說撞傷時送醫不會死）。",
+     "articles": [
+      "刑法第 15 條",
+      "刑法第 271 條"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "遺棄與傷害",
+     "detail": "第 294 條以法令或契約義務為限；撞擊另論傷害；最後處理競合。",
+     "articles": [
+      "刑法第 294 條",
+      "刑法第 277 條",
+      "刑法第 55 條"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款"
+   ],
+   "pitfalls": [
+    "漏掉第 226 條。",
+    "不作為因果沒有說理。",
+    "把前行為直接寫成第 294 條的義務。"
+   ],
+   "body": "甲男開小貨車行駛於馬路，見路上行人乙女外型亮麗，乃欲對乙強制性交。甲先開車以相當高的速度將乙撞倒，再下車攙扶已經受嚴重傷害的乙到自己車上，並對前來關心乙的其他路人宣稱自己將載乙就醫，路人們因此放心離開。甲將乙放置於副駕駛座後，將乙載至附近人煙稀少的田間道路，將乙下身衣物褪去欲對乙強制性交時，發現乙已經失去意識，甲知道若放著乙不送醫，乙將因傷重死亡，但因害怕被發現，所以僅載乙於鄉間道路繞行，未將乙送醫。其後甲被行經附近的員警發現攔停，才發現於副駕駛座之乙，此時乙已因先前受到甲開車撞擊導致內臟大量出血而死亡。事後經鑑定發現，如在乙遭甲撞傷時即能送醫救治，應不會死亡。請問甲之刑責為何？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114160&c=124&s=0507&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-114-刑法-3",
+   "kind": "case",
+   "label": "刑法",
+   "exam": "114 年公務人員薦任升官等考試（矯正）",
+   "subject": "刑法",
+   "no": 3,
+   "year": 114,
+   "points": 25,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "市議員收錢關說主管機關核發登記",
+   "overview": "測驗民意代表的職務範圍與違背職務收賄。",
+   "rows": [
+    {
+     "group": "甲",
+     "point": "公務員身分",
+     "detail": "市議員屬依法令服務於地方自治團體所屬機關而具有法定職務權限者。",
+     "articles": [
+      "刑法第 10 條第 2 項第 1 款"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "職務上行為",
+     "detail": "關說行政機關非議員法定職權；實務採「實質影響力」說，與職務有密切關連即屬之。",
+     "articles": [
+      "貪污治罪條例第 4 條第 1 項第 5 款",
+      "刑法第 122 條"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "違背職務",
+     "detail": "以杯葛預算施壓、使不符法規的申請案核准，屬違背職務的收受賄賂。",
+     "articles": [
+      "貪污治罪條例第 4 條第 1 項第 5 款"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "其他罪名",
+     "detail": "對丙、丁施壓是否另成立強制罪；與收賄的競合。",
+     "articles": [
+      "刑法第 304 條"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款"
+   ],
+   "pitfalls": [
+    "只寫刑法不寫貪污治罪條例。",
+    "職務關連沒有說理。",
+    "漏掉施壓行為。"
+   ],
+   "body": "電玩業者乙向 A 市政府經濟發展局（以下簡稱經發局）申請核發營業登記證，惟因申請之店面所在位置不符法規兩度遭退回，乙於是與市議會多數黨之 B 黨團幹部即市議員甲約定：以新臺幣（以下同）100 萬元為代價，並先交付 30 萬元現金給甲，由甲假借出席經發局員工家屬喪禮上香之機會，約同樣在場之經發局長丙、承辦人丁同日晚間 10 點到 C 咖啡廳召開「協調會」。丙、丁不得已出席甲所邀集之協調會，會中甲即以杯葛經發局預算為藉口，要丙、丁以專案方式快速通過乙將要提出之申請案。丙、丁迫於壓力承諾甲之請託內容。其後乙再以先前被退件的資料原封不動提出第三次申請，A 市經發局果然以專案方式核發營業登記證給乙。事後乙也再依約交付 70 萬元給甲。請問甲之刑責為何？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114160&c=124&s=0507&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-114-刑法-4",
+   "kind": "case",
+   "label": "刑法",
+   "exam": "114 年公務人員薦任升官等考試（矯正）",
+   "subject": "刑法",
+   "no": 4,
+   "year": 114,
+   "points": 25,
+   "check": "已核對現行法 2026-10-27",
+   "checkOk": true,
+   "srcLabel": "法源（已核對現行法）",
+   "title": "隱瞞兇宅高價出售",
+   "overview": "測驗不作為詐術、財產損害與詐欺既遂。",
+   "rows": [
+    {
+     "group": "甲",
+     "point": "詐術：隱瞞兇宅",
+     "detail": "依交易習慣與誠信原則有告知義務，隱瞞屬詐術。",
+     "articles": [
+      "刑法第 339 條第 1 項"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "財產損害",
+     "detail": "以 1000 萬購得市價 700 萬的房屋，依整體財產說有損害；個別財產說亦成立。",
+     "articles": [
+      "刑法第 339 條第 1 項"
+     ],
+     "disputed": true,
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "甲",
+     "point": "丙轉售獲利",
+     "detail": "詐欺於交付時既遂，事後高價轉售不影響犯罪成立。",
+     "articles": [
+      "刑法第 339 條第 1 項"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "以行為人、特定行為為單位，逐罪依三階層審查",
+    "最後處理競合並明確論罪",
+    "條文引用到條、項、款"
+   ],
+   "pitfalls": [
+    "沒有論證告知義務。",
+    "把轉售獲利當成無損害。",
+    "漏掉既遂時點。"
+   ],
+   "body": "甲因配偶乙於家中自殺，欲搬家並自行將自住之透天房屋出售。甲因同時積欠債務而欲將該房屋以較高價格出售，乃隱瞞上開兇宅之事實，連同土地與建物以新臺幣（以下同）1,000 萬元出售給不知情的買家丙。丙嗣後才發現原來所買為兇宅，實際行情應只有 700 萬元。丙嫌居住該屋不吉利，也再將該屋出售，此時雖然丙誠實地於出售資訊中明示此一房屋曾為兇宅的事實，但是仍吸引特別喜愛兇宅的房地產大亨丁，丁為能早日取得所有權，明知為兇宅仍願意出價 1,100 萬元購買該屋，丙乃迅速將房屋出售給丁並取得丁交付之 1,100 萬元對價。請問甲之刑責為何？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114160&c=124&s=0507&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-108-心理測驗-1",
+   "kind": "theory",
+   "label": "心理測驗",
+   "exam": "108 年公務人員薦任升官等考試（矯正）",
+   "subject": "心理測驗",
+   "no": 1,
+   "year": 108,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "試題難度與鑑別度的計算",
+   "overview": "測驗古典測驗理論的 P 值、D 值意義與計算。",
+   "rows": [
+    {
+     "group": "意義",
+     "point": "難度 P",
+     "detail": "答對比例，越大越容易；P = (PH + PL) / 2。",
+     "articles": [
+      "郭生玉，心理與教育測驗"
+     ],
+     "bonus": "公式請以講義核對。",
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "意義",
+     "point": "鑑別度 D",
+     "detail": "高低分組答對率差，D = PH − PL，越大越能區辨。",
+     "articles": [
+      "Ebel (1979)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "計算",
+     "point": "結果",
+     "detail": "P = (.65 + .35) / 2 = .50；D = .65 − .35 = .30，屬可接受的鑑別度。",
+     "articles": [
+      "Ebel (1979)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "誘答力",
+     "point": "選項分析",
+     "detail": "錯誤選項低分組選答多於高分組，誘答良好。",
+     "articles": [
+      "郭生玉，心理與教育測驗"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "公式寫錯。",
+    "沒有解釋數值。",
+    "忽略誘答分析。"
+   ],
+   "body": "請以古典測驗理論分析下列試題，先說明難度（P）、鑑別度（D）數值的意義，（15 分）並分別計算出結果。（10 分）組別/選項 A B*（正確）C D高分組 .10 .65 .15 .10低分組 .15 .35 .30 .20註：細格內數字代表選填人數與該組人數的比值",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108170&c=218&s=0605&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-108-心理測驗-2",
+   "kind": "theory",
+   "label": "心理測驗",
+   "exam": "108 年公務人員薦任升官等考試（矯正）",
+   "subject": "心理測驗",
+   "no": 2,
+   "year": 108,
+   "points": 110,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "離差智商轉換 Z、T 與 PR",
+   "overview": "測驗標準分數轉換。",
+   "rows": [
+    {
+     "group": "解釋",
+     "point": "IQ 85",
+     "detail": "低於平均一個標準差，屬中下程度。",
+     "articles": [
+      "Anastasi & Urbina (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "計算",
+     "point": "Z 與 T",
+     "detail": "Z = (85 − 100) / 15 = −1；T = 50 + 10Z = 40。",
+     "articles": [
+      "Anastasi & Urbina (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "計算",
+     "point": "PR",
+     "detail": "常態下 Z = −1 約為 PR 16。",
+     "articles": [
+      "Anastasi & Urbina (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "沒有列過程。",
+    "PR 寫成 34。",
+    "口語解釋過度標籤。"
+   ],
+   "body": "（一）某標準化智力測驗平均數 100，標準差 15，阿明測得離差智商為 85 分，請以口語化解釋阿明的測驗結果。（10 分）（二）假設測驗常模接近於常態分配，擬進行測驗分數的轉換與解釋，請問阿明的 Z 分數、T 分數與百分等級（PR 值）分別是多少（請列出計算過程，近似值以四捨五入取至整數）？（15 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108170&c=218&s=0605&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-108-心理測驗-3",
+   "kind": "theory",
+   "label": "心理測驗",
+   "exam": "108 年公務人員薦任升官等考試（矯正）",
+   "subject": "心理測驗",
+   "no": 3,
+   "year": 108,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "採購測驗：類型選擇與評估條件",
+   "overview": "測驗人格、性向、興趣測驗比較與信效度常模評估。",
+   "rows": [
+    {
+     "group": "比較",
+     "point": "三類測驗",
+     "detail": "人格測驗評估適應；性向測驗預測潛能；興趣測驗協助生涯偏好。",
+     "articles": [
+      "Anastasi & Urbina (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "選擇",
+     "point": "優先購買",
+     "detail": "以「心理適應」為首要目的，宜優先人格測驗，並說明理由。",
+     "articles": [
+      "Anastasi & Urbina (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "評估",
+     "point": "信度、效度、常模",
+     "detail": "信度係數、效度證據、常模代表性與時效。",
+     "articles": [
+      "AERA, APA, & NCME (2014)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "沒有說明選擇理由。",
+    "評估條件不具體。",
+    "忽略常模適用對象。"
+   ],
+   "body": "（一）某機構想採購心理測驗，協助評估受測者心理適應狀況與未來生涯發展，請依測驗目的比較人格、性向、興趣三種類型的測驗，何者應該最優先購買？（10 分）（二）確認類型後請就此提出優良測驗的信效度、常模等三項具體的評估條件？（15 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108170&c=218&s=0605&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-108-心理測驗-4",
+   "kind": "theory",
+   "label": "心理測驗",
+   "exam": "108 年公務人員薦任升官等考試（矯正）",
+   "subject": "心理測驗",
+   "no": 4,
+   "year": 108,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "線上施測的倫理議題",
+   "overview": "測驗知後同意、保密與專業性。",
+   "rows": [
+    {
+     "group": "知後同意",
+     "point": "問題與策略",
+     "detail": "難確認受測者理解；提供清楚說明與確認程序。",
+     "articles": [
+      "臺灣心理學會倫理守則"
+     ],
+     "bonus": "守則條次請以講義核對。",
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "保密",
+     "point": "問題與策略",
+     "detail": "資料外洩；加密、權限控管、資料保存期限。",
+     "articles": [
+      "個人資料保護法"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "專業性",
+     "point": "問題與策略",
+     "detail": "無專業人員解釋、常模不適用；限制使用資格、由專業人員解釋。",
+     "articles": [
+      "AERA, APA, & NCME (2014)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "三面向混寫。",
+    "只寫問題沒有策略。",
+    "忽略個資保護。"
+   ],
+   "body": "近年來電腦化測驗日益盛行，許多測驗機構也提供線上施測與結果呈現（或書面報告），若以測驗倫理⑴知後同意、⑵保密、⑶專業性等三方面的考量，請分別說明可能的問題與提出解決策略。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108170&c=218&s=0605&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-110-心理測驗-1",
+   "kind": "theory",
+   "label": "心理測驗",
+   "exam": "110 年公務人員薦任升官等考試（矯正）",
+   "subject": "心理測驗",
+   "no": 1,
+   "year": 110,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "評估再犯風險的心理測驗評論",
+   "overview": "測驗選定一份測驗並評論優缺點與適用範圍。",
+   "rows": [
+    {
+     "group": "選定",
+     "point": "測驗介紹",
+     "detail": "如 Static-99R、LSI-R、BSRS-5 或台灣常用量表，說明測量內容。",
+     "articles": [
+      "Andrews & Bonta (2010)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "評論",
+     "point": "優缺點",
+     "detail": "信效度、常模、施測成本、靜態與動態因子。",
+     "articles": [
+      "Andrews & Bonta (2010)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "範圍",
+     "point": "適用範圍",
+     "detail": "適用對象、不可單獨決策、結合晤談。",
+     "articles": [
+      "Andrews & Bonta (2010)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "只介紹不評論。",
+    "忽略適用限制。",
+    "測驗名稱錯誤。"
+   ],
+   "body": "假設您在某矯正機關，想評估受保護管束人（如毒品犯、性侵犯、家暴犯等）再犯風險，使用現有的心理測驗來了解他們（可能包括人格、情緒管理、家庭支持、衝動性、壓力調適等方面）。請選一個您最常使用到的心理測驗，並評論其優缺點及適用範圍。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110170&c=124&s=0604&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-110-心理測驗-2",
+   "kind": "theory",
+   "label": "心理測驗",
+   "exam": "110 年公務人員薦任升官等考試（矯正）",
+   "subject": "心理測驗",
+   "no": 2,
+   "year": 110,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "自編測驗的編製程序",
+   "overview": "測驗心理測驗編製步驟。",
+   "rows": [
+    {
+     "group": "特性",
+     "point": "測量構念",
+     "detail": "界定構念（如衝動性）與操作型定義。",
+     "articles": [
+      "DeVellis (2017)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "程序",
+     "point": "編製步驟",
+     "detail": "雙向細目表、編題、專家審查、預試、項目分析、信效度、常模。",
+     "articles": [
+      "DeVellis (2017)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "應用",
+     "point": "矯正場域",
+     "detail": "考量社會期許、識字程度。",
+     "articles": [
+      "DeVellis (2017)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "步驟不完整。",
+    "沒有界定構念。",
+    "忽略社會期許偏誤。"
+   ],
+   "body": "如果您覺得上述題一現有的心理測驗仍無法用來了解保護管束人的某個特性，您想要自編心理測驗，請問您會怎麼進行。請先說明要測量那個特性，然後再談您會怎麼進行心理測驗的編製。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110170&c=124&s=0604&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-110-心理測驗-3",
+   "kind": "theory",
+   "label": "心理測驗",
+   "exam": "110 年公務人員薦任升官等考試（矯正）",
+   "subject": "心理測驗",
+   "no": 3,
+   "year": 110,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "驗證量表能否預測未來犯罪",
+   "overview": "測驗預測效度的驗證。",
+   "rows": [
+    {
+     "group": "效度",
+     "point": "效標關聯效度",
+     "detail": "以未來犯罪紀錄為效標，進行追蹤。",
+     "articles": [
+      "Anastasi & Urbina (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "方法",
+     "point": "研究設計",
+     "detail": "縱貫追蹤、相關或迴歸、ROC/AUC。",
+     "articles": [
+      "Hanson & Morton-Bourgon (2009)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "限制",
+     "point": "注意事項",
+     "detail": "基率、效標污染、追蹤流失。",
+     "articles": [
+      "Anastasi & Urbina (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "寫成內容效度。",
+    "沒有研究設計。",
+    "忽略基率。"
+   ],
+   "body": "對在矯正機關裡的受保護管束人，觀察他們從小到大的生長過程，通常會發現到他們變成後來會犯罪的發展軌跡。假如您希望了解一個孩子在成長過程裡發生了什麼事，才會造就他現在的樣子。因此您自己編製一個量表，如何驗證這個量表能否有效預測青少年未來罪犯行為？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110170&c=124&s=0604&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-110-心理測驗-4",
+   "kind": "theory",
+   "label": "心理測驗",
+   "exam": "110 年公務人員薦任升官等考試（矯正）",
+   "subject": "心理測驗",
+   "no": 4,
+   "year": 110,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "建立常模的過程",
+   "overview": "測驗常模建立步驟。",
+   "rows": [
+    {
+     "group": "步驟",
+     "point": "界定母群與抽樣",
+     "detail": "分層隨機抽樣，確保代表性與樣本數。",
+     "articles": [
+      "Anastasi & Urbina (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "步驟",
+     "point": "施測與分數轉換",
+     "detail": "標準化施測，轉換百分等級、標準分數。",
+     "articles": [
+      "Anastasi & Urbina (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "步驟",
+     "point": "常模報告與更新",
+     "detail": "描述樣本、常模表，定期更新。",
+     "articles": [
+      "AERA, APA, & NCME (2014)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "抽樣說明不清。",
+    "沒有分數轉換。",
+    "忽略常模更新。"
+   ],
+   "body": "請說明建立量表常模的過程。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110170&c=124&s=0604&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-112-心理測驗-1",
+   "kind": "theory",
+   "label": "心理測驗",
+   "exam": "112 年公務人員薦任升官等考試（矯正）",
+   "subject": "心理測驗",
+   "no": 1,
+   "year": 112,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "最大表現與典型表現測驗",
+   "overview": "測驗測驗分類。",
+   "rows": [
+    {
+     "group": "最大表現",
+     "point": "定義",
+     "detail": "測量能力的最佳表現，有對錯；專業測驗、性向測驗屬之。",
+     "articles": [
+      "Cronbach (1990)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "典型表現",
+     "point": "定義",
+     "detail": "測量平常傾向，無對錯；人格測驗屬之。",
+     "articles": [
+      "Cronbach (1990)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "分類",
+     "point": "三種測驗",
+     "detail": "專業測驗（成就）、性向測驗為最大表現；人格測驗為典型表現。",
+     "articles": [
+      "Cronbach (1990)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "把性向歸為典型表現。",
+    "沒有定義。",
+    "分類沒有理由。"
+   ],
+   "body": "選才考試包括專業測驗、人格測驗與性向測驗。請依測驗的性質，為以上的測驗做分類並解釋之。何者為最大表現測驗（maximum performancetest）？或何者為典型表現測驗（typical performance test）？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112170&c=124&s=0604&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-112-心理測驗-2",
+   "kind": "theory",
+   "label": "心理測驗",
+   "exam": "112 年公務人員薦任升官等考試（矯正）",
+   "subject": "心理測驗",
+   "no": 2,
+   "year": 112,
+   "points": 1175,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "以迴歸預測 GPA",
+   "overview": "測驗迴歸預測。",
+   "rows": [
+    {
+     "group": "公式",
+     "point": "迴歸方程",
+     "detail": "預測 Y = Ȳ + r(SDy/SDx)(X − X̄)。",
+     "articles": [
+      "Anastasi & Urbina (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "計算",
+     "point": "甲",
+     "detail": "2.8 + .5 × (.8/100) × 150 = 3.4。",
+     "articles": [
+      "Anastasi & Urbina (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "計算",
+     "point": "乙",
+     "detail": "X = 平均，預測 2.8；並說明預測有誤差。",
+     "articles": [
+      "Anastasi & Urbina (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "公式錯誤。",
+    "沒有列過程。",
+    "忽略估計標準誤。"
+   ],
+   "body": "甲生在 SAT 的數學得分是 650 分，而乙生在 SAT 數學得分卻是 500 分。如果他們兩個人都進入伊利諾大學的機械系就讀時，你預期兩個人學業成就成績的平均 GPA 會是多少分？（資訊如下：（一）SAT 與 GPA 的分數之關聯強度為 0.50；（二）SAT 與 GPA 的平均分數分別為 500 和 2.8；（三）SAT 與 GPA 的標準差各為 100 和 0.8。）（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112170&c=124&s=0604&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-112-心理測驗-3",
+   "kind": "theory",
+   "label": "心理測驗",
+   "exam": "112 年公務人員薦任升官等考試（矯正）",
+   "subject": "心理測驗",
+   "no": 3,
+   "year": 112,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "選擇適當的常模團體",
+   "overview": "測驗常模參照的適切性。",
+   "rows": [
+    {
+     "group": "結論",
+     "point": "應比較的常模",
+     "detail": "申請電腦碩士班，宜與大學生或資訊相關科系申請者比較。",
+     "articles": [
+      "Anastasi & Urbina (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "理由",
+     "point": "常模相關性",
+     "detail": "常模應與決策目的的競爭群體相符；成功工程師為效標群體。",
+     "articles": [
+      "Anastasi & Urbina (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "補充",
+     "point": "其他常模",
+     "detail": "可蒐集資訊系畢業生或碩士班錄取者常模。",
+     "articles": [
+      "Anastasi & Urbina (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "選一般母群體。",
+    "沒有理由。",
+    "把 PR 當成績。"
+   ],
+   "body": "假設有一位大學生接受一個電腦知識測驗，可能會得到不同常模的解釋。下表呈現一些可能性，但如果這個學生企圖去申請電腦碩士班這個分數，請問他應該要跟下列那個常模比較，或是參照其他常模？請說明理由。（25 分）表 常模團體及其百分等級常模團體 百分等級\n一般母群體 86大學生母群體 70成功的電腦工程師 30",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112170&c=124&s=0604&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-112-心理測驗-4",
+   "kind": "theory",
+   "label": "心理測驗",
+   "exam": "112 年公務人員薦任升官等考試（矯正）",
+   "subject": "心理測驗",
+   "no": 4,
+   "year": 112,
+   "points": 248,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "測量標準誤與信賴區間",
+   "overview": "測驗 SEM 與分數差異的判斷。",
+   "rows": [
+    {
+     "group": "公式",
+     "point": "SEM",
+     "detail": "SEM = 15 × √(1 − .96) = 3。",
+     "articles": [
+      "Anastasi & Urbina (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "區間",
+     "point": "95% 信賴區間",
+     "detail": "甲 110 ± 5.88；乙 113 ± 5.88，區間重疊。",
+     "articles": [
+      "Anastasi & Urbina (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "結論",
+     "point": "差異",
+     "detail": "差異未達顯著，不能說真有差別；可用差異標準誤補充。",
+     "articles": [
+      "Anastasi & Urbina (1997)"
+     ],
+     "bonus": "差異標準誤 = 3√2 ≈ 4.24。",
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "SEM 算錯。",
+    "沒有結論。",
+    "忽略重疊判斷。"
+   ],
+   "body": "甲生的 IQ 成績為 110 分，乙生的 IQ 成績為 113 分，請問兩者的 IQ 成績真的有差別嗎？（資訊如下：測驗的信度=0.96，標準差=15。以 95%的信賴區間為估計範圍（Z.025=1.96））。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112170&c=124&s=0604&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-114-心理測驗-1",
+   "kind": "theory",
+   "label": "心理測驗",
+   "exam": "114 年公務人員薦任升官等考試（矯正）",
+   "subject": "心理測驗",
+   "no": 1,
+   "year": 114,
+   "points": 20,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "信度與效度的理論差異",
+   "overview": "測驗兩者理論基礎與高信度低效度的例子。",
+   "rows": [
+    {
+     "group": "信度",
+     "point": "理論",
+     "detail": "真分數模式，測量的一致性與穩定性。",
+     "articles": [
+      "Anastasi & Urbina (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "效度",
+     "point": "理論",
+     "detail": "測到所欲測構念的程度與證據。",
+     "articles": [
+      "AERA, APA, & NCME (2014)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "例子",
+     "point": "高信度低效度",
+     "detail": "穩定測到社會期許而非真實人格；信度是效度的必要非充分條件。",
+     "articles": [
+      "Anastasi & Urbina (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "把兩者混淆。",
+    "例子不合理。",
+    "漏掉必要非充分。"
+   ],
+   "body": "心理測驗的「信度」與「效度」常被視為測驗品質的兩大核心指標。請比較二者在理論基礎上的差異，並舉例說明在心理衡鑑中可能出現「高信度但低效度」的情境。（20 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114160&c=124&s=0605&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-114-心理測驗-2",
+   "kind": "theory",
+   "label": "心理測驗",
+   "exam": "114 年公務人員薦任升官等考試（矯正）",
+   "subject": "心理測驗",
+   "no": 2,
+   "year": 114,
+   "points": 30,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "全國高中生常模的解釋限制",
+   "overview": "測驗常模限制與跨族群比較。",
+   "rows": [
+    {
+     "group": "限制",
+     "point": "代表性",
+     "detail": "不適用中輟、矯正機構少年；時效與文化差異。",
+     "articles": [
+      "Anastasi & Urbina (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "處理",
+     "point": "分組常模",
+     "detail": "建立性別、地區、文化分組常模。",
+     "articles": [
+      "AERA, APA, & NCME (2014)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "處理",
+     "point": "測量恆等性",
+     "detail": "檢驗 DIF 與測量恆等性後再比較。",
+     "articles": [
+      "Vandenberg & Lance (2000)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "只寫一個限制。",
+    "沒有測量恆等性。",
+    "忽略矯正少年。"
+   ],
+   "body": "某研究者欲建立一份青少年社交焦慮量表，採用常模為「全國高中學生」。請說明在解釋測驗分數時，使用此常模可能會遇到那些限制？若要比較不同族群（例如性別、地區或文化背景），應如何處理常模的建立與分數解釋問題？（30 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114160&c=124&s=0605&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-114-心理測驗-3",
+   "kind": "theory",
+   "label": "心理測驗",
+   "exam": "114 年公務人員薦任升官等考試（矯正）",
+   "subject": "心理測驗",
+   "no": 3,
+   "year": 114,
+   "points": 30,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "測驗目的與項目分析取向",
+   "overview": "測驗臨床診斷與教育選才的題項設計差異。",
+   "rows": [
+    {
+     "group": "臨床",
+     "point": "診斷取向",
+     "detail": "題項涵蓋症狀，著重切截點、敏感度與特異度。",
+     "articles": [
+      "Anastasi & Urbina (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "選才",
+     "point": "常模取向",
+     "detail": "題項難度分布適中、鑑別度高，以區辨高低能力。",
+     "articles": [
+      "Anastasi & Urbina (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "比較",
+     "point": "項目分析",
+     "detail": "標準參照與常模參照的差異。",
+     "articles": [
+      "Popham (1978)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "只講一般原則。",
+    "沒有舉例。",
+    "混淆標準與常模參照。"
+   ],
+   "body": "在進行心理測驗編製時，研究者除了關注題項難度與鑑別度外，還可能考慮「測驗目的」與「受測情境」對題項設計的影響。請舉例說明不同測驗目的下（如臨床診斷、教育選才），題項設計與項目分析可能的不同取向。（30 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114160&c=124&s=0605&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-114-心理測驗-4",
+   "kind": "theory",
+   "label": "心理測驗",
+   "exam": "114 年公務人員薦任升官等考試（矯正）",
+   "subject": "心理測驗",
+   "no": 4,
+   "year": 114,
+   "points": 20,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "電腦化與 AI 測驗的倫理議題",
+   "overview": "測驗三項倫理議題與因應。",
+   "rows": [
+    {
+     "group": "議題",
+     "point": "隱私與資料安全",
+     "detail": "個資蒐集與保存；加密、最小蒐集。",
+     "articles": [
+      "個人資料保護法"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "議題",
+     "point": "演算法偏誤與透明",
+     "detail": "AI 解釋的偏誤與不可解釋性；人類專業覆核。",
+     "articles": [
+      "AERA, APA, & NCME (2014)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "議題",
+     "point": "施測身分與專業解釋",
+     "detail": "無監督施測、自動報告；限制資格與專業回饋。",
+     "articles": [
+      "臺灣心理學會倫理守則"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "議題少於三項。",
+    "沒有因應。",
+    "忽略專業人員責任。"
+   ],
+   "body": "隨著電腦化測驗與人工智慧技術的發展，心理測驗結果的施測、儲存與解釋都面臨新的挑戰。請說明三項可能的倫理議題，並論述心理測驗專業人員應如何因應。（20 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114160&c=124&s=0605&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-108-犯罪學-1",
+   "kind": "theory",
+   "label": "犯罪學",
+   "exam": "108 年公務人員薦任升官等考試（矯正）",
+   "subject": "犯罪學",
+   "no": 1,
+   "year": 108,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "常見的再犯風險因子與依據",
+   "overview": "測驗靜態與動態風險因子及實證依據。",
+   "rows": [
+    {
+     "group": "靜態",
+     "point": "因子",
+     "detail": "前科、初犯年齡、性別、犯罪類型。",
+     "articles": [
+      "Andrews & Bonta (2010)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "動態",
+     "point": "核心八因子",
+     "detail": "犯罪史、反社會人格、反社會認知、反社會同儕、家庭、教育就業、休閒、物質濫用。",
+     "articles": [
+      "Andrews & Bonta (2010)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "依據",
+     "point": "實證研究",
+     "detail": "後設分析與 RNR 模式。",
+     "articles": [
+      "Gendreau et al. (1996)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "只列靜態因子。",
+    "沒有實證依據。",
+    "忽略動態可處遇性。"
+   ],
+   "body": "請列舉常見的預測再犯風險因子，並說明根據為何？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108170&c=218&s=2702&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-108-犯罪學-2",
+   "kind": "theory",
+   "label": "犯罪學",
+   "exam": "108 年公務人員薦任升官等考試（矯正）",
+   "subject": "犯罪學",
+   "no": 2,
+   "year": 108,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "Hare 心理病態特徵與犯罪",
+   "overview": "測驗 PCL-R 兩因素與犯罪關係。",
+   "rows": [
+    {
+     "group": "特徵",
+     "point": "人際情感面",
+     "detail": "油嘴滑舌、自大、說謊、缺乏悔意與同理。",
+     "articles": [
+      "Hare (2003)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "特徵",
+     "point": "生活型態反社會面",
+     "detail": "衝動、不負責、早期行為問題、多元犯罪。",
+     "articles": [
+      "Hare (2003)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "關係",
+     "point": "與犯罪",
+     "detail": "高再犯、暴力與工具性暴力；處遇反應差。",
+     "articles": [
+      "Hare (2003)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "等同反社會人格。",
+    "沒有兩因素。",
+    "忽略處遇意涵。"
+   ],
+   "body": "請說明 Hare（2003）的心理病態人格（psychopath）特徵以及其與犯罪之關係。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108170&c=218&s=2702&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-108-犯罪學-3",
+   "kind": "theory",
+   "label": "犯罪學",
+   "exam": "108 年公務人員薦任升官等考試（矯正）",
+   "subject": "犯罪學",
+   "no": 3,
+   "year": 108,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "少年加入幫派的功能",
+   "overview": "測驗幫派對少年的功能。",
+   "rows": [
+    {
+     "group": "功能",
+     "point": "歸屬與認同",
+     "detail": "替代家庭，提供認同。",
+     "articles": [
+      "Thrasher (1927)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "功能",
+     "point": "保護與地位",
+     "detail": "安全保護、聲望地位。",
+     "articles": [
+      "Cohen (1955)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "功能",
+     "point": "經濟與刺激",
+     "detail": "非法收入、刺激；並連結矯正處遇。",
+     "articles": [
+      "Cloward & Ohlin (1960)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "功能少於三項。",
+    "沒有理論。",
+    "沒有對策。"
+   ],
+   "body": "請分析少男或青年加入幫眾團體的功能為何？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108170&c=218&s=2702&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-108-犯罪學-4",
+   "kind": "theory",
+   "label": "犯罪學",
+   "exam": "108 年公務人員薦任升官等考試（矯正）",
+   "subject": "犯罪學",
+   "no": 4,
+   "year": 108,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "家暴施暴者的風險因子",
+   "overview": "測驗家暴風險因子。",
+   "rows": [
+    {
+     "group": "個人",
+     "point": "因子",
+     "detail": "暴力前科、物質濫用、精神疾病、嫉妒控制。",
+     "articles": [
+      "Dutton (2006)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "關係",
+     "point": "因子",
+     "detail": "分居、懷孕、威脅殺害、勒頸。",
+     "articles": [
+      "Campbell (2003)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "評估",
+     "point": "工具",
+     "detail": "TIPVDA、DA。",
+     "articles": [
+      "Campbell (2003)"
+     ],
+     "bonus": "工具名稱請以講義核對。",
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "只寫個人因子。",
+    "沒有評估工具。",
+    "忽略危險升高時機。"
+   ],
+   "body": "試分析家庭暴力案件中施暴者的風險因子。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108170&c=218&s=2702&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-110-犯罪學-1",
+   "kind": "theory",
+   "label": "犯罪學",
+   "exam": "110 年公務人員薦任升官等考試（矯正）",
+   "subject": "犯罪學",
+   "no": 1,
+   "year": 110,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "自我控制與標籤理論看監獄矯治失敗",
+   "overview": "測驗兩理論解釋與改善策略。",
+   "rows": [
+    {
+     "group": "一般化犯罪理論",
+     "point": "觀點",
+     "detail": "低自我控制早年形成，監禁難以改變。",
+     "articles": [
+      "Gottfredson & Hirschi (1990)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "標籤理論",
+     "point": "觀點",
+     "detail": "監禁強化犯罪者身分，形成次級偏差。",
+     "articles": [
+      "Lemert (1951)",
+      "Becker (1963)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "改善",
+     "point": "對策",
+     "detail": "早期介入、轉向、社區處遇、去標籤與復歸。",
+     "articles": [
+      "Braithwaite (1989)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "理論與對策脫節。",
+    "只寫一理論。",
+    "對策空泛。"
+   ],
+   "body": "請以一般化犯罪理論（AGeneral Theory of Crime）與標籤理論（LabellingTheory）對於犯罪成因來說明監獄對犯罪矯治的失敗原因，並提出相對應的改善策略。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110170&c=124&s=2701&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-110-犯罪學-2",
+   "kind": "theory",
+   "label": "犯罪學",
+   "exam": "110 年公務人員薦任升官等考試（矯正）",
+   "subject": "犯罪學",
+   "no": 2,
+   "year": 110,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "制度性迷亂理論與投資詐騙被害",
+   "overview": "測驗 IAT 與詐騙被害。",
+   "rows": [
+    {
+     "group": "理論",
+     "point": "主張",
+     "detail": "經濟制度主導，家庭、教育、政治制度弱化，重目標輕手段。",
+     "articles": [
+      "Messner & Rosenfeld (1994)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "解釋",
+     "point": "投資詐騙",
+     "detail": "追求財富的文化使被害人忽略風險。",
+     "articles": [
+      "Messner & Rosenfeld (1994)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "對策",
+     "point": "建議",
+     "detail": "強化非經濟制度與金融教育。",
+     "articles": [
+      "Messner & Rosenfeld (1994)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "與 Merton 混淆。",
+    "沒有解釋被害。",
+    "沒有對策。"
+   ],
+   "body": "Messner 與 Rosenfeld（1994）在其著作《Crime and the American Dream》中修正 Merton 的迷亂理論（Anomie Theory）提出「制度性迷亂理論」（Institutional Anomie Theory），解釋近代美國社會結構與其高犯罪率間的關連。請說明此理論如何解釋犯罪，並以此觀點討論在反詐騙資訊大量宣傳之下，為什麼還是很多被害人不斷遭受投資詐騙？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110170&c=124&s=2701&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-110-犯罪學-3",
+   "kind": "theory",
+   "label": "犯罪學",
+   "exam": "110 年公務人員薦任升官等考試（矯正）",
+   "subject": "犯罪學",
+   "no": 3,
+   "year": 110,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "以社會控制與一般化緊張理論解釋老人犯罪",
+   "overview": "測驗兩理論的應用。",
+   "rows": [
+    {
+     "group": "社會控制",
+     "point": "觀點",
+     "detail": "退休、喪偶使依附與參與降低。",
+     "articles": [
+      "Hirschi (1969)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "一般化緊張",
+     "point": "觀點",
+     "detail": "健康、經濟、失落等緊張引發負面情緒。",
+     "articles": [
+      "Agnew (1992)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "應用",
+     "point": "對策",
+     "detail": "社區連結、高齡友善處遇。",
+     "articles": [
+      "Agnew (1992)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "只寫一理論。",
+    "沒有連結老人特性。",
+    "對策空泛。"
+   ],
+   "body": "根據國家發展委員會的報告，臺灣已於西元 1993 年成為高齡化社會，西元 2018 年轉為高齡社會，推估將於西元 2025 年邁入超高齡社會。在人口老化的過程中，近年來老人犯罪人數有逐步上升的趨勢。若以犯罪類型來看，老人犯罪較傾向惡性不大之無被害者犯罪（賭博）、財產犯罪（竊佔、侵占、毀損），以及非故意之駕駛過失與公共危險（主要以「醉酒致不能安全駕駛罪」）為主。請以社會控制理論（Social Control Theory）與\n一般化緊張理論（General Strain Theory）來解釋老人犯罪的可能成因。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110170&c=124&s=2701&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-110-犯罪學-4",
+   "kind": "theory",
+   "label": "犯罪學",
+   "exam": "110 年公務人員薦任升官等考試（矯正）",
+   "subject": "犯罪學",
+   "no": 4,
+   "year": 110,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "疫情期間犯罪型態變化",
+   "overview": "測驗一般化緊張與日常活動理論。",
+   "rows": [
+    {
+     "group": "日常活動",
+     "point": "解釋",
+     "detail": "居家使街頭標的與合適標的減少，搶竊下降；監控者增加。",
+     "articles": [
+      "Cohen & Felson (1979)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "日常活動",
+     "point": "網路與家暴",
+     "detail": "上網時間增加使網路犯罪上升；同處時間增加使家暴上升。",
+     "articles": [
+      "Cohen & Felson (1979)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "一般化緊張",
+     "point": "解釋",
+     "detail": "失業、隔離造成緊張與負面情緒，引發家暴。",
+     "articles": [
+      "Agnew (1992)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "只解釋一種現象。",
+    "三要素不完整。",
+    "理論混用。"
+   ],
+   "body": "自從西元 2020 年初嚴重特殊傳染性肺炎（COVID-19）疫情爆發後，迅速在全球蔓延，犯罪型態也因為疫情升溫而產生明顯的變化，雖然不同國家因其國情在疫情期間犯罪變化不盡相同，但以下現象普遍出現在因疫情而封城（lockdown）的國家：搶劫、竊盜大幅下降，家暴、網路犯罪飆升。請以一般化緊張理論和日常生活理論解釋此現象。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110170&c=124&s=2701&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-112-犯罪學-1",
+   "kind": "theory",
+   "label": "犯罪學",
+   "exam": "112 年公務人員薦任升官等考試（矯正）",
+   "subject": "犯罪學",
+   "no": 1,
+   "year": 112,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "年齡犯罪曲線與防治",
+   "overview": "測驗曲線與理論解釋。",
+   "rows": [
+    {
+     "group": "曲線",
+     "point": "定義",
+     "detail": "犯罪於青春期後期達高峰後下降。",
+     "articles": [
+      "Hirschi & Gottfredson (1983)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "理論",
+     "point": "解釋",
+     "detail": "如生命歷程理論（轉捩點）或 Moffitt 二元分類。",
+     "articles": [
+      "Sampson & Laub (1993)",
+      "Moffitt (1993)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "對策",
+     "point": "防治",
+     "detail": "依理論提出，如就業與婚姻支持、早期介入。",
+     "articles": [
+      "Sampson & Laub (1993)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "理論與曲線脫節。",
+    "對策沒有依理論。",
+    "高峰年齡寫錯。"
+   ],
+   "body": "美國犯罪學家 Hirschi 和 Gottfredson 於 1983 年在「年齡與犯罪的解釋」（Age and the explanation of crime）一文中提出年齡與犯罪曲線（age-crime curve）的概念，並宣稱此曲線是世界共通的現象（universalphenomenon）。請解釋何謂年齡與犯罪曲線？請運用一個適切的犯罪學理論解釋這個曲線現象，並根據所運用之理論提出適切的防治對策或做法。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112170&c=124&s=2701&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-112-犯罪學-2",
+   "kind": "theory",
+   "label": "犯罪學",
+   "exam": "112 年公務人員薦任升官等考試（矯正）",
+   "subject": "犯罪學",
+   "no": 2,
+   "year": 112,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "犯罪型態理論與商店被害預防",
+   "overview": "測驗 Brantingham 理論、認知地圖與策略。",
+   "rows": [
+    {
+     "group": "主張",
+     "point": "基本內容",
+     "detail": "犯罪發生在活動空間與機會交會處。",
+     "articles": [
+      "Brantingham & Brantingham (1993)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "認知地圖",
+     "point": "要素",
+     "detail": "節點、路徑、邊緣。",
+     "articles": [
+      "Brantingham & Brantingham (1993)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "策略",
+     "point": "預防",
+     "detail": "改變節點與路徑、監控、情境預防。",
+     "articles": [
+      "Clarke (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "要素寫錯。",
+    "策略與理論脫節。",
+    "忽略邊緣效應。"
+   ],
+   "body": "美國環境犯罪學家 Pat Brantingham 和 Paul Brantingham 於 1993 年提出犯罪型態理論（Crime pattern theory），又稱為犯罪搜尋理論（Crime searchtheory）。請說明該理論的基本主張及所提認知地圖（cognitive map）的要素，並根據該理論提出適切的預防商店被害之策略以對。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112170&c=124&s=2701&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-112-犯罪學-3",
+   "kind": "theory",
+   "label": "犯罪學",
+   "exam": "112 年公務人員薦任升官等考試（矯正）",
+   "subject": "犯罪學",
+   "no": 3,
+   "year": 112,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "網路詐欺的特性與理論解釋",
+   "overview": "測驗特性、理論與預防。",
+   "rows": [
+    {
+     "group": "特性",
+     "point": "網路詐欺",
+     "detail": "匿名、跨境、低成本、集團分工。",
+     "articles": [
+      "Holt & Bossler (2016)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "理論",
+     "point": "解釋",
+     "detail": "如日常活動或網路空間轉移理論。",
+     "articles": [
+      "Cohen & Felson (1979)",
+      "Jaishankar (2008)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "預防",
+     "point": "策略",
+     "detail": "標的強化、監控者、平台責任。",
+     "articles": [
+      "Clarke (1997)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "特性空泛。",
+    "理論與預防脫節。",
+    "只談執法。"
+   ],
+   "body": "根據內政部警政署刑事警察局統計，近年來詐欺案件發生數及財損金額均呈現上升趨勢，其中詐騙集團利用網路通訊、虛擬貨幣等無遠弗屆之特性，實施網路詐欺犯罪之情形，日益嚴重。請說明網路詐欺犯罪之特性，運用一個適切的犯罪學理論解釋網路詐欺犯罪普及之原因，並根據該理論提出適切的預防網路詐欺被害之策略以對。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112170&c=124&s=2701&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-112-犯罪學-4",
+   "kind": "theory",
+   "label": "犯罪學",
+   "exam": "112 年公務人員薦任升官等考試（矯正）",
+   "subject": "犯罪學",
+   "no": 4,
+   "year": 112,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "Wolfgang 慢性犯罪者與刑事政策",
+   "overview": "測驗研究發現與政策影響。",
+   "rows": [
+    {
+     "group": "發現",
+     "point": "費城同生群",
+     "detail": "約 6% 少年犯下過半犯罪。",
+     "articles": [
+      "Wolfgang, Figlio, & Sellin (1972)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "定義",
+     "point": "慢性犯罪者",
+     "detail": "五次以上警方接觸。",
+     "articles": [
+      "Wolfgang, Figlio, & Sellin (1972)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "政策",
+     "point": "影響",
+     "detail": "選擇性監禁、三振法案；我國如累犯加重、重罪三犯不得假釋。",
+     "articles": [
+      "刑法第 47 條",
+      "刑法第 77 條第 2 項"
+     ],
+     "bonus": "我國條文請以講義核對。",
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "比例寫錯。",
+    "沒有我國政策。",
+    "五次以上寫錯。"
+   ],
+   "body": "美國著名的犯罪學家 Wolfgang 與其同僚於 1972 年針對「同生群偏差行為青少年」之追蹤研究，提出慢性犯罪者（Chronic offenders）一詞，影響美國上世紀 80 年代以降之刑事政策甚深。請先說明 Wolfgang 與其同僚之重要發現？何謂慢性犯罪者？該研究結果影響美國那些重要刑事政策？並請說明我國是否有類似之刑事政策以對。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112170&c=124&s=2701&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-114-犯罪學-1",
+   "kind": "theory",
+   "label": "犯罪學",
+   "exam": "114 年公務人員薦任升官等考試（矯正）",
+   "subject": "犯罪學",
+   "no": 1,
+   "year": 114,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "生命歷程觀與潛伏特質觀",
+   "overview": "測驗兩觀點對穩定性與變動性的主張。",
+   "rows": [
+    {
+     "group": "生命歷程",
+     "point": "主張",
+     "detail": "犯罪隨轉捩點而變動，如婚姻、就業。",
+     "articles": [
+      "Sampson & Laub (1993)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "潛伏特質",
+     "point": "主張",
+     "detail": "穩定特質（低自我控制）決定犯罪，變動來自機會。",
+     "articles": [
+      "Gottfredson & Hirschi (1990)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "差異",
+     "point": "比較",
+     "detail": "對變動、終止與介入的不同看法。",
+     "articles": [
+      "Siegel (2018)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "兩觀點混淆。",
+    "沒有比較。",
+    "缺學者。"
+   ],
+   "body": "時間發展理論（Developmental Theory）是當代犯罪學的重要理論，主要包含生命歷程觀（Life Course View）與潛伏特質觀（Latent Trait View）等兩個不同觀點。請說明此兩種觀點在解釋犯罪行為的穩定性與變動性方面的核心主張，並說明其差異。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114160&c=124&s=2701&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-114-犯罪學-2",
+   "kind": "theory",
+   "label": "犯罪學",
+   "exam": "114 年公務人員薦任升官等考試（矯正）",
+   "subject": "犯罪學",
+   "no": 2,
+   "year": 114,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "Bandura 攻擊學習與矯正管理",
+   "overview": "測驗楷模、直接經驗與阻斷學習。",
+   "rows": [
+    {
+     "group": "楷模",
+     "point": "觀察學習",
+     "detail": "注意、保留、再生、動機。",
+     "articles": [
+      "Bandura (1977)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "直接經驗",
+     "point": "增強",
+     "detail": "攻擊獲得報酬而強化。",
+     "articles": [
+      "Bandura (1973)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "矯正",
+     "point": "管理",
+     "detail": "分類分監、正向楷模、增強利社會行為、阻斷幫派次文化。",
+     "articles": [
+      "Bandura (1977)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "四歷程不完整。",
+    "沒有矯正作法。",
+    "只寫理論。"
+   ],
+   "body": "社會學習理論認為犯罪是學習而來。請闡述心理學者 Bandura 所提的理論中，攻擊行為如何透過「楷模」與「直接經驗」習得？矯正人員應如何管理機構環境及同儕互動來阻斷犯罪學習？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114160&c=124&s=2701&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-114-犯罪學-3",
+   "kind": "theory",
+   "label": "犯罪學",
+   "exam": "114 年公務人員薦任升官等考試（矯正）",
+   "subject": "犯罪學",
+   "no": 3,
+   "year": 114,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "應報式與修復式司法的差異",
+   "overview": "測驗三面向比較。",
+   "rows": [
+    {
+     "group": "犯罪定義",
+     "point": "差異",
+     "detail": "應報：違反國家法律；修復：對被害人與社區的傷害。",
+     "articles": [
+      "Zehr (1990)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "控制機制",
+     "point": "差異",
+     "detail": "應報：國家刑罰；修復：社區與當事人參與。",
+     "articles": [
+      "Zehr (1990)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "罪責決定",
+     "point": "差異",
+     "detail": "應報：依罪刑相當；修復：對話協商修復責任。",
+     "articles": [
+      "Braithwaite (1989)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "面向混寫。",
+    "沒有學者。",
+    "忽略被害人角色。"
+   ],
+   "body": "修復式司法（Restorative Justice）是傳統應報式司法（Retributive Justice）之外的另類回應犯罪方式。請說明應報式司法與修復式司法在以下三個面向的核心理念差異：⑴犯罪的定義；⑵犯罪控制機制；⑶犯罪人罪責的決定方式。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114160&c=124&s=2701&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-114-犯罪學-4",
+   "kind": "theory",
+   "label": "犯罪學",
+   "exam": "114 年公務人員薦任升官等考試（矯正）",
+   "subject": "犯罪學",
+   "no": 4,
+   "year": 114,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "德州控制模式與密西根責任模式",
+   "overview": "測驗三面向比較。",
+   "rows": [
+    {
+     "group": "管理哲學",
+     "point": "差異",
+     "detail": "控制：嚴格秩序與服從；責任：受刑人自主與責任。",
+     "articles": [
+      "DiIulio (1987)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "生活管理",
+     "point": "差異",
+     "detail": "控制：嚴密限制；責任：較大自由。",
+     "articles": [
+      "DiIulio (1987)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "受刑人團體",
+     "point": "差異",
+     "detail": "控制：壓制；責任：允許一定自治。",
+     "articles": [
+      "DiIulio (1987)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "面向混寫。",
+    "沒有連結我國。",
+    "學者錯誤。"
+   ],
+   "body": "美國矯正學界曾發展出不同的獄政管理哲學，其中德州控制模式（Control Model）和密西根責任模式（Responsibility Model）是兩個極端。請說明此兩種獄政管理模式在以下三個面向的關鍵差異：⑴監獄安全與管理哲學的強調重點；⑵受刑人的生活管理與自由程度；⑶對待受刑人團體與幫派的態度。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114160&c=124&s=2701&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-108-諮商與輔導-1",
+   "kind": "theory",
+   "label": "諮商與輔導",
+   "exam": "108 年公務人員薦任升官等考試（矯正）",
+   "subject": "諮商與輔導",
+   "no": 1,
+   "year": 108,
+   "points": 30,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "再犯預防與好生活模式",
+   "overview": "測驗異同與矯正運用。",
+   "rows": [
+    {
+     "group": "再犯預防",
+     "point": "內涵",
+     "detail": "辨識高風險情境、因應技巧、處理失誤。",
+     "articles": [
+      "Marlatt & Gordon (1985)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "好生活",
+     "point": "內涵",
+     "detail": "以基本人類善為目標，發展合法滿足途徑。",
+     "articles": [
+      "Ward & Brown (2004)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "異同",
+     "point": "比較與整合",
+     "detail": "避免目標與趨近目標；可整合運用。",
+     "articles": [
+      "Ward & Stewart (2003)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "只寫一模式。",
+    "沒有整合。",
+    "忽略矯正運用。"
+   ],
+   "body": "復發預防或稱再犯預防（relapse prevention）與好生活模式（good-lifemodel）的異同為何？兩者如何在矯正諮商中運用？（30 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108170&c=218&s=0607&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-108-諮商與輔導-2",
+   "kind": "theory",
+   "label": "諮商與輔導",
+   "exam": "108 年公務人員薦任升官等考試（矯正）",
+   "subject": "諮商與輔導",
+   "no": 2,
+   "year": 108,
+   "points": 30,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "酒藥癮的耐受與戒斷及瑞士方案",
+   "overview": "測驗成癮概念與方案規劃。理論內容請以教材為準。",
+   "rows": [
+    {
+     "group": "概念",
+     "point": "耐受與戒斷",
+     "detail": "耐受：需更多劑量；戒斷：停用後的生理心理症狀。",
+     "articles": [
+      "APA, DSM-5 (2013)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "替代",
+     "point": "比藥癮更快感的東西",
+     "detail": "有意義的關係與生活目標（學說依講義）。",
+     "articles": [
+      "Alexander (2008)"
+     ],
+     "bonus": "作答方向請以講義核對。",
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "瑞士方案",
+     "point": "成功原因",
+     "detail": "減害、海洛因輔助治療、醫療與社會整合。",
+     "articles": [
+      "Uchtenhagen (2011)"
+     ],
+     "bonus": "方案名稱請以講義核對。",
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "規劃",
+     "point": "矯正方案",
+     "detail": "減害觀點、醫療銜接、出獄後支持。",
+     "articles": [
+      "毒品危害防制條例"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "概念混淆。",
+    "沒有規劃。",
+    "只談懲罰。"
+   ],
+   "body": "酒藥成癮者之耐受性與戒斷性各為何？比酒藥癮更快感的東西是什麼？瑞士方案的成功原因為何？如何規劃在矯正方案中？（30 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108170&c=218&s=0607&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-108-諮商與輔導-3",
+   "kind": "theory",
+   "label": "諮商與輔導",
+   "exam": "108 年公務人員薦任升官等考試（矯正）",
+   "subject": "諮商與輔導",
+   "no": 3,
+   "year": 108,
+   "points": 20,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "風險評估與靜態動態風險",
+   "overview": "測驗風險評估定義。",
+   "rows": [
+    {
+     "group": "定義",
+     "point": "風險評估",
+     "detail": "預測再犯可能性以分配處遇資源。",
+     "articles": [
+      "Andrews & Bonta (2010)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "靜態",
+     "point": "定義",
+     "detail": "不可改變，如前科。",
+     "articles": [
+      "Hanson & Harris (2000)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "動態",
+     "point": "定義",
+     "detail": "可改變的處遇標的；穩定與急性動態因子。",
+     "articles": [
+      "Hanson & Harris (2000)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "沒有舉例。",
+    "漏穩定與急性。",
+    "沒有處遇意涵。"
+   ],
+   "body": "何謂風險評估？並解釋靜態與動態風險評估各為何？（20 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108170&c=218&s=0607&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-108-諮商與輔導-4",
+   "kind": "theory",
+   "label": "諮商與輔導",
+   "exam": "108 年公務人員薦任升官等考試（矯正）",
+   "subject": "諮商與輔導",
+   "no": 4,
+   "year": 108,
+   "points": 20,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "預警責任",
+   "overview": "測驗 Tarasoff 案與預警責任。",
+   "rows": [
+    {
+     "group": "來源",
+     "point": "Tarasoff 案",
+     "detail": "治療者知悉當事人對可辨識第三人有嚴重危險時，有保護責任。",
+     "articles": [
+      "Tarasoff v. Regents (1976)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "要件",
+     "point": "啟動條件",
+     "detail": "明確可辨識的對象、嚴重且立即的危險。",
+     "articles": [
+      "Corey et al. (2015)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "作法",
+     "point": "處理",
+     "detail": "評估、告知、通報、記錄、督導諮詢。",
+     "articles": [
+      "臺灣輔導與諮商學會倫理守則"
+     ],
+     "bonus": "守則條次請以講義核對。",
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "沒有要件。",
+    "與保密混淆。",
+    "沒有實務作法。"
+   ],
+   "body": "何為諮商專業倫理中的預警責任？（20 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108170&c=218&s=0607&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-110-諮商與輔導-1",
+   "kind": "theory",
+   "label": "諮商與輔導",
+   "exam": "110 年公務人員薦任升官等考試（矯正）",
+   "subject": "諮商與輔導",
+   "no": 1,
+   "year": 110,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "不合作團體成員的類型與處理",
+   "overview": "測驗四種類型與處理策略。",
+   "rows": [
+    {
+     "group": "類型",
+     "point": "四種成員",
+     "detail": "沉默、獨占、敵意、依賴或救援者，說明心理特徵。",
+     "articles": [
+      "Corey (2016)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "處理",
+     "point": "策略",
+     "detail": "分別說明，如邀請、阻斷、反映、團體回饋。",
+     "articles": [
+      "Corey (2016)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "原則",
+     "point": "整體",
+     "detail": "視為團體歷程素材，避免標籤。",
+     "articles": [
+      "Yalom & Leszcz (2005)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "類型不足四種。",
+    "策略沒有對應。",
+    "責備成員。"
+   ],
+   "body": "帶領心理諮商團體，免不了在團體中會遇到不合作的團體成員。（一）請列舉四種不合作的團體成員的類型及其心理、行為特徵。（10 分）（二）若你是團體領導者，你會分別如何化解這些類型成員對團體歷程的阻礙？（15 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110170&c=124&s=0605&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-110-諮商與輔導-2",
+   "kind": "theory",
+   "label": "諮商與輔導",
+   "exam": "110 年公務人員薦任升官等考試（矯正）",
+   "subject": "諮商與輔導",
+   "no": 2,
+   "year": 110,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "憤怒管理：認知治療或個人中心",
+   "overview": "測驗兩理論歷程與監所選擇。",
+   "rows": [
+    {
+     "group": "認知治療",
+     "point": "歷程",
+     "detail": "評估、辨識自動想法、認知重建、技巧演練。",
+     "articles": [
+      "Beck, J. S. (2011)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "個人中心",
+     "point": "歷程",
+     "detail": "建立關係、核心條件、促進自我探索。",
+     "articles": [
+      "Rogers (1957)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "選擇",
+     "point": "理由",
+     "detail": "依監所特性（短期、結構化、團體），通常較適合認知治療；可輔以個人中心關係。",
+     "articles": [
+      "Novaco (1975)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "只寫一理論。",
+    "沒有理由。",
+    "忽略監所特性。"
+   ],
+   "body": "憤怒情緒管理（anger management）在監所中是一個重要的課題。你想要比較認知治療（cognitive therapy）與個人中心治療（person-centeredtherapy）這兩個心理諮商理論，以決定用那一個理論對收容人進行「憤怒情緒管理」。請問：（一）此二理論的諮商歷程分別為何？（10 分）（二）依你對監所特性與此二理論的理解，你決定要使用那一個理論來進行「憤怒情緒管理」？請詳述理由。（15 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110170&c=124&s=0605&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-110-諮商與輔導-3",
+   "kind": "theory",
+   "label": "諮商與輔導",
+   "exam": "110 年公務人員薦任升官等考試（矯正）",
+   "subject": "諮商與輔導",
+   "no": 3,
+   "year": 110,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "以生態觀點處理監所霸凌",
+   "overview": "測驗第二層次改變計畫與自評。",
+   "rows": [
+    {
+     "group": "成因",
+     "point": "生態觀點",
+     "detail": "個人、同儕、管理文化、制度層次。",
+     "articles": [
+      "Kelly (1966)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "計畫",
+     "point": "第二層次改變",
+     "detail": "改變系統結構與規範，而非只處理個人。",
+     "articles": [
+      "Watzlawick et al. (1974)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "評析",
+     "point": "優缺點",
+     "detail": "可行性、資源、評估指標。",
+     "articles": [
+      "Dalton et al. (2007)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "只處理個人。",
+    "沒有時程與成效。",
+    "沒有評析。"
+   ],
+   "body": "某個監所中，收容人之間長期有霸凌現象，且霸凌現象越來越嚴重。現在，你到這個監所已經一年，決定要面對這個問題。那麼，若以社區心理 學（ community psychology ）裡 所 運 用 的 生 態 觀 點（ ecologicalperspective）來檢視問題的成因和解決之道：（一）請至少依對問題成因的理解、目標、執行內容、時程、預期成效等項目，詳細策劃一系列長期計畫，以達成社區心理學所說之第二層次的改變（second-order change）。（15 分）（二）任何事情換個角度，常有不同的視野。請你換成計畫評審者的角度，評析你這份計畫之優缺點。（10 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110170&c=124&s=0605&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-110-諮商與輔導-4",
+   "kind": "theory",
+   "label": "諮商與輔導",
+   "exam": "110 年公務人員薦任升官等考試（矯正）",
+   "subject": "諮商與輔導",
+   "no": 4,
+   "year": 110,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "出獄前資源連結與有效溝通",
+   "overview": "測驗社會資源與人際溝通因素。",
+   "rows": [
+    {
+     "group": "資源",
+     "point": "可運用資源",
+     "detail": "更生保護、就業服務、社福、醫療。",
+     "articles": [
+      "更生保護法"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "溝通",
+     "point": "因素",
+     "detail": "信任關係、真誠同理、尊重自主、文化與動機。",
+     "articles": [
+      "Rogers (1957)",
+      "Trotter (2015)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "作法",
+     "point": "實務",
+     "detail": "個別化資源表、轉介銜接。",
+     "articles": [
+      "更生保護法"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "資源空泛。",
+    "因素少於三個。",
+    "沒有實務作法。"
+   ],
+   "body": "一位收容人即將出獄，回歸社會。他在監獄時，整體表現沒有出大的狀況，會犯些小錯，但本質上應非十惡不赦之人。你知道他回到社會之後，能運用的社會資源（social resources）並不多。那麼：（一）作為監所中階管理員，在這位收容人離開監所之前，你如何讓他知道出獄後可運用的社會資源有那些？請詳述。（10 分）（二）人際互動所傳遞的往往並非只有資訊。因此，若你希望對方真的接受你的表達，而非虛應故事或虛與委蛇，那你需要注意那些因素？請列出至少三個重要因素，並申論其重要性。（15 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110170&c=124&s=0605&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-112-諮商與輔導-1",
+   "kind": "theory",
+   "label": "諮商與輔導",
+   "exam": "112 年公務人員薦任升官等考試（矯正）",
+   "subject": "諮商與輔導",
+   "no": 1,
+   "year": 112,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "Bowen 家族系統理論概念",
+   "overview": "測驗八大概念（除自我分化外至少五個）。",
+   "rows": [
+    {
+     "group": "概念",
+     "point": "三角關係、核心家庭情緒系統",
+     "detail": "說明涵義。",
+     "articles": [
+      "Bowen (1978)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "概念",
+     "point": "家庭投射、多世代傳遞",
+     "detail": "說明涵義。",
+     "articles": [
+      "Bowen (1978)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "概念",
+     "point": "手足位置、情緒截斷、社會情緒歷程",
+     "detail": "說明涵義。",
+     "articles": [
+      "Bowen (1978)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "少於五個。",
+    "涵義不清。",
+    "名稱錯誤。"
+   ],
+   "body": "家庭對個人成長有重要影響，在眾多家族治療學派中，Bowen 提出八大環環相扣的概念，除了自我分化之外，請詳述該學派中其他至少五個重要概念及其涵義。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112170&c=124&s=0605&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-112-諮商與輔導-2",
+   "kind": "theory",
+   "label": "諮商與輔導",
+   "exam": "112 年公務人員薦任升官等考試（矯正）",
+   "subject": "諮商與輔導",
+   "no": 2,
+   "year": 112,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "以 MBSR 與 MBCT 達成社會情緒學習",
+   "overview": "測驗正念方案與 SEL 五能力。",
+   "rows": [
+    {
+     "group": "SEL",
+     "point": "五能力",
+     "detail": "自我覺察、自我管理、社會覺察、人際技巧、負責決策。",
+     "articles": [
+      "CASEL"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "MBSR",
+     "point": "方法",
+     "detail": "八週、身體掃描、靜坐、正念瑜伽。",
+     "articles": [
+      "Kabat-Zinn (1990)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "MBCT",
+     "point": "方法",
+     "detail": "結合認知治療，去中心化，預防憂鬱復發。",
+     "articles": [
+      "Segal, Williams, & Teasdale (2002)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "只寫方法。",
+    "沒有連結 SEL。",
+    "兩方案混淆。"
+   ],
+   "body": "近年來社會情緒學習（Social Emotional Learning）在校園中普遍受到重視，在校園外也有不少針對成人的正念練習。請詳述如何藉由正念減壓（MBSR）及正念認知治療（MBCT）方法達到社會情緒學習。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112170&c=124&s=0605&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-112-諮商與輔導-3",
+   "kind": "theory",
+   "label": "諮商與輔導",
+   "exam": "112 年公務人員薦任升官等考試（矯正）",
+   "subject": "諮商與輔導",
+   "no": 3,
+   "year": 112,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "自殺防治法的倫理與媒體規範",
+   "overview": "測驗條文規範與倫理原則。",
+   "rows": [
+    {
+     "group": "規範",
+     "point": "通報與保密",
+     "detail": "相關人員通報義務與資料保密。",
+     "articles": [
+      "自殺防治法"
+     ],
+     "bonus": "條次請以講義核對。",
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "規範",
+     "point": "媒體報導",
+     "detail": "避免描述方法、標題聳動，附求助資訊。",
+     "articles": [
+      "自殺防治法"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "原則",
+     "point": "倫理原則",
+     "detail": "受益、免受傷害、尊重自主、保密限制。",
+     "articles": [
+      "Kitchener (1984)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "條文內容錯誤。",
+    "沒有倫理原則。",
+    "忽略保密例外。"
+   ],
+   "body": "近年來自殺防治成為心理衛生及諮商輔導中心的重要工作項目。根據2019 年公布的自殺防治法，其中有些條文與諮商倫理及媒體報導有關。試詳述有那些規範以及這些條文規範所依循的倫理原則。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112170&c=124&s=0605&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-112-諮商與輔導-4",
+   "kind": "theory",
+   "label": "諮商與輔導",
+   "exam": "112 年公務人員薦任升官等考試（矯正）",
+   "subject": "諮商與輔導",
+   "no": 4,
+   "year": 112,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "助人歷程的階段與技巧",
+   "overview": "測驗 Hill 助人三階段。",
+   "rows": [
+    {
+     "group": "探索",
+     "point": "技巧",
+     "detail": "傾聽、開放式問句、情感反映。",
+     "articles": [
+      "Hill (2014)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "洞察",
+     "point": "技巧",
+     "detail": "挑戰、解釋、自我揭露、立即性。",
+     "articles": [
+      "Hill (2014)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "行動",
+     "point": "技巧",
+     "detail": "資訊提供、直接指導、角色扮演、家庭作業。",
+     "articles": [
+      "Hill (2014)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "階段名稱錯誤。",
+    "技巧沒有對應。",
+    "沒有例子。"
+   ],
+   "body": "在諮商歷程中，不論採用何種理論學派，均會經歷重要的助人階段。典型的助人歷程通常包括那幾個階段，各階段大致使用那些具體的助人技巧？（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112170&c=124&s=0605&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-114-諮商與輔導-1",
+   "kind": "theory",
+   "label": "諮商與輔導",
+   "exam": "114 年公務人員薦任升官等考試（矯正）",
+   "subject": "諮商與輔導",
+   "no": 1,
+   "year": 114,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "存在主義治療：自由與責任",
+   "overview": "測驗存在主義概念與晤談對話。",
+   "rows": [
+    {
+     "group": "概念",
+     "point": "自由與限制性存在",
+     "detail": "人在限制中仍有選擇；限制性存在指自我覺察狹窄而退縮。",
+     "articles": [
+      "Yalom (1980)",
+      "May (1953)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "分析",
+     "point": "小卉",
+     "detail": "以「沒辦法」逃避自由與焦慮。",
+     "articles": [
+      "Yalom (1980)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "責任",
+     "point": "介入",
+     "detail": "具體晤談對話，邀請看見選擇並承擔。",
+     "articles": [
+      "Corey (2017)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "概念錯誤。",
+    "沒有對話示例。",
+    "說教。"
+   ],
+   "body": "小卉（化名）是一位 17 歲的少女，因擔任詐騙集團車手被逮捕並收容於少年矯正學校。在初次晤談時，小卉表示：「我也是沒辦法啊，家裡窮缺錢，朋友介紹這個工作，我只是去領個錢而已，又沒有直接騙人。而且現在被抓了，我的人生就毀了，根本沒有選擇了。」她將自己描述為環境的受害者，認為自己是被迫做出這些選擇，現在則是被命運困住，看不到任何出路。請回答以下問題：⑴存在主義治療如何看待小卉所謂的「沒辦法」和「沒有選擇」，以及說明「自由」（freedom）與「限制性存在」（restricted existence）的概念，並分析小卉目前的存在狀態。⑵存在主義治療中「責任」（responsibility）的核心概念為何？輔導人員如何協助小卉從「逃避責任」轉向「承擔責任」，請提出具體的晤談對話與介入方式。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114160&c=124&s=0604&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-114-諮商與輔導-2",
+   "kind": "theory",
+   "label": "諮商與輔導",
+   "exam": "114 年公務人員薦任升官等考試（矯正）",
+   "subject": "諮商與輔導",
+   "no": 2,
+   "year": 114,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "身體經驗療法的核心概念",
+   "overview": "測驗四個概念的定義、舉例與重要性。",
+   "rows": [
+    {
+     "group": "內感受",
+     "point": "定義與例子",
+     "detail": "覺察體內狀態，如心跳、胃部緊縮。",
+     "articles": [
+      "Levine (2010)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "本體感覺",
+     "point": "定義與例子",
+     "detail": "覺察身體位置與動作。",
+     "articles": [
+      "Levine (2010)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "滴定",
+     "point": "定義與例子",
+     "detail": "少量逐步接觸創傷感受，避免被淹沒。",
+     "articles": [
+      "Levine (2010)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "資源建立",
+     "point": "定義與例子",
+     "detail": "建立安全與穩定的內外在資源。",
+     "articles": [
+      "Levine (2010)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "概念混淆。",
+    "沒有舉例。",
+    "沒有重要性。"
+   ],
+   "body": "彼 得 ． 列 文（ Peter Levine ）博 士 發 展 出 身 體 經 驗 療 法（ SomaticExperiencing, SE），這是一種透過引導當事人關注身體內在感覺來療癒創傷的取向。SE 強調「由下而上」（bottom-up）的處理方式，著重於身體內在感覺（包括內感受、本體感覺與動覺感受），而非主要處理認知或情緒層面。請針對「內感受」（interoception）、「本體感覺」（proprioception）、「滴定法」（titration）和「資源建立」（resource establishment）等四個 SE治療取向中的核心概念，分別進行清楚的定義、具體的舉例，以及說明這些概念在創傷治療中的重要性。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114160&c=124&s=0604&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-114-諮商與輔導-3",
+   "kind": "theory",
+   "label": "諮商與輔導",
+   "exam": "114 年公務人員薦任升官等考試（矯正）",
+   "subject": "諮商與輔導",
+   "no": 3,
+   "year": 114,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "Rogers 六項條件應用於霸凌受害者",
+   "overview": "測驗六條件與矯正應用。",
+   "rows": [
+    {
+     "group": "條件",
+     "point": "六項",
+     "detail": "心理接觸、當事人不一致、諮商者一致、無條件積極關懷、同理、當事人知覺。",
+     "articles": [
+      "Rogers (1957)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "應用",
+     "point": "逐項說明",
+     "detail": "每項條件在矯正輔導中的作法。",
+     "articles": [
+      "Rogers (1957)"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "預防",
+     "point": "報復念頭",
+     "detail": "情緒釋放、安全評估、人際重建。",
+     "articles": [
+      "Rogers (1957)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "只寫三項核心條件。",
+    "應用不具體。",
+    "忽略風險評估。"
+   ],
+   "body": "個人中心諮商的創始者羅傑斯（Carl Rogers）提出六項諮商形成諮商效果的充分且必要條件，認為當這些條件在諮商關係中持續存在時，就能促進當事人產生建設性的人格改變。請以矯正機關輔導人員的角色，針對一位遭受嚴重霸凌且已產生報復念頭的當事人為例，詳細回答以下的問題：⑴說明羅傑斯所提出的六項諮商核心條件的理論內涵。⑵針對每項核心條件，具體說明矯正機關輔導人員如何在實務工作中應用，以協助當事人有效釋放負面情緒、重建健康的人際關係，並預防可能發生的偏差行為。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114160&c=124&s=0604&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
+  },
+  {
+   "id": "薦任升等（矯正）-114-諮商與輔導-4",
+   "kind": "theory",
+   "label": "諮商與輔導",
+   "exam": "114 年公務人員薦任升官等考試（矯正）",
+   "subject": "諮商與輔導",
+   "no": 4,
+   "year": 114,
+   "points": 25,
+   "check": "出處已標示・待對照講義",
+   "checkOk": false,
+   "srcLabel": "出處（待對照講義）",
+   "title": "BPD 的替代模式分析與犯罪風險",
+   "overview": "測驗 AMPD 四功能與病態特質。",
+   "rows": [
+    {
+     "group": "人格功能",
+     "point": "四大功能減損",
+     "detail": "認同、自我指向、同理、親密的典型表現。",
+     "articles": [
+      "APA, DSM-5 (2013) Section III"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "特質",
+     "point": "病態特質",
+     "detail": "負面情感（情緒不穩、焦慮、分離不安全、憂鬱）、去抑制（衝動、冒險）、敵對。",
+     "articles": [
+      "APA, DSM-5 (2013) Section III"
+     ],
+     "devNote": "",
+     "approved": false
+    },
+    {
+     "group": "犯罪",
+     "point": "風險",
+     "detail": "關係型暴力、衝動犯罪、自傷；DBT 等循證介入。",
+     "articles": [
+      "Linehan (1993)"
+     ],
+     "devNote": "",
+     "approved": false
+    }
+   ],
+   "organize": [
+    "先界定理論或概念，再依題目子題分段",
+    "理論內容與學者正確，計算列出過程",
+    "扣回矯正機關收容人的特性"
+   ],
+   "pitfalls": [
+    "四功能不完整。",
+    "特質領域錯誤。",
+    "沒有連結犯罪。"
+   ],
+   "body": "邊緣型人格障礙（borderline personality disorder, BPD）是常見的人格障礙，與特定類型的犯罪行為存在顯著關聯，包括關係型暴力、衝動性犯罪及自我毀滅性行為。作為矯正機關輔導人員，對此障礙的深入理解具有重要實務意義。請根據當代人格障礙診斷準則與循證干預模式，詳細回答以下問題：⑴依據 DSM-5（精神疾病診斷準則手冊）人格障礙症的替代模型，從四大人格功能（認同感 identity、自我指向 self-direction、同理心 empathy、親密感 intimacy）的減損角度，系統分析 BPD 的典型表現與核心病理特徵。⑵從五大病態人格特質領域的角度，闡述 BPD 的特徵表現，並說明這些特質如何增加特定類型犯罪行為的風險。（25 分）",
+   "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114160&c=124&s=0604&q=1",
+   "examType": "薦任升等（矯正）",
+   "focus": "矯正"
   }
  ],
- "note": "評分要點為 AI 草擬：法律科目已核對現行法，學科標示出處待對照教材。非考選部或觀護人考試官方評分。開發者可直接修改各列 devNote（補充）與 approved（核定）。"
+ "note": "評分要點為 AI 草擬：法律科目已核對現行法，學科標示出處待對照教材。非考選部官方評分。開發者可直接修改各列 devNote（補充）與 approved（核定）。"
 };
