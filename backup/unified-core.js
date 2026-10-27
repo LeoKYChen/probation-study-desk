@@ -25,7 +25,7 @@
   {key:'jj-read',name:'少年司法週報已讀',kind:'list'},
   {key:'jj-font',name:'少年司法週報字級',kind:'font'},
   {key:'psd-home-exam-countdown-v1',name:'考試倒數設定',kind:'setting'},
-  {key:'psd-lecture-planner-v1',name:'函授課程及排程',kind:'lectures'}
+  {key:'psd-lecture-planner-v1',name:'學習管理與每日紀錄',kind:'lectures'}
  ];
  const names=Object.fromEntries(modules.map(x=>[x.key,x]));
  const allowed=new Set([...modules.map(x=>x.key),CONFLICT_KEY]);
@@ -34,11 +34,11 @@
  const isObj=x=>x!==null&&typeof x==='object'&&!Array.isArray(x);
  const copy=x=>JSON.parse(JSON.stringify(x));
  const equal=(a,b)=>JSON.stringify(a)===JSON.stringify(b);
- function safe(x,depth=0){if(depth>45)return false;if(x===null||typeof x==='boolean'||typeof x==='string')return true;
+ function safe(x,depth=0,parts=[]){if(depth>45)return false;if(x===null||typeof x==='boolean'||typeof x==='string')return true;
   if(typeof x==='number')return Number.isFinite(x);
-  if(Array.isArray(x))return x.length<=MAX_ITEMS&&x.every(v=>safe(v,depth+1));
+  if(Array.isArray(x))return (x.length<=MAX_ITEMS||parts.join('.')==='plan.days')&&x.every(v=>safe(v,depth+1,parts));
   if(!isObj(x)||Object.keys(x).length>MAX_ITEMS)return false;
-  return Object.entries(x).every(([k,v])=>!bad.has(k)&&k.length<260&&safe(v,depth+1));
+  return Object.entries(x).every(([k,v])=>!bad.has(k)&&k.length<260&&safe(v,depth+1,parts.concat(k)));
  }
  function assert(x,message){if(!x)throw Error(message)}
  function parseValue(key,raw){
@@ -153,6 +153,15 @@
       else if(!equal(have.get(row.id),row))conflict(key,[section,row.id],have.get(row.id),row);
      }
     }
+    out.activities=out.activities||[];
+    const haveActivities=new Map(out.activities.map(a=>[a.id,a]));
+    for(const a of remote.activities||[]){
+      const localLesson=a.lessonId&&local.lessons.find(l=>l.id===a.lessonId);
+      const remoteLesson=a.lessonId&&remote.lessons.find(l=>l.id===a.lessonId);
+      if(haveActivities.has(a.id)){if(!equal(haveActivities.get(a.id),a))conflict(key,['activities',a.id],haveActivities.get(a.id),a);}
+      else if(localLesson&&remoteLesson&&localLesson.watchedMinutes!==remoteLesson.watchedMinutes)conflict(key,['activities',a.id],null,a);
+      else{out.activities.push(copy(a));haveActivities.set(a.id,a);}
+    }
     if(!equal(out.settings,remote.settings))conflict(key,['settings'],out.settings,remote.settings);
     if(!out.plan&&remote.plan)out.plan=copy(remote.plan);
     else if(remote.plan&&!equal(out.plan,remote.plan))conflict(key,['plan'],out.plan,remote.plan);
@@ -230,10 +239,10 @@
    const value=parseValue(row.key,baseline[row.key]);
    let next=null;
    if(row.kind==='lectures'){
-    if(!value.lessons.some(lesson=>lesson.watchedMinutes>0)&&!value.plan)continue;
+    if(!value.lessons.some(lesson=>lesson.watchedMinutes>0)&&!value.plan&&!(value.activities||[]).length)continue;
     const v=copy(value);
     v.lessons=v.lessons.map(lesson=>({...lesson,watchedMinutes:0}));
-    v.plan=null;
+    v.plan=null;v.activities=[];
     next=JSON.stringify(v);
    }else if(row.kind==='common'){
     const v=copy(value);

@@ -1,0 +1,22 @@
+/* 學習管理：沿用既有書房主題，進度狀態以文字與顏色共同呈現。 */
+.activity-stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+.activity-stats article{background:var(--room-surface,#fff);border-color:var(--line,#dce4e9)}
+.expiry-warning{color:#97532f!important;font-weight:700}
+.course-metadata{padding:16px 0;border-top:1px solid #dce4e9}
+.calendar-legend{font-size:12px;color:#5d6e79}
+.calendar-status{font-size:10px;line-height:1.4;overflow-wrap:anywhere}
+.calendar-cell.completed{background:#e3f0e8;border-color:#79a78e}
+.calendar-cell.inprogress{background:#fff4dd;border-color:#cbb276}
+.learning-task{margin:12px 0;padding:14px;background:#fff;border:1px solid #d6e1e7;border-radius:10px;min-width:0}
+.learning-task h5{font-size:15px;margin:0;overflow-wrap:anywhere}
+.task-status{font-size:13px;font-weight:700}
+.task-status.completed{color:#26734d}.task-status.inprogress{color:#8b651a}
+.task-note{white-space:pre-wrap;overflow-wrap:anywhere}
+.task-editor{margin-top:10px;min-width:0}
+.task-editor>summary{cursor:pointer;min-height:44px;padding:8px 0;font-weight:700}
+.activity-form{padding-top:12px}
+.activity-form textarea{font:inherit;width:100%;min-width:0;padding:10px;border:1px solid #b8cbbc;border-radius:8px;resize:vertical;background:#fff;color:#233b34}
+.activity-form .review-check{display:flex;flex-direction:row;align-items:center;gap:8px}
+.activity-form .review-check input{width:20px;height:20px;min-height:20px;flex:0 0 20px}
+.activity-form input,.activity-form select{font-size:16px}
+@media(max-width:700px){.activity-stats{grid-template-columns:1fr}.learning-task{padding:11px}.calendar-cell{min-height:98px}.calendar-status{font-size:9px}.activity-form{grid-template-columns:1fr}}

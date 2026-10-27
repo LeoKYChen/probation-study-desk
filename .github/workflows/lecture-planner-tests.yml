@@ -23,4 +23,5 @@ jobs:
           node --check lectures/core.js
           node --check lectures/app.js
           node lectures/test.cjs
+          node lectures/test-learning.cjs
           node backup/test.cjs
