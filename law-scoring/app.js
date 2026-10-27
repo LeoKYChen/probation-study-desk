@@ -28,7 +28,9 @@ let current = fromHash() || DATA.questions.find(q=>q.id===store.__current) || DA
 let dev = !!store.__dev;
 function noteOf(q,s,i){ return String(s.devNotes[i]!=null?s.devNotes[i]:(q.rows[i].devNote||'')).trim(); }
 function approvedOf(q,s,i){ return s.approved[i]!=null?!!s.approved[i]:!!q.rows[i].approved; }
-function st(q){ return store[q.id] || (store[q.id]={answer:'',unlocked:false,checks:{},organize:{},devNotes:{},approved:{}}); }
+function st(q){ return store[q.id] || (store[q.id]={answer:'',answerUrl:'',unlocked:false,checks:{},organize:{},devNotes:{},approved:{}}); }
+// 作答網址只接受 http(s)，避免 javascript: 等連結被當成「開啟」按鈕。
+function safeUrl(v){ v=String(v||'').trim(); if(!v) return ''; try{ const u=new URL(v); return /^https?:$/.test(u.protocol)?u.href:null; }catch(e){ return null; } }
 
 function score(q, s){
   const rows=q.rows, c=i=>s.checks[i]||{}, n=k=>rows.filter((_,i)=>c(i)[k]).length;
@@ -61,7 +63,7 @@ function renderPicker(){
   ss.value=current.subject;
   qs.textContent='';
   inExam(current.examType).filter(q=>q.subject===current.subject).forEach(q=>{
-    const done=store[q.id]&&store[q.id].unlocked?'✓ ':'';
+    const done=(store[q.id]&&store[q.id].unlocked?'✓ ':'')+(store[q.id]&&safeUrl(store[q.id].answerUrl)?'↗ ':'');
     qs.appendChild(el('option',{value:q.id},done+q.year+' 年第 '+q.no+' 題：'+q.title));
   });
   qs.value=current.id;
@@ -84,6 +86,8 @@ function render(){
   $('q-src').href=BODIES[q.id].sourceUrl;
   $('q-src').hidden=!BODIES[q.id].sourceUrl;
   const ans=$('answer'); ans.value=s.answer||'';
+  $('answer-url').value=s.answerUrl||'';
+  syncUrl();
   syncCount();
   $('locked').hidden=s.unlocked; $('graded').hidden=!s.unlocked; $('unlock').hidden=s.unlocked;
   $('graded').style.display=s.unlocked?'flex':'none';
@@ -96,7 +100,15 @@ function render(){
 function syncCount(){
   const n=$('answer').value.trim().length;
   $('count').textContent=n+' 字';
-  $('unlock').disabled=n<50;
+  $('unlock').disabled=n<50&&!safeUrl($('answer-url').value);
+}
+
+function syncUrl(){
+  const raw=$('answer-url').value, url=safeUrl(raw), open=$('answer-url-open'), hint=$('answer-url-hint');
+  open.hidden=!url; if(url) open.href=url; else open.removeAttribute('href');
+  $('answer-url').setAttribute('aria-invalid',url===null?'true':'false');
+  hint.classList.toggle('error',url===null);
+  hint.textContent=url===null?'網址要以 https:// 或 http:// 開頭，例如 https://docs.google.com/…':'把寫在其他網站（例如 Google 文件、Notion）的答案連結貼在這裡。連結只存在這台瀏覽器，不會上傳。';
 }
 
 function renderGraded(){
@@ -176,7 +188,7 @@ function aiText(){
     '【評分要點】\n'+rows,
     '【架構檢核】\n'+q.organize.map((t,i)=>(i+1)+'. '+t).join('\n'),
     '【常見失分】\n'+q.pitfalls.map((t,i)=>(i+1)+'. '+t).join('\n'),
-    '【我的答案】\n'+$('answer').value.trim(),
+    '【我的答案】\n'+($('answer').value.trim()||'（答案寫在下列網址；如果無法開啟網址，請告訴我改貼答案內容。）')+(safeUrl(st(q).answerUrl)?'\n作答網址：'+safeUrl(st(q).answerUrl):''),
     '【我的答案結束】'
   ].join('\n\n');
 }
@@ -192,6 +204,8 @@ $('exam-select').addEventListener('change',e=>{ current=inExam(e.target.value)[0
 $('subject-select').addEventListener('change',e=>{ current=inExam(current.examType).find(q=>q.subject===e.target.value); persist(); render(); });
 $('question-select').addEventListener('change',e=>{ current=DATA.questions.find(q=>q.id===e.target.value); persist(); render(); window.scrollTo({top:0}); });
 $('answer').addEventListener('input',()=>{ st(current).answer=$('answer').value; persist(); syncCount(); });
+$('answer-url').addEventListener('input',()=>{ st(current).answerUrl=$('answer-url').value.trim(); persist(); syncUrl(); syncCount(); });
+$('answer-url').addEventListener('change',()=>renderPicker());
 $('unlock').addEventListener('click',()=>{ st(current).unlocked=true; persist(); render(); $('pts-heading').focus(); });
 $('dev-mode').addEventListener('change',e=>{ dev=e.target.checked; store.__dev=dev; persist(); render(); });
 $('copy-ai').addEventListener('click',()=>copy(aiText(),'已複製，請貼到 AI 對話中。'));

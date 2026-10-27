@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="zh-Hant">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>申論評分參考｜觀護人練習臺</title><meta name="description" content="觀護人、監獄官、薦任升等（矯正）申論題評分要點：先作答，再逐列對照、換算自評分數，並可複製 AI 批改文字。"><link rel="stylesheet" href="../shared-ui.css"><link rel="stylesheet" href="style.css"><script src="data.js" defer></script><script src="app.js" defer></script><link rel="manifest" href="../manifest.webmanifest"><meta name="theme-color" content="#315b7c"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="../pwa/icon-180.png"><link rel="stylesheet" href="../offline.css"><script src="../offline.js" defer></script><link rel="stylesheet" href="../assets/study-theme.css">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>申論評分參考｜觀護人練習臺</title><meta name="description" content="全站 553 題申論題評分要點：先作答，再逐列對照、換算自評分數，並可複製 AI 批改文字。"><link rel="stylesheet" href="../shared-ui.css"><link rel="stylesheet" href="style.css"><script src="data.js" defer></script><script src="app.js" defer></script><link rel="manifest" href="../manifest.webmanifest"><meta name="theme-color" content="#315b7c"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="../pwa/icon-180.png"><link rel="stylesheet" href="../offline.css"><script src="../offline.js" defer></script><link rel="stylesheet" href="../assets/study-theme.css">
 </head>
 <body>
 <header class="study-header"><div class="study-header-inner"><a class="study-brand" href="../v2.5/"><span class="study-brand-mark" aria-hidden="true">觀</span>觀護人練習臺</a><span class="study-test-label">申論評分參考</span><nav aria-label="主要導覽"><a href="../v2.5/">考古題練習</a><a href="./" aria-current="page">申論評分參考</a></nav></div></header>
@@ -8,7 +8,7 @@
 <div class="wrap">
   <div class="top">
     <div>
-      <p class="kicker">觀護人、監獄官、薦任升等（矯正）申論題・350 題</p>
+      <p class="kicker">全站申論題・553 題</p>
       <h1>申論評分參考</h1>
       <p class="lede">先作答，再逐列對照評分要點並換算自評分數。評分框架參考司律二試閱卷委員意見，法律題的評分要點為 AI 草擬、已核對現行法；學科題標示出處、待對照講義。<strong>都不是官方評分</strong>。</p>
     </div>
@@ -36,8 +36,13 @@
 
       <section class="sheet" aria-labelledby="ans-heading">
         <h2 id="ans-heading">一、先作答</h2>
-        <label for="answer" class="small muted">寫完整答案或詳細大綱，至少 50 字才能展開評分要點。</label>
+        <label for="answer" class="small muted">寫完整答案或詳細大綱，至少 50 字才能展開評分要點；答案寫在其他網站的話，貼上作答網址也可以展開。</label>
         <textarea id="answer" maxlength="20000"></textarea>
+        <div class="answer-link">
+          <label for="answer-url">作答網址（選填）</label>
+          <div class="url-row"><input id="answer-url" type="url" inputmode="url" autocomplete="off" spellcheck="false" maxlength="2000" placeholder="https://" aria-describedby="answer-url-hint"><a id="answer-url-open" class="btn ghost" target="_blank" rel="noopener noreferrer" hidden>開啟 ↗</a></div>
+          <p class="small muted" id="answer-url-hint">把寫在其他網站（例如 Google 文件、Notion）的答案連結貼在這裡。連結只存在這台瀏覽器，不會上傳。</p>
+        </div>
         <div class="row-actions"><span id="count" class="small muted"></span><button class="btn primary" id="unlock" type="button">我寫完了，展開評分要點</button></div>
       </section>
 

@@ -126,10 +126,16 @@
   var SCORING_SUBJECTS = {
     '觀護人': ['少年事件處理法','刑法','刑事訴訟法與保安處分執行法','犯罪學','心理學','諮商與輔導'],
     '監獄官': ['刑法與少年事件處理法','犯罪學與再犯預測','諮商與矯正輔導'],
-    '薦任升等（矯正）': ['刑法','心理測驗','犯罪學','諮商與輔導']
+    '薦任升等（矯正）': ['刑法','心理測驗','犯罪學','諮商與輔導'],
+    '犯罪防治人員預防組': ['刑法與刑事訴訟法','心理學','犯罪學與犯罪預防','諮商與輔導'],
+    '心理測驗員': ['少年事件處理法','心理學'],
+    '心理輔導員': ['少年事件處理法'],
+    '家事調查官': ['心理學'],
+    '監所管理員': ['犯罪學概要']
   };
   function scoringHref(q) {
-    var types = Array.isArray(q && q.examTypes) ? q.examTypes : [q && q.examType];
+    // 警察題的 examTypes 是完整考試名稱，類科要看 examType。
+    var types = (Array.isArray(q && q.examTypes) ? q.examTypes : []).concat([q && q.examType]);
     var covered = types.some(function (t) { return Object.prototype.hasOwnProperty.call(SCORING_SUBJECTS, t) && SCORING_SUBJECTS[t].indexOf(q.subject) >= 0; });
     if (!q || !q.id || !covered || !(q.year >= 108 && q.year <= 115)) return null;
     return '../law-scoring/#' + encodeURIComponent(q.id);
