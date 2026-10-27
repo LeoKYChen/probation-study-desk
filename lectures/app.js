@@ -187,7 +187,11 @@
     wrap.textContent=label;input.type=type;input.value=String(initial);input.setAttribute('aria-label',label);
     if(min!==undefined)input.min=String(min);if(max!==undefined)input.max=String(max);
     if(type==='text')input.maxLength=100;
-    wrap.append(input);return {wrap,input};
+    if(type==='date'){
+      const control=make('span',undefined,'learning-date-control');
+      control.append(input);wrap.append(control);
+    }else wrap.append(input);
+    return {wrap,input};
   }
   function courseBlock(course){
     const lessons=state.lessons.filter(l=>l.courseId===course.id);

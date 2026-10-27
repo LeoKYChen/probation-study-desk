@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="./style.css">
 <link rel="stylesheet" href="./calendar.css">
 <link rel="stylesheet" href="../assets/study-theme.css">
-<link rel="stylesheet" href="./learning.css?v=20261027">
+<link rel="stylesheet" href="./learning.css?v=20261027-date-fit">
 </head>
 <body>
 <header class="site-header"><a href="../">← 觀護人學習平台</a><span>學習管理</span><a href="../backup/">完整備份中心 ↗</a></header>
@@ -43,7 +43,7 @@
       <label id="customSubjectWrap" hidden>自訂考科名稱 <input id="customSubject" maxlength="50" placeholder="例如：行政法、民法或其他考科"></label>
       <label>課程名稱 <input id="courseName" maxlength="100" required placeholder="例如：心理學總複習"></label>
       <label>授課教師（選填）<input id="courseTeacher" maxlength="100" placeholder="授課教師"></label>
-      <label>觀看期限（選填）<input id="courseExpiry" type="date"></label>
+      <label>觀看期限（選填）<span class="learning-date-control"><input id="courseExpiry" type="date"></span></label>
       <label>總堂數 <input id="courseCount" type="number" min="1" max="120" required value="10"></label>
       <label>每堂分鐘數 <input id="courseDuration" type="number" min="1" max="1440" required value="120"></label>
       <button class="primary" type="submit">新增課程與堂次</button>
@@ -57,11 +57,11 @@
       <label>平日每天可讀書（分鐘）<input id="weekdayMinutes" type="number" min="0" max="1440" required></label>
       <label>週末每天可讀書（分鐘）<input id="weekendMinutes" type="number" min="0" max="1440" required></label>
       <label>每天預留原有練習／複習（分鐘）<input id="reserveMinutes" type="number" min="0" max="1440" required></label>
-      <label class="date-field">考試日期（選填）<input id="examDate" type="date" min="2000-01-01" max="2100-12-31"></label>
+      <label class="date-field">考試日期（選填）<span class="learning-date-control"><input id="examDate" type="date" min="2000-01-01" max="2100-12-31"></span></label>
       <label>考前預留複習天數<input id="reviewDays" type="number" min="0" max="365" required></label>
       <label>排課方式 <select id="strategy"><option value="sequential">依序完課（原有方式）</option><option value="rotate">每日輪替一科</option><option value="weighted">依各科權重均衡分配</option><option value="fixed">每週固定科目</option></select></label>
       <label>預排天數<input id="planDays" type="number" min="1" step="1" required aria-describedby="planRangeHint"></label>
-      <label>或指定排到日期<input id="planEndDate" type="date" aria-describedby="planRangeHint"></label>
+      <label>或指定排到日期<span class="learning-date-control"><input id="planEndDate" type="date" aria-describedby="planRangeHint"></span></label>
       <p id="planRangeHint" class="hint settings-full">可輸入任意正整數天數，或指定結束日期；支援跨年度。已另行編輯的學習項目會保留日期並占用當天時數。</p>
       <label id="subjectLimitWrap">每天最多安排幾科 <select id="maxSubjectsPerDay"><option value="1">1科</option><option value="2">2科</option><option value="3">3科</option></select></label>
       <div class="settings-full" id="subjectRulesArea"><h3>各科排課設定</h3><p class="hint">可暫時排除某科；在「權重均衡」模式可設定各科重要程度，5 代表較多時間。未排入的課程仍保留進度。</p><div id="subjectRules" class="subject-rules"></div></div>
@@ -91,5 +91,5 @@
   </section>
 </main>
 <footer><p>學習資料僅儲存在目前瀏覽器，手機與電腦不會自動同步。</p><p>清除網站資料前，請先完成備份。課程時長與考試日期由你自行設定。</p></footer>
-<script src="./core.js?v=20261027"></script><script src="./app.js?v=20261027"></script>
+<script src="./core.js?v=20261027"></script><script src="./app.js?v=20261027-date-fit"></script>
 </body></html>

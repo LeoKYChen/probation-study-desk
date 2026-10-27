@@ -25,7 +25,7 @@ const near=(a,b,tol=1)=>Math.abs(a-b)<=tol;
       const browser=await browserType.launch({headless:true});
       try{
         for(const width of [320,375,390,430,768,1280]){
-          const context=await browser.newContext({viewport:{width,height:850},hasTouch:true});
+          const context=await browser.newContext({viewport:{width,height:850},hasTouch:true,isMobile:width<=430,locale:'zh-TW',timezoneId:'Asia/Taipei'});
           await context.addInitScript((data)=>localStorage.setItem('psd-lecture-planner-v1',JSON.stringify(data)),sample);
           const page=await context.newPage(),errors=[];
           page.on('pageerror',e=>errors.push(e.message));
@@ -58,6 +58,26 @@ const near=(a,b,tol=1)=>Math.abs(a-b)<=tol;
           assert(layout.checkbox.width<=22&&layout.checkbox.height<=22,engine+' '+width+' checkbox unexpectedly large '+JSON.stringify(layout.checkbox));
           assert.equal(layout.overflow<=1,true,engine+' '+width+' lecture overflow '+layout.overflow);
           assert(layout.footer.includes('備份')&&layout.footer.includes('自行設定'));
+          // iPhone regression: each date control must fit its own label, including nested editors.
+          // Whole-page scrollWidth alone misses controls protruding into card padding.
+          for(const value of ['', '2026-10-27', '2030-12-31']){
+            for(const input of await page.locator('input[type=date]').all()){
+              if(await input.isVisible())await input.fill(value);
+            }
+            const dates=await page.locator('input[type=date]').evaluateAll(inputs=>inputs.filter(input=>input.getClientRects().length).map(input=>{
+              const r=input.getBoundingClientRect(),label=input.closest('label').getBoundingClientRect(),parent=input.parentElement.getBoundingClientRect();
+              return {id:input.id||input.getAttribute('aria-label'),value:input.value,left:r.left,right:r.right,width:r.width,labelLeft:label.left,labelRight:label.right,parentLeft:parent.left,parentRight:parent.right};
+            }));
+            assert(dates.length>=5,'course, exam, end date, existing-course and calendar dates must be tested');
+            for(const d of dates){
+              assert(d.width>80,engine+' '+width+' date collapsed: '+JSON.stringify(d));
+              assert(d.left>=d.labelLeft-1&&d.right<=d.labelRight+1,engine+' '+width+' date outside label: '+JSON.stringify(d));
+              assert(d.left>=d.parentLeft-1&&d.right<=d.parentRight+1,engine+' '+width+' date outside control: '+JSON.stringify(d));
+            }
+          }
+          await page.fill('#planEndDate','');
+          await page.fill('#planDays','30');
+          await page.fill('#examDate','2027-08-13');
           assert.equal(await page.locator('.subject-rule .weight').first().isVisible(),true);
           await page.selectOption('#strategy','rotate');
           assert.equal(await page.locator('.subject-rule .weight').first().isVisible(),false);
@@ -74,6 +94,6 @@ const near=(a,b,tol=1)=>Math.abs(a-b)<=tol;
         }
       }finally{await browser.close();}
     }
-    console.log('PASS 6 UI fixes: Chromium/WebKit at 320,375,390,430,768,1280px, preserved schedule and settings');
+    console.log('PASS UI and date containment: Chromium/WebKit at 320,375,390,430,768,1280px; empty/filled native date controls, mobile zh-TW, preserved schedule and settings');
   }finally{server.close();}
 })().catch(e=>{console.error(e);server.close();process.exitCode=1;});
