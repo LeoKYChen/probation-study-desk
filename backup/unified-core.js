@@ -159,7 +159,7 @@
       const localLesson=a.lessonId&&local.lessons.find(l=>l.id===a.lessonId);
       const remoteLesson=a.lessonId&&remote.lessons.find(l=>l.id===a.lessonId);
       if(haveActivities.has(a.id)){if(!equal(haveActivities.get(a.id),a))conflict(key,['activities',a.id],haveActivities.get(a.id),a);}
-      else if(localLesson&&remoteLesson&&localLesson.watchedMinutes!==remoteLesson.watchedMinutes)conflict(key,['activities',a.id],null,a);
+      else if(localLesson&&remoteLesson&&(localLesson.watchedMinutes!==remoteLesson.watchedMinutes||out.activities.filter(x=>x.lessonId===a.lessonId).reduce((n,x)=>n+x.completedMinutes,0)+a.completedMinutes>localLesson.watchedMinutes))conflict(key,['activities',a.id],null,a);
       else{out.activities.push(copy(a));haveActivities.set(a.id,a);}
     }
     if(!equal(out.settings,remote.settings))conflict(key,['settings'],out.settings,remote.settings);

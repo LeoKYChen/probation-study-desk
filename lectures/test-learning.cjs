@@ -78,4 +78,12 @@ const blank=storage(),merge=b.plan(b.storageSnapshot(blank),b.validate(pack));b.
 assert.equal(c.normalize(JSON.parse(blank.getItem(c.KEY))).activities.length,2);
 const cleared=b.previewClear(blank);b.applyClear(blank,cleared);
 assert.equal(JSON.parse(blank.getItem(c.KEY)).activities.length,0);
+// Two devices may have different activity IDs for the same watched minutes.
+const localCopy=JSON.parse(JSON.stringify(done)),remoteCopy=JSON.parse(JSON.stringify(done));
+remoteCopy.activities[0].id='other_device_log';
+const localStore=storage([[c.KEY,JSON.stringify(localCopy)]]);
+const remotePackage=b.collect(storage([[c.KEY,JSON.stringify(remoteCopy)]]),'https://remote.invalid');
+const conflictMerge=b.plan(b.storageSnapshot(localStore),remotePackage);b.apply(localStore,conflictMerge);
+assert(conflictMerge.conflicts.length>0);
+assert.equal(c.normalize(JSON.parse(localStore.getItem(c.KEY))).activities.length,1,'conflicting duplicate progress must be archived');
 console.log('PASS learning management: long ranges, partial completion, idempotence, preserved history, manual tasks, capacity, actual-time separation, legacy data and backup');

@@ -178,7 +178,7 @@
     $('riskNote').textContent=lessons.length?msg:'';
     const start=core.todayTaipei();let cap=0;
     for(let i=0;i<7;i++)cap+=core.capacity(state.settings,core.datePlus(start,i));
-    $('timeNote').textContent='今天起7天的函授可用時間：'+minutes(cap)+'（已逐日扣除預留的既有練習時間）；未設定考試日期時，只估算完課日。';
+    $('timeNote').textContent='今天起7天的可用學習時間：'+minutes(cap)+'（已逐日扣除預留的既有練習時間）；未設定考試日期時，只估算完課日。';
     const late=core.delay(state,start);
     $('lateNote').textContent=state.plan?(late>0?'先前計畫截至昨天尚有 '+minutes(late)+' 未完成。可按「預覽新進度安排」將剩餘內容向後調整。':'已保存上一份計畫；課程進度更新後，可按需要重新排程。'):'尚未儲存函授排程，請先建立課程並預覽。';
   }
