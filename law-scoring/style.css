@@ -36,6 +36,14 @@ a{color:var(--accent)}
 textarea{width:100%;min-height:220px;padding:12px;border:1px solid var(--rule);border-radius:8px;font:inherit;line-height:1.75;background:var(--paper);color:var(--ink);resize:vertical}
 textarea.dev{min-height:72px;background:var(--gold-soft)}
 textarea:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.answer-link{margin-top:12px;display:flex;flex-direction:column;gap:4px}
+.answer-link label{font-size:13px;font-weight:700;color:var(--ink-soft)}
+.url-row{display:flex;gap:8px;align-items:stretch}
+.url-row input{flex:1 1 auto;min-width:0;min-height:44px;padding:8px 10px;border:1px solid var(--rule);border-radius:8px;font:inherit;font-size:15px;background:var(--paper);color:var(--ink)}
+.url-row input[aria-invalid="true"]{border-color:var(--seal)}
+.url-row a.btn{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;border-radius:8px;border:1px solid var(--accent);color:var(--accent);font-weight:700;text-decoration:none;white-space:nowrap}
+.answer-link p{margin:0}
+#answer-url-hint.error{color:var(--seal)}
 .row-actions{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:10px}
 button.btn{min-height:44px;padding:8px 16px;border-radius:8px;border:1px solid var(--accent);font:inherit;font-size:15px;font-weight:700;cursor:pointer}
 .btn.primary{background:var(--accent);color:var(--sheet)}

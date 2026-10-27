@@ -36,8 +36,13 @@
 
       <section class="sheet" aria-labelledby="ans-heading">
         <h2 id="ans-heading">一、先作答</h2>
-        <label for="answer" class="small muted">寫完整答案或詳細大綱，至少 50 字才能展開評分要點。</label>
+        <label for="answer" class="small muted">寫完整答案或詳細大綱，至少 50 字才能展開評分要點；答案寫在其他網站的話，貼上作答網址也可以展開。</label>
         <textarea id="answer" maxlength="20000"></textarea>
+        <div class="answer-link">
+          <label for="answer-url">作答網址（選填）</label>
+          <div class="url-row"><input id="answer-url" type="url" inputmode="url" autocomplete="off" spellcheck="false" maxlength="2000" placeholder="https://" aria-describedby="answer-url-hint"><a id="answer-url-open" class="btn ghost" target="_blank" rel="noopener noreferrer" hidden>開啟 ↗</a></div>
+          <p class="small muted" id="answer-url-hint">把寫在其他網站（例如 Google 文件、Notion）的答案連結貼在這裡。連結只存在這台瀏覽器，不會上傳。</p>
+        </div>
         <div class="row-actions"><span id="count" class="small muted"></span><button class="btn primary" id="unlock" type="button">我寫完了，展開評分要點</button></div>
       </section>
 
