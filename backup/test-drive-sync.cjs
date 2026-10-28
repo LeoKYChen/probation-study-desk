@@ -2,7 +2,8 @@
 'use strict';
 const assert=require('node:assert/strict');
 const backup=require('./unified-core.js');
-const protocol=require('./drive-sync-core.js');
+require('./drive-sync-core.js');
+const protocol=globalThis.PSDDriveSyncCore;
 const KEY='probation-study30-v251:v1',DAY='2026-10-28';
 const store=initial=>{
  const entries=new Map(Object.entries(initial||{}));
