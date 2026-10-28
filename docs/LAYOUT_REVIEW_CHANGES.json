@@ -145,6 +145,12 @@
       "base_sha256": "7fe28bd7b2fef4ca1b2a8a8d85d6e911dbdf5440550057871793a960af5066eb",
       "sha256": "95da30d58d9ce461f27ab146093bca8588e9fd2f1b4bc65c7800ab69a9304386",
       "reason": "[2026-10-23 553 題一致性] 延續原有申論複習功能，支援警察原題跨科映射。 原始基準雜湊已由凍結來源紀錄恢復，確保舊版與新版檔案核驗一致。"
+    },
+    {
+      "path": "professional/backup-import.js",
+      "base_sha256": "d05071d36dd4c09f5bc4367ef98c4f1d4ded9a80fdf105f5c01c446552c820cc",
+      "sha256": "0d3ca10734632e444215a8e5a86fc5d6a20b138d6a8e8b040f8a1084768fcee1",
+      "reason": "2026-10-28 Stage2：每日30分鐘備份匯入改用同一個完整備份安全合併引擎、移除覆寫全日期的高風險完整還原。"
     }
   ]
 }
