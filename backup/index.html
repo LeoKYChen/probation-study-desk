@@ -93,6 +93,21 @@ footer{color:#607267;font-size:13px}ul{columns:2;max-width:780px;padding-left:24
 <div id="study30ConflictList"></div>
 </section>
 </div>
+<section id="driveSyncPanel" class="card drive-sync-panel" aria-labelledby="driveSyncTitle">
+<h2 id="driveSyncTitle">Google Drive 私人自動同步（第三階段測試）</h2>
+<p class="note">首次使用需自行設定 Google Cloud「網頁應用程式」OAuth Client ID，並授權 Google Drive。僅存取平台自行建立的檔案；不會讀取整個雲端硬碟，也不會刪除原有備份。</p>
+<label for="driveClientId">Google OAuth 網頁用戶端 ID（公開識別碼，不是密鑰）</label>
+<input id="driveClientId" type="text" autocomplete="off" spellcheck="false" placeholder="123456789-xxxx.apps.googleusercontent.com" style="max-width:100%;box-sizing:border-box;width:min(540px,100%);display:block;padding:10px;margin:8px 0">
+<div class="actions">
+<button id="driveConnect" type="button">連線 Google Drive</button>
+<button id="driveSyncNow" type="button" disabled>立即安全同步</button>
+<button id="driveDisconnect" type="button" disabled>斷開授權</button>
+</div>
+<label class="check"><input id="driveAutoSync" type="checkbox"> 網頁開啟並取得有效授權時，每5分鐘自動檢查一次（離線不執行）</label>
+<p id="driveSyncStatus" class="note" role="status" aria-live="polite">尚未連線。</p>
+<p class="note"><a id="driveFolderLink" href="#" target="_blank" rel="noopener noreferrer" hidden>查看 Google Drive 私人同步資料夾</a></p>
+<p class="note">沒有設定 OAuth 時，此功能不會連線或上傳。Google 權杖到期後需手動重新授權。所有原始 JSON 匯出／匯入維持可用；遇衝突請至完整備份頁比較。</p>
+</section>
 <div class="card" aria-labelledby="clearTitle">
 <h2 id="clearTitle">④ 清除學習紀錄</h2>
 <p class="danger-caption">只清除<strong>目前網站網址、這台裝置</strong>的學習與閱讀紀錄，不會清除其他網址或其他裝置，也不會刪除網站題庫。</p>
@@ -111,5 +126,8 @@ footer{color:#607267;font-size:13px}ul{columns:2;max-width:780px;padding-left:24
 </main>
 <footer>個人作答、筆記與 AI 評語可能含私人資料；請只上傳到你的私人 Google Drive，勿上傳公開 GitHub 或分享公開連結。這個頁面不支援舊模組單獨 JSON 直接合併，舊檔請仍從原模組匯入。</footer>
 <script src="./unified-core.js"></script><script src="./app.js"></script>
+<script src="./drive-sync-core.js"></script><script src="./drive-transport.js"></script>
+<script src="./drive-sync-ui.js"></script>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
 </body>
 </html>
