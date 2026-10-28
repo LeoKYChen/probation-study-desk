@@ -7,6 +7,7 @@
   <meta name="description" content="116年觀護人考試，每日30分鐘：主動回想、考古題練習、申論架構、錯題整理。">
   <title>每日30分鐘｜觀護人練習臺 v2.5.4 離線練習版</title>
   <link rel="stylesheet" href="./style.css">
+  <style>.essay-version-history{padding:12px 0}.essay-version-history #essayVersionList details{margin:8px 0;padding:8px;border:1px solid #b9cad2;border-radius:9px}.essay-version-history #essayVersionList pre{font-size:12px;white-space:pre-wrap}</style>
   <script src="./source-main-questions.js" defer></script>
   <script src="./source-related-questions.js" defer></script>
   <script src="../police-exams/questions.approved.js" defer></script>
@@ -24,8 +25,10 @@
   <script src="./progress-calendar.js" defer></script>
   <script src="./weakness-priority.js" defer></script>
   <script src="./data-health.js" defer></script>
+  <script src="../backup/unified-core.js" defer></script>
   <script src="./backup-import.js" defer></script>
   <script src="./daily-essay-workbench.js" defer></script>
+  <script src="./essay-version-history.js" defer></script>
   <script src="./practice-diagnostics.js" defer></script>
   <script src="./study30-shuati-links.js" defer></script>
   <script src="./study30-yamol-links.js" defer></script>
@@ -135,6 +138,14 @@
           <div class="essay-full-answer"><label for="essayFullAnswer">完整申論答案（選填，可將架構整理成連貫文字）</label><textarea id="essayFullAnswer" rows="10" placeholder="在此將上方的重點寫成正式申論答案。未寫完也會自動保存。"></textarea></div>
           <div class="essay-bottom"><div class="essay-save-status" id="essaySaveStatus" role="status" aria-live="polite">等待載入草稿…</div><span id="essayCharCount" class="tiny muted">0 字元</span></div>
           <div class="essay-actions"><button id="essayExport" type="button" class="secondary">匯出本題申論 Markdown</button></div>
+<section class="essay-version-history" aria-label="本日多次申論版本">
+<p class="muted tiny">同一天可以為同一題建立多份獨立申論版本，不影響原本30分鐘任務及計時。</p>
+<button id="saveEssayVersion" type="button" class="secondary">保存本次申論為獨立版本</button>
+<span id="essayVersionCount" class="muted tiny"></span>
+<p id="essayVersionStatus" class="muted tiny" role="status" aria-live="polite"></p>
+<details class="learning-details"><summary>查看／恢復本日申論歷史版本</summary>
+<div id="essayVersionList"></div></details>
+</section>
 <section id="daily30AiPanel" class="daily30-ai" aria-label="AI批改文字">
 <label for="daily30AiMode"><strong>批改方式</strong></label>
 <select id="daily30AiMode" style="display:block;width:100%;max-width:100%;min-width:0;box-sizing:border-box;" aria-label="選擇 AI 批改方式"><option value="full">完整申論批改</option><option value="direction">答題方向批改（四格草稿／大綱）</option></select>
@@ -227,20 +238,15 @@
     <section class="backup-import-panel" aria-labelledby="backupImportHeading">
   <h2 id="backupImportHeading">學習紀錄 JSON 匯入／還原</h2>
 
-  <label class="backup-import-label" for="importBackupFile">選擇先前匯出的 JSON 備份檔</label>
+  <label class="backup-import-label" for="importBackupFile">選擇完整備份 JSON 或本模組舊版 JSON</label>
   <input type="file" id="importBackupFile" accept=".json,application/json">
-  <fieldset class="backup-mode"><legend>資料處理方式</legend>
-    <label><input type="radio" name="importMode" value="merge" checked> 合併（建議）：保留目前所有日期，只補入備份中不存在的日期；相同日期不覆蓋</label>
-    <label><input type="radio" name="importMode" value="replace"> 完整還原：以備份取代所有現有日期（高風險）</label>
-  </fieldset>
+  <fieldset class="backup-mode"><legend>資料處理方式</legend><p>安全合併：補齊有效申論與自評，保留不同答案的衝突版本，不移除既有日期。</p></fieldset>
   <p id="importPreview" class="backup-import-preview">選擇檔案後可預覽備份日期、草稿及自評筆數。</p>
   <button type="button" id="downloadBeforeImport" class="secondary">先匯出目前紀錄（安全備份）</button>
   <label class="backup-import-agree"><input type="checkbox" id="importBackupConfirmed"> 我已確認目前紀錄的 JSON 備份已下載保存</label>
-  <label for="importConfirm">若選「完整還原」，請輸入「完整還原」</label>
-  <input type="text" id="importConfirm" placeholder="完整還原" autocomplete="off" spellcheck="false">
   <button type="button" id="importExecute" class="primary" disabled>執行匯入／還原</button>
   <p id="importStatus" class="muted tiny" role="status" aria-live="polite">尚未讀取備份。</p>
-  <p class="muted tiny">提醒：只處理你在此裝置選擇的本機檔案，不會上傳至伺服器；實際匯入後會重新整理網頁。</p>
+  <p class="muted tiny">此處只匯入每日30分鐘資料；其他模組請使用<a href="../backup/">完整學習紀錄備份</a>。衝突版本可在完整備份頁檢視與復原。匯入後會重新整理。</p>
 </section>
     <section class="v254-panel" aria-labelledby="v254Heading">
   <div class="section-head"><div><p class="eyebrow">STUDY INSIGHTS · v2.5.4</p><h2 id="v254Heading">七科學習診斷與弱點追蹤</h2></div><span class="insight-note">七科診斷</span></div>

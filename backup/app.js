@@ -91,6 +91,81 @@
    (!rows.length?' 目前沒有已開始的學習紀錄。':'')+
    ' 只顯示有實際學習內容或已建立的函授課程；完整 JSON 仍保留舊版資料、設定與尚未開始的工作階段。';
  }
+
+ let studyRestoreBackupRequested=false,studyRestoreBackupSnapshot=null,studyConflictPage=0;
+ function studyVersionPreview(row){
+  if(!row)return '目前主要紀錄不存在';
+  const data={date:row.date,questionId:row.questionId||'',elapsed:row.elapsed||0,
+   finished:!!row.finished,notes:row.notes||[],rating:row.rating||null,
+   essayDrafts:row.essayDrafts||{},practiceRatings:row.practiceRatings||{},
+   essayVersions:row.essayVersions||{}};
+  const txt=JSON.stringify(data,null,2);
+  return txt.length>12000?txt.slice(0,12000)+'\\n…內容過長，請下載完整衝突版本 JSON 查閱。':txt;
+ }
+ function renderStudy30Conflicts(){
+  const host=$('study30ConflictList');
+  if(!host)return;
+  host.replaceChildren();
+  try{
+   const records=core.listStudy30Conflicts(current());
+   const pageSize=25,totalPages=Math.max(1,Math.ceil(records.length/pageSize));
+   studyConflictPage=Math.max(0,Math.min(studyConflictPage,totalPages-1));
+   $('study30ConflictSummary').textContent=records.length
+    ?'找到 '+records.length+' 筆每日30分鐘不同版本｜第 '+(studyConflictPage+1)+'／'+totalPages+' 頁。'
+    :'目前沒有每日30分鐘待比較的歷史衝突。';
+   if(records.length>pageSize){
+    const nav=document.createElement('div');nav.className='actions';
+    for(const [step,label] of [[-1,'上一頁'],[1,'下一頁']]){
+     const button=document.createElement('button');button.type='button';button.textContent=label;
+     button.disabled=studyConflictPage+step<0||studyConflictPage+step>=totalPages;
+     button.addEventListener('click',()=>{studyConflictPage+=step;renderStudy30Conflicts();});
+     nav.append(button);
+    }
+    host.append(nav);
+   }
+   for(const row of records.slice(studyConflictPage*pageSize,(studyConflictPage+1)*pageSize)){
+    const details=document.createElement('details'),summary=document.createElement('summary');
+    summary.textContent=row.date+'｜'+(row.incoming.questionId||row.existing.questionId||'自主練習')+
+     '｜衝突紀錄 #'+(row.index+1);
+    details.append(summary);
+    const grid=document.createElement('div');grid.className='versions';
+    for(const [title,record] of [['目前主要紀錄',row.main],['紀錄原版本',row.existing],['備份匯入版本',row.incoming]]){
+     const box=document.createElement('div'),heading=document.createElement('strong'),pre=document.createElement('pre');
+     heading.textContent=title;pre.textContent=studyVersionPreview(record);box.append(heading,pre);grid.append(box);
+    }
+    details.append(grid);
+    for(const [side,label] of [['existing','將原版本設為主要紀錄'],['incoming','將匯入版本設為主要紀錄']]){
+     const button=document.createElement('button');button.type='button';button.textContent=label;
+     button.className='restoreStudy30';button.disabled=!studyRestoreBackupRequested||!$('study30ConflictConfirmed').checked;
+     button.addEventListener('click',()=>restoreStudy30(row.index,side));
+     details.append(button);
+    }
+    host.append(details);
+   }
+  }catch(e){$('study30ConflictSummary').textContent='無法檢查衝突版本：'+e.message;}
+ }
+ function updateStudyRestoreButtons(){
+  for(const b of document.querySelectorAll('#study30ConflictList button.restoreStudy30'))
+   b.disabled=!studyRestoreBackupRequested||!$('study30ConflictConfirmed').checked;
+ }
+ function restoreStudy30(index,side){
+  if(!studyRestoreBackupRequested||!$('study30ConflictConfirmed').checked){
+   tell('請先下載完整保護備份，確認檔案確實保存、並關閉其他編輯分頁。',true);return;
+  }
+  try{
+   const now=current();
+   const keys=new Set([...Object.keys(now),...Object.keys(studyRestoreBackupSnapshot||{})]);
+   if(!studyRestoreBackupSnapshot||[...keys].some(k=>now[k]!==studyRestoreBackupSnapshot[k]))
+    throw Error('下載保護備份後，另一分頁或此頁有更新；請重新下載最新保護備份。');
+   const plan=core.planStudy30ConflictRestore(now,index,side);
+   if(!plan.changed){tell('所選版本已經是主要紀錄，無需復原。');return;}
+   if(!window.confirm('確認將 '+plan.date+' 的選定版本設為主要紀錄？原本主要版本會保留在衝突歷史；請確認備份檔已存在。'))return;
+   core.apply(localStorage,plan);
+   studyRestoreBackupRequested=false;studyRestoreBackupSnapshot=null;$('study30ConflictConfirmed').checked=false;
+   refresh();tell('已復原 '+plan.date+' 的選定版本；原主要版本保留在衝突紀錄。請重新整理練習頁後確認。');
+  }catch(e){tell('復原未完成：'+e.message,true);}
+ }
+
  function updateClearReady(){
   $('clearLearning').disabled=!clearPlan||!clearPlan.items.length||!clearBackupRequested||
    !$('clearBackupConfirmed').checked||!$('clearTabsConfirmed').checked||
@@ -132,7 +207,7 @@
   showUsage();
   try{explain(current());$('export').disabled=false;}
   catch(e){tell('無法讀取現有紀錄：'+e.message,true);$('export').disabled=true;}
-  refreshClear();
+  refreshClear();renderStudy30Conflicts();
  }
  function clearPreview(){incoming=null;plan=null;$('preview').hidden=true;$('restore').disabled=true;$('confirmSafe').checked=false;$('confirmTabs').checked=false;$('importFile').value='';$('importFileName').textContent='尚未選取檔案';}
  $('export').addEventListener('click',()=>{
@@ -188,6 +263,16 @@
    clearPreview();refresh();
   }catch(e){tell('已停止匯入：'+e.message,true);}
  });
+ $('study30ConflictBackup').addEventListener('click',()=>{
+  try{
+   const backup=core.collect(localStorage,location.origin);
+   download(backup,'觀護人學習平台-版本復原前備份-'+stamp()+'.json');
+   studyRestoreBackupSnapshot=backup.data;studyRestoreBackupRequested=true;
+   updateStudyRestoreButtons();
+   tell('已要求下載保護備份。請確認檔案已保存，才能選擇復原版本。');
+  }catch(e){studyRestoreBackupRequested=false;studyRestoreBackupSnapshot=null;tell('無法下載保護備份，已阻止復原：'+e.message,true);}
+ });
+ $('study30ConflictConfirmed').addEventListener('change',updateStudyRestoreButtons);
  $('downloadConflicts').addEventListener('click',()=>{
   try{
    const raw=localStorage.getItem(core.CONFLICT_KEY);

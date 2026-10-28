@@ -325,6 +325,7 @@ async function check(){
  assert.ok(dualRect&&dualRect.x>=0&&dualRect.x+dualRect.width<=392,'mobile dual AI button must fit viewport');
  assert.deepEqual(examErrors,[],'no exam review JavaScript errors');
  await examPage.close();
+ await require('./study30-stage2-browser.cjs')(browser,origin);
  console.log((IS_WEBKIT?'WebKit':'Chromium')+' desktop + 390px touch-mobile browser acceptance passed: '+data.questions.length+' questions; old answer, timer, AI clipboard, shared page, backup/restore, clear and mobile layout.');
 }
 check().catch(error=>{console.error(error);process.exitCode=1;}).finally(async()=>{

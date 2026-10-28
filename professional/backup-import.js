@@ -34,6 +34,13 @@
   let input;
   try{input=JSON.parse(text);}catch{throw Error('檔案不是有效JSON；請選擇本模組匯出的JSON備份。');}
   if(!obj(input))throw Error('JSON最外層格式不正確。');
+  if(input.format==='psd-unified-learning-backup'){
+   const core=root.PSDUnifiedBackup;
+   if(!core)throw Error('共用備份模組未載入');
+   core.validate(input);
+   if(typeof input.data[KEY]!=='string')throw Error('完整備份中沒有每日30分鐘紀錄');
+   return safeStore(JSON.parse(input.data[KEY]));
+  }
   // v2.5.1–v2.5.3 historical exports use data envelope; also accept raw v1 store.
   if('data'in input){
    if(typeof input.format!=='string'||!/^probation-study30-v25[1-3]/.test(input.format))
@@ -45,85 +52,91 @@
  const count=store=>{let drafts=0,assessments=0;for(const s of Object.values(store.sessions)){
   drafts+=keys(s.essayDrafts).length;assessments+=keys(s.essayAssessments).length;
  }return {days:keys(store.sessions).length,drafts,assessments};};
- function merge(existing,imported,mode){
-  const a=safeStore(existing),b=safeStore(imported);
-  if(mode==='replace')return {result:b,added:keys(b.sessions).length,skipped:0,mode};
-  if(mode!=='merge')throw Error('請選擇合併或完整還原。');
-  const result={...a,sessions:{...a.sessions}},stats={result,added:0,skipped:0,mode};
-  for(const [day,session] of Object.entries(b.sessions)){
-   if(Object.prototype.hasOwnProperty.call(result.sessions,day))stats.skipped++;
-   else{result.sessions[day]=session;stats.added++;}
-  }
-  return stats;
+ function merge(existing,imported,mode,archiveRaw){
+  if(mode!=='merge')throw Error('為避免刪除舊紀錄，本版本僅提供安全合併。');
+  const a=safeStore(existing),b=safeStore(imported),core=root.PSDUnifiedBackup;
+  if(!core||typeof core.plan!=='function')throw Error('缺少共用合併模組；已停止匯入');
+  const baseline={};
+  baseline[KEY]=JSON.stringify(a);
+  if(typeof archiveRaw==='string')baseline[core.CONFLICT_KEY]=archiveRaw;
+  const data={};data[KEY]=JSON.stringify(b);
+  const envelope={format:core.FORMAT,schemaVersion:core.SCHEMA,exportedAt:new Date().toISOString(),
+   sourceOrigin:location.origin,data};
+  const plan=core.plan(baseline,envelope);
+  const result=safeStore(JSON.parse(plan.changes[KEY]||baseline[KEY]));
+  const added=Object.keys(result.sessions).length-Object.keys(a.sessions).length;
+  return {result,added,conflicts:plan.conflicts.length,plan,mode};
  }
  root.Study30BackupImport={KEY,parse,safeStore,merge,count,maxBytes:MAX};
 })(window);
 
 (function(){
  'use strict';
- const $=id=>document.getElementById(id),api=window.Study30BackupImport;
- let fileText='',imported=null;
- const readCurrent=()=>api.safeStore(JSON.parse(localStorage.getItem(api.KEY)||'{"version":1,"sessions":{}}'));
+ const $=id=>document.getElementById(id),api=window.Study30BackupImport,core=window.PSDUnifiedBackup;
+ let imported=null,previewPlan=null;
  const status=message=>{$('importStatus').textContent=message;};
- const buttonState=()=>{const mode=document.querySelector('input[name="importMode"]:checked')?.value;
-  $('importExecute').disabled=!imported||!$('importBackupConfirmed').checked||(mode==='replace'&&$('importConfirm').value.trim()!=='完整還原');
- };
+ const readCurrent=()=>api.safeStore(JSON.parse(localStorage.getItem(api.KEY)||'{"version":1,"sessions":{}}'));
+ const snapshot=()=>core.storageSnapshot(localStorage);
+ function planImport(){
+  const previous=snapshot(),data={};
+  data[api.KEY]=JSON.stringify(imported);
+  return core.plan(previous,{format:core.FORMAT,schemaVersion:core.SCHEMA,
+   exportedAt:new Date().toISOString(),sourceOrigin:location.origin,data});
+ }
+ function ready(){
+  $('importExecute').disabled=!imported||!previewPlan||!$('importBackupConfirmed').checked;
+ }
  function preview(){
   if(!imported)return;
-  try{const existing=readCurrent(),mode=document.querySelector('input[name="importMode"]:checked')?.value||'merge',plan=api.merge(existing,imported,mode);
-   const ic=api.count(imported),cc=api.count(existing);
-   $('importPreview').textContent='備份：'+ic.days+' 天／草稿 '+ic.drafts+' 筆／自評 '+ic.assessments+
-    ' 筆。目前瀏覽器：'+cc.days+' 天。'+
-    (mode==='merge'?'預計新增 '+plan.added+' 天；跳過 '+plan.skipped+' 個已存在日期（既有資料優先）。':
-     '完整還原將以備份中的 '+ic.days+' 天取代目前所有日期；未包含於備份的日期會被移除。');
-   status('檔案已驗證。請先備份目前的紀錄，再確認執行。');
-  }catch(error){imported=null;status(error.message);}
-  buttonState();
+  try{
+   const before=readCurrent();
+   previewPlan=planImport();
+   const after=JSON.parse(previewPlan.changes[api.KEY]||JSON.stringify(before));
+   const a=api.count(imported),b=api.count(before);
+   const newDays=Object.keys(after.sessions).length-Object.keys(before.sessions).length;
+   const changedDays=Object.keys(after.sessions).filter(day=>before.sessions[day]&&
+     JSON.stringify(after.sessions[day])!==JSON.stringify(before.sessions[day])).length;
+   $('importPreview').textContent='來源：'+a.days+'天／草稿'+a.drafts+'筆／自評'+a.assessments+
+    '筆；本機：'+b.days+'天。預計新增'+newDays+'天、補充更新'+changedDays+
+    '天，新增需人工確認的衝突'+previewPlan.conflicts.length+'筆。相同內容不會重複累計時間。';
+   status('預覽完成，尚未寫入資料。請先下載保護備份。');
+  }catch(e){previewPlan=null;status('無法安全預覽：'+e.message);}
+  ready();
  }
  function downloadCurrent(){
   try{
-   const existing=readCurrent();
-   const content=JSON.stringify({format:'probation-study30-v253',version:1,exportedAt:new Date().toISOString(),data:existing},null,2);
-   const blob=new Blob([content],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');
-   a.href=url;a.download='study30-before-import-'+new Date().toISOString().slice(0,10)+'.json';
+   const data=core.collect(localStorage,location.origin);
+   const raw=JSON.stringify(data,null,2),blob=new Blob([raw],{type:'application/json'});
+   const url=URL.createObjectURL(blob),a=document.createElement('a');
+   a.href=url;a.download='study30-import-protection-'+new Date().toISOString().slice(0,10)+'.json';
    document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),3000);
-   status('已要求瀏覽器下載目前紀錄。請確認檔案確實存在，再勾選「已下載備份」。');
-  }catch(error){status('目前紀錄無法讀取或匯出，已停止匯入：'+error.message);}
+   status('已要求下載整站保護備份；請確認檔案確實存在，再勾選確認。');
+  }catch(e){status('保護備份失敗，請勿匯入：'+e.message);}
  }
  async function onFile(file){
-  imported=null;fileText='';$('importBackupConfirmed').checked=false;$('importConfirm').value='';buttonState();
-  if(!file){status('尚未選擇JSON檔案。');return;}
-  if(file.size>api.maxBytes){status('檔案超過8 MB，已拒絕匯入。');return;}
-  try{fileText=await file.text();imported=api.parse(fileText);preview();}
+  imported=null;previewPlan=null;$('importBackupConfirmed').checked=false;ready();
+  if(!file){status('尚未選擇JSON檔案');return;}
+  if(file.size>20*1024*1024){status('JSON檔案超過20 MB，已拒絕匯入');return;}
+  try{imported=api.parse(await file.text());preview();}
   catch(e){status('無法匯入：'+e.message);}
  }
  function execute(){
-  if(!imported||!$('importBackupConfirmed').checked)return;
-  const mode=document.querySelector('input[name="importMode"]:checked')?.value;
-  if(mode==='replace'&&$('importConfirm').value.trim()!=='完整還原')return;
-  if(!window.confirm(mode==='replace'?
-    '最後確認：完整還原會取代此瀏覽器每日30分鐘模組的所有現有紀錄，確定已另外保存備份？':
-    '最後確認：將新增備份中尚未存在的日期，遇到相同日期時保留目前資料，確定執行？'))return;
+  if(!imported||!previewPlan||!$('importBackupConfirmed').checked)return;
+  if(!window.confirm('確認已下載本機完整保護備份、關閉其他編輯分頁？系統會合併資料並保留不同答案的衝突版本。'))return;
   try{
-   // Pause first: otherwise pagehide would overwrite the just-restored data.
-   if(window.Study30App?.prepareBackupRestore)window.Study30App.prepareBackupRestore();
-   const current=readCurrent(),plan=api.merge(current,imported,mode);
-   const json=JSON.stringify(plan.result);
-   localStorage.setItem(api.KEY,json); // Single synchronous atomic write to the namespaced key.
-   if(localStorage.getItem(api.KEY)!==json)throw Error('儲存驗證失敗');
-   status('匯入成功，正在重新載入以顯示更新後的紀錄。');
-   window.location.reload();
-  }catch(error){status('匯入失敗，請保留備份：'+error.message);}
+   window.Study30App?.prepareBackupRestore?.();
+   const written=core.apply(localStorage,previewPlan);
+   status('安全合併完成，更新'+written+'個資料區，即將重新載入。');
+   location.reload();
+  }catch(e){status('匯入停止，原始備份請保留：'+e.message);}
  }
  function init(){
   if(!$('importBackupFile'))return;
   $('importBackupFile').addEventListener('change',e=>onFile(e.target.files?.[0]));
-  document.querySelectorAll('input[name="importMode"]').forEach(x=>x.addEventListener('change',preview));
   $('downloadBeforeImport').addEventListener('click',downloadCurrent);
-  $('importBackupConfirmed').addEventListener('change',buttonState);
-  $('importConfirm').addEventListener('input',buttonState);
+  $('importBackupConfirmed').addEventListener('change',ready);
   $('importExecute').addEventListener('click',execute);
-  buttonState();
+  ready();
  }
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
 })();

@@ -143,7 +143,7 @@
    if(v.finished||Number(v.elapsed)>0||Number(v.skippedSeconds)>0||Number(v.phase)>0||hasText(v.rating)||hasText(v.errorCause))return true;
    if((v.notes||[]).some(hasText))return true;
    if(Object.values(v.essayDrafts||{}).some(d=>d&&(hasText(d.fullAnswer)||(d.outline||[]).some(hasText))))return true;
-   for(const k of ['essayAssessments','aiReviewTexts','practiceRatings','essayCustomPrompts'])
+   for(const k of ['essayAssessments','aiReviewTexts','practiceRatings','essayCustomPrompts','essayVersions'])
     if(Object.values(v[k]||{}).some(x=>x!==null&&x!==''&&(!isObj(x)||Object.keys(x).length>0)))return true;
    return false;
   };
@@ -152,8 +152,12 @@
   if(left&&!right)return copy(existing);
   const li=existing._sync||{},ri=incoming._sync||{};
   const inChain=ref=>typeof ref==='string'&&ref.length>0;
-  const remoteDesc=inChain(li.revision)&&Array.isArray(ri.ancestors)&&ri.ancestors.includes(li.revision);
-  const localDesc=inChain(ri.revision)&&Array.isArray(li.ancestors)&&li.ancestors.includes(ri.revision);
+  const sameBranch=inChain(li.branchId)&&li.branchId===ri.branchId&&
+   Number.isSafeInteger(li.seq)&&Number.isSafeInteger(ri.seq);
+  const remoteDesc=(sameBranch&&ri.seq>li.seq)||
+   (inChain(li.revision)&&Array.isArray(ri.ancestors)&&ri.ancestors.includes(li.revision));
+  const localDesc=(sameBranch&&li.seq>ri.seq)||
+   (inChain(ri.revision)&&Array.isArray(li.ancestors)&&li.ancestors.includes(ri.revision));
   if(localDesc&&!remoteDesc)return copy(existing);
   const remoteWins=remoteDesc&&!localDesc;
   let diverged=false;
@@ -187,7 +191,7 @@
    return result;
   };
   const merged={...copy(existing)};
-  for(const k of ['notes','essayDrafts','essayAssessments','practiceRatings','aiReviewTexts','essayCustomPrompts']){
+  for(const k of ['notes','essayDrafts','essayAssessments','practiceRatings','aiReviewTexts','essayCustomPrompts','essayVersions']){
    if(k==='notes'){if(existing[k]!==undefined||incoming[k]!==undefined)merged[k]=arrayMerge(existing[k]||[],incoming[k]||[]);}
    else if(existing[k]!==undefined||incoming[k]!==undefined)merged[k]=objectMerge(existing[k],incoming[k],k);
   }
@@ -209,7 +213,7 @@
    if(values.length)merged[k]=values.sort()[k==='createdAt'?0:values.length-1];
   }
   const handled=new Set(['notes','essayDrafts','essayAssessments','practiceRatings','aiReviewTexts',
-   'essayCustomPrompts','questionId','commonQuestionId','rating','errorCause','essayPracticeSubject',
+   'essayCustomPrompts','essayVersions','questionId','commonQuestionId','rating','errorCause','essayPracticeSubject',
    'essayReviewTargetId','mode','phase','remaining','phaseTimeUsed','elapsed','skippedSeconds',
    'finished','createdAt','updatedAt','completedAt','ratingUpdatedAt','_sync']);
   for(const [k,v] of Object.entries(incoming)){
@@ -329,6 +333,45 @@
   return done.length;
  }
 
+
+ function listStudy30Conflicts(snapshot){
+  assert(isObj(snapshot),'本機資料不可讀');
+  const key='probation-study30-v251:v1';
+  const entries=snapshot[CONFLICT_KEY]?parseValue(CONFLICT_KEY,snapshot[CONFLICT_KEY]).entries:[];
+  const active=snapshot[key]?parseValue(key,snapshot[key]):{version:1,sessions:{}};
+  return entries.flatMap((row,index)=>{
+   if(row.key!==key||!Array.isArray(row.path)||row.path.length!==2||row.path[0]!=='sessions')return [];
+   const date=row.path[1];
+   if(typeof date!=='string'||!/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/.test(date)||!isObj(row.existing)||!isObj(row.incoming))return [];
+   return [{index,date,existing:copy(row.existing),incoming:copy(row.incoming),
+    main:own(active.sessions,date)?copy(active.sessions[date]):null}];
+  });
+ }
+ function planStudy30ConflictRestore(snapshot,index,side){
+  assert(side==='existing'||side==='incoming','請指定要恢復的版本');
+  assert(Number.isInteger(index)&&index>=0,'衝突版本編號錯誤');
+  const record=listStudy30Conflicts(snapshot).find(x=>x.index===index);
+  assert(record,'找不到符合條件的每日30分鐘衝突版本');
+  const date=record.date,target=copy(record[side]),key='probation-study30-v251:v1';
+  assert(!own(target,'date')||target.date===date,'衝突版本內的日期不一致');
+  target.date=date;
+  const data=snapshot[key]?parseValue(key,snapshot[key]):{version:1,sessions:{}};
+  const next=copy(data),old=own(next.sessions,date)?next.sessions[date]:null;
+  const archive=snapshot[CONFLICT_KEY]?parseValue(CONFLICT_KEY,snapshot[CONFLICT_KEY]):{schema:CONFLICT_KEY,entries:[]};
+  const changes=Object.create(null);
+  if(!equal(old,target)){
+   next.sessions[date]=target;changes[key]=JSON.stringify(next);
+   if(old!==null&&!archive.entries.some(x=>x.key===key&&equal(x.path,['sessions',date])&&equal(x.incoming,old)))
+    archive.entries.push({key,path:['sessions',date],existing:copy(target),incoming:copy(old)});
+  }
+  assert(archive.entries.length<=MAX_CONFLICTS,'衝突版本數量超過上限，請先分開備份');
+  if(JSON.stringify(archive)!==snapshot[CONFLICT_KEY])changes[CONFLICT_KEY]=JSON.stringify(archive);
+  assert(Object.values(changes).reduce((sum,s)=>sum+s.length,0)<=MAX_FILE,'恢復資料超過檔案限制');
+  if(own(changes,key))parseValue(key,changes[key]);
+  if(own(changes,CONFLICT_KEY))parseValue(CONFLICT_KEY,changes[CONFLICT_KEY]);
+  return {changes,baseline:copy(snapshot),date,index,side,changed:own(changes,key)};
+ }
+
  // Clearing learning progress is deliberately distinct from a full site reset.
  const clearKinds=new Set(['sessions','records','common','english','oldenglish','list','lectures']);
  function previewClear(storage){
@@ -398,5 +441,5 @@
   }
   return changed.length;
  }
- return {FORMAT,SCHEMA,CONFLICT_KEY,modules,collect,validate,storageSnapshot,parseValue,plan,apply,previewClear,applyClear};
+ return {FORMAT,SCHEMA,CONFLICT_KEY,modules,collect,validate,storageSnapshot,parseValue,plan,apply,listStudy30Conflicts,planStudy30ConflictRestore,previewClear,applyClear};
 });
