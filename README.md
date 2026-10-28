@@ -130,3 +130,13 @@ npm run build   # 產物在 juvenile-news/source/docs/，確認後再複製到 j
 ---
 
 維護者：[LeoKYChen](https://github.com/LeoKYChen) · [儲存庫](https://github.com/LeoKYChen/probation-study-desk) · **文件更新：2026-10-28**
+
+
+## 每日30分鐘跨裝置同步（開發分支，尚未上線）
+
+- 階段一：手動完整 JSON 備份安全合併，不覆寫既有答案。
+- 階段二：統一匯入入口、歷史衝突版本比較與復原、同日申論獨立版本。
+- 階段三：Google Drive 選擇性 OAuth `drive.file` 私人同步，雲端採不可變快照及本機優先合併；**尚須使用者自己的 Google Cloud OAuth Client ID 和實際 Google Drive 授權後才可驗收**。
+- 正式版本不受草稿 PR 影響；沿用原本的 JSON 手動匯出／匯入。
+
+部署限制、授權設定與測試清單請參考 [第三階段 Google Drive 同步說明](docs/STUDY30_GOOGLE_DRIVE_STAGE3_20261028.md) 及 [三階段規劃](docs/STUDY30_CROSS_DEVICE_SYNC_PHASES_20261028.md)。
