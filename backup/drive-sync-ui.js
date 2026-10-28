@@ -4,7 +4,7 @@
  const $=id=>document.getElementById(id);
  const core=window.PSDUnifiedBackup,syncCore=window.PSDDriveSyncCore,drive=window.PSDDriveTransport;
  if(!core||!syncCore||!drive)return;
- const CID='psd-drive-oauth-client-id-v1',AUTO='psd-drive-auto-enabled-v1',DEVICE='psd-drive-device-v1';
+ const CID='psd-drive-oauth-client-id-v1',AUTO='psd-drive-auto-enabled-v1',DEVICE='psd-drive-device-v1',FOLDER_ID='psd-drive-folder-pin-v1';
  const SCOPE='https://www.googleapis.com/auth/drive.file',INTERVAL=5*60*1000;
  let token='',expiresAt=0,engine=null,busy=false,lastSync=0,tokenClient=null,tokenClientId='';
  const uuid=()=>window.crypto&&window.crypto.randomUUID?window.crypto.randomUUID():
@@ -25,9 +25,16 @@
   $('driveClientId').disabled=busy;
   $('driveAutoSync').disabled=!hasToken()||busy;
  }
- function identifierValid(value){return /^[0-9]+-[a-zA-Z0-9_-]+\\.apps\\.googleusercontent\\.com$/.test(value);}
+ function identifierValid(value){return /^[0-9]+-[a-zA-Z0-9_-]+\.apps\.googleusercontent\.com$/.test(value);}
  function makeEngine(){
-  const transport=drive.create({getToken:()=>hasToken()?token:'',createId:uuid});
+  const original=drive.create({getToken:()=>hasToken()?token:'',createId:uuid});
+  const transport={...original,ensureFolder:async()=>{
+   const id=await original.ensureFolder();
+   const pinned=localStorage.getItem(FOLDER_ID);
+   if(pinned&&pinned!==id)throw Error('偵測到不同的 Google 帳號或 OAuth 應用程式；同步資料夾與此裝置以前不同。為避免資料分流，已停止同步。');
+   if(!pinned)localStorage.setItem(FOLDER_ID,id);
+   return id;
+  }};
   return syncCore.createEngine({core,storage:localStorage,transport,origin:location.origin,
    deviceId:device(),newId:uuid});
  }
