@@ -2,8 +2,8 @@
 (function(root,factory){
  'use strict';
  const api=factory();
+ root.PSDDriveTransport=api;
  if(typeof module!=='undefined'&&module.exports)module.exports=api;
- else root.PSDDriveTransport=api;
 })(typeof window!=='undefined'?window:globalThis,function(){
  'use strict';
  const BASE='https://www.googleapis.com/drive/v3/files';
