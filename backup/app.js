@@ -92,7 +92,7 @@
    ' 只顯示有實際學習內容或已建立的函授課程；完整 JSON 仍保留舊版資料、設定與尚未開始的工作階段。';
  }
 
- let studyRestoreBackupRequested=false;
+ let studyRestoreBackupRequested=false,studyRestoreBackupSnapshot=null;
  function studyVersionPreview(row){
   if(!row)return '目前主要紀錄不存在';
   const data={date:row.date,questionId:row.questionId||'',elapsed:row.elapsed||0,
@@ -137,11 +137,15 @@
    tell('請先下載完整保護備份，確認檔案確實保存、並關閉其他編輯分頁。',true);return;
   }
   try{
-   const plan=core.planStudy30ConflictRestore(current(),index,side);
+   const now=current();
+   const keys=new Set([...Object.keys(now),...Object.keys(studyRestoreBackupSnapshot||{})]);
+   if(!studyRestoreBackupSnapshot||[...keys].some(k=>now[k]!==studyRestoreBackupSnapshot[k]))
+    throw Error('下載保護備份後，另一分頁或此頁有更新；請重新下載最新保護備份。');
+   const plan=core.planStudy30ConflictRestore(now,index,side);
    if(!plan.changed){tell('所選版本已經是主要紀錄，無需復原。');return;}
    if(!window.confirm('確認將 '+plan.date+' 的選定版本設為主要紀錄？原本主要版本會保留在衝突歷史；請確認備份檔已存在。'))return;
    core.apply(localStorage,plan);
-   studyRestoreBackupRequested=false;$('study30ConflictConfirmed').checked=false;
+   studyRestoreBackupRequested=false;studyRestoreBackupSnapshot=null;$('study30ConflictConfirmed').checked=false;
    refresh();tell('已復原 '+plan.date+' 的選定版本；原主要版本保留在衝突紀錄。請重新整理練習頁後確認。');
   }catch(e){tell('復原未完成：'+e.message,true);}
  }
@@ -245,11 +249,12 @@
  });
  $('study30ConflictBackup').addEventListener('click',()=>{
   try{
-   download(core.collect(localStorage,location.origin),'觀護人學習平台-版本復原前備份-'+stamp()+'.json');
-   studyRestoreBackupRequested=true;
+   const backup=core.collect(localStorage,location.origin);
+   download(backup,'觀護人學習平台-版本復原前備份-'+stamp()+'.json');
+   studyRestoreBackupSnapshot=backup.data;studyRestoreBackupRequested=true;
    renderStudy30Conflicts();
    tell('已要求下載保護備份。請確認檔案已保存，才能選擇復原版本。');
-  }catch(e){studyRestoreBackupRequested=false;tell('無法下載保護備份，已阻止復原：'+e.message,true);}
+  }catch(e){studyRestoreBackupRequested=false;studyRestoreBackupSnapshot=null;tell('無法下載保護備份，已阻止復原：'+e.message,true);}
  });
  $('study30ConflictConfirmed').addEventListener('change',renderStudy30Conflicts);
  $('downloadConflicts').addEventListener('click',()=>{
