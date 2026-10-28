@@ -278,6 +278,7 @@
     if(!window.confirm(message))return;
     pause();
     try{
+      if(localStorage.getItem(KEY)!==lastStoredRaw)throw Error('另一個分頁已更新紀錄，不能以舊版清除');
       if(scope==='all'){
         // Deleting only our namespaced key avoids changing any existing v2.5 data.
         localStorage.removeItem(KEY);
