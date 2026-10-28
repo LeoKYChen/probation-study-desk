@@ -7,6 +7,7 @@
   <meta name="description" content="116年觀護人考試，每日30分鐘：主動回想、考古題練習、申論架構、錯題整理。">
   <title>每日30分鐘｜觀護人練習臺 v2.5.4 離線練習版</title>
   <link rel="stylesheet" href="./style.css">
+  <style>.essay-version-history{padding:12px 0}.essay-version-history #essayVersionList details{margin:8px 0;padding:8px;border:1px solid #b9cad2;border-radius:9px}.essay-version-history #essayVersionList pre{font-size:12px;white-space:pre-wrap}</style>
   <script src="./source-main-questions.js" defer></script>
   <script src="./source-related-questions.js" defer></script>
   <script src="../police-exams/questions.approved.js" defer></script>
@@ -27,6 +28,7 @@
   <script src="../backup/unified-core.js" defer></script>
   <script src="./backup-import.js" defer></script>
   <script src="./daily-essay-workbench.js" defer></script>
+  <script src="./essay-version-history.js" defer></script>
   <script src="./practice-diagnostics.js" defer></script>
   <script src="./study30-shuati-links.js" defer></script>
   <script src="./study30-yamol-links.js" defer></script>
@@ -136,6 +138,14 @@
           <div class="essay-full-answer"><label for="essayFullAnswer">完整申論答案（選填，可將架構整理成連貫文字）</label><textarea id="essayFullAnswer" rows="10" placeholder="在此將上方的重點寫成正式申論答案。未寫完也會自動保存。"></textarea></div>
           <div class="essay-bottom"><div class="essay-save-status" id="essaySaveStatus" role="status" aria-live="polite">等待載入草稿…</div><span id="essayCharCount" class="tiny muted">0 字元</span></div>
           <div class="essay-actions"><button id="essayExport" type="button" class="secondary">匯出本題申論 Markdown</button></div>
+<section class="essay-version-history" aria-label="本日多次申論版本">
+<p class="muted tiny">同一天可以為同一題建立多份獨立申論版本，不影響原本30分鐘任務及計時。</p>
+<button id="saveEssayVersion" type="button" class="secondary">保存本次申論為獨立版本</button>
+<span id="essayVersionCount" class="muted tiny"></span>
+<p id="essayVersionStatus" class="muted tiny" role="status" aria-live="polite"></p>
+<details class="learning-details"><summary>查看／恢復本日申論歷史版本</summary>
+<div id="essayVersionList"></div></details>
+</section>
 <section id="daily30AiPanel" class="daily30-ai" aria-label="AI批改文字">
 <label for="daily30AiMode"><strong>批改方式</strong></label>
 <select id="daily30AiMode" style="display:block;width:100%;max-width:100%;min-width:0;box-sizing:border-box;" aria-label="選擇 AI 批改方式"><option value="full">完整申論批改</option><option value="direction">答題方向批改（四格草稿／大綱）</option></select>
