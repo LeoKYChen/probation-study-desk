@@ -160,11 +160,13 @@
   const empty=v=>v===undefined||v===null||v===''||
    (Array.isArray(v)&&v.every(empty))||(isObj(v)&&Object.keys(v).length===0);
   const pick=(a,b)=>{
-   if(equal(a,b))return copy(a);
-   if(empty(a)&&!empty(b))return copy(b);
-   if(empty(b))return copy(a);
-   if(remoteWins)return copy(b);
-   diverged=true;return copy(a);
+   const clone=x=>x===undefined?undefined:copy(x);
+   if(equal(a,b))return clone(a);
+   if(empty(a)&&empty(b))return clone(a===undefined?b:a);
+   if(empty(a))return clone(b);
+   if(empty(b))return clone(a);
+   if(remoteWins)return clone(b);
+   diverged=true;return clone(a);
   };
   const arrayMerge=(a,b)=>Array.from({length:Math.max(a?.length||0,b?.length||0)},(_,i)=>pick(a?.[i],b?.[i]));
   const objectMerge=(a,b,field)=>{
