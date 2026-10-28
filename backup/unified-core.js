@@ -152,8 +152,12 @@
   if(left&&!right)return copy(existing);
   const li=existing._sync||{},ri=incoming._sync||{};
   const inChain=ref=>typeof ref==='string'&&ref.length>0;
-  const remoteDesc=inChain(li.revision)&&Array.isArray(ri.ancestors)&&ri.ancestors.includes(li.revision);
-  const localDesc=inChain(ri.revision)&&Array.isArray(li.ancestors)&&li.ancestors.includes(ri.revision);
+  const sameBranch=inChain(li.branchId)&&li.branchId===ri.branchId&&
+   Number.isSafeInteger(li.seq)&&Number.isSafeInteger(ri.seq);
+  const remoteDesc=(sameBranch&&ri.seq>li.seq)||
+   (inChain(li.revision)&&Array.isArray(ri.ancestors)&&ri.ancestors.includes(li.revision));
+  const localDesc=(sameBranch&&li.seq>ri.seq)||
+   (inChain(ri.revision)&&Array.isArray(li.ancestors)&&li.ancestors.includes(ri.revision));
   if(localDesc&&!remoteDesc)return copy(existing);
   const remoteWins=remoteDesc&&!localDesc;
   let diverged=false;
