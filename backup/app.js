@@ -144,6 +144,10 @@
    }
   }catch(e){$('study30ConflictSummary').textContent='無法檢查衝突版本：'+e.message;}
  }
+ function updateStudyRestoreButtons(){
+  for(const b of document.querySelectorAll('#study30ConflictList button.restoreStudy30'))
+   b.disabled=!studyRestoreBackupRequested||!$('study30ConflictConfirmed').checked;
+ }
  function restoreStudy30(index,side){
   if(!studyRestoreBackupRequested||!$('study30ConflictConfirmed').checked){
    tell('請先下載完整保護備份，確認檔案確實保存、並關閉其他編輯分頁。',true);return;
@@ -264,11 +268,11 @@
    const backup=core.collect(localStorage,location.origin);
    download(backup,'觀護人學習平台-版本復原前備份-'+stamp()+'.json');
    studyRestoreBackupSnapshot=backup.data;studyRestoreBackupRequested=true;
-   renderStudy30Conflicts();
+   updateStudyRestoreButtons();
    tell('已要求下載保護備份。請確認檔案已保存，才能選擇復原版本。');
   }catch(e){studyRestoreBackupRequested=false;studyRestoreBackupSnapshot=null;tell('無法下載保護備份，已阻止復原：'+e.message,true);}
  });
- $('study30ConflictConfirmed').addEventListener('change',renderStudy30Conflicts);
+ $('study30ConflictConfirmed').addEventListener('change',updateStudyRestoreButtons);
  $('downloadConflicts').addEventListener('click',()=>{
   try{
    const raw=localStorage.getItem(core.CONFLICT_KEY);
