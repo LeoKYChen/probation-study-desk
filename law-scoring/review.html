@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>失分統計與回想卡｜觀護人練習臺</title><meta name="description" content="彙整申論評分參考的自評勾選，看出最常失分的類型；沒勾到的得分點自動變成間隔複習的回想卡。"><link rel="stylesheet" href="../shared-ui.css"><link rel="stylesheet" href="style.css"><script src="data.js" defer></script><script src="app.js" defer></script><script src="review.js" defer></script><link rel="manifest" href="../manifest.webmanifest"><meta name="theme-color" content="#315b7c"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="../pwa/icon-180.png"><link rel="stylesheet" href="../offline.css"><script src="../offline.js" defer></script><link rel="stylesheet" href="../assets/study-theme.css">
+</head>
+<body>
+<header class="study-header"><div class="study-header-inner"><a class="study-brand" href="../v2.5/"><span class="study-brand-mark" aria-hidden="true">觀</span>觀護人練習臺</a><span class="study-test-label">失分統計與回想卡</span><nav aria-label="主要導覽"><a href="../v2.5/">考古題練習</a><a href="./">申論評分參考</a><a href="review.html" aria-current="page">失分回想卡</a></nav></div></header>
+<main>
+<div class="wrap" id="review-root">
+  <div class="top">
+    <div>
+      <p class="kicker">申論評分參考・已自評 <span id="graded-count">0</span> 題</p>
+      <h1>失分統計與回想卡</h1>
+      <p class="lede">彙整你在申論評分參考的勾選：看出最常丟分的類型，沒勾到的得分點會自動變成回想卡，依間隔複習（1、3、7、14、30 天）。這裡只讀取你的勾選，不會更動評分頁的紀錄。</p>
+    </div>
+    <span class="badge-test">學習用・非官方評分</span>
+  </div>
+
+  <section class="sheet" id="empty" hidden style="margin-top:16px">
+    <h2>還沒有自評紀錄</h2>
+    <p>到<a href="./">申論評分參考</a>寫一題、展開評分要點並逐列勾選。沒勾到的得分點會自動出現在這裡。</p>
+  </section>
+
+  <div class="grid">
+    <div class="main">
+      <section class="sheet recall-card" aria-labelledby="deck-heading">
+        <div class="deck-head">
+          <div><h2 id="deck-heading">今天的回想卡</h2><p class="small muted" id="deck-summary" style="margin:4px 0 0"></p></div>
+          <label for="deck-filter">只複習<select id="deck-filter"></select></label>
+        </div>
+        <div id="card" hidden class="recall-card">
+          <p class="kicker" id="card-meta"></p>
+          <h3 id="card-title" tabindex="-1" style="margin:0"></h3>
+          <p style="margin:0"><strong id="card-group"></strong></p>
+          <p class="missed" id="card-missed"></p>
+          <p class="small muted" id="card-changed" hidden style="margin:0">這一列的評分要點已更新，請以下方新內容為準。</p>
+          <label for="card-answer" class="small muted">先不看答案，寫出這一點的要點與法條或出處（不會保存）。</label>
+          <textarea id="card-answer" maxlength="4000" style="min-height:120px"></textarea>
+          <div class="row-actions" style="justify-content:flex-start"><button class="btn primary" id="reveal" type="button">對照評分要點</button></div>
+          <div class="recall-back" id="card-back" hidden>
+            <p><strong id="back-point" tabindex="-1"></strong></p>
+            <p class="detail" id="back-detail"></p>
+            <p class="small"><span id="back-src-label"></span><span id="back-articles"></span></p>
+            <p class="tag" id="back-dispute" hidden>學說實務爭議・需寫各說與個人見解</p>
+            <p class="dev-note" id="back-note" hidden></p>
+            <p class="small muted">我剛才寫出來了嗎？</p>
+            <div class="rate-actions">
+              <button class="btn primary" type="button" data-rate="good">想起來了</button>
+              <button class="btn ghost" type="button" data-rate="partial">只想起一部分</button>
+              <button class="btn danger" type="button" data-rate="again">沒想起來</button>
+            </div>
+            <a class="btn" id="rewrite" href="./">回原題整題重寫 →</a>
+          </div>
+        </div>
+        <p id="done" hidden>今天到期的卡片都複習完了。也可以回<a href="./">申論評分參考</a>多寫一題。</p>
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+      </section>
+    </div>
+
+    <aside class="side" id="stats" hidden aria-label="失分統計">
+      <section class="sheet">
+        <p class="kicker">失分類型（全部已自評題目）</p>
+        <div class="bars" id="cat-bars"></div>
+        <p class="small" id="worst" style="margin:12px 0 0"></p>
+        <p class="small muted" style="margin:8px 0 0">比例＝沒勾的格數÷應勾的格數，不含加分欄。案例題的「不同見解」只計有爭議的列。</p>
+      </section>
+    </aside>
+  </div>
+
+  <section class="sheet" id="subj-section" style="margin-top:20px" aria-labelledby="subj-heading">
+    <h2 id="subj-heading">各科失分</h2>
+    <div class="table-scroll"><table class="stat-table"><thead><tr><th scope="col">類科／科目</th><th scope="col">已自評</th><th scope="col">平均自評</th><th scope="col">最常失分</th></tr></thead><tbody id="subject-rows"></tbody></table></div>
+  </section>
+</div>
+</main>
+</body>
+</html>
