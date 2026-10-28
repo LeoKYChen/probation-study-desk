@@ -157,7 +157,7 @@
    const keys=new Set([...Object.keys(now),...Object.keys(studyRestoreBackupSnapshot||{})]);
    if(!studyRestoreBackupSnapshot||[...keys].some(k=>now[k]!==studyRestoreBackupSnapshot[k]))
     throw Error('下載保護備份後，另一分頁或此頁有更新；請重新下載最新保護備份。');
-   const plan=core.planStudy30ConflictRestore(now,index,side);
+   const plan=core.planStudy30ConflictRestore(now,index,side,window.crypto?.randomUUID?.());
    if(!plan.changed){tell('所選版本已經是主要紀錄，無需復原。');return;}
    if(!window.confirm('確認將 '+plan.date+' 的選定版本設為主要紀錄？原本主要版本會保留在衝突歷史；請確認備份檔已存在。'))return;
    core.apply(localStorage,plan);
