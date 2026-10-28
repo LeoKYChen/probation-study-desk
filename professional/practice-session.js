@@ -55,7 +55,12 @@
     const device=getDeviceId();
     const ancestry=Array.isArray(prev.ancestors)?prev.ancestors.filter(x=>typeof x==='string'):[];
     if(prev.revision&&prev.device!==device&&!ancestry.includes(prev.revision))ancestry.push(prev.revision);
-    session._sync={revision:identifier(),device,ancestors:ancestry.slice(-400)};
+    // Revisions within one editing branch can be compared by monotonic sequence,
+    // so the per-keystroke history does not need to grow indefinitely.
+    const sameBranch=prev.device===device&&typeof prev.branchId==='string'&&prev.branchId;
+    const branchId=sameBranch?prev.branchId:identifier();
+    const seq=sameBranch&&Number.isSafeInteger(prev.seq)&&prev.seq>=0?prev.seq+1:1;
+    session._sync={revision:identifier(),device,branchId,seq,ancestors:ancestry.slice(-400)};
   }
   function load(){try{const raw=localStorage.getItem(KEY);lastStoredRaw=raw;if(raw){const parsed=JSON.parse(raw);if(parsed?.version===1&&parsed.sessions&&typeof parsed.sessions==='object'&&!Array.isArray(parsed.sessions))store=parsed;else throw Error('版本不符');}}catch(e){canSave=false;say('無法讀取30分鐘紀錄，未覆寫原資料。本次可練習，但離開前務必匯出備份。');}}
   function persist(){
