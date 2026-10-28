@@ -60,7 +60,8 @@ module.exports=async function(browser,origin){
   await page.evaluate(()=>{
    localStorage.setItem('probation-study30-v251:v1',JSON.stringify({version:1,sessions:{
     '2026-10-28':{date:'2026-10-28',notes:['Merton 假資料'],elapsed:0,
-      essayDrafts:{Q:{outline:['Merton','Agnew','',''],fullAnswer:'純測試文字'}}}
+      essayDrafts:{Q:{outline:['Merton','Agnew','',''],fullAnswer:'純測試文字'}},
+      _sync:{revision:'synthetic-seed',device:'seed',ancestors:[]}}
    }}));
   });
   await page.reload();
@@ -77,7 +78,37 @@ module.exports=async function(browser,origin){
   await page.waitForFunction(()=>document.querySelector('#driveSyncStatus')?.textContent.includes('未產生新快照'));
   assert.equal(await page.evaluate(()=>window.__mockDriveFiles.length),1,
    'repeated unchanged sync should not append another snapshot');
+  // Regression: an independent sibling A stored remotely and local sibling B
+  // must become a visible conflict in the SAME open backup tab after sync.
+  await page.evaluate(()=>{
+   const key='probation-study30-v251:v1',files=window.__mockDriveFiles;
+   const a=JSON.parse(files[0].snapshot.backup.data[key]);
+   const day='2026-10-28';
+   a.sessions[day].notes=['【手機版A】Merton'];
+   a.sessions[day].essayDrafts.Q.outline[0]='【手機版A】緊張理論';
+   a.sessions[day]._sync={revision:'synthetic-A',device:'A',ancestors:['synthetic-seed']};
+   const cloud=JSON.parse(JSON.stringify(files[0].snapshot));
+   cloud.id='cloud-A';cloud.createdAt=new Date(Date.now()+1000).toISOString();
+   cloud.backup.data[key]=JSON.stringify(a);
+   files.push({id:'fakefile_87654321',name:'psd-sync-v1-A.json',
+    createdTime:cloud.createdAt,snapshot:cloud});
+   const b=JSON.parse(localStorage.getItem(key));
+   b.sessions[day].notes=['【電腦版B】Agnew'];
+   b.sessions[day].essayDrafts.Q.outline[0]='【電腦版B】一般化緊張理論';
+   b.sessions[day]._sync={revision:'synthetic-B',device:'B',ancestors:['synthetic-seed']};
+   localStorage.setItem(key,JSON.stringify(b));
+  });
+  assert.match(await page.locator('#study30ConflictSummary').textContent(),/目前沒有/,
+   'test precondition: conflict list is stale before sync');
+  await page.locator('#driveSyncNow').click();
+  await page.waitForFunction(()=>document.querySelector('#driveSyncStatus')?.textContent.includes('雲端已完成本次傳輸'));
+  await page.waitForFunction(()=>/找到 [1-9]/.test(document.querySelector('#study30ConflictSummary')?.textContent||''));
+  const conflicts=await page.locator('#study30ConflictList').textContent();
+  assert.match(conflicts,/2026-10-28/);
+  const archive=await page.evaluate(()=>localStorage.getItem('psd-unified-backup-conflicts-v1'));
+  assert.match(archive,/手機版A/);
+  assert.match(archive,/電腦版B/);
   assert.deepEqual(errors,[],'no uncaught errors during mocked Google Drive OAuth');
-  console.log('PASS browser Drive UX: mock OAuth, private snapshot, repeat sync, no token leakage');
+  console.log('PASS browser Drive UX: OAuth, append-only sync, sibling A/B conflicts displayed live, no token leakage');
  }finally{await ctx.close();}
 };
