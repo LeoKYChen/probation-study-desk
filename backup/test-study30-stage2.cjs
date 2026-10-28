@@ -47,6 +47,12 @@ core.apply(storage,selection);
 assert.equal(JSON.parse(memory.get(KEY)).sessions[DAY].essayDrafts.Q.fullAnswer,'另一說');
 assert.throws(()=>core.apply(storage,selection),/預覽後已有更新/);
 assert.throws(()=>core.planStudy30ConflictRestore(initial,999,'incoming'),/找不到/);
+// A later save on the same editing branch is a descendant even after many keystrokes.
+const morningBranch={...phone,_sync:{revision:'a',device:'office',branchId:'office-branch',seq:7,ancestors:[]}};
+const laterBranch={...office,_sync:{revision:'b',device:'office',branchId:'office-branch',seq:875,ancestors:[]}};
+const branchPlan=core.plan({[KEY]:wrap({[DAY]:morningBranch})},backup({[DAY]:laterBranch}));
+assert.equal(JSON.parse(branchPlan.changes[KEY]).sessions[DAY].essayDrafts.Q.fullAnswer,'中午補充');
+assert.equal(branchPlan.conflicts.length,0);
 // Independent attempts with distinct ids survive merges without double-counting timer.
 const one={...phone,elapsed:200,essayVersions:{'attempt-1':{questionId:'Q',savedAt:'2026-10-28T07:30:00Z',
  draft:{outline:['Merton'],fullAnswer:'早上'}}}};
