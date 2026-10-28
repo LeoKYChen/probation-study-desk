@@ -342,6 +342,45 @@
     persist();renderControls();
     return canSave;
   }
+  // A new version is an explicit attempt snapshot, distinct from the current working draft.
+  function getEssayVersions(){
+    const ctx=essayContext();
+    if(!ctx)return [];
+    return Object.entries(session.essayVersions||{}).filter(([,v])=>v?.questionId===ctx.questionId)
+      .map(([id,v])=>({id,questionId:v.questionId,savedAt:v.savedAt,draft:structuredClone(v.draft)}))
+      .sort((a,b)=>b.savedAt.localeCompare(a.savedAt));
+  }
+  function saveEssayVersion(){
+    const ctx=essayContext();
+    if(!ctx||!canSave||!ctx.draft)return false;
+    const draft=ctx.draft;
+    if(!draft.fullAnswer.trim()&&!draft.outline.some(x=>x.trim()))return false;
+    const existing=session.essayVersions&&typeof session.essayVersions==='object'?session.essayVersions:{};
+    if(Object.keys(existing).length>=120)return false;
+    const oldVersions=session.essayVersions,oldUpdated=session.updatedAt;
+    const id=identifier(),at=new Date().toISOString();
+    session.essayVersions={...existing,[id]:{questionId:ctx.questionId,subject:ctx.subject,
+      questionHeading:ctx.questionHeading,savedAt:at,draft:structuredClone(draft)}};
+    session.updatedAt=at;persist();
+    if(!canSave){session.essayVersions=oldVersions;session.updatedAt=oldUpdated;return false;}
+    window.dispatchEvent(new CustomEvent('study30:essay-version'));
+    return true;
+  }
+  function restoreEssayVersion(id){
+    const ctx=essayContext(),item=session?.essayVersions?.[id];
+    if(!ctx||!canSave||!item||item.questionId!==ctx.questionId)return false;
+    if(!saveEssayVersion())return false; // Save current work first.
+    const oldDraft=session.essayDrafts?.[ctx.questionId],oldUpdated=session.updatedAt;
+    session.essayDrafts={...session.essayDrafts,[ctx.questionId]:{
+      template:item.draft.template||'theory',
+      outline:Array.isArray(item.draft.outline)?item.draft.outline.slice(0,4):['','','',''],
+      fullAnswer:String(item.draft.fullAnswer||''),updatedAt:new Date().toISOString()}};
+    session.updatedAt=new Date().toISOString();persist();
+    if(!canSave){session.essayDrafts[ctx.questionId]=oldDraft;session.updatedAt=oldUpdated;return false;}
+    window.dispatchEvent(new CustomEvent('study30:render'));
+    window.dispatchEvent(new CustomEvent('study30:essay-version'));
+    return true;
+  }
   // Rubric records are stored under the same day's study30 session.
   // This preserves all historical JSON backup behaviour and keeps v2.5 untouched.
   function essayAssessmentContext(){
@@ -396,7 +435,7 @@ function readAiReview(id) {
   return '';
 }
 function currentDailyQuestion(){return currentQuestion();}
-window.Study30App={essayContext,saveEssay,saveEssayManualQuestion,essayAssessmentContext,saveEssayAssessment,getEssayReviewData,openEssayReview,prepareBackupRestore,saveAiReview,readAiReview,currentDailyQuestion};
+window.Study30App={getEssayVersions,saveEssayVersion,restoreEssayVersion,essayContext,saveEssay,saveEssayManualQuestion,essayAssessmentContext,saveEssayAssessment,getEssayReviewData,openEssayReview,prepareBackupRestore,saveAiReview,readAiReview,currentDailyQuestion};
   window.Study30Planner={isoTaipei,subjectFor,durations,normalSubject,candidateSubject,hash};
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
 })();
