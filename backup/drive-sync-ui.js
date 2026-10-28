@@ -78,6 +78,9 @@
    const result=await engine.sync(message=>status(message,'pending'));
    lastSync=Date.now();
    lastSyncedSignature=syncCore.stateSignature(core.storageSnapshot(localStorage));
+   // Same-document localStorage updates do not emit a storage event.
+   // Notify the backup/conflict UI after a successful merge so results are never stale.
+   window.dispatchEvent(new CustomEvent('psd:drive-sync-finished',{detail:result}));
    const when=new Date(lastSync).toLocaleString('zh-TW',{timeZone:'Asia/Taipei'});
    status('雲端已完成本次傳輸｜'+when+'｜讀取 '+result.remoteSnapshots+
     ' 份快照'+(result.uploaded?'，新增安全快照':'，未產生新快照')+
