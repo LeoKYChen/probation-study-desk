@@ -16,6 +16,7 @@ const NODE=[
   'backup/test.cjs',
   'backup/test-study30-roundtrip.cjs',
   'backup/test-study30-stage2.cjs',
+  'backup/test-drive-sync.cjs',
   'print/test.cjs',
   'common-subjects/test-v02.cjs',
   'common-subjects/test-staresto.cjs',
