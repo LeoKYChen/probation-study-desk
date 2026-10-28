@@ -100,7 +100,6 @@ function render(){
 function syncCount(){
   const n=$('answer').value.trim().length;
   $('count').textContent=n+' 字';
-  $('unlock').disabled=n<50&&!safeUrl($('answer-url').value);
 }
 
 function syncUrl(){
@@ -214,8 +213,16 @@ $('copy-dev').addEventListener('click',()=>{
   copy(JSON.stringify(out,null,2),'已複製開發者修改，可以貼給 Claude 或存成檔案。');
 });
 $('reset').onclick=resetPrompt;
-function mkReset(){ const b=el('button',{class:'btn danger',type:'button',id:'reset'},'清除本題勾選'); b.onclick=resetPrompt; return b; }
-function resetPrompt(){ const area=$('reset-area'); area.textContent=''; area.appendChild(el('span',null,'確定清除本題勾選？作答與開發者補充會保留。')); const yes=el('button',{class:'btn danger',type:'button'},'清除'), no=el('button',{class:'btn ghost',type:'button'},'取消'); yes.onclick=()=>{ const s=st(current); s.checks={}; s.organize={}; persist(); area.textContent=''; area.appendChild(mkReset()); render(); say('已清除本題勾選。'); }; no.onclick=()=>{ area.textContent=''; area.appendChild(mkReset()); }; area.appendChild(yes); area.appendChild(no); }
+function mkReset(){ const b=el('button',{class:'btn danger',type:'button',id:'reset'},'清除本題紀錄'); b.onclick=resetPrompt; return b; }
+function resetPrompt(){
+  const area=$('reset-area'), back=()=>{ area.textContent=''; area.appendChild(mkReset()); };
+  area.textContent=''; area.appendChild(el('span',null,'要清除哪些紀錄？開發者補充與核定都會保留。'));
+  const checks=el('button',{class:'btn danger',type:'button'},'只清勾選'), all=el('button',{class:'btn danger',type:'button'},'作答、網址與勾選全部清除'), no=el('button',{class:'btn ghost',type:'button'},'取消');
+  checks.onclick=()=>{ const s=st(current); s.checks={}; s.organize={}; persist(); back(); render(); say('已清除本題勾選。'); };
+  // 回到未作答狀態：失分統計與回想卡不再計入這題（已複習過的回想卡另在回想卡頁清除）。
+  all.onclick=()=>{ const s=st(current); Object.assign(s,{answer:'',answerUrl:'',unlocked:false,checks:{},organize:{}}); persist(); back(); render(); say('已清除本題的作答與勾選。'); };
+  no.onclick=back; area.appendChild(checks); area.appendChild(all); area.appendChild(no);
+}
 
 render();
 })();

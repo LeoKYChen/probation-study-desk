@@ -19,8 +19,20 @@ function requiredCols(q, row) {
 }
 function missedCols(q, s, i) { const c = (s.checks && s.checks[i]) || {}; return requiredCols(q, q.rows[i]).filter(k => !c[k]); }
 
-// 已展開評分要點的題目才算「已自評」。
-function graded(store) { return DATA.questions.filter(q => store[q.id] && store[q.id].unlocked).map(q => [q, store[q.id]]); }
+// 已展開評分要點，且有作答、作答網址或至少一個勾選，才算「已自評」；只展開偷看的題目不計入。
+function isGraded(s) {
+  if (!s || !s.unlocked) return false;
+  const ticked = o => o && Object.values(o).some(v => v === true || (v && typeof v === 'object' && Object.values(v).some(Boolean)));
+  return !!(String(s.answer || '').trim() || String(s.answerUrl || '').trim() || ticked(s.checks) || ticked(s.organize));
+}
+function graded(store) { return DATA.questions.filter(q => isGraded(store[q.id])).map(q => [q, store[q.id]]); }
+// 清除某題：自評紀錄回到未作答（保留開發者補充與核定），並刪掉這題的全部回想卡。
+function clearQuestion(store, cards, qid) {
+  const s = Object.assign({}, store), c = {};
+  if (s[qid]) s[qid] = Object.assign({}, s[qid], {answer:'', answerUrl:'', unlocked:false, checks:{}, organize:{}});
+  for (const id of Object.keys(cards)) if (id.split('#')[0] !== qid) c[id] = cards[id];
+  return {store:s, cards:c};
+}
 
 function stats(store) {
   const total = Object.fromEntries(CATS.map(([k]) => [k, {miss:0, all:0}]));
@@ -65,7 +77,7 @@ function dueCards(cards, today, filter) {
   return Object.entries(cards).filter(([id, c]) => { const q = BY_ID.get(id.split('#')[0]); return !c.mastered && c.due <= today && q && q.rows[+id.split('#')[1]] && (!filter || filter(q)); }).sort((a, b) => a[1].due.localeCompare(b[1].due) || a[0].localeCompare(b[0]));
 }
 
-window.LawScoringReview = {stats, syncCards, rate, dueCards, INTERVALS, CATS};
+window.LawScoringReview = {stats, syncCards, rate, dueCards, clearQuestion, isGraded, INTERVALS, CATS};
 if (typeof document === 'undefined' || !document.getElementById('review-root')) return;
 
 const $ = id => document.getElementById(id);
@@ -74,7 +86,7 @@ function readJSON(key) { try { return JSON.parse(localStorage.getItem(key)) || {
 let saveOk = true;
 function persist() { try { localStorage.setItem(CARD_KEY, JSON.stringify(cards)); } catch (e) { saveOk = false; $('status').textContent = '目前瀏覽器無法保存回想卡進度。'; } }
 const today = dayStr(new Date());
-const store = readJSON(SCORE_KEY);
+let store = readJSON(SCORE_KEY);
 let cards = syncCards(store, readJSON(CARD_KEY), today);
 persist();
 let filterKey = '', current = null;
@@ -138,7 +150,37 @@ function renderDeck() {
   $('rewrite').href = './#' + encodeURIComponent(q.id);
 }
 
-function render() { renderStats(); renderFilter(); renderDeck(); }
+function saveStore() { try { localStorage.setItem(SCORE_KEY, JSON.stringify(store)); return true; } catch (e) { $('status').textContent = '目前瀏覽器無法保存，紀錄沒有清除。'; return false; } }
+// 清除前一律二次確認；評分頁其他題目、開發者補充與核定都不受影響。
+function confirmIn(area, text, onYes) {
+  area.textContent = '';
+  const yes = el('button', {class:'btn danger', type:'button'}, '確定清除'), no = el('button', {class:'btn ghost', type:'button'}, '取消');
+  area.appendChild(el('span', null, text)); area.appendChild(yes); area.appendChild(no);
+  no.onclick = () => renderManage(); yes.onclick = onYes; yes.focus();
+}
+function renderManage() {
+  const list = graded(store), host = $('manage-rows');
+  $('manage').hidden = !list.length && !Object.keys(cards).length;
+  host.textContent = '';
+  list.forEach(([q]) => {
+    const li = el('li', {class:'manage-row'}), info = el('div');
+    const a = el('a', {href:'./#' + encodeURIComponent(q.id)}, q.year + ' 年第 ' + q.no + ' 題：' + q.title);
+    info.appendChild(el('span', {class:'small muted'}, q.examType + '／' + q.subject + '・回想卡 ' + Object.keys(cards).filter(id => id.split('#')[0] === q.id).length + ' 張'));
+    info.appendChild(a); li.appendChild(info);
+    const area = el('div', {class:'confirm'}), b = el('button', {class:'btn danger', type:'button'}, '清除這題');
+    b.onclick = () => confirmIn(area, '清除這題的作答、勾選與回想卡？', () => { const r = clearQuestion(store, cards, q.id); const prev = store; store = r.store; if (!saveStore()) { store = prev; return; } cards = r.cards; persist(); $('status').textContent = '已清除：' + q.title; render(); });
+    area.appendChild(b); li.appendChild(area); host.appendChild(li);
+  });
+  const all = $('clear-all-area'); all.textContent = '';
+  const b = el('button', {class:'btn danger', type:'button'}, '清除全部自評與回想卡');
+  b.onclick = () => confirmIn(all, '全部清除後無法復原，建議先到「完整備份」匯出。確定清除？', () => {
+    // 包含只展開偷看、未列入統計的題目。
+    let s = store, c = cards; for (const q of DATA.questions) if (store[q.id]) { const r = clearQuestion(s, c, q.id); s = r.store; c = r.cards; }
+    const prev = store; store = s; if (!saveStore()) { store = prev; return; } cards = {}; persist(); $('status').textContent = '已清除全部自評與回想卡。'; render();
+  });
+  all.appendChild(b);
+}
+function render() { renderStats(); renderFilter(); renderDeck(); renderManage(); }
 $('reveal').addEventListener('click', () => { $('card-back').hidden = false; $('reveal').hidden = true; $('back-point').focus(); });
 document.querySelectorAll('[data-rate]').forEach(b => b.addEventListener('click', () => {
   if (!current) return;

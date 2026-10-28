@@ -10,7 +10,7 @@
     <div>
       <p class="kicker">申論評分參考・已自評 <span id="graded-count">0</span> 題</p>
       <h1>失分統計與回想卡</h1>
-      <p class="lede">彙整你在申論評分參考的勾選：看出最常丟分的類型，沒勾到的得分點會自動變成回想卡，依間隔複習（1、3、7、14、30 天）。這裡只讀取你的勾選，不會更動評分頁的紀錄。</p>
+      <p class="lede">彙整你在申論評分參考的勾選：看出最常丟分的類型，沒勾到的得分點會自動變成回想卡，依間隔複習（1、3、7、14、30 天）。統計與卡片只依你的勾選產生；只有在下方「管理紀錄」按清除時，才會改動評分頁的紀錄。</p>
     </div>
     <span class="badge-test">學習用・非官方評分</span>
   </div>
@@ -69,6 +69,13 @@
   <section class="sheet" id="subj-section" style="margin-top:20px" aria-labelledby="subj-heading">
     <h2 id="subj-heading">各科失分</h2>
     <div class="table-scroll"><table class="stat-table"><thead><tr><th scope="col">類科／科目</th><th scope="col">已自評</th><th scope="col">平均自評</th><th scope="col">最常失分</th></tr></thead><tbody id="subject-rows"></tbody></table></div>
+  </section>
+
+  <section class="sheet" id="manage" hidden style="margin-top:20px" aria-labelledby="manage-heading">
+    <h2 id="manage-heading">管理紀錄</h2>
+    <p class="small muted">試寫或不想列入統計的題目可以在這裡清除：作答、作答網址、勾選與這題的回想卡會一起清除，開發者補充與核定會保留。重要紀錄請先到<a href="../backup/">完整備份</a>匯出。</p>
+    <ul class="manage-list" id="manage-rows"></ul>
+    <div class="confirm" id="clear-all-area" style="margin-top:12px"></div>
   </section>
 </div>
 </main>

@@ -117,3 +117,6 @@ ol.pit{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
 }
 .recall-card a.btn,.side a.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 14px;border-radius:8px;border:1px solid var(--accent);color:var(--accent);font-weight:700;text-decoration:none}
 .recall-card [hidden],#review-root [hidden]{display:none!important}
+.manage-list{list-style:none;margin:0;padding:0}
+.manage-row{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:10px 0;border-bottom:1px solid var(--rule)}
+.manage-row>div:first-child{display:flex;flex-direction:column;min-width:0;flex:1 1 260px}
