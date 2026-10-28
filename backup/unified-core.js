@@ -222,7 +222,10 @@
   }
   if(diverged)conflict(key,['sessions',day],existing,incoming);
   if(remoteWins)merged._sync=copy(incoming._sync);
-  else if(!equal(merged,existing)){
+  // Divergent same-field answers are NOT ancestors of the selected primary.
+  // Claiming both revisions as merged ancestors would silently replace a
+  // conflicting version on another device.
+  else if(!diverged&&!equal(merged,existing)){
    const revs=[existing._sync?.revision,incoming._sync?.revision].filter(inChain);
    if(revs.length){
     const ancestors=[...new Set([...(existing._sync?.ancestors||[]),...(incoming._sync?.ancestors||[]),...revs])].slice(-400);
