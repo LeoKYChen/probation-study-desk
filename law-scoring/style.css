@@ -100,3 +100,20 @@ ol.pit{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
   th.c,td.c{width:100%;display:flex;justify-content:space-between;align-items:center;text-align:left;padding:6px 8px;border-radius:6px}
   td.c::before{content:attr(data-label);font-size:14px;color:var(--ink-soft)}
 }
+/* 失分統計與回想卡 */
+.fill.miss{background:var(--seal)}
+.stat-table td,.stat-table th{font-variant-numeric:tabular-nums}
+.recall-card{display:flex;flex-direction:column;gap:12px}
+.recall-card .missed{font-weight:700;color:var(--seal);margin:0}
+.recall-back{border-top:1px solid var(--rule);padding-top:12px;display:flex;flex-direction:column;gap:6px}
+.recall-back p{margin:0}
+.rate-actions{display:flex;gap:8px;flex-wrap:wrap}
+.rate-actions .btn{flex:1 1 140px}
+.deck-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
+.deck-head label{display:flex;flex-direction:column;gap:4px;font-size:13px;font-weight:700;color:var(--ink-soft);min-width:0;flex:0 1 280px}
+.deck-head select{font:inherit;font-size:15px;font-weight:400;color:var(--ink);background:var(--sheet);border:1px solid var(--rule);border-radius:8px;padding:8px 10px;min-height:44px;width:100%}
+@media (max-width:620px){
+  .stat-table td::before{content:attr(data-label)'：';color:var(--ink-soft);font-size:14px}
+}
+.recall-card a.btn,.side a.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 14px;border-radius:8px;border:1px solid var(--accent);color:var(--accent);font-weight:700;text-decoration:none}
+.recall-card [hidden],#review-root [hidden]{display:none!important}

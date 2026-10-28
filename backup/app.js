@@ -40,7 +40,7 @@
   'probation-study30-v251:v1','probation-study-desk-v24','probation-study-desk-v3',
   'probation-daily-github:records:v1','daily-reading-test:saved',
   'psd-common-subjects-v1','psd-staresto-link-coach-v06',
-  'jj-bookmarks','jj-read','psd-lecture-planner-v1'
+  'jj-bookmarks','jj-read','psd-lecture-planner-v1','lawScoring.v2','lawScoring.recall.v1'
  ]);
  function explain(storage){
   let progressCount=0;
