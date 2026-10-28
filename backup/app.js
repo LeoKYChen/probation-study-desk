@@ -305,5 +305,6 @@
   }catch(e){refreshClear();tell('已停止清除：'+e.message,true);}
  });
  $('refresh').addEventListener('click',refresh);
+ window.addEventListener('psd:drive-sync-finished',refresh);
  refresh();
 })();
