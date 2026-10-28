@@ -2,8 +2,8 @@
 (function(root,factory){
  'use strict';
  const api=factory();
+ root.PSDDriveSyncCore=api;
  if(typeof module!=='undefined'&&module.exports)module.exports=api;
- else root.PSDDriveSyncCore=api;
 })(typeof window!=='undefined'?window:globalThis,function(){
  'use strict';
  const FORMAT='psd-drive-sync-snapshot-v1',MAX_SNAPSHOTS=1000;
