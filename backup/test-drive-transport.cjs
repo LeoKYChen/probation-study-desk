@@ -50,7 +50,7 @@ async function run(){
  const uploaded=await d.writeSnapshot(folder,{format:'psd-drive-sync-snapshot-v1',
   schemaVersion:1,id:'synthetic-snapshot',createdAt:'2026-10-28T01:00:00Z',backup:{data:{}}});
  assert.equal(uploaded.id,'mock_uploaded_12345678');
- assert.equal(calls.length,4);
+ assert.equal(calls.length,5);
  console.log('PASS Drive REST transport: folder creation, scope-limited listing, reading and append-only upload');
 }
 run().catch(e=>{console.error(e);process.exitCode=1});
