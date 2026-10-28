@@ -119,7 +119,7 @@
    const record={key,path,existing:copy(mine),incoming:copy(other)};
    const encoded=JSON.stringify(record);
    // Do not create duplicate versions on repeated imports.
-   if(!seen.has(encoded)){archive.entries.push(record);seen.add(encoded);newConflicts.push(record);}
+   if(!seen.has(encoded)&&!archive.entries.some(x=>x.key===key&&equal(x.path,path)&&equal(x.incoming,other))){archive.entries.push(record);seen.add(encoded);newConflicts.push(record);}
   }
   function mapMerge(key,path,a,b){
    const output=copy(a);
@@ -186,7 +186,7 @@
   };
   const merged={...copy(existing)};
   for(const k of ['notes','essayDrafts','essayAssessments','practiceRatings','aiReviewTexts','essayCustomPrompts']){
-   if(k==='notes')merged[k]=arrayMerge(existing[k]||[],incoming[k]||[]);
+   if(k==='notes'){if(existing[k]!==undefined||incoming[k]!==undefined)merged[k]=arrayMerge(existing[k]||[],incoming[k]||[]);}
    else if(existing[k]!==undefined||incoming[k]!==undefined)merged[k]=objectMerge(existing[k],incoming[k],k);
   }
   for(const k of ['questionId','commonQuestionId','rating','errorCause','essayPracticeSubject','essayReviewTargetId']){
