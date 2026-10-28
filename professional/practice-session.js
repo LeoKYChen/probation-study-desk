@@ -37,10 +37,42 @@
   const durations = (iso,mode) => subjectFor(iso).sunday ? (String(mode)==='10'?[6,4]:[20,10]) : (String(mode)==='10'?[2,5,2,1]:[5,15,8,2]);
   const phaseTitles = (iso) => subjectFor(iso).sunday ? ['錯題重答與複習','共同科目'] : ['主動回想','理解與解題','申論架構','錯誤整理'];
   const blank = () => ({version:1,sessions:{}});
-  let store=blank(),session=null,running=false,lastTickMs=0,canSave=true,selectedPracticeDate=null;
+  const DEVICE_KEY='psd-study30-sync-device-v1';
+  let store=blank(),session=null,running=false,lastTickMs=0,canSave=true,selectedPracticeDate=null,lastStoredRaw=null,deviceId=null;
   const say = message=>{$('notice').textContent=message;$('notice').hidden=false;};
-  function load(){try{const raw=localStorage.getItem(KEY);if(raw){const parsed=JSON.parse(raw);if(parsed?.version===1&&parsed.sessions&&typeof parsed.sessions==='object'&&!Array.isArray(parsed.sessions))store=parsed;else throw Error('版本不符');}}catch(e){canSave=false;say('無法讀取30分鐘紀錄，未覆寫原資料。本次可練習，但離開前務必匯出備份。');}}
-  function persist(){if(!canSave)return;try{localStorage.setItem(KEY,JSON.stringify(store));}catch(e){canSave=false;say('目前瀏覽器無法保存30分鐘紀錄。請使用「匯出本模組紀錄 JSON」備份。');}}
+  function identifier(){return (typeof crypto!=='undefined'&&typeof crypto.randomUUID==='function')
+    ?crypto.randomUUID():Date.now().toString(36)+'-'+Math.random().toString(36).slice(2);}
+  function getDeviceId(){
+    if(deviceId)return deviceId;
+    const stored=localStorage.getItem(DEVICE_KEY);
+    deviceId=stored||identifier();
+    if(!stored)localStorage.setItem(DEVICE_KEY,deviceId);
+    return deviceId;
+  }
+  function stampRevision(){
+    if(!session)return;
+    const prev=session._sync&&typeof session._sync==='object'?session._sync:{};
+    const device=getDeviceId();
+    const ancestry=Array.isArray(prev.ancestors)?prev.ancestors.filter(x=>typeof x==='string'):[];
+    if(prev.revision&&prev.device!==device&&!ancestry.includes(prev.revision))ancestry.push(prev.revision);
+    session._sync={revision:identifier(),device,ancestors:ancestry.slice(-400)};
+  }
+  function load(){try{const raw=localStorage.getItem(KEY);lastStoredRaw=raw;if(raw){const parsed=JSON.parse(raw);if(parsed?.version===1&&parsed.sessions&&typeof parsed.sessions==='object'&&!Array.isArray(parsed.sessions))store=parsed;else throw Error('版本不符');}}catch(e){canSave=false;say('無法讀取30分鐘紀錄，未覆寫原資料。本次可練習，但離開前務必匯出備份。');}}
+  function persist(){
+    if(!canSave)return;
+    try{
+      // A stale tab must not overwrite newer edits on the same origin.
+      if(localStorage.getItem(KEY)!==lastStoredRaw){
+        canSave=false;
+        say('偵測到其他分頁更新了學習紀錄。此分頁已停止覆寫；請先匯出本分頁 JSON，再關閉重複分頁並重新整理。');
+        return;
+      }
+      stampRevision();
+      const raw=JSON.stringify(store);
+      localStorage.setItem(KEY,raw);
+      lastStoredRaw=raw;
+    }catch(e){canSave=false;say('目前瀏覽器無法保存30分鐘紀錄。請使用「匯出本模組紀錄 JSON」備份。');}
+  }
   const priorRecords = () => Object.entries(store.sessions).sort(([a],[b])=>b.localeCompare(a));
   function newestRatingById(){const result=new Map();for(const [date,s] of priorRecords()){if(s?.questionId&&!result.has(s.questionId)&&s.rating)result.set(s.questionId,{rating:s.rating,date});}return result;}
   function reviewCandidate(target,iso){const ratings=newestRatingById();const eligible=pool(target).filter(q=>{const r=ratings.get(q.id);return r?.rating==='review'&&dayIndex(iso)-dayIndex(r.date)>=3;});return eligible.sort((a,b)=>dayIndex(ratings.get(a.id).date)-dayIndex(ratings.get(b.id).date))[0]||null;}
@@ -249,11 +281,14 @@
       if(scope==='all'){
         // Deleting only our namespaced key avoids changing any existing v2.5 data.
         localStorage.removeItem(KEY);
+        lastStoredRaw=null;
         store=blank();
       }else{
         const next={...store,sessions:{...store.sessions}};
         delete next.sessions[isoTaipei()];
-        localStorage.setItem(KEY,JSON.stringify(next));
+        const raw=JSON.stringify(next);
+        localStorage.setItem(KEY,raw);
+        lastStoredRaw=raw;
         store=next;
       }
     }catch(error){
@@ -269,7 +304,7 @@
     $('clearRecordsDialog').close();
     say(scope==='all'?'已清除每日30分鐘模組的全部紀錄；今日任務重新開始。':'今天的學習紀錄已清除，可以重新開始。');
   }
-  function start(){load();loadToday();
+  function start(){load();loadToday();if(session&&!session._sync)persist();
     document.querySelectorAll('[data-practice-rating]').forEach(button=>button.addEventListener('click',()=>savePracticeRating(button.dataset.practiceRating)));
     $('practiceErrorCause').addEventListener('change',event=>{
       const ctx=essayContext(),saved=session.practiceRatings?.[practiceKey(ctx)];
@@ -345,11 +380,12 @@
  function saveAiReview(id,text) {
   if(!session||typeof id!=='string'||!id||id.length>300||typeof text!=='string'||text.length>120000)throw Error('AI評語格式或長度不符');
   if(!canSave)throw Error('本機儲存不可用');
-  const prev=session.aiReviewTexts, prevTime=session.updatedAt;
+  if(localStorage.getItem(KEY)!==lastStoredRaw)throw Error('另一分頁已有更新，請先匯出備份再重新整理');
+  const prev=session.aiReviewTexts, prevTime=session.updatedAt, prevSync=session._sync;
   session.aiReviewTexts={...(prev||{}),[id]:text};
   session.updatedAt=new Date().toISOString();
-  try { localStorage.setItem(KEY,JSON.stringify(store)); }
-  catch(e){session.aiReviewTexts=prev;session.updatedAt=prevTime;throw e;}
+  try { stampRevision();const raw=JSON.stringify(store);localStorage.setItem(KEY,raw);lastStoredRaw=raw; }
+  catch(e){session.aiReviewTexts=prev;session.updatedAt=prevTime;session._sync=prevSync;throw e;}
 }
 function readAiReview(id) {
   if(!session||typeof id!=='string'||!id)return '';
