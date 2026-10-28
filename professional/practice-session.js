@@ -346,7 +346,7 @@
   function getEssayVersions(){
     const ctx=essayContext();
     if(!ctx)return [];
-    return Object.entries(session.essayVersions||{}).filter(([,v])=>v?.questionId===ctx.questionId)
+    return Object.entries(session.essayVersions||{}).filter(([,v])=>v?.questionId===ctx.questionId&&v.draft&&typeof v.draft==='object')
       .map(([id,v])=>({id,questionId:v.questionId,savedAt:v.savedAt,draft:structuredClone(v.draft)}))
       .sort((a,b)=>b.savedAt.localeCompare(a.savedAt));
   }
@@ -368,8 +368,10 @@
   }
   function restoreEssayVersion(id){
     const ctx=essayContext(),item=session?.essayVersions?.[id];
-    if(!ctx||!canSave||!item||item.questionId!==ctx.questionId)return false;
-    if(!saveEssayVersion())return false; // Save current work first.
+    if(!ctx||!canSave||!item||item.questionId!==ctx.questionId||!item.draft)return false;
+    // A blank current editor has nothing to archive; otherwise keep it first.
+    const currentHasText=ctx.draft.fullAnswer.trim()||ctx.draft.outline.some(x=>x.trim());
+    if(currentHasText&&!saveEssayVersion())return false;
     const oldDraft=session.essayDrafts?.[ctx.questionId],oldUpdated=session.updatedAt;
     session.essayDrafts={...session.essayDrafts,[ctx.questionId]:{
       template:item.draft.template||'theory',
