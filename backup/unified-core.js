@@ -347,7 +347,7 @@
     main:own(active.sessions,date)?copy(active.sessions[date]):null}];
   });
  }
- function planStudy30ConflictRestore(snapshot,index,side){
+ function planStudy30ConflictRestore(snapshot,index,side,restoreRevision){
   assert(side==='existing'||side==='incoming','請指定要恢復的版本');
   assert(Number.isInteger(index)&&index>=0,'衝突版本編號錯誤');
   const record=listStudy30Conflicts(snapshot).find(x=>x.index===index);
@@ -360,6 +360,16 @@
   const archive=snapshot[CONFLICT_KEY]?parseValue(CONFLICT_KEY,snapshot[CONFLICT_KEY]):{schema:CONFLICT_KEY,entries:[]};
   const changes=Object.create(null);
   if(!equal(old,target)){
+   // When the old primary has a revision, the chosen restored version is its
+   // explicit descendant. This prevents the next cloud merge from undoing a
+   // deliberate manual conflict resolution.
+   if(old?._sync?.revision){
+    const ancestry=[...(target._sync?.ancestors||[]),...(old._sync?.ancestors||[]),
+     target._sync?.revision,old._sync.revision].filter(v=>typeof v==='string'&&v);
+    target._sync={revision:typeof restoreRevision==='string'&&restoreRevision.length>8?restoreRevision:
+     'restore-'+Date.now()+'-'+Math.random().toString(36).slice(2),device:'manual-restore',
+     ancestors:[...new Set(ancestry)].slice(-400)};
+   }
    next.sessions[date]=target;changes[key]=JSON.stringify(next);
    if(old!==null&&!archive.entries.some(x=>x.key===key&&equal(x.path,['sessions',date])&&equal(x.incoming,old)))
     archive.entries.push({key,path:['sessions',date],existing:copy(target),incoming:copy(old)});
