@@ -78,8 +78,9 @@
      const backup=core.collect(storage,origin);
      uploaded=await transport.writeSnapshot(folder,snapshotPayload(backup,newId(),clock(),deviceId));
     }
+    const pendingLocalChanges=stateSignature(core.storageSnapshot(storage))!==stateSignature(after);
     return {folderId:folder,remoteSnapshots:sorted.length,appliedKeys:Object.keys(plan.changes).length,
-     conflicts:plan.conflicts.length,uploaded:!!uploaded,changed:needUpload};
+     conflicts:plan.conflicts.length,uploaded:!!uploaded,changed:needUpload,pendingLocalChanges};
    }finally{busy=false;}
   }
   return {sync,isBusy:()=>busy};
