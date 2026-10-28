@@ -6,7 +6,7 @@
  if(!core||!syncCore||!drive)return;
  const CID='psd-drive-oauth-client-id-v1',AUTO='psd-drive-auto-enabled-v1',DEVICE='psd-drive-device-v1',FOLDER_ID='psd-drive-folder-pin-v1';
  const SCOPE='https://www.googleapis.com/auth/drive.file',INTERVAL=5*60*1000;
- let token='',expiresAt=0,engine=null,busy=false,lastSync=0,tokenClient=null,tokenClientId='';
+ let token='',expiresAt=0,engine=null,busy=false,lastSync=0,lastSyncedSignature='',tokenClient=null,tokenClientId='';
  const uuid=()=>window.crypto&&window.crypto.randomUUID?window.crypto.randomUUID():
   Math.random().toString(36).slice(2)+Date.now().toString(36);
  const device=()=>{let id=localStorage.getItem(DEVICE);if(!id){id=uuid();localStorage.setItem(DEVICE,id);}return id;};
@@ -77,11 +77,14 @@
   try{
    const result=await engine.sync(message=>status(message,'pending'));
    lastSync=Date.now();
+   lastSyncedSignature=syncCore.stateSignature(core.storageSnapshot(localStorage));
    const when=new Date(lastSync).toLocaleString('zh-TW',{timeZone:'Asia/Taipei'});
-   status('雲端已完成本次同步｜'+when+'｜讀取 '+result.remoteSnapshots+
+   status('雲端已完成本次傳輸｜'+when+'｜讀取 '+result.remoteSnapshots+
     ' 份快照'+(result.uploaded?'，新增安全快照':'，未產生新快照')+
     (result.conflicts?'；新增 '+result.conflicts+' 筆待確認衝突，可至完整備份頁處理':'')+
-    '。請先重新開啟練習頁再編輯匯入的內容。','success');
+    (result.pendingLocalChanges?'；同步期間產生的新修改尚待下次同步':'')+
+    '。若已在其他分頁編輯，請重新載入該頁後繼續。',result.pendingLocalChanges?'pending':'success');
+   if(result.pendingLocalChanges)lastSync=Date.now()-INTERVAL+60000;
    const link=$('driveFolderLink');
    if(link&&result.folderId&&/^[a-zA-Z0-9_-]+$/.test(result.folderId)){
     link.href='https://drive.google.com/drive/folders/'+result.folderId;link.hidden=false;
@@ -117,6 +120,9 @@
    if(!document.hidden&&hasToken()&&$('driveAutoSync').checked&&Date.now()-lastSync>INTERVAL)runSync();
   });
   window.setInterval(()=>{
+   if(hasToken()&&!busy&&lastSyncedSignature&&
+      syncCore.stateSignature(core.storageSnapshot(localStorage))!==lastSyncedSignature)
+    status('有新的本機學習紀錄，等待下次 Google Drive 同步。','pending');
    if(!hasToken()&&token){status('Google Drive 授權已到期，請按「連線 Google Drive」重新授權。','pending');updateButtons();}
    else if(!document.hidden&&navigator.onLine!==false&&hasToken()&&$('driveAutoSync').checked&&Date.now()-lastSync>=INTERVAL)runSync();
   },60000);
