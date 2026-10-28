@@ -1,7 +1,7 @@
 /* v2.5.4 preview-only PWA service worker. This template is compiled by install-offline.cjs. */
 'use strict';
-const CACHE_PREFIX='study30-v254-offline-'+new URL(self.registration.scope).pathname+'-',CACHE=CACHE_PREFIX+'study30-safe-merge-stage2-20261028-v12-553q';
-const ASSETS=["../assets/study-theme.css","../assets/study-round.woff","../ai-prompt-customizer.js","../backup/unified-core.js","./essay-version-history.js","./practice-session.js","./practice-review.js","./practice-diagnostics.js","./layout-panels-v2.js","./practice-context.css","./layout-followup.css","./review-preview.js","./layout-panels.js","./learning-charts.js","./layout-review.css","./progress-calendar.js","./","./ai-review-links.js","./ai-review-links-direction.js","./app.js","./backup-import.js","./content-cleanup.css","./content-ui.js","./daily-essay-workbench.js","./data-health.js","./essay-analytics.js","./essay-review.js","./essay-rubric-core.js","./essay-selfcheck.js","./essay.js","./icon-180.png","./icon-192.png","./icon-512.png","./index.html","./manifest.webmanifest","./offline-control.js","./offline.css","./question-sources.js","./review-core.js","./review-simulator.js","./source-main-questions.js","./source-related-questions.js","../police-exams/questions.approved.js","../police-exams/approved-loader.js","./study30-shuati-links.js","./study30-yamol-links.js","./style.css","./v254-diagnostics.js","./weakness-priority.js"];
+const CACHE_PREFIX='study30-v254-offline-'+new URL(self.registration.scope).pathname+'-',CACHE=CACHE_PREFIX+'study30-drive-sync-stage3-20261028-v13-553q';
+const ASSETS=["../assets/study-theme.css","../assets/study-round.woff","../ai-prompt-customizer.js","../backup/unified-core.js","../backup/drive-sync-core.js","../backup/drive-transport.js","../backup/drive-sync-ui.js","./essay-version-history.js","./practice-session.js","./practice-review.js","./practice-diagnostics.js","./layout-panels-v2.js","./practice-context.css","./layout-followup.css","./review-preview.js","./layout-panels.js","./learning-charts.js","./layout-review.css","./progress-calendar.js","./","./ai-review-links.js","./ai-review-links-direction.js","./app.js","./backup-import.js","./content-cleanup.css","./content-ui.js","./daily-essay-workbench.js","./data-health.js","./essay-analytics.js","./essay-review.js","./essay-rubric-core.js","./essay-selfcheck.js","./essay.js","./icon-180.png","./icon-192.png","./icon-512.png","./index.html","./manifest.webmanifest","./offline-control.js","./offline.css","./question-sources.js","./review-core.js","./review-simulator.js","./source-main-questions.js","./source-related-questions.js","../police-exams/questions.approved.js","../police-exams/approved-loader.js","./study30-shuati-links.js","./study30-yamol-links.js","./style.css","./v254-diagnostics.js","./weakness-priority.js"];
 const scope=self.registration.scope;
 const urls=ASSETS.map(a=>new URL(a,scope).href);
 const home=new URL('./index.html',scope).href;
@@ -26,7 +26,7 @@ self.addEventListener('fetch',event=>{
   if(request.method!=='GET')return;
   const url=new URL(request.url);
   // No cross-origin caching, no interception of external services or user exports.
-  if(url.origin!==new URL(scope).origin||(!url.href.startsWith(scope)&&url.href!==new URL('../backup/unified-core.js',scope).href))return;
+  if(url.origin!==new URL(scope).origin||(!url.href.startsWith(scope)&&!['../backup/unified-core.js','../backup/drive-sync-core.js','../backup/drive-transport.js','../backup/drive-sync-ui.js'].some(x=>url.href===new URL(x,scope).href)))return;
   if(request.mode==='navigate'){
     event.respondWith((async()=>{
       try{
