@@ -60,7 +60,7 @@ vm.runInNewContext(fs.readFileSync(path.join(root,'law-scoring/review.js'),'utf8
 const RV=w.LawScoringReview,T='2026-10-28';
 const theory=D.questions.find(q=>q.kind==='theory'),cq=D.questions.find(q=>q.kind==='case'&&q.rows.some(r=>!r.disputed)&&q.rows.some(r=>r.disputed));
 assert.equal(Object.keys(RV.syncCards({[theory.id]:{answer:'x',unlocked:false,checks:{},organize:{}}},{},T)).length,0,'questions not yet unlocked make no cards');
-let deck=RV.syncCards({[theory.id]:{unlocked:true,checks:{},organize:{}}},{},T);
+let deck=RV.syncCards({[theory.id]:{answer:'寫了答案',unlocked:true,checks:{},organize:{}}},{},T);
 assert.equal(Object.keys(deck).length,theory.rows.length,'every missed row becomes a card');
 assert(Object.values(deck).every(c=>c.box===1&&c.due===T&&!c.mastered),'new cards are due today in box 1');
 const full=Object.fromEntries(theory.rows.map((_,i)=>[i,{found:true,theory:true,practice:true}]));
@@ -77,9 +77,17 @@ const caseFull=Object.fromEntries(cq.rows.map((r,i)=>[i,{found:true,apply:true}]
 const caseDeck=RV.syncCards({[cq.id]:{unlocked:true,checks:caseFull,organize:{}}},{},T);
 assert.equal(JSON.stringify(Object.keys(caseDeck).sort()),JSON.stringify(cq.rows.map((r,i)=>r.disputed?cq.id+'#'+i:null).filter(Boolean).sort()),'case views are required only on disputed rows');
 assert(Object.values(caseDeck).every(x=>x.missed.join()==='views'),'cards record which part was missed');
-const st=RV.stats({[theory.id]:{unlocked:true,checks:{},organize:{}}});
+const st=RV.stats({[theory.id]:{answer:'寫了答案',unlocked:true,checks:{},organize:{}}});
 assert.equal(st.gradedCount,1);assert.equal(st.total.issues.miss,theory.rows.length);assert.equal(st.total.views.all,0,'theory questions have no views column');
 assert.equal(st.total.organize.miss,theory.organize.length);
 const html2=fs.readFileSync(path.join(root,'law-scoring/review.html'),'utf8');
 assert(html2.includes('review.js')&&html2.includes('非官方評分')&&!html2.includes('fonts.googleapis'),'review page loads its script offline');
+assert.equal(RV.isGraded({answer:'',answerUrl:'',unlocked:true,checks:{0:{found:false}},organize:{}}),false,'peeking without answering or ticking is not counted');
+assert.equal(RV.isGraded({answer:'',unlocked:true,checks:{0:{found:true}},organize:{}}),true,'answers written on paper count once a row is ticked');
+assert.equal(RV.stats({[theory.id]:{unlocked:true,checks:{},organize:{}}}).gradedCount,0,'peeked questions stay out of the statistics');
+const cleared=RV.clearQuestion({[theory.id]:{answer:'x',answerUrl:'https://a.b',unlocked:true,checks:full,organize:{0:true},devNotes:{0:'保留'},approved:{0:true}},keep:{answer:'y'}},deck,theory.id);
+assert.equal(JSON.stringify([cleared.store[theory.id].answer,cleared.store[theory.id].answerUrl,cleared.store[theory.id].unlocked,cleared.store[theory.id].devNotes[0],cleared.store[theory.id].approved[0],cleared.store.keep.answer]),JSON.stringify(['','',false,'保留',true,'y']),'clearing resets one question and keeps developer notes and other questions');
+assert.equal(Object.keys(cleared.cards).length,0,'clearing a question removes all of its cards, reviewed ones included');
+const appSrc=fs.readFileSync(path.join(root,'law-scoring/app.js'),'utf8');
+assert(!/disabled=n<50/.test(appSrc),'the scoring points open without a minimum answer length');
 console.log('PASS law-scoring review cards');
