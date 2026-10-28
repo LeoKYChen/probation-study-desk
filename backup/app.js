@@ -92,7 +92,7 @@
    ' 只顯示有實際學習內容或已建立的函授課程；完整 JSON 仍保留舊版資料、設定與尚未開始的工作階段。';
  }
 
- let studyRestoreBackupRequested=false,studyRestoreBackupSnapshot=null;
+ let studyRestoreBackupRequested=false,studyRestoreBackupSnapshot=null,studyConflictPage=0;
  function studyVersionPreview(row){
   if(!row)return '目前主要紀錄不存在';
   const data={date:row.date,questionId:row.questionId||'',elapsed:row.elapsed||0,
@@ -108,10 +108,22 @@
   host.replaceChildren();
   try{
    const records=core.listStudy30Conflicts(current());
+   const pageSize=25,totalPages=Math.max(1,Math.ceil(records.length/pageSize));
+   studyConflictPage=Math.max(0,Math.min(studyConflictPage,totalPages-1));
    $('study30ConflictSummary').textContent=records.length
-    ?'找到 '+records.length+' 筆每日30分鐘不同版本；此頁最多顯示前 80 筆，全部仍可下載。'
+    ?'找到 '+records.length+' 筆每日30分鐘不同版本｜第 '+(studyConflictPage+1)+'／'+totalPages+' 頁。'
     :'目前沒有每日30分鐘待比較的歷史衝突。';
-   for(const row of records.slice(0,80)){
+   if(records.length>pageSize){
+    const nav=document.createElement('div');nav.className='actions';
+    for(const [step,label] of [[-1,'上一頁'],[1,'下一頁']]){
+     const button=document.createElement('button');button.type='button';button.textContent=label;
+     button.disabled=studyConflictPage+step<0||studyConflictPage+step>=totalPages;
+     button.addEventListener('click',()=>{studyConflictPage+=step;renderStudy30Conflicts();});
+     nav.append(button);
+    }
+    host.append(nav);
+   }
+   for(const row of records.slice(studyConflictPage*pageSize,(studyConflictPage+1)*pageSize)){
     const details=document.createElement('details'),summary=document.createElement('summary');
     summary.textContent=row.date+'｜'+(row.incoming.questionId||row.existing.questionId||'自主練習')+
      '｜衝突紀錄 #'+(row.index+1);
