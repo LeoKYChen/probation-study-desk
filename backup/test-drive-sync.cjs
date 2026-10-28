@@ -1,7 +1,8 @@
 // Stage 3 Google Drive protocol tests: synthetic data; NO Google API or OAuth network traffic.
 'use strict';
 const assert=require('node:assert/strict');
-const backup=require('./unified-core.js');
+require('./unified-core.js');
+const backup=globalThis.PSDUnifiedBackup;
 require('./drive-sync-core.js');
 const protocol=globalThis.PSDDriveSyncCore;
 const KEY='probation-study30-v251:v1',DAY='2026-10-28';
