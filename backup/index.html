@@ -38,6 +38,13 @@ footer{color:#607267;font-size:13px}ul{columns:2;max-width:780px;padding-left:24
  .actions{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
  .actions>button,.file-label{display:flex;width:100%;min-width:0;min-height:52px;padding:11px 14px;align-items:center;justify-content:center;text-align:center;line-height:1.45}
 }
+
+#study30ConflictList details{border:1px solid #c9d4cf;border-radius:10px;padding:12px;margin:12px 0;background:#fff}
+#study30ConflictList summary{cursor:pointer;font-weight:650}
+#study30ConflictList .versions{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:12px 0}
+#study30ConflictList .versions>div{min-width:0}
+#study30ConflictList pre{white-space:pre-wrap;overflow-wrap:anywhere;max-height:260px;overflow:auto;padding:10px;background:#f2f6f4;border-radius:8px;font-size:12px}
+#study30ConflictList button{margin:4px}
 </style>
 <script src="../file-compat.js" defer></script>
 <link rel="stylesheet" href="../assets/study-theme.css">
@@ -77,6 +84,14 @@ footer{color:#607267;font-size:13px}ul{columns:2;max-width:780px;padding-left:24
 <h2>③ 保留兩台裝置的不同答案</h2>
 <p>同一天有不同版本時，會優先補齊有內容的草稿與自評；已驗證為前一版本之後續修改者，可更新主要紀錄。無法確定先後關係的不同答案不會被自動覆蓋，而是保留在「衝突版本」供下載比對。請先下載目前裝置的保護備份。</p>
 <div class="actions"><button type="button" id="downloadConflicts">下載衝突版本 JSON</button></div>
+<section id="study30ConflictPanel" aria-labelledby="study30ConflictTitle">
+<h3 id="study30ConflictTitle">每日30分鐘｜歷史衝突版本比較與復原</h3>
+<p class="note">只顯示每日30分鐘的不同版本。選擇恢復版本前，必須另存完整備份；原主要紀錄也會保留成可再次復原的衝突版本。</p>
+<p id="study30ConflictSummary" role="status" aria-live="polite">正在檢查歷史版本…</p>
+<div class="actions"><button type="button" id="study30ConflictBackup">下載復原前完整保護備份</button></div>
+<label class="check"><input type="checkbox" id="study30ConflictConfirmed"> 我已確認這份完整備份實際儲存在裝置上，也已關閉其他編輯分頁。</label>
+<div id="study30ConflictList"></div>
+</section>
 </div>
 <div class="card" aria-labelledby="clearTitle">
 <h2 id="clearTitle">④ 清除學習紀錄</h2>
