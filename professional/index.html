@@ -24,6 +24,7 @@
   <script src="./progress-calendar.js" defer></script>
   <script src="./weakness-priority.js" defer></script>
   <script src="./data-health.js" defer></script>
+  <script src="../backup/unified-core.js" defer></script>
   <script src="./backup-import.js" defer></script>
   <script src="./daily-essay-workbench.js" defer></script>
   <script src="./practice-diagnostics.js" defer></script>
@@ -227,20 +228,15 @@
     <section class="backup-import-panel" aria-labelledby="backupImportHeading">
   <h2 id="backupImportHeading">學習紀錄 JSON 匯入／還原</h2>
 
-  <label class="backup-import-label" for="importBackupFile">選擇先前匯出的 JSON 備份檔</label>
+  <label class="backup-import-label" for="importBackupFile">選擇完整備份 JSON 或本模組舊版 JSON</label>
   <input type="file" id="importBackupFile" accept=".json,application/json">
-  <fieldset class="backup-mode"><legend>資料處理方式</legend>
-    <label><input type="radio" name="importMode" value="merge" checked> 合併（建議）：保留目前所有日期，只補入備份中不存在的日期；相同日期不覆蓋</label>
-    <label><input type="radio" name="importMode" value="replace"> 完整還原：以備份取代所有現有日期（高風險）</label>
-  </fieldset>
+  <fieldset class="backup-mode"><legend>資料處理方式</legend><p>安全合併：補齊有效申論與自評，保留不同答案的衝突版本，不移除既有日期。</p></fieldset>
   <p id="importPreview" class="backup-import-preview">選擇檔案後可預覽備份日期、草稿及自評筆數。</p>
   <button type="button" id="downloadBeforeImport" class="secondary">先匯出目前紀錄（安全備份）</button>
   <label class="backup-import-agree"><input type="checkbox" id="importBackupConfirmed"> 我已確認目前紀錄的 JSON 備份已下載保存</label>
-  <label for="importConfirm">若選「完整還原」，請輸入「完整還原」</label>
-  <input type="text" id="importConfirm" placeholder="完整還原" autocomplete="off" spellcheck="false">
   <button type="button" id="importExecute" class="primary" disabled>執行匯入／還原</button>
   <p id="importStatus" class="muted tiny" role="status" aria-live="polite">尚未讀取備份。</p>
-  <p class="muted tiny">提醒：只處理你在此裝置選擇的本機檔案，不會上傳至伺服器；實際匯入後會重新整理網頁。</p>
+  <p class="muted tiny">此處只匯入每日30分鐘資料；其他模組請使用<a href="../backup/">完整學習紀錄備份</a>。衝突版本可在完整備份頁檢視與復原。匯入後會重新整理。</p>
 </section>
     <section class="v254-panel" aria-labelledby="v254Heading">
   <div class="section-head"><div><p class="eyebrow">STUDY INSIGHTS · v2.5.4</p><h2 id="v254Heading">七科學習診斷與弱點追蹤</h2></div><span class="insight-note">七科診斷</span></div>
