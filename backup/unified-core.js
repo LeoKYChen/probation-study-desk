@@ -143,7 +143,7 @@
    if(v.finished||Number(v.elapsed)>0||Number(v.skippedSeconds)>0||Number(v.phase)>0||hasText(v.rating)||hasText(v.errorCause))return true;
    if((v.notes||[]).some(hasText))return true;
    if(Object.values(v.essayDrafts||{}).some(d=>d&&(hasText(d.fullAnswer)||(d.outline||[]).some(hasText))))return true;
-   for(const k of ['essayAssessments','aiReviewTexts','practiceRatings','essayCustomPrompts'])
+   for(const k of ['essayAssessments','aiReviewTexts','practiceRatings','essayCustomPrompts','essayVersions'])
     if(Object.values(v[k]||{}).some(x=>x!==null&&x!==''&&(!isObj(x)||Object.keys(x).length>0)))return true;
    return false;
   };
@@ -187,7 +187,7 @@
    return result;
   };
   const merged={...copy(existing)};
-  for(const k of ['notes','essayDrafts','essayAssessments','practiceRatings','aiReviewTexts','essayCustomPrompts']){
+  for(const k of ['notes','essayDrafts','essayAssessments','practiceRatings','aiReviewTexts','essayCustomPrompts','essayVersions']){
    if(k==='notes'){if(existing[k]!==undefined||incoming[k]!==undefined)merged[k]=arrayMerge(existing[k]||[],incoming[k]||[]);}
    else if(existing[k]!==undefined||incoming[k]!==undefined)merged[k]=objectMerge(existing[k],incoming[k],k);
   }
@@ -209,7 +209,7 @@
    if(values.length)merged[k]=values.sort()[k==='createdAt'?0:values.length-1];
   }
   const handled=new Set(['notes','essayDrafts','essayAssessments','practiceRatings','aiReviewTexts',
-   'essayCustomPrompts','questionId','commonQuestionId','rating','errorCause','essayPracticeSubject',
+   'essayCustomPrompts','essayVersions','questionId','commonQuestionId','rating','errorCause','essayPracticeSubject',
    'essayReviewTargetId','mode','phase','remaining','phaseTimeUsed','elapsed','skippedSeconds',
    'finished','createdAt','updatedAt','completedAt','ratingUpdatedAt','_sync']);
   for(const [k,v] of Object.entries(incoming)){
