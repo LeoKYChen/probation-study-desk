@@ -11,12 +11,13 @@ const server=http.createServer((req,res)=>{try{const p=decodeURIComponent(new UR
    const browser=await engine.launch(options);
    try{
     const context=await browser.newContext({serviceWorkers:'block',timezoneId:'Asia/Taipei'}),page=await context.newPage(),errors=[];
-    page.on('pageerror',e=>errors.push({page:page.url(),message:e.message,stack:e.stack}));
+    let stage='initial';
+    page.on('pageerror',e=>errors.push({stage,page:page.url(),message:e.message,stack:e.stack}));
     await page.goto(origin+'/daily-simulation/');
     const legacy=JSON.stringify({[question.id]:{answer:'舊的每日答案',review:false,updatedAt:'2099-01-01'}}),favorites=JSON.stringify([question.id]);
     await page.evaluate(({legacy,favorites})=>{localStorage.setItem('probation-daily-github:records:v1',legacy);localStorage.setItem('daily-reading-test:saved',favorites);},{legacy,favorites});
     await context.addInitScript(()=>{window.PSD_DAILY_IDB_TEST=true;window.PSD_STUDY30_IDB_TEST=true});
-    await page.reload();await page.waitForFunction(()=>Number(document.querySelector('#total').textContent)>0);
+    stage='migration reload';await page.reload();await page.waitForFunction(()=>Number(document.querySelector('#total').textContent)>0);
     await page.locator(`[data-open="${question.id}"]`).first().click();
     assert.equal(await page.locator('#answer').inputValue(),'舊的每日答案');
     await page.locator('#answer').fill('每日 IndexedDB 新答案');
@@ -27,13 +28,13 @@ const server=http.createServer((req,res)=>{try{const p=decodeURIComponent(new UR
     await page.waitForFunction(()=>document.querySelector('#bookmark').getAttribute('aria-pressed')==='false');
     assert.equal(await page.evaluate(()=>localStorage.getItem('probation-daily-github:records:v1')),legacy);
     assert.equal(await page.evaluate(()=>localStorage.getItem('daily-reading-test:saved')),favorites);
-    await page.reload();await page.waitForFunction(()=>Number(document.querySelector('#total').textContent)>0);
+    stage='saved reload';await page.reload();await page.waitForFunction(()=>Number(document.querySelector('#total').textContent)>0);
     await page.locator(`[data-open="${question.id}"]`).first().click();
     assert.equal(await page.locator('#answer').inputValue(),'每日 IndexedDB 新答案');
     assert.equal(await page.locator('#aiFeedback').inputValue(),'每日 AI 評語');
     assert.equal(await page.locator('#bookmark').getAttribute('aria-pressed'),'false');
     assert.equal(await page.locator('#import').isDisabled(),true);assert.equal(await page.locator('#clearRecords').isDisabled(),true);
-    await page.goto(origin+'/v2.5/daily-practice.html?question='+encodeURIComponent(question.id));
+    stage='v2.5 navigation';await page.goto(origin+'/v2.5/daily-practice.html?question='+encodeURIComponent(question.id));
     await page.waitForFunction(()=>!document.querySelector('#workspace').hidden);
     assert.equal(await page.locator('#answer').inputValue(),'每日 IndexedDB 新答案');
     assert.equal(await page.locator('#aiFeedback').inputValue(),'每日 AI 評語');
@@ -42,24 +43,24 @@ const server=http.createServer((req,res)=>{try{const p=decodeURIComponent(new UR
     assert.equal(await page.locator('#import').isDisabled(),true);assert.equal(await page.locator('#clear').isDisabled(),true);
     // Transitional protection export must read the migrated daily answer from
     // IndexedDB, rather than the retained legacy copy.
-    await page.goto(origin+'/professional/');await page.waitForFunction(()=>!!window.Study30App?.essayContext());
+    stage='backup navigation';await page.goto(origin+'/professional/');await page.waitForFunction(()=>!!window.Study30App?.essayContext());
     const detail=page.locator('#importBackupFile').locator('xpath=ancestor::details').first();await detail.locator('summary').first().click();
     const download=page.waitForEvent('download');await page.locator('#downloadBeforeImport').click();const file=await download;
     const bundle=JSON.parse(fs.readFileSync(await file.path(),'utf8'));
     assert.equal(JSON.parse(bundle.data['probation-daily-github:records:v1'])[question.id].answer,'v2.5 寫入同一題');
     assert.deepEqual(JSON.parse(bundle.data['daily-reading-test:saved']),[]);
-    await page.goto(origin+'/print/?module=daily');
+    stage='print navigation';await page.goto(origin+'/print/?module=daily');
     await page.waitForFunction(()=>document.querySelectorAll('#recordList input').length>0);
     await page.locator('#selectVisible').click();await page.locator('#preview').click();
     assert.ok((await page.locator('#paper').innerText()).includes('v2.5 寫入同一題'));
     assert.ok((await page.locator('#paper').innerText()).includes('每日 AI 評語'));
-    await page.goto(origin+'/daily-simulation/');await page.waitForFunction(()=>Number(document.querySelector('#total').textContent)>0);
+    stage='daily return';await page.goto(origin+'/daily-simulation/');await page.waitForFunction(()=>Number(document.querySelector('#total').textContent)>0);
     await page.locator(`[data-open="${question.id}"]`).first().click();
     assert.equal(await page.locator('#answer').inputValue(),'v2.5 寫入同一題');
     assert.equal(await page.locator('#aiFeedback').inputValue(),'每日 AI 評語');
     assert.equal(await page.evaluate(()=>localStorage.getItem('probation-daily-github:records:v1')),legacy);
     assert.equal(await page.evaluate(()=>localStorage.getItem('daily-reading-test:saved')),favorites);
-    const stale=await context.newPage();stale.on('pageerror',e=>errors.push({page:stale.url(),message:e.message,stack:e.stack}));
+    stage='stale tab';const stale=await context.newPage();stale.on('pageerror',e=>errors.push({stage,page:stale.url(),message:e.message,stack:e.stack}));
     await stale.goto(origin+'/v2.5/daily-practice.html?question='+encodeURIComponent(question.id));
     await stale.waitForFunction(()=>!document.querySelector('#workspace').hidden);
     await page.locator('#answer').fill('每日頁較新版本');
@@ -68,7 +69,7 @@ const server=http.createServer((req,res)=>{try{const p=decodeURIComponent(new UR
     await stale.waitForFunction(()=>document.querySelector('#saved').textContent==='尚未保存');
     let raw=await page.evaluate(async()=>{const db=await PSDLearningStorage.open();const value=await db.get('probation-daily-github:records:v1');db.close();return value;});
     assert.ok(raw.includes('每日頁較新版本'));assert.ok(!raw.includes('v2.5 過期版本'));
-    await page.evaluate(()=>{const put=IDBObjectStore.prototype.put;IDBObjectStore.prototype.put=function(v,k){if(k==='probation-daily-github:records:v1')throw new DOMException('full','QuotaExceededError');return put.call(this,v,k);};});
+    stage='quota';await page.evaluate(()=>{const put=IDBObjectStore.prototype.put;IDBObjectStore.prototype.put=function(v,k){if(k==='probation-daily-github:records:v1')throw new DOMException('full','QuotaExceededError');return put.call(this,v,k);};});
     await page.locator('#answer').fill('容量不足未保存版本');
     await page.waitForFunction(()=>document.querySelector('#draftStatus').textContent.includes('儲存失敗'));
     raw=await page.evaluate(async()=>{const db=await PSDLearningStorage.open();const value=await db.get('probation-daily-github:records:v1');db.close();return value;});
