@@ -8,6 +8,7 @@
 - 每一種寫法都補上完整書目（作者、年份、書名或篇名、期刊卷期頁碼或出版者），並逐列對照得分點內容，確認出處與內容相符。
 - 學科題中引用的法規以全國法規資料庫現行條文核對；少數不確定的學術文獻以出版商或官方網站查證（見文末「查證來源」）。
 - **網站沒有任何更動**：`law-scoring/data.js`、頁面與離線清單都沒有修改。完整書目存在 `docs/theory-sources.json`（網站不讀取），本文件是給開發者看的核對報告。
+- 另補上 OpenStax 教科書的對應章節（見「教科書出處：OpenStax」），資料在 `docs/theory-openstax.json`。
 - 檢查程式 `verification/theory-sources.cjs` 會確認 `data.js` 每一個學科出處都在 `theory-sources.json` 中有對應書目；以後新增或修改出處時，`npm test` 會提醒補上。
 
 ## 結果摘要
@@ -86,7 +87,163 @@
 - Christopher et al.：[Springer 全文 doi:10.1007/s11896-015-9161-x](https://springerlink.bibliotecabuap.elogim.com/content/pdf/10.1007/s11896-015-9161-x.pdf)
 - Temoshok C 型性格：[Kirkus 書評（Temoshok & Dreher, 1992）](https://kirkusreviews.com/book-reviews/lydia-temoshok/the-type-c-connection)
 - Lawton 環境假設：[PMC 回顧文](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12762927/)
+- OpenStax 原始書稿：[osbooks-psychology](https://github.com/openstax/osbooks-psychology)、[osbooks-introduction-sociology](https://github.com/openstax/osbooks-introduction-sociology)、[osbooks-lifespan-development](https://github.com/openstax/osbooks-lifespan-development)（commit 記錄在 `docs/theory-openstax.json`）。
 - 其餘書目依原始文獻的標準書目資料整理；標示「請核對」者仍建議以講義或原文確認。
+
+## 教科書出處：OpenStax（2026-10-29 新增）
+
+OpenStax 是 Rice University 的免費、經同儕審查的大學教科書。本次對照三本書，用 OpenStax 在 GitHub 公開的原始書稿逐節核對內容（openstax.org 網站本身在這個工作環境連不上）；章節網址依網站的命名規則產生，並以搜尋結果抽查與網站一致。
+
+| 書名 | 作者 | 年份 | 授權 |
+|---|---|---|---|
+| [Psychology 2e](https://openstax.org/details/books/psychology-2e) | Spielman, R. M., Jenkins, W. J., & Lovett, M. D. | 2020 | CC BY-NC-SA 4.0 |
+| [Introduction to Sociology 3e](https://openstax.org/details/books/introduction-sociology-3e) | Conerly, T. R., Holmes, K., & Tamang, A. L. | 2021 | CC BY-NC-SA 4.0 |
+| [Lifespan Development](https://openstax.org/details/books/lifespan-development) | Riser, D. K., Spielman, R. M., & Biek, D. | 2024 | CC BY-NC-SA 4.0 |
+
+**結果**：351 題中有 133 題找到對應章節（完整涵蓋 93 題、部分涵蓋 40 題），其餘 218 題 OpenStax 沒有涵蓋，主要是：諮商理論與技術（Yalom、焦點解決、敘事、動機式晤談、團體諮商）、犯罪學專論（RNR、日常活動理論、情境預防、CPTED、修復式司法、再犯預測）、心理測驗的計算與編製，以及臺灣法規題。
+
+使用注意：
+- 這三本是入門教科書，適合當作「教科書出處」或補充定義，不取代原始文獻。
+- 「部分涵蓋」表示該節只談到題目的一部分，說明欄寫出缺少的內容。
+- 內容為英文；美國的統計、制度與案例（例如 UCR、NCVS）不能直接套用到臺灣。
+- 授權為 CC BY-NC-SA 4.0：引用或改寫須標示出處、不得商業使用、改作須以相同授權釋出。
+- 完整資料（含每節確認出現的關鍵詞）在 `docs/theory-openstax.json`。
+
+| 題目 | 對應章節 | 涵蓋 |
+|---|---|---|
+| 108-犯罪學-3｜Bedau 無被害者犯罪的特性與類型 | [Sociology 3e 7.3 Crime and the Law](https://openstax.org/books/introduction-sociology-3e/pages/7-3-crime-and-the-law) | 完整 |
+| 108-犯罪學-4｜法律與社會學的犯罪概念及犯罪學研究目標 | [Sociology 3e 7.1 Deviance and Control](https://openstax.org/books/introduction-sociology-3e/pages/7-1-deviance-and-control)<br>[Sociology 3e 7.3 Crime and the Law](https://openstax.org/books/introduction-sociology-3e/pages/7-3-crime-and-the-law) | 完整 |
+| 109-犯罪學-1｜以差別接觸理論說明孟母三遷與擇校 | [Sociology 3e 7.2 Theoretical Perspectives on Deviance and Crime](https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime) | 完整 |
+| 109-犯罪學-2｜家庭因素與社會控制理論的少年犯罪預防 | [Sociology 3e 7.2 Theoretical Perspectives on Deviance and Crime](https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime) | 完整 |
+| 110-犯罪學-1｜Quinney 犯罪的社會事實論 | [Sociology 3e 7.2 Theoretical Perspectives on Deviance and Crime](https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime) | 部分：只涵蓋衝突理論概論（Marx、Mills），沒有 Quinney 的命題 |
+| 110-犯罪學-2｜集體效能論與社區暴力犯罪 | [Sociology 3e 7.2 Theoretical Perspectives on Deviance and Crime](https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime) | 部分：只涵蓋社會解組論，沒有集體效能 |
+| 110-犯罪學-4｜反社會人格障礙與犯罪的關係 | [Psychology 2e 15.11 Personality Disorders](https://openstax.org/books/psychology-2e/pages/15-11-personality-disorders) | 完整 |
+| 111-犯罪學-4｜幫派副文化理論與中立化理論對成年後繼續犯罪的解釋 | [Sociology 3e 7.2 Theoretical Perspectives on Deviance and Crime](https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime) | 部分：只涵蓋中立化技術，沒有副文化理論 |
+| 112-犯罪學-4｜精神障礙與人格障礙者的暴力犯罪成因與防治 | [Psychology 2e 15.8 Schizophrenia](https://openstax.org/books/psychology-2e/pages/15-8-schizophrenia)<br>[Psychology 2e 15.11 Personality Disorders](https://openstax.org/books/psychology-2e/pages/15-11-personality-disorders) | 部分：只涵蓋疾患本身，沒有暴力風險與防治 |
+| 113-犯罪學-1｜Bandura 攻擊行為的激起因素 | [Psychology 2e 6.4 Observational Learning (Modeling)](https://openstax.org/books/psychology-2e/pages/6-4-observational-learning-modeling)<br>[Psychology 2e 12.6 Aggression](https://openstax.org/books/psychology-2e/pages/12-6-aggression) | 部分：只涵蓋 Bobo 實驗與攻擊的定義，沒有五項激起因素 |
+| 113-犯罪學-4｜DSM-5 思覺失調症症狀及其與犯罪的關聯 | [Psychology 2e 15.8 Schizophrenia](https://openstax.org/books/psychology-2e/pages/15-8-schizophrenia) | 部分：只涵蓋症狀，沒有與犯罪的關聯 |
+| 114-犯罪學-1｜社會結構學派與社會控制學派的少年犯罪解釋與對策 | [Sociology 3e 7.2 Theoretical Perspectives on Deviance and Crime](https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime) | 完整 |
+| 114-犯罪學-4｜以生物心理社會模式詮釋少年藥物濫用與處遇 | [Psychology 2e 4.5 Substance Use and Abuse](https://openstax.org/books/psychology-2e/pages/4-5-substance-use-and-abuse)<br>[Psychology 2e 16.4 Substance-Related and Addictive Disorders: A Special Case](https://openstax.org/books/psychology-2e/pages/16-4-substance-related-and-addictive-disorders-a-special-case) | 部分：只涵蓋成癮機制，沒有少年處遇 |
+| 108-心理學-1｜態度的組成成分：以抽菸為例 | [Psychology 2e 12.3 Attitudes and Persuasion](https://openstax.org/books/psychology-2e/pages/12-3-attitudes-and-persuasion) | 完整 |
+| 108-心理學-2｜A 型、B 型與 C 型性格 | [Psychology 2e 14.3 Stress and Illness](https://openstax.org/books/psychology-2e/pages/14-3-stress-and-illness) | 部分：只涵蓋 A 型與 B 型，沒有 C 型性格 |
+| 108-心理學-3｜人際吸引的意義與影響因素 | [Psychology 2e 12.7 Prosocial Behavior](https://openstax.org/books/psychology-2e/pages/12-7-prosocial-behavior) | 完整 |
+| 109-心理學-1｜流體智力與晶體智力的差異、發展與職涯影響 | [Psychology 2e 7.4 What Are Intelligence and Creativity?](https://openstax.org/books/psychology-2e/pages/7-4-what-are-intelligence-and-creativity)<br>[Lifespan 15.3 Cognition and Memory in Late Adulthood](https://openstax.org/books/lifespan-development/pages/15-3-cognition-and-memory-in-late-adulthood) | 完整 |
+| 109-心理學-2｜習得無助感與受虐婦女症候群 | [Psychology 2e 14.4 Regulation of Stress](https://openstax.org/books/psychology-2e/pages/14-4-regulation-of-stress) | 部分：只涵蓋習得無助，沒有受虐婦女症候群 |
+| 109-心理學-3｜壓力與成癮的關聯及成癮的生理心理歷程 | [Psychology 2e 4.5 Substance Use and Abuse](https://openstax.org/books/psychology-2e/pages/4-5-substance-use-and-abuse)<br>[Psychology 2e 16.4 Substance-Related and Addictive Disorders: A Special Case](https://openstax.org/books/psychology-2e/pages/16-4-substance-related-and-addictive-disorders-a-special-case) | 完整 |
+| 109-心理學-4｜選用憂鬱量表的信度與效度證據 | [Psychology 2e 2.3 Analyzing Findings](https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings) | 部分：研究方法層次的信效度，沒有量表選用的細節 |
+| 110-心理學-1｜心智異常的定義、判斷標準與心理衡鑑方法 | [Psychology 2e 15.1 What Are Psychological Disorders?](https://openstax.org/books/psychology-2e/pages/15-1-what-are-psychological-disorders)<br>[Psychology 2e 11.9 Personality Assessment](https://openstax.org/books/psychology-2e/pages/11-9-personality-assessment) | 完整 |
+| 110-心理學-2｜Beck 認知理論與 Seligman 歸因風格解釋憂鬱及認知治療 | [Psychology 2e 15.7 Depressive, Bipolar, and Related Disorders](https://openstax.org/books/psychology-2e/pages/15-7-depressive-bipolar-and-related-disorders)<br>[Psychology 2e 16.2 Types of Treatment](https://openstax.org/books/psychology-2e/pages/16-2-types-of-treatment) | 部分：有 Beck 的憂鬱認知理論與認知治療，沒有 Seligman 歸因風格 |
+| 110-心理學-3｜情緒的四個元素與運作特性 | [Psychology 2e 10.4 Emotion](https://openstax.org/books/psychology-2e/pages/10-4-emotion) | 完整 |
+| 110-心理學-4｜Kohlberg 道德發展六階段 | [Psychology 2e 9.2 Lifespan Theories](https://openstax.org/books/psychology-2e/pages/9-2-lifespan-theories) | 完整 |
+| 111-心理學-2｜體質壓力模型與心理異常成因 | [Psychology 2e 15.3 Perspectives on Psychological Disorders](https://openstax.org/books/psychology-2e/pages/15-3-perspectives-on-psychological-disorders) | 完整 |
+| 111-心理學-3｜去個人化現象及其影響 | [Psychology 2e 12.4 Conformity, Compliance, and Obedience](https://openstax.org/books/psychology-2e/pages/12-4-conformity-compliance-and-obedience) | 完整 |
+| 111-心理學-4｜影響兒童智力發展的環境因素 | [Psychology 2e 7.6 The Source of Intelligence](https://openstax.org/books/psychology-2e/pages/7-6-the-source-of-intelligence)<br>[Lifespan 7.3 Intelligence in Middle Childhood](https://openstax.org/books/lifespan-development/pages/7-3-intelligence-in-middle-childhood) | 完整 |
+| 113-心理學-1｜建構性記憶與目擊證詞的再建構 | [Psychology 2e 8.3 Problems with Memory](https://openstax.org/books/psychology-2e/pages/8-3-problems-with-memory) | 完整 |
+| 113-心理學-2｜快思慢想與可得性捷思 | [Psychology 2e 7.3 Problem Solving](https://openstax.org/books/psychology-2e/pages/7-3-problem-solving) | 完整 |
+| 113-心理學-3｜Sternberg 成功智力理論與 AI 世代青少年 | [Psychology 2e 7.4 What Are Intelligence and Creativity?](https://openstax.org/books/psychology-2e/pages/7-4-what-are-intelligence-and-creativity) | 完整 |
+| 113-心理學-4｜Seligman 積極富能（PERMA）五向度與青少年心理健康 | [Psychology 2e 14.5 The Pursuit of Happiness](https://openstax.org/books/psychology-2e/pages/14-5-the-pursuit-of-happiness) | 部分：有正向心理學概述，沒有 PERMA 五向度 |
+| 114-心理學-1｜信度與效度的概念，以及高信度低效度的問題 | [Psychology 2e 2.3 Analyzing Findings](https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings) | 完整 |
+| 114-心理學-2｜團體決策更極端的心理歷程 | [Psychology 2e 12.4 Conformity, Compliance, and Obedience](https://openstax.org/books/psychology-2e/pages/12-4-conformity-compliance-and-obedience) | 完整 |
+| 114-心理學-3｜功能固著與突破固著的策略 | [Psychology 2e 7.3 Problem Solving](https://openstax.org/books/psychology-2e/pages/7-3-problem-solving) | 完整 |
+| 114-心理學-4｜一般適應症候群與長期照顧壓力 | [Psychology 2e 14.1 What Is Stress?](https://openstax.org/books/psychology-2e/pages/14-1-what-is-stress) | 完整 |
+| 115-心理學-1｜精神分析論與五大人格特質論的比較及司法心理意涵 | [Psychology 2e 11.2 Freud and the Psychodynamic Perspective](https://openstax.org/books/psychology-2e/pages/11-2-freud-and-the-psychodynamic-perspective)<br>[Psychology 2e 11.7 Trait Theorists](https://openstax.org/books/psychology-2e/pages/11-7-trait-theorists) | 完整 |
+| 115-心理學-3｜Elkind 個人神話與矯正不當認知 | [Lifespan 9.3 Cognition in Adolescence](https://openstax.org/books/lifespan-development/pages/9-3-cognition-in-adolescence) | 完整 |
+| 115-心理學-4｜以三種發展理論分析科技媒體對青少年的影響與處遇 | [Psychology 2e 6.4 Observational Learning (Modeling)](https://openstax.org/books/psychology-2e/pages/6-4-observational-learning-modeling)<br>[Lifespan 1.4 Contexts and Settings of Development](https://openstax.org/books/lifespan-development/pages/1-4-contexts-and-settings-of-development)<br>[Psychology 2e 9.2 Lifespan Theories](https://openstax.org/books/psychology-2e/pages/9-2-lifespan-theories) | 完整 |
+| 108-諮商與輔導-4｜大五人格測驗與貝克憂鬱量表 | [Psychology 2e 11.7 Trait Theorists](https://openstax.org/books/psychology-2e/pages/11-7-trait-theorists) | 部分：只涵蓋五大人格，沒有貝克憂鬱量表 |
+| 109-諮商與輔導-1｜Freud 與存在主義的焦慮意義及處理 | [Psychology 2e 11.2 Freud and the Psychodynamic Perspective](https://openstax.org/books/psychology-2e/pages/11-2-freud-and-the-psychodynamic-perspective) | 部分：只涵蓋 Freud 部分，沒有存在主義焦慮 |
+| 109-諮商與輔導-2｜DSM-5 重鬱症的診斷標準 | [Psychology 2e 15.7 Depressive, Bipolar, and Related Disorders](https://openstax.org/books/psychology-2e/pages/15-7-depressive-bipolar-and-related-disorders) | 完整 |
+| 109-諮商與輔導-3｜敘事治療與精神分析處理早期經驗的技術差異 | [Psychology 2e 16.2 Types of Treatment](https://openstax.org/books/psychology-2e/pages/16-2-types-of-treatment) | 部分：只涵蓋精神分析技術，沒有敘事治療 |
+| 110-諮商與輔導-1｜心理動力與存在主義對覺察的觀點及比較 | [Psychology 2e 16.2 Types of Treatment](https://openstax.org/books/psychology-2e/pages/16-2-types-of-treatment) | 部分：只涵蓋心理動力部分，沒有存在主義 |
+| 112-諮商與輔導-3｜網路霸凌的成因、行為、影響與處遇 | [Psychology 2e 12.6 Aggression](https://openstax.org/books/psychology-2e/pages/12-6-aggression) | 部分：只涵蓋網路霸凌定義，沒有處遇 |
+| 113-諮商與輔導-4｜Adler 自卑與追求卓越的平衡 | [Psychology 2e 11.3 Neo-Freudians: Adler, Erikson, Jung, and Horney](https://openstax.org/books/psychology-2e/pages/11-3-neo-freudians-adler-erikson-jung-and-horney) | 完整 |
+| 114-諮商與輔導-2｜Beck 四種認知扭曲與好鬥少年 | [Psychology 2e 16.2 Types of Treatment](https://openstax.org/books/psychology-2e/pages/16-2-types-of-treatment) | 完整 |
+| 115-諮商與輔導-2｜Jung 分析心理學與曝險少年 | [Psychology 2e 11.3 Neo-Freudians: Adler, Erikson, Jung, and Horney](https://openstax.org/books/psychology-2e/pages/11-3-neo-freudians-adler-erikson-jung-and-horney) | 完整 |
+| 監獄官-110-犯罪學與再犯預測-2｜偏差行為漏斗效應與無被害者犯罪特性 | [Sociology 3e 7.1 Deviance and Control](https://openstax.org/books/introduction-sociology-3e/pages/7-1-deviance-and-control)<br>[Sociology 3e 7.3 Crime and the Law](https://openstax.org/books/introduction-sociology-3e/pages/7-3-crime-and-the-law) | 部分：沒有漏斗效應 |
+| 監獄官-111-犯罪學與再犯預測-2｜標籤理論與 Finckenauer 的 4D 策略 | [Sociology 3e 7.2 Theoretical Perspectives on Deviance and Crime](https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime) | 部分：只涵蓋標籤理論，沒有 4D 策略 |
+| 監獄官-114-犯罪學與再犯預測-2｜Bandura 與 Akers 學習理論差異及詐欺犯罪 | [Psychology 2e 6.4 Observational Learning (Modeling)](https://openstax.org/books/psychology-2e/pages/6-4-observational-learning-modeling)<br>[Sociology 3e 7.2 Theoretical Perspectives on Deviance and Crime](https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime) | 部分：沒有 Akers 差別增強理論 |
+| 監獄官-114-犯罪學與再犯預測-3｜精神障礙者暴力犯罪成因與監護處分的預防學理 | [Psychology 2e 15.8 Schizophrenia](https://openstax.org/books/psychology-2e/pages/15-8-schizophrenia) | 部分：只涵蓋症狀，沒有暴力風險與監護處分 |
+| 監獄官-108-諮商與矯正輔導-1｜Beck 認知三層次：以走私犯為例 | [Psychology 2e 16.2 Types of Treatment](https://openstax.org/books/psychology-2e/pages/16-2-types-of-treatment) | 部分：有 Beck 認知治療，沒有認知三層次 |
+| 監獄官-108-諮商與矯正輔導-3｜酒精使用障礙症的症狀與戒斷反應 | [Psychology 2e 4.5 Substance Use and Abuse](https://openstax.org/books/psychology-2e/pages/4-5-substance-use-and-abuse) | 完整 |
+| 監獄官-108-諮商與矯正輔導-4｜人格障礙症、行為規範障礙與反社會型人格障礙症 | [Psychology 2e 15.11 Personality Disorders](https://openstax.org/books/psychology-2e/pages/15-11-personality-disorders) | 完整 |
+| 監獄官-111-諮商與矯正輔導-2｜行為規範障礙症狀與 Bowen 取向處遇 | [Lifespan 8.5 Atypical Development and Interventions in Middle Childhood](https://openstax.org/books/lifespan-development/pages/8-5-atypical-development-and-interventions-in-middle-childhood) | 部分：只涵蓋行為規範障礙，沒有 Bowen 取向 |
+| 監獄官-113-諮商與矯正輔導-1｜三學派對抗拒的觀點與處理 | [Psychology 2e 16.2 Types of Treatment](https://openstax.org/books/psychology-2e/pages/16-2-types-of-treatment) | 完整 |
+| 監獄官-113-諮商與矯正輔導-2｜暴力代間傳遞與介入技術 | [Psychology 2e 6.4 Observational Learning (Modeling)](https://openstax.org/books/psychology-2e/pages/6-4-observational-learning-modeling) | 部分：只涵蓋社會學習，沒有 Bowen |
+| 監獄官-114-諮商與矯正輔導-1｜Adler 學派在矯正機關的運用 | [Psychology 2e 11.3 Neo-Freudians: Adler, Erikson, Jung, and Horney](https://openstax.org/books/psychology-2e/pages/11-3-neo-freudians-adler-erikson-jung-and-horney) | 完整 |
+| 監獄官-115-諮商與矯正輔導-1｜成癮團體中「你沒用過毒」的挑戰與移情 | [Psychology 2e 16.2 Types of Treatment](https://openstax.org/books/psychology-2e/pages/16-2-types-of-treatment) | 完整 |
+| 監獄官-115-諮商與矯正輔導-4｜自傷自殺高風險判斷與系統合作 | [Psychology 2e 15.7 Depressive, Bipolar, and Related Disorders](https://openstax.org/books/psychology-2e/pages/15-7-depressive-bipolar-and-related-disorders) | 完整 |
+| 薦任升等（矯正）-108-心理測驗-2｜離差智商轉換 Z、T 與 PR | [Psychology 2e 7.5 Measures of Intelligence](https://openstax.org/books/psychology-2e/pages/7-5-measures-of-intelligence) | 完整 |
+| 薦任升等（矯正）-114-心理測驗-1｜信度與效度的理論差異 | [Psychology 2e 2.3 Analyzing Findings](https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings) | 完整 |
+| 薦任升等（矯正）-108-犯罪學-2｜Hare 心理病態特徵與犯罪 | [Psychology 2e 15.11 Personality Disorders](https://openstax.org/books/psychology-2e/pages/15-11-personality-disorders) | 部分：有反社會人格障礙，沒有 Hare 心理病態檢核表 |
+| 薦任升等（矯正）-110-犯罪學-1｜自我控制與標籤理論看監獄矯治失敗 | [Sociology 3e 7.2 Theoretical Perspectives on Deviance and Crime](https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime) | 部分：只涵蓋標籤理論，沒有自我控制理論 |
+| 薦任升等（矯正）-110-犯罪學-2｜制度性迷亂理論與投資詐騙被害 | [Sociology 3e 7.2 Theoretical Perspectives on Deviance and Crime](https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime) | 部分：只涵蓋 Merton 緊張理論，沒有制度性迷亂理論 |
+| 薦任升等（矯正）-114-犯罪學-2｜Bandura 攻擊學習與矯正管理 | [Psychology 2e 6.4 Observational Learning (Modeling)](https://openstax.org/books/psychology-2e/pages/6-4-observational-learning-modeling) | 部分：只涵蓋觀察學習，沒有矯正管理 |
+| 薦任升等（矯正）-108-諮商與輔導-2｜酒藥癮的耐受與戒斷及瑞士方案 | [Psychology 2e 4.5 Substance Use and Abuse](https://openstax.org/books/psychology-2e/pages/4-5-substance-use-and-abuse) | 部分：沒有瑞士海洛因方案 |
+| 薦任升等（矯正）-110-諮商與輔導-2｜憤怒管理：認知治療或個人中心 | [Psychology 2e 16.2 Types of Treatment](https://openstax.org/books/psychology-2e/pages/16-2-types-of-treatment) | 完整 |
+| 薦任升等（矯正）-112-諮商與輔導-2｜以 MBSR 與 MBCT 達成社會情緒學習 | [Psychology 2e 4.6 Other States of Consciousness](https://openstax.org/books/psychology-2e/pages/4-6-other-states-of-consciousness) | 部分：只涵蓋冥想，沒有 MBSR／MBCT 與社會情緒學習 |
+| 薦任升等（矯正）-114-諮商與輔導-3｜Rogers 六項條件應用於霸凌受害者 | [Psychology 2e 16.2 Types of Treatment](https://openstax.org/books/psychology-2e/pages/16-2-types-of-treatment)<br>[Psychology 2e 11.5 Humanistic Approaches](https://openstax.org/books/psychology-2e/pages/11-5-humanistic-approaches) | 完整 |
+| 薦任升等（矯正）-114-諮商與輔導-4｜BPD 的替代模式分析與犯罪風險 | [Psychology 2e 15.11 Personality Disorders](https://openstax.org/books/psychology-2e/pages/15-11-personality-disorders) | 部分：有邊緣型人格障礙，沒有 DSM-5 替代模式 |
+| police-108-psychology-1｜五個心理學名詞解釋 | [Psychology 2e 6.4 Observational Learning (Modeling)](https://openstax.org/books/psychology-2e/pages/6-4-observational-learning-modeling)<br>[Psychology 2e 10.4 Emotion](https://openstax.org/books/psychology-2e/pages/10-4-emotion)<br>[Psychology 2e 8.4 Ways to Enhance Memory](https://openstax.org/books/psychology-2e/pages/8-4-ways-to-enhance-memory)<br>[Psychology 2e 12.4 Conformity, Compliance, and Obedience](https://openstax.org/books/psychology-2e/pages/12-4-conformity-compliance-and-obedience) | 完整 |
+| police-108-psychology-2｜由上而下與由下而上歷程 | [Psychology 2e 5.1 Sensation versus Perception](https://openstax.org/books/psychology-2e/pages/5-1-sensation-versus-perception) | 完整 |
+| police-108-psychology-3｜以處罰防止兒童不當行為 | [Psychology 2e 6.3 Operant Conditioning](https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning) | 完整 |
+| police-109-psychology-1｜飢餓與飽足的腦部兩階段歷程 | [Psychology 2e 10.2 Hunger and Eating](https://openstax.org/books/psychology-2e/pages/10-2-hunger-and-eating) | 完整 |
+| police-109-psychology-2｜Yerkes-Dodson 法則 | [Psychology 2e 10.1 Motivation](https://openstax.org/books/psychology-2e/pages/10-1-motivation) | 完整 |
+| police-109-psychology-3｜自閉症類群障礙症的生理因素 | [Psychology 2e 15.10 Disorders in Childhood](https://openstax.org/books/psychology-2e/pages/15-10-disorders-in-childhood) | 完整 |
+| police-109-psychology-4｜內在與外在動機對學習的影響 | [Psychology 2e 10.1 Motivation](https://openstax.org/books/psychology-2e/pages/10-1-motivation) | 完整 |
+| police-110-psychology-1｜遺忘的原因 | [Psychology 2e 8.3 Problems with Memory](https://openstax.org/books/psychology-2e/pages/8-3-problems-with-memory) | 完整 |
+| police-110-psychology-2｜團體迷思 | [Psychology 2e 12.4 Conformity, Compliance, and Obedience](https://openstax.org/books/psychology-2e/pages/12-4-conformity-compliance-and-obedience) | 完整 |
+| police-110-psychology-3｜五個名詞解釋（英文） | [Psychology 2e 8.1 How Memory Functions](https://openstax.org/books/psychology-2e/pages/8-1-how-memory-functions)<br>[Psychology 2e 15.8 Schizophrenia](https://openstax.org/books/psychology-2e/pages/15-8-schizophrenia)<br>[Psychology 2e 15.11 Personality Disorders](https://openstax.org/books/psychology-2e/pages/15-11-personality-disorders) | 完整 |
+| police-110-psychology-4｜Freud 防衛機制 | [Psychology 2e 11.2 Freud and the Psychodynamic Perspective](https://openstax.org/books/psychology-2e/pages/11-2-freud-and-the-psychodynamic-perspective) | 完整 |
+| police-111-psychology-1｜壓力的反應取向與互動取向 | [Psychology 2e 14.1 What Is Stress?](https://openstax.org/books/psychology-2e/pages/14-1-what-is-stress) | 完整 |
+| police-111-psychology-2｜記憶提取與目擊證詞 | [Psychology 2e 8.3 Problems with Memory](https://openstax.org/books/psychology-2e/pages/8-3-problems-with-memory) | 完整 |
+| police-111-psychology-3｜用路人違規的心理歷程 | [Psychology 2e 12.1 What Is Social Psychology?](https://openstax.org/books/psychology-2e/pages/12-1-what-is-social-psychology)<br>[Psychology 2e 12.3 Attitudes and Persuasion](https://openstax.org/books/psychology-2e/pages/12-3-attitudes-and-persuasion)<br>[Psychology 2e 11.2 Freud and the Psychodynamic Perspective](https://openstax.org/books/psychology-2e/pages/11-2-freud-and-the-psychodynamic-perspective) | 完整 |
+| police-111-psychology-4｜詐騙集團的強制說服 | [Psychology 2e 12.3 Attitudes and Persuasion](https://openstax.org/books/psychology-2e/pages/12-3-attitudes-and-persuasion)<br>[Psychology 2e 12.4 Conformity, Compliance, and Obedience](https://openstax.org/books/psychology-2e/pages/12-4-conformity-compliance-and-obedience) | 部分：有說服與順從的概念，沒有強制說服 |
+| police-112-psychology-1｜旁觀者效應 | [Psychology 2e 12.6 Aggression](https://openstax.org/books/psychology-2e/pages/12-6-aggression) | 完整 |
+| police-112-psychology-2｜認知評估與認知再評估 | [Psychology 2e 10.4 Emotion](https://openstax.org/books/psychology-2e/pages/10-4-emotion) | 完整 |
+| police-112-psychology-3｜投射測驗 | [Psychology 2e 11.9 Personality Assessment](https://openstax.org/books/psychology-2e/pages/11-9-personality-assessment) | 完整 |
+| police-112-psychology-4｜行為塑造 | [Psychology 2e 6.3 Operant Conditioning](https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning) | 完整 |
+| police-113-psychology-1｜腳在門檻裡與以退為進 | [Psychology 2e 12.3 Attitudes and Persuasion](https://openstax.org/books/psychology-2e/pages/12-3-attitudes-and-persuasion) | 部分：只涵蓋腳在門檻裡，沒有以退為進 |
+| police-113-psychology-2｜睡眠、藥物與毒品對意識的影響 | [Psychology 2e 4.3 Stages of Sleep](https://openstax.org/books/psychology-2e/pages/4-3-stages-of-sleep)<br>[Psychology 2e 4.5 Substance Use and Abuse](https://openstax.org/books/psychology-2e/pages/4-5-substance-use-and-abuse) | 完整 |
+| police-113-psychology-3｜Maslow 需求階層與生活型態 | [Psychology 2e 10.1 Motivation](https://openstax.org/books/psychology-2e/pages/10-1-motivation) | 完整 |
+| police-113-psychology-4｜以 Bandura 社會學習理論解釋犯罪 | [Psychology 2e 6.4 Observational Learning (Modeling)](https://openstax.org/books/psychology-2e/pages/6-4-observational-learning-modeling) | 完整 |
+| police-114-psychology-1｜成長、維持與失去的全人發展 | [Lifespan 16.5 Successful Social and Emotional Aging in Late Adulthood](https://openstax.org/books/lifespan-development/pages/16-5-successful-social-and-emotional-aging-in-late-adulthood)<br>[Sociology 3e 13.4 Theoretical Perspectives on Aging](https://openstax.org/books/introduction-sociology-3e/pages/13-4-theoretical-perspectives-on-aging) | 部分：有 SOC 選擇、最適化與補償，沒有成長、維持、失去調節三目標 |
+| police-114-psychology-2｜猝睡症的主要症狀 | [Psychology 2e 4.4 Sleep Problems and Disorders](https://openstax.org/books/psychology-2e/pages/4-4-sleep-problems-and-disorders) | 完整 |
+| police-115-psychology-1｜Bandura 自我效能與青少年 | [Psychology 2e 11.4 Learning Approaches](https://openstax.org/books/psychology-2e/pages/11-4-learning-approaches) | 完整 |
+| police-115-psychology-2｜三大經典學習理論 | [Psychology 2e 6.2 Classical Conditioning](https://openstax.org/books/psychology-2e/pages/6-2-classical-conditioning)<br>[Psychology 2e 6.3 Operant Conditioning](https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning)<br>[Psychology 2e 6.4 Observational Learning (Modeling)](https://openstax.org/books/psychology-2e/pages/6-4-observational-learning-modeling) | 完整 |
+| police-108-criminology_prevention-1｜人性觀如何影響四種犯罪學理論 | [Sociology 3e 7.2 Theoretical Perspectives on Deviance and Crime](https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime) | 部分：沒有古典學派的理性享樂觀 |
+| police-108-criminology_prevention-2｜Sampson 社區脈絡與暴力犯罪 | [Sociology 3e 7.2 Theoretical Perspectives on Deviance and Crime](https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime) | 部分：只涵蓋社會解組論，沒有集體效能 |
+| police-108-criminology_prevention-3｜差別接觸與差別增強理論比較 | [Sociology 3e 7.2 Theoretical Perspectives on Deviance and Crime](https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime) | 部分：沒有 Akers 差別增強理論 |
+| police-111-criminology_prevention-2｜中立化技術 | [Sociology 3e 7.2 Theoretical Perspectives on Deviance and Crime](https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime) | 完整 |
+| police-112-criminology_prevention-1｜犯罪黑數 | [Sociology 3e 7.3 Crime and the Law](https://openstax.org/books/introduction-sociology-3e/pages/7-3-crime-and-the-law) | 完整 |
+| police-112-criminology_prevention-2｜Merton 與 Agnew 的緊張理論與詐欺 | [Sociology 3e 7.2 Theoretical Perspectives on Deviance and Crime](https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime) | 部分：只涵蓋 Merton，沒有 Agnew 一般化緊張理論 |
+| police-108-counseling-2｜Adler 學派 | [Psychology 2e 11.3 Neo-Freudians: Adler, Erikson, Jung, and Horney](https://openstax.org/books/psychology-2e/pages/11-3-neo-freudians-adler-erikson-jung-and-horney) | 完整 |
+| police-109-counseling-1｜理情治療與行為治療比較 | [Psychology 2e 16.2 Types of Treatment](https://openstax.org/books/psychology-2e/pages/16-2-types-of-treatment) | 完整 |
+| police-109-counseling-4｜五個諮商名詞解釋 | [Psychology 2e 16.2 Types of Treatment](https://openstax.org/books/psychology-2e/pages/16-2-types-of-treatment)<br>[Psychology 2e 11.3 Neo-Freudians: Adler, Erikson, Jung, and Horney](https://openstax.org/books/psychology-2e/pages/11-3-neo-freudians-adler-erikson-jung-and-horney) | 完整 |
+| police-110-counseling-4｜自殺與危機因子及輔導防治 | [Psychology 2e 15.7 Depressive, Bipolar, and Related Disorders](https://openstax.org/books/psychology-2e/pages/15-7-depressive-bipolar-and-related-disorders) | 完整 |
+| police-111-counseling-4｜國中生非自殺性自傷的輔導 | [Psychology 2e 15.7 Depressive, Bipolar, and Related Disorders](https://openstax.org/books/psychology-2e/pages/15-7-depressive-bipolar-and-related-disorders) | 完整 |
+| police-112-counseling-2｜初顯成人愛情團體方案 | [Lifespan 11.1 Becoming an Adult](https://openstax.org/books/lifespan-development/pages/11-1-becoming-an-adult)<br>[Lifespan 10.4 Social Contexts in Adolescence](https://openstax.org/books/lifespan-development/pages/10-4-social-contexts-in-adolescence) | 完整 |
+| police-114-counseling-2｜ASPD 的人格功能與病態特質 | [Psychology 2e 15.11 Personality Disorders](https://openstax.org/books/psychology-2e/pages/15-11-personality-disorders) | 部分：有反社會人格障礙，沒有 DSM-5 替代模式 |
+| police-114-counseling-3｜警察人員八週正念減壓課程 | [Psychology 2e 4.6 Other States of Consciousness](https://openstax.org/books/psychology-2e/pages/4-6-other-states-of-consciousness) | 部分：只涵蓋冥想，沒有八週正念減壓課程 |
+| 108-心理測驗員-心理學-1｜遺忘的因素與影響 | [Psychology 2e 8.3 Problems with Memory](https://openstax.org/books/psychology-2e/pages/8-3-problems-with-memory) | 完整 |
+| 108-心理測驗員-心理學-2｜為什麼需要睡眠與睡眠不足的後果 | [Psychology 2e 4.2 Sleep and Why We Sleep](https://openstax.org/books/psychology-2e/pages/4-2-sleep-and-why-we-sleep) | 完整 |
+| 108-心理測驗員-心理學-4｜退化、補償與合理化 | [Psychology 2e 11.2 Freud and the Psychodynamic Perspective](https://openstax.org/books/psychology-2e/pages/11-2-freud-and-the-psychodynamic-perspective) | 完整 |
+| 109-心理測驗員-心理學-1｜以內外在動機提高振興券使用 | [Psychology 2e 10.1 Motivation](https://openstax.org/books/psychology-2e/pages/10-1-motivation) | 完整 |
+| 109-心理測驗員-心理學-2｜社會學習與認知行為理論輔導偏差學生 | [Psychology 2e 6.4 Observational Learning (Modeling)](https://openstax.org/books/psychology-2e/pages/6-4-observational-learning-modeling)<br>[Psychology 2e 16.2 Types of Treatment](https://openstax.org/books/psychology-2e/pages/16-2-types-of-treatment) | 完整 |
+| 109-心理測驗員-心理學-3｜災難後的 PTSD | [Psychology 2e 15.6 Trauma- and Stressor-Related Disorders](https://openstax.org/books/psychology-2e/pages/15-6-trauma-and-stressor-related-disorders) | 完整 |
+| 109-心理測驗員-心理學-4｜增進記憶的方法 | [Psychology 2e 8.4 Ways to Enhance Memory](https://openstax.org/books/psychology-2e/pages/8-4-ways-to-enhance-memory) | 完整 |
+| 110-心理測驗員-心理學-1｜認知因素在學習中的重要性 | [Psychology 2e 6.3 Operant Conditioning](https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning)<br>[Psychology 2e 6.4 Observational Learning (Modeling)](https://openstax.org/books/psychology-2e/pages/6-4-observational-learning-modeling) | 完整 |
+| 110-心理測驗員-心理學-2｜知覺的認識與行動功能 | [Psychology 2e 5.6 Gestalt Principles of Perception](https://openstax.org/books/psychology-2e/pages/5-6-gestalt-principles-of-perception)<br>[Psychology 2e 6.4 Observational Learning (Modeling)](https://openstax.org/books/psychology-2e/pages/6-4-observational-learning-modeling) | 完整 |
+| 110-心理測驗員-心理學-3｜自我調節與自我效能 | [Psychology 2e 11.4 Learning Approaches](https://openstax.org/books/psychology-2e/pages/11-4-learning-approaches) | 完整 |
+| 110-心理測驗員-心理學-4｜團體決策為何常不佳 | [Psychology 2e 12.4 Conformity, Compliance, and Obedience](https://openstax.org/books/psychology-2e/pages/12-4-conformity-compliance-and-obedience) | 完整 |
+| 113-家事調查官-心理測驗員-心理學-1｜Ainsworth 四種依附與依附創傷 | [Psychology 2e 9.3 Stages of Development](https://openstax.org/books/psychology-2e/pages/9-3-stages-of-development) | 完整 |
+| 113-家事調查官-心理測驗員-心理學-4｜前額葉未成熟的青少年行為 | [Lifespan 9.4 Decision-Making and Risky Behaviors in Adolescence](https://openstax.org/books/lifespan-development/pages/9-4-decision-making-and-risky-behaviors-in-adolescence) | 完整 |
+| 114-家事調查官-心理測驗員-心理學-4｜基本歸因謬誤與自利偏誤 | [Psychology 2e 12.1 What Is Social Psychology?](https://openstax.org/books/psychology-2e/pages/12-1-what-is-social-psychology) | 完整 |
+| 115-家事調查官-心理測驗員-心理學-1｜MBTI 與大五人格的信效度 | [Psychology 2e 11.9 Personality Assessment](https://openstax.org/books/psychology-2e/pages/11-9-personality-assessment)<br>[Psychology 2e 11.7 Trait Theorists](https://openstax.org/books/psychology-2e/pages/11-7-trait-theorists) | 完整 |
+| 115-家事調查官-心理測驗員-心理學-2｜遊戲化機制的動機分析 | [Psychology 2e 10.1 Motivation](https://openstax.org/books/psychology-2e/pages/10-1-motivation) | 完整 |
+| 115-家事調查官-心理測驗員-心理學-3｜邊開車邊講電話的注意力問題 | [Psychology 2e 5.1 Sensation versus Perception](https://openstax.org/books/psychology-2e/pages/5-1-sensation-versus-perception) | 完整 |
+| 監所管理員-108-犯罪學概要-3｜無被害者犯罪的犯罪化與除罪化 | [Sociology 3e 7.3 Crime and the Law](https://openstax.org/books/introduction-sociology-3e/pages/7-3-crime-and-the-law) | 完整 |
+| 監所管理員-109-犯罪學概要-1｜自陳報告調查 | [Sociology 3e 7.3 Crime and the Law](https://openstax.org/books/introduction-sociology-3e/pages/7-3-crime-and-the-law) | 完整 |
+| 監所管理員-109-犯罪學概要-2｜Freud 心理分析與犯罪學 | [Psychology 2e 11.2 Freud and the Psychodynamic Perspective](https://openstax.org/books/psychology-2e/pages/11-2-freud-and-the-psychodynamic-perspective) | 完整 |
+| 監所管理員-111-犯罪學概要-2｜Hirschi 社會鍵與家庭 | [Sociology 3e 7.2 Theoretical Perspectives on Deviance and Crime](https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime) | 完整 |
 
 ## 完整書目
 

@@ -1,5 +1,6 @@
 'use strict';
-// Every source cited by a theory question in law-scoring/data.js must have a full reference in docs/theory-sources.json.
+// Every source cited by a theory question in law-scoring/data.js must have a full reference in docs/theory-sources.json,
+// and docs/theory-openstax.json must account for every theory question.
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const root=path.resolve(__dirname,'..');
 const sandbox={window:{}};
@@ -20,5 +21,24 @@ for(const q of sandbox.window.LawScoringData.questions.filter(q=>q.kind==='theor
     if(!known.has(a))errors.push('no reference for "'+a+'" ('+q.id+')');
   }
 for(const c of known)if(!used.has(c))errors.push('unused entry: '+c);
+// docs/theory-openstax.json: textbook sections mapped to theory questions.
+const ox=JSON.parse(fs.readFileSync(path.join(root,'docs/theory-openstax.json'),'utf8'));
+const theoryIds=new Set(sandbox.window.LawScoringData.questions.filter(q=>q.kind==='theory').map(q=>q.id));
+const mapped=new Set();
+for(const q of ox.questions){
+  if(!theoryIds.has(q.id))errors.push('openstax: unknown question '+q.id);
+  if(mapped.has(q.id))errors.push('openstax: duplicate question '+q.id);
+  mapped.add(q.id);
+  if(q.coverage!=='full'&&q.coverage!=='partial')errors.push('openstax: bad coverage for '+q.id);
+  if(q.coverage==='partial'&&!q.note)errors.push('openstax: partial without note for '+q.id);
+  if(!q.sections.length)errors.push('openstax: no sections for '+q.id);
+  for(const s of q.sections){
+    if(!ox.books[s.book])errors.push('openstax: unknown book "'+s.book+'" ('+q.id+')');
+    if(!/^https:\/\/openstax\.org\/books\/[a-z0-9-]+\/pages\/[a-z0-9-]+$/.test(s.url))errors.push('openstax: bad url '+s.url);
+    if(!s.matchedTerms||!s.matchedTerms.length)errors.push('openstax: no matched terms for '+q.id+' '+s.section);
+  }
+}
+for(const id of ox.uncovered){if(mapped.has(id)||!theoryIds.has(id))errors.push('openstax: bad uncovered id '+id);mapped.add(id);}
+if(mapped.size!==theoryIds.size)errors.push('openstax: '+(theoryIds.size-mapped.size)+' theory questions are neither mapped nor listed as uncovered');
 if(errors.length){console.error([...new Set(errors)].join('\n'));process.exit(1);}
-console.log('theory sources: '+used.size+' citations, all with full references');
+console.log('theory sources: '+used.size+' citations, all with full references; OpenStax sections for '+ox.questions.length+' questions');
