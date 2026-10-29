@@ -21,7 +21,7 @@
  function render(){
   const el=document.getElementById('dataHealthSummary');if(!el)return;
   let report;
-  try{report=examine(localStorage.getItem(KEY));}
+  try{report=examine(root.PSD_STUDY30_IDB_TEST===true?JSON.stringify({version:1,sessions:root.Study30App?.readSessions()||{}}):localStorage.getItem(KEY));}
   catch{report={ok:false,error:'目前無法讀取瀏覽器儲存空間。請確認沒有使用受限瀏覽模式。'};}
   if(!report.ok){el.dataset.risk='warning';el.textContent=report.error;return;}
   const units=(report.estimatedBytes/1024).toFixed(1);

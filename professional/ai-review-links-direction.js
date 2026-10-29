@@ -107,9 +107,9 @@
      appendLinks('essayExternalGuide',q);
      if(typeof api.currentDailyQuestion==='function')appendLinks('daily30ExternalGuide',api.currentDailyQuestion());
    }
-   textarea.addEventListener('input',()=>{
+   textarea.addEventListener('input',async()=>{
      const {id}=current();if(!id||id!==currentId){refresh();return;}
-     try{api.saveAiReview(id,textarea.value);$('daily30AiStatus').textContent='已儲存本題AI批改結果';$('daily30AiStatus').dataset.error='false';}
+     try{const saved=api.saveAiReview(id,textarea.value);if(root.PSD_STUDY30_IDB_TEST===true){$('daily30AiStatus').textContent='儲存中…';await saved;}$('daily30AiStatus').textContent='已儲存本題AI批改結果';$('daily30AiStatus').dataset.error='false';}
      catch(e){$('daily30AiStatus').textContent='儲存失敗：請先複製文字另存，檢查儲存空間';$('daily30AiStatus').dataset.error='true';}
    });
    copy.addEventListener('click',async()=>{

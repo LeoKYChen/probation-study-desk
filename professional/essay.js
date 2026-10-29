@@ -41,10 +41,17 @@
     const date=new Date(iso);
     return Number.isNaN(date.getTime())?'已有草稿':`已保存｜${date.toLocaleString('zh-TW',{timeZone:'Asia/Taipei',hour12:false,month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'})}`;
   }
-  function persistForm(){
+  let saveSequence=0;
+  async function persistForm(){
     const api=window.Study30App;
     if(!api||!activeId)return;
     const ok=api.saveEssay(activeId,getDraft());
+    const sequence=++saveSequence;
+    if(window.PSD_STUDY30_IDB_TEST===true && ok){
+      $('essaySaveStatus').textContent='儲存中…';
+      try{await api.whenSaved();}catch{if(sequence===saveSequence){$('essaySaveStatus').textContent='未能保存：請先複製文字或匯出。';$('essaySaveStatus').classList.add('essay-error');}return;}
+      if(sequence!==saveSequence)return;
+    }
     $('essaySaveStatus').textContent=ok?'已自動保存至本機':'未能保存：請勿關閉網頁，先複製文字或使用下方匯出功能。';
     $('essaySaveStatus').classList.toggle('essay-error',!ok);
     countText();

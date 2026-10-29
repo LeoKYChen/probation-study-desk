@@ -29,20 +29,20 @@
     {
       "path": "professional/data-health.js",
       "base_sha256": "d6b66b3712dbd6baefaf858819cf69b80a27f477a86fd95d159863664ee89a51",
-      "sha256": "023d54f85afe3d726ba19ede73835b4a507f00b32206c54b40e558c90a9e7c50",
-      "reason": "Remove obsolete claim that restore is not yet available; retain error and capacity warnings."
+      "sha256": "6bea588de7774f7a82c6edcc50c2c403ca79cf1fdb19edf7b93ca7bf1864045a",
+      "reason": "Remove obsolete claim that restore is not yet available; retain error and capacity warnings. [IndexedDB 草稿測試] 測試開關啟動非同步儲存；預設沿用既有模式。"
     },
     {
       "path": "professional/essay.js",
       "base_sha256": "edde057198d4fa3828ad9f7f1e12a0e609cae5861eca1979afd911eac0aa1716",
-      "sha256": "ccc7e2a9e91b49be44f13af5a98a2f2a53ce874ad5d56a0ffa109f676d6c7304",
-      "reason": "Remove outdated predicted-bank development note from exported source label."
+      "sha256": "39e015840d3e3123c150f82bec0e05fc6934a658eee3e5523c12d94aaebe8d13",
+      "reason": "Remove outdated predicted-bank development note from exported source label. [IndexedDB 草稿測試] 測試開關啟動非同步儲存；預設沿用既有模式。"
     },
     {
       "path": "professional/index.html",
       "base_sha256": "115a1a32e125e7215c4336f4d079d434588308f7fff7fb69e53f446352dddf4b",
-      "sha256": "ea1f66231dcf6bed9d67ab16252dd74dddd9327b82eea85f43081e546195167e",
-      "reason": "Slides 2,8–17: remove marked prose, add chart/history hosts, group health under existing import panel. Follow-up slides 24–29 remove marked text, retain actual-record forecast, shorten 10-minute label. Keep four-grid drafts and full answer expanded by default; remove explanation only. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22 AI practice] Add optional answer-direction review selector; keep existing full-answer mode, record keys and source bank intact. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。；2026-10-28 Stage2：統一 JSON 合併與衝突復原、同日申論版本保存、離線共用核心。；2026-10-28 Stage3：加入選擇啟用的 Google Drive OAuth 同步與快取，保留原有本機資料鍵。"
+      "sha256": "47e12b67208087d65bc048c26c3025d2077007383736d22a3fb022d82be0f41b",
+      "reason": "Slides 2,8–17: remove marked prose, add chart/history hosts, group health under existing import panel. Follow-up slides 24–29 remove marked text, retain actual-record forecast, shorten 10-minute label. Keep four-grid drafts and full answer expanded by default; remove explanation only. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22 AI practice] Add optional answer-direction review selector; keep existing full-answer mode, record keys and source bank intact. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。；2026-10-28 Stage2：統一 JSON 合併與衝突復原、同日申論版本保存、離線共用核心。；2026-10-28 Stage3：加入選擇啟用的 Google Drive OAuth 同步與快取，保留原有本機資料鍵。 [IndexedDB 草稿測試] 測試開關啟動非同步儲存；預設沿用既有模式。"
     },
     {
       "path": "professional/layout-followup.css",
@@ -83,14 +83,14 @@
     {
       "path": "professional/review-preview.js",
       "base_sha256": null,
-      "reason": "Slide 27 clarification: preview only the actual saved records and hypothetical reratings; no demo option or sample sessions, no storage writes. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。",
-      "sha256": "a42c36dd01b54467ad9d1ebed9d5a001889f2295c6d66228a9c072bc0e3c92d5"
+      "reason": "Slide 27 clarification: preview only the actual saved records and hypothetical reratings; no demo option or sample sessions, no storage writes. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。 [IndexedDB 草稿測試] 測試開關啟動非同步儲存；預設沿用既有模式。",
+      "sha256": "d00c5200d5d8d5d6e00b8710e3ab3fae7e1635539b25f919373625609da91329"
     },
     {
       "path": "professional/sw.js",
       "base_sha256": "40e49a0b907e3db282d42743613f7756e205dba51705dfba7e8efac533400e99",
-      "sha256": "507f937ecf72bec318ab2b1cdf60ed86238a13ff8466400a88d17fdac511bcf5",
-      "reason": "Refresh existing installed-viewer asset cache for changed UI, without altering storage keys. [2026-10-21] Rotate cache version after mobile duration CSS update, so previously installed Safari PWAs fetch a fresh layout on service-worker activation.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22] Bump offline cache to refresh AI review mode script for installed apps. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。；2026-10-28 獨立開發分支：安全 JSON 合併、版本承接與多分頁覆寫保護。；2026-10-28 Stage2：統一 JSON 合併與衝突復原、同日申論版本保存、離線共用核心。；2026-10-28 Stage3：加入選擇啟用的 Google Drive OAuth 同步與快取，保留原有本機資料鍵。"
+      "sha256": "ee1ee4b219e548e53bca3e140308d6fad71f57fb08d6a53b7e393aee68dd29cd",
+      "reason": "Refresh existing installed-viewer asset cache for changed UI, without altering storage keys. [2026-10-21] Rotate cache version after mobile duration CSS update, so previously installed Safari PWAs fetch a fresh layout on service-worker activation.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22] Bump offline cache to refresh AI review mode script for installed apps. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。；2026-10-28 獨立開發分支：安全 JSON 合併、版本承接與多分頁覆寫保護。；2026-10-28 Stage2：統一 JSON 合併與衝突復原、同日申論版本保存、離線共用核心。；2026-10-28 Stage3：加入選擇啟用的 Google Drive OAuth 同步與快取，保留原有本機資料鍵。 [IndexedDB 草稿] 離線快照加入測試所需腳本。"
     },
     {
       "path": "sw.js",
@@ -101,8 +101,8 @@
     {
       "path": "professional/practice-session.js",
       "base_sha256": null,
-      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.；2026-10-23 手機標示精簡及完整題庫資訊校正 [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。；2026-10-28 獨立開發分支：安全 JSON 合併、版本承接與多分頁覆寫保護。；2026-10-28 Stage2：統一 JSON 合併與衝突復原、同日申論版本保存、離線共用核心。；增加分支版本序號與空白草稿復原安全性。",
-      "sha256": "3b3833c79800683c5936a2dce67b927b1f1300185f301a4ead7aff3715042aef"
+      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.；2026-10-23 手機標示精簡及完整題庫資訊校正 [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。；2026-10-28 獨立開發分支：安全 JSON 合併、版本承接與多分頁覆寫保護。；2026-10-28 Stage2：統一 JSON 合併與衝突復原、同日申論版本保存、離線共用核心。；增加分支版本序號與空白草稿復原安全性。 [IndexedDB 草稿測試] 測試開關啟動非同步儲存；預設沿用既有模式。",
+      "sha256": "bc75c2746f3ffd55b79f9c00bf0368f292d82dc1167ba722daf16e3b3ac4ede0"
     },
     {
       "path": "professional/practice-review.js",
@@ -137,8 +137,8 @@
     {
       "path": "professional/ai-review-links-direction.js",
       "base_sha256": null,
-      "sha256": "4d8a33afbd2ad66de9199a885a3e07c2e83b4e6ada16af73dc7dfa08b4b8ab9b",
-      "reason": "[2026-10-22 AI directions] Versioned script builds optional non-scored outline diagnostic prompts while keeping frozen ai-review-links.js and user-record keys untouched. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources.；2026-10-23 手機標示精簡及完整題庫資訊校正"
+      "sha256": "b474f03894c78fdbc8f06e90ff2a3c312c857fc1684d31f707e8e91303994762",
+      "reason": "[2026-10-22 AI directions] Versioned script builds optional non-scored outline diagnostic prompts while keeping frozen ai-review-links.js and user-record keys untouched. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources.；2026-10-23 手機標示精簡及完整題庫資訊校正 [IndexedDB 草稿測試] 測試開關啟動非同步儲存；預設沿用既有模式。"
     },
     {
       "path": "professional/essay-review.js",
@@ -149,8 +149,14 @@
     {
       "path": "professional/backup-import.js",
       "base_sha256": "d05071d36dd4c09f5bc4367ef98c4f1d4ded9a80fdf105f5c01c446552c820cc",
-      "sha256": "0d3ca10734632e444215a8e5a86fc5d6a20b138d6a8e8b040f8a1084768fcee1",
-      "reason": "2026-10-28 Stage2：每日30分鐘備份匯入改用同一個完整備份安全合併引擎、移除覆寫全日期的高風險完整還原。"
+      "sha256": "d6e0247644c26e081a50884b265815dd40922b6f39ce2e4fba8a81251f845a98",
+      "reason": "2026-10-28 Stage2：每日30分鐘備份匯入改用同一個完整備份安全合併引擎、移除覆寫全日期的高風險完整還原。 [IndexedDB 草稿測試] 測試開關啟動非同步儲存；預設沿用既有模式。"
+    },
+    {
+      "path": "professional/essay-selfcheck.js",
+      "base_sha256": "6bb68901eaeff014658885e9d22fc5a02f2ebb2dbb7e8e9290b722526bf7d26d",
+      "sha256": "d15331e8e2a1784de6a892dcee15e2ce5c8d57b6d74c29986a357b2fabddd433",
+      "reason": "IndexedDB 測試開關：等待自評資料庫交易完成後才顯示已儲存；既有模式不變。"
     }
   ]
 }

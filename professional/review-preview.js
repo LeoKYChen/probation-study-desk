@@ -5,7 +5,7 @@
  const bank=Array.isArray(window.Study30QuestionSources?.all)?window.Study30QuestionSources.all:[];
  const labels={mastered:'能自行說明',partial:'還不完整',review:'需要再複習'};
  const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
- function readOnlySessions(){try{const parsed=JSON.parse(localStorage.getItem('probation-study30-v251:v1')||'null');return parsed?.version===1&&parsed.sessions&&typeof parsed.sessions==='object'&&!Array.isArray(parsed.sessions)?parsed.sessions:{};}catch{return {};}}
+ function readOnlySessions(){try{if(window.PSD_STUDY30_IDB_TEST===true)return window.Study30App?.readSessions()||{};const parsed=JSON.parse(localStorage.getItem('probation-study30-v251:v1')||'null');return parsed?.version===1&&parsed.sessions&&typeof parsed.sessions==='object'&&!Array.isArray(parsed.sessions)?parsed.sessions:{};}catch{return {};}}
  function eligible(row,subject){return subject.sunday||row.subject===subject.target||row.mappedSubjects?.includes(subject.target)||(row.subject==='刑事訴訟法與保安處分執行法'&&['刑事訴訟法','保安處分執行法'].includes(subject.target));}
  function recommendation(sessions,date){const subject=planner.subjectFor(date),data=core.model(sessions,bank,date);return {subject,data,match:data.due.find(row=>eligible(row,subject))};}
  let current=null;

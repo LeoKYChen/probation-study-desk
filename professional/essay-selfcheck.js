@@ -31,7 +31,7 @@
     }else if(wasLoaded){$('rubricSaveStatus').textContent='尚未填寫自評';}
     $('rubricStale').hidden=!(savedAt&&ctx?.draft?.updatedAt&&new Date(ctx.draft.updatedAt)>new Date(savedAt));
   }
-  function store(){
+  async function store(){
     if(!activeType||!currentQuestionId)return;
     const values=currentValue();
     if(!Core.validate(activeType,values)){
@@ -39,6 +39,7 @@
     }
     const ok=window.Study30App.saveEssayAssessment(currentQuestionId,values);
     if(!ok){$('rubricSaveStatus').textContent='儲存失敗，請匯出JSON備份並檢查儲存空間。';return;}
+    if(window.PSD_STUDY30_IDB_TEST===true){$('rubricSaveStatus').textContent='儲存中…';try{await window.Study30App.whenSaved();}catch{$('rubricSaveStatus').textContent='儲存失敗，請匯出備份。';return;}}
     lastData=window.Study30App.essayAssessmentContext()?.assessment||null;
     resultDisplay(lastData,context());
     window.dispatchEvent(new CustomEvent('study30:essay-assessed'));

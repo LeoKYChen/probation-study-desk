@@ -132,6 +132,7 @@
  }
  function init(){
   if(!$('importBackupFile'))return;
+  if(window.PSD_STUDY30_IDB_TEST===true){const panel=$('importBackupFile').closest('section');if(panel)panel.hidden=true;return;}
   $('importBackupFile').addEventListener('change',e=>onFile(e.target.files?.[0]));
   $('downloadBeforeImport').addEventListener('click',downloadCurrent);
   $('importBackupConfirmed').addEventListener('change',ready);

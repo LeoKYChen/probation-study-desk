@@ -30,6 +30,7 @@ ROOT_FILES = {
     "favicon.svg",
 }
 SITE_DIRS = {
+    "storage",
     "study-desk",
     "police-exams",
     "cloud-sync",
@@ -91,6 +92,8 @@ REQUIRED = (
 
 def allowed(path: str) -> bool:
     parts = PurePosixPath(path).parts
+    if parts and parts[0] == "storage" and path != "storage/indexeddb.js":
+        return False
     if parts and parts[0] == "cloud-sync" and not path.endswith(".js"):
         return False
     if not parts or any(part in DENY_PARTS for part in parts):

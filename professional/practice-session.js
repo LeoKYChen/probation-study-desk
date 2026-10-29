@@ -38,6 +38,8 @@
   const phaseTitles = (iso) => subjectFor(iso).sunday ? ['錯題重答與複習','共同科目'] : ['主動回想','理解與解題','申論架構','錯誤整理'];
   const blank = () => ({version:1,sessions:{}});
   const DEVICE_KEY='psd-study30-sync-device-v1';
+  const idbTestMode=window.PSD_STUDY30_IDB_TEST===true;
+  let idbRepository=null,idbDatabase=null;
   let store=blank(),session=null,running=false,lastTickMs=0,canSave=true,selectedPracticeDate=null,lastStoredRaw=null,deviceId=null;
   const say = message=>{$('notice').textContent=message;$('notice').hidden=false;};
   function identifier(){return (typeof crypto!=='undefined'&&typeof crypto.randomUUID==='function')
@@ -65,6 +67,11 @@
   function load(){try{const raw=localStorage.getItem(KEY);lastStoredRaw=raw;if(raw){const parsed=JSON.parse(raw);if(parsed?.version===1&&parsed.sessions&&typeof parsed.sessions==='object'&&!Array.isArray(parsed.sessions))store=parsed;else throw Error('版本不符');}}catch(e){canSave=false;say('無法讀取30分鐘紀錄，未覆寫原資料。本次可練習，但離開前務必匯出備份。');}}
   function persist(){
     if(!canSave)return;
+    if(idbTestMode){
+      try{stampRevision();idbRepository.write(store).catch(e=>{canSave=false;say('本機儲存失敗：'+e.message+'。請先匯出本模組紀錄。');});}
+      catch(e){canSave=false;say('本機儲存失敗：'+e.message+'。請先匯出本模組紀錄。');}
+      return;
+    }
     try{
       // A stale tab must not overwrite newer edits on the same origin.
       if(localStorage.getItem(KEY)!==lastStoredRaw){
@@ -169,7 +176,11 @@
   const hasEssayProgress=()=>Object.values(session?.essayDrafts||{}).some(d => !!(d && (String(d.fullAnswer||'').trim() || (Array.isArray(d.outline) && d.outline.some(x=>String(x||'').trim())))));
   const hasProgress=()=>session.elapsed>0||session.phase>0||session.notes.some(s=>String(s||'').trim())||session.finished||!!session.rating||!!session.errorCause||hasEssayProgress()||Object.keys(session?.essayAssessments||{}).length>0||Object.keys(session?.practiceRatings||{}).length>0;
   const currentTotal=()=>durations(session.date,session.mode).length;
-  function updateAnswer(){session.notes[session.phase]=$('answer').value;session.updatedAt=new Date().toISOString();persist();$('answerStatus').textContent='已保存於目前瀏覽器';renderControls();}
+  function updateAnswer(){session.notes[session.phase]=$('answer').value;session.updatedAt=new Date().toISOString();persist();
+    if(idbTestMode){$('answerStatus').textContent='儲存中…';whenSaved().then(()=>{$('answerStatus').textContent='已保存於目前瀏覽器';}).catch(()=>{$('answerStatus').textContent='儲存失敗，請先複製文字備份';});}
+    else $('answerStatus').textContent='已保存於目前瀏覽器';renderControls();}
+  function whenSaved(){return idbTestMode ? idbRepository.flush() : canSave?Promise.resolve():Promise.reject(Error('本機儲存失敗'));}
+
   function setMode(mode){
     if(!['30','10'].includes(mode)||session.mode===mode)return;
     pause();
@@ -273,7 +284,7 @@
     $('confirmClearRecords').disabled=true;
     dialog.showModal();
   }
-  function clearRecords(event){
+  async function clearRecords(event){
     event.preventDefault();
     if($('clearConfirmation').value.trim()!=='清除')return;
     const scope=document.querySelector('input[name="clearScope"]:checked')?.value;
@@ -283,6 +294,12 @@
     if(!window.confirm(message))return;
     pause();
     try{
+      if(idbTestMode){
+        await whenSaved();
+        const next=scope==='all'?blank():{...store,sessions:{...store.sessions}};
+        if(scope==='today')delete next.sessions[isoTaipei()];
+        await idbRepository.write(next);store=next;
+      } else {
       if(localStorage.getItem(KEY)!==lastStoredRaw)throw Error('另一個分頁已更新紀錄，不能以舊版清除');
       if(scope==='all'){
         // Deleting only our namespaced key avoids changing any existing v2.5 data.
@@ -297,6 +314,7 @@
         lastStoredRaw=raw;
         store=next;
       }
+      }
     }catch(error){
       say('清除失敗：瀏覽器無法修改本機儲存空間，原本的紀錄仍保留。');
       $('clearRecordsDialog').close();
@@ -310,7 +328,15 @@
     $('clearRecordsDialog').close();
     say(scope==='all'?'已清除每日30分鐘模組的全部紀錄；今日任務重新開始。':'今天的學習紀錄已清除，可以重新開始。');
   }
-  function start(){load();loadToday();if(session&&!session._sync)persist();
+  async function start(){
+    if(idbTestMode){
+      try{
+        idbDatabase=await window.PSDLearningStorage.open();
+        idbRepository=await window.Study30IndexedRepository.open({database:idbDatabase,legacy:localStorage});
+        store=idbRepository.read();
+      }catch(e){canSave=false;say('無法安全讀取測試資料：'+e.message+'。原始資料未刪除。');return;}
+    }else load();
+    loadToday();if(session&&!session._sync)persist();
     document.querySelectorAll('[data-practice-rating]').forEach(button=>button.addEventListener('click',()=>savePracticeRating(button.dataset.practiceRating)));
     $('practiceErrorCause').addEventListener('change',event=>{
       const ctx=essayContext(),saved=session.practiceRatings?.[practiceKey(ctx)];
@@ -427,11 +453,11 @@
  function saveAiReview(id,text) {
   if(!session||typeof id!=='string'||!id||id.length>300||typeof text!=='string'||text.length>120000)throw Error('AI評語格式或長度不符');
   if(!canSave)throw Error('本機儲存不可用');
-  if(localStorage.getItem(KEY)!==lastStoredRaw)throw Error('另一分頁已有更新，請先匯出備份再重新整理');
+  if(!idbTestMode&&localStorage.getItem(KEY)!==lastStoredRaw)throw Error('另一分頁已有更新，請先匯出備份再重新整理');
   const prev=session.aiReviewTexts, prevTime=session.updatedAt, prevSync=session._sync;
   session.aiReviewTexts={...(prev||{}),[id]:text};
   session.updatedAt=new Date().toISOString();
-  try { stampRevision();const raw=JSON.stringify(store);localStorage.setItem(KEY,raw);lastStoredRaw=raw; }
+  try { if(idbTestMode){persist();return whenSaved();} stampRevision();const raw=JSON.stringify(store);localStorage.setItem(KEY,raw);lastStoredRaw=raw; }
   catch(e){session.aiReviewTexts=prev;session.updatedAt=prevTime;session._sync=prevSync;throw e;}
 }
 function readAiReview(id) {
@@ -441,8 +467,8 @@ function readAiReview(id) {
     if(rec?.aiReviewTexts&&Object.prototype.hasOwnProperty.call(rec.aiReviewTexts,id))return String(rec.aiReviewTexts[id]||'');
   return '';
 }
-function currentDailyQuestion(){return currentQuestion();}
-window.Study30App={getEssayVersions,saveEssayVersion,restoreEssayVersion,essayContext,saveEssay,saveEssayManualQuestion,essayAssessmentContext,saveEssayAssessment,getEssayReviewData,openEssayReview,prepareBackupRestore,saveAiReview,readAiReview,currentDailyQuestion};
+function currentDailyQuestion(){return session?currentQuestion():null;}
+window.Study30App={whenSaved,readSessions:()=>structuredClone(store.sessions),getEssayVersions,saveEssayVersion,restoreEssayVersion,essayContext,saveEssay,saveEssayManualQuestion,essayAssessmentContext,saveEssayAssessment,getEssayReviewData,openEssayReview,prepareBackupRestore,saveAiReview,readAiReview,currentDailyQuestion};
   window.Study30Planner={isoTaipei,subjectFor,durations,normalSubject,candidateSubject,hash};
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
 })();
