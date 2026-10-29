@@ -12,12 +12,16 @@ const assert=require('node:assert/strict'),{IDBFactory}=require('fake-indexeddb'
  assert.equal((await db.get(core.KEY)).includes('course-original'),true);
  await assert.rejects(b.write(state),/其他分頁/);
  const reopened=await api.open({database:db,legacy,core});assert.equal(reopened.read().lessons[0].watchedMinutes,30);
+ const {readLecturesFromIndexedDB}=await import('../study-desk/planning.js');
+ const desk=await readLecturesFromIndexedDB(db,legacy,core);
+ assert.equal(desk.lessons[0].watchedMinutes,30);assert.equal(JSON.parse(original).lessons[0].watchedMinutes,0);
  const fullDb={migrate:(...args)=>db.migrate(...args),get:(...args)=>db.get(...args),compareAndSet:()=>Promise.reject(new DOMException('full','QuotaExceededError'))};
  const full=await api.open({database:fullDb,legacy,core});
  await assert.rejects(full.write(state),{name:'QuotaExceededError'});
  assert.equal(JSON.parse(await db.get(core.KEY)).lessons[0].watchedMinutes,30);
  values.set(core.KEY,JSON.stringify(core.empty()));
  await assert.rejects(reopened.write(state),/舊版頁面/);
+ await assert.rejects(readLecturesFromIndexedDB(db,legacy,core),/舊版頁面/);
  assert.equal(JSON.parse(await db.get(core.KEY)).lessons[0].watchedMinutes,30);db.close();
  const invalidDb=await PSDLearningStorage.open(new IDBFactory()),bad=new Map([[core.KEY,'broken']]);
  await assert.rejects(api.open({database:invalidDb,legacy:{getItem:k=>bad.get(k)??null},core}));

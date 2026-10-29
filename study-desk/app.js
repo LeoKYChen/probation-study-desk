@@ -1,7 +1,7 @@
 import {LocalRecords,validateState,same,FORMAT} from '../cloud-sync/core.js';
 import {IDBStore} from '../cloud-sync/idb.js';
 import {SUBJECTS,isSupportedSubject,today,now,attempts,recommend,newAttempt,markdown,nextReview} from './domain.js';
-import {intervals,topicScope,validateMapping,readLectures,planLimits,validatePreferences} from './planning.js';
+import {intervals,topicScope,validateMapping,readLectures,readLecturesFromIndexedDB,planLimits,validatePreferences} from './planning.js';
 import {legacyRecords,convertibleAttempts} from './legacy.js';
 import {clearedLearningState,assertLearningEpoch} from './reset.js';
 import {confirmedWeaknesses,weaknessStats,weaknessTrends,recallTrajectory,validateWeaknessCategory} from './weakness.js';
@@ -57,7 +57,11 @@ function fillQuestions() {
 }
 async function loadLectureProgress() {
  try {
-  const live=readLectures(localStorage,globalThis.PSDLectureCore);
+  let live;
+  if(globalThis.PSD_LECTURES_IDB_TEST===true){
+   const database=await globalThis.PSDLearningStorage.open();
+   try{live=await readLecturesFromIndexedDB(database,localStorage,globalThis.PSDLectureCore);}finally{database.close();}
+  }else live=readLectures(localStorage,globalThis.PSDLectureCore);
   const saved=(await store.read()).records['settings/lecture-progress']?.value;
   lectureData=live || (saved?globalThis.PSDLectureCore.normalize(saved.data):null);lectureSource=live?{origin:location.origin,live:true}:saved||null;
   $('lecture-status').textContent=lectureData?(live?'目前網址的函授紀錄':'使用備份中的函授快照（可能較舊）')+'：'+lectureData.courses.length+'門課／'+lectureData.lessons.length+'堂；只有本人確認對應的已完課主題會納入推薦。':'尚無函授紀錄；仍可手動確認已學主題。';
