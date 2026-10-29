@@ -40,5 +40,25 @@ for(const q of ox.questions){
 }
 for(const id of ox.uncovered){if(mapped.has(id)||!theoryIds.has(id))errors.push('openstax: bad uncovered id '+id);mapped.add(id);}
 if(mapped.size!==theoryIds.size)errors.push('openstax: '+(theoryIds.size-mapped.size)+' theory questions are neither mapped nor listed as uncovered');
+// docs/theory-public-sources.json (optional until written): public full-text sources checked against the original document.
+const pubPath=path.join(root,'docs/theory-public-sources.json');
+let pub=null;
+if(fs.existsSync(pubPath)){
+  pub=JSON.parse(fs.readFileSync(pubPath,'utf8'));
+  const seen=new Set();
+  for(const q of pub.questions){
+    if(!theoryIds.has(q.id))errors.push('public: unknown question '+q.id);
+    if(seen.has(q.id))errors.push('public: duplicate question '+q.id);
+    seen.add(q.id);
+    if(q.coverage!=='full'&&q.coverage!=='partial')errors.push('public: bad coverage for '+q.id);
+    if(q.coverage==='partial'&&!q.note)errors.push('public: partial without note for '+q.id);
+    if(!q.sources||!q.sources.length)errors.push('public: no sources for '+q.id);
+    for(const s of q.sources||[]){
+      if(!/^https:\/\/\S+$/.test(s.url||''))errors.push('public: bad url for '+q.id+': '+s.url);
+      if(!s.matchedTerms||!s.matchedTerms.length)errors.push('public: no matched terms for '+q.id+' '+s.url);
+    }
+  }
+  for(const id of pub.uncovered||[]){if(seen.has(id)||!theoryIds.has(id))errors.push('public: bad uncovered id '+id);seen.add(id);}
+}
 if(errors.length){console.error([...new Set(errors)].join('\n'));process.exit(1);}
-console.log('theory sources: '+used.size+' citations, all with full references; OpenStax sections for '+ox.questions.length+' questions');
+console.log('theory sources: '+used.size+' citations, all with full references; OpenStax sections for '+ox.questions.length+' questions'+(pub?'; public sources for '+pub.questions.length:''));
