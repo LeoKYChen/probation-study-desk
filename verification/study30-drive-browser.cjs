@@ -2,7 +2,7 @@
 'use strict';
 const assert=require('node:assert/strict');
 module.exports=async function(browser,origin){
- const ctx=await browser.newContext({viewport:{width:390,height:844},serviceWorkers:'block',
+ const ctx=await browser.newContext({acceptDownloads:true,viewport:{width:390,height:844},serviceWorkers:'block',
   locale:'zh-TW',timezoneId:'Asia/Taipei'});
  await ctx.route('https://accounts.google.com/**',route=>route.abort());
  await ctx.addInitScript(()=>{
@@ -108,7 +108,37 @@ module.exports=async function(browser,origin){
   const archive=await page.evaluate(()=>localStorage.getItem('psd-unified-backup-conflicts-v1'));
   assert.match(archive,/手機版A/);
   assert.match(archive,/電腦版B/);
+
+  // Verify the actual restore buttons, required safety backup and archive survival.
+  // The main record is B, the incoming archived record is A.
+  await page.locator('#study30ConflictList details').first().locator('summary').click();
+  const restoreButton=page.locator('#study30ConflictList details').first().locator('button.restoreStudy30').last();
+  assert.equal(await restoreButton.isDisabled(),true,'restore must require a protective backup');
+  const backupDownload=page.waitForEvent('download');
+  await page.locator('#study30ConflictBackup').click();
+  const downloaded=await backupDownload;
+  assert.match(downloaded.suggestedFilename(),/備份.*json/,'restore requires a full local backup');
+  await page.locator('#study30ConflictConfirmed').check();
+  assert.equal(await restoreButton.isEnabled(),true);
+  page.once('dialog',d=>d.accept());
+  await restoreButton.click();
+  const afterRestore=await page.evaluate(()=>{
+   const raw=JSON.parse(localStorage.getItem('probation-study30-v251:v1'));
+   return {primary:raw.sessions['2026-10-28'].essayDrafts.Q.outline[0],
+    revision:raw.sessions['2026-10-28']._sync?.revision,
+    conflicts:document.getElementById('study30ConflictSummary').textContent};
+  });
+  assert.match(afterRestore.primary,/手機版A/,'selected A is main after manual restoration');
+  assert.match(afterRestore.revision,/./,'restored revision must have an id');
+  assert.match(afterRestore.conflicts,/找到 [1-9]/,'archived B must still exist');
+  await page.locator('#driveSyncNow').click();
+  await page.waitForFunction(()=>window.__mockDriveFiles.length>=4);
+  const newest=await page.evaluate(()=>window.__mockDriveFiles.at(-1).snapshot);
+  const cloudRestored=JSON.parse(newest.backup.data['probation-study30-v251:v1']);
+  assert.match(cloudRestored.sessions['2026-10-28'].essayDrafts.Q.outline[0],/手機版A/);
+  assert.match(newest.backup.data['psd-unified-backup-conflicts-v1'],/電腦版B/,
+    'cloud upload must preserve B in archive after choosing A');
   assert.deepEqual(errors,[],'no uncaught errors during mocked Google Drive OAuth');
-  console.log('PASS browser Drive UX: OAuth, append-only sync, sibling A/B conflicts displayed live, no token leakage');
+  console.log('PASS browser Drive UX: OAuth, sibling A/B conflicts, guarded manual restore, cloud archive retention');
  }finally{await ctx.close();}
 };
