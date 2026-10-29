@@ -13,11 +13,9 @@ const server=http.createServer((req,res)=>{try{const p=decodeURIComponent(new UR
     const context=await browser.newContext({serviceWorkers:'block',timezoneId:'Asia/Taipei'}),page=await context.newPage(),errors=[];
     let stage='initial';
     page.on('pageerror',e=>errors.push({stage,page:page.url(),message:e.message,stack:e.stack}));
-    await page.goto(origin+'/daily-simulation/');
     const legacy=JSON.stringify({[question.id]:{answer:'舊的每日答案',review:false,updatedAt:'2099-01-01'}}),favorites=JSON.stringify([question.id]);
-    await page.evaluate(({legacy,favorites})=>{localStorage.setItem('probation-daily-github:records:v1',legacy);localStorage.setItem('daily-reading-test:saved',favorites);},{legacy,favorites});
-    await context.addInitScript(()=>{window.PSD_DAILY_IDB_TEST=true;window.PSD_STUDY30_IDB_TEST=true});
-    stage='migration reload';await page.reload();await page.waitForFunction(()=>Number(document.querySelector('#total').textContent)>0);
+    await context.addInitScript(({legacy,favorites})=>{window.PSD_DAILY_IDB_TEST=true;window.PSD_STUDY30_IDB_TEST=true;if(!localStorage.getItem('test-seeded')){localStorage.setItem('probation-daily-github:records:v1',legacy);localStorage.setItem('daily-reading-test:saved',favorites);localStorage.setItem('test-seeded','1');}},{legacy,favorites});
+    stage='migration load';await page.goto(origin+'/daily-simulation/');await page.waitForFunction(()=>Number(document.querySelector('#total').textContent)>0);
     await page.locator(`[data-open="${question.id}"]`).first().click();
     assert.equal(await page.locator('#answer').inputValue(),'舊的每日答案');
     await page.locator('#answer').fill('每日 IndexedDB 新答案');
