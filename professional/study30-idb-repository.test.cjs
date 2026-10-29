@@ -28,6 +28,17 @@ const {IDBFactory,IDBObjectStore}=require('fake-indexeddb');
  await assert.rejects(api.open({database:damagedDb,legacy:invalidLegacy}));
  assert.equal(await damagedDb.get(api.KEY),null);
  damagedDb.close();
+ // A legacy page racing exactly after the IDB transaction is detected after
+ // commit; both copies remain available and the operation is reported failed.
+ const raceDb=await PSDLearningStorage.open(new IDBFactory());
+ const raceMap=new Map([[api.KEY,old]]), raceLegacy={getItem:k=>raceMap.get(k)??null,setItem:(k,v)=>raceMap.set(k,v)};
+ const raceRepo=await api.open({database:raceDb,legacy:raceLegacy}), cas=raceDb.compareAndSet.bind(raceDb);
+ raceDb.compareAndSet=async(...args)=>{await cas(...args);raceLegacy.setItem(api.KEY,JSON.stringify({version:1,sessions:{oldPage:{notes:['舊頁面新稿']}}}));};
+ const raceDraft=raceRepo.read();raceDraft.sessions['2026-10-29'].notes=['新頁面稿'];
+ await assert.rejects(raceRepo.write(raceDraft),/舊版頁面/);
+ assert.ok((await raceDb.get(api.KEY)).includes('新頁面稿'));
+ assert.ok(raceLegacy.getItem(api.KEY).includes('舊頁面新稿'));
+ raceDb.close();
  const fullDb=await PSDLearningStorage.open(new IDBFactory());
  const emptyLegacy={getItem:()=>null};
  const fullRepo=await api.open({database:fullDb,legacy:emptyLegacy});

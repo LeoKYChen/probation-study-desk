@@ -67,9 +67,11 @@
             const expected = own(baseline,key) ? baseline[key] : null;
             if (current !== expected) { failure = Error('其他分頁已有更新，請重新檢查'); tx.abort(); return; }
             if (--remaining === 0) {
-              for (const [k,value] of Object.entries(changes)) {
-                if (value === null) store.delete(k); else store.put(value,k);
-              }
+              try {
+                for (const [k,value] of Object.entries(changes)) {
+                  if (value === null) store.delete(k); else store.put(value,k);
+                }
+              } catch (e) { failure=e; tx.abort(); }
             }
           };
         }
@@ -88,7 +90,8 @@
         request.onsuccess = () => {
           const current = request.result === undefined ? null : request.result;
           if (current !== expected) { failure = Error('其他分頁已有更新，請重新整理'); tx.abort(); return; }
-          if (value === null) store.delete(key); else store.put(value, key);
+          try { if (value === null) store.delete(key); else store.put(value, key); }
+          catch(e) { failure=e; tx.abort(); }
         };
         tx.oncomplete = () => resolve();
         tx.onabort = () => reject(failure || tx.error || Error('儲存失敗，原有資料未變更'));
@@ -122,7 +125,8 @@
               const request = records.get(key);
               request.onsuccess = () => {
                 if (request.result !== undefined) { failure = Error('IndexedDB 已有資料，停止遷移以避免覆寫'); tx.abort(); return; }
-                if (raw !== null) records.put(raw, key);
+                try { if (raw !== null) records.put(raw, key); }
+                catch(e) { failure=e; tx.abort(); return; }
                 if (--remaining === 0) {
                   // Read every inserted value back before the marker is committed.
                   let pending = snapshot.length;

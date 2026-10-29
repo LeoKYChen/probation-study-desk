@@ -89,8 +89,8 @@
     {
       "path": "professional/sw.js",
       "base_sha256": "40e49a0b907e3db282d42743613f7756e205dba51705dfba7e8efac533400e99",
-      "sha256": "9028c14a5b04ebfae0996f58f0c1d103a8858bcb711aff03ed0a86d565f58506",
-      "reason": "Refresh existing installed-viewer asset cache for changed UI, without altering storage keys. [2026-10-21] Rotate cache version after mobile duration CSS update, so previously installed Safari PWAs fetch a fresh layout on service-worker activation.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22] Bump offline cache to refresh AI review mode script for installed apps. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。；2026-10-28 獨立開發分支：安全 JSON 合併、版本承接與多分頁覆寫保護。；2026-10-28 Stage2：統一 JSON 合併與衝突復原、同日申論版本保存、離線共用核心。；2026-10-28 Stage3：加入選擇啟用的 Google Drive OAuth 同步與快取，保留原有本機資料鍵。 [IndexedDB 草稿] 離線快照加入測試所需腳本。 [IndexedDB 草稿] 增加每日30分鐘過渡期備份支援。"
+      "sha256": "bb4054cc4afd345c61b77a69908f6601e8bd063a5f9fda0b07dd862776aea5e0",
+      "reason": "Refresh existing installed-viewer asset cache for changed UI, without altering storage keys. [2026-10-21] Rotate cache version after mobile duration CSS update, so previously installed Safari PWAs fetch a fresh layout on service-worker activation.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22] Bump offline cache to refresh AI review mode script for installed apps. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。；2026-10-28 獨立開發分支：安全 JSON 合併、版本承接與多分頁覆寫保護。；2026-10-28 Stage2：統一 JSON 合併與衝突復原、同日申論版本保存、離線共用核心。；2026-10-28 Stage3：加入選擇啟用的 Google Drive OAuth 同步與快取，保留原有本機資料鍵。 [IndexedDB 草稿] 離線快照加入測試所需腳本。 [IndexedDB 草稿] 增加每日30分鐘過渡期備份支援。 [IndexedDB 離線測試] 精確允許已列入快取的同源外部資產。"
     },
     {
       "path": "sw.js",
