@@ -29,6 +29,15 @@
       "url": "backup/app.js"
     },
     {
+      "url": "backup/drive-sync-core.js"
+    },
+    {
+      "url": "backup/drive-sync-ui.js"
+    },
+    {
+      "url": "backup/drive-transport.js"
+    },
+    {
       "url": "backup/index.html"
     },
     {
@@ -371,6 +380,9 @@
       "url": "professional/essay-selfcheck.js"
     },
     {
+      "url": "professional/essay-version-history.js"
+    },
+    {
       "url": "professional/essay.js"
     },
     {
@@ -417,9 +429,6 @@
     },
     {
       "url": "professional/practice-review.js"
-    },
-    {
-      "url": "professional/essay-version-history.js"
     },
     {
       "url": "professional/practice-session.js"

@@ -107,6 +107,26 @@
   if(type==='lectures')return value.lessons.length;
   return 1;
  }
+ // Legacy sessions predate the revision tracker. Give their exact JSON payload a
+ // stable, non-secret fingerprint for explicit user-approved restore ancestry.
+ // This fingerprint is for equality tracking, not cryptographic authentication.
+ function legacyStudyRevision(session){
+  const plain=copy(session);delete plain._sync;
+  const source=JSON.stringify(plain);
+  let h1=2166136261,h2=0x9e3779b9;
+  for(let i=0;i<source.length;i++){
+   const c=source.charCodeAt(i);
+   h1=Math.imul(h1^c,16777619)>>>0;
+   h2=Math.imul(h2^(c&255),2246822519)>>>0;
+   h2=Math.imul(h2^(c>>>8),3266489917)>>>0;
+  }
+  return 'legacy:'+source.length+':'+h1.toString(16).padStart(8,'0')+
+   h2.toString(16).padStart(8,'0');
+ }
+ const studyRevision=session=>
+  typeof session?._sync?.revision==='string'&&session._sync.revision
+   ?session._sync.revision:legacyStudyRevision(session);
+
  function plan(current,bundle){
   validate(bundle);
   assert(isObj(current),'本機狀態不可讀');
@@ -152,12 +172,13 @@
   if(left&&!right)return copy(existing);
   const li=existing._sync||{},ri=incoming._sync||{};
   const inChain=ref=>typeof ref==='string'&&ref.length>0;
+  const existingRev=studyRevision(existing),incomingRev=studyRevision(incoming);
   const sameBranch=inChain(li.branchId)&&li.branchId===ri.branchId&&
    Number.isSafeInteger(li.seq)&&Number.isSafeInteger(ri.seq);
   const remoteDesc=(sameBranch&&ri.seq>li.seq)||
-   (inChain(li.revision)&&Array.isArray(ri.ancestors)&&ri.ancestors.includes(li.revision));
+   (Array.isArray(ri.ancestors)&&ri.ancestors.includes(existingRev));
   const localDesc=(sameBranch&&li.seq>ri.seq)||
-   (inChain(ri.revision)&&Array.isArray(li.ancestors)&&li.ancestors.includes(ri.revision));
+   (Array.isArray(li.ancestors)&&li.ancestors.includes(incomingRev));
   if(localDesc&&!remoteDesc)return copy(existing);
   const remoteWins=remoteDesc&&!localDesc;
   let diverged=false;
@@ -222,7 +243,10 @@
   }
   if(diverged)conflict(key,['sessions',day],existing,incoming);
   if(remoteWins)merged._sync=copy(incoming._sync);
-  else if(!equal(merged,existing)){
+  // Divergent same-field answers are NOT ancestors of the selected primary.
+  // Claiming both revisions as merged ancestors would silently replace a
+  // conflicting version on another device.
+  else if(!diverged&&!equal(merged,existing)){
    const revs=[existing._sync?.revision,incoming._sync?.revision].filter(inChain);
    if(revs.length){
     const ancestors=[...new Set([...(existing._sync?.ancestors||[]),...(incoming._sync?.ancestors||[]),...revs])].slice(-400);
@@ -347,7 +371,7 @@
     main:own(active.sessions,date)?copy(active.sessions[date]):null}];
   });
  }
- function planStudy30ConflictRestore(snapshot,index,side){
+ function planStudy30ConflictRestore(snapshot,index,side,restoreRevision){
   assert(side==='existing'||side==='incoming','請指定要恢復的版本');
   assert(Number.isInteger(index)&&index>=0,'衝突版本編號錯誤');
   const record=listStudy30Conflicts(snapshot).find(x=>x.index===index);
@@ -360,6 +384,14 @@
   const archive=snapshot[CONFLICT_KEY]?parseValue(CONFLICT_KEY,snapshot[CONFLICT_KEY]):{schema:CONFLICT_KEY,entries:[]};
   const changes=Object.create(null);
   if(!equal(old,target)){
+   // A manual choice supersedes both the displaced primary and the selected
+   // archived version. Legacy records without _sync use stable content identity.
+   // Unseen edits on other devices are not declared descendants.
+   const ancestry=[...(target._sync?.ancestors||[]),...(old?._sync?.ancestors||[]),
+    studyRevision(target),...(old?[studyRevision(old)]:[])].filter(v=>typeof v==='string'&&v);
+   target._sync={revision:typeof restoreRevision==='string'&&restoreRevision.length>8?restoreRevision:
+    'restore-'+Date.now()+'-'+Math.random().toString(36).slice(2),device:'manual-restore',
+    ancestors:[...new Set(ancestry)].slice(-400)};
    next.sessions[date]=target;changes[key]=JSON.stringify(next);
    if(old!==null&&!archive.entries.some(x=>x.key===key&&equal(x.path,['sessions',date])&&equal(x.incoming,old)))
     archive.entries.push({key,path:['sessions',date],existing:copy(target),incoming:copy(old)});
