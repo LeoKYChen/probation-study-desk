@@ -67,7 +67,7 @@ const server=http.createServer((req,res)=>{try{const p=decodeURIComponent(new UR
     await stale.locator('#answer').fill('v2.5 過期版本');
     await stale.waitForFunction(()=>document.querySelector('#saved').textContent==='尚未保存');
     let raw=await page.evaluate(async()=>{const db=await PSDLearningStorage.open();const value=await db.get('probation-daily-github:records:v1');db.close();return value;});
-    assert.ok(raw.includes('每日頁較新版本'));assert.ok(!raw.includes('v2.5 過期版本'));await stale.close();
+    assert.ok(raw.includes('每日頁較新版本'));assert.ok(!raw.includes('v2.5 過期版本'));
     await page.evaluate(()=>{const put=IDBObjectStore.prototype.put;IDBObjectStore.prototype.put=function(v,k){if(k==='probation-daily-github:records:v1')throw new DOMException('full','QuotaExceededError');return put.call(this,v,k);};});
     await page.locator('#answer').fill('容量不足未保存版本');
     await page.waitForFunction(()=>document.querySelector('#draftStatus').textContent.includes('儲存失敗'));
