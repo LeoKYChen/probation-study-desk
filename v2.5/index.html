@@ -682,6 +682,9 @@
       <div class="dialog-actions"><button type="button" class="btn" id="closeTopicPractice">儲存並關閉</button><button type="button" class="btn primary" id="completeTopicPractice">標記本考點完成</button></div>
     </div>
   </dialog>
+  <script src="../storage/indexeddb.js"></script>
+  <script src="../storage/v25-repository.js"></script>
+  <script src="backup-core.js"></script>
   <script src="questions.js"></script>
   <script src="related-questions.js"></script>
   <script src="../police-exams/questions.approved.js"></script>
@@ -789,8 +792,15 @@
       });
     }
     // localStorage is shared with other sites on this origin; a full quota must never fail silently.
-    let storageWarned = false;
+    let storageWarned = false, idbRepo = null, idbPending = 0, idbFailed = null;
+    const idbTest = window.PSD_V25_IDB_TEST === true;
     function persistRecords(records) {
+      if(idbTest){
+        if(!idbRepo || idbFailed){storageWarned=true;return false;}
+        idbPending++;storageWarned=true;
+        idbRepo.write(structuredClone(records)).then(()=>{idbPending--;if(!idbPending&&!idbFailed){storageWarned=false;$('saveStatus').textContent='已自動儲存在此裝置';}},error=>{idbPending--;idbFailed=error;storageWarned=true;$('saveStatus').textContent='尚未保存：'+error.message+'；請複製目前答案';showToast('儲存失敗：'+error.message+'；請複製目前答案');});
+        return true;
+      }
       try { localStorage.setItem(storageKey, JSON.stringify(records)); storageWarned = false; return true; }
       catch (error) {
         if (!storageWarned) showToast('瀏覽器儲存空間不足或被封鎖，作答尚未保存。請先複製答案或到備份中心匯出 JSON。');
@@ -798,7 +808,7 @@
         return false;
       }
     }
-    try { if (!localStorage.getItem(storageKey)) persistRecords(saved); } catch {}
+    try { if (!idbTest && !localStorage.getItem(storageKey)) persistRecords(saved); } catch {}
     let currentYear = years[0] || 115;
     let currentSubject = subjects[0];
     let currentExamType = examTypes[0];
@@ -1036,7 +1046,7 @@
         updateWordCount();
         $('saveStatus').textContent = '儲存中…';
         clearTimeout(saveTimer);
-        saveTimer = setTimeout(() => $('saveStatus').textContent = storageWarned ? '尚未保存：儲存空間不足，請先備份答案' : '已自動儲存在此裝置', 350);
+        if(!idbTest) saveTimer = setTimeout(() => $('saveStatus').textContent = storageWarned ? '尚未保存：儲存空間不足，請先備份答案' : '已自動儲存在此裝置', 350);
       });
       adjustRows.addEventListener('input', event => {
         const key = event.target.dataset.adjust;
@@ -1589,10 +1599,17 @@
 
     window.Practice25={getRecords:()=>saved,getState:entry,getQuestion:currentQuestion,getQuestions:()=>questionBank,patch:updateEntry,render,
       flush:()=>{clearTimeout(saveTimer);if(currentQuestion()&&issueInput.value!==entry().issue)updateEntry({issue:issueInput.value});},
-      replaceRecords:records=>{const focused=document.activeElement===issueInput,start=issueInput.selectionStart,end=issueInput.selectionEnd;saved=records;localStorage.setItem(storageKey,JSON.stringify(saved));render();if(focused){issueInput.focus();issueInput.setSelectionRange(start,end);}},
+      replaceRecords:records=>{if(idbTest)throw Error('測試模式尚未支援匯入');const focused=document.activeElement===issueInput,start=issueInput.selectionStart,end=issueInput.selectionEnd;saved=records;localStorage.setItem(storageKey,JSON.stringify(saved));render();if(focused){issueInput.focus();issueInput.setSelectionRange(start,end);}},
       select:id=>{const q=questionBank.find(q=>q.id===id);if(!q)return;currentId=id;currentYear=q.year;currentSubject=q.subject;currentExamType='全部類科';refreshYearSelect();refreshSubjectSelect();render();}};
-    window.addEventListener('storage',event=>{if(event.key===storageKey&&event.newValue){try{saved=JSON.parse(event.newValue);render();}catch{}}});
+    window.addEventListener('storage',event=>{if(idbTest&&[storageKey,productionKey,legacyKey].includes(event.key)){idbFailed=Error('舊版頁面已修改資料');storageWarned=true;$('saveStatus').textContent='尚未保存：舊版頁面已有更新，請複製目前答案';}else if(!idbTest&&event.key===storageKey&&event.newValue){try{saved=JSON.parse(event.newValue);render();}catch{}}});
     init();
+    if(idbTest){
+      document.body.inert=true;
+      window.PSDLearningStorage.open().then(async database=>{
+        try{idbRepo=await window.PSDV25Repository.open({database,legacy:localStorage,backup:window.Backup25});saved=idbRepo.read();render();$('saveStatus').textContent='已讀取本機紀錄';}
+        catch(error){database.close();throw error;}
+      }).catch(error=>{idbFailed=error;storageWarned=true;showToast('無法安全讀取考古題：'+error.message);document.querySelectorAll('input,textarea,button,select').forEach(element=>element.disabled=true);}).finally(()=>{document.body.inert=false;});
+    }
     registerModelTools();
   </script>
   <script src="essay-workspace25.js"></script>
@@ -1604,7 +1621,7 @@
   <script src="topic-practice.js"></script>
   <script src="study-map-data.js"></script>
   <script src="study-map.js"></script>
-<script src="backup-core.js"></script><script src="review25.js"></script>
+<script src="review25.js"></script>
 
 <script>
 const requested=new URLSearchParams(location.search); const picked=requested.get('q');

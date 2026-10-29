@@ -3,7 +3,7 @@
  const keys=['probation-study-desk-v24','probation-daily-github:records:v1','probation-study-desk-v3','probation-study-desk-v2','probation-v25:before-sync'];
  const signal='probation-v25:records-cleared';
  function clear(storage){
-  if(root.PSD_DAILY_IDB_TEST===true)throw Error('IndexedDB 測試模式尚未支援清除全部紀錄');
+  if((root.PSD_DAILY_IDB_TEST===true||root.PSD_V25_IDB_TEST===true))throw Error('IndexedDB 測試模式尚未支援清除全部紀錄');
   const before=keys.map(key=>storage.getItem(key));
   try{
    for(const key of keys)if(key==='probation-v25:before-sync')storage.removeItem(key);else storage.setItem(key,'{}');
