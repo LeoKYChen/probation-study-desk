@@ -7,12 +7,15 @@ const { chromium, webkit } = require('playwright');
   const server = http.createServer((req, res) => {
     if (req.url === '/indexeddb.js') { res.setHeader('Content-Type','text/javascript; charset=utf-8'); return res.end(fs.readFileSync(__dirname+'/indexeddb.js')); }
     if (req.url === '/study30.js') { res.setHeader('Content-Type','text/javascript; charset=utf-8'); return res.end(fs.readFileSync(__dirname+'/../professional/study30-idb-repository.js')); }
-    res.setHeader('Content-Type','text/html; charset=utf-8'); res.end('<!doctype html><script src="/indexeddb.js"></script><script src="/study30.js"></script>');
+    if (req.url === '/daily-shared.js') { res.setHeader('Content-Type','text/javascript; charset=utf-8'); return res.end(fs.readFileSync(__dirname+'/daily-shared-repository.js')); }
+    if (req.url === '/model.js') { res.setHeader('Content-Type','text/javascript; charset=utf-8'); return res.end(fs.readFileSync(__dirname+'/../daily-simulation/model.js')); }
+    res.setHeader('Content-Type','text/html; charset=utf-8'); res.end('<!doctype html><script src="/indexeddb.js"></script><script src="/study30.js"></script><script src="/daily-shared.js"></script><script src="/model.js"></script>');
   });
   await new Promise(r => server.listen(0,'127.0.0.1',r));
   try {
-    for (const engine of [chromium, webkit]) {
-      const browser = await engine.launch({headless:true});
+    for (const engine of (process.env.STUDY30_CHROMIUM_ONLY ? [chromium] : [chromium,webkit])) {
+      const launch={headless:true};if(process.env.STUDY30_CHROMIUM_PATH&&engine===chromium)launch.executablePath=process.env.STUDY30_CHROMIUM_PATH;
+      const browser = await engine.launch(launch);
       try {
         const context = await browser.newContext();
         const page = await context.newPage();
@@ -46,6 +49,19 @@ const { chromium, webkit } = require('playwright');
           const preserved=localStorage.getItem(key)===raw;db.close();return preserved;
         });
         assert.equal(moduleResult,true);
+        const shared=await page.evaluate(async()=>{
+          const a='probation-daily-github:records:v1',b='daily-reading-test:saved';
+          const original=JSON.stringify({'original-Q':{answer:'原稿',review:false,updatedAt:'2099'}});
+          localStorage.setItem(a,original);localStorage.setItem(b,JSON.stringify(['original-Q']));
+          const db=await PSDLearningStorage.open();
+          const first=await PSDDailySharedRepository.open({database:db,legacy:localStorage,model:PracticeModel});
+          const second=await PSDDailySharedRepository.open({database:db,legacy:localStorage,model:PracticeModel});
+          const doc=first.read().records;doc['original-Q'].answer='新稿';await first.writeRecords(doc);
+          await second.writeFavorites(['original-Q','另一題']);
+          let rejected=false;try{await second.writeRecords(doc);}catch{rejected=true;}
+          const result={rejected,record:JSON.parse(await db.get(a))['original-Q'].answer,original:localStorage.getItem(a)===original};db.close();return result;
+        });
+        assert.deepEqual(shared,{rejected:true,record:'新稿',original:true});
         await context.setOffline(true);
         const daily=await page.evaluate(async()=>{const db=await PSDLearningStorage.open();const repo=await Study30IndexedRepository.open({database:db,legacy:localStorage});const value=repo.read();db.close();return value;});
         assert.equal(daily.sessions['2026-10-29'].questionId,'stable-id');

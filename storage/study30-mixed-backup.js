@@ -9,9 +9,11 @@
  'use strict';
  const STUDY='probation-study30-v251:v1';
  const own=(obj,key)=>Object.prototype.hasOwnProperty.call(obj,key);
- function create({core,database,legacy,origin}){
+ function create({core,database,legacy,origin,managedKeys}){
   if(!core||!database||!legacy)throw Error('缺少備份或資料庫元件');
-  const managed=[STUDY,core.CONFLICT_KEY], keys=[...core.modules.map(x=>x.key),core.CONFLICT_KEY];
+  const keys=[...core.modules.map(x=>x.key),core.CONFLICT_KEY];
+  const managed=managedKeys===undefined?[STUDY,core.CONFLICT_KEY]:managedKeys.slice();
+  if(!managed.length||new Set(managed).size!==managed.length||!managed.includes(core.CONFLICT_KEY)||managed.some(key=>!keys.includes(key)))throw Error('已遷移模組清單不正確');
   const validate=(key,raw)=>core.parseValue(key,raw);
   async function checkLegacy(){for(const key of managed)await database.migrate(legacy,[key],validate);}
   async function snapshot(){
@@ -28,7 +30,7 @@
   async function plan(input){core.validate(input);return core.plan(await snapshot(),input);}
   async function apply(action){
    if(!action||!action.baseline||!action.changes)throw Error('匯入計畫不正確');
-   if(Object.keys(action.changes).some(k=>!managed.includes(k)))throw Error('此測試版本只能匯入每日30分鐘，其他模組尚未整合');
+   if(Object.keys(action.changes).some(k=>!managed.includes(k)))throw Error('此測試版本只能匯入每日30分鐘等已遷移模組，其他模組尚未整合');
    for(const [key,raw] of Object.entries(action.changes)){if(typeof raw!=='string')throw Error('資料格式不正確');validate(key,raw);}
    const current=await snapshot();
    if(keys.some(key=>current[key]!==action.baseline[key]))throw Error('資料在預覽後已有更新，請重新預覽');
