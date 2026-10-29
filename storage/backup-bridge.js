@@ -21,6 +21,8 @@
    core.validate(input);
    return core.plan(await snapshot(),input);
   }
+  async function listStudy30Conflicts(){return core.listStudy30Conflicts(await snapshot());}
+  async function planStudy30Restore(index,side,revision){return core.planStudy30ConflictRestore(await snapshot(),index,side,revision);}
   async function apply(action){
    if(!action || !action.baseline || !action.changes)throw Error('無效的匯入計畫');
    const allowed=new Set(keys);
@@ -31,7 +33,7 @@
    // All baseline comparisons and changes happen in the same IDB transaction.
    return store.compareAndSetMany(keys,action.baseline,action.changes);
   }
-  return {keys:keys.slice(),snapshot,collect,plan,apply};
+  return {keys:keys.slice(),snapshot,collect,plan,apply,listStudy30Conflicts,planStudy30Restore};
  }
  return {create};
 });
