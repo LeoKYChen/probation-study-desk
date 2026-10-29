@@ -6,7 +6,8 @@ const { chromium, webkit } = require('playwright');
 (async () => {
   const server = http.createServer((req, res) => {
     if (req.url === '/indexeddb.js') { res.setHeader('Content-Type','text/javascript; charset=utf-8'); return res.end(fs.readFileSync(__dirname+'/indexeddb.js')); }
-    res.setHeader('Content-Type','text/html; charset=utf-8'); res.end('<!doctype html><script src="/indexeddb.js"></script>');
+    if (req.url === '/study30.js') { res.setHeader('Content-Type','text/javascript; charset=utf-8'); return res.end(fs.readFileSync(__dirname+'/../professional/study30-idb-repository.js')); }
+    res.setHeader('Content-Type','text/html; charset=utf-8'); res.end('<!doctype html><script src="/indexeddb.js"></script><script src="/study30.js"></script>');
   });
   await new Promise(r => server.listen(0,'127.0.0.1',r));
   try {
@@ -36,7 +37,19 @@ const { chromium, webkit } = require('playwright');
         assert.equal(batch,true);
         await page.reload();
         assert.equal(await page.evaluate(async () => { const db=await PSDLearningStorage.open(); const value=await db.get('essay'); db.close(); return value; }), '{"q1":"已修改"}');
+        const moduleResult=await page.evaluate(async () => {
+          const key='probation-study30-v251:v1';
+          const raw=JSON.stringify({version:1,sessions:{'2026-10-29':{questionId:'stable-id',notes:['舊稿']}}});
+          localStorage.setItem(key,raw);
+          const db=await PSDLearningStorage.open(), repo=await Study30IndexedRepository.open({database:db,legacy:localStorage});
+          const value=repo.read();value.sessions['2026-10-29'].notes=['修改後'];await repo.write(value);await repo.flush();
+          const preserved=localStorage.getItem(key)===raw;db.close();return preserved;
+        });
+        assert.equal(moduleResult,true);
         await context.setOffline(true);
+        const daily=await page.evaluate(async()=>{const db=await PSDLearningStorage.open();const repo=await Study30IndexedRepository.open({database:db,legacy:localStorage});const value=repo.read();db.close();return value;});
+        assert.equal(daily.sessions['2026-10-29'].questionId,'stable-id');
+        assert.equal(daily.sessions['2026-10-29'].notes[0],'修改後');
         assert.equal(await page.evaluate(async () => { const db=await PSDLearningStorage.open(); const value=await db.get('essay'); db.close(); return value; }), '{"q1":"已修改"}');
         await context.close();
         console.log(`PASS ${engine.name()}: migration, legacy retention, stale tab, reload, offline read`);
