@@ -115,7 +115,8 @@ const server=http.createServer((req,res)=>{
         try {
           await offlinePage.goto(origin+'/professional/');
           await offlinePage.waitForFunction(()=>!!window.Study30App?.essayContext(),null,{timeout:10000});
-          console.error('WebKit diagnostic: origin unavailable; cached page loaded successfully');
+          assert.equal(await offlinePage.locator('#essayField0').inputValue(),'離線還原驗證');
+          console.error('WebKit diagnostic: origin unavailable; cached page and stored draft restored successfully');
         } catch(e) { console.error('WebKit diagnostic: origin unavailable; cached page failed:',e.message); }
         finally { await new Promise(resolve=>server.listen(port,'127.0.0.1',resolve)); }
       }

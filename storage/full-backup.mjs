@@ -130,3 +130,58 @@ export async function applyRestore({plan,learning,deskDatabase}){
   error.cause=e;error.deskWritten=deskWritten;throw error;
  }
 }
+
+// Explicit conflict recovery preserves the displaced desk and invalidates stale
+// editor tabs by changing the same epoch used by the existing desk reset guard.
+export async function planDeskConflictRestore({deskDatabase,namespace,archive,newEpoch=()=>crypto.randomUUID()}){
+ assert(typeof namespace==='string'&&namespace.length>0&&typeof archive==='string'&&archive.startsWith('backup-archive:')&&namespace!==archive,'書桌恢復範圍不符');
+ const rows=await accounts(deskDatabase),current=new Map(rows.map(row=>[row.namespace,row.state]));
+ const selected=current.get(archive),prior=current.get(namespace);
+ assert(selected!==undefined,'找不到書桌封存版本');
+ const epoch=newEpoch();assert(typeof epoch==='string'&&epoch.length>=8&&epoch.length<=200,'恢復版本識別碼不符');
+ let displaced=null;
+ if(prior!==undefined){
+  const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(canonical(JSON.parse(JSON.stringify([namespace,prior])))));
+  displaced='backup-archive:'+Array.from(new Uint8Array(digest),n=>n.toString(16).padStart(2,'0')).join('');
+  assert(displaced!==namespace,'書桌封存識別碼衝突');
+  const existed=current.get(displaced);
+  assert(existed===undefined||same(existed,prior),'書桌封存識別碼衝突');
+ }
+ const chosen=structuredClone(selected);chosen.clearedEpoch=epoch;validateState(chosen);
+ const baseline=new Map([[namespace,prior===undefined?null:prior],[archive,selected]]);
+ if(displaced&&!baseline.has(displaced))baseline.set(displaced,current.get(displaced)||null);
+ return {namespace,archive,displaced,baseline:[...baseline].map(([key,state])=>({namespace:key,state:structuredClone(state)})),chosen};
+}
+export function applyDeskConflictRestore(plan,deskDatabase){
+ assert(plan&&typeof plan.namespace==='string'&&typeof plan.archive==='string'&&Array.isArray(plan.baseline)&&plan.chosen,'書桌恢復計畫不符');
+ const baseline=new Map();
+ for(const row of plan.baseline){assert(row&&typeof row.namespace==='string'&&!baseline.has(row.namespace),'書桌恢復資料不符');if(row.state!==null)validateState(row.state);baseline.set(row.namespace,row.state);}
+ assert(baseline.has(plan.namespace)&&baseline.has(plan.archive),'書桌恢復基準不完整');
+ const selected=baseline.get(plan.archive),prior=baseline.get(plan.namespace);
+ validateState(plan.chosen);assert(selected!==null,'找不到封存版本');
+ const original=structuredClone(plan.chosen);delete original.clearedEpoch;
+ const source=structuredClone(selected);delete source.clearedEpoch;
+ assert(same(original,source)&&typeof plan.chosen.clearedEpoch==='string'&&plan.chosen.clearedEpoch.length>=8,'書桌恢復內容不符');
+ if(prior!==null){
+  assert(typeof plan.displaced==='string'&&plan.displaced!==plan.namespace&&baseline.has(plan.displaced),'缺少原書桌封存');
+  assert(baseline.get(plan.displaced)===null||same(baseline.get(plan.displaced),prior),'原書桌封存內容不符');
+  assert(plan.chosen.clearedEpoch!==(prior.clearedEpoch||null),'恢復版本識別碼不符');
+ }
+ return new Promise((resolve,reject)=>{
+  const tx=deskDatabase.transaction('accounts','readwrite'),store=tx.objectStore('accounts');let left=baseline.size,failure;
+  for(const [key,expected] of baseline){
+   const req=store.get(key);req.onsuccess=()=>{
+    const current=req.result===undefined?null:req.result;
+    if(!same(current,expected)){failure=Error('書桌資料在預覽後已變更，請重新預覽');tx.abort();return;}
+    if(--left===0){
+     try{
+      if(prior!==null&&baseline.get(plan.displaced)===null)store.put(prior,plan.displaced);
+      store.put(plan.chosen,plan.namespace);
+     }catch(e){failure=e;tx.abort();}
+    }
+   };
+  }
+  tx.oncomplete=()=>resolve({namespace:plan.namespace,displaced:plan.displaced});
+  tx.onabort=()=>reject(failure||tx.error||Error('書桌恢復交易失敗'));tx.onerror=()=>{};
+ });
+}
