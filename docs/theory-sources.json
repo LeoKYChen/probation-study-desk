@@ -1,5 +1,5 @@
 {
- "說明": "law-scoring/data.js 學科題（kind: theory）每個出處字串對應的完整書目與核對狀態。只作為開發者補充與核對用，網站不讀取本檔。",
+ "說明": "law-scoring/data.js 學科題（kind: theory）每個出處字串對應的完整書目與核對狀態。只作為開發者補充與核對用，網站不讀取本檔。check 與 vague 兩類另有 crossref 欄位，記錄以 Crossref API（必要時以 WHO IRIS）查證的結果：found＝查到相符紀錄、partly＝只查到部分或旁證（書評、重印本）、not-indexed＝Crossref 未收錄。",
  "checkedOn": "2026-10-29",
  "lawDataset": "全國法規資料庫 2026-10-16 版",
  "statusLabels": {
@@ -172,7 +172,14 @@
     "監獄官-112-犯罪學與再犯預測-4",
     "監獄官-113-犯罪學與再犯預測-3",
     "監獄官-114-犯罪學與再犯預測-4"
-   ]
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.4324/9781315721279"
+    ],
+    "note": "第 5 版 (2010) 原版 Crossref 未收錄；Routledge 2014 年以 Andrews & Bonta 名義重新發行此書並有 DOI。"
+   }
   },
   {
    "cite": "Andrews & Bonta (2010)",
@@ -205,7 +212,15 @@
    "note": "原引用為簡稱；與「AERA, APA, & NCME (2014)」為同一份文件，建議統一寫法。",
    "usedBy": [
     "108-心理學-4"
-   ]
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.1037/e577932014-003",
+     "https://doi.org/10.2307/j.ctvr43hg2"
+    ],
+    "note": "英文原版 Crossref 未收錄；APA 2014 年公告與 2018 年西班牙文譯本可證 2014 年修訂版存在。"
+   }
   },
   {
    "cite": "APA, DSM-5 (2013)",
@@ -358,7 +373,15 @@
     "police-115-psychology-2",
     "109-心理測驗員-心理學-2",
     "110-心理測驗員-心理學-1"
-   ]
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.1037/0033-295x.84.2.191",
+     "https://doi.org/10.1177/105960117700200317"
+    ],
+    "note": "1977b 期刊論文已確認（Psychological Review 84(2), 191–215）；1977a 專書 Crossref 未收錄，但有 1977 年書評（Group & Organization Studies 2(3)）可證書名、出版者與年份。維持建議：以 1977a／1977b 區分。"
+   }
   },
   {
    "cite": "Bandura (1997)",
@@ -423,7 +446,12 @@
    "note": "原引用未標年份，建議統一為 Beccaria (1764)。",
    "usedBy": [
     "111-犯罪學-1"
-   ]
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 只有二手研究，原書未收錄。"
+   }
   },
   {
    "cite": "Beccaria (1764)",
@@ -465,7 +493,14 @@
    "note": "此書為四位作者合著，應寫作 Beck et al. (1979)。",
    "usedBy": [
     "110-心理學-2"
-   ]
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.1007/978-3-211-69499-2_9"
+    ],
+    "note": "專書本身 Crossref 未收錄；Springer《Einhundert Meisterwerke der Psychotherapie》(2008) 的條目標題列出 Beck、Rush、Shaw、Emery 四位作者，支持改為 Beck et al. (1979)。"
+   }
   },
   {
    "cite": "Beck et al. (1993)",
@@ -565,7 +600,14 @@
    "note": "原引用只有姓氏；Insoo Kim Berg 常見引用另有 Berg & Miller (1992) Working with the problem drinker。",
    "usedBy": [
     "114-諮商與輔導-1"
-   ]
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.1017/s1037291100004003"
+    ],
+    "note": "第 4 版 Crossref 未收錄；有 1998 年第 1 版書評可證書名與作者（De Jong & Berg）。"
+   }
   },
   {
    "cite": "Biderman & Reiss (1967)",
@@ -610,7 +652,14 @@
    "note": "原引用未標版次；Routledge 出版的是第 6 版 (2017) 與第 7 版 (2024)。",
    "usedBy": [
     "115-犯罪學-2"
-   ]
+   ],
+   "crossref": {
+    "result": "found",
+    "evidence": [
+     "https://doi.org/10.4324/9781315677187"
+    ],
+    "note": "已確認：Routledge 版作者順序 Bonta & Andrews，線上 2016-11-10 發行（版權年 2017）。"
+   }
   },
   {
    "cite": "Bordin (1979)",
@@ -803,7 +852,15 @@
    "note": "此文為多位作者合著，應寫作 Campbell et al. (2003)；危險評估量表 DA 原始文獻為 Campbell (1986)。TIPVDA 為我國量表（王珮玲發展），請另以講義標示出處。",
    "usedBy": [
     "薦任升等（矯正）-108-犯罪學-4"
-   ]
+   ],
+   "crossref": {
+    "result": "found",
+    "evidence": [
+     "https://doi.org/10.2105/ajph.93.7.1089",
+     "https://doi.org/10.1097/00012272-198607000-00006"
+    ],
+    "note": "已確認：American Journal of Public Health 93(7), 1089–1097，共 18 位作者，應寫作 Campbell et al. (2003)。DA 原始文獻 Campbell (1986), Advances in Nursing Science 8(4), 36–51 亦已確認。"
+   }
   },
   {
    "cite": "Campbell & Fiske (1959)",
@@ -830,7 +887,12 @@
    "note": "原引用未標年份；五大能力架構可引用 CASEL (2020) 官方架構說明。",
    "usedBy": [
     "薦任升等（矯正）-112-諮商與輔導-2"
-   ]
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄 CASEL 官方文件。"
+   }
   },
   {
    "cite": "Casey et al. (2008)",
@@ -853,11 +915,19 @@
   {
    "cite": "Christopher et al. (2016)",
    "ref": "Christopher, M. S., Goerling, R. J., Rogers, B. S., Hunsinger, M., Baron, G., Bergman, A. L., & Zava, D. T. (2016). A pilot study evaluating the effectiveness of a mindfulness-based intervention on cortisol awakening response and health outcomes among law enforcement officers. Journal of Police and Criminal Psychology, 31(1), 15–28. doi:10.1007/s11896-015-9161-x",
-   "status": "check",
-   "note": "DOI 已確認屬此期刊；篇名與作者順序請再以期刊頁面核對。同團隊的隨機對照試驗為 Christopher et al. (2018), Psychiatry Research, 264, 104–115。",
+   "status": "ok",
+   "note": "Crossref 確認篇名、作者順序與卷期；線上首刊 2015 年、紙本 2016 年。同團隊的隨機對照試驗為 Christopher et al. (2018), Psychiatry Research, 264, 104–115。",
    "usedBy": [
     "police-114-counseling-3"
-   ]
+   ],
+   "crossref": {
+    "result": "found",
+    "evidence": [
+     "https://doi.org/10.1007/s11896-015-9161-x",
+     "https://doi.org/10.1016/j.psychres.2018.03.059"
+    ],
+    "note": "已確認篇名與七位作者順序完全相符；線上首刊 2015-01-23，紙本 2016 年 31(1), 15–28，原引用 2016 年正確。2018 年隨機對照試驗亦已確認（Psychiatry Research 264, 104–115）。"
+   }
   },
   {
    "cite": "Cialdini (2001)",
@@ -959,7 +1029,12 @@
    "note": "原引用未標年份與版次；請依講義使用的版本補上（例如第 9 版 2015、第 10 版 2018、第 11 版 2021）。",
    "usedBy": [
     "110-心理學-1"
-   ]
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄此教科書。"
+   }
   },
   {
    "cite": "Corey (2016)",
@@ -1003,7 +1078,14 @@
    "usedBy": [
     "111-諮商與輔導-4",
     "監獄官-115-諮商與矯正輔導-1"
-   ]
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.1002/1520-6807(199504)32:2<142::aid-pits2310320213>3.0.co;2-p"
+    ],
+    "note": "第 9 版 Crossref 未收錄；1993 年版的書評（Psychology in the Schools 32(2)）可證書名與作者。"
+   }
   },
   {
    "cite": "Corey et al. (2015)",
@@ -1022,7 +1104,14 @@
    "note": "原引用未標年份；第 9 版起作者為四人，第 10 版 (2019) 作者為 Corey, Corey, & Corey。",
    "usedBy": [
     "111-諮商與輔導-4"
-   ]
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.1002/1520-6807(199504)32:2<142::aid-pits2310320213>3.0.co;2-p"
+    ],
+    "note": "第 9 版 Crossref 未收錄；1993 年版的書評可證書名與作者 Corey, Corey, & Callanan。"
+   }
   },
   {
    "cite": "Cornish (1994)",
@@ -1149,7 +1238,14 @@
    "note": "原引用未標年份；SAPROF 工具手冊為 de Vogel, de Ruiter, Bouman, & de Vries Robbé (2009/2012)。",
    "usedBy": [
     "115-犯罪學-3"
-   ]
+   ],
+   "crossref": {
+    "result": "found",
+    "evidence": [
+     "https://doi.org/10.1080/14999013.2011.600232"
+    ],
+    "note": "已確認：International Journal of Forensic Mental Health 10(3), 178–186。"
+   }
   },
   {
    "cite": "Deci & Ryan (1985)",
@@ -1226,7 +1322,12 @@
     "113-諮商與輔導-4",
     "監獄官-114-諮商與矯正輔導-1",
     "police-108-counseling-2"
-   ]
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄。"
+   }
   },
   {
    "cite": "Dreikurs (1964)",
@@ -1235,7 +1336,14 @@
    "note": "此書為 Dreikurs 與 Soltz 合著，應寫作 Dreikurs & Soltz (1964)。",
    "usedBy": [
     "監獄官-115-諮商與矯正輔導-2"
-   ]
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [
+     "https://doi.org/10.1080/01926187.2011.576224"
+    ],
+    "note": "專書 Crossref 未收錄；僅有 2011 年書評（American Journal of Family Therapy 39(5)），Crossref 資料未列作者，無法以此確認合著者。維持原建議。"
+   }
   },
   {
    "cite": "Duncker (1945)",
@@ -1421,7 +1529,14 @@
    "note": "原引用未標年份。",
    "usedBy": [
     "監所管理員-108-犯罪學概要-2"
-   ]
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.2307/1327556"
+    ],
+    "note": "原書未收錄；1917 年英譯本有 Harvard Law Review 31 的書評可證。"
+   }
   },
   {
    "cite": "Festinger (1954)",
@@ -1584,7 +1699,12 @@
     "police-115-psychology-3",
     "108-心理測驗員-心理學-1",
     "監所管理員-109-犯罪學概要-2"
-   ]
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄原書。"
+   }
   },
   {
    "cite": "Freud (1923)",
@@ -1622,7 +1742,15 @@
    "note": "瘦素的經典回顧為 Friedman 與 Halaas 合著，應寫作 Friedman & Halaas (1998)；瘦素基因的發現見 Zhang et al. (1994), Nature, 372, 425–432。",
    "usedBy": [
     "police-109-psychology-1"
-   ]
+   ],
+   "crossref": {
+    "result": "found",
+    "evidence": [
+     "https://doi.org/10.1038/27376",
+     "https://doi.org/10.1038/372425a0"
+    ],
+    "note": "已確認：Friedman, J. M., & Halaas, J. L., Nature 395(6704), 763–770；Zhang et al. (1994), Nature 372(6505), 425–432 亦已確認。"
+   }
   },
   {
    "cite": "Friedman & Rosenman (1974)",
@@ -1640,7 +1768,12 @@
    "note": "原引用只有姓氏；新古典學派代表人物的列法請以講義核對。",
    "usedBy": [
     "police-110-criminology_prevention-2"
-   ]
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄。"
+   }
   },
   {
    "cite": "Geldard & Geldard",
@@ -1649,7 +1782,14 @@
    "note": "原引用未標年份與書名；依內容（青少年諮商、媒材運用）推定為此書。",
    "usedBy": [
     "111-諮商與輔導-2"
-   ]
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.4135/9781036233983"
+    ],
+    "note": "Crossref 只有 SAGE 2020 年版（Geldard, Geldard, & Foo），比建議書目的 2016 年第 4 版新；請依講義使用的版次擇一。"
+   }
   },
   {
    "cite": "Gendreau et al. (1996)",
@@ -1676,7 +1816,12 @@
    "note": "原引用未標年份與版次；請依講義版本補上。",
    "usedBy": [
     "110-心理學-3"
-   ]
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄此教科書。"
+   }
   },
   {
    "cite": "Gerrig & Zimbardo, Psychology and Life",
@@ -1685,7 +1830,12 @@
    "note": "原引用未標年份與版次；請依講義版本補上。",
    "usedBy": [
     "110-心理學-3"
-   ]
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄此教科書。"
+   }
   },
   {
    "cite": "Gibson (1979)",
@@ -1773,14 +1923,22 @@
   },
   {
    "cite": "Gottfredson (1987)",
-   "ref": "Gottfredson, D. M., & Tonry, M. (Eds.). (1987). Prediction and classification: Criminal justice decision making (Crime and Justice, Vol. 9). Chicago: University of Chicago Press.",
-   "status": "check",
-   "note": "原引用只寫 Gottfredson (1987)；該年的再犯預測經典是 Gottfredson 與 Tonry 主編的專書，書中 Gottfredson, S. D., & Gottfredson, D. M. 另有專章。請確認講義所指作者。",
+   "ref": "Gottfredson, D. M. (1987). Prediction and classification in criminal justice decision making. Crime and Justice, 9, 1–20. https://doi.org/10.1086/449130",
+   "status": "ok",
+   "note": "Crime and Justice 第 9 卷（Gottfredson & Tonry 主編，Prediction and classification: Criminal justice decision making）的導論，作者為 Don M. Gottfredson 一人；同卷另有 Gottfredson, S. D. (1987). Prediction: An overview of selected methodological issues, pp. 21–51。",
    "usedBy": [
     "監獄官-111-犯罪學與再犯預測-4",
     "監獄官-112-犯罪學與再犯預測-1",
     "監獄官-115-犯罪學與再犯預測-3"
-   ]
+   ],
+   "crossref": {
+    "result": "found",
+    "evidence": [
+     "https://doi.org/10.1086/449130",
+     "https://doi.org/10.1086/449131"
+    ],
+    "note": "Crime and Justice 第 9 卷收有 Don M. Gottfredson (1987) 單一作者的導論〈Prediction and classification in criminal justice decision making〉(pp. 1–20)，與題目談的再犯預測實務與政策用途相符，因此原引用 Gottfredson (1987) 可成立，已改用此篇為書目；同卷另有 Stephen D. Gottfredson (1987)〈Prediction: An overview of selected methodological issues〉(pp. 21–51)。"
+   }
   },
   {
    "cite": "Gottfredson & Hirschi (1990)",
@@ -2077,7 +2235,15 @@
    "usedBy": [
     "監獄官-114-犯罪學與再犯預測-1",
     "監所管理員-113-犯罪學概要-3"
-   ]
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.1177/000271627340500172",
+     "https://doi.org/10.1177/000276427101400409"
+    ],
+    "note": "1971 年專書 Crossref 未收錄，但有 1973 年書評（ANNALS 405）可證書名與 Sage 出版；Jeffery 同年另有同名短文（American Behavioral Scientist 14(4), 598）。1977 第 2 版與 1990 年專書未收錄。維持原建議。"
+   }
   },
   {
    "cite": "Jessor (1991)",
@@ -2328,7 +2494,15 @@
    "note": "「環境主動假設」較常引用 Lawton (1989), Environmental proactivity in older people, 收錄於 Bengtson & Schaie (Eds.), The course of later life；「環境順從假設」則為 Lawton & Simon (1968)。請以講義核對。",
    "usedBy": [
     "police-114-psychology-4"
-   ]
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.1037/0003-066x.45.5.638",
+     "https://doi.org/10.1093/geront/8.2.108"
+    ],
+    "note": "Lawton (1990), American Psychologist 45(5), 638–640 與 Lawton & Simon (1968), The Gerontologist 8(2), 108–115 已確認；Lawton (1989) 專書章節 Crossref 未收錄。維持原建議。"
+   }
   },
   {
    "cite": "Lawton & Nahemow (1973)",
@@ -2427,7 +2601,15 @@
     "薦任升等（矯正）-114-諮商與輔導-4",
     "police-111-counseling-4",
     "police-114-counseling-4"
-   ]
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.1177/002076409504100211",
+     "https://doi.org/10.1097/nmd.0000000000000387"
+    ],
+    "note": "兩本手冊本身 Crossref 未收錄；有 1993 年版的書評（1995）與 2015 年第 2 版的書評（Journal of Nervous and Mental Disease 203(11)），可證 2015 年第 2 版存在。維持原建議。"
+   }
   },
   {
    "cite": "Lipsey (2009)",
@@ -2473,7 +2655,12 @@
    "note": "原引用未標年份，建議統一為 Lombroso (1876)。",
    "usedBy": [
     "112-犯罪學-1"
-   ]
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄原書。"
+   }
   },
   {
    "cite": "Lombroso (1876)",
@@ -2789,7 +2976,14 @@
    "note": "原引用未標年份。",
    "usedBy": [
     "police-110-counseling-3"
-   ]
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.1097/00006842-194705000-00014"
+    ],
+    "note": "原書未收錄；1947 年書評（Psychosomatic Medicine 9(3)）可證 Beacon House 1946 年出版、429 頁。"
+   }
   },
   {
    "cite": "Morris & Peng (1994)",
@@ -2808,7 +3002,14 @@
    "usedBy": [
     "監獄官-114-諮商與矯正輔導-1",
     "police-108-counseling-2"
-   ]
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.4324/9780203768518"
+    ],
+    "note": "1999 年原版未收錄；Routledge 2013 年重新發行並有 DOI。"
+   }
   },
   {
    "cite": "Moscovici & Zavalloni (1969)",
@@ -2922,11 +3123,19 @@
   {
    "cite": "Park & Burgess (1925)",
    "ref": "Park, R. E., Burgess, E. W., & McKenzie, R. D. (1925). The city. Chicago: University of Chicago Press.",
-   "status": "check",
-   "note": "此書為三位作者合著，應寫作 Park, Burgess, & McKenzie (1925)。",
+   "status": "ok",
+   "note": "1926 年書評只列 Park 與 Burgess 為作者，原引用屬通行寫法；McKenzie 撰有其中一章，要列三人亦可。",
    "usedBy": [
     "police-108-criminology_prevention-1"
-   ]
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.1177/000271622612400158",
+     "https://doi.org/10.1002/ncr.4110150514"
+    ],
+    "note": "專書 Crossref 未收錄；1926 年兩篇書評（ANNALS 124、National Municipal Review 15）都只列 Park 與 Burgess 為作者，因此原引用 Park & Burgess (1925) 是當時通行寫法，不算錯誤；McKenzie 撰有其中一章，要列三人亦可。已改為「書目已確認」。"
+   }
   },
   {
    "cite": "Pavlov (1927)",
@@ -2971,7 +3180,12 @@
    "note": "原引用只有姓氏。",
    "usedBy": [
     "監獄官-115-犯罪學與再犯預測-4"
-   ]
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄此書。"
+   }
   },
   {
    "cite": "Premack (1959)",
@@ -2990,7 +3204,15 @@
    "usedBy": [
     "監獄官-109-諮商與矯正輔導-1",
     "監獄官-113-諮商與矯正輔導-3"
-   ]
+   ],
+   "crossref": {
+    "result": "found",
+    "evidence": [
+     "https://doi.org/10.1037/h0088437",
+     "https://doi.org/10.1037/0003-066x.47.9.1102"
+    ],
+    "note": "1982 年原文與 Prochaska, DiClemente, & Norcross (1992) 都已確認。維持原建議：引用五階段時並列 1992 年文獻。"
+   }
   },
   {
    "cite": "Quinney (1970)",
@@ -3036,7 +3258,14 @@
    "note": "查無 2001 年版；第 4 版為 2000 年、第 3 版為 1997 年。理論的期刊版另見 Kingston, Regoli, & Hewitt (2003), Critical Criminology, 11(3), 237–260。請依講義版次修正年份。",
    "usedBy": [
     "police-113-criminology_prevention-2"
-   ]
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.1023/b:crit.0000005812.05228.78"
+    ],
+    "note": "教科書各版 Crossref 未收錄，無法確認有無 2001 年版；期刊版 Kingston, Regoli, & Hewitt (2003), Critical Criminology 11(3), 237–260 已確認。維持原建議。"
+   }
   },
   {
    "cite": "Reicher, Spears & Postmes (1995)",
@@ -3145,7 +3374,12 @@
    "note": "原引用只有姓氏；新古典學派代表人物的列法請以講義核對。",
    "usedBy": [
     "police-110-criminology_prevention-2"
-   ]
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄。"
+   }
   },
   {
    "cite": "Saleebey (1992)",
@@ -3422,7 +3656,12 @@
    "note": "原引用未標年份與版次；建議與其他題目統一為 Siegel (2018)。",
    "usedBy": [
     "108-犯罪學-4"
-   ]
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄此教科書。"
+   }
   },
   {
    "cite": "Simons & Chabris (1999)",
@@ -3649,7 +3888,14 @@
    "note": "原引用未標年份；RNR 模擬工具的出處請以講義核對。",
    "usedBy": [
     "監獄官-111-犯罪學與再犯預測-3"
-   ]
+   ],
+   "crossref": {
+    "result": "found",
+    "evidence": [
+     "https://doi.org/10.1007/978-1-4614-6188-3_4"
+    ],
+    "note": "已確認：收錄於 Springer《Simulation Strategies to Reduce Recidivism》(2013), pp. 73–111。"
+   }
   },
   {
    "cite": "Temoshok (1990)",
@@ -3658,7 +3904,12 @@
    "note": "C 型性格的代表文獻通常為 Temoshok (1987) 或 Temoshok & Dreher (1992) The Type C connection；1990 年的出處無法確認，請以講義核對。",
    "usedBy": [
     "108-心理學-2"
-   ]
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 查無 Temoshok 1990 年談 C 型性格的文獻（1990 年只有 HIV 相關論文）；Temoshok (1987) 刊於 Cancer Surveys，該刊未收錄於 Crossref。維持原建議。"
+   }
   },
   {
    "cite": "Teyber & Holmes (2017)",
@@ -3667,7 +3918,14 @@
    "note": "經查第 7 版作者為 Edward Teyber 與 Faith Holmes Teyber（出版商頁面），一般寫作 Teyber & Teyber (2017)；題目中的「Holmes」即第二作者。",
    "usedBy": [
     "監獄官-111-諮商與矯正輔導-3"
-   ]
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.1037/a0036579"
+    ],
+    "note": "第 7 版專書 Crossref 未收錄。兩人合著的 2014 年論文（Psychotherapy 51(3), 334–341）登錄的第二作者姓名為 Faith McClure Teyber，與先前「Faith Holmes Teyber」的記載不同，題目中的「Holmes」來源請再以書本版權頁核對；改寫為 Teyber & Teyber (2017) 的建議不變。"
+   }
   },
   {
    "cite": "Thornberry et al. (1993)",
@@ -3753,7 +4011,14 @@
    "note": "原引用未標文件名稱與年份；官方統計可引 UNODC 犯罪趨勢調查 (UN-CTS) 或全球殺人研究報告，請依講義所指補上。",
    "usedBy": [
     "police-111-criminology_prevention-1"
-   ]
+   ],
+   "crossref": {
+    "result": "found",
+    "evidence": [
+     "https://doi.org/10.18356/9789213587386"
+    ],
+    "note": "已確認：United Nations 出版，2023 年。"
+   }
   },
   {
    "cite": "Vaillant (1977)",
@@ -3968,7 +4233,15 @@
    "usedBy": [
     "police-114-criminology_prevention-2",
     "police-110-counseling-4"
-   ]
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://iris.who.int/handle/10665/131056",
+     "https://iris.who.int/handle/10665/145086"
+    ],
+    "note": "Crossref 未收錄 WHO 報告，改以 WHO 機構典藏 IRIS 確認：《Preventing suicide: A global imperative》（2014-08-18，ISBN 9789241564779）與《Global status report on violence prevention 2014》（2014-12-09，ISBN 9789241564793）。維持原建議：分別標示。"
+   }
   },
   {
    "cite": "WHO (2016)",
@@ -4051,7 +4324,16 @@
    "usedBy": [
     "police-109-counseling-1",
     "police-109-counseling-4"
-   ]
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.1353/pbm.1958.0006",
+     "https://doi.org/10.1037/h0025238",
+     "https://doi.org/10.1192/bjp.121.5.493"
+    ],
+    "note": "專書 Crossref 未收錄，有 1958 年書評可證。Stampfl & Levis (1967), Journal of Abnormal Psychology 72(6), 496–503 已確認；Marks 的洪水法研究為 Marks, Viswanathan, Lipsedge, & Gardner (1972), British Journal of Psychiatry 121, 493–505（多人合著）。"
+   }
   },
   {
    "cite": "Wubbolding (2000)",
@@ -4366,7 +4648,12 @@
    "note": "同上，建議統一寫法並以現行版本核對條次。",
    "usedBy": [
     "113-諮商與輔導-2"
-   ]
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄臺灣的官方文件、學會守則與此書；相關官網在這個工作環境連不上，無法查證。"
+   }
   },
   {
    "cite": "司法改革國是會議總結報告",
@@ -4609,7 +4896,12 @@
    "note": "原引用未標期別；作答時請標明引用第一期或第二期（或後續期別）。",
    "usedBy": [
     "監獄官-113-犯罪學與再犯預測-4"
-   ]
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄臺灣的官方文件、學會守則與此書；相關官網在這個工作環境連不上，無法查證。"
+   }
   },
   {
    "cite": "更生保護法",
@@ -4668,7 +4960,12 @@
    "note": "原引用未標方案名稱與年份，請以講義核對。",
    "usedBy": [
     "監獄官-115-犯罪學與再犯預測-4"
-   ]
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄臺灣的官方文件、學會守則與此書；相關官網在這個工作環境連不上，無法查證。"
+   }
   },
   {
    "cite": "法務部矯正署家庭支持方案",
@@ -4677,7 +4974,12 @@
    "note": "原引用未標方案名稱與年份，請以講義核對。",
    "usedBy": [
     "監獄官-115-諮商與矯正輔導-3"
-   ]
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄臺灣的官方文件、學會守則與此書；相關官網在這個工作環境連不上，無法查證。"
+   }
   },
   {
    "cite": "犯罪被害人權益保障法",
@@ -4717,7 +5019,12 @@
    "note": "原引用過於籠統；「人際吸引」的定義可引 Berscheid & Walster (1978) Interpersonal attraction (2nd ed.)，或填入講義使用的社會心理學教科書。",
    "usedBy": [
     "108-心理學-3"
-   ]
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "原引用未指明教材，無從查證。"
+   }
   },
   {
    "cite": "自殺防治法",
@@ -4746,7 +5053,12 @@
    "usedBy": [
     "薦任升等（矯正）-108-心理測驗-4",
     "薦任升等（矯正）-114-心理測驗-4"
-   ]
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄臺灣的官方文件、學會守則與此書；相關官網在這個工作環境連不上，無法查證。"
+   }
   },
   {
    "cite": "臺灣輔導與諮商學會倫理守則",
@@ -4757,7 +5069,12 @@
     "薦任升等（矯正）-108-諮商與輔導-4",
     "police-109-counseling-2",
     "police-110-counseling-1"
-   ]
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄臺灣的官方文件、學會守則與此書；相關官網在這個工作環境連不上，無法查證。"
+   }
   },
   {
    "cite": "行政院性別平等會",
@@ -4766,7 +5083,12 @@
    "note": "原引用未標文件名稱與日期；定義原文請以性平會網站公告核對。",
    "usedBy": [
     "114-諮商與輔導-3"
-   ]
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄臺灣的官方文件、學會守則與此書；相關官網在這個工作環境連不上，無法查證。"
+   }
   },
   {
    "cite": "輔導與諮商專業倫理守則",
@@ -4777,7 +5099,12 @@
     "110-諮商與輔導-3",
     "111-諮商與輔導-3",
     "112-諮商與輔導-1"
-   ]
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄臺灣的官方文件、學會守則與此書；相關官網在這個工作環境連不上，無法查證。"
+   }
   },
   {
    "cite": "郭生玉，心理與教育測驗",
@@ -4786,7 +5113,12 @@
    "note": "原引用未標年份；此書版次與刷次多，請依手邊版本補上。",
    "usedBy": [
     "薦任升等（矯正）-108-心理測驗-1"
-   ]
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄臺灣的官方文件、學會守則與此書；相關官網在這個工作環境連不上，無法查證。"
+   }
   },
   {
    "cite": "釋字第 664 號",
@@ -4797,5 +5129,6 @@
     "115-犯罪學-4"
    ]
   }
- ]
+ ],
+ "crossrefCheckedOn": "2026-10-29"
 }
