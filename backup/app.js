@@ -162,7 +162,7 @@
     $('previewTable').append(tr);
    }
    $('conflicts').textContent=plan.conflicts.length
-    ?'本次發現 '+plan.conflicts.length+' 筆不同版本：以這台裝置原紀錄為主，備份中的不同內容會保留在「衝突版本」中，供日後另行檢視／下載。'
+    ?'本次發現 '+plan.conflicts.length+' 筆需人工確認的差異：安全合併會補齊空白內容、承接已確認的新版；無法確認的不同答案保存於「衝突版本」，請下載比對。'
     :'沒有發現不同版本衝突。';
    $('preview').hidden=false;
    $('restore').disabled=false;

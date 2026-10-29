@@ -121,7 +121,7 @@
    const record={key,path,existing:copy(mine),incoming:copy(other)};
    const encoded=JSON.stringify(record);
    // Do not create duplicate versions on repeated imports.
-   if(!seen.has(encoded)){archive.entries.push(record);seen.add(encoded);newConflicts.push(record);}
+   if(!seen.has(encoded)&&!archive.entries.some(x=>x.key===key&&equal(x.path,path)&&equal(x.incoming,other))){archive.entries.push(record);seen.add(encoded);newConflicts.push(record);}
   }
   function mapMerge(key,path,a,b){
    const output=copy(a);
@@ -131,7 +131,106 @@
    }
    return output;
   }
-  function mergeRecord(key,local,remote,kind){
+ 
+ // Merge a daily session by useful content rather than skipping the whole date.
+ // A known descendant may supersede its ancestor; unrelated edits never discard
+ // a non-empty answer. On divergence, the entire incoming version is archived.
+ function mergeStudyDay(day,existing,incoming){
+  if(equal(existing,incoming))return copy(existing);
+  if(!isObj(existing)||!isObj(incoming)){conflict('probation-study30-v251:v1',['sessions',day],existing,incoming);return copy(existing);}
+  const key='probation-study30-v251:v1';
+  const hasText=v=>typeof v==='string'&&v.trim().length>0;
+  const useful=v=>{
+   if(!isObj(v))return false;
+   if(v.finished||Number(v.elapsed)>0||Number(v.skippedSeconds)>0||Number(v.phase)>0||hasText(v.rating)||hasText(v.errorCause))return true;
+   if((v.notes||[]).some(hasText))return true;
+   if(Object.values(v.essayDrafts||{}).some(d=>d&&(hasText(d.fullAnswer)||(d.outline||[]).some(hasText))))return true;
+   for(const k of ['essayAssessments','aiReviewTexts','practiceRatings','essayCustomPrompts'])
+    if(Object.values(v[k]||{}).some(x=>x!==null&&x!==''&&(!isObj(x)||Object.keys(x).length>0)))return true;
+   return false;
+  };
+  const left=useful(existing),right=useful(incoming);
+  if(!left&&right)return copy(incoming);
+  if(left&&!right)return copy(existing);
+  const li=existing._sync||{},ri=incoming._sync||{};
+  const inChain=ref=>typeof ref==='string'&&ref.length>0;
+  const remoteDesc=inChain(li.revision)&&Array.isArray(ri.ancestors)&&ri.ancestors.includes(li.revision);
+  const localDesc=inChain(ri.revision)&&Array.isArray(li.ancestors)&&li.ancestors.includes(ri.revision);
+  if(localDesc&&!remoteDesc)return copy(existing);
+  const remoteWins=remoteDesc&&!localDesc;
+  let diverged=false;
+  const empty=v=>v===undefined||v===null||v===''||
+   (Array.isArray(v)&&v.every(empty))||(isObj(v)&&Object.keys(v).length===0);
+  const pick=(a,b)=>{
+   const clone=x=>x===undefined?undefined:copy(x);
+   if(equal(a,b))return clone(a);
+   if(empty(a)&&empty(b))return clone(a===undefined?b:a);
+   if(empty(a))return clone(b);
+   if(empty(b))return clone(a);
+   if(remoteWins)return clone(b);
+   diverged=true;return clone(a);
+  };
+  const arrayMerge=(a,b)=>Array.from({length:Math.max(a?.length||0,b?.length||0)},(_,i)=>pick(a?.[i],b?.[i]));
+  const objectMerge=(a,b,field)=>{
+   const result=copy(a||{});
+   for(const [id,v] of Object.entries(b||{})){
+    if(!own(result,id)){result[id]=copy(v);continue;}
+    if(equal(result[id],v))continue;
+    if(field==='essayDrafts'&&isObj(v)&&isObj(result[id])){
+     const draft={...result[id]};
+     for(const [k,value] of Object.entries(v)){
+      if(k==='outline')draft.outline=arrayMerge(draft.outline||[],value||[]);
+      else if(k==='updatedAt')draft.updatedAt=[draft.updatedAt,value].filter(Boolean).sort().at(-1);
+      else draft[k]=pick(draft[k],value);
+     }
+     result[id]=draft;
+    }else result[id]=pick(result[id],v);
+   }
+   return result;
+  };
+  const merged={...copy(existing)};
+  for(const k of ['notes','essayDrafts','essayAssessments','practiceRatings','aiReviewTexts','essayCustomPrompts']){
+   if(k==='notes'){if(existing[k]!==undefined||incoming[k]!==undefined)merged[k]=arrayMerge(existing[k]||[],incoming[k]||[]);}
+   else if(existing[k]!==undefined||incoming[k]!==undefined)merged[k]=objectMerge(existing[k],incoming[k],k);
+  }
+  for(const k of ['questionId','commonQuestionId','rating','errorCause','essayPracticeSubject','essayReviewTargetId']){
+   if(own(incoming,k))merged[k]=pick(existing[k],incoming[k]);
+  }
+  // Timer counters are cumulative within one daily session, never additive on import.
+  const progressed=(s)=>Number(s.phase||0)*100000+Number(s.elapsed||0);
+  const ahead=progressed(incoming)>progressed(existing)?incoming:existing;
+  for(const k of ['mode','phase','remaining','phaseTimeUsed']){
+   if(own(ahead,k))merged[k]=copy(ahead[k]);
+  }
+  for(const k of ['elapsed','skippedSeconds']){
+   if(own(existing,k)||own(incoming,k))merged[k]=Math.max(Number(existing[k]||0),Number(incoming[k]||0));
+  }
+  merged.finished=!!(existing.finished||incoming.finished);
+  for(const k of ['createdAt','updatedAt','completedAt','ratingUpdatedAt']){
+   const values=[existing[k],incoming[k]].filter(x=>typeof x==='string'&&x);
+   if(values.length)merged[k]=values.sort()[k==='createdAt'?0:values.length-1];
+  }
+  const handled=new Set(['notes','essayDrafts','essayAssessments','practiceRatings','aiReviewTexts',
+   'essayCustomPrompts','questionId','commonQuestionId','rating','errorCause','essayPracticeSubject',
+   'essayReviewTargetId','mode','phase','remaining','phaseTimeUsed','elapsed','skippedSeconds',
+   'finished','createdAt','updatedAt','completedAt','ratingUpdatedAt','_sync']);
+  for(const [k,v] of Object.entries(incoming)){
+   if(handled.has(k))continue;
+   merged[k]=pick(existing[k],v);
+  }
+  if(diverged)conflict(key,['sessions',day],existing,incoming);
+  if(remoteWins)merged._sync=copy(incoming._sync);
+  else if(!equal(merged,existing)){
+   const revs=[existing._sync?.revision,incoming._sync?.revision].filter(inChain);
+   if(revs.length){
+    const ancestors=[...new Set([...(existing._sync?.ancestors||[]),...(incoming._sync?.ancestors||[]),...revs])].slice(-400);
+    merged._sync={revision:'merge:'+revs.slice().sort().join('|'),device:'merge',ancestors};
+   }
+  }
+  return merged;
+ }
+
+ function mergeRecord(key,local,remote,kind){
    if(kind==='prompts'){
     const out=copy(local),have=new Map(out.entries.map(x=>[x.mode+'::'+x.subject,x]));
     for(const entry of remote.entries){
@@ -170,7 +269,7 @@
     return out;
    }
    if(kind==='records')return mapMerge(key,[],local,remote);
-   if(kind==='sessions')return {...copy(local),sessions:mapMerge(key,['sessions'],local.sessions,remote.sessions)};
+   if(kind==='sessions'){const out=copy(local);out.sessions=copy(local.sessions);for(const [day,session] of Object.entries(remote.sessions)){if(!own(out.sessions,day))out.sessions[day]=copy(session);else out.sessions[day]=mergeStudyDay(day,out.sessions[day],session);}return out;}
    if(kind==='common'||kind==='english'||kind==='oldenglish'){
     const out=copy(local);
     const sections=kind==='common'?['drafts','english','englishHistory','dailySelections','externalPractice']:
