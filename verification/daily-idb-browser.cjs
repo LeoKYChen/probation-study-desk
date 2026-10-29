@@ -11,7 +11,7 @@ const server=http.createServer((req,res)=>{try{const p=decodeURIComponent(new UR
    const browser=await engine.launch(options);
    try{
     const context=await browser.newContext({serviceWorkers:'block',timezoneId:'Asia/Taipei'}),page=await context.newPage(),errors=[];
-    page.on('pageerror',e=>errors.push(e.message));
+    page.on('pageerror',e=>errors.push({page:page.url(),message:e.message,stack:e.stack}));
     await page.goto(origin+'/daily-simulation/');
     const legacy=JSON.stringify({[question.id]:{answer:'舊的每日答案',review:false,updatedAt:'2099-01-01'}}),favorites=JSON.stringify([question.id]);
     await page.evaluate(({legacy,favorites})=>{localStorage.setItem('probation-daily-github:records:v1',legacy);localStorage.setItem('daily-reading-test:saved',favorites);},{legacy,favorites});
@@ -59,7 +59,7 @@ const server=http.createServer((req,res)=>{try{const p=decodeURIComponent(new UR
     assert.equal(await page.locator('#aiFeedback').inputValue(),'每日 AI 評語');
     assert.equal(await page.evaluate(()=>localStorage.getItem('probation-daily-github:records:v1')),legacy);
     assert.equal(await page.evaluate(()=>localStorage.getItem('daily-reading-test:saved')),favorites);
-    const stale=await context.newPage();stale.on('pageerror',e=>errors.push(e.message));
+    const stale=await context.newPage();stale.on('pageerror',e=>errors.push({page:stale.url(),message:e.message,stack:e.stack}));
     await stale.goto(origin+'/v2.5/daily-practice.html?question='+encodeURIComponent(question.id));
     await stale.waitForFunction(()=>!document.querySelector('#workspace').hidden);
     await page.locator('#answer').fill('每日頁較新版本');
