@@ -1,0 +1,26 @@
+'use strict';
+const assert=require('node:assert/strict'),{IDBFactory}=require('fake-indexeddb');
+(async()=>{
+ await import('./indexeddb.js');await import('./lectures-repository.js');await import('../lectures/core.js');
+ const core=PSDLectureCore,api=PSDLecturesRepository,db=await PSDLearningStorage.open(new IDBFactory());
+ const state=core.addCourse(core.empty(),'心理學','原始課程',2,60,'course-original');
+ const original=JSON.stringify(state),values=new Map([[core.KEY,original]]),legacy={getItem:k=>values.get(k)??null,setItem:(k,v)=>values.set(k,v)};
+ const a=await api.open({database:db,legacy,core}),b=await api.open({database:db,legacy,core});
+ assert.equal(a.read().courses[0].id,'course-original');
+ const next=core.updateLesson(a.read(),state.lessons[0].id,30,60,'第1堂');
+ await a.write(next);assert.equal(legacy.getItem(core.KEY),original);
+ assert.equal((await db.get(core.KEY)).includes('course-original'),true);
+ await assert.rejects(b.write(state),/其他分頁/);
+ const reopened=await api.open({database:db,legacy,core});assert.equal(reopened.read().lessons[0].watchedMinutes,30);
+ const fullDb={migrate:(...args)=>db.migrate(...args),get:(...args)=>db.get(...args),compareAndSet:()=>Promise.reject(new DOMException('full','QuotaExceededError'))};
+ const full=await api.open({database:fullDb,legacy,core});
+ await assert.rejects(full.write(state),{name:'QuotaExceededError'});
+ assert.equal(JSON.parse(await db.get(core.KEY)).lessons[0].watchedMinutes,30);
+ values.set(core.KEY,JSON.stringify(core.empty()));
+ await assert.rejects(reopened.write(state),/舊版頁面/);
+ assert.equal(JSON.parse(await db.get(core.KEY)).lessons[0].watchedMinutes,30);db.close();
+ const invalidDb=await PSDLearningStorage.open(new IDBFactory()),bad=new Map([[core.KEY,'broken']]);
+ await assert.rejects(api.open({database:invalidDb,legacy:{getItem:k=>bad.get(k)??null},core}));
+ assert.equal(bad.get(core.KEY),'broken');assert.equal(await invalidDb.get(core.KEY),null);invalidDb.close();
+ console.log('PASS learning management repository: migration, retention, stale tabs and legacy drift');
+})().catch(e=>{console.error(e);process.exitCode=1;});
