@@ -10,6 +10,7 @@
   function open(indexedDBImpl = globalThis.indexedDB) {
     if (!indexedDBImpl) return Promise.reject(Error('IndexedDB 不可用，原有資料未變更'));
     return new Promise((resolve, reject) => {
+      let blocked = false;
       const request = indexedDBImpl.open(DB_NAME, VERSION);
       request.onupgradeneeded = () => {
         const db = request.result;
@@ -17,8 +18,8 @@
         if (!db.objectStoreNames.contains('metadata')) db.createObjectStore('metadata');
       };
       request.onerror = () => reject(request.error || Error('無法開啟 IndexedDB'));
-      request.onblocked = () => reject(Error('資料庫被其他分頁封鎖，請關閉其他分頁後重試'));
-      request.onsuccess = () => { const db = request.result; db.onversionchange = () => db.close(); resolve(new Store(db)); };
+      request.onblocked = () => { blocked = true; reject(Error('資料庫被其他分頁封鎖，請關閉其他分頁後重試')); };
+      request.onsuccess = () => { const db = request.result; if (blocked) { db.close(); return; } db.onversionchange = () => db.close(); resolve(new Store(db)); };
     });
   }
   class Store {
@@ -32,6 +33,48 @@
         request.onsuccess = () => { value = request.result === undefined ? null : request.result; };
         tx.oncomplete = () => resolve(value);
         tx.onabort = () => reject(tx.error || Error('讀取失敗'));
+        tx.onerror = () => {};
+      });
+    }
+    // Capture all requested keys in one read transaction, including absence.
+    snapshot(keys) {
+      if (!Array.isArray(keys) || new Set(keys).size !== keys.length || keys.some(k => typeof k !== 'string' || !k)) return Promise.reject(Error('讀取鍵清單不正確'));
+      return new Promise((resolve, reject) => {
+        const tx = this.db.transaction('records', 'readonly'), store = tx.objectStore('records');
+        const result = Object.create(null);
+        for (const key of keys) {
+          const request = store.get(key);
+          request.onsuccess = () => { if (request.result !== undefined) result[key] = request.result; };
+        }
+        tx.oncomplete = () => resolve(result);
+        tx.onabort = () => reject(tx.error || Error('讀取失敗'));
+        tx.onerror = () => {};
+      });
+    }
+    // Check the complete baseline and write all changes in a single transaction.
+    compareAndSetMany(keys, baseline, changes) {
+      const own = (o,k) => Object.prototype.hasOwnProperty.call(o,k);
+      if (!Array.isArray(keys) || !keys.length || new Set(keys).size !== keys.length || keys.some(k => typeof k !== 'string' || !k) || !baseline || !changes || typeof baseline !== 'object' || typeof changes !== 'object') return Promise.reject(Error('資料格式不正確'));
+      const allowed = new Set(keys);
+      if (Object.keys(baseline).some(k => !allowed.has(k) || typeof baseline[k] !== 'string') || Object.keys(changes).some(k => !allowed.has(k) || (changes[k] !== null && typeof changes[k] !== 'string'))) return Promise.reject(Error('資料格式不正確'));
+      return new Promise((resolve, reject) => {
+        const tx = this.db.transaction('records','readwrite'), store = tx.objectStore('records');
+        let remaining = keys.length, failure;
+        for (const key of keys) {
+          const request = store.get(key);
+          request.onsuccess = () => {
+            const current = request.result === undefined ? null : request.result;
+            const expected = own(baseline,key) ? baseline[key] : null;
+            if (current !== expected) { failure = Error('其他分頁已有更新，請重新檢查'); tx.abort(); return; }
+            if (--remaining === 0) {
+              for (const [k,value] of Object.entries(changes)) {
+                if (value === null) store.delete(k); else store.put(value,k);
+              }
+            }
+          };
+        }
+        tx.oncomplete = () => resolve(Object.keys(changes).length);
+        tx.onabort = () => reject(failure || tx.error || Error('交易失敗，資料未變更'));
         tx.onerror = () => {};
       });
     }
@@ -67,7 +110,10 @@
         let failure, migrated = false;
         const mark = metadata.get(marker);
         mark.onsuccess = () => {
-          if (mark.result) return;
+          if (mark.result) {
+            if (!Array.isArray(mark.result.legacySnapshot) || mark.result.legacySnapshot.some(([key,raw]) => legacy.getItem(key) !== raw)) { failure = Error('舊版頁面已修改原資料，請先保留並處理不同版本'); tx.abort(); }
+            return;
+          }
           try {
             for (const [key, raw] of snapshot) if (legacy.getItem(key) !== raw) throw Error('舊資料在遷移期間變更，請重試');
             // Refuse to overwrite a pre-existing record if migration metadata is missing.
@@ -88,7 +134,7 @@
                       if (--pending === 0) {
                         try {
                           for (const [oldKey, oldRaw] of snapshot) if (legacy.getItem(oldKey) !== oldRaw) throw Error('舊資料在遷移期間變更，請重試');
-                          metadata.put({ completedAt: new Date().toISOString(), keys: keys.slice() }, marker);
+                          metadata.put({ completedAt: new Date().toISOString(), keys: keys.slice(), legacySnapshot: snapshot }, marker);
                           migrated = true;
                         } catch (e) { failure = e; tx.abort(); }
                       }

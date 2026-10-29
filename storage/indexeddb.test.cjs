@@ -1,6 +1,6 @@
 'use strict';
 const assert = require('node:assert/strict');
-const { indexedDB } = require('fake-indexeddb');
+const { indexedDB, IDBObjectStore } = require('fake-indexeddb');
 
 const legacy = initial => {
   const data = new Map(Object.entries(initial));
@@ -22,6 +22,9 @@ const legacy = initial => {
   assert.equal(result.migrated, false);
   assert.equal(await db.get('a'), '{"answer":"新答案"}');
   assert.equal(source.getItem('a'), '{"answer":"原始答案"}');
+  source.setItem('a','{"answer":"舊分頁更新"}');
+  await assert.rejects(db.migrate(source,['a','b']),/舊版頁面/);
+  assert.equal(await db.get('a'),'{"answer":"新答案"}');
   await assert.rejects(db.migrate(legacy({c:'valid', d:'bad'}), ['c','d'], (key) => { if (key === 'd') throw Error('invalid'); }), /invalid/);
   assert.equal(await db.get('c'), null);
   await db.compareAndSet('e', null, 'existing');
@@ -32,6 +35,18 @@ const legacy = initial => {
   const unstable = { getItem(k) { reads++; return reads === 1 ? changing.getItem(k) : 'changed'; } };
   await assert.rejects(db.migrate(unstable, ['g']), /變更/);
   assert.equal(await db.get('g'), null);
+  await db.compareAndSet('multi1', null, 'old1');
+  await db.compareAndSet('multi2', null, 'old2');
+  const baseline=await db.snapshot(['multi1','multi2']);
+  await db.compareAndSetMany(['multi1','multi2'],baseline,{multi1:'new1',multi2:'new2'});
+  await assert.rejects(db.compareAndSetMany(['multi1','multi2'],baseline,{multi1:'bad',multi2:'bad'}),/其他分頁/);
+  assert.equal(await db.get('multi1'),'new1'); assert.equal(await db.get('multi2'),'new2');
+  const originalPut=IDBObjectStore.prototype.put;
+  IDBObjectStore.prototype.put=function(value,key){if(key==='quota2')throw new DOMException('full','QuotaExceededError');return originalPut.call(this,value,key);};
+  try {
+    await assert.rejects(db.compareAndSetMany(['quota1','quota2'],{}, {quota1:'first',quota2:'second'}));
+    assert.equal(await db.get('quota1'),null); assert.equal(await db.get('quota2'),null);
+  } finally { IDBObjectStore.prototype.put=originalPut; }
   await db.compareAndSet('h', null, 'saved');
   db.close();
   const reopened = await open(indexedDB);

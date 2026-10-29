@@ -5,8 +5,8 @@ const fs = require('node:fs');
 const { chromium, webkit } = require('playwright');
 (async () => {
   const server = http.createServer((req, res) => {
-    if (req.url === '/indexeddb.js') { res.setHeader('Content-Type','text/javascript'); return res.end(fs.readFileSync(__dirname+'/indexeddb.js')); }
-    res.setHeader('Content-Type','text/html'); res.end('<!doctype html><script src="/indexeddb.js"></script>');
+    if (req.url === '/indexeddb.js') { res.setHeader('Content-Type','text/javascript; charset=utf-8'); return res.end(fs.readFileSync(__dirname+'/indexeddb.js')); }
+    res.setHeader('Content-Type','text/html; charset=utf-8'); res.end('<!doctype html><script src="/indexeddb.js"></script>');
   });
   await new Promise(r => server.listen(0,'127.0.0.1',r));
   try {
@@ -28,6 +28,12 @@ const { chromium, webkit } = require('playwright');
         await second.evaluate(async () => { window.store = await PSDLearningStorage.open(); });
         await page.evaluate(() => store.compareAndSet('essay','{"q1":"原始答案"}','{"q1":"已修改"}'));
         assert.match(await second.evaluate(async () => { try { await store.compareAndSet('essay','{"q1":"原始答案"}','wrong'); return 'unexpected success'; } catch (e) { return e.message; } }), /其他分頁/);
+        const batch = await page.evaluate(async () => {
+          const base=await store.snapshot(['essay','extra']);
+          await store.compareAndSetMany(['essay','extra'],base,{extra:'新增'});
+          try { await store.compareAndSetMany(['essay','extra'],base,{essay:'覆蓋',extra:'覆蓋'}); return false; } catch (_) { return (await store.get('extra'))==='新增'; }
+        });
+        assert.equal(batch,true);
         await page.reload();
         assert.equal(await page.evaluate(async () => { const db=await PSDLearningStorage.open(); const value=await db.get('essay'); db.close(); return value; }), '{"q1":"已修改"}');
         await context.setOffline(true);
