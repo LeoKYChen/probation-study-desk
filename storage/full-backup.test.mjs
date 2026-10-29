@@ -33,5 +33,14 @@ plan=await full.planDeskImport(result,core,desk.db);assert.equal(plan.writes.len
 const stale=await full.planDeskImport(result,core,desk.db);
 await new LocalRecords(desk,{uuid}).save('attempt/new',{answer:'預覽後新增'});
 await assert.rejects(full.applyDeskImport(stale,desk.db),/預覽後已變更/);
+// A module failure after desk archival is surfaced as partial, and retry is safe.
+const retryPlan=await full.planRestore({bundle:result,core,learning,deskDatabase:desk.db,managedKeys:[key,core.CONFLICT_KEY]});
+const failing={apply:async()=>{throw Error('synthetic quota failure')}};
+await assert.rejects(full.applyRestore({plan:retryPlan,learning:failing,deskDatabase:desk.db}),/書桌備份已安全保留/);
+const refreshed=await full.planRestore({bundle:result,core,learning,deskDatabase:desk.db,managedKeys:[key,core.CONFLICT_KEY]});
+const restored=await full.applyRestore({plan:refreshed,learning,deskDatabase:desk.db});
+assert.equal(restored.deskWritten,0);
+const unsafe=structuredClone(result);unsafe.learning.data['probation-study-desk-v24']=JSON.stringify({other:{issue:'尚未支援'}});
+await assert.rejects(full.planRestore({bundle:unsafe,core,learning,deskDatabase:desk.db,managedKeys:[key,core.CONFLICT_KEY]}),/尚未支援/);
 archived.close();
 db.close();desk.close();other.close();console.log('PASS full backup export: module data, all desk namespaces, validation and concurrent-change guard');

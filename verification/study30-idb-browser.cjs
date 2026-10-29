@@ -73,6 +73,10 @@ const server=http.createServer((req,res)=>{
     assert.ok(archive&&archive.includes('另一版本'));
     assert.equal(await page.evaluate(()=>localStorage.getItem('probation-study30-v251:v1')),old);
     assert.equal(await page.locator('#driveSyncPanel').isHidden(),true);
+    await page.goto(origin+'/backup/');
+    await page.waitForFunction(()=>document.querySelector('#summary').textContent.includes('完整備份尚未整合'));
+    assert.equal(await page.locator('#export').isDisabled(),true);
+    assert.equal(await page.locator('#importFile').isDisabled(),true);
     assert.deepEqual(errors,[]);
     await ctx.close();
     const offline=await browser.newContext({serviceWorkers:'allow',timezoneId:'Asia/Taipei'});
@@ -86,7 +90,7 @@ const server=http.createServer((req,res)=>{
     await offlinePage.waitForFunction(()=>document.querySelector('#offlineStatus')?.textContent.includes('離線資料已就緒'),null,{timeout:30000});
     await offlinePage.waitForFunction(()=>!!navigator.serviceWorker.controller,null,{timeout:30000});
     await offline.setOffline(true);
-    try { await offlinePage.reload(); }
+    try { await offlinePage.goto(origin+'/professional/'); }
     catch (error) {
       // Diagnostic only: keep the offline-emulation failure visible in CI.
       if (engine===webkit) {

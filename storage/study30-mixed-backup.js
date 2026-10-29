@@ -39,7 +39,7 @@
    await checkLegacy();
    return count;
   }
-  return {snapshot,collect,plan,apply};
+  return {managedKeys:managed.slice(),snapshot,collect,plan,apply};
  }
  return {create};
 });

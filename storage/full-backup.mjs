@@ -3,6 +3,11 @@
 import {FORMAT as DESK_FORMAT,validateState,same} from '../cloud-sync/core.js';
 export const FORMAT='psd-full-learning-backup-v2';
 function assert(test,message){if(!test)throw Error(message);}
+function canonical(value){
+ if(Array.isArray(value))return '['+value.map(canonical).join(',')+']';
+ if(value&&typeof value==='object')return '{'+Object.keys(value).sort().map(key=>JSON.stringify(key)+':'+canonical(value[key])).join(',')+'}';
+ return JSON.stringify(value);
+}
 export function validate(bundle,core){
  assert(bundle&&typeof bundle==='object'&&!Array.isArray(bundle)&&bundle.format===FORMAT&&bundle.schemaVersion===2,'完整備份格式不符');
  assert(typeof bundle.exportedAt==='string'&&typeof bundle.sourceOrigin==='string','備份日期或來源不符');
@@ -52,7 +57,7 @@ export async function planDeskImport(bundle,core,deskDatabase){
   if(existing===undefined){baseline.set(row.namespace,null);writes.push({namespace:row.namespace,state:structuredClone(row.state)});continue;}
   baseline.set(row.namespace,structuredClone(existing));
   if(same(existing,row.state))continue;
-  const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify([row.namespace,row.state])));
+  const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(canonical(JSON.parse(JSON.stringify([row.namespace,row.state])))));
   const hash=Array.from(new Uint8Array(digest),n=>n.toString(16).padStart(2,'0')).join('');
   const archive='backup-archive:'+hash, previous=known.get(archive);
   if(previous!==undefined&&!same(previous,row.state))throw Error('書桌封存識別碼衝突，已停止匯入');
@@ -95,4 +100,33 @@ export function applyDeskImport(plan,deskDatabase){
   tx.onabort=()=>reject(failure||tx.error||Error('書桌匯入交易失敗'));
   tx.onerror=()=>{};
  });
+}
+
+// Transitional full restore: unsupported learning modules are rejected before
+// either database is touched. Desk imports are non-destructive; if a later
+// learning transaction fails, callers must retry after a fresh preview.
+export async function planRestore({bundle,core,learning,deskDatabase}){
+ validate(bundle,core);
+ const managedKeys=learning.managedKeys;
+ assert(Array.isArray(managedKeys)&&managedKeys.length>0,'缺少已遷移模組清單');
+ const modulePlan=await learning.plan(bundle.learning);
+ const allowed=new Set(managedKeys);
+ assert(Object.keys(modulePlan.changes).every(k=>allowed.has(k)),'備份包含尚未支援還原的模組，已停止且沒有寫入資料');
+ const deskPlan=await planDeskImport(bundle,core,deskDatabase);
+ return {modulePlan,deskPlan,managedKeys:managedKeys.slice()};
+}
+export async function applyRestore({plan,learning,deskDatabase}){
+ assert(plan&&plan.modulePlan&&plan.deskPlan&&Array.isArray(plan.managedKeys),'還原計畫不符');
+ const allowed=new Set(plan.managedKeys);
+ assert(Object.keys(plan.modulePlan.changes||{}).every(k=>allowed.has(k)),'還原範圍不符');
+ // There is no cross-database transaction in IndexedDB. Desk import only adds
+ // new namespaces; an error afterwards leaves those copies intact for retry.
+ const deskWritten=await applyDeskImport(plan.deskPlan,deskDatabase);
+ try{
+  const moduleWritten=await learning.apply(plan.modulePlan);
+  return {deskWritten,moduleWritten,conflicts:plan.deskPlan.conflicts};
+ }catch(e){
+  const error=Error('書桌備份已安全保留；學習模組結果未確認，請保留兩份資料、重新預覽後重試：'+e.message);
+  error.cause=e;error.deskWritten=deskWritten;throw error;
+ }
 }
