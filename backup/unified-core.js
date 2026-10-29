@@ -130,6 +130,26 @@
    return output;
   }
  
+ // Legacy sessions predate the revision tracker. Give their exact JSON payload a
+ // stable, non-secret fingerprint for explicit user-approved restore ancestry.
+ // This fingerprint is for equality tracking, not cryptographic authentication.
+ function legacyStudyRevision(session){
+  const plain=copy(session);delete plain._sync;
+  const source=JSON.stringify(plain);
+  let h1=2166136261,h2=0x9e3779b9;
+  for(let i=0;i<source.length;i++){
+   const c=source.charCodeAt(i);
+   h1=Math.imul(h1^c,16777619)>>>0;
+   h2=Math.imul(h2^(c&255),2246822519)>>>0;
+   h2=Math.imul(h2^(c>>>8),3266489917)>>>0;
+  }
+  return 'legacy:'+source.length+':'+h1.toString(16).padStart(8,'0')+
+   h2.toString(16).padStart(8,'0');
+ }
+ const studyRevision=session=>
+  typeof session?._sync?.revision==='string'&&session._sync.revision
+   ?session._sync.revision:legacyStudyRevision(session);
+
  // Merge a daily session by useful content rather than skipping the whole date.
  // A known descendant may supersede its ancestor; unrelated edits never discard
  // a non-empty answer. On divergence, the entire incoming version is archived.
@@ -152,12 +172,13 @@
   if(left&&!right)return copy(existing);
   const li=existing._sync||{},ri=incoming._sync||{};
   const inChain=ref=>typeof ref==='string'&&ref.length>0;
+  const existingRev=studyRevision(existing),incomingRev=studyRevision(incoming);
   const sameBranch=inChain(li.branchId)&&li.branchId===ri.branchId&&
    Number.isSafeInteger(li.seq)&&Number.isSafeInteger(ri.seq);
   const remoteDesc=(sameBranch&&ri.seq>li.seq)||
-   (inChain(li.revision)&&Array.isArray(ri.ancestors)&&ri.ancestors.includes(li.revision));
+   (Array.isArray(ri.ancestors)&&ri.ancestors.includes(existingRev));
   const localDesc=(sameBranch&&li.seq>ri.seq)||
-   (inChain(ri.revision)&&Array.isArray(li.ancestors)&&li.ancestors.includes(ri.revision));
+   (Array.isArray(li.ancestors)&&li.ancestors.includes(incomingRev));
   if(localDesc&&!remoteDesc)return copy(existing);
   const remoteWins=remoteDesc&&!localDesc;
   let diverged=false;
@@ -363,16 +384,14 @@
   const archive=snapshot[CONFLICT_KEY]?parseValue(CONFLICT_KEY,snapshot[CONFLICT_KEY]):{schema:CONFLICT_KEY,entries:[]};
   const changes=Object.create(null);
   if(!equal(old,target)){
-   // When the old primary has a revision, the chosen restored version is its
-   // explicit descendant. This prevents the next cloud merge from undoing a
-   // deliberate manual conflict resolution.
-   if(old?._sync?.revision){
-    const ancestry=[...(target._sync?.ancestors||[]),...(old._sync?.ancestors||[]),
-     target._sync?.revision,old._sync.revision].filter(v=>typeof v==='string'&&v);
-    target._sync={revision:typeof restoreRevision==='string'&&restoreRevision.length>8?restoreRevision:
-     'restore-'+Date.now()+'-'+Math.random().toString(36).slice(2),device:'manual-restore',
-     ancestors:[...new Set(ancestry)].slice(-400)};
-   }
+   // A manual choice supersedes both the displaced primary and the selected
+   // archived version. Legacy records without _sync use stable content identity.
+   // Unseen edits on other devices are not declared descendants.
+   const ancestry=[...(target._sync?.ancestors||[]),...(old?._sync?.ancestors||[]),
+    studyRevision(target),...(old?[studyRevision(old)]:[])].filter(v=>typeof v==='string'&&v);
+   target._sync={revision:typeof restoreRevision==='string'&&restoreRevision.length>8?restoreRevision:
+    'restore-'+Date.now()+'-'+Math.random().toString(36).slice(2),device:'manual-restore',
+    ancestors:[...new Set(ancestry)].slice(-400)};
    next.sessions[date]=target;changes[key]=JSON.stringify(next);
    if(old!==null&&!archive.entries.some(x=>x.key===key&&equal(x.path,['sessions',date])&&equal(x.incoming,old)))
     archive.entries.push({key,path:['sessions',date],existing:copy(target),incoming:copy(old)});
