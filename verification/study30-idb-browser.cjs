@@ -84,6 +84,7 @@ const server=http.createServer((req,res)=>{
     await offlinePage.locator('#essayField0').fill('離線還原驗證');
     await offlinePage.waitForFunction(()=>document.querySelector('#essaySaveStatus').textContent.includes('已自動保存'));
     await offlinePage.waitForFunction(()=>document.querySelector('#offlineStatus')?.textContent.includes('離線資料已就緒'),null,{timeout:30000});
+    await offlinePage.waitForFunction(()=>!!navigator.serviceWorker.controller,null,{timeout:30000});
     await offline.setOffline(true);await offlinePage.reload();
     await offlinePage.waitForFunction(()=>!!window.Study30App?.essayContext());
     assert.equal(await offlinePage.locator('#essayField0').inputValue(),'離線還原驗證');
