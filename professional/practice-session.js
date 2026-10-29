@@ -39,7 +39,9 @@
   const blank = () => ({version:1,sessions:{}});
   const DEVICE_KEY='psd-study30-sync-device-v1';
   const idbTestMode=window.PSD_STUDY30_IDB_TEST===true;
-  let idbRepository=null,idbDatabase=null;
+  let idbRepository=null,idbDatabase=null,resolveIdbReady,rejectIdbReady;
+  const idbReady=new Promise((resolve,reject)=>{resolveIdbReady=resolve;rejectIdbReady=reject;});
+  idbReady.catch(()=>{});
   let store=blank(),session=null,running=false,lastTickMs=0,canSave=true,selectedPracticeDate=null,lastStoredRaw=null,deviceId=null;
   const say = message=>{$('notice').textContent=message;$('notice').hidden=false;};
   function identifier(){return (typeof crypto!=='undefined'&&typeof crypto.randomUUID==='function')
@@ -333,8 +335,8 @@
       try{
         idbDatabase=await window.PSDLearningStorage.open();
         idbRepository=await window.Study30IndexedRepository.open({database:idbDatabase,legacy:localStorage});
-        store=idbRepository.read();
-      }catch(e){canSave=false;say('無法安全讀取測試資料：'+e.message+'。原始資料未刪除。');return;}
+        store=idbRepository.read();resolveIdbReady(idbDatabase);
+      }catch(e){rejectIdbReady(e);canSave=false;say('無法安全讀取測試資料：'+e.message+'。原始資料未刪除。');return;}
     }else load();
     loadToday();if(session&&!session._sync)persist();
     document.querySelectorAll('[data-practice-rating]').forEach(button=>button.addEventListener('click',()=>savePracticeRating(button.dataset.practiceRating)));
@@ -468,7 +470,7 @@ function readAiReview(id) {
   return '';
 }
 function currentDailyQuestion(){return session?currentQuestion():null;}
-window.Study30App={whenSaved,readSessions:()=>structuredClone(store.sessions),getEssayVersions,saveEssayVersion,restoreEssayVersion,essayContext,saveEssay,saveEssayManualQuestion,essayAssessmentContext,saveEssayAssessment,getEssayReviewData,openEssayReview,prepareBackupRestore,saveAiReview,readAiReview,currentDailyQuestion};
+window.Study30App={whenSaved,whenIdbReady:()=>idbTestMode?idbReady:Promise.reject(Error('測試儲存未啟用')),readSessions:()=>structuredClone(store.sessions),getEssayVersions,saveEssayVersion,restoreEssayVersion,essayContext,saveEssay,saveEssayManualQuestion,essayAssessmentContext,saveEssayAssessment,getEssayReviewData,openEssayReview,prepareBackupRestore,saveAiReview,readAiReview,currentDailyQuestion};
   window.Study30Planner={isoTaipei,subjectFor,durations,normalSubject,candidateSubject,hash};
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
 })();

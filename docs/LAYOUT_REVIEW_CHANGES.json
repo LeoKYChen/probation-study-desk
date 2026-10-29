@@ -41,8 +41,8 @@
     {
       "path": "professional/index.html",
       "base_sha256": "115a1a32e125e7215c4336f4d079d434588308f7fff7fb69e53f446352dddf4b",
-      "sha256": "47e12b67208087d65bc048c26c3025d2077007383736d22a3fb022d82be0f41b",
-      "reason": "Slides 2,8–17: remove marked prose, add chart/history hosts, group health under existing import panel. Follow-up slides 24–29 remove marked text, retain actual-record forecast, shorten 10-minute label. Keep four-grid drafts and full answer expanded by default; remove explanation only. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22 AI practice] Add optional answer-direction review selector; keep existing full-answer mode, record keys and source bank intact. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。；2026-10-28 Stage2：統一 JSON 合併與衝突復原、同日申論版本保存、離線共用核心。；2026-10-28 Stage3：加入選擇啟用的 Google Drive OAuth 同步與快取，保留原有本機資料鍵。 [IndexedDB 草稿測試] 測試開關啟動非同步儲存；預設沿用既有模式。"
+      "sha256": "a63e7c02d3396d359c923a88c57799dacc3fe42e32fd594abe84b7ce5073fbbc",
+      "reason": "Slides 2,8–17: remove marked prose, add chart/history hosts, group health under existing import panel. Follow-up slides 24–29 remove marked text, retain actual-record forecast, shorten 10-minute label. Keep four-grid drafts and full answer expanded by default; remove explanation only. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22 AI practice] Add optional answer-direction review selector; keep existing full-answer mode, record keys and source bank intact. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。；2026-10-28 Stage2：統一 JSON 合併與衝突復原、同日申論版本保存、離線共用核心。；2026-10-28 Stage3：加入選擇啟用的 Google Drive OAuth 同步與快取，保留原有本機資料鍵。 [IndexedDB 草稿測試] 測試開關啟動非同步儲存；預設沿用既有模式。 [IndexedDB 草稿] 增加每日30分鐘過渡期備份支援。"
     },
     {
       "path": "professional/layout-followup.css",
@@ -89,8 +89,8 @@
     {
       "path": "professional/sw.js",
       "base_sha256": "40e49a0b907e3db282d42743613f7756e205dba51705dfba7e8efac533400e99",
-      "sha256": "ee1ee4b219e548e53bca3e140308d6fad71f57fb08d6a53b7e393aee68dd29cd",
-      "reason": "Refresh existing installed-viewer asset cache for changed UI, without altering storage keys. [2026-10-21] Rotate cache version after mobile duration CSS update, so previously installed Safari PWAs fetch a fresh layout on service-worker activation.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22] Bump offline cache to refresh AI review mode script for installed apps. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。；2026-10-28 獨立開發分支：安全 JSON 合併、版本承接與多分頁覆寫保護。；2026-10-28 Stage2：統一 JSON 合併與衝突復原、同日申論版本保存、離線共用核心。；2026-10-28 Stage3：加入選擇啟用的 Google Drive OAuth 同步與快取，保留原有本機資料鍵。 [IndexedDB 草稿] 離線快照加入測試所需腳本。"
+      "sha256": "9028c14a5b04ebfae0996f58f0c1d103a8858bcb711aff03ed0a86d565f58506",
+      "reason": "Refresh existing installed-viewer asset cache for changed UI, without altering storage keys. [2026-10-21] Rotate cache version after mobile duration CSS update, so previously installed Safari PWAs fetch a fresh layout on service-worker activation.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22] Bump offline cache to refresh AI review mode script for installed apps. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。；2026-10-28 獨立開發分支：安全 JSON 合併、版本承接與多分頁覆寫保護。；2026-10-28 Stage2：統一 JSON 合併與衝突復原、同日申論版本保存、離線共用核心。；2026-10-28 Stage3：加入選擇啟用的 Google Drive OAuth 同步與快取，保留原有本機資料鍵。 [IndexedDB 草稿] 離線快照加入測試所需腳本。 [IndexedDB 草稿] 增加每日30分鐘過渡期備份支援。"
     },
     {
       "path": "sw.js",
@@ -101,8 +101,8 @@
     {
       "path": "professional/practice-session.js",
       "base_sha256": null,
-      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.；2026-10-23 手機標示精簡及完整題庫資訊校正 [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。；2026-10-28 獨立開發分支：安全 JSON 合併、版本承接與多分頁覆寫保護。；2026-10-28 Stage2：統一 JSON 合併與衝突復原、同日申論版本保存、離線共用核心。；增加分支版本序號與空白草稿復原安全性。 [IndexedDB 草稿測試] 測試開關啟動非同步儲存；預設沿用既有模式。",
-      "sha256": "bc75c2746f3ffd55b79f9c00bf0368f292d82dc1167ba722daf16e3b3ac4ede0"
+      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.；2026-10-23 手機標示精簡及完整題庫資訊校正 [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。；2026-10-28 獨立開發分支：安全 JSON 合併、版本承接與多分頁覆寫保護。；2026-10-28 Stage2：統一 JSON 合併與衝突復原、同日申論版本保存、離線共用核心。；增加分支版本序號與空白草稿復原安全性。 [IndexedDB 草稿測試] 測試開關啟動非同步儲存；預設沿用既有模式。 [IndexedDB 草稿] 增加每日30分鐘過渡期備份支援。",
+      "sha256": "bbc61372f7fe7f2902c9e3c74eeedc828fd2c9e3f9f510a833dbba8857fef791"
     },
     {
       "path": "professional/practice-review.js",
@@ -149,8 +149,8 @@
     {
       "path": "professional/backup-import.js",
       "base_sha256": "d05071d36dd4c09f5bc4367ef98c4f1d4ded9a80fdf105f5c01c446552c820cc",
-      "sha256": "d6e0247644c26e081a50884b265815dd40922b6f39ce2e4fba8a81251f845a98",
-      "reason": "2026-10-28 Stage2：每日30分鐘備份匯入改用同一個完整備份安全合併引擎、移除覆寫全日期的高風險完整還原。 [IndexedDB 草稿測試] 測試開關啟動非同步儲存；預設沿用既有模式。"
+      "sha256": "f2408258aec94f41cc56407773a2693f8a74d8d8a2e06b73ebb8a839ff521626",
+      "reason": "2026-10-28 Stage2：每日30分鐘備份匯入改用同一個完整備份安全合併引擎、移除覆寫全日期的高風險完整還原。 [IndexedDB 草稿測試] 測試開關啟動非同步儲存；預設沿用既有模式。 [IndexedDB 草稿] 增加每日30分鐘過渡期備份支援。"
     },
     {
       "path": "professional/essay-selfcheck.js",

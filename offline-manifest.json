@@ -497,6 +497,9 @@
       "url": "storage/indexeddb.js"
     },
     {
+      "url": "storage/study30-mixed-backup.js"
+    },
+    {
       "url": "v2.5/README.md"
     },
     {

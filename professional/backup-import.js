@@ -73,12 +73,13 @@
 (function(){
  'use strict';
  const $=id=>document.getElementById(id),api=window.Study30BackupImport,core=window.PSDUnifiedBackup;
- let imported=null,previewPlan=null;
+ let imported=null,previewPlan=null,mixed=null;
+ const mixedMode=window.PSD_STUDY30_IDB_TEST===true;
  const status=message=>{$('importStatus').textContent=message;};
- const readCurrent=()=>api.safeStore(JSON.parse(localStorage.getItem(api.KEY)||'{"version":1,"sessions":{}}'));
- const snapshot=()=>core.storageSnapshot(localStorage);
- function planImport(){
-  const previous=snapshot(),data={};
+ const readCurrent=async()=>api.safeStore(JSON.parse((await snapshot())[api.KEY]||'{"version":1,"sessions":{}}'));
+ const snapshot=async()=>mixedMode?mixed.snapshot():core.storageSnapshot(localStorage);
+ async function planImport(){
+  const previous=await snapshot(),data={};
   data[api.KEY]=JSON.stringify(imported);
   return core.plan(previous,{format:core.FORMAT,schemaVersion:core.SCHEMA,
    exportedAt:new Date().toISOString(),sourceOrigin:location.origin,data});
@@ -86,11 +87,12 @@
  function ready(){
   $('importExecute').disabled=!imported||!previewPlan||!$('importBackupConfirmed').checked;
  }
- function preview(){
+ async function preview(){
   if(!imported)return;
   try{
-   const before=readCurrent();
-   previewPlan=planImport();
+   if(mixedMode)await window.Study30App.whenSaved();
+   const before=await readCurrent();
+   previewPlan=await planImport();
    const after=JSON.parse(previewPlan.changes[api.KEY]||JSON.stringify(before));
    const a=api.count(imported),b=api.count(before);
    const newDays=Object.keys(after.sessions).length-Object.keys(before.sessions).length;
@@ -103,36 +105,38 @@
   }catch(e){previewPlan=null;status('無法安全預覽：'+e.message);}
   ready();
  }
- function downloadCurrent(){
+ async function downloadCurrent(){
   try{
-   const data=core.collect(localStorage,location.origin);
+   if(mixedMode)await window.Study30App.whenSaved();
+   const data=mixedMode?await mixed.collect():core.collect(localStorage,location.origin);
    const raw=JSON.stringify(data,null,2),blob=new Blob([raw],{type:'application/json'});
    const url=URL.createObjectURL(blob),a=document.createElement('a');
    a.href=url;a.download='study30-import-protection-'+new Date().toISOString().slice(0,10)+'.json';
    document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),3000);
-   status('已要求下載整站保護備份；請確認檔案確實存在，再勾選確認。');
+   status(mixedMode?'已要求下載測試保護備份（尚不含備考書桌）；請確認檔案存在。':'已要求下載整站保護備份；請確認檔案確實存在，再勾選確認。');
   }catch(e){status('保護備份失敗，請勿匯入：'+e.message);}
  }
  async function onFile(file){
   imported=null;previewPlan=null;$('importBackupConfirmed').checked=false;ready();
   if(!file){status('尚未選擇JSON檔案');return;}
   if(file.size>20*1024*1024){status('JSON檔案超過20 MB，已拒絕匯入');return;}
-  try{imported=api.parse(await file.text());preview();}
+  try{imported=api.parse(await file.text());await preview();}
   catch(e){status('無法匯入：'+e.message);}
  }
- function execute(){
+ async function execute(){
   if(!imported||!previewPlan||!$('importBackupConfirmed').checked)return;
   if(!window.confirm('確認已下載本機完整保護備份、關閉其他編輯分頁？系統會合併資料並保留不同答案的衝突版本。'))return;
   try{
    window.Study30App?.prepareBackupRestore?.();
-   const written=core.apply(localStorage,previewPlan);
+   if(mixedMode)await window.Study30App.whenSaved();
+   const written=mixedMode?await mixed.apply(previewPlan):core.apply(localStorage,previewPlan);
    status('安全合併完成，更新'+written+'個資料區，即將重新載入。');
    location.reload();
   }catch(e){status('匯入停止，原始備份請保留：'+e.message);}
  }
- function init(){
+ async function init(){
   if(!$('importBackupFile'))return;
-  if(window.PSD_STUDY30_IDB_TEST===true){const panel=$('importBackupFile').closest('section');if(panel)panel.hidden=true;return;}
+  if(mixedMode){try{const database=await window.Study30App.whenIdbReady();mixed=window.PSDStudy30MixedBackup.create({core,database,legacy:localStorage,origin:location.origin});}catch(e){status('測試備份無法啟動：'+e.message);return;}}
   $('importBackupFile').addEventListener('change',e=>onFile(e.target.files?.[0]));
   $('downloadBeforeImport').addEventListener('click',downloadCurrent);
   $('importBackupConfirmed').addEventListener('change',ready);

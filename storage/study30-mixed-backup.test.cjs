@@ -1,0 +1,25 @@
+'use strict';
+const assert=require('node:assert/strict');
+const {IDBFactory}=require('fake-indexeddb');
+(async()=>{
+ await import('./indexeddb.js');await import('./study30-mixed-backup.js');await import('../backup/unified-core.js');
+ const core=PSDUnifiedBackup,db=await PSDLearningStorage.open(new IDBFactory());
+ const key='probation-study30-v251:v1',day='2099-12-31',question='Q-test';
+ const raw=x=>JSON.stringify({version:1,sessions:{[day]:{date:day,questionId:question,notes:[x],essayDrafts:{[question]:{outline:[x],fullAnswer:x}}}}});
+ const map=new Map([[key,raw('舊稿')],['probation-study-desk-v24',JSON.stringify({old:{issue:'另一模組'}})]]);
+ const legacy={getItem:k=>map.has(k)?map.get(k):null,setItem:(k,v)=>map.set(k,v)};
+ const bridge=PSDStudy30MixedBackup.create({core,database:db,legacy,origin:'https://test.invalid'});
+ let data=await bridge.collect();assert.equal(data.data[key],raw('舊稿'));assert.ok(data.data['probation-study-desk-v24']);
+ await db.compareAndSet(key,raw('舊稿'),raw('本機新稿'));
+ data=await bridge.collect();assert.equal(data.data[key],raw('本機新稿'));assert.equal(legacy.getItem(key),raw('舊稿'));
+ const input={...data,data:{[key]:raw('匯入不同稿')}};
+ const plan=await bridge.plan(input);assert.ok(plan.conflicts.length);await bridge.apply(plan);
+ const after=await bridge.collect();assert.equal(JSON.parse(after.data[key]).sessions[day].essayDrafts[question].fullAnswer,'本機新稿');
+ assert.ok(JSON.stringify(after.data[core.CONFLICT_KEY]).includes('匯入不同稿'));
+ assert.equal(legacy.getItem(key),raw('舊稿'));
+ const again=await bridge.plan(input);legacy.setItem('probation-study-desk-v24',JSON.stringify({old:{issue:'其他分頁更新'}}));
+ await assert.rejects(bridge.apply(again),/重新預覽/);
+ assert.equal(JSON.parse(await db.get(key)).sessions[day].essayDrafts[question].fullAnswer,'本機新稿');
+ await assert.rejects(bridge.apply({baseline:await bridge.snapshot(),changes:{'probation-study-desk-v24':'{}'}}),/只能匯入/);
+ db.close();console.log('PASS transitional backup: mixed export, preserved source, conflict archive and stale import guard');
+})().catch(e=>{console.error(e);process.exitCode=1;});
