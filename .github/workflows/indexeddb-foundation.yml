@@ -2,7 +2,7 @@ name: IndexedDB foundation draft checks
 on:
   pull_request:
     branches: [feature/study30-google-drive-sync-stage3-20261028]
-    paths: ['storage/**', 'professional/**', 'verification/study30-idb-browser.cjs', '.github/workflows/indexeddb-foundation.yml']
+    paths: ['storage/**', 'professional/**', 'backup/**', 'sw.js', 'offline-manifest.json', 'verification/study30-idb-browser.cjs', '.github/workflows/indexeddb-foundation.yml']
 permissions:
   contents: read
 jobs:

@@ -41,6 +41,9 @@
       "url": "backup/index.html"
     },
     {
+      "url": "backup/test-idb-conflicts.js"
+    },
+    {
       "url": "backup/unified-core.js"
     },
     {

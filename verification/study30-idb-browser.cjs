@@ -77,6 +77,15 @@ const server=http.createServer((req,res)=>{
     await page.waitForFunction(()=>document.querySelector('#summary').textContent.includes('完整備份尚未整合'));
     assert.equal(await page.locator('#export').isDisabled(),true);
     assert.equal(await page.locator('#importFile').isDisabled(),true);
+    await page.waitForFunction(()=>document.querySelectorAll('#study30ConflictList details').length>0);
+    const conflict=page.locator('#study30ConflictList details').first();await conflict.locator('summary').click();
+    const protect=page.waitForEvent('download');await page.locator('#study30ConflictBackup').click();await protect;
+    await page.locator('#study30ConflictConfirmed').check();
+    await conflict.locator('button.restoreStudy30').nth(1).click();
+    await page.waitForFunction(()=>document.querySelector('#message').textContent.includes('已恢復選擇的版本'));
+    const restored=await page.evaluate(async()=>{const db=await PSDLearningStorage.open();const value=await db.get('probation-study30-v251:v1'),archive=await db.get('psd-unified-backup-conflicts-v1');db.close();return {value,archive};});
+    assert.ok(restored.value.includes('另一版本'));assert.ok(restored.archive.includes('IndexedDB 申論草稿'));
+    assert.equal(await page.evaluate(()=>localStorage.getItem('probation-study30-v251:v1')),old);
     assert.deepEqual(errors,[]);
     await ctx.close();
     const quota=await browser.newContext({serviceWorkers:'block',timezoneId:'Asia/Taipei'});
