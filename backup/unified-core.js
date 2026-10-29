@@ -107,6 +107,26 @@
   if(type==='lectures')return value.lessons.length;
   return 1;
  }
+ // Legacy sessions predate the revision tracker. Give their exact JSON payload a
+ // stable, non-secret fingerprint for explicit user-approved restore ancestry.
+ // This fingerprint is for equality tracking, not cryptographic authentication.
+ function legacyStudyRevision(session){
+  const plain=copy(session);delete plain._sync;
+  const source=JSON.stringify(plain);
+  let h1=2166136261,h2=0x9e3779b9;
+  for(let i=0;i<source.length;i++){
+   const c=source.charCodeAt(i);
+   h1=Math.imul(h1^c,16777619)>>>0;
+   h2=Math.imul(h2^(c&255),2246822519)>>>0;
+   h2=Math.imul(h2^(c>>>8),3266489917)>>>0;
+  }
+  return 'legacy:'+source.length+':'+h1.toString(16).padStart(8,'0')+
+   h2.toString(16).padStart(8,'0');
+ }
+ const studyRevision=session=>
+  typeof session?._sync?.revision==='string'&&session._sync.revision
+   ?session._sync.revision:legacyStudyRevision(session);
+
  function plan(current,bundle){
   validate(bundle);
   assert(isObj(current),'本機狀態不可讀');
@@ -130,26 +150,6 @@
    return output;
   }
  
- // Legacy sessions predate the revision tracker. Give their exact JSON payload a
- // stable, non-secret fingerprint for explicit user-approved restore ancestry.
- // This fingerprint is for equality tracking, not cryptographic authentication.
- function legacyStudyRevision(session){
-  const plain=copy(session);delete plain._sync;
-  const source=JSON.stringify(plain);
-  let h1=2166136261,h2=0x9e3779b9;
-  for(let i=0;i<source.length;i++){
-   const c=source.charCodeAt(i);
-   h1=Math.imul(h1^c,16777619)>>>0;
-   h2=Math.imul(h2^(c&255),2246822519)>>>0;
-   h2=Math.imul(h2^(c>>>8),3266489917)>>>0;
-  }
-  return 'legacy:'+source.length+':'+h1.toString(16).padStart(8,'0')+
-   h2.toString(16).padStart(8,'0');
- }
- const studyRevision=session=>
-  typeof session?._sync?.revision==='string'&&session._sync.revision
-   ?session._sync.revision:legacyStudyRevision(session);
-
  // Merge a daily session by useful content rather than skipping the whole date.
  // A known descendant may supersede its ancestor; unrelated edits never discard
  // a non-empty answer. On divergence, the entire incoming version is archived.
