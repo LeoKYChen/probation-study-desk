@@ -79,6 +79,21 @@ const server=http.createServer((req,res)=>{
     assert.equal(await page.locator('#importFile').isDisabled(),true);
     assert.deepEqual(errors,[]);
     await ctx.close();
+    const quota=await browser.newContext({serviceWorkers:'block',timezoneId:'Asia/Taipei'});
+    await quota.route('https://accounts.google.com/**',route=>route.abort());
+    await quota.addInitScript(()=>{window.PSD_STUDY30_IDB_TEST=true});
+    const quotaPage=await quota.newPage(),quotaErrors=[];quotaPage.on('pageerror',e=>quotaErrors.push(e.message));
+    await quotaPage.goto(origin+'/professional/');await quotaPage.waitForFunction(()=>!!window.Study30App?.essayContext());
+    await quotaPage.evaluate(()=>window.Study30App.whenSaved());
+    await quotaPage.locator('#essayField0').fill('容量測試前內容');
+    await quotaPage.waitForFunction(()=>document.querySelector('#essaySaveStatus').textContent.includes('已自動保存'));
+    await quotaPage.evaluate(()=>{const put=IDBObjectStore.prototype.put;IDBObjectStore.prototype.put=function(v,k){if(k==='probation-study30-v251:v1')throw new DOMException('full','QuotaExceededError');return put.call(this,v,k);};});
+    await quotaPage.locator('#essayField0').fill('容量不足時的內容');
+    await quotaPage.waitForFunction(()=>document.querySelector('#essaySaveStatus').textContent.includes('未能保存'));
+    const intact=await quotaPage.evaluate(async()=>{const db=await PSDLearningStorage.open();const raw=await db.get('probation-study30-v251:v1');db.close();return raw});
+    assert.ok(intact.includes('容量測試前內容'));assert.ok(!intact.includes('容量不足時的內容'));assert.deepEqual(quotaErrors,[]);
+    await quota.close();
+    console.log(`PASS ${engine.name()}: daily UI, stale tab, JSON conflict import and quota failure`);
     const offline=await browser.newContext({serviceWorkers:'allow',timezoneId:'Asia/Taipei'});
     await offline.route('https://accounts.google.com/**',route=>route.abort());
     await offline.addInitScript(()=>{window.PSD_STUDY30_IDB_TEST=true});
@@ -109,20 +124,6 @@ const server=http.createServer((req,res)=>{
     await offlinePage.waitForFunction(()=>!!window.Study30App?.essayContext());
     assert.equal(await offlinePage.locator('#essayField0').inputValue(),'離線還原驗證');
     await offline.close();
-    const quota=await browser.newContext({serviceWorkers:'block',timezoneId:'Asia/Taipei'});
-    await quota.route('https://accounts.google.com/**',route=>route.abort());
-    await quota.addInitScript(()=>{window.PSD_STUDY30_IDB_TEST=true});
-    const quotaPage=await quota.newPage(),quotaErrors=[];quotaPage.on('pageerror',e=>quotaErrors.push(e.message));
-    await quotaPage.goto(origin+'/professional/');await quotaPage.waitForFunction(()=>!!window.Study30App?.essayContext());
-    await quotaPage.evaluate(()=>window.Study30App.whenSaved());
-    await quotaPage.locator('#essayField0').fill('容量測試前內容');
-    await quotaPage.waitForFunction(()=>document.querySelector('#essaySaveStatus').textContent.includes('已自動保存'));
-    await quotaPage.evaluate(()=>{const put=IDBObjectStore.prototype.put;IDBObjectStore.prototype.put=function(v,k){if(k==='probation-study30-v251:v1')throw new DOMException('full','QuotaExceededError');return put.call(this,v,k);};});
-    await quotaPage.locator('#essayField0').fill('容量不足時的內容');
-    await quotaPage.waitForFunction(()=>document.querySelector('#essaySaveStatus').textContent.includes('未能保存'));
-    const intact=await quotaPage.evaluate(async()=>{const db=await PSDLearningStorage.open();const raw=await db.get('probation-study30-v251:v1');db.close();return raw});
-    assert.ok(intact.includes('容量測試前內容'));assert.ok(!intact.includes('容量不足時的內容'));assert.deepEqual(quotaErrors,[]);
-    await quota.close();
     console.log(`PASS ${engine.name()}: daily UI, stale tab, JSON conflict import, quota failure and offline reload`);
    }finally{await browser.close();}
   }
