@@ -11,6 +11,7 @@ const NODE=[
   'verification/all-subject-pilots.cjs',
   'verification/study-desk-weakness.cjs',
   'verification/law-scoring.cjs',
+  'verification/theory-sources.cjs',
   'lectures/test.cjs',
   'lectures/test-learning.cjs',
   'backup/test.cjs',
