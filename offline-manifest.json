@@ -497,6 +497,9 @@
       "url": "shared-ui.css"
     },
     {
+      "url": "storage/daily-shared-repository.js"
+    },
+    {
       "url": "storage/indexeddb.js"
     },
     {

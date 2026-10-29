@@ -65,7 +65,8 @@
  async function start(){
   try{
    const db=await window.PSDLearningStorage.open();
-   mixed=window.PSDStudy30MixedBackup.create({core,database:db,legacy:localStorage,origin:location.origin});
+   const managedKeys=window.PSD_DAILY_IDB_TEST===true?['probation-study30-v251:v1',core.CONFLICT_KEY,'probation-daily-github:records:v1','daily-reading-test:saved']:undefined;
+   mixed=window.PSDStudy30MixedBackup.create({core,database:db,legacy:localStorage,origin:location.origin,managedKeys});
    const backup=$('study30ConflictBackup'),confirmed=$('study30ConflictConfirmed');
    backup.disabled=false;confirmed.disabled=false;
    backup.textContent='下載測試保護備份（不含備考書桌）';

@@ -1,5 +1,6 @@
 /* Explicit, read-only import. Never scans arbitrary storage or rewrites old keys. */
 export async function legacyRecords(storage,origin) {
+  if(globalThis.PSD_DAILY_IDB_TEST===true||globalThis.PSD_STUDY30_IDB_TEST===true)throw Error('IndexedDB 測試模式尚未支援匯入舊模組快照');
   const backup=globalThis.PSDUnifiedBackup.collect(storage,origin),records={};
   for(const [key,raw] of Object.entries(backup.data)) {
     const value=JSON.parse(raw);

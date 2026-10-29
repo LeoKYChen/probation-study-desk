@@ -92,7 +92,7 @@ REQUIRED = (
 
 def allowed(path: str) -> bool:
     parts = PurePosixPath(path).parts
-    if parts and parts[0] == "storage" and path not in {"storage/indexeddb.js", "storage/study30-mixed-backup.js"}:
+    if parts and parts[0] == "storage" and path not in {"storage/indexeddb.js", "storage/study30-mixed-backup.js", "storage/daily-shared-repository.js"}:
         return False
     if parts and parts[0] == "cloud-sync" and not path.endswith(".js"):
         return False

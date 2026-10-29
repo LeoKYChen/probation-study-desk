@@ -136,7 +136,7 @@
  }
  async function init(){
   if(!$('importBackupFile'))return;
-  if(mixedMode){try{const database=await window.Study30App.whenIdbReady();mixed=window.PSDStudy30MixedBackup.create({core,database,legacy:localStorage,origin:location.origin});}catch(e){status('測試備份無法啟動：'+e.message);return;}}
+  if(mixedMode){try{const database=await window.Study30App.whenIdbReady();const managedKeys=window.PSD_DAILY_IDB_TEST===true?[api.KEY,core.CONFLICT_KEY,'probation-daily-github:records:v1','daily-reading-test:saved']:undefined;mixed=window.PSDStudy30MixedBackup.create({core,database,legacy:localStorage,origin:location.origin,managedKeys});}catch(e){status('測試備份無法啟動：'+e.message);return;}}
   $('importBackupFile').addEventListener('change',e=>onFile(e.target.files?.[0]));
   $('downloadBeforeImport').addEventListener('click',downloadCurrent);
   $('importBackupConfirmed').addEventListener('change',ready);

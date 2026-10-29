@@ -13,6 +13,7 @@ const requestedQuestion=new URLSearchParams(window.location.search).get('questio
 const $=id=>document.getElementById(id);
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let bank=null,records={},current='',storageOK=true,dirty=false,saveJob=0,timers={};
+const idbTestMode=window.PSD_DAILY_IDB_TEST===true;let idbRepo=null,idbDb=null,idbFavorites=[],inFlight=false,editSequence=0;
 function notice(message,error=false){$('notice').textContent=message;$('notice').classList.toggle('error',error);}
 function getQuestion(){return bank?.questions.find(q=>q.id===current)||null;}
 function readRecords(){
@@ -23,7 +24,7 @@ function loadTimers(){
   try{const v=JSON.parse(sessionStorage.getItem(TIMER_KEY)||'{}');if(v&&typeof v==='object'&&!Array.isArray(v))timers=v;}catch{timers={};}
 }
 function writeTimers(){try{sessionStorage.setItem(TIMER_KEY,JSON.stringify(timers));}catch{ /* Timer still works in this open page. */ }}
-function persist(next){if(!storageOK)throw Error('原本紀錄不可讀，為防止覆蓋已停止寫入');M.records(next);localStorage.setItem(KEY,JSON.stringify(next));}
+function persist(next){if(!storageOK)throw Error('原本紀錄不可讀，為防止覆蓋已停止寫入');M.records(next);if(idbTestMode)return idbRepo.writeRecords(next);localStorage.setItem(KEY,JSON.stringify(next));return null;}
 const DRAFT_FIELDS=[['draftIssue','issues','一、題目爭點'],['draftBasis','basis','二、法律或學理依據'],['draftAnalysis','analysis','三、涵攝與實務應用'],['draftConclusion','conclusion','四、結論']];
 function recordFor(id){return records[id]||{answer:'',review:false,updatedAt:''};}
 function readDrafts(){
@@ -61,13 +62,22 @@ function renderList(){
   updateSummary();
 }
 function flush(){
-  if(!dirty)return;
+  if(!dirty||idbTestMode&&inFlight)return;
   if(saveJob){clearTimeout(saveJob);saveJob=0;}
   const q=getQuestion();if(!q)return;
   const old=recordFor(current);
   const candidate={...old,answer:$('answer').value,essayDrafts:readDrafts(),review:$('review').checked,aiFeedback:$('aiFeedback').value,updatedAt:new Date().toISOString(),questionSnapshot:M.signature(q)};
   try{
-    persist({...records,[current]:candidate});
+    const next={...records,[current]:candidate},pending=persist(next);
+    if(idbTestMode){
+      const sequence=editSequence,question=current;inFlight=true;$('saved').textContent='儲存中…';
+      pending.then(()=>{
+        records=next;inFlight=false;
+        if(sequence===editSequence&&question===current){dirty=false;$('saved').textContent='已保存';$('feedbackStatus').textContent=candidate.aiFeedback?'本題 AI 評語已保存':'';renderList();}
+        else if(dirty)flush();
+      }).catch(error=>{inFlight=false;storageOK=false;$('saved').textContent='尚未保存';$('feedbackStatus').textContent='儲存失敗：'+error.message+'。請複製文字另存，勿關閉頁面。';notice('儲存失敗，現有紀錄未覆蓋：'+error.message,true);});
+      return;
+    }
     records[current]=candidate;dirty=false;
     $('saved').textContent='已保存';
     $('feedbackStatus').textContent=candidate.aiFeedback?'本題 AI 評語已保存':'';
@@ -78,7 +88,7 @@ function flush(){
     notice('儲存失敗，現有紀錄未覆蓋：'+error.message,true);
   }
 }
-function scheduleSave(){dirty=true;$('saved').textContent='儲存中…';clearTimeout(saveJob);saveJob=setTimeout(()=>{saveJob=0;flush();},250);}
+function scheduleSave(){if(idbTestMode)editSequence++;dirty=true;$('saved').textContent='儲存中…';clearTimeout(saveJob);saveJob=setTimeout(()=>{saveJob=0;flush();},250);}
 function showQuestion(id){
   if(current===id&&getQuestion())return;
   if(dirty)flush();
@@ -262,7 +272,7 @@ function savedList(value){
   if(!Array.isArray(value)||value.length>3000||!value.every(x=>typeof x==='string'&&x.length<300))throw Error('題目收藏資料格式不符');
   return [...new Set(value)];
 }
-function currentSaved(){return savedList(JSON.parse(localStorage.getItem(SAVED_KEY)||'[]'));}
+function currentSaved(){return savedList(idbTestMode?idbFavorites:JSON.parse(localStorage.getItem(SAVED_KEY)||'[]'));}
 function validateTimers(input){
   if(!input||typeof input!=='object'||Array.isArray(input)||Object.keys(input).length>3000)throw Error('計時資料格式不符');
   const clean={};
@@ -299,6 +309,7 @@ function mergedRecord(existing,incoming){
   return result;
 }
 async function importBackup(){
+  if(idbTestMode){notice('測試模式暫不啟用匯入，避免不完整還原。',true);return;}
   const input=$('importFile'),file=input.files?.[0];if(!file)return;
   try{
     if(file.size>4*1024*1024)throw Error('檔案超過4MB');
@@ -349,6 +360,7 @@ async function importBackup(){
   finally{input.value='';}
 }
 function clearRecords(){
+  if(idbTestMode){notice('測試模式暫不啟用清除。',true);return;}
   if(!storageOK){notice('本機紀錄無法正常讀取，禁止清除以免遺失資料。',true);return;}
   flush();if(dirty){notice('作答尚未成功保存，暫停清除。',true);return;}
   const n=Object.keys(records).length;
@@ -366,7 +378,7 @@ function clearRecords(){
 }
 // The 600k-character bank used to be cached in localStorage, crowding out answers on this shared origin.
 const DATASET_CACHE='psd-daily-dataset-v1',DATASET_URL=new URL('../daily-simulation/questions.json',location.href).href;
-async function cacheDataset(d){try{await(await caches.open(DATASET_CACHE)).put(DATASET_URL,new Response(JSON.stringify(d),{headers:{'Content-Type':'application/json'}}));localStorage.removeItem(DATA_KEY);}catch{}}
+async function cacheDataset(d){try{await(await caches.open(DATASET_CACHE)).put(DATASET_URL,new Response(JSON.stringify(d),{headers:{'Content-Type':'application/json'}}));if(!idbTestMode)localStorage.removeItem(DATA_KEY);}catch{}}
 async function cachedDataset(){
   try{const r=await(await caches.open(DATASET_CACHE)).match(DATASET_URL);if(r)return M.dataset(await r.json());}catch{}
   const raw=localStorage.getItem(DATA_KEY);return raw?M.dataset(JSON.parse(raw)):null;
@@ -409,7 +421,7 @@ if(!M||typeof M.dataset!=='function'){
   notice('找不到每日題資料模型，請重新整理並確認離線資源已更新。',true);
   return;
 }
-readRecords();loadTimers();
+if(!idbTestMode)readRecords();loadTimers();
 $('questionList').addEventListener('click',e=>{const b=e.target.closest('button[data-id]');if(b)showQuestion(b.dataset.id);});
 $('subject').addEventListener('change',renderList);
 $('search').addEventListener('input',renderList);
@@ -428,6 +440,7 @@ $('importFile').addEventListener('change',importBackup);
 $('clear').addEventListener('click',clearRecords);
 window.addEventListener('beforeunload',()=>{if(dirty)flush();});
 window.addEventListener('storage',e=>{
+  if(idbTestMode&&(e.key===KEY||e.key===SAVED_KEY)){storageOK=false;notice('舊版分頁更新了原始資料，已停止寫入；請保留兩份資料並重新整理。',true);return;}
   if(e.key!==KEY||dirty)return;
   readRecords();
   if(!storageOK)return;
@@ -436,5 +449,13 @@ window.addEventListener('storage',e=>{
 });
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)updateTimer();});
 setInterval(updateTimer,1000);
-load();
+async function startData(){
+ if(idbTestMode){
+  $('import').disabled=true;$('clear').disabled=true;
+  try{idbDb=await window.PSDLearningStorage.open();idbRepo=await window.PSDDailySharedRepository.open({database:idbDb,legacy:localStorage,model:M});const value=idbRepo.read();records=value.records;idbFavorites=value.favorites;}
+  catch(e){storageOK=false;notice('無法安全讀取每日題紀錄：'+e.message+'；原始資料未刪除。',true);return;}
+ }
+ await load();
+}
+startData();
 })();
