@@ -21,4 +21,17 @@ const roundtrip=JSON.parse(JSON.stringify(result));full.validate(roundtrip,core)
 assert.throws(()=>full.validate({...roundtrip,desk:{...roundtrip.desk,accounts:[roundtrip.desk.accounts[0],roundtrip.desk.accounts[0]]}},core),/範圍/);
 let reads=0;const racing={async collect(){const out=await learning.collect();reads++;if(reads===2)out.data[key]=JSON.stringify({version:1,sessions:{changed:{}}});return out;}};
 await assert.rejects(full.collect({core,learning:racing,deskDatabase:desk.db,origin:'test'}),/資料已變更/);
+// A changed local guest remains primary; imported full state goes to an archive.
+await new LocalRecords(desk,{uuid}).save('attempt/known-id',{answer:'目前裝置新稿'});
+let plan=await full.planDeskImport(result,core,desk.db);
+assert.equal(plan.conflicts.length,1);assert.equal(plan.conflicts[0].namespace,'guest');
+assert.equal(await full.applyDeskImport(plan,desk.db),1);
+assert.equal((await desk.read()).records['attempt/known-id'].value.answer,'目前裝置新稿');
+const archived=await IDBStore.open(plan.conflicts[0].archive);
+assert.equal((await archived.read()).records['attempt/known-id'].value.answer,'書桌作答');
+plan=await full.planDeskImport(result,core,desk.db);assert.equal(plan.writes.length,0,'repeat import is idempotent');
+const stale=await full.planDeskImport(result,core,desk.db);
+await new LocalRecords(desk,{uuid}).save('attempt/new',{answer:'預覽後新增'});
+await assert.rejects(full.applyDeskImport(stale,desk.db),/預覽後已變更/);
+archived.close();
 db.close();desk.close();other.close();console.log('PASS full backup export: module data, all desk namespaces, validation and concurrent-change guard');
