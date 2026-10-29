@@ -7,3 +7,5 @@
 此程式不得作為正式上線依據；須完成整合及驗收後另行審查。`indexeddb.test.cjs` 使用 fake-indexeddb；`browser.test.cjs` 在 Chromium 和 WebKit 測試核心，並非整站或真實 Drive 驗收。
 
 `backup-bridge.js` 能以原有備份格式讀取 IndexedDB 並利用原合併規則保留衝突，再於同一交易驗證基準與套用變更。它尚未接入備份畫面、書桌資料庫或 Google Drive，不等於完整備份。
+
+`drive-sync.js` 是使用現有 Drive 快照格式的非同步介面，合成測試涵蓋雙裝置資料往返和分歧保留；尚未接入 OAuth、同步畫面或既有書桌資料庫，亦未連線真實 Google Drive。
