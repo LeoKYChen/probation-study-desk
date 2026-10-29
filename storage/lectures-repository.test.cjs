@@ -26,5 +26,12 @@ const assert=require('node:assert/strict'),{IDBFactory}=require('fake-indexeddb'
  const invalidDb=await PSDLearningStorage.open(new IDBFactory()),bad=new Map([[core.KEY,'broken']]);
  await assert.rejects(api.open({database:invalidDb,legacy:{getItem:k=>bad.get(k)??null},core}));
  assert.equal(bad.get(core.KEY),'broken');assert.equal(await invalidDb.get(core.KEY),null);invalidDb.close();
+ const emptyDb=await PSDLearningStorage.open(new IDBFactory()),emptyLegacy={getItem:()=>null};
+ assert.equal(await readLecturesFromIndexedDB(emptyDb,emptyLegacy,core),null);
+ const emptyRepo=await api.open({database:emptyDb,legacy:emptyLegacy,core});
+ assert.deepEqual(emptyRepo.read(),core.empty());
+ await emptyRepo.write(state);
+ assert.equal((await readLecturesFromIndexedDB(emptyDb,emptyLegacy,core)).courses[0].id,'course-original');
+ emptyDb.close();
  console.log('PASS learning management repository: migration, retention, stale tabs and legacy drift');
 })().catch(e=>{console.error(e);process.exitCode=1;});
