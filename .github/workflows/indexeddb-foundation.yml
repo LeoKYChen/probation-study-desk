@@ -16,6 +16,6 @@ jobs:
           node-version: '24'
       - run: npm install --prefix /tmp/psd-idb-test --no-save --ignore-scripts --no-audit fake-indexeddb playwright@1.64.1
       - run: /tmp/psd-idb-test/node_modules/.bin/playwright install --with-deps chromium webkit
-      - run: node storage/indexeddb.test.cjs && node storage/backup-bridge.test.cjs && node storage/study30-mixed-backup.test.cjs && node storage/study30-mixed-drive.test.cjs && node storage/full-backup.test.mjs && node storage/daily-shared-repository.test.cjs && node storage/lectures-repository.test.cjs && node storage/drive-sync.test.cjs && node professional/study30-idb-repository.test.cjs && node storage/browser.test.cjs && node verification/study30-idb-browser.cjs && node verification/daily-idb-browser.cjs && node verification/lectures-idb-browser.cjs
+      - run: node storage/indexeddb.test.cjs && node storage/backup-bridge.test.cjs && node storage/study30-mixed-backup.test.cjs && node storage/study30-mixed-drive.test.cjs && node storage/full-backup.test.mjs && node storage/daily-shared-repository.test.cjs && node storage/lectures-repository.test.cjs && node storage/v25-repository.test.cjs && node storage/drive-sync.test.cjs && node professional/study30-idb-repository.test.cjs && node storage/browser.test.cjs && node verification/study30-idb-browser.cjs && node verification/daily-idb-browser.cjs && node verification/lectures-idb-browser.cjs
         env:
           NODE_PATH: /tmp/psd-idb-test/node_modules
