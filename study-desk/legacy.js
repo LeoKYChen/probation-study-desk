@@ -1,7 +1,20 @@
 /* Explicit, read-only import. Never scans arbitrary storage or rewrites old keys. */
 export async function legacyRecords(storage,origin) {
-  if(globalThis.PSD_DAILY_IDB_TEST===true||globalThis.PSD_STUDY30_IDB_TEST===true)throw Error('IndexedDB 測試模式尚未支援匯入舊模組快照');
-  const backup=globalThis.PSDUnifiedBackup.collect(storage,origin),records={};
+  const core=globalThis.PSDUnifiedBackup;let backup;
+  if(globalThis.PSD_STUDY30_IDB_TEST===true){
+    if(!globalThis.PSDLearningStorage||!globalThis.PSDStudy30MixedBackup)throw Error('缺少測試儲存服務，已停止匯入');
+    const database=await globalThis.PSDLearningStorage.open();
+    try{
+      const managedKeys=['probation-study30-v251:v1',core.CONFLICT_KEY];
+      if(globalThis.PSD_DAILY_IDB_TEST===true)managedKeys.push('probation-daily-github:records:v1','daily-reading-test:saved');
+      if(globalThis.PSD_V25_IDB_TEST===true)managedKeys.push('probation-study-desk-v24','probation-study-desk-v3','probation-study-desk-v2');
+      if(globalThis.PSD_LECTURES_IDB_TEST===true)managedKeys.push('psd-lecture-planner-v1');
+      if(globalThis.PSD_COMMON_IDB_TEST===true)managedKeys.push('psd-common-subjects-v1','psd-staresto-link-coach-v06','psd-staresto-daily-v04');
+      backup=await globalThis.PSDStudy30MixedBackup.create({core,database,legacy:storage,origin,managedKeys}).collect();
+    }finally{database.close();}
+  }else if(globalThis.PSD_DAILY_IDB_TEST===true)throw Error('缺少完整測試儲存模式，已停止匯入');
+  else backup=core.collect(storage,origin);
+  const records={};
   for(const [key,raw] of Object.entries(backup.data)) {
     const value=JSON.parse(raw);
     const chunks=(key==='probation-study30-v251:v1')?Object.entries(value.sessions).map(([id,v])=>[id,v]):['probation-study-desk-v24','probation-study-desk-v3','probation-study-desk-v2','probation-daily-github:records:v1'].includes(key)?Object.entries(value):[['module',value]];
