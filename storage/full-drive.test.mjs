@@ -1,0 +1,24 @@
+import assert from 'node:assert/strict';
+import {createRequire} from 'node:module';
+const {indexedDB,IDBFactory}=createRequire(import.meta.url)('fake-indexeddb');globalThis.indexedDB=indexedDB;
+await import('./indexeddb.js');await import('./study30-mixed-backup.js');await import('../backup/unified-core.js');
+const {IDBStore}=await import('../cloud-sync/idb.js'),{LocalRecords}=await import('../cloud-sync/core.js');
+const full=await import('./full-backup.mjs'),drive=await import('./full-drive.mjs');const core=globalThis.PSDUnifiedBackup;
+const legacy={getItem:()=>null},key='probation-study30-v251:v1',managedKeys=[key,core.CONFLICT_KEY];
+const records=[],transport={async ensureFolder(){return 'test-folder'},async listSnapshots(){return records.map((v,i)=>({id:String(i),createdTime:v.createdAt}))},async readSnapshot(id){return structuredClone(records[Number(id)])},async writeSnapshot(_folder,snapshot){records.push(structuredClone(snapshot));return {id:String(records.length-1)}}};
+let n=0;const make=(learning,desk,id)=>drive.create({core,learning,deskDatabase:desk.db,transport,origin:'https://test.invalid',deviceId:id,newId:()=>id+(++n),clock:()=>new Date(Date.UTC(2099,0,1,0,0,n++)).toISOString()});
+const l1=await PSDLearningStorage.open(new IDBFactory()),l2=await PSDLearningStorage.open(new IDBFactory());
+// Desk databases represent separate browser devices.
+const first=await IDBStore.open('guest');await new LocalRecords(first).save('attempt/1',{answer:'裝置甲'});
+const backup1=PSDStudy30MixedBackup.create({core,database:l1,legacy,managedKeys,origin:'test'});
+const one=make(backup1,first,'A');assert.equal((await one.sync()).uploaded,true);assert.equal(records.length,1);
+const altFactory=new IDBFactory();globalThis.indexedDB=altFactory;const second=await IDBStore.open('guest');await new LocalRecords(second).save('attempt/1',{answer:'裝置乙'});
+const backup2=PSDStudy30MixedBackup.create({core,database:l2,legacy,managedKeys,origin:'test'}),two=make(backup2,second,'B');
+const outcome=await two.sync();assert.equal(outcome.conflicts,1);assert.equal((await second.read()).records['attempt/1'].value.answer,'裝置乙');
+const archives=await full.listDeskArchives(second.db);assert.equal(archives.length,1);assert.equal(archives[0].archived.records['attempt/1'].value.answer,'裝置甲');
+assert.equal((await two.sync()).uploaded,false,'unchanged second device does not append another snapshot');
+await one.sync();await two.sync();await one.sync();
+const settled=records.length;assert.equal((await two.sync()).uploaded,false);assert.equal(records.length,settled,'both devices converge without endless new snapshots');
+const count=records.length,before=await second.read();records.push({format:'bad'});await assert.rejects(two.sync(),/格式不符/);assert.deepEqual(await second.read(),before);assert.equal(records.length,count+1);
+records.pop();let busyRelease;const blocked={...transport,ensureFolder:()=>new Promise(resolve=>{busyRelease=resolve})};const engine=drive.create({core,learning:backup2,deskDatabase:second.db,transport:blocked,origin:'test',deviceId:'B',newId:()=> 'id'});const pending=engine.sync();await assert.rejects(engine.sync(),/同步已在執行/);busyRelease('test-folder');await pending;
+l1.close();l2.close();first.close();second.close();console.log('PASS full Drive synthetic two-device conflict retention, stable snapshot, invalid input and busy guard');
