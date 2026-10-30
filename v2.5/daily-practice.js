@@ -308,8 +308,34 @@ function mergedRecord(existing,incoming){
   // Legacy backups may omit AI feedback; never delete a newer field just because it is absent.
   return result;
 }
+async function waitForDailyEdits(){
+ flush();while(inFlight){await idbRepo.flush();await Promise.resolve();}
+ if(dirty||!storageOK)throw Error('目前作答尚未安全保存');
+}
+async function runDailyOperation(action,incoming){
+ return window.PSDDailyOperations.run({core:window.PSDUnifiedBackup,database:idbDb,legacy:localStorage,repository:idbRepo,recovery:window.PSDDailyRecovery,mixedApi:window.PSDStudy30MixedBackup,action,incoming,flags:{v25:window.PSD_V25_IDB_TEST===true,lectures:window.PSD_LECTURES_IDB_TEST===true}});
+}
+async function idbImportDaily(){
+ const input=$('importFile'),file=input.files?.[0];if(!file)return;
+ try{if(file.size>4*1024*1024)throw Error('檔案超過4MB');const parsed=JSON.parse(await file.text());
+  if((Array.isArray(parsed.saved)&&parsed.saved.length)||(parsed.timers&&Object.keys(parsed.timers).length))throw Error('此測試版尚未匯入收藏或計時資料，請保留原始備份');
+  const incoming=M.backup(parsed),count=Object.keys(incoming).length;if(!count)throw Error('備份沒有每日題紀錄');
+  if(!confirm('匯入 '+count+' 筆每日題？不同答案將保留為衝突版本。'))return;
+  document.body.inert=true;await waitForDailyEdits();const result=await runDailyOperation('import',incoming);
+  records=result.data.records;idbFavorites=result.data.favorites;const id=current;current='';if(id)showQuestion(id);else renderList();
+  notice('已匯入每日題；不同版本保留 '+result.conflicts+' 筆。');
+ }catch(error){notice('匯入失敗：'+error.message,true);}finally{document.body.inert=false;input.value='';}
+}
+async function idbClearDaily(){
+ const n=Object.keys(records).length;if(!n){notice('目前沒有每日模擬題作答。');return;}
+ if(!confirm('清除 '+n+' 筆每日題作答？將先下載備份並另存清除前版本。'))return;
+ try{document.body.inert=true;await waitForDailyEdits();download(backup(),'daily-records-before-clear.json');
+  const result=await runDailyOperation('clear');records=result.data.records;idbFavorites=result.data.favorites;
+  const id=current;current='';if(id)showQuestion(id);else renderList();notice('已清除每日作答，原版本已另存；請確認備份下載。');
+ }catch(error){notice('清除失敗：'+error.message,true);}finally{document.body.inert=false;}
+}
 async function importBackup(){
-  if(idbTestMode){notice('測試模式暫不啟用匯入，避免不完整還原。',true);return;}
+  if(idbTestMode){await idbImportDaily();return;}
   const input=$('importFile'),file=input.files?.[0];if(!file)return;
   try{
     if(file.size>4*1024*1024)throw Error('檔案超過4MB');
@@ -360,7 +386,7 @@ async function importBackup(){
   finally{input.value='';}
 }
 function clearRecords(){
-  if(idbTestMode){notice('測試模式暫不啟用清除。',true);return;}
+  if(idbTestMode){void idbClearDaily();return;}
   if(!storageOK){notice('本機紀錄無法正常讀取，禁止清除以免遺失資料。',true);return;}
   flush();if(dirty){notice('作答尚未成功保存，暫停清除。',true);return;}
   const n=Object.keys(records).length;
@@ -452,7 +478,7 @@ setInterval(updateTimer,1000);
 async function startData(){
  if(idbTestMode){
   $('import').disabled=true;$('clear').disabled=true;
-  try{idbDb=await window.PSDLearningStorage.open();idbRepo=await window.PSDDailySharedRepository.open({database:idbDb,legacy:localStorage,model:M});const value=idbRepo.read();records=value.records;idbFavorites=value.favorites;}
+  try{idbDb=await window.PSDLearningStorage.open();idbRepo=await window.PSDDailySharedRepository.open({database:idbDb,legacy:localStorage,model:M});const value=idbRepo.read();records=value.records;idbFavorites=value.favorites;$('import').disabled=false;$('clear').disabled=false;}
   catch(e){storageOK=false;notice('無法安全讀取每日題紀錄：'+e.message+'；原始資料未刪除。',true);return;}
  }
  await load();

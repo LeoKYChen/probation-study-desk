@@ -31,14 +31,14 @@ const server=http.createServer((req,res)=>{try{const p=decodeURIComponent(new UR
     assert.equal(await page.locator('#answer').inputValue(),'每日 IndexedDB 新答案');
     assert.equal(await page.locator('#aiFeedback').inputValue(),'每日 AI 評語');
     assert.equal(await page.locator('#bookmark').getAttribute('aria-pressed'),'false');
-    assert.equal(await page.locator('#import').isDisabled(),true);assert.equal(await page.locator('#clearRecords').isDisabled(),true);
+    assert.equal(await page.locator('#import').isEnabled(),true);assert.equal(await page.locator('#clearRecords').isEnabled(),true);
     stage='v2.5 navigation';await page.goto(origin+'/v2.5/daily-practice.html?question='+encodeURIComponent(question.id));
     await page.waitForFunction(()=>!document.querySelector('#workspace').hidden);
     assert.equal(await page.locator('#answer').inputValue(),'每日 IndexedDB 新答案');
     assert.equal(await page.locator('#aiFeedback').inputValue(),'每日 AI 評語');
     await page.locator('#answer').fill('v2.5 寫入同一題');
     await page.waitForFunction(()=>document.querySelector('#saved').textContent==='已保存');
-    assert.equal(await page.locator('#import').isDisabled(),true);assert.equal(await page.locator('#clear').isDisabled(),true);
+    assert.equal(await page.locator('#import').isEnabled(),true);assert.equal(await page.locator('#clear').isEnabled(),true);
     // Transitional protection export must read the migrated daily answer from
     // IndexedDB, rather than the retained legacy copy.
     stage='backup navigation';await page.goto(origin+'/professional/');await page.waitForFunction(()=>!!window.Study30App?.essayContext());

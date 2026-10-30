@@ -278,9 +278,32 @@ $('refresh').onclick=()=>ReadingNews.isReading(state.tab)?ReadingNews.load():loa
 $('close').onclick=()=>$('reader').close();$('reader').addEventListener('close',()=>document.body.classList.remove('modal-open'));$('reader').addEventListener('click',e=>{if(e.target===$('reader'))$('reader').close();});$('bookmark').onclick=()=>toggleSaved(current);$('answer').oninput=save;$('review').onchange=save;for(const [field] of DRAFT_FIELDS)$(field).oninput=save;$('aiFeedback').oninput=save;$('copyAI').onclick=copyAI;$('openDualAI').onclick=openDualAIReview;$('exportEssay').onclick=exportEssay;$('startTimer').onclick=startTimer;$('resetTimer').onclick=resetTimer;document.addEventListener('visibilitychange',()=>{if(!document.hidden&&current&&$('reader').open)updateTimer();});setInterval(()=>{if(current&&$('reader').open)updateTimer();},1000);
 for(const [id,delta] of [['previous',-1],['next',1]])$(id).onclick=()=>{const list=visible(),i=list.findIndex(q=>q.id===current),q=list[i+delta];if(q)openQuestion(q.id);};
 $('export').onclick=async()=>{if($('reader').open&&(idbTestMode?!(await ensureSaved()):!save()))return;download({format:'probation-daily-github-records',schemaVersion:1,exportedAt:new Date().toISOString(),records},'daily-simulation-records-'+new Date().toISOString().slice(0,10)+'.json');notify('已匯出每日學習室的每日模擬題作答，可匯回 v2.5；收藏不包含在作答備份。');};
-$('import').onclick=()=>{if(idbTestMode){notify('測試模式暫不啟用每日題匯入，避免不完整還原。');return;}$('upload').click();};$('upload').onchange=async()=>{try{if(idbTestMode)throw Error('測試模式暫不啟用每日題匯入');const file=$('upload').files[0];if(!file)return;if(file.size>4*1024*1024)throw Error('檔案超過4MB');const incoming=M.backup(JSON.parse(await file.text())),n=Object.keys(incoming).length;if(!n)throw Error('備份中沒有每日模擬題作答');const matched=Object.keys(incoming).filter(id=>data.questions.some(q=>q.id===id)).length;if(!confirm(`匯入 ${n} 筆每日模擬題作答，其中 ${matched} 筆對應目前題庫。同題以備份內容為主，現有紀錄先保留一份備份。考古題紀錄不匯入此每日學習室。是否繼續？`))return;if($('reader').open&&!save())throw Error('目前作答尚未成功保存，請先備份文字');localStorage.setItem('daily-reading-test:before-import',JSON.stringify(records));const next={...records,...incoming};persist(next);records=next;render();if(current&&$('reader').open)openQuestion(current);notify(`已匯入 ${n} 筆每日模擬題作答；${matched} 筆對應目前題庫。其餘紀錄也保留於匯出檔。`);}catch(e){notify('匯入未完成：'+e.message);}finally{$('upload').value='';}};
+$('import').onclick=()=>{if(idbTestMode){$('upload').click();return;}$('upload').click();};$('upload').onchange=async()=>{if(idbTestMode){await idbImportDaily();return;}try{const file=$('upload').files[0];if(!file)return;if(file.size>4*1024*1024)throw Error('檔案超過4MB');const incoming=M.backup(JSON.parse(await file.text())),n=Object.keys(incoming).length;if(!n)throw Error('備份中沒有每日模擬題作答');const matched=Object.keys(incoming).filter(id=>data.questions.some(q=>q.id===id)).length;if(!confirm(`匯入 ${n} 筆每日模擬題作答，其中 ${matched} 筆對應目前題庫。同題以備份內容為主，現有紀錄先保留一份備份。考古題紀錄不匯入此每日學習室。是否繼續？`))return;if($('reader').open&&!save())throw Error('目前作答尚未成功保存，請先備份文字');localStorage.setItem('daily-reading-test:before-import',JSON.stringify(records));const next={...records,...incoming};persist(next);records=next;render();if(current&&$('reader').open)openQuestion(current);notify(`已匯入 ${n} 筆每日模擬題作答；${matched} 筆對應目前題庫。其餘紀錄也保留於匯出檔。`);}catch(e){notify('匯入未完成：'+e.message);}finally{$('upload').value='';}};
+async function runDailyOperation(action,incoming){
+ return window.PSDDailyOperations.run({core:window.PSDUnifiedBackup,database:idbDb,legacy:localStorage,repository:idbRepo,recovery:window.PSDDailyRecovery,mixedApi:window.PSDStudy30MixedBackup,action,incoming,flags:{v25:window.PSD_V25_IDB_TEST===true,lectures:window.PSD_LECTURES_IDB_TEST===true}});
+}
+async function idbImportDaily(){
+ const input=$('upload'),file=input.files?.[0];if(!file)return;
+ try{if(file.size>4*1024*1024)throw Error('檔案超過4MB');const parsed=JSON.parse(await file.text());
+  if((Array.isArray(parsed.saved)&&parsed.saved.length)||(parsed.timers&&Object.keys(parsed.timers).length))throw Error('此測試版尚未匯入收藏或計時資料，請保留原始備份');
+  const incoming=M.backup(parsed),count=Object.keys(incoming).length;if(!count)throw Error('備份中沒有作答紀錄');
+  if(!confirm('匯入 '+count+' 筆每日題紀錄？不同答案將保留為衝突版本。'))return;
+  document.body.inert=true;if($('reader').open&&!(await ensureSaved()))throw Error('目前答案尚未保存');
+  const result=await runDailyOperation('import',incoming);records=result.data.records;saved=result.data.favorites;
+  if($('reader').open)$('reader').close();current='';render();notify('已匯入每日題；不同版本保留 '+result.conflicts+' 筆。');
+ }catch(e){notify('匯入未完成：'+e.message);}finally{document.body.inert=false;input.value='';}
+}
+async function idbClearDaily(){
+ const n=Object.keys(records).length;if(!n){clearRecordsMessage('目前沒有每日模擬題作答。');return;}
+ if(!confirm('清除 '+n+' 筆每日作答？將先下載備份，並另存清除前版本。'))return;
+ try{document.body.inert=true;if($('reader').open&&!(await ensureSaved()))throw Error('目前答案尚未保存');
+  download({format:'probation-daily-github-records',schemaVersion:1,exportedAt:new Date().toISOString(),records},'daily-records-before-clear.json');
+  const result=await runDailyOperation('clear');records=result.data.records;saved=result.data.favorites;
+  if($('reader').open)$('reader').close();current='';render();clearRecordsMessage('已清除作答；清除前版本已另存，請確認下載的備份。');
+ }catch(e){clearRecordsMessage('未完成清除：'+e.message,true);}finally{document.body.inert=false;}
+}
 function clearRecordsMessage(message,isError=false){const el=$('clearRecordsStatus');el.textContent=message;el.classList.toggle('error',isError);notify(message);}
-$('clearRecords').onclick=()=>{if(idbTestMode){clearRecordsMessage('測試模式暫不啟用清除。',true);return;}const n=Object.keys(records).length;
+$('clearRecords').onclick=()=>{if(idbTestMode){idbClearDaily();return;}const n=Object.keys(records).length;
  if(!n){clearRecordsMessage('目前沒有可清除的每日模擬題作答紀錄（收藏與其他模組不在此範圍）。');return;}
  if(!confirm(`確定清除每日學習室的 ${n} 筆作答與待複習標記？考古題及備考書桌不受影響。清除前會先下載 JSON 備份。`)){clearRecordsMessage('已取消清除，現有練習紀錄保持不變。');return;}
  try{
@@ -293,7 +316,7 @@ window.addEventListener('storage',e=>{if(idbTestMode&&(e.key===KEY||e.key===SAVE
 async function startData(){
  if(idbTestMode){
   $('start').disabled=true;$('import').disabled=true;$('clearRecords').disabled=true;$('openDualAI').disabled=true;
-  try{idbDb=await window.PSDLearningStorage.open();idbRepo=await window.PSDDailySharedRepository.open({database:idbDb,legacy:localStorage,model:M});const currentData=idbRepo.read();records=currentData.records;saved=currentData.favorites;}
+  try{idbDb=await window.PSDLearningStorage.open();idbRepo=await window.PSDDailySharedRepository.open({database:idbDb,legacy:localStorage,model:M});const currentData=idbRepo.read();records=currentData.records;saved=currentData.favorites;$('import').disabled=false;$('clearRecords').disabled=false;}
   catch(e){writable=false;notify('無法安全讀取每日題紀錄：'+e.message+'；原始資料未刪除。');return;}
  }
  if(ENABLE_NEWS_READING)ReadingNews.init(render).then(()=>{const id=initialParams.get('document');if(id){state.tab='全部閱讀資料';state.subject='';render();ReadingNews.open(id);}});
