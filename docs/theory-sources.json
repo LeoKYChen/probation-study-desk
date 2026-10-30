@@ -1,0 +1,5134 @@
+{
+ "說明": "law-scoring/data.js 學科題（kind: theory）每個出處字串對應的完整書目與核對狀態。只作為開發者補充與核對用，網站不讀取本檔。check 與 vague 兩類另有 crossref 欄位，記錄以 Crossref API（必要時以 WHO IRIS）查證的結果：found＝查到相符紀錄、partly＝只查到部分或旁證（書評、重印本）、not-indexed＝Crossref 未收錄。",
+ "checkedOn": "2026-10-29",
+ "lawDataset": "全國法規資料庫 2026-10-16 版",
+ "statusLabels": {
+  "ok": "書目已確認",
+  "vague": "原引用不完整，已補建議書目",
+  "check": "原引用可能有誤，請核對",
+  "law": "法規或官方文件"
+ },
+ "sources": [
+  {
+   "cite": "Abramson, Seligman & Teasdale (1978)",
+   "ref": "Abramson, L. Y., Seligman, M. E. P., & Teasdale, J. D. (1978). Learned helplessness in humans: Critique and reformulation. Journal of Abnormal Psychology, 87(1), 49–74.",
+   "status": "ok",
+   "note": "「無望感」導致憂鬱的說法屬後續的無望理論：Abramson, Metalsky, & Alloy (1989), Psychological Review, 96(2), 358–372。",
+   "usedBy": [
+    "110-心理學-2"
+   ]
+  },
+  {
+   "cite": "Adler (1927)",
+   "ref": "Adler, A. (1927). Menschenkenntnis. Leipzig: Hirzel.（英譯 Understanding Human Nature, 1927）",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "113-諮商與輔導-4",
+    "監獄官-114-諮商與矯正輔導-1",
+    "police-108-counseling-2",
+    "police-109-counseling-4",
+    "108-心理測驗員-心理學-4"
+   ]
+  },
+  {
+   "cite": "Adler (1938)",
+   "ref": "Adler, A. (1938). Social interest: A challenge to mankind. London: Faber & Faber.（德文原著 Der Sinn des Lebens, 1933）",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "113-諮商與輔導-4"
+   ]
+  },
+  {
+   "cite": "AERA, APA, & NCME (2014)",
+   "ref": "American Educational Research Association, American Psychological Association, & National Council on Measurement in Education. (2014). Standards for educational and psychological testing. Washington, DC: AERA.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-108-心理測驗-3",
+    "薦任升等（矯正）-108-心理測驗-4",
+    "薦任升等（矯正）-110-心理測驗-4",
+    "薦任升等（矯正）-114-心理測驗-1",
+    "薦任升等（矯正）-114-心理測驗-2",
+    "薦任升等（矯正）-114-心理測驗-4"
+   ]
+  },
+  {
+   "cite": "Agnew (1992)",
+   "ref": "Agnew, R. (1992). Foundation for a general strain theory of crime and delinquency. Criminology, 30(1), 47–87.",
+   "status": "ok",
+   "note": "原文的緊張來源為三大類（未達正向目標、失去正向刺激、出現負向刺激）；「第四種來源」可能是講義的細分方式。",
+   "usedBy": [
+    "111-犯罪學-3",
+    "薦任升等（矯正）-110-犯罪學-3",
+    "薦任升等（矯正）-110-犯罪學-4",
+    "police-112-criminology_prevention-2",
+    "監所管理員-114-犯罪學概要-1"
+   ]
+  },
+  {
+   "cite": "Agnew (2006)",
+   "ref": "Agnew, R. (2006). Pressured into crime: An overview of general strain theory. Los Angeles: Roxbury.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監所管理員-114-犯罪學概要-1"
+   ]
+  },
+  {
+   "cite": "Agnew (2014)",
+   "ref": "Agnew, R. (2014). Social concern and crime: Moving beyond the assumption of simple self-interest. Criminology, 52(1), 1–32.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-113-criminology_prevention-1"
+   ]
+  },
+  {
+   "cite": "Aichhorn (1925)",
+   "ref": "Aichhorn, A. (1925). Verwahrloste Jugend. Wien: Internationaler Psychoanalytischer Verlag.（英譯 Wayward Youth, 1935）",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監所管理員-109-犯罪學概要-2"
+   ]
+  },
+  {
+   "cite": "Ainsworth et al. (1978)",
+   "ref": "Ainsworth, M. D. S., Blehar, M. C., Waters, E., & Wall, S. (1978). Patterns of attachment: A psychological study of the strange situation. Hillsdale, NJ: Erlbaum.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "113-家事調查官-心理測驗員-心理學-1"
+   ]
+  },
+  {
+   "cite": "Akers (1985)",
+   "ref": "Akers, R. L. (1985). Deviant behavior: A social learning approach (3rd ed.). Belmont, CA: Wadsworth.",
+   "status": "ok",
+   "note": "差別增強理論最早見 Burgess & Akers (1966), Social Problems, 14(2), 128–147。",
+   "usedBy": [
+    "監獄官-114-犯罪學與再犯預測-2",
+    "police-108-criminology_prevention-3",
+    "police-115-criminology_prevention-1"
+   ]
+  },
+  {
+   "cite": "Aldao et al. (2010)",
+   "ref": "Aldao, A., Nolen-Hoeksema, S., & Schweizer, S. (2010). Emotion-regulation strategies across psychopathology: A meta-analytic review. Clinical Psychology Review, 30(2), 217–237.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "112-心理學-1"
+   ]
+  },
+  {
+   "cite": "Alexander (2008)",
+   "ref": "Alexander, B. K. (2008). The globalization of addiction: A study in poverty of the spirit. Oxford: Oxford University Press.",
+   "status": "ok",
+   "note": "「老鼠樂園」實驗原始報告：Alexander, Coambs, & Hadaway (1978), Psychopharmacology, 58, 175–179。",
+   "usedBy": [
+    "薦任升等（矯正）-108-諮商與輔導-2"
+   ]
+  },
+  {
+   "cite": "Anastasi & Urbina (1997)",
+   "ref": "Anastasi, A., & Urbina, S. (1997). Psychological testing (7th ed.). Upper Saddle River, NJ: Prentice Hall.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "109-心理學-4",
+    "114-心理學-1",
+    "薦任升等（矯正）-108-心理測驗-2",
+    "薦任升等（矯正）-108-心理測驗-3",
+    "薦任升等（矯正）-110-心理測驗-3",
+    "薦任升等（矯正）-110-心理測驗-4",
+    "薦任升等（矯正）-112-心理測驗-2",
+    "薦任升等（矯正）-112-心理測驗-3",
+    "薦任升等（矯正）-112-心理測驗-4",
+    "薦任升等（矯正）-114-心理測驗-1",
+    "薦任升等（矯正）-114-心理測驗-2",
+    "薦任升等（矯正）-114-心理測驗-3",
+    "police-108-psychology-1"
+   ]
+  },
+  {
+   "cite": "Andrews & Bonta",
+   "ref": "Andrews, D. A., & Bonta, J. (2010). The psychology of criminal conduct (5th ed.). New Providence, NJ: LexisNexis/Anderson.",
+   "status": "vague",
+   "note": "原引用未標年份；建議統一為第 5 版 (2010)，或改用 Bonta & Andrews (2024) 第 7 版。LSI-R 另見 Andrews & Bonta (1995) 手冊。",
+   "usedBy": [
+    "110-犯罪學-4",
+    "114-犯罪學-2",
+    "115-犯罪學-3",
+    "115-心理學-2",
+    "115-諮商與輔導-4",
+    "監獄官-108-犯罪學與再犯預測-4",
+    "監獄官-109-犯罪學與再犯預測-2",
+    "監獄官-109-犯罪學與再犯預測-4",
+    "監獄官-110-犯罪學與再犯預測-3",
+    "監獄官-111-犯罪學與再犯預測-4",
+    "監獄官-112-犯罪學與再犯預測-4",
+    "監獄官-113-犯罪學與再犯預測-3",
+    "監獄官-114-犯罪學與再犯預測-4"
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.4324/9781315721279"
+    ],
+    "note": "第 5 版 (2010) 原版 Crossref 未收錄；Routledge 2014 年以 Andrews & Bonta 名義重新發行此書並有 DOI。"
+   }
+  },
+  {
+   "cite": "Andrews & Bonta (2010)",
+   "ref": "Andrews, D. A., & Bonta, J. (2010). The psychology of criminal conduct (5th ed.). New Providence, NJ: LexisNexis/Anderson.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-111-犯罪學與再犯預測-3",
+    "薦任升等（矯正）-110-心理測驗-1",
+    "薦任升等（矯正）-108-犯罪學-1",
+    "薦任升等（矯正）-108-諮商與輔導-3",
+    "police-112-counseling-3",
+    "監所管理員-112-犯罪學概要-3",
+    "監所管理員-113-犯罪學概要-1"
+   ]
+  },
+  {
+   "cite": "Andrews, Bonta & Hoge (1990), Criminal Justice and Behavior, 17(1)",
+   "ref": "Andrews, D. A., Bonta, J., & Hoge, R. D. (1990). Classification for effective rehabilitation: Rediscovering psychology. Criminal Justice and Behavior, 17(1), 19–52.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-犯罪學-2"
+   ]
+  },
+  {
+   "cite": "APA 測驗標準",
+   "ref": "American Educational Research Association, American Psychological Association, & National Council on Measurement in Education. (2014). Standards for educational and psychological testing. Washington, DC: AERA.",
+   "status": "vague",
+   "note": "原引用為簡稱；與「AERA, APA, & NCME (2014)」為同一份文件，建議統一寫法。",
+   "usedBy": [
+    "108-心理學-4"
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.1037/e577932014-003",
+     "https://doi.org/10.2307/j.ctvr43hg2"
+    ],
+    "note": "英文原版 Crossref 未收錄；APA 2014 年公告與 2018 年西班牙文譯本可證 2014 年修訂版存在。"
+   }
+  },
+  {
+   "cite": "APA, DSM-5 (2013)",
+   "ref": "American Psychiatric Association. (2013). Diagnostic and statistical manual of mental disorders (5th ed.). Arlington, VA: American Psychiatric Publishing.",
+   "status": "ok",
+   "note": "現行版本為 DSM-5-TR (2022)；本平臺引用的診斷準則內容在 TR 版大致相同，作答時可註明版本。",
+   "usedBy": [
+    "110-犯罪學-4",
+    "112-犯罪學-4",
+    "113-犯罪學-4",
+    "109-心理學-3",
+    "110-心理學-1",
+    "112-心理學-4",
+    "109-諮商與輔導-2",
+    "監獄官-114-犯罪學與再犯預測-3",
+    "監獄官-108-諮商與矯正輔導-3",
+    "監獄官-108-諮商與矯正輔導-4",
+    "監獄官-111-諮商與矯正輔導-2",
+    "薦任升等（矯正）-108-諮商與輔導-2",
+    "police-109-psychology-3",
+    "police-110-psychology-3",
+    "police-113-psychology-2",
+    "police-114-psychology-2",
+    "109-心理測驗員-心理學-3"
+   ]
+  },
+  {
+   "cite": "APA, DSM-5 (2013) Section III",
+   "ref": "American Psychiatric Association. (2013). Alternative DSM-5 model for personality disorders. In Diagnostic and statistical manual of mental disorders (5th ed., Section III, pp. 761–781). Arlington, VA: American Psychiatric Publishing.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-114-諮商與輔導-4",
+    "police-114-counseling-2"
+   ]
+  },
+  {
+   "cite": "Arnett (2000)",
+   "ref": "Arnett, J. J. (2000). Emerging adulthood: A theory of development from the late teens through the twenties. American Psychologist, 55(5), 469–480.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-112-counseling-2"
+   ]
+  },
+  {
+   "cite": "Asch (1956)",
+   "ref": "Asch, S. E. (1956). Studies of independence and conformity: I. A minority of one against a unanimous majority. Psychological Monographs: General and Applied, 70(9), 1–70.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "114-心理學-2"
+   ]
+  },
+  {
+   "cite": "Athens (1997)",
+   "ref": "Athens, L. H. (1997). Violent criminal acts and actors revisited. Urbana: University of Illinois Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-109-犯罪學與再犯預測-3"
+   ]
+  },
+  {
+   "cite": "Austin & Krisberg (1981)",
+   "ref": "Austin, J., & Krisberg, B. (1981). Wider, stronger, and different nets: The dialectics of criminal justice reform. Journal of Research in Crime and Delinquency, 18(1), 165–196.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監所管理員-112-犯罪學概要-3"
+   ]
+  },
+  {
+   "cite": "Babor et al. (2001)",
+   "ref": "Babor, T. F., Higgins-Biddle, J. C., Saunders, J. B., & Monteiro, M. G. (2001). AUDIT: The Alcohol Use Disorders Identification Test—Guidelines for use in primary care (2nd ed.). Geneva: World Health Organization.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-114-諮商與矯正輔導-4"
+   ]
+  },
+  {
+   "cite": "Baltes (1987)",
+   "ref": "Baltes, P. B. (1987). Theoretical propositions of life-span developmental psychology: On the dynamics between growth and decline. Developmental Psychology, 23(5), 611–626.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "109-心理學-1"
+   ]
+  },
+  {
+   "cite": "Baltes (1997)",
+   "ref": "Baltes, P. B. (1997). On the incomplete architecture of human ontogeny: Selection, optimization, and compensation as foundation of developmental theory. American Psychologist, 52(4), 366–380.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-114-psychology-1"
+   ]
+  },
+  {
+   "cite": "Baltes & Baltes (1990)",
+   "ref": "Baltes, P. B., & Baltes, M. M. (1990). Psychological perspectives on successful aging: The model of selective optimization with compensation. In P. B. Baltes & M. M. Baltes (Eds.), Successful aging (pp. 1–34). Cambridge: Cambridge University Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-114-psychology-1"
+   ]
+  },
+  {
+   "cite": "Bandura (1973, 1977)",
+   "ref": "Bandura, A. (1973). Aggression: A social learning analysis. Englewood Cliffs, NJ: Prentice-Hall.／Bandura, A. (1977). Social learning theory. Englewood Cliffs, NJ: Prentice-Hall.",
+   "status": "ok",
+   "note": "攻擊的五項激起因素（示範、嫌惡經驗、誘因、指令控制、怪異象徵控制）出自 1973 年專書。",
+   "usedBy": [
+    "113-犯罪學-1"
+   ]
+  },
+  {
+   "cite": "Bandura (1973)",
+   "ref": "Bandura, A. (1973). Aggression: A social learning analysis. Englewood Cliffs, NJ: Prentice-Hall.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-114-犯罪學-2",
+    "police-113-psychology-4"
+   ]
+  },
+  {
+   "cite": "Bandura (1977, 1986)",
+   "ref": "Bandura, A. (1977). Social learning theory. Englewood Cliffs, NJ: Prentice-Hall.／Bandura, A. (1986). Social foundations of thought and action: A social cognitive theory. Englewood Cliffs, NJ: Prentice-Hall.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-心理學-4"
+   ]
+  },
+  {
+   "cite": "Bandura (1977)",
+   "ref": "Bandura, A. (1977a). Social learning theory. Englewood Cliffs, NJ: Prentice-Hall.／Bandura, A. (1977b). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+   "status": "check",
+   "note": "1977 年有兩份常被引用的文獻：觀察學習四歷程出自專書 (1977a)，自我效能出自期刊論文 (1977b)，建議以 a、b 區分。",
+   "usedBy": [
+    "115-心理學-3",
+    "監獄官-114-犯罪學與再犯預測-2",
+    "監獄官-113-諮商與矯正輔導-2",
+    "薦任升等（矯正）-114-犯罪學-2",
+    "police-108-psychology-3",
+    "police-113-psychology-4",
+    "police-115-psychology-1",
+    "police-115-psychology-2",
+    "109-心理測驗員-心理學-2",
+    "110-心理測驗員-心理學-1"
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.1037/0033-295x.84.2.191",
+     "https://doi.org/10.1177/105960117700200317"
+    ],
+    "note": "1977b 期刊論文已確認（Psychological Review 84(2), 191–215）；1977a 專書 Crossref 未收錄，但有 1977 年書評（Group & Organization Studies 2(3)）可證書名、出版者與年份。維持建議：以 1977a／1977b 區分。"
+   }
+  },
+  {
+   "cite": "Bandura (1997)",
+   "ref": "Bandura, A. (1997). Self-efficacy: The exercise of control. New York: W. H. Freeman.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-115-psychology-1",
+    "110-心理測驗員-心理學-3"
+   ]
+  },
+  {
+   "cite": "Bandura (1999)",
+   "ref": "Bandura, A. (1999). Moral disengagement in the perpetration of inhumanities. Personality and Social Psychology Review, 3(3), 193–209.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-113-psychology-4"
+   ]
+  },
+  {
+   "cite": "Barrick & Mount (1991)",
+   "ref": "Barrick, M. R., & Mount, M. K. (1991). The Big Five personality dimensions and job performance: A meta-analysis. Personnel Psychology, 44(1), 1–26.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-家事調查官-心理測驗員-心理學-1"
+   ]
+  },
+  {
+   "cite": "Bartholomew & Horowitz (1991)",
+   "ref": "Bartholomew, K., & Horowitz, L. M. (1991). Attachment styles among young adults: A test of a four-category model. Journal of Personality and Social Psychology, 61(2), 226–244.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "108-心理測驗員-心理學-3"
+   ]
+  },
+  {
+   "cite": "Bartlett (1932)",
+   "ref": "Bartlett, F. C. (1932). Remembering: A study in experimental and social psychology. Cambridge: Cambridge University Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "113-心理學-1",
+    "police-111-psychology-2"
+   ]
+  },
+  {
+   "cite": "Batson (2009)",
+   "ref": "Batson, C. D. (2009). These things called empathy: Eight related but distinct phenomena. In J. Decety & W. Ickes (Eds.), The social neuroscience of empathy (pp. 3–15). Cambridge, MA: MIT Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-112-counseling-4"
+   ]
+  },
+  {
+   "cite": "Beccaria",
+   "ref": "Beccaria, C. (1764). Dei delitti e delle pene. Livorno.（英譯 On Crimes and Punishments）",
+   "status": "vague",
+   "note": "原引用未標年份，建議統一為 Beccaria (1764)。",
+   "usedBy": [
+    "111-犯罪學-1"
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 只有二手研究，原書未收錄。"
+   }
+  },
+  {
+   "cite": "Beccaria (1764)",
+   "ref": "Beccaria, C. (1764). Dei delitti e delle pene. Livorno.（英譯 On Crimes and Punishments）",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-108-criminology_prevention-1",
+    "police-111-criminology_prevention-4",
+    "police-112-criminology_prevention-3",
+    "監所管理員-108-犯罪學概要-2"
+   ]
+  },
+  {
+   "cite": "Beck (1967, 1976)",
+   "ref": "Beck, A. T. (1967). Depression: Clinical, experimental, and theoretical aspects. New York: Hoeber.／Beck, A. T. (1976). Cognitive therapy and the emotional disorders. New York: International Universities Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "110-心理學-2"
+   ]
+  },
+  {
+   "cite": "Beck (1976)",
+   "ref": "Beck, A. T. (1976). Cognitive therapy and the emotional disorders. New York: International Universities Press.",
+   "status": "ok",
+   "note": "「標籤化與錯誤標籤化」較完整的整理見 Beck, Rush, Shaw, & Emery (1979)。",
+   "usedBy": [
+    "110-心理學-2",
+    "115-心理學-3",
+    "114-諮商與輔導-2",
+    "police-109-counseling-4"
+   ]
+  },
+  {
+   "cite": "Beck (1979)",
+   "ref": "Beck, A. T., Rush, A. J., Shaw, B. F., & Emery, G. (1979). Cognitive therapy of depression. New York: Guilford Press.",
+   "status": "check",
+   "note": "此書為四位作者合著，應寫作 Beck et al. (1979)。",
+   "usedBy": [
+    "110-心理學-2"
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.1007/978-3-211-69499-2_9"
+    ],
+    "note": "專書本身 Crossref 未收錄；Springer《Einhundert Meisterwerke der Psychotherapie》(2008) 的條目標題列出 Beck、Rush、Shaw、Emery 四位作者，支持改為 Beck et al. (1979)。"
+   }
+  },
+  {
+   "cite": "Beck et al. (1993)",
+   "ref": "Beck, A. T., Wright, F. D., Newman, C. F., & Liese, B. S. (1993). Cognitive therapy of substance abuse. New York: Guilford Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-110-諮商與矯正輔導-1"
+   ]
+  },
+  {
+   "cite": "Beck, J. S. (2011)",
+   "ref": "Beck, J. S. (2011). Cognitive behavior therapy: Basics and beyond (2nd ed.). New York: Guilford Press.",
+   "status": "ok",
+   "note": "已有第 3 版 (2020)。",
+   "usedBy": [
+    "監獄官-108-諮商與矯正輔導-1",
+    "監獄官-110-諮商與矯正輔導-1",
+    "薦任升等（矯正）-110-諮商與輔導-2",
+    "police-110-counseling-2",
+    "109-心理測驗員-心理學-2"
+   ]
+  },
+  {
+   "cite": "Beck, Steer & Brown (1996)",
+   "ref": "Beck, A. T., Steer, R. A., & Brown, G. K. (1996). Manual for the Beck Depression Inventory–II. San Antonio, TX: Psychological Corporation.",
+   "status": "ok",
+   "note": "BDI-II 手冊切截分數：0–13 極輕微、14–19 輕度、20–28 中度、29–63 重度；中文版常模請以中文版手冊為準。",
+   "usedBy": [
+    "108-諮商與輔導-4"
+   ]
+  },
+  {
+   "cite": "Becker (1963)",
+   "ref": "Becker, H. S. (1963). Outsiders: Studies in the sociology of deviance. New York: Free Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-108-犯罪學與再犯預測-3",
+    "監獄官-111-犯罪學與再犯預測-2",
+    "監獄官-113-犯罪學與再犯預測-4",
+    "監獄官-114-諮商與矯正輔導-3",
+    "薦任升等（矯正）-110-犯罪學-1"
+   ]
+  },
+  {
+   "cite": "Bedau (1974)",
+   "ref": "Schur, E. M., & Bedau, H. A. (1974). Victimless crimes: Two sides of a controversy. Englewood Cliffs, NJ: Prentice-Hall.",
+   "status": "ok",
+   "note": "Bedau 的論述收錄於與 Schur 合著的此書；四項特性的正式表述仍請以講義核對。",
+   "usedBy": [
+    "108-犯罪學-3"
+   ]
+  },
+  {
+   "cite": "Belsky & Pluess (2009)",
+   "ref": "Belsky, J., & Pluess, M. (2009). Beyond diathesis stress: Differential susceptibility to environmental influences. Psychological Bulletin, 135(6), 885–908.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "111-心理學-2"
+   ]
+  },
+  {
+   "cite": "Bem (1972)",
+   "ref": "Bem, D. J. (1972). Self-perception theory. Advances in Experimental Social Psychology, 6, 1–62.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-111-psychology-3"
+   ]
+  },
+  {
+   "cite": "Bentham (1789)",
+   "ref": "Bentham, J. (1789). An introduction to the principles of morals and legislation. London: T. Payne.",
+   "status": "ok",
+   "note": "圓形監獄的設計出自 Bentham (1791)，若內容提到圓形監獄宜一併引用。",
+   "usedBy": [
+    "112-犯罪學-1",
+    "police-108-criminology_prevention-1",
+    "police-108-criminology_prevention-4"
+   ]
+  },
+  {
+   "cite": "Bentham (1791)",
+   "ref": "Bentham, J. (1791). Panopticon; or, the inspection-house. Dublin / London: T. Payne.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-108-criminology_prevention-4"
+   ]
+  },
+  {
+   "cite": "Berg",
+   "ref": "De Jong, P., & Berg, I. K. (2013). Interviewing for solutions (4th ed.). Belmont, CA: Brooks/Cole.",
+   "status": "vague",
+   "note": "原引用只有姓氏；Insoo Kim Berg 常見引用另有 Berg & Miller (1992) Working with the problem drinker。",
+   "usedBy": [
+    "114-諮商與輔導-1"
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.1017/s1037291100004003"
+    ],
+    "note": "第 4 版 Crossref 未收錄；有 1998 年第 1 版書評可證書名與作者（De Jong & Berg）。"
+   }
+  },
+  {
+   "cite": "Biderman & Reiss (1967)",
+   "ref": "Biderman, A. D., & Reiss, A. J., Jr. (1967). On exploring the \"dark figure\" of crime. The Annals of the American Academy of Political and Social Science, 374(1), 1–15.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-112-criminology_prevention-1"
+   ]
+  },
+  {
+   "cite": "Block (1977)",
+   "ref": "Block, R. (1977). Violent crime: Environment, interaction, and death. Lexington, MA: Lexington Books.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-113-犯罪學與再犯預測-1"
+   ]
+  },
+  {
+   "cite": "Bonta & Andrews (2007)",
+   "ref": "Bonta, J., & Andrews, D. A. (2007). Risk-need-responsivity model for offender assessment and rehabilitation (User Report 2007-06). Ottawa: Public Safety Canada.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-犯罪學-2"
+   ]
+  },
+  {
+   "cite": "Bonta & Andrews (2007), Risk-Need-Responsivity Model for Offender Assessment and Rehabilitation, Public Safety Canada User Report 2007-06",
+   "ref": "Bonta, J., & Andrews, D. A. (2007). Risk-need-responsivity model for offender assessment and rehabilitation (User Report 2007-06). Ottawa: Public Safety Canada.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-犯罪學-2"
+   ]
+  },
+  {
+   "cite": "Bonta & Andrews, The Psychology of Criminal Conduct（Routledge）",
+   "ref": "Bonta, J., & Andrews, D. A. (2017). The psychology of criminal conduct (6th ed.). New York: Routledge.",
+   "status": "vague",
+   "note": "原引用未標版次；Routledge 出版的是第 6 版 (2017) 與第 7 版 (2024)。",
+   "usedBy": [
+    "115-犯罪學-2"
+   ],
+   "crossref": {
+    "result": "found",
+    "evidence": [
+     "https://doi.org/10.4324/9781315677187"
+    ],
+    "note": "已確認：Routledge 版作者順序 Bonta & Andrews，線上 2016-11-10 發行（版權年 2017）。"
+   }
+  },
+  {
+   "cite": "Bordin (1979)",
+   "ref": "Bordin, E. S. (1979). The generalizability of the psychoanalytic concept of the working alliance. Psychotherapy: Theory, Research & Practice, 16(3), 252–260.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-111-counseling-1"
+   ]
+  },
+  {
+   "cite": "Borum (2011)",
+   "ref": "Borum, R. (2011). Radicalization into violent extremism I: A review of social science theories. Journal of Strategic Security, 4(4), 7–36.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-113-criminology_prevention-3"
+   ]
+  },
+  {
+   "cite": "Bowen (1978)",
+   "ref": "Bowen, M. (1978). Family therapy in clinical practice. New York: Jason Aronson.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "109-諮商與輔導-4",
+    "115-諮商與輔導-1",
+    "監獄官-111-諮商與矯正輔導-2",
+    "監獄官-113-諮商與矯正輔導-2",
+    "薦任升等（矯正）-112-諮商與輔導-1",
+    "police-109-counseling-4",
+    "police-111-counseling-2"
+   ]
+  },
+  {
+   "cite": "Bower (1981)",
+   "ref": "Bower, G. H. (1981). Mood and memory. American Psychologist, 36(2), 129–148.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-108-psychology-4"
+   ]
+  },
+  {
+   "cite": "Bowlby (1969)",
+   "ref": "Bowlby, J. (1969). Attachment and loss: Vol. 1. Attachment. New York: Basic Books.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "112-心理學-3",
+    "police-112-counseling-2",
+    "114-家事調查官-心理測驗員-心理學-3"
+   ]
+  },
+  {
+   "cite": "Bradley & Caldwell (1984)",
+   "ref": "Bradley, R. H., & Caldwell, B. M. (1984). The relation of infants’ home environments to achievement test performance in first grade: A follow-up study. Child Development, 55(3), 803–809.",
+   "status": "ok",
+   "note": "Bradley 與 Caldwell 同年另有 HOME 量表相關論文；若講義所指不同，請以講義為準。",
+   "usedBy": [
+    "111-心理學-4"
+   ]
+  },
+  {
+   "cite": "Braga et al. (2019)",
+   "ref": "Braga, A. A., Turchan, B. S., Papachristos, A. V., & Hureau, D. M. (2019). Hot spots policing and crime reduction: An update of an ongoing systematic review and meta-analysis. Journal of Experimental Criminology, 15(3), 289–311.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-109-criminology_prevention-1"
+   ]
+  },
+  {
+   "cite": "Braithwaite (1989)",
+   "ref": "Braithwaite, J. (1989). Crime, shame and reintegration. Cambridge: Cambridge University Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "110-犯罪學-3",
+    "114-犯罪學-3",
+    "監獄官-113-犯罪學與再犯預測-4",
+    "監獄官-115-犯罪學與再犯預測-4",
+    "薦任升等（矯正）-110-犯罪學-1",
+    "薦任升等（矯正）-114-犯罪學-3",
+    "police-110-criminology_prevention-1",
+    "監所管理員-110-犯罪學概要-1"
+   ]
+  },
+  {
+   "cite": "Brantingham & Brantingham (1993)",
+   "ref": "Brantingham, P. L., & Brantingham, P. J. (1993). Environment, routine, and situation: Toward a pattern theory of crime. In R. V. Clarke & M. Felson (Eds.), Routine activity and rational choice (Advances in Criminological Theory, Vol. 5, pp. 259–294). New Brunswick, NJ: Transaction.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-112-犯罪學-2",
+    "police-109-criminology_prevention-1",
+    "監所管理員-112-犯罪學概要-2"
+   ]
+  },
+  {
+   "cite": "Brantingham & Faust (1976)",
+   "ref": "Brantingham, P. J., & Faust, F. L. (1976). A conceptual model of crime prevention. Crime & Delinquency, 22(3), 284–296.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "108-犯罪學-2",
+    "監獄官-110-諮商與矯正輔導-2",
+    "監獄官-114-諮商與矯正輔導-4",
+    "police-115-criminology_prevention-4",
+    "監所管理員-114-犯罪學概要-3"
+   ]
+  },
+  {
+   "cite": "Broadbent (1958)",
+   "ref": "Broadbent, D. E. (1958). Perception and communication. London: Pergamon Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-家事調查官-心理測驗員-心理學-3"
+   ]
+  },
+  {
+   "cite": "Bronfenbrenner (1979)",
+   "ref": "Bronfenbrenner, U. (1979). The ecology of human development: Experiments by nature and design. Cambridge, MA: Harvard University Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-心理學-4"
+   ]
+  },
+  {
+   "cite": "Bucklen (2021)",
+   "ref": "Bucklen, K. B. (2021). Desistance-focused criminal justice practice (NCJ 301501). Washington, DC: National Institute of Justice.",
+   "status": "ok",
+   "note": "已查證為 NIJ 2021 年 10 月白皮書：https://www.ojp.gov/pdffiles1/nij/301501.pdf",
+   "usedBy": [
+    "監獄官-115-犯罪學與再犯預測-1"
+   ]
+  },
+  {
+   "cite": "Burgess (1928)",
+   "ref": "Burgess, E. W. (1928). Factors determining success or failure on parole. In A. A. Bruce, A. J. Harno, E. W. Burgess, & J. Landesco, The workings of the indeterminate-sentence law and the parole system in Illinois (pp. 205–249). Springfield: Illinois State Board of Parole.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-112-犯罪學與再犯預測-4",
+    "監獄官-115-犯罪學與再犯預測-3"
+   ]
+  },
+  {
+   "cite": "Burnstein & Vinokur (1977)",
+   "ref": "Burnstein, E., & Vinokur, A. (1977). Persuasive argumentation and social comparison as determinants of attitude polarization. Journal of Experimental Social Psychology, 13(4), 315–332.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "114-心理學-2"
+   ]
+  },
+  {
+   "cite": "Bushman & Anderson (2001)",
+   "ref": "Bushman, B. J., & Anderson, C. A. (2001). Is it time to pull the plug on the hostile versus instrumental aggression dichotomy? Psychological Review, 108(1), 273–279.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-113-犯罪學與再犯預測-1"
+   ]
+  },
+  {
+   "cite": "Byrne (1971)",
+   "ref": "Byrne, D. (1971). The attraction paradigm. New York: Academic Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "108-心理學-3"
+   ]
+  },
+  {
+   "cite": "Cameron & turtle-song (2002)",
+   "ref": "Cameron, S., & turtle-song, i. (2002). Learning to write case notes using the SOAP format. Journal of Counseling & Development, 80(3), 286–292.",
+   "status": "ok",
+   "note": "第二作者姓名依原文以小寫書寫。",
+   "usedBy": [
+    "115-諮商與輔導-4"
+   ]
+  },
+  {
+   "cite": "Campbell (2003)",
+   "ref": "Campbell, J. C., Webster, D., Koziol-McLain, J., et al. (2003). Risk factors for femicide in abusive relationships: Results from a multisite case control study. American Journal of Public Health, 93(7), 1089–1097.",
+   "status": "check",
+   "note": "此文為多位作者合著，應寫作 Campbell et al. (2003)；危險評估量表 DA 原始文獻為 Campbell (1986)。TIPVDA 為我國量表（王珮玲發展），請另以講義標示出處。",
+   "usedBy": [
+    "薦任升等（矯正）-108-犯罪學-4"
+   ],
+   "crossref": {
+    "result": "found",
+    "evidence": [
+     "https://doi.org/10.2105/ajph.93.7.1089",
+     "https://doi.org/10.1097/00012272-198607000-00006"
+    ],
+    "note": "已確認：American Journal of Public Health 93(7), 1089–1097，共 18 位作者，應寫作 Campbell et al. (2003)。DA 原始文獻 Campbell (1986), Advances in Nursing Science 8(4), 36–51 亦已確認。"
+   }
+  },
+  {
+   "cite": "Campbell & Fiske (1959)",
+   "ref": "Campbell, D. T., & Fiske, D. W. (1959). Convergent and discriminant validation by the multitrait-multimethod matrix. Psychological Bulletin, 56(2), 81–105.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "109-心理學-4"
+   ]
+  },
+  {
+   "cite": "Cannon (1927)",
+   "ref": "Cannon, W. B. (1927). The James-Lange theory of emotions: A critical examination and an alternative theory. The American Journal of Psychology, 39, 106–124.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-108-psychology-1"
+   ]
+  },
+  {
+   "cite": "CASEL",
+   "ref": "Collaborative for Academic, Social, and Emotional Learning. (2020). CASEL’s SEL framework: What are the core competence areas and where are they promoted? Chicago: CASEL.",
+   "status": "vague",
+   "note": "原引用未標年份；五大能力架構可引用 CASEL (2020) 官方架構說明。",
+   "usedBy": [
+    "薦任升等（矯正）-112-諮商與輔導-2"
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄 CASEL 官方文件。"
+   }
+  },
+  {
+   "cite": "Casey et al. (2008)",
+   "ref": "Casey, B. J., Jones, R. M., & Hare, T. A. (2008). The adolescent brain. Annals of the New York Academy of Sciences, 1124, 111–126.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "113-家事調查官-心理測驗員-心理學-4"
+   ]
+  },
+  {
+   "cite": "Cattell (1963)",
+   "ref": "Cattell, R. B. (1963). Theory of fluid and crystallized intelligence: A critical experiment. Journal of Educational Psychology, 54(1), 1–22.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "109-心理學-1"
+   ]
+  },
+  {
+   "cite": "Christopher et al. (2016)",
+   "ref": "Christopher, M. S., Goerling, R. J., Rogers, B. S., Hunsinger, M., Baron, G., Bergman, A. L., & Zava, D. T. (2016). A pilot study evaluating the effectiveness of a mindfulness-based intervention on cortisol awakening response and health outcomes among law enforcement officers. Journal of Police and Criminal Psychology, 31(1), 15–28. doi:10.1007/s11896-015-9161-x",
+   "status": "ok",
+   "note": "Crossref 確認篇名、作者順序與卷期；線上首刊 2015 年、紙本 2016 年。同團隊的隨機對照試驗為 Christopher et al. (2018), Psychiatry Research, 264, 104–115。",
+   "usedBy": [
+    "police-114-counseling-3"
+   ],
+   "crossref": {
+    "result": "found",
+    "evidence": [
+     "https://doi.org/10.1007/s11896-015-9161-x",
+     "https://doi.org/10.1016/j.psychres.2018.03.059"
+    ],
+    "note": "已確認篇名與七位作者順序完全相符；線上首刊 2015-01-23，紙本 2016 年 31(1), 15–28，原引用 2016 年正確。2018 年隨機對照試驗亦已確認（Psychiatry Research 264, 104–115）。"
+   }
+  },
+  {
+   "cite": "Cialdini (2001)",
+   "ref": "Cialdini, R. B. (2001). Influence: Science and practice (4th ed.). Boston: Allyn & Bacon.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-111-psychology-4",
+    "police-113-psychology-1"
+   ]
+  },
+  {
+   "cite": "Cialdini et al. (1975)",
+   "ref": "Cialdini, R. B., Vincent, J. E., Lewis, S. K., Catalan, J., Wheeler, D., & Darby, B. L. (1975). Reciprocal concessions procedure for inducing compliance: The door-in-the-face technique. Journal of Personality and Social Psychology, 31(2), 206–215.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-113-psychology-1"
+   ]
+  },
+  {
+   "cite": "Clarke (1997)",
+   "ref": "Clarke, R. V. (Ed.). (1997). Situational crime prevention: Successful case studies (2nd ed.). Guilderland, NY: Harrow and Heston.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-115-犯罪學與再犯預測-2",
+    "薦任升等（矯正）-112-犯罪學-2",
+    "薦任升等（矯正）-112-犯罪學-3",
+    "police-109-criminology_prevention-2",
+    "police-110-criminology_prevention-3",
+    "police-112-criminology_prevention-4",
+    "police-115-criminology_prevention-2",
+    "police-115-criminology_prevention-4",
+    "監所管理員-111-犯罪學概要-3"
+   ]
+  },
+  {
+   "cite": "Clinard & Quinney (1973)",
+   "ref": "Clinard, M. B., & Quinney, R. (1973). Criminal behavior systems: A typology (2nd ed.). New York: Holt, Rinehart and Winston.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-110-犯罪學與再犯預測-2"
+   ]
+  },
+  {
+   "cite": "Cloward & Ohlin (1960)",
+   "ref": "Cloward, R. A., & Ohlin, L. E. (1960). Delinquency and opportunity: A theory of delinquent gangs. Glencoe, IL: Free Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "111-犯罪學-4",
+    "薦任升等（矯正）-108-犯罪學-3",
+    "police-111-criminology_prevention-3",
+    "監所管理員-110-犯罪學概要-2"
+   ]
+  },
+  {
+   "cite": "Cohen (1955)",
+   "ref": "Cohen, A. K. (1955). Delinquent boys: The culture of the gang. Glencoe, IL: Free Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "111-犯罪學-4",
+    "薦任升等（矯正）-108-犯罪學-3"
+   ]
+  },
+  {
+   "cite": "Cohen & Felson (1979)",
+   "ref": "Cohen, L. E., & Felson, M. (1979). Social change and crime rate trends: A routine activity approach. American Sociological Review, 44(4), 588–608.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "108-犯罪學-1",
+    "112-犯罪學-2",
+    "薦任升等（矯正）-110-犯罪學-4",
+    "薦任升等（矯正）-112-犯罪學-3",
+    "police-109-criminology_prevention-1",
+    "police-115-criminology_prevention-2",
+    "監所管理員-112-犯罪學概要-2",
+    "監所管理員-114-犯罪學概要-2"
+   ]
+  },
+  {
+   "cite": "Colvin (2000)",
+   "ref": "Colvin, M. (2000). Crime and coercion: An integrated theory of chronic criminality. New York: St. Martin’s Press.",
+   "status": "ok",
+   "note": "111-犯罪學-3 第 4 列「權威型教養」概念出自 Baumrind (1966/1971)，非 Colvin。",
+   "usedBy": [
+    "111-犯罪學-3",
+    "113-犯罪學-2"
+   ]
+  },
+  {
+   "cite": "Comer, Abnormal Psychology",
+   "ref": "Comer, R. J., & Comer, J. S. (2021). Abnormal psychology (11th ed.). New York: Worth.",
+   "status": "vague",
+   "note": "原引用未標年份與版次；請依講義使用的版本補上（例如第 9 版 2015、第 10 版 2018、第 11 版 2021）。",
+   "usedBy": [
+    "110-心理學-1"
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄此教科書。"
+   }
+  },
+  {
+   "cite": "Corey (2016)",
+   "ref": "Corey, G. (2016). Theory and practice of group counseling (9th ed.). Boston: Cengage Learning.",
+   "status": "ok",
+   "note": "團體諮商題引用此書；個別諮商理論題請改引 Corey (2017)。",
+   "usedBy": [
+    "112-諮商與輔導-4",
+    "監獄官-108-諮商與矯正輔導-2",
+    "監獄官-109-諮商與矯正輔導-4",
+    "監獄官-114-諮商與矯正輔導-3",
+    "監獄官-115-諮商與矯正輔導-1",
+    "薦任升等（矯正）-110-諮商與輔導-1",
+    "police-108-counseling-4",
+    "police-110-counseling-3",
+    "police-112-counseling-2",
+    "police-115-counseling-2"
+   ]
+  },
+  {
+   "cite": "Corey (2017)",
+   "ref": "Corey, G. (2017). Theory and practice of counseling and psychotherapy (10th ed.). Boston: Cengage Learning.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "110-諮商與輔導-1",
+    "監獄官-111-諮商與矯正輔導-1",
+    "監獄官-113-諮商與矯正輔導-1",
+    "薦任升等（矯正）-114-諮商與輔導-1",
+    "police-115-psychology-3",
+    "police-108-counseling-2",
+    "police-109-counseling-1",
+    "police-110-counseling-2"
+   ]
+  },
+  {
+   "cite": "Corey et al.",
+   "ref": "Corey, G., Corey, M. S., Corey, C., & Callanan, P. (2015). Issues and ethics in the helping professions (9th ed.). Stamford, CT: Cengage Learning.",
+   "status": "vague",
+   "note": "原引用未標書名與年份；依內容（反移情、督導、自我照顧）推定為此書，請以講義核對。",
+   "usedBy": [
+    "111-諮商與輔導-4",
+    "監獄官-115-諮商與矯正輔導-1"
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.1002/1520-6807(199504)32:2<142::aid-pits2310320213>3.0.co;2-p"
+    ],
+    "note": "第 9 版 Crossref 未收錄；1993 年版的書評（Psychology in the Schools 32(2)）可證書名與作者。"
+   }
+  },
+  {
+   "cite": "Corey et al. (2015)",
+   "ref": "Corey, G., Corey, M. S., Corey, C., & Callanan, P. (2015). Issues and ethics in the helping professions (9th ed.). Stamford, CT: Cengage Learning.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-108-諮商與輔導-4",
+    "police-110-counseling-1"
+   ]
+  },
+  {
+   "cite": "Corey, Corey & Callanan",
+   "ref": "Corey, G., Corey, M. S., Corey, C., & Callanan, P. (2015). Issues and ethics in the helping professions (9th ed.). Stamford, CT: Cengage Learning.",
+   "status": "vague",
+   "note": "原引用未標年份；第 9 版起作者為四人，第 10 版 (2019) 作者為 Corey, Corey, & Corey。",
+   "usedBy": [
+    "111-諮商與輔導-4"
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.1002/1520-6807(199504)32:2<142::aid-pits2310320213>3.0.co;2-p"
+    ],
+    "note": "第 9 版 Crossref 未收錄；1993 年版的書評可證書名與作者 Corey, Corey, & Callanan。"
+   }
+  },
+  {
+   "cite": "Cornish (1994)",
+   "ref": "Cornish, D. B. (1994). The procedural analysis of offending and its relevance for situational prevention. Crime Prevention Studies, 3, 151–196.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-115-犯罪學與再犯預測-2"
+   ]
+  },
+  {
+   "cite": "Cornish & Clarke (1986)",
+   "ref": "Cornish, D. B., & Clarke, R. V. (Eds.). (1986). The reasoning criminal: Rational choice perspectives on offending. New York: Springer-Verlag.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "111-犯罪學-1",
+    "police-112-criminology_prevention-3",
+    "監所管理員-112-犯罪學概要-2"
+   ]
+  },
+  {
+   "cite": "Cornish & Clarke (2003)",
+   "ref": "Cornish, D. B., & Clarke, R. V. (2003). Opportunities, precipitators and criminal decisions: A reply to Wortley’s critique of situational crime prevention. Crime Prevention Studies, 16, 41–96.",
+   "status": "ok",
+   "note": "二十五項情境預防技術出自此文。",
+   "usedBy": [
+    "police-109-criminology_prevention-2",
+    "police-112-criminology_prevention-4",
+    "police-115-criminology_prevention-4",
+    "監所管理員-111-犯罪學概要-3"
+   ]
+  },
+  {
+   "cite": "Costa & McCrae (1992)",
+   "ref": "Costa, P. T., Jr., & McCrae, R. R. (1992). Revised NEO Personality Inventory (NEO PI-R) and NEO Five-Factor Inventory (NEO-FFI) professional manual. Odessa, FL: Psychological Assessment Resources.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "108-諮商與輔導-4"
+   ]
+  },
+  {
+   "cite": "Courchesne et al. (2007)",
+   "ref": "Courchesne, E., Pierce, K., Schumann, C. M., et al. (2007). Mapping early brain development in autism. Neuron, 56(2), 399–413.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-109-psychology-3"
+   ]
+  },
+  {
+   "cite": "Craik & Lockhart (1972)",
+   "ref": "Craik, F. I. M., & Lockhart, R. S. (1972). Levels of processing: A framework for memory research. Journal of Verbal Learning and Verbal Behavior, 11(6), 671–684.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "109-心理測驗員-心理學-4"
+   ]
+  },
+  {
+   "cite": "Cronbach (1951)",
+   "ref": "Cronbach, L. J. (1951). Coefficient alpha and the internal structure of tests. Psychometrika, 16(3), 297–334.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "109-心理學-4"
+   ]
+  },
+  {
+   "cite": "Cronbach (1990)",
+   "ref": "Cronbach, L. J. (1990). Essentials of psychological testing (5th ed.). New York: Harper & Row.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-112-心理測驗-1"
+   ]
+  },
+  {
+   "cite": "Crowe (2000)",
+   "ref": "Crowe, T. D. (2000). Crime prevention through environmental design (2nd ed.). Boston: Butterworth-Heinemann.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-114-犯罪學與再犯預測-1",
+    "監所管理員-113-犯罪學概要-3"
+   ]
+  },
+  {
+   "cite": "Dalton et al. (2007)",
+   "ref": "Dalton, J. H., Elias, M. J., & Wandersman, A. (2007). Community psychology: Linking individuals and communities (2nd ed.). Belmont, CA: Thomson Wadsworth.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-110-諮商與輔導-3"
+   ]
+  },
+  {
+   "cite": "de Shazer (1985)",
+   "ref": "de Shazer, S. (1985). Keys to solution in brief therapy. New York: W. W. Norton.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "114-諮商與輔導-1",
+    "監獄官-109-諮商與矯正輔導-3",
+    "police-115-counseling-1"
+   ]
+  },
+  {
+   "cite": "de Shazer (1988)",
+   "ref": "de Shazer, S. (1988). Clues: Investigating solutions in brief therapy. New York: W. W. Norton.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "114-諮商與輔導-1",
+    "監獄官-109-諮商與矯正輔導-3",
+    "police-115-counseling-1"
+   ]
+  },
+  {
+   "cite": "de Vries Robbé et al.",
+   "ref": "de Vries Robbé, M., de Vogel, V., & de Spa, E. (2011). Protective factors for violence risk in forensic psychiatric patients: A retrospective validation study of the SAPROF. International Journal of Forensic Mental Health, 10(3), 178–186.",
+   "status": "vague",
+   "note": "原引用未標年份；SAPROF 工具手冊為 de Vogel, de Ruiter, Bouman, & de Vries Robbé (2009/2012)。",
+   "usedBy": [
+    "115-犯罪學-3"
+   ],
+   "crossref": {
+    "result": "found",
+    "evidence": [
+     "https://doi.org/10.1080/14999013.2011.600232"
+    ],
+    "note": "已確認：International Journal of Forensic Mental Health 10(3), 178–186。"
+   }
+  },
+  {
+   "cite": "Deci & Ryan (1985)",
+   "ref": "Deci, E. L., & Ryan, R. M. (1985). Intrinsic motivation and self-determination in human behavior. New York: Plenum.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-109-psychology-4",
+    "police-115-psychology-4",
+    "109-心理測驗員-心理學-1"
+   ]
+  },
+  {
+   "cite": "Deci et al. (1999)",
+   "ref": "Deci, E. L., Koestner, R., & Ryan, R. M. (1999). A meta-analytic review of experiments examining the effects of extrinsic rewards on intrinsic motivation. Psychological Bulletin, 125(6), 627–668.",
+   "status": "ok",
+   "note": "此統合分析主要結論是有形酬賞會削弱內在動機；用於「連勝與排行短期提升參與」時，宜說明其限制。",
+   "usedBy": [
+    "115-家事調查官-心理測驗員-心理學-2"
+   ]
+  },
+  {
+   "cite": "DeVellis (2017)",
+   "ref": "DeVellis, R. F. (2017). Scale development: Theory and applications (4th ed.). Thousand Oaks, CA: Sage.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-110-心理測驗-2"
+   ]
+  },
+  {
+   "cite": "Devlin (1965)",
+   "ref": "Devlin, P. (1965). The enforcement of morals. London: Oxford University Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監所管理員-108-犯罪學概要-3"
+   ]
+  },
+  {
+   "cite": "DiIulio (1987)",
+   "ref": "DiIulio, J. J., Jr. (1987). Governing prisons: A comparative study of correctional management. New York: Free Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-114-犯罪學-4"
+   ]
+  },
+  {
+   "cite": "Dodge (1980)",
+   "ref": "Dodge, K. A. (1980). Social cognition and children’s aggressive behavior. Child Development, 51(1), 162–170.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "114-諮商與輔導-2",
+    "114-家事調查官-心理測驗員-心理學-2"
+   ]
+  },
+  {
+   "cite": "Douglas & Waksler (1982)",
+   "ref": "Douglas, J. D., & Waksler, F. C. (1982). The sociology of deviance: An introduction. Boston: Little, Brown.",
+   "status": "ok",
+   "note": "「漏斗效應」的具體表述請以講義核對。",
+   "usedBy": [
+    "監獄官-110-犯罪學與再犯預測-2"
+   ]
+  },
+  {
+   "cite": "Dreikurs",
+   "ref": "Dreikurs, R. (1967). Psychodynamics, psychotherapy, and counseling: Collected papers. Chicago: Alfred Adler Institute.",
+   "status": "vague",
+   "note": "原引用未標年份；阿德勒治療四階段常引此書，錯誤目標則引 Dreikurs & Soltz (1964)。",
+   "usedBy": [
+    "113-諮商與輔導-4",
+    "監獄官-114-諮商與矯正輔導-1",
+    "police-108-counseling-2"
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄。"
+   }
+  },
+  {
+   "cite": "Dreikurs (1964)",
+   "ref": "Dreikurs, R., & Soltz, V. (1964). Children: The challenge. New York: Duell, Sloan and Pearce.",
+   "status": "check",
+   "note": "此書為 Dreikurs 與 Soltz 合著，應寫作 Dreikurs & Soltz (1964)。",
+   "usedBy": [
+    "監獄官-115-諮商與矯正輔導-2"
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [
+     "https://doi.org/10.1080/01926187.2011.576224"
+    ],
+    "note": "專書 Crossref 未收錄；僅有 2011 年書評（American Journal of Family Therapy 39(5)），Crossref 資料未列作者，無法以此確認合著者。維持原建議。"
+   }
+  },
+  {
+   "cite": "Duncker (1945)",
+   "ref": "Duncker, K. (1945). On problem-solving. Psychological Monographs, 58(5), i–113.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "114-心理學-3"
+   ]
+  },
+  {
+   "cite": "Dutton (2006)",
+   "ref": "Dutton, D. G. (2006). Rethinking domestic violence. Vancouver: UBC Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-108-犯罪學-4"
+   ]
+  },
+  {
+   "cite": "Ebbinghaus (1885)",
+   "ref": "Ebbinghaus, H. (1885). Über das Gedächtnis. Leipzig: Duncker & Humblot.（英譯 Memory: A Contribution to Experimental Psychology, 1913）",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-110-psychology-1",
+    "108-心理測驗員-心理學-1",
+    "109-心理測驗員-心理學-4"
+   ]
+  },
+  {
+   "cite": "Ebel (1979)",
+   "ref": "Ebel, R. L. (1979). Essentials of educational measurement (3rd ed.). Englewood Cliffs, NJ: Prentice-Hall.",
+   "status": "ok",
+   "note": "Ebel 的鑑別度標準：.40 以上非常優良、.30–.39 優良、.20–.29 尚可、.19 以下應刪除或修改。",
+   "usedBy": [
+    "薦任升等（矯正）-108-心理測驗-1"
+   ]
+  },
+  {
+   "cite": "Egan (2014)",
+   "ref": "Egan, G. (2014). The skilled helper: A problem-management and opportunity-development approach to helping (10th ed.). Belmont, CA: Brooks/Cole.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-108-counseling-3",
+    "police-109-counseling-4",
+    "police-113-counseling-2",
+    "police-113-counseling-3",
+    "police-113-counseling-4"
+   ]
+  },
+  {
+   "cite": "Ekman (1992)",
+   "ref": "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "110-心理學-3"
+   ]
+  },
+  {
+   "cite": "Elkind (1967)",
+   "ref": "Elkind, D. (1967). Egocentrism in adolescence. Child Development, 38(4), 1025–1034.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-心理學-3"
+   ]
+  },
+  {
+   "cite": "Elliott, Ageton & Canter (1979)",
+   "ref": "Elliott, D. S., Ageton, S. S., & Canter, R. J. (1979). An integrated theoretical perspective on delinquent behavior. Journal of Research in Crime and Delinquency, 16(1), 3–27.",
+   "status": "ok",
+   "note": "「上下、端對端、並列」三種整合方式的分類出自 Hirschi (1979)。",
+   "usedBy": [
+    "111-犯罪學-2"
+   ]
+  },
+  {
+   "cite": "Ellis (1962)",
+   "ref": "Ellis, A. (1962). Reason and emotion in psychotherapy. New York: Lyle Stuart.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-心理學-3",
+    "police-109-counseling-1"
+   ]
+  },
+  {
+   "cite": "Engel (1977)",
+   "ref": "Engel, G. L. (1977). The need for a new medical model: A challenge for biomedicine. Science, 196(4286), 129–136.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "114-犯罪學-4",
+    "115-心理學-2",
+    "監獄官-114-犯罪學與再犯預測-3"
+   ]
+  },
+  {
+   "cite": "Epperson et al. (1998)",
+   "ref": "Epperson, D. L., Kaul, J. D., Huot, S. J., Hesselton, D., Alexander, W., & Goldman, R. (1998). Minnesota Sex Offender Screening Tool–Revised (MnSOST-R). St. Paul: Minnesota Department of Corrections.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-110-犯罪學與再犯預測-4"
+   ]
+  },
+  {
+   "cite": "Erikson (1968)",
+   "ref": "Erikson, E. H. (1968). Identity: Youth and crisis. New York: W. W. Norton.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-心理學-4"
+   ]
+  },
+  {
+   "cite": "Exner (2003)",
+   "ref": "Exner, J. E., Jr. (2003). The Rorschach: A comprehensive system: Vol. 1. Basic foundations and principles of interpretation (4th ed.). Hoboken, NJ: Wiley.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-112-psychology-3"
+   ]
+  },
+  {
+   "cite": "Eysenck (1988)",
+   "ref": "Eysenck, H. J. (1988). Personality, stress and cancer: Prediction and prophylaxis. British Journal of Medical Psychology, 61(1), 57–75.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "108-心理學-2"
+   ]
+  },
+  {
+   "cite": "Farrell & Pease (1993)",
+   "ref": "Farrell, G., & Pease, K. (1993). Once bitten, twice bitten: Repeat victimisation and its implications for crime prevention (Crime Prevention Unit Paper 46). London: Home Office.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-109-criminology_prevention-4",
+    "監所管理員-114-犯罪學概要-2"
+   ]
+  },
+  {
+   "cite": "Farrington (2003)",
+   "ref": "Farrington, D. P. (2003). Developmental and life-course criminology: Key theoretical and empirical issues. Criminology, 41(2), 221–256.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "113-犯罪學-3",
+    "監獄官-108-犯罪學與再犯預測-2",
+    "監獄官-108-犯罪學與再犯預測-3"
+   ]
+  },
+  {
+   "cite": "Felitti et al. (1998)",
+   "ref": "Felitti, V. J., Anda, R. F., Nordenberg, D., et al. (1998). Relationship of childhood abuse and household dysfunction to many of the leading causes of death in adults: The Adverse Childhood Experiences (ACE) Study. American Journal of Preventive Medicine, 14(4), 245–258.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "112-心理學-3",
+    "police-111-counseling-2"
+   ]
+  },
+  {
+   "cite": "Felson & Clarke (1998)",
+   "ref": "Felson, M., & Clarke, R. V. (1998). Opportunity makes the thief: Practical theory for crime prevention (Police Research Series Paper 98). London: Home Office.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-110-criminology_prevention-3",
+    "police-112-criminology_prevention-4",
+    "police-115-criminology_prevention-2"
+   ]
+  },
+  {
+   "cite": "Ferri",
+   "ref": "Ferri, E. (1884). Sociologia criminale. Torino: Bocca.（英譯 Criminal Sociology, 1917）",
+   "status": "vague",
+   "note": "原引用未標年份。",
+   "usedBy": [
+    "監所管理員-108-犯罪學概要-2"
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.2307/1327556"
+    ],
+    "note": "原書未收錄；1917 年英譯本有 Harvard Law Review 31 的書評可證。"
+   }
+  },
+  {
+   "cite": "Festinger (1954)",
+   "ref": "Festinger, L. (1954). A theory of social comparison processes. Human Relations, 7(2), 117–140.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-家事調查官-心理測驗員-心理學-4"
+   ]
+  },
+  {
+   "cite": "Festinger (1957)",
+   "ref": "Festinger, L. (1957). A theory of cognitive dissonance. Stanford, CA: Stanford University Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "108-心理學-1",
+    "police-111-psychology-3"
+   ]
+  },
+  {
+   "cite": "Festinger, Pepitone & Newcomb (1952)",
+   "ref": "Festinger, L., Pepitone, A., & Newcomb, T. (1952). Some consequences of de-individuation in a group. Journal of Abnormal and Social Psychology, 47(2S), 382–389.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "111-心理學-3"
+   ]
+  },
+  {
+   "cite": "Festinger, Schachter & Back (1950)",
+   "ref": "Festinger, L., Schachter, S., & Back, K. (1950). Social pressures in informal groups: A study of human factors in housing. New York: Harper.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "108-心理學-3"
+   ]
+  },
+  {
+   "cite": "Finckenauer (1984)",
+   "ref": "Finckenauer, J. O. (1984). Juvenile delinquency and corrections: The gap between theory and practice. Orlando, FL: Academic Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-111-犯罪學與再犯預測-2"
+   ]
+  },
+  {
+   "cite": "Finkelhor & Asdigian (1996)",
+   "ref": "Finkelhor, D., & Asdigian, N. L. (1996). Risk factors for youth victimization: Beyond a lifestyles/routine activities theory approach. Violence and Victims, 11(1), 3–19.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "109-犯罪學-4"
+   ]
+  },
+  {
+   "cite": "Fisher & Geiselman (1992)",
+   "ref": "Fisher, R. P., & Geiselman, R. E. (1992). Memory-enhancing techniques for investigative interviewing: The cognitive interview. Springfield, IL: Charles C Thomas.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "113-心理學-1",
+    "police-111-psychology-2"
+   ]
+  },
+  {
+   "cite": "Fiske & Neuberg (1990)",
+   "ref": "Fiske, S. T., & Neuberg, S. L. (1990). A continuum of impression formation, from category-based to individuating processes. Advances in Experimental Social Psychology, 23, 1–74.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-114-psychology-3"
+   ]
+  },
+  {
+   "cite": "Flynn (1987)",
+   "ref": "Flynn, J. R. (1987). Massive IQ gains in 14 nations: What IQ tests really measure. Psychological Bulletin, 101(2), 171–191.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "111-心理學-4"
+   ]
+  },
+  {
+   "cite": "Fox & Levin (2003)",
+   "ref": "Fox, J. A., & Levin, J. (2003). Mass murder: An analysis of extreme violence. Journal of Applied Psychoanalytic Studies, 5(1), 47–64.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監所管理員-115-犯罪學概要-3"
+   ]
+  },
+  {
+   "cite": "Frank (1939)",
+   "ref": "Frank, L. K. (1939). Projective methods for the study of personality. The Journal of Psychology, 8(2), 389–413.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-112-psychology-3"
+   ]
+  },
+  {
+   "cite": "Frankl (1946, 1969)",
+   "ref": "Frankl, V. E. (1946). …trotzdem Ja zum Leben sagen: Ein Psychologe erlebt das Konzentrationslager. Wien: Jugend & Volk.／Frankl, V. E. (1969). The will to meaning. New York: World Publishing.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "111-諮商與輔導-1"
+   ]
+  },
+  {
+   "cite": "Frankl (1959)",
+   "ref": "Frankl, V. E. (1959). From death-camp to existentialism. Boston: Beacon Press.（1962 年增訂版改名 Man’s Search for Meaning）",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-110-counseling-2"
+   ]
+  },
+  {
+   "cite": "Frankl (1969)",
+   "ref": "Frankl, V. E. (1969). The will to meaning: Foundations and applications of logotherapy. New York: World Publishing.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "111-諮商與輔導-1"
+   ]
+  },
+  {
+   "cite": "Fredrickson (2001)",
+   "ref": "Fredrickson, B. L. (2001). The role of positive emotions in positive psychology: The broaden-and-build theory of positive emotions. American Psychologist, 56(3), 218–226.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-108-psychology-4"
+   ]
+  },
+  {
+   "cite": "Freedman & Fraser (1966)",
+   "ref": "Freedman, J. L., & Fraser, S. C. (1966). Compliance without pressure: The foot-in-the-door technique. Journal of Personality and Social Psychology, 4(2), 195–202.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-113-psychology-1"
+   ]
+  },
+  {
+   "cite": "Freud",
+   "ref": "Freud, S. (1923). Das Ich und das Es. Wien: Internationaler Psychoanalytischer Verlag.（英譯 The Ego and the Id）",
+   "status": "vague",
+   "note": "原引用未標年份；依內容選擇：人格結構引 Freud (1923)、焦慮引 Freud (1926)、夢的解析引 Freud (1900)、潛抑與遺忘引 Freud (1915) Repression 或 (1901) 日常生活的心理病理學。",
+   "usedBy": [
+    "109-諮商與輔導-3",
+    "110-諮商與輔導-1",
+    "監獄官-111-諮商與矯正輔導-1",
+    "監獄官-113-諮商與矯正輔導-1",
+    "監獄官-115-諮商與矯正輔導-1",
+    "police-110-psychology-1",
+    "police-115-psychology-3",
+    "108-心理測驗員-心理學-1",
+    "監所管理員-109-犯罪學概要-2"
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄原書。"
+   }
+  },
+  {
+   "cite": "Freud (1923)",
+   "ref": "Freud, S. (1923). Das Ich und das Es. Wien: Internationaler Psychoanalytischer Verlag.（英譯 The Ego and the Id）",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-心理學-1"
+   ]
+  },
+  {
+   "cite": "Freud (1926)",
+   "ref": "Freud, S. (1926). Hemmung, Symptom und Angst. Wien: Internationaler Psychoanalytischer Verlag.（英譯 Inhibitions, Symptoms and Anxiety）",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "109-諮商與輔導-1"
+   ]
+  },
+  {
+   "cite": "Freud, A. (1936)",
+   "ref": "Freud, A. (1936). Das Ich und die Abwehrmechanismen. Wien: Internationaler Psychoanalytischer Verlag.（英譯 The Ego and the Mechanisms of Defence, 1937）",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-110-psychology-4",
+    "police-111-psychology-3",
+    "108-心理測驗員-心理學-4"
+   ]
+  },
+  {
+   "cite": "Friedman (1998)",
+   "ref": "Friedman, J. M., & Halaas, J. L. (1998). Leptin and the regulation of body weight in mammals. Nature, 395(6704), 763–770.",
+   "status": "check",
+   "note": "瘦素的經典回顧為 Friedman 與 Halaas 合著，應寫作 Friedman & Halaas (1998)；瘦素基因的發現見 Zhang et al. (1994), Nature, 372, 425–432。",
+   "usedBy": [
+    "police-109-psychology-1"
+   ],
+   "crossref": {
+    "result": "found",
+    "evidence": [
+     "https://doi.org/10.1038/27376",
+     "https://doi.org/10.1038/372425a0"
+    ],
+    "note": "已確認：Friedman, J. M., & Halaas, J. L., Nature 395(6704), 763–770；Zhang et al. (1994), Nature 372(6505), 425–432 亦已確認。"
+   }
+  },
+  {
+   "cite": "Friedman & Rosenman (1974)",
+   "ref": "Friedman, M., & Rosenman, R. H. (1974). Type A behavior and your heart. New York: Knopf.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "108-心理學-2"
+   ]
+  },
+  {
+   "cite": "Garraud",
+   "ref": "Garraud, R. (1888–1894). Traité théorique et pratique du droit pénal français. Paris: Larose.",
+   "status": "vague",
+   "note": "原引用只有姓氏；新古典學派代表人物的列法請以講義核對。",
+   "usedBy": [
+    "police-110-criminology_prevention-2"
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄。"
+   }
+  },
+  {
+   "cite": "Geldard & Geldard",
+   "ref": "Geldard, K., Geldard, D., & Foo, R. Y. (2016). Counselling adolescents: The proactive approach for young people (4th ed.). London: Sage.",
+   "status": "vague",
+   "note": "原引用未標年份與書名；依內容（青少年諮商、媒材運用）推定為此書。",
+   "usedBy": [
+    "111-諮商與輔導-2"
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.4135/9781036233983"
+    ],
+    "note": "Crossref 只有 SAGE 2020 年版（Geldard, Geldard, & Foo），比建議書目的 2016 年第 4 版新；請依講義使用的版次擇一。"
+   }
+  },
+  {
+   "cite": "Gendreau et al. (1996)",
+   "ref": "Gendreau, P., Little, T., & Goggin, C. (1996). A meta-analysis of the predictors of adult offender recidivism: What works! Criminology, 34(4), 575–608.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-108-犯罪學-1"
+   ]
+  },
+  {
+   "cite": "Gendreau, Little & Goggin (1996)",
+   "ref": "Gendreau, P., Little, T., & Goggin, C. (1996). A meta-analysis of the predictors of adult offender recidivism: What works! Criminology, 34(4), 575–608.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-109-犯罪學與再犯預測-2"
+   ]
+  },
+  {
+   "cite": "Gerrig & Zimbardo",
+   "ref": "Gerrig, R. J., & Zimbardo, P. G. (2010). Psychology and life (19th ed.). Boston: Allyn & Bacon.",
+   "status": "vague",
+   "note": "原引用未標年份與版次；請依講義版本補上。",
+   "usedBy": [
+    "110-心理學-3"
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄此教科書。"
+   }
+  },
+  {
+   "cite": "Gerrig & Zimbardo, Psychology and Life",
+   "ref": "Gerrig, R. J., & Zimbardo, P. G. (2010). Psychology and life (19th ed.). Boston: Allyn & Bacon.",
+   "status": "vague",
+   "note": "原引用未標年份與版次；請依講義版本補上。",
+   "usedBy": [
+    "110-心理學-3"
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄此教科書。"
+   }
+  },
+  {
+   "cite": "Gibson (1979)",
+   "ref": "Gibson, J. J. (1979). The ecological approach to visual perception. Boston: Houghton Mifflin.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "110-心理測驗員-心理學-2"
+   ]
+  },
+  {
+   "cite": "Gick & Holyoak (1980)",
+   "ref": "Gick, M. L., & Holyoak, K. J. (1980). Analogical problem solving. Cognitive Psychology, 12(3), 306–355.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "114-心理學-3"
+   ]
+  },
+  {
+   "cite": "Glaser (1963)",
+   "ref": "Glaser, R. (1963). Instructional technology and the measurement of learning outcomes: Some questions. American Psychologist, 18(8), 519–521.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "111-心理學-1"
+   ]
+  },
+  {
+   "cite": "Glasser (1998)",
+   "ref": "Glasser, W. (1998). Choice theory: A new psychology of personal freedom. New York: HarperCollins.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-111-諮商與矯正輔導-4",
+    "police-110-counseling-3"
+   ]
+  },
+  {
+   "cite": "Glueck & Glueck (1950)",
+   "ref": "Glueck, S., & Glueck, E. (1950). Unraveling juvenile delinquency. New York: Commonwealth Fund.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-108-犯罪學與再犯預測-2",
+    "監獄官-108-犯罪學與再犯預測-3",
+    "監獄官-115-犯罪學與再犯預測-3"
+   ]
+  },
+  {
+   "cite": "Goldberg (1990, 1993)",
+   "ref": "Goldberg, L. R. (1990). An alternative \"description of personality\": The Big-Five factor structure. Journal of Personality and Social Psychology, 59(6), 1216–1229.／Goldberg, L. R. (1993). The structure of phenotypic personality traits. American Psychologist, 48(1), 26–34.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-心理學-1"
+   ]
+  },
+  {
+   "cite": "Goldberg (1993)",
+   "ref": "Goldberg, L. R. (1993). The structure of phenotypic personality traits. American Psychologist, 48(1), 26–34.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-心理學-1"
+   ]
+  },
+  {
+   "cite": "Goldstein (1985)",
+   "ref": "Goldstein, P. J. (1985). The drugs/violence nexus: A tripartite conceptual framework. Journal of Drug Issues, 15(4), 493–506.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-109-犯罪學與再犯預測-1"
+   ]
+  },
+  {
+   "cite": "Goldstein (1990)",
+   "ref": "Goldstein, H. (1990). Problem-oriented policing. New York: McGraw-Hill.",
+   "status": "ok",
+   "note": "SARA 模式由 Eck & Spelman (1987) 提出。",
+   "usedBy": [
+    "police-109-criminology_prevention-3"
+   ]
+  },
+  {
+   "cite": "Gottfredson (1987)",
+   "ref": "Gottfredson, D. M. (1987). Prediction and classification in criminal justice decision making. Crime and Justice, 9, 1–20. https://doi.org/10.1086/449130",
+   "status": "ok",
+   "note": "Crime and Justice 第 9 卷（Gottfredson & Tonry 主編，Prediction and classification: Criminal justice decision making）的導論，作者為 Don M. Gottfredson 一人；同卷另有 Gottfredson, S. D. (1987). Prediction: An overview of selected methodological issues, pp. 21–51。",
+   "usedBy": [
+    "監獄官-111-犯罪學與再犯預測-4",
+    "監獄官-112-犯罪學與再犯預測-1",
+    "監獄官-115-犯罪學與再犯預測-3"
+   ],
+   "crossref": {
+    "result": "found",
+    "evidence": [
+     "https://doi.org/10.1086/449130",
+     "https://doi.org/10.1086/449131"
+    ],
+    "note": "Crime and Justice 第 9 卷收有 Don M. Gottfredson (1987) 單一作者的導論〈Prediction and classification in criminal justice decision making〉(pp. 1–20)，與題目談的再犯預測實務與政策用途相符，因此原引用 Gottfredson (1987) 可成立，已改用此篇為書目；同卷另有 Stephen D. Gottfredson (1987)〈Prediction: An overview of selected methodological issues〉(pp. 21–51)。"
+   }
+  },
+  {
+   "cite": "Gottfredson & Hirschi (1990)",
+   "ref": "Gottfredson, M. R., & Hirschi, T. (1990). A general theory of crime. Stanford, CA: Stanford University Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "109-犯罪學-3",
+    "111-犯罪學-3",
+    "112-犯罪學-3",
+    "115-心理學-2",
+    "薦任升等（矯正）-110-犯罪學-1",
+    "薦任升等（矯正）-114-犯罪學-1",
+    "監所管理員-115-犯罪學概要-2"
+   ]
+  },
+  {
+   "cite": "Gross (1998)",
+   "ref": "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "112-心理學-1",
+    "監獄官-112-諮商與矯正輔導-3",
+    "police-112-psychology-2"
+   ]
+  },
+  {
+   "cite": "Gross & John (2003)",
+   "ref": "Gross, J. J., & John, O. P. (2003). Individual differences in two emotion regulation processes: Implications for affect, relationships, and well-being. Journal of Personality and Social Psychology, 85(2), 348–362.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "112-心理學-1",
+    "police-112-psychology-2"
+   ]
+  },
+  {
+   "cite": "Groth (1979)",
+   "ref": "Groth, A. N. (1979). Men who rape: The psychology of the offender. New York: Plenum.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-112-犯罪學與再犯預測-3"
+   ]
+  },
+  {
+   "cite": "Hagan et al. (1987)",
+   "ref": "Hagan, J., Simpson, J., & Gillis, A. R. (1987). Class in the household: A power-control theory of gender and delinquency. American Journal of Sociology, 92(4), 788–816.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-115-criminology_prevention-3"
+   ]
+  },
+  {
+   "cite": "Hammen (1991)",
+   "ref": "Hammen, C. (1991). Generation of stress in the course of unipolar depression. Journal of Abnormal Psychology, 100(4), 555–561.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "114-家事調查官-心理測驗員-心理學-2"
+   ]
+  },
+  {
+   "cite": "Hanson & Harris (2000)",
+   "ref": "Hanson, R. K., & Harris, A. J. R. (2000). Where should we intervene? Dynamic predictors of sexual offense recidivism. Criminal Justice and Behavior, 27(1), 6–35.",
+   "status": "ok",
+   "note": "SONAR 工具另見 Hanson & Harris (2001), Sexual Abuse, 13(2), 105–122。",
+   "usedBy": [
+    "114-犯罪學-2",
+    "監獄官-109-犯罪學與再犯預測-2",
+    "監獄官-110-犯罪學與再犯預測-3",
+    "監獄官-110-犯罪學與再犯預測-4",
+    "薦任升等（矯正）-108-諮商與輔導-3"
+   ]
+  },
+  {
+   "cite": "Hanson & Morton-Bourgon (2009)",
+   "ref": "Hanson, R. K., & Morton-Bourgon, K. E. (2009). The accuracy of recidivism risk assessments for sexual offenders: A meta-analysis of 118 prediction studies. Psychological Assessment, 21(1), 1–21.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-110-心理測驗-3"
+   ]
+  },
+  {
+   "cite": "Hanson & Thornton (2000)",
+   "ref": "Hanson, R. K., & Thornton, D. (2000). Improving risk assessments for sex offenders: A comparison of three actuarial scales. Law and Human Behavior, 24(1), 119–136.",
+   "status": "ok",
+   "note": "現行修訂版 Static-99R 見 Helmus, Thornton, Hanson, & Babchishin (2012)。",
+   "usedBy": [
+    "監獄官-110-犯罪學與再犯預測-3",
+    "監獄官-112-犯罪學與再犯預測-3"
+   ]
+  },
+  {
+   "cite": "Hare (2003)",
+   "ref": "Hare, R. D. (2003). The Hare Psychopathy Checklist–Revised (2nd ed.). Toronto: Multi-Health Systems.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "110-犯罪學-4",
+    "112-犯罪學-4",
+    "薦任升等（矯正）-108-犯罪學-2",
+    "police-114-criminology_prevention-1",
+    "police-114-counseling-2"
+   ]
+  },
+  {
+   "cite": "Hart (1963)",
+   "ref": "Hart, H. L. A. (1963). Law, liberty, and morality. Stanford, CA: Stanford University Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監所管理員-108-犯罪學概要-3"
+   ]
+  },
+  {
+   "cite": "Hazan & Shaver (1987)",
+   "ref": "Hazan, C., & Shaver, P. (1987). Romantic love conceptualized as an attachment process. Journal of Personality and Social Psychology, 52(3), 511–524.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "108-心理測驗員-心理學-3",
+    "113-家事調查官-心理測驗員-心理學-1"
+   ]
+  },
+  {
+   "cite": "Herman (1992)",
+   "ref": "Herman, J. L. (1992). Trauma and recovery. New York: Basic Books.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-113-counseling-1"
+   ]
+  },
+  {
+   "cite": "Hill (2014)",
+   "ref": "Hill, C. E. (2014). Helping skills: Facilitating exploration, insight, and action (4th ed.). Washington, DC: American Psychological Association.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "108-諮商與輔導-3",
+    "111-諮商與輔導-2",
+    "112-諮商與輔導-1",
+    "薦任升等（矯正）-112-諮商與輔導-4"
+   ]
+  },
+  {
+   "cite": "Hindelang, Gottfredson & Garofalo (1978)",
+   "ref": "Hindelang, M. J., Gottfredson, M. R., & Garofalo, J. (1978). Victims of personal crime: An empirical foundation for a theory of personal victimization. Cambridge, MA: Ballinger.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "112-犯罪學-2",
+    "監獄官-113-犯罪學與再犯預測-2"
+   ]
+  },
+  {
+   "cite": "Hirschi (1969)",
+   "ref": "Hirschi, T. (1969). Causes of delinquency. Berkeley: University of California Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "109-犯罪學-2",
+    "111-犯罪學-3",
+    "114-犯罪學-1",
+    "113-諮商與輔導-1",
+    "監獄官-108-犯罪學與再犯預測-2",
+    "監獄官-113-犯罪學與再犯預測-4",
+    "薦任升等（矯正）-110-犯罪學-3",
+    "police-115-psychology-4",
+    "police-108-criminology_prevention-1",
+    "監所管理員-111-犯罪學概要-2"
+   ]
+  },
+  {
+   "cite": "Hirschi (1979)",
+   "ref": "Hirschi, T. (1979). Separate and unequal is better. Journal of Research in Crime and Delinquency, 16(1), 34–38.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "111-犯罪學-2"
+   ]
+  },
+  {
+   "cite": "Hirschi & Gottfredson (1983)",
+   "ref": "Hirschi, T., & Gottfredson, M. (1983). Age and the explanation of crime. American Journal of Sociology, 89(3), 552–584.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-112-犯罪學-1"
+   ]
+  },
+  {
+   "cite": "Holland (1997)",
+   "ref": "Holland, J. L. (1997). Making vocational choices: A theory of vocational personalities and work environments (3rd ed.). Odessa, FL: Psychological Assessment Resources.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-112-諮商與矯正輔導-4",
+    "police-112-counseling-1"
+   ]
+  },
+  {
+   "cite": "Holmes & Holmes (2010)",
+   "ref": "Holmes, R. M., & Holmes, S. T. (2010). Serial murder (3rd ed.). Thousand Oaks, CA: Sage.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監所管理員-115-犯罪學概要-3"
+   ]
+  },
+  {
+   "cite": "Holt & Bossler (2016)",
+   "ref": "Holt, T. J., & Bossler, A. M. (2016). Cybercrime in progress: Theory and prevention of technology-enabled offenses. London: Routledge.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-112-犯罪學-3"
+   ]
+  },
+  {
+   "cite": "Holtfreter et al. (2008)",
+   "ref": "Holtfreter, K., Reisig, M. D., & Pratt, T. C. (2008). Low self-control, routine activities, and fraud victimization. Criminology, 46(1), 189–220.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監所管理員-114-犯罪學概要-2"
+   ]
+  },
+  {
+   "cite": "Horgan (2009)",
+   "ref": "Horgan, J. (2009). Walking away from terrorism: Accounts of disengagement from radical and extremist movements. London: Routledge.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-113-criminology_prevention-3"
+   ]
+  },
+  {
+   "cite": "Horn & Cattell (1966)",
+   "ref": "Horn, J. L., & Cattell, R. B. (1966). Refinement and test of the theory of fluid and crystallized general intelligences. Journal of Educational Psychology, 57(5), 253–270.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "109-心理學-1"
+   ]
+  },
+  {
+   "cite": "Horn & Cattell (1967)",
+   "ref": "Horn, J. L., & Cattell, R. B. (1967). Age differences in fluid and crystallized intelligence. Acta Psychologica, 26, 107–129.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "109-心理學-1"
+   ]
+  },
+  {
+   "cite": "Jacobs et al. (2016)",
+   "ref": "Jacobs, E. E., Schimmel, C. J., Masson, R. L., & Harvill, R. L. (2016). Group counseling: Strategies and skills (8th ed.). Boston: Cengage Learning.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-108-counseling-4"
+   ]
+  },
+  {
+   "cite": "Jaishankar (2008)",
+   "ref": "Jaishankar, K. (2008). Space transition theory of cyber crimes. In F. Schmalleger & M. Pittaro (Eds.), Crimes of the Internet (pp. 283–301). Upper Saddle River, NJ: Prentice Hall.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-112-犯罪學-3"
+   ]
+  },
+  {
+   "cite": "Janis (1972)",
+   "ref": "Janis, I. L. (1972). Victims of groupthink. Boston: Houghton Mifflin.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "114-心理學-2",
+    "police-110-psychology-2",
+    "110-心理測驗員-心理學-4"
+   ]
+  },
+  {
+   "cite": "Jeffery (1971)",
+   "ref": "Jeffery, C. R. (1971). Crime prevention through environmental design. Beverly Hills, CA: Sage.",
+   "status": "check",
+   "note": "CPTED 引此書正確；但「生物社會學習理論」主要見 1977 年第 2 版及 Jeffery (1990) Criminology: An interdisciplinary approach，引用生物社會學習理論時建議改引或並列。",
+   "usedBy": [
+    "監獄官-114-犯罪學與再犯預測-1",
+    "監所管理員-113-犯罪學概要-3"
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.1177/000271627340500172",
+     "https://doi.org/10.1177/000276427101400409"
+    ],
+    "note": "1971 年專書 Crossref 未收錄，但有 1973 年書評（ANNALS 405）可證書名與 Sage 出版；Jeffery 同年另有同名短文（American Behavioral Scientist 14(4), 598）。1977 第 2 版與 1990 年專書未收錄。維持原建議。"
+   }
+  },
+  {
+   "cite": "Jessor (1991)",
+   "ref": "Jessor, R. (1991). Risk behavior in adolescence: A psychosocial framework for understanding and action. Journal of Adolescent Health, 12(8), 597–605.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監所管理員-115-犯罪學概要-2"
+   ]
+  },
+  {
+   "cite": "Jessor & Jessor (1977)",
+   "ref": "Jessor, R., & Jessor, S. L. (1977). Problem behavior and psychosocial development: A longitudinal study of youth. New York: Academic Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-111-criminology_prevention-4",
+    "監所管理員-115-犯罪學概要-2"
+   ]
+  },
+  {
+   "cite": "Jung (1959)",
+   "ref": "Jung, C. G. (1959). The archetypes and the collective unconscious (Collected Works, Vol. 9, Pt. 1). Princeton, NJ: Princeton University Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-諮商與輔導-2"
+   ]
+  },
+  {
+   "cite": "Junger-Tas et al. (2010)",
+   "ref": "Junger-Tas, J., Marshall, I. H., Enzmann, D., Killias, M., Steketee, M., & Gruszczynska, B. (Eds.). (2010). Juvenile delinquency in Europe and beyond: Results of the Second International Self-Report Delinquency Study. New York: Springer.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-111-criminology_prevention-1"
+   ]
+  },
+  {
+   "cite": "Kabat-Zinn (1990)",
+   "ref": "Kabat-Zinn, J. (1990). Full catastrophe living: Using the wisdom of your body and mind to face stress, pain, and illness. New York: Delacorte.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-112-諮商與輔導-2",
+    "police-114-counseling-3"
+   ]
+  },
+  {
+   "cite": "Kahneman (1973)",
+   "ref": "Kahneman, D. (1973). Attention and effort. Englewood Cliffs, NJ: Prentice-Hall.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-家事調查官-心理測驗員-心理學-3"
+   ]
+  },
+  {
+   "cite": "Kahneman (2011)",
+   "ref": "Kahneman, D. (2011). Thinking, fast and slow. New York: Farrar, Straus and Giroux.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "113-心理學-2"
+   ]
+  },
+  {
+   "cite": "Kahneman & Tversky (1979)",
+   "ref": "Kahneman, D., & Tversky, A. (1979). Prospect theory: An analysis of decision under risk. Econometrica, 47(2), 263–291.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-家事調查官-心理測驗員-心理學-2"
+   ]
+  },
+  {
+   "cite": "Kalat (2016)",
+   "ref": "Kalat, J. W. (2016). Biological psychology (12th ed.). Boston: Cengage Learning.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-109-psychology-1",
+    "police-109-psychology-2",
+    "police-113-psychology-2",
+    "108-心理測驗員-心理學-2"
+   ]
+  },
+  {
+   "cite": "Kazdin (2001)",
+   "ref": "Kazdin, A. E. (2001). Behavior modification in applied settings (6th ed.). Belmont, CA: Wadsworth.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-108-psychology-3"
+   ]
+  },
+  {
+   "cite": "Kelley (1967)",
+   "ref": "Kelley, H. H. (1967). Attribution theory in social psychology. Nebraska Symposium on Motivation, 15, 192–238.",
+   "status": "ok",
+   "note": "「以情境解釋自己的行為」較貼切的出處為行動者—觀察者偏誤：Jones & Nisbett (1971)。",
+   "usedBy": [
+    "police-111-psychology-3"
+   ]
+  },
+  {
+   "cite": "Kelly (1966)",
+   "ref": "Kelly, J. G. (1966). Ecological constraints on mental health services. American Psychologist, 21(6), 535–539.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-110-諮商與輔導-3"
+   ]
+  },
+  {
+   "cite": "Kerr & Bowen (1988)",
+   "ref": "Kerr, M. E., & Bowen, M. (1988). Family evaluation: An approach based on Bowen theory. New York: W. W. Norton.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "109-諮商與輔導-4",
+    "115-諮商與輔導-1"
+   ]
+  },
+  {
+   "cite": "Kitchener (1984)",
+   "ref": "Kitchener, K. S. (1984). Intuition, critical evaluation and ethical principles: The foundation for ethical decisions in counseling psychology. The Counseling Psychologist, 12(3), 43–55.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-112-諮商與輔導-3"
+   ]
+  },
+  {
+   "cite": "Klerman et al. (1984)",
+   "ref": "Klerman, G. L., Weissman, M. M., Rounsaville, B. J., & Chevron, E. S. (1984). Interpersonal psychotherapy of depression. New York: Basic Books.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "112-心理學-2",
+    "監獄官-110-諮商與矯正輔導-4"
+   ]
+  },
+  {
+   "cite": "Kohlberg (1969)",
+   "ref": "Kohlberg, L. (1969). Stage and sequence: The cognitive-developmental approach to socialization. In D. A. Goslin (Ed.), Handbook of socialization theory and research (pp. 347–480). Chicago: Rand McNally.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "110-心理學-4"
+   ]
+  },
+  {
+   "cite": "Köhler (1925)",
+   "ref": "Köhler, W. (1925). The mentality of apes (E. Winter, Trans.). London: Kegan Paul.（德文原著 1917）",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "110-心理測驗員-心理學-1"
+   ]
+  },
+  {
+   "cite": "Kohut (1977)",
+   "ref": "Kohut, H. (1977). The restoration of the self. New York: International Universities Press.",
+   "status": "ok",
+   "note": "「雙生自體客體」的完整論述見 Kohut (1984) How does analysis cure?",
+   "usedBy": [
+    "114-家事調查官-心理測驗員-心理學-1"
+   ]
+  },
+  {
+   "cite": "Koob & Le Moal (2001)",
+   "ref": "Koob, G. F., & Le Moal, M. (2001). Drug addiction, dysregulation of reward, and allostasis. Neuropsychopharmacology, 24(2), 97–129.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "109-心理學-3"
+   ]
+  },
+  {
+   "cite": "Kowalski et al. (2014)",
+   "ref": "Kowalski, R. M., Giumetti, G. W., Schroeder, A. N., & Lattanner, M. R. (2014). Bullying in the digital age: A critical review and meta-analysis of cyberbullying research among youth. Psychological Bulletin, 140(4), 1073–1137.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "112-諮商與輔導-3"
+   ]
+  },
+  {
+   "cite": "Kraut et al. (1998)",
+   "ref": "Kraut, R., Patterson, M., Lundmark, V., Kiesler, S., Mukophadhyay, T., & Scherlis, W. (1998). Internet paradox: A social technology that reduces social involvement and psychological well-being? American Psychologist, 53(9), 1017–1031.",
+   "status": "ok",
+   "note": "同團隊的追蹤研究 Kraut et al. (2002) 發現負面效果已消失，作答時宜一併說明。",
+   "usedBy": [
+    "police-115-counseling-3"
+   ]
+  },
+  {
+   "cite": "Lab (2014)",
+   "ref": "Lab, S. P. (2014). Crime prevention: Approaches, practices, and evaluations (8th ed.). Waltham, MA: Anderson.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監所管理員-114-犯罪學概要-3"
+   ]
+  },
+  {
+   "cite": "Latané & Darley (1970)",
+   "ref": "Latané, B., & Darley, J. M. (1970). The unresponsive bystander: Why doesn’t he help? New York: Appleton-Century-Crofts.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-112-psychology-1"
+   ]
+  },
+  {
+   "cite": "Latané et al. (1979)",
+   "ref": "Latané, B., Williams, K., & Harkins, S. (1979). Many hands make light the work: The causes and consequences of social loafing. Journal of Personality and Social Psychology, 37(6), 822–832.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-108-psychology-1"
+   ]
+  },
+  {
+   "cite": "Laub & Sampson (2003)",
+   "ref": "Laub, J. H., & Sampson, R. J. (2003). Shared beginnings, divergent lives: Delinquent boys to age 70. Cambridge, MA: Harvard University Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-110-犯罪學與再犯預測-1",
+    "監獄官-115-犯罪學與再犯預測-1"
+   ]
+  },
+  {
+   "cite": "Laws (1989)",
+   "ref": "Laws, D. R. (Ed.). (1989). Relapse prevention with sex offenders. New York: Guilford Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-110-諮商與矯正輔導-3"
+   ]
+  },
+  {
+   "cite": "Lawton (1990)",
+   "ref": "Lawton, M. P. (1990). Residential environment and self-directedness among older people. American Psychologist, 45(5), 638–640.",
+   "status": "check",
+   "note": "「環境主動假設」較常引用 Lawton (1989), Environmental proactivity in older people, 收錄於 Bengtson & Schaie (Eds.), The course of later life；「環境順從假設」則為 Lawton & Simon (1968)。請以講義核對。",
+   "usedBy": [
+    "police-114-psychology-4"
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.1037/0003-066x.45.5.638",
+     "https://doi.org/10.1093/geront/8.2.108"
+    ],
+    "note": "Lawton (1990), American Psychologist 45(5), 638–640 與 Lawton & Simon (1968), The Gerontologist 8(2), 108–115 已確認；Lawton (1989) 專書章節 Crossref 未收錄。維持原建議。"
+   }
+  },
+  {
+   "cite": "Lawton & Nahemow (1973)",
+   "ref": "Lawton, M. P., & Nahemow, L. (1973). Ecology and the aging process. In C. Eisdorfer & M. P. Lawton (Eds.), The psychology of adult development and aging (pp. 619–674). Washington, DC: American Psychological Association.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-114-psychology-4"
+   ]
+  },
+  {
+   "cite": "Lazarus (1991)",
+   "ref": "Lazarus, R. S. (1991). Emotion and adaptation. New York: Oxford University Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "110-心理學-3",
+    "police-112-psychology-2"
+   ]
+  },
+  {
+   "cite": "Lazarus & Folkman (1984)",
+   "ref": "Lazarus, R. S., & Folkman, S. (1984). Stress, appraisal, and coping. New York: Springer.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "114-心理學-4",
+    "police-111-psychology-1",
+    "police-115-psychology-4"
+   ]
+  },
+  {
+   "cite": "Lemert (1951)",
+   "ref": "Lemert, E. M. (1951). Social pathology: A systematic approach to the theory of sociopathic behavior. New York: McGraw-Hill.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-111-犯罪學與再犯預測-2",
+    "薦任升等（矯正）-110-犯罪學-1",
+    "監所管理員-112-犯罪學概要-3"
+   ]
+  },
+  {
+   "cite": "Lepper et al. (1973)",
+   "ref": "Lepper, M. R., Greene, D., & Nisbett, R. E. (1973). Undermining children’s intrinsic interest with extrinsic reward: A test of the \"overjustification\" hypothesis. Journal of Personality and Social Psychology, 28(1), 129–137.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-109-psychology-4",
+    "109-心理測驗員-心理學-1",
+    "115-家事調查官-心理測驗員-心理學-2"
+   ]
+  },
+  {
+   "cite": "Levine (2010)",
+   "ref": "Levine, P. A. (2010). In an unspoken voice: How the body releases trauma and restores goodness. Berkeley, CA: North Atlantic Books.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-114-諮商與輔導-2"
+   ]
+  },
+  {
+   "cite": "Lewin (1935)",
+   "ref": "Lewin, K. (1935). A dynamic theory of personality. New York: McGraw-Hill.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "113-家事調查官-心理測驗員-心理學-3"
+   ]
+  },
+  {
+   "cite": "Lewin (1936)",
+   "ref": "Lewin, K. (1936). Principles of topological psychology. New York: McGraw-Hill.",
+   "status": "ok",
+   "note": "Lewin 的原公式為 B = f(P, E)；CB = f(P × E) 是犯罪學教材的延伸寫法。",
+   "usedBy": [
+    "監獄官-108-犯罪學與再犯預測-4"
+   ]
+  },
+  {
+   "cite": "Lifton (1961)",
+   "ref": "Lifton, R. J. (1961). Thought reform and the psychology of totalism: A study of \"brainwashing\" in China. New York: W. W. Norton.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-111-psychology-4"
+   ]
+  },
+  {
+   "cite": "Linehan (1993)",
+   "ref": "Linehan, M. M. (1993). Cognitive-behavioral treatment of borderline personality disorder. New York: Guilford Press.",
+   "status": "check",
+   "note": "DEAR MAN、GIVE 出自 1993 年技巧手冊；TIPP 為 Linehan (2015) DBT skills training manual (2nd ed.) 新增，引用 TIPP 時請改引 2015 年版。",
+   "usedBy": [
+    "薦任升等（矯正）-114-諮商與輔導-4",
+    "police-111-counseling-4",
+    "police-114-counseling-4"
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.1177/002076409504100211",
+     "https://doi.org/10.1097/nmd.0000000000000387"
+    ],
+    "note": "兩本手冊本身 Crossref 未收錄；有 1993 年版的書評（1995）與 2015 年第 2 版的書評（Journal of Nervous and Mental Disease 203(11)），可證 2015 年第 2 版存在。維持原建議。"
+   }
+  },
+  {
+   "cite": "Lipsey (2009)",
+   "ref": "Lipsey, M. W. (2009). The primary factors that characterize effective interventions with juvenile offenders: A meta-analytic overview. Victims & Offenders, 4(2), 124–147.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-110-諮商與矯正輔導-2"
+   ]
+  },
+  {
+   "cite": "Loeber et al. (1993)",
+   "ref": "Loeber, R., Wung, P., Keenan, K., et al. (1993). Developmental pathways in disruptive child behavior. Development and Psychopathology, 5(1–2), 103–133.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監所管理員-110-犯罪學概要-3"
+   ]
+  },
+  {
+   "cite": "Loftus (1979)",
+   "ref": "Loftus, E. F. (1979). Eyewitness testimony. Cambridge, MA: Harvard University Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-111-psychology-2"
+   ]
+  },
+  {
+   "cite": "Loftus & Palmer (1974)",
+   "ref": "Loftus, E. F., & Palmer, J. C. (1974). Reconstruction of automobile destruction: An example of the interaction between language and memory. Journal of Verbal Learning and Verbal Behavior, 13(5), 585–589.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "113-心理學-1",
+    "police-111-psychology-2"
+   ]
+  },
+  {
+   "cite": "Lombroso",
+   "ref": "Lombroso, C. (1876). L’uomo delinquente. Milano: Hoepli.",
+   "status": "vague",
+   "note": "原引用未標年份，建議統一為 Lombroso (1876)。",
+   "usedBy": [
+    "112-犯罪學-1"
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄原書。"
+   }
+  },
+  {
+   "cite": "Lombroso (1876)",
+   "ref": "Lombroso, C. (1876). L’uomo delinquente. Milano: Hoepli.",
+   "status": "ok",
+   "note": "完整的犯罪人分類（生來、精神病、偶發、激情）見後續版本及 Lombroso-Ferrero (1911)。",
+   "usedBy": [
+    "監獄官-108-犯罪學與再犯預測-1",
+    "監所管理員-108-犯罪學概要-1",
+    "監所管理員-108-犯罪學概要-2"
+   ]
+  },
+  {
+   "cite": "Maguire & Raynor (2006)",
+   "ref": "Maguire, M., & Raynor, P. (2006). How the resettlement of prisoners promotes desistance from crime: Or does it? Criminology & Criminal Justice, 6(1), 19–38.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-115-犯罪學與再犯預測-1"
+   ]
+  },
+  {
+   "cite": "Main & Solomon (1990)",
+   "ref": "Main, M., & Solomon, J. (1990). Procedures for identifying infants as disorganized/disoriented during the Ainsworth Strange Situation. In M. T. Greenberg, D. Cicchetti, & E. M. Cummings (Eds.), Attachment in the preschool years (pp. 121–160). Chicago: University of Chicago Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "113-家事調查官-心理測驗員-心理學-1"
+   ]
+  },
+  {
+   "cite": "Malchiodi (2005)",
+   "ref": "Malchiodi, C. A. (Ed.). (2005). Expressive therapies. New York: Guilford Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-115-諮商與矯正輔導-3"
+   ]
+  },
+  {
+   "cite": "Marlatt & Gordon (1985)",
+   "ref": "Marlatt, G. A., & Gordon, J. R. (Eds.). (1985). Relapse prevention: Maintenance strategies in the treatment of addictive behaviors. New York: Guilford Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-109-諮商與矯正輔導-2",
+    "監獄官-113-諮商與矯正輔導-3",
+    "監獄官-114-諮商與矯正輔導-4",
+    "薦任升等（矯正）-108-諮商與輔導-1",
+    "police-112-counseling-3"
+   ]
+  },
+  {
+   "cite": "Marlowe (2012)",
+   "ref": "Marlowe, D. B. (2012). Targeting the right participants for adult drug courts (Drug Court Practitioner Fact Sheet, 7(1)). Alexandria, VA: National Drug Court Institute.",
+   "status": "ok",
+   "note": "RANT 工具由 Treatment Research Institute 發展；工具內容請以講義核對。",
+   "usedBy": [
+    "監獄官-109-犯罪學與再犯預測-4",
+    "監獄官-114-犯罪學與再犯預測-4"
+   ]
+  },
+  {
+   "cite": "Marshall et al. (2006)",
+   "ref": "Marshall, W. L., Marshall, L. E., Serran, G. A., & Fernandez, Y. M. (2006). Treating sexual offenders: An integrated approach. New York: Routledge.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-110-諮商與矯正輔導-3"
+   ]
+  },
+  {
+   "cite": "Martin & Pear (2015)",
+   "ref": "Martin, G., & Pear, J. (2015). Behavior modification: What it is and how to do it (10th ed.). Boston: Pearson.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-112-psychology-4"
+   ]
+  },
+  {
+   "cite": "Maruna (2001)",
+   "ref": "Maruna, S. (2001). Making good: How ex-convicts reform and rebuild their lives. Washington, DC: American Psychological Association.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-115-犯罪學與再犯預測-1"
+   ]
+  },
+  {
+   "cite": "Maslow (1954)",
+   "ref": "Maslow, A. H. (1954). Motivation and personality. New York: Harper & Row.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-113-psychology-3"
+   ]
+  },
+  {
+   "cite": "Matza (1964)",
+   "ref": "Matza, D. (1964). Delinquency and drift. New York: Wiley.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "111-犯罪學-4",
+    "police-111-criminology_prevention-2"
+   ]
+  },
+  {
+   "cite": "May (1953)",
+   "ref": "May, R. (1953). Man’s search for himself. New York: W. W. Norton.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-114-諮商與輔導-1"
+   ]
+  },
+  {
+   "cite": "May (1977)",
+   "ref": "May, R. (1977). The meaning of anxiety (Rev. ed.). New York: W. W. Norton.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "109-諮商與輔導-1",
+    "110-諮商與輔導-1"
+   ]
+  },
+  {
+   "cite": "McCauley & Moskalenko (2008)",
+   "ref": "McCauley, C., & Moskalenko, S. (2008). Mechanisms of political radicalization: Pathways toward terrorism. Terrorism and Political Violence, 20(3), 415–433.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-113-criminology_prevention-3"
+   ]
+  },
+  {
+   "cite": "McCrae & Costa (1997)",
+   "ref": "McCrae, R. R., & Costa, P. T., Jr. (1997). Personality trait structure as a human universal. American Psychologist, 52(5), 509–516.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-家事調查官-心理測驗員-心理學-1"
+   ]
+  },
+  {
+   "cite": "McGeoch (1932)",
+   "ref": "McGeoch, J. A. (1932). Forgetting and the law of disuse. Psychological Review, 39(4), 352–370.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-110-psychology-1",
+    "108-心理測驗員-心理學-1"
+   ]
+  },
+  {
+   "cite": "Mednick et al. (1984)",
+   "ref": "Mednick, S. A., Gabrielli, W. F., Jr., & Hutchings, B. (1984). Genetic influences in criminal convictions: Evidence from an adoption cohort. Science, 224(4651), 891–894.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-108-犯罪學與再犯預測-1"
+   ]
+  },
+  {
+   "cite": "Meichenbaum (1977)",
+   "ref": "Meichenbaum, D. (1977). Cognitive-behavior modification: An integrative approach. New York: Plenum.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-109-諮商與矯正輔導-2"
+   ]
+  },
+  {
+   "cite": "Meichenbaum (1985)",
+   "ref": "Meichenbaum, D. (1985). Stress inoculation training. New York: Pergamon.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-109-諮商與矯正輔導-2"
+   ]
+  },
+  {
+   "cite": "Merton (1938)",
+   "ref": "Merton, R. K. (1938). Social structure and anomie. American Sociological Review, 3(5), 672–682.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "114-犯罪學-1",
+    "police-108-criminology_prevention-1",
+    "police-112-criminology_prevention-2"
+   ]
+  },
+  {
+   "cite": "Messick (1995)",
+   "ref": "Messick, S. (1995). Validity of psychological assessment: Validation of inferences from persons’ responses and performances as scientific inquiry into score meaning. American Psychologist, 50(9), 741–749.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "114-心理學-1"
+   ]
+  },
+  {
+   "cite": "Messner & Rosenfeld (1994)",
+   "ref": "Messner, S. F., & Rosenfeld, R. (1994). Crime and the American dream. Belmont, CA: Wadsworth.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-110-犯罪學-2"
+   ]
+  },
+  {
+   "cite": "Messner et al. (1989)",
+   "ref": "Messner, S. F., Krohn, M. D., & Liska, A. E. (Eds.). (1989). Theoretical integration in the study of deviance and crime: Problems and prospects. Albany: State University of New York Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "111-犯罪學-2"
+   ]
+  },
+  {
+   "cite": "Messner, Krohn & Liska (1989)",
+   "ref": "Messner, S. F., Krohn, M. D., & Liska, A. E. (Eds.). (1989). Theoretical integration in the study of deviance and crime: Problems and prospects. Albany: State University of New York Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "111-犯罪學-2"
+   ]
+  },
+  {
+   "cite": "Mill (1859)",
+   "ref": "Mill, J. S. (1859). On liberty. London: John W. Parker and Son.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監所管理員-108-犯罪學概要-3"
+   ]
+  },
+  {
+   "cite": "Miller (1956)",
+   "ref": "Miller, G. A. (1956). The magical number seven, plus or minus two: Some limits on our capacity for processing information. Psychological Review, 63(2), 81–97.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-108-psychology-1"
+   ]
+  },
+  {
+   "cite": "Miller (1958)",
+   "ref": "Miller, W. B. (1958). Lower class culture as a generating milieu of gang delinquency. Journal of Social Issues, 14(3), 5–19.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監所管理員-111-犯罪學概要-1"
+   ]
+  },
+  {
+   "cite": "Miller & Rollnick (2002)",
+   "ref": "Miller, W. R., & Rollnick, S. (2002). Motivational interviewing: Preparing people for change (2nd ed.). New York: Guilford Press.",
+   "status": "ok",
+   "note": "第 3 版 (2013) 改以四歷程（投入、聚焦、喚起、計畫）架構，不再使用「與抗拒共舞」一詞；作答時可註明版本。",
+   "usedBy": [
+    "114-諮商與輔導-4",
+    "監獄官-109-諮商與矯正輔導-1",
+    "監獄官-113-諮商與矯正輔導-3",
+    "police-115-psychology-4",
+    "police-112-counseling-3",
+    "police-113-counseling-2"
+   ]
+  },
+  {
+   "cite": "Miller & Ross (1975)",
+   "ref": "Miller, D. T., & Ross, M. (1975). Self-serving biases in the attribution of causality: Fact or fiction? Psychological Bulletin, 82(2), 213–225.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "114-家事調查官-心理測驗員-心理學-4"
+   ]
+  },
+  {
+   "cite": "Moffitt (1993)",
+   "ref": "Moffitt, T. E. (1993). Adolescence-limited and life-course-persistent antisocial behavior: A developmental taxonomy. Psychological Review, 100(4), 674–701.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-犯罪學-1",
+    "薦任升等（矯正）-112-犯罪學-1",
+    "監所管理員-113-犯罪學概要-1"
+   ]
+  },
+  {
+   "cite": "Moffitt (2018)",
+   "ref": "Moffitt, T. E. (2018). Male antisocial behaviour in adolescence and beyond. Nature Human Behaviour, 2(3), 177–186.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-犯罪學-1"
+   ]
+  },
+  {
+   "cite": "Monroe & Simons (1991)",
+   "ref": "Monroe, S. M., & Simons, A. D. (1991). Diathesis-stress theories in the context of life stress research: Implications for the depressive disorders. Psychological Bulletin, 110(3), 406–425.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "111-心理學-2"
+   ]
+  },
+  {
+   "cite": "Moreno",
+   "ref": "Moreno, J. L. (1946). Psychodrama (Vol. 1). Beacon, NY: Beacon House.",
+   "status": "vague",
+   "note": "原引用未標年份。",
+   "usedBy": [
+    "police-110-counseling-3"
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.1097/00006842-194705000-00014"
+    ],
+    "note": "原書未收錄；1947 年書評（Psychosomatic Medicine 9(3)）可證 Beacon House 1946 年出版、429 頁。"
+   }
+  },
+  {
+   "cite": "Morris & Peng (1994)",
+   "ref": "Morris, M. W., & Peng, K. (1994). Culture and cause: American and Chinese attributions for social and physical events. Journal of Personality and Social Psychology, 67(6), 949–971.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "114-家事調查官-心理測驗員-心理學-4"
+   ]
+  },
+  {
+   "cite": "Mosak & Maniacci",
+   "ref": "Mosak, H. H., & Maniacci, M. (1999). A primer of Adlerian psychology: The analytic-behavioral-cognitive psychology of Alfred Adler. Philadelphia: Brunner/Mazel.",
+   "status": "vague",
+   "note": "原引用未標年份與書名。",
+   "usedBy": [
+    "監獄官-114-諮商與矯正輔導-1",
+    "police-108-counseling-2"
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.4324/9780203768518"
+    ],
+    "note": "1999 年原版未收錄；Routledge 2013 年重新發行並有 DOI。"
+   }
+  },
+  {
+   "cite": "Moscovici & Zavalloni (1969)",
+   "ref": "Moscovici, S., & Zavalloni, M. (1969). The group as a polarizer of attitudes. Journal of Personality and Social Psychology, 12(2), 125–135.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "114-心理學-2"
+   ]
+  },
+  {
+   "cite": "Murray (1943)",
+   "ref": "Murray, H. A. (1943). Thematic Apperception Test manual. Cambridge, MA: Harvard University Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-112-psychology-3"
+   ]
+  },
+  {
+   "cite": "Myers & Lamm (1976)",
+   "ref": "Myers, D. G., & Lamm, H. (1976). The group polarization phenomenon. Psychological Bulletin, 83(4), 602–627.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "110-心理測驗員-心理學-4"
+   ]
+  },
+  {
+   "cite": "Nagin (2013)",
+   "ref": "Nagin, D. S. (2013). Deterrence in the twenty-first century. Crime and Justice, 42(1), 199–263.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-111-criminology_prevention-4"
+   ]
+  },
+  {
+   "cite": "Neff (2003)",
+   "ref": "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-112-counseling-4"
+   ]
+  },
+  {
+   "cite": "Neisser (1967)",
+   "ref": "Neisser, U. (1967). Cognitive psychology. New York: Appleton-Century-Crofts.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-108-psychology-2"
+   ]
+  },
+  {
+   "cite": "Neisser et al. (1996)",
+   "ref": "Neisser, U., Boodoo, G., Bouchard, T. J., Jr., et al. (1996). Intelligence: Knowns and unknowns. American Psychologist, 51(2), 77–101.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "111-心理學-4"
+   ]
+  },
+  {
+   "cite": "Newman (1972)",
+   "ref": "Newman, O. (1972). Defensible space: Crime prevention through urban design. New York: Macmillan.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監所管理員-113-犯罪學概要-3"
+   ]
+  },
+  {
+   "cite": "NIDA (2018)",
+   "ref": "National Institute on Drug Abuse. (2018). Drugs, brains, and behavior: The science of addiction. Bethesda, MD: NIDA.",
+   "status": "ok",
+   "note": "NIDA 網頁版會不定期更新，引用時可註明檢索日期。",
+   "usedBy": [
+    "113-家事調查官-心理測驗員-心理學-2"
+   ]
+  },
+  {
+   "cite": "Nock (2010)",
+   "ref": "Nock, M. K. (2010). Self-injury. Annual Review of Clinical Psychology, 6, 339–363.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-111-counseling-4"
+   ]
+  },
+  {
+   "cite": "Novaco (1975)",
+   "ref": "Novaco, R. W. (1975). Anger control: The development and evaluation of an experimental treatment. Lexington, MA: Lexington Books.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-112-諮商與矯正輔導-3",
+    "薦任升等（矯正）-110-諮商與輔導-2"
+   ]
+  },
+  {
+   "cite": "Osborn (1953)",
+   "ref": "Osborn, A. F. (1953). Applied imagination: Principles and procedures of creative thinking. New York: Scribner.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "114-心理學-3"
+   ]
+  },
+  {
+   "cite": "Park & Burgess (1925)",
+   "ref": "Park, R. E., Burgess, E. W., & McKenzie, R. D. (1925). The city. Chicago: University of Chicago Press.",
+   "status": "ok",
+   "note": "1926 年書評只列 Park 與 Burgess 為作者，原引用屬通行寫法；McKenzie 撰有其中一章，要列三人亦可。",
+   "usedBy": [
+    "police-108-criminology_prevention-1"
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.1177/000271622612400158",
+     "https://doi.org/10.1002/ncr.4110150514"
+    ],
+    "note": "專書 Crossref 未收錄；1926 年兩篇書評（ANNALS 124、National Municipal Review 15）都只列 Park 與 Burgess 為作者，因此原引用 Park & Burgess (1925) 是當時通行寫法，不算錯誤；McKenzie 撰有其中一章，要列三人亦可。已改為「書目已確認」。"
+   }
+  },
+  {
+   "cite": "Pavlov (1927)",
+   "ref": "Pavlov, I. P. (1927). Conditioned reflexes (G. V. Anrep, Trans.). London: Oxford University Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-115-psychology-2"
+   ]
+  },
+  {
+   "cite": "Pittenger (1993)",
+   "ref": "Pittenger, D. J. (1993). The utility of the Myers-Briggs Type Indicator. Review of Educational Research, 63(4), 467–488.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-家事調查官-心理測驗員-心理學-1"
+   ]
+  },
+  {
+   "cite": "Plomin (1990)",
+   "ref": "Plomin, R. (1990). Nature and nurture: An introduction to human behavioral genetics. Pacific Grove, CA: Brooks/Cole.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-110-psychology-3"
+   ]
+  },
+  {
+   "cite": "Popham (1978)",
+   "ref": "Popham, W. J. (1978). Criterion-referenced measurement. Englewood Cliffs, NJ: Prentice-Hall.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-114-心理測驗-3"
+   ]
+  },
+  {
+   "cite": "Pranis",
+   "ref": "Pranis, K., Stuart, B., & Wedge, M. (2003). Peacemaking circles: From crime to community. St. Paul, MN: Living Justice Press.",
+   "status": "vague",
+   "note": "原引用只有姓氏。",
+   "usedBy": [
+    "監獄官-115-犯罪學與再犯預測-4"
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄此書。"
+   }
+  },
+  {
+   "cite": "Premack (1959)",
+   "ref": "Premack, D. (1959). Toward empirical behavior laws: I. Positive reinforcement. Psychological Review, 66(4), 219–233.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-110-psychology-3"
+   ]
+  },
+  {
+   "cite": "Prochaska & DiClemente (1982)",
+   "ref": "Prochaska, J. O., & DiClemente, C. C. (1982). Transtheoretical therapy: Toward a more integrative model of change. Psychotherapy: Theory, Research & Practice, 19(3), 276–288.",
+   "status": "check",
+   "note": "1982 年原始模式只有懼思、沉思、行動、維持四期；含「準備期」的五階段模式見 Prochaska, DiClemente, & Norcross (1992), American Psychologist, 47(9), 1102–1114，引用五階段時建議並列。",
+   "usedBy": [
+    "監獄官-109-諮商與矯正輔導-1",
+    "監獄官-113-諮商與矯正輔導-3"
+   ],
+   "crossref": {
+    "result": "found",
+    "evidence": [
+     "https://doi.org/10.1037/h0088437",
+     "https://doi.org/10.1037/0003-066x.47.9.1102"
+    ],
+    "note": "1982 年原文與 Prochaska, DiClemente, & Norcross (1992) 都已確認。維持原建議：引用五階段時並列 1992 年文獻。"
+   }
+  },
+  {
+   "cite": "Quinney (1970)",
+   "ref": "Quinney, R. (1970). The social reality of crime. Boston: Little, Brown.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "110-犯罪學-1"
+   ]
+  },
+  {
+   "cite": "Raine (2013)",
+   "ref": "Raine, A. (2013). The anatomy of violence: The biological roots of crime. New York: Pantheon.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-心理學-2",
+    "監獄官-108-犯罪學與再犯預測-1"
+   ]
+  },
+  {
+   "cite": "Ratcliffe (2016)",
+   "ref": "Ratcliffe, J. H. (2016). Intelligence-led policing (2nd ed.). London: Routledge.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-109-criminology_prevention-3"
+   ]
+  },
+  {
+   "cite": "Ratts et al. (2016)",
+   "ref": "Ratts, M. J., Singh, A. A., Nassar-McMillan, S., Butler, S. K., & McCullough, J. R. (2016). Multicultural and social justice counseling competencies: Guidelines for the counseling profession. Journal of Multicultural Counseling and Development, 44(1), 28–48.",
+   "status": "ok",
+   "note": "四個發展領域：諮商師自我覺察、案主世界觀、諮商關係、諮商與倡議介入。",
+   "usedBy": [
+    "110-諮商與輔導-2"
+   ]
+  },
+  {
+   "cite": "Regoli & Hewitt (2001)",
+   "ref": "Regoli, R. M., & Hewitt, J. D. (2000). Delinquency in society (4th ed.). Boston: McGraw-Hill.",
+   "status": "check",
+   "note": "查無 2001 年版；第 4 版為 2000 年、第 3 版為 1997 年。理論的期刊版另見 Kingston, Regoli, & Hewitt (2003), Critical Criminology, 11(3), 237–260。請依講義版次修正年份。",
+   "usedBy": [
+    "police-113-criminology_prevention-2"
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.1023/b:crit.0000005812.05228.78"
+    ],
+    "note": "教科書各版 Crossref 未收錄，無法確認有無 2001 年版；期刊版 Kingston, Regoli, & Hewitt (2003), Critical Criminology 11(3), 237–260 已確認。維持原建議。"
+   }
+  },
+  {
+   "cite": "Reicher, Spears & Postmes (1995)",
+   "ref": "Reicher, S. D., Spears, R., & Postmes, T. (1995). A social identity model of deindividuation phenomena. European Review of Social Psychology, 6(1), 161–198.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "111-心理學-3"
+   ]
+  },
+  {
+   "cite": "Rizzolatti et al. (1996)",
+   "ref": "Rizzolatti, G., Fadiga, L., Gallese, V., & Fogassi, L. (1996). Premotor cortex and the recognition of motor actions. Cognitive Brain Research, 3(2), 131–141.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-108-psychology-1",
+    "110-心理測驗員-心理學-2"
+   ]
+  },
+  {
+   "cite": "Robinson & Berridge (1993)",
+   "ref": "Robinson, T. E., & Berridge, K. C. (1993). The neural basis of drug craving: An incentive-sensitization theory of addiction. Brain Research Reviews, 18(3), 247–291.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "109-心理學-3"
+   ]
+  },
+  {
+   "cite": "Roediger & Karpicke (2006)",
+   "ref": "Roediger, H. L., III, & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "109-心理測驗員-心理學-4"
+   ]
+  },
+  {
+   "cite": "Rogers (1957)",
+   "ref": "Rogers, C. R. (1957). The necessary and sufficient conditions of therapeutic personality change. Journal of Consulting Psychology, 21(2), 95–103.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "111-諮商與輔導-4",
+    "監獄官-111-諮商與矯正輔導-1",
+    "監獄官-113-諮商與矯正輔導-1",
+    "薦任升等（矯正）-110-諮商與輔導-2",
+    "薦任升等（矯正）-110-諮商與輔導-4",
+    "薦任升等（矯正）-114-諮商與輔導-3",
+    "police-111-counseling-1",
+    "police-112-counseling-4",
+    "police-114-counseling-1"
+   ]
+  },
+  {
+   "cite": "Rogers (1970)",
+   "ref": "Rogers, C. R. (1970). Carl Rogers on encounter groups. New York: Harper & Row.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-108-counseling-4",
+    "police-110-counseling-3"
+   ]
+  },
+  {
+   "cite": "Room et al. (2010)",
+   "ref": "Room, R., Fischer, B., Hall, W., Lenton, S., & Reuter, P. (2010). Cannabis policy: Moving beyond stalemate. Oxford: Oxford University Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-113-criminology_prevention-4"
+   ]
+  },
+  {
+   "cite": "Rorschach (1921)",
+   "ref": "Rorschach, H. (1921). Psychodiagnostik. Bern: Bircher.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-112-psychology-3"
+   ]
+  },
+  {
+   "cite": "Rosenberg & Hovland (1960)",
+   "ref": "Rosenberg, M. J., & Hovland, C. I. (1960). Cognitive, affective, and behavioral components of attitudes. In C. I. Hovland & M. J. Rosenberg (Eds.), Attitude organization and change (pp. 1–14). New Haven, CT: Yale University Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "108-心理學-1"
+   ]
+  },
+  {
+   "cite": "Ross (1977)",
+   "ref": "Ross, L. (1977). The intuitive psychologist and his shortcomings: Distortions in the attribution process. Advances in Experimental Social Psychology, 10, 173–220.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "114-家事調查官-心理測驗員-心理學-4"
+   ]
+  },
+  {
+   "cite": "Rossi",
+   "ref": "Rossi, P. (1829). Traité de droit pénal. Genève / Paris.",
+   "status": "vague",
+   "note": "原引用只有姓氏；新古典學派代表人物的列法請以講義核對。",
+   "usedBy": [
+    "police-110-criminology_prevention-2"
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄。"
+   }
+  },
+  {
+   "cite": "Saleebey (1992)",
+   "ref": "Saleebey, D. (Ed.). (1992). The strengths perspective in social work practice. New York: Longman.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "108-諮商與輔導-1",
+    "監獄官-112-諮商與矯正輔導-1"
+   ]
+  },
+  {
+   "cite": "SAMHSA (2014)",
+   "ref": "Substance Abuse and Mental Health Services Administration. (2014). SAMHSA’s concept of trauma and guidance for a trauma-informed approach (HHS Publication No. SMA 14-4884). Rockville, MD: SAMHSA.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-114-諮商與矯正輔導-2"
+   ]
+  },
+  {
+   "cite": "Sampson (1993)",
+   "ref": "Sampson, R. J. (1993). The community context of violent victimization and offending. In W. J. Wilson (Ed.), Sociology and the public agenda (pp. 259–286). Newbury Park, CA: Sage.",
+   "status": "ok",
+   "note": "請以講義核對所指篇章。",
+   "usedBy": [
+    "police-108-criminology_prevention-2"
+   ]
+  },
+  {
+   "cite": "Sampson & Laub (1993)",
+   "ref": "Sampson, R. J., & Laub, J. H. (1993). Crime in the making: Pathways and turning points through life. Cambridge, MA: Harvard University Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "109-犯罪學-3",
+    "115-心理學-2",
+    "薦任升等（矯正）-112-犯罪學-1",
+    "薦任升等（矯正）-114-犯罪學-1",
+    "監所管理員-113-犯罪學概要-1"
+   ]
+  },
+  {
+   "cite": "Sampson et al. (1997)",
+   "ref": "Sampson, R. J., Raudenbush, S. W., & Earls, F. (1997). Neighborhoods and violent crime: A multilevel study of collective efficacy. Science, 277(5328), 918–924.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "110-犯罪學-2",
+    "113-犯罪學-3",
+    "police-108-criminology_prevention-2"
+   ]
+  },
+  {
+   "cite": "Sampson, Raudenbush & Earls (1997)",
+   "ref": "Sampson, R. J., Raudenbush, S. W., & Earls, F. (1997). Neighborhoods and violent crime: A multilevel study of collective efficacy. Science, 277(5328), 918–924.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "110-犯罪學-2"
+   ]
+  },
+  {
+   "cite": "Schacter (1987)",
+   "ref": "Schacter, D. L. (1987). Implicit memory: History and current status. Journal of Experimental Psychology: Learning, Memory, and Cognition, 13(3), 501–518.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-110-psychology-3"
+   ]
+  },
+  {
+   "cite": "Schacter (2001)",
+   "ref": "Schacter, D. L. (2001). The seven sins of memory: How the mind forgets and remembers. Boston: Houghton Mifflin.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "108-心理測驗員-心理學-1"
+   ]
+  },
+  {
+   "cite": "Schein (1961)",
+   "ref": "Schein, E. H. (1961). Coercive persuasion: A socio-psychological analysis of the \"brainwashing\" of American civilian prisoners by the Chinese communists. New York: W. W. Norton.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-111-psychology-4"
+   ]
+  },
+  {
+   "cite": "Schneider (1923)",
+   "ref": "Schneider, K. (1923). Die psychopathischen Persönlichkeiten. Leipzig: Deuticke.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-114-criminology_prevention-1"
+   ]
+  },
+  {
+   "cite": "Schore (2001)",
+   "ref": "Schore, A. N. (2001). The effects of early relational trauma on right brain development, affect regulation, and infant mental health. Infant Mental Health Journal, 22(1–2), 201–269.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "113-家事調查官-心理測驗員-心理學-1"
+   ]
+  },
+  {
+   "cite": "Schur (1965)",
+   "ref": "Schur, E. M. (1965). Crimes without victims: Deviant behavior and public policy. Englewood Cliffs, NJ: Prentice-Hall.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-111-criminology_prevention-4",
+    "監所管理員-108-犯罪學概要-3"
+   ]
+  },
+  {
+   "cite": "Schwarz & Clore (1983)",
+   "ref": "Schwarz, N., & Clore, G. L. (1983). Mood, misattribution, and judgments of well-being: Informative and directive functions of affective states. Journal of Personality and Social Psychology, 45(3), 513–523.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-108-psychology-4"
+   ]
+  },
+  {
+   "cite": "Segal, Williams, & Teasdale (2002)",
+   "ref": "Segal, Z. V., Williams, J. M. G., & Teasdale, J. D. (2002). Mindfulness-based cognitive therapy for depression: A new approach to preventing relapse. New York: Guilford Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-112-諮商與輔導-2"
+   ]
+  },
+  {
+   "cite": "Selfridge (1959)",
+   "ref": "Selfridge, O. G. (1959). Pandemonium: A paradigm for learning. In Mechanisation of thought processes (pp. 511–529). London: H. M. Stationery Office.",
+   "status": "ok",
+   "note": "B／13 歧義圖的情境效果經典研究為 Bruner & Minturn (1955)，舉此例時可並列。",
+   "usedBy": [
+    "police-108-psychology-2"
+   ]
+  },
+  {
+   "cite": "Seligman (1975)",
+   "ref": "Seligman, M. E. P. (1975). Helplessness: On depression, development, and death. San Francisco: W. H. Freeman.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "109-心理學-2"
+   ]
+  },
+  {
+   "cite": "Seligman (2011)",
+   "ref": "Seligman, M. E. P. (2011). Flourish: A visionary new understanding of happiness and well-being. New York: Free Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "113-心理學-4"
+   ]
+  },
+  {
+   "cite": "Seligman & Maier (1967)",
+   "ref": "Seligman, M. E. P., & Maier, S. F. (1967). Failure to escape traumatic shock. Journal of Experimental Psychology, 74(1), 1–9.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "109-心理學-2"
+   ]
+  },
+  {
+   "cite": "Seligman et al. (2009)",
+   "ref": "Seligman, M. E. P., Ernst, R. M., Gillham, J., Reivich, K., & Linkins, M. (2009). Positive education: Positive psychology and classroom interventions. Oxford Review of Education, 35(3), 293–311.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "113-心理學-4"
+   ]
+  },
+  {
+   "cite": "Sellin (1938)",
+   "ref": "Sellin, T. (1938). Culture conflict and crime. New York: Social Science Research Council.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監所管理員-113-犯罪學概要-2"
+   ]
+  },
+  {
+   "cite": "Selye (1956)",
+   "ref": "Selye, H. (1956). The stress of life. New York: McGraw-Hill.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "114-心理學-4",
+    "police-111-psychology-1"
+   ]
+  },
+  {
+   "cite": "Shaw & McKay (1942)",
+   "ref": "Shaw, C. R., & McKay, H. D. (1942). Juvenile delinquency and urban areas. Chicago: University of Chicago Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "110-犯罪學-2",
+    "114-犯罪學-1",
+    "police-108-criminology_prevention-1"
+   ]
+  },
+  {
+   "cite": "Sheldon (1949)",
+   "ref": "Sheldon, W. H. (1949). Varieties of delinquent youth: An introduction to constitutional psychiatry. New York: Harper.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-108-犯罪學與再犯預測-1"
+   ]
+  },
+  {
+   "cite": "Sherman et al. (1989)",
+   "ref": "Sherman, L. W., Gartin, P. R., & Buerger, M. E. (1989). Hot spots of predatory crime: Routine activities and the criminology of place. Criminology, 27(1), 27–56.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-109-criminology_prevention-1"
+   ]
+  },
+  {
+   "cite": "Shonkoff et al. (2012)",
+   "ref": "Shonkoff, J. P., Garner, A. S., et al. (2012). The lifelong effects of early childhood adversity and toxic stress. Pediatrics, 129(1), e232–e246.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "112-心理學-3"
+   ]
+  },
+  {
+   "cite": "Short & Nye (1957)",
+   "ref": "Short, J. F., Jr., & Nye, F. I. (1957). Reported behavior as a criterion of deviant behavior. Social Problems, 5(3), 207–213.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監所管理員-109-犯罪學概要-1"
+   ]
+  },
+  {
+   "cite": "Siegel (2018)",
+   "ref": "Siegel, L. J. (2018). Criminology: Theories, patterns, and typologies (13th ed.). Boston: Cengage Learning.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-114-犯罪學-1",
+    "police-110-criminology_prevention-2",
+    "police-110-criminology_prevention-4",
+    "police-111-criminology_prevention-2",
+    "police-112-criminology_prevention-1",
+    "police-112-criminology_prevention-3",
+    "police-115-criminology_prevention-3",
+    "監所管理員-108-犯罪學概要-1",
+    "監所管理員-108-犯罪學概要-2",
+    "監所管理員-109-犯罪學概要-1",
+    "監所管理員-109-犯罪學概要-2",
+    "監所管理員-110-犯罪學概要-2",
+    "監所管理員-112-犯罪學概要-1",
+    "監所管理員-112-犯罪學概要-3",
+    "監所管理員-113-犯罪學概要-1"
+   ]
+  },
+  {
+   "cite": "Siegel, Criminology",
+   "ref": "Siegel, L. J. (2018). Criminology: Theories, patterns, and typologies (13th ed.). Boston: Cengage Learning.",
+   "status": "vague",
+   "note": "原引用未標年份與版次；建議與其他題目統一為 Siegel (2018)。",
+   "usedBy": [
+    "108-犯罪學-4"
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄此教科書。"
+   }
+  },
+  {
+   "cite": "Simons & Chabris (1999)",
+   "ref": "Simons, D. J., & Chabris, C. F. (1999). Gorillas in our midst: Sustained inattentional blindness for dynamic events. Perception, 28(9), 1059–1074.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-家事調查官-心理測驗員-心理學-3"
+   ]
+  },
+  {
+   "cite": "Singer & Klimecki (2014)",
+   "ref": "Singer, T., & Klimecki, O. M. (2014). Empathy and compassion. Current Biology, 24(18), R875–R878.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-112-counseling-4"
+   ]
+  },
+  {
+   "cite": "Skinner (1953)",
+   "ref": "Skinner, B. F. (1953). Science and human behavior. New York: Macmillan.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-108-psychology-3",
+    "police-112-psychology-4",
+    "police-115-psychology-2",
+    "police-109-counseling-1",
+    "109-心理測驗員-心理學-1"
+   ]
+  },
+  {
+   "cite": "Skogan (2006)",
+   "ref": "Skogan, W. G. (2006). Police and community in Chicago: A tale of three cities. New York: Oxford University Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-109-criminology_prevention-3"
+   ]
+  },
+  {
+   "cite": "Smith et al. (2012)",
+   "ref": "Smith, H. J., Pettigrew, T. F., Pippin, G. M., & Bialosiewicz, S. (2012). Relative deprivation: A theoretical and meta-analytic review. Personality and Social Psychology Review, 16(3), 203–232.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-家事調查官-心理測驗員-心理學-4"
+   ]
+  },
+  {
+   "cite": "Sparks (1981)",
+   "ref": "Sparks, R. F. (1981). Multiple victimization: Evidence, theory, and future research. Journal of Criminal Law and Criminology, 72(2), 762–778.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-109-criminology_prevention-4"
+   ]
+  },
+  {
+   "cite": "Sperry & Sperry (2012)",
+   "ref": "Sperry, L., & Sperry, J. (2012). Case conceptualization: Mastering this competency with ease and confidence. New York: Routledge.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-諮商與輔導-4"
+   ]
+  },
+  {
+   "cite": "Squire (1987)",
+   "ref": "Squire, L. R. (1987). Memory and brain. New York: Oxford University Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-110-psychology-1"
+   ]
+  },
+  {
+   "cite": "Stark (1987)",
+   "ref": "Stark, R. (1987). Deviant places: A theory of the ecology of crime. Criminology, 25(4), 893–910.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-113-犯罪學與再犯預測-2"
+   ]
+  },
+  {
+   "cite": "Stasser & Titus (1985)",
+   "ref": "Stasser, G., & Titus, W. (1985). Pooling of unshared information in group decision making: Biased information sampling during discussion. Journal of Personality and Social Psychology, 48(6), 1467–1478.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "110-心理測驗員-心理學-4"
+   ]
+  },
+  {
+   "cite": "Steinberg (2008)",
+   "ref": "Steinberg, L. (2008). A social neuroscience perspective on adolescent risk-taking. Developmental Review, 28(1), 78–106.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "113-家事調查官-心理測驗員-心理學-4"
+   ]
+  },
+  {
+   "cite": "Sternberg (1985, 1997)",
+   "ref": "Sternberg, R. J. (1985). Beyond IQ: A triarchic theory of human intelligence. New York: Cambridge University Press.／Sternberg, R. J. (1997). Successful intelligence. New York: Plume.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "113-心理學-3"
+   ]
+  },
+  {
+   "cite": "Sternberg (1997)",
+   "ref": "Sternberg, R. J. (1997). Successful intelligence: How practical and creative intelligence determine success in life. New York: Plume.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "113-心理學-3"
+   ]
+  },
+  {
+   "cite": "Stoner (1961)",
+   "ref": "Stoner, J. A. F. (1961). A comparison of individual and group decisions involving risk (Unpublished master’s thesis). Massachusetts Institute of Technology.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "114-心理學-2"
+   ]
+  },
+  {
+   "cite": "Strayer & Johnston (2001)",
+   "ref": "Strayer, D. L., & Johnston, W. A. (2001). Driven to distraction: Dual-task studies of simulated driving and conversing on a cellular telephone. Psychological Science, 12(6), 462–466.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-家事調查官-心理測驗員-心理學-3"
+   ]
+  },
+  {
+   "cite": "Sue et al. (1992)",
+   "ref": "Sue, D. W., Arredondo, P., & McDavis, R. J. (1992). Multicultural counseling competencies and standards: A call to the profession. Journal of Counseling & Development, 70(4), 477–486.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "110-諮商與輔導-2"
+   ]
+  },
+  {
+   "cite": "Sue, Arredondo & McDavis (1992)",
+   "ref": "Sue, D. W., Arredondo, P., & McDavis, R. J. (1992). Multicultural counseling competencies and standards: A call to the profession. Journal of Counseling & Development, 70(4), 477–486.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "110-諮商與輔導-2"
+   ]
+  },
+  {
+   "cite": "Suler (2004)",
+   "ref": "Suler, J. (2004). The online disinhibition effect. CyberPsychology & Behavior, 7(3), 321–326.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "112-諮商與輔導-3"
+   ]
+  },
+  {
+   "cite": "Super (1980)",
+   "ref": "Super, D. E. (1980). A life-span, life-space approach to career development. Journal of Vocational Behavior, 16(3), 282–298.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "113-諮商與輔導-1",
+    "監獄官-112-諮商與矯正輔導-4",
+    "police-109-counseling-3",
+    "police-112-counseling-1",
+    "police-115-counseling-3"
+   ]
+  },
+  {
+   "cite": "Sutherland (1939, 1947)",
+   "ref": "Sutherland, E. H. (1939). Principles of criminology (3rd ed.). Philadelphia: Lippincott.／Sutherland, E. H. (1947). Principles of criminology (4th ed.). Philadelphia: Lippincott.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "109-犯罪學-1"
+   ]
+  },
+  {
+   "cite": "Sutherland (1947)",
+   "ref": "Sutherland, E. H. (1947). Principles of criminology (4th ed.). Philadelphia: Lippincott.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "109-犯罪學-1",
+    "police-108-criminology_prevention-3",
+    "police-110-criminology_prevention-4"
+   ]
+  },
+  {
+   "cite": "Sykes & Matza (1957)",
+   "ref": "Sykes, G. M., & Matza, D. (1957). Techniques of neutralization: A theory of delinquency. American Sociological Review, 22(6), 664–670.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "111-犯罪學-4",
+    "police-111-criminology_prevention-2"
+   ]
+  },
+  {
+   "cite": "Tarasoff v. Regents (1976)",
+   "ref": "Tarasoff v. Regents of the University of California, 17 Cal. 3d 425, 551 P.2d 334 (Cal. 1976).",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-108-諮商與輔導-4"
+   ]
+  },
+  {
+   "cite": "Taxman et al.",
+   "ref": "Taxman, F. S., Pattavina, A., Caudy, M. S., Byrne, J., & Durso, J. (2013). The empirical basis for the RNR model with an updated RNR conceptual framework. In F. S. Taxman & A. Pattavina (Eds.), Simulation strategies to reduce recidivism (pp. 73–111). New York: Springer.",
+   "status": "vague",
+   "note": "原引用未標年份；RNR 模擬工具的出處請以講義核對。",
+   "usedBy": [
+    "監獄官-111-犯罪學與再犯預測-3"
+   ],
+   "crossref": {
+    "result": "found",
+    "evidence": [
+     "https://doi.org/10.1007/978-1-4614-6188-3_4"
+    ],
+    "note": "已確認：收錄於 Springer《Simulation Strategies to Reduce Recidivism》(2013), pp. 73–111。"
+   }
+  },
+  {
+   "cite": "Temoshok (1990)",
+   "ref": "Temoshok, L. (1987). Personality, coping style, emotion and cancer: Towards an integrative model. Cancer Surveys, 6(3), 545–567.",
+   "status": "check",
+   "note": "C 型性格的代表文獻通常為 Temoshok (1987) 或 Temoshok & Dreher (1992) The Type C connection；1990 年的出處無法確認，請以講義核對。",
+   "usedBy": [
+    "108-心理學-2"
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 查無 Temoshok 1990 年談 C 型性格的文獻（1990 年只有 HIV 相關論文）；Temoshok (1987) 刊於 Cancer Surveys，該刊未收錄於 Crossref。維持原建議。"
+   }
+  },
+  {
+   "cite": "Teyber & Holmes (2017)",
+   "ref": "Teyber, E., & Teyber, F. H. (2017). Interpersonal process in therapy: An integrative model (7th ed.). Boston: Cengage Learning.",
+   "status": "check",
+   "note": "經查第 7 版作者為 Edward Teyber 與 Faith Holmes Teyber（出版商頁面），一般寫作 Teyber & Teyber (2017)；題目中的「Holmes」即第二作者。",
+   "usedBy": [
+    "監獄官-111-諮商與矯正輔導-3"
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.1037/a0036579"
+    ],
+    "note": "第 7 版專書 Crossref 未收錄。兩人合著的 2014 年論文（Psychotherapy 51(3), 334–341）登錄的第二作者姓名為 Faith McClure Teyber，與先前「Faith Holmes Teyber」的記載不同，題目中的「Holmes」來源請再以書本版權頁核對；改寫為 Teyber & Teyber (2017) 的建議不變。"
+   }
+  },
+  {
+   "cite": "Thornberry et al. (1993)",
+   "ref": "Thornberry, T. P., Krohn, M. D., Lizotte, A. J., & Chard-Wierschem, D. (1993). The role of juvenile gangs in facilitating delinquent behavior. Journal of Research in Crime and Delinquency, 30(1), 55–87.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-111-犯罪學與再犯預測-1"
+   ]
+  },
+  {
+   "cite": "Thrasher (1927)",
+   "ref": "Thrasher, F. M. (1927). The gang: A study of 1,313 gangs in Chicago. Chicago: University of Chicago Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-108-犯罪學-3"
+   ]
+  },
+  {
+   "cite": "Tittle (1995)",
+   "ref": "Tittle, C. R. (1995). Control balance: Toward a general theory of deviance. Boulder, CO: Westview.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "111-犯罪學-3"
+   ]
+  },
+  {
+   "cite": "Tolman (1948)",
+   "ref": "Tolman, E. C. (1948). Cognitive maps in rats and men. Psychological Review, 55(4), 189–208.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "110-心理測驗員-心理學-1"
+   ]
+  },
+  {
+   "cite": "Trotter (2015)",
+   "ref": "Trotter, C. (2015). Working with involuntary clients: A guide to practice (3rd ed.). London: Routledge.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-111-諮商與矯正輔導-1",
+    "監獄官-112-諮商與矯正輔導-2",
+    "薦任升等（矯正）-110-諮商與輔導-4",
+    "police-113-counseling-2"
+   ]
+  },
+  {
+   "cite": "Tulving (1974)",
+   "ref": "Tulving, E. (1974). Cue-dependent forgetting. American Scientist, 62(1), 74–82.",
+   "status": "ok",
+   "note": "編碼特定原則另見 Tulving & Thomson (1973)；舌尖現象見 Brown & McNeill (1966)。",
+   "usedBy": [
+    "police-110-psychology-1",
+    "police-111-psychology-2",
+    "108-心理測驗員-心理學-1"
+   ]
+  },
+  {
+   "cite": "Tversky & Kahneman (1973)",
+   "ref": "Tversky, A., & Kahneman, D. (1973). Availability: A heuristic for judging frequency and probability. Cognitive Psychology, 5(2), 207–232.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "113-心理學-2"
+   ]
+  },
+  {
+   "cite": "Uchtenhagen (2011)",
+   "ref": "Uchtenhagen, A. (2011). Heroin maintenance treatment: From idea to research to practice. Drug and Alcohol Review, 30(2), 130–137.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-108-諮商與輔導-2"
+   ]
+  },
+  {
+   "cite": "UNODC",
+   "ref": "United Nations Office on Drugs and Crime. (2023). Global study on homicide 2023. Vienna: UNODC.",
+   "status": "vague",
+   "note": "原引用未標文件名稱與年份；官方統計可引 UNODC 犯罪趨勢調查 (UN-CTS) 或全球殺人研究報告，請依講義所指補上。",
+   "usedBy": [
+    "police-111-criminology_prevention-1"
+   ],
+   "crossref": {
+    "result": "found",
+    "evidence": [
+     "https://doi.org/10.18356/9789213587386"
+    ],
+    "note": "已確認：United Nations 出版，2023 年。"
+   }
+  },
+  {
+   "cite": "Vaillant (1977)",
+   "ref": "Vaillant, G. E. (1977). Adaptation to life. Boston: Little, Brown.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-110-psychology-4"
+   ]
+  },
+  {
+   "cite": "van Dijk et al. (2007)",
+   "ref": "van Dijk, J., van Kesteren, J., & Smit, P. (2007). Criminal victimisation in international perspective: Key findings from the 2004–2005 ICVS and EU ICS. The Hague: WODC.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-111-criminology_prevention-1"
+   ]
+  },
+  {
+   "cite": "Vandenberg & Lance (2000)",
+   "ref": "Vandenberg, R. J., & Lance, C. E. (2000). A review and synthesis of the measurement invariance literature: Suggestions, practices, and recommendations for organizational research. Organizational Research Methods, 3(1), 4–70.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-114-心理測驗-2"
+   ]
+  },
+  {
+   "cite": "Vogel et al. (2014)",
+   "ref": "Vogel, E. A., Rose, J. P., Roberts, L. R., & Eckles, K. (2014). Social comparison, social media, and self-esteem. Psychology of Popular Media Culture, 3(4), 206–222.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-家事調查官-心理測驗員-心理學-4"
+   ]
+  },
+  {
+   "cite": "Wahba & Bridwell (1976)",
+   "ref": "Wahba, M. A., & Bridwell, L. G. (1976). Maslow reconsidered: A review of research on the need hierarchy theory. Organizational Behavior and Human Performance, 15(2), 212–240.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-113-psychology-3"
+   ]
+  },
+  {
+   "cite": "Walker (1979)",
+   "ref": "Walker, L. E. (1979). The battered woman. New York: Harper & Row.",
+   "status": "ok",
+   "note": "「受虐婦女症候群」一詞的完整論述見 Walker (1984) The battered woman syndrome，可並列。",
+   "usedBy": [
+    "109-心理學-2"
+   ]
+  },
+  {
+   "cite": "Walker (2017)",
+   "ref": "Walker, M. (2017). Why we sleep: Unlocking the power of sleep and dreams. New York: Scribner.",
+   "status": "ok",
+   "note": "膠淋巴系統的原始研究為 Xie et al. (2013), Science, 342(6156), 373–377。",
+   "usedBy": [
+    "108-心理測驗員-心理學-2"
+   ]
+  },
+  {
+   "cite": "Wallas (1926)",
+   "ref": "Wallas, G. (1926). The art of thought. London: Jonathan Cape.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "114-心理學-3"
+   ]
+  },
+  {
+   "cite": "Walster et al. (1966)",
+   "ref": "Walster, E., Aronson, V., Abrahams, D., & Rottman, L. (1966). Importance of physical attractiveness in dating behavior. Journal of Personality and Social Psychology, 4(5), 508–516.",
+   "status": "ok",
+   "note": "「美即是好」的月暈效應另見 Dion, Berscheid, & Walster (1972)。",
+   "usedBy": [
+    "108-心理學-3"
+   ]
+  },
+  {
+   "cite": "Walters (1990)",
+   "ref": "Walters, G. D. (1990). The criminal lifestyle: Patterns of serious criminal conduct. Newbury Park, CA: Sage.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-112-犯罪學與再犯預測-2",
+    "監所管理員-115-犯罪學概要-1"
+   ]
+  },
+  {
+   "cite": "Ward & Beech (2006)",
+   "ref": "Ward, T., & Beech, A. (2006). An integrated theory of sexual offending. Aggression and Violent Behavior, 11(1), 44–63.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監所管理員-109-犯罪學概要-3"
+   ]
+  },
+  {
+   "cite": "Ward & Brown (2004)",
+   "ref": "Ward, T., & Brown, M. (2004). The good lives model and conceptual issues in offender rehabilitation. Psychology, Crime & Law, 10(3), 243–257.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "108-諮商與輔導-1",
+    "監獄官-110-諮商與矯正輔導-3",
+    "監獄官-112-諮商與矯正輔導-1",
+    "薦任升等（矯正）-108-諮商與輔導-1"
+   ]
+  },
+  {
+   "cite": "Ward & Stewart (2003)",
+   "ref": "Ward, T., & Stewart, C. A. (2003). Criminogenic needs and human needs: A theoretical model. Psychology, Crime & Law, 9(2), 125–143.",
+   "status": "ok",
+   "note": "「避免目標與趨近目標」的再犯預防觀點另見 Mann, Webster, Schofield, & Marshall (2004)。",
+   "usedBy": [
+    "薦任升等（矯正）-108-諮商與輔導-1"
+   ]
+  },
+  {
+   "cite": "Warren (1970)",
+   "ref": "Warren, R. M. (1970). Perceptual restoration of missing speech sounds. Science, 167(3917), 392–393.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-108-psychology-2"
+   ]
+  },
+  {
+   "cite": "Watzlawick et al. (1974)",
+   "ref": "Watzlawick, P., Weakland, J. H., & Fisch, R. (1974). Change: Principles of problem formation and problem resolution. New York: W. W. Norton.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-110-諮商與輔導-3"
+   ]
+  },
+  {
+   "cite": "Webb (2012)",
+   "ref": "Webb, J. (2012). Running on empty: Overcome your childhood emotional neglect. New York: Morgan James.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "114-家事調查官-心理測驗員-心理學-3"
+   ]
+  },
+  {
+   "cite": "Weisburd (2015)",
+   "ref": "Weisburd, D. (2015). The law of crime concentration and the criminology of place. Criminology, 53(2), 133–157.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-109-criminology_prevention-1"
+   ]
+  },
+  {
+   "cite": "Wells et al. (1998)",
+   "ref": "Wells, G. L., Small, M., Penrod, S., et al. (1998). Eyewitness identification procedures: Recommendations for lineups and photospreads. Law and Human Behavior, 22(6), 603–647.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "113-心理學-1"
+   ]
+  },
+  {
+   "cite": "Wertheimer (1923)",
+   "ref": "Wertheimer, M. (1923). Untersuchungen zur Lehre von der Gestalt II. Psychologische Forschung, 4, 301–350.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "110-心理測驗員-心理學-2"
+   ]
+  },
+  {
+   "cite": "White (2007)",
+   "ref": "White, M. (2007). Maps of narrative practice. New York: W. W. Norton.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "113-諮商與輔導-3"
+   ]
+  },
+  {
+   "cite": "White & Epston (1990)",
+   "ref": "White, M., & Epston, D. (1990). Narrative means to therapeutic ends. New York: W. W. Norton.",
+   "status": "ok",
+   "note": "「不知道的姿態」較常引用 Anderson & Goolishian (1992)。",
+   "usedBy": [
+    "109-諮商與輔導-3",
+    "113-諮商與輔導-3",
+    "監獄官-114-諮商與矯正輔導-3",
+    "police-115-psychology-3"
+   ]
+  },
+  {
+   "cite": "WHO (2007)",
+   "ref": "World Health Organization & International Association for Suicide Prevention. (2007). Preventing suicide in jails and prisons. Geneva: WHO.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-115-諮商與矯正輔導-4"
+   ]
+  },
+  {
+   "cite": "WHO (2014)",
+   "ref": "World Health Organization. (2014). Preventing suicide: A global imperative. Geneva: WHO.／World Health Organization. (2014). Global status report on violence prevention 2014. Geneva: WHO.",
+   "status": "check",
+   "note": "WHO 2014 年有兩份文件：自殺題（police-110-counseling-4）應引《Preventing suicide》，殺人防治題（police-114-criminology_prevention-2）應引《Global status report on violence prevention》，建議分別標示。",
+   "usedBy": [
+    "police-114-criminology_prevention-2",
+    "police-110-counseling-4"
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://iris.who.int/handle/10665/131056",
+     "https://iris.who.int/handle/10665/145086"
+    ],
+    "note": "Crossref 未收錄 WHO 報告，改以 WHO 機構典藏 IRIS 確認：《Preventing suicide: A global imperative》（2014-08-18，ISBN 9789241564779）與《Global status report on violence prevention 2014》（2014-12-09，ISBN 9789241564793）。維持原建議：分別標示。"
+   }
+  },
+  {
+   "cite": "WHO (2016)",
+   "ref": "World Health Organization. (2016). The health and social effects of nonmedical cannabis use. Geneva: WHO.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-113-criminology_prevention-4"
+   ]
+  },
+  {
+   "cite": "WHO, ICD-11 (2019)",
+   "ref": "World Health Organization. (2019). International classification of diseases (11th rev.). Geneva: WHO.（2022 年 1 月 1 日生效）",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "114-家事調查官-心理測驗員-心理學-1"
+   ]
+  },
+  {
+   "cite": "Wickens (2002)",
+   "ref": "Wickens, C. D. (2002). Multiple resources and performance prediction. Theoretical Issues in Ergonomics Science, 3(2), 159–177.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-家事調查官-心理測驗員-心理學-3"
+   ]
+  },
+  {
+   "cite": "Wilson et al. (2007)",
+   "ref": "Wilson, R. J., Picheca, J. E., & Prinzo, M. (2007). Evaluating the effectiveness of professionally-facilitated volunteerism in the community-based management of high-risk sexual offenders: Part two. The Howard Journal of Criminal Justice, 46(4), 327–337.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "110-犯罪學-3"
+   ]
+  },
+  {
+   "cite": "Wilson, Picheca & Prinzo (2007)",
+   "ref": "Wilson, R. J., Picheca, J. E., & Prinzo, M. (2007). Evaluating the effectiveness of professionally-facilitated volunteerism in the community-based management of high-risk sexual offenders: Part one. The Howard Journal of Criminal Justice, 46(3), 289–302.",
+   "status": "ok",
+   "note": "CoSA 於 1994 年起源於加拿大安大略省漢米爾頓的門諾教會。",
+   "usedBy": [
+    "110-犯罪學-3"
+   ]
+  },
+  {
+   "cite": "Wolfe et al. (2009)",
+   "ref": "Wolfe, D. A., Crooks, C., Jaffe, P., et al. (2009). A school-based program to prevent adolescent dating violence: A cluster randomized trial. Archives of Pediatrics & Adolescent Medicine, 163(8), 692–699.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-112-counseling-2"
+   ]
+  },
+  {
+   "cite": "Wolfgang (1958)",
+   "ref": "Wolfgang, M. E. (1958). Patterns in criminal homicide. Philadelphia: University of Pennsylvania Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-113-犯罪學與再犯預測-2",
+    "police-114-criminology_prevention-2"
+   ]
+  },
+  {
+   "cite": "Wolfgang, Figlio, & Sellin (1972)",
+   "ref": "Wolfgang, M. E., Figlio, R. M., & Sellin, T. (1972). Delinquency in a birth cohort. Chicago: University of Chicago Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-112-犯罪學-4"
+   ]
+  },
+  {
+   "cite": "Wolpe (1958)",
+   "ref": "Wolpe, J. (1958). Psychotherapy by reciprocal inhibition. Stanford, CA: Stanford University Press.",
+   "status": "check",
+   "note": "系統減敏感法出自此書；洪水法並非 Wolpe 提出，可引 Stampfl & Levis (1967) 的內爆治療或 Marks (1972)。",
+   "usedBy": [
+    "police-109-counseling-1",
+    "police-109-counseling-4"
+   ],
+   "crossref": {
+    "result": "partly",
+    "evidence": [
+     "https://doi.org/10.1353/pbm.1958.0006",
+     "https://doi.org/10.1037/h0025238",
+     "https://doi.org/10.1192/bjp.121.5.493"
+    ],
+    "note": "專書 Crossref 未收錄，有 1958 年書評可證。Stampfl & Levis (1967), Journal of Abnormal Psychology 72(6), 496–503 已確認；Marks 的洪水法研究為 Marks, Viswanathan, Lipsedge, & Gardner (1972), British Journal of Psychiatry 121, 493–505（多人合著）。"
+   }
+  },
+  {
+   "cite": "Wubbolding (2000)",
+   "ref": "Wubbolding, R. E. (2000). Reality therapy for the 21st century. Philadelphia: Brunner-Routledge.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "監獄官-111-諮商與矯正輔導-4"
+   ]
+  },
+  {
+   "cite": "Yalom (1980)",
+   "ref": "Yalom, I. D. (1980). Existential psychotherapy. New York: Basic Books.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "109-諮商與輔導-1",
+    "110-諮商與輔導-1",
+    "薦任升等（矯正）-114-諮商與輔導-1"
+   ]
+  },
+  {
+   "cite": "Yalom & Leszcz (2005)",
+   "ref": "Yalom, I. D., & Leszcz, M. (2005). The theory and practice of group psychotherapy (5th ed.). New York: Basic Books.",
+   "status": "ok",
+   "note": "已有第 6 版 (2020)。",
+   "usedBy": [
+    "108-諮商與輔導-2",
+    "115-諮商與輔導-3",
+    "監獄官-108-諮商與矯正輔導-2",
+    "監獄官-113-諮商與矯正輔導-4",
+    "監獄官-115-諮商與矯正輔導-1",
+    "薦任升等（矯正）-110-諮商與輔導-1",
+    "police-108-counseling-4",
+    "police-111-counseling-3",
+    "police-115-counseling-2"
+   ]
+  },
+  {
+   "cite": "Yerkes & Dodson (1908)",
+   "ref": "Yerkes, R. M., & Dodson, J. D. (1908). The relation of strength of stimulus to rapidity of habit-formation. Journal of Comparative Neurology and Psychology, 18(5), 459–482.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-109-psychology-2"
+   ]
+  },
+  {
+   "cite": "Zajonc (1968)",
+   "ref": "Zajonc, R. B. (1968). Attitudinal effects of mere exposure. Journal of Personality and Social Psychology, 9(2, Pt. 2), 1–27.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "108-心理學-3"
+   ]
+  },
+  {
+   "cite": "Zehr (1990)",
+   "ref": "Zehr, H. (1990). Changing lenses: A new focus for crime and justice. Scottdale, PA: Herald Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "114-犯罪學-3",
+    "監獄官-115-犯罪學與再犯預測-4",
+    "薦任升等（矯正）-114-犯罪學-3"
+   ]
+  },
+  {
+   "cite": "Zimbardo (1969)",
+   "ref": "Zimbardo, P. G. (1969). The human choice: Individuation, reason, and order versus deindividuation, impulse, and chaos. Nebraska Symposium on Motivation, 17, 237–307.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "111-心理學-3",
+    "114-心理學-2"
+   ]
+  },
+  {
+   "cite": "Zimmerman (2000)",
+   "ref": "Zimmerman, B. J. (2000). Attaining self-regulation: A social cognitive perspective. In M. Boekaerts, P. R. Pintrich, & M. Zeidner (Eds.), Handbook of self-regulation (pp. 13–39). San Diego: Academic Press.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "110-心理測驗員-心理學-3"
+   ]
+  },
+  {
+   "cite": "Zubin & Spring (1977)",
+   "ref": "Zubin, J., & Spring, B. (1977). Vulnerability: A new view of schizophrenia. Journal of Abnormal Psychology, 86(2), 103–126.",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "111-心理學-2"
+   ]
+  },
+  {
+   "cite": "個人資料保護法",
+   "ref": "個人資料保護法（2025 年 11 月 11 日修正公布）。",
+   "status": "law",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-108-心理測驗-4",
+    "薦任升等（矯正）-114-心理測驗-4"
+   ]
+  },
+  {
+   "cite": "優生保健法第 9 條第 2 項",
+   "ref": "優生保健法第 9 條第 2 項。",
+   "status": "law",
+   "note": "已核對現行法：未婚之未成年人施行人工流產，應得法定代理人或輔助人之同意。",
+   "usedBy": [
+    "police-109-counseling-2"
+   ]
+  },
+  {
+   "cite": "兒童及少年性剝削防制條例第 2 條",
+   "ref": "兒童及少年性剝削防制條例第 2 條。",
+   "status": "law",
+   "note": "",
+   "usedBy": [
+    "police-114-criminology_prevention-4"
+   ]
+  },
+  {
+   "cite": "兒童及少年性剝削防制條例第 36 條、第 38 條、第 39 條",
+   "ref": "兒童及少年性剝削防制條例第 36 條、第 38 條、第 39 條。",
+   "status": "law",
+   "note": "",
+   "usedBy": [
+    "police-114-criminology_prevention-4"
+   ]
+  },
+  {
+   "cite": "兒童及少年性剝削防制條例第 39 條第 1 項、第 2 項",
+   "ref": "兒童及少年性剝削防制條例第 39 條第 1 項、第 2 項。",
+   "status": "law",
+   "note": "已核對現行法：第 1 項支付對價持有、第 2 項無正當理由持有，均處刑罰。",
+   "usedBy": [
+    "police-114-criminology_prevention-4"
+   ]
+  },
+  {
+   "cite": "兒童及少年福利與權益保障法第 53 條",
+   "ref": "兒童及少年福利與權益保障法第 53 條。",
+   "status": "law",
+   "note": "已核對現行法：教育人員等知悉應於 24 小時內通報。涉性侵害者另依性侵害犯罪防治法第 11 條通報。",
+   "usedBy": [
+    "police-109-counseling-2"
+   ]
+  },
+  {
+   "cite": "刑法第 1 條",
+   "ref": "中華民國刑法第 1 條。",
+   "status": "law",
+   "note": "",
+   "usedBy": [
+    "108-犯罪學-4"
+   ]
+  },
+  {
+   "cite": "刑法第 161 條",
+   "ref": "中華民國刑法第 161 條。",
+   "status": "law",
+   "note": "已核對現行法：脫逃罪。",
+   "usedBy": [
+    "112-諮商與輔導-1"
+   ]
+  },
+  {
+   "cite": "刑法第 18 條、第 19 條",
+   "ref": "中華民國刑法第 18 條、第 19 條。",
+   "status": "law",
+   "note": "",
+   "usedBy": [
+    "police-110-criminology_prevention-2"
+   ]
+  },
+  {
+   "cite": "刑法第 185 條之 3",
+   "ref": "中華民國刑法第 185 條之 3。",
+   "status": "law",
+   "note": "",
+   "usedBy": [
+    "police-111-criminology_prevention-4"
+   ]
+  },
+  {
+   "cite": "刑法第 19 條",
+   "ref": "中華民國刑法第 19 條。",
+   "status": "law",
+   "note": "",
+   "usedBy": [
+    "113-犯罪學-4",
+    "監獄官-114-犯罪學與再犯預測-3"
+   ]
+  },
+  {
+   "cite": "刑法第 227 條",
+   "ref": "中華民國刑法第 227 條。",
+   "status": "law",
+   "note": "",
+   "usedBy": [
+    "112-諮商與輔導-2",
+    "police-109-counseling-2"
+   ]
+  },
+  {
+   "cite": "刑法第 319 條之 1",
+   "ref": "中華民國刑法第 319 條之 1。",
+   "status": "law",
+   "note": "已核對現行法：未經同意攝錄性影像。",
+   "usedBy": [
+    "114-諮商與輔導-3"
+   ]
+  },
+  {
+   "cite": "刑法第 319 條之 3",
+   "ref": "中華民國刑法第 319 條之 3。",
+   "status": "law",
+   "note": "已核對現行法：未經同意散布性影像。114-諮商與輔導-3 第 2 列的「性勒索」（以散布相威脅換取金錢或影像）另涉恐嚇取財（第 346 條）或強制、恐嚇（第 304、305 條），建議並列。",
+   "usedBy": [
+    "114-諮商與輔導-3"
+   ]
+  },
+  {
+   "cite": "刑法第 319 條之 4",
+   "ref": "中華民國刑法第 319 條之 4。",
+   "status": "law",
+   "note": "已核對現行法：製作、散布不實性影像（深偽）。",
+   "usedBy": [
+    "114-諮商與輔導-3"
+   ]
+  },
+  {
+   "cite": "刑法第 358 條",
+   "ref": "中華民國刑法第 358 條。",
+   "status": "law",
+   "note": "已核對現行法：本條為入侵電腦罪。114-諮商與輔導-3 第 5 列「人肉搜索與冒用身分」的主要依據較宜引個人資料保護法第 41 條；只有盜用帳號登入時才涉及本條。",
+   "usedBy": [
+    "114-諮商與輔導-3"
+   ]
+  },
+  {
+   "cite": "刑法第 47 條",
+   "ref": "中華民國刑法第 47 條。",
+   "status": "law",
+   "note": "",
+   "usedBy": [
+    "薦任升等（矯正）-112-犯罪學-4"
+   ]
+  },
+  {
+   "cite": "刑法第 57 條",
+   "ref": "中華民國刑法第 57 條。",
+   "status": "law",
+   "note": "",
+   "usedBy": [
+    "police-110-criminology_prevention-2"
+   ]
+  },
+  {
+   "cite": "刑法第 77 條",
+   "ref": "中華民國刑法第 77 條。",
+   "status": "law",
+   "note": "",
+   "usedBy": [
+    "監獄官-112-犯罪學與再犯預測-4"
+   ]
+  },
+  {
+   "cite": "刑法第 77 條第 2 項",
+   "ref": "中華民國刑法第 77 條第 2 項。",
+   "status": "law",
+   "note": "已核對現行法：第 2 款為重罪累犯於假釋期間等五年內再犯最輕本刑五年以上之罪者不適用假釋。",
+   "usedBy": [
+    "薦任升等（矯正）-112-犯罪學-4"
+   ]
+  },
+  {
+   "cite": "刑法第 87 條",
+   "ref": "中華民國刑法第 87 條。",
+   "status": "law",
+   "note": "",
+   "usedBy": [
+    "112-犯罪學-4",
+    "113-犯罪學-4",
+    "監獄官-114-犯罪學與再犯預測-3"
+   ]
+  },
+  {
+   "cite": "刑法第 87 條第 4 項",
+   "ref": "中華民國刑法第 87 條第 4 項。",
+   "status": "law",
+   "note": "已核對現行法：執行或延長期間內應每年評估有無繼續執行之必要。",
+   "usedBy": [
+    "監獄官-114-犯罪學與再犯預測-3"
+   ]
+  },
+  {
+   "cite": "刑法第 91 條之 1",
+   "ref": "中華民國刑法第 91 條之 1。",
+   "status": "law",
+   "note": "",
+   "usedBy": [
+    "112-犯罪學-4"
+   ]
+  },
+  {
+   "cite": "台灣輔導與諮商學會倫理守則",
+   "ref": "台灣輔導與諮商學會（2023）。輔導與諮商專業倫理守則。",
+   "status": "vague",
+   "note": "同上，建議統一寫法並以現行版本核對條次。",
+   "usedBy": [
+    "113-諮商與輔導-2"
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄臺灣的官方文件、學會守則與此書；相關官網在這個工作環境連不上，無法查證。"
+   }
+  },
+  {
+   "cite": "司法改革國是會議總結報告",
+   "ref": "總統府司法改革國是會議籌備委員會（2017）。司法改革國是會議總結報告。",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "police-108-criminology_prevention-4"
+   ]
+  },
+  {
+   "cite": "國民小學與國民中學未入學或中途輟學學生通報及復學輔導辦法第 2 條",
+   "ref": "國民小學與國民中學未入學或中途輟學學生通報及復學輔導辦法第 2 條。",
+   "status": "law",
+   "note": "已核對現行法：未經請假、請假未獲准或不明原因未到校連續達三日以上；轉學生三日內未完成報到。",
+   "usedBy": [
+    "113-諮商與輔導-1"
+   ]
+  },
+  {
+   "cite": "學生輔導法",
+   "ref": "學生輔導法（2024 年 12 月 18 日修正公布）。",
+   "status": "law",
+   "note": "",
+   "usedBy": [
+    "police-108-counseling-1",
+    "police-111-counseling-4",
+    "police-115-counseling-3",
+    "police-115-counseling-4"
+   ]
+  },
+  {
+   "cite": "學生輔導法第 6 條",
+   "ref": "學生輔導法第 6 條。",
+   "status": "law",
+   "note": "已核對現行法：發展性、介入性、處遇性三級輔導。",
+   "usedBy": [
+    "police-108-counseling-1",
+    "109-心理測驗員-心理學-2"
+   ]
+  },
+  {
+   "cite": "家庭暴力防治法",
+   "ref": "家庭暴力防治法。",
+   "status": "law",
+   "note": "",
+   "usedBy": [
+    "110-諮商與輔導-2",
+    "police-114-criminology_prevention-2",
+    "police-115-counseling-4"
+   ]
+  },
+  {
+   "cite": "少年事件處理法第 1 條",
+   "ref": "少年事件處理法第 1 條。",
+   "status": "law",
+   "note": "",
+   "usedBy": [
+    "115-犯罪學-4"
+   ]
+  },
+  {
+   "cite": "少年事件處理法第 18 條",
+   "ref": "少年事件處理法第 18 條。",
+   "status": "law",
+   "note": "",
+   "usedBy": [
+    "監獄官-111-犯罪學與再犯預測-2"
+   ]
+  },
+  {
+   "cite": "少年事件處理法第 18 條第 2 項至第 4 項",
+   "ref": "少年事件處理法第 18 條第 2 項至第 4 項。",
+   "status": "law",
+   "note": "已核對現行法。",
+   "usedBy": [
+    "115-犯罪學-4"
+   ]
+  },
+  {
+   "cite": "少年事件處理法第 18 條第 5 項",
+   "ref": "少年事件處理法第 18 條第 5 項。",
+   "status": "law",
+   "note": "已核對現行法：少輔會結合福利、教育、心理、醫療等資源輔導。",
+   "usedBy": [
+    "113-諮商與輔導-1"
+   ]
+  },
+  {
+   "cite": "少年事件處理法第 18 條第 5 項、第 6 項",
+   "ref": "少年事件處理法第 18 條第 5 項、第 6 項。",
+   "status": "law",
+   "note": "已核對現行法。",
+   "usedBy": [
+    "115-犯罪學-4"
+   ]
+  },
+  {
+   "cite": "少年事件處理法第 3 條第 1 項第 2 款",
+   "ref": "少年事件處理法第 3 條第 1 項第 2 款。",
+   "status": "law",
+   "note": "",
+   "usedBy": [
+    "115-犯罪學-4"
+   ]
+  },
+  {
+   "cite": "少年事件處理法第 42 條",
+   "ref": "少年事件處理法第 42 條。",
+   "status": "law",
+   "note": "",
+   "usedBy": [
+    "police-115-psychology-4"
+   ]
+  },
+  {
+   "cite": "少年事件處理法第 42 條第 2 項第 1 款",
+   "ref": "少年事件處理法第 42 條第 2 項第 1 款。",
+   "status": "law",
+   "note": "已核對現行法：禁戒。",
+   "usedBy": [
+    "114-犯罪學-4"
+   ]
+  },
+  {
+   "cite": "少年事件處理法第 42 條第 5 項",
+   "ref": "少年事件處理法第 42 條第 5 項。",
+   "status": "law",
+   "note": "已核對現行法：得召開協調、諮詢或整合資源之相關會議。",
+   "usedBy": [
+    "111-諮商與輔導-2"
+   ]
+  },
+  {
+   "cite": "少年事件處理法第 83 條之 1",
+   "ref": "少年事件處理法第 83 條之 1。",
+   "status": "law",
+   "note": "",
+   "usedBy": [
+    "監獄官-111-犯罪學與再犯預測-2"
+   ]
+  },
+  {
+   "cite": "少年輔導委員會設置及輔導實施辦法第 8 條",
+   "ref": "少年輔導委員會設置及輔導實施辦法第 8 條。",
+   "status": "law",
+   "note": "已核對現行法：受理後十四日內判斷並決定是否開案。",
+   "usedBy": [
+    "115-犯罪學-4"
+   ]
+  },
+  {
+   "cite": "性侵害犯罪防治法",
+   "ref": "性侵害犯罪防治法（2023 年 2 月 15 日修正公布）。",
+   "status": "law",
+   "note": "監所管理員-109-犯罪學概要-3「治療輔導」可引第 31 條（身心治療、輔導或教育）；通報義務為第 11 條。登記報到條次請另行核對。",
+   "usedBy": [
+    "監所管理員-109-犯罪學概要-3"
+   ]
+  },
+  {
+   "cite": "性別平等工作法",
+   "ref": "性別平等工作法（2023 年 8 月 16 日修正公布，原名性別工作平等法）。",
+   "status": "law",
+   "note": "",
+   "usedBy": [
+    "112-諮商與輔導-2"
+   ]
+  },
+  {
+   "cite": "性別平等教育法",
+   "ref": "性別平等教育法（2023 年 8 月 16 日修正公布）。",
+   "status": "law",
+   "note": "",
+   "usedBy": [
+    "112-諮商與輔導-2",
+    "監所管理員-109-犯罪學概要-3"
+   ]
+  },
+  {
+   "cite": "性別平等教育法第 15 條",
+   "ref": "性別平等教育法第 15 條。",
+   "status": "law",
+   "note": "已核對現行法：學校應積極維護懷孕學生之受教權。",
+   "usedBy": [
+    "police-109-counseling-2"
+   ]
+  },
+  {
+   "cite": "性別平等教育法第 25 條",
+   "ref": "性別平等教育法第 25 條。",
+   "status": "law",
+   "note": "已核對現行法：第 1 項為告知權益、提供心理諮商輔導與保護措施，第 2 項為得委請醫師、心理師等專業人員。",
+   "usedBy": [
+    "110-諮商與輔導-3"
+   ]
+  },
+  {
+   "cite": "性別平等教育法第 25 條第 1 項",
+   "ref": "性別平等教育法第 25 條第 1 項。",
+   "status": "law",
+   "note": "已核對現行法。",
+   "usedBy": [
+    "112-諮商與輔導-2"
+   ]
+  },
+  {
+   "cite": "性別平等教育法第 25 條第 2 項",
+   "ref": "性別平等教育法第 25 條第 2 項。",
+   "status": "law",
+   "note": "已核對現行法；110-諮商與輔導-3 第 5 列「轉介外部專業人員」與本項相符。",
+   "usedBy": [
+    "110-諮商與輔導-3",
+    "112-諮商與輔導-2"
+   ]
+  },
+  {
+   "cite": "性別平等教育法第 36 條",
+   "ref": "性別平等教育法第 36 條。",
+   "status": "law",
+   "note": "已核對現行法：受理後二個月內完成調查，必要時得延長二次、每次不逾一個月。",
+   "usedBy": [
+    "112-諮商與輔導-2"
+   ]
+  },
+  {
+   "cite": "性騷擾防治法",
+   "ref": "性騷擾防治法（2023 年 8 月 16 日修正公布）。",
+   "status": "law",
+   "note": "",
+   "usedBy": [
+    "112-諮商與輔導-2",
+    "114-諮商與輔導-3"
+   ]
+  },
+  {
+   "cite": "新世代反毒策略",
+   "ref": "行政院（2017）。新世代反毒策略行動綱領；行政院（2021）。新世代反毒策略行動綱領（第二期，110–113 年）。",
+   "status": "vague",
+   "note": "原引用未標期別；作答時請標明引用第一期或第二期（或後續期別）。",
+   "usedBy": [
+    "監獄官-113-犯罪學與再犯預測-4"
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄臺灣的官方文件、學會守則與此書；相關官網在這個工作環境連不上，無法查證。"
+   }
+  },
+  {
+   "cite": "更生保護法",
+   "ref": "更生保護法。",
+   "status": "law",
+   "note": "",
+   "usedBy": [
+    "監獄官-112-諮商與矯正輔導-4",
+    "薦任升等（矯正）-110-諮商與輔導-4",
+    "police-112-counseling-1"
+   ]
+  },
+  {
+   "cite": "校園霸凌防制準則",
+   "ref": "校園霸凌防制準則（2024 年 4 月 17 日全文修正發布）。",
+   "status": "law",
+   "note": "",
+   "usedBy": [
+    "112-諮商與輔導-3"
+   ]
+  },
+  {
+   "cite": "毒品危害防制條例",
+   "ref": "毒品危害防制條例（2022 年 5 月 4 日修正公布）。",
+   "status": "law",
+   "note": "",
+   "usedBy": [
+    "監獄官-114-犯罪學與再犯預測-4",
+    "薦任升等（矯正）-108-諮商與輔導-2",
+    "police-112-counseling-3",
+    "113-家事調查官-心理測驗員-心理學-2"
+   ]
+  },
+  {
+   "cite": "毒品危害防制條例第 2 條",
+   "ref": "毒品危害防制條例第 2 條。",
+   "status": "law",
+   "note": "已核對現行法；大麻列第二級毒品。",
+   "usedBy": [
+    "police-113-criminology_prevention-4"
+   ]
+  },
+  {
+   "cite": "毒品危害防制條例第 24 條",
+   "ref": "毒品危害防制條例第 24 條。",
+   "status": "law",
+   "note": "已核對現行法：附命完成戒癮治療之緩起訴（刑事訴訟法第 253 條之 2 第 1 項第 6 款）。",
+   "usedBy": [
+    "113-家事調查官-心理測驗員-心理學-2"
+   ]
+  },
+  {
+   "cite": "法務部修復式司法方案",
+   "ref": "法務部（2010 起）。修復式司法試行方案；法務部（2018）。推動修復式司法方案實施計畫。",
+   "status": "vague",
+   "note": "原引用未標方案名稱與年份，請以講義核對。",
+   "usedBy": [
+    "監獄官-115-犯罪學與再犯預測-4"
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄臺灣的官方文件、學會守則與此書；相關官網在這個工作環境連不上，無法查證。"
+   }
+  },
+  {
+   "cite": "法務部矯正署家庭支持方案",
+   "ref": "法務部矯正署。收容人家庭支持服務相關方案。",
+   "status": "vague",
+   "note": "原引用未標方案名稱與年份，請以講義核對。",
+   "usedBy": [
+    "監獄官-115-諮商與矯正輔導-3"
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄臺灣的官方文件、學會守則與此書；相關官網在這個工作環境連不上，無法查證。"
+   }
+  },
+  {
+   "cite": "犯罪被害人權益保障法",
+   "ref": "犯罪被害人權益保障法（2023 年 2 月 8 日修正公布，原名犯罪被害人保護法）。",
+   "status": "law",
+   "note": "",
+   "usedBy": [
+    "police-114-criminology_prevention-3",
+    "police-115-counseling-4"
+   ]
+  },
+  {
+   "cite": "犯罪被害人權益保障法第 1 條",
+   "ref": "犯罪被害人權益保障法第 1 條。",
+   "status": "law",
+   "note": "已核對現行法：保障權益、提供支持服務及經濟補助、修復傷害。",
+   "usedBy": [
+    "police-114-criminology_prevention-3"
+   ]
+  },
+  {
+   "cite": "監獄行刑法",
+   "ref": "監獄行刑法（2020 年 1 月 15 日修正公布）。",
+   "status": "law",
+   "note": "112-諮商與輔導-1「協助探望母親」可引第 28 條（親屬喪亡或重大特殊事故得戒護返家探視）；監獄官-113-犯罪學與再犯預測-3 個別處遇計畫為第 11 條第 3 項（入監後三個月內訂定）。",
+   "usedBy": [
+    "112-諮商與輔導-1",
+    "監獄官-113-犯罪學與再犯預測-3",
+    "監獄官-115-諮商與矯正輔導-4",
+    "police-108-criminology_prevention-4"
+   ]
+  },
+  {
+   "cite": "社會心理學教材",
+   "ref": "（未指明教材）",
+   "status": "vague",
+   "note": "原引用過於籠統；「人際吸引」的定義可引 Berscheid & Walster (1978) Interpersonal attraction (2nd ed.)，或填入講義使用的社會心理學教科書。",
+   "usedBy": [
+    "108-心理學-3"
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "原引用未指明教材，無從查證。"
+   }
+  },
+  {
+   "cite": "自殺防治法",
+   "ref": "自殺防治法（2019 年 6 月 19 日公布）。",
+   "status": "law",
+   "note": "112-諮商與輔導-3 媒體報導規範為第 16 條（已核對）；通報為第 11 條。",
+   "usedBy": [
+    "薦任升等（矯正）-112-諮商與輔導-3",
+    "police-110-counseling-4"
+   ]
+  },
+  {
+   "cite": "自殺防治法第 11 條",
+   "ref": "自殺防治法第 11 條。",
+   "status": "law",
+   "note": "已核對現行法：自殺防治通報系統，通報人身分應保密。",
+   "usedBy": [
+    "police-110-counseling-4"
+   ]
+  },
+  {
+   "cite": "臺灣心理學會倫理守則",
+   "ref": "台灣心理學會（2013）。台灣心理學會心理學專業人員倫理準則。",
+   "status": "vague",
+   "note": "原引用未標正式名稱與年份；請以學會公告的現行版本核對條次。",
+   "usedBy": [
+    "薦任升等（矯正）-108-心理測驗-4",
+    "薦任升等（矯正）-114-心理測驗-4"
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄臺灣的官方文件、學會守則與此書；相關官網在這個工作環境連不上，無法查證。"
+   }
+  },
+  {
+   "cite": "臺灣輔導與諮商學會倫理守則",
+   "ref": "台灣輔導與諮商學會（2023）。輔導與諮商專業倫理守則。",
+   "status": "vague",
+   "note": "學會正式名稱為「台灣輔導與諮商學會」，守則名稱為「輔導與諮商專業倫理守則」，建議三種寫法統一；條次請以學會公告的現行版本核對。",
+   "usedBy": [
+    "薦任升等（矯正）-108-諮商與輔導-4",
+    "police-109-counseling-2",
+    "police-110-counseling-1"
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄臺灣的官方文件、學會守則與此書；相關官網在這個工作環境連不上，無法查證。"
+   }
+  },
+  {
+   "cite": "行政院性別平等會",
+   "ref": "行政院性別平等會。數位／網路性別暴力之定義與類型（官方說明）。",
+   "status": "vague",
+   "note": "原引用未標文件名稱與日期；定義原文請以性平會網站公告核對。",
+   "usedBy": [
+    "114-諮商與輔導-3"
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄臺灣的官方文件、學會守則與此書；相關官網在這個工作環境連不上，無法查證。"
+   }
+  },
+  {
+   "cite": "輔導與諮商專業倫理守則",
+   "ref": "台灣輔導與諮商學會（2023）。輔導與諮商專業倫理守則。",
+   "status": "vague",
+   "note": "原引用未標制定機關與年份；請以學會網站公告的現行版本核對條次。",
+   "usedBy": [
+    "110-諮商與輔導-3",
+    "111-諮商與輔導-3",
+    "112-諮商與輔導-1"
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄臺灣的官方文件、學會守則與此書；相關官網在這個工作環境連不上，無法查證。"
+   }
+  },
+  {
+   "cite": "郭生玉，心理與教育測驗",
+   "ref": "郭生玉（1985）。心理與教育測驗。臺北：精華書局。",
+   "status": "vague",
+   "note": "原引用未標年份；此書版次與刷次多，請依手邊版本補上。",
+   "usedBy": [
+    "薦任升等（矯正）-108-心理測驗-1"
+   ],
+   "crossref": {
+    "result": "not-indexed",
+    "evidence": [],
+    "note": "Crossref 未收錄臺灣的官方文件、學會守則與此書；相關官網在這個工作環境連不上，無法查證。"
+   }
+  },
+  {
+   "cite": "釋字第 664 號",
+   "ref": "司法院大法官釋字第 664 號解釋（2009 年 7 月 31 日）。",
+   "status": "ok",
+   "note": "",
+   "usedBy": [
+    "115-犯罪學-4"
+   ]
+  }
+ ],
+ "crossrefCheckedOn": "2026-10-29"
+}

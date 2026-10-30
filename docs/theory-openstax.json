@@ -1,0 +1,2903 @@
+{
+ "說明": "學科題對應的 OpenStax 教科書章節。每個章節都以 OpenStax 在 GitHub 公開的原始書稿核對過內容（matchedTerms 為在該節原文中確認出現的關鍵詞）。只作為開發者補充出處用，網站不讀取本檔。",
+ "checkedOn": "2026-10-29",
+ "books": {
+  "Psychology 2e": {
+   "authors": "Spielman, R. M., Jenkins, W. J., & Lovett, M. D.",
+   "year": 2020,
+   "url": "https://openstax.org/details/books/psychology-2e",
+   "source": "https://github.com/openstax/osbooks-psychology",
+   "commit": "43035bcc5dd238f2e236ef532a01f11d6a59fc9d",
+   "publisher": "OpenStax, Rice University",
+   "license": "CC BY-NC-SA 4.0"
+  },
+  "Introduction to Sociology 3e": {
+   "authors": "Conerly, T. R., Holmes, K., & Tamang, A. L.",
+   "year": 2021,
+   "url": "https://openstax.org/details/books/introduction-sociology-3e",
+   "source": "https://github.com/openstax/osbooks-introduction-sociology",
+   "commit": "ab8839c5c5340cb4dffbc310699da450549deb20",
+   "publisher": "OpenStax, Rice University",
+   "license": "CC BY-NC-SA 4.0"
+  },
+  "Lifespan Development": {
+   "authors": "Riser, D. K., Spielman, R. M., & Biek, D.",
+   "year": 2024,
+   "url": "https://openstax.org/details/books/lifespan-development",
+   "source": "https://github.com/openstax/osbooks-lifespan-development",
+   "commit": "ebed4ae43c261041030f752eb49d92d0411608db",
+   "publisher": "OpenStax, Rice University",
+   "license": "CC BY-NC-SA 4.0"
+  }
+ },
+ "questions": [
+  {
+   "id": "108-犯罪學-3",
+   "title": "Bedau 無被害者犯罪的特性與類型",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Introduction to Sociology 3e",
+     "section": "7.3",
+     "title": "Crime and the Law",
+     "url": "https://openstax.org/books/introduction-sociology-3e/pages/7-3-crime-and-the-law",
+     "matchedTerms": [
+      "victimless crime"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "108-犯罪學-4",
+   "title": "法律與社會學的犯罪概念及犯罪學研究目標",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Introduction to Sociology 3e",
+     "section": "7.1",
+     "title": "Deviance and Control",
+     "url": "https://openstax.org/books/introduction-sociology-3e/pages/7-1-deviance-and-control",
+     "matchedTerms": [
+      "deviance",
+      "norms"
+     ]
+    },
+    {
+     "book": "Introduction to Sociology 3e",
+     "section": "7.3",
+     "title": "Crime and the Law",
+     "url": "https://openstax.org/books/introduction-sociology-3e/pages/7-3-crime-and-the-law",
+     "matchedTerms": [
+      "formal sanctions"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "109-犯罪學-1",
+   "title": "以差別接觸理論說明孟母三遷與擇校",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Introduction to Sociology 3e",
+     "section": "7.2",
+     "title": "Theoretical Perspectives on Deviance and Crime",
+     "url": "https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime",
+     "matchedTerms": [
+      "differential association",
+      "Sutherland"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "109-犯罪學-2",
+   "title": "家庭因素與社會控制理論的少年犯罪預防",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Introduction to Sociology 3e",
+     "section": "7.2",
+     "title": "Theoretical Perspectives on Deviance and Crime",
+     "url": "https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime",
+     "matchedTerms": [
+      "Hirschi",
+      "four types of social bonds",
+      "Attachment",
+      "Commitment"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "110-犯罪學-1",
+   "title": "Quinney 犯罪的社會事實論",
+   "coverage": "partial",
+   "note": "只涵蓋衝突理論概論（Marx、Mills），沒有 Quinney 的命題",
+   "sections": [
+    {
+     "book": "Introduction to Sociology 3e",
+     "section": "7.2",
+     "title": "Theoretical Perspectives on Deviance and Crime",
+     "url": "https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime",
+     "matchedTerms": [
+      "conflict theory",
+      "power elite"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "110-犯罪學-2",
+   "title": "集體效能論與社區暴力犯罪",
+   "coverage": "partial",
+   "note": "只涵蓋社會解組論，沒有集體效能",
+   "sections": [
+    {
+     "book": "Introduction to Sociology 3e",
+     "section": "7.2",
+     "title": "Theoretical Perspectives on Deviance and Crime",
+     "url": "https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime",
+     "matchedTerms": [
+      "social disorganization",
+      "Sampson"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "110-犯罪學-4",
+   "title": "反社會人格障礙與犯罪的關係",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "15.11",
+     "title": "Personality Disorders",
+     "url": "https://openstax.org/books/psychology-2e/pages/15-11-personality-disorders",
+     "matchedTerms": [
+      "antisocial personality"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "111-犯罪學-4",
+   "title": "幫派副文化理論與中立化理論對成年後繼續犯罪的解釋",
+   "coverage": "partial",
+   "note": "只涵蓋中立化技術，沒有副文化理論",
+   "sections": [
+    {
+     "book": "Introduction to Sociology 3e",
+     "section": "7.2",
+     "title": "Theoretical Perspectives on Deviance and Crime",
+     "url": "https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime",
+     "matchedTerms": [
+      "Sykes",
+      "Matza",
+      "Denial of Responsibility"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "112-犯罪學-4",
+   "title": "精神障礙與人格障礙者的暴力犯罪成因與防治",
+   "coverage": "partial",
+   "note": "只涵蓋疾患本身，沒有暴力風險與防治",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "15.8",
+     "title": "Schizophrenia",
+     "url": "https://openstax.org/books/psychology-2e/pages/15-8-schizophrenia",
+     "matchedTerms": [
+      "schizophrenia"
+     ]
+    },
+    {
+     "book": "Psychology 2e",
+     "section": "15.11",
+     "title": "Personality Disorders",
+     "url": "https://openstax.org/books/psychology-2e/pages/15-11-personality-disorders",
+     "matchedTerms": [
+      "antisocial personality"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "113-犯罪學-1",
+   "title": "Bandura 攻擊行為的激起因素",
+   "coverage": "partial",
+   "note": "只涵蓋 Bobo 實驗與攻擊的定義，沒有五項激起因素",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "6.4",
+     "title": "Observational Learning (Modeling)",
+     "url": "https://openstax.org/books/psychology-2e/pages/6-4-observational-learning-modeling",
+     "matchedTerms": [
+      "Bobo"
+     ]
+    },
+    {
+     "book": "Psychology 2e",
+     "section": "12.6",
+     "title": "Aggression",
+     "url": "https://openstax.org/books/psychology-2e/pages/12-6-aggression",
+     "matchedTerms": [
+      "aggression"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "113-犯罪學-4",
+   "title": "DSM-5 思覺失調症症狀及其與犯罪的關聯",
+   "coverage": "partial",
+   "note": "只涵蓋症狀，沒有與犯罪的關聯",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "15.8",
+     "title": "Schizophrenia",
+     "url": "https://openstax.org/books/psychology-2e/pages/15-8-schizophrenia",
+     "matchedTerms": [
+      "hallucination",
+      "delusion"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "114-犯罪學-1",
+   "title": "社會結構學派與社會控制學派的少年犯罪解釋與對策",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Introduction to Sociology 3e",
+     "section": "7.2",
+     "title": "Theoretical Perspectives on Deviance and Crime",
+     "url": "https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime",
+     "matchedTerms": [
+      "strain theory",
+      "social disorganization",
+      "Hirschi"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "114-犯罪學-4",
+   "title": "以生物心理社會模式詮釋少年藥物濫用與處遇",
+   "coverage": "partial",
+   "note": "只涵蓋成癮機制，沒有少年處遇",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "4.5",
+     "title": "Substance Use and Abuse",
+     "url": "https://openstax.org/books/psychology-2e/pages/4-5-substance-use-and-abuse",
+     "matchedTerms": [
+      "tolerance",
+      "withdrawal"
+     ]
+    },
+    {
+     "book": "Psychology 2e",
+     "section": "16.4",
+     "title": "Substance-Related and Addictive Disorders: A Special Case",
+     "url": "https://openstax.org/books/psychology-2e/pages/16-4-substance-related-and-addictive-disorders-a-special-case",
+     "matchedTerms": [
+      "addiction"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "108-心理學-1",
+   "title": "態度的組成成分：以抽菸為例",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "12.3",
+     "title": "Attitudes and Persuasion",
+     "url": "https://openstax.org/books/psychology-2e/pages/12-3-attitudes-and-persuasion",
+     "matchedTerms": [
+      "attitude",
+      "cognitive dissonance"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "108-心理學-2",
+   "title": "A 型、B 型與 C 型性格",
+   "coverage": "partial",
+   "note": "只涵蓋 A 型與 B 型，沒有 C 型性格",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "14.3",
+     "title": "Stress and Illness",
+     "url": "https://openstax.org/books/psychology-2e/pages/14-3-stress-and-illness",
+     "matchedTerms": [
+      "Type A",
+      "Type B"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "108-心理學-3",
+   "title": "人際吸引的意義與影響因素",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "12.7",
+     "title": "Prosocial Behavior",
+     "url": "https://openstax.org/books/psychology-2e/pages/12-7-prosocial-behavior",
+     "matchedTerms": [
+      "proximity",
+      "similarity"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "109-心理學-1",
+   "title": "流體智力與晶體智力的差異、發展與職涯影響",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "7.4",
+     "title": "What Are Intelligence and Creativity?",
+     "url": "https://openstax.org/books/psychology-2e/pages/7-4-what-are-intelligence-and-creativity",
+     "matchedTerms": [
+      "fluid intelligence",
+      "crystallized"
+     ]
+    },
+    {
+     "book": "Lifespan Development",
+     "section": "15.3",
+     "title": "Cognition and Memory in Late Adulthood",
+     "url": "https://openstax.org/books/lifespan-development/pages/15-3-cognition-and-memory-in-late-adulthood",
+     "matchedTerms": [
+      "crystallized"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "109-心理學-2",
+   "title": "習得無助感與受虐婦女症候群",
+   "coverage": "partial",
+   "note": "只涵蓋習得無助，沒有受虐婦女症候群",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "14.4",
+     "title": "Regulation of Stress",
+     "url": "https://openstax.org/books/psychology-2e/pages/14-4-regulation-of-stress",
+     "matchedTerms": [
+      "learned helplessness",
+      "Seligman"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "109-心理學-3",
+   "title": "壓力與成癮的關聯及成癮的生理心理歷程",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "4.5",
+     "title": "Substance Use and Abuse",
+     "url": "https://openstax.org/books/psychology-2e/pages/4-5-substance-use-and-abuse",
+     "matchedTerms": [
+      "tolerance",
+      "withdrawal"
+     ]
+    },
+    {
+     "book": "Psychology 2e",
+     "section": "16.4",
+     "title": "Substance-Related and Addictive Disorders: A Special Case",
+     "url": "https://openstax.org/books/psychology-2e/pages/16-4-substance-related-and-addictive-disorders-a-special-case",
+     "matchedTerms": [
+      "addiction"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "109-心理學-4",
+   "title": "選用憂鬱量表的信度與效度證據",
+   "coverage": "partial",
+   "note": "研究方法層次的信效度，沒有量表選用的細節",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "2.3",
+     "title": "Analyzing Findings",
+     "url": "https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings",
+     "matchedTerms": [
+      "reliability",
+      "validity"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "110-心理學-1",
+   "title": "心智異常的定義、判斷標準與心理衡鑑方法",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "15.1",
+     "title": "What Are Psychological Disorders?",
+     "url": "https://openstax.org/books/psychology-2e/pages/15-1-what-are-psychological-disorders",
+     "matchedTerms": [
+      "dysfunction",
+      "distress"
+     ]
+    },
+    {
+     "book": "Psychology 2e",
+     "section": "11.9",
+     "title": "Personality Assessment",
+     "url": "https://openstax.org/books/psychology-2e/pages/11-9-personality-assessment",
+     "matchedTerms": [
+      "MMPI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "110-心理學-2",
+   "title": "Beck 認知理論與 Seligman 歸因風格解釋憂鬱及認知治療",
+   "coverage": "partial",
+   "note": "有 Beck 的憂鬱認知理論與認知治療，沒有 Seligman 歸因風格",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "15.7",
+     "title": "Depressive, Bipolar, and Related Disorders",
+     "url": "https://openstax.org/books/psychology-2e/pages/15-7-depressive-bipolar-and-related-disorders",
+     "matchedTerms": [
+      "Beck"
+     ]
+    },
+    {
+     "book": "Psychology 2e",
+     "section": "16.2",
+     "title": "Types of Treatment",
+     "url": "https://openstax.org/books/psychology-2e/pages/16-2-types-of-treatment",
+     "matchedTerms": [
+      "cognitive therapy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "110-心理學-3",
+   "title": "情緒的四個元素與運作特性",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "10.4",
+     "title": "Emotion",
+     "url": "https://openstax.org/books/psychology-2e/pages/10-4-emotion",
+     "matchedTerms": [
+      "subjective experience, expression, cognitive appraisal, and physiological responses",
+      "James-Lange",
+      "Cannon-Bard"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "110-心理學-4",
+   "title": "Kohlberg 道德發展六階段",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "9.2",
+     "title": "Lifespan Theories",
+     "url": "https://openstax.org/books/psychology-2e/pages/9-2-lifespan-theories",
+     "matchedTerms": [
+      "Kohlberg",
+      "pre-conventional",
+      "post-conventional"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "111-心理學-2",
+   "title": "體質壓力模型與心理異常成因",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "15.3",
+     "title": "Perspectives on Psychological Disorders",
+     "url": "https://openstax.org/books/psychology-2e/pages/15-3-perspectives-on-psychological-disorders",
+     "matchedTerms": [
+      "diathesis"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "111-心理學-3",
+   "title": "去個人化現象及其影響",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "12.4",
+     "title": "Conformity, Compliance, and Obedience",
+     "url": "https://openstax.org/books/psychology-2e/pages/12-4-conformity-compliance-and-obedience",
+     "matchedTerms": [
+      "deindividuation"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "111-心理學-4",
+   "title": "影響兒童智力發展的環境因素",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "7.6",
+     "title": "The Source of Intelligence",
+     "url": "https://openstax.org/books/psychology-2e/pages/7-6-the-source-of-intelligence",
+     "matchedTerms": [
+      "environment"
+     ]
+    },
+    {
+     "book": "Lifespan Development",
+     "section": "7.3",
+     "title": "Intelligence in Middle Childhood",
+     "url": "https://openstax.org/books/lifespan-development/pages/7-3-intelligence-in-middle-childhood",
+     "matchedTerms": [
+      "Flynn"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "113-心理學-1",
+   "title": "建構性記憶與目擊證詞的再建構",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "8.3",
+     "title": "Problems with Memory",
+     "url": "https://openstax.org/books/psychology-2e/pages/8-3-problems-with-memory",
+     "matchedTerms": [
+      "misinformation effect",
+      "eyewitness"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "113-心理學-2",
+   "title": "快思慢想與可得性捷思",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "7.3",
+     "title": "Problem Solving",
+     "url": "https://openstax.org/books/psychology-2e/pages/7-3-problem-solving",
+     "matchedTerms": [
+      "heuristic",
+      "availability"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "113-心理學-3",
+   "title": "Sternberg 成功智力理論與 AI 世代青少年",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "7.4",
+     "title": "What Are Intelligence and Creativity?",
+     "url": "https://openstax.org/books/psychology-2e/pages/7-4-what-are-intelligence-and-creativity",
+     "matchedTerms": [
+      "Sternberg",
+      "triarchic"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "113-心理學-4",
+   "title": "Seligman 積極富能（PERMA）五向度與青少年心理健康",
+   "coverage": "partial",
+   "note": "有正向心理學概述，沒有 PERMA 五向度",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "14.5",
+     "title": "The Pursuit of Happiness",
+     "url": "https://openstax.org/books/psychology-2e/pages/14-5-the-pursuit-of-happiness",
+     "matchedTerms": [
+      "positive psychology",
+      "Seligman"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "114-心理學-1",
+   "title": "信度與效度的概念，以及高信度低效度的問題",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "2.3",
+     "title": "Analyzing Findings",
+     "url": "https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings",
+     "matchedTerms": [
+      "reliability",
+      "validity"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "114-心理學-2",
+   "title": "團體決策更極端的心理歷程",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "12.4",
+     "title": "Conformity, Compliance, and Obedience",
+     "url": "https://openstax.org/books/psychology-2e/pages/12-4-conformity-compliance-and-obedience",
+     "matchedTerms": [
+      "group polarization",
+      "groupthink"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "114-心理學-3",
+   "title": "功能固著與突破固著的策略",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "7.3",
+     "title": "Problem Solving",
+     "url": "https://openstax.org/books/psychology-2e/pages/7-3-problem-solving",
+     "matchedTerms": [
+      "functional fixedness"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "114-心理學-4",
+   "title": "一般適應症候群與長期照顧壓力",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "14.1",
+     "title": "What Is Stress?",
+     "url": "https://openstax.org/books/psychology-2e/pages/14-1-what-is-stress",
+     "matchedTerms": [
+      "general adaptation syndrome",
+      "alarm",
+      "exhaustion"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "115-心理學-1",
+   "title": "精神分析論與五大人格特質論的比較及司法心理意涵",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "11.2",
+     "title": "Freud and the Psychodynamic Perspective",
+     "url": "https://openstax.org/books/psychology-2e/pages/11-2-freud-and-the-psychodynamic-perspective",
+     "matchedTerms": [
+      "superego",
+      "defense mechanism"
+     ]
+    },
+    {
+     "book": "Psychology 2e",
+     "section": "11.7",
+     "title": "Trait Theorists",
+     "url": "https://openstax.org/books/psychology-2e/pages/11-7-trait-theorists",
+     "matchedTerms": [
+      "Big Five"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "115-心理學-3",
+   "title": "Elkind 個人神話與矯正不當認知",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Lifespan Development",
+     "section": "9.3",
+     "title": "Cognition in Adolescence",
+     "url": "https://openstax.org/books/lifespan-development/pages/9-3-cognition-in-adolescence",
+     "matchedTerms": [
+      "personal fable",
+      "imaginary audience"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "115-心理學-4",
+   "title": "以三種發展理論分析科技媒體對青少年的影響與處遇",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "6.4",
+     "title": "Observational Learning (Modeling)",
+     "url": "https://openstax.org/books/psychology-2e/pages/6-4-observational-learning-modeling",
+     "matchedTerms": [
+      "observational learning"
+     ]
+    },
+    {
+     "book": "Lifespan Development",
+     "section": "1.4",
+     "title": "Contexts and Settings of Development",
+     "url": "https://openstax.org/books/lifespan-development/pages/1-4-contexts-and-settings-of-development",
+     "matchedTerms": [
+      "microsystem"
+     ]
+    },
+    {
+     "book": "Psychology 2e",
+     "section": "9.2",
+     "title": "Lifespan Theories",
+     "url": "https://openstax.org/books/psychology-2e/pages/9-2-lifespan-theories",
+     "matchedTerms": [
+      "Erikson"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "108-諮商與輔導-4",
+   "title": "大五人格測驗與貝克憂鬱量表",
+   "coverage": "partial",
+   "note": "只涵蓋五大人格，沒有貝克憂鬱量表",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "11.7",
+     "title": "Trait Theorists",
+     "url": "https://openstax.org/books/psychology-2e/pages/11-7-trait-theorists",
+     "matchedTerms": [
+      "Big Five"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "109-諮商與輔導-1",
+   "title": "Freud 與存在主義的焦慮意義及處理",
+   "coverage": "partial",
+   "note": "只涵蓋 Freud 部分，沒有存在主義焦慮",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "11.2",
+     "title": "Freud and the Psychodynamic Perspective",
+     "url": "https://openstax.org/books/psychology-2e/pages/11-2-freud-and-the-psychodynamic-perspective",
+     "matchedTerms": [
+      "anxiety",
+      "defense mechanism"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "109-諮商與輔導-2",
+   "title": "DSM-5 重鬱症的診斷標準",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "15.7",
+     "title": "Depressive, Bipolar, and Related Disorders",
+     "url": "https://openstax.org/books/psychology-2e/pages/15-7-depressive-bipolar-and-related-disorders",
+     "matchedTerms": [
+      "major depressive"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "109-諮商與輔導-3",
+   "title": "敘事治療與精神分析處理早期經驗的技術差異",
+   "coverage": "partial",
+   "note": "只涵蓋精神分析技術，沒有敘事治療",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "16.2",
+     "title": "Types of Treatment",
+     "url": "https://openstax.org/books/psychology-2e/pages/16-2-types-of-treatment",
+     "matchedTerms": [
+      "free association",
+      "transference"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "110-諮商與輔導-1",
+   "title": "心理動力與存在主義對覺察的觀點及比較",
+   "coverage": "partial",
+   "note": "只涵蓋心理動力部分，沒有存在主義",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "16.2",
+     "title": "Types of Treatment",
+     "url": "https://openstax.org/books/psychology-2e/pages/16-2-types-of-treatment",
+     "matchedTerms": [
+      "psychoanalysis"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "112-諮商與輔導-3",
+   "title": "網路霸凌的成因、行為、影響與處遇",
+   "coverage": "partial",
+   "note": "只涵蓋網路霸凌定義，沒有處遇",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "12.6",
+     "title": "Aggression",
+     "url": "https://openstax.org/books/psychology-2e/pages/12-6-aggression",
+     "matchedTerms": [
+      "cyberbullying"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "113-諮商與輔導-4",
+   "title": "Adler 自卑與追求卓越的平衡",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "11.3",
+     "title": "Neo-Freudians: Adler, Erikson, Jung, and Horney",
+     "url": "https://openstax.org/books/psychology-2e/pages/11-3-neo-freudians-adler-erikson-jung-and-horney",
+     "matchedTerms": [
+      "Adler",
+      "inferiority"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "114-諮商與輔導-2",
+   "title": "Beck 四種認知扭曲與好鬥少年",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "16.2",
+     "title": "Types of Treatment",
+     "url": "https://openstax.org/books/psychology-2e/pages/16-2-types-of-treatment",
+     "matchedTerms": [
+      "cognitive therapy",
+      "Beck"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "115-諮商與輔導-2",
+   "title": "Jung 分析心理學與曝險少年",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "11.3",
+     "title": "Neo-Freudians: Adler, Erikson, Jung, and Horney",
+     "url": "https://openstax.org/books/psychology-2e/pages/11-3-neo-freudians-adler-erikson-jung-and-horney",
+     "matchedTerms": [
+      "collective unconscious",
+      "archetype"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "監獄官-110-犯罪學與再犯預測-2",
+   "title": "偏差行為漏斗效應與無被害者犯罪特性",
+   "coverage": "partial",
+   "note": "沒有漏斗效應",
+   "sections": [
+    {
+     "book": "Introduction to Sociology 3e",
+     "section": "7.1",
+     "title": "Deviance and Control",
+     "url": "https://openstax.org/books/introduction-sociology-3e/pages/7-1-deviance-and-control",
+     "matchedTerms": [
+      "deviance"
+     ]
+    },
+    {
+     "book": "Introduction to Sociology 3e",
+     "section": "7.3",
+     "title": "Crime and the Law",
+     "url": "https://openstax.org/books/introduction-sociology-3e/pages/7-3-crime-and-the-law",
+     "matchedTerms": [
+      "victimless crime"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "監獄官-111-犯罪學與再犯預測-2",
+   "title": "標籤理論與 Finckenauer 的 4D 策略",
+   "coverage": "partial",
+   "note": "只涵蓋標籤理論，沒有 4D 策略",
+   "sections": [
+    {
+     "book": "Introduction to Sociology 3e",
+     "section": "7.2",
+     "title": "Theoretical Perspectives on Deviance and Crime",
+     "url": "https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime",
+     "matchedTerms": [
+      "Lemert",
+      "secondary deviance"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "監獄官-114-犯罪學與再犯預測-2",
+   "title": "Bandura 與 Akers 學習理論差異及詐欺犯罪",
+   "coverage": "partial",
+   "note": "沒有 Akers 差別增強理論",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "6.4",
+     "title": "Observational Learning (Modeling)",
+     "url": "https://openstax.org/books/psychology-2e/pages/6-4-observational-learning-modeling",
+     "matchedTerms": [
+      "observational learning"
+     ]
+    },
+    {
+     "book": "Introduction to Sociology 3e",
+     "section": "7.2",
+     "title": "Theoretical Perspectives on Deviance and Crime",
+     "url": "https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime",
+     "matchedTerms": [
+      "differential association"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "監獄官-114-犯罪學與再犯預測-3",
+   "title": "精神障礙者暴力犯罪成因與監護處分的預防學理",
+   "coverage": "partial",
+   "note": "只涵蓋症狀，沒有暴力風險與監護處分",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "15.8",
+     "title": "Schizophrenia",
+     "url": "https://openstax.org/books/psychology-2e/pages/15-8-schizophrenia",
+     "matchedTerms": [
+      "schizophrenia"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "監獄官-108-諮商與矯正輔導-1",
+   "title": "Beck 認知三層次：以走私犯為例",
+   "coverage": "partial",
+   "note": "有 Beck 認知治療，沒有認知三層次",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "16.2",
+     "title": "Types of Treatment",
+     "url": "https://openstax.org/books/psychology-2e/pages/16-2-types-of-treatment",
+     "matchedTerms": [
+      "cognitive therapy",
+      "Beck"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "監獄官-108-諮商與矯正輔導-3",
+   "title": "酒精使用障礙症的症狀與戒斷反應",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "4.5",
+     "title": "Substance Use and Abuse",
+     "url": "https://openstax.org/books/psychology-2e/pages/4-5-substance-use-and-abuse",
+     "matchedTerms": [
+      "alcohol",
+      "withdrawal"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "監獄官-108-諮商與矯正輔導-4",
+   "title": "人格障礙症、行為規範障礙與反社會型人格障礙症",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "15.11",
+     "title": "Personality Disorders",
+     "url": "https://openstax.org/books/psychology-2e/pages/15-11-personality-disorders",
+     "matchedTerms": [
+      "personality disorder",
+      "antisocial personality"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "監獄官-111-諮商與矯正輔導-2",
+   "title": "行為規範障礙症狀與 Bowen 取向處遇",
+   "coverage": "partial",
+   "note": "只涵蓋行為規範障礙，沒有 Bowen 取向",
+   "sections": [
+    {
+     "book": "Lifespan Development",
+     "section": "8.5",
+     "title": "Atypical Development and Interventions in Middle Childhood",
+     "url": "https://openstax.org/books/lifespan-development/pages/8-5-atypical-development-and-interventions-in-middle-childhood",
+     "matchedTerms": [
+      "conduct disorder"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "監獄官-113-諮商與矯正輔導-1",
+   "title": "三學派對抗拒的觀點與處理",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "16.2",
+     "title": "Types of Treatment",
+     "url": "https://openstax.org/books/psychology-2e/pages/16-2-types-of-treatment",
+     "matchedTerms": [
+      "psychoanalysis",
+      "humanistic",
+      "behavior therapy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "監獄官-113-諮商與矯正輔導-2",
+   "title": "暴力代間傳遞與介入技術",
+   "coverage": "partial",
+   "note": "只涵蓋社會學習，沒有 Bowen",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "6.4",
+     "title": "Observational Learning (Modeling)",
+     "url": "https://openstax.org/books/psychology-2e/pages/6-4-observational-learning-modeling",
+     "matchedTerms": [
+      "observational learning",
+      "Bobo"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "監獄官-114-諮商與矯正輔導-1",
+   "title": "Adler 學派在矯正機關的運用",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "11.3",
+     "title": "Neo-Freudians: Adler, Erikson, Jung, and Horney",
+     "url": "https://openstax.org/books/psychology-2e/pages/11-3-neo-freudians-adler-erikson-jung-and-horney",
+     "matchedTerms": [
+      "Adler",
+      "inferiority"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "監獄官-115-諮商與矯正輔導-1",
+   "title": "成癮團體中「你沒用過毒」的挑戰與移情",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "16.2",
+     "title": "Types of Treatment",
+     "url": "https://openstax.org/books/psychology-2e/pages/16-2-types-of-treatment",
+     "matchedTerms": [
+      "transference"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "監獄官-115-諮商與矯正輔導-4",
+   "title": "自傷自殺高風險判斷與系統合作",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "15.7",
+     "title": "Depressive, Bipolar, and Related Disorders",
+     "url": "https://openstax.org/books/psychology-2e/pages/15-7-depressive-bipolar-and-related-disorders",
+     "matchedTerms": [
+      "suicide"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-108-心理測驗-2",
+   "title": "離差智商轉換 Z、T 與 PR",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "7.5",
+     "title": "Measures of Intelligence",
+     "url": "https://openstax.org/books/psychology-2e/pages/7-5-measures-of-intelligence",
+     "matchedTerms": [
+      "standard deviation"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-114-心理測驗-1",
+   "title": "信度與效度的理論差異",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "2.3",
+     "title": "Analyzing Findings",
+     "url": "https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings",
+     "matchedTerms": [
+      "reliability",
+      "validity"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-108-犯罪學-2",
+   "title": "Hare 心理病態特徵與犯罪",
+   "coverage": "partial",
+   "note": "有反社會人格障礙，沒有 Hare 心理病態檢核表",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "15.11",
+     "title": "Personality Disorders",
+     "url": "https://openstax.org/books/psychology-2e/pages/15-11-personality-disorders",
+     "matchedTerms": [
+      "antisocial personality"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-110-犯罪學-1",
+   "title": "自我控制與標籤理論看監獄矯治失敗",
+   "coverage": "partial",
+   "note": "只涵蓋標籤理論，沒有自我控制理論",
+   "sections": [
+    {
+     "book": "Introduction to Sociology 3e",
+     "section": "7.2",
+     "title": "Theoretical Perspectives on Deviance and Crime",
+     "url": "https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime",
+     "matchedTerms": [
+      "secondary deviance",
+      "Lemert"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-110-犯罪學-2",
+   "title": "制度性迷亂理論與投資詐騙被害",
+   "coverage": "partial",
+   "note": "只涵蓋 Merton 緊張理論，沒有制度性迷亂理論",
+   "sections": [
+    {
+     "book": "Introduction to Sociology 3e",
+     "section": "7.2",
+     "title": "Theoretical Perspectives on Deviance and Crime",
+     "url": "https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime",
+     "matchedTerms": [
+      "strain theory",
+      "Merton"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-114-犯罪學-2",
+   "title": "Bandura 攻擊學習與矯正管理",
+   "coverage": "partial",
+   "note": "只涵蓋觀察學習，沒有矯正管理",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "6.4",
+     "title": "Observational Learning (Modeling)",
+     "url": "https://openstax.org/books/psychology-2e/pages/6-4-observational-learning-modeling",
+     "matchedTerms": [
+      "Bobo",
+      "observational learning"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-108-諮商與輔導-2",
+   "title": "酒藥癮的耐受與戒斷及瑞士方案",
+   "coverage": "partial",
+   "note": "沒有瑞士海洛因方案",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "4.5",
+     "title": "Substance Use and Abuse",
+     "url": "https://openstax.org/books/psychology-2e/pages/4-5-substance-use-and-abuse",
+     "matchedTerms": [
+      "tolerance",
+      "withdrawal"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-110-諮商與輔導-2",
+   "title": "憤怒管理：認知治療或個人中心",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "16.2",
+     "title": "Types of Treatment",
+     "url": "https://openstax.org/books/psychology-2e/pages/16-2-types-of-treatment",
+     "matchedTerms": [
+      "cognitive therapy",
+      "client-centered"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-112-諮商與輔導-2",
+   "title": "以 MBSR 與 MBCT 達成社會情緒學習",
+   "coverage": "partial",
+   "note": "只涵蓋冥想，沒有 MBSR／MBCT 與社會情緒學習",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "4.6",
+     "title": "Other States of Consciousness",
+     "url": "https://openstax.org/books/psychology-2e/pages/4-6-other-states-of-consciousness",
+     "matchedTerms": [
+      "meditation"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-114-諮商與輔導-3",
+   "title": "Rogers 六項條件應用於霸凌受害者",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "16.2",
+     "title": "Types of Treatment",
+     "url": "https://openstax.org/books/psychology-2e/pages/16-2-types-of-treatment",
+     "matchedTerms": [
+      "unconditional positive regard"
+     ]
+    },
+    {
+     "book": "Psychology 2e",
+     "section": "11.5",
+     "title": "Humanistic Approaches",
+     "url": "https://openstax.org/books/psychology-2e/pages/11-5-humanistic-approaches",
+     "matchedTerms": [
+      "congruence"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-114-諮商與輔導-4",
+   "title": "BPD 的替代模式分析與犯罪風險",
+   "coverage": "partial",
+   "note": "有邊緣型人格障礙，沒有 DSM-5 替代模式",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "15.11",
+     "title": "Personality Disorders",
+     "url": "https://openstax.org/books/psychology-2e/pages/15-11-personality-disorders",
+     "matchedTerms": [
+      "borderline"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-108-psychology-1",
+   "title": "五個心理學名詞解釋",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "6.4",
+     "title": "Observational Learning (Modeling)",
+     "url": "https://openstax.org/books/psychology-2e/pages/6-4-observational-learning-modeling",
+     "matchedTerms": [
+      "mirror neuron"
+     ]
+    },
+    {
+     "book": "Psychology 2e",
+     "section": "10.4",
+     "title": "Emotion",
+     "url": "https://openstax.org/books/psychology-2e/pages/10-4-emotion",
+     "matchedTerms": [
+      "Cannon-Bard"
+     ]
+    },
+    {
+     "book": "Psychology 2e",
+     "section": "8.4",
+     "title": "Ways to Enhance Memory",
+     "url": "https://openstax.org/books/psychology-2e/pages/8-4-ways-to-enhance-memory",
+     "matchedTerms": [
+      "chunking"
+     ]
+    },
+    {
+     "book": "Psychology 2e",
+     "section": "12.4",
+     "title": "Conformity, Compliance, and Obedience",
+     "url": "https://openstax.org/books/psychology-2e/pages/12-4-conformity-compliance-and-obedience",
+     "matchedTerms": [
+      "social loafing"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-108-psychology-2",
+   "title": "由上而下與由下而上歷程",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "5.1",
+     "title": "Sensation versus Perception",
+     "url": "https://openstax.org/books/psychology-2e/pages/5-1-sensation-versus-perception",
+     "matchedTerms": [
+      "top-down"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-108-psychology-3",
+   "title": "以處罰防止兒童不當行為",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "6.3",
+     "title": "Operant Conditioning",
+     "url": "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning",
+     "matchedTerms": [
+      "punishment"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-109-psychology-1",
+   "title": "飢餓與飽足的腦部兩階段歷程",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "10.2",
+     "title": "Hunger and Eating",
+     "url": "https://openstax.org/books/psychology-2e/pages/10-2-hunger-and-eating",
+     "matchedTerms": [
+      "leptin",
+      "ghrelin",
+      "hypothalamus"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-109-psychology-2",
+   "title": "Yerkes-Dodson 法則",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "10.1",
+     "title": "Motivation",
+     "url": "https://openstax.org/books/psychology-2e/pages/10-1-motivation",
+     "matchedTerms": [
+      "Yerkes"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-109-psychology-3",
+   "title": "自閉症類群障礙症的生理因素",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "15.10",
+     "title": "Disorders in Childhood",
+     "url": "https://openstax.org/books/psychology-2e/pages/15-10-disorders-in-childhood",
+     "matchedTerms": [
+      "autism"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-109-psychology-4",
+   "title": "內在與外在動機對學習的影響",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "10.1",
+     "title": "Motivation",
+     "url": "https://openstax.org/books/psychology-2e/pages/10-1-motivation",
+     "matchedTerms": [
+      "intrinsic motivation",
+      "extrinsic",
+      "overjustification"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-110-psychology-1",
+   "title": "遺忘的原因",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "8.3",
+     "title": "Problems with Memory",
+     "url": "https://openstax.org/books/psychology-2e/pages/8-3-problems-with-memory",
+     "matchedTerms": [
+      "interference",
+      "Ebbinghaus"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-110-psychology-2",
+   "title": "團體迷思",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "12.4",
+     "title": "Conformity, Compliance, and Obedience",
+     "url": "https://openstax.org/books/psychology-2e/pages/12-4-conformity-compliance-and-obedience",
+     "matchedTerms": [
+      "groupthink"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-110-psychology-3",
+   "title": "五個名詞解釋（英文）",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "8.1",
+     "title": "How Memory Functions",
+     "url": "https://openstax.org/books/psychology-2e/pages/8-1-how-memory-functions",
+     "matchedTerms": [
+      "implicit memory"
+     ]
+    },
+    {
+     "book": "Psychology 2e",
+     "section": "15.8",
+     "title": "Schizophrenia",
+     "url": "https://openstax.org/books/psychology-2e/pages/15-8-schizophrenia",
+     "matchedTerms": [
+      "hallucination",
+      "delusion"
+     ]
+    },
+    {
+     "book": "Psychology 2e",
+     "section": "15.11",
+     "title": "Personality Disorders",
+     "url": "https://openstax.org/books/psychology-2e/pages/15-11-personality-disorders",
+     "matchedTerms": [
+      "antisocial personality"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-110-psychology-4",
+   "title": "Freud 防衛機制",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "11.2",
+     "title": "Freud and the Psychodynamic Perspective",
+     "url": "https://openstax.org/books/psychology-2e/pages/11-2-freud-and-the-psychodynamic-perspective",
+     "matchedTerms": [
+      "defense mechanism",
+      "repression",
+      "sublimation"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-111-psychology-1",
+   "title": "壓力的反應取向與互動取向",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "14.1",
+     "title": "What Is Stress?",
+     "url": "https://openstax.org/books/psychology-2e/pages/14-1-what-is-stress",
+     "matchedTerms": [
+      "general adaptation syndrome",
+      "appraisal"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-111-psychology-2",
+   "title": "記憶提取與目擊證詞",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "8.3",
+     "title": "Problems with Memory",
+     "url": "https://openstax.org/books/psychology-2e/pages/8-3-problems-with-memory",
+     "matchedTerms": [
+      "eyewitness",
+      "misinformation effect"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-111-psychology-3",
+   "title": "用路人違規的心理歷程",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "12.1",
+     "title": "What Is Social Psychology?",
+     "url": "https://openstax.org/books/psychology-2e/pages/12-1-what-is-social-psychology",
+     "matchedTerms": [
+      "attribution"
+     ]
+    },
+    {
+     "book": "Psychology 2e",
+     "section": "12.3",
+     "title": "Attitudes and Persuasion",
+     "url": "https://openstax.org/books/psychology-2e/pages/12-3-attitudes-and-persuasion",
+     "matchedTerms": [
+      "cognitive dissonance"
+     ]
+    },
+    {
+     "book": "Psychology 2e",
+     "section": "11.2",
+     "title": "Freud and the Psychodynamic Perspective",
+     "url": "https://openstax.org/books/psychology-2e/pages/11-2-freud-and-the-psychodynamic-perspective",
+     "matchedTerms": [
+      "displacement"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-111-psychology-4",
+   "title": "詐騙集團的強制說服",
+   "coverage": "partial",
+   "note": "有說服與順從的概念，沒有強制說服",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "12.3",
+     "title": "Attitudes and Persuasion",
+     "url": "https://openstax.org/books/psychology-2e/pages/12-3-attitudes-and-persuasion",
+     "matchedTerms": [
+      "persuasion"
+     ]
+    },
+    {
+     "book": "Psychology 2e",
+     "section": "12.4",
+     "title": "Conformity, Compliance, and Obedience",
+     "url": "https://openstax.org/books/psychology-2e/pages/12-4-conformity-compliance-and-obedience",
+     "matchedTerms": [
+      "compliance"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-112-psychology-1",
+   "title": "旁觀者效應",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "12.6",
+     "title": "Aggression",
+     "url": "https://openstax.org/books/psychology-2e/pages/12-6-aggression",
+     "matchedTerms": [
+      "bystander",
+      "diffusion of responsibility"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-112-psychology-2",
+   "title": "認知評估與認知再評估",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "10.4",
+     "title": "Emotion",
+     "url": "https://openstax.org/books/psychology-2e/pages/10-4-emotion",
+     "matchedTerms": [
+      "appraisal"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-112-psychology-3",
+   "title": "投射測驗",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "11.9",
+     "title": "Personality Assessment",
+     "url": "https://openstax.org/books/psychology-2e/pages/11-9-personality-assessment",
+     "matchedTerms": [
+      "Rorschach",
+      "Thematic Apperception"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-112-psychology-4",
+   "title": "行為塑造",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "6.3",
+     "title": "Operant Conditioning",
+     "url": "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning",
+     "matchedTerms": [
+      "shaping"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-113-psychology-1",
+   "title": "腳在門檻裡與以退為進",
+   "coverage": "partial",
+   "note": "只涵蓋腳在門檻裡，沒有以退為進",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "12.3",
+     "title": "Attitudes and Persuasion",
+     "url": "https://openstax.org/books/psychology-2e/pages/12-3-attitudes-and-persuasion",
+     "matchedTerms": [
+      "foot-in-the-door",
+      "Freedman"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-113-psychology-2",
+   "title": "睡眠、藥物與毒品對意識的影響",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "4.3",
+     "title": "Stages of Sleep",
+     "url": "https://openstax.org/books/psychology-2e/pages/4-3-stages-of-sleep",
+     "matchedTerms": [
+      "REM"
+     ]
+    },
+    {
+     "book": "Psychology 2e",
+     "section": "4.5",
+     "title": "Substance Use and Abuse",
+     "url": "https://openstax.org/books/psychology-2e/pages/4-5-substance-use-and-abuse",
+     "matchedTerms": [
+      "stimulant",
+      "depressant"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-113-psychology-3",
+   "title": "Maslow 需求階層與生活型態",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "10.1",
+     "title": "Motivation",
+     "url": "https://openstax.org/books/psychology-2e/pages/10-1-motivation",
+     "matchedTerms": [
+      "Maslow",
+      "self-actualization"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-113-psychology-4",
+   "title": "以 Bandura 社會學習理論解釋犯罪",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "6.4",
+     "title": "Observational Learning (Modeling)",
+     "url": "https://openstax.org/books/psychology-2e/pages/6-4-observational-learning-modeling",
+     "matchedTerms": [
+      "observational learning"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-114-psychology-1",
+   "title": "成長、維持與失去的全人發展",
+   "coverage": "partial",
+   "note": "有 SOC 選擇、最適化與補償，沒有成長、維持、失去調節三目標",
+   "sections": [
+    {
+     "book": "Lifespan Development",
+     "section": "16.5",
+     "title": "Successful Social and Emotional Aging in Late Adulthood",
+     "url": "https://openstax.org/books/lifespan-development/pages/16-5-successful-social-and-emotional-aging-in-late-adulthood",
+     "matchedTerms": [
+      "selection, optimization, and compensation theory"
+     ]
+    },
+    {
+     "book": "Introduction to Sociology 3e",
+     "section": "13.4",
+     "title": "Theoretical Perspectives on Aging",
+     "url": "https://openstax.org/books/introduction-sociology-3e/pages/13-4-theoretical-perspectives-on-aging",
+     "matchedTerms": [
+      "selective optimization with compensation"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-114-psychology-2",
+   "title": "猝睡症的主要症狀",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "4.4",
+     "title": "Sleep Problems and Disorders",
+     "url": "https://openstax.org/books/psychology-2e/pages/4-4-sleep-problems-and-disorders",
+     "matchedTerms": [
+      "narcolepsy",
+      "cataplexy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-115-psychology-1",
+   "title": "Bandura 自我效能與青少年",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "11.4",
+     "title": "Learning Approaches",
+     "url": "https://openstax.org/books/psychology-2e/pages/11-4-learning-approaches",
+     "matchedTerms": [
+      "self-efficacy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-115-psychology-2",
+   "title": "三大經典學習理論",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "6.2",
+     "title": "Classical Conditioning",
+     "url": "https://openstax.org/books/psychology-2e/pages/6-2-classical-conditioning",
+     "matchedTerms": [
+      "classical conditioning"
+     ]
+    },
+    {
+     "book": "Psychology 2e",
+     "section": "6.3",
+     "title": "Operant Conditioning",
+     "url": "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning",
+     "matchedTerms": [
+      "operant conditioning"
+     ]
+    },
+    {
+     "book": "Psychology 2e",
+     "section": "6.4",
+     "title": "Observational Learning (Modeling)",
+     "url": "https://openstax.org/books/psychology-2e/pages/6-4-observational-learning-modeling",
+     "matchedTerms": [
+      "observational learning"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-108-criminology_prevention-1",
+   "title": "人性觀如何影響四種犯罪學理論",
+   "coverage": "partial",
+   "note": "沒有古典學派的理性享樂觀",
+   "sections": [
+    {
+     "book": "Introduction to Sociology 3e",
+     "section": "7.2",
+     "title": "Theoretical Perspectives on Deviance and Crime",
+     "url": "https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime",
+     "matchedTerms": [
+      "strain theory",
+      "social disorganization",
+      "Hirschi"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-108-criminology_prevention-2",
+   "title": "Sampson 社區脈絡與暴力犯罪",
+   "coverage": "partial",
+   "note": "只涵蓋社會解組論，沒有集體效能",
+   "sections": [
+    {
+     "book": "Introduction to Sociology 3e",
+     "section": "7.2",
+     "title": "Theoretical Perspectives on Deviance and Crime",
+     "url": "https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime",
+     "matchedTerms": [
+      "Sampson",
+      "social disorganization"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-108-criminology_prevention-3",
+   "title": "差別接觸與差別增強理論比較",
+   "coverage": "partial",
+   "note": "沒有 Akers 差別增強理論",
+   "sections": [
+    {
+     "book": "Introduction to Sociology 3e",
+     "section": "7.2",
+     "title": "Theoretical Perspectives on Deviance and Crime",
+     "url": "https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime",
+     "matchedTerms": [
+      "differential association"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-111-criminology_prevention-2",
+   "title": "中立化技術",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Introduction to Sociology 3e",
+     "section": "7.2",
+     "title": "Theoretical Perspectives on Deviance and Crime",
+     "url": "https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime",
+     "matchedTerms": [
+      "neutralization",
+      "Denial of Responsibility"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-112-criminology_prevention-1",
+   "title": "犯罪黑數",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Introduction to Sociology 3e",
+     "section": "7.3",
+     "title": "Crime and the Law",
+     "url": "https://openstax.org/books/introduction-sociology-3e/pages/7-3-crime-and-the-law",
+     "matchedTerms": [
+      "Uniform Crime",
+      "National Crime Victimization",
+      "self-report"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-112-criminology_prevention-2",
+   "title": "Merton 與 Agnew 的緊張理論與詐欺",
+   "coverage": "partial",
+   "note": "只涵蓋 Merton，沒有 Agnew 一般化緊張理論",
+   "sections": [
+    {
+     "book": "Introduction to Sociology 3e",
+     "section": "7.2",
+     "title": "Theoretical Perspectives on Deviance and Crime",
+     "url": "https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime",
+     "matchedTerms": [
+      "strain theory",
+      "Innovation"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-108-counseling-2",
+   "title": "Adler 學派",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "11.3",
+     "title": "Neo-Freudians: Adler, Erikson, Jung, and Horney",
+     "url": "https://openstax.org/books/psychology-2e/pages/11-3-neo-freudians-adler-erikson-jung-and-horney",
+     "matchedTerms": [
+      "Adler",
+      "inferiority"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-109-counseling-1",
+   "title": "理情治療與行為治療比較",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "16.2",
+     "title": "Types of Treatment",
+     "url": "https://openstax.org/books/psychology-2e/pages/16-2-types-of-treatment",
+     "matchedTerms": [
+      "rational emotive",
+      "systematic desensitization"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-109-counseling-4",
+   "title": "五個諮商名詞解釋",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "16.2",
+     "title": "Types of Treatment",
+     "url": "https://openstax.org/books/psychology-2e/pages/16-2-types-of-treatment",
+     "matchedTerms": [
+      "systematic desensitization"
+     ]
+    },
+    {
+     "book": "Psychology 2e",
+     "section": "11.3",
+     "title": "Neo-Freudians: Adler, Erikson, Jung, and Horney",
+     "url": "https://openstax.org/books/psychology-2e/pages/11-3-neo-freudians-adler-erikson-jung-and-horney",
+     "matchedTerms": [
+      "Adler"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-110-counseling-4",
+   "title": "自殺與危機因子及輔導防治",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "15.7",
+     "title": "Depressive, Bipolar, and Related Disorders",
+     "url": "https://openstax.org/books/psychology-2e/pages/15-7-depressive-bipolar-and-related-disorders",
+     "matchedTerms": [
+      "suicide"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-111-counseling-4",
+   "title": "國中生非自殺性自傷的輔導",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "15.7",
+     "title": "Depressive, Bipolar, and Related Disorders",
+     "url": "https://openstax.org/books/psychology-2e/pages/15-7-depressive-bipolar-and-related-disorders",
+     "matchedTerms": [
+      "self-harm"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-112-counseling-2",
+   "title": "初顯成人愛情團體方案",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Lifespan Development",
+     "section": "11.1",
+     "title": "Becoming an Adult",
+     "url": "https://openstax.org/books/lifespan-development/pages/11-1-becoming-an-adult",
+     "matchedTerms": [
+      "emerging adulthood"
+     ]
+    },
+    {
+     "book": "Lifespan Development",
+     "section": "10.4",
+     "title": "Social Contexts in Adolescence",
+     "url": "https://openstax.org/books/lifespan-development/pages/10-4-social-contexts-in-adolescence",
+     "matchedTerms": [
+      "dating violence"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-114-counseling-2",
+   "title": "ASPD 的人格功能與病態特質",
+   "coverage": "partial",
+   "note": "有反社會人格障礙，沒有 DSM-5 替代模式",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "15.11",
+     "title": "Personality Disorders",
+     "url": "https://openstax.org/books/psychology-2e/pages/15-11-personality-disorders",
+     "matchedTerms": [
+      "antisocial personality"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-114-counseling-3",
+   "title": "警察人員八週正念減壓課程",
+   "coverage": "partial",
+   "note": "只涵蓋冥想，沒有八週正念減壓課程",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "4.6",
+     "title": "Other States of Consciousness",
+     "url": "https://openstax.org/books/psychology-2e/pages/4-6-other-states-of-consciousness",
+     "matchedTerms": [
+      "meditation"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "108-心理測驗員-心理學-1",
+   "title": "遺忘的因素與影響",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "8.3",
+     "title": "Problems with Memory",
+     "url": "https://openstax.org/books/psychology-2e/pages/8-3-problems-with-memory",
+     "matchedTerms": [
+      "interference"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "108-心理測驗員-心理學-2",
+   "title": "為什麼需要睡眠與睡眠不足的後果",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "4.2",
+     "title": "Sleep and Why We Sleep",
+     "url": "https://openstax.org/books/psychology-2e/pages/4-2-sleep-and-why-we-sleep",
+     "matchedTerms": [
+      "sleep deprivation"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "108-心理測驗員-心理學-4",
+   "title": "退化、補償與合理化",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "11.2",
+     "title": "Freud and the Psychodynamic Perspective",
+     "url": "https://openstax.org/books/psychology-2e/pages/11-2-freud-and-the-psychodynamic-perspective",
+     "matchedTerms": [
+      "regression",
+      "rationalization"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "109-心理測驗員-心理學-1",
+   "title": "以內外在動機提高振興券使用",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "10.1",
+     "title": "Motivation",
+     "url": "https://openstax.org/books/psychology-2e/pages/10-1-motivation",
+     "matchedTerms": [
+      "intrinsic motivation",
+      "overjustification"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "109-心理測驗員-心理學-2",
+   "title": "社會學習與認知行為理論輔導偏差學生",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "6.4",
+     "title": "Observational Learning (Modeling)",
+     "url": "https://openstax.org/books/psychology-2e/pages/6-4-observational-learning-modeling",
+     "matchedTerms": [
+      "observational learning"
+     ]
+    },
+    {
+     "book": "Psychology 2e",
+     "section": "16.2",
+     "title": "Types of Treatment",
+     "url": "https://openstax.org/books/psychology-2e/pages/16-2-types-of-treatment",
+     "matchedTerms": [
+      "cognitive-behavioral"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "109-心理測驗員-心理學-3",
+   "title": "災難後的 PTSD",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "15.6",
+     "title": "Trauma- and Stressor-Related Disorders",
+     "url": "https://openstax.org/books/psychology-2e/pages/15-6-trauma-and-stressor-related-disorders",
+     "matchedTerms": [
+      "PTSD"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "109-心理測驗員-心理學-4",
+   "title": "增進記憶的方法",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "8.4",
+     "title": "Ways to Enhance Memory",
+     "url": "https://openstax.org/books/psychology-2e/pages/8-4-ways-to-enhance-memory",
+     "matchedTerms": [
+      "levels of processing"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "110-心理測驗員-心理學-1",
+   "title": "認知因素在學習中的重要性",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "6.3",
+     "title": "Operant Conditioning",
+     "url": "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning",
+     "matchedTerms": [
+      "latent learning",
+      "Tolman"
+     ]
+    },
+    {
+     "book": "Psychology 2e",
+     "section": "6.4",
+     "title": "Observational Learning (Modeling)",
+     "url": "https://openstax.org/books/psychology-2e/pages/6-4-observational-learning-modeling",
+     "matchedTerms": [
+      "observational learning"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "110-心理測驗員-心理學-2",
+   "title": "知覺的認識與行動功能",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "5.6",
+     "title": "Gestalt Principles of Perception",
+     "url": "https://openstax.org/books/psychology-2e/pages/5-6-gestalt-principles-of-perception",
+     "matchedTerms": [
+      "Gestalt"
+     ]
+    },
+    {
+     "book": "Psychology 2e",
+     "section": "6.4",
+     "title": "Observational Learning (Modeling)",
+     "url": "https://openstax.org/books/psychology-2e/pages/6-4-observational-learning-modeling",
+     "matchedTerms": [
+      "mirror neuron"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "110-心理測驗員-心理學-3",
+   "title": "自我調節與自我效能",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "11.4",
+     "title": "Learning Approaches",
+     "url": "https://openstax.org/books/psychology-2e/pages/11-4-learning-approaches",
+     "matchedTerms": [
+      "self-efficacy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "110-心理測驗員-心理學-4",
+   "title": "團體決策為何常不佳",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "12.4",
+     "title": "Conformity, Compliance, and Obedience",
+     "url": "https://openstax.org/books/psychology-2e/pages/12-4-conformity-compliance-and-obedience",
+     "matchedTerms": [
+      "groupthink",
+      "group polarization"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "113-家事調查官-心理測驗員-心理學-1",
+   "title": "Ainsworth 四種依附與依附創傷",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "9.3",
+     "title": "Stages of Development",
+     "url": "https://openstax.org/books/psychology-2e/pages/9-3-stages-of-development",
+     "matchedTerms": [
+      "Strange Situation",
+      "disorganized"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "113-家事調查官-心理測驗員-心理學-4",
+   "title": "前額葉未成熟的青少年行為",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Lifespan Development",
+     "section": "9.4",
+     "title": "Decision-Making and Risky Behaviors in Adolescence",
+     "url": "https://openstax.org/books/lifespan-development/pages/9-4-decision-making-and-risky-behaviors-in-adolescence",
+     "matchedTerms": [
+      "Steinberg"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "114-家事調查官-心理測驗員-心理學-4",
+   "title": "基本歸因謬誤與自利偏誤",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "12.1",
+     "title": "What Is Social Psychology?",
+     "url": "https://openstax.org/books/psychology-2e/pages/12-1-what-is-social-psychology",
+     "matchedTerms": [
+      "fundamental attribution error",
+      "self-serving bias"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "115-家事調查官-心理測驗員-心理學-1",
+   "title": "MBTI 與大五人格的信效度",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "11.9",
+     "title": "Personality Assessment",
+     "url": "https://openstax.org/books/psychology-2e/pages/11-9-personality-assessment",
+     "matchedTerms": [
+      "Myers-Briggs"
+     ]
+    },
+    {
+     "book": "Psychology 2e",
+     "section": "11.7",
+     "title": "Trait Theorists",
+     "url": "https://openstax.org/books/psychology-2e/pages/11-7-trait-theorists",
+     "matchedTerms": [
+      "Big Five"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "115-家事調查官-心理測驗員-心理學-2",
+   "title": "遊戲化機制的動機分析",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "10.1",
+     "title": "Motivation",
+     "url": "https://openstax.org/books/psychology-2e/pages/10-1-motivation",
+     "matchedTerms": [
+      "intrinsic motivation",
+      "overjustification"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "115-家事調查官-心理測驗員-心理學-3",
+   "title": "邊開車邊講電話的注意力問題",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "5.1",
+     "title": "Sensation versus Perception",
+     "url": "https://openstax.org/books/psychology-2e/pages/5-1-sensation-versus-perception",
+     "matchedTerms": [
+      "inattentional blindness"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "監所管理員-108-犯罪學概要-3",
+   "title": "無被害者犯罪的犯罪化與除罪化",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Introduction to Sociology 3e",
+     "section": "7.3",
+     "title": "Crime and the Law",
+     "url": "https://openstax.org/books/introduction-sociology-3e/pages/7-3-crime-and-the-law",
+     "matchedTerms": [
+      "victimless crime"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "監所管理員-109-犯罪學概要-1",
+   "title": "自陳報告調查",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Introduction to Sociology 3e",
+     "section": "7.3",
+     "title": "Crime and the Law",
+     "url": "https://openstax.org/books/introduction-sociology-3e/pages/7-3-crime-and-the-law",
+     "matchedTerms": [
+      "self-report"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "監所管理員-109-犯罪學概要-2",
+   "title": "Freud 心理分析與犯罪學",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Psychology 2e",
+     "section": "11.2",
+     "title": "Freud and the Psychodynamic Perspective",
+     "url": "https://openstax.org/books/psychology-2e/pages/11-2-freud-and-the-psychodynamic-perspective",
+     "matchedTerms": [
+      "superego",
+      "id"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "監所管理員-111-犯罪學概要-2",
+   "title": "Hirschi 社會鍵與家庭",
+   "coverage": "full",
+   "note": "",
+   "sections": [
+    {
+     "book": "Introduction to Sociology 3e",
+     "section": "7.2",
+     "title": "Theoretical Perspectives on Deviance and Crime",
+     "url": "https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime",
+     "matchedTerms": [
+      "four types of social bonds",
+      "Attachment",
+      "Commitment",
+      "Involvement"
+     ]
+    }
+   ]
+  }
+ ],
+ "uncovered": [
+  "108-犯罪學-1",
+  "108-犯罪學-2",
+  "109-犯罪學-3",
+  "109-犯罪學-4",
+  "110-犯罪學-3",
+  "111-犯罪學-1",
+  "111-犯罪學-2",
+  "111-犯罪學-3",
+  "112-犯罪學-1",
+  "112-犯罪學-2",
+  "112-犯罪學-3",
+  "113-犯罪學-2",
+  "113-犯罪學-3",
+  "114-犯罪學-2",
+  "114-犯罪學-3",
+  "115-犯罪學-1",
+  "115-犯罪學-2",
+  "115-犯罪學-3",
+  "115-犯罪學-4",
+  "108-心理學-4",
+  "111-心理學-1",
+  "112-心理學-1",
+  "112-心理學-2",
+  "112-心理學-3",
+  "112-心理學-4",
+  "115-心理學-2",
+  "108-諮商與輔導-1",
+  "108-諮商與輔導-2",
+  "108-諮商與輔導-3",
+  "109-諮商與輔導-4",
+  "110-諮商與輔導-2",
+  "110-諮商與輔導-3",
+  "111-諮商與輔導-1",
+  "111-諮商與輔導-2",
+  "111-諮商與輔導-3",
+  "111-諮商與輔導-4",
+  "112-諮商與輔導-1",
+  "112-諮商與輔導-2",
+  "112-諮商與輔導-4",
+  "113-諮商與輔導-1",
+  "113-諮商與輔導-2",
+  "113-諮商與輔導-3",
+  "114-諮商與輔導-1",
+  "114-諮商與輔導-3",
+  "114-諮商與輔導-4",
+  "115-諮商與輔導-1",
+  "115-諮商與輔導-3",
+  "115-諮商與輔導-4",
+  "監獄官-108-犯罪學與再犯預測-1",
+  "監獄官-108-犯罪學與再犯預測-2",
+  "監獄官-108-犯罪學與再犯預測-3",
+  "監獄官-108-犯罪學與再犯預測-4",
+  "監獄官-109-犯罪學與再犯預測-1",
+  "監獄官-109-犯罪學與再犯預測-2",
+  "監獄官-109-犯罪學與再犯預測-3",
+  "監獄官-109-犯罪學與再犯預測-4",
+  "監獄官-110-犯罪學與再犯預測-1",
+  "監獄官-110-犯罪學與再犯預測-3",
+  "監獄官-110-犯罪學與再犯預測-4",
+  "監獄官-111-犯罪學與再犯預測-1",
+  "監獄官-111-犯罪學與再犯預測-3",
+  "監獄官-111-犯罪學與再犯預測-4",
+  "監獄官-112-犯罪學與再犯預測-1",
+  "監獄官-112-犯罪學與再犯預測-2",
+  "監獄官-112-犯罪學與再犯預測-3",
+  "監獄官-112-犯罪學與再犯預測-4",
+  "監獄官-113-犯罪學與再犯預測-1",
+  "監獄官-113-犯罪學與再犯預測-2",
+  "監獄官-113-犯罪學與再犯預測-3",
+  "監獄官-113-犯罪學與再犯預測-4",
+  "監獄官-114-犯罪學與再犯預測-1",
+  "監獄官-114-犯罪學與再犯預測-4",
+  "監獄官-115-犯罪學與再犯預測-1",
+  "監獄官-115-犯罪學與再犯預測-2",
+  "監獄官-115-犯罪學與再犯預測-3",
+  "監獄官-115-犯罪學與再犯預測-4",
+  "監獄官-108-諮商與矯正輔導-2",
+  "監獄官-109-諮商與矯正輔導-1",
+  "監獄官-109-諮商與矯正輔導-2",
+  "監獄官-109-諮商與矯正輔導-3",
+  "監獄官-109-諮商與矯正輔導-4",
+  "監獄官-110-諮商與矯正輔導-1",
+  "監獄官-110-諮商與矯正輔導-2",
+  "監獄官-110-諮商與矯正輔導-3",
+  "監獄官-110-諮商與矯正輔導-4",
+  "監獄官-111-諮商與矯正輔導-1",
+  "監獄官-111-諮商與矯正輔導-3",
+  "監獄官-111-諮商與矯正輔導-4",
+  "監獄官-112-諮商與矯正輔導-1",
+  "監獄官-112-諮商與矯正輔導-2",
+  "監獄官-112-諮商與矯正輔導-3",
+  "監獄官-112-諮商與矯正輔導-4",
+  "監獄官-113-諮商與矯正輔導-3",
+  "監獄官-113-諮商與矯正輔導-4",
+  "監獄官-114-諮商與矯正輔導-2",
+  "監獄官-114-諮商與矯正輔導-3",
+  "監獄官-114-諮商與矯正輔導-4",
+  "監獄官-115-諮商與矯正輔導-2",
+  "監獄官-115-諮商與矯正輔導-3",
+  "薦任升等（矯正）-108-心理測驗-1",
+  "薦任升等（矯正）-108-心理測驗-3",
+  "薦任升等（矯正）-108-心理測驗-4",
+  "薦任升等（矯正）-110-心理測驗-1",
+  "薦任升等（矯正）-110-心理測驗-2",
+  "薦任升等（矯正）-110-心理測驗-3",
+  "薦任升等（矯正）-110-心理測驗-4",
+  "薦任升等（矯正）-112-心理測驗-1",
+  "薦任升等（矯正）-112-心理測驗-2",
+  "薦任升等（矯正）-112-心理測驗-3",
+  "薦任升等（矯正）-112-心理測驗-4",
+  "薦任升等（矯正）-114-心理測驗-2",
+  "薦任升等（矯正）-114-心理測驗-3",
+  "薦任升等（矯正）-114-心理測驗-4",
+  "薦任升等（矯正）-108-犯罪學-1",
+  "薦任升等（矯正）-108-犯罪學-3",
+  "薦任升等（矯正）-108-犯罪學-4",
+  "薦任升等（矯正）-110-犯罪學-3",
+  "薦任升等（矯正）-110-犯罪學-4",
+  "薦任升等（矯正）-112-犯罪學-1",
+  "薦任升等（矯正）-112-犯罪學-2",
+  "薦任升等（矯正）-112-犯罪學-3",
+  "薦任升等（矯正）-112-犯罪學-4",
+  "薦任升等（矯正）-114-犯罪學-1",
+  "薦任升等（矯正）-114-犯罪學-3",
+  "薦任升等（矯正）-114-犯罪學-4",
+  "薦任升等（矯正）-108-諮商與輔導-1",
+  "薦任升等（矯正）-108-諮商與輔導-3",
+  "薦任升等（矯正）-108-諮商與輔導-4",
+  "薦任升等（矯正）-110-諮商與輔導-1",
+  "薦任升等（矯正）-110-諮商與輔導-3",
+  "薦任升等（矯正）-110-諮商與輔導-4",
+  "薦任升等（矯正）-112-諮商與輔導-1",
+  "薦任升等（矯正）-112-諮商與輔導-3",
+  "薦任升等（矯正）-112-諮商與輔導-4",
+  "薦任升等（矯正）-114-諮商與輔導-1",
+  "薦任升等（矯正）-114-諮商與輔導-2",
+  "police-108-psychology-4",
+  "police-114-psychology-3",
+  "police-114-psychology-4",
+  "police-115-psychology-3",
+  "police-115-psychology-4",
+  "police-108-criminology_prevention-4",
+  "police-109-criminology_prevention-1",
+  "police-109-criminology_prevention-2",
+  "police-109-criminology_prevention-3",
+  "police-109-criminology_prevention-4",
+  "police-110-criminology_prevention-1",
+  "police-110-criminology_prevention-2",
+  "police-110-criminology_prevention-3",
+  "police-110-criminology_prevention-4",
+  "police-111-criminology_prevention-1",
+  "police-111-criminology_prevention-3",
+  "police-111-criminology_prevention-4",
+  "police-112-criminology_prevention-3",
+  "police-112-criminology_prevention-4",
+  "police-113-criminology_prevention-1",
+  "police-113-criminology_prevention-2",
+  "police-113-criminology_prevention-3",
+  "police-113-criminology_prevention-4",
+  "police-114-criminology_prevention-1",
+  "police-114-criminology_prevention-2",
+  "police-114-criminology_prevention-3",
+  "police-114-criminology_prevention-4",
+  "police-115-criminology_prevention-1",
+  "police-115-criminology_prevention-2",
+  "police-115-criminology_prevention-3",
+  "police-115-criminology_prevention-4",
+  "police-108-counseling-1",
+  "police-108-counseling-3",
+  "police-108-counseling-4",
+  "police-109-counseling-2",
+  "police-109-counseling-3",
+  "police-110-counseling-1",
+  "police-110-counseling-2",
+  "police-110-counseling-3",
+  "police-111-counseling-1",
+  "police-111-counseling-2",
+  "police-111-counseling-3",
+  "police-112-counseling-1",
+  "police-112-counseling-3",
+  "police-112-counseling-4",
+  "police-113-counseling-1",
+  "police-113-counseling-2",
+  "police-113-counseling-3",
+  "police-113-counseling-4",
+  "police-114-counseling-1",
+  "police-114-counseling-4",
+  "police-115-counseling-1",
+  "police-115-counseling-2",
+  "police-115-counseling-3",
+  "police-115-counseling-4",
+  "108-心理測驗員-心理學-3",
+  "113-家事調查官-心理測驗員-心理學-2",
+  "113-家事調查官-心理測驗員-心理學-3",
+  "114-家事調查官-心理測驗員-心理學-1",
+  "114-家事調查官-心理測驗員-心理學-2",
+  "114-家事調查官-心理測驗員-心理學-3",
+  "115-家事調查官-心理測驗員-心理學-4",
+  "監所管理員-108-犯罪學概要-1",
+  "監所管理員-108-犯罪學概要-2",
+  "監所管理員-109-犯罪學概要-3",
+  "監所管理員-110-犯罪學概要-1",
+  "監所管理員-110-犯罪學概要-2",
+  "監所管理員-110-犯罪學概要-3",
+  "監所管理員-111-犯罪學概要-1",
+  "監所管理員-111-犯罪學概要-3",
+  "監所管理員-112-犯罪學概要-1",
+  "監所管理員-112-犯罪學概要-2",
+  "監所管理員-112-犯罪學概要-3",
+  "監所管理員-113-犯罪學概要-1",
+  "監所管理員-113-犯罪學概要-2",
+  "監所管理員-113-犯罪學概要-3",
+  "監所管理員-114-犯罪學概要-1",
+  "監所管理員-114-犯罪學概要-2",
+  "監所管理員-114-犯罪學概要-3",
+  "監所管理員-115-犯罪學概要-1",
+  "監所管理員-115-犯罪學概要-2",
+  "監所管理員-115-犯罪學概要-3"
+ ]
+}
