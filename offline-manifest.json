@@ -524,6 +524,9 @@
       "url": "storage/full-backup.mjs"
     },
     {
+      "url": "storage/full-drive.mjs"
+    },
+    {
       "url": "storage/indexeddb.js"
     },
     {
