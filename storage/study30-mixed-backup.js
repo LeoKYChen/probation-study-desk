@@ -9,7 +9,7 @@
  'use strict';
  const STUDY='probation-study30-v251:v1';
  const own=(obj,key)=>Object.prototype.hasOwnProperty.call(obj,key);
- function create({core,database,legacy,origin,managedKeys}){
+ function create({core,database,legacy,origin,managedKeys,allowLegacyWrites=false}){
   if(!core||!database||!legacy)throw Error('缺少備份或資料庫元件');
   const keys=[...core.modules.map(x=>x.key),core.CONFLICT_KEY];
   const managed=managedKeys===undefined?[STUDY,core.CONFLICT_KEY]:managedKeys.slice();
@@ -35,18 +35,29 @@
   async function plan(input){core.validate(input);return core.plan(await snapshot(),input);}
   async function apply(action){
    if(!action||!action.baseline||!action.changes)throw Error('匯入計畫不正確');
-   if(Object.keys(action.changes).some(k=>!managed.includes(k)))throw Error('此測試版本只能匯入每日30分鐘等已遷移模組，其他模組尚未整合');
+   const legacyKeys=keys.filter(k=>!managed.includes(k));
+   if(!allowLegacyWrites&&Object.keys(action.changes).some(k=>!managed.includes(k)))throw Error('此測試版本只能匯入每日30分鐘等已遷移模組，其他模組尚未整合');
    for(const [key,raw] of Object.entries(action.changes)){if(typeof raw!=='string')throw Error('資料格式不正確');validate(key,raw);}
    const current=await snapshot();
    if(keys.some(key=>current[key]!==action.baseline[key]))throw Error('資料在預覽後已有更新，請重新預覽');
    const baseline=Object.create(null);
    for(const key of managed)if(own(action.baseline,key))baseline[key]=action.baseline[key];
-   const count=await database.compareAndSetMany(managed,baseline,action.changes);
+   const idbChanges=Object.fromEntries(Object.entries(action.changes).filter(([key])=>managed.includes(key)));
+   const legacyChanges=Object.fromEntries(Object.entries(action.changes).filter(([key])=>!managed.includes(key)));
+   const count=await database.compareAndSetMany(managed,baseline,idbChanges);
    // Cross-database writes are not atomic; detect legacy writers and fail closed.
-   await checkLegacy();
-   return count;
+   try{
+    await checkLegacy();
+    if(Object.keys(legacyChanges).length){
+     // Project managed keys as their preview values; only legacy keys are writable.
+     // The shared core checks and rolls back every synchronous localStorage write.
+     const projection={getItem:key=>managed.includes(key)?(own(action.baseline,key)?action.baseline[key]:null):legacy.getItem(key),setItem:(key,value)=>{if(!legacyKeys.includes(key))throw Error('不允許寫入已遷移模組');legacy.setItem(key,value);},removeItem:key=>{if(!legacyKeys.includes(key))throw Error('不允許移除已遷移模組');legacy.removeItem(key);}};
+     core.apply(projection,{baseline:action.baseline,changes:legacyChanges});
+    }
+   }catch(e){throw Error('IndexedDB 部分已處理，舊模組匯入未完成；請保留備份並重新預覽：'+e.message);}
+   return count+Object.keys(legacyChanges).length;
   }
-  return {managedKeys:managed.slice(),snapshot,collect,plan,apply};
+  return {managedKeys:managed.slice(),restoreKeys:(allowLegacyWrites?keys:managed).slice(),snapshot,collect,plan,apply};
  }
  return {create};
 });

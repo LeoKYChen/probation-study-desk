@@ -118,7 +118,7 @@ export function applyDeskImport(plan,deskDatabase){
 // learning transaction fails, callers must retry after a fresh preview.
 export async function planRestore({bundle,core,learning,deskDatabase}){
  validate(bundle,core);
- const managedKeys=learning.managedKeys;
+ const managedKeys=learning.restoreKeys||learning.managedKeys;
  assert(Array.isArray(managedKeys)&&managedKeys.length>0,'缺少已遷移模組清單');
  const modulePlan=await learning.plan(bundle.learning);
  const allowed=new Set(managedKeys);

@@ -6,7 +6,7 @@ if(window.PSD_STUDY30_IDB_TEST===true){
  const start=async()=>{
   const core=window.PSDUnifiedBackup,host=document.createElement('section');host.className='card';host.id='testFullBackup';
   const h=document.createElement('h2');h.textContent='測試版：全站 JSON 與備考書桌';host.append(h);
-  const note=document.createElement('p');note.textContent='僅供合成資料測試。匯出包含目前網址的模組及書桌；還原只支援已接入 IndexedDB 的模組。計時不包含在全站備份中。';host.append(note);
+  const note=document.createElement('p');note.textContent='僅供合成資料測試。匯出包含目前網址列入清單的模組及書桌；匯入時請先關閉其他編輯分頁。進行中的分頁計時不包含在備份中。';host.append(note);
   const message=document.createElement('p');message.setAttribute('role','status');message.id='testFullStatus';host.append(message);
   const button=(text,action)=>{const b=document.createElement('button');b.type='button';b.textContent=text;b.addEventListener('click',action);host.append(b);return b;};
   const input=document.createElement('input');input.type='file';input.accept='.json,application/json';input.setAttribute('aria-label','選擇測試版全站備份');
@@ -90,7 +90,7 @@ if(window.PSD_STUDY30_IDB_TEST===true){
    if(window.PSD_V25_IDB_TEST===true)managedKeys.push('probation-study-desk-v24','probation-study-desk-v3','probation-study-desk-v2');
    if(window.PSD_LECTURES_IDB_TEST===true)managedKeys.push('psd-lecture-planner-v1');
    if(window.PSD_COMMON_IDB_TEST===true)managedKeys.push('psd-common-subjects-v1','psd-staresto-link-coach-v06','psd-staresto-daily-v04');
-   learning=window.PSDStudy30MixedBackup.create({core,database,legacy:localStorage,origin:location.origin,managedKeys});
+   learning=window.PSDStudy30MixedBackup.create({core,database,legacy:localStorage,origin:location.origin,managedKeys,allowLegacyWrites:true});
    await learning.snapshot();await renderArchives();addDrive();save.disabled=protect.disabled=apply.disabled=input.disabled=false;tell('測試儲存已開啟；請先關閉其他編輯分頁。');
   }catch(e){tell('測試備份無法啟動：'+e.message);database?.close();desk?.close();}
  };
