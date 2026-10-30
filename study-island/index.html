@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#86c9ba">
+<meta name="description" content="觀護人學習平臺的原創療癒小島：專注學習、完成申論與訂正，換取裝飾小島的資源。">
+<title>觀護學習島｜觀護人學習平臺</title>
+<style>
+:root{font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC",sans-serif;color:#30534a;background:#e6f5f0;font-size:16px}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:linear-gradient(#bfe9ea 0,#eaf7ea 42%,#f9f3df 100%);line-height:1.55}
+button,input{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.48}button:focus-visible,a:focus-visible{outline:3px solid #316b86;outline-offset:3px}
+a{color:#235d57}.shell{max-width:1160px;padding:22px 16px 72px;margin:auto}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.back{padding:9px 15px;text-decoration:none;border-radius:999px;background:#fff9e8;border:2px solid #d8e7cb;font-weight:700}
+.brand{display:flex;align-items:center;gap:10px}.brand-icon{font-size:34px}.brand strong{font-size:22px}.brand small{display:block;color:#657b71}
+h1{font-size:clamp(27px,4.5vw,45px);line-height:1.2;margin:24px 0 7px;letter-spacing:.02em}h2{font-size:22px;margin:0 0 10px}h3{font-size:16px;margin:0 0 8px}
+.lead{margin:0 0 20px;max-width:740px;color:#58756b}.layout{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(280px,1fr);gap:18px}
+.card{border-radius:24px;border:2px solid rgba(89,139,111,.2);background:rgba(255,255,249,.95);box-shadow:0 10px 28px rgba(73,112,103,.10);padding:20px;min-width:0}
+.stats{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:17px}.stat{padding:8px 13px;background:#f5f5de;border:1px solid #e7e9c8;border-radius:16px;font-weight:730}
+.stat small{font-weight:500;color:#65766a;margin-right:5px}
+.island-card{background:linear-gradient(155deg,#bce9d8 0%,#d9f4dd 78%);position:relative;overflow:hidden}.island-card:before{content:"☁";position:absolute;top:18px;right:28px;color:#fff;font-size:58px;opacity:.65;pointer-events:none}
+.island-top{position:relative;z-index:1}.island-caption{font-size:13px;color:#4b7562;margin:0 0 12px}
+.sea{background:#81c8d9;padding:18px;border-radius:38px;border:7px solid #9bdde5;box-shadow:inset 0 0 0 5px rgba(255,255,255,.18)}
+.map{max-width:570px;margin:auto;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:3px;aspect-ratio:1.13}
+.plot{position:relative;min-width:0;min-height:0;display:grid;place-items:center;padding:0;border:0;border-radius:9px;background:linear-gradient(160deg,#b6de8e,#95cb7f);box-shadow:inset 0 -4px rgba(42,103,47,.10);font-size:clamp(20px,3.5vw,36px);transition:transform .12s,filter .12s}
+.plot:nth-child(even){background:linear-gradient(150deg,#bde69c,#9cd58a)}.plot:hover{filter:brightness(1.05)}.plot:active{transform:scale(.95)}
+.plot.fixed{cursor:default}.plot.empty{font-size:18px;color:rgba(44,93,54,.34)}.plot.placeable{outline:2px dashed rgba(46,112,58,.35);outline-offset:-6px}
+.plot em{font-style:normal;filter:drop-shadow(0 3px 1px rgba(28,75,39,.12))}.plot span{position:absolute;bottom:1px;right:5px;font-size:9px;opacity:.55}
+.notice{margin-top:12px;padding:11px 14px;border-radius:14px;background:rgba(255,255,255,.76);min-height:48px;font-weight:600}
+.side{display:grid;align-content:start;gap:17px}.residents{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.resident{border:2px solid #e1e8d2;border-radius:15px;background:#f9f8e9;padding:10px 3px;text-align:center;min-width:0}
+.resident .face{font-size:34px;display:block}.resident .name{font-size:13px;font-weight:750;display:block}
+.dialogue{border-radius:15px;background:#eaf6df;padding:13px;margin-top:12px;min-height:75px}
+.actions{display:flex;gap:9px;flex-wrap:wrap}.btn{border-radius:13px;border:2px solid #4c967a;background:#4c967a;color:white;font-weight:730;padding:11px 15px;min-height:45px}
+.btn.secondary{background:#fffefa;color:#326c5b;border-color:#b6d6be}.btn.gold{background:#ddad59;border-color:#ddad59;color:#3b3522}
+small.muted,.help{font-size:13px;color:#62786e}.help{margin:10px 0 0}
+.task{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:13px 0;border-bottom:1px dashed #d3e4d4}.task:last-child{border-bottom:0}
+.task strong{display:block}.task small{color:#718378}.task button{flex:0 0 auto}
+.timer{font-size:clamp(34px,6vw,52px);font-variant-numeric:tabular-nums;font-weight:800;letter-spacing:.02em;color:#336f66;margin:6px 0}
+.shop{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.goods{padding:12px;border-radius:15px;background:#f7faeb;border:2px solid #e2ecd8}
+.goods .emoji{font-size:30px}.goods strong{display:block}.goods small{display:block;font-size:12px;color:#59746a;margin:3px 0 10px}
+.log{list-style:none;padding:0;margin:0;max-height:130px;overflow:auto}.log li{padding:5px 0;border-bottom:1px dashed #e0e6d9;font-size:13px}
+.footer{margin-top:24px;color:#526f64;font-size:13px}.footer a{font-weight:700}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.file-label{display:inline-flex;align-items:center;justify-content:center;min-height:45px;padding:11px 15px;border:2px solid #b6d6be;border-radius:13px;color:#326c5b;background:#fffefa;font-weight:720;cursor:pointer}
+@media(max-width:780px){.layout{grid-template-columns:minmax(0,1fr)}.sea{padding:10px;border-width:5px}.map{aspect-ratio:1.12}.plot{border-radius:7px;font-size:clamp(20px,6vw,34px)}}
+@media(max-width:400px){.shell{padding:13px 10px 50px}.card{padding:13px;border-radius:18px}.stats{gap:5px}.stat{padding:6px 9px;font-size:13px}.residents .face{font-size:28px}.btn{padding:9px 11px}.shop{gap:7px}}
+@media(prefers-reduced-motion:reduce){.plot{transition:none}}
+.season-label{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border-radius:999px;background:#fff7d6;border:1px solid rgba(116,148,106,.28);font-size:13px;font-weight:760;margin:0 0 12px}
+.map-frame{position:relative}.sea{position:relative;background:repeating-linear-gradient(130deg,#88d3dd 0px,#88d3dd 24px,#91dae3 25px,#91dae3 45px);border-color:#b1e5de}
+.map{padding:9px;border:9px solid #f5e8a2;border-radius:25px;background:#f4e8b1;gap:4px;box-shadow:0 10px 12px rgba(27,113,116,.15)}
+.plot{overflow:visible;border-radius:6px 9px 7px 8px;box-shadow:inset 0 2px rgba(255,255,255,.26),inset 0 -5px rgba(40,89,38,.08)}.plot em{transform:translateY(-3px);transition:transform .2s ease}.plot:hover em{transform:translateY(-6px) rotate(-4deg)}
+.sea[data-season="autumn"] .plot{background:linear-gradient(145deg,#e4dc97,#b4c47d)}.sea[data-season="winter"] .plot{background:linear-gradient(145deg,#f4f5dd,#cadcd4)}.sea[data-season="spring"] .plot{background:linear-gradient(145deg,#c9e4a4,#9cce87)}
+.sea[data-time="night"]{background:repeating-linear-gradient(145deg,#407b9a,#407b9a 20px,#4c89a5 21px,#4c89a5 40px)}.sea[data-time="night"] .plot{filter:brightness(.82)}.sea[data-time="night"] .plot em{filter:drop-shadow(0 0 6px rgba(255,249,166,.25))}
+.hearts{font-size:11px;color:#ce7d83;display:block}.resident{transition:transform .2s,background .2s}.resident:hover{transform:translateY(-3px);background:#fffcef}
+.weektrack{width:100%;height:15px;accent-color:#68ab87;border-radius:12px}.weekrows{display:flex;justify-content:space-between;flex-wrap:wrap;gap:7px;align-items:center}.weekdays{font-size:13px;color:#567768}.week-stamp{display:flex;gap:5px;margin:11px 0}.week-stamp span{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;background:#e6eade;color:#69867b}.week-stamp span.done{background:#b6e1b8;color:#286444;font-weight:800}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.milestone{padding:6px 10px;border:1px solid #d9dfcc;border-radius:999px;background:#f6f5e8;color:#73877b;font-size:12px}.milestone.unlocked{background:#fff0b9;color:#79551f;border-color:#e4d59a}
+.boost{padding:12px 15px;background:rgba(255,255,255,.7);border-radius:15px;border:1px solid #cce4d0;margin-bottom:12px;font-size:14px}
+@media(max-width:540px){.map{border-width:6px;padding:5px;gap:2px}.week-stamp span{width:29px;height:29px}.map-frame{min-width:0}.sea{padding:7px}.plot em{font-size:clamp(19px,7vw,30px)}}
+@media(prefers-reduced-motion:reduce){.plot em,.resident{transition:none}}
+
+/* Original cozy island look — hand-drawn scenery, softer UI, less dashboard */
+:root{--ocean:#82d5db;--cream:#fff9e6;--forest:#356b56}
+body{background:linear-gradient(#bce7e8 0%,#e4f5e4 36%,#f9efcf 100%);color:#36564a}
+.shell{max-width:1260px}
+.top{border-radius:27px;padding:11px 17px;background:#fff9e9eb;border:3px solid #fff;box-shadow:0 8px 20px #3c775221}
+.brand-icon{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:#f5deb0;font-size:26px}
+.brand strong{font-family:"Trebuchet MS","Noto Sans TC",sans-serif;color:#396e58}
+.back{border-radius:25px}
+.arrival{height:312px;overflow:hidden;position:relative;border:6px solid #fff9e9;border-radius:39px;margin:20px 0;box-shadow:0 12px 30px #51867930;background:linear-gradient(130deg,#d5f5e2,#bee8e4 60%,#e0efc0)}
+.arrival-copy{position:relative;z-index:2;padding:25px 30px;max-width:51%;min-height:100%;display:flex;flex-direction:column;justify-content:center}
+.eyebrow{letter-spacing:.15em;font-size:13px;font-weight:840;color:#5e9278;background:#fffae9dd;padding:4px 13px;border-radius:99px;align-self:flex-start}
+.arrival h1{color:#2b6f59;font-size:clamp(32px,4.1vw,53px);line-height:1.25;margin:12px 0;text-shadow:0 2px #fff9}
+.arrival .lead{font-size:15px;color:#4d7766;margin:0 0 15px;max-width:400px}
+.date-chips{display:flex;gap:8px;flex-wrap:wrap}
+.date-chips span{background:#fff9e6e8;border:1px solid #e7dbb5;padding:6px 12px;border-radius:99px;font-size:13px;font-weight:760}
+.hero-art{position:absolute;inset:-10px -10px -1px auto;width:65%;z-index:1;pointer-events:none}
+.hero-art svg{width:100%;height:100%}
+.nav-pills{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.nav-pills a{background:#fffdf3;border:2px solid #fff;text-decoration:none;border-radius:25px;padding:9px 16px;color:#44715f;font-weight:800;font-size:13px;box-shadow:0 4px 0 #dce9d3}
+.nav-pills a:hover{background:#ffeccc}
+.layout{grid-template-columns:minmax(0,1.55fr) minmax(300px,.95fr);gap:23px;align-items:start}
+.card{border:3px solid #fff;border-radius:30px;box-shadow:0 8px 0 #dfe7cd,0 14px 28px #5c796b27;background:#fffdf2}
+.card h2{color:#426e57;font-size:23px}
+.stat{border:2px solid #f7efd8;border-radius:19px;box-shadow:0 4px 0 #e1e7cf;background:#fff9e7}
+.island-card{background:linear-gradient(150deg,#d4f2e6,#e9f4d4);box-shadow:0 9px 0 #bfd9be,0 18px 30px #3d796a25}
+.island-card:before{content:"";width:81px;height:27px;border-radius:50%;background:#fff;opacity:.8;top:26px;right:40px;box-shadow:-20px 6px #fff,24px 7px #fff}
+.season-label{background:#ffefc5;border:2px solid #fff7dc}
+.boost{background:#fffaf0;border:2px dashed #b7d4b9}
+.sea{position:relative;overflow:hidden;padding:25px 18px 35px;border:7px solid #a7e1e3;border-radius:48px;min-height:420px;display:flex;align-items:center;justify-content:center;background:repeating-radial-gradient(ellipse at 30% 42%,#87d3de 0 8px,#9ddce2 10px 20px,#83cfd9 22px 28px);box-shadow:inset 0 0 0 5px #e9ffff70}
+.sea:before{content:"🐚";position:absolute;font-size:22px;left:17px;bottom:14px;transform:rotate(-20deg)}
+.sea:after{content:"☁";position:absolute;top:8px;right:20px;color:#fff9;font-size:45px}
+.sea[data-time="night"]{background:repeating-radial-gradient(ellipse at 40% 30%,#4e96b0 0 15px,#367f9c 17px 29px);border-color:#86b9c4}
+.sea[data-time="night"]:after{content:"☾";color:#fff4b8}
+.map{width:100%;max-width:610px;aspect-ratio:1.11;gap:0;padding:25px 20px;border:13px solid #f6e3a0;border-radius:44% 56% 45% 55% / 22% 20% 19% 21%;background:#9ad17d;box-shadow:0 13px 0 #d2b57e,0 19px 20px #387f884a,inset 0 0 0 5px #ffedb4;z-index:1}
+.plot,.plot:nth-child(even){border-radius:0;outline:0;box-shadow:none;background:linear-gradient(135deg,#a3d88b,#9bd17d)}
+.plot:nth-child(3n){background:linear-gradient(145deg,#a9db8c,#9acb7e)}
+.plot:is(:nth-child(9),:nth-child(15),:nth-child(16),:nth-child(22),:nth-child(23),:nth-child(29)){background:linear-gradient(135deg,#e7d9a9,#ecddae)}
+.plot.placeable{outline:0}.plot.empty em{opacity:0}
+.plot.empty:hover,.plot.empty:focus-visible{background:#c7e6a5;outline:2px dashed #fff3d4;outline-offset:-3px;z-index:2}
+.plot.empty:hover em,.plot.empty:focus-visible em{opacity:.8}
+.plot em{font-size:clamp(24px,3.7vw,42px);filter:drop-shadow(1px 5px 1px #4c81483a);text-shadow:0 1px #fff6}
+.sea[data-season="autumn"] .plot{background:linear-gradient(140deg,#d8d58b,#bec57e)}
+.sea[data-season="winter"] .plot{background:linear-gradient(140deg,#edf1d9,#d3e2d9)}
+.sea[data-season="spring"] .plot{background:linear-gradient(140deg,#b3db8c,#a3d48e)}
+.island-plaque{position:absolute;bottom:14px;right:15px;background:#fff2cf;border:3px solid #ab8a58;box-shadow:0 4px #977749;border-radius:11px;padding:4px 12px;color:#8b673e;z-index:2;font-weight:850;font-size:14px;transform:rotate(-3deg);max-width:60%}
+.island-actionbar{margin:14px 0 2px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:9px;align-items:center}
+.island-name-edit{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:13px;font-weight:780}
+.island-name-edit input{font-size:16px;border:2px solid #b8d1b4;border-radius:15px;background:#fffdf2;padding:8px 10px;max-width:140px;width:36vw;color:#46735a}
+.island-name-edit button,.wander-button{min-height:42px;background:#fff9e5;border:2px solid #c5d7b6;color:#3c725b;border-radius:18px;padding:8px 12px;font-weight:790}
+.wander-button{background:#f2dbab;border-color:#dbbf83}
+.notice{border:2px solid #f2e3c3;border-radius:20px;background:#fff9e8;padding:13px 16px;box-shadow:0 4px 0 #dbe7d6}
+.side{gap:22px}.resident{border-radius:22px;background:#fff5e6;border:2px solid #f1e4cd;box-shadow:0 4px 0 #e7e4cf}
+.resident:nth-child(2){background:#f5eddc}.resident:nth-child(3){background:#fff1ea}.resident:nth-child(4){background:#eaf2f3}
+.resident .face{display:grid;place-items:center;min-height:70px}
+.resident .face svg{width:64px;height:64px;filter:drop-shadow(1px 4px #756d5030);transition:transform .2s}
+.resident:hover .face svg{transform:rotate(-7deg) scale(1.08)}
+.dialogue{border:2px solid #eee0bf;border-radius:22px;padding:17px;background:#fdf7e0;box-shadow:0 4px 0 #ede4d0;line-height:1.8;position:relative}
+.dialogue:before{content:"";position:absolute;top:-9px;left:27px;width:15px;height:15px;background:#fdf7e0;transform:rotate(45deg);border-left:2px solid #eee0bf;border-top:2px solid #eee0bf}
+.btn{border-radius:19px;box-shadow:0 3px #2c7856}.btn.secondary{box-shadow:0 3px #a8c9ac}.btn.gold{box-shadow:0 3px #c18e54}
+.goods{border-radius:23px;background:#fcf8e8;box-shadow:0 4px 0 #e1e8d6}.goods .emoji{font-size:42px;text-align:center}.goods strong{text-align:center}
+.timer{display:inline-block;border-radius:18px;background:#f5f4df;padding:5px 18px;box-shadow:inset 0 -3px #e8e7cf}
+.task{border-radius:16px;padding-left:10px;background:linear-gradient(90deg,#fffaf0,#fffef5)}
+.shell.wandering .layout{display:block}.shell.wandering .side{display:none}.shell.wandering .map{max-width:780px}.shell.wandering .sea{min-height:560px}
+@media(max-width:920px){.layout{grid-template-columns:1fr}.hero-art{width:65%}}
+@media(max-width:650px){.arrival{height:360px;border-radius:29px}.arrival-copy{max-width:none;height:100%;justify-content:flex-start;padding:20px}.arrival h1{font-size:35px;max-width:300px}.arrival .lead{max-width:300px;font-size:13px}.hero-art{width:100%;height:64%;top:auto;bottom:-5px;right:-12%}.nav-pills{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.nav-pills a{white-space:nowrap;flex:none}.sea{min-height:275px;padding:13px 7px;border-width:5px}.map{padding:14px 10px;border-width:8px}.plot em{font-size:clamp(20px,6.8vw,36px)}.island-card{padding:14px}.island-plaque{font-size:11px}.resident .face{min-height:50px}.resident .face svg{width:49px;height:49px}.shell.wandering .sea{min-height:290px}}
+@media(max-width:380px){.arrival h1{font-size:30px}.map{padding:9px 5px;border-width:7px}.sea{padding:10px 5px}}
+@media(prefers-reduced-motion:reduce){.resident .face svg{transition:none}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <header class="top">
+    <div class="brand"><span class="brand-icon" aria-hidden="true">🏝️</span><div><strong>觀護學習島</strong><small>Study Island · 原創療癒學習空間</small></div></div>
+    <a class="back" href="https://leokychen.github.io/probation-study-desk/">← 回學習平臺</a>
+  </header>
+  <main>
+<section class="arrival" aria-label="小島歡迎畫面"><div class="arrival-copy"><span class="eyebrow">✿ WELCOME HOME ✿</span><h1>今天，也到島上<br>走走吧！</h1><p class="lead">寫一點申論、種一棵樹、和居民聊聊天。讀書，也可以是舒服的旅程。</p><div class="date-chips"><span id="hero-date">美好的一天</span><span id="hero-time">--:--</span></div></div><div class="hero-art" aria-hidden="true">
+<svg viewBox="0 0 720 360" preserveAspectRatio="xMidYMax slice"><defs><linearGradient id="seaGrad" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#92dbe0"/><stop offset="1" stop-color="#67c1d1"/></linearGradient></defs><circle cx="552" cy="68" r="41" fill="#fff2b7" stroke="#fffce4" stroke-width="8"/><g fill="#fff"><ellipse cx="215" cy="74" rx="60" ry="18"/><circle cx="196" cy="59" r="23"/><circle cx="235" cy="56" r="27"/></g><path d="M-10 267 Q200 243 390 261 T730 254V390H-10Z" fill="url(#seaGrad)"/><path d="M10 290 Q220 277 350 292 T720 285" stroke="#e5fff6" stroke-width="5" fill="none" opacity=".8"/><ellipse cx="436" cy="303" rx="282" ry="87" fill="#f6d99e"/><ellipse cx="438" cy="280" rx="260" ry="88" fill="#a6d28b"/><path d="M414 291 Q455 332 494 362" fill="none" stroke="#e8d19f" stroke-width="28" stroke-linecap="round"/><path d="M341 263V182L431 145L526 182V263Z" fill="#ffdfb5" stroke="#bd9471" stroke-width="4"/><path d="m328 187 103-74 111 75" stroke="#bd7965" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="#e69c84"/><rect x="411" y="222" width="42" height="42" rx="18" fill="#987463"/><circle cx="443" cy="242" r="2.8" fill="#ffe5ab"/><rect x="363" y="204" width="35" height="32" rx="5" fill="#b5e5dd" stroke="#9d9f82" stroke-width="5"/><path d="M380 204v32m-17-16h35" stroke="#fff8db" stroke-width="4"/><rect x="462" y="204" width="35" height="32" rx="5" fill="#b5e5dd" stroke="#9d9f82" stroke-width="5"/><path d="M480 204v32m-18-16h35" stroke="#fff8db" stroke-width="4"/><g stroke="#99734f" stroke-width="13" stroke-linecap="round"><path d="M230 282v-85M578 276v-81"/></g><g fill="#82c386"><circle cx="230" cy="178" r="42"/><circle cx="202" cy="204" r="29"/><circle cx="260" cy="203" r="30"/><circle cx="578" cy="174" r="42"/><circle cx="549" cy="204" r="29"/><circle cx="603" cy="205" r="30"/></g><g fill="#e0f0af"><circle cx="205" cy="194" r="18"/><circle cx="601" cy="190" r="18"/></g><g fill="#fff3de"><circle cx="298" cy="275" r="9"/><circle cx="315" cy="282" r="8"/><circle cx="539" cy="288" r="9"/><circle cx="559" cy="296" r="8"/></g><g fill="#efadab"><circle cx="298" cy="275" r="3.5"/><circle cx="315" cy="282" r="3"/><circle cx="539" cy="288" r="3.5"/><circle cx="559" cy="296" r="3"/></g><path d="M131 217q5-6 10 0m12 0q5-6 10 0" stroke="#84a39c" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+</div></section><nav class="nav-pills" aria-label="小島快速入口"><a href="#island-h">🏝️ 去海邊</a><a href="#residents-h">🐾 找居民</a><a href="#task-h">📒 委託任務</a><a href="#shop-h">🛍️ 雜貨店</a><a href="#history-h">📷 日誌</a></nav>
+    <div class="stats" aria-label="學習島狀態">
+      <span class="stat"><small>🐚 貝殼</small><b id="coins">0</b></span>
+      <span class="stat"><small>✨ 成長值</small><b id="xp">0</b></span>
+      <span class="stat"><small>🌱 累計學習日</small><b id="days">0</b></span>
+      <span class="stat"><small>🏡 小島等級</small><b id="level">1</b></span>
+    </div>
+    <div class="layout">
+      <section class="card island-card" aria-labelledby="island-h">
+        <div class="island-top">
+          <h2 id="island-h">🌼 我的島嶼</h2>
+          <div class="season-label" id="season" aria-live="polite">🍃 四季小島</div>
+          <div class="boost" id="village-status" aria-live="polite">🏡 小小村落，等著你一點一點建設。</div>
+          <p class="island-caption">商店購買裝飾後，在草地點一下就能擺放；點選已擺放的裝飾可收回。</p>
+          <div class="sea" id="sea"><div id="map" class="map" role="group" aria-label="六乘六島嶼布置地圖"></div><div class="island-plaque">🏡 <span id="island-sign">小樹灣</span></div></div><div class="island-actionbar"><div class="island-name-edit"><label for="island-name">🏷️ 島名</label><input id="island-name" maxlength="14" value="小樹灣"><button id="name-save" type="button">保存</button></div><button class="wander-button" id="wander" type="button" aria-pressed="false">🌿 漫遊模式</button></div>
+          <div class="notice" id="notice" role="status" aria-live="polite">歡迎來到小島！先和居民打聲招呼吧。</div>
+        </div>
+      </section>
+      <div class="side">
+        <section class="card" aria-labelledby="residents-h">
+          <h2 id="residents-h">🐾 小島居民</h2>
+          <div class="residents">
+            <button class="resident" type="button" data-r="fox"><span class="face" aria-hidden="true"><svg viewBox="0 0 80 80" aria-hidden="true"><path d="m10 28 9-22 18 17h9L66 6l5 24" fill="#d29c63" stroke="#98724d" stroke-width="3"/><path d="m18 18 4-6 9 13M53 25l9-13 4 13" fill="#efa9a1"/><ellipse cx="40" cy="46" rx="30" ry="28" fill="#dca16b" stroke="#a67b4e" stroke-width="2"/><path d="M21 48Q40 37 59 48Q54 69 40 70Q25 68 21 48" fill="#fff0dc"/><circle cx="29" cy="43" r="3.6" fill="#534238"/><circle cx="52" cy="43" r="3.6" fill="#534238"/><path d="m36 52 8 0-4 5z" fill="#78534b"/><path d="M40 57q-4 6-9 0m9 0q5 6 9 0" stroke="#946e5a" stroke-width="2" fill="none"/></svg></span><span class="name">栗子</span><span class="hearts" id="heart-fox">♡ 0</span></button>
+            <button class="resident" type="button" data-r="bear"><span class="face" aria-hidden="true"><svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="19" cy="21" r="13" fill="#b98a65" stroke="#956f52" stroke-width="3"/><circle cx="61" cy="21" r="13" fill="#b98a65" stroke="#956f52" stroke-width="3"/><circle cx="19" cy="21" r="6" fill="#e1b9ae"/><circle cx="61" cy="21" r="6" fill="#e1b9ae"/><ellipse cx="40" cy="45" rx="31" ry="30" fill="#bb916d" stroke="#956f52" stroke-width="2"/><ellipse cx="40" cy="55" rx="18" ry="14" fill="#efd7b3"/><circle cx="29" cy="41" r="3.5" fill="#54473a"/><circle cx="52" cy="41" r="3.5" fill="#54473a"/><ellipse cx="40" cy="51" rx="5" ry="4" fill="#674a3e"/><path d="M40 55v4m0 0q-5 5-10 0m10 0q5 5 10 0" stroke="#805c48" stroke-width="2" fill="none"/></svg></span><span class="name">阿棕</span><span class="hearts" id="heart-bear">♡ 0</span></button>
+            <button class="resident" type="button" data-r="bunny"><span class="face" aria-hidden="true"><svg viewBox="0 0 80 80" aria-hidden="true"><ellipse cx="28" cy="22" rx="11" ry="23" fill="#fff0eb" stroke="#d3b5ad" stroke-width="2" transform="rotate(-12 28 22)"/><ellipse cx="54" cy="22" rx="11" ry="23" fill="#fff0eb" stroke="#d3b5ad" stroke-width="2" transform="rotate(12 54 22)"/><ellipse cx="28" cy="21" rx="4.5" ry="15" fill="#e7afb8" transform="rotate(-12 28 21)"/><ellipse cx="54" cy="21" rx="4.5" ry="15" fill="#e7afb8" transform="rotate(12 54 21)"/><ellipse cx="41" cy="48" rx="29" ry="29" fill="#fff0eb" stroke="#d3b5ad" stroke-width="2"/><circle cx="29" cy="44" r="3.3" fill="#695d5f"/><circle cx="51" cy="44" r="3.3" fill="#695d5f"/><path d="M36 52q5-5 10 0q-5 8-10 0" fill="#e6a7ae"/><path d="M41 58q-5 5-9 0m9 0q5 5 9 0" stroke="#b59293" stroke-width="2" fill="none"/></svg></span><span class="name">小白</span><span class="hearts" id="heart-bunny">♡ 0</span></button>
+            <button class="resident" type="button" data-r="owl"><span class="face" aria-hidden="true"><svg viewBox="0 0 80 80" aria-hidden="true"><path d="M13 28 11 7l17 13q14-8 25 0L69 7l-2 24q9 34-26 43Q8 68 13 28" fill="#8cabb3" stroke="#678994" stroke-width="2.5"/><ellipse cx="28" cy="43" rx="16" ry="20" fill="#e9eadb"/><ellipse cx="53" cy="43" rx="16" ry="20" fill="#e9eadb"/><circle cx="29" cy="42" r="9" fill="#fff9e9"/><circle cx="53" cy="42" r="9" fill="#fff9e9"/><circle cx="29" cy="42" r="3.5" fill="#506468"/><circle cx="53" cy="42" r="3.5" fill="#506468"/><path d="m37 52 8 0-4 7z" fill="#eab983"/><path d="M26 65q15 7 29 0" fill="none" stroke="#6a9298" stroke-width="3"/></svg></span><span class="name">墨墨</span><span class="hearts" id="heart-owl">♡ 0</span></button>
+          </div>
+          <p id="talk" class="dialogue" aria-live="polite">🦊 栗子：少年事件處理法的爭點好多，但我們可以一題一題拆開看！</p>
+        </section>
+        <section class="card" aria-labelledby="focus-h">
+          <h2 id="focus-h">🍵 森林專注屋</h2>
+          <div class="timer" id="clock" aria-label="專注倒數時間">25:00</div>
+          <div class="actions">
+            <button class="btn" id="start25" type="button">專注 25 分鐘</button>
+            <button class="btn secondary" id="start5" type="button">先讀 5 分鐘</button>
+            <button class="btn secondary" id="cancel" type="button" disabled>取消</button>
+          </div>
+          <p class="help">25 分鐘：🐚 +35／✨ +30；5 分鐘：🐚 +7／✨ +6。倒數在背景依實際時間推進；完成後自動領取。請自行確認確實有專注。</p>
+        </section>
+        <section class="card" aria-labelledby="task-h">
+          <h2 id="task-h">📚 今日的小任務</h2>
+          <div class="task"><div><strong>完成一題申論練習</strong><small>🐚 +20 ／ ✨ +25</small></div><button class="btn gold" type="button" data-claim="practice">自行確認</button></div>
+          <div class="task"><div><strong>完成一次訂正或主動回憶</strong><small>🐚 +15 ／ ✨ +20</small></div><button class="btn gold" type="button" data-claim="review">自行確認</button></div>
+          <div class="task"><div><strong>完成一段學科或法條閱讀</strong><small>🐚 +12 ／ ✨ +18</small></div><button class="btn gold" type="button" data-claim="reading">自行確認</button></div>
+          <p class="help">以上為自我回報，每天各可領取一次；目前不讀取考古題、IndexedDB 或其他模組的私人紀錄。</p>
+          <div class="actions"><a href="https://leokychen.github.io/probation-study-desk/v2.5/">前往考古題</a><a href="https://leokychen.github.io/probation-study-desk/active-recall/">前往主動回憶</a></div>
+        </section>
+        <section class="card" aria-labelledby="weekly-h">
+          <h2 id="weekly-h">🌤️ 本週居民委託</h2>
+          <div class="weekrows"><strong id="weekly-title">本週 0／3 個學習日</strong><span class="weekdays">每週完成 3 天，就能替村莊點燈</span></div>
+          <progress id="week-progress" class="weektrack" value="0" max="3">0/3</progress>
+          <div id="week-stamps" class="week-stamp" aria-label="本週學習足跡"></div>
+          <button id="weekly-claim" class="btn gold" type="button" disabled>領取村民心意 🐚80・✨60</button>
+          <p class="help">同一天完成多項練習仍只算一個學習日；未滿三天不會扣分，下週重新開始。以本機日期為準。</p>
+          <h3 style="margin-top:15px">🏅 收藏徽章</h3><div id="milestones" class="badges"></div>
+        </section>
+        <section class="card" aria-labelledby="shop-h">
+          <h2 id="shop-h">🛍️ 貝殼雜貨店</h2>
+          <div id="shop" class="shop"></div>
+          <p class="help" id="selection">選好想擺放的裝飾，再點島上的空草地。</p>
+        </section>
+        <section class="card" aria-labelledby="history-h">
+          <h2 id="history-h">📖 小島日誌與備份</h2>
+          <ul class="log" id="history" aria-label="最近活動紀錄"></ul>
+          <div class="actions" style="margin-top:13px">
+            <button class="btn secondary" id="export" type="button">匯出小島 JSON</button>
+            <label class="file-label" for="import">匯入小島 JSON</label>
+            <input class="sr-only" id="import" type="file" accept=".json,application/json">
+          </div>
+          <p class="help">僅保存於這個瀏覽器與網域的獨立儲存空間。不同裝置、網站網域不會自動同步，也不會進入既有考古題備份；請定期匯出。</p>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">這是個人學習輔助遊戲，非正式成績或考試評量。使用原創居民、場景與規則，不使用《動物森友會》的角色、圖像或遊戲素材。 · <a href="https://leokychen.github.io/probation-study-desk/">回首頁</a></footer>
+</div>
+<script>
+(function(){
+"use strict";
+const KEY="probationStudyIsland.v1";
+const goods=[
+ {id:"flower",icon:"🌷",name:"花圃",cost:12},
+ {id:"tree",icon:"🌳",name:"小樹",cost:24},
+ {id:"bench",icon:"🪑",name:"木椅",cost:38},
+ {id:"tent",icon:"⛺",name:"帳篷",cost:62},
+ {id:"garden",icon:"🍄",name:"蘑菇園",cost:48},
+ {id:"lamp",icon:"🏮",name:"小燈籠",cost:55}
+];
+const fixed={2:"🌲",8:"🏡",13:"🌻",20:"🌲",27:"🌿",34:"🌲"};
+const $=id=>document.getElementById(id);
+const defaultState=()=>({version:1,coins:30,xp:0,days:[],claims:{},owned:{flower:1},plots:Array(36).fill(""),history:[],focusEnd:0,focusMinutes:0,hearts:{fox:0,bear:0,bunny:0,owl:0},weeklyClaimed:[],islandName:"小樹灣"});
+function today(){let d=new Date();return [d.getFullYear(),String(d.getMonth()+1).padStart(2,"0"),String(d.getDate()).padStart(2,"0")].join("-");}
+function sanitize(raw){
+ if(!raw||raw.version!==1||!Array.isArray(raw.plots)||raw.plots.length!==36)throw Error("這不是相容的小島備份。");
+ const s=defaultState(), ids=goods.map(g=>g.id), integer=(n,max)=>Number.isSafeInteger(n)?Math.max(0,Math.min(max,n)):0;
+ s.coins=integer(raw.coins,1000000);s.xp=integer(raw.xp,1000000);
+ s.days=Array.isArray(raw.days)?[...new Set(raw.days.filter(x=>typeof x==="string"&&/^\d{4}-\d{2}-\d{2}$/.test(x)))].slice(-2000):[];
+ s.claims={};
+ if(raw.claims&&typeof raw.claims==="object"&&!Array.isArray(raw.claims)){
+  Object.keys(raw.claims).slice(-400).forEach(day=>{if(/^\d{4}-\d{2}-\d{2}$/.test(day)){let v=raw.claims[day];s.claims[day]={practice:!!(v&&v.practice),review:!!(v&&v.review),reading:!!(v&&v.reading)};}});}
+ s.owned={};ids.forEach(id=>{s.owned[id]=integer(raw.owned&&raw.owned[id],1000);});
+ s.plots=raw.plots.map((id,i)=>!fixed[i]&&ids.includes(id)?id:"");
+ s.history=Array.isArray(raw.history)?raw.history.filter(x=>typeof x==="string").slice(-30).map(x=>x.slice(0,160)):[];
+ s.focusEnd=Number.isSafeInteger(raw.focusEnd)&&raw.focusEnd>Date.now()-86400000&&raw.focusEnd<Date.now()+86400000?raw.focusEnd:0;
+  s.hearts={};["fox","bear","bunny","owl"].forEach(id=>{s.hearts[id]=integer(raw.hearts&&raw.hearts[id],99);});
+ s.weeklyClaimed=Array.isArray(raw.weeklyClaimed)?[...new Set(raw.weeklyClaimed.filter(k=>typeof k==="string"&&/^\d{4}-\d{2}-\d{2}$/.test(k)))].slice(-150):[];
+ s.islandName=typeof raw.islandName==="string"&&raw.islandName.trim()?raw.islandName.trim().slice(0,14):"小樹灣";
+ s.focusMinutes=[5,25].includes(raw.focusMinutes)?raw.focusMinutes:0;
+ return s;
+}
+let state;
+try{const data=localStorage.getItem(KEY);state=data?sanitize(JSON.parse(data)):defaultState();}
+catch(e){state=defaultState();}
+let selected="flower",storageOK=true;
+function save(){
+ try{localStorage.setItem(KEY,JSON.stringify(state));storageOK=true;}
+ catch(e){storageOK=false;show("⚠️ 瀏覽器拒絕儲存；請先匯出 JSON，避免進度遺失。");}
+}
+function show(message){$("notice").textContent=message;}
+function markDay(){const d=today();if(!state.days.includes(d))state.days.push(d);}
+function reward(coins,xp,message,resident){
+ state.coins+=coins;state.xp+=xp;markDay();
+ if(resident&&Object.hasOwn(state.hearts,resident))state.hearts[resident]=Math.min(99,state.hearts[resident]+1);
+ state.history.unshift(today()+"　"+message+"（🐚+"+coins+"、✨+"+xp+"）");
+ state.history=state.history.slice(0,30);save();render();
+ show("🎉 "+message+"！獲得 "+coins+" 枚貝殼與 "+xp+" 點成長值。");
+}
+function weekStart(date){const d=new Date(date.getFullYear(),date.getMonth(),date.getDate());d.setDate(d.getDate()-((d.getDay()+6)%7));return [d.getFullYear(),String(d.getMonth()+1).padStart(2,"0"),String(d.getDate()).padStart(2,"0")].join("-");}
+function currentWeek(){const start=weekStart(new Date());const days=new Set(state.days);let count=0,dayLabels=[];const startDate=new Date(Number(start.slice(0,4)),Number(start.slice(5,7))-1,Number(start.slice(8,10)));for(let i=0;i<7;i++){const d=new Date(startDate);d.setDate(d.getDate()+i);const key=[d.getFullYear(),String(d.getMonth()+1).padStart(2,"0"),String(d.getDate()).padStart(2,"0")].join("-");if(days.has(key))count++;dayLabels.push(days.has(key));}return {start,count,days:dayLabels};}
+function seasonalTheme(){const month=new Date().getMonth()+1,hour=new Date().getHours();const season=month>=3&&month<=5?"spring":month>=6&&month<=8?"summer":month>=9&&month<=11?"autumn":"winter";const info={spring:"🌸 春日萌芽",summer:"🌿 夏日青翠",autumn:"🍁 秋日森語",winter:"❄️ 冬日靜讀"};return {season,time:hour>=18||hour<6?"night":"day",label:info[season]};}
+function render(){
+ $("island-sign").textContent=state.islandName;$("island-name").value=state.islandName;
+ const d=new Date();$("hero-date").textContent=d.toLocaleDateString("zh-TW",{month:"long",day:"numeric",weekday:"short"});$("hero-time").textContent=d.toLocaleTimeString("zh-TW",{hour:"2-digit",minute:"2-digit",hour12:false});
+ const themed=seasonalTheme();$("season").textContent=themed.label;$("sea").dataset.season=themed.season;$("sea").dataset.time=themed.time;
+ const lv=1+Math.floor(state.xp/120);
+ $("village-status").textContent=lv>=5?"🎪 熱鬧村莊！居民們都在替你加油。":lv>=3?"🏘️ 小島逐漸熱鬧了，開始有村莊的模樣。":lv>=2?"🌱 已經有更多綠意，村民正在準備新的小屋。":"🏡 小小村落，今天多學一點就多添一點綠意。";
+ ["fox","bear","bunny","owl"].forEach(id=>{$("heart-"+id).textContent="♥ "+state.hearts[id];});
+ const wk=currentWeek();$("weekly-title").textContent="本週 "+wk.count+"／3 個學習日";$("week-progress").value=Math.min(3,wk.count);
+ const stamps=$("week-stamps");stamps.replaceChildren();
+ wk.days.forEach((done,i)=>{const el=document.createElement("span");el.textContent=done?"✓":"·";el.className=done?"done":"";el.setAttribute("aria-label","週"+["一","二","三","四","五","六","日"][i]+(done?"已學習":"未記錄"));stamps.append(el);});
+ const claimed=state.weeklyClaimed.includes(wk.start);$("weekly-claim").disabled=claimed||wk.count<3;$("weekly-claim").textContent=claimed?"🎉 這週已領取村民心意":"領取村民心意 🐚80・✨60";
+ const badges=$("milestones");badges.replaceChildren();
+ [{label:"🌱 第一天",ok:state.days.length>=1},{label:"🌸 三日萌芽",ok:state.days.length>=3},{label:"🌳 七日森林",ok:state.days.length>=7},{label:"🏡 村莊 Lv.3",ok:lv>=3},{label:"✨ 星光居民",ok:Object.values(state.hearts).some(v=>v>=5)}].forEach(item=>{const b=document.createElement("span");b.className="milestone"+(item.ok?" unlocked":"");b.textContent=item.ok?item.label:"🔒 "+item.label.replace(/^\S+ /,"");badges.append(b);});
+ $("coins").textContent=state.coins.toLocaleString("zh-TW");
+ $("xp").textContent=state.xp.toLocaleString("zh-TW");
+ $("days").textContent=state.days.length;
+ $("level").textContent=1+Math.floor(state.xp/120);
+ const m=$("map");m.replaceChildren();
+ for(let i=0;i<36;i++){
+  const dynamic={21:lv>=2?"🌼":null,29:lv>=3?"🌳":null,33:lv>=5?"🎪":null};const scenery=fixed[i]||(!state.plots[i]?dynamic[i]:"")||"";const b=document.createElement("button"),thing=scenery||state.plots[i];
+  b.type="button";b.className="plot "+(scenery?"fixed":thing?"decorated":"empty placeable");
+  b.setAttribute("aria-label",scenery?"固定景物，第"+(i+1)+"格":thing?"第"+(i+1)+"格，已擺放"+goods.find(x=>x.id===thing).name+"，點擊收回":"第"+(i+1)+"格，空草地，點擊擺放");
+  const visual=document.createElement("em");visual.textContent=scenery|| (thing?goods.find(x=>x.id===thing).icon:"·");b.append(visual);
+  if(!scenery)b.addEventListener("click",()=>place(i));
+  else b.disabled=true;
+  m.append(b);
+ }
+ const shop=$("shop");shop.replaceChildren();
+ goods.forEach(g=>{
+  const box=document.createElement("div");box.className="goods";
+  const symbol=document.createElement("div");symbol.className="emoji";symbol.textContent=g.icon;
+  const name=document.createElement("strong");name.textContent=g.name;
+  const caption=document.createElement("small");caption.textContent="售價 🐚"+g.cost+" ｜ 背包："+(state.owned[g.id]||0);
+  const buy=document.createElement("button");buy.type="button";buy.className="btn secondary";buy.textContent="購買";
+  buy.disabled=state.coins<g.cost;
+  buy.addEventListener("click",()=>{if(state.coins<g.cost)return;state.coins-=g.cost;state.owned[g.id]=(state.owned[g.id]||0)+1;selected=g.id;save();render();show("買到"+g.name+"了！現在點小島上的空地，就能擺放。");});
+  const choose=document.createElement("button");choose.type="button";choose.className="btn";choose.style.marginLeft="5px";choose.textContent="擺放";
+  choose.disabled=!(state.owned[g.id]>0);choose.setAttribute("aria-pressed",String(selected===g.id));
+  choose.addEventListener("click",()=>{selected=g.id;render();show("已選擇"+g.name+"，請點島上的空草地。");});
+  box.append(symbol,name,caption,buy,choose);shop.append(box);
+ });
+ const item=goods.find(g=>g.id===selected);
+ $("selection").textContent="目前選擇："+item.icon+item.name+"；背包剩 "+(state.owned[selected]||0)+" 件。點空地擺放，點已擺放物品收回。";
+ document.querySelectorAll("[data-claim]").forEach(btn=>{const done=!!(state.claims[today()]&&state.claims[today()][btn.dataset.claim]);btn.disabled=done;btn.textContent=done?"今日完成 ✓":"自行確認";});
+ const log=$("history");log.replaceChildren();
+ (state.history.length?state.history:["第一篇日誌，從今天開始！"]).forEach(item=>{const li=document.createElement("li");li.textContent=item;log.append(li);});
+}
+function place(index){
+ if(state.plots[index]){const old=state.plots[index];state.owned[old]=(state.owned[old]||0)+1;state.plots[index]="";save();render();show("已把裝飾收回背包。");return;}
+ if(!(state.owned[selected]>0)){show("背包裡沒有這種裝飾，先去雜貨店買一個吧。");return;}
+ state.owned[selected]--;state.plots[index]=selected;save();render();show("🌼 佈置完成！你的小島又漂亮了一點。");
+}
+document.querySelectorAll("[data-claim]").forEach(btn=>btn.addEventListener("click",()=>{
+ const type=btn.dataset.claim, d=today();
+ if((state.claims[d]||{})[type])return;
+ state.claims[d]=state.claims[d]||{};state.claims[d][type]=true;
+ reward(type==="practice"?20:type==="review"?15:12,type==="practice"?25:type==="review"?20:18,type==="practice"?"完成申論練習":type==="review"?"完成訂正或回想":"完成學科或法條閱讀",type==="practice"?"fox":type==="review"?"owl":"bunny");
+}));
+$("weekly-claim").addEventListener("click",()=>{const wk=currentWeek();if(wk.count<3||state.weeklyClaimed.includes(wk.start))return;state.weeklyClaimed.push(wk.start);reward(80,60,"本週完成三日學習委託","bear");});
+const lines={
+ fox:["🦊 栗子：少年事件處理法不用一次背完，今天先抓好一個爭點。","🦊 栗子：你寫的每一次涵攝，都在讓自己的論證更清楚。"],
+ bear:["🐻 阿棕：犯罪學理論太多？先畫出各學派的核心差別！","🐻 阿棕：讀書也要休息，適量的休息不會讓你的成果消失。"],
+ bunny:["🐰 小白：心理學可以從例子入手，慢慢理解概念。","🐰 小白：做完訂正的你，比只看答案時又前進了一點。"],
+ owl:["🦉 墨墨：諮商技巧要記住目的、程序，也要想想實務怎麼用。","🦉 墨墨：不需要完美的一天，真實的五分鐘也是進步。"]
+};
+const talkIndex={};
+document.querySelectorAll("[data-r]").forEach(btn=>btn.addEventListener("click",()=>{
+ const k=btn.dataset.r;talkIndex[k]=((talkIndex[k]||0)+1)%lines[k].length;
+ $("talk").textContent=lines[k][talkIndex[k]];
+}));
+function tick(){
+ $("hero-time").textContent=new Date().toLocaleTimeString("zh-TW",{hour:"2-digit",minute:"2-digit",hour12:false});
+ const end=state.focusEnd;
+ if(!end){$("clock").textContent="25:00";$("cancel").disabled=true;$("start25").disabled=false;$("start5").disabled=false;return;}
+ const remain=Math.max(0,Math.ceil((end-Date.now())/1000));
+ if(remain===0){
+  const mins=state.focusMinutes;state.focusEnd=0;state.focusMinutes=0;
+  if(mins===5||mins===25)reward(mins===25?35:7,mins===25?30:6,"完成 "+mins+" 分鐘專注","bear");
+  else {save();render();}
+  tick();return;
+ }
+ $("clock").textContent=String(Math.floor(remain/60)).padStart(2,"0")+":"+String(remain%60).padStart(2,"0");
+ $("cancel").disabled=false;$("start25").disabled=true;$("start5").disabled=true;
+}
+function start(minutes){
+ if(state.focusEnd)return;
+ state.focusEnd=Date.now()+minutes*60000;state.focusMinutes=minutes;save();tick();
+ show("⏳ 專注計時開始！讀一段，再回來看看小島。");
+}
+$("start25").addEventListener("click",()=>start(25));
+$("start5").addEventListener("click",()=>start(5));
+$("cancel").addEventListener("click",()=>{state.focusEnd=0;state.focusMinutes=0;save();tick();show("已取消計時；尚未完成的專注不計獎勵。");});
+$("name-save").addEventListener("click",()=>{const name=$("island-name").value.trim().slice(0,14);if(!name){show("請幫小島取個名字。");return;}state.islandName=name;save();render();show("🏡 歡迎來到「"+name+"」，島名已保存！");});
+$("island-name").addEventListener("keydown",e=>{if(e.key==="Enter")$("name-save").click();});
+$("wander").addEventListener("click",()=>{const shell=document.querySelector(".shell");const active=shell.classList.toggle("wandering");$("wander").textContent=active?"↩ 返回學習小屋":"🌿 漫遊模式";$("wander").setAttribute("aria-pressed",String(active));show(active?"漫遊模式可以專心布置小島，隨時可返回學習小屋。":"回到小屋了，今天想學些什麼？");});
+$("export").addEventListener("click",()=>{
+ const blob=new Blob([JSON.stringify(state,null,2)],{type:"application/json;charset=utf-8"});
+ const url=URL.createObjectURL(blob),a=document.createElement("a");
+ a.href=url;a.download="study-island-"+today()+".json";document.body.append(a);a.click();a.remove();
+ setTimeout(()=>URL.revokeObjectURL(url),2000);show("已開始下載小島備份，請確認檔案確實儲存。");
+});
+$("import").addEventListener("change",async e=>{
+ const file=e.target.files&&e.target.files[0];if(!file)return;
+ try{
+  if(file.size>1024*1024)throw Error("檔案過大（限 1 MB）。");
+  const incoming=sanitize(JSON.parse(await file.text()));
+  if(!confirm("匯入將取代目前這個瀏覽器的小島資料，請先匯出舊資料。確定繼續？"))return;
+  state=incoming;save();render();tick();show("已匯入小島資料。");
+ }catch(err){show("匯入失敗："+err.message);}
+ finally{e.target.value="";}
+});
+render();tick();setInterval(tick,1000);
+document.addEventListener("visibilitychange",()=>{if(!document.hidden)tick();});
+save();
+})();
+</script>
+</body>
+</html>
