@@ -8,6 +8,19 @@ function canonical(value){
  if(value&&typeof value==='object')return '{'+Object.keys(value).sort().map(key=>JSON.stringify(key)+':'+canonical(value[key])).join(',')+'}';
  return JSON.stringify(value);
 }
+async function archiveName(namespace,state){
+ const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(canonical(JSON.parse(JSON.stringify([namespace,state])))));
+ return 'backup-archive:'+Array.from(new Uint8Array(digest),n=>n.toString(16).padStart(2,'0')).join('');
+}
+export async function listDeskArchives(deskDatabase){
+ const rows=await accounts(deskDatabase), originals=rows.filter(row=>!row.namespace.startsWith('backup-archive:'));
+ const archives=new Map(rows.filter(row=>row.namespace.startsWith('backup-archive:')).map(row=>[row.namespace,row.state]));
+ const result=[];
+ for(const row of originals)for(const [archive,state] of archives){
+  if(await archiveName(row.namespace,state)===archive)result.push({namespace:row.namespace,archive,current:row.state,archived:state});
+ }
+ return result;
+}
 export function validate(bundle,core){
  assert(bundle&&typeof bundle==='object'&&!Array.isArray(bundle)&&bundle.format===FORMAT&&bundle.schemaVersion===2,'完整備份格式不符');
  assert(typeof bundle.exportedAt==='string'&&typeof bundle.sourceOrigin==='string','備份日期或來源不符');
@@ -57,9 +70,7 @@ export async function planDeskImport(bundle,core,deskDatabase){
   if(existing===undefined){baseline.set(row.namespace,null);writes.push({namespace:row.namespace,state:structuredClone(row.state)});continue;}
   baseline.set(row.namespace,structuredClone(existing));
   if(same(existing,row.state))continue;
-  const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(canonical(JSON.parse(JSON.stringify([row.namespace,row.state])))));
-  const hash=Array.from(new Uint8Array(digest),n=>n.toString(16).padStart(2,'0')).join('');
-  const archive='backup-archive:'+hash, previous=known.get(archive);
+  const archive=await archiveName(row.namespace,row.state), previous=known.get(archive);
   if(previous!==undefined&&!same(previous,row.state))throw Error('書桌封存識別碼衝突，已停止匯入');
   baseline.set(archive,previous===undefined?null:structuredClone(previous));
   if(previous===undefined)writes.push({namespace:archive,state:structuredClone(row.state)});
@@ -138,14 +149,12 @@ export async function planDeskConflictRestore({deskDatabase,namespace,archive,ne
  const rows=await accounts(deskDatabase),current=new Map(rows.map(row=>[row.namespace,row.state]));
  const selected=current.get(archive),prior=current.get(namespace);
  assert(selected!==undefined,'找不到書桌封存版本');
- const selectedDigest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(canonical(JSON.parse(JSON.stringify([namespace,selected])))));
- const expectedArchive='backup-archive:'+Array.from(new Uint8Array(selectedDigest),n=>n.toString(16).padStart(2,'0')).join('');
+ const expectedArchive=await archiveName(namespace,selected);
  assert(archive===expectedArchive,'封存版本與指定書桌不相符');
  const epoch=newEpoch();assert(typeof epoch==='string'&&epoch.length>=8&&epoch.length<=200,'恢復版本識別碼不符');
  let displaced=null;
  if(prior!==undefined){
-  const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(canonical(JSON.parse(JSON.stringify([namespace,prior])))));
-  displaced='backup-archive:'+Array.from(new Uint8Array(digest),n=>n.toString(16).padStart(2,'0')).join('');
+  displaced=await archiveName(namespace,prior);
   assert(displaced!==namespace,'書桌封存識別碼衝突');
   const existed=current.get(displaced);
   assert(existed===undefined||same(existed,prior),'書桌封存識別碼衝突');
@@ -188,4 +197,3 @@ export function applyDeskConflictRestore(plan,deskDatabase){
   tx.onabort=()=>reject(failure||tx.error||Error('書桌恢復交易失敗'));tx.onerror=()=>{};
  });
 }
-

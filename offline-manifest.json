@@ -41,10 +41,19 @@
       "url": "backup/index.html"
     },
     {
+      "url": "backup/test-full-backup.mjs"
+    },
+    {
       "url": "backup/test-idb-conflicts.js"
     },
     {
       "url": "backup/unified-core.js"
+    },
+    {
+      "url": "cloud-sync/core.js"
+    },
+    {
+      "url": "cloud-sync/idb.js"
     },
     {
       "url": "common-subjects/catalog/app.js"
@@ -497,31 +506,34 @@
       "url": "shared-ui.css"
     },
     {
-      "url": "storage/v25-repository.js"
-    },
-    {
-      "url": "storage/lectures-repository.js"
-    },
-    {
       "url": "storage/common-subjects-operations.js"
     },
     {
       "url": "storage/common-subjects-repository.js"
     },
     {
-      "url": "storage/daily-recovery.js"
+      "url": "storage/daily-operations.js"
     },
     {
-      "url": "storage/daily-operations.js"
+      "url": "storage/daily-recovery.js"
     },
     {
       "url": "storage/daily-shared-repository.js"
     },
     {
+      "url": "storage/full-backup.mjs"
+    },
+    {
       "url": "storage/indexeddb.js"
     },
     {
+      "url": "storage/lectures-repository.js"
+    },
+    {
       "url": "storage/study30-mixed-backup.js"
+    },
+    {
+      "url": "storage/v25-repository.js"
     },
     {
       "url": "v2.5/README.md"
