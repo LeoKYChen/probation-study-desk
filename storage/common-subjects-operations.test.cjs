@@ -1,0 +1,23 @@
+'use strict';
+const assert=require('node:assert/strict'),{IDBFactory}=require('fake-indexeddb');
+(async()=>{
+ for(const p of ['./indexeddb.js','./common-subjects-repository.js','./common-subjects-operations.js','./study30-mixed-backup.js','../backup/unified-core.js'])await import(p);
+ const db=await PSDLearningStorage.open(new IDBFactory()),core=PSDUnifiedBackup,legacy={getItem:()=>null},key=PSDCommonSubjectsRepository.KEYS[0],initial={schema:key,drafts:{one:{text:'本機作文'}},english:{}};
+ const repo=await PSDCommonSubjectsRepository.open({database:db,legacy,core,key});await repo.write(initial);
+ const stale=await PSDCommonSubjectsRepository.open({database:db,legacy,core,key});
+ const args={database:db,legacy,core,repository:repo,mixedApi:PSDStudy30MixedBackup};
+ const result=await PSDCommonSubjectsOperations.run({...args,action:'import',incoming:{schema:key,drafts:{one:{text:'另一作文'},two:{text:'新題'}},english:{}}});
+ assert.equal(result.data.drafts.one.text,'本機作文');assert.equal(result.data.drafts.two.text,'新題');assert.equal(result.conflicts,1);
+ await assert.rejects(PSDCommonSubjectsOperations.run({...args,repository:stale,action:'clear',incoming:{schema:key,drafts:{},english:{}}}),/其他分頁/);
+ const clear=await PSDCommonSubjectsOperations.run({...args,action:'clear',incoming:{schema:key,drafts:{},english:{}}});assert.deepEqual(clear.data.drafts,{});
+ const archived=await db.get(core.CONFLICT_KEY);assert.ok(archived.includes('本機作文'));assert.ok(archived.includes('另一作文'));
+ const restored=await PSDCommonSubjectsOperations.run({...args,action:'import',incoming:initial});assert.equal(restored.data.drafts.one.text,'本機作文');
+ const bridge=PSDStudy30MixedBackup.create({core,database:db,legacy,managedKeys:['probation-study30-v251:v1',core.CONFLICT_KEY,...PSDCommonSubjectsRepository.KEYS]});
+ let snapshot=await bridge.snapshot(),rows=core.listCommonConflicts(snapshot),conflict=rows.find(x=>x.path.join('/')==='drafts/one');assert.ok(conflict);
+ const recover=core.planCommonConflictRestore(snapshot,conflict.index,'incoming');await bridge.apply(recover);
+ snapshot=await bridge.snapshot();assert.equal(JSON.parse(snapshot[key]).drafts.one.text,'另一作文');assert.ok(snapshot[core.CONFLICT_KEY].includes('本機作文'));
+ await assert.rejects(bridge.apply(recover),/重新預覽/);
+ const clearArchive=core.listCommonConflicts(snapshot).find(x=>x.path.length===0);assert.ok(clearArchive);
+ const undo=core.planCommonConflictRestore(snapshot,clearArchive.index,'incoming');await bridge.apply(undo);assert.equal(JSON.parse(await db.get(key)).drafts.one.text,'本機作文');
+ db.close();console.log('PASS common-subject import, conflict archive, clear, restore and stale guard');
+})().catch(e=>{console.error(e);process.exitCode=1;});

@@ -128,8 +128,23 @@ function download(){
  document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1200);
  notice('已產生本模組備份檔。');
 }
+async function commonOperation(action,incoming){
+ return window.PSDCommonSubjectsOperations.run({core:window.PSDUnifiedBackup,database:idbRepo.database,legacy:localStorage,repository:idbRepo,mixedApi:window.PSDStudy30MixedBackup,action,incoming,flags:{daily:window.PSD_DAILY_IDB_TEST===true,v25:window.PSD_V25_IDB_TEST===true,lectures:window.PSD_LECTURES_IDB_TEST===true}});
+}
+async function idbClearProgress(){
+ if(!confirm('清除每日英文紀錄？將先下載備份並保留清除前版本。'))return;
+ try{document.body.inert=true;await idbRepo.flush();download();const fresh=E.defaultState();E.buildDay(bank,fresh,today);const result=await commonOperation('clear',fresh);state=E.normalize(result.data);task=null;shownDate=today;index=0;revealed=false;renderPlan();renderSummary();showIdle();notice('紀錄已清除，原版本已保留；請確認備份已下載。');}
+ catch(e){storageFailed=true;notice('清除未完成：'+e.message,true)}finally{document.body.inert=false;}
+}
+async function idbImportData(event){
+ const input=event.target,file=input.files?.[0];if(!file)return;
+ try{if(file.size>5e6)throw Error('備份超過5MB');const incoming=JSON.parse(await file.text());if(incoming?.schema!==E.VERSION)throw Error('非v0.4備份');
+  if(!confirm('匯入每日英文備份？不同版本將另存。'))return;
+  document.body.inert=true;await idbRepo.flush();const result=await commonOperation('import',incoming);state=E.normalize(result.data);if(!state.days[today]){const next=structuredClone(state);E.buildDay(bank,next,today);if(!(await save(next)))throw Error('匯入後無法保存今日安排');}shownDate=today;task=null;index=0;renderPlan();renderSummary();showIdle();notice('匯入完成；不同版本保留 '+result.conflicts+' 筆。');
+ }catch(e){storageFailed=true;notice('匯入未完成：'+e.message,true)}finally{document.body.inert=false;input.value='';}
+}
 async function clearProgress(){
- if(idbTest){notice('測試模式尚未整合本模組清除與衝突復原。',true);return;}
+ if(idbTest){await idbClearProgress();return;}
  const first='確定清除 Staresto 每日英文的全部學習紀錄嗎？\n\n將刪除：每日任務、作答歷史、錯題複習、字卡與學習階段。\n\n此操作不影響國文作文、原創80題或其他練習站。請先用「匯出 JSON 備份」保留資料。';
  if(!confirm(first))return;
  if(!confirm('最後確認：清除後無法直接復原，確定要重新開始 Staresto 每日英文學習嗎？'))return;
@@ -143,7 +158,7 @@ async function clearProgress(){
  notice('已清除 Staresto 每日英文學習紀錄，今天的任務已重新建立。');
 }
 function importData(event){
- if(idbTest){notice('測試模式尚未整合本模組匯入與衝突復原。',true);event.target.value='';return;}
+ if(idbTest){void idbImportData(event);return;}
  const f=event.target.files?.[0];if(!f)return;
  if(f.size>5e6){notice('備份超過5MB，請檢查來源。',true);return}
  const reader=new FileReader();

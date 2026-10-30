@@ -119,10 +119,13 @@ $("importFile").addEventListener("change",async function(){
   try{
     if(file.size>2*1024*1024)throw Error("檔案超過2MB；為保護瀏覽器資料，已取消匯入。");
     const input=JSON.parse(await file.text());
-    const draft=core.mergeBackup(state,input);
     if(!confirm("確認合併此 v0.6 備份？本站會保留既有任務、單字和作答紀錄；建議匯入前先匯出目前備份。"))return;
-    if(await save(draft)){notice("已合併備份；現有資料未清除。");render()}
-  }catch(err){notice("未匯入備份："+String(err.message||err))}
+    if(idbTest){
+      document.body.inert=true;await idbRepo.flush();
+      const result=await window.PSDCommonSubjectsOperations.run({core:window.PSDUnifiedBackup,database:idbRepo.database,legacy:localStorage,repository:idbRepo,mixedApi:window.PSDStudy30MixedBackup,action:'import',incoming:input,flags:{daily:window.PSD_DAILY_IDB_TEST===true,v25:window.PSD_V25_IDB_TEST===true,lectures:window.PSD_LECTURES_IDB_TEST===true}});
+      state=core.normalize(result.data);notice("已合併備份；不同版本保留 "+result.conflicts+" 筆。");render();
+    }else{const draft=core.mergeBackup(state,input);if(await save(draft)){notice("已合併備份；現有資料未清除。");render()}}
+  }catch(err){notice("未匯入備份："+String(err.message||err))}finally{document.body.inert=false}
 });
 $("addPersonalWord").addEventListener("click",async function(){
   if(readOnly)return;

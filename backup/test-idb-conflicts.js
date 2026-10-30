@@ -60,8 +60,30 @@
     host.append(details);
    }
    buttons();
-   renderV25();
+   await renderV25();await renderCommon();
   }catch(e){$('study30ConflictSummary').textContent='無法讀取衝突：'+e.message;}
+ }
+ async function renderCommon(){
+  if(window.PSD_COMMON_IDB_TEST!==true)return;
+  let panel=$('commonConflictPanel');if(!panel){panel=document.createElement('section');panel.id='commonConflictPanel';$('study30ConflictPanel').after(panel);}
+  panel.replaceChildren();const h=document.createElement('h3');h.textContent='共同科目｜不同版本比較與復原';panel.append(h);
+  const note=document.createElement('p');note.textContent='請先使用上方按鈕下載測試保護備份並勾選確認，並關閉共同科目編輯分頁。';panel.append(note);
+  const rows=core.listCommonConflicts(await mixed.snapshot());if(!rows.length){panel.append(document.createTextNode('目前沒有共同科目衝突版本。'));return;}
+  for(const row of rows){
+   const details=document.createElement('details'),summary=document.createElement('summary');summary.textContent=row.key+'｜'+(row.path.join(' / ')||'清除前完整紀錄');details.append(summary);
+   for(const [label,value] of [['目前版本',row.main],['原版本',row.existing],['匯入或清除前版本',row.incoming]]){const heading=document.createElement('strong'),pre=document.createElement('pre');heading.textContent=label;pre.textContent=preview(value);details.append(heading,pre);}
+   for(const [side,label] of [['existing','恢復原版本'],['incoming','恢復匯入或清除前版本']]){
+    const button=document.createElement('button');button.type='button';button.textContent=label;
+    button.addEventListener('click',async()=>{
+     if(busy||!baseline||!$('study30ConflictConfirmed').checked){tell('請先下載保護備份並勾選確認。',true);return;}
+     if(!confirm('恢復此版本？目前資料會另存於衝突紀錄。'))return;
+     busy=true;try{const now=await mixed.snapshot();if(!equalSnapshot(now,baseline))throw Error('下載備份後資料已變更，請重新下載');
+      await mixed.apply(core.planCommonConflictRestore(now,row.index,side));baseline=null;$('study30ConflictConfirmed').checked=false;tell('已恢復共同科目版本；原主要版本仍留在衝突紀錄。');await render();
+     }catch(e){tell('恢復未完成：'+e.message,true);}finally{busy=false;buttons();}
+    });details.append(button);
+   }
+   panel.append(details);
+  }
  }
  async function renderV25(){
   if(window.PSD_V25_IDB_TEST!==true)return;

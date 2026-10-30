@@ -17,6 +17,7 @@
    this.tail=task.catch(()=>{});return task;
   }
   async flush(){await this.tail;if(this.failure)throw this.failure;}
+  async refresh(){await this.flush();await this.database.migrate(this.legacy,[this.key],this.validate);const raw=await this.database.get(this.key);if(raw!==null)this.validate(this.key,raw);this.raw=raw;return this.read();}
  }
  return {KEYS,open};
 });
