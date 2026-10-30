@@ -136,7 +136,7 @@
  }
  async function init(){
   if(!$('importBackupFile'))return;
-  if(mixedMode){try{const database=await window.Study30App.whenIdbReady();const managedKeys=[api.KEY,core.CONFLICT_KEY];if(window.PSD_DAILY_IDB_TEST===true)managedKeys.push('probation-daily-github:records:v1','daily-reading-test:saved');if(window.PSD_V25_IDB_TEST===true)managedKeys.push('probation-study-desk-v24','probation-study-desk-v3','probation-study-desk-v2');if(window.PSD_LECTURES_IDB_TEST===true)managedKeys.push('psd-lecture-planner-v1');mixed=window.PSDStudy30MixedBackup.create({core,database,legacy:localStorage,origin:location.origin,managedKeys});}catch(e){status('測試備份無法啟動：'+e.message);return;}}
+  if(mixedMode){try{const database=await window.Study30App.whenIdbReady();const managedKeys=[api.KEY,core.CONFLICT_KEY];if(window.PSD_DAILY_IDB_TEST===true)managedKeys.push('probation-daily-github:records:v1','daily-reading-test:saved');if(window.PSD_V25_IDB_TEST===true)managedKeys.push('probation-study-desk-v24','probation-study-desk-v3','probation-study-desk-v2');if(window.PSD_LECTURES_IDB_TEST===true)managedKeys.push('psd-lecture-planner-v1');if(window.PSD_COMMON_IDB_TEST===true)managedKeys.push('psd-common-subjects-v1','psd-staresto-link-coach-v06','psd-staresto-daily-v04');mixed=window.PSDStudy30MixedBackup.create({core,database,legacy:localStorage,origin:location.origin,managedKeys});}catch(e){status('測試備份無法啟動：'+e.message);return;}}
   $('importBackupFile').addEventListener('change',e=>onFile(e.target.files?.[0]));
   $('downloadBeforeImport').addEventListener('click',downloadCurrent);
   $('importBackupConfirmed').addEventListener('change',ready);

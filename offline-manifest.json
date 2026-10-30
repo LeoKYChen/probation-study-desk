@@ -503,6 +503,9 @@
       "url": "storage/lectures-repository.js"
     },
     {
+      "url": "storage/common-subjects-repository.js"
+    },
+    {
       "url": "storage/daily-recovery.js"
     },
     {

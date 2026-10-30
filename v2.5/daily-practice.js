@@ -313,7 +313,7 @@ async function waitForDailyEdits(){
  if(dirty||!storageOK)throw Error('目前作答尚未安全保存');
 }
 async function runDailyOperation(action,incoming){
- return window.PSDDailyOperations.run({core:window.PSDUnifiedBackup,database:idbDb,legacy:localStorage,repository:idbRepo,recovery:window.PSDDailyRecovery,mixedApi:window.PSDStudy30MixedBackup,action,incoming,flags:{v25:window.PSD_V25_IDB_TEST===true,lectures:window.PSD_LECTURES_IDB_TEST===true}});
+ return window.PSDDailyOperations.run({core:window.PSDUnifiedBackup,database:idbDb,legacy:localStorage,repository:idbRepo,recovery:window.PSDDailyRecovery,mixedApi:window.PSDStudy30MixedBackup,action,incoming,flags:{v25:window.PSD_V25_IDB_TEST===true,lectures:window.PSD_LECTURES_IDB_TEST===true,common:window.PSD_COMMON_IDB_TEST===true}});
 }
 async function idbImportDaily(){
  const input=$('importFile'),file=input.files?.[0];if(!file)return;
