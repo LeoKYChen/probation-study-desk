@@ -1,6 +1,6 @@
 {
  "說明": "docs/theory-openstax.json 中 OpenStax 未涵蓋的學科題，另找可公開取得全文的原文出處。每個來源都實際下載全文（PDF 轉文字或網頁）比對過，matchedTerms 為在該文件全文中確認出現的關鍵詞；法規條文以全國法規資料庫 2026-10-16 版核對。只作為開發者補充出處用，網站不讀取本檔。",
- "checkedOn": "2026-10-29",
+ "checkedOn": "2026-10-30",
  "scope": "OpenStax 未涵蓋的 218 題",
  "kindLabels": {
   "original": "原作者或原始研究",
@@ -19,7 +19,7 @@
    "openstax.org"
   ],
   "blocked": [
-   "api.openalex.org（當日免費額度用完，HTTP 429）",
+   "api.openalex.org（2026-10-29、10-30 兩天都回應 HTTP 429，免費額度用完）",
    "www.ncbi.nlm.nih.gov/books（reCAPTCHA）",
    "store.samhsa.gov（轉址到被封鎖的 library.samhsa.gov）",
    "出版商網站（Sage、Taylor & Francis、Springer、APA 等）",
@@ -427,6 +427,126 @@
    "ref": "毒品危害防制條例第 24 條",
    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=C0000008&flno=24",
    "kind": "law"
+  },
+  "comp04d": {
+   "ref": "Howard, G. J., Newman, G., & Pridemore, W. A. (2000). Theory, method, and data in comparative criminology. In D. Duffee (Ed.), Criminal Justice 2000, Vol. 4: Measurement and analysis of crime and justice. Washington, DC: National Institute of Justice.",
+   "url": "https://www.ojp.gov/criminal_justice2000/vol_4/04d.pdf",
+   "kind": "review"
+  },
+  "lombroso3814446": {
+   "ref": "Mazzarello, P. (2011). Cesare Lombroso: An anthropologist between evolution and degeneration. Functional Neurology, 26(2), 97–101.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3814446/",
+   "kind": "review"
+  },
+  "etiol60117": {
+   "ref": "Brantley, J. R., & Kravitz, M. (Comps.). (1979). The etiology of criminality: Nonbehavioral science perspectives — A definitive bibliography. Washington, DC: National Criminal Justice Reference Service.",
+   "url": "https://www.ojp.gov/pdffiles1/Digitization/60117NCJRS.pdf",
+   "kind": "review"
+  },
+  "sociallearn8519582": {
+   "ref": "Giordano, P. C. (2020). Continuing education: Toward a life-course perspective on social learning. Criminology, 58(2), 199–225.（PMC 作者稿）",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8519582/",
+   "kind": "review"
+  },
+  "hagan2936555": {
+   "ref": "Okulicz-Kozaryn, K., et al. (2010). Gender and family differences in adolescent's heavy alcohol use: The power-control theory perspective. Health Education Research, 25(5), 780–791.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2936555/",
+   "kind": "review"
+  },
+  "pbt8836126": {
+   "ref": "Darvishi, M., et al. (2022). The explanation of adolescent delinquent behaviors based on Jessor's problem behavior theory (PBT) in Iran. Frontiers in Psychiatry, 13, 744794.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8836126/",
+   "kind": "review"
+  },
+  "stics2010": {
+   "ref": "Bonta, J., Bourgon, G., et al. (2010). The Strategic Training Initiative in Community Supervision: Risk-need-responsivity in the real world (User Report 2010-01). Ottawa: Public Safety Canada.",
+   "url": "https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/2010-01-rnr/index-en.aspx",
+   "kind": "original"
+  },
+  "cmc2012": {
+   "ref": "Bourgon, G., Gutierrez, L., & Ashton, J. (2012). From case management to change agent: The evolution of \"what works\" community supervision (User Report 2012-01). Ottawa: Public Safety Canada.",
+   "url": "https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/2012-01-cmc/2012-01-cmc-eng.pdf",
+   "kind": "review"
+  },
+  "netwide165043": {
+   "ref": "Tonry, M. (1997). Intermediate sanctions in sentencing guidelines. Washington, DC: National Institute of Justice.",
+   "url": "https://www.ojp.gov/pdffiles/165043.pdf",
+   "kind": "original"
+  },
+  "commcorr249946": {
+   "ref": "Still, W., Broderick, B., & Raphael, S. (2016). Building trust and legitimacy within community corrections (New Thinking in Community Corrections, No. 3). Washington, DC: National Institute of Justice.",
+   "url": "https://www.ojp.gov/pdffiles1/nij/249946.pdf",
+   "kind": "review"
+  },
+  "gangs243466": {
+   "ref": "Taylor, C. S., & Smith, P. R. (2013). The attraction of gangs: How can we reduce it? In Changing course: Preventing gang membership (Chapter 2, NCJ 243466). Washington, DC: NIJ & CDC.",
+   "url": "https://www.ojp.gov/pdffiles1/nij/243466.pdf",
+   "kind": "review"
+  },
+  "covid9735226": {
+   "ref": "Johnson, S. D., & Nikolovska, M. (2022). The effect of COVID-19 restrictions on routine activities and online crime. Journal of Quantitative Criminology.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9735226/",
+   "kind": "review"
+  },
+  "sit6571443": {
+   "ref": "Mohammadi, M. M., Poursaberi, R., et al. (2018). The effect of stress inoculation training on breastfeeding self-efficacy and perceived stress of mothers with low birth weight infants: A clinical trial. Journal of Family & Reproductive Health, 12(3), 160–168.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6571443/",
+   "kind": "review"
+  },
+  "logo12771065": {
+   "ref": "Chanouha, N., Chassevent, A., et al. (2026). Exploring the principles of logotherapy in genetic counseling: Enhancing decision-making, adaptation, and justice. Journal of Genetic Counseling, 35(1), e70165.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12771065/",
+   "kind": "review"
+  },
+  "logo9464054": {
+   "ref": "Maria Michael, J., Reyes, M. E. S., et al. (2022). Online mindfulness-based logotherapy program: A pilot study targeting depressive symptoms of cyberbullied adolescents during the Covid-19 pandemic. Journal of Technology in Behavioral Science, 8(1), 1–9.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9464054/",
+   "kind": "review"
+  },
+  "stressgen3049314": {
+   "ref": "Liu, R. T., & Alloy, L. B. (2010). Stress generation in depression: A systematic review of the empirical literature and recommendations for future study. Clinical Psychology Review, 30(5), 582–593.（PMC 作者稿）",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3049314/",
+   "kind": "review"
+  },
+  "fredrickson01": {
+   "ref": "Fredrickson, B. L. (2001). The role of positive emotions in positive psychology: The broaden-and-build theory of positive emotions. American Psychologist, 56(3), 218–226.（PMC 作者稿）",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3122271/",
+   "kind": "original"
+  },
+  "tarasoff9540889": {
+   "ref": "Guina, J., Dornfeld, B., et al. (2022). A 20-year follow-up survey of police officers' experience with Tarasoff warnings: How law enforcement reacts to clinicians' duty to protect. Behavioral Sciences & the Law, 40(4), 505–513.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9540889/",
+   "kind": "review"
+  },
+  "rogers3495333": {
+   "ref": "Seehausen, M., Kazzer, P., et al. (2012). Effects of empathic paraphrasing – Extrinsic emotion regulation in social conflict. Frontiers in Psychology, 3, 482.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3495333/",
+   "kind": "review"
+  },
+  "holland9819525": {
+   "ref": "Santana Batista, J., et al. (2022). Personality and person-work environment fit: A study based on the RIASEC model. International Journal of Environmental Research and Public Health, 20(1), 719.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9819525/",
+   "kind": "review"
+  },
+  "mcc8376752": {
+   "ref": "Trevino, A. Y., Tao, K. W., et al. (2021). Windows of cultural opportunity: A thematic analysis of how cultural conversations occur in psychotherapy. Psychotherapy, 58(2), 263–274.（PMC 作者稿）",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8376752/",
+   "kind": "review"
+  },
+  "invar11133089": {
+   "ref": "Tse, W. W.-Y., Lai, M. H. C., et al. (2024). Does strict invariance matter? Valid group mean comparisons with ordered-categorical items. Behavior Research Methods, 56(4), 3117–3139.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11133089/",
+   "kind": "review"
+  },
+  "neglect12271162": {
+   "ref": "Suslow, T., Kersting, A., et al. (2025). Experiences of childhood emotional maltreatment and emotional intelligence in young women. Frontiers in Psychiatry, 16, 1583066.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12271162/",
+   "kind": "review"
+  },
+  "sdt9810519": {
+   "ref": "Wild, S., et al. (2023). The relevance of basic psychological needs and subject interest as explanatory variables for student dropout in higher education. European Journal of Psychology of Education.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9810519/",
+   "kind": "review"
   }
  },
  "questions": [
@@ -967,6 +1087,27 @@
    ]
   },
   {
+   "id": "110-諮商與輔導-2",
+   "title": "多元文化能力四要素與家暴受害女性的應用",
+   "coverage": "partial",
+   "note": "只涵蓋 Sue et al. (1992) 的覺察、知識、技巧與案主世界觀，沒有倡議與家暴受害女性的應用",
+   "sources": [
+    {
+     "doc": "mcc8376752",
+     "ref": "Trevino, A. Y., Tao, K. W., et al. (2021). Windows of cultural opportunity: A thematic analysis of how cultural conversations occur in psychotherapy. Psychotherapy, 58(2), 263–274.（PMC 作者稿）",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8376752/",
+     "kind": "review",
+     "matchedTerms": [
+      "Sue",
+      "awareness",
+      "knowledge",
+      "skills",
+      "worldview"
+     ]
+    }
+   ]
+  },
+  {
    "id": "110-諮商與輔導-3",
    "title": "校園性別事件行為人心理輔導的倫理與法律議題",
    "coverage": "partial",
@@ -980,6 +1121,29 @@
      "matchedTerms": [
       "心理諮商與輔導",
       "校園性別事件"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "111-諮商與輔導-1",
+   "title": "以意義治療設計高風險家庭孩子的個別輔導計畫",
+   "coverage": "partial",
+   "note": "涵蓋意義治療的基本信念、去反省、蘇格拉底式對話與態度，沒有高風險家庭孩子的輔導計畫",
+   "sources": [
+    {
+     "doc": "logo12771065",
+     "ref": "Chanouha, N., Chassevent, A., et al. (2026). Exploring the principles of logotherapy in genetic counseling: Enhancing decision-making, adaptation, and justice. Journal of Genetic Counseling, 35(1), e70165.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12771065/",
+     "kind": "review",
+     "matchedTerms": [
+      "Frankl",
+      "will to meaning",
+      "meaning in life",
+      "dereflection",
+      "Socratic dialogue",
+      "paradoxical intention",
+      "attitude"
      ]
     }
    ]
@@ -1778,6 +1942,25 @@
    ]
   },
   {
+   "id": "監獄官-109-諮商與矯正輔導-2",
+   "title": "Meichenbaum 認知行為矯治與壓力免疫訓練",
+   "coverage": "partial",
+   "note": "涵蓋壓力免疫訓練的三階段（概念化、技巧訓練、應用與追蹤），沒有藥物濫用者的應用",
+   "sources": [
+    {
+     "doc": "sit6571443",
+     "ref": "Mohammadi, M. M., Poursaberi, R., et al. (2018). The effect of stress inoculation training on breastfeeding self-efficacy and perceived stress of mothers with low birth weight infants: A clinical trial. Journal of Family & Reproductive Health, 12(3), 160–168.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6571443/",
+     "kind": "review",
+     "matchedTerms": [
+      "Meichenbaum",
+      "conceptualization",
+      "application"
+     ]
+    }
+   ]
+  },
+  {
    "id": "監獄官-109-諮商與矯正輔導-3",
    "title": "焦點解決短期諮商在矯正機關的應用",
    "coverage": "partial",
@@ -1875,6 +2058,36 @@
    ]
   },
   {
+   "id": "監獄官-112-諮商與矯正輔導-2",
+   "title": "Trotter 非自願個案有效實務原則",
+   "coverage": "full",
+   "note": "",
+   "sources": [
+    {
+     "doc": "stics2010",
+     "ref": "Bonta, J., Bourgon, G., et al. (2010). The Strategic Training Initiative in Community Supervision: Risk-need-responsivity in the real world (User Report 2010-01). Ottawa: Public Safety Canada.",
+     "url": "https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/2010-01-rnr/index-en.aspx",
+     "kind": "original",
+     "matchedTerms": [
+      "Trotter",
+      "role clarification",
+      "problem solving",
+      "relationship"
+     ]
+    },
+    {
+     "doc": "cmc2012",
+     "ref": "Bourgon, G., Gutierrez, L., & Ashton, J. (2012). From case management to change agent: The evolution of \"what works\" community supervision (User Report 2012-01). Ottawa: Public Safety Canada.",
+     "url": "https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/2012-01-cmc/2012-01-cmc-eng.pdf",
+     "kind": "review",
+     "matchedTerms": [
+      "Trotter",
+      "prosocial model"
+     ]
+    }
+   ]
+  },
+  {
    "id": "監獄官-112-諮商與矯正輔導-3",
    "title": "提升收容人情緒管理的計畫",
    "coverage": "partial",
@@ -1889,6 +2102,25 @@
       "Gross",
       "reappraisal",
       "situation selection"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "監獄官-112-諮商與矯正輔導-4",
+   "title": "以生涯理論設計出獄前八次團體",
+   "coverage": "partial",
+   "note": "只涵蓋 Holland 理論（六型、六角形、適配性），沒有出獄前團體設計",
+   "sources": [
+    {
+     "doc": "holland9819525",
+     "ref": "Santana Batista, J., et al. (2022). Personality and person-work environment fit: A study based on the RIASEC model. International Journal of Environmental Research and Public Health, 20(1), 719.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9819525/",
+     "kind": "review",
+     "matchedTerms": [
+      "Holland",
+      "hexagon",
+      "congruence"
      ]
     }
    ]
@@ -2039,6 +2271,26 @@
    ]
   },
   {
+   "id": "薦任升等（矯正）-114-心理測驗-2",
+   "title": "全國高中生常模的解釋限制",
+   "coverage": "partial",
+   "note": "只涵蓋測量恆等性（形貌、量尺、純量、嚴格）與跨組比較的前提，沒有常模代表性與分組常模",
+   "sources": [
+    {
+     "doc": "invar11133089",
+     "ref": "Tse, W. W.-Y., Lai, M. H. C., et al. (2024). Does strict invariance matter? Valid group mean comparisons with ordered-categorical items. Behavior Research Methods, 56(4), 3117–3139.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11133089/",
+     "kind": "review",
+     "matchedTerms": [
+      "configural",
+      "metric",
+      "scalar",
+      "strict"
+     ]
+    }
+   ]
+  },
+  {
    "id": "薦任升等（矯正）-114-心理測驗-3",
    "title": "測驗目的與項目分析取向",
    "coverage": "partial",
@@ -2076,6 +2328,27 @@
    ]
   },
   {
+   "id": "薦任升等（矯正）-108-犯罪學-3",
+   "title": "少年加入幫派的功能",
+   "coverage": "full",
+   "note": "",
+   "sources": [
+    {
+     "doc": "gangs243466",
+     "ref": "Taylor, C. S., & Smith, P. R. (2013). The attraction of gangs: How can we reduce it? In Changing course: Preventing gang membership (Chapter 2, NCJ 243466). Washington, DC: NIJ & CDC.",
+     "url": "https://www.ojp.gov/pdffiles1/nij/243466.pdf",
+     "kind": "review",
+     "matchedTerms": [
+      "protection",
+      "belonging",
+      "status",
+      "money",
+      "excitement"
+     ]
+    }
+   ]
+  },
+  {
    "id": "薦任升等（矯正）-108-犯罪學-4",
    "title": "家暴施暴者的風險因子",
    "coverage": "full",
@@ -2091,6 +2364,26 @@
       "stepchild",
       "threat",
       "Danger Assessment"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-110-犯罪學-4",
+   "title": "疫情期間犯罪型態變化",
+   "coverage": "partial",
+   "note": "只涵蓋疫情對日常活動與網路犯罪的影響，沒有家庭暴力",
+   "sources": [
+    {
+     "doc": "covid9735226",
+     "ref": "Johnson, S. D., & Nikolovska, M. (2022). The effect of COVID-19 restrictions on routine activities and online crime. Journal of Quantitative Criminology.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9735226/",
+     "kind": "review",
+     "matchedTerms": [
+      "routine activit",
+      "fraud",
+      "online",
+      "guardian"
      ]
     }
    ]
@@ -2138,6 +2431,26 @@
      "kind": "original",
      "matchedTerms": [
       "crime pattern theory"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-112-犯罪學-3",
+   "title": "網路詐欺的特性與理論解釋",
+   "coverage": "partial",
+   "note": "涵蓋網路詐欺與日常活動理論（缺乏監控者）的解釋，策略較少",
+   "sources": [
+    {
+     "doc": "covid9735226",
+     "ref": "Johnson, S. D., & Nikolovska, M. (2022). The effect of COVID-19 restrictions on routine activities and online crime. Journal of Quantitative Criminology.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9735226/",
+     "kind": "review",
+     "matchedTerms": [
+      "fraud",
+      "online",
+      "routine activit",
+      "guardian"
      ]
     }
    ]
@@ -2266,6 +2579,26 @@
    ]
   },
   {
+   "id": "薦任升等（矯正）-108-諮商與輔導-4",
+   "title": "預警責任",
+   "coverage": "partial",
+   "note": "涵蓋 Tarasoff 案的保護義務與「可辨識的被害人」條件，沒有我國倫理守則的處理程序",
+   "sources": [
+    {
+     "doc": "tarasoff9540889",
+     "ref": "Guina, J., Dornfeld, B., et al. (2022). A 20-year follow-up survey of police officers' experience with Tarasoff warnings: How law enforcement reacts to clinicians' duty to protect. Behavioral Sciences & the Law, 40(4), 505–513.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9540889/",
+     "kind": "review",
+     "matchedTerms": [
+      "Tarasoff",
+      "duty to protect",
+      "duty to warn",
+      "identifiable"
+     ]
+    }
+   ]
+  },
+  {
    "id": "薦任升等（矯正）-112-諮商與輔導-1",
    "title": "Bowen 家族系統理論概念",
    "coverage": "full",
@@ -2359,8 +2692,8 @@
   {
    "id": "police-108-psychology-4",
    "title": "情緒對認知與行動的影響",
-   "coverage": "partial",
-   "note": "涵蓋 Bower 心情一致記憶與 Schwarz & Clore 情緒即訊息；擴展與建構只見於參考文獻",
+   "coverage": "full",
+   "note": "",
    "sources": [
     {
      "doc": "moodmem",
@@ -2373,6 +2706,16 @@
       "affect-as-information",
       "Schwarz",
       "Clore"
+     ]
+    },
+    {
+     "doc": "fredrickson01",
+     "ref": "Fredrickson, B. L. (2001). The role of positive emotions in positive psychology: The broaden-and-build theory of positive emotions. American Psychologist, 56(3), 218–226.（PMC 作者稿）",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3122271/",
+     "kind": "original",
+     "matchedTerms": [
+      "broaden-and-build",
+      "resources"
      ]
     }
    ]
@@ -2402,6 +2745,26 @@
      "matchedTerms": [
       "docility",
       "proactivity"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-115-psychology-4",
+   "title": "保護管束少年輟學的理解與協助",
+   "coverage": "partial",
+   "note": "只涵蓋自我決定論（自主、勝任、關係）與輟學的關聯，以大學生為對象，沒有保護管束少年與壓力因應",
+   "sources": [
+    {
+     "doc": "sdt9810519",
+     "ref": "Wild, S., et al. (2023). The relevance of basic psychological needs and subject interest as explanatory variables for student dropout in higher education. European Journal of Psychology of Education.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9810519/",
+     "kind": "review",
+     "matchedTerms": [
+      "autonomy",
+      "competence",
+      "relatedness",
+      "dropout"
      ]
     }
    ]
@@ -2556,6 +2919,46 @@
       "rational choice",
       "crime pattern theory",
       "ten principles"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-110-criminology_prevention-4",
+   "title": "差別接觸理論與少年犯罪防治",
+   "coverage": "partial",
+   "note": "涵蓋 Sutherland 差別接觸理論的命題與限制，沒有少年犯罪防治的應用",
+   "sources": [
+    {
+     "doc": "sociallearn8519582",
+     "ref": "Giordano, P. C. (2020). Continuing education: Toward a life-course perspective on social learning. Criminology, 58(2), 199–225.（PMC 作者稿）",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8519582/",
+     "kind": "review",
+     "matchedTerms": [
+      "Sutherland",
+      "differential association",
+      "propositions"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-111-criminology_prevention-1",
+   "title": "國際犯罪比較的資料來源",
+   "coverage": "full",
+   "note": "",
+   "sources": [
+    {
+     "doc": "comp04d",
+     "ref": "Howard, G. J., Newman, G., & Pridemore, W. A. (2000). Theory, method, and data in comparative criminology. In D. Duffee (Ed.), Criminal Justice 2000, Vol. 4: Measurement and analysis of crime and justice. Washington, DC: National Institute of Justice.",
+     "url": "https://www.ojp.gov/criminal_justice2000/vol_4/04d.pdf",
+     "kind": "review",
+     "matchedTerms": [
+      "official",
+      "victim",
+      "self-report",
+      "International Crime Victim",
+      "Interpol"
      ]
     }
    ]
@@ -2724,6 +3127,27 @@
    ]
   },
   {
+   "id": "police-115-criminology_prevention-1",
+   "title": "Akers 差別增強理論四要素",
+   "coverage": "partial",
+   "note": "涵蓋 Sutherland 差別接觸與 Akers 社會學習的定義、增強與模仿，沒有四要素的完整定義",
+   "sources": [
+    {
+     "doc": "sociallearn8519582",
+     "ref": "Giordano, P. C. (2020). Continuing education: Toward a life-course perspective on social learning. Criminology, 58(2), 199–225.（PMC 作者稿）",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8519582/",
+     "kind": "review",
+     "matchedTerms": [
+      "Akers",
+      "differential association",
+      "definitions",
+      "imitation",
+      "reinforcement"
+     ]
+    }
+   ]
+  },
+  {
    "id": "police-115-criminology_prevention-2",
    "title": "新機會理論十原則與詐欺被害",
    "coverage": "partial",
@@ -2737,6 +3161,26 @@
      "matchedTerms": [
       "ten principles",
       "fraud"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-115-criminology_prevention-3",
+   "title": "Hagan 權力控制理論",
+   "coverage": "partial",
+   "note": "涵蓋父權型與平權型家庭的權力結構與性別差異，以青少年飲酒為研究對象",
+   "sources": [
+    {
+     "doc": "hagan2936555",
+     "ref": "Okulicz-Kozaryn, K., et al. (2010). Gender and family differences in adolescent's heavy alcohol use: The power-control theory perspective. Health Education Research, 25(5), 780–791.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2936555/",
+     "kind": "review",
+     "matchedTerms": [
+      "power-control",
+      "patriarchal",
+      "egalitarian",
+      "Hagan"
      ]
     }
    ]
@@ -2811,6 +3255,26 @@
    ]
   },
   {
+   "id": "police-110-counseling-2",
+   "title": "認知行為治療與意義治療的整合",
+   "coverage": "partial",
+   "note": "只涵蓋意義治療與正念整合的方案，沒有與認知行為治療整合的實例",
+   "sources": [
+    {
+     "doc": "logo9464054",
+     "ref": "Maria Michael, J., Reyes, M. E. S., et al. (2022). Online mindfulness-based logotherapy program: A pilot study targeting depressive symptoms of cyberbullied adolescents during the Covid-19 pandemic. Journal of Technology in Behavioral Science, 8(1), 1–9.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9464054/",
+     "kind": "review",
+     "matchedTerms": [
+      "Frankl",
+      "paradoxical intention",
+      "dereflection",
+      "Socratic"
+     ]
+    }
+   ]
+  },
+  {
    "id": "police-111-counseling-1",
    "title": "輔導關係",
    "coverage": "partial",
@@ -2860,6 +3324,30 @@
    ]
   },
   {
+   "id": "police-112-counseling-1",
+   "title": "以 Super 與 Holland 輔導更生人生涯",
+   "coverage": "partial",
+   "note": "只涵蓋 Holland 的 RIASEC 六型與適配性，沒有 Super 與更生人的應用",
+   "sources": [
+    {
+     "doc": "holland9819525",
+     "ref": "Santana Batista, J., et al. (2022). Personality and person-work environment fit: A study based on the RIASEC model. International Journal of Environmental Research and Public Health, 20(1), 719.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9819525/",
+     "kind": "review",
+     "matchedTerms": [
+      "Holland",
+      "realistic",
+      "investigative",
+      "artistic",
+      "social",
+      "enterprising",
+      "conventional",
+      "congruence"
+     ]
+    }
+   ]
+  },
+  {
    "id": "police-112-counseling-4",
    "title": "同理心、同情心與慈悲心",
    "coverage": "partial",
@@ -2892,6 +3380,27 @@
      "matchedTerms": [
       "roll with resistance",
       "change talk"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-114-counseling-1",
+   "title": "Rogers 三大核心條件與報復情緒",
+   "coverage": "partial",
+   "note": "只有一句說明 Rogers 視同理、正向關懷與一致為必要且充分條件，沒有對話示範",
+   "sources": [
+    {
+     "doc": "rogers3495333",
+     "ref": "Seehausen, M., Kazzer, P., et al. (2012). Effects of empathic paraphrasing – Extrinsic emotion regulation in social conflict. Frontiers in Psychology, 3, 482.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3495333/",
+     "kind": "review",
+     "matchedTerms": [
+      "Rogers",
+      "empathy",
+      "positive regard",
+      "congruence",
+      "necessary and sufficient"
      ]
     }
    ]
@@ -3006,6 +3515,46 @@
    ]
   },
   {
+   "id": "114-家事調查官-心理測驗員-心理學-2",
+   "title": "壓力生成模式與測驗評估",
+   "coverage": "partial",
+   "note": "涵蓋 Hammen 壓力生成模式（依賴性與獨立性壓力、人際壓力），沒有測驗評估方式",
+   "sources": [
+    {
+     "doc": "stressgen3049314",
+     "ref": "Liu, R. T., & Alloy, L. B. (2010). Stress generation in depression: A systematic review of the empirical literature and recommendations for future study. Clinical Psychology Review, 30(5), 582–593.（PMC 作者稿）",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3049314/",
+     "kind": "review",
+     "matchedTerms": [
+      "Hammen",
+      "stress generation",
+      "dependent",
+      "independent",
+      "interpersonal"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "114-家事調查官-心理測驗員-心理學-3",
+   "title": "童年情感忽視的影響",
+   "coverage": "partial",
+   "note": "涵蓋情感忽視與成年後情緒理解、述情障礙的關聯，沒有行為表現的描述",
+   "sources": [
+    {
+     "doc": "neglect12271162",
+     "ref": "Suslow, T., Kersting, A., et al. (2025). Experiences of childhood emotional maltreatment and emotional intelligence in young women. Frontiers in Psychiatry, 16, 1583066.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12271162/",
+     "kind": "review",
+     "matchedTerms": [
+      "emotional neglect",
+      "verbaliz",
+      "alexithymia"
+     ]
+    }
+   ]
+  },
+  {
    "id": "115-家事調查官-心理測驗員-心理學-4",
    "title": "社群平台與主觀相對剝奪",
    "coverage": "partial",
@@ -3020,6 +3569,56 @@
       "upward",
       "social comparison",
       "relative deprivation"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "監所管理員-108-犯罪學概要-1",
+   "title": "Lombroso 的犯罪人分類與貢獻",
+   "coverage": "partial",
+   "note": "涵蓋隔代遺傳、天生犯罪人、身體烙印與人體測量的實證方法，沒有完整的犯罪人分類",
+   "sources": [
+    {
+     "doc": "lombroso3814446",
+     "ref": "Mazzarello, P. (2011). Cesare Lombroso: An anthropologist between evolution and degeneration. Functional Neurology, 26(2), 97–101.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3814446/",
+     "kind": "review",
+     "matchedTerms": [
+      "atavism",
+      "born criminal",
+      "stigmata",
+      "positivism",
+      "criminal anthropology"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "監所管理員-108-犯罪學概要-2",
+   "title": "古典學派與實證學派比較",
+   "coverage": "partial",
+   "note": "只有古典學派（自由意志）與實證學派（生物決定）的一句對比，另一份文件談 Lombroso 的實證取向",
+   "sources": [
+    {
+     "doc": "etiol60117",
+     "ref": "Brantley, J. R., & Kravitz, M. (Comps.). (1979). The etiology of criminality: Nonbehavioral science perspectives — A definitive bibliography. Washington, DC: National Criminal Justice Reference Service.",
+     "url": "https://www.ojp.gov/pdffiles1/Digitization/60117NCJRS.pdf",
+     "kind": "review",
+     "matchedTerms": [
+      "classical",
+      "free will",
+      "positiv",
+      "biologically"
+     ]
+    },
+    {
+     "doc": "lombroso3814446",
+     "ref": "Mazzarello, P. (2011). Cesare Lombroso: An anthropologist between evolution and degeneration. Functional Neurology, 26(2), 97–101.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3814446/",
+     "kind": "review",
+     "matchedTerms": [
+      "positivism"
      ]
     }
    ]
@@ -3127,6 +3726,37 @@
       "nodes",
       "paths",
       "edges"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "監所管理員-112-犯罪學概要-3",
+   "title": "社區處遇的理論基礎與優缺點",
+   "coverage": "partial",
+   "note": "涵蓋社區處遇（中間制裁）的運作、網擴大與成本、復歸問題，理論基礎（標籤理論）沒有涵蓋",
+   "sources": [
+    {
+     "doc": "netwide165043",
+     "ref": "Tonry, M. (1997). Intermediate sanctions in sentencing guidelines. Washington, DC: National Institute of Justice.",
+     "url": "https://www.ojp.gov/pdffiles/165043.pdf",
+     "kind": "original",
+     "matchedTerms": [
+      "net widening",
+      "intermediate sanctions",
+      "probation"
+     ]
+    },
+    {
+     "doc": "commcorr249946",
+     "ref": "Still, W., Broderick, B., & Raphael, S. (2016). Building trust and legitimacy within community corrections (New Thinking in Community Corrections, No. 3). Washington, DC: National Institute of Justice.",
+     "url": "https://www.ojp.gov/pdffiles1/nij/249946.pdf",
+     "kind": "review",
+     "matchedTerms": [
+      "probation",
+      "parole",
+      "reintegrat",
+      "cost"
      ]
     }
    ]
@@ -3265,6 +3895,25 @@
      ]
     }
    ]
+  },
+  {
+   "id": "監所管理員-115-犯罪學概要-2",
+   "title": "問題行為症候群",
+   "coverage": "partial",
+   "note": "涵蓋 Jessor 問題行為理論與風險、保護因子，預防策略較少",
+   "sources": [
+    {
+     "doc": "pbt8836126",
+     "ref": "Darvishi, M., et al. (2022). The explanation of adolescent delinquent behaviors based on Jessor's problem behavior theory (PBT) in Iran. Frontiers in Psychiatry, 13, 744794.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8836126/",
+     "kind": "review",
+     "matchedTerms": [
+      "Jessor",
+      "problem behavior",
+      "protective"
+     ]
+    }
+   ]
   }
  ],
  "uncovered": [
@@ -3274,8 +3923,6 @@
   "112-心理學-4",
   "108-諮商與輔導-1",
   "108-諮商與輔導-3",
-  "110-諮商與輔導-2",
-  "111-諮商與輔導-1",
   "111-諮商與輔導-2",
   "111-諮商與輔導-3",
   "111-諮商與輔導-4",
@@ -3287,14 +3934,11 @@
   "監獄官-109-犯罪學與再犯預測-3",
   "監獄官-109-犯罪學與再犯預測-4",
   "監獄官-114-犯罪學與再犯預測-4",
-  "監獄官-109-諮商與矯正輔導-2",
   "監獄官-109-諮商與矯正輔導-4",
   "監獄官-110-諮商與矯正輔導-1",
   "監獄官-111-諮商與矯正輔導-3",
   "監獄官-111-諮商與矯正輔導-4",
   "監獄官-112-諮商與矯正輔導-1",
-  "監獄官-112-諮商與矯正輔導-2",
-  "監獄官-112-諮商與矯正輔導-4",
   "監獄官-114-諮商與矯正輔導-3",
   "監獄官-115-諮商與矯正輔導-2",
   "監獄官-115-諮商與矯正輔導-3",
@@ -3306,61 +3950,42 @@
   "薦任升等（矯正）-112-心理測驗-2",
   "薦任升等（矯正）-112-心理測驗-3",
   "薦任升等（矯正）-112-心理測驗-4",
-  "薦任升等（矯正）-114-心理測驗-2",
   "薦任升等（矯正）-114-心理測驗-4",
-  "薦任升等（矯正）-108-犯罪學-3",
   "薦任升等（矯正）-110-犯罪學-3",
-  "薦任升等（矯正）-110-犯罪學-4",
-  "薦任升等（矯正）-112-犯罪學-3",
   "薦任升等（矯正）-114-犯罪學-4",
-  "薦任升等（矯正）-108-諮商與輔導-4",
   "薦任升等（矯正）-110-諮商與輔導-1",
   "薦任升等（矯正）-110-諮商與輔導-3",
   "薦任升等（矯正）-110-諮商與輔導-4",
   "薦任升等（矯正）-112-諮商與輔導-4",
   "police-114-psychology-3",
   "police-115-psychology-3",
-  "police-115-psychology-4",
   "police-108-criminology_prevention-4",
   "police-110-criminology_prevention-2",
-  "police-110-criminology_prevention-4",
-  "police-111-criminology_prevention-1",
   "police-111-criminology_prevention-3",
   "police-112-criminology_prevention-3",
   "police-113-criminology_prevention-1",
   "police-113-criminology_prevention-2",
   "police-114-criminology_prevention-1",
-  "police-115-criminology_prevention-1",
-  "police-115-criminology_prevention-3",
   "police-108-counseling-3",
   "police-108-counseling-4",
   "police-109-counseling-3",
   "police-110-counseling-1",
-  "police-110-counseling-2",
   "police-110-counseling-3",
   "police-111-counseling-3",
-  "police-112-counseling-1",
   "police-112-counseling-3",
   "police-113-counseling-1",
   "police-113-counseling-3",
   "police-113-counseling-4",
-  "police-114-counseling-1",
   "police-115-counseling-2",
   "police-115-counseling-3",
   "police-115-counseling-4",
   "113-家事調查官-心理測驗員-心理學-3",
-  "114-家事調查官-心理測驗員-心理學-2",
-  "114-家事調查官-心理測驗員-心理學-3",
-  "監所管理員-108-犯罪學概要-1",
-  "監所管理員-108-犯罪學概要-2",
   "監所管理員-109-犯罪學概要-3",
   "監所管理員-110-犯罪學概要-2",
   "監所管理員-111-犯罪學概要-1",
   "監所管理員-112-犯罪學概要-1",
-  "監所管理員-112-犯罪學概要-3",
   "監所管理員-113-犯罪學概要-2",
-  "監所管理員-115-犯罪學概要-2",
   "監所管理員-115-犯罪學概要-3"
  ],
- "uncoveredNote": "這些題目在可連線的公開網站中找不到能下載全文、且內容足以對應得分點的文件，主要是：心理測驗的計算與常模（教科書內容）、諮商技術與團體歷程（Corey、Egan、Hill、Rogers 等專書）、古典與實證學派及多數副文化理論（Beccaria、Bentham、Lombroso、Cloward & Ohlin、Miller、Sellin、Akers、Hagan、Colvin）、臺灣倫理守則與方案，以及部分要以講義為準的題目。"
+ "uncoveredNote": "這些題目在可連線的公開網站中找不到能下載全文、且內容足以對應得分點的文件，主要是：心理測驗的計算與常模（教科書內容）、諮商技術與團體歷程（Corey、Egan、Hill、Rogers 等專書）、古典學派與部分副文化理論（Beccaria、Bentham、Cloward & Ohlin、Miller、Sellin、Colvin）、臺灣倫理守則與方案，以及部分要以講義為準的題目。"
 }
