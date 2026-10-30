@@ -79,9 +79,9 @@ function render(){
   const meta=$('q-meta'); meta.textContent='';
   meta.appendChild(el('span',{class:'chip'},{essay:'論述題格式',case:'案例題格式',theory:'學科題格式',proc:'程序論述格式'}[q.kind]));
   meta.appendChild(el('span',{class:'chip warn'},'AI 草擬'));
-  // 出處狀態較長，以「・」分段，窄螢幕換行時只在分段處斷開。
+  // 出處狀態較長，以「・」分段；手機上拿掉「・」，分成上下兩行。
   const checkChip=el('span',{class:q.checkOk?'chip ok':'chip warn'});
-  String(q.check).split('・').forEach((part,i)=>{ if(i) checkChip.appendChild(document.createTextNode('・')); checkChip.appendChild(el('span',{class:'nw'},part)); });
+  String(q.check).split('・').forEach((part,i)=>{ if(i) checkChip.appendChild(el('span',{class:'sep'},'・')); checkChip.appendChild(el('span',{class:'nw'},part)); });
   meta.appendChild(checkChip);
   const approvedCount=q.rows.filter((_,i)=>approvedOf(q,s,i)).length;
   meta.appendChild(el('span',{class:approvedCount===q.rows.length?'chip ok':'chip warn'},'開發者核定 '+approvedCount+'／'+q.rows.length));

@@ -33,7 +33,8 @@ h2{font-size:20px;font-weight:600}
   /* 手機上題目標籤排成兩欄等寬，複製按鈕整列等寬，避免長短不一。 */
   .meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:1fr}
   .meta .chip{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;text-align:center;padding:4px 6px;line-height:1.35;border-radius:14px}
-  .meta .chip .nw{white-space:nowrap}
+  .meta .chip .nw{white-space:nowrap;flex:0 0 100%}
+  .meta .chip .sep{display:none}
   .copy-actions{display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
   .copy-actions .btn{width:100%}
 }
