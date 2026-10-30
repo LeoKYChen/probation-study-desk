@@ -65,11 +65,12 @@ if(window.PSD_STUDY30_IDB_TEST===true){
   });
   input.addEventListener('change',async()=>{if(busy)return;plan=null;protectedCopy=false;const f=input.files?.[0];if(!f)return;busy=true;input.disabled=true;try{if(f.size>20*1024*1024)throw Error('檔案超過20MB');const bundle=JSON.parse(await f.text());plan=await full.planRestore({bundle,core,learning,deskDatabase:desk.db});tell('預覽完成：學習資料 '+Object.keys(plan.modulePlan.changes).length+' 區，書桌 '+plan.deskPlan.writes.length+' 份，書桌衝突 '+plan.deskPlan.conflicts.length+' 筆。請先下載保護備份。');}catch(e){tell('無法預覽：'+e.message);}finally{input.value='';input.disabled=false;busy=false;}});
   function addDrive(){
-   const panel=document.createElement('section');panel.id='testFullDrive';const title=document.createElement('h3');title.textContent='測試版 Google Drive 手動同步';panel.append(title);
-   const explanation=document.createElement('p');explanation.textContent='僅用合成資料。使用獨立測試資料夾，不會自動同步或讀取舊版同步資料夾；計時資料不包含。';panel.append(explanation);
+   const panel=document.createElement('section');panel.id='testFullDrive';const title=document.createElement('h3');title.textContent='測試版 Google Drive 同步';panel.append(title);
+   const explanation=document.createElement('p');explanation.textContent='僅用合成資料。使用獨立測試資料夾，不讀取舊版同步資料夾；計時資料不包含。自動同步須手動啟用，僅在此頁開啟、可見及授權有效時運作。';panel.append(explanation);
    const label=document.createElement('label');label.textContent='Google OAuth 用戶端 ID ';const cid=document.createElement('input');cid.type='text';cid.autocomplete='off';cid.setAttribute('aria-label','測試版 Google OAuth 用戶端 ID');cid.value=localStorage.getItem('psd-test-full-drive-client')||'';label.append(cid);panel.append(label);
    const status=document.createElement('p');status.id='testFullDriveStatus';status.setAttribute('role','status');status.textContent='尚未連線。';panel.append(status);
-   let token='',expires=0,engine=null,client=null,clientId='';const scope='https://www.googleapis.com/auth/drive.file';
+   let token='',expires=0,engine=null,client=null,clientId='',manualComplete=false;const scope='https://www.googleapis.com/auth/drive.file';
+   const autoLabel=document.createElement('label'),auto=document.createElement('input');auto.type='checkbox';auto.id='testFullDriveAuto';auto.disabled=true;autoLabel.append(auto,document.createTextNode(' 此頁開啟且可見時，每 5 分鐘自動同步（測試版）'));panel.append(autoLabel);
    const uuid=()=>crypto.randomUUID();
    const createButton=(name,fn)=>{const b=document.createElement('button');b.type='button';b.textContent=name;b.addEventListener('click',fn);panel.append(b);return b;};
    const connect=createButton('連線測試版 Google Drive',()=>{
@@ -79,7 +80,7 @@ if(window.PSD_STUDY30_IDB_TEST===true){
     try{localStorage.setItem('psd-test-full-drive-client',value);}catch{status.textContent='無法保存用戶端設定。';return;}
     if(!client||clientId!==value){clientId=value;client=google.accounts.oauth2.initTokenClient({client_id:value,scope,include_granted_scopes:false,callback:response=>{
      if(!response?.access_token||!google.accounts.oauth2.hasGrantedAllScopes(response,scope)){status.textContent='Google 授權未完成。';return;}
-     token=response.access_token;expires=Date.now()+Math.max(0,Number(response.expires_in||3300)-90)*1000;
+     token=response.access_token;expires=Date.now()+Math.max(0,Number(response.expires_in||3300)-90)*1000;manualComplete=false;auto.checked=false;auto.disabled=true;
      const original=window.PSDDriveTransport.create({getToken:()=>Date.now()<expires?token:'',createId:uuid,folderName:'觀護人學習平台-完整同步測試-私人'});
      const transport={...original,ensureFolder:async()=>{const id=await original.ensureFolder(),pin=localStorage.getItem('psd-test-full-drive-folder');if(pin&&pin!==id)throw Error('同步資料夾與本機先前設定不同，已停止');if(!pin)localStorage.setItem('psd-test-full-drive-folder',id);return id;}};
      let device=localStorage.getItem('psd-test-full-drive-device');if(!device){device=uuid();localStorage.setItem('psd-test-full-drive-device',device);}
@@ -87,15 +88,18 @@ if(window.PSD_STUDY30_IDB_TEST===true){
     },error_callback:()=>{status.textContent='Google 授權視窗未完成。';}});}
     client.requestAccessToken({prompt:'consent'});
    });
-   const sync=createButton('同步測試資料',async()=>{
-    if(busy||!engine)return;if(Date.now()>=expires){token='';engine=null;sync.disabled=true;status.textContent='授權已到期，請重新連線。';return;}
-    if(!confirm('請確認已下載並保存測試版全站 JSON，且已關閉其他編輯分頁。開始同步？'))return;
+   async function runSync(automatic=false){
+    if(busy||!engine)return;if(Date.now()>=expires){token='';engine=null;manualComplete=false;auto.checked=false;auto.disabled=true;sync.disabled=disconnect.disabled=true;status.textContent='授權已到期，自動同步已停止，請重新連線。';return;}
+    if(!automatic&&!confirm('請確認已下載並保存測試版全站 JSON，且已關閉其他編輯分頁。開始同步？'))return;
     busy=true;sync.disabled=connect.disabled=disconnect.disabled=true;
-    try{const result=await engine.sync(s=>{status.textContent=s});plan=null;protectedCopy=false;await renderArchives();await renderLegacyConflicts();status.textContent='同步完成：讀取 '+result.remoteSnapshots+' 份快照，保留 '+result.conflicts+' 筆衝突'+(result.uploaded?'，已新增快照':'，無需新增快照')+(result.pendingLocalChanges?'；同步期間的新修改尚待下次同步':'')+'。';window.dispatchEvent(new CustomEvent('psd:drive-sync-finished',{detail:result}));}
-    catch(e){status.textContent='同步未完成：'+e.message+'；請保留本機資料與 JSON 備份。';}
+    try{const result=await engine.sync(s=>{status.textContent=s});plan=null;protectedCopy=false;await renderArchives();await renderLegacyConflicts();manualComplete=true;auto.disabled=false;if(result.conflicts){auto.checked=false;status.textContent='同步完成並保留 '+result.conflicts+' 筆衝突；自動同步已停止，請先比較版本。';}else status.textContent='同步完成：讀取 '+result.remoteSnapshots+' 份快照'+(result.uploaded?'，已新增快照':'，無需新增快照')+(result.pendingLocalChanges?'；同步期間的新修改尚待下次同步':'')+'。';window.dispatchEvent(new CustomEvent('psd:drive-sync-finished',{detail:result}));}
+    catch(e){auto.checked=false;status.textContent='同步未完成，自動同步已停止：'+e.message+'；請保留本機資料與 JSON 備份。';}
     finally{busy=false;connect.disabled=false;sync.disabled=!engine;disconnect.disabled=!token;}
-   });sync.disabled=true;
-   const disconnect=createButton('斷開測試版授權',()=>{const old=token;token='';expires=0;engine=null;sync.disabled=disconnect.disabled=true;if(old&&google?.accounts?.oauth2?.revoke)google.accounts.oauth2.revoke(old,()=>{});status.textContent='已斷開授權，未刪除任何資料。';});disconnect.disabled=true;
+   }
+   const sync=createButton('同步測試資料',()=>runSync());sync.disabled=true;
+   auto.addEventListener('change',()=>{if(auto.checked&&(!manualComplete||!confirm('請確認已保存全站 JSON，並在自動同步期間關閉其他編輯分頁。啟用自動同步？')))auto.checked=false;});
+   window.setInterval(()=>{if(auto.checked&&!document.hidden&&navigator.onLine!==false)void runSync(true);},300000);
+   const disconnect=createButton('斷開測試版授權',()=>{const old=token;token='';expires=0;engine=null;manualComplete=false;auto.checked=false;auto.disabled=true;sync.disabled=disconnect.disabled=true;if(old&&google?.accounts?.oauth2?.revoke)google.accounts.oauth2.revoke(old,()=>{});status.textContent='已斷開授權，未刪除任何資料。';});disconnect.disabled=true;
    host.append(panel);
   }
   document.querySelector('main').prepend(host);save.disabled=protect.disabled=apply.disabled=input.disabled=true;
