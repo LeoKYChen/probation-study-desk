@@ -15,6 +15,15 @@ if(window.PSD_STUDY30_IDB_TEST===true){
   function download(data,name){const u=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'})),a=document.createElement('a');a.href=u;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),3000);}
   async function collect(){return full.collect({core,learning,deskDatabase:desk.db,origin:location.origin});}
   const archives=document.createElement('div');archives.id='testDeskArchives';host.append(archives);
+  const legacyConflicts=document.createElement('div');legacyConflicts.id='testLegacyConflicts';host.append(legacyConflicts);
+  async function renderLegacyConflicts(){
+   legacyConflicts.replaceChildren();const h=document.createElement('h3');h.textContent='其他模組的衝突版本';legacyConflicts.append(h);
+   const snapshot=await learning.snapshot(),raw=snapshot[core.CONFLICT_KEY],managed=new Set(learning.managedKeys);
+   const rows=raw?core.parseValue(core.CONFLICT_KEY,raw).entries.filter(row=>!managed.has(row.key)):[];
+   if(!rows.length){legacyConflicts.append(document.createTextNode('目前沒有其他模組的衝突版本。'));return;}
+   const note=document.createElement('p');note.textContent='這些版本已保存在全站 JSON 備份中；目前可比較內容，尚不能在此一鍵復原。';legacyConflicts.append(note);
+   for(const row of rows){const item=document.createElement('details'),title=document.createElement('summary'),label=core.modules.find(x=>x.key===row.key)?.name||row.key;title.textContent=label+'｜'+(row.path||[]).join(' / ');item.append(title);for(const [name,value] of [['原本版本',row.existing],['匯入版本',row.incoming]]){const heading=document.createElement('h4'),pre=document.createElement('pre');heading.textContent=name;pre.style.whiteSpace='pre-wrap';pre.style.overflowWrap='anywhere';pre.textContent=JSON.stringify(value,null,2);item.append(heading,pre);}legacyConflicts.append(item);}
+  }
   async function renderArchives(){
    archives.replaceChildren();const title=document.createElement('h3');title.textContent='備考書桌封存版本';archives.append(title);
    const rows=await full.listDeskArchives(desk.db);
@@ -44,7 +53,7 @@ if(window.PSD_STUDY30_IDB_TEST===true){
   const apply=button('確認安全匯入測試備份',async()=>{
    if(busy||!plan||!protectedCopy){tell('請先選檔預覽並下載保護備份。');return;}
    if(!confirm('請確認已保存保護備份並關閉其他編輯分頁。開始匯入？'))return;
-   busy=true;apply.disabled=true;try{const result=await full.applyRestore({plan,learning,deskDatabase:desk.db});plan=null;protectedCopy=false;await renderArchives();tell('匯入完成：學習資料 '+result.moduleWritten+' 個區域，書桌封存／新增 '+result.deskWritten+' 份。');}
+   busy=true;apply.disabled=true;try{const result=await full.applyRestore({plan,learning,deskDatabase:desk.db});plan=null;protectedCopy=false;await renderArchives();await renderLegacyConflicts();tell('匯入完成：學習資料 '+result.moduleWritten+' 個區域，書桌封存／新增 '+result.deskWritten+' 份。');}
    catch(e){plan=null;protectedCopy=false;tell('匯入未完全確認：'+e.message+'；請保留備份，重新預覽後再試。');}finally{busy=false;apply.disabled=false;}
   });
   input.addEventListener('change',async()=>{if(busy)return;plan=null;protectedCopy=false;const f=input.files?.[0];if(!f)return;busy=true;input.disabled=true;try{if(f.size>20*1024*1024)throw Error('檔案超過20MB');const bundle=JSON.parse(await f.text());plan=await full.planRestore({bundle,core,learning,deskDatabase:desk.db});tell('預覽完成：學習資料 '+Object.keys(plan.modulePlan.changes).length+' 區，書桌 '+plan.deskPlan.writes.length+' 份，書桌衝突 '+plan.deskPlan.conflicts.length+' 筆。請先下載保護備份。');}catch(e){tell('無法預覽：'+e.message);}finally{input.value='';input.disabled=false;busy=false;}});
@@ -75,7 +84,7 @@ if(window.PSD_STUDY30_IDB_TEST===true){
     if(busy||!engine)return;if(Date.now()>=expires){token='';engine=null;sync.disabled=true;status.textContent='授權已到期，請重新連線。';return;}
     if(!confirm('請確認已下載並保存測試版全站 JSON，且已關閉其他編輯分頁。開始同步？'))return;
     busy=true;sync.disabled=connect.disabled=disconnect.disabled=true;
-    try{const result=await engine.sync(s=>{status.textContent=s});plan=null;protectedCopy=false;await renderArchives();status.textContent='同步完成：讀取 '+result.remoteSnapshots+' 份快照，保留 '+result.conflicts+' 筆衝突'+(result.uploaded?'，已新增快照':'，無需新增快照')+(result.pendingLocalChanges?'；同步期間的新修改尚待下次同步':'')+'。';window.dispatchEvent(new CustomEvent('psd:drive-sync-finished',{detail:result}));}
+    try{const result=await engine.sync(s=>{status.textContent=s});plan=null;protectedCopy=false;await renderArchives();await renderLegacyConflicts();status.textContent='同步完成：讀取 '+result.remoteSnapshots+' 份快照，保留 '+result.conflicts+' 筆衝突'+(result.uploaded?'，已新增快照':'，無需新增快照')+(result.pendingLocalChanges?'；同步期間的新修改尚待下次同步':'')+'。';window.dispatchEvent(new CustomEvent('psd:drive-sync-finished',{detail:result}));}
     catch(e){status.textContent='同步未完成：'+e.message+'；請保留本機資料與 JSON 備份。';}
     finally{busy=false;connect.disabled=false;sync.disabled=!engine;disconnect.disabled=!token;}
    });sync.disabled=true;
@@ -91,7 +100,7 @@ if(window.PSD_STUDY30_IDB_TEST===true){
    if(window.PSD_LECTURES_IDB_TEST===true)managedKeys.push('psd-lecture-planner-v1');
    if(window.PSD_COMMON_IDB_TEST===true)managedKeys.push('psd-common-subjects-v1','psd-staresto-link-coach-v06','psd-staresto-daily-v04');
    learning=window.PSDStudy30MixedBackup.create({core,database,legacy:localStorage,origin:location.origin,managedKeys,allowLegacyWrites:true});
-   await learning.snapshot();await renderArchives();addDrive();save.disabled=protect.disabled=apply.disabled=input.disabled=false;tell('測試儲存已開啟；請先關閉其他編輯分頁。');
+   await learning.snapshot();await renderArchives();await renderLegacyConflicts();addDrive();save.disabled=protect.disabled=apply.disabled=input.disabled=false;tell('測試儲存已開啟；請先關閉其他編輯分頁。');
   }catch(e){tell('測試備份無法啟動：'+e.message);database?.close();desk?.close();}
  };
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
