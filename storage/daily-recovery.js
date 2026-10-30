@@ -20,5 +20,25 @@
   for(const [key,raw] of Object.entries(changes))core.parseValue(key,raw);
   return {baseline:structuredClone(snapshot),changes,count:Object.keys(previous).length};
  }
- return {KEY,planImport,planClear};
+ function listConflicts({core,snapshot}){
+  const entries=snapshot[core.CONFLICT_KEY]?core.parseValue(core.CONFLICT_KEY,snapshot[core.CONFLICT_KEY]).entries:[],active=snapshot[KEY]?core.parseValue(KEY,snapshot[KEY]):{};
+  return entries.flatMap((row,index)=>{
+   if(!row||row.key!==KEY||!Array.isArray(row.path)||row.path.length>1||row.path.some(x=>typeof x!=='string'||!x||x.length>=260||['__proto__','prototype','constructor'].includes(x))||!row.existing||typeof row.existing!=='object'||Array.isArray(row.existing)||!row.incoming||typeof row.incoming!=='object'||Array.isArray(row.incoming))return [];
+   const main=row.path.length?active[row.path[0]]??null:active;
+   return [{index,path:structuredClone(row.path),existing:structuredClone(row.existing),incoming:structuredClone(row.incoming),main:structuredClone(main)}];
+  });
+ }
+ function planRestore({core,snapshot,index,side}){
+  if(!['existing','incoming'].includes(side))throw Error('請選擇版本');
+  const row=listConflicts({core,snapshot}).find(x=>x.index===index);if(!row)throw Error('找不到每日題衝突版本');
+  const target=structuredClone(row[side]),old=structuredClone(row.main),data=snapshot[KEY]?core.parseValue(KEY,snapshot[KEY]):{},archive=core.parseValue(core.CONFLICT_KEY,snapshot[core.CONFLICT_KEY]);
+  const changes={};if(JSON.stringify(old)!==JSON.stringify(target)){
+   const next=row.path.length?(data[row.path[0]]=target,data):target;
+   changes[KEY]=JSON.stringify(next);core.parseValue(KEY,changes[KEY]);
+   if(old!==null&&!archive.entries.some(x=>x.key===KEY&&JSON.stringify(x.path)===JSON.stringify(row.path)&&JSON.stringify(x.incoming)===JSON.stringify(old)))archive.entries.push({key:KEY,path:row.path,existing:target,incoming:old});
+  }
+  changes[core.CONFLICT_KEY]=JSON.stringify(archive);core.parseValue(core.CONFLICT_KEY,changes[core.CONFLICT_KEY]);
+  return {baseline:structuredClone(snapshot),changes};
+ }
+ return {KEY,planImport,planClear,listConflicts,planRestore};
 });
