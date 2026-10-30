@@ -7,7 +7,7 @@ const server=http.createServer((req,res)=>{
  try{
   const url=new URL(req.url,'http://localhost'),p=decodeURIComponent(url.pathname),name=path.resolve(root,'.'+p+(p.endsWith('/')?'index.html':''));
   if(!name.startsWith(root+path.sep))throw Error('invalid path');
-  const ext=path.extname(name),types={'.js':'application/javascript','.html':'text/html','.css':'text/css','.json':'application/json'};
+  const ext=path.extname(name),types={'.mjs':'application/javascript','.js':'application/javascript','.html':'text/html','.css':'text/css','.json':'application/json'};
   res.setHeader('Content-Type',(types[ext]||'application/octet-stream')+'; charset=utf-8');
   res.end(fs.readFileSync(name));
  }catch{res.statusCode=404;res.end('not found');}
