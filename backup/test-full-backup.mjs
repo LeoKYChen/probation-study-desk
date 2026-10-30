@@ -19,10 +19,17 @@ if(window.PSD_STUDY30_IDB_TEST===true){
   async function renderLegacyConflicts(){
    legacyConflicts.replaceChildren();const h=document.createElement('h3');h.textContent='其他模組的衝突版本';legacyConflicts.append(h);
    const snapshot=await learning.snapshot(),raw=snapshot[core.CONFLICT_KEY],managed=new Set(learning.managedKeys);
-   const rows=raw?core.parseValue(core.CONFLICT_KEY,raw).entries.filter(row=>!managed.has(row.key)):[];
-   if(!rows.length){legacyConflicts.append(document.createTextNode('目前沒有其他模組的衝突版本。'));return;}
-   const note=document.createElement('p');note.textContent='這些版本已保存在全站 JSON 備份中；目前可比較內容，尚不能在此一鍵復原。';legacyConflicts.append(note);
-   for(const row of rows){const item=document.createElement('details'),title=document.createElement('summary'),label=core.modules.find(x=>x.key===row.key)?.name||row.key;title.textContent=label+'｜'+(row.path||[]).join(' / ');item.append(title);for(const [name,value] of [['原本版本',row.existing],['匯入版本',row.incoming]]){const heading=document.createElement('h4'),pre=document.createElement('pre');heading.textContent=name;pre.style.whiteSpace='pre-wrap';pre.style.overflowWrap='anywhere';pre.textContent=JSON.stringify(value,null,2);item.append(heading,pre);}legacyConflicts.append(item);}
+   const entries=raw?core.parseValue(core.CONFLICT_KEY,raw).entries.filter(row=>row&&typeof row==='object'&&!managed.has(row.key)):[];
+   const rows=core.listLegacyConflicts(snapshot,learning.managedKeys),supported=new Map(rows.map(row=>[row.index,row]));
+   if(!entries.length){legacyConflicts.append(document.createTextNode('目前沒有其他模組的衝突版本。'));return;}
+   const note=document.createElement('p');note.textContent='復原前請保存保護備份並關閉其他編輯分頁；未支援的版本仍保留在全站 JSON。';legacyConflicts.append(note);
+   for(const row of rows){
+    const item=document.createElement('details'),title=document.createElement('summary'),label=core.modules.find(x=>x.key===row.key)?.name||row.key;title.textContent=label+'｜'+row.path.join(' / ');item.append(title);
+    for(const [name,value] of [['目前版本',row.main],['原本版本',row.existing],['匯入版本',row.incoming]]){const heading=document.createElement('h4'),pre=document.createElement('pre');heading.textContent=name;pre.style.whiteSpace='pre-wrap';pre.style.overflowWrap='anywhere';pre.textContent=JSON.stringify(value,null,2);item.append(heading,pre);}
+    for(const [side,name] of [['existing','原本版本'],['incoming','匯入版本']]){const restore=document.createElement('button');restore.type='button';restore.textContent='復原'+name;restore.addEventListener('click',async()=>{if(busy)return;busy=true;restore.disabled=true;try{const current=await learning.snapshot(),choice=core.planLegacyConflictRestore(current,learning.managedKeys,row.index,side);download(await collect(),'test-full-before-legacy-restore.json');if(!confirm('請確認保護備份已儲存，並關閉其他編輯分頁。復原所選版本？')){tell('已取消復原。');return;}await learning.apply(choice);plan=null;protectedCopy=false;await renderLegacyConflicts();tell('已復原其他模組版本，原主要版本仍保留在衝突紀錄。');}catch(e){tell('復原未完成：'+e.message);}finally{busy=false;restore.disabled=false;}});item.append(restore);}
+    legacyConflicts.append(item);
+   }
+   if(entries.length>supported.size){const other=document.createElement('p');other.textContent='另有 '+(entries.length-supported.size)+' 筆格式暫不支援一鍵復原，仍保留在全站 JSON 備份中。';legacyConflicts.append(other);}
   }
   async function renderArchives(){
    archives.replaceChildren();const title=document.createElement('h3');title.textContent='備考書桌封存版本';archives.append(title);

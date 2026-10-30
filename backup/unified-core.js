@@ -462,6 +462,38 @@
   return {changes,baseline:copy(snapshot),index,side,key:row.key,path:row.path};
  }
 
+ function listLegacyConflicts(snapshot,managedKeys){
+  assert(isObj(snapshot)&&Array.isArray(managedKeys),'模組範圍不符');
+  const managed=new Set(managedKeys),entries=snapshot[CONFLICT_KEY]?parseValue(CONFLICT_KEY,snapshot[CONFLICT_KEY]).entries:[];
+  return entries.flatMap((row,index)=>{
+   if(!isObj(row)||typeof row.key!=='string'||managed.has(row.key)||!own(names,row.key)||!Array.isArray(row.path)||row.path.some(p=>typeof p!=='string'||!p||p.length>=260||bad.has(p))||!own(row,'existing')||!own(row,'incoming')||!own(snapshot,row.key))return [];
+   const kind=names[row.key].kind,path=row.path,data=parseValue(row.key,snapshot[row.key]);let main;
+   if((kind==='font'||kind==='setting')&&path.length===0)main=data;
+   else if(kind==='records'&&path.length===1&&typeof path[0]==='string'&&!bad.has(path[0])&&own(data,path[0]))main=data[path[0]];
+   else if(kind==='prompts'&&path.length===2&&path[0]==='entries'&&typeof path[1]==='string')main=data.entries.find(x=>x.mode+'::'+x.subject===path[1]);
+   else return [];
+   if(main===undefined)return [];
+   return [{index,key:row.key,path:copy(path),kind,existing:copy(row.existing),incoming:copy(row.incoming),main:copy(main)}];
+  });
+ }
+ function planLegacyConflictRestore(snapshot,managedKeys,index,side){
+  assert(side==='existing'||side==='incoming','請指定要恢復的版本');assert(Number.isInteger(index)&&index>=0,'衝突版本編號錯誤');
+  const row=listLegacyConflicts(snapshot,managedKeys).find(x=>x.index===index);assert(row,'找不到可復原的舊模組衝突版本');
+  const target=copy(row[side]),old=copy(row.main);let data=parseValue(row.key,snapshot[row.key]);
+  const archive=parseValue(CONFLICT_KEY,snapshot[CONFLICT_KEY]),changes=Object.create(null);
+  if(!equal(old,target)){
+   if(row.kind==='font'||row.kind==='setting')data=target;
+   else if(row.kind==='records')data[row.path[0]]=target;
+   else{const idx=data.entries.findIndex(x=>x.mode+'::'+x.subject===row.path[1]);assert(idx>=0&&target&&target.mode+'::'+target.subject===row.path[1],'提示詞版本範圍不符');data.entries[idx]=target;}
+   changes[row.key]=JSON.stringify(data);parseValue(row.key,changes[row.key]);
+   if(!archive.entries.some(x=>x.key===row.key&&equal(x.path,row.path)&&equal(x.incoming,old)))archive.entries.push({key:row.key,path:copy(row.path),existing:copy(target),incoming:old});
+  }
+  assert(archive.entries.length<=MAX_CONFLICTS,'衝突版本數量超過上限，請先分開備份');
+  if(JSON.stringify(archive)!==snapshot[CONFLICT_KEY])changes[CONFLICT_KEY]=JSON.stringify(archive);
+  assert(Object.values(changes).reduce((n,v)=>n+v.length,0)<=MAX_FILE,'恢復資料超過檔案限制');
+  for(const [key,raw] of Object.entries(changes))parseValue(key,raw);
+  return {changes,baseline:copy(snapshot),index,side,key:row.key,path:row.path};
+ }
  // Clearing learning progress is deliberately distinct from a full site reset.
  const clearKinds=new Set(['sessions','records','common','english','oldenglish','list','lectures']);
  function previewClear(storage){
@@ -531,5 +563,5 @@
   }
   return changed.length;
  }
- return {FORMAT,SCHEMA,CONFLICT_KEY,modules,collect,validate,storageSnapshot,parseValue,plan,apply,listStudy30Conflicts,planStudy30ConflictRestore,listV25Conflicts,planV25ConflictRestore,listCommonConflicts,planCommonConflictRestore,previewClear,applyClear};
+ return {FORMAT,SCHEMA,CONFLICT_KEY,modules,collect,validate,storageSnapshot,parseValue,plan,apply,listStudy30Conflicts,planStudy30ConflictRestore,listV25Conflicts,planV25ConflictRestore,listCommonConflicts,planCommonConflictRestore,listLegacyConflicts,planLegacyConflictRestore,previewClear,applyClear};
 });
