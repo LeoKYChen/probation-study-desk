@@ -1,0 +1,36 @@
+'use strict';
+const assert=require('node:assert/strict'),{IDBFactory}=require('fake-indexeddb');
+(async()=>{
+ await import('./indexeddb.js');await import('./daily-shared-repository.js');await import('../daily-simulation/model.js');
+ const api=PSDDailySharedRepository,model=PracticeModel,db=await PSDLearningStorage.open(new IDBFactory());
+ const records={'existing-Q-ID':{answer:'舊答案',review:true,updatedAt:'2099-01-01',essayDrafts:{issues:'原草稿'}}};
+ const original=JSON.stringify(records),favorites=JSON.stringify(['existing-Q-ID']);
+ const map=new Map([[api.RECORDS,original],[api.FAVORITES,favorites]]),legacy={getItem:k=>map.get(k)??null,setItem:(k,v)=>map.set(k,v)};
+ const site=await api.open({database:db,legacy,model}),v25=await api.open({database:db,legacy,model});
+ assert.equal(site.read().records['existing-Q-ID'].answer,'舊答案');
+ const next=structuredClone(records);next['existing-Q-ID'].answer='新答案';
+ await site.writeRecords(next);
+ // A second page may change favorites without clobbering the first page's answers.
+ await v25.writeFavorites(['existing-Q-ID','another-id']);
+ assert.equal(JSON.parse(await db.get(api.RECORDS))['existing-Q-ID'].answer,'新答案');
+ assert.deepEqual(JSON.parse(await db.get(api.FAVORITES)),['existing-Q-ID','another-id']);
+ await assert.rejects(v25.writeRecords(records),/其他分頁/);
+ assert.equal(legacy.getItem(api.RECORDS),original);assert.equal(legacy.getItem(api.FAVORITES),favorites);
+ const retry=await api.open({database:db,legacy,model});
+ assert.equal((await retry.refresh()).records['existing-Q-ID'].answer,'新答案');
+ const newest=retry.read();newest.records['existing-Q-ID'].answer='再修改';
+ await retry.writeBoth(newest.records,['third-id']);
+ assert.equal(JSON.parse(await db.get(api.RECORDS))['existing-Q-ID'].answer,'再修改');
+ assert.deepEqual(JSON.parse(await db.get(api.FAVORITES)),['third-id']);
+ legacy.setItem(api.FAVORITES,JSON.stringify(['舊分頁變更']));
+ await assert.rejects(retry.writeRecords(records),/舊版頁面/);
+ assert.equal(JSON.parse(await db.get(api.RECORDS))['existing-Q-ID'].answer,'再修改');
+ db.close();
+ const damaged=await PSDLearningStorage.open(new IDBFactory()),bad=new Map([[api.RECORDS,original],[api.FAVORITES,'bad-json']]);
+ const old={getItem:k=>bad.get(k)??null,setItem:(k,v)=>bad.set(k,v)};
+ await assert.rejects(api.open({database:damaged,legacy:old,model}));
+ assert.equal(old.getItem(api.RECORDS),original);assert.equal(old.getItem(api.FAVORITES),'bad-json');
+ old.setItem(api.FAVORITES,favorites);
+ const fixed=await api.open({database:damaged,legacy:old,model});assert.equal(fixed.read().records['existing-Q-ID'].answer,'舊答案');
+ damaged.close();console.log('PASS shared daily repository: original IDs, independent keys, atomic dual write and legacy drift');
+})().catch(e=>{console.error(e);process.exitCode=1;});

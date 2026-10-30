@@ -4,7 +4,7 @@ const playwright=require('playwright');
 const engine=process.env.UNIFIED_BROWSER_ENGINE||'chromium';
 assert(['chromium','webkit'].includes(engine));
 const root=path.resolve(process.argv[2]||'.'),remote=process.env.UNIFIED_TEST_URL;
-const types={'.html':'text/html;charset=utf-8','.js':'text/javascript;charset=utf-8','.css':'text/css;charset=utf-8','.json':'application/json;charset=utf-8','.webmanifest':'application/manifest+json'};
+const types={'.html':'text/html;charset=utf-8','.mjs':'text/javascript','.js':'text/javascript;charset=utf-8','.css':'text/css;charset=utf-8','.json':'application/json;charset=utf-8','.webmanifest':'application/manifest+json'};
 const server=http.createServer((req,res)=>{
  let url=new URL(req.url,'http://localhost'),pathname=decodeURIComponent(url.pathname);
  if(pathname.startsWith('/probation-study-desk/'))pathname=pathname.slice('/probation-study-desk'.length);

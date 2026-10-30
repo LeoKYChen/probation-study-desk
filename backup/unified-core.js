@@ -25,7 +25,9 @@
   {key:'jj-read',name:'少年司法週報已讀',kind:'list'},
   {key:'jj-font',name:'少年司法週報字級',kind:'font'},
   {key:'psd-home-exam-countdown-v1',name:'考試倒數設定',kind:'setting'},
-  {key:'psd-lecture-planner-v1',name:'學習管理與每日紀錄',kind:'lectures'}
+  {key:'psd-lecture-planner-v1',name:'學習管理與每日紀錄',kind:'lectures'},
+  {key:'lawScoring.v2',name:'申論評分參考自評',kind:'records'},
+  {key:'lawScoring.recall.v1',name:'失分回想卡',kind:'records'}
  ];
  const names=Object.fromEntries(modules.map(x=>[x.key,x]));
  const allowed=new Set([...modules.map(x=>x.key),CONFLICT_KEY]);
@@ -404,6 +406,94 @@
   return {changes,baseline:copy(snapshot),date,index,side,changed:own(changes,key)};
  }
 
+ function listV25Conflicts(snapshot){
+  assert(isObj(snapshot),'本機資料不可讀');
+  const keys=new Set(['probation-study-desk-v24','probation-study-desk-v3','probation-study-desk-v2']);
+  const entries=snapshot[CONFLICT_KEY]?parseValue(CONFLICT_KEY,snapshot[CONFLICT_KEY]).entries:[];
+  return entries.flatMap((row,index)=>{
+   if(!keys.has(row.key)||!Array.isArray(row.path)||row.path.length>1||(row.path.length===1&&(typeof row.path[0]!=='string'||!row.path[0]||bad.has(row.path[0])||row.path[0].length>=260))||!isObj(row.existing)||!isObj(row.incoming))return [];
+   const active=snapshot[row.key]?parseValue(row.key,snapshot[row.key]):{};
+   return [{index,key:row.key,id:row.path[0]||'',path:copy(row.path),existing:copy(row.existing),incoming:copy(row.incoming),main:row.path.length?(own(active,row.path[0])?copy(active[row.path[0]]):null):copy(active)}];
+  });
+ }
+ function planV25ConflictRestore(snapshot,index,side){
+  assert(side==='existing'||side==='incoming','請指定要恢復的版本');
+  assert(Number.isInteger(index)&&index>=0,'衝突版本編號錯誤');
+  const row=listV25Conflicts(snapshot).find(x=>x.index===index);assert(row,'找不到考古題衝突版本');
+  let data=snapshot[row.key]?parseValue(row.key,snapshot[row.key]):{};const target=copy(row[side]),old=row.path.length?(own(data,row.id)?copy(data[row.id]):null):copy(data);
+  const archive=snapshot[CONFLICT_KEY]?parseValue(CONFLICT_KEY,snapshot[CONFLICT_KEY]):{schema:CONFLICT_KEY,entries:[]},changes=Object.create(null);
+  if(!equal(old,target)){
+   if(row.path.length)data[row.id]=target;else data=target;changes[row.key]=JSON.stringify(data);
+   if(old!==null&&!archive.entries.some(x=>x.key===row.key&&equal(x.path,row.path)&&equal(x.incoming,old)))archive.entries.push({key:row.key,path:copy(row.path),existing:copy(target),incoming:old});
+  }
+  assert(archive.entries.length<=MAX_CONFLICTS,'衝突版本數量超過上限，請先分開備份');
+  if(JSON.stringify(archive)!==snapshot[CONFLICT_KEY])changes[CONFLICT_KEY]=JSON.stringify(archive);
+  assert(Object.values(changes).reduce((sum,s)=>sum+s.length,0)<=MAX_FILE,'恢復資料超過檔案限制');
+  for(const [key,raw] of Object.entries(changes))parseValue(key,raw);
+  return {changes,baseline:copy(snapshot),index,side,id:row.id,key:row.key,changed:own(changes,row.key)};
+ }
+
+ function listCommonConflicts(snapshot){
+  assert(isObj(snapshot),'本機資料不可讀');
+  const keys=new Set(['psd-common-subjects-v1','psd-staresto-link-coach-v06','psd-staresto-daily-v04']);
+  const entries=snapshot[CONFLICT_KEY]?parseValue(CONFLICT_KEY,snapshot[CONFLICT_KEY]).entries:[];
+  return entries.flatMap((row,index)=>{
+   if(!keys.has(row.key)||!Array.isArray(row.path)||row.path.length>2||row.path.some(p=>typeof p!=='string'||!p||bad.has(p)||p.length>=260)||!own(row,'existing')||!own(row,'incoming'))return [];
+   let value=snapshot[row.key]?parseValue(row.key,snapshot[row.key]):null;
+   for(const part of row.path){if(!isObj(value)||!own(value,part)){value=null;break;}value=value[part];}
+   return [{index,key:row.key,path:copy(row.path),existing:copy(row.existing),incoming:copy(row.incoming),main:copy(value)}];
+  });
+ }
+ function planCommonConflictRestore(snapshot,index,side){
+  assert(side==='existing'||side==='incoming','請指定要恢復的版本');assert(Number.isInteger(index)&&index>=0,'衝突版本編號錯誤');
+  const row=listCommonConflicts(snapshot).find(x=>x.index===index);assert(row,'找不到共同科目衝突版本');
+  const target=copy(row[side]),old=copy(row.main);let data=snapshot[row.key]?parseValue(row.key,snapshot[row.key]):null;
+  const archive=snapshot[CONFLICT_KEY]?parseValue(CONFLICT_KEY,snapshot[CONFLICT_KEY]):{schema:CONFLICT_KEY,entries:[]},changes=Object.create(null);
+  if(!equal(old,target)){
+   if(!row.path.length)data=target;
+   else{assert(isObj(data),'目前資料不存在，請先恢復備份');let parent=data;for(const part of row.path.slice(0,-1)){assert(isObj(parent[part]),'目前資料結構已變更');parent=parent[part];}parent[row.path.at(-1)]=target;}
+   changes[row.key]=JSON.stringify(data);parseValue(row.key,changes[row.key]);
+   if(old!==null&&!archive.entries.some(x=>x.key===row.key&&equal(x.path,row.path)&&equal(x.incoming,old)))archive.entries.push({key:row.key,path:copy(row.path),existing:copy(target),incoming:old});
+  }
+  assert(archive.entries.length<=MAX_CONFLICTS,'衝突版本數量超過上限，請先分開備份');
+  if(JSON.stringify(archive)!==snapshot[CONFLICT_KEY])changes[CONFLICT_KEY]=JSON.stringify(archive);
+  assert(Object.values(changes).reduce((n,v)=>n+v.length,0)<=MAX_FILE,'恢復資料超過檔案限制');
+  for(const [key,raw] of Object.entries(changes))parseValue(key,raw);
+  return {changes,baseline:copy(snapshot),index,side,key:row.key,path:row.path};
+ }
+
+ function listLegacyConflicts(snapshot,managedKeys){
+  assert(isObj(snapshot)&&Array.isArray(managedKeys),'模組範圍不符');
+  const managed=new Set(managedKeys),entries=snapshot[CONFLICT_KEY]?parseValue(CONFLICT_KEY,snapshot[CONFLICT_KEY]).entries:[];
+  return entries.flatMap((row,index)=>{
+   if(!isObj(row)||typeof row.key!=='string'||managed.has(row.key)||!own(names,row.key)||!Array.isArray(row.path)||row.path.some(p=>typeof p!=='string'||!p||p.length>=260||bad.has(p))||!own(row,'existing')||!own(row,'incoming')||!own(snapshot,row.key))return [];
+   const kind=names[row.key].kind,path=row.path,data=parseValue(row.key,snapshot[row.key]);let main;
+   if((kind==='font'||kind==='setting')&&path.length===0)main=data;
+   else if(kind==='records'&&path.length===1&&typeof path[0]==='string'&&!bad.has(path[0])&&own(data,path[0]))main=data[path[0]];
+   else if(kind==='prompts'&&path.length===2&&path[0]==='entries'&&typeof path[1]==='string')main=data.entries.find(x=>x.mode+'::'+x.subject===path[1]);
+   else return [];
+   if(main===undefined)return [];
+   return [{index,key:row.key,path:copy(path),kind,existing:copy(row.existing),incoming:copy(row.incoming),main:copy(main)}];
+  });
+ }
+ function planLegacyConflictRestore(snapshot,managedKeys,index,side){
+  assert(side==='existing'||side==='incoming','請指定要恢復的版本');assert(Number.isInteger(index)&&index>=0,'衝突版本編號錯誤');
+  const row=listLegacyConflicts(snapshot,managedKeys).find(x=>x.index===index);assert(row,'找不到可復原的舊模組衝突版本');
+  const target=copy(row[side]),old=copy(row.main);let data=parseValue(row.key,snapshot[row.key]);
+  const archive=parseValue(CONFLICT_KEY,snapshot[CONFLICT_KEY]),changes=Object.create(null);
+  if(!equal(old,target)){
+   if(row.kind==='font'||row.kind==='setting')data=target;
+   else if(row.kind==='records')data[row.path[0]]=target;
+   else{const idx=data.entries.findIndex(x=>x.mode+'::'+x.subject===row.path[1]);assert(idx>=0&&target&&target.mode+'::'+target.subject===row.path[1],'提示詞版本範圍不符');data.entries[idx]=target;}
+   changes[row.key]=JSON.stringify(data);parseValue(row.key,changes[row.key]);
+   if(!archive.entries.some(x=>x.key===row.key&&equal(x.path,row.path)&&equal(x.incoming,old)))archive.entries.push({key:row.key,path:copy(row.path),existing:copy(target),incoming:old});
+  }
+  assert(archive.entries.length<=MAX_CONFLICTS,'衝突版本數量超過上限，請先分開備份');
+  if(JSON.stringify(archive)!==snapshot[CONFLICT_KEY])changes[CONFLICT_KEY]=JSON.stringify(archive);
+  assert(Object.values(changes).reduce((n,v)=>n+v.length,0)<=MAX_FILE,'恢復資料超過檔案限制');
+  for(const [key,raw] of Object.entries(changes))parseValue(key,raw);
+  return {changes,baseline:copy(snapshot),index,side,key:row.key,path:row.path};
+ }
  // Clearing learning progress is deliberately distinct from a full site reset.
  const clearKinds=new Set(['sessions','records','common','english','oldenglish','list','lectures']);
  function previewClear(storage){
@@ -473,5 +563,5 @@
   }
   return changed.length;
  }
- return {FORMAT,SCHEMA,CONFLICT_KEY,modules,collect,validate,storageSnapshot,parseValue,plan,apply,listStudy30Conflicts,planStudy30ConflictRestore,previewClear,applyClear};
+ return {FORMAT,SCHEMA,CONFLICT_KEY,modules,collect,validate,storageSnapshot,parseValue,plan,apply,listStudy30Conflicts,planStudy30ConflictRestore,listV25Conflicts,planV25ConflictRestore,listCommonConflicts,planCommonConflictRestore,listLegacyConflicts,planLegacyConflictRestore,previewClear,applyClear};
 });

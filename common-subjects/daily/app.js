@@ -5,10 +5,11 @@ const E=window.StarestoDailyEngine,STORE='psd-staresto-daily-v04',$=id=>document
 const node=(tag,text,cls)=>{let e=document.createElement(tag);if(text!==undefined)e.textContent=String(text);if(cls)e.className=cls;return e};
 const names={vocab:'單字',grammar:'文法／克漏字',reading:'閱讀理解',completion:'文意選填'};
 const files=['vocab.json','grammar-1.json','grammar-2.json','grammar-3.json','reading.json','completion.json'];
-let bank,state,today,shownDate,task=null,index=0,revealed=false;
+let bank,state,today,shownDate,task=null,index=0,revealed=false,idbRepo=null,storageBusy=false,storageFailed=false;
+const idbTest=window.PSD_COMMON_IDB_TEST===true;
 function notice(msg,error){const x=$('status');x.hidden=false;x.textContent=msg;x.className=error?'status error':'status';if(!error)setTimeout(()=>{if(x.textContent===msg)x.hidden=true},4200)}
 function load(){try{return E.normalize(JSON.parse(localStorage.getItem(STORE)||'null'))}catch(_){return E.defaultState()}}
-function save(){try{localStorage.setItem(STORE,JSON.stringify(state));return true}catch(e){notice('本機儲存失敗，請先保留作答並檢查儲存空間。',true);return false}}
+async function save(next=state){if(storageBusy||storageFailed)return false;try{if(idbTest){storageBusy=true;await idbRepo.write(next);}else localStorage.setItem(STORE,JSON.stringify(next));state=next;return true}catch(e){if(idbTest)storageFailed=true;notice('本機儲存失敗，請先保留作答並檢查儲存空間：'+e.message,true);return false}finally{storageBusy=false}}
 function taskDone(t,date){return E.completed(state,date,t)}
 function sumDone(plan,date){return plan.tasks.reduce((n,t)=>n+taskDone(t,date),0)}
 function sumSize(plan){return plan.tasks.reduce((n,t)=>n+t.ids.length,0)}
@@ -52,13 +53,13 @@ function origin(q){
  area.append(node('span','來源：staresto-create ZZSH｜'+q.year+'年學測第'+q.number+'題｜'));
  const link=node('a','原作者題目與解析 ↗');link.href=q.sourceUrl;link.target='_blank';link.rel='noopener noreferrer';area.append(link);
 }
-function answer(q,key){
- if(itemAttempt(q))return;
- E.recordAttempt(state,q.id,key,q.answer,shownDate);save();renderQuestion();renderPlan();renderSummary();
+async function answer(q,key){
+ if(itemAttempt(q)||storageBusy||storageFailed)return;
+ const next=structuredClone(state);E.recordAttempt(next,q.id,key,q.answer,shownDate);if(await save(next)){renderQuestion();renderPlan();renderSummary();}
 }
-function knowCard(q,known){
- if((state.cards[q.id]?.attempts||[]).some(a=>a.date===shownDate))return;
- E.recordCard(state,q.id,known,shownDate);save();renderQuestion();renderPlan();renderSummary();
+async function knowCard(q,known){
+ if(storageBusy||storageFailed||(state.cards[q.id]?.attempts||[]).some(a=>a.date===shownDate))return;
+ const next=structuredClone(state);E.recordCard(next,q.id,known,shownDate);if(await save(next)){renderQuestion();renderPlan();renderSummary();}
 }
 function flashcard(q,host){
  const card=node('section',undefined,'flashcard');
@@ -121,12 +122,29 @@ function showIdle(){
  $('questionArea').replaceChildren(node('p','點上方任務，即可在本站直接作答。'));
 }
 function download(){
+ if(storageBusy){notice('資料仍在儲存，請稍候再匯出。',true);return;}
  const payload=JSON.stringify(state,null,2),blob=new Blob([payload],{type:'application/json'});
  const url=URL.createObjectURL(blob),a=node('a');a.href=url;a.download='staresto-v04-'+today+'.json';
  document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1200);
  notice('已產生本模組備份檔。');
 }
-function clearProgress(){
+async function commonOperation(action,incoming){
+ return window.PSDCommonSubjectsOperations.run({core:window.PSDUnifiedBackup,database:idbRepo.database,legacy:localStorage,repository:idbRepo,mixedApi:window.PSDStudy30MixedBackup,action,incoming,flags:{daily:window.PSD_DAILY_IDB_TEST===true,v25:window.PSD_V25_IDB_TEST===true,lectures:window.PSD_LECTURES_IDB_TEST===true}});
+}
+async function idbClearProgress(){
+ if(!confirm('清除每日英文紀錄？將先下載備份並保留清除前版本。'))return;
+ try{document.body.inert=true;await idbRepo.flush();download();const fresh=E.defaultState();E.buildDay(bank,fresh,today);const result=await commonOperation('clear',fresh);state=E.normalize(result.data);task=null;shownDate=today;index=0;revealed=false;renderPlan();renderSummary();showIdle();notice('紀錄已清除，原版本已保留；請確認備份已下載。');}
+ catch(e){storageFailed=true;notice('清除未完成：'+e.message,true)}finally{document.body.inert=false;}
+}
+async function idbImportData(event){
+ const input=event.target,file=input.files?.[0];if(!file)return;
+ try{if(file.size>5e6)throw Error('備份超過5MB');const incoming=JSON.parse(await file.text());if(incoming?.schema!==E.VERSION)throw Error('非v0.4備份');
+  if(!confirm('匯入每日英文備份？不同版本將另存。'))return;
+  document.body.inert=true;await idbRepo.flush();const result=await commonOperation('import',incoming);state=E.normalize(result.data);if(!state.days[today]){const next=structuredClone(state);E.buildDay(bank,next,today);if(!(await save(next)))throw Error('匯入後無法保存今日安排');}shownDate=today;task=null;index=0;renderPlan();renderSummary();showIdle();notice('匯入完成；不同版本保留 '+result.conflicts+' 筆。');
+ }catch(e){storageFailed=true;notice('匯入未完成：'+e.message,true)}finally{document.body.inert=false;input.value='';}
+}
+async function clearProgress(){
+ if(idbTest){await idbClearProgress();return;}
  const first='確定清除 Staresto 每日英文的全部學習紀錄嗎？\n\n將刪除：每日任務、作答歷史、錯題複習、字卡與學習階段。\n\n此操作不影響國文作文、原創80題或其他練習站。請先用「匯出 JSON 備份」保留資料。';
  if(!confirm(first))return;
  if(!confirm('最後確認：清除後無法直接復原，確定要重新開始 Staresto 每日英文學習嗎？'))return;
@@ -134,20 +152,21 @@ function clearProgress(){
  const fresh=E.defaultState();
  E.buildDay(bank,fresh,today);
  state=fresh;
- if(!save()){state=previous;notice('清除失敗：無法寫入本機儲存空間，原本的紀錄仍保留。',true);return}
+ if(!(await save())){state=previous;notice('清除失敗：無法寫入本機儲存空間，原本的紀錄仍保留。',true);return}
  task=null;shownDate=today;index=0;revealed=false;
  renderPlan();renderSummary();showIdle();
  notice('已清除 Staresto 每日英文學習紀錄，今天的任務已重新建立。');
 }
 function importData(event){
+ if(idbTest){void idbImportData(event);return;}
  const f=event.target.files?.[0];if(!f)return;
  if(f.size>5e6){notice('備份超過5MB，請檢查來源。',true);return}
  const reader=new FileReader();
- reader.onload=()=>{try{
+ reader.onload=async()=>{try{
   const data=JSON.parse(String(reader.result));
   if(data?.schema!==E.VERSION||!data.days||!data.progress||!data.cards)throw Error('非v0.4備份');
   if(!confirm('匯入會取代本模組紀錄。建議先匯出備份，確定匯入嗎？'))return;
-  state=E.normalize(data);E.buildDay(bank,state,today);if(!save())return;
+  state=E.normalize(data);E.buildDay(bank,state,today);if(!(await save()))return;
   shownDate=today;task=null;index=0;renderPlan();renderSummary();showIdle();notice('已還原v0.4紀錄。');
  }catch(e){notice('匯入失敗：'+e.message,true)}finally{event.target.value=''}};
  reader.readAsText(f);
@@ -155,8 +174,10 @@ function importData(event){
 async function init(){
  try{
   const payload=await Promise.all(files.map(async file=>{const response=await fetch('./'+file);if(!response.ok)throw Error('無法讀取：'+file);return response.json()}));
-  bank=E.createBank(payload);today=E.taipeiDate();state=load();E.buildDay(bank,state,today);
-  save();shownDate=today;
+  bank=E.createBank(payload);today=E.taipeiDate();
+  if(idbTest){const database=await window.PSDLearningStorage.open();idbRepo=await window.PSDCommonSubjectsRepository.open({database,legacy:localStorage,core:window.PSDUnifiedBackup,key:STORE});state=E.normalize(idbRepo.read());}
+  else state=load();
+  const initial=structuredClone(state);E.buildDay(bank,initial,today);if(!(await save(initial)))throw Error('無法保存今日安排');shownDate=today;
   $('dateText').textContent=new Intl.DateTimeFormat('zh-TW',{timeZone:'Asia/Taipei',month:'long',day:'numeric',weekday:'long'}).format(new Date());
   $('phaseText').textContent='第一批原作者授權練習資料 '+bank.questions.length+'題，依個人表現循序安排。';
   $('status').hidden=true;$('app').hidden=false;renderPlan();renderSummary();showIdle();
@@ -166,6 +187,8 @@ async function init(){
   $('clearProgressBtn').addEventListener('click',clearProgress);
  }catch(e){notice('來源資料載入或驗證失敗。沒有變更原有紀錄。'+e.message,true)}
 }
+window.addEventListener('beforeunload',e=>{if(idbTest&&storageBusy){e.preventDefault();e.returnValue='';}});
+window.addEventListener('storage',e=>{if(idbTest&&e.key===STORE){storageFailed=true;notice('舊版分頁已修改資料，已停止寫入；請保留原資料並重新整理。',true);}});
 if(!E){notice('練習引擎讀取失敗，請重新整理。',true);return}
 init();
 })();

@@ -92,7 +92,19 @@
    if(new Set(past.map(q=>q.id)).size!==past.length)errors.push('題庫識別碼重複，為避免作答錯配請勿列印。');
    if(essays.length!==120)errors.push('國文作文改編題庫目前 '+essays.length+' 題，預期120題；請重新整理。');
    if(daily.length&&daily.length!==125)errors.push('每日模擬題目前讀取 '+daily.length+' 題，可能與原題庫不同。');
-   const output=model.printRecords(localStorage,{past,daily,essays});
+   let storage=localStorage;
+   if(window.PSD_DAILY_IDB_TEST===true||window.PSD_STUDY30_IDB_TEST===true||window.PSD_V25_IDB_TEST===true||window.PSD_LECTURES_IDB_TEST===true||window.PSD_COMMON_IDB_TEST===true){
+    const db=await window.PSDLearningStorage.open();
+    try{
+     const core=window.PSDUnifiedBackup,managedKeys=['probation-study30-v251:v1',core.CONFLICT_KEY];
+     if(window.PSD_DAILY_IDB_TEST===true)managedKeys.push('probation-daily-github:records:v1','daily-reading-test:saved');
+     if(window.PSD_V25_IDB_TEST===true)managedKeys.push('probation-study-desk-v24','probation-study-desk-v3','probation-study-desk-v2');
+     if(window.PSD_LECTURES_IDB_TEST===true)managedKeys.push('psd-lecture-planner-v1');if(window.PSD_COMMON_IDB_TEST===true)managedKeys.push('psd-common-subjects-v1','psd-staresto-link-coach-v06','psd-staresto-daily-v04');
+     const mixed=window.PSDStudy30MixedBackup.create({core,database:db,legacy:localStorage,origin:location.origin,managedKeys});
+     const snapshot=await mixed.snapshot();storage={getItem:key=>Object.prototype.hasOwnProperty.call(snapshot,key)?snapshot[key]:null};
+    }finally{db.close();}
+   }
+   const output=model.printRecords(storage,{past,daily,essays});
    list=output.records;errors.push(...output.errors);
    for(const id of [...chosen])if(!list.some(r=>r.uid===id))chosen.delete(id);
    $('paper').replaceChildren();$('print').disabled=true;showList();

@@ -207,7 +207,7 @@ footer{border-top:1px solid var(--line);padding:22px 0;margin-top:25px;color:var
 <script src="./staresto-resources.js"></script>
 <script src="./essay-questions-v1.js"></script>
 <script src="./essay-questions-v2.js"></script>
-<script src="./essay-questions-v3.js"></script>
+<script src="../storage/indexeddb.js"></script><script src="../backup/unified-core.js"></script><script src="../storage/common-subjects-repository.js"></script><script src="../storage/study30-mixed-backup.js"></script><script src="../storage/common-subjects-operations.js"></script><script src="./essay-questions-v3.js"></script>
 <script>
 (function(){
 'use strict';
@@ -257,7 +257,9 @@ var english=[
 if(Array.isArray(window.COMMON_SUBJECTS_EXTRA_ENGLISH))english.push(...window.COMMON_SUBJECTS_EXTRA_ENGLISH);
 function empty(){return {schema:SCHEMA,drafts:{},english:{},englishHistory:{},dailySelections:{},externalPractice:{}}}
 function load(){try{var x=JSON.parse(localStorage.getItem(KEY)||'null');if(x&&x.schema===SCHEMA&&x.drafts&&x.english&&typeof x.drafts==='object'&&typeof x.english==='object'&&!Array.isArray(x.drafts)&&!Array.isArray(x.english))return x}catch(e){}return empty()}
-var state=load(),current='',debounce=null,selected=0,questionSet=[],remain=600,timer=null,deadline=0;
+var idbTest=window.PSD_COMMON_IDB_TEST===true,idbRepo=null,idbFailed=null,idbPending=0;
+if(idbTest)document.body.inert=true;
+var state=idbTest?empty():load(),current='',debounce=null,selected=0,questionSet=[],remain=600,timer=null,deadline=0;
 function reconcile(){
  if(!state.englishHistory||typeof state.englishHistory!=='object'||Array.isArray(state.englishHistory))state.englishHistory={};
  if(!state.dailySelections||typeof state.dailySelections!=='object'||Array.isArray(state.dailySelections))state.dailySelections={};
@@ -293,7 +295,12 @@ function renderDaily(){
  $('dailyProgress').textContent=ids.map(function(i){return '第'+(i+1)+'題 '+(state.english['e'+i]?(state.english['e'+i].correct?'✓':'需加強'):'○')}).join('　');
 }
 function show(s,error){var el=$('notice');el.textContent=s;el.style.background=error?'#fff0e9':'#e5f4ea';el.hidden=false;setTimeout(function(){el.hidden=true},5000)}
-function save(){try{localStorage.setItem(KEY,JSON.stringify(state));$('saveStatus').textContent='已儲存於本機 · '+new Date().toLocaleTimeString('zh-TW',{hour:'2-digit',minute:'2-digit'});return true}catch(e){show('本機儲存失敗，請立即複製作文並備份。',true);return false}}
+function save(){
+ if(idbTest){if(!idbRepo||idbFailed){$('saveStatus').textContent='尚未保存，請複製內容';return false;}
+  var snapshot=structuredClone(state);idbPending++;$('saveStatus').textContent='儲存中…';
+  idbRepo.write(snapshot).then(function(){idbPending--;if(!idbPending&&!idbFailed)$('saveStatus').textContent='已儲存於本機';},function(error){idbPending--;idbFailed=error;$('saveStatus').textContent='尚未保存，請複製內容';show('儲存失敗：'+error.message+'；請立即複製內容。',true)});return true;}
+ try{localStorage.setItem(KEY,JSON.stringify(state));$('saveStatus').textContent='已儲存於本機 · '+new Date().toLocaleTimeString('zh-TW',{hour:'2-digit',minute:'2-digit'});return true}catch(e){show('本機儲存失敗，請立即複製作文並備份。',true);return false}}
+
 function draft(){if(!state.drafts[current])state.drafts[current]={text:'',feedback:'',versions:[],self:{},nextAction:'',updatedAt:''};return state.drafts[current]}
 function capture(){if(!current)return;var d=draft();var t=$('essayText').value,f=$('feedback').value,n=$('nextGoal').value;if(d.text===t&&d.feedback===f&&d.nextAction===n)return;d.text=t;d.feedback=f;d.nextAction=n;d.updatedAt=new Date().toISOString();save()}
 function flush(){if(debounce)clearTimeout(debounce);debounce=null;capture()}
@@ -363,7 +370,7 @@ function updateRevisionButton(){
  $('copyRevision').disabled=!(base&&base.text&&t.trim()&&base.text!==t);
 }
 function switchDraft(){flush();current=$('mode').value+':'+$('prompt').value;var i=Number($('prompt').value),d=draft(),q=topics[i][2];$('promptTitle').textContent=topics[i][0];$('promptBody').textContent=topics[i][1];$('promptTip').textContent=modes[$('mode').value][2]+(q?'｜'+q.requirements:'');$('promptMeta').textContent=q?'【歷屆試題改編／非官方原題】'+q.source.exam+'｜'+q.source.section+'｜'+q.source.status+'｜'+q.difficulty:'既有原創練習題（非歷屆試題改編）';$('promptSource').hidden=!q;if(q)$('promptSource').href=q.source.link;$('essayText').value=d.text||'';$('feedback').value=d.feedback||'';$('nextGoal').value=d.nextAction||'';['expression','reasoning','structure','meaning'].forEach(function(k){$('rubric-'+k).value=String((d.self||{})[k]||'')});$('count').textContent=Array.from($('essayText').value).length;renderVersions();resetTimer();$('saveStatus').textContent='本機自動保存';updateRevisionButton();coachStats()}
-function saveVersion(){flush();var d=draft();if(!d.text.trim()){show('請先輸入文字。',true);return}d.versions=Array.isArray(d.versions)?d.versions:[];d.versions.push({date:new Date().toISOString(),text:d.text,self:{...(d.self||{})},feedback:d.feedback||''});if(d.versions.length>40)d.versions.splice(1,1);save();renderVersions();updateRevisionButton();coachStats();show('修訂版本已保存。')}
+function saveVersion(){flush();var d=draft();if(!d.text.trim()){show('請先輸入文字。',true);return}d.versions=Array.isArray(d.versions)?d.versions:[];d.versions.push({date:new Date().toISOString(),text:d.text,self:{...(d.self||{})},feedback:d.feedback||''});if(d.versions.length>40)d.versions.splice(1,1);save();renderVersions();updateRevisionButton();coachStats();show(idbTest?'修訂版本儲存中，請查看保存狀態。':'修訂版本已保存。')}
 function version(){var i=$('version').value;return /^\d+$/.test(i)?(draft().versions||[])[Number(i)]:null}
 function viewVersion(){var v=version();if(!v){show('請先選擇版本。',true);return}$('versionPreview').textContent=v.text;$('versionPreview').hidden=false}
 function restore(){var v=version();if(!v)return;if(!confirm('要用這個版本覆蓋目前編輯器內容嗎？建議先儲存目前版本。'))return;$('essayText').value=v.text;$('count').textContent=Array.from(v.text).length;pending();renderCompare();updateRevisionButton();show('已還原至編輯器。')}
@@ -394,7 +401,7 @@ function revisionReview(){
  if(d.nextAction&&d.nextAction.trim())s+='\n\n【上次設定的改進目標】\n'+d.nextAction;
  copyEssayText(s);
 }
-function self(){flush();var d=draft(),ratings={};['expression','reasoning','structure','meaning'].forEach(function(k){var x=Number($('rubric-'+k).value);if(x>=1&&x<=5)ratings[k]=x});d.self=ratings;d.updatedAt=new Date().toISOString();save();coachStats();show('自評已保存。')}
+function self(){flush();var d=draft(),ratings={};['expression','reasoning','structure','meaning'].forEach(function(k){var x=Number($('rubric-'+k).value);if(x>=1&&x<=5)ratings[k]=x});d.self=ratings;d.updatedAt=new Date().toISOString();save();coachStats();show(idbTest?'自評儲存中，請查看保存狀態。':'自評已保存。')}
 function makeRubrics(){[['expression','文字表達'],['reasoning','論述深度'],['structure','文章層次'],['meaning','旨意詮釋']].forEach(function(r){var box=document.createElement('div'),l=document.createElement('label'),s=document.createElement('select');l.textContent=r[1];l.htmlFor='rubric-'+r[0];s.id='rubric-'+r[0];[['','未評估'],['1','1 需加強'],['2','2 略有不足'],['3','3 基本清楚'],['4','4 表現良好'],['5','5 表現扎實']].forEach(function(a){s.add(new Option(a[1],a[0]))});box.append(l,s);$('rubrics').append(box)})}
 function listQuestions(){
  var f=$('filter').value;questionSet=[];
@@ -420,7 +427,25 @@ function records(){
  $('versionsStat').textContent=ds.reduce(function(a,d){return a+(Array.isArray(d.versions)?d.versions.length:0)},0);
  $('englishStat').textContent=hist.length?Math.round(firstGood/hist.length*100)+'%':'—';
  $('enHistoryStat').textContent='已練 '+hist.length+'／'+english.length+' 題｜累計作答 '+total+' 次｜最近一次仍答錯 '+needReview+' 題。';var host=$('recent');host.replaceChildren();var arr=Object.entries(state.drafts).filter(function(x){return x[1].text&&x[1].text.trim()}).sort(function(a,b){return String(b[1].updatedAt).localeCompare(String(a[1].updatedAt))}).slice(0,10);if(!arr.length){host.textContent='尚無作文紀錄';return}arr.forEach(function(x){var parts=x[0].split(':'),el=document.createElement('div');el.className='recent-item';el.textContent=(topics[Number(parts[1])]||['自主練習'])[0]+'｜'+(modes[parts[0]]||['練習'])[0]+'｜'+Array.from(x[1].text).length+'字';host.append(el)})}
+async function commonOperation(action,incoming){
+ return window.PSDCommonSubjectsOperations.run({core:window.PSDUnifiedBackup,database:idbRepo.database,legacy:localStorage,repository:idbRepo,mixedApi:window.PSDStudy30MixedBackup,action:action,incoming:incoming,flags:{daily:window.PSD_DAILY_IDB_TEST===true,v25:window.PSD_V25_IDB_TEST===true,lectures:window.PSD_LECTURES_IDB_TEST===true}});
+}
+async function idbResetRecords(kind){
+ if(!confirm('將清除指定紀錄；清除前會下載本模組備份並保留原版本。是否繼續？'))return;
+ try{document.body.inert=true;await exportJSON();await idbRepo.flush();var next=structuredClone(state);
+  if(kind==='essay')next.drafts={};else{next.english={};next.englishHistory={};next.dailySelections={};}
+  var result=await commonOperation('clear',next);state=result.data;reconcile();current='';switchDraft();records();listQuestions();show('紀錄已清除，原版本已保留；請確認備份已下載。');
+ }catch(e){show('清除未完成：'+e.message,true)}finally{document.body.inert=false;}
+}
+async function idbImportJSON(event){
+ var input=event.target,file=input.files&&input.files[0];if(!file)return;
+ try{if(file.size>5*1024*1024)throw Error('檔案超過5MB');var incoming=JSON.parse(await file.text());
+  if(!confirm('匯入共同科目備份？不同版本將另存。'))return;
+  document.body.inert=true;flush();await idbRepo.flush();var result=await commonOperation('import',incoming);state=result.data;reconcile();current='';switchDraft();records();listQuestions();show('匯入完成；不同版本保留 '+result.conflicts+' 筆。');
+ }catch(e){show('匯入未完成：'+e.message,true)}finally{document.body.inert=false;input.value='';}
+}
 function resetRecords(kind){
+ if(idbTest){void idbResetRecords(kind);return;}
  flush();
  var essay=kind==='essay',name=essay?'全部國文作文':'原創80題英文';
  var detail=essay?'草稿、修訂版本、批改回饋、自評及改進目標':'全部作答、歷次錯題與每日五題安排';
@@ -441,26 +466,28 @@ function resetRecords(kind){
  records();
  show('已清除「'+name+'」學習紀錄。題庫和其他模組資料不受影響。');
 }
-function exportJSON(){flush();var blob=new Blob([JSON.stringify(Object.assign({},state,{exportedAt:new Date().toISOString()}),null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='common-subjects-backup-'+new Date().toISOString().slice(0,10)+'.json';document.body.append(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(url)},1500);show('已產生備份檔，請妥善保存。')}
-function importJSON(event){var file=event.target.files&&event.target.files[0];if(!file)return;if(file.size>5*1024*1024){show('檔案超過 5MB。',true);return}var reader=new FileReader();reader.onload=function(){try{var x=JSON.parse(String(reader.result));if(!x||x.schema!==SCHEMA||!x.drafts||!x.english||typeof x.drafts!=='object'||typeof x.english!=='object'||Array.isArray(x.drafts)||Array.isArray(x.english))throw Error('備份格式不符');if(!confirm('匯入會取代本模組目前紀錄，建議先匯出原資料。確定繼續？'))return;state={schema:SCHEMA,drafts:x.drafts,english:x.english,englishHistory:x.englishHistory||{},dailySelections:x.dailySelections||{},externalPractice:x.externalPractice||{}};reconcile();save();current='';switchDraft();records();listQuestions();show('備份匯入完成。')}catch(e){show('匯入失敗：'+e.message,true)}finally{event.target.value=''}};reader.readAsText(file)}
+async function exportJSON(){flush();if(idbTest){try{await idbRepo.flush()}catch(e){show('尚有資料未保存，請複製內容。',true);return}}var blob=new Blob([JSON.stringify(Object.assign({},state,{exportedAt:new Date().toISOString()}),null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='common-subjects-backup-'+new Date().toISOString().slice(0,10)+'.json';document.body.append(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(url)},1500);show('已產生備份檔，請妥善保存。')}
+function importJSON(event){if(idbTest){void idbImportJSON(event);return;}var file=event.target.files&&event.target.files[0];if(!file)return;if(file.size>5*1024*1024){show('檔案超過 5MB。',true);return}var reader=new FileReader();reader.onload=function(){try{var x=JSON.parse(String(reader.result));if(!x||x.schema!==SCHEMA||!x.drafts||!x.english||typeof x.drafts!=='object'||typeof x.english!=='object'||Array.isArray(x.drafts)||Array.isArray(x.english))throw Error('備份格式不符');if(!confirm('匯入會取代本模組目前紀錄，建議先匯出原資料。確定繼續？'))return;state={schema:SCHEMA,drafts:x.drafts,english:x.english,englishHistory:x.englishHistory||{},dailySelections:x.dailySelections||{},externalPractice:x.externalPractice||{}};reconcile();save();current='';switchDraft();records();listQuestions();show('備份匯入完成。')}catch(e){show('匯入失敗：'+e.message,true)}finally{event.target.value=''}};reader.readAsText(file)}
 function listEssay(){var typ=$('essayType').value||'all',before=$('prompt').value;$('prompt').replaceChildren();topics.forEach(function(t,i){var q=t[2];if(typ==='original'&&q||typ==='short'&&(!q||q.type!=='short')||typ==='long'&&(!q||q.type!=='long'))return;var label=q?(q.type==='short'?'短文':'長文')+'｜'+q.id+'｜'+t[0]:'原創｜'+String(i+1).padStart(2,'0')+'｜'+t[0];$('prompt').add(new Option(label,String(i)))});if(Array.from($('prompt').options).some(function(x){return x.value===before}))$('prompt').value=before;else if($('prompt').options.length)$('prompt').value=$('prompt').options[0].value}
 listEssay();makeRubrics();
 $('mode').addEventListener('change',switchDraft);$('prompt').addEventListener('change',switchDraft);$('essayType').addEventListener('change',function(){listEssay();switchDraft()});
 $('essayText').addEventListener('input',function(){$('count').textContent=Array.from(this.value).length;pending();updateRevisionButton()});$('feedback').addEventListener('input',pending);$('nextGoal').addEventListener('input',pending);
 $('compareBase').addEventListener('change',renderCompare);$('compareRefresh').addEventListener('click',function(){flush();renderCompare()});
-$('saveVersion').addEventListener('click',saveVersion);$('viewVersion').addEventListener('click',viewVersion);$('restoreVersion').addEventListener('click',restore);$('copyReview').addEventListener('click',review);$('copyRevision').addEventListener('click',revisionReview);$('essayCoachPick').addEventListener('click',pickEssay);$('clearEssay').addEventListener('click',function(){if(confirm('確定清空目前草稿？已存修訂版本仍會保留。')){$('essayText').value='';$('count').textContent='0';pending();updateRevisionButton()}});$('saveFeedback').addEventListener('click',function(){flush();coachStats();show('回饋已保存。')});$('saveSelf').addEventListener('click',self);
+$('saveVersion').addEventListener('click',saveVersion);$('viewVersion').addEventListener('click',viewVersion);$('restoreVersion').addEventListener('click',restore);$('copyReview').addEventListener('click',review);$('copyRevision').addEventListener('click',revisionReview);$('essayCoachPick').addEventListener('click',pickEssay);$('clearEssay').addEventListener('click',function(){if(confirm('確定清空目前草稿？已存修訂版本仍會保留。')){$('essayText').value='';$('count').textContent='0';pending();updateRevisionButton()}});$('saveFeedback').addEventListener('click',function(){flush();coachStats();show(idbTest?'回饋儲存中，請查看保存狀態。':'回饋已保存。')});$('saveSelf').addEventListener('click',self);
 $('timerToggle').addEventListener('click',toggleTimer);$('timerReset').addEventListener('click',resetTimer);
 ['Essay','English','Records'].forEach(function(s){$('tab'+s).addEventListener('click',function(){tab(s)})});
 $('startDaily').addEventListener('click',function(){$('filter').value='daily';selected=-1;listQuestions();$('panelEnglish').scrollIntoView({block:'start',behavior:'smooth'})});
 $('filter').addEventListener('change',listQuestions);$('questionPick').addEventListener('change',function(){selected=Number(this.value);renderQuestion()});$('prevQuestion').addEventListener('click',function(){move(-1)});$('nextQuestion').addEventListener('click',function(){move(1)});$('retryQuestion').addEventListener('click',function(){if(selected>=0){delete state.english['e'+selected];save();renderQuestion();renderDaily()}});
 $('export').addEventListener('click',exportJSON);$('importFile').addEventListener('change',importJSON);
 $('clearEssayRecords').addEventListener('click',function(){resetRecords('essay')});$('clearOriginalEnglish').addEventListener('click',function(){resetRecords('english')});
-window.addEventListener('beforeunload',flush);document.addEventListener('visibilitychange',function(){if(document.hidden){flush();if(timer)pause()}});
+window.addEventListener('beforeunload',function(e){flush();if(idbTest&&(idbPending||idbFailed)){e.preventDefault();e.returnValue='';}});
+window.addEventListener('storage',function(e){if(idbTest&&e.key===KEY){idbFailed=Error('舊版分頁已修改資料');$('saveStatus').textContent='尚未保存，請複製內容';show('舊版分頁已有更新，請保留資料並重新整理。',true);}});document.addEventListener('visibilitychange',function(){if(document.hidden){flush();if(timer)pause()}});
 window.CommonSubjectsIntegration={
  getData:function(){return {history:state.englishHistory,kinds:english.map(function(q){return q[0]}),externalPractice:state.externalPractice}},
  mark:function(id,source){if(!Array.isArray(state.externalPractice[id]))state.externalPractice[id]=[];state.externalPractice[id].push({at:new Date().toISOString(),source:source});if(state.externalPractice[id].length>250)state.externalPractice[id].shift();save()}
 };
 switchDraft();tab('Essay');
+if(idbTest){window.PSDLearningStorage.open().then(async function(database){try{idbRepo=await window.PSDCommonSubjectsRepository.open({database:database,legacy:localStorage,core:window.PSDUnifiedBackup,key:KEY});state=idbRepo.read()||empty();reconcile();current='';switchDraft();tab('Essay');}catch(error){database.close();throw error;}}).catch(function(error){idbFailed=error;show('無法安全讀取共同科目：'+error.message,true);document.querySelectorAll('input,textarea,button,select').forEach(function(e){e.disabled=true;});}).finally(function(){document.body.inert=false;});}
 })();
 </script>
 <script src="./staresto-integration.js"></script>

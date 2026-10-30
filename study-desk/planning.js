@@ -26,6 +26,14 @@ export function validateMapping(question,lessonId,state) {
 export function readLectures(storage,core) {
  const raw=storage.getItem(core.KEY);return raw===null?null:core.normalize(JSON.parse(raw));
 }
+// Experimental reader for the migrated source; absence is distinct from an
+// empty planner so the desk can still use its previously saved snapshot.
+export async function readLecturesFromIndexedDB(database,storage,core) {
+ const validate=(_key,raw)=>core.normalize(JSON.parse(raw));
+ await database.migrate(storage,[core.KEY],validate);
+ const raw=await database.get(core.KEY);
+ return raw===null?null:core.normalize(JSON.parse(raw));
+}
 export function planLimits(preferences) {
  const input=preferences.planning||{},minutes=input.minutes??30,reviewLimit=input.reviewLimit??2;
  if(!Number.isInteger(minutes)||minutes<5||minutes>240||!Number.isInteger(reviewLimit)||reviewLimit<0||reviewLimit>5)throw Error('時間預算須為5到240分鐘；搭配複習須為0到5題');

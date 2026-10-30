@@ -1,6 +1,16 @@
 /* Manual local-to-Google-Drive workflow: JSON is never uploaded by this page. */
 (function(){
  'use strict';
+ // Until all modules and desk namespaces share the new backup format, the old
+ // backup page must not offer a misleading incomplete export in test mode.
+ if(window.PSD_STUDY30_IDB_TEST===true){
+  document.addEventListener('DOMContentLoaded',()=>{
+   document.querySelectorAll('button,input').forEach(el=>{el.disabled=true;});
+   const message=document.getElementById('summary');
+   if(message)message.textContent='測試站的完整備份尚未整合 IndexedDB 與備考書桌，目前暫停匯出與還原。每日30分鐘的試驗性匯入請回該頁面；請勿使用正式資料。';
+  });
+  return;
+ }
  const core=window.PSDUnifiedBackup;
  const $=id=>document.getElementById(id);
  let incoming=null,plan=null,clearPlan=null,clearBackupRequested=false;
@@ -40,7 +50,7 @@
   'probation-study30-v251:v1','probation-study-desk-v24','probation-study-desk-v3',
   'probation-daily-github:records:v1','daily-reading-test:saved',
   'psd-common-subjects-v1','psd-staresto-link-coach-v06',
-  'jj-bookmarks','jj-read','psd-lecture-planner-v1'
+  'jj-bookmarks','jj-read','psd-lecture-planner-v1','lawScoring.v2','lawScoring.recall.v1'
  ]);
  function explain(storage){
   let progressCount=0;

@@ -3,7 +3,7 @@
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>申論評分參考｜觀護人練習臺</title><meta name="description" content="全站 553 題申論題評分要點：先作答，再逐列對照、換算自評分數，並可複製 AI 批改文字。"><link rel="stylesheet" href="../shared-ui.css"><link rel="stylesheet" href="style.css"><script src="data.js" defer></script><script src="app.js" defer></script><link rel="manifest" href="../manifest.webmanifest"><meta name="theme-color" content="#315b7c"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="../pwa/icon-180.png"><link rel="stylesheet" href="../offline.css"><script src="../offline.js" defer></script><link rel="stylesheet" href="../assets/study-theme.css">
 </head>
 <body>
-<header class="study-header"><div class="study-header-inner"><a class="study-brand" href="../v2.5/"><span class="study-brand-mark" aria-hidden="true">觀</span>觀護人練習臺</a><span class="study-test-label">申論評分參考</span><nav aria-label="主要導覽"><a href="../v2.5/">考古題練習</a><a href="./" aria-current="page">申論評分參考</a></nav></div></header>
+<header class="study-header"><div class="study-header-inner"><a class="study-brand" href="../v2.5/"><span class="study-brand-mark" aria-hidden="true">觀</span>觀護人練習臺</a><span class="study-test-label">申論評分參考</span><nav aria-label="主要導覽"><a href="../v2.5/">考古題練習</a><a href="./" aria-current="page">申論評分參考</a><a href="review.html">失分回想卡</a></nav></div></header>
 <main>
 <div class="wrap">
   <div class="top">
@@ -36,7 +36,7 @@
 
       <section class="sheet" aria-labelledby="ans-heading">
         <h2 id="ans-heading">一、先作答</h2>
-        <label for="answer" class="small muted">寫完整答案或詳細大綱，至少 50 字才能展開評分要點；答案寫在其他網站的話，貼上作答網址也可以展開。</label>
+        <label for="answer" class="small muted">建議先寫完整答案或詳細大綱再展開評分要點；寫在紙上或其他網站也可以，直接展開後逐列勾選。</label>
         <textarea id="answer" maxlength="20000"></textarea>
         <div class="answer-link">
           <label for="answer-url">作答網址（選填）</label>
@@ -81,7 +81,9 @@
       </section>
       <section class="sheet">
         <p class="status" id="status" role="status" aria-live="polite"></p>
-        <div class="confirm" id="reset-area"><button class="btn danger" id="reset" type="button">清除本題勾選</button></div>
+        <p class="small muted" style="margin:0 0 10px">沒勾到的得分點會自動變成回想卡。</p>
+        <p style="margin:0 0 12px"><a class="btn" href="review.html">失分統計與回想卡 →</a></p>
+        <div class="confirm" id="reset-area"><button class="btn danger" id="reset" type="button">清除本題紀錄</button></div>
       </section>
     </aside>
   </div>

@@ -1,0 +1,21 @@
+name: IndexedDB foundation draft checks
+on:
+  pull_request:
+    branches: [feature/study30-google-drive-sync-stage3-20261028]
+    paths: ['storage/**', 'professional/**', 'backup/**', 'daily-simulation/**', 'v2.5/**', 'print/**', 'study-desk/**', 'lectures/**', 'common-subjects/**', 'sw.js', 'offline-manifest.json', 'verification/*idb-browser.cjs', '.github/workflows/indexeddb-foundation.yml']
+permissions:
+  contents: read
+jobs:
+  storage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - run: npm install --prefix /tmp/psd-idb-test --no-save --ignore-scripts --no-audit fake-indexeddb playwright@1.64.1
+      - run: /tmp/psd-idb-test/node_modules/.bin/playwright install --with-deps chromium webkit
+      - run: node storage/indexeddb.test.cjs && node storage/backup-bridge.test.cjs && node storage/study30-mixed-backup.test.cjs && node storage/mixed-legacy-restore.test.cjs && node storage/study30-mixed-drive.test.cjs && node storage/full-backup.test.mjs && node storage/full-drive.test.mjs && node storage/daily-shared-repository.test.cjs && node storage/daily-recovery.test.cjs && node storage/daily-operations.test.cjs && node storage/common-subjects-repository.test.cjs && node storage/common-subjects-operations.test.cjs && node storage/lectures-repository.test.cjs && node storage/lecture-recovery.test.cjs && node study-desk/legacy-idb.test.mjs && node storage/v25-repository.test.cjs && node storage/v25-operations.test.cjs && node storage/drive-sync.test.cjs && node professional/study30-idb-repository.test.cjs && node storage/browser.test.cjs && node verification/study30-idb-browser.cjs && node verification/daily-idb-browser.cjs && node verification/daily-operations-browser.cjs && node verification/daily-conflict-browser.cjs && node verification/common-idb-browser.cjs && node verification/common-v04-idb-browser.cjs && node verification/common-essay-idb-browser.cjs && node verification/common-recovery-browser.cjs && node verification/lectures-idb-browser.cjs && node verification/lecture-conflict-browser.cjs && node verification/desk-legacy-idb-browser.cjs && node verification/v25-idb-browser.cjs && node verification/v25-operations-browser.cjs && node verification/v25-conflict-browser.cjs && node verification/full-backup-browser.cjs
+        env:
+          NODE_PATH: /tmp/psd-idb-test/node_modules

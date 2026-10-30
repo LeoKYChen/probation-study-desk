@@ -1,6 +1,8 @@
 /* Opt-in Google OAuth for a static GitHub Pages site. Tokens only in memory. */
 (function(){
  'use strict';
+ // Experimental study30 storage must not use the legacy synchronous Drive path.
+ if(window.PSD_STUDY30_IDB_TEST===true){document.addEventListener('DOMContentLoaded',()=>{const p=document.getElementById('driveSyncPanel');if(p)p.hidden=true;});return;}
  const $=id=>document.getElementById(id);
  const core=window.PSDUnifiedBackup,syncCore=window.PSDDriveSyncCore,drive=window.PSDDriveTransport;
  if(!core||!syncCore||!drive)return;

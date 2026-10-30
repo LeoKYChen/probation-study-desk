@@ -1,7 +1,7 @@
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),http=require('node:http');
 const playwright=require('playwright'),engine=process.env.UNIFIED_BROWSER_ENGINE||'chromium',root=path.resolve(process.argv[2]||'.');
-const types={'.html':'text/html;charset=utf-8','.js':'text/javascript;charset=utf-8','.css':'text/css;charset=utf-8','.json':'application/json;charset=utf-8','.webmanifest':'application/manifest+json'};
+const types={'.html':'text/html;charset=utf-8','.mjs':'text/javascript','.js':'text/javascript;charset=utf-8','.css':'text/css;charset=utf-8','.json':'application/json;charset=utf-8','.webmanifest':'application/manifest+json'};
 const server=http.createServer((req,res)=>{
  let name=decodeURIComponent(new URL(req.url,'http://localhost').pathname);
  if(name.startsWith('/probation-study-desk/'))name=name.slice('/probation-study-desk'.length);

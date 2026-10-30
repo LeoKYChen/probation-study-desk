@@ -11,38 +11,38 @@
     {
       "path": "common-subjects/daily/index.html",
       "base_sha256": "63f88c07844a9f3d99c738864cb385ea6d744bbb094bb70e7b6bbc9c1d030a1b",
-      "sha256": "24c6d47536042612a5ecd2b55a004af367c628465d1f25440463041faa554256",
+      "sha256": "3cd65e1120effd1c6daec14ab3358627027a3c86e5a71372aa9b97149841726f",
       "reason": "Shorten development-version storage explanation; retain replace/backup warning. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed. [Stage 5 QA] Conditional script content split so HTTPS PWA never prefetches file-only generated JS. [Stage5 final HTML parser fix] Keep functional real script tags while splitting only file-mode document.write strings.；套用溫暖圓體與霧藍書房。"
     },
     {
       "path": "common-subjects/english-assistant/index.html",
       "base_sha256": "789c59675f5704659e3ba79260661980e6cc0260ddc49c3610f8da34e54d1c7c",
-      "sha256": "6163134216a1dbe181a1406e6ab5bb1945af8d51021c79201b0284e34fd00acd",
+      "sha256": "9f7e15f9407a168b81d78542aab8bca22812efeb9d1834dfdbbc6660bebdba5f",
       "reason": "Remove outdated personal-history assumption and development-version details. Slides 20–22: merge history/usage panels, remove marked text and equalize action sizing. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed.；套用溫暖圓體與霧藍書房。"
     },
     {
       "path": "common-subjects/index.html",
       "base_sha256": "d9b28afda56727a618a6043d3000b45ae4c0004353dc1d1dda7d02e879587c8f",
-      "sha256": "a3d1e33f26d85ef6c667806a7db117ab5cbbd5b66edc4bcfacaea5dfa0944143",
+      "sha256": "de45f87ec66a81379a6fe054874c08e3ba546b878cb60629f6062115c85d5dd1",
       "reason": "Slides 4–7: remove callout/icons, widen topic and editor, repair timer layout; shorten development prose. Slide 19: remove records icon and make both visible stats fill the row. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed. [Mobile RWD seven-item review] Presentation-only CSS and centered labels; no storage, questions, or event handlers changed. [Safari RWD measured height correction: 52px version selector and comparison button.]；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。"
     },
     {
       "path": "professional/data-health.js",
       "base_sha256": "d6b66b3712dbd6baefaf858819cf69b80a27f477a86fd95d159863664ee89a51",
-      "sha256": "023d54f85afe3d726ba19ede73835b4a507f00b32206c54b40e558c90a9e7c50",
-      "reason": "Remove obsolete claim that restore is not yet available; retain error and capacity warnings."
+      "sha256": "6bea588de7774f7a82c6edcc50c2c403ca79cf1fdb19edf7b93ca7bf1864045a",
+      "reason": "Remove obsolete claim that restore is not yet available; retain error and capacity warnings. [IndexedDB 草稿測試] 測試開關啟動非同步儲存；預設沿用既有模式。"
     },
     {
       "path": "professional/essay.js",
       "base_sha256": "edde057198d4fa3828ad9f7f1e12a0e609cae5861eca1979afd911eac0aa1716",
-      "sha256": "ccc7e2a9e91b49be44f13af5a98a2f2a53ce874ad5d56a0ffa109f676d6c7304",
-      "reason": "Remove outdated predicted-bank development note from exported source label."
+      "sha256": "39e015840d3e3123c150f82bec0e05fc6934a658eee3e5523c12d94aaebe8d13",
+      "reason": "Remove outdated predicted-bank development note from exported source label. [IndexedDB 草稿測試] 測試開關啟動非同步儲存；預設沿用既有模式。"
     },
     {
       "path": "professional/index.html",
       "base_sha256": "115a1a32e125e7215c4336f4d079d434588308f7fff7fb69e53f446352dddf4b",
-      "sha256": "ea1f66231dcf6bed9d67ab16252dd74dddd9327b82eea85f43081e546195167e",
-      "reason": "Slides 2,8–17: remove marked prose, add chart/history hosts, group health under existing import panel. Follow-up slides 24–29 remove marked text, retain actual-record forecast, shorten 10-minute label. Keep four-grid drafts and full answer expanded by default; remove explanation only. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22 AI practice] Add optional answer-direction review selector; keep existing full-answer mode, record keys and source bank intact. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。；2026-10-28 Stage2：統一 JSON 合併與衝突復原、同日申論版本保存、離線共用核心。；2026-10-28 Stage3：加入選擇啟用的 Google Drive OAuth 同步與快取，保留原有本機資料鍵。"
+      "sha256": "a63e7c02d3396d359c923a88c57799dacc3fe42e32fd594abe84b7ce5073fbbc",
+      "reason": "Slides 2,8–17: remove marked prose, add chart/history hosts, group health under existing import panel. Follow-up slides 24–29 remove marked text, retain actual-record forecast, shorten 10-minute label. Keep four-grid drafts and full answer expanded by default; remove explanation only. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22 AI practice] Add optional answer-direction review selector; keep existing full-answer mode, record keys and source bank intact. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。；2026-10-28 Stage2：統一 JSON 合併與衝突復原、同日申論版本保存、離線共用核心。；2026-10-28 Stage3：加入選擇啟用的 Google Drive OAuth 同步與快取，保留原有本機資料鍵。 [IndexedDB 草稿測試] 測試開關啟動非同步儲存；預設沿用既有模式。 [IndexedDB 草稿] 增加每日30分鐘過渡期備份支援。"
     },
     {
       "path": "professional/layout-followup.css",
@@ -83,26 +83,26 @@
     {
       "path": "professional/review-preview.js",
       "base_sha256": null,
-      "reason": "Slide 27 clarification: preview only the actual saved records and hypothetical reratings; no demo option or sample sessions, no storage writes. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。",
-      "sha256": "a42c36dd01b54467ad9d1ebed9d5a001889f2295c6d66228a9c072bc0e3c92d5"
+      "reason": "Slide 27 clarification: preview only the actual saved records and hypothetical reratings; no demo option or sample sessions, no storage writes. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。 [IndexedDB 草稿測試] 測試開關啟動非同步儲存；預設沿用既有模式。",
+      "sha256": "d00c5200d5d8d5d6e00b8710e3ab3fae7e1635539b25f919373625609da91329"
     },
     {
       "path": "professional/sw.js",
       "base_sha256": "40e49a0b907e3db282d42743613f7756e205dba51705dfba7e8efac533400e99",
-      "sha256": "507f937ecf72bec318ab2b1cdf60ed86238a13ff8466400a88d17fdac511bcf5",
-      "reason": "Refresh existing installed-viewer asset cache for changed UI, without altering storage keys. [2026-10-21] Rotate cache version after mobile duration CSS update, so previously installed Safari PWAs fetch a fresh layout on service-worker activation.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22] Bump offline cache to refresh AI review mode script for installed apps. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。；2026-10-28 獨立開發分支：安全 JSON 合併、版本承接與多分頁覆寫保護。；2026-10-28 Stage2：統一 JSON 合併與衝突復原、同日申論版本保存、離線共用核心。；2026-10-28 Stage3：加入選擇啟用的 Google Drive OAuth 同步與快取，保留原有本機資料鍵。"
+      "sha256": "ada9a12d7da6a5aaadab900388250c273b7846ade5078e3a23e30720b869c519",
+      "reason": "Refresh existing installed-viewer asset cache for changed UI, without altering storage keys. [2026-10-21] Rotate cache version after mobile duration CSS update, so previously installed Safari PWAs fetch a fresh layout on service-worker activation.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22] Bump offline cache to refresh AI review mode script for installed apps. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。；2026-10-28 獨立開發分支：安全 JSON 合併、版本承接與多分頁覆寫保護。；2026-10-28 Stage2：統一 JSON 合併與衝突復原、同日申論版本保存、離線共用核心。；2026-10-28 Stage3：加入選擇啟用的 Google Drive OAuth 同步與快取，保留原有本機資料鍵。 [IndexedDB 草稿] 離線快照加入測試所需腳本。 [IndexedDB 草稿] 增加每日30分鐘過渡期備份支援。 [IndexedDB 離線測試] 精確允許已列入快取的同源外部資產。 [IndexedDB 草稿] 更新測試資產，避免連線時載入新舊儲存程式的混合版本。"
     },
     {
       "path": "sw.js",
       "base_sha256": "d564d94ae7a5249cd9ca7caa2ee480ddd4a541250e29b61a6f80c88f55ef0323",
-      "sha256": "bbee59622cec90df8016e7493c2fcf67c2c5f1a709ef4750065fcd0c424c7c67",
-      "reason": "Cloudflare Pages canonically redirects /dir/index.html to /dir/ and /x.html to /x; allow only these exact same-origin HTML transformations while preserving atomic snapshots and rejecting other redirects. [2026-10-21] When root service worker controls professional paths, fetch training HTML and CSS online first; keep existing offline snapshots as fallback.；套用溫暖圓體與霧藍書房。 [2026-10-22] Network-first changed AI review pages and scripts to avoid stale mixed-version offline snapshots. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-26 週報快取修復] 僅將少年司法週報頁面、JSON與離線 ZIP 週報鏡像加入連線優先讀取清單；離線時維持既有快照作為備援，未更改題庫、作答資料鍵或資料內容。 [2026-10-26 雙版試評] 將考古題目錄入口及雙版試評資產加入連線優先清單，避免已安裝手機版繼續顯示舊頁；離線快照及個人紀錄保持原機制。 [2026-10-27 學習管理] 使用者確認名稱、長期排程及月曆進度編輯；更新導覽與連線優先資產，保留原有學習資料鍵。 [2026-10-27 申論評分參考擴充] 申論評分參考頁擴充至 350 題並改為固定淺色，將其五個路徑加入連線優先清單，避免已安裝手機版顯示舊版；離線快照及個人紀錄保持原機制。"
+      "sha256": "8e859ceabe94339b4679d0584444d27b0df17e7f9c2332208f08330c42a3e895",
+      "reason": "Cloudflare Pages canonically redirects /dir/index.html to /dir/ and /x.html to /x; allow only these exact same-origin HTML transformations while preserving atomic snapshots and rejecting other redirects. [2026-10-21] When root service worker controls professional paths, fetch training HTML and CSS online first; keep existing offline snapshots as fallback.；套用溫暖圓體與霧藍書房。 [2026-10-22] Network-first changed AI review pages and scripts to avoid stale mixed-version offline snapshots. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-26 週報快取修復] 僅將少年司法週報頁面、JSON與離線 ZIP 週報鏡像加入連線優先讀取清單；離線時維持既有快照作為備援，未更改題庫、作答資料鍵或資料內容。 [2026-10-26 雙版試評] 將考古題目錄入口及雙版試評資產加入連線優先清單，避免已安裝手機版繼續顯示舊頁；離線快照及個人紀錄保持原機制。 [2026-10-27 學習管理] 使用者確認名稱、長期排程及月曆進度編輯；更新導覽與連線優先資產，保留原有學習資料鍵。 [2026-10-27 申論評分參考擴充] 申論評分參考頁擴充至 350 題並改為固定淺色，將其五個路徑加入連線優先清單，避免已安裝手機版顯示舊版；離線快照及個人紀錄保持原機制。 [2026-10-28 失分回想卡] 將申論評分參考新增的回想卡頁面與程式加入連線優先清單；不更動既有紀錄鍵。 [IndexedDB 草稿] 更新測試資產，避免連線時載入新舊儲存程式的混合版本。 [IndexedDB 草稿] 測試備份頁與衝突恢復程式優先更新。 [IndexedDB 草稿] 每日模擬題受控測試接入。 [IndexedDB 草稿] 測試列印讀取已遷移資料。 [IndexedDB 草稿] 全站測試備份與書桌復原相關資產連線優先。 [IndexedDB 草稿] 更新完整同步測試資產。 [IndexedDB 草稿] 學習管理衝突復原資產連線優先。 [IndexedDB 草稿] 啟用受保護考古題備份與清除測試。"
     },
     {
       "path": "professional/practice-session.js",
       "base_sha256": null,
-      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.；2026-10-23 手機標示精簡及完整題庫資訊校正 [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。；2026-10-28 獨立開發分支：安全 JSON 合併、版本承接與多分頁覆寫保護。；2026-10-28 Stage2：統一 JSON 合併與衝突復原、同日申論版本保存、離線共用核心。；增加分支版本序號與空白草稿復原安全性。",
-      "sha256": "3b3833c79800683c5936a2dce67b927b1f1300185f301a4ead7aff3715042aef"
+      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.；2026-10-23 手機標示精簡及完整題庫資訊校正 [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。；2026-10-28 獨立開發分支：安全 JSON 合併、版本承接與多分頁覆寫保護。；2026-10-28 Stage2：統一 JSON 合併與衝突復原、同日申論版本保存、離線共用核心。；增加分支版本序號與空白草稿復原安全性。 [IndexedDB 草稿測試] 測試開關啟動非同步儲存；預設沿用既有模式。 [IndexedDB 草稿] 增加每日30分鐘過渡期備份支援。",
+      "sha256": "bbc61372f7fe7f2902c9e3c74eeedc828fd2c9e3f9f510a833dbba8857fef791"
     },
     {
       "path": "professional/practice-review.js",
@@ -137,8 +137,8 @@
     {
       "path": "professional/ai-review-links-direction.js",
       "base_sha256": null,
-      "sha256": "4d8a33afbd2ad66de9199a885a3e07c2e83b4e6ada16af73dc7dfa08b4b8ab9b",
-      "reason": "[2026-10-22 AI directions] Versioned script builds optional non-scored outline diagnostic prompts while keeping frozen ai-review-links.js and user-record keys untouched. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources.；2026-10-23 手機標示精簡及完整題庫資訊校正"
+      "sha256": "b474f03894c78fdbc8f06e90ff2a3c312c857fc1684d31f707e8e91303994762",
+      "reason": "[2026-10-22 AI directions] Versioned script builds optional non-scored outline diagnostic prompts while keeping frozen ai-review-links.js and user-record keys untouched. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources.；2026-10-23 手機標示精簡及完整題庫資訊校正 [IndexedDB 草稿測試] 測試開關啟動非同步儲存；預設沿用既有模式。"
     },
     {
       "path": "professional/essay-review.js",
@@ -149,8 +149,14 @@
     {
       "path": "professional/backup-import.js",
       "base_sha256": "d05071d36dd4c09f5bc4367ef98c4f1d4ded9a80fdf105f5c01c446552c820cc",
-      "sha256": "0d3ca10734632e444215a8e5a86fc5d6a20b138d6a8e8b040f8a1084768fcee1",
-      "reason": "2026-10-28 Stage2：每日30分鐘備份匯入改用同一個完整備份安全合併引擎、移除覆寫全日期的高風險完整還原。"
+      "sha256": "478eeb89955f6837591ef4323acbe32826253267d90f01d986e7804ed9b0d22e",
+      "reason": "2026-10-28 Stage2：每日30分鐘備份匯入改用同一個完整備份安全合併引擎、移除覆寫全日期的高風險完整還原。 [IndexedDB 草稿測試] 測試開關啟動非同步儲存；預設沿用既有模式。 [IndexedDB 草稿] 增加每日30分鐘過渡期備份支援。 [IndexedDB 草稿] 過渡期備份讀取測試中的每日模擬題資料。"
+    },
+    {
+      "path": "professional/essay-selfcheck.js",
+      "base_sha256": "6bb68901eaeff014658885e9d22fc5a02f2ebb2dbb7e8e9290b722526bf7d26d",
+      "sha256": "d15331e8e2a1784de6a892dcee15e2ce5c8d57b6d74c29986a357b2fabddd433",
+      "reason": "IndexedDB 測試開關：等待自評資料庫交易完成後才顯示已儲存；既有模式不變。"
     }
   ]
 }

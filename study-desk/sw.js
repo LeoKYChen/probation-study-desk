@@ -1,5 +1,5 @@
-const CACHE='psd-study-desk-shell-v13';
-const FILES=['./','./index.html','./desk.css','./app.js','./reset.js','./domain.js','./weakness.js','./planning.js','../lectures/core.js','./legacy.js','../cloud-sync/core.js','../cloud-sync/idb.js','../backup/unified-core.js','../professional/source-main-questions.js','../professional/source-related-questions.js','../police-exams/questions.approved.js','../police-exams/approved-loader.js','../ai-prompt-customizer.js','../dual-ai-bridge.js','../assets/study-theme.css','../assets/study-round.woff'];
+const CACHE='psd-study-desk-shell-v15';
+const FILES=['./','./index.html','./desk.css','./app.js','./reset.js','./domain.js','./weakness.js','./planning.js','../storage/indexeddb.js','../storage/study30-mixed-backup.js','../lectures/core.js','./legacy.js','../cloud-sync/core.js','../cloud-sync/idb.js','../backup/unified-core.js','../professional/source-main-questions.js','../professional/source-related-questions.js','../police-exams/questions.approved.js','../police-exams/approved-loader.js','../ai-prompt-customizer.js','../dual-ai-bridge.js','../assets/study-theme.css','../assets/study-round.woff'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES))));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('psd-study-desk-shell-')&&k!==CACHE).map(k=>caches.delete(k))))));
 self.addEventListener('fetch',event=>{

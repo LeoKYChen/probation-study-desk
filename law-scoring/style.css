@@ -41,7 +41,7 @@ textarea:focus-visible,button:focus-visible,input:focus-visible,select:focus-vis
 .url-row{display:flex;gap:8px;align-items:stretch}
 .url-row input{flex:1 1 auto;min-width:0;min-height:44px;padding:8px 10px;border:1px solid var(--rule);border-radius:8px;font:inherit;font-size:15px;background:var(--paper);color:var(--ink)}
 .url-row input[aria-invalid="true"]{border-color:var(--seal)}
-.url-row a.btn{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;border-radius:8px;border:1px solid var(--accent);color:var(--accent);font-weight:700;text-decoration:none;white-space:nowrap}
+.url-row a.btn{display:inline-flex;align-items:center;min-height:44px;font-size:15px;line-height:1.4;padding:8px 14px;border-radius:8px;border:1px solid var(--accent);color:var(--accent);font-weight:700;text-decoration:none;white-space:nowrap}
 .answer-link p{margin:0}
 #answer-url-hint.error{color:var(--seal)}
 .row-actions{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:10px}
@@ -100,3 +100,33 @@ ol.pit{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
   th.c,td.c{width:100%;display:flex;justify-content:space-between;align-items:center;text-align:left;padding:6px 8px;border-radius:6px}
   td.c::before{content:attr(data-label);font-size:14px;color:var(--ink-soft)}
 }
+/* 失分統計與回想卡 */
+.fill.miss{background:var(--seal)}
+.stat-table td,.stat-table th{font-variant-numeric:tabular-nums}
+.recall-card{display:flex;flex-direction:column;gap:12px}
+.recall-card .missed{font-weight:700;color:var(--seal);margin:0}
+.recall-back{border-top:1px solid var(--rule);padding-top:12px;display:flex;flex-direction:column;gap:6px}
+.recall-back p{margin:0}
+/* 三個評分按鈕永遠等寬一列；格線讓高度一致、底部切齊。 */
+.rate-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.rate-actions .btn{padding-left:6px;padding-right:6px}
+.deck-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
+.deck-head label{display:flex;flex-direction:column;gap:4px;font-size:13px;font-weight:700;color:var(--ink-soft);min-width:0;flex:0 1 280px}
+.deck-head select{font:inherit;font-size:15px;font-weight:400;color:var(--ink);background:var(--sheet);border:1px solid var(--rule);border-radius:8px;padding:8px 10px;min-height:44px;width:100%}
+@media (max-width:620px){
+  /* 手機上清除與確認按鈕改為整列等寬，避免寬度不一、換行錯落。 */
+  .confirm{display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
+  .confirm .btn,.side a.btn,.manage-row .confirm{width:100%}
+  .manage-row>.confirm{flex:1 1 100%}
+  .stat-table td::before{content:attr(data-label)'：';color:var(--ink-soft);font-size:14px}
+}
+.recall-card a.btn,.side a.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;font-size:15px;line-height:1.4;padding:8px 14px;border-radius:8px;border:1px solid var(--accent);color:var(--accent);font-weight:700;text-decoration:none}
+.recall-card [hidden],#review-root [hidden]{display:none!important}
+.manage-list{list-style:none;margin:0;padding:0}
+.manage-row{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:10px 0;border-bottom:1px solid var(--rule)}
+.manage-row>div:first-child{display:flex;flex-direction:column;min-width:0;flex:1 1 260px}
+/* 側欄很窄，清除按鈕在任何寬度都整列等寬。 */
+.side .confirm{display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
+.side .confirm .btn,.side a.btn{width:100%}
+/* 「—」不適用標記與勾選框同大小，手機上欄位高度一致、與勾選框切齊。 */
+.na{display:inline-flex;width:22px;height:22px;margin:3px 3px 3px 4px;align-items:center;justify-content:center;line-height:1}

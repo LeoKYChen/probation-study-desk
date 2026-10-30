@@ -2,7 +2,7 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),http=require('node:http');
 const {chromium,webkit}=require('playwright');
 const root=path.resolve(__dirname,'..'),prefix=process.env.TEST_OFFLINE_PREFIX||'';
-const mime={'.html':'text/html;charset=utf-8','.js':'text/javascript;charset=utf-8','.json':'application/json;charset=utf-8','.css':'text/css;charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.webmanifest':'application/manifest+json','.md':'text/markdown;charset=utf-8'};
+const mime={'.html':'text/html;charset=utf-8','.mjs':'text/javascript','.js':'text/javascript;charset=utf-8','.json':'application/json;charset=utf-8','.css':'text/css;charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.webmanifest':'application/manifest+json','.md':'text/markdown;charset=utf-8'};
 let dropNetwork=false;
 const server=http.createServer((req,res)=>{
  if(dropNetwork){res.writeHead(503,{'content-type':'text/plain','cache-control':'no-store'}).end('origin unavailable');return;}

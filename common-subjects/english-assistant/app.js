@@ -4,7 +4,8 @@
 const core=window.StarestoLinkCoach,words=window.StarestoVocabulary;if(!core||!words)return;
 const $=id=>document.getElementById(id),el=(tag,t,cls)=>{const x=document.createElement(tag);if(t!==undefined)x.textContent=String(t);if(cls)x.className=cls;return x};
 const date=core.today(),labels=["星期日・本週複習","星期一・單字","星期二・文法","星期三・單字","星期四・閱讀","星期五・弱點補強","星期六・文意選填"];
-let state=core.createState(),readOnly=false;
+let state=core.createState(),readOnly=false,idbRepo=null,busy=false;
+const idbTest=window.PSD_COMMON_IDB_TEST===true;
 function notice(s){$("alert").hidden=!s;$("alert").textContent=s||""}
 function load(){
   try{
@@ -12,10 +13,10 @@ function load(){
     if(raw){const obj=JSON.parse(raw);if(obj.schema!==core.STORAGE_KEY)throw Error("版本不符");state=core.normalize(obj)}
   }catch(err){readOnly=true;notice("無法讀取既有 v0.6 學習紀錄；為避免覆蓋，已停用修改。請先保存瀏覽器資料。")}
 }
-function save(draft){
-  if(readOnly)return false;
-  try{localStorage.setItem(core.STORAGE_KEY,JSON.stringify(draft));state=draft;return true}
-  catch(err){readOnly=true;notice("無法儲存學習紀錄。可能是瀏覽器儲存被阻擋或空間不足；操作未保存。");render();return false}
+async function save(draft){
+  if(readOnly||busy)return false;
+  try{if(idbTest){busy=true;await idbRepo.write(draft);}else localStorage.setItem(core.STORAGE_KEY,JSON.stringify(draft));state=draft;return true}
+  catch(err){readOnly=true;notice("無法儲存學習紀錄。可能是瀏覽器儲存被阻擋或空間不足；操作未保存。");render();return false}finally{busy=false}
 }
 function clone(){return JSON.parse(JSON.stringify(state))}
 function btn(text,style,fn){const b=el("button",text,"btn "+(style||""));b.type="button";b.disabled=readOnly;b.addEventListener("click",fn);return b}
@@ -33,12 +34,12 @@ function renderWord(id,host,mode){
   const actions=el("div",undefined,"buttons");
   if(!todayRecord){
     actions.append(btn("顯示中文與例句","",function(){desc.hidden=false;this.disabled=true}));
-    actions.append(btn("記住了","",function(){
-      try{const draft=clone();words.rate(draft,date,id,true);if(save(draft)){notice("");render()}}
+    actions.append(btn("記住了","",async function(){
+      try{const draft=clone();words.rate(draft,date,id,true);if(await save(draft)){notice("");render()}}
       catch(err){notice(err.message)}
     }));
-    actions.append(btn("還不熟","",function(){
-      try{const draft=clone();words.rate(draft,date,id,false);if(save(draft)){notice("");render()}}
+    actions.append(btn("還不熟","",async function(){
+      try{const draft=clone();words.rate(draft,date,id,false);if(await save(draft)){notice("");render()}}
       catch(err){notice(err.message)}
     }));
   }else actions.append(el("span",todayRecord.known?"✓ 記住了，依間隔排複習":"↻ 還不熟，明天再練","small"));
@@ -73,17 +74,17 @@ function renderTask(day,ref,host){
     for(const input of [correct,total]){input.type="number";input.min="0";input.max="100";input.step="1";input.placeholder="選填"}
     correct.setAttribute("aria-label","答對題數");total.setAttribute("aria-label","總題數");total.min="1";
     score.append(el("span","答對"),correct,el("span","／ 共"),total,el("span","題（可不填）"));card.append(score);
-    actions.append(btn("我已完成","",function(){
+    actions.append(btn("我已完成","",async function(){
       let data=null;
       if(correct.value.trim()||total.value.trim()){
         if(!correct.value.trim()||!total.value.trim()){notice("填寫成績時，請同時填答對與總題數。");return}
         data={correct:correct.value,total:total.value};
       }
-      try{const draft=clone();core.markDone(draft,day,u.id,data);if(save(draft)){notice("");render()}}
+      try{const draft=clone();core.markDone(draft,day,u.id,data);if(await save(draft)){notice("");render()}}
       catch(err){notice(err.message)}
     }));
-    actions.append(btn("已做過／找不到，換一份","",function(){
-      try{const draft=clone(),next=core.replacePreviouslyStudied(draft,day,u.id);if(save(draft)){notice(next?"已更換為未安排過的新範圍。":"此類型的候選任務已排完，請勿重設舊紀錄。");render()}}
+    actions.append(btn("已做過／找不到，換一份","",async function(){
+      try{const draft=clone(),next=core.replacePreviouslyStudied(draft,day,u.id);if(await save(draft)){notice(next?"已更換為未安排過的新範圍。":"此類型的候選任務已排完，請勿重設舊紀錄。");render()}}
       catch(err){notice(err.message)}
     }));
   }
@@ -105,6 +106,7 @@ function render(){
     line.append(el("span",u?.title||x.id),el("small",x.date+(x.correct===null?" · 完成":" · "+x.correct+"/"+x.total)));history.append(line)});
 }
 $("export").addEventListener("click",function(){
+  if(busy){notice("資料仍在儲存，請稍候再匯出。");return;}
   try{
     const blob=new Blob([JSON.stringify(state,null,2)],{type:"application/json;charset=utf-8"}),url=URL.createObjectURL(blob);
     const a=document.createElement("a");a.href=url;a.download="staresto-v06-"+date+".json";document.body.append(a);a.click();a.remove();
@@ -117,28 +119,36 @@ $("importFile").addEventListener("change",async function(){
   try{
     if(file.size>2*1024*1024)throw Error("檔案超過2MB；為保護瀏覽器資料，已取消匯入。");
     const input=JSON.parse(await file.text());
-    const draft=core.mergeBackup(state,input);
     if(!confirm("確認合併此 v0.6 備份？本站會保留既有任務、單字和作答紀錄；建議匯入前先匯出目前備份。"))return;
-    if(save(draft)){notice("已合併備份；現有資料未清除。");render()}
-  }catch(err){notice("未匯入備份："+String(err.message||err))}
+    if(idbTest){
+      document.body.inert=true;await idbRepo.flush();
+      const result=await window.PSDCommonSubjectsOperations.run({core:window.PSDUnifiedBackup,database:idbRepo.database,legacy:localStorage,repository:idbRepo,mixedApi:window.PSDStudy30MixedBackup,action:'import',incoming:input,flags:{daily:window.PSD_DAILY_IDB_TEST===true,v25:window.PSD_V25_IDB_TEST===true,lectures:window.PSD_LECTURES_IDB_TEST===true}});
+      state=core.normalize(result.data);notice("已合併備份；不同版本保留 "+result.conflicts+" 筆。");render();
+    }else{const draft=core.mergeBackup(state,input);if(await save(draft)){notice("已合併備份；現有資料未清除。");render()}}
+  }catch(err){notice("未匯入備份："+String(err.message||err))}finally{document.body.inert=false}
 });
-$("addPersonalWord").addEventListener("click",function(){
+$("addPersonalWord").addEventListener("click",async function(){
   if(readOnly)return;
   try{
     const draft=clone(),added=words.addCustomWord(draft,$("personalTerm").value,$("personalMeaning").value,$("personalPos").value);
-    if(save(draft)){
+    if(await save(draft)){
       $("personalTerm").value="";$("personalMeaning").value="";$("personalPos").value="";
       notice("已將「"+added.term+"」加入個人字庫，明天起優先排入新單字。");
       render();
     }
   }catch(err){notice(err.message)}
 });
-load();
-if(!readOnly&&(!state.days[date]||!state.wordDays[date])){
-  const draft=clone();
-  if(!draft.days[date])core.planDay(draft,date);
-  if(!draft.wordDays[date])words.plan(draft,date);
-  save(draft);
+window.addEventListener("storage",event=>{if(idbTest&&event.key===core.STORAGE_KEY){readOnly=true;notice("舊版分頁已修改資料，請先保留兩份紀錄並重新整理。");render();}});
+async function start(){
+ if(idbTest){
+  document.body.inert=true;
+  try{const database=await window.PSDLearningStorage.open();idbRepo=await window.PSDCommonSubjectsRepository.open({database,legacy:localStorage,core:window.PSDUnifiedBackup,key:core.STORAGE_KEY});const stored=idbRepo.read();if(stored)state=core.normalize(stored);}
+  catch(err){readOnly=true;notice("無法安全讀取既有學習紀錄："+err.message+"；原資料未刪除。");}
+ }else load();
+ if(!readOnly&&(!state.days[date]||!state.wordDays[date])){
+  const draft=clone();if(!draft.days[date])core.planDay(draft,date);if(!draft.wordDays[date])words.plan(draft,date);await save(draft);
+ }
+ render();document.body.inert=false;
 }
-render();
+start();
 })();
