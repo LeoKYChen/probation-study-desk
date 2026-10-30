@@ -122,7 +122,9 @@ export async function planRestore({bundle,core,learning,deskDatabase}){
  assert(Array.isArray(managedKeys)&&managedKeys.length>0,'缺少已遷移模組清單');
  const modulePlan=await learning.plan(bundle.learning);
  const allowed=new Set(managedKeys);
- assert(Object.keys(modulePlan.changes).every(k=>allowed.has(k)),'備份包含尚未支援還原的模組，已停止且沒有寫入資料');
+ const unsupported=Object.keys(modulePlan.changes).filter(k=>!allowed.has(k));
+ const names=new Map(core.modules.map(row=>[row.key,row.name]));
+ assert(!unsupported.length,'備份包含尚未支援還原的模組：'+unsupported.map(key=>names.get(key)||key).join('、')+'；已停止且沒有寫入資料');
  const deskPlan=await planDeskImport(bundle,core,deskDatabase);
  return {modulePlan,deskPlan,managedKeys:managedKeys.slice()};
 }

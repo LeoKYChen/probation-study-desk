@@ -24,4 +24,7 @@ await one.sync();await two.sync();await one.sync();
 const settled=records.length;assert.equal((await two.sync()).uploaded,false);assert.equal(records.length,settled,'both devices converge without endless new snapshots');
 const count=records.length,before=await second.read();records.push({format:'bad'});await assert.rejects(two.sync(),/格式不符/);assert.deepEqual(await second.read(),before);assert.equal(records.length,count+1);
 records.pop();let busyRelease;const blocked={...transport,ensureFolder:()=>new Promise(resolve=>{busyRelease=resolve})};const engine=drive.create({core,learning:backup2,deskDatabase:second.db,transport:blocked,origin:'test',deviceId:'B',newId:()=> 'id'});const pending=engine.sync();await assert.rejects(engine.sync(),/同步已在執行/);busyRelease('test-folder');await pending;
+const unsupported=structuredClone(records[0]);unsupported.id='unsupported';unsupported.createdAt='2100-01-01T00:00:00.000Z';unsupported.backup.learning.data['lawScoring.v2']=JSON.stringify({test:{answer:'未遷移'}});records.push(unsupported);
+const beforeDesk=await second.read(),beforeLearning=await backup2.snapshot(),beforeCount=records.length;
+await assert.rejects(two.sync(),/申論評分參考自評/);assert.deepEqual(await second.read(),beforeDesk);assert.deepEqual(await backup2.snapshot(),beforeLearning);assert.equal(records.length,beforeCount,'unsupported remote must stop before any upload or restore');
 l1.close();l2.close();first.close();second.close();console.log('PASS full Drive synthetic two-device conflict retention, stable snapshot, invalid input and busy guard');
