@@ -2,10 +2,12 @@
 (function(root,factory){'use strict';const api=factory();if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.PSDDailyRecovery=api;})(typeof window==='undefined'?globalThis:window,function(){
  'use strict';
  const KEY='probation-daily-github:records:v1';
- function planImport({core,snapshot,incoming,origin='test'}){
+ function planImport({core,snapshot,incoming,favorites,origin='test'}){
   if(!core||!snapshot||!incoming)throw Error('缺少每日題資料');
   const raw=JSON.stringify(incoming);core.parseValue(KEY,raw);
-  return core.plan(snapshot,{format:core.FORMAT,schemaVersion:core.SCHEMA,exportedAt:new Date().toISOString(),sourceOrigin:origin,data:{[KEY]:raw}});
+  const data={[KEY]:raw};
+  if(favorites!==undefined){const fav=JSON.stringify(favorites);core.parseValue('daily-reading-test:saved',fav);data['daily-reading-test:saved']=fav;}
+  return core.plan(snapshot,{format:core.FORMAT,schemaVersion:core.SCHEMA,exportedAt:new Date().toISOString(),sourceOrigin:origin,data});
  }
  function planClear({core,snapshot}){
   if(!core||!snapshot)throw Error('缺少每日題資料');

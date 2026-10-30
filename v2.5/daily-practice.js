@@ -312,17 +312,16 @@ async function waitForDailyEdits(){
  flush();while(inFlight){await idbRepo.flush();await Promise.resolve();}
  if(dirty||!storageOK)throw Error('目前作答尚未安全保存');
 }
-async function runDailyOperation(action,incoming){
- return window.PSDDailyOperations.run({core:window.PSDUnifiedBackup,database:idbDb,legacy:localStorage,repository:idbRepo,recovery:window.PSDDailyRecovery,mixedApi:window.PSDStudy30MixedBackup,action,incoming,flags:{v25:window.PSD_V25_IDB_TEST===true,lectures:window.PSD_LECTURES_IDB_TEST===true,common:window.PSD_COMMON_IDB_TEST===true}});
+async function runDailyOperation(action,incoming,extras={}){
+ return window.PSDDailyOperations.run({core:window.PSDUnifiedBackup,database:idbDb,legacy:localStorage,repository:idbRepo,recovery:window.PSDDailyRecovery,mixedApi:window.PSDStudy30MixedBackup,action,incoming,favorites:extras.favorites,timers:extras.timers,session:sessionStorage,timerKey:TIMER_KEY,flags:{v25:window.PSD_V25_IDB_TEST===true,lectures:window.PSD_LECTURES_IDB_TEST===true,common:window.PSD_COMMON_IDB_TEST===true}});
 }
 async function idbImportDaily(){
  const input=$('importFile'),file=input.files?.[0];if(!file)return;
  try{if(file.size>4*1024*1024)throw Error('檔案超過4MB');const parsed=JSON.parse(await file.text());
-  if((Array.isArray(parsed.saved)&&parsed.saved.length)||(parsed.timers&&Object.keys(parsed.timers).length))throw Error('此測試版尚未匯入收藏或計時資料，請保留原始備份');
-  const incoming=M.backup(parsed),count=Object.keys(incoming).length;if(!count)throw Error('備份沒有每日題紀錄');
+  const incoming=M.backup(parsed),count=Object.keys(incoming).length,extras={favorites:parsed.saved,timers:parsed.timers};if(!count&&!extras.favorites&&!extras.timers)throw Error('備份沒有每日題紀錄');
   if(!confirm('匯入 '+count+' 筆每日題？不同答案將保留為衝突版本。'))return;
-  document.body.inert=true;await waitForDailyEdits();const result=await runDailyOperation('import',incoming);
-  records=result.data.records;idbFavorites=result.data.favorites;const id=current;current='';if(id)showQuestion(id);else renderList();
+  document.body.inert=true;await waitForDailyEdits();const result=await runDailyOperation('import',incoming,extras);
+  records=result.data.records;idbFavorites=result.data.favorites;if(result.timers)timers=result.timers;const id=current;current='';if(id)showQuestion(id);else renderList();
   notice('已匯入每日題；不同版本保留 '+result.conflicts+' 筆。');
  }catch(error){notice('匯入失敗：'+error.message,true);}finally{document.body.inert=false;input.value='';}
 }
