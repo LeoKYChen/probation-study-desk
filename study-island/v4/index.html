@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#7ec8d8">
+<meta name="description" content="觀護學習島 v4 Demo A：可探索的原創 2D 小島。走路、和居民聊天、撿貝殼、打開背包。">
+<title>觀護學習島 v4｜小樹灣</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header class="hud">
+    <a class="back" href="../../" title="回觀護人學習平臺" aria-label="回觀護人學習平臺">←</a>
+    <span class="hud-item island">🏝 <b id="islandName">小樹灣</b></span>
+    <span class="hud-item" id="clock">🌤 秋日</span>
+    <span class="hud-item shells" title="貝殼">🐚 <b id="shellCount">0</b></span>
+  </header>
+  <p id="saveBanner" class="banner" role="alert" hidden></p>
+
+  <main class="world" id="world">
+    <canvas id="game" role="img" aria-label="小樹灣地圖。點擊地面移動，或用方向鍵／WASD 移動，靠近後按 E 互動。"></canvas>
+    <p id="hint" class="hint">點地面走路 · 找栗子聊天 · 去南邊沙灘撿貝殼</p>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <button id="interact" class="interact" type="button" hidden>互動</button>
+    <div id="dpad" class="dpad" hidden>
+      <button type="button" data-dir="up" aria-label="往上">▲</button>
+      <button type="button" data-dir="left" aria-label="往左">◀</button>
+      <button type="button" data-dir="right" aria-label="往右">▶</button>
+      <button type="button" data-dir="down" aria-label="往下">▼</button>
+    </div>
+    <button id="dpadToggle" class="dpad-toggle" type="button" aria-pressed="false" title="顯示／隱藏方向鍵">✥</button>
+
+    <div id="dialogue" class="dialogue" role="dialog" aria-labelledby="dlgName" hidden>
+      <svg class="portrait" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="36" r="22" fill="#d9844a"/>
+        <path d="M14 26 L18 4 L30 18 Z M50 26 L46 4 L34 18 Z" fill="#d9844a"/>
+        <path d="M18 18 L19 9 L25 16 Z M46 18 L45 9 L39 16 Z" fill="#8a4a2b"/>
+        <ellipse cx="32" cy="44" rx="12" ry="9" fill="#fbe6cc"/>
+        <circle cx="24" cy="33" r="2.6" fill="#3a2a22"/><circle cx="40" cy="33" r="2.6" fill="#3a2a22"/>
+        <circle cx="32" cy="41" r="2.4" fill="#3a2a22"/>
+      </svg>
+      <div class="dlg-body">
+        <p class="dlg-head"><strong id="dlgName">栗子</strong> <small id="dlgSubject"></small></p>
+        <p id="dlgText"></p>
+      </div>
+      <button id="dlgNext" class="btn" type="button">繼續 ▸</button>
+    </div>
+
+    <section id="drawer" class="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" hidden>
+      <header class="drawer-head">
+        <h2 id="drawerTitle"></h2>
+        <button id="drawerClose" class="close" type="button" aria-label="關閉">✕</button>
+      </header>
+      <div id="drawerBody" class="drawer-body"></div>
+    </section>
+  </main>
+
+  <nav class="dock" aria-label="小島功能">
+    <button type="button" data-panel="bag" title="背包（B）">🎒<span>背包</span></button>
+    <button type="button" data-panel="tasks" title="任務（T）">📒<span>任務</span></button>
+    <button type="button" data-panel="build" title="建造（C）">🔨<span>建造</span></button>
+  </nav>
+</div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>

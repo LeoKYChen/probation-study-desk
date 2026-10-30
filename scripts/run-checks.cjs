@@ -32,7 +32,8 @@ const NODE_TEST=[
   'verification/sync/subjects.test.mjs',
   'police-exams/tools/approved-loader.test.cjs',
   'police-exams/tools/integration.test.cjs',
-  'police-exams/tools/verify_official_pdf_hashes.test.cjs'
+  'police-exams/tools/verify_official_pdf_hashes.test.cjs',
+  'study-island/v4/tests/logic.test.mjs'
 ];
 const runs=[
   ...NODE.map(f=>[process.execPath,[f]]),
