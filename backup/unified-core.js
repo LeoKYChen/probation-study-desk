@@ -411,20 +411,20 @@
   const keys=new Set(['probation-study-desk-v24','probation-study-desk-v3','probation-study-desk-v2']);
   const entries=snapshot[CONFLICT_KEY]?parseValue(CONFLICT_KEY,snapshot[CONFLICT_KEY]).entries:[];
   return entries.flatMap((row,index)=>{
-   if(!keys.has(row.key)||!Array.isArray(row.path)||row.path.length!==1||typeof row.path[0]!=='string'||!row.path[0]||bad.has(row.path[0])||row.path[0].length>=260||!isObj(row.existing)||!isObj(row.incoming))return [];
+   if(!keys.has(row.key)||!Array.isArray(row.path)||row.path.length>1||(row.path.length===1&&(typeof row.path[0]!=='string'||!row.path[0]||bad.has(row.path[0])||row.path[0].length>=260))||!isObj(row.existing)||!isObj(row.incoming))return [];
    const active=snapshot[row.key]?parseValue(row.key,snapshot[row.key]):{};
-   return [{index,key:row.key,id:row.path[0],existing:copy(row.existing),incoming:copy(row.incoming),main:own(active,row.path[0])?copy(active[row.path[0]]):null}];
+   return [{index,key:row.key,id:row.path[0]||'',path:copy(row.path),existing:copy(row.existing),incoming:copy(row.incoming),main:row.path.length?(own(active,row.path[0])?copy(active[row.path[0]]):null):copy(active)}];
   });
  }
  function planV25ConflictRestore(snapshot,index,side){
   assert(side==='existing'||side==='incoming','請指定要恢復的版本');
   assert(Number.isInteger(index)&&index>=0,'衝突版本編號錯誤');
   const row=listV25Conflicts(snapshot).find(x=>x.index===index);assert(row,'找不到考古題衝突版本');
-  const data=snapshot[row.key]?parseValue(row.key,snapshot[row.key]):{},target=copy(row[side]),old=own(data,row.id)?copy(data[row.id]):null;
+  let data=snapshot[row.key]?parseValue(row.key,snapshot[row.key]):{};const target=copy(row[side]),old=row.path.length?(own(data,row.id)?copy(data[row.id]):null):copy(data);
   const archive=snapshot[CONFLICT_KEY]?parseValue(CONFLICT_KEY,snapshot[CONFLICT_KEY]):{schema:CONFLICT_KEY,entries:[]},changes=Object.create(null);
   if(!equal(old,target)){
-   data[row.id]=target;changes[row.key]=JSON.stringify(data);
-   if(old!==null&&!archive.entries.some(x=>x.key===row.key&&equal(x.path,[row.id])&&equal(x.incoming,old)))archive.entries.push({key:row.key,path:[row.id],existing:copy(target),incoming:old});
+   if(row.path.length)data[row.id]=target;else data=target;changes[row.key]=JSON.stringify(data);
+   if(old!==null&&!archive.entries.some(x=>x.key===row.key&&equal(x.path,row.path)&&equal(x.incoming,old)))archive.entries.push({key:row.key,path:copy(row.path),existing:copy(target),incoming:old});
   }
   assert(archive.entries.length<=MAX_CONFLICTS,'衝突版本數量超過上限，請先分開備份');
   if(JSON.stringify(archive)!==snapshot[CONFLICT_KEY])changes[CONFLICT_KEY]=JSON.stringify(archive);

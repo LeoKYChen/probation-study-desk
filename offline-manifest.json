@@ -539,6 +539,9 @@
       "url": "storage/study30-mixed-backup.js"
     },
     {
+      "url": "storage/v25-operations.js"
+    },
+    {
       "url": "storage/v25-repository.js"
     },
     {
@@ -684,6 +687,9 @@
     },
     {
       "url": "v2.5/study-map.js"
+    },
+    {
+      "url": "v2.5/test-backup-io.js"
     },
     {
       "url": "v2.5/topic-practice.js"

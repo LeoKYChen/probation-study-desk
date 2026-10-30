@@ -122,7 +122,7 @@
   const rows=core.listV25Conflicts(await mixed.snapshot());
   if(!rows.length){panel.append(document.createTextNode('目前沒有考古題衝突版本。'));return;}
   for(const row of rows){
-   const details=document.createElement('details'),summary=document.createElement('summary');summary.textContent=row.id+'｜'+row.key;details.append(summary);
+   const details=document.createElement('details'),summary=document.createElement('summary');summary.textContent=(row.id||'清除前完整紀錄')+'｜'+row.key;details.append(summary);
    for(const [label,value] of [['目前版本',row.main],['原版本',row.existing],['匯入版本',row.incoming]]){const heading=document.createElement('strong'),pre=document.createElement('pre');heading.textContent=label;pre.textContent=preview(value);details.append(heading,pre);}
    for(const [side,label] of [['existing','恢復原版本'],['incoming','恢復匯入版本']]){
     const button=document.createElement('button');button.type='button';button.textContent=label;
