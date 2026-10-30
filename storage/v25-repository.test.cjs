@@ -13,8 +13,12 @@ const assert=require('node:assert/strict'),{IDBFactory}=require('fake-indexeddb'
  const plan=await bridge.plan(incoming);assert.ok(plan.conflicts.length);await bridge.apply(plan);
  const merged=await bridge.collect();assert.equal(JSON.parse(merged.data[api.KEY])['existing-question-id'].issue,'新答案');assert.ok(merged.data[PSDUnifiedBackup.CONFLICT_KEY].includes('另一裝置答案'));
  await assert.rejects(b.write(b.read()),/其他分頁/);assert.equal(JSON.parse(await db.get(api.KEY))['existing-question-id'].issue,'新答案');
+ const conflicts=PSDUnifiedBackup.listV25Conflicts(merged.data);assert.equal(conflicts.length,1);assert.equal(conflicts[0].id,'existing-question-id');
+ const restore=PSDUnifiedBackup.planV25ConflictRestore(merged.data,conflicts[0].index,'incoming');await bridge.apply(restore);
+ const restored=await bridge.collect();assert.equal(JSON.parse(restored.data[api.KEY])['existing-question-id'].issue,'另一裝置答案');assert.ok(restored.data[PSDUnifiedBackup.CONFLICT_KEY].includes('新答案'));
+ await assert.rejects(bridge.apply(restore),/重新預覽/);
  values.set(api.V2,JSON.stringify({other:{issue:'舊頁面新答案'}}));await assert.rejects(a.write(data),/舊版頁面/);
- assert.equal(JSON.parse(await db.get(api.KEY))['existing-question-id'].issue,'新答案');db.close();
+ assert.equal(JSON.parse(await db.get(api.KEY))['existing-question-id'].issue,'另一裝置答案');db.close();
  const broken=await PSDLearningStorage.open(new IDBFactory()),bad=new Map([[api.KEY,'broken']]);await assert.rejects(api.open({database:broken,legacy:{getItem:k=>bad.get(k)??null},backup:Backup25}));assert.equal(bad.get(api.KEY),'broken');assert.equal(await broken.get(api.KEY),null);broken.close();
  console.log('PASS v2.5 repository: legacy scores, IDs, migration retention and stale writes');
 })().catch(e=>{console.error(e);process.exitCode=1;});
