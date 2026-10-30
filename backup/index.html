@@ -17,7 +17,9 @@ button.primary,.file-label.primary{background:#245b48;color:white;border-color:#
 button:disabled{opacity:.55;cursor:not-allowed}.actions{display:flex;flex-wrap:wrap;gap:12px;margin:15px 0}
 .note{font-size:14px;background:#f3f5ed;border-left:3px solid #7d937e;padding:10px 14px}
 input[type=file]{max-width:100%}input[type=checkbox]{width:18px;height:18px;vertical-align:middle;margin-right:7px}
-.check{display:block;padding:8px 0}.tableWrap{max-width:100%;overflow:auto}
+.check{display:flex;align-items:flex-start;gap:10px;padding:8px 0}
+.check>input[type=checkbox]{flex:0 0 18px;width:18px;height:18px;margin:7px 0 0}
+.check>span{display:block;flex:1 1 auto;min-width:0;line-height:1.65;text-wrap:pretty;overflow-wrap:break-word}.tableWrap{max-width:100%;overflow:auto}
 table{border-collapse:collapse;width:100%;font-size:14px}th,td{border-bottom:1px solid #e0e7e0;text-align:left;padding:9px}
 #message{background:#eaf3ea;padding:12px 15px;border-radius:8px;min-height:49px;white-space:pre-wrap}
 #message[data-error="1"]{background:#fff1e9;color:#7d381e}
@@ -68,8 +70,8 @@ footer{color:#607267;font-size:13px}ul{columns:2;max-width:780px;padding-left:24
 <p class="note" id="conflicts"></p>
 <h3>匯入前保護</h3>
 <div class="actions"><button type="button" id="backupBefore">先下載這台裝置的保護備份</button></div>
-<label class="check"><input id="confirmSafe" type="checkbox">我已確認匯入前備份檔實際儲存在裝置上。</label>
-<label class="check"><input id="confirmTabs" type="checkbox">我已關閉其他正在作答的網站分頁，避免舊內容重新覆蓋。</label>
+<label class="check"><input id="confirmSafe" type="checkbox"><span>我已確認匯入前備份檔已儲存在本裝置。</span></label>
+<label class="check"><input id="confirmTabs" type="checkbox"><span>我已關閉其他作答分頁，避免舊內容覆蓋。</span></label>
 <div class="actions"><button id="restore" type="button" class="primary" disabled>確認安全合併還原</button></div>
 </section>
 </div>
@@ -85,8 +87,8 @@ footer{color:#607267;font-size:13px}ul{columns:2;max-width:780px;padding-left:24
 <p class="note">備考書桌使用獨立的資料庫，請在「備考書桌」頁面使用其清除功能。本頁不會清除該處紀錄；瀏覽器其他分頁中尚未儲存的文字也不受本頁控制。</p>
 <p id="clearSummary" aria-live="polite">正在確認可清除項目…</p>
 <div class="actions"><button type="button" id="clearBackupBefore">先下載清除前完整備份 JSON</button></div>
-<label class="check"><input id="clearBackupConfirmed" type="checkbox">我已確認下載的備份檔確實保存在裝置上。</label>
-<label class="check"><input id="clearTabsConfirmed" type="checkbox">我已關閉其他正在練習或編輯的本站分頁。</label>
+<label class="check"><input id="clearBackupConfirmed" type="checkbox"><span>我已確認備份檔已儲存在本裝置。</span></label>
+<label class="check"><input id="clearTabsConfirmed" type="checkbox"><span>我已關閉本站其他練習或編輯分頁。</span></label>
 <label for="clearTyped">請輸入「清除」以確認這次操作：</label>
 <input class="clear-input" id="clearTyped" type="text" maxlength="2" autocomplete="off" placeholder="輸入清除">
 <div class="actions"><button type="button" id="clearLearning" class="danger-button" disabled>確認清除這台裝置的學習紀錄</button></div>
