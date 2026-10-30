@@ -58,6 +58,74 @@ small.muted,.help{font-size:13px;color:#62786e}.help{margin:10px 0 0}
 .boost{padding:12px 15px;background:rgba(255,255,255,.7);border-radius:15px;border:1px solid #cce4d0;margin-bottom:12px;font-size:14px}
 @media(max-width:540px){.map{border-width:6px;padding:5px;gap:2px}.week-stamp span{width:29px;height:29px}.map-frame{min-width:0}.sea{padding:7px}.plot em{font-size:clamp(19px,7vw,30px)}}
 @media(prefers-reduced-motion:reduce){.plot em,.resident{transition:none}}
+
+/* Original cozy island look — hand-drawn scenery, softer UI, less dashboard */
+:root{--ocean:#82d5db;--cream:#fff9e6;--forest:#356b56}
+body{background:linear-gradient(#bce7e8 0%,#e4f5e4 36%,#f9efcf 100%);color:#36564a}
+.shell{max-width:1260px}
+.top{border-radius:27px;padding:11px 17px;background:#fff9e9eb;border:3px solid #fff;box-shadow:0 8px 20px #3c775221}
+.brand-icon{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:#f5deb0;font-size:26px}
+.brand strong{font-family:"Trebuchet MS","Noto Sans TC",sans-serif;color:#396e58}
+.back{border-radius:25px}
+.arrival{height:312px;overflow:hidden;position:relative;border:6px solid #fff9e9;border-radius:39px;margin:20px 0;box-shadow:0 12px 30px #51867930;background:linear-gradient(130deg,#d5f5e2,#bee8e4 60%,#e0efc0)}
+.arrival-copy{position:relative;z-index:2;padding:25px 30px;max-width:51%;min-height:100%;display:flex;flex-direction:column;justify-content:center}
+.eyebrow{letter-spacing:.15em;font-size:13px;font-weight:840;color:#5e9278;background:#fffae9dd;padding:4px 13px;border-radius:99px;align-self:flex-start}
+.arrival h1{color:#2b6f59;font-size:clamp(32px,4.1vw,53px);line-height:1.25;margin:12px 0;text-shadow:0 2px #fff9}
+.arrival .lead{font-size:15px;color:#4d7766;margin:0 0 15px;max-width:400px}
+.date-chips{display:flex;gap:8px;flex-wrap:wrap}
+.date-chips span{background:#fff9e6e8;border:1px solid #e7dbb5;padding:6px 12px;border-radius:99px;font-size:13px;font-weight:760}
+.hero-art{position:absolute;inset:-10px -10px -1px auto;width:65%;z-index:1;pointer-events:none}
+.hero-art svg{width:100%;height:100%}
+.nav-pills{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.nav-pills a{background:#fffdf3;border:2px solid #fff;text-decoration:none;border-radius:25px;padding:9px 16px;color:#44715f;font-weight:800;font-size:13px;box-shadow:0 4px 0 #dce9d3}
+.nav-pills a:hover{background:#ffeccc}
+.layout{grid-template-columns:minmax(0,1.55fr) minmax(300px,.95fr);gap:23px;align-items:start}
+.card{border:3px solid #fff;border-radius:30px;box-shadow:0 8px 0 #dfe7cd,0 14px 28px #5c796b27;background:#fffdf2}
+.card h2{color:#426e57;font-size:23px}
+.stat{border:2px solid #f7efd8;border-radius:19px;box-shadow:0 4px 0 #e1e7cf;background:#fff9e7}
+.island-card{background:linear-gradient(150deg,#d4f2e6,#e9f4d4);box-shadow:0 9px 0 #bfd9be,0 18px 30px #3d796a25}
+.island-card:before{content:"";width:81px;height:27px;border-radius:50%;background:#fff;opacity:.8;top:26px;right:40px;box-shadow:-20px 6px #fff,24px 7px #fff}
+.season-label{background:#ffefc5;border:2px solid #fff7dc}
+.boost{background:#fffaf0;border:2px dashed #b7d4b9}
+.sea{position:relative;overflow:hidden;padding:25px 18px 35px;border:7px solid #a7e1e3;border-radius:48px;min-height:420px;display:flex;align-items:center;justify-content:center;background:repeating-radial-gradient(ellipse at 30% 42%,#87d3de 0 8px,#9ddce2 10px 20px,#83cfd9 22px 28px);box-shadow:inset 0 0 0 5px #e9ffff70}
+.sea:before{content:"🐚";position:absolute;font-size:22px;left:17px;bottom:14px;transform:rotate(-20deg)}
+.sea:after{content:"☁";position:absolute;top:8px;right:20px;color:#fff9;font-size:45px}
+.sea[data-time="night"]{background:repeating-radial-gradient(ellipse at 40% 30%,#4e96b0 0 15px,#367f9c 17px 29px);border-color:#86b9c4}
+.sea[data-time="night"]:after{content:"☾";color:#fff4b8}
+.map{width:100%;max-width:610px;aspect-ratio:1.11;gap:0;padding:25px 20px;border:13px solid #f6e3a0;border-radius:44% 56% 45% 55% / 22% 20% 19% 21%;background:#9ad17d;box-shadow:0 13px 0 #d2b57e,0 19px 20px #387f884a,inset 0 0 0 5px #ffedb4;z-index:1}
+.plot,.plot:nth-child(even){border-radius:0;outline:0;box-shadow:none;background:linear-gradient(135deg,#a3d88b,#9bd17d)}
+.plot:nth-child(3n){background:linear-gradient(145deg,#a9db8c,#9acb7e)}
+.plot:is(:nth-child(9),:nth-child(15),:nth-child(16),:nth-child(22),:nth-child(23),:nth-child(29)){background:linear-gradient(135deg,#e7d9a9,#ecddae)}
+.plot.placeable{outline:0}.plot.empty em{opacity:0}
+.plot.empty:hover,.plot.empty:focus-visible{background:#c7e6a5;outline:2px dashed #fff3d4;outline-offset:-3px;z-index:2}
+.plot.empty:hover em,.plot.empty:focus-visible em{opacity:.8}
+.plot em{font-size:clamp(24px,3.7vw,42px);filter:drop-shadow(1px 5px 1px #4c81483a);text-shadow:0 1px #fff6}
+.sea[data-season="autumn"] .plot{background:linear-gradient(140deg,#d8d58b,#bec57e)}
+.sea[data-season="winter"] .plot{background:linear-gradient(140deg,#edf1d9,#d3e2d9)}
+.sea[data-season="spring"] .plot{background:linear-gradient(140deg,#b3db8c,#a3d48e)}
+.island-plaque{position:absolute;bottom:14px;right:15px;background:#fff2cf;border:3px solid #ab8a58;box-shadow:0 4px #977749;border-radius:11px;padding:4px 12px;color:#8b673e;z-index:2;font-weight:850;font-size:14px;transform:rotate(-3deg);max-width:60%}
+.island-actionbar{margin:14px 0 2px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:9px;align-items:center}
+.island-name-edit{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:13px;font-weight:780}
+.island-name-edit input{font-size:16px;border:2px solid #b8d1b4;border-radius:15px;background:#fffdf2;padding:8px 10px;max-width:140px;width:36vw;color:#46735a}
+.island-name-edit button,.wander-button{min-height:42px;background:#fff9e5;border:2px solid #c5d7b6;color:#3c725b;border-radius:18px;padding:8px 12px;font-weight:790}
+.wander-button{background:#f2dbab;border-color:#dbbf83}
+.notice{border:2px solid #f2e3c3;border-radius:20px;background:#fff9e8;padding:13px 16px;box-shadow:0 4px 0 #dbe7d6}
+.side{gap:22px}.resident{border-radius:22px;background:#fff5e6;border:2px solid #f1e4cd;box-shadow:0 4px 0 #e7e4cf}
+.resident:nth-child(2){background:#f5eddc}.resident:nth-child(3){background:#fff1ea}.resident:nth-child(4){background:#eaf2f3}
+.resident .face{display:grid;place-items:center;min-height:70px}
+.resident .face svg{width:64px;height:64px;filter:drop-shadow(1px 4px #756d5030);transition:transform .2s}
+.resident:hover .face svg{transform:rotate(-7deg) scale(1.08)}
+.dialogue{border:2px solid #eee0bf;border-radius:22px;padding:17px;background:#fdf7e0;box-shadow:0 4px 0 #ede4d0;line-height:1.8;position:relative}
+.dialogue:before{content:"";position:absolute;top:-9px;left:27px;width:15px;height:15px;background:#fdf7e0;transform:rotate(45deg);border-left:2px solid #eee0bf;border-top:2px solid #eee0bf}
+.btn{border-radius:19px;box-shadow:0 3px #2c7856}.btn.secondary{box-shadow:0 3px #a8c9ac}.btn.gold{box-shadow:0 3px #c18e54}
+.goods{border-radius:23px;background:#fcf8e8;box-shadow:0 4px 0 #e1e8d6}.goods .emoji{font-size:42px;text-align:center}.goods strong{text-align:center}
+.timer{display:inline-block;border-radius:18px;background:#f5f4df;padding:5px 18px;box-shadow:inset 0 -3px #e8e7cf}
+.task{border-radius:16px;padding-left:10px;background:linear-gradient(90deg,#fffaf0,#fffef5)}
+.shell.wandering .layout{display:block}.shell.wandering .side{display:none}.shell.wandering .map{max-width:780px}.shell.wandering .sea{min-height:560px}
+@media(max-width:920px){.layout{grid-template-columns:1fr}.hero-art{width:65%}}
+@media(max-width:650px){.arrival{height:360px;border-radius:29px}.arrival-copy{max-width:none;height:100%;justify-content:flex-start;padding:20px}.arrival h1{font-size:35px;max-width:300px}.arrival .lead{max-width:300px;font-size:13px}.hero-art{width:100%;height:64%;top:auto;bottom:-5px;right:-12%}.nav-pills{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.nav-pills a{white-space:nowrap;flex:none}.sea{min-height:275px;padding:13px 7px;border-width:5px}.map{padding:14px 10px;border-width:8px}.plot em{font-size:clamp(20px,6.8vw,36px)}.island-card{padding:14px}.island-plaque{font-size:11px}.resident .face{min-height:50px}.resident .face svg{width:49px;height:49px}.shell.wandering .sea{min-height:290px}}
+@media(max-width:380px){.arrival h1{font-size:30px}.map{padding:9px 5px;border-width:7px}.sea{padding:10px 5px}}
+@media(prefers-reduced-motion:reduce){.resident .face svg{transition:none}}
 </style>
 </head>
 <body>
@@ -67,8 +135,9 @@ small.muted,.help{font-size:13px;color:#62786e}.help{margin:10px 0 0}
     <a class="back" href="https://leokychen.github.io/probation-study-desk/">← 回學習平臺</a>
   </header>
   <main>
-    <h1>今天，也讓小島長大一點吧。</h1>
-    <p class="lead">專注讀書、練習申論、完成訂正，就能賺取貝殼、布置小島。沒有排行榜，沒有斷簽懲罰；每一點累積都算數。</p>
+<section class="arrival" aria-label="小島歡迎畫面"><div class="arrival-copy"><span class="eyebrow">✿ WELCOME HOME ✿</span><h1>今天，也到島上<br>走走吧！</h1><p class="lead">寫一點申論、種一棵樹、和居民聊聊天。讀書，也可以是舒服的旅程。</p><div class="date-chips"><span id="hero-date">美好的一天</span><span id="hero-time">--:--</span></div></div><div class="hero-art" aria-hidden="true">
+<svg viewBox="0 0 720 360" preserveAspectRatio="xMidYMax slice"><defs><linearGradient id="seaGrad" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#92dbe0"/><stop offset="1" stop-color="#67c1d1"/></linearGradient></defs><circle cx="552" cy="68" r="41" fill="#fff2b7" stroke="#fffce4" stroke-width="8"/><g fill="#fff"><ellipse cx="215" cy="74" rx="60" ry="18"/><circle cx="196" cy="59" r="23"/><circle cx="235" cy="56" r="27"/></g><path d="M-10 267 Q200 243 390 261 T730 254V390H-10Z" fill="url(#seaGrad)"/><path d="M10 290 Q220 277 350 292 T720 285" stroke="#e5fff6" stroke-width="5" fill="none" opacity=".8"/><ellipse cx="436" cy="303" rx="282" ry="87" fill="#f6d99e"/><ellipse cx="438" cy="280" rx="260" ry="88" fill="#a6d28b"/><path d="M414 291 Q455 332 494 362" fill="none" stroke="#e8d19f" stroke-width="28" stroke-linecap="round"/><path d="M341 263V182L431 145L526 182V263Z" fill="#ffdfb5" stroke="#bd9471" stroke-width="4"/><path d="m328 187 103-74 111 75" stroke="#bd7965" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="#e69c84"/><rect x="411" y="222" width="42" height="42" rx="18" fill="#987463"/><circle cx="443" cy="242" r="2.8" fill="#ffe5ab"/><rect x="363" y="204" width="35" height="32" rx="5" fill="#b5e5dd" stroke="#9d9f82" stroke-width="5"/><path d="M380 204v32m-17-16h35" stroke="#fff8db" stroke-width="4"/><rect x="462" y="204" width="35" height="32" rx="5" fill="#b5e5dd" stroke="#9d9f82" stroke-width="5"/><path d="M480 204v32m-18-16h35" stroke="#fff8db" stroke-width="4"/><g stroke="#99734f" stroke-width="13" stroke-linecap="round"><path d="M230 282v-85M578 276v-81"/></g><g fill="#82c386"><circle cx="230" cy="178" r="42"/><circle cx="202" cy="204" r="29"/><circle cx="260" cy="203" r="30"/><circle cx="578" cy="174" r="42"/><circle cx="549" cy="204" r="29"/><circle cx="603" cy="205" r="30"/></g><g fill="#e0f0af"><circle cx="205" cy="194" r="18"/><circle cx="601" cy="190" r="18"/></g><g fill="#fff3de"><circle cx="298" cy="275" r="9"/><circle cx="315" cy="282" r="8"/><circle cx="539" cy="288" r="9"/><circle cx="559" cy="296" r="8"/></g><g fill="#efadab"><circle cx="298" cy="275" r="3.5"/><circle cx="315" cy="282" r="3"/><circle cx="539" cy="288" r="3.5"/><circle cx="559" cy="296" r="3"/></g><path d="M131 217q5-6 10 0m12 0q5-6 10 0" stroke="#84a39c" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+</div></section><nav class="nav-pills" aria-label="小島快速入口"><a href="#island-h">🏝️ 去海邊</a><a href="#residents-h">🐾 找居民</a><a href="#task-h">📒 委託任務</a><a href="#shop-h">🛍️ 雜貨店</a><a href="#history-h">📷 日誌</a></nav>
     <div class="stats" aria-label="學習島狀態">
       <span class="stat"><small>🐚 貝殼</small><b id="coins">0</b></span>
       <span class="stat"><small>✨ 成長值</small><b id="xp">0</b></span>
@@ -82,7 +151,7 @@ small.muted,.help{font-size:13px;color:#62786e}.help{margin:10px 0 0}
           <div class="season-label" id="season" aria-live="polite">🍃 四季小島</div>
           <div class="boost" id="village-status" aria-live="polite">🏡 小小村落，等著你一點一點建設。</div>
           <p class="island-caption">商店購買裝飾後，在草地點一下就能擺放；點選已擺放的裝飾可收回。</p>
-          <div class="sea" id="sea"><div id="map" class="map" role="group" aria-label="六乘六島嶼布置地圖"></div></div>
+          <div class="sea" id="sea"><div id="map" class="map" role="group" aria-label="六乘六島嶼布置地圖"></div><div class="island-plaque">🏡 <span id="island-sign">小樹灣</span></div></div><div class="island-actionbar"><div class="island-name-edit"><label for="island-name">🏷️ 島名</label><input id="island-name" maxlength="14" value="小樹灣"><button id="name-save" type="button">保存</button></div><button class="wander-button" id="wander" type="button" aria-pressed="false">🌿 漫遊模式</button></div>
           <div class="notice" id="notice" role="status" aria-live="polite">歡迎來到小島！先和居民打聲招呼吧。</div>
         </div>
       </section>
@@ -90,10 +159,10 @@ small.muted,.help{font-size:13px;color:#62786e}.help{margin:10px 0 0}
         <section class="card" aria-labelledby="residents-h">
           <h2 id="residents-h">🐾 小島居民</h2>
           <div class="residents">
-            <button class="resident" type="button" data-r="fox"><span class="face" aria-hidden="true">🦊</span><span class="name">栗子</span><span class="hearts" id="heart-fox">♡ 0</span></button>
-            <button class="resident" type="button" data-r="bear"><span class="face" aria-hidden="true">🐻</span><span class="name">阿棕</span><span class="hearts" id="heart-bear">♡ 0</span></button>
-            <button class="resident" type="button" data-r="bunny"><span class="face" aria-hidden="true">🐰</span><span class="name">小白</span><span class="hearts" id="heart-bunny">♡ 0</span></button>
-            <button class="resident" type="button" data-r="owl"><span class="face" aria-hidden="true">🦉</span><span class="name">墨墨</span><span class="hearts" id="heart-owl">♡ 0</span></button>
+            <button class="resident" type="button" data-r="fox"><span class="face" aria-hidden="true"><svg viewBox="0 0 80 80" aria-hidden="true"><path d="m10 28 9-22 18 17h9L66 6l5 24" fill="#d29c63" stroke="#98724d" stroke-width="3"/><path d="m18 18 4-6 9 13M53 25l9-13 4 13" fill="#efa9a1"/><ellipse cx="40" cy="46" rx="30" ry="28" fill="#dca16b" stroke="#a67b4e" stroke-width="2"/><path d="M21 48Q40 37 59 48Q54 69 40 70Q25 68 21 48" fill="#fff0dc"/><circle cx="29" cy="43" r="3.6" fill="#534238"/><circle cx="52" cy="43" r="3.6" fill="#534238"/><path d="m36 52 8 0-4 5z" fill="#78534b"/><path d="M40 57q-4 6-9 0m9 0q5 6 9 0" stroke="#946e5a" stroke-width="2" fill="none"/></svg></span><span class="name">栗子</span><span class="hearts" id="heart-fox">♡ 0</span></button>
+            <button class="resident" type="button" data-r="bear"><span class="face" aria-hidden="true"><svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="19" cy="21" r="13" fill="#b98a65" stroke="#956f52" stroke-width="3"/><circle cx="61" cy="21" r="13" fill="#b98a65" stroke="#956f52" stroke-width="3"/><circle cx="19" cy="21" r="6" fill="#e1b9ae"/><circle cx="61" cy="21" r="6" fill="#e1b9ae"/><ellipse cx="40" cy="45" rx="31" ry="30" fill="#bb916d" stroke="#956f52" stroke-width="2"/><ellipse cx="40" cy="55" rx="18" ry="14" fill="#efd7b3"/><circle cx="29" cy="41" r="3.5" fill="#54473a"/><circle cx="52" cy="41" r="3.5" fill="#54473a"/><ellipse cx="40" cy="51" rx="5" ry="4" fill="#674a3e"/><path d="M40 55v4m0 0q-5 5-10 0m10 0q5 5 10 0" stroke="#805c48" stroke-width="2" fill="none"/></svg></span><span class="name">阿棕</span><span class="hearts" id="heart-bear">♡ 0</span></button>
+            <button class="resident" type="button" data-r="bunny"><span class="face" aria-hidden="true"><svg viewBox="0 0 80 80" aria-hidden="true"><ellipse cx="28" cy="22" rx="11" ry="23" fill="#fff0eb" stroke="#d3b5ad" stroke-width="2" transform="rotate(-12 28 22)"/><ellipse cx="54" cy="22" rx="11" ry="23" fill="#fff0eb" stroke="#d3b5ad" stroke-width="2" transform="rotate(12 54 22)"/><ellipse cx="28" cy="21" rx="4.5" ry="15" fill="#e7afb8" transform="rotate(-12 28 21)"/><ellipse cx="54" cy="21" rx="4.5" ry="15" fill="#e7afb8" transform="rotate(12 54 21)"/><ellipse cx="41" cy="48" rx="29" ry="29" fill="#fff0eb" stroke="#d3b5ad" stroke-width="2"/><circle cx="29" cy="44" r="3.3" fill="#695d5f"/><circle cx="51" cy="44" r="3.3" fill="#695d5f"/><path d="M36 52q5-5 10 0q-5 8-10 0" fill="#e6a7ae"/><path d="M41 58q-5 5-9 0m9 0q5 5 9 0" stroke="#b59293" stroke-width="2" fill="none"/></svg></span><span class="name">小白</span><span class="hearts" id="heart-bunny">♡ 0</span></button>
+            <button class="resident" type="button" data-r="owl"><span class="face" aria-hidden="true"><svg viewBox="0 0 80 80" aria-hidden="true"><path d="M13 28 11 7l17 13q14-8 25 0L69 7l-2 24q9 34-26 43Q8 68 13 28" fill="#8cabb3" stroke="#678994" stroke-width="2.5"/><ellipse cx="28" cy="43" rx="16" ry="20" fill="#e9eadb"/><ellipse cx="53" cy="43" rx="16" ry="20" fill="#e9eadb"/><circle cx="29" cy="42" r="9" fill="#fff9e9"/><circle cx="53" cy="42" r="9" fill="#fff9e9"/><circle cx="29" cy="42" r="3.5" fill="#506468"/><circle cx="53" cy="42" r="3.5" fill="#506468"/><path d="m37 52 8 0-4 7z" fill="#eab983"/><path d="M26 65q15 7 29 0" fill="none" stroke="#6a9298" stroke-width="3"/></svg></span><span class="name">墨墨</span><span class="hearts" id="heart-owl">♡ 0</span></button>
           </div>
           <p id="talk" class="dialogue" aria-live="polite">🦊 栗子：少年事件處理法的爭點好多，但我們可以一題一題拆開看！</p>
         </section>
@@ -158,7 +227,7 @@ const goods=[
 ];
 const fixed={2:"🌲",8:"🏡",13:"🌻",20:"🌲",27:"🌿",34:"🌲"};
 const $=id=>document.getElementById(id);
-const defaultState=()=>({version:1,coins:30,xp:0,days:[],claims:{},owned:{flower:1},plots:Array(36).fill(""),history:[],focusEnd:0,focusMinutes:0,hearts:{fox:0,bear:0,bunny:0,owl:0},weeklyClaimed:[]});
+const defaultState=()=>({version:1,coins:30,xp:0,days:[],claims:{},owned:{flower:1},plots:Array(36).fill(""),history:[],focusEnd:0,focusMinutes:0,hearts:{fox:0,bear:0,bunny:0,owl:0},weeklyClaimed:[],islandName:"小樹灣"});
 function today(){let d=new Date();return [d.getFullYear(),String(d.getMonth()+1).padStart(2,"0"),String(d.getDate()).padStart(2,"0")].join("-");}
 function sanitize(raw){
  if(!raw||raw.version!==1||!Array.isArray(raw.plots)||raw.plots.length!==36)throw Error("這不是相容的小島備份。");
@@ -174,6 +243,7 @@ function sanitize(raw){
  s.focusEnd=Number.isSafeInteger(raw.focusEnd)&&raw.focusEnd>Date.now()-86400000&&raw.focusEnd<Date.now()+86400000?raw.focusEnd:0;
   s.hearts={};["fox","bear","bunny","owl"].forEach(id=>{s.hearts[id]=integer(raw.hearts&&raw.hearts[id],99);});
  s.weeklyClaimed=Array.isArray(raw.weeklyClaimed)?[...new Set(raw.weeklyClaimed.filter(k=>typeof k==="string"&&/^\d{4}-\d{2}-\d{2}$/.test(k)))].slice(-150):[];
+ s.islandName=typeof raw.islandName==="string"&&raw.islandName.trim()?raw.islandName.trim().slice(0,14):"小樹灣";
  s.focusMinutes=[5,25].includes(raw.focusMinutes)?raw.focusMinutes:0;
  return s;
 }
@@ -198,6 +268,8 @@ function weekStart(date){const d=new Date(date.getFullYear(),date.getMonth(),dat
 function currentWeek(){const start=weekStart(new Date());const days=new Set(state.days);let count=0,dayLabels=[];const startDate=new Date(Number(start.slice(0,4)),Number(start.slice(5,7))-1,Number(start.slice(8,10)));for(let i=0;i<7;i++){const d=new Date(startDate);d.setDate(d.getDate()+i);const key=[d.getFullYear(),String(d.getMonth()+1).padStart(2,"0"),String(d.getDate()).padStart(2,"0")].join("-");if(days.has(key))count++;dayLabels.push(days.has(key));}return {start,count,days:dayLabels};}
 function seasonalTheme(){const month=new Date().getMonth()+1,hour=new Date().getHours();const season=month>=3&&month<=5?"spring":month>=6&&month<=8?"summer":month>=9&&month<=11?"autumn":"winter";const info={spring:"🌸 春日萌芽",summer:"🌿 夏日青翠",autumn:"🍁 秋日森語",winter:"❄️ 冬日靜讀"};return {season,time:hour>=18||hour<6?"night":"day",label:info[season]};}
 function render(){
+ $("island-sign").textContent=state.islandName;$("island-name").value=state.islandName;
+ const d=new Date();$("hero-date").textContent=d.toLocaleDateString("zh-TW",{month:"long",day:"numeric",weekday:"short"});$("hero-time").textContent=d.toLocaleTimeString("zh-TW",{hour:"2-digit",minute:"2-digit",hour12:false});
  const themed=seasonalTheme();$("season").textContent=themed.label;$("sea").dataset.season=themed.season;$("sea").dataset.time=themed.time;
  const lv=1+Math.floor(state.xp/120);
  $("village-status").textContent=lv>=5?"🎪 熱鬧村莊！居民們都在替你加油。":lv>=3?"🏘️ 小島逐漸熱鬧了，開始有村莊的模樣。":lv>=2?"🌱 已經有更多綠意，村民正在準備新的小屋。":"🏡 小小村落，今天多學一點就多添一點綠意。";
@@ -266,6 +338,7 @@ document.querySelectorAll("[data-r]").forEach(btn=>btn.addEventListener("click",
  $("talk").textContent=lines[k][talkIndex[k]];
 }));
 function tick(){
+ $("hero-time").textContent=new Date().toLocaleTimeString("zh-TW",{hour:"2-digit",minute:"2-digit",hour12:false});
  const end=state.focusEnd;
  if(!end){$("clock").textContent="25:00";$("cancel").disabled=true;$("start25").disabled=false;$("start5").disabled=false;return;}
  const remain=Math.max(0,Math.ceil((end-Date.now())/1000));
@@ -286,6 +359,9 @@ function start(minutes){
 $("start25").addEventListener("click",()=>start(25));
 $("start5").addEventListener("click",()=>start(5));
 $("cancel").addEventListener("click",()=>{state.focusEnd=0;state.focusMinutes=0;save();tick();show("已取消計時；尚未完成的專注不計獎勵。");});
+$("name-save").addEventListener("click",()=>{const name=$("island-name").value.trim().slice(0,14);if(!name){show("請幫小島取個名字。");return;}state.islandName=name;save();render();show("🏡 歡迎來到「"+name+"」，島名已保存！");});
+$("island-name").addEventListener("keydown",e=>{if(e.key==="Enter")$("name-save").click();});
+$("wander").addEventListener("click",()=>{const shell=document.querySelector(".shell");const active=shell.classList.toggle("wandering");$("wander").textContent=active?"↩ 返回學習小屋":"🌿 漫遊模式";$("wander").setAttribute("aria-pressed",String(active));show(active?"漫遊模式可以專心布置小島，隨時可返回學習小屋。":"回到小屋了，今天想學些什麼？");});
 $("export").addEventListener("click",()=>{
  const blob=new Blob([JSON.stringify(state,null,2)],{type:"application/json;charset=utf-8"});
  const url=URL.createObjectURL(blob),a=document.createElement("a");
