@@ -43,6 +43,12 @@ const server=http.createServer((req,res)=>{
    }
    await page.locator('#courseForm button[type=submit]').click();
    assert.match(await page.locator('#lessonStat').innerText(),/0／2/);
+   if(width<=700){
+    const saveMetadata=await page.locator('.course-metadata button[type=submit]').first().boundingBox();
+    const deleteCourse=await page.locator('.course-delete').first().boundingBox();
+    assert(saveMetadata&&deleteCourse&&Math.abs(saveMetadata.x-deleteCourse.x)<=1&&Math.abs(saveMetadata.width-deleteCourse.width)<=1&&Math.abs(saveMetadata.height-deleteCourse.height)<=1,
+      'mobile course delete must align with metadata save button');
+   }
    const actions=page.locator('.lesson-actions').first();
    const a=await actions.locator('button').nth(0).boundingBox();
    const b=await actions.locator('button').nth(1).boundingBox();
@@ -119,6 +125,12 @@ const server=http.createServer((req,res)=>{
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'no horizontal overflow');
    await page.locator('#nextMonth').click();
    assert(await page.locator('#calendarMonth').innerText());
+   await page.goto('http://127.0.0.1:'+server.address().port+'/backup/');
+   const safeText=await page.locator('#clearBackupConfirmed + span').innerText();
+   const tabsText=await page.locator('#clearTabsConfirmed + span').innerText();
+   assert.equal(safeText,'我已確認備份檔已儲存在本裝置。');
+   assert.equal(tabsText,'我已關閉本站其他練習或編輯分頁。');
+   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'backup page must not overflow');
    assert.deepEqual(errors,[],'browser console page errors');
    await context.close();
   }
