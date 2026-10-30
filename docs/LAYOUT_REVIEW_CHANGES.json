@@ -149,7 +149,7 @@
     {
       "path": "professional/backup-import.js",
       "base_sha256": "d05071d36dd4c09f5bc4367ef98c4f1d4ded9a80fdf105f5c01c446552c820cc",
-      "sha256": "a47247d1bd8b227aa1f8bb4625e482fe073a060f0fa47c34b71ab971ecf074f5",
+      "sha256": "d4d0d1cc177b153f2f9f0799ad1960e0233dc1fa060ce3d7eae4f1e06e53ed55",
       "reason": "2026-10-28 Stage2：每日30分鐘備份匯入改用同一個完整備份安全合併引擎、移除覆寫全日期的高風險完整還原。 [IndexedDB 草稿測試] 測試開關啟動非同步儲存；預設沿用既有模式。 [IndexedDB 草稿] 增加每日30分鐘過渡期備份支援。 [IndexedDB 草稿] 過渡期備份讀取測試中的每日模擬題資料。"
     },
     {

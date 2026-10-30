@@ -15,7 +15,12 @@
   const managed=managedKeys===undefined?[STUDY,core.CONFLICT_KEY]:managedKeys.slice();
   if(!managed.length||new Set(managed).size!==managed.length||!managed.includes(core.CONFLICT_KEY)||managed.some(key=>!keys.includes(key)))throw Error('已遷移模組清單不正確');
   const validate=(key,raw)=>core.parseValue(key,raw);
-  async function checkLegacy(){for(const key of managed)await database.migrate(legacy,[key],validate);}
+  const v25=['probation-study-desk-v24','probation-study-desk-v3','probation-study-desk-v2'];
+  if(v25.some(key=>managed.includes(key))&&!v25.every(key=>managed.includes(key)))throw Error('考古題新舊版本必須一起處理');
+  async function checkLegacy(){
+   if(v25.every(key=>managed.includes(key)))await database.migrate(legacy,v25,validate);
+   for(const key of managed)if(!v25.includes(key))await database.migrate(legacy,[key],validate);
+  }
   async function snapshot(){
    await checkLegacy();
    const before=core.storageSnapshot(legacy),idb=await database.snapshot(managed),after=core.storageSnapshot(legacy);

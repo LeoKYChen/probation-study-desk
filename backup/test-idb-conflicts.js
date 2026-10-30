@@ -65,7 +65,9 @@
  async function start(){
   try{
    const db=await window.PSDLearningStorage.open();
-   const managedKeys=window.PSD_DAILY_IDB_TEST===true?['probation-study30-v251:v1',core.CONFLICT_KEY,'probation-daily-github:records:v1','daily-reading-test:saved']:undefined;
+   const managedKeys=['probation-study30-v251:v1',core.CONFLICT_KEY];
+   if(window.PSD_DAILY_IDB_TEST===true)managedKeys.push('probation-daily-github:records:v1','daily-reading-test:saved');
+   if(window.PSD_V25_IDB_TEST===true)managedKeys.push('probation-study-desk-v24','probation-study-desk-v3','probation-study-desk-v2');if(window.PSD_LECTURES_IDB_TEST===true)managedKeys.push('psd-lecture-planner-v1');
    mixed=window.PSDStudy30MixedBackup.create({core,database:db,legacy:localStorage,origin:location.origin,managedKeys});
    const backup=$('study30ConflictBackup'),confirmed=$('study30ConflictConfirmed');
    backup.disabled=false;confirmed.disabled=false;
