@@ -138,6 +138,9 @@ export async function planDeskConflictRestore({deskDatabase,namespace,archive,ne
  const rows=await accounts(deskDatabase),current=new Map(rows.map(row=>[row.namespace,row.state]));
  const selected=current.get(archive),prior=current.get(namespace);
  assert(selected!==undefined,'找不到書桌封存版本');
+ const selectedDigest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(canonical(JSON.parse(JSON.stringify([namespace,selected])))));
+ const expectedArchive='backup-archive:'+Array.from(new Uint8Array(selectedDigest),n=>n.toString(16).padStart(2,'0')).join('');
+ assert(archive===expectedArchive,'封存版本與指定書桌不相符');
  const epoch=newEpoch();assert(typeof epoch==='string'&&epoch.length>=8&&epoch.length<=200,'恢復版本識別碼不符');
  let displaced=null;
  if(prior!==undefined){
@@ -185,3 +188,4 @@ export function applyDeskConflictRestore(plan,deskDatabase){
   tx.onabort=()=>reject(failure||tx.error||Error('書桌恢復交易失敗'));tx.onerror=()=>{};
  });
 }
+

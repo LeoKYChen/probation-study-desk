@@ -43,6 +43,7 @@ assert.equal(restored.deskWritten,0);
 const unsafe=structuredClone(result);unsafe.learning.data['probation-study-desk-v24']=JSON.stringify({other:{issue:'尚未支援'}});
 await assert.rejects(full.planRestore({bundle:unsafe,core,learning,deskDatabase:desk.db,managedKeys:[key,core.CONFLICT_KEY]}),/尚未支援/);
 const restoreChoice=await full.planDeskConflictRestore({deskDatabase:desk.db,namespace:'guest',archive:plan.conflicts[0].archive,newEpoch:()=> 'restore-epoch-123'});
+await assert.rejects(full.planDeskConflictRestore({deskDatabase:desk.db,namespace:'prior-account',archive:plan.conflicts[0].archive,newEpoch:()=> 'restore-epoch-123'}),/指定書桌不相符/);
 const outcome=await full.applyDeskConflictRestore(restoreChoice,desk.db);
 assert.equal((await desk.read()).records['attempt/known-id'].value.answer,'書桌作答');
 assert.equal((await desk.read()).clearedEpoch,'restore-epoch-123');
