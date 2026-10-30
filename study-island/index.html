@@ -214,7 +214,7 @@ function render(){
  $("level").textContent=1+Math.floor(state.xp/120);
  const m=$("map");m.replaceChildren();
  for(let i=0;i<36;i++){
-  const dynamic={21:lv>=2?"🌼":null,29:lv>=3?"🌳":null,33:lv>=5?"🎪":null};const scenery=fixed[i]||(dynamic[i]||"");const b=document.createElement("button"),thing=scenery||state.plots[i];
+  const dynamic={21:lv>=2?"🌼":null,29:lv>=3?"🌳":null,33:lv>=5?"🎪":null};const scenery=fixed[i]||(!state.plots[i]?dynamic[i]:"")||"";const b=document.createElement("button"),thing=scenery||state.plots[i];
   b.type="button";b.className="plot "+(scenery?"fixed":thing?"decorated":"empty placeable");
   b.setAttribute("aria-label",scenery?"固定景物，第"+(i+1)+"格":thing?"第"+(i+1)+"格，已擺放"+goods.find(x=>x.id===thing).name+"，點擊收回":"第"+(i+1)+"格，空草地，點擊擺放");
   const visual=document.createElement("em");visual.textContent=scenery|| (thing?goods.find(x=>x.id===thing).icon:"·");b.append(visual);
