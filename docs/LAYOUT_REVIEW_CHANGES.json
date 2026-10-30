@@ -11,7 +11,7 @@
     {
       "path": "common-subjects/daily/index.html",
       "base_sha256": "63f88c07844a9f3d99c738864cb385ea6d744bbb094bb70e7b6bbc9c1d030a1b",
-      "sha256": "24c6d47536042612a5ecd2b55a004af367c628465d1f25440463041faa554256",
+      "sha256": "b898cb88b57d4abb25a79d9c81afb741395fc663da9613299b835d3d9e890d4a",
       "reason": "Shorten development-version storage explanation; retain replace/backup warning. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed. [Stage 5 QA] Conditional script content split so HTTPS PWA never prefetches file-only generated JS. [Stage5 final HTML parser fix] Keep functional real script tags while splitting only file-mode document.write strings.；套用溫暖圓體與霧藍書房。"
     },
     {
