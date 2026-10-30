@@ -530,6 +530,9 @@
       "url": "storage/indexeddb.js"
     },
     {
+      "url": "storage/lecture-recovery.js"
+    },
+    {
       "url": "storage/lectures-repository.js"
     },
     {
