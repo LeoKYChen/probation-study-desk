@@ -1,0 +1,24 @@
+name: Study Island v4 smoke tests
+on:
+  pull_request:
+    paths:
+      - 'study-island-v4/**'
+      - '.github/workflows/study-island-v4.yml'
+  push:
+    branches:
+      - 'feature/study-island-v4-playable-mvp-20261031'
+    paths:
+      - 'study-island-v4/**'
+      - '.github/workflows/study-island-v4.yml'
+permissions:
+  contents: read
+jobs:
+  island-v4:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Check island mechanics and save invariants
+        run: node study-island-v4/test.cjs
