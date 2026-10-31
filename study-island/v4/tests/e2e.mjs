@@ -139,6 +139,127 @@ await step('重新整理：貝殼與位置都還在', async () => {
   assert.equal(await page.evaluate(() => document.querySelectorAll('#game').length), 1);
 });
 
+await step('島上有 4 位居民', async () => {
+  assert.deepEqual(await page.evaluate(() => __island.npcs.map(n => n.name)), ['栗子', '阿棕', '小白', '墨墨']);
+});
+
+await step('樹林採集木材 ×2、葉子 ×1', async () => {
+  for (const [x, y] of [[12, 3], [17, 4], [14, 5]]) {
+    await tapTile(page, x, y);
+    await waitIdle(page);
+    await sleep(300);
+  }
+  const m = await page.evaluate(() => __island.save.inventory.materials);
+  assert.deepEqual([m.wood, m.leaf], [2, 1]);
+});
+
+await step('工坊：材料不足的按鈕停用；製作木椅後材料正確扣除', async () => {
+  await page.click('.dock [data-panel=build]');
+  await page.waitForSelector('#drawer:not([hidden])');
+  assert.equal(await page.isDisabled('[data-act=craft][data-id=flowerbed]'), true);  // 葉子只有 1 片
+  assert.equal(await page.isDisabled('[data-act=craft][data-id=lantern]'), false); // 貝殼 3、木材 2
+  await page.click('[data-act=craft][data-id=wood-chair]');
+  await page.waitForFunction(() => __island.save.inventory.furniture['wood-chair'] === 1);
+  const m = await page.evaluate(() => __island.save.inventory.materials);
+  assert.deepEqual([m.wood, m.leaf], [0, 0]);
+  assert.equal(await page.isDisabled('[data-act=craft][data-id=wood-chair]'), true);
+  if (SHOTS) await page.screenshot({ path: SHOTS + '/6-workshop-375.png' });
+});
+
+// 擺放模式：在畫面內挑一格有白點（可擺放）的地面。
+async function tapPlaceHint(page) {
+  const pt = await page.evaluate(() => {
+    const r = document.getElementById('game').getBoundingClientRect(), pl = __island.player;
+    for (const h of __island.placing.hints) {
+      const s = __island.renderer.tileToScreen(h.x, h.y, { rx: pl.x, ry: pl.y });
+      if (s.x > 30 && s.y > 30 && s.x < r.width - 30 && s.y < r.height - 120) return { x: r.left + s.x, y: r.top + s.y, tile: h };
+    }
+    return null;
+  });
+  assert.ok(pt, 'no on-screen placeable tile');
+  await page.touchscreen.tap(pt.x, pt.y);
+  return pt.tile;
+}
+
+let placedTile;
+await step('擺放新手木凳：小路不能放；空地可以放，背包減少', async () => {
+  await page.click('[data-act=place][data-id=starter-stool]');
+  await page.waitForSelector('#placeBar:not([hidden])');
+  assert.equal(await page.isVisible('#drawer'), false);
+  placedTile = await tapPlaceHint(page);
+  await page.waitForFunction(() => __island.save.placed.length === 1);
+  assert.equal(await page.isVisible('#placeBar'), false);
+  assert.equal(await page.evaluate(() => __island.save.inventory.furniture['starter-stool'] || 0), 0);
+  if (SHOTS) await page.screenshot({ path: SHOTS + '/7-placed-375.png' });
+  await page.click('.dock [data-panel=build]');
+  await page.click('[data-act=place][data-id=wood-chair]');
+  const pathPt = await page.evaluate(() => {
+    const r = document.getElementById('game').getBoundingClientRect(), pl = __island.player;
+    for (let y = 0; y < 16; y++) for (let x = 0; x < 20; x++) {
+      if (!['p'].includes(['~~~~~~~~~~~~~~~~~~~~', '~~ggggggggggTgTTT~~~', '~ggggHHHgggggfTfTT~~', '~gFggHHHggggfffTff~~', '~gggggpggggTffTfff~~', '~ggFgppppppfffffTf~~', '~ggggpzzzzpffTffff~~', '~ggggpzzzzpfffTfff~~', '~gRggpzzzzpgffffTf~~', '~ggggppppppgggfffg~~', '~sggggpgggggggggggs~', '~ssgggpggFgggggggss~', '~sssggpgggggggggsss~', '~~ssssssssssssssss~~', '~~~sssssssssssss~~~~', '~~~~~~~~~~~~~~~~~~~~'][y][x])) continue;
+      const s = __island.renderer.tileToScreen(x, y, { rx: pl.x, ry: pl.y });
+      if (s.x > 10 && s.y > 10 && s.x < r.width - 10 && s.y < r.height - 120) return { x: r.left + s.x, y: r.top + s.y };
+    }
+    return null;
+  });
+  if (pathPt) {
+    await page.touchscreen.tap(pathPt.x, pathPt.y);
+    await sleep(150);
+    assert.match(await page.textContent('#toast'), /小路/);
+    assert.equal(await page.evaluate(() => __island.save.placed.length), 1);
+  }
+  await page.keyboard.press('Escape');
+  assert.equal(await page.isVisible('#placeBar'), false);
+});
+
+await step('重新整理：家具位置與背包不變', async () => {
+  await page.reload();
+  await page.waitForFunction(() => globalThis.__island);
+  const s = await page.evaluate(() => ({ placed: __island.save.placed, f: __island.save.inventory.furniture }));
+  assert.equal(s.placed.length, 1);
+  assert.deepEqual([s.placed[0].x, s.placed[0].y, s.placed[0].id], [placedTile.x, placedTile.y, 'starter-stool']);
+  assert.equal(s.f['wood-chair'], 1);
+});
+
+await step('收回家具：回到背包，連點不會多出一件', async () => {
+  await page.click('.dock [data-panel=build]');
+  await page.waitForSelector('[data-act=pickup]');
+  await page.evaluate(() => { const b = document.querySelector('[data-act=pickup]'); for (let i = 0; i < 5; i++) b.click(); });
+  await page.waitForFunction(() => __island.save.placed.length === 0);
+  await sleep(300);
+  assert.equal(await page.evaluate(() => __island.save.inventory.furniture['starter-stool']), 1);
+  await page.click('#drawerClose');
+});
+
+await step('委託：撿完 2 個貝殼可領一次葉子，連點不重複', async () => {
+  const before = await page.evaluate(() => __island.save.inventory.materials.leaf);
+  await page.click('.dock [data-panel=tasks]');
+  await page.waitForSelector('[data-act=claim][data-id=shells2]');
+  await page.evaluate(() => { const b = document.querySelector('[data-act=claim][data-id=shells2]'); for (let i = 0; i < 5; i++) b.click(); });
+  await page.waitForFunction(b => __island.save.inventory.materials.leaf === b + 1, before);
+  await sleep(300);
+  assert.equal(await page.evaluate(() => __island.save.inventory.materials.leaf), before + 1);
+  assert.match(await page.textContent('#drawerBody'), /已領取/);
+  if (SHOTS) await page.screenshot({ path: SHOTS + '/8-tasks-375.png' });
+  await page.click('#drawerClose');
+});
+
+await step('工坊：同時送出 5 次製作，材料只夠 1 次就只做 1 件', async () => {
+  const ctx = await browser.newContext();
+  const p = await ctx.newPage();
+  await p.goto(URL); await p.waitForFunction(() => globalThis.__island);
+  const r = await p.evaluate(async () => {
+    const m = await import('./src/persistence.js'), c = await import('./src/collectibles.js');
+    const s = await m.openStore(), d = c.localDate();
+    for (const id of ['forest-wood-1', 'forest-wood-2', 'forest-leaf-1']) await s.mutate({ type: 'collect', spotId: id, date: d });
+    const rs = await Promise.all([1, 2, 3, 4, 5].map(() => s.mutate({ type: 'craft', recipeId: 'wood-chair', date: d })));
+    const final = await s.load();
+    return { ok: rs.filter(x => x.result.ok).length, chairs: final.inventory.furniture['wood-chair'], wood: final.inventory.materials.wood };
+  });
+  assert.deepEqual(r, { ok: 1, chairs: 1, wood: 0 });
+  await ctx.close();
+});
+
 await step('同一採集點：兩個分頁同時撿只成功一次', async () => {
   const ctx = await browser.newContext();
   const a = await ctx.newPage(), b = await ctx.newPage();
@@ -178,10 +299,14 @@ await step('螢幕方向鍵可開啟並移動角色，不遮住背包按鈕', as
   const dpad = await page.locator('#dpad').boundingBox();
   assert.ok(dpad.y + dpad.height <= dock.y, 'dpad overlaps dock');
   const before = await state(page);
-  const btn = await page.locator('#dpad [data-dir=up]').boundingBox();
-  await page.mouse.move(btn.x + 20, btn.y + 20); await page.mouse.down(); await sleep(450); await page.mouse.up();
-  await waitIdle(page);
-  const after = await state(page);
+  let after = before;
+  for (const dir of ['up', 'down', 'left', 'right']) {   // 前方可能是樹，換個方向試
+    const btn = await page.locator('#dpad [data-dir=' + dir + ']').boundingBox();
+    await page.mouse.move(btn.x + 20, btn.y + 20); await page.mouse.down(); await sleep(450); await page.mouse.up();
+    await waitIdle(page);
+    after = await state(page);
+    if (after.p.x !== before.p.x || after.p.y !== before.p.y) break;
+  }
   assert.notDeepEqual([after.p.x, after.p.y], [before.p.x, before.p.y]);
   if (SHOTS) await page.screenshot({ path: SHOTS + '/4-dpad-375.png' });
 });

@@ -128,55 +128,192 @@ function drawHouse(g, ts) {
   roundRect(g, x + w - ts * .87, y + ts * .95, ts * .42, ts * .38, ts * .06); g.fill();
 }
 
-function drawShell(g, s, ts, t, still) {
-  const cx = (s.x + .5) * ts, cy = (s.y + .6) * ts;
-  shadow(g, cx, cy + ts * .12, ts * .18);
-  g.save(); g.translate(cx, cy);
-  g.fillStyle = '#f7c6c0';
-  g.beginPath(); g.moveTo(0, ts * .1); g.arc(0, ts * .1, ts * .2, Math.PI * 1.1, Math.PI * 1.9); g.closePath(); g.fill();
-  g.strokeStyle = '#e39a92'; g.lineWidth = Math.max(1, ts * .025);
-  for (const a of [-.55, -.25, .05, .35]) {
-    g.beginPath(); g.moveTo(0, ts * .1); g.lineTo(Math.sin(a) * ts * .18, ts * .1 - Math.cos(a) * ts * .18); g.stroke();
-  }
-  const tw = still ? .8 : (Math.sin(t / 300 + s.x) + 1) / 2;
+function sparkle(g, x, y, ts, t, still, seed) {
+  const tw = still ? .8 : (Math.sin(t / 300 + seed) + 1) / 2;
   g.fillStyle = 'rgba(255,255,255,' + (.35 + tw * .6).toFixed(2) + ')';
-  g.beginPath(); g.arc(ts * .13, -ts * .14, ts * (.03 + tw * .03), 0, Math.PI * 2); g.fill();
+  g.beginPath(); g.arc(x, y, ts * (.03 + tw * .03), 0, Math.PI * 2); g.fill();
+}
+
+// 地上的採集物：貝殼、樹枝（木材）、葉子、果實。
+function drawSpot(g, s, ts, t, still) {
+  const cx = (s.x + .5) * ts, cy = (s.y + .6) * ts;
+  shadow(g, cx, cy + ts * .12, ts * .2);
+  g.save(); g.translate(cx, cy);
+  g.lineWidth = Math.max(1, ts * .025);
+  if (s.material === 'shell') {
+    g.fillStyle = '#f7c6c0';
+    g.beginPath(); g.moveTo(0, ts * .1); g.arc(0, ts * .1, ts * .2, Math.PI * 1.1, Math.PI * 1.9); g.closePath(); g.fill();
+    g.strokeStyle = '#e39a92';
+    for (const a of [-.55, -.25, .05, .35]) {
+      g.beginPath(); g.moveTo(0, ts * .1); g.lineTo(Math.sin(a) * ts * .18, ts * .1 - Math.cos(a) * ts * .18); g.stroke();
+    }
+  } else if (s.material === 'wood') {
+    for (const [dy, rot] of [[.06, -.25], [-.04, .2]]) {
+      g.save(); g.translate(0, dy * ts); g.rotate(rot);
+      g.fillStyle = '#9a6b45'; roundRect(g, -ts * .2, -ts * .05, ts * .4, ts * .1, ts * .05); g.fill();
+      g.fillStyle = '#d9b48a'; g.beginPath(); g.ellipse(ts * .2, 0, ts * .03, ts * .05, 0, 0, Math.PI * 2); g.fill();
+      g.restore();
+    }
+  } else if (s.material === 'leaf') {
+    g.save(); g.rotate(-.5);
+    g.fillStyle = '#5fae5a';
+    g.beginPath(); g.ellipse(0, 0, ts * .2, ts * .1, 0, 0, Math.PI * 2); g.fill();
+    g.strokeStyle = '#3f8a44'; g.beginPath(); g.moveTo(-ts * .2, 0); g.lineTo(ts * .18, 0); g.stroke();
+    g.restore();
+  } else {
+    g.fillStyle = '#e0574f'; g.beginPath(); g.arc(0, 0, ts * .14, 0, Math.PI * 2); g.fill();
+    g.fillStyle = '#6a4a2e'; g.fillRect(-ts * .015, -ts * .2, ts * .03, ts * .08);
+    g.fillStyle = '#5fae5a'; g.beginPath(); g.ellipse(ts * .06, -ts * .17, ts * .06, ts * .03, -.4, 0, Math.PI * 2); g.fill();
+  }
+  sparkle(g, ts * .13, -ts * .14, ts, t, still, s.x + s.y);
   g.restore();
 }
 
-function drawChestnut(g, n, ts, t, still) {
-  const cx = (n.rx + .5) * ts, by = (n.ry + .88) * ts, c = n.colors;
+// 擺放的家具（原點在格子底部中央）。
+function drawFurniture(g, f, ts) {
+  const cx = (f.x + .5) * ts, by = (f.y + .85) * ts;
+  shadow(g, cx, by, ts * .3);
+  g.save(); g.translate(cx, by);
+  if (f.id === 'starter-stool') {
+    g.fillStyle = '#9a6b45';
+    g.fillRect(-ts * .18, -ts * .3, ts * .06, ts * .3); g.fillRect(ts * .12, -ts * .3, ts * .06, ts * .3);
+    g.fillStyle = '#c8935f'; roundRect(g, -ts * .24, -ts * .42, ts * .48, ts * .14, ts * .06); g.fill();
+  } else if (f.id === 'wood-chair') {
+    g.fillStyle = '#8a5d3b';
+    g.fillRect(-ts * .2, -ts * .3, ts * .06, ts * .3); g.fillRect(ts * .14, -ts * .3, ts * .06, ts * .3);
+    g.fillRect(-ts * .2, -ts * .78, ts * .06, ts * .5); g.fillRect(ts * .14, -ts * .78, ts * .06, ts * .5);
+    g.fillStyle = '#b98252'; roundRect(g, -ts * .22, -ts * .78, ts * .44, ts * .18, ts * .05); g.fill();
+    g.fillStyle = '#c8935f'; roundRect(g, -ts * .25, -ts * .4, ts * .5, ts * .12, ts * .05); g.fill();
+  } else if (f.id === 'flowerbed') {
+    g.fillStyle = '#9a6b45'; roundRect(g, -ts * .36, -ts * .22, ts * .72, ts * .22, ts * .06); g.fill();
+    g.fillStyle = '#6b4a30'; roundRect(g, -ts * .32, -ts * .24, ts * .64, ts * .08, ts * .04); g.fill();
+    const cols = ['#f6a5b4', '#ffe28a', '#c7a6f0', '#ffffff'];
+    for (let i = 0; i < 4; i++) {
+      const x = -ts * .24 + i * ts * .16;
+      g.strokeStyle = '#4f9a5d'; g.lineWidth = ts * .03; g.beginPath(); g.moveTo(x, -ts * .22); g.lineTo(x, -ts * .38); g.stroke();
+      g.fillStyle = cols[i]; g.beginPath(); g.arc(x, -ts * .42, ts * .07, 0, Math.PI * 2); g.fill();
+      g.fillStyle = '#f2b33d'; g.beginPath(); g.arc(x, -ts * .42, ts * .025, 0, Math.PI * 2); g.fill();
+    }
+  } else if (f.id === 'lantern') {
+    g.fillStyle = '#5a4636'; g.fillRect(-ts * .03, -ts * .5, ts * .06, ts * .5);
+    g.fillStyle = 'rgba(255,214,120,.35)'; g.beginPath(); g.arc(0, -ts * .62, ts * .26, 0, Math.PI * 2); g.fill();
+    g.fillStyle = '#e8834e'; roundRect(g, -ts * .13, -ts * .78, ts * .26, ts * .3, ts * .1); g.fill();
+    g.fillStyle = '#ffe28a'; roundRect(g, -ts * .07, -ts * .72, ts * .14, ts * .18, ts * .05); g.fill();
+    g.fillStyle = '#5a4636'; g.fillRect(-ts * .1, -ts * .82, ts * .2, ts * .05);
+  }
+  g.restore();
+}
+
+function eyes(g, n, ts, y, gap, nose) {
+  if (n.facing === 'up') return;
+  const ox = n.facing === 'left' ? -ts * .05 : n.facing === 'right' ? ts * .05 : 0;
+  g.fillStyle = '#3a2a22';
+  g.beginPath(); g.arc(ox - gap, y, ts * .026, 0, Math.PI * 2); g.arc(ox + gap, y, ts * .026, 0, Math.PI * 2); g.fill();
+  if (nose) { g.beginPath(); g.arc(ox, y + ts * .07, ts * .022, 0, Math.PI * 2); g.fill(); }
+}
+
+// 四種居民的原創造型；原點在腳下中央。
+const SPECIES = {
+  fox(g, n, ts) {
+    const c = n.colors, side = n.facing === 'left' ? -1 : 1;
+    g.fillStyle = c.body; g.beginPath(); g.ellipse(-side * ts * .22, -ts * .32, ts * .12, ts * .22, -side * .5, 0, Math.PI * 2); g.fill();
+    g.fillStyle = c.belly; g.beginPath(); g.ellipse(-side * ts * .27, -ts * .48, ts * .06, ts * .07, 0, 0, Math.PI * 2); g.fill();
+    g.fillStyle = c.body; g.beginPath(); g.ellipse(0, -ts * .22, ts * .2, ts * .22, 0, 0, Math.PI * 2); g.fill();
+    g.fillStyle = c.belly; g.beginPath(); g.ellipse(0, -ts * .18, ts * .11, ts * .14, 0, 0, Math.PI * 2); g.fill();
+    g.fillStyle = c.scarf; roundRect(g, -ts * .18, -ts * .43, ts * .36, ts * .08, ts * .04); g.fill();
+    g.fillStyle = c.body; g.beginPath(); g.arc(0, -ts * .6, ts * .21, 0, Math.PI * 2); g.fill();
+    for (const s of [-1, 1]) {
+      g.fillStyle = c.body; g.beginPath(); g.moveTo(s * ts * .2, -ts * .9); g.lineTo(s * ts * .05, -ts * .74); g.lineTo(s * ts * .2, -ts * .68); g.closePath(); g.fill();
+      g.fillStyle = c.ear; g.beginPath(); g.moveTo(s * ts * .18, -ts * .85); g.lineTo(s * ts * .1, -ts * .76); g.lineTo(s * ts * .18, -ts * .72); g.closePath(); g.fill();
+    }
+    if (n.facing !== 'up') {
+      const ox = n.facing === 'left' ? -ts * .05 : n.facing === 'right' ? ts * .05 : 0;
+      g.fillStyle = c.belly; g.beginPath(); g.ellipse(ox, -ts * .53, ts * .1, ts * .07, 0, 0, Math.PI * 2); g.fill();
+    }
+    eyes(g, n, ts, -ts * .63, ts * .08, true);
+  },
+  bear(g, n, ts) {
+    const c = n.colors;
+    g.fillStyle = c.body; g.beginPath(); g.ellipse(0, -ts * .24, ts * .25, ts * .25, 0, 0, Math.PI * 2); g.fill();
+    g.fillStyle = c.belly; g.beginPath(); g.ellipse(0, -ts * .2, ts * .14, ts * .15, 0, 0, Math.PI * 2); g.fill();
+    g.fillStyle = c.scarf; roundRect(g, -ts * .2, -ts * .47, ts * .4, ts * .08, ts * .04); g.fill();
+    for (const s of [-1, 1]) {
+      g.fillStyle = c.body; g.beginPath(); g.arc(s * ts * .17, -ts * .82, ts * .08, 0, Math.PI * 2); g.fill();
+      g.fillStyle = c.ear; g.beginPath(); g.arc(s * ts * .17, -ts * .82, ts * .04, 0, Math.PI * 2); g.fill();
+    }
+    g.fillStyle = c.body; g.beginPath(); g.arc(0, -ts * .64, ts * .23, 0, Math.PI * 2); g.fill();
+    if (n.facing !== 'up') {
+      const ox = n.facing === 'left' ? -ts * .05 : n.facing === 'right' ? ts * .05 : 0;
+      g.fillStyle = c.belly; g.beginPath(); g.ellipse(ox, -ts * .56, ts * .09, ts * .07, 0, 0, Math.PI * 2); g.fill();
+    }
+    eyes(g, n, ts, -ts * .67, ts * .085, true);
+  },
+  bunny(g, n, ts) {
+    const c = n.colors;
+    g.fillStyle = c.body; g.beginPath(); g.ellipse(0, -ts * .2, ts * .19, ts * .2, 0, 0, Math.PI * 2); g.fill();
+    g.fillStyle = c.scarf; roundRect(g, -ts * .16, -ts * .4, ts * .32, ts * .07, ts * .035); g.fill();
+    for (const s of [-1, 1]) {
+      g.fillStyle = c.body; g.beginPath(); g.ellipse(s * ts * .08, -ts * .92, ts * .06, ts * .19, s * .15, 0, Math.PI * 2); g.fill();
+      g.fillStyle = c.ear; g.beginPath(); g.ellipse(s * ts * .08, -ts * .9, ts * .03, ts * .13, s * .15, 0, Math.PI * 2); g.fill();
+    }
+    g.fillStyle = c.body; g.beginPath(); g.arc(0, -ts * .57, ts * .2, 0, Math.PI * 2); g.fill();
+    g.strokeStyle = 'rgba(120,110,100,.25)'; g.lineWidth = ts * .015;
+    g.beginPath(); g.arc(0, -ts * .57, ts * .2, 0, Math.PI * 2); g.stroke();
+    if (n.facing === 'down') {
+      g.fillStyle = 'rgba(240,140,150,.5)';
+      g.beginPath(); g.arc(-ts * .12, -ts * .52, ts * .035, 0, Math.PI * 2); g.arc(ts * .12, -ts * .52, ts * .035, 0, Math.PI * 2); g.fill();
+    }
+    eyes(g, n, ts, -ts * .6, ts * .075, false);
+  },
+  owl(g, n, ts) {
+    const c = n.colors;
+    g.fillStyle = c.body; g.beginPath(); g.ellipse(0, -ts * .38, ts * .24, ts * .36, 0, 0, Math.PI * 2); g.fill();
+    for (const s of [-1, 1]) { g.beginPath(); g.moveTo(s * ts * .2, -ts * .78); g.lineTo(s * ts * .08, -ts * .66); g.lineTo(s * ts * .22, -ts * .6); g.closePath(); g.fill(); }
+    g.fillStyle = c.belly; g.beginPath(); g.ellipse(0, -ts * .22, ts * .15, ts * .17, 0, 0, Math.PI * 2); g.fill();
+    g.strokeStyle = c.ear; g.lineWidth = ts * .02;
+    for (const y of [-.28, -.2]) { g.beginPath(); g.arc(0, y * ts, ts * .06, .2, Math.PI - .2); g.stroke(); }
+    if (n.facing !== 'up') {
+      const ox = n.facing === 'left' ? -ts * .05 : n.facing === 'right' ? ts * .05 : 0;
+      for (const s of [-1, 1]) {
+        g.fillStyle = '#fffaf0'; g.beginPath(); g.arc(ox + s * ts * .09, -ts * .55, ts * .08, 0, Math.PI * 2); g.fill();
+        g.fillStyle = '#2e2a3a'; g.beginPath(); g.arc(ox + s * ts * .09, -ts * .55, ts * .04, 0, Math.PI * 2); g.fill();
+      }
+      g.fillStyle = c.scarf; g.beginPath(); g.moveTo(ox - ts * .04, -ts * .47); g.lineTo(ox + ts * .04, -ts * .47); g.lineTo(ox, -ts * .4); g.closePath(); g.fill();
+    }
+    // 小眼鏡（諮商／訂正的「仔細看」）
+    if (n.facing === 'down') {
+      g.strokeStyle = '#3a3550'; g.lineWidth = ts * .018;
+      g.beginPath(); g.arc(-ts * .09, -ts * .55, ts * .085, 0, Math.PI * 2); g.moveTo(ts * .175, -ts * .55); g.arc(ts * .09, -ts * .55, ts * .085, 0, Math.PI * 2); g.stroke();
+    }
+  }
+};
+
+function drawNpc(g, n, ts, t, still) {
+  const cx = (n.rx + .5) * ts, by = (n.ry + .88) * ts;
   const bob = still || !n.moving ? 0 : Math.abs(Math.sin(t / 110)) * ts * .04;
   shadow(g, cx, by, ts * .3);
   g.save(); g.translate(cx, by - bob);
-  const side = n.facing === 'left' ? -1 : 1;
-  // 尾巴
-  g.fillStyle = c.body; g.beginPath(); g.ellipse(-side * ts * .22, -ts * .32, ts * .12, ts * .22, -side * .5, 0, Math.PI * 2); g.fill();
-  g.fillStyle = c.belly; g.beginPath(); g.ellipse(-side * ts * .27, -ts * .48, ts * .06, ts * .07, 0, 0, Math.PI * 2); g.fill();
-  // 身體與頭
-  g.fillStyle = c.body; g.beginPath(); g.ellipse(0, -ts * .22, ts * .2, ts * .22, 0, 0, Math.PI * 2); g.fill();
-  g.fillStyle = c.belly; g.beginPath(); g.ellipse(0, -ts * .18, ts * .11, ts * .14, 0, 0, Math.PI * 2); g.fill();
-  g.fillStyle = c.scarf; roundRect(g, -ts * .18, -ts * .43, ts * .36, ts * .08, ts * .04); g.fill();
-  g.fillStyle = c.body; g.beginPath(); g.arc(0, -ts * .6, ts * .21, 0, Math.PI * 2); g.fill();
-  for (const s of [-1, 1]) {
-    g.fillStyle = c.body; g.beginPath(); g.moveTo(s * ts * .2, -ts * .9); g.lineTo(s * ts * .05, -ts * .74); g.lineTo(s * ts * .2, -ts * .68); g.closePath(); g.fill();
-    g.fillStyle = c.ear; g.beginPath(); g.moveTo(s * ts * .18, -ts * .85); g.lineTo(s * ts * .1, -ts * .76); g.lineTo(s * ts * .18, -ts * .72); g.closePath(); g.fill();
-  }
-  if (n.facing !== 'up') {
-    const ox = n.facing === 'left' ? -ts * .05 : n.facing === 'right' ? ts * .05 : 0;
-    g.fillStyle = c.belly; g.beginPath(); g.ellipse(ox, -ts * .53, ts * .1, ts * .07, 0, 0, Math.PI * 2); g.fill();
-    g.fillStyle = '#3a2a22';
-    g.beginPath(); g.arc(ox - ts * .08, -ts * .63, ts * .025, 0, Math.PI * 2); g.arc(ox + ts * .08, -ts * .63, ts * .025, 0, Math.PI * 2); g.fill();
-    g.beginPath(); g.arc(ox, -ts * .55, ts * .022, 0, Math.PI * 2); g.fill();
-  }
+  SPECIES[n.species](g, n, ts);
   if (n.quest) {
-    const qy = -ts * 1.08 - (still ? 0 : Math.sin(t / 250) * ts * .04);
+    const qy = -ts * 1.18 - (still ? 0 : Math.sin(t / 250) * ts * .04);
     g.fillStyle = '#fffaf0'; g.strokeStyle = '#e0a43a'; g.lineWidth = Math.max(1.5, ts * .04);
     g.beginPath(); g.arc(0, qy, ts * .14, 0, Math.PI * 2); g.fill(); g.stroke();
     g.fillStyle = '#c47f12'; g.font = '800 ' + Math.round(ts * .2) + 'px system-ui,sans-serif'; g.textAlign = 'center'; g.textBaseline = 'middle';
     g.fillText('!', 0, qy + ts * .01);
   }
   g.restore();
+}
+
+// 對話框的居民頭像（同一套繪製程式，放大畫在小 canvas 上）。
+export function drawPortrait(cv, npc) {
+  const dpr = Math.min(globalThis.devicePixelRatio || 1, 2), size = cv.clientWidth || 56;
+  cv.width = size * dpr; cv.height = size * dpr;
+  const g = cv.getContext('2d');
+  g.setTransform(dpr, 0, 0, dpr, 0, 0);
+  g.clearRect(0, 0, size, size);
+  const ts = size * 1.05;
+  g.translate(size / 2, size * (npc.species === 'bunny' || npc.species === 'owl' ? .98 : 1.02));
+  SPECIES[npc.species](g, { ...npc, facing: 'down' }, ts);
 }
 
 function drawPlayer(g, p, ts, t, still, outfit) {
@@ -257,12 +394,17 @@ export function createRenderer(canvas) {
       }
       g.globalAlpha = 1;
     }
+    if (s.placeHints) {
+      g.fillStyle = 'rgba(255,255,255,.55)';
+      for (const h of s.placeHints) { g.beginPath(); g.arc((h.x + .5) * ts, (h.y + .5) * ts, ts * .09, 0, Math.PI * 2); g.fill(); }
+    }
     const items = [];
     for (const t of trees) items.push({ y: t.y + .9, fn: () => drawTree(g, t.x, t.y, ts) });
     for (const r of rocks) items.push({ y: r.y + .8, fn: () => drawRock(g, r.x, r.y, ts) });
     items.push({ y: HOUSE.y + HOUSE.h, fn: () => drawHouse(g, ts) });
-    for (const sp of s.spots) items.push({ y: sp.y + .5, fn: () => drawShell(g, sp, ts, s.time, s.still) });
-    for (const n of s.npcs) items.push({ y: n.ry + .88, fn: () => drawChestnut(g, n, ts, s.time, s.still) });
+    for (const sp of s.spots) items.push({ y: sp.y + .5, fn: () => drawSpot(g, sp, ts, s.time, s.still) });
+    for (const f of s.placed) items.push({ y: f.y + .85, fn: () => drawFurniture(g, f, ts) });
+    for (const n of s.npcs) items.push({ y: n.ry + .88, fn: () => drawNpc(g, n, ts, s.time, s.still) });
     items.push({ y: s.player.ry + .9, fn: () => drawPlayer(g, s.player, ts, s.time, s.still, s.outfit) });
     items.sort((a, b) => a.y - b.y).forEach(i => i.fn());
     for (const fx of s.effects) {

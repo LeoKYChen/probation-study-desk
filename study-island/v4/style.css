@@ -79,6 +79,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #2e6b86; outline-offs
   box-shadow: 0 8px 22px rgba(40, 70, 60, .22);
 }
 .portrait { width: 56px; height: 56px; border-radius: 50%; background: #f6ecd2; }
+.dlg-head .hearts { margin-left: 4px; }
 .dlg-head { margin: 0; } .dlg-head small { color: var(--muted); }
 #dlgText { margin: 4px 0 0; line-height: 1.6; min-height: 3.2em; }
 #dlgNext { grid-column: 2; justify-self: end; }
@@ -135,3 +136,17 @@ button:focus-visible, a:focus-visible { outline: 3px solid #2e6b86; outline-offs
 @media (prefers-reduced-motion: reduce) {
   .toast { transition: none; }
 }
+
+.btn.secondary { background: #fffefa; color: #326c5b; border-color: #b6d6be; }
+.btn.small { min-height: 40px; padding: 6px 12px; font-size: 14px; }
+.btn:disabled { opacity: .45; cursor: not-allowed; }
+.place-bar {
+  position: absolute; left: 10px; right: 10px; bottom: 12px; margin: auto; max-width: 520px;
+  display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 16px;
+  background: rgba(255, 253, 244, .96); box-shadow: 0 6px 18px rgba(40, 70, 60, .2); font-weight: 700; font-size: 14px;
+}
+.place-bar span { flex: 1; min-width: 0; }
+.recipe .need { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 3px; }
+.recipe .need span { font-size: 12px; padding: 1px 7px; border-radius: 999px; background: #eef2e6; }
+.recipe .need span.lack { background: #fbe3dc; color: #7a2f22; }
+.hearts { color: #d77a8a; letter-spacing: 1px; font-size: 12px; }

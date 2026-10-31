@@ -4,7 +4,9 @@ import assert from 'node:assert/strict';
 import { MAP_W, MAP_H, rows, isWalkable, tileAt, SPAWN, HOUSE } from '../src/world/map.js';
 import { findPath, pathToNeighbor } from '../src/player/pathfinding.js';
 import { SPOTS, availableSpots, localDate } from '../src/collectibles.js';
-import { NPCS, wanderStep, chestnutLines } from '../src/npc/dialogue.js';
+import { NPCS, wanderStep, chestnutLines, linesFor } from '../src/npc/dialogue.js';
+import { canPlace } from '../src/world/placement.js';
+import { QUESTS, questStatus } from '../src/quests.js';
 import { createSave, normalizeSave, applyAction, shellsCollectedToday, SCHEMA } from '../src/state.js';
 
 const walk = (x, y) => isWalkable(x, y);
@@ -54,11 +56,25 @@ test('pathToNeighbor 走到居民旁邊而不是居民身上', () => {
   assert.equal(Math.abs(r.stand.x - npc.x) + Math.abs(r.stand.y - npc.y), 1);
 });
 
-test('海灘 3 個貝殼都在可走的沙灘上，且玩家走得到', () => {
-  assert.equal(SPOTS.length, 3);
+test('採集點：貝殼在沙灘、木材／葉子／果實在樹林，全部走得到且不在居民家', () => {
+  const by = m => SPOTS.filter(s => s.material === m);
+  assert.equal(by('shell').length, 3);
+  for (const m of ['wood', 'leaf', 'fruit']) assert.ok(by(m).length >= 2, m);
+  assert.equal(new Set(SPOTS.map(s => s.x + ',' + s.y)).size, SPOTS.length, '位置不重複');
   for (const s of SPOTS) {
-    assert.equal(tileAt(s.x, s.y).id, 'sand', s.id);
+    assert.equal(tileAt(s.x, s.y).id, s.material === 'shell' ? 'sand' : 'forest', s.id);
     assert.ok(findPath(SPAWN, s, walk, MAP_W, MAP_H), s.id);
+    assert.ok(!NPCS.some(n => n.home.x === s.x && n.home.y === s.y), s.id);
+  }
+});
+
+test('4 位居民：家可走、互不重疊、走得到、不在出生點', () => {
+  assert.deepEqual(NPCS.map(n => n.name), ['栗子', '阿棕', '小白', '墨墨']);
+  assert.equal(new Set(NPCS.map(n => n.home.x + ',' + n.home.y)).size, 4);
+  for (const n of NPCS) {
+    assert.ok(walk(n.home.x, n.home.y), n.id);
+    assert.ok(pathToNeighbor(SPAWN, n.home, walk, MAP_W, MAP_H), n.id);
+    assert.ok(Math.abs(n.home.x - SPAWN.x) + Math.abs(n.home.y - SPAWN.y) > n.range, n.id);
   }
 });
 
@@ -70,9 +86,10 @@ test('同一個採集點同一天只給一次；隔天重新出現', () => {
   const b = applyAction(s, { type: 'collect', spotId: 'beach-shell-1', date: d1 });
   assert.equal(b.ok, false); assert.equal(b.reason, 'already'); assert.equal(b.changed, false);
   assert.equal(s.inventory.materials.shell, 1);
-  assert.equal(availableSpots(s, d1).length, 2);
+  const shells = d => availableSpots(s, d).filter(x => x.material === 'shell').length;
+  assert.equal(shells(d1), 2);
   assert.equal(shellsCollectedToday(s, d1), 1);
-  assert.equal(availableSpots(s, d2).length, 3);
+  assert.equal(shells(d2), 3);
   applyAction(s, { type: 'collect', spotId: 'beach-shell-1', date: d2 });
   assert.equal(s.inventory.materials.shell, 2);
   assert.deepEqual(Object.keys(s.collected), [d2], '舊日期紀錄被清掉');
@@ -110,7 +127,7 @@ test('對話：第一次打招呼才算改變，同一天再聊不重複', () =>
 });
 
 test('居民只在家附近走動', () => {
-  const n = NPCS[0];
+  for (const n of NPCS) {
   let pos = { ...n.home }, i = 0;
   const rand = () => ((i++ * 0.37) % 1);
   for (let k = 0; k < 200; k++) {
@@ -119,8 +136,110 @@ test('居民只在家附近走動', () => {
     assert.ok(Math.abs(pos.x - n.home.x) + Math.abs(pos.y - n.home.y) <= n.range);
     assert.ok(walk(pos.x, pos.y));
   }
+  }
 });
 
 test('localDate 使用本機日期', () => {
   assert.equal(localDate(new Date(2026, 0, 5, 23, 59)), '2026-01-05');
+});
+
+const D = '2026-10-31';
+const give = (s, mats) => Object.assign(s.inventory.materials, mats);
+
+test('親密度：每天第一次聊天 +1，同一天不重複；台詞依親密度變化', () => {
+  const s = createSave();
+  assert.equal(applyAction(s, { type: 'talk', npcId: 'brownie', date: D }).friendship, 1);
+  assert.equal(applyAction(s, { type: 'talk', npcId: 'brownie', date: D }).friendship, 1);
+  assert.equal(applyAction(s, { type: 'talk', npcId: 'brownie', date: '2026-11-01' }).friendship, 2);
+  assert.equal(applyAction(s, { type: 'talk', npcId: 'nobody', date: D }).ok, false);
+  const n = NPCS[1];
+  assert.notEqual(linesFor(n, { friendship: 0 })[0], linesFor(n, { friendship: 7 })[0]);
+});
+
+test('工坊：3 個配方；材料足夠才製作並正確扣除，缺料回報差多少', () => {
+  const s = createSave();
+  const miss = applyAction(s, { type: 'craft', recipeId: 'wood-chair', date: D });
+  assert.equal(miss.ok, false); assert.equal(miss.reason, 'missing');
+  assert.deepEqual(miss.missing.map(m => m.id).sort(), ['leaf', 'wood']);
+  give(s, { wood: 3, leaf: 3, shell: 3 });
+  assert.equal(applyAction(s, { type: 'craft', recipeId: 'wood-chair', date: D }).ok, true);
+  assert.deepEqual([s.inventory.materials.wood, s.inventory.materials.leaf], [1, 2]);
+  assert.equal(applyAction(s, { type: 'craft', recipeId: 'flowerbed', date: D }).ok, true);
+  assert.deepEqual([s.inventory.materials.wood, s.inventory.materials.leaf], [0, 0]);
+  assert.equal(applyAction(s, { type: 'craft', recipeId: 'lantern', date: D }).reason, 'missing');
+  assert.equal(s.inventory.materials.shell, 3, '失敗不扣料');
+  assert.deepEqual([s.inventory.furniture['wood-chair'], s.inventory.furniture.flowerbed], [1, 1]);
+  assert.equal(s.daily.crafted, 2);
+});
+
+test('擺放：只能放在空地；不能放小路、採集點、居民家、有人的格子或已有家具', () => {
+  const s = createSave();
+  const ok = canPlace(s, 9, 11);
+  assert.equal(ok.ok, true);
+  assert.equal(canPlace(s, 6, 4).reason, 'path');
+  assert.equal(canPlace(s, 3, 13).reason, 'spot');
+  assert.equal(canPlace(s, NPCS[0].home.x, NPCS[0].home.y).reason, 'home');
+  assert.equal(canPlace(s, 9, 11, [{ x: 9, y: 11 }]).reason, 'actor');
+  assert.equal(canPlace(s, HOUSE.x, HOUSE.y).reason, 'terrain');
+  const r = applyAction(s, { type: 'place', itemId: 'starter-stool', x: 9, y: 11 });
+  assert.equal(r.ok, true);
+  assert.equal(s.inventory.furniture['starter-stool'], undefined, '背包少一件');
+  assert.equal(canPlace(s, 9, 11).reason, 'furniture');
+  assert.equal(applyAction(s, { type: 'place', itemId: 'starter-stool', x: 10, y: 11 }).reason, 'none-left');
+  assert.equal(applyAction(s, { type: 'move', x: 9, y: 11, facing: 'up' }).ok, false, '家具上不是安全位置');
+});
+
+test('擺放：不能把任何地方封死', () => {
+  const s = createSave();
+  s.inventory.furniture['wood-chair'] = 1;
+  assert.equal(applyAction(s, { type: 'place', itemId: 'wood-chair', x: 3, y: 1 }).ok, true);
+  // (2,1) 只剩 (2,2) 一個出口，再擺就會被困住。
+  assert.equal(canPlace(s, 2, 2).reason, 'blocks');
+});
+
+test('收回：家具回到背包、位置清空；重複收回不會多出家具', () => {
+  const s = createSave();
+  const { uid } = applyAction(s, { type: 'place', itemId: 'starter-stool', x: 9, y: 11 });
+  assert.equal(applyAction(s, { type: 'pickup', uid }).ok, true);
+  assert.equal(applyAction(s, { type: 'pickup', uid }).ok, false);
+  assert.equal(s.inventory.furniture['starter-stool'], 1);
+  assert.deepEqual(s.placed, []);
+});
+
+test('委託：完成才能領，每項每天只領一次，隔天重置', () => {
+  const s = createSave();
+  const q = QUESTS.find(x => x.id === 'shells2');
+  assert.equal(applyAction(s, { type: 'claimQuest', questId: 'shells2', date: D }).reason, 'not-done');
+  applyAction(s, { type: 'collect', spotId: 'beach-shell-1', date: D });
+  applyAction(s, { type: 'collect', spotId: 'beach-shell-2', date: D });
+  assert.equal(questStatus(s, q, D).done, true);
+  assert.equal(applyAction(s, { type: 'claimQuest', questId: 'shells2', date: D }).ok, true);
+  assert.equal(s.inventory.materials.leaf, 1);
+  assert.equal(applyAction(s, { type: 'claimQuest', questId: 'shells2', date: D }).reason, 'already');
+  assert.equal(s.inventory.materials.leaf, 1);
+  assert.equal(questStatus(s, q, '2026-11-01').claimed, false);
+  give(s, { wood: 2, leaf: 1 });
+  applyAction(s, { type: 'craft', recipeId: 'wood-chair', date: D });
+  assert.equal(applyAction(s, { type: 'claimQuest', questId: 'craft1', date: D }).ok, true);
+  applyAction(s, { type: 'talk', npcId: 'chestnut', date: D });
+  assert.equal(applyAction(s, { type: 'claimQuest', questId: 'talk2', date: D }).reason, 'not-done');
+  applyAction(s, { type: 'talk', npcId: 'snowy', date: D });
+  assert.equal(applyAction(s, { type: 'claimQuest', questId: 'talk2', date: D }).ok, true);
+});
+
+test('存檔正規化：壞掉的家具位置收回背包，不靜默丟棄；Demo A 舊存檔可讀', () => {
+  const n = normalizeSave({
+    schema: SCHEMA, placed: [
+      { uid: 1, id: 'wood-chair', x: 9, y: 11 },
+      { uid: 2, id: 'lantern', x: 0, y: 0 },
+      { uid: 1, id: 'flowerbed', x: 10, y: 11 },
+      { uid: 3, id: 'unknown', x: 10, y: 12 }
+    ]
+  });
+  assert.deepEqual(n.placed, [{ uid: 1, id: 'wood-chair', x: 9, y: 11 }]);
+  assert.equal(n.inventory.furniture.lantern, 1);
+  assert.equal(n.inventory.furniture.flowerbed, 1);
+  assert.ok(n.nextUid >= 2);
+  const demoA = normalizeSave({ schema: SCHEMA, player: { x: 3, y: 13, facing: 'left', outfit: 'sky' }, inventory: { materials: { shell: 3 }, furniture: { 'starter-stool': 1 } }, collected: { [D]: ['beach-shell-1'] }, npc: { chestnut: { lastTalkDate: D } } });
+  assert.deepEqual([demoA.player.x, demoA.inventory.materials.shell, demoA.placed.length], [3, 3, 0]);
 });

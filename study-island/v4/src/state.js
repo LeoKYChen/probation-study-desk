@@ -1,8 +1,12 @@
 // v4 存檔格式與所有會改變存檔的動作。每個動作都是「讀取 → 檢查 → 修改」的純函式，
 // 由 persistence.mutate() 包在同一個 IndexedDB 交易中執行，因此多分頁也不會重複發獎。
 import { isWalkable, SPAWN } from './world/map.js';
-import { spotById, isCollected, SPOTS } from './collectibles.js';
-import { emptyInventory, addMaterial, count } from './inventory.js';
+import { canPlace, furnitureAt } from './world/placement.js';
+import { spotById, isCollected, collectedCount } from './collectibles.js';
+import { emptyInventory, addMaterial, count, furnitureById, furnitureCount, addFurniture } from './inventory.js';
+import { recipeById, missing } from './crafting.js';
+import { questById, questStatus, ledgerKey } from './quests.js';
+import { npcById } from './npc/dialogue.js';
 
 export const SCHEMA = 'probation-study-island-v4';
 export const VERSION = 1;
@@ -12,6 +16,7 @@ export const OUTFITS = [
   { id: 'berry', name: '莓紅', shirt: '#c96b6b', trim: '#984747' }
 ];
 const FACINGS = ['up', 'down', 'left', 'right'];
+const MAX_FRIENDSHIP = 10;
 
 export function createSave(now = new Date()) {
   return {
@@ -22,16 +27,21 @@ export function createSave(now = new Date()) {
     islandName: '小樹灣',
     player: { x: SPAWN.x, y: SPAWN.y, facing: 'down', outfit: 'leaf' },
     inventory: emptyInventory(),
+    placed: [],
+    nextUid: 1,
     collected: {},
+    daily: null,
     npc: {},
     rewardLedger: {}
   };
 }
 
+const isObj = v => v && typeof v === 'object' && !Array.isArray(v);
+
 // 讀進來的存檔逐欄修正；無法辨識的欄位以預設值補上，而不是讓遊戲壞掉。
 export function normalizeSave(raw) {
   const base = createSave();
-  if (!raw || typeof raw !== 'object' || raw.schema !== SCHEMA) return base;
+  if (!isObj(raw) || raw.schema !== SCHEMA) return base;
   const s = { ...base, ...raw };
   const p = raw.player || {};
   s.player = {
@@ -39,64 +49,132 @@ export function normalizeSave(raw) {
     facing: FACINGS.includes(p.facing) ? p.facing : 'down',
     outfit: OUTFITS.some(o => o.id === p.outfit) ? p.outfit : 'leaf'
   };
-  if (!isWalkable(s.player.x, s.player.y)) Object.assign(s.player, { x: SPAWN.x, y: SPAWN.y });
   const inv = emptyInventory();
   const rinv = raw.inventory || {};
   for (const id of Object.keys(inv.materials)) inv.materials[id] = count(rinv, id);
-  if (rinv.furniture && typeof rinv.furniture === 'object') {
+  if (isObj(rinv.furniture)) {
     inv.furniture = {};
     for (const [id, n] of Object.entries(rinv.furniture)) if (Number.isInteger(n) && n > 0) inv.furniture[id] = n;
   }
   s.inventory = inv;
-  s.collected = raw.collected && typeof raw.collected === 'object' ? raw.collected : {};
-  s.npc = raw.npc && typeof raw.npc === 'object' ? raw.npc : {};
-  s.rewardLedger = raw.rewardLedger && typeof raw.rewardLedger === 'object' ? raw.rewardLedger : {};
+  // 擺放中的家具：資料不合理（未知 ID、位置不可走、重疊）時收回背包，絕不靜默丟棄。
+  s.placed = [];
+  let maxUid = 0;
+  for (const item of Array.isArray(raw.placed) ? raw.placed : []) {
+    if (!isObj(item) || !furnitureById(item.id)) continue;
+    const uid = Number.isInteger(item.uid) && item.uid > 0 && !s.placed.some(x => x.uid === item.uid) ? item.uid : 0;
+    if (uid && isWalkable(item.x, item.y) && !furnitureAt(s, item.x, item.y)) {
+      s.placed.push({ uid, id: item.id, x: item.x, y: item.y });
+      maxUid = Math.max(maxUid, uid);
+    } else {
+      addFurniture(s.inventory, item.id, 1);
+    }
+  }
+  s.nextUid = Math.max(Number.isInteger(raw.nextUid) ? raw.nextUid : 1, maxUid + 1);
+  if (!isWalkable(s.player.x, s.player.y) || furnitureAt(s, s.player.x, s.player.y)) Object.assign(s.player, { x: SPAWN.x, y: SPAWN.y });
+  s.collected = isObj(raw.collected) ? raw.collected : {};
+  const d = raw.daily;
+  s.daily = isObj(d) && typeof d.date === 'string'
+    ? { date: d.date, talked: Array.isArray(d.talked) ? d.talked.filter(id => npcById(id)) : [], crafted: Number.isInteger(d.crafted) ? d.crafted : 0 }
+    : null;
+  s.npc = isObj(raw.npc) ? raw.npc : {};
+  s.rewardLedger = isObj(raw.rewardLedger) ? raw.rewardLedger : {};
   return s;
 }
 
-// 只保留今天的採集紀錄，舊日期自然失效（每日更新）。
-function pruneCollected(save, date) {
+// 只保留今天的採集紀錄與每日統計，舊日期自然失效（每日更新）。
+function rollDay(save, date) {
   for (const d of Object.keys(save.collected)) if (d !== date) delete save.collected[d];
+  if (!save.daily || save.daily.date !== date) save.daily = { date, talked: [], crafted: 0 };
+  for (const k of Object.keys(save.rewardLedger)) if (k.startsWith('quest:') && !k.startsWith('quest:' + date + ':')) delete save.rewardLedger[k];
 }
 
 // 套用動作，回傳 { changed, ok, reason?, ... }。會直接修改 save。
 export function applyAction(save, action, now = new Date()) {
   const touch = r => { if (r.changed) save.updatedAt = now.toISOString(); return r; };
+  const fail = reason => ({ changed: false, ok: false, reason });
   switch (action.type) {
     case 'collect': {
       const spot = spotById(action.spotId);
-      if (!spot) return { changed: false, ok: false, reason: 'unknown-spot' };
-      pruneCollected(save, action.date);
-      if (isCollected(save, spot.id, action.date)) return { changed: false, ok: false, reason: 'already' };
+      if (!spot) return fail('unknown-spot');
+      rollDay(save, action.date);
+      if (isCollected(save, spot.id, action.date)) return fail('already');
       (save.collected[action.date] ||= []).push(spot.id);
       const total = addMaterial(save.inventory, spot.material, 1);
       return touch({ changed: true, ok: true, material: spot.material, total });
     }
     case 'move': {
-      if (!isWalkable(action.x, action.y)) return { changed: false, ok: false, reason: 'unsafe' };
+      if (!isWalkable(action.x, action.y) || furnitureAt(save, action.x, action.y)) return fail('unsafe');
       const p = save.player;
       if (p.x === action.x && p.y === action.y && p.facing === action.facing) return { changed: false, ok: true };
       Object.assign(p, { x: action.x, y: action.y, facing: FACINGS.includes(action.facing) ? action.facing : p.facing });
       return touch({ changed: true, ok: true });
     }
     case 'talk': {
+      if (!npcById(action.npcId)) return fail('unknown-npc');
+      rollDay(save, action.date);
       const rec = save.npc[action.npcId] ||= {};
-      const talkedToday = rec.lastTalkDate === action.date;
+      const talkedToday = save.daily.talked.includes(action.npcId) || rec.lastTalkDate === action.date;
+      if (talkedToday) return { changed: false, ok: true, talkedToday, friendship: rec.friendship || 0 };
       rec.lastTalkDate = action.date;
-      return touch({ changed: !talkedToday, ok: true, talkedToday });
+      rec.friendship = Math.min(MAX_FRIENDSHIP, (Number.isInteger(rec.friendship) ? rec.friendship : 0) + 1);
+      save.daily.talked.push(action.npcId);
+      return touch({ changed: true, ok: true, talkedToday: false, friendship: rec.friendship });
     }
     case 'outfit': {
-      if (!OUTFITS.some(o => o.id === action.outfit)) return { changed: false, ok: false, reason: 'unknown-outfit' };
+      if (!OUTFITS.some(o => o.id === action.outfit)) return fail('unknown-outfit');
       if (save.player.outfit === action.outfit) return { changed: false, ok: true };
       save.player.outfit = action.outfit;
       return touch({ changed: true, ok: true });
     }
+    case 'craft': {
+      const r = recipeById(action.recipeId);
+      if (!r) return fail('unknown-recipe');
+      const lack = missing(save.inventory, r);
+      if (lack.length) return { ...fail('missing'), missing: lack };
+      rollDay(save, action.date);
+      for (const [id, n] of Object.entries(r.needs)) save.inventory.materials[id] -= n;
+      const qty = addFurniture(save.inventory, r.makes, 1);
+      save.daily.crafted += 1;
+      return touch({ changed: true, ok: true, item: r.makes, qty });
+    }
+    case 'place': {
+      if (!furnitureById(action.itemId)) return fail('unknown-item');
+      if (furnitureCount(save.inventory, action.itemId) < 1) return fail('none-left');
+      const chk = canPlace(save, action.x, action.y, action.actors || []);
+      if (!chk.ok) return fail(chk.reason);
+      const uid = save.nextUid++;
+      save.placed.push({ uid, id: action.itemId, x: action.x, y: action.y });
+      addFurniture(save.inventory, action.itemId, -1);
+      return touch({ changed: true, ok: true, uid });
+    }
+    case 'pickup': {
+      const i = save.placed.findIndex(p => p.uid === action.uid);
+      if (i < 0) return fail('not-placed');
+      const [item] = save.placed.splice(i, 1);
+      addFurniture(save.inventory, item.id, 1);
+      return touch({ changed: true, ok: true, item: item.id });
+    }
+    case 'claimQuest': {
+      const q = questById(action.questId);
+      if (!q) return fail('unknown-quest');
+      rollDay(save, action.date);
+      const st = questStatus(save, q, action.date);
+      if (st.claimed) return fail('already');
+      if (!st.done) return fail('not-done');
+      for (const [id, n] of Object.entries(q.reward)) addMaterial(save.inventory, id, n);
+      save.rewardLedger[ledgerKey(q.id, action.date)] = now.toISOString();
+      return touch({ changed: true, ok: true, reward: q.reward });
+    }
     default:
-      return { changed: false, ok: false, reason: 'unknown-action' };
+      return fail('unknown-action');
   }
 }
 
 export function shellsCollectedToday(save, date) {
-  const list = (save.collected && save.collected[date]) || [];
-  return SPOTS.filter(s => s.material === 'shell' && list.includes(s.id)).length;
+  return collectedCount(save, date, 'shell');
+}
+
+export function talkedToday(save, npcId, date) {
+  return (save.npc[npcId] || {}).lastTalkDate === date;
 }

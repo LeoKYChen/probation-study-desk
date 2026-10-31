@@ -7,11 +7,17 @@ export const MATERIALS = [
 ];
 
 export const FURNITURE = [
-  { id: 'starter-stool', name: '新手木凳', icon: '🪑', note: '新手禮物，建造功能開放後可以擺在島上。' }
+  { id: 'starter-stool', name: '新手木凳', icon: '🪑', note: '新手禮物，到「建造」就能擺在島上。' },
+  { id: 'wood-chair', name: '木椅', icon: '🪑', note: '工坊製作的木椅。' },
+  { id: 'flowerbed', name: '花圃', icon: '🌷', note: '工坊製作的花圃。' },
+  { id: 'lantern', name: '小燈籠', icon: '🏮', note: '工坊製作的小燈籠。' }
 ];
 
-// 下一階段才開放的採集材料（Demo A 只有海灘貝殼）。
-export const OPEN_MATERIALS = new Set(['shell']);
+export const OPEN_MATERIALS = new Set(MATERIALS.map(m => m.id));
+
+export function furnitureById(id) {
+  return FURNITURE.find(f => f.id === id) || null;
+}
 
 export function emptyInventory() {
   return {
@@ -31,6 +37,18 @@ export function addMaterial(inv, materialId, n = 1) {
   return inv.materials[materialId];
 }
 
+export function furnitureCount(inv, id) {
+  const n = inv && inv.furniture && inv.furniture[id];
+  return Number.isInteger(n) && n > 0 ? n : 0;
+}
+
+export function addFurniture(inv, id, n = 1) {
+  if (!furnitureById(id)) throw new Error('未知家具：' + id);
+  const next = furnitureCount(inv, id) + n;
+  if (next > 0) inv.furniture[id] = next; else delete inv.furniture[id];
+  return next;
+}
+
 export function furnitureList(inv) {
-  return FURNITURE.map(f => ({ ...f, qty: (inv.furniture && inv.furniture[f.id]) || 0 })).filter(f => f.qty > 0);
+  return FURNITURE.map(f => ({ ...f, qty: furnitureCount(inv, f.id) })).filter(f => f.qty > 0);
 }

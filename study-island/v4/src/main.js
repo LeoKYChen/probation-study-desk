@@ -1,9 +1,13 @@
-// Demo A 主程式：輸入、移動、居民、採集、存檔與繪製迴圈的接線。
+// 主程式：輸入、移動、居民、採集、工坊／擺放、委託、存檔與繪製迴圈的接線。
 import { MAP_W, MAP_H, isWalkable, tileAt } from './world/map.js';
 import { findPath, pathToNeighbor, dirBetween, DIRS } from './player/pathfinding.js';
-import { NPCS, chestnutLines, wanderStep } from './npc/dialogue.js';
-import { SPOTS, availableSpots, spotAt, localDate } from './collectibles.js';
-import { OUTFITS, shellsCollectedToday } from './state.js';
+import { NPCS, linesFor, wanderStep } from './npc/dialogue.js';
+import { availableSpots, spotAt, localDate, collectedCount, spotTotal } from './collectibles.js';
+import { MATERIALS, furnitureById } from './inventory.js';
+import { recipeById } from './crafting.js';
+import { questById } from './quests.js';
+import { isOpen, furnitureAt, canPlace, PLACE_REASONS } from './world/placement.js';
+import { OUTFITS, talkedToday } from './state.js';
 import { openStore } from './persistence.js';
 import { createRenderer } from './render.js';
 import { createUI } from './ui.js';
@@ -28,12 +32,13 @@ const npcs = NPCS.map(n => mover({ ...n }, n.home.x, n.home.y, 'down'));
 const effects = [];
 const held = [];
 const pending = new Set();
-let marker = null, lastBump = 0, saveTimer = 0, talking = null, approaching = null;
+let marker = null, lastBump = 0, saveTimer = 0, talking = null, approaching = null, placing = null;
+const matOf = id => MATERIALS.find(m => m.id === id);
 
 // ── 碰撞：地形 + 居民／玩家目前與即將抵達的格子 ──
 const occupied = (o, x, y) => (o.x === x && o.y === y) || (o.to && o.to.x === x && o.to.y === y);
-const freeForPlayer = (x, y) => isWalkable(x, y) && !npcs.some(n => occupied(n, x, y));
-const freeForNpc = (x, y) => isWalkable(x, y) && !occupied(player, x, y);
+const freeForPlayer = (x, y) => isOpen(save, x, y) && !npcs.some(n => occupied(n, x, y));
+const freeForNpc = (x, y) => isOpen(save, x, y) && !occupied(player, x, y) && !npcs.some(n => occupied(n, x, y));
 const npcAt = (x, y) => npcs.find(n => occupied(n, x, y)) || null;
 const playerTile = () => (player.moving ? player.to : player);
 const adjacent = (a, b) => Math.abs(a.x - b.x) + Math.abs(a.y - b.y) === 1;
@@ -68,8 +73,8 @@ function tryStep(dir) {
   const d = DIRS[dir], nx = player.x + d.dx, ny = player.y + d.dy;
   player.facing = dir;
   if (freeForPlayer(nx, ny)) { startStep(player, { x: nx, y: ny }); return true; }
-  const n = npcAt(nx, ny);
-  blockedFeedback(nx, ny, n ? n.name + '在這裡，按 E 或「互動」可以聊天。' : obstacleMessage(nx, ny));
+  const n = npcAt(nx, ny), f = furnitureAt(save, nx, ny);
+  blockedFeedback(nx, ny, n ? n.name + '在這裡，按 E 或「互動」可以聊天。' : f ? furnitureById(f.id).name + '擋住了。' : obstacleMessage(nx, ny));
   return false;
 }
 
@@ -90,6 +95,7 @@ function onTap(tx, ty, fx = tx + .5, fy = ty + .5) {
   if (ui.dialogueOpen || ui.panel) return;
   hideHint();
   held.length = 0;
+  if (placing) return placeAt(tx, ty);
   const from = playerTile();
   approaching = null;
   const n = npcAt(tx, ty) || npcHit(fx, fy);
@@ -102,8 +108,16 @@ function onTap(tx, ty, fx = tx + .5, fy = ty + .5) {
   const spot = spotAt(tx, ty);
   if (spot && isAvailable(spot)) {
     const p = findPath(from, spot, freeForPlayer, MAP_W, MAP_H);
-    if (!p) return blockedFeedback(tx, ty, '暫時走不到那個貝殼。');
+    if (!p) return blockedFeedback(tx, ty, '暫時走不到那裡。');
     return walkTo(p, () => collect(spot));
+  }
+  const f = furnitureAt(save, tx, ty);
+  if (f) {
+    const name = furnitureById(f.id).name;
+    if (adjacent(from, f) && !player.moving) { player.facing = dirBetween(player, f) || player.facing; return ui.toast('按 E 或「收起' + name + '」可以收回背包。'); }
+    const r = pathToNeighbor(from, f, freeForPlayer, MAP_W, MAP_H);
+    if (!r) return blockedFeedback(tx, ty, '暫時走不到' + name + '旁邊。');
+    return walkTo(r.path, () => { player.facing = dirBetween(player, f) || player.facing; });
   }
   if (!isWalkable(tx, ty)) return blockedFeedback(tx, ty, obstacleMessage(tx, ty));
   const p = findPath(from, { x: tx, y: ty }, freeForPlayer, MAP_W, MAP_H);
@@ -119,7 +133,9 @@ function nearbyTarget() {
   const n = npcs.find(x => !x.moving && adjacent(player, x));
   if (n) return { kind: 'npc', npc: n, label: '和' + n.name + '說話' };
   const spot = availableSpots(save, today()).find(s => (s.x === player.x && s.y === player.y) || adjacent(player, s));
-  if (spot) return { kind: 'spot', spot, label: '撿起貝殼' };
+  if (spot) return { kind: 'spot', spot, label: '撿起' + matOf(spot.material).name };
+  const f = (save.placed || []).find(p => adjacent(player, p));
+  if (f) return { kind: 'furniture', item: f, label: '收起' + furnitureById(f.id).name };
   return null;
 }
 
@@ -128,7 +144,8 @@ function interact() {
   const t = nearbyTarget();
   if (!t) return;
   if (t.kind === 'npc') talkTo(t.npc);
-  else collect(t.spot);
+  else if (t.kind === 'spot') collect(t.spot);
+  else pickup(t.item.uid);
 }
 
 async function talkTo(n) {
@@ -137,14 +154,15 @@ async function talkTo(n) {
   player.path = []; player.onArrive = null; held.length = 0;
   player.facing = dirBetween(player, n) || player.facing;
   n.facing = dirBetween(n, player) || n.facing;
-  let talkedToday = false;
+  let already = false;
   try {
     const r = await store.mutate({ type: 'talk', npcId: n.id, date: today() });
-    save = r.save; talkedToday = r.result.talkedToday;
+    save = r.save; already = r.result.talkedToday;
   } catch { /* 對話不是獎勵，存不了也照常聊天 */ }
-  const lines = chestnutLines({ shellsToday: shellsCollectedToday(save, today()), shellsTotalToday: SPOTS.length, talkedToday });
+  const friendship = (save.npc[n.id] || {}).friendship || 0;
+  const lines = linesFor(n, { talkedToday: already, friendship, shellsToday: collectedCount(save, today(), 'shell'), shellsTotal: spotTotal('shell') });
   refresh();
-  ui.showDialogue(n, lines, () => { talking = null; canvas.focus({ preventScroll: true }); refresh(); });
+  ui.showDialogue(n, lines, () => { talking = null; canvas.focus({ preventScroll: true }); refresh(); }, friendship);
 }
 
 // 撿拾：只有 IndexedDB 交易 commit 後才算入袋；同一個採集點處理中時忽略重複點擊。
@@ -155,14 +173,15 @@ async function collect(spot) {
   try {
     const { save: next, result } = await store.mutate({ type: 'collect', spotId: spot.id, date: today() });
     save = next;
+    const m = matOf(spot.material);
     if (result.ok) {
-      effects.push({ x: spot.x, y: spot.y, text: '+1 🐚', life: 1 });
-      ui.toast('撿到貝殼！背包裡有 ' + result.total + ' 個' + (store.persistent ? '。' : '（未保存）。'));
+      effects.push({ x: spot.x, y: spot.y, text: '+1 ' + m.icon, life: 1 });
+      ui.toast('撿到' + m.name + '！背包裡有 ' + result.total + ' 個' + (store.persistent ? '。' : '（未保存）。'));
     } else if (result.reason === 'already') {
-      ui.toast('這個貝殼今天已經撿過了。');
+      ui.toast('這裡今天已經撿過了。');
     }
   } catch {
-    ui.toast('儲存失敗：貝殼沒有放進背包，請再試一次。', 3500);
+    ui.toast('儲存失敗：材料沒有放進背包，請再試一次。', 3500);
     ui.banner('剛才的儲存失敗了，小島進度可能沒有保存。');
   } finally {
     pending.delete(spot.id);
@@ -194,13 +213,84 @@ async function setOutfit(id) {
   refresh();
 }
 
+// ── 工坊、擺放、收回、委託：一律經過單次交易；處理中的同一個動作忽略重複點擊 ──
+async function act(key, action, onOk, failMsg) {
+  if (pending.has(key)) return null;
+  pending.add(key);
+  try {
+    const { save: next, result } = await store.mutate(action);
+    save = next;
+    if (result.ok) onOk(result); else if (failMsg) ui.toast(failMsg(result));
+    return result;
+  } catch {
+    ui.toast('儲存失敗，這次的變更沒有保存，請再試一次。', 3500);
+    ui.banner('剛才的儲存失敗了，小島進度可能沒有保存。');
+    return null;
+  } finally {
+    pending.delete(key);
+    refresh();
+  }
+}
+
+const unsaved = () => (store.persistent ? '' : '（未保存）');
+
+function craft(recipeId) {
+  const r = recipeById(recipeId);
+  if (!r) return;
+  const name = furnitureById(r.makes).name;
+  return act('craft:' + recipeId, { type: 'craft', recipeId, date: today() },
+    () => ui.toast('做好了一個' + name + '！已放進背包' + unsaved() + '。'),
+    res => (res.reason === 'missing' ? '材料不夠：' + res.missing.map(m => matOf(m.id).name + '還差 ' + (m.need - m.have)).join('、') : '現在不能製作。'));
+}
+
+function pickup(uid) {
+  uid = Number(uid);
+  return act('pickup:' + uid, { type: 'pickup', uid },
+    res => ui.toast(furnitureById(res.item).name + '收回背包了' + unsaved() + '。'),
+    () => '這件家具已經收起來了。');
+}
+
+function claim(questId) {
+  const q = questById(questId);
+  if (!q) return;
+  return act('claim:' + questId, { type: 'claimQuest', questId, date: today() },
+    res => ui.toast('領到委託獎勵：' + Object.entries(res.reward).map(([id, n]) => matOf(id).icon + '×' + n).join(' ') + unsaved()),
+    res => (res.reason === 'already' ? '這個委託今天已經領過了。' : '委託還沒完成。'));
+}
+
+const actors = () => [playerTile(), ...npcs.flatMap(n => [{ x: n.x, y: n.y }, ...(n.to ? [n.to] : [])])];
+
+function startPlacing(itemId) {
+  const f = furnitureById(itemId);
+  if (!f) return;
+  ui.closePanel(false);
+  placing = { itemId, hints: [] };
+  for (let y = 0; y < MAP_H; y++) for (let x = 0; x < MAP_W; x++) if (canPlace(save, x, y, actors()).ok) placing.hints.push({ x, y });
+  ui.placeBar('點一塊有白點的空地擺放' + f.name);
+  refresh();
+}
+
+function stopPlacing() {
+  placing = null;
+  ui.placeBar('');
+  refresh();
+}
+
+async function placeAt(x, y) {
+  const { itemId } = placing;
+  const chk = canPlace(save, x, y, actors());
+  if (!chk.ok) return blockedFeedback(x, y, PLACE_REASONS[chk.reason]);
+  const res = await act('place', { type: 'place', itemId, x, y, actors: actors() },
+    () => { effects.push({ x, y, text: '✨', life: 1 }); ui.toast(furnitureById(itemId).name + '擺好了' + unsaved() + '！靠近按 E 可以收回。'); },
+    r => PLACE_REASONS[r.reason] || '這裡不能擺。');
+  if (res && res.ok) stopPlacing();
+}
+
 // ── 畫面更新 ──
 function panelCtx() {
-  const npcRec = save.npc.chestnut || {};
   return {
-    save, persistent: store.persistent, onOutfit: setOutfit,
-    shellsToday: shellsCollectedToday(save, today()), shellsTotal: SPOTS.length,
-    talkedToday: npcRec.lastTalkDate === today()
+    save, date: today(), persistent: store.persistent,
+    handlers: { outfit: setOutfit, craft, place: startPlacing, pickup, claim }
   };
 }
 
@@ -209,9 +299,9 @@ function refresh() {
   if (ui.panel) ui.renderPanel(panelCtx());
   const t = nearbyTarget();
   const btn = document.getElementById('interact');
-  btn.hidden = !t;
+  btn.hidden = !t || !!placing;
   if (t) btn.textContent = t.label + '（E）';
-  document.getElementById('dpad').hidden = !dpadOn || ui.dialogueOpen || !!ui.panel;
+  document.getElementById('dpad').hidden = !dpadOn || ui.dialogueOpen || !!ui.panel || !!placing;
   poke();
 }
 
@@ -269,7 +359,7 @@ function continuePlayer() {
 let lastTargetKey = '';
 function refreshIfChanged() {
   const t = nearbyTarget();
-  const k = t ? t.kind + (t.npc ? t.npc.id : t.spot.id) : '';
+  const k = t ? t.kind + (t.npc ? t.npc.id : t.spot ? t.spot.id : t.item.uid) : '';
   if (k !== lastTargetKey) { lastTargetKey = k; refresh(); }
 }
 
@@ -280,8 +370,9 @@ function frame(now) {
   update(dt);
   const still = reduceMotion.matches;
   renderer.draw({
-    player, npcs: npcs.map(n => ({ ...n, quest: (save.npc[n.id] || {}).lastTalkDate !== today() })),
-    spots: availableSpots(save, today()), effects, marker, time: now, still,
+    player, npcs: npcs.map(n => ({ ...n, quest: !talkedToday(save, n.id, today()) })),
+    spots: availableSpots(save, today()), placed: save.placed, placeHints: placing && placing.hints,
+    effects, marker, time: now, still,
     outfit: OUTFITS.find(o => o.id === save.player.outfit) || OUTFITS[0]
   });
   if (document.hidden) return;
@@ -327,12 +418,12 @@ function releaseDir(dir) {
 addEventListener('keydown', e => {
   if (e.metaKey || e.ctrlKey || e.altKey) return;
   if (e.code === 'Escape') {
-    if (ui.dialogueOpen) ui.closeDialogue(); else if (ui.panel) ui.closePanel();
+    if (ui.dialogueOpen) ui.closeDialogue(); else if (ui.panel) ui.closePanel(); else if (placing) stopPlacing();
     return refresh();
   }
   const onButton = e.target instanceof HTMLElement && e.target.closest('button,a');
   if (KEYS[e.code]) { if (!ui.panel) { e.preventDefault(); if (!e.repeat) pressDir(KEYS[e.code]); } return; }
-  if (e.code === 'KeyE' || ((e.code === 'Enter' || e.code === 'Space') && !onButton)) { e.preventDefault(); interact(); return refresh(); }
+  if (e.code === 'KeyE' || ((e.code === 'Enter' || e.code === 'Space') && !onButton)) { e.preventDefault(); if (!placing) interact(); return refresh(); }
   if (PANELS[e.code] && !ui.dialogueOpen) { togglePanel(PANELS[e.code]); }
 });
 addEventListener('keyup', e => { if (KEYS[e.code]) releaseDir(KEYS[e.code]); });
@@ -348,7 +439,10 @@ canvas.addEventListener('pointerdown', e => {
 
 document.getElementById('interact').addEventListener('click', () => { interact(); refresh(); });
 
+document.getElementById('placeCancel').addEventListener('click', stopPlacing);
+
 function togglePanel(name) {
+  if (placing) stopPlacing();
   if (ui.panel === name) ui.closePanel();
   else { held.length = 0; player.path = []; player.onArrive = null; ui.openPanel(name, panelCtx()); }
   refresh();
@@ -401,4 +495,4 @@ setInterval(() => ui.hud(save), 60000);
 refresh();
 
 // 給自動化測試讀取目前狀態（不影響遊戲）。
-globalThis.__island = { get player() { return { x: player.x, y: player.y, moving: player.moving }; }, get save() { return save; }, npcs, renderer, persistent: store.persistent };
+globalThis.__island = { get player() { return { x: player.x, y: player.y, moving: player.moving }; }, get save() { return save; }, get placing() { return placing; }, npcs, renderer, persistent: store.persistent };

@@ -1,9 +1,17 @@
 // DOM 介面：HUD、提示、對話框、背包／任務／建造抽屜。遊戲世界本身畫在 canvas，不在這裡。
-import { MATERIALS, OPEN_MATERIALS, count, furnitureList } from './inventory.js';
+import { MATERIALS, count, furnitureList, furnitureById } from './inventory.js';
+import { RECIPES, missing } from './crafting.js';
+import { QUESTS, questStatus } from './quests.js';
+import { NPCS, npcById, friendshipLabel } from './npc/dialogue.js';
+import { collectedCount, spotTotal } from './collectibles.js';
 import { OUTFITS } from './state.js';
+import { drawPortrait } from './render.js';
 
 const $ = id => document.getElementById(id);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+const matName = id => (MATERIALS.find(m => m.id === id) || { name: id }).name;
+const matIcon = id => (MATERIALS.find(m => m.id === id) || { icon: '' }).icon;
+const rewardText = r => Object.entries(r).map(([id, n]) => matIcon(id) + matName(id) + '×' + n).join('、');
 
 export function seasonLabel(d = new Date()) {
   const m = d.getMonth() + 1, h = d.getHours();
@@ -12,8 +20,10 @@ export function seasonLabel(d = new Date()) {
   return icon + ' ' + season + '日';
 }
 
+const hearts = n => '♥'.repeat(Math.min(5, Math.ceil(n / 2))) + '♡'.repeat(5 - Math.min(5, Math.ceil(n / 2)));
+
 export function createUI() {
-  let toastTimer = 0, dlg = null, panel = null, panelOpener = null;
+  let toastTimer = 0, dlg = null, panel = null, panelOpener = null, handlers = {};
 
   function toast(msg, ms = 2200) {
     const el = $('toast');
@@ -36,11 +46,12 @@ export function createUI() {
   }
 
   // 對話：一次顯示一行，按「繼續」或 E／Enter 前進，最後一行後關閉。
-  function showDialogue(npc, lines, onClose) {
+  function showDialogue(npc, lines, onClose, friendship = 0) {
     dlg = { lines, i: 0, onClose };
     $('dlgName').textContent = npc.name;
-    $('dlgSubject').textContent = '・' + npc.subject;
+    $('dlgSubject').innerHTML = '・' + esc(npc.subject) + ' <span class="hearts" title="親密度：' + friendshipLabel(friendship) + '">' + hearts(friendship) + '</span>';
     $('dialogue').hidden = false;
+    drawPortrait($('portrait'), npc);
     renderLine();
     $('dlgNext').focus({ preventScroll: true });
   }
@@ -70,52 +81,90 @@ export function createUI() {
     $('drawer').hidden = false;
     $('drawerClose').focus({ preventScroll: true });
   }
-  function closePanel() {
+  function closePanel(restoreFocus = true) {
     if (!panel) return;
     panel = null;
     $('drawer').hidden = true;
     document.querySelectorAll('.dock [data-panel]').forEach(b => b.setAttribute('aria-expanded', 'false'));
-    if (panelOpener) panelOpener.focus({ preventScroll: true });
+    if (restoreFocus && panelOpener) panelOpener.focus({ preventScroll: true });
   }
-  $('drawerClose').addEventListener('click', closePanel);
+  $('drawerClose').addEventListener('click', () => closePanel());
 
-  function renderPanel({ save, shellsToday, shellsTotal, talkedToday, persistent, onOutfit }) {
+  // 抽屜內的按鈕以事件委派處理，重新繪製內容不需要重綁。
+  $('drawerBody').addEventListener('click', e => {
+    const b = e.target.closest('button[data-act]');
+    if (!b || b.disabled) return;
+    const fn = handlers[b.dataset.act];
+    if (fn) fn(b.dataset.id);
+  });
+
+  function row(ic, title, sub, right = '') {
+    return '<div class="row"><span class="ic">' + ic + '</span><p><b>' + title + '</b><small>' + sub + '</small></p>' + right + '</div>';
+  }
+
+  function renderPanel(ctx) {
+    const { save, date, persistent } = ctx;
+    handlers = ctx.handlers || {};
     const body = $('drawerBody');
     if (panel === 'bag') {
       $('drawerTitle').textContent = '🎒 背包';
-      const mats = MATERIALS.map(m => {
-        const open = OPEN_MATERIALS.has(m.id);
-        return '<div class="slot' + (open ? '' : ' locked') + '"><span class="ic">' + m.icon + '</span><b>' + esc(m.name) + ' ×' + count(save.inventory, m.id) + '</b><small>' +
-          (open ? '在' + esc(m.where) + '撿' : '之後開放') + '</small></div>';
+      const mats = MATERIALS.map(m => '<div class="slot"><span class="ic">' + m.icon + '</span><b>' + esc(m.name) + ' ×' + count(save.inventory, m.id) + '</b><small>在' + esc(m.where) + '撿</small></div>').join('');
+      const furn = furnitureList(save.inventory).map(f => row(f.icon, esc(f.name) + ' ×' + f.qty, esc(f.note))).join('') ||
+        '<p class="note">背包裡沒有家具。到「建造」的工坊可以製作。</p>';
+      const friends = NPCS.map(n => {
+        const fr = (save.npc[n.id] || {}).friendship || 0;
+        return row('🐾', esc(n.name) + ' <span class="hearts">' + hearts(fr) + '</span>', esc(n.subject) + '・' + friendshipLabel(fr));
       }).join('');
-      const furn = furnitureList(save.inventory).map(f =>
-        '<div class="row"><span class="ic">' + f.icon + '</span><p><b>' + esc(f.name) + ' ×' + f.qty + '</b><small>' + esc(f.note) + '</small></p></div>').join('') ||
-        '<p class="note">目前沒有家具。</p>';
       const outfits = OUTFITS.map(o =>
-        '<button type="button" class="outfit" data-outfit="' + o.id + '" aria-pressed="' + (save.player.outfit === o.id) + '"><i style="background:' + o.shirt + '"></i>' + esc(o.name) + '</button>').join('');
+        '<button type="button" class="outfit" data-act="outfit" data-id="' + o.id + '" aria-pressed="' + (save.player.outfit === o.id) + '"><i style="background:' + o.shirt + '"></i>' + esc(o.name) + '</button>').join('');
       body.innerHTML = '<h3>材料</h3><div class="grid">' + mats + '</div><h3>家具</h3>' + furn +
+        '<h3>居民親密度</h3>' + friends +
         '<h3>衣服顏色</h3><div class="outfits">' + outfits + '</div>' +
         '<p class="note">' + (persistent ? '背包存在這台裝置的瀏覽器（IndexedDB），重新整理不會消失；不同網址、裝置或瀏覽器不會互通。'
           : '⚠ 這個瀏覽器目前無法儲存，背包只存在本頁，關閉或重新整理就會消失。') + '</p>';
-      body.querySelectorAll('[data-outfit]').forEach(b => b.addEventListener('click', () => onOutfit(b.dataset.outfit)));
     } else if (panel === 'tasks') {
       $('drawerTitle').textContent = '📒 今日委託';
-      const row = (ic, title, sub, done) => '<div class="row"><span class="ic">' + ic + '</span><p><b>' + title + '</b><small>' + sub + '</small></p>' +
-        (done ? '<span class="done">完成 ✓</span>' : '') + '</div>';
-      body.innerHTML =
-        row('🐚', '在沙灘撿貝殼 ' + shellsToday + '／' + shellsTotal, '貝殼每天依這台裝置的日期重新出現。', shellsToday >= shellsTotal) +
-        row('🦊', '和栗子打招呼', '栗子在廣場東邊散步。', talkedToday) +
-        '<p class="note">這是可玩 Demo A：只有遊戲內委託。專注、申論、訂正等學習任務會在之後的階段加入，而且一律標示「自行回報」；不讀書也能在島上玩。</p>' +
+      const quests = QUESTS.map(q => {
+        const st = questStatus(save, q, date), giver = npcById(q.giver);
+        const right = st.claimed ? '<span class="done">已領取 ✓</span>'
+          : '<button type="button" class="btn small" data-act="claim" data-id="' + q.id + '"' + (st.done ? '' : ' disabled') + '>' + (st.done ? '領取' : st.progress + '／' + q.target) + '</button>';
+        return row(q.icon, esc(q.title), esc(giver.name) + '的委託・獎勵 ' + rewardText(q.reward), right);
+      }).join('');
+      const gather = MATERIALS.map(m => matIcon(m.id) + ' ' + collectedCount(save, date, m.id) + '／' + spotTotal(m.id)).join('　');
+      body.innerHTML = quests +
+        '<h3>今天採集</h3><p class="note" style="margin-top:0">' + gather + '（每天依這台裝置的日期重新出現）</p>' +
+        '<p class="note">每項委託每天只能領一次。專注、申論、訂正等學習任務會在之後的階段加入，一律標示「自行回報」；不讀書也能在島上玩。</p>' +
         '<p class="note"><a href="../../">回觀護人學習平臺</a></p>';
     } else if (panel === 'build') {
-      $('drawerTitle').textContent = '🔨 建造';
-      body.innerHTML = '<p>工坊製作與家具擺放會在下一階段（B：經營循環）開放。</p>' +
-        furnitureList(save.inventory).map(f => '<div class="row"><span class="ic">' + f.icon + '</span><p><b>' + esc(f.name) + ' ×' + f.qty + '</b><small>已在背包裡等你擺放。</small></p></div>').join('');
+      $('drawerTitle').textContent = '🔨 工坊與擺放';
+      const recipes = RECIPES.map(r => {
+        const f = furnitureById(r.makes), lack = missing(save.inventory, r);
+        const need = Object.entries(r.needs).map(([id, n]) => {
+          const have = count(save.inventory, id);
+          return '<span class="' + (have < n ? 'lack' : '') + '">' + matIcon(id) + matName(id) + ' ' + have + '/' + n + '</span>';
+        }).join('');
+        return '<div class="row recipe"><span class="ic">' + f.icon + '</span><p><b>' + esc(f.name) + '</b><span class="need">' + need + '</span></p>' +
+          '<button type="button" class="btn small" data-act="craft" data-id="' + r.id + '"' + (lack.length ? ' disabled aria-label="' + esc(f.name) + '：材料不足"' : '') + '>製作</button></div>';
+      }).join('');
+      const inBag = furnitureList(save.inventory).map(f => row(f.icon, esc(f.name) + ' ×' + f.qty, '點「擺放」後選一塊空地',
+        '<button type="button" class="btn small" data-act="place" data-id="' + f.id + '">擺放</button>')).join('') ||
+        '<p class="note">背包裡沒有家具。</p>';
+      const placed = (save.placed || []).map(p => {
+        const f = furnitureById(p.id);
+        return row(f.icon, esc(f.name), '位置 (' + p.x + ', ' + p.y + ')', '<button type="button" class="btn small secondary" data-act="pickup" data-id="' + p.uid + '">收回</button>');
+      }).join('') || '<p class="note">島上還沒有擺任何家具。</p>';
+      body.innerHTML = '<h3>工坊</h3>' + recipes + '<h3>背包裡的家具</h3>' + inBag + '<h3>島上的家具</h3>' + placed +
+        '<p class="note">家具不能擋住小路、採集點或居民，也不能把路堵死；靠近家具按 E 也可以收回。</p>';
     }
   }
 
+  function placeBar(text) {
+    $('placeBar').hidden = !text;
+    $('placeText').textContent = text || '';
+  }
+
   return {
-    toast, banner, hud,
+    toast, banner, hud, placeBar,
     showDialogue, advanceDialogue, closeDialogue,
     openPanel, closePanel, renderPanel,
     get dialogueOpen() { return !!dlg; },
