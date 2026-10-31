@@ -10,13 +10,17 @@ const GREEN = new Set(['grass', 'forest', 'path', 'plaza', 'flower', 'house', 't
 const WOODS = new Set(['forest', 'tree']);
 const PAVED = new Set(['path', 'plaza']);
 
-function blobs(g, ts, test, r, color) {
+// 以圓形聯集畫出柔和邊緣；在相鄰格子之間補圓，讓海岸與林緣更平滑，不出現一顆顆的圓弧。
+function blobs(g, ts, test, r, color, dy = 0) {
   g.fillStyle = color;
   g.beginPath();
+  const dot = (cx, cy) => { g.moveTo((cx + r) * ts, (cy + dy) * ts); g.arc(cx * ts, (cy + dy) * ts, r * ts, 0, Math.PI * 2); };
   for (let y = 0; y < MAP_H; y++) for (let x = 0; x < MAP_W; x++) {
     if (!test(tileAt(x, y).id)) continue;
-    g.moveTo((x + .5 + r) * ts, (y + .5) * ts);
-    g.arc((x + .5) * ts, (y + .5) * ts, r * ts, 0, Math.PI * 2);
+    dot(x + .5, y + .5);
+    if (test(tileAt(x + 1, y).id)) dot(x + 1, y + .5);
+    if (test(tileAt(x, y + 1).id)) dot(x + .5, y + 1);
+    if (test(tileAt(x + 1, y + 1).id) && test(tileAt(x + 1, y).id) && test(tileAt(x, y + 1).id)) dot(x + 1, y + 1);
   }
   g.fill();
 }
@@ -26,61 +30,104 @@ function drawTerrain(ts) {
   const cv = document.createElement('canvas');
   cv.width = MAP_W * ts; cv.height = MAP_H * ts;
   const g = cv.getContext('2d');
-  g.fillStyle = C.water; g.fillRect(0, 0, cv.width, cv.height);
-  // 深水色帶，讓外海與近岸有層次。
-  g.fillStyle = C.waterDeep;
-  g.fillRect(0, 0, cv.width, ts * .45); g.fillRect(0, cv.height - ts * .45, cv.width, ts * .45);
-  g.fillRect(0, 0, ts * .45, cv.height); g.fillRect(cv.width - ts * .45, 0, ts * .45, cv.height);
-  blobs(g, ts, id => LAND.has(id), .9, C.foam);
-  blobs(g, ts, id => LAND.has(id), .76, C.sand);
-  blobs(g, ts, id => GREEN.has(id), .72, C.grass);
-  blobs(g, ts, id => WOODS.has(id), .7, C.forest);
-  // 小路：圓點加上與相鄰鋪面的連接帶，邊緣柔和、不呈方格。
-  g.fillStyle = C.path;
+  // 海／雲海：中間淺、外圍深的漸層。
+  const grad = g.createRadialGradient(cv.width / 2, cv.height / 2, ts * 3, cv.width / 2, cv.height / 2, Math.max(cv.width, cv.height) * .62);
+  grad.addColorStop(0, C.water); grad.addColorStop(1, C.waterDeep);
+  g.fillStyle = grad; g.fillRect(0, 0, cv.width, cv.height);
+  // 淺灘、浪花、濕沙、沙灘。
+  blobs(g, ts, id => LAND.has(id), 1.25, C.shallow);
+  blobs(g, ts, id => LAND.has(id), .92, C.foam);
+  blobs(g, ts, id => LAND.has(id), .82, C.wetSand);
+  blobs(g, ts, id => LAND.has(id), .74, C.sand);
+  // 草地像微微隆起的台地：先畫下緣陰影，再畫草面。
+  blobs(g, ts, id => GREEN.has(id), .7, C.grassEdge, .09);
+  blobs(g, ts, id => GREEN.has(id), .7, C.grass);
+  // 草地斑駁的光影，讓大片綠色不單調。
   for (let y = 0; y < MAP_H; y++) for (let x = 0; x < MAP_W; x++) {
-    if (!PAVED.has(tileAt(x, y).id)) continue;
-    g.beginPath(); g.arc((x + .5) * ts, (y + .5) * ts, ts * .42, 0, Math.PI * 2); g.fill();
-    if (PAVED.has(tileAt(x + 1, y).id)) g.fillRect((x + .5) * ts, (y + .08) * ts, ts, ts * .84);
-    if (PAVED.has(tileAt(x, y + 1).id)) g.fillRect((x + .08) * ts, (y + .5) * ts, ts * .84, ts);
-    // 2×2 鋪面相接處補滿，避免轉角露出草地小點。
-    if (PAVED.has(tileAt(x + 1, y).id) && PAVED.has(tileAt(x, y + 1).id) && PAVED.has(tileAt(x + 1, y + 1).id)) g.fillRect((x + .5) * ts, (y + .5) * ts, ts, ts);
+    if (!GREEN.has(tileAt(x, y).id)) continue;
+    const h = hash2(x, y, 31);
+    if (h > .7) continue;
+    g.fillStyle = h < .35 ? C.grassLight : C.grassShade;
+    g.beginPath(); g.ellipse((x + .2 + hash2(x, y, 32) * .6) * ts, (y + .2 + hash2(x, y, 33) * .6) * ts, ts * (.55 + h * .3), ts * (.32 + h * .2), h * 3, 0, Math.PI * 2); g.fill();
   }
+  blobs(g, ts, id => WOODS.has(id), .68, C.forest);
+  // 小路：先畫稍寬的邊，再畫路面，連接處補滿。
+  for (const [color, wide] of [[C.pathEdge, .05], [C.path, 0]]) {
+    g.fillStyle = color;
+    for (let y = 0; y < MAP_H; y++) for (let x = 0; x < MAP_W; x++) {
+      if (!PAVED.has(tileAt(x, y).id)) continue;
+      g.beginPath(); g.arc((x + .5) * ts, (y + .5) * ts, ts * (.42 + wide), 0, Math.PI * 2); g.fill();
+      if (PAVED.has(tileAt(x + 1, y).id)) g.fillRect((x + .5) * ts, (y + .08 - wide) * ts, ts, ts * (.84 + wide * 2));
+      if (PAVED.has(tileAt(x, y + 1).id)) g.fillRect((x + .08 - wide) * ts, (y + .5) * ts, ts * (.84 + wide * 2), ts);
+      if (PAVED.has(tileAt(x + 1, y).id) && PAVED.has(tileAt(x, y + 1).id) && PAVED.has(tileAt(x + 1, y + 1).id)) g.fillRect((x + .5) * ts, (y + .5) * ts, ts, ts);
+    }
+  }
+  // 小路上的小石子。
+  for (const p of tilesOf('path')) {
+    g.fillStyle = C.pathEdge;
+    for (let i = 0; i < 3; i++) {
+      g.beginPath(); g.ellipse((p.x + .2 + hash2(p.x, p.y, 40 + i) * .6) * ts, (p.y + .2 + hash2(p.x, p.y, 50 + i) * .6) * ts, ts * .035, ts * .025, 0, 0, Math.PI * 2); g.fill();
+    }
+  }
+  // 廣場／演武坪：石板拼貼、外框與中央圓紋。
   const plaza = tilesOf('plaza');
   if (plaza.length) {
     const x0 = Math.min(...plaza.map(p => p.x)), y0 = Math.min(...plaza.map(p => p.y));
     const x1 = Math.max(...plaza.map(p => p.x)) + 1, y1 = Math.max(...plaza.map(p => p.y)) + 1;
-    g.fillStyle = C.plaza;
-    roundRect(g, x0 * ts, y0 * ts, (x1 - x0) * ts, (y1 - y0) * ts, ts * .45); g.fill();
-    g.strokeStyle = C.plazaLine; g.lineWidth = Math.max(1, ts * .03);
-    g.beginPath(); g.arc((x0 + x1) / 2 * ts, (y0 + y1) / 2 * ts, ts * .9, 0, Math.PI * 2); g.stroke();
-    g.beginPath(); g.arc((x0 + x1) / 2 * ts, (y0 + y1) / 2 * ts, ts * .35, 0, Math.PI * 2); g.stroke();
+    const px0 = x0 * ts + ts * .08, py0 = y0 * ts + ts * .08, pw = (x1 - x0) * ts - ts * .16, ph = (y1 - y0) * ts - ts * .16;
+    g.fillStyle = C.plazaEdge; roundRect(g, px0 - ts * .06, py0 - ts * .02, pw + ts * .12, ph + ts * .14, ts * .4); g.fill();
+    g.save(); roundRect(g, px0, py0, pw, ph, ts * .34); g.clip();
+    g.fillStyle = C.plazaLine; g.fillRect(px0, py0, pw, ph);
+    const slab = ts * .5;
+    for (let r = 0; r * slab < ph; r++) for (let c = -1; c * slab < pw; c++) {
+      g.fillStyle = C.stone[Math.floor(hash2(c, r, 61) * C.stone.length)];
+      const ox = r % 2 ? slab / 2 : 0;
+      roundRect(g, px0 + c * slab + ox + ts * .02, py0 + r * slab + ts * .02, slab - ts * .04, slab - ts * .04, ts * .05); g.fill();
+    }
+    g.restore();
+    const cx = (x0 + x1) / 2 * ts, cy = (y0 + y1) / 2 * ts;
+    g.fillStyle = C.plaza; g.beginPath(); g.arc(cx, cy, ts * .95, 0, Math.PI * 2); g.fill();
+    g.strokeStyle = C.plazaEdge; g.lineWidth = Math.max(1, ts * .035);
+    g.beginPath(); g.arc(cx, cy, ts * .95, 0, Math.PI * 2); g.stroke();
+    g.beginPath(); g.arc(cx, cy, ts * .6, 0, Math.PI * 2); g.stroke();
+    // 中央圓紋：島嶼是八方位星形，修仙是八道放射紋。
+    g.beginPath();
+    for (let i = 0; i < 8; i++) {
+      const a = i * Math.PI / 4, r1 = xian ? ts * .6 : (i % 2 ? ts * .3 : ts * .55), r2 = xian ? ts * .95 : ts * .12;
+      g.moveTo(cx + Math.cos(a) * r2, cy + Math.sin(a) * r2); g.lineTo(cx + Math.cos(a) * r1, cy + Math.sin(a) * r1);
+    }
+    g.stroke();
+    g.fillStyle = C.plazaEdge; g.beginPath(); g.arc(cx, cy, ts * .1, 0, Math.PI * 2); g.fill();
   }
-  // 細節：草叢、花、沙粒、浪花。位置由座標雜湊決定，每次載入都一樣。
+  // 細節：草叢、花、沙粒、浪花或雲。位置由座標雜湊決定，每次載入都一樣。
   for (let y = 0; y < MAP_H; y++) for (let x = 0; x < MAP_W; x++) {
     const id = tileAt(x, y).id, h = hash2(x, y);
     const px = (x + .2 + hash2(x, y, 1) * .6) * ts, py = (y + .25 + hash2(x, y, 2) * .5) * ts;
-    if ((id === 'grass' || id === 'forest') && h < .55) {
-      g.strokeStyle = id === 'forest' ? C.forestTuft : C.grassDark; g.lineWidth = Math.max(1, ts * .045); g.lineCap = 'round';
+    if ((id === 'grass' || id === 'forest') && h < .6) {
+      g.strokeStyle = id === 'forest' ? C.forestTuft : C.grassDark; g.lineWidth = Math.max(1, ts * .04); g.lineCap = 'round';
       g.beginPath();
-      g.moveTo(px - ts * .08, py); g.lineTo(px - ts * .12, py - ts * .12);
+      g.moveTo(px - ts * .07, py); g.quadraticCurveTo(px - ts * .1, py - ts * .06, px - ts * .13, py - ts * .12);
       g.moveTo(px, py); g.lineTo(px, py - ts * .16);
-      g.moveTo(px + ts * .08, py); g.lineTo(px + ts * .12, py - ts * .12);
+      g.moveTo(px + ts * .07, py); g.quadraticCurveTo(px + ts * .1, py - ts * .06, px + ts * .13, py - ts * .12);
       g.stroke();
     } else if (id === 'flower') {
-      const cols = ['#f6a5b4', '#ffe28a', '#ffffff', '#c7a6f0'];
-      for (let i = 0; i < 6; i++) {
+      const cols = xian ? ['#f4c6d2', '#fff4c7', '#ffffff', '#cfe3f5'] : ['#f6a5b4', '#ffe28a', '#ffffff', '#c7a6f0'];
+      for (let i = 0; i < 7; i++) {
         const fx = (x + .15 + hash2(x, y, 10 + i) * .7) * ts, fy = (y + .15 + hash2(x, y, 20 + i) * .7) * ts;
-        g.fillStyle = cols[i % cols.length]; g.beginPath(); g.arc(fx, fy, ts * .07, 0, Math.PI * 2); g.fill();
+        g.fillStyle = C.flowerLeaf; g.beginPath(); g.ellipse(fx + ts * .05, fy + ts * .05, ts * .05, ts * .025, .6, 0, Math.PI * 2); g.fill();
+        g.fillStyle = cols[i % cols.length];
+        for (let k = 0; k < 5; k++) { const a = k * Math.PI * 2 / 5; g.beginPath(); g.arc(fx + Math.cos(a) * ts * .04, fy + Math.sin(a) * ts * .04, ts * .035, 0, Math.PI * 2); g.fill(); }
         g.fillStyle = '#f2b33d'; g.beginPath(); g.arc(fx, fy, ts * .025, 0, Math.PI * 2); g.fill();
       }
     } else if (id === 'sand' && h < .6) {
       g.fillStyle = C.sandDot;
       g.beginPath(); g.arc(px, py, ts * .03, 0, Math.PI * 2); g.arc(px + ts * .2, py + ts * .1, ts * .02, 0, Math.PI * 2); g.fill();
-    } else if (id === 'water' && h < .18 && xian) {
+    } else if (id === 'water' && h < .2 && xian) {
       drawCloud(g, px, py, ts);
-    } else if (id === 'water' && h < .18) {
-      g.strokeStyle = C.wave; g.lineWidth = Math.max(1, ts * .04); g.lineCap = 'round';
+    } else if (id === 'water' && h < .2) {
+      g.strokeStyle = C.wave; g.lineWidth = Math.max(1, ts * .035); g.lineCap = 'round';
       g.beginPath(); g.arc(px, py + ts * .1, ts * .14, Math.PI * 1.15, Math.PI * 1.85); g.stroke();
+      g.beginPath(); g.arc(px + ts * .22, py + ts * .16, ts * .09, Math.PI * 1.2, Math.PI * 1.8); g.stroke();
     }
   }
   return cv;
@@ -92,43 +139,81 @@ function roundRect(g, x, y, w, h, r) {
   g.arcTo(x, y + h, x, y, r); g.arcTo(x, y, x + w, y, r); g.closePath();
 }
 
+// 柔和的橢圓陰影（中心深、邊緣淡）。
 function shadow(g, x, y, w) {
-  g.fillStyle = 'rgba(40,70,50,.18)';
-  g.beginPath(); g.ellipse(x, y, w, w * .38, 0, 0, Math.PI * 2); g.fill();
+  g.save(); g.translate(x, y); g.scale(1, .38);
+  const rg = g.createRadialGradient(0, 0, 0, 0, 0, w);
+  rg.addColorStop(0, 'rgba(30,60,45,.28)'); rg.addColorStop(1, 'rgba(30,60,45,0)');
+  g.fillStyle = rg; g.beginPath(); g.arc(0, 0, w, 0, Math.PI * 2); g.fill();
+  g.restore();
 }
 
 function drawTree(g, x, y, ts) {
   const cx = (x + .5) * ts, by = (y + .9) * ts, v = hash2(x, y, 5);
-  shadow(g, cx, by, ts * .42);
-  g.fillStyle = '#8a6142'; roundRect(g, cx - ts * .09, by - ts * .55, ts * .18, ts * .55, ts * .05); g.fill();
-  const greens = v < .5 ? ['#4f9a5d', '#61ad6a', '#78c07c'] : ['#5a9f58', '#6db766', '#86c97b'];
-  const top = by - ts * (.95 + v * .2);
-  [[0, .15, .44], [-.2, -.05, .32], [.2, -.05, .32], [0, -.25, .3]].forEach(([dx, dy, r], i) => {
-    g.fillStyle = greens[Math.min(i, 2)];
-    g.beginPath(); g.arc(cx + dx * ts, top + dy * ts, r * ts, 0, Math.PI * 2); g.fill();
-  });
-  g.fillStyle = 'rgba(255,255,255,.18)'; g.beginPath(); g.arc(cx - ts * .12, top - ts * .22, ts * .1, 0, Math.PI * 2); g.fill();
+  shadow(g, cx + ts * .08, by, ts * .5);
+  // 樹幹：亮面與暗面。
+  g.fillStyle = '#7b543a'; roundRect(g, cx - ts * .09, by - ts * .58, ts * .18, ts * .58, ts * .05); g.fill();
+  g.fillStyle = '#9a6d4b'; roundRect(g, cx - ts * .09, by - ts * .58, ts * .08, ts * .58, ts * .04); g.fill();
+  g.fillStyle = '#6a4630'; g.beginPath(); g.ellipse(cx, by - ts * .02, ts * .14, ts * .04, 0, 0, Math.PI * 2); g.fill();
+  const greens = v < .5 ? ['#3f8550', '#559f62', '#73bb76', '#9bd394'] : ['#4a8a48', '#62a95c', '#7fc073', '#a6d896'];
+  const top = by - ts * (.98 + v * .2);
+  const puffs = [[0, .18, .46], [-.24, -.02, .33], [.24, -.02, .33], [-.1, -.26, .3], [.12, -.24, .3]];
+  // 由暗到亮疊三層，下方偏暗、左上偏亮，做出立體樹冠。
+  puffs.forEach(([dx, dy, r]) => { g.fillStyle = greens[0]; g.beginPath(); g.arc(cx + dx * ts, top + (dy + .04) * ts, r * ts, 0, Math.PI * 2); g.fill(); });
+  puffs.forEach(([dx, dy, r]) => { g.fillStyle = greens[1]; g.beginPath(); g.arc(cx + (dx - .02) * ts, top + (dy - .02) * ts, r * .9 * ts, 0, Math.PI * 2); g.fill(); });
+  puffs.forEach(([dx, dy, r]) => { g.fillStyle = greens[2]; g.beginPath(); g.arc(cx + (dx - .06) * ts, top + (dy - .07) * ts, r * .55 * ts, 0, Math.PI * 2); g.fill(); });
+  g.fillStyle = greens[3]; g.beginPath(); g.arc(cx - ts * .16, top - ts * .3, ts * .08, 0, Math.PI * 2); g.fill();
+  // 秋天的樹偶爾有紅果。
+  if (v > .6) {
+    g.fillStyle = '#e46a5b';
+    for (const [dx, dy] of [[.18, .08], [-.2, .12], [.02, -.12]]) { g.beginPath(); g.arc(cx + dx * ts, top + dy * ts, ts * .035, 0, Math.PI * 2); g.fill(); }
+  }
 }
 
 function drawRock(g, x, y, ts) {
   const cx = (x + .5) * ts, by = (y + .8) * ts;
-  shadow(g, cx, by, ts * .38);
-  g.fillStyle = '#a8aca2'; g.beginPath(); g.ellipse(cx, by - ts * .2, ts * .36, ts * .26, 0, 0, Math.PI * 2); g.fill();
-  g.fillStyle = '#c4c8bd'; g.beginPath(); g.ellipse(cx - ts * .08, by - ts * .28, ts * .16, ts * .1, -.3, 0, Math.PI * 2); g.fill();
+  shadow(g, cx, by, ts * .44);
+  g.fillStyle = '#8f9488'; g.beginPath(); g.ellipse(cx, by - ts * .18, ts * .36, ts * .26, 0, 0, Math.PI * 2); g.fill();
+  g.fillStyle = '#aab0a3'; g.beginPath(); g.ellipse(cx - ts * .03, by - ts * .23, ts * .3, ts * .2, 0, 0, Math.PI * 2); g.fill();
+  g.fillStyle = '#c9cec0'; g.beginPath(); g.ellipse(cx - ts * .1, by - ts * .3, ts * .13, ts * .07, -.3, 0, Math.PI * 2); g.fill();
+  g.fillStyle = '#86b46f'; g.beginPath(); g.ellipse(cx + ts * .14, by - ts * .38, ts * .1, ts * .04, .3, 0, Math.PI * 2); g.fill();
 }
 
 function drawHouse(g, ts) {
   const x = HOUSE.x * ts, y = HOUSE.y * ts, w = HOUSE.w * ts, h = HOUSE.h * ts;
-  shadow(g, x + w / 2, y + h - ts * .05, w * .55);
-  g.fillStyle = '#f5ead2'; roundRect(g, x + ts * .15, y + ts * .55, w - ts * .3, h - ts * .6, ts * .12); g.fill();
-  g.fillStyle = '#c86b55';
-  g.beginPath(); g.moveTo(x - ts * .05, y + ts * .75); g.lineTo(x + w / 2, y - ts * .35); g.lineTo(x + w + ts * .05, y + ts * .75); g.closePath(); g.fill();
-  g.fillStyle = '#a95543'; g.fillRect(x + w * .68, y - ts * .15, ts * .28, ts * .5);
-  g.fillStyle = '#8a5a3c'; roundRect(g, x + w / 2 - ts * .24, y + h - ts * .78, ts * .48, ts * .74, ts * .2); g.fill();
-  g.fillStyle = '#f2c94c'; g.beginPath(); g.arc(x + w / 2 + ts * .12, y + h - ts * .4, ts * .04, 0, Math.PI * 2); g.fill();
-  g.fillStyle = '#9fd3e6';
-  roundRect(g, x + ts * .45, y + ts * .95, ts * .42, ts * .38, ts * .06); g.fill();
-  roundRect(g, x + w - ts * .87, y + ts * .95, ts * .42, ts * .38, ts * .06); g.fill();
+  shadow(g, x + w / 2 + ts * .1, y + h - ts * .02, w * .62);
+  // 牆面與木樑
+  g.fillStyle = '#f6ecd6'; roundRect(g, x + ts * .15, y + ts * .55, w - ts * .3, h - ts * .6, ts * .1); g.fill();
+  g.fillStyle = '#eadcbc'; g.fillRect(x + ts * .15, y + h - ts * .2, w - ts * .3, ts * .12);
+  g.fillStyle = '#b98a5e';
+  g.fillRect(x + ts * .15, y + ts * .62, w - ts * .3, ts * .06);
+  g.fillRect(x + ts * .2, y + ts * .62, ts * .06, h - ts * .7); g.fillRect(x + w - ts * .26, y + ts * .62, ts * .06, h - ts * .7);
+  // 煙囪
+  g.fillStyle = '#9c5a49'; g.fillRect(x + w * .7, y - ts * .2, ts * .26, ts * .5);
+  g.fillStyle = '#7f4639'; g.fillRect(x + w * .7 - ts * .03, y - ts * .24, ts * .32, ts * .08);
+  // 屋頂：底色、瓦片橫紋、屋脊亮面
+  g.fillStyle = '#c4614c';
+  g.beginPath(); g.moveTo(x - ts * .1, y + ts * .78); g.lineTo(x + w / 2, y - ts * .38); g.lineTo(x + w + ts * .1, y + ts * .78); g.closePath(); g.fill();
+  g.save(); g.clip();
+  g.strokeStyle = 'rgba(120,40,30,.35)'; g.lineWidth = Math.max(1, ts * .03);
+  for (let k = 0; k < 6; k++) { const yy = y - ts * .2 + k * ts * .18; g.beginPath(); g.moveTo(x - ts * .2, yy); g.lineTo(x + w + ts * .2, yy); g.stroke(); }
+  g.fillStyle = 'rgba(255,220,200,.25)'; g.beginPath(); g.moveTo(x + w / 2, y - ts * .38); g.lineTo(x - ts * .1, y + ts * .78); g.lineTo(x + ts * .4, y + ts * .78); g.closePath(); g.fill();
+  g.restore();
+  g.fillStyle = '#a84f3e'; g.fillRect(x - ts * .12, y + ts * .74, w + ts * .24, ts * .07);
+  // 門、台階、門燈
+  g.fillStyle = '#d9c39b'; roundRect(g, x + w / 2 - ts * .34, y + h - ts * .1, ts * .68, ts * .1, ts * .03); g.fill();
+  g.fillStyle = '#7d5236'; roundRect(g, x + w / 2 - ts * .24, y + h - ts * .8, ts * .48, ts * .72, ts * .2); g.fill();
+  g.fillStyle = '#946444'; roundRect(g, x + w / 2 - ts * .18, y + h - ts * .72, ts * .36, ts * .26, ts * .14); g.fill();
+  g.fillStyle = '#f2c94c'; g.beginPath(); g.arc(x + w / 2 + ts * .12, y + h - ts * .42, ts * .035, 0, Math.PI * 2); g.fill();
+  // 窗戶與花台
+  for (const wx of [x + ts * .42, x + w - ts * .86]) {
+    g.fillStyle = '#ffffff'; roundRect(g, wx - ts * .03, y + ts * .9, ts * .5, ts * .44, ts * .07); g.fill();
+    g.fillStyle = '#a9dcea'; roundRect(g, wx, y + ts * .93, ts * .44, ts * .38, ts * .05); g.fill();
+    g.fillStyle = 'rgba(255,255,255,.6)'; g.fillRect(wx + ts * .05, y + ts * .96, ts * .08, ts * .3);
+    g.fillStyle = '#ffffff'; g.fillRect(wx + ts * .2, y + ts * .93, ts * .03, ts * .38); g.fillRect(wx, y + ts * 1.1, ts * .44, ts * .03);
+    g.fillStyle = '#8a5a3c'; g.fillRect(wx - ts * .04, y + ts * 1.33, ts * .52, ts * .07);
+    for (let k = 0; k < 4; k++) { g.fillStyle = ['#f28b9b', '#ffd36b', '#f6a5b4', '#ffffff'][k]; g.beginPath(); g.arc(wx + ts * (.05 + k * .11), y + ts * 1.32, ts * .045, 0, Math.PI * 2); g.fill(); }
+  }
 }
 
 function sparkle(g, x, y, ts, t, still, seed) {
@@ -296,10 +381,11 @@ const SPECIES = {
 function drawNpc(g, n, ts, t, still) {
   const cx = (n.rx + .5) * ts, by = (n.ry + .88) * ts;
   const bob = still || !n.moving ? 0 : Math.abs(Math.sin(t / 110)) * ts * .04;
-  shadow(g, cx, by, ts * .3);
+  shadow(g, cx, by, ts * .34);
+  const sp = outlined('npc|' + n.id + '|' + n.facing, ts, spriteDpr, c =>
+    (theme().id === 'xianxia' ? drawRobed(c, n.robe, n.facing, ts) : SPECIES[n.species](c, n, ts)));
+  g.drawImage(sp.cv, cx - sp.ox, by - bob - sp.oy, sp.W, sp.H);
   g.save(); g.translate(cx, by - bob);
-  if (theme().id === 'xianxia') drawRobed(g, n.robe, n.facing, ts);
-  else SPECIES[n.species](g, n, ts);
   if (n.quest) {
     const qy = -ts * 1.18 - (still ? 0 : Math.sin(t / 250) * ts * .04);
     g.fillStyle = '#fffaf0'; g.strokeStyle = '#e0a43a'; g.lineWidth = Math.max(1.5, ts * .04);
@@ -323,37 +409,70 @@ export function drawPortrait(cv, npc) {
   else SPECIES[npc.species](g, { ...npc, facing: 'down' }, ts);
 }
 
-function drawPlayer(g, p, ts, t, still, outfit) {
-  const cx = (p.rx + .5) * ts, by = (p.ry + .9) * ts;
-  const step = still || !p.moving ? 0 : Math.sin(t / 90);
-  shadow(g, cx, by, ts * .26);
-  g.save(); g.translate(cx, by - Math.abs(step) * ts * .035);
-  if (theme().id === 'xianxia') { drawRobed(g, playerLook(outfit), p.facing, ts, step); g.restore(); return; }
+// 島嶼主題的主角（原點在腳下中央）。
+function playerBody(g, facing, ts, step, outfit) {
   // 腳
   g.fillStyle = '#5a4636';
   g.beginPath(); g.ellipse(-ts * .08, -ts * .03 + step * ts * .02, ts * .06, ts * .04, 0, 0, Math.PI * 2); g.fill();
   g.beginPath(); g.ellipse(ts * .08, -ts * .03 - step * ts * .02, ts * .06, ts * .04, 0, 0, Math.PI * 2); g.fill();
   // 身體
+  g.fillStyle = outfit.trim;
+  g.beginPath(); g.ellipse(-ts * .17, -ts * .22 - step * ts * .02, ts * .05, ts * .09, .2, 0, Math.PI * 2); g.ellipse(ts * .17, -ts * .22 + step * ts * .02, ts * .05, ts * .09, -.2, 0, Math.PI * 2); g.fill();
   g.fillStyle = outfit.shirt; roundRect(g, -ts * .16, -ts * .38, ts * .32, ts * .34, ts * .1); g.fill();
+  g.fillStyle = 'rgba(255,255,255,.18)'; roundRect(g, -ts * .12, -ts * .36, ts * .1, ts * .2, ts * .05); g.fill();
   g.fillStyle = outfit.trim; g.fillRect(-ts * .16, -ts * .12, ts * .32, ts * .05);
   // 頭與頭髮
   g.fillStyle = '#f4d5b8'; g.beginPath(); g.arc(0, -ts * .58, ts * .22, 0, Math.PI * 2); g.fill();
   g.fillStyle = '#5b3f2e';
-  if (p.facing === 'up') {
+  if (facing === 'up') {
     g.beginPath(); g.arc(0, -ts * .6, ts * .225, 0, Math.PI * 2); g.fill();
   } else {
     g.beginPath(); g.arc(0, -ts * .64, ts * .225, Math.PI * 1.02, Math.PI * 1.98); g.fill();
-    const ox = p.facing === 'left' ? -ts * .06 : p.facing === 'right' ? ts * .06 : 0;
+    const ox = facing === 'left' ? -ts * .06 : facing === 'right' ? ts * .06 : 0;
     g.fillStyle = '#3a2a22';
-    if (p.facing === 'down') {
+    if (facing === 'down') {
       g.beginPath(); g.arc(-ts * .08, -ts * .55, ts * .028, 0, Math.PI * 2); g.arc(ts * .08, -ts * .55, ts * .028, 0, Math.PI * 2); g.fill();
       g.fillStyle = 'rgba(240,140,130,.5)';
       g.beginPath(); g.arc(-ts * .13, -ts * .49, ts * .035, 0, Math.PI * 2); g.arc(ts * .13, -ts * .49, ts * .035, 0, Math.PI * 2); g.fill();
     } else {
-      g.beginPath(); g.arc(ox + (p.facing === 'left' ? -ts * .04 : ts * .04), -ts * .55, ts * .028, 0, Math.PI * 2); g.fill();
+      g.beginPath(); g.arc(ox + (facing === 'left' ? -ts * .04 : ts * .04), -ts * .55, ts * .028, 0, Math.PI * 2); g.fill();
     }
   }
-  g.restore();
+}
+
+// 角色描邊：把角色畫到離屏 canvas，向八方偏移後填成描邊色，再疊上原圖。依「主題、角色、方向、步伐」快取，不會每幀重算。
+const sprites = new Map();
+let spriteScale = { ts: 0, dpr: 0 };
+function outlined(key, ts, dpr, drawFn) {
+  if (spriteScale.ts !== ts || spriteScale.dpr !== dpr) { sprites.clear(); spriteScale = { ts, dpr }; }
+  const full = theme().id + '|' + key;
+  let sp = sprites.get(full);
+  if (sp) return sp;
+  const W = ts * 1.4, H = ts * 1.5, ox = W / 2, oy = H - ts * .12;
+  const make = () => { const c = document.createElement('canvas'); c.width = Math.ceil(W * dpr); c.height = Math.ceil(H * dpr); return c; };
+  const base = make(), bg = base.getContext('2d');
+  bg.scale(dpr, dpr); bg.translate(ox, oy); drawFn(bg);
+  const out = make(), og = out.getContext('2d');
+  const d = Math.max(1, ts * .03) * dpr;
+  for (let k = 0; k < 8; k++) og.drawImage(base, Math.round(Math.cos(k * Math.PI / 4) * d), Math.round(Math.sin(k * Math.PI / 4) * d));
+  og.globalCompositeOperation = 'source-in';
+  og.fillStyle = pal().outline; og.fillRect(0, 0, out.width, out.height);
+  og.globalCompositeOperation = 'source-over';
+  og.drawImage(base, 0, 0);
+  sp = { cv: out, W, H, ox, oy };
+  sprites.set(full, sp);
+  return sp;
+}
+let spriteDpr = 1;
+
+function drawPlayer(g, p, ts, t, still, outfit) {
+  const cx = (p.rx + .5) * ts, by = (p.ry + .9) * ts;
+  const step = still || !p.moving ? 0 : Math.sin(t / 90);
+  const q = Math.round(step);
+  shadow(g, cx, by, ts * .3);
+  const sp = outlined('player|' + outfit.id + '|' + p.facing + '|' + q, ts, spriteDpr, c =>
+    (theme().id === 'xianxia' ? drawRobed(c, playerLook(outfit), p.facing, ts, q) : playerBody(c, p.facing, ts, q, outfit)));
+  g.drawImage(sp.cv, cx - sp.ox, by - Math.abs(step) * ts * .035 - sp.oy, sp.W, sp.H);
 }
 
 export function createRenderer(canvas) {
@@ -363,6 +482,7 @@ export function createRenderer(canvas) {
 
   function resize(w, h) {
     dpr = Math.min(globalThis.devicePixelRatio || 1, 2);
+    spriteDpr = dpr;
     vw = w; vh = h;
     canvas.width = Math.round(w * dpr); canvas.height = Math.round(h * dpr);
     const next = Math.round(Math.max(36, Math.min(64, Math.min(w, h) / 8.5)));
@@ -427,6 +547,25 @@ export function createRenderer(canvas) {
       g.strokeText(fx.text, (fx.x + .5) * ts, fy); g.fillText(fx.text, (fx.x + .5) * ts, fy);
       g.globalAlpha = 1;
     }
+    atmosphere();
+  }
+
+  // 依裝置時間的淡淡色調（清晨、傍晚、夜晚）與畫面四角的柔和暗角；只是氛圍，不影響可讀性。
+  let vignette = null, vignetteSize = '';
+  function atmosphere() {
+    g.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const h = new Date().getHours(), xian = theme().id === 'xianxia';
+    const tint = h >= 5 && h < 7 ? 'rgba(255,190,170,.08)'
+      : h >= 17 && h < 19 ? 'rgba(255,170,90,.1)'
+        : h >= 19 || h < 5 ? (xian ? 'rgba(40,50,110,.18)' : 'rgba(30,45,100,.18)') : null;
+    if (tint) { g.fillStyle = tint; g.fillRect(0, 0, vw, vh); }
+    const key = vw + 'x' + vh;
+    if (vignetteSize !== key) {
+      vignette = g.createRadialGradient(vw / 2, vh / 2, Math.min(vw, vh) * .45, vw / 2, vh / 2, Math.hypot(vw, vh) * .6);
+      vignette.addColorStop(0, 'rgba(20,40,40,0)'); vignette.addColorStop(1, 'rgba(20,40,40,.16)');
+      vignetteSize = key;
+    }
+    g.fillStyle = vignette; g.fillRect(0, 0, vw, vh);
   }
 
   function tileToScreen(x, y, p) {

@@ -42,7 +42,10 @@ const ISLAND = {
   palette: {
     water: '#7ec8d8', waterDeep: '#6bb8cc', foam: '#dff4f1', sand: '#f2e2b3', sandDot: '#e2cd93',
     grass: '#a9d78c', grassDark: '#93c779', forest: '#8bc17a', forestTuft: '#6fa862',
-    path: '#e6d3a3', plaza: '#ecdcb2', plazaLine: '#d9c48f', wave: 'rgba(255,255,255,.55)', themeColor: '#7ec8d8'
+    path: '#e6d3a3', plaza: '#ecdcb2', plazaLine: '#d9c48f', wave: 'rgba(255,255,255,.55)', themeColor: '#7ec8d8',
+    shallow: 'rgba(170,228,232,.75)', wetSand: '#e3cd96', grassEdge: '#7fae62', grassLight: 'rgba(214,240,170,.16)',
+    grassShade: 'rgba(80,140,70,.06)', pathEdge: '#d4bd86', stone: ['#efe2bf', '#e8d9b2', '#f2e7c9'], plazaEdge: '#cdb57e',
+    flowerLeaf: '#6fa85a', outline: 'rgba(52,62,48,.55)'
   }
 };
 
@@ -97,9 +100,12 @@ const XIANXIA = {
     inky: { hint: () => '丹房在下面。器物擺錯了也能收回來重放——訂正也是這樣。', rest: '寫錯的地方，才是功法真正要你看的地方。' }
   },
   palette: {
-    water: '#dfe9f1', waterDeep: '#cddcea', foam: '#ffffff', sand: '#e4eedb', sandDot: '#c9dcc4',
+    water: '#d9e6f0', waterDeep: '#c3d5e6', foam: '#ffffff', sand: '#d5e7cf', sandDot: '#b4d0b4',
     grass: '#b9dba9', grassDark: '#9cc98d', forest: '#9cc792', forestTuft: '#7fb174',
-    path: '#d9d3c4', plaza: '#e1dbcc', plazaLine: '#c6bda8', wave: 'rgba(255,255,255,.95)', themeColor: '#cddcea'
+    path: '#d9d3c4', plaza: '#e1dbcc', plazaLine: '#c6bda8', wave: 'rgba(255,255,255,.95)', themeColor: '#cddcea',
+    shallow: 'rgba(255,255,255,.7)', wetSand: '#b9d5bf', grassEdge: '#8fb487', grassLight: 'rgba(230,245,215,.16)',
+    grassShade: 'rgba(70,120,90,.06)', pathEdge: '#bfb6a3', stone: ['#e3ddcf', '#d9d2c2', '#e8e3d7'], plazaEdge: '#b3a993',
+    flowerLeaf: '#6fa07a', outline: 'rgba(48,56,66,.5)'
   }
 };
 
