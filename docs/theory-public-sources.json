@@ -602,6 +602,11 @@
    "ref": "Substance Abuse and Mental Health Services Administration. (2005). Substance abuse treatment: Group therapy (Treatment Improvement Protocol [TIP] Series 41; DHHS Publication No. [SMA] 05-3991). Rockville, MD: Author.",
    "url": "https://files.eric.ed.gov/fulltext/ED491570.pdf",
    "kind": "official"
+  },
+  "moore87": {
+   "ref": "Moore, S. D., & Slife, B. D. (1987). The self-awareness process in the effective psychotherapist. Paper presented at the 33rd Annual Convention of the Southwestern Psychological Association, New Orleans (ERIC ED286098).",
+   "url": "https://files.eric.ed.gov/fulltext/ED286098.pdf",
+   "kind": "review"
   }
  },
  "questions": [
@@ -1244,6 +1249,27 @@
       "Socratic dialogue",
       "paradoxical intention",
       "attitude"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "111-諮商與輔導-4",
+   "title": "諮商員自我覺察的影響與改善",
+   "coverage": "partial",
+   "note": "二手整理（研討會論文）：涵蓋反移情在治療者缺乏覺察時會嚴重破壞治療關係、覺察可作為了解個案的資訊、Rogers 所說真誠（genuineness）需要自我覺察，以及督導中促進治療者自我覺察；沒有個人諮商、同儕諮詢、反思紀錄與自我照顧（避免耗竭）的說明",
+   "sources": [
+    {
+     "doc": "moore87",
+     "ref": "Moore, S. D., & Slife, B. D. (1987). The self-awareness process in the effective psychotherapist. Paper presented at the 33rd Annual Convention of the Southwestern Psychological Association, New Orleans (ERIC ED286098).",
+     "url": "https://files.eric.ed.gov/fulltext/ED286098.pdf",
+     "kind": "review",
+     "matchedTerms": [
+      "countertransference",
+      "critically destructive to the therapeutic relationship",
+      "self-awareness",
+      "genuine",
+      "supervisor"
      ]
     }
    ]
@@ -4465,7 +4491,6 @@
   "108-諮商與輔導-3",
   "111-諮商與輔導-2",
   "111-諮商與輔導-3",
-  "111-諮商與輔導-4",
   "112-諮商與輔導-1",
   "113-諮商與輔導-1",
   "113-諮商與輔導-2",

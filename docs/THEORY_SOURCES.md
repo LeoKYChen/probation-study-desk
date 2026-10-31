@@ -328,7 +328,7 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 3. 法規題以全國法規資料庫 2026-10-16 版的條文核對（法務部網站本身連不上），連結指向全國法規資料庫的條文頁。
 4. 只涵蓋部分得分點的標為「部分」，並寫出缺少的內容。
 
-**結果**：218 題中有 170 題找到公開原文（完整涵蓋 36 題、部分涵蓋 134 題），其餘 48 題沒有找到（列在本節最後）。共用到 115 份文件：原作者或原始研究 29 份、政府或國際組織文件 11 份、二手整理 64 份、法規條文 11 筆。
+**結果**：218 題中有 171 題找到公開原文（完整涵蓋 36 題、部分涵蓋 135 題），其餘 47 題沒有找到（列在本節最後）。共用到 116 份文件：原作者或原始研究 29 份、政府或國際組織文件 11 份、二手整理 65 份、法規條文 11 筆。
 
 使用注意：
 - 「原作者或原始研究」是題目引用的學者本人的文件（例如 Felson & Clarke、Bonta & Andrews、Hanson、Farrell & Pease、Moffitt、Bucklen），可直接當出處。
@@ -428,6 +428,7 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | 二手整理（政府委託報告或期刊回顧） | Mazzarello, P. (2011). Cesare Lombroso: An anthropologist between evolution and degeneration. Functional Neurology, 26(2), 97–101. | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC3814446/) |
 | 二手整理（政府委託報告或期刊回顧） | Models of self and others and their relation to positive and negative caregiving responses. Psychology and Aging, 27(1), 211–218 (2012). | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC3192310/) |
 | 二手整理（政府委託報告或期刊回顧） | Mohammadi, M. M., Poursaberi, R., et al. (2018). The effect of stress inoculation training on breastfeeding self-efficacy and perceived stress of mothers with low birth weight infants: A clinical trial. Journal of Family & Reproductive Health, 12(3), 160–168. | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC6571443/) |
+| 二手整理（政府委託報告或期刊回顧） | Moore, S. D., & Slife, B. D. (1987). The self-awareness process in the effective psychotherapist. Paper presented at the 33rd Annual Convention of the Southwestern Psychological Association, New Orleans (ERIC ED286098). | [連結](https://files.eric.ed.gov/fulltext/ED286098.pdf) |
 | 二手整理（政府委託報告或期刊回顧） | Morgan, R. D., Fisher, W. H., et al. (2010). Prevalence of criminal thinking among state prison inmates with serious mental illness. Law and Human Behavior, 34(4), 324–336.（PMC 作者稿；以 Walters 的 PICTS 測量） | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC2987583/) |
 | 二手整理（政府委託報告或期刊回顧） | Okocha, A. A. (2001). Facilitating career development through Super's life career rainbow. Paper presented at the 27th Annual Conference of the National Consultation on Career Development, Ottawa (ERIC ED462641). | [連結](https://files.eric.ed.gov/fulltext/ED462641.pdf) |
 | 二手整理（政府委託報告或期刊回顧） | Okulicz-Kozaryn, K., et al. (2010). Gender and family differences in adolescent's heavy alcohol use: The power-control theory perspective. Health Education Research, 25(5), 780–791. | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC2936555/) |
@@ -497,6 +498,7 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | 110-諮商與輔導-2｜多元文化能力四要素與家暴受害女性的應用 | [Trevino, A. Y., Tao, K. W., et al. (2021)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8376752/) | 部分：只涵蓋 Sue et al. (1992) 的覺察、知識、技巧與案主世界觀，沒有倡議與家暴受害女性的應用 |
 | 110-諮商與輔導-3｜校園性別事件行為人心理輔導的倫理與法律議題 | [性別平等教育法第 25 條](https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=H0080067&flno=25) | 部分：只涵蓋性別平等教育法第 25 條，沒有倫理議題 |
 | 111-諮商與輔導-1｜以意義治療設計高風險家庭孩子的個別輔導計畫 | [Chanouha, N., Chassevent, A., et al. (2026)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12771065/) | 部分：涵蓋意義治療的基本信念、去反省、蘇格拉底式對話與態度，沒有高風險家庭孩子的輔導計畫 |
+| 111-諮商與輔導-4｜諮商員自我覺察的影響與改善 | [Moore, S. D., & Slife, B. D. (1987)](https://files.eric.ed.gov/fulltext/ED286098.pdf) | 部分：二手整理（研討會論文）：涵蓋反移情在治療者缺乏覺察時會嚴重破壞治療關係、覺察可作為了解個案的資訊、Rogers 所說真誠（genuineness）需要自我覺察，以及督導中促進治療者自我覺察；沒有個人諮商、同儕諮詢、反思紀錄與自我照顧（避免耗竭）的說明 |
 | 112-諮商與輔導-2｜性平三法與國小時遭導師性騷擾事件的處置 | [性別平等教育法第 25 條](https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=H0080067&flno=25)<br>[Dawson, S., Bierce, A., et al. (2021)](https://pmc.ncbi.nlm.nih.gov/articles/PMC7896604/) | 部分：涵蓋性別平等教育法第 25 條的諮商輔導與轉介，以及創傷知情原則，沒有性平三法的完整比較 |
 | 112-諮商與輔導-4｜Corey 團體歷程階段與霸凌防治團體計畫 | [SAMHSA (2005)](https://files.eric.ed.gov/fulltext/ED491570.pdf) | 部分：涵蓋初期（介紹、團體協議、建立安全環境與正向規範）、中期（實際工作）與結束期（有意的、正向的結束）三階段；沒有把「轉換階段」（處理焦慮、抗拒、衝突）獨立成一個階段，也沒有六次霸凌防治團體的設計 |
 | 113-諮商與輔導-3｜以敘事治療處理非自願個案 | [Aqtam, I., Shouli, M., et al. (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12720377/) | 部分：只涵蓋敘事治療的外化、特殊意義事件與重寫故事，沒有非自願個案 |
@@ -639,11 +641,11 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | 監所管理員-115-犯罪學概要-2｜問題行為症候群 | [Darvishi, M., et al. (2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8836126/) | 部分：涵蓋 Jessor 問題行為理論與風險、保護因子，預防策略較少 |
 | 監所管理員-115-犯罪學概要-3｜大規模殺人與連續殺人 | [Holmes, R. M., & Holmes, S. T. (1992)](https://www.ojp.gov/pdffiles1/Digitization/136809NCJRS.pdf) | 部分：涵蓋大規模殺人「同一時間與地點」的定義、與連續殺人的差異，並點出連續殺人的四種動機類型名稱（visionary、mission、hedonistic、power/control）；沒有連續殺人「冷卻期」的定義，也沒有各類型的說明，題目的「幻想型」應對應原文的 visionary 型 |
 
-### 沒有找到公開原文的題目（48 題）
+### 沒有找到公開原文的題目（47 題）
 
 這些題目在可連線的公開網站中找不到能下載全文、且內容足以對應得分點的文件，主要是：心理測驗的計算與常模（教科書內容）、諮商技術與團體歷程（Corey、Egan、Hill、Rogers 等專書）、古典學派與部分副文化理論（Beccaria、Bentham、Cloward & Ohlin、Miller、Sellin、Colvin）、臺灣倫理守則與方案，以及部分要以講義為準的題目。
 
-112-犯罪學-1、113-犯罪學-2、112-心理學-4、108-諮商與輔導-3、111-諮商與輔導-2、111-諮商與輔導-3、111-諮商與輔導-4、112-諮商與輔導-1、113-諮商與輔導-1、113-諮商與輔導-2、115-諮商與輔導-4、監獄官-109-犯罪學與再犯預測-3、監獄官-110-諮商與矯正輔導-1、監獄官-111-諮商與矯正輔導-3、監獄官-114-諮商與矯正輔導-3、監獄官-115-諮商與矯正輔導-3、薦任升等（矯正）-112-心理測驗-1、薦任升等（矯正）-112-心理測驗-2、薦任升等（矯正）-110-犯罪學-3、薦任升等（矯正）-110-諮商與輔導-3、薦任升等（矯正）-110-諮商與輔導-4、薦任升等（矯正）-112-諮商與輔導-4、police-114-psychology-3、police-115-psychology-3、police-108-criminology_prevention-4、police-110-criminology_prevention-2、police-111-criminology_prevention-3、police-112-criminology_prevention-3、police-113-criminology_prevention-1、police-113-criminology_prevention-2、police-114-criminology_prevention-1、police-108-counseling-3、police-108-counseling-4、police-110-counseling-1、police-110-counseling-3、police-112-counseling-3、police-113-counseling-1、police-113-counseling-3、police-113-counseling-4、police-115-counseling-2、police-115-counseling-3、police-115-counseling-4、113-家事調查官-心理測驗員-心理學-3、監所管理員-109-犯罪學概要-3、監所管理員-110-犯罪學概要-2、監所管理員-111-犯罪學概要-1、監所管理員-112-犯罪學概要-1、監所管理員-113-犯罪學概要-2
+112-犯罪學-1、113-犯罪學-2、112-心理學-4、108-諮商與輔導-3、111-諮商與輔導-2、111-諮商與輔導-3、112-諮商與輔導-1、113-諮商與輔導-1、113-諮商與輔導-2、115-諮商與輔導-4、監獄官-109-犯罪學與再犯預測-3、監獄官-110-諮商與矯正輔導-1、監獄官-111-諮商與矯正輔導-3、監獄官-114-諮商與矯正輔導-3、監獄官-115-諮商與矯正輔導-3、薦任升等（矯正）-112-心理測驗-1、薦任升等（矯正）-112-心理測驗-2、薦任升等（矯正）-110-犯罪學-3、薦任升等（矯正）-110-諮商與輔導-3、薦任升等（矯正）-110-諮商與輔導-4、薦任升等（矯正）-112-諮商與輔導-4、police-114-psychology-3、police-115-psychology-3、police-108-criminology_prevention-4、police-110-criminology_prevention-2、police-111-criminology_prevention-3、police-112-criminology_prevention-3、police-113-criminology_prevention-1、police-113-criminology_prevention-2、police-114-criminology_prevention-1、police-108-counseling-3、police-108-counseling-4、police-110-counseling-1、police-110-counseling-3、police-112-counseling-3、police-113-counseling-1、police-113-counseling-3、police-113-counseling-4、police-115-counseling-2、police-115-counseling-3、police-115-counseling-4、113-家事調查官-心理測驗員-心理學-3、監所管理員-109-犯罪學概要-3、監所管理員-110-犯罪學概要-2、監所管理員-111-犯罪學概要-1、監所管理員-112-犯罪學概要-1、監所管理員-113-犯罪學概要-2
 
 ## 完整書目
 
