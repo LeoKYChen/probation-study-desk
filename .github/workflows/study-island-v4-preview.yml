@@ -19,8 +19,9 @@ on:
 permissions:
   contents: read
 
+# push（會部署）與 pull_request（只測試）分開排隊，避免同一次推送的兩個執行互相取消。
 concurrency:
-  group: study-island-v4-preview
+  group: study-island-v4-preview-${{ github.event_name }}
   cancel-in-progress: true
 
 jobs:
