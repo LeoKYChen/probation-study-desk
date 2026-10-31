@@ -6,6 +6,7 @@ import { NPCS, npcById, friendshipLabel } from './npc/dialogue.js';
 import { collectedCount, spotTotal } from './collectibles.js';
 import { OUTFITS } from './state.js';
 import { drawPortrait } from './render.js';
+import { FOCUS_OPTIONS, STUDY_TASKS, focusRemaining, focusDoneToday, studyDoneToday, formatMs } from './learning.js';
 
 const $ = id => document.getElementById(id);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
@@ -23,7 +24,7 @@ export function seasonLabel(d = new Date()) {
 const hearts = n => '♥'.repeat(Math.min(5, Math.ceil(n / 2))) + '♡'.repeat(5 - Math.min(5, Math.ceil(n / 2)));
 
 export function createUI() {
-  let toastTimer = 0, dlg = null, panel = null, panelOpener = null, handlers = {};
+  let toastTimer = 0, dlg = null, panel = null, panelOpener = null, handlers = {}, lastCtx = null, confirming = null;
 
   function toast(msg, ms = 2200) {
     const el = $('toast');
@@ -43,6 +44,18 @@ export function createUI() {
     $('islandName').textContent = save.islandName;
     $('shellCount').textContent = count(save.inventory, 'shell');
     $('clock').textContent = seasonLabel();
+    focusTick(save);
+  }
+
+  // 專注倒數：HUD 小標籤與任務抽屜內的計時文字，每秒更新而不重繪整個抽屜。
+  function focusTick(save) {
+    const left = focusRemaining(save);
+    const chip = $('focusChip');
+    chip.hidden = left === null;
+    document.querySelector('.hud').classList.toggle('focusing', left !== null);
+    if (left !== null) chip.lastElementChild.textContent = formatMs(left);
+    const t = document.getElementById('focusTimer');
+    if (t && left !== null) t.textContent = formatMs(left);
   }
 
   // 對話：一次顯示一行，按「繼續」或 E／Enter 前進，最後一行後關閉。
@@ -84,6 +97,7 @@ export function createUI() {
   function closePanel(restoreFocus = true) {
     if (!panel) return;
     panel = null;
+    confirming = null;
     $('drawer').hidden = true;
     document.querySelectorAll('.dock [data-panel]').forEach(b => b.setAttribute('aria-expanded', 'false'));
     if (restoreFocus && panelOpener) panelOpener.focus({ preventScroll: true });
@@ -94,6 +108,10 @@ export function createUI() {
   $('drawerBody').addEventListener('click', e => {
     const b = e.target.closest('button[data-act]');
     if (!b || b.disabled) return;
+    // 自行回報需要第二次確認，避免誤觸就領獎。
+    if (b.dataset.act === 'study') { confirming = b.dataset.id; renderPanel(lastCtx); return; }
+    if (b.dataset.act === 'studyCancel') { confirming = null; renderPanel(lastCtx); return; }
+    if (b.dataset.act === 'studyConfirm') confirming = null;
     const fn = handlers[b.dataset.act];
     if (fn) fn(b.dataset.id);
   });
@@ -104,6 +122,7 @@ export function createUI() {
 
   function renderPanel(ctx) {
     const { save, date, persistent } = ctx;
+    lastCtx = ctx;
     handlers = ctx.handlers || {};
     const body = $('drawerBody');
     if (panel === 'bag') {
@@ -130,10 +149,32 @@ export function createUI() {
           : '<button type="button" class="btn small" data-act="claim" data-id="' + q.id + '"' + (st.done ? '' : ' disabled') + '>' + (st.done ? '領取' : st.progress + '／' + q.target) + '</button>';
         return row(q.icon, esc(q.title), esc(giver.name) + '的委託・獎勵 ' + rewardText(q.reward), right);
       }).join('');
+      const left = focusRemaining(save);
+      const focus = left !== null
+        ? '<div class="focus-run"><p class="timer" id="focusTimer">' + formatMs(left) + '</p><p class="note" style="margin:0">專注 ' + save.focus.minutes +
+          ' 分鐘進行中。可以離開去讀書，時間依裝置時鐘計算，重新整理也會接續。</p>' +
+          '<button type="button" class="btn small secondary" data-act="focusCancel">取消（不給獎勵）</button></div>'
+        : FOCUS_OPTIONS.map(o => {
+          const n = focusDoneToday(save, o.minutes, date), capped = n >= o.dailyCap;
+          return row('⏱', '專注 ' + o.minutes + ' 分鐘', (capped ? '今天的獎勵已達上限（' + o.dailyCap + ' 次），仍可專注' : '今天 ' + n + '／' + o.dailyCap + '・獎勵 ' + rewardText(o.reward) + '、阿棕親密度 +1'),
+            '<button type="button" class="btn small" data-act="focus" data-id="' + o.minutes + '">開始</button>');
+        }).join('');
+      const study = STUDY_TASKS.map(t => {
+        const done = studyDoneToday(save, t.id, date), giver = npcById(t.npc);
+        const right = done ? '<span class="done">已回報 ✓</span>'
+          : confirming === t.id
+            ? '<span class="confirm"><button type="button" class="btn small" data-act="studyConfirm" data-id="' + t.id + '">確定完成</button><button type="button" class="btn small secondary" data-act="studyCancel">取消</button></span>'
+            : '<button type="button" class="btn small secondary" data-act="study" data-id="' + t.id + '">我完成了</button>';
+        return row(t.icon, esc(t.title) + ' <span class="self">自行回報</span>',
+          '獎勵 ' + rewardText(t.reward) + '、' + esc(giver.name) + '親密度 +1・<a href="' + t.link.href + '">' + esc(t.link.label) + '</a>', right);
+      }).join('');
       const gather = MATERIALS.map(m => matIcon(m.id) + ' ' + collectedCount(save, date, m.id) + '／' + spotTotal(m.id)).join('　');
-      body.innerHTML = quests +
+      body.innerHTML = '<h3>島上委託</h3>' + quests +
+        '<h3>專注計時</h3>' + focus +
+        '<h3>學習任務</h3>' + study +
+        '<p class="note">「自行回報」：小島不會讀取你的作答或訂正紀錄，也不判斷內容，只依你的確認給獎勵；每項每天一次。休息不會扣任何東西。</p>' +
         '<h3>今天採集</h3><p class="note" style="margin-top:0">' + gather + '（每天依這台裝置的日期重新出現）</p>' +
-        '<p class="note">每項委託每天只能領一次。專注、申論、訂正等學習任務會在之後的階段加入，一律標示「自行回報」；不讀書也能在島上玩。</p>' +
+        '<p class="note">每項委託每天只能領一次。不讀書也能在島上玩。</p>' +
         '<p class="note"><a href="../../">回觀護人學習平臺</a></p>';
     } else if (panel === 'build') {
       $('drawerTitle').textContent = '🔨 工坊與擺放';
@@ -164,7 +205,7 @@ export function createUI() {
   }
 
   return {
-    toast, banner, hud, placeBar,
+    toast, banner, hud, placeBar, focusTick,
     showDialogue, advanceDialogue, closeDialogue,
     openPanel, closePanel, renderPanel,
     get dialogueOpen() { return !!dlg; },

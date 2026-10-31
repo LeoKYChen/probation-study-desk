@@ -150,3 +150,10 @@ button:focus-visible, a:focus-visible { outline: 3px solid #2e6b86; outline-offs
 .recipe .need span { font-size: 12px; padding: 1px 7px; border-radius: 999px; background: #eef2e6; }
 .recipe .need span.lack { background: #fbe3dc; color: #7a2f22; }
 .hearts { color: #d77a8a; letter-spacing: 1px; font-size: 12px; }
+.focus-chip { padding: 4px 10px; border-radius: 999px; background: #e6f3e7; font-variant-numeric: tabular-nums; cursor: pointer; }
+@media (max-width: 400px) { .hud.focusing #clock { display: none; } }
+.focus-run { text-align: center; padding: 6px 0 10px; display: grid; gap: 8px; justify-items: center; }
+.timer { margin: 0; font-size: 44px; font-weight: 800; font-variant-numeric: tabular-nums; color: #336f66; }
+.self { font-size: 11px; font-weight: 700; padding: 1px 6px; border-radius: 6px; background: #fff1d6; color: #7a5a12; vertical-align: 2px; }
+.confirm { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+.row small a { color: #2d6b5a; font-weight: 700; }

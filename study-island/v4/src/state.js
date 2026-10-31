@@ -7,6 +7,7 @@ import { emptyInventory, addMaterial, count, furnitureById, furnitureCount, addF
 import { recipeById, missing } from './crafting.js';
 import { questById, questStatus, ledgerKey } from './quests.js';
 import { npcById } from './npc/dialogue.js';
+import { focusOption, studyTask, studyKey, focusKey, focusRemaining } from './learning.js';
 
 export const SCHEMA = 'probation-study-island-v4';
 export const VERSION = 1;
@@ -31,6 +32,7 @@ export function createSave(now = new Date()) {
     nextUid: 1,
     collected: {},
     daily: null,
+    focus: null,
     npc: {},
     rewardLedger: {}
   };
@@ -75,8 +77,16 @@ export function normalizeSave(raw) {
   s.collected = isObj(raw.collected) ? raw.collected : {};
   const d = raw.daily;
   s.daily = isObj(d) && typeof d.date === 'string'
-    ? { date: d.date, talked: Array.isArray(d.talked) ? d.talked.filter(id => npcById(id)) : [], crafted: Number.isInteger(d.crafted) ? d.crafted : 0 }
+    ? {
+      date: d.date,
+      talked: Array.isArray(d.talked) ? d.talked.filter(id => npcById(id)) : [],
+      crafted: Number.isInteger(d.crafted) ? d.crafted : 0,
+      focus: isObj(d.focus) ? Object.fromEntries(Object.entries(d.focus).filter(([, n]) => Number.isInteger(n) && n > 0)) : {}
+    }
     : null;
+  const f = raw.focus;
+  s.focus = isObj(f) && focusOption(f.minutes) && typeof f.startedAt === 'string' && !Number.isNaN(Date.parse(f.startedAt))
+    ? { minutes: f.minutes, startedAt: f.startedAt } : null;
   s.npc = isObj(raw.npc) ? raw.npc : {};
   s.rewardLedger = isObj(raw.rewardLedger) ? raw.rewardLedger : {};
   return s;
@@ -85,8 +95,24 @@ export function normalizeSave(raw) {
 // 只保留今天的採集紀錄與每日統計，舊日期自然失效（每日更新）。
 function rollDay(save, date) {
   for (const d of Object.keys(save.collected)) if (d !== date) delete save.collected[d];
-  if (!save.daily || save.daily.date !== date) save.daily = { date, talked: [], crafted: 0 };
-  for (const k of Object.keys(save.rewardLedger)) if (k.startsWith('quest:') && !k.startsWith('quest:' + date + ':')) delete save.rewardLedger[k];
+  if (!save.daily || save.daily.date !== date) save.daily = { date, talked: [], crafted: 0, focus: {} };
+  save.daily.focus ||= {};
+  const old = Date.parse(date) - 2 * 86400000;
+  for (const k of Object.keys(save.rewardLedger)) {
+    const [kind, rest] = [k.slice(0, k.indexOf(':')), k.slice(k.indexOf(':') + 1)];
+    if ((kind === 'quest' || kind === 'study') && !rest.startsWith(date + ':')) delete save.rewardLedger[k];
+    else if (kind === 'focus' && Date.parse(rest) < old) delete save.rewardLedger[k];
+  }
+}
+
+function befriend(save, npcId) {
+  const rec = save.npc[npcId] ||= {};
+  rec.friendship = Math.min(MAX_FRIENDSHIP, (Number.isInteger(rec.friendship) ? rec.friendship : 0) + 1);
+  return rec.friendship;
+}
+
+function grant(save, reward) {
+  for (const [id, n] of Object.entries(reward)) addMaterial(save.inventory, id, n);
 }
 
 // 套用動作，回傳 { changed, ok, reason?, ... }。會直接修改 save。
@@ -117,9 +143,8 @@ export function applyAction(save, action, now = new Date()) {
       const talkedToday = save.daily.talked.includes(action.npcId) || rec.lastTalkDate === action.date;
       if (talkedToday) return { changed: false, ok: true, talkedToday, friendship: rec.friendship || 0 };
       rec.lastTalkDate = action.date;
-      rec.friendship = Math.min(MAX_FRIENDSHIP, (Number.isInteger(rec.friendship) ? rec.friendship : 0) + 1);
       save.daily.talked.push(action.npcId);
-      return touch({ changed: true, ok: true, talkedToday: false, friendship: rec.friendship });
+      return touch({ changed: true, ok: true, talkedToday: false, friendship: befriend(save, action.npcId) });
     }
     case 'outfit': {
       if (!OUTFITS.some(o => o.id === action.outfit)) return fail('unknown-outfit');
@@ -162,9 +187,49 @@ export function applyAction(save, action, now = new Date()) {
       const st = questStatus(save, q, action.date);
       if (st.claimed) return fail('already');
       if (!st.done) return fail('not-done');
-      for (const [id, n] of Object.entries(q.reward)) addMaterial(save.inventory, id, n);
+      grant(save, q.reward);
       save.rewardLedger[ledgerKey(q.id, action.date)] = now.toISOString();
       return touch({ changed: true, ok: true, reward: q.reward });
+    }
+    // ── 階段 C：專注計時（以開始時間 + 裝置時鐘判斷；只有時間到才給，且同一次專注只結算一次） ──
+    case 'focusStart': {
+      if (!focusOption(action.minutes)) return fail('unknown-focus');
+      if (save.focus) return fail('running');
+      save.focus = { minutes: action.minutes, startedAt: now.toISOString() };
+      return touch({ changed: true, ok: true, focus: save.focus });
+    }
+    case 'focusCancel': {
+      if (!save.focus) return fail('none');
+      save.focus = null;
+      return touch({ changed: true, ok: true });
+    }
+    case 'focusComplete': {
+      const f = save.focus;
+      if (!f) return fail('none');
+      if (focusRemaining(save, now.getTime()) > 0) return fail('not-yet');
+      const opt = focusOption(f.minutes), key = focusKey(f.startedAt);
+      rollDay(save, action.date);
+      save.focus = null;
+      if (save.rewardLedger[key]) return touch({ changed: true, ok: false, reason: 'already' });
+      save.rewardLedger[key] = now.toISOString();
+      const done = save.daily.focus[f.minutes] || 0;
+      save.daily.focus[f.minutes] = done + 1;
+      if (done >= opt.dailyCap) return touch({ changed: true, ok: true, minutes: f.minutes, capped: true, reward: {} });
+      grant(save, opt.reward);
+      const friendship = befriend(save, opt.npc);
+      return touch({ changed: true, ok: true, minutes: f.minutes, capped: false, reward: opt.reward, npc: opt.npc, friendship });
+    }
+    // ── 學習任務：v4.0 為使用者自行回報；每項每天一次 ──
+    case 'studyReport': {
+      const t = studyTask(action.taskId);
+      if (!t) return fail('unknown-task');
+      rollDay(save, action.date);
+      const key = studyKey(t.id, action.date);
+      if (save.rewardLedger[key]) return fail('already');
+      save.rewardLedger[key] = now.toISOString();
+      grant(save, t.reward);
+      const friendship = befriend(save, t.npc);
+      return touch({ changed: true, ok: true, reward: t.reward, npc: t.npc, friendship, selfReported: true });
     }
     default:
       return fail('unknown-action');

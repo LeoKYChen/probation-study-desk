@@ -1,13 +1,14 @@
 // 主程式：輸入、移動、居民、採集、工坊／擺放、委託、存檔與繪製迴圈的接線。
 import { MAP_W, MAP_H, isWalkable, tileAt } from './world/map.js';
 import { findPath, pathToNeighbor, dirBetween, DIRS } from './player/pathfinding.js';
-import { NPCS, linesFor, wanderStep } from './npc/dialogue.js';
+import { NPCS, linesFor, wanderStep, npcById } from './npc/dialogue.js';
 import { availableSpots, spotAt, localDate, collectedCount, spotTotal } from './collectibles.js';
 import { MATERIALS, furnitureById } from './inventory.js';
 import { recipeById } from './crafting.js';
 import { questById } from './quests.js';
 import { isOpen, furnitureAt, canPlace, PLACE_REASONS } from './world/placement.js';
 import { OUTFITS, talkedToday } from './state.js';
+import { studyTask, focusRemaining } from './learning.js';
 import { openStore } from './persistence.js';
 import { createRenderer } from './render.js';
 import { createUI } from './ui.js';
@@ -258,6 +259,48 @@ function claim(questId) {
     res => (res.reason === 'already' ? '這個委託今天已經領過了。' : '委託還沒完成。'));
 }
 
+// ── 階段 C：專注計時與自行回報的學習任務 ──
+const rewardLine = r => Object.entries(r).map(([id, n]) => matOf(id).icon + '×' + n).join(' ');
+
+function startFocus(minutes) {
+  return act('focus', { type: 'focusStart', minutes: Number(minutes) },
+    () => ui.toast('開始專注 ' + minutes + ' 分鐘。去讀書吧，小島會等你' + unsaved() + '。', 3000),
+    res => (res.reason === 'running' ? '已經有一段專注在進行中。' : '現在不能開始。'));
+}
+
+function cancelFocus() {
+  return act('focus', { type: 'focusCancel' }, () => ui.toast('已取消專注，不給獎勵；隨時可以再開始。'));
+}
+
+// 時間到才結算；多分頁同時結算時，交易保證只有一邊拿到獎勵。
+let completing = false;
+async function completeFocus() {
+  if (completing) return;
+  completing = true;
+  await act('focus', { type: 'focusComplete', date: today() }, res => {
+    if (res.capped) ui.toast('專注 ' + res.minutes + ' 分鐘完成！今天這項的獎勵已達上限，但專注本身一樣有價值。', 4000);
+    else {
+      effects.push({ x: player.x, y: player.y, text: '⏱ ' + rewardLine(res.reward), life: 1 });
+      ui.toast('專注 ' + res.minutes + ' 分鐘完成！獲得 ' + rewardLine(res.reward) + '，' + npcById(res.npc).name + '親密度 +1' + unsaved() + '。', 4000);
+    }
+  });
+  completing = false;
+}
+
+function reportStudy(taskId) {
+  const t = studyTask(taskId);
+  if (!t) return;
+  return act('study:' + taskId, { type: 'studyReport', taskId, date: today() },
+    res => ui.toast('已記錄「' + t.title + '」（自行回報）：' + rewardLine(res.reward) + '，' + npcById(res.npc).name + '親密度 +1' + unsaved() + '。', 3500),
+    res => (res.reason === 'already' ? '今天已經回報過了。' : '現在不能回報。'));
+}
+
+setInterval(() => {
+  if (!save.focus) return;
+  ui.focusTick(save);
+  if (focusRemaining(save) === 0 && !document.hidden) completeFocus();
+}, 1000);
+
 const actors = () => [playerTile(), ...npcs.flatMap(n => [{ x: n.x, y: n.y }, ...(n.to ? [n.to] : [])])];
 
 function startPlacing(itemId) {
@@ -290,7 +333,7 @@ async function placeAt(x, y) {
 function panelCtx() {
   return {
     save, date: today(), persistent: store.persistent,
-    handlers: { outfit: setOutfit, craft, place: startPlacing, pickup, claim }
+    handlers: { outfit: setOutfit, craft, place: startPlacing, pickup, claim, focus: startFocus, focusCancel: cancelFocus, studyConfirm: reportStudy }
   };
 }
 
@@ -480,6 +523,7 @@ document.addEventListener('visibilitychange', async () => {
   try { const fresh = await store.load(); save = { ...fresh, player: save.player }; } catch { /* 保留目前畫面 */ }
   lastT = performance.now();
   refresh();
+  if (save.focus && focusRemaining(save) === 0) completeFocus();
 });
 addEventListener('pagehide', () => { savePosition(); });
 store.onExternalChange(async () => {
@@ -492,7 +536,10 @@ new ResizeObserver(() => {
 }).observe(world);
 renderer.resize(world.clientWidth, world.clientHeight);
 setInterval(() => ui.hud(save), 60000);
+document.getElementById('focusChip').addEventListener('click', () => { if (ui.panel !== 'tasks') togglePanel('tasks'); });
 refresh();
+// 關掉頁面期間專注已經結束：重新開啟時結算一次。
+if (save.focus && focusRemaining(save) === 0) completeFocus();
 
 // 給自動化測試讀取目前狀態（不影響遊戲）。
 globalThis.__island = { get player() { return { x: player.x, y: player.y, moving: player.moving }; }, get save() { return save; }, get placing() { return placing; }, npcs, renderer, persistent: store.persistent };

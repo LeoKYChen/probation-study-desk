@@ -243,3 +243,69 @@ test('存檔正規化：壞掉的家具位置收回背包，不靜默丟棄；De
   const demoA = normalizeSave({ schema: SCHEMA, player: { x: 3, y: 13, facing: 'left', outfit: 'sky' }, inventory: { materials: { shell: 3 }, furniture: { 'starter-stool': 1 } }, collected: { [D]: ['beach-shell-1'] }, npc: { chestnut: { lastTalkDate: D } } });
   assert.deepEqual([demoA.player.x, demoA.inventory.materials.shell, demoA.placed.length], [3, 3, 0]);
 });
+
+// ── 階段 C：專注計時與學習任務 ──
+import { FOCUS_OPTIONS, STUDY_TASKS, focusRemaining } from '../src/learning.js';
+const at = (iso) => new Date(iso);
+
+test('專注：時間未到不給；到了只結算一次；取消不給也不扣', () => {
+  const s = createSave();
+  const t0 = at('2026-10-31T10:00:00');
+  assert.equal(applyAction(s, { type: 'focusStart', minutes: 7 }, t0).reason, 'unknown-focus');
+  assert.equal(applyAction(s, { type: 'focusStart', minutes: 5 }, t0).ok, true);
+  assert.equal(applyAction(s, { type: 'focusStart', minutes: 25 }, t0).reason, 'running');
+  assert.equal(focusRemaining(s, t0.getTime() + 60000), 4 * 60000);
+  assert.equal(applyAction(s, { type: 'focusComplete', date: D }, at('2026-10-31T10:04:59')).reason, 'not-yet');
+  assert.equal(s.inventory.materials.shell, 0);
+  const r = applyAction(s, { type: 'focusComplete', date: D }, at('2026-10-31T10:05:00'));
+  assert.equal(r.ok, true); assert.equal(r.capped, false);
+  assert.deepEqual([s.inventory.materials.shell, s.inventory.materials.leaf], [1, 1]);
+  assert.equal(s.npc.brownie.friendship, 1);
+  assert.equal(applyAction(s, { type: 'focusComplete', date: D }, at('2026-10-31T10:06:00')).reason, 'none');
+  assert.equal(s.inventory.materials.shell, 1);
+  applyAction(s, { type: 'focusStart', minutes: 25 }, at('2026-10-31T11:00:00'));
+  assert.equal(applyAction(s, { type: 'focusCancel' }).ok, true);
+  assert.equal(s.focus, null);
+  assert.equal(s.inventory.materials.shell, 1, '取消不扣也不給');
+});
+
+test('專注：每日上限後仍可專注但不給獎勵；隔天重置', () => {
+  const s = createSave();
+  const cap = FOCUS_OPTIONS.find(o => o.minutes === 5).dailyCap;
+  let t = at('2026-10-31T08:00:00').getTime();
+  const run = date => {
+    applyAction(s, { type: 'focusStart', minutes: 5 }, new Date(t));
+    t += 5 * 60000;
+    return applyAction(s, { type: 'focusComplete', date }, new Date(t));
+  };
+  for (let i = 0; i < cap; i++) assert.equal(run(D).capped, false);
+  const shells = s.inventory.materials.shell;
+  const over = run(D);
+  assert.equal(over.ok, true); assert.equal(over.capped, true);
+  assert.equal(s.inventory.materials.shell, shells);
+  assert.equal(run('2026-11-01').capped, false);
+});
+
+test('專注：跨日開始的 25 分鐘依完成日計算；重新整理（正規化）後仍保留', () => {
+  const s = createSave();
+  applyAction(s, { type: 'focusStart', minutes: 25 }, at('2026-10-31T23:50:00'));
+  const n = normalizeSave(JSON.parse(JSON.stringify(s)));
+  assert.equal(n.focus.minutes, 25);
+  assert.equal(applyAction(n, { type: 'focusComplete', date: '2026-11-01' }, at('2026-11-01T00:15:00')).ok, true);
+  assert.equal(n.daily.date, '2026-11-01');
+  assert.equal(normalizeSave({ schema: SCHEMA, focus: { minutes: 9, startedAt: 'x' } }).focus, null);
+});
+
+test('學習任務：自行回報每項每天一次，給材料與居民親密度', () => {
+  const s = createSave();
+  assert.equal(STUDY_TASKS.length, 3);
+  const r = applyAction(s, { type: 'studyReport', taskId: 'essay', date: D });
+  assert.equal(r.ok, true); assert.equal(r.selfReported, true);
+  assert.deepEqual([s.inventory.materials.shell, s.inventory.materials.wood], [2, 1]);
+  assert.equal(s.npc.chestnut.friendship, 1);
+  assert.equal(applyAction(s, { type: 'studyReport', taskId: 'essay', date: D }).reason, 'already');
+  assert.equal(s.inventory.materials.shell, 2);
+  assert.equal(applyAction(s, { type: 'studyReport', taskId: 'essay', date: '2026-11-01' }).ok, true);
+  assert.equal(applyAction(s, { type: 'studyReport', taskId: 'nope', date: D }).ok, false);
+  assert.ok(Object.keys(s.rewardLedger).every(k => !k.startsWith('study:' + D)), '舊日期的回報紀錄已清掉');
+});

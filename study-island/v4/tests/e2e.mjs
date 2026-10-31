@@ -318,6 +318,64 @@ await step('不讀寫 v1 小島或其他學習資料', async () => {
   assert.deepEqual(dbs, ['probation-study-island-v4']);
 });
 
+// ── 階段 C：專注計時（Playwright 假時鐘快轉，不用真的等 5 分鐘）與自行回報 ──
+await step('專注 5 分鐘：開始後倒數、重新整理接續、時間未到不給、時間到只給一次', async () => {
+  const ctx = await browser.newContext({ ...devices['iPhone 13'], viewport: { width: 375, height: 740 } });
+  await ctx.clock.install({ time: new Date('2026-10-31T10:00:00') });
+  const p = await ctx.newPage();
+  p.on('pageerror', e => errors.push(String(e)));
+  await p.goto(URL); await p.waitForFunction(() => globalThis.__island, null, { polling: 100 });
+  await p.click('.dock [data-panel=tasks]');
+  await p.click('[data-act=focus][data-id="5"]');
+  await p.waitForFunction(() => __island.save.focus, null, { polling: 100 });
+  assert.equal(await p.isVisible('#focusChip'), true);
+  assert.equal(await p.textContent('#focusTimer'), '05:00');
+  if (SHOTS) await p.screenshot({ path: SHOTS + '/9-focus-375.png' });
+  await p.clock.fastForward('02:00');
+  await p.reload(); await p.waitForFunction(() => globalThis.__island, null, { polling: 100 });
+  assert.ok(await p.evaluate(() => __island.save.focus && __island.save.focus.minutes === 5), '重新整理後仍在專注');
+  await p.clock.fastForward('02:30');
+  await p.clock.runFor(1500);
+  const mid = await p.evaluate(() => ({ shell: __island.save.inventory.materials.shell, chip: document.getElementById('focusChip').textContent }));
+  assert.equal(mid.shell, 0, '時間未到不給');
+  assert.match(mid.chip, /00:[23]\d/);
+  await p.clock.fastForward('00:40');
+  await p.clock.runFor(2000);
+  await p.waitForFunction(() => !__island.save.focus, null, { polling: 100 });
+  await p.clock.runFor(5000);
+  const m = await p.evaluate(() => __island.save.inventory.materials);
+  assert.deepEqual([m.shell, m.leaf], [1, 1]);
+  assert.equal(await p.isVisible('#focusChip'), false);
+  await ctx.close();
+});
+
+await step('專注：取消不給獎勵；學習任務需二次確認、每天一次、標示自行回報', async () => {
+  const ctx = await browser.newContext({ ...devices['iPhone 13'], viewport: { width: 375, height: 740 } });
+  const p = await ctx.newPage();
+  await p.goto(URL); await p.waitForFunction(() => globalThis.__island);
+  await p.click('.dock [data-panel=tasks]');
+  await p.click('[data-act=focus][data-id="25"]');
+  await p.waitForSelector('[data-act=focusCancel]');
+  await p.click('[data-act=focusCancel]');
+  await p.waitForFunction(() => !__island.save.focus);
+  assert.equal(await p.evaluate(() => __island.save.inventory.materials.shell), 0);
+  assert.match(await p.textContent('#drawerBody'), /自行回報/);
+  await p.click('[data-act=study][data-id=essay]');
+  assert.equal(await p.evaluate(() => __island.save.inventory.materials.shell), 0, '第一次按只是詢問');
+  await p.click('[data-act=studyConfirm][data-id=essay]');
+  await p.waitForFunction(() => __island.save.inventory.materials.shell === 2);
+  assert.match(await p.textContent('#drawerBody'), /已回報/);
+  if (SHOTS) await p.screenshot({ path: SHOTS + '/10-study-375.png' });
+  const r = await p.evaluate(async () => {
+    const m = await import('./src/persistence.js'), c = await import('./src/collectibles.js');
+    const s = await m.openStore();
+    const rs = await Promise.all([1, 2, 3, 4, 5].map(() => s.mutate({ type: 'studyReport', taskId: 'recall', date: c.localDate() })));
+    return rs.filter(x => x.result.ok).length;
+  });
+  assert.equal(r, 1);
+  await ctx.close();
+});
+
 // ── 桌面（鍵盤）──
 const desk = await browser.newContext({ viewport: { width: 1280, height: 800 } });
 const dp = await desk.newPage();
