@@ -6,6 +6,7 @@ import { NPCS, npcById, friendshipLabel } from './npc/dialogue.js';
 import { collectedCount, spotTotal } from './collectibles.js';
 import { OUTFITS } from './state.js';
 import { drawPortrait } from './render.js';
+import { V1_GOODS, V1_FIXED, V1_HEARTS, legacySummary } from './migration.js';
 import { FOCUS_OPTIONS, STUDY_TASKS, focusRemaining, focusDoneToday, studyDoneToday, formatMs } from './learning.js';
 
 const $ = id => document.getElementById(id);
@@ -21,6 +22,13 @@ export function seasonLabel(d = new Date()) {
   return icon + ' ' + season + '日';
 }
 
+// ISO 時間轉成裝置本地的「YYYY-MM-DD HH:MM」。
+const localTime = iso => {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return '';
+  const p = n => String(n).padStart(2, '0');
+  return d.getFullYear() + '-' + p(d.getMonth() + 1) + '-' + p(d.getDate()) + ' ' + p(d.getHours()) + ':' + p(d.getMinutes());
+};
 const hearts = n => '♥'.repeat(Math.min(5, Math.ceil(n / 2))) + '♡'.repeat(5 - Math.min(5, Math.ceil(n / 2)));
 
 export function createUI() {
@@ -88,7 +96,7 @@ export function createUI() {
 
   function openPanel(name, ctx) {
     panel = name;
-    panelOpener = document.querySelector('.dock [data-panel="' + name + '"]');
+    panelOpener = document.querySelector('.dock [data-panel="' + name + '"]') || document.querySelector('.dock [data-panel=bag]');
     document.querySelectorAll('.dock [data-panel]').forEach(b => b.setAttribute('aria-expanded', String(b.dataset.panel === name)));
     renderPanel(ctx);
     $('drawer').hidden = false;
@@ -103,6 +111,13 @@ export function createUI() {
     if (restoreFocus && panelOpener) panelOpener.focus({ preventScroll: true });
   }
   $('drawerClose').addEventListener('click', () => closePanel());
+  $('drawerBody').addEventListener('change', e => {
+    const input = e.target.closest('input[type=file][data-act]');
+    if (!input || !input.files || !input.files[0]) return;
+    const fn = handlers[input.dataset.act];
+    if (fn) fn(input.files[0]);
+    input.value = '';
+  });
 
   // 抽屜內的按鈕以事件委派處理，重新繪製內容不需要重綁。
   $('drawerBody').addEventListener('click', e => {
@@ -139,6 +154,7 @@ export function createUI() {
       body.innerHTML = '<h3>材料</h3><div class="grid">' + mats + '</div><h3>家具</h3>' + furn +
         '<h3>居民親密度</h3>' + friends +
         '<h3>衣服顏色</h3><div class="outfits">' + outfits + '</div>' +
+        '<h3>資料</h3><button type="button" class="btn secondary" data-act="openData">💾 備份與舊島花園</button>' +
         '<p class="note">' + (persistent ? '背包存在這台裝置的瀏覽器（IndexedDB），重新整理不會消失；不同網址、裝置或瀏覽器不會互通。'
           : '⚠ 這個瀏覽器目前無法儲存，背包只存在本頁，關閉或重新整理就會消失。') + '</p>';
     } else if (panel === 'tasks') {
@@ -176,6 +192,9 @@ export function createUI() {
         '<h3>今天採集</h3><p class="note" style="margin-top:0">' + gather + '（每天依這台裝置的日期重新出現）</p>' +
         '<p class="note">每項委託每天只能領一次。不讀書也能在島上玩。</p>' +
         '<p class="note"><a href="../../">回觀護人學習平臺</a></p>';
+    } else if (panel === 'data') {
+      $('drawerTitle').textContent = '💾 備份與舊島花園';
+      body.innerHTML = renderData(ctx);
     } else if (panel === 'build') {
       $('drawerTitle').textContent = '🔨 工坊與擺放';
       const recipes = RECIPES.map(r => {
@@ -197,6 +216,61 @@ export function createUI() {
       body.innerHTML = '<h3>工坊</h3>' + recipes + '<h3>背包裡的家具</h3>' + inBag + '<h3>島上的家具</h3>' + placed +
         '<p class="note">家具不能擋住小路、採集點或居民，也不能把路堵死；靠近家具按 E 也可以收回。</p>';
     }
+  }
+
+  function legacyPreview(sum, title, okLabel, okAct, warn) {
+    return '<div class="preview"><b>' + title + '</b><ul>' +
+      '<li>島名：' + esc(sum.islandName) + '</li>' +
+      '<li>舊島貝殼：' + sum.shells + '</li>' +
+      '<li>花園裡的裝飾：' + sum.placed + ' 件；待整理倉庫：' + sum.stored + ' 件' + (sum.conflicts ? '（其中 ' + sum.conflicts + ' 件原本的位置放不進花園）' : '') + '</li>' +
+      '<li>居民親密度：' + esc(sum.hearts.join('、')) + '</li>' +
+      '<li>學習天數：' + sum.days + '；徽章：' + (sum.badges.length ? esc(sum.badges.join(' ')) : '尚無') + '</li></ul>' +
+      (warn ? '<p class="note">' + warn + '</p>' : '') +
+      '<div class="confirm"><button type="button" class="btn small" data-act="' + okAct + '">' + okLabel + '</button>' +
+      '<button type="button" class="btn small secondary" data-act="cancelImport">取消</button></div></div>';
+  }
+
+  function renderData({ save, pending, v1Local }) {
+    let html = '';
+    if (pending && pending.kind === 'v1') {
+      html += legacyPreview(legacySummary(pending.legacy), '預覽：v3 小島資料（' + (pending.legacy.source === 'local' ? '這個網址的 v3 存檔' : '匯入的檔案') + '）',
+        '確定轉入舊島花園', 'confirmImport', '轉入只會新增「舊島花園」，不影響目前的小島；v3 原資料不會被修改或刪除。居民親密度取兩邊較高者（v4 上限 10）。');
+    } else if (pending && pending.kind === 'v4') {
+      const sm = pending.summary;
+      html += '<div class="preview"><b>預覽：v4 小島備份</b><ul>' +
+        '<li>島名：' + esc(sm.islandName) + '；最後更新：' + esc(localTime(sm.updatedAt)) + '</li>' +
+        '<li>材料：' + MATERIALS.map(m => m.icon + (sm.materials[m.id] || 0)).join(' ') + '</li>' +
+        '<li>背包家具 ' + sm.furniture + ' 件；島上家具 ' + sm.placed + ' 件；' + (sm.legacy ? '含舊島花園' : '不含舊島花園') + '</li></ul>' +
+        '<p class="note">⚠ 匯入會<b>取代</b>這個瀏覽器目前的 v4 小島。建議先按下面的「匯出備份」留一份。</p>' +
+        '<div class="confirm"><button type="button" class="btn small" data-act="confirmImport">確定取代</button>' +
+        '<button type="button" class="btn small secondary" data-act="cancelImport">取消</button></div></div>';
+    }
+    html += '<h3>舊島花園（v3）</h3>';
+    const l = save.legacy;
+    if (l) {
+      const cells = l.garden.map((id, i) => {
+        const g = V1_GOODS[id];
+        return '<span class="cell' + (V1_FIXED[i] ? ' fixed' : '') + '" title="' + (g ? esc(g.name) : '') + '">' + (V1_FIXED[i] || (g ? g.icon : '')) + '</span>';
+      }).join('');
+      const store = Object.entries(l.storage).map(([id, n]) => (V1_GOODS[id] ? V1_GOODS[id].icon + esc(V1_GOODS[id].name) : '❓' + esc(id)) + ' ×' + n).join('、') || '空的';
+      const hearts = Object.keys(V1_HEARTS).map(k => esc(npcById(V1_HEARTS[k]).name) + ' ' + (l.hearts[k] || 0)).join('、');
+      html += '<p class="note" style="margin-top:0">「' + esc(l.islandName) + '」的花園，保留 v3 時的擺設（唯讀展示）。轉入時間 ' + esc(localTime(l.importedAt)) + '。</p>' +
+        '<div class="garden" role="img" aria-label="舊島花園 6×6 擺設">' + cells + '</div>' +
+        row('📦', '待整理倉庫', store) +
+        row('🐚', '舊島貝殼 ' + l.shells, '保留在舊島紀錄中；不會加進 v4 的製作材料。') +
+        row('💗', 'v3 親密度', hearts) +
+        row('🏅', '徽章', (l.badges.length ? esc(l.badges.join(' ')) : '尚無') + '・學習天數 ' + l.days.length);
+    } else if (v1Local && !(pending && pending.kind === 'v1')) {
+      html += '<p class="note" style="margin-top:0">在這個網址找到 v3 小島「' + esc(v1Local.islandName) + '」。</p>' +
+        '<button type="button" class="btn secondary" data-act="previewLocal">預覽並轉入舊島花園</button>';
+    } else if (!pending) {
+      html += '<p class="note" style="margin-top:0">這個網址沒有 v3 小島資料。若 v3 在其他網址（例如另一個測試站），請在 v3 頁面按「匯出小島 JSON」，再用下面的「匯入 JSON」選那個檔案。不同網址的瀏覽器資料無法自動互通。</p>';
+    }
+    html += '<h3>備份</h3>' +
+      '<div class="confirm" style="justify-content:flex-start"><button type="button" class="btn small" data-act="exportBackup">匯出備份</button>' +
+      '<label class="btn small secondary file-btn">匯入 JSON<input class="sr-only" type="file" accept=".json,application/json" data-act="importFile"></label></div>' +
+      '<p class="note">匯入可選 v4 備份或 v3 匯出的 JSON，都會先顯示預覽，確認後才寫入；取消不會改動任何資料。備份只含小島，不含考古題答案或其他學習紀錄。</p>';
+    return html;
   }
 
   function placeBar(text) {

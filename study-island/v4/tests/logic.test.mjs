@@ -309,3 +309,67 @@ test('學習任務：自行回報每項每天一次，給材料與居民親密�
   assert.equal(applyAction(s, { type: 'studyReport', taskId: 'nope', date: D }).ok, false);
   assert.ok(Object.keys(s.rewardLedger).every(k => !k.startsWith('study:' + D)), '舊日期的回報紀錄已清掉');
 });
+
+// ── 階段 D：v3 舊島遷移與 v4 備份 ──
+import { legacyFromV1, applyLegacy, parseImport, makeBackup, legacySummary, BACKUP_FORMAT } from '../src/migration.js';
+
+const v3 = () => ({
+  version: 1, coins: 137, xp: 400, islandName: '我的小島',
+  days: ['2026-10-01', '2026-10-02', '2026-10-03', 'bad'],
+  claims: {}, owned: { flower: 2, lamp: 1, mystery: 3 },
+  plots: Object.assign(Array(36).fill(''), { 0: 'bench', 2: 'tent', 7: 'lamp', 35: 'flower', 10: 'spaceship' }),
+  history: ['2026-10-01　完成申論'], focusEnd: 0, focusMinutes: 0,
+  hearts: { fox: 6, bear: 2, bunny: 0, owl: 12 }, weeklyClaimed: ['2026-09-28']
+});
+
+test('v3 → 舊島花園：位置、數量、貝殼、親密度、成就都保留；放不下的進倉庫不丟棄', () => {
+  const raw = v3(), before = JSON.stringify(raw);
+  const l = legacyFromV1(raw, { source: 'local', now: at('2026-10-31T09:00:00') });
+  assert.equal(JSON.stringify(raw), before, 'v1 原資料不被修改');
+  assert.deepEqual([l.garden[0], l.garden[7], l.garden[35]], ['bench', 'lamp', 'flower']);
+  assert.equal(l.garden[2], '', '固定景物格不放家具');
+  assert.equal(l.garden[10], '', '不認得的 ID 不放花園');
+  assert.deepEqual(l.storage, { tent: 1, spaceship: 1, flower: 2, lamp: 1, mystery: 3 });
+  const total = s => Object.values(s).reduce((a, b) => a + b, 0);
+  assert.equal(l.garden.filter(Boolean).length + total(l.storage), 4 + 1 + 6, '全部 11 件都在');
+  assert.equal(l.shells, 137);
+  assert.deepEqual(l.hearts, { fox: 6, bear: 2, bunny: 0, owl: 12 });
+  assert.equal(l.days.length, 3);
+  assert.ok(l.badges.includes('🌸 三日萌芽') && l.badges.includes('✨ 星光居民') && l.badges.includes('🏡 村莊 Lv.3'));
+  assert.equal(legacySummary(l).conflicts, 2);
+});
+
+test('套用舊島：只新增 legacy、親密度取較高者（上限 10）、不重複轉入、不動 v4 材料', () => {
+  const s = createSave();
+  s.npc.brownie = { friendship: 5 };
+  const r = applyAction(s, { type: 'migrateV1', legacy: legacyFromV1(v3()) });
+  assert.equal(r.ok, true);
+  assert.deepEqual(['chestnut', 'brownie', 'snowy', 'inky'].map(id => s.npc[id].friendship), [6, 5, 0, 10]);
+  assert.equal(s.inventory.materials.shell, 0, '舊島貝殼保留在紀錄中，不加進材料');
+  assert.equal(applyAction(s, { type: 'migrateV1', legacy: legacyFromV1(v3()) }).reason, 'already');
+  const n = normalizeSave(JSON.parse(JSON.stringify(s)));
+  assert.equal(n.legacy.garden[0], 'bench');
+  assert.equal(n.legacy.storage.mystery, 3);
+});
+
+test('v3 格式錯誤會被拒絕，且不產生任何資料', () => {
+  assert.throws(() => legacyFromV1({ version: 2, plots: [] }), /不是 v3/);
+  assert.throws(() => parseImport('{oops'), /不是有效的 JSON/);
+  assert.throws(() => parseImport(JSON.stringify({ hello: 1 })), /認不得/);
+  assert.throws(() => parseImport('x'.repeat(1024 * 1024 + 1)), /過大/);
+  assert.throws(() => parseImport(JSON.stringify({ format: BACKUP_FORMAT, version: 9, save: {} })), /較新版本/);
+});
+
+test('v4 備份：匯出後再匯入內容相同；v3 檔案會被辨識為舊島', () => {
+  const s = createSave();
+  give(s, { wood: 3, leaf: 2, shell: 4 });
+  applyAction(s, { type: 'place', itemId: 'starter-stool', x: 9, y: 11 });
+  applyAction(s, { type: 'studyReport', taskId: 'essay', date: D });
+  const back = parseImport(JSON.stringify(makeBackup(s)));
+  assert.equal(back.kind, 'v4');
+  assert.deepEqual(back.save.inventory, s.inventory);
+  assert.deepEqual(back.save.placed, s.placed);
+  assert.deepEqual(back.save.rewardLedger, s.rewardLedger);
+  assert.ok(!JSON.stringify(makeBackup(s)).includes('probationStudyIsland.v1'));
+  assert.equal(parseImport(JSON.stringify(v3())).kind, 'v1');
+});

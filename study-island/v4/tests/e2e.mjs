@@ -4,6 +4,7 @@
 // 這是模擬器測試，不能取代 iPhone Safari／Android Chrome 實機驗收。
 import { createRequire } from 'node:module';
 import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
 const { chromium, devices } = createRequire(import.meta.url)('playwright');
 
 const URL = process.argv[2] || 'http://localhost:8790/study-island/v4/';
@@ -373,6 +374,143 @@ await step('專注：取消不給獎勵；學習任務需二次確認、每天�
     return rs.filter(x => x.result.ok).length;
   });
   assert.equal(r, 1);
+  await ctx.close();
+});
+
+// ── 階段 D：v3 舊島遷移、備份匯出／匯入、與既有學習頁面互不干擾 ──
+const V3_URL = new globalThis.URL('../', URL).href;
+const v3Data = {
+  version: 1, coins: 137, xp: 400, islandName: '測試舊島', days: ['2026-10-01', '2026-10-02', '2026-10-03'], claims: {},
+  owned: { flower: 2, lamp: 1, tree: 0, bench: 0, tent: 0, garden: 0 },
+  plots: Object.assign(Array(36).fill(''), { 0: 'bench', 7: 'lamp', 35: 'flower' }), history: ['2026-10-01　完成申論'],
+  focusEnd: 0, focusMinutes: 0, hearts: { fox: 6, bear: 2, bunny: 0, owl: 12 }, weeklyClaimed: []
+};
+const openData = async p => {
+  await p.click('.dock [data-panel=bag]');
+  await p.click('[data-act=openData]');
+  await p.waitForSelector('#drawerTitle:has-text("備份與舊島花園")');
+};
+
+await step('同網址 v3 存檔：預覽→取消不變→確定轉入；v1 原資料逐字不變、v3 頁面照常', async () => {
+  const ctx = await browser.newContext({ ...devices['iPhone 13'], viewport: { width: 375, height: 740 } });
+  const p = await ctx.newPage();
+  p.on('pageerror', e => errors.push(String(e)));
+  await p.goto(V3_URL);
+  await p.evaluate(d => localStorage.setItem('probationStudyIsland.v1', JSON.stringify(d)), v3Data);
+  await p.reload();
+  assert.match(await p.textContent('body'), /測試舊島/, 'v3 頁面讀得到這份存檔');
+  const original = await p.evaluate(() => localStorage.getItem('probationStudyIsland.v1'));
+  await p.goto(URL); await p.waitForFunction(() => globalThis.__island);
+  await openData(p);
+  await p.click('[data-act=previewLocal]');
+  const prev = await p.textContent('.preview');
+  assert.match(prev, /測試舊島/); assert.match(prev, /137/); assert.match(prev, /三日萌芽/);
+  await p.click('[data-act=cancelImport]');
+  assert.equal(await p.evaluate(() => __island.save.legacy), null, '取消不改資料');
+  await p.click('[data-act=previewLocal]');
+  await p.click('[data-act=confirmImport]');
+  await p.waitForFunction(() => __island.save.legacy);
+  assert.equal(await p.locator('.garden .cell').count(), 36);
+  const body = await p.textContent('#drawerBody');
+  assert.match(body, /舊島貝殼 137/); assert.match(body, /小燈籠 ×1/);
+  if (SHOTS) await p.screenshot({ path: SHOTS + '/11-legacy-375.png' });
+  const f = await p.evaluate(() => [1, 2, 3, 4].map(i => (__island.save.npc[['chestnut', 'brownie', 'snowy', 'inky'][i - 1]] || {}).friendship || 0));
+  assert.deepEqual(f, [6, 2, 0, 10]);
+  assert.equal(await p.evaluate(() => localStorage.getItem('probationStudyIsland.v1')), original, 'v1 逐字不變');
+  await p.reload(); await p.waitForFunction(() => globalThis.__island);
+  assert.equal(await p.evaluate(() => __island.save.legacy.garden[7]), 'lamp', '重新整理後仍在');
+  await p.goto(V3_URL);
+  assert.match(await p.textContent('body'), /測試舊島/, 'v3 頁面不受影響');
+  await ctx.close();
+});
+
+await step('不同網址：用 v3 匯出的 JSON 轉入；壞檔案被拒絕且不改資料', async () => {
+  const ctx = await browser.newContext();
+  const p = await ctx.newPage();
+  await p.goto(URL); await p.waitForFunction(() => globalThis.__island);
+  await openData(p);
+  assert.match(await p.textContent('#drawerBody'), /匯出小島 JSON/, '找不到本機 v3 時說明怎麼做');
+  await p.setInputFiles('[data-act=importFile]', { name: 'bad.json', mimeType: 'application/json', buffer: Buffer.from('{"hello":1}') });
+  await sleep(200);
+  assert.match(await p.textContent('#toast'), /匯入失敗/);
+  assert.equal(await p.locator('.preview').count(), 0);
+  await p.setInputFiles('[data-act=importFile]', { name: 'study-island.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(v3Data)) });
+  await p.waitForSelector('.preview');
+  await p.click('[data-act=confirmImport]');
+  await p.waitForFunction(() => __island.save.legacy && __island.save.legacy.source === 'file');
+  await ctx.close();
+});
+
+await step('v4 備份：匯出→在新瀏覽器匯入預覽、取消不變、確定後內容相同', async () => {
+  const ctx = await browser.newContext({ acceptDownloads: true });
+  const p = await ctx.newPage();
+  await p.goto(URL); await p.waitForFunction(() => globalThis.__island);
+  await p.evaluate(async () => {
+    const m = await import('./src/persistence.js'), c = await import('./src/collectibles.js');
+    const s = await m.openStore(), d = c.localDate();
+    for (const id of ['beach-shell-1', 'forest-wood-1', 'forest-leaf-2']) await s.mutate({ type: 'collect', spotId: id, date: d });
+    await s.mutate({ type: 'place', itemId: 'starter-stool', x: 9, y: 11, actors: [] });
+  });
+  await p.reload(); await p.waitForFunction(() => globalThis.__island);
+  await openData(p);
+  const [dl] = await Promise.all([p.waitForEvent('download'), p.click('[data-act=exportBackup]')]);
+  assert.match(dl.suggestedFilename(), /^study-island-v4-\d{4}-\d{2}-\d{2}\.json$/);
+  const file = { name: 'backup.json', mimeType: 'application/json', buffer: await readFile(await dl.path()) };
+  const expected = await p.evaluate(() => ({ inv: __island.save.inventory, placed: __island.save.placed }));
+  await ctx.close();
+
+  const ctx2 = await browser.newContext();
+  const q = await ctx2.newPage();
+  await q.goto(URL); await q.waitForFunction(() => globalThis.__island);
+  await openData(q);
+  await q.setInputFiles('[data-act=importFile]', file);
+  await q.waitForSelector('.preview');
+  assert.match(await q.textContent('.preview'), /取代/);
+  await q.click('[data-act=cancelImport]');
+  assert.equal(await q.evaluate(() => __island.save.placed.length), 0, '取消不改資料');
+  await q.setInputFiles('[data-act=importFile]', file);
+  await q.click('[data-act=confirmImport]');
+  await q.waitForFunction(() => __island.save.placed.length === 1);
+  await q.reload(); await q.waitForFunction(() => globalThis.__island);
+  const got = await q.evaluate(() => ({ inv: __island.save.inventory, placed: __island.save.placed }));
+  assert.deepEqual(got, expected);
+  await ctx2.close();
+});
+
+await step('既有學習頁面：玩小島前後，考古題／備考書桌／主動回憶的瀏覽器資料完全相同', async () => {
+  const ctx = await browser.newContext();
+  const p = await ctx.newPage();
+  const pages = ['../../v2.5/', '../../study-desk/', '../../active-recall/'].map(x => new globalThis.URL(x, URL).href);
+  const snap = async () => p.evaluate(async () => {
+    const ls = {}; for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); ls[k] = localStorage.getItem(k); }
+    const dbs = (await indexedDB.databases()).map(d => d.name).filter(n => n !== 'probation-study-island-v4').sort();
+    return { ls, dbs };
+  });
+  // 模擬使用者在學習頁面留下的資料（含一筆作答），再去玩小島。
+  await p.goto(pages[0]);
+  await p.evaluate(() => localStorage.setItem('e2e-answer-marker', '我的申論答案（測試）'));
+  for (const u of pages) await p.goto(u);
+  // 學習頁面每次開啟都可能更新自己的狀態，所以只比對「小島操作前後」這段期間的變化。
+  await p.goto(URL); await p.waitForFunction(() => globalThis.__island);
+  const before = await snap();
+  await p.evaluate(async () => {
+    const m = await import('./src/persistence.js'), c = await import('./src/collectibles.js');
+    const s = await m.openStore(), d = c.localDate();
+    await s.mutate({ type: 'collect', spotId: 'beach-shell-1', date: d });
+    await s.mutate({ type: 'studyReport', taskId: 'essay', date: d });
+  });
+  await openData(p);
+  await p.reload(); await p.waitForFunction(() => globalThis.__island);
+  const after = await snap();
+  const changed = [...new Set([...Object.keys(before.ls), ...Object.keys(after.ls)])].filter(k => before.ls[k] !== after.ls[k]);
+  if (changed.length) console.log('DIFF', JSON.stringify(changed.map(k => [k, String(before.ls[k]).slice(0, 120), String(after.ls[k]).slice(0, 120)])));
+  assert.deepEqual(after, before);
+  assert.equal(after.ls['e2e-answer-marker'], '我的申論答案（測試）');
+  const pageErrors = [];
+  p.on('pageerror', e => pageErrors.push(String(e)));
+  for (const u of pages) await p.goto(u);
+  assert.equal(await p.evaluate(() => localStorage.getItem('e2e-answer-marker')), '我的申論答案（測試）');
+  assert.deepEqual(pageErrors, [], '學習頁面照常開啟');
   await ctx.close();
 });
 

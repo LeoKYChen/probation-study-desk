@@ -8,6 +8,7 @@ import { recipeById, missing } from './crafting.js';
 import { questById, questStatus, ledgerKey } from './quests.js';
 import { npcById } from './npc/dialogue.js';
 import { focusOption, studyTask, studyKey, focusKey, focusRemaining } from './learning.js';
+import { normalizeLegacy, applyLegacy } from './migration.js';
 
 export const SCHEMA = 'probation-study-island-v4';
 export const VERSION = 1;
@@ -33,6 +34,7 @@ export function createSave(now = new Date()) {
     collected: {},
     daily: null,
     focus: null,
+    legacy: null,
     npc: {},
     rewardLedger: {}
   };
@@ -88,6 +90,7 @@ export function normalizeSave(raw) {
   s.focus = isObj(f) && focusOption(f.minutes) && typeof f.startedAt === 'string' && !Number.isNaN(Date.parse(f.startedAt))
     ? { minutes: f.minutes, startedAt: f.startedAt } : null;
   s.npc = isObj(raw.npc) ? raw.npc : {};
+  s.legacy = raw.legacy ? normalizeLegacy(raw.legacy) : null;
   s.rewardLedger = isObj(raw.rewardLedger) ? raw.rewardLedger : {};
   return s;
 }
@@ -230,6 +233,12 @@ export function applyAction(save, action, now = new Date()) {
       grant(save, t.reward);
       const friendship = befriend(save, t.npc);
       return touch({ changed: true, ok: true, reward: t.reward, npc: t.npc, friendship, selfReported: true });
+    }
+    // ── 階段 D：v3 舊島轉入「舊島花園」，只做一次 ──
+    case 'migrateV1': {
+      const legacy = normalizeLegacy(action.legacy);
+      if (!legacy) return fail('invalid');
+      return touch(applyLegacy(save, legacy));
     }
     default:
       return fail('unknown-action');

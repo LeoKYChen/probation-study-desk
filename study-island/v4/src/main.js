@@ -9,6 +9,7 @@ import { questById } from './quests.js';
 import { isOpen, furnitureAt, canPlace, PLACE_REASONS } from './world/placement.js';
 import { OUTFITS, talkedToday } from './state.js';
 import { studyTask, focusRemaining } from './learning.js';
+import { V1_KEY, isV1, legacyFromV1, parseImport, makeBackup, saveSummary, MAX_IMPORT_BYTES } from './migration.js';
 import { openStore } from './persistence.js';
 import { createRenderer } from './render.js';
 import { createUI } from './ui.js';
@@ -301,6 +302,80 @@ setInterval(() => {
   if (focusRemaining(save) === 0 && !document.hidden) completeFocus();
 }, 1000);
 
+// ── 階段 D：舊島轉入、備份匯出／匯入（一律先預覽，確認才寫入） ──
+let pendingImport = null;
+
+// 只讀取 v3 的 localStorage，不寫、不刪。同網址（同協定、網域、連接埠）才讀得到。
+function readV1Local() {
+  try {
+    const raw = JSON.parse(localStorage.getItem(V1_KEY) || 'null');
+    return isV1(raw) ? raw : null;
+  } catch { return null; }
+}
+
+function previewLocal() {
+  const raw = readV1Local();
+  if (!raw) return ui.toast('這個網址找不到 v3 小島資料。');
+  try { pendingImport = { kind: 'v1', legacy: legacyFromV1(raw, { source: 'local' }) }; }
+  catch (e) { ui.toast(e.message, 3500); }
+  refresh();
+}
+
+async function importFile(file) {
+  if (file.size > MAX_IMPORT_BYTES) return ui.toast('檔案過大（限 1 MB）。');
+  try {
+    const r = parseImport(await file.text(), { source: 'file' });
+    if (r.kind === 'v1' && save.legacy) { pendingImport = null; ui.toast('這座小島已經有舊島花園了，不會重複轉入。', 3500); }
+    else pendingImport = r.kind === 'v4' ? { kind: 'v4', save: r.save, summary: saveSummary(r.save) } : r;
+  } catch (e) {
+    pendingImport = null;
+    ui.toast('匯入失敗：' + e.message, 4000);
+  }
+  refresh();
+}
+
+function cancelImport() {
+  pendingImport = null;
+  ui.toast('已取消，資料沒有任何改變。');
+  refresh();
+}
+
+async function confirmImport() {
+  const p = pendingImport;
+  if (!p) return;
+  if (p.kind === 'v1') {
+    await act('migrate', { type: 'migrateV1', legacy: p.legacy },
+      () => ui.toast('舊島花園轉入完成！v3 原資料沒有被修改。', 3500),
+      res => (res.reason === 'already' ? '這座小島已經有舊島花園了。' : '舊島資料不完整，沒有轉入。'));
+    pendingImport = null;
+    return refresh();
+  }
+  if (pending.has('replace')) return;
+  pending.add('replace');
+  try {
+    save = await store.replace(p.save);
+    player.path = []; player.onArrive = null; held.length = 0;
+    mover(player, save.player.x, save.player.y, save.player.facing);
+    pendingImport = null;
+    ui.toast('已匯入 v4 備份' + unsaved() + '。', 3500);
+  } catch {
+    ui.toast('匯入失敗：儲存時發生錯誤，原本的小島沒有改變。', 4000);
+  } finally {
+    pending.delete('replace');
+    refresh();
+  }
+}
+
+async function exportBackup() {
+  try { save = { ...(await store.load()), player: save.player }; } catch { /* 用畫面上的資料 */ }
+  const blob = new Blob([JSON.stringify(makeBackup(save), null, 2)], { type: 'application/json;charset=utf-8' });
+  const url = URL.createObjectURL(blob), a = document.createElement('a');
+  a.href = url; a.download = 'study-island-v4-' + today() + '.json';
+  document.body.append(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 2000);
+  ui.toast('已開始下載備份，請確認檔案確實存好。', 3500);
+}
+
 const actors = () => [playerTile(), ...npcs.flatMap(n => [{ x: n.x, y: n.y }, ...(n.to ? [n.to] : [])])];
 
 function startPlacing(itemId) {
@@ -332,8 +407,13 @@ async function placeAt(x, y) {
 // ── 畫面更新 ──
 function panelCtx() {
   return {
-    save, date: today(), persistent: store.persistent,
-    handlers: { outfit: setOutfit, craft, place: startPlacing, pickup, claim, focus: startFocus, focusCancel: cancelFocus, studyConfirm: reportStudy }
+    save, date: today(), persistent: store.persistent, pending: pendingImport,
+    v1Local: save.legacy ? null : (raw => raw && { islandName: typeof raw.islandName === 'string' ? raw.islandName : '小樹灣' })(readV1Local()),
+    handlers: {
+      outfit: setOutfit, craft, place: startPlacing, pickup, claim, focus: startFocus, focusCancel: cancelFocus, studyConfirm: reportStudy,
+      openData: () => { ui.closePanel(false); ui.openPanel('data', panelCtx()); refresh(); },
+      previewLocal, importFile, cancelImport, confirmImport, exportBackup
+    }
   };
 }
 
@@ -461,7 +541,7 @@ function releaseDir(dir) {
 addEventListener('keydown', e => {
   if (e.metaKey || e.ctrlKey || e.altKey) return;
   if (e.code === 'Escape') {
-    if (ui.dialogueOpen) ui.closeDialogue(); else if (ui.panel) ui.closePanel(); else if (placing) stopPlacing();
+    if (ui.dialogueOpen) ui.closeDialogue(); else if (ui.panel) { pendingImport = null; ui.closePanel(); } else if (placing) stopPlacing();
     return refresh();
   }
   const onButton = e.target instanceof HTMLElement && e.target.closest('button,a');
@@ -486,6 +566,7 @@ document.getElementById('placeCancel').addEventListener('click', stopPlacing);
 
 function togglePanel(name) {
   if (placing) stopPlacing();
+  pendingImport = null;
   if (ui.panel === name) ui.closePanel();
   else { held.length = 0; player.path = []; player.onArrive = null; ui.openPanel(name, panelCtx()); }
   refresh();
@@ -494,7 +575,7 @@ document.querySelectorAll('.dock [data-panel]').forEach(b => {
   b.setAttribute('aria-expanded', 'false');
   b.addEventListener('click', () => togglePanel(b.dataset.panel));
 });
-document.getElementById('drawerClose').addEventListener('click', refresh);
+document.getElementById('drawerClose').addEventListener('click', () => { pendingImport = null; refresh(); });
 
 // 螢幕方向鍵（可選）：偏好只存在本機，讀寫失敗就用預設。
 const DPAD_KEY = 'probationStudyIsland.v4.dpad';

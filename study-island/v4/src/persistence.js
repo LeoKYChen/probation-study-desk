@@ -64,6 +64,17 @@ function idbStore(db) {
         tx.onabort = () => reject(tx.error || new Error('transaction aborted'));
       });
     },
+    // 匯入 v4 備份：整份存檔在單一交易中取代；失敗時原資料不變。
+    replace(next) {
+      return new Promise((resolve, reject) => {
+        const save = normalizeSave(next);
+        const tx = db.transaction(STORE, 'readwrite');
+        tx.objectStore(STORE).put(save, KEY);
+        tx.oncomplete = () => { if (channel) channel.postMessage('changed'); resolve(save); };
+        tx.onerror = () => reject(tx.error || new Error('transaction failed'));
+        tx.onabort = () => reject(tx.error || new Error('transaction aborted'));
+      });
+    },
     onExternalChange(fn) { listeners.add(fn); }
   };
 }
@@ -80,6 +91,7 @@ function memoryStore(error) {
       save = next;
       return { save: structuredClone(save), result };
     },
+    async replace(next) { save = normalizeSave(next); return structuredClone(save); },
     onExternalChange() {}
   };
 }

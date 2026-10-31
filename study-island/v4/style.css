@@ -157,3 +157,17 @@ button:focus-visible, a:focus-visible { outline: 3px solid #2e6b86; outline-offs
 .self { font-size: 11px; font-weight: 700; padding: 1px 6px; border-radius: 6px; background: #fff1d6; color: #7a5a12; vertical-align: 2px; }
 .confirm { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
 .row small a { color: #2d6b5a; font-weight: 700; }
+.preview { margin: 8px 0 4px; padding: 12px 14px; border-radius: 14px; background: #fff7e3; border: 2px solid #f0dca6; }
+.preview ul { margin: 6px 0; padding-left: 20px; font-size: 14px; }
+.garden {
+  display: grid; grid-template-columns: repeat(6, 1fr); gap: 3px; max-width: 300px; margin: 6px auto 8px;
+  padding: 8px; border-radius: 16px; background: #81c8d9;
+}
+.garden .cell {
+  aspect-ratio: 1; display: grid; place-items: center; border-radius: 7px; font-size: clamp(18px, 6vw, 26px);
+  background: linear-gradient(160deg, #b6de8e, #95cb7f);
+}
+.garden .cell.fixed { opacity: .8; }
+.file-btn { display: inline-flex; align-items: center; cursor: pointer; }
+.file-btn:focus-within { outline: 3px solid #2e6b86; outline-offset: 2px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
