@@ -1,5 +1,7 @@
 # 觀護學習島 v4｜可探索遊戲測試版
 
+**已部署測試版：** https://probation-study-island-v4-preview-bcobamjgj-ris001214-3112.vercel.app/ （獨立 Vercel 網站；首頁、CSS 與 JavaScript 均已 HTTP 200；尚待 iPhone／Android 實機驗收）。
+
 **獨立開發預覽，未合併正式站。** 依 2026-10-31 的 v4 玩法規格製作。人物、場景及對話為原創內容，不使用任天堂受保護的素材。
 
 ## 本機啟動與遊玩
@@ -45,3 +47,9 @@ node study-island-v4/test.cjs
 - v4.0 沒有自動串接考古題學習紀錄；未成功保存作答或只輸入文字，不能宣稱完成題目。
 - Vercel 測試網域與舊 v3 網域不同，資料不會直接共用；請依匯出／匯入程序操作。
 - 先保持 Draft PR；正式網站與 PWA 清單不變，待 CI 與手機實測、備份驗收後再討論整合。
+
+## 本次發布查核（2026-10-31）
+
+- GitHub Actions：All checks 通過；Study Island v4 smoke tests 通過。
+- Vercel 專用測試部署回報 READY，HTML／CSS／JS 各回應 HTTP 200。
+- 上述結果不等於 iPhone Safari 的手勢、觸控、IndexedDB 實際保存已經完整通過。請依操作劇本自行驗收，再考慮是否整合。
