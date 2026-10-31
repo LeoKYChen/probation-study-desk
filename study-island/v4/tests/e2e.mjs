@@ -516,6 +516,58 @@ await step('既有學習頁面：玩小島前後，考古題／備考書桌／�
   await ctx.close();
 });
 
+// ── 修仙主題 X1：切換外觀，進度不變 ──
+await step('修仙主題：切換後名稱與畫面改變、進度完全不變、重新整理保留；可切回島嶼', async () => {
+  const ctx = await browser.newContext({ ...devices['iPhone 13'], viewport: { width: 375, height: 740 } });
+  const p = await ctx.newPage();
+  p.on('pageerror', e => errors.push(String(e)));
+  await p.goto(URL); await p.waitForFunction(() => globalThis.__island);
+  await p.evaluate(async () => {
+    const m = await import('./src/persistence.js'), c = await import('./src/collectibles.js');
+    const s = await m.openStore(), d = c.localDate();
+    for (const id of ['beach-shell-1', 'forest-wood-1']) await s.mutate({ type: 'collect', spotId: id, date: d });
+    await s.mutate({ type: 'place', itemId: 'starter-stool', x: 9, y: 11, actors: [] });
+  });
+  await p.reload(); await p.waitForFunction(() => globalThis.__island);
+  const progress = () => p.evaluate(() => JSON.stringify({ inv: __island.save.inventory, placed: __island.save.placed, npc: __island.save.npc, ledger: __island.save.rewardLedger }));
+  const before = await progress();
+  await p.click('.dock [data-panel=bag]');
+  await p.click('[data-act=theme][data-id=xianxia]');
+  await p.waitForFunction(() => __island.save.theme === 'xianxia');
+  assert.equal(await progress(), before, '切換主題不改進度');
+  assert.equal(await p.textContent('#islandName'), '青嵐山');
+  assert.match(await p.textContent('.hud .shells'), /💎/);
+  assert.deepEqual(await p.$$eval('.dock button span', els => els.map(e => e.textContent)), ['乾坤袋', '師門', '丹房']);
+  assert.match(await p.textContent('#drawerBody'), /靈石 ×1/);
+  assert.ok(!(await p.textContent('#drawerBody')).includes('貝殼'));
+  assert.match(await p.textContent('#drawerBody'), /舊日庭園/);
+  await p.click('#drawerClose');
+  await p.click('.dock [data-panel=build]');
+  assert.match(await p.textContent('#drawerTitle'), /丹房與佈置/);
+  assert.match(await p.textContent('#drawerBody'), /山上的器物[\s\S]*入門蒲團/);
+  await p.click('#drawerClose');
+  if (SHOTS) await p.screenshot({ path: SHOTS + '/12-xianxia-375.png' });
+  await p.reload(); await p.waitForFunction(() => globalThis.__island);
+  assert.equal(await p.evaluate(() => __island.save.theme), 'xianxia', '重新整理保留主題');
+  assert.equal(await p.textContent('#islandName'), '青嵐山');
+  await tapTile(p, (await npcTile(p)).x, (await npcTile(p)).y, true);
+  await p.waitForSelector('#dialogue:not([hidden])', { timeout: 15000 });
+  assert.match(await p.textContent('#dlgName'), /師姐秋棠/);
+  if (SHOTS) await p.screenshot({ path: SHOTS + '/13-xianxia-dialogue-375.png' });
+  await p.click('#dlgNext'); await p.click('#dlgNext'); await p.click('#dlgNext');
+  await p.click('.dock [data-panel=tasks]');
+  assert.match(await p.textContent('#drawerTitle'), /師門任務/);
+  assert.match(await p.textContent('#drawerBody'), /打坐 25 分鐘/);
+  assert.match(await p.textContent('#drawerBody'), /自行回報/);
+  await p.click('#drawerClose');
+  await p.click('.dock [data-panel=bag]');
+  await p.click('[data-act=theme][data-id=island]');
+  await p.waitForFunction(() => __island.save.theme === 'island');
+  assert.equal(await p.textContent('#islandName'), '小樹灣');
+  assert.match(await p.textContent('#islandName'), /小樹灣/);
+  await ctx.close();
+});
+
 // ── 桌面（鍵盤）──
 const desk = await browser.newContext({ viewport: { width: 1280, height: 800 } });
 const dp = await desk.newPage();
@@ -541,6 +593,16 @@ await step('桌面：WASD 移動、撞牆停下、E 與栗子對話、Esc 關閉
   await dp.keyboard.press('Escape');
   assert.equal(await dp.isVisible('#drawer'), false);
 });
+
+if (SHOTS) {
+  const c = await browser.newContext({ viewport: { width: 1280, height: 800 } });
+  const q = await c.newPage();
+  await q.goto(URL); await q.waitForFunction(() => globalThis.__island);
+  await q.evaluate(async () => { const m = await import('./src/persistence.js'); await (await m.openStore()).mutate({ type: 'setTheme', theme: 'xianxia' }); });
+  await q.reload(); await q.waitForFunction(() => globalThis.__island);
+  await q.screenshot({ path: SHOTS + '/14-xianxia-desktop.png' });
+  await c.close();
+}
 
 await step('沒有 JavaScript 錯誤', async () => { assert.deepEqual(errors, []); });
 

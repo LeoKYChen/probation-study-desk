@@ -12,6 +12,8 @@ import { normalizeLegacy, applyLegacy } from './migration.js';
 
 export const SCHEMA = 'probation-study-island-v4';
 export const VERSION = 1;
+// 外觀主題只影響顯示；所有規則與進度在兩種主題間共用。
+export const THEME_IDS = ['island', 'xianxia'];
 export const OUTFITS = [
   { id: 'leaf', name: '葉綠', shirt: '#5f9e6e', trim: '#3f7350' },
   { id: 'sky', name: '天藍', shirt: '#5b93c7', trim: '#3a6b99' },
@@ -35,6 +37,7 @@ export function createSave(now = new Date()) {
     daily: null,
     focus: null,
     legacy: null,
+    theme: 'island',
     npc: {},
     rewardLedger: {}
   };
@@ -91,6 +94,7 @@ export function normalizeSave(raw) {
     ? { minutes: f.minutes, startedAt: f.startedAt } : null;
   s.npc = isObj(raw.npc) ? raw.npc : {};
   s.legacy = raw.legacy ? normalizeLegacy(raw.legacy) : null;
+  s.theme = THEME_IDS.includes(raw.theme) ? raw.theme : 'island';
   s.rewardLedger = isObj(raw.rewardLedger) ? raw.rewardLedger : {};
   return s;
 }
@@ -148,6 +152,12 @@ export function applyAction(save, action, now = new Date()) {
       rec.lastTalkDate = action.date;
       save.daily.talked.push(action.npcId);
       return touch({ changed: true, ok: true, talkedToday: false, friendship: befriend(save, action.npcId) });
+    }
+    case 'setTheme': {
+      if (!THEME_IDS.includes(action.theme)) return fail('unknown-theme');
+      if (save.theme === action.theme) return { changed: false, ok: true };
+      save.theme = action.theme;
+      return touch({ changed: true, ok: true });
     }
     case 'outfit': {
       if (!OUTFITS.some(o => o.id === action.outfit)) return fail('unknown-outfit');

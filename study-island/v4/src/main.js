@@ -11,6 +11,7 @@ import { OUTFITS, talkedToday } from './state.js';
 import { studyTask, focusRemaining } from './learning.js';
 import { V1_KEY, isV1, legacyFromV1, parseImport, makeBackup, saveSummary, MAX_IMPORT_BYTES } from './migration.js';
 import { openStore } from './persistence.js';
+import { setTheme, theme, w, mat, furn, npcName, terrainLabel, studyTitle } from './theme.js';
 import { createRenderer } from './render.js';
 import { createUI } from './ui.js';
 
@@ -35,7 +36,9 @@ const effects = [];
 const held = [];
 const pending = new Set();
 let marker = null, lastBump = 0, saveTimer = 0, talking = null, approaching = null, placing = null;
-const matOf = id => MATERIALS.find(m => m.id === id);
+const matOf = id => mat(id);
+const fname = id => furn(id).name;
+const nname = n => npcName(n.id);
 
 // ── 碰撞：地形 + 居民／玩家目前與即將抵達的格子 ──
 const occupied = (o, x, y) => (o.x === x && o.y === y) || (o.to && o.to.x === x && o.to.y === y);
@@ -66,9 +69,9 @@ function blockedFeedback(x, y, why) {
 
 function obstacleMessage(x, y) {
   const t = tileAt(x, y);
-  if (t.id === 'water') return '那裡是海，走不過去。';
-  if (t.id === 'house') return '這是你的小屋，之後會開放進去。';
-  return t.label + '擋住了，換條路走吧。';
+  if (t.id === 'water') return w('waterMsg');
+  if (t.id === 'house') return w('homeMsg');
+  return terrainLabel(t.id) + '擋住了，換條路走吧。';
 }
 
 function tryStep(dir) {
@@ -76,7 +79,7 @@ function tryStep(dir) {
   player.facing = dir;
   if (freeForPlayer(nx, ny)) { startStep(player, { x: nx, y: ny }); return true; }
   const n = npcAt(nx, ny), f = furnitureAt(save, nx, ny);
-  blockedFeedback(nx, ny, n ? n.name + '在這裡，按 E 或「互動」可以聊天。' : f ? furnitureById(f.id).name + '擋住了。' : obstacleMessage(nx, ny));
+  blockedFeedback(nx, ny, n ? nname(n) + '在這裡，按 E 或「互動」可以聊天。' : f ? fname(f.id) + '擋住了。' : obstacleMessage(nx, ny));
   return false;
 }
 
@@ -104,7 +107,7 @@ function onTap(tx, ty, fx = tx + .5, fy = ty + .5) {
   if (n) {
     if (adjacent(from, n) && !player.moving) return talkTo(n);
     const r = pathToNeighbor(from, n, freeForPlayer, MAP_W, MAP_H);
-    if (!r) return blockedFeedback(n.x, n.y, '暫時走不到' + n.name + '旁邊。');
+    if (!r) return blockedFeedback(n.x, n.y, '暫時走不到' + nname(n) + '旁邊。');
     return walkTo(r.path, () => { approaching = null; if (adjacent(player, n)) talkTo(n); }, n);
   }
   const spot = spotAt(tx, ty);
@@ -115,7 +118,7 @@ function onTap(tx, ty, fx = tx + .5, fy = ty + .5) {
   }
   const f = furnitureAt(save, tx, ty);
   if (f) {
-    const name = furnitureById(f.id).name;
+    const name = fname(f.id);
     if (adjacent(from, f) && !player.moving) { player.facing = dirBetween(player, f) || player.facing; return ui.toast('按 E 或「收起' + name + '」可以收回背包。'); }
     const r = pathToNeighbor(from, f, freeForPlayer, MAP_W, MAP_H);
     if (!r) return blockedFeedback(tx, ty, '暫時走不到' + name + '旁邊。');
@@ -133,11 +136,11 @@ const isAvailable = spot => availableSpots(save, today()).some(s => s.id === spo
 function nearbyTarget() {
   if (player.moving || ui.dialogueOpen || ui.panel) return null;
   const n = npcs.find(x => !x.moving && adjacent(player, x));
-  if (n) return { kind: 'npc', npc: n, label: '和' + n.name + '說話' };
+  if (n) return { kind: 'npc', npc: n, label: '和' + nname(n) + '說話' };
   const spot = availableSpots(save, today()).find(s => (s.x === player.x && s.y === player.y) || adjacent(player, s));
   if (spot) return { kind: 'spot', spot, label: '撿起' + matOf(spot.material).name };
   const f = (save.placed || []).find(p => adjacent(player, p));
-  if (f) return { kind: 'furniture', item: f, label: '收起' + furnitureById(f.id).name };
+  if (f) return { kind: 'furniture', item: f, label: '收起' + fname(f.id) };
   return null;
 }
 
@@ -178,12 +181,12 @@ async function collect(spot) {
     const m = matOf(spot.material);
     if (result.ok) {
       effects.push({ x: spot.x, y: spot.y, text: '+1 ' + m.icon, life: 1 });
-      ui.toast('撿到' + m.name + '！背包裡有 ' + result.total + ' 個' + (store.persistent ? '。' : '（未保存）。'));
+      ui.toast('撿到' + m.name + '！' + w('bag') + '裡有 ' + result.total + ' 個' + (store.persistent ? '。' : '（未保存）。'));
     } else if (result.reason === 'already') {
       ui.toast('這裡今天已經撿過了。');
     }
   } catch {
-    ui.toast('儲存失敗：材料沒有放進背包，請再試一次。', 3500);
+    ui.toast('儲存失敗：材料沒有放進' + w('bag') + '，請再試一次。', 3500);
     ui.banner('剛才的儲存失敗了，小島進度可能沒有保存。');
   } finally {
     pending.delete(spot.id);
@@ -205,6 +208,22 @@ async function savePosition() {
     const r = await store.mutate({ type: 'move', x: player.x, y: player.y, facing: player.facing });
     save = r.save;
   } catch { ui.banner('位置儲存失敗，重新整理後可能會回到上一次的位置。'); }
+}
+
+// 外觀主題：只改顯示，存檔其他內容不變。
+function applyTheme() {
+  setTheme(save.theme);
+  ui.applyChrome();
+}
+
+async function changeTheme(id) {
+  try {
+    const r = await store.mutate({ type: 'setTheme', theme: id });
+    save = r.save;
+  } catch { ui.toast('外觀主題儲存失敗。'); }
+  applyTheme();
+  ui.toast('已切換為「' + theme().label + '」主題，進度完全不變。');
+  refresh();
 }
 
 async function setOutfit(id) {
@@ -239,16 +258,16 @@ const unsaved = () => (store.persistent ? '' : '（未保存）');
 function craft(recipeId) {
   const r = recipeById(recipeId);
   if (!r) return;
-  const name = furnitureById(r.makes).name;
+  const name = fname(r.makes);
   return act('craft:' + recipeId, { type: 'craft', recipeId, date: today() },
-    () => ui.toast('做好了一個' + name + '！已放進背包' + unsaved() + '。'),
+    () => ui.toast('做好了一個' + name + '！已放進' + w('bag') + unsaved() + '。'),
     res => (res.reason === 'missing' ? '材料不夠：' + res.missing.map(m => matOf(m.id).name + '還差 ' + (m.need - m.have)).join('、') : '現在不能製作。'));
 }
 
 function pickup(uid) {
   uid = Number(uid);
   return act('pickup:' + uid, { type: 'pickup', uid },
-    res => ui.toast(furnitureById(res.item).name + '收回背包了' + unsaved() + '。'),
+    res => ui.toast(fname(res.item) + '收回' + w('bag') + '了' + unsaved() + '。'),
     () => '這件家具已經收起來了。');
 }
 
@@ -256,8 +275,8 @@ function claim(questId) {
   const q = questById(questId);
   if (!q) return;
   return act('claim:' + questId, { type: 'claimQuest', questId, date: today() },
-    res => ui.toast('領到委託獎勵：' + Object.entries(res.reward).map(([id, n]) => matOf(id).icon + '×' + n).join(' ') + unsaved()),
-    res => (res.reason === 'already' ? '這個委託今天已經領過了。' : '委託還沒完成。'));
+    res => ui.toast(w('claimMsg') + '：' + Object.entries(res.reward).map(([id, n]) => matOf(id).icon + '×' + n).join(' ') + unsaved()),
+    res => (res.reason === 'already' ? '這項任務今天已經領過了。' : '任務還沒完成。'));
 }
 
 // ── 階段 C：專注計時與自行回報的學習任務 ──
@@ -265,12 +284,12 @@ const rewardLine = r => Object.entries(r).map(([id, n]) => matOf(id).icon + '×'
 
 function startFocus(minutes) {
   return act('focus', { type: 'focusStart', minutes: Number(minutes) },
-    () => ui.toast('開始專注 ' + minutes + ' 分鐘。去讀書吧，小島會等你' + unsaved() + '。', 3000),
-    res => (res.reason === 'running' ? '已經有一段專注在進行中。' : '現在不能開始。'));
+    () => ui.toast('開始' + w('focus') + ' ' + minutes + ' 分鐘。' + w('focusGo') + unsaved() + '。', 3000),
+    res => (res.reason === 'running' ? '已經有一段' + w('focus') + '在進行中。' : '現在不能開始。'));
 }
 
 function cancelFocus() {
-  return act('focus', { type: 'focusCancel' }, () => ui.toast('已取消專注，不給獎勵；隨時可以再開始。'));
+  return act('focus', { type: 'focusCancel' }, () => ui.toast('已取消' + w('focus') + '，不給獎勵；隨時可以再開始。'));
 }
 
 // 時間到才結算；多分頁同時結算時，交易保證只有一邊拿到獎勵。
@@ -279,10 +298,10 @@ async function completeFocus() {
   if (completing) return;
   completing = true;
   await act('focus', { type: 'focusComplete', date: today() }, res => {
-    if (res.capped) ui.toast('專注 ' + res.minutes + ' 分鐘完成！今天這項的獎勵已達上限，但專注本身一樣有價值。', 4000);
+    if (res.capped) ui.toast(w('focus') + ' ' + res.minutes + ' 分鐘完成！今天這項的獎勵已達上限，但' + w('focus') + '本身一樣有價值。', 4000);
     else {
-      effects.push({ x: player.x, y: player.y, text: '⏱ ' + rewardLine(res.reward), life: 1 });
-      ui.toast('專注 ' + res.minutes + ' 分鐘完成！獲得 ' + rewardLine(res.reward) + '，' + npcById(res.npc).name + '親密度 +1' + unsaved() + '。', 4000);
+      effects.push({ x: player.x, y: player.y, text: w('focusIcon') + ' ' + rewardLine(res.reward), life: 1 });
+      ui.toast(w('focus') + ' ' + res.minutes + ' 分鐘完成！獲得 ' + rewardLine(res.reward) + '，' + npcName(res.npc) + w('friendship') + ' +1' + unsaved() + '。', 4000);
     }
   });
   completing = false;
@@ -292,7 +311,7 @@ function reportStudy(taskId) {
   const t = studyTask(taskId);
   if (!t) return;
   return act('study:' + taskId, { type: 'studyReport', taskId, date: today() },
-    res => ui.toast('已記錄「' + t.title + '」（自行回報）：' + rewardLine(res.reward) + '，' + npcById(res.npc).name + '親密度 +1' + unsaved() + '。', 3500),
+    res => ui.toast('已記錄「' + studyTitle(t.id, t.title) + '」（自行回報）：' + rewardLine(res.reward) + '，' + npcName(res.npc) + w('friendship') + ' +1' + unsaved() + '。', 3500),
     res => (res.reason === 'already' ? '今天已經回報過了。' : '現在不能回報。'));
 }
 
@@ -384,7 +403,7 @@ function startPlacing(itemId) {
   ui.closePanel(false);
   placing = { itemId, hints: [] };
   for (let y = 0; y < MAP_H; y++) for (let x = 0; x < MAP_W; x++) if (canPlace(save, x, y, actors()).ok) placing.hints.push({ x, y });
-  ui.placeBar('點一塊有白點的空地擺放' + f.name);
+  ui.placeBar('點一塊有白點的空地擺放' + fname(itemId));
   refresh();
 }
 
@@ -399,7 +418,7 @@ async function placeAt(x, y) {
   const chk = canPlace(save, x, y, actors());
   if (!chk.ok) return blockedFeedback(x, y, PLACE_REASONS[chk.reason]);
   const res = await act('place', { type: 'place', itemId, x, y, actors: actors() },
-    () => { effects.push({ x, y, text: '✨', life: 1 }); ui.toast(furnitureById(itemId).name + '擺好了' + unsaved() + '！靠近按 E 可以收回。'); },
+    () => { effects.push({ x, y, text: '✨', life: 1 }); ui.toast(fname(itemId) + '擺好了' + unsaved() + '！靠近按 E 可以收回。'); },
     r => PLACE_REASONS[r.reason] || '這裡不能擺。');
   if (res && res.ok) stopPlacing();
 }
@@ -410,7 +429,7 @@ function panelCtx() {
     save, date: today(), persistent: store.persistent, pending: pendingImport,
     v1Local: save.legacy ? null : (raw => raw && { islandName: typeof raw.islandName === 'string' ? raw.islandName : '小樹灣' })(readV1Local()),
     handlers: {
-      outfit: setOutfit, craft, place: startPlacing, pickup, claim, focus: startFocus, focusCancel: cancelFocus, studyConfirm: reportStudy,
+      outfit: setOutfit, theme: changeTheme, craft, place: startPlacing, pickup, claim, focus: startFocus, focusCancel: cancelFocus, studyConfirm: reportStudy,
       openData: () => { ui.closePanel(false); ui.openPanel('data', panelCtx()); refresh(); },
       previewLocal, importFile, cancelImport, confirmImport, exportBackup
     }
@@ -608,7 +627,7 @@ document.addEventListener('visibilitychange', async () => {
 });
 addEventListener('pagehide', () => { savePosition(); });
 store.onExternalChange(async () => {
-  try { const fresh = await store.load(); save = { ...fresh, player: save.player }; refresh(); } catch { /* 下次操作會重新讀取 */ }
+  try { const fresh = await store.load(); save = { ...fresh, player: save.player }; applyTheme(); refresh(); } catch { /* 下次操作會重新讀取 */ }
 });
 
 new ResizeObserver(() => {
@@ -617,6 +636,7 @@ new ResizeObserver(() => {
 }).observe(world);
 renderer.resize(world.clientWidth, world.clientHeight);
 setInterval(() => ui.hud(save), 60000);
+applyTheme();
 document.getElementById('focusChip').addEventListener('click', () => { if (ui.panel !== 'tasks') togglePanel('tasks'); });
 refresh();
 // 關掉頁面期間專注已經結束：重新開啟時結算一次。

@@ -1,10 +1,12 @@
 // 原創居民與對話。對話只做學習鼓勵與遊戲引導，不含需查證的法律或學理內容。
-// 物種沿用 v3：栗子＝狐狸、阿棕＝熊、小白＝兔子、墨墨＝貓頭鷹。
+// 物種沿用 v3：栗子＝狐狸、阿棕＝熊、小白＝兔子、墨墨＝貓頭鷹。名稱與台詞依外觀主題（theme.js）切換。
+import { theme, npcName } from '../theme.js';
 export const NPCS = [
   {
     id: 'chestnut', name: '栗子', species: 'fox', subject: '少年事件處理法',
     home: { x: 12, y: 9 }, range: 2,
     colors: { body: '#d9844a', belly: '#fbe6cc', ear: '#8a4a2b', scarf: '#5c9a8a' },
+    robe: { robe: '#e8a87c', trim: '#b8664a', hair: '#3b2a24', style: 'bun' },
     hint: ctx => ctx.shellsToday === 0
       ? '南邊的沙灘上有 ' + ctx.shellsTotal + ' 個貝殼在閃閃發光，去看看吧？'
       : ctx.shellsToday < ctx.shellsTotal
@@ -16,6 +18,7 @@ export const NPCS = [
     id: 'brownie', name: '阿棕', species: 'bear', subject: '犯罪學',
     home: { x: 3, y: 6 }, range: 2,
     colors: { body: '#a87b58', belly: '#e9d2b6', ear: '#7d5940', scarf: '#d4a24c' },
+    robe: { robe: '#7a9e7e', trim: '#4f7356', hair: '#2b2622', style: 'topknot' },
     hint: () => '樹林裡常有掉下來的樹枝，撿回去就是木材，可以拿來做家具。',
     rest: '一次搞懂一件事就好，慢慢來比較穩。'
   },
@@ -23,6 +26,7 @@ export const NPCS = [
     id: 'snowy', name: '小白', species: 'bunny', subject: '心理學',
     home: { x: 5, y: 11 }, range: 2,
     colors: { body: '#f6f3ee', belly: '#ffffff', ear: '#f2b8c0', scarf: '#8fb6e0' },
+    robe: { robe: '#f4f1ea', trim: '#8fb6e0', hair: '#4a3530', style: 'twin' },
     hint: () => '我最喜歡花了！多撿幾片葉子，就能在工坊做花圃。',
     rest: '今天有好好吃飯、好好睡覺嗎？照顧自己也很重要。'
   },
@@ -30,6 +34,7 @@ export const NPCS = [
     id: 'inky', name: '墨墨', species: 'owl', subject: '諮商／訂正',
     home: { x: 12, y: 6 }, range: 1,
     colors: { body: '#6f6a8f', belly: '#d8d2ea', ear: '#4f4a6e', scarf: '#e0b65a' },
+    robe: { robe: '#6f6a8f', trim: '#e0b65a', hair: '#d9d6d0', style: 'elder' },
     hint: () => '工坊在下面的「建造」裡。家具擺錯了也能收回來重新放——訂正也是這樣。',
     rest: '不需要完美的一天，真實的五分鐘也是進步。'
   }
@@ -45,13 +50,14 @@ export function friendshipLabel(n) {
 
 // ctx：{ talkedToday, friendship, shellsToday, shellsTotal }
 export function linesFor(npc, ctx) {
+  const t = theme(), g = t.greet, own = (t.lines && t.lines[npc.id]) || npc;
   const lines = [];
-  if (ctx.talkedToday) lines.push('又見面了！今天的風好舒服。');
-  else if ((ctx.friendship || 0) <= 1) lines.push('嗨！我是' + npc.name + '，很高興認識你。');
-  else if (ctx.friendship >= 6) lines.push('是你！能在島上遇到你真好。');
-  else lines.push('早安！我們越來越熟了呢。');
-  lines.push(npc.hint(ctx));
-  lines.push(npc.rest);
+  if (ctx.talkedToday) lines.push(g.again);
+  else if ((ctx.friendship || 0) <= 1) lines.push(g.first(npcName(npc.id)));
+  else if (ctx.friendship >= 6) lines.push(g.close);
+  else lines.push(g.mid);
+  lines.push(own.hint(ctx));
+  lines.push(own.rest);
   return lines;
 }
 

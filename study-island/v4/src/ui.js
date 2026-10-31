@@ -7,12 +7,16 @@ import { collectedCount, spotTotal } from './collectibles.js';
 import { OUTFITS } from './state.js';
 import { drawPortrait } from './render.js';
 import { V1_GOODS, V1_FIXED, V1_HEARTS, legacySummary } from './migration.js';
+import { THEME_LIST, theme, w, mat, furn, npcName, npcRole, studyTitle, placeName } from './theme.js';
 import { FOCUS_OPTIONS, STUDY_TASKS, focusRemaining, focusDoneToday, studyDoneToday, formatMs } from './learning.js';
 
 const $ = id => document.getElementById(id);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
-const matName = id => (MATERIALS.find(m => m.id === id) || { name: id }).name;
-const matIcon = id => (MATERIALS.find(m => m.id === id) || { icon: '' }).icon;
+const matName = id => mat(id).name;
+const matIcon = id => mat(id).icon;
+const fname = id => furn(id).name;
+const ficon = id => furn(id).icon;
+const who = id => (npcRole(id) ? npcRole(id) : '') + npcName(id);
 const rewardText = r => Object.entries(r).map(([id, n]) => matIcon(id) + matName(id) + '×' + n).join('、');
 
 export function seasonLabel(d = new Date()) {
@@ -29,6 +33,8 @@ const localTime = iso => {
   const p = n => String(n).padStart(2, '0');
   return d.getFullYear() + '-' + p(d.getMonth() + 1) + '-' + p(d.getDate()) + ' ' + p(d.getHours()) + ':' + p(d.getMinutes());
 };
+// 島嶼主題沿用原本的委託名稱；修仙主題把材料名稱換成靈材。
+const questTitle = q => q.title.replace('貝殼', matName('shell'));
 const hearts = n => '♥'.repeat(Math.min(5, Math.ceil(n / 2))) + '♡'.repeat(5 - Math.min(5, Math.ceil(n / 2)));
 
 export function createUI() {
@@ -49,10 +55,30 @@ export function createUI() {
   }
 
   function hud(save) {
-    $('islandName').textContent = save.islandName;
+    $('islandName').textContent = placeName(save);
     $('shellCount').textContent = count(save.inventory, 'shell');
     $('clock').textContent = seasonLabel();
     focusTick(save);
+  }
+
+  // 主題外框：底部按鈕、提示、標題、地圖說明與瀏覽器配色。
+  function applyChrome() {
+    const t = theme();
+    document.documentElement.dataset.theme = t.id;
+    for (const [panelId, key] of [['bag', 'bag'], ['tasks', 'tasks'], ['build', 'build']]) {
+      const b = document.querySelector('.dock [data-panel="' + panelId + '"]');
+      if (b) { b.firstChild.textContent = w(key + 'Icon'); b.querySelector('span').textContent = w(key); }
+    }
+    $('hint').textContent = w('hint');
+    $('game').setAttribute('aria-label', (t.place || '小島') + w('mapLabel') + '。點擊地面移動，或用方向鍵／WASD 移動，靠近後按 E 互動。');
+    document.title = '觀護學習島 v4｜' + (t.place || '小樹灣');
+    const meta = document.querySelector('meta[name=theme-color]');
+    if (meta) meta.content = t.palette.themeColor;
+    document.querySelector('.hud .island').firstChild.textContent = t.icon + ' ';
+    $('focusChip').firstChild.textContent = w('focusIcon') + ' ';
+    const shells = document.querySelector('.hud .shells');
+    shells.firstChild.textContent = mat('shell').icon + ' ';
+    shells.title = mat('shell').name;
   }
 
   // 專注倒數：HUD 小標籤與任務抽屜內的計時文字，每秒更新而不重繪整個抽屜。
@@ -69,8 +95,8 @@ export function createUI() {
   // 對話：一次顯示一行，按「繼續」或 E／Enter 前進，最後一行後關閉。
   function showDialogue(npc, lines, onClose, friendship = 0) {
     dlg = { lines, i: 0, onClose };
-    $('dlgName').textContent = npc.name;
-    $('dlgSubject').innerHTML = '・' + esc(npc.subject) + ' <span class="hearts" title="親密度：' + friendshipLabel(friendship) + '">' + hearts(friendship) + '</span>';
+    $('dlgName').textContent = who(npc.id);
+    $('dlgSubject').innerHTML = '・' + esc(npc.subject) + ' <span class="hearts" title="' + w('friendship') + '：' + friendshipLabel(friendship) + '">' + hearts(friendship) + '</span>';
     $('dialogue').hidden = false;
     drawPortrait($('portrait'), npc);
     renderLine();
@@ -141,38 +167,42 @@ export function createUI() {
     handlers = ctx.handlers || {};
     const body = $('drawerBody');
     if (panel === 'bag') {
-      $('drawerTitle').textContent = '🎒 背包';
-      const mats = MATERIALS.map(m => '<div class="slot"><span class="ic">' + m.icon + '</span><b>' + esc(m.name) + ' ×' + count(save.inventory, m.id) + '</b><small>在' + esc(m.where) + '撿</small></div>').join('');
-      const furn = furnitureList(save.inventory).map(f => row(f.icon, esc(f.name) + ' ×' + f.qty, esc(f.note))).join('') ||
-        '<p class="note">背包裡沒有家具。到「建造」的工坊可以製作。</p>';
+      $('drawerTitle').textContent = w('bagIcon') + ' ' + w('bag');
+      const mats = MATERIALS.map(m => '<div class="slot"><span class="ic">' + matIcon(m.id) + '</span><b>' + esc(matName(m.id)) + ' ×' + count(save.inventory, m.id) + '</b><small>在' + esc(mat(m.id).where) + '撿</small></div>').join('');
+      const furnRows = furnitureList(save.inventory).map(f => row(ficon(f.id), esc(fname(f.id)) + ' ×' + f.qty, esc(furn(f.id).note))).join('') ||
+        '<p class="note">' + w('bag') + '裡沒有' + w('furniture') + '。到「' + w('build') + '」可以製作。</p>';
       const friends = NPCS.map(n => {
         const fr = (save.npc[n.id] || {}).friendship || 0;
-        return row('🐾', esc(n.name) + ' <span class="hearts">' + hearts(fr) + '</span>', esc(n.subject) + '・' + friendshipLabel(fr));
+        return row(theme().id === 'xianxia' ? '🧑' : '🐾', esc(who(n.id)) + ' <span class="hearts">' + hearts(fr) + '</span>', esc(n.subject) + '・' + friendshipLabel(fr));
       }).join('');
+      const themes = THEME_LIST.map(t =>
+        '<button type="button" class="outfit" data-act="theme" data-id="' + t.id + '" aria-pressed="' + (save.theme === t.id) + '">' + t.icon + ' ' + esc(t.label) + '</button>').join('');
       const outfits = OUTFITS.map(o =>
         '<button type="button" class="outfit" data-act="outfit" data-id="' + o.id + '" aria-pressed="' + (save.player.outfit === o.id) + '"><i style="background:' + o.shirt + '"></i>' + esc(o.name) + '</button>').join('');
-      body.innerHTML = '<h3>材料</h3><div class="grid">' + mats + '</div><h3>家具</h3>' + furn +
-        '<h3>居民親密度</h3>' + friends +
-        '<h3>衣服顏色</h3><div class="outfits">' + outfits + '</div>' +
-        '<h3>資料</h3><button type="button" class="btn secondary" data-act="openData">💾 備份與舊島花園</button>' +
-        '<p class="note">' + (persistent ? '背包存在這台裝置的瀏覽器（IndexedDB），重新整理不會消失；不同網址、裝置或瀏覽器不會互通。'
-          : '⚠ 這個瀏覽器目前無法儲存，背包只存在本頁，關閉或重新整理就會消失。') + '</p>';
+      body.innerHTML = '<h3>材料</h3><div class="grid">' + mats + '</div><h3>' + w('furniture') + '</h3>' + furnRows +
+        '<h3>' + w('residents') + w('friendship') + '</h3>' + friends +
+        '<h3>' + w('outfit') + '</h3><div class="outfits">' + outfits + '</div>' +
+        '<h3>外觀主題</h3><div class="outfits">' + themes + '</div>' +
+        '<p class="note" style="margin-top:6px">切換主題只改變外觀和名稱，' + w('bag') + '、' + w('furniture') + '、任務與計時進度完全不變。</p>' +
+        '<h3>資料</h3><button type="button" class="btn secondary" data-act="openData">💾 備份與' + w('legacy') + '</button>' +
+        '<p class="note">' + (persistent ? w('bag') + '存在這台裝置的瀏覽器（IndexedDB），重新整理不會消失；不同網址、裝置或瀏覽器不會互通。'
+          : '⚠ 這個瀏覽器目前無法儲存，' + w('bag') + '只存在本頁，關閉或重新整理就會消失。') + '</p>';
     } else if (panel === 'tasks') {
-      $('drawerTitle').textContent = '📒 今日委託';
+      $('drawerTitle').textContent = w('tasksIcon') + ' ' + w('tasksTitle');
       const quests = QUESTS.map(q => {
         const st = questStatus(save, q, date), giver = npcById(q.giver);
         const right = st.claimed ? '<span class="done">已領取 ✓</span>'
           : '<button type="button" class="btn small" data-act="claim" data-id="' + q.id + '"' + (st.done ? '' : ' disabled') + '>' + (st.done ? '領取' : st.progress + '／' + q.target) + '</button>';
-        return row(q.icon, esc(q.title), esc(giver.name) + '的委託・獎勵 ' + rewardText(q.reward), right);
+        return row(q.icon, esc(questTitle(q)), esc(who(giver.id)) + w('questOf') + '・獎勵 ' + rewardText(q.reward), right);
       }).join('');
       const left = focusRemaining(save);
       const focus = left !== null
-        ? '<div class="focus-run"><p class="timer" id="focusTimer">' + formatMs(left) + '</p><p class="note" style="margin:0">專注 ' + save.focus.minutes +
+        ? '<div class="focus-run"><p class="timer" id="focusTimer">' + formatMs(left) + '</p><p class="note" style="margin:0">' + w('focus') + ' ' + save.focus.minutes +
           ' 分鐘進行中。可以離開去讀書，時間依裝置時鐘計算，重新整理也會接續。</p>' +
           '<button type="button" class="btn small secondary" data-act="focusCancel">取消（不給獎勵）</button></div>'
         : FOCUS_OPTIONS.map(o => {
           const n = focusDoneToday(save, o.minutes, date), capped = n >= o.dailyCap;
-          return row('⏱', '專注 ' + o.minutes + ' 分鐘', (capped ? '今天的獎勵已達上限（' + o.dailyCap + ' 次），仍可專注' : '今天 ' + n + '／' + o.dailyCap + '・獎勵 ' + rewardText(o.reward) + '、阿棕親密度 +1'),
+          return row(w('focusIcon'), w('focus') + ' ' + o.minutes + ' 分鐘', (capped ? '今天的獎勵已達上限（' + o.dailyCap + ' 次），仍可' + w('focus') : '今天 ' + n + '／' + o.dailyCap + '・獎勵 ' + rewardText(o.reward) + '、' + who(o.npc) + w('friendship') + ' +1'),
             '<button type="button" class="btn small" data-act="focus" data-id="' + o.minutes + '">開始</button>');
         }).join('');
       const study = STUDY_TASKS.map(t => {
@@ -181,40 +211,40 @@ export function createUI() {
           : confirming === t.id
             ? '<span class="confirm"><button type="button" class="btn small" data-act="studyConfirm" data-id="' + t.id + '">確定完成</button><button type="button" class="btn small secondary" data-act="studyCancel">取消</button></span>'
             : '<button type="button" class="btn small secondary" data-act="study" data-id="' + t.id + '">我完成了</button>';
-        return row(t.icon, esc(t.title) + ' <span class="self">自行回報</span>',
-          '獎勵 ' + rewardText(t.reward) + '、' + esc(giver.name) + '親密度 +1・<a href="' + t.link.href + '">' + esc(t.link.label) + '</a>', right);
+        return row(t.icon, esc(studyTitle(t.id, t.title)) + ' <span class="self">自行回報</span>',
+          '獎勵 ' + rewardText(t.reward) + '、' + esc(who(giver.id)) + w('friendship') + ' +1・<a href="' + t.link.href + '">' + esc(t.link.label) + '</a>', right);
       }).join('');
       const gather = MATERIALS.map(m => matIcon(m.id) + ' ' + collectedCount(save, date, m.id) + '／' + spotTotal(m.id)).join('　');
-      body.innerHTML = '<h3>島上委託</h3>' + quests +
-        '<h3>專注計時</h3>' + focus +
-        '<h3>學習任務</h3>' + study +
-        '<p class="note">「自行回報」：小島不會讀取你的作答或訂正紀錄，也不判斷內容，只依你的確認給獎勵；每項每天一次。休息不會扣任何東西。</p>' +
+      body.innerHTML = '<h3>' + w('questGroup') + '</h3>' + quests +
+        '<h3>' + w('focus') + '計時</h3>' + focus +
+        '<h3>' + w('study') + '</h3>' + study +
+        '<p class="note">「自行回報」：遊戲不會讀取你的作答或訂正紀錄，也不判斷內容，只依你的確認給獎勵；每項每天一次。休息不會扣任何東西。</p>' +
         '<h3>今天採集</h3><p class="note" style="margin-top:0">' + gather + '（每天依這台裝置的日期重新出現）</p>' +
-        '<p class="note">每項委託每天只能領一次。不讀書也能在島上玩。</p>' +
+        '<p class="note">每項任務每天只能領一次。' + w('noPlay') + '</p>' +
         '<p class="note"><a href="../../">回觀護人學習平臺</a></p>';
     } else if (panel === 'data') {
-      $('drawerTitle').textContent = '💾 備份與舊島花園';
+      $('drawerTitle').textContent = '💾 備份與' + w('legacy');
       body.innerHTML = renderData(ctx);
     } else if (panel === 'build') {
-      $('drawerTitle').textContent = '🔨 工坊與擺放';
+      $('drawerTitle').textContent = w('buildIcon') + ' ' + w('buildTitle');
       const recipes = RECIPES.map(r => {
         const f = furnitureById(r.makes), lack = missing(save.inventory, r);
         const need = Object.entries(r.needs).map(([id, n]) => {
           const have = count(save.inventory, id);
           return '<span class="' + (have < n ? 'lack' : '') + '">' + matIcon(id) + matName(id) + ' ' + have + '/' + n + '</span>';
         }).join('');
-        return '<div class="row recipe"><span class="ic">' + f.icon + '</span><p><b>' + esc(f.name) + '</b><span class="need">' + need + '</span></p>' +
-          '<button type="button" class="btn small" data-act="craft" data-id="' + r.id + '"' + (lack.length ? ' disabled aria-label="' + esc(f.name) + '：材料不足"' : '') + '>製作</button></div>';
+        return '<div class="row recipe"><span class="ic">' + ficon(f.id) + '</span><p><b>' + esc(fname(f.id)) + '</b><span class="need">' + need + '</span></p>' +
+          '<button type="button" class="btn small" data-act="craft" data-id="' + r.id + '"' + (lack.length ? ' disabled aria-label="' + esc(fname(f.id)) + '：材料不足"' : '') + '>製作</button></div>';
       }).join('');
-      const inBag = furnitureList(save.inventory).map(f => row(f.icon, esc(f.name) + ' ×' + f.qty, '點「擺放」後選一塊空地',
+      const inBag = furnitureList(save.inventory).map(f => row(ficon(f.id), esc(fname(f.id)) + ' ×' + f.qty, '點「擺放」後選一塊空地',
         '<button type="button" class="btn small" data-act="place" data-id="' + f.id + '">擺放</button>')).join('') ||
-        '<p class="note">背包裡沒有家具。</p>';
+        '<p class="note">' + w('bag') + '裡沒有' + w('furniture') + '。</p>';
       const placed = (save.placed || []).map(p => {
         const f = furnitureById(p.id);
-        return row(f.icon, esc(f.name), '位置 (' + p.x + ', ' + p.y + ')', '<button type="button" class="btn small secondary" data-act="pickup" data-id="' + p.uid + '">收回</button>');
-      }).join('') || '<p class="note">島上還沒有擺任何家具。</p>';
-      body.innerHTML = '<h3>工坊</h3>' + recipes + '<h3>背包裡的家具</h3>' + inBag + '<h3>島上的家具</h3>' + placed +
-        '<p class="note">家具不能擋住小路、採集點或居民，也不能把路堵死；靠近家具按 E 也可以收回。</p>';
+        return row(ficon(f.id), esc(fname(f.id)), '位置 (' + p.x + ', ' + p.y + ')', '<button type="button" class="btn small secondary" data-act="pickup" data-id="' + p.uid + '">收回</button>');
+      }).join('') || '<p class="note">' + w('place') + '還沒有擺任何' + w('furniture') + '。</p>';
+      body.innerHTML = '<h3>' + w('workshop') + '</h3>' + recipes + '<h3>' + w('bag') + '裡的' + w('furniture') + '</h3>' + inBag + '<h3>' + w('placedGroup') + '</h3>' + placed +
+        '<p class="note">' + w('furniture') + '不能擋住' + theme().terrain.path + '、採集點或' + w('residents') + '，也不能把路堵死；靠近按 E 也可以收回。</p>';
     }
   }
 
@@ -239,13 +269,13 @@ export function createUI() {
       const sm = pending.summary;
       html += '<div class="preview"><b>預覽：v4 小島備份</b><ul>' +
         '<li>島名：' + esc(sm.islandName) + '；最後更新：' + esc(localTime(sm.updatedAt)) + '</li>' +
-        '<li>材料：' + MATERIALS.map(m => m.icon + (sm.materials[m.id] || 0)).join(' ') + '</li>' +
+        '<li>材料：' + MATERIALS.map(m => matIcon(m.id) + (sm.materials[m.id] || 0)).join(' ') + '</li>' +
         '<li>背包家具 ' + sm.furniture + ' 件；島上家具 ' + sm.placed + ' 件；' + (sm.legacy ? '含舊島花園' : '不含舊島花園') + '</li></ul>' +
         '<p class="note">⚠ 匯入會<b>取代</b>這個瀏覽器目前的 v4 小島。建議先按下面的「匯出備份」留一份。</p>' +
         '<div class="confirm"><button type="button" class="btn small" data-act="confirmImport">確定取代</button>' +
         '<button type="button" class="btn small secondary" data-act="cancelImport">取消</button></div></div>';
     }
-    html += '<h3>舊島花園（v3）</h3>';
+    html += '<h3>' + w('legacy') + '（v3）</h3>';
     const l = save.legacy;
     if (l) {
       const cells = l.garden.map((id, i) => {
@@ -253,7 +283,7 @@ export function createUI() {
         return '<span class="cell' + (V1_FIXED[i] ? ' fixed' : '') + '" title="' + (g ? esc(g.name) : '') + '">' + (V1_FIXED[i] || (g ? g.icon : '')) + '</span>';
       }).join('');
       const store = Object.entries(l.storage).map(([id, n]) => (V1_GOODS[id] ? V1_GOODS[id].icon + esc(V1_GOODS[id].name) : '❓' + esc(id)) + ' ×' + n).join('、') || '空的';
-      const hearts = Object.keys(V1_HEARTS).map(k => esc(npcById(V1_HEARTS[k]).name) + ' ' + (l.hearts[k] || 0)).join('、');
+      const hearts = Object.keys(V1_HEARTS).map(k => esc(npcName(V1_HEARTS[k])) + ' ' + (l.hearts[k] || 0)).join('、');
       html += '<p class="note" style="margin-top:0">「' + esc(l.islandName) + '」的花園，保留 v3 時的擺設（唯讀展示）。轉入時間 ' + esc(localTime(l.importedAt)) + '。</p>' +
         '<div class="garden" role="img" aria-label="舊島花園 6×6 擺設">' + cells + '</div>' +
         row('📦', '待整理倉庫', store) +
@@ -279,7 +309,7 @@ export function createUI() {
   }
 
   return {
-    toast, banner, hud, placeBar, focusTick,
+    toast, banner, hud, placeBar, focusTick, applyChrome,
     showDialogue, advanceDialogue, closeDialogue,
     openPanel, closePanel, renderPanel,
     get dialogueOpen() { return !!dlg; },

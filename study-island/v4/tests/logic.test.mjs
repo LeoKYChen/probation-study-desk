@@ -373,3 +373,54 @@ test('v4 備份：匯出後再匯入內容相同；v3 檔案會被辨識為舊�
   assert.ok(!JSON.stringify(makeBackup(s)).includes('probationStudyIsland.v1'));
   assert.equal(parseImport(JSON.stringify(v3())).kind, 'v1');
 });
+
+// ── 修仙主題 X1：主題切換只改外觀 ──
+import { THEMES, setTheme } from '../src/theme.js';
+import { MATERIALS, FURNITURE } from '../src/inventory.js';
+import { TERRAIN } from '../src/world/map.js';
+
+test('兩種主題都有完整的名稱：材料、器物、地形、同門、學習任務、介面文字', () => {
+  const keys = Object.keys(THEMES.island.words);
+  for (const t of Object.values(THEMES)) {
+    for (const k of keys) assert.ok(typeof t.words[k] === 'string' && t.words[k], t.id + ' words.' + k);
+    for (const m of MATERIALS) assert.ok(t.materials[m.id].name && t.materials[m.id].icon, t.id + ' ' + m.id);
+    for (const f of FURNITURE) assert.ok(t.furniture[f.id].name, t.id + ' ' + f.id);
+    for (const ter of Object.values(TERRAIN)) assert.ok(t.terrain[ter.id], t.id + ' ' + ter.id);
+    for (const n of NPCS) assert.ok(t.npcs[n.id].name, t.id + ' ' + n.id);
+    for (const s of STUDY_TASKS) assert.ok(t.study[s.id], t.id + ' ' + s.id);
+  }
+});
+
+test('修仙主題的文字不殘留島嶼用語', () => {
+  const x = THEMES.xianxia;
+  const text = JSON.stringify([x.words, x.materials, x.furniture, x.terrain, x.npcs, x.study]) +
+    NPCS.map(n => x.lines[n.id].hint({ shellsToday: 1, shellsTotal: 3 }) + x.lines[n.id].rest).join('');
+  for (const word of ['貝殼', '木材', '葉子', '果實', '工坊', '小島', '居民', '沙灘', '小屋', '背包']) assert.ok(!text.includes(word), word);
+});
+
+test('切換主題：只改 theme 欄位，背包、家具、親密度、帳本、專注都不變；不認得的主題被拒絕', () => {
+  const s = createSave();
+  give(s, { shell: 3, wood: 2 });
+  applyAction(s, { type: 'place', itemId: 'starter-stool', x: 9, y: 11 });
+  applyAction(s, { type: 'studyReport', taskId: 'essay', date: D });
+  applyAction(s, { type: 'focusStart', minutes: 5 }, at('2026-10-31T10:00:00'));
+  const strip = o => { const c = JSON.parse(JSON.stringify(o)); delete c.theme; delete c.updatedAt; return c; };
+  const before = strip(s);
+  assert.equal(applyAction(s, { type: 'setTheme', theme: 'xianxia' }).ok, true);
+  assert.equal(s.theme, 'xianxia');
+  assert.deepEqual(strip(s), before);
+  assert.equal(applyAction(s, { type: 'setTheme', theme: 'space' }).reason, 'unknown-theme');
+  assert.equal(normalizeSave(JSON.parse(JSON.stringify(s))).theme, 'xianxia');
+  assert.equal(normalizeSave({ schema: SCHEMA, theme: 'bad' }).theme, 'island');
+  assert.equal(createSave().theme, 'island', '預設島嶼');
+});
+
+test('修仙主題的同門台詞與名稱；切回島嶼恢復原本台詞', () => {
+  try {
+    setTheme('xianxia');
+    const lines = linesFor(NPCS[0], { friendship: 0, shellsToday: 0, shellsTotal: 3 });
+    assert.match(lines[0], /秋棠/); assert.match(lines[1], /靈石/);
+    setTheme('island');
+    assert.match(linesFor(NPCS[0], { friendship: 0, shellsToday: 0, shellsTotal: 3 })[0], /栗子/);
+  } finally { setTheme('island'); }
+});

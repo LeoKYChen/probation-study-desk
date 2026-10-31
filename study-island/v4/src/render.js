@@ -1,10 +1,10 @@
 // Canvas 繪製：靜態地表預先畫在離屏 canvas，人物與物件每幀依 y 排序繪製。全部是原創向量圖形。
 import { MAP_W, MAP_H, tileAt, tilesOf, hash2, HOUSE } from './world/map.js';
+import { theme } from './theme.js';
+import { drawBamboo, drawStone, drawCaveHouse, drawXSpot, drawXFurniture, drawRobed, playerLook, drawCloud } from './render-xianxia.js';
 
-const C = {
-  water: '#7ec8d8', waterDeep: '#6bb8cc', foam: '#dff4f1', sand: '#f2e2b3', sandDot: '#e2cd93',
-  grass: '#a9d78c', grassDark: '#93c779', forest: '#8bc17a', path: '#e6d3a3', plaza: '#ecdcb2', plazaLine: '#d9c48f'
-};
+// 配色依外觀主題（theme.js）。
+const pal = () => theme().palette;
 const LAND = new Set(['sand', 'grass', 'forest', 'path', 'plaza', 'flower', 'house', 'tree', 'rock']);
 const GREEN = new Set(['grass', 'forest', 'path', 'plaza', 'flower', 'house', 'tree', 'rock']);
 const WOODS = new Set(['forest', 'tree']);
@@ -22,6 +22,7 @@ function blobs(g, ts, test, r, color) {
 }
 
 function drawTerrain(ts) {
+  const C = pal(), xian = theme().id === 'xianxia';
   const cv = document.createElement('canvas');
   cv.width = MAP_W * ts; cv.height = MAP_H * ts;
   const g = cv.getContext('2d');
@@ -59,7 +60,7 @@ function drawTerrain(ts) {
     const id = tileAt(x, y).id, h = hash2(x, y);
     const px = (x + .2 + hash2(x, y, 1) * .6) * ts, py = (y + .25 + hash2(x, y, 2) * .5) * ts;
     if ((id === 'grass' || id === 'forest') && h < .55) {
-      g.strokeStyle = id === 'forest' ? '#6fa862' : C.grassDark; g.lineWidth = Math.max(1, ts * .045); g.lineCap = 'round';
+      g.strokeStyle = id === 'forest' ? C.forestTuft : C.grassDark; g.lineWidth = Math.max(1, ts * .045); g.lineCap = 'round';
       g.beginPath();
       g.moveTo(px - ts * .08, py); g.lineTo(px - ts * .12, py - ts * .12);
       g.moveTo(px, py); g.lineTo(px, py - ts * .16);
@@ -75,8 +76,10 @@ function drawTerrain(ts) {
     } else if (id === 'sand' && h < .6) {
       g.fillStyle = C.sandDot;
       g.beginPath(); g.arc(px, py, ts * .03, 0, Math.PI * 2); g.arc(px + ts * .2, py + ts * .1, ts * .02, 0, Math.PI * 2); g.fill();
+    } else if (id === 'water' && h < .18 && xian) {
+      drawCloud(g, px, py, ts);
     } else if (id === 'water' && h < .18) {
-      g.strokeStyle = 'rgba(255,255,255,.55)'; g.lineWidth = Math.max(1, ts * .04); g.lineCap = 'round';
+      g.strokeStyle = C.wave; g.lineWidth = Math.max(1, ts * .04); g.lineCap = 'round';
       g.beginPath(); g.arc(px, py + ts * .1, ts * .14, Math.PI * 1.15, Math.PI * 1.85); g.stroke();
     }
   }
@@ -140,7 +143,8 @@ function drawSpot(g, s, ts, t, still) {
   shadow(g, cx, cy + ts * .12, ts * .2);
   g.save(); g.translate(cx, cy);
   g.lineWidth = Math.max(1, ts * .025);
-  if (s.material === 'shell') {
+  if (theme().id === 'xianxia') drawXSpot(g, s, ts);
+  else if (s.material === 'shell') {
     g.fillStyle = '#f7c6c0';
     g.beginPath(); g.moveTo(0, ts * .1); g.arc(0, ts * .1, ts * .2, Math.PI * 1.1, Math.PI * 1.9); g.closePath(); g.fill();
     g.strokeStyle = '#e39a92';
@@ -174,7 +178,8 @@ function drawFurniture(g, f, ts) {
   const cx = (f.x + .5) * ts, by = (f.y + .85) * ts;
   shadow(g, cx, by, ts * .3);
   g.save(); g.translate(cx, by);
-  if (f.id === 'starter-stool') {
+  if (theme().id === 'xianxia') drawXFurniture(g, f, ts);
+  else if (f.id === 'starter-stool') {
     g.fillStyle = '#9a6b45';
     g.fillRect(-ts * .18, -ts * .3, ts * .06, ts * .3); g.fillRect(ts * .12, -ts * .3, ts * .06, ts * .3);
     g.fillStyle = '#c8935f'; roundRect(g, -ts * .24, -ts * .42, ts * .48, ts * .14, ts * .06); g.fill();
@@ -293,7 +298,8 @@ function drawNpc(g, n, ts, t, still) {
   const bob = still || !n.moving ? 0 : Math.abs(Math.sin(t / 110)) * ts * .04;
   shadow(g, cx, by, ts * .3);
   g.save(); g.translate(cx, by - bob);
-  SPECIES[n.species](g, n, ts);
+  if (theme().id === 'xianxia') drawRobed(g, n.robe, n.facing, ts);
+  else SPECIES[n.species](g, n, ts);
   if (n.quest) {
     const qy = -ts * 1.18 - (still ? 0 : Math.sin(t / 250) * ts * .04);
     g.fillStyle = '#fffaf0'; g.strokeStyle = '#e0a43a'; g.lineWidth = Math.max(1.5, ts * .04);
@@ -313,7 +319,8 @@ export function drawPortrait(cv, npc) {
   g.clearRect(0, 0, size, size);
   const ts = size * 1.05;
   g.translate(size / 2, size * (npc.species === 'bunny' || npc.species === 'owl' ? .98 : 1.02));
-  SPECIES[npc.species](g, { ...npc, facing: 'down' }, ts);
+  if (theme().id === 'xianxia') { g.translate(0, -size * .02); drawRobed(g, npc.robe, 'down', ts * .95); }
+  else SPECIES[npc.species](g, { ...npc, facing: 'down' }, ts);
 }
 
 function drawPlayer(g, p, ts, t, still, outfit) {
@@ -321,6 +328,7 @@ function drawPlayer(g, p, ts, t, still, outfit) {
   const step = still || !p.moving ? 0 : Math.sin(t / 90);
   shadow(g, cx, by, ts * .26);
   g.save(); g.translate(cx, by - Math.abs(step) * ts * .035);
+  if (theme().id === 'xianxia') { drawRobed(g, playerLook(outfit), p.facing, ts, step); g.restore(); return; }
   // 腳
   g.fillStyle = '#5a4636';
   g.beginPath(); g.ellipse(-ts * .08, -ts * .03 + step * ts * .02, ts * .06, ts * .04, 0, 0, Math.PI * 2); g.fill();
@@ -350,7 +358,7 @@ function drawPlayer(g, p, ts, t, still, outfit) {
 
 export function createRenderer(canvas) {
   const g = canvas.getContext('2d');
-  let ts = 48, dpr = 1, vw = 0, vh = 0, terrain = null;
+  let ts = 48, dpr = 1, vw = 0, vh = 0, terrain = null, terrainTheme = null;
   const trees = tilesOf('tree'), rocks = tilesOf('rock');
 
   function resize(w, h) {
@@ -358,7 +366,7 @@ export function createRenderer(canvas) {
     vw = w; vh = h;
     canvas.width = Math.round(w * dpr); canvas.height = Math.round(h * dpr);
     const next = Math.round(Math.max(36, Math.min(64, Math.min(w, h) / 8.5)));
-    if (next !== ts || !terrain) { ts = next; terrain = drawTerrain(Math.round(ts * dpr)); }
+    if (next !== ts || !terrain) { ts = next; terrain = null; }
   }
 
   // 鏡頭以玩家為中心，不超出地圖邊界；地圖比畫面小時置中。
@@ -378,7 +386,9 @@ export function createRenderer(canvas) {
   function draw(s) {
     const cam = camera(s.player);
     g.setTransform(dpr, 0, 0, dpr, 0, 0);
-    g.fillStyle = C.waterDeep; g.fillRect(0, 0, vw, vh);
+    // 主題或尺寸改變時才重畫靜態地表。
+    if (!terrain || terrainTheme !== theme().id) { terrain = drawTerrain(Math.round(ts * dpr)); terrainTheme = theme().id; }
+    g.fillStyle = pal().waterDeep; g.fillRect(0, 0, vw, vh);
     g.translate(-cam.x, -cam.y);
     g.drawImage(terrain, 0, 0, MAP_W * ts, MAP_H * ts);
     if (s.marker) {
@@ -399,9 +409,10 @@ export function createRenderer(canvas) {
       for (const h of s.placeHints) { g.beginPath(); g.arc((h.x + .5) * ts, (h.y + .5) * ts, ts * .09, 0, Math.PI * 2); g.fill(); }
     }
     const items = [];
-    for (const t of trees) items.push({ y: t.y + .9, fn: () => drawTree(g, t.x, t.y, ts) });
-    for (const r of rocks) items.push({ y: r.y + .8, fn: () => drawRock(g, r.x, r.y, ts) });
-    items.push({ y: HOUSE.y + HOUSE.h, fn: () => drawHouse(g, ts) });
+    const xian = theme().id === 'xianxia';
+    for (const t of trees) items.push({ y: t.y + .9, fn: () => (xian ? drawBamboo : drawTree)(g, t.x, t.y, ts) });
+    for (const r of rocks) items.push({ y: r.y + .8, fn: () => (xian ? drawStone : drawRock)(g, r.x, r.y, ts) });
+    items.push({ y: HOUSE.y + HOUSE.h, fn: () => (xian ? drawCaveHouse : drawHouse)(g, ts) });
     for (const sp of s.spots) items.push({ y: sp.y + .5, fn: () => drawSpot(g, sp, ts, s.time, s.still) });
     for (const f of s.placed) items.push({ y: f.y + .85, fn: () => drawFurniture(g, f, ts) });
     for (const n of s.npcs) items.push({ y: n.ry + .88, fn: () => drawNpc(g, n, ts, s.time, s.still) });
