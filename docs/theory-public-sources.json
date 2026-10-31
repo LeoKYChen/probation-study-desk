@@ -582,6 +582,26 @@
    "ref": "American Educational Research Association, American Psychological Association, & National Council on Measurement in Education. (2014). Standards for educational and psychological testing. Washington, DC: American Educational Research Association.",
    "url": "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf",
    "kind": "original"
+  },
+  "sunshine73": {
+   "ref": "Sunshine, P. M. (1973). Approaches to school discipline: A selected review of the literature (Reviews of Research No. 2). Baltimore: Maryland State Department of Education.",
+   "url": "https://files.eric.ed.gov/fulltext/ED087084.pdf",
+   "kind": "review"
+  },
+  "sunawan16": {
+   "ref": "Sunawan, & Xiong, J. (2016). An application model of reality therapy to develop effective achievement goals in tier three intervention. International Education Studies, 9(10).",
+   "url": "https://files.eric.ed.gov/fulltext/EJ1116010.pdf",
+   "kind": "review"
+  },
+  "okocha01": {
+   "ref": "Okocha, A. A. (2001). Facilitating career development through Super's life career rainbow. Paper presented at the 27th Annual Conference of the National Consultation on Career Development, Ottawa (ERIC ED462641).",
+   "url": "https://files.eric.ed.gov/fulltext/ED462641.pdf",
+   "kind": "review"
+  },
+  "tip41": {
+   "ref": "Substance Abuse and Mental Health Services Administration. (2005). Substance abuse treatment: Group therapy (Treatment Improvement Protocol [TIP] Series 41; DHHS Publication No. [SMA] 05-3991). Rockville, MD: Author.",
+   "url": "https://files.eric.ed.gov/fulltext/ED491570.pdf",
+   "kind": "official"
   }
  },
  "questions": [
@@ -1253,6 +1273,28 @@
      "matchedTerms": [
       "safety",
       "trustworthiness"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "112-諮商與輔導-4",
+   "title": "Corey 團體歷程階段與霸凌防治團體計畫",
+   "coverage": "partial",
+   "note": "涵蓋初期（介紹、團體協議、建立安全環境與正向規範）、中期（實際工作）與結束期（有意的、正向的結束）三階段；沒有把「轉換階段」（處理焦慮、抗拒、衝突）獨立成一個階段，也沒有六次霸凌防治團體的設計",
+   "sources": [
+    {
+     "doc": "tip41",
+     "ref": "Substance Abuse and Mental Health Services Administration. (2005). Substance abuse treatment: Group therapy (Treatment Improvement Protocol [TIP] Series 41; DHHS Publication No. [SMA] 05-3991). Rockville, MD: Author.",
+     "url": "https://files.eric.ed.gov/fulltext/ED491570.pdf",
+     "kind": "official",
+     "matchedTerms": [
+      "tasks in the beginning phase",
+      "emotionally safe environment",
+      "positive group norms",
+      "middle phase",
+      "end phase",
+      "termination"
      ]
     }
    ]
@@ -2102,6 +2144,28 @@
    ]
   },
   {
+   "id": "監獄官-109-諮商與矯正輔導-4",
+   "title": "團體前準備、計畫書與各階段領導者任務",
+   "coverage": "partial",
+   "note": "涵蓋團體前訪談與成員篩選、團體協議（保密、缺席、團體外接觸、終止等），以及早、中、後期各階段的任務；沒有團體計畫書應包含的內容（理念、對象、次數時間、單元內容、評估方式），知情同意只在附帶提及",
+   "sources": [
+    {
+     "doc": "tip41",
+     "ref": "Substance Abuse and Mental Health Services Administration. (2005). Substance abuse treatment: Group therapy (Treatment Improvement Protocol [TIP] Series 41; DHHS Publication No. [SMA] 05-3991). Rockville, MD: Author.",
+     "url": "https://files.eric.ed.gov/fulltext/ED491570.pdf",
+     "kind": "official",
+     "matchedTerms": [
+      "pregroup interviews",
+      "group agreement",
+      "selection of group members",
+      "tasks in the beginning phase",
+      "middle phase",
+      "end phase"
+     ]
+    }
+   ]
+  },
+  {
    "id": "監獄官-110-諮商與矯正輔導-2",
    "title": "少年犯罪三級預防與有效方案特徵",
    "coverage": "partial",
@@ -2175,6 +2239,31 @@
      "kind": "review",
      "matchedTerms": [
       "roll with resistance"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "監獄官-111-諮商與矯正輔導-4",
+   "title": "以選擇理論設計青少年收容人八次團體",
+   "coverage": "partial",
+   "note": "二手整理：涵蓋 Glasser 的五種基本需求（生存、愛與隸屬、自由、權力、樂趣）、選擇自己的行為（total behavior）、優質世界與 Wubbolding 的 WDEP 四步驟；沒有八次團體的目標與各次主題設計",
+   "sources": [
+    {
+     "doc": "sunawan16",
+     "ref": "Sunawan, & Xiong, J. (2016). An application model of reality therapy to develop effective achievement goals in tier three intervention. International Education Studies, 9(10).",
+     "url": "https://files.eric.ed.gov/fulltext/EJ1116010.pdf",
+     "kind": "review",
+     "matchedTerms": [
+      "survival",
+      "love and belonging",
+      "freedom",
+      "power",
+      "fun",
+      "total behavior",
+      "quality world",
+      "WDEP",
+      "Wubbolding"
      ]
     }
    ]
@@ -2351,6 +2440,30 @@
       "primary prevention",
       "secondary prevention",
       "tertiary prevention"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "監獄官-115-諮商與矯正輔導-2",
+   "title": "Adler 學派少年不適應行為的目標與介入",
+   "coverage": "partial",
+   "note": "二手整理：涵蓋 Dreikurs 的四種錯誤目標（尋求注意、爭取權力、報復、表現無能）、避免陷入權力爭奪，以及以自然後果取代傳統處罰；沒有以「大人的感受」與「糾正後的反應」評估目標，也沒有不報復、事後討論的逐項說明，原始 Dreikurs & Soltz (1964) 未取得",
+   "sources": [
+    {
+     "doc": "sunshine73",
+     "ref": "Sunshine, P. M. (1973). Approaches to school discipline: A selected review of the literature (Reviews of Research No. 2). Baltimore: Maryland State Department of Education.",
+     "url": "https://files.eric.ed.gov/fulltext/ED087084.pdf",
+     "kind": "review",
+     "matchedTerms": [
+      "four goals of misbehavior",
+      "attention getting",
+      "power seeking",
+      "revenge seeking",
+      "assumed disability",
+      "natural consequences",
+      "struggle for power",
+      "Dreikurs"
      ]
     }
    ]
@@ -2930,6 +3043,27 @@
       "duty to protect",
       "duty to warn",
       "identifiable"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-110-諮商與輔導-1",
+   "title": "不合作團體成員的類型與處理",
+   "coverage": "partial",
+   "note": "涵蓋沉默成員（Silence）、敵意發言、不停說話等干擾行為與團體中的抗拒（Resistance in Group）；沒有依賴或救援型成員，也沒有逐類型的心理特徵與邀請、阻斷、反映等策略",
+   "sources": [
+    {
+     "doc": "tip41",
+     "ref": "Substance Abuse and Mental Health Services Administration. (2005). Substance abuse treatment: Group therapy (Treatment Improvement Protocol [TIP] Series 41; DHHS Publication No. [SMA] 05-3991). Rockville, MD: Author.",
+     "url": "https://files.eric.ed.gov/fulltext/ED491570.pdf",
+     "kind": "official",
+     "matchedTerms": [
+      "silence",
+      "talk nonstop",
+      "openly hostile comment",
+      "resistance in group",
+      "disruptive behavior"
      ]
     }
    ]
@@ -3591,6 +3725,36 @@
    ]
   },
   {
+   "id": "police-109-counseling-3",
+   "title": "Super 生涯彩虹圖",
+   "coverage": "full",
+   "note": "",
+   "sources": [
+    {
+     "doc": "okocha01",
+     "ref": "Okocha, A. A. (2001). Facilitating career development through Super's life career rainbow. Paper presented at the 27th Annual Conference of the National Consultation on Career Development, Ottawa (ERIC ED462641).",
+     "url": "https://files.eric.ed.gov/fulltext/ED462641.pdf",
+     "kind": "review",
+     "matchedTerms": [
+      "life career rainbow",
+      "life-span",
+      "life-space",
+      "growth",
+      "exploration",
+      "establishment",
+      "maintenance",
+      "decline",
+      "child",
+      "student",
+      "leisurite",
+      "citizen",
+      "worker",
+      "amount of time and energy"
+     ]
+    }
+   ]
+  },
+  {
    "id": "police-110-counseling-2",
    "title": "認知行為治療與意義治療的整合",
    "coverage": "partial",
@@ -3655,6 +3819,25 @@
      "matchedTerms": [
       "differentiation of self",
       "multigenerational transmission"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-111-counseling-3",
+   "title": "催化此時此地並進行闡釋",
+   "coverage": "partial",
+   "note": "涵蓋領導者盡量把焦點維持在「此時此地」、以提問把成員的反應拉回團體內互動，以及中期領導者兼顧內容與歷程；沒有 Yalom 所說「先活化此時此地、再做歷程闡釋」的兩階段說明",
+   "sources": [
+    {
+     "doc": "tip41",
+     "ref": "Substance Abuse and Mental Health Services Administration. (2005). Substance abuse treatment: Group therapy (Treatment Improvement Protocol [TIP] Series 41; DHHS Publication No. [SMA] 05-3991). Rockville, MD: Author.",
+     "url": "https://files.eric.ed.gov/fulltext/ED491570.pdf",
+     "kind": "official",
+     "matchedTerms": [
+      "here and now",
+      "the leader balances content",
+      "how members interact in the group"
      ]
     }
    ]
@@ -4284,22 +4467,17 @@
   "111-諮商與輔導-3",
   "111-諮商與輔導-4",
   "112-諮商與輔導-1",
-  "112-諮商與輔導-4",
   "113-諮商與輔導-1",
   "113-諮商與輔導-2",
   "115-諮商與輔導-4",
   "監獄官-109-犯罪學與再犯預測-3",
-  "監獄官-109-諮商與矯正輔導-4",
   "監獄官-110-諮商與矯正輔導-1",
   "監獄官-111-諮商與矯正輔導-3",
-  "監獄官-111-諮商與矯正輔導-4",
   "監獄官-114-諮商與矯正輔導-3",
-  "監獄官-115-諮商與矯正輔導-2",
   "監獄官-115-諮商與矯正輔導-3",
   "薦任升等（矯正）-112-心理測驗-1",
   "薦任升等（矯正）-112-心理測驗-2",
   "薦任升等（矯正）-110-犯罪學-3",
-  "薦任升等（矯正）-110-諮商與輔導-1",
   "薦任升等（矯正）-110-諮商與輔導-3",
   "薦任升等（矯正）-110-諮商與輔導-4",
   "薦任升等（矯正）-112-諮商與輔導-4",
@@ -4314,10 +4492,8 @@
   "police-114-criminology_prevention-1",
   "police-108-counseling-3",
   "police-108-counseling-4",
-  "police-109-counseling-3",
   "police-110-counseling-1",
   "police-110-counseling-3",
-  "police-111-counseling-3",
   "police-112-counseling-3",
   "police-113-counseling-1",
   "police-113-counseling-3",
