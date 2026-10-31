@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#d4eedc">
+<meta name="description" content="原創 2D 島嶼生活遊戲：散步、與居民交談、收集材料、製作家具，讓讀書日常更有趣。">
+<title>小樹灣｜觀護學習島 v4</title>
+<link rel="stylesheet" href="./style.css">
+<script src="./game.js" defer></script>
+</head>
+<body>
+<div id="app" class="app">
+<header class="header">
+ <a class="home-link" href="https://leokychen.github.io/probation-study-desk/" target="_blank" rel="noopener noreferrer" aria-label="返回觀護人學習平臺">↖ 學習平臺</a>
+ <div class="island-heading"><span class="leaf">🌿</span><div><strong id="island-title">小樹灣</strong><small>STUDY ISLAND · 可探索小島</small></div></div>
+ <div class="weather"><span id="day-label">秋日晴朗</span><span id="shells-label">🐚 0</span></div>
+</header>
+<main>
+ <div class="playground">
+  <section class="world-panel" aria-label="可探索的小島遊戲">
+   <div class="game-top">
+    <div class="game-tip"><span class="signal">✦</span><span id="hint">點擊草地開始散步，靠近居民就能交談</span></div>
+    <button type="button" id="help-button" class="round-button" aria-label="遊戲操作說明">?</button>
+   </div>
+   <canvas id="world" width="960" height="720" role="img" aria-label="小島世界，可點擊移動、拾取物品並與居民互動。"></canvas>
+   <div id="bubble" class="speech" hidden></div>
+   <div class="status-toast" id="toast" role="status" aria-live="polite">🏝️ 歡迎來到小樹灣</div>
+   <div class="game-bottom">
+     <div class="dpad" aria-label="行走方向控制">
+       <button type="button" data-dir="up" class="pad up" aria-label="向上走">▲</button>
+       <button type="button" data-dir="left" class="pad left" aria-label="向左走">◀</button>
+       <button type="button" data-dir="down" class="pad down" aria-label="向下走">▼</button>
+       <button type="button" data-dir="right" class="pad right" aria-label="向右走">▶</button>
+     </div>
+     <button class="action-button" id="interact-button" type="button">✋ 互動</button>
+   </div>
+  </section>
+  <section class="companion-panel" aria-label="探索提示">
+   <div class="companion-top"><span class="hello-tag">今天也慢慢來 ♡</span><h1>這裡不是考場，<br>是你的休息小島。</h1><p>散步、撿貝殼、和村民聊聊。完成一點學習，也能為小島添上新風景。</p></div>
+   <div class="mission-card"><span class="mission-star">✿</span><div><b>新手小冒險</b><p id="guide">先點一下草地，走到栗子身邊說聲嗨。</p><div class="tiny-progress"><span id="guide-progress" style="width:0%"></span></div><small id="guide-count">0 / 4</small></div></div>
+   <div class="character-note"><div class="character-face">🦊</div><p>「不用一次走完所有路，今天走一小步就很好！」<strong>— 栗子</strong></p></div>
+  </section>
+ </div>
+ <nav class="dock" aria-label="遊戲選單">
+   <button type="button" data-open="bag"><span>🎒</span><b>背包</b></button>
+   <button type="button" data-open="quests"><span>📒</span><b>委託</b></button>
+   <button type="button" data-open="workshop"><span>🔨</span><b>工坊</b></button>
+   <button type="button" data-open="study"><span>📚</span><b>學習獎勵</b></button>
+   <button type="button" data-open="settings"><span>⚙️</span><b>設定・備份</b></button>
+ </nav>
+ <p class="foot">操作：點地移動／點居民互動；電腦用方向鍵、WASD、E，手機可用方向鍵。資料只存在此測試站的瀏覽器，不自動同步正式學習平臺。</p>
+</main>
+</div>
+<div id="overlay" class="overlay" hidden>
+ <div class="sheet-backdrop" id="close-backdrop"></div>
+ <section class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" tabindex="-1">
+  <div class="sheet-header"><span class="sheet-kicker" id="sheet-kicker">我的小島</span><h2 id="sheet-title">背包</h2><button type="button" id="close-sheet" class="close-button" aria-label="關閉">×</button></div>
+  <div id="sheet-content" class="sheet-content"></div>
+ </section>
+</div>
+<template id="help-template">
+ <p><b>怎麼玩？</b> 直接點地圖上的空地，角色就會自己繞開障礙走過去。</p>
+ <p>點居民可走近交談；點地上的貝殼、木材、葉子或果實可以撿起。也可以走近後按「✋ 互動」。</p>
+ <p><b>電腦：</b>方向鍵／WASD 移動，E 互動，B 背包，Esc 關閉選單。</p>
+ <p><b>手機：</b>點地移動，或按住地圖下方方向鍵。任務、背包與工坊由下方選單開啟。</p>
+ <p><b>布置：</b>在背包選擇家具按「擺放」，然後點島上的可走草地；點已擺放的家具可收回。</p>
+ <p class="muted">小島沒有排行榜、課金或連續登入處罰。學習任務仍為玩家自行回報，並非正式考試成績。</p>
+</template>
+</body>
+</html>
