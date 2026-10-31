@@ -5,7 +5,7 @@ let data=null,records={},saved=[],current='',writable=true,source='正式每日�
 const initialParams=new URLSearchParams(location.search);
 const TIMER_KEY='probation-daily-30min:session:v1';
 const DRAFT_FIELDS=[['draftIssue','issues','一、題目爭點'],['draftBasis','basis','二、法律或學理依據'],['draftAnalysis','analysis','三、涵攝與實務應用'],['draftConclusion','conclusion','四、結論']];
-const ENABLE_NEWS_READING=false; // 隱藏閱讀入口，保留既有閱讀功能程式。
+const ENABLE_NEWS_READING=true; // 恢復晚間摘要／新聞及閱讀入口。
 const state={tab:ENABLE_NEWS_READING&&!initialParams.get('subject')?'晚間摘要／新聞':'全部題目',subject:initialParams.get('subject')||'',date:'',query:'',sort:'newest',reviewMonth:''};
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const time=s=>{const d=new Date(s);return Number.isNaN(d.getTime())?'未提供日期':d.toLocaleString('zh-TW',{timeZone:'Asia/Taipei',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false});};
