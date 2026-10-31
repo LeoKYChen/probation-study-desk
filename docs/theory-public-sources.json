@@ -617,6 +617,21 @@
    "ref": "Illowsky, B., & Dean, S. (2023). Introductory statistics 2e, 12.3 The regression equation. Houston, TX: OpenStax, Rice University.",
    "url": "https://openstax.org/books/introductory-statistics-2e/pages/12-3-the-regression-equation",
    "kind": "review"
+  },
+  "larimer99": {
+   "ref": "Larimer, M. E., Palmer, R. S., & Marlatt, G. A. (1999). Relapse prevention: An overview of Marlatt's cognitive-behavioral model. Alcohol Research & Health, 23(2), 151–160.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6760427/",
+   "kind": "original"
+  },
+  "zingaro88": {
+   "ref": "Zingaro, J. C., et al. (1988). Ethical and legal issues in school counseling, Chapter 2: Privacy, confidentiality, and privileged communication. Alexandria, VA: American Association for Counseling and Development (ERIC ED323461).",
+   "url": "https://files.eric.ed.gov/fulltext/ED323461.pdf",
+   "kind": "review"
+  },
+  "hays": {
+   "ref": "Hays, D. G., Craigen, L. M., Knight, J., Healey, A., & Sikes, A. (n.d.). Duty to warn and protect against self-destructive behaviors and interpersonal violence (ERIC EJ886123). Old Dominion University.",
+   "url": "https://files.eric.ed.gov/fulltext/EJ886123.pdf",
+   "kind": "review"
   }
  },
  "questions": [
@@ -1264,6 +1279,28 @@
    ]
   },
   {
+   "id": "111-諮商與輔導-3",
+   "title": "第三方要求個案諮商資料時的考量",
+   "coverage": "partial",
+   "note": "二手整理（美國學校輔導的倫理與法律）：涵蓋保密原則與三項例外（個案危及自己或他人、個案或家長要求告知第三方、法院命令揭露）、特許溝通、被傳喚時的處理，以及家長與未成年人的權利；沒有臺灣輔導與諮商學會守則的條文，也沒有書面同意與最少揭露、說明用途與保管方式的具體規定",
+   "sources": [
+    {
+     "doc": "zingaro88",
+     "ref": "Zingaro, J. C., et al. (1988). Ethical and legal issues in school counseling, Chapter 2: Privacy, confidentiality, and privileged communication. Alexandria, VA: American Association for Counseling and Development (ERIC ED323461).",
+     "url": "https://files.eric.ed.gov/fulltext/ED323461.pdf",
+     "kind": "review",
+     "matchedTerms": [
+      "confidential",
+      "the client is a danger to",
+      "a court orders a counselor to disclose",
+      "privileged communication",
+      "subpoenaed",
+      "parent"
+     ]
+    }
+   ]
+  },
+  {
    "id": "111-諮商與輔導-4",
    "title": "諮商員自我覺察的影響與改善",
    "coverage": "partial",
@@ -1280,6 +1317,27 @@
       "self-awareness",
       "genuine",
       "supervisor"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "112-諮商與輔導-1",
+   "title": "受刑人透露越獄計畫並要求保密",
+   "coverage": "partial",
+   "note": "二手整理（美國學校輔導）：涵蓋保密的限制、明確且迫切危險時預警與保護義務凌駕保密（Tarasoff）、預警三原則（可預見的傷害、可辨識的對象、可行的介入）以及評估危險程度；沒有受刑人越獄的脫逃罪、監獄行刑法與戒護外出申請，也沒有對失落與焦慮的情緒支持與問題解決訓練",
+   "sources": [
+    {
+     "doc": "hays",
+     "ref": "Hays, D. G., Craigen, L. M., Knight, J., Healey, A., & Sikes, A. (n.d.). Duty to warn and protect against self-destructive behaviors and interpersonal violence (ERIC EJ886123). Old Dominion University.",
+     "url": "https://files.eric.ed.gov/fulltext/EJ886123.pdf",
+     "kind": "review",
+     "matchedTerms": [
+      "duty to warn and protect",
+      "clear and imminent danger",
+      "supersedes the school counselor’s confidentiality",
+      "foreseeable harm",
+      "level of danger"
      ]
     }
    ]
@@ -3946,6 +4004,28 @@
    ]
   },
   {
+   "id": "police-112-counseling-3",
+   "title": "復歸社會青年的毒品防制輔導計畫",
+   "coverage": "partial",
+   "note": "涵蓋 Marlatt 復發預防模式（高風險情境、因應技巧、結果預期、違反禁戒效應、生活型態與渴求）；沒有減害、RNR、動機晤談的內容，也沒有家庭支持、就業資源、跨機關分工與成效評估（毒品危害防制條例）",
+   "sources": [
+    {
+     "doc": "larimer99",
+     "ref": "Larimer, M. E., Palmer, R. S., & Marlatt, G. A. (1999). Relapse prevention: An overview of Marlatt's cognitive-behavioral model. Alcohol Research & Health, 23(2), 151–160.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6760427/",
+     "kind": "original",
+     "matchedTerms": [
+      "high-risk situations",
+      "coping",
+      "abstinence violation effect",
+      "outcome expectancies",
+      "lifestyle",
+      "relapse prevention"
+     ]
+    }
+   ]
+  },
+  {
    "id": "police-112-counseling-4",
    "title": "同理心、同情心與慈悲心",
    "coverage": "partial",
@@ -4562,8 +4642,6 @@
   "112-心理學-4",
   "108-諮商與輔導-3",
   "111-諮商與輔導-2",
-  "111-諮商與輔導-3",
-  "112-諮商與輔導-1",
   "113-諮商與輔導-1",
   "113-諮商與輔導-2",
   "115-諮商與輔導-4",
@@ -4589,7 +4667,6 @@
   "police-108-counseling-4",
   "police-110-counseling-1",
   "police-110-counseling-3",
-  "police-112-counseling-3",
   "police-113-counseling-1",
   "police-113-counseling-3",
   "police-113-counseling-4",
