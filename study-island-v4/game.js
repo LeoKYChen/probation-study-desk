@@ -241,9 +241,46 @@ $("sheet-content").addEventListener("click",async event=>{
 $("sheet-content").addEventListener("change",async evt=>{if(evt.target.id!=="restore")return;const file=evt.target.files&&evt.target.files[0];if(!file)return;try{if(file.size>2*1024*1024)throw new Error("檔案過大，限 2 MB");const raw=JSON.parse(await file.text());await importSave(raw);}catch(e){notify("匯入失敗："+e.message);}finally{evt.target.value="";}});
 function downloadSave(){const file=new Blob([JSON.stringify({format:"study-island-v4",exportedAt:new Date().toISOString(),state},null,2)],{type:"application/json"});const url=URL.createObjectURL(file),a=document.createElement("a");a.href=url;a.download="study-island-v4-"+TODAY()+".json";document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),2000);notify("已開始下載備份，請檢查檔案。");}
 function validSave(s){return s&&s.version===4&&s.id==="main"&&typeof s.name==="string"&&s.name.length<=100&&s.bag&&["shell","wood","leaf","fruit"].every(k=>Number.isSafeInteger(s.bag[k])&&s.bag[k]>=0&&s.bag[k]<100000)&&s.furniture&&["bench","flower","lamp"].every(k=>Number.isSafeInteger(s.furniture[k])&&s.furniture[k]>=0&&s.furniture[k]<100000)&&Array.isArray(s.placed)&&s.placed.length<200&&s.placed.every(p=>ITEMS[p.id]&&Number.isInteger(p.x)&&Number.isInteger(p.y)&&!isStaticBlocked(p.x,p.y))&&s.player&&Number.isInteger(s.player.x)&&Number.isInteger(s.player.y)&&!isStaticBlocked(s.player.x,s.player.y);}
+function normalizeImportedV4(raw){
+ if(!validSave(raw))throw new Error("v4 存檔格式不完整或不正確");
+ const safe=defaultSave(),nonnegative=n=>Number.isSafeInteger(n)&&n>=0&&n<=10000000?n:0;
+ const safeDate=s=>typeof s==="string"&&/^\d{4}-\d{2}-\d{2}$/.test(s)?s:TODAY();
+ safe.name=raw.name.trim().slice(0,18)||"小樹灣";
+ safe.outfit=[0,1,2].includes(raw.outfit)?raw.outfit:0;
+ safe.created=safeDate(raw.created);safe.coins=nonnegative(raw.coins);safe.xp=nonnegative(raw.xp);
+ for(const type of Object.keys(RES))safe.bag[type]=nonnegative(raw.bag[type]);
+ for(const type of Object.keys(ITEMS))safe.furniture[type]=nonnegative(raw.furniture[type]);
+ const reserved=new Set([...TREES,...POND].map(p=>tileKey(...p)));
+ for(const n of NPCS)reserved.add(tileKey(n.x,n.y));
+ safe.player={x:raw.player.x,y:raw.player.y};
+ if(reserved.has(tileKey(safe.player.x,safe.player.y)))safe.player={x:9,y:9};
+ const used=new Set();
+ safe.placed=[];
+ for(const p of raw.placed){const k=tileKey(p.x,p.y);if(used.has(k)||reserved.has(k)||k===tileKey(safe.player.x,safe.player.y))continue;used.add(k);safe.placed.push({id:p.id,x:p.x,y:p.y});}
+ safe.spawnDate=safeDate(raw.spawnDate);
+ const knownIds=new Set(RESOURCE_SPOTS.map(p=>p.id));
+ safe.collected=Array.isArray(raw.collected)?[...new Set(raw.collected.filter(v=>knownIds.has(v)))]:[];
+ const flags=raw.flags&&typeof raw.flags==="object"?raw.flags:{};
+ safe.flags={walked:!!flags.walked,talked:!!flags.talked,crafted:!!flags.crafted,placed:!!flags.placed,shellsGathered:nonnegative(flags.shellsGathered)};
+ const talk=raw.talkCounts&&typeof raw.talkCounts==="object"?raw.talkCounts:{};
+ for(const id of Object.keys(NAMES))safe.talkCounts[id]=nonnegative(talk[id]);
+ safe.questClaims=Array.isArray(raw.questClaims)?[...new Set(raw.questClaims.filter(id=>["talk","shells","craft"].includes(id)))]:[];
+ const days=raw.dailyClaims&&typeof raw.dailyClaims==="object"?raw.dailyClaims:{};
+ for(const [day,entries] of Object.entries(days).slice(-400)){if(!/^\d{4}-\d{2}-\d{2}$/.test(day)||!entries||typeof entries!=="object")continue;safe.dailyClaims[day]={read:!!entries.read,practice:!!entries.practice,review:!!entries.review};}
+ safe.focus={end:Number.isSafeInteger(raw.focus?.end)&&raw.focus.end>Date.now()-86400000&&raw.focus.end<Date.now()+86400000?raw.focus.end:0,mins:[5,25].includes(raw.focus?.mins)?raw.focus.mins:0};
+ if(!safe.focus.end)safe.focus.mins=0;
+ safe.focusRewards=Array.isArray(raw.focusRewards)?[...new Set(raw.focusRewards.filter(t=>typeof t==="string"&&t.length<60))].slice(-300):[];
+ if(raw.legacyGarden&&Array.isArray(raw.legacyGarden.plots)&&raw.legacyGarden.plots.length===36){
+  const allowed=["","flower","tree","bench","tent","garden","lamp"];
+  if(raw.legacyGarden.plots.every(x=>allowed.includes(x))){
+   safe.legacyGarden={plots:[...raw.legacyGarden.plots],owned:raw.legacyGarden.owned||{},oldName:String(raw.legacyGarden.oldName||"舊島").slice(0,18),coins:nonnegative(raw.legacyGarden.coins),xp:nonnegative(raw.legacyGarden.xp),hearts:raw.legacyGarden.hearts||{}};
+  }
+ }
+ return safe;
+}
 async function importSave(raw){
  let next,kind;
- if(raw?.format==="study-island-v4"&&validSave(raw.state)){next=raw.state;kind="v4";}
+ if(raw?.format==="study-island-v4"&&validSave(raw.state)){next=normalizeImportedV4(raw.state);kind="v4";}
  else if(raw?.version===1&&Array.isArray(raw.plots)&&raw.plots.length===36){
   const valid=["flower","tree","bench","tent","garden","lamp"];if(!raw.plots.every(x=>x===""||valid.includes(x)))throw new Error("舊島家具格式不正確");
   next=JSON.parse(JSON.stringify(state));kind="v3";next.legacyGarden={plots:[...raw.plots],owned:raw.owned||{},oldName:raw.islandName||"舊島",coins:raw.coins||0,xp:raw.xp||0,hearts:raw.hearts||{}};
