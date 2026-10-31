@@ -31,6 +31,11 @@ const ISLAND = {
     flower: '花叢', house: '小屋', tree: '樹', rock: '岩石'
   },
   study: { essay: '完成一題申論', correction: '完成一次訂正', recall: '完成一次主動回憶' },
+  quests: {
+    shells2: { title: '撿 2 個貝殼', icon: '🐚' },
+    talk2: { title: '和 2 位居民聊天', icon: '💬' },
+    craft1: { title: '在工坊製作 1 件家具', icon: '🔨' }
+  },
   npcs: {
     chestnut: { name: '栗子', role: '' },
     brownie: { name: '阿棕', role: '' },
@@ -79,6 +84,11 @@ const XIANXIA = {
     flower: '花叢', house: '洞府', tree: '靈竹', rock: '山石'
   },
   study: { essay: '參悟：完成一題申論', correction: '修心：完成一次訂正', recall: '溫故：完成一次主動回憶' },
+  quests: {
+    shells2: { title: '採 2 塊靈石', icon: '💎' },
+    talk2: { title: '和 2 位同門說話', icon: '💬' },
+    craft1: { title: '在丹房製作 1 件器物', icon: '⚗️' }
+  },
   npcs: {
     chestnut: { name: '秋棠', role: '師姐' },
     brownie: { name: '石岳', role: '師兄' },
@@ -124,3 +134,4 @@ export const studyTitle = (id, fallback) => current.study[id] || fallback;
 export const npcName = id => (current.npcs[id] || { name: id }).name;
 export const npcRole = id => (current.npcs[id] || { role: '' }).role;
 export const placeName = save => current.place || save.islandName;
+export const questLabel = (id, fallback) => current.quests[id] || fallback;

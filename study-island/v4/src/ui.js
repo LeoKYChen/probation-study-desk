@@ -7,7 +7,8 @@ import { collectedCount, spotTotal } from './collectibles.js';
 import { OUTFITS } from './state.js';
 import { drawPortrait } from './render.js';
 import { V1_GOODS, V1_FIXED, V1_HEARTS, legacySummary } from './migration.js';
-import { THEME_LIST, theme, w, mat, furn, npcName, npcRole, studyTitle, placeName } from './theme.js';
+import { THEME_LIST, theme, w, mat, furn, npcName, npcRole, studyTitle, placeName, questLabel } from './theme.js';
+import { realmInfo, pillById, pastLifeAmount } from './cultivation.js';
 import { FOCUS_OPTIONS, STUDY_TASKS, focusRemaining, focusDoneToday, studyDoneToday, formatMs } from './learning.js';
 
 const $ = id => document.getElementById(id);
@@ -33,8 +34,9 @@ const localTime = iso => {
   const p = n => String(n).padStart(2, '0');
   return d.getFullYear() + '-' + p(d.getMonth() + 1) + '-' + p(d.getDate()) + ' ' + p(d.getHours()) + ':' + p(d.getMinutes());
 };
-// 島嶼主題沿用原本的委託名稱；修仙主題把材料名稱換成靈材。
-const questTitle = q => q.title.replace('貝殼', matName('shell'));
+// 任務名稱與圖示依外觀主題。
+const questTitle = q => questLabel(q.id, q).title;
+const questIcon = q => questLabel(q.id, q).icon;
 const hearts = n => '♥'.repeat(Math.min(5, Math.ceil(n / 2))) + '♡'.repeat(5 - Math.min(5, Math.ceil(n / 2)));
 
 export function createUI() {
@@ -58,6 +60,9 @@ export function createUI() {
     $('islandName').textContent = placeName(save);
     $('shellCount').textContent = count(save.inventory, 'shell');
     $('clock').textContent = seasonLabel();
+    const xian = theme().id === 'xianxia';
+    $('realmChip').hidden = !xian;
+    if (xian) { const r = realmInfo(save.cultivation); $('realmChip').textContent = r.label; $('realmChip').title = '修為 ' + r.xp; }
     focusTick(save);
   }
 
@@ -193,7 +198,7 @@ export function createUI() {
         const st = questStatus(save, q, date), giver = npcById(q.giver);
         const right = st.claimed ? '<span class="done">已領取 ✓</span>'
           : '<button type="button" class="btn small" data-act="claim" data-id="' + q.id + '"' + (st.done ? '' : ' disabled') + '>' + (st.done ? '領取' : st.progress + '／' + q.target) + '</button>';
-        return row(q.icon, esc(questTitle(q)), esc(who(giver.id)) + w('questOf') + '・獎勵 ' + rewardText(q.reward), right);
+        return row(questIcon(q), esc(questTitle(q)), esc(who(giver.id)) + w('questOf') + '・獎勵 ' + rewardText(q.reward), right);
       }).join('');
       const left = focusRemaining(save);
       const focus = left !== null
@@ -215,7 +220,8 @@ export function createUI() {
           '獎勵 ' + rewardText(t.reward) + '、' + esc(who(giver.id)) + w('friendship') + ' +1・<a href="' + t.link.href + '">' + esc(t.link.label) + '</a>', right);
       }).join('');
       const gather = MATERIALS.map(m => matIcon(m.id) + ' ' + collectedCount(save, date, m.id) + '／' + spotTotal(m.id)).join('　');
-      body.innerHTML = '<h3>' + w('questGroup') + '</h3>' + quests +
+      body.innerHTML = (theme().id === 'xianxia' ? cultivationCard(save) : '') +
+        '<h3>' + w('questGroup') + '</h3>' + quests +
         '<h3>' + w('focus') + '計時</h3>' + focus +
         '<h3>' + w('study') + '</h3>' + study +
         '<p class="note">「自行回報」：遊戲不會讀取你的作答或訂正紀錄，也不判斷內容，只依你的確認給獎勵；每項每天一次。休息不會扣任何東西。</p>' +
@@ -243,9 +249,52 @@ export function createUI() {
         const f = furnitureById(p.id);
         return row(ficon(f.id), esc(fname(f.id)), '位置 (' + p.x + ', ' + p.y + ')', '<button type="button" class="btn small secondary" data-act="pickup" data-id="' + p.uid + '">收回</button>');
       }).join('') || '<p class="note">' + w('place') + '還沒有擺任何' + w('furniture') + '。</p>';
-      body.innerHTML = '<h3>' + w('workshop') + '</h3>' + recipes + '<h3>' + w('bag') + '裡的' + w('furniture') + '</h3>' + inBag + '<h3>' + w('placedGroup') + '</h3>' + placed +
+      body.innerHTML = (theme().id === 'xianxia' ? pillSection(save) : '') + '<h3>' + w('workshop') + '</h3>' + recipes + '<h3>' + w('bag') + '裡的' + w('furniture') + '</h3>' + inBag + '<h3>' + w('placedGroup') + '</h3>' + placed +
         '<p class="note">' + w('furniture') + '不能擋住' + theme().terrain.path + '、採集點或' + w('residents') + '，也不能把路堵死；靠近按 E 也可以收回。</p>';
     }
+  }
+
+  // 修為卡：境界、進度、突破、前世修為。只在修仙主題顯示（島嶼主題仍會累積修為，只是不顯示）。
+  function cultivationCard(save) {
+    const r = realmInfo(save.cultivation), c = save.cultivation;
+    let action = '';
+    if (r.ready) {
+      const have = (save.inventory.pills || {})[r.pill.id] > 0;
+      action = have
+        ? '<div class="confirm"><button type="button" class="btn small" data-act="breakthrough">閉關突破・晉入' + r.next.name + '</button></div>'
+        : '<p class="note" style="margin:6px 0 0">修為已足，到「' + w('build') + '」煉一顆' + esc(r.pill.name) + '就能突破。</p>';
+    }
+    const past = save.legacy && !c.pastLife
+      ? '<div class="confirm"><button type="button" class="btn small secondary" data-act="pastLife">領取前世修為（+' + pastLifeAmount(save.legacy) + '）</button></div>' : '';
+    return '<h3>修為</h3><div class="realm-card"><span class="realm-name">' + esc(r.label) + '</span> <small>修為 ' + r.xp + '</small>' +
+      (r.next ? '<div class="xp-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + Math.round(r.progress * 100) + '"><i style="width:' + (r.progress * 100).toFixed(1) + '%"></i></div>' +
+        '<small>' + (r.ready ? '可以突破了' : '距離' + r.next.name + '還差 ' + (r.next.threshold - r.xp)) + '</small>' : '<small>已達最高境界，修為仍會繼續累積。</small>') +
+      action + past + '</div>' +
+      '<p class="note" style="margin-top:0">修為來自打坐（5 分鐘 +10、25 分鐘 +60）、修行功課自行回報 +20、師門任務 +5；只升不降，突破一定成功。修為反映你的修煉次數，不代表考試能力。</p>';
+  }
+
+  function pillSection(save) {
+    const r = realmInfo(save.cultivation);
+    const owned = Object.entries(save.inventory.pills || {}).map(([id, n]) => esc(pillById(id).name) + ' ×' + n).join('、');
+    if (!r.next) return '';
+    const p = r.pill, lack = Object.entries(p.needs).some(([id, n]) => count(save.inventory, id) < n);
+    const need = Object.entries(p.needs).map(([id, n]) => {
+      const have = count(save.inventory, id);
+      return '<span class="' + (have < n ? 'lack' : '') + '">' + matIcon(id) + matName(id) + ' ' + have + '/' + n + '</span>';
+    }).join('');
+    return '<h3>煉丹</h3><div class="row recipe"><span class="ic">' + p.icon + '</span><p><b>' + esc(p.name) + '</b><small>突破' + r.next.name + '所需</small><span class="need">' + need + '</span></p>' +
+      '<button type="button" class="btn small" data-act="craftPill" data-id="' + p.id + '"' + (lack ? ' disabled' : '') + '>煉製</button></div>' +
+      (owned ? '<p class="note" style="margin-top:4px">已有丹藥：' + owned + '</p>' : '');
+  }
+
+  // 突破演出：一定成功；減少動態效果時光暈不動。
+  function ceremony(name, onClose) {
+    $('ceremonyTitle').textContent = name;
+    $('ceremonyText').textContent = '心境澄明，晉入' + name + '。修行路長，慢慢走就好。';
+    $('ceremony').hidden = false;
+    const ok = $('ceremonyOk');
+    ok.onclick = () => { $('ceremony').hidden = true; ok.onclick = null; if (onClose) onClose(); };
+    ok.focus({ preventScroll: true });
   }
 
   function legacyPreview(sum, title, okLabel, okAct, warn) {
@@ -309,7 +358,8 @@ export function createUI() {
   }
 
   return {
-    toast, banner, hud, placeBar, focusTick, applyChrome,
+    toast, banner, hud, placeBar, focusTick, applyChrome, ceremony,
+    get ceremonyOpen() { return !$('ceremony').hidden; },
     showDialogue, advanceDialogue, closeDialogue,
     openPanel, closePanel, renderPanel,
     get dialogueOpen() { return !!dlg; },

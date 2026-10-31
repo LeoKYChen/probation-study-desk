@@ -22,7 +22,8 @@ export function furnitureById(id) {
 export function emptyInventory() {
   return {
     materials: Object.fromEntries(MATERIALS.map(m => [m.id, 0])),
-    furniture: { 'starter-stool': 1 }
+    furniture: { 'starter-stool': 1 },
+    pills: {}
   };
 }
 

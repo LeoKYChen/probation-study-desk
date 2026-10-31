@@ -12,6 +12,7 @@ import { studyTask, focusRemaining } from './learning.js';
 import { V1_KEY, isV1, legacyFromV1, parseImport, makeBackup, saveSummary, MAX_IMPORT_BYTES } from './migration.js';
 import { openStore } from './persistence.js';
 import { setTheme, theme, w, mat, furn, npcName, terrainLabel, studyTitle } from './theme.js';
+import { pillById } from './cultivation.js';
 import { createRenderer } from './render.js';
 import { createUI } from './ui.js';
 
@@ -254,6 +255,8 @@ async function act(key, action, onOk, failMsg) {
 }
 
 const unsaved = () => (store.persistent ? '' : '（未保存）');
+// 修仙主題才在提示中顯示修為增加（島嶼主題照樣累積，只是不顯示）。
+const xpNote = res => (theme().id === 'xianxia' && res && res.xp ? '，修為 +' + res.xp : '');
 
 function craft(recipeId) {
   const r = recipeById(recipeId);
@@ -275,7 +278,7 @@ function claim(questId) {
   const q = questById(questId);
   if (!q) return;
   return act('claim:' + questId, { type: 'claimQuest', questId, date: today() },
-    res => ui.toast(w('claimMsg') + '：' + Object.entries(res.reward).map(([id, n]) => matOf(id).icon + '×' + n).join(' ') + unsaved()),
+    res => ui.toast(w('claimMsg') + '：' + Object.entries(res.reward).map(([id, n]) => matOf(id).icon + '×' + n).join(' ') + xpNote(res) + unsaved()),
     res => (res.reason === 'already' ? '這項任務今天已經領過了。' : '任務還沒完成。'));
 }
 
@@ -301,7 +304,7 @@ async function completeFocus() {
     if (res.capped) ui.toast(w('focus') + ' ' + res.minutes + ' 分鐘完成！今天這項的獎勵已達上限，但' + w('focus') + '本身一樣有價值。', 4000);
     else {
       effects.push({ x: player.x, y: player.y, text: w('focusIcon') + ' ' + rewardLine(res.reward), life: 1 });
-      ui.toast(w('focus') + ' ' + res.minutes + ' 分鐘完成！獲得 ' + rewardLine(res.reward) + '，' + npcName(res.npc) + w('friendship') + ' +1' + unsaved() + '。', 4000);
+      ui.toast(w('focus') + ' ' + res.minutes + ' 分鐘完成！獲得 ' + rewardLine(res.reward) + '，' + npcName(res.npc) + w('friendship') + ' +1' + xpNote(res) + unsaved() + '。', 4000);
     }
   });
   completing = false;
@@ -311,7 +314,7 @@ function reportStudy(taskId) {
   const t = studyTask(taskId);
   if (!t) return;
   return act('study:' + taskId, { type: 'studyReport', taskId, date: today() },
-    res => ui.toast('已記錄「' + studyTitle(t.id, t.title) + '」（自行回報）：' + rewardLine(res.reward) + '，' + npcName(res.npc) + w('friendship') + ' +1' + unsaved() + '。', 3500),
+    res => ui.toast('已記錄「' + studyTitle(t.id, t.title) + '」（自行回報）：' + rewardLine(res.reward) + '，' + npcName(res.npc) + w('friendship') + ' +1' + xpNote(res) + unsaved() + '。', 3500),
     res => (res.reason === 'already' ? '今天已經回報過了。' : '現在不能回報。'));
 }
 
@@ -364,7 +367,7 @@ async function confirmImport() {
   if (!p) return;
   if (p.kind === 'v1') {
     await act('migrate', { type: 'migrateV1', legacy: p.legacy },
-      () => ui.toast('舊島花園轉入完成！v3 原資料沒有被修改。', 3500),
+      res => ui.toast(w('legacy') + '轉入完成！v3 原資料沒有被修改' + (theme().id === 'xianxia' && res.pastLife ? '；前世修為 +' + res.pastLife : '') + '。', 3500),
       res => (res.reason === 'already' ? '這座小島已經有舊島花園了。' : '舊島資料不完整，沒有轉入。'));
     pendingImport = null;
     return refresh();
@@ -393,6 +396,27 @@ async function exportBackup() {
   document.body.append(a); a.click(); a.remove();
   setTimeout(() => URL.revokeObjectURL(url), 2000);
   ui.toast('已開始下載備份，請確認檔案確實存好。', 3500);
+}
+
+// ── X2：煉丹、突破、前世修為（都是單次交易；突破一定成功） ──
+function craftPill(pillId) {
+  const p = pillById(pillId);
+  if (!p) return;
+  return act('pill:' + pillId, { type: 'craftPill', pillId },
+    () => ui.toast('煉成一顆' + p.name + '！' + unsaved()),
+    res => (res.reason === 'missing' ? '材料不夠：' + res.missing.map(m => matOf(m.id).name + '還差 ' + (m.need - m.have)).join('、') : '現在不能煉製。'));
+}
+
+function breakthrough() {
+  return act('breakthrough', { type: 'breakthrough' },
+    res => { ui.closePanel(false); ui.ceremony(res.name, () => { canvas.focus({ preventScroll: true }); refresh(); }); },
+    res => (res.reason === 'no-pill' ? '還缺一顆' + pillById(res.pill).name + '。' : res.reason === 'not-ready' ? '修為還不夠，慢慢來。' : '已達最高境界。'));
+}
+
+function claimPastLife() {
+  return act('pastLife', { type: 'claimPastLife' },
+    res => ui.toast('前世記憶甦醒，修為 +' + res.xp + unsaved() + '。', 3500),
+    () => '前世修為已經領過了。');
 }
 
 const actors = () => [playerTile(), ...npcs.flatMap(n => [{ x: n.x, y: n.y }, ...(n.to ? [n.to] : [])])];
@@ -431,7 +455,8 @@ function panelCtx() {
     handlers: {
       outfit: setOutfit, theme: changeTheme, craft, place: startPlacing, pickup, claim, focus: startFocus, focusCancel: cancelFocus, studyConfirm: reportStudy,
       openData: () => { ui.closePanel(false); ui.openPanel('data', panelCtx()); refresh(); },
-      previewLocal, importFile, cancelImport, confirmImport, exportBackup
+      previewLocal, importFile, cancelImport, confirmImport, exportBackup,
+      craftPill, breakthrough, pastLife: claimPastLife
     }
   };
 }
@@ -559,6 +584,7 @@ function releaseDir(dir) {
 
 addEventListener('keydown', e => {
   if (e.metaKey || e.ctrlKey || e.altKey) return;
+  if (ui.ceremonyOpen) { if (e.code === 'Escape') document.getElementById('ceremonyOk').click(); return; }
   if (e.code === 'Escape') {
     if (ui.dialogueOpen) ui.closeDialogue(); else if (ui.panel) { pendingImport = null; ui.closePanel(); } else if (placing) stopPlacing();
     return refresh();

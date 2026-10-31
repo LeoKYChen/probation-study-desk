@@ -9,6 +9,7 @@ import { questById, questStatus, ledgerKey } from './quests.js';
 import { npcById } from './npc/dialogue.js';
 import { focusOption, studyTask, studyKey, focusKey, focusRemaining } from './learning.js';
 import { normalizeLegacy, applyLegacy } from './migration.js';
+import { XP, REALMS, pillById, emptyCultivation, normalizeCultivation, pastLifeAmount } from './cultivation.js';
 
 export const SCHEMA = 'probation-study-island-v4';
 export const VERSION = 1;
@@ -38,6 +39,7 @@ export function createSave(now = new Date()) {
     focus: null,
     legacy: null,
     theme: 'island',
+    cultivation: emptyCultivation(),
     npc: {},
     rewardLedger: {}
   };
@@ -95,6 +97,10 @@ export function normalizeSave(raw) {
   s.npc = isObj(raw.npc) ? raw.npc : {};
   s.legacy = raw.legacy ? normalizeLegacy(raw.legacy) : null;
   s.theme = THEME_IDS.includes(raw.theme) ? raw.theme : 'island';
+  s.cultivation = normalizeCultivation(raw.cultivation);
+  const rp = isObj(rinv.pills) ? rinv.pills : {};
+  s.inventory.pills = {};
+  for (const [id, n] of Object.entries(rp)) if (pillById(id) && Number.isInteger(n) && n > 0) s.inventory.pills[id] = n;
   s.rewardLedger = isObj(raw.rewardLedger) ? raw.rewardLedger : {};
   return s;
 }
@@ -112,10 +118,27 @@ function rollDay(save, date) {
   }
 }
 
+// 前世修為：已轉入 v3 舊島者一次性取得（每個 v3 學習日 30，上限 900）。
+function grantPastLife(save, now) {
+  if (save.cultivation.pastLife) return 0;
+  save.cultivation.pastLife = true;
+  const n = pastLifeAmount(save.legacy);
+  save.cultivation.xp += n;
+  save.rewardLedger['pastlife'] = now.toISOString();
+  return n;
+}
+
 function befriend(save, npcId) {
   const rec = save.npc[npcId] ||= {};
   rec.friendship = Math.min(MAX_FRIENDSHIP, (Number.isInteger(rec.friendship) ? rec.friendship : 0) + 1);
   return rec.friendship;
+}
+
+// 修為只增不減；與獎勵在同一筆交易中寫入。兩種主題都會累積（島嶼主題只是不顯示）。
+function addXp(save, n) {
+  save.cultivation ||= emptyCultivation();
+  save.cultivation.xp += n;
+  return n;
 }
 
 function grant(save, reward) {
@@ -202,7 +225,8 @@ export function applyAction(save, action, now = new Date()) {
       if (!st.done) return fail('not-done');
       grant(save, q.reward);
       save.rewardLedger[ledgerKey(q.id, action.date)] = now.toISOString();
-      return touch({ changed: true, ok: true, reward: q.reward });
+      const xp = addXp(save, XP.quest);
+      return touch({ changed: true, ok: true, reward: q.reward, xp });
     }
     // ── 階段 C：專注計時（以開始時間 + 裝置時鐘判斷；只有時間到才給，且同一次專注只結算一次） ──
     case 'focusStart': {
@@ -230,7 +254,8 @@ export function applyAction(save, action, now = new Date()) {
       if (done >= opt.dailyCap) return touch({ changed: true, ok: true, minutes: f.minutes, capped: true, reward: {} });
       grant(save, opt.reward);
       const friendship = befriend(save, opt.npc);
-      return touch({ changed: true, ok: true, minutes: f.minutes, capped: false, reward: opt.reward, npc: opt.npc, friendship });
+      const xp = addXp(save, f.minutes === 25 ? XP.focus25 : XP.focus5);
+      return touch({ changed: true, ok: true, minutes: f.minutes, capped: false, reward: opt.reward, npc: opt.npc, friendship, xp });
     }
     // ── 學習任務：v4.0 為使用者自行回報；每項每天一次 ──
     case 'studyReport': {
@@ -242,13 +267,43 @@ export function applyAction(save, action, now = new Date()) {
       save.rewardLedger[key] = now.toISOString();
       grant(save, t.reward);
       const friendship = befriend(save, t.npc);
-      return touch({ changed: true, ok: true, reward: t.reward, npc: t.npc, friendship, selfReported: true });
+      const xp = addXp(save, XP.study);
+      return touch({ changed: true, ok: true, reward: t.reward, npc: t.npc, friendship, selfReported: true, xp });
     }
     // ── 階段 D：v3 舊島轉入「舊島花園」，只做一次 ──
     case 'migrateV1': {
       const legacy = normalizeLegacy(action.legacy);
       if (!legacy) return fail('invalid');
-      return touch(applyLegacy(save, legacy));
+      const r = applyLegacy(save, legacy);
+      if (r.ok) r.pastLife = grantPastLife(save, now);
+      return touch(r);
+    }
+    // ── X2：修為與突破 ──
+    case 'claimPastLife': {
+      if (!save.legacy) return fail('no-legacy');
+      if (save.cultivation.pastLife) return fail('already');
+      return touch({ changed: true, ok: true, xp: grantPastLife(save, now) });
+    }
+    case 'craftPill': {
+      const pill = pillById(action.pillId);
+      if (!pill) return fail('unknown-pill');
+      const lack = Object.entries(pill.needs).map(([id, need]) => ({ id, need, have: count(save.inventory, id) })).filter(m => m.have < m.need);
+      if (lack.length) return { ...fail('missing'), missing: lack };
+      for (const [id, n] of Object.entries(pill.needs)) save.inventory.materials[id] -= n;
+      save.inventory.pills ||= {};
+      save.inventory.pills[pill.id] = (save.inventory.pills[pill.id] || 0) + 1;
+      return touch({ changed: true, ok: true, pill: pill.id });
+    }
+    case 'breakthrough': {
+      const c = save.cultivation, next = REALMS[c.realm + 1];
+      if (!next) return fail('max');
+      if (c.xp < next.threshold) return fail('not-ready');
+      if (!((save.inventory.pills || {})[next.pill] > 0)) return { ...fail('no-pill'), pill: next.pill };
+      save.inventory.pills[next.pill] -= 1;
+      if (!save.inventory.pills[next.pill]) delete save.inventory.pills[next.pill];
+      c.realm += 1;
+      c.history.push({ realm: next.id, at: now.toISOString() });
+      return touch({ changed: true, ok: true, realm: c.realm, name: next.name });
     }
     default:
       return fail('unknown-action');

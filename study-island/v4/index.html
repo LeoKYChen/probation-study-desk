@@ -13,6 +13,7 @@
   <header class="hud">
     <a class="back" href="../../" title="回觀護人學習平臺" aria-label="回觀護人學習平臺">←</a>
     <span class="hud-item island">🏝 <b id="islandName">小樹灣</b></span>
+    <span class="hud-item realm-chip" id="realmChip" hidden></span>
     <span class="hud-item" id="clock">🌤 秋日</span>
     <span class="hud-item focus-chip" id="focusChip" title="專注計時中" hidden>⏱ <b>00:00</b></span>
     <span class="hud-item shells" title="貝殼">🐚 <b id="shellCount">0</b></span>
@@ -53,6 +54,16 @@
       <div id="drawerBody" class="drawer-body"></div>
     </section>
   </main>
+
+  <div id="ceremony" class="ceremony" role="dialog" aria-modal="true" aria-labelledby="ceremonyTitle" hidden>
+    <div class="ceremony-card">
+      <div class="ceremony-glow" aria-hidden="true"></div>
+      <p class="ceremony-sub">閉關突破</p>
+      <h2 id="ceremonyTitle"></h2>
+      <p id="ceremonyText"></p>
+      <button id="ceremonyOk" class="btn" type="button">出關</button>
+    </div>
+  </div>
 
   <nav class="dock" aria-label="小島功能">
     <button type="button" data-panel="bag" title="背包（B）">🎒<span>背包</span></button>

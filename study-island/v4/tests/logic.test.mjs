@@ -388,14 +388,15 @@ test('兩種主題都有完整的名稱：材料、器物、地形、同門、�
     for (const ter of Object.values(TERRAIN)) assert.ok(t.terrain[ter.id], t.id + ' ' + ter.id);
     for (const n of NPCS) assert.ok(t.npcs[n.id].name, t.id + ' ' + n.id);
     for (const s of STUDY_TASKS) assert.ok(t.study[s.id], t.id + ' ' + s.id);
+    for (const q of QUESTS) assert.ok(t.quests[q.id].title && t.quests[q.id].icon, t.id + ' ' + q.id);
   }
 });
 
 test('修仙主題的文字不殘留島嶼用語', () => {
   const x = THEMES.xianxia;
-  const text = JSON.stringify([x.words, x.materials, x.furniture, x.terrain, x.npcs, x.study]) +
+  const text = JSON.stringify([x.words, x.materials, x.furniture, x.terrain, x.npcs, x.study, x.quests]) +
     NPCS.map(n => x.lines[n.id].hint({ shellsToday: 1, shellsTotal: 3 }) + x.lines[n.id].rest).join('');
-  for (const word of ['貝殼', '木材', '葉子', '果實', '工坊', '小島', '居民', '沙灘', '小屋', '背包']) assert.ok(!text.includes(word), word);
+  for (const word of ['貝殼', '木材', '葉子', '果實', '工坊', '小島', '居民', '沙灘', '小屋', '背包', '家具']) assert.ok(!text.includes(word), word);
 });
 
 test('切換主題：只改 theme 欄位，背包、家具、親密度、帳本、專注都不變；不認得的主題被拒絕', () => {
@@ -423,4 +424,78 @@ test('修仙主題的同門台詞與名稱；切回島嶼恢復原本台詞', ()
     setTheme('island');
     assert.match(linesFor(NPCS[0], { friendship: 0, shellsToday: 0, shellsTotal: 3 })[0], /栗子/);
   } finally { setTheme('island'); }
+});
+
+// ── 修仙主題 X2：修為與突破 ──
+import { XP, REALMS, realmInfo, pastLifeAmount } from '../src/cultivation.js';
+
+test('修為只從打坐、自行回報、師門任務取得；採集、煉製、聊天不給；超過每日上限的打坐不給', () => {
+  const s = createSave();
+  applyAction(s, { type: 'collect', spotId: 'beach-shell-1', date: D });
+  applyAction(s, { type: 'collect', spotId: 'beach-shell-2', date: D });
+  applyAction(s, { type: 'talk', npcId: 'chestnut', date: D });
+  give(s, { wood: 2, leaf: 1 });
+  applyAction(s, { type: 'craft', recipeId: 'wood-chair', date: D });
+  assert.equal(s.cultivation.xp, 0);
+  assert.equal(applyAction(s, { type: 'studyReport', taskId: 'essay', date: D }).xp, XP.study);
+  assert.equal(applyAction(s, { type: 'claimQuest', questId: 'shells2', date: D }).xp, XP.quest);
+  let t = at('2026-10-31T08:00:00').getTime();
+  const sit = mins => { applyAction(s, { type: 'focusStart', minutes: mins }, new Date(t)); t += mins * 60000; return applyAction(s, { type: 'focusComplete', date: D }, new Date(t)); };
+  assert.equal(sit(25).xp, XP.focus25);
+  assert.equal(sit(25).xp, XP.focus25);
+  assert.equal(sit(25).capped, true, '25 分鐘每日上限 2 次');
+  assert.equal(s.cultivation.xp, XP.study + XP.quest + XP.focus25 * 2);
+  assert.equal(applyAction(s, { type: 'studyReport', taskId: 'essay', date: D }).ok, false, '重複回報不給');
+  assert.equal(s.cultivation.xp, XP.study + XP.quest + XP.focus25 * 2);
+});
+
+test('境界顯示：練氣九層、達標可突破；沒有丹藥不能突破、有丹藥一定成功、只升不降', () => {
+  const s = createSave();
+  assert.equal(realmInfo(s.cultivation).label, '練氣一層');
+  s.cultivation.xp = 250;
+  assert.equal(realmInfo(s.cultivation).label, '練氣三層');
+  s.cultivation.xp = 899;
+  assert.equal(realmInfo(s.cultivation).ready, false);
+  assert.equal(applyAction(s, { type: 'breakthrough' }).reason, 'not-ready');
+  s.cultivation.xp = 900;
+  assert.equal(realmInfo(s.cultivation).ready, true);
+  assert.equal(applyAction(s, { type: 'breakthrough' }).reason, 'no-pill');
+  assert.equal(applyAction(s, { type: 'craftPill', pillId: 'pill-foundation' }).reason, 'missing');
+  give(s, { shell: 3, wood: 2, leaf: 2, fruit: 1 });
+  assert.equal(applyAction(s, { type: 'craftPill', pillId: 'pill-foundation' }).ok, true);
+  assert.deepEqual(Object.values(s.inventory.materials), [0, 0, 0, 0]);
+  const r = applyAction(s, { type: 'breakthrough' });
+  assert.equal(r.ok, true); assert.equal(r.name, '築基');
+  assert.equal(s.cultivation.realm, 1);
+  assert.equal(s.cultivation.xp, 900, '突破不消耗修為');
+  assert.equal(s.inventory.pills['pill-foundation'], undefined, '丹藥用掉');
+  assert.equal(realmInfo(s.cultivation).label, '築基初期');
+  assert.equal(applyAction(s, { type: 'breakthrough' }).reason, 'not-ready');
+  const n = normalizeSave(JSON.parse(JSON.stringify(s)));
+  assert.equal(n.cultivation.realm, 1); assert.equal(n.cultivation.xp, 900);
+  s.cultivation.xp = 999999; s.cultivation.realm = REALMS.length - 1;
+  assert.equal(applyAction(s, { type: 'breakthrough' }).reason, 'max');
+});
+
+test('前世修為：每個 v3 學習日 30、上限 900，只給一次；轉入舊島時自動給', () => {
+  assert.equal(pastLifeAmount({ days: Array(5).fill('d') }), 150);
+  assert.equal(pastLifeAmount({ days: Array(100).fill('d') }), 900);
+  const s = createSave();
+  assert.equal(applyAction(s, { type: 'claimPastLife' }).reason, 'no-legacy');
+  const r = applyAction(s, { type: 'migrateV1', legacy: legacyFromV1(v3()) });
+  assert.equal(r.pastLife, 90, 'v3 有 3 個學習日');
+  assert.equal(s.cultivation.xp, 90);
+  assert.equal(applyAction(s, { type: 'claimPastLife' }).reason, 'already');
+  assert.equal(s.cultivation.xp, 90);
+  // 已在 X2 之前轉入舊島的存檔：可補領一次。
+  const old = createSave();
+  old.legacy = legacyFromV1(v3());
+  assert.equal(applyAction(old, { type: 'claimPastLife' }).xp, 90);
+  assert.equal(applyAction(old, { type: 'claimPastLife' }).reason, 'already');
+});
+
+test('壞掉的修為資料正規化為安全預設，不會變成負數或超出境界', () => {
+  const n = normalizeSave({ schema: SCHEMA, cultivation: { xp: -50, realm: 99 }, inventory: { pills: { 'pill-foundation': 2, fake: 3 } } });
+  assert.deepEqual([n.cultivation.xp, n.cultivation.realm], [0, 0]);
+  assert.deepEqual(n.inventory.pills, { 'pill-foundation': 2 });
 });

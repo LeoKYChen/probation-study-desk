@@ -545,6 +545,7 @@ await step('修仙主題：切換後名稱與畫面改變、進度完全不變�
   await p.click('.dock [data-panel=build]');
   assert.match(await p.textContent('#drawerTitle'), /丹房與佈置/);
   assert.match(await p.textContent('#drawerBody'), /山上的器物[\s\S]*入門蒲團/);
+  assert.ok(!/居民|工坊|家具|貝殼|背包/.test(await p.textContent('#drawerBody')), '丹房面板沒有島嶼用語');
   await p.click('#drawerClose');
   if (SHOTS) await p.screenshot({ path: SHOTS + '/12-xianxia-375.png' });
   await p.reload(); await p.waitForFunction(() => globalThis.__island);
@@ -558,6 +559,7 @@ await step('修仙主題：切換後名稱與畫面改變、進度完全不變�
   await p.click('.dock [data-panel=tasks]');
   assert.match(await p.textContent('#drawerTitle'), /師門任務/);
   assert.match(await p.textContent('#drawerBody'), /打坐 25 分鐘/);
+  assert.ok(!/居民|工坊|家具|貝殼/.test(await p.textContent('#drawerBody')), '師門面板沒有島嶼用語');
   assert.match(await p.textContent('#drawerBody'), /自行回報/);
   await p.click('#drawerClose');
   await p.click('.dock [data-panel=bag]');
@@ -565,6 +567,61 @@ await step('修仙主題：切換後名稱與畫面改變、進度完全不變�
   await p.waitForFunction(() => __island.save.theme === 'island');
   assert.equal(await p.textContent('#islandName'), '小樹灣');
   assert.match(await p.textContent('#islandName'), /小樹灣/);
+  await ctx.close();
+});
+
+// ── 修仙主題 X2：修為、煉丹、突破 ──
+await step('修為：修仙主題顯示境界；回報得修為；修為足夠→煉築基丹→突破一定成功並保留；島嶼主題不顯示', async () => {
+  const ctx = await browser.newContext({ ...devices['iPhone 13'], viewport: { width: 375, height: 740 } });
+  const p = await ctx.newPage();
+  p.on('pageerror', e => errors.push(String(e)));
+  await p.goto(URL); await p.waitForFunction(() => globalThis.__island);
+  assert.equal(await p.isVisible('#realmChip'), false, '島嶼主題不顯示境界');
+  // 準備一份「修為 880、材料足夠」的存檔（以整份取代的方式寫入，等同匯入備份）。
+  await p.evaluate(async () => {
+    const m = await import('./src/persistence.js'), st = await import('./src/state.js');
+    const s = st.createSave();
+    s.theme = 'xianxia'; s.cultivation.xp = 880;
+    Object.assign(s.inventory.materials, { shell: 3, wood: 2, leaf: 2, fruit: 1 });
+    await (await m.openStore()).replace(s);
+  });
+  await p.reload(); await p.waitForFunction(() => globalThis.__island);
+  assert.equal(await p.textContent('#realmChip'), '練氣九層');
+  await p.click('.dock [data-panel=tasks]');
+  assert.match(await p.textContent('#drawerBody'), /距離築基還差 20/);
+  assert.match(await p.textContent('#drawerBody'), /不代表考試能力/);
+  await p.click('[data-act=study][data-id=essay]');
+  await p.click('[data-act=studyConfirm][data-id=essay]');
+  await p.waitForFunction(() => __island.save.cultivation.xp === 900);
+  assert.match(await p.textContent('#toast'), /修為 \+20/);
+  assert.match(await p.textContent('#drawerBody'), /到「丹房」煉一顆築基丹/);
+  await p.click('#drawerClose');
+  await p.click('.dock [data-panel=build]');
+  await p.click('[data-act=craftPill][data-id=pill-foundation]');
+  await p.waitForFunction(() => (__island.save.inventory.pills || {})['pill-foundation'] === 1);
+  await p.click('#drawerClose');
+  await p.click('.dock [data-panel=tasks]');
+  await p.click('[data-act=breakthrough]');
+  await p.waitForSelector('#ceremony:not([hidden])');
+  assert.equal(await p.textContent('#ceremonyTitle'), '築基');
+  if (SHOTS) await p.screenshot({ path: SHOTS + '/15-breakthrough-375.png' });
+  await p.click('#ceremonyOk');
+  assert.equal(await p.isVisible('#ceremony'), false);
+  assert.equal(await p.textContent('#realmChip'), '築基初期');
+  await p.reload(); await p.waitForFunction(() => globalThis.__island);
+  const c = await p.evaluate(() => __island.save.cultivation);
+  assert.deepEqual([c.realm, c.xp], [1, 900], '突破後保留，修為不減');
+  assert.equal(await p.textContent('#realmChip'), '築基初期');
+  await p.click('.dock [data-panel=tasks]');
+  if (SHOTS) await p.screenshot({ path: SHOTS + '/16-cultivation-375.png' });
+  await p.click('#drawerClose');
+  await p.click('.dock [data-panel=bag]');
+  await p.click('[data-act=theme][data-id=island]');
+  await p.waitForFunction(() => __island.save.theme === 'island');
+  assert.equal(await p.isVisible('#realmChip'), false);
+  await p.click('#drawerClose');
+  await p.click('.dock [data-panel=tasks]');
+  assert.ok(!(await p.textContent('#drawerBody')).includes('修為'), '島嶼主題的任務面板沒有修為');
   await ctx.close();
 });
 
