@@ -1,6 +1,6 @@
 {
  "說明": "docs/theory-openstax.json 中 OpenStax 未涵蓋的學科題，另找可公開取得全文的原文出處。每個來源都實際下載全文（PDF 轉文字或網頁）比對過，matchedTerms 為在該文件全文中確認出現的關鍵詞；法規條文以全國法規資料庫 2026-10-16 版核對。只作為開發者補充出處用，網站不讀取本檔。",
- "checkedOn": "2026-10-30",
+ "checkedOn": "2026-10-31",
  "scope": "OpenStax 未涵蓋的 218 題",
  "kindLabels": {
   "original": "原作者或原始研究",
@@ -547,6 +547,106 @@
    "ref": "Wild, S., et al. (2023). The relevance of basic psychological needs and subject interest as explanatory variables for student dropout in higher education. European Journal of Psychology of Education.",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9810519/",
    "kind": "review"
+  },
+  "holmes92": {
+   "ref": "Holmes, R. M., & Holmes, S. T. (1992). Understanding mass murder: A starting point. Federal Probation, 56(1), 53–61.",
+   "url": "https://www.ojp.gov/pdffiles1/Digitization/136809NCJRS.pdf",
+   "kind": "original"
+  },
+  "steiner08": {
+   "ref": "Steiner, B. (2008). Maintaining prison order: Understanding causes of inmate misconduct within and across Ohio correctional institutions (NIJ award 2007-IJ-CX-0010, NCJ 226458).",
+   "url": "https://www.ojp.gov/pdffiles1/nij/grants/226458.pdf",
+   "kind": "review"
+  },
+  "marlowe12": {
+   "ref": "Marlowe, D. B., Festinger, D. S., Dugosh, K. L., Benasutti, K. M., Fox, G., & Croft, J. R. (2012). Adaptive programming improves outcomes in drug court: An experimental trial. Criminal Justice and Behavior, 39(4), 514–532.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3424518/",
+   "kind": "original"
+  },
+  "lutz22": {
+   "ref": "Lutz, M., Zani, D., Fritz, M., Dudeck, M., & Franke, I. (2022). A review and comparative analysis of the risk-needs-responsivity, good lives, and recovery models in forensic psychiatric treatment. Frontiers in Psychiatry, 13, 988905.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9659584/",
+   "kind": "review"
+  },
+  "tighe10": {
+   "ref": "Tighe, J., McManus, I. C., Dewhurst, N. G., Chis, L., & Mucklow, J. (2010). The standard error of measurement is a more appropriate measure of quality for postgraduate medical assessments than is reliability: An analysis of MRCP(UK) examinations. BMC Medical Education, 10, 40.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2893515/",
+   "kind": "review"
+  },
+  "schmukle25": {
+   "ref": "Schmukle, S. C. (2025). Unbiased confidence intervals for psychological testing: The regression-based true score approach with scale correction. Assessment, 33(5), 817–825.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13230652/",
+   "kind": "review"
+  },
+  "aera14": {
+   "ref": "American Educational Research Association, American Psychological Association, & National Council on Measurement in Education. (2014). Standards for educational and psychological testing. Washington, DC: American Educational Research Association.",
+   "url": "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf",
+   "kind": "original"
+  },
+  "sunshine73": {
+   "ref": "Sunshine, P. M. (1973). Approaches to school discipline: A selected review of the literature (Reviews of Research No. 2). Baltimore: Maryland State Department of Education.",
+   "url": "https://files.eric.ed.gov/fulltext/ED087084.pdf",
+   "kind": "review"
+  },
+  "sunawan16": {
+   "ref": "Sunawan, & Xiong, J. (2016). An application model of reality therapy to develop effective achievement goals in tier three intervention. International Education Studies, 9(10).",
+   "url": "https://files.eric.ed.gov/fulltext/EJ1116010.pdf",
+   "kind": "review"
+  },
+  "okocha01": {
+   "ref": "Okocha, A. A. (2001). Facilitating career development through Super's life career rainbow. Paper presented at the 27th Annual Conference of the National Consultation on Career Development, Ottawa (ERIC ED462641).",
+   "url": "https://files.eric.ed.gov/fulltext/ED462641.pdf",
+   "kind": "review"
+  },
+  "tip41": {
+   "ref": "Substance Abuse and Mental Health Services Administration. (2005). Substance abuse treatment: Group therapy (Treatment Improvement Protocol [TIP] Series 41; DHHS Publication No. [SMA] 05-3991). Rockville, MD: Author.",
+   "url": "https://files.eric.ed.gov/fulltext/ED491570.pdf",
+   "kind": "official"
+  },
+  "moore87": {
+   "ref": "Moore, S. D., & Slife, B. D. (1987). The self-awareness process in the effective psychotherapist. Paper presented at the 33rd Annual Convention of the Southwestern Psychological Association, New Orleans (ERIC ED286098).",
+   "url": "https://files.eric.ed.gov/fulltext/ED286098.pdf",
+   "kind": "review"
+  },
+  "bja98": {
+   "ref": "Bureau of Justice Assistance. (1998). Addressing community gang problems: A practical guide (NCJ 164273). Washington, DC: Office of Justice Programs, U.S. Department of Justice.",
+   "url": "https://www.ojp.gov/pdffiles/164273.pdf",
+   "kind": "official"
+  },
+  "openstaxstat": {
+   "ref": "Illowsky, B., & Dean, S. (2023). Introductory statistics 2e, 12.3 The regression equation. Houston, TX: OpenStax, Rice University.",
+   "url": "https://openstax.org/books/introductory-statistics-2e/pages/12-3-the-regression-equation",
+   "kind": "review"
+  },
+  "larimer99": {
+   "ref": "Larimer, M. E., Palmer, R. S., & Marlatt, G. A. (1999). Relapse prevention: An overview of Marlatt's cognitive-behavioral model. Alcohol Research & Health, 23(2), 151–160.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6760427/",
+   "kind": "original"
+  },
+  "zingaro88": {
+   "ref": "Zingaro, J. C., et al. (1988). Ethical and legal issues in school counseling, Chapter 2: Privacy, confidentiality, and privileged communication. Alexandria, VA: American Association for Counseling and Development (ERIC ED323461).",
+   "url": "https://files.eric.ed.gov/fulltext/ED323461.pdf",
+   "kind": "review"
+  },
+  "hays": {
+   "ref": "Hays, D. G., Craigen, L. M., Knight, J., Healey, A., & Sikes, A. (n.d.). Duty to warn and protect against self-destructive behaviors and interpersonal violence (ERIC EJ886123). Old Dominion University.",
+   "url": "https://files.eric.ed.gov/fulltext/EJ886123.pdf",
+   "kind": "review"
+  },
+  "iacp_reentry": {
+   "ref": "International Association of Chiefs of Police. (n.d.). Building an offender reentry program: A guide for law enforcement (BJA grant 2005-MU-MU-K012). Washington, DC: Bureau of Justice Assistance.",
+   "url": "https://bja.ojp.gov/sites/g/files/xyckuh186/files/Publications/Reentry_LE.pdf",
+   "kind": "official"
+  },
+  "schonfeld03": {
+   "ref": "Schonfeld, D. J., & Newgass, S. (2003). School crisis response initiative (OVC Bulletin, NCJ 197832). Washington, DC: Office for Victims of Crime.",
+   "url": "https://ovc.ojp.gov/sites/ovc/files/media/document/ncj197832.pdf",
+   "kind": "official"
+  },
+  "ovc_fptp": {
+   "ref": "Office for Victims of Crime. (n.d.). From pain to power: Crime victims take action, Benefits of community involvement. Washington, DC: U.S. Department of Justice.",
+   "url": "https://ovc.ojp.gov/sites/ovc/files/pubs/OVC_Archives/reports/fptp/bci.htm",
+   "kind": "official"
   }
  },
  "questions": [
@@ -947,6 +1047,30 @@
    ]
   },
   {
+   "id": "108-心理學-4",
+   "title": "使用心理測驗應注意的事項",
+   "coverage": "full",
+   "note": "",
+   "sources": [
+    {
+     "doc": "aera14",
+     "ref": "American Educational Research Association, American Psychological Association, & National Council on Measurement in Education. (2014). Standards for educational and psychological testing. Washington, DC: American Educational Research Association.",
+     "url": "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf",
+     "kind": "original",
+     "matchedTerms": [
+      "test selection",
+      "validity evidence",
+      "clearly described populations",
+      "user qualifications",
+      "standardized procedures",
+      "informed consent",
+      "interpreted in isolation",
+      "protect the privacy of examinees"
+     ]
+    }
+   ]
+  },
+  {
    "id": "111-心理學-1",
    "title": "常模參照測驗與標準參照測驗的比較",
    "coverage": "partial",
@@ -1042,6 +1166,27 @@
       "biosocial",
       "prefrontal",
       "heart rate"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "108-諮商與輔導-1",
+   "title": "優勢中心取向的意義、目標與矯正體系應用原則",
+   "coverage": "partial",
+   "note": "二手整理：涵蓋優勢取向（好生活模式）相對於缺陷取向（RNR）的重點、與風險管理並行，以及以合法方式滿足基本人類善；沒有 Saleebey (1992) 對「優勢」的定義（能力、資源、興趣、韌性、支持網絡）與一般矯正應用原則的逐項說明",
+   "sources": [
+    {
+     "doc": "lutz22",
+     "ref": "Lutz, M., Zani, D., Fritz, M., Dudeck, M., & Franke, I. (2022). A review and comparative analysis of the risk-needs-responsivity, good lives, and recovery models in forensic psychiatric treatment. Frontiers in Psychiatry, 13, 988905.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9659584/",
+     "kind": "review",
+     "matchedTerms": [
+      "strengths-based",
+      "good lives",
+      "primary goods",
+      "criminogenic needs",
+      "personal agency"
      ]
     }
    ]
@@ -1149,6 +1294,70 @@
    ]
   },
   {
+   "id": "111-諮商與輔導-3",
+   "title": "第三方要求個案諮商資料時的考量",
+   "coverage": "partial",
+   "note": "二手整理（美國學校輔導的倫理與法律）：涵蓋保密原則與三項例外（個案危及自己或他人、個案或家長要求告知第三方、法院命令揭露）、特許溝通、被傳喚時的處理，以及家長與未成年人的權利；沒有臺灣輔導與諮商學會守則的條文，也沒有書面同意與最少揭露、說明用途與保管方式的具體規定",
+   "sources": [
+    {
+     "doc": "zingaro88",
+     "ref": "Zingaro, J. C., et al. (1988). Ethical and legal issues in school counseling, Chapter 2: Privacy, confidentiality, and privileged communication. Alexandria, VA: American Association for Counseling and Development (ERIC ED323461).",
+     "url": "https://files.eric.ed.gov/fulltext/ED323461.pdf",
+     "kind": "review",
+     "matchedTerms": [
+      "confidential",
+      "the client is a danger to",
+      "a court orders a counselor to disclose",
+      "privileged communication",
+      "subpoenaed",
+      "parent"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "111-諮商與輔導-4",
+   "title": "諮商員自我覺察的影響與改善",
+   "coverage": "partial",
+   "note": "二手整理（研討會論文）：涵蓋反移情在治療者缺乏覺察時會嚴重破壞治療關係、覺察可作為了解個案的資訊、Rogers 所說真誠（genuineness）需要自我覺察，以及督導中促進治療者自我覺察；沒有個人諮商、同儕諮詢、反思紀錄與自我照顧（避免耗竭）的說明",
+   "sources": [
+    {
+     "doc": "moore87",
+     "ref": "Moore, S. D., & Slife, B. D. (1987). The self-awareness process in the effective psychotherapist. Paper presented at the 33rd Annual Convention of the Southwestern Psychological Association, New Orleans (ERIC ED286098).",
+     "url": "https://files.eric.ed.gov/fulltext/ED286098.pdf",
+     "kind": "review",
+     "matchedTerms": [
+      "countertransference",
+      "critically destructive to the therapeutic relationship",
+      "self-awareness",
+      "genuine",
+      "supervisor"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "112-諮商與輔導-1",
+   "title": "受刑人透露越獄計畫並要求保密",
+   "coverage": "partial",
+   "note": "二手整理（美國學校輔導）：涵蓋保密的限制、明確且迫切危險時預警與保護義務凌駕保密（Tarasoff）、預警三原則（可預見的傷害、可辨識的對象、可行的介入）以及評估危險程度；沒有受刑人越獄的脫逃罪、監獄行刑法與戒護外出申請，也沒有對失落與焦慮的情緒支持與問題解決訓練",
+   "sources": [
+    {
+     "doc": "hays",
+     "ref": "Hays, D. G., Craigen, L. M., Knight, J., Healey, A., & Sikes, A. (n.d.). Duty to warn and protect against self-destructive behaviors and interpersonal violence (ERIC EJ886123). Old Dominion University.",
+     "url": "https://files.eric.ed.gov/fulltext/EJ886123.pdf",
+     "kind": "review",
+     "matchedTerms": [
+      "duty to warn and protect",
+      "clear and imminent danger",
+      "supersedes the school counselor’s confidentiality",
+      "foreseeable harm",
+      "level of danger"
+     ]
+    }
+   ]
+  },
+  {
    "id": "112-諮商與輔導-2",
    "title": "性平三法與國小時遭導師性騷擾事件的處置",
    "coverage": "partial",
@@ -1173,6 +1382,28 @@
      "matchedTerms": [
       "safety",
       "trustworthiness"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "112-諮商與輔導-4",
+   "title": "Corey 團體歷程階段與霸凌防治團體計畫",
+   "coverage": "partial",
+   "note": "涵蓋初期（介紹、團體協議、建立安全環境與正向規範）、中期（實際工作）與結束期（有意的、正向的結束）三階段；沒有把「轉換階段」（處理焦慮、抗拒、衝突）獨立成一個階段，也沒有六次霸凌防治團體的設計",
+   "sources": [
+    {
+     "doc": "tip41",
+     "ref": "Substance Abuse and Mental Health Services Administration. (2005). Substance abuse treatment: Group therapy (Treatment Improvement Protocol [TIP] Series 41; DHHS Publication No. [SMA] 05-3991). Rockville, MD: Author.",
+     "url": "https://files.eric.ed.gov/fulltext/ED491570.pdf",
+     "kind": "official",
+     "matchedTerms": [
+      "tasks in the beginning phase",
+      "emotionally safe environment",
+      "positive group norms",
+      "middle phase",
+      "end phase",
+      "termination"
      ]
     }
    ]
@@ -1434,6 +1665,27 @@
      "matchedTerms": [
       "dynamic",
       "Central Eight"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "監獄官-109-犯罪學與再犯預測-4",
+   "title": "RANT 毒品犯風險與需求分流工具",
+   "coverage": "partial",
+   "note": "涵蓋 RANT 作為毒品法庭評估工具、高低風險分流與低風險者過度介入的疑慮；沒有四象限（風險×需求）的說明，也沒有緩起訴附命戒癮與社區處遇的應用",
+   "sources": [
+    {
+     "doc": "marlowe12",
+     "ref": "Marlowe, D. B., Festinger, D. S., Dugosh, K. L., Benasutti, K. M., Fox, G., & Croft, J. R. (2012). Adaptive programming improves outcomes in drug court: An experimental trial. Criminal Justice and Behavior, 39(4), 514–532.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3424518/",
+     "kind": "original",
+     "matchedTerms": [
+      "risk & needs triage",
+      "antisocial personality disorder",
+      "high-risk",
+      "low-risk",
+      "drug court"
      ]
     }
    ]
@@ -1789,6 +2041,27 @@
    ]
   },
   {
+   "id": "監獄官-114-犯罪學與再犯預測-4",
+   "title": "藥物濫用者再犯風險評估的面向與社區應用",
+   "coverage": "partial",
+   "note": "涵蓋毒品犯再犯風險因子（青少年期開始、前次戒治失敗、前科、反社會人格）與 RANT 的使用；沒有使用頻率、同儕、家庭支持、就業等指標，也沒有緩起訴附命戒癮或保護管束驗尿分級",
+   "sources": [
+    {
+     "doc": "marlowe12",
+     "ref": "Marlowe, D. B., Festinger, D. S., Dugosh, K. L., Benasutti, K. M., Fox, G., & Croft, J. R. (2012). Adaptive programming improves outcomes in drug court: An experimental trial. Criminal Justice and Behavior, 39(4), 514–532.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3424518/",
+     "kind": "original",
+     "matchedTerms": [
+      "risk & needs triage",
+      "adolescent onset",
+      "previously unsuccessful",
+      "prior felony convictions",
+      "antisocial personality disorder"
+     ]
+    }
+   ]
+  },
+  {
    "id": "監獄官-115-犯罪學與再犯預測-1",
    "title": "犯罪中止的關鍵因子與聚焦中止的處遇活動",
    "coverage": "full",
@@ -1980,6 +2253,28 @@
    ]
   },
   {
+   "id": "監獄官-109-諮商與矯正輔導-4",
+   "title": "團體前準備、計畫書與各階段領導者任務",
+   "coverage": "partial",
+   "note": "涵蓋團體前訪談與成員篩選、團體協議（保密、缺席、團體外接觸、終止等），以及早、中、後期各階段的任務；沒有團體計畫書應包含的內容（理念、對象、次數時間、單元內容、評估方式），知情同意只在附帶提及",
+   "sources": [
+    {
+     "doc": "tip41",
+     "ref": "Substance Abuse and Mental Health Services Administration. (2005). Substance abuse treatment: Group therapy (Treatment Improvement Protocol [TIP] Series 41; DHHS Publication No. [SMA] 05-3991). Rockville, MD: Author.",
+     "url": "https://files.eric.ed.gov/fulltext/ED491570.pdf",
+     "kind": "official",
+     "matchedTerms": [
+      "pregroup interviews",
+      "group agreement",
+      "selection of group members",
+      "tasks in the beginning phase",
+      "middle phase",
+      "end phase"
+     ]
+    }
+   ]
+  },
+  {
    "id": "監獄官-110-諮商與矯正輔導-2",
    "title": "少年犯罪三級預防與有效方案特徵",
    "coverage": "partial",
@@ -2053,6 +2348,52 @@
      "kind": "review",
      "matchedTerms": [
       "roll with resistance"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "監獄官-111-諮商與矯正輔導-4",
+   "title": "以選擇理論設計青少年收容人八次團體",
+   "coverage": "partial",
+   "note": "二手整理：涵蓋 Glasser 的五種基本需求（生存、愛與隸屬、自由、權力、樂趣）、選擇自己的行為（total behavior）、優質世界與 Wubbolding 的 WDEP 四步驟；沒有八次團體的目標與各次主題設計",
+   "sources": [
+    {
+     "doc": "sunawan16",
+     "ref": "Sunawan, & Xiong, J. (2016). An application model of reality therapy to develop effective achievement goals in tier three intervention. International Education Studies, 9(10).",
+     "url": "https://files.eric.ed.gov/fulltext/EJ1116010.pdf",
+     "kind": "review",
+     "matchedTerms": [
+      "survival",
+      "love and belonging",
+      "freedom",
+      "power",
+      "fun",
+      "total behavior",
+      "quality world",
+      "WDEP",
+      "Wubbolding"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "監獄官-112-諮商與矯正輔導-1",
+   "title": "優勢中心諮商與傳統諮商的差異及矯正應用",
+   "coverage": "partial",
+   "note": "二手整理：涵蓋好生活模式相對於缺陷取向（RNR）的優勢與目標導向、與風險降低整合；沒有 Saleebey 優勢觀點的諮商歷程（關係、優勢評估、設定目標、行動、追蹤），優勢中心與傳統諮商的差異只能由好生活模式間接對照",
+   "sources": [
+    {
+     "doc": "lutz22",
+     "ref": "Lutz, M., Zani, D., Fritz, M., Dudeck, M., & Franke, I. (2022). A review and comparative analysis of the risk-needs-responsivity, good lives, and recovery models in forensic psychiatric treatment. Frontiers in Psychiatry, 13, 988905.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9659584/",
+     "kind": "review",
+     "matchedTerms": [
+      "strengths-based",
+      "good lives",
+      "primary goods",
+      "criminogenic needs",
+      "personal agency"
      ]
     }
    ]
@@ -2213,6 +2554,30 @@
    ]
   },
   {
+   "id": "監獄官-115-諮商與矯正輔導-2",
+   "title": "Adler 學派少年不適應行為的目標與介入",
+   "coverage": "partial",
+   "note": "二手整理：涵蓋 Dreikurs 的四種錯誤目標（尋求注意、爭取權力、報復、表現無能）、避免陷入權力爭奪，以及以自然後果取代傳統處罰；沒有以「大人的感受」與「糾正後的反應」評估目標，也沒有不報復、事後討論的逐項說明，原始 Dreikurs & Soltz (1964) 未取得",
+   "sources": [
+    {
+     "doc": "sunshine73",
+     "ref": "Sunshine, P. M. (1973). Approaches to school discipline: A selected review of the literature (Reviews of Research No. 2). Baltimore: Maryland State Department of Education.",
+     "url": "https://files.eric.ed.gov/fulltext/ED087084.pdf",
+     "kind": "review",
+     "matchedTerms": [
+      "four goals of misbehavior",
+      "attention getting",
+      "power seeking",
+      "revenge seeking",
+      "assumed disability",
+      "natural consequences",
+      "struggle for power",
+      "Dreikurs"
+     ]
+    }
+   ]
+  },
+  {
    "id": "薦任升等（矯正）-108-心理測驗-1",
    "title": "試題難度與鑑別度的計算",
    "coverage": "full",
@@ -2228,6 +2593,49 @@
       "discrimination index",
       "distractor",
       "27%"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-108-心理測驗-3",
+   "title": "採購測驗：類型選擇與評估條件",
+   "coverage": "partial",
+   "note": "涵蓋信度／精確度、效度證據、常模須描述清楚且定期重新建立常模（Standard 5.8、5.9）；沒有人格、性向、興趣三類測驗的比較，也沒有「以心理適應為目的宜優先購買人格測驗」的論述（出自 Anastasi & Urbina）",
+   "sources": [
+    {
+     "doc": "aera14",
+     "ref": "American Educational Research Association, American Psychological Association, & National Council on Measurement in Education. (2014). Standards for educational and psychological testing. Washington, DC: American Educational Research Association.",
+     "url": "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf",
+     "kind": "original",
+     "matchedTerms": [
+      "validity evidence",
+      "reliability/precision",
+      "clearly described populations",
+      "renorm",
+      "test selection"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-108-心理測驗-4",
+   "title": "線上施測的倫理議題",
+   "coverage": "partial",
+   "note": "涵蓋施測者與解釋者資格（Standard 7.7）、受測者隱私與資料安全（Standard 9.19）、有監督與無監督線上施測對效度證據的影響，以及事前告知與同意；2014 年版沒有專談線上施測的身分確認、加密與資料保存期限，這些要看個人資料保護法與臺灣心理學會倫理守則",
+   "sources": [
+    {
+     "doc": "aera14",
+     "ref": "American Educational Research Association, American Psychological Association, & National Council on Measurement in Education. (2014). Standards for educational and psychological testing. Washington, DC: American Educational Research Association.",
+     "url": "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf",
+     "kind": "original",
+     "matchedTerms": [
+      "unproctored online testing",
+      "user qualifications",
+      "protect the privacy of examinees",
+      "data security",
+      "informed consent",
+      "use of proctors"
      ]
     }
    ]
@@ -2271,6 +2679,134 @@
    ]
   },
   {
+   "id": "薦任升等（矯正）-110-心理測驗-3",
+   "title": "驗證量表能否預測未來犯罪",
+   "coverage": "partial",
+   "note": "涵蓋預測效標關係研究應檢查的人為因素（測量誤差、全距限制、效標污染、遺漏資料；Standard 11.8），以及效度研究中樣本自我選擇與流失（attrition）的影響；沒有以未來犯罪紀錄為效標的追蹤設計、ROC/AUC 與基率，該題引用的 Hanson & Morton-Bourgon (2009) 未取得",
+   "sources": [
+    {
+     "doc": "aera14",
+     "ref": "American Educational Research Association, American Psychological Association, & National Council on Measurement in Education. (2014). Standards for educational and psychological testing. Washington, DC: American Educational Research Association.",
+     "url": "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf",
+     "kind": "original",
+     "matchedTerms": [
+      "predictor-criterion relationships",
+      "criterion contamination",
+      "range restriction",
+      "attrition",
+      "predictive"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-110-心理測驗-4",
+   "title": "建立常模的過程",
+   "coverage": "partial",
+   "note": "涵蓋常模報告應載明抽樣母群、抽樣程序、參與率、加權與施測日期，並由出版者定期重新建立常模（Standard 5.9），以及標準化施測程序（Standard 6.1）；沒有分層隨機抽樣的逐步做法，也沒有從原始分數轉換為標準分數的步驟",
+   "sources": [
+    {
+     "doc": "aera14",
+     "ref": "American Educational Research Association, American Psychological Association, & National Council on Measurement in Education. (2014). Standards for educational and psychological testing. Washington, DC: American Educational Research Association.",
+     "url": "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf",
+     "kind": "original",
+     "matchedTerms": [
+      "renorm",
+      "sampling procedures",
+      "participation rates",
+      "weighting of the sample",
+      "dates of testing",
+      "percentile",
+      "standardized procedures"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-112-心理測驗-2",
+   "title": "以迴歸預測 GPA",
+   "coverage": "partial",
+   "note": "教科書：涵蓋最佳配適線通過兩變數的平均點、斜率可寫成 b = r(s_y/s_x)、預測值與殘差；沒有以 GPA 為例的數值計算（甲 3.4、乙 2.8），預測誤差只以殘差帶過，沒有標準估計誤的公式",
+   "sources": [
+    {
+     "doc": "openstaxstat",
+     "ref": "Illowsky, B., & Dean, S. (2023). Introductory statistics 2e, 12.3 The regression equation. Houston, TX: OpenStax, Rice University.",
+     "url": "https://openstax.org/books/introductory-statistics-2e/pages/12-3-the-regression-equation",
+     "kind": "review",
+     "matchedTerms": [
+      "b = r ( s y s x )",
+      "standard deviation of the y values",
+      "correlation coefficient",
+      "passes through the point",
+      "predicted"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-112-心理測驗-3",
+   "title": "選擇適當的常模團體",
+   "coverage": "partial",
+   "note": "涵蓋「常模應指向描述清楚的母群，且須包含測驗使用者通常想比較的個人或團體」（Standard 5.8）與使用者須適當選用常模；沒有申請資訊類碩士班的情境、效標群體（成功工程師）與自建常模的做法",
+   "sources": [
+    {
+     "doc": "aera14",
+     "ref": "American Educational Research Association, American Psychological Association, & National Council on Measurement in Education. (2014). Standards for educational and psychological testing. Washington, DC: American Educational Research Association.",
+     "url": "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf",
+     "kind": "original",
+     "matchedTerms": [
+      "clearly described populations",
+      "ordinarily wish to compare",
+      "norms, if used"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-112-心理測驗-4",
+   "title": "測量標準誤與信賴區間",
+   "coverage": "partial",
+   "note": "三份來源都是說明而非題目的計算：測量標準誤依標準差與信度計算、須以報告分數的單位呈現（Standard 2.13）、95% 信賴區間為觀察分數 ± 1.96×SEM，以及比較兩個分數時應考慮差異分數的信度或差異標準誤；沒有題目的數值計算（SEM = 15×√(1−.96) = 3）",
+   "sources": [
+    {
+     "doc": "tighe10",
+     "ref": "Tighe, J., McManus, I. C., Dewhurst, N. G., Chis, L., & Mucklow, J. (2010). The standard error of measurement is a more appropriate measure of quality for postgraduate medical assessments than is reliability: An analysis of MRCP(UK) examinations. BMC Medical Education, 10, 40.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2893515/",
+     "kind": "review",
+     "matchedTerms": [
+      "standard error of measurement",
+      "reliability",
+      "standard deviation",
+      "cronbach's alpha"
+     ]
+    },
+    {
+     "doc": "schmukle25",
+     "ref": "Schmukle, S. C. (2025). Unbiased confidence intervals for psychological testing: The regression-based true score approach with scale correction. Assessment, 33(5), 817–825.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13230652/",
+     "kind": "review",
+     "matchedTerms": [
+      "standard error of measurement",
+      "confidence interval",
+      "1.96",
+      "observed score"
+     ]
+    },
+    {
+     "doc": "aera14",
+     "ref": "American Educational Research Association, American Psychological Association, & National Council on Measurement in Education. (2014). Standards for educational and psychological testing. Washington, DC: American Educational Research Association.",
+     "url": "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf",
+     "kind": "original",
+     "matchedTerms": [
+      "standard error of measurement",
+      "standard error of the difference",
+      "confidence intervals",
+      "reliability/precision"
+     ]
+    }
+   ]
+  },
+  {
    "id": "薦任升等（矯正）-114-心理測驗-2",
    "title": "全國高中生常模的解釋限制",
    "coverage": "partial",
@@ -2305,6 +2841,27 @@
       "difficulty index",
       "discrimination index",
       "distractor"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-114-心理測驗-4",
+   "title": "電腦化與 AI 測驗的倫理議題",
+   "coverage": "partial",
+   "note": "涵蓋自動化評分演算法的文件化與偏誤檢視（Standard 4.19）、不得僅依賴電腦產生的解釋（Standard 9.10）、使用者資格（Standard 7.7）與受測者隱私（Standard 9.19）；2014 年版早於生成式 AI，沒有 AI 專屬的透明度與可解釋性規範，也沒有個資最小蒐集的具體做法",
+   "sources": [
+    {
+     "doc": "aera14",
+     "ref": "American Educational Research Association, American Psychological Association, & National Council on Measurement in Education. (2014). Standards for educational and psychological testing. Washington, DC: American Educational Research Association.",
+     "url": "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf",
+     "kind": "original",
+     "matchedTerms": [
+      "automated scoring algorithms",
+      "computergenerated interpretations",
+      "scoring algorithms need to be reviewed for potential sources of bias",
+      "user qualifications",
+      "protect the privacy of examinees"
      ]
     }
    ]
@@ -2533,6 +3090,28 @@
    ]
   },
   {
+   "id": "薦任升等（矯正）-114-犯罪學-4",
+   "title": "德州控制模式與密西根責任模式",
+   "coverage": "partial",
+   "note": "二手整理：說明 DiIulio (1987) 的控制、責任、共識三種管理模式，並提到控制模式（德州）秩序最佳；沒有說明密西根對應責任模式，也沒有逐項對照嚴格程度與自治空間，原始 DiIulio (1987) 未取得",
+   "sources": [
+    {
+     "doc": "steiner08",
+     "ref": "Steiner, B. (2008). Maintaining prison order: Understanding causes of inmate misconduct within and across Ohio correctional institutions (NIJ award 2007-IJ-CX-0010, NCJ 226458).",
+     "url": "https://www.ojp.gov/pdffiles1/nij/grants/226458.pdf",
+     "kind": "review",
+     "matchedTerms": [
+      "control model",
+      "responsibility model",
+      "consensual model",
+      "texas",
+      "michigan",
+      "diiulio"
+     ]
+    }
+   ]
+  },
+  {
    "id": "薦任升等（矯正）-108-諮商與輔導-1",
    "title": "再犯預防與好生活模式",
    "coverage": "partial",
@@ -2594,6 +3173,48 @@
       "duty to protect",
       "duty to warn",
       "identifiable"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-110-諮商與輔導-1",
+   "title": "不合作團體成員的類型與處理",
+   "coverage": "partial",
+   "note": "涵蓋沉默成員（Silence）、敵意發言、不停說話等干擾行為與團體中的抗拒（Resistance in Group）；沒有依賴或救援型成員，也沒有逐類型的心理特徵與邀請、阻斷、反映等策略",
+   "sources": [
+    {
+     "doc": "tip41",
+     "ref": "Substance Abuse and Mental Health Services Administration. (2005). Substance abuse treatment: Group therapy (Treatment Improvement Protocol [TIP] Series 41; DHHS Publication No. [SMA] 05-3991). Rockville, MD: Author.",
+     "url": "https://files.eric.ed.gov/fulltext/ED491570.pdf",
+     "kind": "official",
+     "matchedTerms": [
+      "silence",
+      "talk nonstop",
+      "openly hostile comment",
+      "resistance in group",
+      "disruptive behavior"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-110-諮商與輔導-4",
+   "title": "出獄前資源連結與有效溝通",
+   "coverage": "partial",
+   "note": "涵蓋出獄前就開始的釋放規劃（個別釋放計畫）與可連結的資源（住屋、教育、就業轉介與職訓、物質濫用治療、家庭團聚）；沒有更生保護法的資源，也沒有信任關係、真誠同理、尊重自主等有效溝通因素（Rogers、Trotter）",
+   "sources": [
+    {
+     "doc": "iacp_reentry",
+     "ref": "International Association of Chiefs of Police. (n.d.). Building an offender reentry program: A guide for law enforcement (BJA grant 2005-MU-MU-K012). Washington, DC: Bureau of Justice Assistance.",
+     "url": "https://bja.ojp.gov/sites/g/files/xyckuh186/files/Publications/Reentry_LE.pdf",
+     "kind": "official",
+     "matchedTerms": [
+      "job counseling, vocational training or employment referrals",
+      "housing assistance",
+      "family reunification",
+      "individual release plan",
+      "pre-release"
      ]
     }
    ]
@@ -2964,6 +3585,28 @@
    ]
   },
   {
+   "id": "police-111-criminology_prevention-3",
+   "title": "差別機會理論與三種副文化",
+   "coverage": "full",
+   "note": "",
+   "sources": [
+    {
+     "doc": "bja98",
+     "ref": "Bureau of Justice Assistance. (1998). Addressing community gang problems: A practical guide (NCJ 164273). Washington, DC: Office of Justice Programs, U.S. Department of Justice.",
+     "url": "https://www.ojp.gov/pdffiles/164273.pdf",
+     "kind": "official",
+     "matchedTerms": [
+      "differential opportunity",
+      "legitimate means of success are unavailable",
+      "criminal gangs are likely to exist in stable low-income areas",
+      "conflict gangs develop in communities with dilapidated conditions and transient populations",
+      "double failures",
+      "heavy drug use"
+     ]
+    }
+   ]
+  },
+  {
    "id": "police-111-criminology_prevention-4",
    "title": "酒駕的犯罪學分析與嚇阻",
    "coverage": "partial",
@@ -3255,6 +3898,36 @@
    ]
   },
   {
+   "id": "police-109-counseling-3",
+   "title": "Super 生涯彩虹圖",
+   "coverage": "full",
+   "note": "",
+   "sources": [
+    {
+     "doc": "okocha01",
+     "ref": "Okocha, A. A. (2001). Facilitating career development through Super's life career rainbow. Paper presented at the 27th Annual Conference of the National Consultation on Career Development, Ottawa (ERIC ED462641).",
+     "url": "https://files.eric.ed.gov/fulltext/ED462641.pdf",
+     "kind": "review",
+     "matchedTerms": [
+      "life career rainbow",
+      "life-span",
+      "life-space",
+      "growth",
+      "exploration",
+      "establishment",
+      "maintenance",
+      "decline",
+      "child",
+      "student",
+      "leisurite",
+      "citizen",
+      "worker",
+      "amount of time and energy"
+     ]
+    }
+   ]
+  },
+  {
    "id": "police-110-counseling-2",
    "title": "認知行為治療與意義治療的整合",
    "coverage": "partial",
@@ -3324,6 +3997,25 @@
    ]
   },
   {
+   "id": "police-111-counseling-3",
+   "title": "催化此時此地並進行闡釋",
+   "coverage": "partial",
+   "note": "涵蓋領導者盡量把焦點維持在「此時此地」、以提問把成員的反應拉回團體內互動，以及中期領導者兼顧內容與歷程；沒有 Yalom 所說「先活化此時此地、再做歷程闡釋」的兩階段說明",
+   "sources": [
+    {
+     "doc": "tip41",
+     "ref": "Substance Abuse and Mental Health Services Administration. (2005). Substance abuse treatment: Group therapy (Treatment Improvement Protocol [TIP] Series 41; DHHS Publication No. [SMA] 05-3991). Rockville, MD: Author.",
+     "url": "https://files.eric.ed.gov/fulltext/ED491570.pdf",
+     "kind": "official",
+     "matchedTerms": [
+      "here and now",
+      "the leader balances content",
+      "how members interact in the group"
+     ]
+    }
+   ]
+  },
+  {
    "id": "police-112-counseling-1",
    "title": "以 Super 與 Holland 輔導更生人生涯",
    "coverage": "partial",
@@ -3348,6 +4040,28 @@
    ]
   },
   {
+   "id": "police-112-counseling-3",
+   "title": "復歸社會青年的毒品防制輔導計畫",
+   "coverage": "partial",
+   "note": "涵蓋 Marlatt 復發預防模式（高風險情境、因應技巧、結果預期、違反禁戒效應、生活型態與渴求）；沒有減害、RNR、動機晤談的內容，也沒有家庭支持、就業資源、跨機關分工與成效評估（毒品危害防制條例）",
+   "sources": [
+    {
+     "doc": "larimer99",
+     "ref": "Larimer, M. E., Palmer, R. S., & Marlatt, G. A. (1999). Relapse prevention: An overview of Marlatt's cognitive-behavioral model. Alcohol Research & Health, 23(2), 151–160.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6760427/",
+     "kind": "original",
+     "matchedTerms": [
+      "high-risk situations",
+      "coping",
+      "abstinence violation effect",
+      "outcome expectancies",
+      "lifestyle",
+      "relapse prevention"
+     ]
+    }
+   ]
+  },
+  {
    "id": "police-112-counseling-4",
    "title": "同理心、同情心與慈悲心",
    "coverage": "partial",
@@ -3362,6 +4076,27 @@
       "empathy",
       "compassion",
       "empathic distress"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-113-counseling-1",
+   "title": "被害人角色與倖存者角色",
+   "coverage": "partial",
+   "note": "涵蓋被害人的無力感、孤立，以及 Herman 所說重建與他人連結是創傷復原的關鍵階段、後期超越個人怨恨而投入社會行動；沒有「被害人」與「倖存者」兩種角色的明確定義，也沒有建立安全、回顧與哀悼兩個階段",
+   "sources": [
+    {
+     "doc": "ovc_fptp",
+     "ref": "Office for Victims of Crime. (n.d.). From pain to power: Crime victims take action, Benefits of community involvement. Washington, DC: U.S. Department of Justice.",
+     "url": "https://ovc.ojp.gov/sites/ovc/files/pubs/OVC_Archives/reports/fptp/bci.htm",
+     "kind": "official",
+     "matchedTerms": [
+      "powerlessness",
+      "isolation",
+      "key stages of trauma recovery",
+      "reconnection",
+      "herman notes"
      ]
     }
    ]
@@ -3452,6 +4187,28 @@
       "scaling",
       "resources",
       "de Shazer"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-115-counseling-4",
+   "title": "暴力事件的跨單位心理輔導合作",
+   "coverage": "partial",
+   "note": "涵蓋學校危機回應團隊與外部機關協調、分流（triage）、短期輔導、轉介社區服務與長期追蹤，以及直接、間接受害者（含第三層受害者）的需求；沒有家庭暴力加害人、被害人與家屬三方不同需求，也沒有警政、職場員工協助方案的分工與家庭暴力防治法的流程",
+   "sources": [
+    {
+     "doc": "schonfeld03",
+     "ref": "Schonfeld, D. J., & Newgass, S. (2003). School crisis response initiative (OVC Bulletin, NCJ 197832). Washington, DC: Office for Victims of Crime.",
+     "url": "https://ovc.ojp.gov/sites/ovc/files/media/document/ncj197832.pdf",
+     "kind": "official",
+     "matchedTerms": [
+      "school-based crisis response team",
+      "triage",
+      "short-term counseling",
+      "referral to community services",
+      "tertiary victims",
+      "outside agencies"
      ]
     }
    ]
@@ -3648,6 +4405,25 @@
      "matchedTerms": [
       "reintegrative shaming",
       "Braithwaite"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "監所管理員-110-犯罪學概要-2",
+   "title": "Cloward 與 Ohlin 的機會理論",
+   "coverage": "partial",
+   "note": "涵蓋 Cloward 與 Ohlin 的差別機會（合法與非法機會都不足）以及犯罪、衝突、退縮三種幫派／副文化；沒有題目所列「機會擴充方案」的政策討論（該列引用 Siegel (2018)）",
+   "sources": [
+    {
+     "doc": "bja98",
+     "ref": "Bureau of Justice Assistance. (1998). Addressing community gang problems: A practical guide (NCJ 164273). Washington, DC: Office of Justice Programs, U.S. Department of Justice.",
+     "url": "https://www.ojp.gov/pdffiles/164273.pdf",
+     "kind": "official",
+     "matchedTerms": [
+      "differential opportunity",
+      "criminal, conflict, or retreatist",
+      "double failures"
      ]
     }
    ]
@@ -3914,78 +4690,70 @@
      ]
     }
    ]
+  },
+  {
+   "id": "監所管理員-115-犯罪學概要-3",
+   "title": "大規模殺人與連續殺人",
+   "coverage": "partial",
+   "note": "涵蓋大規模殺人「同一時間與地點」的定義、與連續殺人的差異，並點出連續殺人的四種動機類型名稱（visionary、mission、hedonistic、power/control）；沒有連續殺人「冷卻期」的定義，也沒有各類型的說明，題目的「幻想型」應對應原文的 visionary 型",
+   "sources": [
+    {
+     "doc": "holmes92",
+     "ref": "Holmes, R. M., & Holmes, S. T. (1992). Understanding mass murder: A starting point. Federal Probation, 56(1), 53–61.",
+     "url": "https://www.ojp.gov/pdffiles1/Digitization/136809NCJRS.pdf",
+     "kind": "original",
+     "matchedTerms": [
+      "mass murder",
+      "serial murder",
+      "spree murder",
+      "at one time and in one place",
+      "hedonistic",
+      "power/control",
+      "mission"
+     ]
+    }
+   ]
   }
  ],
  "uncovered": [
   "112-犯罪學-1",
   "113-犯罪學-2",
-  "108-心理學-4",
   "112-心理學-4",
-  "108-諮商與輔導-1",
   "108-諮商與輔導-3",
   "111-諮商與輔導-2",
-  "111-諮商與輔導-3",
-  "111-諮商與輔導-4",
-  "112-諮商與輔導-1",
-  "112-諮商與輔導-4",
   "113-諮商與輔導-1",
   "113-諮商與輔導-2",
   "115-諮商與輔導-4",
   "監獄官-109-犯罪學與再犯預測-3",
-  "監獄官-109-犯罪學與再犯預測-4",
-  "監獄官-114-犯罪學與再犯預測-4",
-  "監獄官-109-諮商與矯正輔導-4",
   "監獄官-110-諮商與矯正輔導-1",
   "監獄官-111-諮商與矯正輔導-3",
-  "監獄官-111-諮商與矯正輔導-4",
-  "監獄官-112-諮商與矯正輔導-1",
   "監獄官-114-諮商與矯正輔導-3",
-  "監獄官-115-諮商與矯正輔導-2",
   "監獄官-115-諮商與矯正輔導-3",
-  "薦任升等（矯正）-108-心理測驗-3",
-  "薦任升等（矯正）-108-心理測驗-4",
-  "薦任升等（矯正）-110-心理測驗-3",
-  "薦任升等（矯正）-110-心理測驗-4",
   "薦任升等（矯正）-112-心理測驗-1",
-  "薦任升等（矯正）-112-心理測驗-2",
-  "薦任升等（矯正）-112-心理測驗-3",
-  "薦任升等（矯正）-112-心理測驗-4",
-  "薦任升等（矯正）-114-心理測驗-4",
   "薦任升等（矯正）-110-犯罪學-3",
-  "薦任升等（矯正）-114-犯罪學-4",
-  "薦任升等（矯正）-110-諮商與輔導-1",
   "薦任升等（矯正）-110-諮商與輔導-3",
-  "薦任升等（矯正）-110-諮商與輔導-4",
   "薦任升等（矯正）-112-諮商與輔導-4",
   "police-114-psychology-3",
   "police-115-psychology-3",
   "police-108-criminology_prevention-4",
   "police-110-criminology_prevention-2",
-  "police-111-criminology_prevention-3",
   "police-112-criminology_prevention-3",
   "police-113-criminology_prevention-1",
   "police-113-criminology_prevention-2",
   "police-114-criminology_prevention-1",
   "police-108-counseling-3",
   "police-108-counseling-4",
-  "police-109-counseling-3",
   "police-110-counseling-1",
   "police-110-counseling-3",
-  "police-111-counseling-3",
-  "police-112-counseling-3",
-  "police-113-counseling-1",
   "police-113-counseling-3",
   "police-113-counseling-4",
   "police-115-counseling-2",
   "police-115-counseling-3",
-  "police-115-counseling-4",
   "113-家事調查官-心理測驗員-心理學-3",
   "監所管理員-109-犯罪學概要-3",
-  "監所管理員-110-犯罪學概要-2",
   "監所管理員-111-犯罪學概要-1",
   "監所管理員-112-犯罪學概要-1",
-  "監所管理員-113-犯罪學概要-2",
-  "監所管理員-115-犯罪學概要-3"
+  "監所管理員-113-犯罪學概要-2"
  ],
  "uncoveredNote": "這些題目在可連線的公開網站中找不到能下載全文、且內容足以對應得分點的文件，主要是：心理測驗的計算與常模（教科書內容）、諮商技術與團體歷程（Corey、Egan、Hill、Rogers 等專書）、古典學派與部分副文化理論（Beccaria、Bentham、Cloward & Ohlin、Miller、Sellin、Colvin）、臺灣倫理守則與方案，以及部分要以講義為準的題目。"
 }

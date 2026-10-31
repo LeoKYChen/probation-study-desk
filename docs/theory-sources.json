@@ -1,6 +1,6 @@
 {
  "說明": "law-scoring/data.js 學科題（kind: theory）每個出處字串對應的完整書目與核對狀態。只作為開發者補充與核對用，網站不讀取本檔。check 與 vague 兩類另有 crossref 欄位，記錄以 Crossref API（必要時以 WHO IRIS）查證的結果：found＝查到相符紀錄、partly＝只查到部分或旁證（書評、重印本）、not-indexed＝Crossref 未收錄。",
- "checkedOn": "2026-10-29",
+ "checkedOn": "2026-10-31",
  "lawDataset": "全國法規資料庫 2026-10-16 版",
  "statusLabels": {
   "ok": "書目已確認",
@@ -648,8 +648,8 @@
   {
    "cite": "Bonta & Andrews, The Psychology of Criminal Conduct（Routledge）",
    "ref": "Bonta, J., & Andrews, D. A. (2017). The psychology of criminal conduct (6th ed.). New York: Routledge.",
-   "status": "vague",
-   "note": "原引用未標版次；Routledge 出版的是第 6 版 (2017) 與第 7 版 (2024)。",
+   "status": "ok",
+   "note": "2026-10-31 以 Crossref 再查：Routledge 第 6 版，DOI 10.4324/9781315677187（Bonta, Andrews；線上 2016、版權年 2017），書目已確認。",
    "usedBy": [
     "115-犯罪學-2"
    ],
@@ -1234,8 +1234,8 @@
   {
    "cite": "de Vries Robbé et al.",
    "ref": "de Vries Robbé, M., de Vogel, V., & de Spa, E. (2011). Protective factors for violence risk in forensic psychiatric patients: A retrospective validation study of the SAPROF. International Journal of Forensic Mental Health, 10(3), 178–186.",
-   "status": "vague",
-   "note": "原引用未標年份；SAPROF 工具手冊為 de Vogel, de Ruiter, Bouman, & de Vries Robbé (2009/2012)。",
+   "status": "ok",
+   "note": "2026-10-31 以 Crossref 再查：DOI 10.1080/14999013.2011.600232（de Vries Robbé, de Vogel, de Spa, 2011, IJFMH 10(3), 178–186），書目已確認。data.js 的寫法缺年份，建議改為 de Vries Robbé et al. (2011)；SAPROF 工具手冊為 de Vogel et al. (2009/2012)。",
    "usedBy": [
     "115-犯罪學-3"
    ],
@@ -3884,8 +3884,8 @@
   {
    "cite": "Taxman et al.",
    "ref": "Taxman, F. S., Pattavina, A., Caudy, M. S., Byrne, J., & Durso, J. (2013). The empirical basis for the RNR model with an updated RNR conceptual framework. In F. S. Taxman & A. Pattavina (Eds.), Simulation strategies to reduce recidivism (pp. 73–111). New York: Springer.",
-   "status": "vague",
-   "note": "原引用未標年份；RNR 模擬工具的出處請以講義核對。",
+   "status": "ok",
+   "note": "2026-10-31 以 Crossref 再查：DOI 10.1007/978-1-4614-6188-3_4（Taxman, Pattavina, Caudy, Byrne, Durso, 2013, pp. 73–111），書目已確認。data.js 的寫法缺年份，建議改為 Taxman et al. (2013)。",
    "usedBy": [
     "監獄官-111-犯罪學與再犯預測-3"
    ],
@@ -4007,8 +4007,8 @@
   {
    "cite": "UNODC",
    "ref": "United Nations Office on Drugs and Crime. (2023). Global study on homicide 2023. Vienna: UNODC.",
-   "status": "vague",
-   "note": "原引用未標文件名稱與年份；官方統計可引 UNODC 犯罪趨勢調查 (UN-CTS) 或全球殺人研究報告，請依講義所指補上。",
+   "status": "ok",
+   "note": "2026-10-31 以 Crossref 再查：DOI 10.18356/9789213587386（Global Study on Homicide 2023，United Nations／UNODC, 2023），書目已確認。data.js 的寫法缺文件名與年份，建議改為 UNODC (2023)。",
    "usedBy": [
     "police-111-criminology_prevention-1"
    ],

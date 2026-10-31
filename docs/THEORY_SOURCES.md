@@ -17,12 +17,12 @@
 
 | 狀態 | 筆數 | 意思 |
 |---|---|---|
-| 書目已確認 | 384 | 原引用正確，已補完整書目 |
-| 原引用不完整，已補建議書目 | 35 | 原引用缺年份、版次或只有姓氏（例如「Andrews & Bonta」「Freud」「Comer, Abnormal Psychology」），已依內容補上建議書目，請對照講義使用的版本 |
+| 書目已確認 | 388 | 原引用正確，已補完整書目 |
+| 原引用不完整，已補建議書目 | 31 | 原引用缺年份、版次或只有姓氏（例如「Andrews & Bonta」「Freud」「Comer, Abnormal Psychology」），已依內容補上建議書目，請對照講義使用的版本 |
 | 原引用可能有誤，請核對 | 14 | 作者、年份或篇名與內容不完全相符，詳見下表與說明 |
 | 法規或官方文件 | 57 | 法規條次已核對現行法；官方文件已補名稱與年份 |
 
-經 Crossref 查證後，Christopher et al. (2016)、Gottfredson (1987)、Park & Burgess (1925) 三筆確認原引用可以成立，由「請核對」改為「書目已確認」（原為 381／17 筆）。
+經 Crossref 查證後，Christopher et al. (2016)、Gottfredson (1987)、Park & Burgess (1925) 三筆確認原引用可以成立，由「請核對」改為「書目已確認」（原為 381／17 筆）。2026-10-31 再以 Crossref 確認 Bonta & Andrews（Routledge 第 6 版）、de Vries Robbé et al.、Taxman et al.、UNODC 四筆的 DOI，由「原引用不完整」改為「書目已確認」（原為 384／35 筆）；其中後三筆 `data.js` 的寫法仍缺年份或文件名，建議補上。
 
 ## 優先處理：出處可能有誤的項目
 
@@ -319,7 +319,7 @@ OpenStax 是 Rice University 的免費、經同儕審查的大學教科書。本
 | 監所管理員-109-犯罪學概要-2｜Freud 心理分析與犯罪學 | [Psychology 2e 11.2 Freud and the Psychodynamic Perspective](https://openstax.org/books/psychology-2e/pages/11-2-freud-and-the-psychodynamic-perspective) | 完整 |
 | 監所管理員-111-犯罪學概要-2｜Hirschi 社會鍵與家庭 | [Sociology 3e 7.2 Theoretical Perspectives on Deviance and Crime](https://openstax.org/books/introduction-sociology-3e/pages/7-2-theoretical-perspectives-on-deviance-and-crime) | 完整 |
 
-## 公開原文出處（2026-10-29 新增，10-30 補充）
+## 公開原文出處（2026-10-29 新增，10-31 補充）
 
 OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官方文件。做法：
 
@@ -328,7 +328,7 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 3. 法規題以全國法規資料庫 2026-10-16 版的條文核對（法務部網站本身連不上），連結指向全國法規資料庫的條文頁。
 4. 只涵蓋部分得分點的標為「部分」，並寫出缺少的內容。
 
-**結果**：218 題中有 149 題找到公開原文（完整涵蓋 34 題、部分涵蓋 115 題），其餘 69 題沒有找到（列在本節最後）。共用到 104 份文件：原作者或原始研究 26 份、政府或國際組織文件 10 份、二手整理 57 份、法規條文 11 筆。
+**結果**：218 題中有 180 題找到公開原文（完整涵蓋 37 題、部分涵蓋 143 題），其餘 38 題沒有找到（列在本節最後）。共用到 124 份文件：原作者或原始研究 30 份、政府或國際組織文件 15 份、二手整理 68 份、法規條文 11 筆。
 
 使用注意：
 - 「原作者或原始研究」是題目引用的學者本人的文件（例如 Felson & Clarke、Bonta & Andrews、Hanson、Farrell & Pease、Moffitt、Bucklen），可直接當出處。
@@ -341,13 +341,14 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 
 | 狀態 | 網站 |
 |---|---|
-| 可連線 | api.crossref.org、pmc.ncbi.nlm.nih.gov（部分文章會出現 reCAPTCHA，未繞過，該文章即不採用）、www.ojp.gov／nij.ojp.gov／crimesolutions.ojp.gov、www.publicsafety.gc.ca、popcenter.asu.edu、iris.who.int、openstax.org |
-| 無法使用 | api.openalex.org（2026-10-29、10-30 兩天都回應 HTTP 429，免費額度用完）、www.ncbi.nlm.nih.gov/books（reCAPTCHA）、store.samhsa.gov（轉址到被封鎖的 library.samhsa.gov）、出版商網站（Sage、Taylor & Francis、Springer、APA 等）、維基百科、Internet Archive、Project Gutenberg、臺灣政府與學會網站（法規改由全國法規資料庫資料集核對） |
+| 可連線 | api.crossref.org、pmc.ncbi.nlm.nih.gov（部分文章會出現 reCAPTCHA，未繞過，該文章即不採用）、www.ojp.gov／nij.ojp.gov／crimesolutions.ojp.gov、www.publicsafety.gc.ca、popcenter.asu.edu、iris.who.int、openstax.org、www.testingstandards.net、www.aera.net、files.eric.ed.gov（2026-10-31 新增） |
+| 無法使用 | api.openalex.org（2026-10-29、10-30 兩天都回應 HTTP 429，免費額度用完）、www.ncbi.nlm.nih.gov/books（reCAPTCHA）、store.samhsa.gov（轉址到被封鎖的 library.samhsa.gov）、www.apa.org（Incapsula 機器人防護，只回傳空白頁，未繞過）、出版商網站（Sage、Taylor & Francis、Springer 等）、www.who.int、ncme.org、smart.ojp.gov、europepmc.org、core.ac.uk、nida.nih.gov、www.samhsa.gov、維基百科、Internet Archive、Project Gutenberg、臺灣政府與學會網站（法規改由全國法規資料庫資料集核對） |
 
 ### 文件清單
 
 | 類型 | 書目 | 全文 |
 |---|---|---|
+| 原作者或原始研究 | American Educational Research Association, American Psychological Association, & National Council on Measurement in Education. (2014). Standards for educational and psychological testing. Washington, DC: American Educational Research Association. | [連結](https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf) |
 | 原作者或原始研究 | Bonta, J., & Andrews, D. A. (2007). Risk-need-responsivity model for offender assessment and rehabilitation (User Report 2007-06). Ottawa: Public Safety Canada. | [連結](https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/rsk-nd-rspnsvty/rsk-nd-rspnsvty-eng.pdf) |
 | 原作者或原始研究 | Bonta, J., Bourgon, G., et al. (2010). The Strategic Training Initiative in Community Supervision: Risk-need-responsivity in the real world (User Report 2010-01). Ottawa: Public Safety Canada. | [連結](https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/2010-01-rnr/index-en.aspx) |
 | 原作者或原始研究 | Bucklen, K. B. (2021). Desistance-focused criminal justice practice. Washington, DC: National Institute of Justice. | [連結](https://www.ojp.gov/pdffiles1/nij/301501.pdf) |
@@ -363,24 +364,32 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | 原作者或原始研究 | Fredrickson, B. L. (2001). The role of positive emotions in positive psychology: The broaden-and-build theory of positive emotions. American Psychologist, 56(3), 218–226.（PMC 作者稿） | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC3122271/) |
 | 原作者或原始研究 | Hanson, R. K., & Harris, A. J. R. (1998). Dynamic predictors of sexual recidivism Ottawa: Department of the Solicitor General of Canada. | [連結](https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/dnmc-prdctrs-sxl/index-en.aspx) |
 | 原作者或原始研究 | Hanson, R. K., & Thornton, D. (1999). Static 99: Improving actuarial risk assessments for sex offenders (User Report 1999-02). Ottawa: Solicitor General Canada. | [連結](https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/sttc-mprvng-actrl/sttc-mprvng-actrl-eng.pdf) |
+| 原作者或原始研究 | Holmes, R. M., & Holmes, S. T. (1992). Understanding mass murder: A starting point. Federal Probation, 56(1), 53–61. | [連結](https://www.ojp.gov/pdffiles1/Digitization/136809NCJRS.pdf) |
 | 原作者或原始研究 | Huizinga, D., Loeber, R., & Thornberry, T. P. (1995). Recent findings from the Program of Research on the Causes and Correlates of Delinquency. Washington, DC: OJJDP. | [連結](https://www.ojp.gov/pdffiles1/Digitization/159042NCJRS.pdf) |
 | 原作者或原始研究 | Jensen, M., & LaFree, G. (2016). Final report: Empirical assessment of domestic radicalization (EADR) (NCJ 250481). | [連結](https://www.ojp.gov/pdffiles1/nij/grants/250481.pdf) |
 | 原作者或原始研究 | Jensen, M., & LaFree, G. (2024). The mobilization puzzle: How individual, group, and situational dynamics produce extremist outcomes (NCJ 308549). | [連結](https://www.ojp.gov/pdffiles1/nij/grants/308549.pdf) |
 | 原作者或原始研究 | Kelley, B. T., Loeber, R., Keenan, K., & DeLamatre, M. (1997). Developmental pathways in boys' disruptive and delinquent behavior (OJJDP Juvenile Justice Bulletin, NCJ 165692). | [連結](https://www.ojp.gov/pdffiles/165692.pdf) |
 | 原作者或原始研究 | Klimecki, O. M., Leiberg, S., Ricard, M., & Singer, T. (2014). Differential pattern of functional brain plasticity after compassion and empathy training. Social Cognitive and Affective Neuroscience, 9(6), 873–879. | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC4040103/) |
+| 原作者或原始研究 | Larimer, M. E., Palmer, R. S., & Marlatt, G. A. (1999). Relapse prevention: An overview of Marlatt's cognitive-behavioral model. Alcohol Research & Health, 23(2), 151–160. | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC6760427/) |
 | 原作者或原始研究 | Loeber, R., Farrington, D. P., & Petechuk, D. (2013). Bulletin 1: From juvenile delinquency to young adult offending (NCJ 242931). | [連結](https://www.ojp.gov/pdffiles1/nij/grants/242931.pdf) |
 | 原作者或原始研究 | Markowitz, J. C., & Weissman, M. M. (2004). Interpersonal psychotherapy: Principles and applications. World Psychiatry, 3(3), 136–139. | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC1414693/) |
+| 原作者或原始研究 | Marlowe, D. B., Festinger, D. S., Dugosh, K. L., Benasutti, K. M., Fox, G., & Croft, J. R. (2012). Adaptive programming improves outcomes in drug court: An experimental trial. Criminal Justice and Behavior, 39(4), 514–532. | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC3424518/) |
 | 原作者或原始研究 | Moffitt, T. E. (2018). Male antisocial behaviour in adolescence and beyond. Nature Human Behaviour, 2, 177–186.（PMC 作者稿） | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC6157602/) |
 | 原作者或原始研究 | Sherman, L. W. (1995). Hot spots of crime and criminal careers of places. Crime Prevention Studies, 4. | [連結](https://popcenter.asu.edu/sites/g/files/litvpz3631/files/library/CrimePrevention/Volume_04/02-Sherman.pdf) |
 | 原作者或原始研究 | Tonry, M. (1997). Intermediate sanctions in sentencing guidelines. Washington, DC: National Institute of Justice. | [連結](https://www.ojp.gov/pdffiles/165043.pdf) |
 | 原作者或原始研究 | Tracy, P. E., Wolfgang, M. E., & Figlio, R. M. (1985). Delinquency in two birth cohorts: Executive summary. Washington, DC: OJJDP. | [連結](https://www.ojp.gov/pdffiles1/Digitization/99854NCJRS.pdf) |
+| 政府或國際組織文件 | Bureau of Justice Assistance. (1998). Addressing community gang problems: A practical guide (NCJ 164273). Washington, DC: Office of Justice Programs, U.S. Department of Justice. | [連結](https://www.ojp.gov/pdffiles/164273.pdf) |
 | 政府或國際組織文件 | Center for Restorative Justice & Peacemaking. (2000). Family group conferencing: Implications for crime victims. Washington, DC: Office for Victims of Crime. | [連結](https://www.ojp.gov/ovc_archives/reports/restorative_justice/restorative_justice_ascii_pdf/ncj176347.pdf) |
 | 政府或國際組織文件 | De La Rosa, M., Lambert, E. Y., & Gropper, B. (Eds.). (1990). Drugs and violence: Causes, correlates, and consequences (NIDA Research Monograph 103). | [連結](https://www.ojp.gov/pdffiles1/Digitization/128781-128794NCJRS.pdf) |
+| 政府或國際組織文件 | International Association of Chiefs of Police. (n.d.). Building an offender reentry program: A guide for law enforcement (BJA grant 2005-MU-MU-K012). Washington, DC: Bureau of Justice Assistance. | [連結](https://bja.ojp.gov/sites/g/files/xyckuh186/files/Publications/Reentry_LE.pdf) |
 | 政府或國際組織文件 | National Institute of Justice. (2003). Toward a drugs and crime research agenda for the 21st century (Special Report, NCJ 194616). | [連結](https://www.ojp.gov/pdffiles1/nij/194616.pdf) |
 | 政府或國際組織文件 | National Institute of Justice. (2013). Violence theory workshop summary (NCJ 242216). | [連結](https://www.ojp.gov/pdffiles1/nij/242216.pdf) |
 | 政府或國際組織文件 | National Institute of Justice. (2016). Five things about deterrence（整理自 Nagin, 2013, Deterrence in the twenty-first century）. | [連結](https://www.ojp.gov/pdffiles1/nij/247350.pdf) |
+| 政府或國際組織文件 | Office for Victims of Crime. (n.d.). From pain to power: Crime victims take action, Benefits of community involvement. Washington, DC: U.S. Department of Justice. | [連結](https://ovc.ojp.gov/sites/ovc/files/pubs/OVC_Archives/reports/fptp/bci.htm) |
 | 政府或國際組織文件 | Office of Juvenile Justice and Delinquency Prevention. (2005, July). The mathematics of risk classification: Changing data into valid instruments for juvenile courts (NCJ 209158). | [連結](https://www.ojp.gov/pdffiles1/ojjdp/209158.pdf) |
 | 政府或國際組織文件 | Pesce, E. J., Kohn, I. R., & Kaplan, H. M. (1978). Crime prevention through environmental design: Final report on Phases II and III. Washington, DC: Law Enforcement Assistance Administration. | [連結](https://www.ojp.gov/pdffiles1/Digitization/50379NCJRS.pdf) |
+| 政府或國際組織文件 | Schonfeld, D. J., & Newgass, S. (2003). School crisis response initiative (OVC Bulletin, NCJ 197832). Washington, DC: Office for Victims of Crime. | [連結](https://ovc.ojp.gov/sites/ovc/files/media/document/ncj197832.pdf) |
+| 政府或國際組織文件 | Substance Abuse and Mental Health Services Administration. (2005). Substance abuse treatment: Group therapy (Treatment Improvement Protocol [TIP] Series 41; DHHS Publication No. [SMA] 05-3991). Rockville, MD: Author. | [連結](https://files.eric.ed.gov/fulltext/ED491570.pdf) |
 | 政府或國際組織文件 | World Health Organization. (2014). Global status report on violence prevention 2014. Geneva: WHO. | [連結](https://iris.who.int/handle/10665/145086) |
 | 政府或國際組織文件 | World Health Organization. (2016). The health and social effects of nonmedical cannabis use. Geneva: WHO. | [連結](https://iris.who.int/handle/10665/251056) |
 | 政府或國際組織文件 | World Health Organization. (2023). Preventing suicide: A resource for media professionals (2023 update). Geneva: WHO. | [連結](https://iris.who.int/handle/10665/372691) |
@@ -408,8 +417,10 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | 二手整理（政府委託報告或期刊回顧） | Faul, L., & LaBar, K. S. (2023). Mood-congruent memory revisited. Psychological Review, 130(6), 1421–1456.（PMC 作者稿） | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC10076454/) |
 | 二手整理（政府委託報告或期刊回顧） | Giordano, P. C. (2020). Continuing education: Toward a life-course perspective on social learning. Criminology, 58(2), 199–225.（PMC 作者稿） | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC8519582/) |
 | 二手整理（政府委託報告或期刊回顧） | Guina, J., Dornfeld, B., et al. (2022). A 20-year follow-up survey of police officers' experience with Tarasoff warnings: How law enforcement reacts to clinicians' duty to protect. Behavioral Sciences & the Law, 40(4), 505–513. | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC9540889/) |
+| 二手整理（政府委託報告或期刊回顧） | Hays, D. G., Craigen, L. M., Knight, J., Healey, A., & Sikes, A. (n.d.). Duty to warn and protect against self-destructive behaviors and interpersonal violence (ERIC EJ886123). Old Dominion University. | [連結](https://files.eric.ed.gov/fulltext/EJ886123.pdf) |
 | 二手整理（政府委託報告或期刊回顧） | Hehk, E. The diagnostic parole prediction index (NCJ 75661). NCJRS 典藏報告. | [連結](https://www.ojp.gov/pdffiles1/Digitization/75661NCJRS.pdf) |
 | 二手整理（政府委託報告或期刊回顧） | Howard, G. J., Newman, G., & Pridemore, W. A. (2000). Theory, method, and data in comparative criminology. In D. Duffee (Ed.), Criminal Justice 2000, Vol. 4: Measurement and analysis of crime and justice. Washington, DC: National Institute of Justice. | [連結](https://www.ojp.gov/criminal_justice2000/vol_4/04d.pdf) |
+| 二手整理（政府委託報告或期刊回顧） | Illowsky, B., & Dean, S. (2023). Introductory statistics 2e, 12.3 The regression equation. Houston, TX: OpenStax, Rice University. | [連結](https://openstax.org/books/introductory-statistics-2e/pages/12-3-the-regression-equation) |
 | 二手整理（政府委託報告或期刊回顧） | Impulsivity, offending, and the neighborhood: Investigating the person-context nexus (NIJ grant final report, NCJ 226781). | [連結](https://www.ojp.gov/pdffiles1/nij/grants/226781.pdf) |
 | 二手整理（政府委託報告或期刊回顧） | Interdisciplinary approach of Yalom's group therapy factors: A theoretical model for including animal presence in social work education and practice. Frontiers in Veterinary Science, 9, 1024355 (2022). | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC9596786/) |
 | 二手整理（政府委託報告或期刊回顧） | Is it all about the form? Norm- vs criterion-referenced ratings and faculty inter-rater reliability. Ochsner Journal, 23(3), 206–221 (2023). | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC10498947/) |
@@ -419,19 +430,27 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | 二手整理（政府委託報告或期刊回顧） | Kim, H., Schlicht, R., et al. (2021). The contributions of social comparison to social network site addiction. PLoS ONE, 16(10), e0257795. | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC8553147/) |
 | 二手整理（政府委託報告或期刊回顧） | Kuhfuß, M., et al. (2021). Somatic experiencing – effectiveness and key factors of a body-oriented trauma therapy: A scoping literature review. European Journal of Psychotraumatology, 12(1), 1929023. | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC8276649/) |
 | 二手整理（政府委託報告或期刊回顧） | Liu, R. T., & Alloy, L. B. (2010). Stress generation in depression: A systematic review of the empirical literature and recommendations for future study. Clinical Psychology Review, 30(5), 582–593.（PMC 作者稿） | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC3049314/) |
+| 二手整理（政府委託報告或期刊回顧） | Lutz, M., Zani, D., Fritz, M., Dudeck, M., & Franke, I. (2022). A review and comparative analysis of the risk-needs-responsivity, good lives, and recovery models in forensic psychiatric treatment. Frontiers in Psychiatry, 13, 988905. | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC9659584/) |
 | 二手整理（政府委託報告或期刊回顧） | Maria Michael, J., Reyes, M. E. S., et al. (2022). Online mindfulness-based logotherapy program: A pilot study targeting depressive symptoms of cyberbullied adolescents during the Covid-19 pandemic. Journal of Technology in Behavioral Science, 8(1), 1–9. | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC9464054/) |
 | 二手整理（政府委託報告或期刊回顧） | Mazzarello, P. (2011). Cesare Lombroso: An anthropologist between evolution and degeneration. Functional Neurology, 26(2), 97–101. | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC3814446/) |
 | 二手整理（政府委託報告或期刊回顧） | Models of self and others and their relation to positive and negative caregiving responses. Psychology and Aging, 27(1), 211–218 (2012). | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC3192310/) |
 | 二手整理（政府委託報告或期刊回顧） | Mohammadi, M. M., Poursaberi, R., et al. (2018). The effect of stress inoculation training on breastfeeding self-efficacy and perceived stress of mothers with low birth weight infants: A clinical trial. Journal of Family & Reproductive Health, 12(3), 160–168. | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC6571443/) |
+| 二手整理（政府委託報告或期刊回顧） | Moore, S. D., & Slife, B. D. (1987). The self-awareness process in the effective psychotherapist. Paper presented at the 33rd Annual Convention of the Southwestern Psychological Association, New Orleans (ERIC ED286098). | [連結](https://files.eric.ed.gov/fulltext/ED286098.pdf) |
 | 二手整理（政府委託報告或期刊回顧） | Morgan, R. D., Fisher, W. H., et al. (2010). Prevalence of criminal thinking among state prison inmates with serious mental illness. Law and Human Behavior, 34(4), 324–336.（PMC 作者稿；以 Walters 的 PICTS 測量） | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC2987583/) |
+| 二手整理（政府委託報告或期刊回顧） | Okocha, A. A. (2001). Facilitating career development through Super's life career rainbow. Paper presented at the 27th Annual Conference of the National Consultation on Career Development, Ottawa (ERIC ED462641). | [連結](https://files.eric.ed.gov/fulltext/ED462641.pdf) |
 | 二手整理（政府委託報告或期刊回顧） | Okulicz-Kozaryn, K., et al. (2010). Gender and family differences in adolescent's heavy alcohol use: The power-control theory perspective. Health Education Research, 25(5), 780–791. | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC2936555/) |
 | 二手整理（政府委託報告或期刊回顧） | Santana Batista, J., et al. (2022). Personality and person-work environment fit: A study based on the RIASEC model. International Journal of Environmental Research and Public Health, 20(1), 719. | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC9819525/) |
+| 二手整理（政府委託報告或期刊回顧） | Schmukle, S. C. (2025). Unbiased confidence intervals for psychological testing: The regression-based true score approach with scale correction. Assessment, 33(5), 817–825. | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC13230652/) |
 | 二手整理（政府委託報告或期刊回顧） | Schnipke, B., et al. (2023). Existential issues in psychotherapy. Innovations in Clinical Neuroscience, 20(1–3), 72–75. | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC10132274/) |
 | 二手整理（政府委託報告或期刊回顧） | Seehausen, M., Kazzer, P., et al. (2012). Effects of empathic paraphrasing – Extrinsic emotion regulation in social conflict. Frontiers in Psychology, 3, 482. | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC3495333/) |
+| 二手整理（政府委託報告或期刊回顧） | Steiner, B. (2008). Maintaining prison order: Understanding causes of inmate misconduct within and across Ohio correctional institutions (NIJ award 2007-IJ-CX-0010, NCJ 226458). | [連結](https://www.ojp.gov/pdffiles1/nij/grants/226458.pdf) |
 | 二手整理（政府委託報告或期刊回顧） | Still, W., Broderick, B., & Raphael, S. (2016). Building trust and legitimacy within community corrections (New Thinking in Community Corrections, No. 3). Washington, DC: National Institute of Justice. | [連結](https://www.ojp.gov/pdffiles1/nij/249946.pdf) |
+| 二手整理（政府委託報告或期刊回顧） | Sunawan, & Xiong, J. (2016). An application model of reality therapy to develop effective achievement goals in tier three intervention. International Education Studies, 9(10). | [連結](https://files.eric.ed.gov/fulltext/EJ1116010.pdf) |
+| 二手整理（政府委託報告或期刊回顧） | Sunshine, P. M. (1973). Approaches to school discipline: A selected review of the literature (Reviews of Research No. 2). Baltimore: Maryland State Department of Education. | [連結](https://files.eric.ed.gov/fulltext/ED087084.pdf) |
 | 二手整理（政府委託報告或期刊回顧） | Suslow, T., Kersting, A., et al. (2025). Experiences of childhood emotional maltreatment and emotional intelligence in young women. Frontiers in Psychiatry, 16, 1583066. | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC12271162/) |
 | 二手整理（政府委託報告或期刊回顧） | Taylor, C. S., & Smith, P. R. (2013). The attraction of gangs: How can we reduce it? In Changing course: Preventing gang membership (Chapter 2, NCJ 243466). Washington, DC: NIJ & CDC. | [連結](https://www.ojp.gov/pdffiles1/nij/243466.pdf) |
 | 二手整理（政府委託報告或期刊回顧） | The efficacy of applying the Interpersonal Effectiveness skills of dialectical behavior therapy into communication skills workshop for clinical nurses. Heliyon, 9(3), e14066 (2023). | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC10015201/) |
+| 二手整理（政府委託報告或期刊回顧） | Tighe, J., McManus, I. C., Dewhurst, N. G., Chis, L., & Mucklow, J. (2010). The standard error of measurement is a more appropriate measure of quality for postgraduate medical assessments than is reliability: An analysis of MRCP(UK) examinations. BMC Medical Education, 10, 40. | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC2893515/) |
 | 二手整理（政府委託報告或期刊回顧） | Tittle, C. R. (2000). Theoretical developments in criminology. In G. LaFree (Ed.), Criminal Justice 2000, Vol. 1: The nature of crime: Continuity and change. Washington, DC: National Institute of Justice. | [連結](https://www.ojp.gov/criminal_justice2000/vol_1/02b.pdf) |
 | 二手整理（政府委託報告或期刊回顧） | Trevino, A. Y., Tao, K. W., et al. (2021). Windows of cultural opportunity: A thematic analysis of how cultural conversations occur in psychotherapy. Psychotherapy, 58(2), 263–274.（PMC 作者稿） | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC8376752/) |
 | 二手整理（政府委託報告或期刊回顧） | Tse, W. W.-Y., Lai, M. H. C., et al. (2024). Does strict invariance matter? Valid group mean comparisons with ordered-categorical items. Behavior Research Methods, 56(4), 3117–3139. | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC11133089/) |
@@ -441,6 +460,7 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | 二手整理（政府委託報告或期刊回顧） | Welsh, B. C., & Farrington, D. P. (2012). The future of crime prevention: Developmental and situational strategies (NIJ commissioned paper, NCJ 237329). | [連結](https://www.ojp.gov/pdffiles1/nij/grants/237329.pdf) |
 | 二手整理（政府委託報告或期刊回顧） | Wild, S., et al. (2023). The relevance of basic psychological needs and subject interest as explanatory variables for student dropout in higher education. European Journal of Psychology of Education. | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC9810519/) |
 | 二手整理（政府委託報告或期刊回顧） | Wolf, F., Seifert, A., et al. (2021). Considering situational variety in contextualized aging research – Opinion about methodological perspectives. Frontiers in Psychology, 12, 570900. | [連結](https://pmc.ncbi.nlm.nih.gov/articles/PMC8072042/) |
+| 二手整理（政府委託報告或期刊回顧） | Zingaro, J. C., et al. (1988). Ethical and legal issues in school counseling, Chapter 2: Privacy, confidentiality, and privileged communication. Alexandria, VA: American Association for Counseling and Development (ERIC ED323461). | [連結](https://files.eric.ed.gov/fulltext/ED323461.pdf) |
 | 法規條文 | 中華民國刑法第 185 條之 3 | [連結](https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=C0000001&flno=185-3) |
 | 法規條文 | 中華民國刑法第 319 條之 1、之 3、之 4 | [連結](https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=C0000001&flno=319-3) |
 | 法規條文 | 中華民國刑法第 47 條、第 77 條 | [連結](https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=C0000001&flno=47) |
@@ -474,17 +494,23 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | 115-犯罪學-2｜RNR 模型、四大核心風險與回應性原則 | [Bonta, J., & Andrews, D. A. (2007)](https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/rsk-nd-rspnsvty/rsk-nd-rspnsvty-eng.pdf) | 完整 |
 | 115-犯罪學-3｜評估社會復歸的風險因子與保護因子 | [Bonta, J., & Andrews, D. A. (2007)](https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/rsk-nd-rspnsvty/rsk-nd-rspnsvty-eng.pdf)<br>[A review and comparative analysis of the risk-needs-responsivity, good lives, and recovery models in forensic psychiatric treatment. Frontiers in Psychiatry, 13, 988905 (2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9659584/) | 部分：涵蓋犯因性需求與好生活模式的保護面向，沒有結構化專業判斷與量刑前調查 |
 | 115-犯罪學-4｜少年事件行政先行的流程與落實釋字第 664 號 | [少年事件處理法第 18 條](https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=C0010011&flno=18) | 部分：只涵蓋少年事件處理法第 18 條的通知、輔導與請求法院處理流程，沒有釋字第 664 號 |
+| 108-心理學-4｜使用心理測驗應注意的事項 | [AERA, APA, & NCME (2014)](https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf) | 完整 |
 | 111-心理學-1｜常模參照測驗與標準參照測驗的比較 | [Is it all about the form? Norm- vs criterion-referenced ratings and faculty inter-rater reliability. Ochsner Journal, 23 (2023)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10498947/) | 部分：涵蓋兩種參照的定義與差異（Glaser），例子是醫學教育評量而非心理測驗 |
 | 112-心理學-1｜情緒調節歷程模式與適應性、非適應性策略 | [Cognitive strategies to regulate emotions—current evidence and future directions. Frontiers in Psychology, 4, 1019 (2014)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3887268/) | 部分：涵蓋 Gross 五種調節歷程與再評估、壓抑，沒有適應性與非適應性策略的完整分類 |
 | 112-心理學-2｜人際心理治療的四項人際議題 | [Markowitz, J. C., & Weissman, M. M. (2004)](https://pmc.ncbi.nlm.nih.gov/articles/PMC1414693/) | 完整 |
 | 112-心理學-3｜童年逆境經驗的類型與影響機制 | [Jacob, G., van den Heuvel, M., et al. (2019)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6376298/) | 部分：涵蓋虐待、疏忽、家庭功能失調與毒性壓力，沒有依附與情緒調節機制 |
 | 115-心理學-2｜生物心理社會分析犯罪形成與避免單一因素歸因 | [Boisvert, D. L. (2021)](https://www.ojp.gov/pdffiles1/nij/301499.pdf) | 部分：只涵蓋生物社會因素與其爭議，心理與社會因素、評估方法需另查 |
+| 108-諮商與輔導-1｜優勢中心取向的意義、目標與矯正體系應用原則 | [Lutz, M., et al. (2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9659584/) | 部分：二手整理：涵蓋優勢取向（好生活模式）相對於缺陷取向（RNR）的重點、與風險管理並行，以及以合法方式滿足基本人類善；沒有 Saleebey (1992) 對「優勢」的定義（能力、資源、興趣、韌性、支持網絡）與一般矯正應用原則的逐項說明 |
 | 108-諮商與輔導-2｜Yalom 團體療效因子（至少五項） | [Interdisciplinary approach of Yalom's group therapy factors: A theoretical model for including animal presence in social work education and practice. Frontiers in Veterinary Science, 9, 1024355 (2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9596786/) | 完整 |
 | 109-諮商與輔導-4｜Bowen 自我分化與自評 | [Family systems theory and obesity treatment: Applications for clinicians. Infant, Child, & Adolescent Nutrition (2013)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3979546/) | 部分：只涵蓋自我分化的概念，沒有內在與人際兩層面的細節與自評 |
 | 110-諮商與輔導-2｜多元文化能力四要素與家暴受害女性的應用 | [Trevino, A. Y., Tao, K. W., et al. (2021)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8376752/) | 部分：只涵蓋 Sue et al. (1992) 的覺察、知識、技巧與案主世界觀，沒有倡議與家暴受害女性的應用 |
 | 110-諮商與輔導-3｜校園性別事件行為人心理輔導的倫理與法律議題 | [性別平等教育法第 25 條](https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=H0080067&flno=25) | 部分：只涵蓋性別平等教育法第 25 條，沒有倫理議題 |
 | 111-諮商與輔導-1｜以意義治療設計高風險家庭孩子的個別輔導計畫 | [Chanouha, N., Chassevent, A., et al. (2026)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12771065/) | 部分：涵蓋意義治療的基本信念、去反省、蘇格拉底式對話與態度，沒有高風險家庭孩子的輔導計畫 |
+| 111-諮商與輔導-3｜第三方要求個案諮商資料時的考量 | [Zingaro, J. C., et al. (1988)](https://files.eric.ed.gov/fulltext/ED323461.pdf) | 部分：二手整理（美國學校輔導的倫理與法律）：涵蓋保密原則與三項例外（個案危及自己或他人、個案或家長要求告知第三方、法院命令揭露）、特許溝通、被傳喚時的處理，以及家長與未成年人的權利；沒有臺灣輔導與諮商學會守則的條文，也沒有書面同意與最少揭露、說明用途與保管方式的具體規定 |
+| 111-諮商與輔導-4｜諮商員自我覺察的影響與改善 | [Moore, S. D., & Slife, B. D. (1987)](https://files.eric.ed.gov/fulltext/ED286098.pdf) | 部分：二手整理（研討會論文）：涵蓋反移情在治療者缺乏覺察時會嚴重破壞治療關係、覺察可作為了解個案的資訊、Rogers 所說真誠（genuineness）需要自我覺察，以及督導中促進治療者自我覺察；沒有個人諮商、同儕諮詢、反思紀錄與自我照顧（避免耗竭）的說明 |
+| 112-諮商與輔導-1｜受刑人透露越獄計畫並要求保密 | [Hays, D. G., et al.](https://files.eric.ed.gov/fulltext/EJ886123.pdf) | 部分：二手整理（美國學校輔導）：涵蓋保密的限制、明確且迫切危險時預警與保護義務凌駕保密（Tarasoff）、預警三原則（可預見的傷害、可辨識的對象、可行的介入）以及評估危險程度；沒有受刑人越獄的脫逃罪、監獄行刑法與戒護外出申請，也沒有對失落與焦慮的情緒支持與問題解決訓練 |
 | 112-諮商與輔導-2｜性平三法與國小時遭導師性騷擾事件的處置 | [性別平等教育法第 25 條](https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=H0080067&flno=25)<br>[Dawson, S., Bierce, A., et al. (2021)](https://pmc.ncbi.nlm.nih.gov/articles/PMC7896604/) | 部分：涵蓋性別平等教育法第 25 條的諮商輔導與轉介，以及創傷知情原則，沒有性平三法的完整比較 |
+| 112-諮商與輔導-4｜Corey 團體歷程階段與霸凌防治團體計畫 | [SAMHSA (2005)](https://files.eric.ed.gov/fulltext/ED491570.pdf) | 部分：涵蓋初期（介紹、團體協議、建立安全環境與正向規範）、中期（實際工作）與結束期（有意的、正向的結束）三階段；沒有把「轉換階段」（處理焦慮、抗拒、衝突）獨立成一個階段，也沒有六次霸凌防治團體的設計 |
 | 113-諮商與輔導-3｜以敘事治療處理非自願個案 | [Aqtam, I., Shouli, M., et al. (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12720377/) | 部分：只涵蓋敘事治療的外化、特殊意義事件與重寫故事，沒有非自願個案 |
 | 114-諮商與輔導-1｜焦點解決短期治療的假設、目標與奇蹟、量尺問句 | [Use of solution-focused brief therapy within adult community mental health: A scoping review. Clinical Psychology & Psychotherapy, 33 (2026)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12996440/) | 部分：涵蓋奇蹟問句、量尺問句與基本假設（案主有資源），基本假設未逐項列出 |
 | 114-諮商與輔導-3｜網路／數位性別暴力的定義與五種類型 | [中華民國刑法第 319 條之 1、之 3、之 4](https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=C0000001&flno=319-3) | 部分：只涵蓋刑法妨害性隱私及不實性影像罪，沒有行政院性別平等會的五種類型 |
@@ -497,6 +523,7 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | 監獄官-108-犯罪學與再犯預測-4｜CB = f(P × E) 的意義與再犯預測應用 | [Wolf, F., Seifert, A., et al. (2021)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8072042/) | 部分：只涵蓋 Lewin 的 B = f(P, E) 人與環境交互作用，沒有再犯預測的應用 |
 | 監獄官-109-犯罪學與再犯預測-1｜Goldstein 毒品與犯罪的三大模式 | [National Institute of Justice. (2003)](https://www.ojp.gov/pdffiles1/nij/194616.pdf)<br>[De La Rosa, M., Lambert, E. Y., & Gropper, B. (1990)](https://www.ojp.gov/pdffiles1/Digitization/128781-128794NCJRS.pdf) | 完整 |
 | 監獄官-109-犯罪學與再犯預測-2｜再犯風險動態因素的意涵、因子與研究 | [Hanson, R. K., & Harris, A. J. R. (1998)](https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/dnmc-prdctrs-sxl/index-en.aspx)<br>[Bonta, J., & Andrews, D. A. (2007)](https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/rsk-nd-rspnsvty/rsk-nd-rspnsvty-eng.pdf) | 完整 |
+| 監獄官-109-犯罪學與再犯預測-4｜RANT 毒品犯風險與需求分流工具 | [Marlowe, D. B., et al. (2012)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3424518/) | 部分：涵蓋 RANT 作為毒品法庭評估工具、高低風險分流與低風險者過度介入的疑慮；沒有四象限（風險×需求）的說明，也沒有緩起訴附命戒癮與社區處遇的應用 |
 | 監獄官-110-犯罪學與再犯預測-1｜Sampson 與 Laub 持續與中止犯罪的生命史研究 | [Bucklen, K. B. (2021)](https://www.ojp.gov/pdffiles1/nij/301501.pdf)<br>[Farrall, S. (2021)](https://www.ojp.gov/pdffiles1/nij/301502.pdf) | 部分：涵蓋轉捩點、身分轉變與《Shared Beginnings, Divergent Lives》追蹤至 70 歲的研究，人的能動性論述較少 |
 | 監獄官-110-犯罪學與再犯預測-3｜靜態風險因素的內涵與重要因子 | [Hanson, R. K., & Thornton, D. (1999)](https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/sttc-mprvng-actrl/sttc-mprvng-actrl-eng.pdf)<br>[Bonta, J., & Andrews, D. A. (2007)](https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/rsk-nd-rspnsvty/rsk-nd-rspnsvty-eng.pdf) | 完整 |
 | 監獄官-110-犯罪學與再犯預測-4｜MnSOST-R 與 SONAR 性罪犯評估工具 | [Hanson, R. K., & Harris, A. J. R. (1998)](https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/dnmc-prdctrs-sxl/index-en.aspx) | 部分：涵蓋 SONAR 的來源研究（穩定與急性動態因素），沒有 MnSOST-R |
@@ -512,6 +539,7 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | 監獄官-113-犯罪學與再犯預測-3｜以 RNR 擬訂無期徒刑受刑人個別處遇計畫 | [Bonta, J., & Andrews, D. A. (2007)](https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/rsk-nd-rspnsvty/rsk-nd-rspnsvty-eng.pdf) | 部分：涵蓋 RNR 三原則與核心八因子，沒有無期徒刑受刑人的個別處遇計畫 |
 | 監獄官-113-犯罪學與再犯預測-4｜反毒策略中的友善接納環境與理論支持 | [Tittle, C. R. (2000)](https://www.ojp.gov/criminal_justice2000/vol_1/02b.pdf) | 部分：涵蓋標籤、復歸性羞恥與社會鍵理論，沒有我國反毒策略的內容 |
 | 監獄官-114-犯罪學與再犯預測-1｜Jeffery 生物社會學習理論與 CPTED | [Clarke, R. V. (1997)](https://popcenter.asu.edu/sites/g/files/litvpz3631/files/scp2_intro_0_0.pdf)<br>[Pesce, E. J., Kohn, I. R., & Kaplan, H. M. (1978)](https://www.ojp.gov/pdffiles1/Digitization/50379NCJRS.pdf) | 部分：只涵蓋 Jeffery 提出 CPTED 與 CPTED 的設計原則，沒有生物社會學習理論 |
+| 監獄官-114-犯罪學與再犯預測-4｜藥物濫用者再犯風險評估的面向與社區應用 | [Marlowe, D. B., et al. (2012)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3424518/) | 部分：涵蓋毒品犯再犯風險因子（青少年期開始、前次戒治失敗、前科、反社會人格）與 RANT 的使用；沒有使用頻率、同儕、家庭支持、就業等指標，也沒有緩起訴附命戒癮或保護管束驗尿分級 |
 | 監獄官-115-犯罪學與再犯預測-1｜犯罪中止的關鍵因子與聚焦中止的處遇活動 | [Bucklen, K. B. (2021)](https://www.ojp.gov/pdffiles1/nij/301501.pdf)<br>[Farrall, S. (2021)](https://www.ojp.gov/pdffiles1/nij/301502.pdf) | 完整 |
 | 監獄官-115-犯罪學與再犯預測-2｜犯罪腳本與汽車竊盜分析 | [Clarke, R. V. (1997)](https://popcenter.asu.edu/sites/g/files/litvpz3631/files/scp2_intro_0_0.pdf)<br>[Felson, M., & Clarke, R. V. (1998)](https://popcenter.asu.edu/sites/g/files/litvpz3631/files/opportunity_makes_the_thief.pdf) | 部分：涵蓋理性選擇與情境預防對竊車的分析，沒有犯罪腳本的步驟分析 |
 | 監獄官-115-犯罪學與再犯預測-3｜各國再犯預測研究特性與假釋預測研究設計 | [Hehk, E. The diagnostic parole prediction index](https://www.ojp.gov/pdffiles1/Digitization/75661NCJRS.pdf)<br>[Office of Juvenile Justice and Delinquency Prevention. (2005)](https://www.ojp.gov/pdffiles1/ojjdp/209158.pdf) | 部分：涵蓋 Burgess 與 Glueck 的假釋預測方法，研究設計的倫理與可行性需另查 |
@@ -520,10 +548,13 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | 監獄官-109-諮商與矯正輔導-1｜動機式晤談與跨理論模式 | [Comparison of motivational interviewing with acceptance and commitment therapy: A conceptual and clinical review. Behavioural and Cognitive Psychotherapy, 39 (2011)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3135725/) | 部分：涵蓋動機式晤談的原理與技術，跨理論模式只提到改變階段 |
 | 監獄官-109-諮商與矯正輔導-2｜Meichenbaum 認知行為矯治與壓力免疫訓練 | [Mohammadi, M. M., Poursaberi, R., et al. (2018)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6571443/) | 部分：涵蓋壓力免疫訓練的三階段（概念化、技巧訓練、應用與追蹤），沒有藥物濫用者的應用 |
 | 監獄官-109-諮商與矯正輔導-3｜焦點解決短期諮商在矯正機關的應用 | [Use of solution-focused brief therapy within adult community mental health: A scoping review. Clinical Psychology & Psychotherapy, 33 (2026)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12996440/) | 部分：只涵蓋焦點解決的技術，沒有矯正場域 |
+| 監獄官-109-諮商與矯正輔導-4｜團體前準備、計畫書與各階段領導者任務 | [SAMHSA (2005)](https://files.eric.ed.gov/fulltext/ED491570.pdf) | 部分：涵蓋團體前訪談與成員篩選、團體協議（保密、缺席、團體外接觸、終止等），以及早、中、後期各階段的任務；沒有團體計畫書應包含的內容（理念、對象、次數時間、單元內容、評估方式），知情同意只在附帶提及 |
 | 監獄官-110-諮商與矯正輔導-2｜少年犯罪三級預防與有效方案特徵 | [Welsh, B. C., & Farrington, D. P. (2012)](https://www.ojp.gov/pdffiles1/nij/grants/237329.pdf) | 部分：涵蓋發展性預防、Lipsey 等有效方案的實證，三級預防只見於另一份文件 |
 | 監獄官-110-諮商與矯正輔導-3｜性侵害犯強制治療團體的要項 | [A review and comparative analysis of the risk-needs-responsivity, good lives, and recovery models in forensic psychiatric treatment. Frontiers in Psychiatry, 13, 988905 (2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9659584/) | 部分：只涵蓋好生活模式，沒有認知扭曲、被害人同理等治療要項 |
 | 監獄官-110-諮商與矯正輔導-4｜人際心理治療的四類人際問題與喪親受刑人 | [Markowitz, J. C., & Weissman, M. M. (2004)](https://pmc.ncbi.nlm.nih.gov/articles/PMC1414693/) | 完整 |
 | 監獄官-111-諮商與矯正輔導-1｜抗拒與非自願的差異及不同學派的處理 | [Comparison of motivational interviewing with acceptance and commitment therapy: A conceptual and clinical review. Behavioural and Cognitive Psychotherapy, 39 (2011)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3135725/) | 部分：只涵蓋動機式晤談「與抗拒共舞」，沒有抗拒與非自願的區分與其他學派 |
+| 監獄官-111-諮商與矯正輔導-4｜以選擇理論設計青少年收容人八次團體 | [Sunawan & Xiong (2016)](https://files.eric.ed.gov/fulltext/EJ1116010.pdf) | 部分：二手整理：涵蓋 Glasser 的五種基本需求（生存、愛與隸屬、自由、權力、樂趣）、選擇自己的行為（total behavior）、優質世界與 Wubbolding 的 WDEP 四步驟；沒有八次團體的目標與各次主題設計 |
+| 監獄官-112-諮商與矯正輔導-1｜優勢中心諮商與傳統諮商的差異及矯正應用 | [Lutz, M., et al. (2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9659584/) | 部分：二手整理：涵蓋好生活模式相對於缺陷取向（RNR）的優勢與目標導向、與風險降低整合；沒有 Saleebey 優勢觀點的諮商歷程（關係、優勢評估、設定目標、行動、追蹤），優勢中心與傳統諮商的差異只能由好生活模式間接對照 |
 | 監獄官-112-諮商與矯正輔導-2｜Trotter 非自願個案有效實務原則 | [Bonta, J., Bourgon, G., et al. (2010)](https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/2010-01-rnr/index-en.aspx)<br>[Bourgon, G., Gutierrez, L., & Ashton, J. (2012)](https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/2012-01-cmc/2012-01-cmc-eng.pdf) | 完整 |
 | 監獄官-112-諮商與矯正輔導-3｜提升收容人情緒管理的計畫 | [Cognitive strategies to regulate emotions—current evidence and future directions. Frontiers in Psychology, 4, 1019 (2014)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3887268/) | 部分：只涵蓋情緒調節的策略（Gross 五歷程、再評估），沒有收容人方案 |
 | 監獄官-112-諮商與矯正輔導-4｜以生涯理論設計出獄前八次團體 | [Santana Batista, J., et al. (2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9819525/) | 部分：只涵蓋 Holland 理論（六型、六角形、適配性），沒有出獄前團體設計 |
@@ -531,11 +562,20 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | 監獄官-113-諮商與矯正輔導-4｜Yalom 療效因子與運用 | [Interdisciplinary approach of Yalom's group therapy factors: A theoretical model for including animal presence in social work education and practice. Frontiers in Veterinary Science, 9, 1024355 (2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9596786/) | 部分：涵蓋十一項療效因子，沒有收容人團體的運用 |
 | 監獄官-114-諮商與矯正輔導-2｜創傷知情觀點下的監獄官工作 | [Dawson, S., Bierce, A., et al. (2021)](https://pmc.ncbi.nlm.nih.gov/articles/PMC7896604/) | 部分：涵蓋創傷知情 4R 與六大原則，沒有監所實務與自我照顧 |
 | 監獄官-114-諮商與矯正輔導-4｜三級預防應用於酒癮犯 | [Welsh, B. C., & Farrington, D. P. (2012)](https://www.ojp.gov/pdffiles1/nij/grants/237329.pdf) | 部分：只涵蓋三級預防的架構，沒有酒癮犯的活動 |
+| 監獄官-115-諮商與矯正輔導-2｜Adler 學派少年不適應行為的目標與介入 | [Sunshine, P. M. (1973)](https://files.eric.ed.gov/fulltext/ED087084.pdf) | 部分：二手整理：涵蓋 Dreikurs 的四種錯誤目標（尋求注意、爭取權力、報復、表現無能）、避免陷入權力爭奪，以及以自然後果取代傳統處罰；沒有以「大人的感受」與「糾正後的反應」評估目標，也沒有不報復、事後討論的逐項說明，原始 Dreikurs & Soltz (1964) 未取得 |
 | 薦任升等（矯正）-108-心理測驗-1｜試題難度與鑑別度的計算 | [Kheyami, D., Jaradat, A., et al. (2018)](https://pmc.ncbi.nlm.nih.gov/articles/PMC5892816/) | 完整 |
+| 薦任升等（矯正）-108-心理測驗-3｜採購測驗：類型選擇與評估條件 | [AERA, APA, & NCME (2014)](https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf) | 部分：涵蓋信度／精確度、效度證據、常模須描述清楚且定期重新建立常模（Standard 5.8、5.9）；沒有人格、性向、興趣三類測驗的比較，也沒有「以心理適應為目的宜優先購買人格測驗」的論述（出自 Anastasi & Urbina） |
+| 薦任升等（矯正）-108-心理測驗-4｜線上施測的倫理議題 | [AERA, APA, & NCME (2014)](https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf) | 部分：涵蓋施測者與解釋者資格（Standard 7.7）、受測者隱私與資料安全（Standard 9.19）、有監督與無監督線上施測對效度證據的影響，以及事前告知與同意；2014 年版沒有專談線上施測的身分確認、加密與資料保存期限，這些要看個人資料保護法與臺灣心理學會倫理守則 |
 | 薦任升等（矯正）-110-心理測驗-1｜評估再犯風險的心理測驗評論 | [Bonta, J., & Andrews, D. A. (2007)](https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/rsk-nd-rspnsvty/rsk-nd-rspnsvty-eng.pdf) | 部分：涵蓋 RNR 與第三、四代風險評估工具的演進，沒有個別量表的優缺點評論 |
 | 薦任升等（矯正）-110-心理測驗-2｜自編測驗的編製程序 | [Boateng, G. O., Neilands, T. B., Frongillo, E. A., Melgar-Quiñonez, H. R., & Young, S. L. (2018)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6004510/) | 部分：涵蓋量表編製的三階段九步驟（題目產生、內容效度、因素分析、信效度），沒有矯正場域 |
+| 薦任升等（矯正）-110-心理測驗-3｜驗證量表能否預測未來犯罪 | [AERA, APA, & NCME (2014)](https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf) | 部分：涵蓋預測效標關係研究應檢查的人為因素（測量誤差、全距限制、效標污染、遺漏資料；Standard 11.8），以及效度研究中樣本自我選擇與流失（attrition）的影響；沒有以未來犯罪紀錄為效標的追蹤設計、ROC/AUC 與基率，該題引用的 Hanson & Morton-Bourgon (2009) 未取得 |
+| 薦任升等（矯正）-110-心理測驗-4｜建立常模的過程 | [AERA, APA, & NCME (2014)](https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf) | 部分：涵蓋常模報告應載明抽樣母群、抽樣程序、參與率、加權與施測日期，並由出版者定期重新建立常模（Standard 5.9），以及標準化施測程序（Standard 6.1）；沒有分層隨機抽樣的逐步做法，也沒有從原始分數轉換為標準分數的步驟 |
+| 薦任升等（矯正）-112-心理測驗-2｜以迴歸預測 GPA | [Illowsky, B., & Dean, S. (2023)](https://openstax.org/books/introductory-statistics-2e/pages/12-3-the-regression-equation) | 部分：教科書：涵蓋最佳配適線通過兩變數的平均點、斜率可寫成 b = r(s_y/s_x)、預測值與殘差；沒有以 GPA 為例的數值計算（甲 3.4、乙 2.8），預測誤差只以殘差帶過，沒有標準估計誤的公式 |
+| 薦任升等（矯正）-112-心理測驗-3｜選擇適當的常模團體 | [AERA, APA, & NCME (2014)](https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf) | 部分：涵蓋「常模應指向描述清楚的母群，且須包含測驗使用者通常想比較的個人或團體」（Standard 5.8）與使用者須適當選用常模；沒有申請資訊類碩士班的情境、效標群體（成功工程師）與自建常模的做法 |
+| 薦任升等（矯正）-112-心理測驗-4｜測量標準誤與信賴區間 | [Tighe, J., et al. (2010)](https://pmc.ncbi.nlm.nih.gov/articles/PMC2893515/)<br>[Schmukle, S. C. (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC13230652/)<br>[AERA, APA, & NCME (2014)](https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf) | 部分：三份來源都是說明而非題目的計算：測量標準誤依標準差與信度計算、須以報告分數的單位呈現（Standard 2.13）、95% 信賴區間為觀察分數 ± 1.96×SEM，以及比較兩個分數時應考慮差異分數的信度或差異標準誤；沒有題目的數值計算（SEM = 15×√(1−.96) = 3） |
 | 薦任升等（矯正）-114-心理測驗-2｜全國高中生常模的解釋限制 | [Tse, W. W.-Y., Lai, M. H. C., et al. (2024)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11133089/) | 部分：只涵蓋測量恆等性（形貌、量尺、純量、嚴格）與跨組比較的前提，沒有常模代表性與分組常模 |
 | 薦任升等（矯正）-114-心理測驗-3｜測驗目的與項目分析取向 | [Kheyami, D., Jaradat, A., et al. (2018)](https://pmc.ncbi.nlm.nih.gov/articles/PMC5892816/) | 部分：只涵蓋項目分析的難度、鑑別度與誘答力，沒有診斷取向與常模取向的比較 |
+| 薦任升等（矯正）-114-心理測驗-4｜電腦化與 AI 測驗的倫理議題 | [AERA, APA, & NCME (2014)](https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf) | 部分：涵蓋自動化評分演算法的文件化與偏誤檢視（Standard 4.19）、不得僅依賴電腦產生的解釋（Standard 9.10）、使用者資格（Standard 7.7）與受測者隱私（Standard 9.19）；2014 年版早於生成式 AI，沒有 AI 專屬的透明度與可解釋性規範，也沒有個資最小蒐集的具體做法 |
 | 薦任升等（矯正）-108-犯罪學-1｜常見的再犯風險因子與依據 | [Bonta, J., & Andrews, D. A. (2007)](https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/rsk-nd-rspnsvty/rsk-nd-rspnsvty-eng.pdf) | 完整 |
 | 薦任升等（矯正）-108-犯罪學-3｜少年加入幫派的功能 | [Taylor, C. S., & Smith, P. R. (2013)](https://www.ojp.gov/pdffiles1/nij/243466.pdf) | 完整 |
 | 薦任升等（矯正）-108-犯罪學-4｜家暴施暴者的風險因子 | [Campbell, J. C., Webster, D., Koziol-McLain, J., et al. (2003)](https://pmc.ncbi.nlm.nih.gov/articles/PMC1447915/) | 完整 |
@@ -546,9 +586,12 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | 薦任升等（矯正）-112-犯罪學-4｜Wolfgang 慢性犯罪者與刑事政策 | [Tracy, P. E., Wolfgang, M. E., & Figlio, R. M. (1985)](https://www.ojp.gov/pdffiles1/Digitization/99854NCJRS.pdf)<br>[中華民國刑法第 47 條、第 77 條](https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=C0000001&flno=47) | 完整 |
 | 薦任升等（矯正）-114-犯罪學-1｜生命歷程觀與潛伏特質觀 | [Bucklen, K. B. (2021)](https://www.ojp.gov/pdffiles1/nij/301501.pdf)<br>[Impulsivity, offending, and the neighborhood: Investigating the person-context nexus](https://www.ojp.gov/pdffiles1/nij/grants/226781.pdf) | 部分：兩份文件分別談生命歷程（轉捩點）與低自我控制，沒有兩者的直接比較 |
 | 薦任升等（矯正）-114-犯罪學-3｜應報式與修復式司法的差異 | [CrimeSolutions (2018)](https://crimesolutions.ojp.gov/ratedpractices/restorative-justice-programs-juveniles) | 完整 |
+| 薦任升等（矯正）-114-犯罪學-4｜德州控制模式與密西根責任模式 | [Steiner, B. (2008)](https://www.ojp.gov/pdffiles1/nij/grants/226458.pdf) | 部分：二手整理：說明 DiIulio (1987) 的控制、責任、共識三種管理模式，並提到控制模式（德州）秩序最佳；沒有說明密西根對應責任模式，也沒有逐項對照嚴格程度與自治空間，原始 DiIulio (1987) 未取得 |
 | 薦任升等（矯正）-108-諮商與輔導-1｜再犯預防與好生活模式 | [A review and comparative analysis of the risk-needs-responsivity, good lives, and recovery models in forensic psychiatric treatment. Frontiers in Psychiatry, 13, 988905 (2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9659584/) | 部分：只涵蓋好生活模式，沒有再犯預防（Marlatt）模式 |
 | 薦任升等（矯正）-108-諮商與輔導-3｜風險評估與靜態動態風險 | [Bonta, J., & Andrews, D. A. (2007)](https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/rsk-nd-rspnsvty/rsk-nd-rspnsvty-eng.pdf)<br>[Hanson, R. K., & Harris, A. J. R. (1998)](https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/dnmc-prdctrs-sxl/index-en.aspx) | 完整 |
 | 薦任升等（矯正）-108-諮商與輔導-4｜預警責任 | [Guina, J., Dornfeld, B., et al. (2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9540889/) | 部分：涵蓋 Tarasoff 案的保護義務與「可辨識的被害人」條件，沒有我國倫理守則的處理程序 |
+| 薦任升等（矯正）-110-諮商與輔導-1｜不合作團體成員的類型與處理 | [SAMHSA (2005)](https://files.eric.ed.gov/fulltext/ED491570.pdf) | 部分：涵蓋沉默成員（Silence）、敵意發言、不停說話等干擾行為與團體中的抗拒（Resistance in Group）；沒有依賴或救援型成員，也沒有逐類型的心理特徵與邀請、阻斷、反映等策略 |
+| 薦任升等（矯正）-110-諮商與輔導-4｜出獄前資源連結與有效溝通 | [IACP (n.d.)](https://bja.ojp.gov/sites/g/files/xyckuh186/files/Publications/Reentry_LE.pdf) | 部分：涵蓋出獄前就開始的釋放規劃（個別釋放計畫）與可連結的資源（住屋、教育、就業轉介與職訓、物質濫用治療、家庭團聚）；沒有更生保護法的資源，也沒有信任關係、真誠同理、尊重自主等有效溝通因素（Rogers、Trotter） |
 | 薦任升等（矯正）-112-諮商與輔導-1｜Bowen 家族系統理論概念 | [Family systems theory and obesity treatment: Applications for clinicians. Infant, Child, & Adolescent Nutrition (2013)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3979546/) | 完整 |
 | 薦任升等（矯正）-112-諮商與輔導-3｜自殺防治法的倫理與媒體規範 | [自殺防治法第 16 條](https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=L0020213&flno=16)<br>[World Health Organization. (2023)](https://iris.who.int/handle/10665/372691) | 部分：涵蓋媒體報導規範（自殺防治法第 16 條與 WHO 媒體指引），沒有通報、保密與倫理原則 |
 | 薦任升等（矯正）-114-諮商與輔導-1｜存在主義治療 | [Schnipke, B., et al. (2023)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10132274/) | 部分：涵蓋存在主義治療的自由、責任等核心議題，沒有個案介入 |
@@ -564,6 +607,7 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | police-110-criminology_prevention-3｜新機會理論 | [Felson, M., & Clarke, R. V. (1998)](https://popcenter.asu.edu/sites/g/files/litvpz3631/files/opportunity_makes_the_thief.pdf) | 完整 |
 | police-110-criminology_prevention-4｜差別接觸理論與少年犯罪防治 | [Giordano, P. C. (2020)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8519582/) | 部分：涵蓋 Sutherland 差別接觸理論的命題與限制，沒有少年犯罪防治的應用 |
 | police-111-criminology_prevention-1｜國際犯罪比較的資料來源 | [Howard, G. J., Newman, G., & Pridemore, W. A. (2000)](https://www.ojp.gov/criminal_justice2000/vol_4/04d.pdf) | 完整 |
+| police-111-criminology_prevention-3｜差別機會理論與三種副文化 | [Bureau of Justice Assistance (1998)](https://www.ojp.gov/pdffiles/164273.pdf) | 完整 |
 | police-111-criminology_prevention-4｜酒駕的犯罪學分析與嚇阻 | [National Institute of Justice. (2016)](https://www.ojp.gov/pdffiles1/nij/247350.pdf)<br>[中華民國刑法第 185 條之 3](https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=C0000001&flno=185-3) | 部分：涵蓋嚇阻理論（確定性比嚴厲性重要）與現行酒駕罪條文，沒有 Schur、Jessor 的分析 |
 | police-112-criminology_prevention-4｜機會十大原則與超商暴力預防 | [Felson, M., & Clarke, R. V. (1998)](https://popcenter.asu.edu/sites/g/files/litvpz3631/files/opportunity_makes_the_thief.pdf)<br>[Center for Problem-Oriented Policing. Twenty five techniques of situational prevention（依 Cornish & Clarke, 2003 製表）.](https://popcenter.asu.edu/sites/g/files/litvpz3631/files/twenty_five_techniques_of_situational_prevention.pdf) | 部分：涵蓋十大原則與二十五技術；超商暴力只有提到超商的情境預防研究 |
 | police-113-criminology_prevention-3｜暴力激進化的風險與防制 | [Jensen, M., & LaFree, G. (2016)](https://www.ojp.gov/pdffiles1/nij/grants/250481.pdf)<br>[Jensen, M., & LaFree, G. (2024)](https://www.ojp.gov/pdffiles1/nij/grants/308549.pdf) | 部分：涵蓋激進化的風險因素與路徑（社群受害感、小團體、McCauley 與 Moskalenko 雙金字塔），防制策略較少 |
@@ -577,15 +621,20 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | police-115-criminology_prevention-4｜三級預防與情境預防二十五技術 | [Welsh, B. C., & Farrington, D. P. (2012)](https://www.ojp.gov/pdffiles1/nij/grants/237329.pdf)<br>[Center for Problem-Oriented Policing. Twenty five techniques of situational prevention（依 Cornish & Clarke, 2003 製表）.](https://popcenter.asu.edu/sites/g/files/litvpz3631/files/twenty_five_techniques_of_situational_prevention.pdf) | 完整 |
 | police-108-counseling-1｜中輟生輔導措施與個案研討會議 | [學生輔導法第 6 條](https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=H0070058&flno=6) | 部分：涵蓋三級輔導與個案會議，沒有中輟生輔導措施 |
 | police-109-counseling-2｜未成年學生懷孕的法律與倫理責任 | [兒童及少年福利與權益保障法第 53 條](https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0050001&flno=53) | 部分：只涵蓋兒少權法第 53 條的通報義務，沒有受教權、人工流產同意與保密 |
+| police-109-counseling-3｜Super 生涯彩虹圖 | [Okocha, A. A. (2001)](https://files.eric.ed.gov/fulltext/ED462641.pdf) | 完整 |
 | police-110-counseling-2｜認知行為治療與意義治療的整合 | [Maria Michael, J., Reyes, M. E. S., et al. (2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9464054/) | 部分：只涵蓋意義治療與正念整合的方案，沒有與認知行為治療整合的實例 |
 | police-111-counseling-1｜輔導關係 | [Determinants and outcomes of the therapeutic alliance in treating justice-involved youth: A systematic review. Clinical Child and Family Psychology Review, 25 (2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9622555/) | 部分：只涵蓋 Bordin 工作同盟三要素，沒有 Rogers 核心條件 |
 | police-111-counseling-2｜童年逆境經驗與原生家庭學派 | [Jacob, G., van den Heuvel, M., et al. (2019)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6376298/)<br>[Family systems theory and obesity treatment: Applications for clinicians. Infant, Child, & Adolescent Nutrition (2013)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3979546/) | 部分：分別涵蓋童年逆境經驗與 Bowen 家庭系統概念，沒有諮商目標 |
+| police-111-counseling-3｜催化此時此地並進行闡釋 | [SAMHSA (2005)](https://files.eric.ed.gov/fulltext/ED491570.pdf) | 部分：涵蓋領導者盡量把焦點維持在「此時此地」、以提問把成員的反應拉回團體內互動，以及中期領導者兼顧內容與歷程；沒有 Yalom 所說「先活化此時此地、再做歷程闡釋」的兩階段說明 |
 | police-112-counseling-1｜以 Super 與 Holland 輔導更生人生涯 | [Santana Batista, J., et al. (2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9819525/) | 部分：只涵蓋 Holland 的 RIASEC 六型與適配性，沒有 Super 與更生人的應用 |
+| police-112-counseling-3｜復歸社會青年的毒品防制輔導計畫 | [Larimer, M. E., et al. (1999)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6760427/) | 部分：涵蓋 Marlatt 復發預防模式（高風險情境、因應技巧、結果預期、違反禁戒效應、生活型態與渴求）；沒有減害、RNR、動機晤談的內容，也沒有家庭支持、就業資源、跨機關分工與成效評估（毒品危害防制條例） |
 | police-112-counseling-4｜同理心、同情心與慈悲心 | [Klimecki, O. M., Leiberg, S., Ricard, M., & Singer, T. (2014)](https://pmc.ncbi.nlm.nih.gov/articles/PMC4040103/) | 部分：涵蓋同理（empathic distress）與慈悲的區別，沒有同情心與 Neff 自我慈悲 |
+| police-113-counseling-1｜被害人角色與倖存者角色 | [Office for Victims of Crime (n.d.)](https://ovc.ojp.gov/sites/ovc/files/pubs/OVC_Archives/reports/fptp/bci.htm) | 部分：涵蓋被害人的無力感、孤立，以及 Herman 所說重建與他人連結是創傷復原的關鍵階段、後期超越個人怨恨而投入社會行動；沒有「被害人」與「倖存者」兩種角色的明確定義，也沒有建立安全、回顧與哀悼兩個階段 |
 | police-113-counseling-2｜協助案主克服抗拒與非自願 | [Comparison of motivational interviewing with acceptance and commitment therapy: A conceptual and clinical review. Behavioural and Cognitive Psychotherapy, 39 (2011)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3135725/) | 部分：只涵蓋動機式晤談處理抗拒，沒有角色澄清 |
 | police-114-counseling-1｜Rogers 三大核心條件與報復情緒 | [Seehausen, M., Kazzer, P., et al. (2012)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3495333/) | 部分：只有一句說明 Rogers 視同理、正向關懷與一致為必要且充分條件，沒有對話示範 |
 | police-114-counseling-4｜DBT 四大技巧與自傷危機 | [Fassbinder, E., Schweiger, U., Martius, D., Brand-de Wilde, O., & Arntz, A. (2016)](https://pmc.ncbi.nlm.nih.gov/articles/PMC5021701/)<br>[The efficacy of applying the Interpersonal Effectiveness skills of dialectical behavior therapy into communication skills workshop for clinical nurses. Heliyon, 9 (2023)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10015201/) | 部分：涵蓋 DBT 四大技巧模組與 DEAR MAN，沒有自傷危機的處理 |
 | police-115-counseling-1｜焦點解決短期諮商 | [Use of solution-focused brief therapy within adult community mental health: A scoping review. Clinical Psychology & Psychotherapy, 33 (2026)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12996440/) | 部分：涵蓋基本理念與奇蹟、量尺問句，沒有題目情境的應用 |
+| police-115-counseling-4｜暴力事件的跨單位心理輔導合作 | [Schonfeld, D. J., & Newgass, S. (2003)](https://ovc.ojp.gov/sites/ovc/files/media/document/ncj197832.pdf) | 部分：涵蓋學校危機回應團隊與外部機關協調、分流（triage）、短期輔導、轉介社區服務與長期追蹤，以及直接、間接受害者（含第三層受害者）的需求；沒有家庭暴力加害人、被害人與家屬三方不同需求，也沒有警政、職場員工協助方案的分工與家庭暴力防治法的流程 |
 | 108-心理測驗員-心理學-3｜四種依附類型 | [Models of self and others and their relation to positive and negative caregiving responses. Psychology and Aging, 27 (2012)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3192310/) | 部分：涵蓋四種依附類型與自我、他人模式，沒有「已讀不回」的應用 |
 | 113-家事調查官-心理測驗員-心理學-2｜毒癮的犯罪說與疾病說 | [毒品危害防制條例第 24 條](https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=C0000008&flno=24) | 部分：只涵蓋毒品危害防制條例第 24 條的緩起訴戒癮治療（疾病說的制度面），沒有犯罪說與疾病說的學理 |
 | 114-家事調查官-心理測驗員-心理學-1｜C-PTSD 與自體心理學 | [Complex PTSD: What is the clinical utility of the diagnosis? European Journal of Psychotraumatology, 12 (2021)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8667899/) | 部分：只涵蓋 ICD-11 C-PTSD 的自我組織障礙，沒有自體心理學 |
@@ -595,6 +644,7 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | 監所管理員-108-犯罪學概要-1｜Lombroso 的犯罪人分類與貢獻 | [Mazzarello, P. (2011)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3814446/) | 部分：涵蓋隔代遺傳、天生犯罪人、身體烙印與人體測量的實證方法，沒有完整的犯罪人分類 |
 | 監所管理員-108-犯罪學概要-2｜古典學派與實證學派比較 | [Brantley, J. R., & Kravitz, M. (1979)](https://www.ojp.gov/pdffiles1/Digitization/60117NCJRS.pdf)<br>[Mazzarello, P. (2011)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3814446/) | 部分：只有古典學派（自由意志）與實證學派（生物決定）的一句對比，另一份文件談 Lombroso 的實證取向 |
 | 監所管理員-110-犯罪學概要-1｜明恥整合理論 | [Tittle, C. R. (2000)](https://www.ojp.gov/criminal_justice2000/vol_1/02b.pdf)<br>[CrimeSolutions](https://crimesolutions.ojp.gov/ratedprograms/canberra-reintegrative-shaming-experiments) | 完整 |
+| 監所管理員-110-犯罪學概要-2｜Cloward 與 Ohlin 的機會理論 | [Bureau of Justice Assistance (1998)](https://www.ojp.gov/pdffiles/164273.pdf) | 部分：涵蓋 Cloward 與 Ohlin 的差別機會（合法與非法機會都不足）以及犯罪、衝突、退縮三種幫派／副文化；沒有題目所列「機會擴充方案」的政策討論（該列引用 Siegel (2018)） |
 | 監所管理員-110-犯罪學概要-3｜Loeber 的三種犯罪路徑 | [Kelley, B. T., Loeber, R., Keenan, K., & DeLamatre, M. (1997)](https://www.ojp.gov/pdffiles/165692.pdf) | 完整 |
 | 監所管理員-111-犯罪學概要-3｜情境預防與商店竊盜 | [Clarke, R. V. (1997)](https://popcenter.asu.edu/sites/g/files/litvpz3631/files/scp2_intro_0_0.pdf)<br>[Clarke, R. V., & Eck, J. E. (2005)](https://popcenter.asu.edu/sites/g/files/litvpz3631/files/library/reading/PDFs/60Steps.pdf) | 部分：涵蓋情境預防與犯罪轉移，商店竊盜只有舉例層級 |
 | 監所管理員-112-犯罪學概要-2｜新機會理論三理論 | [Felson, M., & Clarke, R. V. (1998)](https://popcenter.asu.edu/sites/g/files/litvpz3631/files/opportunity_makes_the_thief.pdf)<br>[Felson, M., & Clarke, R. V. (1998)](https://popcenter.asu.edu/sites/g/files/litvpz3631/files/opportunity_makes_the_thief.pdf) | 完整 |
@@ -606,12 +656,13 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | 監所管理員-114-犯罪學概要-3｜犯罪預防的意涵、目標與重要性 | [Welsh, B. C., & Farrington, D. P. (2012)](https://www.ojp.gov/pdffiles1/nij/grants/237329.pdf) | 部分：涵蓋犯罪預防的分類與發展、情境預防策略，沒有成本效益的直接討論 |
 | 監所管理員-115-犯罪學概要-1｜Walters 八大犯罪思考型態 | [Morgan, R. D., Fisher, W. H., et al. (2010)](https://pmc.ncbi.nlm.nih.gov/articles/PMC2987583/) | 部分：涵蓋八種思考型態的名稱，沒有毒品吸食者的應用 |
 | 監所管理員-115-犯罪學概要-2｜問題行為症候群 | [Darvishi, M., et al. (2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8836126/) | 部分：涵蓋 Jessor 問題行為理論與風險、保護因子，預防策略較少 |
+| 監所管理員-115-犯罪學概要-3｜大規模殺人與連續殺人 | [Holmes, R. M., & Holmes, S. T. (1992)](https://www.ojp.gov/pdffiles1/Digitization/136809NCJRS.pdf) | 部分：涵蓋大規模殺人「同一時間與地點」的定義、與連續殺人的差異，並點出連續殺人的四種動機類型名稱（visionary、mission、hedonistic、power/control）；沒有連續殺人「冷卻期」的定義，也沒有各類型的說明，題目的「幻想型」應對應原文的 visionary 型 |
 
-### 沒有找到公開原文的題目（69 題）
+### 沒有找到公開原文的題目（38 題）
 
 這些題目在可連線的公開網站中找不到能下載全文、且內容足以對應得分點的文件，主要是：心理測驗的計算與常模（教科書內容）、諮商技術與團體歷程（Corey、Egan、Hill、Rogers 等專書）、古典學派與部分副文化理論（Beccaria、Bentham、Cloward & Ohlin、Miller、Sellin、Colvin）、臺灣倫理守則與方案，以及部分要以講義為準的題目。
 
-112-犯罪學-1、113-犯罪學-2、108-心理學-4、112-心理學-4、108-諮商與輔導-1、108-諮商與輔導-3、111-諮商與輔導-2、111-諮商與輔導-3、111-諮商與輔導-4、112-諮商與輔導-1、112-諮商與輔導-4、113-諮商與輔導-1、113-諮商與輔導-2、115-諮商與輔導-4、監獄官-109-犯罪學與再犯預測-3、監獄官-109-犯罪學與再犯預測-4、監獄官-114-犯罪學與再犯預測-4、監獄官-109-諮商與矯正輔導-4、監獄官-110-諮商與矯正輔導-1、監獄官-111-諮商與矯正輔導-3、監獄官-111-諮商與矯正輔導-4、監獄官-112-諮商與矯正輔導-1、監獄官-114-諮商與矯正輔導-3、監獄官-115-諮商與矯正輔導-2、監獄官-115-諮商與矯正輔導-3、薦任升等（矯正）-108-心理測驗-3、薦任升等（矯正）-108-心理測驗-4、薦任升等（矯正）-110-心理測驗-3、薦任升等（矯正）-110-心理測驗-4、薦任升等（矯正）-112-心理測驗-1、薦任升等（矯正）-112-心理測驗-2、薦任升等（矯正）-112-心理測驗-3、薦任升等（矯正）-112-心理測驗-4、薦任升等（矯正）-114-心理測驗-4、薦任升等（矯正）-110-犯罪學-3、薦任升等（矯正）-114-犯罪學-4、薦任升等（矯正）-110-諮商與輔導-1、薦任升等（矯正）-110-諮商與輔導-3、薦任升等（矯正）-110-諮商與輔導-4、薦任升等（矯正）-112-諮商與輔導-4、police-114-psychology-3、police-115-psychology-3、police-108-criminology_prevention-4、police-110-criminology_prevention-2、police-111-criminology_prevention-3、police-112-criminology_prevention-3、police-113-criminology_prevention-1、police-113-criminology_prevention-2、police-114-criminology_prevention-1、police-108-counseling-3、police-108-counseling-4、police-109-counseling-3、police-110-counseling-1、police-110-counseling-3、police-111-counseling-3、police-112-counseling-3、police-113-counseling-1、police-113-counseling-3、police-113-counseling-4、police-115-counseling-2、police-115-counseling-3、police-115-counseling-4、113-家事調查官-心理測驗員-心理學-3、監所管理員-109-犯罪學概要-3、監所管理員-110-犯罪學概要-2、監所管理員-111-犯罪學概要-1、監所管理員-112-犯罪學概要-1、監所管理員-113-犯罪學概要-2、監所管理員-115-犯罪學概要-3
+112-犯罪學-1、113-犯罪學-2、112-心理學-4、108-諮商與輔導-3、111-諮商與輔導-2、113-諮商與輔導-1、113-諮商與輔導-2、115-諮商與輔導-4、監獄官-109-犯罪學與再犯預測-3、監獄官-110-諮商與矯正輔導-1、監獄官-111-諮商與矯正輔導-3、監獄官-114-諮商與矯正輔導-3、監獄官-115-諮商與矯正輔導-3、薦任升等（矯正）-112-心理測驗-1、薦任升等（矯正）-110-犯罪學-3、薦任升等（矯正）-110-諮商與輔導-3、薦任升等（矯正）-112-諮商與輔導-4、police-114-psychology-3、police-115-psychology-3、police-108-criminology_prevention-4、police-110-criminology_prevention-2、police-112-criminology_prevention-3、police-113-criminology_prevention-1、police-113-criminology_prevention-2、police-114-criminology_prevention-1、police-108-counseling-3、police-108-counseling-4、police-110-counseling-1、police-110-counseling-3、police-113-counseling-3、police-113-counseling-4、police-115-counseling-2、police-115-counseling-3、113-家事調查官-心理測驗員-心理學-3、監所管理員-109-犯罪學概要-3、監所管理員-111-犯罪學概要-1、監所管理員-112-犯罪學概要-1、監所管理員-113-犯罪學概要-2
 
 ## 完整書目
 
@@ -634,7 +685,7 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | WHO (2014) | World Health Organization. (2014). Preventing suicide: A global imperative. Geneva: WHO.／World Health Organization. (2014). Global status report on violence prevention 2014. Geneva: WHO. | WHO 2014 年有兩份文件：自殺題（police-110-counseling-4）應引《Preventing suicide》，殺人防治題（police-114-criminology_prevention-2）應引《Global status report on violence prevention》，建議分別標示。 | police-114-criminology_prevention-2、police-110-counseling-4 |
 | Wolpe (1958) | Wolpe, J. (1958). Psychotherapy by reciprocal inhibition. Stanford, CA: Stanford University Press. | 系統減敏感法出自此書；洪水法並非 Wolpe 提出，可引 Stampfl & Levis (1967) 的內爆治療或 Marks (1972)。 | police-109-counseling-1、police-109-counseling-4 |
 
-### 原引用不完整，已補建議書目（35 筆）
+### 原引用不完整，已補建議書目（31 筆）
 
 | 原引用 | 建議完整書目 | 說明 | 使用題目 |
 |---|---|---|---|
@@ -642,12 +693,10 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | APA 測驗標準 | American Educational Research Association, American Psychological Association, & National Council on Measurement in Education. (2014). Standards for educational and psychological testing. Washington, DC: AERA. | 原引用為簡稱；與「AERA, APA, & NCME (2014)」為同一份文件，建議統一寫法。 | 108-心理學-4 |
 | Beccaria | Beccaria, C. (1764). Dei delitti e delle pene. Livorno.（英譯 On Crimes and Punishments） | 原引用未標年份，建議統一為 Beccaria (1764)。 | 111-犯罪學-1 |
 | Berg | De Jong, P., & Berg, I. K. (2013). Interviewing for solutions (4th ed.). Belmont, CA: Brooks/Cole. | 原引用只有姓氏；Insoo Kim Berg 常見引用另有 Berg & Miller (1992) Working with the problem drinker。 | 114-諮商與輔導-1 |
-| Bonta & Andrews, The Psychology of Criminal Conduct（Routledge） | Bonta, J., & Andrews, D. A. (2017). The psychology of criminal conduct (6th ed.). New York: Routledge. | 原引用未標版次；Routledge 出版的是第 6 版 (2017) 與第 7 版 (2024)。 | 115-犯罪學-2 |
 | CASEL | Collaborative for Academic, Social, and Emotional Learning. (2020). CASEL’s SEL framework: What are the core competence areas and where are they promoted? Chicago: CASEL. | 原引用未標年份；五大能力架構可引用 CASEL (2020) 官方架構說明。 | 薦任升等（矯正）-112-諮商與輔導-2 |
 | Comer, Abnormal Psychology | Comer, R. J., & Comer, J. S. (2021). Abnormal psychology (11th ed.). New York: Worth. | 原引用未標年份與版次；請依講義使用的版本補上（例如第 9 版 2015、第 10 版 2018、第 11 版 2021）。 | 110-心理學-1 |
 | Corey et al. | Corey, G., Corey, M. S., Corey, C., & Callanan, P. (2015). Issues and ethics in the helping professions (9th ed.). Stamford, CT: Cengage Learning. | 原引用未標書名與年份；依內容（反移情、督導、自我照顧）推定為此書，請以講義核對。 | 111-諮商與輔導-4、監獄官-115-諮商與矯正輔導-1 |
 | Corey, Corey & Callanan | Corey, G., Corey, M. S., Corey, C., & Callanan, P. (2015). Issues and ethics in the helping professions (9th ed.). Stamford, CT: Cengage Learning. | 原引用未標年份；第 9 版起作者為四人，第 10 版 (2019) 作者為 Corey, Corey, & Corey。 | 111-諮商與輔導-4 |
-| de Vries Robbé et al. | de Vries Robbé, M., de Vogel, V., & de Spa, E. (2011). Protective factors for violence risk in forensic psychiatric patients: A retrospective validation study of the SAPROF. International Journal of Forensic Mental Health, 10(3), 178–186. | 原引用未標年份；SAPROF 工具手冊為 de Vogel, de Ruiter, Bouman, & de Vries Robbé (2009/2012)。 | 115-犯罪學-3 |
 | Dreikurs | Dreikurs, R. (1967). Psychodynamics, psychotherapy, and counseling: Collected papers. Chicago: Alfred Adler Institute. | 原引用未標年份；阿德勒治療四階段常引此書，錯誤目標則引 Dreikurs & Soltz (1964)。 | 113-諮商與輔導-4、監獄官-114-諮商與矯正輔導-1、police-108-counseling-2 |
 | Ferri | Ferri, E. (1884). Sociologia criminale. Torino: Bocca.（英譯 Criminal Sociology, 1917） | 原引用未標年份。 | 監所管理員-108-犯罪學概要-2 |
 | Freud | Freud, S. (1923). Das Ich und das Es. Wien: Internationaler Psychoanalytischer Verlag.（英譯 The Ego and the Id） | 原引用未標年份；依內容選擇：人格結構引 Freud (1923)、焦慮引 Freud (1926)、夢的解析引 Freud (1900)、潛抑與遺忘引 Freud (1915) Repression 或 (1901) 日常生活的心理病理學。 | 109-諮商與輔導-3、110-諮商與輔導-1、監獄官-111-諮商與矯正輔導-1、監獄官-113-諮商與矯正輔導-1、監獄官-115-諮商與矯正輔導-1、police-110-psychology-1、police-115-psychology-3、108-心理測驗員-心理學-1、監所管理員-109-犯罪學概要-2 |
@@ -661,8 +710,6 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | Pranis | Pranis, K., Stuart, B., & Wedge, M. (2003). Peacemaking circles: From crime to community. St. Paul, MN: Living Justice Press. | 原引用只有姓氏。 | 監獄官-115-犯罪學與再犯預測-4 |
 | Rossi | Rossi, P. (1829). Traité de droit pénal. Genève / Paris. | 原引用只有姓氏；新古典學派代表人物的列法請以講義核對。 | police-110-criminology_prevention-2 |
 | Siegel, Criminology | Siegel, L. J. (2018). Criminology: Theories, patterns, and typologies (13th ed.). Boston: Cengage Learning. | 原引用未標年份與版次；建議與其他題目統一為 Siegel (2018)。 | 108-犯罪學-4 |
-| Taxman et al. | Taxman, F. S., Pattavina, A., Caudy, M. S., Byrne, J., & Durso, J. (2013). The empirical basis for the RNR model with an updated RNR conceptual framework. In F. S. Taxman & A. Pattavina (Eds.), Simulation strategies to reduce recidivism (pp. 73–111). New York: Springer. | 原引用未標年份；RNR 模擬工具的出處請以講義核對。 | 監獄官-111-犯罪學與再犯預測-3 |
-| UNODC | United Nations Office on Drugs and Crime. (2023). Global study on homicide 2023. Vienna: UNODC. | 原引用未標文件名稱與年份；官方統計可引 UNODC 犯罪趨勢調查 (UN-CTS) 或全球殺人研究報告，請依講義所指補上。 | police-111-criminology_prevention-1 |
 | 台灣輔導與諮商學會倫理守則 | 台灣輔導與諮商學會（2023）。輔導與諮商專業倫理守則。 | 同上，建議統一寫法並以現行版本核對條次。 | 113-諮商與輔導-2 |
 | 新世代反毒策略 | 行政院（2017）。新世代反毒策略行動綱領；行政院（2021）。新世代反毒策略行動綱領（第二期，110–113 年）。 | 原引用未標期別；作答時請標明引用第一期或第二期（或後續期別）。 | 監獄官-113-犯罪學與再犯預測-4 |
 | 法務部修復式司法方案 | 法務部（2010 起）。修復式司法試行方案；法務部（2018）。推動修復式司法方案實施計畫。 | 原引用未標方案名稱與年份，請以講義核對。 | 監獄官-115-犯罪學與再犯預測-4 |
@@ -736,7 +783,7 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | 自殺防治法 | 112-諮商與輔導-3 媒體報導規範為第 16 條（已核對）；通報為第 11 條。 | 薦任升等（矯正）-112-諮商與輔導-3、police-110-counseling-4 |
 | 自殺防治法第 11 條 | 已核對現行法：自殺防治通報系統，通報人身分應保密。 | police-110-counseling-4 |
 
-### 書目已確認（384 筆）
+### 書目已確認（388 筆）
 
 - **Abramson, Seligman & Teasdale (1978)**：Abramson, L. Y., Seligman, M. E. P., & Teasdale, J. D. (1978). Learned helplessness in humans: Critique and reformulation. Journal of Abnormal Psychology, 87(1), 49–74.　*補充：「無望感」導致憂鬱的說法屬後續的無望理論：Abramson, Metalsky, & Alloy (1989), Psychological Review, 96(2), 358–372。*
 - **Adler (1927)**：Adler, A. (1927). Menschenkenntnis. Leipzig: Hirzel.（英譯 Understanding Human Nature, 1927）
@@ -788,6 +835,7 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 - **Block (1977)**：Block, R. (1977). Violent crime: Environment, interaction, and death. Lexington, MA: Lexington Books.
 - **Bonta & Andrews (2007)**：Bonta, J., & Andrews, D. A. (2007). Risk-need-responsivity model for offender assessment and rehabilitation (User Report 2007-06). Ottawa: Public Safety Canada.
 - **Bonta & Andrews (2007), Risk-Need-Responsivity Model for Offender Assessment and Rehabilitation, Public Safety Canada User Report 2007-06**：Bonta, J., & Andrews, D. A. (2007). Risk-need-responsivity model for offender assessment and rehabilitation (User Report 2007-06). Ottawa: Public Safety Canada.
+- **Bonta & Andrews, The Psychology of Criminal Conduct（Routledge）**：Bonta, J., & Andrews, D. A. (2017). The psychology of criminal conduct (6th ed.). New York: Routledge.　*補充：2026-10-31 以 Crossref 再查，Routledge 第 6 版，DOI 10.4324/9781315677187（Bonta, Andrews；線上 2016、版權年 2017），書目已確認。*
 - **Bordin (1979)**：Bordin, E. S. (1979). The generalizability of the psychoanalytic concept of the working alliance. Psychotherapy: Theory, Research & Practice, 16(3), 252–260.
 - **Borum (2011)**：Borum, R. (2011). Radicalization into violent extremism I: A review of social science theories. Journal of Strategic Security, 4(4), 7–36.
 - **Bowen (1978)**：Bowen, M. (1978). Family therapy in clinical practice. New York: Jason Aronson.
@@ -834,6 +882,7 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 - **Dalton et al. (2007)**：Dalton, J. H., Elias, M. J., & Wandersman, A. (2007). Community psychology: Linking individuals and communities (2nd ed.). Belmont, CA: Thomson Wadsworth.
 - **de Shazer (1985)**：de Shazer, S. (1985). Keys to solution in brief therapy. New York: W. W. Norton.
 - **de Shazer (1988)**：de Shazer, S. (1988). Clues: Investigating solutions in brief therapy. New York: W. W. Norton.
+- **de Vries Robbé et al.**：de Vries Robbé, M., de Vogel, V., & de Spa, E. (2011). Protective factors for violence risk in forensic psychiatric patients: A retrospective validation study of the SAPROF. International Journal of Forensic Mental Health, 10(3), 178–186.　*補充：2026-10-31 以 Crossref 再查，DOI 10.1080/14999013.2011.600232（de Vries Robbé, de Vogel, de Spa, 2011, IJFMH 10(3), 178–186），書目已確認。data.js 的寫法缺年份，建議改為 de Vries Robbé et al. (2011)；SAPROF 工具手冊為 de Vogel et al. (2009/2012)。*
 - **Deci & Ryan (1985)**：Deci, E. L., & Ryan, R. M. (1985). Intrinsic motivation and self-determination in human behavior. New York: Plenum.
 - **Deci et al. (1999)**：Deci, E. L., Koestner, R., & Ryan, R. M. (1999). A meta-analytic review of experiments examining the effects of extrinsic rewards on intrinsic motivation. Psychological Bulletin, 125(6), 627–668.　*補充：此統合分析主要結論是有形酬賞會削弱內在動機；用於「連勝與排行短期提升參與」時，宜說明其限制。*
 - **DeVellis (2017)**：DeVellis, R. F. (2017). Scale development: Theory and applications (4th ed.). Thousand Oaks, CA: Sage.
@@ -1073,6 +1122,7 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 - **Sutherland (1947)**：Sutherland, E. H. (1947). Principles of criminology (4th ed.). Philadelphia: Lippincott.
 - **Sykes & Matza (1957)**：Sykes, G. M., & Matza, D. (1957). Techniques of neutralization: A theory of delinquency. American Sociological Review, 22(6), 664–670.
 - **Tarasoff v. Regents (1976)**：Tarasoff v. Regents of the University of California, 17 Cal. 3d 425, 551 P.2d 334 (Cal. 1976).
+- **Taxman et al.**：Taxman, F. S., Pattavina, A., Caudy, M. S., Byrne, J., & Durso, J. (2013). The empirical basis for the RNR model with an updated RNR conceptual framework. In F. S. Taxman & A. Pattavina (Eds.), Simulation strategies to reduce recidivism (pp. 73–111). New York: Springer.　*補充：2026-10-31 以 Crossref 再查，DOI 10.1007/978-1-4614-6188-3_4（Taxman, Pattavina, Caudy, Byrne, Durso, 2013, pp. 73–111），書目已確認。data.js 的寫法缺年份，建議改為 Taxman et al. (2013)。*
 - **Thornberry et al. (1993)**：Thornberry, T. P., Krohn, M. D., Lizotte, A. J., & Chard-Wierschem, D. (1993). The role of juvenile gangs in facilitating delinquent behavior. Journal of Research in Crime and Delinquency, 30(1), 55–87.
 - **Thrasher (1927)**：Thrasher, F. M. (1927). The gang: A study of 1,313 gangs in Chicago. Chicago: University of Chicago Press.
 - **Tittle (1995)**：Tittle, C. R. (1995). Control balance: Toward a general theory of deviance. Boulder, CO: Westview.
@@ -1081,6 +1131,7 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 - **Tulving (1974)**：Tulving, E. (1974). Cue-dependent forgetting. American Scientist, 62(1), 74–82.　*補充：編碼特定原則另見 Tulving & Thomson (1973)；舌尖現象見 Brown & McNeill (1966)。*
 - **Tversky & Kahneman (1973)**：Tversky, A., & Kahneman, D. (1973). Availability: A heuristic for judging frequency and probability. Cognitive Psychology, 5(2), 207–232.
 - **Uchtenhagen (2011)**：Uchtenhagen, A. (2011). Heroin maintenance treatment: From idea to research to practice. Drug and Alcohol Review, 30(2), 130–137.
+- **UNODC**：United Nations Office on Drugs and Crime. (2023). Global study on homicide 2023. Vienna: UNODC.　*補充：2026-10-31 以 Crossref 再查，DOI 10.18356/9789213587386（Global Study on Homicide 2023，United Nations／UNODC, 2023），書目已確認。data.js 的寫法缺文件名與年份，建議改為 UNODC (2023)。*
 - **Vaillant (1977)**：Vaillant, G. E. (1977). Adaptation to life. Boston: Little, Brown.
 - **van Dijk et al. (2007)**：van Dijk, J., van Kesteren, J., & Smit, P. (2007). Criminal victimisation in international perspective: Key findings from the 2004–2005 ICVS and EU ICS. The Hague: WODC.
 - **Vandenberg & Lance (2000)**：Vandenberg, R. J., & Lance, C. E. (2000). A review and synthesis of the measurement invariance literature: Suggestions, practices, and recommendations for organizational research. Organizational Research Methods, 3(1), 4–70.

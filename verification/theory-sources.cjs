@@ -59,6 +59,12 @@ if(fs.existsSync(pubPath)){
     }
   }
   for(const id of pub.uncovered||[]){if(seen.has(id)||!theoryIds.has(id))errors.push('public: bad uncovered id '+id);seen.add(id);}
+  // Every theory question that OpenStax does not cover must be either covered here or listed as uncovered.
+  for(const id of ox.uncovered)if(!seen.has(id))errors.push('public: '+id+' is neither covered nor listed as uncovered');
+  // Each source must point at the document it names.
+  for(const q of pub.questions)for(const s of q.sources||[])
+    if(!pub.documents[s.doc])errors.push('public: unknown document "'+s.doc+'" ('+q.id+')');
+    else if(pub.documents[s.doc].url&&s.url!==pub.documents[s.doc].url)errors.push('public: url differs from document "'+s.doc+'" ('+q.id+')');
 }
 if(errors.length){console.error([...new Set(errors)].join('\n'));process.exit(1);}
 console.log('theory sources: '+used.size+' citations, all with full references; OpenStax sections for '+ox.questions.length+' questions'+(pub?'; public sources for '+pub.questions.length:''));
