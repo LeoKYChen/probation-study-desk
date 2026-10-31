@@ -1,0 +1,77 @@
+name: Study island v4 isolated preview
+
+# 觀護學習島 v4 獨立預覽：先跑單元與瀏覽器測試，再部署到 Cloudflare Pages 的專用預覽分支。
+# 不部署 main、不改正式站；預覽內容 = 正式站同一份靜態檔 + study-island/（v3 與 v4）。
+on:
+  push:
+    branches:
+      - claude/new-session-wqxiow
+    paths:
+      - study-island/**
+      - .github/workflows/study-island-v4-preview.yml
+  pull_request:
+    branches: [main]
+    paths:
+      - study-island/**
+      - .github/workflows/study-island-v4-preview.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# push（會部署）與 pull_request（只測試）分開排隊，避免同一次推送的兩個執行互相取消。
+concurrency:
+  group: study-island-v4-preview-${{ github.event_name }}
+  cancel-in-progress: true
+
+jobs:
+  test-and-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Unit tests
+        run: node --test study-island/v4/tests/logic.test.mjs
+      - name: Build preview bundle (main static site + study-island)
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/build-cloudflare-main-mirror.py
+          cp -R study-island cloudflare-main-mirror-dist/study-island
+          rm -rf cloudflare-main-mirror-dist/study-island/v4/tests
+          test -f cloudflare-main-mirror-dist/study-island/v4/index.html
+          test -f cloudflare-main-mirror-dist/study-island/index.html
+      - name: Install browsers
+        run: |
+          npm install --prefix /tmp/island-browser --no-save playwright@1.62.1
+          /tmp/island-browser/node_modules/.bin/playwright install --with-deps chromium webkit
+      - name: Browser acceptance (Chromium, phone + desktop) against the preview bundle
+        shell: bash
+        env:
+          NODE_PATH: /tmp/island-browser/node_modules
+        run: |
+          set -euo pipefail
+          (cd cloudflare-main-mirror-dist && python3 -m http.server 8790 >/dev/null 2>&1 &)
+          sleep 2
+          node study-island/v4/tests/e2e.mjs http://localhost:8790/study-island/v4/
+      - name: Browser acceptance (WebKit, informational — not a substitute for a real iPhone)
+        continue-on-error: true
+        env:
+          NODE_PATH: /tmp/island-browser/node_modules
+          ISLAND_BROWSER: webkit
+        shell: bash
+        run: |
+          curl -s -o /dev/null http://localhost:8790/ || { (cd cloudflare-main-mirror-dist && python3 -m http.server 8790 >/dev/null 2>&1 &); sleep 2; }
+          node study-island/v4/tests/e2e.mjs http://localhost:8790/study-island/v4/
+      - name: Deploy isolated Cloudflare preview
+        if: (github.event_name == 'push' && github.ref == 'refs/heads/claude/new-session-wqxiow') || github.event_name == 'workflow_dispatch'
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy cloudflare-main-mirror-dist --project-name=probation-study30-test --branch=study-island-v4-preview --commit-dirty=true
