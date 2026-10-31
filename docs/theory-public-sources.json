@@ -577,6 +577,11 @@
    "ref": "Schmukle, S. C. (2025). Unbiased confidence intervals for psychological testing: The regression-based true score approach with scale correction. Assessment, 33(5), 817–825.",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13230652/",
    "kind": "review"
+  },
+  "aera14": {
+   "ref": "American Educational Research Association, American Psychological Association, & National Council on Measurement in Education. (2014). Standards for educational and psychological testing. Washington, DC: American Educational Research Association.",
+   "url": "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf",
+   "kind": "original"
   }
  },
  "questions": [
@@ -972,6 +977,30 @@
      "matchedTerms": [
       "少年輔導委員會",
       "請求少年法院處理"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "108-心理學-4",
+   "title": "使用心理測驗應注意的事項",
+   "coverage": "full",
+   "note": "",
+   "sources": [
+    {
+     "doc": "aera14",
+     "ref": "American Educational Research Association, American Psychological Association, & National Council on Measurement in Education. (2014). Standards for educational and psychological testing. Washington, DC: American Educational Research Association.",
+     "url": "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf",
+     "kind": "original",
+     "matchedTerms": [
+      "test selection",
+      "validity evidence",
+      "clearly described populations",
+      "user qualifications",
+      "standardized procedures",
+      "informed consent",
+      "interpreted in isolation",
+      "protect the privacy of examinees"
      ]
     }
    ]
@@ -2347,6 +2376,49 @@
    ]
   },
   {
+   "id": "薦任升等（矯正）-108-心理測驗-3",
+   "title": "採購測驗：類型選擇與評估條件",
+   "coverage": "partial",
+   "note": "涵蓋信度／精確度、效度證據、常模須描述清楚且定期重新建立常模（Standard 5.8、5.9）；沒有人格、性向、興趣三類測驗的比較，也沒有「以心理適應為目的宜優先購買人格測驗」的論述（出自 Anastasi & Urbina）",
+   "sources": [
+    {
+     "doc": "aera14",
+     "ref": "American Educational Research Association, American Psychological Association, & National Council on Measurement in Education. (2014). Standards for educational and psychological testing. Washington, DC: American Educational Research Association.",
+     "url": "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf",
+     "kind": "original",
+     "matchedTerms": [
+      "validity evidence",
+      "reliability/precision",
+      "clearly described populations",
+      "renorm",
+      "test selection"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-108-心理測驗-4",
+   "title": "線上施測的倫理議題",
+   "coverage": "partial",
+   "note": "涵蓋施測者與解釋者資格（Standard 7.7）、受測者隱私與資料安全（Standard 9.19）、有監督與無監督線上施測對效度證據的影響，以及事前告知與同意；2014 年版沒有專談線上施測的身分確認、加密與資料保存期限，這些要看個人資料保護法與臺灣心理學會倫理守則",
+   "sources": [
+    {
+     "doc": "aera14",
+     "ref": "American Educational Research Association, American Psychological Association, & National Council on Measurement in Education. (2014). Standards for educational and psychological testing. Washington, DC: American Educational Research Association.",
+     "url": "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf",
+     "kind": "original",
+     "matchedTerms": [
+      "unproctored online testing",
+      "user qualifications",
+      "protect the privacy of examinees",
+      "data security",
+      "informed consent",
+      "use of proctors"
+     ]
+    }
+   ]
+  },
+  {
    "id": "薦任升等（矯正）-110-心理測驗-1",
    "title": "評估再犯風險的心理測驗評論",
    "coverage": "partial",
@@ -2385,10 +2457,73 @@
    ]
   },
   {
+   "id": "薦任升等（矯正）-110-心理測驗-3",
+   "title": "驗證量表能否預測未來犯罪",
+   "coverage": "partial",
+   "note": "涵蓋預測效標關係研究應檢查的人為因素（測量誤差、全距限制、效標污染、遺漏資料；Standard 11.8），以及效度研究中樣本自我選擇與流失（attrition）的影響；沒有以未來犯罪紀錄為效標的追蹤設計、ROC/AUC 與基率，該題引用的 Hanson & Morton-Bourgon (2009) 未取得",
+   "sources": [
+    {
+     "doc": "aera14",
+     "ref": "American Educational Research Association, American Psychological Association, & National Council on Measurement in Education. (2014). Standards for educational and psychological testing. Washington, DC: American Educational Research Association.",
+     "url": "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf",
+     "kind": "original",
+     "matchedTerms": [
+      "predictor-criterion relationships",
+      "criterion contamination",
+      "range restriction",
+      "attrition",
+      "predictive"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-110-心理測驗-4",
+   "title": "建立常模的過程",
+   "coverage": "partial",
+   "note": "涵蓋常模報告應載明抽樣母群、抽樣程序、參與率、加權與施測日期，並由出版者定期重新建立常模（Standard 5.9），以及標準化施測程序（Standard 6.1）；沒有分層隨機抽樣的逐步做法，也沒有從原始分數轉換為標準分數的步驟",
+   "sources": [
+    {
+     "doc": "aera14",
+     "ref": "American Educational Research Association, American Psychological Association, & National Council on Measurement in Education. (2014). Standards for educational and psychological testing. Washington, DC: American Educational Research Association.",
+     "url": "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf",
+     "kind": "original",
+     "matchedTerms": [
+      "renorm",
+      "sampling procedures",
+      "participation rates",
+      "weighting of the sample",
+      "dates of testing",
+      "percentile",
+      "standardized procedures"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-112-心理測驗-3",
+   "title": "選擇適當的常模團體",
+   "coverage": "partial",
+   "note": "涵蓋「常模應指向描述清楚的母群，且須包含測驗使用者通常想比較的個人或團體」（Standard 5.8）與使用者須適當選用常模；沒有申請資訊類碩士班的情境、效標群體（成功工程師）與自建常模的做法",
+   "sources": [
+    {
+     "doc": "aera14",
+     "ref": "American Educational Research Association, American Psychological Association, & National Council on Measurement in Education. (2014). Standards for educational and psychological testing. Washington, DC: American Educational Research Association.",
+     "url": "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf",
+     "kind": "original",
+     "matchedTerms": [
+      "clearly described populations",
+      "ordinarily wish to compare",
+      "norms, if used"
+     ]
+    }
+   ]
+  },
+  {
    "id": "薦任升等（矯正）-112-心理測驗-4",
    "title": "測量標準誤與信賴區間",
    "coverage": "partial",
-   "note": "兩篇都是二手說明：測量標準誤依標準差與信度計算（SEM 公式在原文為圖片，文字只描述其組成）、95% 信賴區間為觀察分數 ± 1.96×SEM；沒有題目的數值計算（SEM = 15×√(1−.96) = 3），也沒有兩人分數差異與差異標準誤的討論",
+   "note": "三份來源都是說明而非題目的計算：測量標準誤依標準差與信度計算、須以報告分數的單位呈現（Standard 2.13）、95% 信賴區間為觀察分數 ± 1.96×SEM，以及比較兩個分數時應考慮差異分數的信度或差異標準誤；沒有題目的數值計算（SEM = 15×√(1−.96) = 3）",
    "sources": [
     {
      "doc": "tighe10",
@@ -2412,6 +2547,18 @@
       "confidence interval",
       "1.96",
       "observed score"
+     ]
+    },
+    {
+     "doc": "aera14",
+     "ref": "American Educational Research Association, American Psychological Association, & National Council on Measurement in Education. (2014). Standards for educational and psychological testing. Washington, DC: American Educational Research Association.",
+     "url": "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf",
+     "kind": "original",
+     "matchedTerms": [
+      "standard error of measurement",
+      "standard error of the difference",
+      "confidence intervals",
+      "reliability/precision"
      ]
     }
    ]
@@ -2451,6 +2598,27 @@
       "difficulty index",
       "discrimination index",
       "distractor"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-114-心理測驗-4",
+   "title": "電腦化與 AI 測驗的倫理議題",
+   "coverage": "partial",
+   "note": "涵蓋自動化評分演算法的文件化與偏誤檢視（Standard 4.19）、不得僅依賴電腦產生的解釋（Standard 9.10）、使用者資格（Standard 7.7）與受測者隱私（Standard 9.19）；2014 年版早於生成式 AI，沒有 AI 專屬的透明度與可解釋性規範，也沒有個資最小蒐集的具體做法",
+   "sources": [
+    {
+     "doc": "aera14",
+     "ref": "American Educational Research Association, American Psychological Association, & National Council on Measurement in Education. (2014). Standards for educational and psychological testing. Washington, DC: American Educational Research Association.",
+     "url": "https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf",
+     "kind": "original",
+     "matchedTerms": [
+      "automated scoring algorithms",
+      "computergenerated interpretations",
+      "scoring algorithms need to be reviewed for potential sources of bias",
+      "user qualifications",
+      "protect the privacy of examinees"
      ]
     }
    ]
@@ -4110,7 +4278,6 @@
  "uncovered": [
   "112-犯罪學-1",
   "113-犯罪學-2",
-  "108-心理學-4",
   "112-心理學-4",
   "108-諮商與輔導-3",
   "111-諮商與輔導-2",
@@ -4129,14 +4296,8 @@
   "監獄官-114-諮商與矯正輔導-3",
   "監獄官-115-諮商與矯正輔導-2",
   "監獄官-115-諮商與矯正輔導-3",
-  "薦任升等（矯正）-108-心理測驗-3",
-  "薦任升等（矯正）-108-心理測驗-4",
-  "薦任升等（矯正）-110-心理測驗-3",
-  "薦任升等（矯正）-110-心理測驗-4",
   "薦任升等（矯正）-112-心理測驗-1",
   "薦任升等（矯正）-112-心理測驗-2",
-  "薦任升等（矯正）-112-心理測驗-3",
-  "薦任升等（矯正）-114-心理測驗-4",
   "薦任升等（矯正）-110-犯罪學-3",
   "薦任升等（矯正）-110-諮商與輔導-1",
   "薦任升等（矯正）-110-諮商與輔導-3",

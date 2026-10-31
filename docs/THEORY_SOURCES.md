@@ -328,7 +328,7 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 3. 法規題以全國法規資料庫 2026-10-16 版的條文核對（法務部網站本身連不上），連結指向全國法規資料庫的條文頁。
 4. 只涵蓋部分得分點的標為「部分」，並寫出缺少的內容。
 
-**結果**：218 題中有 156 題找到公開原文（完整涵蓋 34 題、部分涵蓋 122 題），其餘 62 題沒有找到（列在本節最後）。共用到 110 份文件：原作者或原始研究 28 份、政府或國際組織文件 10 份、二手整理 61 份、法規條文 11 筆。
+**結果**：218 題中有 163 題找到公開原文（完整涵蓋 35 題、部分涵蓋 128 題），其餘 55 題沒有找到（列在本節最後）。共用到 111 份文件：原作者或原始研究 29 份、政府或國際組織文件 10 份、二手整理 61 份、法規條文 11 筆。
 
 使用注意：
 - 「原作者或原始研究」是題目引用的學者本人的文件（例如 Felson & Clarke、Bonta & Andrews、Hanson、Farrell & Pease、Moffitt、Bucklen），可直接當出處。
@@ -348,6 +348,7 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 
 | 類型 | 書目 | 全文 |
 |---|---|---|
+| 原作者或原始研究 | American Educational Research Association, American Psychological Association, & National Council on Measurement in Education. (2014). Standards for educational and psychological testing. Washington, DC: American Educational Research Association. | [連結](https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf) |
 | 原作者或原始研究 | Bonta, J., & Andrews, D. A. (2007). Risk-need-responsivity model for offender assessment and rehabilitation (User Report 2007-06). Ottawa: Public Safety Canada. | [連結](https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/rsk-nd-rspnsvty/rsk-nd-rspnsvty-eng.pdf) |
 | 原作者或原始研究 | Bonta, J., Bourgon, G., et al. (2010). The Strategic Training Initiative in Community Supervision: Risk-need-responsivity in the real world (User Report 2010-01). Ottawa: Public Safety Canada. | [連結](https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/2010-01-rnr/index-en.aspx) |
 | 原作者或原始研究 | Bucklen, K. B. (2021). Desistance-focused criminal justice practice. Washington, DC: National Institute of Justice. | [連結](https://www.ojp.gov/pdffiles1/nij/301501.pdf) |
@@ -480,6 +481,7 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | 115-犯罪學-2｜RNR 模型、四大核心風險與回應性原則 | [Bonta, J., & Andrews, D. A. (2007)](https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/rsk-nd-rspnsvty/rsk-nd-rspnsvty-eng.pdf) | 完整 |
 | 115-犯罪學-3｜評估社會復歸的風險因子與保護因子 | [Bonta, J., & Andrews, D. A. (2007)](https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/rsk-nd-rspnsvty/rsk-nd-rspnsvty-eng.pdf)<br>[A review and comparative analysis of the risk-needs-responsivity, good lives, and recovery models in forensic psychiatric treatment. Frontiers in Psychiatry, 13, 988905 (2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9659584/) | 部分：涵蓋犯因性需求與好生活模式的保護面向，沒有結構化專業判斷與量刑前調查 |
 | 115-犯罪學-4｜少年事件行政先行的流程與落實釋字第 664 號 | [少年事件處理法第 18 條](https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=C0010011&flno=18) | 部分：只涵蓋少年事件處理法第 18 條的通知、輔導與請求法院處理流程，沒有釋字第 664 號 |
+| 108-心理學-4｜使用心理測驗應注意的事項 | [AERA, APA, & NCME (2014)](https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf) | 完整 |
 | 111-心理學-1｜常模參照測驗與標準參照測驗的比較 | [Is it all about the form? Norm- vs criterion-referenced ratings and faculty inter-rater reliability. Ochsner Journal, 23 (2023)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10498947/) | 部分：涵蓋兩種參照的定義與差異（Glaser），例子是醫學教育評量而非心理測驗 |
 | 112-心理學-1｜情緒調節歷程模式與適應性、非適應性策略 | [Cognitive strategies to regulate emotions—current evidence and future directions. Frontiers in Psychology, 4, 1019 (2014)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3887268/) | 部分：涵蓋 Gross 五種調節歷程與再評估、壓抑，沒有適應性與非適應性策略的完整分類 |
 | 112-心理學-2｜人際心理治療的四項人際議題 | [Markowitz, J. C., & Weissman, M. M. (2004)](https://pmc.ncbi.nlm.nih.gov/articles/PMC1414693/) | 完整 |
@@ -542,11 +544,17 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | 監獄官-114-諮商與矯正輔導-2｜創傷知情觀點下的監獄官工作 | [Dawson, S., Bierce, A., et al. (2021)](https://pmc.ncbi.nlm.nih.gov/articles/PMC7896604/) | 部分：涵蓋創傷知情 4R 與六大原則，沒有監所實務與自我照顧 |
 | 監獄官-114-諮商與矯正輔導-4｜三級預防應用於酒癮犯 | [Welsh, B. C., & Farrington, D. P. (2012)](https://www.ojp.gov/pdffiles1/nij/grants/237329.pdf) | 部分：只涵蓋三級預防的架構，沒有酒癮犯的活動 |
 | 薦任升等（矯正）-108-心理測驗-1｜試題難度與鑑別度的計算 | [Kheyami, D., Jaradat, A., et al. (2018)](https://pmc.ncbi.nlm.nih.gov/articles/PMC5892816/) | 完整 |
+| 薦任升等（矯正）-108-心理測驗-3｜採購測驗：類型選擇與評估條件 | [AERA, APA, & NCME (2014)](https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf) | 部分：涵蓋信度／精確度、效度證據、常模須描述清楚且定期重新建立常模（Standard 5.8、5.9）；沒有人格、性向、興趣三類測驗的比較，也沒有「以心理適應為目的宜優先購買人格測驗」的論述（出自 Anastasi & Urbina） |
+| 薦任升等（矯正）-108-心理測驗-4｜線上施測的倫理議題 | [AERA, APA, & NCME (2014)](https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf) | 部分：涵蓋施測者與解釋者資格（Standard 7.7）、受測者隱私與資料安全（Standard 9.19）、有監督與無監督線上施測對效度證據的影響，以及事前告知與同意；2014 年版沒有專談線上施測的身分確認、加密與資料保存期限，這些要看個人資料保護法與臺灣心理學會倫理守則 |
 | 薦任升等（矯正）-110-心理測驗-1｜評估再犯風險的心理測驗評論 | [Bonta, J., & Andrews, D. A. (2007)](https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/rsk-nd-rspnsvty/rsk-nd-rspnsvty-eng.pdf) | 部分：涵蓋 RNR 與第三、四代風險評估工具的演進，沒有個別量表的優缺點評論 |
 | 薦任升等（矯正）-110-心理測驗-2｜自編測驗的編製程序 | [Boateng, G. O., Neilands, T. B., Frongillo, E. A., Melgar-Quiñonez, H. R., & Young, S. L. (2018)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6004510/) | 部分：涵蓋量表編製的三階段九步驟（題目產生、內容效度、因素分析、信效度），沒有矯正場域 |
-| 薦任升等（矯正）-112-心理測驗-4｜測量標準誤與信賴區間 | [Tighe, J., et al. (2010)](https://pmc.ncbi.nlm.nih.gov/articles/PMC2893515/)<br>[Schmukle, S. C. (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC13230652/) | 部分：兩篇都是二手說明：測量標準誤依標準差與信度計算（SEM 公式在原文為圖片，文字只描述其組成）、95% 信賴區間為觀察分數 ± 1.96×SEM；沒有題目的數值計算（SEM = 15×√(1−.96) = 3），也沒有兩人分數差異與差異標準誤的討論 |
+| 薦任升等（矯正）-110-心理測驗-3｜驗證量表能否預測未來犯罪 | [AERA, APA, & NCME (2014)](https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf) | 部分：涵蓋預測效標關係研究應檢查的人為因素（測量誤差、全距限制、效標污染、遺漏資料；Standard 11.8），以及效度研究中樣本自我選擇與流失（attrition）的影響；沒有以未來犯罪紀錄為效標的追蹤設計、ROC/AUC 與基率，該題引用的 Hanson & Morton-Bourgon (2009) 未取得 |
+| 薦任升等（矯正）-110-心理測驗-4｜建立常模的過程 | [AERA, APA, & NCME (2014)](https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf) | 部分：涵蓋常模報告應載明抽樣母群、抽樣程序、參與率、加權與施測日期，並由出版者定期重新建立常模（Standard 5.9），以及標準化施測程序（Standard 6.1）；沒有分層隨機抽樣的逐步做法，也沒有從原始分數轉換為標準分數的步驟 |
+| 薦任升等（矯正）-112-心理測驗-3｜選擇適當的常模團體 | [AERA, APA, & NCME (2014)](https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf) | 部分：涵蓋「常模應指向描述清楚的母群，且須包含測驗使用者通常想比較的個人或團體」（Standard 5.8）與使用者須適當選用常模；沒有申請資訊類碩士班的情境、效標群體（成功工程師）與自建常模的做法 |
+| 薦任升等（矯正）-112-心理測驗-4｜測量標準誤與信賴區間 | [Tighe, J., et al. (2010)](https://pmc.ncbi.nlm.nih.gov/articles/PMC2893515/)<br>[Schmukle, S. C. (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC13230652/)<br>[AERA, APA, & NCME (2014)](https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf) | 部分：三份來源都是說明而非題目的計算：測量標準誤依標準差與信度計算、須以報告分數的單位呈現（Standard 2.13）、95% 信賴區間為觀察分數 ± 1.96×SEM，以及比較兩個分數時應考慮差異分數的信度或差異標準誤；沒有題目的數值計算（SEM = 15×√(1−.96) = 3） |
 | 薦任升等（矯正）-114-心理測驗-2｜全國高中生常模的解釋限制 | [Tse, W. W.-Y., Lai, M. H. C., et al. (2024)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11133089/) | 部分：只涵蓋測量恆等性（形貌、量尺、純量、嚴格）與跨組比較的前提，沒有常模代表性與分組常模 |
 | 薦任升等（矯正）-114-心理測驗-3｜測驗目的與項目分析取向 | [Kheyami, D., Jaradat, A., et al. (2018)](https://pmc.ncbi.nlm.nih.gov/articles/PMC5892816/) | 部分：只涵蓋項目分析的難度、鑑別度與誘答力，沒有診斷取向與常模取向的比較 |
+| 薦任升等（矯正）-114-心理測驗-4｜電腦化與 AI 測驗的倫理議題 | [AERA, APA, & NCME (2014)](https://www.testingstandards.net/uploads/7/6/6/4/76643089/9780935302356.pdf) | 部分：涵蓋自動化評分演算法的文件化與偏誤檢視（Standard 4.19）、不得僅依賴電腦產生的解釋（Standard 9.10）、使用者資格（Standard 7.7）與受測者隱私（Standard 9.19）；2014 年版早於生成式 AI，沒有 AI 專屬的透明度與可解釋性規範，也沒有個資最小蒐集的具體做法 |
 | 薦任升等（矯正）-108-犯罪學-1｜常見的再犯風險因子與依據 | [Bonta, J., & Andrews, D. A. (2007)](https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/rsk-nd-rspnsvty/rsk-nd-rspnsvty-eng.pdf) | 完整 |
 | 薦任升等（矯正）-108-犯罪學-3｜少年加入幫派的功能 | [Taylor, C. S., & Smith, P. R. (2013)](https://www.ojp.gov/pdffiles1/nij/243466.pdf) | 完整 |
 | 薦任升等（矯正）-108-犯罪學-4｜家暴施暴者的風險因子 | [Campbell, J. C., Webster, D., Koziol-McLain, J., et al. (2003)](https://pmc.ncbi.nlm.nih.gov/articles/PMC1447915/) | 完整 |
@@ -620,11 +628,11 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | 監所管理員-115-犯罪學概要-2｜問題行為症候群 | [Darvishi, M., et al. (2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8836126/) | 部分：涵蓋 Jessor 問題行為理論與風險、保護因子，預防策略較少 |
 | 監所管理員-115-犯罪學概要-3｜大規模殺人與連續殺人 | [Holmes, R. M., & Holmes, S. T. (1992)](https://www.ojp.gov/pdffiles1/Digitization/136809NCJRS.pdf) | 部分：涵蓋大規模殺人「同一時間與地點」的定義、與連續殺人的差異，並點出連續殺人的四種動機類型名稱（visionary、mission、hedonistic、power/control）；沒有連續殺人「冷卻期」的定義，也沒有各類型的說明，題目的「幻想型」應對應原文的 visionary 型 |
 
-### 沒有找到公開原文的題目（62 題）
+### 沒有找到公開原文的題目（55 題）
 
 這些題目在可連線的公開網站中找不到能下載全文、且內容足以對應得分點的文件，主要是：心理測驗的計算與常模（教科書內容）、諮商技術與團體歷程（Corey、Egan、Hill、Rogers 等專書）、古典學派與部分副文化理論（Beccaria、Bentham、Cloward & Ohlin、Miller、Sellin、Colvin）、臺灣倫理守則與方案，以及部分要以講義為準的題目。
 
-112-犯罪學-1、113-犯罪學-2、108-心理學-4、112-心理學-4、108-諮商與輔導-3、111-諮商與輔導-2、111-諮商與輔導-3、111-諮商與輔導-4、112-諮商與輔導-1、112-諮商與輔導-4、113-諮商與輔導-1、113-諮商與輔導-2、115-諮商與輔導-4、監獄官-109-犯罪學與再犯預測-3、監獄官-109-諮商與矯正輔導-4、監獄官-110-諮商與矯正輔導-1、監獄官-111-諮商與矯正輔導-3、監獄官-111-諮商與矯正輔導-4、監獄官-114-諮商與矯正輔導-3、監獄官-115-諮商與矯正輔導-2、監獄官-115-諮商與矯正輔導-3、薦任升等（矯正）-108-心理測驗-3、薦任升等（矯正）-108-心理測驗-4、薦任升等（矯正）-110-心理測驗-3、薦任升等（矯正）-110-心理測驗-4、薦任升等（矯正）-112-心理測驗-1、薦任升等（矯正）-112-心理測驗-2、薦任升等（矯正）-112-心理測驗-3、薦任升等（矯正）-114-心理測驗-4、薦任升等（矯正）-110-犯罪學-3、薦任升等（矯正）-110-諮商與輔導-1、薦任升等（矯正）-110-諮商與輔導-3、薦任升等（矯正）-110-諮商與輔導-4、薦任升等（矯正）-112-諮商與輔導-4、police-114-psychology-3、police-115-psychology-3、police-108-criminology_prevention-4、police-110-criminology_prevention-2、police-111-criminology_prevention-3、police-112-criminology_prevention-3、police-113-criminology_prevention-1、police-113-criminology_prevention-2、police-114-criminology_prevention-1、police-108-counseling-3、police-108-counseling-4、police-109-counseling-3、police-110-counseling-1、police-110-counseling-3、police-111-counseling-3、police-112-counseling-3、police-113-counseling-1、police-113-counseling-3、police-113-counseling-4、police-115-counseling-2、police-115-counseling-3、police-115-counseling-4、113-家事調查官-心理測驗員-心理學-3、監所管理員-109-犯罪學概要-3、監所管理員-110-犯罪學概要-2、監所管理員-111-犯罪學概要-1、監所管理員-112-犯罪學概要-1、監所管理員-113-犯罪學概要-2
+112-犯罪學-1、113-犯罪學-2、112-心理學-4、108-諮商與輔導-3、111-諮商與輔導-2、111-諮商與輔導-3、111-諮商與輔導-4、112-諮商與輔導-1、112-諮商與輔導-4、113-諮商與輔導-1、113-諮商與輔導-2、115-諮商與輔導-4、監獄官-109-犯罪學與再犯預測-3、監獄官-109-諮商與矯正輔導-4、監獄官-110-諮商與矯正輔導-1、監獄官-111-諮商與矯正輔導-3、監獄官-111-諮商與矯正輔導-4、監獄官-114-諮商與矯正輔導-3、監獄官-115-諮商與矯正輔導-2、監獄官-115-諮商與矯正輔導-3、薦任升等（矯正）-112-心理測驗-1、薦任升等（矯正）-112-心理測驗-2、薦任升等（矯正）-110-犯罪學-3、薦任升等（矯正）-110-諮商與輔導-1、薦任升等（矯正）-110-諮商與輔導-3、薦任升等（矯正）-110-諮商與輔導-4、薦任升等（矯正）-112-諮商與輔導-4、police-114-psychology-3、police-115-psychology-3、police-108-criminology_prevention-4、police-110-criminology_prevention-2、police-111-criminology_prevention-3、police-112-criminology_prevention-3、police-113-criminology_prevention-1、police-113-criminology_prevention-2、police-114-criminology_prevention-1、police-108-counseling-3、police-108-counseling-4、police-109-counseling-3、police-110-counseling-1、police-110-counseling-3、police-111-counseling-3、police-112-counseling-3、police-113-counseling-1、police-113-counseling-3、police-113-counseling-4、police-115-counseling-2、police-115-counseling-3、police-115-counseling-4、113-家事調查官-心理測驗員-心理學-3、監所管理員-109-犯罪學概要-3、監所管理員-110-犯罪學概要-2、監所管理員-111-犯罪學概要-1、監所管理員-112-犯罪學概要-1、監所管理員-113-犯罪學概要-2
 
 ## 完整書目
 
