@@ -632,6 +632,21 @@
    "ref": "Hays, D. G., Craigen, L. M., Knight, J., Healey, A., & Sikes, A. (n.d.). Duty to warn and protect against self-destructive behaviors and interpersonal violence (ERIC EJ886123). Old Dominion University.",
    "url": "https://files.eric.ed.gov/fulltext/EJ886123.pdf",
    "kind": "review"
+  },
+  "iacp_reentry": {
+   "ref": "International Association of Chiefs of Police. (n.d.). Building an offender reentry program: A guide for law enforcement (BJA grant 2005-MU-MU-K012). Washington, DC: Bureau of Justice Assistance.",
+   "url": "https://bja.ojp.gov/sites/g/files/xyckuh186/files/Publications/Reentry_LE.pdf",
+   "kind": "official"
+  },
+  "schonfeld03": {
+   "ref": "Schonfeld, D. J., & Newgass, S. (2003). School crisis response initiative (OVC Bulletin, NCJ 197832). Washington, DC: Office for Victims of Crime.",
+   "url": "https://ovc.ojp.gov/sites/ovc/files/media/document/ncj197832.pdf",
+   "kind": "official"
+  },
+  "ovc_fptp": {
+   "ref": "Office for Victims of Crime. (n.d.). From pain to power: Crime victims take action, Benefits of community involvement. Washington, DC: U.S. Department of Justice.",
+   "url": "https://ovc.ojp.gov/sites/ovc/files/pubs/OVC_Archives/reports/fptp/bci.htm",
+   "kind": "official"
   }
  },
  "questions": [
@@ -3184,6 +3199,27 @@
    ]
   },
   {
+   "id": "薦任升等（矯正）-110-諮商與輔導-4",
+   "title": "出獄前資源連結與有效溝通",
+   "coverage": "partial",
+   "note": "涵蓋出獄前就開始的釋放規劃（個別釋放計畫）與可連結的資源（住屋、教育、就業轉介與職訓、物質濫用治療、家庭團聚）；沒有更生保護法的資源，也沒有信任關係、真誠同理、尊重自主等有效溝通因素（Rogers、Trotter）",
+   "sources": [
+    {
+     "doc": "iacp_reentry",
+     "ref": "International Association of Chiefs of Police. (n.d.). Building an offender reentry program: A guide for law enforcement (BJA grant 2005-MU-MU-K012). Washington, DC: Bureau of Justice Assistance.",
+     "url": "https://bja.ojp.gov/sites/g/files/xyckuh186/files/Publications/Reentry_LE.pdf",
+     "kind": "official",
+     "matchedTerms": [
+      "job counseling, vocational training or employment referrals",
+      "housing assistance",
+      "family reunification",
+      "individual release plan",
+      "pre-release"
+     ]
+    }
+   ]
+  },
+  {
    "id": "薦任升等（矯正）-112-諮商與輔導-1",
    "title": "Bowen 家族系統理論概念",
    "coverage": "full",
@@ -4045,6 +4081,27 @@
    ]
   },
   {
+   "id": "police-113-counseling-1",
+   "title": "被害人角色與倖存者角色",
+   "coverage": "partial",
+   "note": "涵蓋被害人的無力感、孤立，以及 Herman 所說重建與他人連結是創傷復原的關鍵階段、後期超越個人怨恨而投入社會行動；沒有「被害人」與「倖存者」兩種角色的明確定義，也沒有建立安全、回顧與哀悼兩個階段",
+   "sources": [
+    {
+     "doc": "ovc_fptp",
+     "ref": "Office for Victims of Crime. (n.d.). From pain to power: Crime victims take action, Benefits of community involvement. Washington, DC: U.S. Department of Justice.",
+     "url": "https://ovc.ojp.gov/sites/ovc/files/pubs/OVC_Archives/reports/fptp/bci.htm",
+     "kind": "official",
+     "matchedTerms": [
+      "powerlessness",
+      "isolation",
+      "key stages of trauma recovery",
+      "reconnection",
+      "herman notes"
+     ]
+    }
+   ]
+  },
+  {
    "id": "police-113-counseling-2",
    "title": "協助案主克服抗拒與非自願",
    "coverage": "partial",
@@ -4130,6 +4187,28 @@
       "scaling",
       "resources",
       "de Shazer"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "police-115-counseling-4",
+   "title": "暴力事件的跨單位心理輔導合作",
+   "coverage": "partial",
+   "note": "涵蓋學校危機回應團隊與外部機關協調、分流（triage）、短期輔導、轉介社區服務與長期追蹤，以及直接、間接受害者（含第三層受害者）的需求；沒有家庭暴力加害人、被害人與家屬三方不同需求，也沒有警政、職場員工協助方案的分工與家庭暴力防治法的流程",
+   "sources": [
+    {
+     "doc": "schonfeld03",
+     "ref": "Schonfeld, D. J., & Newgass, S. (2003). School crisis response initiative (OVC Bulletin, NCJ 197832). Washington, DC: Office for Victims of Crime.",
+     "url": "https://ovc.ojp.gov/sites/ovc/files/media/document/ncj197832.pdf",
+     "kind": "official",
+     "matchedTerms": [
+      "school-based crisis response team",
+      "triage",
+      "short-term counseling",
+      "referral to community services",
+      "tertiary victims",
+      "outside agencies"
      ]
     }
    ]
@@ -4653,7 +4732,6 @@
   "薦任升等（矯正）-112-心理測驗-1",
   "薦任升等（矯正）-110-犯罪學-3",
   "薦任升等（矯正）-110-諮商與輔導-3",
-  "薦任升等（矯正）-110-諮商與輔導-4",
   "薦任升等（矯正）-112-諮商與輔導-4",
   "police-114-psychology-3",
   "police-115-psychology-3",
@@ -4667,12 +4745,10 @@
   "police-108-counseling-4",
   "police-110-counseling-1",
   "police-110-counseling-3",
-  "police-113-counseling-1",
   "police-113-counseling-3",
   "police-113-counseling-4",
   "police-115-counseling-2",
   "police-115-counseling-3",
-  "police-115-counseling-4",
   "113-家事調查官-心理測驗員-心理學-3",
   "監所管理員-109-犯罪學概要-3",
   "監所管理員-111-犯罪學概要-1",

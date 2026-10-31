@@ -328,7 +328,7 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 3. 法規題以全國法規資料庫 2026-10-16 版的條文核對（法務部網站本身連不上），連結指向全國法規資料庫的條文頁。
 4. 只涵蓋部分得分點的標為「部分」，並寫出缺少的內容。
 
-**結果**：218 題中有 177 題找到公開原文（完整涵蓋 37 題、部分涵蓋 140 題），其餘 41 題沒有找到（列在本節最後）。共用到 121 份文件：原作者或原始研究 30 份、政府或國際組織文件 12 份、二手整理 68 份、法規條文 11 筆。
+**結果**：218 題中有 180 題找到公開原文（完整涵蓋 37 題、部分涵蓋 143 題），其餘 38 題沒有找到（列在本節最後）。共用到 124 份文件：原作者或原始研究 30 份、政府或國際組織文件 15 份、二手整理 68 份、法規條文 11 筆。
 
 使用注意：
 - 「原作者或原始研究」是題目引用的學者本人的文件（例如 Felson & Clarke、Bonta & Andrews、Hanson、Farrell & Pease、Moffitt、Bucklen），可直接當出處。
@@ -381,11 +381,14 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | 政府或國際組織文件 | Bureau of Justice Assistance. (1998). Addressing community gang problems: A practical guide (NCJ 164273). Washington, DC: Office of Justice Programs, U.S. Department of Justice. | [連結](https://www.ojp.gov/pdffiles/164273.pdf) |
 | 政府或國際組織文件 | Center for Restorative Justice & Peacemaking. (2000). Family group conferencing: Implications for crime victims. Washington, DC: Office for Victims of Crime. | [連結](https://www.ojp.gov/ovc_archives/reports/restorative_justice/restorative_justice_ascii_pdf/ncj176347.pdf) |
 | 政府或國際組織文件 | De La Rosa, M., Lambert, E. Y., & Gropper, B. (Eds.). (1990). Drugs and violence: Causes, correlates, and consequences (NIDA Research Monograph 103). | [連結](https://www.ojp.gov/pdffiles1/Digitization/128781-128794NCJRS.pdf) |
+| 政府或國際組織文件 | International Association of Chiefs of Police. (n.d.). Building an offender reentry program: A guide for law enforcement (BJA grant 2005-MU-MU-K012). Washington, DC: Bureau of Justice Assistance. | [連結](https://bja.ojp.gov/sites/g/files/xyckuh186/files/Publications/Reentry_LE.pdf) |
 | 政府或國際組織文件 | National Institute of Justice. (2003). Toward a drugs and crime research agenda for the 21st century (Special Report, NCJ 194616). | [連結](https://www.ojp.gov/pdffiles1/nij/194616.pdf) |
 | 政府或國際組織文件 | National Institute of Justice. (2013). Violence theory workshop summary (NCJ 242216). | [連結](https://www.ojp.gov/pdffiles1/nij/242216.pdf) |
 | 政府或國際組織文件 | National Institute of Justice. (2016). Five things about deterrence（整理自 Nagin, 2013, Deterrence in the twenty-first century）. | [連結](https://www.ojp.gov/pdffiles1/nij/247350.pdf) |
+| 政府或國際組織文件 | Office for Victims of Crime. (n.d.). From pain to power: Crime victims take action, Benefits of community involvement. Washington, DC: U.S. Department of Justice. | [連結](https://ovc.ojp.gov/sites/ovc/files/pubs/OVC_Archives/reports/fptp/bci.htm) |
 | 政府或國際組織文件 | Office of Juvenile Justice and Delinquency Prevention. (2005, July). The mathematics of risk classification: Changing data into valid instruments for juvenile courts (NCJ 209158). | [連結](https://www.ojp.gov/pdffiles1/ojjdp/209158.pdf) |
 | 政府或國際組織文件 | Pesce, E. J., Kohn, I. R., & Kaplan, H. M. (1978). Crime prevention through environmental design: Final report on Phases II and III. Washington, DC: Law Enforcement Assistance Administration. | [連結](https://www.ojp.gov/pdffiles1/Digitization/50379NCJRS.pdf) |
+| 政府或國際組織文件 | Schonfeld, D. J., & Newgass, S. (2003). School crisis response initiative (OVC Bulletin, NCJ 197832). Washington, DC: Office for Victims of Crime. | [連結](https://ovc.ojp.gov/sites/ovc/files/media/document/ncj197832.pdf) |
 | 政府或國際組織文件 | Substance Abuse and Mental Health Services Administration. (2005). Substance abuse treatment: Group therapy (Treatment Improvement Protocol [TIP] Series 41; DHHS Publication No. [SMA] 05-3991). Rockville, MD: Author. | [連結](https://files.eric.ed.gov/fulltext/ED491570.pdf) |
 | 政府或國際組織文件 | World Health Organization. (2014). Global status report on violence prevention 2014. Geneva: WHO. | [連結](https://iris.who.int/handle/10665/145086) |
 | 政府或國際組織文件 | World Health Organization. (2016). The health and social effects of nonmedical cannabis use. Geneva: WHO. | [連結](https://iris.who.int/handle/10665/251056) |
@@ -588,6 +591,7 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | 薦任升等（矯正）-108-諮商與輔導-3｜風險評估與靜態動態風險 | [Bonta, J., & Andrews, D. A. (2007)](https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/rsk-nd-rspnsvty/rsk-nd-rspnsvty-eng.pdf)<br>[Hanson, R. K., & Harris, A. J. R. (1998)](https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/dnmc-prdctrs-sxl/index-en.aspx) | 完整 |
 | 薦任升等（矯正）-108-諮商與輔導-4｜預警責任 | [Guina, J., Dornfeld, B., et al. (2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9540889/) | 部分：涵蓋 Tarasoff 案的保護義務與「可辨識的被害人」條件，沒有我國倫理守則的處理程序 |
 | 薦任升等（矯正）-110-諮商與輔導-1｜不合作團體成員的類型與處理 | [SAMHSA (2005)](https://files.eric.ed.gov/fulltext/ED491570.pdf) | 部分：涵蓋沉默成員（Silence）、敵意發言、不停說話等干擾行為與團體中的抗拒（Resistance in Group）；沒有依賴或救援型成員，也沒有逐類型的心理特徵與邀請、阻斷、反映等策略 |
+| 薦任升等（矯正）-110-諮商與輔導-4｜出獄前資源連結與有效溝通 | [IACP (n.d.)](https://bja.ojp.gov/sites/g/files/xyckuh186/files/Publications/Reentry_LE.pdf) | 部分：涵蓋出獄前就開始的釋放規劃（個別釋放計畫）與可連結的資源（住屋、教育、就業轉介與職訓、物質濫用治療、家庭團聚）；沒有更生保護法的資源，也沒有信任關係、真誠同理、尊重自主等有效溝通因素（Rogers、Trotter） |
 | 薦任升等（矯正）-112-諮商與輔導-1｜Bowen 家族系統理論概念 | [Family systems theory and obesity treatment: Applications for clinicians. Infant, Child, & Adolescent Nutrition (2013)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3979546/) | 完整 |
 | 薦任升等（矯正）-112-諮商與輔導-3｜自殺防治法的倫理與媒體規範 | [自殺防治法第 16 條](https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=L0020213&flno=16)<br>[World Health Organization. (2023)](https://iris.who.int/handle/10665/372691) | 部分：涵蓋媒體報導規範（自殺防治法第 16 條與 WHO 媒體指引），沒有通報、保密與倫理原則 |
 | 薦任升等（矯正）-114-諮商與輔導-1｜存在主義治療 | [Schnipke, B., et al. (2023)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10132274/) | 部分：涵蓋存在主義治療的自由、責任等核心議題，沒有個案介入 |
@@ -625,10 +629,12 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | police-112-counseling-1｜以 Super 與 Holland 輔導更生人生涯 | [Santana Batista, J., et al. (2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9819525/) | 部分：只涵蓋 Holland 的 RIASEC 六型與適配性，沒有 Super 與更生人的應用 |
 | police-112-counseling-3｜復歸社會青年的毒品防制輔導計畫 | [Larimer, M. E., et al. (1999)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6760427/) | 部分：涵蓋 Marlatt 復發預防模式（高風險情境、因應技巧、結果預期、違反禁戒效應、生活型態與渴求）；沒有減害、RNR、動機晤談的內容，也沒有家庭支持、就業資源、跨機關分工與成效評估（毒品危害防制條例） |
 | police-112-counseling-4｜同理心、同情心與慈悲心 | [Klimecki, O. M., Leiberg, S., Ricard, M., & Singer, T. (2014)](https://pmc.ncbi.nlm.nih.gov/articles/PMC4040103/) | 部分：涵蓋同理（empathic distress）與慈悲的區別，沒有同情心與 Neff 自我慈悲 |
+| police-113-counseling-1｜被害人角色與倖存者角色 | [Office for Victims of Crime (n.d.)](https://ovc.ojp.gov/sites/ovc/files/pubs/OVC_Archives/reports/fptp/bci.htm) | 部分：涵蓋被害人的無力感、孤立，以及 Herman 所說重建與他人連結是創傷復原的關鍵階段、後期超越個人怨恨而投入社會行動；沒有「被害人」與「倖存者」兩種角色的明確定義，也沒有建立安全、回顧與哀悼兩個階段 |
 | police-113-counseling-2｜協助案主克服抗拒與非自願 | [Comparison of motivational interviewing with acceptance and commitment therapy: A conceptual and clinical review. Behavioural and Cognitive Psychotherapy, 39 (2011)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3135725/) | 部分：只涵蓋動機式晤談處理抗拒，沒有角色澄清 |
 | police-114-counseling-1｜Rogers 三大核心條件與報復情緒 | [Seehausen, M., Kazzer, P., et al. (2012)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3495333/) | 部分：只有一句說明 Rogers 視同理、正向關懷與一致為必要且充分條件，沒有對話示範 |
 | police-114-counseling-4｜DBT 四大技巧與自傷危機 | [Fassbinder, E., Schweiger, U., Martius, D., Brand-de Wilde, O., & Arntz, A. (2016)](https://pmc.ncbi.nlm.nih.gov/articles/PMC5021701/)<br>[The efficacy of applying the Interpersonal Effectiveness skills of dialectical behavior therapy into communication skills workshop for clinical nurses. Heliyon, 9 (2023)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10015201/) | 部分：涵蓋 DBT 四大技巧模組與 DEAR MAN，沒有自傷危機的處理 |
 | police-115-counseling-1｜焦點解決短期諮商 | [Use of solution-focused brief therapy within adult community mental health: A scoping review. Clinical Psychology & Psychotherapy, 33 (2026)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12996440/) | 部分：涵蓋基本理念與奇蹟、量尺問句，沒有題目情境的應用 |
+| police-115-counseling-4｜暴力事件的跨單位心理輔導合作 | [Schonfeld, D. J., & Newgass, S. (2003)](https://ovc.ojp.gov/sites/ovc/files/media/document/ncj197832.pdf) | 部分：涵蓋學校危機回應團隊與外部機關協調、分流（triage）、短期輔導、轉介社區服務與長期追蹤，以及直接、間接受害者（含第三層受害者）的需求；沒有家庭暴力加害人、被害人與家屬三方不同需求，也沒有警政、職場員工協助方案的分工與家庭暴力防治法的流程 |
 | 108-心理測驗員-心理學-3｜四種依附類型 | [Models of self and others and their relation to positive and negative caregiving responses. Psychology and Aging, 27 (2012)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3192310/) | 部分：涵蓋四種依附類型與自我、他人模式，沒有「已讀不回」的應用 |
 | 113-家事調查官-心理測驗員-心理學-2｜毒癮的犯罪說與疾病說 | [毒品危害防制條例第 24 條](https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=C0000008&flno=24) | 部分：只涵蓋毒品危害防制條例第 24 條的緩起訴戒癮治療（疾病說的制度面），沒有犯罪說與疾病說的學理 |
 | 114-家事調查官-心理測驗員-心理學-1｜C-PTSD 與自體心理學 | [Complex PTSD: What is the clinical utility of the diagnosis? European Journal of Psychotraumatology, 12 (2021)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8667899/) | 部分：只涵蓋 ICD-11 C-PTSD 的自我組織障礙，沒有自體心理學 |
@@ -652,11 +658,11 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | 監所管理員-115-犯罪學概要-2｜問題行為症候群 | [Darvishi, M., et al. (2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8836126/) | 部分：涵蓋 Jessor 問題行為理論與風險、保護因子，預防策略較少 |
 | 監所管理員-115-犯罪學概要-3｜大規模殺人與連續殺人 | [Holmes, R. M., & Holmes, S. T. (1992)](https://www.ojp.gov/pdffiles1/Digitization/136809NCJRS.pdf) | 部分：涵蓋大規模殺人「同一時間與地點」的定義、與連續殺人的差異，並點出連續殺人的四種動機類型名稱（visionary、mission、hedonistic、power/control）；沒有連續殺人「冷卻期」的定義，也沒有各類型的說明，題目的「幻想型」應對應原文的 visionary 型 |
 
-### 沒有找到公開原文的題目（41 題）
+### 沒有找到公開原文的題目（38 題）
 
 這些題目在可連線的公開網站中找不到能下載全文、且內容足以對應得分點的文件，主要是：心理測驗的計算與常模（教科書內容）、諮商技術與團體歷程（Corey、Egan、Hill、Rogers 等專書）、古典學派與部分副文化理論（Beccaria、Bentham、Cloward & Ohlin、Miller、Sellin、Colvin）、臺灣倫理守則與方案，以及部分要以講義為準的題目。
 
-112-犯罪學-1、113-犯罪學-2、112-心理學-4、108-諮商與輔導-3、111-諮商與輔導-2、113-諮商與輔導-1、113-諮商與輔導-2、115-諮商與輔導-4、監獄官-109-犯罪學與再犯預測-3、監獄官-110-諮商與矯正輔導-1、監獄官-111-諮商與矯正輔導-3、監獄官-114-諮商與矯正輔導-3、監獄官-115-諮商與矯正輔導-3、薦任升等（矯正）-112-心理測驗-1、薦任升等（矯正）-110-犯罪學-3、薦任升等（矯正）-110-諮商與輔導-3、薦任升等（矯正）-110-諮商與輔導-4、薦任升等（矯正）-112-諮商與輔導-4、police-114-psychology-3、police-115-psychology-3、police-108-criminology_prevention-4、police-110-criminology_prevention-2、police-112-criminology_prevention-3、police-113-criminology_prevention-1、police-113-criminology_prevention-2、police-114-criminology_prevention-1、police-108-counseling-3、police-108-counseling-4、police-110-counseling-1、police-110-counseling-3、police-113-counseling-1、police-113-counseling-3、police-113-counseling-4、police-115-counseling-2、police-115-counseling-3、police-115-counseling-4、113-家事調查官-心理測驗員-心理學-3、監所管理員-109-犯罪學概要-3、監所管理員-111-犯罪學概要-1、監所管理員-112-犯罪學概要-1、監所管理員-113-犯罪學概要-2
+112-犯罪學-1、113-犯罪學-2、112-心理學-4、108-諮商與輔導-3、111-諮商與輔導-2、113-諮商與輔導-1、113-諮商與輔導-2、115-諮商與輔導-4、監獄官-109-犯罪學與再犯預測-3、監獄官-110-諮商與矯正輔導-1、監獄官-111-諮商與矯正輔導-3、監獄官-114-諮商與矯正輔導-3、監獄官-115-諮商與矯正輔導-3、薦任升等（矯正）-112-心理測驗-1、薦任升等（矯正）-110-犯罪學-3、薦任升等（矯正）-110-諮商與輔導-3、薦任升等（矯正）-112-諮商與輔導-4、police-114-psychology-3、police-115-psychology-3、police-108-criminology_prevention-4、police-110-criminology_prevention-2、police-112-criminology_prevention-3、police-113-criminology_prevention-1、police-113-criminology_prevention-2、police-114-criminology_prevention-1、police-108-counseling-3、police-108-counseling-4、police-110-counseling-1、police-110-counseling-3、police-113-counseling-3、police-113-counseling-4、police-115-counseling-2、police-115-counseling-3、113-家事調查官-心理測驗員-心理學-3、監所管理員-109-犯罪學概要-3、監所管理員-111-犯罪學概要-1、監所管理員-112-犯罪學概要-1、監所管理員-113-犯罪學概要-2
 
 ## 完整書目
 
