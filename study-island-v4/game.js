@@ -23,11 +23,11 @@ const TREES=[[3,4],[4,4],[5,4],[4,5],[14,5],[16,5],[17,6],[3,9],[16,10],[17,9],[
 const POND=[[15,3],[16,3],[15,4],[16,4]];
 const house=(x,y)=>x>=8&&x<=11&&y>=2&&y<=5;
 const tileKey=(x,y)=>x+","+y;
-function defaultSave(){return {id:"main",version:4,created:TODAY(),name:"小樹灣",outfit:0,coins:0,xp:0,player:{x:9,y:9},bag:{shell:0,wood:0,leaf:0,fruit:0},furniture:{bench:1,flower:0,lamp:0},placed:[],spawnDate:TODAY(),collected:[],flags:{walked:false,talked:false,crafted:false,placed:false},talkCounts:{},questClaims:[],dailyClaims:{},focus:{end:0,mins:0},focusRewards:[],legacyGarden:null};}
+function defaultSave(){return {id:"main",version:4,created:TODAY(),name:"小樹灣",outfit:0,coins:0,xp:0,player:{x:9,y:9},bag:{shell:0,wood:0,leaf:0,fruit:0},furniture:{bench:1,flower:0,lamp:0},placed:[],spawnDate:TODAY(),collected:[],flags:{walked:false,talked:false,crafted:false,placed:false,shellsGathered:0},talkCounts:{},questClaims:[],dailyClaims:{},focus:{end:0,mins:0},focusRewards:[],legacyGarden:null};}
 let db=null,state=defaultSave(),opened="",interacting=false,pending=null,placing=null,hasStorage=false;
 const player={x:9,y:9,fx:9,fy:9,fromX:9,fromY:9,toX:9,toY:9,moveStart:0,moveDuration:155,dir:"down",route:[]};
 let held="",lastKeyMove=0,lastPositionSaved=0,cam={x:0,y:0,w:16,h:12},time=0,toastTimer=0,pendingMove=false;
-const npcAnim=NPCS.map(n=>({...n,rx:n.x,ry:n.y,targetX:n.x,targetY:n.y,step:0,phase:0}));
+const npcAnim=NPCS.map(n=>({...n,homeX:n.x,homeY:n.y,rx:n.x,ry:n.y,startX:n.x,startY:n.y,endX:n.x,endY:n.y,startAt:0,endAt:0,nextMove:0}));
 function esc(value){return String(value).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));}
 function count(key){return Math.max(0,Number(state.bag[key])||0);}
 function openDatabase(){return new Promise((resolve,reject)=>{const r=indexedDB.open("probation-study-island-v4",1);r.onupgradeneeded=()=>{if(!r.result.objectStoreNames.contains("saves"))r.result.createObjectStore("saves",{keyPath:"id"});};r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error||new Error("IndexedDB error"));});}
@@ -56,7 +56,7 @@ function refreshHUD(){
 }
 function isStaticBlocked(x,y){if(x<1||x>18||y<1||y>14)return true;if(house(x,y))return true;return POND.some(t=>t[0]===x&&t[1]===y)||TREES.some(t=>t[0]===x&&t[1]===y);}
 function furnitureAt(x,y){return state.placed.find(p=>p.x===x&&p.y===y);}
-function walkable(x,y){return !isStaticBlocked(x,y)&&!furnitureAt(x,y);}
+function walkable(x,y){return !isStaticBlocked(x,y)&&!furnitureAt(x,y)&&!npcAnim.some(n=>n.x===x&&n.y===y);}
 function neighbors(x,y){return [[x+1,y],[x-1,y],[x,y+1],[x,y-1]].filter(p=>walkable(p[0],p[1]));}
 function routeTo(tx,ty,near=false){
  const start=[player.x,player.y],goalList=near?neighbors(tx,ty).filter(p=>!NPCS.some(n=>n.x===p[0]&&n.y===p[1])):[[tx,ty]];
@@ -69,7 +69,7 @@ function routeTo(tx,ty,near=false){
 }
 function setRoute(x,y,interaction){const route=routeTo(x,y,!!interaction);if(!route){notify("這條路有障礙，換個方向試試。");return;}player.route=route;pending=interaction||null;if(route.length===0&&pending){const action=pending;pending=null;perform(action);}}
 function distance(x,y){return Math.abs(player.x-x)+Math.abs(player.y-y);}
-function nearestAction(){const nearNpc=NPCS.find(n=>distance(n.x,n.y)<=1);if(nearNpc)return {kind:"npc",id:nearNpc.id,x:nearNpc.x,y:nearNpc.y};const spot=RESOURCE_SPOTS.find(r=>!state.collected.includes(r.id)&&distance(r.x,r.y)<=1);if(spot)return {kind:"resource",id:spot.id,x:spot.x,y:spot.y};const nearPlaced=state.placed.find(p=>distance(p.x,p.y)<=1);if(nearPlaced)return {kind:"furniture",id:nearPlaced.id,x:nearPlaced.x,y:nearPlaced.y};return null;}
+function nearestAction(){const nearNpc=npcAnim.find(n=>distance(n.x,n.y)<=1);if(nearNpc)return {kind:"npc",id:nearNpc.id,x:nearNpc.x,y:nearNpc.y};const spot=RESOURCE_SPOTS.find(r=>!state.collected.includes(r.id)&&distance(r.x,r.y)<=1);if(spot)return {kind:"resource",id:spot.id,x:spot.x,y:spot.y};const nearPlaced=state.placed.find(p=>distance(p.x,p.y)<=1);if(nearPlaced)return {kind:"furniture",id:nearPlaced.id,x:nearPlaced.x,y:nearPlaced.y};return null;}
 function step(dx,dy){if(player.fx!==player.x||player.fy!==player.y)return;if(!dx&&!dy)return;const nx=player.x+dx,ny=player.y+dy;if(!walkable(nx,ny))return;
  player.fromX=player.fx;player.fromY=player.fy;player.x=nx;player.y=ny;player.toX=nx;player.toY=ny;player.moveStart=performance.now();
  player.dir=dx>0?"right":dx<0?"left":dy<0?"up":"down";if(!state.flags.walked)mutate(s=>{s.flags.walked=true;return true;});pendingMove=true;
@@ -79,7 +79,7 @@ function commandAt(x,y){x=Math.floor(x);y=Math.floor(y);
  if(x<0||x>=W||y<0||y>=H)return;
  if(placing){if(!walkable(x,y)||NPCS.some(n=>n.x===x&&n.y===y)||Math.abs(player.x-x)+Math.abs(player.y-y)<1){notify("這裡不能擺放家具，換一片空地吧。");return;}
   const key=placing;mutate(s=>{if(!(s.furniture[key]>0)||s.placed.some(p=>p.x===x&&p.y===y))return false;s.furniture[key]--;s.placed.push({id:key,x,y});s.flags.placed=true;return true;}).then(ok=>{if(ok)notify("✨ "+ITEMS[key].name+"已放到小島！");});placing=null;return;}
- const npc=NPCS.find(n=>n.x===x&&n.y===y);
+ const npc=npcAnim.find(n=>n.x===x&&n.y===y);
  if(npc){setRoute(x,y,{kind:"npc",id:npc.id,x,y});return;}
  const resource=RESOURCE_SPOTS.find(r=>r.x===x&&r.y===y&&!state.collected.includes(r.id));
  if(resource){setRoute(x,y,{kind:"resource",id:resource.id,x,y});return;}
@@ -91,7 +91,7 @@ function perform(action){
  if(action.kind==="npc"){const npc=NPCS.find(n=>n.id===action.id);if(!npc)return;
   mutate(s=>{s.talkCounts[npc.id]=(s.talkCounts[npc.id]||0)+1;if(npc.id==="fox")s.flags.talked=true;return true;}).then(()=>{showSheet("dialogue",npc.id);});return;}
  if(action.kind==="resource"){const spot=RESOURCE_SPOTS.find(r=>r.id===action.id);if(!spot||state.collected.includes(spot.id))return;
-  mutate(s=>{if(s.collected.includes(spot.id))return false;s.collected.push(spot.id);s.bag[spot.type]=(s.bag[spot.type]||0)+1;return true;}).then(ok=>{if(ok)notify("✨ 撿到了 "+RES[spot.type].icon+" "+RES[spot.type].name+" ×1");});return;}
+  mutate(s=>{if(s.collected.includes(spot.id))return false;s.collected.push(spot.id);s.bag[spot.type]=(s.bag[spot.type]||0)+1;if(spot.type==="shell")s.flags.shellsGathered=(s.flags.shellsGathered||0)+1;return true;}).then(ok=>{if(ok)notify("✨ 撿到了 "+RES[spot.type].icon+" "+RES[spot.type].name+" ×1");});return;}
  if(action.kind==="furniture"){const p=state.placed.find(it=>it.x===action.x&&it.y===action.y);if(!p)return;
   mutate(s=>{const i=s.placed.findIndex(it=>it.x===p.x&&it.y===p.y);if(i<0)return false;const item=s.placed.splice(i,1)[0];s.furniture[item.id]=(s.furniture[item.id]||0)+1;return true;}).then(ok=>{if(ok)notify("已把 "+ITEMS[p.id].name+" 收回背包。");});}
 }
@@ -165,7 +165,22 @@ function drawPlayer(now){
 function drawPlaced(p){const x=p.x+.5,y=p.y+.47;ctx.fillStyle="#42795c3a";ctx.beginPath();ctx.ellipse(x,y+.3,.38,.12,0,0,6.28);ctx.fill();
  ctx.textAlign="center";ctx.textBaseline="middle";ctx.font=".79px system-ui";ctx.fillText(ITEMS[p.id]?.icon||"🪑",x,y);ctx.textBaseline="alphabetic";}
 function drawResource(r,now){const x=r.x+.5,y=r.y+.5+Math.sin(now/400+r.x)*.055;ctx.fillStyle="#ffffffa6";ctx.beginPath();ctx.ellipse(x,y+.27,.3,.095,0,0,6.3);ctx.fill();ctx.textAlign="center";ctx.textBaseline="middle";ctx.font=".74px system-ui";ctx.fillText(RES[r.type].icon,x,y);ctx.textBaseline="alphabetic";if(Math.sin(now/550+r.y)>.7){ctx.fillStyle="#fff9d3";ctx.font=".3px system-ui";ctx.fillText("✦",x+.32,y-.31);}}
-function render(now){time=now;if(!document.hidden){finishMovement(now);pickView();ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,canvas.width,canvas.height);
+function moveResidents(now){
+ for(let i=0;i<npcAnim.length;i++){
+  const n=npcAnim[i];
+  if(n.endAt>n.startAt){const t=Math.min(1,(now-n.startAt)/(n.endAt-n.startAt));n.rx=n.startX+(n.endX-n.startX)*t;n.ry=n.startY+(n.endY-n.startY)*t;}
+  if(now<n.nextMove||n.endAt>now)continue;
+  n.rx=n.x;n.ry=n.y;
+  const choices=[[1,0],[-1,0],[0,1],[0,-1]].map(([dx,dy])=>[n.x+dx,n.y+dy])
+   .filter(([x,y])=>Math.abs(x-n.homeX)<=2&&Math.abs(y-n.homeY)<=2&&!isStaticBlocked(x,y)&&!furnitureAt(x,y)&&!(x===player.x&&y===player.y)&&!npcAnim.some(o=>o!==n&&o.x===x&&o.y===y));
+  const chance=hash(i+Math.floor(now/3000),n.x+n.y);
+  n.nextMove=now+3200+Math.floor(chance*2800);
+  if(choices.length&&chance>.18){const k=Math.floor(chance*choices.length)%choices.length,[tx,ty]=choices[k];
+   n.startX=n.rx;n.startY=n.ry;n.endX=tx;n.endY=ty;n.startAt=now;n.endAt=now+780;n.x=tx;n.y=ty;
+  }
+ }
+}
+function render(now){time=now;if(!document.hidden){moveResidents(now);finishMovement(now);pickView();ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,canvas.width,canvas.height);
  const scale=canvas.width/cam.w;ctx.setTransform(scale,0,0,scale,-cam.x*scale,-cam.y*scale);
  drawTerrain();drawHouse();
  for(let i=0;i<TREES.length;i++)drawTree(TREES[i][0],TREES[i][1],i);
@@ -192,7 +207,7 @@ function renderSheet(){
  if(opened==="help"){title="島民手冊";html=$("help-template").innerHTML;}
  if(opened==="bag"){title="我的背包";kicker="POCKETS";html='<h3>🌿 採集材料</h3><div class="item-grid">'+Object.keys(RES).map(id=>'<div class="item-card"><span class="count">× '+count(id)+'</span><div class="item-icon">'+RES[id].icon+'</div><h3>'+RES[id].name+'</h3></div>').join("")+'</div><h3>🪑 家具口袋</h3><div class="item-grid">'+Object.keys(ITEMS).map(id=>'<div class="item-card"><span class="count">× '+(state.furniture[id]||0)+'</span><div class="item-icon">'+ITEMS[id].icon+'</div><h3>'+ITEMS[id].name+'</h3><p>可以擺放到可走的草地上。</p><button class="panel-button" data-action="place" data-id="'+id+'" '+(!(state.furniture[id]>0)?"disabled":"")+'>擺放到小島</button></div>').join("")+'</div>';}
  if(opened==="workshop"){title="森林小工坊";kicker="DIY RECIPES";html='<p class="muted">帶回海邊和森林撿到的材料，在這裡做一件小家具吧！</p><div class="item-grid">'+Object.keys(ITEMS).map(id=>{const item=ITEMS[id];return '<div class="item-card"><div class="item-icon">'+item.icon+'</div><h3>'+item.name+'</h3><p>'+Object.entries(item.needs).map(([r,n])=>RES[r].icon+RES[r].name+' ×'+n).join('　')+'</p><button class="panel-button" data-action="craft" data-id="'+id+'" '+(!Object.entries(item.needs).every(([r,n])=>count(r)>=n)?"disabled":"")+'>🔨 製作</button></div>';}).join("")+'</div>';}
- if(opened==="quests"){title="小島委託簿";kicker="DAILY ADVENTURES";const quests=[{id:"talk",label:"和栗子打招呼",description:"走近橘色小狐狸並和她說話",done:!!state.flags.talked},{id:"shells",label:"海岸探索",description:"帶回至少 2 個貝殼",done:count("shell")>=2||state.questClaims.includes("shells")},{id:"craft",label:"第一次手作",description:"在工坊製作至少一件家具",done:!!state.flags.crafted}];
+ if(opened==="quests"){title="小島委託簿";kicker="DAILY ADVENTURES";const quests=[{id:"talk",label:"和栗子打招呼",description:"走近橘色小狐狸並和她說話",done:!!state.flags.talked},{id:"shells",label:"海岸探索",description:"撿到至少 2 個貝殼",done:(state.flags.shellsGathered||0)>=2||state.questClaims.includes("shells")},{id:"craft",label:"第一次手作",description:"在工坊製作至少一件家具",done:!!state.flags.crafted}];
  html=quests.map(q=>'<div class="quest '+(q.done?"done":"")+'"><strong>✿ '+q.label+'</strong><p>'+q.description+'</p><span class="reward-chip">🎁 🐚金幣 +15、木材 +1</span><div class="button-row"><button class="panel-button" data-action="quest" data-id="'+q.id+'" '+(!q.done||state.questClaims.includes(q.id)?"disabled":"")+'>'+(state.questClaims.includes(q.id)?"已領取 ✓":q.done?"領取獎勵":"尚未完成")+'</button></div></div>').join("");}
  if(opened==="study"){title="讀書也能幫小島";kicker="STUDY QUESTS";const today=TODAY();const claimed=state.dailyClaims[today]||{};
  const activities=[{id:"read",name:"閱讀一段法條或學科",reward:"🍃 葉子 +2",item:"leaf",amount:2},{id:"practice",name:"完成一題申論練習",reward:"🪵 木材 +2",item:"wood",amount:2},{id:"review",name:"訂正或主動回憶一次",reward:"🍎 果實 +2",item:"fruit",amount:2}];
@@ -214,7 +229,7 @@ $("sheet-content").addEventListener("click",async event=>{
  if(action==="close"){hideSheet();return;}
  if(action==="place"){if(!(state.furniture[id]>0))return;placing=id;hideSheet();notify("選好位置，點擊島上的空草地放置 "+ITEMS[id].name);return;}
  if(action==="craft"){const item=ITEMS[id];if(!item)return;const ok=await mutate(s=>{if(!Object.entries(item.needs).every(([r,n])=>(s.bag[r]||0)>=n))return false;for(const [r,n] of Object.entries(item.needs))s.bag[r]-=n;s.furniture[id]=(s.furniture[id]||0)+1;s.flags.crafted=true;return true;});if(ok)notify("🔨 製作完成！"+item.name+" 已放入背包。");return;}
- if(action==="quest"){const ready=id==="talk"?state.flags.talked:id==="shells"?(count("shell")>=2||state.questClaims.includes(id)):state.flags.crafted;if(!ready)return;const ok=await mutate(s=>{if(s.questClaims.includes(id))return false;s.questClaims.push(id);s.coins+=15;s.bag.wood+=1;return true;});if(ok)notify("🎁 完成委託！獲得 15 金幣與 1 木材");return;}
+ if(action==="quest"){const ready=id==="talk"?state.flags.talked:id==="shells"?((state.flags.shellsGathered||0)>=2||state.questClaims.includes(id)):state.flags.crafted;if(!ready)return;const ok=await mutate(s=>{if(s.questClaims.includes(id))return false;s.questClaims.push(id);s.coins+=15;s.bag.wood+=1;return true;});if(ok)notify("🎁 完成委託！獲得 15 金幣與 1 木材");return;}
  if(action==="learn"){const rewards={read:["leaf",2],practice:["wood",2],review:["fruit",2]};if(!rewards[id])return;const ok=await mutate(s=>{const day=TODAY(),today=s.dailyClaims[day]||{};if(today[id])return false;today[id]=true;s.dailyClaims[day]=today;s.bag[rewards[id][0]]+=rewards[id][1];s.xp+=10;return true;});if(ok)notify("📚 學習紀錄已自行確認，獎勵入袋！");return;}
  if(action==="focus"){const mins=Number(id);if(![5,25].includes(mins))return;const ok=await mutate(s=>{if(s.focus.end)return false;s.focus={end:Date.now()+mins*60000,mins};return true;});if(ok)notify("🍵 "+mins+" 分鐘專注開始！");return;}
  if(action==="cancel-focus"){await mutate(s=>{s.focus={end:0,mins:0};return true;});notify("已取消專注，沒有發放獎勵。");return;}
