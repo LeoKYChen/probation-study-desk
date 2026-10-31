@@ -138,7 +138,7 @@ assert.ok(browserScript.includes("const TIMER_KEY='probation-daily-30min:session
 assert.ok(browserScript.includes('essayDrafts:readDrafts()'),'daily modal persists four drafts');
 assert.ok(browserScript.includes('aiFeedback:$(\'aiFeedback\').value'),'daily modal persists AI comments');
 assert.ok(browserScript.includes('text/markdown;charset=utf-8'),'daily modal exports UTF-8 markdown');
-assert.ok(browserScript.includes('const ENABLE_NEWS_READING=false;'),'news reading must stay disabled');
+assert.ok(browserScript.includes('const ENABLE_NEWS_READING=true;'),'news reading must remain available alongside daily practice');
 assert.ok(read('sw.js').includes("'daily-simulation/practice.css'"),'online users must receive refreshed in-place workspace CSS');
 const inlineStart=browserScript.indexOf('function simulationQuestion(q){');
 const inlineEnd=browserScript.indexOf('async function copyAI(){',inlineStart);
