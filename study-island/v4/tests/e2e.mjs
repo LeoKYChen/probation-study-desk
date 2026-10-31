@@ -1,11 +1,13 @@
 // 觀護學習島 v4 Demo A 瀏覽器驗收（Playwright + Chromium 模擬手機與桌面）。
-// 用法：在儲存庫根目錄執行 `python3 -m http.server 8790`，再執行
+// 用法（可加 ISLAND_BROWSER=webkit）：在儲存庫根目錄執行 `python3 -m http.server 8790`，再執行
 //   node study-island/v4/tests/e2e.mjs [http://localhost:8790/study-island/v4/] [截圖資料夾]
 // 這是模擬器測試，不能取代 iPhone Safari／Android Chrome 實機驗收。
 import { createRequire } from 'node:module';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-const { chromium, devices } = createRequire(import.meta.url)('playwright');
+const { chromium, webkit, devices } = createRequire(import.meta.url)('playwright');
+// ISLAND_BROWSER=webkit 時改用 WebKit（與 iOS Safari 同引擎，但仍不等於實機）。
+const engine = process.env.ISLAND_BROWSER === 'webkit' ? webkit : chromium;
 
 const URL = process.argv[2] || 'http://localhost:8790/study-island/v4/';
 const SHOTS = process.argv[3] || '';
@@ -51,7 +53,7 @@ async function waitIdle(page, timeout = 15000) {
 }
 async function npcTile(page) { return page.evaluate(() => ({ x: __island.npcs[0].x, y: __island.npcs[0].y })); }
 
-const browser = await chromium.launch();
+const browser = await engine.launch();
 const errors = [];
 
 // ── 手機（iPhone 尺寸、觸控）──
