@@ -607,6 +607,16 @@
    "ref": "Moore, S. D., & Slife, B. D. (1987). The self-awareness process in the effective psychotherapist. Paper presented at the 33rd Annual Convention of the Southwestern Psychological Association, New Orleans (ERIC ED286098).",
    "url": "https://files.eric.ed.gov/fulltext/ED286098.pdf",
    "kind": "review"
+  },
+  "bja98": {
+   "ref": "Bureau of Justice Assistance. (1998). Addressing community gang problems: A practical guide (NCJ 164273). Washington, DC: Office of Justice Programs, U.S. Department of Justice.",
+   "url": "https://www.ojp.gov/pdffiles/164273.pdf",
+   "kind": "official"
+  },
+  "openstaxstat": {
+   "ref": "Illowsky, B., & Dean, S. (2023). Introductory statistics 2e, 12.3 The regression equation. Houston, TX: OpenStax, Rice University.",
+   "url": "https://openstax.org/books/introductory-statistics-2e/pages/12-3-the-regression-equation",
+   "kind": "review"
   }
  },
  "questions": [
@@ -2640,6 +2650,27 @@
    ]
   },
   {
+   "id": "薦任升等（矯正）-112-心理測驗-2",
+   "title": "以迴歸預測 GPA",
+   "coverage": "partial",
+   "note": "教科書：涵蓋最佳配適線通過兩變數的平均點、斜率可寫成 b = r(s_y/s_x)、預測值與殘差；沒有以 GPA 為例的數值計算（甲 3.4、乙 2.8），預測誤差只以殘差帶過，沒有標準估計誤的公式",
+   "sources": [
+    {
+     "doc": "openstaxstat",
+     "ref": "Illowsky, B., & Dean, S. (2023). Introductory statistics 2e, 12.3 The regression equation. Houston, TX: OpenStax, Rice University.",
+     "url": "https://openstax.org/books/introductory-statistics-2e/pages/12-3-the-regression-equation",
+     "kind": "review",
+     "matchedTerms": [
+      "b = r ( s y s x )",
+      "standard deviation of the y values",
+      "correlation coefficient",
+      "passes through the point",
+      "predicted"
+     ]
+    }
+   ]
+  },
+  {
    "id": "薦任升等（矯正）-112-心理測驗-3",
    "title": "選擇適當的常模團體",
    "coverage": "partial",
@@ -3460,6 +3491,28 @@
    ]
   },
   {
+   "id": "police-111-criminology_prevention-3",
+   "title": "差別機會理論與三種副文化",
+   "coverage": "full",
+   "note": "",
+   "sources": [
+    {
+     "doc": "bja98",
+     "ref": "Bureau of Justice Assistance. (1998). Addressing community gang problems: A practical guide (NCJ 164273). Washington, DC: Office of Justice Programs, U.S. Department of Justice.",
+     "url": "https://www.ojp.gov/pdffiles/164273.pdf",
+     "kind": "official",
+     "matchedTerms": [
+      "differential opportunity",
+      "legitimate means of success are unavailable",
+      "criminal gangs are likely to exist in stable low-income areas",
+      "conflict gangs develop in communities with dilapidated conditions and transient populations",
+      "double failures",
+      "heavy drug use"
+     ]
+    }
+   ]
+  },
+  {
    "id": "police-111-criminology_prevention-4",
    "title": "酒駕的犯罪學分析與嚇阻",
    "coverage": "partial",
@@ -4198,6 +4251,25 @@
    ]
   },
   {
+   "id": "監所管理員-110-犯罪學概要-2",
+   "title": "Cloward 與 Ohlin 的機會理論",
+   "coverage": "partial",
+   "note": "涵蓋 Cloward 與 Ohlin 的差別機會（合法與非法機會都不足）以及犯罪、衝突、退縮三種幫派／副文化；沒有題目所列「機會擴充方案」的政策討論（該列引用 Siegel (2018)）",
+   "sources": [
+    {
+     "doc": "bja98",
+     "ref": "Bureau of Justice Assistance. (1998). Addressing community gang problems: A practical guide (NCJ 164273). Washington, DC: Office of Justice Programs, U.S. Department of Justice.",
+     "url": "https://www.ojp.gov/pdffiles/164273.pdf",
+     "kind": "official",
+     "matchedTerms": [
+      "differential opportunity",
+      "criminal, conflict, or retreatist",
+      "double failures"
+     ]
+    }
+   ]
+  },
+  {
    "id": "監所管理員-110-犯罪學概要-3",
    "title": "Loeber 的三種犯罪路徑",
    "coverage": "full",
@@ -4501,7 +4573,6 @@
   "監獄官-114-諮商與矯正輔導-3",
   "監獄官-115-諮商與矯正輔導-3",
   "薦任升等（矯正）-112-心理測驗-1",
-  "薦任升等（矯正）-112-心理測驗-2",
   "薦任升等（矯正）-110-犯罪學-3",
   "薦任升等（矯正）-110-諮商與輔導-3",
   "薦任升等（矯正）-110-諮商與輔導-4",
@@ -4510,7 +4581,6 @@
   "police-115-psychology-3",
   "police-108-criminology_prevention-4",
   "police-110-criminology_prevention-2",
-  "police-111-criminology_prevention-3",
   "police-112-criminology_prevention-3",
   "police-113-criminology_prevention-1",
   "police-113-criminology_prevention-2",
@@ -4528,7 +4598,6 @@
   "police-115-counseling-4",
   "113-家事調查官-心理測驗員-心理學-3",
   "監所管理員-109-犯罪學概要-3",
-  "監所管理員-110-犯罪學概要-2",
   "監所管理員-111-犯罪學概要-1",
   "監所管理員-112-犯罪學概要-1",
   "監所管理員-113-犯罪學概要-2"
