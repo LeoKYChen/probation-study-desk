@@ -28,7 +28,8 @@ const ISLAND = {
   },
   terrain: {
     water: '海', sand: '沙灘', grass: '草地', forest: '樹林', path: '小路', plaza: '廣場',
-    flower: '花叢', house: '小屋', tree: '樹', rock: '岩石'
+    flower: '花叢', house: '小屋', tree: '樹', rock: '岩石',
+    barrel: '木桶', mailbox: '信箱', lamp: '路燈', sign: '告示牌', crops: '南瓜田'
   },
   study: { essay: '完成一題申論', correction: '完成一次訂正', recall: '完成一次主動回憶' },
   quests: {
@@ -81,7 +82,8 @@ const XIANXIA = {
   },
   terrain: {
     water: '雲海', sand: '靈泉灘', grass: '草坡', forest: '靈竹林', path: '山徑', plaza: '演武坪',
-    flower: '花叢', house: '洞府', tree: '靈竹', rock: '山石'
+    flower: '花叢', house: '洞府', tree: '靈竹', rock: '山石',
+    barrel: '丹爐', mailbox: '石碑', lamp: '石燈', sign: '木匾', crops: '藥圃'
   },
   study: { essay: '參悟：完成一題申論', correction: '修心：完成一次訂正', recall: '溫故：完成一次主動回憶' },
   quests: {

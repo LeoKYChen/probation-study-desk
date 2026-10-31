@@ -36,7 +36,7 @@ const npcs = NPCS.map(n => mover({ ...n }, n.home.x, n.home.y, 'down'));
 const effects = [];
 const held = [];
 const pending = new Set();
-let marker = null, lastBump = 0, saveTimer = 0, talking = null, approaching = null, placing = null;
+let marker = null, lastBump = -Infinity, saveTimer = 0, talking = null, approaching = null, placing = null;
 const matOf = id => mat(id);
 const fname = id => furn(id).name;
 const nname = n => npcName(n.id);
@@ -95,7 +95,7 @@ function walkTo(path, onArrive, target = null) {
 
 // ── 點擊地圖：走路、找居民、撿貝殼或提示障礙 ──
 // 居民圖像比一格高（頭在上一格），以實際畫出的範圍判斷是否點到居民。
-const npcHit = (fx, fy) => npcs.find(n => fx >= n.rx - .1 && fx <= n.rx + 1.1 && fy >= n.ry - .6 && fy <= n.ry + 1) || null;
+const npcHit = (fx, fy) => npcs.find(n => fx >= n.rx - .15 && fx <= n.rx + 1.15 && fy >= n.ry - .8 && fy <= n.ry + 1) || null;
 
 function onTap(tx, ty, fx = tx + .5, fy = ty + .5) {
   if (ui.dialogueOpen || ui.panel) return;
@@ -545,7 +545,8 @@ function frame(now) {
   if (document.hidden) return;
   const active = player.moving || player.path.length || held.length || npcs.some(n => n.moving) || effects.length || marker;
   if (active) frameReq = requestAnimationFrame(frame);
-  else if (!still) idleTimer = setTimeout(() => { idleTimer = 0; frameReq = requestAnimationFrame(frame); }, 120);
+  // 閒置時約 20 FPS，讓樹擺、波光與飄落物順暢；減少動態效果時完全停止。
+  else if (!still) idleTimer = setTimeout(() => { idleTimer = 0; frameReq = requestAnimationFrame(frame); }, 50);
 }
 
 function poke() {

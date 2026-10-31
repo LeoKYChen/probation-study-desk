@@ -31,7 +31,7 @@ test('房屋、樹、海不可走；超出邊界不可走', () => {
 });
 
 test('A* 繞過房屋，每一步都相鄰且可走', () => {
-  const start = { x: 4, y: 3 }, goal = { x: 8, y: 3 };
+  const start = { x: 4, y: 3 }, goal = { x: 9, y: 3 };
   const p = findPath(start, goal, walk, MAP_W, MAP_H);
   assert.ok(p && p.length > 4, '必須繞路');
   let prev = start;

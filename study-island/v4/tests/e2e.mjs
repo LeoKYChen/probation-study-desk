@@ -633,9 +633,14 @@ await dp.goto(URL); await dp.waitForFunction(() => globalThis.__island);
 if (SHOTS) await dp.screenshot({ path: SHOTS + '/5-desktop.png' });
 await step('桌面：WASD 移動、撞牆停下、E 與栗子對話、Esc 關閉', async () => {
   await dp.focus('#game');
+  // 出生點左邊是路燈：按 A 會被擋住並提示；按 D 往右走。
   await dp.keyboard.down('KeyA'); await sleep(260); await dp.keyboard.up('KeyA');
+  const s0 = await waitIdle(dp);
+  assert.deepEqual([s0.p.x, s0.p.y], [8, 10], '撞到路燈停下');
+  assert.match(await dp.textContent('#toast'), /路燈/);
+  await dp.keyboard.down('KeyD'); await sleep(260); await dp.keyboard.up('KeyD');
   const s1 = await waitIdle(dp);
-  assert.ok(s1.p.x < 8, 'moved left');
+  assert.ok(s1.p.x > 8, 'moved right');
   const n = await npcTile(dp);
   const pt = await dp.evaluate(([x, y]) => { const r = document.getElementById('game').getBoundingClientRect(); const s = __island.renderer.tileToScreen(x, y, { rx: __island.player.x, ry: __island.player.y }); return { x: r.left + s.x, y: r.top + s.y }; }, [n.x, n.y]);
   await dp.mouse.click(pt.x, pt.y);

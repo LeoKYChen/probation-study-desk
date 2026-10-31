@@ -1,12 +1,14 @@
 // Canvas 繪製：靜態地表預先畫在離屏 canvas，人物與物件每幀依 y 排序繪製。全部是原創向量圖形。
 import { MAP_W, MAP_H, tileAt, tilesOf, hash2, HOUSE } from './world/map.js';
 import { theme } from './theme.js';
-import { drawBamboo, drawStone, drawCaveHouse, drawXSpot, drawXFurniture, drawRobed, playerLook, drawCloud } from './render-xianxia.js';
+import { drawProp, drawShimmer, createParticles, particleKind, lightSources, drawLights } from './render-ambient.js';
+import { drawBamboo, drawStone, drawCaveHouse, drawXSpot, drawXFurniture, drawRobed, playerLook, drawCloud, look, eyeDot } from './render-xianxia.js';
 
 // 配色依外觀主題（theme.js）。
 const pal = () => theme().palette;
-const LAND = new Set(['sand', 'grass', 'forest', 'path', 'plaza', 'flower', 'house', 'tree', 'rock']);
-const GREEN = new Set(['grass', 'forest', 'path', 'plaza', 'flower', 'house', 'tree', 'rock']);
+const LAND = new Set(['sand', 'grass', 'forest', 'path', 'plaza', 'flower', 'house', 'tree', 'rock', 'barrel', 'mailbox', 'lamp', 'sign', 'crops']);
+const PROPS = new Set(['barrel', 'mailbox', 'lamp', 'sign', 'crops']);
+const GREEN = new Set(['grass', 'forest', 'path', 'plaza', 'flower', 'house', 'tree', 'rock', ...PROPS]);
 const WOODS = new Set(['forest', 'tree']);
 const PAVED = new Set(['path', 'plaza']);
 
@@ -298,7 +300,7 @@ function eyes(g, n, ts, y, gap, nose) {
   if (n.facing === 'up') return;
   const ox = n.facing === 'left' ? -ts * .05 : n.facing === 'right' ? ts * .05 : 0;
   g.fillStyle = '#3a2a22';
-  g.beginPath(); g.arc(ox - gap, y, ts * .026, 0, Math.PI * 2); g.arc(ox + gap, y, ts * .026, 0, Math.PI * 2); g.fill();
+  eyeDot(g, ox - gap, y, ts * .03); eyeDot(g, ox + gap, y, ts * .03);
   if (nose) { g.beginPath(); g.arc(ox, y + ts * .07, ts * .022, 0, Math.PI * 2); g.fill(); }
 }
 
@@ -366,7 +368,7 @@ const SPECIES = {
       const ox = n.facing === 'left' ? -ts * .05 : n.facing === 'right' ? ts * .05 : 0;
       for (const s of [-1, 1]) {
         g.fillStyle = '#fffaf0'; g.beginPath(); g.arc(ox + s * ts * .09, -ts * .55, ts * .08, 0, Math.PI * 2); g.fill();
-        g.fillStyle = '#2e2a3a'; g.beginPath(); g.arc(ox + s * ts * .09, -ts * .55, ts * .04, 0, Math.PI * 2); g.fill();
+        g.fillStyle = '#2e2a3a'; eyeDot(g, ox + s * ts * .09, -ts * .55, ts * .04);
       }
       g.fillStyle = c.scarf; g.beginPath(); g.moveTo(ox - ts * .04, -ts * .47); g.lineTo(ox + ts * .04, -ts * .47); g.lineTo(ox, -ts * .4); g.closePath(); g.fill();
     }
@@ -382,12 +384,13 @@ function drawNpc(g, n, ts, t, still) {
   const cx = (n.rx + .5) * ts, by = (n.ry + .88) * ts;
   const bob = still || !n.moving ? 0 : Math.abs(Math.sin(t / 110)) * ts * .04;
   shadow(g, cx, by, ts * .34);
-  const sp = outlined('npc|' + n.id + '|' + n.facing, ts, spriteDpr, c =>
+  look.blink = blinking(t, n.home.x * 31 + n.home.y * 7, still);
+  const sp = outlined('npc|' + n.id + '|' + n.facing + '|' + look.blink, ts, spriteDpr, c =>
     (theme().id === 'xianxia' ? drawRobed(c, n.robe, n.facing, ts) : SPECIES[n.species](c, n, ts)));
   g.drawImage(sp.cv, cx - sp.ox, by - bob - sp.oy, sp.W, sp.H);
   g.save(); g.translate(cx, by - bob);
   if (n.quest) {
-    const qy = -ts * 1.18 - (still ? 0 : Math.sin(t / 250) * ts * .04);
+    const qy = -ts * 1.36 - (still ? 0 : Math.sin(t / 250) * ts * .04);
     g.fillStyle = '#fffaf0'; g.strokeStyle = '#e0a43a'; g.lineWidth = Math.max(1.5, ts * .04);
     g.beginPath(); g.arc(0, qy, ts * .14, 0, Math.PI * 2); g.fill(); g.stroke();
     g.fillStyle = '#c47f12'; g.font = '800 ' + Math.round(ts * .2) + 'px system-ui,sans-serif'; g.textAlign = 'center'; g.textBaseline = 'middle';
@@ -431,11 +434,13 @@ function playerBody(g, facing, ts, step, outfit) {
     const ox = facing === 'left' ? -ts * .06 : facing === 'right' ? ts * .06 : 0;
     g.fillStyle = '#3a2a22';
     if (facing === 'down') {
-      g.beginPath(); g.arc(-ts * .08, -ts * .55, ts * .028, 0, Math.PI * 2); g.arc(ts * .08, -ts * .55, ts * .028, 0, Math.PI * 2); g.fill();
+      eyeDot(g, -ts * .08, -ts * .55, ts * .032); eyeDot(g, ts * .08, -ts * .55, ts * .032);
+      g.strokeStyle = '#a5594d'; g.lineWidth = ts * .016; g.lineCap = 'round';
+      g.beginPath(); g.arc(0, -ts * .49, ts * .035, .2, Math.PI - .2); g.stroke();
       g.fillStyle = 'rgba(240,140,130,.5)';
       g.beginPath(); g.arc(-ts * .13, -ts * .49, ts * .035, 0, Math.PI * 2); g.arc(ts * .13, -ts * .49, ts * .035, 0, Math.PI * 2); g.fill();
     } else {
-      g.beginPath(); g.arc(ox + (facing === 'left' ? -ts * .04 : ts * .04), -ts * .55, ts * .028, 0, Math.PI * 2); g.fill();
+      eyeDot(g, ox + (facing === 'left' ? -ts * .04 : ts * .04), -ts * .55, ts * .032);
     }
   }
 }
@@ -448,10 +453,11 @@ function outlined(key, ts, dpr, drawFn) {
   const full = theme().id + '|' + key;
   let sp = sprites.get(full);
   if (sp) return sp;
-  const W = ts * 1.4, H = ts * 1.5, ox = W / 2, oy = H - ts * .12;
+  // 角色放大 15%，讓表情與服裝細節更清楚。
+  const W = ts * 1.65, H = ts * 1.8, ox = W / 2, oy = H - ts * .14;
   const make = () => { const c = document.createElement('canvas'); c.width = Math.ceil(W * dpr); c.height = Math.ceil(H * dpr); return c; };
   const base = make(), bg = base.getContext('2d');
-  bg.scale(dpr, dpr); bg.translate(ox, oy); drawFn(bg);
+  bg.scale(dpr, dpr); bg.translate(ox, oy); bg.scale(1.15, 1.15); drawFn(bg);
   const out = make(), og = out.getContext('2d');
   const d = Math.max(1, ts * .03) * dpr;
   for (let k = 0; k < 8; k++) og.drawImage(base, Math.round(Math.cos(k * Math.PI / 4) * d), Math.round(Math.sin(k * Math.PI / 4) * d));
@@ -464,13 +470,16 @@ function outlined(key, ts, dpr, drawFn) {
   return sp;
 }
 let spriteDpr = 1;
+// 每個角色約 4 秒眨一次眼，錯開時間；減少動態效果時不眨。
+const blinking = (t, seed, still) => !still && ((t + seed * 997) % 4100) < 140;
 
 function drawPlayer(g, p, ts, t, still, outfit) {
   const cx = (p.rx + .5) * ts, by = (p.ry + .9) * ts;
   const step = still || !p.moving ? 0 : Math.sin(t / 90);
   const q = Math.round(step);
   shadow(g, cx, by, ts * .3);
-  const sp = outlined('player|' + outfit.id + '|' + p.facing + '|' + q, ts, spriteDpr, c =>
+  look.blink = blinking(t, 0, still);
+  const sp = outlined('player|' + outfit.id + '|' + p.facing + '|' + q + '|' + look.blink, ts, spriteDpr, c =>
     (theme().id === 'xianxia' ? drawRobed(c, playerLook(outfit), p.facing, ts, q) : playerBody(c, p.facing, ts, q, outfit)));
   g.drawImage(sp.cv, cx - sp.ox, by - Math.abs(step) * ts * .035 - sp.oy, sp.W, sp.H);
 }
@@ -479,6 +488,18 @@ export function createRenderer(canvas) {
   const g = canvas.getContext('2d');
   let ts = 48, dpr = 1, vw = 0, vh = 0, terrain = null, terrainTheme = null;
   const trees = tilesOf('tree'), rocks = tilesOf('rock');
+  const props = [...PROPS].flatMap(id => tilesOf(id).map(p => ({ ...p, id })));
+  const lamps = tilesOf('lamp');
+  const particles = createParticles();
+
+  // 樹與竹子隨風輕擺：以樹根為軸做小幅傾斜。
+  function swaying(x, y, t, still, fn) {
+    if (still) return fn();
+    const k = Math.sin(t / 1100 + x * 1.7 + y * .9) * .035;
+    const bx = (x + .5) * ts, by = (y + .9) * ts;
+    g.save(); g.translate(bx, by); g.transform(1, 0, -k, 1, 0, 0); g.translate(-bx, -by);
+    fn(); g.restore();
+  }
 
   function resize(w, h) {
     dpr = Math.min(globalThis.devicePixelRatio || 1, 2);
@@ -511,6 +532,8 @@ export function createRenderer(canvas) {
     g.fillStyle = pal().waterDeep; g.fillRect(0, 0, vw, vh);
     g.translate(-cam.x, -cam.y);
     g.drawImage(terrain, 0, 0, MAP_W * ts, MAP_H * ts);
+    const xian = theme().id === 'xianxia';
+    if (!s.still) drawShimmer(g, ts, s.time, { x: cam.x, y: cam.y, w: vw, h: vh }, xian);
     if (s.marker) {
       const m = s.marker, mx = (m.x + .5) * ts, my = (m.y + .5) * ts;
       g.globalAlpha = Math.max(0, m.life);
@@ -529,8 +552,8 @@ export function createRenderer(canvas) {
       for (const h of s.placeHints) { g.beginPath(); g.arc((h.x + .5) * ts, (h.y + .5) * ts, ts * .09, 0, Math.PI * 2); g.fill(); }
     }
     const items = [];
-    const xian = theme().id === 'xianxia';
-    for (const t of trees) items.push({ y: t.y + .9, fn: () => (xian ? drawBamboo : drawTree)(g, t.x, t.y, ts) });
+    for (const t of trees) items.push({ y: t.y + .9, fn: () => swaying(t.x, t.y, s.time, s.still, () => (xian ? drawBamboo : drawTree)(g, t.x, t.y, ts)) });
+    for (const p of props) items.push({ y: p.y + .88, fn: () => drawProp(g, p.id, p.x, p.y, ts, s.time, s.still, xian) });
     for (const r of rocks) items.push({ y: r.y + .8, fn: () => (xian ? drawStone : drawRock)(g, r.x, r.y, ts) });
     items.push({ y: HOUSE.y + HOUSE.h, fn: () => (xian ? drawCaveHouse : drawHouse)(g, ts) });
     for (const sp of s.spots) items.push({ y: sp.y + .5, fn: () => drawSpot(g, sp, ts, s.time, s.still) });
@@ -547,18 +570,26 @@ export function createRenderer(canvas) {
       g.strokeText(fx.text, (fx.x + .5) * ts, fy); g.fillText(fx.text, (fx.x + .5) * ts, fy);
       g.globalAlpha = 1;
     }
-    atmosphere();
+    atmosphere(cam, s);
   }
 
   // 依裝置時間的淡淡色調（清晨、傍晚、夜晚）與畫面四角的柔和暗角；只是氛圍，不影響可讀性。
   let vignette = null, vignetteSize = '';
-  function atmosphere() {
+  function atmosphere(cam, s) {
     g.setTransform(dpr, 0, 0, dpr, 0, 0);
     const h = new Date().getHours(), xian = theme().id === 'xianxia';
+    const night = h >= 19 || h < 5, dusk = h >= 17 && h < 19;
     const tint = h >= 5 && h < 7 ? 'rgba(255,190,170,.08)'
-      : h >= 17 && h < 19 ? 'rgba(255,170,90,.1)'
-        : h >= 19 || h < 5 ? (xian ? 'rgba(40,50,110,.18)' : 'rgba(30,45,100,.18)') : null;
+      : dusk ? 'rgba(255,170,90,.1)'
+        : night ? (xian ? 'rgba(40,50,110,.2)' : 'rgba(30,45,100,.2)') : null;
     if (tint) { g.fillStyle = tint; g.fillRect(0, 0, vw, vh); }
+    // 傍晚與夜晚點燈：路燈、石燈、長明燈與屋子的窗光。
+    if (night || dusk) {
+      g.setTransform(dpr, 0, 0, dpr, -cam.x * dpr, -cam.y * dpr);
+      drawLights(g, ts, lightSources(s.placed, lamps, xian), night ? 1 : .55);
+      g.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    if (!s.still) particles.draw(g, vw, vh, s.time, particleKind(xian), ts);
     const key = vw + 'x' + vh;
     if (vignetteSize !== key) {
       vignette = g.createRadialGradient(vw / 2, vh / 2, Math.min(vw, vh) * .45, vw / 2, vh / 2, Math.hypot(vw, vh) * .6);

@@ -154,15 +154,29 @@ export function drawXFurniture(g, f, ts) {
   }
 }
 
+// 眨眼狀態由繪製端在畫角色前設定（快取鍵也包含它）。
+export const look = { blink: false };
+
+// 眼睛：睜眼是圓點（帶一點高光），眨眼時是一條短線。
+export function eyeDot(g, x, y, r) {
+  if (look.blink) { g.fillRect(x - r * 1.3, y - r * .25, r * 2.6, r * .5); return; }
+  const prev = g.fillStyle;
+  g.beginPath(); g.arc(x, y, r, 0, Math.PI * 2); g.fill();
+  g.fillStyle = 'rgba(255,255,255,.85)'; g.beginPath(); g.arc(x - r * .35, y - r * .35, r * .35, 0, Math.PI * 2); g.fill();
+  g.fillStyle = prev;
+}
+
 function face(g, facing, ts, y) {
   if (facing === 'up') return;
   g.fillStyle = '#3a2a22';
   if (facing === 'down') {
-    g.beginPath(); g.arc(-ts * .075, y, ts * .026, 0, Math.PI * 2); g.arc(ts * .075, y, ts * .026, 0, Math.PI * 2); g.fill();
+    eyeDot(g, -ts * .075, y, ts * .03); eyeDot(g, ts * .075, y, ts * .03);
+    g.strokeStyle = '#a5594d'; g.lineWidth = ts * .015; g.lineCap = 'round';
+    g.beginPath(); g.arc(0, y + ts * .055, ts * .03, .2, Math.PI - .2); g.stroke();
     g.fillStyle = 'rgba(240,140,130,.45)';
     g.beginPath(); g.arc(-ts * .12, y + ts * .06, ts * .03, 0, Math.PI * 2); g.arc(ts * .12, y + ts * .06, ts * .03, 0, Math.PI * 2); g.fill();
   } else {
-    g.beginPath(); g.arc(facing === 'left' ? -ts * .09 : ts * .09, y, ts * .026, 0, Math.PI * 2); g.fill();
+    eyeDot(g, facing === 'left' ? -ts * .09 : ts * .09, y, ts * .03);
   }
 }
 

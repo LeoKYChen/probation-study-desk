@@ -3,19 +3,19 @@ export const MAP_W = 20;
 export const MAP_H = 16;
 
 // ~ 海  s 沙灘  g 草地  f 樹林地面  p 小路  z 廣場  F 花（可走）
-// H 小屋  T 樹  R 岩石（不可走）
+// H 小屋  T 樹  R 岩石  B 木桶  M 信箱  L 路燈  S 告示牌  C 南瓜田（不可走）
 const ROWS = [
   '~~~~~~~~~~~~~~~~~~~~',
   '~~ggggggggggTgTTT~~~',
   '~ggggHHHgggggfTfTT~~',
-  '~gFggHHHggggfffTff~~',
-  '~gggggpggggTffTfff~~',
+  '~CFggHHHBgggfffTff~~',
+  '~CggggpMgggTffTfff~~',
   '~ggFgppppppfffffTf~~',
   '~ggggpzzzzpffTffff~~',
   '~ggggpzzzzpfffTfff~~',
-  '~gRggpzzzzpgffffTf~~',
+  '~gRgSpzzzzpgffffTf~~',
   '~ggggppppppgggfffg~~',
-  '~sggggpgggggggggggs~',
+  '~sgggLpLggggggggggs~',
   '~ssgggpggFgggggggss~',
   '~sssggpgggggggggsss~',
   '~~ssssssssssssssss~~',
@@ -33,7 +33,12 @@ export const TERRAIN = {
   F: { id: 'flower', walkable: true, label: '花叢' },
   H: { id: 'house', walkable: false, label: '小屋' },
   T: { id: 'tree', walkable: false, label: '樹' },
-  R: { id: 'rock', walkable: false, label: '岩石' }
+  R: { id: 'rock', walkable: false, label: '岩石' },
+  B: { id: 'barrel', walkable: false, label: '木桶' },
+  M: { id: 'mailbox', walkable: false, label: '信箱' },
+  L: { id: 'lamp', walkable: false, label: '路燈' },
+  S: { id: 'sign', walkable: false, label: '告示牌' },
+  C: { id: 'crops', walkable: false, label: '南瓜田' }
 };
 
 export const HOUSE = { x: 5, y: 2, w: 3, h: 2, door: { x: 6, y: 4 } };
