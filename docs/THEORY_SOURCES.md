@@ -17,12 +17,12 @@
 
 | 狀態 | 筆數 | 意思 |
 |---|---|---|
-| 書目已確認 | 384 | 原引用正確，已補完整書目 |
-| 原引用不完整，已補建議書目 | 35 | 原引用缺年份、版次或只有姓氏（例如「Andrews & Bonta」「Freud」「Comer, Abnormal Psychology」），已依內容補上建議書目，請對照講義使用的版本 |
+| 書目已確認 | 388 | 原引用正確，已補完整書目 |
+| 原引用不完整，已補建議書目 | 31 | 原引用缺年份、版次或只有姓氏（例如「Andrews & Bonta」「Freud」「Comer, Abnormal Psychology」），已依內容補上建議書目，請對照講義使用的版本 |
 | 原引用可能有誤，請核對 | 14 | 作者、年份或篇名與內容不完全相符，詳見下表與說明 |
 | 法規或官方文件 | 57 | 法規條次已核對現行法；官方文件已補名稱與年份 |
 
-經 Crossref 查證後，Christopher et al. (2016)、Gottfredson (1987)、Park & Burgess (1925) 三筆確認原引用可以成立，由「請核對」改為「書目已確認」（原為 381／17 筆）。
+經 Crossref 查證後，Christopher et al. (2016)、Gottfredson (1987)、Park & Burgess (1925) 三筆確認原引用可以成立，由「請核對」改為「書目已確認」（原為 381／17 筆）。2026-10-31 再以 Crossref 確認 Bonta & Andrews（Routledge 第 6 版）、de Vries Robbé et al.、Taxman et al.、UNODC 四筆的 DOI，由「原引用不完整」改為「書目已確認」（原為 384／35 筆）；其中後三筆 `data.js` 的寫法仍缺年份或文件名，建議補上。
 
 ## 優先處理：出處可能有誤的項目
 
@@ -634,7 +634,7 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | WHO (2014) | World Health Organization. (2014). Preventing suicide: A global imperative. Geneva: WHO.／World Health Organization. (2014). Global status report on violence prevention 2014. Geneva: WHO. | WHO 2014 年有兩份文件：自殺題（police-110-counseling-4）應引《Preventing suicide》，殺人防治題（police-114-criminology_prevention-2）應引《Global status report on violence prevention》，建議分別標示。 | police-114-criminology_prevention-2、police-110-counseling-4 |
 | Wolpe (1958) | Wolpe, J. (1958). Psychotherapy by reciprocal inhibition. Stanford, CA: Stanford University Press. | 系統減敏感法出自此書；洪水法並非 Wolpe 提出，可引 Stampfl & Levis (1967) 的內爆治療或 Marks (1972)。 | police-109-counseling-1、police-109-counseling-4 |
 
-### 原引用不完整，已補建議書目（35 筆）
+### 原引用不完整，已補建議書目（31 筆）
 
 | 原引用 | 建議完整書目 | 說明 | 使用題目 |
 |---|---|---|---|
@@ -642,12 +642,10 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | APA 測驗標準 | American Educational Research Association, American Psychological Association, & National Council on Measurement in Education. (2014). Standards for educational and psychological testing. Washington, DC: AERA. | 原引用為簡稱；與「AERA, APA, & NCME (2014)」為同一份文件，建議統一寫法。 | 108-心理學-4 |
 | Beccaria | Beccaria, C. (1764). Dei delitti e delle pene. Livorno.（英譯 On Crimes and Punishments） | 原引用未標年份，建議統一為 Beccaria (1764)。 | 111-犯罪學-1 |
 | Berg | De Jong, P., & Berg, I. K. (2013). Interviewing for solutions (4th ed.). Belmont, CA: Brooks/Cole. | 原引用只有姓氏；Insoo Kim Berg 常見引用另有 Berg & Miller (1992) Working with the problem drinker。 | 114-諮商與輔導-1 |
-| Bonta & Andrews, The Psychology of Criminal Conduct（Routledge） | Bonta, J., & Andrews, D. A. (2017). The psychology of criminal conduct (6th ed.). New York: Routledge. | 原引用未標版次；Routledge 出版的是第 6 版 (2017) 與第 7 版 (2024)。 | 115-犯罪學-2 |
 | CASEL | Collaborative for Academic, Social, and Emotional Learning. (2020). CASEL’s SEL framework: What are the core competence areas and where are they promoted? Chicago: CASEL. | 原引用未標年份；五大能力架構可引用 CASEL (2020) 官方架構說明。 | 薦任升等（矯正）-112-諮商與輔導-2 |
 | Comer, Abnormal Psychology | Comer, R. J., & Comer, J. S. (2021). Abnormal psychology (11th ed.). New York: Worth. | 原引用未標年份與版次；請依講義使用的版本補上（例如第 9 版 2015、第 10 版 2018、第 11 版 2021）。 | 110-心理學-1 |
 | Corey et al. | Corey, G., Corey, M. S., Corey, C., & Callanan, P. (2015). Issues and ethics in the helping professions (9th ed.). Stamford, CT: Cengage Learning. | 原引用未標書名與年份；依內容（反移情、督導、自我照顧）推定為此書，請以講義核對。 | 111-諮商與輔導-4、監獄官-115-諮商與矯正輔導-1 |
 | Corey, Corey & Callanan | Corey, G., Corey, M. S., Corey, C., & Callanan, P. (2015). Issues and ethics in the helping professions (9th ed.). Stamford, CT: Cengage Learning. | 原引用未標年份；第 9 版起作者為四人，第 10 版 (2019) 作者為 Corey, Corey, & Corey。 | 111-諮商與輔導-4 |
-| de Vries Robbé et al. | de Vries Robbé, M., de Vogel, V., & de Spa, E. (2011). Protective factors for violence risk in forensic psychiatric patients: A retrospective validation study of the SAPROF. International Journal of Forensic Mental Health, 10(3), 178–186. | 原引用未標年份；SAPROF 工具手冊為 de Vogel, de Ruiter, Bouman, & de Vries Robbé (2009/2012)。 | 115-犯罪學-3 |
 | Dreikurs | Dreikurs, R. (1967). Psychodynamics, psychotherapy, and counseling: Collected papers. Chicago: Alfred Adler Institute. | 原引用未標年份；阿德勒治療四階段常引此書，錯誤目標則引 Dreikurs & Soltz (1964)。 | 113-諮商與輔導-4、監獄官-114-諮商與矯正輔導-1、police-108-counseling-2 |
 | Ferri | Ferri, E. (1884). Sociologia criminale. Torino: Bocca.（英譯 Criminal Sociology, 1917） | 原引用未標年份。 | 監所管理員-108-犯罪學概要-2 |
 | Freud | Freud, S. (1923). Das Ich und das Es. Wien: Internationaler Psychoanalytischer Verlag.（英譯 The Ego and the Id） | 原引用未標年份；依內容選擇：人格結構引 Freud (1923)、焦慮引 Freud (1926)、夢的解析引 Freud (1900)、潛抑與遺忘引 Freud (1915) Repression 或 (1901) 日常生活的心理病理學。 | 109-諮商與輔導-3、110-諮商與輔導-1、監獄官-111-諮商與矯正輔導-1、監獄官-113-諮商與矯正輔導-1、監獄官-115-諮商與矯正輔導-1、police-110-psychology-1、police-115-psychology-3、108-心理測驗員-心理學-1、監所管理員-109-犯罪學概要-2 |
@@ -661,8 +659,6 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | Pranis | Pranis, K., Stuart, B., & Wedge, M. (2003). Peacemaking circles: From crime to community. St. Paul, MN: Living Justice Press. | 原引用只有姓氏。 | 監獄官-115-犯罪學與再犯預測-4 |
 | Rossi | Rossi, P. (1829). Traité de droit pénal. Genève / Paris. | 原引用只有姓氏；新古典學派代表人物的列法請以講義核對。 | police-110-criminology_prevention-2 |
 | Siegel, Criminology | Siegel, L. J. (2018). Criminology: Theories, patterns, and typologies (13th ed.). Boston: Cengage Learning. | 原引用未標年份與版次；建議與其他題目統一為 Siegel (2018)。 | 108-犯罪學-4 |
-| Taxman et al. | Taxman, F. S., Pattavina, A., Caudy, M. S., Byrne, J., & Durso, J. (2013). The empirical basis for the RNR model with an updated RNR conceptual framework. In F. S. Taxman & A. Pattavina (Eds.), Simulation strategies to reduce recidivism (pp. 73–111). New York: Springer. | 原引用未標年份；RNR 模擬工具的出處請以講義核對。 | 監獄官-111-犯罪學與再犯預測-3 |
-| UNODC | United Nations Office on Drugs and Crime. (2023). Global study on homicide 2023. Vienna: UNODC. | 原引用未標文件名稱與年份；官方統計可引 UNODC 犯罪趨勢調查 (UN-CTS) 或全球殺人研究報告，請依講義所指補上。 | police-111-criminology_prevention-1 |
 | 台灣輔導與諮商學會倫理守則 | 台灣輔導與諮商學會（2023）。輔導與諮商專業倫理守則。 | 同上，建議統一寫法並以現行版本核對條次。 | 113-諮商與輔導-2 |
 | 新世代反毒策略 | 行政院（2017）。新世代反毒策略行動綱領；行政院（2021）。新世代反毒策略行動綱領（第二期，110–113 年）。 | 原引用未標期別；作答時請標明引用第一期或第二期（或後續期別）。 | 監獄官-113-犯罪學與再犯預測-4 |
 | 法務部修復式司法方案 | 法務部（2010 起）。修復式司法試行方案；法務部（2018）。推動修復式司法方案實施計畫。 | 原引用未標方案名稱與年份，請以講義核對。 | 監獄官-115-犯罪學與再犯預測-4 |
@@ -736,7 +732,7 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 | 自殺防治法 | 112-諮商與輔導-3 媒體報導規範為第 16 條（已核對）；通報為第 11 條。 | 薦任升等（矯正）-112-諮商與輔導-3、police-110-counseling-4 |
 | 自殺防治法第 11 條 | 已核對現行法：自殺防治通報系統，通報人身分應保密。 | police-110-counseling-4 |
 
-### 書目已確認（384 筆）
+### 書目已確認（388 筆）
 
 - **Abramson, Seligman & Teasdale (1978)**：Abramson, L. Y., Seligman, M. E. P., & Teasdale, J. D. (1978). Learned helplessness in humans: Critique and reformulation. Journal of Abnormal Psychology, 87(1), 49–74.　*補充：「無望感」導致憂鬱的說法屬後續的無望理論：Abramson, Metalsky, & Alloy (1989), Psychological Review, 96(2), 358–372。*
 - **Adler (1927)**：Adler, A. (1927). Menschenkenntnis. Leipzig: Hirzel.（英譯 Understanding Human Nature, 1927）
@@ -788,6 +784,7 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 - **Block (1977)**：Block, R. (1977). Violent crime: Environment, interaction, and death. Lexington, MA: Lexington Books.
 - **Bonta & Andrews (2007)**：Bonta, J., & Andrews, D. A. (2007). Risk-need-responsivity model for offender assessment and rehabilitation (User Report 2007-06). Ottawa: Public Safety Canada.
 - **Bonta & Andrews (2007), Risk-Need-Responsivity Model for Offender Assessment and Rehabilitation, Public Safety Canada User Report 2007-06**：Bonta, J., & Andrews, D. A. (2007). Risk-need-responsivity model for offender assessment and rehabilitation (User Report 2007-06). Ottawa: Public Safety Canada.
+- **Bonta & Andrews, The Psychology of Criminal Conduct（Routledge）**：Bonta, J., & Andrews, D. A. (2017). The psychology of criminal conduct (6th ed.). New York: Routledge.　*補充：2026-10-31 以 Crossref 再查，Routledge 第 6 版，DOI 10.4324/9781315677187（Bonta, Andrews；線上 2016、版權年 2017），書目已確認。*
 - **Bordin (1979)**：Bordin, E. S. (1979). The generalizability of the psychoanalytic concept of the working alliance. Psychotherapy: Theory, Research & Practice, 16(3), 252–260.
 - **Borum (2011)**：Borum, R. (2011). Radicalization into violent extremism I: A review of social science theories. Journal of Strategic Security, 4(4), 7–36.
 - **Bowen (1978)**：Bowen, M. (1978). Family therapy in clinical practice. New York: Jason Aronson.
@@ -834,6 +831,7 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 - **Dalton et al. (2007)**：Dalton, J. H., Elias, M. J., & Wandersman, A. (2007). Community psychology: Linking individuals and communities (2nd ed.). Belmont, CA: Thomson Wadsworth.
 - **de Shazer (1985)**：de Shazer, S. (1985). Keys to solution in brief therapy. New York: W. W. Norton.
 - **de Shazer (1988)**：de Shazer, S. (1988). Clues: Investigating solutions in brief therapy. New York: W. W. Norton.
+- **de Vries Robbé et al.**：de Vries Robbé, M., de Vogel, V., & de Spa, E. (2011). Protective factors for violence risk in forensic psychiatric patients: A retrospective validation study of the SAPROF. International Journal of Forensic Mental Health, 10(3), 178–186.　*補充：2026-10-31 以 Crossref 再查，DOI 10.1080/14999013.2011.600232（de Vries Robbé, de Vogel, de Spa, 2011, IJFMH 10(3), 178–186），書目已確認。data.js 的寫法缺年份，建議改為 de Vries Robbé et al. (2011)；SAPROF 工具手冊為 de Vogel et al. (2009/2012)。*
 - **Deci & Ryan (1985)**：Deci, E. L., & Ryan, R. M. (1985). Intrinsic motivation and self-determination in human behavior. New York: Plenum.
 - **Deci et al. (1999)**：Deci, E. L., Koestner, R., & Ryan, R. M. (1999). A meta-analytic review of experiments examining the effects of extrinsic rewards on intrinsic motivation. Psychological Bulletin, 125(6), 627–668.　*補充：此統合分析主要結論是有形酬賞會削弱內在動機；用於「連勝與排行短期提升參與」時，宜說明其限制。*
 - **DeVellis (2017)**：DeVellis, R. F. (2017). Scale development: Theory and applications (4th ed.). Thousand Oaks, CA: Sage.
@@ -1073,6 +1071,7 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 - **Sutherland (1947)**：Sutherland, E. H. (1947). Principles of criminology (4th ed.). Philadelphia: Lippincott.
 - **Sykes & Matza (1957)**：Sykes, G. M., & Matza, D. (1957). Techniques of neutralization: A theory of delinquency. American Sociological Review, 22(6), 664–670.
 - **Tarasoff v. Regents (1976)**：Tarasoff v. Regents of the University of California, 17 Cal. 3d 425, 551 P.2d 334 (Cal. 1976).
+- **Taxman et al.**：Taxman, F. S., Pattavina, A., Caudy, M. S., Byrne, J., & Durso, J. (2013). The empirical basis for the RNR model with an updated RNR conceptual framework. In F. S. Taxman & A. Pattavina (Eds.), Simulation strategies to reduce recidivism (pp. 73–111). New York: Springer.　*補充：2026-10-31 以 Crossref 再查，DOI 10.1007/978-1-4614-6188-3_4（Taxman, Pattavina, Caudy, Byrne, Durso, 2013, pp. 73–111），書目已確認。data.js 的寫法缺年份，建議改為 Taxman et al. (2013)。*
 - **Thornberry et al. (1993)**：Thornberry, T. P., Krohn, M. D., Lizotte, A. J., & Chard-Wierschem, D. (1993). The role of juvenile gangs in facilitating delinquent behavior. Journal of Research in Crime and Delinquency, 30(1), 55–87.
 - **Thrasher (1927)**：Thrasher, F. M. (1927). The gang: A study of 1,313 gangs in Chicago. Chicago: University of Chicago Press.
 - **Tittle (1995)**：Tittle, C. R. (1995). Control balance: Toward a general theory of deviance. Boulder, CO: Westview.
@@ -1081,6 +1080,7 @@ OpenStax 沒有涵蓋的 218 題，另找可以公開取得全文的原文或官
 - **Tulving (1974)**：Tulving, E. (1974). Cue-dependent forgetting. American Scientist, 62(1), 74–82.　*補充：編碼特定原則另見 Tulving & Thomson (1973)；舌尖現象見 Brown & McNeill (1966)。*
 - **Tversky & Kahneman (1973)**：Tversky, A., & Kahneman, D. (1973). Availability: A heuristic for judging frequency and probability. Cognitive Psychology, 5(2), 207–232.
 - **Uchtenhagen (2011)**：Uchtenhagen, A. (2011). Heroin maintenance treatment: From idea to research to practice. Drug and Alcohol Review, 30(2), 130–137.
+- **UNODC**：United Nations Office on Drugs and Crime. (2023). Global study on homicide 2023. Vienna: UNODC.　*補充：2026-10-31 以 Crossref 再查，DOI 10.18356/9789213587386（Global Study on Homicide 2023，United Nations／UNODC, 2023），書目已確認。data.js 的寫法缺文件名與年份，建議改為 UNODC (2023)。*
 - **Vaillant (1977)**：Vaillant, G. E. (1977). Adaptation to life. Boston: Little, Brown.
 - **van Dijk et al. (2007)**：van Dijk, J., van Kesteren, J., & Smit, P. (2007). Criminal victimisation in international perspective: Key findings from the 2004–2005 ICVS and EU ICS. The Hague: WODC.
 - **Vandenberg & Lance (2000)**：Vandenberg, R. J., & Lance, C. E. (2000). A review and synthesis of the measurement invariance literature: Suggestions, practices, and recommendations for organizational research. Organizational Research Methods, 3(1), 4–70.
