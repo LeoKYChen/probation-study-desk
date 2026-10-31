@@ -1,6 +1,6 @@
 {
  "說明": "docs/theory-openstax.json 中 OpenStax 未涵蓋的學科題，另找可公開取得全文的原文出處。每個來源都實際下載全文（PDF 轉文字或網頁）比對過，matchedTerms 為在該文件全文中確認出現的關鍵詞；法規條文以全國法規資料庫 2026-10-16 版核對。只作為開發者補充出處用，網站不讀取本檔。",
- "checkedOn": "2026-10-30",
+ "checkedOn": "2026-10-31",
  "scope": "OpenStax 未涵蓋的 218 題",
  "kindLabels": {
   "original": "原作者或原始研究",
@@ -547,6 +547,36 @@
    "ref": "Wild, S., et al. (2023). The relevance of basic psychological needs and subject interest as explanatory variables for student dropout in higher education. European Journal of Psychology of Education.",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9810519/",
    "kind": "review"
+  },
+  "holmes92": {
+   "ref": "Holmes, R. M., & Holmes, S. T. (1992). Understanding mass murder: A starting point. Federal Probation, 56(1), 53–61.",
+   "url": "https://www.ojp.gov/pdffiles1/Digitization/136809NCJRS.pdf",
+   "kind": "original"
+  },
+  "steiner08": {
+   "ref": "Steiner, B. (2008). Maintaining prison order: Understanding causes of inmate misconduct within and across Ohio correctional institutions (NIJ award 2007-IJ-CX-0010, NCJ 226458).",
+   "url": "https://www.ojp.gov/pdffiles1/nij/grants/226458.pdf",
+   "kind": "review"
+  },
+  "marlowe12": {
+   "ref": "Marlowe, D. B., Festinger, D. S., Dugosh, K. L., Benasutti, K. M., Fox, G., & Croft, J. R. (2012). Adaptive programming improves outcomes in drug court: An experimental trial. Criminal Justice and Behavior, 39(4), 514–532.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3424518/",
+   "kind": "original"
+  },
+  "lutz22": {
+   "ref": "Lutz, M., Zani, D., Fritz, M., Dudeck, M., & Franke, I. (2022). A review and comparative analysis of the risk-needs-responsivity, good lives, and recovery models in forensic psychiatric treatment. Frontiers in Psychiatry, 13, 988905.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9659584/",
+   "kind": "review"
+  },
+  "tighe10": {
+   "ref": "Tighe, J., McManus, I. C., Dewhurst, N. G., Chis, L., & Mucklow, J. (2010). The standard error of measurement is a more appropriate measure of quality for postgraduate medical assessments than is reliability: An analysis of MRCP(UK) examinations. BMC Medical Education, 10, 40.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2893515/",
+   "kind": "review"
+  },
+  "schmukle25": {
+   "ref": "Schmukle, S. C. (2025). Unbiased confidence intervals for psychological testing: The regression-based true score approach with scale correction. Assessment, 33(5), 817–825.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13230652/",
+   "kind": "review"
   }
  },
  "questions": [
@@ -1047,6 +1077,27 @@
    ]
   },
   {
+   "id": "108-諮商與輔導-1",
+   "title": "優勢中心取向的意義、目標與矯正體系應用原則",
+   "coverage": "partial",
+   "note": "二手整理：涵蓋優勢取向（好生活模式）相對於缺陷取向（RNR）的重點、與風險管理並行，以及以合法方式滿足基本人類善；沒有 Saleebey (1992) 對「優勢」的定義（能力、資源、興趣、韌性、支持網絡）與一般矯正應用原則的逐項說明",
+   "sources": [
+    {
+     "doc": "lutz22",
+     "ref": "Lutz, M., Zani, D., Fritz, M., Dudeck, M., & Franke, I. (2022). A review and comparative analysis of the risk-needs-responsivity, good lives, and recovery models in forensic psychiatric treatment. Frontiers in Psychiatry, 13, 988905.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9659584/",
+     "kind": "review",
+     "matchedTerms": [
+      "strengths-based",
+      "good lives",
+      "primary goods",
+      "criminogenic needs",
+      "personal agency"
+     ]
+    }
+   ]
+  },
+  {
    "id": "108-諮商與輔導-2",
    "title": "Yalom 團體療效因子（至少五項）",
    "coverage": "full",
@@ -1439,6 +1490,27 @@
    ]
   },
   {
+   "id": "監獄官-109-犯罪學與再犯預測-4",
+   "title": "RANT 毒品犯風險與需求分流工具",
+   "coverage": "partial",
+   "note": "涵蓋 RANT 作為毒品法庭評估工具、高低風險分流與低風險者過度介入的疑慮；沒有四象限（風險×需求）的說明，也沒有緩起訴附命戒癮與社區處遇的應用",
+   "sources": [
+    {
+     "doc": "marlowe12",
+     "ref": "Marlowe, D. B., Festinger, D. S., Dugosh, K. L., Benasutti, K. M., Fox, G., & Croft, J. R. (2012). Adaptive programming improves outcomes in drug court: An experimental trial. Criminal Justice and Behavior, 39(4), 514–532.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3424518/",
+     "kind": "original",
+     "matchedTerms": [
+      "risk & needs triage",
+      "antisocial personality disorder",
+      "high-risk",
+      "low-risk",
+      "drug court"
+     ]
+    }
+   ]
+  },
+  {
    "id": "監獄官-110-犯罪學與再犯預測-1",
    "title": "Sampson 與 Laub 持續與中止犯罪的生命史研究",
    "coverage": "partial",
@@ -1789,6 +1861,27 @@
    ]
   },
   {
+   "id": "監獄官-114-犯罪學與再犯預測-4",
+   "title": "藥物濫用者再犯風險評估的面向與社區應用",
+   "coverage": "partial",
+   "note": "涵蓋毒品犯再犯風險因子（青少年期開始、前次戒治失敗、前科、反社會人格）與 RANT 的使用；沒有使用頻率、同儕、家庭支持、就業等指標，也沒有緩起訴附命戒癮或保護管束驗尿分級",
+   "sources": [
+    {
+     "doc": "marlowe12",
+     "ref": "Marlowe, D. B., Festinger, D. S., Dugosh, K. L., Benasutti, K. M., Fox, G., & Croft, J. R. (2012). Adaptive programming improves outcomes in drug court: An experimental trial. Criminal Justice and Behavior, 39(4), 514–532.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3424518/",
+     "kind": "original",
+     "matchedTerms": [
+      "risk & needs triage",
+      "adolescent onset",
+      "previously unsuccessful",
+      "prior felony convictions",
+      "antisocial personality disorder"
+     ]
+    }
+   ]
+  },
+  {
    "id": "監獄官-115-犯罪學與再犯預測-1",
    "title": "犯罪中止的關鍵因子與聚焦中止的處遇活動",
    "coverage": "full",
@@ -2058,6 +2151,27 @@
    ]
   },
   {
+   "id": "監獄官-112-諮商與矯正輔導-1",
+   "title": "優勢中心諮商與傳統諮商的差異及矯正應用",
+   "coverage": "partial",
+   "note": "二手整理：涵蓋好生活模式相對於缺陷取向（RNR）的優勢與目標導向、與風險降低整合；沒有 Saleebey 優勢觀點的諮商歷程（關係、優勢評估、設定目標、行動、追蹤），優勢中心與傳統諮商的差異只能由好生活模式間接對照",
+   "sources": [
+    {
+     "doc": "lutz22",
+     "ref": "Lutz, M., Zani, D., Fritz, M., Dudeck, M., & Franke, I. (2022). A review and comparative analysis of the risk-needs-responsivity, good lives, and recovery models in forensic psychiatric treatment. Frontiers in Psychiatry, 13, 988905.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9659584/",
+     "kind": "review",
+     "matchedTerms": [
+      "strengths-based",
+      "good lives",
+      "primary goods",
+      "criminogenic needs",
+      "personal agency"
+     ]
+    }
+   ]
+  },
+  {
    "id": "監獄官-112-諮商與矯正輔導-2",
    "title": "Trotter 非自願個案有效實務原則",
    "coverage": "full",
@@ -2266,6 +2380,38 @@
       "factor analysis",
       "reliability",
       "construct"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-112-心理測驗-4",
+   "title": "測量標準誤與信賴區間",
+   "coverage": "partial",
+   "note": "兩篇都是二手說明：測量標準誤依標準差與信度計算（SEM 公式在原文為圖片，文字只描述其組成）、95% 信賴區間為觀察分數 ± 1.96×SEM；沒有題目的數值計算（SEM = 15×√(1−.96) = 3），也沒有兩人分數差異與差異標準誤的討論",
+   "sources": [
+    {
+     "doc": "tighe10",
+     "ref": "Tighe, J., McManus, I. C., Dewhurst, N. G., Chis, L., & Mucklow, J. (2010). The standard error of measurement is a more appropriate measure of quality for postgraduate medical assessments than is reliability: An analysis of MRCP(UK) examinations. BMC Medical Education, 10, 40.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2893515/",
+     "kind": "review",
+     "matchedTerms": [
+      "standard error of measurement",
+      "reliability",
+      "standard deviation",
+      "cronbach's alpha"
+     ]
+    },
+    {
+     "doc": "schmukle25",
+     "ref": "Schmukle, S. C. (2025). Unbiased confidence intervals for psychological testing: The regression-based true score approach with scale correction. Assessment, 33(5), 817–825.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13230652/",
+     "kind": "review",
+     "matchedTerms": [
+      "standard error of measurement",
+      "confidence interval",
+      "1.96",
+      "observed score"
      ]
     }
    ]
@@ -2528,6 +2674,28 @@
       "Zehr",
       "traditional",
       "accountab"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "薦任升等（矯正）-114-犯罪學-4",
+   "title": "德州控制模式與密西根責任模式",
+   "coverage": "partial",
+   "note": "二手整理：說明 DiIulio (1987) 的控制、責任、共識三種管理模式，並提到控制模式（德州）秩序最佳；沒有說明密西根對應責任模式，也沒有逐項對照嚴格程度與自治空間，原始 DiIulio (1987) 未取得",
+   "sources": [
+    {
+     "doc": "steiner08",
+     "ref": "Steiner, B. (2008). Maintaining prison order: Understanding causes of inmate misconduct within and across Ohio correctional institutions (NIJ award 2007-IJ-CX-0010, NCJ 226458).",
+     "url": "https://www.ojp.gov/pdffiles1/nij/grants/226458.pdf",
+     "kind": "review",
+     "matchedTerms": [
+      "control model",
+      "responsibility model",
+      "consensual model",
+      "texas",
+      "michigan",
+      "diiulio"
      ]
     }
    ]
@@ -3914,6 +4082,29 @@
      ]
     }
    ]
+  },
+  {
+   "id": "監所管理員-115-犯罪學概要-3",
+   "title": "大規模殺人與連續殺人",
+   "coverage": "partial",
+   "note": "涵蓋大規模殺人「同一時間與地點」的定義、與連續殺人的差異，並點出連續殺人的四種動機類型名稱（visionary、mission、hedonistic、power/control）；沒有連續殺人「冷卻期」的定義，也沒有各類型的說明，題目的「幻想型」應對應原文的 visionary 型",
+   "sources": [
+    {
+     "doc": "holmes92",
+     "ref": "Holmes, R. M., & Holmes, S. T. (1992). Understanding mass murder: A starting point. Federal Probation, 56(1), 53–61.",
+     "url": "https://www.ojp.gov/pdffiles1/Digitization/136809NCJRS.pdf",
+     "kind": "original",
+     "matchedTerms": [
+      "mass murder",
+      "serial murder",
+      "spree murder",
+      "at one time and in one place",
+      "hedonistic",
+      "power/control",
+      "mission"
+     ]
+    }
+   ]
   }
  ],
  "uncovered": [
@@ -3921,7 +4112,6 @@
   "113-犯罪學-2",
   "108-心理學-4",
   "112-心理學-4",
-  "108-諮商與輔導-1",
   "108-諮商與輔導-3",
   "111-諮商與輔導-2",
   "111-諮商與輔導-3",
@@ -3932,13 +4122,10 @@
   "113-諮商與輔導-2",
   "115-諮商與輔導-4",
   "監獄官-109-犯罪學與再犯預測-3",
-  "監獄官-109-犯罪學與再犯預測-4",
-  "監獄官-114-犯罪學與再犯預測-4",
   "監獄官-109-諮商與矯正輔導-4",
   "監獄官-110-諮商與矯正輔導-1",
   "監獄官-111-諮商與矯正輔導-3",
   "監獄官-111-諮商與矯正輔導-4",
-  "監獄官-112-諮商與矯正輔導-1",
   "監獄官-114-諮商與矯正輔導-3",
   "監獄官-115-諮商與矯正輔導-2",
   "監獄官-115-諮商與矯正輔導-3",
@@ -3949,10 +4136,8 @@
   "薦任升等（矯正）-112-心理測驗-1",
   "薦任升等（矯正）-112-心理測驗-2",
   "薦任升等（矯正）-112-心理測驗-3",
-  "薦任升等（矯正）-112-心理測驗-4",
   "薦任升等（矯正）-114-心理測驗-4",
   "薦任升等（矯正）-110-犯罪學-3",
-  "薦任升等（矯正）-114-犯罪學-4",
   "薦任升等（矯正）-110-諮商與輔導-1",
   "薦任升等（矯正）-110-諮商與輔導-3",
   "薦任升等（矯正）-110-諮商與輔導-4",
@@ -3984,8 +4169,7 @@
   "監所管理員-110-犯罪學概要-2",
   "監所管理員-111-犯罪學概要-1",
   "監所管理員-112-犯罪學概要-1",
-  "監所管理員-113-犯罪學概要-2",
-  "監所管理員-115-犯罪學概要-3"
+  "監所管理員-113-犯罪學概要-2"
  ],
  "uncoveredNote": "這些題目在可連線的公開網站中找不到能下載全文、且內容足以對應得分點的文件，主要是：心理測驗的計算與常模（教科書內容）、諮商技術與團體歷程（Corey、Egan、Hill、Rogers 等專書）、古典學派與部分副文化理論（Beccaria、Bentham、Cloward & Ohlin、Miller、Sellin、Colvin）、臺灣倫理守則與方案，以及部分要以講義為準的題目。"
 }
