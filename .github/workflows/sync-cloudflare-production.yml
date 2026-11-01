@@ -46,6 +46,7 @@ jobs:
         run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - name: Build and audit identical static mirror without deploying
         run: |
+          python3 verification/daily-data-release-gate-test.py
           python3 verification/check-cloudflare-release.py
           python3 scripts/build-cloudflare-main-mirror.py
           node verification/unified-integration.cjs cloudflare-main-mirror-dist
@@ -80,10 +81,15 @@ jobs:
           test "$RELEASE_CONFIRMATION" = 'RELEASE'
       - name: Build and check the identical static website
         run: |
+          python3 verification/daily-data-release-gate-test.py
           python3 verification/check-cloudflare-release.py
           python3 scripts/build-cloudflare-main-mirror.py
           node verification/unified-integration.cjs cloudflare-main-mirror-dist
           node verification/check-daily-v254.cjs
+      - name: Allow automatic release only for daily data changes against live production
+        id: daily_release
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: python3 scripts/daily-data-release-gate.py
       - name: Install isolated acceptance browsers
         run: |
           npm install --prefix /tmp/cloudflare-production-qa --no-save playwright@1.62.1
@@ -106,30 +112,35 @@ jobs:
           done
       - name: Capture exact current production for recovery
         id: capture
-        if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main' && inputs.confirm_release == 'RELEASE'
+        if: github.ref == 'refs/heads/main' && ((github.event_name == 'workflow_dispatch' && inputs.confirm_release == 'RELEASE') || (github.event_name == 'push' && steps.daily_release.outputs.allowed == 'true'))
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: python3 scripts/cloudflare-release-control.py prepare --commit '${{ github.sha }}'
+      - name: Recheck automatic data-only eligibility after recovery capture
+        if: steps.capture.outcome == 'success' && github.event_name == 'push'
+        env:
+          DAILY_RELEASE_REQUIRED: 'true'
+        run: python3 scripts/daily-data-release-gate.py
       - name: Recheck production has not changed since recovery capture
-        if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main' && inputs.confirm_release == 'RELEASE'
+        if: github.ref == 'refs/heads/main' && ((github.event_name == 'workflow_dispatch' && inputs.confirm_release == 'RELEASE') || (github.event_name == 'push' && steps.daily_release.outputs.allowed == 'true'))
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: python3 scripts/cloudflare-release-control.py recheck --commit '${{ github.sha }}'
       - name: Publish only the approved main production branch
         id: publish
-        if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main' && inputs.confirm_release == 'RELEASE'
+        if: github.ref == 'refs/heads/main' && ((github.event_name == 'workflow_dispatch' && inputs.confirm_release == 'RELEASE') || (github.event_name == 'push' && steps.daily_release.outputs.allowed == 'true'))
         uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy cloudflare-main-mirror-dist --project-name=probation-study30-test --branch=main --commit-hash=${{ github.sha }}
       - name: Verify every live production byte
-        if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main' && inputs.confirm_release == 'RELEASE'
+        if: github.ref == 'refs/heads/main' && ((github.event_name == 'workflow_dispatch' && inputs.confirm_release == 'RELEASE') || (github.event_name == 'push' && steps.daily_release.outputs.allowed == 'true'))
         run: python3 scripts/verify-published-bytes.py cloudflare-main-mirror-dist https://probation-study30-test.pages.dev/
       - name: Repeat functionality on the actual production URL with isolated test records
-        if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main' && inputs.confirm_release == 'RELEASE'
+        if: github.ref == 'refs/heads/main' && ((github.event_name == 'workflow_dispatch' && inputs.confirm_release == 'RELEASE') || (github.event_name == 'push' && steps.daily_release.outputs.allowed == 'true'))
         env:
           NODE_PATH: /tmp/cloudflare-production-qa/node_modules
           UNIFIED_TEST_URL: https://probation-study30-test.pages.dev/
@@ -139,7 +150,7 @@ jobs:
             UNIFIED_BROWSER_ENGINE="$engine" node verification/layout-review-browser.cjs cloudflare-main-mirror-dist
           done
       - name: Restore only this run's failed production release
-        if: failure() && github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main' && inputs.confirm_release == 'RELEASE' && (steps.publish.outcome == 'success' || steps.publish.outcome == 'failure')
+        if: failure() && github.ref == 'refs/heads/main' && ((github.event_name == 'workflow_dispatch' && inputs.confirm_release == 'RELEASE') || (github.event_name == 'push' && steps.daily_release.outputs.allowed == 'true')) && (steps.publish.outcome == 'success' || steps.publish.outcome == 'failure')
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

@@ -93,16 +93,19 @@ def main():
     production_workflow = root / ".github/workflows/sync-cloudflare-production.yml"
     if production_workflow.is_file():
         wf = production_workflow.read_text(encoding="utf-8")
-        manual_guard = (
-            "github.event_name == 'workflow_dispatch' && "
-            "github.ref == 'refs/heads/main' && inputs.confirm_release == 'RELEASE'"
+        release_guard = (
+            "github.ref == 'refs/heads/main' && ((github.event_name == 'workflow_dispatch' && "
+            "inputs.confirm_release == 'RELEASE') || (github.event_name == 'push' && "
+            "steps.daily_release.outputs.allowed == 'true'))"
         )
         if "workflow_dispatch:" not in wf or "confirm_release:" not in wf:
             errors.append("Cloudflare publication requires workflow_dispatch approval input")
-        if wf.count(manual_guard) != 6:
-            errors.append("All six Cloudflare production steps must require manual approval")
-        if "github.event_name == 'push' && github.ref == 'refs/heads/main'" in wf:
-            errors.append("Unexpected push-triggered Cloudflare publication guard")
+        if wf.count(release_guard) != 6:
+            errors.append("All six production steps must use the manual-or-data-only release guard")
+        if "id: daily_release" not in wf or "DAILY_RELEASE_REQUIRED: 'true'" not in wf:
+            errors.append("Daily publication requires both initial and post-capture live data eligibility checks")
+        if not (root / "scripts/daily-data-release-gate.py").exists():
+            errors.append("Daily data-only release gate missing")
     else:
         errors.append("Cloudflare production workflow missing")
 
