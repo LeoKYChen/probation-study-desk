@@ -21,7 +21,8 @@ const data={schemaVersion:1,sync:{status:'success'},documents:[{id:'news-'+ 'a'.
 test('writes manifest, shard and offline files in one commit',()=>{const r=runtime();r.ctx.readingNewsWriteGithub_({branch:'main',path:'daily-simulation/documents.json'},'indexsha',data);const paths=r.objects.tree.map(x=>x.path);assert(paths.includes('daily-simulation/documents.json'));assert(paths.includes('file-data/daily.generated.js'));assert(paths.some(x=>x.startsWith('daily-simulation/news-shards/')));assert(paths.some(x=>x.startsWith('file-data/news-shards/')));assert.equal(r.calls.filter(x=>x[0]==='patch').length,1)});
 test('ref conflict blocks publication',()=>{const r=runtime();r.ctx.readingNewsApi_=(cfg,method,suffix)=>suffix==='git/ref/heads/main'?{object:{sha:'old'}}:suffix==='git/commits/old'?{tree:{sha:'oldtree'}}:{sha:'changed'};assert.throws(()=>r.ctx.readingNewsWriteGithub_({branch:'main',path:'daily-simulation/documents.json'},'indexsha',data),/已變動/)});
 test('real archive retains all article identities and generates compatible offline shards',()=>{
- const r=runtime();const source=JSON.parse(fs.readFileSync('daily-simulation/documents.json','utf8'));
+ const r=runtime();let source=JSON.parse(fs.readFileSync('daily-simulation/documents.json','utf8'));
+ if(source.schemaVersion===2)source={schemaVersion:1,sync:source.sync,documents:source.shards.flatMap(p=>JSON.parse(fs.readFileSync('daily-simulation/'+p.path,'utf8')).documents)};
  const legacy=source.documents.find(x=>x.id==='news-library-libfile_3680a31f09dc8191a9c975a328b06add');
  if(legacy)legacy.url='https://leokychen.github.io/probation-study-desk/daily-simulation/?document='+legacy.id;
  r.ctx.readingNewsWriteGithub_({branch:'main',path:'daily-simulation/documents.json'},'indexsha',source);
