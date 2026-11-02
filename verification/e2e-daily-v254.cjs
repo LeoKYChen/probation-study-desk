@@ -255,6 +255,7 @@ async function check(){
  inlineMobile.on('pageerror',error=>inlineErrors.push(error.message));
  inlineMobile.on('dialog',dialog=>dialog.accept());
  await inlineMobile.goto(origin+'/daily-simulation/',{waitUntil:'domcontentloaded'});
+ await inlineMobile.locator('#menu').click();
  await inlineMobile.locator('[data-tab="全部題目"]').click();
  await inlineMobile.locator('[data-open="'+q.id+'"]').first().waitFor({timeout:30000});
  await inlineMobile.locator('[data-open="'+q.id+'"]').first().click();
