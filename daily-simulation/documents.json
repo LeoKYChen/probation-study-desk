@@ -1,32 +1,32 @@
 {
   "schemaVersion": 2,
-  "count": 232,
+  "count": 234,
   "sync": {
-    "syncedAt": "2026-11-02T13:41:55.682Z",
+    "syncedAt": "2026-11-02T16:09:00.408Z",
     "status": "success",
-    "sourceCount": 231,
+    "sourceCount": 233,
     "errors": []
   },
   "shards": [
     {
-      "path": "news-shards/5ce9a19b93bdc2d4465d7a5c39bfb3f40f9ff09c1d102d2657951965b364a3fd.json",
-      "count": 51
-    },
-    {
-      "path": "news-shards/a2ae893a07730661b8e285f5745a76a0f38f6aee0c6059ec0b9bd62fa4dacf06.json",
+      "path": "news-shards/91fe8285328eb7fe40c8629040259c1d69bb0115223113ce3ced97d80f0395be.json",
       "count": 52
     },
     {
-      "path": "news-shards/26046655f971e6e060fd4e11bab30dd8e72420d6618359d5137c72c21e80053c.json",
-      "count": 53
+      "path": "news-shards/5c46865aa977ecfc127a5e7d22916f112088931536f1165f3f0eb411c6d1249a.json",
+      "count": 52
     },
     {
-      "path": "news-shards/d24b74aca266f3bcdba423067248056d83c4fdd5c700f364285c89077d1495d9.json",
+      "path": "news-shards/544ab4299dcc4c1e081e52768f3e126b8c4b5fe570c4c46b1d4a4bf704f9eae2.json",
+      "count": 52
+    },
+    {
+      "path": "news-shards/3d6fa70d39809abece848d1e4dfc428e2d2cbcfb6dda21677d5535d2679a7a2a.json",
       "count": 54
     },
     {
-      "path": "news-shards/fde8b9fad74480f188426841f9b03d8edff39373298902671d1aa5e59ad9b121.json",
-      "count": 22
+      "path": "news-shards/fa1bd7fb422bfcdbf83e56518316fa7b31f67580df20010f2735e1538c4e317a.json",
+      "count": 24
     }
   ]
 }
