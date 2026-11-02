@@ -99,6 +99,7 @@ async function check(){
  oldPage.on('pageerror',error=>errors.push('original daily page: '+error.message));
  oldPage.on('dialog',dialog=>dialog.accept());
  await oldPage.goto(origin+'/daily-simulation/',{waitUntil:'domcontentloaded'});
+ await oldPage.locator('[data-tab="全部題目"]').click();
  await oldPage.locator('[data-open]').first().waitFor({timeout:30000});
  await oldPage.locator('[data-open="'+q.id+'"]').first().click();
  assert.equal(await oldPage.locator('#answer').inputValue(),'新練習答案：爭點、涵攝、結論。');
@@ -254,6 +255,7 @@ async function check(){
  inlineMobile.on('pageerror',error=>inlineErrors.push(error.message));
  inlineMobile.on('dialog',dialog=>dialog.accept());
  await inlineMobile.goto(origin+'/daily-simulation/',{waitUntil:'domcontentloaded'});
+ await inlineMobile.locator('[data-tab="全部題目"]').click();
  await inlineMobile.locator('[data-open="'+q.id+'"]').first().waitFor({timeout:30000});
  await inlineMobile.locator('[data-open="'+q.id+'"]').first().click();
  assert.ok(await inlineMobile.locator('#draftIssue').isVisible());
