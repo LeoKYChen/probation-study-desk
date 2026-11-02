@@ -14,12 +14,24 @@ def eligible(previous, current):
         if not isinstance(hashes, dict) or not hashes or any(not isinstance(h, str) or not re.fullmatch('[0-9a-f]{64}', h) for h in hashes.values()):
             return False
     before, after = previous['file_sha256'], current['file_sha256']
-    # Never auto-delete or add deployed files; compare the entire deployed tree,
-    # not just this push, so pending application changes cannot ride along.
-    if before.keys() != after.keys():
+    # New content-addressed shards may be added, never deleted or overwritten.
+    # Application code and every existing unrelated file must stay byte-identical.
+    if before.keys() - after.keys():
         return False
+    added = after.keys() - before.keys()
+    for path in added:
+        match = re.fullmatch(r'daily-simulation/news-shards/([0-9a-f]{64})\.json', path)
+        offline = re.fullmatch(r'file-data/news-shards/([0-9a-f]{64})\.js', path)
+        if match:
+            if after[path] != match.group(1):
+                return False
+        elif offline:
+            if 'daily-simulation/news-shards/' + offline.group(1) + '.json' not in after:
+                return False
+        else:
+            return False
     changed = {p for p in before if before[p] != after[p]}
-    return bool(changed) and changed <= ALLOWED
+    return bool(changed or added) and changed <= ALLOWED
 
 def main():
     allowed = False

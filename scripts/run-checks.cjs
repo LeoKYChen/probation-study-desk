@@ -25,6 +25,9 @@ const NODE=[
   'knowledge-graph-preview/real-data.test.cjs'
 ];
 const NODE_TEST=[
+  'verification/news-bridge.test.cjs',
+  'verification/news-apps-script.test.cjs',
+  'verification/news-storage.test.cjs',
   'verification/weekly-sync.test.cjs',
   'verification/weekly-import.test.cjs',
   'verification/sync/core.test.mjs',

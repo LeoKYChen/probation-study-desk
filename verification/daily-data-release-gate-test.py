@@ -38,6 +38,22 @@ class ReleaseGateTest(unittest.TestCase):
             current = copy.deepcopy(self.previous)
             current[key] = value
             self.assertFalse(gate.eligible(self.previous, current))
+    def test_new_paired_news_shards_are_allowed(self):
+        digest='b'*64
+        self.current['file_sha256']['daily-simulation/news-shards/'+digest+'.json']=digest
+        self.current['file_sha256']['file-data/news-shards/'+digest+'.js']='c'*64
+        self.assertTrue(gate.eligible(self.previous,self.current))
+    def test_unpaired_or_forged_shards_are_blocked(self):
+        digest='b'*64
+        self.current['file_sha256']['daily-simulation/news-shards/'+digest+'.json']=digest
+        self.current['file_sha256']['file-data/news-shards/'+digest+'.js']='c'*64
+        self.current['file_sha256']['daily-simulation/news-shards/'+digest+'.json']='d'*64
+        self.assertFalse(gate.eligible(self.previous,self.current))
+    def test_modification_of_old_shard_is_blocked(self):
+        digest='b'*64; path='daily-simulation/news-shards/'+digest+'.json'
+        self.previous['file_sha256'][path]=digest
+        self.current['file_sha256'][path]='c'*64
+        self.assertFalse(gate.eligible(self.previous,self.current))
     def test_invalid_hash_blocks_release(self):
         self.current['file_sha256']['daily-simulation/questions.json'] = 'invalid'
         self.assertFalse(gate.eligible(self.previous, self.current))
