@@ -95,7 +95,7 @@ function readingNewsWriteGithub_(cfg, sha, data) {
   readingNewsValidate_(data);
   var ref=readingNewsApi_(cfg,'get','git/ref/heads/'+encodeURIComponent(cfg.branch));
   var head=ref.object.sha, commit=readingNewsApi_(cfg,'get','git/commits/'+head);
-  var meta=readingNewsApi_(cfg,'get','contents/'+cfg.path+'?ref='+encodeURIComponent(cfg.branch));
+  var meta=readingNewsApi_(cfg,'get','contents/'+cfg.path+'?ref='+encodeURIComponent(head));
   if(meta.sha!==sha)throw new Error('來源資料已變動，未覆寫，請重試');
   var shards=[],current=[];
   function body(a){return JSON.stringify({schemaVersion:1,documents:a});}
@@ -107,7 +107,7 @@ function readingNewsWriteGithub_(cfg, sha, data) {
     if(Utilities.newBlob(body(current.concat([d]))).getBytes().length>1000000)flush();current.push(d);
   });flush();
   var manifest={schemaVersion:2,count:data.documents.length,sync:data.sync,shards:shards.map(function(x){return {path:x.path,count:x.count};})};
-  var q=readingNewsApi_(cfg,'get','contents/daily-simulation/questions.json?ref='+encodeURIComponent(cfg.branch));
+  var q=readingNewsApi_(cfg,'get','contents/daily-simulation/questions.json?ref='+encodeURIComponent(head));
   if(!q.content||q.encoding!=='base64')q=readingNewsApi_(cfg,'get','git/blobs/'+q.sha);
   var questions=JSON.parse(Utilities.newBlob(Utilities.base64Decode(q.content.replace(/\s/g,''))).getDataAsString('UTF-8'));
   if(!questions||!Array.isArray(questions.questions)||questions.questions.length<125)throw new Error('題庫資料不符');
@@ -205,9 +205,7 @@ function readingNewsRichText_(text) {
 function repairLegacyNewsLinkOnce() {
   var lock=LockService.getScriptLock(); if(!lock.tryLock(1000)) throw new Error('同步執行中');
   try {
-    var cfg=readingNewsConfig_(), meta=readingNewsApi_(cfg,'get','contents/'+cfg.path+'?ref='+encodeURIComponent(cfg.branch));
-    var raw=meta.content&&meta.encoding==='base64'?meta:readingNewsApi_(cfg,'get','git/blobs/'+meta.sha);
-    var data=JSON.parse(Utilities.newBlob(Utilities.base64Decode(raw.content.replace(/\s/g,''))).getDataAsString('UTF-8'));
+    var cfg=readingNewsConfig_(), previous=readingNewsReadGithub_(cfg), meta={sha:previous.sha}, data=previous.data;
     var id='news-library-libfile_3680a31f09dc8191a9c975a328b06add';
     var matches=data.documents.filter(function(d){return d.id===id;});
     if(matches.length!==1) throw new Error('歷史項目不存在或重複，停止修復');

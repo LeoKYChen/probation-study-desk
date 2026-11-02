@@ -1,5 +1,5 @@
 /**
- * GitHub 離線 ZIP 資料橋接同步 v1.0（僅同步已存在的 JSON 到 JS 產生檔）。
+ * GitHub 離線 ZIP 資料橋接同步 v1.1（僅同步已存在的 JSON 到 JS 產生檔）。
  * 需與 MarkdownTest／JuvenileWeeklySync／ReadingNewsSync 放在同一 Apps Script 專案。
  * 不重建題目、不刪除作答、絕不讀取本機瀏覽器資料。
  * Script Properties: daily 使用 GITHUB_*；weekly 使用 JW_GITHUB_*。
@@ -21,7 +21,8 @@ function psdBridgeApi_(cfg,method,suffix,payload) {
   var res=UrlFetchApp.fetch(u,options),status=res.getResponseCode();
   if(status<200||status>=300){
     var why=status===401?'Token 無效':status===403?'缺少權限或分支保護':status===404?'找不到 GitHub 路徑':status===409||status===422?'分支或 SHA 衝突':'請查看 GitHub 執行紀錄';
-    throw new Error('離線資料橋接：GitHub HTTP '+status+'（'+why+'）。本次未覆寫其他檔案。');
+    var error=new Error('離線資料橋接：GitHub HTTP '+status+'（'+why+'）。');
+    error.httpStatus=status;throw error;
   }
   return JSON.parse(res.getContentText());
 }
@@ -52,11 +53,13 @@ function psdBridgeSha1_(bytes) {
 function psdSyncGeneratedBridge_(kind) {
   if(kind!=='weekly'&&kind!=='daily') throw new Error('離線資料橋接：kind 只能是 weekly/daily');
   var cfg=psdBridgeConfig_(kind);
+  var head=psdBridgeApi_(cfg,'get','git/ref/heads/'+encodeURIComponent(cfg.branch)).object.sha;
+  var pinned={repo:cfg.repo,branch:head,token:cfg.token};
   var inputPaths=kind==='weekly'?['juvenile-news/issues.json']:
     ['daily-simulation/questions.json','daily-simulation/documents.json'];
   var target='file-data/'+kind+'.generated.js';
   var data={};
-  inputPaths.forEach(function(path){data[path]=psdBridgeReadJson_(cfg,path);});
+  inputPaths.forEach(function(path){data[path]=psdBridgeReadJson_(pinned,path);});
   if(kind==='weekly') {
     if(!data['juvenile-news/issues.json']||!Array.isArray(data['juvenile-news/issues.json'].issues)) throw new Error('週報格式錯誤');
   } else {
@@ -71,17 +74,44 @@ function psdSyncGeneratedBridge_(kind) {
     '(function(){if(typeof window.PSDRegisterFileData==="function")window.PSDRegisterFileData('+serialized+');})();\n';
   var bytes=Utilities.newBlob(code,'application/javascript').getBytes();
   if(bytes.length>10000000) throw new Error('離線資料產生檔超過 10MB，請調整檔案結構。');
-  var existing=psdBridgeMeta_(cfg,target);
-  var sha=psdBridgeSha1_(bytes);
-  if(existing.sha===sha) {
-    console.log('離線資料已同步：'+target+'（無須寫入）');
-    return {kind:kind,changed:false,sha:sha};
-  }
-  psdBridgeApi_(cfg,'put','contents/'+target,{message:'build: update '+kind+' offline file-data bridge',branch:cfg.branch,sha:existing.sha,content:Utilities.base64Encode(bytes)});
-  var confirmed=psdBridgeMeta_(cfg,target);
-  if(confirmed.sha!==sha) throw new Error('離線資料已嘗試寫入，但 GitHub SHA 驗證失敗：'+target);
-  console.log('離線資料寫入核對成功：'+target);
-  return {kind:kind,changed:true,sha:sha};
+  var outputs=[{path:target,content:code}], news=data['daily-simulation/documents.json'];
+  if(kind==='daily'&&news&&news.schemaVersion===2) {
+    if(!Array.isArray(news.shards)||!news.shards.length||!Number.isInteger(news.count)||news.count<1)throw new Error('新聞分檔索引異常');
+    var paths={},ids={},count=0;
+    news.shards.forEach(function(part){
+      if(!part||!/^news-shards\/[a-f0-9]{64}\.json$/.test(part.path)||paths[part.path]||!Number.isInteger(part.count)||part.count<1)throw new Error('新聞分檔路徑或數量異常');
+      paths[part.path]=true;
+      var key='daily-simulation/'+part.path,meta=psdBridgeMeta_(pinned,key),raw=psdBridgeBytes_(pinned,meta);
+      var hex=Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256,raw).map(function(b){return ('0'+(b&255).toString(16)).slice(-2);}).join('');
+      if(part.path!=='news-shards/'+hex+'.json')throw new Error('新聞分檔雜湊不符');
+      var payload=JSON.parse(Utilities.newBlob(raw).getDataAsString('UTF-8'));
+      if(payload.schemaVersion!==1||!Array.isArray(payload.documents)||payload.documents.length!==part.count)throw new Error('新聞分檔內容或筆數不符');
+      payload.documents.forEach(function(d){if(!d||typeof d.id!=='string'||!d.id||ids[d.id])throw new Error('新聞 ID 缺漏或重複');ids[d.id]=true;});
+      count+=payload.documents.length;
+      var obj={};obj[key]=payload;
+      var serializedPart=JSON.stringify(obj).replace(/</g,'\\u003c').replace(/\u2028/g,'\\u2028').replace(/\u2029/g,'\\u2029');
+      outputs.push({path:'file-data/'+part.path.replace(/\.json$/,'.js'),content:'/* GENERATED news shard; do not hand-edit. */\n(function(){if(typeof window.PSDRegisterFileData==="function")window.PSDRegisterFileData('+serializedPart+');})();\n'});
+    });
+    if(count!==news.count)throw new Error('新聞分檔總數不符');
+  } else if(kind==='daily'&&(!news||news.schemaVersion!==1||!Array.isArray(news.documents)))throw new Error('新聞格式錯誤');
+  var changes=[];
+  outputs.forEach(function(file){
+    var existing;
+    try {existing=psdBridgeMeta_(pinned,file.path);}catch(e){if(e.httpStatus!==404)throw e;}
+    var sha=psdBridgeSha1_(Utilities.newBlob(file.content).getBytes());
+    file.sha=sha;
+    if(!existing||existing.sha!==sha)changes.push({path:file.path,mode:'100644',type:'blob',content:file.content});
+  });
+  if(psdBridgeApi_(cfg,'get','git/ref/heads/'+encodeURIComponent(cfg.branch)).object.sha!==head)throw new Error('來源分支已變動，請重試；未寫入離線資料');
+  if(!changes.length){console.log('全部離線資料已核對（含新聞分檔）');return {kind:kind,changed:false,files:outputs.length};}
+  var commit=psdBridgeApi_(cfg,'get','git/commits/'+head);
+  var tree=psdBridgeApi_(cfg,'post','git/trees',{base_tree:commit.tree.sha,tree:changes});
+  var next=psdBridgeApi_(cfg,'post','git/commits',{message:'build: repair '+kind+' offline files',tree:tree.sha,parents:[head]});
+  psdBridgeApi_(cfg,'patch','git/refs/heads/'+encodeURIComponent(cfg.branch),{sha:next.sha,force:false});
+  var verified={repo:cfg.repo,branch:next.sha,token:cfg.token};
+  outputs.forEach(function(file){if(psdBridgeMeta_(verified,file.path).sha!==file.sha)throw new Error('離線資料回讀核對失敗：'+file.path);});
+  console.log('全部離線資料寫入並核對成功（含新聞分檔）：'+outputs.length+' 檔');
+  return {kind:kind,changed:true,files:outputs.length,commit:next.sha};
 }
 
 // 人工修復入口：若題庫 JSON 已先成功更新，但 offline bridge 遺漏，可安全重跑（不改題目）。
