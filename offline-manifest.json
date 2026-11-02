@@ -209,6 +209,9 @@
       "url": "daily-simulation/news.js"
     },
     {
+      "url": "daily-simulation/news-storage.js"
+    },
+    {
       "url": "daily-simulation/practice.css"
     },
     {
