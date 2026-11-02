@@ -12,6 +12,7 @@ const required=[
  'professional/index.html','professional/app.js','professional/question-sources.js','professional/essay.js','professional/source-main-questions.js','professional/source-related-questions.js',
  'v2.5/index.html','v2.5/questions.js','v2.5/related-questions.js','v2.5/essay-workspace25.js',
  'daily-simulation/index.html','daily-simulation/questions.json','daily-simulation/app.js',
+ 'daily-simulation/news.js','daily-simulation/news-storage.js','daily-simulation/documents.json',
  'common-subjects/index.html','common-subjects/essay-questions-v1.js','common-subjects/essay-questions-v2.js','common-subjects/essay-questions-v3.js',
  'common-subjects/daily/reading.json','common-subjects/english-assistant/vocab.js',
  'juvenile-news/index.html','juvenile-news/issues.json',
