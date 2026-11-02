@@ -36,6 +36,22 @@ for(const [group,filenames] of Object.entries(groups)){
   console.log('Source-locked daily questions:',questions.length);
  }
  if(group==='weekly')assert(data['juvenile-news/issues.json'].issues.length>0);
+ if(group==='daily' && data['daily-simulation/documents.json'].schemaVersion===2){
+  const index=data['daily-simulation/documents.json'];
+  assert(Array.isArray(index.shards)&&index.shards.length,'News shard manifest missing');
+  const seen=new Set(),ids=new Set();let total=0;
+  for(const part of index.shards){
+   assert(/^news-shards\/[a-f0-9]{64}\.json$/.test(part.path)&&!seen.has(part.path),'Invalid or duplicate news shard path');seen.add(part.path);
+   const source='daily-simulation/'+part.path,raw=fs.readFileSync(path.join(root,source),'utf8'),payload=JSON.parse(raw);
+   assert.equal(require('node:crypto').createHash('sha256').update(raw).digest('hex'),part.path.slice(12,-5),'News shard digest mismatch');
+   assert(Array.isArray(payload.documents)&&payload.documents.length===part.count,'News shard count mismatch');
+   for(const d of payload.documents){assert(d.id&&!ids.has(d.id),'Duplicate news ID');ids.add(d.id);total++;}
+   const js='/* GENERATED news shard; do not hand-edit. */\n(function(){if(typeof window.PSDRegisterFileData===\"function\")window.PSDRegisterFileData('+JSON.stringify({[source]:payload}).replace(/</g,'\\u003c').replace(/\u2028/g,'\\u2028').replace(/\u2029/g,'\\u2029')+');})();\n';
+   const out=path.join(outputDir,part.path.replace(/\.json$/,'.js'));
+   if(mode==='--write'){fs.mkdirSync(path.dirname(out),{recursive:true});fs.writeFileSync(out,js);}else assert(fs.existsSync(out)&&fs.readFileSync(out,'utf8')===js,'Outdated offline shard');
+  }
+  assert.equal(total,index.count,'News archive count mismatch');
+ }
  const blob=JSON.stringify(data).replace(/</g,'\\u003c').replace(/\u2028/g,'\\u2028').replace(/\u2029/g,'\\u2029');
  const script='/* GENERATED from committed JSON; do not hand-edit. */\n'+
   '(function(){if(typeof window.PSDRegisterFileData==="function")window.PSDRegisterFileData('+blob+');})();\n';
