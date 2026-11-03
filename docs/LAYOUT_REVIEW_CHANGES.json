@@ -137,8 +137,8 @@
     {
       "path": "professional/ai-review-links-direction.js",
       "base_sha256": null,
-      "sha256": "4d8a33afbd2ad66de9199a885a3e07c2e83b4e6ada16af73dc7dfa08b4b8ab9b",
-      "reason": "[2026-10-22 AI directions] Versioned script builds optional non-scored outline diagnostic prompts while keeping frozen ai-review-links.js and user-record keys untouched. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources.；2026-10-23 手機標示精簡及完整題庫資訊校正"
+      "sha256": "41249a9cc4dc0cfb7b94f33106c4208203fb330b38d23ed47f6de112bd3eee34",
+      "reason": "[2026-10-22 AI directions] Versioned script builds optional non-scored outline diagnostic prompts while keeping frozen ai-review-links.js and user-record keys untouched. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources.；2026-10-23 手機標示精簡及完整題庫資訊校正；2026-11-03 AI教練v2省Token提示詞經使用者核准更新；同步更新SHA-256完整性紀錄，保留原驗證機制。"
     },
     {
       "path": "professional/essay-review.js",
