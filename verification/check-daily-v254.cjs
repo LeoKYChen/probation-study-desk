@@ -51,6 +51,21 @@ const professional={};vm.runInNewContext(read('professional/ai-review-links-dire
 const guided=professional.Study30GuidedReview.prompt(outlineQuestion,{questionId:'outline-smoke'},'一、確認程序','direction');
 assert.ok(guided.includes('【我的答題方向／四格草稿】')&&guided.includes('不給百分制模擬成績'));
 assert.ok(professional.Study30GuidedReview.prompt(outlineQuestion,{},'完整申論').includes('爭點掌握（30分）'));
+
+const coachedFull=professional.Study30GuidedReview.prompt(outlineQuestion,{},'完整申論','full');
+for(const text of [guided,coachedFull]){
+ assert.match(text,/最多3輪實質作答及回饋/,'v0.4 closes every essay in at most three substantive rounds');
+ assert.match(text,/最遲第三輪主動結案/,'third-round closeout is required');
+ assert.match(text,/完整教學版結案/,'full teaching summary is included');
+ assert.match(text,/48小時後的自主回憶題/,'retrieval practice is included');
+ assert.match(text,/不代寫整篇申論擬答/,'do not generate a full essay without request');
+ assert.ok(!text.includes('3至5輪'),'obsolete coaching limit is removed');
+ assert.ok(text.includes('【題目】')&&text.includes('【來源題號】'),'question and provenance stay present');
+}
+assert.match(guided,/最多2個必要的引導提問/,'direction mode asks at most two questions');
+assert.ok(guided.includes('不給百分制模擬成績'),'direction-only review must not receive full-essay grades');
+assert.ok(coachedFull.includes('爭點掌握（30分）'),'full-essay rubric is preserved');
+assert.ok(coachedFull.includes('法律規範、判決、函釋若未完成查核'),'legal verification requirements are preserved');
 assert.ok(read('professional/index.html').includes('id="daily30AiMode"'),'professional review selector missing');
 const d=M.dataset(JSON.parse(read('daily-simulation/questions.json')));
 assert.equal(d.questions.length,d.count);
