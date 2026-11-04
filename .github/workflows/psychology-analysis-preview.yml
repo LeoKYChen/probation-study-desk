@@ -1,0 +1,72 @@
+name: Psychology analysis isolated Cloudflare test preview
+on:
+  push:
+    branches: [feature/psychology-exam-analysis-20261104]
+    paths:
+      - '.github/workflows/psychology-analysis-preview.yml'
+      - 'v2.5/psychology-*.js'
+      - 'v2.5/index.html'
+      - 'offline-manifest.json'
+      - 'verification/psychology-*.cjs'
+permissions:
+  contents: read
+concurrency:
+  group: psychology-analysis-20261104-preview
+  cancel-in-progress: true
+jobs:
+  build-test-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 23
+    container:
+      image: mcr.microsoft.com/playwright:v1.62.1-noble
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - run: npm install --no-save --ignore-scripts --no-audit playwright@1.62.1
+      - name: Validate 104 exam cards and browser persistence
+        run: |
+          node verification/psychology-exam-analysis.test.cjs
+          node verification/offline-stage4-check.cjs
+          PSYCHOLOGY_BROWSER_ENGINE=chromium node verification/psychology-exam-browser.cjs
+          PSYCHOLOGY_BROWSER_ENGINE=webkit node verification/psychology-exam-browser.cjs
+      - name: Assemble isolated preview
+        run: |
+          python3 scripts/build-cloudflare-main-mirror.py
+          python3 - <<'PY'
+          from pathlib import Path
+          root=Path('cloudflare-main-mirror-dist/v2.5')
+          for name in ('psychology-exam-analysis.js','psychology-curated-main.js','psychology-curated-related.js','psychology-curated-psychometrics.js','psychology-curated-police.js'):
+            assert (root/name).exists(), name
+          print('PASS: all five psychology scripts included')
+          PY
+      - name: Verify test project is not production
+        env:
+          CF_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json,os,urllib.request
+          assert os.environ.get('CF_ACCOUNT_ID') and os.environ.get('CF_API_TOKEN')
+          alias='psychology-analysis-20261104'
+          req=urllib.request.Request('https://api.cloudflare.com/client/v4/accounts/'+os.environ['CF_ACCOUNT_ID']+'/pages/projects/probation-study30-test',headers={'Authorization':'Bearer '+os.environ['CF_API_TOKEN']})
+          with urllib.request.urlopen(req,timeout=30) as response: j=json.load(response)
+          p=j['result']
+          assert j['success'] and p['name']=='probation-study30-test' and p['production_branch']!=alias
+          assert alias not in {'main','github-main-mirror','v254-unified-preview'}
+          print('PASS: isolated alias separate from production')
+          PY
+      - name: Deploy only dedicated test alias
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy cloudflare-main-mirror-dist --project-name=probation-study30-test --branch=psychology-analysis-20261104 --commit-hash=${{ github.sha }}
+      - name: Verify live bytes and browser interactions
+        env:
+          PSYCHOLOGY_E2E_BASE_URL: https://psychology-analysis-20261104.probation-study30-test.pages.dev/
+        run: |
+          python3 scripts/verify-published-bytes.py cloudflare-main-mirror-dist "$PSYCHOLOGY_E2E_BASE_URL"
+          PSYCHOLOGY_BROWSER_ENGINE=chromium node verification/psychology-exam-browser.cjs
+          PSYCHOLOGY_BROWSER_ENGINE=webkit node verification/psychology-exam-browser.cjs
