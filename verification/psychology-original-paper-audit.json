@@ -1,0 +1,414 @@
+{
+  "title": "108–115 psychology (including psychometrics) official paper check register",
+  "version": "2026-11-04-audit-v1",
+  "scope": "104 unique question IDs, 26 official paper URLs",
+  "statusDefinitions": {
+    "official_pdf_text_reviewed": "MOEX web PDF and key question elements reviewed, not full character-by-character or theory validation",
+    "official_pdf_access_pending": "MOEX source inaccessible in this session; no official cross-check claim"
+  },
+  "counts": {
+    "papers": 26,
+    "questions": 104,
+    "papersWithOfficialTextReviewed": 17,
+    "questionsCovered": 68,
+    "papersPending": 9
+  },
+  "papers": [
+    {
+      "key": "108070/303/1010",
+      "year": 108,
+      "subject": "心理學",
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=303&code=108070&q=1&s=1010&t=Q",
+      "questionIds": [
+        "police-108-psychology-1",
+        "police-108-psychology-2",
+        "police-108-psychology-3",
+        "police-108-psychology-4"
+      ],
+      "status": "official_pdf_access_pending",
+      "reviewDate": null,
+      "verificationScope": "Official PDF unavailable from current retrieval; full original-paper check pending"
+    },
+    {
+      "key": "108130/101/0904",
+      "year": 108,
+      "subject": "心理學",
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=101&s=0904&q=1",
+      "questionIds": [
+        "108-心理學-1",
+        "108-心理學-2",
+        "108-心理學-3",
+        "108-心理學-4"
+      ],
+      "status": "official_pdf_text_reviewed",
+      "reviewDate": "2026-11-04",
+      "verificationScope": "Official PDF text and question structure/points reviewed; not certified character-by-character"
+    },
+    {
+      "key": "108130/111/0903",
+      "year": 108,
+      "subject": "心理學",
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108130&c=111&s=0903&q=1",
+      "questionIds": [
+        "108-心理測驗員-心理學-1",
+        "108-心理測驗員-心理學-2",
+        "108-心理測驗員-心理學-3",
+        "108-心理測驗員-心理學-4"
+      ],
+      "status": "official_pdf_text_reviewed",
+      "reviewDate": "2026-11-04",
+      "verificationScope": "Official PDF text and question structure/points reviewed; not certified character-by-character"
+    },
+    {
+      "key": "108170/218/0605",
+      "year": 108,
+      "subject": "心理測驗",
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108170&c=218&s=0605&q=1",
+      "questionIds": [
+        "薦任升等（矯正）-108-心理測驗-1",
+        "薦任升等（矯正）-108-心理測驗-2",
+        "薦任升等（矯正）-108-心理測驗-3",
+        "薦任升等（矯正）-108-心理測驗-4"
+      ],
+      "status": "official_pdf_text_reviewed",
+      "reviewDate": "2026-11-04",
+      "verificationScope": "Official PDF text and question structure/points reviewed; not certified character-by-character",
+      "reviewNotes": "Item analysis and standard-score conversion with tables."
+    },
+    {
+      "key": "109070/302/0905",
+      "year": 109,
+      "subject": "心理學",
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=109070&q=1&s=0905&t=Q",
+      "questionIds": [
+        "police-109-psychology-1",
+        "police-109-psychology-2",
+        "police-109-psychology-3",
+        "police-109-psychology-4"
+      ],
+      "status": "official_pdf_access_pending",
+      "reviewDate": null,
+      "verificationScope": "Official PDF unavailable from current retrieval; full original-paper check pending"
+    },
+    {
+      "key": "109130/103/0905",
+      "year": 109,
+      "subject": "心理學",
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=103&s=0905&q=1",
+      "questionIds": [
+        "109-心理學-1",
+        "109-心理學-2",
+        "109-心理學-3",
+        "109-心理學-4"
+      ],
+      "status": "official_pdf_text_reviewed",
+      "reviewDate": "2026-11-04",
+      "verificationScope": "Official PDF text and question structure/points reviewed; not certified character-by-character"
+    },
+    {
+      "key": "109130/111/0904",
+      "year": 109,
+      "subject": "心理學",
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109130&c=111&s=0904&q=1",
+      "questionIds": [
+        "109-心理測驗員-心理學-1",
+        "109-心理測驗員-心理學-2",
+        "109-心理測驗員-心理學-3",
+        "109-心理測驗員-心理學-4"
+      ],
+      "status": "official_pdf_text_reviewed",
+      "reviewDate": "2026-11-04",
+      "verificationScope": "Official PDF text and question structure/points reviewed; not certified character-by-character"
+    },
+    {
+      "key": "110070/302/1011",
+      "year": 110,
+      "subject": "心理學",
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=110070&q=1&s=1011&t=Q",
+      "questionIds": [
+        "police-110-psychology-1",
+        "police-110-psychology-2",
+        "police-110-psychology-3",
+        "police-110-psychology-4"
+      ],
+      "status": "official_pdf_access_pending",
+      "reviewDate": null,
+      "verificationScope": "Official PDF unavailable from current retrieval; full original-paper check pending"
+    },
+    {
+      "key": "110130/103/0809",
+      "year": 110,
+      "subject": "心理學",
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=103&s=0809&q=1",
+      "questionIds": [
+        "110-心理學-1",
+        "110-心理學-2",
+        "110-心理學-3",
+        "110-心理學-4"
+      ],
+      "status": "official_pdf_text_reviewed",
+      "reviewDate": "2026-11-04",
+      "verificationScope": "Official PDF text and question structure/points reviewed; not certified character-by-character"
+    },
+    {
+      "key": "110130/112/0808",
+      "year": 110,
+      "subject": "心理學",
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110130&c=112&s=0808&q=1",
+      "questionIds": [
+        "110-心理測驗員-心理學-1",
+        "110-心理測驗員-心理學-2",
+        "110-心理測驗員-心理學-3",
+        "110-心理測驗員-心理學-4"
+      ],
+      "status": "official_pdf_text_reviewed",
+      "reviewDate": "2026-11-04",
+      "verificationScope": "Official PDF text and question structure/points reviewed; not certified character-by-character"
+    },
+    {
+      "key": "110170/124/0604",
+      "year": 110,
+      "subject": "心理測驗",
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110170&c=124&s=0604&q=1",
+      "questionIds": [
+        "薦任升等（矯正）-110-心理測驗-1",
+        "薦任升等（矯正）-110-心理測驗-2",
+        "薦任升等（矯正）-110-心理測驗-3",
+        "薦任升等（矯正）-110-心理測驗-4"
+      ],
+      "status": "official_pdf_text_reviewed",
+      "reviewDate": "2026-11-04",
+      "verificationScope": "Official PDF text and question structure/points reviewed; not certified character-by-character"
+    },
+    {
+      "key": "111070/302/1005",
+      "year": 111,
+      "subject": "心理學",
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111070&q=1&s=1005&t=Q",
+      "questionIds": [
+        "police-111-psychology-1",
+        "police-111-psychology-2",
+        "police-111-psychology-3",
+        "police-111-psychology-4"
+      ],
+      "status": "official_pdf_text_reviewed",
+      "reviewDate": "2026-11-04",
+      "verificationScope": "Official PDF text and question structure/points reviewed; not certified character-by-character",
+      "reviewNotes": "Q1 8+12=20 points; Q3=30; total 100."
+    },
+    {
+      "key": "111130/103/0803",
+      "year": 111,
+      "subject": "心理學",
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111130&c=103&s=0803&q=1",
+      "questionIds": [
+        "111-心理學-1",
+        "111-心理學-2",
+        "111-心理學-3",
+        "111-心理學-4"
+      ],
+      "status": "official_pdf_text_reviewed",
+      "reviewDate": "2026-11-04",
+      "verificationScope": "Official PDF text and question structure/points reviewed; not certified character-by-character"
+    },
+    {
+      "key": "112070/302/1011",
+      "year": 112,
+      "subject": "心理學",
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112070&q=1&s=1011&t=Q",
+      "questionIds": [
+        "police-112-psychology-1",
+        "police-112-psychology-2",
+        "police-112-psychology-3",
+        "police-112-psychology-4"
+      ],
+      "status": "official_pdf_access_pending",
+      "reviewDate": null,
+      "verificationScope": "Official PDF unavailable from current retrieval; full original-paper check pending"
+    },
+    {
+      "key": "112130/103/0803",
+      "year": 112,
+      "subject": "心理學",
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112130&c=103&s=0803&q=1",
+      "questionIds": [
+        "112-心理學-1",
+        "112-心理學-2",
+        "112-心理學-3",
+        "112-心理學-4"
+      ],
+      "status": "official_pdf_text_reviewed",
+      "reviewDate": "2026-11-04",
+      "verificationScope": "Official PDF text and question structure/points reviewed; not certified character-by-character",
+      "reviewNotes": "Q2=20 and Q4 15+15=30 points."
+    },
+    {
+      "key": "112170/124/0604",
+      "year": 112,
+      "subject": "心理測驗",
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112170&c=124&s=0604&q=1",
+      "questionIds": [
+        "薦任升等（矯正）-112-心理測驗-1",
+        "薦任升等（矯正）-112-心理測驗-2",
+        "薦任升等（矯正）-112-心理測驗-3",
+        "薦任升等（矯正）-112-心理測驗-4"
+      ],
+      "status": "official_pdf_text_reviewed",
+      "reviewDate": "2026-11-04",
+      "verificationScope": "Official PDF text and question structure/points reviewed; not certified character-by-character",
+      "reviewNotes": "Regression and IQ uncertainty calculations; preserve givens."
+    },
+    {
+      "key": "113060/303/0806",
+      "year": 113,
+      "subject": "心理學",
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=303&code=113060&q=1&s=0806&t=Q",
+      "questionIds": [
+        "police-113-psychology-1",
+        "police-113-psychology-2",
+        "police-113-psychology-3",
+        "police-113-psychology-4"
+      ],
+      "status": "official_pdf_access_pending",
+      "reviewDate": null,
+      "verificationScope": "Official PDF unavailable from current retrieval; full original-paper check pending"
+    },
+    {
+      "key": "113120/103/0805",
+      "year": 113,
+      "subject": "心理學",
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=103&s=0805&q=1",
+      "questionIds": [
+        "113-心理學-1",
+        "113-心理學-2",
+        "113-心理學-3",
+        "113-心理學-4"
+      ],
+      "status": "official_pdf_access_pending",
+      "reviewDate": null,
+      "verificationScope": "Official PDF unavailable from current retrieval; full original-paper check pending"
+    },
+    {
+      "key": "113120/104/0806",
+      "year": 113,
+      "subject": "心理學",
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113120&c=104&s=0806&q=1",
+      "questionIds": [
+        "113-家事調查官-心理測驗員-心理學-1",
+        "113-家事調查官-心理測驗員-心理學-2",
+        "113-家事調查官-心理測驗員-心理學-3",
+        "113-家事調查官-心理測驗員-心理學-4"
+      ],
+      "status": "official_pdf_text_reviewed",
+      "reviewDate": "2026-11-04",
+      "verificationScope": "Official PDF text and question structure/points reviewed; not certified character-by-character",
+      "reviewNotes": "Q1 includes 20-point attachment styles plus 5-point attachment trauma."
+    },
+    {
+      "key": "114060/302/0809",
+      "year": 114,
+      "subject": "心理學",
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114060&q=1&s=0809&t=Q",
+      "questionIds": [
+        "police-114-psychology-1",
+        "police-114-psychology-2",
+        "police-114-psychology-3",
+        "police-114-psychology-4"
+      ],
+      "status": "official_pdf_access_pending",
+      "reviewDate": null,
+      "verificationScope": "Official PDF unavailable from current retrieval; full original-paper check pending"
+    },
+    {
+      "key": "114120/103/0805",
+      "year": 114,
+      "subject": "心理學",
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=103&s=0805&q=1",
+      "questionIds": [
+        "114-心理學-1",
+        "114-心理學-2",
+        "114-心理學-3",
+        "114-心理學-4"
+      ],
+      "status": "official_pdf_text_reviewed",
+      "reviewDate": "2026-11-04",
+      "verificationScope": "Official PDF text and question structure/points reviewed; not certified character-by-character"
+    },
+    {
+      "key": "114120/104/0806",
+      "year": 114,
+      "subject": "心理學",
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114120&c=104&s=0806&q=1",
+      "questionIds": [
+        "114-家事調查官-心理測驗員-心理學-1",
+        "114-家事調查官-心理測驗員-心理學-2",
+        "114-家事調查官-心理測驗員-心理學-3",
+        "114-家事調查官-心理測驗員-心理學-4"
+      ],
+      "status": "official_pdf_text_reviewed",
+      "reviewDate": "2026-11-04",
+      "verificationScope": "Official PDF text and question structure/points reviewed; not certified character-by-character"
+    },
+    {
+      "key": "114160/124/0605",
+      "year": 114,
+      "subject": "心理測驗",
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114160&c=124&s=0605&q=1",
+      "questionIds": [
+        "薦任升等（矯正）-114-心理測驗-1",
+        "薦任升等（矯正）-114-心理測驗-2",
+        "薦任升等（矯正）-114-心理測驗-3",
+        "薦任升等（矯正）-114-心理測驗-4"
+      ],
+      "status": "official_pdf_text_reviewed",
+      "reviewDate": "2026-11-04",
+      "verificationScope": "Official PDF text and question structure/points reviewed; not certified character-by-character",
+      "reviewNotes": "20/30/30/20 points."
+    },
+    {
+      "key": "115060/401/0803",
+      "year": 115,
+      "subject": "心理學",
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=401&code=115060&q=1&s=0803&t=Q",
+      "questionIds": [
+        "police-115-psychology-1",
+        "police-115-psychology-2",
+        "police-115-psychology-3",
+        "police-115-psychology-4"
+      ],
+      "status": "official_pdf_text_reviewed",
+      "reviewDate": "2026-11-04",
+      "verificationScope": "Official PDF text and question structure/points reviewed; not certified character-by-character"
+    },
+    {
+      "key": "115120/103/0805",
+      "year": 115,
+      "subject": "心理學",
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=103&s=0805&q=1",
+      "questionIds": [
+        "115-心理學-1",
+        "115-心理學-2",
+        "115-心理學-3",
+        "115-心理學-4"
+      ],
+      "status": "official_pdf_access_pending",
+      "reviewDate": null,
+      "verificationScope": "Official PDF unavailable from current retrieval; full original-paper check pending"
+    },
+    {
+      "key": "115120/104/0806",
+      "year": 115,
+      "subject": "心理學",
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115120&c=104&s=0806&q=1",
+      "questionIds": [
+        "115-家事調查官-心理測驗員-心理學-1",
+        "115-家事調查官-心理測驗員-心理學-2",
+        "115-家事調查官-心理測驗員-心理學-3",
+        "115-家事調查官-心理測驗員-心理學-4"
+      ],
+      "status": "official_pdf_access_pending",
+      "reviewDate": null,
+      "verificationScope": "Official PDF unavailable from current retrieval; full original-paper check pending"
+    }
+  ]
+}
