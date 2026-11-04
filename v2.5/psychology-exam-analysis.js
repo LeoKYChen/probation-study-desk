@@ -20,12 +20,12 @@
   ];
   const verbs = [
     ['概念辨識與判斷',/請問|最符合|何者|有那些|有哪些|那些|哪些|列出|列舉|寫出|屬於|何謂/],
-    ['理論選擇與應用',/理論|學派|觀點|模式|模型/],
+    ['指定理論運用',/請.{0,30}理論|以.{0,30}理論|根據.{0,30}理論|選.{0,12}理論|從.{0,60}觀點|依.{0,30}學派|理論.{0,20}分析|理論.{0,20}說明|提出.{0,20}理論/],
     ['比較辨析',/比較|異同|差異|有何不同|區分/],
     ['概念與理論說明',/何謂|定義|意涵|意義|內容|概念|試述|闡述|說明|詳述|列舉|寫出/],
     ['成因與機制分析',/分析|解釋|為何|原因|機制|如何影響|作用|形成|歸因|影響/],
     ['案例／情境應用',/舉例|實例|為例|案例|個案|假設|假想|情境|應用/],
-    ['改善／處遇策略',/改善|矯正|介入|處遇|輔導|因應|預防|方法|策略|調節|提升|解決/],
+    ['改善／處遇策略',/改善|改進|矯正|介入|處遇|輔導|因應|預防|方法|策略|調節|提升|解決/],
     ['數值計算與分數判讀',/計算|數值|GPA|百分等級|Z 分數|T 分數|信賴區間|標準差|鑑別度|難度（P）/],
     ['測驗與評估判斷',/衡鑑|評估|測驗|常模|效度|信度|量表|評析|倫理/]
   ];
@@ -36,6 +36,7 @@
   function domain(q) {
     const body = clean(q.body);
     if (q.subject === '心理測驗') return '心理測驗與心理衡鑑';
+    if(/請解釋下面專有詞彙|請試述下列名詞|下列名詞之意涵/.test(body))return '跨領域心理學名詞';
     return (domains.find(([label,re])=>re.test(body)) || ['心理學（領域待細分）'])[0];
   }
   function actions(body) {
@@ -48,7 +49,8 @@
     if(numbered.test(original)) {
       const sections=original.split(/(?=（[一二三四五六七八]）|㈠|㈡|㈢|㈣|㈤|⑴|⑵|⑶|⑷)/)
         .map(clean).filter(s=>/^(（[一二三四五六七八]）|㈠|㈡|㈢|㈣|㈤|⑴|⑵|⑶|⑷)/.test(s));
-      if(sections.length) {
+      const areOnlyNumericFacts=sections.length>0 && sections.every(s=>!askPattern.test(s) && /分數|平均|標準差|關聯強度|常模數據/.test(s));
+      if(sections.length && !areOnlyNumericFacts) {
         const items=sections.slice(0,8).map(s=>s.length>270?s.slice(0,260)+'…（請回看完整題幹）':s);
         return items.map(s=>s.length<25?'題目子項：'+s+'（須配合原題主問作答）':s);
       }
@@ -56,7 +58,7 @@
     const normalized=original.replace(/([。？！；])/g,'$1\n');
     const pieces=normalized.split(/\n/).map(clean).filter(Boolean);
     const demands=pieces.filter(s=>askPattern.test(s))
-      .map(s=>s.replace(/^\s*[一二三四五六][、．]/,'').trim())
+      .map(s=>s.replace(/^\s*[一二三四五六][、．]/,'').replace(/^["”」]\s*/, '').trim())
       .filter(s=>s.length>4);
     const chosen=unique(demands).slice(0,6);
     if(!chosen.length) return [original.slice(-230)+'（請對照完整原題）'];
