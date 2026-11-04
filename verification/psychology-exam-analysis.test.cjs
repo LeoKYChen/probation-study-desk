@@ -40,6 +40,18 @@ assert.equal(new Set(target.map(q=>q.id)).size,104,'question IDs must be unique'
 const bySubject = target.reduce((acc,q)=>(acc[q.subject]=(acc[q.subject]||0)+1,acc),{});
 assert.equal(bySubject['心理學'],88);
 assert.equal(bySubject['心理測驗'],16);
+const ledger=JSON.parse(fs.readFileSync(path.join(root,'verification/psychology-original-paper-audit.json'),'utf8'));
+assert.equal(ledger.papers.length,26,'source ledger has 26 official PDF paper slots');
+assert.equal(ledger.counts.questions,104);
+assert.equal(new Set(ledger.papers.flatMap(p=>p.questionIds)).size,104);
+assert.equal(ledger.papers.reduce((n,p)=>n+p.questionIds.length,0),104,'no missing or overlapping question IDs');
+assert.equal(ledger.counts.papersWithOfficialTextReviewed,17,'verify reported progress precisely');
+assert.equal(ledger.counts.papersPending,9);
+const originalIds=new Set(target.map(q=>q.id));
+for (const paper of ledger.papers) {
+ assert.match(paper.sourceUrl,/^https:\/\/wwwq\.moex\.gov\.tw\/exam\/wHandExamQandA_File\.ashx\?/);
+ for (const id of paper.questionIds) assert.ok(originalIds.has(id),'unknown audited question ID '+id);
+}
 const notes = context.window.PsychologyExamCurated;
 assert.equal(Object.keys(notes).length,104,'all 104 questions must have editorial notes');
 const analysis = context.window.PsychologyExamAnalysis;
@@ -48,7 +60,7 @@ for(const q of target){
   const note=notes[q.id];
   assert.ok(note && note.d && note.s && note.c && note.p && /^[0-9a-f]{8}$/.test(note.sig),q.id+' curated fields and source fingerprint');
   const data=analysis.analyze(q);
-  assert.deepEqual(Array.from(data.requirements),Array.from(note.r),q.id+' human-reviewed question subtasks');
+  assert.deepEqual(Array.from(data.requirements),Array.from(note.r),q.id+' editorial question subtasks');
   assert.equal(data.reviewStatus.includes('非官方標準答案'),true,q.id);
   assert.ok(data.structure.some(x=>x.includes(note.s)),q.id+' unique command structure');
   assert.ok(data.tested.some(x=>x.includes(note.c)),q.id+' unique exam target');
