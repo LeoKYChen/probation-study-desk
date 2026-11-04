@@ -574,6 +574,15 @@
               <h3 id="pointTitle">考點拆分</h3>
               <ol id="pointList"></ol>
             </section>
+            <p class="source-note" id="psychAnalysisNotice" hidden></p>
+            <details class="topic-related" id="psychTeacherPanel" hidden>
+              <summary>二、從命題老師角度拆解</summary>
+              <ol id="psychTeacherItems"></ol>
+            </details>
+            <details class="topic-related" id="psychIntentPanel" hidden>
+              <summary>三、命題者究竟想考什麼（建議先作答後展開）</summary>
+              <ol id="psychIntentItems"></ol>
+            </details>
             <details class="topic-related" id="crimeRelatedPanel" hidden>
               <summary>本題考點與相似考題</summary>
               <div id="crimeRelatedContents"></div>
@@ -686,6 +695,7 @@
   <script src="related-questions.js"></script>
   <script src="../police-exams/questions.approved.js"></script>
   <script src="../police-exams/approved-loader.js"></script>
+  <script src="psychology-exam-analysis.js"></script>
   <script src="rubrics.js"></script>
   <script src="legal-pilots.js"></script>
   <script src="full-pilots.js"></script>
@@ -1363,6 +1373,8 @@
         $('questionBody').textContent = '請切換年度、科目或題源類科；部分類科並非每年舉辦。';
         $('sourceLink').hidden = true;
         $('pointList').innerHTML = '';
+        window.PsychologyExamAnalysis?.render(null);
+        $('pointTitle').textContent = '考點拆分';
         $('directionList').innerHTML = '';
         $('directionPanel').hidden = true;
         issueInput.value = '';
@@ -1397,9 +1409,13 @@
       $('sourceLink').hidden = false;
       $('sourceLink').href = q.sourceUrl;
       $('pointList').innerHTML = '';
-      q.points.forEach(point => {
-        const li = document.createElement('li'); li.textContent = point; $('pointList').appendChild(li);
-      });
+      const psychAnalysisShown = window.PsychologyExamAnalysis?.render(q) || false;
+      if (!psychAnalysisShown) {
+        $('pointTitle').textContent = '考點拆分';
+        q.points.forEach(point => {
+          const li = document.createElement('li'); li.textContent = point; $('pointList').appendChild(li);
+        });
+      }
       $('directionList').innerHTML = '';
       const legalPilot=window.TrialVersions.rubric(q.id,entry(q.id));
       (legalPilot?.calibration ? ['【逐題參考答案】', ...legalPilot.calibration.referenceParagraphs, '【待覆核事項】', ...legalPilot.calibration.openIssues] : legalPilot?legalPilot.criteria.map(row=>row.hint+'（'+row.section+'）'):q.direction).forEach(item => {
