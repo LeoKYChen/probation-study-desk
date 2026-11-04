@@ -46,7 +46,7 @@ const analysis = context.window.PsychologyExamAnalysis;
 for(const q of target){
   assert.equal(analysis.scope(q),true,q.id);
   const note=notes[q.id];
-  assert.ok(note && note.d && note.s && note.c && note.p,q.id+' curated fields');
+  assert.ok(note && note.d && note.s && note.c && note.p && /^[0-9a-f]{8}$/.test(note.sig),q.id+' curated fields and source fingerprint');
   const data=analysis.analyze(q);
   assert.deepEqual(Array.from(data.requirements),Array.from(note.r),q.id+' human-reviewed question subtasks');
   assert.equal(data.reviewStatus.includes('非官方標準答案'),true,q.id);
@@ -61,7 +61,11 @@ for(const q of target){
   assert.equal(els.psychTeacherPanel.hidden,false,q.id);
   assert.equal(els.psychIntentPanel.hidden,false,q.id);
 }
-const elkind=analysis.analyze(target.find(q=>q.id==='115-心理學-3'));
+const original=target.find(q=>q.id==='115-心理學-3');
+const elkind=analysis.analyze(original);
+const changed=analysis.analyze({...original,body:original.body+'【原題異動測試】'});
+assert.ok(changed.reviewStatus.includes('重新覆核'));
+assert.ok(!changed.tested.join(' ').includes('個人神話'),'stale analysis must not leak when question changes');
 assert.ok(elkind.requirements.some(r=>r.includes('Elkind')||r.includes('艾爾肯')));
 assert.ok(elkind.tested.some(r=>r.includes('個人神話')));
 assert.ok(elkind.requirements.some(r=>r.includes('兩種')));
