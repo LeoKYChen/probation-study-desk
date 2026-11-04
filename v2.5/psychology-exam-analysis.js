@@ -85,9 +85,26 @@
     if(moves.includes('成因與機制分析'))r.push('不能只羅列可能因素，應說明各因素與心理機制之間的關係。');
     return r.length?r.slice(0,4):['對照原題每一問作答，不要以一般心理學常識取代題目指定的概念與範圍。'];
   }
+  // Simple revision fingerprint, for accidental source drift detection (not a security hash).
+  function fingerprint(body) {
+    const text=clean(body);
+    let h=2166136261;
+    for(let i=0;i<text.length;i++) h=Math.imul(h^text.charCodeAt(i),16777619);
+    return (h>>>0).toString(16).padStart(8,'0');
+  }
   function analyze(q) {
     if(!scope(q)) return null;
     const note = root.PsychologyExamCurated?.[q.id];
+    if(note && note.sig && note.sig !== fingerprint(q.body)) {
+      const req=questions(q.body), acts=actions(req.join(' '));
+      return {
+        id:q.id, domain:domain(q), kind:mode(q,acts), actions:acts,
+        requirements:req,
+        structure:['題目文字與命題分析建立時的版本不一致，舊版逐題分析已暫停顯示。','請先逐項核對目前題幹與考選部原始試卷，完成重新覆核後再更新。'],
+        tested:['舊版學習解析與失分提醒已暫停顯示，以免用錯版本複習。','重新覆核前，請僅依現有題幹辨識作答要求。'],
+        reviewStatus:'⚠ 題幹版本異動：本題的專屬命題分析需重新覆核。原題及既有練習紀錄不受影響。'
+      };
+    }
     if(note && Array.isArray(note.r) && note.r.length) {
       const acts = actions(note.r.join(' '));
       const kind = note.k || mode(q, acts);
