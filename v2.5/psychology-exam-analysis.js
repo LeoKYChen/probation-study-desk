@@ -87,6 +87,26 @@
   }
   function analyze(q) {
     if(!scope(q)) return null;
+    const note = root.PsychologyExamCurated?.[q.id];
+    if(note && Array.isArray(note.r) && note.r.length) {
+      const acts = actions(note.r.join(' '));
+      const kind = note.k || mode(q, acts);
+      return {
+        id:q.id, domain:note.d, kind, actions:acts,
+        requirements:note.r,
+        structure:[
+          '主要知識領域：'+note.d+'；題目載體：'+kind+'。',
+          '原題的命題結構：'+note.s+'。',
+          '從命題者角度反向練習：保留本題指定的作答動作及必要數量，再替換合適的材料或情境；不得把不同學說混成同一理論。'
+        ],
+        tested:[
+          '題幹所指向的核心能力：'+note.c,
+          '容易漏答／混淆之處：'+note.p,
+          '命題意圖屬分析者推論，不是考選部命題委員說明，也不是唯一標準答案；請回到原題逐項作答。'
+        ],
+        reviewStatus:'已依平臺題幹逐題整理命題分析；尚未全部與考選部原卷逐字及獨立教材逐條校對。非官方標準答案。'
+      };
+    }
     const body=clean(q.body), req=questions(q.body), mv=actions(req.join(' ')), subjectDomain=domain(q), kind=mode(q,mv);
     const structure=mv.length?mv.slice(0,5).join(' → '):'辨識題目核心概念 → 按設問作答';
     const lead = '本題以「'+subjectDomain+'」為主要知識領域，採「'+kind+'」問法。';
