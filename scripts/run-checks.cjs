@@ -9,6 +9,7 @@ const NODE=[
   'verification/offline-stage4-check.cjs',
   'verification/practice-context-checks.cjs',
   'verification/all-subject-pilots.cjs',
+  'verification/psychology-exam-analysis.test.cjs',
   'verification/study-desk-weakness.cjs',
   'verification/law-scoring.cjs',
   'verification/theory-sources.cjs',
