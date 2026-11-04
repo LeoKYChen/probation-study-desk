@@ -369,7 +369,14 @@
     #yamolGuide .hint-external-actions, #yamolPartLinks { display:flex; flex-wrap:wrap; gap:10px; }
     #yamolGuide .hint-external-copy { min-width:0; }
     @media(max-width:600px) { #yamolGuide { flex-direction:column; align-items:stretch; } #yamolGuide .shuati-fallback { white-space:normal; } }
-  </style>
+  
+    /* Psychology per-question analysis: keep long technical terms readable on mobile. */
+    #psychTeacherPanel, #psychIntentPanel { overflow-wrap:anywhere; word-break:normal; }
+    #psychTeacherPanel[hidden], #psychIntentPanel[hidden] { display:none !important; }
+    #psychTeacherPanel ol, #psychIntentPanel ol { padding-left:1.45rem; margin:12px 0 0; line-height:1.7; }
+    #psychTeacherPanel li + li, #psychIntentPanel li + li { margin-top:10px; }
+    #psychAnalysisNotice { font-size:.86rem; line-height:1.6; overflow-wrap:anywhere; }
+</style>
   <link rel="stylesheet" href="study-map.css">
 <link rel="stylesheet" href="extension25.css"><style>#savedDrafts25{display:none!important}</style><link rel="stylesheet" href="../shared-ui.css">
 <script src="../juvenile-news/v25-entry.js" defer></script>
@@ -695,6 +702,10 @@
   <script src="related-questions.js"></script>
   <script src="../police-exams/questions.approved.js"></script>
   <script src="../police-exams/approved-loader.js"></script>
+  <script src="psychology-curated-main.js"></script>
+  <script src="psychology-curated-psychometrics.js"></script>
+  <script src="psychology-curated-related.js"></script>
+  <script src="psychology-curated-police.js"></script>
   <script src="psychology-exam-analysis.js"></script>
   <script src="rubrics.js"></script>
   <script src="legal-pilots.js"></script>
