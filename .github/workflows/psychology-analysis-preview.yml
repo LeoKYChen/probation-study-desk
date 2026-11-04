@@ -33,6 +33,7 @@ jobs:
           PSYCHOLOGY_BROWSER_ENGINE=webkit node verification/psychology-exam-browser.cjs
       - name: Assemble isolated preview
         run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
           python3 scripts/build-cloudflare-main-mirror.py
           python3 - <<'PY'
           from pathlib import Path
