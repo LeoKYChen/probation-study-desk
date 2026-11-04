@@ -19,6 +19,8 @@
     ['生理與神經心理學',/腦部|神經|生理因素|葡萄糖|飢餓|飽足|猝睡症/i]
   ];
   const verbs = [
+    ['概念辨識與判斷',/請問|最符合|何者|有那些|有哪些|那些|哪些|列出|列舉|寫出|屬於|何謂/],
+    ['理論選擇與應用',/理論|學派|觀點|模式|模型/],
     ['比較辨析',/比較|異同|差異|有何不同|區分/],
     ['概念與理論說明',/何謂|定義|意涵|意義|內容|概念|試述|闡述|說明|詳述|列舉|寫出/],
     ['成因與機制分析',/分析|解釋|為何|原因|機制|如何影響|作用|形成|歸因|影響/],
@@ -27,7 +29,7 @@
     ['數值計算與分數判讀',/計算|數值|GPA|百分等級|Z 分數|T 分數|信賴區間|標準差|鑑別度|難度（P）/],
     ['測驗與評估判斷',/衡鑑|評估|測驗|常模|效度|信度|量表|評析|倫理/]
   ];
-  const askPattern = /請|試問|試述|試以|何謂|如何|為何|那些|哪些|有何|說明|分析|比較|分述|論述|計算|解釋|提出|闡述|評析|列舉|舉例|？|疑問/;
+  const askPattern = /請|試問|試述|試以|何謂|如何|為何|那些|哪些|有何|說明|分析|比較|分述|論述|計算|解釋|提出|闡述|評析|列舉|舉例/;
   function scope(q) {
     return !!q && TARGETS.has(q.subject) && Number(q.year) >= 108 && Number(q.year) <= 115;
   }
@@ -40,25 +42,35 @@
     return verbs.filter(([,re])=>re.test(body)).map(([label])=>label);
   }
   function questions(body) {
-    const normalized=clean(body)
-      .replace(/([。？！；])/g,'$1\n')
-      .replace(/(（[一二三四五六七八]）|㈠|㈡|㈢|㈣|㈤|⑴|⑵|⑶|⑷)/g,'\n$1');
+    const original=clean(body);
+    // 子題優先：多問的資料題必須保留全部子題，不能被冗長案例背景擠掉。
+    const numbered=/(（[一二三四五六七八]）|㈠|㈡|㈢|㈣|㈤|⑴|⑵|⑶|⑷)/;
+    if(numbered.test(original)) {
+      const sections=original.split(/(?=（[一二三四五六七八]）|㈠|㈡|㈢|㈣|㈤|⑴|⑵|⑶|⑷)/)
+        .map(clean).filter(s=>/^(（[一二三四五六七八]）|㈠|㈡|㈢|㈣|㈤|⑴|⑵|⑶|⑷)/.test(s));
+      if(sections.length) {
+        const items=sections.slice(0,8).map(s=>s.length>270?s.slice(0,260)+'…（請回看完整題幹）':s);
+        return items.map(s=>s.length<25?'題目子項：'+s+'（須配合原題主問作答）':s);
+      }
+    }
+    const normalized=original.replace(/([。？！；])/g,'$1\n');
     const pieces=normalized.split(/\n/).map(clean).filter(Boolean);
     const demands=pieces.filter(s=>askPattern.test(s))
       .map(s=>s.replace(/^\s*[一二三四五六][、．]/,'').trim())
       .filter(s=>s.length>4);
-    const chosen=unique(demands).slice(0,5);
-    if(!chosen.length) return [clean(body).slice(-230) + '（請對照完整原題）'];
+    const chosen=unique(demands).slice(0,6);
+    if(!chosen.length) return [original.slice(-230)+'（請對照完整原題）'];
     return chosen.map(s=>s.length>270?s.slice(0,260)+'…（請回看完整題幹）':s);
   }
   function mode(q, moves) {
     const b=clean(q.body);
-    const context=/\b(?:個案|案例)\b|某位|某研究者|某標準化|小明|小敏|小玖|阿宏|阿明|阿丸|品明|甲生|乙生|受保護管束|請假想|假設|以.+為例|在.+情境|下列情境|下列試題|情境中的|某機構|某企業|您在|您是|17\s*歲|14\s*歲/.test(b);
-    const theoretical=moves.includes('比較辨析') || /何謂|試述|請說明|請解釋|理論|學派|概念/.test(b);
-    return context && theoretical ? '混合型（情境＋理論）' : context ? '個案／情境型' : '理論／知識型';
+    const givenContext=/個案|案例|某研究者|某標準化|小明|小敏|小玖|阿宏|阿明|阿丸|品明|甲生|乙生|受保護管束|請假想|假設|下列情境|下列試題|情境中的|某機構|某企業|您在|您是|17\s*歲|14\s*歲/.test(b);
+    const compared=moves.includes('比較辨析');
+    return givenContext && compared ? '混合型（情境＋比較）' : givenContext ? '個案／情境型' : '理論／知識型';
   }
   function risks(moves) {
     const r=[];
+    if(moves.includes('概念辨識與判斷'))r.push('要寫出題目指定的心理現象或概念名稱，並說明判斷依據。');
     if(moves.includes('比較辨析'))r.push('不要只分別背誦定義，須沿相同比較基準交代異同。');
     if(moves.includes('數值計算與分數判讀'))r.push('不能只列出公式或數字；須呈現計算步驟、數值意義與推論限制。');
     if(moves.includes('案例／情境應用'))r.push('不能只背理論，應逐項連結題示的事實或情境。');
@@ -69,7 +81,7 @@
   }
   function analyze(q) {
     if(!scope(q)) return null;
-    const body=clean(q.body), mv=actions(body), req=questions(q.body), subjectDomain=domain(q), kind=mode(q,mv);
+    const body=clean(q.body), req=questions(q.body), mv=actions(req.join(' ')), subjectDomain=domain(q), kind=mode(q,mv);
     const structure=mv.length?mv.slice(0,5).join(' → '):'辨識題目核心概念 → 按設問作答';
     const lead = '本題以「'+subjectDomain+'」為主要知識領域，採「'+kind+'」問法。';
     const analysis = [
@@ -92,9 +104,12 @@
     host.replaceChildren();
     items.forEach(item=>{const li=document.createElement('li');li.textContent=item;host.appendChild(li);});
   }
+  let lastQuestionId = null;
   function render(q) {
     const second=$('psychTeacherPanel'),third=$('psychIntentPanel'),pointList=$('pointList'),pointTitle=$('pointTitle'),notice=$('psychAnalysisNotice');
     const data=analyze(q);
+    const changedQuestion = lastQuestionId !== (q?.id || null);
+    lastQuestionId = q?.id || null;
     if(second)second.hidden=!data;
     if(third)third.hidden=!data;
     if(notice)notice.hidden=!data;
@@ -105,8 +120,8 @@
     setList($('psychIntentItems'),data.tested);
     if(notice)notice.textContent=data.reviewStatus;
     // 教學內容預設不展開；換題時不可保留上一題的展開狀態。
-    if(second)second.open=false;
-    if(third)third.open=false;
+    if(changedQuestion && second)second.open=false;
+    if(changedQuestion && third)third.open=false;
     return true;
   }
   root.PsychologyExamAnalysis=Object.freeze({scope,analyze,render});
