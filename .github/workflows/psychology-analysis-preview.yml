@@ -69,5 +69,6 @@ jobs:
           PSYCHOLOGY_E2E_BASE_URL: https://psychology-analysis-20261104.probation-study30-test.pages.dev/
         run: |
           python3 scripts/verify-published-bytes.py cloudflare-main-mirror-dist "$PSYCHOLOGY_E2E_BASE_URL"
+          npm install --no-save --ignore-scripts --no-audit playwright@1.62.1
           PSYCHOLOGY_BROWSER_ENGINE=chromium node verification/psychology-exam-browser.cjs
           PSYCHOLOGY_BROWSER_ENGINE=webkit node verification/psychology-exam-browser.cjs
