@@ -61,7 +61,11 @@
       .map(s=>s.replace(/^\s*[一二三四五六][、．]/,'').replace(/^["”」]\s*/, '').trim())
       .filter(s=>s.length>4);
     const chosen=unique(demands).slice(0,6);
-    if(!chosen.length) return [original.slice(-230)+'（請對照完整原題）'];
+    if(!chosen.length) {
+      const firstQuestion=original.indexOf('？');
+      if(firstQuestion>=0) return [original.slice(0,firstQuestion+1), '如原題另有統計資料、分數或計算條件，須使用原題所給的資料進行推論；此處不提供計算答案。'];
+      return [original.slice(-230)+'（請對照完整原題）'];
+    }
     return chosen.map(s=>s.length>270?s.slice(0,260)+'…（請回看完整題幹）':s);
   }
   function mode(q, moves) {
