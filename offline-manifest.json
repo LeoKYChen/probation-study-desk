@@ -206,10 +206,10 @@
       "url": "daily-simulation/model.js"
     },
     {
-      "url": "daily-simulation/news-storage.js"
+      "url": "daily-simulation/news.js"
     },
     {
-      "url": "daily-simulation/news.js"
+      "url": "daily-simulation/news-storage.js"
     },
     {
       "url": "daily-simulation/practice.css"
@@ -578,13 +578,13 @@
       "url": "v2.5/psychology-curated-main.js"
     },
     {
-      "url": "v2.5/psychology-curated-police.js"
-    },
-    {
       "url": "v2.5/psychology-curated-psychometrics.js"
     },
     {
       "url": "v2.5/psychology-curated-related.js"
+    },
+    {
+      "url": "v2.5/psychology-curated-police.js"
     },
     {
       "url": "v2.5/psychology-exam-analysis.js"
