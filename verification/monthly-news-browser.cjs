@@ -55,6 +55,7 @@ const wait=(page,expected)=>page.waitForFunction(x=>{
    const initialRequests=requests.length;
    await page.goto(new URL('daily-simulation/',base).href);
    await page.locator('#newsMonth option[value="2026-09"]').waitFor({state:'attached'});
+   await page.locator('#menu').click();
    await page.locator('button[data-tab="全部閱讀資料"]').first().click();
    await wait(page,counts[index.manifest.activeMonth]);
    assert.equal(await page.locator('#newsMonth').inputValue(),index.manifest.activeMonth);
