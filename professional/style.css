@@ -207,22 +207,3 @@
 .daily30-external .source-uncertain{color:#82511d;font-size:.86rem}
 .daily30-external .guide-caption{font-size:.84rem;color:#566b5d;line-height:1.5}
 @media(max-width:680px){.daily30-external .link-grid{display:grid;grid-template-columns:1fr}.daily30-external a{width:100%;text-align:center}}
-
-/* Study30 mobile review choice + external answer link: full-width, touch-friendly controls. */
-.daily30-answer-link{min-width:0;margin:20px 0 16px}
-.daily30-answer-link>label{display:block;font-size:15px;font-weight:800;margin-bottom:9px;color:var(--ink)}
-.daily30-answer-link input{display:block;width:100%;max-width:100%;min-width:0;box-sizing:border-box;min-height:48px;border:1px solid #b5c8d6;border-radius:10px;padding:11px 13px;background:#fff;color:var(--ink);font:inherit;font-size:16px}
-.daily30-answer-link-foot{display:flex;gap:9px 14px;flex-wrap:wrap;align-items:center;margin-top:8px}
-.daily30-answer-link-foot p{margin:0;overflow-wrap:anywhere}
-.daily30-answer-link-foot a{color:#145a4c;font-size:14px;font-weight:750;overflow-wrap:anywhere}
-.daily30-ai{min-width:0}
-.daily30-mode-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;min-width:0;border:0;padding:0;margin:0 0 20px}
-.daily30-mode-options legend{font-size:16px;font-weight:800;color:var(--ink);padding:0 0 10px}
-.daily30-ai label.daily30-mode-option{display:flex;min-width:0;gap:10px;align-items:flex-start;padding:14px 12px;margin:0;border:1px solid #b9cdc8;border-radius:12px;background:#fff;cursor:pointer;line-height:1.5}
-.daily30-mode-option:has(input:checked){border-color:#315b7c;background:#edf6f8;box-shadow:inset 0 0 0 1px #315b7c}
-.daily30-mode-option input{flex:0 0 auto;width:18px;height:18px;accent-color:#315b7c;margin:3px 0 0}
-.daily30-mode-option span{min-width:0}
-.daily30-mode-option strong{display:block;font-size:15px;color:var(--ink);overflow-wrap:anywhere}
-.daily30-mode-option small{display:block;margin-top:5px;color:#536a6d;font-size:13px;font-weight:450;overflow-wrap:anywhere}
-.daily30-internal-mode{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;opacity:0;pointer-events:none;clip-path:inset(50%);overflow:hidden}
-@media(max-width:680px){.daily30-ai{padding:16px}.daily30-mode-options{grid-template-columns:minmax(0,1fr);gap:10px}.daily30-ai label.daily30-mode-option{padding:14px}.daily30-answer-link-foot{align-items:flex-start;flex-direction:column}.daily30-answer-link-foot a{min-height:30px}}
