@@ -148,3 +148,59 @@ function manualQuestionCommitMonthly_(cfg,before,after,state) {
     throw new Error('GitHub 已提交但未核對成功；請查最新 SHA，勿盲目重試');
   return {sha:commit.sha,questionsChanged:!sameQuestions,newShards:created,reusedShards:reused,filesChanged:writes.length};
 }
+
+/**
+ * Exceptional manual repair. Reads and validates monthly JSON, rebuilds only
+ * missing/outdated ZIP JS representations; never rewrites any questions or IDs.
+ */
+function repairMonthlyQuestionOfflineBridge() {
+  var lock=LockService.getScriptLock();
+  if(!lock.tryLock(1000))throw new Error('已有題庫同步，離線修復暫停');
+  try {
+    var cfg=manualQuestionCfg_();
+    var head=psdBridgeApi_(cfg,'get','git/ref/heads/'+encodeURIComponent(cfg.branch)).object.sha;
+    var pinned={repo:cfg.repo,branch:head,token:cfg.token};
+    var manifest=manualQuestionRead_(cfg,'daily-simulation/questions-monthly.json',head,false);
+    manualQuestionReadMonthly_(cfg,manifest.data,head); // Full SHA/ID/count integrity check.
+    var outputs=[],index=manifest.data;
+    function script(key,value,comment) {
+      var obj={};obj[key]=value;
+      return comment+'\n(function(){if(typeof window.PSDRegisterFileData==="function")window.PSDRegisterFileData('+
+        JSON.stringify(obj).replace(/</g,'\\u003c').replace(/\u2028/g,'\\u2028').replace(/\u2029/g,'\\u2029')+');})();\n';
+    }
+    outputs.push({path:'file-data/questions-monthly.generated.js',
+      content:script('daily-simulation/questions-monthly.json',index,'/* GENERATED question month manifest; do not edit. */')});
+    index.months.forEach(function(m){m.shards.forEach(function(part){
+      var key='daily-simulation/'+part.path;
+      var shard=manualQuestionRead_(cfg,key,head,false).data;
+      outputs.push({path:'file-data/'+part.path.replace(/\.json$/,'.js'),
+        content:script(key,shard,'/* GENERATED question shard; do not edit. */')});
+    });});
+    var changes=[];
+    outputs.forEach(function(f){
+      var expect=psdBridgeSha1_(Utilities.newBlob(f.content).getBytes()),existing;
+      try{existing=psdBridgeMeta_(pinned,f.path);}
+      catch(e){if(e.httpStatus!==404)throw e;}
+      if(!existing||existing.sha!==expect)
+        changes.push({path:f.path,mode:'100644',type:'blob',content:f.content});
+    });
+    if(!changes.length){console.log('月份題庫離線 JS 全部正確，無需重新上傳。');return {changed:false,checked:outputs.length};}
+    if(psdBridgeApi_(cfg,'get','git/ref/heads/'+encodeURIComponent(cfg.branch)).object.sha!==head)
+      throw new Error('核對期間 GitHub HEAD 更新，取消修復');
+    var commit=psdBridgeApi_(cfg,'get','git/commits/'+head);
+    var tree=psdBridgeApi_(cfg,'post','git/trees',{base_tree:commit.tree.sha,tree:changes});
+    var next=psdBridgeApi_(cfg,'post','git/commits',{message:'build(daily): repair monthly questions ZIP wrappers',
+      tree:tree.sha,parents:[head]});
+    psdBridgeApi_(cfg,'patch','git/refs/heads/'+encodeURIComponent(cfg.branch),{sha:next.sha,force:false});
+    if(psdBridgeApi_(cfg,'get','git/ref/heads/'+encodeURIComponent(cfg.branch)).object.sha!==next.sha)
+      throw new Error('修復已提交但未核對，勿盲目重試');
+    var verified={repo:cfg.repo,branch:next.sha,token:cfg.token};
+    changes.forEach(function(c){
+      var meta=psdBridgeMeta_(verified,c.path);
+      if(meta.sha!==psdBridgeSha1_(Utilities.newBlob(c.content).getBytes()))
+        throw new Error('離線題庫回讀核對失敗：'+c.path);
+    });
+    console.log('月份題庫離線 JS 修復並回讀：'+changes.length+' 檔');
+    return {changed:true,filesChanged:changes.length,commit:next.sha};
+  } finally {lock.releaseLock();}
+}
