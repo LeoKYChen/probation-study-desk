@@ -95,7 +95,7 @@ function manualNewsCommitMonthly_(cfg,previous,next) {
   });
   if(total!==next.documents.length)throw new Error('月份寫入總筆數不符');
   var catalog=next.documents.map(function(d){
-    return {id:d.id,month:d.date.slice(0,7),date:d.date,title:d.title,tags:d.tags,excerpt:d.excerpt||'',url:d.url};
+    return {id:d.id,month:d.date.slice(0,7),date:d.date,title:d.title,modified:d.modified,mime:d.mime||'text/markdown',tags:d.tags,excerpt:d.excerpt||'',url:d.url};
   });
   var manifest={schemaVersion:3,count:next.documents.length,activeMonth:allMonths[0],
     sync:next.sync,months:monthEntries,catalog:catalog};
