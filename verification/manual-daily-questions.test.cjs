@@ -122,7 +122,7 @@ test('new item goes into same atomic commit with questions, source-state and off
   {head:'head',questionSha:'question-sha',data:before},after,
   {schemaVersion:1,sources:{'md-a':{kind:'markdown',modified:'2026-11-05T00:00:00Z',nameSha256:'abc'}}});
  assert.equal(saved.questionsChanged,true);
- assert.deepEqual(tree.map(x=>x.path).sort(),['daily-simulation/questions.json',
+ assert.deepEqual(Array.from(tree,x=>x.path).sort(),['daily-simulation/questions.json',
   'file-data/daily.generated.js','scripts/sync-state/daily-question-sources.json'].sort());
  assert.equal(JSON.parse(tree[0].content).questions.length,126);
  assert.equal(patches,1);
