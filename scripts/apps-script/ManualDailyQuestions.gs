@@ -154,7 +154,9 @@ function manualSyncDailyQuestions() {
   try{
     var cfg=manualQuestionCfg_();
     var head=psdBridgeApi_(cfg,'get','git/ref/heads/'+encodeURIComponent(cfg.branch)).object.sha;
-    var questions=manualQuestionRead_(cfg,'daily-simulation/questions.json',head,false);
+    var monthly=manualQuestionRead_(cfg,'daily-simulation/questions-monthly.json',head,true);
+    var questions=monthly?{sha:monthly.sha,data:{questions:monthly.data.catalog}}:
+      manualQuestionRead_(cfg,'daily-simulation/questions.json',head,false);
     var source=manualQuestionRead_(cfg,PSD_DAILY_SOURCE_STATE_PATH_,head,true);
     var state=source?source.data:{schemaVersion:1,sources:{}};
     if(!state||state.schemaVersion!==1||!state.sources||typeof state.sources!=='object'||
@@ -171,16 +173,20 @@ function manualSyncDailyQuestions() {
       if(s.metadata.kind==='google')selectedGoogle.add(s.id);
       else selectedMarkdown.add(s.id);
     });
-    // Uses the original 2026-11-05 parser, identity and human-correction rules.
-    var parsed=mdCollect_({googleIds:selectedGoogle,mdIds:selectedMarkdown,strict:true});
+    var original=monthly?manualQuestionReadMonthly_(cfg,monthly.data,head):questions.data;
+    // Uses the original user-supplied parser, identity and human-correction rules.
+    var parsed=mdCollect_({googleIds:selectedGoogle,mdIds:selectedMarkdown,strict:true,
+      previousDataset:monthly?original:null});
     if(!parsed||!parsed.data||!Array.isArray(parsed.data.questions))
       throw new Error('題庫解析器沒有回傳可驗證的題目');
-    var next=parsed.data,original=questions.data;
+    var next=parsed.data;
     manualQuestionValidate_(original,next);
     var nextState={schemaVersion:1,sources:Object.assign({},state.sources),
       updatedAt:new Date().toISOString()};
     batch.selected.forEach(function(s){nextState.sources[s.key]=s.metadata;});
-    var saved=manualQuestionCommit_(cfg,{head:head,questionSha:questions.sha,data:original},next,nextState);
+    var saved=monthly?
+      manualQuestionCommitMonthly_(cfg,{head:head,indexSha:monthly.sha,index:monthly.data,data:original},next,nextState):
+      manualQuestionCommit_(cfg,{head:head,questionSha:questions.sha,data:original},next,nextState);
     manualQuestionSaveCursor_(batch.cursor);
     var result={mode:'committed',processed:batch.selected.length,skipped:batch.skipped,
       hasMore:!!batch.cursor,questionsChanged:saved.questionsChanged,filesChanged:saved.filesChanged,
@@ -197,7 +203,9 @@ function previewManualDailyQuestions() {
   try{
     var cfg=manualQuestionCfg_();
     var head=psdBridgeApi_(cfg,'get','git/ref/heads/'+encodeURIComponent(cfg.branch)).object.sha;
-    var questions=manualQuestionRead_(cfg,'daily-simulation/questions.json',head,false);
+    var monthly=manualQuestionRead_(cfg,'daily-simulation/questions-monthly.json',head,true);
+    var questions=monthly?{sha:monthly.sha,data:{questions:monthly.data.catalog}}:
+      manualQuestionRead_(cfg,'daily-simulation/questions.json',head,false);
     var progress=manualQuestionRead_(cfg,PSD_DAILY_SOURCE_STATE_PATH_,head,true);
     var state=progress?progress.data:{schemaVersion:1,sources:{}};
     if(state.schemaVersion!==1||!state.sources||Array.isArray(state.sources))
@@ -209,9 +217,10 @@ function previewManualDailyQuestions() {
     if(batch.selected.length){
       var gd=new Set(),md=new Set();
       batch.selected.forEach(function(s){if(s.metadata.kind==='google')gd.add(s.id);else md.add(s.id);});
-      var next=mdCollect_({googleIds:gd,mdIds:md,strict:true}).data;
-      manualQuestionValidate_(questions.data,next);
-      var ids={};questions.data.questions.forEach(function(q){ids[q.id]=true;});
+      var original=monthly?manualQuestionReadMonthly_(cfg,monthly.data,head):questions.data;
+      var next=mdCollect_({googleIds:gd,mdIds:md,strict:true,previousDataset:monthly?original:null}).data;
+      manualQuestionValidate_(original,next);
+      var ids={};original.questions.forEach(function(q){ids[q.id]=true;});
       var added=next.questions.filter(function(q){return !ids[q.id];});
       result.newQuestions=added.map(function(q){return {id:q.id,date:q.date,subject:q.subject};});
       result.proposedCount=next.count;
