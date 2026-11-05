@@ -61,6 +61,7 @@ jobs:
             UNIFIED_BROWSER_ENGINE="$engine" node verification/cloudflare-migration.cjs cloudflare-main-mirror-dist
             UNIFIED_BROWSER_ENGINE="$engine" node verification/unified-browser.cjs cloudflare-main-mirror-dist
             UNIFIED_BROWSER_ENGINE="$engine" node verification/layout-review-browser.cjs cloudflare-main-mirror-dist
+            UNIFIED_BROWSER_ENGINE="$engine" node verification/monthly-news-browser.cjs cloudflare-main-mirror-dist
             UNIFIED_BROWSER_ENGINE="$engine" node verification/mobile-home-desk-nav.cjs cloudflare-main-mirror-dist
           done
   validate-and-sync:
