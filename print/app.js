@@ -8,7 +8,7 @@
  function appendText(host,tag,cls,value){const n=el(tag,cls,value);host.append(n);return n;}
  async function dailyQuestions(){
   try{
-   const data=await window.QuestionStorage.load(url=>fetch(new URL(url,'../daily-simulation/'),{cache:'no-store'}));
+   const data=await window.QuestionStorage.load(url=>fetch(new URL(url,new URL('../daily-simulation/',location.href)),{cache:'no-store'}));
    if(!Array.isArray(data.questions))throw Error('每日題庫格式不符');
    return data.questions;
   }catch(error){
