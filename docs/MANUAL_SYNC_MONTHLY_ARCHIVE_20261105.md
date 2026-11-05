@@ -1,5 +1,9 @@
 # 手動增量同步與月份封存 v1.0（2026-11-05）
 
+## 目前最新狀態（2026-11-05：以此節為準）
+
+每日模擬題 245 題已在 PR #126 實際分為 2026-11 20 題（1檔）、2026-10 219 題（3檔）、2026-09 6 題（1檔），每檔 <= 900,000 UTF-8 bytes。新頁面讀取器、月份篩選、原 ID 保護、ZIP/PWA、列印、手動題庫增量寫入器與回歸測試已加入草稿 PR。舊 `questions.json` 暫存為相容回復基準，不再是新月度寫入器的更新目標。完整依賴/驗收/切換計畫見 [`MONTHLY_QUESTIONS_CUTOVER_20261105.md`](MONTHLY_QUESTIONS_CUTOVER_20261105.md)。**正式站及 Apps Script 均未部署/停用排程。**
+
 **狀態：測試分支程式碼；正式 Apps Script 尚未安裝，正式網站尚未切換。**
 
 ## 確認的需求
@@ -97,7 +101,7 @@
 ### 切換正式站前的關鍵保留事項
 
 - 不要只把 v3 documents.json 上傳到正式 main；必須在**同一個經審查的發布版本**包含所有月份索引、全部引用的新聞 shard、新版 reader、ZIP 橋接與 PWA。
-- `syncDailyResources` 的正式 Apps Script 原始碼仍未取得，因此**每日模擬題同步器尚未改造**；不能聲稱整體每日題庫已採手動增量。
+- 已取得使用者提供的 `syncDailyResources` 完整來源，手動增量題庫程式已完成測試分支改造；正式 Apps Script 仍未安裝，不能聲稱已在正式站啟用。
 - 未修改正式 Google Apps Script 指令碼專案，也沒有停用正式時間觸發器。須在完整測試及備份完成後，才手動執行停用入口。
 - 尚未合併 PR #126，亦未在正式站啟用 v3。既有 239 篇已發布新聞仍由現行 v2 索引提供服務。
 - 分檔與封存改善**單次處理、瀏覽器下載及更新成本**，並不移除 GitHub 歷史儲存量或 Apps Script 的執行時間限制。
@@ -112,7 +116,7 @@
 - 讀者切換月份時保留所在閱讀分頁，避免強制回到新聞首頁。
 - 如 v3 轉換需要指定月份離線閱讀，必須先確定對應月份的 ZIP 子索引 JS 和 shard JS 都已包含在 ZIP，不能僅靠主索引宣稱離線可讀。
 
-**尚未完成正式 cutover。** GitHub PR #126 保持草稿；目前實際正式資料仍為 v2，正式 Apps Script 原版 syncDailyResources 仍待取得，無法宣稱每日模擬題已完成手動增量。
+**尚未完成正式 cutover。** GitHub PR #126 保持草稿；新聞正式資料仍為 v2；每日題庫測試分支已建立月份索引與分檔，正式網站及 Apps Script 尚未切換。
 
 ## 第五階段：每日模擬題 v3.4.2 原始程式已取得，增量同步測試版已加入
 
@@ -124,7 +128,7 @@
 - `scripts/apps-script/ManualDailyQuestions.gs`：新增 `previewManualDailyQuestions()`（只讀預覽，不提交、不移動游標），核對後才手動呼叫 `manualSyncDailyQuestions()`。正式同步只有人工呼叫時才工作。每批最多三份變動來源。
 - `scripts/apps-script/ManualDailyQuestions.gs`：只在手動呼叫 `manualSyncDailyQuestions()` 時工作。每批最多解析 3 份新增／已改來源；Google Docs 和 Markdown 都先比對 Drive 檔案修改時間、名稱雜湊與已提交成功狀態；未改來源不讀全文。
 - GitHub 來源進度檔：`scripts/sync-state/daily-question-sources.json`（**首次成功執行時才由程式建立，不是這個 PR 已產生的真實進度**）。只記錄不可逆的來源 ID 雜湊、類型、修改時間、檔名雜湊，沒有原始 Drive ID、檔名、token 或全文。Cloudflare 靜態網站鏡像不包含 `scripts/`。
-- 以 Drive FileIterator continuation token 儲存進度；失敗時不前移游標。GitHub source-state 更新與必要的 `daily-simulation/questions.json`、`file-data/daily.generated.js` 在同一個 Git tree commit 中原子提交。
+- 以 Drive FileIterator continuation token 儲存進度；失敗時不前移游標。已啟用月份格式時，GitHub source-state 與必要的 `questions-monthly.json`、變動 shard、對應 ZIP JS 在同一 Git tree commit 原子提交；舊版路徑僅供未遷移的相容情境。
 - 無題庫文字變動時，只提交新的私有來源成功紀錄，不重寫既有題庫或離線 JS；若連來源也沒變動，則 GitHub **完全不提交**。
 - 題號、日期、科目、人工訂正的完整題目物件與舊題總數均有保護。既有答題、IndexedDB 和收藏鍵未修改。
 - `resetManualQuestionScan()` 只能清除掃描游標，不會刪來源成功紀錄、題目、作答或新聞。
@@ -145,5 +149,5 @@
 ### 尚未完成的部分
 
 - 正式 Apps Script 遠端實際執行、觸發器切換、GitHub main/Cloudflare 正式部署**均未執行**。
-- 新增的題庫同步採來源增量和原子提交，但仍維持目前既有的 `questions.json` 單檔格式。**每日模擬題按月分檔、按月下載離線包與按月封存尚未完成**；不可把已完成的新聞按月封存誤認成題庫也完成。
+- 每日模擬題已在 PR #126 實際產生 5 個 SHA-256 分檔、月份索引、閱讀篩選、ZIP JS 與 PWA 快取，保留舊版 `questions.json` 作為凍結回復快照。**正式 Apps Script 與正式站尚未切換**；詳見 `docs/MONTHLY_QUESTIONS_CUTOVER_20261105.md`。
 - `source-state` 版本目前的來源時間戳更新依靠 Drive 修改時間，無法偵測內容不變但來源修改時間也被外部系統刻意偽造的情形；若來源需要更嚴格稽核，仍可進行抽查校驗。
