@@ -113,3 +113,36 @@
 - 如 v3 轉換需要指定月份離線閱讀，必須先確定對應月份的 ZIP 子索引 JS 和 shard JS 都已包含在 ZIP，不能僅靠主索引宣稱離線可讀。
 
 **尚未完成正式 cutover。** GitHub PR #126 保持草稿；目前實際正式資料仍為 v2，正式 Apps Script 原版 syncDailyResources 仍待取得，無法宣稱每日模擬題已完成手動增量。
+
+## 第五階段：每日模擬題 v3.4.2 原始程式已取得，增量同步測試版已加入
+
+來源：使用者提供的 `貼上的文字 (1)(9).txt`（2026-11-05；原有 `syncDailyResources`、`mdCollect_`、`mdReadGoogleBank_` 等完整程式）。不需要重新上傳已存在的網站題目。
+
+### 新增檔案與行為
+
+- `scripts/apps-script/DailyResourcesSelective.gs`：保留使用者原始解析器及「人工訂正、舊題 ID 不可被覆寫」檢查。只有新增選擇性來源過濾（Google / Markdown）、`strict` 來源錯誤中止，以及舊版 `syncDailyResources()` 預設禁止全量同步的保護。這份檔案是**原先每日模擬題 .gs 檔案的替換版本**，不是另一個可以與同名函式共存的額外檔案。
+- `scripts/apps-script/ManualDailyQuestions.gs`：只在手動呼叫 `manualSyncDailyQuestions()` 時工作。每批最多解析 3 份新增／已改來源；Google Docs 和 Markdown 都先比對 Drive 檔案修改時間、名稱雜湊與已提交成功狀態；未改來源不讀全文。
+- GitHub 來源進度檔：`scripts/sync-state/daily-question-sources.json`（**首次成功執行時才由程式建立，不是這個 PR 已產生的真實進度**）。只記錄不可逆的來源 ID 雜湊、類型、修改時間、檔名雜湊，沒有原始 Drive ID、檔名、token 或全文。Cloudflare 靜態網站鏡像不包含 `scripts/`。
+- 以 Drive FileIterator continuation token 儲存進度；失敗時不前移游標。GitHub source-state 更新與必要的 `daily-simulation/questions.json`、`file-data/daily.generated.js` 在同一個 Git tree commit 中原子提交。
+- 無題庫文字變動時，只提交新的私有來源成功紀錄，不重寫既有題庫或離線 JS；若連來源也沒變動，則 GitHub **完全不提交**。
+- 題號、日期、科目、人工訂正的完整題目物件與舊題總數均有保護。既有答題、IndexedDB 和收藏鍵未修改。
+- `resetManualQuestionScan()` 只能清除掃描游標，不會刪來源成功紀錄、題目、作答或新聞。
+
+### 第一次建立成功紀錄的限制
+
+舊系統沒有每一個 Google Drive / Markdown 來源的修改時間基準。第一次執行時不能只因題庫裡已有相同 ID 就假設來源一定沒改過，因此**需要逐批重新驗證來源一次**；如果核對後發現題庫內容不變，只有來源紀錄更新，既有已發布的題目 JSON 和離線 JS 完全不重新上傳。以後來源未變即可直接略過。這是防止漏收而不是重做所有網站資料。
+
+### 安裝與切換順序（目前僅規劃，未在正式 Apps Script 安裝）
+
+1. 備份正式 Apps Script 原始的每日題庫檔案、觸發器、指令碼屬性、既有 `questions.json`，不要提供 GitHub Token。
+2. 在**隔離測試專案**把原有每日題庫程式換為 `DailyResourcesSelective.gs`（不可同時保留兩套同名函式），並新增 `ManualDailyQuestions.gs`；保留 `OfflineBridge.gs`。原有 `readDailyTabs_`、`dailySection_` 等專案內既有的輔助函式必須保留，因提供的原始檔引用它們。
+3. 確認 `SOURCE_FOLDER_ID`、`MD_SOURCE_FOLDER_ID`、`GITHUB_REPO/BRANCH/TOKEN` 等設定。手動測試只處理具權限的測試資料、測試 GitHub 目標；目前 `psdBridgeConfig_('daily')` 限制為 `main`，**不可直接在正式帳號上執行測試版**。
+4. 模擬及核對：未變動來源無正文讀取、來源失敗不前移、題號完整保留、人工訂正不覆寫、GitHub 原子提交後可讀回、離線 JS 與 JSON 一致。
+5. 正式驗收後才人工停用 `syncDailyResources` 的時間觸發器；日後只在需要更新時執行 `manualSyncDailyQuestions()`。新聞另用 `manualSyncReadingNews()`。
+6. GitHub 寫入成功不是網站部署成功；Cloudflare release gate、離線 ZIP、實際網站及原始題數要另行驗證。
+
+### 尚未完成的部分
+
+- 正式 Apps Script 遠端實際執行、觸發器切換、GitHub main/Cloudflare 正式部署**均未執行**。
+- 新增的題庫同步採來源增量和原子提交，但仍維持目前既有的 `questions.json` 單檔格式。**每日模擬題按月分檔、按月下載離線包與按月封存尚未完成**；不可把已完成的新聞按月封存誤認成題庫也完成。
+- `source-state` 版本目前的來源時間戳更新依靠 Drive 修改時間，無法偵測內容不變但來源修改時間也被外部系統刻意偽造的情形；若來源需要更嚴格稽核，仍可進行抽查校驗。
