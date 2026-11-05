@@ -10,10 +10,11 @@ function manualSyncReadingNews() {
   if(!lock.tryLock(1000))throw new Error('已有同步進行中，請稍後再手動執行。');
   try {
     var cfg=readingNewsConfig_(),old=readingNewsReadGithub_(cfg);
-    var batch=manualNewsScan_(cfg,old.data,3,125000);
+    var batch=manualNewsScan_(cfg,old.data,3,90000);
     if(!batch.changed.length) {
       manualNewsSaveCursor_(batch.cursor);
       var noop={mode:'unchanged',changed:0,skipped:batch.skipped,failed:batch.errors.length,hasMore:!!batch.cursor};
+      PropertiesService.getScriptProperties().setProperty('PSD_MANUAL_NEWS_LAST_RESULT',JSON.stringify(noop));
       Logger.log('沒有需要重新上傳的文件；'+JSON.stringify(noop));
       return noop;
     }
@@ -24,8 +25,8 @@ function manualSyncReadingNews() {
       return b.date.localeCompare(a.date)||b.modified.localeCompare(a.modified)||a.id.localeCompare(b.id);
     });
     var next={schemaVersion:1,documents:docs,sync:{
-      syncedAt:new Date().toISOString(),status:batch.errors.length?'partial':'success',
-      sourceCount:batch.checked,errors:batch.errors
+      syncedAt:new Date().toISOString(),status:batch.errors.length||batch.cursor?'partial':'success',
+      sourceCount:(old.data.sync&&old.data.sync.sourceCount)||old.data.documents.length,errors:batch.errors
     }};
     readingNewsValidate_(next);
     // 驗證並原子提交索引 + 有異動的分檔 + 離線 JS；未變更的分檔只保留路徑。
