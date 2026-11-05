@@ -179,3 +179,34 @@ test('parsing failure never checkpoints source or advances the manual cursor',()
  assert.equal(writes,0);
  assert.equal(properties.get('PSD_MANUAL_QUESTIONS_CURSOR'),undefined);
 });
+
+test('original Google Docs parser actually opens only the selected source and preserves published IDs',()=>{
+ const previous=bank();previous.updatedAt='2026-11-01T00:00:00.000Z';
+ const r=runtime();
+ const ctx=r.ctx;
+ const opened=[];
+ const text=[
+  '# 晚間摘要與觀護人考試',
+  '日期：2026-11-05',
+  '## 觀護人考試專區（週四：少年事件處理法）',
+  '輪替科目：少年事件處理法',
+  '### 題目設計',
+  '少年甲因受到同儕團體影響，反覆在便利商店行竊。請依少年事件處理法之保護目的分析適當處遇與應注意的少年權益保障。',
+  '### 核心爭點與複習方向',
+  '保護處分與個別處遇',
+  '### 答題架構建議',
+  '先列爭點，再說明法律規範及個案涵攝。'
+ ].join('\n');
+ const docs=[Object.assign(file('a','old.doc','2026-11-05T00:00:00Z'),{}),
+  Object.assign(file('b','new.doc','2026-11-05T00:00:00Z'),{})];
+ ctx.DriveApp={getFolderById:()=>({getFilesByType:()=>iterator(docs)})};
+ ctx.DocumentApp={openById:id=>{opened.push(id);return {getTabs:()=>[]};}};
+ ctx.readDailyTabs_=()=>[{text,tables:[]}];
+ ctx.dailySection_=()=> '';
+ vm.runInContext(original,ctx);
+ const out=ctx.mdReadGoogleBank_(previous,[],{googleIds:new Set(['b']),strict:true});
+ assert.deepEqual(opened,['b']);
+ assert.equal(out.questions.length,1);
+ assert.equal(out.questions[0].id,'gd-b-1');
+ assert.equal(previous.questions.length,125);
+});
