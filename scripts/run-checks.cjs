@@ -5,6 +5,7 @@ const root=path.resolve(__dirname,'..');
 const NODE=[
   'scripts/check-duplicate-copies.cjs',
   'scripts/build-monthly-news.cjs',
+  'scripts/build-monthly-questions.cjs',
   'verification/dual-ai-handoff.cjs',
   'verification/check-daily-v254.cjs',
   'verification/offline-stage4-check.cjs',
@@ -32,6 +33,7 @@ const NODE_TEST=[
   'verification/manual-news-sync.test.cjs',
   'verification/manual-monthly-news.test.cjs',
   'verification/monthly-news-migration.test.cjs',
+  'verification/monthly-questions.test.cjs',
   'verification/news-storage.test.cjs',
   'verification/weekly-sync.test.cjs',
   'verification/weekly-import.test.cjs',
