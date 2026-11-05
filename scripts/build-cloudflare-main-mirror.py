@@ -109,6 +109,78 @@ def allowed(path: str) -> bool:
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
+def validate_reading_news(folder: Path) -> int:
+    """Fail closed when the mirrored news index cannot be resolved without missing or corrupt files."""
+    import re
+    base = folder / "daily-simulation"
+    index = json.loads((base / "documents.json").read_text("utf-8"))
+    ids = set()
+    def add_document(d, month=None):
+        if not isinstance(d, dict) or not isinstance(d.get("id"), str) or not d["id"] or d["id"] in ids:
+            raise RuntimeError("Duplicate or missing news ID")
+        if month is not None and not str(d.get("date", "")).startswith(month + "-"):
+            raise RuntimeError("News item recorded under the wrong archive month")
+        ids.add(d["id"])
+    def read_shards(shards, expected, month=None):
+        if not isinstance(shards, list) or not shards:
+            raise RuntimeError("Empty news shard index")
+        seen = set()
+        count = 0
+        for part in shards:
+            p = part.get("path") if isinstance(part, dict) else None
+            if not isinstance(p, str) or not re.fullmatch(r"news-shards/[0-9a-f]{64}\.json", p) or p in seen:
+                raise RuntimeError("Invalid or duplicate news shard path")
+            seen.add(p)
+            payload_bytes = (base / p).read_bytes()
+            if len(payload_bytes) > 1000000:
+                raise RuntimeError("News shard exceeds 1MB")
+            if hashlib.sha256(payload_bytes).hexdigest() != p.split("/")[-1][:-5]:
+                raise RuntimeError("News shard SHA-256 mismatch")
+            payload = json.loads(payload_bytes)
+            documents = payload.get("documents") if isinstance(payload, dict) else None
+            if payload.get("schemaVersion") != 1 or not isinstance(documents, list) or len(documents) != part.get("count"):
+                raise RuntimeError("News shard count mismatch")
+            for d in documents:
+                add_document(d, month)
+                count += 1
+        if count != expected:
+            raise RuntimeError("News total count mismatch")
+        return count
+    version = index.get("schemaVersion")
+    if version == 1:
+        for d in index["documents"]:
+            add_document(d)
+        return len(ids)
+    if version == 2:
+        return read_shards(index.get("shards"), index.get("count"))
+    if version != 3 or not isinstance(index.get("months"), list) or not isinstance(index.get("catalog"), list):
+        raise RuntimeError("Unknown news archive format")
+    months = set()
+    total = 0
+    for entry in index["months"]:
+        month = entry.get("month") if isinstance(entry, dict) else None
+        if not isinstance(month, str) or not re.fullmatch(r"20\d{2}-(?:0[1-9]|1[0-2])", month) or month in months:
+            raise RuntimeError("Invalid or duplicate archived month")
+        months.add(month)
+        expected_path = f"archives/{month}/index.json"
+        if entry.get("index") != expected_path:
+            raise RuntimeError("Unsafe monthly index path")
+        sub = json.loads((base / expected_path).read_text("utf-8"))
+        if sub.get("schemaVersion") != 1 or sub.get("month") != month or sub.get("count") != entry.get("count"):
+            raise RuntimeError("Monthly index count mismatch")
+        total += read_shards(sub.get("shards"), entry["count"], month)
+    if total != index.get("count") or len(index["catalog"]) != total or index.get("activeMonth") not in months:
+        raise RuntimeError("Monthly master catalog count mismatch")
+    cat_ids = set()
+    for d in index["catalog"]:
+        if not isinstance(d, dict) or d.get("id") not in ids or d["id"] in cat_ids or d.get("month") not in months:
+            raise RuntimeError("Monthly article catalog contains invalid or repeated ID")
+        cat_ids.add(d["id"])
+    if cat_ids != ids:
+        raise RuntimeError("Monthly article catalog lost IDs")
+    return total
+
+
 def main() -> None:
     if OUT.exists():
         shutil.rmtree(OUT)
@@ -135,6 +207,7 @@ def main() -> None:
             raise RuntimeError(f"Required static resource missing or empty: {relative}")
         if sha256(ROOT / relative) != sha256(dest):
             raise RuntimeError(f"Mirrored file differs from GitHub source: {relative}")
+    reading_count = validate_reading_news(OUT)
     questions = json.loads((OUT / "daily-simulation/questions.json").read_text("utf-8"))
     if not isinstance(questions.get("questions"), list) or not questions["questions"]:
         raise RuntimeError("Daily question bank is missing")
@@ -156,7 +229,7 @@ def main() -> None:
         json.dumps(metadata, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     print(f"Prepared {len(copied)} identical static resources from commit {commit}")
-    print(f"Daily questions: {len(questions['questions'])}; juvenile research issues: {len(issues['issues'])}")
+    print(f"Daily questions: {len(questions['questions'])}; news articles: {reading_count}; juvenile research issues: {len(issues['issues'])}")
     print("Only the dedicated Cloudflare preview branch may receive this build.")
 
 if __name__ == "__main__":
