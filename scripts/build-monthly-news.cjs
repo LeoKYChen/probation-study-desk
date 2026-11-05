@@ -64,7 +64,7 @@ function convert(sourceData){
    assert(Buffer.byteLength(single,'utf8')<=MAX,'Single article exceeds 1MB: '+d.id);
    if(chunk.length&&Buffer.byteLength(JSON.stringify({schemaVersion:1,documents:chunk.concat([d])}),'utf8')>MAX)flush();
    chunk.push(d);
-   catalog.push({id:d.id,month,date:d.date,title:d.title,tags:d.tags,excerpt:d.excerpt||'',url:d.url});
+   catalog.push({id:d.id,month,date:d.date,title:d.title,modified:d.modified,mime:d.mime||'text/markdown',tags:d.tags,excerpt:d.excerpt||'',url:d.url});
   }
   flush();
   const monthly={schemaVersion:1,month,count:docs.length,shards};
