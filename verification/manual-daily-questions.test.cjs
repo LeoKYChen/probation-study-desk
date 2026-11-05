@@ -73,7 +73,10 @@ test('unmodified source-state fast path avoids parser, source body and GitHub co
   if(suffix==='git/ref/heads/main')return {object:{sha:'head'}};
   throw Error('API '+suffix);
  };
- ctx.psdBridgeMeta_=(cfg,path)=>({sha:'sha-'+path,path});
+ ctx.psdBridgeMeta_=(cfg,path)=>{
+    if(path==='daily-simulation/questions-monthly.json'){const err=new Error('missing');err.httpStatus=404;throw err;}
+    return {sha:'sha-'+path,path};
+  };
  ctx.psdBridgeBytes_=(cfg,meta)=>Array.from(bytes(JSON.stringify(json[meta.path])));
  ctx.DriveApp={getFolderById:id=>id==='gd-folder'?
   {getFilesByType:()=>iterator([Object.assign(file('a','A',updated),{getBlob:()=>{bodyCalls++;throw Error('Do not read');}})])}
@@ -161,7 +164,7 @@ test('parsing failure never checkpoints source or advances the manual cursor',()
   throw Error('Unexpected GitHub request '+suffix);
  };
  ctx.psdBridgeMeta_=(cfg,path)=>{
-  if(path==='scripts/sync-state/daily-question-sources.json'){
+  if(path==='daily-simulation/questions-monthly.json'||path==='scripts/sync-state/daily-question-sources.json'){
    const err=new Error('missing');err.httpStatus=404;throw err;
   }
   return {sha:'question-sha',path};
@@ -223,7 +226,7 @@ test('manual preview parses selected sources but never commits or advances the s
   throw Error('unexpected request '+suffix);
  };
  ctx.psdBridgeMeta_=(cfg,path)=>{
-  if(path==='scripts/sync-state/daily-question-sources.json'){
+  if(path==='daily-simulation/questions-monthly.json'||path==='scripts/sync-state/daily-question-sources.json'){
    const e=new Error('not found');e.httpStatus=404;throw e;
   }
   return {sha:'questions-sha'};
