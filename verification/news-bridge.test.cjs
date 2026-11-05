@@ -2,7 +2,7 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),crypto=require('node:crypto');
 const sha=(s)=>crypto.createHash('sha1').update('blob '+Buffer.byteLength(s)+'\0').update(s).digest('hex');
 function runtime({legacy=false,weekly=false,monthly=false}={}){
- const part=JSON.stringify({schemaVersion:1,documents:[{id:'news-test',content:'</script>\u2028'}]});
+ const part=JSON.stringify({schemaVersion:1,documents:[{id:'news-test',content:'</script>\u2028',date:'2026-11-01'}]});
  const name='news-shards/'+crypto.createHash('sha256').update(part).digest('hex')+'.json';
  const month='2026-11',monthlyPath='archives/'+month+'/index.json';
  const monthlyDocument={schemaVersion:3,count:1,activeMonth:month,months:[{month,status:'open',count:1,index:monthlyPath}],
@@ -55,6 +55,6 @@ test('damaged monthly source index blocks all writes',()=>{
  const r=runtime({monthly:true}),index=JSON.parse(r.files['daily-simulation/archives/2026-11/index.json']);
  index.count=3;
  r.files['daily-simulation/archives/2026-11/index.json']=JSON.stringify(index);
- assert.throws(r.run(),/月份內索引/);
+ assert.throws(()=>r.run(),/月份內索引/);
  assert.equal(r.patches(),0);
 });
