@@ -67,12 +67,11 @@ function manualQuestionCommitMonthly_(cfg,before,after,state) {
     return comment+'\n(function(){if(typeof window.PSDRegisterFileData==="function")window.PSDRegisterFileData('+
       JSON.stringify(obj).replace(/</g,'\\u003c').replace(/\u2028/g,'\\u2028').replace(/\u2029/g,'\\u2029')+');})();\n';
   }
-  var monthEntries=[];
+  var byId={},monthEntries=[];
+  after.questions.forEach(function(q){byId[q.id]=q;});
   months.forEach(function(month){
-    var previous=oldGroups[month]||[],current=groups[month],old=oldByMonth[month],shards=[];
-    if(old&&JSON.stringify(previous)===JSON.stringify(current)){
-      old.shards.forEach(function(shard){shards.push(shard);reused++;});
-    }else{
+    var current=groups[month],old=oldByMonth[month],shards=[],matched={},oldList=oldGroups[month]||[];
+    function emit(items){
       var chunk=[];
       function flush(){
         if(!chunk.length)return;
@@ -88,7 +87,7 @@ function manualQuestionCommitMonthly_(cfg,before,after,state) {
         }else reused++;
         chunk=[];
       }
-      current.forEach(function(q){
+      items.forEach(function(q){
         if(toBytes(JSON.stringify({schemaVersion:1,questions:[q]})).length>900000)
           throw new Error('單題超過 900KB 分檔限制：'+q.id);
         if(chunk.length&&toBytes(JSON.stringify({schemaVersion:1,questions:chunk.concat([q])})).length>900000)flush();
@@ -96,9 +95,27 @@ function manualQuestionCommitMonthly_(cfg,before,after,state) {
       });
       flush();
     }
+    var offset=0;
+    if(old){
+      old.shards.forEach(function(part){
+        var prior=oldList.slice(offset,offset+part.count);offset+=part.count;
+        if(prior.length!==part.count)throw new Error('舊月份題數不符');
+        var updated=prior.map(function(q){
+          if(!byId[q.id])throw new Error('舊題號遺失：'+q.id);
+          matched[q.id]=true;
+          return byId[q.id];
+        });
+        if(JSON.stringify(prior)===JSON.stringify(updated)){shards.push(part);reused++;}
+        else emit(updated);
+      });
+      if(offset!==oldList.length)throw new Error('舊月份分檔配對失敗');
+    }
+    // New source questions produce only new shard(s), preserving all existing hashes.
+    emit(current.filter(function(q){return !matched[q.id];}));
     monthEntries.push({month:month,count:current.length,shards:shards,status:month===months[0]?'current':'archived'});
   });
-  var sameQuestions=JSON.stringify(after.questions)===JSON.stringify(orig.questions)&&
+  var sameQuestions=after.questions.length===orig.questions.length&&
+    orig.questions.every(function(q){return byId[q.id]&&JSON.stringify(byId[q.id])===JSON.stringify(q);})&&
     JSON.stringify(after.templates||[])===JSON.stringify(orig.templates||[]);
   // Previously reviewed diagnostics must not disappear when only selected files were parsed.
   var diagnostics=Array.from(new Set((orig.diagnostics||[]).concat(after.diagnostics||[]))).sort();
