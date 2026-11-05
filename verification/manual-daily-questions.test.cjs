@@ -207,6 +207,6 @@ test('original Google Docs parser actually opens only the selected source and pr
  const out=ctx.mdReadGoogleBank_(previous,[],{googleIds:new Set(['b']),strict:true});
  assert.deepEqual(opened,['b']);
  assert.equal(out.questions.length,1);
- assert.equal(out.questions[0].id,'gd-b-1');
+ assert.match(out.questions[0].id,/^gd-[a-f0-9]{24}-1$/);
  assert.equal(previous.questions.length,125);
 });
