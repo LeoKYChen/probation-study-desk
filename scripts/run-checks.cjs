@@ -34,6 +34,7 @@ const NODE_TEST=[
   'verification/manual-monthly-news.test.cjs',
   'verification/monthly-news-migration.test.cjs',
   'verification/monthly-questions.test.cjs',
+  'verification/manual-monthly-questions.test.cjs',
   'verification/news-storage.test.cjs',
   'verification/weekly-sync.test.cjs',
   'verification/weekly-import.test.cjs',
