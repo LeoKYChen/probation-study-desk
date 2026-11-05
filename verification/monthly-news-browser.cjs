@@ -97,6 +97,34 @@ const wait=(page,expected)=>page.waitForFunction(x=>{
     read:JSON.parse(localStorage.getItem('daily-reading-test:news-read'))
    }));
    assert(persisted.saved.includes(september.id)&&persisted.read.includes(september.id));
+   // Real monthly question archive: verify history filters and saved answer across months.
+   await page.locator('#newsClose').click();
+   await page.locator('#menu').click();
+   await page.locator('button[data-tab="全部題目"]').first().click();
+   await page.locator('#questionMonth option[value="2026-09"]').waitFor({state:'attached'});
+   await page.locator('#questionMonth').selectOption('2026-09');
+   await page.waitForFunction(()=>document.getElementById('resultCount')?.textContent?.includes('共 6 題'));
+   assert.equal(await page.locator('article.document-card').count(),6);
+   const originalQuestions=JSON.parse(fs.readFileSync(path.join(root,'daily-simulation/questions.json'),'utf8')).questions;
+   const older=originalQuestions.find(q=>q.date.startsWith('2026-09'));
+   assert(older);
+   await page.locator('[data-open="'+older.id+'"]').first().click();
+   await page.locator('#reader[open]').waitFor();
+   assert((await page.locator('#prompt').innerText()).includes(older.question.slice(0,15)));
+   await page.locator('#answer').fill('歷史題號保留的原作答驗收');
+   await page.locator('#close').click();
+   await page.locator('#questionMonth').selectOption('2026-11');
+   await page.waitForFunction(()=>document.getElementById('resultCount')?.textContent?.includes('共 20 題'));
+   await page.locator('#questionMonth').selectOption('2026-09');
+   await page.locator('[data-open="'+older.id+'"]').first().click();
+   await page.locator('#reader[open]').waitFor();
+   assert.equal(await page.locator('#answer').inputValue(),'歷史題號保留的原作答驗收');
+   await page.locator('#close').click();
+   await page.locator('#questionMonth').selectOption('');
+   await page.waitForFunction(()=>document.getElementById('resultCount')?.textContent?.includes('共 245 題'));
+   const savedQuestion=await page.evaluate(id=>JSON.parse(localStorage.getItem('probation-daily-github:records:v1'))[id],older.id);
+   assert.equal(savedQuestion.answer,'歷史題號保留的原作答驗收');
+   console.log('PASS monthly questions browser:',engine,prefix,'245 questions, 2026-09/11 filtering, historical answer and original ID retention');
    assert.deepEqual(errors,[],'Unexpected browser JavaScript error');
    assert.deepEqual(bad,[],'Unexpected HTTP missing assets');
    console.log('PASS monthly archive browser:',engine,prefix,
