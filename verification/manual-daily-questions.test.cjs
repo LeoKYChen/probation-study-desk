@@ -148,3 +148,34 @@ test('GitHub HEAD race aborts before writing any commit or source checkpoint',()
   {head:'head',questionSha:'sha',data:before},before,{schemaVersion:1,sources:{}}),/已變動/);
  assert.equal(writes,0);
 });
+
+test('parsing failure never checkpoints source or advances the manual cursor',()=>{
+ let writes=0,parsed=0,docsOpened=0;
+ const {ctx,properties}=runtime({mdCollect_:()=>{
+  parsed++;throw Error('Selected markdown question has an invalid heading');
+ }});
+ const previous=bank();
+ ctx.psdBridgeApi_=(cfg,method,suffix)=>{
+  if(method!=='get')writes++;
+  if(suffix==='git/ref/heads/main')return {object:{sha:'head'}};
+  throw Error('Unexpected GitHub request '+suffix);
+ };
+ ctx.psdBridgeMeta_=(cfg,path)=>{
+  if(path==='scripts/sync-state/daily-question-sources.json'){
+   const err=new Error('missing');err.httpStatus=404;throw err;
+  }
+  return {sha:'question-sha',path};
+ };
+ ctx.psdBridgeBytes_=()=>Array.from(Buffer.from(JSON.stringify(previous)));
+ ctx.DriveApp={getFolderById:id=>id==='gd-folder'?
+  {getFilesByType:()=>iterator([])}:{getFiles:()=>iterator([
+   Object.assign(file('new','new-question.md','2026-11-05T00:00:00Z'),{
+    getBlob:()=>{docsOpened++;throw Error('Scanner must not read body');}
+   })
+  ])}};
+ assert.throws(()=>ctx.manualSyncDailyQuestions(),/invalid heading/);
+ assert.equal(parsed,1);
+ assert.equal(docsOpened,0);
+ assert.equal(writes,0);
+ assert.equal(properties.get('PSD_MANUAL_QUESTIONS_CURSOR'),undefined);
+});
