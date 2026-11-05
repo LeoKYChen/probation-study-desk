@@ -118,7 +118,7 @@ function readingNewsReadGithub_(cfg) {
         dataPart.documents.forEach(function(d){
           if(!d||!d.id||ids3[d.id]||!d.date||d.date.slice(0,7)!==month.month)
             throw new Error('月份分檔新聞 ID 或日期不符');
-          ids3[d.id]=true;all3.push(d);
+          ids3[d.id]=month.month;all3.push(d);
         });
         monthCount+=dataPart.documents.length;
         shardGroups.push({path:part.path,month:month.month,documents:dataPart.documents});
@@ -127,7 +127,7 @@ function readingNewsReadGithub_(cfg) {
       monthly3.push({month:month.month,index:month.index,status:month.status,shards:mm.shards});
     });
     if(all3.length!==idx3.count||Object.keys(ids3).length!==idx3.catalog.length||
-      idx3.catalog.some(function(d){return !ids3[d.id]||!idx3.months.some(function(m){return m.month===d.month;});}))
+      idx3.catalog.some(function(d){return !d||ids3[d.id]!==d.month;}))
       throw new Error('月份總索引與全文目錄不符');
     data={schemaVersion:1,documents:all3,sync:idx3.sync};
   }
