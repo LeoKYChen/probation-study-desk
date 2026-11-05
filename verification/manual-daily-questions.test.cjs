@@ -4,7 +4,7 @@ const src=fs.readFileSync('scripts/apps-script/ManualDailyQuestions.gs','utf8');
 const original=fs.readFileSync('scripts/apps-script/DailyResourcesSelective.gs','utf8');
 const q=(id,question='Some long question')=>({id,question,date:'2026-11-05',subject:'心理學',qualityStatus:'已核對'});
 const bank=()=>({schemaVersion:1,count:125,questions:Array.from({length:125},(_,i)=>q('q-'+i)),templates:[],diagnostics:[]});
-const bytes=s=>Buffer.from(typeof s==='string'?s:JSON.stringify(s));
+const bytes=s=>Buffer.from(typeof s==='string'||Array.isArray(s)?s:JSON.stringify(s));
 function runtime(extra={}){
  const properties=new Map([['SOURCE_FOLDER_ID','gd-folder'],['MD_SOURCE_FOLDER_ID','md-folder']]);
  const prop={getProperty:k=>properties.get(k)||null,setProperty:(k,v)=>properties.set(k,v),deleteProperty:k=>properties.delete(k)};
