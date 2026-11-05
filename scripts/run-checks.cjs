@@ -29,6 +29,7 @@ const NODE_TEST=[
   'verification/news-bridge.test.cjs',
   'verification/news-apps-script.test.cjs',
   'verification/manual-news-sync.test.cjs',
+  'verification/manual-monthly-news.test.cjs',
   'verification/monthly-news-migration.test.cjs',
   'verification/news-storage.test.cjs',
   'verification/weekly-sync.test.cjs',
