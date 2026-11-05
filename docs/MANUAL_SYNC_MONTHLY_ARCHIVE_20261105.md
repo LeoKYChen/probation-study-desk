@@ -79,3 +79,25 @@
 - 按月封存可降低單次掃描、同步和首次載入成本，**不會降低 GitHub 已存在的總儲存量，也不會延長 Apps Script 約六分鐘的限制**。
 - 成功標準必須分開：已提交 GitHub／已發布 Cloudflare／實際網站可讀／離線 ZIP 可讀。
 - 未變動來源預期全文解析與上傳次數為零；修改單篇時，不變動其他 shard 的內容及路徑。
+
+## 第三階段增量同步與封存相容性（測試分支，尚未部署）
+
+2026-11-05 已新增以下程式及回歸測試：
+
+- scripts/apps-script/ManualMonthlyNews.gs：當現有新聞索引已轉成 v3 時，手動更新只重建受影響的月份 shard 和月份索引。沒有變動的月份仍沿用 GitHub 已存在的雜湊 shard，不重傳全文。
+- scripts/apps-script/ReadingNewsSync.gs：能核對 v3 的各月份索引與每個來源 shard 的 SHA-256、ID 和月份；阻止舊版 syncReadingNews 誤將 v3 降回 v2。
+- scripts/apps-script/ManualIncrementalNews.gs：讀取來源失敗時直接停止，不前移續傳游標；單次掃描時間獨立計算，已提交的來源不重複解析。
+- scripts/apps-script/OfflineBridge.gs 與 scripts/generate-file-data.cjs：可驗證／產生 v3 各月份索引、shard 的 file:// 版 JavaScript 鏡像。
+- file-compat.js：可從離線 ZIP 載入安全的月份索引；ZIP 若未包含指定月份，明確回報，不會假裝載入成功。
+- sw.js：標準 PWA 下載保留「當月」的索引及分檔；歷史封存於連線時按需讀取。標準快照**不保證**舊月份離線可讀；需要歷史離線資料者須另行下載離線包。
+- scripts/build-cloudflare-main-mirror.py：在建立 Cloudflare 鏡像前嚴格核對 v2/v3 shard SHA-256、新聞 ID、各月份筆數、索引檔案存在性。
+- scripts/daily-data-release-gate.py：首次 v2→v3 轉換不得無人審核自動發布；經人工發布且正式站已具備月份索引之後，安全的單純月份資料更新才可能自動發布，仍由發布門檻與完整性檢查共同保護。
+- verification/manual-monthly-news.test.cjs、verification/news-bridge.test.cjs、verification/news-apps-script.test.cjs：包含未變動月份不重傳、跨月修訂、雜湊核驗、離線索引修復及並行寫入拒絕覆寫。
+
+### 切換正式站前的關鍵保留事項
+
+- 不要只把 v3 documents.json 上傳到正式 main；必須在**同一個經審查的發布版本**包含所有月份索引、全部引用的新聞 shard、新版 reader、ZIP 橋接與 PWA。
+- `syncDailyResources` 的正式 Apps Script 原始碼仍未取得，因此**每日模擬題同步器尚未改造**；不能聲稱整體每日題庫已採手動增量。
+- 未修改正式 Google Apps Script 指令碼專案，也沒有停用正式時間觸發器。須在完整測試及備份完成後，才手動執行停用入口。
+- 尚未合併 PR #126，亦未在正式站啟用 v3。既有 239 篇已發布新聞仍由現行 v2 索引提供服務。
+- 分檔與封存改善**單次處理、瀏覽器下載及更新成本**，並不移除 GitHub 歷史儲存量或 Apps Script 的執行時間限制。
