@@ -4,6 +4,8 @@ import json, os, re, urllib.request
 from pathlib import Path
 
 ALLOWED = {'daily-simulation/questions.json', 'daily-simulation/documents.json', 'file-data/daily.generated.js'}
+MONTH_JSON = re.compile(r'daily-simulation/archives/(20\d{2}-(?:0[1-9]|1[0-2]))/index\.json')
+MONTH_JS = re.compile(r'file-data/archives/(20\d{2}-(?:0[1-9]|1[0-2]))/index\.js')
 REPOSITORY = 'LeoKYChen/probation-study-desk'
 
 def eligible(previous, current):
@@ -19,6 +21,8 @@ def eligible(previous, current):
     if before.keys() - after.keys():
         return False
     added = after.keys() - before.keys()
+    monthly_live = any(MONTH_JSON.fullmatch(p) for p in before)
+    monthly_data = set()
     for path in added:
         match = re.fullmatch(r'daily-simulation/news-shards/([0-9a-f]{64})\.json', path)
         offline = re.fullmatch(r'file-data/news-shards/([0-9a-f]{64})\.js', path)
@@ -28,10 +32,29 @@ def eligible(previous, current):
         elif offline:
             if 'daily-simulation/news-shards/' + offline.group(1) + '.json' not in after:
                 return False
+        elif (m := MONTH_JSON.fullmatch(path)):
+            if not monthly_live:
+                # First v2->v3 migration requires explicit reviewed release.
+                return False
+            monthly_data.add(m.group(1))
+        elif (m := MONTH_JS.fullmatch(path)):
+            if not monthly_live:
+                return False
+            key = 'daily-simulation/archives/' + m.group(1) + '/index.json'
+            if key not in after:
+                return False
         else:
             return False
     changed = {p for p in before if before[p] != after[p]}
-    return bool(changed or added) and changed <= ALLOWED
+    # The existing archive can be updated by a reviewed manual sync, but
+    # only alongside a new master index. Other app code remains frozen.
+    monthly_changed = {p for p in changed if MONTH_JSON.fullmatch(p) or MONTH_JS.fullmatch(p)}
+    if monthly_changed and not monthly_live:
+        return False
+    if monthly_changed or monthly_data:
+        if 'daily-simulation/documents.json' not in changed:
+            return False
+    return bool(changed or added) and changed <= ALLOWED | monthly_changed
 
 def main():
     allowed = False
