@@ -210,3 +210,31 @@ test('original Google Docs parser actually opens only the selected source and pr
  assert.match(out.questions[0].id,/^gd-[a-f0-9]{24}-1$/);
  assert.equal(previous.questions.length,125);
 });
+
+test('manual preview parses selected sources but never commits or advances the scan cursor',()=>{
+ const original=bank(),opened=[];
+ const {ctx,properties}=runtime({mdCollect_:filter=>{
+  opened.push([...filter.googleIds]);return {data:structuredClone(original)};
+ }});
+ let writes=0;
+ ctx.psdBridgeApi_=(cfg,method,suffix)=>{
+  if(method!=='get')writes++;
+  if(suffix==='git/ref/heads/main')return {object:{sha:'head'}};
+  throw Error('unexpected request '+suffix);
+ };
+ ctx.psdBridgeMeta_=(cfg,path)=>{
+  if(path==='scripts/sync-state/daily-question-sources.json'){
+   const e=new Error('not found');e.httpStatus=404;throw e;
+  }
+  return {sha:'questions-sha'};
+ };
+ ctx.psdBridgeBytes_=()=>Array.from(Buffer.from(JSON.stringify(original)));
+ ctx.DriveApp={getFolderById:id=>id==='gd-folder'?
+  {getFilesByType:()=>iterator([file('new','new.doc','2026-11-05T00:00:00Z')])}
+  :{getFiles:()=>iterator([])}};
+ const result=ctx.previewManualDailyQuestions();
+ assert.equal(result.mode,'preview');assert.equal(result.toProcess,1);
+ assert.equal(result.proposedCount,125);
+ assert.equal(writes,0);assert.equal(opened.length,1);
+ assert.equal(properties.get('PSD_MANUAL_QUESTIONS_CURSOR'),undefined);
+});
