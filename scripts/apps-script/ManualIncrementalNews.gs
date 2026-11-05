@@ -9,7 +9,10 @@ function manualSyncReadingNews() {
   var lock=LockService.getScriptLock();
   if(!lock.tryLock(1000))throw new Error('已有同步進行中，請稍後再手動執行。');
   try {
-    var cfg=readingNewsConfig_(),old=readingNewsReadGithub_(cfg);
+    var cfg=readingNewsConfig_();
+    // 月份索引有來源修改時間時，先讀輕量目錄：沒有新檔就不用重讀歷史全文。
+    var lightweight=manualNewsReadCatalog_(cfg);
+    var old=lightweight||readingNewsReadGithub_(cfg);
     var batch=manualNewsScan_(cfg,old.data,3,90000);
     if(!batch.changed.length) {
       manualNewsSaveCursor_(batch.cursor);
@@ -17,6 +20,11 @@ function manualSyncReadingNews() {
       PropertiesService.getScriptProperties().setProperty('PSD_MANUAL_NEWS_LAST_RESULT',JSON.stringify(noop));
       Logger.log('沒有需要重新上傳的文件；'+JSON.stringify(noop));
       return noop;
+    }
+    if(lightweight){
+      // 確定來源有異動才讀取全文；嚴格檢查 index SHA 以防本次掃描期間併發提交。
+      old=readingNewsReadGithub_(cfg);
+      if(old.sha!==lightweight.sha)throw new Error('掃描期間新聞主索引已更新，未提交；請重新手動執行。');
     }
     var byId={};
     old.data.documents.forEach(function(d){byId[d.id]=d;});
@@ -41,6 +49,36 @@ function manualSyncReadingNews() {
     Logger.log('已提交 GitHub；網站是否發布須另外核對。'+JSON.stringify(result));
     return result;
   } finally {lock.releaseLock();}
+}
+
+/**
+ * Fast-path: only read version 3 index and its lightweight catalog.
+ * Legacy v1/v2 or older v3 without complete source metadata uses the verified full read.
+ * Metadata is used for change detection only; changed data always requires full archive verification.
+ */
+function manualNewsReadCatalog_(cfg) {
+  var ref=readingNewsApi_(cfg,'get','git/ref/heads/'+encodeURIComponent(cfg.branch));
+  var head=ref.object.sha;
+  var meta=readingNewsApi_(cfg,'get','contents/'+cfg.path+'?ref='+encodeURIComponent(head));
+  if(!meta||!meta.sha)throw new Error('GitHub 新聞索引不存在');
+  var raw=meta.content&&meta.encoding==='base64'?meta:
+    readingNewsApi_(cfg,'get','git/blobs/'+meta.sha);
+  if(!raw.content||raw.encoding!=='base64')throw new Error('無法讀取新聞月份索引');
+  var index=JSON.parse(Utilities.newBlob(Utilities.base64Decode(raw.content.replace(/\s/g,''))).getDataAsString('UTF-8'));
+  if(index.schemaVersion!==3)return null;
+  if(!Array.isArray(index.months)||!index.months.length||!Array.isArray(index.catalog)||
+    index.catalog.length!==index.count)throw new Error('月份總索引不完整');
+  var seen={};
+  var complete=index.catalog.every(function(d){
+    if(!d||!d.id||seen[d.id]||typeof d.title!=='string'||
+      typeof d.modified!=='string'||!d.modified||typeof d.mime!=='string'||!d.mime)
+      return false;
+    seen[d.id]=true;
+    return true;
+  });
+  if(!complete)return null;
+  return {sha:meta.sha,storageVersion:3,data:{schemaVersion:1,
+    documents:index.catalog,sync:index.sync},catalogOnly:true};
 }
 
 // 只清除掃描位置，不修改已成功提交的新聞或任何作答紀錄。
