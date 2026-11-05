@@ -6,7 +6,7 @@ const CONTROL=PREFIX+'control', META=new URL('pwa/snapshot-state',BASE).href;
 const absolute=path=>new URL(path,BASE).href;
 // Preserve installed snapshots as fallback; connected visits must see the unified home after upgrade.
 // Both directory and explicit index routes are used by existing installed apps.
-const NETWORK_FIRST=new Set(['lectures/','lectures/index.html','lectures/core.js','lectures/app.js','lectures/learning.css','backup/unified-core.js','assets/study-theme.css','assets/study-round.woff','shared-ui.css','ai-prompt-customizer.js','','index.html','daily-simulation/index.html','daily-simulation/news.js','daily-simulation/news-storage.js','daily-simulation/documents.json','daily-simulation/app.js','daily-simulation/questions.json','daily-simulation/practice.css','v2.5/','v2.5/index.html','v2.5/probation-trial-review.html','v2.5/probation-trial-data.js','v2.5/probation-trial.js','v2.5/trial-versions.js','v2.5/probation-trial-ui.js','v2.5/ai-simple-review-v254.js','v2.5/daily-practice.html','v2.5/daily-practice.js','professional/ai-review-links.js','professional/ai-review-links-direction.js','professional/','professional/index.html','professional/style.css','professional/layout-followup.css','common-subjects/index.html','common-subjects/english-assistant/index.html','common-subjects/catalog/index.html','common-subjects/daily/index.html',
+const NETWORK_FIRST=new Set(['lectures/','lectures/index.html','lectures/core.js','lectures/app.js','lectures/learning.css','backup/unified-core.js','assets/study-theme.css','assets/study-round.woff','shared-ui.css','ai-prompt-customizer.js','','index.html','daily-simulation/index.html','daily-simulation/news.js','daily-simulation/news-storage.js','daily-simulation/documents.json','daily-simulation/questions-monthly.json','daily-simulation/question-storage.js','daily-simulation/app.js','daily-simulation/questions.json','daily-simulation/practice.css','v2.5/','v2.5/index.html','v2.5/probation-trial-review.html','v2.5/probation-trial-data.js','v2.5/probation-trial.js','v2.5/trial-versions.js','v2.5/probation-trial-ui.js','v2.5/ai-simple-review-v254.js','v2.5/daily-practice.html','v2.5/daily-practice.js','professional/ai-review-links.js','professional/ai-review-links-direction.js','professional/','professional/index.html','professional/style.css','professional/layout-followup.css','common-subjects/index.html','common-subjects/english-assistant/index.html','common-subjects/catalog/index.html','common-subjects/daily/index.html',
   // Weekly updates must bypass an older downloaded PWA snapshot while online.
   'juvenile-news/','juvenile-news/index.html','juvenile-news/issues.json',
   // Scoring points grow in batches; online visits must not keep an older snapshot.
@@ -51,6 +51,22 @@ async function download(port){
       const digest=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',body)),n=>n.toString(16).padStart(2,'0')).join('');
       if(/\.(json|webmanifest)$/.test(url)){
         const parsed=JSON.parse(new TextDecoder().decode(body));
+        if(url===absolute('daily-simulation/questions-monthly.json')&&parsed.schemaVersion===2){
+          if(!Array.isArray(parsed.months)||!parsed.months.length||!parsed.months.some(m=>m.month===parsed.activeMonth))
+            throw Error('月份題庫總索引不符。');
+          for(const month of parsed.months){
+            if(!/^20\d{2}-(?:0[1-9]|1[0-2])$/.test(month.month)||!Array.isArray(month.shards)||!month.shards.length)
+              throw Error('月份題庫索引內容不符。');
+            for(const shard of month.shards){
+              if(!shard||!/^question-shards\/[a-f0-9]{64}\.json$/.test(shard.path))
+                throw Error('月份題庫分檔路徑不符。');
+              const item=absolute('daily-simulation/'+shard.path);
+              if(!seen.has(item)){seen.add(item);pending.push(item);}
+            }
+          }
+        }
+        const questionFile=url.match(/\/daily-simulation\/question-shards\/([a-f0-9]{64})\.json$/);
+        if(questionFile&&digest!==questionFile[1])throw Error('月份題庫 SHA-256 校驗不符。');
         if(url===absolute('daily-simulation/documents.json')&&parsed.schemaVersion===3){
           if(!Array.isArray(parsed.months)||!parsed.months.length||
              !parsed.months.some(m=>m.month===parsed.activeMonth))
@@ -102,7 +118,7 @@ self.addEventListener('fetch',e=>{
   if(e.request.method!=='GET'||u.origin!==BASE.origin||!u.pathname.startsWith(BASE.pathname)||['sw.js','offline-manifest.json'].includes(u.pathname.slice(BASE.pathname.length)))return;
   e.respondWith((async()=>{
     const clean=new URL(e.request.url);clean.search='';clean.hash='';
-    if((NETWORK_FIRST.has(clean.href)||/\/daily-simulation\/(?:news-shards\/[a-f0-9]{64}|archives\/20\d{2}-(?:0[1-9]|1[0-2])\/index)\.json$/.test(clean.pathname))&&self.navigator?.onLine!==false){
+    if((NETWORK_FIRST.has(clean.href)||/\/daily-simulation\/(?:news-shards\/[a-f0-9]{64}|question-shards\/[a-f0-9]{64}|archives\/20\d{2}-(?:0[1-9]|1[0-2])\/index)\.json$/.test(clean.pathname))&&self.navigator?.onLine!==false){
       const fresh=await networkCopy(e.request);
       if(fresh)return fresh;
     }
