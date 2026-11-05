@@ -93,6 +93,50 @@ function psdSyncGeneratedBridge_(kind) {
       outputs.push({path:'file-data/'+part.path.replace(/\.json$/,'.js'),content:'/* GENERATED news shard; do not hand-edit. */\n(function(){if(typeof window.PSDRegisterFileData==="function")window.PSDRegisterFileData('+serializedPart+');})();\n'});
     });
     if(count!==news.count)throw new Error('新聞分檔總數不符');
+  } else if(kind==='daily'&&news&&news.schemaVersion===3) {
+    if(!Array.isArray(news.months)||!news.months.length||!Array.isArray(news.catalog)||news.catalog.length!==news.count)
+      throw new Error('月份總索引格式不符');
+    var monthIds={},monthNames={},filePaths={},monthlyCount=0;
+    news.months.forEach(function(m){
+      if(!m||!/^20\d{2}-(?:0[1-9]|1[0-2])$/.test(m.month)||m.index!=='archives/'+m.month+'/index.json'||monthNames[m.month])
+        throw new Error('月份名稱／路徑重複或不符');
+      monthNames[m.month]=true;
+      var name='daily-simulation/'+m.index,monthly=psdBridgeReadJson_(pinned,name);
+      if(monthly.schemaVersion!==1||monthly.month!==m.month||monthly.count!==m.count||
+        !Array.isArray(monthly.shards)||!monthly.shards.length)
+        throw new Error('月份內索引格式或筆數不符');
+      var obj={};obj[name]=monthly;
+      var serializedMonth=JSON.stringify(obj).replace(/</g,'\\u003c').replace(/\u2028/g,'\\u2028').replace(/\u2029/g,'\\u2029');
+      outputs.push({path:'file-data/'+m.index.replace(/\.json$/,'.js'),
+        content:'/* GENERATED monthly news index; do not hand-edit. */\n(function(){if(typeof window.PSDRegisterFileData==="function")window.PSDRegisterFileData('+serializedMonth+');})();\n'});
+      var n=0;
+      monthly.shards.forEach(function(part){
+        if(!part||!/^news-shards\/[a-f0-9]{64}\.json$/.test(part.path)||filePaths[part.path]||!Number.isInteger(part.count)||part.count<1)
+          throw new Error('月份分檔路徑／數量不符');
+        filePaths[part.path]=true;
+        var key='daily-simulation/'+part.path,meta=psdBridgeMeta_(pinned,key),raw=psdBridgeBytes_(pinned,meta);
+        var hex=Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256,raw)
+          .map(function(b){return ('0'+(b&255).toString(16)).slice(-2);}).join('');
+        if(part.path!=='news-shards/'+hex+'.json')throw new Error('月份分檔雜湊不符');
+        var payload=JSON.parse(Utilities.newBlob(raw).getDataAsString('UTF-8'));
+        if(payload.schemaVersion!==1||!Array.isArray(payload.documents)||payload.documents.length!==part.count)
+          throw new Error('月份分檔內容不符');
+        payload.documents.forEach(function(d){
+          if(!d||typeof d.id!=='string'||!d.id||monthIds[d.id]||typeof d.date!=='string'||d.date.slice(0,7)!==m.month)
+            throw new Error('月份新聞 ID 或日期錯誤');
+          monthIds[d.id]=m.month;
+        });
+        n+=payload.documents.length;monthlyCount+=payload.documents.length;
+        var obj={};obj[key]=payload;
+        var serializedPart=JSON.stringify(obj).replace(/</g,'\\u003c').replace(/\u2028/g,'\\u2028').replace(/\u2029/g,'\\u2029');
+        outputs.push({path:'file-data/'+part.path.replace(/\.json$/,'.js'),
+          content:'/* GENERATED news shard; do not hand-edit. */\n(function(){if(typeof window.PSDRegisterFileData==="function")window.PSDRegisterFileData('+serializedPart+');})();\n'});
+      });
+      if(n!==m.count)throw new Error('月份內分檔總數不符');
+    });
+    if(monthlyCount!==news.count||Object.keys(monthIds).length!==news.catalog.length||
+      news.catalog.some(function(d){return !d||monthIds[d.id]!==d.month;}))
+      throw new Error('月份總索引與全文不符');
   } else if(kind==='daily'&&(!news||news.schemaVersion!==1||!Array.isArray(news.documents)))throw new Error('新聞格式錯誤');
   var changes=[];
   outputs.forEach(function(file){
