@@ -115,12 +115,15 @@ def validate_reading_news(folder: Path) -> int:
     base = folder / "daily-simulation"
     index = json.loads((base / "documents.json").read_text("utf-8"))
     ids = set()
+    actual_months = {}
     def add_document(d, month=None):
         if not isinstance(d, dict) or not isinstance(d.get("id"), str) or not d["id"] or d["id"] in ids:
             raise RuntimeError("Duplicate or missing news ID")
         if month is not None and not str(d.get("date", "")).startswith(month + "-"):
             raise RuntimeError("News item recorded under the wrong archive month")
         ids.add(d["id"])
+        if month is not None:
+            actual_months[d["id"]] = month
     def read_shards(shards, expected, month=None):
         if not isinstance(shards, list) or not shards:
             raise RuntimeError("Empty news shard index")
@@ -173,7 +176,7 @@ def validate_reading_news(folder: Path) -> int:
         raise RuntimeError("Monthly master catalog count mismatch")
     cat_ids = set()
     for d in index["catalog"]:
-        if not isinstance(d, dict) or d.get("id") not in ids or d["id"] in cat_ids or d.get("month") not in months:
+        if not isinstance(d, dict) or d.get("id") not in ids or d["id"] in cat_ids or d.get("month") != actual_months.get(d["id"]):
             raise RuntimeError("Monthly article catalog contains invalid or repeated ID")
         cat_ids.add(d["id"])
     if cat_ids != ids:
