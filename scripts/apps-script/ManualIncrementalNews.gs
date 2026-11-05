@@ -25,7 +25,7 @@ function manualSyncReadingNews() {
       return b.date.localeCompare(a.date)||b.modified.localeCompare(a.modified)||a.id.localeCompare(b.id);
     });
     var next={schemaVersion:1,documents:docs,sync:{
-      syncedAt:new Date().toISOString(),status:batch.errors.length||batch.cursor?'partial':'success',
+      syncedAt:new Date().toISOString(),status:batch.errors.length?'partial':'success',
       sourceCount:(old.data.sync&&old.data.sync.sourceCount)||old.data.documents.length,errors:batch.errors
     }};
     readingNewsValidate_(next);
@@ -59,10 +59,10 @@ function manualNewsScan_(cfg,old,maxChanges,maxMs) {
   if(!cursor||cursor.root!==cfg.folderId||cursor.recursive!==cfg.recursive||
     !Array.isArray(cursor.pending)||!Array.isArray(cursor.seen))
     cursor={root:cfg.folderId,recursive:cfg.recursive,pending:[cfg.folderId],seen:[],current:null,token:null};
-  var oldBy={},changed=[],errors=[],skipped=0,checked=0;
+  var oldBy={},changed=[],errors=[],skipped=0,checked=0,scanStarted=Date.now();
   old.documents.forEach(function(d){oldBy[d.id]=d;});
   while(cursor.current||cursor.pending.length) {
-    if(Date.now()-cfg.started>maxMs)break;
+    if(Date.now()-scanStarted>maxMs)break;
     if(!cursor.current) {
       cursor.current=cursor.pending.pop();cursor.token=null;
       if(cursor.seen.indexOf(cursor.current)>=0){cursor.current=null;continue;}
@@ -71,7 +71,7 @@ function manualNewsScan_(cfg,old,maxChanges,maxMs) {
     var files=cursor.token?DriveApp.continueFileIterator(cursor.token):folder.getFiles();
     var paused=false;
     while(files.hasNext()) {
-      if(changed.length>=maxChanges||Date.now()-cfg.started>maxMs){
+      if(changed.length>=maxChanges||Date.now()-scanStarted>maxMs){
         cursor.token=files.getContinuationToken();paused=true;break;
       }
       var f=files.next(),mime=f.getMimeType(),name=f.getName();
