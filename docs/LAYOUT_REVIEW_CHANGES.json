@@ -42,7 +42,7 @@
       "path": "professional/index.html",
       "base_sha256": "115a1a32e125e7215c4336f4d079d434588308f7fff7fb69e53f446352dddf4b",
       "sha256": "d35f5bb52d0348abdb7da8fa15d4f6669ee2ba49804c47aa2b75e4c0a8c28315",
-      "reason": "Slides 2,8–17: remove marked prose, add chart/history hosts, group health under existing import panel. Follow-up slides 24–29 remove marked text, retain actual-record forecast, shorten 10-minute label. Keep four-grid drafts and full answer expanded by default; remove explanation only. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22 AI practice] Add optional answer-direction review selector; keep existing full-answer mode, record keys and source bank intact. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。 2026-11-05: Add mobile review choice cards and optional per-question external answer link field; preserve existing internal AI mode select and scoring behavior."
+      "reason": "Slides 2,8–17: remove marked prose, add chart/history hosts, group health under existing import panel. Follow-up slides 24–29 remove marked text, retain actual-record forecast, shorten 10-minute label. Keep four-grid drafts and full answer expanded by default; remove explanation only. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22 AI practice] Add optional answer-direction review selector; keep existing full-answer mode, record keys and source bank intact. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。 2026-11-05: Add mobile review choice cards and optional per-question external answer link field; preserve existing internal AI mode select and scoring behavior. Responsive additions are scoped in HTML to keep the frozen original style.css hash and installed WebKit upgrade snapshot intact."
     },
     {
       "path": "professional/layout-followup.css",
@@ -145,12 +145,6 @@
       "base_sha256": "7fe28bd7b2fef4ca1b2a8a8d85d6e911dbdf5440550057871793a960af5066eb",
       "sha256": "95da30d58d9ce461f27ab146093bca8588e9fd2f1b4bc65c7800ab69a9304386",
       "reason": "[2026-10-23 553 題一致性] 延續原有申論複習功能，支援警察原題跨科映射。 原始基準雜湊已由凍結來源紀錄恢復，確保舊版與新版檔案核驗一致。"
-    },
-    {
-      "path": "professional/style.css",
-      "base_sha256": "68fef3541d9fa122f00d8690220712f2bc13507b64d595143e3f5b752ba17e0f",
-      "sha256": "3c4a2890bde8018266f840785b4cc390988b7bd12267fcbfd766631144eaf2b5",
-      "reason": "2026-11-05: Document reviewed responsive CSS for two stacked AI review options on phones and per-question external answer link input, leaving all existing mobile breakpoints in place."
     }
   ]
 }
