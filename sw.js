@@ -51,6 +51,25 @@ async function download(port){
       const digest=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',body)),n=>n.toString(16).padStart(2,'0')).join('');
       if(/\.(json|webmanifest)$/.test(url)){
         const parsed=JSON.parse(new TextDecoder().decode(body));
+        if(url===absolute('daily-simulation/documents.json')&&parsed.schemaVersion===3){
+          if(!Array.isArray(parsed.months)||!parsed.months.length||
+             !parsed.months.some(m=>m.month===parsed.activeMonth))
+            throw Error('月份新聞總索引不符。');
+          // Only the active month is added to the standard offline snapshot.
+          // Archived months remain readable online, or in an optional historical offline pack.
+          const current=parsed.months.find(m=>m.month===parsed.activeMonth);
+          if(current.index!=='archives/'+current.month+'/index.json')throw Error('封存月份索引路徑不符。');
+          const u=absolute('daily-simulation/'+current.index);
+          if(!seen.has(u)){seen.add(u);pending.push(u);}
+        }
+        if(/^daily-simulation\/archives\/20\d{2}-(?:0[1-9]|1[0-2])\/index\.json$/.test(url.slice(BASE.href.length))&&parsed.schemaVersion===1){
+          if(!Array.isArray(parsed.shards)||!parsed.shards.length)throw Error('月份新聞分檔索引不符。');
+          for(const part of parsed.shards){
+            if(!part||!/^news-shards\/[a-f0-9]{64}\.json$/.test(part.path))throw Error('月份新聞分檔路徑不符。');
+            const u=absolute('daily-simulation/'+part.path);
+            if(!seen.has(u)){seen.add(u);pending.push(u);}
+          }
+        }
         if(url===absolute('daily-simulation/documents.json')&&parsed.schemaVersion===2){
           if(!Array.isArray(parsed.shards)||!parsed.shards.length)throw Error('離線新聞索引不符。');
           for(const part of parsed.shards){if(!part||!/^news-shards\/[a-f0-9]{64}\.json$/.test(part.path))throw Error('離線新聞分檔路徑不符。');const u=absolute('daily-simulation/'+part.path);if(seen.has(u))throw Error('離線新聞分檔重複。');seen.add(u);pending.push(u);}
@@ -83,7 +102,7 @@ self.addEventListener('fetch',e=>{
   if(e.request.method!=='GET'||u.origin!==BASE.origin||!u.pathname.startsWith(BASE.pathname)||['sw.js','offline-manifest.json'].includes(u.pathname.slice(BASE.pathname.length)))return;
   e.respondWith((async()=>{
     const clean=new URL(e.request.url);clean.search='';clean.hash='';
-    if((NETWORK_FIRST.has(clean.href)||/\/daily-simulation\/news-shards\/[a-f0-9]{64}\.json$/.test(clean.pathname))&&self.navigator?.onLine!==false){
+    if((NETWORK_FIRST.has(clean.href)||/\/daily-simulation\/(?:news-shards\/[a-f0-9]{64}|archives\/20\d{2}-(?:0[1-9]|1[0-2])\/index)\.json$/.test(clean.pathname))&&self.navigator?.onLine!==false){
       const fresh=await networkCopy(e.request);
       if(fresh)return fresh;
     }
