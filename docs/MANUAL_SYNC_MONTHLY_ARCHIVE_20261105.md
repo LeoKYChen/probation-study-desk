@@ -121,6 +121,7 @@
 ### 新增檔案與行為
 
 - `scripts/apps-script/DailyResourcesSelective.gs`：保留使用者原始解析器及「人工訂正、舊題 ID 不可被覆寫」檢查。只有新增選擇性來源過濾（Google / Markdown）、`strict` 來源錯誤中止，以及舊版 `syncDailyResources()` 預設禁止全量同步的保護。這份檔案是**原先每日模擬題 .gs 檔案的替換版本**，不是另一個可以與同名函式共存的額外檔案。
+- `scripts/apps-script/ManualDailyQuestions.gs`：新增 `previewManualDailyQuestions()`（只讀預覽，不提交、不移動游標），核對後才手動呼叫 `manualSyncDailyQuestions()`。正式同步只有人工呼叫時才工作。每批最多三份變動來源。
 - `scripts/apps-script/ManualDailyQuestions.gs`：只在手動呼叫 `manualSyncDailyQuestions()` 時工作。每批最多解析 3 份新增／已改來源；Google Docs 和 Markdown 都先比對 Drive 檔案修改時間、名稱雜湊與已提交成功狀態；未改來源不讀全文。
 - GitHub 來源進度檔：`scripts/sync-state/daily-question-sources.json`（**首次成功執行時才由程式建立，不是這個 PR 已產生的真實進度**）。只記錄不可逆的來源 ID 雜湊、類型、修改時間、檔名雜湊，沒有原始 Drive ID、檔名、token 或全文。Cloudflare 靜態網站鏡像不包含 `scripts/`。
 - 以 Drive FileIterator continuation token 儲存進度；失敗時不前移游標。GitHub source-state 更新與必要的 `daily-simulation/questions.json`、`file-data/daily.generated.js` 在同一個 Git tree commit 中原子提交。
