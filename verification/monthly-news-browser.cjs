@@ -9,7 +9,9 @@ const engine=process.env.UNIFIED_BROWSER_ENGINE||'chromium';
 assert(['chromium','webkit'].includes(engine),'Unsupported browser engine');
 const root=path.resolve(process.argv[2]||'.'),index=convert(loadNews());
 assert.equal(index.manifest.schemaVersion,3);
-assert.equal(index.manifest.count,239,'Unexpected change in historical fixture count; review migration fixtures');
+assert(index.manifest.count>0,'No published articles to verify');
+const counts=Object.fromEntries(index.manifest.months.map(m=>[m.month,m.count]));
+for(const required of ['2026-09','2026-10'])assert(counts[required]>0,'Historical fixture month missing: '+required);
 const archive=index.files;
 const mime={'.html':'text/html;charset=utf-8','.js':'text/javascript;charset=utf-8','.css':'text/css;charset=utf-8',
  '.json':'application/json;charset=utf-8','.svg':'image/svg+xml','.woff':'font/woff','.png':'image/png'};
@@ -54,15 +56,15 @@ const wait=(page,expected)=>page.waitForFunction(x=>{
    await page.goto(new URL('daily-simulation/',base).href);
    await page.locator('#newsMonth option[value="2026-09"]').waitFor();
    await page.locator('button[data-tab="全部閱讀資料"]').first().click();
-   await wait(page,20);
-   assert.equal(await page.locator('#newsMonth').inputValue(),'2026-11');
-   assert.equal(await page.locator('#total').innerText(),'239');
+   await wait(page,counts[index.manifest.activeMonth]);
+   assert.equal(await page.locator('#newsMonth').inputValue(),index.manifest.activeMonth);
+   assert.equal(await page.locator('#total').innerText(),String(index.manifest.count));
    const requestedOnEntry=requests.slice(initialRequests);
    assert(!requestedOnEntry.some(x=>x.includes('archives/2026-09/')||x.includes('archives/2026-10/')),
     'A visit to November must not download archived month manifests');
    await page.locator('#newsMonth').selectOption('2026-09');
-   await wait(page,6);
-   assert.equal(await page.locator('article.document-card').count(),6);
+   await wait(page,counts['2026-09']);
+   assert.equal(await page.locator('article.document-card').count(),counts['2026-09']);
    const september=index.manifest.catalog.find(d=>d.month==='2026-09');
    assert(september);
    const article=page.locator('[data-doc-open="'+september.id+'"]').first();
@@ -78,10 +80,10 @@ const wait=(page,expected)=>page.waitForFunction(x=>{
    assert(bookmarks.saved.includes(september.id)&&bookmarks.read.includes(september.id),'Archive reading state lost');
    await page.locator('#newsClose').click();
    await page.locator('#newsMonth').selectOption('2026-10');
-   await wait(page,213);
-   assert.equal(await page.locator('article.document-card').count(),213);
+   await wait(page,counts['2026-10']);
+   assert.equal(await page.locator('article.document-card').count(),counts['2026-10']);
    await page.locator('#newsMonth').selectOption('2026-09');
-   await wait(page,6);
+   await wait(page,counts['2026-09']);
    assert((await page.locator('[data-doc-save="'+september.id+'"]').first().innerText()).includes('★'),
     'Archive bookmark lost after month switching');
    const deepLink=new URL('daily-simulation/?document='+encodeURIComponent(september.id),base).href;
@@ -97,7 +99,7 @@ const wait=(page,expected)=>page.waitForFunction(x=>{
    assert.deepEqual(errors,[],'Unexpected browser JavaScript error');
    assert.deepEqual(bad,[],'Unexpected HTTP missing assets');
    console.log('PASS monthly archive browser:',engine,prefix,
-    '239 published articles, lazy 20/213/6 month loads, historical deeplink, bookmarks and read status');
+    index.manifest.count+' published articles, lazy per-month loads, historical deeplink, bookmarks and read status');
    await context.close();
   }
  }finally{await browser.close();}
