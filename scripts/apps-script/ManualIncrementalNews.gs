@@ -30,7 +30,7 @@ function manualSyncReadingNews() {
     }};
     readingNewsValidate_(next);
     // 驗證並原子提交索引 + 有異動的分檔 + 離線 JS；未變更的分檔只保留路徑。
-    var saved=manualNewsCommit_(cfg,old,next);
+    var saved=old.storageVersion===3?manualNewsCommitMonthly_(cfg,old,next):manualNewsCommit_(cfg,old,next);
     var head=readingNewsApi_(cfg,'get','git/ref/heads/'+encodeURIComponent(cfg.branch));
     if(head.object.sha!==saved.sha)throw new Error('已提交，但 GitHub 分支回讀不符；請先核對提交，勿盲目重試。');
     manualNewsSaveCursor_(batch.cursor);
@@ -88,7 +88,8 @@ function manualNewsScan_(cfg,old,maxChanges,maxMs) {
           modified:modified,date:readingNewsDate_(name,content,modified),tags:readingNewsTags_(name,content),
           excerpt:content.replace(/https?:\/\/\S+/g,'').replace(/[#*_>|`\[\]]/g,'').replace(/\s+/g,' ').trim().slice(0,160)});
       }catch(e){
-        errors.push({id:id,message:String(e.message||e).slice(0,180)});
+        // 勿將失敗文件後方的 continuation token 視為成功，避免永久漏件。
+        throw new Error('新聞來源讀取失敗（保留原始資料、游標不前進）：'+id+'：'+String(e.message||e).slice(0,180));
       }
     }
     if(paused)break;
