@@ -36,6 +36,28 @@ for(const [group,filenames] of Object.entries(groups)){
   console.log('Source-locked daily questions:',questions.length);
  }
  if(group==='weekly')assert(data['juvenile-news/issues.json'].issues.length>0);
+
+ if(group==='daily'&&fs.existsSync(path.join(root,'daily-simulation/questions-monthly.json'))){
+  const {validate}=require('./build-monthly-questions.cjs');
+  const index=JSON.parse(fs.readFileSync(path.join(root,'daily-simulation/questions-monthly.json'),'utf8'));
+  const summary=validate(index);
+  const wrap=(key,value,label)=>label+'\n(function(){if(typeof window.PSDRegisterFileData==="function")window.PSDRegisterFileData('+
+   JSON.stringify({[key]:value}).replace(/</g,'\\u003c').replace(/\u2028/g,'\\u2028').replace(/\u2029/g,'\\u2029')+');})();\n';
+  const checkOrWrite=(name,content)=>{
+   const target=path.join(outputDir,name);
+   if(mode==='--write'){fs.mkdirSync(path.dirname(target),{recursive:true});fs.writeFileSync(target,content,'utf8');}
+   else assert(fs.existsSync(target)&&fs.readFileSync(target,'utf8')===content,'Outdated monthly question offline JS: '+name);
+  };
+  checkOrWrite('questions-monthly.generated.js',wrap('daily-simulation/questions-monthly.json',index,'/* GENERATED question month manifest; do not edit. */'));
+  const seen=new Set();
+  for(const month of index.months)for(const shard of month.shards){
+   assert(!seen.has(shard.path),'Duplicate question shard');seen.add(shard.path);
+   const key='daily-simulation/'+shard.path,value=JSON.parse(fs.readFileSync(path.join(root,key),'utf8'));
+   checkOrWrite(shard.path.replace(/\.json$/,'.js'),wrap(key,value,'/* GENERATED question shard; do not edit. */'));
+  }
+  console.log('PASS offline monthly questions:',summary.count,'IDs,',seen.size,'hash-verified shards');
+ }
+
  if(group==='daily' && data['daily-simulation/documents.json'].schemaVersion===2){
   const index=data['daily-simulation/documents.json'];
   assert(Array.isArray(index.shards)&&index.shards.length,'News shard manifest missing');
