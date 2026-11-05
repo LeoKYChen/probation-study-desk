@@ -18,6 +18,22 @@ window.fetch=function(input,options){
  if(url.protocol==='file:'){
   const found=Object.keys(data).find(key=>url.pathname.endsWith('/'+key));
   if(found)return Promise.resolve(new Response(JSON.stringify(data[found]),{status:200,headers:{'content-type':'application/json; charset=utf-8'}}));
+  const questionIndex=url.pathname.match(/\/daily-simulation\/questions-monthly\.json$/);
+  const questionShard=url.pathname.match(/\/daily-simulation\/question-shards\/([a-f0-9]{64})\.json$/);
+  if(questionIndex||questionShard){
+    const key=questionIndex?'daily-simulation/questions-monthly.json':'daily-simulation/question-shards/'+questionShard[1]+'.json';
+    const target=questionIndex?'questions-monthly.generated.js':'question-shards/'+questionShard[1]+'.js';
+    return new Promise((resolve,reject)=>{
+      const script=document.createElement('script');
+      script.src=new URL('../file-data/'+target,location.href).href;
+      script.onload=()=>{script.remove();if(!Object.hasOwn(data,key)){
+        reject(new TypeError('月份題庫離線資料不完整：'+key));return;
+      }
+      resolve(new Response(JSON.stringify(data[key]),{status:200,headers:{'content-type':'application/json; charset=utf-8'}}));};
+      script.onerror=()=>{script.remove();reject(new TypeError('此 ZIP 缺少月份題庫檔：'+key));};
+      document.head.appendChild(script);
+    });
+  }
   const month=url.pathname.match(/\/daily-simulation\/archives\/(20\d{2}-(?:0[1-9]|1[0-2]))\/index\.json$/);
   if(month){
    const key='daily-simulation/archives/'+month[1]+'/index.json';
