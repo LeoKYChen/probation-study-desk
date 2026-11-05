@@ -37,6 +37,20 @@
 7. 若 FileIterator continuation token 過期，執行 resetManualNewsScan()；已提交且未改的文件仍會略過。
 8. 切換前完成 iOS Safari、桌面、離線 ZIP 測試；不可先停用所有排程。
 
+
+## 第二階段實作進度（2026-11-05）
+
+**已在測試分支加入，尚未切換資料格式：**
+
+- daily-simulation/news-storage.js：支援既有 schemaVersion 1/2，以及新的 schemaVersion 3 月份總索引。切換月份時只讀取該月份的 index 與經 SHA-256 驗證的新聞 shards；會檢查原 ID、月份、筆數及目錄一致性。
+- daily-simulation/news.js、index.html、app.js：新聞閱讀介面提供「選擇新聞封存月份」；既有 v2 資料也能使用月份篩選（v2 因為仍是舊資料架構，首次仍會讀完所有 shards）。已讀／收藏繼續依原始 ID 儲存，不改每日模擬題作答格式。
+- 原有 ?document=<id> 深層連結在 v3 可以透過總索引定位月份，再讀取那個月的全文。
+- scripts/build-monthly-news.cjs：從 GitHub 已驗證 JSON 規劃月份遷移；--plan 不寫檔；--stage DIR 只在儲存庫外建立**獨立預覽**，不覆蓋正式 documents.json。
+- verification/news-storage.test.cjs 與 verification/monthly-news-migration.test.cjs：涵蓋新舊格式、月份按需讀取、篡改拒讀、分檔原文 SHA 檢查與原始 ID 不變。
+- scripts/run-checks.cjs 已將規劃及單元測試納入 npm test。
+
+**正式啟用前尚須：**更新手動同步器的 v3 月份索引讀寫、OfflineBridge、file-compat.js、ZIP 產生器、Service Worker 與 Cloudflare release gate；完成來源不變跳過／月份修改／離線讀取／手機與桌面整合測試。尚未把真實來源轉成 v3，這是避免損及已發布新聞的刻意隔離措施。
+
 ## 第二階段：月份封存規格（尚未實作）
 
 建議新索引 schemaVersion 3：
