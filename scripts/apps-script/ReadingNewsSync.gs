@@ -71,7 +71,7 @@ function readingNewsReadGithub_(cfg) {
   if (!raw.content || raw.encoding !== 'base64') raw=readingNewsApi_(cfg,'get','git/blobs/'+meta.sha);
   if (raw.encoding !== 'base64' || !raw.content) throw new Error('無法讀取現有新聞 JSON，未覆寫。');
   var data=JSON.parse(Utilities.newBlob(Utilities.base64Decode(raw.content.replace(/\s/g,''))).getDataAsString('UTF-8'));
-  var storageVersion=data.schemaVersion;
+  var storageVersion=data.schemaVersion, shardGroups=[];
   if(data.schemaVersion===2){
     var idx=data, collected=[]; if(!Array.isArray(idx.shards)||!idx.shards.length)throw new Error('分檔索引異常');
     idx.shards.forEach(function(part){
@@ -83,12 +83,13 @@ function readingNewsReadGithub_(cfg) {
       if(part.path!=='news-shards/'+hex+'.json')throw new Error('分檔校驗失敗');
       var shard=JSON.parse(Utilities.newBlob(rawBytes).getDataAsString('UTF-8'));
       if(shard.schemaVersion!==1||!Array.isArray(shard.documents)||shard.documents.length!==part.count)throw new Error('分檔資料不符');
+      shardGroups.push({path:part.path,count:part.count,month:part.month||null,documents:shard.documents});
       collected=collected.concat(shard.documents);
     });
     if(collected.length!==idx.count)throw new Error('分檔總數不符');data={schemaVersion:1,documents:collected,sync:idx.sync};
   }
   readingNewsValidate_(data);
-  return {sha:meta.sha,data:data,storageVersion:storageVersion};
+  return {sha:meta.sha,data:data,storageVersion:storageVersion,shardGroups:shardGroups};
 }
 
 function readingNewsWriteGithub_(cfg, sha, data) {
