@@ -54,6 +54,35 @@ class ReleaseGateTest(unittest.TestCase):
         self.previous['file_sha256'][path]=digest
         self.current['file_sha256'][path]='c'*64
         self.assertFalse(gate.eligible(self.previous,self.current))
+    def test_first_monthly_archive_activation_requires_manual_release(self):
+        month='2026-11'
+        self.current['file_sha256']['daily-simulation/documents.json']='b'*64
+        self.current['file_sha256'][f'daily-simulation/archives/{month}/index.json']='c'*64
+        self.assertFalse(gate.eligible(self.previous,self.current))
+
+    def test_monthly_archive_update_after_manual_activation(self):
+        sep='daily-simulation/archives/2026-09/index.json'
+        self.previous['file_sha256'][sep]='a'*64
+        self.current['file_sha256'][sep]='a'*64
+        oct='daily-simulation/archives/2026-10/index.json'
+        self.current['file_sha256'][oct]='b'*64
+        self.current['file_sha256']['daily-simulation/documents.json']='b'*64
+        self.assertTrue(gate.eligible(self.previous,self.current))
+
+    def test_existing_month_rewrite_without_manifest_is_blocked(self):
+        sep='daily-simulation/archives/2026-09/index.json'
+        self.previous['file_sha256'][sep]='a'*64
+        self.current['file_sha256'][sep]='b'*64
+        self.assertFalse(gate.eligible(self.previous,self.current))
+
+    def test_any_modified_app_file_still_blocks_monthly_release(self):
+        sep='daily-simulation/archives/2026-09/index.json'
+        self.previous['file_sha256'][sep]='a'*64
+        self.current['file_sha256'][sep]='b'*64
+        self.current['file_sha256']['daily-simulation/documents.json']='b'*64
+        self.current['file_sha256']['daily-simulation/app.js']='c'*64
+        self.assertFalse(gate.eligible(self.previous,self.current))
+
     def test_invalid_hash_blocks_release(self):
         self.current['file_sha256']['daily-simulation/questions.json'] = 'invalid'
         self.assertFalse(gate.eligible(self.previous, self.current))
