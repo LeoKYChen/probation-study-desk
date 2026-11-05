@@ -41,8 +41,8 @@
     {
       "path": "professional/index.html",
       "base_sha256": "115a1a32e125e7215c4336f4d079d434588308f7fff7fb69e53f446352dddf4b",
-      "sha256": "1c673839811d295c0010d9b07d461b238450eee48392c7ebc39acbdd2a29f4dd",
-      "reason": "Slides 2,8–17: remove marked prose, add chart/history hosts, group health under existing import panel. Follow-up slides 24–29 remove marked text, retain actual-record forecast, shorten 10-minute label. Keep four-grid drafts and full answer expanded by default; remove explanation only. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22 AI practice] Add optional answer-direction review selector; keep existing full-answer mode, record keys and source bank intact. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。"
+      "sha256": "d35f5bb52d0348abdb7da8fa15d4f6669ee2ba49804c47aa2b75e4c0a8c28315",
+      "reason": "Slides 2,8–17: remove marked prose, add chart/history hosts, group health under existing import panel. Follow-up slides 24–29 remove marked text, retain actual-record forecast, shorten 10-minute label. Keep four-grid drafts and full answer expanded by default; remove explanation only. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22 AI practice] Add optional answer-direction review selector; keep existing full-answer mode, record keys and source bank intact. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。 2026-11-05: Add mobile review choice cards and optional per-question external answer link field; preserve existing internal AI mode select and scoring behavior."
     },
     {
       "path": "professional/layout-followup.css",
@@ -89,8 +89,8 @@
     {
       "path": "professional/sw.js",
       "base_sha256": "40e49a0b907e3db282d42743613f7756e205dba51705dfba7e8efac533400e99",
-      "sha256": "564e50e7400b9ba3844e184c82589827294a176ab765cc35e7070568ac766b07",
-      "reason": "Refresh existing installed-viewer asset cache for changed UI, without altering storage keys. [2026-10-21] Rotate cache version after mobile duration CSS update, so previously installed Safari PWAs fetch a fresh layout on service-worker activation.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22] Bump offline cache to refresh AI review mode script for installed apps. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。"
+      "sha256": "bc843fa95ca203af4004d6d09feedb822e26e48ad0f6062eb377d943b41f18b6",
+      "reason": "Refresh existing installed-viewer asset cache for changed UI, without altering storage keys. [2026-10-21] Rotate cache version after mobile duration CSS update, so previously installed Safari PWAs fetch a fresh layout on service-worker activation.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22] Bump offline cache to refresh AI review mode script for installed apps. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。 2026-11-05: Rotate study30 offline cache for new review layout and answer-link behavior."
     },
     {
       "path": "sw.js",
@@ -101,8 +101,8 @@
     {
       "path": "professional/practice-session.js",
       "base_sha256": null,
-      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.；2026-10-23 手機標示精簡及完整題庫資訊校正 [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。",
-      "sha256": "768c67b79ed5b9e7b33a747944e1baf98eab8104bf0fd9504af0b98c7a1bfbde"
+      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.；2026-10-23 手機標示精簡及完整題庫資訊校正 [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。 2026-11-05: Persist question-specific safe http(s) answer links in the existing per-day study30 record and JSON backup, without changing storage key.",
+      "sha256": "daeaf9e3c154b2ddd49f220cba327592351c0f9639a2c480886d9b9b0c637a91"
     },
     {
       "path": "professional/practice-review.js",
@@ -137,8 +137,8 @@
     {
       "path": "professional/ai-review-links-direction.js",
       "base_sha256": null,
-      "sha256": "8d2139b815fd29f1e85f91e56a11d20f965619e7f6d1a50100586d75108dc744",
-      "reason": "[2026-10-22 AI directions] Versioned script builds optional non-scored outline diagnostic prompts while keeping frozen ai-review-links.js and user-record keys untouched. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources.；2026-10-23 手機標示精簡及完整題庫資訊校正；2026-11-03 AI教練v2省Token提示詞經使用者核准更新；同步更新SHA-256完整性紀錄，保留原驗證機制。 [2026-11-03 v0.4 three-round coaching] User-approved prompt-only update: three-round closeout, full teaching summary, two-question direction limit; original source/question IDs, timers, local records, UI and review safeguards unchanged. The new reviewed SHA-256 is recorded without removing hash verification."
+      "sha256": "5ea2e2dcaf8f8a3f802c99a8b287632a8ab320508e84f9b5c01b21b6f9469ef5",
+      "reason": "[2026-10-22 AI directions] Versioned script builds optional non-scored outline diagnostic prompts while keeping frozen ai-review-links.js and user-record keys untouched. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources.；2026-10-23 手機標示精簡及完整題庫資訊校正；2026-11-03 AI教練v2省Token提示詞經使用者核准更新；同步更新SHA-256完整性紀錄，保留原驗證機制。 [2026-11-03 v0.4 three-round coaching] User-approved prompt-only update: three-round closeout, full teaching summary, two-question direction limit; original source/question IDs, timers, local records, UI and review safeguards unchanged. The new reviewed SHA-256 is recorded without removing hash verification. 2026-11-05: Connect mobile radio cards to existing AI mode select; validate, persist, restore and display per-question external answer links without sending URL to AI."
     },
     {
       "path": "professional/essay-review.js",
