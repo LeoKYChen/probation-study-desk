@@ -94,21 +94,21 @@ function readingNewsReadGithub_(cfg) {
     if(!Array.isArray(idx3.months)||!idx3.months.length||!Array.isArray(idx3.catalog)||idx3.catalog.length!==idx3.count)
       throw new Error('月份新聞索引格式錯誤');
     idx3.months.forEach(function(month){
-      if(!month||!/^(20\\d{2})-(0[1-9]|1[0-2])$/.test(month.month)||month.index!=='archives/'+month.month+'/index.json')
+      if(!month||!/^(20\d{2})-(0[1-9]|1[0-2])$/.test(month.month)||month.index!=='archives/'+month.month+'/index.json')
         throw new Error('月份索引路徑錯誤');
       var m=readingNewsApi_(cfg,'get','contents/daily-simulation/'+month.index+'?ref='+encodeURIComponent(cfg.branch));
       var mr=m.content&&m.encoding==='base64'?m:readingNewsApi_(cfg,'get','git/blobs/'+m.sha);
-      var mm=JSON.parse(Utilities.newBlob(Utilities.base64Decode(mr.content.replace(/\\s/g,''))).getDataAsString('UTF-8'));
+      var mm=JSON.parse(Utilities.newBlob(Utilities.base64Decode(mr.content.replace(/\s/g,''))).getDataAsString('UTF-8'));
       if(mm.schemaVersion!==1||mm.month!==month.month||mm.count!==month.count||!Array.isArray(mm.shards))
         throw new Error('月份子索引內容不符');
       var monthCount=0;
       mm.shards.forEach(function(part){
-        if(!part||!/^news-shards\\/[a-f0-9]{64}\\.json$/.test(part.path)||paths3[part.path])
+        if(!part||!/^news-shards\/[a-f0-9]{64}\.json$/.test(part.path)||paths3[part.path])
           throw new Error('月份新聞分檔路徑錯誤或重複');
         paths3[part.path]=true;
         var x=readingNewsApi_(cfg,'get','contents/daily-simulation/'+part.path+'?ref='+encodeURIComponent(cfg.branch));
         var raw=x.content&&x.encoding==='base64'?x:readingNewsApi_(cfg,'get','git/blobs/'+x.sha);
-        var bin=Utilities.base64Decode(raw.content.replace(/\\s/g,''));
+        var bin=Utilities.base64Decode(raw.content.replace(/\s/g,''));
         var hex=Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256,bin)
           .map(function(b){return ('0'+(b&255).toString(16)).slice(-2);}).join('');
         if(part.path!=='news-shards/'+hex+'.json')throw new Error('月份分檔 SHA-256 驗證失敗');
