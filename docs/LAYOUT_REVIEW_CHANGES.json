@@ -41,7 +41,7 @@
     {
       "path": "professional/index.html",
       "base_sha256": "115a1a32e125e7215c4336f4d079d434588308f7fff7fb69e53f446352dddf4b",
-      "sha256": "d35f5bb52d0348abdb7da8fa15d4f6669ee2ba49804c47aa2b75e4c0a8c28315",
+      "sha256": "fbd914b485dfc6ca6845cb890980bbff51675b1db437210cf93fe059ac6f0e08",
       "reason": "Slides 2,8–17: remove marked prose, add chart/history hosts, group health under existing import panel. Follow-up slides 24–29 remove marked text, retain actual-record forecast, shorten 10-minute label. Keep four-grid drafts and full answer expanded by default; remove explanation only. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22 AI practice] Add optional answer-direction review selector; keep existing full-answer mode, record keys and source bank intact. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。 2026-11-05: Add mobile review choice cards and optional per-question external answer link field; preserve existing internal AI mode select and scoring behavior. Responsive additions are scoped in HTML to keep the frozen original style.css hash and installed WebKit upgrade snapshot intact."
     },
     {
