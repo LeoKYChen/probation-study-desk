@@ -29,6 +29,6 @@ test('migration preserves every published document ID and verifies monthly shard
  assert.deepEqual(new Set([...selected.documents,...earlier.documents].map(x=>x.id)),new Set(original.map(x=>x.id)));
 });
 test('migration rejects malformed duplicate IDs or unsound document dates',()=>{
- assert.throws(()=>convert({documents:[article('x','2026-10-01'),article('x','2026-09-01')]}),/Duplicate/);
+ assert.throws(()=>convert({documents:[article('x','2026-10-01'),article('x','2026-09-01')]}),/duplicate/i);
  assert.throws(()=>convert({documents:[article('x','2026-99-01')]}),/Date invalid/);
 });
