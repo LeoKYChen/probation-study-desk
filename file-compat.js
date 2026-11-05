@@ -18,6 +18,18 @@ window.fetch=function(input,options){
  if(url.protocol==='file:'){
   const found=Object.keys(data).find(key=>url.pathname.endsWith('/'+key));
   if(found)return Promise.resolve(new Response(JSON.stringify(data[found]),{status:200,headers:{'content-type':'application/json; charset=utf-8'}}));
+  const month=url.pathname.match(/\/daily-simulation\/archives\/(20\d{2}-(?:0[1-9]|1[0-2]))\/index\.json$/);
+  if(month){
+   const key='daily-simulation/archives/'+month[1]+'/index.json';
+   return new Promise((resolve,reject)=>{
+    const script=document.createElement('script');
+    script.src=new URL('../file-data/archives/'+month[1]+'/index.js',location.href).href;
+    script.onload=()=>{script.remove();if(!Object.hasOwn(data,key)){reject(new TypeError('封存月份索引缺失'));return;}
+      resolve(new Response(JSON.stringify(data[key]),{status:200,headers:{'content-type':'application/json; charset=utf-8'}}));};
+    script.onerror=()=>{script.remove();reject(new TypeError('此 ZIP 尚未包含 '+month[1]+' 月的離線封存資料'));};
+    document.head.appendChild(script);
+   });
+  }
   const match=url.pathname.match(/\/daily-simulation\/news-shards\/([a-f0-9]{64})\.json$/);
   if(match){
    const key='daily-simulation/news-shards/'+match[1]+'.json';
