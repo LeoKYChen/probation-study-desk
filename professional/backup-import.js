@@ -16,8 +16,7 @@
    const s=input.sessions[d];
    if(!obj(s)||('notes'in s&&!Array.isArray(s.notes))||('essayDrafts'in s&&!obj(s.essayDrafts))||
      ('essayAssessments'in s&&!obj(s.essayAssessments))||
-     ('essayCustomPrompts'in s&&!obj(s.essayCustomPrompts))||
-     ('answerLinks'in s&&!obj(s.answerLinks)))throw Error('日期 '+d+' 的紀錄格式異常。');
+     ('essayCustomPrompts'in s&&!obj(s.essayCustomPrompts)))throw Error('日期 '+d+' 的紀錄格式異常。');
    if(s.date&&s.date!==d)throw Error('日期 '+d+' 的內容日期與索引不同。');
    // Fill fields needed by older versions, keeping all original essay/review metadata.
    const mode=['10','30'].includes(String(s.mode))?String(s.mode):'30';
