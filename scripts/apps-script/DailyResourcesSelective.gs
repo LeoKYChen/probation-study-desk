@@ -932,10 +932,13 @@ function mdCollect_(filter) {
   const props = PropertiesService.getScriptProperties(),
     folderId = props.getProperty("MD_SOURCE_FOLDER_ID");
   if (!folderId) throw Error("請設定 MD_SOURCE_FOLDER_ID");
-  const current = mdGithub_("daily-simulation/questions.json", "get");
-  if (!current) throw Error("正式題庫未找到；停止測試同步");
-  const previous = current,
-    old = mdDecode_(current),
+  // After safe monthly activation use verified shard contents supplied by the manual
+  // synchronizer. Do not re-read the frozen legacy questions.json snapshot.
+  const previous = filter && filter.previousDataset ? null :
+    mdGithub_("daily-simulation/questions.json", "get");
+  if (!previous && !(filter && filter.previousDataset))
+    throw Error("正式題庫未找到；停止測試同步");
+  const old = filter && filter.previousDataset ? filter.previousDataset : mdDecode_(previous),
     diagnostics = [];
   const base = mdReadGoogleBank_(old, diagnostics, filter);
   if (base.schemaVersion !== 1 || !Array.isArray(base.questions))
