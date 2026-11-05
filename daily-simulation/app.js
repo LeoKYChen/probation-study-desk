@@ -28,6 +28,7 @@ function render(){
  $('total').textContent=qs.length;$('written').textContent=qs.filter(q=>hasWrittenRecord(records[q.id])).length;$('reviewCount').textContent=qs.filter(q=>records[q.id]?.review).length;$('updated').textContent=time(data?.updatedAt);$('dataSource').textContent=source+'・台灣時間';$('start').disabled=false;
  $('nav').innerHTML=[...(ENABLE_NEWS_READING?ReadingNews.tabs:[]),'全部題目','待分類區','已有作答','待複習','我的收藏'].map(t=>{const reading=ReadingNews.isReading(t);const n=reading?ReadingNews.count(t):t==='全部題目'?qs.length:t==='待分類區'?qs.filter(Pending.isPending).length:t==='已有作答'?qs.filter(q=>hasWrittenRecord(records[q.id])).length:t==='待複習'?qs.filter(q=>records[q.id]?.review).length:qs.filter(q=>saved.includes(q.id)).length;return `<button class="nav-item ${state.tab===t?'active':''}" data-tab="${t}"><span class="symbol">${reading?'▤':'✎'}</span><span>${t==='全部題目'?'每日模擬題':t==='待分類區'?'待分類區｜每月訂正':t==='我的收藏'?'題目收藏':t}</span><small>${n}</small></button>`;}).join('');
  $('backupPanel').hidden=ReadingNews.isReading(state.tab);
+ $('newsMonth').hidden=!ReadingNews.isReading(state.tab);
  const pending=qs.filter(Pending.isPending),months=[...new Set(pending.map(Pending.month))].sort().reverse();
  $('monthlyPending').hidden=state.tab!=='待分類區';
  $('reviewMonth').innerHTML='<option value="">所有待訂正月份</option>'+months.map(m=>`<option value="${esc(m)}">${esc(m)}（${pending.filter(q=>Pending.month(q)===m).length} 題）</option>`).join('');
@@ -277,5 +278,5 @@ $('clearRecords').onclick=()=>{const n=Object.keys(records).length;
  }catch(e){clearRecordsMessage('未完成清除，原有紀錄保留：'+e.message,true);}
 };
 window.addEventListener('storage',e=>{if(e.key===KEY){try{records=M.records(JSON.parse(e.newValue||'{}'));render();if(current&&$('reader').open)openQuestion(current);}catch{notify('另一分頁的紀錄格式不符，未套用。');}}});
-if(ENABLE_NEWS_READING)ReadingNews.init(render).then(()=>{const id=initialParams.get('document');if(id){state.tab='全部閱讀資料';state.subject='';render();ReadingNews.open(id);}});load();
+if(ENABLE_NEWS_READING)ReadingNews.init(render).then(()=>{const id=initialParams.get('document');if(id){state.tab='全部閱讀資料';state.subject='';render();ReadingNews.openById(id);}});load();
 window.PSDDualAI?.resume('daily-simulation',writeDualReview);
