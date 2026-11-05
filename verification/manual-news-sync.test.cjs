@@ -95,3 +95,51 @@ test('rejects a concurrent GitHub index change before making a commit',()=>{
   {sha:'original-index',data:{documents:[]},shardGroups:[]},
   {documents:[doc('a')],sync:{status:'success'}}),/其他工作更新/);
 });
+
+test('unchanged monthly catalog scans metadata only, without redownloading GitHub shards',()=>{
+ const modified='2026-11-05T00:00:00.000Z',id='news-a';
+ const index={schemaVersion:3,count:1,activeMonth:'2026-11',
+  months:[{month:'2026-11',count:1,index:'archives/2026-11/index.json'}],
+  catalog:[{id,title:'News a',modified,mime:'text/markdown',date:'2026-11-05',month:'2026-11',tags:[]}]};
+ let deepReads=0,bodyReads=0,apiReads=0;
+ const {ctx}=ctxWith({
+  LockService:{getScriptLock:()=>({tryLock:()=>true,releaseLock:()=>{}})},
+  readingNewsConfig_:()=>({folderId:'folder',recursive:false,branch:'main',path:'daily-simulation/documents.json'}),
+  readingNewsReadGithub_:()=>{deepReads++;throw Error('Full archive must not be read on no-op');},
+  readingNewsId_:id=>'news-'+id,
+  DriveApp:{getFolderById:()=>({getFiles:()=>{
+   let n=0;return {hasNext:()=>n<1,next:()=>{n++;return {
+    getId:()=> 'a',getName:()=> 'News a',getMimeType:()=> 'text/markdown',
+    getLastUpdated:()=>new Date(modified),
+    getBlob:()=>{bodyReads++;throw Error('Source body must not be read');}
+   };}};
+  }})}
+ });
+ ctx.readingNewsApi_=(cfg,method,suffix)=>{
+  apiReads++;
+  if(suffix==='git/ref/heads/main')return {object:{sha:'head'}};
+  if(suffix==='contents/daily-simulation/documents.json?ref=head')
+   return {sha:'hash',encoding:'base64',content:Buffer.from(JSON.stringify(index)).toString('base64')};
+  throw Error('Unexpected request '+suffix);
+ };
+ const result=ctx.manualSyncReadingNews();
+ assert.equal(result.mode,'unchanged');
+ assert.equal(result.changed,0);
+ assert.equal(result.skipped,1);
+ assert.equal(deepReads,0);
+ assert.equal(bodyReads,0);
+ assert.equal(apiReads,2);
+});
+test('v3 without complete metadata falls back to verified full read',()=>{
+ const {ctx}=ctxWith();
+ ctx.readingNewsApi_=(cfg,method,suffix)=>{
+  if(suffix==='git/ref/heads/main')return {object:{sha:'head'}};
+  if(suffix==='contents/daily-simulation/documents.json?ref=head')
+   return {sha:'hash',encoding:'base64',content:Buffer.from(JSON.stringify({
+    schemaVersion:3,count:1,months:[{month:'2026-11',index:'archives/2026-11/index.json',count:1}],
+    catalog:[{id:'news-a',title:'News a',month:'2026-11'}]
+   })).toString('base64')};
+  throw Error('Unexpected request');
+ };
+ assert.equal(ctx.manualNewsReadCatalog_({branch:'main',path:'daily-simulation/documents.json'}),null);
+});
