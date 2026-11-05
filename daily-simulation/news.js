@@ -4,7 +4,7 @@
  const tabs=['晚間摘要／新聞','全部閱讀資料','閱讀收藏','未讀資料'];
  const time=s=>new Date(s).toLocaleString('zh-TW',{timeZone:'Asia/Taipei',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false});
  const readLocal=k=>{try{const v=JSON.parse(localStorage.getItem(k)||'[]');return Array.isArray(v)?v.filter(x=>typeof x==='string'):[];}catch{return [];}};
- let docs=[],sync=null,loading=true,error='',saved=readLocal('daily-reading-test:news-saved'),read=readLocal('daily-reading-test:news-read'),selected='',rerender=()=>{},archiveIndex=null,month='',availableMonths=[],totalCount=0;
+ let docs=[],sync=null,loading=true,error='',saved=readLocal('daily-reading-test:news-saved'),read=readLocal('daily-reading-test:news-read'),selected='',rerender=()=>{},archiveIndex=null,month='',availableMonths=[],totalCount=0,lastState=null;
  const url=s=>{try{const u=new URL(s);return ['https:','http:'].includes(u.protocol)?u.href:null;}catch{return null;}};
  function inline(s){const parts=String(s).split(/(\[[^\]\n]+\]\([^\s)]+\)|https?:\/\/[^\s<>]+|\*\*[^*\n]+\*\*|`[^`\n]+`)/g);return parts.map(p=>{const link=p.match(/^\[([^\]]+)\]\(([^)]+)\)$/);if(link){const u=url(link[2]);return u?`<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(link[1])}</a>`:esc(p);}if(/^https?:\/\//.test(p)){const u=url(p);return u?`<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(p)}</a>`:esc(p);}if(/^\*\*.*\*\*$/.test(p))return '<strong>'+esc(p.slice(2,-2))+'</strong>';if(/^`.*`$/.test(p))return '<code>'+esc(p.slice(1,-1))+'</code>';return esc(p);}).join('');}
  function markdown(text){let html='',rows=[],paragraph=[],list='',fence=false,code=[];const flushP=()=>{if(paragraph.length){html+='<p>'+paragraph.map(inline).join('<br>')+'</p>';paragraph=[];}};const flushL=()=>{if(list){html+='</'+list+'>';list='';}};const flushT=()=>{if(rows.length){const valid=rows.filter(r=>!r.every(c=>/^:?-+:?$/.test(c.replace(/\s/g,''))));html+='<div class="table-wrap"><table>'+valid.map((r,i)=>'<tr>'+r.map(c=>`<${i?'td':'th'}>${inline(c)}</${i?'td':'th'}>`).join('')+'</tr>').join('')+'</table></div>';rows=[];}};
@@ -14,6 +14,7 @@
  function filter(s){return docs.filter(d=>(!month||d.date.slice(0,7)===month)&&(s.tab!=='晚間摘要／新聞'||d.tags.includes('晚間摘要')||/新聞/.test(d.title))&&(s.tab!=='閱讀收藏'||saved.includes(d.id))&&(s.tab!=='未讀資料'||!read.includes(d.id))&&(!s.subject||d.tags.includes(s.subject))&&(!s.date||d.date===s.date)&&(!s.query||(d.title+' '+d.content).toLowerCase().includes(s.query.toLowerCase()))).sort((a,b)=>s.sort==='oldest'?a.date.localeCompare(b.date)||a.modified.localeCompare(b.modified):b.date.localeCompare(a.date)||b.modified.localeCompare(a.modified));}
  function card(d){return `<article class="document-card ${read.includes(d.id)?'is-read':''}"><div class="card-top"><span class="document-date">${esc(d.date)}</span><button class="icon-button bookmark ${saved.includes(d.id)?'bookmarked':''}" data-doc-save="${esc(d.id)}" aria-label="${saved.includes(d.id)?'取消收藏文件':'收藏文件'}">${saved.includes(d.id)?'★':'☆'}</button></div><button class="card-content" data-doc-open="${esc(d.id)}"><h3>${esc(d.title.replace(/\.md$/i,''))}</h3><p>${esc(d.excerpt||d.content.slice(0,130))}</p></button><div class="card-tags">${d.tags.slice(0,3).map(t=>`<button data-subject="${esc(t)}">${esc(t)}</button>`).join('')}</div><div class="card-footer"><button data-doc-read="${esc(d.id)}" class="${read.includes(d.id)?'marked':''}">${read.includes(d.id)?'✓ 已讀':'標記已讀'}</button><button data-doc-open="${esc(d.id)}">開始閱讀 →</button></div></article>`;}
  function render(s){
+ lastState=s;
  const monthPicker=$('newsMonth');
  monthPicker.hidden=!availableMonths.length;
  if(availableMonths.length){
@@ -36,14 +37,19 @@
  function toolbar(){$('newsBookmark').textContent=saved.includes(selected)?'★':'☆';$('newsBookmark').setAttribute('aria-label',saved.includes(selected)?'取消收藏文件':'收藏文件');$('newsRead').textContent=read.includes(selected)?'✓ 已讀完成（點擊取消）':'標記為已讀';}
  function open(id){const d=docs.find(d=>d.id===id);if(!d)return;selected=id;$('newsTitle').textContent=d.title.replace(/\.md$/i,'');$('newsMeta').textContent=d.date+' · 完整原文';$('newsTags').innerHTML=d.tags.map(t=>'<span>'+esc(t)+'</span>').join('');$('newsContent').innerHTML=markdown(d.content);$('newsSource').href=url(d.url);$('newsModified').textContent='原始檔最後修改：'+time(d.modified)+' · 台灣時間';toolbar();$('newsScroll').scrollTop=0;$('newsReader').showModal();document.body.classList.add('modal-open');$('newsClose').focus();}
  const fetchFile=path=>fetch(path,{cache:'no-store',signal:AbortSignal.timeout(15000)});
+ function resetMonthFilters(){
+  if(lastState){Object.assign(lastState,{subject:'',date:'',query:'',sort:'newest'});}
+  $('search').value='';$('sort').value='newest';
+  rerender();
+ }
  async function switchMonth(next){
   if(next===month)return true;
-  if(!archiveIndex){month=next;$('clearFilters').click();return true;}
+  if(!archiveIndex){month=next;resetMonthFilters();return true;}
   loading=true;error='';rerender();
   try{
    const v=valid(await root.NewsStorage.loadMonth(fetchFile,archiveIndex,next));
    docs=v.documents;month=v.month;sync=v.sync;
-   $('clearFilters').click();
+   resetMonthFilters();
    return true;
   }catch(e){
    error='無法讀取 '+next+' 的歷史資料：'+e.message+'。已保留原本月份。';
