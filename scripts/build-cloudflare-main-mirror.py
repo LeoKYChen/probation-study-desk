@@ -75,6 +75,8 @@ REQUIRED = (
     "v2.5/backup-core.js",
     "daily-simulation/index.html",
     "daily-simulation/questions.json",
+    "daily-simulation/questions-monthly.json",
+    "daily-simulation/question-storage.js",
     "common-subjects/index.html",
     "common-subjects/english-assistant/index.html",
     "juvenile-news/index.html",
@@ -184,6 +186,74 @@ def validate_reading_news(folder: Path) -> int:
     return total
 
 
+def validate_monthly_questions(folder: Path, legacy_questions: dict) -> int:
+    """Fail closed on missing/tampered monthly question shards and changed historical identities."""
+    import re
+    base = folder / "daily-simulation"
+    manifest = json.loads((base / "questions-monthly.json").read_text("utf-8"))
+    if (manifest.get("schemaVersion") != 2 or not isinstance(manifest.get("months"), list) or not isinstance(manifest.get("catalog"), list)):
+        raise RuntimeError("Monthly question index is invalid")
+    if len(manifest["catalog"]) != manifest.get("count") or not manifest["months"]:
+        raise RuntimeError("Monthly question catalog count mismatch")
+    months, paths, ids, actual_months, all_questions = set(), set(), set(), {}, []
+    total = 0
+    for month in manifest["months"]:
+        name = month.get("month")
+        if not isinstance(name, str) or not re.fullmatch(r"20\d{2}-(?:0[1-9]|1[0-2])", name) or name in months:
+            raise RuntimeError("Monthly question month is invalid or duplicated")
+        months.add(name)
+        shards = month.get("shards")
+        if not isinstance(shards, list) or not shards:
+            raise RuntimeError("Monthly question shards are missing")
+        count = 0
+        for shard in shards:
+            p = shard.get("path") if isinstance(shard, dict) else None
+            if not isinstance(p, str) or not re.fullmatch(r"question-shards/[0-9a-f]{64}\.json", p) or p in paths:
+                raise RuntimeError("Monthly question shard path is invalid or duplicate")
+            paths.add(p)
+            raw = (base / p).read_bytes()
+            if len(raw) != shard.get("bytes") or len(raw) > 900000:
+                raise RuntimeError("Monthly question shard size mismatch")
+            if hashlib.sha256(raw).hexdigest() != p.split("/")[-1][:-5]:
+                raise RuntimeError("Monthly question shard SHA-256 mismatch")
+            data = json.loads(raw)
+            questions = data.get("questions") if isinstance(data, dict) else None
+            if data.get("schemaVersion") != 1 or not isinstance(questions, list) or len(questions) != shard.get("count"):
+                raise RuntimeError("Monthly question shard count mismatch")
+            for q in questions:
+                if not isinstance(q, dict) or not isinstance(q.get("id"), str) or not q["id"] or q["id"] in ids:
+                    raise RuntimeError("Monthly question duplicate or missing ID")
+                if not str(q.get("date", "")).startswith(name + "-"):
+                    raise RuntimeError("Question in wrong archive month")
+                ids.add(q["id"])
+                actual_months[q["id"]] = name
+                all_questions.append(q)
+                count += 1
+                total += 1
+        if count != month.get("count"):
+            raise RuntimeError("Monthly question count mismatch")
+    if total != manifest.get("count") or manifest.get("activeMonth") not in months:
+        raise RuntimeError("Monthly question total or activeMonth invalid")
+    cat = set()
+    for item in manifest["catalog"]:
+        if not isinstance(item, dict) or item.get("id") in cat or actual_months.get(item.get("id")) != item.get("month"):
+            raise RuntimeError("Question month catalog mismatch")
+        cat.add(item["id"])
+    if cat != ids:
+        raise RuntimeError("Monthly question catalog dropped IDs")
+    base_questions = {q["id"]: q for q in legacy_questions["questions"]}
+    updated = {q["id"]: q for q in all_questions}
+    if not set(base_questions).issubset(updated):
+        raise RuntimeError("Original published question IDs were lost")
+    for uid, prior in base_questions.items():
+        current = updated[uid]
+        if any(prior.get(field) != current.get(field) for field in ("question", "date", "subject")):
+            raise RuntimeError("A published question identity was overwritten: " + uid)
+        if prior.get("qualityStatus") == "待訂正" and prior != current:
+            raise RuntimeError("An explicitly protected human-corrected question was modified")
+    return total
+
+
 def main() -> None:
     if OUT.exists():
         shutil.rmtree(OUT)
@@ -216,6 +286,7 @@ def main() -> None:
         raise RuntimeError("Daily question bank is missing")
     if questions.get("count") != len(questions["questions"]):
         raise RuntimeError("Daily question count is inconsistent")
+    monthly_question_count = validate_monthly_questions(OUT, questions)
     issues = json.loads((OUT / "juvenile-news/issues.json").read_text("utf-8"))
     if not isinstance(issues.get("issues"), list) or not issues["issues"]:
         raise RuntimeError("Weekly research data is missing")
@@ -232,7 +303,7 @@ def main() -> None:
         json.dumps(metadata, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     print(f"Prepared {len(copied)} identical static resources from commit {commit}")
-    print(f"Daily questions: {len(questions['questions'])}; news articles: {reading_count}; juvenile research issues: {len(issues['issues'])}")
+    print(f"Daily questions: {monthly_question_count} (monthly verified); news articles: {reading_count}; juvenile research issues: {len(issues['issues'])}")
     print("Only the dedicated Cloudflare preview branch may receive this build.")
 
 if __name__ == "__main__":
