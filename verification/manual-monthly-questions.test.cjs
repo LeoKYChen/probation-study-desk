@@ -67,7 +67,7 @@ test('editing one unprotected October question rebuilds its shard, not neighbori
 test('no substantive change checkpoints only, without rewriting questions, offline or old shards',()=>{
  const r=runtime();const saved=r.ctx.manualQuestionCommitMonthly_({branch:'main'},baseline(),before(),state());
  assert.equal(saved.questionsChanged,false);
- assert.deepEqual(r.writes().map(w=>w.path),['scripts/sync-state/daily-question-sources.json']);
+ assert.deepEqual(Array.from(r.writes(),w=>w.path),['scripts/sync-state/daily-question-sources.json']);
  assert.equal(saved.reusedShards,5);
 });
 test('older human-corrected question and previous question ID cannot be deleted or overwritten',()=>{
