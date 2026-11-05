@@ -4,6 +4,7 @@ const {spawnSync}=require('node:child_process'),path=require('node:path');
 const root=path.resolve(__dirname,'..');
 const NODE=[
   'scripts/check-duplicate-copies.cjs',
+  'scripts/build-monthly-news.cjs',
   'verification/dual-ai-handoff.cjs',
   'verification/check-daily-v254.cjs',
   'verification/offline-stage4-check.cjs',
@@ -28,6 +29,7 @@ const NODE_TEST=[
   'verification/news-bridge.test.cjs',
   'verification/news-apps-script.test.cjs',
   'verification/manual-news-sync.test.cjs',
+  'verification/monthly-news-migration.test.cjs',
   'verification/news-storage.test.cjs',
   'verification/weekly-sync.test.cjs',
   'verification/weekly-import.test.cjs',
