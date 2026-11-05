@@ -189,3 +189,36 @@ function manualSyncDailyQuestions() {
     return result;
   }finally{lock.releaseLock();}
 }
+
+/** Read-only preview: parses at most 3 changed sources, does NOT commit or advance cursor. */
+function previewManualDailyQuestions() {
+  var lock=LockService.getScriptLock();
+  if(!lock.tryLock(1000))throw new Error('有同步執行中；本次預覽未執行');
+  try{
+    var cfg=manualQuestionCfg_();
+    var head=psdBridgeApi_(cfg,'get','git/ref/heads/'+encodeURIComponent(cfg.branch)).object.sha;
+    var questions=manualQuestionRead_(cfg,'daily-simulation/questions.json',head,false);
+    var progress=manualQuestionRead_(cfg,PSD_DAILY_SOURCE_STATE_PATH_,head,true);
+    var state=progress?progress.data:{schemaVersion:1,sources:{}};
+    if(state.schemaVersion!==1||!state.sources||Array.isArray(state.sources))
+      throw new Error('來源進度資料格式不符');
+    var batch=manualQuestionScan_(cfg,state.sources,3,90000);
+    var result={mode:'preview',toProcess:batch.selected.length,skipped:batch.skipped,
+      hasMore:!!batch.cursor,oldQuestions:questions.data.questions.length,
+      sourceKeys:batch.selected.map(function(s){return s.key;})};
+    if(batch.selected.length){
+      var gd=new Set(),md=new Set();
+      batch.selected.forEach(function(s){if(s.metadata.kind==='google')gd.add(s.id);else md.add(s.id);});
+      var next=mdCollect_({googleIds:gd,mdIds:md,strict:true}).data;
+      manualQuestionValidate_(questions.data,next);
+      var ids={};questions.data.questions.forEach(function(q){ids[q.id]=true;});
+      var added=next.questions.filter(function(q){return !ids[q.id];});
+      result.newQuestions=added.map(function(q){return {id:q.id,date:q.date,subject:q.subject};});
+      result.proposedCount=next.count;
+    }else{
+      result.newQuestions=[];result.proposedCount=questions.data.questions.length;
+    }
+    console.log('手動題庫預覽（不寫入、不更新游標）：'+JSON.stringify(result));
+    return result;
+  }finally{lock.releaseLock();}
+}
