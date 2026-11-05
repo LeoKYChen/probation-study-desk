@@ -358,8 +358,39 @@ function readAiReview(id) {
     if(rec?.aiReviewTexts&&Object.prototype.hasOwnProperty.call(rec.aiReviewTexts,id))return String(rec.aiReviewTexts[id]||'');
   return '';
 }
+// External answer URLs follow the same per-question/per-date backup storage as AI reviews.
+function validAnswerLink(url){
+  if(!url)return true;
+  try {
+    const parsed=new URL(url);
+    return (parsed.protocol==='https:'||parsed.protocol==='http:')&&!!parsed.hostname&&!parsed.username&&!parsed.password;
+  } catch {return false;}
+}
+function saveAnswerLink(id,raw){
+  if(!session||typeof id!=='string'||!id||id.length>300||typeof raw!=='string'||raw.length>2048||!canSave)throw Error('作答連結無法儲存');
+  const url=raw.trim();
+  if(!validAnswerLink(url))throw Error('請貼上完整的 http:// 或 https:// 網址');
+  if(essayContext()?.questionId!==id)throw Error('題目已切換，請重新貼上連結');
+  const prev=session.answerLinks,prevTime=session.updatedAt;
+  session.answerLinks={...(prev||{}),[id]:url};
+  session.updatedAt=new Date().toISOString();
+  try {localStorage.setItem(KEY,JSON.stringify(store));}
+  catch(e){session.answerLinks=prev;session.updatedAt=prevTime;throw e;}
+  return true;
+}
+function readAnswerLink(id){
+  if(!session||typeof id!=='string'||!id)return '';
+  const records=[session,...Object.values(store.sessions||{}).sort((a,b)=>String(b?.date||'').localeCompare(String(a?.date||'')))];
+  for(const rec of records){
+    if(rec?.answerLinks&&Object.prototype.hasOwnProperty.call(rec.answerLinks,id)){
+      const value=rec.answerLinks[id];
+      return typeof value==='string'&&validAnswerLink(value)?value:'';
+    }
+  }
+  return '';
+}
 function currentDailyQuestion(){return currentQuestion();}
-window.Study30App={essayContext,saveEssay,saveEssayManualQuestion,essayAssessmentContext,saveEssayAssessment,getEssayReviewData,openEssayReview,prepareBackupRestore,saveAiReview,readAiReview,currentDailyQuestion};
+window.Study30App={essayContext,saveEssay,saveEssayManualQuestion,essayAssessmentContext,saveEssayAssessment,getEssayReviewData,openEssayReview,prepareBackupRestore,saveAiReview,readAiReview,saveAnswerLink,readAnswerLink,currentDailyQuestion};
   window.Study30Planner={isoTaipei,subjectFor,durations,normalSubject,candidateSubject,hash};
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
 })();
