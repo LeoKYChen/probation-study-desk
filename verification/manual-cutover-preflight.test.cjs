@@ -38,7 +38,10 @@ function build({isolated=false,write=false,approved=false,monthly=true,oldTimers
     manualQuestionReadMonthly_:()=>({count:245,questions:[]}),
     manualQuestionValidate_:()=>{}
   };
+  const fixtureRead=ctx.manualQuestionRead_;
   vm.createContext(ctx);vm.runInContext(source,ctx);
+  // Override the production GitHub fetcher with this isolated, read-only fixture.
+  ctx.manualQuestionRead_=fixtureRead;
   return {ctx,properties,stats:()=>({apiWrites,scriptWrites,folderReads,fileReads})};
 }
 test('manual cutover preflight is strictly read-only and blocks missing monthly manifest',()=>{
