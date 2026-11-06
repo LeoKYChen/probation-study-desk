@@ -18,11 +18,41 @@ function manualQuestionHash_(value) {
 function manualQuestionCfg_() {
   var props=PropertiesService.getScriptProperties();
   var cfg=psdBridgeConfig_('daily');
+  // Isolated testing is ONLY for this manual question module; the shared
+  // OfflineBridge/weekly writers stay main-only.
+  var isolated=(props.getProperty('PSD_MANUAL_DAILY_ISOLATED_BRANCH')||'').trim();
+  if(isolated){
+    if(props.getProperty('PSD_MANUAL_DAILY_MODE')!=='isolated'||
+      !/^feature\\/manual-incremental-archive-20\\d{6}$/.test(isolated)||
+      cfg.branch!=='main')throw Error('題庫隔離測試分支設定不正確；拒絕同步');
+    cfg={repo:cfg.repo,branch:isolated,token:cfg.token};
+  }
   var google=(props.getProperty('SOURCE_FOLDER_ID')||'').trim();
   var markdown=(props.getProperty('MD_SOURCE_FOLDER_ID')||'').trim();
   if(!google||!markdown)throw new Error('必須設定 SOURCE_FOLDER_ID 和 MD_SOURCE_FOLDER_ID；未開始同步');
   return {repo:cfg.repo,branch:cfg.branch,token:cfg.token,google:google,markdown:markdown};
 }
+/**
+ * Manual execution alone is not authority to write. In production, the
+ * reviewed monthly migration and a separate explicit approval are required.
+ */
+function manualQuestionWriteGate_(cfg,head,monthly){
+  var p=PropertiesService.getScriptProperties();
+  if(p.getProperty('PSD_MANUAL_DAILY_WRITE_ENABLED')!=='true')
+    throw Error('手動題庫目前為唯讀模式；沒有啟用 GitHub 寫入授權');
+  if(!monthly||monthly.data.schemaVersion!==2||monthly.data.count<245)
+    throw Error('題庫月份索引尚未驗收完成；拒絕從舊版全量 JSON 直接寫入');
+  if(cfg.branch==='main'){
+    if(p.getProperty('PSD_MANUAL_DAILY_PRODUCTION_APPROVED_SHA')!==head)
+      throw Error('正式 main 尚未針對目前 GitHub commit 核准，拒絕寫入');
+  }else if(p.getProperty('PSD_MANUAL_DAILY_MODE')!=='isolated'||
+    p.getProperty('PSD_MANUAL_DAILY_ISOLATED_BRANCH')!==cfg.branch||
+    !/^feature\\/manual-incremental-archive-20\\d{6}$/.test(cfg.branch)){
+    throw Error('隔離分支未獲明確授權，拒絕題庫寫入');
+  }
+  return true;
+}
+
 function manualQuestionRead_(cfg,path,ref,optional) {
   var pinned={repo:cfg.repo,branch:ref,token:cfg.token};
   var meta;
@@ -184,9 +214,9 @@ function manualSyncDailyQuestions() {
     var nextState={schemaVersion:1,sources:Object.assign({},state.sources),
       updatedAt:new Date().toISOString()};
     batch.selected.forEach(function(s){nextState.sources[s.key]=s.metadata;});
-    var saved=monthly?
-      manualQuestionCommitMonthly_(cfg,{head:head,indexSha:monthly.sha,index:monthly.data,data:original},next,nextState):
-      manualQuestionCommit_(cfg,{head:head,questionSha:questions.sha,data:original},next,nextState);
+    manualQuestionWriteGate_(cfg,head,monthly);
+    var saved=manualQuestionCommitMonthly_(cfg,{head:head,indexSha:monthly.sha,
+      index:monthly.data,data:original},next,nextState);
     manualQuestionSaveCursor_(batch.cursor);
     var result={mode:'committed',processed:batch.selected.length,skipped:batch.skipped,
       hasMore:!!batch.cursor,questionsChanged:saved.questionsChanged,filesChanged:saved.filesChanged,
