@@ -79,7 +79,9 @@ function preflightManualDailyQuestions() {
     // Never disclose a property value, source title, repo token or Drive ID.
     var message=String(e&&e.message||e);
     if(/(?:Token|[Tt]oken|403|401)/.test(message))report.blockers.push('GitHub 憑證或權限核驗失敗');
-    else report.blockers.push('讀取核驗未完成：'+message.slice(0,100));
+    else if(/題庫|月份|分檔|SHA-256/.test(message))report.blockers.push('月份題庫內容或歷史題號核驗未通過');
+    else if(/Drive|資料夾|SOURCE_FOLDER|MD_SOURCE/.test(message))report.blockers.push('Google Drive 資料夾或權限核驗未通過');
+    else report.blockers.push('預檢讀取未完成；請核對 Apps Script 權限與來源資料');
   }
   report.safeToPreview=report.blockers.length===0&&report.monthlyIndexPresent&&
     report.fullArchiveVerified&&report.legacyBaselinePreserved&&report.offlineWrappersPresent&&
