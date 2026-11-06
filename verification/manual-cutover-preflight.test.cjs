@@ -35,7 +35,9 @@ function build({isolated=false,write=false,approved=false,monthly=true,oldTimers
       if(p==='scripts/sync-state/daily-question-sources.json')return null;
       throw Error('Unexpected requested path '+p);
     },
-    manualQuestionReadMonthly_:()=>({count:245,questions:[]}),
+    manualQuestionReadMonthly_:()=>({count:245,questions:Array.from({length:245},(_,i)=>({
+      id:'q-'+i,date:'2026-11-05',subject:'心理學',question:'Question '+i
+    }))}),
     manualQuestionValidate_:()=>{}
   };
   const fixtureRead=ctx.manualQuestionRead_;
