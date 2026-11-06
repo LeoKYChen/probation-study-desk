@@ -104,3 +104,17 @@ test('active original time trigger is warning for read-only preview but blocks p
  assert.equal(report.warnings.length,1);
  assert.equal(r.stats().apiWrites,0);
 });
+
+test('read-only preflight never exposes a GitHub token, Drive folder IDs or raw remote error content',()=>{
+ const a=build({isolated:true,write:true});
+ const result=a.ctx.preflightManualDailyQuestions();
+ const encoded=JSON.stringify(result);
+ for(const privatePart of ['secret-not-to-log','google-id','markdown-id'])
+  assert.equal(encoded.includes(privatePart),false,'Private property leaked into report');
+ const broken=build({isolated:true,write:true});
+ broken.ctx.psdBridgeApi_=()=>{throw Error('Remote response contains PRIVATE-TOKEN-and-folder-identifier')};
+ const report=broken.ctx.preflightManualDailyQuestions();
+ assert.equal(report.readyForManualSync,false);
+ assert.equal(JSON.stringify(report).includes('PRIVATE-TOKEN'),false);
+ assert.equal(broken.stats().apiWrites,0);
+});
