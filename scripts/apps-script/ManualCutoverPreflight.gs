@@ -37,11 +37,27 @@ function preflightManualDailyQuestions() {
       report.legacyBaselinePreserved=true;
       report.originalCount=baseline.data.count;
       var pinned={repo:cfg.repo,branch:head,token:cfg.token};
-      var wrappers=['file-data/questions-monthly.generated.js'];
+      // Confirm exact generated wrapper content; existence checks alone can
+      // silently accept a previous month's offline answer bank.
+      function expectedScript_(key,payload,comment){
+        var obj={};obj[key]=payload;
+        return comment+'\n(function(){if(typeof window.PSDRegisterFileData==="function")window.PSDRegisterFileData('+
+          JSON.stringify(obj).replace(/</g,'\\u003c').replace(/\u2028/g,'\\u2028').replace(/\u2029/g,'\\u2029')+');})();\n';
+      }
+      var wrappers=[{path:'file-data/questions-monthly.generated.js',
+        content:expectedScript_('daily-simulation/questions-monthly.json',master.data,
+          '/* GENERATED question month manifest; do not edit. */')}];
       master.data.months.forEach(function(m){m.shards.forEach(function(shard){
-        wrappers.push('file-data/'+shard.path.replace(/\.json$/,'.js'));
+        var key='daily-simulation/'+shard.path;
+        var payload=manualQuestionRead_(cfg,key,head,false).data;
+        wrappers.push({path:'file-data/'+shard.path.replace(/\.json$/,'.js'),
+          content:expectedScript_(key,payload,'/* GENERATED question shard; do not edit. */')});
       });});
-      wrappers.forEach(function(path){psdBridgeMeta_(pinned,path);});
+      wrappers.forEach(function(entry){
+        var meta=psdBridgeMeta_(pinned,entry.path);
+        var sha=psdBridgeSha1_(Utilities.newBlob(entry.content).getBytes());
+        if(meta.sha!==sha)throw Error('ZIP 題庫檔案內容與月份來源不符');
+      });
       report.offlineWrappersPresent=true;
       report.offlineFileCount=wrappers.length;
       if(master.data.count<245)report.blockers.push('月份題庫題數少於最初的 245 題');
