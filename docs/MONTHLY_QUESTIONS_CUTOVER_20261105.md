@@ -101,7 +101,7 @@
 | \`SOURCE_FOLDER_ID\` / \`MD_SOURCE_FOLDER_ID\` | 需要有讀取權限的來源資料夾 ID |
 | \`GITHUB_TOKEN\` | 僅在 Apps Script 指令碼屬性由本人設定，不貼到對話、儲存庫或執行紀錄 |
 
-初次只執行 \`preflightManualDailyQuestions()\`（讀取核驗）及 \`previewManualDailyQuestions()\`（對最多 3 份變動來源預覽），確認預期題號與數量。**不可直接在現有正式 Apps Script 專案加入隔離設定，然後猜測目標是測試分支。** 所有設定都應核對預檢回傳的 \`branch\`。
+初次只執行 \`preflightManualDailyQuestions()\`（讀取核驗）及 \`previewManualDailyQuestions()\`（對最多 3 份變動來源預覽），確認預期題號與數量。預檢回傳 \`safeToPreview=true\` 代表資料結構已核實；此時 \`readyForManualSync=false\` 是正常的（尚未授權寫入），不能為了讓它變成 true 就預先開放寫入。只有正式 main 已完成資料與觸發器確認、且 SHA 寫入授權有效時，\`readyForProductionCutover\` 才可能為 true。**不可直接在現有正式 Apps Script 專案加入隔離設定，然後猜測目標是測試分支。** 所有設定都應核對預檢回傳的 \`branch\`。
 
 隔離預檢通過且備份完成後，若要實際測試 GitHub PR 資料更新，才在**獨立測試副本**暫時設 \`PSD_MANUAL_DAILY_WRITE_ENABLED=true\`，執行 \`manualSyncDailyQuestions()\`，核對 GitHub PR head、變動 shard 和離線 ZIP wrapper；測試完成立即改回 \`false\`。此步會真的更新**PR 分支**，即使不是正式站也不能當成純預覽。
 
