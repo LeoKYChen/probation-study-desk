@@ -23,7 +23,7 @@ function manualQuestionCfg_() {
   var isolated=(props.getProperty('PSD_MANUAL_DAILY_ISOLATED_BRANCH')||'').trim();
   if(isolated){
     if(props.getProperty('PSD_MANUAL_DAILY_MODE')!=='isolated'||
-      !/^feature\\/manual-incremental-archive-20\\d{6}$/.test(isolated)||
+      !/^feature\/manual-incremental-archive-20\d{6}$/.test(isolated)||
       cfg.branch!=='main')throw Error('題庫隔離測試分支設定不正確；拒絕同步');
     cfg={repo:cfg.repo,branch:isolated,token:cfg.token};
   }
@@ -47,7 +47,7 @@ function manualQuestionWriteGate_(cfg,head,monthly){
       throw Error('正式 main 尚未針對目前 GitHub commit 核准，拒絕寫入');
   }else if(p.getProperty('PSD_MANUAL_DAILY_MODE')!=='isolated'||
     p.getProperty('PSD_MANUAL_DAILY_ISOLATED_BRANCH')!==cfg.branch||
-    !/^feature\\/manual-incremental-archive-20\\d{6}$/.test(cfg.branch)){
+    !/^feature\/manual-incremental-archive-20\d{6}$/.test(cfg.branch)){
     throw Error('隔離分支未獲明確授權，拒絕題庫寫入');
   }
   return true;
