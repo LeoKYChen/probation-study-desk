@@ -79,3 +79,43 @@
 - \`scripts/build-cloudflare-main-mirror.py\`：發版前強制驗證題庫各分檔內容與舊題的同一性。
 
 **設計取捨：** 既有 \`questions.json\` 作為不可變回復基準暫存於 repo，並不因「已分檔」而立即刪掉；這會暫時增加 GitHub 總儲存量，但降低切換期間的資料損失風險。等正式驗收、備份和回復演練完成，才評估是否移出舊快照。
+
+
+## 8. 正式切換前的 Apps Script 唯讀預檢與明確授權（2026-11-06）
+
+新增 \`scripts/apps-script/ManualCutoverPreflight.gs\`，提供 \`preflightManualDailyQuestions()\`，**不更動任何 GitHub 檔案、Google Drive 檔案、Script Properties 或排程**。它會確認來源資料夾可存取、GitHub 指向哪個分支、月份題庫是否存在、既有 245 題及人工訂正是否保留、全部分檔雜湊可讀、ZIP JS 檔是否存在、來源檢查點是否可讀，並列出執行者目前帳號安裝的舊時間觸發器名稱。結果不記錄 token、來源 Drive ID 或題目正文。
+
+**目前未連線至正式 Apps Script 編輯／執行 API，預檢函式只寫在測試 PR，並未在使用者的正式專案執行。** GitHub CI 通過不能替代此項實測。
+
+### A. 在獨立 Apps Script 測試副本使用 PR 測試分支
+
+先備份原 Apps Script 和所有指令碼屬性。以**另一個 Apps Script 測試專案**安裝 \`DailyResourcesSelective.gs\`（取代同名舊函式）、\`ManualDailyQuestions.gs\`、\`ManualMonthlyQuestions.gs\`、\`ManualCutoverPreflight.gs\` 及 \`OfflineBridge.gs\`，並保留原 \`readDailyTabs_\` 等必須的 helper。
+
+| 測試專案 Script Property | 測試設定 |
+|---|---|
+| \`GITHUB_REPO\` | \`LeoKYChen/probation-study-desk\` |
+| \`GITHUB_BRANCH\` | \`main\`（原 OfflineBridge 安全檢查所需；手動題庫模組會另外覆蓋目標） |
+| \`PSD_MANUAL_DAILY_MODE\` | \`isolated\` |
+| \`PSD_MANUAL_DAILY_ISOLATED_BRANCH\` | \`feature/manual-incremental-archive-20261105\` |
+| \`PSD_MANUAL_DAILY_WRITE_ENABLED\` | **先留空或 \`false\`** |
+| \`SOURCE_FOLDER_ID\` / \`MD_SOURCE_FOLDER_ID\` | 需要有讀取權限的來源資料夾 ID |
+| \`GITHUB_TOKEN\` | 僅在 Apps Script 指令碼屬性由本人設定，不貼到對話、儲存庫或執行紀錄 |
+
+初次只執行 \`preflightManualDailyQuestions()\`（讀取核驗）及 \`previewManualDailyQuestions()\`（對最多 3 份變動來源預覽），確認預期題號與數量。**不可直接在現有正式 Apps Script 專案加入隔離設定，然後猜測目標是測試分支。** 所有設定都應核對預檢回傳的 \`branch\`。
+
+隔離預檢通過且備份完成後，若要實際測試 GitHub PR 資料更新，才在**獨立測試副本**暫時設 \`PSD_MANUAL_DAILY_WRITE_ENABLED=true\`，執行 \`manualSyncDailyQuestions()\`，核對 GitHub PR head、變動 shard 和離線 ZIP wrapper；測試完成立即改回 \`false\`。此步會真的更新**PR 分支**，即使不是正式站也不能當成純預覽。
+
+### B. 正式 main 的寫入防護
+
+新同步器在正式 \`main\` 上必須同時符合：
+1. \`PSD_MANUAL_DAILY_WRITE_ENABLED=true\`。
+2. 已審查過的月份題庫主索引存在且不少於 245 題；**尚無月份索引時拒絕寫回舊 \`questions.json\`**。
+3. \`PSD_MANUAL_DAILY_PRODUCTION_APPROVED_SHA\` **恰好等於目前 main HEAD SHA**。若他人更新 main，前次核准即失效；每次成功提交新 commit 後，下一批也要重新檢查並核准最新 SHA。
+4. \`PSD_MANUAL_DAILY_ISOLATED_BRANCH\` 必須清空，避免仍寫入測試分支；上線前確認時序觸發器實際停用。
+5. 新增人工修復入口 \`repairMonthlyQuestionOfflineBridge()\` 如果發現需要寫入，也同樣受 SHA 授權門檻保護；完全沒變動時只做核對。
+
+**切勿把這些授權旗標寫進 GitHub 程式碼或提供給 ChatGPT；這些只是使用者自行在 Apps Script 中確認後設定的操作開關。** 切換前必須保留可回退的 main commit、離線檔及本機作答 JSON 備份。發版權限和網站狀態核對仍需實際操作，不因預檢通過而自動合併。
+
+### C. 觸發器與任務的界線
+
+預檢僅能查看**目前執行者帳號**可見的 Apps Script 安裝型觸發器；其他帳號建立的觸發器、ChatGPT 晚間摘要排程並不代表已涵蓋。不得為了讓預檢變成綠燈而提前刪除正式同步排程。完成隔離實測、正式備份、回復演練、正式切換核對後，才另行執行明確的觸發器停用程序。
