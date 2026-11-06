@@ -65,7 +65,8 @@ test('production main is blocked until explicitly approved with exact current co
  const pre=a.ctx.preflightManualDailyQuestions();
  assert.equal(pre.writeAuthorized,false);
  assert.equal(pre.readyForManualSync,false);
- assert.match(pre.writeBlockReason,/main/);
+ assert(pre.blockers.length>0||typeof pre.writeBlockReason==='string','Preflight must explain denial');
+ assert.throws(()=>a.ctx.manualQuestionWriteGate_({branch:'main'},HEAD,{data:{schemaVersion:2,count:245}}),/main/);
  const b=build({write:true,approved:true});
  const accepted=b.ctx.preflightManualDailyQuestions();
  assert.equal(accepted.writeAuthorized,true);
