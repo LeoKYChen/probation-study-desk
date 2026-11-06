@@ -1,0 +1,76 @@
+name: Study30 review and answer-link isolated acceptance
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - professional/index.html
+      - professional/practice-session.js
+      - professional/ai-review-links-direction.js
+      - professional/sw.js
+      - docs/LAYOUT_REVIEW_CHANGES.json
+      - verification/study30-answer-link-browser.cjs
+      - .github/workflows/study30-answer-link-preview.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: study30-answer-link-qa-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  test-and-preview:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'feat/study30-review-layout-answer-link-20261105'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Validate current source and protected hashes
+        run: |
+          node verification/unified-integration.cjs
+          node --check verification/study30-answer-link-browser.cjs
+          python3 scripts/build-cloudflare-main-mirror.py
+      - name: Install Chromium and WebKit for actual mobile-sized browser tests
+        run: |
+          npm install --prefix /tmp/study30-answer-link-qa --no-save playwright@1.62.1
+          /tmp/study30-answer-link-qa/node_modules/.bin/playwright install --with-deps chromium webkit
+      - name: Test review choice and answer link in both engines and both route prefixes
+        env:
+          NODE_PATH: /tmp/study30-answer-link-qa/node_modules
+        run: node verification/study30-answer-link-browser.cjs cloudflare-main-mirror-dist
+      - name: Publish isolated answer-link test branch only
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy cloudflare-main-mirror-dist --project-name=probation-study30-test --branch=study30-answer-link-pr127 --commit-hash=${{ github.event.pull_request.head.sha }}
+      - name: Verify staging alias and four changed application assets
+        env:
+          EXPECTED_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          BASE=https://study30-answer-link-pr127.probation-study30-test.pages.dev
+          found=0
+          for n in $(seq 1 15); do
+            if curl -fsSL --max-time 20 "$BASE/mirror-manifest.json" -o /tmp/study30-answer-link-manifest; then
+              if python3 - <<'PY'
+          import json,os
+          from pathlib import Path
+          assert json.loads(Path('/tmp/study30-answer-link-manifest').read_text())['source_commit']==os.environ['EXPECTED_SHA']
+          PY
+              then found=1;break;fi
+            fi
+            sleep 8
+          done
+          test "$found" = 1 || { echo "Staging alias did not reach the expected commit"; exit 1; }
+          for file in professional/index.html professional/practice-session.js professional/ai-review-links-direction.js professional/sw.js; do
+            curl -fsSL --max-time 20 "$BASE/$file" -o /tmp/study30-answer-link-live
+            cmp "cloudflare-main-mirror-dist/$file" /tmp/study30-answer-link-live || { echo "Preview asset differs: $file"; exit 1; }
+          done
+          echo "PASS isolated preview branch, commit and exact application bytes"

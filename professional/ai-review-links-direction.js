@@ -100,8 +100,28 @@
  }
  function start(){
    const api=root.Study30App,textarea=$('daily30AiFeedback'),copy=$('daily30CopyAi');
-   if(!api?.essayContext||!api?.saveAiReview||!api?.readAiReview||!textarea||!copy)return;
+   const linkInput=$('daily30AnswerLink'),linkOpen=$('daily30OpenAnswerLink'),linkStatus=$('daily30AnswerLinkStatus');
+   const modeSelect=$('daily30AiMode'),modeChoices=Array.from(document.querySelectorAll('input[name="daily30ReviewChoice"]'));
+   if(!api?.essayContext||!api?.saveAiReview||!api?.readAiReview||!api?.saveAnswerLink||!api?.readAnswerLink||!textarea||!copy||!linkInput||!linkOpen||!linkStatus||!modeSelect)return;
    let currentId=null;
+   const safeUrl=raw=>{
+     try{const url=new URL(String(raw||'').trim());return (url.protocol==='https:'||url.protocol==='http:')&&url.hostname&&!url.username&&!url.password?url.href:null;}
+     catch{return null;}
+   };
+   function linkPreview(value,message){
+     const url=safeUrl(value);
+     linkOpen.hidden=!url;
+     if(url)linkOpen.href=url;else linkOpen.removeAttribute('href');
+     linkStatus.textContent=message||(value?'已儲存本題作答連結':'可貼上 Google Drive、Notion 或其他作答頁面網址；每題獨立儲存。');
+     linkStatus.dataset.error='false';
+   }
+   modeChoices.forEach(choice=>choice.addEventListener('change',()=>{
+     if(!choice.checked)return;
+     modeSelect.value=choice.value;
+     modeSelect.dispatchEvent(new Event('change',{bubbles:true}));
+   }));
+   modeSelect.addEventListener('change',()=>modeChoices.forEach(choice=>{choice.checked=choice.value===modeSelect.value;}));
+   modeChoices.forEach(choice=>{choice.checked=choice.value===modeSelect.value;});
    function current(){
      const ctx=api.essayContext();
      return {ctx,id:ctx?.questionId||null,q:findQuestion(ctx?.questionId)};
@@ -112,6 +132,9 @@
      if(id!==currentId){
        currentId=id;
        textarea.value=id?api.readAiReview(id):'';
+       linkInput.value=id?api.readAnswerLink(id):'';
+       linkInput.disabled=!id;
+       linkPreview(linkInput.value,id?null:'請先選擇題目');
        textarea.disabled=!id;
        copy.disabled=!id;
        $('daily30AiStatus').textContent=id?(textarea.value?'已載入本題過往批改文字':'本題尚無AI批改結果'):'請先選擇題目';
@@ -119,6 +142,18 @@
      appendLinks('essayExternalGuide',q);
      if(typeof api.currentDailyQuestion==='function')appendLinks('daily30ExternalGuide',api.currentDailyQuestion());
    }
+   linkInput.addEventListener('input',()=>{
+     const {id}=current();
+     if(!id||id!==currentId){refresh();return;}
+     const value=linkInput.value.trim();
+     if(value&&!safeUrl(value)){
+       linkOpen.hidden=true;linkOpen.removeAttribute('href');
+       linkStatus.textContent='請貼上完整的 http:// 或 https:// 網址，修正後才會儲存。';
+       linkStatus.dataset.error='true';return;
+     }
+     try{api.saveAnswerLink(id,value);linkPreview(value,value?'已自動儲存本題作答連結':'已清除此題作答連結');}
+     catch(e){linkOpen.hidden=true;linkOpen.removeAttribute('href');linkStatus.textContent='儲存失敗，請先自行備份連結';linkStatus.dataset.error='true';}
+   });
    textarea.addEventListener('input',()=>{
      const {id}=current();if(!id||id!==currentId){refresh();return;}
      try{api.saveAiReview(id,textarea.value);$('daily30AiStatus').textContent='已儲存本題AI批改結果';$('daily30AiStatus').dataset.error='false';}
