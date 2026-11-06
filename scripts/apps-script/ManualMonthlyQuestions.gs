@@ -185,6 +185,8 @@ function repairMonthlyQuestionOfflineBridge() {
         changes.push({path:f.path,mode:'100644',type:'blob',content:f.content});
     });
     if(!changes.length){console.log('月份題庫離線 JS 全部正確，無需重新上傳。');return {changed:false,checked:outputs.length};}
+    // Even a repair-only write requires explicit approval for the exact branch.
+    manualQuestionWriteGate_(cfg,head,manifest);
     if(psdBridgeApi_(cfg,'get','git/ref/heads/'+encodeURIComponent(cfg.branch)).object.sha!==head)
       throw new Error('核對期間 GitHub HEAD 更新，取消修復');
     var commit=psdBridgeApi_(cfg,'get','git/commits/'+head);
