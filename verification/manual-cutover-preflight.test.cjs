@@ -69,7 +69,7 @@ test('production main is blocked until explicitly approved with exact current co
  assert.throws(()=>a.ctx.manualQuestionWriteGate_({branch:'main'},HEAD,{data:{schemaVersion:2,count:245}}),/main/);
  const b=build({write:true,approved:true});
  const accepted=b.ctx.preflightManualDailyQuestions();
- assert.equal(accepted.writeAuthorized,true);
+ assert.equal(accepted.writeAuthorized,true,JSON.stringify(accepted));
  assert.equal(accepted.readyForManualSync,true,JSON.stringify(accepted.blockers));
 });
 test('writer guard rejects no monthly archive, missing approval and mismatched branch',()=>{
