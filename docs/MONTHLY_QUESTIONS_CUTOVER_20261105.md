@@ -119,3 +119,13 @@
 ### C. 觸發器與任務的界線
 
 預檢僅能查看**目前執行者帳號**可見的 Apps Script 安裝型觸發器；其他帳號建立的觸發器、ChatGPT 晚間摘要排程並不代表已涵蓋。不得為了讓預檢變成綠燈而提前刪除正式同步排程。完成隔離實測、正式備份、回復演練、正式切換核對後，才另行執行明確的觸發器停用程序。
+
+## 9. 2026-11-06 正式新聞基準及分支分歧核對
+
+- 讀回 GitHub `main` 新聞 v2 索引，共 **252 篇**（來源支援 251 份），較原 PR 測試資料 239 篇多 13 篇；兩邊的每日模擬題 `questions.json` SHA 相同，均是 **245 題**。
+- 已將 main 當下的五個新聞 SHA-256 shard、對應 ZIP JS、`daily-simulation/documents.json` 及 `file-data/daily.generated.js` **複製到 PR #126 測試分支**，沒有刪除原先未引用的新聞資料檔。
+- 對應來源基準 main commit: `c69b7aa0e1f5daba18e0e11d3e3c930afeb3eb2f`。後續正式資料若再增加，**合併前必須重新核對當前 main HEAD、新聞篇數及所有分檔 ID**。
+- PR 分支與 main 另有非資料差異（包括專業科目作答連結、Service Worker、工作流程等）；**同步新聞資料並不代表已將正式 main 的其他程式變更整合到 PR**。合併/上線前必須再做 merge/rebase 衝突檢查與最新正式站回歸測試。
+- 上線前唯讀預檢 `preflightManualDailyQuestions()` 已強化：不僅查每個 ZIP 題庫 JS 是否存在，還使用預期生成位元組的 Git blob SHA-1 核對**內容完全一致**；現有題庫 JSON shard 另以 SHA-256 核對。所有遠端權限錯誤均只回報安全概述，不輸出原始資料夾 ID、文件標題或權杖。
+- 回歸測試：`verification/manual-cutover-preflight.test.cjs` 包含過期 ZIP wrapper 阻擋及 Google Drive ID 錯誤內容不洩漏；最終 CI 必須全數通過。
+- **沒有修改正式 Apps Script 專案、時間觸發器、GitHub main 或正式 Cloudflare 部署。** 僅完成安全驗收及測試分支資料基準對齊。
