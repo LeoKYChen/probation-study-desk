@@ -51,6 +51,7 @@ test('manual cutover preflight is strictly read-only and blocks missing monthly 
  const r=a.ctx.preflightManualDailyQuestions();
  assert.equal(r.readyForManualSync,false);
  assert.equal(r.monthlyIndexPresent,false);
+ assert.equal(r.safeToPreview,false);
  assert.equal(r.sourceFoldersAccessible,true);
  assert.equal(r.oldTimeTriggers.length,1);
  assert(r.blockers.some(x=>x.includes('月份題庫')));
@@ -60,7 +61,9 @@ test('valid isolated branch is allowed only with explicit isolated mode and writ
  const a=build({isolated:true,write:true});
  const r=a.ctx.preflightManualDailyQuestions();
  assert.equal(r.branch,BRANCH);
+ assert.equal(r.safeToPreview,true);
  assert.equal(r.readyForManualSync,true,JSON.stringify(r.blockers));
+ assert.equal(r.readyForProductionCutover,false);
  assert.equal(r.legacyBaselinePreserved,true);
  assert.equal(r.offlineFileCount,2);
  assert.equal(a.stats().apiWrites,0);assert.equal(a.stats().scriptWrites,0);
@@ -69,6 +72,7 @@ test('production main is blocked until explicitly approved with exact current co
  const a=build({write:true});
  const pre=a.ctx.preflightManualDailyQuestions();
  assert.equal(pre.writeAuthorized,false);
+ assert.equal(pre.safeToPreview,true);
  assert.equal(pre.readyForManualSync,false);
  assert(pre.blockers.length>0||typeof pre.writeBlockReason==='string','Preflight must explain denial');
  assert.throws(()=>a.ctx.manualQuestionWriteGate_({branch:'main'},HEAD,{data:{schemaVersion:2,count:245}}),/main/);
@@ -76,6 +80,7 @@ test('production main is blocked until explicitly approved with exact current co
  const accepted=b.ctx.preflightManualDailyQuestions();
  assert.equal(accepted.writeAuthorized,true,JSON.stringify(accepted));
  assert.equal(accepted.readyForManualSync,true,JSON.stringify(accepted.blockers));
+ assert.equal(accepted.readyForProductionCutover,true);
 });
 test('writer guard rejects no monthly archive, missing approval and mismatched branch',()=>{
  const a=build({write:true,approved:true});
@@ -85,4 +90,17 @@ test('writer guard rejects no monthly archive, missing approval and mismatched b
  const b=build({isolated:true,write:true});
  assert.throws(()=>b.ctx.manualQuestionWriteGate_({branch:'release/other'},HEAD,v),/隔離分支/);
  assert.equal(b.ctx.manualQuestionWriteGate_({branch:BRANCH},HEAD,v),true);
+});
+
+test('active original time trigger is warning for read-only preview but blocks production cutover',()=>{
+ const r=build({write:true,approved:true,oldTimers:true});
+ const report=r.ctx.preflightManualDailyQuestions();
+ assert.equal(report.safeToPreview,true);
+ assert.equal(report.writeAuthorized,true);
+ assert.equal(report.readyForManualSync,true);
+ assert.equal(report.readyForProductionCutover,false);
+ assert.equal(report.oldTimeTriggers.length,1);
+ assert.equal(report.blockers.length,0);
+ assert.equal(report.warnings.length,1);
+ assert.equal(r.stats().apiWrites,0);
 });
