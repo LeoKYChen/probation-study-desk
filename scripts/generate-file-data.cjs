@@ -36,6 +36,28 @@ for(const [group,filenames] of Object.entries(groups)){
   console.log('Source-locked daily questions:',questions.length);
  }
  if(group==='weekly')assert(data['juvenile-news/issues.json'].issues.length>0);
+
+ if(group==='daily'&&fs.existsSync(path.join(root,'daily-simulation/questions-monthly.json'))){
+  const {validate}=require('./build-monthly-questions.cjs');
+  const index=JSON.parse(fs.readFileSync(path.join(root,'daily-simulation/questions-monthly.json'),'utf8'));
+  const summary=validate(index);
+  const wrap=(key,value,label)=>label+'\n(function(){if(typeof window.PSDRegisterFileData==="function")window.PSDRegisterFileData('+
+   JSON.stringify({[key]:value}).replace(/</g,'\\u003c').replace(/\u2028/g,'\\u2028').replace(/\u2029/g,'\\u2029')+');})();\n';
+  const checkOrWrite=(name,content)=>{
+   const target=path.join(outputDir,name);
+   if(mode==='--write'){fs.mkdirSync(path.dirname(target),{recursive:true});fs.writeFileSync(target,content,'utf8');}
+   else assert(fs.existsSync(target)&&fs.readFileSync(target,'utf8')===content,'Outdated monthly question offline JS: '+name);
+  };
+  checkOrWrite('questions-monthly.generated.js',wrap('daily-simulation/questions-monthly.json',index,'/* GENERATED question month manifest; do not edit. */'));
+  const seen=new Set();
+  for(const month of index.months)for(const shard of month.shards){
+   assert(!seen.has(shard.path),'Duplicate question shard');seen.add(shard.path);
+   const key='daily-simulation/'+shard.path,value=JSON.parse(fs.readFileSync(path.join(root,key),'utf8'));
+   checkOrWrite(shard.path.replace(/\.json$/,'.js'),wrap(key,value,'/* GENERATED question shard; do not edit. */'));
+  }
+  console.log('PASS offline monthly questions:',summary.count,'IDs,',seen.size,'hash-verified shards');
+ }
+
  if(group==='daily' && data['daily-simulation/documents.json'].schemaVersion===2){
   const index=data['daily-simulation/documents.json'];
   assert(Array.isArray(index.shards)&&index.shards.length,'News shard manifest missing');
@@ -51,6 +73,44 @@ for(const [group,filenames] of Object.entries(groups)){
    if(mode==='--write'){fs.mkdirSync(path.dirname(out),{recursive:true});fs.writeFileSync(out,js);}else assert(fs.existsSync(out)&&fs.readFileSync(out,'utf8')===js,'Outdated offline shard');
   }
   assert.equal(total,index.count,'News archive count mismatch');
+ }
+ if(group==='daily' && data['daily-simulation/documents.json'].schemaVersion===3){
+  const index=data['daily-simulation/documents.json'];
+  assert(Array.isArray(index.months)&&index.months.length&&Array.isArray(index.catalog)&&index.catalog.length===index.count,'Monthly news catalog invalid');
+  const seen=new Set(),ids=new Set(),months=new Set();let total=0;
+  const makeJs=(key,payload,comment)=>comment+'\n(function(){if(typeof window.PSDRegisterFileData==="function")window.PSDRegisterFileData('+
+    JSON.stringify({[key]:payload}).replace(/</g,'\\u003c').replace(/\u2028/g,'\\u2028').replace(/\u2029/g,'\\u2029')+');})();\n';
+  const writeOrCheck=(name,contents)=>{
+    const abs=path.join(outputDir,name);
+    if(mode==='--write'){fs.mkdirSync(path.dirname(abs),{recursive:true});fs.writeFileSync(abs,contents);}
+    else assert(fs.existsSync(abs)&&fs.readFileSync(abs,'utf8')===contents,'Outdated monthly offline file '+name);
+  };
+  for(const month of index.months){
+   assert(/^20\d{2}-(?:0[1-9]|1[0-2])$/.test(month.month)&&month.index==='archives/'+month.month+'/index.json'&&!months.has(month.month),'Invalid/duplicate monthly news index');
+   months.add(month.month);
+   const key='daily-simulation/'+month.index,groupIndex=JSON.parse(fs.readFileSync(path.join(root,key),'utf8'));
+   assert(groupIndex.schemaVersion===1&&groupIndex.month===month.month&&groupIndex.count===month.count&&Array.isArray(groupIndex.shards),'Bad monthly index');
+   writeOrCheck('archives/'+month.month+'/index.js',makeJs(key,groupIndex,'/* GENERATED monthly news index; do not hand-edit. */'));
+   let monthTotal=0;
+   for(const part of groupIndex.shards){
+    assert(/^news-shards\/[a-f0-9]{64}\.json$/.test(part.path)&&!seen.has(part.path),'Invalid/duplicate monthly shard');
+    seen.add(part.path);
+    const src='daily-simulation/'+part.path,raw=fs.readFileSync(path.join(root,src),'utf8');
+    assert.equal(require('node:crypto').createHash('sha256').update(raw).digest('hex'),part.path.slice(12,-5),'Monthly shard SHA invalid');
+    const payload=JSON.parse(raw);
+    assert(payload.schemaVersion===1&&Array.isArray(payload.documents)&&payload.documents.length===part.count,'Monthly shard count invalid');
+    for(const d of payload.documents){
+     assert(d&&d.id&&!ids.has(d.id)&&d.date.slice(0,7)===month.month,'Monthly ID/date invalid');
+     ids.add(d.id);monthTotal++;total++;
+    }
+    writeOrCheck(part.path.replace(/\.json$/,'.js'),makeJs(src,payload,'/* GENERATED news shard; do not hand-edit. */'));
+   }
+   assert.equal(monthTotal,month.count,'Monthly file count mismatch');
+  }
+  assert.equal(total,index.count,'Monthly archive total mismatch');
+  assert.equal(index.catalog.length,total,'Monthly catalog length mismatch');
+  const catalog=new Set(index.catalog.map(d=>d.id));
+  assert(catalog.size===total&&[...ids].every(id=>catalog.has(id)),'Monthly archive ID mismatch');
  }
  const blob=JSON.stringify(data).replace(/</g,'\\u003c').replace(/\u2028/g,'\\u2028').replace(/\u2029/g,'\\u2029');
  const script='/* GENERATED from committed JSON; do not hand-edit. */\n'+

@@ -18,6 +18,7 @@ function readingNewsRun_(write) {
   if (!lock.tryLock(1000)) throw new Error('已有同步執行中，請稍後重試。');
   try {
     var cfg = readingNewsConfig_(), previous = readingNewsReadGithub_(cfg);
+    if(previous.storageVersion===3)throw new Error('已啟用月份新聞封存，請改用 manualSyncReadingNews；舊版 syncReadingNews 不可覆寫月份索引。');
     var collected = readingNewsCollect_(cfg, previous.data);
     var next = collected.data;
     if (!next.documents.length) throw new Error('公開資料夾沒有可發布文件，未更新 GitHub；請先加入 Markdown／Google 文件。');
@@ -71,7 +72,7 @@ function readingNewsReadGithub_(cfg) {
   if (!raw.content || raw.encoding !== 'base64') raw=readingNewsApi_(cfg,'get','git/blobs/'+meta.sha);
   if (raw.encoding !== 'base64' || !raw.content) throw new Error('無法讀取現有新聞 JSON，未覆寫。');
   var data=JSON.parse(Utilities.newBlob(Utilities.base64Decode(raw.content.replace(/\s/g,''))).getDataAsString('UTF-8'));
-  var storageVersion=data.schemaVersion;
+  var storageVersion=data.schemaVersion, shardGroups=[];
   if(data.schemaVersion===2){
     var idx=data, collected=[]; if(!Array.isArray(idx.shards)||!idx.shards.length)throw new Error('分檔索引異常');
     idx.shards.forEach(function(part){
@@ -83,12 +84,56 @@ function readingNewsReadGithub_(cfg) {
       if(part.path!=='news-shards/'+hex+'.json')throw new Error('分檔校驗失敗');
       var shard=JSON.parse(Utilities.newBlob(rawBytes).getDataAsString('UTF-8'));
       if(shard.schemaVersion!==1||!Array.isArray(shard.documents)||shard.documents.length!==part.count)throw new Error('分檔資料不符');
+      shardGroups.push({path:part.path,count:part.count,month:part.month||null,documents:shard.documents});
       collected=collected.concat(shard.documents);
     });
     if(collected.length!==idx.count)throw new Error('分檔總數不符');data={schemaVersion:1,documents:collected,sync:idx.sync};
   }
+  if(storageVersion===3){
+    var idx3=data,all3=[],paths3={},ids3={},monthly3=[];
+    if(!Array.isArray(idx3.months)||!idx3.months.length||!Array.isArray(idx3.catalog)||idx3.catalog.length!==idx3.count)
+      throw new Error('月份新聞索引格式錯誤');
+    idx3.months.forEach(function(month){
+      if(!month||!/^(20\d{2})-(0[1-9]|1[0-2])$/.test(month.month)||month.index!=='archives/'+month.month+'/index.json')
+        throw new Error('月份索引路徑錯誤');
+      var m=readingNewsApi_(cfg,'get','contents/daily-simulation/'+month.index+'?ref='+encodeURIComponent(cfg.branch));
+      var mr=m.content&&m.encoding==='base64'?m:readingNewsApi_(cfg,'get','git/blobs/'+m.sha);
+      var mm=JSON.parse(Utilities.newBlob(Utilities.base64Decode(mr.content.replace(/\s/g,''))).getDataAsString('UTF-8'));
+      if(mm.schemaVersion!==1||mm.month!==month.month||mm.count!==month.count||!Array.isArray(mm.shards))
+        throw new Error('月份子索引內容不符');
+      var monthCount=0;
+      mm.shards.forEach(function(part){
+        if(!part||!/^news-shards\/[a-f0-9]{64}\.json$/.test(part.path)||paths3[part.path])
+          throw new Error('月份新聞分檔路徑錯誤或重複');
+        paths3[part.path]=true;
+        var x=readingNewsApi_(cfg,'get','contents/daily-simulation/'+part.path+'?ref='+encodeURIComponent(cfg.branch));
+        var raw=x.content&&x.encoding==='base64'?x:readingNewsApi_(cfg,'get','git/blobs/'+x.sha);
+        var bin=Utilities.base64Decode(raw.content.replace(/\s/g,''));
+        var hex=Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256,bin)
+          .map(function(b){return ('0'+(b&255).toString(16)).slice(-2);}).join('');
+        if(part.path!=='news-shards/'+hex+'.json')throw new Error('月份分檔 SHA-256 驗證失敗');
+        var dataPart=JSON.parse(Utilities.newBlob(bin).getDataAsString('UTF-8'));
+        if(dataPart.schemaVersion!==1||!Array.isArray(dataPart.documents)||dataPart.documents.length!==part.count)
+          throw new Error('月份分檔資料不符');
+        dataPart.documents.forEach(function(d){
+          if(!d||!d.id||ids3[d.id]||!d.date||d.date.slice(0,7)!==month.month)
+            throw new Error('月份分檔新聞 ID 或日期不符');
+          ids3[d.id]=month.month;all3.push(d);
+        });
+        monthCount+=dataPart.documents.length;
+        shardGroups.push({path:part.path,month:month.month,documents:dataPart.documents});
+      });
+      if(monthCount!==month.count)throw new Error('月份分檔總數錯誤');
+      monthly3.push({month:month.month,index:month.index,status:month.status,shards:mm.shards});
+    });
+    if(all3.length!==idx3.count||Object.keys(ids3).length!==idx3.catalog.length||
+      idx3.catalog.some(function(d){return !d||ids3[d.id]!==d.month;}))
+      throw new Error('月份總索引與全文目錄不符');
+    data={schemaVersion:1,documents:all3,sync:idx3.sync};
+  }
   readingNewsValidate_(data);
-  return {sha:meta.sha,data:data,storageVersion:storageVersion};
+  return {sha:meta.sha,data:data,storageVersion:storageVersion,shardGroups:shardGroups,
+    monthlyIndex:storageVersion===3?idx3:null,monthlyGroups:storageVersion===3?monthly3:null};
 }
 
 function readingNewsWriteGithub_(cfg, sha, data) {
