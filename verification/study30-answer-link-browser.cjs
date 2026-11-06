@@ -62,6 +62,9 @@ async function exercise(engine,base){
       store.sessions[today].unrelatedSentinel='must-preserve';
       localStorage.setItem(key,JSON.stringify(store));
     },storageKey);
+    // Initialize the application with the historical record, rather than mutating storage behind a live in-memory session.
+    await page.reload();
+    await page.waitForFunction(()=>window.Study30App?.saveAnswerLink);
     const firstLink='https://www.notion.so/study30-answer-test-123';
     await input.fill(firstLink);
     assert.equal(await open.isVisible(),true,'stored link should expose the open action');
