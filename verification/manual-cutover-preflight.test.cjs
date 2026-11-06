@@ -3,7 +3,7 @@ const test=require('node:test'),assert=require('node:assert/strict'),fs=require(
 const source=['scripts/apps-script/ManualDailyQuestions.gs','scripts/apps-script/ManualCutoverPreflight.gs']
   .map(p=>fs.readFileSync(p,'utf8')).join('\n');
 const HEAD='a'.repeat(40),BRANCH='feature/manual-incremental-archive-20261105';
-function build({isolated=false,write=false,approved=false,monthly=true,oldTimers=false}={}){
+function build({isolated=false,write=false,approved=false,monthly=true,oldTimers=false,staleOffline=false}={}){
   let apiWrites=0,scriptWrites=0,folderReads=0,fileReads=0;
   const properties=new Map([
     ['SOURCE_FOLDER_ID','google-id'],['MD_SOURCE_FOLDER_ID','markdown-id'],
@@ -19,6 +19,8 @@ function build({isolated=false,write=false,approved=false,monthly=true,oldTimers
   };
   const ctx={
     console:{log(){}},PropertiesService:{getScriptProperties:()=>props},
+    Utilities:{newBlob:s=>({getBytes:()=>Array.from(Buffer.from(String(s)))} )},
+    psdBridgeSha1_:()=>staleOffline?'outdated-wrapper':'blob',
     DriveApp:{getFolderById:()=>{folderReads++;return {}}},
     ScriptApp:{EventType:{CLOCK:'CLOCK'},getProjectTriggers:()=>oldTimers?[
       {getEventType:()=> 'CLOCK',getHandlerFunction:()=> 'syncDailyResources'},
@@ -32,6 +34,8 @@ function build({isolated=false,write=false,approved=false,monthly=true,oldTimers
       if(p==='daily-simulation/questions-monthly.json')
         return monthly?{sha:'master-hash',data:{schemaVersion:2,count:245,months:[{shards:[{path:'question-shards/'+'b'.repeat(64)+'.json'}]}]}}:null;
       if(p==='daily-simulation/questions.json')return {data:{count:245,questions:Array.from({length:245},(_,i)=>({id:'q-'+i,date:'2026-11-05',subject:'心理學',question:'Question '+i}))}};
+      if(p.startsWith('daily-simulation/question-shards/'))
+        return {data:{schemaVersion:1,questions:[{id:'q-0',date:'2026-11-05',subject:'心理學',question:'fixture'}]}};
       if(p==='scripts/sync-state/daily-question-sources.json')return null;
       throw Error('Unexpected requested path '+p);
     },
@@ -117,4 +121,22 @@ test('read-only preflight never exposes a GitHub token, Drive folder IDs or raw 
  assert.equal(report.readyForManualSync,false);
  assert.equal(JSON.stringify(report).includes('PRIVATE-TOKEN'),false);
  assert.equal(broken.stats().apiWrites,0);
+});
+
+test('stale offline question JavaScript is rejected even when the ZIP file exists',()=>{
+ const x=build({isolated:true,write:true,staleOffline:true});
+ const r=x.ctx.preflightManualDailyQuestions();
+ assert.equal(r.offlineWrappersPresent,false);
+ assert.equal(r.safeToPreview,false);
+ assert(r.blockers.length>0);
+ assert.equal(x.stats().apiWrites,0);
+ assert.equal(x.stats().scriptWrites,0);
+});
+test('Drive failures containing raw folder identifiers do not leak to preflight report',()=>{
+ const x=build({isolated:true});
+ x.ctx.DriveApp.getFolderById=()=>{throw Error('Access denied to google-id and markdown-id')};
+ const result=x.ctx.preflightManualDailyQuestions();
+ assert.equal(result.safeToPreview,false);
+ assert(!JSON.stringify(result).includes('google-id'));
+ assert(!JSON.stringify(result).includes('markdown-id'));
 });
