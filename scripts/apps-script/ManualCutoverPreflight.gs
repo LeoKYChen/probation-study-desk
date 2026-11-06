@@ -11,7 +11,8 @@ function preflightManualDailyQuestions() {
   var report={mode:'read-only',readyForManualSync:false,sourceFoldersAccessible:false,
     monthlyIndexPresent:false,fullArchiveVerified:false,legacyBaselinePreserved:false,
     offlineWrappersPresent:false,sourceStatePresent:false,
-    oldTimeTriggers:[],writeAuthorized:false,blockers:[]};
+    oldTimeTriggers:[],writeAuthorized:false,safeToPreview:false,
+    readyForProductionCutover:false,warnings:[],blockers:[]};
   var p=PropertiesService.getScriptProperties();
   try{
     var cfg=manualQuestionCfg_();
@@ -62,7 +63,7 @@ function preflightManualDailyQuestions() {
         ['syncDailyResources','syncReadingNews','syncDailyNews'].indexOf(trigger.getHandlerFunction())>=0;
     }).map(function(trigger){return trigger.getHandlerFunction();});
     if(report.oldTimeTriggers.length)
-      report.blockers.push('舊的時間觸發器仍在；驗收前不得將新同步視為正式取代');
+      report.warnings.push('目前執行者可見的舊時間觸發器尚在；不要在隔離驗收前停用');
     try{
       if(master)manualQuestionWriteGate_(cfg,head,master);
       else throw Error('未完成月份索引');
@@ -80,9 +81,12 @@ function preflightManualDailyQuestions() {
     if(/(?:Token|[Tt]oken|403|401)/.test(message))report.blockers.push('GitHub 憑證或權限核驗失敗');
     else report.blockers.push('讀取核驗未完成：'+message.slice(0,100));
   }
-  report.readyForManualSync=report.blockers.length===0&&report.monthlyIndexPresent&&
+  report.safeToPreview=report.blockers.length===0&&report.monthlyIndexPresent&&
     report.fullArchiveVerified&&report.legacyBaselinePreserved&&report.offlineWrappersPresent&&
-    report.sourceFoldersAccessible&&report.writeAuthorized;
+    report.sourceFoldersAccessible;
+  report.readyForManualSync=report.safeToPreview&&report.writeAuthorized;
+  report.readyForProductionCutover=report.readyForManualSync&&
+    report.branch==='main'&&report.oldTimeTriggers.length===0;
   console.log('每日模擬題上線預檢（唯讀、不修改任何資料）：'+JSON.stringify(report));
   return report;
 }
