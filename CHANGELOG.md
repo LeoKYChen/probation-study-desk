@@ -4,6 +4,12 @@
 
 版本規範、驗收與發布方式參見 [Release 維護指引](docs/RELEASE_PROCESS.md)。子模組內的 `v2.5`、`v2.5.4` 等名稱，不直接代表整個網站的 Release 版本。
 
+## 2026-11-08 — 命題者視角：新增觀護人犯罪學 32 題（分支 `claude/exam-design-criminology`，待合併）
+
+- 新增**觀護人犯罪學 108–115 年 32 題**（`law-scoring/exam-design/criminology.js`）：B 概念題 17、C 理論＋應用 15，主題分十類。命題意圖採學科題格式（理論核對、待對照教材）；涉及少年事件處理法、刑法、刑事訴訟法的題目另附法條核對。
+- **評分要點更正**：115-1 補 Dunedin 研究的比例（終身持續犯約 10%、青春期限定犯約 26%、完全不犯者約 5%），列數不變。
+- `verification/law-scoring.cjs` 新增犯罪學 32 題覆蓋與題型檢查。
+
 ## 2026-11-08 — 命題者視角：新增觀護人刑事訴訟法與保安處分執行法 32 題（分支 `claude/exam-design-criminal-procedure`，待合併）
 
 - 新增**觀護人刑事訴訟法與保安處分執行法 108–115 年 32 題**（`law-scoring/exam-design/criminal-procedure.js`）：D 案例題 18、E 論述題 7、F 爭議題 7，主題分九類。
