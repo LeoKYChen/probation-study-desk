@@ -140,6 +140,8 @@ assert.equal(Object.keys(ED.items).filter(id=>/^1\d\d-刑法-\d$/.test(id)).leng
 assert.equal(Object.keys(ED.items).filter(id=>/^1\d\d-刑事訴訟法與保安處分執行法-\d$/.test(id)).length,32,'probation criminal procedure 108–115');
 assert.equal(Object.keys(ED.items).filter(id=>/^1\d\d-犯罪學-\d$/.test(id)).length,32,'probation criminology 108–115');
 assert(Object.entries(ED.items).filter(([id])=>/^1\d\d-犯罪學-\d$/.test(id)).every(([,d])=>'ABC'.includes(d.qtype)),'criminology uses theory question types');
+assert.equal(Object.keys(ED.items).filter(id=>/^1\d\d-諮商與輔導-\d$/.test(id)).length,31,'probation counseling 108–115');
+assert.equal(Object.keys(ED.files).filter(k=>k.startsWith('觀護人／')).length,6,'all six probation subjects have breakdowns');
 const LAWD=Object.entries(ED.items).filter(([id])=>LAW.includes(D.questions.find(q=>q.id===id).subject));
 assert(LAWD.length>=95,'law subjects have breakdowns');
 assert(LAWD.every(([,d])=>'DEF'.includes(d.qtype)&&/法條核對/.test(S.blocksText(d.intent))),'law questions use law types and verified-article sections');
