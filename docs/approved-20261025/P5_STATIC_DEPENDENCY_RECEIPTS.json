@@ -1,0 +1,3897 @@
+{
+  "checkedAt": "2026-10-25",
+  "snapshotCommit": "76e7af4a086ce8b749e78dc8d9032f84df22646a",
+  "snapshotTree": "358bd01107aee65e59564fdb3aeb0c07a91b5a87",
+  "baseCommit": "a89f58cfe6271a642c29f5dfce7e4ea6fc32d9d7",
+  "trackedFiles": 426,
+  "treeNodesIncludingDirectories": 498,
+  "workflowCount": 32,
+  "scope": "static read-only; no workflow execution; no history or live deployment verification; literal references are not a complete dependency graph",
+  "workflows": [
+    {
+      "path": ".github/workflows/check-common-subjects.yml",
+      "name": "Check common-subjects v0.4",
+      "triggers": {
+        "push": {
+          "branches": [
+            "feature/common-subjects-v02",
+            "feature/common-subjects-staresto-links",
+            "feature/common-subjects-v04-staresto-native"
+          ],
+          "paths": [
+            "common-subjects/**",
+            ".github/workflows/check-common-subjects.yml"
+          ]
+        },
+        "pull_request": {
+          "branches": [
+            "main"
+          ],
+          "paths": [
+            "common-subjects/**",
+            ".github/workflows/check-common-subjects.yml"
+          ]
+        },
+        "workflow_dispatch": null
+      },
+      "permissions": {
+        "contents": "read"
+      },
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "common-subjects/essay-questions-v1.js",
+          "line": 33
+        },
+        {
+          "path": "common-subjects/essay-questions-v2.js",
+          "line": 34
+        },
+        {
+          "path": "common-subjects/essay-questions-v3.js",
+          "line": 35
+        },
+        {
+          "path": "common-subjects/english-v02.js",
+          "line": 36
+        },
+        {
+          "path": "common-subjects/test-v02.cjs",
+          "line": 37
+        },
+        {
+          "path": "common-subjects/test-v02.cjs",
+          "line": 38
+        },
+        {
+          "path": "common-subjects/staresto-resources.js",
+          "line": 39
+        },
+        {
+          "path": "common-subjects/staresto-integration.js",
+          "line": 40
+        },
+        {
+          "path": "common-subjects/test-staresto.cjs",
+          "line": 41
+        },
+        {
+          "path": "common-subjects/test-staresto.cjs",
+          "line": 42
+        },
+        {
+          "path": "common-subjects/daily/engine.js",
+          "line": 43
+        },
+        {
+          "path": "common-subjects/daily/app.js",
+          "line": 44
+        },
+        {
+          "path": "common-subjects/daily/test-v04.cjs",
+          "line": 45
+        },
+        {
+          "path": "common-subjects/daily/test-ui-v04.cjs",
+          "line": 46
+        }
+      ],
+      "mutationSteps": [],
+      "actionRefs": [
+        "actions/checkout@v6",
+        "actions/setup-node@v6"
+      ]
+    },
+    {
+      "path": ".github/workflows/check-staresto-link-coach.yml",
+      "name": "Staresto v0.6 Link Coach QA",
+      "triggers": {
+        "pull_request": {
+          "paths": [
+            "common-subjects/english-assistant/**",
+            "common-subjects/index.html",
+            ".github/workflows/check-staresto-link-coach.yml"
+          ]
+        },
+        "push": {
+          "branches": [
+            "feature/staresto-v06-link-coach-phase1"
+          ],
+          "paths": [
+            "common-subjects/english-assistant/**",
+            ".github/workflows/check-staresto-link-coach.yml"
+          ]
+        }
+      },
+      "permissions": null,
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "common-subjects/index.html",
+          "line": 6
+        },
+        {
+          "path": "index.html",
+          "line": 6
+        },
+        {
+          "path": "common-subjects/english-assistant/test.cjs",
+          "line": 24
+        },
+        {
+          "path": "common-subjects/english-assistant/test-vocab.cjs",
+          "line": 25
+        },
+        {
+          "path": "common-subjects/english-assistant/test-browser.cjs",
+          "line": 41
+        }
+      ],
+      "mutationSteps": [],
+      "actionRefs": [
+        "actions/checkout@v4",
+        "actions/setup-node@v4"
+      ]
+    },
+    {
+      "path": ".github/workflows/check-staresto-v05-catalog.yml",
+      "name": "QA Staresto v0.5 read-only browser",
+      "triggers": {
+        "push": {
+          "branches": [
+            "feature/staresto-v05-catalog-preview"
+          ],
+          "paths": [
+            "common-subjects/catalog/**",
+            ".github/workflows/check-staresto-v05-catalog.yml"
+          ]
+        },
+        "pull_request": {
+          "branches": [
+            "main"
+          ],
+          "paths": [
+            "common-subjects/catalog/**",
+            ".github/workflows/check-staresto-v05-catalog.yml"
+          ]
+        },
+        "workflow_dispatch": null
+      },
+      "permissions": {
+        "contents": "read"
+      },
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "common-subjects/catalog/app.js",
+          "line": 31
+        },
+        {
+          "path": "common-subjects/catalog/test_browser.cjs",
+          "line": 32
+        },
+        {
+          "path": "common-subjects/catalog/test_browser.cjs",
+          "line": 33
+        }
+      ],
+      "mutationSteps": [],
+      "actionRefs": [
+        "actions/checkout@v6",
+        "actions/setup-node@v6"
+      ]
+    },
+    {
+      "path": ".github/workflows/check-study-desk-sync.yml",
+      "name": "Study desk local learning",
+      "triggers": {
+        "pull_request": {
+          "paths": [
+            "study-desk/**",
+            "cloud-sync/**",
+            "backup/**",
+            "verification/sync/**",
+            ".github/workflows/check-study-desk-sync.yml"
+          ]
+        },
+        "workflow_dispatch": null
+      },
+      "permissions": {
+        "contents": "read"
+      },
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "backup/test.cjs",
+          "line": 20
+        }
+      ],
+      "mutationSteps": [],
+      "actionRefs": [
+        "actions/checkout@v6",
+        "actions/setup-node@v6"
+      ]
+    },
+    {
+      "path": ".github/workflows/check-v254-daily.yml",
+      "name": "Check v2.5.4 Daily Practice",
+      "triggers": {
+        "pull_request": {
+          "paths": [
+            "v2.5/daily-practice.*",
+            "v2.5/index.html",
+            "v2.5/ai-simple-review-v254.js",
+            "dual-ai-bridge.js",
+            "daily-simulation/model.js",
+            "daily-simulation/questions.json",
+            "v2.5/backup-core.js",
+            "offline-manifest.json",
+            "verification/check-daily-v254.cjs",
+            "verification/e2e-daily-v254.cjs",
+            ".github/workflows/check-v254-daily.yml"
+          ]
+        },
+        "push": {
+          "branches": [
+            "main",
+            "feature/v254-daily-30min-ai-review"
+          ],
+          "paths": [
+            "v2.5/daily-practice.*",
+            "v2.5/index.html",
+            "v2.5/ai-simple-review-v254.js",
+            "daily-simulation/model.js",
+            "daily-simulation/questions.json",
+            "v2.5/backup-core.js",
+            "offline-manifest.json",
+            "verification/check-daily-v254.cjs",
+            ".github/workflows/check-v254-daily.yml"
+          ]
+        },
+        "workflow_dispatch": null
+      },
+      "permissions": {
+        "contents": "read"
+      },
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "index.html",
+          "line": 7
+        },
+        {
+          "path": "v2.5/index.html",
+          "line": 7
+        },
+        {
+          "path": "v2.5/ai-simple-review-v254.js",
+          "line": 8
+        },
+        {
+          "path": "dual-ai-bridge.js",
+          "line": 9
+        },
+        {
+          "path": "daily-simulation/model.js",
+          "line": 10
+        },
+        {
+          "path": "daily-simulation/questions.json",
+          "line": 11
+        },
+        {
+          "path": "questions.js",
+          "line": 11
+        },
+        {
+          "path": "v2.5/backup-core.js",
+          "line": 12
+        },
+        {
+          "path": "offline-manifest.json",
+          "line": 13
+        },
+        {
+          "path": "verification/check-daily-v254.cjs",
+          "line": 14
+        },
+        {
+          "path": "verification/e2e-daily-v254.cjs",
+          "line": 15
+        },
+        {
+          "path": "index.html",
+          "line": 23
+        },
+        {
+          "path": "v2.5/index.html",
+          "line": 23
+        },
+        {
+          "path": "v2.5/ai-simple-review-v254.js",
+          "line": 24
+        },
+        {
+          "path": "daily-simulation/model.js",
+          "line": 25
+        },
+        {
+          "path": "daily-simulation/questions.json",
+          "line": 26
+        },
+        {
+          "path": "questions.js",
+          "line": 26
+        },
+        {
+          "path": "v2.5/backup-core.js",
+          "line": 27
+        },
+        {
+          "path": "offline-manifest.json",
+          "line": 28
+        },
+        {
+          "path": "verification/check-daily-v254.cjs",
+          "line": 29
+        },
+        {
+          "path": "v2.5/daily-practice.js",
+          "line": 45
+        },
+        {
+          "path": "v2.5/ai-simple-review-v254.js",
+          "line": 46
+        },
+        {
+          "path": "verification/check-daily-v254.cjs",
+          "line": 47
+        },
+        {
+          "path": "verification/check-daily-v254.cjs",
+          "line": 48
+        },
+        {
+          "path": "verification/e2e-daily-v254.cjs",
+          "line": 61
+        },
+        {
+          "path": "verification/e2e-daily-v254.cjs",
+          "line": 62
+        }
+      ],
+      "mutationSteps": [],
+      "actionRefs": [
+        "actions/checkout@v6",
+        "actions/setup-node@v6"
+      ]
+    },
+    {
+      "path": ".github/workflows/cloudflare-production-preflight.yml",
+      "name": "Read-only Cloudflare production inventory",
+      "triggers": {
+        "workflow_dispatch": null
+      },
+      "permissions": {
+        "contents": "read"
+      },
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "scripts/cloudflare-production-preflight.py",
+          "line": 19
+        },
+        {
+          "path": "scripts/cloudflare-release-control.py",
+          "line": 24
+        }
+      ],
+      "mutationSteps": [],
+      "actionRefs": [
+        "actions/checkout@v6",
+        "actions/upload-artifact@v4"
+      ]
+    },
+    {
+      "path": ".github/workflows/daily-monthly-review-mirror.yml",
+      "name": "Monthly pending question file-data mirror",
+      "triggers": {
+        "push": {
+          "branches": [
+            "feat/daily-pending-monthly-review-20261020"
+          ],
+          "paths": [
+            "daily-simulation/questions.json",
+            ".github/workflows/daily-monthly-review-mirror.yml"
+          ]
+        },
+        "workflow_dispatch": null
+      },
+      "permissions": {
+        "contents": "write"
+      },
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "daily-simulation/questions.json",
+          "line": 7
+        },
+        {
+          "path": "questions.js",
+          "line": 7
+        },
+        {
+          "path": "daily-simulation/app.js",
+          "line": 27
+        },
+        {
+          "path": "daily-simulation/review-policy.js",
+          "line": 28
+        },
+        {
+          "path": "verification/check-daily-v254.cjs",
+          "line": 29
+        },
+        {
+          "path": "scripts/generate-file-data.cjs",
+          "line": 30
+        },
+        {
+          "path": "file-data/daily.generated.js",
+          "line": 31
+        }
+      ],
+      "mutationSteps": [
+        {
+          "job": "regenerate",
+          "step": "Validate and rebuild offline mirrors",
+          "jobIf": null,
+          "stepIf": null,
+          "markers": [
+            "git push origin HEAD:feat/daily-pending-monthly-review-20261020"
+          ]
+        }
+      ],
+      "actionRefs": [
+        "actions/checkout@v6",
+        "actions/setup-node@v4"
+      ]
+    },
+    {
+      "path": ".github/workflows/dual-ai-handoff.yml",
+      "name": "Dual AI answer handoff",
+      "triggers": {
+        "push": {
+          "paths": [
+            "dual-ai-bridge.js",
+            "daily-simulation/app.js",
+            "daily-simulation/index.html",
+            "study-desk/app.js",
+            "study-desk/index.html",
+            "verification/dual-ai-handoff.cjs",
+            ".github/workflows/dual-ai-handoff.yml"
+          ]
+        },
+        "pull_request": {
+          "paths": [
+            "dual-ai-bridge.js",
+            "daily-simulation/app.js",
+            "daily-simulation/index.html",
+            "study-desk/app.js",
+            "study-desk/index.html",
+            "verification/dual-ai-handoff.cjs",
+            ".github/workflows/dual-ai-handoff.yml"
+          ]
+        }
+      },
+      "permissions": {
+        "contents": "read"
+      },
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "dual-ai-bridge.js",
+          "line": 5
+        },
+        {
+          "path": "daily-simulation/app.js",
+          "line": 6
+        },
+        {
+          "path": "daily-simulation/index.html",
+          "line": 7
+        },
+        {
+          "path": "index.html",
+          "line": 7
+        },
+        {
+          "path": "study-desk/app.js",
+          "line": 8
+        },
+        {
+          "path": "index.html",
+          "line": 9
+        },
+        {
+          "path": "study-desk/index.html",
+          "line": 9
+        },
+        {
+          "path": "verification/dual-ai-handoff.cjs",
+          "line": 10
+        },
+        {
+          "path": "dual-ai-bridge.js",
+          "line": 14
+        },
+        {
+          "path": "daily-simulation/app.js",
+          "line": 15
+        },
+        {
+          "path": "daily-simulation/index.html",
+          "line": 16
+        },
+        {
+          "path": "index.html",
+          "line": 16
+        },
+        {
+          "path": "study-desk/app.js",
+          "line": 17
+        },
+        {
+          "path": "index.html",
+          "line": 18
+        },
+        {
+          "path": "study-desk/index.html",
+          "line": 18
+        },
+        {
+          "path": "verification/dual-ai-handoff.cjs",
+          "line": 19
+        },
+        {
+          "path": "dual-ai-bridge.js",
+          "line": 31
+        },
+        {
+          "path": "daily-simulation/app.js",
+          "line": 32
+        },
+        {
+          "path": "study-desk/app.js",
+          "line": 33
+        },
+        {
+          "path": "verification/dual-ai-handoff.cjs",
+          "line": 34
+        }
+      ],
+      "mutationSteps": [],
+      "actionRefs": [
+        "actions/checkout@v4",
+        "actions/setup-node@v4"
+      ]
+    },
+    {
+      "path": ".github/workflows/juvenile-weekly-release.yml",
+      "name": "Juvenile weekly independent sync and publication verification",
+      "triggers": {
+        "push": {
+          "branches": [
+            "main"
+          ],
+          "paths": [
+            "juvenile-news/issues.json",
+            "juvenile-news/source/public/issues.json",
+            "file-data/weekly.generated.js",
+            "scripts/weekly-sync.cjs",
+            "scripts/weekly-import.cjs",
+            "verification/weekly-import.test.cjs",
+            "scripts/weekly-verify-live.cjs",
+            "verification/weekly-sync.test.cjs",
+            ".github/workflows/juvenile-weekly-release.yml"
+          ]
+        },
+        "pull_request": {
+          "branches": [
+            "main"
+          ],
+          "paths": [
+            "juvenile-news/issues.json",
+            "juvenile-news/source/public/issues.json",
+            "file-data/weekly.generated.js",
+            "scripts/weekly-sync.cjs",
+            "scripts/weekly-import.cjs",
+            "verification/weekly-import.test.cjs",
+            "scripts/weekly-verify-live.cjs",
+            "verification/weekly-sync.test.cjs",
+            ".github/workflows/juvenile-weekly-release.yml"
+          ]
+        },
+        "workflow_dispatch": null
+      },
+      "permissions": null,
+      "jobPermissions": {
+        "validate": {
+          "contents": "read"
+        },
+        "synchronize": {
+          "contents": "write"
+        }
+      },
+      "staticFileReferences": [
+        {
+          "path": "juvenile-news/issues.json",
+          "line": 7
+        },
+        {
+          "path": "juvenile-news/source/public/issues.json",
+          "line": 8
+        },
+        {
+          "path": "file-data/weekly.generated.js",
+          "line": 9
+        },
+        {
+          "path": "scripts/weekly-sync.cjs",
+          "line": 10
+        },
+        {
+          "path": "scripts/weekly-import.cjs",
+          "line": 11
+        },
+        {
+          "path": "verification/weekly-import.test.cjs",
+          "line": 12
+        },
+        {
+          "path": "scripts/weekly-verify-live.cjs",
+          "line": 13
+        },
+        {
+          "path": "verification/weekly-sync.test.cjs",
+          "line": 14
+        },
+        {
+          "path": "juvenile-news/issues.json",
+          "line": 19
+        },
+        {
+          "path": "juvenile-news/source/public/issues.json",
+          "line": 20
+        },
+        {
+          "path": "file-data/weekly.generated.js",
+          "line": 21
+        },
+        {
+          "path": "scripts/weekly-sync.cjs",
+          "line": 22
+        },
+        {
+          "path": "scripts/weekly-import.cjs",
+          "line": 23
+        },
+        {
+          "path": "verification/weekly-import.test.cjs",
+          "line": 24
+        },
+        {
+          "path": "scripts/weekly-verify-live.cjs",
+          "line": 25
+        },
+        {
+          "path": "verification/weekly-sync.test.cjs",
+          "line": 26
+        },
+        {
+          "path": "verification/weekly-import.test.cjs",
+          "line": 47
+        },
+        {
+          "path": "verification/weekly-sync.test.cjs",
+          "line": 47
+        },
+        {
+          "path": "scripts/weekly-sync.cjs",
+          "line": 50
+        },
+        {
+          "path": "scripts/weekly-sync.cjs",
+          "line": 51
+        },
+        {
+          "path": "file-data/weekly.generated.js",
+          "line": 53
+        },
+        {
+          "path": "juvenile-news/source/public/issues.json",
+          "line": 53
+        },
+        {
+          "path": "scripts/weekly-sync.cjs",
+          "line": 74
+        },
+        {
+          "path": "scripts/weekly-sync.cjs",
+          "line": 75
+        },
+        {
+          "path": "file-data/weekly.generated.js",
+          "line": 80
+        },
+        {
+          "path": "juvenile-news/source/public/issues.json",
+          "line": 80
+        },
+        {
+          "path": "scripts/weekly-verify-live.cjs",
+          "line": 90
+        }
+      ],
+      "mutationSteps": [
+        {
+          "job": "synchronize",
+          "step": "Commit only the two weekly mirrors if needed",
+          "jobIf": "(github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/main'",
+          "stepIf": null,
+          "markers": [
+            "git push origin HEAD:main"
+          ]
+        }
+      ],
+      "actionRefs": [
+        "actions/checkout@v6",
+        "actions/setup-node@v6"
+      ]
+    },
+    {
+      "path": ".github/workflows/knowledge-graph-preview.yml",
+      "name": "Independent knowledge graph phase 2 and 3 preview",
+      "triggers": {
+        "push": {
+          "branches": [
+            "test/knowledge-graph-20261020"
+          ],
+          "paths": [
+            "knowledge-graph-preview/**",
+            ".github/workflows/knowledge-graph-preview.yml"
+          ]
+        },
+        "pull_request": {
+          "branches": [
+            "main"
+          ],
+          "paths": [
+            "knowledge-graph-preview/**",
+            ".github/workflows/knowledge-graph-preview.yml"
+          ]
+        },
+        "workflow_dispatch": null
+      },
+      "permissions": {
+        "contents": "read"
+      },
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "knowledge-graph-preview/graph-model.js",
+          "line": 36
+        },
+        {
+          "path": "knowledge-graph-preview/app.js",
+          "line": 37
+        },
+        {
+          "path": "knowledge-graph-preview/browser-smoke.cjs",
+          "line": 38
+        },
+        {
+          "path": "knowledge-graph-preview/model.test.cjs",
+          "line": 39
+        },
+        {
+          "path": "knowledge-graph-preview/real-data.test.cjs",
+          "line": 39
+        },
+        {
+          "path": "v2.5/study-map-data.js",
+          "line": 43
+        },
+        {
+          "path": "questions.js",
+          "line": 44
+        },
+        {
+          "path": "v2.5/questions.js",
+          "line": 44
+        },
+        {
+          "path": "questions.js",
+          "line": 45
+        },
+        {
+          "path": "related-questions.js",
+          "line": 45
+        },
+        {
+          "path": "v2.5/related-questions.js",
+          "line": 45
+        },
+        {
+          "path": "index.html",
+          "line": 46
+        },
+        {
+          "path": "knowledge-graph-preview/index.html",
+          "line": 46
+        },
+        {
+          "path": "index.html",
+          "line": 47
+        },
+        {
+          "path": "knowledge-graph-preview/index.html",
+          "line": 47
+        },
+        {
+          "path": "v2.5/study-map-data.js",
+          "line": 47
+        },
+        {
+          "path": "index.html",
+          "line": 48
+        },
+        {
+          "path": "knowledge-graph-preview/index.html",
+          "line": 48
+        },
+        {
+          "path": "questions.js",
+          "line": 48
+        },
+        {
+          "path": "v2.5/questions.js",
+          "line": 48
+        },
+        {
+          "path": "index.html",
+          "line": 49
+        },
+        {
+          "path": "knowledge-graph-preview/index.html",
+          "line": 49
+        },
+        {
+          "path": "questions.js",
+          "line": 49
+        },
+        {
+          "path": "related-questions.js",
+          "line": 49
+        },
+        {
+          "path": "v2.5/related-questions.js",
+          "line": 49
+        },
+        {
+          "path": "knowledge-graph-preview/app.js",
+          "line": 50
+        },
+        {
+          "path": "knowledge-graph-preview/browser-smoke.cjs",
+          "line": 68
+        }
+      ],
+      "mutationSteps": [],
+      "actionRefs": [
+        "actions/checkout@v6",
+        "actions/setup-node@v6"
+      ]
+    },
+    {
+      "path": ".github/workflows/lecture-planner-preview.yml",
+      "name": "Lecture planner isolated Cloudflare preview",
+      "triggers": {
+        "push": {
+          "branches": [
+            "feature/lecture-planner-20261018"
+          ]
+        },
+        "pull_request": {
+          "branches": [
+            "main"
+          ],
+          "paths": [
+            "lectures/**",
+            "backup/**",
+            "index.html",
+            "scripts/build-cloudflare-main-mirror.py",
+            ".github/workflows/lecture-planner-preview.yml"
+          ]
+        },
+        "workflow_dispatch": null
+      },
+      "permissions": {
+        "contents": "read"
+      },
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "index.html",
+          "line": 11
+        },
+        {
+          "path": "scripts/build-cloudflare-main-mirror.py",
+          "line": 12
+        },
+        {
+          "path": "lectures/test.cjs",
+          "line": 31
+        },
+        {
+          "path": "backup/test.cjs",
+          "line": 32
+        },
+        {
+          "path": "lectures/core.js",
+          "line": 33
+        },
+        {
+          "path": "lectures/app.js",
+          "line": 34
+        },
+        {
+          "path": "lectures/test-browser.cjs",
+          "line": 43
+        },
+        {
+          "path": "lectures/test-ui.cjs",
+          "line": 44
+        },
+        {
+          "path": "scripts/build-cloudflare-main-mirror.py",
+          "line": 47
+        },
+        {
+          "path": "index.html",
+          "line": 48
+        },
+        {
+          "path": "lectures/index.html",
+          "line": 48
+        },
+        {
+          "path": "lectures/core.js",
+          "line": 49
+        },
+        {
+          "path": "lectures/app.js",
+          "line": 50
+        }
+      ],
+      "mutationSteps": [
+        {
+          "job": "validate-and-preview",
+          "step": "Deploy separate Cloudflare preview branch only",
+          "jobIf": "github.repository == 'LeoKYChen/probation-study-desk' && (github.event_name != 'pull_request' || (github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'feature/lecture-planner-20261018'))",
+          "stepIf": null,
+          "markers": [
+            "pages deploy cloudflare-main-mirror-dist --project-name=probation-study30-test --branch=lecture-planner-preview"
+          ]
+        }
+      ],
+      "actionRefs": [
+        "actions/checkout@v6",
+        "cloudflare/wrangler-action@v4"
+      ]
+    },
+    {
+      "path": ".github/workflows/lecture-planner-tests.yml",
+      "name": "Lecture planner tests",
+      "triggers": {
+        "push": {
+          "branches": [
+            "feature/lecture-planner-20261018"
+          ]
+        },
+        "pull_request": {
+          "paths": [
+            "lectures/**",
+            "backup/**",
+            "index.html",
+            "offline-manifest.json"
+          ]
+        }
+      },
+      "permissions": null,
+      "jobPermissions": {
+        "lecture-tests": {
+          "contents": "read"
+        }
+      },
+      "staticFileReferences": [
+        {
+          "path": "index.html",
+          "line": 9
+        },
+        {
+          "path": "offline-manifest.json",
+          "line": 10
+        },
+        {
+          "path": "lectures/core.js",
+          "line": 23
+        },
+        {
+          "path": "lectures/app.js",
+          "line": 24
+        },
+        {
+          "path": "lectures/test.cjs",
+          "line": 25
+        },
+        {
+          "path": "backup/test.cjs",
+          "line": 26
+        }
+      ],
+      "mutationSteps": [],
+      "actionRefs": [
+        "actions/checkout@v4",
+        "actions/setup-node@v4"
+      ]
+    },
+    {
+      "path": ".github/workflows/mobile-rwd-preview.yml",
+      "name": "Mobile RWD seven-item isolated preview",
+      "triggers": {
+        "push": {
+          "branches": [
+            "feature/mobile-rwd-seven-fixes-20261018"
+          ]
+        },
+        "pull_request": {
+          "branches": [
+            "main"
+          ],
+          "paths": [
+            "professional/layout-followup.css",
+            "common-subjects/index.html",
+            "v2.5/index.html",
+            "docs/LAYOUT_REVIEW_CHANGES.json",
+            "verification/mobile-rwd-seven-browser.cjs",
+            ".github/workflows/mobile-rwd-preview.yml"
+          ]
+        },
+        "workflow_dispatch": null
+      },
+      "permissions": {
+        "contents": "read"
+      },
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "professional/layout-followup.css",
+          "line": 10
+        },
+        {
+          "path": "common-subjects/index.html",
+          "line": 11
+        },
+        {
+          "path": "index.html",
+          "line": 11
+        },
+        {
+          "path": "index.html",
+          "line": 12
+        },
+        {
+          "path": "v2.5/index.html",
+          "line": 12
+        },
+        {
+          "path": "docs/LAYOUT_REVIEW_CHANGES.json",
+          "line": 13
+        },
+        {
+          "path": "verification/mobile-rwd-seven-browser.cjs",
+          "line": 14
+        },
+        {
+          "path": "verification/mobile-rwd-seven-browser.cjs",
+          "line": 37
+        },
+        {
+          "path": "common-subjects/index.html",
+          "line": 38
+        },
+        {
+          "path": "index.html",
+          "line": 38
+        },
+        {
+          "path": "professional/layout-followup.css",
+          "line": 38
+        },
+        {
+          "path": "v2.5/index.html",
+          "line": 38
+        },
+        {
+          "path": "verification/unified-integration.cjs",
+          "line": 39
+        },
+        {
+          "path": "scripts/build-cloudflare-main-mirror.py",
+          "line": 40
+        },
+        {
+          "path": "common-subjects/index.html",
+          "line": 41
+        },
+        {
+          "path": "index.html",
+          "line": 41
+        },
+        {
+          "path": "index.html",
+          "line": 42
+        },
+        {
+          "path": "v2.5/index.html",
+          "line": 42
+        },
+        {
+          "path": "professional/layout-followup.css",
+          "line": 43
+        },
+        {
+          "path": "verification/mobile-rwd-seven-browser.cjs",
+          "line": 53
+        },
+        {
+          "path": "common-subjects/index.html",
+          "line": 83
+        },
+        {
+          "path": "index.html",
+          "line": 83
+        },
+        {
+          "path": "professional/layout-followup.css",
+          "line": 83
+        },
+        {
+          "path": "v2.5/index.html",
+          "line": 83
+        }
+      ],
+      "mutationSteps": [
+        {
+          "job": "test-and-preview",
+          "step": "Deploy isolated Cloudflare mobile preview",
+          "jobIf": null,
+          "stepIf": "(github.event_name == 'push' && github.ref == 'refs/heads/feature/mobile-rwd-seven-fixes-20261018') || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'feature/mobile-rwd-seven-fixes-20261018' && github.event.pull_request.base.ref == 'main')",
+          "markers": [
+            "pages deploy cloudflare-main-mirror-dist --project-name=probation-study30-test --branch=mobile-rwd-preview"
+          ]
+        }
+      ],
+      "actionRefs": [
+        "actions/checkout@v6",
+        "cloudflare/wrangler-action@v4"
+      ]
+    },
+    {
+      "path": ".github/workflows/police-browser-acceptance.yml",
+      "name": "Police 127 Originals Browser Acceptance",
+      "triggers": {
+        "workflow_dispatch": null,
+        "push": {
+          "branches": [
+            "feat/police-past-papers-108-115-originals"
+          ],
+          "paths": [
+            "verification/e2e-police-originals.cjs",
+            "police-exams/questions.approved.js",
+            "police-exams/approved-loader.js",
+            "police-exams/index.html",
+            "police-exams/catalog.json",
+            "police-exams/tools/integration.test.cjs",
+            "police-exams/tools/approved-loader.test.cjs",
+            "police-exams/tools/verify_official_pdf_hashes.cjs",
+            "police-exams/tools/verify_official_pdf_hashes.test.cjs",
+            "offline-manifest.json",
+            "scripts/build-cloudflare-main-mirror.py",
+            "v2.5/index.html",
+            "v2.5/ai-simple-review-v254.js",
+            "v2.5/essay-workspace25.js",
+            "print/index.html",
+            "print/app.js",
+            "print/print-model.js",
+            ".github/workflows/police-browser-acceptance.yml"
+          ]
+        }
+      },
+      "permissions": {
+        "contents": "read"
+      },
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "verification/e2e-police-originals.cjs",
+          "line": 8
+        },
+        {
+          "path": "police-exams/questions.approved.js",
+          "line": 9
+        },
+        {
+          "path": "police-exams/approved-loader.js",
+          "line": 10
+        },
+        {
+          "path": "index.html",
+          "line": 11
+        },
+        {
+          "path": "police-exams/index.html",
+          "line": 11
+        },
+        {
+          "path": "police-exams/catalog.json",
+          "line": 12
+        },
+        {
+          "path": "police-exams/tools/integration.test.cjs",
+          "line": 13
+        },
+        {
+          "path": "police-exams/tools/approved-loader.test.cjs",
+          "line": 14
+        },
+        {
+          "path": "police-exams/tools/verify_official_pdf_hashes.cjs",
+          "line": 15
+        },
+        {
+          "path": "police-exams/tools/verify_official_pdf_hashes.test.cjs",
+          "line": 16
+        },
+        {
+          "path": "offline-manifest.json",
+          "line": 17
+        },
+        {
+          "path": "scripts/build-cloudflare-main-mirror.py",
+          "line": 18
+        },
+        {
+          "path": "index.html",
+          "line": 19
+        },
+        {
+          "path": "v2.5/index.html",
+          "line": 19
+        },
+        {
+          "path": "v2.5/ai-simple-review-v254.js",
+          "line": 20
+        },
+        {
+          "path": "v2.5/essay-workspace25.js",
+          "line": 21
+        },
+        {
+          "path": "index.html",
+          "line": 22
+        },
+        {
+          "path": "print/index.html",
+          "line": 22
+        },
+        {
+          "path": "print/app.js",
+          "line": 23
+        },
+        {
+          "path": "print/print-model.js",
+          "line": 24
+        },
+        {
+          "path": "verification/e2e-police-originals.cjs",
+          "line": 46
+        },
+        {
+          "path": "police-exams/tools/approved-loader.test.cjs",
+          "line": 47
+        },
+        {
+          "path": "police-exams/tools/integration.test.cjs",
+          "line": 48
+        },
+        {
+          "path": "police-exams/tools/verify_official_pdf_hashes.test.cjs",
+          "line": 49
+        },
+        {
+          "path": "verification/e2e-police-originals.cjs",
+          "line": 53
+        },
+        {
+          "path": "verification/e2e-police-originals.cjs",
+          "line": 57
+        }
+      ],
+      "mutationSteps": [],
+      "actionRefs": [
+        "actions/checkout@v6",
+        "actions/setup-node@v6"
+      ]
+    },
+    {
+      "path": ".github/workflows/police-originals-audit.yml",
+      "name": "Police original past papers audit (108-115)",
+      "triggers": {
+        "workflow_dispatch": {
+          "inputs": {
+            "year": {
+              "description": "Limit to one ROC year; leave empty for all 108-115",
+              "required": false,
+              "type": "string"
+            }
+          }
+        },
+        "push": {
+          "branches": [
+            "feat/police-past-papers-108-115-originals"
+          ],
+          "paths": [
+            "police-exams/catalog.json",
+            "police-exams/tools/**",
+            ".github/workflows/police-originals-audit.yml"
+          ]
+        }
+      },
+      "permissions": {
+        "contents": "read"
+      },
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "police-exams/catalog.json",
+          "line": 13
+        },
+        {
+          "path": "police-exams/tools/approved-loader.test.cjs",
+          "line": 32
+        },
+        {
+          "path": "police-exams/tools/integration.test.cjs",
+          "line": 34
+        },
+        {
+          "path": "police-exams/tools/verify_official_pdf_hashes.test.cjs",
+          "line": 36
+        },
+        {
+          "path": "police-exams/tools/collect_originals.py",
+          "line": 41
+        },
+        {
+          "path": "police-exams/tools/collect_originals.py",
+          "line": 43
+        },
+        {
+          "path": "police-exams/tools/verify_official_pdf_hashes.cjs",
+          "line": 49
+        },
+        {
+          "path": "police-exams/tools/verify_official_pdf_hashes.cjs",
+          "line": 51
+        },
+        {
+          "path": "police-exams/questions.approved.js",
+          "line": 92
+        }
+      ],
+      "mutationSteps": [],
+      "actionRefs": [
+        "actions/checkout@v4",
+        "actions/setup-python@v5",
+        "actions/upload-artifact@v4"
+      ]
+    },
+    {
+      "path": ".github/workflows/preview-layout-review.yml",
+      "name": "Layout review isolated preview",
+      "triggers": {
+        "push": {
+          "branches": [
+            "ui/layout-review-20261017"
+          ]
+        },
+        "pull_request": {
+          "branches": [
+            "main"
+          ],
+          "paths": [
+            "professional/**",
+            "common-subjects/**",
+            "sw.js",
+            "verification/layout-*.cjs",
+            "docs/LAYOUT_REVIEW*",
+            ".github/workflows/preview-layout-review.yml"
+          ]
+        }
+      },
+      "permissions": {
+        "contents": "read"
+      },
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "sw.js",
+          "line": 11
+        },
+        {
+          "path": "verification/unified-integration.cjs",
+          "line": 34
+        },
+        {
+          "path": "verification/check-daily-v254.cjs",
+          "line": 35
+        },
+        {
+          "path": "common-subjects/test-v02.cjs",
+          "line": 36
+        },
+        {
+          "path": "common-subjects/test-staresto.cjs",
+          "line": 37
+        },
+        {
+          "path": "common-subjects/daily/test-v04.cjs",
+          "line": 38
+        },
+        {
+          "path": "common-subjects/daily/test-ui-v04.cjs",
+          "line": 39
+        },
+        {
+          "path": "scripts/build-cloudflare-main-mirror.py",
+          "line": 40
+        },
+        {
+          "path": "verification/layout-review-browser.cjs",
+          "line": 50
+        },
+        {
+          "path": "verification/unified-browser.cjs",
+          "line": 51
+        },
+        {
+          "path": "verification/cloudflare-migration.cjs",
+          "line": 52
+        },
+        {
+          "path": "verification/layout-installed-upgrade.cjs",
+          "line": 53
+        },
+        {
+          "path": "scripts/verify-published-bytes.py",
+          "line": 88
+        },
+        {
+          "path": "verification/layout-review-browser.cjs",
+          "line": 90
+        }
+      ],
+      "mutationSteps": [
+        {
+          "job": "layout-preview",
+          "step": "Publish only the new layout preview",
+          "jobIf": null,
+          "stepIf": "github.event_name == 'push' && github.ref == 'refs/heads/ui/layout-review-20261017'",
+          "markers": [
+            "pages deploy cloudflare-main-mirror-dist --project-name=probation-study30-test --branch=layout-review-20261017 --commit-hash=${{ github.sha }}"
+          ]
+        }
+      ],
+      "actionRefs": [
+        "actions/checkout@v6",
+        "actions/setup-node@v6",
+        "cloudflare/wrangler-action@v4"
+      ]
+    },
+    {
+      "path": ".github/workflows/preview-main-cloudflare-mirror.yml",
+      "name": "Verify and mirror GitHub Pages source to isolated Cloudflare preview",
+      "triggers": {
+        "push": {
+          "branches": [
+            "main"
+          ]
+        },
+        "pull_request": {
+          "branches": [
+            "main"
+          ],
+          "paths": [
+            "scripts/build-cloudflare-main-mirror.py",
+            "scripts/verify-published-bytes.py",
+            ".github/workflows/preview-main-cloudflare-mirror.yml",
+            "docs/ONE_SOURCE_VERSION_POLICY.md"
+          ]
+        },
+        "workflow_dispatch": null
+      },
+      "permissions": {
+        "contents": "read"
+      },
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "scripts/build-cloudflare-main-mirror.py",
+          "line": 11
+        },
+        {
+          "path": "scripts/verify-published-bytes.py",
+          "line": 12
+        },
+        {
+          "path": "docs/ONE_SOURCE_VERSION_POLICY.md",
+          "line": 14
+        },
+        {
+          "path": "scripts/build-cloudflare-main-mirror.py",
+          "line": 36
+        },
+        {
+          "path": "scripts/build-cloudflare-main-mirror.py",
+          "line": 37
+        },
+        {
+          "path": "index.html",
+          "line": 49
+        },
+        {
+          "path": "scripts/verify-published-bytes.py",
+          "line": 65
+        }
+      ],
+      "mutationSteps": [
+        {
+          "job": "mirror",
+          "step": "Deploy ONLY isolated mirror branch (not production or old previews)",
+          "jobIf": null,
+          "stepIf": "github.event_name != 'pull_request' && github.ref == 'refs/heads/main'",
+          "markers": [
+            "pages deploy cloudflare-main-mirror-dist --project-name=probation-study30-test --branch=github-main-mirror"
+          ]
+        }
+      ],
+      "actionRefs": [
+        "actions/checkout@v6",
+        "cloudflare/wrangler-action@v4"
+      ]
+    },
+    {
+      "path": ".github/workflows/preview-unified-home-v254.yml",
+      "name": "Isolated five-entry home and v254 integration",
+      "triggers": {
+        "push": {
+          "branches": [
+            "test/unify-home-v254-20261017"
+          ]
+        },
+        "pull_request": {
+          "branches": [
+            "main"
+          ],
+          "paths": [
+            "index.html",
+            "sw.js",
+            "verification/fixtures/**",
+            "legacy-home.html",
+            "professional/**",
+            "scripts/build-cloudflare-main-mirror.py",
+            "scripts/verify-published-bytes.py",
+            "verification/unified-*.cjs",
+            "docs/V254_INTEGRATION_PROVENANCE.json",
+            ".github/workflows/preview-unified-home-v254.yml"
+          ]
+        }
+      },
+      "permissions": {
+        "contents": "read"
+      },
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "index.html",
+          "line": 9
+        },
+        {
+          "path": "sw.js",
+          "line": 10
+        },
+        {
+          "path": "legacy-home.html",
+          "line": 12
+        },
+        {
+          "path": "scripts/build-cloudflare-main-mirror.py",
+          "line": 14
+        },
+        {
+          "path": "scripts/verify-published-bytes.py",
+          "line": 15
+        },
+        {
+          "path": "docs/V254_INTEGRATION_PROVENANCE.json",
+          "line": 17
+        },
+        {
+          "path": "police-exams/tools/integration.test.cjs",
+          "line": 38
+        },
+        {
+          "path": "scripts/build-cloudflare-main-mirror.py",
+          "line": 40
+        },
+        {
+          "path": "verification/unified-browser.cjs",
+          "line": 50
+        },
+        {
+          "path": "verification/unified-pwa-upgrade.cjs",
+          "line": 51
+        },
+        {
+          "path": "verification/layout-installed-upgrade.cjs",
+          "line": 52
+        },
+        {
+          "path": "verification/unified-integration.cjs",
+          "line": 71
+        },
+        {
+          "path": "verification/check-daily-v254.cjs",
+          "line": 72
+        },
+        {
+          "path": "scripts/check-stability-contract.py",
+          "line": 73
+        },
+        {
+          "path": "scripts/build-cloudflare-main-mirror.py",
+          "line": 77
+        },
+        {
+          "path": "scripts/verify-published-bytes.py",
+          "line": 78
+        },
+        {
+          "path": "verification/unified-browser.cjs",
+          "line": 86
+        },
+        {
+          "path": "verification/unified-pwa-upgrade.cjs",
+          "line": 88
+        },
+        {
+          "path": "verification/unified-integration.cjs",
+          "line": 104
+        },
+        {
+          "path": "verification/check-daily-v254.cjs",
+          "line": 105
+        },
+        {
+          "path": "scripts/build-cloudflare-main-mirror.py",
+          "line": 109
+        },
+        {
+          "path": "scripts/verify-published-bytes.py",
+          "line": 110
+        },
+        {
+          "path": "verification/unified-browser.cjs",
+          "line": 120
+        },
+        {
+          "path": "verification/unified-pwa-upgrade.cjs",
+          "line": 123
+        },
+        {
+          "path": "scripts/verify-published-bytes.py",
+          "line": 155
+        },
+        {
+          "path": "verification/unified-browser.cjs",
+          "line": 163
+        }
+      ],
+      "mutationSteps": [
+        {
+          "job": "integration",
+          "step": "Deploy only the new independent integration preview",
+          "jobIf": "github.event_name != 'pull_request'",
+          "stepIf": "github.event_name == 'push' && github.ref == 'refs/heads/test/unify-home-v254-20261017'",
+          "markers": [
+            "pages deploy cloudflare-main-mirror-dist --project-name=probation-study30-test --branch=unified-home-v254-20261017"
+          ]
+        }
+      ],
+      "actionRefs": [
+        "actions/checkout@v6",
+        "actions/setup-node@v6",
+        "cloudflare/wrangler-action@v4"
+      ]
+    },
+    {
+      "path": ".github/workflows/promote-114-three-questions.yml",
+      "name": "Archived police source gate - 114 original three-question exception",
+      "triggers": {
+        "workflow_dispatch": null
+      },
+      "permissions": {
+        "contents": "read"
+      },
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "police-exams/tools/approved-loader.test.cjs",
+          "line": 13
+        },
+        {
+          "path": "police-exams/tools/integration.test.cjs",
+          "line": 14
+        },
+        {
+          "path": "police-exams/questions.approved.js",
+          "line": 18
+        }
+      ],
+      "mutationSteps": [],
+      "actionRefs": [
+        "actions/checkout@v4"
+      ]
+    },
+    {
+      "path": ".github/workflows/promote-115-police-originals.yml",
+      "name": "Archived police source gate - 115 source-hash promotion",
+      "triggers": {
+        "workflow_dispatch": null
+      },
+      "permissions": {
+        "contents": "read"
+      },
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "police-exams/tools/approved-loader.test.cjs",
+          "line": 13
+        },
+        {
+          "path": "police-exams/tools/integration.test.cjs",
+          "line": 14
+        },
+        {
+          "path": "police-exams/questions.approved.js",
+          "line": 18
+        }
+      ],
+      "mutationSteps": [],
+      "actionRefs": [
+        "actions/checkout@v4"
+      ]
+    },
+    {
+      "path": ".github/workflows/promote-clean-police-originals.yml",
+      "name": "Archived police source gate - 108–114 single-page source promotion",
+      "triggers": {
+        "workflow_dispatch": null
+      },
+      "permissions": {
+        "contents": "read"
+      },
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "police-exams/tools/approved-loader.test.cjs",
+          "line": 13
+        },
+        {
+          "path": "police-exams/tools/integration.test.cjs",
+          "line": 14
+        },
+        {
+          "path": "police-exams/questions.approved.js",
+          "line": 18
+        }
+      ],
+      "mutationSteps": [],
+      "actionRefs": [
+        "actions/checkout@v4"
+      ]
+    },
+    {
+      "path": ".github/workflows/promote-pdf-visual-originals.yml",
+      "name": "Restore 28 official police PDF originals",
+      "triggers": {
+        "push": {
+          "branches": [
+            "feat/police-past-papers-108-115-originals"
+          ],
+          "paths": [
+            "police-exams/tools/promote_pdf_visual_28.py",
+            ".github/workflows/promote-pdf-visual-originals.yml"
+          ]
+        },
+        "workflow_dispatch": null
+      },
+      "permissions": {
+        "contents": "write"
+      },
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "police-exams/tools/promote_pdf_visual_28.py",
+          "line": 7
+        },
+        {
+          "path": "police-exams/tools/collect_originals.py",
+          "line": 30
+        },
+        {
+          "path": "police-exams/tools/promote_pdf_visual_28.py",
+          "line": 44
+        },
+        {
+          "path": "police-exams/questions.approved.js",
+          "line": 45
+        },
+        {
+          "path": "police-exams/tools/approved-loader.test.cjs",
+          "line": 46
+        },
+        {
+          "path": "police-exams/tools/integration.test.cjs",
+          "line": 47
+        },
+        {
+          "path": "police-exams/review-backlog.json",
+          "line": 52
+        },
+        {
+          "path": "police-exams/lawplayer-crosscheck.json",
+          "line": 65
+        },
+        {
+          "path": "police-exams/questions.approved.js",
+          "line": 65
+        },
+        {
+          "path": "police-exams/review-backlog.json",
+          "line": 65
+        }
+      ],
+      "mutationSteps": [
+        {
+          "job": "crosscheck-source-pages",
+          "step": "Commit verified originals, evidence and outstanding-status ledger",
+          "jobIf": null,
+          "stepIf": null,
+          "markers": [
+            "git push origin HEAD:feat/police-past-papers-108-115-originals"
+          ]
+        }
+      ],
+      "actionRefs": [
+        "actions/checkout@v4",
+        "actions/setup-python@v5",
+        "actions/upload-artifact@v4"
+      ]
+    },
+    {
+      "path": ".github/workflows/publish-release-v2026-10-0-once.yml",
+      "name": "Publish pinned v2026.10.0 GitHub Release once",
+      "triggers": {
+        "push": {
+          "branches": [
+            "main"
+          ],
+          "paths": [
+            ".github/workflows/publish-release-v2026-10-0-once.yml"
+          ]
+        }
+      },
+      "permissions": {
+        "contents": "read"
+      },
+      "jobPermissions": {
+        "publish": {
+          "contents": "write"
+        }
+      },
+      "staticFileReferences": [
+        {
+          "path": "docs/releases/v2026.10.0.md",
+          "line": 42
+        },
+        {
+          "path": "docs/releases/v2026.10.0.md",
+          "line": 60
+        }
+      ],
+      "mutationSteps": [
+        {
+          "job": "publish",
+          "step": "Create GitHub Release for exact source commit",
+          "jobIf": "github.repository == 'LeoKYChen/probation-study-desk'",
+          "stepIf": null,
+          "markers": [
+            "gh release create \"$RELEASE_TAG\" \\"
+          ]
+        }
+      ],
+      "actionRefs": [
+        "actions/checkout@v4"
+      ]
+    },
+    {
+      "path": ".github/workflows/stability-freeze-contract.yml",
+      "name": "Stability freeze contract (non-deploying)",
+      "triggers": {
+        "pull_request": {
+          "branches": [
+            "main"
+          ]
+        },
+        "push": {
+          "branches": [
+            "main"
+          ]
+        },
+        "workflow_dispatch": null
+      },
+      "permissions": {
+        "contents": "read"
+      },
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "scripts/check-stability-contract.py",
+          "line": 28
+        },
+        {
+          "path": "scripts/check-stability-contract.py",
+          "line": 30
+        },
+        {
+          "path": "verification/unified-integration.cjs",
+          "line": 33
+        }
+      ],
+      "mutationSteps": [],
+      "actionRefs": [
+        "actions/checkout@v6",
+        "actions/setup-node@v6"
+      ]
+    },
+    {
+      "path": ".github/workflows/stage2-json-backup-preview.yml",
+      "name": "Stage 2 unified JSON backup safety and isolated preview",
+      "triggers": {
+        "push": {
+          "branches": [
+            "phase2/manual-json-backup-audit-20261017"
+          ],
+          "paths": [
+            "backup/**",
+            "index.html",
+            "scripts/build-cloudflare-main-mirror.py",
+            ".github/workflows/stage2-json-backup-preview.yml"
+          ]
+        },
+        "pull_request": {
+          "branches": [
+            "main"
+          ],
+          "paths": [
+            "backup/**",
+            "index.html",
+            "scripts/build-cloudflare-main-mirror.py",
+            ".github/workflows/stage2-json-backup-preview.yml"
+          ]
+        },
+        "workflow_dispatch": null
+      },
+      "permissions": {
+        "contents": "read"
+      },
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "index.html",
+          "line": 9
+        },
+        {
+          "path": "scripts/build-cloudflare-main-mirror.py",
+          "line": 10
+        },
+        {
+          "path": "index.html",
+          "line": 17
+        },
+        {
+          "path": "scripts/build-cloudflare-main-mirror.py",
+          "line": 18
+        },
+        {
+          "path": "backup/unified-core.js",
+          "line": 41
+        },
+        {
+          "path": "backup/app.js",
+          "line": 42
+        },
+        {
+          "path": "backup/test.cjs",
+          "line": 43
+        },
+        {
+          "path": "backup/test.cjs",
+          "line": 44
+        },
+        {
+          "path": "backup/index.html",
+          "line": 48
+        },
+        {
+          "path": "index.html",
+          "line": 48
+        },
+        {
+          "path": "index.html",
+          "line": 49
+        },
+        {
+          "path": "backup/unified-core.js",
+          "line": 51
+        },
+        {
+          "path": "backup/test-browser.cjs",
+          "line": 73
+        },
+        {
+          "path": "scripts/build-cloudflare-main-mirror.py",
+          "line": 79
+        },
+        {
+          "path": "backup/index.html",
+          "line": 80
+        },
+        {
+          "path": "index.html",
+          "line": 80
+        },
+        {
+          "path": "backup/unified-core.js",
+          "line": 81
+        },
+        {
+          "path": "backup/unified-core.js",
+          "line": 82
+        },
+        {
+          "path": "backup/app.js",
+          "line": 95
+        },
+        {
+          "path": "backup/index.html",
+          "line": 95
+        },
+        {
+          "path": "backup/unified-core.js",
+          "line": 95
+        },
+        {
+          "path": "index.html",
+          "line": 95
+        },
+        {
+          "path": "backup/app.js",
+          "line": 142
+        },
+        {
+          "path": "backup/index.html",
+          "line": 142
+        },
+        {
+          "path": "backup/unified-core.js",
+          "line": 142
+        },
+        {
+          "path": "index.html",
+          "line": 142
+        }
+      ],
+      "mutationSteps": [
+        {
+          "job": "verify-and-preview",
+          "step": "Deploy dedicated preview only, never production",
+          "jobIf": null,
+          "stepIf": "(github.event_name == 'push' && github.ref == 'refs/heads/phase2/manual-json-backup-audit-20261017') || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'phase2/manual-json-backup-audit-20261017' && github.event.pull_request.base.ref == 'main')",
+          "markers": [
+            "pages deploy cloudflare-main-mirror-dist --project-name=probation-study30-test --branch=stage2-json-backup-preview"
+          ]
+        }
+      ],
+      "actionRefs": [
+        "actions/checkout@v6",
+        "cloudflare/wrangler-action@v4"
+      ]
+    },
+    {
+      "path": ".github/workflows/stage3-print-preview.yml",
+      "name": "Stage 3 A4 essay print and PDF isolated preview",
+      "triggers": {
+        "pull_request": {
+          "branches": [
+            "main"
+          ],
+          "paths": [
+            "print/**",
+            "index.html",
+            "professional/index.html",
+            "v2.5/index.html",
+            "daily-simulation/index.html",
+            "common-subjects/index.html",
+            "scripts/build-cloudflare-main-mirror.py",
+            ".github/workflows/stage3-print-preview.yml"
+          ]
+        },
+        "push": {
+          "branches": [
+            "feature/stage3-essay-a4-print-preview-20261017"
+          ]
+        },
+        "workflow_dispatch": null
+      },
+      "permissions": {
+        "contents": "read"
+      },
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "index.html",
+          "line": 9
+        },
+        {
+          "path": "index.html",
+          "line": 10
+        },
+        {
+          "path": "professional/index.html",
+          "line": 10
+        },
+        {
+          "path": "index.html",
+          "line": 11
+        },
+        {
+          "path": "v2.5/index.html",
+          "line": 11
+        },
+        {
+          "path": "daily-simulation/index.html",
+          "line": 12
+        },
+        {
+          "path": "index.html",
+          "line": 12
+        },
+        {
+          "path": "common-subjects/index.html",
+          "line": 13
+        },
+        {
+          "path": "index.html",
+          "line": 13
+        },
+        {
+          "path": "scripts/build-cloudflare-main-mirror.py",
+          "line": 14
+        },
+        {
+          "path": "print/print-model.js",
+          "line": 40
+        },
+        {
+          "path": "print/app.js",
+          "line": 41
+        },
+        {
+          "path": "print/test.cjs",
+          "line": 42
+        },
+        {
+          "path": "print/test-browser.cjs",
+          "line": 43
+        },
+        {
+          "path": "print/test.cjs",
+          "line": 44
+        },
+        {
+          "path": "index.html",
+          "line": 47
+        },
+        {
+          "path": "print/index.html",
+          "line": 47
+        },
+        {
+          "path": "print/style.css",
+          "line": 48
+        },
+        {
+          "path": "index.html",
+          "line": 49
+        },
+        {
+          "path": "daily-simulation/index.html",
+          "line": 56
+        },
+        {
+          "path": "index.html",
+          "line": 56
+        },
+        {
+          "path": "v2.5/index.html",
+          "line": 56
+        },
+        {
+          "path": "print/test-browser.cjs",
+          "line": 71
+        },
+        {
+          "path": "print/test-browser.cjs",
+          "line": 72
+        },
+        {
+          "path": "print/test-browser.cjs",
+          "line": 73
+        },
+        {
+          "path": "scripts/build-cloudflare-main-mirror.py",
+          "line": 77
+        },
+        {
+          "path": "index.html",
+          "line": 78
+        },
+        {
+          "path": "print/index.html",
+          "line": 78
+        },
+        {
+          "path": "print/style.css",
+          "line": 79
+        },
+        {
+          "path": "index.html",
+          "line": 80
+        },
+        {
+          "path": "print/index.html",
+          "line": 80
+        },
+        {
+          "path": "print/print-model.js",
+          "line": 81
+        },
+        {
+          "path": "index.html",
+          "line": 111
+        },
+        {
+          "path": "print/app.js",
+          "line": 111
+        },
+        {
+          "path": "print/index.html",
+          "line": 111
+        },
+        {
+          "path": "print/print-model.js",
+          "line": 111
+        },
+        {
+          "path": "print/style.css",
+          "line": 111
+        }
+      ],
+      "mutationSteps": [
+        {
+          "job": "verify-and-preview",
+          "step": "Deploy only isolated Cloudflare preview, never production",
+          "jobIf": null,
+          "stepIf": "(github.event_name == 'push' && github.ref == 'refs/heads/feature/stage3-essay-a4-print-preview-20261017') || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'feature/stage3-essay-a4-print-preview-20261017' && github.event.pull_request.base.ref == 'main')",
+          "markers": [
+            "pages deploy cloudflare-main-mirror-dist --project-name=probation-study30-test --branch=stage3-a4-print-preview"
+          ]
+        }
+      ],
+      "actionRefs": [
+        "actions/checkout@v6",
+        "cloudflare/wrangler-action@v4"
+      ]
+    },
+    {
+      "path": ".github/workflows/stage4-offline-live-diagnostic.yml",
+      "name": "Stage 4 production-like Cloudflare redirect diagnostics",
+      "triggers": {
+        "pull_request": {
+          "branches": [
+            "main"
+          ],
+          "paths": [
+            ".github/workflows/stage4-offline-live-diagnostic.yml",
+            "sw.js",
+            "offline-manifest.json"
+          ]
+        },
+        "workflow_dispatch": null
+      },
+      "permissions": {
+        "contents": "read"
+      },
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "sw.js",
+          "line": 7
+        },
+        {
+          "path": "offline-manifest.json",
+          "line": 8
+        },
+        {
+          "path": "sw.js",
+          "line": 19
+        },
+        {
+          "path": "offline-manifest.json",
+          "line": 28
+        },
+        {
+          "path": "active-recall/bank.js",
+          "line": 29
+        },
+        {
+          "path": "offline-manifest.json",
+          "line": 29
+        },
+        {
+          "path": "sw.js",
+          "line": 29
+        }
+      ],
+      "mutationSteps": [],
+      "actionRefs": [
+        "actions/checkout@v6"
+      ]
+    },
+    {
+      "path": ".github/workflows/stage4-offline-preview.yml",
+      "name": "Stage 4 offline reading writing and safe cache preview",
+      "triggers": {
+        "pull_request": {
+          "branches": [
+            "main"
+          ],
+          "paths": [
+            "offline/**",
+            "backup/**",
+            "sw.js",
+            "offline.js",
+            "offline-manifest.json",
+            "index.html",
+            "scripts/build-cloudflare-main-mirror.py",
+            "verification/offline-stage4-*",
+            ".github/workflows/stage4-offline-preview.yml"
+          ]
+        },
+        "push": {
+          "branches": [
+            "feature/stage4-offline-reading-writing-20261017"
+          ]
+        },
+        "workflow_dispatch": null
+      },
+      "permissions": {
+        "contents": "read"
+      },
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "sw.js",
+          "line": 10
+        },
+        {
+          "path": "offline.js",
+          "line": 11
+        },
+        {
+          "path": "offline-manifest.json",
+          "line": 12
+        },
+        {
+          "path": "index.html",
+          "line": 13
+        },
+        {
+          "path": "scripts/build-cloudflare-main-mirror.py",
+          "line": 14
+        },
+        {
+          "path": "sw.js",
+          "line": 47
+        },
+        {
+          "path": "offline.js",
+          "line": 48
+        },
+        {
+          "path": "verification/offline-stage4-check.cjs",
+          "line": 49
+        },
+        {
+          "path": "verification/offline-stage4-browser.cjs",
+          "line": 50
+        },
+        {
+          "path": "verification/offline-stage4-check.cjs",
+          "line": 51
+        },
+        {
+          "path": "scripts/build-cloudflare-main-mirror.py",
+          "line": 52
+        },
+        {
+          "path": "index.html",
+          "line": 53
+        },
+        {
+          "path": "offline/index.html",
+          "line": 53
+        },
+        {
+          "path": "offline-manifest.json",
+          "line": 54
+        },
+        {
+          "path": "sw.js",
+          "line": 55
+        },
+        {
+          "path": "offline-manifest.json",
+          "line": 60
+        },
+        {
+          "path": "backup/app.js",
+          "line": 73
+        },
+        {
+          "path": "backup/test.cjs",
+          "line": 74
+        },
+        {
+          "path": "backup/test-browser.cjs",
+          "line": 75
+        },
+        {
+          "path": "verification/offline-stage4-browser.cjs",
+          "line": 81
+        },
+        {
+          "path": "verification/offline-stage4-browser.cjs",
+          "line": 82
+        },
+        {
+          "path": "verification/offline-stage4-browser.cjs",
+          "line": 89
+        },
+        {
+          "path": "sw.js",
+          "line": 102
+        },
+        {
+          "path": "offline.js",
+          "line": 103
+        },
+        {
+          "path": "verification/offline-stage4-check.cjs",
+          "line": 104
+        },
+        {
+          "path": "verification/offline-stage4-browser.cjs",
+          "line": 105
+        },
+        {
+          "path": "verification/offline-stage4-check.cjs",
+          "line": 106
+        },
+        {
+          "path": "scripts/build-cloudflare-main-mirror.py",
+          "line": 107
+        },
+        {
+          "path": "index.html",
+          "line": 108
+        },
+        {
+          "path": "offline/index.html",
+          "line": 108
+        },
+        {
+          "path": "offline-manifest.json",
+          "line": 109
+        },
+        {
+          "path": "sw.js",
+          "line": 110
+        },
+        {
+          "path": "offline-manifest.json",
+          "line": 115
+        },
+        {
+          "path": "backup/app.js",
+          "line": 130
+        },
+        {
+          "path": "backup/test.cjs",
+          "line": 131
+        },
+        {
+          "path": "backup/test-browser.cjs",
+          "line": 132
+        },
+        {
+          "path": "verification/offline-stage4-browser.cjs",
+          "line": 138
+        },
+        {
+          "path": "verification/offline-stage4-browser.cjs",
+          "line": 139
+        },
+        {
+          "path": "verification/offline-stage4-browser.cjs",
+          "line": 146
+        },
+        {
+          "path": "index.html",
+          "line": 176
+        },
+        {
+          "path": "offline-manifest.json",
+          "line": 176
+        },
+        {
+          "path": "offline.js",
+          "line": 176
+        },
+        {
+          "path": "offline/index.html",
+          "line": 176
+        },
+        {
+          "path": "sw.js",
+          "line": 176
+        },
+        {
+          "path": "verification/offline-stage4-live-download.cjs",
+          "line": 190
+        }
+      ],
+      "mutationSteps": [
+        {
+          "job": "validate-and-publish-preview",
+          "step": "Publish Cloudflare stage4 preview only",
+          "jobIf": "github.event_name != 'pull_request' || github.head_ref == 'feature/stage4-offline-reading-writing-20261017'",
+          "stepIf": "(github.event_name == 'push' && github.ref == 'refs/heads/feature/stage4-offline-reading-writing-20261017') || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'feature/stage4-offline-reading-writing-20261017' && github.event.pull_request.base.ref == 'main')",
+          "markers": [
+            "pages deploy cloudflare-main-mirror-dist --project-name=probation-study30-test --branch=stage4-offline-preview"
+          ]
+        }
+      ],
+      "actionRefs": [
+        "actions/checkout@v6",
+        "cloudflare/wrangler-action@v4"
+      ]
+    },
+    {
+      "path": ".github/workflows/stage5-generate-file-data.yml",
+      "name": "Stage 5 rebuild file URL JSON mirrors (source-locked)",
+      "triggers": {
+        "push": {
+          "branches": [
+            "feature/stage5-file-zip-offline-20261018"
+          ],
+          "paths": [
+            "scripts/generate-file-data.cjs",
+            ".github/workflows/stage5-generate-file-data.yml"
+          ]
+        },
+        "workflow_dispatch": null
+      },
+      "permissions": {
+        "contents": "write"
+      },
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "scripts/generate-file-data.cjs",
+          "line": 8
+        },
+        {
+          "path": "scripts/generate-file-data.cjs",
+          "line": 31
+        },
+        {
+          "path": "scripts/generate-file-data.cjs",
+          "line": 32
+        },
+        {
+          "path": "scripts/generate-file-data.cjs",
+          "line": 33
+        },
+        {
+          "path": "common-subjects/catalog/index.html",
+          "line": 34
+        },
+        {
+          "path": "common-subjects/daily/index.html",
+          "line": 34
+        },
+        {
+          "path": "common-subjects/english-assistant/index.html",
+          "line": 34
+        },
+        {
+          "path": "common-subjects/index.html",
+          "line": 34
+        },
+        {
+          "path": "index.html",
+          "line": 34
+        },
+        {
+          "path": "professional/index.html",
+          "line": 34
+        }
+      ],
+      "mutationSteps": [
+        {
+          "job": "generate-and-commit",
+          "step": "Generate deterministic local JS equivalents from original committed JSON",
+          "jobIf": null,
+          "stepIf": null,
+          "markers": [
+            "git push origin HEAD:feature/stage5-file-zip-offline-20261018"
+          ]
+        }
+      ],
+      "actionRefs": [
+        "actions/checkout@v6"
+      ]
+    },
+    {
+      "path": ".github/workflows/stage5-source-zip-test.yml",
+      "name": "Stage 5 original GitHub ZIP file URL acceptance",
+      "triggers": {
+        "push": {
+          "branches": [
+            "feature/stage5-file-zip-offline-20261018"
+          ],
+          "paths": [
+            "file-compat.js",
+            "file-data/**",
+            "scripts/generate-file-data.cjs",
+            "verification/stage5-file-zip-browser.cjs",
+            ".github/workflows/stage5-source-zip-test.yml",
+            "index.html",
+            "professional/index.html",
+            "common-subjects/**",
+            "daily-simulation/**",
+            "juvenile-news/**",
+            "v2.5/**",
+            "backup/**",
+            "print/**"
+          ]
+        },
+        "pull_request": {
+          "branches": [
+            "main"
+          ],
+          "paths": [
+            "file-compat.js",
+            "file-data/**",
+            "scripts/generate-file-data.cjs",
+            "verification/stage5-file-zip-browser.cjs",
+            ".github/workflows/stage5-source-zip-test.yml",
+            "index.html",
+            "professional/index.html",
+            "common-subjects/**",
+            "daily-simulation/**",
+            "juvenile-news/**",
+            "v2.5/**",
+            "backup/**",
+            "print/**"
+          ]
+        },
+        "workflow_dispatch": null
+      },
+      "permissions": {
+        "contents": "read"
+      },
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "file-compat.js",
+          "line": 8
+        },
+        {
+          "path": "scripts/generate-file-data.cjs",
+          "line": 10
+        },
+        {
+          "path": "verification/stage5-file-zip-browser.cjs",
+          "line": 11
+        },
+        {
+          "path": "index.html",
+          "line": 13
+        },
+        {
+          "path": "index.html",
+          "line": 14
+        },
+        {
+          "path": "professional/index.html",
+          "line": 14
+        },
+        {
+          "path": "file-compat.js",
+          "line": 24
+        },
+        {
+          "path": "scripts/generate-file-data.cjs",
+          "line": 26
+        },
+        {
+          "path": "verification/stage5-file-zip-browser.cjs",
+          "line": 27
+        },
+        {
+          "path": "index.html",
+          "line": 29
+        },
+        {
+          "path": "index.html",
+          "line": 30
+        },
+        {
+          "path": "professional/index.html",
+          "line": 30
+        },
+        {
+          "path": "file-compat.js",
+          "line": 58
+        },
+        {
+          "path": "scripts/generate-file-data.cjs",
+          "line": 59
+        },
+        {
+          "path": "juvenile-news/file-reader.js",
+          "line": 60
+        },
+        {
+          "path": "verification/stage5-file-zip-browser.cjs",
+          "line": 61
+        },
+        {
+          "path": "scripts/generate-file-data.cjs",
+          "line": 62
+        },
+        {
+          "path": "scripts/build-cloudflare-main-mirror.py",
+          "line": 63
+        },
+        {
+          "path": "file-compat.js",
+          "line": 64
+        },
+        {
+          "path": "file-compat.js",
+          "line": 65
+        },
+        {
+          "path": "common-subjects/catalog/index.html",
+          "line": 66
+        },
+        {
+          "path": "common-subjects/daily/index.html",
+          "line": 66
+        },
+        {
+          "path": "common-subjects/english-assistant/index.html",
+          "line": 66
+        },
+        {
+          "path": "common-subjects/index.html",
+          "line": 66
+        },
+        {
+          "path": "index.html",
+          "line": 66
+        },
+        {
+          "path": "professional/index.html",
+          "line": 66
+        },
+        {
+          "path": "index.html",
+          "line": 75
+        },
+        {
+          "path": "index.html",
+          "line": 76
+        },
+        {
+          "path": "professional/index.html",
+          "line": 76
+        },
+        {
+          "path": "common-subjects/index.html",
+          "line": 77
+        },
+        {
+          "path": "index.html",
+          "line": 77
+        },
+        {
+          "path": "daily-simulation/index.html",
+          "line": 78
+        },
+        {
+          "path": "index.html",
+          "line": 78
+        },
+        {
+          "path": "index.html",
+          "line": 79
+        },
+        {
+          "path": "juvenile-news/index.html",
+          "line": 79
+        },
+        {
+          "path": "file-data/daily.generated.js",
+          "line": 80
+        },
+        {
+          "path": "file-data/weekly.generated.js",
+          "line": 81
+        },
+        {
+          "path": "file-data/english.generated.js",
+          "line": 82
+        },
+        {
+          "path": "file-data/catalog.generated.js",
+          "line": 83
+        },
+        {
+          "path": "verification/stage5-file-zip-browser.cjs",
+          "line": 94
+        },
+        {
+          "path": "verification/stage5-file-zip-browser.cjs",
+          "line": 99
+        }
+      ],
+      "mutationSteps": [],
+      "actionRefs": [
+        "actions/checkout@v6",
+        "actions/upload-artifact@v4"
+      ]
+    },
+    {
+      "path": ".github/workflows/study-desk-weakness.yml",
+      "name": "Study desk confirmed weakness loop",
+      "triggers": {
+        "push": {
+          "paths": [
+            "study-desk/**",
+            "verification/study-desk-weakness.cjs",
+            ".github/workflows/study-desk-weakness.yml"
+          ]
+        },
+        "pull_request": {
+          "paths": [
+            "study-desk/**",
+            "verification/study-desk-weakness.cjs",
+            ".github/workflows/study-desk-weakness.yml"
+          ]
+        }
+      },
+      "permissions": {
+        "contents": "read"
+      },
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "verification/study-desk-weakness.cjs",
+          "line": 6
+        },
+        {
+          "path": "verification/study-desk-weakness.cjs",
+          "line": 11
+        },
+        {
+          "path": "study-desk/app.js",
+          "line": 23
+        },
+        {
+          "path": "study-desk/weakness.js",
+          "line": 24
+        },
+        {
+          "path": "verification/study-desk-weakness.cjs",
+          "line": 25
+        }
+      ],
+      "mutationSteps": [],
+      "actionRefs": [
+        "actions/checkout@v4",
+        "actions/setup-node@v4"
+      ]
+    },
+    {
+      "path": ".github/workflows/sync-cloudflare-production.yml",
+      "name": "Synchronize approved Cloudflare production from GitHub main",
+      "triggers": {
+        "push": {
+          "branches": [
+            "main"
+          ]
+        },
+        "workflow_dispatch": {
+          "inputs": {
+            "confirm_release": {
+              "description": "Type RELEASE to confirm approved Cloudflare production deployment",
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "pull_request": {
+          "branches": [
+            "main"
+          ],
+          "paths": [
+            "index.html",
+            "professional/**",
+            "common-subjects/**",
+            "verification/layout-review-browser.cjs",
+            "scripts/**",
+            "verification/cloudflare-migration.cjs",
+            "verification/check-cloudflare-release.py",
+            "verification/fixtures/cloudflare-before-sync/**",
+            ".github/workflows/sync-cloudflare-production.yml"
+          ]
+        }
+      },
+      "permissions": {
+        "contents": "read"
+      },
+      "jobPermissions": {},
+      "staticFileReferences": [
+        {
+          "path": "index.html",
+          "line": 15
+        },
+        {
+          "path": "verification/layout-review-browser.cjs",
+          "line": 18
+        },
+        {
+          "path": "verification/cloudflare-migration.cjs",
+          "line": 20
+        },
+        {
+          "path": "verification/check-cloudflare-release.py",
+          "line": 21
+        },
+        {
+          "path": "verification/check-cloudflare-release.py",
+          "line": 49
+        },
+        {
+          "path": "scripts/build-cloudflare-main-mirror.py",
+          "line": 50
+        },
+        {
+          "path": "verification/unified-integration.cjs",
+          "line": 51
+        },
+        {
+          "path": "verification/check-daily-v254.cjs",
+          "line": 52
+        },
+        {
+          "path": "verification/cloudflare-migration.cjs",
+          "line": 60
+        },
+        {
+          "path": "verification/unified-browser.cjs",
+          "line": 61
+        },
+        {
+          "path": "verification/layout-review-browser.cjs",
+          "line": 62
+        },
+        {
+          "path": "verification/mobile-home-desk-nav.cjs",
+          "line": 63
+        },
+        {
+          "path": "verification/check-cloudflare-release.py",
+          "line": 83
+        },
+        {
+          "path": "scripts/build-cloudflare-main-mirror.py",
+          "line": 84
+        },
+        {
+          "path": "verification/unified-integration.cjs",
+          "line": 85
+        },
+        {
+          "path": "verification/check-daily-v254.cjs",
+          "line": 86
+        },
+        {
+          "path": "verification/cloudflare-migration.cjs",
+          "line": 96
+        },
+        {
+          "path": "verification/unified-browser.cjs",
+          "line": 97
+        },
+        {
+          "path": "verification/layout-review-browser.cjs",
+          "line": 98
+        },
+        {
+          "path": "verification/mobile-home-desk-nav.cjs",
+          "line": 105
+        },
+        {
+          "path": "scripts/cloudflare-release-control.py",
+          "line": 113
+        },
+        {
+          "path": "scripts/cloudflare-release-control.py",
+          "line": 119
+        },
+        {
+          "path": "scripts/verify-published-bytes.py",
+          "line": 130
+        },
+        {
+          "path": "verification/unified-browser.cjs",
+          "line": 138
+        },
+        {
+          "path": "verification/layout-review-browser.cjs",
+          "line": 139
+        },
+        {
+          "path": "scripts/cloudflare-release-control.py",
+          "line": 146
+        }
+      ],
+      "mutationSteps": [
+        {
+          "job": "validate-and-sync",
+          "step": "Publish only the approved main production branch",
+          "jobIf": "github.event_name != 'pull_request'",
+          "stepIf": "github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main' && inputs.confirm_release == 'RELEASE'",
+          "markers": [
+            "pages deploy cloudflare-main-mirror-dist --project-name=probation-study30-test --branch=main --commit-hash=${{ github.sha }}"
+          ]
+        }
+      ],
+      "actionRefs": [
+        "actions/checkout@v6",
+        "actions/setup-node@v6",
+        "actions/upload-artifact@v4",
+        "cloudflare/wrangler-action@v4"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "path": "index (1).html",
+      "tracked": true,
+      "sha256": "d8015fa77ed41fa6ef03c807ea561857973590255f22e3cf5045dcb2e26bae95",
+      "literalReferences": [],
+      "referenceInterpretation": "literal substring occurrences only; basename matches do not prove a resolved reference to a root-level asset",
+      "resolvedHtmlReferences": []
+    },
+    {
+      "path": "index-DWXubpQf.js",
+      "tracked": true,
+      "sha256": "ffe49aea778f60da3c4f5bed1595b8544041539396a773e2eebb79ee2e79a4c2",
+      "literalReferences": [
+        {
+          "path": "docs/MAIN_MIRROR_BYTE_AUDIT_20261017.json",
+          "line": 842,
+          "excerpt": "\"file\": \"juvenile-news/assets/index-DWXubpQf.js\","
+        },
+        {
+          "path": "juvenile-news/index.html",
+          "line": 5,
+          "excerpt": "document.write('<scr'+'ipt type=\"module\" crossorigin src=\"./assets/index-DWXubpQf.js\"></scr'+'ipt>');"
+        },
+        {
+          "path": "offline-manifest.json",
+          "line": 251,
+          "excerpt": "\"url\": \"juvenile-news/assets/index-DWXubpQf.js\""
+        },
+        {
+          "path": "upload/juvenile-news/index.html",
+          "line": 1,
+          "excerpt": "<!doctype html><html lang=\"zh-Hant\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta name=\"description\" content=\"少年司法改革、修復式司法、少年毒品處遇與兒童權利研究週報\"><link"
+        }
+      ],
+      "referenceInterpretation": "literal substring occurrences only; basename matches do not prove a resolved reference to a root-level asset",
+      "resolvedHtmlReferences": [
+        {
+          "source": "juvenile-news/index.html",
+          "literalUrl": "./assets/index-DWXubpQf.js",
+          "resolvedPath": "juvenile-news/assets/index-DWXubpQf.js"
+        },
+        {
+          "source": "upload/juvenile-news/index.html",
+          "literalUrl": "./assets/index-DWXubpQf.js",
+          "resolvedPath": "upload/juvenile-news/assets/index-DWXubpQf.js"
+        }
+      ]
+    },
+    {
+      "path": "index-JfbeKn1C.css",
+      "tracked": true,
+      "sha256": "b239cbd05f76db54940db4ea91b65c80c32145ecee05cedefb1180b7ff763c3a",
+      "literalReferences": [
+        {
+          "path": "docs/MAIN_MIRROR_BYTE_AUDIT_20261017.json",
+          "line": 854,
+          "excerpt": "\"file\": \"juvenile-news/assets/index-JfbeKn1C.css\","
+        },
+        {
+          "path": "juvenile-news/index.html",
+          "line": 8,
+          "excerpt": "<link rel=\"stylesheet\" crossorigin href=\"./assets/index-JfbeKn1C.css\">"
+        },
+        {
+          "path": "offline-manifest.json",
+          "line": 254,
+          "excerpt": "\"url\": \"juvenile-news/assets/index-JfbeKn1C.css\""
+        },
+        {
+          "path": "upload/juvenile-news/index.html",
+          "line": 2,
+          "excerpt": "<link rel=\"stylesheet\" crossorigin href=\"./assets/index-JfbeKn1C.css\">"
+        }
+      ],
+      "referenceInterpretation": "literal substring occurrences only; basename matches do not prove a resolved reference to a root-level asset",
+      "resolvedHtmlReferences": [
+        {
+          "source": "juvenile-news/index.html",
+          "literalUrl": "./assets/index-JfbeKn1C.css",
+          "resolvedPath": "juvenile-news/assets/index-JfbeKn1C.css"
+        },
+        {
+          "source": "upload/juvenile-news/index.html",
+          "literalUrl": "./assets/index-JfbeKn1C.css",
+          "resolvedPath": "upload/juvenile-news/assets/index-JfbeKn1C.css"
+        }
+      ]
+    },
+    {
+      "path": "juvenile-news/assets/index-DWXubpQf.js",
+      "tracked": true,
+      "sha256": "ffe49aea778f60da3c4f5bed1595b8544041539396a773e2eebb79ee2e79a4c2",
+      "literalReferences": [
+        {
+          "path": "docs/MAIN_MIRROR_BYTE_AUDIT_20261017.json",
+          "line": 842,
+          "excerpt": "\"file\": \"juvenile-news/assets/index-DWXubpQf.js\","
+        },
+        {
+          "path": "offline-manifest.json",
+          "line": 251,
+          "excerpt": "\"url\": \"juvenile-news/assets/index-DWXubpQf.js\""
+        }
+      ],
+      "referenceInterpretation": "literal substring occurrences only; basename matches do not prove a resolved reference to a root-level asset",
+      "resolvedHtmlReferences": []
+    },
+    {
+      "path": "juvenile-news/assets/index-JfbeKn1C.css",
+      "tracked": true,
+      "sha256": "b239cbd05f76db54940db4ea91b65c80c32145ecee05cedefb1180b7ff763c3a",
+      "literalReferences": [
+        {
+          "path": "docs/MAIN_MIRROR_BYTE_AUDIT_20261017.json",
+          "line": 854,
+          "excerpt": "\"file\": \"juvenile-news/assets/index-JfbeKn1C.css\","
+        },
+        {
+          "path": "offline-manifest.json",
+          "line": 254,
+          "excerpt": "\"url\": \"juvenile-news/assets/index-JfbeKn1C.css\""
+        }
+      ],
+      "referenceInterpretation": "literal substring occurrences only; basename matches do not prove a resolved reference to a root-level asset",
+      "resolvedHtmlReferences": []
+    },
+    {
+      "path": "offline-manifest.json",
+      "tracked": true,
+      "sha256": "af3ab21be91fae080e3c2ae6d9d288c8164790d4eb171c41872a456166f82551",
+      "literalReferences": [
+        {
+          "path": ".github/workflows/check-v254-daily.yml",
+          "line": 13,
+          "excerpt": "- 'offline-manifest.json'"
+        },
+        {
+          "path": ".github/workflows/check-v254-daily.yml",
+          "line": 28,
+          "excerpt": "- 'offline-manifest.json'"
+        },
+        {
+          "path": ".github/workflows/lecture-planner-tests.yml",
+          "line": 10,
+          "excerpt": "- 'offline-manifest.json'"
+        },
+        {
+          "path": ".github/workflows/police-browser-acceptance.yml",
+          "line": 17,
+          "excerpt": "- 'offline-manifest.json'"
+        },
+        {
+          "path": ".github/workflows/stage4-offline-live-diagnostic.yml",
+          "line": 8,
+          "excerpt": "- offline-manifest.json"
+        },
+        {
+          "path": ".github/workflows/stage4-offline-live-diagnostic.yml",
+          "line": 28,
+          "excerpt": "names=[x['url'] for x in json.load(open('offline-manifest.json'))['assets'] if x['url'].endswith('.html')]"
+        },
+        {
+          "path": ".github/workflows/stage4-offline-live-diagnostic.yml",
+          "line": 29,
+          "excerpt": "names+=['offline-manifest.json','sw.js','active-recall/bank.js']"
+        },
+        {
+          "path": ".github/workflows/stage4-offline-preview.yml",
+          "line": 12,
+          "excerpt": "- offline-manifest.json"
+        },
+        {
+          "path": ".github/workflows/stage4-offline-preview.yml",
+          "line": 54,
+          "excerpt": "cmp offline-manifest.json cloudflare-main-mirror-dist/offline-manifest.json"
+        },
+        {
+          "path": ".github/workflows/stage4-offline-preview.yml",
+          "line": 60,
+          "excerpt": "assets=json.loads(Path('offline-manifest.json').read_text())['assets']"
+        },
+        {
+          "path": ".github/workflows/stage4-offline-preview.yml",
+          "line": 109,
+          "excerpt": "cmp offline-manifest.json cloudflare-main-mirror-dist/offline-manifest.json"
+        },
+        {
+          "path": ".github/workflows/stage4-offline-preview.yml",
+          "line": 115,
+          "excerpt": "assets=json.loads(Path('offline-manifest.json').read_text())['assets']"
+        },
+        {
+          "path": ".github/workflows/stage4-offline-preview.yml",
+          "line": 176,
+          "excerpt": "for file in index.html offline/index.html sw.js offline.js offline-manifest.json; do"
+        },
+        {
+          "path": "docs/MAIN_MIRROR_BYTE_AUDIT_20261017.json",
+          "line": 8,
+          "excerpt": "\"file\": \"offline-manifest.json\","
+        },
+        {
+          "path": "docs/STAGE4_OFFLINE_ACCEPTANCE.md",
+          "line": 14,
+          "excerpt": "- 將 `offline-manifest.json` 由原 75 個擴充至 **183 個**已發布資源（原有資源完整保留），納入專業科目、426題、125題每日模擬、共同科目、少年司法週報、JSON 備份及列印中心。"
+        },
+        {
+          "path": "docs/stability-freeze-policy.json",
+          "line": 165,
+          "excerpt": "\"offline-manifest.json\","
+        },
+        {
+          "path": "police-exams/README.md",
+          "line": 96,
+          "excerpt": "- `offline-manifest.json` 與 Cloudflare 鏡像 `REQUIRED` 同時保護 **`dual-ai-bridge.js`** 及警察原題的 `index.html`／`catalog.json`／`questions.approved.js`／`approved-loader.js`，避免與整理分支 PR #74 合併時只保留其中一方資產。"
+        },
+        {
+          "path": "police-exams/reviews/OFFICIAL_32_PAPER_CHECKLIST.md",
+          "line": 76,
+          "excerpt": "2. 與 PR #74 整合時，`offline-manifest.json` 和 Cloudflare 鏡像腳本必須保留 `dual-ai-bridge.js` 及警察題庫四個靜態資產。"
+        },
+        {
+          "path": "police-exams/tools/integration.test.cjs",
+          "line": 74,
+          "excerpt": "const assets=JSON.parse(read('offline-manifest.json')).assets.map(x=>x.url);"
+        },
+        {
+          "path": "scripts/build-cloudflare-main-mirror.py",
+          "line": 25,
+          "excerpt": "\"offline-manifest.json\","
+        },
+        {
+          "path": "scripts/build-cloudflare-main-mirror.py",
+          "line": 82,
+          "excerpt": "\"offline-manifest.json\","
+        },
+        {
+          "path": "scripts/check-stability-contract.py",
+          "line": 75,
+          "excerpt": "manifest = root / \"offline-manifest.json\""
+        },
+        {
+          "path": "sw.js",
+          "line": 36,
+          "excerpt": "const {b}=await bytes(absolute('offline-manifest.json'));"
+        },
+        {
+          "path": "sw.js",
+          "line": 72,
+          "excerpt": "if(e.request.method!=='GET'||u.origin!==BASE.origin||!u.pathname.startsWith(BASE.pathname)||['sw.js','offline-manifest.json'].includes(u.pathname.slice(BASE.pathname.length)))return;"
+        },
+        {
+          "path": "upload/sw.js",
+          "line": 15,
+          "excerpt": "const {b}=await bytes(absolute('offline-manifest.json'));"
+        },
+        {
+          "path": "upload/sw.js",
+          "line": 51,
+          "excerpt": "if(e.request.method!=='GET'||u.origin!==BASE.origin||!u.pathname.startsWith(BASE.pathname)||['sw.js','offline-manifest.json'].includes(u.pathname.slice(BASE.pathname.length)))return;"
+        },
+        {
+          "path": "verification/check-daily-v254.cjs",
+          "line": 38,
+          "excerpt": "assert.ok(read('offline-manifest.json').includes('\"url\": \"ai-prompt-customizer.js\"'),'offline snapshot needs customizer asset');"
+        },
+        {
+          "path": "verification/check-daily-v254.cjs",
+          "line": 105,
+          "excerpt": "const manifest=JSON.parse(read('offline-manifest.json')),assets=manifest.assets.map(x=>x.url);"
+        },
+        {
+          "path": "verification/fixtures/legacy-main-sw.js",
+          "line": 23,
+          "excerpt": "const {b}=await bytes(absolute('offline-manifest.json'));"
+        },
+        {
+          "path": "verification/fixtures/legacy-main-sw.js",
+          "line": 59,
+          "excerpt": "if(e.request.method!=='GET'||u.origin!==BASE.origin||!u.pathname.startsWith(BASE.pathname)||['sw.js','offline-manifest.json'].includes(u.pathname.slice(BASE.pathname.length)))return;"
+        },
+        {
+          "path": "verification/offline-stage4-check.cjs",
+          "line": 4,
+          "excerpt": "const manifest=JSON.parse(fs.readFileSync(path.join(root,'offline-manifest.json'),'utf8'));"
+        }
+      ],
+      "referenceInterpretation": "literal substring occurrences only; basename matches do not prove a resolved reference to a root-level asset",
+      "resolvedHtmlReferences": []
+    },
+    {
+      "path": "sw.js",
+      "tracked": true,
+      "sha256": "9751b686115028c2bc9937c15b50647bc88313dd0dc2b2c285b5103839a450ac",
+      "literalReferences": [
+        {
+          "path": ".github/workflows/preview-layout-review.yml",
+          "line": 11,
+          "excerpt": "- sw.js"
+        },
+        {
+          "path": ".github/workflows/preview-unified-home-v254.yml",
+          "line": 10,
+          "excerpt": "- sw.js"
+        },
+        {
+          "path": ".github/workflows/stage4-offline-live-diagnostic.yml",
+          "line": 7,
+          "excerpt": "- sw.js"
+        },
+        {
+          "path": ".github/workflows/stage4-offline-live-diagnostic.yml",
+          "line": 19,
+          "excerpt": "run: sha256sum sw.js"
+        },
+        {
+          "path": ".github/workflows/stage4-offline-live-diagnostic.yml",
+          "line": 29,
+          "excerpt": "names+=['offline-manifest.json','sw.js','active-recall/bank.js']"
+        },
+        {
+          "path": ".github/workflows/stage4-offline-preview.yml",
+          "line": 10,
+          "excerpt": "- sw.js"
+        },
+        {
+          "path": ".github/workflows/stage4-offline-preview.yml",
+          "line": 47,
+          "excerpt": "node --check sw.js"
+        },
+        {
+          "path": ".github/workflows/stage4-offline-preview.yml",
+          "line": 55,
+          "excerpt": "cmp sw.js cloudflare-main-mirror-dist/sw.js"
+        },
+        {
+          "path": ".github/workflows/stage4-offline-preview.yml",
+          "line": 102,
+          "excerpt": "node --check sw.js"
+        },
+        {
+          "path": ".github/workflows/stage4-offline-preview.yml",
+          "line": 110,
+          "excerpt": "cmp sw.js cloudflare-main-mirror-dist/sw.js"
+        },
+        {
+          "path": ".github/workflows/stage4-offline-preview.yml",
+          "line": 176,
+          "excerpt": "for file in index.html offline/index.html sw.js offline.js offline-manifest.json; do"
+        },
+        {
+          "path": "docs/LAYOUT_REVIEW_CHANGES.json",
+          "line": 90,
+          "excerpt": "\"path\": \"professional/sw.js\","
+        },
+        {
+          "path": "docs/LAYOUT_REVIEW_CHANGES.json",
+          "line": 96,
+          "excerpt": "\"path\": \"sw.js\","
+        },
+        {
+          "path": "docs/MAIN_MIRROR_BYTE_AUDIT_20261017.json",
+          "line": 50,
+          "excerpt": "\"file\": \"sw.js\","
+        },
+        {
+          "path": "docs/STAGE4_OFFLINE_ACCEPTANCE.md",
+          "line": 7,
+          "excerpt": "- `sw.js` 可下載原子性資源快照，使用 Cache Storage 儲存網頁、題庫與樣式。更新失敗時不應取代上一個完整快照。"
+        },
+        {
+          "path": "docs/STAGE4_OFFLINE_ACCEPTANCE.md",
+          "line": 9,
+          "excerpt": "- `professional/sw.js` 已有自己更小範圍的獨立 Service Worker；本階段不更動該檔，避免覆蓋或清除已安裝的舊版快取。"
+        },
+        {
+          "path": "docs/UNIFIED_HOME_V254_ACCEPTANCE.md",
+          "line": 21,
+          "excerpt": "- 放入 `professional/`：426 題、原計時與科目切換、申論、自評統計、補練及 AI 評語邏輯不改。28/30 檔案與原站完全相同；`index.html` 只改站內導覽，`sw.js` 只隔離快取名稱並更新本次版本。"
+        },
+        {
+          "path": "docs/UNIFIED_HOME_V254_ACCEPTANCE.md",
+          "line": 53,
+          "excerpt": "修正僅在 `sw.js` 將首頁的目錄路徑及 `index.html` 加入原有的線上優先清單。維持既有逾時與快取回退，不刪除 CacheStorage 或 localStorage，不增加離線下載功能；舊離線快照仍保留。更新 worker 完成後，重新開啟連線首頁可讀到整合版；這不是要求清除網站資料。"
+        },
+        {
+          "path": "docs/V254_INTEGRATION_PROVENANCE.json",
+          "line": 140,
+          "excerpt": "\"file\": \"sw.js\","
+        },
+        {
+          "path": "docs/V254_INTEGRATION_PROVENANCE.json",
+          "line": 161,
+          "excerpt": "\"sw.js\": \"Scope cache prefix to its path; refresh version for navigation changes.\""
+        },
+        {
+          "path": "docs/V254_INTEGRATION_PROVENANCE.json",
+          "line": 192,
+          "excerpt": "\"sw.js\": \"40e49a0b907e3db282d42743613f7756e205dba51705dfba7e8efac533400e99\","
+        },
+        {
+          "path": "docs/stability-freeze-policy.json",
+          "line": 166,
+          "excerpt": "\"sw.js\","
+        },
+        {
+          "path": "offline-manifest.json",
+          "line": 440,
+          "excerpt": "\"url\": \"professional/sw.js\""
+        },
+        {
+          "path": "offline.js",
+          "line": 45,
+          "excerpt": "(async()=>{try{registration=await navigator.serviceWorker.register(new URL('sw.js',base),{scope:base.pathname,updateViaCache:'none'});registration=await navigator.serviceWorker.ready;snapshot=await re"
+        },
+        {
+          "path": "police-exams/tools/integration.test.cjs",
+          "line": 121,
+          "excerpt": "const nestedWorker=read('professional/sw.js');"
+        },
+        {
+          "path": "professional/offline-control.js",
+          "line": 37,
+          "excerpt": "await navigator.serviceWorker.register('./sw.js',{scope:'./',updateViaCache:'none'});"
+        },
+        {
+          "path": "scripts/build-cloudflare-main-mirror.py",
+          "line": 28,
+          "excerpt": "\"sw.js\","
+        },
+        {
+          "path": "scripts/build-cloudflare-main-mirror.py",
+          "line": 70,
+          "excerpt": "\"professional/sw.js\","
+        },
+        {
+          "path": "scripts/build-cloudflare-main-mirror.py",
+          "line": 81,
+          "excerpt": "\"sw.js\","
+        },
+        {
+          "path": "study-desk/app.js",
+          "line": 284,
+          "excerpt": "if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>report('離線資源快取未完成；草稿仍保存於此裝置。',true));"
+        },
+        {
+          "path": "sw.js",
+          "line": 72,
+          "excerpt": "if(e.request.method!=='GET'||u.origin!==BASE.origin||!u.pathname.startsWith(BASE.pathname)||['sw.js','offline-manifest.json'].includes(u.pathname.slice(BASE.pathname.length)))return;"
+        },
+        {
+          "path": "upload/offline.js",
+          "line": 45,
+          "excerpt": "(async()=>{try{registration=await navigator.serviceWorker.register(new URL('sw.js',base),{scope:base.pathname,updateViaCache:'none'});registration=await navigator.serviceWorker.ready;snapshot=await re"
+        },
+        {
+          "path": "upload/sw.js",
+          "line": 51,
+          "excerpt": "if(e.request.method!=='GET'||u.origin!==BASE.origin||!u.pathname.startsWith(BASE.pathname)||['sw.js','offline-manifest.json'].includes(u.pathname.slice(BASE.pathname.length)))return;"
+        },
+        {
+          "path": "verification/check-daily-v254.cjs",
+          "line": 137,
+          "excerpt": "assert.ok(read('sw.js').includes(\"'daily-simulation/practice.css'\"),'online users must receive refreshed in-place workspace CSS');"
+        },
+        {
+          "path": "verification/fixtures/layout-before-review/manifest.json",
+          "line": 145,
+          "excerpt": "\"name\": \"sw.js\","
+        },
+        {
+          "path": "verification/fixtures/layout-before-review/manifest.json",
+          "line": 146,
+          "excerpt": "\"path\": \"verification/fixtures/layout-before-review/sw.js\","
+        },
+        {
+          "path": "verification/fixtures/legacy-main-sw.js",
+          "line": 59,
+          "excerpt": "if(e.request.method!=='GET'||u.origin!==BASE.origin||!u.pathname.startsWith(BASE.pathname)||['sw.js','offline-manifest.json'].includes(u.pathname.slice(BASE.pathname.length)))return;"
+        },
+        {
+          "path": "verification/layout-installed-upgrade.cjs",
+          "line": 6,
+          "excerpt": "const assets=JSON.parse(fs.readFileSync(path.join(root,'professional/sw.js'),'utf8').match(/const ASSETS=(\\[.*?\\]);/)[1]);"
+        },
+        {
+          "path": "verification/offline-stage4-check.cjs",
+          "line": 42,
+          "excerpt": "const sw=fs.readFileSync(path.join(root,'sw.js'),'utf8');"
+        },
+        {
+          "path": "verification/study-desk-weakness.cjs",
+          "line": 37,
+          "excerpt": "const app=read('study-desk/app.js'),html=read('study-desk/index.html'),sw=read('study-desk/sw.js');"
+        },
+        {
+          "path": "verification/unified-integration.cjs",
+          "line": 14,
+          "excerpt": "if(!['index.html','sw.js'].includes(file.file))assert.equal(hash('professional/'+file.file),expected(file.file,file.sha256),'published v254 bytes: '+file.file);"
+        },
+        {
+          "path": "verification/unified-integration.cjs",
+          "line": 27,
+          "excerpt": "const sw=read('professional/sw.js');assert(sw.includes('new URL(self.registration.scope).pathname'));"
+        },
+        {
+          "path": "verification/unified-pwa-upgrade.cjs",
+          "line": 7,
+          "excerpt": "const fixture=path.join(__dirname,'fixtures/legacy-main-sw.js');"
+        },
+        {
+          "path": "verification/unified-pwa-upgrade.cjs",
+          "line": 9,
+          "excerpt": "assert.equal(crypto.createHash('sha256').update(fs.readFileSync(fixture)).digest('hex'),audit.files.find(row=>row.file==='sw.js').expected,'fixture is the exact main baseline worker');"
+        },
+        {
+          "path": "verification/unified-pwa-upgrade.cjs",
+          "line": 20,
+          "excerpt": "if(!upgraded&&pathname==='/sw.js')file=fixture;"
+        }
+      ],
+      "referenceInterpretation": "literal substring occurrences only; basename matches do not prove a resolved reference to a root-level asset",
+      "resolvedHtmlReferences": []
+    },
+    {
+      "path": "scripts/build-cloudflare-main-mirror.py",
+      "tracked": true,
+      "sha256": "2e13fe2ccd3dd4005ab48a3c0bdd26d71a713383898928f41b85539065ae6dc0",
+      "literalReferences": [
+        {
+          "path": ".github/workflows/lecture-planner-preview.yml",
+          "line": 12,
+          "excerpt": "- 'scripts/build-cloudflare-main-mirror.py'"
+        },
+        {
+          "path": ".github/workflows/lecture-planner-preview.yml",
+          "line": 47,
+          "excerpt": "python3 scripts/build-cloudflare-main-mirror.py"
+        },
+        {
+          "path": ".github/workflows/mobile-rwd-preview.yml",
+          "line": 40,
+          "excerpt": "python3 scripts/build-cloudflare-main-mirror.py"
+        },
+        {
+          "path": ".github/workflows/police-browser-acceptance.yml",
+          "line": 18,
+          "excerpt": "- 'scripts/build-cloudflare-main-mirror.py'"
+        },
+        {
+          "path": ".github/workflows/preview-layout-review.yml",
+          "line": 40,
+          "excerpt": "python3 scripts/build-cloudflare-main-mirror.py"
+        },
+        {
+          "path": ".github/workflows/preview-main-cloudflare-mirror.yml",
+          "line": 11,
+          "excerpt": "- scripts/build-cloudflare-main-mirror.py"
+        },
+        {
+          "path": ".github/workflows/preview-main-cloudflare-mirror.yml",
+          "line": 36,
+          "excerpt": "python3 -m py_compile scripts/build-cloudflare-main-mirror.py"
+        },
+        {
+          "path": ".github/workflows/preview-main-cloudflare-mirror.yml",
+          "line": 37,
+          "excerpt": "python3 scripts/build-cloudflare-main-mirror.py"
+        },
+        {
+          "path": ".github/workflows/preview-unified-home-v254.yml",
+          "line": 14,
+          "excerpt": "- scripts/build-cloudflare-main-mirror.py"
+        },
+        {
+          "path": ".github/workflows/preview-unified-home-v254.yml",
+          "line": 40,
+          "excerpt": "run: python3 scripts/build-cloudflare-main-mirror.py"
+        },
+        {
+          "path": ".github/workflows/preview-unified-home-v254.yml",
+          "line": 77,
+          "excerpt": "python3 scripts/build-cloudflare-main-mirror.py"
+        },
+        {
+          "path": ".github/workflows/preview-unified-home-v254.yml",
+          "line": 109,
+          "excerpt": "python3 scripts/build-cloudflare-main-mirror.py"
+        },
+        {
+          "path": ".github/workflows/stage2-json-backup-preview.yml",
+          "line": 10,
+          "excerpt": "- scripts/build-cloudflare-main-mirror.py"
+        },
+        {
+          "path": ".github/workflows/stage2-json-backup-preview.yml",
+          "line": 18,
+          "excerpt": "- scripts/build-cloudflare-main-mirror.py"
+        },
+        {
+          "path": ".github/workflows/stage2-json-backup-preview.yml",
+          "line": 79,
+          "excerpt": "python3 scripts/build-cloudflare-main-mirror.py"
+        },
+        {
+          "path": ".github/workflows/stage3-print-preview.yml",
+          "line": 14,
+          "excerpt": "- scripts/build-cloudflare-main-mirror.py"
+        },
+        {
+          "path": ".github/workflows/stage3-print-preview.yml",
+          "line": 77,
+          "excerpt": "python3 scripts/build-cloudflare-main-mirror.py"
+        },
+        {
+          "path": ".github/workflows/stage4-offline-preview.yml",
+          "line": 14,
+          "excerpt": "- scripts/build-cloudflare-main-mirror.py"
+        },
+        {
+          "path": ".github/workflows/stage4-offline-preview.yml",
+          "line": 52,
+          "excerpt": "python3 scripts/build-cloudflare-main-mirror.py"
+        },
+        {
+          "path": ".github/workflows/stage4-offline-preview.yml",
+          "line": 107,
+          "excerpt": "python3 scripts/build-cloudflare-main-mirror.py"
+        },
+        {
+          "path": ".github/workflows/stage5-source-zip-test.yml",
+          "line": 63,
+          "excerpt": "python3 scripts/build-cloudflare-main-mirror.py"
+        },
+        {
+          "path": ".github/workflows/sync-cloudflare-production.yml",
+          "line": 50,
+          "excerpt": "python3 scripts/build-cloudflare-main-mirror.py"
+        },
+        {
+          "path": ".github/workflows/sync-cloudflare-production.yml",
+          "line": 84,
+          "excerpt": "python3 scripts/build-cloudflare-main-mirror.py"
+        },
+        {
+          "path": "docs/ONE_SOURCE_VERSION_POLICY.md",
+          "line": 22,
+          "excerpt": "1. `scripts/build-cloudflare-main-mirror.py` 從 GitHub 已追蹤的正式網站靜態檔案複製出發布包；只複製站點資源，不複製內部實驗、工作流程、開發測試及重複的 `upload/` 資料夾。"
+        },
+        {
+          "path": "police-exams/tools/integration.test.cjs",
+          "line": 76,
+          "excerpt": "const mirror=read('scripts/build-cloudflare-main-mirror.py');"
+        },
+        {
+          "path": "scripts/check-stability-contract.py",
+          "line": 62,
+          "excerpt": "builder = root / \"scripts/build-cloudflare-main-mirror.py\""
+        }
+      ],
+      "referenceInterpretation": "literal substring occurrences only; basename matches do not prove a resolved reference to a root-level asset",
+      "resolvedHtmlReferences": []
+    },
+    {
+      "path": "scripts/generate-file-data.cjs",
+      "tracked": true,
+      "sha256": "c4caa9d6517b3903656b179aa683940a32b5966ca87ff0f521e04da497391b88",
+      "literalReferences": [
+        {
+          "path": ".github/workflows/daily-monthly-review-mirror.yml",
+          "line": 30,
+          "excerpt": "node scripts/generate-file-data.cjs --write"
+        },
+        {
+          "path": ".github/workflows/stage5-generate-file-data.yml",
+          "line": 8,
+          "excerpt": "- scripts/generate-file-data.cjs"
+        },
+        {
+          "path": ".github/workflows/stage5-generate-file-data.yml",
+          "line": 31,
+          "excerpt": "node --check scripts/generate-file-data.cjs"
+        },
+        {
+          "path": ".github/workflows/stage5-generate-file-data.yml",
+          "line": 32,
+          "excerpt": "node scripts/generate-file-data.cjs --write"
+        },
+        {
+          "path": ".github/workflows/stage5-generate-file-data.yml",
+          "line": 33,
+          "excerpt": "node scripts/generate-file-data.cjs --check"
+        },
+        {
+          "path": ".github/workflows/stage5-source-zip-test.yml",
+          "line": 10,
+          "excerpt": "- scripts/generate-file-data.cjs"
+        },
+        {
+          "path": ".github/workflows/stage5-source-zip-test.yml",
+          "line": 26,
+          "excerpt": "- scripts/generate-file-data.cjs"
+        },
+        {
+          "path": ".github/workflows/stage5-source-zip-test.yml",
+          "line": 59,
+          "excerpt": "node --check scripts/generate-file-data.cjs"
+        },
+        {
+          "path": ".github/workflows/stage5-source-zip-test.yml",
+          "line": 62,
+          "excerpt": "node scripts/generate-file-data.cjs --check"
+        },
+        {
+          "path": "docs/PROJECT_GUIDE.md",
+          "line": 71,
+          "excerpt": "node scripts/generate-file-data.cjs --check"
+        },
+        {
+          "path": "docs/README_ARCHIVE_2026-10-22.md",
+          "line": 243,
+          "excerpt": "node scripts/generate-file-data.cjs --check"
+        },
+        {
+          "path": "docs/STAGE5_GITHUB_ZIP_ACCEPTANCE.md",
+          "line": 27,
+          "excerpt": "正本題庫永遠是：`daily-simulation/*.json`、`common-subjects/daily/*.json`、`common-subjects/catalog/data/**/*.json`、`juvenile-news/issues.json`。`scripts/generate-file-data.cjs` 會將上述 JSON 自動轉為 `file-data/*.gener"
+        },
+        {
+          "path": "scripts/generate-file-data.cjs",
+          "line": 44,
+          "excerpt": "else assert(fs.existsSync(file)&&fs.readFileSync(file,'utf8')===script,'Outdated ZIP JSON bridge: '+group+'; run node scripts/generate-file-data.cjs --write');"
+        }
+      ],
+      "referenceInterpretation": "literal substring occurrences only; basename matches do not prove a resolved reference to a root-level asset",
+      "resolvedHtmlReferences": []
+    }
+  ],
+  "yamlParser": "Ruby Psych safe_load, aliases permitted; YAML 1.1 boolean on key normalized to event key"
+}
