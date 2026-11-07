@@ -137,8 +137,9 @@ for(const f of ['sw.js','offline-manifest.json']){const t=fs.readFileSync(path.j
 assert.equal(fs.readdirSync(path.join(root,'law-scoring/exam-design')).sort().join(),['index.js',...DESIGN_FILES].sort().join(),'every file in exam-design is listed in the index');
 assert.equal(Object.keys(ED.items).filter(id=>/^1\d\d-少年事件處理法-\d$/.test(id)).length,32,'probation juvenile law 108–115');
 assert.equal(Object.keys(ED.items).filter(id=>/^1\d\d-刑法-\d$/.test(id)).length,31,'probation criminal law 108–115');
+assert.equal(Object.keys(ED.items).filter(id=>/^1\d\d-刑事訴訟法與保安處分執行法-\d$/.test(id)).length,32,'probation criminal procedure 108–115');
 const LAWD=Object.entries(ED.items).filter(([id])=>LAW.includes(D.questions.find(q=>q.id===id).subject));
-assert(LAWD.length>=63,'law subjects have breakdowns');
+assert(LAWD.length>=95,'law subjects have breakdowns');
 assert(LAWD.every(([,d])=>'DEF'.includes(d.qtype)&&/法條核對/.test(S.blocksText(d.intent))),'law questions use law types and verified-article sections');
 assert(LAWD.every(([,d])=>!/請以條文|作答前請核對/.test(S.blocksText(d.intent))),'law breakdowns leave no unverified placeholders');
 console.log('PASS law-scoring exam design: '+designTotal+' questions in '+DESIGN_FILES.length+' subject files');
