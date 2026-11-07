@@ -141,3 +141,17 @@ ol.pit{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
 .side .confirm .btn,.side a.btn{width:100%}
 /* 「—」不適用標記與勾選框同大小，手機上欄位高度一致、與勾選框切齊。 */
 .na{display:inline-flex;width:22px;height:22px;margin:3px 3px 3px 4px;align-items:center;justify-content:center;line-height:1}
+/* 命題者視角拆解（題幹要求、命題結構、命題意圖）：長文字完整換行，不截斷。 */
+.chip.design{background:#e3ecf3;color:#315b7c}
+.sheet.design{border-left:4px solid var(--accent)}
+.design-body{min-width:0;overflow-wrap:anywhere}
+.design-body p{margin:8px 0}
+.design-body ul,.design-body ol{margin:6px 0 10px;padding-left:22px}
+.design-body li{margin:4px 0}
+.design-body strong{color:var(--ink)}
+.design-notice{background:var(--gold-soft);color:var(--gold);border-radius:8px;padding:10px 12px;font-size:14px;margin:0 0 10px}
+.design-notice strong{color:var(--gold)}
+.design-details{border:1px solid var(--rule);border-radius:8px;background:var(--paper)}
+.design-details>summary{cursor:pointer;min-height:44px;display:flex;align-items:center;padding:0 14px;color:var(--accent);font-weight:700}
+.design-details[open]>summary{border-bottom:1px solid var(--rule)}
+.design-details>.design-body{padding:4px 14px 12px}

@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="zh-Hant">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>申論評分參考｜觀護人練習臺</title><meta name="description" content="全站 553 題申論題評分要點：先作答，再逐列對照、換算自評分數，並可複製 AI 批改文字。"><link rel="stylesheet" href="../shared-ui.css"><link rel="stylesheet" href="style.css"><script src="data.js" defer></script><script src="app.js" defer></script><link rel="manifest" href="../manifest.webmanifest"><meta name="theme-color" content="#315b7c"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="../pwa/icon-180.png"><link rel="stylesheet" href="../offline.css"><script src="../offline.js" defer></script><link rel="stylesheet" href="../assets/study-theme.css">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>申論評分參考｜觀護人練習臺</title><meta name="description" content="全站 553 題申論題評分要點：先作答，再逐列對照、換算自評分數，並可複製 AI 批改文字。"><link rel="stylesheet" href="../shared-ui.css"><link rel="stylesheet" href="style.css"><script src="data.js" defer></script><script src="exam-design.js" defer></script><script src="app.js" defer></script><link rel="manifest" href="../manifest.webmanifest"><meta name="theme-color" content="#315b7c"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="../pwa/icon-180.png"><link rel="stylesheet" href="../offline.css"><script src="../offline.js" defer></script><link rel="stylesheet" href="../assets/study-theme.css">
 </head>
 <body>
 <header class="study-header"><div class="study-header-inner"><a class="study-brand" href="../v2.5/"><span class="study-brand-mark" aria-hidden="true">觀</span>觀護人練習臺</a><span class="study-test-label">申論評分參考</span><nav aria-label="主要導覽"><a href="../v2.5/">考古題練習</a><a href="./" aria-current="page">申論評分參考</a><a href="review.html">失分回想卡</a></nav></div></header>
@@ -34,6 +34,13 @@
         <p class="small muted" style="margin:10px 0 0"><a id="q-src" target="_blank" rel="noopener">考選部原卷 PDF ↗</a></p>
       </section>
 
+      <section class="sheet design" id="demands-sheet" aria-labelledby="dem-heading" hidden>
+        <p class="kicker">作答前先看・只依題幹，不含答案</p>
+        <h2 id="dem-heading">題幹要求</h2>
+        <p class="small muted">逐問列出題目要你辨識、說明、比較、計算或提出什麼，並保留題目指定的理論、數量、個案事實與配分。</p>
+        <div class="design-body" id="demands"></div>
+      </section>
+
       <section class="sheet" aria-labelledby="ans-heading">
         <h2 id="ans-heading">一、先作答</h2>
         <label for="answer" class="small muted">建議先寫完整答案或詳細大綱再展開評分要點；寫在紙上或其他網站也可以，直接展開後逐列勾選。</label>
@@ -62,6 +69,18 @@
           <h2 id="pit-heading">四、預測的常見失分</h2>
           <p class="small muted">這些考試都沒有公布閱卷意見，以下依司律閱卷委員常見指正與本題特性推估。</p>
           <ol class="pit" id="pitfalls"></ol>
+        </section>
+        <section class="sheet design" id="structure-sheet" aria-labelledby="str-heading" hidden>
+          <p class="kicker">命題者視角・研究者歸納</p>
+          <h2 id="str-heading">五、命題結構</h2>
+          <p class="small muted">把題目拆成「背景材料 → 知識點 → 作答動作 → 加分／失分風險」，並示範在不改變核心作答能力下，可以怎麼設計變化題。這是研究者對命題方式的歸納，不是考選部資訊。</p>
+          <div class="design-body" id="structure"></div>
+        </section>
+        <section class="sheet design" id="intent-sheet" aria-labelledby="int-heading" hidden>
+          <p class="kicker">命題者視角・推論</p>
+          <h2 id="int-heading">六、命題意圖</h2>
+          <p class="design-notice">以下把「題幹可確認的能力」和「對命題意圖的合理推論」分開寫，並補上理論核對、常見混淆、證據限度、個案應用與練習策略。這是獨立核對後的推論，<strong>不是官方閱卷標準</strong>，理論內容待對照教材。建議先對照自己的答案，再展開。</p>
+          <details class="design-details" id="intent-details"><summary>展開命題意圖與理論核對</summary><div class="design-body" id="intent"></div></details>
         </section>
         <section class="sheet" aria-labelledby="ai-heading">
           <h2 id="ai-heading">五、請 AI 逐列對照</h2>

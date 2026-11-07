@@ -2,7 +2,7 @@
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
 const root=path.resolve(__dirname,'..'),w={};
-for(const f of ['law-scoring/data.js','law-scoring/app.js'])vm.runInNewContext(fs.readFileSync(path.join(root,f),'utf8'),{window:w},{filename:f});
+for(const f of ['law-scoring/data.js','law-scoring/exam-design.js','law-scoring/app.js'])vm.runInNewContext(fs.readFileSync(path.join(root,f),'utf8'),{window:w},{filename:f});
 const D=w.LawScoringData,S=w.LawScoring;
 assert(S&&typeof S.score==='function','app exposes the scoring function without a DOM');
 const KINDS=['essay','case','proc','theory'];
@@ -91,3 +91,27 @@ assert.equal(Object.keys(cleared.cards).length,0,'clearing a question removes al
 const appSrc=fs.readFileSync(path.join(root,'law-scoring/app.js'),'utf8');
 assert(!/disabled=n<50/.test(appSrc),'the scoring points open without a minimum answer length');
 console.log('PASS law-scoring review cards');
+// 命題者視角拆解：觀護人心理學 108–115 年 32 題；題幹要求在作答前顯示，命題結構與意圖在作答後且預設收合。
+const ED=w.LawScoringExamDesign,TOPICS=['測驗與衡鑑','認知、記憶、智力','異常心理、治療、犯罪成因','發展與青少年','社會心理','情緒、壓力、成癮','人格'],QT={A:'個案題',B:'概念題',C:'理論＋應用'};
+assert(ED&&ED.items&&ED.note.includes('非'),'exam design data loads with a non-official note');
+const target=D.questions.filter(q=>q.examType==='觀護人'&&q.subject==='心理學'&&q.year>=108&&q.year<=115).map(q=>q.id).sort();
+assert.equal(target.length,32,'32 probation psychology questions from 108 to 115');
+assert.equal(JSON.stringify(Object.keys(ED.items).sort()),JSON.stringify(target),'exam design covers exactly those questions');
+const blockOk=(b,id)=>{assert(['p','ul','ol'].includes(b.t),id+' block type');const ts=b.t==='p'?[b.text]:b.items;assert(ts.length&&ts.every(t=>typeof t==='string'&&t.trim()&&!/[<>]/.test(t)&&(t.match(/\*\*/g)||[]).length%2===0),id+' block text is plain with balanced bold');};
+for(const [id,d] of Object.entries(ED.items)){
+  assert.equal(QT[d.qtype],d.qtypeLabel,id+' question type label');assert(TOPICS.includes(d.topic),id+' topic');
+  for(const k of ['demands','structure','intent']){assert(Array.isArray(d[k])&&d[k].length,id+' '+k);d[k].forEach(b=>blockOk(b,id+' '+k));}
+  const dem=S.blocksText(d.demands);
+  assert(!/理論核對|命題意圖|參考答案/.test(dem)&&!dem.includes('**'),id+' demands reveal no answer section and print as plain text');
+  assert(/題幹可確認/.test(S.blocksText(d.intent))&&/合理推論/.test(S.blocksText(d.intent)),id+' intent separates confirmed abilities from inference');
+  assert(/變化題/.test(S.blocksText(d.structure)),id+' structure includes a variant-question design');
+  assert.equal(S.design(D.questions.find(q=>q.id===id)),d,id+' design lookup');
+}
+assert.equal(Object.values(ED.items).filter(d=>d.qtype==='A').length,2,'two pure case questions');
+assert.equal(S.design(D.questions.find(q=>q.subject==='刑法')),null,'questions without a breakdown keep the original page');
+const ih=fs.readFileSync(path.join(root,'law-scoring/index.html'),'utf8');
+assert(ih.indexOf('exam-design.js')>0&&ih.indexOf('exam-design.js')<ih.indexOf('src="app.js"'),'exam design loads before app.js');
+assert(/<details class="design-details" id="intent-details">/.test(ih),'intent is collapsed by default');
+assert(ih.indexOf('id="demands-sheet"')<ih.indexOf('id="ans-heading"')&&ih.indexOf('id="structure-sheet"')>ih.indexOf('id="graded"'),'demands before answering; structure and intent after unlocking');
+for(const f of ['sw.js','offline-manifest.json'])assert(fs.readFileSync(path.join(root,f),'utf8').includes('law-scoring/exam-design.js'),f+' caches the exam design file');
+console.log('PASS law-scoring exam design: '+Object.keys(ED.items).length+' questions');

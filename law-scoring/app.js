@@ -15,7 +15,13 @@ const COLS = {
   proc: [['found','有提到'],['law','法條正確'],['purpose','扣回程序保障與制度目的'],['bonus','實務見解（加分）']]
 };
 const colsOf = q => q.kind==='theory'?COLS.theory.map(([k,l])=>[k,k==='practice'?'扣回'+FOCUS(q)+'實務':l]):COLS[q.kind];
-window.LawScoring = {score:(q,s)=>score(q,s), COLS, weights:q=>W(q)};
+// 命題者視角拆解（exam-design.js）：只有部分題目有，沒有的題目維持原畫面。
+const DESIGN = (window.LawScoringExamDesign && window.LawScoringExamDesign.items) || {};
+const designOf = q => DESIGN[q.id] || null;
+// 純文字：去掉 **粗體** 記號，用於 AI 複製文字。
+const plain = t => String(t).replace(/\*\*/g,'');
+function blocksText(blocks){ return (blocks||[]).map(b=>b.t==='p'?plain(b.text):b.items.map((x,i)=>(b.t==='ol'?(i+1)+'. ':'・')+plain(x)).join('\n')).join('\n'); }
+window.LawScoring = {score:(q,s)=>score(q,s), COLS, weights:q=>W(q), design:designOf, blocksText};
 if (typeof document==='undefined' || !document.getElementById('answer')) return;
 let store = {};
 try { store = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { store = {}; }
@@ -23,6 +29,15 @@ function persist(){ try { localStorage.setItem(KEY, JSON.stringify(store)); } ca
 const $ = id => document.getElementById(id);
 function el(tag, attrs, text){ const n=document.createElement(tag); for(const k in (attrs||{})){ if(k==='class') n.className=attrs[k]; else n.setAttribute(k,attrs[k]); } if(text!=null) n.textContent=text; return n; }
 function say(t){ $('status').textContent=t; }
+// 只把 **…** 轉成粗體，其餘一律當文字節點，不使用 innerHTML。
+function inline(parent, text){ String(text).split(/\*\*/).forEach((part,i)=>{ if(!part) return; parent.appendChild(i%2?el('strong',null,part):document.createTextNode(part)); }); return parent; }
+function renderBlocks(target, blocks){
+  target.textContent='';
+  (blocks||[]).forEach(b=>{
+    if(b.t==='p'){ target.appendChild(inline(el('p'),b.text)); return; }
+    const list=el(b.t==='ol'?'ol':'ul'); b.items.forEach(x=>list.appendChild(inline(el('li'),x))); target.appendChild(list);
+  });
+}
 function fromHash(){ let id=''; try{ id=decodeURIComponent(location.hash.slice(1)); }catch(e){} return DATA.questions.find(q=>q.id===id); }
 let current = fromHash() || DATA.questions.find(q=>q.id===store.__current) || DATA.questions[0];
 let dev = !!store.__dev;
@@ -78,6 +93,8 @@ function render(){
   $('q-heading').textContent=q.title;
   const meta=$('q-meta'); meta.textContent='';
   meta.appendChild(el('span',{class:'chip'},{essay:'論述題格式',case:'案例題格式',theory:'學科題格式',proc:'程序論述格式'}[q.kind]));
+  const d=designOf(q);
+  if(d){ meta.appendChild(el('span',{class:'chip design'},'題型 '+d.qtype+'・'+d.qtypeLabel)); meta.appendChild(el('span',{class:'chip design'},'主題：'+d.topic)); }
   meta.appendChild(el('span',{class:'chip warn'},'AI 草擬'));
   // 出處狀態較長，以「・」分段；手機上拿掉「・」，分成上下兩行。
   const checkChip=el('span',{class:q.checkOk?'chip ok':'chip warn'});
@@ -96,6 +113,11 @@ function render(){
   $('graded').style.display=s.unlocked?'flex':'none';
   $('copy-dev').hidden=!dev;
   $('dev-mode').checked=dev;
+  // 題幹要求作答前就顯示；命題結構與命題意圖要展開評分要點後才出現，命題意圖另外預設收合。
+  $('demands-sheet').hidden=!d;
+  if(d) renderBlocks($('demands'),d.demands);
+  $('structure-sheet').hidden=!(d&&s.unlocked); $('intent-sheet').hidden=!(d&&s.unlocked);
+  $('ai-heading').textContent=(d?'七':'五')+'、請 AI 逐列對照';
   if(s.unlocked) renderGraded();
   renderScore();
 }
@@ -159,6 +181,8 @@ function renderGraded(){
   const org=$('organize'); org.textContent='';
   q.organize.forEach((t,i)=>{ const lab=el('label'); const cb=el('input',{type:'checkbox'}); cb.checked=!!s.organize[i]; cb.addEventListener('change',()=>{s.organize[i]=cb.checked; persist(); renderScore();}); lab.appendChild(cb); lab.appendChild(el('span',null,t)); org.appendChild(lab); });
   const pit=$('pitfalls'); pit.textContent=''; q.pitfalls.forEach(t=>pit.appendChild(el('li',null,t)));
+  const d=designOf(q);
+  if(d){ renderBlocks($('structure'),d.structure); renderBlocks($('intent'),d.intent); const det=$('intent-details'); if(det.dataset.q!==q.id){ det.open=false; det.dataset.q=q.id; } }
 }
 
 function renderScore(){
@@ -181,6 +205,12 @@ function renderScore(){
 function aiText(){
   const q=current, s=st(q), cols=colsOf(q);
   const rows=q.rows.map((r,i)=>{ const note=noteOf(q,s,i); return (i+1)+'. 【'+r.group+'】'+r.point+'：'+r.detail+'（'+(q.kind==='theory'?'出處':'法源')+'：'+r.articles.join('、')+'）'+(r.disputed?'［需肯否見解＋個人見解］':'')+(note?'\n   開發者補充：'+note:''); }).join('\n');
+  const d=designOf(q);
+  const design=d?[
+    '另附「題幹要求」與「命題結構」，都是研究者整理，不是官方資料。請在①之前先檢查我的答案是否逐項回應題幹要求（含指定理論、數量與子題），漏答的子題請明確指出。',
+    '【題幹要求（只依題幹）】\n'+blocksText(d.demands),
+    '【命題結構（研究者歸納）】\n'+blocksText(d.structure)
+  ]:[];
   return [
     '請擔任臺灣'+q.exam.replace(/^\d+ 年/,'')+'申論題的學習用批改助教，依下列評分要點逐列對照「我的答案」。非正式閱卷結果，分數僅供參考。',
     '請使用繁體中文，依序提供：①逐列判斷我是否做到「'+cols.map(c=>c[1]).join('／')+'」；②架構檢核；③'+Object.keys(W(q)).map(k=>L(q)[k]+W(q)[k]+'分').join('、')+'的模擬分數'+(q.kind==='essay'?'，實務運作另列加分':q.kind==='theory'?'，研究證據另列加分':q.kind==='proc'?'，實務見解另列加分':'')+'；④最優先的三項訂正建議與一段示範段落。',
@@ -190,6 +220,7 @@ function aiText(){
     '【評分要點】\n'+rows,
     '【架構檢核】\n'+q.organize.map((t,i)=>(i+1)+'. '+t).join('\n'),
     '【常見失分】\n'+q.pitfalls.map((t,i)=>(i+1)+'. '+t).join('\n'),
+    ...design,
     '【我的答案】\n'+($('answer').value.trim()||'（答案寫在下列網址；如果無法開啟網址，請告訴我改貼答案內容。）')+(safeUrl(st(q).answerUrl)?'\n作答網址：'+safeUrl(st(q).answerUrl):''),
     '【我的答案結束】'
   ].join('\n\n');
