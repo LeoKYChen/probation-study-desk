@@ -150,6 +150,7 @@
 | 觀護人／心理學 | `psychology.js` | 32 | A 個案題、B 概念題、C 理論＋應用 |
 | 觀護人／少年事件處理法 | `juvenile-law.js` | 32 | D 案例題、E 論述題、F 爭議題 |
 | 觀護人／刑法 | `criminal-law.js` | 31 | D 案例題 |
+| 觀護人／刑事訴訟法與保安處分執行法 | `criminal-procedure.js` | 32 | D 案例題、E 論述題、F 爭議題 |
 
 每題欄位：
 
