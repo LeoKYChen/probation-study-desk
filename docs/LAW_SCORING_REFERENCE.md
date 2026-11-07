@@ -152,6 +152,7 @@
 | 觀護人／刑法 | `criminal-law.js` | 31 | D 案例題 |
 | 觀護人／刑事訴訟法與保安處分執行法 | `criminal-procedure.js` | 32 | D 案例題、E 論述題、F 爭議題 |
 | 觀護人／犯罪學 | `criminology.js` | 32 | B 概念題、C 理論＋應用 |
+| 觀護人／諮商與輔導 | `counseling.js` | 31 | A 個案題、B 概念題、C 理論＋應用 |
 
 每題欄位：
 
