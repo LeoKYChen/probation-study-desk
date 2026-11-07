@@ -2,7 +2,11 @@
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
 const root=path.resolve(__dirname,'..'),w={};
-for(const f of ['law-scoring/data.js','law-scoring/exam-design.js','law-scoring/app.js'])vm.runInNewContext(fs.readFileSync(path.join(root,f),'utf8'),{window:w},{filename:f});
+for(const f of ['law-scoring/data.js','law-scoring/exam-design/index.js'])vm.runInNewContext(fs.readFileSync(path.join(root,f),'utf8'),{window:w},{filename:f});
+// 測試時一次載入所有分檔；頁面上則依科目按需載入。
+const DESIGN_FILES=Object.values(w.LawScoringExamDesign.files);
+for(const f of DESIGN_FILES)vm.runInNewContext(fs.readFileSync(path.join(root,'law-scoring/exam-design',f),'utf8'),{window:w},{filename:f});
+vm.runInNewContext(fs.readFileSync(path.join(root,'law-scoring/app.js'),'utf8'),{window:w},{filename:'app.js'});
 const D=w.LawScoringData,S=w.LawScoring;
 assert(S&&typeof S.score==='function','app exposes the scoring function without a DOM');
 const KINDS=['essay','case','proc','theory'];
@@ -91,27 +95,48 @@ assert.equal(Object.keys(cleared.cards).length,0,'clearing a question removes al
 const appSrc=fs.readFileSync(path.join(root,'law-scoring/app.js'),'utf8');
 assert(!/disabled=n<50/.test(appSrc),'the scoring points open without a minimum answer length');
 console.log('PASS law-scoring review cards');
-// 命題者視角拆解：觀護人心理學 108–115 年 32 題；題幹要求在作答前顯示，命題結構與意圖在作答後且預設收合。
-const ED=w.LawScoringExamDesign,TOPICS=['測驗與衡鑑','認知、記憶、智力','異常心理、治療、犯罪成因','發展與青少年','社會心理','情緒、壓力、成癮','人格'],QT={A:'個案題',B:'概念題',C:'理論＋應用'};
+// 命題者視角拆解：索引列出的每一科都要完整覆蓋該科全部題目；題幹要求在作答前顯示，命題結構與意圖在作答後且預設收合。
+const ED=w.LawScoringExamDesign,QT={A:'個案題',B:'概念題',C:'理論＋應用',D:'案例題',E:'論述題',F:'爭議題'};
 assert(ED&&ED.items&&ED.note.includes('非'),'exam design data loads with a non-official note');
-const target=D.questions.filter(q=>q.examType==='觀護人'&&q.subject==='心理學'&&q.year>=108&&q.year<=115).map(q=>q.id).sort();
-assert.equal(target.length,32,'32 probation psychology questions from 108 to 115');
-assert.equal(JSON.stringify(Object.keys(ED.items).sort()),JSON.stringify(target),'exam design covers exactly those questions');
+assert(ED.version&&Object.keys(ED.files).length,'exam design index lists subject files');
+let designTotal=0;
+for(const [key,file] of Object.entries(ED.files)){
+  assert(/^[a-z-]+\.js$/.test(file),key+' file name');
+  const [type,subject]=key.split('／');
+  const target=D.questions.filter(q=>q.examType===type&&q.subject===subject).map(q=>q.id).sort();
+  const got=Object.keys(ED.items).filter(id=>{const q=D.questions.find(x=>x.id===id);return q&&q.examType===type&&q.subject===subject;}).sort();
+  assert(target.length>0,key+' has questions');
+  assert.equal(JSON.stringify(got),JSON.stringify(target),key+' exam design covers every question of the subject');
+  assert.equal(S.designFile(D.questions.find(q=>q.id===target[0])),file,key+' file lookup');
+  designTotal+=target.length;
+}
+assert.equal(Object.keys(ED.items).length,designTotal,'no exam design entry outside listed subjects');
 const blockOk=(b,id)=>{assert(['p','ul','ol'].includes(b.t),id+' block type');const ts=b.t==='p'?[b.text]:b.items;assert(ts.length&&ts.every(t=>typeof t==='string'&&t.trim()&&!/[<>]/.test(t)&&(t.match(/\*\*/g)||[]).length%2===0),id+' block text is plain with balanced bold');};
 for(const [id,d] of Object.entries(ED.items)){
-  assert.equal(QT[d.qtype],d.qtypeLabel,id+' question type label');assert(TOPICS.includes(d.topic),id+' topic');
+  assert.equal(QT[d.qtype],d.qtypeLabel,id+' question type label');assert(typeof d.topic==='string'&&d.topic.trim(),id+' topic');
   for(const k of ['demands','structure','intent']){assert(Array.isArray(d[k])&&d[k].length,id+' '+k);d[k].forEach(b=>blockOk(b,id+' '+k));}
   const dem=S.blocksText(d.demands);
-  assert(!/理論核對|命題意圖|參考答案/.test(dem)&&!dem.includes('**'),id+' demands reveal no answer section and print as plain text');
+  assert(!/理論核對|法條核對|命題意圖|參考答案/.test(dem)&&!dem.includes('**'),id+' demands reveal no answer section and print as plain text');
   assert(/題幹可確認/.test(S.blocksText(d.intent))&&/合理推論/.test(S.blocksText(d.intent)),id+' intent separates confirmed abilities from inference');
   assert(/變化題/.test(S.blocksText(d.structure)),id+' structure includes a variant-question design');
   assert.equal(S.design(D.questions.find(q=>q.id===id)),d,id+' design lookup');
 }
-assert.equal(Object.values(ED.items).filter(d=>d.qtype==='A').length,2,'two pure case questions');
-assert.equal(S.design(D.questions.find(q=>q.subject==='刑法')),null,'questions without a breakdown keep the original page');
+const PSY=['測驗與衡鑑','認知、記憶、智力','異常心理、治療、犯罪成因','發展與青少年','社會心理','情緒、壓力、成癮','人格'];
+const psy=Object.entries(ED.items).filter(([id])=>/^1\d\d-心理學-\d$/.test(id));
+assert.equal(psy.length,32,'probation psychology 108–115');
+assert(psy.every(([,d])=>PSY.includes(d.topic)&&'ABC'.includes(d.qtype)),'psychology topics and types');
+assert.equal(psy.filter(([,d])=>d.qtype==='A').length,2,'two pure case questions in psychology');
+const noDesign=D.questions.find(q=>!S.designFile(q));
+assert.equal(S.design(noDesign),null,'questions without a breakdown keep the original page');
 const ih=fs.readFileSync(path.join(root,'law-scoring/index.html'),'utf8');
-assert(ih.indexOf('exam-design.js')>0&&ih.indexOf('exam-design.js')<ih.indexOf('src="app.js"'),'exam design loads before app.js');
+assert(ih.indexOf('exam-design/index.js')>0&&ih.indexOf('exam-design/index.js')<ih.indexOf('src="app.js"'),'exam design index loads before app.js');
+assert(!/exam-design\/[a-z-]+\.js/.test(ih.replace('exam-design/index.js','')),'subject files are loaded on demand, not from the page');
 assert(/<details class="design-details" id="intent-details">/.test(ih),'intent is collapsed by default');
 assert(ih.indexOf('id="demands-sheet"')<ih.indexOf('id="ans-heading"')&&ih.indexOf('id="structure-sheet"')>ih.indexOf('id="graded"'),'demands before answering; structure and intent after unlocking');
-for(const f of ['sw.js','offline-manifest.json'])assert(fs.readFileSync(path.join(root,f),'utf8').includes('law-scoring/exam-design.js'),f+' caches the exam design file');
-console.log('PASS law-scoring exam design: '+Object.keys(ED.items).length+' questions');
+for(const f of ['sw.js','offline-manifest.json']){const t=fs.readFileSync(path.join(root,f),'utf8');for(const x of ['index.js',...DESIGN_FILES])assert(t.includes('law-scoring/exam-design/'+x),f+' caches '+x);assert(!t.includes('law-scoring/exam-design.js'),f+' drops the old single file');}
+assert.equal(fs.readdirSync(path.join(root,'law-scoring/exam-design')).sort().join(),['index.js',...DESIGN_FILES].sort().join(),'every file in exam-design is listed in the index');
+const JL=Object.entries(ED.items).filter(([id])=>/^1\d\d-少年事件處理法-\d$/.test(id));
+assert.equal(JL.length,32,'probation juvenile law 108–115');
+assert(JL.every(([,d])=>'DEF'.includes(d.qtype)&&/法條核對/.test(S.blocksText(d.intent))),'law questions use law types and verified-article sections');
+assert(JL.every(([,d])=>!/請以條文|作答前請核對/.test(S.blocksText(d.intent))),'law breakdowns leave no unverified placeholders');
+console.log('PASS law-scoring exam design: '+designTotal+' questions in '+DESIGN_FILES.length+' subject files');
