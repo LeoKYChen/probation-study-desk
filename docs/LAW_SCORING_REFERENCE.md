@@ -141,17 +141,23 @@
 | 106 年掃描檔 OCR | 司律評分要點 106 年為影像檔 | 是否需要 |
 | 其他提示詞 | 每日 30 分鐘、晚間學習室的提示詞同步改用法律配分 | 是否一併處理版面審查雜湊更新 |
 
-## 六、命題者視角拆解（2026-11-07，心理學 32 題）
+## 六、命題者視角拆解（2026-11-07 起，逐科擴充）
 
-資料：`law-scoring/exam-design.js`（`window.LawScoringExamDesign.items`，鍵為題目 id）。每題欄位：
+資料放在 `law-scoring/exam-design/`：`index.js` 列出有資料的科目（`files`，鍵為「類科／科目」），各科一檔，頁面切到該科才載入。目前：
+
+| 科目 | 檔案 | 題數 | 題型 |
+|---|---|---|---|
+| 觀護人／心理學 | `psychology.js` | 32 | A 個案題、B 概念題、C 理論＋應用 |
+| 觀護人／少年事件處理法 | `juvenile-law.js` | 32 | D 案例題、E 論述題、F 爭議題 |
+
+每題欄位：
 
 | 欄位 | 內容 | 顯示時機 |
 |---|---|---|
-| `qtype`／`qtypeLabel` | A 個案題、B 概念題、C 理論＋應用 | 題目標籤 |
-| `topic` | 七大主題之一 | 題目標籤 |
+| `qtype`／`qtypeLabel` | 題型 | 題目標籤 |
+| `topic` | 科目內主題 | 題目標籤 |
 | `demands` | 題幹要求（只依題幹，不含答案） | 作答前 |
 | `structure` | 命題結構（研究者歸納，含變化題設計） | 展開評分要點後 |
-| `intent` | 命題意圖（可確認能力與推論分開；理論核對等） | 展開評分要點後，預設收合 |
+| `intent` | 命題意圖（可確認能力與推論分開；學科題「理論核對」、法律題「法條核對」） | 展開評分要點後，預設收合 |
 
-`demands`、`structure`、`intent` 為區塊陣列：`{t:'p',text}` 或 `{t:'ul'|'ol',items}`；文字只允許 `**粗體**`，頁面以文字節點呈現，不用 innerHTML。內容由 AI 草擬，理論內容尚未逐項對照教材；擴充其他科目時沿用同一格式，並在 `verification/law-scoring.cjs` 加入覆蓋率。
-
+`demands`、`structure`、`intent` 為區塊陣列：`{t:'p',text}` 或 `{t:'ul'|'ol',items}`；文字只允許 `**粗體**`，頁面以文字節點呈現，不用 innerHTML。新增科目時：在 `index.js` 的 `files` 登記、`sw.js` 與 `offline-manifest.json` 加入新檔、更新 `docs/LAYOUT_REVIEW_CHANGES.json` 的 `sw.js` 雜湊；`verification/law-scoring.cjs` 會檢查每一科是否完整覆蓋。法律題的條文須以全國法規資料庫核對，不留「請自行核對」的占位文字。

@@ -15,13 +15,16 @@ const COLS = {
   proc: [['found','有提到'],['law','法條正確'],['purpose','扣回程序保障與制度目的'],['bonus','實務見解（加分）']]
 };
 const colsOf = q => q.kind==='theory'?COLS.theory.map(([k,l])=>[k,k==='practice'?'扣回'+FOCUS(q)+'實務':l]):COLS[q.kind];
-// 命題者視角拆解（exam-design.js）：只有部分題目有，沒有的題目維持原畫面。
-const DESIGN = (window.LawScoringExamDesign && window.LawScoringExamDesign.items) || {};
+// 命題者視角拆解（exam-design/）：索引檔列出有資料的科目，各科分檔，切到該科才載入；沒有資料的題目維持原畫面。
+const ED = window.LawScoringExamDesign || {items:{},files:{}};
+const DESIGN = ED.items || (ED.items={});
 const designOf = q => DESIGN[q.id] || null;
+const designFile = q => (ED.files||{})[q.examType+'／'+q.subject] || null;
+const designLoading = {};
 // 純文字：去掉 **粗體** 記號，用於 AI 複製文字。
 const plain = t => String(t).replace(/\*\*/g,'');
 function blocksText(blocks){ return (blocks||[]).map(b=>b.t==='p'?plain(b.text):b.items.map((x,i)=>(b.t==='ol'?(i+1)+'. ':'・')+plain(x)).join('\n')).join('\n'); }
-window.LawScoring = {score:(q,s)=>score(q,s), COLS, weights:q=>W(q), design:designOf, blocksText};
+window.LawScoring = {score:(q,s)=>score(q,s), COLS, weights:q=>W(q), design:designOf, designFile, blocksText};
 if (typeof document==='undefined' || !document.getElementById('answer')) return;
 let store = {};
 try { store = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { store = {}; }
@@ -31,6 +34,15 @@ function el(tag, attrs, text){ const n=document.createElement(tag); for(const k 
 function say(t){ $('status').textContent=t; }
 // 只把 **…** 轉成粗體，其餘一律當文字節點，不使用 innerHTML。
 function inline(parent, text){ String(text).split(/\*\*/).forEach((part,i)=>{ if(!part) return; parent.appendChild(i%2?el('strong',null,part):document.createTextNode(part)); }); return parent; }
+// 按需載入目前科目的拆解檔；載入後若仍停在同一科就重畫。失敗時只提示，不影響評分功能。
+function ensureDesign(q){
+  const f=designFile(q); if(!f||designOf(q)||designLoading[f]) return;
+  designLoading[f]=true;
+  const sc=document.createElement('script'); sc.src='exam-design/'+f;
+  sc.onload=()=>{ if(designFile(current)===f) render(); };
+  sc.onerror=()=>{ designLoading[f]=false; say('命題者視角資料載入失敗，請確認網路後重新整理。'); };
+  document.head.appendChild(sc);
+}
 function renderBlocks(target, blocks){
   target.textContent='';
   (blocks||[]).forEach(b=>{
@@ -89,6 +101,7 @@ function render(){
   store.__current=current.id;
   if(decodeURIComponent(location.hash.slice(1))!==current.id){ try{ history.replaceState(null,'','#'+encodeURIComponent(current.id)); }catch(e){} }
   const q=current, s=st(q);
+  ensureDesign(q);
   $('q-exam').textContent=q.exam+'／'+q.subject+'・第 '+q.no+' 題（'+q.points+' 分）';
   $('q-heading').textContent=q.title;
   const meta=$('q-meta'); meta.textContent='';
@@ -182,7 +195,13 @@ function renderGraded(){
   q.organize.forEach((t,i)=>{ const lab=el('label'); const cb=el('input',{type:'checkbox'}); cb.checked=!!s.organize[i]; cb.addEventListener('change',()=>{s.organize[i]=cb.checked; persist(); renderScore();}); lab.appendChild(cb); lab.appendChild(el('span',null,t)); org.appendChild(lab); });
   const pit=$('pitfalls'); pit.textContent=''; q.pitfalls.forEach(t=>pit.appendChild(el('li',null,t)));
   const d=designOf(q);
-  if(d){ renderBlocks($('structure'),d.structure); renderBlocks($('intent'),d.intent); const det=$('intent-details'); if(det.dataset.q!==q.id){ det.open=false; det.dataset.q=q.id; } }
+  if(d){
+    // 學科題寫「理論核對、待對照教材」，法律題寫「法條核對、已以法規資料庫核對」。
+    const theory=q.kind==='theory';
+    $('intent-summary').textContent='展開命題意圖與'+(theory?'理論核對':'法條核對');
+    const n=$('intent-notice'); n.textContent='';
+    inline(n,'以下把「題幹可確認的能力」和「對命題意圖的合理推論」分開寫，並補上'+(theory?'理論核對':'法條核對')+'、常見混淆、證據限度、'+(theory?'個案應用':'命題當年與現行法的差異')+'與練習策略。這是獨立核對後的推論，**不是官方閱卷標準**，'+(theory?'理論內容待對照教材':'條文已以全國法規資料庫現行版核對，引用前仍請留意最新修法')+'。建議先對照自己的答案，再展開。');
+    renderBlocks($('structure'),d.structure); renderBlocks($('intent'),d.intent); const det=$('intent-details'); if(det.dataset.q!==q.id){ det.open=false; det.dataset.q=q.id; } }
 }
 
 function renderScore(){
