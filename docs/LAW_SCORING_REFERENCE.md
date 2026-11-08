@@ -154,6 +154,7 @@
 | 觀護人／犯罪學 | `criminology.js` | 32 | B 概念題、C 理論＋應用 |
 | 觀護人／諮商與輔導 | `counseling.js` | 31 | A 個案題、B 概念題、C 理論＋應用 |
 | 監獄官／刑法與少年事件處理法 | `prison-law-juvenile.js` | 32 | D 案例題、E 論述題、F 爭議題 |
+| 監獄官／犯罪學與再犯預測 | `prison-criminology.js` | 32 | A 個案題、B 概念題、C 理論＋應用 |
 
 每題欄位：
 

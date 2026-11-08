@@ -4,6 +4,12 @@
 
 版本規範、驗收與發布方式參見 [Release 維護指引](docs/RELEASE_PROCESS.md)。子模組內的 `v2.5`、`v2.5.4` 等名稱，不直接代表整個網站的 Release 版本。
 
+## 2026-11-08 — 命題者視角：新增監獄官犯罪學與再犯預測 32 題（分支 `claude/exam-design-prison-criminology`，待合併）
+
+- 新增**監獄官犯罪學與再犯預測 108–115 年 32 題**（`law-scoring/exam-design/prison-criminology.js`）：B 概念題 17、C 理論＋應用 14、A 個案題 1，主題分八類（原因理論、再犯預測、風險因子與工具、犯罪類型、毒品、被害、預防、處遇與中止）。
+- **評分要點更正**（只改文字，列數不變）：113-3 個別處遇計畫改引監獄行刑法第 11 條第 3 項（入監三個月內訂定）；112-4 我國參考補監獄行刑法第 116 條假釋審查參考基準。`docs/theory-sources.json` 同步新增兩條出處。
+- `verification/law-scoring.cjs` 新增本科 32 題覆蓋檢查。
+
 ## 2026-11-08 — 命題者視角：新增監獄官刑法與少年事件處理法 32 題（分支 `claude/exam-design-prison-law`，待合併）
 
 - 新增**監獄官刑法與少年事件處理法 108–115 年 32 題**（`law-scoring/exam-design/prison-law-juvenile.js`）：D 案例題 12、E 論述題 15、F 爭議題 5，主題分七類（刑法總則、財產、國家法益、妨害秩序，少事法調查、處分、執行）。
