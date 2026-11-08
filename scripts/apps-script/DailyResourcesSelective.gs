@@ -219,16 +219,22 @@ function mdVersionedId_(base, question, date, subject) {
 // 從「當日考科」欄位擷取單一值；不能把後續週輪替說明、正文全部當科目。
 function mdExplicitSubject_(exam) {
   const lines=String(exam||"").replace(/\r/g,"").split("\n");
+  // Some generated Docs put the exam subject and citation metadata on one line.
+  // Stop at the next known metadata label rather than passing a whole paragraph
+  // into mdCanonicalSubject_(), which intentionally rejects long text.
+  const metadata=/(?:\s+|(?=[【（(]))(?:原始?試題出處|原題出處|原試題出處|改編來源|考古題出處|官方試卷來源|【選題資訊】|核心考點|選題理由|歷史比對狀態)\s*[：:]?/;
+  const subjectOnly=(value)=>String(value||"").split(metadata,1)[0]
+    .replace(/\s*[|｜;；、]\s*$/,"").trim();
   for(let i=0;i<lines.length;i++){
     const x=lines[i].trim().replace(/^#{1,6}\s*/,"")
       .replace(/^\*\*(.*?)\*\*\s*[：:]?\s*/,"$1：");
     const m=x.match(/^(?:當日考科輪替|固定輪替科目|輪替科目|考試科目|當日考科|科目)(?:\s*[：:]\s*(.*))?$/);
     if(!m)continue;
-    const inline=(m[1]||"").trim();
+    const inline=subjectOnly(m[1]);
     if(inline)return inline;
     const next=(lines.slice(i+1).find(line=>line.trim())||"").trim();
     if(/^\s*(?:#{1,6}\s*|\*\*|[一二三四五六七八九十]+[、.．])/.test(next))return "";
-    return next;
+    return subjectOnly(next);
   }
   return "";
 }
