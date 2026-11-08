@@ -19,7 +19,8 @@ window.LawScoringExamDesign = {
   "薦任升等（矯正）／刑法": "promo-criminal-law.js",
   "薦任升等（矯正）／心理測驗": "promo-psych-testing.js",
   "薦任升等（矯正）／犯罪學": "promo-criminology.js",
-  "薦任升等（矯正）／諮商與輔導": "promo-counseling.js"
+  "薦任升等（矯正）／諮商與輔導": "promo-counseling.js",
+  "心理測驗員、心理輔導員、家事調查官／少年事件處理法": "family-juvenile-law.js"
  },
  "items": {}
 };
