@@ -31,7 +31,7 @@ function manualDailyHealthSourceList_(cfg,kind) {
   var files=[];
   while(iter.hasNext()){
     var f=iter.next();
-    if(kind==='markdown'&&!/\\.md$/i.test(f.getName()))continue;
+    if(kind==='markdown'&&!/\.md$/i.test(f.getName()))continue;
     files.push({key:manualQuestionSourceKey_(kind,f.getId()),id:f.getId(),
       name:f.getName().slice(0,100)});
   }
@@ -96,8 +96,21 @@ function startManualDailyAutoHealth() {
 function continueManualDailyAutoHealth() {
   var lock=LockService.getScriptLock();
   if(!lock.tryLock(1000))return; // an overlapping trigger must not race state
-  try{manualDailyHealthBatch_();}
-  finally{lock.releaseLock();}
+  try{
+    manualDailyHealthBatch_();
+  }catch(e){
+    // Stop the dedicated retry chain on unexpected failures; no endless triggers.
+    var p=PropertiesService.getScriptProperties(),raw=p.getProperty(PSD_HEALTH_STATE_KEY_);
+    if(raw){
+      var state=JSON.parse(raw);
+      state.status='stopped';
+      state.reason=String((e&&e.message)||e).slice(0,180);
+      manualDailyHealthSave_(state);
+    }
+    manualDailyHealthRemoveOwnTrigger_();
+    console.error('自動健檢已安全停止：'+String((e&&e.message)||e).slice(0,180));
+    throw e;
+  }finally{lock.releaseLock();}
 }
 function manualDailyHealthBatch_() {
   var cfg=manualDailyHealthGuard_(),state=manualDailyHealthState_();
