@@ -22930,7 +22930,7 @@ window.LawScoringData = {
     {
      "group": "動態",
      "point": "核心八因子",
-     "detail": "犯罪史、反社會人格、反社會認知、反社會同儕、家庭、教育就業、休閒、物質濫用。",
+     "detail": "反社會認知、反社會同儕、反社會人格型態、家庭婚姻、學校工作、休閒、物質濫用；加上靜態的犯罪史合稱八大因子。",
      "articles": [
       "Andrews & Bonta (2010)"
      ],
@@ -23127,7 +23127,7 @@ window.LawScoringData = {
      "articles": [
       "Campbell (2003)"
      ],
-     "bonus": "工具名稱請以講義核對。",
+     "bonus": "TIPVDA 為臺灣親密關係暴力危險評估表，用於家庭暴力安全防護網篩選高危機個案；DA 為 Campbell 的危險評估量表。",
      "devNote": "",
      "approved": false
     }
@@ -23595,7 +23595,7 @@ window.LawScoringData = {
     {
      "group": "發現",
      "point": "費城同生群",
-     "detail": "約 6% 少年犯下過半犯罪。",
+     "detail": "約占世代 6% 的男孩犯下過半犯行，並涉及多數嚴重暴力犯罪。",
      "articles": [
       "Wolfgang, Figlio, & Sellin (1972)"
      ],
@@ -23620,7 +23620,7 @@ window.LawScoringData = {
       "刑法第 47 條",
       "刑法第 77 條第 2 項"
      ],
-     "bonus": "我國條文請以講義核對。",
+     "bonus": "刑法第 47 條累犯加重，經釋字第 775 號限縮為法院個案裁量；第 77 條第 2 項第 2 款重罪累犯不得假釋。",
      "devNote": "",
      "approved": false
     }
