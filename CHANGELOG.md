@@ -4,6 +4,12 @@
 
 版本規範、驗收與發布方式參見 [Release 維護指引](docs/RELEASE_PROCESS.md)。子模組內的 `v2.5`、`v2.5.4` 等名稱，不直接代表整個網站的 Release 版本。
 
+## 2026-11-08 — 命題者視角：新增犯罪防治人員預防組心理學 32 題（分支 `claude/exam-design-police-psychology`，待合併）
+
+- 新增**犯罪防治人員預防組心理學 108–115 年 32 題**（`law-scoring/exam-design/police-psychology.js`）：B 概念題 15、C 理論＋應用 15、A 個案題 2，主題分七類。
+- **評分要點更正**（只改文字，列數不變）：115-4 因應策略的法律依據由少事法第 42 條改為第 51 條（少年保護官掌理保護管束並予輔導、與法定代理人洽商）。`docs/theory-sources.json` 同步更新。
+- `verification/law-scoring.cjs` 新增本科 32 題覆蓋檢查。
+
 ## 2026-11-08 — 命題者視角：新增犯罪防治人員預防組刑法與刑事訴訟法 31 題（分支 `claude/exam-design-police-law`，待合併）
 
 - 新增**犯罪防治人員預防組刑法與刑事訴訟法 108–115 年 31 題**（`law-scoring/exam-design/police-law.js`）：D 案例題 15、F 爭議題 9、E 論述題 7，主題分八類。112-2 註明 113 年洗錢防制法修正後的條次變動；112-3 註明現行刑事訴訟法第 153 條之 2 的法院許可書制度。
