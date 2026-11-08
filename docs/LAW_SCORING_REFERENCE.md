@@ -163,6 +163,7 @@
 | 薦任升等（矯正）／刑法 | `promo-criminal-law.js` | 16 | D 案例題、F 爭議題 |
 | 薦任升等（矯正）／心理測驗 | `promo-psych-testing.js` | 16 | B 概念題、C 理論＋應用 |
 | 薦任升等（矯正）／犯罪學 | `promo-criminology.js` | 16 | B 概念題、C 理論＋應用 |
+| 薦任升等（矯正）／諮商與輔導 | `promo-counseling.js` | 16 | B 概念題、C 理論＋應用 |
 
 每題欄位：
 

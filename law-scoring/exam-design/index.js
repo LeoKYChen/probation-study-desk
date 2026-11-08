@@ -18,7 +18,8 @@ window.LawScoringExamDesign = {
   "犯罪防治人員預防組／諮商與輔導": "police-counseling.js",
   "薦任升等（矯正）／刑法": "promo-criminal-law.js",
   "薦任升等（矯正）／心理測驗": "promo-psych-testing.js",
-  "薦任升等（矯正）／犯罪學": "promo-criminology.js"
+  "薦任升等（矯正）／犯罪學": "promo-criminology.js",
+  "薦任升等（矯正）／諮商與輔導": "promo-counseling.js"
  },
  "items": {}
 };
