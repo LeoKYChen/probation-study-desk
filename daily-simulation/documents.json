@@ -1,32 +1,37 @@
 {
   "schemaVersion": 2,
-  "count": 259,
+  "count": 264,
   "sync": {
-    "syncedAt": "2026-11-07T16:09:54.163Z",
-    "status": "success",
-    "sourceCount": 258,
-    "errors": []
+    "syncedAt": "2026-11-08T16:09:30.062Z",
+    "status": "partial",
+    "sourceCount": 264,
+    "errors": [
+      {
+        "id": "news-c564e1663b8f1044b7e6f5ba3b6be2e461c82ec5c85678a49891f495908e9985",
+        "message": "含 Google Drive／Docs 連結或疑似憑證，請先移除後再公開。"
+      }
+    ]
   },
   "shards": [
     {
-      "path": "news-shards/9647e0eba62114ec0de065b2ce24b94c854071594cb96e838640bd9281418581.json",
-      "count": 54
+      "path": "news-shards/b760383f6342cc536ea6192fe7ccd1cc126e3cfb324de67bc31eedcdaa49e270.json",
+      "count": 55
     },
     {
-      "path": "news-shards/8c62b57609b335787e9b7cf21f68ab1b4e9a17b6d57fa217bdc9c83dca255cf9.json",
-      "count": 57
-    },
-    {
-      "path": "news-shards/23e1ab8e6f3959732d62d71fa91c9c2e9bd9dfade36a1a0ea786cd676efa60d4.json",
-      "count": 47
-    },
-    {
-      "path": "news-shards/cbfe2dd8b3a94eefd437a110d4ab8b171f9ce3fd5421b54f3f757ccdff518a56.json",
+      "path": "news-shards/ed7cd463fc0cee333ef26ca52b25ffb6c316d519da14155a1ca5dc8b3223449d.json",
       "count": 56
     },
     {
-      "path": "news-shards/b515c1ef1d90576d5fb4887dc7ea3f5f6b8938a52678913c1a4eef8938aa2e8b.json",
-      "count": 45
+      "path": "news-shards/639a60e6d919632fff8bc358f857f221a4131901cda9e5f4235f93d86838e59c.json",
+      "count": 48
+    },
+    {
+      "path": "news-shards/48bf0dc7293d4410dee33e38328e887218e682cfa7de44418ea21341c865e7ba.json",
+      "count": 55
+    },
+    {
+      "path": "news-shards/4a0d4a88fd004513a775220f23d60fbaafcfc7bbe985d710f728c1f5d9cdb90d.json",
+      "count": 50
     }
   ]
 }
