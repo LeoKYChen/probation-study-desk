@@ -165,6 +165,19 @@ function mdField_(exam, labels) {
   return "";
 }
 // 只排除「不是題目」的明確情況；答案／理論／四欄表缺漏不影響收錄。
+/**
+ * Keep subject categorization independent of question completeness.
+ * Missing subject => readable practice question (待分類).
+ * Missing independent question => needs manual repair and must not enter the bank.
+ * News-only source => needs review until a human confirms it is not a question.
+ */
+function mdSourceQuality_(question,subject) {
+  if(!mdIsIndependentQuestion_(question))
+    return {status:'待補正',canPractice:false,reason:'沒有可獨立作答的完整題幹'};
+  if(mdCanonicalSubject_(subject)==='待分類')
+    return {status:'待分類',canPractice:true,reason:'題幹完整，但科目尚未確認'};
+  return {status:'可練習',canPractice:true,reason:''};
+}
 function mdIsIndependentQuestion_(question) {
   const q = mdPlain_(question);
   if (q.replace(/\s/g, "").length < 18) return false;
@@ -422,6 +435,7 @@ function mdParseSingle_(text, name, subjectHint) {
   let subject = mdCanonicalSubject_(candidate);
   if (subject === "待分類")
     warnings.push("來源輪替科目未能唯一辨識，已收錄題幹，待分類。");
+  const quality = mdSourceQuality_(question,subject);
   const source =
     get(/^(?:題目改編來源|改編來源|題目來源|改編自|明確來源|出處|題源)/) ||
     section(/^考古題核對/) ||
@@ -438,6 +452,7 @@ function mdParseSingle_(text, name, subjectHint) {
       theoryTable: rows,
       sourceReference: source.trim(),
       reviewStatus: "待核對",
+      sourceQualityStatus: quality.status,
       warnings: warnings,
       studyNotes: section(/^複習方向/) || mdField_(exam, "複習方向"),
     },
@@ -864,6 +879,7 @@ function mdReadGoogleBank_(previous, diagnostics, filter) {
         if (!issues) warnings.push("缺少獨立爭點，待補充。");
         if (!outline) warnings.push("缺少答題架構，待補充。");
         if (!table.length) warnings.push("缺少有效四欄表，待補充。");
+        const quality=mdSourceQuality_(question,subject);
         const q = {
           id,
           date,
@@ -879,6 +895,7 @@ function mdReadGoogleBank_(previous, diagnostics, filter) {
               ? old.sourceReference || ""
               : "",
           reviewStatus: "待核對",
+          sourceQualityStatus: quality.status,
           warnings,
         };
         pending.push(q);
