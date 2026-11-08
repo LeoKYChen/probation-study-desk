@@ -5,7 +5,8 @@ window.LawScoringExamDesign = {
  "files": {
   "觀護人／心理學": "psychology.js",
   "觀護人／少年事件處理法": "juvenile-law.js",
-  "觀護人／刑法": "criminal-law.js"
+  "觀護人／刑法": "criminal-law.js",
+  "觀護人／刑事訴訟法與保安處分執行法": "criminal-procedure.js"
  },
  "items": {}
 };
