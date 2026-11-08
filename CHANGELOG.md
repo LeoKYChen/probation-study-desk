@@ -4,6 +4,12 @@
 
 版本規範、驗收與發布方式參見 [Release 維護指引](docs/RELEASE_PROCESS.md)。子模組內的 `v2.5`、`v2.5.4` 等名稱，不直接代表整個網站的 Release 版本。
 
+## 2026-11-08 — 命題者視角：新增心理測驗員、心理輔導員、家事調查官心理學 24 題，該類科兩科完成（分支 `claude/exam-design-family-psychology`，待合併）
+
+- 新增**心理測驗員、心理輔導員、家事調查官 心理學 108–115 年 24 題**（`law-scoring/exam-design/family-psychology.js`）：C 理論＋應用 17、B 概念題 7，主題分七類。至此該類科兩科 52 題全部有拆解。
+- **評分要點更正**（只改文字，列數不變）：113-2 刪除「條次請以講義核對」，補毒品危害防制條例第 20 條（觀察勒戒、強制戒治）並說明第 24 條附命戒癮治療緩起訴；`docs/theory-sources.json` 新增第 20 條出處。
+- `verification/law-scoring.cjs` 新增本科 24 題覆蓋檢查，以及該類科兩科都有拆解的檢查。
+
 ## 2026-11-08 — 命題者視角：新增心理測驗員、心理輔導員、家事調查官少年事件處理法 28 題（分支 `claude/exam-design-family-juvenile`，待合併）
 
 - 新增**心理測驗員、心理輔導員、家事調查官 少年事件處理法 108–115 年 28 題**（`law-scoring/exam-design/family-juvenile-law.js`）：E 論述題 16、D 案例題 8、F 爭議題 4，主題分八類，全部附法條核對。
