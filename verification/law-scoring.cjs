@@ -155,6 +155,7 @@ assert.equal(Object.keys(ED.files).filter(k=>k.startsWith('犯罪防治人員預
 assert.equal(Object.keys(ED.items).filter(id=>/^薦任升等（矯正）-1\d\d-刑法-\d$/.test(id)).length,16,'promotion (corrections) criminal law');
 assert.equal(Object.keys(ED.items).filter(id=>/^薦任升等（矯正）-1\d\d-心理測驗-\d$/.test(id)).length,16,'promotion (corrections) psychological testing');
 assert.equal(Object.keys(ED.items).filter(id=>/^薦任升等（矯正）-1\d\d-犯罪學-\d$/.test(id)).length,16,'promotion (corrections) criminology');
+assert.equal(Object.keys(ED.items).filter(id=>/^薦任升等（矯正）-1\d\d-諮商與輔導-\d$/.test(id)).length,16,'promotion (corrections) counseling');
 const LAWD=Object.entries(ED.items).filter(([id])=>LAW.includes(D.questions.find(q=>q.id===id).subject));
 assert(LAWD.length>=95,'law subjects have breakdowns');
 assert(LAWD.every(([,d])=>'DEF'.includes(d.qtype)&&/法條核對/.test(S.blocksText(d.intent))),'law questions use law types and verified-article sections');
