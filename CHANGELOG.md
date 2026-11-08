@@ -4,6 +4,12 @@
 
 版本規範、驗收與發布方式參見 [Release 維護指引](docs/RELEASE_PROCESS.md)。子模組內的 `v2.5`、`v2.5.4` 等名稱，不直接代表整個網站的 Release 版本。
 
+## 2026-11-08 — 命題者視角：新增薦任升等（矯正）犯罪學 16 題（分支 `claude/exam-design-promo-criminology`，待合併）
+
+- 新增**薦任升等（矯正）犯罪學 108、110、112、114 年 16 題**（`law-scoring/exam-design/promo-criminology.js`）：C 理論＋應用 9、B 概念題 7，主題分五類。
+- **評分要點更正**（只改文字，列數不變）：108-1 動態因子列移出靜態的犯罪史並註明八大因子組成；108-4 刪除「工具名稱請以講義核對」，改說明 TIPVDA 與 DA；112-4 慢性犯罪者比例改為「約占世代 6% 的男孩」，刪除「我國條文請以講義核對」，改寫刑法第 47 條（釋字第 775 號限縮）與第 77 條第 2 項第 2 款。`docs/theory-sources.json` 補刑法第 47 條核對說明。
+- `verification/law-scoring.cjs` 新增本科 16 題覆蓋檢查。
+
 ## 2026-11-08 — 命題者視角：新增薦任升等（矯正）心理測驗 16 題，修正 6 題配分（分支 `claude/exam-design-promo-psytest`，待合併）
 
 - 新增**薦任升等（矯正）心理測驗 108、110、112、114 年 16 題**（`law-scoring/exam-design/promo-psych-testing.js`）：C 理論＋應用 9、B 概念題 7，主題分五類；計算題（難度與鑑別度、Z／T／PR、迴歸預測、測量標準誤）已重新驗算。
