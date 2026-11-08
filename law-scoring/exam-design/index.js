@@ -11,7 +11,8 @@ window.LawScoringExamDesign = {
   "觀護人／諮商與輔導": "counseling.js",
   "監獄官／刑法與少年事件處理法": "prison-law-juvenile.js",
   "監獄官／犯罪學與再犯預測": "prison-criminology.js",
-  "監獄官／諮商與矯正輔導": "prison-counseling.js"
+  "監獄官／諮商與矯正輔導": "prison-counseling.js",
+  "犯罪防治人員預防組／刑法與刑事訴訟法": "police-law.js"
  },
  "items": {}
 };

@@ -10,7 +10,7 @@ const NETWORK_FIRST=new Set(['lectures/','lectures/index.html','lectures/core.js
   // Weekly updates must bypass an older downloaded PWA snapshot while online.
   'juvenile-news/','juvenile-news/index.html','juvenile-news/issues.json',
   // Scoring points grow in batches; online visits must not keep an older snapshot.
-  'law-scoring/','law-scoring/index.html','law-scoring/app.js','law-scoring/data.js','law-scoring/exam-design/prison-counseling.js','law-scoring/exam-design/prison-criminology.js','law-scoring/exam-design/prison-law-juvenile.js','law-scoring/exam-design/counseling.js','law-scoring/exam-design/criminology.js','law-scoring/exam-design/criminal-procedure.js','law-scoring/exam-design/criminal-law.js','law-scoring/exam-design/juvenile-law.js','law-scoring/exam-design/psychology.js','law-scoring/exam-design/index.js','law-scoring/style.css','law-scoring/review.html','law-scoring/review.js',
+  'law-scoring/','law-scoring/index.html','law-scoring/app.js','law-scoring/data.js','law-scoring/exam-design/police-law.js','law-scoring/exam-design/prison-counseling.js','law-scoring/exam-design/prison-criminology.js','law-scoring/exam-design/prison-law-juvenile.js','law-scoring/exam-design/counseling.js','law-scoring/exam-design/criminology.js','law-scoring/exam-design/criminal-procedure.js','law-scoring/exam-design/criminal-law.js','law-scoring/exam-design/juvenile-law.js','law-scoring/exam-design/psychology.js','law-scoring/exam-design/index.js','law-scoring/style.css','law-scoring/review.html','law-scoring/review.js',
   'file-data/weekly.generated.js'].map(absolute));
 async function networkCopy(request){
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),7000);
