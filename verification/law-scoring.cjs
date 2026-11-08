@@ -54,6 +54,7 @@ const linked=[...bank.QUESTION_BANK,...bank.RELATED_QUESTION_BANK,...bank.POLICE
 assert.equal(linked.length,D.questions.length,'every scoring entry is linked from the practice page');
 for(const [q,h] of linked)assert(ids.has(decodeURIComponent(h.split('#')[1]))&&h.startsWith('../law-scoring/#'),'link target exists '+q.id);
 assert.equal(D.questions.length,553,'every essay question on the site has scoring points');
+assert(D.questions.every(q=>q.points>=10&&q.points<=50),'question points stay within the 10–50 range');
 assert.equal(r.AISimpleReview254.scoringHref({id:'x',subject:'刑法',year:114,examType:'監所管理員'}),null,'subjects outside an exam type are not linked');
 assert.equal(r.AISimpleReview254.scoringHref({id:'x',subject:'心理學',year:114,examType:'監獄官'}),null,'subjects outside an exam type are not linked');
 assert.equal(r.AISimpleReview254.scoringHref({id:'x',subject:'刑法',year:114,examType:'律師'}),null,'unknown exam types are not linked');
@@ -152,6 +153,7 @@ assert.equal(Object.keys(ED.items).filter(id=>/^police-1\d\d-criminology_prevent
 assert.equal(Object.keys(ED.items).filter(id=>/^police-1\d\d-counseling-\d$/.test(id)).length,32,'police prevention counseling 108–115');
 assert.equal(Object.keys(ED.files).filter(k=>k.startsWith('犯罪防治人員預防組／')).length,4,'all four police prevention subjects have breakdowns');
 assert.equal(Object.keys(ED.items).filter(id=>/^薦任升等（矯正）-1\d\d-刑法-\d$/.test(id)).length,16,'promotion (corrections) criminal law');
+assert.equal(Object.keys(ED.items).filter(id=>/^薦任升等（矯正）-1\d\d-心理測驗-\d$/.test(id)).length,16,'promotion (corrections) psychological testing');
 const LAWD=Object.entries(ED.items).filter(([id])=>LAW.includes(D.questions.find(q=>q.id===id).subject));
 assert(LAWD.length>=95,'law subjects have breakdowns');
 assert(LAWD.every(([,d])=>'DEF'.includes(d.qtype)&&/法條核對/.test(S.blocksText(d.intent))),'law questions use law types and verified-article sections');
