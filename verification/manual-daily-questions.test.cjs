@@ -241,3 +241,21 @@ test('manual preview parses selected sources but never commits or advances the s
  assert.equal(writes,0);assert.equal(opened.length,1);
  assert.equal(properties.get('PSD_MANUAL_QUESTIONS_CURSOR'),undefined);
 });
+
+test('subject extraction stops at inline source metadata without changing other formats',()=>{
+ const ctx={};
+ vm.createContext(ctx);vm.runInContext(original,ctx);
+ const cases=[
+  ['## 觀護人考試專區\n輪替科目：刑事訴訟法與保安處分執行法 原試題出處：改編自112年試題','刑事訴訟法與保安處分執行法'],
+  ['輪替科目：少年事件處理法','少年事件處理法'],
+  ['### 輪替科目：諮商與輔導','諮商與輔導'],
+  ['輪替科目：\n心理學','心理學'],
+  ['輪替科目：刑法 【選題資訊】核心考點：緩刑撤銷','刑法'],
+  ['輪替科目：\n### 題目設計','待分類'],
+  ['觀護人考試專區\n### 題目設計','待分類']
+ ];
+ for(const [text,expected] of cases){
+  const parsed=ctx.mdCanonicalSubject_(ctx.mdExplicitSubject_(text));
+  assert.equal(parsed,expected,text);
+ }
+});
