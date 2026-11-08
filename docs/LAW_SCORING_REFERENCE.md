@@ -150,6 +150,23 @@
 | 觀護人／心理學 | `psychology.js` | 32 | A 個案題、B 概念題、C 理論＋應用 |
 | 觀護人／少年事件處理法 | `juvenile-law.js` | 32 | D 案例題、E 論述題、F 爭議題 |
 | 觀護人／刑法 | `criminal-law.js` | 31 | D 案例題 |
+| 觀護人／刑事訴訟法與保安處分執行法 | `criminal-procedure.js` | 32 | D 案例題、E 論述題、F 爭議題 |
+| 觀護人／犯罪學 | `criminology.js` | 32 | B 概念題、C 理論＋應用 |
+| 觀護人／諮商與輔導 | `counseling.js` | 31 | A 個案題、B 概念題、C 理論＋應用 |
+| 監獄官／刑法與少年事件處理法 | `prison-law-juvenile.js` | 32 | D 案例題、E 論述題、F 爭議題 |
+| 監獄官／犯罪學與再犯預測 | `prison-criminology.js` | 32 | A 個案題、B 概念題、C 理論＋應用 |
+| 監獄官／諮商與矯正輔導 | `prison-counseling.js` | 32 | A 個案題、B 概念題、C 理論＋應用 |
+| 犯罪防治人員預防組／刑法與刑事訴訟法 | `police-law.js` | 31 | D 案例題、E 論述題、F 爭議題 |
+| 犯罪防治人員預防組／心理學 | `police-psychology.js` | 32 | A 個案題、B 概念題、C 理論＋應用 |
+| 犯罪防治人員預防組／犯罪學與犯罪預防 | `police-criminology.js` | 32 | B 概念題、C 理論＋應用 |
+| 犯罪防治人員預防組／諮商與輔導 | `police-counseling.js` | 32 | A 個案題、B 概念題、C 理論＋應用 |
+| 薦任升等（矯正）／刑法 | `promo-criminal-law.js` | 16 | D 案例題、F 爭議題 |
+| 薦任升等（矯正）／心理測驗 | `promo-psych-testing.js` | 16 | B 概念題、C 理論＋應用 |
+| 薦任升等（矯正）／犯罪學 | `promo-criminology.js` | 16 | B 概念題、C 理論＋應用 |
+| 薦任升等（矯正）／諮商與輔導 | `promo-counseling.js` | 16 | B 概念題、C 理論＋應用 |
+| 心理測驗員、心理輔導員、家事調查官／少年事件處理法 | `family-juvenile-law.js` | 28 | D 案例題、E 論述題、F 爭議題 |
+| 心理測驗員、心理輔導員、家事調查官／心理學 | `family-psychology.js` | 24 | B 概念題、C 理論＋應用 |
+| 監所管理員／犯罪學概要 | `guard-criminology.js` | 24 | B 概念題、C 理論＋應用 |
 
 每題欄位：
 

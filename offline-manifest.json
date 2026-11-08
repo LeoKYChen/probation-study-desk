@@ -278,6 +278,57 @@
       "url": "law-scoring/data.js"
     },
     {
+      "url": "law-scoring/exam-design/guard-criminology.js"
+    },
+    {
+      "url": "law-scoring/exam-design/family-psychology.js"
+    },
+    {
+      "url": "law-scoring/exam-design/family-juvenile-law.js"
+    },
+    {
+      "url": "law-scoring/exam-design/promo-counseling.js"
+    },
+    {
+      "url": "law-scoring/exam-design/promo-criminology.js"
+    },
+    {
+      "url": "law-scoring/exam-design/promo-psych-testing.js"
+    },
+    {
+      "url": "law-scoring/exam-design/promo-criminal-law.js"
+    },
+    {
+      "url": "law-scoring/exam-design/police-counseling.js"
+    },
+    {
+      "url": "law-scoring/exam-design/police-criminology.js"
+    },
+    {
+      "url": "law-scoring/exam-design/police-psychology.js"
+    },
+    {
+      "url": "law-scoring/exam-design/police-law.js"
+    },
+    {
+      "url": "law-scoring/exam-design/prison-counseling.js"
+    },
+    {
+      "url": "law-scoring/exam-design/prison-criminology.js"
+    },
+    {
+      "url": "law-scoring/exam-design/prison-law-juvenile.js"
+    },
+    {
+      "url": "law-scoring/exam-design/counseling.js"
+    },
+    {
+      "url": "law-scoring/exam-design/criminology.js"
+    },
+    {
+      "url": "law-scoring/exam-design/criminal-procedure.js"
+    },
+    {
       "url": "law-scoring/exam-design/criminal-law.js"
     },
     {
