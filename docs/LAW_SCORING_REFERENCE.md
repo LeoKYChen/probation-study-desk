@@ -166,6 +166,7 @@
 | 薦任升等（矯正）／諮商與輔導 | `promo-counseling.js` | 16 | B 概念題、C 理論＋應用 |
 | 心理測驗員、心理輔導員、家事調查官／少年事件處理法 | `family-juvenile-law.js` | 28 | D 案例題、E 論述題、F 爭議題 |
 | 心理測驗員、心理輔導員、家事調查官／心理學 | `family-psychology.js` | 24 | B 概念題、C 理論＋應用 |
+| 監所管理員／犯罪學概要 | `guard-criminology.js` | 24 | B 概念題、C 理論＋應用 |
 
 每題欄位：
 

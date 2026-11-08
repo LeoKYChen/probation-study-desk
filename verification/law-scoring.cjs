@@ -127,7 +127,8 @@ const psy=Object.entries(ED.items).filter(([id])=>/^1\d\d-心理學-\d$/.test(id
 assert.equal(psy.length,32,'probation psychology 108–115');
 assert(psy.every(([,d])=>PSY.includes(d.topic)&&'ABC'.includes(d.qtype)),'psychology topics and types');
 assert.equal(psy.filter(([,d])=>d.qtype==='A').length,2,'two pure case questions in psychology');
-const noDesign=D.questions.find(q=>!S.designFile(q));
+const noDesign={id:'none-0',examType:'未列類科',subject:'未列科目'};
+assert(!S.designFile(noDesign),'unlisted subjects have no breakdown file');
 assert.equal(S.design(noDesign),null,'questions without a breakdown keep the original page');
 const ih=fs.readFileSync(path.join(root,'law-scoring/index.html'),'utf8');
 assert(ih.indexOf('exam-design/index.js')>0&&ih.indexOf('exam-design/index.js')<ih.indexOf('src="app.js"'),'exam design index loads before app.js');
@@ -160,6 +161,8 @@ const famQ=(subject)=>Object.keys(ED.items).filter(id=>{const q=D.questions.find
 assert.equal(famQ('少年事件處理法'),28,'psych tester / counselor / family investigator juvenile law 108–115');
 assert.equal(famQ('心理學'),24,'psych tester / counselor / family investigator psychology 108–115');
 assert.equal(Object.keys(ED.files).filter(k=>k.startsWith('心理測驗員、心理輔導員、家事調查官／')).length,2,'both psych tester / family investigator subjects have breakdowns');
+assert.equal(Object.keys(ED.items).filter(id=>/^監所管理員-1\d\d-犯罪學概要-\d$/.test(id)).length,24,'prison guard criminology 108–115');
+assert.equal(designTotal,D.questions.length,'every essay question has an examiner-perspective breakdown');
 const LAWD=Object.entries(ED.items).filter(([id])=>LAW.includes(D.questions.find(q=>q.id===id).subject));
 assert(LAWD.length>=95,'law subjects have breakdowns');
 assert(LAWD.every(([,d])=>'DEF'.includes(d.qtype)&&/法條核對/.test(S.blocksText(d.intent))),'law questions use law types and verified-article sections');

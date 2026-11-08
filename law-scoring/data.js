@@ -36662,9 +36662,11 @@ window.LawScoringData = {
      "point": "三級",
      "detail": "治療輔導、登記報到、社區監督。",
      "articles": [
-      "性侵害犯罪防治法"
+      "性侵害犯罪防治法第 31 條",
+      "性侵害犯罪防治法第 41 條",
+      "刑法第 91 條之 1"
      ],
-     "bonus": "條次請以講義核對。",
+     "bonus": "第 31 條：刑後、假釋、緩刑等加害人經評估應接受身心治療、輔導或教育，期間三年以下；第 41 條：特定性侵害犯罪加害人登記、報到七年或五年（犯罪時未滿 18 歲者不適用）；刑法第 91 條之 1：有再犯危險者施以強制治療。",
      "devNote": "",
      "approved": false
     }
@@ -37072,7 +37074,7 @@ window.LawScoringData = {
      "articles": [
       "Siegel (2018)"
      ],
-     "bonus": "三大目標的分法請以講義核對。",
+     "bonus": "教材分法不一，常見為描述犯罪現象、解釋犯罪原因、控制與預防犯罪；也有加入「預測」成為四項，作答宜先交代採用的架構。",
      "devNote": "",
      "approved": false
     },
@@ -37442,7 +37444,7 @@ window.LawScoringData = {
      "articles": [
       "Agnew (1992)"
      ],
-     "bonus": "第四種來源請以講義核對。",
+     "bonus": "Agnew（1992）原為三大類；教材常把「未能達成正向目標」再分為抱負與期望的落差、期望與實際成就（或公平結果）的落差，合計成四種來源，作答可寫三大類並說明細分。",
      "devNote": "",
      "approved": false
     },
@@ -37687,7 +37689,7 @@ window.LawScoringData = {
      "articles": [
       "Jessor & Jessor (1977)"
      ],
-     "bonus": "題目所列學者請以講義核對。",
+     "bonus": "問題行為症候群由 Jessor 與 Jessor（1977）提出；Gottfredson 與 Hirschi（1990）以低自我控制解釋犯罪與吸菸、飲酒、危險駕駛等「類似行為」共同出現，題目把兩者連結，作答可說明出處。",
      "devNote": "",
      "approved": false
     },
