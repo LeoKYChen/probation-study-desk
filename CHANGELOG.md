@@ -4,6 +4,12 @@
 
 版本規範、驗收與發布方式參見 [Release 維護指引](docs/RELEASE_PROCESS.md)。子模組內的 `v2.5`、`v2.5.4` 等名稱，不直接代表整個網站的 Release 版本。
 
+## 2026-11-08 — 命題者視角：新增監獄官諮商與矯正輔導 32 題，監獄官三科完成（分支 `claude/exam-design-prison-counseling`，待合併）
+
+- 新增**監獄官諮商與矯正輔導 108–115 年 32 題**（`law-scoring/exam-design/prison-counseling.js`）：C 理論＋應用 26、B 概念題 5、A 個案題 1，主題分八類。至此監獄官三科 96 題全部有拆解。
+- **評分要點更正**（只改文字，列數不變）：115-4 系統合作的依據由「監獄行刑法」改為第 11 條第 1 項（入監身心狀況調查）與第 23 條（有自殘之虞得收容保護室、不得作為懲罰、應安排醫事人員評估）。`docs/theory-sources.json` 同步新增兩條出處。
+- `verification/law-scoring.cjs` 新增本科 32 題覆蓋檢查，以及監獄官三科都有拆解的檢查。
+
 ## 2026-11-08 — 命題者視角：新增監獄官犯罪學與再犯預測 32 題（分支 `claude/exam-design-prison-criminology`，待合併）
 
 - 新增**監獄官犯罪學與再犯預測 108–115 年 32 題**（`law-scoring/exam-design/prison-criminology.js`）：B 概念題 17、C 理論＋應用 14、A 個案題 1，主題分八類（原因理論、再犯預測、風險因子與工具、犯罪類型、毒品、被害、預防、處遇與中止）。
