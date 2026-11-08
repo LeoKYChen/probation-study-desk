@@ -7,7 +7,6 @@
 ## 2026-11-08 — 命題者視角：新增薦任升等（矯正）刑法 16 題（分支 `claude/exam-design-promo-law`，待合併）
 
 - 新增**薦任升等（矯正）刑法 108、110、112、114 年 16 題**（`law-scoring/exam-design/promo-criminal-law.js`）：D 案例題 13、F 爭議題 3，主題分四類。評分要點經逐條核對，無需更正。
-- `build/dump.js` 的篩選改為同時比對 `examType`。
 - `verification/law-scoring.cjs` 新增本科 16 題覆蓋檢查。
 
 ## 2026-11-08 — 命題者視角：新增犯罪防治人員預防組諮商與輔導 32 題，犯防預防組四科完成（分支 `claude/exam-design-police-counseling`，待合併）
