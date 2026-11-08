@@ -278,6 +278,33 @@
       "url": "law-scoring/data.js"
     },
     {
+      "url": "law-scoring/summaries.html"
+    },
+    {
+      "url": "law-scoring/summaries.js"
+    },
+    {
+      "url": "law-scoring/summaries/index.js"
+    },
+    {
+      "url": "law-scoring/summaries/criminology.js"
+    },
+    {
+      "url": "law-scoring/summaries/juvenile.js"
+    },
+    {
+      "url": "law-scoring/summaries/criminal-law.js"
+    },
+    {
+      "url": "law-scoring/summaries/criminal-procedure.js"
+    },
+    {
+      "url": "law-scoring/summaries/psychology.js"
+    },
+    {
+      "url": "law-scoring/summaries/counseling.js"
+    },
+    {
       "url": "law-scoring/exam-design/guard-criminology.js"
     },
     {
