@@ -8,7 +8,8 @@ window.LawScoringExamDesign = {
   "觀護人／刑法": "criminal-law.js",
   "觀護人／刑事訴訟法與保安處分執行法": "criminal-procedure.js",
   "觀護人／犯罪學": "criminology.js",
-  "觀護人／諮商與輔導": "counseling.js"
+  "觀護人／諮商與輔導": "counseling.js",
+  "監獄官／刑法與少年事件處理法": "prison-law-juvenile.js"
  },
  "items": {}
 };
