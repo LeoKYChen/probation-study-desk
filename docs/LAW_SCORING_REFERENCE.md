@@ -160,6 +160,7 @@
 | 犯罪防治人員預防組／心理學 | `police-psychology.js` | 32 | A 個案題、B 概念題、C 理論＋應用 |
 | 犯罪防治人員預防組／犯罪學與犯罪預防 | `police-criminology.js` | 32 | B 概念題、C 理論＋應用 |
 | 犯罪防治人員預防組／諮商與輔導 | `police-counseling.js` | 32 | A 個案題、B 概念題、C 理論＋應用 |
+| 薦任升等（矯正）／刑法 | `promo-criminal-law.js` | 16 | D 案例題、F 爭議題 |
 
 每題欄位：
 
