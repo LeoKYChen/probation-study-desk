@@ -4,6 +4,12 @@
 
 版本規範、驗收與發布方式參見 [Release 維護指引](docs/RELEASE_PROCESS.md)。子模組內的 `v2.5`、`v2.5.4` 等名稱，不直接代表整個網站的 Release 版本。
 
+## 2026-11-08 — 命題者視角：新增犯罪防治人員預防組諮商與輔導 32 題，犯防預防組四科完成（分支 `claude/exam-design-police-counseling`，待合併）
+
+- 新增**犯罪防治人員預防組諮商與輔導 108–115 年 32 題**（`law-scoring/exam-design/police-counseling.js`），主題分八類。至此犯防預防組四科 127 題全部有拆解。
+- **評分要點更正**（只改文字，列數不變）：109-2 通報義務補性侵害犯罪防治法第 11 條第 1 項，並說明是否涉刑法第 227 條取決於小玲是否未滿 16 歲。`docs/theory-sources.json` 同步新增出處。
+- `verification/law-scoring.cjs` 新增本科 32 題覆蓋檢查，以及犯防預防組四科都有拆解的檢查。114-4 痛苦耐受的例子改為 STOP、ACCEPTS 與自我安撫。
+
 ## 2026-11-08 — 命題者視角：新增犯罪防治人員預防組犯罪學與犯罪預防 32 題（分支 `claude/exam-design-police-criminology`，待合併）
 
 - 新增**犯罪防治人員預防組犯罪學與犯罪預防 108–115 年 32 題**（`law-scoring/exam-design/police-criminology.js`）：C 理論＋應用 17、B 概念題 15，主題分八類。法規題（114-3 犯罪被害人權益保障法、114-4 兒少性剝削防制條例、113-4 大麻分級、111-4 第 185 條之 3）採法條核對格式。
