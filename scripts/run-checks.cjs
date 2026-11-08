@@ -32,6 +32,7 @@ const NODE_TEST=[
   'verification/manual-daily-questions.test.cjs',
   'verification/manual-daily-source-inventory.test.cjs',
   'verification/manual-daily-readonly-pages.test.cjs',
+  'verification/manual-daily-batch-health.test.cjs',
   'verification/manual-cutover-preflight.test.cjs',
   'verification/manual-news-sync.test.cjs',
   'verification/manual-monthly-news.test.cjs',
