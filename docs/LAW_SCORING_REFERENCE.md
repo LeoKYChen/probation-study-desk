@@ -158,6 +158,7 @@
 | 監獄官／諮商與矯正輔導 | `prison-counseling.js` | 32 | A 個案題、B 概念題、C 理論＋應用 |
 | 犯罪防治人員預防組／刑法與刑事訴訟法 | `police-law.js` | 31 | D 案例題、E 論述題、F 爭議題 |
 | 犯罪防治人員預防組／心理學 | `police-psychology.js` | 32 | A 個案題、B 概念題、C 理論＋應用 |
+| 犯罪防治人員預防組／犯罪學與犯罪預防 | `police-criminology.js` | 32 | B 概念題、C 理論＋應用 |
 
 每題欄位：
 
