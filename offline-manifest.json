@@ -278,6 +278,9 @@
       "url": "law-scoring/data.js"
     },
     {
+      "url": "law-scoring/exam-design/prison-law-juvenile.js"
+    },
+    {
       "url": "law-scoring/exam-design/counseling.js"
     },
     {
