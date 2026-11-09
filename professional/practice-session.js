@@ -79,7 +79,13 @@
     else $('notice').hidden=true;
     $('todayHeading').scrollIntoView({block:'start',behavior:'smooth'});
   }
-  const repeatAttempts=record=>Array.isArray(record?.repeatAttempts)?record.repeatAttempts:[];
+  function repeatAttempts(record){
+    if(!Array.isArray(record?.repeatAttempts))return [];
+    return record.repeatAttempts.filter(attempt=>attempt?.date===record.date&&
+      ['10','30'].includes(attempt.mode)&&Array.isArray(attempt.notes)&&
+      Number.isInteger(attempt.phase)&&attempt.phase>=0&&attempt.phase<durations(record.date,attempt.mode).length&&
+      Number.isFinite(attempt.elapsed)&&attempt.elapsed>=0&&Number.isFinite(attempt.remaining)&&attempt.remaining>=0);
+  }
   function openHistoryPractice(iso){
     if(typeof iso!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(iso)||iso>isoTaipei())return;
     const original=store.sessions[iso];
@@ -91,7 +97,7 @@
     if(latest&&!latest.finished){showPractice(latest,true);return;}
     const attempt=newSession(iso,String(original.mode)==='10'?'10':'30',original);
     const previous=original.repeatAttempts;
-    original.repeatAttempts=[...attempts,attempt];
+    original.repeatAttempts=[...(Array.isArray(previous)?previous:[]),attempt];
     if(!persist()){
       if(previous===undefined)delete original.repeatAttempts;
       else original.repeatAttempts=previous;
