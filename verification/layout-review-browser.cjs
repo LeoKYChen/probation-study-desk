@@ -48,6 +48,9 @@ const server=http.createServer((req,res)=>{
     session.essayAssessments[id]={version:1,rubric:type,subject,scores,issues:[],nextStep:''};
    }
    stored.sessions['2026-10-16']={...structuredClone(session),date:'2026-10-16',questionId:bank.find(q=>q.subject==='心理學').id,rating:'review',essayAssessments:{},notes:[]};
+   const historical={...structuredClone(stored.sessions['2026-10-16']),date:'2026-10-09',rating:null};
+   stored.sessions[historical.date]=historical;
+   historical.essayDrafts[historical.questionId]={template:'theory',outline:['','','',''],fullAnswer:'跨週原作答'};
    stored.sessions['2026-09-30']={...structuredClone(session),date:'2026-09-30',finished:true,notes:['九月已存速記'],essayDrafts:{past:{template:'law',outline:['九月已存爭點','','',''],fullAnswer:'九月完整答案'}},essayAssessments:{}};
    localStorage.setItem(key,JSON.stringify(stored));localStorage.setItem('other-module-sentinel','不更動');
    return localStorage.getItem(key);
@@ -114,6 +117,40 @@ const server=http.createServer((req,res)=>{
   assert((await page.locator('#progressMonthRecord').innerText()).includes('九月完整答案'));
   await page.locator('#nextProgressMonth').click();await page.locator('#showWeekProgress').click();
   assert.equal(await page.locator('#historyContent button').count(),7);assert.equal(await raw(),seeded);
+
+  // Use a historical date outside the current week and a completed original from the prior month.
+  await page.locator('#showMonthProgress').click();
+  await page.locator('#progressMonthGrid [data-date="2026-10-09"]').click();
+  await page.getByRole('button',{name:'接續這天的練習',exact:true}).click();
+  assert.match(await page.locator('#todayDate').innerText(),/^2026-10-09/);
+  assert.equal(await page.locator('#essayFullAnswer').inputValue(),'跨週原作答');
+  assert.equal(await raw(),seeded,'opening a past draft is read-only');
+  await page.locator('#returnToday').click();
+  assert.match(await page.locator('#todayDate').innerText(),/^2026-10-17/);
+
+  await page.locator('#previousProgressMonth').click();
+  await page.locator('#progressMonthGrid [data-date="2026-09-30"]').click();
+  await page.getByRole('button',{name:'重新練習這題',exact:true}).click();
+  assert.match(await page.locator('#todayDate').innerText(),/^2026-09-30.*重練/);
+  assert.equal(await page.locator('#essayFullAnswer').inputValue(),'');
+  assert.equal(await page.locator('#answer').inputValue(),'');
+  await page.locator('#answer').fill('獨立重練速記');
+  await page.locator('#returnToday').click();
+  await page.reload();
+  await page.locator('#showMonthProgress').click();
+  await page.locator('#previousProgressMonth').click();
+  await page.locator('#progressMonthGrid [data-date="2026-09-30"]').click();
+  await page.getByRole('button',{name:'接續重練',exact:true}).click();
+  assert.equal(await page.locator('#answer').inputValue(),'獨立重練速記');
+  const saved=JSON.parse(await raw()).sessions['2026-09-30'];
+  const {repeatAttempts,...originalRecord}=saved;
+  assert.deepEqual(originalRecord,JSON.parse(seeded).sessions['2026-09-30']);
+  assert.equal(repeatAttempts.length,1);
+  assert.equal(repeatAttempts[0].questionId,originalRecord.questionId);
+  await page.locator('#returnToday').click();
+  await page.locator('#showWeekProgress').click();
+  await page.evaluate(value=>localStorage.setItem('probation-study30-v251:v1',value),seeded);
+  await page.reload();
   for(const width of [320,390,768,1440]){
    await page.setViewportSize({width,height:1000});await page.locator('#showMonthProgress').click();
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,'professional overflow '+width);
