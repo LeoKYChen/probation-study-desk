@@ -129,8 +129,15 @@
     session.updatedAt=new Date().toISOString();persist();
     return canSave;
   }
-  const hasEssayProgress=()=>Object.values(session?.essayDrafts||{}).some(d => !!(d && (String(d.fullAnswer||'').trim() || (Array.isArray(d.outline) && d.outline.some(x=>String(x||'').trim())))));
-  const hasProgress=()=>session.elapsed>0||session.phase>0||session.notes.some(s=>String(s||'').trim())||session.finished||!!session.rating||!!session.errorCause||hasEssayProgress()||Object.keys(session?.essayAssessments||{}).length>0||Object.keys(session?.practiceRatings||{}).length>0;
+  const hasEssayProgress=session=>Object.values(session?.essayDrafts||{}).some(d => !!(d && (String(d.fullAnswer||'').trim() || (Array.isArray(d.outline) && d.outline.some(x=>String(x||'').trim())))));
+  function hasSessionProgress(record){
+    if(!record)return false;
+    return record.elapsed>0||record.phase>0||!!record.finished||!!record.rating||!!record.errorCause||
+      (Array.isArray(record.notes)&&record.notes.some(note=>String(note||'').trim()))||
+      hasEssayProgress(record)||Object.keys(record.essayAssessments||{}).length>0||
+      Object.keys(record.practiceRatings||{}).length>0;
+  }
+  const hasProgress=()=>hasSessionProgress(session);
   const currentTotal=()=>durations(session.date,session.mode).length;
   function updateAnswer(){session.notes[session.phase]=$('answer').value;session.updatedAt=new Date().toISOString();persist();$('answerStatus').textContent='已保存於目前瀏覽器';renderControls();}
   function setMode(mode){
@@ -390,7 +397,7 @@ function readAnswerLink(id){
   return '';
 }
 function currentDailyQuestion(){return currentQuestion();}
-window.Study30App={essayContext,saveEssay,saveEssayManualQuestion,essayAssessmentContext,saveEssayAssessment,getEssayReviewData,openEssayReview,prepareBackupRestore,saveAiReview,readAiReview,saveAnswerLink,readAnswerLink,currentDailyQuestion};
+window.Study30App={hasSessionProgress,essayContext,saveEssay,saveEssayManualQuestion,essayAssessmentContext,saveEssayAssessment,getEssayReviewData,openEssayReview,prepareBackupRestore,saveAiReview,readAiReview,saveAnswerLink,readAnswerLink,currentDailyQuestion};
   window.Study30Planner={isoTaipei,subjectFor,durations,normalSubject,candidateSubject,hash};
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
 })();
