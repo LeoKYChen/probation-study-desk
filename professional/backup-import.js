@@ -6,7 +6,14 @@
  const isDate=s=>typeof s==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(s)&&Number.isFinite(Date.parse(s+'T00:00:00Z'))&&new Date(Date.parse(s+'T00:00:00Z')).toISOString().slice(0,10)===s;
  const obj=x=>x!==null&&typeof x==='object'&&!Array.isArray(x);
  const keys=o=>Object.keys(o||{});
- function safeRecord(s,d){
+ const safeStore=(input)=>{
+  if(!obj(input)||input.version!==1||!obj(input.sessions))throw Error('備份版本或 sessions 結構不符，沒有寫入任何資料。');
+  const days=keys(input.sessions);
+  if(days.length>MAX_DAYS)throw Error('備份日期數異常，為安全起見不匯入。');
+  const out={...input,sessions:{}};
+  for(const d of days){
+   if(!isDate(d))throw Error('發現無效日期 '+String(d).slice(0,20)+'，已拒絕匯入。');
+   const s=input.sessions[d];
    if(!obj(s)||('notes'in s&&!Array.isArray(s.notes))||('essayDrafts'in s&&!obj(s.essayDrafts))||
      ('essayAssessments'in s&&!obj(s.essayAssessments))||
      ('essayCustomPrompts'in s&&!obj(s.essayCustomPrompts)))throw Error('日期 '+d+' 的紀錄格式異常。');
@@ -16,24 +23,9 @@
    const phase=Number.isInteger(s.phase)&&s.phase>=0&&s.phase<=4?s.phase:0;
    const elapsed=Number.isFinite(s.elapsed)&&s.elapsed>=0?s.elapsed:0;
    const remaining=Number.isFinite(s.remaining)&&s.remaining>=0?s.remaining:0;
-   return {...s,date:d,mode,phase,elapsed,remaining,notes:Array.isArray(s.notes)?s.notes.slice():[],
+   out.sessions[d]={...s,date:d,mode,phase,elapsed,remaining,notes:Array.isArray(s.notes)?s.notes.slice():[],
     rating:['review','partial','mastered'].includes(s.rating)?s.rating:null,
     finished:!!s.finished};
- }
- const safeStore=(input)=>{
-  if(!obj(input)||input.version!==1||!obj(input.sessions))throw Error('備份版本或 sessions 結構不符，沒有寫入任何資料。');
-  const days=keys(input.sessions);
-  if(days.length>MAX_DAYS)throw Error('備份日期數異常，為安全起見不匯入。');
-  const out={...input,sessions:{}};
-  for(const d of days){
-   if(!isDate(d))throw Error('發現無效日期 '+String(d).slice(0,20)+'，已拒絕匯入。');
-   const s=input.sessions[d];
-   const record=safeRecord(s,d);
-   if('repeatAttempts'in s){
-    if(!Array.isArray(s.repeatAttempts))throw Error('日期 '+d+' 的重練紀錄格式異常。');
-    record.repeatAttempts=s.repeatAttempts.map(attempt=>safeRecord(attempt,d));
-   }
-   out.sessions[d]=record;
   }
   return out;
  };
@@ -51,9 +43,7 @@
   return safeStore(input);
  }
  const count=store=>{let drafts=0,assessments=0;for(const s of Object.values(store.sessions)){
-  for(const record of [s,...(s.repeatAttempts||[])]){
-   drafts+=keys(record.essayDrafts).length;assessments+=keys(record.essayAssessments).length;
-  }
+  drafts+=keys(s.essayDrafts).length;assessments+=keys(s.essayAssessments).length;
  }return {days:keys(store.sessions).length,drafts,assessments};};
  function merge(existing,imported,mode){
   const a=safeStore(existing),b=safeStore(imported);
