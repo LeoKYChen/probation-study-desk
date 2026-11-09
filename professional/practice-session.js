@@ -37,10 +37,10 @@
   const durations = (iso,mode) => subjectFor(iso).sunday ? (String(mode)==='10'?[6,4]:[20,10]) : (String(mode)==='10'?[2,5,2,1]:[5,15,8,2]);
   const phaseTitles = (iso) => subjectFor(iso).sunday ? ['錯題重答與複習','共同科目'] : ['主動回想','理解與解題','申論架構','錯誤整理'];
   const blank = () => ({version:1,sessions:{}});
-  let store=blank(),session=null,running=false,lastTickMs=0,canSave=true,selectedPracticeDate=null;
+  let store=blank(),session=null,running=false,lastTickMs=0,canSave=true,selectedPracticeDate=null,practicingRepeat=false;
   const say = message=>{$('notice').textContent=message;$('notice').hidden=false;};
   function load(){try{const raw=localStorage.getItem(KEY);if(raw){const parsed=JSON.parse(raw);if(parsed?.version===1&&parsed.sessions&&typeof parsed.sessions==='object'&&!Array.isArray(parsed.sessions))store=parsed;else throw Error('版本不符');}}catch(e){canSave=false;say('無法讀取30分鐘紀錄，未覆寫原資料。本次可練習，但離開前務必匯出備份。');}}
-  function persist(){if(!canSave)return;try{localStorage.setItem(KEY,JSON.stringify(store));}catch(e){canSave=false;say('目前瀏覽器無法保存30分鐘紀錄。請使用「匯出本模組紀錄 JSON」備份。');}}
+  function persist(){if(!canSave)return false;try{localStorage.setItem(KEY,JSON.stringify(store));return true;}catch(e){canSave=false;say('目前瀏覽器無法保存30分鐘紀錄。請使用「匯出本模組紀錄 JSON」備份。');return false;}}
   const priorRecords = () => Object.entries(store.sessions).sort(([a],[b])=>b.localeCompare(a));
   function newestRatingById(){const result=new Map();for(const [date,s] of priorRecords()){if(s?.questionId&&!result.has(s.questionId)&&s.rating)result.set(s.questionId,{rating:s.rating,date});}return result;}
   function reviewCandidate(target,iso){const ratings=newestRatingById();const eligible=pool(target).filter(q=>{const r=ratings.get(q.id);return r?.rating==='review'&&dayIndex(iso)-dayIndex(r.date)>=3;});return eligible.sort((a,b)=>dayIndex(ratings.get(a.id).date)-dayIndex(ratings.get(b.id).date))[0]||null;}
@@ -48,16 +48,16 @@
     const due=Review?.chooseDue(store.sessions,BANK,iso,sub.target,false);
     return BANK.find(q=>q.id===due)||reviewCandidate(sub.target,iso)||pick(pool(sub.target),iso+':'+sub.target);
   }
-  function newSession(iso,mode='30'){
-    const q=chooseQuestion(iso),common=pick(commonPool(),iso+':common');
-    return {date:iso,mode,questionId:q?.id||null,commonQuestionId:common?.id||null,phase:0,remaining:durations(iso,mode)[0]*60,elapsed:0,notes:[],rating:null,finished:false,createdAt:new Date().toISOString(),updatedAt:new Date().toISOString()};
+  function newSession(iso,mode='30',original=null){
+    const questionId=original?original.questionId:chooseQuestion(iso)?.id;
+    const commonQuestionId=original?original.commonQuestionId:pick(commonPool(),iso+':common')?.id;
+    return {date:iso,mode,questionId:questionId||null,commonQuestionId:commonQuestionId||null,phase:0,remaining:durations(iso,mode)[0]*60,elapsed:0,notes:[],rating:null,finished:false,createdAt:new Date().toISOString(),updatedAt:new Date().toISOString()};
   }
   function loadToday(){const today=isoTaipei();session=store.sessions[today];if(!session){session=newSession(today);store.sessions[today]=session;persist();}return today;}
   function selectWeekPractice(iso){
     const today=isoTaipei(),start=dayIndex(today)-((dayNumber(today)+6)%7),index=dayIndex(iso);
     if(!/^\d{4}-\d{2}-\d{2}$/.test(iso)||!Number.isFinite(index)||index<start||index>dayIndex(today)){say('只能補練本週已過日期。');return;}
     pause();
-    selectedPracticeDate=iso===today?null:iso;
     if(!store.sessions[iso]){
       const created=newSession(iso),subject=subjectFor(iso);
       // Use a date-seeded past-paper question rather than future rating data.
@@ -66,10 +66,39 @@
       created.questionId=fallback?.id||created.questionId;
       store.sessions[iso]=created;persist();
     }
-    session=store.sessions[iso];
+    showPractice(store.sessions[iso]);
+  }
+  function showPractice(record,repeat=false){
+    const iso=record.date,today=isoTaipei();
+    selectedPracticeDate=iso===today&&!repeat?null:iso;
+    practicingRepeat=repeat;
+    session=record;
     render();
-    if(iso!==today)say('已切換至 '+iso+' 的練習。這一天的作答、草稿及自評會獨立保存。');
+    if(repeat)say('已開啟 '+iso+' 的獨立重練。原本的完成紀錄與作答會保留。');
+    else if(iso!==today)say('已切換至 '+iso+' 的練習。這一天的作答、草稿及自評會獨立保存。');
+    else $('notice').hidden=true;
     $('todayHeading').scrollIntoView({block:'start',behavior:'smooth'});
+  }
+  const repeatAttempts=record=>Array.isArray(record?.repeatAttempts)?record.repeatAttempts:[];
+  function openHistoryPractice(iso){
+    if(typeof iso!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(iso)||iso>isoTaipei())return;
+    const original=store.sessions[iso];
+    if(original?.date!==iso||!hasSessionProgress(original))return;
+    pause();
+    if(!original.finished){showPractice(original);return;}
+    const attempts=repeatAttempts(original);
+    const latest=attempts.at(-1);
+    if(latest&&!latest.finished){showPractice(latest,true);return;}
+    const attempt=newSession(iso,String(original.mode)==='10'?'10':'30',original);
+    const previous=original.repeatAttempts;
+    original.repeatAttempts=[...attempts,attempt];
+    if(!persist()){
+      if(previous===undefined)delete original.repeatAttempts;
+      else original.repeatAttempts=previous;
+      say('無法儲存重練紀錄，原本的作答仍保留。');
+      return;
+    }
+    showPractice(attempt,true);
   }
   const currentQuestion=()=>BANK.find(q=>q.id===(subjectFor(session.date).sunday&&session.phase===1?session.commonQuestionId:session.questionId));
   // Essay practice is separate from the day's timed task, ratings and review queue.
@@ -180,9 +209,9 @@
   function renderControls(){const phaseTitlesNow=phaseTitles(session.date);$('sessionStatus').textContent=session.finished?'已標記完成':running?'計時中':session.elapsed>0||session.phase>0?'已暫停':'尚未開始';$('phaseLabel').textContent=phaseTitlesNow[session.phase]||'今日完成';$('timer').textContent=`${two(Math.floor(session.remaining/60))}:${two(session.remaining%60)}`;$('toggleTimer').textContent=running?'暫停計時':'開始／繼續';$('toggleTimer').disabled=!!session.finished;$('nextPhase').textContent=session.phase===currentTotal()-1?'標記今日完成':'完成此步驟';$('nextPhase').disabled=!!session.finished;for(const mode of ['30','10']){$('mode'+mode).setAttribute('aria-pressed',String(session.mode===mode));$('mode'+mode).disabled=false;}}
   function renderStats(){const today=isoTaipei(),w=weekNumber(today);let done=0,elapsed=0;const byId=new Map();for(const [day,s] of Object.entries(store.sessions)){if(weekNumber(day)===w&&s.finished)done+=1;elapsed+=Number(s.elapsed||0);if(s.questionId&&s.rating){const current=byId.get(s.questionId);if(!current||day>current.date)byId.set(s.questionId,{date:day,rating:s.rating});}}
     $('weeklyCount').textContent=`${done} / 7`;$('minuteCount').textContent=`${Math.floor(elapsed/60)} 分`;$('reviewCount').textContent=`${Review?Review.model(store.sessions,BANK,today).due.length:[...byId.values()].filter(x=>x.rating==='review').length} 題`;
-    const weekStart=dayIndex(today)-((dayNumber(today)+6)%7);$('historyContent').replaceChildren();for(let i=0;i<7;i++){const d=new Date((weekStart+i)*86400000).toISOString().slice(0,10),s=store.sessions[d],cell=document.createElement('button');cell.type='button';cell.className='day-cell'+(d===today?' today':'')+(s?.finished?' finished':'')+(session?.date===d?' selected':'');cell.disabled=d>today;cell.setAttribute('aria-pressed',String(session?.date===d));cell.setAttribute('aria-label',d+' '+(s?.finished?'已完成':d>today?'尚未到來':'可進入練習'));cell.addEventListener('click',()=>selectWeekPractice(d));const strong=document.createElement('strong');strong.textContent='週'+'一二三四五六日'[i];const rest=document.createElement('span');rest.textContent=s?.finished?'完成':s?.elapsed?`${Math.floor(s.elapsed/60)}分`:'—';cell.append(strong,rest);$('historyContent').append(cell);} $('returnToday').hidden=session?.date===today; $('weekPracticeHint').textContent=session?.date===today?'點選本週已過日期，可補做或接續該日練習；未到日期不可提前作答。':'目前補練 '+session.date+'：進度、草稿及自評均按當天保存。';
+    const weekStart=dayIndex(today)-((dayNumber(today)+6)%7);$('historyContent').replaceChildren();for(let i=0;i<7;i++){const d=new Date((weekStart+i)*86400000).toISOString().slice(0,10),s=store.sessions[d],cell=document.createElement('button');cell.type='button';cell.className='day-cell'+(d===today?' today':'')+(s?.finished?' finished':'')+(session?.date===d?' selected':'');cell.disabled=d>today;cell.setAttribute('aria-pressed',String(session?.date===d));cell.setAttribute('aria-label',d+' '+(s?.finished?'已完成':d>today?'尚未到來':'可進入練習'));cell.addEventListener('click',()=>selectWeekPractice(d));const strong=document.createElement('strong');strong.textContent='週'+'一二三四五六日'[i];const rest=document.createElement('span');rest.textContent=s?.finished?'完成':s?.elapsed?`${Math.floor(s.elapsed/60)}分`:'—';cell.append(strong,rest);$('historyContent').append(cell);} $('returnToday').hidden=session?.date===today&&!practicingRepeat; $('weekPracticeHint').textContent=session?.date===today?'點選本週已過日期，可補做或接續該日練習；未到日期不可提前作答。':'目前補練 '+session.date+'：進度、草稿及自評均按當天保存。';
   }
-  function render(){const iso=isoTaipei();if(!selectedPracticeDate&&iso!==session.date){pause();loadToday();}const sub=subjectFor(session.date);$('todayDate').textContent=`${session.date}｜星期${DAY_NAMES[sub.day]}`;$('todayHeading').textContent=sub.label;$('todayDescription').textContent=sub.sunday?'錯題複習20分鐘＋共同科目10分鐘（快速版各6／4分鐘）':sub.day===6?`本週主攻：${sub.target}；下週交替。`:'今天只讀這一科，題目依科目從本模組考古題選題池選出（含相關類科）。';
+  function render(){const iso=isoTaipei();if(!selectedPracticeDate&&iso!==session.date){pause();loadToday();}const sub=subjectFor(session.date);$('todayDate').textContent=`${session.date}｜星期${DAY_NAMES[sub.day]}${practicingRepeat?'｜重練':''}`;$('todayHeading').textContent=sub.label;$('todayDescription').textContent=sub.sunday?'錯題複習20分鐘＋共同科目10分鐘（快速版各6／4分鐘）':sub.day===6?`本週主攻：${sub.target}；下週交替。`:'今天只讀這一科，題目依科目從本模組考古題選題池選出（含相關類科）。';
     $('phases').replaceChildren();const lengths=durations(session.date,session.mode),names=phaseTitles(session.date);for(let i=0;i<names.length;i++){const li=document.createElement('li');li.className=i<session.phase?'done':i===session.phase?'active':'';li.setAttribute('aria-current',i===session.phase?'step':'false');const label=document.createElement('strong');label.textContent=names[i];const minutes=document.createElement('span');minutes.textContent=`${lengths[i]}分鐘`;li.append(label,minutes);$('phases').append(li);}
     renderControls();renderQuestion();renderRatings();renderStats();renderReviewPanel();renderEssaySelection();window.dispatchEvent(new CustomEvent('study30:render'));}
   function renderReviewPanel(){
@@ -223,6 +252,7 @@
     }
   }
   function scheduleToday(id){
+    if(practicingRepeat){say('重練會保留原題，請返回今天後再安排其他題目。');return;}
     if(hasProgress()){say('今天已有計時、草稿或自評，為避免覆寫紀錄，不能更換題目。');return;}
     const candidate=BANK.find(q=>q.id===id);
     if(!candidate)return;
@@ -397,7 +427,7 @@ function readAnswerLink(id){
   return '';
 }
 function currentDailyQuestion(){return currentQuestion();}
-window.Study30App={hasSessionProgress,essayContext,saveEssay,saveEssayManualQuestion,essayAssessmentContext,saveEssayAssessment,getEssayReviewData,openEssayReview,prepareBackupRestore,saveAiReview,readAiReview,saveAnswerLink,readAnswerLink,currentDailyQuestion};
+window.Study30App={hasSessionProgress,openHistoryPractice,repeatAttempts,essayContext,saveEssay,saveEssayManualQuestion,essayAssessmentContext,saveEssayAssessment,getEssayReviewData,openEssayReview,prepareBackupRestore,saveAiReview,readAiReview,saveAnswerLink,readAnswerLink,currentDailyQuestion};
   window.Study30Planner={isoTaipei,subjectFor,durations,normalSubject,candidateSubject,hash};
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
 })();
