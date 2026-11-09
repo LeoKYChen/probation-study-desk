@@ -69,11 +69,18 @@ function rateCard(state, id, result, today, rate) {
 }
 function readState() {
   let s = null; try { s = JSON.parse(localStorage.getItem(KEY)); } catch (e) {}
-  s = s && typeof s === 'object' ? s : {};
-  return {cards: s.cards && typeof s.cards === 'object' ? s.cards : {}, subjects: Array.isArray(s.subjects) ? s.subjects : null, tab: s.tab === 'topic' ? 'topic' : 'miss'};
+  return unpack(s);
 }
+// 儲存格式與失分回想卡相同：最上層就是「卡片 id → 紀錄」，設定放在 __ 開頭的鍵，完整備份才能逐張合併。
+function unpack(s) {
+  s = s && typeof s === 'object' && !Array.isArray(s) ? s : {};
+  const cards = {};
+  for (const k of Object.keys(s)) if (!k.startsWith('__') && s[k] && typeof s[k] === 'object' && typeof s[k].due === 'string' && Array.isArray(s[k].reviews)) cards[k] = s[k];
+  return {cards, subjects: Array.isArray(s.__subjects) ? s.__subjects : null, tab: s.__tab === 'topic' ? 'topic' : 'miss'};
+}
+function pack(state) { const out = Object.assign({}, state.cards); if (state.subjects) out.__subjects = state.subjects; out.__tab = state.tab; return out; }
 
-window.LawScoringTopicRecall = {KEY, NEW_PER_DAY, cardsOf, hintsOf, orderNew, queue, rateCard, readState};
+window.LawScoringTopicRecall = {KEY, NEW_PER_DAY, cardsOf, hintsOf, orderNew, queue, rateCard, readState, pack, unpack};
 if (typeof document === 'undefined' || !document.getElementById('tab-topic')) return;
 
 const S = window.LawScoringSummaries, R = window.LawScoringReview, RENDER = window.LawScoringSummaryRender;
@@ -82,7 +89,7 @@ const $ = id => document.getElementById(id);
 function el(tag, attrs, text) { const n = document.createElement(tag); for (const k in (attrs || {})) { if (k === 'class') n.className = attrs[k]; else n.setAttribute(k, attrs[k]); } if (text != null) n.textContent = text; return n; }
 const today = dayStr(new Date());
 let state = readState(), ordered = null, current = null, extra = 0, loadingAll = false, saveOk = true;
-function persist() { try { localStorage.setItem(KEY, JSON.stringify(state)); saveOk = true; } catch (e) { saveOk = false; $('tr-status').textContent = '目前瀏覽器無法保存考點回想的進度。'; } }
+function persist() { try { localStorage.setItem(KEY, JSON.stringify(pack(state))); saveOk = true; } catch (e) { saveOk = false; $('tr-status').textContent = '目前瀏覽器無法保存考點回想的進度。'; } }
 
 // 分頁：失分回想／考點回想。考點回想第一次打開時才載入六科重點整理。
 function showTab(tab, focus, save) {

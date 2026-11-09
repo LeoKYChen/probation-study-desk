@@ -44,4 +44,9 @@ q=T.queue({cards:{},subjects:['psychology']},ordered,today,0); assert(q.fresh.ev
 // 重點整理改版後已不存在的卡：不出題、紀錄保留
 q=T.queue({cards:{'juvenile|已刪除的考點':{box:1,due:today,added:'2026-11-01',reviews:[],mastered:false}},subjects:null},ordered,today,0); assert.equal(q.due.length,0); assert.equal(q.reviewing,1);
 assert.deepEqual(JSON.parse(JSON.stringify(T.readState())),{cards:{},subjects:null,tab:'miss'});
+// 儲存格式：最上層是卡片紀錄，設定在 __ 開頭的鍵；壞資料不會進到卡片
+const packed=T.pack({cards:st.cards,subjects:['psychology'],tab:'topic'});
+assert.deepEqual(Object.keys(packed).filter(k=>!k.startsWith('__')).sort(),Object.keys(st.cards).sort());
+assert.deepEqual(JSON.parse(JSON.stringify(T.unpack(Object.assign({junk:5,other:{x:1}},packed)))),JSON.parse(JSON.stringify({cards:st.cards,subjects:['psychology'],tab:'topic'})));
+assert(/lawScoring\.topicRecall\.v1/.test(fs.readFileSync(path.join(root,'backup/unified-core.js'),'utf8'))&&/lawScoring\.topicRecall\.v1/.test(fs.readFileSync(path.join(root,'backup/app.js'),'utf8')),'backup includes topic recall');
 console.log('law-scoring topic recall: '+all.length+' cards checked');
