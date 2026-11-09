@@ -1,8 +1,8 @@
 # 觀護人學習平臺｜Probation Study Desk
 
 > 以臺灣司法特考三等觀護人為核心的開源自主學習網站：從考古題練習、申論作答、學習排程，到訂正、回想與學習紀錄，讓「讀過」逐步變成「寫得出來」。
-**2026-11-09 更新**：修正「每日 30 分鐘」月曆將未練習的日期誤標為「有紀錄」的問題（#150）。
-[**開始使用**](https://leokychen.github.io/probation-study-desk/) · [**備考書桌**](https://leokychen.github.io/probation-study-desk/study-desk/) · [**學習管理**](https://leokychen.github.io/probation-study-desk/lectures/) · [**申論評分參考**](https://leokychen.github.io/probation-study-desk/law-scoring/) · [**更新紀錄**](CHANGELOG.md) · [**Releases**](https://github.com/LeoKYChen/probation-study-desk/releases) · [**問題回報**](https://github.com/LeoKYChen/probation-study-desk/issues)
+
+[**GitHub Pages**](https://leokychen.github.io/probation-study-desk/) · [**Cloudflare 正式站**](https://probation-study30-test.pages.dev/) · [**備考書桌**](https://leokychen.github.io/probation-study-desk/study-desk/) · [**學習管理**](https://leokychen.github.io/probation-study-desk/lectures/) · [**申論評分參考**](https://leokychen.github.io/probation-study-desk/law-scoring/) · [**更新紀錄**](CHANGELOG.md) · [**Releases**](https://github.com/LeoKYChen/probation-study-desk/releases) · [**問題回報**](https://github.com/LeoKYChen/probation-study-desk/issues)
 
 **專案性質：** 個人開發、維護的學習輔助工具，**非**考選部、司法院或其他機關的官方網站。參考答案、AI 評語與自行記錄的分數都不是國家考試正式閱卷結果。
 
@@ -11,17 +11,17 @@
 | 入口 | 可以做什麼 |
 | --- | --- |
 | [**備考書桌**](study-desk/) | 保存多次作答、評語、訂正、再次回想與 Markdown 筆記；搭配函授已學主題、弱點及選題理由安排練習 |
-| [專業科目練習](professional/) | 考古題、30 分鐘訓練、四格申論草稿、答案核對及複習 |
+| [專業科目練習](professional/) | 考古題、每日 30 分鐘、四格申論草稿、答案核對、複習與練習月曆 |
 | [v2.5 考古題練習臺](v2.5/) | 553 題選題、作答與草稿、逐題作答連結、原有／補充版本試評、AI 批改交接及備份 |
 | [共同科目](common-subjects/) | 國文作文、英文與其他共同科目練習 |
 | [學習管理](lectures/) | 管理函授、閱讀、複習與申論；取消原有 90 天上限，支援跨年度排程及月曆逐項編輯、部分／全部完成 |
-| [申論評分參考](law-scoring/) | 553 題學習用評分要點；先作答或貼上答案網址，再逐列自評、檢視架構並複製 AI 批改文字 |
+| [申論評分參考](law-scoring/) | 553 題學習用評分要點；先作答或貼上答案網址，再逐列自評、查看命題者視角並複製 AI 批改文字 |
 | [各科重點整理](law-scoring/summaries.html) | 六科跨類科主題歸納：出題紀錄、核心內容、答題骨架與常見混淆，題號連回申論評分參考 |
 | [每日模擬題／晚間學習室](daily-simulation/) | 分科選題、計時、申論練習、AI 批改提示詞與閱讀資料 |
 | [少年司法週報](juvenile-news/) | 少年司法、CRC、國際標準、法制、研究與制度動態 |
 | [主動回憶](active-recall/) | 先自行回想，再檢視參考要點 |
 | [116 年觀護人專題練習](dongdong-time/) | 既有題庫保留，新增內容暫停；收錄不等於逐題驗收 |
-| [警察特考 108–115 年原題](police-exams/) | 指定四科、32 份官方原卷的 127 題 AI 輔助來源比對題；v2.5／備考書桌可載入，真人逐卷校稿尚未完成 |
+| [警察特考 108–115 年原題](police-exams/) | 指定四科、32 份官方原卷的 127 題 AI 輔助來源比對題；v2.5／備考書桌／專業科目可載入，真人逐卷校稿尚未完成 |
 
 其他工具：[完整 JSON 備份](backup/) · [列印／PDF](print/) · [離線閱讀](offline/) · [雙 AI 協作工作臺（外部網站）](https://leokychen.github.io/multi-ai-review-desk/)
 
@@ -33,9 +33,12 @@
 4. **自己確認錯誤並訂正**，保留原答案與新版本，安排再次回想。
 5. 定期匯出 JSON 備份；重要筆記可另外下載 Markdown 或列印。
 
-## 近期更新（2026-10-25～10-28）
+## 近期更新（截至 2026-11-09）
 
-以下依主分支已合併程式整理；內容查核與部署狀態需分別確認。
+- **每日 30 分鐘月曆**以實際計時、步驟進度、作答、草稿或自評等活動判定是否有紀錄。系統預先配題及空白草稿會顯示「無紀錄」。月曆與日期明細使用同一套判定，既有練習資料保留。[PR #150](https://github.com/LeoKYChen/probation-study-desk/pull/150)
+- **申論評分參考**的 553 題皆可查看命題者視角。新增[各科重點整理](law-scoring/summaries.html)，依六科主題歸納歷屆考點，包含出題紀錄、答題骨架及常見混淆。點選題號可回到該題的評分參考。[PR #149](https://github.com/LeoKYChen/probation-study-desk/pull/149)
+
+### 既有功能與操作
 
 - **學習管理**：原「函授管理」改名，網址仍為 `lectures/`。可輸入預排天數或結束日期，支援超過 90 天及跨年度安排；點選月曆日期新增、編輯函授／閱讀／複習／申論項目，記錄完成比例、實際分鐘、重點疑問及複習標記。重新排程保留已編輯項目；完成狀態不會自動填入實際學習時間。另修正手機日期欄位溢位。見 [操作說明](docs/LEARNING_MANAGEMENT_20261027.md)。
 - **申論評分參考**：`law-scoring/` 已收錄 553 題，包含觀護人六科 190 題及相關類科 363 題。可依「類科 → 科目 → 題目」選題；先作答（可寫在頁面、紙上或其他網站並貼上作答網址），再展開要點逐列自評並複製 AI 批改文字；沒勾到的得分點會成為「失分回想卡」。法律題的法規核對標示與學科題待對照教材的狀態須依逐題資料確認；**收錄不代表逐題人工核定**。
@@ -47,7 +50,7 @@
 
 | 模組／機制 | 目前範圍 | 使用界線 |
 | --- | --- | --- |
-| v2.5／備考書桌選題 | 既有 426 題＋警察特考 127 題，共 553 題 | `professional/` 仍使用既有 426 題 |
+| v2.5／備考書桌／專業科目選題 | 既有 426 題＋警察特考 127 題，共 553 題 | 專業科目每日練習依當日科目選題，警察原題待人工逐卷複核 |
 | v2.5 原有版本自動試評 | 既有 11 科 426 題 | 數字代表辨識的論述線索，尚未經專家答案集校準 |
 | v2.5 觀護人補充版本試評 | 108–115 年六科 190 題 | 保留原有版本，逐題列出參考綱要與來源限制 |
 | 申論評分參考 | 553 題 | AI 草擬要點、本人勾選自評；學科內容仍待教材核對 |
@@ -56,11 +59,11 @@
 
 ## 維護方向與凍結基準
 
-使用者已核定 A–N 功能路線：核心練習、備考書桌、少年司法週報、AI 批改交接及備份／離線維持既有服務；部分題庫和雲端同步暫停，知識關聯圖及舊版 UI 封存，v2.7 法律檢索與 JCIS 分離處理。當時特許擴充的題庫範圍為警察特考歷屆官方原題；後續已合併的學習管理及試評等調整見上方近期更新與主分支提交。2026-10-23 已將其 127 題整合到 `main`（[PR #71](https://github.com/LeoKYChen/probation-study-desk/pull/71) 已合併）；原有 426 題 ID 保留，v2.5 與備考書桌合計可載入 **553 題**，但 `professional/` 仍為原有 426 題。**32 份試卷仍待真人逐卷核稿**，現階段的 AI／官方 PDF 來源比對不得視為人工驗收。
+使用者已核定 A–N 功能路線：核心練習、備考書桌、少年司法週報、AI 批改交接及備份／離線維持既有服務；部分題庫和雲端同步暫停，知識關聯圖及舊版 UI 封存，v2.7 法律檢索與 JCIS 分離處理。當時特許擴充的題庫範圍為警察特考歷屆官方原題；後續已合併的學習管理及試評等調整見上方近期更新與主分支提交。2026-10-23 已將其 127 題整合到 `main`（[PR #71](https://github.com/LeoKYChen/probation-study-desk/pull/71) 已合併）；原有 426 題 ID 保留，v2.5、備考書桌與專業科目練習皆可載入 **553 題**。**32 份試卷仍待真人逐卷核稿**，現階段的 AI／官方 PDF 來源比對不得視為人工驗收。
 
 詳見 [穩定版凍結及安全整併計畫](docs/STABILITY_FREEZE_20261023.md)與 [決策 Issue #77](https://github.com/LeoKYChen/probation-study-desk/issues/77)。凍結前 `main` 的可追溯還原點是 `archive/stability-baseline-20261023`；**此分支不包含使用者瀏覽器中的私人學習紀錄**。任何程式合併、部署及 Release 仍須獨立完成 CI 與人工驗收。
 
-## 使用中的功能界線與注意事項（截至 2026-10-28）
+## 使用中的功能界線與注意事項
 
 - **備考書桌採本機保存**：作答版本與回想等記錄主要存於瀏覽器 IndexedDB；跨裝置自動雲端同步目前暫緩。不同裝置需由使用者手動備份／匯入。
 - **不同模組不會自動合併紀錄**：從舊練習頁面接入書桌，需要使用者確認匯入，並保留來源及版本差異。
@@ -70,7 +73,7 @@
 - **考科重點地圖尚非 Obsidian 式關聯圖**：原有 v2.5 版是文字／列表介面；「完整重點整理」展開區和「補強清單」目前暫時隱藏視覺呈現，未刪除相關原始資料。
 - **題庫品質需分級理解**：題目已收錄、程式測試通過、官方題源核對、法規正確性及國考申論品質驗收，不是同一件事。
 
-上述為主分支程式及文件盤點，**不代表 GitHub Pages／Cloudflare 均已部署到相同版本**。Cloudflare 正式發布須依 [手動部署與驗收規範](docs/RELEASE_READINESS_20261023.md) 另行操作；發布結果須核對 [GitHub Actions](https://github.com/LeoKYChen/probation-study-desk/actions) 與實際網站。詳情見 [CHANGELOG](CHANGELOG.md)。
+GitHub Pages 從 `main` 根目錄發布。Cloudflare 使用獨立的發布流程，程式修正需經手動部署與驗收。兩站的發布結果以各自的 [GitHub Actions 紀錄](https://github.com/LeoKYChen/probation-study-desk/actions) 與網站實測為準。2026-11-09 已核對兩站均提供 [PR #150](https://github.com/LeoKYChen/probation-study-desk/pull/150) 的月曆修正。
 
 ## 學習資料、隱私與備份
 
@@ -124,10 +127,10 @@ npm run build   # 產物在 juvenile-news/source/docs/，確認後再複製到 j
 
 ## 版本與授權
 
-**全站正式版本**將依 [發布指引](docs/RELEASE_PROCESS.md) 的驗收程序，以日期式名稱規劃。**本次 README 更新不建立 Tag 或 GitHub Release**；實際已發布版本以 [Releases](https://github.com/LeoKYChen/probation-study-desk/releases) 與 [Tags](https://github.com/LeoKYChen/probation-study-desk/tags) 為準。子模組的 `v2.5`、`v2.5.4` 不等於全站 Release。
+全站版本依 [發布指引](docs/RELEASE_PROCESS.md) 驗收並以日期命名。已封存的版本可從 [Releases](https://github.com/LeoKYChen/probation-study-desk/releases) 與 [Tags](https://github.com/LeoKYChen/probation-study-desk/tags) 查閱。`v2.5`、`v2.5.4` 是子模組版本。
 
 本專案中可合法授權的原創程式碼以 [LICENSE](LICENSE)（GPL-3.0-only）為準。政府試題、新聞、學術文獻、外部教材和第三方圖片不會因收錄於此儲存庫而自動適用相同授權，須依各自原始來源確認。
 
 ---
 
-維護者：[LeoKYChen](https://github.com/LeoKYChen) · [儲存庫](https://github.com/LeoKYChen/probation-study-desk) · **文件更新：2026-10-28**
+維護者：[LeoKYChen](https://github.com/LeoKYChen) · [儲存庫](https://github.com/LeoKYChen/probation-study-desk) · **文件更新：2026-11-09**
