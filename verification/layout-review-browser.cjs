@@ -38,6 +38,7 @@ const server=http.createServer((req,res)=>{
   const seeded=await page.evaluate(()=>{
    const api=Study30App,{bank,today}=api.getEssayReviewData(),key='probation-study30-v251:v1';
    const stored=JSON.parse(localStorage.getItem(key)),session=stored.sessions[today];
+   stored.sessions['2026-10-15']={...structuredClone(session),date:'2026-10-15',essayDrafts:{empty:{outline:[' ','','',''],fullAnswer:''}}};
    session.unknownField={preserve:true};session.essayAssessments={};
    session.essayDrafts={...(session.essayDrafts||{}),[session.questionId]:{template:'law',outline:['保留第一格爭點','保留第二格規範','保留第三格涵攝','保留第四格結論'],fullAnswer:'保留完整申論答案'}};
    const subjects=Study30V254Diagnostics.SUBJECTS;
@@ -98,6 +99,12 @@ const server=http.createServer((req,res)=>{
   await page.locator('#progressMonthGrid [data-date="2026-10-01"]').click();
   assert((await page.locator('#progressMonthRecord').innerText()).includes('當天尚無練習紀錄'));
   assert.equal(await raw(),seeded,'empty date does not create a backdated session');
+  const initializedDay=page.locator('#progressMonthGrid [data-date="2026-10-15"]');
+  assert.equal(await initializedDay.locator('small').innerText(),'無紀錄');
+  await initializedDay.click();
+  assert((await page.locator('#progressMonthRecord').innerText()).includes('當天尚無練習紀錄'));
+  assert.equal(await page.locator('#progressMonthGrid [data-date="2026-10-16"] small').innerText(),'有紀錄');
+  assert.equal(await raw(),seeded,'viewing initialized sessions preserves all saved data');
   await page.locator('#previousProgressMonth').click();
   assert.equal(await page.locator('#progressMonthGrid button').count(),30);
   await page.locator('#progressMonthGrid [data-date="2026-09-30"]').click();
