@@ -278,6 +278,9 @@
       "url": "law-scoring/data.js"
     },
     {
+      "url": "law-scoring/topic-recall.js"
+    },
+    {
       "url": "law-scoring/weakness.js"
     },
     {

@@ -6,6 +6,8 @@ const S = window.LawScoringSummaries;
 const $ = id => document.getElementById(id);
 const KEY = 'lawScoring.summaries.v1';
 const TOK = /(觀護|監獄|犯防|薦任|監所|家調)(\d{3})-(\d)/g;
+// 考點回想（topic-recall.js）共用同一套內容繪製。
+window.LawScoringSummaryRender = {renderBlocks, linkify};
 if (!S || !$('sum-root')) return;
 const LIST = S.list || [];
 const loading = {};

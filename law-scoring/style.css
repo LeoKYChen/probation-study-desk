@@ -241,3 +241,26 @@ a.qref.guan{font-weight:700}
 .sum-bars .mfill.low{background:var(--seal)}
 .sum-weak p a{display:inline-flex;align-items:center;min-height:44px;font-weight:700}
 .sum-bars .mtext{flex:1;min-width:0;line-height:1.4}
+/* 考點回想：分頁鈕、科目勾選、提示與內容 */
+.recall-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:20px 0 0}
+.recall-tab{display:flex;flex-direction:column;align-items:flex-start;min-height:56px;padding:8px 12px;border:1px solid var(--rule);border-radius:10px;background:var(--sheet);color:var(--ink);font:inherit;font-weight:700;font-size:15.5px;line-height:1.4;text-align:left;cursor:pointer}
+.recall-tab span{font-size:13px;font-weight:400;color:var(--ink-soft)}
+.recall-tab:hover{border-color:var(--accent)}
+.recall-tab[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--sheet)}
+.recall-tab[aria-pressed="true"] span{color:var(--sheet)}
+.recall-tab:focus-visible,.tr-subject input:focus-visible,#tr-heading:focus-visible,#tr-title:focus-visible,.tr-hints:focus-visible,.tr-content:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.tr-subjects{border:1px solid var(--rule);border-radius:10px;min-width:0}
+.tr-subjects>summary{cursor:pointer;min-height:44px;display:flex;align-items:center;padding:4px 14px;font-size:14.5px;font-weight:700;color:var(--accent);line-height:1.4}
+.tr-subjects>summary:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.tr-subjects[open]>summary{border-bottom:1px solid var(--rule)}
+#tr-subject-list{padding:4px 14px 8px}
+#tr-subject-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:0 12px}
+.tr-subject{display:flex;align-items:center;gap:8px;min-height:44px;font-size:14.5px;cursor:pointer}
+.tr-subject input{width:20px;height:20px;flex:none;accent-color:var(--accent)}
+.tr-src{line-height:2}
+.tr-hints{border:1px dashed var(--rule);border-radius:10px;padding:10px 14px}
+.tr-hints ul{margin:6px 0 0;padding-left:22px}
+.tr-hints li{margin:3px 0}
+.tr-content{padding:0}
+.tr-content>:first-child{margin-top:0}
+#tr-done .btn,#tr-error .btn{min-height:44px}
