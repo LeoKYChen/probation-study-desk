@@ -134,6 +134,7 @@ const server=http.createServer((req,res)=>{
   assert.match(await page.locator('#todayDate').innerText(),/^2026-09-30.*重練/);
   assert.equal(await page.locator('#essayFullAnswer').inputValue(),'');
   assert.equal(await page.locator('#answer').inputValue(),'');
+  await page.locator('.daily-quick-notes summary').click();
   await page.locator('#answer').fill('獨立重練速記');
   await page.locator('#returnToday').click();
   await page.reload();
