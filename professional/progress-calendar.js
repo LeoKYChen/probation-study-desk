@@ -1,4 +1,4 @@
-/* Monthly history is a read-only view; opening a date never creates a session. */
+/* Selecting a date is read-only. An explicit action opens the practice editor. */
 (function(){
  'use strict';
  const $=id=>document.getElementById(id),make=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
@@ -18,6 +18,23 @@
   host.append(make('h3',selected+' 練習紀錄'));
   const s=sessions[selected];
   if(!hasProgress(s)){host.append(make('p','當天尚無練習紀錄。','muted'));return;}
+  const date=selected;
+  const attempts=window.Study30App.repeatAttempts(s);
+  const lastAttempt=attempts.at(-1);
+  const label=!s.finished?'接續這天的練習':lastAttempt&&!lastAttempt.finished?'接續重練':'重新練習這題';
+  const action=make('button',label,'secondary');
+  action.type='button';
+  action.addEventListener('click',()=>window.Study30App.openHistoryPractice(date));
+  host.append(action);
+  appendRecord(host,s,bank);
+  attempts.forEach((attempt,index)=>{
+   const details=make('details');
+   details.append(make('summary','第 '+(index+1)+' 次重練'));
+   appendRecord(details,attempt,bank);
+   host.append(details);
+  });
+ }
+ function appendRecord(host,s,bank){
   const q=bank.find(q=>q.id===s.questionId);
   host.append(make('p',(q?.subject||'自主練習')+'｜'+(q?.title||s.questionId||'未選題')));
   const rating={mastered:'能自行說明',partial:'還不完整',review:'需要再複習'}[s.rating]||'尚未自評';
@@ -51,7 +68,12 @@
    const state=date>today?'尚未到來':hasProgress(s)?(s.finished?'已完成':'有紀錄'):'無紀錄';
    button.setAttribute('aria-label',date+' '+state);button.setAttribute('aria-pressed',String(selected===date));
    button.append(make('strong',String(Number(date.slice(-2)))),make('small',state));
-   button.addEventListener('click',()=>{selected=date;render();});host.append(button);
+   button.addEventListener('click',()=>{
+    selected=date;
+    render();
+    $('progressMonthRecord').scrollIntoView({block:'nearest',behavior:'smooth'});
+   });
+   host.append(button);
   }
   showRecord(sessions,bank);
  }
