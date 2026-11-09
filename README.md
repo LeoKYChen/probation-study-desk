@@ -1,7 +1,7 @@
 # 觀護人學習平臺｜Probation Study Desk
 
 > 以臺灣司法特考三等觀護人為核心的開源自主學習網站：從考古題練習、申論作答、學習排程，到訂正、回想與學習紀錄，讓「讀過」逐步變成「寫得出來」。
-
+**2026-11-09 更新**：修正「每日 30 分鐘」月曆將未練習的日期誤標為「有紀錄」的問題（#150）。
 [**開始使用**](https://leokychen.github.io/probation-study-desk/) · [**備考書桌**](https://leokychen.github.io/probation-study-desk/study-desk/) · [**學習管理**](https://leokychen.github.io/probation-study-desk/lectures/) · [**申論評分參考**](https://leokychen.github.io/probation-study-desk/law-scoring/) · [**更新紀錄**](CHANGELOG.md) · [**Releases**](https://github.com/LeoKYChen/probation-study-desk/releases) · [**問題回報**](https://github.com/LeoKYChen/probation-study-desk/issues)
 
 **專案性質：** 個人開發、維護的學習輔助工具，**非**考選部、司法院或其他機關的官方網站。參考答案、AI 評語與自行記錄的分數都不是國家考試正式閱卷結果。
