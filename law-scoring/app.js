@@ -2,6 +2,7 @@
 (function () {
 'use strict';
 const DATA = window.LawScoringData;
+if (!DATA) return; // 題庫沒載入時不執行（重點整理頁會改為不顯示弱點地圖）
 const BODIES = Object.fromEntries(DATA.questions.map(q=>[q.id,{body:q.body,sourceUrl:q.sourceUrl}]));
 const WEIGHTS_BY = {law:{issues:20, law:25, apply:35, organize:20}, theory:{issues:20, law:30, apply:30, organize:20}};
 const LABELS_BY = {law:{issues:'爭點辨識與題意回應', law:'法規與學說實務見解', apply:'事實涵攝與法律論證', organize:'架構、結論與完整性'}, theory:{issues:'論點完整與題意回應', law:'理論正確（學者、構念）', apply:'扣回觀護實務與處遇應用', organize:'架構、結論與完整性'}};
