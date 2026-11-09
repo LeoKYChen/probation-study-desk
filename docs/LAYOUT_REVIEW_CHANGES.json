@@ -89,7 +89,7 @@
     {
       "path": "professional/sw.js",
       "base_sha256": "40e49a0b907e3db282d42743613f7756e205dba51705dfba7e8efac533400e99",
-      "sha256": "02706c07934b2ea89b881a80d9102f3758c0d98296b41f3c65840150b7e2bf4c",
+      "sha256": "d8751c9eddd77ab2463ca7f4f2ee2c9bde112bde03d0f9e4024819f5c771963b",
       "reason": "Refresh existing installed-viewer asset cache for changed UI, without altering storage keys. [2026-10-21] Rotate cache version after mobile duration CSS update, so previously installed Safari PWAs fetch a fresh layout on service-worker activation.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22] Bump offline cache to refresh AI review mode script for installed apps. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。 2026-11-05: Rotate study30 offline cache for new review layout and answer-link behavior. Retained mandatory 553q marker required by legacy police-bank integration test."
     },
     {
