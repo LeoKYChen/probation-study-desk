@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="zh-Hant">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>失分統計與回想卡｜觀護人練習臺</title><meta name="description" content="彙整申論評分參考的自評勾選，看出最常失分的類型；沒勾到的得分點自動變成間隔複習的回想卡。"><link rel="stylesheet" href="../shared-ui.css"><link rel="stylesheet" href="style.css"><script src="data.js" defer></script><script src="app.js" defer></script><script src="review.js" defer></script><link rel="manifest" href="../manifest.webmanifest"><meta name="theme-color" content="#315b7c"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="../pwa/icon-180.png"><link rel="stylesheet" href="../offline.css"><script src="../offline.js" defer></script><link rel="stylesheet" href="../assets/study-theme.css">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>失分統計與回想卡｜觀護人練習臺</title><meta name="description" content="彙整申論評分參考的自評勾選，看出最常失分的類型；沒勾到的得分點自動變成間隔複習的回想卡。"><link rel="stylesheet" href="../shared-ui.css"><link rel="stylesheet" href="style.css"><script src="data.js" defer></script><script src="app.js" defer></script><script src="review.js" defer></script><script src="weakness.js" defer></script><script src="summaries/index.js" defer></script><script src="summaries.js" defer></script><script src="topic-recall.js" defer></script><link rel="manifest" href="../manifest.webmanifest"><meta name="theme-color" content="#315b7c"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="../pwa/icon-180.png"><link rel="stylesheet" href="../offline.css"><script src="../offline.js" defer></script><link rel="stylesheet" href="../assets/study-theme.css">
 </head>
 <body>
 <header class="study-header"><div class="study-header-inner"><a class="study-brand" href="../v2.5/"><span class="study-brand-mark" aria-hidden="true">觀</span>觀護人練習臺</a><span class="study-test-label">失分統計與回想卡</span><nav class="nav-four" aria-label="主要導覽"><a href="../v2.5/">考古題練習</a><a href="./">申論評分參考</a><a href="summaries.html">重點整理</a><a href="review.html" aria-current="page">失分回想卡</a></nav></div></header>
@@ -10,10 +10,49 @@
     <div>
       <p class="kicker">申論評分參考・已自評 <span id="graded-count">0</span> 題</p>
       <h1>失分統計與回想卡</h1>
-      <p class="lede">彙整你在申論評分參考的勾選：看出最常丟分的類型，沒勾到的得分點會自動變成回想卡，依間隔複習（1、3、7、14、30 天）。統計與卡片只依你的勾選產生；只有在下方「管理紀錄」按清除時，才會改動評分頁的紀錄。</p>
+      <p class="lede">彙整你在申論評分參考的勾選：看出最常丟分的類型，沒勾到的得分點會自動變成回想卡，依間隔複習（1、3、7、14、30 天）。統計與卡片只依你的勾選產生；只有在下方「管理紀錄」按清除時，才會改動評分頁的紀錄。另有「考點回想」：把各科重點整理的考點做成回想卡，每天少量複習。</p>
     </div>
     <span class="badge-test">學習用・非官方評分</span>
   </div>
+
+  <div class="recall-tabs" role="group" aria-label="選擇回想卡種類">
+    <button type="button" class="recall-tab" data-tab="miss" aria-pressed="true">失分回想<span>依你漏寫的得分點</span></button>
+    <button type="button" class="recall-tab" data-tab="topic" aria-pressed="false">考點回想<span>依各科重點整理</span></button>
+  </div>
+
+  <div id="tab-topic" hidden>
+    <section class="sheet recall-card" aria-labelledby="tr-heading" style="margin-top:16px">
+      <div class="deck-head">
+        <div><h2 id="tr-heading" tabindex="-1">今天的考點回想</h2><p class="small muted" id="tr-summary" style="margin:4px 0 0"></p></div>
+      </div>
+      <p class="small muted" style="margin:0">每張卡是重點整理的一個考點：先自己回想，再對照內容並自評。新卡每天最多 5 張，常考又失分的主題先出。進度只存在這個瀏覽器，不會更動自評紀錄。</p>
+      <details class="tr-subjects" id="tr-subjects" hidden><summary id="tr-subjects-summary">要練的科目</summary><div id="tr-subject-list" role="group" aria-label="要練的科目"></div></details>
+      <div id="tr-card" hidden class="recall-card">
+        <p class="kicker" id="tr-meta"></p>
+        <h3 id="tr-title" tabindex="-1" style="margin:0"></h3>
+        <p class="small tr-src" id="tr-src" style="margin:0"></p>
+        <label for="tr-answer" class="small muted">先不看內容，寫出這個考點的要點（不會保存）。</label>
+        <textarea id="tr-answer" maxlength="4000" style="min-height:120px"></textarea>
+        <div class="row-actions" style="justify-content:flex-start"><button class="btn ghost" id="tr-hint" type="button">看提示</button><button class="btn primary" id="tr-reveal" type="button">看完整內容</button></div>
+        <div class="tr-hints" id="tr-hints" hidden tabindex="-1"><p class="small muted" style="margin:0">這個考點的要點標題：</p><ul id="tr-hint-list"></ul></div>
+        <div class="recall-back" id="tr-back" hidden>
+          <div class="sum-section tr-content" id="tr-content" tabindex="-1"></div>
+          <p class="small muted">我剛才想起來了嗎？</p>
+          <div class="rate-actions">
+            <button class="btn primary" type="button" data-trate="good">想起來了</button>
+            <button class="btn ghost" type="button" data-trate="partial">部分想起</button>
+            <button class="btn danger" type="button" data-trate="again">沒想起來</button>
+          </div>
+          <a class="btn" id="tr-open" href="summaries.html">到重點整理看這一章 →</a>
+        </div>
+      </div>
+      <div id="tr-done" hidden><p id="tr-done-text" style="margin:0 0 10px"></p><button class="btn ghost" id="tr-more" type="button">再練 5 張新卡</button></div>
+      <div id="tr-error" hidden><p style="margin:0 0 10px">重點整理的資料沒有載入成功，請確認網路連線後再試一次。</p><button class="btn primary" id="tr-retry" type="button">重新載入</button></div>
+      <p class="status" id="tr-status" role="status" aria-live="polite"></p>
+    </section>
+  </div>
+
+  <div id="tab-miss">
 
   <section class="sheet" id="empty" hidden style="margin-top:16px">
     <h2>還沒有自評紀錄</h2>
@@ -77,6 +116,7 @@
     <ul class="manage-list" id="manage-rows"></ul>
     <div class="confirm" id="clear-all-area" style="margin-top:12px"></div>
   </section>
+  </div>
 </div>
 </main>
 </body>
