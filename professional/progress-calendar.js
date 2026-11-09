@@ -3,6 +3,7 @@
  'use strict';
  const $=id=>document.getElementById(id),make=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
  let month='',selected='',lastToday='',lastCurrentMonth='';
+ const hasProgress=session=>window.Study30App.hasSessionProgress(session);
  const validDate=value=>/^\d{4}-\d{2}-\d{2}$/.test(value)&&Number.isFinite(Date.parse(value+'T00:00:00Z'))&&new Date(value+'T00:00:00Z').toISOString().slice(0,10)===value;
  function daysInMonth(value){
   const [y,m]=value.split('-').map(Number),length=new Date(Date.UTC(y,m,0)).getUTCDate();
@@ -16,7 +17,7 @@
   if(!selected){host.textContent='點選日期查看紀錄。';return;}
   host.append(make('h3',selected+' 練習紀錄'));
   const s=sessions[selected];
-  if(!s){host.append(make('p','當天尚無練習紀錄。','muted'));return;}
+  if(!hasProgress(s)){host.append(make('p','當天尚無練習紀錄。','muted'));return;}
   const q=bank.find(q=>q.id===s.questionId);
   host.append(make('p',(q?.subject||'自主練習')+'｜'+(q?.title||s.questionId||'未選題')));
   const rating={mastered:'能自行說明',partial:'還不完整',review:'需要再複習'}[s.rating]||'尚未自評';
@@ -47,7 +48,7 @@
   for(const date of days){
    const s=sessions[date],button=make('button',undefined,'month-day'+(date===today?' today':'')+(s?.finished?' finished':''));
    button.type='button';button.dataset.date=date;button.disabled=date>today;
-   const state=date>today?'尚未到來':s?(s.finished?'已完成':'有紀錄'):'無紀錄';
+   const state=date>today?'尚未到來':hasProgress(s)?(s.finished?'已完成':'有紀錄'):'無紀錄';
    button.setAttribute('aria-label',date+' '+state);button.setAttribute('aria-pressed',String(selected===date));
    button.append(make('strong',String(Number(date.slice(-2)))),make('small',state));
    button.addEventListener('click',()=>{selected=date;render();});host.append(button);
