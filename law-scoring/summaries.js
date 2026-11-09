@@ -1,4 +1,5 @@
-/* 各科重點整理：依科目按需載入 summaries/ 的資料檔，用 DOM 組出內容（不使用 innerHTML）。只記住最後看的科目。 */
+/* 各科重點整理：依科目按需載入 summaries/ 的資料檔，用 DOM 組出內容（不使用 innerHTML）。只記住最後看的科目。
+   弱點地圖（weakness.js）：讀取申論評分參考的自評紀錄算出各章掌握度，只讀不寫。 */
 (function () {
 'use strict';
 const S = window.LawScoringSummaries;
@@ -9,6 +10,12 @@ if (!S || !$('sum-root')) return;
 const LIST = S.list || [];
 const loading = {};
 let current = null;
+// 弱點地圖需要題庫與計分函式；任何一項沒載入就整個不顯示，重點整理照常可用。
+const WK = window.LawScoringWeakness, DATA = window.LawScoringData, SCORER = window.LawScoring && window.LawScoring.score;
+const BY_ID = WK && DATA && SCORER ? new Map(DATA.questions.map(q=>[q.id,q])) : null;
+let weak = null, weakRaw = '';
+function computeWeak(d){ if(!BY_ID){ weak=null; return; } weakRaw=WK.rawStore(); try { weak=WK.compute(d, WK.readStore(), BY_ID, SCORER); } catch (e) { weak=null; } }
+const practised = c => '已練 '+c.done+'／'+c.total+' 題';
 
 function el(tag, attrs, text){ const n=document.createElement(tag); for(const k in (attrs||{})){ if(k==='class') n.className=attrs[k]; else n.setAttribute(k,attrs[k]); } if(text!=null) n.textContent=text; return n; }
 function say(t){ $('sum-status').textContent=t; }
@@ -58,6 +65,14 @@ function renderChart(d){
     track.appendChild(g); track.appendChild(o);
     a.appendChild(track);
     a.appendChild(el('span',{class:'num'},(r.guan+r.other)+' 題（觀護 '+r.guan+'）'));
+    const c=weak&&weak.gradedTotal?weak.bySection[r.section]:null;
+    if(c){
+      const m=el('span',{class:'mastery'});
+      const bar=el('span',{class:'mbar','aria-hidden':'true'}); const fill=el('span',{class:'mfill'+(c.avg!=null&&c.avg<WK.LOW?' low':'')}); fill.style.width=(c.enough?c.avg:0)+'%'; bar.appendChild(fill);
+      m.appendChild(bar);
+      m.appendChild(el('span',{class:'mtext'},c.enough?'掌握度 '+c.avg+'%・'+practised(c):(c.done?practised(c)+'，還不夠算掌握度':'還沒練')));
+      a.appendChild(m);
+    }
     li.appendChild(a); ol.appendChild(li);
   });
   box.appendChild(ol);
@@ -84,6 +99,46 @@ function renderBlocks(target, blocks, d){
   });
 }
 
+// 每章開頭的練習狀況：還沒練與低分的題目，可直接點去作答。
+function tokenList(tokens, d, suffix){
+  const ul=el('ul',{class:'sum-qlist'});
+  tokens.forEach(t=>{ const tok=typeof t==='string'?t:t.token; const li=el('li'); linkify(li,tok,d.links); if(suffix&&t.score!=null) li.appendChild(document.createTextNode('（'+t.score+' 分）')); ul.appendChild(li); });
+  return ul;
+}
+function renderPractice(c, d){
+  const box=el('details',{class:'sum-practice'});
+  box.appendChild(el('summary',null,'練習狀況：'+practised(c)+(c.done?'，平均 '+c.avg+' 分':'')));
+  if(c.low.length){ box.appendChild(el('p',{class:'sum-plabel'},'低於 '+WK.LOW+' 分（'+c.low.length+' 題）')); box.appendChild(tokenList(c.low,d,true)); }
+  if(c.todo.length){ box.appendChild(el('p',{class:'sum-plabel'},'還沒練（'+c.todo.length+' 題）')); box.appendChild(tokenList(c.todo,d,false)); }
+  if(!c.low.length&&!c.todo.length) box.appendChild(el('p',{class:'sum-plabel'},'這一章的題目都練過，而且都在 '+WK.LOW+' 分以上。'));
+  return box;
+}
+function chapterLink(d, c){ return el('a',{href:'#'+d.slug+'/'+c.section,'data-section':c.section},c.title); }
+function renderWeak(d){
+  const box=$('sum-weak'); box.textContent='';
+  if(!weak){ box.hidden=true; return; }
+  box.hidden=false;
+  box.appendChild(el('h2',{id:'sum-weak-h'},'優先複習'));
+  if(!weak.gradedTotal){
+    box.appendChild(el('p',null,'這一科還沒有自評紀錄。到申論評分參考作答並勾選評分要點後，這裡會排出常考又失分的主題。'));
+    const top=d.chart[0]&&weak.bySection[d.chart[0].section];
+    if(top){ const p=el('p',null,'可以從最常考的主題開始：'); p.appendChild(chapterLink(d,top)); box.appendChild(p); }
+    return;
+  }
+  if(weak.ranked.length){
+    const ol=el('ol',{class:'sum-weak-list'});
+    weak.ranked.forEach(c=>{ const li=el('li'); li.appendChild(chapterLink(d,c)); li.appendChild(el('span',{class:'detail'},'掌握度 '+c.avg+'%・'+practised(c)+'・觀護人出過 '+c.guan+' 題')); ol.appendChild(li); });
+    box.appendChild(ol);
+  } else box.appendChild(el('p',null,'目前還排不出順序：一章至少要自評 '+WK.MIN+' 題才會列入。'));
+  if(weak.untried.length){
+    box.appendChild(el('h3',null,'常考但還沒練夠'));
+    const ul=el('ul',{class:'sum-weak-list'});
+    weak.untried.forEach(c=>{ const li=el('li'); li.appendChild(chapterLink(d,c)); li.appendChild(el('span',{class:'detail'},practised(c)+'・觀護人出過 '+c.guan+' 題')); ul.appendChild(li); });
+    box.appendChild(ul);
+  }
+  box.appendChild(el('p',{class:'small muted'},'排序方式：出題次數（觀護人的題算 '+WK.GUAN_W+' 倍）乘上還沒掌握的比例。掌握度是該章已自評題目的平均分數；紀錄只讀取，不會被更動。'));
+}
+
 function renderSubjects(){
   const box=$('sum-subjects'); box.textContent='';
   LIST.forEach(x=>{
@@ -98,6 +153,7 @@ function renderSubjects(){
 function render(slug){
   const d=S.items[slug]; if(!d) return;
   $('sum-error').hidden=true; $('sum-layout').hidden=false;
+  computeWeak(d); renderWeak(d);
   $('sum-title').textContent=d.title;
   const codes=Object.entries(d.codes).map(([k,v])=>k+'＝'+v).join('；');
   $('sum-meta').textContent='共 '+d.total+' 題，依主題分 '+d.chart.length+' 章。題號代號：'+codes+'。';
@@ -108,6 +164,7 @@ function render(slug){
     const li=el('li'); li.appendChild(el('a',{href:'#'+d.slug+'/'+sec.id,'data-section':sec.id},sec.title)); toc.appendChild(li);
     const s=el('section',{class:'sheet sum-section',id:sid,'aria-labelledby':sid+'-h'});
     s.appendChild(el('h2',{id:sid+'-h',tabindex:'-1'},sec.title));
+    const c=weak&&weak.bySection[sec.id]; if(c) s.appendChild(renderPractice(c,d));
     renderBlocks(s,sec.blocks,d);
     const back=el('p',{class:'sum-back'}); const a=el('a',{href:'#sum-toc'},'↑ 回到目錄');
     a.addEventListener('click',e=>{ e.preventDefault(); const t=$('sum-toc'); t.open=true; t.scrollIntoView({block:'start'}); t.querySelector('summary').focus(); });
@@ -152,6 +209,12 @@ document.addEventListener('click',e=>{
   e.preventDefault(); setHash(current,a.getAttribute('data-section')); jump(current,a.getAttribute('data-section'));
 });
 window.addEventListener('hashchange',()=>{ const p=parseHash(); if(p) go(p.slug,p.section,true); });
+
+// 從申論評分參考回來時，自評紀錄若有變動就重畫，並留在原本的捲動位置。
+function refreshWeak(){ if(!BY_ID||!current||!S.items[current]||WK.rawStore()===weakRaw) return; const y=window.scrollY; render(current); window.scrollTo(0,y); }
+document.addEventListener('visibilitychange',()=>{ if(!document.hidden) refreshWeak(); });
+window.addEventListener('pageshow',refreshWeak);
+window.addEventListener('storage',refreshWeak);
 
 // 窄螢幕預設收合目錄，避免一進頁面就是長串清單。
 try { if(window.matchMedia('(max-width:1023px)').matches) $('sum-toc').open=false; } catch (e) {}

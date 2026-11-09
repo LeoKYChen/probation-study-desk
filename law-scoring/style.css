@@ -219,3 +219,25 @@ a.qref.guan{font-weight:700}
   .sum-table td::before{content:attr(data-label);display:block;font-size:12.5px;font-weight:700;color:var(--ink-soft)}
   .sum-table thead{display:none}
 }
+/* 弱點地圖：優先複習、各章練習狀況、排行圖的掌握度 */
+.sum-weak>h2{font-size:clamp(18px,2.6vw,21px);margin-bottom:6px}
+.sum-weak h3{font-size:16px;margin:16px 0 4px;color:var(--accent)}
+.sum-weak p{margin:8px 0}
+.sum-weak-list{margin:6px 0 4px;padding-left:24px}
+.sum-weak-list li{margin:2px 0}
+.sum-weak-list a{display:inline-flex;align-items:center;min-height:44px;font-weight:700}
+.sum-weak-list .detail{display:block;font-size:13.5px;color:var(--ink-soft);font-variant-numeric:tabular-nums;margin-top:-6px;padding-bottom:6px}
+.sum-practice{margin:8px 0 12px;border:1px solid var(--rule);border-radius:10px;background:var(--paper)}
+.sum-practice>summary{cursor:pointer;min-height:44px;display:flex;align-items:center;padding:4px 14px;font-size:14.5px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums}
+.sum-practice>summary:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.sum-practice[open]>summary{border-bottom:1px solid var(--rule)}
+.sum-section .sum-plabel{margin:10px 14px 2px;font-size:13.5px;font-weight:700;color:var(--ink-soft)}
+.sum-section .sum-qlist{list-style:none;margin:0 8px 8px;padding:0;display:flex;flex-wrap:wrap;gap:0 4px}
+.sum-qlist li{margin:0;font-size:14px;font-variant-numeric:tabular-nums}
+.sum-qlist a{display:inline-flex;align-items:center;min-height:44px;padding:0 6px}
+.sum-bars .mastery{grid-column:1/-1;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--ink-soft);font-variant-numeric:tabular-nums}
+.sum-bars .mbar{flex:none;width:72px;height:6px;border-radius:3px;background:var(--rule);overflow:hidden}
+.sum-bars .mfill{display:block;height:100%;background:var(--accent)}
+.sum-bars .mfill.low{background:var(--seal)}
+.sum-weak p a{display:inline-flex;align-items:center;min-height:44px;font-weight:700}
+.sum-bars .mtext{flex:1;min-width:0;line-height:1.4}
