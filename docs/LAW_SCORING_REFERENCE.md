@@ -182,7 +182,7 @@
 
 ## 七、通勤模式（2026-11-10）
 
-- 頁面：`law-scoring/commute.html`。三組卡片：失分回想、考點回想、理論卡；單手操作、不用打字，會記住上次位置。
-- 失分回想與考點回想共用原本的紀錄鍵與排程。本頁新增的紀錄鍵只有 `lawScoring.theoryCards.v1`（理論卡，已納入完整備份）與 `lawScoring.commute.v1`（上次位置與字級，不納入備份）。
-- 理論卡由 `law-scoring/theory-cards.js` 從三科重點整理即時產生，不另存內容；重點整理改版後，粗體標題或所屬考點改名的卡會被視為新卡，舊紀錄保留但不再出題。
+- 頁面：`law-scoring/commute.html`。三組卡片：失分回想、考點回想、要點卡（原名理論卡）；單手操作、不用打字，會記住上次位置。
+- 失分回想與考點回想共用原本的紀錄鍵與排程。本頁新增的紀錄鍵只有 `lawScoring.theoryCards.v1`（要點卡，已納入完整備份）與 `lawScoring.commute.v1`（上次位置與字級，不納入備份）。
+- 要點卡由 `law-scoring/theory-cards.js` 從六科重點整理即時產生（2026-11-11 起納入刑法、刑訴與保安處分、少年事件處理法），不另存內容；重點整理改版後，粗體標題或所屬考點改名的卡會被視為新卡，舊紀錄保留但不再出題。
 - 檢查：`node verification/law-scoring-commute.cjs`；瀏覽器檢查 `NODE_PATH=<playwright 所在> node verification/law-scoring-commute-browser.cjs [截圖資料夾]`。

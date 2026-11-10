@@ -12,12 +12,23 @@ const code=f=>read(f).replace(/\/\*[\s\S]*?\*\//g,'');
 assert(!/innerHTML/.test(code('law-scoring/commute.js')+code('law-scoring/theory-cards.js')),'content is built with DOM nodes only');
 assert(!/lawScoring\.v2/.test(code('law-scoring/commute.js')+code('law-scoring/theory-cards.js')),'the scoring store is never named, so it cannot be written');
 
-// 理論卡：三科每個有粗體標題的條列項目一張卡，id 不重複，內容原樣取自重點整理
-assert.deepEqual([...TH.SUBJECTS],['criminology','psychology','counseling']);
+// 要點卡（原理論卡）：六科每個有粗體標題的條列項目一張卡，id 不重複，內容原樣取自重點整理
+assert.deepEqual([...TH.SUBJECTS],['criminology','psychology','counseling','criminal-law','criminal-procedure','juvenile']);
 const all=TH.SUBJECTS.flatMap(s=>TH.cardsOf(S.items[s]));
 const expected=TH.SUBJECTS.reduce((a,s)=>a+S.items[s].sections.filter(x=>x.count!=null).reduce((b,x)=>b+x.blocks.filter(k=>k.t==='ul'||k.t==='ol').reduce((c,k)=>c+k.items.filter(it=>/^\*\*[^*]+\*\*/.test(it.text)).length,0),0),0);
 assert.equal(all.length,expected,'one card per labelled bullet'); assert(all.length>=400);
 assert.equal(new Set(all.map(c=>c.id)).size,all.length,'card ids are unique');
+// 法律三科也產生卡片；答題骨架各成一張卡（三科共 72 張）；原有三科的卡排在前面、順序不變
+const LAW3=['criminal-law','criminal-procedure','juvenile'];
+for(const sl of LAW3) assert(all.some(c=>c.slug===sl),sl+' has point cards');
+assert.equal(all.filter(c=>LAW3.includes(c.slug)&&c.label==='答題骨架').length,72,'every law skeleton is a card');
+const firstLaw=all.findIndex(c=>LAW3.includes(c.slug)); assert(all.slice(0,firstLaw).every(c=>!LAW3.includes(c.slug))&&all.slice(firstLaw).every(c=>LAW3.includes(c.slug)),'theory subjects come first');
+assert(firstLaw>=400,'the original theory cards are all still there');
+// 範圍設定：只練法律三科時，新卡只出法律科；設定存在 __subjects，不動卡片紀錄
+{ const lawOnly=TH.unpack({'__subjects':LAW3}); assert.deepEqual([...lawOnly.subjects],LAW3);
+  const ql=T.queue(lawOnly,T.orderNew(all,S.items,null),'2026-11-11',TH.NEW_PER_DAY-T.NEW_PER_DAY); assert.equal(ql.fresh.length,10); assert(ql.fresh.every(c=>LAW3.includes(c.slug)),'law scope shows only law cards');
+  assert.equal(JSON.stringify(TH.pack(lawOnly)),JSON.stringify({__subjects:LAW3})); }
+const cmHtml=fs.readFileSync(path.join(root,'law-scoring/commute.html'),'utf8'); for(const k of ['all','theory','law']) assert(cmHtml.includes('data-scope="'+k+'"'),'scope button '+k);
 for(const c of all){
   assert(c.label&&c.chapter&&c.item&&c.item.text.startsWith('**'+c.label),c.id+' keeps the original bullet');
   const sec=S.items[c.slug].sections.find(x=>x.id===c.section); assert(sec&&sec.count!=null,c.id+' belongs to a real chapter');
