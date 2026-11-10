@@ -268,3 +268,16 @@ a.qref.guan{font-weight:700}
 .tr-content{padding:0}
 .tr-content>:first-child{margin-top:0}
 #tr-done .btn,#tr-error .btn{min-height:44px}
+
+/* 限時練習與拆題核對 */
+.timed{border:1px solid var(--rule);border-radius:12px;padding:12px 14px;margin:0 0 14px;background:var(--paper)}
+.timed-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 12px}
+.timed-clock{font-size:22px;font-weight:700;font-variant-numeric:tabular-nums}
+.timed-clock.expired{color:var(--seal)}
+.timed-actions{justify-content:flex-start;flex-wrap:wrap}
+.timed textarea.outline{min-height:110px;margin-top:6px}
+.outline-view{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;margin:6px 0 12px;padding:10px 12px;border:1px solid var(--rule);border-radius:10px}
+.timed-steps{list-style:none;margin:6px 0;padding:0}
+.timed-steps li{margin:0}
+.timed-steps label{display:flex;gap:10px;align-items:flex-start;min-height:44px;padding:8px 0;overflow-wrap:anywhere}
+.timed-steps input{flex:none;width:22px;height:22px;margin-top:2px}
