@@ -7,6 +7,8 @@ run('law-scoring/data.js'); run('law-scoring/summaries/index.js');
 const S=w.LawScoringSummaries, ALL=new Set(w.LawScoringData.questions.map(q=>q.id));
 const TOK=/(觀護|監獄|犯防|薦任|監所|家調)(\d{3})-(\d)/g;
 const counted=new Map();
+// 2026-11-10 修正過的形近錯字，避免再出現
+const TYPOS=/肆事|陀生|酒酔|磎裂|竬出|陰同|誣謗|攜帶兵器|晩談|癫|蒸集|意涪|陪阱|虛待|沖革|倉賴|腳素|陸生情境|營悉|引橋|醸|匈乏/;
 const SKELETON_REQUIRED=new Set(['criminal-law','criminal-procedure']); let skeletons=0;
 assert(Array.isArray(S.list)&&S.list.length===6,'six subjects listed');
 function texts(b,out){
@@ -29,6 +31,7 @@ for(const m of S.list){
     const all=s.blocks.flatMap(b=>texts(b,[]));
     for(const t of all){
       assert(!/待對照教材|請自行核對|<\/?[a-z]/i.test(t),m.slug+' no placeholders or raw HTML: '+t.slice(0,40));
+      assert(!TYPOS.test(t),m.slug+' known typo: '+t.slice(0,40));
       for(const k of t.matchAll(TOK)) assert(ALL.has(d.links[k[0]]),m.slug+' '+k[0]+' links to an existing question');
     }
     // 排行圖：只數「出題：」行，括號內的「另見」不算；每章題數要等於標題寫的題數。
