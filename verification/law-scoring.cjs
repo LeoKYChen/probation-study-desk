@@ -168,3 +168,15 @@ assert(LAWD.length>=95,'law subjects have breakdowns');
 assert(LAWD.every(([,d])=>'DEF'.includes(d.qtype)&&/法條核對/.test(S.blocksText(d.intent))),'law questions use law types and verified-article sections');
 assert(LAWD.every(([,d])=>!/請以條文|作答前請核對/.test(S.blocksText(d.intent))),'law breakdowns leave no unverified placeholders');
 console.log('PASS law-scoring exam design: '+designTotal+' questions in '+DESIGN_FILES.length+' subject files');
+
+// 限時練習：時間依配分（每 1 分 1.2 分鐘，含拆題 3 分鐘）；「作答動作」拆成步驟供拆題核對
+assert.equal(S.timedLimit({points:25}),30*60,'25 分題限時 30 分鐘');
+assert.equal(S.timedLimit({points:20}),24*60); assert.equal(S.timedLimit({points:50}),60*60);
+assert.equal(S.timedLimit({}),30*60,'沒有配分時以 25 分計'); assert(S.timedLimit({points:1})>=240,'再短也留拆題與作答時間');
+assert(D.questions.every(q=>S.timedLimit(q)%60===0&&S.timedLimit(q)>=12*60&&S.timedLimit(q)<=60*60),'每一題的限時是整數分鐘，介於 12 到 60 分鐘');
+assert.equal(JSON.stringify(S.actionSteps({structure:[{t:'ul',items:['**背景材料**：x','**作答動作**：甲的**偽造** → 乙的定性 → 競合。']}]})),JSON.stringify(['甲的偽造','乙的定性','競合']));
+assert.equal(S.actionSteps(null).length,0); assert.equal(S.actionSteps({structure:[{t:'p',text:'x'}]}).length,0);
+let stepped=0; for(const d of Object.values(ED.items)){ const st=S.actionSteps(d); assert(st.length>=1,'每一題的命題結構都有「作答動作」'); assert(st.every(x=>x&&!/→|\*\*/.test(x)),'步驟文字乾淨'); if(st.length>1) stepped++; }
+assert(stepped>=500,'至少 500 題的作答動作可拆成多步');
+const PAGE=fs.readFileSync(path.join(root,'law-scoring/index.html'),'utf8'); for(const id of ['timed','timed-clock','timed-start','timed-next','timed-reset','outline','timed-sheet','timed-steps']) assert(PAGE.includes('id="'+id+'"'),'page has #'+id);
+console.log('PASS law-scoring timed practice: '+stepped+' questions with multi-step actions');

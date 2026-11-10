@@ -43,6 +43,15 @@
 
       <section class="sheet" aria-labelledby="ans-heading">
         <h2 id="ans-heading">一、先作答</h2>
+        <div class="timed" id="timed">
+          <div class="timed-head"><strong id="timed-title">限時練習（選用）</strong><span class="timed-clock" id="timed-clock" role="timer" aria-labelledby="timed-title"></span></div>
+          <p class="small muted" id="timed-status"></p>
+          <div class="row-actions timed-actions"><button class="btn ghost" id="timed-start" type="button">開始限時：先拆題 3 分鐘</button><button class="btn primary" id="timed-next" type="button" hidden>拆題完成，開始作答</button><button class="btn ghost" id="timed-reset" type="button" hidden>重設計時</button></div>
+          <div id="outline-wrap" hidden>
+            <label for="outline" class="small muted">拆題骨架：先不寫內容，只列出爭點與作答順序（例如：罪名 → 共犯 → 加重減輕 → 競合）。</label>
+            <textarea id="outline" class="outline" maxlength="2000"></textarea>
+          </div>
+        </div>
         <label for="answer" class="small muted">建議先寫完整答案或詳細大綱再展開評分要點；寫在紙上或其他網站也可以，直接展開後逐列勾選。</label>
         <textarea id="answer" maxlength="20000"></textarea>
         <div class="answer-link">
@@ -56,6 +65,16 @@
       <div id="locked" class="locked">評分要點在作答後才會出現，先試著自己寫寫看。</div>
 
       <div id="graded" hidden style="display:flex;flex-direction:column;gap:20px">
+        <section class="sheet" id="timed-sheet" aria-labelledby="timed-sheet-h" hidden>
+          <h2 id="timed-sheet-h">拆題核對</h2>
+          <p class="small muted" id="timed-summary"></p>
+          <div id="timed-outline-box" hidden><p class="small muted" style="margin:0">你的拆題骨架：</p><pre class="outline-view" id="timed-outline-view"></pre></div>
+          <div id="timed-steps-box" hidden>
+            <p class="small muted" id="timed-steps-hint"></p>
+            <ul class="timed-steps" id="timed-steps"></ul>
+            <p class="small" id="timed-steps-count" aria-live="polite"></p>
+          </div>
+        </section>
         <section class="sheet" aria-labelledby="pts-heading">
           <h2 id="pts-heading" tabindex="-1">二、逐列對照評分要點</h2>
           <p class="small muted" id="overview"></p>

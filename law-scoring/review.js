@@ -29,7 +29,7 @@ function graded(store) { return DATA.questions.filter(q => isGraded(store[q.id])
 // 清除某題：自評紀錄回到未作答（保留開發者補充與核定），並刪掉這題的全部回想卡。
 function clearQuestion(store, cards, qid) {
   const s = Object.assign({}, store), c = {};
-  if (s[qid]) s[qid] = Object.assign({}, s[qid], {answer:'', answerUrl:'', unlocked:false, checks:{}, organize:{}});
+  if (s[qid]) { s[qid] = Object.assign({}, s[qid], {answer:'', answerUrl:'', unlocked:false, checks:{}, organize:{}}); delete s[qid].timed; }
   for (const id of Object.keys(cards)) if (id.split('#')[0] !== qid) c[id] = cards[id];
   return {store:s, cards:c};
 }

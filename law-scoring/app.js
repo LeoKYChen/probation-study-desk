@@ -25,7 +25,9 @@ const designLoading = {};
 // 純文字：去掉 **粗體** 記號，用於 AI 複製文字。
 const plain = t => String(t).replace(/\*\*/g,'');
 function blocksText(blocks){ return (blocks||[]).map(b=>b.t==='p'?plain(b.text):b.items.map((x,i)=>(b.t==='ol'?(i+1)+'. ':'・')+plain(x)).join('\n')).join('\n'); }
-window.LawScoring = {score:(q,s)=>score(q,s), COLS, weights:q=>W(q), design:designOf, designFile, blocksText};
+// 限時練習：拆題秒數與每 1 分配幾分鐘（正式考試 120 分鐘寫 100 分）。
+const OUTLINE_SEC=180, MIN_PER_POINT=1.2;
+window.LawScoring = {score:(q,s)=>score(q,s), COLS, weights:q=>W(q), design:designOf, designFile, blocksText, timedLimit:q=>timedLimit(q), actionSteps:d=>actionSteps(d)};
 if (typeof document==='undefined' || !document.getElementById('answer')) return;
 let store = {};
 try { store = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { store = {}; }
@@ -123,6 +125,7 @@ function render(){
   $('answer-url').value=s.answerUrl||'';
   syncUrl();
   syncCount();
+  renderTimed(q,s,d);
   $('locked').hidden=s.unlocked; $('graded').hidden=!s.unlocked; $('unlock').hidden=s.unlocked;
   $('graded').style.display=s.unlocked?'flex':'none';
   $('copy-dev').hidden=!dev;
@@ -136,6 +139,75 @@ function render(){
   renderScore();
 }
 
+// ── 限時練習（選用）：拆題 3 分鐘＋依配分計時作答；時間到只提醒，仍可繼續寫。
+// 紀錄放在該題的 timed 欄位：{outline, t0 開始, t1 開始作答, t2 展開評分要點, limit 秒, steps:{第幾步:true}}；不影響自評分數。
+function timedLimit(q){ return Math.max(OUTLINE_SEC+60, Math.round((Number(q.points)||25)*MIN_PER_POINT)*60); }
+// 命題者視角「作答動作」那一行拆成步驟；沒有這一行回傳空陣列。
+function actionSteps(d){
+  if(!d||!Array.isArray(d.structure)) return [];
+  for(const b of d.structure) if(b.t==='ul'||b.t==='ol') for(const it of b.items){ const t=typeof it==='string'?it:it.text; const m=/^\*\*作答動作\*\*[：:]\s*(.+)$/.exec(t||''); if(m) return m[1].replace(/。\s*$/,'').split(/\s*→\s*/).map(x=>x.replace(/\*\*/g,'').trim()).filter(Boolean); }
+  return [];
+}
+function tm(s){ return s.timed||(s.timed={outline:'',steps:{}}); }
+function mmss(sec){ sec=Math.max(0,Math.round(sec)); return Math.floor(sec/60)+':'+String(sec%60).padStart(2,'0'); }
+function mins(sec){ sec=Math.max(0,Math.round(sec)); const m=Math.floor(sec/60), r=sec%60; return (m?m+' 分':'')+(r||!m?' '+r+' 秒':'') ; }
+let timedTick=null, timedSaid='';
+function timedPhase(t){ if(!t||!t.t0) return 'idle'; if(t.t2) return 'done'; return t.t1?'write':'outline'; }
+function updateTimed(){
+  const q=current, s=st(q), t=s.timed, ph=timedPhase(t), limit=(t&&t.limit)||timedLimit(q), now=Date.now();
+  const clock=$('timed-clock'), status=$('timed-status');
+  clock.classList.remove('expired');
+  let note='';
+  if(ph==='idle'){
+    clock.textContent=mmss(limit);
+    status.textContent='本題 '+q.points+' 分，限時 '+Math.round(limit/60)+' 分鐘（含拆題 3 分鐘）。不開計時也可以照原本方式作答。';
+  } else if(ph==='outline'){
+    const left=OUTLINE_SEC-(now-t.t0)/1000;
+    clock.textContent=mmss(left); clock.classList.toggle('expired',left<=0);
+    status.textContent=left>0?'拆題中：只列爭點與作答順序，先不要寫內容。':'拆題 3 分鐘已到，請按「拆題完成，開始作答」。全題時間仍在計算。';
+    if(left<=0) note='outline-end';
+  } else if(ph==='write'){
+    const left=limit-(now-t.t0)/1000;
+    clock.textContent=left>=0?mmss(left):'超時 '+mmss(-left); clock.classList.toggle('expired',left<0);
+    status.textContent=left>=0?'作答中：剩餘時間是全題時間（已扣掉拆題用掉的時間）。重新整理不會重設。':'時間到；仍可繼續寫，展開評分要點時會記錄超時。';
+    if(left<0) note='time-up';
+  } else {
+    const used=(t.t2-t.t0)/1000;
+    clock.textContent=mmss(used);
+    status.textContent='本次用時 '+mins(used)+'（限時 '+Math.round(limit/60)+' 分鐘'+(used>limit?'，超時 '+mins(used-limit):'')+'）。';
+  }
+  if(note&&timedSaid!==q.id+note){ timedSaid=q.id+note; say(note==='time-up'?'限時已到，仍可繼續作答。':'拆題 3 分鐘已到。'); }
+  $('timed-start').hidden=ph!=='idle'; $('timed-next').hidden=ph!=='outline'; $('timed-reset').hidden=ph==='idle';
+  $('outline-wrap').hidden=ph==='idle'&&!(t&&String(t.outline||'').trim());
+  if(timedTick&&(ph==='idle'||ph==='done')){ clearInterval(timedTick); timedTick=null; }
+  if(!timedTick&&(ph==='outline'||ph==='write')) timedTick=setInterval(updateTimed,1000);
+}
+function renderTimed(q,s,d){
+  if(timedTick){ clearInterval(timedTick); timedTick=null; }
+  $('outline').value=(s.timed&&s.timed.outline)||'';
+  updateTimed();
+  // 展開評分要點後：用時摘要、拆題骨架，以及與「作答動作」逐步核對。
+  const t=s.timed, steps=actionSteps(d), outline=String((t&&t.outline)||'').trim(), sheet=$('timed-sheet');
+  const show=s.unlocked&&!!(outline||(t&&t.t0));
+  sheet.hidden=!show; if(!show) return;
+  const limit=(t&&t.limit)||timedLimit(q);
+  let sum='';
+  if(t&&t.t0&&t.t2){ const used=(t.t2-t.t0)/1000; sum='用時 '+mins(used)+'，限時 '+Math.round(limit/60)+' 分鐘'+(used>limit?'，超時 '+mins(used-limit):'，在時間內完成')+'。'+(t.t1?'其中拆題用了 '+mins((t.t1-t.t0)/1000)+'。':''); }
+  else sum='這一題沒有完整的計時紀錄。';
+  $('timed-summary').textContent=sum;
+  $('timed-outline-box').hidden=!outline; $('timed-outline-view').textContent=outline;
+  const box=$('timed-steps-box'), ul=$('timed-steps'); ul.textContent='';
+  box.hidden=!(outline&&steps.length); if(box.hidden) return;
+  const many=steps.length>1;
+  $('timed-steps-hint').textContent=many?'命題者視角的「作答動作」共 '+steps.length+' 步。對照你的骨架，有列到的打勾：':'命題者視角的「作答動作」（這一題沒有分步，請自行對照）：';
+  const done=tm(s).steps||(tm(s).steps={});
+  const count=()=>{ $('timed-steps-count').textContent=many?'拆題列到 '+steps.filter((_,i)=>done[i]).length+'／'+steps.length+' 步。':''; };
+  steps.forEach((txt,i)=>{ const li=el('li');
+    if(many){ const lab=el('label'), cb=el('input',{type:'checkbox'}); cb.checked=!!done[i]; cb.addEventListener('change',()=>{ done[i]=cb.checked; persist(); count(); }); lab.appendChild(cb); lab.appendChild(el('span',null,txt)); li.appendChild(lab); }
+    else li.textContent=txt;
+    ul.appendChild(li); });
+  count();
+}
 function syncCount(){
   const n=$('answer').value.trim().length;
   $('count').textContent=n+' 字';
@@ -259,7 +331,11 @@ $('question-select').addEventListener('change',e=>{ current=DATA.questions.find(
 $('answer').addEventListener('input',()=>{ st(current).answer=$('answer').value; persist(); syncCount(); });
 $('answer-url').addEventListener('input',()=>{ st(current).answerUrl=$('answer-url').value.trim(); persist(); syncUrl(); syncCount(); });
 $('answer-url').addEventListener('change',()=>renderPicker());
-$('unlock').addEventListener('click',()=>{ st(current).unlocked=true; persist(); render(); $('pts-heading').focus(); });
+$('unlock').addEventListener('click',()=>{ const s=st(current); if(s.timed&&s.timed.t0&&!s.timed.t2) s.timed.t2=Date.now(); s.unlocked=true; persist(); render(); $('pts-heading').focus(); });
+$('timed-start').addEventListener('click',()=>{ const s=st(current), t=tm(s); if(t.t0) return; t.t0=Date.now(); t.limit=timedLimit(current); delete t.t1; delete t.t2; persist(); updateTimed(); $('outline').focus(); say('開始計時：先拆題 3 分鐘。'); });
+$('timed-next').addEventListener('click',()=>{ const t=tm(st(current)); if(!t.t0||t.t1) return; t.t1=Date.now(); persist(); updateTimed(); $('answer').focus(); say('開始作答。'); });
+$('timed-reset').addEventListener('click',()=>{ const s=st(current), t=tm(s); delete t.t0; delete t.t1; delete t.t2; delete t.limit; timedSaid=''; persist(); render(); say('計時已重設；拆題骨架與作答都保留。'); });
+$('outline').addEventListener('input',()=>{ tm(st(current)).outline=$('outline').value; persist(); });
 $('dev-mode').addEventListener('change',e=>{ dev=e.target.checked; store.__dev=dev; persist(); render(); });
 $('copy-ai').addEventListener('click',()=>copy(aiText(),'已複製，請貼到 AI 對話中。'));
 $('copy-dev').addEventListener('click',()=>{
@@ -274,7 +350,7 @@ function resetPrompt(){
   const checks=el('button',{class:'btn danger',type:'button'},'只清勾選'), all=el('button',{class:'btn danger',type:'button'},'作答、網址與勾選全部清除'), no=el('button',{class:'btn ghost',type:'button'},'取消');
   checks.onclick=()=>{ const s=st(current); s.checks={}; s.organize={}; persist(); back(); render(); say('已清除本題勾選。'); };
   // 回到未作答狀態：失分統計與回想卡不再計入這題（已複習過的回想卡另在回想卡頁清除）。
-  all.onclick=()=>{ const s=st(current); Object.assign(s,{answer:'',answerUrl:'',unlocked:false,checks:{},organize:{}}); persist(); back(); render(); say('已清除本題的作答與勾選。'); };
+  all.onclick=()=>{ const s=st(current); Object.assign(s,{answer:'',answerUrl:'',unlocked:false,checks:{},organize:{}}); delete s.timed; timedSaid=''; persist(); back(); render(); say('已清除本題的作答、拆題與勾選。'); };
   no.onclick=back; area.appendChild(checks); area.appendChild(all); area.appendChild(no);
 }
 
