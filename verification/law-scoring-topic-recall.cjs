@@ -18,7 +18,7 @@ for(const c of all){ assert(c.blocks.length&&c.hints.length,c.id+' has content a
 
 // 答題骨架：拆成步驟給「看骨架」用；不出現在提示裡；沒有骨架的卡回傳空陣列
 for(const c of all){ assert(Array.isArray(c.skeleton),c.id+' skeleton is a list'); assert(!c.hints.includes('答題骨架'),c.id+' hints exclude the skeleton label'); }
-for(const c of all.filter(c=>c.slug==='criminal-law'||c.slug==='criminal-procedure')){ assert(c.skeleton.length>=3,c.id+' has skeleton steps'); assert(c.skeleton.every(x=>x&&!/→|\*\*/.test(x)&&!/。$/.test(c.skeleton[c.skeleton.length-1])),c.id+' skeleton steps are clean'); }
+for(const c of all.filter(c=>c.slug==='criminal-law'||c.slug==='criminal-procedure'||c.slug==='juvenile')){ assert(c.skeleton.length>=3,c.id+' has skeleton steps'); assert(c.skeleton.every(x=>x&&!/→|\*\*/.test(x)&&!/。$/.test(c.skeleton[c.skeleton.length-1])),c.id+' skeleton steps are clean'); }
 assert(all.some(c=>!c.skeleton.length),'cards without a skeleton still work');
 assert.equal(JSON.stringify(T.skeletonOf([{t:'ul',items:[{text:'**甲**：x'},{text:'**答題骨架**：一 → 二 → 三。'}]}])),'["一","二","三"]');
 assert.equal(T.skeletonOf([{t:'p',text:'x'}]).length,0);
