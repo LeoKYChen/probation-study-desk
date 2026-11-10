@@ -16,6 +16,13 @@ assert.equal(all.length,h3,'one card per 考點'); assert(all.length>=150);
 assert.equal(new Set(all.map(c=>c.id)).size,all.length,'card ids are unique');
 for(const c of all){ assert(c.blocks.length&&c.hints.length,c.id+' has content and hints'); assert(!c.blocks.some(b=>b.t==='h3'||(b.t==='p'&&b.text===c.src)),c.id+' body excludes heading and source line'); }
 
+// 答題骨架：拆成步驟給「看骨架」用；不出現在提示裡；沒有骨架的卡回傳空陣列
+for(const c of all){ assert(Array.isArray(c.skeleton),c.id+' skeleton is a list'); assert(!c.hints.includes('答題骨架'),c.id+' hints exclude the skeleton label'); }
+for(const c of all.filter(c=>c.slug==='criminal-law'||c.slug==='criminal-procedure')){ assert(c.skeleton.length>=3,c.id+' has skeleton steps'); assert(c.skeleton.every(x=>x&&!/→|\*\*/.test(x)&&!/。$/.test(c.skeleton[c.skeleton.length-1])),c.id+' skeleton steps are clean'); }
+assert(all.some(c=>!c.skeleton.length),'cards without a skeleton still work');
+assert.equal(JSON.stringify(T.skeletonOf([{t:'ul',items:[{text:'**甲**：x'},{text:'**答題骨架**：一 → 二 → 三。'}]}])),'["一","二","三"]');
+assert.equal(T.skeletonOf([{t:'p',text:'x'}]).length,0);
+const page=fs.readFileSync(path.join(root,'law-scoring/review.html'),'utf8'); for(const id of ['tr-skel','tr-skeleton','tr-skel-list']) assert(page.includes('id="'+id+'"'),'review page has #'+id);
 // 新卡順序：弱點地圖排到的章最先
 const byId=new Map(w.LawScoringData.questions.map(q=>[q.id,q])), d=S.items.juvenile;
 const fill=(q,on)=>{ const cols=w.LawScoring.COLS[q.kind].map(c=>c[0]); return {unlocked:true,answer:'x',checks:Object.fromEntries(q.rows.map((_,i)=>[i,Object.fromEntries(cols.map(c=>[c,on]))])),organize:Object.fromEntries(q.organize.map((_,i)=>[i,on]))}; };

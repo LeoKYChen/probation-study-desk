@@ -261,7 +261,7 @@ a.qref.guan{font-weight:700}
 .tr-subject input{width:20px;height:20px;flex:none;accent-color:var(--accent)}
 .tr-src{line-height:2}
 .tr-hints{border:1px dashed var(--rule);border-radius:10px;padding:10px 14px}
-.tr-hints ul{margin:6px 0 0;padding-left:22px}
+.tr-hints ul,.tr-hints ol{margin:6px 0 0;padding-left:22px}
 .tr-hints li{margin:3px 0}
 .tr-content{padding:0}
 .tr-content>:first-child{margin-top:0}

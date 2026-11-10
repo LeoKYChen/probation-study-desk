@@ -7,6 +7,7 @@ run('law-scoring/data.js'); run('law-scoring/summaries/index.js');
 const S=w.LawScoringSummaries, ALL=new Set(w.LawScoringData.questions.map(q=>q.id));
 const TOK=/(觀護|監獄|犯防|薦任|監所|家調)(\d{3})-(\d)/g;
 const counted=new Map();
+const SKELETON_REQUIRED=new Set(['criminal-law','criminal-procedure']); let skeletons=0;
 assert(Array.isArray(S.list)&&S.list.length===6,'six subjects listed');
 function texts(b,out){
   if(b.t==='p'||b.t==='h3') out.push(b.text);
@@ -43,7 +44,19 @@ for(const m of S.list){
     }
   }
   assert.equal(total,d.total,m.slug+' total'); assert.equal(m.total,d.total,m.slug+' index total');
+  // 答題骨架：列在 SKELETON_REQUIRED 的科目，每個考點都要有且只有一行「**答題骨架**：A → B → C。」
+  if(SKELETON_REQUIRED.has(m.slug)) for(const s of d.sections){
+    if(s.count==null) continue;
+    let cur=null; const groups=[];
+    for(const b of s.blocks){ if(b.t==='h3'){ cur={title:b.text,lines:[]}; groups.push(cur); } else if(cur&&(b.t==='ul'||b.t==='ol')) for(const it of b.items) if(it.text.startsWith('**答題骨架**')) cur.lines.push(it.text); }
+    for(const g of groups){
+      assert.equal(g.lines.length,1,m.slug+' '+g.title+' has exactly one 答題骨架');
+      assert(/^\*\*答題骨架\*\*：.+ → .+ → .+。$/.test(g.lines[0]),m.slug+' '+g.title+' skeleton has at least three steps');
+      skeletons++;
+    }
+  }
 }
 // 六份合起來正好涵蓋網站 553 題，每題只歸一個主題。
 assert.equal(counted.size,ALL.size,'every question appears in exactly one summary topic');
-console.log('law-scoring summaries: '+S.list.length+' subjects, '+counted.size+' questions');
+assert.equal(skeletons,41,'刑法 27 個、刑訴與保安處分 14 個考點都有答題骨架');
+console.log('law-scoring summaries: '+S.list.length+' subjects, '+counted.size+' questions, '+skeletons+' required skeletons');

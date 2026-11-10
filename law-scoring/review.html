@@ -25,7 +25,7 @@
       <div class="deck-head">
         <div><h2 id="tr-heading" tabindex="-1">今天的考點回想</h2><p class="small muted" id="tr-summary" style="margin:4px 0 0"></p></div>
       </div>
-      <p class="small muted" style="margin:0">每張卡是重點整理的一個考點：先自己回想，再對照內容並自評。新卡每天最多 5 張，常考又失分的主題先出。進度只存在這個瀏覽器，不會更動自評紀錄。</p>
+      <p class="small muted" style="margin:0">每張卡是重點整理的一個考點：先自己回想，再對照內容並自評。想不起來時可先看提示（要點標題），有答題骨架的考點還可再看骨架（作答順序）。新卡每天最多 5 張，常考又失分的主題先出。進度只存在這個瀏覽器，不會更動自評紀錄。</p>
       <details class="tr-subjects" id="tr-subjects" hidden><summary id="tr-subjects-summary">要練的科目</summary><div id="tr-subject-list" role="group" aria-label="要練的科目"></div></details>
       <div id="tr-card" hidden class="recall-card">
         <p class="kicker" id="tr-meta"></p>
@@ -33,8 +33,9 @@
         <p class="small tr-src" id="tr-src" style="margin:0"></p>
         <label for="tr-answer" class="small muted">先不看內容，寫出這個考點的要點（不會保存）。</label>
         <textarea id="tr-answer" maxlength="4000" style="min-height:120px"></textarea>
-        <div class="row-actions" style="justify-content:flex-start"><button class="btn ghost" id="tr-hint" type="button">看提示</button><button class="btn primary" id="tr-reveal" type="button">看完整內容</button></div>
+        <div class="row-actions" style="justify-content:flex-start"><button class="btn ghost" id="tr-hint" type="button">看提示</button><button class="btn ghost" id="tr-skel" type="button" hidden>看骨架</button><button class="btn primary" id="tr-reveal" type="button">看完整內容</button></div>
         <div class="tr-hints" id="tr-hints" hidden tabindex="-1"><p class="small muted" style="margin:0">這個考點的要點標題：</p><ul id="tr-hint-list"></ul></div>
+        <div class="tr-hints" id="tr-skeleton" hidden tabindex="-1"><p class="small muted" style="margin:0">這個考點的答題骨架（作答順序）：</p><ol id="tr-skel-list"></ol></div>
         <div class="recall-back" id="tr-back" hidden>
           <div class="sum-section tr-content" id="tr-content" tabindex="-1"></div>
           <p class="small muted">我剛才想起來了嗎？</p>

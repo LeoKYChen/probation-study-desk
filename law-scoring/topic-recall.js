@@ -8,14 +8,20 @@ const TOK = /(觀護|監獄|犯防|薦任|監所|家調)(\d{3})-(\d)/g;
 
 function dayStr(d) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
 
-// 提示：條列項目開頭的粗體標題；表格則列出欄名。
+const SKELETON = /^\*\*答題骨架\*\*[：:]\s*/;
+// 提示：條列項目開頭的粗體標題；表格則列出欄名。「答題骨架」另有自己的按鈕，不列在提示裡。
 function hintsOf(blocks) {
   const out = [];
   for (const b of blocks) {
-    if (b.t === 'ul' || b.t === 'ol') for (const it of b.items) { const m = /^\*\*([^*]+)\*\*/.exec(it.text); if (m) out.push(m[1].replace(/[：:]\s*$/, '')); }
+    if (b.t === 'ul' || b.t === 'ol') for (const it of b.items) { if (SKELETON.test(it.text)) continue; const m = /^\*\*([^*]+)\*\*/.exec(it.text); if (m) out.push(m[1].replace(/[：:]\s*$/, '')); }
     else if (b.t === 'table') out.push('表格：' + b.head.map(h => h.replace(/\*\*/g, '').trim()).filter(Boolean).join('、'));
   }
   return out;
+}
+// 答題骨架：條列中「**答題骨架**：A → B → C」那一項，拆成一步一步；沒有就回傳空陣列。
+function skeletonOf(blocks) {
+  for (const b of blocks) if (b.t === 'ul' || b.t === 'ol') for (const it of b.items) if (SKELETON.test(it.text)) return it.text.replace(SKELETON, '').replace(/。\s*$/, '').split(/\s*→\s*/).map(x => x.trim()).filter(Boolean);
+  return [];
 }
 // 一科的重點整理 → 考點卡。每個 h3 是一張卡，到下一個 h3 或章末為止；「出題：」行放在卡片正面。
 function cardsOf(d) {
@@ -23,7 +29,7 @@ function cardsOf(d) {
   d.sections.forEach((sec, si) => {
     if (sec.count == null) return;
     let cur = null;
-    const push = () => { if (cur && cur.blocks.length) { cur.hints = hintsOf(cur.blocks); out.push(cur); } cur = null; };
+    const push = () => { if (cur && cur.blocks.length) { cur.hints = hintsOf(cur.blocks); cur.skeleton = skeletonOf(cur.blocks); out.push(cur); } cur = null; };
     sec.blocks.forEach(b => {
       if (b.t === 'h3') { push(); cur = {id: d.slug + '|' + b.text, slug: d.slug, subject: d.subject, section: sec.id, sectionIndex: si, chapter: sec.title.replace(/（\d+ 題）$/, ''), title: b.text, src: '', guan: 0, blocks: [], index: out.length}; return; }
       if (!cur) return;
@@ -80,7 +86,7 @@ function unpack(s) {
 }
 function pack(state) { const out = Object.assign({}, state.cards); if (state.subjects) out.__subjects = state.subjects; out.__tab = state.tab; return out; }
 
-window.LawScoringTopicRecall = {KEY, NEW_PER_DAY, cardsOf, hintsOf, orderNew, queue, rateCard, readState, pack, unpack};
+window.LawScoringTopicRecall = {KEY, NEW_PER_DAY, cardsOf, hintsOf, skeletonOf, orderNew, queue, rateCard, readState, pack, unpack};
 if (typeof document === 'undefined' || !document.getElementById('tab-topic')) return;
 
 const S = window.LawScoringSummaries, R = window.LawScoringReview, RENDER = window.LawScoringSummaryRender;
@@ -146,13 +152,16 @@ function renderDeck() {
   $('tr-answer').value = '';
   $('tr-hints').hidden = true; $('tr-back').hidden = true; $('tr-reveal').hidden = false; $('tr-hint').hidden = !c.hints.length;
   const hl = $('tr-hint-list'); hl.textContent = ''; c.hints.forEach(h => hl.appendChild(el('li', null, h)));
+  $('tr-skeleton').hidden = true; $('tr-skel').hidden = !c.skeleton.length;
+  const sl = $('tr-skel-list'); sl.textContent = ''; c.skeleton.forEach(h => sl.appendChild(el('li', null, h)));
   const body = $('tr-content'); body.textContent = ''; RENDER.renderBlocks(body, c.blocks, d);
   $('tr-open').href = 'summaries.html#' + c.slug + '/' + c.section;
 }
 
 document.querySelectorAll('[data-tab]').forEach(b => b.addEventListener('click', () => { const t = b.getAttribute('data-tab'); try { history.replaceState(null, '', t === 'topic' ? '#topics' : location.pathname + location.search); } catch (e) {} showTab(t, false, true); }));
 $('tr-hint').addEventListener('click', () => { $('tr-hints').hidden = false; $('tr-hint').hidden = true; $('tr-hints').focus(); });
-$('tr-reveal').addEventListener('click', () => { $('tr-back').hidden = false; $('tr-reveal').hidden = true; $('tr-hint').hidden = true; $('tr-content').focus(); });
+$('tr-skel').addEventListener('click', () => { $('tr-skeleton').hidden = false; $('tr-skel').hidden = true; $('tr-skeleton').focus(); });
+$('tr-reveal').addEventListener('click', () => { $('tr-back').hidden = false; $('tr-reveal').hidden = true; $('tr-hint').hidden = true; $('tr-skel').hidden = true; $('tr-content').focus(); });
 document.querySelectorAll('[data-trate]').forEach(b => b.addEventListener('click', () => {
   if (!current) return;
   const result = b.getAttribute('data-trate');
