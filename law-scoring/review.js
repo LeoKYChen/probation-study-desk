@@ -77,7 +77,7 @@ function dueCards(cards, today, filter) {
   return Object.entries(cards).filter(([id, c]) => { const q = BY_ID.get(id.split('#')[0]); return !c.mastered && c.due <= today && q && q.rows[+id.split('#')[1]] && (!filter || filter(q)); }).sort((a, b) => a[1].due.localeCompare(b[1].due) || a[0].localeCompare(b[0]));
 }
 
-window.LawScoringReview = {stats, syncCards, rate, dueCards, clearQuestion, isGraded, INTERVALS, CATS};
+window.LawScoringReview = {stats, syncCards, rate, dueCards, clearQuestion, isGraded, INTERVALS, CATS, COL_LABEL, CARD_KEY, SCORE_KEY};
 if (typeof document === 'undefined' || !document.getElementById('review-root')) return;
 
 const $ = id => document.getElementById(id);

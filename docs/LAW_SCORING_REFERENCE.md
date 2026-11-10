@@ -179,3 +179,10 @@
 | `intent` | 命題意圖（可確認能力與推論分開；學科題「理論核對」、法律題「法條核對」） | 展開評分要點後，預設收合 |
 
 `demands`、`structure`、`intent` 為區塊陣列：`{t:'p',text}` 或 `{t:'ul'|'ol',items}`；文字只允許 `**粗體**`，頁面以文字節點呈現，不用 innerHTML。新增科目時：在 `index.js` 的 `files` 登記、`sw.js` 與 `offline-manifest.json` 加入新檔、更新 `docs/LAYOUT_REVIEW_CHANGES.json` 的 `sw.js` 雜湊；`verification/law-scoring.cjs` 會檢查每一科是否完整覆蓋。法律題的條文須以全國法規資料庫核對，不留「請自行核對」的占位文字。
+
+## 七、通勤模式（2026-11-10）
+
+- 頁面：`law-scoring/commute.html`。四組卡片：失分回想、考點回想、理論卡、英文單字；單手操作、不用打字，會記住上次位置。
+- 失分回想與考點回想共用原本的紀錄鍵與排程；英文單字共用英文學習助手的紀錄鍵。本頁新增的紀錄鍵只有 `lawScoring.theoryCards.v1`（理論卡，已納入完整備份）與 `lawScoring.commute.v1`（上次位置與字級，不納入備份）。
+- 理論卡由 `law-scoring/theory-cards.js` 從三科重點整理即時產生，不另存內容；重點整理改版後，粗體標題或所屬考點改名的卡會被視為新卡，舊紀錄保留但不再出題。
+- 檢查：`node verification/law-scoring-commute.cjs`；瀏覽器檢查 `NODE_PATH=<playwright 所在> node verification/law-scoring-commute-browser.cjs [截圖資料夾]`。

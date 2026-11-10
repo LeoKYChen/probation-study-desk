@@ -157,6 +157,8 @@ ol.pit{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
 .design-details>.design-body{padding:4px 14px 12px}
 /* 各科重點整理（summaries.html） */
 @media (max-width:760px){.study-header nav.nav-four{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* 主導覽加上「通勤」後共五項：手機排成三欄兩列。 */
+@media (max-width:760px){.study-header nav.nav-five{grid-template-columns:repeat(3,minmax(0,1fr))}.study-header nav.nav-five a{padding-left:4px;padding-right:4px}}
 .sum-subjects{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin:20px 0 8px}
 .sum-subject{display:flex;flex-direction:column;align-items:flex-start;gap:0;min-height:56px;padding:8px 12px;border:1px solid var(--rule);border-radius:10px;background:var(--sheet);color:var(--ink);font:inherit;text-align:left;cursor:pointer}
 .sum-subject .name{font-weight:700;font-size:15.5px;line-height:1.4}
