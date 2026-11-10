@@ -46,4 +46,24 @@ assert.equal(r1.ranked.length,0); assert(r1.bySection[C.section].done===1&&!r1.b
 
 // 壞掉的紀錄不會讓計算失敗
 assert.doesNotThrow(()=>WK.compute(d,{[d.links[A.todo[0]]]:{unlocked:true,answer:'x'},junk:5,__current:'x'},byId,score));
+// 失分類型：只用既有欄位；全錯 0%、全對 100%；樣本不到 3 次的類別不列；不改動紀錄
+assert.equal(JSON.stringify(WK.LOSS_SLUGS),JSON.stringify(['criminal-law','criminal-procedure','juvenile']));
+const L0=WK.lossTypes(d,{},byId); assert.equal(L0.graded,0); assert.equal(L0.enough,false); assert.equal(L0.items.length,0);
+const ids3=[...new Set(Object.values(d.links))].slice(0,6);
+const sOff={}, sOn={}; ids3.forEach(id=>{ sOff[id]=all(byId.get(id),false); sOn[id]=all(byId.get(id),true); });
+const fz=JSON.stringify(sOff);
+const Loff=WK.lossTypes(d,sOff,byId), Lon=WK.lossTypes(d,sOn,byId);
+assert.equal(JSON.stringify(sOff),fz,'loss types do not modify records');
+assert.equal(Loff.graded,6); assert(Loff.enough); assert(Loff.items.length>0,'some categories listed');
+for(const x of Loff.items){ assert.equal(x.rate,0); assert.equal(x.hit,0); assert(x.total>=WK.MIN,'listed categories have enough samples'); assert(x.key!=='plain','baseline is not listed'); }
+for(const x of Lon.items){ assert.equal(x.rate,100); assert.equal(x.hit,x.total); }
+assert(Loff.items.some(x=>x.key.startsWith('org:')),'organize items are counted');
+const rowsOf=ids3.flatMap(id=>byId.get(id).rows);
+const dis=Loff.items.find(x=>x.key==='disputed'); if(rowsOf.filter(r=>r.disputed).length>=WK.MIN) assert.equal(dis.total,rowsOf.filter(r=>r.disputed).length,'disputed rows counted once each');
+assert.equal(Loff.baseline.total,rowsOf.filter(r=>!r.disputed&&!/競合|罪數|併罰|定應執行/.test(r.point)).length);
+// 一半有寫到：比例介於中間，且由低到高排序
+const sMix={}; ids3.forEach((id,k)=>{ sMix[id]=all(byId.get(id),k%2===0); });
+const Lm=WK.lossTypes(d,sMix,byId); for(let k=1;k<Lm.items.length;k++) assert(Lm.items[k-1].rate<=Lm.items[k].rate,'sorted from lowest rate');
+// 只展開沒作答的題目不算
+assert.equal(WK.lossTypes(d,peek,byId).graded,0);
 console.log('law-scoring weakness map: '+empty.chapters.length+' chapters checked');

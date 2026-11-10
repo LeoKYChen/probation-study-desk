@@ -15,8 +15,8 @@ let current = null;
 // 弱點地圖需要題庫與計分函式；任何一項沒載入就整個不顯示，重點整理照常可用。
 const WK = window.LawScoringWeakness, DATA = window.LawScoringData, SCORER = window.LawScoring && window.LawScoring.score;
 const BY_ID = WK && DATA && SCORER ? new Map(DATA.questions.map(q=>[q.id,q])) : null;
-let weak = null, weakRaw = '';
-function computeWeak(d){ if(!BY_ID){ weak=null; return; } weakRaw=WK.rawStore(); try { weak=WK.compute(d, WK.readStore(), BY_ID, SCORER); } catch (e) { weak=null; } }
+let weak = null, weakRaw = '', loss = null;
+function computeWeak(d){ if(!BY_ID){ weak=null; return; } weakRaw=WK.rawStore(); const st=WK.readStore(); try { weak=WK.compute(d, st, BY_ID, SCORER); } catch (e) { weak=null; } try { loss=WK.LOSS_SLUGS.includes(d.slug)?WK.lossTypes(d, st, BY_ID):null; } catch (e) { loss=null; } }
 const practised = c => '已練 '+c.done+'／'+c.total+' 題';
 
 function el(tag, attrs, text){ const n=document.createElement(tag); for(const k in (attrs||{})){ if(k==='class') n.className=attrs[k]; else n.setAttribute(k,attrs[k]); } if(text!=null) n.textContent=text; return n; }
@@ -116,6 +116,18 @@ function renderPractice(c, d){
   return box;
 }
 function chapterLink(d, c){ return el('a',{href:'#'+d.slug+'/'+c.section,'data-section':c.section},c.title); }
+// 失分類型：這一科已自評的題目裡，哪一類要點最常沒寫到（只在刑法、刑訴、少事法顯示）。
+function renderLoss(box){
+  if(!loss) return;
+  box.appendChild(el('h3',null,'失分類型'));
+  if(!loss.enough){ box.appendChild(el('p',null,'這一科至少自評 '+WK.MIN+' 題後，這裡會列出最常沒寫到的要點類型。')); return; }
+  if(!loss.items.length){ box.appendChild(el('p',null,'目前各類要點的樣本都不到 '+WK.MIN+' 次，還列不出來。')); return; }
+  const ul=el('ul',{class:'sum-weak-list sum-loss-list'});
+  loss.items.forEach(x=>{ const li=el('li'); li.appendChild(el('span',{class:'name'},x.label)); li.appendChild(el('span',{class:'detail'},'做到 '+x.hit+'／'+x.total+'（'+x.rate+'%）')); ul.appendChild(li); });
+  box.appendChild(ul);
+  const base=loss.baseline&&loss.baseline.total>=WK.MIN?'對照：其他要點做到 '+loss.baseline.rate+'%。':'';
+  box.appendChild(el('p',{class:'small muted'},'由低到高排列，比例越低越需要注意。'+base+'只統計這一科已自評的 '+loss.graded+' 題；同一類至少出現 '+WK.MIN+' 次才列出。依你勾選的「有寫到」、「並陳見解」與答題組織計算，紀錄只讀取。'));
+}
 function renderWeak(d){
   const box=$('sum-weak'); box.textContent='';
   if(!weak){ box.hidden=true; return; }
@@ -138,6 +150,7 @@ function renderWeak(d){
     weak.untried.forEach(c=>{ const li=el('li'); li.appendChild(chapterLink(d,c)); li.appendChild(el('span',{class:'detail'},practised(c)+'・觀護人出過 '+c.guan+' 題')); ul.appendChild(li); });
     box.appendChild(ul);
   }
+  renderLoss(box);
   box.appendChild(el('p',{class:'small muted'},'排序方式：出題次數（觀護人的題算 '+WK.GUAN_W+' 倍）乘上還沒掌握的比例。掌握度是該章已自評題目的平均分數；紀錄只讀取，不會被更動。'));
 }
 

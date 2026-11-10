@@ -50,5 +50,33 @@ function compute(d, store, byId, scoreFn) {
   return {chapters, ranked, untried, gradedTotal: chapters.reduce((a, c) => a + c.done, 0), bySection: Object.fromEntries(chapters.map(c => [c.section, c]))};
 }
 
-window.LawScoringWeakness = {compute, isGraded, chapterTokens, readStore, rawStore, LOW, MIN, GUAN_W, TOP};
+// 失分類型：只用題庫既有欄位，統計這一科已自評的題目裡，哪一類要點最常沒寫到。只在法律科目使用。
+// 類別：有爭議的要點（disputed）、爭議要點有沒有並陳見解（案例題的 views 欄）、罪數與競合的要點（要點名稱比對）、其他要點（對照用）、答題組織各項。
+const LOSS_SLUGS = ['criminal-law', 'criminal-procedure', 'juvenile'];
+const CONCUR = /競合|罪數|併罰|定應執行/;
+function lossTypes(d, store, byId) {
+  const ids = [...new Set(Object.values(d.links))];
+  const acc = new Map();
+  const add = (key, label, hit) => { const x = acc.get(key) || {key, label, hit: 0, total: 0}; x.total++; if (hit) x.hit++; acc.set(key, x); };
+  let graded = 0;
+  for (const id of ids) {
+    const q = byId.get(id), s = store[id];
+    if (!q || !isGraded(s)) continue;
+    graded++;
+    const checks = s.checks || {}, organize = s.organize || {};
+    q.rows.forEach((r, i) => {
+      const c = checks[i] || {}, found = !!c.found;
+      if (r.disputed) { add('disputed', '有爭議的要點', found); if (q.kind === 'case') add('views', '爭議要點有並陳不同見解', !!c.views); }
+      if (CONCUR.test(r.point)) add('concur', '罪數與競合的要點', found);
+      if (!r.disputed && !CONCUR.test(r.point)) add('plain', '其他要點', found);
+    });
+    (q.organize || []).forEach((t, i) => add('org:' + t, '答題組織：' + t, !!organize[i]));
+  }
+  const all = [...acc.values()].map(x => Object.assign(x, {rate: Math.round(100 * x.hit / x.total)}));
+  const baseline = all.find(x => x.key === 'plain') || null;
+  const items = all.filter(x => x.key !== 'plain' && x.total >= MIN).sort((a, b) => a.rate - b.rate || b.total - a.total);
+  return {graded, items, baseline, enough: graded >= MIN};
+}
+
+window.LawScoringWeakness = {compute, lossTypes, isGraded, chapterTokens, readStore, rawStore, LOW, MIN, GUAN_W, TOP, LOSS_SLUGS};
 })();

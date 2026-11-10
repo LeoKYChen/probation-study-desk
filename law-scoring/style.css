@@ -228,6 +228,8 @@ a.qref.guan{font-weight:700}
 .sum-weak-list{margin:6px 0 4px;padding-left:24px}
 .sum-weak-list li{margin:2px 0}
 .sum-weak-list a{display:inline-flex;align-items:center;min-height:44px;font-weight:700}
+.sum-loss-list .name{display:block;font-weight:700;padding-top:8px;overflow-wrap:anywhere}
+.sum-weak-list.sum-loss-list .detail{margin-top:0}
 .sum-weak-list .detail{display:block;font-size:13.5px;color:var(--ink-soft);font-variant-numeric:tabular-nums;margin-top:-6px;padding-bottom:6px}
 .sum-practice{margin:8px 0 12px;border:1px solid var(--rule);border-radius:10px;background:var(--paper)}
 .sum-practice>summary{cursor:pointer;min-height:44px;display:flex;align-items:center;padding:4px 14px;font-size:14.5px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums}
