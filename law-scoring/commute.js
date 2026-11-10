@@ -1,10 +1,10 @@
-/* 通勤模式：單手操作的回想卡。四組卡片——失分回想、考點回想、理論卡、英文單字——一次一張、不用打字。
-   失分回想與考點回想直接讀寫原本的紀錄（lawScoring.recall.v1、lawScoring.topicRecall.v1），英文單字讀寫英文學習助手的紀錄，
+/* 通勤模式：單手操作的回想卡。三組卡片——失分回想、考點回想、理論卡——一次一張、不用打字。
+   失分回想與考點回想直接讀寫原本的紀錄（lawScoring.recall.v1、lawScoring.topicRecall.v1），
    排程規則都沿用原模組；理論卡的紀錄在 lawScoring.theoryCards.v1。本檔自己只存「上次做到哪裡」與字級（lawScoring.commute.v1）。 */
 (function () {
 'use strict';
 const KEY = 'lawScoring.commute.v1';
-const DECKS = ['miss', 'topic', 'theory', 'english'];
+const DECKS = ['miss', 'topic', 'theory'];
 const STAGES = ['front', 'hints', 'back'];
 const FONT_LABELS = ['較小', '標準', '較大', '最大'];
 
@@ -36,7 +36,6 @@ if (typeof document === 'undefined' || !document.getElementById('commute-root'))
 const R = window.LawScoringReview, TR = window.LawScoringTopicRecall, TH = window.LawScoringTheoryCards;
 const S = window.LawScoringSummaries, RENDER = window.LawScoringSummaryRender, DATA = window.LawScoringData;
 const WK = window.LawScoringWeakness, SCORER = window.LawScoring && window.LawScoring.score;
-const EN = window.StarestoLinkCoach, WORDS = window.StarestoVocabulary;
 const $ = id => document.getElementById(id);
 function el(tag, attrs, text) { const n = document.createElement(tag); for (const k in (attrs || {})) { if (k === 'class') n.className = attrs[k]; else n.setAttribute(k, attrs[k]); } if (text != null) n.textContent = text; return n; }
 function readJSON(key) { try { return JSON.parse(localStorage.getItem(key)) || {}; } catch (e) { return {}; } }
@@ -45,7 +44,7 @@ const today = dayStr(new Date());
 const RESULT_TEXT = {good: '記下了，之後間隔會拉長。', partial: '明天再複習一次。', again: '放回第 1 盒，明天再來。'};
 const NO_SAVE = {fail: '目前瀏覽器無法保存，這一張沒有記錄。'};
 
-/* ---------- 四組卡片。每組提供：ready()、list()、rate(item, result)、snapshot()、summary()、empty() ---------- */
+/* ---------- 三組卡片。每組提供：ready()、list()、rate(item, result)、snapshot()、summary()、empty() ---------- */
 const decks = {};
 
 // 失分回想：與失分回想卡頁相同的同步、到期與評分規則。
@@ -55,7 +54,7 @@ decks.miss = (function () {
   let cards = {}, saved = true;
   if (ok) { cards = R.syncCards(readJSON(R.SCORE_KEY), readJSON(R.CARD_KEY), today); saved = write(R.CARD_KEY, cards); }
   return {
-    name: '失分回想', two: false, ready: () => ok,
+    name: '失分回想', ready: () => ok,
     list() {
       return R.dueCards(cards, today, null).map(([id, c]) => {
         const q = byId.get(id.split('#')[0]), row = q.rows[+id.split('#')[1]];
@@ -106,7 +105,7 @@ function summaryDeck(opt) {
   const order = () => ordered || (ordered = TR.orderNew(opt.slugs.flatMap(x => opt.cardsOf(S.items[x])), S.items, weakMap()));
   const queue = () => TR.queue(state, order(), today, extra + opt.bonus);
   return {
-    name: opt.name, two: false, ready: () => ok,
+    name: opt.name, ready: () => ok,
     list() { const q = queue(); return q.due.concat(q.fresh).map(c => opt.item(c, state.cards[c.id])); },
     rate(item, result) {
       const next = TR.rateCard(state, item.id, result, today, R.rate);
@@ -143,44 +142,6 @@ decks.theory = summaryDeck({
   }
 });
 
-// 英文單字：英文學習助手的同一份字卡、同一份紀錄與同一套間隔。讀不到既有紀錄時不寫入，避免蓋掉。
-decks.english = (function () {
-  const ok = !!(EN && WORDS);
-  let state = null, readOnly = false, date = ok ? EN.today() : '';
-  if (ok) {
-    state = EN.createState();
-    try { const raw = localStorage.getItem(EN.STORAGE_KEY); if (raw) { const obj = JSON.parse(raw); if (obj.schema !== EN.STORAGE_KEY) throw Error('schema'); state = EN.normalize(obj); } }
-    catch (e) { readOnly = true; }
-    if (!readOnly && !state.wordDays[date]) { try { const draft = JSON.parse(JSON.stringify(state)); WORDS.plan(draft, date); if (write(EN.STORAGE_KEY, draft)) state = draft; else readOnly = true; } catch (e) { readOnly = true; } }
-  }
-  const pending = () => {
-    const day = state.wordDays[date]; if (!day) return [];
-    const fresh = new Set(day.new || []);
-    return [...(day.review || []), ...(day.new || [])].filter(id => WORDS.getWord(state, id) && !((state.wordProgress[id] || {}).attempts || []).some(a => a.date === date)).map(id => [id, fresh.has(id)]);
-  };
-  return {
-    name: '英文單字', two: true, ready: () => ok && !readOnly,
-    list() {
-      return pending().map(([id, isNew]) => {
-        const w = WORDS.getWord(state, id);
-        return {id, meta: '英文單字・' + (isNew ? '新字' : '複習'), title: w.term, sub: w.pos || '', hints: w.example ? [w.example] : [], hintsLabel: '例句：',
-          tip: '先在心裡說出中文意思，再點卡片看例句或翻開。',
-          back(host) { host.appendChild(el('p', {class: 'cm-meaning'}, w.meaning)); host.appendChild(el('p', w.example ? {lang: 'en'} : null, w.example || '這是自行加入的生字，請試著自己造句。')); },
-          link: {href: '../common-subjects/english-assistant/', text: '到英文學習助手 →'}};
-      });
-    },
-    rate(item, result) {
-      try { const draft = JSON.parse(JSON.stringify(state)); WORDS.rate(draft, date, item.id, result === 'good'); if (!write(EN.STORAGE_KEY, draft)) return NO_SAVE; state = draft; }
-      catch (e) { return {fail: String(e && e.message || e)}; }
-      return result === 'good' ? '記住了，之後間隔會拉長。' : '明天再複習一次。';
-    },
-    snapshot() { const before = state; return () => { if (!write(EN.STORAGE_KEY, before)) return false; state = before; return true; }; },
-    summary() { const st = WORDS.stats(state, date); return '已學 ' + st.known + ' 字・熟練 ' + st.mastered + ' 字・字庫 ' + (st.bank + st.custom) + ' 字'; },
-    empty() { return {title: '今天的單字做完了', text: '今天的新字與到期複習都完成了。文法與閱讀請到英文學習助手。', link: {href: '../common-subjects/english-assistant/', text: '到英文學習助手'}}; },
-    problem: () => ok && readOnly ? '讀不到英文學習助手的既有紀錄；為避免覆蓋，這一組先不開放。' : ''
-  };
-})();
-
 /* ---------- 畫面 ---------- */
 let pos = normalize(readJSON(KEY));
 let deckKey = '', stage = 'front', current = null, total = 0, done = 0, undo = null;
@@ -206,8 +167,8 @@ function showStage() {
   $('cm-back').hidden = stage !== 'back';
   $('cm-tip').hidden = stage === 'back';
   $('cm-card').classList.toggle('is-back', stage === 'back');
-  const rating = stage === 'back', two = decks[deckKey].two;
-  $('cm-front-actions').hidden = rating; $('cm-rate3').hidden = !rating || two; $('cm-rate2').hidden = !rating || !two;
+  const rating = stage === 'back';
+  $('cm-front-actions').hidden = rating; $('cm-rate3').hidden = !rating;
   const hintBtn = $('cm-hint'); hintBtn.hidden = !hasHints || stage !== 'front';
   $('cm-front-actions').classList.toggle('cm-single', hintBtn.hidden);
 }
@@ -218,10 +179,10 @@ function render(focus) {
   if (!d.ready()) {
     current = null; $('cm-card').hidden = true; $('cm-empty').hidden = false; $('cm-summary').textContent = '';
     $('cm-empty-title').textContent = d.name + '沒有載入成功';
-    $('cm-empty-text').textContent = (d.problem && d.problem()) || '資料沒有載入成功，請確認網路連線後重新整理。已下載離線版的話，請到離線頁更新一次。';
+    $('cm-empty-text').textContent = '資料沒有載入成功，請確認網路連線後重新整理。已下載離線版的話，請到離線頁更新一次。';
     const box = $('cm-empty-actions'); box.textContent = '';
-    if (!(d.problem && d.problem())) { const b = el('button', {type: 'button', class: 'btn primary'}, '重新載入'); b.addEventListener('click', () => location.reload()); box.appendChild(b); }
-    $('cm-front-actions').hidden = true; $('cm-rate3').hidden = true; $('cm-rate2').hidden = true; $('cm-skip').hidden = true; $('cm-progress').textContent = '';
+    { const b = el('button', {type: 'button', class: 'btn primary'}, '重新載入'); b.addEventListener('click', () => location.reload()); box.appendChild(b); }
+    $('cm-front-actions').hidden = true; $('cm-rate3').hidden = true; $('cm-skip').hidden = true; $('cm-progress').textContent = '';
     savePos(); if (focus) $('cm-empty-title').focus(); return;
   }
   const list = listOf(deckKey);
@@ -233,12 +194,11 @@ function render(focus) {
   current = item; total = list.length;
   $('cm-card').hidden = false; $('cm-empty').hidden = true;
   $('cm-meta').textContent = item.meta; $('cm-title').textContent = item.title;
-  $('cm-title').lang = deckKey === 'english' ? 'en' : 'zh-Hant';
   const context = $('cm-context'); context.textContent = item.context || ''; context.hidden = !item.context;
   const sub = $('cm-sub'); sub.textContent = item.sub || ''; sub.hidden = !item.sub;
   const note = $('cm-note'); note.textContent = item.note || ''; note.hidden = !item.note;
   $('cm-hints-label').textContent = item.hintsLabel || '提示：';
-  const hl = $('cm-hint-list'); hl.textContent = ''; item.hints.forEach(h => hl.appendChild(el('li', deckKey === 'english' ? {lang: 'en'} : null, h)));
+  const hl = $('cm-hint-list'); hl.textContent = ''; item.hints.forEach(h => hl.appendChild(el('li', null, h)));
   const body = $('cm-content'); body.textContent = ''; item.back(body);
   const link = $('cm-link'); link.href = item.link.href; link.textContent = item.link.text;
   $('cm-tip').textContent = item.tip;
@@ -257,7 +217,7 @@ function renderEmpty(d) {
     const b = el('button', {type: 'button', class: 'btn ghost'}, '換到' + decks[k].name + '（剩 ' + n + ' 張）'); b.addEventListener('click', () => switchDeck(k, true)); box.appendChild(b);
   });
   if (e.link) box.appendChild(el('a', {class: 'btn', href: e.link.href}, e.link.text));
-  $('cm-front-actions').hidden = true; $('cm-rate3').hidden = true; $('cm-rate2').hidden = true; $('cm-skip').hidden = true;
+  $('cm-front-actions').hidden = true; $('cm-rate3').hidden = true; $('cm-skip').hidden = true;
   $('cm-progress').textContent = done ? '今天這一組：做完 ' + done + ' 張' : '';
 }
 function switchDeck(key, focus) { if (key === deckKey) return; deckKey = key; current = null; done = 0; stage = 'front'; undo = null; say(''); render(focus); }

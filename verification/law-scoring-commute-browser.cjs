@@ -1,5 +1,5 @@
 'use strict';
-// 通勤模式瀏覽器檢查：四組卡片的翻面、評分、復原、跳過、續讀，以及各寬度不產生頁面層級的水平捲動。
+// 通勤模式瀏覽器檢查：三組卡片的翻面、評分、復原、跳過、續讀，以及各寬度不產生頁面層級的水平捲動。
 // 需要 Playwright；只使用測試用的瀏覽器設定檔，不碰任何真實學習紀錄。用法：node verification/law-scoring-commute-browser.cjs [截圖資料夾]
 const {chromium}=require('playwright');
 const http=require('node:http'),fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
@@ -30,7 +30,7 @@ async function noOverflow(page,label){
 
   // 空白瀏覽器：沒有失分卡，從第一組有卡片的（考點回想）開始
   await page.goto(base+'commute.html',{waitUntil:'load'});
-  assert.equal(await text(page,'#cm-count-miss'),'完成'); assert.equal(await text(page,'#cm-count-topic'),'剩 5 張'); assert.equal(await text(page,'#cm-count-theory'),'剩 10 張'); assert.equal(await text(page,'#cm-count-english'),'剩 6 張');
+  assert.equal(await text(page,'#cm-count-miss'),'完成'); assert.equal(await text(page,'#cm-count-topic'),'剩 5 張'); assert.equal(await text(page,'#cm-count-theory'),'剩 10 張');
   assert.equal(await page.locator('[data-deck="topic"]').getAttribute('aria-pressed'),'true');
   assert(await vis(page,'#cm-card')); assert(!(await vis(page,'#cm-back'))); assert(await vis(page,'#cm-reveal')); assert(await vis(page,'#cm-hint'));
   assert(!(await vis(page,'.study-header nav')),'main nav is folded away on phones'); assert(await vis(page,'.cm-links'));
@@ -62,7 +62,7 @@ async function noOverflow(page,label){
   await page.locator('#cm-reveal').click(); await page.locator('#cm-rate3 [data-rate="again"]').click();
   // 做完：可加開新卡、可換組
   assert(await vis(page,'#cm-empty')); assert((await text(page,'#cm-empty-title')).includes('考點回想今天做完了')); assert.equal(await text(page,'#cm-count-topic'),'完成');
-  assert.equal(await page.locator('#cm-empty-actions .btn').count(),3,'more new cards + two other decks');
+  assert.equal(await page.locator('#cm-empty-actions .btn').count(),2,'more new cards + the one other deck with cards');
   await page.locator('#cm-empty-actions .btn').first().click(); assert.equal(await text(page,'#cm-count-topic'),'剩 5 張');
   // 考點回想頁看得到同一份進度
   await page.goto(base+'review.html#topics',{waitUntil:'load'}); assert((await text(page,'#tr-summary')).includes('複習中 5 張'));
@@ -75,13 +75,7 @@ async function noOverflow(page,label){
   const th=await store(page,'lawScoring.theoryCards.v1'); assert.equal(Object.keys(th).length,1); assert.equal(await text(page,'#cm-count-theory'),'剩 9 張');
   assert.equal(Object.keys(await store(page,'lawScoring.topicRecall.v1')).filter(k=>!k.startsWith('__')).length,5,'topic recall records untouched by theory cards');
 
-  // 英文單字：兩顆評分鈕，寫進英文學習助手的紀錄
-  await page.locator('[data-deck="english"]').click(); const word=await text(page,'#cm-title'); assert(/^[a-z]/.test(word));
-  await page.locator('#cm-hint').click(); assert(await vis(page,'#cm-hints')); await page.locator('#cm-reveal').click();
-  assert(await vis(page,'#cm-rate2')); assert(!(await vis(page,'#cm-rate3'))); assert((await text(page,'#cm-content')).length>1);
-  await page.locator('#cm-rate2 [data-rate="good"]').click();
-  const en=await store(page,'psd-staresto-link-coach-v06'); assert.equal(Object.keys(en.wordProgress).length,1); assert.equal(await text(page,'#cm-count-english'),'剩 5 張');
-  await page.goto(base+'../common-subjects/english-assistant/',{waitUntil:'load'}); assert.equal(await page.locator('.word-card.done').count(),1,'the English assistant shows the same word as done');
+  assert.equal(await page.evaluate(()=>localStorage.getItem('psd-staresto-link-coach-v06')),null,'the English records are not created or touched');
 
   // 失分回想：先在申論評分參考留下一題只勾一格的自評，卡片就會出現；評分寫進失分回想卡原本的紀錄
   await page.goto(base+'commute.html',{waitUntil:'load'});
@@ -108,17 +102,11 @@ async function noOverflow(page,label){
   if(shots){ await page.evaluate(()=>window.scrollTo(0,0)); await page.screenshot({path:path.join(shots,'commute-390-back-largest.png')}); }
   await page.locator('.cm-settings summary').click(); await page.locator('#cm-font-down').click(); await page.locator('#cm-font-down').click(); assert.equal(await page.locator('#cm-font-label').textContent(),'標準');
 
-  // 讀不到英文既有紀錄時不開放、不覆蓋
-  await page.evaluate(()=>localStorage.setItem('psd-staresto-link-coach-v06','{broken'));
-  await page.reload({waitUntil:'load'}); assert.equal(await text(page,'#cm-count-english'),'無法載入'); await page.locator('[data-deck="english"]').click();
-  assert((await text(page,'#cm-empty-text')).includes('為避免覆蓋')); assert.equal(await page.evaluate(()=>localStorage.getItem('psd-staresto-link-coach-v06')),'{broken');
-  await page.evaluate(()=>localStorage.removeItem('psd-staresto-link-coach-v06'));
-
   // 各寬度：題面與答案兩種狀態都沒有頁面層級水平捲動；其他三頁的五項導覽也不溢出
   for(const width of WIDTHS){
    await page.setViewportSize({width,height:width<600?780:900});
    await page.goto(base+'commute.html',{waitUntil:'load'});
-   for(const deck of ['miss','topic','theory','english']){
+   for(const deck of ['miss','topic','theory']){
     await page.locator('[data-deck="'+deck+'"]').click(); await noOverflow(page,width+' '+deck+' front');
     if(await vis(page,'#cm-reveal')){ await page.locator('#cm-reveal').click(); await noOverflow(page,width+' '+deck+' back'); const r=await page.locator('#cm-bar').boundingBox(); assert(r.x>=0&&r.x+r.width<=width+1); }
     if(shots&&[320,390,768,1280].includes(width)&&deck==='theory') await page.screenshot({path:path.join(shots,'commute-'+width+'-theory-back.png')});
@@ -129,6 +117,6 @@ async function noOverflow(page,label){
    if(shots&&width===320){ await page.screenshot({path:path.join(shots,'review-320-nav.png')}); }
   }
   assert.deepEqual(errors,[],'no page errors: '+errors.join(' | '));
-  console.log('PASS law-scoring commute browser: four decks, resume, undo, skip, font size, '+WIDTHS.length+' widths');
+  console.log('PASS law-scoring commute browser: three decks, resume, undo, skip, font size, '+WIDTHS.length+' widths');
  }finally{ await browser.close(); server.close(); }
 })().catch(e=>{console.error(e);server.close();process.exit(1);});

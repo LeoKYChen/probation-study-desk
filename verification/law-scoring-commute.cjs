@@ -59,10 +59,10 @@ assert.equal(C.arrange(L,['a'],'a')[0].id,'a','a resumed card is shown even if i
 
 // 頁面接線：通勤頁載入所需模組；四個頁面的主導覽一致；離線清單、線上優先清單與完整備份都有登記
 const html=read('law-scoring/commute.html');
-for(const f of ['data.js','app.js','review.js','weakness.js','summaries/index.js','summaries.js','topic-recall.js','theory-cards.js','commute.js','commute.css','../common-subjects/english-assistant/engine.js','../common-subjects/english-assistant/vocab.js',...S.list.map(x=>'summaries/'+x.file)]) assert(html.includes('"'+f+'"'),'commute.html loads '+f);
+for(const f of ['data.js','app.js','review.js','weakness.js','summaries/index.js','summaries.js','topic-recall.js','theory-cards.js','commute.js','commute.css',...S.list.map(x=>'summaries/'+x.file)]) assert(html.includes('"'+f+'"'),'commute.html loads '+f);
 const order=f=>html.indexOf('"'+f+'"'); assert(order('review.js')<order('topic-recall.js')&&order('topic-recall.js')<order('theory-cards.js')&&order('theory-cards.js')<order('commute.js')&&order('summaries.js')<order('commute.js'),'modules load before commute.js');
-for(const id of ['commute-root','cm-card','cm-title','cm-context','cm-sub','cm-hints','cm-back','cm-content','cm-empty','cm-bar','cm-reveal','cm-hint','cm-undo','cm-skip','cm-rate3','cm-rate2','cm-status','cm-font-up','cm-font-down',...C.DECKS.map(k=>'cm-count-'+k)]) assert(html.includes('id="'+id+'"'),'commute.html has #'+id);
-assert.equal((html.match(/data-deck="/g)||[]).length,C.DECKS.length); assert(!/<textarea|<input/.test(html),'no typing needed');
+for(const id of ['commute-root','cm-card','cm-title','cm-context','cm-sub','cm-hints','cm-back','cm-content','cm-empty','cm-bar','cm-reveal','cm-hint','cm-undo','cm-skip','cm-rate3','cm-status','cm-font-up','cm-font-down',...C.DECKS.map(k=>'cm-count-'+k)]) assert(html.includes('id="'+id+'"'),'commute.html has #'+id);
+assert.equal((html.match(/data-deck="/g)||[]).length,C.DECKS.length); assert(!/<textarea|<input/.test(html),'no typing needed'); assert(!/english|psd-staresto/i.test(html+code('law-scoring/commute.js')),'the English records are not touched from this page');
 const nav=f=>/<nav class="nav-five" aria-label="主要導覽">(.*?)<\/nav>/.exec(read('law-scoring/'+f))[1].replace(/ aria-current="page"/,'');
 const navs=['index.html','summaries.html','review.html','commute.html'].map(nav); assert(navs.every(n=>n===navs[0])&&navs[0].includes('href="commute.html"'),'same five-item nav on every page');
 const manifest=new Set(JSON.parse(read('offline-manifest.json')).assets.map(a=>a.url)), sw=read('sw.js');
