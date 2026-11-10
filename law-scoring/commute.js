@@ -1,6 +1,6 @@
-/* 通勤模式：單手操作的回想卡。三組卡片——失分回想、考點回想、理論卡——一次一張、不用打字。
+/* 通勤模式：單手操作的回想卡。三組卡片——失分回想、考點回想、要點卡（原名理論卡）——一次一張、不用打字。
    失分回想與考點回想直接讀寫原本的紀錄（lawScoring.recall.v1、lawScoring.topicRecall.v1），
-   排程規則都沿用原模組；理論卡的紀錄在 lawScoring.theoryCards.v1。本檔自己只存「上次做到哪裡」與字級（lawScoring.commute.v1）。 */
+   排程規則都沿用原模組；要點卡的紀錄在 lawScoring.theoryCards.v1。本檔自己只存「上次做到哪裡」與字級（lawScoring.commute.v1）。 */
 (function () {
 'use strict';
 const KEY = 'lawScoring.commute.v1';
@@ -90,7 +90,7 @@ decks.miss = (function () {
   };
 })();
 
-// 考點回想與理論卡共用：章節順序依弱點地圖，排程用考點回想的 queue。
+// 考點回想與要點卡共用：章節順序依弱點地圖，排程用考點回想的 queue。
 const summariesReady = slugs => !!(S && RENDER && TR && R && slugs.every(x => S.items[x]));
 let weakCache;
 function weakMap() {
@@ -131,13 +131,15 @@ decks.topic = summaryDeck({
       back(host) { RENDER.renderBlocks(host, c.blocks, d); }, link: {href: 'summaries.html#' + c.slug + '/' + c.section, text: '到重點整理看這一章 →'}};
   }
 });
+// 要點卡的科目分組：前三科是理論科，後三科是法律科。
+const SCOPES = TH ? {all: null, theory: TH.SUBJECTS.slice(0, 3), law: TH.SUBJECTS.slice(3)} : {};
 decks.theory = summaryDeck({
-  name: '理論卡', slugs: TH ? TH.SUBJECTS : ['?'], bonus: TH && TR ? TH.NEW_PER_DAY - TR.NEW_PER_DAY : 0, step: 10,
+  name: '要點卡', slugs: TH ? TH.SUBJECTS : ['?'], bonus: TH && TR ? TH.NEW_PER_DAY - TR.NEW_PER_DAY : 0, step: 10,
   key: TH && TH.KEY, read: () => TH.readState(), pack: s => TH.pack(s), cardsOf: d => TH.cardsOf(d),
   item(c, rec) {
     const d = S.items[c.slug];
     return {id: c.id, meta: c.subject + '・' + c.chapter + '・' + (rec ? '第 ' + rec.box + ' 盒' : '新卡'), title: c.label, context: c.topic, hints: [],
-      tip: '先在心裡說出這個要點的內容（學者、年代、構念），再翻開對照。',
+      tip: SCOPES.law && SCOPES.law.includes(c.slug) ? '先在心裡說出這個要點的內容（條文、要件、效果或作答順序），再翻開對照。' : '先在心裡說出這個要點的內容（學者、年代、構念），再翻開對照。',
       back(host) { RENDER.renderBlocks(host, [{t: 'ul', items: [c.item]}], d); }, link: {href: 'summaries.html#' + c.slug + '/' + c.section, text: '到重點整理看這一章 →'}};
   }
 });
@@ -251,6 +253,16 @@ $('cm-skip').addEventListener('click', () => {
   skipped[deckKey] = skipped[deckKey].filter(id => id !== current.id).concat([current.id]);
   say('先跳過，這一張排到今天的最後。'); current = null; stage = 'front'; render(true);
 });
+// 要點卡範圍：全部六科、理論三科（犯罪學、心理學、諮商）或法律三科（刑法、刑訴、少事法）。存在要點卡紀錄的 __subjects，換範圍不會動到任何卡片紀錄。
+function scopeOf(subjects) { if (!subjects || !subjects.length) return 'all'; const k = subjects.slice().sort().join(','); for (const n of ['theory', 'law']) if (SCOPES[n].slice().sort().join(',') === k) return n; return ''; }
+function showScope() { if (!TH) return; const cur = scopeOf(TH.readState().subjects); document.querySelectorAll('[data-scope]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.scope === cur))); }
+document.querySelectorAll('[data-scope]').forEach(b => b.addEventListener('click', () => {
+  if (!TH || !(b.dataset.scope in SCOPES)) return;
+  const state = TH.readState(); state.subjects = SCOPES[b.dataset.scope];
+  if (!write(TH.KEY, TH.pack(state))) { $('cm-status').textContent = '目前瀏覽器無法保存設定。'; return; }
+  location.reload();
+}));
+showScope();
 $('cm-font-down').addEventListener('click', () => { if (pos.font > 0) { pos.font--; applyFont(); savePos(); } });
 $('cm-font-up').addEventListener('click', () => { if (pos.font < FONT_LABELS.length - 1) { pos.font++; applyFont(); savePos(); } });
 

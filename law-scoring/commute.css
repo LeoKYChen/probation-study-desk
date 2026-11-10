@@ -73,3 +73,8 @@
 }
 @media (prefers-reduced-motion:no-preference){.cm-deck,.cm-actions .btn{transition:background-color .12s,border-color .12s}}
 @media print{.cm-bar,.cm-decks,.cm-settings,.cm-links{display:none}}
+
+/* 要點卡範圍 */
+.cm-scope{margin-top:10px}
+.cm-scope .btn{min-width:0}
+.cm-scope .btn[aria-pressed="true"]{background:var(--accent);color:#fff;border-color:var(--accent)}

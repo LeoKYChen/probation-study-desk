@@ -1,14 +1,15 @@
-/* 理論卡：把犯罪學、心理學、諮商與輔導三科重點整理的每個要點（條列項目開頭的粗體標題）做成一張短卡，
+/* 要點卡（原名理論卡）：把六科重點整理的每個要點（條列項目開頭的粗體標題）做成一張短卡，
    給通勤模式用。內容完全取自重點整理，不另外撰寫；排程沿用考點回想（topic-recall.js）與失分回想卡的間隔。
    紀錄另存在 lawScoring.theoryCards.v1，格式與考點回想相同；自評紀錄與考點回想的紀錄都不會被更動。 */
 (function () {
 'use strict';
 const KEY = 'lawScoring.theoryCards.v1';
-const SUBJECTS = ['criminology', 'psychology', 'counseling'];
+// 2026-11-11 起納入刑法、刑訴與保安處分、少年事件處理法（法律科的要點、答題骨架與常見混淆也各成一張卡）。原有三科排在前面，卡片 id 不變。
+const SUBJECTS = ['criminology', 'psychology', 'counseling', 'criminal-law', 'criminal-procedure', 'juvenile'];
 const NEW_PER_DAY = 10;
 const LEAD = /^\*\*([^*]+)\*\*/;
 
-// 一科的重點整理 → 理論卡。每個有粗體標題的條列項目是一張卡；所屬考點（h3）放在卡片正面，沒有 h3 的章以章名代替。
+// 一科的重點整理 → 要點卡。每個有粗體標題的條列項目是一張卡；所屬考點（h3）放在卡片正面，沒有 h3 的章以章名代替。
 function cardsOf(d) {
   const out = [], seen = new Map();
   d.sections.forEach((sec, si) => {
