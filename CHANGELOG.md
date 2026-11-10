@@ -4,6 +4,12 @@
 
 版本規範、驗收與發布方式參見 [Release 維護指引](docs/RELEASE_PROCESS.md)。子模組內的 `v2.5`、`v2.5.4` 等名稱，不直接代表整個網站的 Release 版本。
 
+## 2026-11-10 — 離線 ZIP 每日資料：補上過期的產生檔，並加入自動補救（分支 `fix/daily-file-data-backstop`，待合併）
+
+- 重新產生 `file-data/daily.generated.js`：2026-11-09 22:03（UTC）每日資料更新後，Apps Script 離線橋接沒有接著補上產生檔，原始 ZIP 離線版的每日題停在前一天，PR 的 `original-zip-file-url` 檢查也因此失敗（#154、#155 都遇到）。同樣情形在 11-07 發生過一次。
+- 新增 `.github/workflows/daily-file-data-backstop.yml`：`daily-simulation/` 的題目或新聞資料推上 main 後等 2 分鐘（先讓橋接處理），若 `node scripts/generate-file-data.cjs --check` 仍判定過期，才重新產生並提交 `file-data/`。不改來源資料、不觸發正式站發布；main 在期間又有新提交時不強推。
+- 尚未驗證：這個工作流程要等合併後、下一次每日資料更新（或手動執行）才看得到實際結果。橋接沒跑的原因在 Apps Script 專案內，這次沒有查。
+
 ## 2026-11-10 — 申論評分參考：新增「通勤模式」與理論卡（分支 `feat/commute-mode`，待合併）
 
 - 新增 `law-scoring/commute.html`（主導覽加「通勤」，共五項；手機排成三欄）。單手操作：一次一張卡、不用打字，點卡片或底部大按鈕翻開（題面 → 提示 → 答案），評分鈕固定在螢幕底部。可「先跳過」（排到今天最後）與「復原上一張」；字級四級。

@@ -1,0 +1,57 @@
+name: Daily file-data backstop (offline ZIP copy follows daily data)
+
+# 每日題或新聞資料推上 main 後，Apps Script 的離線橋接（scripts/apps-script/OfflineBridge.gs）應該會補上
+# file-data/ 的產生檔；它沒跑到的時候（2026-11-07、11-09 都發生過），原始 ZIP 離線版的每日題就停在舊資料，
+# 其他 PR 的 original-zip-file-url 檢查也會跟著失敗。這個工作流程只在產生檔過期時補一次，不改任何來源資料。
+on:
+  push:
+    branches: [main]
+    paths:
+      - daily-simulation/questions.json
+      - daily-simulation/documents.json
+      - daily-simulation/news-shards/**
+      - .github/workflows/daily-file-data-backstop.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-file-data-backstop
+  cancel-in-progress: false
+
+jobs:
+  regenerate-if-outdated:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Give the Apps Script bridge time to repair first
+        if: github.event_name == 'push'
+        run: sleep 120
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          persist-credentials: true
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Regenerate only when the committed copy is outdated
+        shell: bash
+        run: |
+          set -euo pipefail
+          if node scripts/generate-file-data.cjs --check; then
+            echo 'file-data already matches the committed JSON; nothing to do.'
+            exit 0
+          fi
+          node verification/check-daily-v254.cjs
+          node scripts/generate-file-data.cjs --write
+          node scripts/generate-file-data.cjs --check
+          git add -A -- file-data
+          if git diff --cached --quiet; then
+            echo 'No file-data difference after regeneration.'
+            exit 0
+          fi
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'build(daily): regenerate offline file-data from committed JSON (backstop)'
+          # main 在這段時間又前進（例如橋接剛好補上）就不強推；下一次每日資料更新會再檢查一次。
+          git push origin HEAD:main || echo '::warning::main moved while regenerating; skipped this push.'
