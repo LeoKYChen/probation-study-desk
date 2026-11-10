@@ -95,7 +95,7 @@ legalReadOnly();mergeAcrossDevices();rollback();stalePrevention();
 assert.throws(()=>core.validate(env({'psd-common-subjects-v1':'{"schema":"psd-common-subjects-v1","drafts":{"__proto__":{"evil":true}},"english":{}}'})),/格式|不安全/);
 assert.throws(()=>core.validate(env({[essay]:'{' })),/JSON/);
 assert.throws(()=>core.collect(mock({[key]:'{' }),'x'),/JSON/);
-assert.equal(core.modules.length,18); // 加入申論評分參考自評、失分回想卡與考點回想
+assert.equal(core.modules.length,19); // 加入申論評分參考自評、失分回想卡、考點回想與理論卡
 console.log('PASS unified JSON backup core: read-only export, schema validation, cross-device merge, alternate versions, idempotency, staleness guard, rollback');
 
 const promptKey='psd-ai-custom-rules-v1';

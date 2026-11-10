@@ -275,7 +275,19 @@
       "url": "law-scoring/app.js"
     },
     {
+      "url": "law-scoring/commute.css"
+    },
+    {
+      "url": "law-scoring/commute.html"
+    },
+    {
+      "url": "law-scoring/commute.js"
+    },
+    {
       "url": "law-scoring/data.js"
+    },
+    {
+      "url": "law-scoring/theory-cards.js"
     },
     {
       "url": "law-scoring/topic-recall.js"

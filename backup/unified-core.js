@@ -28,7 +28,8 @@
   {key:'psd-lecture-planner-v1',name:'學習管理與每日紀錄',kind:'lectures'},
   {key:'lawScoring.v2',name:'申論評分參考自評',kind:'records'},
   {key:'lawScoring.recall.v1',name:'失分回想卡',kind:'records'},
-  {key:'lawScoring.topicRecall.v1',name:'考點回想',kind:'records'}
+  {key:'lawScoring.topicRecall.v1',name:'考點回想',kind:'records'},
+  {key:'lawScoring.theoryCards.v1',name:'理論卡',kind:'records'}
  ];
  const names=Object.fromEntries(modules.map(x=>[x.key,x]));
  const allowed=new Set([...modules.map(x=>x.key),CONFLICT_KEY]);
