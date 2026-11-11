@@ -8,6 +8,7 @@ const NODE=[
   'verification/check-daily-v254.cjs',
   'verification/offline-stage4-check.cjs',
   'verification/practice-context-checks.cjs',
+  'verification/study30-structure-coach.cjs',
   'verification/all-subject-pilots.cjs',
   'verification/study-desk-weakness.cjs',
   'verification/law-scoring.cjs',
