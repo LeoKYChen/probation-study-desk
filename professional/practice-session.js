@@ -426,12 +426,12 @@
     if(!session)return null;
     const Model=window.Study30StructureCoachModel;
     return {date:session.date,sessionToken:session.createdAt||null,mode:String(session.mode),
-      practiceMode:session.practiceMode||'normal',phase:session.phase,active:structureActive(session),
+      practiceMode:session.practiceMode||'normal',phase:session.phase,active:structureActive(session),finished:!!session.finished,
       subject:subjectFor(session.date).target,coach:Model?Model.normalize(session.structureCoach):null};
   }
   function saveStructureCoach(data){
     const Model=window.Study30StructureCoachModel;
-    if(!session||!structureActive(session)||!canSave||!Model?.valid(data))return false;
+    if(!session||session.finished||!structureActive(session)||!canSave||!Model?.valid(data))return false;
     const previous=session.structureCoach,oldTime=session.updatedAt;
     session.structureCoach=Model.normalize(data);session.updatedAt=new Date().toISOString();
     if(!persist()){session.structureCoach=previous;session.updatedAt=oldTime;return false;}
