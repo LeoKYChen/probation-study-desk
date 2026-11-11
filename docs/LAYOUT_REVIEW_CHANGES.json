@@ -41,8 +41,8 @@
     {
       "path": "professional/index.html",
       "base_sha256": "115a1a32e125e7215c4336f4d079d434588308f7fff7fb69e53f446352dddf4b",
-      "sha256": "e03c1ae9480ef737a5be37bc38ae087a9e952ae3fd4031af190f6bc1ce50e6f4",
-      "reason": "Slides 2,8–17: remove marked prose, add chart/history hosts, group health under existing import panel. Follow-up slides 24–29 remove marked text, retain actual-record forecast, shorten 10-minute label. Keep four-grid drafts and full answer expanded by default; remove explanation only. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22 AI practice] Add optional answer-direction review selector; keep existing full-answer mode, record keys and source bank intact. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。 2026-11-05: Add mobile review choice cards and optional per-question external answer link field; preserve existing internal AI mode select and scoring behavior. Responsive additions are scoped in HTML to keep the frozen original style.css hash and installed WebKit upgrade snapshot intact."
+      "sha256": "56bba32a0492c2ca55c3d66213c1c6b744f316034a370cbf325c64a36cc20a78",
+      "reason": "Slides 2,8–17: remove marked prose, add chart/history hosts, group health under existing import panel. Follow-up slides 24–29 remove marked text, retain actual-record forecast, shorten 10-minute label. Keep four-grid drafts and full answer expanded by default; remove explanation only. [Stage 5] Keep original approved layout and append file://-only navigation/data compatibility script. No storage keys or question text changed.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22 AI practice] Add optional answer-direction review selector; keep existing full-answer mode, record keys and source bank intact. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。 2026-11-05: Add mobile review choice cards and optional per-question external answer link field; preserve existing internal AI mode select and scoring behavior. Responsive additions are scoped in HTML to keep the frozen original style.css hash and installed WebKit upgrade snapshot intact. [2026-11-11 Study30 Phase 1] Add optional structure-coach mode with original storage key, timestamped real activity, and offline/legacy compatibility; changes reviewed in PR."
     },
     {
       "path": "professional/layout-followup.css",
@@ -71,8 +71,8 @@
     {
       "path": "professional/progress-calendar.js",
       "base_sha256": null,
-      "sha256": "654d1c0dfd705f865f83489d8a088e760cf0dca36a66575c01a8c2b6cfb78249",
-      "reason": "New read-only monthly history; dates never create sessions or rewrite drafts."
+      "sha256": "0ba733827b8f7dbc3015641fa717760796a569f5a1dfc9eda1cc67a49bd7a5b6",
+      "reason": "New read-only monthly history; dates never create sessions or rewrite drafts. [2026-11-11 Study30 Phase 1] Add optional structure-coach mode with original storage key, timestamped real activity, and offline/legacy compatibility; changes reviewed in PR."
     },
     {
       "path": "professional/question-sources.js",
@@ -89,8 +89,8 @@
     {
       "path": "professional/sw.js",
       "base_sha256": "40e49a0b907e3db282d42743613f7756e205dba51705dfba7e8efac533400e99",
-      "sha256": "f66672337ee8b381d6b66dce8c1366defc0af86856e2bcd3f51bad59cc6bc97d",
-      "reason": "Refresh existing installed-viewer asset cache for changed UI, without altering storage keys. [2026-10-21] Rotate cache version after mobile duration CSS update, so previously installed Safari PWAs fetch a fresh layout on service-worker activation.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22] Bump offline cache to refresh AI review mode script for installed apps. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。 2026-11-05: Rotate study30 offline cache for new review layout and answer-link behavior. Retained mandatory 553q marker required by legacy police-bank integration test."
+      "sha256": "9e81b037cb29018ff0dc4c879f6ff3ef8f0a405f78aa17d7672bce7355f7e11e",
+      "reason": "Refresh existing installed-viewer asset cache for changed UI, without altering storage keys. [2026-10-21] Rotate cache version after mobile duration CSS update, so previously installed Safari PWAs fetch a fresh layout on service-worker activation.；套用已確認之溫暖圓體與霧藍書房視覺，保留既有操作與資料鍵。 [2026-10-22] Bump offline cache to refresh AI review mode script for installed apps. [2026-10-22] User-editable AI prompt rules by review mode and subject; shared local-only settings, no changes to answers or question sources. [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。 2026-11-05: Rotate study30 offline cache for new review layout and answer-link behavior. Retained mandatory 553q marker required by legacy police-bank integration test. [2026-11-11 Study30 Phase 1] Add optional structure-coach mode with original storage key, timestamped real activity, and offline/legacy compatibility; changes reviewed in PR."
     },
     {
       "path": "sw.js",
@@ -101,8 +101,8 @@
     {
       "path": "professional/practice-session.js",
       "base_sha256": null,
-      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.；2026-10-23 手機標示精簡及完整題庫資訊校正 [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。 2026-11-05: Persist question-specific safe http(s) answer links in the existing per-day study30 record and JSON backup, without changing storage key.",
-      "sha256": "b984a8782091c6bf54d10e60f7f0ac51a57b0ae99a9137fe4d7cc557cd4c1407"
+      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.；2026-10-23 手機標示精簡及完整題庫資訊校正 [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。 2026-11-05: Persist question-specific safe http(s) answer links in the existing per-day study30 record and JSON backup, without changing storage key. [2026-11-11 Study30 Phase 1] Add optional structure-coach mode with original storage key, timestamped real activity, and offline/legacy compatibility; changes reviewed in PR. [2026-11-11 QA] Finished coach sessions are read-only; corrections belong to independent repeat attempts.",
+      "sha256": "d7846ae8b0db5b6ad776f3d1d5f34824f357007ade5d65e12737ea5d050418bb"
     },
     {
       "path": "professional/practice-review.js",

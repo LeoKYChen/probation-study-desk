@@ -1,0 +1,43 @@
+name: Study30 structure coach isolated browser QA
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'professional/index.html'
+      - 'professional/practice-session.js'
+      - 'professional/structure-coach*.js'
+      - 'professional/structure-coach.css'
+      - 'professional/progress-calendar.js'
+      - 'professional/backup-import.js'
+      - 'verification/study30-structure-coach-browser.cjs'
+      - '.github/workflows/study30-structure-coach-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  browser-qa:
+    name: Chromium + WebKit structural practice and backup acceptance
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    container:
+      image: mcr.microsoft.com/playwright:v1.62.1-noble
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Trust this CI checkout
+        run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
+      - name: Verify source syntax and protected hashes
+        run: |
+          node --check verification/study30-structure-coach-browser.cjs
+          node verification/unified-integration.cjs
+      - name: Install matching Playwright JavaScript client
+        run: npm install --prefix /tmp/study30-structure-browser --no-save --ignore-scripts --no-audit playwright@1.62.1
+      - name: Test phone layouts, structure steps, real records, backup and repeat
+        env:
+          NODE_PATH: /tmp/study30-structure-browser/node_modules
+        run: node verification/study30-structure-coach-browser.cjs

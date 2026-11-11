@@ -206,10 +206,10 @@
       "url": "daily-simulation/model.js"
     },
     {
-      "url": "daily-simulation/news.js"
+      "url": "daily-simulation/news-storage.js"
     },
     {
-      "url": "daily-simulation/news-storage.js"
+      "url": "daily-simulation/news.js"
     },
     {
       "url": "daily-simulation/practice.css"
@@ -287,61 +287,31 @@
       "url": "law-scoring/data.js"
     },
     {
-      "url": "law-scoring/theory-cards.js"
+      "url": "law-scoring/exam-design/counseling.js"
     },
     {
-      "url": "law-scoring/topic-recall.js"
+      "url": "law-scoring/exam-design/criminal-law.js"
     },
     {
-      "url": "law-scoring/weakness.js"
+      "url": "law-scoring/exam-design/criminal-procedure.js"
     },
     {
-      "url": "law-scoring/summaries.html"
-    },
-    {
-      "url": "law-scoring/summaries.js"
-    },
-    {
-      "url": "law-scoring/summaries/index.js"
-    },
-    {
-      "url": "law-scoring/summaries/criminology.js"
-    },
-    {
-      "url": "law-scoring/summaries/juvenile.js"
-    },
-    {
-      "url": "law-scoring/summaries/criminal-law.js"
-    },
-    {
-      "url": "law-scoring/summaries/criminal-procedure.js"
-    },
-    {
-      "url": "law-scoring/summaries/psychology.js"
-    },
-    {
-      "url": "law-scoring/summaries/counseling.js"
-    },
-    {
-      "url": "law-scoring/exam-design/guard-criminology.js"
-    },
-    {
-      "url": "law-scoring/exam-design/family-psychology.js"
+      "url": "law-scoring/exam-design/criminology.js"
     },
     {
       "url": "law-scoring/exam-design/family-juvenile-law.js"
     },
     {
-      "url": "law-scoring/exam-design/promo-counseling.js"
+      "url": "law-scoring/exam-design/family-psychology.js"
     },
     {
-      "url": "law-scoring/exam-design/promo-criminology.js"
+      "url": "law-scoring/exam-design/guard-criminology.js"
     },
     {
-      "url": "law-scoring/exam-design/promo-psych-testing.js"
+      "url": "law-scoring/exam-design/index.js"
     },
     {
-      "url": "law-scoring/exam-design/promo-criminal-law.js"
+      "url": "law-scoring/exam-design/juvenile-law.js"
     },
     {
       "url": "law-scoring/exam-design/police-counseling.js"
@@ -350,10 +320,10 @@
       "url": "law-scoring/exam-design/police-criminology.js"
     },
     {
-      "url": "law-scoring/exam-design/police-psychology.js"
+      "url": "law-scoring/exam-design/police-law.js"
     },
     {
-      "url": "law-scoring/exam-design/police-law.js"
+      "url": "law-scoring/exam-design/police-psychology.js"
     },
     {
       "url": "law-scoring/exam-design/prison-counseling.js"
@@ -365,22 +335,16 @@
       "url": "law-scoring/exam-design/prison-law-juvenile.js"
     },
     {
-      "url": "law-scoring/exam-design/counseling.js"
+      "url": "law-scoring/exam-design/promo-counseling.js"
     },
     {
-      "url": "law-scoring/exam-design/criminology.js"
+      "url": "law-scoring/exam-design/promo-criminal-law.js"
     },
     {
-      "url": "law-scoring/exam-design/criminal-procedure.js"
+      "url": "law-scoring/exam-design/promo-criminology.js"
     },
     {
-      "url": "law-scoring/exam-design/criminal-law.js"
-    },
-    {
-      "url": "law-scoring/exam-design/juvenile-law.js"
-    },
-    {
-      "url": "law-scoring/exam-design/index.js"
+      "url": "law-scoring/exam-design/promo-psych-testing.js"
     },
     {
       "url": "law-scoring/exam-design/psychology.js"
@@ -396,6 +360,42 @@
     },
     {
       "url": "law-scoring/style.css"
+    },
+    {
+      "url": "law-scoring/summaries.html"
+    },
+    {
+      "url": "law-scoring/summaries.js"
+    },
+    {
+      "url": "law-scoring/summaries/counseling.js"
+    },
+    {
+      "url": "law-scoring/summaries/criminal-law.js"
+    },
+    {
+      "url": "law-scoring/summaries/criminal-procedure.js"
+    },
+    {
+      "url": "law-scoring/summaries/criminology.js"
+    },
+    {
+      "url": "law-scoring/summaries/index.js"
+    },
+    {
+      "url": "law-scoring/summaries/juvenile.js"
+    },
+    {
+      "url": "law-scoring/summaries/psychology.js"
+    },
+    {
+      "url": "law-scoring/theory-cards.js"
+    },
+    {
+      "url": "law-scoring/topic-recall.js"
+    },
+    {
+      "url": "law-scoring/weakness.js"
     },
     {
       "url": "lectures/app.js"
@@ -558,6 +558,15 @@
     },
     {
       "url": "professional/source-related-questions.js"
+    },
+    {
+      "url": "professional/structure-coach-model.js"
+    },
+    {
+      "url": "professional/structure-coach.css"
+    },
+    {
+      "url": "professional/structure-coach.js"
     },
     {
       "url": "professional/study30-shuati-links.js"
