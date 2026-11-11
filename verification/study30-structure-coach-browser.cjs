@@ -35,7 +35,15 @@ async function exercise(engine,base){
     let rec=await read();
     assert.equal(rec.practiceMode,'structure','new Friday defaults to structure mode');
     assert.equal(await page.locator('#practiceStructure').getAttribute('aria-pressed'),'true');
-    assert.equal(await page.locator('#structureCoachPanel').isVisible(),true);
+    const coachVisible=await page.locator('#structureCoachPanel').isVisible();
+    if(!coachVisible)console.log('COACH_MOUNT_DEBUG',JSON.stringify({
+      data:await page.evaluate(()=>({ctx:Study30App.structureCoachContext(),
+        scriptNodes:[...document.scripts].map(s=>s.src).filter(s=>s.includes('structure-coach')),
+        hidden:document.getElementById('structureCoachPanel')?.hidden,
+        text:document.getElementById('structureCoachPanel')?.textContent?.slice(0,200)})),
+      errors
+    }));
+    assert.equal(coachVisible,true);
     assert.equal(await page.evaluate(()=>Study30App.hasSessionProgress(Study30App.getEssayReviewData().sessions['2026-11-13'])),false,'default empty cards must not count as practice');
     await page.locator('#nextPhase').click();
     assert.equal((await read()).phase,0,'cannot advance without core reasoning');
