@@ -111,8 +111,21 @@ async function exercise(engine,base){
     await page.locator('input[data-coach-check="0"]').check();
     await page.locator('#coach-weakness').fill('沒有把必要前提與核心爭點分清楚');
     await page.locator('#coach-nextGoal').fill('下次先把前提放在核心爭點之前');
-    await page.locator('#nextPhase').click();
+    const phase3Gate=await page.evaluate(()=>{
+      const ctx=Study30App.structureCoachContext();
+      return {ready:Study30StructureCoachModel.readyForPhase(3,ctx.coach),
+        weakness:ctx.coach.weakness,nextGoal:ctx.coach.nextGoal};
+    });
+    assert(phase3Gate.ready,'weakness and next goal must be saved: '+JSON.stringify(phase3Gate));
+    // On mobile WebKit the first tap outside an active textarea may only dismiss focus.
+    await page.locator('#coach-nextGoal').evaluate(el=>el.blur());
+    for(let i=0;i<3;i++){
+      if((await read()).finished)break;
+      await page.locator('#nextPhase').click();
+      await page.waitForTimeout(80);
+    }
     rec=await read();
+    if(!rec.finished)console.log('FINAL_DEBUG',engine.name(),JSON.stringify({phase:rec.phase,gate:phase3Gate,notice:await page.locator('#notice').innerText()}));
     assert.equal(rec.finished,true);
     assert(rec.elapsed>=1,'final session retains actual time');
     assert(rec.structureCoach.checks[0],'structural check stays saved');
