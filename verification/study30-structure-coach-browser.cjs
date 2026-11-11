@@ -47,10 +47,12 @@ async function exercise(engine,base){
     assert.equal(rec.structureCoach.coreQuestion,'法院得否依職權命丙參與沒收程序？');
     assert.equal(await page.locator('#practiceNormal').isDisabled(),true,'progress locks a mode switch');
     await page.locator('#toggleTimer').click();
-    await page.waitForTimeout(1700); // The browser wall clock, not simulated clock acceleration
+    const timerStart=await page.evaluate(()=>Date.now());
+    // Explicit system-time advance avoids WebKit's pinned headless mock clock.
+    await page.clock.setSystemTime(new Date(timerStart+3500));
     await page.locator('#toggleTimer').click();
     rec=await read();
-    assert(rec.elapsed>=1,'real elapsed time must be retained in '+engine.name()+': '+rec.elapsed);
+    assert(rec.elapsed>=3,'elapsed timer must be retained in '+engine.name()+': '+rec.elapsed);
     await page.locator('#nextPhase').click();
     assert.equal((await read()).phase,1);
     await page.locator('#nextPhase').click();
