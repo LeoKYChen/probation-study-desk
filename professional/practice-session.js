@@ -63,7 +63,7 @@
     const commonQuestionId=original?original.commonQuestionId:pick(commonPool(),iso+':common')?.id;
     // Existing date records without practiceMode stay in the original workflow.
     const practiceMode=original?(original.practiceMode==='structure'?'structure':'normal'):
-      (String(mode)==='30'&&[5,6].includes(subjectFor(iso).day)&&isLawDate(iso)?'structure':'normal');
+      (iso>='2026-11-11'&&String(mode)==='30'&&[5,6].includes(subjectFor(iso).day)&&isLawDate(iso)?'structure':'normal');
     return {date:iso,mode,practiceMode,questionId:questionId||null,commonQuestionId:commonQuestionId||null,
       phase:0,remaining:durations(iso,mode,practiceMode)[0]*60,elapsed:0,notes:[],rating:null,finished:false,
       createdAt:new Date().toISOString(),updatedAt:new Date().toISOString()};
