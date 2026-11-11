@@ -65,7 +65,7 @@ async function exercise(engine,base){
     await page.reload();
     await page.waitForFunction(()=>window.Study30App?.structureCoachContext);
     assert.equal(await page.locator('#coach-title-0').inputValue(),'二、程序權限','outline survives reload');
-    assert.equal((await read()).elapsed>=3,'timer survives reload');
+    assert((await read()).elapsed>=3,'timer survives reload');
     await page.locator('#nextPhase').click();
     assert.equal((await read()).phase,2);
     await page.locator('#coach-issue').fill('法院職權命第三人參與之要件');
