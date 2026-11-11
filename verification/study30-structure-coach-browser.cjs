@@ -47,10 +47,10 @@ async function exercise(engine,base){
     assert.equal(rec.structureCoach.coreQuestion,'法院得否依職權命丙參與沒收程序？');
     assert.equal(await page.locator('#practiceNormal').isDisabled(),true,'progress locks a mode switch');
     await page.locator('#toggleTimer').click();
-    await page.clock.runFor(3000);
+    await page.waitForTimeout(1700); // The browser wall clock, not simulated clock acceleration
     await page.locator('#toggleTimer').click();
     rec=await read();
-    assert(rec.elapsed>=3,'real elapsed time must be retained');
+    assert(rec.elapsed>=1,'real elapsed time must be retained in '+engine.name()+': '+rec.elapsed);
     await page.locator('#nextPhase').click();
     assert.equal((await read()).phase,1);
     await page.locator('#nextPhase').click();
@@ -65,7 +65,7 @@ async function exercise(engine,base){
     await page.reload();
     await page.waitForFunction(()=>window.Study30App?.structureCoachContext);
     assert.equal(await page.locator('#coach-title-0').inputValue(),'二、程序權限','outline survives reload');
-    assert((await read()).elapsed>=3,'timer survives reload');
+    assert((await read()).elapsed>=1,'timer survives reload');
     await page.locator('#nextPhase').click();
     assert.equal((await read()).phase,2);
     await page.locator('#coach-issue').fill('法院職權命第三人參與之要件');
@@ -83,6 +83,7 @@ async function exercise(engine,base){
     assert.equal(rec.finished,true);
     assert.equal(rec.elapsed>=3,true);
     assert(rec.structureCoach.checks[0],'structural check stays saved');
+    assert.equal(await page.locator('#coach-facts').isDisabled(),true,'completed original coach must be read-only');
     // The original session and the new coach fields are round-tripped by the unchanged JSON format.
     const dlEvent=page.waitForEvent('download');
     await page.locator('#export').click();
