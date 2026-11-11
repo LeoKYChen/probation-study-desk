@@ -54,8 +54,16 @@ async function exercise(engine,base){
         elapsed:record.elapsed,remaining:record.remaining};
     });
     const timerBefore=await timeSnapshot();
-    await page.locator('#toggleTimer').click();
+    await page.bringToFront();
+    // A headless WebKit focus/visibility transition can immediately pause the first click.
+    // Require the visible 'running' state before measuring time; do not silently skip timing.
+    for(let i=0;i<3;i++){
+      if((await page.locator('#toggleTimer').innerText())==='暫停計時')break;
+      await page.locator('#toggleTimer').click();
+      await page.waitForTimeout(120);
+    }
     const timerStarted=await timeSnapshot();
+    assert.equal(timerStarted.button,'暫停計時','timer must enter running state before clock advance');
     const timerStart=await page.evaluate(()=>Date.now());
     // Explicit system-time advance avoids WebKit's pinned headless mock clock.
     await page.clock.setSystemTime(new Date(timerStart+3500));
