@@ -64,6 +64,43 @@
     select.value=item.role;box.append(roleLabel,select);
     return box;
   }
+  function previousPhaseReview(ctx,law){
+    if(ctx.phase<1)return null;
+    const details=node('details',undefined,'coach-previous-review');
+    details.open=true;
+    details.append(node('summary','前面階段已保存的作答（唯讀，可收合）'));
+    const content=node('div',undefined,'coach-previous-content');
+    const groups=[
+      {title:'第1階段｜'+(law?'事實與爭點':'現象與問題'),items:[
+        [law?names[0]:'題目現象與案例',draft.facts],
+        [law?names[1]:'核心學理問題',draft.coreQuestion],
+        [law?names[2]:'必要概念與理論',draft.prerequisites]
+      ]},
+      {title:'第2階段｜申論骨架',items:[
+        ['我的標題與問題',draft.outline.filter(x=>x.title.trim()||x.question.trim()).map((x,i)=>
+          (i+1)+'. '+x.title+(x.question?'\n   '+x.question:'')).join('\n\n')]
+      ]},
+      {title:'第3階段｜論證段落',items:[
+        [law?'本段爭點':'本段學理問題',draft.paragraph.issue],
+        [law?'規範及要件':'理論及概念',draft.paragraph.rule],
+        [law?'涵攝分析':'理論機制與案例應用',draft.paragraph.application],
+        ['小結',draft.paragraph.conclusion],
+        ['連貫段落',draft.paragraph.combined]
+      ]}
+    ];
+    for(let i=0;i<Math.min(ctx.phase,groups.length);i++){
+      const g=groups[i],section=node('section',undefined,'coach-previous-group');
+      section.append(node('h4',g.title));
+      for(const [name,value] of g.items){
+        if(!String(value||'').trim())continue;
+        section.append(node('strong',name));
+        section.append(node('p',value,'coach-previous-text'));
+      }
+      content.append(section);
+    }
+    details.append(content);
+    return details;
+  }
   function draw(ctx){
     const host=$('structureCoachPanel');
     if(!host)return;
@@ -75,6 +112,8 @@
     host.append(heading);
     const desc=node('p',(law?Model.promptForPhase:topicGuide)[ctx.phase],'muted');
     host.append(desc);
+    const previous=previousPhaseReview(ctx,law);
+    if(previous)host.append(previous);
     const area=node('div',undefined,'coach-body');
     if(ctx.phase===0){
       area.append(textarea(law?names[0]:'題目中的現象、情境或案例','facts',draft.facts,4),
