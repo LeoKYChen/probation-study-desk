@@ -101,8 +101,8 @@
     {
       "path": "professional/practice-session.js",
       "base_sha256": null,
-      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.；2026-10-23 手機標示精簡及完整題庫資訊校正 [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。 2026-11-05: Persist question-specific safe http(s) answer links in the existing per-day study30 record and JSON backup, without changing storage key. [2026-11-11 Study30 Phase 1] Add optional structure-coach mode with original storage key, timestamped real activity, and offline/legacy compatibility; changes reviewed in PR.",
-      "sha256": "629e316cfd154bacdcca8ad6d407b373e70c59f7691741799836e9bcd2ab0ae9"
+      "reason": "Versioned URL for installed-browser cache compatibility: timer switching, explicit subject ratings/review/diagnostics, and English-above-Chinese panel headers. Original main runtime files remain preserved.；2026-10-23 手機標示精簡及完整題庫資訊校正 [2026-10-23 553 題整合] 維持 426 題原始 ID 與紀錄鍵，增加警察原題 127 題的選題、跨科複習及離線資源；保留待人工核稿標示。 2026-11-05: Persist question-specific safe http(s) answer links in the existing per-day study30 record and JSON backup, without changing storage key. [2026-11-11 Study30 Phase 1] Add optional structure-coach mode with original storage key, timestamped real activity, and offline/legacy compatibility; changes reviewed in PR. [2026-11-11 QA] Finished coach sessions are read-only; corrections belong to independent repeat attempts.",
+      "sha256": "d7846ae8b0db5b6ad776f3d1d5f34824f357007ade5d65e12737ea5d050418bb"
     },
     {
       "path": "professional/practice-review.js",
