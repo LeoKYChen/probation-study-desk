@@ -94,7 +94,11 @@
         textarea('下次要如何具體改善？','nextGoal',draft.nextGoal,3));
     }
     host.append(area);
-    const status=node('p','輸入後會儲存在本機，並隨本模組 JSON 一起備份。','muted tiny');
+    if(ctx.finished){
+      host.querySelectorAll('input,textarea,select,button').forEach(el=>{el.disabled=true;});
+      host.append(node('p','本次練習已完成，原始內容為唯讀。若要訂正，請從月曆選擇「重新練習這題」，建立獨立紀錄。','muted tiny'));
+    }
+    const status=node('p',ctx.finished?'已完成；原稿唯讀。':'輸入後會儲存在本機，並隨本模組 JSON 一起備份。','muted tiny');
     status.id='coachSaveStatus';status.setAttribute('role','status');host.append(status);
     host.append(node('p','教練檢查只處理論證結構；法條及實務見解仍須另行核對。','muted tiny'));
   }
@@ -137,7 +141,7 @@
     if(!host||!ctx)return;
     host.hidden=!ctx.active;
     if(!ctx.active){key='';draft=null;return;}
-    const next=[ctx.date,ctx.sessionToken,ctx.practiceMode,ctx.mode,ctx.phase].join(':');
+    const next=[ctx.date,ctx.sessionToken,ctx.practiceMode,ctx.mode,ctx.phase,ctx.finished?'complete':'draft'].join(':');
     if(next===key)return; // Preserve caret position during timer and stats refresh.
     key=next;draft=Model.normalize(ctx.coach);draw(ctx);
   }
