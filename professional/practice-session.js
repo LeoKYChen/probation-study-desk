@@ -251,7 +251,24 @@
     if(structureActive(session)&&!window.Study30StructureCoachModel?.readyForPhase(session.phase,session.structureCoach)){
       say('尚未完成本階段：'+(window.Study30StructureCoachModel?.promptForPhase?.[session.phase]||'請補齊本段內容。'));return;
     }
-    pause();session.notes[session.phase]=$('answer').value;const previousRemaining=session.remaining;const isFinal=session.phase>=currentTotal()-1;if(isFinal){session.finished=true;session.completedAt=new Date().toISOString();session.remaining=0;}else{session.phase+=1;session.phaseTimeUsed=0;session.remaining=sessionDurations(session)[session.phase]*60;}session.skippedSeconds=(session.skippedSeconds||0)+previousRemaining;session.updatedAt=new Date().toISOString();persist();render();if(isFinal)say('今日已自行標記完成，實際計時請看累計專注時間。記得選擇本題自評。');}
+    pause();
+    // A daily phase belongs to today's question, not to the optional free-subject
+    // essay picker. Restore the editor location without discarding any other
+    // subject's per-question draft saved in session.essayDrafts.
+    const returnedToToday=essaySelectedSubject()!=='today';
+    if(returnedToToday){
+      session.essayPracticeSubject='today';
+      session.essayReviewTargetId=null;
+    }
+    session.notes[session.phase]=$('answer').value;
+    const previousRemaining=session.remaining,isFinal=session.phase>=currentTotal()-1;
+    if(isFinal){session.finished=true;session.completedAt=new Date().toISOString();session.remaining=0;}
+    else{session.phase+=1;session.phaseTimeUsed=0;session.remaining=sessionDurations(session)[session.phase]*60;}
+    session.skippedSeconds=(session.skippedSeconds||0)+previousRemaining;
+    session.updatedAt=new Date().toISOString();persist();render();
+    if(isFinal)say('今日已自行標記完成，實際計時請看累計專注時間。記得選擇本題自評。');
+    else if(returnedToToday)say('已自動切回「跟隨今日練習題」。其他科目的申論草稿仍保留，可隨時切回自由練習查看。');
+  }
   function setRating(value){if(['mastered','partial','review'].includes(value)){session.rating=value;session.ratingUpdatedAt=new Date().toISOString();session.updatedAt=new Date().toISOString();persist();renderStats();renderRatings();renderReviewPanel();renderControls();}}
   function setErrorCause(value){if(!session||!['','概念不熟','爭點辨識','案例涵攝','申論架構','法條或資料待查證','其他'].includes(value))return;session.errorCause=value;session.ratingUpdatedAt=new Date().toISOString();session.updatedAt=new Date().toISOString();persist();renderReviewPanel();}
   function renderErrorPanel(){const show=!!session&&['partial','review'].includes(session.rating);$('errorBox').hidden=!show;$('errorCause').value=session?.errorCause||'';}
