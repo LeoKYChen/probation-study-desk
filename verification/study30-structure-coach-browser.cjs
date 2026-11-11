@@ -94,7 +94,18 @@ async function exercise(engine,base){
     await page.locator('#coach-rule').fill('待查相關法律規範與要件');
     await page.locator('#coach-application').fill('丙不知賄賂，仍須具體判斷財產是否可能受沒收影響');
     await page.locator('#coach-conclusion').fill('需依法定要件判斷，不能只因丙不知情即斷言');
-    await page.locator('#nextPhase').click();
+    const phase2Gate=await page.evaluate(()=>{
+      const ctx=Study30App.structureCoachContext();
+      return {ready:Study30StructureCoachModel.readyForPhase(2,ctx.coach),
+        paragraph:ctx.coach.paragraph};
+    });
+    assert(phase2Gate.ready,'all four paragraph parts must be saved before advancing: '+JSON.stringify(phase2Gate));
+    for(let i=0;i<3;i++){
+      if((await read()).phase===3)break;
+      await page.locator('#nextPhase').click();
+      await page.waitForTimeout(80);
+    }
+    if((await read()).phase!==3)console.log('PHASE2_DEBUG',engine.name(),JSON.stringify({gate:phase2Gate,notice:await page.locator('#notice').innerText()}));
     assert.equal((await read()).phase,3);
     await page.locator('#coach-check-0').count(); // fields persist; checkboxes are identified by data attribute
     await page.locator('input[data-coach-check="0"]').check();
