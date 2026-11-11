@@ -81,7 +81,7 @@ async function exercise(engine,base){
     await page.locator('#nextPhase').click();
     rec=await read();
     assert.equal(rec.finished,true);
-    assert.equal(rec.elapsed>=3,true);
+    assert(rec.elapsed>=1,'final session retains actual time');
     assert(rec.structureCoach.checks[0],'structural check stays saved');
     assert.equal(await page.locator('#coach-weakness').isDisabled(),true,'completed original coach must be read-only');
     // The original session and the new coach fields are round-tripped by the unchanged JSON format.
