@@ -39,6 +39,28 @@
   host.append(make('p',(q?.subject||'自主練習')+'｜'+(q?.title||s.questionId||'未選題')));
   const rating={mastered:'能自行說明',partial:'還不完整',review:'需要再複習'}[s.rating]||'尚未自評';
   host.append(make('p',(s.finished?'已標記完成':'尚未完成')+'｜專注 '+Math.floor(Number(s.elapsed||0)/60)+' 分｜'+rating));
+  if(s.practiceMode==='structure'){
+    host.append(make('p','訓練模式：申論結構教練'));
+    const model=window.Study30StructureCoachModel;
+    if(model?.hasActivity(s.structureCoach)){
+      const c=model.normalize(s.structureCoach),details=make('details');
+      details.append(make('summary','查看申論結構教練紀錄'));
+      const sections=[
+        ['題目已知事實',c.facts],['核心法律問題',c.coreQuestion],['必要前提',c.prerequisites],
+        ['標題骨架',c.outline.filter(x=>x.title.trim()||x.question.trim()).map((x,i)=>(i+1)+'. '+x.title+'｜'+x.question).join('\n')],
+        ['本段爭點',c.paragraph.issue],['規範及要件',c.paragraph.rule],
+        ['具體涵攝',c.paragraph.application],['本段結論',c.paragraph.conclusion],
+        ['整合段落',c.paragraph.combined],
+        ['結構自我檢查',c.checks.map((x,i)=>(i+1)+'. '+(x?'已確認':'待確認')).join('\n')],
+        ['主要結構問題',c.weakness],['下次改善目標',c.nextGoal]
+      ];
+      for(const [label,value] of sections){
+        if(!String(value||'').trim())continue;
+        details.append(make('h4',label),make('pre',value));
+      }
+      host.append(details);
+    }
+  }
   const notes=Array.isArray(s.notes)?s.notes.filter(t=>typeof t==='string'&&t.trim()):[];
   if(notes.length){host.append(make('h4','步驟速記'),make('pre',notes.join('\n\n')));}
   const drafts=Object.entries(s.essayDrafts||{});
