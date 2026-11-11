@@ -85,7 +85,7 @@ async function exercise(engine,base){
     await page.locator('#nextPhase').click();
     assert.equal((await read()).phase,1);
     assert.equal(await page.locator('#essayPracticeSubject').inputValue(),'today',
-      'phase advancement must return editor to today's question');
+      'phase advancement must return editor to the daily question');
     assert.equal(await page.locator('#essayFullAnswer').inputValue(),
       '本日申論草稿：甲、乙、丙與第三人參與。','daily answer remains visible after phase change');
     assert.equal(await page.locator('#essayEditor').evaluate(el=>el.parentElement?.id),
