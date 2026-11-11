@@ -45,7 +45,7 @@ async function exercise(engine,base){
     await page.locator('#coach-prerequisites').fill('確認財產權利及程序必要性');
     rec=await read();
     assert.equal(rec.structureCoach.coreQuestion,'法院得否依職權命丙參與沒收程序？');
-    assert.equal(await page.locator('#practiceNormal').isDisabled(),true,'progress locks a mode switch');
+    assert.equal(await page.locator('#practiceNormal').isDisabled(),false,'mode switch remains reachable and saves an independent attempt');
     const timeSnapshot=()=>page.evaluate(()=>{
       const record=JSON.parse(localStorage.getItem('probation-study30-v251:v1')).sessions['2026-11-13'];
       return {now:Date.now(),visible:document.visibilityState,hidden:document.hidden,
