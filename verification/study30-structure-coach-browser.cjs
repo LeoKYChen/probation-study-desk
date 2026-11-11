@@ -46,6 +46,15 @@ async function exercise(engine,base){
     rec=await read();
     assert.equal(rec.structureCoach.coreQuestion,'法院得否依職權命丙參與沒收程序？');
     assert.equal(await page.locator('#practiceNormal').isDisabled(),false,'mode switch remains reachable and saves an independent attempt');
+    // Both editors persist independently: daily question and free-subject essay.
+    // Phase advancement should bring the editor back to today's question.
+    const todayEssayId=await page.evaluate(()=>Study30App.essayContext().questionId);
+    await page.locator('#essayFullAnswer').fill('本日申論草稿：甲、乙、丙與第三人參與。');
+    await page.locator('#essayPracticeSubject').selectOption('心理學');
+    const freeEssayId=await page.evaluate(()=>Study30App.essayContext().questionId);
+    assert.notEqual(todayEssayId,freeEssayId,'free-subject draft requires distinct question ID');
+    await page.locator('#essayFullAnswer').fill('自由選科心理學草稿，不能被自動切換覆蓋。');
+    assert.equal((await page.locator('#essayPracticeSubject').inputValue()),'心理學');
     const timeSnapshot=()=>page.evaluate(()=>{
       const record=JSON.parse(localStorage.getItem('probation-study30-v251:v1')).sessions['2026-11-13'];
       return {now:Date.now(),visible:document.visibilityState,hidden:document.hidden,
@@ -75,6 +84,20 @@ async function exercise(engine,base){
     assert(rec.elapsed>=3,'elapsed timer must be retained in '+engine.name()+': '+rec.elapsed);
     await page.locator('#nextPhase').click();
     assert.equal((await read()).phase,1);
+    assert.equal(await page.locator('#essayPracticeSubject').inputValue(),'today',
+      'phase advancement must return editor to today's question');
+    assert.equal(await page.locator('#essayFullAnswer').inputValue(),
+      '本日申論草稿：甲、乙、丙與第三人參與。','daily answer remains visible after phase change');
+    assert.equal(await page.locator('#essayEditor').evaluate(el=>el.parentElement?.id),
+      'dailyEssayWorkbenchSlot','daily editor is relocated to the visible today slot');
+    assert.match(await page.locator('.coach-previous-review').innerText(),
+      /法院得否依職權命丙參與沒收程序/,'previous coach answers must stay visibly reviewable');
+    assert.equal((await read()).essayDrafts[freeEssayId].fullAnswer,
+      '自由選科心理學草稿，不能被自動切換覆蓋。','free-subject essay remains stored');
+    await page.locator('#essayPracticeSubject').selectOption('心理學');
+    assert.equal(await page.locator('#essayFullAnswer').inputValue(),
+      '自由選科心理學草稿，不能被自動切換覆蓋。','free-subject draft can be reopened');
+    await page.locator('#essayPracticeSubject').selectOption('today');
     await page.locator('#nextPhase').click();
     assert.equal((await read()).phase,1,'empty outline blocks are not valid');
     await page.locator('#coach-title-0').fill('一、財產相關性');
@@ -90,6 +113,8 @@ async function exercise(engine,base){
     assert((await read()).elapsed>=1,'timer survives reload');
     await page.locator('#nextPhase').click();
     assert.equal((await read()).phase,2);
+    assert.match(await page.locator('.coach-previous-review').innerText(),
+      /二、程序權限/,'prior outline must stay reviewable while writing a paragraph');
     await page.locator('#coach-issue').fill('法院職權命第三人參與之要件');
     await page.locator('#coach-rule').fill('待查相關法律規範與要件');
     await page.locator('#coach-application').fill('丙不知賄賂，仍須具體判斷財產是否可能受沒收影響');
