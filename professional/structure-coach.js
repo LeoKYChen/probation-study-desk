@@ -73,8 +73,8 @@
     const groups=[
       {title:'第1階段｜'+(law?'事實與爭點':'現象與問題'),items:[
         [law?names[0]:'題目現象與案例',draft.facts],
-        [law?names[1]:'核心法律問題':'核心學理問題',draft.coreQuestion],
-        [law?names[2]:'必要前提':'必要概念與理論',draft.prerequisites]
+        [law?names[1]:'核心學理問題',draft.coreQuestion],
+        [law?names[2]:'必要概念與理論',draft.prerequisites]
       ]},
       {title:'第2階段｜申論骨架',items:[
         ['我的標題與問題',draft.outline.filter(x=>x.title.trim()||x.question.trim()).map((x,i)=>
