@@ -167,7 +167,13 @@ async function exercise(engine,base){
     await page.waitForFunction(()=>window.Study30App?.structureCoachContext);
     assert.equal(await page.locator('#todayDate').innerText().then(x=>x.slice(0,10)),'2026-11-11');
     assert.equal(await page.locator('#practiceStructure').isEnabled(),true,'Wednesday criminology coach button must be clickable');
-    await page.locator('#answer').fill('犯罪學的一般模式原稿，不應因切換而消失');
+    // Seed an existing normal-mode draft through the original input handler.
+    // The legacy answer field may be inside a collapsed detail on mobile.
+    await page.evaluate(()=>{
+      const input=document.getElementById('answer');
+      input.value='犯罪學的一般模式原稿，不應因切換而消失';
+      input.dispatchEvent(new Event('input',{bubbles:true}));
+    });
     await page.locator('#practiceStructure').click();
     let wednesday=await page.evaluate(()=>JSON.parse(localStorage.getItem('probation-study30-v251:v1')).sessions['2026-11-11']);
     assert.equal(wednesday.practiceMode,'normal','original subject task is unchanged');
