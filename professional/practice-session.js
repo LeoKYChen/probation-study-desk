@@ -35,14 +35,17 @@
   const commonPool = () => BANK.filter(q=>/法學知識|英文|國文/.test(String(q.subject||'')));
   const pick = (list,seed) => list.length ? list[hash(seed)%list.length] : null;
   const isLawDate=iso=>['少年事件處理法','刑法','刑事訴訟法','保安處分執行法'].includes(subjectFor(iso).target);
-  const structureActive=s=>s?.practiceMode==='structure'&&String(s.mode)==='30'&&isLawDate(s.date);
+  // Monday–Saturday: both legal and theory subjects need essay-structure practice.
+  // Sunday is a distinct two-part review task and retains its existing flow.
+  const structureEligible=iso=>subjectFor(iso).day!==0;
+  const structureActive=s=>s?.practiceMode==='structure'&&String(s.mode)==='30'&&structureEligible(s.date);
   const durations=(iso,mode,practiceMode='normal')=>
-    practiceMode==='structure'&&String(mode)==='30'&&isLawDate(iso)?[5,7,13,5]:
+    practiceMode==='structure'&&String(mode)==='30'&&structureEligible(iso)?[5,7,13,5]:
     subjectFor(iso).sunday?(String(mode)==='10'?[6,4]:[20,10]):
     (String(mode)==='10'?[2,5,2,1]:[5,15,8,2]);
   const phaseTitles=(iso,mode='30',practiceMode='normal')=>
-    practiceMode==='structure'&&String(mode)==='30'&&isLawDate(iso)?
-    ['事實與爭點辨識','申論骨架建構','法律論證練習','結構自評與訂正']:
+    practiceMode==='structure'&&String(mode)==='30'&&structureEligible(iso)?
+    ['問題與素材辨識','申論骨架建構',isLawDate(iso)?'法律論證練習':'學理與案例論述','結構自評與訂正']:
     subjectFor(iso).sunday?['錯題重答與複習','共同科目']:
     ['主動回想','理解與解題','申論架構','錯誤整理'];
   const sessionDurations=s=>durations(s.date,s.mode,s.practiceMode);
@@ -106,10 +109,12 @@
     const original=store.sessions[iso];
     if(original?.date!==iso||!hasSessionProgress(original))return;
     pause();
-    if(!original.finished){showPractice(original);return;}
     const attempts=repeatAttempts(original);
     const latest=attempts.at(-1);
+    // Resume a current unfinished mode-switch attempt even when the original
+    // dated session itself was left unfinished.
     if(latest&&!latest.finished){showPractice(latest,true);return;}
+    if(!original.finished){showPractice(original);return;}
     const attempt=newSession(iso,String(original.mode)==='10'?'10':'30',original);
     const previous=original.repeatAttempts;
     original.repeatAttempts=[...(Array.isArray(previous)?previous:[]),attempt];
@@ -193,14 +198,34 @@
   function updateAnswer(){session.notes[session.phase]=$('answer').value;session.updatedAt=new Date().toISOString();persist();$('answerStatus').textContent='已保存於目前瀏覽器';renderControls();}
   function setPracticeMode(value){
     if(!['normal','structure'].includes(value)||(session.practiceMode||'normal')===value)return;
-    if(value==='structure'&&(!isLawDate(session.date)||session.mode!=='30')){
-      say('申論結構教練第一版僅供法律科目的30分鐘練習使用。');return;
+    if(value==='structure'&&!structureEligible(session.date)){
+      say('週日是錯題複習與共同科目綜合日，請選擇週一至週六使用申論結構教練。');return;
     }
-    if(hasProgress()){say('這天已有計時或文字紀錄，為避免混用階段，請完成後從月曆重練。');return;}
-    pause();session.practiceMode=value;session.phase=0;session.phaseTimeUsed=0;
+    pause();
+    if(hasProgress()){
+      // Switching an already-started session must NEVER discard its original
+      // elapsed time, answers, rating, or its structure-coach drafts.
+      const original=store.sessions[session.date];
+      if(!original){say('找不到原日期紀錄，為保護作答資料，已取消切換。');return;}
+      const attempt=newSession(session.date,value==='structure'?'30':session.mode,original);
+      attempt.practiceMode=value;
+      attempt.remaining=sessionDurations(attempt)[0]*60;
+      const before=original.repeatAttempts;
+      original.repeatAttempts=[...(Array.isArray(before)?before:[]),attempt];
+      if(!persist()){
+        if(before===undefined)delete original.repeatAttempts;
+        else original.repeatAttempts=before;
+        say('無法保存新的獨立練習，原答案未改動。請先備份本模組紀錄。');return;
+      }
+      showPractice(attempt,true);
+      say('已為 '+session.date+' 建立獨立的'+(value==='structure'?'申論結構教練':'一般考古題')+'練習；原有答案、計時與完成狀態均保留。');
+      return;
+    }
+    if(value==='structure')session.mode='30';
+    session.practiceMode=value;session.phase=0;session.phaseTimeUsed=0;
     session.remaining=sessionDurations(session)[0]*60;
     session.updatedAt=new Date().toISOString();persist();render();
-    say(value==='structure'?'已切換申論結構教練，請先辨識事實與爭點。':'已切換原有一般考古題流程。');
+    say(value==='structure'?'已切換申論結構教練，請先辨識題目問題及相關素材。':'已切換原有一般考古題流程。');
   }
   function setMode(mode){
     if(!['30','10'].includes(mode)||session.mode===mode)return;
@@ -240,12 +265,18 @@
     $('promptTitle').textContent=titles[phase];
     let prompt='';
     if(sub.sunday){prompt=phase===0?'不看答案，重寫近期最不熟悉題目的核心爭點與分析，再檢查錯誤。':'完成一題共同科目練習，記下不熟悉的英文單字或法學概念；不另設每日英語提醒。';}
-    else if(structureActive(session)){prompt=[
-      '先分開記錄題目已知事實、核心法律問題及必要前提，不急著援引法條。',
-      '自行安排至少兩個論證區塊，確認先後及主從關係。',
-      '針對一個爭點，寫出規範、要件、具體涵攝與小結。',
-      '檢查是否跳躍、重複、偏題或規範涵攝脫節，留下改善目標。'
-    ][phase];}
+    else if(structureActive(session)){
+      prompt=(isLawDate(session.date)?[
+        '先分開記錄題目已知事實、核心法律問題及必要前提，不急著援引法條。',
+        '自行安排至少兩個論證區塊，確認先後及主從關係。',
+        '針對一個爭點，寫出規範、要件、具體涵攝與小結。',
+        '檢查是否跳躍、重複、偏題或規範涵攝脫節，留下改善目標。'
+      ]:[
+        '先整理題目中的現象、案例或觀察，再用一句話寫出核心學理問題。',
+        '安排至少兩個論述區塊，例如概念／理論、作用機制、理論比較或案例應用。',
+        '選擇一個核心概念，解釋理論、作用機制、具體案例與小結。',
+        '檢查是否只堆砌名詞、缺少機制或案例連結，留下改善目標。'
+      ])[phase];}
     else{prompt=[`在不看資料的情況下，寫出與「${sub.target}」相關的2至3個核心觀念、定義或法條。`,`閱讀本題題幹並嘗試作答。分辨題目要求、主要爭點與易混淆概念。`,`在8分鐘內列出國考申論架構：一、定義／規範；二、主要爭點；三、分析或涵攝；四、結論。`,`記下今天最容易犯的1至2個錯誤，以及下次要回想的問題。`][phase];}
     $('promptText').textContent=prompt;
     $('answer').value=session.notes[phase]||'';$('answer').disabled=!!session.finished;
@@ -254,15 +285,17 @@
   }
   function renderRatings(){$('selfCheck').querySelector('strong').textContent='今日任務自評｜'+(BANK.find(q=>q.id===session.questionId)?.subject||subjectFor(session.date).target);document.querySelectorAll('[data-rating]').forEach(b=>{const chosen=session.rating===b.dataset.rating;b.classList.toggle('selected',chosen);b.setAttribute('aria-pressed',String(chosen));});renderErrorPanel();}
   function renderPracticeMode(){
-    const legal=isLawDate(session.date),active=structureActive(session),progress=hasProgress();
+    const eligible=structureEligible(session.date),active=structureActive(session),progress=hasProgress();
     $('practiceNormal').setAttribute('aria-pressed',String(!active));
     $('practiceStructure').setAttribute('aria-pressed',String(active));
-    $('practiceStructure').disabled=!legal||session.mode!=='30'||(progress&&!active);
-    $('practiceNormal').disabled=progress&&active;
-    $('practiceModeHint').textContent=!legal?'第一版僅開放法律科目；原有練習照常。':
-      session.mode==='10'?'10分鐘快速版維持原流程，改選30分鐘可使用結構教練。':
-      progress?'已有練習紀錄，為避免混用階段，請從月曆重練切換模式。':
-      '週五、週六新練習預設結構教練；其餘法律科可自行開啟。只選模式不算練習。';
+    // Never make the mode unreachable just because the user is studying
+    // psychology, counseling, criminology, or already started a different mode.
+    $('practiceStructure').disabled=!eligible;
+    $('practiceNormal').disabled=false;
+    $('practiceModeHint').textContent=!eligible?'週日保留原有錯題與共同科目雙階段練習。':
+      progress?'本次已有練習紀錄；點選另一種模式會建立獨立重練，原答案不覆蓋。':
+      session.mode==='10'?'選擇結構教練會改為30分鐘，原本10分鐘快速版仍保留。':
+      '週一至週六皆可切換申論結構教練；法律科練規範涵攝，學理科練理論、機制及案例。';
   }
   function renderControls(){const phaseTitlesNow=phaseTitles(session.date,session.mode,session.practiceMode);$('sessionStatus').textContent=session.finished?'已標記完成':running?'計時中':session.elapsed>0||session.phase>0?'已暫停':'尚未開始';$('phaseLabel').textContent=phaseTitlesNow[session.phase]||'今日完成';$('timer').textContent=`${two(Math.floor(session.remaining/60))}:${two(session.remaining%60)}`;$('toggleTimer').textContent=running?'暫停計時':'開始／繼續';$('toggleTimer').disabled=!!session.finished;$('nextPhase').textContent=session.phase===currentTotal()-1?'標記今日完成':'完成此步驟';$('nextPhase').disabled=!!session.finished;for(const mode of ['30','10']){$('mode'+mode).setAttribute('aria-pressed',String(session.mode===mode));$('mode'+mode).disabled=false;}renderPracticeMode();}
   function renderStats(){const today=isoTaipei(),w=weekNumber(today);let done=0,elapsed=0;const byId=new Map();for(const [day,s] of Object.entries(store.sessions)){if(weekNumber(day)===w&&s.finished)done+=1;elapsed+=Number(s.elapsed||0);if(s.questionId&&s.rating){const current=byId.get(s.questionId);if(!current||day>current.date)byId.set(s.questionId,{date:day,rating:s.rating});}}

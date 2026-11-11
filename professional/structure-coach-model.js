@@ -54,9 +54,9 @@
     return false;
   }
   const promptForPhase=[
-    '請填寫重要事實、一句核心法律問題，以及回答前必須先確認的事項。',
-    '至少安排兩個論證區塊：每張卡片要有標題與「本段要回答的問題」。',
-    '請完成本段爭點、規範、具體涵攝及結論；法條不確定可標示待查。',
+    '請填寫重要事實或現象、一句核心問題，以及回答前須確認的事項。',
+    '至少安排兩個論述區塊：每張卡片要有標題與「本段要回答的問題」。',
+    '請完成問題、規範或理論、具體涵攝或案例應用、結論；不確定時可標示待查。',
     '請記錄一個最主要的結構弱點及下次的具體改善目標。'
   ];
   root.Study30StructureCoachModel={empty,normalize,valid,hasActivity,readyForPhase,promptForPhase,ROLES};

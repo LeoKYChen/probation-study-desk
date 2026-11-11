@@ -45,7 +45,7 @@ async function exercise(engine,base){
     await page.locator('#coach-prerequisites').fill('確認財產權利及程序必要性');
     rec=await read();
     assert.equal(rec.structureCoach.coreQuestion,'法院得否依職權命丙參與沒收程序？');
-    assert.equal(await page.locator('#practiceNormal').isDisabled(),true,'progress locks a mode switch');
+    assert.equal(await page.locator('#practiceNormal').isDisabled(),false,'mode switch remains reachable and saves an independent attempt');
     const timeSnapshot=()=>page.evaluate(()=>{
       const record=JSON.parse(localStorage.getItem('probation-study30-v251:v1')).sessions['2026-11-13'];
       return {now:Date.now(),visible:document.visibilityState,hidden:document.hidden,
@@ -160,8 +160,42 @@ async function exercise(engine,base){
       await page.setViewportSize({width,height:844});
       assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>document.documentElement.clientWidth+2),false,'mobile overflow at '+width);
     }
+    // Regression: on Wednesday (criminology), the coach button was disabled.
+    // An existing normal-mode answer must remain intact when starting the coach.
+    await page.clock.setSystemTime(new Date('2026-11-11T08:00:00+08:00'));
+    await page.reload();
+    await page.waitForFunction(()=>window.Study30App?.structureCoachContext);
+    assert.equal(await page.locator('#todayDate').innerText().then(x=>x.slice(0,10)),'2026-11-11');
+    assert.equal(await page.locator('#practiceStructure').isEnabled(),true,'Wednesday criminology coach button must be clickable');
+    // Seed an existing normal-mode draft through the original input handler.
+    // The legacy answer field may be inside a collapsed detail on mobile.
+    await page.evaluate(()=>{
+      const input=document.getElementById('answer');
+      input.value='犯罪學的一般模式原稿，不應因切換而消失';
+      input.dispatchEvent(new Event('input',{bubbles:true}));
+    });
+    await page.locator('#practiceStructure').click();
+    let wednesday=await page.evaluate(()=>JSON.parse(localStorage.getItem('probation-study30-v251:v1')).sessions['2026-11-11']);
+    assert.equal(wednesday.practiceMode,'normal','original subject task is unchanged');
+    assert.equal(wednesday.notes[0],'犯罪學的一般模式原稿，不應因切換而消失');
+    assert.equal(wednesday.repeatAttempts.length,1,'mode switch with progress makes a separate attempt');
+    assert.equal(wednesday.repeatAttempts[0].practiceMode,'structure');
+    assert.equal(await page.locator('#structureCoachPanel').isVisible(),true);
+    assert.match(await page.locator('label[for="coach-facts"]').innerText(),/現象|案例/,'theory mode needs theory-specific labels');
+    await page.locator('#coach-facts').fill('團體接觸與少年行為的案例');
+    await page.reload();
+    await page.waitForFunction(()=>window.Study30App?.openHistoryPractice);
+    await page.evaluate(()=>Study30App.openHistoryPractice('2026-11-11'));
+    assert.equal(await page.locator('#coach-facts').inputValue(),'團體接觸與少年行為的案例',
+      'resume unfinished coach attempt even when the original is unfinished');
+    await page.locator('#practiceNormal').click();
+    wednesday=await page.evaluate(()=>JSON.parse(localStorage.getItem('probation-study30-v251:v1')).sessions['2026-11-11']);
+    assert.equal(wednesday.repeatAttempts.length,2,'switching away from a started coach creates another attempt');
+    assert.equal(wednesday.repeatAttempts[0].structureCoach.facts,'團體接觸與少年行為的案例');
+    assert.equal(wednesday.repeatAttempts[1].practiceMode,'normal');
+    assert.equal(wednesday.notes[0],'犯罪學的一般模式原稿，不應因切換而消失');
     assert.deepEqual(errors,[],'no page errors');
-    console.log('PASS '+engine.name()+' '+base+' coach mode, phase gating, timer, reload, outline, backup, calendar and repeat');
+    console.log('PASS '+engine.name()+' '+base+' coach, backup, calendar, repeat, and Wednesday subject unlock');
     await ctx.close();
   }finally{await browser.close();}
 }

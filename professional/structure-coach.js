@@ -7,6 +7,14 @@
   const names=['題目已知的重要事實','用一句話寫出核心法律問題','回答前需要確認的必要前提'];
   const checks=['我有回答題目核心問題','標題主從與先後順序清楚','規範與具體事實有連結','重要段落有可辨識的結論','沒有不必要的重複或離題'];
   const roles=[['premise','必要前提'],['issue','主要爭點'],['supplement','補充論點'],['conclusion','結論']];
+  const lawSubjects=new Set(['少年事件處理法','刑法','刑事訴訟法','保安處分執行法']);
+  const isLaw=ctx=>lawSubjects.has(ctx.subject);
+  const topicGuide=[
+    '先整理題目中的現象或案例、核心學理問題，以及理解所需的概念。',
+    '至少建立兩個論述區塊；依題意安排理論、作用機制、比較及案例應用。',
+    '解釋核心概念、理論機制、具體案例或研究應用，最後提出小結。',
+    '記錄一個最重要的結構問題與下次改善方式。'
+  ];
   function node(tag,text,cls){
     const el=document.createElement(tag);
     if(text!==undefined)el.textContent=text;
@@ -23,7 +31,7 @@
     wrap.append(lab,field);
     return wrap;
   }
-  function outlineCard(item,index){
+  function outlineCard(item,index,law){
     const box=node('div',undefined,'coach-outline-card');
     const top=node('div',undefined,'coach-outline-top');
     top.append(node('strong','論證區塊 '+(index+1)));
@@ -49,7 +57,10 @@
     const roleLabel=node('label','本段角色');roleLabel.htmlFor='coach-role-'+index;
     const select=node('select');select.id=roleLabel.htmlFor;
     select.dataset.coachIndex=String(index);select.dataset.coachOutline='role';
-    for(const [v,txt] of roles){const o=node('option',txt);o.value=v;select.append(o);}
+    for(const [v,txt] of roles){
+      const o=node('option',law?txt:({premise:'概念前提',issue:'核心論點',supplement:'補充比較',conclusion:'整合結論'}[v]));
+      o.value=v;select.append(o);
+    }
     select.value=item.role;box.append(roleLabel,select);
     return box;
   }
@@ -57,29 +68,33 @@
     const host=$('structureCoachPanel');
     if(!host)return;
     host.replaceChildren();
-    const heading=node('h3','申論結構教練｜'+['辨識事實與爭點','建立申論骨架','練習段落論證','自我檢查與訂正'][ctx.phase]);
+    const law=isLaw(ctx);
+    const heading=node('h3','申論結構教練｜'+(law?
+      ['辨識事實與爭點','建立申論骨架','練習段落論證','自我檢查與訂正']:
+      ['辨識現象與問題','建立申論骨架','解釋理論與案例','自我檢查與訂正'])[ctx.phase]);
     host.append(heading);
-    const desc=node('p',Model.promptForPhase[ctx.phase],'muted');
+    const desc=node('p',(law?Model.promptForPhase:topicGuide)[ctx.phase],'muted');
     host.append(desc);
     const area=node('div',undefined,'coach-body');
     if(ctx.phase===0){
-      area.append(textarea(names[0],'facts',draft.facts,4),textarea(names[1],'coreQuestion',draft.coreQuestion,2),
-        textarea(names[2],'prerequisites',draft.prerequisites,3));
+      area.append(textarea(law?names[0]:'題目中的現象、情境或案例','facts',draft.facts,4),
+        textarea(law?names[1]:'一句話寫出核心學理問題','coreQuestion',draft.coreQuestion,2),
+        textarea(law?names[2]:'需要先確認的概念、理論或條件','prerequisites',draft.prerequisites,3));
     }
     if(ctx.phase===1){
       const hint=node('p','標題越多不一定越好。至少完成兩個區塊，並說明各段真正要回答什麼。','muted tiny');
       area.append(hint);
       const list=node('div',undefined,'coach-outline-list');
-      draft.outline.forEach((item,i)=>list.append(outlineCard(item,i)));
+      draft.outline.forEach((item,i)=>list.append(outlineCard(item,i,law)));
       area.append(list);
       const add=node('button','新增論證區塊','secondary');
       add.type='button';add.dataset.coachAction='add';add.disabled=draft.outline.length>=8;
       area.append(add);
     }
     if(ctx.phase===2){
-      area.append(textarea('本段爭點','issue',draft.paragraph.issue,2),
-        textarea('規範及要件（法條不確定可寫待查）','rule',draft.paragraph.rule,3),
-        textarea('題目事實如何符合或不符合要件？為什麼？','application',draft.paragraph.application,4),
+      area.append(textarea(law?'本段爭點':'本段要解釋的學理問題','issue',draft.paragraph.issue,2),
+        textarea(law?'規範及要件（法條不確定可寫待查）':'核心理論、概念與定義','rule',draft.paragraph.rule,3),
+        textarea(law?'題目事實如何符合或不符合要件？為什麼？':'作用機制、理論比較或具體案例應用','application',draft.paragraph.application,4),
         textarea('本段小結','conclusion',draft.paragraph.conclusion,2),
         textarea('整合成一段連貫的申論文字（選填）','combined',draft.paragraph.combined,6));
     }
@@ -96,11 +111,12 @@
     host.append(area);
     if(ctx.finished){
       host.querySelectorAll('input,textarea,select,button').forEach(el=>{el.disabled=true;});
-      host.append(node('p','本次練習已完成，原始內容為唯讀。若要訂正，請從月曆選擇「重新練習這題」，建立獨立紀錄。','muted tiny'));
+      host.append(node('p','本次練習已完成，原稿為唯讀；可從月曆建立獨立的重新練習版本。','muted tiny'));
     }
     const status=node('p',ctx.finished?'已完成；原稿唯讀。':'輸入後會儲存在本機，並隨本模組 JSON 一起備份。','muted tiny');
     status.id='coachSaveStatus';status.setAttribute('role','status');host.append(status);
-    host.append(node('p','教練檢查只處理論證結構；法條及實務見解仍須另行核對。','muted tiny'));
+    host.append(node('p',law?'教練檢查只處理論證結構；法條及實務見解仍須另行核對。':
+      '教練檢查只處理論述結構；心理學、犯罪學與諮商理論內容仍須依教材核對。','muted tiny'));
   }
   function save(){
     const ok=window.Study30App.saveStructureCoach(draft);
