@@ -7,13 +7,16 @@
   <meta name="description" content="116年觀護人考試，每日30分鐘：主動回想、考古題練習、申論架構、錯題整理。">
   <title>每日30分鐘｜觀護人練習臺 v2.5.4 離線練習版</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./structure-coach.css">
   <script src="./source-main-questions.js" defer></script>
   <script src="./source-related-questions.js" defer></script>
   <script src="../police-exams/questions.approved.js" defer></script>
   <script src="../police-exams/approved-loader.js" defer></script>
   <script src="./question-sources.js" defer></script>
   <script src="./practice-review.js" defer></script>
+  <script src="./structure-coach-model.js" defer></script>
   <script src="./practice-session.js" defer></script>
+  <script src="./structure-coach.js" defer></script>
   <script src="./review-preview.js" defer></script>
   <script src="./essay.js" defer></script>
   <script src="./essay-rubric-core.js" defer></script>
@@ -89,6 +92,8 @@
     <section class="daily-card" aria-labelledby="todayHeading">
       <div class="daily-head"><div><p class="eyebrow" id="todayDate">讀取中</p><h2 id="todayHeading">今日學習任務</h2><p id="todayDescription" class="muted"></p></div><span class="status" id="sessionStatus">尚未開始</span></div>
       <button type="button" class="secondary" id="returnToday" hidden>返回今天</button>
+      <div class="practice-mode-line" aria-label="申論練習模式"><span>訓練模式</span><div class="segmented"><button id="practiceNormal" type="button" class="secondary" aria-pressed="true">一般考古題</button><button id="practiceStructure" type="button" class="secondary" aria-pressed="false">申論結構教練</button></div></div>
+      <p id="practiceModeHint" class="muted tiny" role="status">法律科目可選擇30分鐘結構訓練；不更動原題。</p>
       <div class="mode-line" aria-label="訓練時間設定"><span>今日訓練時間</span><div class="segmented"><button id="mode30" type="button" aria-pressed="true">30分鐘</button><button id="mode10" type="button" aria-pressed="false">10分鐘</button></div></div>
       <ol id="phases" class="phases" aria-label="學習步驟"></ol>
       <div class="timer-panel"><div><p class="timer-label" id="phaseLabel">準備開始</p><div id="timer" class="timer" role="timer" aria-live="off">05:00</div><p class="muted tiny">切換分頁時自動暫停，以免虛增練習時間。</p></div><div class="timer-actions"><button type="button" class="primary" id="toggleTimer">開始計時</button><button type="button" class="secondary" id="nextPhase">完成此步驟</button></div></div>
@@ -97,6 +102,7 @@
       <div id="sourceWarning" class="warning">本題為練習素材，參考架構不等於官方標準答案。涉及現行法及修法，應另核對最新官方法規。</div>
       <div class="question" id="questionText"></div><section id="daily30ExternalGuide" class="daily30-external" aria-label="今日考題外部解題引導"></section>
       <div class="prompt-box"><strong id="promptTitle">請先自行回想</strong><p id="promptText"></p></div>
+      <section id="structureCoachPanel" class="coach-panel" aria-label="申論結構教練" hidden></section>
       <section class="daily-essay-panel" id="dailyEssayPanel" aria-labelledby="dailyEssayHeading">
         <h3 id="dailyEssayHeading">我的練習紀錄</h3>
 
