@@ -21,3 +21,13 @@
 .coach-check{display:flex;gap:10px;align-items:flex-start;line-height:1.5}
 .coach-check input{margin-top:4px;flex-shrink:0}
 @media(max-width:600px){.coach-panel{padding:14px}.coach-outline-card{padding:11px}.coach-outline-actions button{min-width:40px}}
+
+/* Prior coach answers stay visible when moving to the next training stage. */
+.coach-previous-review{margin:12px 0 16px;border:1px solid #c7d7df;border-radius:11px;padding:10px 13px}
+.coach-previous-review summary{font-weight:750;cursor:pointer}
+.coach-previous-content{max-height:230px;overflow:auto;overscroll-behavior:contain;padding-top:8px}
+.coach-previous-group{padding:6px 0 12px}
+.coach-previous-group+.coach-previous-group{border-top:1px solid #e0e7eb}
+.coach-previous-group h4{margin:5px 0 9px;font-size:15px}
+.coach-previous-group strong{display:block;font-size:14px;margin-top:9px}
+.coach-previous-text{white-space:pre-wrap;overflow-wrap:anywhere;margin:3px 0 5px;line-height:1.6}
