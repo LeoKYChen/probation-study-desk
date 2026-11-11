@@ -46,11 +46,23 @@ async function exercise(engine,base){
     rec=await read();
     assert.equal(rec.structureCoach.coreQuestion,'法院得否依職權命丙參與沒收程序？');
     assert.equal(await page.locator('#practiceNormal').isDisabled(),true,'progress locks a mode switch');
+    const timeSnapshot=()=>page.evaluate(()=>{
+      const record=JSON.parse(localStorage.getItem('probation-study30-v251:v1')).sessions['2026-11-13'];
+      return {now:Date.now(),visible:document.visibilityState,hidden:document.hidden,
+        button:document.getElementById('toggleTimer')?.textContent,
+        timer:document.getElementById('timer')?.textContent,
+        elapsed:record.elapsed,remaining:record.remaining};
+    });
+    const timerBefore=await timeSnapshot();
     await page.locator('#toggleTimer').click();
+    const timerStarted=await timeSnapshot();
     const timerStart=await page.evaluate(()=>Date.now());
     // Explicit system-time advance avoids WebKit's pinned headless mock clock.
     await page.clock.setSystemTime(new Date(timerStart+3500));
+    const timerJumped=await timeSnapshot();
     await page.locator('#toggleTimer').click();
+    const timerPaused=await timeSnapshot();
+    if(engine.name()==='webkit')console.log('WEBKIT_TIMER_DEBUG',JSON.stringify({timerBefore,timerStarted,timerJumped,timerPaused}));
     rec=await read();
     assert(rec.elapsed>=3,'elapsed timer must be retained in '+engine.name()+': '+rec.elapsed);
     await page.locator('#nextPhase').click();
