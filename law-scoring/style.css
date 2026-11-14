@@ -281,3 +281,7 @@ a.qref.guan{font-weight:700}
 .timed-steps li{margin:0}
 .timed-steps label{display:flex;gap:10px;align-items:flex-start;min-height:44px;padding:8px 0;overflow-wrap:anywhere}
 .timed-steps input{flex:none;width:22px;height:22px;margin-top:2px}
+
+/* 作答歷程 */
+.hist-list{margin:8px 0 0;padding-left:22px;font-size:14px;font-variant-numeric:tabular-nums}
+.hist-list li{margin:2px 0;overflow-wrap:anywhere}

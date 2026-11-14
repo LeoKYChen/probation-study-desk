@@ -180,3 +180,32 @@ let stepped=0; for(const d of Object.values(ED.items)){ const st=S.actionSteps(d
 assert(stepped>=500,'至少 500 題的作答動作可拆成多步');
 const PAGE=fs.readFileSync(path.join(root,'law-scoring/index.html'),'utf8'); for(const id of ['timed','timed-clock','timed-start','timed-next','timed-reset','outline','timed-sheet','timed-steps']) assert(PAGE.includes('id="'+id+'"'),'page has #'+id);
 console.log('PASS law-scoring timed practice: '+stepped+' questions with multi-step actions');
+
+// 作答歷程與二刷：手動存檔；同一天更新同一筆；重寫時封存的那一筆不被覆蓋；最多 20 筆；二刷日依最近一次分數
+{
+  const q=D.questions.find(x=>x.kind==='case'&&x.rows.length>=3), d0=ED.items[q.id];
+  const mk=(n,extra)=>Object.assign({answer:'x',unlocked:true,checks:Object.fromEntries(q.rows.map((r,i)=>[i,i<n?{found:true,apply:true,views:true}:{}])),organize:{}},extra||{});
+  const day=(y,m,dd)=>new Date(y,m-1,dd,10).getTime();
+  assert.equal(S.canSave({unlocked:true,checks:{},organize:{}}),false,'沒勾選不能存'); assert.equal(S.canSave({unlocked:false,checks:{0:{found:true}}}),false,'沒展開不能存'); assert.equal(S.canSave(mk(1)),true);
+  assert.equal(S.attempts(null).length,0); assert.equal(S.redoDue({}),null);
+  const s=mk(1);
+  assert.equal(S.saveAttempt(q,s,d0,day(2026,11,14),false),'added'); assert.equal(s.history.length,1); assert.equal(s.history[0].d,'2026-11-14'); assert.equal(s.history[0].score,S.score(q,s).total);
+  assert(!('used' in s.history[0])&&!('steps' in s.history[0]),'沒有限時紀錄時不寫用時');
+  Object.assign(s.checks,mk(2).checks); assert.equal(S.saveAttempt(q,s,d0,day(2026,11,14),false),'updated'); assert.equal(s.history.length,1,'同一天更新同一筆');
+  assert.equal(S.saveAttempt(q,s,d0,day(2026,11,14),true),'updated'); assert.equal(s.history[0].final,true);
+  assert.equal(S.saveAttempt(q,s,d0,day(2026,11,14),false),'added','重寫封存的那一筆不被覆蓋'); assert.equal(s.history.length,2);
+  assert.equal(S.saveAttempt(q,s,d0,day(2026,11,20),false),'added'); assert.equal(s.history.length,3);
+  // 限時與拆題
+  const steps=S.actionSteps(d0), t=mk(1,{timed:{outline:'a → b',t0:1000,t1:61000,t2:1000+1900*1000,limit:1800,steps:{0:true}}});
+  S.saveAttempt(q,t,d0,day(2026,11,14),false); assert.equal(t.history[0].used,1900); assert.equal(t.history[0].limit,1800); if(steps.length>1) assert.equal(JSON.stringify(t.history[0].steps),JSON.stringify([1,steps.length]));
+  // 二刷日
+  const due=(score,d)=>S.redoDue({history:[{d,score}]});
+  assert.equal(due(59,'2026-11-14'),'2026-11-21'); assert.equal(due(60,'2026-11-14'),'2026-11-28'); assert.equal(due(79,'2026-12-25'),'2027-01-08'); assert.equal(due(80,'2026-11-14'),null);
+  assert.equal(S.redoDue({history:[{d:'2026-11-01',score:40},{d:'2026-11-14',score:85}]}),null,'以最近一次為準');
+  // 上限
+  const many=mk(1); for(let i=0;i<30;i++) S.saveAttempt(q,many,d0,day(2026,1,1+i),false); assert.equal(many.history.length,S.HIST_MAX); assert.equal(many.history[many.history.length-1].d,'2026-01-30');
+  // 分數算法不受歷程影響
+  const a=mk(2), b=mk(2,{history:[{d:'2026-11-01',score:1}]}); assert.equal(S.score(q,a).total,S.score(q,b).total);
+  for(const id of ['hist-save','hist-redo','hist-list','hist-trend','hist-due']) assert(PAGE.includes('id="'+id+'"'),'page has #'+id);
+  console.log('PASS law-scoring attempt history');
+}
