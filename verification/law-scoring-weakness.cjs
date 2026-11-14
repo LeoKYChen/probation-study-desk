@@ -66,4 +66,18 @@ const sMix={}; ids3.forEach((id,k)=>{ sMix[id]=all(byId.get(id),k%2===0); });
 const Lm=WK.lossTypes(d,sMix,byId); for(let k=1;k<Lm.items.length;k++) assert(Lm.items[k-1].rate<=Lm.items[k].rate,'sorted from lowest rate');
 // 只展開沒作答的題目不算
 assert.equal(WK.lossTypes(d,peek,byId).graded,0);
+// 限時表現：只算有限時紀錄的作答；至少 3 筆才列；已存檔的那一次不重複計；不改動紀錄
+{
+  const tid=[...new Set(Object.values(d.links))].slice(0,4), ts={};
+  assert.equal(WK.timeStats(d,{}).items.length,0); assert.equal(WK.timeStats(d,{}).times,0);
+  ts[tid[0]]={history:[{d:'2026-11-01',at:1,score:50,used:1700,limit:1800,steps:[2,4]},{d:'2026-11-09',at:2,score:70,used:2100,limit:1800,steps:[3,4]}]};
+  ts[tid[1]]={history:[{d:'2026-11-02',at:3,score:60}]};                                  // 沒有限時紀錄，不算
+  let T1=WK.timeStats(d,ts); assert.equal(T1.times,2); assert.equal(T1.items.find(x=>x.key==='time'),undefined,'少於 3 次不列用時'); const o1=T1.items.find(x=>x.key==='outline'); assert.equal(o1.hit,5); assert.equal(o1.total,8); assert.equal(o1.rate,63);
+  ts[tid[2]]=Object.assign(all(byId.get(tid[2]),true),{timed:{t0:1000,t2:1000+2400*1000,limit:1800}});          // 已自評、未存檔：算一次，超時 600 秒
+  const fzT=JSON.stringify(ts); T1=WK.timeStats(d,ts); assert.equal(JSON.stringify(ts),fzT,'timing stats do not modify records');
+  const tm1=T1.items.find(x=>x.key==='time'); assert.equal(tm1.total,3); assert.equal(tm1.hit,1); assert.equal(tm1.rate,33); assert.equal(T1.avgOverMin,8,'(300+600)/2 秒 → 8 分鐘');
+  ts[tid[2]].history=[{d:'2026-11-14',at:1000+2400*1000,score:80,used:2400,limit:1800}];                           // 同一次已存檔：不重複計
+  assert.equal(WK.timeStats(d,ts).items.find(x=>x.key==='time').total,3);
+  ts[tid[3]]={unlocked:false,timed:{t0:1,t2:5,limit:1800}}; assert.equal(WK.timeStats(d,ts).times,3,'沒自評的限時紀錄不算');
+}
 console.log('law-scoring weakness map: '+empty.chapters.length+' chapters checked');

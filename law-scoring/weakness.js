@@ -78,5 +78,26 @@ function lossTypes(d, store, byId) {
   return {graded, items, baseline, enough: graded >= MIN};
 }
 
-window.LawScoringWeakness = {compute, lossTypes, isGraded, chapterTokens, readStore, rawStore, LOW, MIN, GUAN_W, TOP, LOSS_SLUGS};
+// 限時表現：這一科存過的作答歷程裡，有限時紀錄的幾次在時間內完成、拆題核對列到幾步。
+// 已自評但還沒存檔的那一次限時紀錄也算一次用時（拆題步數只存在作答歷程裡，沒存檔就不計）。純計算，不寫入。
+function timeStats(d, store) {
+  const ids = [...new Set(Object.values(d.links))];
+  const time = {key: 'time', label: '限時內寫完', hit: 0, total: 0}, outline = {key: 'outline', label: '拆題有列到的步驟', hit: 0, total: 0};
+  let over = 0;
+  for (const id of ids) {
+    const s = store[id]; if (!s) continue;
+    const hist = Array.isArray(s.history) ? s.history.filter(h => h && typeof h.score === 'number') : [];
+    for (const h of hist) {
+      if (typeof h.used === 'number' && h.limit) { time.total++; if (h.used <= h.limit) time.hit++; else over += h.used - h.limit; }
+      if (Array.isArray(h.steps) && h.steps[1] > 0) { outline.hit += h.steps[0]; outline.total += h.steps[1]; }
+    }
+    const t = s.timed, last = hist[hist.length - 1];
+    if (isGraded(s) && t && t.t0 && t.t2 && t.limit && !(last && last.at >= t.t2)) { const used = Math.round((t.t2 - t.t0) / 1000); time.total++; if (used <= t.limit) time.hit++; else over += used - t.limit; }
+  }
+  const items = [time, outline].filter(x => x.total >= MIN).map(x => Object.assign(x, {rate: Math.round(100 * x.hit / x.total)}));
+  const late = time.total - time.hit;
+  return {items, times: time.total, avgOverMin: late ? Math.max(1, Math.round(over / late / 60)) : 0};
+}
+
+window.LawScoringWeakness = {compute, lossTypes, timeStats, isGraded, chapterTokens, readStore, rawStore, LOW, MIN, GUAN_W, TOP, LOSS_SLUGS};
 })();
