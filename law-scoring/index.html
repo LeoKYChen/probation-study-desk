@@ -24,6 +24,12 @@
     <label class="dev-toggle"><input type="checkbox" id="dev-mode">開發者模式（編輯補充與核定）</label>
   </div>
 
+  <details class="today" id="today">
+    <summary>今日清單</summary>
+    <p class="small muted" id="today-status" role="status">打開後才會計算；只讀取紀錄，不會更動。</p>
+    <ul class="today-list" id="today-list"></ul>
+  </details>
+
   <div class="grid">
     <div class="main">
       <section class="sheet" aria-labelledby="q-heading">

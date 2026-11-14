@@ -81,3 +81,28 @@ for(const f of ['law-scoring/commute.html','law-scoring/commute.js','law-scoring
 assert(read('backup/unified-core.js').includes("key:'"+TH.KEY+"'")&&read('backup/app.js').includes("'"+TH.KEY+"'"),'theory card records are in the full backup');
 assert.equal(R.COL_LABEL.found,'有寫到'); assert.equal(R.CARD_KEY,'lawScoring.recall.v1');
 console.log('PASS law-scoring commute: '+all.length+' theory cards, scheduling, resume position and page wiring');
+
+// 今日清單（申論評分參考最上方）：純計算、不寫入；沒有紀錄時也給得出建議新題；二刷只列到期的題目
+{
+  const LS=w.LawScoring, DATA=w.LawScoringData, WK=w.LawScoringWeakness, today='2026-11-14';
+  const env=(store,extra)=>Object.assign({store,cardStore:{},today,data:DATA,summaries:S,R,TR:T,TH,WK,score:LS.score,topicState:T.unpack({}),theoryState:TH.unpack({})},extra||{});
+  const p0=LS.todayPlan(env({}));
+  assert.equal(p0.miss,0); assert.equal(p0.topic.due,0); assert.equal(p0.topic.fresh,T.NEW_PER_DAY); assert.equal(p0.theory.fresh,TH.NEW_PER_DAY); assert.equal(p0.redo.length,0);
+  assert(p0.next&&DATA.questions.some(q=>q.id===p0.next.id),'suggests a question even with no records'); assert(p0.next.token.startsWith('觀護'),'prefers a 觀護人 question'); assert.equal(p0.next.why,'常考但還沒練夠的章');
+  // 二刷：到期才列；80 分以上不列；依到期日排序；仍在自評中的題目也列
+  const qs=DATA.questions.slice(0,4), store={};
+  store[qs[0].id]={history:[{d:'2026-11-01',score:40}]};            // 11/08 到期
+  store[qs[1].id]={history:[{d:'2026-11-10',score:40}]};            // 11/17 還沒到
+  store[qs[2].id]={history:[{d:'2026-10-20',score:70}]};            // 11/03 到期
+  store[qs[3].id]={history:[{d:'2026-10-01',score:90}]};            // 不排
+  const fz=JSON.stringify(store), p1=LS.todayPlan(env(store));
+  assert.equal(JSON.stringify(store),fz,'today plan does not modify records');
+  assert.equal(JSON.stringify(p1.redo.map(r=>r.id)),JSON.stringify([qs[2].id,qs[0].id])); assert.equal(p1.redo[0].score,70);
+  assert(p1.next&&!store[p1.next.id],'does not suggest a question that already has attempt history');
+  // 已有作答歷程的題目不會被當成建議新題
+  const s2={}; s2[p0.next.id]={history:[{d:'2026-11-13',score:85}]}; assert.notEqual(LS.todayPlan(env(s2)).next.id,p0.next.id);
+  // 少了某個模組時該列回傳 null，其餘照常
+  const p3=LS.todayPlan(env({}, {R:null})); assert.equal(p3.miss,null); assert(p3.topic&&p3.next);
+  const page=read('law-scoring/index.html'); for(const id of ['today','today-list','today-status']) assert(page.includes('id="'+id+'"'),'page has #'+id);
+  console.log('PASS law-scoring today list');
+}
