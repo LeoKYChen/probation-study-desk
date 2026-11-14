@@ -27,7 +27,10 @@ const plain = t => String(t).replace(/\*\*/g,'');
 function blocksText(blocks){ return (blocks||[]).map(b=>b.t==='p'?plain(b.text):b.items.map((x,i)=>(b.t==='ol'?(i+1)+'. ':'・')+plain(x)).join('\n')).join('\n'); }
 // 限時練習：拆題秒數與每 1 分配幾分鐘（正式考試 120 分鐘寫 100 分）。
 const OUTLINE_SEC=180, MIN_PER_POINT=1.2;
-window.LawScoring = {score:(q,s)=>score(q,s), COLS, weights:q=>W(q), design:designOf, designFile, blocksText, timedLimit:q=>timedLimit(q), actionSteps:d=>actionSteps(d)};
+// 作答歷程：每題最多留 HIST_MAX 筆；二刷提醒依最近一次分數（低於 60 分隔 7 天，60 到 79 分隔 14 天，80 分以上不提醒）。
+const HIST_MAX=20, REDO_RULES=[[60,7],[80,14]];
+window.LawScoring = {score:(q,s)=>score(q,s), COLS, weights:q=>W(q), design:designOf, designFile, blocksText, timedLimit:q=>timedLimit(q), actionSteps:d=>actionSteps(d),
+  attempts:s=>attempts(s), redoDue:s=>redoDue(s), snapshot:(q,s,d,now)=>snapshot(q,s,d,now), saveAttempt:(q,s,d,now,final)=>saveAttempt(q,s,d,now,final), canSave:s=>canSave(s), HIST_MAX};
 if (typeof document==='undefined' || !document.getElementById('answer')) return;
 let store = {};
 try { store = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { store = {}; }
@@ -126,6 +129,7 @@ function render(){
   syncUrl();
   syncCount();
   renderTimed(q,s,d);
+  histReset();
   $('locked').hidden=s.unlocked; $('graded').hidden=!s.unlocked; $('unlock').hidden=s.unlocked;
   $('graded').style.display=s.unlocked?'flex':'none';
   $('copy-dev').hidden=!dev;
@@ -208,6 +212,54 @@ function renderTimed(q,s,d){
     ul.appendChild(li); });
   count();
 }
+// ── 作答歷程與二刷 ──
+function ymd(ms){ const d=new Date(ms), p=n=>String(n).padStart(2,'0'); return d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate()); }
+function addDays(day,n){ const [y,m,d]=day.split('-').map(Number); return ymd(new Date(y,m-1,d+n).getTime()); }
+function attempts(s){ return s&&Array.isArray(s.history)?s.history.filter(h=>h&&typeof h.d==='string'&&typeof h.score==='number'):[]; }
+// 只有展開評分要點且至少勾過一格才算一次作答（與失分回想卡、弱點地圖的「已自評」一致）。
+function canSave(s){ if(!s||!s.unlocked) return false; const on=o=>o&&Object.values(o).some(v=>v===true||(v&&typeof v==='object'&&Object.values(v).some(Boolean))); return on(s.checks)||on(s.organize); }
+function snapshot(q,s,d,now){
+  const sc=score(q,s), h={d:ymd(now), at:now, score:sc.total}, t=s.timed;
+  if(sc.bonus) h.bonus=sc.bonus;
+  if(t&&t.t0&&t.t2){ h.used=Math.round((t.t2-t.t0)/1000); h.limit=t.limit||timedLimit(q); }
+  const steps=actionSteps(d); if(t&&String(t.outline||'').trim()&&steps.length>1) h.steps=[steps.filter((_,i)=>t.steps&&t.steps[i]).length, steps.length];
+  return h;
+}
+// 同一天再存：更新當天最後一筆（除非那一筆是「重寫」時封存的）。回傳 'added' 或 'updated'。
+function saveAttempt(q,s,d,now,final){
+  const list=attempts(s), h=snapshot(q,s,d,now), last=list[list.length-1];
+  if(final) h.final=true;
+  let how='added';
+  if(last&&last.d===h.d&&!last.final){ list[list.length-1]=h; how='updated'; } else list.push(h);
+  s.history=list.slice(-HIST_MAX); return how;
+}
+function redoDue(s){
+  const list=attempts(s), last=list[list.length-1]; if(!last) return null;
+  for(const [below,days] of REDO_RULES) if(last.score<below) return addDays(last.d,days);
+  return null;
+}
+function fmtDay(day){ const [,m,d]=day.split('-'); return Number(m)+'/'+Number(d); }
+function renderHistory(q,s){
+  const list=attempts(s), ol=$('hist-list'); ol.textContent='';
+  list.forEach(h=>{ let t=fmtDay(h.d)+'　'+h.score+' 分';
+    if(h.used!=null) t+='　用時 '+Math.round(h.used/60)+' 分'+(h.limit&&h.used>h.limit?'（超時 '+Math.max(1,Math.round((h.used-h.limit)/60))+' 分）':'');
+    if(h.steps) t+='　拆題 '+h.steps[0]+'／'+h.steps[1];
+    ol.appendChild(el('li',null,t)); });
+  ol.hidden=!list.length;
+  $('hist-trend').textContent=list.length>1?'分數變化：'+list.map(h=>h.score).join(' → ')+'（'+(list[list.length-1].score-list[0].score>=0?'＋':'－')+Math.abs(list[list.length-1].score-list[0].score)+'）':list.length?'已存 1 次。':'還沒有存過紀錄。';
+  const due=redoDue(s), today=ymd(Date.now());
+  $('hist-due').textContent=!list.length?'':due?(due<=today?'建議今天二刷這一題（最近一次 '+list[list.length-1].score+' 分）。':'建議二刷日：'+fmtDay(due)+'。'):'最近一次已達 80 分，不排二刷。';
+  $('hist-save').disabled=!canSave(s); $('hist-redo').disabled=!canSave(s)&&!list.length;
+}
+function histReset(){ const a=$('hist-actions'); a.textContent=''; const sv=el('button',{class:'btn',type:'button',id:'hist-save'},'存成一次紀錄'), rd=el('button',{class:'btn ghost',type:'button',id:'hist-redo'},'重寫這一題'); sv.onclick=histSave; rd.onclick=histRedoPrompt; a.appendChild(sv); a.appendChild(rd); renderHistory(current,st(current)); }
+function histSave(){ const s=st(current); if(!canSave(s)){ say('先展開評分要點並勾選，才能存成一次紀錄。'); return; } const how=saveAttempt(current,s,designOf(current),Date.now(),false); persist(); renderHistory(current,s); say(how==='updated'?'已更新今天這一筆紀錄。':'已存成一次紀錄。'); }
+function histRedoPrompt(){
+  const a=$('hist-actions'), s=st(current); a.textContent='';
+  a.appendChild(el('span',null,canSave(s)?'會先把目前的結果存成一次紀錄，再清空作答、拆題與勾選。':'會清空目前的作答、拆題與勾選；作答歷程保留。'));
+  const yes=el('button',{class:'btn danger',type:'button'},'確定重寫'), no=el('button',{class:'btn ghost',type:'button'},'取消');
+  yes.onclick=()=>{ if(canSave(s)) saveAttempt(current,s,designOf(current),Date.now(),true); Object.assign(s,{answer:'',answerUrl:'',unlocked:false,checks:{},organize:{}}); delete s.timed; timedSaid=''; persist(); histReset(); render(); $('answer').focus(); say('已清空，可以重寫這一題；先前的紀錄在作答歷程。'); };
+  no.onclick=histReset; a.appendChild(yes); a.appendChild(no);
+}
 function syncCount(){
   const n=$('answer').value.trim().length;
   $('count').textContent=n+' 字';
@@ -284,6 +336,7 @@ function renderScore(){
     const t=el('div',{class:'track'}), f=el('div',{class:'fill'}); f.style.width=Math.round(100*sc[k]/WEIGHTS[k])+'%'; t.appendChild(f); row.appendChild(t); bars.appendChild(row);
   }
   $('total').textContent=sc.total;
+  renderHistory(q,st(q));
   $('bonus-total').textContent=q.kind==='essay'?'＋實務 '+sc.bonus:q.kind==='theory'?'＋研究 '+sc.bonus:q.kind==='proc'?'＋實務見解 '+sc.bonus:'';
   $('score-note').textContent=q.kind==='theory'
     ?'論點＝有提到的比例；理論＝理論正確的比例；實務＝扣回'+FOCUS(q)+'實務的比例；架構＝架構檢核比例。研究證據另計加分，不影響 100 分。'
@@ -351,7 +404,9 @@ function resetPrompt(){
   checks.onclick=()=>{ const s=st(current); s.checks={}; s.organize={}; persist(); back(); render(); say('已清除本題勾選。'); };
   // 回到未作答狀態：失分統計與回想卡不再計入這題（已複習過的回想卡另在回想卡頁清除）。
   all.onclick=()=>{ const s=st(current); Object.assign(s,{answer:'',answerUrl:'',unlocked:false,checks:{},organize:{}}); delete s.timed; timedSaid=''; persist(); back(); render(); say('已清除本題的作答、拆題與勾選。'); };
-  no.onclick=back; area.appendChild(checks); area.appendChild(all); area.appendChild(no);
+  const hist=el('button',{class:'btn danger',type:'button'},'清除作答歷程');
+  hist.onclick=()=>{ delete st(current).history; persist(); back(); render(); say('已清除本題的作答歷程；目前的作答與勾選保留。'); };
+  no.onclick=back; area.appendChild(checks); area.appendChild(all); if(attempts(st(current)).length) area.appendChild(hist); area.appendChild(no);
 }
 
 render();

@@ -117,6 +117,14 @@
         <div class="bars" id="bars"></div>
         <p class="small muted" style="margin:12px 0 0" id="score-note"></p>
       </section>
+      <section class="sheet" aria-labelledby="hist-heading">
+        <p class="kicker" id="hist-heading">作答歷程</p>
+        <p class="small" id="hist-trend" style="margin:8px 0 0"></p>
+        <ol class="hist-list" id="hist-list"></ol>
+        <p class="small muted" id="hist-due" style="margin:8px 0 10px"></p>
+        <div class="confirm" id="hist-actions"><button class="btn" id="hist-save" type="button">存成一次紀錄</button><button class="btn ghost" id="hist-redo" type="button">重寫這一題</button></div>
+        <p class="small muted" style="margin:10px 0 0">分數是你當下勾選的結果。存檔後才會留下這一次；同一天再存會更新當天那一筆。「重寫」會先存檔，再清空作答與勾選。</p>
+      </section>
       <section class="sheet">
         <p class="status" id="status" role="status" aria-live="polite"></p>
         <p class="small muted" style="margin:0 0 10px">沒勾到的得分點會自動變成回想卡。</p>
