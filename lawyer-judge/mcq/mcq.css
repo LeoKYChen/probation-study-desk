@@ -127,3 +127,24 @@ dialog::backdrop{background:rgba(35,53,68,.45)}
 table.compact{min-width:0}
 table.compact th,table.compact td{overflow-wrap:anywhere}
 table.compact button{white-space:nowrap}
+/* 通勤練習 */
+.commute h2{margin-bottom:4px}
+.commute-actions button{flex:1 1 140px;min-height:52px;font-size:17px}
+.session-tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:flex-end}
+/* 通勤作答：選項加大方便單手點；送出與下一題固定在畫面下方（手機版要讓開底部導覽列）。 */
+body.mcq-commute #question-card .option{min-height:56px;padding-top:12px;padding-bottom:12px}
+body.mcq-commute #question-card>.actions:not(.plain){position:sticky;bottom:8px;z-index:5;background:var(--surface,#fff);padding:10px;margin-left:-10px;margin-right:-10px;border:1px solid var(--line,#ddd);border-radius:var(--radius,8px)}
+body.mcq-commute #question-card>.actions:not(.plain) .primary{flex:1 1 160px;min-height:52px;font-size:17px}
+@media(max-width:760px){body.mcq-commute #question-card>.actions:not(.plain){bottom:72px}}
+/* 章節標籤與更正 */
+.chapter-box{margin-top:12px;padding-top:10px;border-top:1px solid var(--line,#ddd)}
+.chapter-box p{margin:0 0 6px}
+.chapter-tags{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.chapter-tags li{display:inline-flex;align-items:center;gap:6px;max-width:100%;border:1px solid var(--line,#ddd);border-radius:999px;padding:2px 4px 2px 12px;font-size:14px;overflow-wrap:anywhere}
+.chapter-tags li span{min-width:0}
+.chip-remove{min-height:44px;min-width:44px;border:0;background:none;color:var(--accent,#8a3b2e);font:inherit;font-size:13px;cursor:pointer;text-decoration:underline}
+.chapter-edit{display:flex;flex-wrap:wrap;gap:10px;align-items:end;margin-top:8px}
+.chapter-edit label{display:flex;flex-direction:column;gap:4px;font-size:14px;min-width:0;flex:1 1 220px}
+.chapter-edit select{max-width:100%;min-height:44px}
+#chapter{max-width:100%}
+

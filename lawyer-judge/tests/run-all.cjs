@@ -49,6 +49,7 @@ node('第一試選擇題：轉換與匯入驗證','tests/unit/import-mcq.test.mj
 node('首頁排程與專業科目練習臺一致','tests/unit/schedule.test.cjs');
 node('設計代幣文字對比（WCAG AA）','tests/unit/contrast.test.cjs');
 node('評分要點共用計算與弱點地圖','tests/unit/official-core.test.cjs');
+node('選擇題章節歸類','tests/unit/chapters.test.cjs');
 node('整合契約：題庫副本、首頁入口、儲存鍵','verification/unified-integration.cjs',['.']);
 node('離線清單','verification/offline-stage4-check.cjs');
 node('每日模擬與 AI 提示詞回歸','verification/check-daily-v254.cjs');
@@ -66,6 +67,7 @@ else skip('書桌核心（node --test）','請先執行 npm --prefix verificatio
 if(PW_DIR)node('考選部評分要點：逐點勾選、骨架回想、失分清單、弱點地圖（交付題庫）','tests/e2e/official-points.cjs');
 if(PW_DIR)node('冒煙測試：17 頁 × 11 種寬度（交付題庫）','tests/e2e/smoke.cjs',[],{extraEnv:{SMOKE_PORT:'8861'}});
 if(PW_DIR)node('第一試選擇題頁面（作答、錯題本、整卷、計時、備份）','tests/e2e/mcq.cjs',[],{extraEnv:{SMOKE_PORT:'8865'}});
+if(PW_DIR)node('第一試選擇題：通勤練習、章節篩選、弱點摘要','tests/e2e/mcq-commute.cjs',[],{extraEnv:{SMOKE_PORT:'8871'}});
 if(PW_DIR)node('專業科目逐日（週一到週日）科目與文字','tests/e2e/weekdays.cjs',[],{extraEnv:{SMOKE_PORT:'8864'}});
 else skip('冒煙測試','找不到 Playwright');
 

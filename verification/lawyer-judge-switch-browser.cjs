@@ -1,5 +1,6 @@
 'use strict';
 // 律師・司法官備考開關的瀏覽器檢查：預設關閉、開啟後出現入口並記住、進入律司頁面後兩邊紀錄互不覆蓋、
+// 律司選擇題的常錯條文與章節顯示在重點整理頁、
 // 跨分頁的 storage 事件不互相干擾、各寬度不產生頁面層級的水平捲動。
 // 需要 Playwright；只使用測試用的瀏覽器設定檔，不碰任何真實學習紀錄。用法：node verification/lawyer-judge-switch-browser.cjs [截圖資料夾]
 const {chromium}=require('playwright');
@@ -78,11 +79,15 @@ async function noOverflow(page,label){
   await page.waitForFunction(n=>window.__seen.length>=n,SHARED.length);
   assert.deepEqual(await page.evaluate(()=>window.__seen),SHARED.map(k=>'lj::'+k),'probation tab sees only prefixed keys');
   // 觀護人改自己的同名紀錄（其他鍵），律司分頁不會收到；觀護人直接改到律司的鍵時，律司收到還原後的鍵名。
-  await page.evaluate(()=>{localStorage.setItem('probation-daily-github:records:v1','{}');localStorage.setItem('lj::psd-mcq-v1','{"from":"other-tab"}');});
+  await page.evaluate(()=>{localStorage.setItem('probation-daily-github:records:v1','{}');localStorage.setItem('lj::cross-tab-probe','{"from":"other-tab"}');});
   await law.waitForFunction(()=>window.__seen.length>=1);
-  assert.deepEqual(await law.evaluate(()=>window.__seen),['psd-mcq-v1'],'lawyer-judge tab receives only its own keys, unprefixed');
-  await page.evaluate(()=>localStorage.removeItem('probation-daily-github:records:v1'));
+  assert.deepEqual(await law.evaluate(()=>window.__seen),['cross-tab-probe'],'lawyer-judge tab receives only its own keys, unprefixed');
+  await page.evaluate(()=>{localStorage.removeItem('probation-daily-github:records:v1');localStorage.removeItem('lj::cross-tab-probe');});
   for(const k of SHARED)assert.equal(await page.evaluate(key=>JSON.parse(localStorage.getItem(key)).owner,k),'probation','probation record intact: '+k);
+
+  // 測試用的假資料不是律司各頁看得懂的格式，先清掉律司這邊的（觀護人那邊的留著，後面還要比對）。
+  await law.evaluate(keys=>{for(const k of keys)localStorage.removeItem(k);},SHARED);
+  for(const k of SHARED)assert.equal(await page.evaluate(key=>JSON.parse(localStorage.getItem(key)).owner,k),'probation','removeItem in lawyer-judge leaves probation '+k);
 
   // 5. 走過律司主要頁面（含各寬度），確認導覽有回觀護人的連結、沒有錯誤、沒有水平捲動。
   for(const rel of LJ_PAGES){
@@ -103,6 +108,45 @@ async function noOverflow(page,label){
   assert(added.length>0&&added.every(k=>k.startsWith('lj::')),'every key written by lawyer-judge pages is prefixed: '+added.filter(k=>!k.startsWith('lj::')).join(','));
   await law.click('.site-nav-host');await law.waitForSelector('#lj-enabled');
   assert.equal(await law.locator('#lj-enabled').isChecked(),true,'back on 申論評分參考 with the switch still on');
+
+  // 6. 律司選擇題的常錯條文與章節出現在重點整理頁的優先複習（刑法、刑訴才有），而且觀護人的紀錄沒有被寫入。
+  const sum=await ctx.newPage();watch(sum);
+  await sum.goto(scoring+'summaries.html',{waitUntil:'load'});
+  await sum.locator('.sum-subject[data-slug="criminal-law"]').click();
+  await sum.waitForSelector('#sum-weak:not([hidden])');
+  assert.equal(await sum.locator('#sum-weak h3',{hasText:'律司選擇題'}).count(),0,'nothing shown before any lawyer-judge practice');
+  // 在律司做一組通勤練習：前兩題故意答錯。
+  await law.goto(lj+'mcq/#home',{waitUntil:'load'});await law.waitForSelector('#subject-groups input');
+  await law.selectOption('#commute-subject','刑法');await law.click('#commute-20');await law.waitForSelector('#session-view:not([hidden])');
+  const missed=[];
+  for(let i=0;i<2;i++){
+   const info=await law.evaluate(()=>{const st=JSON.parse(localStorage.getItem('psd-mcq-v1')),q=window.MCQ_BANK.find(x=>x.id===st.active.ids[st.active.idx]);return {id:q.id,wrong:['A','B','C','D'].find(L=>!q.acceptedAnswers.includes(L))};});
+   missed.push(info.id);
+   await law.locator('#question-card input[type=radio][value="'+info.wrong+'"]').check();await law.click('#submit-answer');await law.click('#next-question');
+  }
+  await law.click('#session-end');await law.waitForSelector('#result-view:not([hidden])');
+  const summary=await page.evaluate(()=>JSON.parse(localStorage.getItem('lj::lsdesk-mcq-weak-v1')));
+  assert.equal(summary.subjects['刑法'].wrong,2);assert.equal(summary.subjects['刑法'].done,2);
+  const frozen=await page.evaluate(()=>{const o={};for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(!k.startsWith('lj::'))o[k]=localStorage.getItem(k);}return o;});
+  await sum.reload({waitUntil:'load'});
+  await sum.locator('.sum-subject[data-slug="criminal-law"]').click();
+  await sum.waitForSelector('#sum-weak h3:has-text("律司選擇題")');
+  const weakText=await sum.locator('#sum-weak').innerText();
+  assert(/做過 2 題、目前錯 2 題/.test(weakText),'summary totals shown');
+  for(const row of [...summary.subjects['刑法'].articles,...summary.subjects['刑法'].chapters])assert(weakText.includes(row.name),'row shown: '+row.name);
+  assert.equal(new URL(await sum.locator('#sum-weak a[href*="lawyer-judge"]').getAttribute('href'),sum.url()).href,lj+'mcq/#home');
+  for(const w of WIDTHS){await sum.setViewportSize({width:w,height:900});await noOverflow(sum,'summaries with lawyer-judge block @'+w);}
+  await sum.setViewportSize({width:390,height:844});
+  if(shots){await sum.locator('#sum-weak').scrollIntoViewIfNeeded();await sum.screenshot({path:path.join(shots,'summaries-lawyer-mcq-390.png')});}
+  await sum.locator('.sum-subject[data-slug="criminal-procedure"]').click();
+  await sum.waitForFunction(()=>document.getElementById('sum-title').textContent.includes('刑事訴訟'));
+  assert.equal(await sum.locator('#sum-weak h3',{hasText:'律司選擇題'}).count(),0,'no block for a subject without lawyer-judge practice');
+  await sum.locator('.sum-subject[data-slug="juvenile"]').click();
+  await sum.waitForFunction(()=>document.getElementById('sum-title').textContent.includes('少年'));
+  assert.equal(await sum.locator('#sum-weak h3',{hasText:'律司選擇題'}).count(),0,'no block for non-shared subjects');
+  const frozenAfter=await page.evaluate(()=>{const o={};for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(!k.startsWith('lj::'))o[k]=localStorage.getItem(k);}return o;});
+  delete frozen['lawScoring.summaries.v1'];delete frozenAfter['lawScoring.summaries.v1']; // 重點整理頁自己記住最後看的科目
+  assert.deepEqual(frozenAfter,frozen,'showing the block writes nothing to probation records');
 
   assert.deepEqual(errors,[],'no page errors or failed requests');
   console.log('PASS lawyer-judge switch browser: off by default, persists, '+hrefs.length+' entries open, records separate both ways, '+LJ_PAGES.length+' pages without overflow');

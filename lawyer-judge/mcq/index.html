@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="zh-Hant">
-<head><script src="../storage-namespace.js"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>第一試選擇題練習｜律司備考平臺</title><meta name="description" content="律師、司法官第一試選擇題：依科目抽題、整卷計時模擬、錯題本與弱點統計。"><link rel="stylesheet" href="../shared-ui.css"><link rel="stylesheet" href="mcq.css"><script src="bank.js" defer></script><script src="mcq.js" defer></script><link rel="manifest" href="../manifest.webmanifest"><meta name="theme-color" content="#8a3b2e"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="../pwa/icon-180.png"><link rel="stylesheet" href="../offline.css"><script src="../offline.js" defer></script><link rel="stylesheet" href="../assets/study-theme.css"><link rel="stylesheet" href="../assets/site-nav.css"><script src="../assets/site-nav.js" defer></script>
+<head><script src="../storage-namespace.js"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>第一試選擇題練習｜律司備考平臺</title><meta name="description" content="律師、司法官第一試選擇題：依科目抽題、整卷計時模擬、錯題本與弱點統計。"><link rel="stylesheet" href="../shared-ui.css"><link rel="stylesheet" href="mcq.css"><script src="bank.js" defer></script><script src="chapters.js" defer></script><script src="mcq.js" defer></script><link rel="manifest" href="../manifest.webmanifest"><meta name="theme-color" content="#8a3b2e"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="../pwa/icon-180.png"><link rel="stylesheet" href="../offline.css"><script src="../offline.js" defer></script><link rel="stylesheet" href="../assets/study-theme.css"><link rel="stylesheet" href="../assets/site-nav.css"><script src="../assets/site-nav.js" defer></script>
 </head>
 <body>
 <header class="study-header"><div class="study-header-inner"><a class="study-brand" href="../"><span class="study-brand-mark" aria-hidden="true">律</span>律司備考平臺</a><span class="study-test-label">第一試・選擇題</span><nav aria-label="主要導覽"><a href="../">首頁</a><a href="./" aria-current="page">選擇題練習</a><a href="../professional/">專業科目</a><a href="../v2.5/">考古題練習</a></nav></div></header>
@@ -12,6 +12,13 @@ node scripts/import-questions.mjs --mcq lawplayer-stage1.json</pre><p class="sma
 
 <div id="home-view" hidden>
 <div id="resume-box" class="card resume" hidden><div><strong id="resume-title"></strong><p id="resume-detail" class="small muted"></p></div><div class="actions"><button type="button" id="resume-go" class="primary">接續</button><button type="button" id="resume-drop" class="secondary">放棄這一組</button></div></div>
+<section id="commute-box" class="card commute" aria-labelledby="commute-heading">
+<h2 id="commute-heading">通勤練習</h2>
+<div class="filters"><label>科目<select id="commute-subject"></select></label></div>
+<p id="commute-info" class="muted" role="status"></p>
+<div class="actions commute-actions"><button type="button" id="commute-20" class="primary">做 20 題</button><button type="button" id="commute-30" class="secondary">做 30 題</button></div>
+<p class="small muted">一鍵開始：先出到期該複習的錯題（最多一半），再補還沒做過的題目。中途離開會記住做到哪一題，下次打開本頁直接從那一題繼續。</p>
+</section>
 <div class="tabs" role="tablist" aria-label="練習方式">
 <button type="button" role="tab" id="tab-practice" aria-controls="panel-practice" aria-selected="true">依科目練習</button>
 <button type="button" role="tab" id="tab-exam" aria-controls="panel-exam" aria-selected="false" tabindex="-1">整卷模擬</button>
@@ -29,7 +36,9 @@ node scripts/import-questions.mjs --mcq lawplayer-stage1.json</pre><p class="sma
 <label>題目範圍<select id="pool"><option value="all">全部題目</option><option value="new">還沒做過的</option><option value="wrong">錯題本裡的</option><option value="due">到期該複習的錯題</option></select></label>
 <label>題數<select id="count"><option>10</option><option selected>20</option><option>30</option><option>50</option></select></label>
 <label>順序<select id="order"><option value="random">隨機</option><option value="sequential">依年度、題號</option></select></label>
+<label id="chapter-wrap" hidden>章節<select id="chapter"></select></label>
 </div>
+<p id="chapter-hint" class="small muted" hidden>只勾選「刑法」或「刑事訴訟法」其中一科時，可以再依章節篩選。章節是依條號與關鍵字自動歸類，會有歸錯的題目，作答後可以逐題更正。</p>
 <p id="pool-info" class="muted" role="status"></p>
 <button type="submit" id="practice-start" class="primary">開始練習</button>
 </form>
@@ -83,7 +92,7 @@ node scripts/import-questions.mjs --mcq lawplayer-stage1.json</pre><p class="sma
 </div>
 
 <section id="session-view" hidden aria-labelledby="session-heading">
-<div class="session-bar"><div><p class="eyebrow" id="session-kind"></p><h2 id="session-heading" tabindex="-1"></h2></div><div class="session-tools"><span id="timer" class="pill" role="timer" aria-live="off" hidden></span><button type="button" id="session-end" class="secondary"></button></div></div>
+<div class="session-bar"><div><p class="eyebrow" id="session-kind"></p><h2 id="session-heading" tabindex="-1"></h2></div><div class="session-tools"><span id="timer" class="pill" role="timer" aria-live="off" hidden></span><button type="button" id="session-pause" class="secondary">先停在這裡</button><button type="button" id="session-end" class="secondary"></button></div></div>
 <progress id="session-progress" max="1" value="0" aria-label="作答進度"></progress>
 <div class="session-layout"><div id="navigator-wrap" class="navigator" hidden><p class="small muted" id="navigator-help"></p><div id="navigator" role="group" aria-label="題號"></div></div>
 <article id="question-card" class="card question-card" aria-live="off"></article></div>

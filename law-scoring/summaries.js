@@ -15,8 +15,8 @@ let current = null;
 // 弱點地圖需要題庫與計分函式；任何一項沒載入就整個不顯示，重點整理照常可用。
 const WK = window.LawScoringWeakness, DATA = window.LawScoringData, SCORER = window.LawScoring && window.LawScoring.score;
 const BY_ID = WK && DATA && SCORER ? new Map(DATA.questions.map(q=>[q.id,q])) : null;
-let weak = null, weakRaw = '', loss = null, timing = null;
-function computeWeak(d){ if(!BY_ID){ weak=null; return; } weakRaw=WK.rawStore(); const st=WK.readStore(); try { weak=WK.compute(d, st, BY_ID, SCORER); } catch (e) { weak=null; } try { loss=WK.LOSS_SLUGS.includes(d.slug)?WK.lossTypes(d, st, BY_ID):null; } catch (e) { loss=null; } try { timing=WK.timeStats(d, st); } catch (e) { timing=null; } }
+let weak = null, weakRaw = '', loss = null, timing = null, ljMcq = null, ljRaw = '';
+function computeWeak(d){ if(!BY_ID){ weak=null; return; } weakRaw=WK.rawStore(); const st=WK.readStore(); try { weak=WK.compute(d, st, BY_ID, SCORER); } catch (e) { weak=null; } try { loss=WK.LOSS_SLUGS.includes(d.slug)?WK.lossTypes(d, st, BY_ID):null; } catch (e) { loss=null; } try { timing=WK.timeStats(d, st); } catch (e) { timing=null; } try { ljRaw=WK.rawLawyerMcq(); ljMcq=WK.lawyerMcq(d.slug, ljRaw); } catch (e) { ljMcq=null; } }
 const practised = c => '已練 '+c.done+'／'+c.total+' 題';
 
 function el(tag, attrs, text){ const n=document.createElement(tag); for(const k in (attrs||{})){ if(k==='class') n.className=attrs[k]; else n.setAttribute(k,attrs[k]); } if(text!=null) n.textContent=text; return n; }
@@ -137,6 +137,20 @@ function renderTiming(box){
   box.appendChild(ul);
   box.appendChild(el('p',{class:'small muted'},'來自這一科的限時練習：存過的作答歷程，加上已自評但還沒存檔的那一次。拆題步數只有存檔才會記下。至少 '+WK.MIN+' 筆才列出，紀錄只讀取。'));
 }
+// 律司備考平臺的第一試選擇題：刑法、刑事訴訟法目前還在錯題本裡的題目，依條文與章節列出。只讀取那邊整理好的摘要。
+function renderLawyerMcq(box){
+  if(!ljMcq||!ljMcq.done) return;
+  box.appendChild(el('h3',null,'律司選擇題：常錯的條文與章節'));
+  if(!ljMcq.wrong){ box.appendChild(el('p',null,'律司第一試選擇題（'+ljMcq.subject+'）做過 '+ljMcq.done+' 題，目前沒有還在錯題本裡的題目。')); }
+  else {
+    const list=(title,rows)=>{ if(!rows.length) return; box.appendChild(el('p',{class:'sum-plabel'},title)); const ul=el('ul',{class:'sum-weak-list sum-loss-list'}); rows.forEach(x=>{ const li=el('li'); li.appendChild(el('span',{class:'name'},x.name)); li.appendChild(el('span',{class:'detail'},'錯 '+x.wrong+' 題／做過 '+x.done+' 題')); ul.appendChild(li); }); box.appendChild(ul); };
+    list('條文',ljMcq.articles); list('章節',ljMcq.chapters);
+    if(!ljMcq.articles.length&&!ljMcq.chapters.length) box.appendChild(el('p',null,'做過 '+ljMcq.done+' 題、錯 '+ljMcq.wrong+' 題，但這些題目沒有寫到條號，也還歸不進章節。'));
+  }
+  const p=el('p',{class:'small muted'},'來自律司備考平臺的第一試選擇題（'+ljMcq.subject+'做過 '+ljMcq.done+' 題、目前錯 '+ljMcq.wrong+' 題'+(ljMcq.updated?'，'+ljMcq.updated+' 更新':'')+'）。只算還在錯題本裡的題目；條號從題目文字擷取、章節是自動歸類，都可能有誤。紀錄只讀取。');
+  const a=el('a',{href:'../lawyer-judge/mcq/#home'},'到律司選擇題練習'); p.appendChild(document.createTextNode(' ')); p.appendChild(a);
+  box.appendChild(p);
+}
 function renderWeak(d){
   const box=$('sum-weak'); box.textContent='';
   if(!weak){ box.hidden=true; return; }
@@ -146,6 +160,7 @@ function renderWeak(d){
     box.appendChild(el('p',null,'這一科還沒有自評紀錄。到申論評分參考作答並勾選評分要點後，這裡會排出常考又失分的主題。'));
     const top=d.chart[0]&&weak.bySection[d.chart[0].section];
     if(top){ const p=el('p',null,'可以從最常考的主題開始：'); p.appendChild(chapterLink(d,top)); box.appendChild(p); }
+    renderLawyerMcq(box);
     return;
   }
   if(weak.ranked.length){
@@ -161,6 +176,7 @@ function renderWeak(d){
   }
   renderLoss(box);
   renderTiming(box);
+  renderLawyerMcq(box);
   box.appendChild(el('p',{class:'small muted'},'排序方式：出題次數（觀護人的題算 '+WK.GUAN_W+' 倍）乘上還沒掌握的比例。掌握度是該章已自評題目的平均分數；紀錄只讀取，不會被更動。'));
 }
 
@@ -236,7 +252,7 @@ document.addEventListener('click',e=>{
 window.addEventListener('hashchange',()=>{ const p=parseHash(); if(p) go(p.slug,p.section,true); });
 
 // 從申論評分參考回來時，自評紀錄若有變動就重畫，並留在原本的捲動位置。
-function refreshWeak(){ if(!BY_ID||!current||!S.items[current]||WK.rawStore()===weakRaw) return; const y=window.scrollY; render(current); window.scrollTo(0,y); }
+function refreshWeak(){ if(!BY_ID||!current||!S.items[current]||(WK.rawStore()===weakRaw&&WK.rawLawyerMcq()===ljRaw)) return; const y=window.scrollY; render(current); window.scrollTo(0,y); }
 document.addEventListener('visibilitychange',()=>{ if(!document.hidden) refreshWeak(); });
 window.addEventListener('pageshow',refreshWeak);
 window.addEventListener('storage',refreshWeak);
