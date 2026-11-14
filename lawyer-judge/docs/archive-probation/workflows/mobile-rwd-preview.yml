@@ -1,0 +1,87 @@
+name: Mobile RWD seven-item isolated preview
+
+on:
+  push:
+    branches:
+      - feature/mobile-rwd-seven-fixes-20261018
+  pull_request:
+    branches: [main]
+    paths:
+      - professional/layout-followup.css
+      - common-subjects/index.html
+      - v2.5/index.html
+      - docs/LAYOUT_REVIEW_CHANGES.json
+      - verification/mobile-rwd-seven-browser.cjs
+      - .github/workflows/mobile-rwd-preview.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mobile-rwd-seven-fixes-preview
+  cancel-in-progress: true
+
+jobs:
+  test-and-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 24
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}
+      - name: Check modified source syntax and protected layout hashes
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check verification/mobile-rwd-seven-browser.cjs
+          sha256sum common-subjects/index.html v2.5/index.html professional/layout-followup.css
+          node verification/unified-integration.cjs
+          python3 scripts/build-cloudflare-main-mirror.py
+          cmp common-subjects/index.html cloudflare-main-mirror-dist/common-subjects/index.html
+          cmp v2.5/index.html cloudflare-main-mirror-dist/v2.5/index.html
+          cmp professional/layout-followup.css cloudflare-main-mirror-dist/professional/layout-followup.css
+      - name: Install both isolated browser engines
+        shell: bash
+        run: |
+          npm install --prefix /tmp/mobile-rwd-browser --no-save playwright@1.62.1
+          /tmp/mobile-rwd-browser/node_modules/.bin/playwright install --with-deps chromium webkit
+      - name: Verify seven mobile RWD adjustments at 375, 390 and 430 px
+        shell: bash
+        env:
+          NODE_PATH: /tmp/mobile-rwd-browser/node_modules
+        run: node verification/mobile-rwd-seven-browser.cjs
+      - name: Deploy isolated Cloudflare mobile preview
+        if: (github.event_name == 'push' && github.ref == 'refs/heads/feature/mobile-rwd-seven-fixes-20261018') || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'feature/mobile-rwd-seven-fixes-20261018' && github.event.pull_request.base.ref == 'main')
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy cloudflare-main-mirror-dist --project-name=probation-study30-test --branch=mobile-rwd-preview
+      - name: Verify live preview matches branch and modified files
+        if: (github.event_name == 'push' && github.ref == 'refs/heads/feature/mobile-rwd-seven-fixes-20261018') || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'feature/mobile-rwd-seven-fixes-20261018' && github.event.pull_request.base.ref == 'main')
+        shell: bash
+        env:
+          EXPECTED_SHA: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}
+        run: |
+          set -euo pipefail
+          BASE=https://mobile-rwd-preview.probation-study30-test.pages.dev
+          ready=0
+          for retry in $(seq 1 15); do
+            if curl -fsSL --max-time 15 "$BASE/mirror-manifest.json" -o /tmp/mobile-manifest; then
+              if python3 - <<'PY'
+          import json,os
+          from pathlib import Path
+          doc=json.loads(Path('/tmp/mobile-manifest').read_text())
+          assert doc['source_commit']==os.environ['EXPECTED_SHA']
+          PY
+              then ready=1;break;fi
+            fi
+            sleep 7
+          done
+          test "$ready" = 1 || { echo "Preview still serves a different commit"; exit 1; }
+          for file in common-subjects/index.html v2.5/index.html professional/layout-followup.css; do
+            curl -fsSL --max-time 20 "$BASE/$file" -o /tmp/mobile-served
+            cmp "cloudflare-main-mirror-dist/$file" /tmp/mobile-served || { echo "Preview differs: $file"; exit 1; }
+          done
+          echo "PASS: all three modified assets are identical to preview commit"

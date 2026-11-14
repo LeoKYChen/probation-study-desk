@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head><script src="../storage-namespace.js"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>第一試選擇題練習｜律司備考平臺</title><meta name="description" content="律師、司法官第一試選擇題：依科目抽題、整卷計時模擬、錯題本與弱點統計。"><link rel="stylesheet" href="../shared-ui.css"><link rel="stylesheet" href="mcq.css"><script src="bank.js" defer></script><script src="mcq.js" defer></script><link rel="manifest" href="../manifest.webmanifest"><meta name="theme-color" content="#8a3b2e"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="../pwa/icon-180.png"><link rel="stylesheet" href="../offline.css"><script src="../offline.js" defer></script><link rel="stylesheet" href="../assets/study-theme.css"><link rel="stylesheet" href="../assets/site-nav.css"><script src="../assets/site-nav.js" defer></script>
+</head>
+<body>
+<header class="study-header"><div class="study-header-inner"><a class="study-brand" href="../"><span class="study-brand-mark" aria-hidden="true">律</span>律司備考平臺</a><span class="study-test-label">第一試・選擇題</span><nav aria-label="主要導覽"><a href="../">首頁</a><a href="./" aria-current="page">選擇題練習</a><a href="../professional/">專業科目</a><a href="../v2.5/">考古題練習</a></nav></div></header>
+<main>
+<div class="page-heading" id="page-heading"><div><p class="eyebrow">律師／司法官 第一試</p><h1>選擇題，一題一題對答案。</h1><p class="muted" id="bank-summary"></p></div></div>
+<div id="notice" role="status" class="notice" hidden></div>
+<div id="empty" class="card" hidden><h2>尚未匯入選擇題</h2><p>本頁需要第一試選擇題題庫。轉換並匯入 LawPlayer 的試卷：</p><pre>node scripts/convert-lawplayer.mjs 下載資料夾 -o lawplayer.json
+node scripts/import-questions.mjs --mcq lawplayer-stage1.json</pre><p class="small muted">詳見專案的 docs/QUESTION_IMPORT.md。</p></div>
+
+<div id="home-view" hidden>
+<div id="resume-box" class="card resume" hidden><div><strong id="resume-title"></strong><p id="resume-detail" class="small muted"></p></div><div class="actions"><button type="button" id="resume-go" class="primary">接續</button><button type="button" id="resume-drop" class="secondary">放棄這一組</button></div></div>
+<div class="tabs" role="tablist" aria-label="練習方式">
+<button type="button" role="tab" id="tab-practice" aria-controls="panel-practice" aria-selected="true">依科目練習</button>
+<button type="button" role="tab" id="tab-exam" aria-controls="panel-exam" aria-selected="false" tabindex="-1">整卷模擬</button>
+<button type="button" role="tab" id="tab-wrong" aria-controls="panel-wrong" aria-selected="false" tabindex="-1">錯題本<span id="wrong-badge" class="badge" hidden></span></button>
+<button type="button" role="tab" id="tab-stats" aria-controls="panel-stats" aria-selected="false" tabindex="-1">統計</button>
+</div>
+
+<section id="panel-practice" role="tabpanel" aria-labelledby="tab-practice" class="card">
+<h2>選科目，抽題練習</h2>
+<form id="practice-form">
+<fieldset class="subjects"><legend>科目（可複選）</legend><div id="subject-groups"></div><div class="actions small-actions"><button type="button" id="subjects-all" class="secondary">全選</button><button type="button" id="subjects-none" class="secondary">清除</button></div></fieldset>
+<div class="filters">
+<label>年度（起）<select id="year-from"></select></label>
+<label>年度（迄）<select id="year-to"></select></label>
+<label>題目範圍<select id="pool"><option value="all">全部題目</option><option value="new">還沒做過的</option><option value="wrong">錯題本裡的</option><option value="due">到期該複習的錯題</option></select></label>
+<label>題數<select id="count"><option>10</option><option selected>20</option><option>30</option><option>50</option></select></label>
+<label>順序<select id="order"><option value="random">隨機</option><option value="sequential">依年度、題號</option></select></label>
+</div>
+<p id="pool-info" class="muted" role="status"></p>
+<button type="submit" id="practice-start" class="primary">開始練習</button>
+</form>
+<p class="small muted">每題作答後立刻看到正解。作答會記在這個瀏覽器；答錯的題目自動進錯題本，隔天起依 1、3、7、14 天提醒複習。</p>
+</section>
+
+<section id="panel-exam" role="tabpanel" aria-labelledby="tab-exam" class="card" hidden>
+<h2>整卷模擬</h2>
+<p class="muted">一次做完歷年的一整卷，交卷後依科目看得分。</p>
+<form id="exam-form">
+<div class="filters">
+<label>年度<select id="exam-year"></select></label>
+<label>試卷<select id="exam-paper"></select></label>
+<label>計時<select id="exam-timer"><option value="on">依考試時間倒數</option><option value="off">不計時</option></select></label>
+</div>
+<p id="exam-info" class="muted" role="status"></p>
+<button type="submit" id="exam-start" class="primary">開始模擬</button>
+</form>
+<h3>歷次整卷成績</h3>
+<div id="exam-history"></div>
+<details class="source-help"><summary>題數、時間與計分依據</summary>
+<p>107 年起第一試全部為單一選擇題，每題 2 分；共四卷：卷一（刑法、刑事訴訟法、法律倫理）75 題、卷二（憲法、行政法、國際公法、國際私法）75 題、卷三（民法、民事訴訟法）80 題、卷四（公司法、保險法、票據法、證券交易法、強制執行法、法學英文）70 題。考試時間為卷一、卷二各 90 分鐘，卷三 100 分鐘，卷四 80 分鐘。資料整理自<a href="https://lawyer.get.com.tw/Lawyer/examInfo.aspx" target="_blank" rel="noopener">補習班公開資料 ↗</a>，<strong>以考選部每年公告的應考須知為準</strong>。</p>
+<p>本站計分：答對一題得 2 分，答錯與未作答不得分，不倒扣。官方更正為「均給分」的題目，選任一個被接受的答案都算對。原檔選項或正解殘缺的題目標示為「不計分」，不列入滿分。</p>
+</details>
+</section>
+
+<section id="panel-wrong" role="tabpanel" aria-labelledby="tab-wrong" class="card" hidden>
+<h2>錯題本</h2>
+<div class="filters"><label>科目<select id="wrong-subject"></select></label></div>
+<p id="wrong-info" class="muted" role="status"></p>
+<div class="actions"><button type="button" id="wrong-practice-due" class="primary">練習到期的錯題</button><button type="button" id="wrong-practice-all" class="secondary">練習全部錯題</button></div>
+<div id="wrong-list"></div>
+</section>
+
+<section id="panel-stats" role="tabpanel" aria-labelledby="tab-stats" class="card" hidden>
+<h2>統計</h2>
+<div id="stats-overview" class="stat-row"></div>
+<h3>各科表現</h3>
+<div class="table-wrap"><table id="stats-table"><caption class="sr-only">各科作答題數、正確率與錯題數</caption><thead><tr><th scope="col">科目</th><th scope="col">作答次數</th><th scope="col">正確率</th><th scope="col">已做過的題</th><th scope="col">錯題</th></tr></thead><tbody></tbody></table></div>
+<h3>目前錯題的錯因</h3>
+<p class="small muted">答錯後選的原因；答對後會清掉，所以這裡只算還沒答對的題目。</p>
+<div id="stats-causes"></div>
+<h3>最常出錯的條文</h3>
+<p class="small muted" id="stats-articles-note"></p>
+<div id="stats-articles"></div>
+<h3>標為已過時的題目</h3>
+<p class="small muted">修法後答案已不同的題目可以在作答後或錯題本裡標記；標記後不再出現在依科目練習與錯題本。整卷模擬仍保留原卷全部題目。</p>
+<div id="stats-outdated"></div>
+<p class="small muted">正確率＝答對次數／作答次數；作答 10 次以上、正確率低於 60% 的科目標示為「較弱」。紀錄可在<a href="../backup/">學習紀錄備份</a>匯出。</p>
+</section>
+</div>
+
+<section id="session-view" hidden aria-labelledby="session-heading">
+<div class="session-bar"><div><p class="eyebrow" id="session-kind"></p><h2 id="session-heading" tabindex="-1"></h2></div><div class="session-tools"><span id="timer" class="pill" role="timer" aria-live="off" hidden></span><button type="button" id="session-end" class="secondary"></button></div></div>
+<progress id="session-progress" max="1" value="0" aria-label="作答進度"></progress>
+<div class="session-layout"><div id="navigator-wrap" class="navigator" hidden><p class="small muted" id="navigator-help"></p><div id="navigator" role="group" aria-label="題號"></div></div>
+<article id="question-card" class="card question-card" aria-live="off"></article></div>
+</section>
+
+<section id="result-view" hidden aria-labelledby="result-heading">
+<div id="result-body" class="card"></div>
+</section>
+</main>
+<footer>題目為考選部歷屆試題，由 LawPlayer 整理；正解以下載檔為準，官方更正答案請查考選部。紀錄只存在目前瀏覽器，請定期到備份中心匯出。</footer>
+</body></html>

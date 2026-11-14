@@ -1,0 +1,150 @@
+/* 視覺主題：法律筆記本。暖米白紙底、墨黑字、單一強調色「法典紅」；掌握狀態用墨綠／赭黃。
+ * 只改呈現，不動紀錄資料。標題用站內附的 Noto Serif TC（SIL OFL，見 assets/fonts/noto-serif-tc/OFL.txt），
+ * 內文用系統無襯線字（不連外部字型服務，離線也能用）。
+ * 對比（相對 #f6f2ea 紙底）：墨黑 #1f2328 14.6:1、次要字 #6b665e 4.9:1、法典紅 #8a3b2e 6.3:1。 */
+@import url('./fonts/noto-serif-tc/noto-serif-tc.css');
+@media screen{
+:root{
+  --serif:'Noto Serif TC','Songti TC','Noto Serif CJK TC','PMingLiU','Source Han Serif TC',serif;
+  --sans:'Noto Sans TC','PingFang TC','Microsoft JhengHei','Noto Sans CJK TC',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;
+  --paper:#f6f2ea;--surface:#fbf8f2;--raised:#fffdf8;--sunken:#efe8db;
+  --ink:#1f2328;--muted:#6b665e;--line:#e1d9cb;--line-strong:#cfc6b6;
+  --accent:#8a3b2e;--accent-dark:#6b2a20;--accent-soft:#f3e3df;--margin-red:#d9a79c;
+  --ok:#2f6b55;--ok-soft:#e3efe9;--warn:#c9a24a;--warn-soft:#f5ecd2;--danger:#8a3b2e;
+  --study-font:var(--sans);--study-blue:var(--accent);--study-ink:var(--ink);--study-muted:var(--muted);--study-paper:var(--paper);--study-soft:var(--sunken);--study-line:var(--line);
+  --ink-muted:var(--muted);--ink-soft:var(--muted);--green:var(--accent);--green2:var(--sunken);--green-dark:var(--accent-dark);--cream:var(--sunken);
+  --surface-2:var(--surface);--white:var(--raised);--border:var(--line);--navy:var(--ink);--navy-2:#3a3f45;--teal:var(--accent);--teal-soft:var(--sunken);--lavender:var(--ok);
+  --amber:var(--warn);--amber-soft:var(--warn-soft);--room-hero:var(--sunken);--room-surface:var(--surface);--room-border:var(--line);--room-shadow:none;--shadow:none;--radius:3px;
+  color-scheme:light;
+}
+html,body{font-family:var(--sans);background:var(--paper);color:var(--ink)}
+body{line-height:1.75}
+body :is(button,input,select,textarea){font-family:var(--sans);accent-color:var(--accent)}
+body :is(h1,h2,h3,.brand,.study-brand,.global-brand,.tile-title,.page-header h1){font-family:var(--serif);font-weight:700;color:var(--ink);letter-spacing:.01em}
+body :is(h4,summary){font-family:var(--sans)}
+body :is(.page-eyebrow,.hero-eyebrow,.eyebrow,.sidebar-eyebrow){font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.16em;color:var(--accent);text-transform:uppercase}
+a{color:var(--accent)}a:hover{color:var(--accent-dark)}
+/* 按鈕：主要＝法典紅實心；次要＝描邊 */
+body :is(button,.btn,.primary,.secondary,.save-button,.clear-button,.data-btn){border-radius:3px;font-weight:500;min-height:44px}
+body :is(.primary,button.primary,.save-button,.btn-primary){background:var(--accent);border-color:var(--accent);color:#fbf8f2}
+body :is(.primary,button.primary,.save-button,.btn-primary):hover:not(:disabled){background:var(--accent-dark);border-color:var(--accent-dark)}
+body :is(.secondary,button.secondary,.clear-button,.data-btn){background:transparent;border:1px solid var(--line-strong);color:var(--ink)}
+body :is(.secondary,button.secondary,.clear-button,.data-btn):hover:not(:disabled){background:var(--sunken);border-color:var(--ink)}
+body :is(input:not([type=checkbox]):not([type=radio]),select,textarea){border:1px solid var(--line-strong);border-radius:3px;background:var(--raised);color:var(--ink)}
+body :is(input:not([type=checkbox]):not([type=radio]),select,textarea):focus{border-color:var(--accent)}
+body :focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+/* 卡片：紙感、細線、左側法典紅邊線用在重點卡 */
+body :is(.panel,.card,.document-card,.featured-card,.compact-card,.workspace,.daily-card,.history,.stat,.review-dashboard,.storage25,.extension25,.point25,.focus-card,.simulation-entry){background:var(--surface);border:1px solid var(--line);border-radius:3px;box-shadow:none}
+body :is(.focus-card,.resume){border-left:4px solid var(--accent)}
+body .stat b{font-family:var(--serif)}
+/* 頁首與導覽 */
+body :is(.global-header,.study-header,.topbar){background:var(--paper);color:var(--ink);border-bottom:1px solid var(--line)}
+body :is(.global-brand,.study-brand,.topbar .brand,.topbar h1){color:var(--ink)}
+body :is(.global-brand-mark,.study-brand-mark,.sidebar-brand-icon,.brand-icon,.brand-mark){background:transparent;color:var(--ink);border:1.5px solid var(--ink);border-radius:0;font-family:var(--serif);font-weight:900;width:34px;height:34px;display:grid;place-items:center;font-size:18px}
+body :is(.brand small,.topbar .brand p,.topbar .version){color:var(--muted)}
+body :is(.version,.study-test-label){border-color:var(--line-strong);color:var(--muted);font-family:var(--mono)}
+body .study-header nav a{color:var(--muted);border-radius:0;border-bottom:2px solid transparent;font-weight:500;padding:9px 14px}
+body .study-header nav a:hover{background:transparent;color:var(--ink);border-bottom-color:var(--line-strong)}
+body .study-header nav a[aria-current=page]{background:transparent;color:var(--ink);font-weight:700;border-bottom-color:var(--accent)}
+body .workspace-sidebar{background:var(--paper);border-right:1px solid var(--line)}
+body :is(.workspace-topbar,.workspace-status,.breadcrumb,.sidebar-links a,.sidebar-note){color:var(--muted)}
+body .workspace-topbar{background:transparent;border-bottom:1px solid var(--line)}
+body .sidebar-links a{border-radius:0}
+body .sidebar-links a.is-current{background:transparent;color:var(--ink);font-weight:700;box-shadow:inset 3px 0 0 var(--accent)}
+body .sidebar-links a:hover{background:var(--sunken);color:var(--ink)}
+body :is(.sidebar-brand,.sidebar-brand small){color:var(--ink)}
+body .sidebar-note-indicator{background:var(--accent);box-shadow:none}
+/* 頁面標題 */
+body .page-header::before{display:none}
+body .page-header{border-bottom:0;padding-bottom:0;margin-bottom:30px}
+body .page-header h1{font-size:clamp(32px,5vw,60px);line-height:1.2;font-weight:900}
+body :is(.page-intro,.footnote){color:var(--muted)}
+/* 倒數：墨黑底 */
+body .countdown{background:var(--ink);color:var(--paper);border:0;border-radius:3px;padding:26px 28px;box-shadow:none}
+body :is(.room-hero-art,.countdown::before){display:none}
+body :is(.countdown-label,.countdown-value){color:var(--paper);font-family:var(--serif);font-weight:900}
+body .countdown :is(p,span,small){color:inherit}
+body .countdown-calendar{background:#1f2328;border-color:#cfc6b6;color:#d9d1c3}
+body .countdown-settings summary{background:transparent;color:var(--paper);border:1px solid #6b665e;border-radius:3px}
+body #countdown-form{border:1px solid var(--line);box-shadow:none;border-radius:3px;background:var(--surface);color:var(--ink)}
+body :is(.field input,.field select){border-color:var(--line-strong)}
+body .section h2{color:var(--ink);font-weight:700}
+body .section h2::before{display:none}
+/* 入口清單：像目錄頁，§ 編號感 */
+body .tile{border:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);border-radius:0;background:transparent;background-image:none;box-shadow:none;color:var(--ink);transition:background .15s;min-height:120px}
+body .tile:hover{transform:none;background:var(--sunken);box-shadow:none;border-color:var(--accent)}
+body .tile :is(.tile-description,.tile-arrow){color:var(--muted)}
+body .tile-title{font-size:clamp(20px,2.3vw,26px)}
+body .tile-arrow{background:none;border:0}
+/* 稿紙：橫格線＋左側紅邊線（作答與札記區用 .ruled） */
+body .ruled,body.professional-page :is(textarea.ruled),body :is(.notebook){position:relative;background-color:var(--raised);background-image:repeating-linear-gradient(var(--raised) 0 33px,#e8e0d2 33px 34px);line-height:34px;padding-left:52px;border:1px solid var(--line)}
+body .ruled::before,body .notebook::before{content:"";position:absolute;left:36px;top:0;bottom:0;width:1px;background:var(--margin-red);pointer-events:none}
+body textarea.ruled{background-attachment:local;font-size:16px;line-height:34px;padding-top:0;padding-bottom:0}
+body textarea.ruled::before{display:none}
+/* 專業科目頁 */
+body.professional-page .timer-panel{background:var(--ink);color:var(--paper);border-radius:3px}
+body.professional-page .timer-panel :is(h3,h4,p,span,strong,small,.timer-display){color:inherit}
+body.professional-page :is(.question,.prompt-box){border:1px solid var(--line);border-left:4px solid var(--accent);background:var(--surface)}
+body.professional-page :is(.daily-card,.workspace,.history){border-top:2px solid var(--ink)}
+body.professional-page .segmented{background:transparent;border:1px solid var(--line-strong);border-radius:3px;padding:0}
+body.professional-page .segmented button{border-radius:0;background:transparent;color:var(--ink);border:0}
+body.professional-page .segmented button[aria-pressed=true]{background:var(--ink);color:var(--paper);box-shadow:none}
+/* 閱讀室 */
+body.study-reading .sidebar{background:var(--sunken);color:var(--muted)}
+body.study-reading :is(.hero,.sidebar .avatar){background:var(--sunken);color:var(--ink)}
+body.study-reading :is(.hero h1,.hero p,.brand,.reader h1,.markdown h1,.markdown h2,.markdown h3){color:var(--ink)}
+body.study-reading :is(.hero-art,.hero::before,.hero::after){display:none}
+body.study-reading :is(.document-card,.featured-card,.compact-card){background:var(--surface);border-color:var(--line)}
+body.study-reading .markdown{line-height:2;color:var(--ink)}
+body.study-reading .markdown a{color:var(--accent)}
+body.study-reading .question-body{background:var(--surface)}
+/* 表格、標籤 */
+body table{border-collapse:collapse}
+body :is(th){background:var(--sunken);color:var(--ink)}
+body :is(th,td){border-color:var(--line)}
+body :is(.tag,.pill,.badge-soft){background:var(--sunken);color:var(--ink);border:1px solid var(--line);border-radius:3px;font-family:var(--mono);font-size:12px}
+body footer{color:var(--muted)}
+@media(max-width:760px){body .tile{min-height:96px}body .countdown{padding:20px}body .page-header h1{font-size:clamp(28px,8.4vw,38px)}}
+@media(prefers-reduced-motion:reduce){body .tile{transition:none}}
+}
+
+@media screen{
+body .page .course-grid>.tile.course-tile{background:transparent;border:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);border-radius:0;box-shadow:none;color:var(--ink)}
+body .page .course-grid>.tile.course-tile:hover{background:var(--sunken)}
+body .page .course-grid>.tile.course-tile .tile-title{color:var(--ink)}
+body .page .course-grid>.tile.course-tile .tile-description{color:var(--muted)}
+body .page .course-grid>.tile.course-tile .tile-arrow{background:none;color:var(--accent)}
+body .page .explore-tile::before,body .page .countdown::before{display:none}
+}
+
+/* 作答稿紙：橫格線＋左側法典紅邊線。行高固定 34px，格線與文字對齊；背景跟著內容捲動。 */
+@media screen{
+body :is(#answer,#essayField0,#essayField1,#essayField2,#essayField3,#essayFullAnswer,#draftIssue,#draftBasis,#draftAnalysis,#draftConclusion,#issueInput,#topicPracticeAnswer,#essayText){
+  font-family:var(--sans);font-size:16px;line-height:34px;padding:0 16px 0 52px;color:var(--ink);background-color:var(--raised);
+  background-image:linear-gradient(90deg,transparent 35px,var(--margin-red) 35px 36px,transparent 36px),repeating-linear-gradient(transparent 0 33px,#e8e0d2 33px 34px);
+  background-attachment:local,local;border:1px solid var(--line);border-radius:3px}
+body :is(#answer,#essayFullAnswer,#issueInput,#essayText):focus{border-color:var(--accent)}
+/* 深色面板上的次要按鈕要用淺色字，否則看不見 */
+body :is(.timer-panel,.dark-panel,.countdown,.countdown-card) :is(button.secondary,.secondary,button:not(.primary)){color:var(--paper);border-color:#8f887c;background:transparent}
+body :is(.timer-panel,.dark-panel) :is(button.secondary,.secondary,button:not(.primary)):hover:not(:disabled){background:#2b3036;border-color:var(--paper)}
+}
+
+/* 考選部評分要點：逐點核對（v2.5 面板、骨架回想、失分清單共用） */
+.official-points{margin-top:16px;padding:12px 16px;border:1px solid var(--line);border-radius:8px;background:var(--raised)}
+.official-points>summary,.op-body>summary{cursor:pointer;font-weight:700;color:var(--accent);min-height:44px;display:flex;align-items:center}
+.op-body>summary{font-weight:600;font-size:14px;min-height:36px}
+.official-points p,.op-body p{margin:6px 0;line-height:1.8;overflow-wrap:anywhere}
+.op-status{font-weight:600;color:var(--ink)}
+.op-items{margin:12px 0;padding:0;list-style:none;display:grid;gap:10px}
+.op-items>li{padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+.op-title{margin:0 0 8px;font-weight:700;line-height:1.6;overflow-wrap:anywhere}
+.op-marks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;max-width:360px}
+.op-mark{display:flex;align-items:center;gap:8px;min-height:44px;padding:6px 12px;border:1px solid var(--line-strong);border-radius:8px;background:var(--raised);cursor:pointer;font-weight:600}
+.op-mark input{width:18px;height:18px;margin:0;flex:none;accent-color:var(--accent)}
+.op-mark.op-hit:has(input:checked){border-color:var(--ok);background:#e6efe9}
+.op-mark.op-miss:has(input:checked){border-color:var(--accent);background:#f3e2dd}
+.op-mark:has(input:focus-visible){outline:3px solid var(--warn);outline-offset:2px}
+body .official-points .op-items{padding-left:0;margin-left:0}
+.op-mark{white-space:nowrap}
+@media (max-width:480px){.official-points{padding:10px 12px}.op-items>li{padding:10px 12px}.op-mark{padding:6px 10px;gap:6px;font-size:15px}}

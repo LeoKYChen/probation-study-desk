@@ -1,0 +1,25 @@
+name: Study desk confirmed weakness loop
+on:
+  push:
+    paths:
+      - 'study-desk/**'
+      - 'verification/study-desk-weakness.cjs'
+      - '.github/workflows/study-desk-weakness.yml'
+  pull_request:
+    paths:
+      - 'study-desk/**'
+      - 'verification/study-desk-weakness.cjs'
+      - '.github/workflows/study-desk-weakness.yml'
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: node --check study-desk/app.js
+      - run: node --check study-desk/weakness.js
+      - run: node verification/study-desk-weakness.cjs

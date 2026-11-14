@@ -476,5 +476,15 @@ function resetPrompt(){
   no.onclick=back; area.appendChild(checks); area.appendChild(all); if(attempts(st(current)).length) area.appendChild(hist); area.appendChild(no);
 }
 
+// 律師・司法官備考開關：只記住開或關（預設關），開啟時顯示 lawyer-judge/ 的入口；不讀寫任何作答紀錄。
+(function ljSwitch(){
+  const box=$('lj-enabled'), links=$('lj-links'); if(!box||!links) return;
+  const LJ_KEY='lawScoring.lawyerJudge.enabled';
+  let on=false; try { on=localStorage.getItem(LJ_KEY)==='1'; } catch(e){}
+  const show=()=>{ box.checked=on; links.hidden=!on; };
+  box.addEventListener('change',()=>{ on=box.checked; try { localStorage.setItem(LJ_KEY, on?'1':'0'); } catch(e){} show(); });
+  show();
+})();
+
 render();
 })();

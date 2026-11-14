@@ -1,0 +1,196 @@
+{
+  "url": "https://v254-unified-preview.probation-study30-test.pages.dev/",
+  "files": [
+    {
+      "file": "ai-review-links.js",
+      "rebuilt_match": true,
+      "sha256": "3887497a7e57e691ecba8a03414c33bc3833ff4a47538e339a587f1244fc6658"
+    },
+    {
+      "file": "app.js",
+      "rebuilt_match": true,
+      "sha256": "175c010dfc151fed458ec6479dbbd7f2020ee550fcbc5c4697fdfbd4ecbc875a"
+    },
+    {
+      "file": "backup-import.js",
+      "rebuilt_match": true,
+      "sha256": "d05071d36dd4c09f5bc4367ef98c4f1d4ded9a80fdf105f5c01c446552c820cc"
+    },
+    {
+      "file": "content-cleanup.css",
+      "rebuilt_match": true,
+      "sha256": "55cc56d149ed2e90ff89aa35061cfb8e304c18c3ff69871181da2ce57905b6b0"
+    },
+    {
+      "file": "content-ui.js",
+      "rebuilt_match": true,
+      "sha256": "93fb93d59e3b2952dd4c07c89eb636999debc8af197b4a55218e2e84d9652ba7"
+    },
+    {
+      "file": "daily-essay-workbench.js",
+      "rebuilt_match": true,
+      "sha256": "f1e9eda8191f732eb8c39acf1402e49ca5b12d89830b7d767a1c01c7d20b6996"
+    },
+    {
+      "file": "data-health.js",
+      "rebuilt_match": true,
+      "sha256": "d6b66b3712dbd6baefaf858819cf69b80a27f477a86fd95d159863664ee89a51"
+    },
+    {
+      "file": "essay-analytics.js",
+      "rebuilt_match": true,
+      "sha256": "e563cbf70bf656729271c733defa965aca92bcc235dc2acbc0cdfc538296b03b"
+    },
+    {
+      "file": "essay-review.js",
+      "rebuilt_match": true,
+      "sha256": "7fe28bd7b2fef4ca1b2a8a8d85d6e911dbdf5440550057871793a960af5066eb"
+    },
+    {
+      "file": "essay-rubric-core.js",
+      "rebuilt_match": true,
+      "sha256": "a4a1f53893f998f5575eedc8756621778312ab798bda0e7bb02af53314ca19d6"
+    },
+    {
+      "file": "essay-selfcheck.js",
+      "rebuilt_match": true,
+      "sha256": "6bb68901eaeff014658885e9d22fc5a02f2ebb2dbb7e8e9290b722526bf7d26d"
+    },
+    {
+      "file": "essay.js",
+      "rebuilt_match": true,
+      "sha256": "edde057198d4fa3828ad9f7f1e12a0e609cae5861eca1979afd911eac0aa1716"
+    },
+    {
+      "file": "icon-180.png",
+      "rebuilt_match": true,
+      "sha256": "40aeeb78c8af497716ab05d83f3288b5fc462c6f49b8ab62da376ce557a96a80"
+    },
+    {
+      "file": "icon-192.png",
+      "rebuilt_match": false,
+      "sha256": "cf4bf45a7461e99c6061a32e15211e33a95af66fce8472b3605f4b42bdbc942f"
+    },
+    {
+      "file": "icon-512.png",
+      "rebuilt_match": true,
+      "sha256": "cd5bd6018f7140af6b42b33845c6ea2658617b103a5c0340c106d8447f7407ed"
+    },
+    {
+      "file": "index.html",
+      "rebuilt_match": true,
+      "sha256": "aa824989996daf2cb75597ef62c5d2012ecd650ddcb9815fbc7ca400602dd494"
+    },
+    {
+      "file": "manifest.webmanifest",
+      "rebuilt_match": true,
+      "sha256": "0052031da6b0fddff6d9ce0b250da378d3fb01decbadd4bd2cfaa7c9f2139636"
+    },
+    {
+      "file": "offline-control.js",
+      "rebuilt_match": true,
+      "sha256": "ec146e88d38a6353847bf876838acdb9f09c49e836ac378ba76313a6620746da"
+    },
+    {
+      "file": "offline.css",
+      "rebuilt_match": true,
+      "sha256": "b2f32be0a2899782070054476d61318bbb26e4f88bd0ca412921e3b8939e285c"
+    },
+    {
+      "file": "question-sources.js",
+      "rebuilt_match": true,
+      "sha256": "3e0f19833aa992873180cab573cd3b056f9d59c811ae56fc01d4e637be00320b"
+    },
+    {
+      "file": "review-core.js",
+      "rebuilt_match": true,
+      "sha256": "40663170c4d5749e710aad865fa414a22a41b1b884aeda0ea7d19831e710e48b"
+    },
+    {
+      "file": "review-simulator.js",
+      "rebuilt_match": true,
+      "sha256": "bdfcfd641a5ad0cb7a549fc21caeaf63a518c79483815d7ce000832958e18aac"
+    },
+    {
+      "file": "source-main-questions.js",
+      "rebuilt_match": true,
+      "sha256": "c34932502e54eabeae277905268bd54826e311f52ede76120bf5478f89c348b4"
+    },
+    {
+      "file": "source-related-questions.js",
+      "rebuilt_match": true,
+      "sha256": "acfec60e521b4dde78596e6468a7936f7061cd6d54f463ee4754fc554d47482b"
+    },
+    {
+      "file": "study30-shuati-links.js",
+      "rebuilt_match": true,
+      "sha256": "61a42d76e3f73428cd149e4786e9a729d382bc929732302d47d9f2f3dfd06839"
+    },
+    {
+      "file": "study30-yamol-links.js",
+      "rebuilt_match": true,
+      "sha256": "61c009eb0bcae45fca295a904354a2e6f9d8ee8966cfad9cfa9bece54364a5a9"
+    },
+    {
+      "file": "style.css",
+      "rebuilt_match": true,
+      "sha256": "68fef3541d9fa122f00d8690220712f2bc13507b64d595143e3f5b752ba17e0f"
+    },
+    {
+      "file": "sw.js",
+      "rebuilt_match": false,
+      "sha256": "8c75224ff2e517bd92850d0cf13a2cf79721b0ccfee233ee1b2cba2f00dc1f57"
+    },
+    {
+      "file": "v254-diagnostics.js",
+      "rebuilt_match": true,
+      "sha256": "33933abd61ba698f52c1798f68255250273fce21e179604d14264d8eef55ea16"
+    },
+    {
+      "file": "weakness-priority.js",
+      "rebuilt_match": true,
+      "sha256": "514d8af95890c7189ebe4744c60884a8e58a56db9631e5f4946f4f1cd415055f"
+    }
+  ],
+  "captured_at": "2026-10-17",
+  "source_branch_commit": "40cf8256674817de7697e5cddcb1fd5617c77edf",
+  "homepage_commit": "0c20885d34979217d0f1169c70cd29fd4faf05dd",
+  "main_commit": "e88ecf5a378db0a70aff98238ecd6da80a4b8ea3",
+  "changes": {
+    "index.html": "Only GitHub navigation links become same-site relative paths.",
+    "sw.js": "Scope cache prefix to its path; refresh version for navigation changes."
+  },
+  "integrated_sha256": {
+    "ai-review-links.js": "3887497a7e57e691ecba8a03414c33bc3833ff4a47538e339a587f1244fc6658",
+    "source-main-questions.js": "c34932502e54eabeae277905268bd54826e311f52ede76120bf5478f89c348b4",
+    "index.html": "115a1a32e125e7215c4336f4d079d434588308f7fff7fb69e53f446352dddf4b",
+    "offline.css": "b2f32be0a2899782070054476d61318bbb26e4f88bd0ca412921e3b8939e285c",
+    "content-cleanup.css": "55cc56d149ed2e90ff89aa35061cfb8e304c18c3ff69871181da2ce57905b6b0",
+    "offline-control.js": "ec146e88d38a6353847bf876838acdb9f09c49e836ac378ba76313a6620746da",
+    "icon-192.png": "cf4bf45a7461e99c6061a32e15211e33a95af66fce8472b3605f4b42bdbc942f",
+    "review-simulator.js": "bdfcfd641a5ad0cb7a549fc21caeaf63a518c79483815d7ce000832958e18aac",
+    "essay-review.js": "7fe28bd7b2fef4ca1b2a8a8d85d6e911dbdf5440550057871793a960af5066eb",
+    "daily-essay-workbench.js": "f1e9eda8191f732eb8c39acf1402e49ca5b12d89830b7d767a1c01c7d20b6996",
+    "icon-180.png": "40aeeb78c8af497716ab05d83f3288b5fc462c6f49b8ab62da376ce557a96a80",
+    "essay-selfcheck.js": "6bb68901eaeff014658885e9d22fc5a02f2ebb2dbb7e8e9290b722526bf7d26d",
+    "essay.js": "edde057198d4fa3828ad9f7f1e12a0e609cae5861eca1979afd911eac0aa1716",
+    "source-related-questions.js": "acfec60e521b4dde78596e6468a7936f7061cd6d54f463ee4754fc554d47482b",
+    "essay-analytics.js": "e563cbf70bf656729271c733defa965aca92bcc235dc2acbc0cdfc538296b03b",
+    "question-sources.js": "3e0f19833aa992873180cab573cd3b056f9d59c811ae56fc01d4e637be00320b",
+    "v254-diagnostics.js": "33933abd61ba698f52c1798f68255250273fce21e179604d14264d8eef55ea16",
+    "backup-import.js": "d05071d36dd4c09f5bc4367ef98c4f1d4ded9a80fdf105f5c01c446552c820cc",
+    "style.css": "68fef3541d9fa122f00d8690220712f2bc13507b64d595143e3f5b752ba17e0f",
+    "weakness-priority.js": "514d8af95890c7189ebe4744c60884a8e58a56db9631e5f4946f4f1cd415055f",
+    "study30-shuati-links.js": "61a42d76e3f73428cd149e4786e9a729d382bc929732302d47d9f2f3dfd06839",
+    "review-core.js": "40663170c4d5749e710aad865fa414a22a41b1b884aeda0ea7d19831e710e48b",
+    "data-health.js": "d6b66b3712dbd6baefaf858819cf69b80a27f477a86fd95d159863664ee89a51",
+    "manifest.webmanifest": "0052031da6b0fddff6d9ce0b250da378d3fb01decbadd4bd2cfaa7c9f2139636",
+    "study30-yamol-links.js": "61c009eb0bcae45fca295a904354a2e6f9d8ee8966cfad9cfa9bece54364a5a9",
+    "content-ui.js": "93fb93d59e3b2952dd4c07c89eb636999debc8af197b4a55218e2e84d9652ba7",
+    "essay-rubric-core.js": "a4a1f53893f998f5575eedc8756621778312ab798bda0e7bb02af53314ca19d6",
+    "app.js": "175c010dfc151fed458ec6479dbbd7f2020ee550fcbc5c4697fdfbd4ecbc875a",
+    "sw.js": "40e49a0b907e3db282d42743613f7756e205dba51705dfba7e8efac533400e99",
+    "icon-512.png": "cd5bd6018f7140af6b42b33845c6ea2658617b103a5c0340c106d8447f7407ed"
+  },
+  "legacy_home_sha256": "cc21e5d4b2c587295b00f2252f425d56dd114e37a4a39b980c5cf1ff4c1cb116"
+}

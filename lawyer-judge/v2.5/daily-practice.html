@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head><script src="../storage-namespace.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#8a3b2e">
+<meta name="description" content="律師、司法官每日模擬題：30分鐘申論練習、一鍵複製AI批改、評語保存。">
+<title>每日模擬題 30 分鐘練習｜律司備考平臺</title>
+<link rel="stylesheet" href="daily-practice.css">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../pwa/icon-180.png">
+<link rel="stylesheet" href="../offline.css">
+<script src="../file-compat.js"></script><script>if(location.protocol==='file:')document.write('<scr'+'ipt src="../file-data/daily.generated.js"></scr'+'ipt>');</script><script src="../daily-simulation/model.js" defer></script>
+<script src="ai-simple-review-v254.js" defer></script>
+<script src="../ai-prompt-customizer.js" defer></script>
+<script src="daily-practice.js" defer></script>
+<script src="../offline.js" defer></script>
+<link rel="stylesheet" href="../assets/study-theme.css"><link rel="stylesheet" href="../assets/site-nav.css"><script src="../assets/site-nav.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="./">律司備考平臺 <span>每日模擬</span></a>
+    <nav aria-label="主要導覽"><a href="./">考古題練習</a><a href="../daily-simulation/">每日題庫與參考資料</a></nav>
+  </div>
+</header>
+<main>
+  <section class="intro">
+    <div>
+      <p class="eyebrow">DAILY SIMULATION</p>
+      <h1>每日模擬題 · 30 分鐘申論練習</h1>
+      <p>先依題意完成作答，再交由 AI 輔助批改。舊題庫瀏覽頁照常保留；兩處共用同一份題庫與本機作答紀錄。</p>
+    </div>
+    <div class="summary"><strong id="count">—</strong><span>目前收錄題目</span><small id="written">—</small></div>
+  </section>
+  <div id="notice" role="status" aria-live="polite" class="notice">正在讀取每日模擬題……</div>
+  <div class="layout">
+    <aside class="question-panel" aria-label="每日模擬題選題">
+      <div class="panel-heading"><h2>選擇練習題</h2><button id="reload" type="button">更新題庫</button></div>
+      <label for="subject">科目</label><select id="subject"><option value="">全部科目</option></select>
+      <label for="search">搜尋考點、日期或題目</label><input id="search" type="search" placeholder="例如：請求權、2026-10-15">
+      <p class="subtle" id="matches">讀取中……</p>
+      <div id="questionList" class="question-list" aria-label="選題清單"></div>
+    </aside>
+    <section class="practice-panel" aria-label="申論作答區">
+      <div id="empty" class="empty">請先從左側選擇一題開始練習。</div>
+      <div id="workspace" hidden>
+        <div class="question-top"><span id="meta"></span><span id="saved" role="status" aria-live="polite"></span></div>
+        <h2 id="questionTitle"></h2>
+        <div id="questionText" class="question-text"></div>
+        <section class="timer-area" aria-label="30分鐘作答計時">
+          <div><span class="timer-caption">申論作答時間</span><strong id="timer" class="timer" aria-live="off">30:00</strong><small id="timerStatus">尚未開始計時；也可自由練習。</small></div>
+          <div class="timer-actions"><button id="startTimer" class="primary" type="button">開始30分鐘</button><button id="resetTimer" class="secondary" type="button">重新計時</button></div>
+        </section>
+        <section class="essay-workspace" aria-labelledby="essayHeading">
+          <div class="essay-workspace-heading"><div><h3 id="essayHeading">我的練習紀錄</h3><p>先用四格草稿整理題意，再撰寫完整答案；作答依題目自動保存。</p></div><span id="draftWordCount" aria-live="polite">草稿 0 字</span></div>
+          <div class="essay-draft-grid" aria-label="國考申論四格草稿">
+            <div class="essay-draft-field"><label for="draftIssue">一、題目爭點</label><textarea id="draftIssue" maxlength="100000" rows="5" placeholder="本題有哪些問題、設問與核心爭點？"></textarea></div>
+            <div class="essay-draft-field"><label for="draftBasis">二、法律或學理依據</label><textarea id="draftBasis" maxlength="100000" rows="5" placeholder="適用法條、法律要件或相關學說與理論。"></textarea></div>
+            <div class="essay-draft-field"><label for="draftAnalysis">三、涵攝與實務應用</label><textarea id="draftAnalysis" maxlength="100000" rows="5" placeholder="將題目事實與規範、學理連結並分析。"></textarea></div>
+            <div class="essay-draft-field"><label for="draftConclusion">四、結論</label><textarea id="draftConclusion" maxlength="100000" rows="5" placeholder="分別回應設問，提出結論。"></textarea></div>
+          </div>
+          <div class="answer-heading"><label for="answer">完整答案</label><span id="wordCount">0 字</span></div>
+          <textarea id="answer" maxlength="100000" spellcheck="false" placeholder="請將四格草稿整理為完整申論答案；原有作答內容將保留於此欄。"></textarea>
+          <div class="essay-workspace-actions"><button id="exportEssay" class="secondary" type="button">匯出本題申論 Markdown</button><span id="exportEssayStatus" class="subtle" role="status" aria-live="polite"></span></div>
+        </section>
+        <div class="answer-actions"><label><input id="review" type="checkbox"> 加入待複習</label><span>作答自動儲存在本機</span></div>
+        <section class="ai-panel" aria-label="AI批改">
+          <h3>AI 申論批改</h3>
+          <p>複製本題與你的作答，貼到 ChatGPT。純法律跨科題合併評分；法律與學科混合題依設問分別評分。</p>
+          <label for="aiReviewMode">批改方式</label>
+<select id="aiReviewMode" aria-label="選擇 AI 批改方式"><option value="full">完整申論批改</option><option value="direction">答題方向批改（四格草稿／大綱）</option></select>
+<p>答題方向模式優先檢查四格草稿，不以完整作文的標準評分。</p>
+    <button id="copyAI" class="primary full" type="button">一鍵複製 AI 批改</button>
+          <p id="copyStatus" class="subtle" role="status" aria-live="polite"></p>
+          <label for="aiFeedback">AI 批改結果（將 ChatGPT 的完整評語貼回保存）</label>
+          <textarea id="aiFeedback" maxlength="80000" rows="8" placeholder="貼上 AI 評語後，將自動保存於本題的原有每日模擬題紀錄。"></textarea>
+          <p id="feedbackStatus" class="subtle" role="status" aria-live="polite"></p>
+        </section>
+        <details class="references">
+          <summary>作答後查看參考爭點與架構</summary>
+          <h3>核心爭點</h3><div id="issues" class="reference-text"></div>
+          <h3>參考答題架構</h3><div id="outline" class="reference-text"></div>
+          <p><a id="browseSource" href="../daily-simulation/">前往原每日模擬題頁面，查看完整四欄表與相關資料 →</a></p>
+          <small>參考內容可能尚待核對；請勿視為官方標準答案。</small>
+        </details>
+      </div>
+    </section>
+  </div>
+  <section class="backup-panel" aria-label="每日模擬題紀錄管理">
+    <div><h2>每日模擬題紀錄</h2><p>本練習區與原每日題頁面共用作答及待複習紀錄；與考古題紀錄分開。清除前請先備份。</p></div>
+    <div class="backup-actions">
+      <button id="export" type="button">匯出備份</button>
+      <button id="import" type="button">匯入備份</button>
+      <button id="clear" class="danger" type="button">清除紀錄</button>
+      <input id="importFile" type="file" accept=".json,application/json" hidden>
+    </div>
+  </section>
+  <footer>AI 批改為學習用途，不等於國家考試實際閱卷。複製、保存及計時不需 API；送往 ChatGPT 批改需要網路，且請勿貼入個人機密資料。</footer>
+</main>
+</body>
+</html>

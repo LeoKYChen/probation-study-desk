@@ -1,0 +1,836 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "url": "active-recall/ai-pack.js"
+    },
+    {
+      "url": "active-recall/bank.js"
+    },
+    {
+      "url": "active-recall/index.html"
+    },
+    {
+      "url": "active-recall/recall.css"
+    },
+    {
+      "url": "active-recall/recall.js"
+    },
+    {
+      "url": "ai-prompt-customizer.js"
+    },
+    {
+      "url": "assets/commentary-themes.js"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-104-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-105-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-106-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-107-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-108-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-109-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-11-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-110-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-111-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-112-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-113-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-114-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-115-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-116-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-117-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-118-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-119-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-120-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-121-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-122-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-123-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-23-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-24-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-25-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-26-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-27-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-28-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-29-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-30-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-31-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-32-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-33-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-34-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-35-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-36-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-37-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-38-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-39-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-40-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-41-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-42-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-43-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-44-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-45-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-46-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-47-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-48-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-49-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-50-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-51-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-52-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-53-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-54-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-55-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-56-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-57-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-58-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-59-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-60-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-61-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-62-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-63-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-64-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-65-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-66-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-67-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-68-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-69-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-70-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-71-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-72-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-73-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-74-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-75-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-76-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-77-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-78-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-79-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-80-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-81-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-82-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-83-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-84-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-85-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-86-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-87-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-88-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-89-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc-90-700-normal.woff2"
+    },
+    {
+      "url": "assets/fonts/noto-serif-tc/noto-serif-tc.css"
+    },
+    {
+      "url": "assets/home.css"
+    },
+    {
+      "url": "assets/home.js"
+    },
+    {
+      "url": "assets/hub.css"
+    },
+    {
+      "url": "assets/official-points-core.js"
+    },
+    {
+      "url": "assets/official.css"
+    },
+    {
+      "url": "assets/schedule.js"
+    },
+    {
+      "url": "assets/site-nav.css"
+    },
+    {
+      "url": "assets/site-nav.js"
+    },
+    {
+      "url": "assets/study-theme.css"
+    },
+    {
+      "url": "assets/weakness.js"
+    },
+    {
+      "url": "backup/app.js"
+    },
+    {
+      "url": "backup/index.html"
+    },
+    {
+      "url": "backup/unified-core.js"
+    },
+    {
+      "url": "common-subjects/catalog/app.js"
+    },
+    {
+      "url": "common-subjects/catalog/data/index.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/report.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/resources.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/shards/JCEE-vocab-questions/cards/cards_data.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/shards/JCEE-vocab-questions/translate/adapt/quiz_items.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/shards/JCEE-vocab-questions/translate/quiz_items.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/shards/discourse-structure/adapt/items.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/shards/discourse-structure/adapt/passages.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/shards/discourse-structure/gsat/items.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/shards/discourse-structure/gsat/passages.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/shards/discourse-structure/zhikao/items.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/shards/discourse-structure/zhikao/passages.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/shards/essay-prompts/data/prompts.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/shards/grammar-cloze-test/adapt/items.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/shards/grammar-cloze-test/adapt/passages.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/shards/grammar-cloze-test/grammar_items.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/shards/mixed-format/items.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/shards/passage-completion/adapt/items.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/shards/passage-completion/adapt/passages.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/shards/passage-completion/gsat/items.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/shards/passage-completion/gsat/passages.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/shards/passage-completion/zhikao/items.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/shards/passage-completion/zhikao/passages.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/shards/reading-comprehension/gsat/items.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/shards/reading-comprehension/gsat/passages.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/shards/reading-comprehension/zhikao/items.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/shards/reading-comprehension/zhikao/passages.json"
+    },
+    {
+      "url": "common-subjects/catalog/data/shards/zhikao-cloze-test/zhikao_grammar_items.json"
+    },
+    {
+      "url": "common-subjects/catalog/index.html"
+    },
+    {
+      "url": "common-subjects/catalog/style.css"
+    },
+    {
+      "url": "common-subjects/daily/app.js"
+    },
+    {
+      "url": "common-subjects/daily/completion.json"
+    },
+    {
+      "url": "common-subjects/daily/engine.js"
+    },
+    {
+      "url": "common-subjects/daily/grammar-1.json"
+    },
+    {
+      "url": "common-subjects/daily/grammar-2.json"
+    },
+    {
+      "url": "common-subjects/daily/grammar-3.json"
+    },
+    {
+      "url": "common-subjects/daily/index.html"
+    },
+    {
+      "url": "common-subjects/daily/reading.json"
+    },
+    {
+      "url": "common-subjects/daily/style.css"
+    },
+    {
+      "url": "common-subjects/daily/vocab.json"
+    },
+    {
+      "url": "common-subjects/english-assistant/app.js"
+    },
+    {
+      "url": "common-subjects/english-assistant/engine.js"
+    },
+    {
+      "url": "common-subjects/english-assistant/index.html"
+    },
+    {
+      "url": "common-subjects/english-assistant/vocab.js"
+    },
+    {
+      "url": "common-subjects/english-v02.js"
+    },
+    {
+      "url": "common-subjects/essay-questions-v1.js"
+    },
+    {
+      "url": "common-subjects/essay-questions-v2.js"
+    },
+    {
+      "url": "common-subjects/essay-questions-v3.js"
+    },
+    {
+      "url": "common-subjects/index.html"
+    },
+    {
+      "url": "common-subjects/staresto-integration.js"
+    },
+    {
+      "url": "common-subjects/staresto-resources.js"
+    },
+    {
+      "url": "common-subjects/staresto.css"
+    },
+    {
+      "url": "daily-simulation/app.js"
+    },
+    {
+      "url": "daily-simulation/index.html"
+    },
+    {
+      "url": "daily-simulation/model.js"
+    },
+    {
+      "url": "daily-simulation/practice.css"
+    },
+    {
+      "url": "daily-simulation/questions.json"
+    },
+    {
+      "url": "daily-simulation/reading.css"
+    },
+    {
+      "url": "daily-simulation/review-policy.js"
+    },
+    {
+      "url": "dual-ai-bridge.js"
+    },
+    {
+      "url": "file-compat.js"
+    },
+    {
+      "url": "index.html"
+    },
+    {
+      "url": "lectures/app.js"
+    },
+    {
+      "url": "lectures/calendar.css"
+    },
+    {
+      "url": "lectures/core.js"
+    },
+    {
+      "url": "lectures/index.html"
+    },
+    {
+      "url": "lectures/style.css"
+    },
+    {
+      "url": "manifest.webmanifest"
+    },
+    {
+      "url": "mcq/bank.js"
+    },
+    {
+      "url": "mcq/index.html"
+    },
+    {
+      "url": "mcq/mcq.css"
+    },
+    {
+      "url": "mcq/mcq.js"
+    },
+    {
+      "url": "official/index.html"
+    },
+    {
+      "url": "official/official.js"
+    },
+    {
+      "url": "offline.css"
+    },
+    {
+      "url": "offline.js"
+    },
+    {
+      "url": "offline/index.html"
+    },
+    {
+      "url": "outline/index.html"
+    },
+    {
+      "url": "outline/outline.js"
+    },
+    {
+      "url": "practice/index.html"
+    },
+    {
+      "url": "print/app.js"
+    },
+    {
+      "url": "print/index.html"
+    },
+    {
+      "url": "print/print-model.js"
+    },
+    {
+      "url": "print/style.css"
+    },
+    {
+      "url": "professional/ai-review-links-direction.js"
+    },
+    {
+      "url": "professional/ai-review-links.js"
+    },
+    {
+      "url": "professional/app.js"
+    },
+    {
+      "url": "professional/backup-import.js"
+    },
+    {
+      "url": "professional/content-cleanup.css"
+    },
+    {
+      "url": "professional/content-ui.js"
+    },
+    {
+      "url": "professional/daily-essay-workbench.js"
+    },
+    {
+      "url": "professional/data-health.js"
+    },
+    {
+      "url": "professional/essay-analytics.js"
+    },
+    {
+      "url": "professional/essay-review.js"
+    },
+    {
+      "url": "professional/essay-rubric-core.js"
+    },
+    {
+      "url": "professional/essay-selfcheck.js"
+    },
+    {
+      "url": "professional/essay.js"
+    },
+    {
+      "url": "professional/icon-180.png"
+    },
+    {
+      "url": "professional/icon-192.png"
+    },
+    {
+      "url": "professional/icon-512.png"
+    },
+    {
+      "url": "professional/index.html"
+    },
+    {
+      "url": "professional/layout-followup.css"
+    },
+    {
+      "url": "professional/layout-panels-v2.js"
+    },
+    {
+      "url": "professional/layout-panels.js"
+    },
+    {
+      "url": "professional/layout-review.css"
+    },
+    {
+      "url": "professional/learning-charts.js"
+    },
+    {
+      "url": "professional/manifest.webmanifest"
+    },
+    {
+      "url": "professional/offline-control.js"
+    },
+    {
+      "url": "professional/offline.css"
+    },
+    {
+      "url": "professional/practice-context.css"
+    },
+    {
+      "url": "professional/practice-diagnostics.js"
+    },
+    {
+      "url": "professional/practice-review.js"
+    },
+    {
+      "url": "professional/practice-session.js"
+    },
+    {
+      "url": "professional/progress-calendar.js"
+    },
+    {
+      "url": "professional/question-sources.js"
+    },
+    {
+      "url": "professional/review-core.js"
+    },
+    {
+      "url": "professional/review-preview.js"
+    },
+    {
+      "url": "professional/review-simulator.js"
+    },
+    {
+      "url": "professional/source-main-questions.js"
+    },
+    {
+      "url": "professional/source-related-questions.js"
+    },
+    {
+      "url": "professional/style.css"
+    },
+    {
+      "url": "professional/sw.js"
+    },
+    {
+      "url": "professional/v254-diagnostics.js"
+    },
+    {
+      "url": "professional/weakness-priority.js"
+    },
+    {
+      "url": "pwa/icon-180.png"
+    },
+    {
+      "url": "pwa/icon-192.png"
+    },
+    {
+      "url": "pwa/icon-512.png"
+    },
+    {
+      "url": "review/index.html"
+    },
+    {
+      "url": "review/review.js"
+    },
+    {
+      "url": "shared-ui.css"
+    },
+    {
+      "url": "storage-namespace.js"
+    },
+    {
+      "url": "v2.5/README.md"
+    },
+    {
+      "url": "v2.5/ai-simple-review-v254.js"
+    },
+    {
+      "url": "v2.5/all-topic-diagnostics.js"
+    },
+    {
+      "url": "v2.5/all-topics.js"
+    },
+    {
+      "url": "v2.5/answer-calibrations.js"
+    },
+    {
+      "url": "v2.5/backup-core.js"
+    },
+    {
+      "url": "v2.5/backup-io-direct.js"
+    },
+    {
+      "url": "v2.5/backup-io.js"
+    },
+    {
+      "url": "v2.5/clear-records.js"
+    },
+    {
+      "url": "v2.5/content-standards.js"
+    },
+    {
+      "url": "v2.5/daily-practice.css"
+    },
+    {
+      "url": "v2.5/daily-practice.html"
+    },
+    {
+      "url": "v2.5/daily-practice.js"
+    },
+    {
+      "url": "v2.5/essay-workspace25.js"
+    },
+    {
+      "url": "v2.5/extension25.css"
+    },
+    {
+      "url": "v2.5/full-pilots.js"
+    },
+    {
+      "url": "v2.5/grade-reference.js"
+    },
+    {
+      "url": "v2.5/index.html"
+    },
+    {
+      "url": "v2.5/legal-pilots.js"
+    },
+    {
+      "url": "v2.5/note-references.js"
+    },
+    {
+      "url": "v2.5/official-points-ui.js"
+    },
+    {
+      "url": "v2.5/official-points.js"
+    },
+    {
+      "url": "v2.5/pending-pilots-data.js"
+    },
+    {
+      "url": "v2.5/pending-pilots.js"
+    },
+    {
+      "url": "v2.5/print-study.js"
+    },
+    {
+      "url": "v2.5/questions.js"
+    },
+    {
+      "url": "v2.5/related-questions.js"
+    },
+    {
+      "url": "v2.5/review25.js"
+    },
+    {
+      "url": "v2.5/rubrics.js"
+    },
+    {
+      "url": "v2.5/study-map-data.js"
+    },
+    {
+      "url": "v2.5/study-map.css"
+    },
+    {
+      "url": "v2.5/study-map.js"
+    },
+    {
+      "url": "v2.5/topic-practice.js"
+    },
+    {
+      "url": "v2.5/topic-rubrics.js"
+    },
+    {
+      "url": "v2.5/yamol-ui.js"
+    }
+  ]
+}

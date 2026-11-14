@@ -1,0 +1,34 @@
+name: Dual AI answer handoff
+on:
+  push:
+    paths:
+      - 'dual-ai-bridge.js'
+      - 'daily-simulation/app.js'
+      - 'daily-simulation/index.html'
+      - 'study-desk/app.js'
+      - 'study-desk/index.html'
+      - 'verification/dual-ai-handoff.cjs'
+      - '.github/workflows/dual-ai-handoff.yml'
+  pull_request:
+    paths:
+      - 'dual-ai-bridge.js'
+      - 'daily-simulation/app.js'
+      - 'daily-simulation/index.html'
+      - 'study-desk/app.js'
+      - 'study-desk/index.html'
+      - 'verification/dual-ai-handoff.cjs'
+      - '.github/workflows/dual-ai-handoff.yml'
+permissions:
+  contents: read
+jobs:
+  handoff-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: node --check dual-ai-bridge.js
+      - run: node --check daily-simulation/app.js
+      - run: node --check study-desk/app.js
+      - run: node verification/dual-ai-handoff.cjs

@@ -17,6 +17,7 @@ const NODE=[
   'verification/law-scoring-topic-recall.cjs',
   'verification/law-scoring-commute.cjs',
   'verification/theory-sources.cjs',
+  'verification/lawyer-judge-isolation.cjs',
   'lectures/test.cjs',
   'lectures/test-learning.cjs',
   'backup/test.cjs',

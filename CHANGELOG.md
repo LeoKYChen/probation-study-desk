@@ -4,6 +4,19 @@
 
 版本規範、驗收與發布方式參見 [Release 維護指引](docs/RELEASE_PROCESS.md)。子模組內的 `v2.5`、`v2.5.4` 等名稱，不直接代表整個網站的 Release 版本。
 
+## 2026-11-14 — 律師・司法官備考開關（分支 `claude/lawyer-judge-toggle`，待合併）
+
+- 申論評分參考頂端、今日清單下方新增「律師・司法官備考」開關，**預設關閉**。開啟後出現四個入口（律司備考平臺首頁、第一試選擇題、申論練習、複習）；關閉時畫面只多這一列。開關只記住開或關（`lawScoring.lawyerJudge.enabled`），不讀寫任何作答紀錄，也沒有納入備份。
+- 律司備考平臺整站放進 `lawyer-judge/`，保留自己的版面、導覽、題庫與離線下載。來源是 2026-11-10 交付的 `lawyer-judge-study-desk.zip`，內容未改寫；`.github/` 與 `.nojekyll` 未帶入。
+- **兩邊紀錄分開**：兩站原本有許多同名的紀錄鍵（例如 `probation-study-desk-v24`、`psd-mcq-v1`），放在同一個網址下會互相覆蓋。新增 `lawyer-judge/storage-namespace.js`，律司每一頁第一支載入，讓律司的讀寫都落在 `lj::` 開頭的鍵，跨分頁的 storage 事件也只轉交自己的鍵。備份檔格式不變，舊站匯出的備份可直接在 `lawyer-judge/backup/` 匯入。
+- 另外改了兩處避免互相干擾：律司同步用的 IndexedDB 改名為 `lsdesk-study-desk-sync-v1`；`lawyer-judge/study-desk/sw.js` 清理舊快取時原本會刪到本站書桌的快取（前綴 `psd-study-desk-shell-`），改成只清自己的。
+- 本站的 `sw.js` 與 `offline-manifest.json` 沒有更動，離線包大小不變；律司的離線資料要進律司頁面另外下載。
+- 律司導覽列多一個「觀護人」連結回到申論評分參考（只在放於 `lawyer-judge/` 之下時出現）。
+- 部署：`scripts/build-cloudflare-main-mirror.py` 的 `SITE_DIRS` 加入 `lawyer-judge`，並排除其中的 `tests`、`docs`、`scripts`、`verification`、`data`、`file-data`。上線檔案由 319 個增為 627 個。
+- 檢查：`verification/lawyer-judge-isolation.cjs`（已納入 `npm test`）；瀏覽器檢查 `verification/lawyer-judge-switch-browser.cjs`（需 Playwright，手動執行）。律司自己的測試在 `lawyer-judge/` 內執行 `node tests/run-all.cjs`，結果與搬入前相同：通過 37、失敗 2、略過 2（失敗的兩項搬入前就失敗：每日模擬端對端、書桌瀏覽器流程缺套件）。
+- 限制：兩邊紀錄各自獨立，律司的刑法、刑訴錯題不會出現在本站的弱點地圖。律司的「雲端同步」若與本站設定同一個遠端帳號，遠端資料仍可能混在一起（本站該功能目前暫停）。
+- 尚未驗證：WebKit／實體手機、已安裝離線版升級後的行為、Cloudflare 正式站。
+
 ## 2026-11-14 — 弱點地圖：限時表現（分支 `feat/weakness-timing`，待合併）
 
 - 重點整理頁每科上方「優先複習」區塊內新增「限時表現」，六科都適用：這一科的限時練習有幾次在時間內寫完（並列出超時的幾次平均超過幾分鐘）、拆題核對列到幾步。同一項至少 3 筆才列出；沒有資料時整塊不顯示。

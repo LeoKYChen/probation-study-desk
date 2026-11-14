@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head><script src="../storage-namespace.js"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>複習｜律司備考平臺</title><meta name="description" content="依你自己的自評與作答紀錄安排複習：到期題目、各科掌握度與較弱的考點。"><meta name="theme-color" content="#f6f2ea"><link rel="manifest" href="../manifest.webmanifest"><link rel="apple-touch-icon" href="../pwa/icon-180.png"><link rel="stylesheet" href="../shared-ui.css"><link rel="stylesheet" href="../assets/study-theme.css"><link rel="stylesheet" href="../assets/site-nav.css"><link rel="stylesheet" href="../assets/hub.css"><link rel="stylesheet" href="../assets/official.css"><script src="../professional/source-main-questions.js" defer></script><script src="../professional/review-core.js" defer></script><script src="../mcq/bank.js" defer></script><script src="../v2.5/official-points.js" defer></script><script src="../assets/official-points-core.js" defer></script><script src="../assets/weakness.js" defer></script><script src="review.js" defer></script><script src="../assets/site-nav.js" defer></script><script src="../file-compat.js" defer></script></head>
+<body class="hub-page">
+<main class="hub" id="main">
+<div class="hub-head"><span class="page-eyebrow">REVIEW · 依自評排程</span><h1>弱點，不必全部記住。</h1><p>每次自評決定下次出現的時間：需複習 1 天、不完整 3 天、掌握 7 天以上。選擇題答錯後隔天起依 1、3、7、14 天提醒。</p></div>
+<div class="two-col">
+<div>
+<h2 class="sec" style="margin-top:0">優先複習・弱點地圖</h2>
+<ol class="priority" id="priority-list" aria-label="優先複習的科目"></ol>
+<p class="legend" id="priority-note" style="display:block">排序＝題庫題數占比 ×（1 − 掌握度）。掌握度取選擇題正確率、評分要點命中率、申論自評的平均；選擇題作答未滿 10 次不列入。這是依你自己的紀錄算的，不是考試預測，權重也不是官方配分。</p>
+<p id="untouched" class="hub-note" style="margin-top:8px" hidden></p>
+<p class="actions"><a class="btn-link" href="../outline/">爭點骨架回想</a><a class="text-link" href="../official/">失分清單與閱卷委員的話</a></p>
+<h2 class="sec">各科掌握度・申論自評</h2>
+<ul class="mastery" id="essay-mastery" aria-label="申論各科自評結果"></ul>
+<p class="legend" id="essay-legend" hidden><span><i style="background:var(--ok)"></i>掌握</span><span><i style="background:var(--warn)"></i>不完整</span><span><i style="background:var(--accent)"></i>需複習</span></p>
+<h2 class="sec">各科表現・第一試選擇題</h2>
+<ul class="mastery" id="mcq-mastery" aria-label="選擇題各科正確率"></ul>
+<p class="legend" id="mcq-legend" hidden><span><i style="background:var(--ok)"></i>正確率 60% 以上</span><span><i style="background:var(--accent)"></i>低於 60%（作答 10 次以上）</span></p>
+<h2 class="sec">最弱的幾個考點</h2>
+<ul class="queue" id="weak-list" aria-label="較弱的申論考點"></ul>
+</div>
+<aside style="display:flex;flex-direction:column;gap:18px" aria-label="今日到期">
+<div class="dark-panel"><span class="label">今日到期</span><div class="big"><b id="due-total">0</b><span>題</span></div><span id="due-detail" style="font-size:14px;color:#d9d1c3"></span><a class="go" id="go-review" href="../professional/">開始複習</a></div>
+<ul class="queue" id="due-list" aria-label="到期清單"></ul>
+<ul class="rows"><li><span class="k">申論已自評題數</span><b class="v" id="essay-rated">0</b></li><li><span class="k">選擇題錯題本</span><b class="v" id="mcq-wrong">0</b></li><li><span class="k">選擇題做過的題</span><b class="v" id="mcq-done">0</b></li></ul>
+<p class="hub-note" style="margin:0">分析只依你自己的自評與作答紀錄，不代表考試預測。紀錄在這個瀏覽器；跨裝置請用<a href="../backup/">備份中心</a>。</p>
+</aside>
+</div>
+</main>
+</body>
+</html>

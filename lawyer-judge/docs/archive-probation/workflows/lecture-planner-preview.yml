@@ -1,0 +1,59 @@
+name: Lecture planner isolated Cloudflare preview
+on:
+  push:
+    branches:
+      - feature/lecture-planner-20261018
+  pull_request:
+    branches: [main]
+    paths:
+      - 'lectures/**'
+      - 'backup/**'
+      - 'index.html'
+      - 'scripts/build-cloudflare-main-mirror.py'
+      - '.github/workflows/lecture-planner-preview.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+concurrency:
+  group: lecture-planner-preview
+  cancel-in-progress: true
+
+jobs:
+  validate-and-preview:
+    if: github.repository == 'LeoKYChen/probation-study-desk' && (github.event_name != 'pull_request' || (github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'feature/lecture-planner-20261018'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - name: Validate course scheduler and backup
+        run: |
+          node lectures/test.cjs
+          node backup/test.cjs
+          node --check lectures/core.js
+          node --check lectures/app.js
+      - name: Install mobile-browser test engine
+        run: |
+          npm install --prefix /tmp/lecture-browser --no-save playwright@1.62.1
+          /tmp/lecture-browser/node_modules/.bin/playwright install --with-deps chromium webkit
+      - name: Verify phone layout and calendar interactions
+        env:
+          NODE_PATH: /tmp/lecture-browser/node_modules
+        run: |
+          node lectures/test-browser.cjs
+          node lectures/test-ui.cjs
+      - name: Build isolated identical static preview
+        run: |
+          python3 scripts/build-cloudflare-main-mirror.py
+          test -s cloudflare-main-mirror-dist/lectures/index.html
+          test -s cloudflare-main-mirror-dist/lectures/core.js
+          test -s cloudflare-main-mirror-dist/lectures/app.js
+      - name: Deploy separate Cloudflare preview branch only
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy cloudflare-main-mirror-dist --project-name=probation-study30-test --branch=lecture-planner-preview
+      - name: Check preview URL
+        run: |
+          curl --fail --silent --show-error --location --retry 4 --retry-delay 4 --max-time 20 https://lecture-planner-preview.probation-study30-test.pages.dev/lectures/ | grep -q '函授學習管理'
