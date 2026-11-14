@@ -186,7 +186,7 @@ const store=p=>p.evaluate(k=>JSON.parse(localStorage.getItem(k)||'null'),KEY);
     const inBook=await p.evaluate(()=>[...document.querySelectorAll('#wrong-list .qtext')].map(e=>e.textContent));
     assert(inBook.includes(w1.body)&&inBook.includes(u1.body),'wrong and guessed questions are in the book');
     assert(!inBook.includes(w2.body),'the outdated question is hidden from the book');
-    ok('錯因存檔；標為已過時的題目不進錯題本');
+    ok('錯因存檔；標示已修法的題目不進錯題本');
     // 已過時的題不再被抽到
     const pooled=await p.evaluate(({k,id})=>{const s=JSON.parse(localStorage.getItem(k));return !!s.records[id].x;},{k:KEY,id:w2.id});assert(pooled);
     await p.click('#tab-stats');

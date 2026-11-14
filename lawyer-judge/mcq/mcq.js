@@ -329,7 +329,7 @@
       const r = store.records[q.id]; if (!r) return;
       if (r.x) delete r.x; else r.x = 1;
       persist(); updateBadge(); after();
-    }, text: store.records[q.id]?.x ? '取消「已過時」標記' : '標為已過時（修法後答案不同，不再出題）'});
+    }, text: store.records[q.id]?.x ? '取消已修法標示' : '標示已修法', title: '修法後答案不同的題目，標示後不再出題'});
   }
   function feedbackBox(q, letter, unsure) {
     const ok = isCorrect(q, letter);
@@ -419,7 +419,7 @@
         if (arts.length) kids.push(h('p', {class: 'small muted', text: '題目提到的條文：' + arts.join('、')}));
         kids.push(chapterBox(q));
         const next = h('button', {type: 'button', class: 'primary', id: 'next-question', onclick: nextPractice, text: a.idx + 1 < a.ids.length ? '下一題' : '看結果'});
-        // 通勤練習時只有「下一題」固定在畫面下方；「標為已過時」留在題目最後，不佔住畫面。
+        // 通勤練習時只有「下一題」固定在畫面下方；「標示已修法」留在題目最後，不佔住畫面。
         if (a.commute) { kids.push(h('div', {class: 'actions plain'}, outdatedButton(q, renderQuestion))); kids.push(h('div', {class: 'actions'}, next)); }
         else kids.push(h('div', {class: 'actions'}, next, outdatedButton(q, renderQuestion)));
       } else {
@@ -624,7 +624,7 @@
     // 已過時
     const old = Object.entries(rec).filter(([id, r]) => r.x && byId.has(id)).map(([id]) => byId.get(id)).sort(bySeq);
     $('stats-outdated').replaceChildren(old.length ? h('ul', {class: 'outdated-list'}, old.map(q => h('li', {}, h('span', {text: `${q.subject}・${q.year} 年${q.paper || ''}第 ${q.no} 題`}),
-      h('button', {type: 'button', class: 'secondary', onclick: () => { delete store.records[q.id].x; persist(); renderWrong(); renderStats(); updateBadge(); updatePoolInfo(); }, text: '取消標記'})))) : h('p', {class: 'muted', text: '目前沒有標為已過時的題目。'}));
+      h('button', {type: 'button', class: 'secondary', onclick: () => { delete store.records[q.id].x; persist(); renderWrong(); renderStats(); updateBadge(); updatePoolInfo(); }, text: '取消標記'})))) : h('p', {class: 'muted', text: '目前沒有標示已修法的題目。'}));
   }
 
   /* ---------- 其他 ---------- */
