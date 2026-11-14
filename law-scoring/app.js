@@ -30,6 +30,7 @@ const OUTLINE_SEC=180, MIN_PER_POINT=1.2;
 // 作答歷程：每題最多留 HIST_MAX 筆；二刷提醒依最近一次分數（低於 60 分隔 7 天，60 到 79 分隔 14 天，80 分以上不提醒）。
 const HIST_MAX=20, REDO_RULES=[[60,7],[80,14]];
 window.LawScoring = {score:(q,s)=>score(q,s), COLS, weights:q=>W(q), design:designOf, designFile, blocksText, timedLimit:q=>timedLimit(q), actionSteps:d=>actionSteps(d),
+  todayPlan:env=>todayPlan(env),
   attempts:s=>attempts(s), redoDue:s=>redoDue(s), snapshot:(q,s,d,now)=>snapshot(q,s,d,now), saveAttempt:(q,s,d,now,final)=>saveAttempt(q,s,d,now,final), canSave:s=>canSave(s), HIST_MAX};
 if (typeof document==='undefined' || !document.getElementById('answer')) return;
 let store = {};
@@ -212,6 +213,34 @@ function renderTimed(q,s,d){
     ul.appendChild(li); });
   count();
 }
+// ── 今日清單：把回想卡到期數、該二刷的題目與一題建議新題放在一起。純計算，不寫入任何紀錄。
+// env：{store, cardStore, today, data, summaries, R, TR, TH, WK, score}
+function todayPlan(env){
+  const {store, today, data, summaries:SM, R, TR, TH, WK}=env, byId=new Map(data.questions.map(q=>[q.id,q]));
+  const out={miss:null, topic:null, theory:null, redo:[], next:null};
+  if(R){ try { out.miss=R.dueCards(R.syncCards(store, env.cardStore||{}, today), today, null).length; } catch(e){ out.miss=null; } }
+  const ready=SM&&SM.list.every(m=>SM.items[m.slug]);
+  let weak=null;
+  if(ready&&WK){ weak={}; for(const m of SM.list){ try { weak[m.slug]=WK.compute(SM.items[m.slug], store, byId, env.score); } catch(e){ weak=null; break; } } }
+  const deck=(state,cards,bonus)=>{ const q=TR.queue(state, TR.orderNew(cards, SM.items, weak), today, bonus); return {due:q.due.length, fresh:q.fresh.length}; };
+  if(ready&&TR){ try { out.topic=deck(env.topicState, SM.list.flatMap(m=>TR.cardsOf(SM.items[m.slug])), 0); } catch(e){ out.topic=null; } }
+  if(ready&&TR&&TH){ try { out.theory=deck(env.theoryState, TH.SUBJECTS.flatMap(x=>TH.cardsOf(SM.items[x])), TH.NEW_PER_DAY-TR.NEW_PER_DAY); } catch(e){ out.theory=null; } }
+  for(const q of data.questions){ const s=store[q.id], due=redoDue(s); if(due&&due<=today){ const list=attempts(s); out.redo.push({id:q.id, label:q.exam+'／'+q.subject+'・第 '+q.no+' 題', title:q.title, score:list[list.length-1].score, due}); } }
+  out.redo.sort((a,b)=>a.due.localeCompare(b.due)||a.score-b.score);
+  // 建議新題：弱點地圖排到的章優先，其次是常考但還沒練夠的章；章內觀護人的題優先；已有作答歷程或已自評的不選。
+  if(weak){
+    const cand=[];
+    for(const m of SM.list){ const w=weak[m.slug], d=SM.items[m.slug];
+      w.ranked.forEach(c=>cand.push({rank:0, key:c.priority, c, d, m})); w.untried.forEach(c=>cand.push({rank:1, key:c.weight, c, d, m})); }
+    cand.sort((a,b)=>a.rank-b.rank||b.key-a.key);
+    for(const x of cand){
+      const toks=x.c.todo.slice().sort((a,b)=>(a.startsWith('觀護')?0:1)-(b.startsWith('觀護')?0:1));
+      const tok=toks.find(t=>{ const id=x.d.links[t]; return byId.has(id)&&!attempts(store[id]).length; });
+      if(tok){ const q=byId.get(x.d.links[tok]); out.next={id:q.id, token:tok, title:q.title, subject:x.m.title, chapter:x.c.title, why:x.rank===0?'弱點地圖排到的章':'常考但還沒練夠的章'}; break; }
+    }
+  }
+  return out;
+}
 // ── 作答歷程與二刷 ──
 function ymd(ms){ const d=new Date(ms), p=n=>String(n).padStart(2,'0'); return d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate()); }
 function addDays(day,n){ const [y,m,d]=day.split('-').map(Number); return ymd(new Date(y,m-1,d+n).getTime()); }
@@ -378,6 +407,44 @@ function copy(text, ok){
 }
 
 window.addEventListener('hashchange',()=>{ const q=fromHash(); if(q&&q!==current){ current=q; render(); } });
+// 今日清單的畫面：打開時才載入回想卡與重點整理的程式（都已在離線清單內），避免拖慢作答頁。
+(function(){
+  const box=$('today'); if(!box) return;
+  const OPEN_KEY='lawScoring.today.open';
+  const loadOne=src=>new Promise((res,rej)=>{ if(document.querySelector('script[data-today="'+src+'"]')) return res(); const sc=document.createElement('script'); sc.src=src; sc.dataset.today=src; sc.onload=()=>res(); sc.onerror=()=>rej(new Error(src)); document.head.appendChild(sc); });
+  const loadAll=async list=>{ for(const x of list) await loadOne(x); };
+  const readJ=k=>{ try { return JSON.parse(localStorage.getItem(k))||{}; } catch(e){ return {}; } };
+  const li=(text,href,linkText)=>{ const x=el('li'); x.appendChild(el('span',null,text)); if(href){ const a=el('a',{href},linkText); x.appendChild(a); } return x; };
+  let busy=false;
+  async function refresh(){
+    if(busy||!box.open) return; busy=true;
+    const status=$('today-status'), ul=$('today-list'); status.textContent='計算中…';
+    try {
+      await loadAll(['review.js','weakness.js','summaries/index.js']);
+      const SM=window.LawScoringSummaries; await loadAll(SM.list.map(m=>'summaries/'+m.file)); await loadAll(['topic-recall.js','theory-cards.js']);
+      const R=window.LawScoringReview, TR=window.LawScoringTopicRecall, TH=window.LawScoringTheoryCards, WK=window.LawScoringWeakness;
+      const plan=todayPlan({store, cardStore:readJ(R.CARD_KEY), today:ymd(Date.now()), data:DATA, summaries:SM, R, TR, TH, WK, score:(q,s)=>score(q,s), topicState:TR.readState(), theoryState:TH.readState()});
+      ul.textContent='';
+      const cards=(name,n,href,txt)=>ul.appendChild(li(name+'：'+n, n===null?null:href, txt));
+      cards('失分回想', plan.miss===null?'讀不到':plan.miss?'到期 '+plan.miss+' 張':'今天沒有到期的卡', 'review.html', '去複習 →');
+      const deckText=d=>d===null?'讀不到':(d.due||d.fresh)?'到期 '+d.due+' 張、新卡 '+d.fresh+' 張':'今天做完了';
+      cards('考點回想', deckText(plan.topic), 'review.html#topics', '去複習 →');
+      cards('要點卡', deckText(plan.theory), 'commute.html', '到通勤模式 →');
+      if(plan.redo.length){ plan.redo.slice(0,5).forEach(r=>ul.appendChild(li('二刷：'+r.label+'（上次 '+r.score+' 分）', '#'+encodeURIComponent(r.id), '重寫這一題 →'))); if(plan.redo.length>5) ul.appendChild(li('另有 '+(plan.redo.length-5)+' 題到了二刷日。')); }
+      else ul.appendChild(li('二刷：今天沒有到期的題目。'));
+      if(plan.next) ul.appendChild(li('建議新題：'+plan.next.subject+'・'+plan.next.chapter+'（'+plan.next.why+'）'+plan.next.token, '#'+encodeURIComponent(plan.next.id), '練這一題 →'));
+      else ul.appendChild(li('建議新題：目前沒有可推薦的題目。'));
+      status.textContent='只讀取紀錄，不會更動。二刷名單來自你存過的作答歷程。';
+    } catch(e){ ul.textContent=''; status.textContent='今日清單載入失敗，請確認網路後重新整理。'; }
+    busy=false;
+  }
+  box.addEventListener('toggle',()=>{ try { localStorage.setItem(OPEN_KEY, box.open?'1':'0'); } catch(e){} refresh(); });
+  $('today-list').addEventListener('click',e=>{ const a=e.target.closest('a'); if(a&&a.getAttribute('href').startsWith('#')) setTimeout(()=>$('q-heading').scrollIntoView({block:'start'}),0); });
+  document.addEventListener('visibilitychange',()=>{ if(!document.hidden) refresh(); });
+  let open=false; try { open=localStorage.getItem(OPEN_KEY)==='1'; } catch(e){}
+  if(open) box.open=true;
+})();
+
 $('exam-select').addEventListener('change',e=>{ current=inExam(e.target.value)[0]; persist(); render(); });
 $('subject-select').addEventListener('change',e=>{ current=inExam(current.examType).find(q=>q.subject===e.target.value); persist(); render(); });
 $('question-select').addEventListener('change',e=>{ current=DATA.questions.find(q=>q.id===e.target.value); persist(); render(); window.scrollTo({top:0}); });
