@@ -22,6 +22,9 @@ const overflow=async(p,label)=>{const r=await p.evaluate(()=>[document.documentE
     const answerOf=id=>bank.find(q=>q.id===id).answer,wrongOf=id=>['A','B','C','D'].find(L=>!bank.find(q=>q.id===id).acceptedAnswers.includes(L));
     const pick=async L=>{await p.locator(`#question-card input[type=radio][value="${L}"]`).check();await p.click('#submit-answer');};
 
+    // 四個分頁等寬等高（手機 2×2）
+    const tabs=[];for(const tab of await p.locator('.tabs [role=tab]').all())tabs.push(await tab.boundingBox());
+    assert.equal(tabs.length,4);for(const b of tabs)assert(Math.abs(b.width-tabs[0].width)<1&&Math.abs(b.height-tabs[0].height)<1&&b.height>=44,'tabs are the same size: '+JSON.stringify(tabs));
     // 通勤練習：預設刑法＋刑訴，20 題，全部來自這兩科
     assert.equal(await p.locator('#commute-subject').inputValue(),'criminal');
     assert.match(await p.textContent('#commute-info'),/到期該複習的錯題 0 題、還沒做過的 \d+ 題/);
@@ -41,6 +44,7 @@ const overflow=async(p,label)=>{const r=await p.evaluate(()=>[document.documentE
     assert.equal(sticky,'sticky','next button stays reachable while scrolling');
     assert.equal(await p.evaluate(()=>document.getElementById('next-question').parentElement.children.length),1,'only the next button is pinned');
     assert.equal(await p.locator('#question-card .actions.plain button').count(),1,'mark-outdated stays in the page flow');
+    assert.equal(await p.locator('#question-card .actions.plain button').textContent(),'標示已修法');
     const nb=await p.locator('#next-question').boundingBox();assert(nb.height>=44&&nb.y+nb.height<=844-56,'next button is above the bottom navigation');
     await overflow(p,'commute session 390');
     await p.click('#next-question');

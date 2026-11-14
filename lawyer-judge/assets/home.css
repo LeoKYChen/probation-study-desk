@@ -31,7 +31,12 @@ body.home-page{margin:0}
 .countdown-settings[open] summary{margin-bottom:12px}
 .countdown-card #countdown-form{background:var(--surface);color:var(--ink);padding:16px;border:1px solid var(--line);border-radius:3px}
 .countdown-card .field{display:flex;flex-direction:column;gap:4px;margin-bottom:12px;font-size:14px;font-weight:600}
-.countdown-card .field input{min-height:44px;padding:8px 12px;font-size:15px;width:100%}
+.countdown-card #countdown-form{max-width:100%;min-width:0}
+.countdown-card .field{min-width:0}
+.countdown-card .field input{min-height:44px;padding:8px 12px;font-size:15px;width:100%;max-width:100%;min-width:0;box-sizing:border-box;display:block}
+/* iOS Safari 的日期欄位有自己的最小寬度，會撐出卡片；改成一般欄位的外觀 */
+.countdown-card .field input[type=date]{-webkit-appearance:none;appearance:none;line-height:1.5}
+.countdown-card .field input[type=date]::-webkit-date-and-time-value{text-align:left;min-height:1.5em}
 .countdown-card .form-note{font-size:13px;color:var(--muted);margin:0 0 12px}
 .countdown-card .form-actions{display:flex;flex-wrap:wrap;gap:10px}
 .countdown-value.is-empty{font-size:28px;line-height:1.4;margin:6px 0 10px}
