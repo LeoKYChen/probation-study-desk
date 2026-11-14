@@ -174,6 +174,8 @@
     for(const row of remote.history)if(isObj(row)&&!have.has(row.id)){out.history.push(copy(row));have.add(row.id);}
     out.history.sort((a,b)=>String(b.t||'').localeCompare(String(a.t||'')));
     out.history=out.history.slice(0,200);
+    // 使用者更正過的章節歸類：兩邊都有同一題時保留本機的
+    if(isObj(remote.chapters)||isObj(local.chapters))out.chapters={...(isObj(remote.chapters)?copy(remote.chapters):{}),...(isObj(local.chapters)?copy(local.chapters):{})};
     return out;
    }
    if(kind==='records')return mapMerge(key,[],local,remote);

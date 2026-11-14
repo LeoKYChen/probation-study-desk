@@ -18,6 +18,10 @@
   ];
   const SUBJECTS = GROUPS.flatMap(([, list]) => list);
   const LETTERS = ['A', 'B', 'C', 'D'];
+  const CH = window.LSDeskMcqChapters || null; // 章節歸類（mcq/chapters.js）；沒有載入時章節功能整個不顯示
+  // 送給觀護人學習平臺弱點地圖看的摘要（只含刑法、刑事訴訟法的常錯條文與章節）；由本頁計算、對方唯讀。
+  const WEAK_KEY = 'lsdesk-mcq-weak-v1', WEAK_SUBJECTS = ['刑法', '刑事訴訟法'];
+  const COMMUTE_SETS = [['criminal', '刑法＋刑事訴訟法', ['刑法', '刑事訴訟法']], ['刑法', '刑法', ['刑法']], ['刑事訴訟法', '刑事訴訟法', ['刑事訴訟法']], ['picked', '沿用下方勾選的科目', null]];
   const $ = id => document.getElementById(id);
   const byId = new Map(BANK.map(q => [q.id, q]));
   const scored = q => q.status !== 'incomplete';
@@ -44,7 +48,7 @@
   /* ---------- 儲存 ---------- */
   const newStore = () => ({version: 1, updatedAt: null, records: {}, history: [], active: null, settings: {}});
   let store = newStore(), storageOK = true;
-  const validStore = c => isObj(c) && c.version === 1 && isObj(c.records) && Array.isArray(c.history) && (c.active === null || c.active === undefined || isObj(c.active)) && (c.settings === undefined || isObj(c.settings));
+  const validStore = c => isObj(c) && c.version === 1 && isObj(c.records) && Array.isArray(c.history) && (c.active === null || c.active === undefined || isObj(c.active)) && (c.settings === undefined || isObj(c.settings)) && (c.chapters === undefined || (CH ? CH.validOverrides(c.chapters) : isObj(c.chapters)));
   function notice(text) { const n = $('notice'); n.textContent = text; n.hidden = !text; }
   function load() {
     try {
@@ -60,7 +64,9 @@
     if (!storageOK) return;
     try { localStorage.setItem(KEY, JSON.stringify(store)); }
     catch { storageOK = false; notice('瀏覽器沒有保存成功（可能是無痕模式或空間不足）。請先到備份中心匯出紀錄。'); }
+    writeWeak();
   }
+  const overrides = () => store.chapters || {};
 
   /* ---------- 作答紀錄與錯題複習 ---------- */
   /* 紀錄欄位：n 作答次數、c 答對次數、w 在錯題本、b 連續答對級數、d 下次複習日、l 上次選項、t 上次時間；
@@ -104,6 +110,35 @@
     const list = [...set]; articleCache.set(q.id, list); return list;
   }
 
+  /* ---------- 弱點摘要：刑法、刑事訴訟法目前還在錯題本裡的題目，依條文與章節統計 ---------- */
+  function weakSummary() {
+    const subjects = {};
+    for (const subject of WEAK_SUBJECTS) {
+      const arts = new Map(), chaps = new Map(); let done = 0, wrong = 0;
+      for (const q of BANK) {
+        if (q.subject !== subject) continue;
+        const r = store.records[q.id]; if (!r || !r.n || r.x) continue;
+        const miss = r.w ? 1 : 0; done++; wrong += miss;
+        for (const a of articlesOf(q)) { const x = arts.get(a) || {name: a, wrong: 0, done: 0}; x.done++; x.wrong += miss; arts.set(a, x); }
+        if (CH) for (const id of CH.tagsOf(q, overrides())) { const x = chaps.get(id) || {id, name: CH.nameOf(subject, id), wrong: 0, done: 0}; x.done++; x.wrong += miss; chaps.set(id, x); }
+      }
+      const rank = m => [...m.values()].filter(x => x.wrong > 0).sort((a, b) => b.wrong - a.wrong || b.done - a.done || a.name.localeCompare(b.name, 'zh-Hant'));
+      subjects[subject] = {done, wrong, articles: rank(arts).slice(0, 8), chapters: rank(chaps).slice(0, 6)};
+    }
+    return {version: 1, subjects};
+  }
+  let weakLast = null;
+  function writeWeak() {
+    if (!storageOK) return;
+    try {
+      const body = JSON.stringify(weakSummary());
+      if (weakLast === null) { try { const old = JSON.parse(localStorage.getItem(WEAK_KEY) || 'null'); weakLast = old ? JSON.stringify({version: old.version, subjects: old.subjects}) : ''; } catch { weakLast = ''; } }
+      if (body === weakLast) return;
+      localStorage.setItem(WEAK_KEY, JSON.stringify({...JSON.parse(body), updatedAt: new Date().toISOString()}));
+      weakLast = body;
+    } catch { /* 摘要寫不進去不影響作答紀錄 */ }
+  }
+
   /* ---------- 抽題 ---------- */
   function shuffle(a) { const x = a.slice(); for (let i = x.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [x[i], x[j]] = [x[j], x[i]]; } return x; }
   function selectedSubjects() { return new Set([...document.querySelectorAll('#subject-groups input:checked')].map(i => i.value)); }
@@ -112,18 +147,37 @@
     if (opts.pool === 'new') list = list.filter(q => !store.records[q.id]);
     if (opts.pool === 'wrong') list = list.filter(q => store.records[q.id]?.w);
     if (opts.pool === 'due') list = list.filter(q => { const r = store.records[q.id]; return r?.w && r.d && r.d <= today(); });
+    if (opts.chapter && CH) list = list.filter(q => CH.inChapter(q, opts.chapter, overrides()));
     return list;
+  }
+  /* 章節篩選：只勾一科、而且那一科有章節歸類時才出現。 */
+  function chapterSubject() { const s = [...selectedSubjects()]; return CH && s.length === 1 && CH.has(s[0]) ? s[0] : ''; }
+  function syncChapterSelect(want) {
+    const wrap = $('chapter-wrap'), sel = $('chapter'); if (!wrap || !sel) return;
+    const subject = chapterSubject();
+    $('chapter-hint').hidden = !CH || !!subject;
+    wrap.hidden = !subject;
+    if (!subject) { sel.dataset.subject = ''; sel.replaceChildren(); return; }
+    const keep = want !== undefined ? want : (sel.dataset.subject === subject ? sel.value : '');
+    const counts = CH.counts(subject, BANK.filter(q => scored(q) && !outdated(q.id)), overrides());
+    sel.replaceChildren(h('option', {value: '', text: '全部章節'}),
+      ...CH.chapters(subject).map(c => h('option', {value: c.id, text: `${c.name}（${counts[c.id]}）`})),
+      h('option', {value: CH.UNSORTED, text: `尚未歸類（${counts[CH.UNSORTED]}）`}));
+    sel.dataset.subject = subject;
+    sel.value = [...sel.options].some(o => o.value === keep) ? keep : '';
   }
   const bySeq = (a, b) => a.year - b.year || String(a.paper).localeCompare(String(b.paper)) || a.no - b.no;
   function readPracticeOptions() {
-    return {subjects: selectedSubjects(), from: Number($('year-from').value), to: Number($('year-to').value), pool: $('pool').value, count: Number($('count').value), order: $('order').value};
+    return {subjects: selectedSubjects(), from: Number($('year-from').value), to: Number($('year-to').value), pool: $('pool').value, count: Number($('count').value), order: $('order').value, chapter: chapterSubject() ? $('chapter').value : ''};
   }
   function updatePoolInfo() {
+    syncChapterSelect();
     const o = readPracticeOptions();
     if (o.from > o.to) { $('pool-info').textContent = '年度起迄顛倒了，請調整。'; $('practice-start').disabled = true; return; }
     const n = poolFor(o).length;
     $('pool-info').textContent = n ? `符合條件 ${n} 題，這次會出 ${Math.min(n, o.count)} 題。` : '沒有符合條件的題目，請放寬科目、年度或題目範圍。';
     $('practice-start').disabled = n === 0;
+    renderCommute();
   }
 
   /* ---------- 版面切換 ---------- */
@@ -176,6 +230,7 @@
     if (store.settings.pool) $('pool').value = store.settings.pool;
     if (store.settings.count) $('count').value = String(store.settings.count);
     if (store.settings.order) $('order').value = store.settings.order;
+    syncChapterSelect(store.settings.chapter || '');
     $('exam-year').value = years.at(-1);
     $('exam-paper').replaceChildren(...Object.entries(PAPERS).map(([p, v]) => h('option', {value: p, text: `${p}：${v.title}（${v.minutes} 分鐘）`})));
     $('wrong-subject').replaceChildren(h('option', {value: '', text: '全部科目'}), ...SUBJECTS.map(s => h('option', {value: s, text: s})));
@@ -196,8 +251,8 @@
   }
 
   /* ---------- 練習 ---------- */
-  function startPractice(ids) {
-    store.active = {kind: 'practice', ids, idx: 0, results: {}, startedAt: Date.now()};
+  function startPractice(ids, extra) {
+    store.active = {kind: 'practice', ids, idx: 0, results: {}, startedAt: Date.now(), ...(extra || {})};
     persist(); chosen = null; showSession();
   }
   function onPracticeSubmit(e) {
@@ -207,8 +262,41 @@
     list = o.order === 'random' ? shuffle(list) : list.sort(bySeq);
     list = list.slice(0, o.count);
     if (!list.length) return;
-    store.settings = {subjects: [...o.subjects], from: o.from, to: o.to, pool: o.pool, count: o.count, order: o.order};
+    store.settings = {...store.settings, subjects: [...o.subjects], from: o.from, to: o.to, pool: o.pool, count: o.count, order: o.order, chapter: o.chapter};
     startPractice(o.order === 'random' ? list.map(q => q.id) : list.map(q => q.id));
+  }
+
+  /* ---------- 通勤練習：一鍵開始固定題數；先出到期的錯題，再補還沒做過的，最後才是做過的 ---------- */
+  function commuteSubjects() {
+    const code = $('commute-subject').value, set = COMMUTE_SETS.find(s => s[0] === code) || COMMUTE_SETS[0];
+    return set[2] ? new Set(set[2]) : selectedSubjects();
+  }
+  function commutePools() {
+    const subjects = commuteSubjects(), t = today();
+    const all = BANK.filter(q => scored(q) && !outdated(q.id) && subjects.has(q.subject));
+    const due = all.filter(q => { const r = store.records[q.id]; return r?.w && r.d && r.d <= t; });
+    const fresh = all.filter(q => !store.records[q.id]);
+    const picked = new Set([...due, ...fresh].map(q => q.id));
+    return {all, due, fresh, rest: all.filter(q => !picked.has(q.id))};
+  }
+  function commutePick(count) {
+    const p = commutePools(), half = Math.ceil(count / 2);
+    const out = shuffle(p.due).slice(0, p.fresh.length ? half : count);
+    for (const group of [p.fresh, p.due, p.rest]) { const have = new Set(out.map(q => q.id)); for (const q of shuffle(group)) { if (out.length >= count) break; if (!have.has(q.id)) out.push(q); } }
+    return out.slice(0, count).map(q => q.id);
+  }
+  function renderCommute() {
+    const box = $('commute-box'); if (!box) return;
+    const a = store.active, p = commutePools();
+    for (const id of ['commute-20', 'commute-30']) $(id).disabled = !!a || !p.all.length;
+    $('commute-info').textContent = a ? '有一組還沒做完，請先按上方的「接續」，或放棄那一組。'
+      : p.all.length ? `這個範圍共 ${p.all.length} 題：到期該複習的錯題 ${p.due.length} 題、還沒做過的 ${p.fresh.length} 題。` : '這個範圍沒有題目，請換一個科目。';
+  }
+  function startCommute(count) {
+    if (store.active) return;
+    const ids = commutePick(count); if (!ids.length) return;
+    store.settings = {...store.settings, commute: $('commute-subject').value};
+    startPractice(ids, {commute: 1});
   }
 
   /* ---------- 作答畫面 ---------- */
@@ -250,6 +338,26 @@
       q.status === 'multi' ? h('p', {class: 'small', text: q.answerNote}) : null,
       q.url ? h('p', {class: 'source'}, '題目來源：', h('a', {href: q.url, target: '_blank', rel: 'noopener', text: 'LawPlayer 整理的考選部試題 ↗'}), '。官方更正答案請查考選部。') : null);
   }
+  /* 章節：顯示這題歸到哪幾章，可以移除歸錯的、加入漏掉的；更正存在 store.chapters，優先於自動歸類。 */
+  function chapterBox(q) {
+    if (!CH || !CH.has(q.subject)) return null;
+    const box = h('div', {class: 'chapter-box'});
+    const save = list => { store.chapters = {...overrides(), [q.id]: list}; persist(); draw(); };
+    function draw() {
+      const tags = CH.tagsOf(q, overrides()), edited = Object.prototype.hasOwnProperty.call(overrides(), q.id);
+      const rest = CH.chapters(q.subject).filter(c => !tags.includes(c.id));
+      box.replaceChildren(
+        h('p', {class: 'small muted', text: edited ? '章節（你更正過）：' : '章節（自動歸類，可能有誤）：'}),
+        h('ul', {class: 'chapter-tags'}, tags.length ? tags.map(id => h('li', {}, h('span', {text: CH.nameOf(q.subject, id)}),
+          h('button', {type: 'button', class: 'chip-remove', 'aria-label': `把這題移出「${CH.nameOf(q.subject, id)}」`, onclick: () => save(tags.filter(x => x !== id)), text: '移除'}))) : h('li', {}, h('span', {text: '尚未歸類'}))),
+        h('div', {class: 'chapter-edit'},
+          rest.length ? h('label', {}, '加入章節', h('select', {onchange: e => { if (e.target.value) save(CH.chapters(q.subject).map(c => c.id).filter(id => tags.includes(id) || id === e.target.value)); }},
+            h('option', {value: '', text: '選一個章節…'}), ...rest.map(c => h('option', {value: c.id, text: c.name})))) : null,
+          edited ? h('button', {type: 'button', class: 'secondary', onclick: () => { const next = {...overrides()}; delete next[q.id]; store.chapters = next; persist(); draw(); }, text: '還原自動歸類'}) : null));
+    }
+    draw();
+    return box;
+  }
   function unscoredBox(q) {
     return h('div', {class: 'unscored'}, h('strong', {text: '本題原檔殘缺，不計分'}), h('p', {text: q.answerNote || '選項或正解不完整。'}),
       q.url ? h('p', {class: 'source'}, '請對照原卷：', h('a', {href: q.url, target: '_blank', rel: 'noopener', text: 'LawPlayer ↗'})) : null);
@@ -257,10 +365,12 @@
 
   function showSession() {
     const a = store.active;
-    if (!a) { renderAll(); showView('home'); return; }
+    if (!a) { document.body.classList.remove('mcq-commute'); renderAll(); showView('home'); return; }
     showView('session');
     const exam = a.kind === 'exam';
-    $('session-kind').textContent = exam ? `整卷模擬｜${a.year} 年${a.paper}` : '依科目練習';
+    $('session-kind').textContent = exam ? `整卷模擬｜${a.year} 年${a.paper}` : a.commute ? '通勤練習' : '依科目練習';
+    document.body.classList.toggle('mcq-commute', !exam && !!a.commute);
+    $('session-pause').hidden = exam;
     $('session-end').textContent = exam ? '交卷' : '結束並看結果';
     $('navigator-wrap').hidden = !exam;
     $('timer').hidden = !(exam && a.deadline);
@@ -307,8 +417,11 @@
         if (!done.ok) kids.push(causeBox(q));
         const arts = articlesOf(q);
         if (arts.length) kids.push(h('p', {class: 'small muted', text: '題目提到的條文：' + arts.join('、')}));
-        kids.push(h('div', {class: 'actions'}, h('button', {type: 'button', class: 'primary', id: 'next-question', onclick: nextPractice, text: a.idx + 1 < a.ids.length ? '下一題' : '看結果'}),
-          outdatedButton(q, renderQuestion)));
+        kids.push(chapterBox(q));
+        const next = h('button', {type: 'button', class: 'primary', id: 'next-question', onclick: nextPractice, text: a.idx + 1 < a.ids.length ? '下一題' : '看結果'});
+        // 通勤練習時只有「下一題」固定在畫面下方；「標為已過時」留在題目最後，不佔住畫面。
+        if (a.commute) { kids.push(h('div', {class: 'actions plain'}, outdatedButton(q, renderQuestion))); kids.push(h('div', {class: 'actions'}, next)); }
+        else kids.push(h('div', {class: 'actions'}, next, outdatedButton(q, renderQuestion)));
       } else {
         kids.push(h('label', {class: 'unsure'}, h('input', {type: 'checkbox', id: 'unsure', checked: unsureNow, onchange: e => { unsureNow = e.target.checked; }}), '這題我不確定（猜的）——答對也排進複習'));
         kids.push(h('div', {class: 'actions'},
@@ -417,7 +530,7 @@
     const done = a.ids.filter(id => a.results[id]).map(id => ({q: byId.get(id), ...a.results[id]}));
     const correct = done.filter(r => r.ok).length;
     if (done.length) { store.history.unshift({id: 'p' + a.startedAt, t: new Date().toISOString(), type: 'practice', total: done.length, correct}); store.history = store.history.slice(0, MAX_HISTORY); }
-    store.active = null; persist(); chosen = null;
+    store.active = null; persist(); chosen = null; document.body.classList.remove('mcq-commute');
     const wrong = done.filter(r => !r.ok), guessed = done.filter(r => r.ok && r.u);
     const body = $('result-body');
     body.replaceChildren(h('h2', {id: 'result-heading', tabindex: '-1', text: '本次練習結果'}),
@@ -538,6 +651,14 @@
     $('subjects-all').onclick = () => { document.querySelectorAll('#subject-groups input').forEach(i => { i.checked = true; }); updatePoolInfo(); };
     $('subjects-none').onclick = () => { document.querySelectorAll('#subject-groups input').forEach(i => { i.checked = false; }); updatePoolInfo(); };
     $('exam-form').addEventListener('submit', startExam);
+    if ($('chapter')) $('chapter').addEventListener('change', updatePoolInfo);
+    $('commute-subject').replaceChildren(...COMMUTE_SETS.map(([code, label]) => h('option', {value: code, text: label})));
+    $('commute-subject').value = COMMUTE_SETS.some(s => s[0] === store.settings.commute) ? store.settings.commute : COMMUTE_SETS[0][0];
+    $('commute-subject').addEventListener('change', renderCommute);
+    $('commute-20').onclick = () => startCommute(20);
+    $('commute-30').onclick = () => startCommute(30);
+    // 先停在這裡：回到練習首頁，進度留著，下次按「接續」或重新打開本頁就從同一題繼續。
+    $('session-pause').onclick = () => { persist(); document.body.classList.remove('mcq-commute'); renderAll(); showView('home'); $('resume-go').focus(); };
     $('exam-year').addEventListener('change', updateExamInfo); $('exam-paper').addEventListener('change', updateExamInfo);
     $('wrong-subject').addEventListener('change', renderWrong);
     $('resume-go').onclick = resume;
@@ -553,8 +674,11 @@
     };
     renderAll(); setTab('practice');
     $('home-view').hidden = false;
+    writeWeak();
     if (store.active) {
       if (store.active.kind === 'exam') setTab('exam');
+      // 通勤練習中斷後重新打開本頁，直接回到上次那一題（網址帶 #home 時留在首頁）。
+      else if (store.active.commute && location.hash !== '#home') resume();
     } else if (location.hash === '#wrong') { setTab('wrong'); renderWrong(); } // 從「複習」頁連過來時直接開錯題本
   }
   init();

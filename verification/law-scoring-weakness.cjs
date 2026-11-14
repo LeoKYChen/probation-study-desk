@@ -80,4 +80,33 @@ assert.equal(WK.lossTypes(d,peek,byId).graded,0);
   assert.equal(WK.timeStats(d,ts).items.find(x=>x.key==='time').total,3);
   ts[tid[3]]={unlocked:false,timed:{t0:1,t2:5,limit:1800}}; assert.equal(WK.timeStats(d,ts).times,3,'沒自評的限時紀錄不算');
 }
+
+// 律司選擇題摘要：只接受格式正確的資料，只給刑法與刑事訴訟法，壞資料一律當作沒有。
+{
+  const same=(a,b,m)=>assert.equal(JSON.stringify(a),JSON.stringify(b),m);
+  const good={version:1,updatedAt:'2026-11-14T08:00:00.000Z',subjects:{
+    '刑法':{done:12,wrong:3,articles:[{name:'刑法第 23 條',wrong:2,done:4},{name:'刑法第 28 條',wrong:1,done:1}],chapters:[{id:'cl-justify',name:'總則｜違法性：阻卻違法事由',wrong:2,done:5}]},
+    '刑事訴訟法':{done:4,wrong:0,articles:[],chapters:[]}}};
+  const raw=JSON.stringify(good), L=WK.lawyerMcq('criminal-law',raw);
+  same([L.subject,L.done,L.wrong,L.updated],['刑法',12,3,'2026-11-14']);
+  same(L.articles,[{name:'刑法第 23 條',wrong:2,done:4},{name:'刑法第 28 條',wrong:1,done:1}]);
+  same(L.chapters,[{name:'總則｜違法性：阻卻違法事由',wrong:2,done:5}]);
+  const P=WK.lawyerMcq('criminal-procedure',raw); same([P.subject,P.done,P.wrong,P.articles.length],['刑事訴訟法',4,0,0]);
+  for(const slug of ['juvenile','criminology','psychology','counseling'])assert.equal(WK.lawyerMcq(slug,raw),null,'only the two shared subjects: '+slug);
+  for(const bad of ['','{','null','[]','{"version":2,"subjects":{}}',JSON.stringify({version:1,subjects:{'刑法':{done:1,wrong:2,articles:[],chapters:[]}}}),JSON.stringify({version:1,subjects:{'刑法':{done:'3',wrong:0}}}),JSON.stringify({version:1,subjects:{}})])
+    assert.equal(WK.lawyerMcq('criminal-law',bad),null,'bad summary ignored: '+bad.slice(0,30));
+  // 個別壞掉的列被濾掉，其餘照常；最多 8 列；日期格式不對就不顯示日期
+  const messy=JSON.parse(raw); messy.updatedAt='yesterday';
+  messy.subjects['刑法'].articles=[{name:'',wrong:1,done:1},{name:'x',wrong:0,done:1},{name:'y',wrong:3,done:2},{name:'z'.repeat(81),wrong:1,done:1},null,'s',...Array.from({length:10},(_,i)=>({name:'刑法第 '+(i+1)+' 條',wrong:1,done:2}))];
+  const M=WK.lawyerMcq('criminal-law',JSON.stringify(messy));
+  assert.equal(M.articles.length,8); assert.equal(M.articles[0].name,'刑法第 1 條'); assert.equal(M.updated,'');
+  // 鍵名與律司那邊寫入的一致（那邊的紀錄一律加上 lj:: 前綴）
+  const mcq=fs.readFileSync(path.join(root,'lawyer-judge/mcq/mcq.js'),'utf8'), wk=fs.readFileSync(path.join(root,'law-scoring/weakness.js'),'utf8');
+  const theirs=mcq.match(/WEAK_KEY = '([^']+)'/)[1], mine=wk.match(/LJ_MCQ_KEY = '([^']+)'/)[1];
+  assert.equal(mine,'lj::'+theirs,'summary key matches the lawyer-judge writer');
+  assert(/WEAK_SUBJECTS = \['刑法', '刑事訴訟法'\]/.test(mcq),'writer covers the two shared subjects');
+  let read=0; const ctx2={window:{},localStorage:{getItem(k){read++;assert.equal(k,mine);return raw;},setItem(){throw new Error('must not write');}}};
+  vm.runInNewContext(fs.readFileSync(path.join(root,'law-scoring/weakness.js'),'utf8'),ctx2);
+  assert.equal(ctx2.window.LawScoringWeakness.rawLawyerMcq(),raw); assert.equal(read,1);
+}
 console.log('law-scoring weakness map: '+empty.chapters.length+' chapters checked');

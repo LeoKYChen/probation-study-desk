@@ -99,5 +99,20 @@ function timeStats(d, store) {
   return {items, times: time.total, avgOverMin: late ? Math.max(1, Math.round(over / late / 60)) : 0};
 }
 
-window.LawScoringWeakness = {compute, lossTypes, timeStats, isGraded, chapterTokens, readStore, rawStore, LOW, MIN, GUAN_W, TOP, LOSS_SLUGS};
+// 律師・司法官備考平臺（lawyer-judge/）的第一試選擇題：那邊會把刑法、刑事訴訟法「還在錯題本裡」的題目
+// 依條文與章節整理成一份摘要，存在 lj:: 開頭的鍵。這裡只讀取、檢查格式後交給重點整理頁顯示，不寫入任何東西。
+const LJ_MCQ_KEY = 'lj::lsdesk-mcq-weak-v1', LJ_SUBJECT = {'criminal-law': '刑法', 'criminal-procedure': '刑事訴訟法'};
+function rawLawyerMcq() { try { return localStorage.getItem(LJ_MCQ_KEY) || ''; } catch (e) { return ''; } }
+function lawyerMcq(slug, raw) {
+  const subject = LJ_SUBJECT[slug]; if (!subject || !raw) return null;
+  let data; try { data = JSON.parse(raw); } catch (e) { return null; }
+  const s = data && data.version === 1 && data.subjects && data.subjects[subject];
+  if (!s || typeof s !== 'object') return null;
+  const int = n => Number.isInteger(n) && n >= 0;
+  const rows = list => (Array.isArray(list) ? list : []).filter(x => x && typeof x.name === 'string' && x.name && x.name.length <= 80 && int(x.wrong) && int(x.done) && x.wrong > 0 && x.wrong <= x.done).slice(0, 8).map(x => ({name: x.name, wrong: x.wrong, done: x.done}));
+  if (!int(s.done) || !int(s.wrong) || s.wrong > s.done) return null;
+  const updated = typeof data.updatedAt === 'string' && /^\d{4}-\d{2}-\d{2}T/.test(data.updatedAt) ? data.updatedAt.slice(0, 10) : '';
+  return {subject, done: s.done, wrong: s.wrong, articles: rows(s.articles), chapters: rows(s.chapters), updated};
+}
+window.LawScoringWeakness = {compute, lossTypes, timeStats, lawyerMcq, rawLawyerMcq, isGraded, chapterTokens, readStore, rawStore, LOW, MIN, GUAN_W, TOP, LOSS_SLUGS};
 })();
