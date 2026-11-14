@@ -15,8 +15,8 @@ let current = null;
 // 弱點地圖需要題庫與計分函式；任何一項沒載入就整個不顯示，重點整理照常可用。
 const WK = window.LawScoringWeakness, DATA = window.LawScoringData, SCORER = window.LawScoring && window.LawScoring.score;
 const BY_ID = WK && DATA && SCORER ? new Map(DATA.questions.map(q=>[q.id,q])) : null;
-let weak = null, weakRaw = '', loss = null;
-function computeWeak(d){ if(!BY_ID){ weak=null; return; } weakRaw=WK.rawStore(); const st=WK.readStore(); try { weak=WK.compute(d, st, BY_ID, SCORER); } catch (e) { weak=null; } try { loss=WK.LOSS_SLUGS.includes(d.slug)?WK.lossTypes(d, st, BY_ID):null; } catch (e) { loss=null; } }
+let weak = null, weakRaw = '', loss = null, timing = null;
+function computeWeak(d){ if(!BY_ID){ weak=null; return; } weakRaw=WK.rawStore(); const st=WK.readStore(); try { weak=WK.compute(d, st, BY_ID, SCORER); } catch (e) { weak=null; } try { loss=WK.LOSS_SLUGS.includes(d.slug)?WK.lossTypes(d, st, BY_ID):null; } catch (e) { loss=null; } try { timing=WK.timeStats(d, st); } catch (e) { timing=null; } }
 const practised = c => '已練 '+c.done+'／'+c.total+' 題';
 
 function el(tag, attrs, text){ const n=document.createElement(tag); for(const k in (attrs||{})){ if(k==='class') n.className=attrs[k]; else n.setAttribute(k,attrs[k]); } if(text!=null) n.textContent=text; return n; }
@@ -128,6 +128,15 @@ function renderLoss(box){
   const base=loss.baseline&&loss.baseline.total>=WK.MIN?'對照：其他要點做到 '+loss.baseline.rate+'%。':'';
   box.appendChild(el('p',{class:'small muted'},'由低到高排列，比例越低越需要注意。'+base+'只統計這一科已自評的 '+loss.graded+' 題；同一類至少出現 '+WK.MIN+' 次才列出。依你勾選的「有寫到」、「並陳見解」與答題組織計算，紀錄只讀取。'));
 }
+// 限時表現：六科都顯示，但要這一科至少有 3 次限時紀錄（或 3 步拆題核對）才出現。
+function renderTiming(box){
+  if(!timing||!timing.items.length) return;
+  box.appendChild(el('h3',null,'限時表現'));
+  const ul=el('ul',{class:'sum-weak-list sum-loss-list'});
+  timing.items.forEach(x=>{ const li=el('li'); li.appendChild(el('span',{class:'name'},x.label)); li.appendChild(el('span',{class:'detail'},(x.key==='time'?x.hit+'／'+x.total+' 次':'列到 '+x.hit+'／'+x.total+' 步')+'（'+x.rate+'%）'+(x.key==='time'&&timing.avgOverMin?'，超時的幾次平均超過 '+timing.avgOverMin+' 分鐘':''))); ul.appendChild(li); });
+  box.appendChild(ul);
+  box.appendChild(el('p',{class:'small muted'},'來自這一科的限時練習：存過的作答歷程，加上已自評但還沒存檔的那一次。拆題步數只有存檔才會記下。至少 '+WK.MIN+' 筆才列出，紀錄只讀取。'));
+}
 function renderWeak(d){
   const box=$('sum-weak'); box.textContent='';
   if(!weak){ box.hidden=true; return; }
@@ -151,6 +160,7 @@ function renderWeak(d){
     box.appendChild(ul);
   }
   renderLoss(box);
+  renderTiming(box);
   box.appendChild(el('p',{class:'small muted'},'排序方式：出題次數（觀護人的題算 '+WK.GUAN_W+' 倍）乘上還沒掌握的比例。掌握度是該章已自評題目的平均分數；紀錄只讀取，不會被更動。'));
 }
 
