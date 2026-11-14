@@ -1,0 +1,17 @@
+# Web build output and dependencies
+www/
+node_modules/
+
+# Native local builds and confidential signing material
+ios/Pods/
+ios/DerivedData/
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+*.keystore
+*.jks
+*.p12
+*.mobileprovision
+*.cer
+.DS_Store
