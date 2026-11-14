@@ -297,3 +297,11 @@ a.qref.guan{font-weight:700}
 .today summary::-webkit-details-marker{display:none}
 .today summary::after{content:'展開';font-weight:400;font-size:14px;color:var(--ink-soft)}
 .today[open] summary::after{content:'收合'}
+/* 律師・司法官備考開關：預設關閉，關閉時只有這一列。 */
+.lj-switch{border:1px solid var(--rule);border-radius:12px;background:var(--paper);padding:0 14px 10px;margin:0 0 16px}
+.lj-switch-label{min-height:44px;display:flex;align-items:center;gap:10px;font-weight:700;cursor:pointer}
+.lj-switch-label input{width:20px;height:20px;flex:none;margin:0}
+.lj-switch p{margin:0}
+.lj-links{display:flex;flex-wrap:wrap;gap:4px 16px;margin-top:6px;border-top:1px solid var(--rule)}
+.lj-links[hidden]{display:none}
+.lj-links a{min-height:44px;display:inline-flex;align-items:center;font-weight:700}

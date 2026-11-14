@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "decisionDate": "2026-10-23",
+  "baseCommit": "d46ea4b219e6c8cb4fb38627662b4c79a424a932",
+  "baselineBranch": "archive/stability-baseline-20261023",
+  "decisionIssue": 77,
+  "policy": "Stable maintenance: police original past-paper intake is the only continuously developed content track; security, bugs, backups, weeklies, compatibility fixes remain permitted.",
+  "routes": [
+    {
+      "id": "A",
+      "name": "每日模擬題／晚間學習室",
+      "decision": "keep",
+      "paths": [
+        "daily-simulation/"
+      ]
+    },
+    {
+      "id": "B",
+      "name": "雙 AI 批改整合",
+      "decision": "keep",
+      "paths": [
+        "dual-ai-bridge.js"
+      ]
+    },
+    {
+      "id": "C",
+      "name": "自訂 AI 批改提示詞",
+      "decision": "keep",
+      "paths": [
+        "ai-prompt-customizer.js"
+      ]
+    },
+    {
+      "id": "D",
+      "name": "少年司法週報",
+      "decision": "keep",
+      "paths": [
+        "juvenile-news/"
+      ]
+    },
+    {
+      "id": "E",
+      "name": "主動回憶",
+      "decision": "keep",
+      "paths": [
+        "active-recall/"
+      ]
+    },
+    {
+      "id": "F",
+      "name": "116 年獨立專題題庫",
+      "decision": "pause",
+      "paths": [
+        "dongdong-time/"
+      ]
+    },
+    {
+      "id": "G",
+      "name": "Staresto 英文整合",
+      "decision": "pause",
+      "paths": [
+        "common-subjects/daily/"
+      ],
+      "openPrs": [
+        12,
+        38
+      ]
+    },
+    {
+      "id": "H",
+      "name": "考科知識關聯圖",
+      "decision": "archive",
+      "paths": [
+        "knowledge-graph-preview/"
+      ],
+      "preservedBranch": "test/knowledge-graph-20261020",
+      "preservedSha": "0ef35c4e6c40dae09927f311056cd60f68e1a2e9"
+    },
+    {
+      "id": "I",
+      "name": "完整重點整理與補強清單",
+      "decision": "hidden",
+      "paths": [
+        "v2.5/study-map.js",
+        "v2.5/review25.js"
+      ]
+    },
+    {
+      "id": "J",
+      "name": "v2.7 法律檢索與 MCP",
+      "decision": "separate",
+      "paths": [
+        "experiment/v27-mcp-*",
+        "feature/v2.7-legal-search"
+      ],
+      "preservedBranch": "experiment/v27-mcp-stage3v",
+      "preservedSha": "526f06ca13cca86fec24e5726c7aacc036a65ac0"
+    },
+    {
+      "id": "K",
+      "name": "雲端學習紀錄同步",
+      "decision": "pause",
+      "paths": [
+        "cloud-sync/"
+      ]
+    },
+    {
+      "id": "L",
+      "name": "列印／PDF／離線 ZIP",
+      "decision": "keep",
+      "paths": [
+        "print/",
+        "offline/",
+        "file-data/"
+      ]
+    },
+    {
+      "id": "M",
+      "name": "JCIS 少年個案展示頁面",
+      "decision": "separate",
+      "paths": [
+        "jcis-demo/"
+      ],
+      "targetRepository": "LeoKYChen/High-Risk",
+      "migrationStatus": "not_migrated"
+    },
+    {
+      "id": "N",
+      "name": "v2.6、舊介面與外觀改版",
+      "decision": "archive",
+      "paths": [
+        "legacy-home.html",
+        "upload/",
+        "feature/v2.6-integration"
+      ],
+      "preservedBranch": "feature/v2.6-integration",
+      "preservedSha": "04f2d382dbe2e493d64768a26d1a52a29c8a2801"
+    }
+  ],
+  "activeException": {
+    "track": "警察特考歷屆官方原題收錄",
+    "head": "feat/police-past-papers-108-115-originals",
+    "pr": 71,
+    "status": "draft_until_source_and_browser_verified"
+  },
+  "criticalPaths": [
+    "index.html",
+    "study-desk/index.html",
+    "professional/index.html",
+    "professional/source-main-questions.js",
+    "professional/source-related-questions.js",
+    "v2.5/index.html",
+    "v2.5/questions.js",
+    "v2.5/related-questions.js",
+    "common-subjects/index.html",
+    "lectures/index.html",
+    "daily-simulation/index.html",
+    "juvenile-news/index.html",
+    "juvenile-news/issues.json",
+    "juvenile-news/source/public/issues.json",
+    "backup/index.html",
+    "backup/unified-core.js",
+    "print/index.html",
+    "offline/index.html",
+    "offline-manifest.json",
+    "sw.js",
+    "dual-ai-bridge.js",
+    "ai-prompt-customizer.js",
+    "active-recall/index.html",
+    "dongdong-time/questions.json",
+    "knowledge-graph-preview/index.html",
+    "jcis-demo/index.html",
+    "cloud-sync/README.md",
+    "v2.5/study-map.js",
+    "v2.5/review25.js"
+  ],
+  "identicalMirrors": [
+    [
+      "juvenile-news/issues.json",
+      "juvenile-news/source/public/issues.json"
+    ],
+    [
+      "v2.5/questions.js",
+      "professional/source-main-questions.js"
+    ],
+    [
+      "v2.5/related-questions.js",
+      "professional/source-related-questions.js"
+    ]
+  ],
+  "hiddenInvariants": [
+    {
+      "path": "v2.5/study-map.js",
+      "literal": "SHOW_FULL_NOTES=false"
+    },
+    {
+      "path": "v2.5/review25.js",
+      "literal": "SHOW_REVIEW_LIST=false"
+    }
+  ],
+  "scopeAdvisories": [
+    "dongdong-time/",
+    "common-subjects/daily/",
+    "knowledge-graph-preview/",
+    "cloud-sync/",
+    "jcis-demo/",
+    "legacy-home.html",
+    "upload/"
+  ]
+}

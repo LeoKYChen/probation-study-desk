@@ -1,0 +1,19 @@
+{
+  "name": "lawyer-judge-study-desk",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "律司備考平臺：律師、司法官考試自主學習網站（由觀護人學習平臺改版）",
+  "license": "GPL-3.0-only",
+  "scripts": {
+    "import": "node scripts/import-questions.mjs",
+    "import:daily": "node scripts/import-questions.mjs --daily",
+    "empty": "node scripts/import-questions.mjs --empty",
+    "check:data": "node scripts/generate-file-data.cjs --check",
+    "test": "node tests/run-all.cjs",
+    "test:smoke": "node tests/e2e/smoke.cjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

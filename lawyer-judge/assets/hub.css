@@ -1,0 +1,52 @@
+/* 「練習」「複習」總覽頁與首頁共用的版面：目錄式入口、統計列、掌握度條。 */
+@media screen{
+body.hub-page{margin:0}
+.hub{max-width:1200px;margin:auto;padding:40px 28px 56px}
+.hub-head{display:flex;flex-direction:column;gap:8px;margin-bottom:28px}
+.hub-head h1{margin:0;font-size:clamp(30px,5vw,48px);line-height:1.2;font-weight:900}
+.hub-head p{margin:0;max-width:640px;color:var(--muted)}
+.index-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));margin:0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.index-grid li{border-bottom:1px solid var(--line);display:flex}
+.index-grid a{display:flex;flex-direction:column;gap:8px;flex:1;min-width:0;padding:24px 24px 24px 0;color:var(--ink);text-decoration:none}
+.index-grid li+li a{padding-left:24px;border-left:1px solid var(--line)}
+.index-grid a:hover{background:var(--sunken)}
+.index-no{font:500 11px var(--mono);letter-spacing:.14em;color:var(--accent)}
+.index-title{font:700 20px/1.4 var(--serif)}
+.index-desc{font-size:14px;line-height:1.7;color:var(--muted)}
+.index-go{margin-top:auto;padding-top:8px;font-size:14px;color:var(--accent)}
+.rows{border-top:2px solid var(--ink);margin:0;padding:0;list-style:none}
+.rows li{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.rows .k{color:var(--muted);font-size:14px}
+.rows .v{font:700 20px var(--serif)}
+.rows .v.hot{color:var(--accent)}
+.dark-panel{background:var(--ink);color:var(--paper);padding:24px 28px;display:flex;flex-direction:column;gap:10px;border-radius:3px}
+.dark-panel .label{font:500 11px var(--mono);letter-spacing:.14em;color:#c9c1b3}
+.dark-panel .big{display:flex;align-items:baseline;gap:8px}
+.dark-panel .big b{font:900 64px/1 var(--serif);color:var(--paper)}
+.dark-panel a.go,.dark-panel button.go{align-self:flex-start;background:var(--accent);color:#fbf8f2;padding:12px 20px;border-radius:3px;text-decoration:none;font-weight:500;border:0;min-height:44px;display:inline-flex;align-items:center}
+.dark-panel a.go:hover{background:#a14a3c;color:#fff}
+.two-col{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:48px;align-items:start}
+.mastery{display:flex;flex-direction:column;gap:10px;margin:0;padding:0;list-style:none}
+.mastery li{display:grid;grid-template-columns:96px minmax(0,1fr) 120px;gap:14px;align-items:center;font-size:14px}
+.mastery .track{display:flex;height:14px;background:var(--sunken);overflow:hidden}
+.mastery .seg-ok{background:var(--ok)}.mastery .seg-part{background:var(--warn)}.mastery .seg-bad{background:var(--accent)}
+.mastery .num{font:500 12px var(--mono);color:var(--muted);text-align:right}
+.legend{display:flex;flex-wrap:wrap;gap:16px;font-size:13px;color:var(--muted);margin:12px 0 0}
+.legend i{display:inline-block;width:12px;height:12px;margin-right:6px;vertical-align:-1px}
+.queue{border:1px solid var(--line);background:var(--surface);border-radius:3px;margin:0;padding:0;list-style:none}
+.queue li{padding:14px 18px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:4px;font-size:14px}
+.queue li:last-child{border-bottom:0}
+.queue .row1{display:flex;justify-content:space-between;gap:12px}
+.queue .due{font-size:12px;color:var(--accent)}
+.queue .sub{font-size:13px;color:var(--muted)}
+.hub-note{margin-top:28px;font-size:13px;line-height:1.7;color:var(--muted)}
+.empty-note{padding:18px;border:1px dashed var(--line-strong);color:var(--muted);font-size:14px;border-radius:3px}
+h2.sec{font-size:20px;margin:36px 0 14px}
+@media(max-width:900px){.two-col{grid-template-columns:minmax(0,1fr);gap:28px}}
+@media(max-width:760px){
+ .hub{padding:28px 16px 40px}
+ .index-grid{grid-template-columns:minmax(0,1fr)}
+ .index-grid a,.index-grid li+li a{padding:18px 4px;border-left:0}
+ .mastery li{grid-template-columns:76px minmax(0,1fr) 88px;gap:10px}
+}
+}

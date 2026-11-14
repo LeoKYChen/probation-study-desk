@@ -49,8 +49,19 @@ SITE_DIRS = {
     "pwa",
     "assets",
     "reference-notes",
+    # 律師・司法官備考平臺：整站放在子資料夾，由申論評分參考頂端的開關進入。
+    "lawyer-judge",
 }
-SOURCE_ONLY = {"juvenile-news/source"}
+# lawyer-judge 的測試、文件、匯入工具、原始匯入資料，以及只給 ZIP 直開（file://）用的 file-data 不需要上線。
+SOURCE_ONLY = {
+    "juvenile-news/source",
+    "lawyer-judge/tests",
+    "lawyer-judge/docs",
+    "lawyer-judge/scripts",
+    "lawyer-judge/verification",
+    "lawyer-judge/data",
+    "lawyer-judge/file-data",
+}
 DENY_PARTS = {"node_modules", "__pycache__", ".git", ".github"}
 REQUIRED = (
     "index.html",

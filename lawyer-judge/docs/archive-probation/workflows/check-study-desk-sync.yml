@@ -1,0 +1,21 @@
+name: Study desk local learning
+on:
+  pull_request:
+    paths: ['study-desk/**', 'cloud-sync/**', 'backup/**', 'verification/sync/**', '.github/workflows/check-study-desk-sync.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  synthetic-acceptance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - run: npm --prefix verification/sync ci
+      - run: node verification/sync/node_modules/playwright/cli.js install --with-deps chromium
+      - run: npm --prefix verification/sync test
+      - run: node backup/test.cjs
+      - run: npm --prefix verification/sync run test:browser

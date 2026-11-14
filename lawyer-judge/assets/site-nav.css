@@ -1,0 +1,28 @@
+/* 全站共用導覽樣式（搭配 site-nav.js）。電腦版在頂端；手機版變成底部五個分頁。 */
+@media screen{
+body .site-nav{display:block;width:auto;max-width:none;margin:0;padding:0;background:var(--paper,#f6f2ea);border:0;border-bottom:1px solid var(--line,#e1d9cb);position:relative;z-index:60;box-shadow:none}
+.site-nav .site-nav-inner{width:auto;max-width:1440px;margin:auto;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.site-nav-brand{display:flex;align-items:center;gap:12px;color:var(--ink,#1f2328);text-decoration:none;white-space:nowrap}
+.site-nav-brand b{font-family:var(--serif,serif);font-weight:700;font-size:17px;letter-spacing:.04em}
+.site-nav-mark{width:32px;height:32px;border:1.5px solid var(--ink,#cfc6b6);display:grid;place-items:center;font:900 17px var(--serif,serif)}
+.site-nav-links{display:flex;gap:6px;flex-wrap:nowrap}
+.site-nav-links a{display:flex;align-items:center;justify-content:center;min-height:44px;min-width:56px;padding:6px 14px;color:var(--muted,#6b665e);text-decoration:none;font-size:15px;border-bottom:2px solid transparent}
+.site-nav-links a:hover{color:var(--ink,#1f2328);border-bottom-color:var(--line-strong,#cfc6b6)}
+.site-nav-links a[aria-current=page]{color:var(--ink,#1f2328);font-weight:700;border-bottom-color:var(--accent,#8a3b2e)}
+.site-nav-tools{display:flex;align-items:center;gap:14px;font:500 12px var(--mono,monospace);color:var(--muted,#6b665e);white-space:nowrap}
+.site-nav-backup{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;border:1px solid var(--line-strong,#cfc6b6);border-radius:3px;color:var(--ink,#1f2328);text-decoration:none;font-family:var(--sans,sans-serif);font-size:13px}
+.site-nav-backup:hover,.site-nav-backup[aria-current=page]{background:var(--sunken,#efe8db);border-color:var(--ink,#cfc6b6)}
+/* 各頁原本只有品牌與回首頁連結的簡易頁首，由共用導覽取代 */
+body.has-site-nav>.study-header,body.has-site-nav>header.topbar,body.has-site-nav>header.site-header,body.has-site-nav>header.global-header,body.has-site-nav.simple-header-page>header:not(.site-nav){display:none}
+/* 放在觀護人學習平臺之下時多一個「觀護人」連結；中等寬度先收起「本機保存」字樣，避免擠出畫面。 */
+@media(max-width:960px){.site-nav-hosted .site-nav-saved{display:none}.site-nav-hosted .site-nav-inner{gap:12px}.site-nav-hosted .site-nav-tools{gap:8px}}
+@media(max-width:760px){
+ .site-nav-inner{padding:10px 16px}
+ .site-nav-saved{display:none}
+ .site-nav-links{position:fixed;left:0;right:0;bottom:0;z-index:80;justify-content:space-around;gap:0;background:var(--paper,#f6f2ea);border-top:1px solid var(--line,#e1d9cb);padding:4px 4px calc(6px + env(safe-area-inset-bottom))}
+ .site-nav-links a{flex:1;min-width:0;font-size:13px;border-bottom:0;border-top:2px solid transparent;padding:6px 2px}
+ .site-nav-links a[aria-current=page]{border-top-color:var(--accent,#8a3b2e);border-bottom-color:transparent;color:var(--accent,#8a3b2e)}
+ body.has-site-nav{padding-bottom:64px}
+}
+}
+@media print{.site-nav{display:none!important}}

@@ -1,0 +1,51 @@
+/* 骨架回想、失分清單頁共用樣式 */
+.hub .tabs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px;border-bottom:1px solid var(--line)}
+.hub .tabs button{min-height:44px;padding:8px 16px;border:0;border-bottom:3px solid transparent;background:none;color:var(--muted);font:inherit;font-weight:600;cursor:pointer;border-radius:0}
+.hub .tabs button[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.hub .tabs button:focus-visible{outline:3px solid var(--warn);outline-offset:2px}
+.field-row{display:flex;flex-direction:column;gap:6px;margin:18px 0;max-width:360px}
+.field-row label{font-size:14px;font-weight:600}
+.field-row select,.field-row input{min-height:44px;padding:8px 12px;border:1px solid var(--line-strong);border-radius:3px;background:var(--raised);color:var(--ink);font:inherit;width:100%;box-sizing:border-box}
+.filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0 24px;max-width:760px}
+.recall-card{border:1px solid var(--line);background:var(--surface);border-radius:3px;padding:24px 28px}
+.recall-question{border-left:3px solid var(--margin-red);padding-left:16px;margin:12px 0 20px}
+.recall-question p{margin:8px 0;line-height:1.9;overflow-wrap:anywhere}
+.recall-bar{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:8px}
+.recall-bar label{font-weight:600}
+.clock{font:700 20px var(--mono);color:var(--ink)}
+.clock.over{color:var(--accent)}
+#outline-text{width:100%;box-sizing:border-box;min-height:220px;font:inherit}
+.hub .actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:18px 0 0}
+.hub .actions button,.btn-link{min-height:44px;padding:10px 18px;border-radius:3px;font:inherit;font-weight:600;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+.hub .actions button.primary,.btn-link{background:var(--accent);color:#fbf8f2;border:1px solid var(--accent)}
+.hub .actions button.primary:hover,.btn-link:hover{background:var(--accent-dark);color:#fff}
+.hub .actions button.secondary{background:var(--raised);color:var(--ink);border:1px solid var(--line-strong)}
+.hub .actions button.secondary:hover{border-color:var(--accent);color:var(--accent)}
+.text-link{color:var(--accent);font-weight:600;min-height:44px;display:inline-flex;align-items:center}
+pre.mine{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;line-height:1.8;margin:6px 0;padding:12px 14px;background:var(--sunken);border-radius:3px}
+.sub-head{font-size:16px;margin:22px 0 10px}
+.c-block{border-top:1px solid var(--line);padding:4px 0 10px}
+.c-block p{line-height:1.9;overflow-wrap:anywhere;margin:8px 0}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:3px}
+.table-wrap table{border-collapse:collapse;width:100%;min-width:420px;font-size:14px}
+.table-wrap th,.table-wrap td{padding:10px 14px;border-bottom:1px solid var(--line);text-align:left;font-weight:400}
+.table-wrap thead th{font-weight:700;background:var(--sunken)}
+.table-wrap tr.none td,.table-wrap tr.none th{color:var(--muted)}
+.priority{border:1px solid var(--line);background:var(--surface);border-radius:3px;margin:0;padding:0;list-style:none;counter-reset:pri}
+.priority li{counter-increment:pri;display:grid;grid-template-columns:32px minmax(0,1fr);gap:4px 12px;padding:14px 18px;border-bottom:1px solid var(--line)}
+.priority li:last-child{border-bottom:0}
+.priority li::before{content:counter(pri);font:900 22px var(--serif);color:var(--accent);grid-row:span 2}
+.priority b{font-size:16px}
+.priority .why{font-size:13px;color:var(--muted);line-height:1.7}
+@media(max-width:560px){.recall-card{padding:18px 16px}.hub .actions.rate button{width:100%;justify-content:center}}
+
+/* 常見錯誤（閱卷委員的話彙整） */
+.theme-list{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:12px;counter-reset:theme}
+.theme-list>li{padding:14px 16px;border:1px solid var(--line);border-radius:3px;background:var(--surface)}
+.theme-name{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 0 8px}
+.theme-name b{font-size:17px;line-height:1.5}
+.theme-name .num{font:500 13px var(--mono);color:var(--muted);white-space:nowrap}
+.theme-list .track{display:block;height:8px;background:var(--sunken)}
+.theme-list .track i{display:block;height:100%;background:var(--accent)}
+.theme-ask{margin:10px 0 4px;line-height:1.7}
+.theme-list .src{color:var(--muted);font-size:13px}
