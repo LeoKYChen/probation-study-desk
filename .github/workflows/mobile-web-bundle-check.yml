@@ -1,0 +1,29 @@
+name: Mobile web bundle preflight
+
+on:
+  push:
+    paths:
+      - 'mobile-app/**'
+      - '.github/workflows/mobile-web-bundle-check.yml'
+  pull_request:
+    paths:
+      - 'mobile-app/**'
+      - '.github/workflows/mobile-web-bundle-check.yml'
+
+jobs:
+  bundle-static-site:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Copy current site into Capacitor webDir
+        run: npm --prefix mobile-app run build:web
+      - name: Check required entry points
+        run: |
+          test -s mobile-app/www/index.html
+          test -s mobile-app/www/study-desk/index.html
+          test -s mobile-app/www/v2.5/index.html
+          test -s mobile-app/www/lectures/index.html
+          test -s mobile-app/www/backup/index.html
