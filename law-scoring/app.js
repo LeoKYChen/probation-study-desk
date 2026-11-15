@@ -427,15 +427,15 @@ window.addEventListener('hashchange',()=>{ const q=fromHash(); if(q&&q!==current
       const R=window.LawScoringReview, TR=window.LawScoringTopicRecall, TH=window.LawScoringTheoryCards, WK=window.LawScoringWeakness, RD=window.LawScoringRounds;
       const plan=todayPlan({store, cardStore:readJ(R.CARD_KEY), today:ymd(Date.now()), data:DATA, summaries:SM, R, TR, TH, WK, score:(q,s)=>score(q,s), topicState:TR.readState(), theoryState:TH.readState(), RD, roundState:RD?RD.read():null});
       ul.textContent='';
-      { const r=plan.rounds; ul.appendChild(li('今日題組：'+(r===null?'讀不到':r.finished?'五輪都跑完了':'第 '+r.round+' 輪 '+r.roundDone+'／'+r.roundTotal+'・今天 '+Math.min(r.todayDone,r.quota)+'／'+r.quota+(r.behind?'・落後 '+r.behind+' 題':'')+'・模擬題 '+(r.mockDone?'1':'0')+'／1'), 'rounds.html', '去練 →')); }
+      { const r=plan.rounds; ul.appendChild(li('今日題組：'+(r===null?'讀不到':r.finished?'五輪都跑完了':'第 '+r.round+' 輪 '+r.roundDone+'／'+r.roundTotal+'・今天 '+Math.min(r.todayDone,r.quota)+'／'+r.quota+(r.behind?'・落後 '+r.behind+' 題':'')+'・模擬題 '+(r.mockDone?'1':'0')+'／1'), 'rounds.html', '去練')); }
       const cards=(name,n,href,txt)=>ul.appendChild(li(name+'：'+n, n===null?null:href, txt));
-      cards('失分回想', plan.miss===null?'讀不到':plan.miss?'到期 '+plan.miss+' 張':'今天沒有到期的卡', 'review.html', '去複習 →');
+      cards('失分回想', plan.miss===null?'讀不到':plan.miss?'到期 '+plan.miss+' 張':'今天沒有到期的卡', 'review.html', '去複習');
       const deckText=d=>d===null?'讀不到':(d.due||d.fresh)?'到期 '+d.due+' 張、新卡 '+d.fresh+' 張':'今天做完了';
-      cards('考點回想', deckText(plan.topic), 'review.html#topics', '去複習 →');
-      cards('要點卡', deckText(plan.theory), 'commute.html', '到通勤模式 →');
-      if(plan.redo.length){ plan.redo.slice(0,5).forEach(r=>ul.appendChild(li('二刷：'+r.label+'（上次 '+r.score+' 分）', '#'+encodeURIComponent(r.id), '重寫這一題 →'))); if(plan.redo.length>5) ul.appendChild(li('另有 '+(plan.redo.length-5)+' 題到了二刷日。')); }
+      cards('考點回想', deckText(plan.topic), 'review.html#topics', '去複習');
+      cards('要點卡', deckText(plan.theory), 'commute.html', '到通勤模式');
+      if(plan.redo.length){ plan.redo.slice(0,5).forEach(r=>ul.appendChild(li('二刷：'+r.label+'（上次 '+r.score+' 分）', '#'+encodeURIComponent(r.id), '重寫這一題'))); if(plan.redo.length>5) ul.appendChild(li('另有 '+(plan.redo.length-5)+' 題到了二刷日。')); }
       else ul.appendChild(li('二刷：今天沒有到期的題目。'));
-      if(plan.next) ul.appendChild(li('建議新題：'+plan.next.subject+'・'+plan.next.chapter+'（'+plan.next.why+'）'+plan.next.token, '#'+encodeURIComponent(plan.next.id), '練這一題 →'));
+      if(plan.next) ul.appendChild(li('建議新題：'+plan.next.subject+'・'+plan.next.chapter+'（'+plan.next.why+'）'+plan.next.token, '#'+encodeURIComponent(plan.next.id), '練這一題'));
       else ul.appendChild(li('建議新題：目前沒有可推薦的題目。'));
       status.textContent='只讀取紀錄，不會更動。二刷名單來自你存過的作答歷程。';
     } catch(e){ ul.textContent=''; status.textContent='今日清單載入失敗，請確認網路後重新整理。'; }

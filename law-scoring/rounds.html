@@ -34,6 +34,14 @@
     <div class="cm-empty-actions" id="rd-empty-actions"></div>
   </section>
 
+  <details class="cm-settings rd-done" id="rd-done" hidden>
+    <summary id="rd-done-summary">今天做過的題</summary>
+    <div class="cm-settings-body">
+      <p class="small muted">重練只更新今天那一筆自評，不會多算一輪。</p>
+      <ul class="rd-done-list" id="rd-done-list"></ul>
+    </div>
+  </details>
+
   <details class="cm-settings">
     <summary>進度表與設定</summary>
     <div class="cm-settings-body">
@@ -50,8 +58,10 @@
         <span id="rd-font-label" aria-live="polite">標準</span>
         <button type="button" class="btn ghost" id="rd-font-up" aria-label="字級放大">A＋</button>
       </div>
+      <div class="confirm rd-clear" id="rd-clear-area"></div>
+      <p class="small muted" id="rd-clear-status" role="status"></p>
       <ul class="small muted">
-        <li>觀護人 190 題跑 5 輪、相關類科 363 題跑 3 輪，共 2,039 題次；每輪先出觀護人的題。每天的份量以 60 分鐘估算。</li>
+        <li>觀護人 190 題跑 5 輪、相關類科 363 題跑 3 輪，共 2,039 題次；每輪先出觀護人的題，各科輪流、一次一題。每天的份量以 60 分鐘估算。</li>
         <li>週一到週六照表推進，週日不排新進度，只補落後的題目。落後或超前是和進度表比，不影響題目順序。</li>
         <li>模擬題每天 1 題，取自<a href="../daily-simulation/">每日模擬題</a>最新、還沒練過的一題；這裡的紀錄不會寫回每日模擬題那一頁。模擬題由 AI 產生，內容待核對。</li>
         <li>自評只記錄，不改變輪次；骨架與自評存在這個瀏覽器，請定期到<a href="../backup/">完整備份</a>匯出。申論評分參考的自評分數不會被這一頁更動。</li>
@@ -68,6 +78,7 @@
       <div class="cm-bar-tools">
         <button type="button" class="cm-tool" id="rd-undo" hidden>復原上一題</button>
         <button type="button" class="cm-tool" id="rd-skip" hidden>先跳過</button>
+        <button type="button" class="cm-tool" id="rd-exit" hidden>回今日題組</button>
       </div>
     </div>
     <p class="status cm-status" id="rd-status" role="status" aria-live="polite"></p>

@@ -26,12 +26,13 @@ for(const r of RD.ROUNDS){
   if(r.scope==='guan') assert.equal(firstOther,-1,'round '+r.n+' is probation questions only'); else assert.equal(firstOther,190,'probation questions come first in round '+r.n);
   assert.deepEqual(RD.roundOrder(Q,r),ids,'order is stable between runs');
 }
-// 同一天集中 1 到 2 科：不論從哪一題開始，連續一天份量的題目最多跨 2 科（每輪、每層分別檢查）
+// 各科平均：每輪各科輪流、一次一題。觀護人六科在題數用完前，任何連續 6 題都是 6 個不同科目；第 1 輪每天 5 題是 5 個不同科目
 { const by=new Map(Q.map(q=>[q.id,q])), key=id=>by.get(id).examType+'／'+by.get(id).subject;
-  for(const r of RD.ROUNDS){ const ids=RD.roundOrder(Q,r);
-    for(const tier of r.scope==='guan'?[ids]:[ids.slice(0,190),ids.slice(190)]) for(let i=0;i+r.perDay<=tier.length;i++){ const n=new Set(tier.slice(i,i+r.perDay).map(key)).size; assert(n<=2,'round '+r.n+' window at '+i+' mixes '+n+' subjects'); } }
-  const ids=RD.roundOrder(Q,RD.ROUNDS[0]), g0=by.get(ids[0]); assert.equal(g0.year,Math.max(...guan.filter(q=>q.subject===g0.subject).map(q=>q.year)),'newest year first');
-  assert.equal(new Set(ids.slice(0,5).map(key)).size,1,'the first day is a single subject'); }
+  for(const r of RD.ROUNDS){ const ids=RD.roundOrder(Q,r); for(let i=0;i+6<=180;i++) assert.equal(new Set(ids.slice(i,i+6).map(key)).size,6,'round '+r.n+' window at '+i);
+    if(r.scope!=='guan'){ const rest=ids.slice(190), groups=new Set(rest.map(key)).size; assert.equal(groups,14); assert.equal(new Set(rest.slice(0,groups).map(key)).size,groups,'related subjects also take turns'); } }
+  const ids=RD.roundOrder(Q,RD.ROUNDS[0]); for(let d=0;d<36;d++) assert.equal(new Set(ids.slice(d*5,d*5+5).map(key)).size,5,'day '+(d+1)+' has five different subjects');
+  const g0=by.get(ids[0]); assert.equal(g0.year,Math.max(...guan.filter(q=>q.subject===g0.subject).map(q=>q.year)),'newest year first');
+  const per={}; ids.slice(0,30).forEach(id=>{per[key(id)]=(per[key(id)]||0)+1;}); assert.deepEqual(Object.values(per),[5,5,5,5,5,5],'the first week is five questions per subject'); }
 for(const q of Q) assert.equal(slots.filter(s=>s.id===q.id).length,RD.maxRound(q),q.id+' appears once per round in scope');
 
 // 進度表：週一到週六推進、週日不排；起算 2026-11-16（週一）
@@ -88,6 +89,19 @@ assert.deepEqual(plain(messy.items),{c:{done:[{d:S0,r:'partial',s:0}],notes:{1:'
 assert.deepEqual(plain(RD.pack(RD.normalize({__settings:{start:'2026-12-01'}}))),{__settings:{start:'2026-12-01'}});
 assert.equal(RD.setNote(empty,'x',1,'長'.repeat(5000)).items.x.notes[1].length,2000);
 
+// 今天做過的題、重練與清除
+{ let s=RD.record(empty,slots[1].id,'again',S0,100); s=RD.record(s,slots[0].id,'good',S0,50); s=RD.record(s,'mock:a','partial',S0,10); s=RD.record(s,slots[2].id,'good','2026-11-14',5); s=RD.setNote(s,slots[0].id,1,'骨架');
+  assert.deepEqual(plain(RD.doneToday(Q,s,S0)),[{key:slots[0].id,r:1,rate:'good'},{key:slots[1].id,r:1,rate:'again'},{key:'mock:a',r:1,rate:'partial'}],'in question order, mock last');
+  assert.deepEqual(plain(RD.doneToday(Q,s,'2026-11-17')),[]);
+  const r2=RD.rerate(s,slots[1].id,S0,'good',30); assert.deepEqual(plain(r2.items[slots[1].id].done),[{d:S0,r:'good',s:130}],'redo updates today\'s entry without adding one'); assert.deepEqual(plain(s.items[slots[1].id].done),[{d:S0,r:'again',s:100}],'rerate does not mutate');
+  assert.equal(RD.plan(Q,r2,S0,0).todayDone,RD.plan(Q,s,S0,0).todayDone); assert.equal(RD.plan(Q,r2,S0,0).doneTotal,3);
+  assert.equal(RD.rerate(s,slots[2].id,S0,'again',1),s,'nothing to redo when it was not done today'); assert.equal(RD.rerate(s,'nope',S0,'again',1),s);
+  const twice=RD.record(RD.record(empty,slots[0].id,'again','2026-11-14',1),slots[0].id,'partial',S0,1); assert.deepEqual(plain(RD.doneToday(Q,twice,S0)),[{key:slots[0].id,r:2,rate:'partial'}],'the round is the one done today');
+  const cd=RD.clearDay(s,S0); assert.deepEqual(plain(RD.pack(cd)),{[slots[0].id]:{done:[],notes:{1:'骨架'}},[slots[2].id]:{done:[{d:'2026-11-14',r:'good',s:5}]}},'only today\'s attempts go; notes and earlier days stay');
+  assert.equal(RD.plan(Q,cd,S0,0).todayDone,0); assert(!RD.mockDoneToday(cd,S0));
+  const withStart=RD.normalize({__settings:{start:'2026-12-01'},x:{done:[{d:S0,r:'good',s:1}]}}); assert.deepEqual(plain(RD.pack(RD.clearAll(withStart))),{__settings:{start:'2026-12-01'}},'clearing everything keeps the start date');
+  assert.deepEqual(plain(s.items[slots[0].id].done),[{d:S0,r:'good',s:50}],'clear does not mutate'); }
+
 // 模擬題：每天 1 題；最新、非待訂正、兩邊都沒練過；當天選定後不換
 const mocks=[{id:'a',date:'2026-11-12',reviewStatus:'待核對'},{id:'b',date:'2026-11-12',reviewStatus:'待訂正'},{id:'c',date:'2026-11-10',reviewStatus:'待核對'},{id:'d',date:'2026-11-09',reviewStatus:'待核對'},{id:'e',date:'2026-11-08',reviewStatus:'待核對',qualityStatus:'待訂正'}];
 assert.equal(RD.pickMock(mocks,empty,null,'').id,'a'); assert.equal(RD.pickMock(mocks,empty,null,'d').id,'d','today\'s pick is kept');
@@ -117,7 +131,7 @@ for(const q of Q){ assert(q.body&&q.title&&q.overview&&q.exam&&q.subject&&Array.
 
 // 頁面接線、離線清單、備份
 const html=read('law-scoring/rounds.html');
-for(const id of ['rounds-root','rd-load','rd-round','rd-count','rd-how','rd-bar','rd-bar-fill','rd-chips','rd-tally','rd-card','rd-meta','rd-title','rd-front','rd-note-wrap','rd-note','rd-note-label','rd-back','rd-empty','rd-empty-title','rd-empty-text','rd-empty-actions','rd-table-body','rd-start-form','rd-start','rd-start-status','rd-font-down','rd-font-up','rd-font-label','rd-progress','rd-clock','rd-undo','rd-skip','rd-status','rd-front-actions','rd-reveal','rd-rate'])
+for(const id of ['rounds-root','rd-load','rd-round','rd-count','rd-how','rd-bar','rd-bar-fill','rd-chips','rd-tally','rd-card','rd-meta','rd-title','rd-front','rd-note-wrap','rd-note','rd-note-label','rd-back','rd-empty','rd-empty-title','rd-empty-text','rd-empty-actions','rd-table-body','rd-start-form','rd-start','rd-start-status','rd-font-down','rd-font-up','rd-font-label','rd-progress','rd-clock','rd-undo','rd-skip','rd-status','rd-front-actions','rd-reveal','rd-rate','rd-exit','rd-done','rd-done-summary','rd-done-list','rd-clear-area','rd-clear-status'])
   assert(html.includes('id="'+id+'"'),'page has #'+id);
 for(const id of new Set((code.match(/\$\('([^']+)'\)/g)||[]).map(x=>x.slice(3,-2)))) assert(html.includes('id="'+id+'"'),'script uses #'+id+' which the page has');
 for(const k of ['again','partial','good']) assert(html.includes('data-rate="'+k+'"'));
@@ -130,4 +144,6 @@ for(const f of ['law-scoring/rounds.html','law-scoring/rounds.js','law-scoring/r
 assert(read('backup/unified-core.js').includes("key:'"+RD.KEY+"'")&&read('backup/app.js').includes("'"+RD.KEY+"'"),'round records are in the full backup');
 assert(!read('backup/unified-core.js').includes(RD.POS_KEY),'the per-device position is not backed up');
 const freeze=JSON.parse(read('docs/stability-freeze-policy.json')).criticalPaths; for(const f of ['law-scoring/rounds.html','law-scoring/rounds.js','law-scoring/index.html','law-scoring/app.js']) assert(!freeze.includes(f));
-console.log('PASS law-scoring rounds: order, schedule, daily set, records, mock pick, wiring');
+// 入口與今日清單的連結不帶箭頭
+assert(!/rounds\.html">[^<]*→/.test(read('law-scoring/index.html'))); assert(!/'[^']*→'/.test(read('law-scoring/app.js').split('// 今日清單的畫面')[1].split('box.addEventListener')[0]),'today list links have no arrows');
+console.log('PASS law-scoring rounds: order, schedule, daily set, records, redo, clear, mock pick, wiring');

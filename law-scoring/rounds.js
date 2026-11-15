@@ -32,7 +32,7 @@ function fmtDay(day) { const [, m, d] = day.split('-'); return Number(m) + '/' +
 /* ---------- 題目順序 ---------- */
 const isGuan = q => q.examType === '觀護人';
 const maxRound = q => isGuan(q) ? 5 : 3;
-// 一輪的出題順序：觀護人的題先出，再出相關類科；同一類科、科目的題連續出至少一天的份量後換下一科，年度新的在前。
+// 一輪的出題順序：觀護人的題先出，再出相關類科；各科輪流、一次一題，所以每天的題組各科平均；同一科裡年度新的在前。
 function roundOrder(questions, round) {
   const tiers = round.scope === 'guan' ? [questions.filter(isGuan)] : [questions.filter(isGuan), questions.filter(q => !isGuan(q))];
   const out = [];
@@ -41,8 +41,7 @@ function roundOrder(questions, round) {
     for (const q of tier) { const k = q.examType + '／' + q.subject; if (!groups.has(k)) groups.set(k, []); groups.get(k).push(q); }
     const queues = [...groups.values()].map(list => list.slice().sort((a, b) => b.year - a.year || a.no - b.no));
     let left = tier.length;
-    // 一科剩不到兩天的份量就一次出完，避免尾端零散的題目讓一天混到三科以上。
-    while (left > 0) for (const list of queues) { const take = list.splice(0, list.length < 2 * round.perDay ? list.length : round.perDay); for (const q of take) out.push(q.id); left -= take.length; }
+    while (left > 0) for (const list of queues) if (list.length) { out.push(list.shift().id); left--; }
   }
   return out;
 }
@@ -79,6 +78,29 @@ function pack(state) {
   }
   return out;
 }
+// 今天做過的題（依出題順序，模擬題在最後）；r 是今天那一次所屬的輪次。
+function doneToday(questions, state, today) {
+  const out = [], hit = id => { const d = state.items[id] ? state.items[id].done : []; for (let i = d.length - 1; i >= 0; i--) if (d[i].d === today) return {key: id, r: i + 1, rate: d[i].r}; return null; };
+  const seen = new Set();
+  for (const s of slots(questions)) { if (seen.has(s.id)) continue; seen.add(s.id); const h = hit(s.id); if (h) out.push(h); }
+  for (const k of Object.keys(state.items)) if (k.startsWith(MOCK)) { const h = hit(k); if (h) out.push(Object.assign(h, {r: 1})); }
+  return out;
+}
+// 重練：只更新今天那一筆的自評並累加秒數，不多算一次。
+function rerate(state, key, day, result, secs) {
+  const old = state.items[key]; if (!old) return state;
+  let i = old.done.length - 1; while (i >= 0 && old.done[i].d !== day) i--;
+  if (i < 0) return state;
+  const done = old.done.slice(); done[i] = {d: day, r: result, s: done[i].s + Math.max(0, Math.round(secs || 0))};
+  return {settings: state.settings, items: Object.assign({}, state.items, {[key]: {done, notes: old.notes}})};
+}
+// 清除：只清某一天的完成紀錄（骨架保留），或全部清除（起算日保留）。
+function clearDay(state, day) {
+  const items = {};
+  for (const [k, v] of Object.entries(state.items)) items[k] = {done: v.done.filter(x => x.d !== day), notes: v.notes};
+  return {settings: state.settings, items};
+}
+function clearAll(state) { return {settings: state.settings, items: {}}; }
 const countOf = (state, id) => state.items[id] ? state.items[id].done.length : 0;
 // 記一次完成；回傳新的紀錄，不改動原本的。
 function record(state, key, result, day, secs) {
@@ -177,7 +199,7 @@ function arrange(list, skipped) {
 }
 
 window.LawScoringRounds = {KEY, POS_KEY, DEFAULT_START, ROUNDS, MOCK, SETTINGS, isGuan, maxRound, roundOrder, slots, sizes, normalize, pack, countOf, record, setNote,
-  expectedBy, schedule, plan, mockDoneToday, pickMock, normPos, arrange, isRest, addDays, validDay,
+  expectedBy, schedule, plan, doneToday, rerate, clearDay, clearAll, mockDoneToday, pickMock, normPos, arrange, isRest, addDays, validDay,
   read() { try { return normalize(JSON.parse(localStorage.getItem(KEY))); } catch (e) { return normalize(null); } }};
 if (typeof document === 'undefined' || !document.getElementById('rounds-root')) return;
 
@@ -221,7 +243,7 @@ let today = ymd(new Date());
 let state = window.LawScoringRounds.read();
 let pos = normPos(readJSON(POS_KEY), today);
 let mocks = null;      // null：讀取中；false：讀不到；陣列：已讀到
-let current = null, stage = 'front', depthOverride = false, undo = null, savedOk = true;
+let current = null, stage = 'front', depthOverride = false, undo = null, redo = null; // redo：正在重練的今天做過的題
 let clockBase = 0, clockStart = 0, noteTimer = null, noteFor = '';
 
 function savePos() { write(POS_KEY, pos); }
@@ -293,7 +315,8 @@ function renderFront(item) {
     const q = item.q, last = state.items[q.id] && state.items[q.id].done[item.r - 2];
     $('rd-meta').textContent = '第 ' + item.r + ' 輪・' + q.exam;
     $('rd-title').textContent = q.subject + '・第 ' + q.no + ' 題（' + q.points + ' 分）';
-    if (last) front.appendChild(el('p', {class: 'rd-last'}, '上一輪：' + RATE_LABEL[last.r]));
+    if (redo) front.appendChild(el('p', {class: 'rd-last'}, '重練今天做過的題：自評會更新今天這一筆，不會多算一輪。'));
+    else if (last) front.appendChild(el('p', {class: 'rd-last'}, '上一輪：' + RATE_LABEL[last.r]));
     prose(front.appendChild(el('div', {class: 'rd-body'})), q.body);
     if (item.r === 1) {
       const d = LS.design(q);
@@ -306,7 +329,7 @@ function renderFront(item) {
     const m = item.m;
     $('rd-meta').textContent = '模擬題・' + M.subject(m) + '・' + m.date;
     $('rd-title').textContent = '今天的模擬題';
-    front.appendChild(el('p', {class: 'rd-last'}, 'AI 產生的模擬題，內容待核對，不是考古題。'));
+    front.appendChild(el('p', {class: 'rd-last'}, (redo ? '重練今天做過的題。' : '') + 'AI 產生的模擬題，內容待核對，不是考古題。'));
     prose(front.appendChild(el('div', {class: 'rd-body'})), M.displayQuestion(m));
   }
   const wantsNote = item.kind === 'mock' || item.r <= 2;
@@ -324,7 +347,7 @@ function renderBack(item) {
     const m = item.m;
     prose(section(back, '爭點'), m.issues);
     prose(section(back, '參考架構'), m.outline);
-    back.appendChild(el('a', {class: 'btn', href: '../daily-simulation/'}, '到每日模擬題完整作答 →'));
+    back.appendChild(el('a', {class: 'btn', href: '../daily-simulation/'}, '到每日模擬題完整作答'));
     return;
   }
   const q = item.q, depth = depthOf(item), d = LS.design(q);
@@ -354,7 +377,7 @@ function renderBack(item) {
   if (depth !== 'brief' && q.pitfalls && q.pitfalls.length) { const s = section(back, '常見失分'), l = el('ul'); q.pitfalls.forEach(x => l.appendChild(el('li', null, x))); s.appendChild(l); }
   const row = el('div', {class: 'rd-back-actions'});
   if (depth !== 'full') { const b = el('button', {class: 'btn ghost', type: 'button'}, '看完整評分要點'); b.onclick = () => { depthOverride = true; show(false); }; row.appendChild(b); }
-  row.appendChild(el('a', {class: 'btn', href: './#' + encodeURIComponent(q.id)}, '到申論評分參考完整作答 →'));
+  row.appendChild(el('a', {class: 'btn', href: './#' + encodeURIComponent(q.id)}, '到申論評分參考完整作答'));
   back.appendChild(row);
   back.appendChild(el('p', {class: 'small muted'}, q.srcLabel + '。評分要點由 AI 草擬，非官方評分。'));
 }
@@ -365,7 +388,7 @@ function tick() {
   $('rd-clock').textContent = mmss(sec) + '／約 ' + lim + ' 分';
   $('rd-clock').classList.toggle('is-over', sec > lim * 60);
 }
-function clockPause() { if (current && clockStart) { clockBase += (Date.now() - clockStart) / 1000; clockStart = 0; pos.secs[current.key] = Math.round(clockBase); savePos(); } }
+function clockPause() { if (current && clockStart) { clockBase += (Date.now() - clockStart) / 1000; clockStart = 0; if (!redo) { pos.secs[current.key] = Math.round(clockBase); savePos(); } } }
 function clockResume() { if (current && !clockStart && !document.hidden) clockStart = Date.now(); }
 
 function flushNote() {
@@ -384,7 +407,7 @@ function show(focus) {
   $('rd-back').hidden = !back; $('rd-card').classList.toggle('is-back', back);
   if (back) renderBack(item); else $('rd-back').textContent = '';
   $('rd-front-actions').hidden = back; $('rd-rate').hidden = !back;
-  $('rd-skip').hidden = back;
+  $('rd-skip').hidden = back || !!redo; $('rd-exit').hidden = !redo;
   tick();
   if (focus) { const t = back ? $('rd-back') : $('rd-title'); t.focus({preventScroll: true}); (back ? $('rd-back') : $('rd-card')).scrollIntoView({block: 'start'}); }
 }
@@ -409,13 +432,20 @@ function render(focus) {
   const {p, list, mockState} = todayItems();
   renderProgress(p, mockState);
   renderSchedule(p);
+  renderDone();
   const keep = current && list.find(x => x.key === current.key);
-  const next = keep || list.find(x => x.key === pos.id) || list[0] || null;
-  const changed = !current || !next || current.key !== next.key;
+  const next = redo || keep || list.find(x => x.key === pos.id) || list[0] || null;
+  const changed = !current || !next || current !== next && (current.key !== next.key || !!redo);
   current = next;
-  $('rd-undo').hidden = !undo;
+  $('rd-undo').hidden = !undo || !!redo;
+  if (redo) {
+    $('rd-empty').hidden = true; $('rd-card').hidden = false;
+    if (changed) { stage = 'front'; depthOverride = false; clockBase = 0; clockStart = 0; }
+    $('rd-progress').textContent = '重練中';
+    show(!!focus); clockResume(); return;
+  }
   if (!current) {
-    $('rd-card').hidden = true; $('rd-front-actions').hidden = true; $('rd-rate').hidden = true; $('rd-skip').hidden = true;
+    $('rd-card').hidden = true; $('rd-front-actions').hidden = true; $('rd-rate').hidden = true; $('rd-skip').hidden = true; $('rd-exit').hidden = true;
     $('rd-progress').textContent = ''; $('rd-clock').textContent = '';
     renderEmpty(p, mockState);
     if (focus) $('rd-empty-title').focus({preventScroll: true});
@@ -430,10 +460,15 @@ function render(focus) {
   clockResume();
 }
 
-function reveal() { if (!current || stage === 'back') return; flushNote(); stage = 'back'; pos.stage = stage; savePos(); show(true); status(''); }
+function reveal() { if (!current || stage === 'back') return; flushNote(); stage = 'back'; if (!redo) { pos.stage = stage; savePos(); } show(true); status(''); }
 function rate(result) {
   if (!current || stage !== 'back') return;
   flushNote(); clockPause();
+  if (redo) {
+    const again = rerate(state, redo.key, today, result, Math.min(clockBase, minutesOf(redo) * 60 * 3));
+    if (!saveState(again)) { status('目前瀏覽器無法保存，自評沒有更新。'); clockResume(); return; }
+    redo = null; current = null; stage = 'front'; undo = null; render(true); status('已更新今天的自評：' + RATE_LABEL[result] + '。'); return;
+  }
   const item = current, before = state, beforePos = JSON.parse(JSON.stringify(pos));
   const secs = Math.min(clockBase, minutesOf(item) * 60 * 3);
   if (!saveState(record(state, item.key, result, today, secs))) { status('目前瀏覽器無法保存，這一題沒有記錄。'); clockResume(); return; }
@@ -443,14 +478,34 @@ function rate(result) {
   render(true);
   status('記下了：' + RATE_LABEL[result] + '。');
 }
+function exitRedo() { if (!redo) return; flushNote(); clockPause(); redo = null; current = null; stage = 'front'; render(true); status('已回到今日題組。'); }
+function startRedo(h) {
+  flushNote(); clockPause();
+  const item = h.key.startsWith(MOCK) ? (Array.isArray(mocks) && mocks.find(m => MOCK + m.id === h.key) ? {key: h.key, kind: 'mock', r: 1, m: mocks.find(m => MOCK + m.id === h.key)} : null) : (byId.has(h.key) ? {key: h.key, kind: 'q', r: h.r, q: byId.get(h.key)} : null);
+  if (!item) { status('這一題現在讀不到，無法重練。'); return; }
+  redo = item; current = null; stage = 'front'; status(''); render(true);
+}
+// 今天做過的題：列在題目卡下方，可以再練一次。
+function renderDone() {
+  const list = doneToday(DATA.questions, state, today), box = $('rd-done'), ul = $('rd-done-list');
+  box.hidden = !list.length; ul.textContent = '';
+  $('rd-done-summary').textContent = '今天做過的題（' + list.length + '）';
+  list.forEach(h => {
+    const mock = h.key.startsWith(MOCK), q = byId.get(h.key), li = el('li');
+    li.appendChild(el('span', null, (mock ? '模擬題' : q ? q.subject + '・' + q.year + ' 年第 ' + q.no + ' 題' : h.key) + '（' + RATE_LABEL[h.rate] + '）'));
+    const b = el('button', {class: 'btn ghost', type: 'button'}, '重練'); b.onclick = () => startRedo(h);
+    if (redo && redo.key === h.key) { b.disabled = true; b.textContent = '重練中'; }
+    li.appendChild(b); ul.appendChild(li);
+  });
+}
 function skip() {
-  if (!current || stage === 'back') return;
+  if (!current || stage === 'back' || redo) return;
   flushNote(); clockPause();
   pos.skipped = pos.skipped.filter(k => k !== current.key).concat([current.key]); pos.id = ''; pos.stage = 'front';
   current = null; undo = null; render(true); status('先跳過，排到今天最後。');
 }
 function doUndo() {
-  if (!undo) return;
+  if (!undo || redo) return;
   flushNote(); clockPause();
   if (!undo()) { status('目前瀏覽器無法保存，沒有復原。'); return; }
   undo = null; current = null; stage = 'front'; noteFor = ''; render(true); status('已復原上一題，可以重新自評。');
@@ -470,6 +525,27 @@ function renderSchedule(p) {
 }
 function applyFont() { for (let i = 0; i < FONT_LABELS.length; i++) document.body.classList.toggle('cm-f' + i, pos.font === i); $('rd-font-label').textContent = FONT_LABELS[pos.font]; $('rd-font-down').disabled = pos.font === 0; $('rd-font-up').disabled = pos.font === FONT_LABELS.length - 1; }
 
+// 清除這一頁的紀錄（只動今日題組自己的紀錄）。先問範圍，再執行。
+function mkClear() { const b = el('button', {class: 'btn danger', type: 'button', id: 'rd-clear'}, '清除今日題組紀錄'); b.onclick = clearPrompt; return b; }
+function clearPrompt() {
+  const area = $('rd-clear-area'), msg = $('rd-clear-status'), back = () => { area.textContent = ''; area.appendChild(mkClear()); };
+  const n = Object.values(state.items).reduce((a, v) => a + v.done.length, 0), t = doneToday(DATA.questions, state, today).length;
+  area.textContent = ''; area.appendChild(el('span', null, '要清除哪些紀錄？目前共 ' + n + ' 筆，其中今天 ' + t + ' 筆。其他頁面的紀錄不受影響。'));
+  const day = el('button', {class: 'btn danger', type: 'button'}, '只清今天的'), all = el('button', {class: 'btn danger', type: 'button'}, '全部清除，回到第 1 輪'), no = el('button', {class: 'btn ghost', type: 'button'}, '取消');
+  const run = (next, text) => {
+    flushNote(); clockPause();
+    if (!saveState(next)) { msg.textContent = '目前瀏覽器無法保存，沒有清除。'; back(); return; }
+    pos = normPos({font: pos.font}, today); savePos(); redo = null; undo = null; current = null; stage = 'front'; noteFor = '';
+    back(); render(); msg.textContent = text;
+  };
+  day.onclick = () => run(clearDay(state, today), '已清除今天的完成紀錄；骨架與之前的紀錄保留。');
+  all.onclick = () => run(clearAll(state), '已清除今日題組的全部紀錄，回到第 1 輪；起算日與字級保留。');
+  no.onclick = () => { back(); msg.textContent = ''; };
+  if (t) area.appendChild(day); if (n || Object.keys(state.items).length) area.appendChild(all); area.appendChild(no);
+  if (!n && !Object.keys(state.items).length) { area.firstChild.textContent = '目前沒有紀錄可以清除。'; }
+}
+$('rd-clear-area').appendChild(mkClear());
+$('rd-exit').addEventListener('click', exitRedo);
 $('rd-reveal').addEventListener('click', reveal);
 $('rd-skip').addEventListener('click', skip);
 $('rd-undo').addEventListener('click', doUndo);
@@ -489,12 +565,12 @@ $('rd-start-form').addEventListener('submit', e => {
 document.addEventListener('visibilitychange', () => {
   if (document.hidden) { flushNote(); clockPause(); return; }
   const now = ymd(new Date());
-  if (now !== today) { today = now; pos = normPos(pos, today); savePos(); current = null; undo = null; }
+  if (now !== today) { today = now; pos = normPos(pos, today); savePos(); current = null; undo = null; redo = null; }
   state = window.LawScoringRounds.read(); render();
 });
 window.addEventListener('pagehide', () => { flushNote(); clockPause(); });
 // 其他分頁改了紀錄：重讀再畫，避免用舊資料覆蓋。
-window.addEventListener('storage', e => { if (e.key === KEY) { state = window.LawScoringRounds.read(); undo = null; render(); } });
+window.addEventListener('storage', e => { if (e.key === KEY) { state = window.LawScoringRounds.read(); undo = null; redo = null; render(); } });
 setInterval(tick, 1000);
 applyFont();
 render();
