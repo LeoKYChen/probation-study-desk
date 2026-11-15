@@ -30,7 +30,8 @@
   {key:'lawScoring.recall.v1',name:'失分回想卡',kind:'records'},
   {key:'lawScoring.topicRecall.v1',name:'考點回想',kind:'records'},
   {key:'lawScoring.theoryCards.v1',name:'要點卡（原理論卡）',kind:'records'},
-  {key:'lawScoring.rounds.v1',name:'今日題組輪次紀錄',kind:'records'}
+  {key:'lawScoring.rounds.v1',name:'今日題組輪次紀錄',kind:'records'},
+  {key:'lawScoring.plan.v1',name:'讀書計畫手動記錄',kind:'records'}
  ];
  const names=Object.fromEntries(modules.map(x=>[x.key,x]));
  const allowed=new Set([...modules.map(x=>x.key),CONFLICT_KEY]);

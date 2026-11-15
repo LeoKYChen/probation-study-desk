@@ -141,8 +141,8 @@ const at=iso=>new Date(iso+'T09:00:00+08:00');
     if(wd===320||wd===1280) await shot('w'+wd+'-back'); }
   // 申論評分參考：入口連結與今日清單多一行
   await fresh(390,844); await page.clock.setFixedTime(at('2026-11-16')); await page.goto(base,{waitUntil:'load'});
-  assert.equal(await page.locator('.rounds-entry a').getAttribute('href'),'rounds.html'); await page.locator('#today summary').click();
-  await page.waitForFunction(()=>document.querySelectorAll('#today-list li').length>=5); const first=await page.locator('#today-list li').first().innerText(); assert(first.includes('今日題組：第 1 輪 0／553・今天 0／5・模擬題 0／1'),first); assert(!(await text(page,'#today-list')).includes('→')); assert(!(await text(page,'.rounds-entry')).includes('→')); await noOverflow(page,'index'); await shot('08-index');
+  assert.equal(await page.locator('.rounds-entry a').first().getAttribute('href'),'rounds.html'); await page.locator('#today summary').click();
+  await page.waitForFunction(()=>document.querySelectorAll('#today-list li').length>=5); const first=await page.locator('#today-list li',{hasText:'今日題組'}).first().innerText(); assert(first.includes('今日題組：第 1 輪 0／553・今天 0／5・模擬題 0／1'),first); assert(!(await text(page,'#today-list')).includes('→')); assert(!(await page.locator('.rounds-entry').allInnerTexts()).join('').includes('→')); await noOverflow(page,'index'); await shot('08-index');
   assert.deepEqual(errors,[]);
   console.log('PASS law-scoring rounds browser: flow, resume, undo, skip, mock, extra, day change, redo, clear, depths, widths');
  } finally { await browser.close(); server.close(); }

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>讀書計畫｜觀護人練習臺</title><meta name="description" content="116 年觀護人在職備考的讀書計畫：三個階段、本週清單與五個檢核點。"><link rel="stylesheet" href="../shared-ui.css"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="commute.css"><link rel="stylesheet" href="rounds.css"><link rel="stylesheet" href="plan.css"><script src="data.js" defer></script><script src="rounds.js" defer></script><script src="plan.js" defer></script><link rel="manifest" href="../manifest.webmanifest"><meta name="theme-color" content="#315b7c"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="../pwa/icon-180.png"><link rel="stylesheet" href="../offline.css"><script src="../offline.js" defer></script><link rel="stylesheet" href="../assets/study-theme.css">
+</head>
+<body class="pl-page">
+<header class="study-header"><div class="study-header-inner"><a class="study-brand" href="../v2.5/"><span class="study-brand-mark" aria-hidden="true">觀</span>觀護人練習臺</a><span class="study-test-label">讀書計畫</span><nav class="nav-five" aria-label="主要導覽"><a href="../v2.5/">考古題練習</a><a href="./">申論評分參考</a><a href="summaries.html">重點整理</a><a href="review.html">失分回想卡</a><a href="commute.html">通勤</a></nav></div></header>
+<main>
+<div class="cm-wrap" id="plan-root">
+  <h1 class="cm-h1">讀書計畫</h1>
+  <p class="status" id="pl-load" role="status">載入中…</p>
+  <div id="pl-body" class="pl-body" hidden>
+    <section class="rd-progress" aria-label="目前階段">
+      <div class="rd-head"><strong id="pl-phase"></strong></div>
+      <p class="small muted rd-how" id="pl-goal"></p>
+      <div class="rd-chips" id="pl-chips"></div>
+      <p class="small muted" id="pl-exam-note"></p>
+    </section>
+
+    <section class="sheet pl-sheet" aria-labelledby="pl-week-h">
+      <h2 id="pl-week-h">本週清單</h2>
+      <p class="small muted">今日題組、模擬題與完整寫題的數字自動從紀錄帶入；心理學與講義重讀請自己記。</p>
+      <ul class="pl-list" id="pl-week"></ul>
+      <p class="status" id="pl-status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="sheet pl-sheet" aria-labelledby="pl-cp-h">
+      <h2 id="pl-cp-h">檢核點</h2>
+      <ol class="pl-cps" id="pl-cps"></ol>
+    </section>
+
+    <section class="sheet pl-sheet" aria-labelledby="pl-ph-h">
+      <h2 id="pl-ph-h">三個階段怎麼過</h2>
+      <div id="pl-phases"></div>
+    </section>
+
+    <details class="cm-settings">
+      <summary>這份計畫的依據與限制</summary>
+      <div class="cm-settings-body">
+        <ul class="small muted">
+          <li>一科只認一套教材：主書就是函授講義。先跑完一遍再大量寫題，以寫得出來為準。</li>
+          <li>邊上新課邊複習，不等全部上完；考古題不限本類科；沒有科目可以放掉。</li>
+          <li>在職要固定時段，每週留一天休息。這份計畫每週桌前約 10 到 14 小時，比多數在職上榜者略少，靠通勤的題組與卡片補足。</li>
+          <li>以上原則整理自網路上的上榜心得；心得只有上榜的人會寫，時程偏樂觀。每四週依實際數字檢討，不照表硬撐。</li>
+          <li>這一頁手動記的內容存在這個瀏覽器，請定期到<a href="../backup/">完整備份</a>匯出。其他頁面的紀錄只讀取、不更動。</li>
+        </ul>
+      </div>
+    </details>
+    <nav class="cm-links" aria-label="其他頁面"><a href="rounds.html">今日題組</a><a href="./">申論評分參考</a><a href="commute.html">通勤模式</a><a href="../professional/">每日30分鐘</a></nav>
+  </div>
+</div>
+</main>
+</body>
+</html>
