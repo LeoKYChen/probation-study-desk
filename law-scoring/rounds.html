@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>今日題組｜觀護人練習臺</title><meta name="description" content="考古題輪次練習加每天 1 題模擬題，一頁做完：觀護人題 5 輪、相關類科 3 輪，顯示今日配額與落後題數。"><link rel="stylesheet" href="../shared-ui.css"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="commute.css"><link rel="stylesheet" href="rounds.css"><script src="data.js" defer></script><script src="exam-design/index.js" defer></script><script src="app.js" defer></script><script src="../daily-simulation/model.js" defer></script><script src="rounds.js" defer></script><link rel="manifest" href="../manifest.webmanifest"><meta name="theme-color" content="#315b7c"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="../pwa/icon-180.png"><link rel="stylesheet" href="../offline.css"><script src="../offline.js" defer></script><link rel="stylesheet" href="../assets/study-theme.css">
+</head>
+<body class="cm-page rd-page">
+<header class="study-header"><div class="study-header-inner"><a class="study-brand" href="../v2.5/"><span class="study-brand-mark" aria-hidden="true">觀</span>觀護人練習臺</a><span class="study-test-label">今日題組</span><nav class="nav-five" aria-label="主要導覽"><a href="../v2.5/">考古題練習</a><a href="./">申論評分參考</a><a href="summaries.html">重點整理</a><a href="review.html">失分回想卡</a><a href="commute.html">通勤</a></nav></div></header>
+<main>
+<div class="cm-wrap" id="rounds-root">
+  <h1 class="cm-h1">今日題組</h1>
+  <p class="status" id="rd-load" role="status">載入中…</p>
+
+  <section class="rd-progress" aria-label="輪次進度">
+    <div class="rd-head"><strong id="rd-round"></strong><span class="rd-count" id="rd-count"></span></div>
+    <div class="rd-bar" id="rd-bar" role="progressbar" aria-label="這一輪的進度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="rd-bar-fill"></span></div>
+    <p class="small muted rd-how" id="rd-how"></p>
+    <div class="rd-chips" id="rd-chips"></div>
+    <p class="small muted rd-tally" id="rd-tally"></p>
+  </section>
+
+  <section class="sheet cm-card rd-card" id="rd-card" hidden aria-labelledby="rd-title">
+    <p class="kicker" id="rd-meta"></p>
+    <h2 id="rd-title" tabindex="-1"></h2>
+    <div id="rd-front"></div>
+    <div class="rd-note-wrap" id="rd-note-wrap" hidden>
+      <label class="small muted" for="rd-note" id="rd-note-label"></label>
+      <textarea id="rd-note" class="rd-note" maxlength="2000" rows="4"></textarea>
+    </div>
+    <div class="cm-back rd-back" id="rd-back" hidden tabindex="-1"></div>
+  </section>
+
+  <section class="sheet cm-empty" id="rd-empty" hidden aria-labelledby="rd-empty-title">
+    <h2 id="rd-empty-title" tabindex="-1"></h2>
+    <p id="rd-empty-text"></p>
+    <div class="cm-empty-actions" id="rd-empty-actions"></div>
+  </section>
+
+  <details class="cm-settings">
+    <summary>進度表與設定</summary>
+    <div class="cm-settings-body">
+      <ol class="rd-plan" id="rd-table-body" aria-label="輪次進度表"></ol>
+      <form class="rd-start" id="rd-start-form">
+        <label for="rd-start">起算日</label>
+        <input type="date" id="rd-start" required min="2026-01-01" max="2035-12-31">
+        <button type="submit" class="btn ghost">更新</button>
+        <p class="small muted" id="rd-start-status" role="status"></p>
+      </form>
+      <div class="cm-font" role="group" aria-label="卡片字級">
+        <span>卡片字級</span>
+        <button type="button" class="btn ghost" id="rd-font-down" aria-label="字級縮小">A−</button>
+        <span id="rd-font-label" aria-live="polite">標準</span>
+        <button type="button" class="btn ghost" id="rd-font-up" aria-label="字級放大">A＋</button>
+      </div>
+      <ul class="small muted">
+        <li>觀護人 190 題跑 5 輪、相關類科 363 題跑 3 輪，共 2,039 題次；每輪先出觀護人的題。每天的份量以 60 分鐘估算。</li>
+        <li>週一到週六照表推進，週日不排新進度，只補落後的題目。落後或超前是和進度表比，不影響題目順序。</li>
+        <li>模擬題每天 1 題，取自<a href="../daily-simulation/">每日模擬題</a>最新、還沒練過的一題；這裡的紀錄不會寫回每日模擬題那一頁。模擬題由 AI 產生，內容待核對。</li>
+        <li>自評只記錄，不改變輪次；骨架與自評存在這個瀏覽器，請定期到<a href="../backup/">完整備份</a>匯出。申論評分參考的自評分數不會被這一頁更動。</li>
+      </ul>
+    </div>
+  </details>
+  <nav class="cm-links" aria-label="其他頁面"><a href="./">申論評分參考</a><a href="commute.html">通勤模式</a><a href="summaries.html">重點整理</a><a href="../professional/">每日30分鐘</a></nav>
+</div>
+</main>
+<div class="cm-bar" id="rd-bar-bottom" role="region" aria-label="題目操作">
+  <div class="cm-bar-inner">
+    <div class="cm-bar-top">
+      <p class="cm-progress"><span id="rd-progress"></span> <span class="rd-clock" id="rd-clock" aria-hidden="true"></span></p>
+      <div class="cm-bar-tools">
+        <button type="button" class="cm-tool" id="rd-undo" hidden>復原上一題</button>
+        <button type="button" class="cm-tool" id="rd-skip" hidden>先跳過</button>
+      </div>
+    </div>
+    <p class="status cm-status" id="rd-status" role="status" aria-live="polite"></p>
+    <div class="cm-actions cm-single" id="rd-front-actions" hidden>
+      <button type="button" class="btn primary" id="rd-reveal">翻開對照</button>
+    </div>
+    <div class="cm-actions cm-rate rd-rate" id="rd-rate" hidden>
+      <button type="button" class="btn danger" data-rate="again">沒抓到</button>
+      <button type="button" class="btn ghost" data-rate="partial">抓到一半</button>
+      <button type="button" class="btn primary" data-rate="good">抓到了</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
