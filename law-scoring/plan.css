@@ -1,0 +1,45 @@
+/* 讀書計畫（plan.html）：沿用通勤模式與今日題組的版面，這裡只放清單、檢核點與階段說明的樣式。 */
+.pl-body{display:flex;flex-direction:column;gap:14px;min-width:0}
+.pl-sheet{padding:16px 18px;min-width:0}
+.pl-sheet h2{font-size:18px;margin:0 0 6px}
+.pl-list{list-style:none;margin:8px 0 0;padding:0}
+.pl-list>li{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;padding:10px 0;border-top:1px solid var(--rule);min-width:0}
+.pl-list>li>strong{flex:0 0 auto;min-width:6.5em}
+.pl-val{flex:1 1 12em;min-width:0;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.pl-list>li>a{flex:none;min-height:44px;display:inline-flex;align-items:center;font-weight:700}
+.pl-list>li.is-late .pl-val{color:var(--seal);font-weight:700}
+.pl-step{display:flex;gap:8px;flex:1 1 100%}
+.pl-step .btn{min-height:44px;flex:1 1 0}
+.pl-step .btn.ghost{flex:0 0 72px}
+.pl-grid{flex:1 1 100%;display:flex;flex-direction:column;min-width:0}
+.pl-grid-row{display:flex;flex-wrap:wrap;align-items:center;gap:2px 14px;padding:4px 0;border-top:1px dashed var(--rule)}
+.pl-grid-row:first-child{border-top:0}
+.pl-sub{flex:1 1 100%;min-width:0;font-weight:700;padding-top:6px}
+.pl-check{display:inline-flex;align-items:center;gap:8px;min-height:44px;cursor:pointer}
+.pl-check input{width:22px;height:22px;flex:none;accent-color:var(--accent)}
+.pl-cps{list-style:none;margin:8px 0 0;padding:0}
+.pl-cp{border:1px solid var(--rule);border-radius:10px;padding:10px 12px;margin:0 0 10px;min-width:0}
+.pl-cp ul{margin:6px 0;padding-left:0;list-style:none}
+.pl-cp ul li{margin:4px 0;overflow-wrap:anywhere}
+.pl-cp ul li.is-ok{color:var(--accent)}
+.pl-cp-head{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0}
+.pl-badge{display:inline-flex;align-items:center;min-height:26px;padding:1px 10px;border-radius:999px;border:1px solid var(--rule);font-size:13.5px;font-weight:700}
+.pl-cp.is-done{border-color:var(--accent)}
+.pl-cp.is-done .pl-badge{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.pl-cp.is-late{border-color:var(--seal)}
+.pl-cp.is-late .pl-badge{border-color:var(--seal);color:var(--seal);background:var(--seal-soft)}
+.pl-fallback{margin:6px 0 0;font-weight:700;color:var(--seal)}
+.pl-cp>p.small{margin:6px 0 0}
+.pl-papers{display:flex;flex-wrap:wrap;gap:0 16px}
+.pl-phase{border-top:1px solid var(--rule)}
+.pl-phase>summary{min-height:48px;display:flex;align-items:center;font-weight:700;cursor:pointer}
+.pl-phase.is-now>summary{color:var(--accent)}
+.pl-phase-body{padding:0 0 12px}
+.pl-phase-body p{margin:0 0 8px}
+.pl-phase-body dl{margin:0 0 8px}
+.pl-phase-body dt{font-weight:700;margin-top:8px}
+.pl-phase-body dd{margin:2px 0 0}
+.pl-phase-body ul{margin:0;padding-left:20px}
+.pl-check:focus-within,.pl-phase>summary:focus-visible,.pl-list a:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+#pl-exam-note{margin:4px 0 0}
+#pl-status:empty{display:none}
