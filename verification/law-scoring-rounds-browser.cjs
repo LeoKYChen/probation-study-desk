@@ -44,6 +44,7 @@ const at=iso=>new Date(iso+'T09:00:00+08:00');
   let c=await chips(); assert(c.includes('今日 0／5')&&c.includes('模擬題 0／1')&&c.includes('進度正常')&&c.includes('照表 7/30 跑完'),c.join('|'));
   assert(await vis(page,'#rd-card')); assert.equal(await text(page,'#rd-title'),await titleOf(order[0].id)); assert((await text(page,'#rd-meta')).startsWith('第 1 輪・'));
   assert(await vis(page,'#rd-reveal')); assert(!(await vis(page,'#rd-rate'))); assert(!(await vis(page,'#rd-back'))); assert(await vis(page,'#rd-skip')); assert(!(await vis(page,'#rd-undo')));
+  assert.equal(new Set(await page.evaluate(ids=>ids.map(i=>window.LawScoringData.questions.find(q=>q.id===i).subject),order.slice(0,5).map(x=>x.id))).size,5,'the first day covers five subjects');
   // 第 1 輪：題幹要求按需載入；骨架可以寫，重畫不會洗掉
   await page.locator('#rd-note').pressSequentially('立法理由 → 規範');
   await page.locator('.rd-demands summary').waitFor(); assert.equal(await page.locator('#rd-note').inputValue(),'立法理由 → 規範');
@@ -75,6 +76,18 @@ const at=iso=>new Date(iso+'T09:00:00+08:00');
   assert(await vis(page,'#rd-empty')); assert.equal(await text(page,'#rd-empty-title'),'今天的題組做完了'); assert((await chips()).includes('今日 5／5')); assert(!(await vis(page,'#rd-card'))); await shot('05-done');
   // 加開 5 題
   await page.locator('#rd-empty-actions button').click(); assert(await vis(page,'#rd-card')); assert.equal(await text(page,'#rd-title'),await titleOf(order[5].id)); assert((await chips()).includes('今日 5／10'));
+  // 今天做過的題：可以重練；重練只更新今天那一筆自評，不多算
+  assert(await vis(page,'#rd-done')); assert.equal(await text(page,'#rd-done-summary'),'今天做過的題（6）'); await page.locator('#rd-done summary').click(); assert.equal(await page.locator('#rd-done-list li').count(),6);
+  const beforeRedo=await store(page,KEY); await page.locator('#rd-done-list li').first().locator('button').click();
+  assert.equal(await text(page,'#rd-title'),await titleOf(order[0].id)); assert((await text(page,'#rd-front')).includes('重練今天做過的題')); assert.equal(await text(page,'#rd-progress'),'重練中'); assert(await vis(page,'#rd-exit')); assert(!(await vis(page,'#rd-skip'))); assert(!(await vis(page,'#rd-undo')));
+  assert.equal(await page.locator('#rd-note').inputValue(),'立法理由 → 規範'); await shot('05b-redo');
+  await page.locator('#rd-reveal').click(); assert(await page.locator('#rd-back .rd-detail').count()>0); await page.locator('[data-rate="good"]').click();
+  s=await store(page,KEY); assert.equal(s[order[0].id].done.length,1); assert.equal(s[order[0].id].done[0].r,'good'); assert.equal(beforeRedo[order[0].id].done[0].r,'again'); assert((await text(page,'#rd-status')).includes('已更新今天的自評'));
+  assert((await chips()).includes('今日 5／10')); assert.equal(await text(page,'#rd-title'),await titleOf(order[5].id),'back to the normal set');
+  // 重練中可以直接回今日題組，不留紀錄；模擬題也能重練
+  await page.locator('#rd-done-list li').last().locator('button').click(); assert.equal(await text(page,'#rd-title'),'今天的模擬題'); await page.locator('#rd-exit').click(); assert.equal(await text(page,'#rd-title'),await titleOf(order[5].id)); assert.deepEqual(await store(page,KEY),s);
+  // 重練中重新整理：回到一般題組，不會卡在重練
+  await page.locator('#rd-done-list li').nth(1).locator('button').click(); await page.reload({waitUntil:'load'}); assert.equal(await text(page,'#rd-title'),await titleOf(order[5].id));
   // 其他紀錄沒有被動到
   assert.equal(await page.evaluate(()=>localStorage.getItem('lawScoring.v2')),null); assert.equal(await page.evaluate(()=>localStorage.getItem('probation-daily-github:records:v1')),null);
 
@@ -85,10 +98,22 @@ const at=iso=>new Date(iso+'T09:00:00+08:00');
   await open('2026-11-19'); assert((await chips()).some(x=>x==='落後 10 題'),(await chips()).join('|'));
   await open('2026-11-22'); c=await chips(); assert(c.includes('今日 0／10')&&c.includes('落後 25 題，今天補'),c.join('|'));
   // 進度表與起算日
-  await page.locator('.cm-settings summary').click(); assert.equal(await page.locator('#rd-table-body li').count(),5); assert.equal(await page.locator('#rd-table-body li.is-now strong').innerText(),'第 1 輪');
+  await page.locator('.cm-settings:not(.rd-done) summary').click(); assert.equal(await page.locator('#rd-table-body li').count(),5); assert.equal(await page.locator('#rd-table-body li.is-now strong').innerText(),'第 1 輪');
   assert.deepEqual((await page.locator('#rd-table-body li span:nth-child(2)').allInnerTexts()).map(x=>x.split('・').pop()),['3/24 完成','5/28 完成','7/10 完成','7/22 完成','7/30 完成']); assert.equal(await page.locator('#rd-start').inputValue(),'2026-11-16');
   await page.locator('#rd-start').fill('2026-11-23'); await page.locator('#rd-start-form button').click(); assert((await chips()).some(x=>x.startsWith('起算日 11/23'))); assert.equal((await store(page,KEY)).__settings.start,'2026-11-23'); await noOverflow(page,'settings open'); await shot('06-settings');
   await page.locator('#rd-start').fill('2026-11-16'); await page.locator('#rd-start-form button').click(); assert.equal((await store(page,KEY)).__settings,undefined);
+  // 清除：只清今天的（之前的紀錄與骨架保留）、全部清除（起算日與字級保留）；其他頁面的紀錄不動
+  await page.evaluate(()=>{ localStorage.setItem('lawScoring.v2',JSON.stringify({keep:{answer:'x'}})); localStorage.setItem('probation-study30-v251:v1','{"version":1,"sessions":{}}'); });
+  await page.locator('#rd-reveal').click(); await page.locator('[data-rate="good"]').click(); assert((await chips()).includes('今日 1／10'));
+  const preClear=await store(page,KEY), doneKeys=Object.keys(preClear).filter(k=>preClear[k].done&&preClear[k].done.length); assert.equal(doneKeys.length,7);
+  await page.locator('#rd-clear').click(); assert((await text(page,'#rd-clear-area')).includes('目前共 7 筆，其中今天 1 筆')); await noOverflow(page,'clear prompt'); await shot('06b-clear');
+  await page.locator('#rd-clear-area button',{hasText:'取消'}).click(); assert.deepEqual(await store(page,KEY),preClear); assert(await vis(page,'#rd-clear'));
+  await page.locator('#rd-clear').click(); await page.locator('#rd-clear-area button',{hasText:'只清今天的'}).click();
+  s=await store(page,KEY); assert.equal(Object.values(s).reduce((a,v)=>a+(v.done?v.done.length:0),0),6); assert.equal(s[order[0].id].notes[1],'立法理由 → 規範'); assert((await chips()).includes('今日 0／10')); assert((await text(page,'#rd-clear-status')).includes('已清除今天'));
+  await page.locator('#rd-clear').click(); assert.equal(await page.locator('#rd-clear-area button',{hasText:'只清今天的'}).count(),0); await page.locator('#rd-clear-area button',{hasText:'全部清除'}).click();
+  assert.deepEqual(await store(page,KEY),{}); assert.equal(await text(page,'#rd-count'),'0／553'); assert(!(await vis(page,'#rd-done'))); assert.equal(await text(page,'#rd-title'),await titleOf(order[0].id));
+  assert.equal(await page.evaluate(()=>localStorage.getItem('lawScoring.v2')),'{"keep":{"answer":"x"}}'); assert.equal(await page.evaluate(()=>localStorage.getItem('probation-study30-v251:v1')),'{"version":1,"sessions":{}}');
+  await page.evaluate(()=>{ localStorage.removeItem('lawScoring.v2'); localStorage.removeItem('probation-study30-v251:v1'); });
   // 字級
   await page.locator('#rd-font-up').click(); assert(await page.evaluate(()=>document.body.classList.contains('cm-f2'))); assert.equal((await store(page,POS)).font,2); await page.locator('#rd-font-down').click();
 
@@ -117,8 +142,8 @@ const at=iso=>new Date(iso+'T09:00:00+08:00');
   // 申論評分參考：入口連結與今日清單多一行
   await fresh(390,844); await page.clock.setFixedTime(at('2026-11-16')); await page.goto(base,{waitUntil:'load'});
   assert.equal(await page.locator('.rounds-entry a').getAttribute('href'),'rounds.html'); await page.locator('#today summary').click();
-  await page.waitForFunction(()=>document.querySelectorAll('#today-list li').length>=5); const first=await page.locator('#today-list li').first().innerText(); assert(first.includes('今日題組：第 1 輪 0／553・今天 0／5・模擬題 0／1'),first); await noOverflow(page,'index'); await shot('08-index');
+  await page.waitForFunction(()=>document.querySelectorAll('#today-list li').length>=5); const first=await page.locator('#today-list li').first().innerText(); assert(first.includes('今日題組：第 1 輪 0／553・今天 0／5・模擬題 0／1'),first); assert(!(await text(page,'#today-list')).includes('→')); assert(!(await text(page,'.rounds-entry')).includes('→')); await noOverflow(page,'index'); await shot('08-index');
   assert.deepEqual(errors,[]);
-  console.log('PASS law-scoring rounds browser: flow, resume, undo, skip, mock, extra, day change, depths, widths');
+  console.log('PASS law-scoring rounds browser: flow, resume, undo, skip, mock, extra, day change, redo, clear, depths, widths');
  } finally { await browser.close(); server.close(); }
 })().catch(e=>{ console.error(e); process.exit(1); });
