@@ -214,10 +214,12 @@ function renderTimed(q,s,d){
   count();
 }
 // ── 今日清單：把回想卡到期數、該二刷的題目與一題建議新題放在一起。純計算，不寫入任何紀錄。
-// env：{store, cardStore, today, data, summaries, R, TR, TH, WK, score}
+// env：{store, cardStore, today, data, summaries, R, TR, TH, WK, score, RD, roundState}
 function todayPlan(env){
   const {store, today, data, summaries:SM, R, TR, TH, WK}=env, byId=new Map(data.questions.map(q=>[q.id,q]));
-  const out={miss:null, topic:null, theory:null, redo:[], next:null};
+  const out={miss:null, topic:null, theory:null, redo:[], next:null, rounds:null};
+  // 今日題組（rounds.js）：只取進度數字，不寫入。
+  if(env.RD){ try { const p=env.RD.plan(data.questions, env.roundState, today, 0); out.rounds={round:p.round, roundDone:p.roundDone, roundTotal:p.roundTotal, todayDone:p.todayDone, quota:p.quota, behind:p.behind, finished:p.finished, mockDone:env.RD.mockDoneToday(env.roundState, today)}; } catch(e){ out.rounds=null; } }
   if(R){ try { out.miss=R.dueCards(R.syncCards(store, env.cardStore||{}, today), today, null).length; } catch(e){ out.miss=null; } }
   const ready=SM&&SM.list.every(m=>SM.items[m.slug]);
   let weak=null;
@@ -421,10 +423,11 @@ window.addEventListener('hashchange',()=>{ const q=fromHash(); if(q&&q!==current
     const status=$('today-status'), ul=$('today-list'); status.textContent='計算中…';
     try {
       await loadAll(['review.js','weakness.js','summaries/index.js']);
-      const SM=window.LawScoringSummaries; await loadAll(SM.list.map(m=>'summaries/'+m.file)); await loadAll(['topic-recall.js','theory-cards.js']);
-      const R=window.LawScoringReview, TR=window.LawScoringTopicRecall, TH=window.LawScoringTheoryCards, WK=window.LawScoringWeakness;
-      const plan=todayPlan({store, cardStore:readJ(R.CARD_KEY), today:ymd(Date.now()), data:DATA, summaries:SM, R, TR, TH, WK, score:(q,s)=>score(q,s), topicState:TR.readState(), theoryState:TH.readState()});
+      const SM=window.LawScoringSummaries; await loadAll(SM.list.map(m=>'summaries/'+m.file)); await loadAll(['topic-recall.js','theory-cards.js','rounds.js']);
+      const R=window.LawScoringReview, TR=window.LawScoringTopicRecall, TH=window.LawScoringTheoryCards, WK=window.LawScoringWeakness, RD=window.LawScoringRounds;
+      const plan=todayPlan({store, cardStore:readJ(R.CARD_KEY), today:ymd(Date.now()), data:DATA, summaries:SM, R, TR, TH, WK, score:(q,s)=>score(q,s), topicState:TR.readState(), theoryState:TH.readState(), RD, roundState:RD?RD.read():null});
       ul.textContent='';
+      { const r=plan.rounds; ul.appendChild(li('今日題組：'+(r===null?'讀不到':r.finished?'五輪都跑完了':'第 '+r.round+' 輪 '+r.roundDone+'／'+r.roundTotal+'・今天 '+Math.min(r.todayDone,r.quota)+'／'+r.quota+(r.behind?'・落後 '+r.behind+' 題':'')+'・模擬題 '+(r.mockDone?'1':'0')+'／1'), 'rounds.html', '去練 →')); }
       const cards=(name,n,href,txt)=>ul.appendChild(li(name+'：'+n, n===null?null:href, txt));
       cards('失分回想', plan.miss===null?'讀不到':plan.miss?'到期 '+plan.miss+' 張':'今天沒有到期的卡', 'review.html', '去複習 →');
       const deckText=d=>d===null?'讀不到':(d.due||d.fresh)?'到期 '+d.due+' 張、新卡 '+d.fresh+' 張':'今天做完了';
