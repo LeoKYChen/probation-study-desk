@@ -4,6 +4,15 @@
 
 版本規範、驗收與發布方式參見 [Release 維護指引](docs/RELEASE_PROCESS.md)。子模組內的 `v2.5`、`v2.5.4` 等名稱，不直接代表整個網站的 Release 版本。
 
+## 2026-11-15 — 每日30分鐘：平日先出還沒練過的觀護人考古題（分支 `claude/study30-probation-first`，待合併）
+
+- `professional/practice-session.js`：週一到週六的今日練習題，改為先從當天科目裡還沒練過的觀護人考古題抽一題，不重複。「練過」只算有計時、草稿或自評的日期；只是打開頁面而自動排到的題不算，之後還會再出。該科觀護人題都練過後（每科 31 到 32 題），回到原本的規則：到期複習、待加強重練、依日期抽題。
+- 影響：平日不再自動排入到期複習的舊題（原本到期的題會優先於新題）。到期的題仍可在複習清單按「安排為今日題目」，週日的錯題重答與共同科目流程不變。補練本週已過日期時也套用同樣的選法。
+- 已經排好的日期不會換題；紀錄鍵與紀錄格式沒有更動。頁面檔（`professional/index.html`）沒有改。
+- `professional/sw.js` 輪替離線快取名稱，讓已安裝的版本取得新程式；`docs/LAYOUT_REVIEW_CHANGES.json` 同步更新兩個檔案的雜湊。
+- 檢查：`npm test` 39/39；新增 `verification/study30-probation-first-browser.cjs`（需 Playwright：六個平日科目、沒開始的日期不算、連續 32 週不重複、全部練過後回到原規則、補練）。既有的 `study30-structure-coach-browser.cjs`、`study30-answer-link-browser.cjs` 在 Chromium 通過。
+- 尚未驗證：WebKit／實體 iPhone、已安裝離線版升級後的行為。
+
 ## 2026-11-14 — 律司手機版面修正（分支 `claude/lj-mobile-layout-fixes`，待合併）
 
 使用者在 iPhone 上驗收後回報的四項：

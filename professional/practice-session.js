@@ -58,8 +58,15 @@
   function newestRatingById(){const result=new Map();for(const [date,s] of priorRecords()){if(s?.questionId&&!result.has(s.questionId)&&s.rating)result.set(s.questionId,{rating:s.rating,date});}return result;}
   function reviewCandidate(target,iso){const ratings=newestRatingById();const eligible=pool(target).filter(q=>{const r=ratings.get(q.id);return r?.rating==='review'&&dayIndex(iso)-dayIndex(r.date)>=3;});return eligible.sort((a,b)=>dayIndex(ratings.get(a.id).date)-dayIndex(ratings.get(b.id).date))[0]||null;}
   function chooseQuestion(iso){const sub=subjectFor(iso);if(sub.sunday){const prior=priorRecords().filter(([d,s])=>d<iso&&s?.questionId);const rated=prior.filter(([d,s])=>s.rating==='review');const due=Review?.chooseDue(store.sessions,BANK,iso,null,true);const from=due||(rated[0]||prior[0])?.[1]?.questionId;return BANK.find(q=>q.id===from)||pick(pool('心理學'),iso+':sunday');}
+    // 2026-11-15：平日先出還沒練過的觀護人考古題，不重複；該科觀護人題都練過後，才回到原本的到期複習與依日期抽題。
+    const fresh=freshProbation(sub.target,iso);if(fresh)return fresh;
     const due=Review?.chooseDue(store.sessions,BANK,iso,sub.target,false);
     return BANK.find(q=>q.id===due)||reviewCandidate(sub.target,iso)||pick(pool(sub.target),iso+':'+sub.target);
+  }
+  // 「練過」只算有計時、草稿或自評的日期；只是打開頁面而自動排到的題不算，之後還會再出。
+  function freshProbation(target,iso){
+    const used=new Set(Object.entries(store.sessions).filter(([date,s])=>date!==iso&&s?.questionId&&hasSessionProgress(s)).map(([,s])=>s.questionId));
+    return pick(pool(target).filter(q=>examIsProbation(q)&&!used.has(q.id)),iso+':probation:'+target);
   }
   function newSession(iso,mode='30',original=null){
     const questionId=original?original.questionId:chooseQuestion(iso)?.id;
@@ -80,7 +87,7 @@
       const created=newSession(iso),subject=subjectFor(iso);
       // Use a date-seeded past-paper question rather than future rating data.
       const target=subject.sunday?'心理學':subject.target;
-      const fallback=pick(pool(target),iso+':'+(subject.sunday?'sunday':target));
+      const fallback=(subject.sunday?null:freshProbation(target,iso))||pick(pool(target),iso+':'+(subject.sunday?'sunday':target));
       created.questionId=fallback?.id||created.questionId;
       store.sessions[iso]=created;persist();
     }
