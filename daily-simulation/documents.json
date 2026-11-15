@@ -1,11 +1,15 @@
 {
   "schemaVersion": 2,
-  "count": 284,
+  "count": 287,
   "sync": {
-    "syncedAt": "2026-11-14T16:09:02.698Z",
+    "syncedAt": "2026-11-15T16:09:02.513Z",
     "status": "partial",
-    "sourceCount": 285,
+    "sourceCount": 289,
     "errors": [
+      {
+        "id": "news-4625572664c0319226ee71f15c05ccac69a2c91926a5b5f1cbf6d69f5c07de32",
+        "message": "含 Google Drive／Docs 連結或疑似憑證，請先移除後再公開。"
+      },
       {
         "id": "news-929d5a46b35f6ac99bc3b1183c626c55ee216538d74aa0da7d3998706069177c",
         "message": "含 Google Drive／Docs 連結或疑似憑證，請先移除後再公開。"
@@ -18,28 +22,28 @@
   },
   "shards": [
     {
-      "path": "news-shards/52c6f09fc32acca8f9ec349ebdf38b8c2ff18e172880e74388f1164bcd55af49.json",
+      "path": "news-shards/bb46b8954817891c8628309a4f28435e52f0a4aff0d2c76cdf13de5c36c2d4a3.json",
       "count": 59
     },
     {
-      "path": "news-shards/5fe90d6edd1cc8d7aa99328623c3d7d8ff30dd3e145a8b55863abfddaf3b6754.json",
+      "path": "news-shards/004b38c4842ec09d7a1fb341f6d74325c4a35ad162c88abda6f87ff68caf4916.json",
+      "count": 51
+    },
+    {
+      "path": "news-shards/e5f5cf4e9287a8b1784a6557ffe7a342b678dd7078be130b98eeb70105151bec.json",
       "count": 52
     },
     {
-      "path": "news-shards/472d0c45ed7fd61a74d4a14e50517b3c31d11d99daba192df6bb5572faf32056.json",
-      "count": 50
+      "path": "news-shards/3443cad379d727a64860f14a569c7ab625902f18ef14aeaa1cd592b2ffe41e6b.json",
+      "count": 52
     },
     {
-      "path": "news-shards/be766a5ea3eedfd215de90b576d5efba531dabc0add02f2ce268bcfcf126010b.json",
-      "count": 54
+      "path": "news-shards/70bad6f6a08e69a9929321e9b1d2aef5e55864b8f0df22679af93b0fa2de7285.json",
+      "count": 55
     },
     {
-      "path": "news-shards/c739d4426c4efe44e9e9a4f6f4be2385ad2563781e9dd627138796c8c72a3fa3.json",
-      "count": 54
-    },
-    {
-      "path": "news-shards/8dcf8e1bfccffa9deb8fadb149665aa043c9ba10ac08443e4e5113ff319c54e3.json",
-      "count": 15
+      "path": "news-shards/f13b06a24644b940d74945cfe5ffb1493a26ffe4b9e7a3b0ecc475b09edaf115.json",
+      "count": 18
     }
   ]
 }
