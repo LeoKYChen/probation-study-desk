@@ -2,10 +2,14 @@
   "schemaVersion": 2,
   "count": 287,
   "sync": {
-    "syncedAt": "2026-11-16T16:08:50.457Z",
+    "syncedAt": "2026-11-17T16:08:58.274Z",
     "status": "partial",
-    "sourceCount": 290,
+    "sourceCount": 291,
     "errors": [
+      {
+        "id": "news-05f222bd19482522a76f73c1431aa3e44450775b7ea79dc9a7e005e99af14400",
+        "message": "含 Google Drive／Docs 連結或疑似憑證，請先移除後再公開。"
+      },
       {
         "id": "news-a8624e5c16ed363050fc4cd2d390056d5e0db5e9577ac75e539b5e84116f8849",
         "message": "含 Google Drive／Docs 連結或疑似憑證，請先移除後再公開。"
