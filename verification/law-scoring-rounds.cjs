@@ -35,48 +35,51 @@ for(const r of RD.ROUNDS){
   const per={}; ids.slice(0,30).forEach(id=>{per[key(id)]=(per[key(id)]||0)+1;}); assert.deepEqual(Object.values(per),[5,5,5,5,5,5],'the first week is five questions per subject'); }
 for(const q of Q) assert.equal(slots.filter(s=>s.id===q.id).length,RD.maxRound(q),q.id+' appears once per round in scope');
 
-// 進度表：週一到週六推進、週日不排；起算 2026-11-16（週一）
-const SZ=RD.sizes(Q),S0='2026-11-16';
+// 預計完成日：週一到週六出題、週日休息；照目前每天題數從今天往後推算
+const S0='2026-11-16', empty=RD.normalize(null);
 assert.equal(RD.DEFAULT_START,S0); assert(!RD.isRest(S0)); assert(RD.isRest('2026-11-22'));
-assert.equal(RD.expectedBy('2026-11-15',S0,SZ),0); assert.equal(RD.expectedBy(S0,S0,SZ),5); assert.equal(RD.expectedBy('2026-11-21',S0,SZ),30);
-assert.equal(RD.expectedBy('2026-11-22',S0,SZ),30,'Sunday adds nothing'); assert.equal(RD.expectedBy('2026-11-23',S0,SZ),35);
-const ends=plain(RD.schedule(S0,SZ)); assert.equal(ends.length,5);
-assert.deepEqual(ends.map(d=>RD.expectedBy(d,S0,SZ)),[553,1106,1659,1849,2039],'each round ends exactly on its last question');
-assert(ends.every(d=>!RD.isRest(d))); assert(ends[4]<'2027-08-01','five rounds end before August 2027: '+ends[4]);
-assert.equal(RD.expectedBy('2028-01-01',S0,SZ),2039,'never expects more than the total');
-assert.equal(RD.expectedBy(RD.addDays(ends[0],1)==='x'?S0:RD.addDays(ends[0],-1),S0,SZ)<553,true);
+const f0=RD.forecast(Q,empty,S0), ends=plain(f0.ends); assert.equal(ends.length,5);
+assert.deepEqual(ends,['2027-03-24','2027-05-28','2027-07-10','2027-07-22','2027-07-30'],'default pace from 11/16 matches the original schedule');
+assert.equal(f0.finish,'2027-07-30'); assert(ends.every(d=>!RD.isRest(d)));
+// 一週沒做：不欠題，完成日整週往後移
+assert.equal(RD.forecast(Q,empty,'2026-11-23').finish,'2027-08-06','a missed week only shifts the finish by a week');
+// 自己設每天題數
+const slow=RD.setPerDay(empty,[3,10,15,20,30]); assert.equal(RD.perDayOf(slow,1),3); assert.equal(RD.perDayOf(empty,1),5); assert(RD.customPerDay(slow)); assert(!RD.customPerDay(empty));
+assert.equal(plain(RD.forecast(Q,slow,'2026-11-23').ends)[0],'2027-06-25','553 questions at 3 a day, six days a week');
+assert.equal(RD.setPerDay(empty,[0,10,15,20,30]),empty,'0 is rejected'); assert.equal(RD.setPerDay(empty,[61,10,15,20,30]),empty,'over 60 is rejected'); assert.equal(RD.setPerDay(empty,[2.5,10,15,20,30]),empty); assert.equal(RD.setPerDay(empty,[3,10]),empty);
+assert.equal(RD.setPerDay(slow,RD.ROUNDS.map(r=>r.perDay)).settings.perDay,undefined,'back to defaults clears the setting');
+assert.deepEqual(plain(RD.pack(slow)),{__settings:{perDay:[3,10,15,20,30]}}); assert.deepEqual(plain(RD.normalize(RD.pack(slow)).settings.perDay),[3,10,15,20,30],'round trip');
+assert.equal(RD.normalize({__settings:{perDay:[3,'x',15,20,30]}}).settings.perDay,undefined,'bad settings are ignored');
+assert.deepEqual(plain(RD.pack(RD.clearAll(slow))),{__settings:{perDay:[3,10,15,20,30]}},'clearing records keeps the daily counts');
+// 考試日期
+assert.deepEqual(plain(RD.examDate(null)),{date:RD.EXAM_GUESS,set:false}); assert.deepEqual(plain(RD.examDate({date:'2027-08-14'})),{date:'2027-08-14',set:true}); assert.equal(RD.examDate({date:'bad'}).set,false);
 
 // 今日題組
-const empty=RD.normalize(null);
 let p=RD.plan(Q,empty,S0,0);
-assert.equal(p.round,1); assert.equal(p.roundTotal,553); assert.equal(p.roundDone,0); assert.equal(p.total,2039);
-assert.equal(p.queue.length,5); assert.equal(p.quota,5); assert.equal(p.behind,0); assert.equal(p.ahead,0); assert(p.started&&!p.rest&&!p.finished);
+assert.equal(p.round,1); assert.equal(p.roundTotal,553); assert.equal(p.roundDone,0); assert.equal(p.total,2039); assert.equal(p.perDay,5);
+assert.equal(p.queue.length,5); assert.equal(p.quota,5); assert(!p.rest&&!p.finished&&!p.late); assert.equal(p.finish,'2027-07-30'); assert.equal(p.exam,RD.EXAM_GUESS);
+assert.equal(p.behind,undefined,'there is no backlog any more');
 assert.deepEqual(plain(p.queue),plain(slots.slice(0,5)));
 assert.equal(RD.plan(Q,empty,S0,5).queue.length,10,'extra questions on request');
-// 起算日前先練算超前
-p=RD.plan(Q,empty,'2026-11-15',0); assert(!p.started); assert.equal(p.queue.length,5); assert.equal(p.behind,0);
+assert.equal(RD.plan(Q,slow,'2026-11-24',0).queue.length,3,'own daily count');
+p=RD.plan(Q,empty,'2026-11-23',0,'2027-08-01'); assert(p.late,'finishing after the exam date is flagged'); assert(!RD.plan(Q,empty,'2026-11-23',0,'2027-08-14').late);
 // 做 2 題
 let st=RD.record(empty,slots[0].id,'good',S0,300); st=RD.record(st,slots[1].id,'again',S0,700);
 assert.deepEqual(plain(empty.items),{},'record does not mutate');
 p=RD.plan(Q,st,S0,0); assert.equal(p.todayDone,2); assert.equal(p.queue.length,3); assert.equal(p.roundDone,2); assert.equal(p.doneTotal,2); assert.deepEqual(plain(p.tally),{again:1,partial:0,good:1});
 assert.deepEqual(plain(p.queue),plain(slots.slice(2,5)));
-// 隔天：昨天少做 3 題 → 落後 3、今天仍出 5 題
-p=RD.plan(Q,st,'2026-11-17',0); assert.equal(p.queue.length,5); assert.equal(p.behind,3); assert.equal(p.todayDone,0);
-// 整週只做 2 題，到週日：補進度，最多出平日的兩倍
-p=RD.plan(Q,st,'2026-11-22',0); assert(p.rest); assert.equal(p.behind,28); assert.equal(p.queue.length,10); assert.equal(p.quota,10);
-// 週日沒有落後就不出題
-{ let s=empty; for(const x of slots.slice(0,30)) s=RD.record(s,x.id,'good','2026-11-21',1);
-  p=RD.plan(Q,s,'2026-11-22',0); assert.equal(p.queue.length,0); assert.equal(p.behind,0); assert.equal(p.quota,0); assert.equal(RD.plan(Q,s,'2026-11-22',5).queue.length,5);
-  p=RD.plan(Q,s,'2026-11-21',0); assert.equal(p.todayDone,30); assert.equal(p.queue.length,0); assert.equal(p.ahead,0); }
+assert.equal(RD.forecast(Q,st,S0).finish,'2027-07-30','what is done today counts towards today');
+// 隔天：昨天少做 3 題，今天仍只出 5 題，不加量
+p=RD.plan(Q,st,'2026-11-17',0); assert.equal(p.queue.length,5); assert.equal(p.todayDone,0);
+// 週日休息：不出題，可加開
+p=RD.plan(Q,st,'2026-11-22',0); assert(p.rest); assert.equal(p.queue.length,0); assert.equal(p.quota,0); assert.equal(RD.plan(Q,st,'2026-11-22',5).queue.length,5);
 // 第 1 輪全部做完 → 進第 2 輪，每天 10 題，順序從觀護人題開始；同一題同一天不出兩次
 { let s=empty; for(const q of Q) s=RD.record(s,q.id,'good','2026-12-01',1);
   p=RD.plan(Q,s,'2026-12-02',0); assert.equal(p.round,2); assert.equal(p.queue.length,10); assert(p.queue.every(x=>x.r===2)); assert.equal(p.roundDone,0); assert.equal(p.doneTotal,553);
+  assert.equal(plain(p.ends)[0],'done','finished rounds are marked done');
   assert.equal(RD.plan(Q,s,'2026-12-01',600).queue.length,0,'a question done today is not shown again today');
-  // 觀護人題做滿 5 次、其他做滿 3 次 → 完成；多做的不超算
   for(const q of Q) for(let i=1;i<RD.maxRound(q)+1;i++) s=RD.record(s,q.id,'good','2027-01-0'+Math.min(i,9),1);
-  p=RD.plan(Q,s,'2027-02-01',0); assert(p.finished); assert.equal(p.doneTotal,2039); assert.equal(p.queue.length,0); assert.equal(p.round,5); }
-// 改起算日：進度表跟著移動
-{ const s=RD.normalize({__settings:{start:'2026-12-01'}}); assert.equal(RD.plan(Q,s,'2026-11-30',0).started,false); assert.equal(RD.plan(Q,s,'2026-12-02',0).behind,5); }
+  p=RD.plan(Q,s,'2027-02-01',0); assert(p.finished); assert.equal(p.doneTotal,2039); assert.equal(p.queue.length,0); assert.equal(p.round,5); assert.equal(p.finish,null); assert(!p.late); }
 
 // 紀錄格式：id → {done, notes}，壞資料忽略、題庫已不存在的 id 保留；起算日是預設值時不寫
 let n=RD.setNote(st,slots[0].id,1,'罪名 → 競合'); n=RD.setNote(n,'mock:md-1',1,'x');
@@ -126,12 +129,12 @@ for(const q of Q){ assert(q.body&&q.title&&q.overview&&q.exam&&q.subject&&Array.
 
 // 今日清單：多一行今日題組，仍只讀取
 { const out=LS.todayPlan({store:{},today:S0,data:w.LawScoringData,RD,roundState:st});
-  assert.deepEqual(plain(out.rounds),{round:1,roundDone:2,roundTotal:553,todayDone:2,quota:5,behind:0,finished:false,mockDone:false});
+  assert.deepEqual(plain(out.rounds),{round:1,roundDone:2,roundTotal:553,todayDone:2,quota:5,rest:false,late:false,finished:false,mockDone:false});
   assert.equal(LS.todayPlan({store:{},today:S0,data:w.LawScoringData}).rounds,null,'still works when rounds.js is not loaded'); }
 
 // 頁面接線、離線清單、備份
 const html=read('law-scoring/rounds.html');
-for(const id of ['rounds-root','rd-load','rd-round','rd-count','rd-how','rd-bar','rd-bar-fill','rd-chips','rd-tally','rd-card','rd-meta','rd-title','rd-front','rd-note-wrap','rd-note','rd-note-label','rd-back','rd-empty','rd-empty-title','rd-empty-text','rd-empty-actions','rd-table-body','rd-start-form','rd-start','rd-start-status','rd-font-down','rd-font-up','rd-font-label','rd-progress','rd-clock','rd-undo','rd-skip','rd-status','rd-front-actions','rd-reveal','rd-rate','rd-exit','rd-done','rd-done-summary','rd-done-list','rd-clear-area','rd-clear-status'])
+for(const id of ['rounds-root','rd-load','rd-round','rd-count','rd-how','rd-bar','rd-bar-fill','rd-chips','rd-tally','rd-card','rd-meta','rd-title','rd-front','rd-note-wrap','rd-note','rd-note-label','rd-back','rd-empty','rd-empty-title','rd-empty-text','rd-empty-actions','rd-table-body','rd-per-form','rd-per-reset','rd-per-status','rd-exam-note','rd-font-down','rd-font-up','rd-font-label','rd-progress','rd-clock','rd-undo','rd-skip','rd-status','rd-front-actions','rd-reveal','rd-rate','rd-exit','rd-done','rd-done-summary','rd-done-list','rd-clear-area','rd-clear-status'])
   assert(html.includes('id="'+id+'"'),'page has #'+id);
 for(const id of new Set((code.match(/\$\('([^']+)'\)/g)||[]).map(x=>x.slice(3,-2)))) assert(html.includes('id="'+id+'"'),'script uses #'+id+' which the page has');
 for(const k of ['again','partial','good']) assert(html.includes('data-rate="'+k+'"'));

@@ -60,6 +60,20 @@ let six=SP.normalize(null); for(let i=0;i<20;i++) six=SP.bumpPsych(six,D,1);
 for(let wk=0;wk<6;wk++){ const day=['2026-11-16','2026-11-23','2026-11-30','2026-12-07','2026-12-14','2026-12-21'][wk]; for(const [id] of SP.REREAD) six=SP.setRead(six,day,id,true); }
 assert.equal(SP.checkpoints(Object.assign({},env,{state:six}))[1].status,'done');
 
+// 檢核點可以自己改日期；改回原日期或清空即恢復
+{ let m=SP.setCheckpoint(SP.normalize(null),0,'2026-12-27'); assert.equal(SP.cpDate(m,0),'2026-12-27'); assert.equal(SP.cpDate(m,1),'2027-01-10');
+  assert.deepEqual(plain(SP.pack(m)),{checkpoints:{0:'2026-12-27'}}); assert.equal(SP.cpDate(SP.normalize(SP.pack(m)),0),'2026-12-27','round trip');
+  const c=SP.checkpoints(Object.assign({},env,{state:m,today:'2026-12-14'})); assert.equal(c[0].status,'todo','moved later, so not late yet'); assert(c[0].moved); assert.equal(c[0].original,'2026-12-13'); assert.equal(c[0].days,13);
+  assert.equal(SP.summary(m,'2026-12-14').next,'2026-12-27');
+  assert.deepEqual(plain(SP.pack(SP.setCheckpoint(m,0,null))),{},'reset'); assert.deepEqual(plain(SP.pack(SP.setCheckpoint(m,0,'2026-12-13'))),{},'same as original is a reset');
+  assert.equal(SP.setCheckpoint(m,0,'bad'),m); assert.equal(SP.setCheckpoint(m,9,'2027-01-01'),m);
+  assert.deepEqual(plain(SP.normalize({checkpoints:{0:'bad',7:'2027-01-01',1:'2027-01-24'}}).cps),{1:'2027-01-24'},'bad entries ignored');
+  const kept=SP.setPaper(SP.setReread(SP.setRead(SP.bumpPsych(m,D,1),D,'criminal',true),'criminal',true),'juvenile',true); assert.equal(SP.cpDate(kept,0),'2026-12-27','other edits keep the moved date'); }
+// 今日題組那一項看預計完成日，不看欠題
+{ const late=SP.checkpoints(Object.assign({},env,{roundState:RD.normalize(null),today:'2026-11-23',exam:'2027-08-01'})); assert.equal(late[0].items[1].ok,false); assert(late[0].items[1].detail.startsWith('預計 8/6'));
+  const ok=SP.checkpoints(Object.assign({},env,{roundState:RD.setPerDay(RD.normalize(null),[8,10,15,20,30]),today:'2026-11-23',exam:'2027-08-14'})); assert.equal(ok[0].items[1].ok,true);
+  assert.equal(SP.roundsInWeek(RD,Q,RD.setPerDay(RD.normalize(null),[3,10,15,20,30]),'2026-11-23').target,18,'weekly target follows the own daily count'); }
+
 // 今日清單摘要
 assert.deepEqual(plain(SP.summary(s,D)),{phase:'打底',week:1,started:true,psych:3,psychTotal:34,next:'2026-12-13'}); assert.equal(SP.summary(s,'2026-11-15').started,false); assert.equal(SP.summary(s,'2027-07-01').next,null);
 { const out=LS.todayPlan({store:{},today:D,data:w.LawScoringData,SP,planState:s}); assert.deepEqual(plain(out.plan),{phase:'打底',week:1,started:true,psych:3,psychTotal:34,next:'2026-12-13'}); assert.equal(LS.todayPlan({store:{},today:D,data:w.LawScoringData}).plan,null); }

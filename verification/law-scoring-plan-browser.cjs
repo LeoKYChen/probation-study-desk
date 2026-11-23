@@ -59,7 +59,17 @@ const at=iso=>new Date(iso+'T09:00:00+08:00');
   assert.deepEqual(await page.evaluate(()=>['lawScoring.rounds.v1','probation-study30-v251:v1','lawScoring.v2'].map(k=>localStorage.getItem(k))),before,'other pages\' records are untouched'); await shot('02-filled');
   // 下一週：本週數字歸零，累計保留
   await open('2026-11-24'); assert.equal(await text(page,'#pl-phase'),'打底期・第 2 週'); week=await text(page,'#pl-week'); assert(week.includes('已上 3／34 堂・本週 0 堂')&&week.includes('本週 0 題（目標 1 題）'),week); assert(!(await page.locator('#pl-read-criminal').isChecked())); assert(await page.locator('#pl-done-counseling').isChecked()); assert((await text(page,'.pl-reread')).includes('刑法（已 1 週）'));
-  assert(week.includes('落後')); assert.equal(await page.locator('#pl-week li.is-late').count(),1);
+  assert(!week.includes('落後')&&week.includes('（每天 5 題）'),week); assert.equal(await page.locator('#pl-week li.is-late').count(),0);
+  await page.evaluate(()=>{ const RD=window.LawScoringRounds; localStorage.setItem(RD.KEY,JSON.stringify(RD.pack(RD.setPerDay(RD.read(),[2,10,15,20,30])))); }); await page.reload({waitUntil:'load'}); await page.locator('#pl-body').waitFor();
+  week=await text(page,'#pl-week'); assert(week.includes('（每天 2 題）')&&week.includes('照這個題數會超過考期'),week); assert.equal(await page.locator('#pl-week li.is-late').count(),1);
+  await page.evaluate(()=>{ const RD=window.LawScoringRounds; localStorage.setItem(RD.KEY,JSON.stringify(RD.pack(RD.setPerDay(RD.read(),RD.ROUNDS.map(r=>r.perDay))))); });
+  // 檢核點改日期與恢復
+  const cp0=page.locator('#pl-cps .pl-cp').first(); await cp0.locator('.pl-cp-edit summary').click(); await page.locator('#pl-cp-date-0').fill('2026-12-27'); await page.locator('#pl-cp-save-0').click();
+  assert((await text(page,'#pl-cp-status')).includes('12/27')); assert.deepEqual((await page.evaluate(()=>JSON.parse(localStorage.getItem('lawScoring.plan.v1')))).checkpoints,{0:'2026-12-27'});
+  assert((await page.locator('#pl-cps .pl-cp').first().innerText()).includes('原訂 12/13，已改到 12/27')); assert(await page.locator('#pl-cps .pl-cp').first().locator('.pl-cp-edit').evaluate(d=>d.open),'stays open after saving');
+  await noOverflow(page,'checkpoint edit'); await shot('02b-cp-edit');
+  await open('2026-12-14'); assert.equal(await page.locator('#pl-cps .pl-cp').first().getAttribute('class'),'pl-cp is-todo','moved later, not late'); assert((await chips()).includes('下個檢核點 12/27（13 天後）'));
+  await page.locator('#pl-cps .pl-cp').first().locator('.pl-cp-edit summary').click(); await page.locator('#pl-cp-reset-0').click(); assert.equal((await page.evaluate(()=>JSON.parse(localStorage.getItem('lawScoring.plan.v1')))).checkpoints,undefined);
   // 過了第一個檢核點還不到 10 堂：標示未達到並顯示調整方式
   await open('2026-12-14'); assert.equal(await page.locator('#pl-cps .pl-cp').first().getAttribute('class'),'pl-cp is-late'); assert((await page.locator('#pl-cps .pl-cp').first().innerText()).includes('調整：假日先保心理學')); assert((await chips()).includes('下個檢核點 1/10（27 天後）')); await shot('03-late');
   // 首頁倒數有設定時用它；穩固期、衝刺期
@@ -70,7 +80,7 @@ const at=iso=>new Date(iso+'T09:00:00+08:00');
   await page.evaluate(()=>{ const SP=window.LawScoringStudyPlan; let st=SP.read(); for(let i=0;i<40;i++) st=SP.bumpPsych(st,'2026-11-18',1); for(const [id] of SP.REREAD) st=SP.setReread(st,id,true); for(const [id] of SP.PAPERS) st=SP.setPaper(st,id,true); localStorage.setItem(SP.KEY,JSON.stringify(SP.pack(st)));
     const RD=window.LawScoringRounds, Q=window.LawScoringData.questions; let rs=RD.normalize(null); for(const q of Q) rs=RD.record(rs,q.id,'good','2026-12-01',1); localStorage.setItem(RD.KEY,JSON.stringify(RD.pack(rs)));
     const ss={version:1,sessions:{}}; for(const d of ['2027-04-26','2027-04-27','2027-04-28','2027-04-29','2027-04-30','2027-05-01']) ss.sessions[d]={finished:true}; localStorage.setItem('probation-study30-v251:v1',JSON.stringify(ss)); });
-  await page.reload({waitUntil:'load'}); await page.locator('#pl-body').waitFor(); assert.equal(await page.locator('#pl-cps .pl-cp.is-done').count(),4,'four met; the rounds one is behind schedule by June'); assert(await page.locator('#pl-psych-plus').isDisabled()); assert(!(await text(page,'#pl-psych-val')).includes('目標'));
+  await page.reload({waitUntil:'load'}); await page.locator('#pl-body').waitFor(); assert.equal(await page.locator('#pl-cps .pl-cp.is-done').count(),4,'four met; the rounds one would finish after the exam'); assert(await page.locator('#pl-psych-plus').isDisabled()); assert(!(await text(page,'#pl-psych-val')).includes('目標'));
   // 起算日前
   await fresh(390,844); await open('2026-11-15'); assert.equal(await text(page,'#pl-phase'),'打底期・11/16 開始');
   // 各寬度

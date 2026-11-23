@@ -1,5 +1,6 @@
 /* 今日題組：考古題輪次練習加每天 1 題模擬題，一頁做完。
-   輪次：觀護人 190 題跑 5 輪、相關類科 363 題跑 3 輪，每輪做法由深到淺；每週一到週六照表推進，週日補進度。
+   輪次：觀護人 190 題跑 5 輪、相關類科 363 題跑 3 輪，每輪做法由深到淺。每天題數可自己設；週一到週六出題，週日休息（可加開）。
+   沒做的題不累積成欠債：頁面只依目前的每天題數，從今天往後推算各輪的預計完成日，超過考試日期就提醒。
    紀錄存在 lawScoring.rounds.v1（已納入完整備份）；上次位置、字級與當天加開題數存在 lawScoring.rounds.pos.v1（單機設定，不備份）。
    申論評分參考自評（lawScoring.v2）與每日模擬題的紀錄只讀不寫。 */
 (function () {
@@ -7,6 +8,7 @@
 const KEY = 'lawScoring.rounds.v1', POS_KEY = 'lawScoring.rounds.pos.v1';
 const DAILY_KEY = 'probation-daily-github:records:v1';
 const DEFAULT_START = '2026-11-16';
+const EXAM_KEY = 'psd-home-exam-countdown-v1', EXAM_GUESS = '2027-08-14', PER_DAY_MAX = 60;
 // 每輪每天 60 分鐘：每題分鐘數 × 每天題數 = 60。
 const ROUNDS = [
   {n: 1, scope: 'all', min: 12, perDay: 5, depth: 'full', how: '拆題、列骨架，再對照評分參考'},
@@ -18,7 +20,7 @@ const ROUNDS = [
 const RATES = ['again', 'partial', 'good'];
 const RATE_LABEL = {again: '沒抓到', partial: '抓到一半', good: '抓到了'};
 const SETTINGS = '__settings', MOCK = 'mock:';
-const NOTE_MAX = 2000, SUNDAY_CAP = 2, MOCK_MIN = 10;
+const NOTE_MAX = 2000, MOCK_MIN = 10;
 const FONT_LABELS = ['較小', '標準', '較大', '最大'];
 
 /* ---------- 日期 ---------- */
@@ -26,7 +28,7 @@ function ymd(d) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padSta
 function parseDay(day) { const [y, m, d] = day.split('-').map(Number); return new Date(y, m - 1, d); }
 function validDay(s) { return typeof s === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(s) && ymd(parseDay(s)) === s; }
 function addDays(day, n) { const d = parseDay(day); d.setDate(d.getDate() + n); return ymd(d); }
-function isRest(day) { return parseDay(day).getDay() === 0; } // 週日：補進度日
+function isRest(day) { return parseDay(day).getDay() === 0; } // 週日：休息日，不排題（可加開）
 function fmtDay(day) { const [, m, d] = day.split('-'); return Number(m) + '/' + Number(d); }
 
 /* ---------- 題目順序 ---------- */
@@ -53,6 +55,19 @@ function slots(questions) {
 }
 function sizes(questions) { const g = questions.filter(isGuan).length; return ROUNDS.map(r => r.scope === 'guan' ? g : questions.length); }
 
+/* ---------- 每天題數：可自己設（每輪 1 到 60 題），沒設時用預設值 ---------- */
+function okPerDay(n) { return Number.isInteger(n) && n >= 1 && n <= PER_DAY_MAX; }
+function perDayOf(state, n) { const a = state && state.settings && state.settings.perDay; return a && okPerDay(a[n - 1]) ? a[n - 1] : ROUNDS[n - 1].perDay; }
+function customPerDay(state) { const a = state.settings.perDay; return !!a && a.some((n, i) => n !== ROUNDS[i].perDay); }
+// 設定每天題數；list 與預設相同時清掉設定。回傳新的紀錄，不改動原本的。
+function setPerDay(state, list) {
+  if (!Array.isArray(list) || list.length !== ROUNDS.length || !list.every(okPerDay)) return state;
+  const settings = {start: state.settings.start};
+  if (list.some((n, i) => n !== ROUNDS[i].perDay)) settings.perDay = list.slice();
+  return {settings, items: state.items};
+}
+function examDate(raw) { return isObj(raw) && validDay(raw.date) ? {date: raw.date, set: true} : {date: EXAM_GUESS, set: false}; }
+
 /* ---------- 紀錄：id → {done:[{d,r,s}], notes:{輪次:骨架}}；模擬題的 id 加 mock: 前綴；起算日在 __settings ---------- */
 function isObj(x) { return !!x && typeof x === 'object' && !Array.isArray(x); }
 function entry(x) { return isObj(x) && validDay(x.d) && RATES.includes(x.r) ? {d: x.d, r: x.r, s: Number.isFinite(x.s) && x.s >= 0 ? Math.round(x.s) : 0} : null; }
@@ -60,7 +75,11 @@ function normalize(raw) {
   const out = {settings: {start: DEFAULT_START}, items: {}};
   if (!isObj(raw)) return out;
   for (const [k, v] of Object.entries(raw)) {
-    if (k === SETTINGS) { if (isObj(v) && validDay(v.start)) out.settings.start = v.start; continue; }
+    if (k === SETTINGS) {
+      if (isObj(v) && validDay(v.start)) out.settings.start = v.start;
+      if (isObj(v) && Array.isArray(v.perDay) && v.perDay.length === ROUNDS.length && v.perDay.every(okPerDay)) out.settings.perDay = v.perDay.slice();
+      continue;
+    }
     if (!isObj(v)) continue;
     const done = Array.isArray(v.done) ? v.done.map(entry).filter(Boolean) : [];
     const notes = {};
@@ -70,8 +89,10 @@ function normalize(raw) {
   return out;
 }
 function pack(state) {
-  const out = {};
-  if (state.settings.start !== DEFAULT_START) out[SETTINGS] = {start: state.settings.start};
+  const out = {}, set = {};
+  if (state.settings.start !== DEFAULT_START) set.start = state.settings.start;
+  if (customPerDay(state)) set.perDay = state.settings.perDay.slice();
+  if (Object.keys(set).length) out[SETTINGS] = set;
   for (const [k, v] of Object.entries(state.items)) {
     if (!v.done.length && !Object.keys(v.notes).length) continue;
     out[k] = Object.keys(v.notes).length ? {done: v.done, notes: v.notes} : {done: v.done};
@@ -115,33 +136,29 @@ function setNote(state, key, round, text) {
   return {settings: state.settings, items: Object.assign({}, state.items, {[key]: {done: old.done, notes}})};
 }
 
-/* ---------- 進度表 ---------- */
-// 照表到 day 這一天結束時應完成的題次數。週日不排新進度；每輪最後一天只排剩下的題數。
-function expectedBy(day, start, sz) {
-  if (!validDay(day) || day < start) return 0;
-  let n = 0, ri = 0, inRound = 0;
-  for (let d = start; d <= day && ri < ROUNDS.length; d = addDays(d, 1)) {
+/* ---------- 預計完成日 ---------- */
+// 照目前的每天題數，從今天往後推算各輪的完成日。已完成的輪次為 'done'。
+// 週日不排題；今天已做的題先扣掉今天的份量。沒做的日子不會變成欠的題，只會讓完成日往後移。
+function forecast(questions, state, today) {
+  const rem = ROUNDS.map(() => 0);
+  for (const s of slots(questions)) if (countOf(state, s.id) < s.r) rem[s.r - 1]++;
+  let todayDone = 0;
+  for (const q of questions) if (state.items[q.id]) todayDone += state.items[q.id].done.filter(x => x.d === today).length;
+  const ends = rem.map(n => n ? null : 'done');
+  let ri = rem.findIndex(n => n > 0);
+  for (let d = today, guard = 0; ri >= 0 && ri < ROUNDS.length && guard < 4000; d = addDays(d, 1), guard++) {
     if (isRest(d)) continue;
-    const add = Math.min(ROUNDS[ri].perDay, sz[ri] - inRound);
-    n += add; inRound += add;
-    if (inRound >= sz[ri]) { ri++; inRound = 0; }
+    let cap = perDayOf(state, ri + 1);
+    if (d === today) cap = Math.max(0, cap - todayDone);
+    rem[ri] -= Math.min(cap, rem[ri]);
+    if (!rem[ri]) { ends[ri] = d; ri++; while (ri < ROUNDS.length && ends[ri] === 'done') ri++; }
   }
-  return n;
+  const last = ends.filter(x => x && x !== 'done').pop() || null;
+  return {ends, finish: last};
 }
-// 各輪照表完成的日期。
-function schedule(start, sz) {
-  const ends = [];
-  let ri = 0, inRound = 0;
-  for (let d = start, guard = 0; ri < ROUNDS.length && guard < 2000; d = addDays(d, 1), guard++) {
-    if (isRest(d)) continue;
-    inRound += Math.min(ROUNDS[ri].perDay, sz[ri] - inRound);
-    if (inRound >= sz[ri]) { ends.push(d); ri++; inRound = 0; }
-  }
-  return ends;
-}
-// 今天的題組與進度。extra：今天加開的題數。純計算，不寫入。
-function plan(questions, state, today, extra) {
-  const all = slots(questions), sz = sizes(questions), start = state.settings.start;
+// 今天的題組與進度。extra：今天加開的題數；exam：考試日期（可省略）。純計算，不寫入。
+function plan(questions, state, today, extra, exam) {
+  const all = slots(questions);
   const doneToday = id => !!state.items[id] && state.items[id].done.some(x => x.d === today);
   let doneTotal = 0, todayDone = 0;
   for (const q of questions) {
@@ -149,13 +166,13 @@ function plan(questions, state, today, extra) {
     if (state.items[q.id]) todayDone += state.items[q.id].done.filter(x => x.d === today).length;
   }
   const pending = all.filter(s => countOf(state, s.id) < s.r);
-  const round = pending.length ? pending[0].r : ROUNDS.length, def = ROUNDS[round - 1];
+  const round = pending.length ? pending[0].r : ROUNDS.length, def = ROUNDS[round - 1], perDay = perDayOf(state, round);
   const inScope = questions.filter(q => def.scope !== 'guan' || isGuan(q));
   const roundDone = inScope.filter(q => countOf(state, q.id) >= round).length;
   const tally = {again: 0, partial: 0, good: 0};
   for (const q of inScope) { const e = state.items[q.id] && state.items[q.id].done[round - 1]; if (e) tally[e.r]++; }
-  const rest = isRest(today) && today >= start, target = expectedBy(today, start, sz), shortfall = Math.max(0, target - doneTotal);
-  const base = !pending.length ? 0 : rest ? Math.min(shortfall + todayDone, SUNDAY_CAP * def.perDay) : def.perDay;
+  const rest = isRest(today);
+  const base = !pending.length || rest ? 0 : perDay;
   const quota = base + Math.max(0, extra || 0);
   const queue = [], seen = new Set();
   for (const s of pending) {
@@ -163,10 +180,9 @@ function plan(questions, state, today, extra) {
     if (seen.has(s.id) || doneToday(s.id)) continue; // 同一題一天只出一次
     seen.add(s.id); queue.push(s);
   }
-  const behind = rest ? shortfall : Math.max(0, shortfall - Math.max(0, base - todayDone));
-  const ends = schedule(start, sz);
-  return {round, roundDone, roundTotal: inScope.length, tally, doneTotal, total: all.length, base, quota, todayDone, queue, behind,
-    ahead: Math.max(0, doneTotal - target), rest, started: today >= start, finished: !pending.length, ends, finish: ends[ends.length - 1], start};
+  const f = forecast(questions, state, today), examDay = validDay(exam) ? exam : EXAM_GUESS;
+  return {round, roundDone, roundTotal: inScope.length, tally, doneTotal, total: all.length, perDay, base, quota, todayDone, queue,
+    rest, finished: !pending.length, ends: f.ends, finish: f.finish, exam: examDay, late: !!f.finish && f.finish > examDay, custom: customPerDay(state)};
 }
 
 /* ---------- 模擬題：每天 1 題 ---------- */
@@ -198,8 +214,8 @@ function arrange(list, skipped) {
   return list.filter(x => !skip.has(x.key)).concat((skipped || []).map(k => list.find(x => x.key === k)).filter(Boolean));
 }
 
-window.LawScoringRounds = {KEY, POS_KEY, DEFAULT_START, ROUNDS, MOCK, SETTINGS, isGuan, maxRound, roundOrder, slots, sizes, normalize, pack, countOf, record, setNote,
-  expectedBy, schedule, plan, doneToday, rerate, clearDay, clearAll, mockDoneToday, pickMock, normPos, arrange, isRest, addDays, validDay,
+window.LawScoringRounds = {KEY, POS_KEY, EXAM_KEY, EXAM_GUESS, DEFAULT_START, ROUNDS, MOCK, SETTINGS, isGuan, maxRound, roundOrder, slots, sizes, normalize, pack, countOf, record, setNote,
+  perDayOf, setPerDay, customPerDay, examDate, forecast, plan, doneToday, rerate, clearDay, clearAll, mockDoneToday, pickMock, normPos, arrange, isRest, addDays, validDay,
   read() { try { return normalize(JSON.parse(localStorage.getItem(KEY))); } catch (e) { return normalize(null); } }};
 if (typeof document === 'undefined' || !document.getElementById('rounds-root')) return;
 
@@ -268,7 +284,7 @@ function loadMocks() {
 }
 
 function todayItems() {
-  const p = plan(DATA.questions, state, today, pos.extra);
+  const p = plan(DATA.questions, state, today, pos.extra, examDate(readJSON(EXAM_KEY)).date);
   const list = p.queue.map(s => ({key: s.id, kind: 'q', r: s.r, q: byId.get(s.id)}));
   let mockState = 'done';
   if (!mockDoneToday(state, today)) {
@@ -287,7 +303,7 @@ function renderProgress(p, mockState) {
   const def = ROUNDS[p.round - 1];
   $('rd-round').textContent = p.finished ? '五輪都跑完了' : '第 ' + p.round + ' 輪';
   $('rd-count').textContent = p.finished ? p.total + ' 題次' : p.roundDone + '／' + p.roundTotal;
-  $('rd-how').textContent = p.finished ? '' : def.how + '・每題約 ' + def.min + ' 分鐘';
+  $('rd-how').textContent = p.finished ? '' : def.how + '・每題約 ' + def.min + ' 分鐘・每天 ' + p.perDay + ' 題約 ' + p.perDay * def.min + ' 分鐘';
   const bar = $('rd-bar'), pct = p.finished ? 100 : Math.round(p.roundDone / p.roundTotal * 100);
   bar.setAttribute('aria-valuenow', String(pct)); bar.setAttribute('aria-valuetext', $('rd-round').textContent + ' ' + $('rd-count').textContent);
   $('rd-bar-fill').style.width = pct + '%';
@@ -296,11 +312,8 @@ function renderProgress(p, mockState) {
   if (!p.finished) chip('今日 ' + Math.min(p.todayDone, p.quota) + '／' + p.quota + (p.todayDone > p.quota ? '（多練 ' + (p.todayDone - p.quota) + '）' : ''));
   chip('模擬題 ' + ({done: '1／1', todo: '0／1', loading: '讀取中', fail: '讀不到', none: '沒有新題'})[mockState]);
   if (!p.finished) {
-    if (!p.started) chip('起算日 ' + fmtDay(p.start) + '，先練算超前');
-    else if (p.behind) chip('落後 ' + p.behind + ' 題' + (p.rest ? '，今天補' : ''), 'is-behind');
-    else if (p.ahead) chip('超前 ' + p.ahead + ' 題', 'is-ahead');
-    else chip('進度正常', 'is-ahead');
-    if (p.finish) chip('照表 ' + fmtDay(p.finish) + ' 跑完');
+    if (p.rest) chip('週日休息，想練可以加開');
+    if (p.finish) chip((p.late ? '照目前題數，' + fmtDay(p.finish) + ' 才跑完，超過考期' : '照目前題數，預計 ' + fmtDay(p.finish) + ' 跑完'), p.late ? 'is-behind' : 'is-ahead');
   }
   const t = p.tally, any = t.again + t.partial + t.good;
   $('rd-tally').textContent = any && !p.finished ? '這一輪自評：抓到了 ' + t.good + '・抓到一半 ' + t.partial + '・沒抓到 ' + t.again : '';
@@ -416,10 +429,10 @@ function renderEmpty(p, mockState) {
   const box = $('rd-empty'), title = $('rd-empty-title'), text = $('rd-empty-text'), acts = $('rd-empty-actions');
   acts.textContent = '';
   const more = (label, n) => { const b = el('button', {class: 'btn primary', type: 'button'}, label); b.onclick = () => { pos.extra += n; pos.skipped = []; savePos(); render(true); }; acts.appendChild(b); };
-  const step = ROUNDS[p.round - 1].perDay;
+  const step = p.perDay;
   if (p.finished) { title.textContent = '五輪都跑完了'; text.textContent = '觀護人題 5 輪、相關類科 3 輪都完成了。之後可以用失分回想與二刷名單維持。'; }
-  else if (p.rest && !p.todayDone && !p.quota) { title.textContent = '今天是補進度日'; text.textContent = '目前沒有落後的題目。想多練可以加開，會算進超前。'; more('加開 ' + step + ' 題', step); }
-  else { title.textContent = '今天的題組做完了'; text.textContent = (p.behind ? '還落後 ' + p.behind + ' 題，' : '') + '要再練可以加開。'; more('再練 ' + step + ' 題', step); }
+  else if (p.rest && !p.todayDone && !p.quota) { title.textContent = '今天週日，休息'; text.textContent = '週日不排題。想多練可以加開，做了預計完成日會提前。'; more('加開 ' + step + ' 題', step); }
+  else { title.textContent = '今天的題組做完了'; text.textContent = '要再練可以加開，做了預計完成日會提前。'; more('再練 ' + step + ' 題', step); }
   if (mockState === 'loading') text.textContent += ' 模擬題讀取中…';
   if (mockState === 'fail') text.textContent += ' 模擬題這次讀不到，連上網路後重新整理再試。';
   if (mockState === 'none') text.textContent += ' 模擬題目前沒有還沒練過的新題。';
@@ -513,15 +526,24 @@ function doUndo() {
 
 /* ---------- 設定與進度表 ---------- */
 function renderSchedule(p) {
-  const body = $('rd-table-body'); body.textContent = '';
+  const body = $('rd-table-body'), editing = body.contains(document.activeElement);
+  if (editing) return; // 正在輸入時不重畫，避免打到一半被蓋掉
+  body.textContent = '';
   ROUNDS.forEach((r, i) => {
-    const li = el('li', !p.finished && r.n === p.round ? {class: 'is-now', 'aria-current': 'step'} : null);
+    const now = !p.finished && r.n === p.round, li = el('li', now ? {class: 'is-now', 'aria-current': 'step'} : null), end = p.ends[i];
+    const n = perDayOf(state, r.n);
     li.appendChild(el('strong', null, '第 ' + r.n + ' 輪'));
-    li.appendChild(el('span', null, (r.scope === 'guan' ? '觀護人題' : '全部') + '・每天 ' + r.perDay + ' 題・' + (p.ends[i] ? fmtDay(p.ends[i]) + ' 完成' : '—')));
+    const late = end && end !== 'done' && end > p.exam;
+    li.appendChild(el('span', late ? {class: 'rd-plan-late'} : null, (r.scope === 'guan' ? '觀護人題' : '全部') + '・' + (end === 'done' ? '已完成' : end ? '預計 ' + fmtDay(end) + ' 完成' + (late ? '（超過考期）' : '') : '—')));
+    const lab = el('label', {class: 'rd-per', for: 'rd-per-' + r.n}); lab.appendChild(document.createTextNode('每天'));
+    const inp = el('input', {type: 'number', id: 'rd-per-' + r.n, min: '1', max: String(PER_DAY_MAX), step: '1', inputmode: 'numeric', required: ''}); inp.value = String(n);
+    lab.appendChild(inp); lab.appendChild(document.createTextNode('題（約 ' + n * r.min + ' 分）')); li.appendChild(lab);
     li.appendChild(el('span', {class: 'rd-plan-how'}, r.how + '（每題約 ' + r.min + ' 分）'));
     body.appendChild(li);
   });
-  if (document.activeElement !== $('rd-start')) $('rd-start').value = state.settings.start;
+  $('rd-per-reset').hidden = !customPerDay(state);
+  const ex = examDate(readJSON(EXAM_KEY));
+  $('rd-exam-note').textContent = ex.set ? '考試日期取自首頁倒數的設定（' + ex.date + '）。' : '考試日期還沒設定，先以 ' + EXAM_GUESS + ' 估算；公告後到首頁的倒數設定填入實際日期。';
 }
 function applyFont() { for (let i = 0; i < FONT_LABELS.length; i++) document.body.classList.toggle('cm-f' + i, pos.font === i); $('rd-font-label').textContent = FONT_LABELS[pos.font]; $('rd-font-down').disabled = pos.font === 0; $('rd-font-up').disabled = pos.font === FONT_LABELS.length - 1; }
 
@@ -554,14 +576,19 @@ $('rd-note').addEventListener('input', () => { if (noteTimer) clearTimeout(noteT
 $('rd-note').addEventListener('blur', flushNote);
 $('rd-font-down').addEventListener('click', () => { if (pos.font > 0) { pos.font--; savePos(); applyFont(); } });
 $('rd-font-up').addEventListener('click', () => { if (pos.font < FONT_LABELS.length - 1) { pos.font++; savePos(); applyFont(); } });
-$('rd-start-form').addEventListener('submit', e => {
-  e.preventDefault();
-  const v = $('rd-start').value, msg = $('rd-start-status');
-  if (!validDay(v)) { msg.textContent = '請選一個日期。'; return; }
-  const next = {settings: {start: v}, items: state.items};
+function savePerDay(list, text) {
+  const msg = $('rd-per-status'), next = setPerDay(state, list);
   if (!saveState(next)) { msg.textContent = '目前瀏覽器無法保存。'; return; }
-  msg.textContent = '起算日已改為 ' + fmtDay(v) + '，進度表重新計算。'; render();
+  if (document.activeElement && $('rd-table-body').contains(document.activeElement)) document.activeElement.blur();
+  render(); msg.textContent = text;
+}
+$('rd-per-form').addEventListener('submit', e => {
+  e.preventDefault();
+  const list = ROUNDS.map(r => Number($('rd-per-' + r.n).value)), msg = $('rd-per-status');
+  if (!list.every(okPerDay)) { msg.textContent = '每天題數請填 1 到 ' + PER_DAY_MAX + ' 的整數。'; return; }
+  savePerDay(list, '每天題數已更新，預計完成日重新計算。');
 });
+$('rd-per-reset').addEventListener('click', () => savePerDay(ROUNDS.map(r => r.perDay), '已恢復原本的每天題數。'));
 document.addEventListener('visibilitychange', () => {
   if (document.hidden) { flushNote(); clockPause(); return; }
   const now = ymd(new Date());
