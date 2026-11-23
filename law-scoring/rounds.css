@@ -69,3 +69,11 @@
 .rd-demands>summary:focus-visible,.rd-note:focus-visible,.rd-back:focus-visible,#rd-title:focus-visible,#rd-empty-title:focus-visible,.rd-start input:focus-visible,.rd-back a:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
 @media (max-width:760px){.rd-progress{padding:10px 12px}.rd-head strong{font-size:17px}}
 @media print{.rd-progress .rd-chips,.rd-note-wrap{display:none}}
+.rd-plan .rd-per{grid-column:2;display:flex;flex-wrap:wrap;align-items:center;gap:4px 6px;margin:4px 0;font-weight:700}
+.rd-plan .rd-per input{font:inherit;font-size:16px;width:4.5em;min-height:44px;padding:4px 8px;border:1px solid var(--rule);border-radius:8px;background:var(--sheet);color:var(--ink)}
+.rd-plan .rd-per input:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.rd-plan .rd-plan-late{color:var(--seal);font-weight:700}
+.rd-per-form{margin:0 0 12px}
+.rd-per-form p{margin:6px 0}
+.rd-per-form p:empty{display:none}
+.rd-per-actions{display:flex;flex-wrap:wrap;gap:8px}

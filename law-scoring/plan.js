@@ -1,6 +1,6 @@
 /* 讀書計畫：116 年觀護人在職備考的三個階段、本週清單與檢核點。
    今日題組、模擬題與完整寫題的數字從既有紀錄讀取（只讀不寫）；心理學函授堂數、四科講義重讀與整卷練習在網站外進行，由使用者手動記。
-   手動記錄存在 lawScoring.plan.v1（已納入完整備份）。考試日期讀首頁倒數的設定（psd-home-exam-countdown-v1），沒設定時以 2027-08-14 估。 */
+   手動記錄存在 lawScoring.plan.v1（已納入完整備份）；檢核點日期可以自己往後調，也存在這裡。考試日期讀首頁倒數的設定（psd-home-exam-countdown-v1），沒設定時以 2027-08-14 估。 */
 (function () {
 'use strict';
 const KEY = 'lawScoring.plan.v1';
@@ -39,18 +39,19 @@ function phaseOf(day) { let p = PHASES[0]; for (const x of PHASES) if (day >= x.
 function weekNo(day) { return Math.floor(diffDays(monday(day), monday(START)) / 7) + 1; }
 function examDate(raw) { return raw && typeof raw === 'object' && validDay(raw.date) ? {date: raw.date, set: true} : {date: EXAM_GUESS, set: false}; }
 
-/* ---------- 手動記錄：lecture:psych → {n}；week:<週一日期> → {psych, read:{科目:true}}；done:reread、done:paper → {科目:true} ---------- */
+/* ---------- 手動記錄：lecture:psych → {n}；week:<週一日期> → {psych, read:{科目:true}}；done:reread、done:paper → {科目:true}；checkpoints → {序號:日期} ---------- */
 function isObj(x) { return !!x && typeof x === 'object' && !Array.isArray(x); }
 function flags(x, ids) { const o = {}; if (isObj(x)) for (const id of ids) if (x[id] === true) o[id] = true; return o; }
 const RID = REREAD.map(x => x[0]), PID = PAPERS.map(x => x[0]);
 function normalize(raw) {
-  const out = {psych: 0, weeks: {}, reread: {}, paper: {}};
+  const out = {psych: 0, weeks: {}, reread: {}, paper: {}, cps: {}};
   if (!isObj(raw)) return out;
   for (const [k, v] of Object.entries(raw)) {
     if (!isObj(v)) continue;
     if (k === 'lecture:psych') { if (Number.isInteger(v.n)) out.psych = Math.max(0, Math.min(PSYCH_TOTAL, v.n)); }
     else if (k === 'done:reread') out.reread = flags(v, RID);
     else if (k === 'done:paper') out.paper = flags(v, PID);
+    else if (k === 'checkpoints') { for (const [i, d] of Object.entries(v)) if (/^[0-9]$/.test(i) && Number(i) < CHECKPOINTS.length && validDay(d) && d !== CHECKPOINTS[i].date) out.cps[i] = d; }
     else if (k.startsWith('week:') && validDay(k.slice(5))) {
       const w = {psych: Number.isInteger(v.psych) && v.psych > 0 ? Math.min(PSYCH_TOTAL, v.psych) : 0, read: flags(v.read, RID)};
       if (w.psych || Object.keys(w.read).length) out.weeks[k.slice(5)] = w;
@@ -63,11 +64,12 @@ function pack(st) {
   if (st.psych) out['lecture:psych'] = {n: st.psych};
   if (Object.keys(st.reread).length) out['done:reread'] = st.reread;
   if (Object.keys(st.paper).length) out['done:paper'] = st.paper;
+  if (st.cps && Object.keys(st.cps).length) out.checkpoints = st.cps;
   for (const [d, w] of Object.entries(st.weeks)) if (w.psych || Object.keys(w.read).length) out['week:' + d] = w.psych ? {psych: w.psych, read: w.read} : {read: w.read};
   return out;
 }
 function weekOf(st, day) { return st.weeks[monday(day)] || {psych: 0, read: {}}; }
-function withWeek(st, day, w) { return {psych: st.psych, weeks: Object.assign({}, st.weeks, {[monday(day)]: w}), reread: st.reread, paper: st.paper}; }
+function withWeek(st, day, w) { return {psych: st.psych, weeks: Object.assign({}, st.weeks, {[monday(day)]: w}), reread: st.reread, paper: st.paper, cps: st.cps || {}}; }
 // 心理學堂數加減：總數限制在 0 到 34；本週的堂數跟著加減（不低於 0）。
 function bumpPsych(st, day, delta) {
   const n = Math.max(0, Math.min(PSYCH_TOTAL, st.psych + delta)); if (n === st.psych) return st;
@@ -76,8 +78,16 @@ function bumpPsych(st, day, delta) {
 }
 function toggle(map, id, on) { const o = Object.assign({}, map); if (on) o[id] = true; else delete o[id]; return o; }
 function setRead(st, day, id, on) { const w = weekOf(st, day); return withWeek(st, day, {psych: w.psych, read: toggle(w.read, id, on)}); }
-function setReread(st, id, on) { return {psych: st.psych, weeks: st.weeks, reread: toggle(st.reread, id, on), paper: st.paper}; }
-function setPaper(st, id, on) { return {psych: st.psych, weeks: st.weeks, reread: st.reread, paper: toggle(st.paper, id, on)}; }
+function setReread(st, id, on) { return {psych: st.psych, weeks: st.weeks, reread: toggle(st.reread, id, on), paper: st.paper, cps: st.cps || {}}; }
+function setPaper(st, id, on) { return {psych: st.psych, weeks: st.weeks, reread: st.reread, paper: toggle(st.paper, id, on), cps: st.cps || {}}; }
+// 檢核點日期：可自己調；date 為空或等於原日期時恢復原日期。
+function cpDate(st, i) { return st && st.cps && validDay(st.cps[i]) ? st.cps[i] : CHECKPOINTS[i].date; }
+function setCheckpoint(st, i, date) {
+  if (!(i >= 0 && i < CHECKPOINTS.length) || (date && !validDay(date))) return st;
+  const cps = Object.assign({}, st.cps || {});
+  if (!date || date === CHECKPOINTS[i].date) delete cps[i]; else cps[i] = date;
+  return {psych: st.psych, weeks: st.weeks, reread: st.reread, paper: st.paper, cps};
+}
 function readWeeks(st, id) { return Object.values(st.weeks).filter(w => w.read[id]).length; }
 
 /* ---------- 從既有紀錄讀數字（只讀） ---------- */
@@ -91,43 +101,44 @@ function writesInWeek(study30, scoreStore, day) {
   return n;
 }
 // 今日題組在某一週的完成數（題目與模擬題分開算）與目前進度。RD、roundState 沒有時回傳 null。
-function roundsInWeek(RD, questions, roundState, day) {
+function roundsInWeek(RD, questions, roundState, day, exam) {
   if (!RD || !roundState) return null;
   const a = monday(day), b = addDays(a, 6), ids = new Set(questions.map(q => q.id));
   let done = 0, mock = 0;
   for (const [k, v] of Object.entries(roundState.items)) { const n = v.done.filter(x => x.d >= a && x.d <= b).length; if (k.startsWith(RD.MOCK)) mock += n; else if (ids.has(k)) done += n; }
-  const p = RD.plan(questions, roundState, day, 0), perDay = RD.ROUNDS[p.round - 1].perDay;
-  return {done, mock, target: p.finished ? 0 : perDay * 6, perDay, behind: p.behind, round: p.round, roundDone: p.roundDone, roundTotal: p.roundTotal, finished: p.finished};
+  const p = RD.plan(questions, roundState, day, 0, exam), perDay = p.perDay;
+  return {done, mock, target: p.finished ? 0 : perDay * 6, perDay, finish: p.finish, late: p.late, round: p.round, roundDone: p.roundDone, roundTotal: p.roundTotal, finished: p.finished};
 }
 // 本週清單。env：{state, today, RD, questions, roundState, study30, scoreStore}
 function weekStats(env) {
   const ph = phaseOf(env.today), w = weekOf(env.state, env.today);
   return {phase: ph, week: weekNo(env.today), monday: monday(env.today), sunday: addDays(monday(env.today), 6),
-    rounds: roundsInWeek(env.RD, env.questions || [], env.roundState, env.today),
+    rounds: roundsInWeek(env.RD, env.questions || [], env.roundState, env.today, env.exam),
     write: {done: writesInWeek(env.study30, env.scoreStore, env.today), target: ph.write},
     psych: {week: w.psych, total: env.state.psych, of: PSYCH_TOTAL, target: env.state.psych >= PSYCH_TOTAL ? null : ph.psych || [1, 2]},
     read: REREAD.map(([id, name]) => ({id, name, week: !!w.read[id], done: !!env.state.reread[id], weeks: readWeeks(env.state, id)}))};
 }
 // 五個檢核點與狀態：done（都達到）、late（日期已過仍未達到）、todo（還沒到）。
 function checkpoints(env) {
-  const st = env.state, r = roundsInWeek(env.RD, env.questions || [], env.roundState, env.today);
+  const st = env.state, r = roundsInWeek(env.RD, env.questions || [], env.roundState, env.today, env.exam);
+  const d3 = cpDate(st, 3), wDay = env.today < d3 ? env.today : d3;
   const rereadDone = RID.filter(id => st.reread[id]).length, papers = PID.filter(id => st.paper[id]).length;
   const items = [
-    [{label: '心理學函授至少 10 堂', ok: st.psych >= 10, detail: st.psych + ' 堂'}, {label: '今日題組落後不到一週的份量', ok: !!r && r.behind < r.perDay * 6, detail: r ? '落後 ' + r.behind + ' 題' : '讀不到'}],
+    [{label: '心理學函授至少 10 堂', ok: st.psych >= 10, detail: st.psych + ' 堂'}, {label: '今日題組照目前每天題數，預計考前跑完', ok: !!r && (r.finished || !r.late), detail: r ? (r.finished ? '已跑完' : r.finish ? '預計 ' + fmtDay(r.finish) : '—') : '讀不到'}],
     [{label: '心理學函授至少 20 堂', ok: st.psych >= 20, detail: st.psych + ' 堂'}, {label: '四科講義各讀了至少 6 週（約三分之一）', ok: RID.every(id => st.reread[id] || readWeeks(st, id) >= 6), detail: REREAD.map(([id, n]) => n + ' ' + (st.reread[id] ? '讀完' : readWeeks(st, id) + ' 週')).join('、')}],
     [{label: '心理學函授 34 堂上完', ok: st.psych >= PSYCH_TOTAL, detail: st.psych + '／' + PSYCH_TOTAL + ' 堂'}, {label: '今日題組第 1 輪過半', ok: !!r && (r.round > 1 || r.finished || r.roundDone * 2 >= r.roundTotal), detail: r ? (r.round > 1 || r.finished ? '第 1 輪已完成' : r.roundDone + '／' + r.roundTotal) : '讀不到'}],
-    [{label: '四科講義重讀完成', ok: rereadDone === RID.length, detail: rereadDone + '／' + RID.length + ' 科'}, {label: '一週完整寫題至少 6 題', ok: writesInWeek(env.study30, env.scoreStore, env.today < '2027-04-30' ? env.today : '2027-04-30') >= 6, detail: '該週 ' + writesInWeek(env.study30, env.scoreStore, env.today < '2027-04-30' ? env.today : '2027-04-30') + ' 題'}],
+    [{label: '四科講義重讀完成', ok: rereadDone === RID.length, detail: rereadDone + '／' + RID.length + ' 科'}, {label: '一週完整寫題至少 6 題', ok: writesInWeek(env.study30, env.scoreStore, wDay) >= 6, detail: '該週 ' + writesInWeek(env.study30, env.scoreStore, wDay) + ' 題'}],
     [{label: '六科各做過一次整卷限時', ok: papers === PID.length, detail: papers + '／' + PID.length + ' 科'}]
   ];
-  return CHECKPOINTS.map((c, i) => { const ok = items[i].every(x => x.ok); return {date: c.date, fallback: c.fallback, items: items[i], status: ok ? 'done' : env.today > c.date ? 'late' : 'todo', days: diffDays(c.date, env.today)}; });
+  return CHECKPOINTS.map((c, i) => { const ok = items[i].every(x => x.ok), date = cpDate(st, i); return {i, date, original: c.date, moved: date !== c.date, fallback: c.fallback, items: items[i], status: ok ? 'done' : env.today > date ? 'late' : 'todo', days: diffDays(date, env.today)}; });
 }
 // 今日清單用的一行摘要。
 function summary(state, today) {
-  const ph = phaseOf(today), next = CHECKPOINTS.find(c => c.date >= today);
-  return {phase: ph.name, week: weekNo(today), started: today >= START, psych: state.psych, psychTotal: PSYCH_TOTAL, next: next ? next.date : null};
+  const ph = phaseOf(today), next = CHECKPOINTS.map((c, i) => cpDate(state, i)).filter(d => d >= today).sort()[0];
+  return {phase: ph.name, week: weekNo(today), started: today >= START, psych: state.psych, psychTotal: PSYCH_TOTAL, next: next || null};
 }
 
-window.LawScoringStudyPlan = {KEY, START, EXAM_GUESS, PSYCH_TOTAL, PHASES, REREAD, PAPERS, CHECKPOINTS, monday, weekNo, phaseOf, examDate, diffDays, normalize, pack, bumpPsych, setRead, setReread, setPaper, readWeeks, writesInWeek, roundsInWeek, weekStats, checkpoints, summary,
+window.LawScoringStudyPlan = {KEY, START, EXAM_GUESS, PSYCH_TOTAL, PHASES, REREAD, PAPERS, CHECKPOINTS, monday, weekNo, phaseOf, examDate, diffDays, normalize, pack, bumpPsych, setRead, setReread, setPaper, cpDate, setCheckpoint, readWeeks, writesInWeek, roundsInWeek, weekStats, checkpoints, summary,
   read() { try { return normalize(JSON.parse(localStorage.getItem(KEY))); } catch (e) { return normalize(null); } }};
 if (typeof document === 'undefined' || !document.getElementById('plan-root')) return;
 
@@ -137,16 +148,17 @@ const $ = id => document.getElementById(id);
 function el(tag, attrs, text) { const n = document.createElement(tag); for (const k in (attrs || {})) { if (k === 'class') n.className = attrs[k]; else n.setAttribute(k, attrs[k]); } if (text != null) n.textContent = text; return n; }
 function readJSON(key) { try { return JSON.parse(localStorage.getItem(key)); } catch (e) { return null; } }
 let today = ymd(new Date()), state = window.LawScoringStudyPlan.read();
-function save(next, msg) {
-  try { localStorage.setItem(KEY, JSON.stringify(pack(next))); } catch (e) { $('pl-status').textContent = '目前瀏覽器無法保存，這次的更動沒有記錄。'; render(); return; }
-  state = next; $('pl-status').textContent = msg || '已記錄。'; render();
+function save(next, msg, where) {
+  const out = $(where || 'pl-status'); $('pl-status').textContent = ''; $('pl-cp-status').textContent = '';
+  try { localStorage.setItem(KEY, JSON.stringify(pack(next))); } catch (e) { out.textContent = '目前瀏覽器無法保存，這次的更動沒有記錄。'; render(); return; }
+  state = next; out.textContent = msg || '已記錄。'; render();
 }
-function env() { return {state, today, RD, questions: DATA ? DATA.questions : [], roundState: RD ? RD.read() : null, study30: readJSON(STUDY30_KEY), scoreStore: readJSON(SCORE_KEY)}; }
+function env() { return {state, today, RD, exam: examDate(readJSON(EXAM_KEY)).date, questions: DATA ? DATA.questions : [], roundState: RD ? RD.read() : null, study30: readJSON(STUDY30_KEY), scoreStore: readJSON(SCORE_KEY)}; }
 function row(host, title, value, cls) { const li = el('li', cls ? {class: cls} : null); li.appendChild(el('strong', null, title)); li.appendChild(el('span', {class: 'pl-val'}, value)); host.appendChild(li); return li; }
 function check(id, label, on, fn) { const l = el('label', {class: 'pl-check'}), c = el('input', {type: 'checkbox', id}); c.checked = on; c.addEventListener('change', () => fn(c.checked)); l.appendChild(c); l.appendChild(el('span', null, label)); return l; }
 
 function renderHead(s) {
-  const ex = examDate(readJSON(EXAM_KEY)), left = diffDays(ex.date, today), cps = checkpoints(env()), next = cps.find(c => c.days >= 0);
+  const ex = examDate(readJSON(EXAM_KEY)), left = diffDays(ex.date, today), cps = checkpoints(env()), next = cps.filter(c => c.days >= 0).sort((a, b) => a.days - b.days)[0];
   $('pl-phase').textContent = today < START ? s.phase.name + '期・' + fmtDay(START) + ' 開始' : s.phase.name + '期・第 ' + s.week + ' 週';
   $('pl-goal').textContent = s.phase.goal;
   const chips = $('pl-chips'); chips.textContent = '';
@@ -159,7 +171,7 @@ function renderWeek(s) {
   const ul = $('pl-week'); ul.textContent = '';
   const r = s.rounds;
   if (r) {
-    const li = row(ul, '今日題組', r.finished ? '五輪都跑完了' : '本週 ' + r.done + '／' + r.target + ' 題' + (r.behind ? '・落後 ' + r.behind + ' 題' : ''), r.behind ? 'is-late' : '');
+    const li = row(ul, '今日題組', r.finished ? '五輪都跑完了' : '本週 ' + r.done + '／' + r.target + ' 題（每天 ' + r.perDay + ' 題）' + (r.late ? '・照這個題數會超過考期' : ''), r.late ? 'is-late' : '');
     li.appendChild(el('a', {href: 'rounds.html'}, '去練'));
     row(ul, '模擬題', '本週 ' + r.mock + '／7 題');
   } else row(ul, '今日題組', '讀不到紀錄');
@@ -205,11 +217,27 @@ function renderCheckpoints() {
     const head = el('p', {class: 'pl-cp-head'}); head.appendChild(el('strong', null, fmtDay(c.date))); head.appendChild(el('span', {class: 'pl-badge'}, LABEL[c.status] + (c.status === 'todo' && c.days >= 0 ? '・還有 ' + c.days + ' 天' : ''))); li.appendChild(head);
     const ul = el('ul'); c.items.forEach(x => ul.appendChild(el('li', {class: x.ok ? 'is-ok' : ''}, (x.ok ? '✓ ' : '・') + x.label + '（' + x.detail + '）'))); li.appendChild(ul);
     if (i === CHECKPOINTS.length - 1) { const g = el('div', {class: 'pl-papers', role: 'group', 'aria-label': '已做過整卷限時的科目'}); PAPERS.forEach(([id, name]) => g.appendChild(check('pl-paper-' + id, name, !!state.paper[id], on => save(setPaper(state, id, on))))); li.appendChild(g); }
-    if (c.status === 'late') li.appendChild(el('p', {class: 'pl-fallback'}, '調整：' + c.fallback));
+    if (c.status === 'late') li.appendChild(el('p', {class: 'pl-fallback'}, '調整：' + c.fallback + '也可以把這個檢核點往後調。'));
     else if (c.status === 'todo') li.appendChild(el('p', {class: 'small muted'}, '沒達到時：' + c.fallback));
+    if (c.moved) li.appendChild(el('p', {class: 'small muted'}, '原訂 ' + fmtDay(c.original) + '，已改到 ' + fmtDay(c.date) + '。'));
+    li.appendChild(cpForm(c));
     host.appendChild(li);
   });
 }
+// 檢核點改日期：展開後選日期，按「改日期」；改過的可以恢復原日期。
+function cpForm(c) {
+  const det = el('details', {class: 'pl-cp-edit'}); if (openCp === c.i) det.open = true;
+  det.addEventListener('toggle', () => { if (det.open) openCp = c.i; else if (openCp === c.i) openCp = -1; });
+  det.appendChild(el('summary', null, '調整這個檢核點的日期'));
+  const f = el('form', {class: 'pl-cp-form', novalidate: ''}), id = 'pl-cp-date-' + c.i;
+  f.appendChild(el('label', {for: id}, '日期'));
+  const inp = el('input', {type: 'date', id, min: today, max: '2028-12-31'}); inp.value = c.date; f.appendChild(inp);
+  f.appendChild(el('button', {class: 'btn primary', type: 'submit', id: 'pl-cp-save-' + c.i}, '改日期'));
+  if (c.moved) { const b = el('button', {class: 'btn ghost', type: 'button', id: 'pl-cp-reset-' + c.i}, '恢復 ' + fmtDay(c.original)); b.onclick = () => save(setCheckpoint(state, c.i, null), '檢核點已恢復為 ' + fmtDay(c.original) + '。', 'pl-cp-status'); f.appendChild(b); }
+  f.addEventListener('submit', e => { e.preventDefault(); const v = inp.value; if (!validDay(v)) { $('pl-cp-status').textContent = '請選一個日期。'; return; } save(setCheckpoint(state, c.i, v), '檢核點已改到 ' + fmtDay(v) + '。', 'pl-cp-status'); });
+  det.appendChild(f); return det;
+}
+let openCp = -1;
 function render() {
   // 重畫會換掉打勾框與按鈕，先記住焦點，畫完放回去。
   const focus = document.activeElement && document.activeElement.id;

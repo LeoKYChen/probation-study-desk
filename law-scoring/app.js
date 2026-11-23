@@ -221,7 +221,7 @@ function todayPlan(env){
   // 讀書計畫（plan.js）：只取階段與心理學堂數。
   if(env.SP){ try { out.plan=env.SP.summary(env.planState, today); } catch(e){ out.plan=null; } }
   // 今日題組（rounds.js）：只取進度數字，不寫入。
-  if(env.RD){ try { const p=env.RD.plan(data.questions, env.roundState, today, 0); out.rounds={round:p.round, roundDone:p.roundDone, roundTotal:p.roundTotal, todayDone:p.todayDone, quota:p.quota, behind:p.behind, finished:p.finished, mockDone:env.RD.mockDoneToday(env.roundState, today)}; } catch(e){ out.rounds=null; } }
+  if(env.RD){ try { let ex=null; try { ex=JSON.parse(localStorage.getItem(env.RD.EXAM_KEY)); } catch(e){} const p=env.RD.plan(data.questions, env.roundState, today, 0, env.RD.examDate(ex).date); out.rounds={round:p.round, roundDone:p.roundDone, roundTotal:p.roundTotal, todayDone:p.todayDone, quota:p.quota, rest:p.rest, late:p.late, finished:p.finished, mockDone:env.RD.mockDoneToday(env.roundState, today)}; } catch(e){ out.rounds=null; } }
   if(R){ try { out.miss=R.dueCards(R.syncCards(store, env.cardStore||{}, today), today, null).length; } catch(e){ out.miss=null; } }
   const ready=SM&&SM.list.every(m=>SM.items[m.slug]);
   let weak=null;
@@ -430,7 +430,7 @@ window.addEventListener('hashchange',()=>{ const q=fromHash(); if(q&&q!==current
       const plan=todayPlan({store, cardStore:readJ(R.CARD_KEY), today:ymd(Date.now()), data:DATA, summaries:SM, R, TR, TH, WK, score:(q,s)=>score(q,s), topicState:TR.readState(), theoryState:TH.readState(), RD, roundState:RD?RD.read():null, SP:window.LawScoringStudyPlan, planState:window.LawScoringStudyPlan?window.LawScoringStudyPlan.read():null});
       ul.textContent='';
       { const p=plan.plan; if(p) ul.appendChild(li('讀書計畫：'+p.phase+'期'+(p.started?'第 '+p.week+' 週':'（尚未開始）')+'・心理學 '+p.psych+'／'+p.psychTotal+' 堂'+(p.next?'・下個檢核點 '+Number(p.next.slice(5,7))+'/'+Number(p.next.slice(8)):''), 'plan.html', '看計畫')); }
-      { const r=plan.rounds; ul.appendChild(li('今日題組：'+(r===null?'讀不到':r.finished?'五輪都跑完了':'第 '+r.round+' 輪 '+r.roundDone+'／'+r.roundTotal+'・今天 '+Math.min(r.todayDone,r.quota)+'／'+r.quota+(r.behind?'・落後 '+r.behind+' 題':'')+'・模擬題 '+(r.mockDone?'1':'0')+'／1'), 'rounds.html', '去練')); }
+      { const r=plan.rounds; ul.appendChild(li('今日題組：'+(r===null?'讀不到':r.finished?'五輪都跑完了':'第 '+r.round+' 輪 '+r.roundDone+'／'+r.roundTotal+(r.rest&&!r.quota?'・今天休息':'・今天 '+Math.min(r.todayDone,r.quota)+'／'+r.quota)+(r.late?'・預計超過考期':'')+'・模擬題 '+(r.mockDone?'1':'0')+'／1'), 'rounds.html', '去練')); }
       const cards=(name,n,href,txt)=>ul.appendChild(li(name+'：'+n, n===null?null:href, txt));
       cards('失分回想', plan.miss===null?'讀不到':plan.miss?'到期 '+plan.miss+' 張':'今天沒有到期的卡', 'review.html', '去複習');
       const deckText=d=>d===null?'讀不到':(d.due||d.fresh)?'到期 '+d.due+' 張、新卡 '+d.fresh+' 張':'今天做完了';

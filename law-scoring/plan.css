@@ -43,3 +43,9 @@
 .pl-check:focus-within,.pl-phase>summary:focus-visible,.pl-list a:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
 #pl-exam-note{margin:4px 0 0}
 #pl-status:empty{display:none}
+.pl-cp-edit{margin:8px 0 0}
+.pl-cp-edit>summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font-size:14.5px;color:var(--accent);font-weight:700}
+.pl-cp-edit>summary:focus-visible,.pl-cp-form input:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.pl-cp-form{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;margin:4px 0 0}
+.pl-cp-form label{font-weight:700}
+.pl-cp-form input{font:inherit;font-size:16px;min-height:44px;min-width:0;max-width:100%;padding:6px 10px;border:1px solid var(--rule);border-radius:8px;background:var(--sheet);color:var(--ink)}

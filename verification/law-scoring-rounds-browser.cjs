@@ -41,7 +41,7 @@ const at=iso=>new Date(iso+'T09:00:00+08:00');
   // 起算日（週一）空白瀏覽器：第 1 輪、今日 0／5、模擬題 0／1，第一題是順序表的第一題
   await open('2026-11-16');
   assert.equal(await text(page,'#rd-round'),'第 1 輪'); assert.equal(await text(page,'#rd-count'),'0／553');
-  let c=await chips(); assert(c.includes('今日 0／5')&&c.includes('模擬題 0／1')&&c.includes('進度正常')&&c.includes('照表 7/30 跑完'),c.join('|'));
+  let c=await chips(); assert(c.includes('今日 0／5')&&c.includes('模擬題 0／1')&&c.includes('照目前題數，預計 7/30 跑完')&&!c.some(x=>x.includes('落後')),c.join('|'));
   assert(await vis(page,'#rd-card')); assert.equal(await text(page,'#rd-title'),await titleOf(order[0].id)); assert((await text(page,'#rd-meta')).startsWith('第 1 輪・'));
   assert(await vis(page,'#rd-reveal')); assert(!(await vis(page,'#rd-rate'))); assert(!(await vis(page,'#rd-back'))); assert(await vis(page,'#rd-skip')); assert(!(await vis(page,'#rd-undo')));
   assert.equal(new Set(await page.evaluate(ids=>ids.map(i=>window.LawScoringData.questions.find(q=>q.id===i).subject),order.slice(0,5).map(x=>x.id))).size,5,'the first day covers five subjects');
@@ -92,24 +92,34 @@ const at=iso=>new Date(iso+'T09:00:00+08:00');
   assert.equal(await page.evaluate(()=>localStorage.getItem('lawScoring.v2')),null); assert.equal(await page.evaluate(()=>localStorage.getItem('probation-daily-github:records:v1')),null);
 
   // 隔天：配額重算、換新的模擬題、加開歸零
-  await open('2026-11-17'); c=await chips(); assert(c.includes('今日 0／5')&&c.includes('模擬題 0／1')&&c.includes('進度正常'),c.join('|')); assert.equal(await text(page,'#rd-count'),'5／553');
+  await open('2026-11-17'); c=await chips(); assert(c.includes('今日 0／5')&&c.includes('模擬題 0／1')&&c.some(x=>x.startsWith('照目前題數，預計')),c.join('|')); assert.equal(await text(page,'#rd-count'),'5／553');
   assert.equal((await store(page,POS)).extra,0); assert.notEqual('mock:'+(await store(page,POS)).mock,mockKey);
-  // 兩天沒練：落後 5 題；週日只補落後的
-  await open('2026-11-19'); assert((await chips()).some(x=>x==='落後 10 題'),(await chips()).join('|'));
-  await open('2026-11-22'); c=await chips(); assert(c.includes('今日 0／10')&&c.includes('落後 25 題，今天補'),c.join('|'));
-  // 進度表與起算日
+  // 兩天沒練：不累積欠題，今天仍是 5 題；週日休息
+  await open('2026-11-19'); c=await chips(); assert(c.includes('今日 0／5')&&!c.some(x=>x.includes('落後')),c.join('|'));
+  await open('2026-11-22'); c=await chips(); assert(c.includes('週日休息，想練可以加開')&&c.includes('今日 0／0'),c.join('|')); assert.equal(await text(page,'#rd-progress'),'剩 1 題','only the mock question on Sunday');
+  // 每天題數自己設
+  await open('2026-11-21');
   await page.locator('.cm-settings:not(.rd-done) summary').click(); assert.equal(await page.locator('#rd-table-body li').count(),5); assert.equal(await page.locator('#rd-table-body li.is-now strong').innerText(),'第 1 輪');
-  assert.deepEqual((await page.locator('#rd-table-body li span:nth-child(2)').allInnerTexts()).map(x=>x.split('・').pop()),['3/24 完成','5/28 完成','7/10 完成','7/22 完成','7/30 完成']); assert.equal(await page.locator('#rd-start').inputValue(),'2026-11-16');
-  await page.locator('#rd-start').fill('2026-11-23'); await page.locator('#rd-start-form button').click(); assert((await chips()).some(x=>x.startsWith('起算日 11/23'))); assert.equal((await store(page,KEY)).__settings.start,'2026-11-23'); await noOverflow(page,'settings open'); await shot('06-settings');
-  await page.locator('#rd-start').fill('2026-11-16'); await page.locator('#rd-start-form button').click(); assert.equal((await store(page,KEY)).__settings,undefined);
+  const spans=await page.locator('#rd-table-body li span:nth-child(2)').allInnerTexts(); assert(spans.every(x=>/預計 \d+\/\d+ 完成/.test(x)),spans.join('|'));
+  assert.deepEqual(await page.locator('#rd-table-body input').evaluateAll(a=>a.map(x=>x.value)),['5','10','15','20','30']); assert(!(await vis(page,'#rd-per-reset')));
+  assert((await text(page,'#rd-exam-note')).includes('2027-08-14'));
+  await page.locator('#rd-per-1').fill('0'); await page.locator('#rd-per-form button[type=submit]').click(); assert((await text(page,'#rd-per-status')).includes('1 到 60')); assert.equal((await store(page,KEY)).__settings,undefined);
+  await page.locator('#rd-per-1').fill('3'); await page.locator('#rd-per-form button[type=submit]').click();
+  assert.deepEqual((await store(page,KEY)).__settings,{perDay:[3,10,15,20,30]}); assert((await chips()).includes('今日 0／3')); assert(await vis(page,'#rd-per-reset'));
+  assert((await text(page,'#rd-table-body li:first-child')).includes('約 36 分')); assert((await text(page,'#rd-how')).includes('每天 3 題約 36 分鐘'));
+  await noOverflow(page,'settings open'); await shot('06-settings');
+  await page.evaluate(()=>localStorage.setItem('psd-home-exam-countdown-v1',JSON.stringify({date:'2027-05-01'}))); await page.reload({waitUntil:'load'}); await page.locator('.cm-settings:not(.rd-done) summary').click();
+  assert((await chips()).some(x=>x.includes('超過考期'))); assert(await page.locator('#rd-table-body .rd-plan-late').count()>0); assert((await text(page,'#rd-exam-note')).includes('2027-05-01')); await shot('06c-late');
+  await page.evaluate(()=>localStorage.removeItem('psd-home-exam-countdown-v1')); await page.reload({waitUntil:'load'}); await page.locator('.cm-settings:not(.rd-done) summary').click();
+  await page.locator('#rd-per-reset').click(); assert.equal((await store(page,KEY)).__settings,undefined); assert((await chips()).includes('今日 0／5'));
   // 清除：只清今天的（之前的紀錄與骨架保留）、全部清除（起算日與字級保留）；其他頁面的紀錄不動
   await page.evaluate(()=>{ localStorage.setItem('lawScoring.v2',JSON.stringify({keep:{answer:'x'}})); localStorage.setItem('probation-study30-v251:v1','{"version":1,"sessions":{}}'); });
-  await page.locator('#rd-reveal').click(); await page.locator('[data-rate="good"]').click(); assert((await chips()).includes('今日 1／10'));
+  await page.locator('#rd-reveal').click(); await page.locator('[data-rate="good"]').click(); assert((await chips()).includes('今日 1／5'));
   const preClear=await store(page,KEY), doneKeys=Object.keys(preClear).filter(k=>preClear[k].done&&preClear[k].done.length); assert.equal(doneKeys.length,7);
   await page.locator('#rd-clear').click(); assert((await text(page,'#rd-clear-area')).includes('目前共 7 筆，其中今天 1 筆')); await noOverflow(page,'clear prompt'); await shot('06b-clear');
   await page.locator('#rd-clear-area button',{hasText:'取消'}).click(); assert.deepEqual(await store(page,KEY),preClear); assert(await vis(page,'#rd-clear'));
   await page.locator('#rd-clear').click(); await page.locator('#rd-clear-area button',{hasText:'只清今天的'}).click();
-  s=await store(page,KEY); assert.equal(Object.values(s).reduce((a,v)=>a+(v.done?v.done.length:0),0),6); assert.equal(s[order[0].id].notes[1],'立法理由 → 規範'); assert((await chips()).includes('今日 0／10')); assert((await text(page,'#rd-clear-status')).includes('已清除今天'));
+  s=await store(page,KEY); assert.equal(Object.values(s).reduce((a,v)=>a+(v.done?v.done.length:0),0),6); assert.equal(s[order[0].id].notes[1],'立法理由 → 規範'); assert((await chips()).includes('今日 0／5')); assert((await text(page,'#rd-clear-status')).includes('已清除今天'));
   await page.locator('#rd-clear').click(); assert.equal(await page.locator('#rd-clear-area button',{hasText:'只清今天的'}).count(),0); await page.locator('#rd-clear-area button',{hasText:'全部清除'}).click();
   assert.deepEqual(await store(page,KEY),{}); assert.equal(await text(page,'#rd-count'),'0／553'); assert(!(await vis(page,'#rd-done'))); assert.equal(await text(page,'#rd-title'),await titleOf(order[0].id));
   assert.equal(await page.evaluate(()=>localStorage.getItem('lawScoring.v2')),'{"keep":{"answer":"x"}}'); assert.equal(await page.evaluate(()=>localStorage.getItem('probation-study30-v251:v1')),'{"version":1,"sessions":{}}');
